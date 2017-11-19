@@ -1,60 +1,59 @@
 ---
-title: "IDiaSession::findSymbolByToken | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSession::findSymbolByToken-Methode"
+title: 'Idiasession:: Findsymbolbytoken | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSession::findSymbolByToken method
 ms.assetid: 3c92149c-6eef-454f-86be-66e89557b9e6
-caps.latest.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 903c9a6c8f13e8afda88c220c3f85b77c5222b37
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSession::findSymbolByToken
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Ruft das Symbol ab, das das angegebene Metadatentoken enthält.  
+# <a name="idiasessionfindsymbolbytoken"></a>IDiaSession::findSymbolByToken
+Ruft das Symbol, das angegebene Metadatentoken ab.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT findSymbolByToken (   
-   ULONG        token,  
-   SymTagEnum   symtag,  
-   IDiaSymbol** ppSymbol  
+```C++  
+HRESULT findSymbolByToken (   
+   ULONG        token,  
+   SymTagEnum   symtag,  
+   IDiaSymbol** ppSymbol  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `token`  
- \[in\]  Gibt das Token an.  
+ [in] Gibt das Token an.  
   
  `symtag`  
- \[in\]  Symbol Gesucht werden soll.  Werte werden von der [SymTagEnum\-Enumeration](../../debugger/debug-interface-access/symtagenum.md)\-Enumeration bestimmt.  
+ [in] Der Symboltyp gefunden werden. Werte stammen aus den [SymTagEnum-Enumeration](../../debugger/debug-interface-access/symtagenum.md) Enumeration.  
   
  `ppSymbol`  
- \[out\]  Gibt ein [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)\-Objekt zurück, das das abgerufene Symbol darstellt.  
+ [out] Gibt eine [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) abgerufene Objekt, das das Symbol darstellt.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Beispiel  
+## <a name="example"></a>Beispiel  
   
-```cpp#  
+```C++  
 IDiaSymbol* pFunc;  
 pSession->findSymbolByToken( token, SymTagFunction, &pFunc );  
 ```  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [SymTagEnum\-Enumeration](../../debugger/debug-interface-access/symtagenum.md)
+ [SymTagEnum-Enumeration](../../debugger/debug-interface-access/symtagenum.md)

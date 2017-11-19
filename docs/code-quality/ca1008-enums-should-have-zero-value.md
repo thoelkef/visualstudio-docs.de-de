@@ -1,11 +1,10 @@
 ---
-title: 'CA1008: Enums should have zero value | Microsoft Docs'
+title: "CA1008: Enumerationen müssen aufweisen Nullwert | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,69 +14,55 @@ helpviewer_keywords:
 - CA1008
 - EnumsShouldHaveZeroValue
 ms.assetid: 3503a73c-360c-416d-8ee4-c2aa44365a05
-caps.latest.revision: 21
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: e361d2406b3b2d8e54d9436d316e42dbb5221a8c
-ms.contentlocale: de-de
-ms.lasthandoff: 08/30/2017
-
+caps.latest.revision: "21"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 84c43a95cd607a13a302e2247cacb091a39a3070
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="ca1008-enums-should-have-zero-value"></a>CA1008: Enums should have zero value
+# <a name="ca1008-enums-should-have-zero-value"></a>CA1008: Enumerationen müssen einen Wert von 0 (null) aufweisen
 |||  
 |-|-|  
 |TypeName|EnumsShouldHaveZeroValue|  
 |CheckId|CA1008|  
-|Category|Microsoft.Design|  
-|Breaking Change|Non-breaking - When you are prompted to add a **None** value to a non-flag enumeration.Breaking - When you are prompted to rename or remove any enumeration values.|  
+|Kategorie|Microsoft.Design|  
+|Unterbrechende Änderung|Nicht unterbrechend – Wenn Sie, zum Hinzufügen aufgefordert werden einer **keine** Wert, der eine Flagenumeration. Unterbrechend – Wenn Sie aufgefordert werden, umbenennen oder entfernen alle Enumerationswerte.|  
   
-## <a name="cause"></a>Cause  
- An enumeration without an applied <xref:System.FlagsAttribute?displayProperty=fullName> does not define a member that has a value of zero; or an enumeration that has an applied <xref:System.FlagsAttribute> defines a member that has a value of zero but its name is not 'None', or the enumeration defines multiple zero-valued members.  
+## <a name="cause"></a>Ursache  
+ Eine Enumeration angewendet <xref:System.FlagsAttribute?displayProperty=fullName> definiert einen Member mit dem Wert 0 (null); oder eine Enumeration, die eine angewendet wurde keine <xref:System.FlagsAttribute> definiert ein Element mit dem Wert 0 (null), aber der Name ist nicht "None" oder die Enumeration definiert mehrere NULL-Werten Elemente.  
   
-## <a name="rule-description"></a>Rule Description  
- The default value of an uninitialized enumeration, just like other value types, is zero. A non-flags-attributed enumeration should define a member that has the value of zero so that the default value is a valid value of the enumeration. If appropriate, name the member 'None'. Otherwise, assign zero to the most frequently used member. Note that, by default, if the value of the first enumeration member is not set in the declaration, its value is zero.  
+## <a name="rule-description"></a>Regelbeschreibung  
+ Der Standardwert einer nicht initialisierten Enumeration ist wie der anderer Werttypen ist 0 (null). Eine Enumeration nicht Flags-Attribut sollte einen Member definieren, mit dem Wert 0 (null), damit der Standardwert ein gültiger Wert der Enumeration ist. Bei Bedarf, benennen Sie das Element "None". Ordnen Sie andernfalls 0 (null), auf die am häufigsten verwendeten Member. Beachten Sie, dass, standardmäßig, wenn der Wert des ersten Elements der Enumeration in der Deklaration nicht festgelegt ist der Wert 0 (null).  
   
- If an enumeration that has the <xref:System.FlagsAttribute> applied defines a zero-valued member, its name should be 'None' to indicate that no values have been set in the enumeration. Using a zero-valued member for any other purpose is contrary to the use of the <xref:System.FlagsAttribute> in that the AND and OR bitwise operators are useless with the member. This implies that only one member should be assigned the value zero. Note that if multiple members that have the value zero occur in a flags-attributed enumeration, `Enum.ToString()` returns incorrect results for members that are not zero.  
+ Wenn eine Enumeration, wird die <xref:System.FlagsAttribute> angewendet definiert ein NULL-Werten-Element, seinen Namen muss 'None', um anzugeben, in der Enumeration keine Werte festgelegt wurden. Verwenden einen NULL-Member für andere Zwecke entgegen die Verwendung von ist das <xref:System.FlagsAttribute> , den AND-Operator und bitweise Operatoren sind nutzlos, mit dem Element. Dies bedeutet, dass nur ein Member den Wert 0 (null) zugewiesen werden soll. Beachten Sie, dass mehrere Elemente haben, die der Wert 0 (null) in einer Enumeration Flags-Attribut auftreten `Enum.ToString()` gibt falsche Ergebnisse für Elemente, die nicht 0 (null) zurück.  
   
-## <a name="how-to-fix-violations"></a>How to Fix Violations  
- To fix a violation of this rule for non-flags-attributed enumerations, define a member that has the value of zero; this is a non-breaking change. For flags-attributed enumerations that define a zero-valued member, name this member 'None' and delete any other members that have a value of zero; this is a breaking change.  
+## <a name="how-to-fix-violations"></a>Behandeln von Verstößen  
+ Um einen Verstoß gegen diese Regel für nicht-Enumerationen zu beheben, definieren Sie ein Element mit dem Wert 0 (null); Dies ist eine nicht unterbrechende Änderung. Namen Sie für Enumerationen, die einen NULL-Member definieren dieser Member den "None", und löschen Sie anderer Elemente, die den Wert Null aufweisen; Dies ist eine unterbrechende Änderung.  
   
-## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
- Do not suppress a warning from this rule except for flags-attributed enumerations that have previously shipped.  
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?  
+ Unterdrücken Sie keine Warnung dieser Regel, mit Ausnahme von Enumerationen, die zuvor versendet habe.  
   
-## <a name="example"></a>Example  
- The following example shows two enumerations that satisfy the rule and an enumeration, `BadTraceOptions`, that violates the rule.  
+## <a name="example"></a>Beispiel  
+ Das folgende Beispiel zeigt zwei Enumerationen, die die Regel erfüllen, und eine Enumeration `BadTraceOptions`, die die Regel verletzt.  
   
- [!code-cpp[FxCop.Design.EnumsZeroValue#1](../code-quality/codesnippet/CPP/ca1008-enums-should-have-zero-value_1.cpp)] [!code-csharp[FxCop.Design.EnumsZeroValue#1](../code-quality/codesnippet/CSharp/ca1008-enums-should-have-zero-value_1.cs)] [!code-vb[FxCop.Design.EnumsZeroValue#1](../code-quality/codesnippet/VisualBasic/ca1008-enums-should-have-zero-value_1.vb)]  
+ [!code-cpp[FxCop.Design.EnumsZeroValue#1](../code-quality/codesnippet/CPP/ca1008-enums-should-have-zero-value_1.cpp)]
+ [!code-csharp[FxCop.Design.EnumsZeroValue#1](../code-quality/codesnippet/CSharp/ca1008-enums-should-have-zero-value_1.cs)]
+ [!code-vb[FxCop.Design.EnumsZeroValue#1](../code-quality/codesnippet/VisualBasic/ca1008-enums-should-have-zero-value_1.vb)]  
   
-## <a name="related-rules"></a>Related Rules  
- [CA2217: Do not mark enums with FlagsAttribute](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)  
+## <a name="related-rules"></a>Verwandte Regeln  
+ [CA2217: Enumerationen nicht mit FlagsAttribute markieren](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)  
   
- [CA1700: Do not name enum values 'Reserved'](../code-quality/ca1700-do-not-name-enum-values-reserved.md)  
+ [CA1700: Enumerationswerte nicht mit "Reserviert" benennen](../code-quality/ca1700-do-not-name-enum-values-reserved.md)  
   
- [CA1712: Do not prefix enum values with type name](../code-quality/ca1712-do-not-prefix-enum-values-with-type-name.md)  
+ [CA1712: Keine Typnamen als Präfixe für Enumerationswerte verwenden](../code-quality/ca1712-do-not-prefix-enum-values-with-type-name.md)  
   
- [CA1028: Enum storage should be Int32](../code-quality/ca1028-enum-storage-should-be-int32.md)  
+ [CA1028: Der Enumerationsspeicher sollte Int32 sein.](../code-quality/ca1028-enum-storage-should-be-int32.md)  
   
- [CA1027: Mark enums with FlagsAttribute](../code-quality/ca1027-mark-enums-with-flagsattribute.md)  
+ [CA1027: Enumerationen mit FlagsAttribute markieren](../code-quality/ca1027-mark-enums-with-flagsattribute.md)  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Siehe auch  
  <xref:System.Enum?displayProperty=fullName>

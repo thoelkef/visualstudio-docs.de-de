@@ -1,74 +1,75 @@
 ---
-title: "Erstellen von Seiten f&#252;r SharePoint"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "Inhaltsseiten [SharePoint-Entwicklung in Visual Studio], Entwerfen"
-  - "Masterseiten [SharePoint-Entwicklung in Visual Studio], Entwerfen"
-  - "Seitenlayouts [SharePoint-Entwicklung in Visual Studio], Entwerfen"
-  - "SharePoint-Entwicklung in Visual Studio, Inhaltsseiten"
-  - "SharePoint-Entwicklung in Visual Studio, Masterseiten"
-  - "SharePoint-Entwicklung in Visual Studio, Seitenlayouts"
+title: "Erstellen von Seiten für SharePoint | Microsoft Docs"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- SharePoint development in Visual Studio, master pages
+- SharePoint development in Visual Studio, page layouts
+- SharePoint development in Visual Studio, content pages
+- master pages[SharePoint development in Visual Studio], designing
+- content pages[SharePoint development in Visual Studio], designing
+- page layouts[SharePoint development in Visual Studio], designing
 ms.assetid: 57678ed1-841f-45de-a1d3-5f9e233bf3ce
-caps.latest.revision: 15
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 14
+caps.latest.revision: "15"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: bef1fce26bbd9ea57073273f462ec484a46a647b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Erstellen von Seiten f&#252;r SharePoint
-  Sie können Anwendungsseiten, Websiteseiten, Gestaltungsvorlagen und Seitenlayouts für eine SharePoint\-Website erstellen.  
+# <a name="creating-pages-for-sharepoint"></a>Erstellen von Seiten für SharePoint
+  Sie können die Anwendungsseiten, Websiteseiten, Gestaltungsvorlagen und Seitenlayouts für eine SharePoint-Website erstellen.  
   
- Sie können Anwendungsseiten mit einer Vorlage in Visual Studio erstellen.  Websiteseiten, Gestaltungsvorlagen und Seitenlayouts können Sie mithilfe von SharePoint Designer erstellen.  Dann können Sie diese Seiten in Visual Studio importieren, um sie in einem SharePoint\-Projekt zu verwenden.  
+ Sie können Anwendungsseiten mithilfe einer Vorlage in Visual Studio erstellen. Erstellen Sie mithilfe von SharePoint Designer Websiteseiten, Gestaltungsvorlagen und Seitenlayouts. Anschließend können Sie diese Seiten in Visual Studio Ihre Verwendung in einem SharePoint-Projekt importieren.  
   
- Sie können auch die Darstellung und das Verhalten von Seiten mit Cascading Stylesheets, ECMAScript und Designs ändern.  
+ Sie können auch das Aussehen und Verhalten der Seiten, die mithilfe von cascading Stylesheets, ECMAScript und Designs ändern.  
   
-## Typen von SharePoint\-Seiten  
- In der folgenden Tabelle werden die vier Hauptseitentypen einer SharePoint\-Website beschrieben.  
+## <a name="types-of-sharepoint-pages"></a>Typen von SharePoint-Seiten  
+ Die folgende Tabelle beschreibt die vier Haupttypen der Seiten, die eine SharePoint-Website enthält.  
   
-|Seitentyp|**Beschreibung**|  
-|---------------|----------------------|  
-|Anwendungsseiten|Erstellen Sie eine Anwendungsseite, wenn die Seite benutzerdefinierten Code enthalten soll oder von mehreren Websites verwendet wird.  Andernfalls ist wahrscheinlich eine Websiteseite die beste Wahl.|  
-|Websiteseiten|Erstellen Sie eine Websiteseite, wenn Sie eine der folgenden Aufgaben ausführen möchten:<br /><br /> -   Die Seite soll einer SharePoint\-Bibliothek hinzugefügt werden.<br />-   Die Seite soll Funktionen hosten können, z. B. dynamische Webparts und Webpartzonen.<br />-   Benutzer sollen die Seite mit SharePoint Designer anpassen können.<br /><br /> Erstellen Sie keine Websiteseite, wenn die Seite benutzerdefinierten Code enthalten soll.  Obwohl Sie einer Websiteseite benutzerdefinierten Code hinzufügen können, wird die Ausführung des Codes beendet, sobald der Benutzer die Seite mit Tools wie dem SharePoint Designer anpasst.|  
-|Gestaltungsvorlagen.|Erstellen Sie eine Gestaltungsvorlage, wenn Sie eine allgemeine Struktur für Websiteseiten und Anwendungsseiten definieren möchten.|  
-|Seitenlayouts|Seitenlayouts sind spezifisch für [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] und ermöglichen es Ihnen, eine weitergehende allgemeine Struktur für Websiteseiten und Anwendungsseiten zu definieren.|  
+|Seitentyp|Beschreibung|  
+|---------------|-----------------|  
+|Anwendungsseiten|Erstellen Sie eine Anwendungsseite, wenn Sie die Seite, um benutzerdefinierten Code enthalten oder die Seite für mehrere Standorte freigegeben werden soll. Andernfalls möglicherweise eine Websiteseite die beste Wahl.|  
+|Seiten der Website|Erstellen Sie eine Websiteseite, wenn Sie eine der folgenden Aufgaben ausführen möchten:<br /><br /> -Die Seite in einer SharePoint-Bibliothek hinzufügen.<br />-Aktivieren Sie die Seite "auf Host-Funktionen wie dynamische Webparts und Web Teil Zonen.<br />-Benutzer auf der Seite anpassen, indem Sie mit SharePoint Designer zu aktivieren.<br /><br /> Eine Websiteseite kann nicht erstellt werden, wenn Sie die Seite benutzerdefinierten Code enthalten soll. Obwohl Sie eine Websiteseite benutzerdefinierten Code hinzufügen können, wird der Code ausgeführt, wenn der Benutzer die Seite passt, indem Sie mit SharePoint Designer beendet.|  
+|Masterseiten|Erstellen einer Masterseite, wenn Sie eine gemeinsame Struktur für die Seiten der Website definieren möchten und Anwendungsseiten.|  
+|Seitenlayouts|Seitenlayouts sind spezifisch für [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] und ermöglichen es Ihnen, eine gemeinsame Struktur für Websiteseiten und Anwendungsseiten genauer zu definieren.|  
   
- Eine Übersicht zu den einzelnen Seitentypen, finden Sie unter [Baustein: Seiten und die Benutzeroberfläche](http://go.microsoft.com/fwlink/?LinkID=182095) und [Gestaltungsvorlagen und Seitenlayouts](http://go.microsoft.com/fwlink/?LinkID=182096).  
+ Einen Überblick über jeden Typ von Seite finden Sie unter [Baustein: Seiten und die Benutzeroberfläche](http://go.microsoft.com/fwlink/?LinkID=182095), und [Seitenlayouts und Masterseiten](http://go.microsoft.com/fwlink/?LinkID=182096).  
   
-## Erstellen von Anwendungsseiten  
- Sie können Anwendungsseiten in Visual Studio erstellen, indem Sie einem SharePoint\-Projekt das Element **Anwendungsseite** hinzufügen.  Sie können der Seite Steuerelemente hinzufügen und anschließend die Steuerelementereignisse durch Hinzufügen von Code behandeln.  
+## <a name="creating-application-pages"></a>Erstellen von Anwendungsseiten  
+ Sie können Anwendungsseiten in Visual Studio erstellen, durch Hinzufügen von ein **Seite "Anwendung"** einem SharePoint-Projekt. Sie können Steuerelemente auf der Seite hinzufügen und Behandeln von Steuerelementereignissen dann durch Hinzufügen von Code.  
   
- Sie können Haltepunkte in der Codedatei der Seite festlegen, den Debugger starten und die Seite ohne zusätzliche Konfigurationsschritte auf einer lokalen SharePoint\-Website testen.  Weitere Informationen finden Sie unter [Erstellen von Anwendungsseiten für SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md).  
+ Festlegen von Haltepunkten in der Codedatei der Seite, starten Sie den Debugger und die Seite auf einer lokalen SharePoint-Website testen, ohne alle zusätzlichen Konfigurationsschritte ausführen. Weitere Informationen finden Sie unter [Erstellen von Anwendungsseiten für SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md).  
   
-## Erstellen von Websiteseiten, Gestaltungsvorlagen und Seitenlayouts  
- Websiteseiten, Gestaltungsvorlagen und Seitenlayouts können Sie mithilfe von SharePoint Designer erstellen.  Anschließend können Sie diese Seiten in Visual Studio importieren.  Importieren Sie die Seiten, wenn Sie die Funktionen zur Bereitstellung oder Quellcodeverwaltung nutzen möchten, die in Visual Studio verfügbar sind.  Weitere Informationen finden Sie unter [Importieren von Elementen aus einer vorhandenen SharePoint-Website](../sharepoint/importing-items-from-an-existing-sharepoint-site.md).  
+## <a name="creating-site-pages-master-pages-and-page-layouts"></a>Erstellen von Websiteseiten, Gestaltungsvorlagen und Seitenlayouts  
+ Sie können Websiteseiten, Gestaltungsvorlagen und Seitenlayouts mithilfe von SharePoint Designer erstellen. Anschließend können Sie diese Seiten in Visual Studio importieren. Importieren Sie Ihre Seiten gegebenenfalls nutzen Sie die Bereitstellung oder die Funktionen der quellcodeverwaltung, die in Visual Studio verfügbar sind. Weitere Informationen finden Sie unter [Importieren von Elementen aus einer vorhandenen SharePoint-Website](../sharepoint/importing-items-from-an-existing-sharepoint-site.md).  
   
- Da es schwierig ist, diese Seiten nach dem Import zu ändern, sollten Sie diese Seiten entwerfen, bevor Sie sie importieren.  
+ Da es schwierig ist, diese Seiten zu ändern, nachdem Sie diese importieren, sollten Sie diese Seiten entwerfen, bevor Sie sie importieren.  
   
-## Erstellen von Cascading Stylesheets, ECMAScript und Designs  
- Visual Studio stellt keine Vorlagen zum Entwickeln von Cascading Stylesheets \(CSS\), ECMAScript \(JavaScript, JScript\) oder Designdateien für SharePoint\-Websites bereit.  Sie können diese Dateien mit der Anleitung im SharePoint\-SDK oder mit entsprechenden Tools, z. B. SharePoint Designer, erstellen.  
+## <a name="creating-cascading-style-sheets-ecmascript-and-themes"></a>Erstellen von Cascading Stylesheets, ECMAScript und Designs  
+ Visual Studio stellt keine Vorlagen für Entwicklung Cascading Style Sheets (CSS), ECMAScript (JavaScript, JScript) oder Designdateien für SharePoint-Websites bereit. Sie können diese Dateien anhand der Anleitungen im SharePoint-SDK oder mithilfe von Tools wie SharePoint Designer erstellen.  
   
- Sie können diese Dateien direkt zur Projektmappe hinzufügen oder die Dateien importieren.  In beiden Fällen müssen Sie die entsprechenden zugeordneten Ordner für jedes Element erstellen, das Sie hinzufügen.  Weitere Informationen zum Erstellen eines zugeordneten Ordners finden Sie unter [Gewusst wie: Hinzufügen und Entfernen zugeordneter Ordner](../sharepoint/how-to-add-and-remove-mapped-folders.md).  
+ Sie können diese Dateien direkt zur Projektmappe hinzufügen, oder Sie importieren können. In beiden Fällen müssen Sie die entsprechenden zugeordneten Ordner für jedes Element erstellen, die Sie hinzufügen. Weitere Informationen dazu, wie Sie einen zugeordneten Ordner erstellen, finden Sie unter [wie: Hinzufügen und Entfernen von zugeordneten Ordner](../sharepoint/how-to-add-and-remove-mapped-folders.md).  
   
- Weitere Informationen zum Erstellen von Cascading Stylesheets, Sie finden [Cascading Stylesheet\-Klassen\-Verwendung in SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkID=182098).  Weitere Informationen zum Erstellen von JavaScript\- und JScript\-Dateien für eine SharePoint\-Lösung, Sie finden [Installieren einer grundlegenden .aspx\-Seite für ECMAScript](http://go.microsoft.com/fwlink/?LinkID=182099).  Weitere Informationen zu Designs, Sie finden. [Baustein: Seiten und die Benutzeroberfläche](http://go.microsoft.com/fwlink/?LinkID=182095)  
+ Weitere Informationen zum Erstellen von Cascading Stylesheets, finden Sie unter [Cascading Style Sheets Class Usage in SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkID=182098). Weitere Informationen zum Erstellen von JavaScript und JScript-Dateien für eine SharePoint-Lösung finden Sie unter [Einstellung Einrichten eines grundlegenden ASPX-Seite für ECMAScript](http://go.microsoft.com/fwlink/?LinkID=182099). Weitere Informationen zu Designs finden Sie unter [Baustein: Seiten und die Benutzeroberfläche](http://go.microsoft.com/fwlink/?LinkID=182095).  
   
-## Verwandte Themen  
+## <a name="related-topics"></a>Verwandte Themen  
   
-|Titel|**Beschreibung**|  
-|-----------|----------------------|  
-|[Erstellen von Anwendungsseiten für SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)|Beschreibt, wie Anwendungen Seiten hinzugefügt werden: ASPX\-Inhalt, der mit einer SharePoint\-Gestaltungsvorlage zusammengeführt wird.|  
-|[Gewusst wie: Erstellen einer Anwendungsseite](../sharepoint/how-to-create-an-application-page.md)|Zeigt das Erstellen von ASP.NET\-Seiten, die auf einer SharePoint\-Website ausgeführt werden.|  
-|[Exemplarische Vorgehensweise: Erstellen einer SharePoint-Anwendungsseite](../sharepoint/walkthrough-creating-a-sharepoint-application-page.md)|Zeigt, wie Sie eine ASP.NET\-Webseite für eine SharePoint\-Website entwerfen und debuggen.|  
-|[Arbeiten mit Visual Web Developer](http://msdn.microsoft.com/de-de/9c31f93b-c8fb-4599-9b14-6194ec8c7539)|Beschreibt die Verwendung des Designers, der angezeigt wird, wenn Sie im Projekt eine Webseite öffnen.|  
+|Titel|Beschreibung|  
+|-----------|-----------------|  
+|[Erstellen von Anwendungsseiten für SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)|Beschreibt, wie Anwendungsseiten hinzufügen: aspx-Inhalt, der mit einer SharePoint-Masterseite zusammengeführt wird.|  
+|[Vorgehensweise: Erstellen einer Anwendungsseite](../sharepoint/how-to-create-an-application-page.md)|Zeigt, wie ASP.NET-Seiten erstellen, die auf einer SharePoint-Website ausgeführt.|  
+|[Exemplarische Vorgehensweise: Erstellen einer SharePoint-Anwendungsseite](../sharepoint/walkthrough-creating-a-sharepoint-application-page.md)|Zeigt, wie das Entwerfen und Debuggen einer ASP.NET-Webseite für eine SharePoint-Website.|  
   
   

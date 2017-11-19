@@ -1,32 +1,34 @@
 ---
-title: "Mindestens ein ausgew&#228;hltes Datenbankobjekt gibt ein Schema zur&#252;ck, das nicht dem Schema der Zielklasse entspricht | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: "Eine oder mehrere der ausgewählten Datenbankobjekte gibt ein Schema, das nicht das Schema der Zielklasse entspricht zurück. | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 3794e88b-4d3d-4e7a-ade6-8208eabe3eae
-caps.latest.revision: 3
-caps.handback.revision: 1
-author: "mikeblome"
-ms.author: "mblome"
-manager: "ghogen"
+caps.latest.revision: "3"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.technology: vs-data-tools
+ms.openlocfilehash: 40842e1067a0b764a4b35ac679ee774f04347359
+ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/09/2017
 ---
-# Mindestens ein ausgew&#228;hltes Datenbankobjekt gibt ein Schema zur&#252;ck, das nicht dem Schema der Zielklasse entspricht
-Von mindestens einem ausgewählten Datenbankobjekt wird ein Schema zurückgegeben, das nicht dem Schema der Zielklasse entspricht.Dem Designer wurden keine Elemente hinzugefügt.  
+# <a name="one-or-more-selected-database-objects-return-a-schema-that-does-not-match-the-schema-of-the-target-class"></a>Mindestens eines der ausgewählten Datenbankobjekte gibt ein Schema zurück, das nicht mit dem Schema der Zielklasse übereinstimmt.
+Mindestens ein ausgewähltes Datenbankobjekt gibt ein Schema zurück, das nicht dem Schema der Zielklasse entspricht. Dem Designer wurden keine Elemente hinzugefügt.  
   
- Wenn Sie Datenbankobjekte auf vorhandene Entitätsklassen ziehen, müssen die vom Datenbankobjekt zurückgegebenen Daten dem Schema der Zielentitätsklasse entsprechen.Überprüfen Sie, dass das richtige Datenbankobjekt ausgewählt ist und die richtige Zielentitätsklasse angegeben wird.  
+ Wenn Sie Datenbankobjekte auf vorhandene Entitätsklassen ziehen, müssen die vom Datenbankobjekt zurückgegebenen Daten dem Schema der Zielentitätsklasse entsprechen. Überprüfen Sie, dass das richtige Datenbankobjekt ausgewählt ist und die richtige Zielentitätsklasse angegeben wird.  
   
-### So beheben Sie diesen Fehler  
+### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
   
-1.  Klicken Sie auf **OK**, um das Dialogfeld zu schließen.  
+1.  Klicken Sie auf **OK** um das Dialogfeld zu schließen.  
   
-2.  Wählen Sie ein Datenbankobjekt aus, das Daten zurückgibt, die dem Schema der Zielklasse entsprechen \(der Klasse, auf die das Datenbankobjekt im O\/R\-Designer abgelegt wird\).  
+2.  Wählen Sie ein Datenbankobjekt aus, das Daten zurückgibt, die dem Schema der Zielklasse entsprechen (der Klasse, auf die das Datenbankobjekt im O/R-Designer abgelegt wird).  
   
-## Siehe auch  
- [Übersicht über den O\/R\-Designer](../Topic/LINQ%20to%20SQL%20Tools%20in%20Visual%20Studio1.md)   
- [DataContext\-Methoden \(O\/R\-Designer\)](../data-tools/datacontext-methods-o-r-designer.md)   
- [Vorgehensweise: Erstellen von DataContext\-Methoden, die gespeicherten Prozeduren und Funktionen \(O\/R\-Designer\) zugeordnet sind](../data-tools/how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-o-r-designer.md)   
- [LINQ to SQL](../Topic/LINQ%20to%20SQL.md)
+## <a name="see-also"></a>Siehe auch
+[O/R-Designer-Nachrichten](../data-tools/o-r-designer-messages.md)  
+[LINQ to SQL-tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

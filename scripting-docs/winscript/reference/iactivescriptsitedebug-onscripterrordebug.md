@@ -1,27 +1,30 @@
 ---
-title: "IActiveScriptSiteDebug::OnScriptErrorDebug | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IActiveScriptSiteDebug::OnScriptErrorDebug | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IActiveScriptSiteDebug.OnScriptErrorDebug
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "IActiveScriptSiteDebug::OnScriptErrorDebug"
+helpviewer_keywords: IActiveScriptSiteDebug::OnScriptErrorDebug
 ms.assetid: 87f201da-36eb-49a2-b000-e1e1e8c4cdb7
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 3a669d435d84295b22af4298936babf8439eaefa
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# IActiveScriptSiteDebug::OnScriptErrorDebug
-Ermöglicht einem Smarthost, um festzustellen, wie Laufzeitfehler behandelt.  
+# <a name="iactivescriptsitedebugonscripterrordebug"></a>IActiveScriptSiteDebug::OnScriptErrorDebug
+Ermöglicht einen smart Host kann bestimmen, wie zur Laufzeit Fehler behandelt.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 HRESULT OnScriptErrorDebug(  
@@ -31,25 +34,25 @@ HRESULT OnScriptErrorDebug(
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `pErrorDebug`  
- \[in\] Der Laufzeitfehler, der aufgetreten ist  
+ [in] Die aufgetretenen zur Laufzeit  
   
  `pfEnterDebugger`  
- \[out\] kennzeichnen Sie das Angeben, ob der Fehler an den Debugger führt, um JIT\-Debuggen durchzuführen.  
+ [out] Kennzeichen Sie, der angibt, ob der Fehler an dem Debugger JIT-Debuggen übergeben.  
   
  `pfCallOnScriptErrorWhenContinuing`  
- \[out\] kennzeichnen Sie das Angeben, ob `IActiveScriptSite::OnScriptError` aufruft, wenn der Benutzer entscheidet, um fortzufahren, ohne Debuggen.  
+ [out] Flag, das angibt, ob aufgerufen `IActiveScriptSite::OnScriptError` Wenn der Benutzer entscheidet, um ohne Debuggen zu fortfahren.  
   
-## Rückgabewert  
- Die Methode gibt ein `HRESULT` zurück.  Zu den möglichen Werten zählen, aber nicht auf den Wert in der folgenden Tabelle beschränkt.  
+## <a name="return-value"></a>Rückgabewert  
+ Die Methode gibt ein `HRESULT` zurück. Mögliche Werte enthalten, aber nicht beschränkt auf den Wert in der folgenden Tabelle sind.  
   
-|Wert|Description|  
-|----------|-----------------|  
+|Wert|Beschreibung|  
+|-----------|-----------------|  
 |`S_OK`|Die Methode war erfolgreich.|  
   
-## Hinweise  
- Ein Smarthost kann diese Methode verwenden, um zu bestimmen, wie Laufzeitfehler behandelt.  
+## <a name="remarks"></a>Hinweise  
+ Ein Smarthost kann diese Methode verwenden, um zu bestimmen, wie zur Laufzeit Fehler behandelt.  
   
-## Siehe auch  
- [IActiveScriptSiteDebug\-Schnittstelle](../../winscript/reference/iactivescriptsitedebug-interface.md)
+## <a name="see-also"></a>Siehe auch  
+ [IActiveScriptSiteDebug-Schnittstelle](../../winscript/reference/iactivescriptsitedebug-interface.md)

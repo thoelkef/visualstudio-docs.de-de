@@ -1,27 +1,30 @@
 ---
-title: "DOCUMENTNAMETYPE-Enumeration | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: DOCUMENTNAMETYPE-Enumeration | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: DOCUMENTNAMETYPE
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "DOCUMENTNAMETYPE-Enumeration"
+helpviewer_keywords: DOCUMENTNAMETYPE enumeration
 ms.assetid: d36d550e-efb4-493d-8971-4de267005654
-caps.latest.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: a0bd21dddd209f21ae64ea2775bbaa0da226f077
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# DOCUMENTNAMETYPE-Enumeration
-Beschreibt, die eingeben, die für ein Dokument abzurufen.  
+# <a name="documentnametype-enumeration"></a>DOCUMENTNAMETYPE-Enumeration
+Beschreibt, welche Typen für ein Dokument abzurufen sind.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 typedef enum tagDOCUMENTNAMETYPE {  
@@ -29,19 +32,18 @@ typedef enum tagDOCUMENTNAMETYPE {
    DOCUMENTNAMETYPE_TITLE,  
    DOCUMENTNAMETYPE_FILE_TAIL,  
    DOCUMENTNAMETYPE_URL,  
-DOCUMENTNAMETYPE_UNIQUE_TITLE,  
-} DOCUMENTNAMETYPE;  
+DOCUMENTNAMETYPE_UNIQUE_TITLE,} DOCUMENTNAMETYPE;  
 ```  
   
-## Mitglieder  
+## <a name="members"></a>Member  
   
-|Member|Description|  
+|Member|Beschreibung|  
 |------------|-----------------|  
-|DOCUMENTNAMETYPE\_APPNODE|Ruft den Namen ab, wie sie in der Anwendungsstruktur angezeigt wird.|  
-|DOCUMENTNAMETYPE\_TITLE|Ruft den Namen ab, während er auf der Viewertitelleiste angezeigt wird.|  
-|DOCUMENTNAMETYPE\_FILE\_TAIL|Ruft den Dateinamen ohne einen Pfad ab.|  
-|DOCUMENTNAMETYPE\_URL|Ruft die URL des Dokuments ab.|  
-|DOCUMENTNAMETYPE\_UNIQUE\_TITLE|Ruft den Namen ab, der mit Enumeration zur Identifikation angefügt wird.|  
+|DOCUMENTNAMETYPE_APPNODE|Ruft den Namen ab, wie er in der Anwendungsstruktur angezeigt wird.|  
+|DOCUMENTNAMETYPE_TITLE|Ruft den Namen ab, wie er auf der Titelleiste angezeigt wird.|  
+|DOCUMENTNAMETYPE_FILE_TAIL|Ruft den Dateinamen ohne Pfad ab.|  
+|DOCUMENTNAMETYPE_URL|Ruft die URL des Dokuments ab.|  
+|DOCUMENTNAMETYPE_UNIQUE_TITLE|Ruft den Titel angehängt Enumeration für die Identifikation ab.|  
   
-## Siehe auch  
- [Konstanten, Enumerationen und Strukturen für Active Script\-Debugger](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)
+## <a name="see-also"></a>Siehe auch  
+ [Konstanten, Enumerationen und Strukturen für Active Script-Debugger](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)

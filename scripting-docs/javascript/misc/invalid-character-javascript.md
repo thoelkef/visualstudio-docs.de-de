@@ -1,41 +1,43 @@
 ---
-title: "Ung&#252;ltiges Zeichen (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "VS.WebClient.Help.SCRIPT1014"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
+title: "Ungültiges Zeichen (JavaScript) | Microsoft Docs"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: javascript
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: VS.WebClient.Help.SCRIPT1014
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
 ms.assetid: b6a54a93-7fc9-459a-bdd6-f42d1ce40b5f
-caps.latest.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: c91e755b9a52deade5d5d5d24c0a7f28310c4425
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# Ung&#252;ltiges Zeichen (JavaScript)
-Sie haben einen Bezeichner erstellt, der mindestens ein Zeichen enthält, das vom [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]\-Compiler nicht als gültig erkannt wird.  Gültige Zeichen müssen den folgenden Regeln entsprechen:  
+# <a name="invalid-character-javascript"></a>Ungültiges Zeichen (JavaScript)
+Einen Bezeichner erstellte mit "not" ein (oder mehrere Zeichen) von als gültig erkannt. die [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Compiler. Gültige Zeichen verwenden Sie die folgenden Regeln:  
   
--   Das erste Zeichen muss ein ACSII\-Buchstabe \(Großbuchstabe oder Kleinbuchstabe\) oder ein Unterstrich \(\_\) sein.  
+-   Das erste Zeichen muss eine ASCII-Buchstaben (Großbuchstabe oder Kleinbuchstabe) oder einem Unterstrich (_) sein.  
   
--   Alle weiteren Zeichen können ASCII\-Buchstaben, Zahlen oder Unterstriche \(\_\) sein.  
+-   Nachfolgende Zeichen können ASCII-Buchstaben, Zahlen oder Unterstriche enthalten sein.  
   
--   Der Name des Bezeichners darf kein reserviertes Wort sein.  
+-   Der Bezeichner darf kein reserviertes Wort sein.  
   
-### So beheben Sie diesen Fehler  
+### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
   
--   Verwenden Sie keine Zeichen, die für die [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]\-Sprache nicht definiert sind.  
+-   Vermeiden Sie die Verwendung von Zeichen, die nicht Teil der [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Sprachendefinition.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Variablen](../../javascript/variables-javascript.md)   
  [Sonderzeichen](../../javascript/advanced/special-characters-javascript.md)   
  [Datentypen](../../javascript/data-types-javascript.md)

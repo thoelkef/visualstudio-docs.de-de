@@ -1,46 +1,47 @@
 ---
-title: "CA1713: Ereignisse sollten kein Before- oder After-Pr&#228;fix aufweisen | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "EventsShouldNotHaveBeforeOrAfterPrefix"
-  - "CA1713"
-helpviewer_keywords: 
-  - "CA1713"
-  - "EventsShouldNotHaveBeforeOrAfterPrefix"
+title: "CA1713: Ereignisse sollten kein aufweisen, vor oder nach Präfix | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- EventsShouldNotHaveBeforeOrAfterPrefix
+- CA1713
+helpviewer_keywords:
+- CA1713
+- EventsShouldNotHaveBeforeOrAfterPrefix
 ms.assetid: 855772a4-aa9e-410b-88c1-c5fba1ca63da
-caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 14
+caps.latest.revision: "14"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: c211d2f2cc65c12fd11782058c5e8b8a3aaf47b6
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# CA1713: Ereignisse sollten kein Before- oder After-Pr&#228;fix aufweisen
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="ca1713-events-should-not-have-before-or-after-prefix"></a>CA1713: Ereignisse sollten kein Before- oder After-Präfix aufweisen
 |||  
 |-|-|  
 |TypeName|EventsShouldNotHaveBeforeOrAfterPrefix|  
 |CheckId|CA1713|  
-|Kategorie \(Category\)|Microsoft.Naming|  
+|Kategorie|Microsoft.Naming|  
 |Unterbrechende Änderung|Breaking|  
   
-## Ursache  
- Der Name eines Ereignisses beginnt mit "Before" oder "After".  
+## <a name="cause"></a>Ursache  
+ Der Name eines Ereignisses beginnt mit 'Before' oder 'After'.  
   
-## Regelbeschreibung  
- Ereignisnamen sollten die Aktion beschreiben, die das Ereignis auslöst.  Um verwandte Ereignisse zu benennen, die in einer bestimmten Reihenfolge ausgelöst werden, verwenden Sie die Gegenwarts\- oder Vergangenheitsform, um ihre relative Position in der Aktionsfolge anzugeben.  Wenn Sie z. B. ein Paar von Ereignissen benennen, die beim Schließen einer Ressource ausgelöst werden, nennen Sie es "Closing" und "Closed" anstelle von "BeforeClose" und "AfterClose".  
+## <a name="rule-description"></a>Regelbeschreibung  
+ Ereignisnamen sollten die Aktion beschreiben, die das Ereignis auslöst. Um verwandte Ereignisse zu benennen, die in einer bestimmten Reihenfolge ausgelöst werden, verwenden Sie die Gegenwarts- oder Vergangenheitsform, um ihre relative Position in der Aktionsfolge anzugeben. Z. B. beim Benennen von ein Paar von Ereignissen, die ausgelöst wird, wenn eine Ressource zu schließen, können Sie es "Closing" und "Geschlossen" anstelle von "BeforeClose" und "AfterClose" benennen.  
   
- Durch Benennungskonventionen erhalten Bibliotheken, die auf die Common Language Runtime abzielen, ein einheitliches Erscheinungsbild.  Dadurch wird der Lernaufwand für neue Softwarebibliotheken verringert. Zudem wird das Kundenvertrauen dahingehend gestärkt, dass die Bibliothek von einem erfahrenen Entwickler für verwalteten Code erstellt wurde.  
+ Durch Benennungskonventionen erhalten Bibliotheken, die auf die Common Language Runtime abzielen, ein einheitliches Erscheinungsbild. Dadurch wird der Lernaufwand für neue Softwarebibliotheken verringert. Zudem wird das Kundenvertrauen dahingehend gestärkt, dass die Bibliothek von einem erfahrenen Entwickler für verwalteten Code erstellt wurde.  
   
-## Behandeln von Verstößen  
- Entfernen Sie das Präfix vom Ereignisnamen, und erwägen Sie eine Namensänderung und die Verwendung der Gegenwarts\- oder Vergangenheitsform eines Verbs.  
+## <a name="how-to-fix-violations"></a>Behandeln von Verstößen  
+ Entfernen Sie das Präfix im Namen des Ereignisses, und überlegen Sie, ob der Name, der die Gegenwarts- oder Vergangenheitsform eines Verbs zu verwenden.  
   
-## Wann sollten Warnungen unterdrückt werden?  
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?  
  Unterdrücken Sie keine Warnung dieser Regel.

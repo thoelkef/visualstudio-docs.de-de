@@ -1,50 +1,52 @@
 ---
-title: "Arbeiten mit dom&#228;nenspezifischen Sprachl&#246;sungen | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: "Arbeiten mit einer domänenspezifischen Sprachlösungen | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 3db02722-5fd5-437f-a789-9acaaa809de8
-caps.latest.revision: 6
-author: "alancameronwills"
-ms.author: "awills"
-manager: "douge"
-caps.handback.revision: 6
+caps.latest.revision: "6"
+author: alancameronwills
+ms.author: awills
+manager: douge
+ms.openlocfilehash: c16b1e46b84b21fc1eb9d92e9954c3d2eec5b72e
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# Arbeiten mit dom&#228;nenspezifischen Sprachl&#246;sungen
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Eine domänenspezifische Sprache \(DSL\) wird mithilfe einer [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Projektmappe erstellt.  Dieser Abschnitt ist dazu, wie Sie die Lösung installiert und angepasst werden.  
+# <a name="working-with-domain-specific-language-solutions"></a>Arbeiten mit domänenspezifischen Sprachlösungen
+Erstellt eine domänenspezifische Sprache (DSL) mit einem [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Lösung. Dieser Abschnitt enthält Informationen zum Einrichten und Anpassen der Lösung.  
   
-## In diesem Abschnitt  
+## <a name="in-this-section"></a>In diesem Abschnitt  
  [Informationen zu domänenspezifischen Sprachen](../modeling/about-domain-specific-languages.md)  
- Erläutert, wie DSL entwickelt und ihre Verwendung veranschaulicht.  
+ Erläutert, wie konzentriert entwickelt und erläutert, wie sie angewendet.  
   
  [Übersicht über domänenspezifische Sprachtools](../modeling/overview-of-domain-specific-language-tools.md)  
- Erläutert die Hauptaufgaben an der Entwicklung und eines DSL verteilend.  
+ Erläutert die wichtigsten Aufgaben beim Entwickeln und Verteilen von DSL.  
   
  [Übersicht über die Benutzeroberfläche für domänenspezifische Sprachtools](../modeling/overview-of-the-domain-specific-language-tools-user-interface.md)  
- Beschreibt das Fenster, die mit DSL zugeordnet sind.  
+ Beschreibt die Windows, die konzentriert zugeordnet sind.  
   
  [Auswählen einer Lösungsvorlage für eine domänenspezifische Sprache](../modeling/choosing-a-domain-specific-language-solution-template.md)  
- Erläutert, wie eine Vorlage wählt, um das DSL\-Projekt zu starten.  
+ Erläutert das Auswählen einer Vorlage aus, um Ihre DSL-Projekt zu starten.  
   
  [Gewusst wie: Erstellen einer domänenspezifischen Sprachlösung](../modeling/how-to-create-a-domain-specific-language-solution.md)  
- Beschreibt die Schritte, um ein DSL zu installieren.  
+ Beschreibt die Schritte zum Einrichten der DSL.  
   
- [Arbeiten mit dem DSL\-Definitionsdiagramm](../modeling/working-with-the-dsl-definition-diagram.md)  
- Erläutert die Teile des Diagramms.  
+ [Arbeiten mit dem DSL-Definitionsdiagramm](../modeling/working-with-the-dsl-definition-diagram.md)  
+ Erläutert die Teile des Diagramms an.  
   
- [Arbeiten mit dem DSL\-\(Domain\-Specific Languge\)\-Explorer](../modeling/working-with-the-domain-specific-language-explorer.md)  
- Erläutert den Inhalt des Explorers  
+ [Arbeiten mit dem DSL-(Domain-Specific Languge)-Explorer](../modeling/working-with-the-domain-specific-language-explorer.md)  
+ Erläutert die Inhalte des Explorers  
   
  [Gewusst wie: Ändern des Namespace einer domänenspezifischen Sprache](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md)  
- Der Code, den Sie von einer DSL generieren, enthält einen Namespace, den Sie beim Erstellen der Projektmappe festgelegt initiiert, aber Sie sie anschließend ändern können.  
+ Der Code, den Sie aus einer DSL generieren hat einen Namespace, den Sie festlegen, wenn Sie die Projektmappe initiieren, aber später ändern.  
   
- [Gewusst wie: Erweitern des DSL\-Designer](../modeling/how-to-extend-the-domain-specific-language-designer.md)  
- Sie können den DSL\-Designer mit Menübefehlen anpassen.  
+ [Gewusst wie: Erweitern des DSL-Designers](../modeling/how-to-extend-the-domain-specific-language-designer.md)  
+ Sie können die DSL-Designer mit Menübefehlen anpassen.  
   
- [So automatisieren Sie die Transformation aller Vorlagen](http://msdn.microsoft.com/de-de/b63cfe20-fe5e-47cc-9506-59b29bca768a)  
- Zur Vermeidung klicken Sie auf Alle Vorlagen transformieren Sie können jedoch einen automatischen Teil des Builds ausführen.
+ [Gewusst wie: Automatisieren der Transformation aller Vorlagen](http://msdn.microsoft.com/en-us/b63cfe20-fe5e-47cc-9506-59b29bca768a)  
+ Um zu vermeiden, auf alle Vorlagen transformieren, können Sie einen automatische Teil des Builds erleichtern.

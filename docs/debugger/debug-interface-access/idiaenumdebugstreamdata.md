@@ -1,59 +1,58 @@
 ---
-title: "IDiaEnumDebugStreamData | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaEnumDebugStreamData-Schnittstelle"
+title: IDiaEnumDebugStreamData | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaEnumDebugStreamData interface
 ms.assetid: e2023c32-4c05-4d0c-a0be-f016a230c788
-caps.latest.revision: 10
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: b3b2424f62db5c77de2030e641093802593f7094
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaEnumDebugStreamData
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Ermöglicht den Zugriff auf Datensätze in einem Debugbuild Stream.  
+# <a name="idiaenumdebugstreamdata"></a>IDiaEnumDebugStreamData
+Bietet Zugriff auf die Datensätze in einem Debug-Datenstream.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 IDiaEnumDebugStreamData : IUnknown  
 ```  
   
-## Methoden in die Vtable\-Reihenfolge  
- In der folgenden Tabelle werden die Methoden von `IDiaEnumDebugStreamData`an.  
+## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
+ Die folgende Tabelle zeigt die Methoden der `IDiaEnumDebugStreamData`.  
   
 |Methode|Beschreibung|  
-|-------------|------------------|  
-|[IDiaEnumDebugStreamData::get\_\_NewEnum](../../debugger/debug-interface-access/idiaenumdebugstreamdata-get-newenum.md)|Ruft die [IEnumVARIANT Interface](http://msdn.microsoft.com/de-de/139e3c93-faef-4003-9079-e0e94494db3e)\-Version dieses Enumerators ab.|  
-|[IDiaEnumDebugStreamData::get\_Count](../../debugger/debug-interface-access/idiaenumdebugstreamdata-get-count.md)|Ruft die Anzahl der Datensätze Debug Stream ab.|  
-|[IDiaEnumDebugStreamData::get\_name](../../debugger/debug-interface-access/idiaenumdebugstreamdata-get-name.md)|Ruft den Namen des Debuggen von Streams ab.|  
+|------------|-----------------|  
+|[IDiaEnumDebugStreamData::get__NewEnum](../../debugger/debug-interface-access/idiaenumdebugstreamdata-get-newenum.md)|Ruft die [IEnumVARIANT-Schnittstelle](http://msdn.microsoft.com/en-us/139e3c93-faef-4003-9079-e0e94494db3e) Version des Enumerators.|  
+|[IDiaEnumDebugStreamData::get_Count](../../debugger/debug-interface-access/idiaenumdebugstreamdata-get-count.md)|Ruft die Anzahl der Datensätze in der Debug-Datenstrom ab.|  
+|[IDiaEnumDebugStreamData::get_name](../../debugger/debug-interface-access/idiaenumdebugstreamdata-get-name.md)|Ruft den Namen des Datenstroms Debuggen.|  
 |[IDiaEnumDebugStreamData::Item](../../debugger/debug-interface-access/idiaenumdebugstreamdata-item.md)|Ruft den angegebenen Datensatz ab.|  
 |[IDiaEnumDebugStreamData::Next](../../debugger/debug-interface-access/idiaenumdebugstreamdata-next.md)|Ruft die angegebene Anzahl von Datensätzen aus der aufgelisteten Sequenz ab.|  
-|[IDiaEnumDebugStreamData::Skip](../../debugger/debug-interface-access/idiaenumdebugstreamdata-skip.md)|Überspringt eine angegebene Anzahl von Datensätzen in einer aufgelisteten Sequenz.|  
-|[IDiaEnumDebugStreamData::Reset](../../debugger/debug-interface-access/idiaenumdebugstreamdata-reset.md)|Setzt die aufgelistete Sequenz auf den Anfang zurück.|  
-|[IDiaEnumDebugStreamData::Clone](../../debugger/debug-interface-access/idiaenumdebugstreamdata-clone.md)|Erstellt einen Enumerator, der die aufgelistete gleichen Reihenfolge wie der aktuelle Enumerator enthält.|  
+|[IDiaEnumDebugStreamData::Skip](../../debugger/debug-interface-access/idiaenumdebugstreamdata-skip.md)|Überspringt eine angegebene Anzahl von Datensätzen in einer aufgelisteten Sequenz an.|  
+|[IDiaEnumDebugStreamData::Reset](../../debugger/debug-interface-access/idiaenumdebugstreamdata-reset.md)|Setzt die aufgelistete Sequenz an den Anfang zurück.|  
+|[IDiaEnumDebugStreamData::Clone](../../debugger/debug-interface-access/idiaenumdebugstreamdata-clone.md)|Erstellt einen Enumerator, der die gleiche aufgelistete Sequenz wie der aktuelle Enumerator enthält.|  
   
-## Hinweise  
- Diese Schnittstelle stellt einen Datenstrom von Datensätzen in einem Debugbuild Stream dar.  Die Größe und die Interpretation jedes Datensatzes ist vom Stream ab, den der Datensatz von stammt.  Diese Schnittstelle ermöglicht den Zugriff auf effiziente Weise Rohdatenen für Symboldateien in Bytes.  
+## <a name="remarks"></a>Hinweise  
+ Diese Schnittstelle stellt einen Datenstrom von Datensätzen in einem Debug-Datenstream. Die Größe und die Interpretation der jeder Datensatz ist abhängig von den Datenstrom, der der Datensatz stammt. Diese Schnittstelle bietet effektiv Zugriff auf die Rohdaten Bytes in der Symboldatei.  
   
-## Hinweise für Aufrufer  
- Rufen Sie die [IDiaEnumDebugStreams::Item](../../debugger/debug-interface-access/idiaenumdebugstreams-item.md)[IDiaEnumDebugStreams::Next](../../debugger/debug-interface-access/idiaenumdebugstreams-next.md) oder Methoden zum Abrufen eines `IDiaEnumDebugStreamData`\-Objekt.  
+## <a name="notes-for-callers"></a>Hinweise für Aufrufer  
+ Rufen Sie die [idiaenumdebugstreams:: Item](../../debugger/debug-interface-access/idiaenumdebugstreams-item.md) oder [idiaenumdebugstreams:: Next](../../debugger/debug-interface-access/idiaenumdebugstreams-next.md) Methoden zum Abrufen einer `IDiaEnumDebugStreamData` Objekt.  
   
-## Beispiel  
- Dieses Beispiel zeigt, wie Sie einen einzigen Stream und ihre Datensätze zugreifen.  
+## <a name="example"></a>Beispiel  
+ Dieses Beispiel zeigt, wie den Zugriff auf einen Datenstrom und ihre Datensätze.  
   
-```cpp#  
+```C++  
 void PrintStreamData(IDiaEnumDebugStreamData* pStream)  
 {  
     BSTR  wszName;  
@@ -104,14 +103,14 @@ void PrintStreamData(IDiaEnumDebugStreamData* pStream)
 }  
 ```  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  Header: Dia2.h  
   
  Bibliothek: diaguids.lib  
   
- DLLs: msdia80.dll  
+ DLL: "MSDIA80.dll"  
   
-## Siehe auch  
- [Schnittstellen \(Debug Interface Access SDK\)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
- [IDiaEnumDebugStreams::Item](../../debugger/debug-interface-access/idiaenumdebugstreams-item.md)   
+## <a name="see-also"></a>Siehe auch  
+ [Schnittstellen (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+ [Idiaenumdebugstreams:: Item](../../debugger/debug-interface-access/idiaenumdebugstreams-item.md)   
  [IDiaEnumDebugStreams::Next](../../debugger/debug-interface-access/idiaenumdebugstreams-next.md)

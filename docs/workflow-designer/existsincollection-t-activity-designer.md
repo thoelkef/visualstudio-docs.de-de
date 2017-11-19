@@ -1,44 +1,47 @@
 ---
-title: "ExistsInCollection&lt;T&gt;-Aktivit&#228;tsdesigner | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
-f1_keywords: 
-  - "System.Activities.Statements.ExistsInCollection`1.UI"
+title: "ExistsInCollection&lt;T&gt; Aktivitäts-Designer | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
+f1_keywords: System.Activities.Statements.ExistsInCollection`1.UI
 ms.assetid: 0acf9a13-caf5-4bb4-ba22-ec37d2b7267a
-caps.latest.revision: 6
-author: "ErikRe"
-ms.author: "erikre"
-manager: "erikre"
-caps.handback.revision: 6
+caps.latest.revision: "6"
+author: ErikRe
+ms.author: erikre
+manager: erikre
+ms.openlocfilehash: 6427ae5e10a2c1405e69b375c7bb2e77467d81d1
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# ExistsInCollection&lt;T&gt;-Aktivit&#228;tsdesigner
-Der **ExistsInCollection\<T\>**\-Aktivitätsdesigner wird verwendet, um eine <xref:System.Activities.Statements.ExistsInCollection%601>\-Aktivität zu erstellen und zu konfigurieren.  
+# <a name="existsincollectionlttgt-activity-designer"></a>ExistsInCollection&lt;T&gt; Aktivitäts-Designer
+Die **ExistsInCollection\<T >** Aktivitäts-Designer dient zum Erstellen und Konfigurieren einer <xref:System.Activities.Statements.ExistsInCollection%601> Aktivität.  
   
-## Die ExistsInCollection\<T\>\-Aktivität  
- Mit der <xref:System.Activities.Statements.ExistsInCollection%601>\-Aktivität wird bestimmt, ob ein angegebenes Element in einer bestimmten Auflistung vorhanden ist.  
+## <a name="the-existsincollectiont-activity"></a>Die ExistsInCollection < T\> Aktivität  
+ Mit der <xref:System.Activities.Statements.ExistsInCollection%601>-Aktivität wird bestimmt, ob ein angegebenes Element in einer bestimmten Auflistung vorhanden ist.  
   
-### Verwenden des ExistsInCollection\<T\>\-Aktivitätsdesigners  
- Der **ExistsInCollection\<T\>**\-Aktivitätsdesigner befindet sich in der Kategorie **Auflistung** der **Toolbox**, auf die Sie zugreifen, indem Sie in [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] auf die Registerkarte **Toolbox** klicken. \(Alternativ können Sie **Symbolleiste** im Menü **Ansicht** wählen oder die Tastenkombination STRG\+ALT\+X verwenden.\)  
+### <a name="using-the-existsincollectiont-activity-designer"></a>Verwenden die ExistsInCollection\<T >-Aktivitätsdesigners  
+ Die **ExistsInCollection\<T >** Aktivitäts-Designer finden Sie in der **Auflistung** Kategorie von der **Toolbox**, indem Sie auf die zugegriffenwird **Toolbox** Registerkarte [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] (Wählen Sie alternativ **Symbolleiste** aus der **Ansicht** Menüs oder STRG + ALT + X.)  
   
- Sie können den **ExistsInCollection\<T\>**\-Aktivitätsdesigner aus der **Toolbox** auf die [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)]\-Oberfläche ziehen und ablegen, wo normalerweise Aktivitäten platziert werden, z. B. in einem <xref:System.Activities.Statements.Sequence>\-Element.Hierdurch erstellen Sie eine <xref:System.Activities.Statements.ExistsInCollection%601>\-Aktivität mit dem <xref:System.Activities.Activity.DisplayName%2A>\-Standardnamen ExistsInCollection\<Int32\>.\(Der Standardwert für *TypeArgument* ist **Int32**.Diese Einstellung kann im Eigenschaftenraster geändert werden.\)  Der <xref:System.Activities.Activity.DisplayName%2A>\-Wert kann im Header des **ExistsInCollection\<T\>**\-Aktivitätsdesigners oder im Feld **DisplayName** des Eigenschaftenrasters geändert werden.Die anderen Eigenschaften müssen im Eigenschaftenraster bearbeitet werden.  
+ Die **ExistsInCollection\<T >** Aktivitäts-Designer gezogen werden kann, aus der **Toolbox** gezogen und auf die [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] -Oberfläche ablegen, wo Aktivitäten normalerweise platziert werden, wie z. B. innerhalb einer <xref:System.Activities.Statements.Sequence>. Dies erstellt eine <xref:System.Activities.Statements.ExistsInCollection%601> -Aktivität mit dem standardmäßigen <xref:System.Activities.Activity.DisplayName%2A> des ExistsInCollection < Int32\>. (Standardmäßig der *TypeArgument* ist **Int32**. Diese Einstellung kann im Eigenschaftenraster geändert werden.)  Die <xref:System.Activities.Activity.DisplayName%2A> Wert kann im Header des bearbeitet werden die **ExistsInCollection < T\>**  Aktivitäts-Designer oder in der **DisplayName** Feld des Eigenschaftenrasters. Die anderen Eigenschaften müssen im Eigenschaftenraster bearbeitet werden.  
   
-### Die ExistsInCollection\<T\>\-Eigenschaften  
- Die folgende Tabelle enthält die <xref:System.Activities.Statements.ExistsInCollection%601>\-Eigenschaften und eine Beschreibung zu deren Verwendung im Designer.  
+### <a name="the-existsincollectiont-properties"></a>Die ExistsInCollection < T\> Eigenschaften  
+ In der folgenden Tabelle werden die <xref:System.Activities.Statements.ExistsInCollection%601>-Eigenschaften aufgeführt, und es wird beschrieben, wie sie im Designer verwendet werden.  
   
 |Eigenschaftenname|Erforderlich|Verwendung|  
-|-----------------------|------------------|----------------|  
-|<xref:System.Activities.Activity.DisplayName%2A>|Nein|Der Anzeigename der <xref:System.Activities.Statements.ExistsInCollection%601>\-Aktivität.Der Standardwert ist ExistsInCollection\<Int32\>.Der <xref:System.Activities.Activity.DisplayName%2A>\-Wert ist zwar nicht unbedingt erforderlich, es wird jedoch empfohlen, diesen zu verwenden.|  
-|<xref:System.Activities.Statements.ExistsInCollection%601.Item%2A>|Ja|Das Element, das der Auflistung \(Collection\<T\>\) hinzugefügt werden soll.Dieses Element weist den *TypeArgument*\-Typ *T* auf.Zum Angeben des Elements geben Sie im Eigenschaftenraster einen Visual Basic\-Ausdruck ein.|  
-|<xref:System.Activities.Statements.ExistsInCollection%601.Collection%2A>|Ja|Die Auflistung, der das Element hinzugefügt werden soll.Diese Auflistung ist vom Typ **ICollection\<TypeArgument\>.** Zum Angeben der Auflistung geben Sie im Eigenschaftenraster einen Visual Basic\-Ausdruck ein.|  
-|*TypeArgument*|True|Der Typ T der in der <xref:System.Collections.Generic.ICollection%601> enthaltenen Elemente.Standardmäßig ist der *TypeArgument*\-Typ auf **Int32** festgelegt.Zum Ändern des Typs müssen Sie im Eigenschaftenraster den Wert für *TypeArgument* im Kombinationsfeld ändern.|  
-|<xref:System.Activities.Activity%601.Result%2A>|Nein|Ein Wert, der angibt, ob das angegebene Element in der Auflistung vorhanden ist.Um eine Variable anzugeben, die an das Ergebnis gebunden wird, geben Sie im Eigenschaftenraster eine Visual Basic\-Variable ein.|  
+|-------------------|--------------|-----------|  
+|<xref:System.Activities.Activity.DisplayName%2A>|False|Der Anzeigename der <xref:System.Activities.Statements.ExistsInCollection%601>-Aktivität. Der Standardwert ist ExistsInCollection < Int32\>. Obwohl der <xref:System.Activities.Activity.DisplayName%2A>-Wert nicht zwingend erforderlich ist, wird empfohlen, einen Anzeigenamen zu verwenden.|  
+|<xref:System.Activities.Statements.ExistsInCollection%601.Item%2A>|True|Das Element der Auflistung hinzuzufügende\<T >. Dieses Element ist vom Typ *T* ist vom Typ *TypeArgument*. Zum Angeben des Elements geben Sie im Eigenschaftenraster einen Visual Basic-Ausdruck ein.|  
+|<xref:System.Activities.Statements.ExistsInCollection%601.Collection%2A>|True|Die Auflistung, zu der das Element hinzugefügt werden soll. Diese Sammlung ist vom Typ **ICollection < TypeArgument\>.** Geben Sie im Eigenschaftenraster einen Visual Basic-Ausdruck ein, um die Auflistung anzugeben.|  
+|*TypeArgument*|True|Der Typ T der in der <xref:System.Collections.Generic.ICollection%601> enthaltenen Elemente. Standardmäßig dies *TypeArgument* Typ festgelegt ist, um **Int32**. Um den Typ zu ändern, ändern Sie den Wert von der *TypeArgument* im Kombinationsfeld im Eigenschaftenraster.|  
+|<xref:System.Activities.Activity%601.Result%2A>|False|Ein Wert, der angibt, ob das angegebene Element in der Auflistung vorhanden ist. Um eine Variable anzugeben, die an das Ergebnis gebunden wird, geben Sie im Eigenschaftenraster eine Visual Basic-Variable ein.|  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Auflistung](../workflow-designer/collection-activity-designers.md)   
- [AddToCollection\<T\>](../workflow-designer/addtocollection-t-activity-designer.md)   
- [ClearCollection\<T\>](../workflow-designer/clearcollection-t-activity-designer.md)   
- [RemoveFromCollection\<T\>](../workflow-designer/removefromcollection-t-activity-designer.md)
+ [AddToCollection\<T >](../workflow-designer/addtocollection-t-activity-designer.md)   
+ [ClearCollection\<T >](../workflow-designer/clearcollection-t-activity-designer.md)   
+ [RemoveFromCollection\<T >](../workflow-designer/removefromcollection-t-activity-designer.md)

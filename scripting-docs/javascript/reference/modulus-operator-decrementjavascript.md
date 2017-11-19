@@ -1,65 +1,55 @@
 ---
-title: "Modulus-Operator (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "%"
-dev_langs: 
-  - "JavaScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "Modulus-Operator, JavaScript"
-  - "%-Operator [JavaScript]"
-  - "Modulo-Funktion [JavaScript]"
-ms.assetid: 087d654f-623b-498d-95ff-596d26bf674d
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+title: Modulus-Operator (JavaScript) | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: '%'
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- '% operator [JavaScript]'
+- modulus operator [JavaScript]
+ms.assetid: f98bf7ee-8366-4f1d-8769-dbdff82056a8
+caps.latest.revision: "0"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 0310b9ab6abde2661e0e1bf27cef59b79c1c0f30
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# Modulus-Operator (JavaScript)
-Dividiert den Wert eines Ausdrucks durch den Wert eines anderen und gibt den Restwert zurück.  
+# <a name="modulus-operator--javascript"></a>Modulus-Operator (JavaScript)
+Dividiert den Wert eines numerischen Ausdrucks durch den Wert eines anderen numerischen Ausdrucks, und die übrigen erzeugt.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
-  
-result = number1 % number2  
+result = expression1 % expression2  
 ```  
   
-## Argumente  
+## <a name="arguments"></a>Argumente  
  `result`  
  Beliebige Variable.  
   
- `number1`  
- Beliebiger numerischer Ausdruck.  
+ `expression1`  
+ Ein beliebiger numerischer Ausdruck.  
   
- `number2`  
- Beliebiger numerischer Ausdruck.  
+ `expression2`  
+ Ein beliebiger numerischer Ausdruck.  
   
-## Hinweise  
- Der Modulo\- oder Restoperator dividiert `number1` durch `number2` und gibt nur den Rest als `result` zurück.  Das Vorzeichen des `result` ist mit dem Vorzeichen von `number1` identisch.  Der Wert von `result` liegt zwischen 0 und dem absoluten Wert von `number2`.  
-  
- Im folgenden Code wird die Verwendung des Modulo\-Operators gezeigt:  
-  
-```  
-var modResult = 19 % 6.7;  
-document.write(modResult);  
-  
-// Output: 5.6  
-  
-```  
-  
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
+ [Modulozuweisungsoperator](../../javascript/reference/modulus-assignment-operator-decrement-javascript.md)   
  [Operatorrangfolge](../../javascript/operator-subtractprecedence-javascript.md)   
- [Zusammenfassung der Operatoren \(JavaScript\)](../../javascript/misc/operator-subtractsummary-javascript.md)
+ [Zusammenfassung der Operatoren (JavaScript)](../../javascript/misc/operator-subtractsummary-javascript.md)

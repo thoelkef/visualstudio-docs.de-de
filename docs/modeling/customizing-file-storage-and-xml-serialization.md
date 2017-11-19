@@ -1,25 +1,25 @@
 ---
-title: "Anpassen von Dateispeicher und XML-Serialisierung | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.dsltools.dsldesigner.xmlbehavior"
-helpviewer_keywords: 
-  - "Domänenspezifische Sprache, Serialisierung"
+title: Anpassen von Dateispeicher und XML-Serialisierung | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vs.dsltools.dsldesigner.xmlbehavior
+helpviewer_keywords: Domain-Specific Language, serialization
 ms.assetid: 76c53ef1-e3b9-45da-b425-1bddb3c01395
-caps.latest.revision: 17
-author: "alancameronwills"
-ms.author: "awills"
-manager: "douge"
-caps.handback.revision: 17
+caps.latest.revision: "17"
+author: alancameronwills
+ms.author: awills
+manager: douge
+ms.openlocfilehash: eae3a0ffd77fa4b399b2d62d3139e7bd8a405d48
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# Anpassen von Dateispeicher und XML-Serialisierung
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="customizing-file-storage-and-xml-serialization"></a>Anpassen von Dateispeicher und XML-Serialisierung
 Wenn der Benutzer eine Instanz speichert oder *Modell*, der eine domänenspezifische Sprache (DSL) in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], eine XML-Datei erstellt oder aktualisiert wird. Die Datei kann neu geladen werden, um das Modell im Speicher neu zu erstellen.  
   
  Sie können das Serialisierungsschema anpassen, indem Sie die Einstellungen unter Anpassen **XML-Serialisierungsverhalten** im Explorer für DSL. Es ist ein Knoten unter **XML-Serialisierungsverhalten** für jede Domänenklasse, die Eigenschaft und die Beziehung. Die Beziehungen befinden sich unter ihrer Quellklassen. Es gibt auch Knoten an die Form, Connectors und Diagramm Klassen entsprechen.  
@@ -34,7 +34,7 @@ Wenn der Benutzer eine Instanz speichert oder *Modell*, der eine domänenspezifi
   
 -   Die Modelldatei hat einen Namen, z. B. **Model1.mydsl**. Sie speichert die betroffenen Modellelemente und Beziehungen und ihre Eigenschaften. Die Dateierweiterung, z. B. **.mydsl** richtet sich nach der **FileExtension** Eigenschaft von der **Editor** Knoten in der DSL-Definition.  
   
--   Die Diagrammdatei hat einen Namen, z. B. **Model1.mydsl.diagram**. Sie speichert die Formen, Connectors, und ihre Positionen, Farben, Zeile Dicke und andere Details der Darstellung des Diagramms. Wenn der Benutzer löscht eine **.diagram** Datei, die wichtige Informationen im Modell geht nicht verloren. Nur das Layout des Diagramms geht verloren. Wenn die Datei geöffnet wird, eine Standardsammlung von Formen und Connectors erstellt werden.  
+-   Die Diagrammdatei hat einen Namen, z. B. **Model1.mydsl.diagram**. Sie speichert die Formen, Connectors und ihre Positionen, Farben, Zeile Dicke und andere Details der Darstellung des Diagramms. Wenn der Benutzer löscht eine **.diagram** Datei, die wichtige Informationen im Modell geht nicht verloren. Nur das Layout des Diagramms geht verloren. Wenn die Datei geöffnet wird, eine Standardsammlung von Formen und Connectors erstellt werden.  
   
 #### <a name="to-change-the-file-extension-of-a-dsl"></a>So ändern Sie die Erweiterung der DSL  
   
@@ -55,7 +55,7 @@ Wenn der Benutzer eine Instanz speichert oder *Modell*, der eine domänenspezifi
   
  Diese DSL wurde verwendet, um ein Modell zu erstellen, die folgende Darstellung auf dem Bildschirm verfügt.  
   
- ![Stammstrukturdiagramm, Toolbox und Explorer](../modeling/media/familyt_instance.png "FamilyT_Instance")  
+ ![Stammbaumdiagramm, Toolbox und Explorer](../modeling/media/familyt_instance.png "FamilyT_Instance")  
   
  Dieses Modell wurde gespeichert, und klicken Sie dann erneut in der XML-Text-Editor geöffnet:  
   
@@ -78,13 +78,13 @@ Wenn der Benutzer eine Instanz speichert oder *Modell*, der eine domänenspezifi
   
  Beachten Sie die folgenden Punkte bezüglich der serialisierten Modell:  
   
--   Jede XML-Knoten hat einen Namen, der einen Domäne-Namen identisch ist, mit dem Unterschied, dass der erste Buchstabe Kleinbuchstaben ist. Z. B. `familyTreeModel` und `person`.  
+-   Jede XML-Knoten hat einen Namen, der einen Domäne-Namen identisch ist, mit dem Unterschied, dass der erste Buchstabe Kleinbuchstaben ist. Beispielsweise `familyTreeModel` und `person`.  
   
 -   Domäneneigenschaften wie Name und BirthYear werden in der XML-Knoten als Attribute serialisiert. Erneut wird neben dem Eigenschaftsnamen das erste Zeichen in Kleinbuchstaben konvertiert.  
   
 -   Jede Beziehung wird als ein XML-Knoten geschachtelt Quellenende der Beziehung serialisiert. Der Knoten besitzt den gleichen Namen wie die Rolle Quelleigenschaft, jedoch mit einem Kleinbuchstaben Anfangszeichen.  
   
-     Beispielsweise ist in der DSL-Definition einer Rolle mit dem Namen **Personen** wird zur Quelle der **FamilyTree** Klasse.  In der XML-CODE wird dies durch die Knoten mit dem Namen `people` in geschachtelt die `familyTreeModel` Knoten.  
+     Beispielsweise ist in der DSL-Definition einer Rolle mit dem Namen **Personen** wird zur Quelle der **FamilyTree** Klasse.  In der XML-Code wird dies durch die Knoten mit dem Namen `people` in geschachtelt die `familyTreeModel` Knoten.  
   
 -   Das Zielende jeder Einbetten von Beziehung wird als Knoten unter der Beziehung geschachtelt serialisiert. Z. B. die `people` Knoten enthält mehrere `person` Knoten.  
   
@@ -108,7 +108,7 @@ Wenn der Benutzer eine Instanz speichert oder *Modell*, der eine domänenspezifi
   
 -   *Key-Moniker qualifiziert* Target-Element identifizieren, indem Sie den Wert einer bestimmten Domäne-Eigenschaft, die als Moniker Primary Key bezeichnet. Der Moniker des Target-Element ist der Moniker des übergeordneten Elements in der Struktur der Beziehungen Einbettung vorangestellt.  
   
-     In den folgenden Beispielen werden von entnommen, DIE DSL in dem es ist eine Domänenklasse, die mit dem Namen Album, besitzt eine Einbetten von Beziehung zu einer Domäne benannte Musiktitel Klasse:  
+     In den folgenden Beispielen werden von entnommen, die DSL in dem es ist eine Domänenklasse, die mit dem Namen Album, besitzt eine Einbetten von Beziehung zu einer Domäne benannte Musiktitel Klasse:  
   
     ```  
     <albumMoniker title="/My Favorites/Jazz after Teatime" />  
@@ -118,19 +118,19 @@ Wenn der Benutzer eine Instanz speichert oder *Modell*, der eine domänenspezifi
   
      Qualifizierte Key Moniker verwendet werden, verfügt die Zielklasse eine Eigenschaft "Domain" für die die Option **ist der Moniker-Schlüssel** festgelegt ist, um `true` in **XML-Serialisierungsverhalten**. Im Beispiel wird diese Option für Eigenschaften von Domänen mit dem Namen "Title" in der Domänenklassen "Album" und "Titel" festgelegt.  
   
- Qualifizierte Key Moniker sind einfacher zu lesen als ID-Moniker. Wenn der XML-CODE der Modelldateien von Personen gelesen werden soll, sollten erwägen Sie, qualifizierte Key Moniker zu verwenden. Es ist jedoch möglich, dass der Benutzer mehr als ein Element auf dem gleichen Moniker Schlüssel festlegen. Doppelter Schlüssel verursachen können, dass die Datei nicht ordnungsgemäß laden. Aus diesem Grund, wenn Sie eine Domänenklasse, die mit qualifizierten Key Moniker verwiesen wird definieren, sollten Sie Möglichkeiten zum verhindern, dass der Benutzer Speichern einer Datei, die doppelte Moniker verfügt.  
+ Qualifizierte Key Moniker sind einfacher zu lesen als ID-Moniker. Wenn der XML-Code der Modelldateien von Personen gelesen werden soll, sollten erwägen Sie, qualifizierte Key Moniker zu verwenden. Es ist jedoch möglich, dass der Benutzer mehr als ein Element auf dem gleichen Moniker Schlüssel festlegen. Doppelter Schlüssel verursachen können, dass die Datei nicht ordnungsgemäß laden. Aus diesem Grund, wenn Sie eine Domänenklasse, die mit qualifizierten Key Moniker verwiesen wird definieren, sollten Sie Möglichkeiten zum verhindern, dass der Benutzer Speichern einer Datei, die doppelte Moniker verfügt.  
   
 #### <a name="to-set-a-domain-class-to-be-referenced-by-id-monikers"></a>Festlegen eine Domänenklasse von ID-Moniker verwiesen wird  
   
 1.  Stellen Sie sicher, dass **ist der Moniker-Schlüssel** ist `false` für jede Eigenschaft "Domain" in der Klasse und deren Basisklassen.  
   
-    1.  Erweitern Sie im Explorer für DSL, **XML-Serialisierungsdaten Behavior\Class\\***\< die Domänenklasse>***\Element Daten**.  
+    1.  Erweitern Sie im Explorer für DSL, **XML-Serialisierungsdaten Behavior\Class\\***\<die Domänenklasse >***\Element Daten**.  
   
     2.  Überprüfen Sie, ob **ist der Moniker-Schlüssel** ist `false` für jede Eigenschaft "Domain".  
   
     3.  Wenn die Domänenklasse eine Basisklasse verfügt, wiederholen Sie das Verfahren in dieser Klasse aus.  
   
-2.  Legen Sie **serialisieren Id** = `true` für die Domänenklasse.  
+2.  Legen Sie **serialisieren Id**  =  `true` für die Domänenklasse.  
   
      Diese Eigenschaft finden Sie unter **XML-Serialisierungsverhalten**.  
   
@@ -138,17 +138,17 @@ Wenn der Benutzer eine Instanz speichert oder *Modell*, der eine domänenspezifi
   
 -   Legen Sie **ist der Moniker-Schlüssel** für eine Eigenschaft "Domain" für eine vorhandene Domänenklasse. Der Typ der Eigenschaft muss `string`.  
   
-    1.  Erweitern Sie im Explorer für DSL, **XML-Serialisierungsdaten Behavior\Class\\***\< die Domänenklasse>***\Element Daten**, und wählen Sie dann die Eigenschaft "Domain".  
+    1.  Erweitern Sie im Explorer für DSL, **XML-Serialisierungsdaten Behavior\Class\\***\<die Domänenklasse >***\Element Daten**, und wählen Sie dann die Eigenschaft "Domain".  
   
     2.  Legen Sie im Fenster Eigenschaften **ist der Moniker-Schlüssel** auf `true`.  
   
--   \- "oder" -  
+-   \- oder –  
   
      Erstellen Sie eine neue Domäne-Klasse, mit der **Domänenklasse namens** Tool.  
   
-     Dieses Tool erstellt eine neue Klasse, die eine Eigenschaft "Domain" Namen aufgerufen hat. Die **Elementname wird** und **ist der Moniker-Schlüssel** Eigenschaften von dieser Eigenschaft "Domain" werden initialisiert, um `true`.  
+     Dieses Tool erstellt eine neue Klasse, die eine Eigenschaft "Domain" Namen aufgerufen hat. Die **Elementname ist** und **ist der Moniker-Schlüssel** Eigenschaften von dieser Eigenschaft "Domain" werden initialisiert, um `true`.  
   
--   \- "oder" -  
+-   \- oder –  
   
      Erstellen Sie eine Vererbungsbeziehung besteht aus der Domänenklasse mit einer anderen Klasse, die über eine Schlüsseleigenschaft Moniker verfügt.  
   
@@ -157,11 +157,11 @@ Wenn der Benutzer eine Instanz speichert oder *Modell*, der eine domänenspezifi
   
  Es gibt mehrere Methoden, mit deren Hilfe diese Situation zu vermeiden:  
   
--   Legen Sie **Elementname ist** = `true` für die Eigenschaft "Schlüssel Domain". Wählen Sie die Eigenschaft "Domain" DSL-Definitionsdiagramm, und legen Sie den Wert im Eigenschaftenfenster angezeigt.  
+-   Legen Sie **Elementname ist**  =  `true` für die Eigenschaft "Schlüssel Domain". Wählen Sie die Eigenschaft "Domain" DSL-Definitionsdiagramm, und legen Sie den Wert im Eigenschaftenfenster angezeigt.  
   
      Wenn der Benutzer eine neue Instanz der Klasse erstellt, wird dieser Wert der Eigenschaft "Domain" automatisch einen anderen Wert zugewiesen werden. Das Standardverhalten Fügt eine Zahl an das Ende der Klassenname. Dies verhindert nicht die Benutzer den Namen ändern, um ein Duplikat, erleichtert aber im Fall der Benutzer kein Wert festgelegt wird, vor dem Speichern des Modells.  
   
--   Aktivieren Sie die Überprüfung der DSL. DSL-Explorer, wählen Sie Editor\Validation, und legen die **verwendet...** Eigenschaften `true`.  
+-   Aktivieren Sie die Überprüfung der DSL. DSL-Explorer, wählen Sie Editor\Validation, und legen die **verwendet...**  Eigenschaften `true`.  
   
      Es kann Überprüfung automatisch generiert, die überprüft, für die Mehrdeutigkeiten. Die Methode wird in der `Load` Überprüfung Kategorie. Dadurch wird sichergestellt, dass der Benutzer gewarnt werden, wenn es möglicherweise nicht möglich, die Datei erneut zu öffnen.  
   
@@ -190,7 +190,7 @@ Wenn der Benutzer eine Instanz speichert oder *Modell*, der eine domänenspezifi
   
  Beachten Sie, da eine GUID eindeutig ist, es nie den Moniker des übergeordneten vorangestellt ist.  
   
- Wenn Sie wissen, dass eine bestimmte Domäne-Eigenschaft stets einen eindeutigen Wert innerhalb eines Modells, legen Sie **Moniker-Qualifizierer ist** auf `true` für diese Eigenschaft. Dadurch wird es als Qualifizierer verwendet werden kann, ohne den Moniker des übergeordneten Elements verursacht. Angenommen, wenn Sie beide Optionen festlegen **Moniker-Qualifizierer ist** und **ist der Moniker-Schlüssel** für die Title-Eigenschaft der Domäne der Album-Klasse, Namen\noder Bezeichner des Modells wird nicht in Moniker Album und verwendet eingebettete seine untergeordneten Elemente:  
+ Wenn Sie wissen, dass eine bestimmte Domäne-Eigenschaft stets einen eindeutigen Wert innerhalb eines Modells, legen Sie **Moniker-Qualifizierer ist** auf `true` für diese Eigenschaft. Dadurch wird es als Qualifizierer verwendet werden kann, ohne den Moniker des übergeordneten Elements verursacht. Angenommen, wenn Sie beide Optionen festlegen **Moniker-Qualifizierer ist** und **ist der Moniker-Schlüssel** für die Title-Eigenschaft der Domäne der Album-Klasse, Namen\noder Bezeichner des Modells wird nicht in Moniker Album und verwendet die eingebettete untergeordnete Elemente:  
   
 ```  
 <albumMoniker name="Jazz after Teatime" />  
@@ -201,7 +201,7 @@ Wenn der Benutzer eine Instanz speichert oder *Modell*, der eine domänenspezifi
 ## <a name="customizing-the-structure-of-the-xml"></a>Anpassen der XML-Struktur  
  Um die folgenden Anpassungen vornehmen, erweitern Sie die **XML-Serialisierungsverhalten** Knoten im Explorer für DSL. Erweitern Sie den Elementdaten-Knoten, um die Liste der Eigenschaften und Beziehungen, die auf diese Klasse belegen, unter einer Domänenklasse. Wählen Sie eine Beziehung, und passen Sie die Optionen im Eigenschaftenfenster angezeigt.  
   
--   Legen Sie **weglassen Element** auf "true", um die Rolle Quellknoten nur die Liste der Zielelemente verlassen zu unterdrücken. Diese Option sollte nicht festgelegt werden, wenn mehr als eine Beziehung zwischen den Quell- und Zielklassen vorhanden ist.  
+-   Legen Sie **Element weglassen** auf "true", um die Rolle Quellknoten nur die Liste der Zielelemente verlassen zu unterdrücken. Diese Option sollte nicht festgelegt werden, wenn mehr als eine Beziehung zwischen den Quell- und Zielklassen vorhanden ist.  
   
     ```  
   
@@ -273,12 +273,12 @@ Wenn der Benutzer eine Instanz speichert oder *Modell*, der eine domänenspezifi
 |Benutzerdefinierte|Legen Sie **"true"** Wenn Sie Ihren eigenen Serialisierung und Deserialisierung für diese Domänenklasse schreiben möchten.<br /><br /> Erstellen Sie die Projektmappe, und untersuchen Sie die Fehler, um detaillierte Informationen zu ermitteln.|  
 |Domänenklasse|Domain-Klasse, für die diese Klasse Datenknoten gilt. Schreibgeschützt.|  
 |Elementname|XML-Knoten-Name für die Elemente dieser Klasse. Der Standardwert ist eine kleingeschriebene Version des Domänennamens-Klasse.|  
-|Monikername-Attribut|Der Name des Attributs in Moniker Elemente verwendet, um den Verweis enthält. Wenn leer, wird der Name der Schlüsseleigenschaft oder -Id verwendet.<br /><br /> In diesem Beispiel ist es "name":  `<personMoniker name="/Mike Nash"/>`|  
+|Monikername-Attribut|Der Name des Attributs in Moniker Elemente verwendet, um den Verweis enthält. Wenn leer, wird der Name der Schlüsseleigenschaft oder -Id verwendet.<br /><br /> In diesem Beispiel ist es "name":`<personMoniker name="/Mike Nash"/>`|  
 |Monikername-Element|Der Name des XML-Elements für Moniker, die Elemente dieser Klasse verweisen, verwendet.<br /><br /> Der Standardwert ist der Klassenname mit dem Suffix "Moniker" in Kleinbuchstaben. Beispielsweise `personMoniker`.|  
-|Typ der Monikername|Der Name des XSD-Typs für Moniker auf Elemente dieser Klasse generiert. XSD-CODE befindet sich im **Dsl\Generated Code\\\*Schema.xsd**|  
+|Typ der Monikername|Der Name des XSD-Typs für Moniker auf Elemente dieser Klasse generiert. XSD-Code befindet sich im **Dsl\Generated Code\\\*Schema.xsd**|  
 |Serialisieren Sie Id|Bei "true", ist die GUID des Elements in der Datei enthalten. Diese Angabe muss "true", wenn keine Eigenschaft, die markiert ist **ist der Moniker-Schlüssel** und der DSL verweisbeziehungen diese Klasse definiert.|  
 |Typname|Der Name des Xml-Datentyps in der Xsd aus der angegebenen Domänenklasse generiert.|  
-|Notizen|Informelle Anmerkungen im Zusammenhang mit diesem element|  
+|Hinweise|Informelle Anmerkungen im Zusammenhang mit diesem element|  
   
 ### <a name="xml-property-data"></a>XML-Daten  
  XML-Eigenschaftsknoten befinden sich unter den Knoten für die Klasse.  
@@ -291,7 +291,7 @@ Wenn der Benutzer eine Instanz speichert oder *Modell*, der eine domänenspezifi
 |Ist der Moniker-Qualifizierer|Bei "true", wird die Eigenschaft zum Erstellen des Qualifizierers in Moniker verwendet. Wenn "false", und SerializeId nicht für diese Domänenklasse "true" ist, werden Moniker durch den Moniker des übergeordneten Elements in der Struktur einbetten qualifiziert.|  
 |Darstellung|Wenn das Attribut, das die Eigenschaft als XML-Attribut serialisiert werden; Element, es wird serialisiert, als ein Element. Falls Sie nicht serialisiert.|  
 |XML-Name|Namen für die XML-Attribut oder Element, das die Eigenschaft darstellt. Standardmäßig ist dies eine kleingeschriebene Version des Domänennamens-Eigenschaft.|  
-|Notizen|Informelle Anmerkungen im Zusammenhang mit diesem element|  
+|Hinweise|Informelle Anmerkungen im Zusammenhang mit diesem element|  
   
 ### <a name="xml-role-data"></a>Rolle von XML-Daten  
  Rolle Datenknoten befinden sich unter den Quellknoten-Klasse.  
@@ -300,10 +300,10 @@ Wenn der Benutzer eine Instanz speichert oder *Modell*, der eine domänenspezifi
 |--------------|-----------------|  
 |Benutzerdefinierte Moniker verfügt|Legen Sie diese auf "true", wenn Sie Ihren eigenen Code zum Generieren und Auflösen von Monikern, die diese Beziehung durchlaufen angeben möchten.<br /><br /> Ausführliche Anweisungen erstellen Sie die Projektmappe, und doppelklicken Sie dann auf die Fehlermeldungen.|  
 |Domänenbeziehung|Gibt die Beziehung zu der diese Optionen gelten. Schreibgeschützt.|  
-|Auslassen-Element|Bei "true", wird der XML-Knoten, der die Rolle "Quelle" entspricht, aus dem Schema weggelassen.<br /><br /> Ist es mehr als eine Beziehung zwischen den Quell- und Zielklassen, unterscheidet sich dieser rollenknoten zwischen Links, die die beiden Beziehungen angehören. Aus diesem Grund wird empfohlen, dass Sie diese Option nicht in diesem Fall festgelegt.|  
+|Weglassen von Element|Bei "true", wird der XML-Knoten, der die Rolle "Quelle" entspricht, aus dem Schema weggelassen.<br /><br /> Ist es mehr als eine Beziehung zwischen den Quell- und Zielklassen, unterscheidet sich dieser rollenknoten zwischen Links, die die beiden Beziehungen angehören. Aus diesem Grund wird empfohlen, dass Sie diese Option nicht in diesem Fall festgelegt.|  
 |Rollenname-Element|Gibt den Namen des XML-Elements, das von der Rolle "Quelle" abgeleitet ist. Der Standardwert ist der Rollenname-Eigenschaft.|  
 |Full Form verwenden|Bei "true", wird jede Zielelement oder -Moniker in einen XML-Knoten, die die Beziehung darstellt eingeschlossen. Dies sollte festgelegt werden, auf "true", wenn die Beziehung über eigene Domäneneigenschaften verfügt.|  
   
 ## <a name="see-also"></a>Siehe auch  
  [Navigieren in und Aktualisieren eines Modells im Programmcode](../modeling/navigating-and-updating-a-model-in-program-code.md)   
- [Generieren von Code aus einer domänenspezifischen Sprache](../modeling/generating-code-from-a-domain-specific-language.md)
+ [Generieren von Code für eine domänenspezifische Sprache](../modeling/generating-code-from-a-domain-specific-language.md)

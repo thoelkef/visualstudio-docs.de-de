@@ -1,42 +1,40 @@
 ---
-title: "Extract Interface Refactoring (C#) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.csharp.refactoring.extractinterface"
-dev_langs: 
-  - "CSharp"
-helpviewer_keywords: 
-  - "refactoring [C#], Extract Interface"
-  - "Extract Interface refactoring operation [C#]"
+redirect_url: /visualstudio/csharp-ide/refactoring/extract-interface
+title: Umgestaltung (c#) Schnittstelle extrahieren | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: CSharp
+helpviewer_keywords:
+- refactoring [C#], Extract Interface
+- Extract Interface refactoring operation [C#]
 ms.assetid: 7d0aa225-3b33-4331-9652-5a67cac6f3d0
-caps.latest.revision: 25
-caps.handback.revision: 25
-author: "BillWagner"
-ms.author: "wiwagn"
-manager: "wpickett"
+caps.latest.revision: "25"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 4ed81f6f0fbcc2e72fd57d7706b051dcdf7bea75
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Extract Interface Refactoring (C#)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Schnittstelle extrahieren ist ein Umgestaltungsvorgang, der eine einfache Möglichkeit zum Erstellen einer neuen Schnittstelle mit Membern aus einer vorhandenen Klasse, Struktur oder Schnittstelle bietet.  
+# <a name="extract-interface-refactoring-c"></a>Refactoring „Schnittstelle extrahieren“ (C#)
+Schnittstelle extrahieren ist ein Umgestaltungsvorgang, der können eine einfache Möglichkeit, eine neue Schnittstelle mit Elementen zu erstellen, die aus einer vorhandenen Klasse, Struktur oder Schnittstelle stammen.  
   
- Wenn mehrere Clients dasselbe Subset von Membern aus einer Klasse, Struktur oder Schnittstelle verwenden oder wenn mehrere Klassen, Strukturen oder Schnittstellen ein gemeinsames Subset von Membern haben, kann es hilfreich sein, das Membersubset in eine Schnittstelle aufzunehmen.  Weitere Informationen zur Verwendung von Schnittstellen finden Sie unter [Schnittstellen](/dotnet/csharp/programming-guide/interfaces/index).  
+ Wenn mehrere Clients die gleiche Teilmenge von Elementen aus einer Klasse, Struktur oder Schnittstelle verwenden, oder wenn mehrere Klassen, Strukturen oder Schnittstellen eine Teilmenge von Elementen gemeinsam haben, kann es sinnvoll, stellen die Teilmenge von Elementen in einer Schnittstelle sein. Weitere Informationen zur Verwendung von Schnittstellen finden Sie unter [Schnittstellen](/dotnet/csharp/programming-guide/interfaces/index).  
   
- Durch Schnittstelle extrahieren wird eine Schnittstelle in einer neuen Datei generiert und der Cursor an den Anfang der neuen Datei gesetzt.  Im Dialogfeld **Schnittstelle extrahieren** können Sie angeben, welche Member in die neue Schnittstelle zu extrahieren sind sowie den Namen der neuen Schnittstelle und den Namen der generierten Datei angeben.  
+ Schnittstelle extrahieren eine Schnittstelle in einer neuen Datei generiert, und platziert den Cursor am Anfang der neuen Datei. Sie können angeben, welche Member in die neue Schnittstelle, die Namen der neuen Schnittstelle und den Namen der generierten Datei extrahieren der **Schnittstelle extrahieren** (Dialogfeld).  
   
-### So verwenden Sie "Schnittstelle extrahieren"  
+### <a name="to-use-extract-interface"></a>Schnittstelle extrahieren verwenden  
   
-1.  Erstellen Sie eine Konsolenanwendung mit dem Namen `ExtractInterface`, und ersetzen Sie `Program` durch den folgenden Code.  
+1.  Erstellen Sie eine Konsolenanwendung, die mit dem Namen `ExtractInterface`, und Ersetzen Sie `Program` durch den folgenden Code  
   
-    ```c#  
+    ```csharp  
     // Invoke Extract Interface on ProtoA.  
     // Note:  the extracted interface will be created in a new file.  
     class ProtoA  
@@ -45,21 +43,21 @@ Schnittstelle extrahieren ist ein Umgestaltungsvorgang, der eine einfache Mögli
     }  
     ```  
   
-2.  Wählen Sie, während sich der Cursor in `MethodB` befindet, im Menü **Umgestalten** den Befehl **Schnittstelle extrahieren** aus.  
+2.  Mit dem Cursor im `MethodB`, und klicken Sie auf **Schnittstelle extrahieren** auf die **Umgestalten** Menü.  
   
-     Das Dialogfeld **Schnittstelle extrahieren** wird angezeigt.  
+     Die **Schnittstelle extrahieren** Dialogfeld wird angezeigt.  
   
-     Sie können auch die Tastenkombination STRG\+R, I drücken, um das Dialogfeld **Schnittstelle extrahieren** anzuzeigen.  
+     Sie können auch die Tastenkombination STRG + R, ich anzuzeigenden eingeben der **Schnittstelle extrahieren** (Dialogfeld).  
   
-     Sie können auch mit der rechten Maustaste klicken, auf **Umgestalten** zeigen und dann auf **Schnittstelle extrahieren** klicken, um das Dialogfeld **Schnittstelle extrahieren** anzuzeigen.  
+     Sie können auch der rechten Maustaste, zeigen Sie auf **Umgestalten**, und klicken Sie dann auf **Schnittstelle extrahieren** zum Anzeigen der **Schnittstelle extrahieren** (Dialogfeld).  
   
-3.  Klicken Sie auf **Alle auswählen**.  
+3.  Klicken Sie auf **wählen Sie alle**.  
   
 4.  Klicken Sie auf **OK**.  
   
-     Die neue Datei IProtoA.cs und folgender Code werden angezeigt:  
+     Sie finden die neue Datei, IProtoA.cs und den folgenden Code:  
   
-    ```c#  
+    ```csharp  
     using System;  
     namespace TopThreeRefactorings  
     {  
@@ -70,10 +68,10 @@ Schnittstelle extrahieren ist ein Umgestaltungsvorgang, der eine einfache Mögli
     }  
     ```  
   
-## Hinweise  
- Dieses Feature ist nur verfügbar, wenn sich der Cursor in der Klasse, Struktur oder Schnittstelle befindet, die die zu extrahierenden Member enthält.  Wenn sich der Cursor an dieser Position befindet, rufen Sie den Umgestaltungsvorgang Schnittstelle extrahieren auf.  
+## <a name="remarks"></a>Hinweise  
+ Diese Funktion ist nur verfügbar, wenn der Cursor positioniert ist, in der Klasse, Struktur oder Schnittstelle, die die Elemente enthält, die Sie extrahieren möchten. Wenn der Cursor an dieser Position befindet, rufen Sie die Schnittstelle extrahieren (refactoringvorgang).  
   
- Wenn Sie Schnittstelle extrahieren für eine Klasse oder Struktur aufrufen, wird die Liste der Basen und Schnittstellen geändert, um den neuen Schnittstellennamen aufzunehmen.  Wenn Sie Schnittstelle extrahieren für eine Schnittstelle aufrufen, wird die Liste der Basen und Schnittstellen nicht geändert.  
+ Wenn Sie die Schnittstelle extrahieren für eine Klasse oder Struktur aufrufen, wird die Liste der Wissensdatenbanken und Schnittstellen geändert, damit der neue Schnittstellenname enthalten. Wenn Sie die Schnittstelle extrahieren einer Schnittstelle aufrufen, wird die Liste der Wissensdatenbanken und Schnittstellen nicht geändert werden.  
   
-## Siehe auch  
- [Refactoring \(C\#\)](../csharp-ide/refactoring-csharp.md)
+## <a name="see-also"></a>Siehe auch  
+ [Refactoring (C#)](refactoring-csharp.md)

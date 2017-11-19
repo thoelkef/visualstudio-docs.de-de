@@ -1,59 +1,58 @@
 ---
-title: "Threads View | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.externaltools.spyplus.threadsview"
-helpviewer_keywords: 
-  - "Threads view"
+title: Threadansicht | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vs.externaltools.spyplus.threadsview
+helpviewer_keywords: Threads view
 ms.assetid: abfb4e9e-1622-47c9-afda-b6b71a9d88e4
-caps.latest.revision: 6
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 6
+caps.latest.revision: "6"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 0cc9abe486055d5bb9794021e28b786b9afe9b54
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Threads View
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Die Threadansicht ist eine unstrukturierte Liste aller Threads, die Fenstern im System zugeordnet sind.  Es werden die Thread\-ID und der Modulname für jeden Thread angezeigt.  Prozesse sind nicht enthalten, Sie können jedoch den Prozess, der Besitzer eines ausgewählten Threads ist, leicht finden.  
+# <a name="threads-view"></a>Threadansicht
+Die Threadansicht ist eine flache Liste aller Threads, die auf Ihrem System Windows zugeordnet. Die Thread-ID und Name des Moduls für jeden Thread angezeigt werden. Prozesse sind nicht enthalten, aber Sie können problemlos suchen Sie den Prozess, der einen ausgewählten Thread besitzt.  
   
-## Arbeitsschritte  
+## <a name="procedures"></a>Verfahren  
   
-#### So öffnen Sie die Threadansicht  
+#### <a name="to-open-the-threads-view"></a>Zum Öffnen der Ansicht Threads  
   
-1.  Klicken Sie im Menü **Spy** auf **Threads**.  
+1.  Aus der **Spy++** Menü wählen **Threads**.  
   
- ![Spy&#43;&#43;&#45;Threadansicht](../debugger/media/spy--_threads.png "Spy\+\+\_Threads")  
-Spy\+\+\-Threadansicht  
+ ![Spy++ &#43; &#43; Threadansicht](../debugger/media/spy--_threads.png "Spy++ ++ _Threads")  
+Spy++-Threadansicht  
   
- In der obigen Abbildung wird die Threadansicht dargestellt.  
+ Die obige Abbildung zeigt die Threadansicht.  
   
-## In diesem Abschnitt  
+## <a name="in-this-section"></a>In diesem Abschnitt  
  [Suchen nach einem Thread in der Threadansicht](../debugger/how-to-search-for-a-thread-in-threads-view.md)  
- Erklärt, wie Sie einen bestimmten Thread in der Threadansicht finden.  
+ Erläutert, wie einen bestimmten Thread in der Threadansicht gefunden.  
   
  [Anzeigen von Threadeigenschaften](../debugger/how-to-display-thread-properties.md)  
- Erklärt, wie weitere Informationen zu einem Thema angezeigt werden.  
+ Erläutert das Weitere Informationen zu einem Thread angezeigt.  
   
-## Verwandte Abschnitte  
- [Spy\+\+\-Ansichten](../debugger/spy-increment-views.md)  
- Erklärt die Spy\+\+\-Strukturansichten von Fenstern, Meldungen, Prozessen und Threads.  
+## <a name="related-sections"></a>Verwandte Abschnitte  
+ [Spy++-Ansichten](../debugger/spy-increment-views.md)  
+ Erläutert die Spy++-Strukturansichten von Windows, Nachrichten, Prozesse und Threads an.  
   
- [Verwenden von Spy\+\+](../debugger/using-spy-increment.md)  
- Stellt das Tool Spy\+\+ vor und erläutert die Verwendung.  
+ [Verwenden von Spy++](../debugger/using-spy-increment.md)  
+ Führt das Tool Spy++ und erläutert, wie sie verwendet werden kann.  
   
  [Dialogfeld "Threadsuche"](../debugger/thread-search-dialog-box.md)  
- Wird verwendet, um in der Threadansicht den Knoten für einen bestimmten Thread zu suchen.  
+ Verwendet, um den Knoten für einen bestimmten Thread in der Threadansicht suchen.  
   
  [Dialogfeld "Threadeigenschaften"](../debugger/message-properties-dialog-box.md)  
- Zeigt die Eigenschaften eines in der Threadansicht oder Meldungsansicht ausgewählten Threads an.  
+ Zeigt die Eigenschaften eines Threads in der Threadansicht oder Ansicht "Nachrichten" ausgewählt.  
   
- [Spy\+\+\-Referenz](../debugger/spy-increment-reference.md)  
- Enthält Abschnitte mit Beschreibungen der einzelnen Spy\+\+\-Menüs und \-Dialogfelder.
+ [Spy++-Referenz](../debugger/spy-increment-reference.md)  
+ Enthält Abschnitte beschreiben die einzelnen Spy++-Menü und das Dialogfeld.

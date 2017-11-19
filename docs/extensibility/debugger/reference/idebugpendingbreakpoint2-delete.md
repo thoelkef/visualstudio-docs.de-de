@@ -1,48 +1,49 @@
 ---
-title: "IDebugPendingBreakpoint2::Delete | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugPendingBreakpoint2::Delete"
-helpviewer_keywords: 
-  - "IDebugPendingBreakpoint2::Delete-Methode"
-  - "Delete-Methode"
+title: IDebugPendingBreakpoint2::Delete | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugPendingBreakpoint2::Delete
+helpviewer_keywords:
+- IDebugPendingBreakpoint2::Delete method
+- Delete method
 ms.assetid: 4cb5ed81-6f0c-41ce-a770-5adb6b4bf5d9
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 6ab6b3deed639e57591f37cfc9d55066b8a9fe58
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugPendingBreakpoint2::Delete
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Löscht den anstehenden Haltepunkt, und alle Haltepunkte, die aus ihm gebunden sind.  
+# <a name="idebugpendingbreakpoint2delete"></a>IDebugPendingBreakpoint2::Delete
+Löscht diese ausstehenden Haltepunkts und alle Breakpoints, die von ihm gebunden.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT Delete(   
-   void   
+```cpp  
+HRESULT Delete(   
+   void   
 );  
 ```  
   
-```c#  
+```csharp  
 int Delete();  
 ```  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  Gibt `E_BP_DELETED` zurück, wenn der Haltepunkt gelöscht wurde.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben. Gibt `E_BP_DELETED` , wenn der Haltepunkt gelöscht wurde.  
   
-## Beispiel  
- Im folgenden Beispiel wird veranschaulicht, wie diese Methode für ein einfaches `CPendingBreakpoint`\-Objekt implementiert, das die [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)\-Schnittstelle implementiert.  
+## <a name="example"></a>Beispiel  
+ Im folgende Beispiel wird gezeigt, wie diese Methode für eine einfache implementiert `CPendingBreakpoint` Objekt, implementiert die [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) Schnittstelle.  
   
-```cpp#  
+```cpp  
 HRESULT CPendingBreakpoint::Delete(void)    
 {    
    HRESULT hr;    
@@ -82,5 +83,5 @@ HRESULT CPendingBreakpoint::Delete(void)
 }    
 ```  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)

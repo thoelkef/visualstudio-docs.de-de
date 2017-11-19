@@ -1,52 +1,51 @@
 ---
-title: "IDiaAddressMap::put_addressMapEnabled | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaAddressMap::put_addressMapEnabled-Methode"
+title: 'Idiaaddressmap:: Put_addressmapenabled | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaAddressMap::put_addressMapEnabled method
 ms.assetid: 0f205337-4e59-4383-8059-7b1d207d6dcd
-caps.latest.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 5542e00511301a84ba54a08405434001f63c4b5d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaAddressMap::put_addressMapEnabled
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Gibt an, ob die Adressumsetzung verwendet werden soll, um Symbol adressen zu übersetzen.  
+# <a name="idiaaddressmapputaddressmapenabled"></a>IDiaAddressMap::put_addressMapEnabled
+Gibt an, ob die-Adresszuordnung zum Übersetzen Symbol Adressen verwendet werden soll.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT put_addressMapEnabled (   
-   BOOL NewVal  
+```C++  
+HRESULT put_addressMapEnabled (   
+   BOOL NewVal  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  NewVal  
- \[in\]  Auf `TRUE` , um die Übersetzung der Symbole zu aktivieren oder zu deaktivieren, um `FALSE` .  
+ [in] Legen Sie auf `TRUE` So aktivieren Sie die Übersetzung von Symbolen oder `FALSE` zu deaktivieren.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Hinweise  
- Ausführbare aktualisieren Postprozessoren manchmal die ausführbare Datei.  Durchmesser enthält einen Mechanismus bereit, um die Übersetzung von Symbolen in das neue Lay\-out zu unterstützen.  
+## <a name="remarks"></a>Hinweise  
+ Ausführbare Datei nach der Prozessoren aktualisieren manchmal die ausführbare Datei. DIA enthält einen Mechanismus, um die Übersetzung der Symbole, um das neue Layout zu unterstützen.  
   
- Wenn eine PDB\-Datei geladen wird, wird die Adressumsetzung, die in der Datei gespeichert wird, können.  Es gibt jedoch Situationen, wenn eine Clientanwendung möglicherweise eigene Adressumsetzung angeben muss, indem sie die [IDiaAddressMap::set\_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md)\-Methode aufruft.  Wenn die `set_addressMap`\-Methode erfolgreich ist, muss die Clientanwendung die `put_addressMapEnabled`\-Methode mit einem Parameter von `NewVal``TRUE` aufrufen, um die Verwendung dieser Adressumsetzung zu aktivieren.  
+ Eine PDB-Datei geladen wird, ist der in der Datei gespeicherten-Adresszuordnung aktiviert. Es gibt jedoch Situationen, wenn eine Clientanwendung möglicherweise Geben Sie einen eigenen-Adresszuordnung durch Aufrufen der [idiaaddressmap:: Set_addressmap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md) Methode. Wenn die `set_addressMap` Methode erfolgreich ist, muss die Clientanwendung Aufrufen der `put_addressMapEnabled` Methode mit einer `NewVal` Parameter `TRUE` So aktivieren Sie die Verwendung der Adresse zugeordnet.  
   
- Der aktuelle Status der Adressumsetzung aktiviert ist, kann durch einen Aufruf der [IDiaAddressMap::get\_addressMapEnabled](../../debugger/debug-interface-access/idiaaddressmap-get-addressmapenabled.md)\-Methode abgerufen werden.  
+ Der aktuelle Status der Adresse Karte aktiviert abgerufen werden kann, durch einen Aufruf der [idiaaddressmap:: Get_addressmapenabled](../../debugger/debug-interface-access/idiaaddressmap-get-addressmapenabled.md) Methode.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md)   
- [IDiaAddressMap::set\_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md)   
- [IDiaAddressMap::get\_addressMapEnabled](../../debugger/debug-interface-access/idiaaddressmap-get-addressmapenabled.md)
+ [Idiaaddressmap:: Set_addressmap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md)   
+ [IDiaAddressMap::get_addressMapEnabled](../../debugger/debug-interface-access/idiaaddressmap-get-addressmapenabled.md)

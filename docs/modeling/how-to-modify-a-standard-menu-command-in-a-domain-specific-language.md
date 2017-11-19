@@ -1,5 +1,5 @@
 ---
-title: "Gewusst wie: ändern ein Standardmenübefehls in einer domänenspezifischen Sprache | Microsoft-Dokumentation"
+title: "Vorgehensweise: Ändern Sie einen Standardmenü-Befehl in einer domänenspezifischen Sprache | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -10,37 +10,37 @@ helpviewer_keywords:
 - .vsct files, adding commands to a domain-specific language
 - Domain-Specific Language, adding custom commands
 ms.assetid: 9b9d8314-d0d8-421a-acb9-d7e91e69825c
-caps.latest.revision: 10
+caps.latest.revision: "10"
 author: alancameronwills
 ms.author: awills
 manager: douge
-translationtype: Machine Translation
-ms.sourcegitcommit: eb2ab9d49cdeb1ed71da8ef67841f7796862dc30
-ms.openlocfilehash: 571b30e0be9863b20dc1c8abca87940bb21cc344
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 6e5d17a1a84eb71252956e921522e6eebfd67925
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>Gewusst wie: Ändern eines Standardmenübefehls in einer domänenspezifischen Sprache
-Sie können das Verhalten einiger Standardbefehle ändern, die automatisch im DSL definiert sind. Sie könnten z. B. ändern **Ausschneiden** , damit sie vertrauliche Informationen ausschließt. Hierzu überschreiben Sie Methoden in einer festgelegten Klasse des Befehls. Diese Klassen sind in der CommandSet.cs-Datei im DslPackage-Projekt definiert und <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>.</xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet> abgeleitet sind  
+Sie können das Verhalten einiger Standardbefehle ändern, die automatisch im DSL definiert sind. Sie können z. B. ändern **Ausschneiden** , damit sie vertraulichen Informationen werden ausgeschlossen. Hierzu überschreiben Sie Methoden in einer festgelegten Klasse des Befehls. Diese Klassen sind in der CommandSet.cs-Datei im DslPackage-Projekt definiert und von <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet> abgeleitet.  
   
  Alles in allem ändern Sie einen Befehl folgendermaßen:  
   
-1.  [Ermitteln, welche Befehle Sie ändern können](#what).  
+1.  [Ermitteln, welche Befehle können Sie ändern](#what).  
   
-2.  [Erstellen Sie eine partielle Deklaration der festgelegten Klasse des entsprechenden Befehls](#extend).  
+2.  [Erstellen Sie eine partielle Deklaration eines entsprechenden Befehl Set-Klasse](#extend).  
   
 3.  [Überschreiben Sie die Methoden ProcessOnStatus und ProcessOnMenu](#override) für den Befehl.  
   
  In diesem Thema wird diese Vorgehensweise erläutert.  
   
 > [!NOTE]
->  Wenn Sie eigene Menübefehle erstellen möchten, finden Sie unter [Gewusst wie: Hinzufügen eines Befehls zum Kontextmenü](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).  
+>  Wenn Sie eigene Befehle im Menü erstellen möchten, finden Sie unter [wie: Hinzufügen eines Befehls zum Kontextmenü](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).  
   
-##  <a name="a-namewhata-what-commands-can-you-modify"></a><a name="what"></a>Welche Befehle können Sie ändern?  
+##  <a name="what"></a>Welche Befehle können Sie ändern?  
   
 #### <a name="to-discover-what-commands-you-can-modify"></a>So ermitteln Sie, welche Befehle Sie ändern können  
   
-1.  In der `DslPackage` geöffneten Projekt `GeneratedCode\CommandSet.cs`. Diese C#-Datei finden Sie im Projektmappen-Explorer als Tochterunternehmen des `CommandSet.tt`.  
+1.  In der `DslPackage` geöffneten Projekts `GeneratedCode\CommandSet.cs`. Diese C#-Datei finden Sie im Projektmappen-Explorer als eine Niederlassung des `CommandSet.tt`.  
   
 2.  Suchen von Klassen in dieser Datei, deren Namen enden mit "`CommandSet`", z. B. `Language1CommandSet` und `Language1ClipboardCommandSet`.  
   
@@ -53,7 +53,7 @@ Sie können das Verhalten einiger Standardbefehle ändern, die automatisch im DS
     > [!NOTE]
     >  Normalerweise sollten Sie keine Dateien bearbeiten, die generiert wurden. Änderungen gehen verloren, wenn die Dateien das nächste Mal generiert werden.  
   
-##  <a name="a-nameextenda-extend-the-appropriate-command-set-class"></a><a name="extend"></a>Erweitern Sie den entsprechenden Befehl Set-Klasse  
+##  <a name="extend"></a>Erweitern Sie den entsprechenden Befehl Set-Klasse  
  Erstellen Sie eine neue Datei, die eine partielle Deklaration der festgelegten Klasse des Befehls enthält.  
   
 #### <a name="to-extend-the-command-set-class"></a>So erweitern Sie die festgelegte Klasse des Befehls  
@@ -76,10 +76,10 @@ Sie können das Verhalten einiger Standardbefehle ändern, die automatisch im DS
     { internal partial class Language1CommandSet { ...  
     ```  
   
-     **Hinweis** Wenn Sie die Vorlage der Klasse verwendet, um die neue Datei zu erstellen, müssen Sie den Namespace und den Klassennamen korrigieren.  
+     **Hinweis** Wenn Sie die Datei Klassenvorlage zum Erstellen der neuen Datei verwendet, müssen Sie den Namespace und den Klassennamen korrigieren.  
   
-##  <a name="a-nameoverridea-override-the-command-methods"></a><a name="override"></a>Überschreiben der Befehlsmethoden  
- Die meisten Befehle haben zwei zugehörige Methoden: die Methode mit einem Namen wie `ProcessOnStatus`... bestimmt, ob der Befehl sichtbar und aktiviert werden soll. Sie wird aufgerufen, wenn der Benutzer mit der rechten Maustaste auf das Diagramm klickt und sollte schnell ausgeführt werden sowie keine Änderungen vornehmen. `ProcessOnMenu`... wird aufgerufen, wenn der Benutzer auf den Befehl klickt und sollte die Funktion des Befehls ausführen. Sie können eine dieser oder beide Methoden überschreiben.  
+##  <a name="override"></a>Überschreiben Sie die Befehlsmethoden  
+ Die meisten Befehle haben zwei zugeordnete Methoden: die Methode mit einem Namen wie `ProcessOnStatus`... bestimmt, ob der Befehl sichtbar und aktiviert werden soll. Sie wird aufgerufen, wenn der Benutzer mit der rechten Maustaste auf das Diagramm klickt und sollte schnell ausgeführt werden sowie keine Änderungen vornehmen. `ProcessOnMenu`... wird aufgerufen, wenn der Benutzer klickt auf den Befehl, und führen Sie die Funktion des Befehls sollten. Sie können eine dieser oder beide Methoden überschreiben.  
   
 ### <a name="to-change-when-the-command-appears-on-a-menu"></a>Ändern, wann der Befehl in einem Menü angezeigt wird  
  Überschreiben Sie die ProcessOnStatus... Methode. Diese Methode sollte für den Parameter MenuCommand die Eigenschaften "Visible" (sichtbar) und "Enabled" (aktiviert) festlegen. Meist prüft der Befehl CurrentSelection, um zu bestimmen, ob der Befehl auf die ausgewählten Elemente zutrifft. Möglicherweise werden auch die Eigenschaften geprüft, um zu bestimmen, ob der Befehl bei deren aktuellem Status angewendet werden kann.  
@@ -130,7 +130,7 @@ protected override void ProcessOnMenuDeleteCommand()
 }  
 ```  
   
- Wenn der Code Änderungen am Speicher vornimmt, wie Erstellen, Löschen oder Aktualisieren von Elementen oder Links, muss dies innerhalb einer Transaktion erfolgen. Weitere Informationen finden Sie unter [wie erstellen und Aktualisieren von Modellelementen](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).  
+ Wenn der Code Änderungen am Speicher vornimmt, wie Erstellen, Löschen oder Aktualisieren von Elementen oder Links, muss dies innerhalb einer Transaktion erfolgen. Weitere Informationen finden Sie unter [zum Erstellen und Aktualisieren von Modellelementen](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).  
   
 ### <a name="writing-the-code-of-the-methods"></a>Schreiben des Methodencodes  
  Die folgenden Fragmente sind innerhalb dieser Methoden oft hilfreich:  
@@ -141,21 +141,20 @@ protected override void ProcessOnMenuDeleteCommand()
   
 -   `this.IsCurrentDiagramEmpty()`  
   
--   `this.IsSingleSelection()`– der Benutzer hat nicht mehrere Formen ausgewählt  
+-   `this.IsSingleSelection()`– der Benutzer nicht mehrere Formen auswählen  
   
 -   `this.SingleSelection` – die Form oder das Diagramm, auf das der Benutzer mit der rechten Maustaste geklickt hat  
   
 -   `shape.ModelElement as MyLanguageElement` – das Modellelement, das durch eine Form dargestellt wird  
   
- Weitere Informationen dazu, wie Sie von Element zu Element navigieren und Informationen zum Erstellen von Objekten und Links finden Sie unter [Navigieren in und Aktualisieren eines Modells im Programmcode](../modeling/navigating-and-updating-a-model-in-program-code.md).  
+ Weitere Informationen über das Element zu Element navigieren und Informationen zum Erstellen von Objekten und Links finden Sie unter [Navigieren in und Aktualisieren eines Modells im Programmcode](../modeling/navigating-and-updating-a-model-in-program-code.md).  
   
 ## <a name="see-also"></a>Siehe auch  
- <xref:System.ComponentModel.Design.MenuCommand></xref:System.ComponentModel.Design.MenuCommand>   
+ <xref:System.ComponentModel.Design.MenuCommand>   
  [Schreiben von Code zum Anpassen einer domänenspezifischen Sprache](../modeling/writing-code-to-customise-a-domain-specific-language.md)   
- [Gewusst wie: Hinzufügen eines Befehls zum Kontextmenü](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)   
- [Wie VSPackages Benutzeroberflächenelemente hinzufügen](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
- [Visual Studio-Befehl-Tabelle (. VSCT) Dateien](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)   
- [VSCT XML-Schemareferenz](../extensibility/vsct-xml-schema-reference.md)   
- [VMSDK: Circuit Diagrams Sample. Umfassende DSL-Anpassung](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)   
+ [Vorgehensweise: Hinzufügen eines Befehls zum Kontextmenü](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)   
+ [Wie VSPackages Elemente der Benutzeroberfläche hinzufügen](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
+ [Visual Studio-Befehlstabelle (. VSCT)-Dateien](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)   
+ [VSCT-XML-Schemareferenz](../extensibility/vsct-xml-schema-reference.md)   
+ [VMSDK - Schaltpläne-Beispiel. Eine umfangreiche DSL-Anpassung](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)   
  [Beispielcode: Schaltpläne](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
-

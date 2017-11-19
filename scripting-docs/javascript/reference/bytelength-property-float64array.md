@@ -1,38 +1,41 @@
 ---
-title: "byteLength-Eigenschaft (Float64Array) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
+title: ByteLength-Eigenschaft (Float64Array) | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
 ms.assetid: 892498c1-dd6c-4037-89c2-cae29f5d09f2
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 594f2f4b0baca773561f7527b673916a102f50e8
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# byteLength-Eigenschaft (Float64Array)
-Schreibgeschützt.  Die Länge dieses Arrays vom Beginn seines ArrayBuffers in Bytes, so wie während der Konstruktionszeit festgelegt.  
+# <a name="bytelength-property-float64array"></a>byteLength-Eigenschaft (Float64Array)
+Schreibgeschützt. Die Länge dieses Arrays vom Beginn des ArrayBuffers in Bytes, so wie bei der Konstruktion festgelegt.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```javascript  
+```JavaScript  
 var arrayByteLength = float64Array.byteLength;  
 ```  
   
-## Beispiel  
- Im folgenden Beispiel wird veranschaulicht, wie die Bytelänge des Arrays abgerufen wird.  
+## <a name="example"></a>Beispiel  
+ Im folgende Beispiel wird gezeigt, wie die Bytelänge des Arrays abgerufen wird.  
   
-```javascript  
+```JavaScript  
 var req = new XMLHttpRequest();  
     req.open('GET', "http://www.example.com");  
     req.responseType = "arraybuffer";  
@@ -49,5 +52,5 @@ var req = new XMLHttpRequest();
   
 ```  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  [!INCLUDE[jsv10](../../javascript/reference/includes/jsv10-md.md)]

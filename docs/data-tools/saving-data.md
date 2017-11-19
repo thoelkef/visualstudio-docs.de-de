@@ -1,48 +1,50 @@
 ---
-title: "Speichern von Daten | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "DataRow.RowState"
-  - "DataSet.GetChanges"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "aspx"
-helpviewer_keywords: 
-  - "Daten [Visual Studio], Speichern"
-  - "Daten [Visual Studio], Aktualisieren"
-  - "Datenbanken, Aktualisieren"
-  - "DBDirect-Methoden"
-  - "Speichern von Daten"
-  - "TableAdapter-DBDirect-Methoden"
-  - "TableAdapter.Update-Methode"
-  - "Aktualisieren von Daten"
-  - "Aktualisieren von Datenbanken"
+title: Speichern von Daten | Microsoft Docs
+ms.custom: 
+ms.date: 10/19/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- DataRow.RowState
+- DataSet.GetChanges
+helpviewer_keywords:
+- DBDirect methods
+- updating data
+- data [Visual Studio], saving
+- TableAdapter DBDirect methods
+- databases, updating
+- TableAdapter.Update method
+- data [Visual Studio], updating
+- saving data
+- updating databases
 ms.assetid: 21d2b115-62e4-4ac9-a873-dcbb535b8af8
-caps.latest.revision: 13
-caps.handback.revision: 13
-author: "mikeblome"
-ms.author: "mblome"
-manager: "ghogen"
+caps.latest.revision: "13"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 robots: noindex,nofollow
+ms.technology: vs-data-tools
+ms.openlocfilehash: 34ceecce635cb5388bd53ed191c0fc1fa861bc38
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Speichern von Daten
-Unter dem Speichern von Daten versteht man die permanente Sicherung geänderter Daten im Datenmodell einer Anwendung im ursprünglichen Datenspeicher, bei dem es sich in der Regel um eine relationale Datenbank wie SQL Sever handelt.  
+# <a name="saving-data"></a>Speichern von Daten
+Speichern von Daten ist der Prozess einer persistenten Speicherung Daten im Datenmodell für eine Anwendung zurück an den ursprünglichen Datenspeicher, in der Regel eine relationale Datenbank wie SQL Server geändert.  
   
- Die Aktualisierung einer Datenquelle anhand eines Datenmodells umfasst normalerweise zwei Schritte.  Im ersten Schritt wird das Datenmodell mit neuen Informationen aktualisiert, z. B. mit neuen, geänderten oder gelöschten Datensätzen.  Im zweiten Schritt werden die Änderungen im Datenmodell wieder in der Datenbank gespeichert.  
+ Aktualisieren einer Datenquelle über ein Datenmodell ist in der Regel ein zweistufiger Prozess. Der erste Schritt ist das Datenmodell mit neuen Informationen aktualisiert – neue Datensätze, geänderten oder gelöschten Datensätzen. Der zweite Schritt ist zum Speichern der Änderungen in Ihrem Datenmodell wieder in der Datenbank.  
   
- In den folgenden Themen werden die Konzepte und Aufgaben im Zusammenhang mit dem Speichern von Daten beschrieben.  
+ Die folgenden Themen beschreiben die Konzepte und Aufgaben im Zusammenhang mit Daten zu speichern.  
   
-## Verwandte Themen  
- [Speichern von Daten in Datasets](../data-tools/save-data-back-to-the-database.md)  
- Bietet eine Übersicht darüber, wie Änderungen in einem Dataset vorgenommen und Änderungsinformationen vom Dataset nachverfolgt werden, um diese Änderungen in einer Datenbank zu speichern.  
+## <a name="related-topics"></a>Verwandte Themen  
+[Rückspeichern von Daten in der Datenbank](../data-tools/save-data-back-to-the-database.md)  
+ Bietet einen Überblick darüber, wie Änderungen in einem Dataset vorgenommen werden und wie das Dataset Informationen zu Änderungen nachverfolgt, damit um diese Änderungen in einer Datenbank zu speichern.  
   
- [Speichern von Entitätsdaten](../data-tools/saving-entity-data.md)  
- Beschreibt, wie Änderungen in [ADO.NET Entity Framework](../Topic/ADO.NET%20Entity%20Framework.md)\-Anwendungen und [WCF Data Services 4.5](../Topic/WCF%20Data%20Services%204.5.md)\-Anwendungen gespeichert werden.
+[Vorgehensweise: hinzufügen, ändern und Löschen von Entitäten (WCF Data Services)](/dotnet/framework/data/wcf/how-to-add-modify-and-delete-entities-wcf-data-services)  
+Zeigt, wie Entitätsdaten in einem Datendienst erstellt, aktualisiert und gelöscht werden.  
+  
+[Vorgehensweise: Ausführen von Datendienstabfragen (WCF Data Services)](/dotnet/framework/data/wcf/how-to-execute-data-service-queries-wcf-data-services)  
+Zeigt, wie einen Datendienst aus einer dienstanwendung Daten Abfragen.  

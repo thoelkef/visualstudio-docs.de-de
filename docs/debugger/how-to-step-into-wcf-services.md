@@ -1,48 +1,49 @@
 ---
-title: "Gewusst wie: Ausf&#252;hren eines Einzelschritts in WCF-Dienste | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "Debuggen, WCF"
-  - "WCF, Debuggen"
+title: 'Vorgehensweise: Schritt in WCF-Dienste | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+helpviewer_keywords:
+- debugging, WCF
+- WCF, debugging
 ms.assetid: 9893ad01-54af-499f-85a6-9d1cfe6eb640
-caps.latest.revision: 24
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 24
+caps.latest.revision: "24"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 6aeaba831bb82731ae7d3e62cbff5190bb474357
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Gewusst wie: Ausf&#252;hren eines Einzelschritts in WCF-Dienste
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-In [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] können Sie einen Einzelschritt in einen WCF\-Dienst ausführen.  Wenn sich der WCF\-Dienst in derselben [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]\-Projektmappe wie der Client befindet, erreichen Sie Haltepunkte innerhalb des WCF\-Dienstes.  
+# <a name="how-to-step-into-wcf-services"></a>Gewusst wie: Ausführen eines Einzelschritts in WCF-Dienste
+In [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] können Sie einen Einzelschritt in einen WCF-Dienst ausführen. Wenn sich der WCF-Dienst in derselben [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Projektmappe wie der Client befindet, erreichen Sie Haltepunkte innerhalb des WCF-Dienstes.  
   
- Damit dies funktioniert, müssen Sie das Debuggen in der Datei app.config oder Web.config aktivieren.  Weitere Informationen zum Aktivieren des Debuggens sowie zu Einschränkungen beim Ausführen von Einzelschritten in WCF\-Dienste finden Sie unter [Einschränkungen beim WCF\-Debugging](../debugger/limitations-on-wcf-debugging.md).  
+ Damit dies funktioniert, müssen Sie das Debuggen in der Datei app.config oder Web.config aktivieren. Informationen zum Aktivieren des Debuggens und Informationen zu Einschränkungen bei der schrittweisen WCF-Diensten finden Sie unter [Einschränkungen beim WCF-Debugging](../debugger/limitations-on-wcf-debugging.md).  
   
-### So führen Sie einen Einzelschritt in einen WCF\-Dienst aus  
+### <a name="to-step-into-a-wcf-service"></a>So führen Sie einen Einzelschritt in einen WCF-Dienst aus  
   
-1.  Erstellen Sie eine [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]\-Projektmappe, die sowohl den WCF\-Client als auch WCF\-Dienstprojekte enthält.  
+1.  Erstellen Sie eine [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Projektmappe, die sowohl den WCF-Client als auch WCF-Dienstprojekte enthält.  
   
-2.  Klicken Sie im Projektmappen\-Explorer mit der rechten Maustaste auf das WCF\-Clientprojekt, und klicken Sie dann auf **Als Startprojekt festlegen**.  
+2.  Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste des WCF-Clientprojekts, und klicken Sie dann auf **als Startprojekt festlegen**.  
   
-3.  Aktivieren Sie das Debuggen in der Datei app.config oder web.config.  Weitere Informationen finden Sie unter [Einschränkungen beim WCF\-Debugging](../debugger/limitations-on-wcf-debugging.md).  
+3.  Aktivieren Sie das Debuggen in der Datei app.config oder web.config. Weitere Informationen finden Sie unter [Einschränkungen beim WCF-Debugging](../debugger/limitations-on-wcf-debugging.md).  
   
-4.  Setzen Sie an der Stelle im Clientprojekt, an der Sie die schrittweise Ausführung beginnen möchten, einen Haltepunkt.  Üblicherweise wird dies vor dem Aufruf des WCF\-Diensts sein.  
+4.  Setzen Sie an der Stelle im Clientprojekt, an der Sie die schrittweise Ausführung beginnen möchten, einen Haltepunkt. Üblicherweise wird dies vor dem Aufruf des WCF-Diensts sein.  
   
-5.  Ausführen bis zum Haltepunkt, dann Beginnen der schrittweisen Ausführung.  Der Debugger führt die schrittweise Ausführung des Diensts automatisch durch.  
+5.  Ausführen bis zum Haltepunkt, dann Beginnen der schrittweisen Ausführung. Der Debugger führt die schrittweise Ausführung des Diensts automatisch durch.  
   
-## Siehe auch  
- [Debuggen von WCF\-Diensten](../debugger/debugging-wcf-services.md)   
- [Einschränkungen beim WCF\-Debugging](../debugger/limitations-on-wcf-debugging.md)   
- [Gewusst wie: Debuggen eines lokal gehosteten WCF\-Diensts](../debugger/how-to-debug-a-self-hosted-wcf-service.md)
+## <a name="see-also"></a>Siehe auch  
+ [Debuggen von WCF-Diensten](../debugger/debugging-wcf-services.md)   
+ [Einschränkungen beim WCF-Debugging](../debugger/limitations-on-wcf-debugging.md)   
+ [Gewusst wie: Debuggen eines lokal gehosteten WCF-Diensts](../debugger/how-to-debug-a-self-hosted-wcf-service.md)

@@ -10,30 +10,15 @@ helpviewer_keywords:
 - Domain-Specific Language, programming domain models
 - Domain-Specific Language, rules
 ms.assetid: 1690a38a-c8f5-4bc6-aab9-015771ec6647
-caps.latest.revision: 30
+caps.latest.revision: "30"
 author: alancameronwills
 ms.author: awills
 manager: douge
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 8ec9540fb68ecb09dc592f9b05a56291c2a8c80d
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: cbdf006fecb00139eda95cf3e9f2726430888ce7
-ms.contentlocale: de-de
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>Regeln propagieren Änderungen im Modell
 Erstellen Sie eine Store-Regel, um eine Änderung von einem Element zu einem anderen in Visualization and Modeling SDK (VMSDK) weitergegeben werden. Wenn eine Änderung auf jedes Element im Speicher erfolgt, sind Regeln ausgeführt werden, in der Regel auf, wenn die äußerste Transaktion ein Commit ausgeführt wird, geplant. Es gibt verschiedene Typen von Regeln für verschiedene Arten von Ereignissen, z. B. ein Element hinzufügen oder löschen. Sie können Regeln für bestimmte Typen von Elementen, Formen oder Diagramme anfügen. Viele integrierte Funktionen werden durch Regeln definiert: beispielsweise Regeln dafür sorgen, dass ein Diagramm aktualisiert wird, wenn das Modell ändert. Sie können Ihre einer domänenspezifischen Sprache anpassen, indem Sie eigene Regeln hinzufügen.  

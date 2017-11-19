@@ -1,12 +1,10 @@
 ---
-title: 'How to: Programmatically Delete Outlook Contacts | Microsoft Docs'
+title: "Vorgehensweise: Programmgesteuertes Löschen von Outlook-Kontakten | Microsoft Docs"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -16,28 +14,28 @@ helpviewer_keywords:
 - deleting contacts
 - contacts [Office development in Visual Studio], deleting
 ms.assetid: 3aeb107f-b6d9-4645-b3d2-43c20beee833
-caps.latest.revision: 17
-author: kempb
-ms.author: kempb
+caps.latest.revision: "17"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: d2db9bceac93b3afb0b9b08ed09c4abfff2ccbea
-ms.contentlocale: de-de
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: 50cb56a8f1df730f3aa4ee214df50188b7ec94ff
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="how-to-programmatically-delete-outlook-contacts"></a>How to: Programmatically Delete Outlook Contacts
-  This example deletes a contact. The example assumes that a contact named "Armando Pinto" exists in the **Contacts** folder.  
+# <a name="how-to-programmatically-delete-outlook-contacts"></a>Gewusst wie: Programmgesteuertes Löschen von Outlook-Kontakten
+  In diesem Beispiel wird ein Kontakt gelöscht. Im Beispiel wird vorausgesetzt, dass ein Kontakt mit dem Namen "Armando Pinto" im Ordner **Kontakte** vorhanden ist.  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   
-## <a name="example"></a>Example  
- [!code-vb[Trin_Outlook_RL_DeleteContacts#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_RL_DeleteContacts/thisaddin.vb#1)] [!code-csharp[Trin_Outlook_RL_DeleteContacts#1](../vsto/codesnippet/CSharp/Trin_Outlook_RL_DeleteContacts/thisaddin.cs#1)]  
+## <a name="example"></a>Beispiel  
+ [!code-vb[Trin_Outlook_RL_DeleteContacts#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_RL_DeleteContacts/thisaddin.vb#1)]
+ [!code-csharp[Trin_Outlook_RL_DeleteContacts#1](../vsto/codesnippet/CSharp/Trin_Outlook_RL_DeleteContacts/thisaddin.cs#1)]  
   
-## <a name="see-also"></a>See Also  
- [Working with Contact Items](../vsto/working-with-contact-items.md)   
- [How to: Programmatically Search for a Specific Contact](../vsto/how-to-programmatically-search-for-a-specific-contact.md)   
- [How to: Programmatically Access Outlook Contacts](../vsto/how-to-programmatically-access-outlook-contacts.md)  
+## <a name="see-also"></a>Siehe auch  
+ [Arbeiten mit Kontaktelementen](../vsto/working-with-contact-items.md)   
+ [Vorgehensweise: Programmgesteuertes Suchen eines bestimmten Kontakts](../vsto/how-to-programmatically-search-for-a-specific-contact.md)   
+ [Vorgehensweise: Programmgesteuertes Zugreifen auf Outlook-Kontakte](../vsto/how-to-programmatically-access-outlook-contacts.md)  
   
   

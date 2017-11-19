@@ -1,39 +1,38 @@
 ---
-title: "Fehler: ASP.NET ist nicht installiert | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.debug.error.http_not_supported"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "ASP.NET, Installationsfehlermeldungen"
-  - "Debugger, Webanwendungsfehler"
-  - "Fehlermeldungen, ASP.NET"
-  - "Webanwendungen, Fehler"
+title: 'Fehler: ASP.NET ist nicht installiert. | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vs.debug.error.http_not_supported
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+helpviewer_keywords:
+- Web applications, errors
+- debugger, Web application errors
+- error messages, ASP.NET
+- ASP.NET, installation error messages
 ms.assetid: 6286dd3d-3e2b-4edd-959d-81e0ed45500b
-caps.latest.revision: 14
-caps.handback.revision: 14
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "14"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: aec590a018e102e6ab3dd8d2607d9720991e9f90
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Fehler: ASP.NET ist nicht installiert
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Dieser Fehler tritt auf, wenn [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] auf dem zu debuggenden Computer nicht ordnungsgemäß installiert ist.  Dies kann bedeuten, dass entweder [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] nicht installiert wurde, oder dass zuerst [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] und anschließend IIS installiert wurde.  
+# <a name="error-aspnet-not-installed"></a>Fehler: ASP.NET ist nicht installiert
+Dieser Fehler tritt auf, wenn [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] auf dem zu debuggenden Computer nicht ordnungsgemäß installiert ist. Dies kann bedeuten, dass entweder [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] nicht installiert wurde, oder dass zuerst [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] und anschließend IIS installiert wurde.  
   
-### So installieren Sie ASP.NET neu  
+### <a name="to-reinstall-aspnet"></a>So installieren Sie ASP.NET neu  
   
 1.  Führen Sie in einem Eingabeaufforderungsfenster den folgenden Befehl aus:  
   
@@ -41,10 +40,10 @@ Dieser Fehler tritt auf, wenn [!INCLUDE[vstecasp](../code-quality/includes/vstec
     \WINDOWS\Microsoft.NET\Framework\version\aspnet_regiis -i  
     ```  
   
-     Dabei stellt *version* die Versionsnummer der auf dem Computer installierten .NET Framework\-Software \(z. B. v1.0.370\) dar.  Sie können die Frameworkversion feststellen, indem Sie im Verzeichnis `\WINDOWS\Microsoft.NET\Framework` nachsehen.  
+     wobei *Version* stellt die Versionsnummer von .NET Framework auf dem Computer, z. B. v1.0.370 installiert. Sie können die Framework-Version bestimmen, anhand der `\WINDOWS\Microsoft.NET\Framework` Verzeichnis.  
   
     > [!NOTE]
-    >  Unter Windows Server 2003 können Sie [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] in der Systemsteuerung über die Option **Software** installieren.  
+    >  Sie können mit Windows Server 2003 installieren [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] mit **Software** in der Systemsteuerung.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Debuggen von Webanwendungen: Fehler und Problembehandlung](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

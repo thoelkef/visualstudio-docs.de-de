@@ -1,27 +1,30 @@
 ---
-title: "IActiveScriptAuthor::GetInfoFromContext | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IActiveScriptAuthor::GetInfoFromContext | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IActiveScriptAuthor.GetInfoFromContext
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "IActiveScriptAuthor::GetInfoFromContext"
+helpviewer_keywords: IActiveScriptAuthor::GetInfoFromContext
 ms.assetid: 9891b095-6eb5-4473-87c0-c2e5cd2afc1a
-caps.latest.revision: 15
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 15
+caps.latest.revision: "15"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 27c13dbe51bb1150554275b5fbeacd00be2e445f
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# IActiveScriptAuthor::GetInfoFromContext
-EINGABETASTE Typinformationen und Anchorpositionen für ein bestimmtes Zeichen in einem Codeblock.  Dies stellt Informationen für Member IntelliSense, globale Listen und Parametertipps bereit.  
+# <a name="iactivescriptauthorgetinfofromcontext"></a>IActiveScriptAuthor::GetInfoFromContext
+Gibt geben Informationen und Anker Positionen für ein angegebenes Zeichen in einem Code-Block. Dies bietet Informationen für Member, IntelliSense, globalen Listen und parametertipps.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 HRESULT GetInfoFromContext(  
@@ -38,64 +41,64 @@ HRESULT GetInfoFromContext(
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `pszCode`  
- \[in\] Ergibt sich die Adresse der Codeblockzeichenfolge, die verwendet wird, um die Informationen zu generieren.  
+ [in] Die Adresse der Code-Block Zeichenfolge verwendet, um die Ergebnisse Informationen zu generieren.  
   
  `cchCode`  
- \[in\] Die Länge des Codeblocks.  
+ [in] Die Länge des Codeblocks.  
   
  `ichCurrentPosition`  
- \[in\] Die Zeichenstelle relativ zum Anfang des Blocks.  
+ [in] Das Zeichen Position relativ zum Start des Blocks.  
   
  `dwListTypesRequested`  
- \[in\] Die Listentypen angefordert.  Kann eine Kombination der folgenden Werte:  
+ [in] Die Listentypen angefordert. Eine Kombination der folgenden Werte ist möglich:  
   
-|Konstante|Wert|Description|  
-|---------------|----------|-----------------|  
-|SCRIPT\_CMPL\_NOLIST|0x0000|Keine Liste.|  
-|SCRIPT\_CMPL\_MEMBERLIST|0x0001|Memberliste.|  
-|SCRIPT\_CMPL\_ENUMLIST|0x0002|Enumerationsliste.|  
-|SCRIPT\_CMPL\_PARAMLIST|0x0004|Aufrufsmethodenparameterliste.|  
-|SCRIPT\_CMPL\_GLOBALLIST|0x0008|Globale Liste.|  
+|Konstante|Wert|Beschreibung|  
+|--------------|-----------|-----------------|  
+|SCRIPT_CMPL_NOLIST|0x0000|Keine Liste.|  
+|SCRIPT_CMPL_MEMBERLIST|0 x 0001|Liste der Member.|  
+|SCRIPT_CMPL_ENUMLIST|0 x 0002|Enum-Liste.|  
+|SCRIPT_CMPL_PARAMLIST|0 x 0004|Rufen Sie die Parameterliste der Methode.|  
+|SCRIPT_CMPL_GLOBALLIST|0x0008|Globale Liste.|  
   
- Der SCRIPT\_CMPL\_GLOBALLIST\-Typ wird als Standard Abschlusselement behandelt, das kombiniert werden kann, indem die OR\-Operator mit anderen Abschlusselementen verwendet.  Das Skripterstellungsmodul versucht zuerst, Typinformationen für andere Vervollständigungslistenelemente aufzufüllen.  Wenn dies fehlschlägt, füllt das Modul für SCRIPT\_CMPL\_GLOBALLIST auf.  
+ Der SCRIPT_CMPL_GLOBALLIST-Typ wird als ein Standardelement für den Abschluss behandelt, die durch andere Abschluss Elemente mit dem OR-Operator kombiniert werden können. Das Skript erstellen das Modul zuerst versucht, die Typinformationen für den anderen Elementen in Vervollständigungslisten aufzufüllen. Wenn dies fehlschlägt, wird das Modul für SCRIPT_CMPL_GLOBALLIST aufgefüllt.  
   
  `pdwListTypesProvided`  
- \[out\] Der Typ der Liste bereitgestellt.  
+ [out] Der Typ der angezeigten Liste.  
   
  `pichListAnchorPosition`  
- \[out\] Der Startindex des Kontexts, der die aktuelle Position enthält.  Der Startindex ist relativ zum Anfang des Blocks.  
+ [out] Der Startindex des Kontexts, die die aktuelle Position enthält. Der Startindex ist relativ zum Start des Blocks.  
   
- Dies wird nur aufgefüllt, wenn `dwListTypesRequested` SCRIPT\_CMPL\_MEMBERLIST, SCRIPT\_CMPL\_ENUMLIST oder SCRIPT\_CMPL\_GLOBALLIST einschließt.  Für andere angeforderte Listentypen ist das Ergebnis nicht definiert.  
+ Dieses Feld wird aufgefüllt, nur wenn `dwListTypesRequested` SCRIPT_CMPL_MEMBERLIST, SCRIPT_CMPL_ENUMLIST oder SCRIPT_CMPL_GLOBALLIST enthält. Für andere Typen angeforderten Liste ist das Ergebnis nicht definiert.  
   
  `pichFuncAnchorPosition`  
- \[out\] Der Startindex des Funktionsaufrufs, der die aktuelle Position enthält.  Der Startindex ist relativ zum Anfang des Blocks.  
+ [out] Der Startindex des Funktionsaufrufs, der die aktuelle Position enthält. Der Startindex ist relativ zum Start des Blocks.  
   
- Dies wird nur aufgefüllt, wenn der Kontext, der die aktuelle Position enthält, einen Funktionsaufruf ist und wenn `dwListTypesRequested` SCRIPT\_CMPL\_PARAMLIST einschließt.  Andernfalls wird das Ergebnis nicht definiert.  
+ Dies wird aufgefüllt, nur, wenn der Kontext, die aktuelle Position enthält, einen Funktionsaufruf ist, und `dwListTypesRequested` SCRIPT_CMPL_PARAMLIST enthält. Andernfalls ist das Ergebnis nicht definiert.  
   
  `pmemid`  
- \[out\] Das MEMBERID der Funktion, wie durch einen Typ im Parameter `IProvideMultipleClassInfo``ppunk` out definiert.  
+ [out] Der Wert der Funktion an, gemäß der Definition von einem Typ in der `IProvideMultipleClassInfo``ppunk` out-Parameter.  
   
- Dies wird nur aufgefüllt, wenn `dwListTypesRequested` SCRIPT\_CMPL\_PARAMLIST einschließt.  
+ Dieses Feld wird aufgefüllt, nur wenn `dwListTypesRequested` SCRIPT_CMPL_PARAMLIST enthält.  
   
  `piCurrentParameter`  
- \[out\] Der Index des Parameters, der die aktuelle Position enthält.  Wenn die aktuelle Position im Funktionsnamen ist, wird \-1 zurückgegeben.  
+ [out] Der Index des Parameters, der die aktuelle Position enthält. Wenn die aktuelle Position auf den Namen der Funktion ist, wird-1 zurückgegeben.  
   
- Der Wert `piCurrentParameter` wird nur aufgefüllt, wenn `dwListTypesRequested` SCRIPT\_CMPL\_PARAMLIST einschließt.  
+ Die `piCurrentParameter` Wert aufgefüllt wird nur dann, wenn `dwListTypesRequested` SCRIPT_CMPL_PARAMLIST enthält.  
   
  `ppunk`  
- Die Typinformationen, die in Form eines Objekts `IProvideMultipleClassInfo` bereitgestellt wird.  
+ Die Typinformationen, die in Form von bereitgestellt wird ein `IProvideMultipleClassInfo` Objekt.  
   
-## Rückgabewert  
- Ein `HRESULT`.  Zu den möglichen Werten zählen, aber nicht zu, die in der folgenden Tabelle beschränkt.  
+## <a name="return-value"></a>Rückgabewert  
+ Eine `HRESULT`. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
   
-|Wert|Description|  
-|----------|-----------------|  
+|Wert|Beschreibung|  
+|-----------|-----------------|  
 |`S_OK`|Die Methode war erfolgreich.|  
   
-## Hinweise  
+## <a name="remarks"></a>Hinweise  
   
-## Siehe auch  
- <xref:Microsoft.VisualStudio.OLE.Interop.IProvideMultipleClassInfo>   
- [IActiveScriptAuthor\-Schnittstelle](../../winscript/reference/iactivescriptauthor-interface.md)
+## <a name="see-also"></a>Siehe auch  
+ [IProvideMultipleClassInfo-Schnittstelle](https://msdn.microsoft.com/library/microsoft.visualstudio.ole.interop.iprovidemultipleclassinfo.aspx)   
+ [IActiveScriptAuthor-Schnittstelle](../../winscript/reference/iactivescriptauthor-interface.md)

@@ -1,12 +1,10 @@
 ---
-title: 'How to: Programmatically Update Bookmark Text | Microsoft Docs'
+title: 'Vorgehensweise: Programmgesteuertes Aktualisieren von Lesezeichentext | Microsoft Docs'
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -17,73 +15,77 @@ helpviewer_keywords:
 - text [Office development in Visual Studio], updating in bookmarks
 - Bookmark control, updating contents
 ms.assetid: 2324164d-2538-4695-9aaf-7285ce403be3
-caps.latest.revision: 46
-author: kempb
-ms.author: kempb
+caps.latest.revision: "46"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: b7da0b4b6bf1c9f23d12214135761d2bb7d18f8b
-ms.contentlocale: de-de
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: ee78ad2aac4ff9cefcb3291d3b1b2010d8a1c26c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="how-to-programmatically-update-bookmark-text"></a>How to: Programmatically Update Bookmark Text
-  You can insert text into a placeholder bookmark in a Microsoft Office Word document so that you can retrieve the text at a later time, or to replace text in a bookmark. If you are developing a document-level customization, you can also update text in a <xref:Microsoft.Office.Tools.Word.Bookmark> control that is bound to data. For more information, see [Binding Data to Controls in Office Solutions](../vsto/binding-data-to-controls-in-office-solutions.md).  
+# <a name="how-to-programmatically-update-bookmark-text"></a>Gewusst wie: Programmgesteuertes Aktualisieren von Lesezeichentext
+  Sie können Text in ein Platzhalterlesezeichen in einem Microsoft Office Word-Dokument einfügen, um den Text zu einem späteren Zeitpunkt abzurufen oder Text in einem Lesezeichen zu ersetzen. Wenn Sie eine Anpassung auf Dokumentebene entwickeln, können Sie auch Text in einem an Daten gebundenen <xref:Microsoft.Office.Tools.Word.Bookmark>-Steuerelement aktualisieren. Weitere Informationen finden Sie unter [Binden von Daten an Steuerelemente in Office-Projektmappen](../vsto/binding-data-to-controls-in-office-solutions.md).  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
- The bookmark object can be one of two types:  
+ Das Lesezeichenobjekt kann einem von zwei Typen entsprechen:  
   
--   A <xref:Microsoft.Office.Tools.Word.Bookmark> host control.  
+-   Einem <xref:Microsoft.Office.Tools.Word.Bookmark>-Hoststeuerelement.  
   
-     <xref:Microsoft.Office.Tools.Word.Bookmark> controls extend native <xref:Microsoft.Office.Interop.Word.Bookmark> objects by enabling data binding and exposing events. For more information about host controls, see [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md).  
+     <xref:Microsoft.Office.Tools.Word.Bookmark>-Steuerelemente erweitern systemeigene <xref:Microsoft.Office.Interop.Word.Bookmark>-Objekte, indem sie die Datenbindung aktivieren und Ereignisse verfügbar machen. Weitere Informationen zu Hoststeuerelementen finden Sie unter [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md).  
   
--   A native <xref:Microsoft.Office.Interop.Word.Bookmark> object.  
+-   Einem systemeigene <xref:Microsoft.Office.Interop.Word.Bookmark>-Objekt.  
   
-     <xref:Microsoft.Office.Interop.Word.Bookmark> objects do not have events or data binding capabilities.  
+     <xref:Microsoft.Office.Interop.Word.Bookmark>-Objekte verfügen über keine Ereignisse oder Datenbindungsfunktionen.  
   
- When you assign text to a bookmark, the behavior differs between a <xref:Microsoft.Office.Interop.Word.Bookmark> and a <xref:Microsoft.Office.Tools.Word.Bookmark>. For more information, see [Bookmark Control](../vsto/bookmark-control.md).  
+ Wenn Sie einem Lesezeichen Text zuordnen, unterscheidet sich das Verhalten zwischen <xref:Microsoft.Office.Interop.Word.Bookmark> und <xref:Microsoft.Office.Tools.Word.Bookmark>. Weitere Informationen finden Sie unter [Bookmark Control](../vsto/bookmark-control.md).  
   
-## <a name="using-host-controls"></a>Using Host Controls  
+## <a name="using-host-controls"></a>Verwenden von Hoststeuerelementen  
   
-#### <a name="to-update-bookmark-contents-using-a-bookmark-control"></a>To update bookmark contents using a Bookmark control  
+#### <a name="to-update-bookmark-contents-using-a-bookmark-control"></a>So aktualisieren Lesezeicheninhalte mithilfe des Lesezeichen-Steuerelements  
   
-1.  Create a procedure that takes a `bookmark` argument for the name of the bookmark, and a `newText` argument for the string to assign to the <xref:Microsoft.Office.Tools.Word.Bookmark.Text%2A> property.  
-  
-    > [!NOTE]  
-    >  Assigning text to the <xref:Microsoft.Office.Tools.Word.Bookmark.Text%2A> or <xref:Microsoft.Office.Tools.Word.Bookmark.FormattedText%2A> property of a <xref:Microsoft.Office.Tools.Word.Bookmark> control does not cause the bookmark to be deleted.  
-  
-     [!code-vb[Trin_VstcoreWordAutomation#63](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#63)]  [!code-csharp[Trin_VstcoreWordAutomation#63](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#63)]  
-  
-2.  Assign the *newText* string to the <xref:Microsoft.Office.Tools.Word.Bookmark.Text%2A> property of the <xref:Microsoft.Office.Tools.Word.Bookmark>.  
-  
-     [!code-vb[Trin_VstcoreWordAutomation#64](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#64)]  [!code-csharp[Trin_VstcoreWordAutomation#64](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#64)]  
-  
-## <a name="using-word-objects"></a>Using Word Objects  
-  
-#### <a name="to-update-bookmark-contents-using-a-word-bookmark-object"></a>To update bookmark contents using a Word Bookmark object  
-  
-1.  Create a procedure that has a `bookmark` argument for the name of the <xref:Microsoft.Office.Interop.Word.Bookmark>, and a `newText` argument for the string to assign to the <xref:Microsoft.Office.Interop.Word.Range.Text%2A> property of the bookmark.  
+1.  Erstellen Sie eine Prozedur, die ein `bookmark`-Argument für den Namen des Lesezeichens akzeptiert, und ein`newText`-Argument für die Zeichenfolge zum Zuweisen der <xref:Microsoft.Office.Tools.Word.Bookmark.Text%2A>-Eigenschaft.  
   
     > [!NOTE]  
-    >  Assigning text to a native Word <xref:Microsoft.Office.Interop.Word.Bookmark> object causes the bookmark to be deleted.  
+    >  Die Zuweisung von Text zu den Eigenschaften <xref:Microsoft.Office.Tools.Word.Bookmark.Text%2A> oder <xref:Microsoft.Office.Tools.Word.Bookmark.FormattedText%2A> eines <xref:Microsoft.Office.Tools.Word.Bookmark>-Steuerelements führt nicht dazu, dass das Lesezeichen gelöscht wird.  
   
-     [!code-vb[Trin_VstcoreWordAutomation#65](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#65)]  [!code-csharp[Trin_VstcoreWordAutomation#65](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#65)]  
+     [!code-vb[Trin_VstcoreWordAutomation#63](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#63)]
+     [!code-csharp[Trin_VstcoreWordAutomation#63](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#63)]  
   
-2.  Assign the *newText* string to the <xref:Microsoft.Office.Interop.Word.Range.Text%2A> property of the bookmark, which automatically deletes the bookmark. Then re-add the bookmark to the <xref:Microsoft.Office.Interop.Word.Bookmarks> collection.  
+2.  Zuweisen der *NewText* string in die <xref:Microsoft.Office.Tools.Word.Bookmark.Text%2A> Eigenschaft von der <xref:Microsoft.Office.Tools.Word.Bookmark>.  
   
-     The following code example can be used in a document-level customization.  
+     [!code-vb[Trin_VstcoreWordAutomation#64](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#64)]
+     [!code-csharp[Trin_VstcoreWordAutomation#64](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#64)]  
   
-     [!code-vb[Trin_VstcoreWordAutomation#66](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#66)]  [!code-csharp[Trin_VstcoreWordAutomation#66](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#66)]  
+## <a name="using-word-objects"></a>Verwenden von Word-Objekten  
   
-     The following code example can be used in a VSTO Add-in. This example uses the active document.  
+#### <a name="to-update-bookmark-contents-using-a-word-bookmark-object"></a>So aktualisieren Lesezeicheninhalte mithilfe eines Word-Lesezeichenobjekts  
   
-     [!code-vb[Trin_VstcoreWordAutomationAddIn#66](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#66)]  [!code-csharp[Trin_VstcoreWordAutomationAddIn#66](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#66)]  
+1.  Erstellen Sie eine Prozedur, die ein `bookmark`-Argument für den Namen von <xref:Microsoft.Office.Interop.Word.Bookmark> und ein `newText`-Argument für die Zeichenfolge zur Zuweisung zur <xref:Microsoft.Office.Interop.Word.Range.Text%2A>-Eigenschaft des Lesezeichens enthält.  
   
-## <a name="see-also"></a>See Also  
- [How to: Programmatically Insert Text into Word Documents](../vsto/how-to-programmatically-insert-text-into-word-documents.md)   
- [Word Object Model Overview](../vsto/word-object-model-overview.md)   
- [Bookmark Control](../vsto/bookmark-control.md)  
+    > [!NOTE]  
+    >  Die Zuweisung von Text zu einem systemeigenen Word-<xref:Microsoft.Office.Interop.Word.Bookmark>-Objekt führt nicht dazu, dass das Lesezeichen gelöscht wird.  
+  
+     [!code-vb[Trin_VstcoreWordAutomation#65](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#65)]
+     [!code-csharp[Trin_VstcoreWordAutomation#65](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#65)]  
+  
+2.  Weisen Sie die *NewText* string in die <xref:Microsoft.Office.Interop.Word.Range.Text%2A> -Eigenschaft des Lesezeichens zu, wodurch das Lesezeichen automatisch gelöscht. Fügen Sie das Lesezeichen der <xref:Microsoft.Office.Interop.Word.Bookmarks>-Auflistung dann erneut hinzu.  
+  
+     Das folgende Codebeispiel kann in einer Anpassung auf Dokumentebene verwendet werden.  
+  
+     [!code-vb[Trin_VstcoreWordAutomation#66](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#66)]
+     [!code-csharp[Trin_VstcoreWordAutomation#66](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#66)]  
+  
+     Das folgende Codebeispiel kann in einem VSTO-Add-In verwendet werden. In diesem Beispiel wird das aktive Dokument verwendet.  
+  
+     [!code-vb[Trin_VstcoreWordAutomationAddIn#66](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#66)]
+     [!code-csharp[Trin_VstcoreWordAutomationAddIn#66](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#66)]  
+  
+## <a name="see-also"></a>Siehe auch  
+ [Vorgehensweise: Programmgesteuertes Einfügen von Text in Word-Dokumenten](../vsto/how-to-programmatically-insert-text-into-word-documents.md)   
+ [Übersicht über das Word-Objektmodell](../vsto/word-object-model-overview.md)   
+ [Bookmark-Steuerelement](../vsto/bookmark-control.md)  
   
   

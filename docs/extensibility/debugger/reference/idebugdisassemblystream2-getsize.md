@@ -1,53 +1,53 @@
 ---
-title: "IDebugDisassemblyStream2::GetSize | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugDisassemblyStream2::GetSize"
-helpviewer_keywords: 
-  - "IDebugDisassemblyStream2::GetSize"
+title: IDebugDisassemblyStream2::GetSize | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugDisassemblyStream2::GetSize
+helpviewer_keywords: IDebugDisassemblyStream2::GetSize
 ms.assetid: 8f512704-12d0-46d2-959a-4f8dffe117b5
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 35dfb225c6359e3b039b21255b1e6ba5979c3e6f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugDisassemblyStream2::GetSize
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Ruft die Größe in Anweisungen dieses Disassemblys datenstroms ab.  
+# <a name="idebugdisassemblystream2getsize"></a>IDebugDisassemblyStream2::GetSize
+Ruft die Größe in Anweisungen dieses Disassembly-Streams.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT GetSize(   
-   UINT64* pnSize  
+```cpp  
+HRESULT GetSize(   
+   UINT64* pnSize  
 );  
 ```  
   
-```c#  
-int GetSize(   
-   out ulong pnSize  
+```csharp  
+int GetSize(   
+   out ulong pnSize  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `pnSize`  
- \[out\]  Gibt die Größe in Anweisungen zurück.  
+ [out] Gibt die Größe in Anweisungen zurück.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Hinweise  
- Der Wert, der aus dieser Methode zurückgegeben wird, kann verwendet werden, um ein Array [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) Strukturen zugeordnet werden soll, das dann an die [Lesen](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)\-Methode übergeben wird.  
+## <a name="remarks"></a>Hinweise  
+ Von dieser Methode zurückgegebene Wert kann verwendet werden, reservieren Sie ein Array von [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) Strukturen, die dann an übergeben wird die [lesen](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md) Methode.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)   
  [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)   
  [Lesen](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)

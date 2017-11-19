@@ -1,80 +1,81 @@
 ---
-title: "&#220;bersicht &#252;ber dom&#228;nenspezifische Sprachtools | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Domänenspezifische Sprache"
+title: "Übersicht über domänenspezifische Sprachtools | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: Domain-Specific Language
 ms.assetid: 50d93ea2-8c88-4522-853b-40ab194953db
-caps.latest.revision: 54
-author: "alancameronwills"
-ms.author: "awills"
-manager: "douge"
-caps.handback.revision: 54
+caps.latest.revision: "54"
+author: alancameronwills
+ms.author: awills
+manager: douge
+ms.openlocfilehash: 20d4222f96958a730c563ff9bc84b2b5d0b08538
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# &#220;bersicht &#252;ber dom&#228;nenspezifische Sprachtools
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Domänenspezifische Sprachtoole \(DSL\-Toole\), die in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]gehostet, eine domänenspezifische Sprache entworfen und anschließend werden alle generieren lassen, dass Benutzer benötigen Modelle erstellen, die auf Grundlage der Sprache sind.  
+# <a name="overview-of-domain-specific-language-tools"></a>Übersicht über domänenspezifische Sprachtools
+Domänenspezifische Sprachtools (DSL Tools), die in gehostet werden [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]ermöglichen eine domänenspezifische Sprache zu entwerfen und generieren Sie alle Elemente, die Benutzer benötigen, um Modelle zu erstellen, die auf der Sprache basieren.  
   
- Die folgenden Tools werden in DSL\-Toolen enthalten:  
+ DSL-Tools gehören die folgenden Tools:  
   
--   Der Projekt\-Assistent, der verschiedene von Projektmappen verwendet, starten Sie die Entwicklung von domänenspezifischen Sprache.  
+-   Ein Projektassistent, die Projektmappenvorlagen für andere verwendet wird, können Sie mit der Entwicklung einer domänenspezifischen Sprache beginnen.  
   
--   Ein grafischen Designer zum Erstellen und Bearbeiten von domänenspezifischen Sprache. Definition  
+-   Einem grafischen Designer zum Erstellen und bearbeiten die Definition einer domänenspezifischen Sprache.  
   
--   Ein Validierungsmodul, die sicherstellen, dass die domänenspezifische Sprachen wohl geformt ist und zeigt die Definition Fehler und Warnungen an, wenn Probleme auftreten.  
+-   Ein Validierungsmodul, die sicherstellt, dass die Definition einer domänenspezifischen Sprache wohlgeformt ist und Fehler und Warnungen angezeigt, wenn Probleme vorliegen.  
   
--   Ein Codegenerator, der eine domänenspezifische Sprachen als Eingabe verwendet und Quellcode Definition als Ausgabe erzeugt.  
+-   Ein Code-Generator, der eine Definition einer domänenspezifischen Sprache als Eingabe akzeptiert und Quellcode als Ausgabe erzeugt.  
   
-## Die DSL\-Tool\-Projektmappe  
- Der domänenspezifische Designer\-Assistent Lösungen bietet die folgenden Vorlagen bereit:  
+## <a name="the-dsl-tools-solution"></a>DSL-Tools-Lösung  
+ Der Domain-Specific-Designer-Assistent stellt die folgenden Lösungsvorlagen bereit:  
   
--   Aufgaben\-Fluss  
+-   Aufgabenverlauf  
   
 -   Klassendiagramme  
   
 -   Minimale Sprache  
   
--   Teilmodelle  
+-   Komponentenmodelle  
   
--   Minimales WPF  
+-   Minimale WPF  
   
--   Minimales Windows.Forms  
+-   Minimale Windows.Forms  
   
--   DSL\-Bibliothek  
+-   DSL-Bibliothek  
   
- Weitere Informationen finden Sie unter [Auswählen einer Lösungsvorlage für eine domänenspezifische Sprache](../modeling/choosing-a-domain-specific-language-solution-template.md).  
+ Weitere Informationen finden Sie unter [Auswählen einer domänenspezifischen Sprache Projektmappenvorlage](../modeling/choosing-a-domain-specific-language-solution-template.md).  
   
- Der Assistent erstellt eine [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Projektmappe, die die folgenden Projekte enthält:  
+ Der Assistent erstellt eine [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Lösung mit den folgenden Projekten:  
   
--   Dsl  
+-   DSL  
   
-     Das dsl\-Projekt definiert die domänenspezifische Sprache und ihre Bearbeitung und Verarbeitung Tools.  
+     Dsl-Projekt definiert die domänenspezifische Sprache und die zugehörigen Tools bearbeiten und verarbeiten.  
   
 -   **DslPackage**  
   
-     Das DslPackage\-Projekt bestimmt, wie die Tools für Sprachen mit [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]integrieren.  
+     Das Projekt DslPackage bestimmt, wie die Sprachtools integriert [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
-## Die DSL\-Tool\-grafische Schnittstelle  
- Sie können die DSL\-Tool grafische Oberfläche können Sie Elemente und Beziehungen domänenspezifischen Sprache hinzugefügt werden soll.  Nachdem Sie die Elemente hinzugefügt haben, können Sie deren Darstellung definieren, indem Sie diese Formen zuordnen und Farben anpassen Decorator\-Elemente hinzufügen.  Sie können die Elemente der Toolbox hinzufügen.  
+## <a name="the-dsl-tools-graphical-interface"></a>Die Grafische Benutzeroberfläche des DSL-Tools  
+ Sie können die grafische Benutzeroberfläche DSL-Tools verwenden, Hinzufügen von Elementen und Beziehungen zu einer domänenspezifischen Sprache. Nachdem Sie die Elemente hinzugefügt haben, können Sie ihre Darstellung Formen zuordnen und Anpassen von Farben hinzufügen von Decorator-Elementen definieren. Sie können auch die Elemente zur Toolbox hinzufügen.  
   
-## Validierung auf DSL\-Toolen  
- Dsl stellt eine Ebene Validierung, um sicherzustellen, dass das Domänenmodell dem Grundbedarf für die Codegenerierung erfüllt.  In der Regel erstellen, wenn Sie besitzen Sie domänenspezifische Sprache, die Sie hinzufügen, wird eine Validierung verfügen, um die Geschäftslogik regeln auszudrücken.  Weitere Informationen über benutzerdefinierte Validierung finden Sie unter [Überprüfung in einer domänenspezifischen Sprache](../modeling/validation-in-a-domain-specific-language.md).  
+## <a name="validation-in-dsl-tools"></a>Die Validierung in DSL-Tools  
+ DSL bietet eine Überprüfung, um sicherzustellen, dass das Domain-Modell für die codegenerierung die Mindestanforderungen erfüllt. Wenn Sie eigene domänenspezifische Sprache erstellen, würden Sie in der Regel Ihre eigene Überprüfung aus, um Ihre Logik Geschäftsregeln express hinzufügen. Weitere Informationen zur benutzerdefinierten Validierung finden Sie unter [Überprüfung in einer domänenspezifischen Sprache](../modeling/validation-in-a-domain-specific-language.md).  
   
- Es wird empfohlen, die häufig domänenspezifische Sprache überprüfen, wenn sie entwerfen.  Wenn die domänenspezifische Sprache Validierungsfehler aufweist, können Sie Quellcode konnte nicht generiert werden.  Beim Generieren von Quellcode aus Vorlagen wird ausgeführt, indem auf **Alle Vorlagen transformieren** auf der Symbolleiste des Projektmappen\-Explorers klicken.  Jedes Mal, wenn Sie die Definition der Sprache ändern, vergewissern Sie sich auch auf **Alle Vorlagen transformieren**.  Weitere Informationen finden Sie unter [Gewusst wie: Erstellen einer domänenspezifischen Sprachlösung](../modeling/how-to-create-a-domain-specific-language-solution.md).  
+ Es wird empfohlen, dass Ihre einer domänenspezifischen Sprache häufig überprüfen, wenn Sie es entwerfen. Wenn Ihre einer domänenspezifischen Sprache Validierungsfehler vorhanden sind, können keine Quellcode generiert werden. Der Vorgang zum Generieren von Quellcode aus den Vorlagen wird ausgeführt, indem Sie auf **alle Vorlagen transformieren** auf der Symbolleiste des Projektmappen-Explorer. Wenn Sie die Sprachendefinition ändern, stellen Sie außerdem sicher, dass **alle Vorlagen transformieren**. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen einer domänenspezifischen Sprache Lösung](../modeling/how-to-create-a-domain-specific-language-solution.md).  
   
-## Anpassung von DSL\-Toolen  
- Sie können zusätzlichen Code bereitstellen, um das Verhalten des Modells zu verfeinern und Einschränkungen bezüglich der Sprache zu definieren.  Bei Bedarf können Sie wesentliche Änderungen vornehmen, indem Sie die Textvorlagen ändern.  
+## <a name="customization-of-dsl-tools"></a>Anpassung der DSL-Tools  
+ Sie können zusätzlichen Code, um das Verhalten des Modells zu verfeinern und zum Definieren der Einschränkungen für Ihre Sprache bereitstellen. Bei Bedarf können Sie erhebliche Änderungen vornehmen, indem Sie die Textvorlagen ändern.  
   
-## Die DSL\-Projektmappe verteilen  
- DSL\-Toole generiert ein Paket, das in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]gehostet wird.  Das Paket wird eine Toolbox ein DSL\-Explorer und andere Benutzeroberflächenelemente an, die von Benutzern Modellen erstellen, indem sie die domänenspezifische Sprache verwenden.  
+## <a name="distributing-your-dsl-solution"></a>Verteilen der DSL-Projektmappe  
+ DSL-Tools generiert ein Paket, das in gehosteten [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Das Paket zeigt eine Toolbox, einen DSL-Explorer und andere Elemente der Benutzeroberfläche, mit die Benutzer, die Modelle mit einer domänenspezifischen Sprache erstellen können.  
   
- Wenn Sie die Projektmappe DSL\-Tool in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]erstellen und ausführen, wird eine zweite Instanz von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] erläutert, wie die domänenspezifische Sprache für den Benutzer sieht der Sprache. Nachdem Sie sicherstellen, dass alles ordnungsgemäß funktioniert, können Sie die `.vsix` Datei verteilen, die Sie im Buildordner des DslPackage\-Projekts suchen.  Diese Datei kann verwendet werden, um das DSL als [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Erweiterung auf anderen Computern zu installieren.  Weitere Informationen finden Sie unter [Bereitstellen von domänenspezifischen Sprachlösungen](../modeling/deploying-domain-specific-language-solutions.md).  
+ Beim Erstellen und Ausführen die Projektmappe DSL-Tools in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], eine zweite Instanz von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] wird gezeigt, wie Ihre einer domänenspezifischen Sprache für den Benutzer der Sprache aussieht. Nachdem Sie überprüft haben, dass alles ordnungsgemäß funktioniert, können Sie verteilen die `.vsix` -Datei, die Sie im Ordner "Builds" des Projekts DslPackage erwarten können. Diese Datei kann zum Installieren der DSL als eine [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Erweiterung auf anderen Computern.  Weitere Informationen finden Sie unter [Bereitstellen einer domänenspezifischen Sprachlösungen](../modeling/deploying-domain-specific-language-solutions.md).  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Die experimentelle Instanz](../extensibility/the-experimental-instance.md)   
- [Domain\-Specific Language Tools Glossary](http://msdn.microsoft.com/de-de/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [Domänenspezifische Sprache Tools Glossar](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)

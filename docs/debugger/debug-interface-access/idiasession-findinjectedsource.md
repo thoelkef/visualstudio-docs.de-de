@@ -1,48 +1,47 @@
 ---
-title: "IDiaSession::findInjectedSource | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSession::findInjectedSource-Methode"
+title: 'Idiasession:: Findinjectedsource | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSession::findInjectedSource method
 ms.assetid: 907531b6-1ef8-4153-986d-b72611a1632d
-caps.latest.revision: 10
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 2dbac48aef894272d1edd9c4881c9f916255459b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSession::findInjectedSource
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Ruft eine Liste von Quellen ab, die in den Symbolspeicher durch Anbieter Attribut oder anderen Komponenten des Prozesses Kompilierung platziert wurde.  
+# <a name="idiasessionfindinjectedsource"></a>IDiaSession::findInjectedSource
+Ruft eine Liste der Datenquellen, die in den Symbolspeicher von Anbietern Attribut angeordnet wurde oder andere Komponenten des im Verlauf des Vorgangs ab.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT findInjectedSource (   
-   LPCOLESTR                 srcFile,  
-   IDiaEnumInjectedSources** ppResult  
+```C++  
+HRESULT findInjectedSource (   
+   LPCOLESTR                 srcFile,  
+   IDiaEnumInjectedSources** ppResult  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  srcFile  
- \[in\]  Name der Quelldatei, sodass die gesucht werden soll.  
+ [in] Der Name der Quelldatei für die Suche.  
   
  ppResult  
- \[out\]  Gibt ein [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)\-Objekt zurück, das eine Liste aller eingefügten Quellen enthält.  
+ [out] Gibt eine [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md) Objekt, das eine Liste aller der eingefügten Quellen enthält.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)   
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

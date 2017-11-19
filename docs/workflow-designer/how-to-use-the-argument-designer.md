@@ -1,36 +1,39 @@
 ---
-title: "Vorgehensweise: Verwenden des Argument-Designers | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: ".net-framework-4.6"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
-f1_keywords: 
-  - "System.Activities.Presentation.View.ArgumentDesigner.UI"
-  - "System.Activities.Presentation.View.DesignTimeArgument.UI"
+title: 'Vorgehensweise: Verwenden des Argument-Designers | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
+f1_keywords:
+- System.Activities.Presentation.View.ArgumentDesigner.UI
+- System.Activities.Presentation.View.DesignTimeArgument.UI
 ms.assetid: 64813fd5-1ea1-499a-98b4-ab2a44b7ee5e
-caps.latest.revision: 16
-caps.handback.revision: 16
-author: "ErikRe"
-ms.author: "erikre"
-manager: "erikre"
+caps.latest.revision: "16"
+author: ErikRe
+ms.author: erikre
+manager: erikre
+ms.openlocfilehash: 5093e5561140a0ebff57da1f7c21a8954ee58bb3
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# Vorgehensweise: Verwenden des Argument-Designers
-Verglichen mit früheren Versionen von [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], ist es mit dem Argument\-Designer einfach, Daten in eine und aus einer Aktivität fließen zu lassen.Sie greifen auf den Designer zu, indem Sie auf die Schaltfläche **Argumente** in der linken unteren Ecke der Entwurfsfläche klicken.Der Designer enthält eine Liste von Argumenten, die in einer Tabelle angezeigt werden und nach jedem Spaltenkopf sortiert werden können, außer nach der Spalte **Standardwert**.Für jedes Argument werden der Name, die Richtung \(ein\/aus\/ein\/aus\/Eigenschaft\), der Typ und ein Standardausdruckswert \(sofern vorhanden\) angegeben.Der Name und der Standardausdruckswert sind bearbeitbare Textfelder, und der Typ und die Richtung sind Dropdownlisten.[!INCLUDE[crabout](../test/includes/crabout_md.md)] zu Argumenten finden Sie unter [Variablen und Argumente](../Topic/Variables%20and%20Arguments.md).  
+# <a name="how-to-use-the-argument-designer"></a>Vorgehensweise: Verwenden des Argument-Designers
+Verglichen mit früheren Versionen von [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], ist es mit dem Argument-Designer einfach, Daten in eine und aus einer Aktivität fließen zu lassen. Der Designer zugegriffen wird, indem Sie auf die **Argumente** Schaltfläche in der unteren linken Ecke des Zeichenbereichs. Der Designer enthält eine Liste von Argumenten, die in einer Tabelle angezeigt und können nach jedem Spaltenkopf, sortiert werden, mit Ausnahme von der **Standardwert** Spalte. Für jedes Argument werden der Name, die Richtung (ein/aus/ein/aus/Eigenschaft), der Typ und ein Standardausdruckswert (sofern vorhanden) angegeben. Der Name und der Standardausdruckswert sind bearbeitbare Textfelder, und der Typ und die Richtung sind Dropdownlisten. [! UMFASSEN[Crabout](/dotnet/framework/windows-workflow-foundation/variables-and-arguments).  
   
-### So erstellen Sie ein neues Argument  
+### <a name="to-create-a-new-argument"></a>So erstellen Sie ein neues Argument  
   
-1.  Öffnen Sie in [!INCLUDE[vs2010](../modeling/includes/vs2010_md.md)] eine Workflow\- oder Aktivitätsprojektmappe.  
+1.  Öffnen Sie in [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] eine Workflow- oder Aktivitätsprojektmappe.  
   
-2.  Öffnen Sie den Argument\-Designer, indem Sie auf die Schaltfläche **Argumente** in der linken unteren Ecke der Entwurfsfläche klicken.Der Argument\-Designer wird angezeigt.  
+2.  Öffnen Sie den Argument-Designer, indem Sie auf die **Argumente** Schaltfläche in der unteren linken Ecke des Zeichenbereichs. Der Argument-Designer wird angezeigt.  
   
-3.  Klicken Sie auf die leere Zeile mit der Bezeichnung **Argument erstellen**.Daraufhin wird eine neue Zeile mit einem neuen Argument hinzugefügt, wobei die folgenden Standardwerte verwendet werden: argumentx für den **Namen**, wobei x eine ganze Zahl mit einem Anfangswert von 1 ist, der inkrementiert wird, um automatisch eindeutige Argumentnamen zu erstellen, **In** für die **Richtung** und **Zeichenfolge** für den **Argumenttyp**.Für **Standardwert** wird kein Wert hinzugefügt.Sie können diese Werte jederzeit während des Workflowentwurfs ändern.  
+3.  Klicken Sie auf die leere Zeile, die mit der Bezeichnung **Argument erstellen**. Dadurch wird eine neue Zeile mit einem neuen Argument mit den folgenden Standardwerten hinzugefügt: Argumentx für den **Namen** , wobei x eine ganze Zahl mit einem Anfangswert von 1 ist, die automatisch, zum Erstellen von eindeutigen Argumentnamen inkrementiert wird, **In**  für die **Richtung**, und **Zeichenfolge** für die **Argumenttyp**. Wird kein Wert für hinzugefügt **Standardwert**. Sie können diese Werte jederzeit während des Workflowentwurfs ändern.  
   
     > [!NOTE]
-    >  Um ein Argument zu löschen, wählen Sie das Argument aus, indem Sie darauf klicken, und drücken Sie dann die Taste **ENTF**.  
+    >  Um ein Argument zu löschen, wählen Sie das Argument, indem Sie darauf klicken, und drücken Sie dann die **löschen** Schlüssel.  
   
-## Siehe auch  
- [Verwenden des Workflow\-Designers](../workflow-designer/using-the-workflow-designer.md)   
- [Variablen und Argumente](../Topic/Variables%20and%20Arguments.md)
+## <a name="see-also"></a>Siehe auch  
+ [Mithilfe des Workflowdesigners](../workflow-designer/using-the-workflow-designer.md)   
+ [Variablen und Argumente](/dotnet/framework/windows-workflow-foundation/variables-and-arguments)

@@ -1,53 +1,52 @@
 ---
-title: "IDiaSession::findLines | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSession::findLines-Methode"
+title: 'Idiasession:: Findlines | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSession::findLines method
 ms.assetid: d6e84916-fd55-457e-b057-57f97b51fe73
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 366c41ee6befafa633428e2b6a959809a08b6cd9
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSession::findLines
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Ruft die Zeilennummern und innerhalb der angegebenen Kompiliereinheits\- Bezeichner der Quelldatei ab oder legt diese fest.  
+# <a name="idiasessionfindlines"></a>IDiaSession::findLines
+Ruft die Zeilennummern im angegebenen Kompiliereinheit und befehlsquellenbezeichner-Datei ab.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT findLines (   
-   IDiaSymbol*           compiland,  
-   IDiaSourceFile*       file,  
-   IDiaEnumLineNumbers** ppResult  
+```C++  
+HRESULT findLines (   
+   IDiaSymbol*           compiland,  
+   IDiaSourceFile*       file,  
+   IDiaEnumLineNumbers** ppResult  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `compiland`  
- \[in\]Ein [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)\-Objekt, das die Kompiliereinheit darstellt.  Verwenden Sie diese Schnittstelle als Kontext, in dem für die Zeilennummern suchen.  
+ [in] Ein [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) Objekt, das der Kompiliereinheit darstellt. Verwenden Sie diese Schnittstelle als einem Kontext, in dem für die Zeilennummern gesucht werden soll.  
   
  `file`  
- \[in\]  Ein [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)\-Objekt, das die Quelldatei darstellt, die für die Zeilennummern zu suchen.  
+ [in] Ein [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) Objekt, das die Quelldatei in die Suche für die Zeilennummern darstellt.  
   
  `ppResult`  
- \[out\]  Gibt ein [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)\-Objekt zurück, das eine Liste der abgerufenen Zeilennummern enthält.  
+ [out] Gibt eine [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) -Objekt, das eine Liste mit den Zeilennummern enthält abgerufen.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)   
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)   

@@ -1,56 +1,55 @@
 ---
-title: "IDiaDataSource | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaDataSource-Schnittstelle"
+title: IDiaDataSource | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaDataSource interface
 ms.assetid: 6260ac76-4f9d-4144-ba22-32f8620b32c2
-caps.latest.revision: 13
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 9b6ddb2ba2cc568b8f07e6643dcaeb93c0dec8ff
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaDataSource
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Initiiert den Zugriff auf eine Quelle von Debugsymbolen.  
+# <a name="idiadatasource"></a>IDiaDataSource
+Initiiert den Zugriff auf Debugsymbole Quelle.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
-IDiaDataSource : IUnknown  
+IDiaDataSource : IUnknown  
 ```  
   
-## Methoden in die Vtable\-Reihenfolge  
- In der folgenden Tabelle werden die Methoden von `IDiaDataSource`an.  
+## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
+ Die folgende Tabelle zeigt die Methoden der `IDiaDataSource`.  
   
 |Methode|Beschreibung|  
-|-------------|------------------|  
-|[IDiaDataSource::get\_lastError](../../debugger/debug-interface-access/idiadatasource-get-lasterror.md)|Ruft den Dateinamen für den letzten Ladefehler ab.|  
-|[IDiaDataSource::loadDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md)|Öffnet und bereitet eine Programmdatenbankdatei \(.pdb\) als Debugsymbolinformationen auf Datenquelle.|  
-|[IDiaDataSource::loadAndValidateDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loadandvalidatedatafrompdb.md)|Öffnet auf und überprüft, ob die Programmdatenbankdatei \(.pdb\) die jeweiligen Signaturinformationen übereinstimmt. bereitet die PDB\-Datei als die Datenquelle vor.|  
-|[IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)|Öffnet und bereitet die Debugdaten vor, die mit der .exe\-\/.dll Datei zugeordnet sind.|  
-|[IDiaDataSource::loadDataFromIStream](../../debugger/debug-interface-access/idiadatasource-loaddatafromistream.md)|Bereitet die Debugdaten vor, die in einer gespeicherten Programmdatenbankdatei \(.pdb\), die durch einen Stream im Speicher zugegriffen wird.|  
-|[IDiaDataSource::openSession](../../debugger/debug-interface-access/idiadatasource-opensession.md)|Öffnet eine Sitzung zum Abfragen von Symbolen.|  
+|------------|-----------------|  
+|[IDiaDataSource::get_lastError](../../debugger/debug-interface-access/idiadatasource-get-lasterror.md)|Ruft den Dateinamen für die letzten Ladefehler ab.|  
+|[IDiaDataSource::loadDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md)|Wird geöffnet, und bereitet eine Programmdatenbankdatei (.pdb) als Datenquelle Debuggen.|  
+|[IDiaDataSource::loadAndValidateDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loadandvalidatedatafrompdb.md)|Wird geöffnet und überprüft, ob die Programmdatenbankdatei (.pdb) bereitgestellten Signaturinformationen übereinstimmt; Bereitet die PDB-Datei als Datenquelle Debuggen.|  
+|[IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)|Wird geöffnet, und bereitet die Debugdaten der.exe/.dll-Datei zugeordnet.|  
+|[IDiaDataSource::loadDataFromIStream](../../debugger/debug-interface-access/idiadatasource-loaddatafromistream.md)|Bereitet die Debugdaten in ein Zugriff erfolgt über ein in-Memory-Datenstrom Programmdatenbankdatei (PDB) gespeichert.|  
+|[IDiaDataSource::openSession](../../debugger/debug-interface-access/idiadatasource-opensession.md)|Öffnet eine Sitzung für die Abfrage von Symbolen.|  
   
-## Hinweise  
- Ein Aufruf an eine der Lademethoden der `IDiaDataSource`\-Schnittstelle öffnet die Quelle des Symbols.  Ein erfolgreicher Aufruf der [IDiaDataSource::openSession](../../debugger/debug-interface-access/idiadatasource-opensession.md)\-Methode gibt eine [IDiaSession](../../debugger/debug-interface-access/idiasession.md)\-Schnittstelle zurück, die das Abfragen der Datenquelle unterstützt.  Wenn die Lademethode dateibezogenen einen Fehler zurückgibt, enthält der Rückgabewert der Methode [IDiaDataSource::get\_lastError](../../debugger/debug-interface-access/idiadatasource-get-lasterror.md) den Dateinamen, der dem Fehler zugeordnet ist.  
+## <a name="remarks"></a>Hinweise  
+ Aufrufen einer der Load-Methoden in der die `IDiaDataSource` Schnittstelle öffnet die Symbol-Quelle. Ein erfolgreicher Aufruf der [idiadatasource:: OpenSession](../../debugger/debug-interface-access/idiadatasource-opensession.md) Methode gibt ein [IDiaSession](../../debugger/debug-interface-access/idiasession.md) -Schnittstelle, die unterstützt das Abfragen der Datenquelle. Wenn die Load-Methode einen Datei-bezogener Fehler zurückgibt und dann die [idiadatasource:: Get_lasterror](../../debugger/debug-interface-access/idiadatasource-get-lasterror.md) Methodenrückgabewert Wert enthält den Dateinamen, die dem Fehler zugeordnet.  
   
-## Hinweise für Aufrufer  
- Diese Schnittstelle wird abgerufen, indem die `CoCreateInstance`\-Funktion mit den Klassenbezeichner `CLSID_DiaSource` und die Schnittstellen\-ID von `IID_IDiaDataSource`aufruft.  Im Beispiel wird gezeigt, wie diese Schnittstelle ermittelt wird.  
+## <a name="notes-for-callers"></a>Hinweise für Aufrufer  
+ Diese Schnittstelle wird abgerufen, durch den Aufruf der `CoCreateInstance` -Funktion mit dem Klassen-ID `CLSID_DiaSource` und die Schnittstellen-ID `IID_IDiaDataSource`. Im Beispiel wird gezeigt, wie diese Schnittstelle abgerufen wird.  
   
-## Beispiel  
+## <a name="example"></a>Beispiel  
   
-```cpp#  
+```C++  
   
       IDiaDataSource* pSource;  
 HRESULT hr = CoCreateInstance(CLSID_DiaSource,  
@@ -64,12 +63,12 @@ if (FAILED(hr))
 }  
 ```  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  Header: Dia2.h  
   
  Bibliothek: diaguids.lib  
   
- DLLs: msdia80.dll  
+ DLL: "MSDIA80.dll"  
   
-## Siehe auch  
- [Schnittstellen \(Debug Interface Access SDK\)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
+## <a name="see-also"></a>Siehe auch  
+ [Schnittstellen (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)

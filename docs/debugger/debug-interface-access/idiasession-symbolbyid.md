@@ -1,57 +1,56 @@
 ---
-title: "IDiaSession::symbolById | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSession::symbolById-Methode"
+title: 'Idiasession:: Symbolbyid | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSession::symbolById method
 ms.assetid: 062e4b5a-9c4d-4703-88da-ec13102c2b66
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 70139b7bf3286e7c4527bd71cf78b4ba86aeac1e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSession::symbolById
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Ruft ein Symbol mit seinem eindeutigen Bezeichner ab.  
+# <a name="idiasessionsymbolbyid"></a>IDiaSession::symbolById
+Ruft ein Symbol, das durch seinen eindeutigen Bezeichner ab.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT symbolById (   
-   DWORD        id,  
-   IDiaSymbol** ppSymbol  
+```C++  
+HRESULT symbolById (   
+   DWORD        id,  
+   IDiaSymbol** ppSymbol  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `id`  
- \[in\]  Eindeutiger Bezeichner.  
+ [in] Der eindeutige Bezeichner.  
   
  `ppSymbol`  
- \[out\]  Gibt ein [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)\-Objekt zurück, das das abgerufene Symbol darstellt.  
+ [out] Gibt eine [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) abgerufene Objekt, das das Symbol darstellt.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Hinweise  
- Der angegebene Bezeichner ist ein eindeutiger Wert, der intern vom DIA SDK verwendet wird, um alle Symbole eindeutig zu machen.  
+## <a name="remarks"></a>Hinweise  
+ Der angegebene Bezeichner ist ein eindeutiger Wert, der durch das DIA SDK Intern verwendet wird, um alle Symbole eindeutig zu machen.  
   
- Diese Methode kann verwendet werden, um beispielsweise das Symbol ab, das den Typ eines anderen Symbols darstellt \(siehe Beispiel\).  
+ Diese Methode kann verwendet werden, z. B. auf das Symbol für den Typ des ein anderes Symbol abrufen (siehe Beispiel).  
   
-## Beispiel  
- In diesem Beispiel wird [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) ab, das den Typ eines anderen Symbols darstellt.  Dieses Beispiel zeigt, wie die `symbolById`\-Methode in der Sitzung verwendet.  Ein einfacherer Ansatz besteht darin, die [IDiaSymbol::get\_type](../../debugger/debug-interface-access/idiasymbol-get-type.md)\-Methode aufrufen, um das Symbol Typ direkt abzurufen.  
+## <a name="example"></a>Beispiel  
+ Dieses Beispiel ruft eine [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) , die den Typ des ein anderes Symbol darstellt. Dieses Beispiel zeigt, wie die `symbolById` Methode in der Sitzung. Ein einfacherer Ansatz ist das Aufrufen der [idiasymbol:: Get_type](../../debugger/debug-interface-access/idiasymbol-get-type.md) Methode, um das Typsymbol direkt abzurufen.  
   
-```cpp#  
+```C++  
 IDiaSymbol *GetSymbolType(IDiaSymbol *pSymbol, IDiaSession *pSession)  
 {  
     IDiaSymbol *pTypeSymbol = NULL;  
@@ -65,7 +64,7 @@ IDiaSymbol *GetSymbolType(IDiaSymbol *pSymbol, IDiaSession *pSession)
 }  
 ```  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [IDiaSymbol::get\_type](../../debugger/debug-interface-access/idiasymbol-get-type.md)
+ [IDiaSymbol::get_type](../../debugger/debug-interface-access/idiasymbol-get-type.md)

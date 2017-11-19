@@ -1,54 +1,53 @@
 ---
-title: "IDiaImageData | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaImageData-Schnittstelle"
+title: IDiaImageData | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaImageData interface
 ms.assetid: b696f350-fc08-4352-9287-a15e87512c1e
-caps.latest.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: c76a173f137ede589b870f5119153a4233bcd730
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaImageData
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Macht die Details der Speicherort\- Arbeitsspeicher und Offset des Moduls oder eines Bilds.  
+# <a name="idiaimagedata"></a>IDiaImageData
+Stellt die Details der Offsets Basis Speicherort und den Arbeitsspeicher des Moduls oder Image.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
-IDiaImageData : IUnknown  
+IDiaImageData : IUnknown  
 ```  
   
-## Methoden in die Vtable\-Reihenfolge  
- In der folgenden Tabelle werden die Methoden von `IDiaImageData`an.  
+## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
+ Die folgende Tabelle zeigt die Methoden der `IDiaImageData`.  
   
 |Methode|Beschreibung|  
-|-------------|------------------|  
-|[IDiaImageData::get\_relativeVirtualAddress](../../debugger/debug-interface-access/idiaimagedata-get-relativevirtualaddress.md)|Ruft die Position im virtuellen Speicher des Moduls relativ zur Anwendung ab.|  
-|[IDiaImageData::get\_virtualAddress](../../debugger/debug-interface-access/idiaimagedata-get-virtualaddress.md)|Ruft die Position im virtuellen Speicher des Bilds ab.|  
-|[IDiaImageData::get\_imageBase](../../debugger/debug-interface-access/idiaimagedata-get-imagebase.md)|Ruft die Speicheradresse ab, in der das Bild basieren soll.|  
+|------------|-----------------|  
+|[IDiaImageData::get_relativeVirtualAddress](../../debugger/debug-interface-access/idiaimagedata-get-relativevirtualaddress.md)|Ruft die Position im virtuellen Arbeitsspeicher des Moduls relativ zur Anwendung ab.|  
+|[IDiaImageData::get_virtualAddress](../../debugger/debug-interface-access/idiaimagedata-get-virtualaddress.md)|Ruft die Position im virtuellen Arbeitsspeicher des Bilds ab.|  
+|[IDiaImageData::get_imageBase](../../debugger/debug-interface-access/idiaimagedata-get-imagebase.md)|Ruft die Speicheradresse, auf dem das Image basieren soll.|  
   
-## Hinweise  
- Einige von Streams \(XDATA und PDATA\) enthalten Kopien der Daten, die auch im Bild gespeichert werden.  Diese Stream datenobjekte können für die `IDiaImageData`\-Schnittstelle abgefragt werden.  Weitere Informationen finden Sie im Abschnitt „Hinweise für Aufrufer“ in diesem Thema.  
+## <a name="remarks"></a>Hinweise  
+ Einige Debug-Streams (XDATA, PDATA) enthalten, Kopien der Daten, die auch in das Abbild gespeichert wird. Diese Streamdaten Objekte werden, für abgefragt können die `IDiaImageData` Schnittstelle. Finden Sie im Abschnitt "Hinweise für Aufrufer" in diesem Thema für Details.  
   
-## Hinweise für Aufrufer  
- Rufen Sie diese Schnittstelle, indem sie `QueryInterface` auf einem [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)\-Objekts aufruft.  Beachten Sie, dass nicht alle Streams unterstützen die `IDiaImageData`\-Schnittstelle debuggen.  Zum Beispiel nur die derzeit XDATA\- und PDATA\-Datenströme unterstützen die `IDiaImageData`\-Schnittstelle.  
+## <a name="notes-for-callers"></a>Hinweise für Aufrufer  
+ Rufen Sie diese Schnittstelle durch den Aufruf `QueryInterface` auf eine [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md) Objekt. Beachten Sie, die nicht alle Debuggen streamt Unterstützung der `IDiaImageData` Schnittstelle. Beispielsweise derzeit nur die XDATA und PDATA Datenströme unterstützen die `IDiaImageData` Schnittstelle.  
   
-## Beispiel  
- In diesem Beispiel wird in allen Debuggen von Streams für jeden Datenstrom, der die `IDiaImageData`\-Schnittstelle unterstützt.  Wenn ein solcher Streams gefunden wird, werden einige Informationen über diesen Stream angezeigt.  
+## <a name="example"></a>Beispiel  
+ Dieses Beispiel durchsucht alle von der Debug-Streams zum eines Streams, die unterstützt die `IDiaImageData` Schnittstelle. Wenn solche ein Datenstrom gefunden wird, wird einige Informationen zu diesem Datenstrom angezeigt.  
   
-```cpp#  
+```C++  
 void ShowImageData(IDiaSession *pSession)  
 {  
     if (pSession != NULL)  
@@ -112,13 +111,13 @@ void ShowImageData(IDiaSession *pSession)
 }  
 ```  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  Header: Dia2.h  
   
  Bibliothek: diaguids.lib  
   
- DLLs: msdia80.dll  
+ DLL: "MSDIA80.dll"  
   
-## Siehe auch  
- [Schnittstellen \(Debug Interface Access SDK\)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+## <a name="see-also"></a>Siehe auch  
+ [Schnittstellen (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)

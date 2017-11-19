@@ -1,28 +1,29 @@
 ---
-title: "Der DslTextTransform-Befehl | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Domänenspezifische Sprache, Befehle"
+title: Der DslTextTransform-Befehl | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: Domain-Specific Language, commands
 ms.assetid: 7d025d0b-6543-4a49-9f6b-8b8cfcad77ee
-caps.latest.revision: 30
-author: "alancameronwills"
-ms.author: "awills"
-manager: "douge"
-caps.handback.revision: 30
+caps.latest.revision: "30"
+author: alancameronwills
+ms.author: awills
+manager: douge
+ms.openlocfilehash: fd45a33b421e889b05fd78eceddc0b05126e4a21
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# Der DslTextTransform-Befehl
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="the-dsltexttransform-command"></a>Der DslTextTransform-Befehl
 DslTextTransform.cmd ist ein Skript, das TextTransform.exe aufruft und mit allgemeinen Optionen ausgeführt. Können Sie DslTextTransformation.cmd einen nächtlichen Buildvorgang der Automatisieren Ihrer [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] Projekte. Weitere Informationen finden Sie unter [Generieren von Dateien mit dem TextTransform-Hilfsprogramm](../modeling/generating-files-with-the-texttransform-utility.md).  
   
  DslTextTransform.cmd befindet sich im folgenden Verzeichnis:  
   
- **\< visual Studio SDK-Installationspfad>\VisualStudioIntegration\Tools\Bin**  
+ **\<Visual Studio SDK-Installationspfad > \VisualStudioIntegration\Tools\Bin**  
   
  Sie können die folgenden Argumente als Eingabe für DslTextTransform.cmd angeben:  
   

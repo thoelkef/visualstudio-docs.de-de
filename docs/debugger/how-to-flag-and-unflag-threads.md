@@ -1,64 +1,67 @@
 ---
-title: "Gewusst wie: Kennzeichnen von Threads und Aufheben der Kennzeichnung | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "Threads, Wechsel [Debuggen]"
+title: 'Vorgehensweise: kennzeichnen und Kennzeichnung von Threads | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+helpviewer_keywords: treads, switching [debugging]
 ms.assetid: 952d579d-6911-413e-b3e5-54e7e797e70c
-caps.latest.revision: 33
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 33
+caps.latest.revision: "33"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: d4ff3c0d06d7f668ad3d61f785320def8b9ddd0e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Gewusst wie: Kennzeichnen von Threads und Aufheben der Kennzeichnung
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Sie können einen Thread, dem Sie besondere Aufmerksamkeit widmen möchten, kennzeichnen, indem Sie es in den Fenstern **Threads**, **Parallele Stapel**, **Parallele Überwachung** und **GPU\-Threads** mit einem Symbol versehen.  Anhand dieses Symbols können Sie gekennzeichnete Threads von anderen Threads unterscheiden.  
+# <a name="how-to-flag-and-unflag-threads"></a>Gewusst wie: Kennzeichnen von Threads und Aufheben der Kennzeichnung
+Kennzeichnen Sie einen Thread, der besondere Aufmerksamkeit erhalten, markieren Sie es mit einem Symbol in der **Threads**, **parallele Stapel** (thread anzeigen), **parallele Überwachung**, und  **GPU-Threads** Windows. Anhand dieses Symbols können Sie gekennzeichnete Threads von anderen Threads unterscheiden.  
   
- Gekennzeichnete Threads werden auch in der Liste **Thread** auf der Symbolleiste **Debugspeicherort** gesondert behandelt.  In dieser Liste können alle Threads oder nur gekennzeichnete Threads aufgeführt werden.  Beim Kennzeichnen eines Threads wird die Anzeige der Liste **Thread** automatisch zu den gekennzeichneten Threads umgeschaltet. Bei Bedarf können Sie in der Anzeige jedoch zurückwechseln, sodass alle Threads angezeigt werden.  
+Gekennzeichnete Threads werden auch in eine besondere Behandlung der **Thread** auf in der Liste der **Debugspeicherort** Symbolleiste und in den anderen Multithread Debugfenstern. Sie können alle Threads oder nur gekennzeichnete Threads Anzeigen der **Thread** Liste oder in den anderen Fenstern.
   
-### So können Sie einen Thread mithilfe des Fensters Threads kennzeichnen oder seine Kennzeichnung aufheben  
+### <a name="to-flag-or-unflag-a-thread"></a>So Kennzeichnen Sie einen Thread bzw. haben die Kennzeichnung auf 
   
--   Suchen Sie im Fenster **Threads** den gewünschten Thread, und klicken Sie auf das Flagsymbol, um das Flag auszuwählen oder zu löschen.  
+-   In der **Threads** oder **parallele Überwachung** Fenster, suchen Sie den Thread, der Sie interessiert sind, und klicken Sie auf das Kennzeichnungssymbol aktivieren oder deaktivieren das Flag. 
+-   In der **parallele Stapel** mit der rechten Maustaste auf einen Thread oder eine Gruppe von Threads und wählen Sie im Fenster **Flag / <thread>**  oder **Flag entfernen / <thread>** .
   
-### So heben Sie die Kennzeichnung aller Threads auf  
+### <a name="to-unflag-all-threads"></a>So heben Sie die Kennzeichnung aller Threads auf  
   
--   Klicken Sie im Fenster **Threads** mit der rechten Maustaste auf einen Thread, und klicken Sie anschließend auf **Kennzeichnung aller Threads aufheben**.  
+-   In der **Threads** mit der rechten Maustaste auf einen beliebigen Thread, und klicken Sie dann auf **Kennzeichnung aller Threads**.
+-   In der **parallele Überwachung** wählen alle gekennzeichnete Threads an, mit der rechten Maustaste, und wählen Sie **Flag**.  
   
-### So zeigen Sie nur gekennzeichnete Threads an  
+### <a name="to-display-only-flagged-threads"></a>So zeigen Sie nur gekennzeichnete Threads an  
   
--   Wählen Sie im Fenster "Debuggen" die Schaltfläche "Kennzeichnen" aus.  
+-   Wählen Sie die **nur gekennzeichnete Threads anzeigen Threads** Schaltfläche in einem Multithread-debugging-Fenster.  
   
-### So kennzeichnen Sie nur eigenen Code  
+### <a name="to-flag-just-my-code"></a>So kennzeichnen Sie nur eigenen Code  
   
-1.  Klicken Sie auf der Symbolleiste am oberen Rand des Fensters **Threads** auf das Kennzeichnungssymbol.  
+1.  Auf der Symbolleiste am oberen Rand der **Threads** Fenster, klicken Sie auf das Kennzeichnungssymbol.  
   
-2.  Klicken Sie in der Dropdownliste auf **Nur eigenen Code kennzeichnen**.  
+2.  Klicken Sie in der Dropdownliste auf **nur eigenen Code kennzeichnen**.  
   
-### So kennzeichnen Sie Threads, die ausgewählten Modulen zugeordnet sind  
+### <a name="to-flag-threads-that-are-associated-with-selected-modules"></a>So kennzeichnen Sie Threads, die ausgewählten Modulen zugeordnet sind  
   
-1.  Klicken Sie auf der Symbolleiste des Fensters **Threads** auf das Kennzeichnungssymbol.  
+1.  Auf der Symbolleiste der **Threads** Fenster, klicken Sie auf das Kennzeichnungssymbol.  
   
-2.  Klicken Sie in der Dropdownliste auf **Benutzerdefinierte Modulauswahl kennzeichnen**.  
+2.  Klicken Sie in der Dropdownliste auf **benutzerdefinierte Modulauswahl kennzeichnen**.  
   
-3.  Wählen Sie im Dialogfeld **Module auswählen** die gewünschten Module aus.  
+3.  In der **Module auswählen** Dialogfeld wählen die gewünschten Module.  
   
-4.  \(Optional\) Geben Sie Im Feld **Suchen** eine Suchzeichenfolge für bestimmte Module ein.  
+4.  (Optional) In der **Suche** geben eine Zeichenfolge, die für bestimmte Module zu suchen.  
   
 5.  Klicken Sie auf **OK**.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Debuggen von Multithreadanwendungen](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
- [Exemplarische Vorgehensweise: Debuggen einer Multithreadanwendung](../debugger/walkthrough-debugging-a-multithreaded-application.md)
+ [Erste Schritte zum Debuggen von Multithreadanwendungen verwendet werden können](../debugger/get-started-debugging-multithreaded-apps.md)  
+ [Exemplarische Vorgehensweise: Debuggen von Multithreadanwendungen mithilfe des Fensters Threads](../debugger/how-to-use-the-threads-window.md)

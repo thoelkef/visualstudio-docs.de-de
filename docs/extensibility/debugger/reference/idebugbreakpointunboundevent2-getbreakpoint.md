@@ -1,53 +1,53 @@
 ---
-title: "IDebugBreakpointUnboundEvent2::GetBreakpoint | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugBreakpointUnboundEvent2::GetBreakpoint"
-helpviewer_keywords: 
-  - "IDebugBreakpointUnboundEvent2::GetBreakpoint"
+title: IDebugBreakpointUnboundEvent2::GetBreakpoint | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugBreakpointUnboundEvent2::GetBreakpoint
+helpviewer_keywords: IDebugBreakpointUnboundEvent2::GetBreakpoint
 ms.assetid: ad73a207-b778-4dc5-b645-5ec668a63333
-caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 191f5bb8c2fbcbb3fa666ebfbc1db7956fc38524
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugBreakpointUnboundEvent2::GetBreakpoint
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Ruft den Haltepunkt ab, der aufgehoben wurde.  
+# <a name="idebugbreakpointunboundevent2getbreakpoint"></a>IDebugBreakpointUnboundEvent2::GetBreakpoint
+Ruft ab, die nicht gebundenen Haltepunkt.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT GetBreakpoint(   
-   IDebugBoundBreakpoint2** ppBP  
+```cpp  
+HRESULT GetBreakpoint(   
+   IDebugBoundBreakpoint2** ppBP  
 );  
 ```  
   
-```c#  
-int GetBreakpoint(   
-   out IDebugBoundBreakpoint2 ppBP  
+```csharp  
+int GetBreakpoint(   
+   out IDebugBoundBreakpoint2 ppBP  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `ppBP`  
- \[out\]  Gibt ein [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)\-Objekt zurück, das den Haltepunkt darstellt, der aufgehoben wurde.  
+ [out] Gibt eine [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md) -Objekt, das den Haltepunkt darstellt, die aufgehoben wurden.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Beispiel  
- Im folgenden Beispiel wird veranschaulicht, wie diese Methode für ein **CBreakpointUnboundDebugEventBase\-Objekt** implementiert, das die [IDebugBreakpointUnboundEvent2](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2.md)\-Schnittstelle verfügbar macht.  
+## <a name="example"></a>Beispiel  
+ Das folgende Beispiel veranschaulicht die Implementierung dieser Methode für eine **CBreakpointUnboundDebugEventBase** -Objekt, das macht die [IDebugBreakpointUnboundEvent2](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2.md) Schnittstelle.  
   
-```cpp#  
+```cpp  
 STDMETHODIMP CBreakpointUnboundDebugEventBase::GetBreakpoint(  
     IDebugBoundBreakpoint2 **ppbp)  
 {  
@@ -74,6 +74,6 @@ STDMETHODIMP CBreakpointUnboundDebugEventBase::GetBreakpoint(
 }  
 ```  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDebugBreakpointUnboundEvent2](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2.md)   
  [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)

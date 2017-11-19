@@ -1,50 +1,49 @@
 ---
-title: "IDiaSymbol::get_registerId | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSymbol::get_registerId-Methode"
+title: 'Idiasymbol:: Get_registerid | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSymbol::get_registerId method
 ms.assetid: f881e793-eb9e-48dc-a847-dd61d77174fc
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: d5fe8b131e715f5fa55d2d2f99cb8c4714996290
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSymbol::get_registerId
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Ruft den Registern kennzeichner des Speicherorts ab, wenn [LocationType\-Enumeration](../../debugger/debug-interface-access/locationtype.md) zu `LocIsEnregistered`festgelegt ist.  
+# <a name="idiasymbolgetregisterid"></a>IDiaSymbol::get_registerId
+Ruft ab, die Register-Kennzeichner des Speicherorts bei der [LocationType-Enumeration](../../debugger/debug-interface-access/locationtype.md) festgelegt ist, um `LocIsEnregistered`.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT get_registerId (   
-   DWORD* pRetVal  
+```C++  
+HRESULT get_registerId (   
+   DWORD* pRetVal  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `pRetVal`  
- \[out\]  Gibt den Registern kennzeichner des Speicherorts zurück.  
+ [out] Gibt die Register-Kennzeichner des Speicherorts zurück.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt `S_FALSE` oder einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
   
 > [!NOTE]
->  Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft nicht für das Symbol verfügbar ist.  
+>  Ein Rückgabewert von `S_FALSE` bedeutet, dass die Eigenschaft nicht für das Symbol verfügbar ist.  
   
-## Hinweise  
- Wenn das Symbol relativ zu einem Register entspricht. h. wenn [LocationType\-Enumeration](../../debugger/debug-interface-access/locationtype.md) des Symbols auf `LocIsRegRel`festgelegt ist, verwenden Sie die `get_registerId`\-Methode, die von einem Aufruf der [IDiaSymbol::get\_offset](../../debugger/debug-interface-access/idiasymbol-get-offset.md)\-Methode folgt, um den Offset vom Registers abgerufen werden sollen, in dem das Symbol befindet.  
+## <a name="remarks"></a>Hinweise  
+ Wenn das Symbol relativ zum eines Registers, d. h. wenn des Symbols [LocationType-Enumeration](../../debugger/debug-interface-access/locationtype.md) auf festgelegt ist `LocIsRegRel`, verwenden Sie die `get_registerId` Methode gefolgt von einem Aufruf der [idiasymbol:: Get_offset](../../debugger/debug-interface-access/idiasymbol-get-offset.md) Methode, die der Offset aus dem Register abgerufen, in dem das Symbol befindet.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [LocationType\-Enumeration](../../debugger/debug-interface-access/locationtype.md)
+ [LocationType-Enumeration](../../debugger/debug-interface-access/locationtype.md)

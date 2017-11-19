@@ -1,56 +1,57 @@
 ---
-title: "Gewusst wie: Anpassen der Standardwebseite f&#252;r eine ClickOnce-Anwendung | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-deployment"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "Publish.htm (Webseite)"
-  - "Standardwebseite für ClickOnce-Bereitstellung"
-  - "Bereitstellen von Anwendungen [ClickOnce], Veröffentlichung"
-  - "Veröffentlichen, ClickOnce"
+title: "Vorgehensweise: Anpassen der Standardwebseite für eine ClickOnce-Anwendung | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-deployment
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- C++
+helpviewer_keywords:
+- Publish.htm Web page
+- ClickOnce deployment default Web page
+- deploying applications [ClickOnce], publishing
+- publishing, ClickOnce
 ms.assetid: 418de18c-bee9-4f24-9cd9-0252d175070d
-caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 14
+caps.latest.revision: "14"
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+ms.openlocfilehash: fefafa0f9ea04a62d6ae79bd18834e36a1480f29
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# Gewusst wie: Anpassen der Standardwebseite f&#252;r eine ClickOnce-Anwendung
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Wenn Sie eine ClickOnce\-Anwendung im Web veröffentlichen, wird auch eine Webseite automatisch generiert und veröffentlicht.  Die Standardseite enthält den Namen der Anwendung, Links zum Installieren der Anwendung und erforderlicher Komponenten, sowie Links zum Zugriff auf die Hilfe von MSDN.  
+# <a name="how-to-customize-the-default-web-page-for-a-clickonce-application"></a>Gewusst wie: Anpassen der Standardwebseite für eine ClickOnce-Anwendung
+Wenn Sie eine ClickOnce-Anwendung im Web zu veröffentlichen, wird eine Webseite automatisch generiert und zusammen mit der Anwendung veröffentlicht. Die Standardseite enthält den Namen der Anwendung und Links, um die Anwendung installieren, Installieren der erforderlichen Komponenten oder zugreifen auf die Hilfe auf MSDN.  
   
 > [!NOTE]
->  Abhängig vom Computer, auf dem die Seite angezeigt wird, und den Komponenten, die Sie hinzugefügt haben, können die auf der Seite verfügbaren Links variieren.  
+>  Die tatsächliche Links, die Sie auf der Seite finden Sie unter abhängig sind, auf dem Computer, auf dem die Seite angezeigt wird, und welche erforderlichen Komponenten, die Sie einschließen.  
   
- Der Standardname der Webseite lautet Publish.htm. Sie können diesen Namen im **Projekt\-Designer** ändern.  Weitere Informationen finden Sie unter [How to: Specify a Publish Page for a ClickOnce Application](../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md).  
+ Der Standardname für die Webseite lautet Publish.htm. Sie können den Namen im Ändern der **Projekt-Designer**. Weitere Informationen finden Sie unter [wie: Angeben einer Seite "Veröffentlichen" für eine ClickOnce-Anwendung](../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md).  
   
- Die Webseite Publish.htm wird nur veröffentlicht, wenn eine neuere Version erkannt wird.  
+ Nur, wenn eine neuere Version erkannt wird, wird die Publish.htm (Webseite) veröffentlicht.  
   
 > [!NOTE]
->  Änderungen an den Einstellungen zum **Veröffentlichen** haben keinen Einfluss auf die Seite Publish.htm. Es gibt jedoch eine Ausnahme: Wenn Sie nach der ersten Veröffentlichung erforderliche Komponenten hinzufügen oder entfernen, ist die Liste der erforderlichen Komponenten nicht mehr korrekt.  Sie müssen den Linktext der erforderlichen Komponenten den Änderungen entsprechend bearbeiten.  
+>  Änderungen, die Sie, um vornehmen Ihre **veröffentlichen** Einstellungen wirken sich nicht auf der Seite "Publish.htm" mit einer Ausnahme: Wenn Sie hinzufügen oder Entfernen von Komponenten nach dem anfänglich veröffentlichen, die Liste der erforderlichen Komponenten werden nicht mehr genau. Sie müssen den Text für die erforderliche Verknüpfung entsprechend die Änderungen zu bearbeiten.  
   
-### So passen Sie die Veröffentlichungswebseite an  
+### <a name="to-customize-the-publish-web-page"></a>Anpassen der Seite "Web veröffentlichen"  
   
-1.  Veröffentlichen Sie die ClickOnce\-Anwendung an einem Webspeicherort.  Weitere Informationen finden Sie unter [How to: Publish a ClickOnce Application using the Publish Wizard](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).  
+1.  Veröffentlichen Sie die ClickOnce-Anwendung auf eine Webadresse ein. Weitere Informationen finden Sie unter [Vorgehensweise: Veröffentlichen einer ClickOnce-Anwendung mit dem Webpublishing-Assistenten](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).  
   
-2.  Öffnen Sie auf dem Webserver die Datei Publish.htm mit Visual Web Designer oder einem anderen HTML\-Editor.  
+2.  Öffnen Sie auf dem Webserver die Publish.htm-Datei in Visual Web Designer oder einem anderen HTML-Editor ein.  
   
-3.  Passen Sie die Seite wie gewünscht an, und speichern Sie sie.  
+3.  Passen Sie die Seite wie gewünscht, und speichern Sie sie.  
   
-4.  Dies ist optional.  Deaktivieren Sie im Dialogfeld "Veröffentlichungsoptionen" die Option zum automatischen Generieren der Bereitstellungswebseite nach jeder Veröffentlichung, um zu verhindern, dass Visual Studio die benutzerdefinierte Veröffentlichungswebseite überschreibt.  
+4.  Dies ist optional. Um zu verhindern, dass Visual Studio Ihre benutzerdefinierten veröffentlichte Webseite überschreiben, deaktivieren Sie **generieren automatisch Bereitstellungswebseite nach jeder Veröffentlichung** im Dialogfeld Veröffentlichungsoptionen.  
   
-## Siehe auch  
- [ClickOnce Security and Deployment](../deployment/clickonce-security-and-deployment.md)   
- [Publishing ClickOnce Applications](../deployment/publishing-clickonce-applications.md)   
- [How to: Install Prerequisites with a ClickOnce Application](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
- [How to: Specify a Publish Page for a ClickOnce Application](../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md)
+## <a name="see-also"></a>Siehe auch  
+ [ClickOnce-Sicherheit und -Bereitstellung](../deployment/clickonce-security-and-deployment.md)   
+ [Veröffentlichen von ClickOnce-Anwendungen](../deployment/publishing-clickonce-applications.md)   
+ [Vorgehensweise: Installieren der erforderlichen Komponenten mit einer ClickOnce-Anwendung](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
+ [Gewusst wie: Angeben einer Veröffentlichungsseite für eine ClickOnce-Anwendung](../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md)

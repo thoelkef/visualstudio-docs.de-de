@@ -1,38 +1,40 @@
 ---
-title: "Hinzuf&#252;gen von Befehlen zu Symbolleisten | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: "Hinzufügen von Befehlen zu Symbolleisten | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 4f8cfba8-0653-4ccc-a2da-acf064c83aa7
-caps.latest.revision: 3
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 3
+caps.latest.revision: "3"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: bd2c357b0882dd96295d288f379fb7c19f650484
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Hinzuf&#252;gen von Befehlen zu Symbolleisten
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Eine Symbolleiste ist eine horizontale oder vertikale Streifen, der Schaltflächen an Befehle gebunden sind. Sie können eigene Befehle auf Symbolleisten in vielen verschiedenen Fenstern in Visual Studio hinzufügen: Hauptfenster von Visual Studio im Projektmappen\-Explorer und eigene benutzerdefinierte Toolfenster.  
+# <a name="adding-commands-to-toolbars"></a>Hinzufügen von Befehlen zu Symbolleisten
+Eine Symbolleiste ist einer horizontalen oder vertikalen Leiste, die Schaltflächen Befehlen gebunden sind. Sie können eigene Befehle zu Symbolleisten auf vielen verschiedenen Fenstern in Visual Studio hinzufügen: Hauptfenster von Visual Studio im Projektmappen-Explorer und eigene benutzerdefinierte Toolfenster.  
   
- Dieser Abschnitt beschreibt eine Reihe von Faktoren haben Sie Befehle auf Symbolleisten.  
+ Dieser Abschnitt zeigt eine Anzahl von Aufgaben mit Befehle auf der Symbolleiste ausführen können.  
   
-## In diesem Abschnitt  
+## <a name="in-this-section"></a>In diesem Abschnitt  
  [Hinzufügen einer Symbolleiste](../extensibility/adding-a-toolbar.md)  
- Erläutert, wie Sie eine Symbolleiste auf die Symbolleisten im Hauptfenster von Visual Studio hinzufügen.  
+ Es wird erläutert, wie eine Symbolleiste hinzufügen, um den Satz von Symbolleisten im Hauptfenster von Visual Studio.  
   
- [Ein Toolfenster hinzugefügt eine Symbolleiste](../extensibility/adding-a-toolbar-to-a-tool-window.md)  
- Erläutert, wie Sie ein Toolfenster eine Symbolleiste hinzufügen.  
+ [Hinzufügen einer Symbolleiste zu einem Toolfenster](../extensibility/adding-a-toolbar-to-a-tool-window.md)  
+ Erläutert, wie einem Toolfenster eine Symbolleiste hinzugefügt.  
   
- [Hinzufügen eines Befehls auf der Symbolleiste des Projektmappen\-Explorers](../extensibility/adding-a-command-to-the-solution-explorer-toolbar.md)  
- Erläutert, wie Sie einen Befehl auf der Symbolleiste im Projektmappen\-Explorer hinzufügen.  
+ [Hinzufügen eines Befehls zur Symbolleiste des Projektmappen-Explorers](../extensibility/adding-a-command-to-the-solution-explorer-toolbar.md)  
+ Erläutert das Hinzufügen eines Befehls auf der Symbolleiste Projektmappen-Explorer.  
   
- [Hinzufügen eines Controllers im Menü auf einer Symbolleiste](../extensibility/adding-a-menu-controller-to-a-toolbar.md)  
- Erläutert das Hinzufügen eines Controllers im Menü auf einer Symbolleiste.  
+ [Hinzufügen eines Menücontrollers zu einer Symbolleiste](../extensibility/adding-a-menu-controller-to-a-toolbar.md)  
+ Erläutert, wie eine Symbolleiste ein Menücontroller hinzugefügt.  
   
  [Dynamisches Hinzufügen von Menüelementen](../extensibility/dynamically-adding-menu-items.md)  
  Erläutert, wie Menüelemente dynamisch in unterschiedlichen Kontexten hinzugefügt.

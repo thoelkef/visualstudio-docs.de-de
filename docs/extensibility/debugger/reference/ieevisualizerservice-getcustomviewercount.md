@@ -1,52 +1,52 @@
 ---
-title: "IEEVisualizerService::GetCustomViewerCount | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IEEVisualizerService::GetCustomViewerCount"
-helpviewer_keywords: 
-  - "IEEVisualizerService::GetCustomViewerCount-Methode"
+title: IEEVisualizerService::GetCustomViewerCount | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IEEVisualizerService::GetCustomViewerCount
+helpviewer_keywords: IEEVisualizerService::GetCustomViewerCount method
 ms.assetid: f7b095c2-e538-4352-8cad-d4c6d4f6bdbc
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 34e0a43a8972f3c2a747ae4f0c2623c193cdff6c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IEEVisualizerService::GetCustomViewerCount
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Diese Methode ruft die Anzahl der den Typ schnellansichten ab, die von diesem Dienst verfügbar sind.  
+# <a name="ieevisualizerservicegetcustomviewercount"></a>IEEVisualizerService::GetCustomViewerCount
+Diese Methode ruft die Anzahl der verfügbaren Typ-Schnellansichten aus diesen Dienst ab.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```cpp  
-HRESULT GetCustomViewerCount(  
-   ULONG* pcelt  
+HRESULT GetCustomViewerCount(  
+   ULONG* pcelt  
 );  
 ```  
   
-```c#  
-int GetCustomViewerCount(  
-   out uint pcelt  
+```csharp  
+int GetCustomViewerCount(  
+   out uint pcelt  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `pcelt`  
- \[out\]  Gibt die Anzahl der verfügbaren Typ schnellansichten zurück.  
+ [out] Gibt die Anzahl der verfügbaren Typ-Schnellansichten zurück.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Hinweise  
- [GetCustomViewerCount](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md) führt die Anforderung an diese Methode in ihrer Unterstützung für den Typ schnellansichten.  
+## <a name="remarks"></a>Hinweise  
+ [GetCustomViewerCount](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md) übergibt die Anforderung an diese Methode in die Unterstützung für die Typ-Schnellansichten.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md)   
  [GetCustomViewerCount](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md)

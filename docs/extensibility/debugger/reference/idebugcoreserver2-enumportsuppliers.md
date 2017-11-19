@@ -1,49 +1,49 @@
 ---
-title: "IDebugCoreServer2::EnumPortSuppliers | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugCoreServer2::EnumPortSuppliers"
-helpviewer_keywords: 
-  - "IDebugCoreServer2::EnumPortSuppliers"
+title: IDebugCoreServer2::EnumPortSuppliers | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugCoreServer2::EnumPortSuppliers
+helpviewer_keywords: IDebugCoreServer2::EnumPortSuppliers
 ms.assetid: ce0c90e4-8e02-4b08-b558-7677fb2c88f7
-caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 7a34e793c3a8eff84f62611e225e5542f8beeb3a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugCoreServer2::EnumPortSuppliers
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Ruft eine Liste aller verfügbaren Anschlusslieferanten ab.  
+# <a name="idebugcoreserver2enumportsuppliers"></a>IDebugCoreServer2::EnumPortSuppliers
+Ruft eine Liste aller verfügbaren Port Lieferanten ab.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT EnumPortSuppliers(  
-   IEnumDebugPortSuppliers2** ppEnum  
+```cpp  
+HRESULT EnumPortSuppliers(  
+   IEnumDebugPortSuppliers2** ppEnum  
 );  
 ```  
   
-```c#  
-int EnumPortSuppliers(  
-   out IEnumDebugPortSuppliers2 ppEnum  
+```csharp  
+int EnumPortSuppliers(  
+   out IEnumDebugPortSuppliers2 ppEnum  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `ppEnum`  
- \[out\]  Gibt ein [IEnumDebugPortSuppliers2](../../../extensibility/debugger/reference/ienumdebugportsuppliers2.md)\-Objekt zurück, das eine Liste aller Anschlusslieferanten enthält.  
+ [out] Gibt eine [IEnumDebugPortSuppliers2](../../../extensibility/debugger/reference/ienumdebugportsuppliers2.md) -Objekt, das eine Liste mit allen Port Lieferanten enthält.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)   
  [IEnumDebugPortSuppliers2](../../../extensibility/debugger/reference/ienumdebugportsuppliers2.md)

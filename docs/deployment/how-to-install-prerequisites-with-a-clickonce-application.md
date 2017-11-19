@@ -1,74 +1,75 @@
 ---
-title: "How to: Install Prerequisites with a ClickOnce Application | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-deployment"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "deploying applications [ClickOnce], prerequisites"
-  - "prerequisites, ClickOnce"
-  - "components, bootstrapping"
+title: 'Vorgehensweise: Installieren der erforderlichen Komponenten mit einer ClickOnce-Anwendung | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-deployment
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- C++
+helpviewer_keywords:
+- deploying applications [ClickOnce], prerequisites
+- prerequisites, ClickOnce
+- components, bootstrapping
 ms.assetid: e964fca5-fdfd-47cf-a1c9-7fb96b1c88b5
-caps.latest.revision: 13
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+ms.openlocfilehash: 44acef520a15b86e15906eb4197f538b23b92d8a
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# How to: Install Prerequisites with a ClickOnce Application
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Alle [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]\-Anwendungen erfordern vor dem Ausführen die Installation der richtigen Version von .NET Framework. Viele Anwendungen benötigen zudem weitere Komponenten.  Beim Veröffentlichen einer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]\-Anwendung können Sie aus einem Satz erforderlicher Komponenten wählen, die mit der Anwendung als Paket veröffentlicht werden sollen.  Bei der Installation wird überprüft, ob die erforderlichen Komponenten bereits vorhanden sind. Andernfalls werden diese vor der [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]\-Anwendung installiert.  
+# <a name="how-to-install-prerequisites-with-a-clickonce-application"></a>Gewusst wie: Installieren von erforderlichen Komponenten mit einer ClickOnce-Anwendung
+Alle [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendungen erfordern, dass die richtige Version von .NET Framework auf einem Computer installiert ist, bevor sie ausgeführt werden können, haben zahlreiche Anwendungen sowie andere erforderliche Komponenten. Beim Veröffentlichen einer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung, wählen Sie einen Satz von erforderlichen Komponenten zusammen mit der Anwendung verpackt werden. Zeitpunkt der Installation wird eine Überprüfung ausgeführt werden, für jede erforderliche Komponente, um festzustellen, ob er bereits vorhanden ist; Wenn nicht es vor der Installation installiert werden die [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung.  
   
- Anstatt die erforderlichen Komponenten als Paket zur Verfügung zu stellen, können Sie auch einen Downloadpfad für die Komponenten angeben.  Sie können beispielsweise anstelle der Paketveröffentlichung erforderlicher Komponenten mit jeder Anwendung eine zentrale Dateifreigabe oder ein Webverzeichnis verwenden, das die Installationsprogramme für alle erforderlichen Komponenten enthält. Die Komponenten werden bei der Installation von diesem Speicherort heruntergeladen und installiert.  
+ Statt Verpacken und Veröffentlichen von erforderlichen Komponenten, können Sie auch einen Downloadpfad für die Komponenten angeben. Z. B. statt einschließlich Voraussetzungen, die mit jeder Anwendung, die Sie veröffentlichen, können eine zentrale Dateifreigabe oder die Webadresse, die die Installationsprogramme für alle Ihre Komponenten enthält, zum Zeitpunkt der Installation der Komponenten heruntergeladen werden und aus diesem Speicherort installiert.  
   
 > [!IMPORTANT]
->  Sollten Sie erforderliche Installer\-Pakete auf dem Entwicklungscomputer vor dem Veröffentlichen Ihre erstes [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung.  Weitere Informationen finden Sie unter [How to: Include Prerequisites with a ClickOnce Application](../deployment/how-to-include-prerequisites-with-a-clickonce-application.md).  
+>  Sollten Sie erforderliche Installer-Pakete auf Ihrem Entwicklungscomputer hinzufügen, vor dem Veröffentlichen Ihres ersten [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung. Weitere Informationen finden Sie unter [wie: Einschließen von Komponenten mit einer ClickOnce-Anwendung](../deployment/how-to-include-prerequisites-with-a-clickonce-application.md).  
   
- Erforderliche Komponenten werden im **Projekt\-Designer** im Bereich **Veröffentlichen** über das Dialogfeld **Erforderliche Komponenten** verwaltet.  
+ Erforderliche Komponenten werden verwaltet, der **Voraussetzungen** (Dialogfeld), aus zugegriffen werden kann die **veröffentlichen** Bereich des der **Projekt-Designer**.  
   
 > [!NOTE]
->  Sie können auch eigene Komponenten zur festgelegten Liste erforderlicher Komponenten hinzufügen.  Weitere Informationen finden Sie unter [Erstellen von Bootstrapperpaketen](../deployment/creating-bootstrapper-packages.md).  
+>  Zusätzlich zu den vordefinierten Liste der erforderlichen Komponenten können Sie Ihren eigenen Komponenten zur Liste hinzufügen. Weitere Informationen finden Sie unter [Bootstrapperpakete erstellen](../deployment/creating-bootstrapper-packages.md).  
   
-### So legen Sie die erforderlichen Komponenten für eine ClickOnce\-Anwendung fest  
+### <a name="to-specify-prerequisites-to-install-with-a-clickonce-application"></a>Voraussetzungen für die Installation mit einer ClickOnce-Anwendung angeben  
   
-1.  Wählen Sie im **Projektmappen\-Explorer** ein Projekt aus, und klicken Sie im Menü **Projekt** auf **Eigenschaften**.  
+1.  Klicken Sie bei ausgewähltem Projekt im **Projektmappen-Explorer**im Menü **Projekt** auf **Eigenschaften**.  
   
-2.  Wählen Sie den Bereich **Veröffentlichen** aus.  
+2.  Wählen Sie die **veröffentlichen** Bereich.  
   
-3.  Klicken Sie auf die Schaltfläche **Erforderliche Komponenten**, um das Dialogfeld **Erforderliche Komponenten** zu öffnen.  
-  
-4.  Stellen Sie im Dialogfeld **Erforderliche Komponenten** sicher, dass das Kontrollkästchen **Setupprogramm zur Installation erforderlicher Komponenten erstellen** aktiviert ist.  
-  
-5.  Markieren Sie in der Liste **Erforderliche Komponenten** die Komponenten, die Sie installieren möchten, und klicken Sie anschließend auf **OK**.  
-  
-     Die ausgewählten Komponenten werden zu einem Paket zusammengefasst und zusammen mit der Anwendung veröffentlicht.  
-  
-### So geben Sie einen anderen Downloadpfad für erforderliche Komponenten an  
-  
-1.  Wählen Sie im **Projektmappen\-Explorer** ein Projekt aus, und klicken Sie im Menü **Projekt** auf **Eigenschaften**.  
-  
-2.  Wählen Sie den Bereich **Veröffentlichen** aus.  
-  
-3.  Klicken Sie auf die Schaltfläche **Erforderliche Komponenten**, um das Dialogfeld **Erforderliche Komponenten** zu öffnen.  
+3.  Klicken Sie auf die **Voraussetzungen** zu öffnen die **Voraussetzungen** (Dialogfeld).  
   
 4.  Stellen Sie im Dialogfeld **Erforderliche Komponenten** sicher, dass das Kontrollkästchen **Setupprogramm zur Installation erforderlicher Komponenten erstellen** aktiviert ist.  
   
-5.  Wählen Sie im Bereich **Installationsort für erforderliche Komponenten angeben** die Option **Erforderliche Komponenten von folgendem Speicherort herunterladen** aus.  
+5.  In der **Voraussetzungen** aus, aktivieren Sie die Komponenten, die Sie verwenden möchten, installieren, und klicken Sie dann auf **OK**.  
   
-6.  Wählen Sie in der Dropdownliste einen Speicherort aus, oder geben Sie eine URL, einen Dateipfad oder einen FTP\-Pfad ein. Klicken Sie anschließend auf **OK.**  
+     Die ausgewählten Komponenten werden verpackt und zusammen mit Ihrer Anwendung veröffentlicht werden.  
+  
+### <a name="to-specify-a-different-download-location-for-prerequisites"></a>An einen anderen Downloadpfad für erforderliche Komponenten  
+  
+1.  Klicken Sie bei ausgewähltem Projekt im **Projektmappen-Explorer**im Menü **Projekt** auf **Eigenschaften**.  
+  
+2.  Wählen Sie die **veröffentlichen** Bereich.  
+  
+3.  Klicken Sie auf die **Voraussetzungen** zu öffnen die **Voraussetzungen** (Dialogfeld).  
+  
+4.  Stellen Sie im Dialogfeld **Erforderliche Komponenten** sicher, dass das Kontrollkästchen **Setupprogramm zur Installation erforderlicher Komponenten erstellen** aktiviert ist.  
+  
+5.  In der **Installationsort für erforderliche Komponenten angeben** Abschnitt **erforderliche Komponenten von folgendem Speicherort herunterladen**.  
+  
+6.  Wählen Sie einen Speicherort aus der Dropdown-Liste, oder geben Sie eine URL, den Dateipfad oder den FTP-Speicherort, und klicken Sie dann auf **OK.**  
   
     > [!NOTE]
-    >  Stellen Sie sicher, dass die Installationsprogramme für die ausgewählten Komponenten am angegebenen Speicherort vorhanden sind.  
+    >  Sie müssen sicherstellen, dass Installationsprogramme für den angegebenen Komponenten am angegebenen Speicherort vorhanden.  
   
-## Siehe auch  
- [Publishing ClickOnce Applications](../deployment/publishing-clickonce-applications.md)   
- [How to: Publish a ClickOnce Application using the Publish Wizard](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+## <a name="see-also"></a>Siehe auch  
+ [Veröffentlichen von ClickOnce-Anwendungen](../deployment/publishing-clickonce-applications.md)   
+ [Gewusst wie: Veröffentlichen einer ClickOnce-Anwendung mit dem Webpublishing-Assistenten](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

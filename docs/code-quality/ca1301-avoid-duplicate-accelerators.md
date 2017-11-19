@@ -1,11 +1,10 @@
 ---
-title: 'CA1301: Avoid duplicate accelerators | Microsoft Docs'
+title: 'CA1301: Doppelte Zugriffstasten vermeiden | Microsoft Docs'
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,59 +14,43 @@ helpviewer_keywords:
 - CA1301
 - AvoidDuplicateAccelerators
 ms.assetid: 20570a00-864b-459c-a1fa-a6e9db5f1001
-caps.latest.revision: 17
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 0e48aa6fd82a218e0184f80b1c4ec90736c46e66
-ms.contentlocale: de-de
-ms.lasthandoff: 08/30/2017
-
+caps.latest.revision: "17"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 13d2f36014ab15aea3148ab4175a89b77deb4846
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="ca1301-avoid-duplicate-accelerators"></a>CA1301: Avoid duplicate accelerators
+# <a name="ca1301-avoid-duplicate-accelerators"></a>CA1301: Doppelte Zugriffstasten vermeiden
 |||  
 |-|-|  
 |TypeName|AvoidDuplicateAccelerators|  
 |CheckId|CA1301|  
-|Category|Microsoft.Globalization|  
-|Breaking Change|Non-breaking|  
+|Kategorie|Microsoft.Globalization|  
+|Unterbrechende Änderung|Nicht unterbrechend|  
   
-## <a name="cause"></a>Cause  
- A type extends <xref:System.Windows.Forms.Control?displayProperty=fullName> and contains two or more top level controls that have identical access keys that are stored in a resource file.  
+## <a name="cause"></a>Ursache  
+ Ein Typ erweitert <xref:System.Windows.Forms.Control?displayProperty=fullName> und enthält zwei oder mehr Steuerelemente der obersten Ebene, die identische Zugriffstasten verfügen, die in einer Ressourcendatei gespeichert werden.  
   
-## <a name="rule-description"></a>Rule Description  
- An access key, also known as an accelerator, enables keyboard access to a control by using the ALT key. When multiple controls have duplicate access keys, the behavior of the access key is not well defined. The user might not be able to access the intended control by using the access key and a control other than the one that is intended might be enabled.  
+## <a name="rule-description"></a>Regelbeschreibung  
+ Eine Zugriffstaste ermöglicht den Zugriff auf ein Steuerelement unter Verwendung der ALT-TASTE. Wenn mehrere Steuerelemente über doppelte Zugriffstasten verfügen, ist das Verhalten der Zugriffstaste nicht stringent. Der Benutzer möglicherweise nicht auf das gewünschte Steuerelement mit der Zugriffstaste zugreifen und möglicherweise ein Steuerelement als diejenige, die vorgesehen ist aktiviert.  
   
- The current implementation of this rule ignores menu items. However, menu items in the same submenu should not have identical access keys.  
+ Die aktuelle Implementierung von dieser Regel werden die Menüelemente ignoriert. Menüelemente im gleichen Untermenü sollten jedoch nicht identischen Zugriffstasten haben.  
   
-## <a name="how-to-fix-violations"></a>How to Fix Violations  
- To fix a violation of this rule, define unique access keys for all controls.  
+## <a name="how-to-fix-violations"></a>Behandeln von Verstößen  
+ Um einen Verstoß gegen diese Regel zu beheben, definieren Sie eindeutige Zugriffstasten für alle Steuerelemente.  
   
-## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
- Do not suppress a warning from this rule.  
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?  
+ Unterdrücken Sie keine Warnung dieser Regel.  
   
-## <a name="example"></a>Example  
- The following example shows a minimal form that contains two controls that have identical access keys. The keys are stored in a resource file, which is not shown; however, their values appear in the commented out `checkBox.Text` lines. The behavior of duplicate accelerators can be examined by exchanging the `checkBox.Text` lines with their commented out counterparts. However, in this case, the example will not generate a warning from the rule.  
+## <a name="example"></a>Beispiel  
+ Das folgende Beispiel zeigt ein minimale Formular, das zwei Steuerelemente enthält, die identische Zugriffstasten verfügen. Die Schlüssel werden in einer Ressourcendatei gespeichert, die nicht angezeigt wird; jedoch erscheinen ihre Werte in der kommentierten out `checkBox.Text` Zeilen. Das Verhalten der doppelte Zugriffstasten untersucht werden kann, durch den Austausch der `checkBox.Text` Zeilen mit den jeweiligen Entsprechungen der als Kommentare formatiert. Allerdings wird in diesem Fall das Beispiel nicht generiert eine Warnung von der Regel.  
   
  [!code-csharp[FxCop.Globalization.AvoidDuplicateAccels#1](../code-quality/codesnippet/CSharp/ca1301-avoid-duplicate-accelerators_1.cs)]  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Siehe auch  
  <xref:System.Resources.ResourceManager?displayProperty=fullName>   
- [Resources in Desktop Apps](/dotnet/framework/resources/index)
+ [Ressourcen in Desktop-Apps](/dotnet/framework/resources/index)

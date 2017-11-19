@@ -1,62 +1,63 @@
 ---
-title: "Hinzuf&#252;gen einer Anmerkung zum Funktionsverhalten | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "_On_failure_"
-  - "_Return_type_success_"
-  - "_Always_"
-  - "_Maybe_raises_SEH_exception_"
-  - "_Raises_SEH_exception_"
-  - "_Called_from_function_class_"
-  - "_Function_class_"
-  - "_Must_inspect_result_"
-  - "_Success_"
-  - "_Check_return_"
-  - "_Use_decl_annotations_"
+title: "Hinzufügen einer Anmerkung zum Funktionsverhalten | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- _On_failure_
+- _Return_type_success_
+- _Always_
+- _Maybe_raises_SEH_exception_
+- _Raises_SEH_exception_
+- _Called_from_function_class_
+- _Function_class_
+- _Must_inspect_result_
+- _Success_
+- _Check_return_
+- _Use_decl_annotations_
 ms.assetid: c0aa268d-6fa3-4ced-a8c6-f7652b152e61
-caps.latest.revision: 11
-author: "corob-msft"
-ms.author: "corob"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: mikeblome
+ms.author: mblome
+manager: ghogen
+ms.openlocfilehash: 84a66d16241ff9f1f385bda8c1def6a82e5971a5
+ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/15/2017
 ---
-# Hinzuf&#252;gen einer Anmerkung zum Funktionsverhalten
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Zusätzlich zum Kommentieren von [Funktionsparameter und Rückgabewerte](../code-quality/annotating-function-parameters-and-return-values.md), können Sie Eigenschaften der Ganzfunktion kommentieren.  
+# <a name="annotating-function-behavior"></a>Hinzufügen einer Anmerkung zum Funktionsverhalten
+Zusätzlich zum Hinzufügen einer Anmerkung zu [Funktionsparameter und Rückgabewerte](../code-quality/annotating-function-parameters-and-return-values.md), Sie können die Eigenschaften der gesamten Funktion mit Anmerkungen versehen.  
   
-## Funktionsanmerkungen  
- Die folgenden Anmerkungen gelten für die Funktion als ganzes zu und beschreiben, wie diese sich verhält, oder welche sie erwartet, um ausgeführt zu sein.  
+## <a name="function-annotations"></a>Funktionsanmerkungen  
+ Die folgenden Anmerkungen gelten für die Funktion als Ganzes und beschreiben das Verhalten oder was er davon ausgeht, "true" sein.  
   
-|Anmerkung|**Beschreibung**|  
-|---------------|----------------------|  
-|`_Called_from_function_class_(name)`|Die nicht eigenständig zu; sondern ein mit der `_When_` \- Anmerkung verwendete Prädikat.  Weitere Informationen finden Sie unter [Angeben, wann und wo eine Anmerkung gültig ist](../code-quality/specifying-when-and-where-an-annotation-applies.md).<br /><br /> Der Parameter `name` ist eine beliebige Zeichenfolge, die auch in einer `_Function_class_` in der Anmerkung Deklaration mehrerer Funktionen wird. `_Called_from_function_class_` gibt einen Wert ungleich 0 \(null\) zurück, wenn die Funktion, die Nur analysiert wird, hinzugefügt wird, indem Sie `_Function_class_` verwenden, der den gleichen Wert `name` enthält; andernfalls gibt er null zurück.|  
-|`_Check_return_`|Kommentiert einen Rückgabewert und Zustände, dass der Aufrufer ihn überprüfen soll.  Der Prüfer meldet einen Fehler, wenn die Funktion in einem ungültigen Kontext aufgerufen wird.|  
-|`_Function_class_(name)`|Der Parameter `name` ist eine beliebige Zeichenfolge, die vom Benutzer festgelegt wird.  Es ist in einem Namespace, der von anderen Namespaces unterscheidet.  Eine Funktion, ein Funktionszeiger oder\-höchst ein usefully\-a werden als Funktionszeigertyp gehört einer oder mehreren Funktionsklassen festgelegt werden.|  
-|`_Raises_SEH_exception_`|Kommentiert eine Funktion, die immer eine Quellcode für Handler \(SEH\)\- Ausnahme der strukturierten Ausnahmehandlers je nach `_When_` und `_On_failure_` Zuständen auslöst.  Weitere Informationen finden Sie unter [Angeben, wann und wo eine Anmerkung gültig ist](../code-quality/specifying-when-and-where-an-annotation-applies.md).|  
-|`_Maybe_raises_SEH_exception_`|Kommentiert eine Funktion, die sich optional SEH Ausnahme je nach `_When_` und `_On_failure_` Zuständen soll.|  
-|`_Must_inspect_result_`|Kommentiert jeden Ausgabewert, einschließlich den Rückgabewert, Parameter und globalen Werten.  Der Analyzer meldet einen Fehler, wenn der Wert im Objekt mit Anmerkungen anschließend nicht überprüft wird. "Überprüfung" enthält, ob sie in einem bedingten Ausdruck verwendet wird, zu einem Ausgabeparameter oder global zugewiesen wird, oder wird als Parameter übergeben.  Für Rückgabewerte bedeutet `_Must_inspect_result_``_Check_return_`.|  
-|`_Use_decl_annotations_`|Kann auf eine Funktionsdefinition \(auch als Funktionsrumpf\) anstelle der Liste von Anmerkungen im Header verwendet werden. Wenn `_Use_decl_annotations_` verwendet wird, sind die Anmerkungen, die in einer im Gültigkeitsbereich befindlichen Header für die gleiche Funktion werden, verwendet, als ob ihnen auch die Definition vorhanden sind, die die Anmerkungen `_Use_decl_annotations_` verfügt.|  
+|Anmerkung|Beschreibung|  
+|----------------|-----------------|  
+|`_Called_from_function_class_(name)`|Sollen nicht eigenständig; Stattdessen ist er ein Prädikat mit dem `_When_` Anmerkung. Weitere Informationen finden Sie unter [angeben, wenn und, in dem eine Anmerkung gültig](../code-quality/specifying-when-and-where-an-annotation-applies.md).<br /><br /> Die `name` Parameter ist eine beliebige Zeichenfolge, die auch, in angezeigt eine `_Function_class_` Anmerkung in der Deklaration von einigen Funktionen.  `_Called_from_function_class_`Gibt ungleich NULL, wenn die Funktion, die gerade analysierten mit kommentiert wird `_Function_class_` , besitzt den gleichen Wert für `name`ist, andernfalls wird 0 (null) zurückgegeben.|  
+|`_Check_return_`|Einen Rückgabewert merkt und besagt, dass der Aufrufer untersucht werden sollten. Das Überprüfungsprogramm meldet einen Fehler auf, wenn die Funktion in einer "void" Kontext aufgerufen wird.|  
+|`_Function_class_(name)`|Die `name` Parameter ist eine beliebige Zeichenfolge, die vom Benutzer festgelegt ist.  Es ist in einem Namespace, der sich von anderen Namespaces ist vorhanden. Eine Funktion, die Funktionszeiger oder – die meisten sinnvoll – ein Funktionszeigertyp Zugehörigkeit zu einer oder mehreren Funktion Klassen festgelegt werden kann.|  
+|`_Raises_SEH_exception_`|Eine Funktion, die löst immer eine Ausnahme Exception Handling, strukturierte Handler (SEH) unterliegen merkt `_When_` und `_On_failure_` Bedingungen. Weitere Informationen finden Sie unter [angeben, wenn und, in dem eine Anmerkung gültig](../code-quality/specifying-when-and-where-an-annotation-applies.md).|  
+|`_Maybe_raises_SEH_exception_`|Eine Funktion, die optional eine SEH-Ausnahme, unterliegen auslösen kann merkt `_When_` und `_On_failure_` Bedingungen.|  
+|`_Must_inspect_result_`|Merkt ausnahmslos Ausgabe, einschließlich Rückgabewert, Parameter und globale Variablen an.  Der Analyzer meldet einen Fehler auf, wenn der Wert in das Objekt mit Anmerkungen nicht anschließend überprüft wird. "Überprüfung" gehören, ob es in einem bedingten Ausdruck verwendet wird, ein Output-Parameter zugewiesen oder globale ist oder als Parameter übergeben wird.  Für Rückgabewerte `_Must_inspect_result_` impliziert `_Check_return_`.|  
+|`_Use_decl_annotations_`|Kann auf einer Funktionsdefinition (auch bekannt als eines Funktionsrumpfs) anstelle der Liste der Anmerkungen im Header verwendet werden.  Wenn `_Use_decl_annotations_` wird verwendet, werden die Anmerkungen, die auf einen in-Scope-Header für die gleiche Funktion angezeigt werden, als wäre sie auch in der Definition vorhanden sind, die hat verwendet die `_Use_decl_annotations_` Anmerkung.|  
   
-## Erfolg\/Fehler\-Anmerkungen  
- Eine Funktion kann fehlschlagen und wenn ja, unterscheiden sich die Ergebnisse unvollständig sein oder von den Ergebnissen, wenn die Funktion folgt.  Mit Anmerkungen in der folgenden Liste liefern Methoden, das Fehlerverhalten auszudrücken.  Um diese Anmerkungen zu verwenden, müssen Sie es ermöglichen den erfolgreichen Verlauf festzustellen; Daher ist eine Anmerkung `_Success_` erforderlich.  Beachten Sie, dass `NTSTATUS` und `HRESULT` bereits eine `_Success_` Anmerkung haben, in die sie erstellt wird; Wenn Sie jedoch der eigenen `_Success_` Anmerkung auf `NTSTATUS` oder `HRESULT` angeben, überschreibt dieser die integrierte Anmerkung.  
+## <a name="successfailure-annotations"></a>Erfolg/Fehler-Anmerkungen  
+ Eine Funktion kann fehlschlagen, und wenn dies der Fall ist, ihre Ergebnisse ist möglicherweise unvollständig oder die Ergebnisse unterscheiden, wenn die Funktion erfolgreich ausgeführt wird.  Die Anmerkungen in der folgenden Liste ermöglichen das Fehlerverhalten express.  Um diese Anmerkungen zu verwenden, müssen Sie diese um Erfolg ermitteln aktivieren; aus diesem Grund eine `_Success_` Anmerkung ist erforderlich.  Beachten Sie, dass `NTSTATUS` und `HRESULT` bereits eine `_Success_` Anmerkung integriert werden; allerdings, wenn Sie eine eigene angeben `_Success_` Anmerkung zum `NTSTATUS` oder `HRESULT`, überschreibt die integrierten Anmerkung.  
   
-|Anmerkung|**Beschreibung**|  
-|---------------|----------------------|  
-|`_Always_(anno_list)`|Entspricht `anno_list _On_failure_(anno_list)`; das heißt, gelten die Anmerkungen in `anno_list`, dass die Funktion erfolgreich.|  
-|`_On_failure_(anno_list)`|Um nur wenn auch `_Success_`, um verwendet wird Funktion\-jedes explizit zu kommentieren oder implizit von `_Return_type_success_` in einer Typdefinition verwendet werden.  Wenn die `_On_failure_` Anmerkung auf einem Funktionsparameter oder einem Rückgabewert vorhanden ist, verhält alle Anmerkungen in `anno_list` \(anno\), als wären sie als `_When_(!expr, anno)` codiert wurde, in dem `expr` der Parameter zur erforderlichen `_Success_` Anmerkung ist.  Dies bedeutet, dass die implizite Anwendung von `_Success_` auf alle Nachbedingungen nicht `_On_failure_` gilt.|  
-|`_Return_type_success_(expr)`|Kann auf eine Typ angewendet werden.  Gibt an, dass alle Funktionen, die diesen Typ zurückgeben und nicht explizit `_Success_`, gekennzeichnet sind, als ob ihnen `_Success_(expr)` haben.  `_Return_type_success_` kann nicht auf eine Funktion oder einer Funktionszeiger\-typedef verwendet werden.|  
-|`_Success_(expr)`|`expr` ist ein Ausdruck, der einen R\-Wert führt.  Wenn die `_Success_` Anmerkung in einer Funktionsdeklaration oder eine Definition vorhanden ist, verhält sich jede Anmerkung \(`anno`\) in der Funktion und in der Nachbedingung, als wären sie als `_When_(expr, anno)` codiert wurde.  Die Anmerkung ist `_Success_` nur auf eine Funktion, nicht auf den Parameter oder als Rückgabetyp verwendet werden.  Es kann eine `_Success_` Anmerkung für eine Funktion höchstens geben, und kann nicht in einem `_When_`, `_At_` oder `_Group_` sein.  Weitere Informationen finden Sie unter [Angeben, wann und wo eine Anmerkung gültig ist](../code-quality/specifying-when-and-where-an-annotation-applies.md).|  
+|Anmerkung|Beschreibung|  
+|----------------|-----------------|  
+|`_Always_(anno_list)`|Entspricht `anno_list _On_failure_(anno_list)`; d. h. die Anmerkungen im `anno_list` gelten, und zwar unabhängig davon, ob die Funktion erfolgreich ausgeführt wird.|  
+|`_On_failure_(anno_list)`|Zu verwendende nur, wenn `_Success_` dient außerdem zum Kommentieren der Funktion – entweder explizit oder implizit über `_Return_type_success_` auf eine Typdefinition. Wenn die `_On_failure_` Anmerkung ist vorhanden, auf einen Parameter oder Rückgabetyp Funktionswert, jede Anmerkung in `anno_list` (Anno) verhält sich, als ob er wie folgt codiert wurden `_When_(!expr, anno)`, wobei `expr` ist der Parameter, die die erforderlichen `_Success_` Anmerkung. Dies bedeutet, dass die implizite Anwendung `_Success_` auf alle nach der Bedingungen gilt nicht für `_On_failure_`.|  
+|`_Return_type_success_(expr)`|Kann auf eine Typdefinition angewendet werden. Gibt an, dass alle Funktionen, die geben und müssen explizit keine zurückgegebene `_Success_` sind mit Anmerkungen versehen, als ob diesem Unternehmen arbeitete `_Success_(expr)`. `_Return_type_success_`kann nicht auf eine Funktion oder eine Funktion Pointer-Typdefinition verwendet werden.|  
+|`_Success_(expr)`|`expr`ist ein Ausdruck, der ein Rvalue-Wert ergibt. Wenn die `_Success_` Anmerkung ist vorhanden, auf eine Deklaration oder Definition, die Anmerkungen (`anno`) für die Funktion und in der nachbedingung verhält sich, als ob er wie folgt codiert wurden `_When_(expr, anno)`. Die `_Success_` Anmerkung kann nur für eine Funktion, nicht auf ihre Parameter verwendet werden oder als Rückgabetyp. Es kann höchstens eine `_Success_` Anmerkung für eine Funktion, und es darf sich nicht in einem `_When_`, `_At_`, oder `_Group_`. Weitere Informationen finden Sie unter [angeben, wenn und, in dem eine Anmerkung gültig](../code-quality/specifying-when-and-where-an-annotation-applies.md).|  
   
-## Siehe auch  
- [Verwenden von SAL\-Anmerkungen zum Reduzieren von C\/C\+\+\-Codefehlern](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
+## <a name="see-also"></a>Siehe auch  
+ [Verwenden von SAL-Anmerkungen zum Reduzieren von C/C++-Codefehlern](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
  [Einführung in SAL](../code-quality/understanding-sal.md)   
  [Hinzufügen einer Anmerkung zu Funktionsparametern und Rückgabewerten](../code-quality/annotating-function-parameters-and-return-values.md)   
  [Hinzufügen einer Anmerkung zu Strukturen und Klassen](../code-quality/annotating-structs-and-classes.md)   

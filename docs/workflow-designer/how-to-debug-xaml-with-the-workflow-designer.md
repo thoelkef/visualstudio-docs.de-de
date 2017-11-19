@@ -1,36 +1,40 @@
 ---
-title: "Vorgehensweise: Debuggen von XAML mit dem Workflow-Designer | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: 'Vorgehensweise: Debuggen von XAML mit dem Workflow-Designer | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 ms.assetid: d9305dbc-af62-4bdd-b03f-c54e3fe9ecc7
-caps.latest.revision: 8
-author: "ErikRe"
-ms.author: "erikre"
-manager: "erikre"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: ErikRe
+ms.author: erikre
+manager: erikre
+ms.openlocfilehash: c73e053cc3e3dc53101595f00dcd8fd45da8abd7
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# Vorgehensweise: Debuggen von XAML mit dem Workflow-Designer
-Workflows werden in XAML definiert.In der Benutzeroberfläche werden Workflows in Form einer XAML\-Struktur dargestellt, die den Workflow definiert.Der Debugprozess gestaltet sich ähnlich dem Debuggen von Workflows in [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)].Während des Debuggens von XAML arbeiten beispielsweise die Fenster "Lokal", "Überwachen" und "Threads" genau wie während des [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)]\-Debuggens.Zusätzlich ist während des XAML\-Debuggens die Aufruflistenansicht als zeilenbasierte hierarchische Ansicht des Ausführungsflusses für den Workflow verfügbar.  
+# <a name="how-to-debug-xaml-with-the-workflow-designer"></a>Vorgehensweise: Debuggen von XAML mit dem Workflow-Designer
+Workflows werden in XAML definiert. In der Benutzeroberfläche werden Workflows in Form einer XAML-Struktur dargestellt, die den Workflow definiert. Der Debugprozess gestaltet sich ähnlich dem Debuggen von Workflows in [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)]. Während des Debuggens von XAML arbeiten beispielsweise die Fenster "Lokal", "Überwachen" und "Threads" genau wie während des [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)]-Debuggens. Zusätzlich ist während des XAML-Debuggens die Aufruflistenansicht als zeilenbasierte hierarchische Ansicht des Ausführungsflusses für den Workflow verfügbar.  
   
 > [!NOTE]
->  Wenn die XAML für einen Workflow in derselben Assembly wie die Aktivitäten enthalten ist, wird der Assemblyteil der Klassennamen nicht eingeschlossen.Ohne diesen Teil des Klassen\(aktivitäts\)namens kann die XAML zur Laufzeit nicht geladen werden.Es wird davon abgeraten, Aktivitäten im gleichen Namespace wie das Hauptprojekt zu definieren; andernfalls muss die XAML manuell bearbeitet werden, nachdem sie im Designer bearbeitet wurde.  
+>  Wenn sich das XAML für einen Workflow in derselben Assembly wie die Aktivitäten befindet, wird der Assemblyteil der Klassennamen nicht eingeschlossen. Ohne diesen Teil der Klassen-(Aktivitäts-)namen kann das XAML zur Laufzeit nicht geladen werden. Es wird davon abgeraten, Aktivitäten in demselben Namespace wie das Hauptprojekt zu definieren; andernfalls muss das XAML manuell bearbeitet werden, nachdem es im Designer bearbeitet wurde.  
   
-### So debuggen Sie Workflow\-XAML  
+### <a name="to-debug-workflow-xaml"></a>So debuggen Sie Workflow-XAML  
   
-1.  Öffnen Sie in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ein Workflow\- oder ein Aktivitätsprojekt.  
+1.  Öffnen Sie in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ein Workflow- oder ein Aktivitätsprojekt.  
   
-2.  Legen Sie für die Aktivität oder die Aktivitäten, die Sie debuggen möchten, einen Haltepunkt fest, wie in [Vorgehensweise: Festlegen von Haltepunkten in Workflows](../workflow-designer/how-to-set-breakpoints-in-workflows.md) beschrieben.  
+2.  Legen Sie einen Haltepunkt für die Aktivität oder Aktivitäten, die zu debuggende wie beschrieben in [Vorgehensweise: Festlegen von Haltepunkten in Workflows](../workflow-designer/how-to-set-breakpoints-in-workflows.md).  
   
-3.  Klicken Sie mit der rechten Maustaste auf die XAML\-Datei, die die Workflowdefinition enthält, und wählen Sie **Code anzeigen** aus.Der Haltepunkt wird in der gleichen Zeile wie die XAML\-Elementdeklaration der Aktivität angezeigt, für die Sie den Haltepunkt in der Entwurfsansicht festgelegt haben.  
+3.  Mit der rechten Maustaste in der XAML-Datei, die die Workflowdefinition, und wählen enthält **Code anzeigen**. Der Haltepunkt wird in der gleichen Zeile wie die XAML-Elementdeklaration der Aktivität angezeigt, für die Sie den Haltepunkt in der Entwurfsansicht festgelegt haben.  
   
-4.  Rufen Sie, wie in [Vorgehensweise: Aufrufen des Workflow\-Debuggers](../workflow-designer/how-to-invoke-the-workflow-debugger.md) beschrieben, den Debugger auf.  
+4.  Rufen Sie den Debugger aus, wie in beschrieben [Vorgehensweise: Aufrufen der Workflow-Debugger](../workflow-designer/how-to-invoke-the-workflow-debugger.md).  
   
-5.  Wenn die Codeausführung einen der Haltepunkte erreicht, wird das diesem Haltepunkt zugeordnete XAML\-Element hervorgehoben dargestellt.Drücken Sie die Tasten **F10** oder **F11**, um zum nächsten Haltepunkt zu gelangen.  
+5.  Wenn die Codeausführung einen der Haltepunkte erreicht, wird das diesem Haltepunkt zugeordnete XAML-Element hervorgehoben dargestellt. Um zum nächsten Haltepunkt zu verschieben, verwenden die **F10** oder **F11** Schlüssel.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Vorgehensweise: Festlegen von Haltepunkten in Workflows](../workflow-designer/how-to-set-breakpoints-in-workflows.md)   
- [Vorgehensweise: Aufrufen des Workflow\-Debuggers](../workflow-designer/how-to-invoke-the-workflow-debugger.md)
+ [Vorgehensweise: Aufrufen des Workflow-Debuggers](../workflow-designer/how-to-invoke-the-workflow-debugger.md)

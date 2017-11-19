@@ -1,61 +1,61 @@
 ---
-title: "Fenstereigenschaften (Dialogfeld) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Fenstereigenschaften (Dialogfeld)"
+title: Fenstereigenschaften (Dialogfeld) | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: Window Properties dialog box
 ms.assetid: c70e9429-fb0c-452a-9626-79f168393e44
-caps.latest.revision: 4
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 4
+caps.latest.revision: "4"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: c2fc28d8fed522174ae706336bbba63be5c179cb
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Fenstereigenschaften (Dialogfeld)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Verwenden Sie dieses Dialogfeld, um weitere Informationen über ein bestimmtes Fenster zu erhalten.  Um dieses Dialogfeld anzuzeigen, verschieben Sie den Fokus auf das [Fensteransichtsfenster](../debugger/windows-view.md).  Wählen Sie in der Struktur einen Fensterknoten und dann **Eigenschaften** im Menü **Ansicht** aus.  
+# <a name="window-properties-dialog-box"></a>Fenstereigenschaften (Dialogfeld)
+Verwenden Sie dieses Dialogfeld, um weitere Informationen zu einem bestimmten Fenster finden. Um dieses Dialogfeld anzuzeigen, verschieben Sie den Fokus an das [Fensteransicht](../debugger/windows-view.md) Fenster. Wählen Sie einen beliebigen Knoten im Fenster in der Struktur aus, und wählen Sie dann **Eigenschaften** aus der **Ansicht** Menü.  
   
-## In diesem Abschnitt  
- [Registerkarte "Allgemein", Dialogfeld "Fenstereigenschaften"](../debugger/general-tab-window-properties-dialog-box.md)  
- Zeigt Informationen über das ausgewählte Fenster an.  
+## <a name="in-this-section"></a>In diesem Abschnitt  
+ [Registerkarte "Allgemein". Fenstereigenschaften (Dialogfeld)](../debugger/general-tab-window-properties-dialog-box.md)  
+ Zeigt Informationen über das ausgewählte Fenster.  
   
- [Registerkarte "Stile", Dialogfeld "Fenstereigenschaften"](../debugger/styles-tab-window-properties-dialog-box.md)  
- Zeigt die auf das ausgewählte Fenster angewendeten Stile an.  
+ [Registerkarte "Formatvorlagen". Fenstereigenschaften (Dialogfeld)](../debugger/styles-tab-window-properties-dialog-box.md)  
+ Zeigt auf das ausgewählte Fenster Stile angewendet.  
   
- [Registerkarte "Fenster", Dialogfeld "Fenstereigenschaften"](../debugger/windows-tab-window-properties-dialog-box.md)  
- Zeigt Informationen zu Fenstern an, die über eine Beziehung zum ausgewählten Fenster verfügen.  
+ [Registerkarte "Windows". Fenstereigenschaften (Dialogfeld)](../debugger/windows-tab-window-properties-dialog-box.md)  
+ Zeigt Informationen zu Windows, die im Zusammenhang mit der das ausgewählte Fenster.  
   
- [Registerkarte "Klasse", Dialogfeld "Fenstereigenschaften"](../debugger/class-tab-window-properties-dialog-box.md)  
- Zeigt Informationen zur Klasse des ausgewählten Fensters an.  
+ [Registerkarte "Klasse". Fenstereigenschaften (Dialogfeld)](../debugger/class-tab-window-properties-dialog-box.md)  
+ Zeigt Informationen zu der Klasse für das ausgewählte Fenster.  
   
- [Registerkarte "Prozess", Dialogfeld "Fenstereigenschaften"](../debugger/process-tab-window-properties-dialog-box.md)  
- Identifiziert den Prozess des ausgewählten Fensters.  
+ [Registerkarte "Prozess". Fenstereigenschaften (Dialogfeld)](../debugger/process-tab-window-properties-dialog-box.md)  
+ Identifiziert den Prozess, der das ausgewählte Fenster.  
   
-## Verwandte Abschnitte  
+## <a name="related-sections"></a>Verwandte Abschnitte  
  [Dialogfeld "Fenstersuche"](../debugger/window-search-dialog-box.md)  
- Wird verwendet, um in der Fensteransicht den Knoten für ein bestimmtes Fenster zu suchen.  
+ So suchen Sie den Knoten für ein bestimmtes Fenster in der Fensteransicht verwendet.  
   
- [Spy\+\+\-Referenz](../debugger/spy-increment-reference.md)  
- Enthält Abschnitte mit Beschreibungen der einzelnen Spy\+\+\-Menüs und \-Dialogfelder.  
+ [Spy++-Referenz](../debugger/spy-increment-reference.md)  
+ Enthält Abschnitte beschreiben die einzelnen Spy++-Menü und das Dialogfeld.  
   
  [Verwenden des Suchtools](../debugger/how-to-use-the-finder-tool.md)  
- Beschreibt, wie mit diesem Tool Fenster nach Eigenschaften oder Meldungen durchsucht werden.  
+ Zeigt an, wie dieses Tool-Fenster für die Eigenschaften oder Nachrichten überprüft.  
   
  [Suchen nach einem Fenster in der Fensteransicht](../debugger/how-to-search-for-a-window-in-windows-view.md)  
- Erklärt, wie Sie ein bestimmtes Fenster in der Fensteransicht finden.  
+ Erläutert, wie ein bestimmtes Fenster in der Fensteransicht gefunden.  
   
  [Fensteransicht](../debugger/windows-view.md)  
- Zeigt eine Strukturansicht der verfügbaren Fenster und Steuerelemente an.  
+ Zeigt eine Strukturansicht der verfügbaren Fenster und Steuerelemente.  
   
- [Spy\+\+\-Ansichten](../debugger/spy-increment-views.md)  
- Erklärt die Spy\+\+\-Strukturansichten von Fenstern, Meldungen, Prozessen und Threads.  
+ [Spy++-Ansichten](../debugger/spy-increment-views.md)  
+ Erläutert die Spy++-Strukturansichten von Windows, Nachrichten, Prozesse und Threads an.  
   
- [Verwenden von Spy\+\+](../debugger/using-spy-increment.md)  
- Stellt das Tool Spy\+\+ vor und erläutert die Verwendung.
+ [Verwenden von Spy++](../debugger/using-spy-increment.md)  
+ Führt das Tool Spy++ und erläutert, wie sie verwendet werden kann.

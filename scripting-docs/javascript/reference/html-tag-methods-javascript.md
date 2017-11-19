@@ -1,72 +1,75 @@
 ---
-title: "HTML-Tag-Methode (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "Anchormethode [JavaScript]"
-  - "big-Methode [JavaScript]"
-  - "blink-Methode [JavaScript]"
-  - "bold-Methode [JavaScript]"
-  - "fixed-Methode [JavaScript]"
-  - "fontcolor-Methode [JavaScript]"
-  - "fontsize-Methode [JavaScript]"
-  - "HTML-Tag-Methode [JavaScript]"
-  - "italics-Methode [JavaScript]"
-  - "link-Methode [JavaScript]"
-  - "small-Methode [JavaScript]"
-  - "sub-Methode [JavaScript]"
-  - "sup-Methode [JavaScript]"
+title: HTML-Tag-Methode (JavaScript) | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- link method [JavaScript]
+- blink method [JavaScript]
+- fontsize method [JavaScript]
+- italics method [JavaScript]
+- sup method [JavaScript]
+- anchor method [JavaScript]
+- fixed method [JavaScript]
+- fontcolor method [JavaScript]
+- bold method [JavaScript]
+- small method [JavaScript]
+- HTML Tag methods [JavaScript]
+- sub method [JavaScript]
+- big method [JavaScript]
 ms.assetid: 50376223-be95-4aa4-9147-9e738a5d3cfa
-caps.latest.revision: 15
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 15
+caps.latest.revision: "15"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 7639bc609d8e9b7e4b212fe67ae40f81487d708e
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# HTML-Tag-Methode (JavaScript)
-Sie können HTML\-Tag\-Methoden verwenden, um in einem `String`\-Objekt HTML\-Elemente um Text herum zu platzieren.  
+# <a name="html-tag-methods-javascript"></a>HTML-Tag-Methode (JavaScript)
+Sie können HTML-Tag-Methoden zum Platzieren von HTML-Elemente, um Text in einem `String` Objekt.  
   
-## Syntax  
- Die folgende Tabelle enthält die Syntax und eine Beschreibung der einzelnen HTML\-Tag\-Methoden.  
+## <a name="syntax"></a>Syntax  
+ Die folgende Tabelle enthält die Syntax für und eine Beschreibung der einzelnen HTML-Tag-Methoden.  
   
- In der Syntaxspalte ist `string1` ein `String`\-Objekt oder Zeichenfolgenliteral.  
+ In der Spalte Syntax `string1` ist ein `String` -Objekt oder Zeichenfolgenliteral.  
   
- Die Standardspalte enthält Empfehlungen des [World Wide Web Consortium \(W3C\)](http://go.microsoft.com/fwlink/?LinkId=199553) für HTML 4.  "Abzuraten" gibt an, dass statt des HTML\-Elements besser Stylesheets verwendet werden sollten.  
+ Die Standard-Spalte gibt an [World Wide Web Consortium (W3C)](http://go.microsoft.com/fwlink/?LinkId=199553) Empfehlungen für HTML 4. "Abgeraten" gibt an, dass das HTML-Element zugunsten von Stylesheets abgeraten wird.  
   
-|Syntax|Methodenbeschreibung|Parameterbeschreibung|Standard|  
-|------------|--------------------------|---------------------------|--------------|  
-|`string1`.anchor\(`name`\)|Fügt ein HTML\-Tag anchor mit einem NAME\-Attribut vor und nach dem Text ein.|Der `name`\-Parameter ist der Text, der in das NAME\-Attribut des HTML\-Tags anchor eingefügt werden soll.||  
-|`string1`.big \(\)|Fügt die HTML\-Tags \<BIG\> vor und nach dem Text ein.||Abzuraten|  
-|`string1`.blink \(\)|Fügt die HTML\-Tags \<BLINK\> vor und nach dem Text ein.  Das \<BLINK\>\-Tag wird in Internet Explorer nicht unterstützt.||Nicht im Standard|  
-|`string1`.bold\(\)|Fügt die HTML\-Tags \<B\> vor und nach dem Text ein.||Abzuraten|  
-|`string1`.fixed\(\)|Fügt die HTML\-Tags \<TT\> vor und nach dem Text ein.||Abzuraten|  
-|`string1`.fontcolor \(`color`\)|Fügt die HTML\-Tags \<FONT\> mit einem COLOR\-Attribut vor und nach dem Text ein.|Der `color`\-Parameter ist ein Zeichenfolgenwert, der den Hexadezimalwert oder den vordefinierten Namen einer Farbe enthält.  Die gültigen vordefinierten Farbnamen hängen vom [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]\-Hostbrowser und dessen Version ab.|Veraltet|  
-|`string1`.fontsize\(`size`\)|Fügt die HTML\-Tags \<FONT\> mit einem SIZE\-Attribut vor und nach dem Text ein.|Der `size`\-Parameter ist ein ganzzahliger Wert, der die Größe des Texts angibt.  Die gültigen ganzzahligen Werte hängen vom [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Hostbrowser und deren Version ab.|Veraltet|  
-|`string1`.italics\(\)|Fügt die HTML\-Tags \<I\> vor und nach dem Text ein.||Abzuraten|  
-|`string1`.link\(`href`\)|Platziert ein HTML\-Tag anchor mit einem HREF\-Attribut vor und nach dem Text.|Der `href`\-Parameter ist der Text, der in das HREF\-Attribut des HTML\-Tags anchor eingefügt werden soll.||  
-|`string1`.small\(\)|Fügt die HTML\-Tags \<SMALL\> vor und nach dem Text ein.||Abzuraten|  
-|`string1`.strike\(\)|Fügt die HTML\-Tags \<STRIKE\> vor und nach dem Text ein.||Veraltet|  
-|`string1`.sub\(\)|Fügt die HTML\-Tags \<SUB\> vor und nach dem Text ein.|||  
-|`string1`.sup \(\)|Fügt die HTML\-Tags \<SUP\> vor und nach dem Text ein.|||  
+|Syntax|Methodenbeschreibung|Beschreibung des Parameters|Standard|  
+|------------|------------------------|---------------------------|--------------|  
+|`string1`.Anchor (`name`)|Platziert einen HTML-Anker mit einem NAME-Attribut, um den Text an.|Die `name` Parameter ist der Text in das Namensattribut des HTML-Anker aufgenommen werden sollen.||  
+|`string1`.Big()|Fügt HTML \<BIG >-Tags den Textqualifizierer eingeschlossen.||Abgeraten|  
+|`string1`.blink()|Setzt-HTML- \<BLINK >-Tags den Textqualifizierer eingeschlossen. Die \<BLINK >-Tag wird in Internet Explorer nicht unterstützt.||Nicht im standard|  
+|`string1`.Bold()|Fügt HTML \<B >-Tags den Textqualifizierer eingeschlossen.||Abgeraten|  
+|`string1`.Fixed()|Fügt HTML \<TT >-Tags den Textqualifizierer eingeschlossen.||Abgeraten|  
+|`string1`.fontcolor (`color`)|Fügt HTML \<FONT >-Tags mit einem COLOR-Attribut den Textqualifizierer eingeschlossen.|Die `color` Parameter ist eine Zeichenfolge, die den hexadezimalen Wert oder vordefinierte Namen für eine Farbe enthält. Gültige vordefinierten Farbnamen richten sich nach der [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Browser und die Version des Hosts.|Als veraltet markiert|  
+|`string1`.FontSize (`size`)|Fügt HTML \<FONT >-Tags mit einem SIZE-Attribut den Textqualifizierer eingeschlossen.|Die `size` Parameter ist ein Ganzzahlwert, der die Größe des Texts angibt. Gültigen ganzzahligen Werte hängen die [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Browser und die Version des Hosts.|Als veraltet markiert|  
+|`string1`.italics()|Fügt HTML \<ich >-Tags den Textqualifizierer eingeschlossen.||Abgeraten|  
+|`string1`.Link (`href`)|Platziert einen HTML-Anker mit einem HREF-Attribut, um den Text an.|Die `href` Parameter ist der Text in der HREF-Attribut eines HTML-Anker aufgenommen werden sollen.||  
+|`string1`.Small()|Setzt-HTML- \<kleine >-Tags den Textqualifizierer eingeschlossen.||Abgeraten|  
+|`string1`.Strike()|Fügt HTML \<STRIKE >-Tags den Textqualifizierer eingeschlossen.||Als veraltet markiert|  
+|`string1`.Sub()|Fügt HTML \<SUB >-Tags den Textqualifizierer eingeschlossen.|||  
+|`string1`.SUP()|Fügt HTML \<SUP >-Tags den Textqualifizierer eingeschlossen.|||  
   
-## Hinweise  
- Es wird nicht überprüft, ob die HTML\-Tags bereits auf die Zeichenfolge angewendet wurden.  
+## <a name="remarks"></a>Hinweise  
+ Keine Prüfung wird ausgeführt, um festzustellen, ob die HTML-Tags in der Zeichenfolge bereits angewendet wurden.  
   
-## Beispiel  
- Die folgenden Beispiele veranschaulichen die Verwendung dieser HTML\-Tag\-Methoden.  
+## <a name="example"></a>Beispiel  
+ Die folgenden Beispiele zeigen, wie HTML-Tag-Methoden verwendet wird.  
   
-```javascript  
+```JavaScript  
 // anchor method.  
 var strVariable = "This is an anchor.";  
 document.write(strVariable.anchor("Anchor1"));  
@@ -133,10 +136,10 @@ document.write(strVariable.sup());
 // Output: <SUP>This is a string.</SUP>  
 ```  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
- **Gilt für**: [String\-Objekt](../../javascript/reference/string-object-javascript.md)  
+ **Gilt für**: [String-Objekt](../../javascript/reference/string-object-javascript.md)  
   
-## Siehe auch  
- [String\-Objekt](../../javascript/reference/string-object-javascript.md)
+## <a name="see-also"></a>Siehe auch  
+ [String-Objekt](../../javascript/reference/string-object-javascript.md)

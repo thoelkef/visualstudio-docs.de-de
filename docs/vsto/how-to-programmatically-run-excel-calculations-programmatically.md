@@ -1,12 +1,10 @@
 ---
-title: 'How to: Programmatically Run Excel Calculations | Microsoft Docs'
+title: "Vorgehensweise: Ausführen von Excel-Berechnungen programmgesteuert | Microsoft Docs"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -18,50 +16,53 @@ helpviewer_keywords:
 - Excel [Office development in Visual Studio], running calculations programmatically
 - workbooks, running calculations
 ms.assetid: 0bf30d93-8620-43ad-bfb8-f45bf3b5461f
-caps.latest.revision: 38
-author: kempb
-ms.author: kempb
+caps.latest.revision: "38"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: 21a413a3e2d17d77fd83d5109587a96f323a0511
-ms.openlocfilehash: 5fc097b5f6036c6797bf3401923cdba27dc714f3
-ms.contentlocale: de-de
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: bf839b6148f9bd5ad9c3953be4cb62cc0c95b7dd
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="how-to-programmatically-run-excel-calculations"></a>How to: Programmatically Run Excel Calculations  
-  You use a similar process to run calculations in a <xref:Microsoft.Office.Tools.Excel.NamedRange> control or a native Excel range object.  
+# <a name="how-to-programmatically-run-excel-calculations"></a>Vorgehensweise: Ausführen von Excel-Berechnungen programmgesteuert  
+  Sie verwenden ein ähnliches Verfahren zum Ausführen von Berechnungen in einem <xref:Microsoft.Office.Tools.Excel.NamedRange> Steuerelement oder ein systemeigenes Excel-Range-Objekt.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
-## <a name="running-calculations-in-a-namedrange-control"></a>Running Calculations in a NamedRange Control  
- The following example creates a <xref:Microsoft.Office.Tools.Excel.NamedRange> at cell A1 and then calculates the cell. This code must be placed in a sheet class, not in the `ThisWorkbook` class.  
+## <a name="running-calculations-in-a-namedrange-control"></a>Ausführen von Berechnungen in einem NamedRange-Steuerelement  
+ Das folgende Beispiel erstellt eine <xref:Microsoft.Office.Tools.Excel.NamedRange> Zelle A1 und berechnet dann die Zelle. Dieser Code muss in einer Sheet-Klasse platziert werden und nicht in der `ThisWorkbook` -Klasse.  
   
-#### <a name="to-run-calculations-in-a-namedrange-control"></a>To run calculations in a NamedRange control  
+#### <a name="to-run-calculations-in-a-namedrange-control"></a>Zum Ausführen von Berechnungen in einem NamedRange-Steuerelement  
   
-1.  Create the named range.  
+1.  Erstellen Sie den benannten Bereich.  
   
-     [!code-cs[Trin_VstcoreExcelAutomation#75](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#75)]  [!code-vb[Trin_VstcoreExcelAutomation#75](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#75)]  
+     [!code-csharp[Trin_VstcoreExcelAutomation#75](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#75)]
+     [!code-vb[Trin_VstcoreExcelAutomation#75](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#75)]  
   
-2.  Call the <xref:Microsoft.Office.Tools.Excel.NamedRange.Calculate%2A> method of the specified range.  
+2.  Rufen Sie die <xref:Microsoft.Office.Tools.Excel.NamedRange.Calculate%2A> Methode des angegebenen Bereichs.  
   
-     [!code-cs[Trin_VstcoreExcelAutomation#76](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#76)]  [!code-vb[Trin_VstcoreExcelAutomation#76](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#76)]  
+     [!code-csharp[Trin_VstcoreExcelAutomation#76](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#76)]
+     [!code-vb[Trin_VstcoreExcelAutomation#76](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#76)]  
   
-## <a name="running-calculations-in-a-native-excel-range"></a>Running Calculations in a Native Excel Range  
+## <a name="running-calculations-in-a-native-excel-range"></a>Ausführen von Berechnungen in einem systemeigenen Excel-Bereich  
   
-#### <a name="to-run-calculations-in-a-native-excel-range"></a>To run calculations in a native Excel Range  
+#### <a name="to-run-calculations-in-a-native-excel-range"></a>Zum Ausführen von Berechnungen in einem systemeigenen Excel-Bereich  
   
-1.  Create the named range.  
+1.  Erstellen Sie den benannten Bereich.  
   
-     [!code-cs[Trin_VstcoreExcelAutomationAddIn#30](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#30)]  [!code-vb[Trin_VstcoreExcelAutomationAddIn#30](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#30)]  
+     [!code-csharp[Trin_VstcoreExcelAutomationAddIn#30](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#30)]
+     [!code-vb[Trin_VstcoreExcelAutomationAddIn#30](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#30)]  
   
-2.  Call the <xref:Microsoft.Office.Interop.Excel.Range.Calculate%2A> method of the specified range.  
+2.  Rufen Sie die <xref:Microsoft.Office.Interop.Excel.Range.Calculate%2A> Methode des angegebenen Bereichs.  
   
-     [!code-cs[Trin_VstcoreExcelAutomationAddIn#31](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#31)]  [!code-vb[Trin_VstcoreExcelAutomationAddIn#31](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#31)]  
+     [!code-csharp[Trin_VstcoreExcelAutomationAddIn#31](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#31)]
+     [!code-vb[Trin_VstcoreExcelAutomationAddIn#31](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#31)]  
   
-## <a name="see-also"></a>See Also  
- [Working with Ranges](../vsto/working-with-ranges.md)   
- [NamedRange Control](../vsto/namedrange-control.md)   
- [Optional Parameters in Office Solutions](../vsto/optional-parameters-in-office-solutions.md)  
+## <a name="see-also"></a>Siehe auch  
+ [Arbeiten mit Bereichen](../vsto/working-with-ranges.md)   
+ [NamedRange-Steuerelement](../vsto/namedrange-control.md)   
+ [Optionale Parameter in Office-Projektmappen](../vsto/optional-parameters-in-office-solutions.md)  
   
   

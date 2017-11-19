@@ -1,46 +1,47 @@
 ---
-title: "Anf&#252;gen an ein Programm direkt | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Debugmodule, Anhängen an Programme"
+title: "Anhängen an ein Programm direkt | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: debug engines, attaching to programs
 ms.assetid: ad2b7db8-821c-440c-ba07-c55c6a395e0f
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 8818a57d50595b3c40fa45875a1dfe23d34fb369
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Anf&#252;gen an ein Programm direkt
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Benutzer, die den Testprogrammen in einem Prozess vorhanden sein sollen, der bereits in der Regel ausgeführt wird, führen diesen Prozess:  
+# <a name="attaching-directly-to-a-program"></a>Anhängen an ein Programm direkt
+Gehen Sie Benutzer, die zum Debuggen von Programmen in einem Prozess, der bereits in der Regel ausgeführt werden soll:  
   
-1.  In der IDE **Debugprozesse** wählen Sie den Befehl aus dem Menü **Extras** aus.  
+1.  Wählen Sie in der IDE die **Prozesse Debuggen** Befehl die **Tools** Menü.  
   
-     Das Dialogfeld **Prozesse** wird angezeigt.  
+     Die **Prozesse** Dialogfeld wird angezeigt.  
   
-2.  Wählen Sie einen Prozess aus, und klicken Sie auf die Schaltfläche **Anfügen** .  
+2.  Wählen Sie einen Prozess aus, und klicken Sie auf die **Anfügen** Schaltfläche.  
   
-     Alle, **An den Prozess anhängen** Dialogfeld angezeigt wird und führt für Module Debuggen DES \(\) auf dem Computer installiert.  
+     Die **an den Prozess anhängen** im angezeigten Dialogfeld Auflisten aller Debugmodule (DEs) auf dem Computer installiert.  
   
-3.  Geben Sie die DES an, der verwendet wird, um den ausgewählten Prozess zu debuggen, und klicken Sie dann auf **OK**.  
+3.  Geben Sie den Datenverschlüsselungsstandard DEs zu verwenden, um den ausgewählten Prozess zu debuggen, und klicken Sie dann auf **OK**.  
   
- Das Debuggen von Paket startet eine Debugsitzung und übergibt die Liste mit den darauf.  Die Debugsitzung führt wiederum diese Liste zusammen mit einer Rückruffunktion, die auf den ausgewählten Prozess und fragt dann um den Prozess, um ihre Ausführung von Programmen aufzulisten.  
+ Das debugpaket startet eine Debugsitzung und die Liste der DEs an sie übergeben. Die Debugsitzung wiederum übergibt diese Liste, zusammen mit einer Rückruffunktion, um den ausgewählten Prozess, und fordert dann den Prozess zum Aufzählen von seinen Programmen ausgeführten.  
   
- Programmgesteuert als Reaktion auf eine Benutzeranforderung, instanziiert das Debuggen des Pakets Debuggen Manager der Sitzung \(SDM\) und übergibt die Liste ausgewählten DES darauf.  Zusammen mit der Liste führt das Debuggen des Pakets SDM eine [IDebugEventCallback2](../../extensibility/debugger/reference/idebugeventcallback2.md)\-Schnittstelle.  Das Debuggen von Paket führt die Liste mit den in den ausgewählten Prozess, indem [IDebugProcess2::Anfügen](../../extensibility/debugger/reference/idebugprocess2-attach.md)aufruft.  Das SDM ruft dann [IDebugProcess2::EnumPrograms](../../extensibility/debugger/reference/idebugprocess2-enumprograms.md) im Anschluss an die Programme aufzulisten, die in den Prozess ausgeführt werden.  
+ Programmgesteuert, als Antwort auf die Anforderung des Benutzers, das debugpaket instanziiert die Sitzungs-Debug-Manager (SDM) und die Liste der ausgewählten DEs an sie. Zusammen mit der Liste aus, übergibt das debugpaket die SDM ein [IDebugEventCallback2](../../extensibility/debugger/reference/idebugeventcallback2.md) Schnittstelle. Das debugpaket übergibt die Liste der DEs an den ausgewählten Prozess, durch den Aufruf [IDebugProcess2::Attach](../../extensibility/debugger/reference/idebugprocess2-attach.md). Ruft die SDM dann [IDebugProcess2::EnumPrograms](../../extensibility/debugger/reference/idebugprocess2-enumprograms.md) auf den Port an, die im Prozess ausgeführten Programme aufgelistet werden.  
   
- Ab hier werden alle Debug\- Modul mit einem Programm angefügt, genau wie in [Nach dem Start anfügen](../../extensibility/debugger/attaching-after-a-launch.md)mit zwei Ausnahmen einzeln aufgelistet.  
+ Ab diesem Punkt jedes Debugmodul angefügt ist, um ein Programm genau wie im [Anfügen eines starten Sie nach dem](../../extensibility/debugger/attaching-after-a-launch.md), mit zwei Ausnahmen.  
   
- Für die Effizienz werden DES, die implementiert werden, um einen Adressraum mit dem SDM freizugeben, für jeden DE einen Satz von Programmen verfügt, auf Anfügen.  In diesem Fall ruft [IDebugProcess2](../../extensibility/debugger/reference/idebugprocess2.md)[IDebugEngine2::Anfügen](../../extensibility/debugger/reference/idebugengine2-attach.md) an und übergibt es ein Array von Programmen in die Anfügen an.  
+ Aus Effizienzgründen DEs, die implementiert werden, um einen Adressraum für das SDM freigeben werden so gruppiert, damit jeder DE hat eine Reihe von Programme aus, die angefügt wird. In diesem Fall [IDebugProcess2](../../extensibility/debugger/reference/idebugprocess2.md) Aufrufe [IDebugEngine2::Attach](../../extensibility/debugger/reference/idebugengine2-attach.md) und übergibt ein Array von Programmen an.  
   
- Die zweite Ausnahme besteht darin, dass die Starten von Ereignissen, die durch Anfügen an ein Programm DE gesendet werden, das bereits ausgeführt wird, nicht in der Regel das Einstiegspunkt \- Ereignis enthalten.  
+ Die zweite Ausnahme ist, dass die Startereignisse per einer bereitgestellten Kompatibilitätsrichtlinie Anhängen an ein Programm, die bereits ausgeführt wird, ist nicht in der Regel das punktereignis Eintrag enthalten.  
   
-## Siehe auch  
- [Senden Startereignisse nach einem starten](../../extensibility/debugger/sending-startup-events-after-a-launch.md)   
- [Debugging\-Aufgaben](../../extensibility/debugger/debugging-tasks.md)
+## <a name="see-also"></a>Siehe auch  
+ [Senden von Startereignisse nach einem starten](../../extensibility/debugger/sending-startup-events-after-a-launch.md)   
+ [Debuggingaufgaben](../../extensibility/debugger/debugging-tasks.md)

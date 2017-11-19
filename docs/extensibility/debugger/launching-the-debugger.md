@@ -1,57 +1,59 @@
 ---
-title: "Starten des Debuggers | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Debuggen [Debugging-SDK], den Debugger zu starten"
-  - "Debugger [Debugging-SDK], starten"
+title: Starten des Debuggers | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- debugging [Debugging SDK], launching the debugger
+- debugger [Debugging SDK], launching
 ms.assetid: f24da1a1-f923-48b4-989f-18a22b581d1b
-caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 23fd772b74c4caafbde37541933c38e306f9dc75
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Starten des Debuggers
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Starten der Debugger benötigt das Senden der richtigen Sequenz von Methoden und Ereignissen mit ihren entsprechenden Attributen.  
+# <a name="launching-the-debugger"></a>Starten des Debuggers
+Starten des Debuggers erfordert das Senden der richtigen Sequenz von Methoden und Ereignisse mit den entsprechenden Attributen.  
   
-## Sequenzen von Methoden und Ereignissen  
+## <a name="sequences-of-methods-and-events"></a>Sequenzen von Methoden und Ereignisse  
   
-1.  Der Debuginformationen Manager der Sitzung \(SDM\) wird aufgerufen, indem im Menü **Debuggen** auswählen und dann **Start**auswählt.  Weitere Informationen finden Sie unter [Starten eines Programms](../../extensibility/debugger/launching-a-program.md).  
+1.  Die Sitzungs-Debug-Manager (SDM) wird aufgerufen, durch Auswählen der **Debuggen** Menü, und drücken Sie dann die **starten**. Finden Sie unter [Programmstart](../../extensibility/debugger/launching-a-program.md) für Weitere Informationen.  
   
-2.  Das SDM ruft [OnAttach](../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md)\-Methode auf.  
+2.  Ruft die SDM [OnAttach](../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) Methode.  
   
-3.  Basierend auf das Debuggen Prozessmodell des Moduls \(DE `IDebugProgramNodeAttach2::OnAttach` \) gibt die Methode eine der folgenden Methoden zurück, die bestimmt, was auf Weiter.  
+3.  Das Prozessmodell Debugmodus-Modul (DE) anhand der `IDebugProgramNodeAttach2::OnAttach` Methodenrückgabe eine der folgenden Methoden, die bestimmt, was daraufhin geschieht.  
   
-     Wenn `S_FALSE` zurückgegeben wird, muss das Debugmodul \(DE\) im Prozess des virtuellen Computers geladen werden.  
+     Wenn `S_FALSE` zurückgegeben wird, wird die Debugging-Modul (DE) ist für die der virtuelle Computer geladen werden soll.  
   
-     \- oder \-  
+     - oder -   
   
-     Wenn `S_OK` zurückgegeben wird, wird im Prozess des DE SDM geladen werden.  Das SDM führt dann die folgenden Aufgaben aus:  
+     Wenn `S_OK` wird zurückgegeben, die DE zu ladende ist von der SDM in-Process. Die SDM führt dann die folgenden Aufgaben:  
   
-    1.  Aufrufe [GetEngineInfo](../../extensibility/debugger/reference/idebugprogramnode2-getengineinfo.md) Modul, in dem die Informationen DEs abzurufen.  
+    1.  Aufrufe [GetEngineInfo](../../extensibility/debugger/reference/idebugprogramnode2-getengineinfo.md) Modulinformationen des DE abgerufen werden.  
   
-    2.  Gemeinsam erstellt. DE  
+    2.  Zusammen erstellt die Deutschland.  
   
-    3.  Aufrufen von [Anfügen](../../extensibility/debugger/reference/idebugengine2-attach.md).  
+    3.  Aufrufe [Anfügen](../../extensibility/debugger/reference/idebugengine2-attach.md).  
   
-4.  DE [IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md) sendet den SDM mit einem `EVENT_SYNC`\-Attribut.  
+4.  Sendet die DE ein [IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md) , das SDM mit einer `EVENT_SYNC` Attribut.  
   
-5.  DE [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) sendet den SDM mit einem `EVENT_SYNC`\-Attribut.  
+5.  Sendet die DE ein [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) , das SDM mit einer `EVENT_SYNC` Attribut.  
   
-6.  DE [IDebugThreadCreateEvent2](../../extensibility/debugger/reference/idebugthreadcreateevent2.md) sendet den SDM mit einem `EVENT_SYNC`\-Attribut.  
+6.  Sendet die DE ein [IDebugThreadCreateEvent2](../../extensibility/debugger/reference/idebugthreadcreateevent2.md) , das SDM mit einer `EVENT_SYNC` Attribut.  
   
-7.  DE [IDebugLoadCompleteEvent2](../../extensibility/debugger/reference/idebugloadcompleteevent2.md) sendet den SDM mit einem `EVENT_SYNC`\-Attribut.  
+7.  Sendet die DE ein [IDebugLoadCompleteEvent2](../../extensibility/debugger/reference/idebugloadcompleteevent2.md) , das SDM mit einer `EVENT_SYNC` Attribut.  
   
-8.  DE [IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md) sendet den SDM mit einem `EVENT_SYNC`\-Attribut.  
+8.  Sendet die DE ein [IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md) , das SDM mit einer `EVENT_SYNC` Attribut.  
   
-## Siehe auch  
- [Aufrufen von Debugger\-Ereignissen](../../extensibility/debugger/calling-debugger-events.md)   
+## <a name="see-also"></a>Siehe auch  
+ [Aufrufen von Debugger-Ereignisse](../../extensibility/debugger/calling-debugger-events.md)   
  [Starten eines Programms](../../extensibility/debugger/launching-a-program.md)

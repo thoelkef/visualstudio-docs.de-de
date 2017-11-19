@@ -1,49 +1,48 @@
 ---
-title: "IDiaSymbol::get_thisAdjust | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSymbol::get_thisAdjust-Methode"
+title: 'Idiasymbol:: Get_thisadjust | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSymbol::get_thisAdjust method
 ms.assetid: 56b9a147-e8c0-4d4b-a42a-398214dd5f86
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 5e6d66117fcb696f6895da1bb1e2a0d1ab9b70b8
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSymbol::get_thisAdjust
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Ruft den logischen `this`\-Steuerelemente für die Methode ab.  
+# <a name="idiasymbolgetthisadjust"></a>IDiaSymbol::get_thisAdjust
+Ruft den logischen `this` Abwicklung für die Methode.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT get_thisAdjust (   
-   LONG* pRetVal  
+```C++  
+HRESULT get_thisAdjust (   
+   LONG* pRetVal  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `pRetVal`  
- \[out\]  Gibt den logischen `this`\-Steuerelemente für die Methode zurück.  
+ [out] Gibt den logischen `this` Abwicklung für die Methode.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt `S_FALSE` oder einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
   
 > [!NOTE]
->  Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft nicht für das Symbol verfügbar ist.  
+>  Ein Rückgabewert von `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
   
-## Hinweise  
- In einigen Mehrfachvererbungs fällen muss die Methode selbst einen echten `this`\-Wert berechnen, indem sie einen Offset für `this`hinzugefügt wird.  
+## <a name="remarks"></a>Hinweise  
+ Mitunter mehrere Vererbung muss die Methode selbst einen echten berechnen `this` durch Hinzufügen eines Offsets zum Wert `this`.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

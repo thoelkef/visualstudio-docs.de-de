@@ -1,24 +1,25 @@
 ---
-title: "XSD-Beispieldatei: Beziehungen | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: 'XSD-Beispieldatei: Beziehungen | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 60126510-b7dd-4cb4-92d3-9883590b92f2
-caps.latest.revision: 4
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 4
+caps.latest.revision: "4"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 5f747a6fd05d19d56ce94f368cb89a18ff83a8b4
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# XSD-Beispieldatei: Beziehungen
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Die folgende XSD\-Datei wird in verschiedenen Beispielen in der Dokumentation zum XSD\-Schema\-Designer verwendet.Bei dieser Datei handelt es sich um ein Bestellungsschema mit Anmerkungen und Dokumentation.  
+# <a name="sample-xsd-file-relationships"></a>XSD-Beispieldatei: Beziehungen
+Die folgende XSD-Datei wird in verschiedenen Beispielen in der Dokumentation zum XSD-Schema-Designer verwendet. Bei dieser Datei handelt es sich um ein Bestellungsschema mit Anmerkungen und Dokumentation.  
   
 ```xml  
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">  

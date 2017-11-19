@@ -1,12 +1,10 @@
 ---
-title: 'How to: Add a Custom Task Pane to an Application | Microsoft Docs'
+title: "Vorgehensweise: Hinzufügen ein benutzerdefinierten Aufgabenbereichs zu einer Anwendung | Microsoft Docs"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -16,55 +14,56 @@ helpviewer_keywords:
 - task panes [Office development in Visual Studio], adding to application
 - custom task panes [Office development in Visual Studio], adding to application
 ms.assetid: 67b4ed5b-d77e-4630-b851-34bb25bdc9b3
-caps.latest.revision: 28
-author: kempb
-ms.author: kempb
+caps.latest.revision: "28"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 8efd2746b20fa8a56ef2629cee26be3240c86c99
-ms.contentlocale: de-de
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: 1a39267da04be68793a2236250e5ed10efb01afd
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="how-to-add-a-custom-task-pane-to-an-application"></a>How to: Add a Custom Task Pane to an Application
-  You can add a custom task pane to the applications listed above by using VSTO Add-in. For more information, see [Custom Task Panes](../vsto/custom-task-panes.md).  
+# <a name="how-to-add-a-custom-task-pane-to-an-application"></a>Gewusst wie: Hinzufügen eines benutzerdefinierten Aufgabenbereichs zu einer Anwendung
+  Sie können den oben aufgeführten Anwendungen mithilfe des VSTO-Add-Ins einen benutzerdefinierten Aufgabenbereich hinzufügen. Weitere Informationen finden Sie unter [von benutzerdefinierten Aufgabenbereichen](../vsto/custom-task-panes.md).  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   
 > [!NOTE]  
->  Your computer might show different names or locations for some of the Visual Studio user interface elements in the following instructions. The Visual Studio edition that you have and the settings that you use determine these elements. For more information, see [Personalize the Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md).  
+>  Auf Ihrem Computer werden möglicherweise andere Namen oder Speicherorte für die Benutzeroberflächenelemente von Visual Studio angezeigt als die in den folgenden Anweisungen aufgeführten. Diese Elemente sind von der jeweiligen Visual Studio-Version und den verwendeten Einstellungen abhängig. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../ide/personalizing-the-visual-studio-ide.md).  
   
-## <a name="adding-a-custom-task-pane-to-an-application"></a>Adding a Custom Task Pane to an Application  
+## <a name="adding-a-custom-task-pane-to-an-application"></a>Hinzufügen eines benutzerdefinierten Aufgabenbereichs zu einer Anwendung  
   
-#### <a name="to-add-a-custom-task-pane-to-an-application"></a>To add a custom task pane to an application  
+#### <a name="to-add-a-custom-task-pane-to-an-application"></a>So fügen Sie einer Anwendung einen benutzerdefinierten Aufgabenbereich hinzu  
   
-1.  Open or create a VSTO Add-in project for one of the applications listed above. For more information, see [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  Öffnen oder erstellen Sie ein VSTO-Add-In-Projekt für eine der oben aufgeführten Anwendungen. Weitere Informationen finden Sie unter [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
-2.  On the **Project** menu, click **Add User Control**.  
+2.  Klicken Sie im Menü **Projekt** auf **Benutzersteuerelement hinzufügen**.  
   
-3.  In the **Add New Item** dialog box, change the name of the new user control to **MyUserControl**, and then click **Add**.  
+3.  In der **neues Element hinzufügen** Dialogfeld Feld, ändern Sie den Namen des neuen Benutzersteuerelements in **MyUserControl**, und klicken Sie dann auf **hinzufügen**.  
   
-     The user control opens in the designer.  
+     Das Benutzersteuerelement wird im Designer geöffnet.  
   
-4.  Add one or more Windows Forms controls from the **Toolbox** to the user control.  
+4.  Hinzufügen einer oder mehrerer Windows Forms-Steuerelemente aus der **Toolbox** auf das Benutzersteuerelement.  
   
-5.  Open the **ThisAddIn.cs** or **ThisAddIn.vb** code file.  
+5.  Öffnen der **"ThisAddIn.cs"** oder **"ThisAddIn.vb"** -Codedatei.  
   
-6.  Add the following code to the `ThisAddIn` class. This code declares instances of `MyUserControl` and <xref:Microsoft.Office.Tools.CustomTaskPane> as members of the `ThisAddIn` class.  
+6.  Fügen Sie der `ThisAddIn` -Klasse folgenden Code hinzu. Dieser Code deklariert Instanzen von `MyUserControl` und <xref:Microsoft.Office.Tools.CustomTaskPane> als Member der `ThisAddIn` -Klasse.  
   
-     [!code-vb[Trin_TaskPaneBasic#1](../vsto/codesnippet/VisualBasic/Trin_TaskPaneBasic/ThisAddIn.vb#1)]  [!code-csharp[Trin_TaskPaneBasic#1](../vsto/codesnippet/CSharp/Trin_TaskPaneBasic/ThisAddIn.cs#1)]  
+     [!code-vb[Trin_TaskPaneBasic#1](../vsto/codesnippet/VisualBasic/Trin_TaskPaneBasic/ThisAddIn.vb#1)]
+     [!code-csharp[Trin_TaskPaneBasic#1](../vsto/codesnippet/CSharp/Trin_TaskPaneBasic/ThisAddIn.cs#1)]  
   
-7.  Add the following code to the `ThisAddIn_Startup` event handler. This code creates a new <xref:Microsoft.Office.Tools.CustomTaskPane> by adding the `MyUserControl` object to the `CustomTaskPanes` collection. The code also displays the task pane.  
+7.  Fügen Sie dem `ThisAddIn_Startup`-Ereignishandler den folgenden Code hinzu. Durch diesen Code wird ein neuer <xref:Microsoft.Office.Tools.CustomTaskPane> erstellt, indem der `CustomTaskPanes`-Auflistung das `MyUserControl`-Objekt hinzugefügt wird. Durch den Code wird auch der Aufgabenbereich angezeigt.  
   
-     [!code-vb[Trin_TaskPaneBasic#2](../vsto/codesnippet/VisualBasic/Trin_TaskPaneBasic/ThisAddIn.vb#2)]  [!code-csharp[Trin_TaskPaneBasic#2](../vsto/codesnippet/CSharp/Trin_TaskPaneBasic/ThisAddIn.cs#2)]  
+     [!code-vb[Trin_TaskPaneBasic#2](../vsto/codesnippet/VisualBasic/Trin_TaskPaneBasic/ThisAddIn.vb#2)]
+     [!code-csharp[Trin_TaskPaneBasic#2](../vsto/codesnippet/CSharp/Trin_TaskPaneBasic/ThisAddIn.cs#2)]  
   
     > [!NOTE]  
-    >  This code associates your custom task pane with the active window in the application. For some applications, you might want to modify this code to ensure that the task pane appears with other documents or items in the application. For more information, see [Custom Task Panes](../vsto/custom-task-panes.md).  
+    >  Durch diesen Code wird dem aktiven Fenster in der Anwendung der benutzerdefinierte Aufgabenbereich zugeordnet. Bei einigen Anwendungen ist es u. U. sinnvoll, diesen Code zu ändern, um sicherzustellen, dass der Aufgabenbereich mit anderen Dokumenten oder Elementen in der Anwendung angezeigt wird. Weitere Informationen finden Sie unter [von benutzerdefinierten Aufgabenbereichen](../vsto/custom-task-panes.md).  
   
-## <a name="see-also"></a>See Also  
- [Office UI Customization](../vsto/office-ui-customization.md)   
- [Custom Task Panes](../vsto/custom-task-panes.md)   
- [Walkthrough: Automating an Application from a Custom Task Pane](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)  
+## <a name="see-also"></a>Siehe auch  
+ [Anpassung der Office-Benutzeroberfläche](../vsto/office-ui-customization.md)   
+ [Benutzerdefinierte Aufgabenbereiche](../vsto/custom-task-panes.md)   
+ [Exemplarische Vorgehensweise: Automatisieren einer Anwendung über einen benutzerdefinierten Aufgabenbereich](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)  
   
   

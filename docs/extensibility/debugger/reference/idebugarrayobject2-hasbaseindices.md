@@ -1,44 +1,46 @@
 ---
-title: "IDebugArrayObject2::HasBaseIndices | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "HasBaseIndices"
-  - "IDebugArrayObject2::HasBaseIndices"
+title: IDebugArrayObject2::HasBaseIndices | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- HasBaseIndices
+- IDebugArrayObject2::HasBaseIndices
 ms.assetid: 51a5d145-ea53-422c-b5cf-c800cf64b8e6
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: cf293eacb64fdee5790ff9b87d2e3afcfccc8f2d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugArrayObject2::HasBaseIndices
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Bestimmt, ob das Array die Untergrenze Indizes \(Basis\-\) definiert hat.  
+# <a name="idebugarrayobject2hasbaseindices"></a>IDebugArrayObject2::HasBaseIndices
+Bestimmt, ob das Array Basis Indizes (Untergrenze) definiert wurde.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT HasBaseIndices (  
-   BOOL* pfHasBaseIndices  
+   BOOL* pfHasBaseIndices  
 );  
 ```  
   
-```c#  
+```csharp  
 int HasBaseIndices (  
-   out bool pfHasBaseIndices  
+   out bool pfHasBaseIndices  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `pfHasBaseIndices`  
- \[out\]  Mit TRUE, dass das Array von Indizes \(die Untergrenze\) verfügt. andernfalls FALSE.  
+ [out] "True", um anzugeben, dass das Array Basis Indizes (Untergrenze;) hat andernfalls "false".  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.

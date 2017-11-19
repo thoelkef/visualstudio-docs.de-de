@@ -1,36 +1,36 @@
 ---
-title: "Gewusst wie: Festlegen von CLR-Attributen f&#252;r ein Element | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.dsltools.EditAttributesDialog"
-helpviewer_keywords: 
-  - "Domänenspezifische Sprache, benutzerdefinierte Attribute"
+title: "Vorgehensweise: Festlegen von CLR-Attribute für ein Element | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vs.dsltools.EditAttributesDialog
+helpviewer_keywords: Domain-Specific Language, custom attrributes
 ms.assetid: b3db3c74-920c-4701-9544-6f75cbe8b7c9
-caps.latest.revision: 19
-author: "alancameronwills"
-ms.author: "awills"
-manager: "douge"
-caps.handback.revision: 19
+caps.latest.revision: "19"
+author: alancameronwills
+ms.author: awills
+manager: douge
+ms.openlocfilehash: 7dcbd0005b80887dae91249a6781a6982414b9e5
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# Gewusst wie: Festlegen von CLR-Attributen f&#252;r ein Element
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="how-to-set-clr-attributes-on-an-element"></a>Gewusst wie: Festlegen von CLR-Attributen für ein Element
 Benutzerdefinierte Attribute sind spezielle Attribute, die Domänenelemente, Formen, Connectors und Diagramme hinzugefügt werden können. Sie können jedes Attribut, das von erbt Hinzufügen der `System.Attribute` Klasse.  
   
 ### <a name="to-add-a-custom-attribute"></a>So fügen Sie ein benutzerdefiniertes Attribut hinzu  
   
 1.  In der **Explorer für DSL**, wählen Sie das Element, dem Sie ein benutzerdefiniertes Attribut hinzufügen möchten.  
   
-2.  In der **Eigenschaften** neben der **benutzerdefinierte Attribute** -Eigenschaft, klicken Sie auf die Schaltfläche zum Durchsuchen (**...**) Symbol ".  
+2.  In der **Eigenschaften** neben der **benutzerdefinierte Attribute** -Eigenschaft, klicken Sie auf die Schaltfläche zum Durchsuchen (**...** ) Symbol ".  
   
      Die **Attribute bearbeiten** Dialogfeld wird geöffnet.  
   
-3.  In den **Namen** Spalte, klicken Sie auf **\< attributhinzufügen>** und geben Sie den Namen des Attributs. Drücken Sie die EINGABETASTE.  
+3.  In der **Namen** Spalte, klicken Sie auf  **\<attributhinzufügen >** und geben Sie den Namen des Attributs. Drücken Sie die EINGABETASTE.  
   
 4.  Die Linie unter dem Namen des Attributs zeigt Klammern. Geben Sie auf diese Zeile Parametertyp für das Attribut (z. B. `string`), und drücken Sie dann die EINGABETASTE.  
   
@@ -40,7 +40,7 @@ Benutzerdefinierte Attribute sind spezielle Attribute, die Domänenelemente, For
   
      Die **benutzerdefinierte Attribute** Eigenschaft zeigt jetzt das Attribut im folgenden Format:  
   
-     `[` *AttributeName* `(` *ParameterName* `=` *Typ* `)]`  
+     `[`*AttributeName* `(` *ParameterName* `=` *Typ*`)]`  
   
 ## <a name="see-also"></a>Siehe auch  
- [Domänenspezifische Sprache Tools Glossar](http://msdn.microsoft.com/de-de/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [Domänenspezifische Sprache Tools Glossar](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)

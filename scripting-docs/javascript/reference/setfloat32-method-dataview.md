@@ -1,51 +1,54 @@
 ---
-title: "setFloat32-Methode (DataView) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
+title: setFloat32-Methode (DataView) | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
 ms.assetid: b3f68048-c817-48d2-bc17-945e3bcc94d7
-caps.latest.revision: 5
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 5
+caps.latest.revision: "5"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 2a72bf2781bfbae7c7cd301d02ad71ebfbeffa13
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# setFloat32-Methode (DataView)
-Legt den Float32\-Wert am angegebenen Byteoffset vom Beginn der Ansicht fest.  Es gibt keine Ausrichtungseinschränkung; Multi\-Byte\-Werte werden bei jedem Offset festgelegt.  
+# <a name="setfloat32-method-dataview"></a>setFloat32-Methode (DataView)
+Legt den Float32-Wert am angegebenen Byteoffset vom Beginn der Ansicht fest. Es ist keine Einschränkung der Ausrichtung. Alle Offset können Multi-Byte-Werte festgelegt werden.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 dataView.setFloat32 (byteOffset, value, littleEndian);   
 ```  
   
-## Parameter  
+## <a name="parameters"></a>Parameter  
  `byteOffset`  
- Die Position im Puffer, an der der Wert abgerufen werden soll.  
+ Die Position im Puffer, an dem der Wert abgerufen werden soll.  
   
  `value`  
  Der festzulegende Wert.  
   
  `littleEndian`  
- Optional.  Wenn "false" oder nicht definiert, wird ein Big\-Endian\-Wert geschrieben; andernfalls sollte ein Little\-Endian\-Wert geschrieben werden.  
+ Dies ist optional. Wenn "false" oder nicht definiert ist, ein big-Endian-Wert geschrieben werden soll, andernfalls ein little-Endian-Wert geschrieben werden soll.  
   
-## Hinweise  
- Diese Methoden lösen eine Ausnahme aus, wenn sie über das Ende der Ansicht hinaus schreiben.  
+## <a name="remarks"></a>Hinweise  
+ Diese Methoden auslösen eine Ausnahme, wenn sie hinter dem Ende der Ansicht schreiben würden.  
   
-## Beispiel  
- Im folgenden Beispiel wird dargestellt, wie der erste Float32\-Wert im DataView\-Objekt festgelegt wird.  
+## <a name="example"></a>Beispiel  
+ Im folgende Beispiel wird gezeigt, wie die erste Float32 in der DataView festgelegt.  
   
-```javascript  
+```JavaScript  
 var req = new XMLHttpRequest();  
     req.open('GET', "http://www.example.com");  
     req.responseType = "arraybuffer";  
@@ -61,5 +64,5 @@ var req = new XMLHttpRequest();
   
 ```  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  [!INCLUDE[jsv10](../../javascript/reference/includes/jsv10-md.md)]

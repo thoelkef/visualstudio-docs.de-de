@@ -1,28 +1,29 @@
 ---
-title: "Ereignisquellen (Visual Studio-SDK) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Debuggen von Ereignisquellen [Debugging-SDK]"
+title: Ereignisquellen (Visual Studio SDK) | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: debugging [Debugging SDK], event sources
 ms.assetid: b9ba0908-ae4c-4a64-aab1-bee453dd7a22
-caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: dcd2b8457854817f84272420a42872a1b947e6c2
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Ereignisquellen (Visual Studio-SDK)
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Es gibt zwei Quellen von Ereignissen: Das Debugmodul \(DE\) und der Debug\- Manager der Sitzung \(SDM\).  Die Ereignisse, die von DE gesendet werden, verfügen über ein Modul, während die Ereignisse, die vom SDM gesendet werden, ein Modul den Wert NULL haben.  
+# <a name="event-sources-visual-studio-sdk"></a>Ereignisquellen (Visual Studio SDK)
+Es gibt zwei Quellen von Ereignissen: Debuggen von Debugging-Modul (Deutschland) und die Sitzung Manager (SDM). Aus einer bereitgestellten Kompatibilitätsrichtlinie gesendete Ereignisse sind ein Modul ungleich NULL aus dem SDM gesendete Ereignisse ein NULL-Modul vorhanden.  
   
-## Beispiel  
- Im folgenden Beispiel wird gezeigt, wie **IDebugProgramCreateEvent2** von DE um SDM sendet.  
+## <a name="example"></a>Beispiel  
+ Im folgende Beispiel wird gezeigt, wie zum Senden der **IDebugProgramCreateEvent2** aus DE, das SDM.  
   
 ```  
 CDebugProgramCreateEvent* pProgramCreateEvent = new CDebugProgramCreateEvent();  
@@ -73,5 +74,5 @@ HRESULT CEvent::SendAsynchronousEvent(IDebugEventCallback2 *pCallback, IDebugEng
   
 ```  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Senden von Ereignissen](../../extensibility/debugger/sending-events.md)

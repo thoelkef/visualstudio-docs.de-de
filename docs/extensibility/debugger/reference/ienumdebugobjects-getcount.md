@@ -1,51 +1,51 @@
 ---
-title: "IEnumDebugObjects::GetCount | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IEnumDebugObjects::GetCount"
-helpviewer_keywords: 
-  - "IEnumDebugObjects::GetCount-Methode"
+title: IEnumDebugObjects::GetCount | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IEnumDebugObjects::GetCount
+helpviewer_keywords: IEnumDebugObjects::GetCount method
 ms.assetid: 9cbc5db4-03ae-479f-a664-13cad66ad210
-caps.latest.revision: 5
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 5
+caps.latest.revision: "5"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 464eca2473518cdc700e0035289a6b601f6fc5d5
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IEnumDebugObjects::GetCount
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Diese Methode gibt die Anzahl der Elemente in der Enumeration zurück.  
+# <a name="ienumdebugobjectsgetcount"></a>IEnumDebugObjects::GetCount
+Diese Methode gibt die Anzahl der Elemente in der Enumeration.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetCount(  
-   [out] ULONG* pcelt  
+   [out] ULONG* pcelt  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetCount(  
-   out uint pcelt  
+   out uint pcelt  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `pcelt`  
- \[out\]  Gibt die Anzahl der Elemente in der Enumeration zurück.  
+ [out] Gibt die Anzahl der Elemente in der Enumeration zurück.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Hinweise  
- Diese Methode ist nicht Teil der üblichen COM\-Enumerations Oberfläche, die nur auf Weiter, Klon\- Schritte, und Zurücksetzen müssen implementiert werden.  
+## <a name="remarks"></a>Hinweise  
+ Diese Methode ist nicht Teil der üblichen COM-Enumerationsschnittstelle gibt an, dass nur weiter, Klon, Skip und Zurücksetzen der implementiert werden müssen.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IEnumDebugObjects](../../../extensibility/debugger/reference/ienumdebugobjects.md)

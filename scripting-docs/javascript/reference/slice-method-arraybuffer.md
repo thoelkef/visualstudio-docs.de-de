@@ -1,53 +1,56 @@
 ---
-title: "slice-Methode (ArrayBuffer) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
+title: Slice-Methode (ArrayBuffer) | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
 ms.assetid: 2dcc51ff-f444-4d51-80ba-3bcd845ba0ae
-caps.latest.revision: 5
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 5
+caps.latest.revision: "5"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 25fc10a02b4a3422a6720ad91c8bba29906da0e5
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# slice-Methode (ArrayBuffer)
-Gibt einen Abschnitt eines [ArrayBuffer](../../javascript/reference/arraybuffer-object.md) zurück.  
+# <a name="slice-method-arraybuffer"></a>slice-Methode (ArrayBuffer)
+Gibt einen Abschnitt einer [ArrayBuffer](../../javascript/reference/arraybuffer-object.md).  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 arrayBufferObj.slice(start, [end])   
 ```  
   
-## Parameter  
+## <a name="parameters"></a>Parameter  
  `arrayBufferObj`  
- Erforderlich.  Das [ArrayBuffer](../../javascript/reference/arraybuffer-object.md)\-Objekt, aus dem der Abschnitt kopiert wird.  
+ Erforderlich. Die [ArrayBuffer](../../javascript/reference/arraybuffer-object.md) Objekt aus der Abschnitt kopiert werden.  
   
  `start`  
- Erforderlich.  Der Byteindex am Anfang des zu kopierenden Abschnitts.  
+ Erforderlich. Der Byteindex am Anfang des zu kopierenden Abschnitts.  
   
  `end`  
- Dies ist optional.  Der Byteindex am Ende des zu kopierenden Abschnitts.  
+ Dies ist optional. Der Byteindex am Ende des zu kopierenden Abschnitts.  
   
-## Hinweise  
- Die `slice`\-Methode gibt ein [ArrayBuffer](../../javascript/reference/arraybuffer-object.md)\-Objekt zurück, das den angegebenen Teil von `arrayBufferObj` enthält.  
+## <a name="remarks"></a>Hinweise  
+ Die `slice` Methode gibt ein [ArrayBuffer](../../javascript/reference/arraybuffer-object.md) Objekt, das den angegebenen Teil enthält `arrayBufferObj`.  
   
- Die `slice`\-Methode kopiert bis zu dem von `end` angebenen Byte, schließt dieses jedoch nicht ein.  Wenn `start` oder `end` negativ ist, wird der angegebene Index als `length` \+ `start` bzw. `end` behandelt, wobei `length` die Länge des [ArrayBuffer](../../javascript/reference/arraybuffer-object.md) ist.  Wenn `end` ausgelassen wird, wird die Extraktion bis zum Ende von `arrayBufferObj` fortgesetzt.  Wenn `end` vor `start` eintritt, werden keine Bytes in den neuen [ArrayBuffer](../../javascript/reference/arraybuffer-object.md) kopiert.  
+ Die `slice`-Methode kopiert bis zu dem von `end` angebenen Byte, schließt dieses jedoch nicht ein. Wenn `start` oder `end` ist negativ ist, wird der angegebene Index behandelt, als `length`  +  `start` oder `end`nahezu, in denen `length` ist die Länge des der [ArrayBuffer](../../javascript/reference/arraybuffer-object.md). Wenn `end` ausgelassen wird, wird die Extraktion bis zum Ende von `arrayBufferObj` fortgesetzt. Wenn `end` tritt ein, bevor `start`, keine Bytes kopiert werden, mit dem neuen [ArrayBuffer](../../javascript/reference/arraybuffer-object.md).  
   
-## Beispiel  
- In den folgenden Beispielen wird die Verwendung der `slice`\-Methode gezeigt.  
+## <a name="example"></a>Beispiel  
+ In den folgenden Beispielen wird die Verwendung der `slice`-Methode gezeigt.  
   
-```javascript  
+```JavaScript  
 var req = new XMLHttpRequest();  
     req.open('GET', "http://www.example.com");  
     req.responseType = "arraybuffer";  
@@ -67,8 +70,8 @@ var req = new XMLHttpRequest();
     }  
 ```  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  [!INCLUDE[jsv11_winonly](../../javascript/reference/includes/jsv11-winonly-md.md)]  
   
-## Siehe auch  
- [ArrayBuffer\-Objekt](../../javascript/reference/arraybuffer-object.md)
+## <a name="see-also"></a>Siehe auch  
+ [ArrayBuffer-Objekt](../../javascript/reference/arraybuffer-object.md)

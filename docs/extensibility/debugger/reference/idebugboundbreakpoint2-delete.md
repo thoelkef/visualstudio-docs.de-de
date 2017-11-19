@@ -1,46 +1,47 @@
 ---
-title: "IDebugBoundBreakpoint2::Delete | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugBoundBreakpoint2::Delete"
-helpviewer_keywords: 
-  - "Delete-Methode"
-  - "IDebugBoundBreakpoint2::Delete-Methode"
+title: IDebugBoundBreakpoint2::Delete | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugBoundBreakpoint2::Delete
+helpviewer_keywords:
+- Delete method
+- IDebugBoundBreakpoint2::Delete method
 ms.assetid: 7088dc66-f24a-446f-a52a-397d02457a41
-caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: d74f3b003a684821756313d50d7a87af220a785d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugBoundBreakpoint2::Delete
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
+# <a name="idebugboundbreakpoint2delete"></a>IDebugBoundBreakpoint2::Delete
 Löscht den Haltepunkt.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT Delete(   
-   void   
+```cpp  
+HRESULT Delete(   
+   void   
 );  
 ```  
   
-```c#  
+```csharp  
 int Delete();  
 ```  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  Gibt `E_BP_DELETED` zurück, wenn sich der Zustand des Objekts `BPS_DELETED` gebundenen Haltepunkt festgelegt ist \(Teil der [BP\_STATE](../../../extensibility/debugger/reference/bp-state.md)\-Enumeration\).  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben. Gibt `E_BP_DELETED` , wenn der Zustand des Objekts gebundenen Haltepunkt, um festgelegt ist `BPS_DELETED` (Teil der [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) Enumeration).  
   
-## Beispiel  
- Im folgenden Beispiel wird veranschaulicht, wie diese Methode für ein einfaches `CBoundBreakpoint`\-Objekt implementiert, das die [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)\-Schnittstelle verfügbar macht.  
+## <a name="example"></a>Beispiel  
+ Im folgende Beispiel wird gezeigt, wie diese Methode für eine einfache implementiert `CBoundBreakpoint` -Objekt, das macht die [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md) Schnittstelle.  
   
 ```  
 HRESULT CBoundBreakpoint::Delete(void)    
@@ -66,6 +67,6 @@ HRESULT CBoundBreakpoint::Delete(void)
 }     
 ```  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)   
- [BP\_STATE](../../../extensibility/debugger/reference/bp-state.md)
+ [BP_STATE](../../../extensibility/debugger/reference/bp-state.md)

@@ -1,50 +1,51 @@
 ---
-title: "CA2223: Member sollten sich durch mehr als nur den R&#252;ckgabetyp unterscheiden | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "MembersShouldDifferByMoreThanReturnType"
-  - "CA2223"
-helpviewer_keywords: 
-  - "CA2223"
-  - "MembersShouldDifferByMoreThanReturnType"
+title: "CA2223: Member sollten sich durch mehr als den Rückgabetyp unterscheiden | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- MembersShouldDifferByMoreThanReturnType
+- CA2223
+helpviewer_keywords:
+- CA2223
+- MembersShouldDifferByMoreThanReturnType
 ms.assetid: eb326d9f-50d9-48cb-84be-d41c84a8fe09
-caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 14
+caps.latest.revision: "14"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 312ba498965cea7404e66d15f9136ac9a364da98
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# CA2223: Member sollten sich durch mehr als nur den R&#252;ckgabetyp unterscheiden
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="ca2223-members-should-differ-by-more-than-return-type"></a>CA2223: Member sollten sich durch mehr als nur den Rückgabetyp unterscheiden
 |||  
 |-|-|  
 |TypeName|MembersShouldDifferByMoreThanReturnType|  
 |CheckId|CA2223|  
-|Kategorie \(Category\)|Microsoft.Usage|  
+|Kategorie|Microsoft.Usage|  
 |Unterbrechende Änderung|Breaking|  
   
-## Ursache  
- Zwei öffentliche oder geschützte Member weisen Signaturen auf, die bis auf den Rückgabetyp identisch sind.  
+## <a name="cause"></a>Ursache  
+ Zwei öffentliche oder geschützte Member haben Signaturen, die mit Ausnahme der Rückgabetyp identisch sind.  
   
-## Regelbeschreibung  
- Die Common Language Runtime lässt die Verwendung von Rückgabetypen zu, mit deren Hilfe zwischen anderweitig identischen Membern unterschieden werden kann. Trotzdem ist dieses Feature weder in der Common Language Specification \(CLS\) enthalten, noch eine gebräuchliche Funktion von .NET\-Programmiersprachen.  Wenn sich Member nur durch den Rückgabetyp unterscheiden, sind Entwickler und Entwicklungstools möglicherweise nicht in der Lage, sie richtig zu unterscheiden.  
+## <a name="rule-description"></a>Regelbeschreibung  
+ Die common Language Runtime lässt die Verwendung von Rückgabetypen zu zwischen anderweitig identischen Membern unterschieden werden kann, wird diese Funktion befindet sich nicht in der Common Language Specification, noch ist es keine gebräuchliche Funktion von .NET-Programmiersprachen. Wenn Member nur durch den Rückgabetyp unterscheiden, können Entwickler und Entwicklungsprogramme nicht ordnungsgemäß zwischen ihnen unterschieden.  
   
-## Behandeln von Verstößen  
- Um einen Verstoß gegen diese Regel zu beheben, ändern Sie die Gestaltung der Member so, dass sie ausschließlich aufgrund ihrer Namen und Parametertypen unverwechselbar sind, oder Sie machen die Member nicht verfügbar.  
+## <a name="how-to-fix-violations"></a>Behandeln von Verstößen  
+ Um einen Verstoß gegen diese Regel zu beheben, ändern Sie den Entwurf der Elemente, sodass eindeutige schon auf Grundlage ihrer Namen und Parametertypen oder Sie nicht die Member verfügbar machen.  
   
-## Wann sollten Warnungen unterdrückt werden?  
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?  
  Unterdrücken Sie keine Warnung dieser Regel.  
   
-## Beispiel  
- Im folgenden Beispiel \(in Microsoft Intermediate Language, MSIL\), wird ein Typ veranschaulicht, der gegen diese Regel verstößt.  Beachten Sie, dass mit C\# oder Visual Basic .NET nicht gegen diese Regel verstoßen werden kann.  
+## <a name="example"></a>Beispiel  
+ Im folgenden Beispiel wird in Microsoft intermediate Language (MSIL), einen Typ, der mit dieser Regel verletzt. Beachten Sie, dass diese Regel kann nicht verletzt werden, mithilfe von c# oder Visual Basic .NET.  
   
 ```  
   

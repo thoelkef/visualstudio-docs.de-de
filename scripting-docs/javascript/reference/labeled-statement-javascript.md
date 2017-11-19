@@ -1,56 +1,58 @@
 ---
-title: "Anweisung mit Bezeichnung (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "labeled_JavaScriptKeyword"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "continue-Anweisung"
-  - "Bezeichner, Anweisungen"
-  - "Anweisung mit Bezeichnung"
+title: Mit der Bezeichnung Anweisung (JavaScript) | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: labeled_JavaScriptKeyword
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- continue statement
+- labeled statement
+- identifiers, statements
 ms.assetid: 019f898e-9e27-4be4-a22f-c5927c7fcae2
-caps.latest.revision: 19
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 19
+caps.latest.revision: "19"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: bd72b15d3fc9083ca127a48981c0cd0a7ee56b6c
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# Anweisung mit Bezeichnung (JavaScript)
+# <a name="labeled-statement-javascript"></a>Anweisung mit Bezeichnung (JavaScript)
 Stellt einen Bezeichner für eine Anweisung bereit.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
   
       label :  
-   statements   
+   statements   
 ```  
   
-## Parameter  
- *label*  
- Erforderlich.  Ein eindeutiger Bezeichner, der für Verweise auf die Anweisung mit Bezeichnung verwendet wird.  
+## <a name="parameters"></a>Parameter  
+ *Bezeichnung*  
+ Erforderlich. Ein eindeutiger Bezeichner verwendet, wenn die Anweisung mit Bezeichnung.  
   
  `statements`  
- Optional.  Eine oder mehrere mit *label* verknüpfte Anweisungen.  
+ Dies ist optional. Eine oder mehrere Anweisungen, die zugeordneten *Bezeichnung*.  
   
-## Hinweise  
- Bezeichnungen werden von den **break**\- und **continue**\-Anweisungen verwendet, um die Anweisung anzugeben, für die **break** und **continue** gilt.  
+## <a name="remarks"></a>Hinweise  
+ Bezeichnungen werden verwendet, indem Sie die **Break** und **weiterhin** Anweisungen an die Anweisung, die **Break** und **weiterhin** anwenden.  
   
-## Beispiel  
- Im folgenden Code verweist die **continue**\-Anweisung auf die **for**\-Schleife, der die `Inner:`\-Anweisung vorangestellt ist.  Wenn `j` gleich 24 ist, führt die **continue**\-Anweisung dazu, dass die **for**\-Schleife zur nächsten Iteration wechselt.  Die Zahlen 21 bis 23 und 25 bis 30 werden auf jeder Zeile ausgegeben.  
+## <a name="example"></a>Beispiel  
+ Im folgenden Code die **weiterhin** Anweisung verweist auf die **für** Schleife, in der vorangestellt ist die `Inner:` Anweisung. Wenn `j` beträgt 24, die **weiterhin** Anweisung verursacht, die **für** -Schleife zur nächsten Iteration wechseln. Die Zahlen 21 bis 23 und 25 bis 30 Drucken in jeder Zeile.  
   
-```javascript  
+```JavaScript  
 Outer:  
 for (i = 1; i <= 10; i++) {  
    document.write ("<br />");  
@@ -68,9 +70,9 @@ Inner:
 }  
 ```  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  [!INCLUDE[jsv3](../../javascript/reference/includes/jsv3-md.md)]  
   
-## Siehe auch  
- [break\-Anweisung](../../javascript/reference/break-statement-javascript.md)   
- [continue\-Anweisung](../../javascript/reference/continue-statement-javascript.md)
+## <a name="see-also"></a>Siehe auch  
+ [break-Anweisung](../../javascript/reference/break-statement-javascript.md)   
+ [continue-Anweisung](../../javascript/reference/continue-statement-javascript.md)

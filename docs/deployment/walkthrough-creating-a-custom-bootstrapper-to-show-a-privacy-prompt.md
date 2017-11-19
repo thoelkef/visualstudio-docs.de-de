@@ -1,170 +1,171 @@
 ---
-title: "Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Bootstrappers zum Anzeigen einer Datenschutzeingabeaufforderung | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-deployment"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "ClickOnce-Bereitstellung, Voraussetzungen"
-  - "Abhängigkeiten [.NET Framework], Benutzerdefiniertes Bootstrapperpaket"
-  - "Bereitstellen von Anwendungen [Visual Studio], Benutzerdefinierte erforderliche Komponenten"
-  - "Voraussetzungen [.NET Framework], Benutzerdefiniertes Bootstrapperpaket"
-  - "Windows Installer-Bereitstellung, Voraussetzungen"
+title: 'Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Bootstrappers zum Datenschutzbestimmungen Prompt anzeigen | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-deployment
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- FSharp
+- VB
+- CSharp
+- C++
+helpviewer_keywords:
+- ClickOnce deployment, prerequisites
+- dependencies [.NET Framework], custom bootstrapper package
+- deploying applications [Visual Studio], custom prerequisites
+- Windows Installer deployment, prerequisites
+- prerequisites [.NET Framework], custom bootstrapper package
 ms.assetid: 2f3edd6a-84d1-4864-a1ae-6a13c5732aae
-caps.latest.revision: 10
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+ms.openlocfilehash: f84abe8354f1affc566cc05d119edc4cbc030712
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Bootstrappers zum Anzeigen einer Datenschutzeingabeaufforderung
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Sie können ClickOnce\-Anwendungen so konfigurieren, dass sie automatisch aktualisiert werden, wenn Assemblys mit neueren Dateiversionen und Assemblyversionen verfügbar werden.  Um sicherzustellen, dass die Kunden diesem Verhalten zustimmen, können Sie eine Datenschutzeingabeaufforderung anzeigen.  Dann können die Kunden entscheiden, ob sie die Berechtigung zur automatischen Aktualisierung der Anwendung erteilen möchten.  Wenn die automatische Aktualisierung der Anwendung nicht gestattet wird, findet keine Installation statt.  
+# <a name="walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt"></a>Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Bootstrappers zum Anzeigen einer Datenschutzeingabeaufforderung
+Sie können konfigurieren, dass ClickOnce-Anwendungen automatisch aktualisiert, wenn Assemblys mit neueren Versionen und der Assemblyversionen verfügbar sind. Um sicherzustellen, dass Ihre Kunden dieses Verhalten zustimmen, können Sie eine datenschutzeingabeaufforderung anzuzeigen. Sie können dann auswählen, ob die Berechtigung für die Anwendung für die automatische Aktualisierung verwendet wird. Wenn die Anwendung für die automatische Aktualisierung nicht zulässig ist, wird nicht installiert.  
   
  [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
   
-## Vorbereitungsmaßnahmen  
+## <a name="prerequisites"></a>Erforderliche Komponenten  
  Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:  
   
--   Visual Studio 2010  
+-   Visual Studio 2010.  
   
-## Erstellen eines Dialogfelds zur Updatezustimmung  
- Um eine Datenschutzeingabeaufforderung anzuzeigen, erstellen Sie eine Anwendung, die die Zustimmung des Lesers zur Installation automatischer Updates für die Anwendung einholt.  
+## <a name="creating-an-update-consent-dialog-box"></a>Erstellen ein Update Zustimmung (Dialogfeld)  
+ Zum Anzeigen einer datenschutzeingabeaufforderung erstellen Sie eine Anwendung mit der Frage den Reader an die automatischen Updates für die Anwendung zustimmen.  
   
-#### So erstellen Sie ein Zustimmungsdialogfeld  
+#### <a name="to-create-a-consent-dialog-box"></a>So erstellen einen Zustimmung (Dialogfeld)  
   
 1.  Zeigen Sie im Menü **Datei** auf **Neu**, und klicken Sie dann auf **Projekt**.  
   
-2.  Klicken Sie im Dialogfeld **Neues Projekt** auf **Windows**, und klicken Sie dann auf **Windows Forms**\-**Anwendung**.  
+2.  In der **neues Projekt** (Dialogfeld), klicken Sie auf **Windows**, und klicken Sie dann auf **WindowsFormsApplication**.  
   
-3.  Geben Sie als **Name** "ConsentDialog" ein, und klicken Sie dann auf **OK**.  
+3.  Für die **Namen**, Typ **ConsentDialog**, und klicken Sie dann auf **OK**.  
   
 4.  Klicken Sie im Designer auf das Formular.  
   
-5.  Ändern Sie im Eigenschaftenfenster die Eigenschaft **Text** in Update Consent Dialog.  
+5.  In der **Eigenschaften** Ändern der **Text** Eigenschaft **Update Zustimmungsdialogfeld**.  
   
-6.  Erweitern Sie in der **Toolbox** den Eintrag **Alle Windows Forms**, und ziehen Sie ein **Label**\-Steuerelement in das Formular.  
+6.  In der **Toolbox**, erweitern Sie **alle Windows Forms**, und ziehen Sie eine **Bezeichnung** Steuerelement dem Formular.  
   
-7.  Klicken Sie im Designer auf das Label\-Steuerelement.  
+7.  Klicken Sie im Designer auf das Label-Steuerelement.  
   
-8.  Ändern Sie im Eigenschaftenfenster  die **Text**\-Eigenschaft unter **Darstellung** in Folgendes:  
+8.  In der **Eigenschaften** Ändern der **Text** Eigenschaft mit dem **Darstellung** , der dem folgenden:  
   
-     The application that you are about to install checks for the latest updates on the Web.  By clicking on "I Agree", you authorize the application to check for and install updates automatically from the Internet.  
+     Die Anwendung, die Sie installieren überprüft die neuesten Updates im Web. Indem Sie auf "Ich stimme zu" klicken, autorisieren Sie die Anwendung zu suchen und diese Updates automatisch aus dem Internet zu installieren.  
   
-9. Ziehen Sie in der **Toolbox** ein **Checkbox**\-Steuerelement in die Mitte des Formulars.  
+9. In der **Toolbox**, ziehen Sie eine **Kontrollkästchen** Steuerelement in die Mitte des Formulars.  
   
-10. Ändern Sie im Eigenschaftenfenster die **Text**\-Eigenschaft unter **Layout** in I Agree.  
+10. In der **Eigenschaften** Ändern der **Text** Eigenschaft mit dem **Layout** auf **ich stimme zu**.  
   
-11. Ziehen Sie in der **Toolbox** ein **Button**\-Steuerelement unten links in das Formular.  
+11. In der **Toolbox**, ziehen Sie eine **Schaltfläche** Steuerelement unten links in der Form.  
   
-12. Ändern Sie im Eigenschaftenfenster die **Text**\-Eigenschaft unter **Layout** in Proceed.  
+12. In der **Eigenschaften** Ändern der **Text** Eigenschaft mit dem **Layout** auf **Fortfahren**.  
   
-13. Ändern Sie im Eigenschaftenfenster die **\(Name\)**\-Eigenschaft unter **Entwurf** in "ProceedButton".  
+13. In der **Eigenschaften** Ändern der **(Name)** Eigenschaft mit dem **Entwurf** auf **"ProceedButton"**.  
   
-14. Ziehen Sie in der **Toolbox** ein **Button**\-Steuerelement unten rechts in das Formular.  
+14. In der **Toolbox**, ziehen Sie eine **Schaltfläche** Steuerelement unten rechts auf der das Formular.  
   
-15. Ändern Sie im Eigenschaftenfenster die **Text**\-Eigenschaft unter **Layout** in Cancel.  
+15. In der **Eigenschaften** Ändern der **Text** Eigenschaft mit dem **Layout** auf **"Abbrechen"**.  
   
-16. Ändern Sie im Eigenschaftenfenster die **\(Name\)**\-Eigenschaft unter **Entwurf** in "CancelButton".  
+16. In der **Eigenschaften** Ändern der **(Name)** Eigenschaft mit dem **Entwurf** auf **CancelButton**.  
   
-17. Doppelklicken Sie im Designer auf das Kontrollkästchen **I Agree**, um den CheckedChanged\-Ereignishandler zu generieren.  
+17. Doppelklicken Sie im Designer auf die **ich stimme zu** Kontrollkästchen, um das CheckedChanged-Ereignishandler zu generieren.  
   
-18. Fügen Sie in der Form1\-Codedatei den folgenden Code für den CheckedChanged\-Ereignishandler hinzu.  
+18. Fügen Sie in der Codedatei Form1 den folgenden Code für das CheckedChanged-Ereignishandler ein.  
   
-     [!code-cs[ConsentDialog#1](../deployment/codesnippet/CSharp/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_1.cs)]
+     [!code-csharp[ConsentDialog#1](../deployment/codesnippet/CSharp/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_1.cs)]
      [!code-vb[ConsentDialog#1](../deployment/codesnippet/VisualBasic/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_1.vb)]  
   
-19. Aktualisieren Sie den Klassenkonstruktor, um die Schaltfläche **Proceed** standardmäßig zu deaktivieren.  
+19. Aktualisieren Sie den Klassenkonstruktor Deaktivieren der **Fortfahren** Schaltfläche standardmäßig.  
   
-     [!code-cs[ConsentDialog#6](../deployment/codesnippet/CSharp/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_2.cs)]
+     [!code-csharp[ConsentDialog#6](../deployment/codesnippet/CSharp/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_2.cs)]
      [!code-vb[ConsentDialog#6](../deployment/codesnippet/VisualBasic/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_2.vb)]  
   
-20. Fügen Sie in der Form1\-Codedatei den folgenden Code für eine zu verfolgende boolesche Variable hinzu, wenn der Endbenutzer der Installation von Onlineupdates zugestimmt hat.  
+20. Fügen Sie in der Codedatei Form1 den folgenden Code für eine boolesche Variable überwachen, wenn der Endbenutzer, Onlineupdates zugestimmt hat.  
   
-     [!code-cs[ConsentDialog#3](../deployment/codesnippet/CSharp/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_3.cs)]
+     [!code-csharp[ConsentDialog#3](../deployment/codesnippet/CSharp/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_3.cs)]
      [!code-vb[ConsentDialog#3](../deployment/codesnippet/VisualBasic/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_3.vb)]  
   
-21. Doppelklicken Sie im Designer auf die Schaltfläche **Proceed**, um einen Click\-Ereignishandler zu generieren.  
+21. Doppelklicken Sie im Designer auf die **Fortfahren** Schaltfläche, um dem Click-Ereignishandler zu generieren.  
   
-22. Fügen Sie in der Form1\-Codedatei dem Click\-Ereignishandler den folgenden Code für die Schaltfläche **Proceed** hinzu.  
+22. Fügen Sie in der Codedatei Form1 den folgenden Code, um dem Click-Ereignishandler für das **Fortfahren** Schaltfläche.  
   
-     [!code-cs[ConsentDialog#2](../deployment/codesnippet/CSharp/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_4.cs)]
+     [!code-csharp[ConsentDialog#2](../deployment/codesnippet/CSharp/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_4.cs)]
      [!code-vb[ConsentDialog#2](../deployment/codesnippet/VisualBasic/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_4.vb)]  
   
-23. Doppelklicken Sie im Designer auf die Schaltfläche **Cancel**, um einen Click\-Ereignishandler zu generieren.  
+23. Doppelklicken Sie im Designer auf die **"Abbrechen"** Schaltfläche, um dem Click-Ereignishandler zu generieren.  
   
-24. Fügen Sie in der Form1\-Codedatei dem Click\-Ereignishandler den folgenden Code für die Schaltfläche **Cancel** hinzu.  
+24. Fügen Sie in der Codedatei Form1 den folgenden Code für das Click-Ereignishandler für das **"Abbrechen"** Schaltfläche.  
   
-     [!code-cs[ConsentDialog#4](../deployment/codesnippet/CSharp/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_5.cs)]
+     [!code-csharp[ConsentDialog#4](../deployment/codesnippet/CSharp/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_5.cs)]
      [!code-vb[ConsentDialog#4](../deployment/codesnippet/VisualBasic/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_5.vb)]  
   
-25. Aktualisieren Sie die Anwendung so, dass ein Fehler zurückgegeben wird, wenn der Endbenutzer den Onlineupdates nicht zustimmt.  
+25. Aktualisieren Sie die Anwendung auf einen Fehler zurück, wenn der Endbenutzer auf Onlineupdates nicht einverstanden ist.  
   
-     Nur für Visual Basic\-Entwickler:  
+     Visual Basic nur für Entwickler:  
   
-    1.  Klicken Sie im **Projektmappen\-Explorer** auf **ConsentDialog**.  
+    1.  In **Projektmappen-Explorer**, klicken Sie auf **ConsentDialog**.  
   
-    2.  Klicken Sie im Menü **Projekt** auf **Modul hinzufügen**, und klicken Sie dann auf **Hinzufügen**.  
+    2.  Auf der **Projekt** Menü klicken Sie auf **Modul hinzufügen**, und klicken Sie dann auf **hinzufügen**.  
   
-    3.  Fügen Sie in der Module1.vb\-Codedatei den folgenden Code hinzu.  
+    3.  Fügen Sie in der Codedatei "Module1.vb" den folgenden Code ein.  
   
          [!code-vb[ConsentDialog#7](../deployment/codesnippet/VisualBasic/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_6.vb)]  
   
-    4.  Klicken Sie im Menü **Projekt** auf **ConsentDialog\-Eigenschaften**, und klicken Sie dann auf die Registerkarte **Anwendung**.  
+    4.  Auf der **Projekt** Menü klicken Sie auf **ConsentDialog Eigenschaften**, und klicken Sie dann auf die **Anwendung** Registerkarte.  
   
     5.  Deaktivieren Sie **Anwendungsframework aktivieren**.  
   
-    6.  Wählen Sie im Dropdownmenü **Startobjekt** den Eintrag **Module1** aus.  
+    6.  In der **Startobjekt** wählen Sie im Dropdownmenü **Module1**.  
   
         > [!NOTE]
-        >  Durch Deaktivieren des Anwendungsframeworks werden Funktionen wie z. B. visuelle Windows XP\-Stile, Anwendungsereignisse, Begrüßungsbildschirm, einzelne Instanzanwendung und mehr deaktiviert.  Weitere Informationen finden Sie unter [Seite "Anwendung", Projekt\-Designer \(Visual Basic\)](../ide/reference/application-page-project-designer-visual-basic.md).  
+        >  Deaktivieren das Anwendungsframework deaktiviert Funktionen, z. B. visuellen Windows XP-Stilen, Anwendungsereignisse Begrüßungsbildschirm, Einzelinstanz-Anwendung und mehr. Weitere Informationen finden Sie unter [Application Page, Project Designer (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md).  
   
-     Nur für Visual C\#\-Entwickler:  
+     Visual C#-nur für Entwickler:  
   
-     Öffnen Sie die Program.cs\-Codedatei, und fügen Sie den folgenden Code hinzu.  
+     Öffnen Sie die Codedatei "Program.cs", und fügen Sie den folgenden Code hinzu.  
   
-     [!code-cs[ConsentDialog#5](../deployment/codesnippet/CSharp/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_7.cs)]  
+     [!code-csharp[ConsentDialog#5](../deployment/codesnippet/CSharp/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_7.cs)]  
   
-26. Klicken Sie im Menü **Erstellen** auf **Projektmappe erstellen**.  
+26. Auf der **erstellen** Menü klicken Sie auf **Projektmappe erstellen**.  
   
-## Erstellen des benutzerdefinierten Bootstrapperpakets  
- Um für Endbenutzer die Datenschutzeingabeaufforderung anzuzeigen, können Sie ein benutzerdefiniertes Bootstrapperpaket für die Anwendung "Dialogfeld zur Updatezustimmung" erstellen und es als erforderliche Komponente in alle ClickOnce\-Anwendungen einschließen.  
+## <a name="creating-the-custom-bootstrapper-package"></a>Erstellen das benutzerdefinierte Bootstrapperpaket  
+ Sie können zum Anzeigen der datenschutzeingabeaufforderung für Endbenutzer Erstellen eines benutzerdefinierten Bootstrapperpakets für die Update-Zustimmungsdialogfeld-Anwendung und fügen Sie ihn als erforderliche Komponente in allen von ClickOnce-Anwendungen.  
   
- Diese Prozedur veranschaulicht, wie ein benutzerdefiniertes Bootstrapperpaket erstellt wird, indem folgende Dokumente erstellt werden:  
+ Dieses Verfahren veranschaulicht, wie ein benutzerdefiniertes Bootstrapperpaket erstellen, indem Sie die folgenden Dokumente zu erstellen:  
   
--   Eine product.xml\-Manifestdatei, um den Inhalt des Bootstrappers zu beschreiben.  
+-   Eine product.xml Manifestdatei, um den Inhalt des Bootstrappers zu beschreiben.  
   
--   Eine package.xml\-Manifestdatei, um die lokalisierungsspezifischen Aspekte des Pakets aufzulisten, z. B. Zeichenfolgen und die Softwarelizenzbedingungen.  
+-   Eine Manifestdatei "Package.xml", um die Lokalisierung-spezifische Aspekte des Pakets, z. B. Zeichenfolgen und die Software-Lizenzbedingungen aufzulisten.  
   
--   Ein Dokument für die Softwarelizenzbedingungen.  
+-   Ein Dokument für die Software-Lizenzbedingungen.  
   
-#### Schritt 1: So erstellen Sie das Bootstrapperverzeichnis  
+#### <a name="step-1-to-create-the-bootstrapper-directory"></a>Schritt 1: Erstellen des Verzeichnisses Bootstrapper  
   
-1.  Erstellen Sie ein Verzeichnis namens "UpdateConsentDialog" unter %PROGRAMME%\\Microsoft SDKs\\Windows\\v7.0A\\Bootstrapper\\Packages".  
-  
-    > [!NOTE]
-    >  Sie benötigen möglicherweise Administratorrechte, um diesen Ordner zu erstellen.  
-  
-2.  Erstellen Sie im UpdateConsentDialog\-Verzeichnis ein Unterverzeichnis namens "en".  
+1.  Erstellen Sie ein Verzeichnis mit dem Namen **UpdateConsentDialog** in %PROGRAMFILES%\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages.  
   
     > [!NOTE]
-    >  Erstellen Sie ein neues Verzeichnis für jedes Gebietsschema.  Sie können z. B. Unterverzeichnisse für die Gebietsschemas "fr" und "de" hinzufügen.  Diese Verzeichnisse würden die französischen und deutschen Zeichenfolgen und ggf. Language Packs enthalten.  
+    >  Möglicherweise Administratorrechte für diesen Ordner zu erstellen.  
   
-#### Schritt 2: So erstellen Sie die product.xml\-Manifestdatei  
+2.  Erstellen Sie in das Verzeichnis UpdateConsentDialog ein Unterverzeichnis mit dem Namen En.  
   
-1.  Erstellen Sie eine Textdatei mit dem Namen `product.xml`.  
+    > [!NOTE]
+    >  Erstellen Sie ein neues Verzeichnis für jedes Gebietsschema. Sie können z. B. Unterverzeichnisse für die Gebietsschemas fr "und" de "hinzufügen. Diese Verzeichnisse würde die Zeichenfolgen für Französisch und Deutsch und die Sprachpakete, bei Bedarf enthalten.  
   
-2.  Fügen Sie der Datei "product.xml" den folgenden XML\-Code hinzu.  Stellen Sie sicher, dass Sie den vorhandenen XML\-Code nicht überschreiben.  
+#### <a name="step-2-to-create-the-productxml-manifest-file"></a>Schritt 2: Erstellen die Manifestdatei product.xml  
+  
+1.  Erstellen Sie eine Textdatei namens `product.xml`.  
+  
+2.  Fügen Sie den folgenden XML-Code in der Datei product.xml hinzu. Stellen Sie sicher, dass Sie nicht den vorhandenen XML-Code überschreiben.  
   
     ```  
     <Product  
@@ -190,13 +191,13 @@ Sie können ClickOnce\-Anwendungen so konfigurieren, dass sie automatisch aktual
     </Product>  
     ```  
   
-3.  Speichern Sie die Datei im UpdateConsentDialog\-Bootstrapperverzeichnis.  
+3.  Speichern Sie die Datei in das UpdateConsentDialog Bootstrapper-Verzeichnis ein.  
   
-#### Schritt 3: So erstellen Sie die package.xml\-Manifestdatei und die Softwarelizenzbedingungen  
+#### <a name="step-3-to-create-the-packagexml-manifest-file-and-the-software-license-terms"></a>Schritt 3: Erstellen Sie das Manifest "Package.xml" Lizenzbedingungen Datei- und die software  
   
-1.  Erstellen Sie eine Textdatei mit dem Namen `package.xml`.  
+1.  Erstellen Sie eine Textdatei namens `package.xml`.  
   
-2.  Fügen Sie der Datei "package.xml" den folgenden XML\-Code hinzu, um das Gebietsschema zu definieren und die Softwarelizenzbedingungen einzuschließen.  Stellen Sie sicher, dass Sie den vorhandenen XML\-Code nicht überschreiben.  
+2.  Fügen Sie den folgenden XML-Code zum Definieren des Gebietsschemas und die Software-Lizenzbedingungen enthalten, in der Datei "Package.xml". Stellen Sie sicher, dass Sie nicht den vorhandenen XML-Code überschreiben.  
   
     ```  
     <Package   
@@ -218,91 +219,91 @@ Sie können ClickOnce\-Anwendungen so konfigurieren, dass sie automatisch aktual
     </Package>  
     ```  
   
-3.  Speichern Sie die Datei im Unterverzeichnis "en" im UpdateConsentDialog\-Bootstrapperverzeichnis.  
+3.  Speichern Sie die Datei, auf das Unterverzeichnis "En" im UpdateConsentDialog Bootstrapper-Verzeichnis.  
   
-4.  Erstellen Sie ein Dokument mit dem Namen "eula.rtf" für die Softwarelizenzbedingungen.  
-  
-    > [!NOTE]
-    >  Die Softwarelizenzbedingungen sollten Informationen zu Lizenzierung, Gewährleistungen, Haftungen und lokalen Gesetzen einschließen.  Diese Dateien sollten gebietsschemaspezifisch sein. Stellen Sie daher sicher, dass die Datei in einem Format gespeichert wird, das MBCS\- oder UNICODE\-Zeichen unterstützt.  Wenden Sie sich bezüglich des Inhalts der Softwarelizenzbedingungen an die Rechtsabteilung.  
-  
-5.  Speichern Sie das Dokument im Unterverzeichnis "en" im UpdateConsentDialog\-Bootstrapperverzeichnis.  
-  
-6.  Erstellen Sie bei Bedarf für jedes Gebietsschema eine neue package.xml\-Manifestdatei und ein neues eula.rtf\-Dokument für die Softwarelizenzbedingungen.  Wenn Sie z. B. Unterverzeichnisse für die Gebietsschemas "fr" und "de" erstellt haben, erstellen Sie separate package.xml\-Manifestdateien und Softwarelizenzbedingungen, und speichern Sie diese in den Unterverzeichnissen "fr" und "de".  
-  
-## Festlegen der Anwendung zur Updatezustimmung als erforderliche Komponente  
- In Visual Studio können Sie die Anwendung zur Updatezustimmung als erforderliche Komponente festlegen.  
-  
-#### So legen Sie die Anwendung zur Updatezustimmung als erforderliche Komponente fest  
-  
-1.  Klicken Sie im **Projektmappen\-Explorer** auf den Namen der Anwendung, die Sie bereitstellen möchten.  
-  
-2.  Klicken Sie im Menü **Projekt** auf *Projektname*\-**Eigenschaften**.  
-  
-3.  Klicken Sie auf die Seite **Veröffentlichen** und dann auf **Erforderliche Komponenten**.  
-  
-4.  Wählen Sie **Dialogfeld zur Updatezustimmung** aus.  
+4.  Erstellen Sie ein Dokument namens eula.rtf für die Software-Lizenzbedingungen.  
   
     > [!NOTE]
-    >  Sie müssen möglicherweise Visual Studio schließen und erneut öffnen, um das Dialogfeld zur Updatezustimmung im Dialogfeld "Erforderliche Komponenten" zu sehen.  
+    >  Die Software-Lizenzbedingungen sind zu Lizenzierung, GEWÄHRLEISTUNGEN Schulden und örtlich anwendbaren Gesetzen. Diese Dateien sollten gebietsschemaspezifisch sein, achten Sie darauf, dass die Datei in einem Format gespeichert wird, die MBCS und Unicode-Zeichen unterstützt. Wenden Sie sich an Ihre rechtsabteilung über den Inhalt der Software-Lizenzbedingungen.  
+  
+5.  Speichern Sie das Dokument, das Unterverzeichnis "En" im UpdateConsentDialog Bootstrapper-Verzeichnis.  
+  
+6.  Erstellen Sie erforderlichenfalls eine neue Datei "package.xml" manifest und ein neues eula.rtf Dokument für die Software-Lizenzbedingungen für jedes Gebietsschema. Beispielsweise wenn Sie die Unterverzeichnisse für die Gebietsschemas fr "und" de "erstellt haben, erstellen Sie separate" Package.xml "Manifestdateien und Software-Lizenzbedingungen, und speichern Sie sie in den Unterverzeichnissen fr" und "de".  
+  
+## <a name="setting-the-update-consent-application-as-a-prerequisite"></a>Festlegen der Zustimmung Updateanwendung als erforderliche Komponente  
+ In Visual Studio können Sie die Anwendung zustimmen, Update als erforderliche Komponente festlegen.  
+  
+#### <a name="to-set-the-update-consent-application-as-a-prerequisite"></a>Die Zustimmung Updateanwendung als erforderliche Komponente festlegen  
+  
+1.  In **Projektmappen-Explorer**, klicken Sie auf den Namen der Anwendung, die Sie bereitstellen möchten.  
+  
+2.  Auf der **Projekt** Menü klicken Sie auf *Projektname* **Eigenschaften**.  
+  
+3.  Klicken Sie auf die **veröffentlichen** Seite, und klicken Sie dann auf **Voraussetzungen**.  
+  
+4.  Wählen Sie **aktualisieren Zustimmungsdialogfeld**.  
+  
+    > [!NOTE]
+    >  Sie müssen möglicherweise schließen und öffnen Visual Studio für die Verwendung der Update-Zustimmungsdialogfeld in das Dialogfeld erforderlichen Komponenten finden Sie unter.  
   
 5.  Klicken Sie auf **OK**.  
   
-## Erstellen und Testen des Setupprogramms  
- Nachdem Sie die Anwendung zur Updatezustimmung als erforderliche Komponente festgelegt haben, können Sie das Installationsprogramm und den Bootstrapper für die Anwendung generieren.  
+## <a name="creating-and-testing-the-setup-program"></a>Erstellen und testen das Setup-Programm  
+ Nachdem Sie die Anwendung zustimmen, Update als erforderliche Komponente festgelegt, können Sie den Installer und den Bootstrapper für Ihre Anwendung generieren.  
   
-#### So erstellen und testen Sie das Setupprogramm, indem Sie nicht auf "Ich stimme zu" klicken  
+#### <a name="to-create-and-test-the-setup-program-by-not-clicking-i-agree"></a>Zum Erstellen und testen das Setup-Programm, indem Sie nicht auf ich stimme zu  
   
-1.  Klicken Sie im **Projektmappen\-Explorer** auf den Namen der Anwendung, die Sie bereitstellen möchten.  
+1.  In **Projektmappen-Explorer**, klicken Sie auf den Namen der Anwendung, die Sie bereitstellen möchten.  
   
-2.  Klicken Sie im Menü **Projekt** auf *Projektname*\-**Eigenschaften**.  
+2.  Auf der **Projekt** Menü klicken Sie auf *Projektname* **Eigenschaften**.  
   
-3.  Klicken Sie auf die Seite **Veröffentlichen**, und klicken Sie dann auf **Jetzt veröffentlichen**.  
+3.  Klicken Sie auf die **veröffentlichen** Seite, und klicken Sie dann auf **jetzt veröffentlichen**.  
   
-4.  Wenn die Veröffentlichungsausgabe nicht automatisch geöffnet wird, navigieren Sie zur Veröffentlichungsausgabe.  
+4.  Wenn die Ausgabe der Veröffentlichung nicht automatisch geöffnet wird, navigieren Sie zu die Ausgabe der Veröffentlichung.  
   
-5.  Führen Sie das Programm "Setup.exe" aus.  
+5.  Führen Sie das Programm Setup.exe.  
   
-     Das Setupprogramm zeigt den Softwarelizenzvertrag für das Dialogfeld zur Updatezustimmung an.  
+     Das Setup-Programm zeigt den Update-Zustimmungsdialogfeld Softwarelizenzvertrag.  
   
-6.  Lesen Sie den Softwarelizenzvertrag, und klicken Sie dann auf **Zustimmen**.  
+6.  Lesen Sie den Softwarelizenzvertrag, und klicken Sie dann auf **Accept**.  
   
-     Das Dialogfeld zur Updatezustimmung wird mit dem folgenden Text angezeigt: Von der Anwendung, die Sie installieren möchten, wird geprüft, ob im Internet aktuelle Updates zur Verfügung stehen.  Sie autorisieren die Anwendung, im Internet automatisch nach Updates zu suchen und diese zu installieren, indem Sie auf "Ich stimme zu" klicken.  
+     Die Update-Zustimmungsdialogfeld-Anwendung angezeigt wird, und zeigt den folgenden Text: überprüft die Anwendung, die Sie installieren die neuesten Updates im Web. Durch Klicken auf ich stimme zu, autorisieren Sie die Anwendung zur Überprüfung auf Updates automatisch auf das Internet.  
   
-7.  Schließen Sie die Anwendung, oder klicken Sie auf Abbrechen.  
+7.  Schließen Sie die Anwendung, oder klicken Sie auf "Abbrechen".  
   
-     Die Anwendung zeigt einen Fehler an: Fehler beim Installieren der Systemkomponenten für *ApplicationName*.  Setup kann erst fortgesetzt werden, wenn alle Systemkomponenten erfolgreich installiert wurden.  
+     Die Anwendung zeigt einen Fehler: Fehler beim Installieren von Systemkomponenten für *Parameter "ApplicationName"*. Setup kann nicht fortgesetzt, bis alle Komponenten erfolgreich installiert wurden.  
   
-8.  Klicken Sie auf Details, um die folgende Fehlermeldung anzuzeigen: Fehler bei der Installation der Komponente "Dialogfeld zur Updatezustimmung" hat nicht mit der folgenden Fehlermeldung installiert: "Die Vereinbarung für automatische Updates wird nicht akzeptiert. Fehler bei der Installation der folgenden Komponenten: \- Dialogfeld zur Updatezustimmung  
+8.  Klicken Sie auf Details, um die folgende Fehlermeldung angezeigt: Komponente aktualisieren Zustimmungsdialogfeld Fehler bei der Installation mit der folgenden Fehlermeldung: "die automatische Aktualisierung Vereinbarung wird nicht akzeptiert." Die folgenden Komponenten bei der Installation:-Update-Zustimmungsdialogfeld  
   
 9. Klicken Sie auf **Schließen**.  
   
-#### So erstellen und testen Sie das Setupprogramm, indem Sie auf "Ich stimme zu" klicken  
+#### <a name="to-create-and-test-the-setup-program-by-clicking-i-agree"></a>Zum Erstellen und testen das Setup-Programm, indem Sie auf ich stimme zu  
   
-1.  Klicken Sie im **Projektmappen\-Explorer** auf den Namen der Anwendung, die Sie bereitstellen möchten.  
+1.  In **Projektmappen-Explorer**, klicken Sie auf den Namen der Anwendung, die Sie bereitstellen möchten.  
   
-2.  Klicken Sie im Menü **Projekt** auf *Projektname*\-**Eigenschaften**.  
+2.  Auf der **Projekt** Menü klicken Sie auf *Projektname* **Eigenschaften**.  
   
-3.  Klicken Sie auf die Seite **Veröffentlichen**, und klicken Sie dann auf **Jetzt veröffentlichen**.  
+3.  Klicken Sie auf die **veröffentlichen** Seite, und klicken Sie dann auf **jetzt veröffentlichen**.  
   
-4.  Wenn die Veröffentlichungsausgabe nicht automatisch geöffnet wird, navigieren Sie zur Veröffentlichungsausgabe.  
+4.  Wenn die Ausgabe der Veröffentlichung nicht automatisch geöffnet wird, navigieren Sie zu die Ausgabe der Veröffentlichung.  
   
-5.  Führen Sie das Programm "Setup.exe" aus.  
+5.  Führen Sie das Programm Setup.exe.  
   
-     Das Setupprogramm zeigt den Softwarelizenzvertrag für das Dialogfeld zur Updatezustimmung an.  
+     Das Setup-Programm zeigt den Update-Zustimmungsdialogfeld Softwarelizenzvertrag.  
   
-6.  Lesen Sie den Softwarelizenzvertrag, und klicken Sie dann auf **Zustimmen**.  
+6.  Lesen Sie den Softwarelizenzvertrag, und klicken Sie dann auf **Accept**.  
   
-     Das Dialogfeld zur Updatezustimmung wird mit dem folgenden Text angezeigt: Von der Anwendung, die Sie installieren möchten, wird geprüft, ob im Internet aktuelle Updates zur Verfügung stehen.  Sie autorisieren die Anwendung, im Internet automatisch nach Updates zu suchen und diese zu installieren, indem Sie auf "Ich stimme zu" klicken.  
+     Die Update-Zustimmungsdialogfeld-Anwendung angezeigt wird, und zeigt den folgenden Text: überprüft die Anwendung, die Sie installieren die neuesten Updates im Web. Durch Klicken auf ich stimme zu, autorisieren Sie die Anwendung zur Überprüfung auf Updates automatisch auf das Internet.  
   
-7.  Klicken Sie auf **Ich stimme zu** und dann auf **Fortsetzen**.  
+7.  Klicken Sie auf **ich stimme zu**, und klicken Sie dann auf **Fortfahren**.  
   
-     Die Anwendungsinstallation beginnt.  
+     So installieren Sie Start der Anwendung.  
   
-8.  Wenn das Dialogfeld "Anwendungsinstallation" angezeigt wird, klicken Sie auf **Installieren**.  
+8.  Wenn das Dialogfeld "Anwendung installieren" angezeigt wird, klicken Sie auf **installieren**.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Vorbedingungen für die Anwendungsbereitstellung](../deployment/application-deployment-prerequisites.md)   
  [Erstellen von Bootstrapperpaketen](../deployment/creating-bootstrapper-packages.md)   
- [Gewusst wie: Erstellen eines Produktmanifests](../deployment/how-to-create-a-product-manifest.md)   
- [Gewusst wie: Erstellen eines Paketmanifests](../deployment/how-to-create-a-package-manifest.md)   
- [Referenz zum Produkt\- und Paketschema](../deployment/product-and-package-schema-reference.md)
+ [Vorgehensweise: Erstellen eines Produktmanifests](../deployment/how-to-create-a-product-manifest.md)   
+ [Vorgehensweise: Erstellen eines Paketmanifests](../deployment/how-to-create-a-package-manifest.md)   
+ [Referenz zum Produkt- und Paketschema](../deployment/product-and-package-schema-reference.md)

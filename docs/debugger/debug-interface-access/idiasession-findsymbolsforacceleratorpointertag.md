@@ -1,50 +1,50 @@
 ---
-title: "IDiaSession::findSymbolsForAcceleratorPointerTag | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
+title: IDiaSession::findSymbolsForAcceleratorPointerTag | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
 ms.assetid: 95fd5e7a-c637-437e-b369-c864eef733c2
-caps.latest.revision: 3
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 3
+caps.latest.revision: "3"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 0f67263b385c184b0182716469f110c87bcebb50
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSession::findSymbolsForAcceleratorPointerTag
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Gibt eine Enumeration von Symbolen für die Variablen zurückgegeben, dass der angegebene Tagwert in der übergeordneten Zugriffstastenstubfunktion entspricht.  
+# <a name="idiasessionfindsymbolsforacceleratorpointertag"></a>IDiaSession::findSymbolsForAcceleratorPointerTag
+Gibt eine Enumeration von Symbolen für die Variable, die Wert für das angegebene Tag entspricht in der übergeordneten Tabelle Accelerator-Stub-Funktion zurück.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT findSymbolsForAcceleratorPointerTag (   
-   IDiaSymbol*           parent,  
+```C++  
+HRESULT findSymbolsForAcceleratorPointerTag (   
+   IDiaSymbol*           parent,  
    DWORD                 tagValue,  
-   IDiaEnumSymbols**     ppResult  
+   IDiaEnumSymbols**     ppResult  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `parent`  
- \[\] in ein IDiaSymbol, das der zu durchsuchenden Zugriffstastenstubentspricht Funktion.  
+ [in] Eine IDiaSymbol, die die Zugriffstaste Stub-Funktion zu durchsuchenden entspricht.  
   
  `tagValue`  
- \[\] in der Zeigertagwert.  
+ [in] Der Wert des Zeigers Tag.  
   
  `ppResult`  
- \[out\] Ein Zeiger auf einen `IDiaEnumSymbols`\-Schnittstellenzeiger, der mit dem Ergebnis initialisiert wird.  
+ [out] Ein Zeiger auf ein `IDiaEnumSymbols` Schnittstellenzeiger, der mit dem Ergebnis initialisiert wird.  
   
-## Rückgabewert  
- Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)

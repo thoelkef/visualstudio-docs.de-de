@@ -1,50 +1,49 @@
 ---
-title: "IDiaDataSource::get_lastError | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaDataSource::get_lastError-Methode"
+title: 'Idiadatasource:: Get_lasterror | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaDataSource::get_lastError method
 ms.assetid: cf08850b-8b75-4e8c-90bd-bd0214756f99
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 349477bed67450e897ec60a00635fb65442eb1ba
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaDataSource::get_lastError
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Ruft den Dateinamen für den letzten Ladefehler ab.  
+# <a name="idiadatasourcegetlasterror"></a>IDiaDataSource::get_lastError
+Ruft den Dateinamen für die letzten Ladefehler ab.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```C++  
 HRESULT get_lastError (  
-   BSTR* pRetVal  
+   BSTR* pRetVal  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  pRetVal  
- \[out\]  Gibt eine Zeichenfolge zurück, die den .pdb\-Dateinamen enthält, der dem letzten Ladefehler zugeordnet ist.  
+ [out] Gibt eine Zeichenfolge, die die letzten Fehler beim Laden des zugeordneten PDB-Dateinamen enthält.  
   
-## Rückgabewert  
- Gibt den letzten Fehlercode zurück, der durch einen Ladevorgang verursacht wurde.  Gibt `E_INVALIDARG` zurück, wenn der Parameter `pRetVal``NULL`ist.  
+## <a name="return-value"></a>Rückgabewert  
+ Gibt den letzten Fehlercode, der durch ein Ladevorgang verursacht. Gibt `E_INVALIDARG` Wenn die `pRetVal` Parameter ist `NULL`.  
   
-## Beispiel  
+## <a name="example"></a>Beispiel  
   
-```cpp#  
+```C++  
 BSTR    fileName;  
 HRESULT errorCode = pSource->get_lastError( &fileName );  
 ```  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)

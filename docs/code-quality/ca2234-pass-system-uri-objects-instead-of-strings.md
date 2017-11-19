@@ -1,11 +1,10 @@
 ---
-title: 'CA2234: Pass System.Uri objects instead of strings | Microsoft Docs'
+title: "CA2234: Übergeben Sie System.Uri-Objekte anstelle von Zeichenfolgen | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,61 +14,48 @@ helpviewer_keywords:
 - CA2234
 - PassSystemUriObjectsInsteadOfStrings
 ms.assetid: 14616b37-74c4-4286-b051-115d00aceb5f
-caps.latest.revision: 14
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 501c15b9bfac8027a4210ba4a750c02977e076f8
-ms.contentlocale: de-de
-ms.lasthandoff: 08/30/2017
-
+caps.latest.revision: "14"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 99001a5406ce4e70e0e76670eba250073ce030b2
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="ca2234-pass-systemuri-objects-instead-of-strings"></a>CA2234: Pass System.Uri objects instead of strings
+# <a name="ca2234-pass-systemuri-objects-instead-of-strings"></a>CA2234: Übergeben Sie System.Uri-Objekte anstelle von Zeichenfolgen
 |||  
 |-|-|  
 |TypeName|PassSystemUriObjectsInsteadOfStrings|  
 |CheckId|CA2234|  
-|Category|Microsoft.Usage|  
-|Breaking Change|Non Breaking|  
+|Kategorie|Microsoft.Usage|  
+|Unterbrechende Änderung|Nicht unterbrechende Änderung|  
   
-## <a name="cause"></a>Cause  
- A call is made to a method that has a string parameter whose name contains "uri", "Uri", "urn", "Urn", "url", or "Url"; and the declaring type of the method contains a corresponding method overload that has a <xref:System.Uri?displayProperty=fullName> parameter.  
+## <a name="cause"></a>Ursache  
+ Erfolgt ein Aufruf an eine Methode, die einen Zeichenfolgenparameter verfügt, dessen Name "Uri", "Uri", "Urn", "Urn", "Url" oder "Url" enthält. Der deklarierende Typ der Methode enthält eine entsprechende methodenüberladung, verfügt ein <xref:System.Uri?displayProperty=fullName> Parameter.  
   
-## <a name="rule-description"></a>Rule Description  
- A parameter name is split into tokens based on the camel casing convention, and then each token is checked to see whether it equals "uri", "Uri", "urn", "Urn", "url", or "Url". If there is a match, the parameter is assumed to represent a uniform resource identifier (URI). A string representation of a URI is prone to parsing and encoding errors, and can lead to security vulnerabilities. The <xref:System.Uri> class provides these services in a safe and secure manner. When there is a choice between two overloads that differ only regarding the representation of a URI, the user should choose the overload that takes a <xref:System.Uri> argument.  
+## <a name="rule-description"></a>Regelbeschreibung  
+ Ein Parametername ist Token basierend auf der Kamel aufteilen und anschließend wird jedes Token überprüft, um festzustellen, ob es sich um "Uri", "Uri", "Urn", "Urn", "Url" oder "Url" entspricht. Wenn eine Übereinstimmung vorhanden ist, wird davon ausgegangen, dass der Parameter einen uniform Resource Identifier (URI) darstellen. Eine Zeichenfolgendarstellung eines URIs ist anfällig für Analyse- und Codierungsfehler und kann zu Sicherheitsmängeln führen. Die <xref:System.Uri> Klasse stellt diese Dienste auf sichere Weise bereit. Es gibt eine Auswahl zwischen zwei Überladungen, die sich nur bezüglich die Darstellung eines URIs unterscheiden, der Benutzer muss wählen die Überladung mit einem <xref:System.Uri> Argument.  
   
-## <a name="how-to-fix-violations"></a>How to Fix Violations  
- To fix a violation of this rule, call the overload that takes the <xref:System.Uri> argument.  
+## <a name="how-to-fix-violations"></a>Behandeln von Verstößen  
+ Um einen Verstoß gegen diese Regel zu beheben, rufen Sie die Überladung, akzeptiert der <xref:System.Uri> Argument.  
   
-## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
- It is safe to suppress a warning from this rule if the string parameter does not represent a URI.  
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?  
+ Sie können ruhig zum Unterdrücken einer Warnung dieser Regel, wenn der Parameter keinen URI darstellt.  
   
-## <a name="example"></a>Example  
- The following example shows a method, `ErrorProne`, which violates the rule and a method, `SaferWay`, which correctly calls the <xref:System.Uri> overload.  
+## <a name="example"></a>Beispiel  
+ Das folgende Beispiel zeigt eine Methode `ErrorProne`, die gegen die Regel und eine Methode `SaferWay`, ordnungsgemäß aufruft der <xref:System.Uri> überladen.  
   
- [!code-vb[FxCop.Usage.PassUri#1](../code-quality/codesnippet/VisualBasic/ca2234-pass-system-uri-objects-instead-of-strings_1.vb)] [!code-cpp[FxCop.Usage.PassUri#1](../code-quality/codesnippet/CPP/ca2234-pass-system-uri-objects-instead-of-strings_1.cpp)] [!code-csharp[FxCop.Usage.PassUri#1](../code-quality/codesnippet/CSharp/ca2234-pass-system-uri-objects-instead-of-strings_1.cs)]  
+ [!code-vb[FxCop.Usage.PassUri#1](../code-quality/codesnippet/VisualBasic/ca2234-pass-system-uri-objects-instead-of-strings_1.vb)]
+ [!code-cpp[FxCop.Usage.PassUri#1](../code-quality/codesnippet/CPP/ca2234-pass-system-uri-objects-instead-of-strings_1.cpp)]
+ [!code-csharp[FxCop.Usage.PassUri#1](../code-quality/codesnippet/CSharp/ca2234-pass-system-uri-objects-instead-of-strings_1.cs)]  
   
-## <a name="related-rules"></a>Related Rules  
- [CA1057: String URI overloads call System.Uri overloads](../code-quality/ca1057-string-uri-overloads-call-system-uri-overloads.md)  
+## <a name="related-rules"></a>Verwandte Regeln  
+ [CA1057: URI-Überladungen vom Typ string rufen Überladungen vom Typ System.Uri auf](../code-quality/ca1057-string-uri-overloads-call-system-uri-overloads.md)  
   
- [CA1056: URI properties should not be strings](../code-quality/ca1056-uri-properties-should-not-be-strings.md)  
+ [CA1056: URI-Eigenschaften dürfen keine Zeichenfolgen sein](../code-quality/ca1056-uri-properties-should-not-be-strings.md)  
   
- [CA1054: URI parameters should not be strings](../code-quality/ca1054-uri-parameters-should-not-be-strings.md)  
+ [CA1054: URI-Parameter dürfen keine Zeichenfolgen sein](../code-quality/ca1054-uri-parameters-should-not-be-strings.md)  
   
- [CA1055: URI return values should not be strings](../code-quality/ca1055-uri-return-values-should-not-be-strings.md)
+ [CA1055: URI-Rückgabewerte dürfen keine Zeichenfolgen sein](../code-quality/ca1055-uri-return-values-should-not-be-strings.md)

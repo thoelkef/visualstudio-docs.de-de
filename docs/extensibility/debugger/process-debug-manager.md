@@ -1,32 +1,34 @@
 ---
-title: "Prozess-Debug-Manager | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Computer-Debug-manager"
-  - "Debuggen [Debugging-SDK] Machine Debug Manager"
+title: Verarbeiten der Debug-Manager | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- machine debug manager
+- debugging [Debugging SDK], Machine Debug Manager
 ms.assetid: d0861e0c-b819-490c-9604-5e6d08ac291a
-caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: e8ec523147f439e2ffd45d635e9ed873bbb1e8ff
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Prozess-Debug-Manager
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Der ProzeßManager Debuggen \(PDM\) ist eine Komponente von Visual Studio, das die Programme und Prozesse zur Verfügung und verwaltet den Debug\- Manager der Sitzung und die Debugmodule macht.  
+# <a name="process-debug-manager"></a>Prozess-Debug-Manager
+Der Prozess-Manager (PDM) ist eine Komponente von Visual Studio, die Programme verwaltet und Prozesse, die Verfügbarmachung der Sitzung Debuggen, Manager und die Debugmodule.  
   
- Das PDM verwaltet alle Prozesse, die gedebuggt werden kann.  So registriert werden zu debuggenden werden, muss ein Programm mit dem PDM.  Dies geschieht, wenn das Programm entweder durch einen Port oder eine Debug\- Modul ausgelöst wird.  
+ Die PDM verwaltet alle Prozesse, die gedebuggt werden können. Zum Debuggen, muss ein Programm mit der PDM registriert werden. Dies erfolgt zum Zeitpunkt, der das Programm, indem Sie entweder einen Port oder ein Debugging-Modul gestartet wird.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Prozesse](../../extensibility/debugger/processes.md)   
- [Debug\-Modul](../../extensibility/debugger/debug-engine.md)   
+ [Debuggen des Datenbankmoduls](../../extensibility/debugger/debug-engine.md)   
  [Ports](../../extensibility/debugger/ports.md)   
- [Programs](../../extensibility/debugger/programs.md)   
+ [Programme](../../extensibility/debugger/programs.md)   
  [Debuggerkomponenten](../../extensibility/debugger/debugger-components.md)

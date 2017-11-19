@@ -1,32 +1,32 @@
 ---
-title: "Befehle im Men&#252; &quot;Meldungen&quot; | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Befehle im Menü "Meldungen""
+title: "Befehle im Menü Nachrichten | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: Messages menu commands
 ms.assetid: 8ffcee99-7950-41af-906e-661e19e3257a
-caps.latest.revision: 3
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 3
+caps.latest.revision: "3"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 0538410ce5e3879d15a583cbf896ed623f0a5370
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Befehle im Men&#252; &quot;Meldungen&quot;
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Im Menü **Meldungen** sind Befehle zum Steuern der Meldungsansichten verfügbar.  
+# <a name="messages-menu-commands"></a>Befehle im Menü "Meldungen"
+Die **Nachrichten** Menü enthält Befehle zum Steuern der Nachricht.  
   
- **Protokollierung starten\/beenden**  
- Startet oder beendet die Meldungsansicht.  
+ **Protokollierung starten/beenden**  
+ Startet oder beendet die Nachricht anzeigen.  
   
  **Protokollierungsoptionen**  
- Öffnet das Dialogfeld **MessageOptions**, in dem Sie Suchkriterien für Meldungen angeben können.  
+ Öffnet die **MessageOptions** (Dialogfeld), in dem Sie die Nachricht Suchkriterien angeben können.  
   
  **Protokoll löschen**  
- Löscht den Inhalt der aktiven Meldungsansicht.
+ Löscht den Inhalt des aktiven Ansicht "Nachrichten".

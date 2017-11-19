@@ -1,47 +1,46 @@
 ---
-title: "IDiaLoadCallback::NotifyOpenDBG | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaLoadCallback::NotifyOpenDBG-Methode"
+title: 'Idialoadcallback:: Notifyopendbg | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaLoadCallback::NotifyOpenDBG method
 ms.assetid: dbc4dcf0-4ace-4dce-9790-0fdaf3a23d3b
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 8454a795200c9e0aea850a2a75a25403d5c0c2c4
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaLoadCallback::NotifyOpenDBG
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Wird aufgerufen, wenn eine mögliche dbg\-datei geöffnet wurde.  
+# <a name="idialoadcallbacknotifyopendbg"></a>IDiaLoadCallback::NotifyOpenDBG
+Wird aufgerufen, wenn eine Kandidat .dbg-Datei geöffnet wurde.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT NotifyOpenDBG (   
-   LPCOLESTR dbgPath,  
-   HRESULT   resultCode  
+```C++  
+HRESULT NotifyOpenDBG (   
+   LPCOLESTR dbgPath,  
+   HRESULT   resultCode  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `dbgPath`  
- \[in\]  Der vollständige Pfad der DBG\-Datei.  
+ [in] Der vollständige Pfad der Datei .dbg.  
   
  `resultCode`  
- \[in\]  Code, der`S_OK`\(Erfolg\) oder Misserfolg des Ladevorgangs in Bezug auf diese Datei angibt.  
+ [in] Code, der den Erfolg angibt (`S_OK`) oder das Fehlschlagen der Last wie an dieser Datei angewendet.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  Der Rückgabecode wird meist ignoriert.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben. Der Rückgabecode wird in der Regel ignoriert.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)

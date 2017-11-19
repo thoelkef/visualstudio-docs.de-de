@@ -1,47 +1,46 @@
 ---
-title: "IDiaFrameData::get_cplusplusExceptionHandling | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaFrameData::get_cplusplusExceptionHandling-Methode"
+title: 'Idiaframedata:: Get_cplusplusexceptionhandling | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaFrameData::get_cplusplusExceptionHandling method
 ms.assetid: 54ee9cde-ce8e-45f1-809c-6fbad800d850
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 130ef97cefd04e34652ee664007ad503438b1ccb
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaFrameData::get_cplusplusExceptionHandling
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Ruft ein Flag ab, das angibt, ob die C\+\+\-Ausnahmebehandlung aktiviert ist.  
+# <a name="idiaframedatagetcplusplusexceptionhandling"></a>IDiaFrameData::get_cplusplusExceptionHandling
+Ruft ein Flag, das angibt, ob C++-Ausnahmebehandlung wirksam ist.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT get_cplusplusExceptionHandling (   
-   BOOL* pRetVal  
+```C++  
+HRESULT get_cplusplusExceptionHandling (   
+   BOOL* pRetVal  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `pRetVal`  
- \[out\]  Gibt `TRUE` zurück, wenn die C\+\+\-Ausnahmebehandlung aktiv ist. andernfalls gibt `FALSE`zurück.  
+ [out] Gibt `TRUE` ist C++-Ausnahmebehandlung wirksam ist, andernfalls gibt `FALSE`.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück.  Gibt `S_FALSE` zurück, wenn diese Eigenschaft nicht unterstützt wird.  Andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`. Gibt `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Hinweise  
- Um zu bestimmen, ob die strukturierte Ausnahmebehandlung in Kraft ist \(die zu behandelnden der C\+\+\-Ausnahmebehandlung sehr unterschiedlich ist\), rufen Sie die [IDiaFrameData::get\_systemExceptionHandling](../../debugger/debug-interface-access/idiaframedata-get-systemexceptionhandling.md)\-Methode auf.  
+## <a name="remarks"></a>Hinweise  
+ Um festzustellen, ob die Ausnahme strukturiert Behandlung ist aktiviert (Dies ist grundlegend von C++-Ausnahmebehandlung), rufen Sie die [idiaframedata:: Get_systemexceptionhandling](../../debugger/debug-interface-access/idiaframedata-get-systemexceptionhandling.md) Methode.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)   
- [IDiaFrameData::get\_systemExceptionHandling](../../debugger/debug-interface-access/idiaframedata-get-systemexceptionhandling.md)
+ [IDiaFrameData::get_systemExceptionHandling](../../debugger/debug-interface-access/idiaframedata-get-systemexceptionhandling.md)

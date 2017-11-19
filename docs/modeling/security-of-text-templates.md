@@ -1,35 +1,36 @@
 ---
-title: "Security of Text Templates | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "text templates, security"
+title: Sicherheit von Textvorlagen | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: text templates, security
 ms.assetid: 567a2383-7d43-4acc-af4a-cd70b7a0151e
-caps.latest.revision: 23
-author: "alancameronwills"
-ms.author: "awills"
-manager: "douge"
-caps.handback.revision: 23
+caps.latest.revision: "23"
+author: alancameronwills
+ms.author: awills
+manager: douge
+ms.openlocfilehash: 7c99f0a519ec62a2b9946baba072b0256a78697a
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# Security of Text Templates
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Überlegungen zur Sicherheit von Textvorlagen:  
+# <a name="security-of-text-templates"></a>Sicherheit von Textvorlagen
+Textvorlagen haben die folgenden Sicherheitsaspekte:  
   
 -   Textvorlagen sind anfällig für das Einfügen von beliebigem Code.  
   
--   Wenn der vom Host zur Suche nach Direktivenprozessoren verwendete Mechanismus nicht sicher ist, kann ein böswilliger Direktivenprozessor ausgeführt werden.  
+-   Wenn der Mechanismus, den vom Host verwendet werden, finden Sie einen Direktivenprozessor nicht sicher ist, könnte ein böswilliger Direktivenprozessor ausgeführt werden.  
   
-## Beliebiger Code  
- Wenn Sie eine Vorlage schreiben, können Sie innerhalb der \<\# \#\>\-Tags beliebigen Code einfügen.  Dadurch kann beliebiger Code innerhalb einer Textvorlage ausgeführt werden.  
+## <a name="arbitrary-code"></a>Beliebigen Codes  
+ Wenn Sie eine Vorlage erstellen, können Sie put Code innerhalb der \<## > RFID-Transponder. Dies kann beliebigen Code innerhalb einer Textvorlage ausgeführt werden.  
   
- Verwenden Sie nur Vorlagen aus vertrauenswürdigen Quellen.  Weisen Sie die Endbenutzer der Anwendung darauf hin, dass Vorlagen, die nicht aus vertrauenswürdigen Quellen stammen, nicht ausgeführt werden dürfen.  
+ Achten Sie darauf, dass Sie die Vorlagen aus vertrauenswürdigen Quellen abrufen. Stellen Sie sicher, dass die Warnung, die Endbenutzer von der Anwendung nicht in Vorlagen ausführen, die nicht aus vertrauenswürdigen Quellen stammen.  
   
-## Böswilliger Direktivenprozessor  
- Das Textvorlagenmodul interagiert mit einem Transformationshost und einem oder mehreren Direktivenprozessoren, um den Vorlagentext in eine Ausgabedatei zu transformieren.  Weitere Informationen finden Sie unter [The Text Template Transformation Process](../modeling/the-text-template-transformation-process.md).  
+## <a name="malicious-directive-processor"></a>Böswillige Direktivenprozessor  
+ Das Textvorlagenmodul interagiert mit einem Transformationshost und eine oder mehrere Direktivenprozessoren zum Transformieren des Vorlage-Texts in eine Ausgabedatei. Weitere Informationen finden Sie unter [der Textvorlagen-Transformationsprozess](../modeling/the-text-template-transformation-process.md).  
   
- Wenn der vom Host zur Suche nach Direktivenprozessoren verwendete Mechanismus nicht sicher ist, besteht die Gefahr, dass ein böswilliger Direktivenprozessor ausgeführt wird.  Der böswillige Direktivenprozessor könnte Code bereitstellen, der bei der Ausführung der Vorlage im `FullTrust`\-Modus ausgeführt wird.  Wenn Sie einen benutzerdefinierten Textvorlagen\-Transformationshost erstellen, müssen Sie für das Modul einen sicheren Mechanismus zur Suche nach Direktivenprozessoren implementieren \(z. B. die Registrierung\).
+ Wenn der Mechanismus, den vom Host verwendet werden, finden Sie einen Direktivenprozessor nicht sicher ist, wird das Risiko der Ausführung eines böswilligen Direktivenprozessors ausgeführt. Der böswillige Direktivenprozessor könnte Code, der ausgeführt wird, in bereitstellen `FullTrust` Modus aus, wenn die Vorlage ausgeführt wird. Wenn Sie einen benutzerdefinierten Textvorlagen-Transformationshost erstellen, müssen Sie einen sicheren Mechanismus, wie z. B. die Registrierung für das Modul für die Suche nach Direktivenprozessoren verwenden.

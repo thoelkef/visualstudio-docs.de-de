@@ -1,62 +1,61 @@
 ---
-title: "IDiaSymbol::get_addressOffset | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSymbol::get_addressOffset-Methode"
+title: 'Idiasymbol:: Get_addressoffset | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSymbol::get_addressOffset method
 ms.assetid: c15639b0-7f37-46c7-891b-40273b7f6319
-caps.latest.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 3e13e130febd36f4b9bf8e0964ac00b78647b034
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSymbol::get_addressOffset
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Ruft den Offset in einem Adressenplatzes ab.  Verwenden Sie diese Option, wenn [LocationType\-Enumeration](../../debugger/debug-interface-access/locationtype.md) zu `LocIsStatic`festgelegt ist.  
+# <a name="idiasymbolgetaddressoffset"></a>IDiaSymbol::get_addressOffset
+Ruft den Zeitzonenoffset-Teil eines Speicherorts Adresse ab. Verwenden in folgenden Fällen die [LocationType-Enumeration](../../debugger/debug-interface-access/locationtype.md) festgelegt ist, um `LocIsStatic`.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT get_addressOffset (   
-   DWORD* pRetVal  
+```C++  
+HRESULT get_addressOffset (   
+   DWORD* pRetVal  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `pRetVal`  
- \[out\]  Gibt den Offset in einem Adressenplatzes zurück.  
+ [out] Gibt den Zeitzonenoffset-Teil eines Speicherorts Adresse zurück.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt `S_FALSE` oder einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
   
 > [!NOTE]
->  Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft nicht für das Symbol verfügbar ist.  
+>  Ein Rückgabewert von `S_FALSE` bedeutet, dass die Eigenschaft nicht für das Symbol verfügbar ist.  
   
-## Hinweise  
- Für die statischen Member in einem externen DLL, ist der Offset, der von dieser Methode zurückgegeben wird, 0, während diese Methode auf Abrufen der virtuelle Adresse des Members beruht.  Virtuelle Adressen sind nur gültig, wenn die [IDiaSession::put\_loadAddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md)\-Methode in der [IDiaSession](../../debugger/debug-interface-access/idiasession.md)\-Schnittstelle mit einem Parameter ungleich 0 \(null\) aufgerufen wurde, der die Ladeadresse der DLL angibt.  
+## <a name="remarks"></a>Hinweise  
+ Bei statischen Elementen in einer externen DLL befindet sich möglicherweise von dieser Methode zurückgegebene Offset 0, wie diese Methode stützt sich auf die virtuelle Adresse des Elements abrufen. Virtuelle Adressen sind gültige nur, wenn die [idiasession:: Put_loadaddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md) Methode in der [IDiaSession](../../debugger/debug-interface-access/idiasession.md) Schnittstelle mit Angabe der Adresse Laden der DLL Parameter ungleich NULL aufgerufen wurde.  
   
- Um den Abschnitt Teil einer Adresse abzurufen, rufen Sie die [IDiaSymbol::get\_addressSection](../../debugger/debug-interface-access/idiasymbol-get-addresssection.md)\-Methode auf.  
+ Um den Abschnitt Teil einer Adresse zu erhalten, rufen die [idiasymbol:: Get_addresssection](../../debugger/debug-interface-access/idiasymbol-get-addresssection.md) Methode.  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
   
 |Anforderung|Beschreibung|  
-|-----------------|------------------|  
+|-----------------|-----------------|  
 |Header:|dia2.h|  
-|Version:|DIA SDK v7.0|  
+|Version:|DIA-SDK Version 7.0|  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [LocationType\-Enumeration](../../debugger/debug-interface-access/locationtype.md)   
- [IDiaSymbol::get\_addressSection](../../debugger/debug-interface-access/idiasymbol-get-addresssection.md)   
- [IDiaSession::put\_loadAddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md)   
+ [LocationType-Enumeration](../../debugger/debug-interface-access/locationtype.md)   
+ [Idiasymbol:: Get_addresssection](../../debugger/debug-interface-access/idiasymbol-get-addresssection.md)   
+ [Idiasession:: Put_loadaddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md)   
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

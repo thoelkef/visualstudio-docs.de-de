@@ -1,49 +1,50 @@
 ---
-title: "Sicherheitsereignisse | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Debugereignisse [Debugging-SDK]"
+title: Ereignisbeschreibungen | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: debugging [Debugging SDK], events
 ms.assetid: 09f61652-7e16-4bb0-8055-f61a84bf384e
-caps.latest.revision: 7
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 6ce3e623a2d1787aa67f8a6e4dcfcf9530e8766c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Sicherheitsereignisse
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Jeder Typ Ereignis verfügt über einen bestimmten Zweck.  
+# <a name="event-descriptions"></a>Ereignisbeschreibungen
+Jede Art von Ereignis verfügt über einen bestimmten Zweck.  
   
-## Ereignisse und die Gründe für deren Verwendung  
+## <a name="events-and-the-reasons-for-their-use"></a>Ereignisse und die Gründe für deren Verwendung  
   
 |Ereignis|Beschreibung|  
-|--------------|------------------|  
-|Aktivieren Sie Dokumentereignisse|Wenden Sie sich ein, wenn das Debugmodul \(DE die IDE\) geöffnet oder ein Dokument in den Vordergrund bringen möchte.|  
-|fehlerereignisse Haltepunkt oder gebundene Haltepunkt|Gesendet, wenn ein Haltepunkt gebunden ist, oder wenn ein Haltepunkt nicht gebunden werden kann und ein Fehler wird zurückgegeben.|  
-|Ungebundene Ereignisse des Haltepunkts|Wenden Sie sich ein, wenn ein gebundener Haltepunkt im Code hebt.|  
-|Kann Ereignissen beenden|Gesendet zur IDE, um zu bestimmen, ob der Benutzer an einem angegebenen Punkt im Code beendet werden soll.|  
-|Haltepunkt Events|Wenden Sie sich ein, wenn ein Code oder ein Datenhaltepunkt erreicht wird.|  
-|Dokumenttext Events|Wenden Sie sich auf, wenn Text in einem Dokument geändert wird.  Diese Ereignisse werden nicht durch die `IDebugEventCallBack2::Event`\-Methode gesendet.|  
-|Erstellen von Modulen Ereignisse|Gesendet, wenn ein Modul zum ersten Mal erstellt wird.|  
-|Einstiegspunkt Events|Gesendet, wenn das Programm, das gedebuggt wird, den Initialisierungscode ausgeführt und seinen ersten Einstiegspunkt für Benutzer erreicht hat.|  
-|Ausnahmeereignisse|Gesendet, wenn ein Ausführen programm eine Ausnahme trifft.|  
-|Vollständige Ereignisse der Ausdrucksauswertung|Gesendet, wenn die asynchrone Ausdrucksauswertung abgeschlossen ist.|  
-|Ereignisse Symbol suchen|Gesendet, sobald der Benutzer DE angefordert werden müssen, Symbole für ein Modul zu suchen.|  
-|Vollständige Ereignisse des Ladevorgangs|Gesendet nur dann, wenn die Initialladen abgeschlossen sind und der erste Code im Begriff, in das Programm ausgeführt wird.|  
-|Ereignisse Nachrichten|Gesendet, wenn Nachrichten an den Benutzer gesendet werden.|  
-|Modulladeereignisse|Gesendet, wenn ein neues Modul geladen oder entladen wird.|  
-|Ausgabe von Zeichenfolgen|Gesendet, wenn das Programm Debugausgabe schreibt.|  
-|Erstellen und zerstören Sie Ereignisse|Gesendet, um die Erstellung oder Zerstörung von Prozessen, Programme, Eigenschaften, Sitzungen und Threads sodass Visual Studio\-IDE kann anzukündigen den Zustand der Programme verfolgen, die gedebuggt werden.|  
-|Vollständige Ereignisse des Schritts|Gesendet, wenn ein Schritt abgeschlossen ist.|  
-|Name des Threads von Änderungen|Gesendet, wenn der Benutzer den Namen eines Threads ändert.|  
-|Programmnamen von Änderungen|Gesendet, wenn der Benutzer den Namen eines Programms geändert wird.|  
+|-----------|-----------------|  
+|Dokumentereignisse aktivieren|Treten Sie auf, wenn die Debugging-Modul (DE) die IDE möchte zu öffnen oder ein Dokument in den Vordergrund bringen.|  
+|Haltepunkt gebunden oder Fehlerereignisse Haltepunkt|Gesendet, wenn ein Haltepunkt gebunden ist oder wenn ein Haltepunkt kann nicht gebunden werden und ein Fehler zurückgegeben.|  
+|Ungebundene Haltepunktereignisse|Treten Sie auf, wenn Sie ein gebundener Haltepunkt aus Code hebt die Bindung.|  
+|Ereignisse können beendet werden.|Der IDE gesendet, um zu bestimmen, ob der Benutzer an einem bestimmten Punkt im Code beenden möchten.|  
+|Haltepunktereignisse|Treten Sie auf, wenn ein Code- oder Datenmenge Haltepunkt erreicht wird.|  
+|Text Dokumentereignisse|Treten Sie auf, wenn der Text in einem Dokument geändert wird. Diese Ereignisse werden nicht gesendet, durch die `IDebugEventCallBack2::Event` Methode.|  
+|Ereignisse für Modul erstellen|Gesendet, wenn ein Modul zum ersten Mal erstellt wird.|  
+|Eintrag punktereignisse|Gesendet, wenn das Programm, das gerade gedebuggt wird der Initialisierungscode ausgeführt und seine erste benutzerdefinierter Einstiegspunkt erreicht.|  
+|Ausnahmeereignisse|Gesendet, wenn ein aktives Programm auf eine Ausnahme trifft.|  
+|Ereignisse durch Abschluss der Ausdruck Auswertung|Gesendet, wenn asynchrone ausdrucksauswertung abgeschlossen ist.|  
+|Symbol-Ereignisse suchen|Dann gesendet, wenn DE den Benutzer zur Symbolsuche für ein Modul um Unterstützung bitten muss.|  
+|Ereignisse durch Abschluss der Auslastung|Senden nur auf, wenn das erste Programm Laden abgeschlossen ist und im ersten Codebeispiel wird in der Anwendung vor der Ausführung.|  
+|Nachrichtenereignisse|Gesendet, wenn Nachrichten an Benutzer gesendet werden.|  
+|Ladeereignisse für Module|Gesendet, wenn ein neues Modul geladen oder entladen wird.|  
+|Ausgabeereignisse-Zeichenfolge|Gesendet, wenn das Programm die Debugausgabe schreibt.|  
+|Erstellen und Zerstören von Ereignissen|An der Erstellung oder Löschung von Prozesse "," Programme "," Eigenschaften "," Sitzungen "und" Threads anzukündigen, damit der Visual Studio-IDE Nachverfolgen der Status der gedebuggten Programme von kann gesendet werden.|  
+|Ereignisse durch Abschluss der Schritt|Gesendet, wenn ein Schritt abgeschlossen ist.|  
+|Thread-Änderungsereignisse bei Namen|Gesendet, wenn der Benutzer den Namen eines Threads ändert.|  
+|Ereignisse des Programms Name ändern|Gesendet, wenn der Benutzer den Namen eines Programms ändert.|  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Senden von Ereignissen](../../extensibility/debugger/sending-events.md)

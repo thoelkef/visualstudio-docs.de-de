@@ -1,35 +1,36 @@
 ---
-title: "Zugreifen auf Modelle aus Textvorlagen | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Textvorlagen, Zugreifen auf Modelle"
+title: "Zugreifen auf Modelle über Textvorlagen | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: text templates, accessing models
 ms.assetid: cf65395a-0ca3-4826-89c7-b1869562685c
-caps.latest.revision: 33
-author: "alancameronwills"
-ms.author: "awills"
-manager: "douge"
-caps.handback.revision: 33
+caps.latest.revision: "33"
+author: alancameronwills
+ms.author: awills
+manager: douge
+ms.openlocfilehash: 741fc8ac1ed4e0cc449c8010b71bd13a484933a8
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# Zugreifen auf Modelle aus Textvorlagen
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Mithilfe von Textvorlagen können Sie Berichtsdateien, Textdateien und andere Quellcodedateien erstellen, die auf domänenspezifische Sprachen modelle sind.  Eine grundlegende Informationen zu Textvorlagen finden Sie unter [Code Generation and T4 Text Templates](../modeling/code-generation-and-t4-text-templates.md).  Die Textvorlagen arbeiten im Testmodus gestartet, wenn Sie das Debuggen DSL und funktionieren auch auf einem Computer, auf dem das DSL bereitgestellt haben.  
+# <a name="accessing-models-from-text-templates"></a>Zugreifen auf Modelle aus Textvorlagen
+Mithilfe von Textvorlagen können Sie erstellen Berichtsdateien, Quellcodedateien und anderen Textdateien, die auf einer domänenspezifischen sprachenmodelle basieren. Grundlegende Informationen zu den Textvorlagen finden Sie unter [Codegenerierung und T4-Textvorlagen](../modeling/code-generation-and-t4-text-templates.md). Textvorlagen funktionieren in der experimentellen Modus während des Debuggens der DSL und funktioniert auch auf einem Computer, auf dem Sie die DSL bereitgestellt haben.  
   
 > [!NOTE]
->  Wenn Sie eine DSL\-Projektmappe erstellen, wird ein Beispieltext vorlagen\- **\*.tt** Dateien im Projekt Debuggen generiert.  Wenn Sie die Namen der Klassen für Domänen diese Vorlagen ändern, funktionieren nicht mehr.  Trotzdem schließen sie die grundlegenden \- Direktive ein, mit denen Sie Anforderung und Beispiele zur Verfügung stellen, die Sie aktualisieren können, um das DSL übereinstimmt.  
+>  Beim Erstellen einer DSL-Projektmappe, die Vorlage "Sample Text"  **\*TT** Dateien im Projekt Debuggen generiert werden. Wenn Sie den Namen der Domänenklassen ändern, werden diese Vorlagen ohne mehr funktionieren. Trotzdem sie enthalten die grundlegenden Richtlinien, die Sie benötigen und Beispiele, die Sie aktualisieren können, entsprechend der DSL.  
   
- So fügen Sie ein Modell aus einer Textvorlage zugreifen:  
+ Zugriff auf ein Modell aus einer Textvorlage:  
   
--   Legen Sie die erbens der Vorlagendirektive zu <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation>fest.  Dies stellt den Zugriff auf den Speicher.  
+-   Festlegen die Eigenschaft zum erben von der Vorlagendirektive auf <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation>. Dies ermöglicht den Zugriff auf den Speicher.  
   
--   Geben Sie Direktivenprozessoren für das DSL, das Sie zugreifen möchten.  Dadurch lädt die Assembly für das DSL, sodass Sie die Domänen Klassen, Eigenschaften und verhältnisse im Code der Textvorlage verwendet werden können.  Laden Sie auch die Modelldatei, die Sie angeben.  
+-   Geben Sie Direktivenprozessoren, für die DSL, die Sie zugreifen möchten. Dadurch werden die Assemblys für der DSL geladen, damit Sie ihre Domänenklassen, Eigenschaften und Beziehungen im Code der Textvorlage verwenden können. Es lädt auch die Modelldatei, die Sie angeben.  
   
- Eine `.tt` Datei mit dem folgenden Beispiel vergleichbar ist, wird Debuggen im Projekt erstellt, wenn Sie eine neue [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Projektmappe aus der minimalen Sprachen DSL Vorlage erstellen.  
+ Ein `.tt` Datei wie im folgenden Beispiel wird in der Debugging-Projekt erstellt, beim Erstellen einer neuen [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Lösung aus der Vorlage für die minimale DSL-Sprache.  
   
 ```  
 <#@ template inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation" #>  
@@ -52,57 +53,57 @@ Here is a list of elements in the model:
   
 ```  
   
- Beachten Sie die folgenden Punkte zu dieser Vorlage:  
+ Beachten Sie die folgenden Punkte bezüglich dieser Vorlage:  
   
--   Die Vorlage kann die Domänen Klassen, Eigenschaften und verhältnisse verwenden, die Sie in der DSL\-Definition definiert haben.  
+-   Die Vorlage können der Domänenklassen, Eigenschaften und Beziehungen, die Sie in der DSL-Definition definiert.  
   
--   Die Vorlage lädt die Modelldatei, die Sie in der `requires`\-Eigenschaft angeben.  
+-   Die Vorlage lädt die Modelldatei, die Sie, in angeben der `requires` Eigenschaft.  
   
--   Eine Eigenschaft in `this` das Stammelement enthält.  Von dort kann der Code an andere Elemente im Modell navigieren.  Der Name der Eigenschaft ist normalerweise der gleiche wie der Stammdomänen Klasse des DSL.  In diesem Beispiel ist es `this.ExampleModel`.  
+-   Eine Eigenschaft in `this` des Stammelements enthält. Von dort kann Ihren Code auf andere Elemente des Modells navigieren. Der Name der Eigenschaft ist in der Regel identisch mit der Stammklasse der Domäne von der DSL. In diesem Beispiel ist dies `this.ExampleModel`.  
   
--   Obwohl die Sprache, in der die Codefragmente C\# geschrieben wurde, können Sie die Art der Text generiert.  Sie können alternativ den Code in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] schreiben, indem Sie die Eigenschaft `language="VB"` auf `template`\-Direktive hinzufügen.  
+-   Obwohl die Sprache, in der die Codefragmente geschrieben werden c# ist, können Sie den Text beliebiger Art generieren. Alternativ können Sie den Code schreiben, [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] durch Hinzufügen der Eigenschaft `language="VB"` auf die `template` Richtlinie.  
   
--   Um die Vorlage zu debuggen, fügen Sie den `debug="true"``template`\-Direktive hinzu.  Die Vorlage wird in einer anderen Instanz von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] , wenn eine Ausnahme auftritt.  Wenn Sie den Debugger an einem bestimmten Punkt im Code beeinflussen möchten, fügen Sie die Anweisung ein `System.Diagnostics.Debugger.Break();`  
+-   Um die Vorlage zu debuggen, hinzufügen `debug="true"` auf die `template` Richtlinie. Die Vorlage wird geöffnet, in eine andere Instanz von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] , wenn eine Ausnahme auftritt. Wenn der Debugger zu einem bestimmten Zeitpunkt im Code unterbrochen werden sollen, fügen Sie die Anweisung`System.Diagnostics.Debugger.Break();`  
   
-     Weitere Informationen finden Sie unter [Debugging a T4 Text Template](../modeling/debugging-a-t4-text-template.md).  
+     Weitere Informationen finden Sie unter [Debuggen einer T4-Textvorlage](../modeling/debugging-a-t4-text-template.md).  
   
-## Neben den Prozessor DSL\-Direktiven  
- Die Vorlage kann die Domänen Klassen verwenden, die Sie in der DSL\-Definition definiert haben.  Dies wird durch Direktive bewerkstelligt, die normalerweise nach dem Start der Vorlage angezeigt wird.  Im vorherigen Beispiel ist dies Folgendes:  
+## <a name="about-the-dsl-directive-processor"></a>Informationen zu den Direktivenprozessor DSL  
+ Die Vorlage kann die Domänenklassen verwenden, die Sie in der DSL-Definition definiert. Dies wird durch eine Direktive geschaltet zu, die in der Regel am Anfang der Vorlage angezeigt wird. Im vorherigen Beispiel gibt es folgenden Wert.  
   
 ```  
 <#@ MyLanguage processor="MyLanguageDirectiveProcessor" requires="fileName='Sample.myDsl1'" #>  
 ```  
   
- Der Name der Direktive \( `MyLanguage`in diesem Beispiel\) besteht aus dem Namen des DSL abgeleitet.  Er ruft einen Direktivenprozessor *,* der als Teil des DSL generiert wird.  Sie können den Quellcode in **Dsl\\GeneratedCode\\DirectiveProcessor.cs**suchen.  
+ Der Name der Richtlinie ( `MyLanguage`, in diesem Beispiel) ist der Name des der DSL abgeleitet. Ruft eine *Direktivenprozessor* , wird als Teil der DSL generiert. Sie finden den Quellcode in **Dsl\GeneratedCode\DirectiveProcessor.cs**.  
   
- Der Direktivenprozessor DSL führt zwei Haupttaske aus:  
+ Die Direktivenprozessor DSL führt zwei Hauptaufgaben:  
   
--   Sie fügt Import\-Direktiven Assembly\- und effektiv in der Vorlage ein, die das DSL verweist.  Auf diese Weise können Sie die Domänen Klassen im Vorlagencode verwendet werden.  
+-   Effektiv werden die Vorlage, die der DSL verweist auf Assembly "und" Import-Anweisungen eingefügt. Dadurch können Sie Ihre Domänenklassen im Vorlagencode verwenden.  
   
--   Laden Sie die Datei, die Sie im `requires`\-Parameter angeben, und legt eine Eigenschaft in `this` fest, die das Stammelement des geladenen Modells verweist.  
+-   Es lädt die Datei, die Sie, in angeben der `requires` Parameter, und Festlegen einer Eigenschaft `this` , das das Stammelement des geladenen Modells bezeichnet.  
   
-## Das Modell prüfen, bevor die Vorlage ausgeführt wird  
- Sie können bewirken, dass das Modell überprüft werden, bevor die Vorlage ausgeführt wird.  
+## <a name="validating-the-model-before-running-the-template"></a>Beim Validieren des Modells vor dem Ausführen der Vorlage  
+ Sie können dazu führen, dass das Modell validiert werden, bevor die Vorlage ausgeführt wird.  
   
 ```  
 <#@ MyLanguage processor="MyLanguageDirectiveProcessor" requires="fileName='Sample.myDsl1';validation='open|load|save|menu'" #>  
   
 ```  
   
- Beachten Sie:  
+ Beachten Sie Folgendes:  
   
-1.  Die `filename` und `validation`\-Parameter werden durch „begrenzt. “ und es muss keine anderen Kommas oder Leerzeichen verwenden.  
+1.  Die `filename` und `validation` Parameter werden getrennt, mit ";" und keine anderen Trennzeichen oder Leerzeichen vorhanden sein muss.  
   
-2.  Die Liste der Kategorien Validierung, die Validierungsmethoden ausgeführt werden.  Verschiedene Kategorien sollten mit getrennten „&#124;“ und es muss keine anderen Kommas oder Leerzeichen verwenden.  
+2.  Die Liste der Validierungskategorien bestimmt die Validierungsmethoden ausgeführt werden. Mehrere Kategorien getrennt werden soll, mit "&#124;" und keine anderen Trennzeichen oder Leerzeichen vorhanden sein muss.  
   
- Wenn ein Fehler gefunden wird, wird er im Fehlerfenster angezeigt, und die Ergebnisdatei enthält eine Fehlermeldung angezeigt.  
+ Wenn ein Fehler gefunden wird, werden Sie im Fenster "Debugfehler" gemeldet werden, und die Ergebnisdatei enthält eine Fehlermeldung angezeigt.  
   
-##  <a name="Multiple"></a> Mehrere Modelle in einer Textvorlage zugreifen.  
+##  <a name="Multiple"></a>Zugriff auf mehrere Modelle in einer Textvorlage  
   
 > [!NOTE]
->  Mit dieser Methode können Sie mehrere Modelle in der gleichen Vorlage jedoch nicht unterstützt ModelBus\-Verweise lesen.  Um Modelle zu lesen die von ModelBus\-Verweise verbundenen werden, finden Sie unter [Verwenden von Visual Studio\-ModelBus in einer Textvorlage](../modeling/using-visual-studio-modelbus-in-a-text-template.md).  
+>  Diese Methode können Sie mehrere Modelle in der gleichen Vorlage gelesen, jedoch keine ModelBus-Verweise. Modelle, die von ModelBus Verweise miteinander verbunden sind, finden Sie unter [mithilfe von Visual Studio-ModelBus in einer Textvorlage](../modeling/using-visual-studio-modelbus-in-a-text-template.md).  
   
- Wenn Sie mehr als ein Modell aus der gleichen Textvorlage zugreifen möchten, müssen Sie den generierten Direktivenprozessor einmal für jedes Modell aufrufen.  Sie müssen den Dateinamen jedes Modells im `requires`\-Parameter angeben.  Sie müssen den Namen angeben, die Sie für die Stammdomänen \- Klasse im `provides`\-Parameter verwenden möchten.  Sie müssen verschiedene Werte für die Parameter `provides` in jedem der Aufrufe angeben.  Angenommen, Sie verfügen über drei Dateien des Modells, die Library.xyz, School.xyz und Work.xyz aufgerufen werden.  Um diese aus der gleichen Textvorlage zuzugreifen, müssen Sie drei richtungweisende Aufrufe schreiben die die folgenden Code ähneln.  
+ Wenn Sie mehr als ein Modell aus der gleichen Textvorlage zugreifen möchten, müssen Sie den generierten Direktivenprozessor einmal für jedes Modell aufrufen. Geben Sie den Namen der einzelnen Modelle in der `requires` Parameter. Sie müssen die Namen angeben, die Sie für die Domäne Stammklasse in verwenden möchten die `provides` Parameter. Geben Sie unterschiedliche Werte für die `provides` Parameter in jeder Richtlinie aufruft. Nehmen wir beispielsweise an, dass Sie drei Modelldateien Library.xyz School.xyz und Work.xyz aufgerufen haben. Um diese von der gleichen Textvorlage zuzugreifen, müssen Sie drei-Direktive Aufrufe schreiben, die dem folgenden ähneln.  
   
 ```  
 <#@ ExampleModel processor="<YourLanguageName>DirectiveProcessor" requires="fileName='Library.xyz'" provides="ExampleModel=LibraryModel" #>  
@@ -111,11 +112,11 @@ Here is a list of elements in the model:
 ```  
   
 > [!NOTE]
->  Dieser Beispielcode ist für eine Sprache, die auf die minimale Sprachen Vorlage Projektmappe.  
+>  Dieser Beispielcode ist für eine Sprache, die auf die minimale Sprache Projektmappenvorlage basieren.  
   
- Um die Modelle in der Textvorlage zuzugreifen, können Sie nun den Code schreiben, der mit dem Code im folgenden Beispiel ähnelt.  
+ Um die Modelle in der Textvorlage zuzugreifen, können Sie jetzt Code ähnlich dem Code im folgenden Beispiel schreiben.  
   
-```c#  
+```csharp  
 <#  
 foreach (ExampleElement element in this.LibraryModel.Elements)  
 ...  
@@ -126,7 +127,7 @@ foreach (ExampleElement element in this.WorkModel.Elements)
 #>  
 ```  
   
-```vb#  
+```vb  
 <#  
 For Each element As ExampleElement In Me.LibraryModel.Elements  
 ...  
@@ -137,22 +138,22 @@ For Each element As ExampleElement In Me.WorkModel.Elements
 #>  
 ```  
   
-## Dynamisches Laden von Modellen  
- Wenn Sie während der Laufzeit ermitteln möchten, das modelliert, die geladen werden sollen, können Sie eine Modelldatei im Programmcode dynamisch laden, statt die DSL\-Besondere \- Direktive verwenden.  
+## <a name="loading-models-dynamically"></a>Dynamisches Laden von Modellen  
+ Wenn Sie zur Laufzeit zu ladenden welche Modelle ermitteln möchten, können Sie eine Modelldatei im Programmcode, statt mit der DSL-spezifische-Direktive dynamisch laden.  
   
- Dennoch ist eine der Funktionen der DSL\-Besondere Direktive, die DSL\-Namespace zu importieren, für den Vorlagencode die Domänen Klassen verwenden kann, die in diesem DSL definiert sind.  Da Sie nicht die Direktive verwenden, müssen Sie **\<assembly\>** und **\<import\>**\-Direktive für alle Modelle hinzufügen, die Sie möglicherweise lüden.  Dies ist einfach, wenn die verschiedenen Modelle, die Sie lüden, alle Instanzen des gleichen DSL sind.  
+ Zu den Funktionen der DSL-spezifische Richtlinie ist jedoch der DSL-Namespace zu importieren, sodass der Vorlagencode in dieser DSL definierten Domänenklassen verwenden kann. Da Sie nicht die Direktive verwenden, müssen Sie hinzufügen  **\<Assembly >** und  **\<Importieren >** Direktiven für alle Modelle, die Sie laden können. Dies ist einfach, wenn die verschiedenen Modelle, die Sie laden können alle Instanzen des gleichen DSL sind.  
   
- So laden Sie die Datei sollte die effektivste Methode, indem sie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus verwendet.  In einem typischen Szenario verwendet die Textvorlage DSL\-Besondere \- Direktive, um das erste Modell wie gewöhnliche zu laden.  Dieses Modell ModelBus\-Verweise auf ein anderes Modell enthalten ist.  Sie können ModelBus verwenden, um das Modell zu öffnen und auf ein bestimmtes Element zuzugreifen.  Weitere Informationen finden Sie unter [Verwenden von Visual Studio\-ModelBus in einer Textvorlage](../modeling/using-visual-studio-modelbus-in-a-text-template.md).  
+ Um die Datei zu laden, ist die effizienteste Methode mit [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus. In einem typischen Szenario wird die Textvorlage DSL-spezifische-Direktive verwenden, um das erste Modell auf die übliche Weise zu laden. Dieses Modell würde ModelBus Verweise auf ein anderes Modell enthalten. ModelBus können Sie das referenzierte Modell zu öffnen und ein bestimmtes Element zugreifen. Weitere Informationen finden Sie unter [mithilfe von Visual Studio-ModelBus in einer Textvorlage](../modeling/using-visual-studio-modelbus-in-a-text-template.md).  
   
- In einem weniger üblichen Szenario sollten Sie eine Modelldatei öffnen, für die Sie nur einen Dateinamen und die nicht im aktuellen [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Projekt sein könnte.  In diesem Fall können Sie die Datei öffnen, indem Sie das Verfahren verwenden, die in [Gewusst wie: Öffnen eines Modells aus einer Datei im Programmcode](../modeling/how-to-open-a-model-from-file-in-program-code.md)beschrieben wird.  
+ In einem Szenario mit weniger üblich, Sie möchten eine Modelldatei zu öffnen, für die Sie nur einen Dateinamen haben, und die möglicherweise nicht in der aktuellen [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Projekt. In diesem Fall können Sie die Datei öffnen, indem Sie mithilfe der Technik, die in beschriebenen [Vorgehensweise: Öffnen Sie ein Modell aus der Datei im Programmcode](../modeling/how-to-open-a-model-from-file-in-program-code.md).  
   
-## Mehrere Dateien mit einer Vorlage generieren  
- Wenn Sie mehrere Dateien generieren möchten, z. B. eine separate Datei für jedes Element in einem Modell generieren, gibt es einige mögliche Vorgehensweisen.  Standardmäßig wird nur eine Datei aus einer Vorlagendatei generiert.  
+## <a name="generating-multiple-files-from-a-template"></a>Generieren mehrere Dateien aus einer Vorlage  
+ Wenn Sie mehrere Dateien - generieren möchten z. B. stehen zum Generieren einer separaten Datei für jedes Element in einem Modell verschiedene Möglichkeiten. Standardmäßig ist nur eine Datei aus jeder Vorlagendatei erstellt.  
   
-### Eine lange Datei aufteilen  
- In dieser Methode können Sie eine Vorlage, um eine einzelne Datei zu generieren, getrennt durch ein Trennzeichen.  Dann Sie die Datei in ihre Teile aufgeteilt.  Es gibt zwei Vorlagen, die eine einzelne Datei zu generieren und die andere, um sie zu teilen.  
+### <a name="splitting-a-long-file"></a>Teilen eines langen Dateinamens  
+ Bei dieser Methode verwenden Sie eine Vorlage, um eine einzelne Datei, die durch ein Trennzeichen getrennt zu generieren. Teilen Sie Sie dann die Datei, in seine Bestandteile. Es gibt zwei Vorlage zum Generieren der einzelnen Datei und das andere, um sie aufgeteilt.  
   
- **LoopTemplate.t4** generiert die lange einzelne Datei.  Beachten Sie, dass die Dateierweiterung „.t4“ ist, da sie nicht direkt verarbeitet werden soll, wenn Sie auf **Alle Vorlagen transformieren**klicken.  Diese Vorlage akzeptiert einen Parameter, der die Trennzeichenfolge angibt, die die Segmente unterteilt:  
+ **LoopTemplate.t4** lang Einzeldatei generiert. Beachten Sie, dass die Dateierweiterung ".t4", da sie nicht verarbeitet werden soll, direkt beim Klicken auf **alle Vorlagen transformieren**. Diese Vorlage nimmt einen Parameter an, das Trennzeichen an, das die Segmente unterteilt:  
   
 ```  
 <#@ template ninherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation" #>  
@@ -175,7 +176,7 @@ For Each element As ExampleElement In Me.WorkModel.Elements
   
 ```  
   
- `LoopSplitter.tt` ruft `LoopTemplate.t4`auf und weist dann die resultierende Datei in den zugehörigen Segmenten.  Beachten Sie, dass diese Vorlage Modellierungs keine Vorlage sein muss, da sie nicht das Modell liest.  
+ `LoopSplitter.tt`Ruft `LoopTemplate.t4`, und klicken Sie dann die resultierende Datei in seine Segmente unterteilt. Beachten Sie, dass diese Vorlage nicht unbedingt eine Modellierung Vorlage sein, da das Modell nicht gelesen werden.  
   
 ```  
 <#@ template hostspecific="true" language="C#" #>  

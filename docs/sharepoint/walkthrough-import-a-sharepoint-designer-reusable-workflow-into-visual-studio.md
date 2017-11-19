@@ -1,16 +1,13 @@
 ---
-title: 'Walkthrough: Import a SharePoint Designer Reusable Workflow into Visual Studio | Microsoft Docs'
+title: 'Exemplarische Vorgehensweise: Importieren ein Wiederverwendbaren Workflows aus SharePoint-Designer in Visual Studio | Microsoft Docs'
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- VS.SharePointTools.WSPImport.ImportWF
+f1_keywords: VS.SharePointTools.WSPImport.ImportWF
 dev_langs:
 - VB
 - CSharp
@@ -20,256 +17,257 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, importing reusable workflows
 - reusable workflows [SharePoint development in Visual Studio]
 ms.assetid: a6550615-4433-4aba-8bdf-0fcbf8dbcf97
-caps.latest.revision: 35
-author: kempb
-ms.author: kempb
+caps.latest.revision: "35"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: f52df274dd2c2f74abb182e84c9dae58eb2fc343
-ms.contentlocale: de-de
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: da498bd8b6b19670b98c2e0a8f84c1a0bff4b40d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio"></a>Walkthrough: Import a SharePoint Designer Reusable Workflow into Visual Studio
-  This walkthrough demonstrates how to import a reusable workflow created in SharePoint Designer 2010 into a [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint workflow project.  
+# <a name="walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio"></a>Exemplarische Vorgehensweise: Importieren eines wiederverwendbaren Workflows aus SharePoint-Designer in Visual Studio
+  Diese exemplarische Vorgehensweise veranschaulicht, wie zum Importieren eines wiederverwendbaren Workflows aus SharePoint Designer 2010 in erstellt ein [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint-Workflowprojekt.  
   
- Workflows created in SharePoint Designer, or *declarative workflows*, consist of [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] statements instead of code. SharePoint Designer 2010 introduces *reusable workflows*, which are portable, declarative workflows that can be used by different lists in SharePoint sites.  
+ Im SharePoint-Designer erstellten Workflows oder *deklarativer Workflows*, bestehen aus [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] Anweisungen anstelle von Code. SharePoint Designer 2010 gibt es *wiederverwendbare Workflows*, welche sind portable, deklarativen Workflows, die von anderen Listen in SharePoint-Websites verwendet werden können.  
   
- Workflows created in [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)], such as sequential and state machine workflows, are called *code workflows*. Code workflows consist of XML files and code modules in which users can customize the workflow's behavior.  
+ In erstellte Workflows [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)], z. B. sequenzielle und Zustandsautomatworkflows, heißen *code Workflows*. Codeworkflows bestehen aus XML-Dateien und Codemodule, die in denen Benutzer das Verhalten des Workflows anpassen können.  
   
- Visual Studio allows you to import reusable workflows created in SharePoint Designer 2010 and convert them to code workflows for use in your SharePoint sites.  
+ Visual Studio können Sie zum Importieren von wiederverwendbaren Workflows, die in SharePoint Designer 2010 erstellt und zum von Codeworkflows für die Verwendung in Ihrer SharePoint-Websites zu konvertieren.  
   
- This walkthrough demonstrates the following tasks:  
+ Diese exemplarische Vorgehensweise enthält die folgenden Aufgaben:  
   
--   Creating a simple, reusable workflow in SharePoint Designer.  
+-   Erstellen einen einfachen, wiederverwendbaren Workflow in SharePoint Designer.  
   
--   Exporting the SharePoint Designer reusable workflow to a .wsp file and into SharePoint.  
+-   Export des wiederverwendbaren SharePoint Designer-Workflows in SharePoint in der WSP-Datei.  
   
--   Importing the .wsp file into [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] by using the Import Reusable Workflow project.  
+-   Importieren von WSP-Datei in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] mit dem Projekt Wiederverwendbaren Workflow importieren.  
   
--   Altering the workflow by adding code.  
+-   Ändern des Workflows durch Hinzufügen von Code.  
   
--   Using the imported workflow in a SharePoint site.  
+-   Verwenden den importierten Workflow in einer SharePoint-Website.  
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
-## <a name="prerequisites"></a>Prerequisites  
- You need the following components to complete this walkthrough:  
+## <a name="prerequisites"></a>Erforderliche Komponenten  
+ Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:  
   
--   Supported editions of [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] and SharePoint. For more information, see [Requirements for Developing SharePoint Solutions](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
+-   Unterstützte Editionen von [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] und SharePoint. Weitere Informationen finden Sie unter [Anforderungen für die Entwicklung von SharePoint-Lösungen](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
   
 -   Visual Studio.  
   
 -   Microsoft [!INCLUDE[TLA2#tla_office](../sharepoint/includes/tla2sharptla-office-md.md)] SharePoint Designer 2010.  
   
-## <a name="create-target-sharepoint-subsites"></a>Create Target SharePoint Subsites  
- First you create two new SharePoint subsites: one to host the reusable workflows from SharePoint Designer, another to host the converted workflows.  
+## <a name="create-target-sharepoint-subsites"></a>Ziel SharePoint Unterwebsites erstellen  
+ Zunächst erstellen Sie zwei neue SharePoint-Unterwebsites: eine zum Hosten von wiederverwendbaren Workflows aus SharePoint-Designer, ein weiteres zum Hosten der konvertierten Workflows.  
   
-#### <a name="to-create-sharepoint-subsites"></a>To create SharePoint subsites  
+#### <a name="to-create-sharepoint-subsites"></a>Zum Erstellen von SharePoint-Unterwebsites  
   
-1.  In SharePoint Designer 2010, on the menu bar, choose **File**, **New Blank Web Site**.  
+1.  Wählen Sie in SharePoint Designer 2010 in der Menüleiste **Datei**, **neue leere Website**.  
   
-2.  In the **New Blank Web Site** dialog box, browse to a SharePoint site where you want to create the workflow, or use the value of http://*SystemName*/ and then choose the **OK** button.  
+2.  In der **neue leere Website** (Dialogfeld), navigieren Sie zu einer SharePoint-Website möchten Sie den Workflow erstellen, oder verwenden Sie den Wert der http://*SystemName*/ und wählen Sie dann die **OK** Schaltfläche ".  
   
-     The Home page appears.  
+     Auf der Startseite angezeigt wird.  
   
-3.  In the **Subsites** section, choose the **New** button.  
+3.  In der **Unterwebsites** Abschnitt der **neu** Schaltfläche.  
   
-4.  In the **New** dialog box, choose **SharePoint Templates** from the list in the left pane, and choose **Team Site** from the list in the right pane.  
+4.  In der **neu** Dialogfeld Wählen Sie **SharePoint-Vorlagen** aus der Liste im linken Bereich, und wählen Sie **Teamwebsite** aus der Liste im rechten Bereich.  
   
-5.  In the **Specify the location of the Web site** box, replace the word **subsite** in the URL with **SPD1**, and then choose the **OK** button.  
+5.  In der **Geben Sie den Speicherort der Website** Feld, ersetzen Sie das Wort **Unterwebsite** in der URL durch **SPD1**, und wählen Sie dann die **OK** Schaltfläche.  
   
-     This opens the new subsite into SharePoint Designer. Close this instance of SharePoint Designer and go back to the first instance (the top-level site).  
+     Dadurch wird die neue Unterwebsite im SharePoint-Designer geöffnet. Schließen Sie diese Instanz des SharePoint-Designers, und wechseln Sie zurück zur ersten Instanz (Standort der obersten Ebene).  
   
-6.  Repeat steps 3 - 5 to create the second subsite, this time replacing the word **subsite** in the [!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)] with **SPD2**.  
+6.  Wiederholen Sie die Schritte 3 bis 5, um die zweite Unterwebsite diesmal das Wort ersetzen erstellen **Unterwebsite** in der [!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)] mit **SPD2**.  
   
-## <a name="create-a-sharepoint-designer-reusable-workflow"></a>Create a SharePoint Designer Reusable Workflow  
- Because SharePoint does not include any reusable workflows that you can use for this example, you will create one. In this simple workflow, when a user enters a new task in the Task list that has a specific title, the task is assigned to that user.  
+## <a name="create-a-sharepoint-designer-reusable-workflow"></a>Erstellen eines Wiederverwendbaren Workflows aus SharePoint-Designer  
+ Da SharePoint nicht wieder verwendbaren Workflows enthält, die Sie für dieses Beispiel verwenden können, erstellen Sie eine. Wenn ein Benutzer eine neue Aufgabe in der Aufgabenliste eingibt, die einen bestimmten Titel verfügt, wird die Aufgabe in diesem einfachen Workflow für diesen Benutzer zugewiesen.  
   
-#### <a name="to-create-a-sharepoint-designer-reusable-workflow"></a>To create a SharePoint Designer reusable workflow  
+#### <a name="to-create-a-sharepoint-designer-reusable-workflow"></a>Zum Erstellen eines wiederverwendbaren Workflows aus SharePoint-Designer  
   
-1.  In the **Subsites** section, choose the **SPD1** site to modify it.  
+1.  In der **Unterwebsites** Abschnitt der **SPD1** Website ändern.  
   
-2.  On the ribbon, choose the **Reusable Workflow** button.  
+2.  Wählen Sie auf dem Menüband der **Wiederverwendbaren Workflow** Schaltfläche.  
   
-     The Create Reusable Workflow wizard appears.  
+     Das Erstellen eines Wiederverwendbaren Workflows-Assistent wird angezeigt.  
   
-3.  In the **Name** box, enter **SPD Task Workflow**.  
+3.  In der **Namen** geben **SPD Aufgabenworkflow**.  
   
-4.  In the **Content Type** list, choose **Task**, and then choose the **OK** button.  
+4.  In der **Inhaltstyp** wählen **Aufgabe**, und wählen Sie dann die **OK** Schaltfläche.  
   
-     The workflow opens in the SharePoint Designer workflow designer.  
+     Der Workflow wird in der SharePoint Designer-Workflow-Designer geöffnet.  
   
-5.  In the workflow designer, choose Step 1, and then, on the ribbon, choose the **Condition** button.  
+5.  Klicken Sie im Workflow-Designer, wählen Sie Schritt 1, und wählen Sie dann im Menüband die **Bedingung** Schaltfläche.  
   
-6.  In the list of conditions, choose **If current item field equals value**.  
+6.  Wählen Sie in der Liste der Bedingungen, **Wenn aktuelle des Arbeitsaufgabenfelds Wert**.  
   
-     This step adds a condition that's named **If field equals value**.  
+     Dieser Schritt fügt eine Bedingung mit dem Namen **Feld Wert gleich**.  
   
-7.  In the **If field equals value** condition, choose the **field** link.  
+7.  In der **Feld Wert gleich** Bedingung, und wählen Sie die **Feld** Link.  
   
-8.  In the list of values, choose **Title**.  
+8.  Wählen Sie in der Werteliste **Titel**.  
   
-9. In the **If field equals value** condition, choose the **value** link.  
+9. In der **Feld Wert gleich** Bedingung, und wählen Sie die **Wert** Link.  
   
-10. In the box, enter **New task**.  
+10. Geben Sie im Feld **neue Aufgabe**.  
   
-     The condition statement now reads **If Current Item:Title equals New task**.  
+     Liest die bedingungsanweisung jetzt **Wenn aktuelle: Titel des Elements gleich neue Aufgabe**.  
   
-11. Choose the line under the condition statement, and then, on the ribbon, choose the **Action** button.  
+11. Wählen Sie die Zeile unter der bedingungsanweisung, und wählen Sie dann im Menüband die **Aktion** Schaltfläche.  
   
-12. In the list of actions, choose **Set field in current item**.  
+12. Wählen Sie in der Liste der Aktionen, **Set-Feld im aktuellen Element**.  
   
-13. In the **Set field to value** action, choose the **field** link, and then, in the list, choose **Assigned to**.  
+13. In der **Set-Feld Wert** Aktion, wählen Sie die **Feld** verknüpfen, und wählen Sie dann in der Liste **zugewiesene**.  
   
-14. In the **Set field to value** action, choose the **value** link, and then, in the list of existing users and groups, choose **User who created the item**.  
+14. In der **Set-Feld Wert** Aktion, wählen Sie die **Wert** verknüpfen, und wählen Sie dann in der Liste der vorhandenen Benutzer und Gruppen, **Benutzer, der das Element erstellt**.  
   
-15. Choose the **Add** button, and then choose the **OK** button.  
+15. Wählen Sie die **hinzufügen** aus, und klicken Sie dann die **OK** Schaltfläche.  
   
-     The action statement now reads **Set Assigned To to Current Item:CreatedBy**.  
+     Liest die Action-Anweisung jetzt **festgelegt zugewiesen an zum aktuellen Element: CreatedBy**.  
   
-## <a name="save-and-deploy-the-reusable-workflow"></a>Save and Deploy the Reusable Workflow  
- Because [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] can import only .wsp files, you must save the reusable workflow as a .wsp file and deploy it to SharePoint before importing it into [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
+## <a name="save-and-deploy-the-reusable-workflow"></a>Speichern und Bereitstellen von Wiederverwendbaren Workflows  
+ Da [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] können nur die WSP-Dateien importieren, müssen Sie die wiederverwendbaren Workflow als WSP-Datei speichern und für SharePoint bereitgestellt werden, vor dem Importieren ihn in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
 > [!IMPORTANT]  
->  If you receive a runtime error performing the following procedure, you have to perform the procedure on a system that has access to the SharePoint site.  
+>  Wenn Sie einen Laufzeitfehler des folgenden Verfahrens erhalten, müssen Sie das Verfahren auf einem System ausführen, die auf der SharePoint-Website zugreifen.  
   
-#### <a name="to-save-and-deploy-the-reusable-workflow"></a>To save and deploy the reusable workflow  
+#### <a name="to-save-and-deploy-the-reusable-workflow"></a>Speichern und Bereitstellen von wiederverwendbaren Workflows  
   
-1.  At the top of SharePoint Designer, choose the **Save** button to save your progress, and then choose the **Publish** button to deploy the workflow to the **SPD1** SharePoint site.  
+1.  Klicken Sie oben auf der SharePoint-Designer wählen Sie die **speichern** Schaltfläche, um den Fortschritt zu speichern, und wählen Sie dann die **veröffentlichen** Schaltfläche, um den Workflow zum Bereitstellen der **SPD1** SharePoint-Website .  
   
-2.  In the Navigation pane, choose the **Workflows** object.  
+2.  Wählen Sie im Navigationsbereich die **Workflows** Objekt.  
   
-3.  Under **Reusable Workflow**, choose **SPD Task Workflow**.  
+3.  Klicken Sie unter **Wiederverwendbaren Workflow**, wählen Sie **SPD Aufgabenworkflow**.  
   
-4.  On the ribbon, choose the **Save as Template** button to save the workflow as a .wsp file.  
+4.  Wählen Sie auf dem Menüband der **als Vorlage speichern** Schaltfläche, um den Workflow als WSP-Datei zu speichern.  
   
-5.  Open the **SPD1** SharePoint site in a browser to view the .wsp file in SharePoint.  
+5.  Öffnen der **SPD1** SharePoint-Website in einem Browser, um die WSP-Datei in SharePoint anzuzeigen.  
   
-6.  On the QuickLaunch bar, choose the **Libraries** link.  
+6.  Wählen Sie in der Schnellstartleiste der **Bibliotheken** Link.  
   
-7.  In the **Document Libraries** section, choose the **Site Assets** link.  
+7.  In der **Dokumentbibliotheken** Abschnitt der **Site Anlagen** Link.  
   
-     The **SPD Task Workflow** file is listed with other site assets.  
+     Die **SPD Aufgabenworkflow** Datei wird mit den anderen Standort Ressourcen aufgeführt.  
   
-8.  In the list of files, choose the name of that file  
+8.  Wählen Sie in der Liste der Dateien den Namen der Datei  
   
-9. In the **File Download** dialog box, choose the **Save** button to save the .wsp file on your local system.  
+9. In der **Dateidownload** Dialogfeld Wählen Sie die **speichern** Schaltfläche, um die WSP-Datei auf dem lokalen System zu speichern.  
   
-## <a name="import-the-wsp-file-into-visual-studio"></a>Import the .wsp File into Visual Studio  
- Import the .wsp file into [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] by using an Import Reusable Workflow project. This project converts the workflow from a reusable, declarative workflow into a code workflow. After the workflow is converted, you will use code to modify its behavior.  
+## <a name="import-the-wsp-file-into-visual-studio"></a>Importieren Sie die WSP-Datei in Visual Studio  
+ Importieren Sie die WSP-Datei in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] mit einem Projekt Wiederverwendbaren Workflow importieren. Dieses Projekt konvertiert den Workflow aus einer wiederverwendbaren deklarativen Workflow in einem Code-Workflow. Nachdem der Workflow konvertiert wurde, werden Sie Code verwenden, um dessen Verhalten zu ändern.  
   
-#### <a name="to-import-a-workflow-from-a-wsp-file-and-modify-it"></a>To import a workflow from a .wsp file and modify it  
+#### <a name="to-import-a-workflow-from-a-wsp-file-and-modify-it"></a>Um einen Workflow aus einer WSP-Datei importieren und ändern es  
   
-1.  In [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], on the menu bar, choose **File**, **New**, **Project**.  
+1.  In [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], wählen Sie in der Menüleiste **Datei**, **neu**, **Projekt**.  
   
-2.  In the **New Project** dialog box, expand the **SharePoint** node under either **Visual C#** or **Visual Basic**, and then choose the **2010** node.  
+2.  In der **neues Projekt** Dialogfeld erweitern Sie die **SharePoint** Knoten unter einem **Visual C#-** oder **Visual Basic**, und wählen Sie dann die **2010** Knoten.  
   
-3.  In the **Templates** pane, choose the **Import Reusable SharePoint 2010 Workflow** template, leave the name of the project as **WorkflowImportProject1**, and then choose the **OK** button.  
+3.  In der **Vorlagen** Bereich, wählen Sie die **Wiederverwendbaren SharePoint 2010-Workflow importieren** Vorlage, lassen Sie den Namen des Projekts als **WorkflowImportProject1**, und wählen Sie dann die **OK** Schaltfläche.  
   
-     The SharePoint Customization Wizard appears.  
+     Der Assistent zum Anpassen von SharePoint wird angezeigt.  
   
-4.  On the **Specify the site and security level for debugging** page, enter the [!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)] for the second SharePoint subsite that you created previously: http://*system name*/SPD2.  
+4.  Auf der **Geben Sie die Website und die Sicherheit für das Debuggen** geben die [!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)] für den zweiten SharePoint-Unterwebsite, die Sie zuvor erstellt haben: http://*Systemname*  /SPD2.  
   
-5.  In the **What is the trust level for this SharePoint solution?** section, choose the **Deploy as a farm solution** option button, and then choose the **Next** button.  
+5.  In der **was der Vertrauensebene für diese SharePoint-Lösung ist?** Abschnitt der **als farmlösung bereitstellen** Optionsfeld aus, und wählen Sie dann die **Weiter** Schaltfläche.  
   
-     For more information about sandboxed versus farm solutions, see [Sandboxed Solution Considerations](../sharepoint/sandboxed-solution-considerations.md).  
+     Weitere Informationen zu sandkastenlösungen im Vergleich zu farmlösungen, finden Sie unter [Überlegungen zu Sandkastenlösungen](../sharepoint/sandboxed-solution-considerations.md).  
   
-6.  In the **Specify the new project source** page, browse to the location on the system where you previously saved the .wsp file, open the file, and then choose the **Next** button.  
-  
-    > [!NOTE]  
-    >  Choose the **Finish** button to import all available items in the .wsp file.  
-  
-     This displays a list of reusable workflows available for importing.  
-  
-7.  In the **Select items to import** box, choose the **SPD Task Workflow** workflow, and then choose the **Finish** button.  
-  
-     After the import operation is finished, a project named **WorkflowImportProject1** is created containing a workflow named **SPD_Workflow_TestFT**. In this folder is the workflow's definition file Elements.xml and the workflow designer file (.xoml). The designer contains two files: the rules file (.rules) and the code-behind file (either .cs or .vb, depending on your project's programming language).  
-  
-8.  In **Solution Explorer**, delete the **Other Imported Files** folder.  
-  
-9. In the Elements.xml file, delete `InstantiationURL="_layouts/IniErkflIP.sspx"`.  
-  
-10. In **Solution Explorer**, choose **WorkflowImportProject1**, and then, on the menu bar, choose **Project**, **Set as Startup Project** to set **WorkflowImportProject1** as the Startup Item.  
-  
-     This displays the list immediately when you debug the project.  
-  
-11. Because the **Import Reusable SharePoint 2010 Workflow** template doesn't import the association property values for the imported workflow, you must enter them. To do this:  
-  
-    1.  In **Solution Explorer**, choose the **SPD_Workflow_TestFT** node.  
-  
-    2.  Choose the ellipsis (![ASP.NET Mobile Designer ellipse](../sharepoint/media/mwellipsis.gif "ASP.NET Mobile Designer ellipse")) button next to one of the list properties, such as the **Target List** property.  
-  
-    3.  Fill in the missing values in the SharePoint Customization Wizard, and then choose the **Finish** button.  
-  
-12. Choose the .xoml file, and then, on the menu bar, choose **View**, **Designer** to view the imported workflow in the workflow designer.  
-  
-13. In the **Windows Workflow v3.0** node of the **Toolbox**, perform one of the following steps:  
-  
-    -   Open the shortcut menu for the **Code** activity, and then choose **Copy**. In the workflow designer, open the shortcut menu for the line under the **SequenceActivity1** activity, and then choose **Paste**.  
-  
-    -   Drag the **Code** activity from the **Toolbox** to the workflow designer, and connect it to the line under the **SequenceActivity1** activity.  
-  
-     This adds an activity to the workflow designer named **CodeActivity1**. In this activity, you will add a code action that creates an announcement in the Announcements list when the user starts the workflow.  
-  
-14. Perform one of the following sets of steps:  
-  
-    -   Double-click **CodeActivity1** to generate an event handler and view the code.  
-  
-    -   In the **Properties** window for **CodeActivity1**, set the value of the **ExecuteCode** property to **codeActivity_ExecuteCode**.  
-  
-15. Add the following under the existing **using** or **Imports** statements:  
-  
-     [!code-csharp[SP_SPDWFImport#1](../sharepoint/codesnippet/CSharp/workflowimportproject1/workflows/spd_task_workflowft/spd task workflow.xoml.cs#1)]  [!code-vb[SP_SPDWFImport#1](../sharepoint/codesnippet/VisualBasic/workflowimportproject1/workflows/spd_task_workflowft/spd task workflow.xoml.vb#1)]  
-  
-16. Replace `codeActivity1_ExecuteCode` with the following:  
-  
-     [!code-csharp[SP_SPDWFImport#2](../sharepoint/codesnippet/CSharp/workflowimportproject1/workflows/spd_task_workflowft/spd task workflow.xoml.cs#2)]  [!code-vb[SP_SPDWFImport#2](../sharepoint/codesnippet/VisualBasic/workflowimportproject1/workflows/spd_task_workflowft/spd task workflow.xoml.vb#2)]  
-  
-## <a name="deploy-the-project-and-associate-the-workflow"></a>Deploy the Project and Associate the Workflow  
- Next, run WorkflowImportProject1 to deploy it to a SharePoint site and then associate the workflow with the Tasks list to view and test the modified, converted workflow.  
-  
-#### <a name="to-deploy-the-project-and-associate-the-workflow"></a>To deploy the project and associate the workflow  
-  
-1.  In [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], choose the F5 key to run and deploy the converted workflow project.  
-  
-2.  On the QuickLaunch bar, choose the **Tasks** link to display the Tasks list.  
-  
-3.  On the **List Tools** tab, choose the **Items** button, and then choose the **New Item** button.  
-  
-     The **Tasks - New Item** dialog box opens.  
-  
-4.  In the **Title** box, enter **New task**, and then choose the **Save** button.  
-  
-5.  On the **List Tools** tab, choose the **List** button, and then choose the **List Settings** button.  
-  
-     The **List Settings** page appears.  
-  
-6.  In the **Permissions and Management** section, choose the **Workflow Settings** link.  
-  
-     The **Workflow Settings** page appears.  
-  
-7.  Choose the **Add a Workflow** link.  
-  
-8.  In the **Workflow** list, choose **WorkflowImportProject1 - SPD Workflow Test**.  
-  
-9. In the **Name** box, enter **SPD Workflow Test**, and then choose the **OK** button.  
-  
-10. In the QuickLaunch bar, choose the **Tasks** list.  
-  
-11. Choose the arrow next to **New task**, and then, in the list, choose **Workflows**.  
-  
-12. In the **Start a New Workflow** section, choose the link for **SPD Workflow Test**, and then choose the **Start** button to initiate the workflow.  
+6.  In der **Geben Sie die Projektquelle der neuen** Seite, navigieren Sie zum Speicherort auf dem System, in dem Sie zuvor die WSP-Datei gespeichert, öffnen Sie die Datei und wählen Sie dann die **Weiter** Schaltfläche.  
   
     > [!NOTE]  
-    >  Alternatively, you can auto-associate a workflow with a list by running the workflow settings wizard and setting the workflow to auto-associate.  
+    >  Wählen Sie die **Fertig stellen** Schaltfläche, um alle verfügbaren Elemente in der WSP-Datei zu importieren.  
   
-     Notice that two actions are performed by the workflow: your name appears in the task's **Assigned To** column, and an announcement appears in the **Announcements** list.  
+     Dies zeigt eine Liste der verfügbaren zum Importieren von wiederverwendbaren Workflows aus.  
   
-## <a name="see-also"></a>See Also  
- [Importing Items from an Existing SharePoint Site](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)   
- [Developing SharePoint Solutions](../sharepoint/developing-sharepoint-solutions.md)   
- [Creating Reusable Controls for Web Parts or Application Pages](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)  
+7.  In der **Elemente auswählen, um importieren** wählen Sie die **SPD Aufgabenworkflow** Workflow, und wählen Sie dann die **Fertig stellen** Schaltfläche.  
+  
+     Nachdem der Importvorgang abgeschlossen ist, ein Projekt mit dem Namen **WorkflowImportProject1** wird erstellt, mit einem Workflow mit dem Namen **SPD_Workflow_TestFT**. In diesem Ordner wird der Workflow-Definitionsdatei "Elements.xml" und die Workflow-Designer-Datei (.xoml). Der Designer enthält zwei Dateien: die Rules-Datei (Rules) und der Code-Behind-Datei (.cs oder .vb, je nach Programmiersprache des Projekts).  
+  
+8.  In **Projektmappen-Explorer**, löschen Sie die **andere importierte Dateien** Ordner.  
+  
+9. Löschen Sie in der Datei "Elements.xml" `InstantiationURL="_layouts/IniErkflIP.sspx"`.  
+  
+10. In **Projektmappen-Explorer**, wählen Sie **WorkflowImportProject1**, und anschließend auf der Menüleiste die Optionen **Projekt**, **als Startprojekt festlegen** an Legen Sie **WorkflowImportProject1** als Startelement.  
+  
+     Die Liste wird sofort, wenn Sie das Debuggen des Projekts angezeigt.  
+  
+11. Da die **Wiederverwendbaren SharePoint 2010-Workflow importieren** Vorlage nicht die Zuordnung Eigenschaftswerte für den importierten Workflow importieren, müssen Sie sie eingeben. Gehen Sie dazu wie folgt vor:  
+  
+    1.  In **Projektmappen-Explorer**, wählen Sie die **SPD_Workflow_TestFT** Knoten.  
+  
+    2.  Schaltfläche mit den Auslassungszeichen (![ASP.NET Mobile-Designer Ellipse](../sharepoint/media/mwellipsis.gif "ASP.NET Mobile-Designer Ellipse")) Schaltfläche neben mindestens einer der Listeneigenschaften, z. B. die **Zielliste** Eigenschaft.  
+  
+    3.  Füllen Sie die fehlenden Werte in der Assistent zum Anpassen von SharePoint, und wählen Sie dann die **Fertig stellen** Schaltfläche.  
+  
+12. Wählen Sie die XOML-Datei, und anschließend auf der Menüleiste die Optionen **Ansicht**, **Designer** importierten Workflow im Workflow-Designer anzeigen.  
+  
+13. In der **Windows Workflow v3. 0** Knoten der **Toolbox**, führen Sie einen der folgenden Schritte aus:  
+  
+    -   Öffnen Sie das Kontextmenü für die **Code** Aktivität, und wählen Sie dann **Kopie**. Öffnen Sie im Workflow-Designer das Kontextmenü für die Zeile unter der **SequenceActivity1 ab** Aktivität, und wählen Sie dann **einfügen**.  
+  
+    -   Ziehen Sie die **Code** Aktivität aus der **Toolbox** dem Workflow-Designer, und verbinden Sie ihn mit der Zeile unter der **SequenceActivity1 ab** Aktivität.  
+  
+     Dadurch wird eine Aktivität in den Workflowdesigner mit dem Namen **CodeActivity1**. In dieser Aktivität fügen Sie eine Codeaktion, die in der Liste der Ankündigungen eine Ankündigung erstellt, wenn der Benutzer den Workflow startet.  
+  
+14. Führen Sie einen der folgenden Schritte aus:  
+  
+    -   Doppelklicken Sie auf **CodeActivity1** einen Ereignishandler zu generieren und den Code anzuzeigen.  
+  
+    -   In der **Eigenschaften** Fenster für **CodeActivity1**, legen Sie den Wert von der **ExecuteCode** Eigenschaft **CodeActivity_ExecuteCode**.  
+  
+15. Fügen Sie die folgenden unter den vorhandenen **mit** oder **Importe** Anweisungen:  
+  
+     [!code-csharp[SP_SPDWFImport#1](../sharepoint/codesnippet/CSharp/workflowimportproject1/workflows/spd_task_workflowft/spd task workflow.xoml.cs#1)]
+     [!code-vb[SP_SPDWFImport#1](../sharepoint/codesnippet/VisualBasic/workflowimportproject1/workflows/spd_task_workflowft/spd task workflow.xoml.vb#1)]  
+  
+16. Ersetzen Sie `codeActivity1_ExecuteCode` durch Folgendes:  
+  
+     [!code-csharp[SP_SPDWFImport#2](../sharepoint/codesnippet/CSharp/workflowimportproject1/workflows/spd_task_workflowft/spd task workflow.xoml.cs#2)]
+     [!code-vb[SP_SPDWFImport#2](../sharepoint/codesnippet/VisualBasic/workflowimportproject1/workflows/spd_task_workflowft/spd task workflow.xoml.vb#2)]  
+  
+## <a name="deploy-the-project-and-associate-the-workflow"></a>Bereitstellen Sie des Projekts, und ordnen Sie den Workflow  
+ Als Nächstes konvertiert WorkflowImportProject1 ausführen auf einer SharePoint-Website bereitstellen, und ordnen Sie den Workflow mit der Liste der Aufgaben zum Anzeigen und testen das geänderte Workflow.  
+  
+#### <a name="to-deploy-the-project-and-associate-the-workflow"></a>Zum Bereitstellen des Projekts, und ordnen Sie den workflow  
+  
+1.  In [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], wählen Sie die Taste F5, um auszuführen und das konvertierte Workflowprojekt bereitzustellen.  
+  
+2.  Wählen Sie in der Schnellstartleiste der **Aufgaben** Link, um die Aufgabenliste anzuzeigen.  
+  
+3.  Auf der **Listentools** Registerkarte, und wählen Sie die **Elemente** aus, und klicken Sie dann die **neues Element** Schaltfläche.  
+  
+     Die **Aufgaben - neues Element** Dialogfeld wird geöffnet.  
+  
+4.  In der **Titel** geben **neue Aufgabe**, und wählen Sie dann die **speichern** Schaltfläche.  
+  
+5.  Auf der **Listentools** Registerkarte, und wählen Sie die **Liste** aus, und klicken Sie dann die **Listeneinstellungen** Schaltfläche.  
+  
+     Die **Listeneinstellungen** Seite wird angezeigt.  
+  
+6.  In der **Berechtigungen und Verwaltung** Abschnitt der **Workfloweinstellungen** Link.  
+  
+     Die **Workfloweinstellungen** Seite wird angezeigt.  
+  
+7.  Wählen Sie die **Hinzufügen eines Workflows** Link.  
+  
+8.  In der **Workflow** wählen **WorkflowImportProject1 - SPD Workflow Test**.  
+  
+9. In der **Namen** geben **SPD Workflow Test**, und wählen Sie dann die **OK** Schaltfläche.  
+  
+10. Wählen Sie in der Schnellstartleiste der **Aufgaben** Liste.  
+  
+11. Wählen Sie den Pfeil neben **neue Aufgabe**, und wählen Sie dann in der Liste **Workflows**.  
+  
+12. In der **Starten eines neuen Workflows** Abschnitt, und wählen Sie den Link, um **SPD Workflow Test**, und wählen Sie dann die **starten** Schaltfläche, um den Workflow zu initiieren.  
+  
+    > [!NOTE]  
+    >  Alternativ Sie können automatisch einen Workflow mit einer Liste Zuordnen von dem Workflow-Assistenten ausführen und zum Festlegen des Workflows automatisch zuordnen.  
+  
+     Beachten Sie, dass zwei Aktionen, die vom Workflow ausgeführt werden: Ihr Name wird angezeigt, in der Aufgabe **zugewiesen an** Spalte und eine Ankündigung angezeigt wird, der **Ankündigungen** Liste.  
+  
+## <a name="see-also"></a>Siehe auch  
+ [Importieren von Elementen aus einer vorhandenen SharePoint-Website](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)   
+ [Entwickeln von SharePoint-Lösungen](../sharepoint/developing-sharepoint-solutions.md)   
+ [Erstellen von wiederverwendbaren Steuerelementen für Webparts oder Anwendungsseiten](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)  
   
   

@@ -1,50 +1,51 @@
 ---
-title: "IDebugPortSupplierEx2 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "IDebugPortSupplierEx2-Schnittstelle"
+title: IDebugPortSupplierEx2 | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: IDebugPortSupplierEx2 interface
 ms.assetid: dae0050a-a50a-4f35-bfbd-e538f537b20f
-caps.latest.revision: 4
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 4
+caps.latest.revision: "4"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 1027267fdfdcc211ae4b101114ec9db24dc758ad
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugPortSupplierEx2
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Stellt Unterstützung für einen Port lieferant mit einem zentralen Server ausgewählt und interagiert.  
+# <a name="idebugportsupplierex2"></a>IDebugPortSupplierEx2
+Bietet Unterstützung für einen Port Lieferanten auswählen und interagieren mit einer Server Core.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 IDebugPortSupplierEx2 : IUnknown  
 ```  
   
-## Hinweise für Implementierer  
- Ein benutzerdefinierter Port lieferant implementiert diese Schnittstelle, sodass er den zentralen Server auswählen kann.  
+## <a name="notes-for-implementers"></a>Hinweise für Implementierer  
+ Ein benutzerdefinierten Port Lieferanten implementiert diese Schnittstelle, sodass er den zu verwendenden Server Core auswählen kann.  
   
-## Methoden  
- In der folgenden Tabelle werden die Methoden von **IDebugPortSupplierEx2**an.  
+## <a name="methods"></a>Methoden  
+ Die folgende Tabelle zeigt die Methoden der **IDebugPortSupplierEx2**.  
   
 |Methode|Beschreibung|  
-|-------------|------------------|  
-|[SetServer](../../../extensibility/debugger/reference/idebugportsupplierex2-setserver.md)|Legt den zentralen Server für den Anschlusslieferanten ab.|  
+|------------|-----------------|  
+|[SetServer](../../../extensibility/debugger/reference/idebugportsupplierex2-setserver.md)|Legt die Core-Server für den Port Lieferanten fest.|  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  Header: Portpriv.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Siehe auch  
- [Core\-Schnittstellen](../../../extensibility/debugger/reference/core-interfaces.md)   
+## <a name="see-also"></a>Siehe auch  
+ [Core-Schnittstellen](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)   
  [IDebugPortSupplier3](../../../extensibility/debugger/reference/idebugportsupplier3.md)

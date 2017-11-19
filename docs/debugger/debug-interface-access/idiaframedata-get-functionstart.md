@@ -1,46 +1,45 @@
 ---
-title: "IDiaFrameData::get_functionStart | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaFrameData::get_functionStart-Methode"
+title: 'Idiaframedata:: Get_functionstart | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaFrameData::get_functionStart method
 ms.assetid: 49fd24fb-65c2-4812-8303-56a968353e1b
-caps.latest.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 51303607eace37d5886c14efc1057bc50e4c8ce0
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaFrameData::get_functionStart
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Ruft ein Flag ab, das angibt, ob der Block den Einstiegspunkt einer Funktion enthält.  
+# <a name="idiaframedatagetfunctionstart"></a>IDiaFrameData::get_functionStart
+Ruft ein Flag, das angibt, ob der Block den Einstiegspunkt der Funktion enthält.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT get_functionStart (   
-   BOOL* pRetVal  
+```C++  
+HRESULT get_functionStart (   
+   BOOL* pRetVal  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `pRetVal`  
- \[out\]  Gibt `TRUE` zurück, wenn der Block den Einstiegspunkt enthält. Andernfalls wird `FALSE`zurück.  
+ [out] Gibt `TRUE` , wenn der Block den Einstiegspunkt; enthält andernfalls `FALSE`.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück.  Gibt `S_FALSE` zurück, wenn diese Eigenschaft nicht unterstützt wird.  Andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`. Gibt `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Hinweise  
- Es ist möglich, einen Stapelrahmen für den Anfang einer Funktion nicht zu sein, da die Frames eine Inline\- Methode oder Funktion darstellen, die in einer Funktion eingefügt werden.  
+## <a name="remarks"></a>Hinweise  
+ Es ist möglich, für einen Stapelrahmen entspricht nicht dem Start einer Funktion sein, da es sich bei der Frame einer Inlinemethode oder Funktion, die in einer Funktion eingefügt darstellt.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

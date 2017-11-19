@@ -1,150 +1,150 @@
 ---
-title: "Arbeiten mit Codemetrikdaten | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.codemetrics.output"
-helpviewer_keywords: 
-  - "Codemetrikergebnisse"
-  - "Codemetrikergebnisfenster"
-  - "Ergebnisfenster, Codemetrik"
+title: Arbeiten mit Codemetrikdaten | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vs.codemetrics.output
+helpviewer_keywords:
+- code metrics results
+- code metrics results window
+- results window, code metrics
 ms.assetid: 988193ec-b4a3-4e11-b5a1-7334979807d5
-caps.latest.revision: 17
-author: "erickson-doug"
-ms.author: "douge"
-manager: "douge"
-caps.handback.revision: 17
+caps.latest.revision: "17"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 39d45f5d43819dc418b6378d34a19e6af1d8ee12
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Arbeiten mit Codemetrikdaten
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Das Fenster **Codemetrikergebnisse** zeigt die Daten an, die von der Codemetrikanalyse generiert werden.  Weitere Informationen zu Datenwerten der Codemetrik finden Sie unter [Codemetrikwerte](../code-quality/code-metrics-values.md).  
+# <a name="working-with-code-metrics-data"></a>Arbeiten mit Codemetrikdaten
+Die **Codemetrikergebnisse** Fenster zeigt die Daten, die von der Codeanalyse für die Metrik generiert werden. Weitere Informationen zu Daten für die codemetrikwerte, finden Sie unter [Codemetrikwerte](../code-quality/code-metrics-values.md).  
   
  Dieses Thema enthält folgende Abschnitte:  
   
--   [Fenster Codemetrikergebnisse](../code-quality/working-with-code-metrics-data.md#BKMK_CodeMetricsResultsWindow)  
+-   [Code Metrics Results Window](../code-quality/working-with-code-metrics-data.md#BKMK_CodeMetricsResultsWindow)  
   
 -   [Anzeigen von Codemetrikergebnissen](../code-quality/working-with-code-metrics-data.md#BKMK_DisplayingCodeMetricsResults)  
   
 -   [Filtern von Codemetrikergebnissen](../code-quality/working-with-code-metrics-data.md#BKMK_FilteringCodeMetricsResults)  
   
--   [Hinzufügen, Entfernen und Neuanordnen von Datenspalten](../code-quality/working-with-code-metrics-data.md#BKMK_AddingRemovingandRearrangingDataColumns)  
+-   [Hinzufügen, entfernen und Neuanordnen von Spalten](../code-quality/working-with-code-metrics-data.md#BKMK_AddingRemovingandRearrangingDataColumns)  
   
--   [Kopieren von Daten in die Zwischenablage oder in Excel](../code-quality/working-with-code-metrics-data.md#BKMK_Copying_Data_to_the_Clipboard_or_Excel)  
+-   [Kopieren von Daten in die Zwischenablage oder Excel](../code-quality/working-with-code-metrics-data.md#BKMK_Copying_Data_to_the_Clipboard_or_Excel)  
   
--   [Erstellen einer Arbeitsaufgabe auf Basis Codemetrik-Ergebnisse](../code-quality/working-with-code-metrics-data.md#BKMK_Creating_a_Work_Item_Based_on_Code_Metric_Results)  
+-   [Erstellen einer Arbeitsaufgabe anhand von Codemetrikergebnissen](../code-quality/working-with-code-metrics-data.md#BKMK_Creating_a_Work_Item_Based_on_Code_Metric_Results)  
   
-##  <a name="BKMK_CodeMetricsResultsWindow"></a> Fenster Codemetrikergebnisse  
- Das Fenster **Codemetrikergebnisse** zeigt oben eine Symbolleiste sowie Spalten, in denen die berechneten Ergebnisse angezeigt werden.  
+##  <a name="BKMK_CodeMetricsResultsWindow"></a> Code Metrics Results Window  
+ Die **Codemetrikergebnisse** Fenster verfügt über eine Symbolleiste am oberen und Spalten, die die berechneten Ergebnisse angezeigt.  
   
-|Spalte|**Beschreibung**|  
-|------------|----------------------|  
-|**Hierarchie**|In der Spalte **Hierarchie** wird eine Strukturansicht der Codehierarchie angezeigt, die Sie je nach gewünschter Detailebene erweitern oder reduzieren können.  In den übrigen Spalten werden die berechneten Ergebnisse angezeigt.  Sie können die Ergebnisspalten beliebig ausblenden oder anordnen.|  
-|**Einfache Verwaltung**|Die Spalte **Verwaltbarkeit** enthält zusätzlich zum numerischen Ergebnis ein Symbol.  Ein grünes Symbol weist auf einen relativ hohen Grad an Verwaltbarkeit hin.  Ein gelbes Symbol gibt eine mäßige Verwaltbarkeit an.  Ein rotes Symbol deutet auf geringe Verwaltbarkeit und potenzielle Problemstellen hin.  Diese Farbindikatoren entsprechen Schweregradkategorien, die von der FxCop\-Regel AvoidUnmaintainableCode verwendet werden.  Diese Regel löst einen Fehler aus, wenn der Wartbarkeitsindex niedriger als 10 ist, eine Warnung, wenn der Index zwischen 10 und 20 ist, und weder einen Fehler noch eine Warnung, wenn der Index höher als 20 ist.  Der Wartbarkeitsindex ist eine Synthese aus drei Metriken: zyklomatische Komplexität, Codezeilen und Rechenkomplexität.  Die Werte werden nicht in Einheiten ausgedrückt.|  
+|Spalte|Beschreibung|  
+|------------|-----------------|  
+|**Hierarchie**|Die **Hierarchie** Spalte enthält eine Strukturansicht der Codehierarchie, die erweitert oder reduziert werden, um die gewünschte Detailebene angezeigt werden kann. Die übrigen Spalten zeigen die berechneten Ergebnisse. Ordnen die Ergebnisspalten wie gewünscht oder ausblenden können.|  
+|**Verwaltbarkeit**|Die **Verwaltbarkeit** Spalte enthält ein Symbol neben dem Ergebnis in numerischer Form. Ein grünes Symbol gibt an, einen relativ hohen Grad an Verwaltbarkeit. Ein gelbes Symbol weist ein Mittelschwerer Maß Verwaltbarkeit hin. Ein rotes Symbol gibt an, mit niedriger Verwaltbarkeit und eine potenzielle Probleme vor Ort. Diese Farbe Indikatoren entsprechen den von Schweregradkategorien, die von der FxCop-Regel AvoidUnmaintainableCode verwendet werden. Diese Regel wird einen Fehler ausgelöst, wenn der Wartbarkeitsindex kleiner als 10 ist eine Warnung ist, wenn der Index zwischen 10 und 20, und weder Fehler noch eine Warnung, ist wenn der Index größer als 20 ist. Der Wartbarkeitsindex ist eine Sprachsynthese drei Metriken: zyklomatische Komplexität, Codezeilen und Komplexität der Berechnung. Seine Werte werden in Einheiten nicht angegeben.|  
   
-##  <a name="BKMK_DisplayingCodeMetricsResults"></a> Anzeigen von Codemetrikergebnissen  
- Das Fenster Codemetrikergebnisse wird automatisch angezeigt, wenn Sie Codemetrikergebnisse generieren.  Sie können das Fenster auch jederzeit selbst aufrufen.  
+##  <a name="BKMK_DisplayingCodeMetricsResults"></a>Anzeigen von Codemetrikergebnissen  
+ Fenster Codemetrikergebnisse wird automatisch angezeigt, wenn Sie Codemetrikergebnisse generieren. Sie können auch das Fenster jederzeit anzeigen.  
   
-#### So zeigen Sie das Fenster Codemetrikergebnisse an  
+#### <a name="to-display-the-code-metrics-results-window"></a>Zum Anzeigen des Fensters Codemetrikergebnisse  
   
--   Klicken Sie im Menü **Analyse**  auf **Fenster**  und dann auf **Codemetrikergebnisse**.  
+-   Auf der **analysieren** Menü klicken Sie auf **Windows** , und klicken Sie dann auf **Codemetrikergebnisse**.  
   
-     – oder –  
+     \- oder –  
   
--   Zeigen Sie im Menü **Ansicht** auf **Weitere Fenster**, und klicken Sie dann auf **Codemetrikergebnisse**.  
+-   Auf der **Ansicht** Sie im Menü **Weitere Fenster** , und klicken Sie dann auf **Codemetrikergebnisse**.  
   
-     Das Fenster Codemetrikergebnisse wird angezeigt, auch wenn es keine Ergebnisse enthält.  
+     Das Fenster Codemetrikergebnisse wird angezeigt, selbst wenn es keine Ergebnisse enthält.  
   
-#### So zeigen Sie Codemetrikdetails an  
+#### <a name="to-view-code-metrics-details"></a>Um Code Metriken Details anzuzeigen.  
   
--   Erweitern Sie die Struktur in der Spalte **Hierarchie**, falls Codemetrikergebnisse generiert wurden.  
+-   Wenn Codemetrikergebnisse generiert wurden, erweitern Sie die Struktur in der **Hierarchie** Spalte.  
   
-##  <a name="BKMK_FilteringCodeMetricsResults"></a> Filtern von Codemetrikergebnissen  
- Mithilfe der Symbolleiste im oberen Bereich können Sie die im Fenster **Codemetrikergebnisse** angezeigten Ergebnisse filtern.  Beispielsweise können Sie nur die Ergebnisse mit einem Wartbarkeitsindex unter 65 anzeigen.  
+##  <a name="BKMK_FilteringCodeMetricsResults"></a>Filtern von Codemetrikergebnissen  
+ Sie können im angezeigten Ergebnisse filtern die **Codemetrikergebnisse** Fenster mithilfe der Symbolleiste am oberen. Sie möchten z. B. nur die Ergebnisse anzuzeigen, die einen Wartbarkeitsindex unter 65 aufweisen.  
   
- Das Dropdownfeld **Filter** enthält die Namen der Ergebnisspalten.  Wenn ein Filter definiert wird, wird er mit einem Einzug versehen und am Ende der Liste eingefügt.  Die Liste kann die letzten zehn definierten Filter enthalten.  
+ Die **Filter** Dropdown-Feld enthält die Namen der Ergebnisspalten. Wenn ein Filter definiert wird, wird es am Ende der Liste zusammen mit einem Einzug hinzugefügt. Die Liste kann die letzten zehn Filter enthalten, die definiert wurden.  
   
-#### So filtern Sie die Codemetrikergebnisse  
+#### <a name="to-filter-the-code-metrics-results"></a>Zum Filtern der Codemetrikergebnisse  
   
-1.  Wählen Sie aus der Liste **Filter** den Spaltennamen aus.  
+1.  Aus der **Filter** wählen Sie den Namen der Spalte.  
   
-2.  Geben Sie unter **Min.** den Mindestwert ein, der angezeigt werden soll.  
+2.  In **Min**, geben Sie den minimalen Wert angezeigt werden.  
   
-3.  Geben Sie unter **Max.** den Maximalwert ein, der angezeigt werden soll.  
+3.  In **Max**, geben Sie den maximalen Wert angezeigt werden.  
   
-4.  Klicken Sie auf die Schaltfläche **Filter anwenden**.  
+4.  Klicken Sie auf die **Filter anwenden** Schaltfläche.  
   
-5.  Um die Ergebnisdetails anzuzeigen, erweitern Sie die Hierarchiestruktur.  
+5.  Um die Ergebnisdetails anzuzeigen, erweitern Sie in der Hierarchiestruktur.  
   
-##  <a name="BKMK_AddingRemovingandRearrangingDataColumns"></a> Hinzufügen, Entfernen und Neuanordnen von Datenspalten  
- Sie können Ergebnisspalten im Fenster **Codemetrikergebnisse** entfernen und hinzufügen.  Außerdem können Sie Ergebnisspalten neu anordnen, damit sie in der gewünschten Reihenfolge angezeigt werden.  
+##  <a name="BKMK_AddingRemovingandRearrangingDataColumns"></a>Hinzufügen, entfernen und Neuanordnen von Spalten  
+ Sie können hinzufügen oder entfernen führt die Spalten aus der **Codemetrikergebnisse** Fenster. Darüber hinaus können Sie Ergebnisspalten neu anordnen, damit sie in der Reihenfolge angezeigt werden, die Sie möchten.  
   
-#### So entfernen Sie eine Spalte  
+#### <a name="to-remove-a-column"></a>So entfernen Sie eine Spalte  
   
-1.  Klicken Sie auf die Schaltfläche **Spalten hinzufügen\/entfernen**.  
+1.  Klicken Sie auf die **Spalten hinzufügen/entfernen** Schaltfläche.  
   
-     – oder –  
+     \- oder –  
   
-     Klicken Sie mit der rechten Maustaste auf eine Spaltenüberschrift, und klicken Sie dann auf **Spalten hinzufügen\/entfernen**.  
+     Maustaste auf eine beliebige Spaltenüberschrift, und klicken Sie dann auf **Spalten hinzufügen/entfernen**.  
   
-2.  Deaktivieren Sie im Dialogfeld **Spalten hinzufügen\/entfernen** das Kontrollkästchen der Spalte, die entfernt werden soll, und klicken Sie dann auf **OK**.  
+2.  In der **Spalten hinzufügen/entfernen** Dialogfeld deaktivieren das Kontrollkästchen für die Spalte, die Sie entfernen möchten und klicken Sie dann auf **OK**.  
   
-#### So fügen Sie eine zuvor entfernte Spalte hinzu  
+#### <a name="to-add-a-previously-removed-column"></a>Um eine zuvor entfernter Spalte hinzufügen  
   
-1.  Klicken Sie auf die Schaltfläche **Spalten hinzufügen\/entfernen**.  
+1.  Klicken Sie auf die **Spalten hinzufügen/entfernen** Schaltfläche.  
   
-     – oder –  
+     \- oder –  
   
-     Klicken Sie mit der rechten Maustaste auf eine Spaltenüberschrift, und klicken Sie dann auf **Spalten hinzufügen\/entfernen**.  
+     Maustaste auf eine beliebige Spaltenüberschrift, und klicken Sie dann auf **Spalten hinzufügen/entfernen**.  
   
-2.  Aktivieren Sie im Dialogfeld **Spalten hinzufügen\/entfernen** das Kontrollkästchen der Spalte, die hinzugefügt werden soll, und klicken Sie dann auf **OK**.  
+2.  In der **Spalten hinzufügen/entfernen** Dialogfeld Feld, das Kontrollkästchen für die Spalte, die Sie hinzufügen möchten und klicken Sie dann auf **OK**.  
   
-#### So ordnen Sie Spalten neu an  
+#### <a name="to-rearrange-columns"></a>Um Spalten neu anzuordnen.  
   
-1.  Klicken Sie auf die Schaltfläche **Spalten hinzufügen\/entfernen**.  
+1.  Klicken Sie auf die **Spalten hinzufügen/entfernen** Schaltfläche.  
   
-     – oder –  
+     \- oder –  
   
-     Klicken Sie mit der rechten Maustaste auf eine Spaltenüberschrift, und klicken Sie dann auf **Spalten hinzufügen\/entfernen**.  
+     Maustaste auf eine beliebige Spaltenüberschrift, und klicken Sie dann auf **Spalten hinzufügen/entfernen**.  
   
-2.  Wählen Sie im Dialogfeld **Spalten hinzufügen\/entfernen** die Spalte aus, die verschoben werden soll, und klicken Sie anschließend auf den Aufwärtspfeil oder den Abwärtspfeil.  
+2.  In der **Spalten hinzufügen/entfernen** Dialogfeld wählen die Spalte, die Sie verschieben möchten und klicken Sie dann auf den Pfeil nach oben oder den Pfeil nach unten.  
   
-3.  Sobald sich die Spalte an der gewünschten Position befindet, klicken Sie auf **OK**.  
+3.  Wenn die Spalte an der gewünschten Position befindet, klicken Sie auf **OK**.  
   
-##  <a name="BKMK_Copying_Data_to_the_Clipboard_or_Excel"></a> Kopieren von Daten in die Zwischenablage oder in Excel  
- Sie können eine ausgewählte Zeile von Codemetrikdaten die Zwischenablage als Textzeichenfolge auswählen und kopieren, die eine Zeile für den Namen und Wert jeder Datenspalte.  Sie können auch auf **Liste in Microsoft Excel öffnen** klicken, um alle Codemetrikergebnisse in einem Excel\-Arbeitsblatt zu exportieren  
+##  <a name="BKMK_Copying_Data_to_the_Clipboard_or_Excel"></a>Kopieren von Daten in die Zwischenablage oder Excel  
+ Sie können auswählen, und eine ausgewählte Zeile von Codemetrikdaten als Textzeichenfolge, die eine Zeile für den Namen und Wert der einzelnen Datenspalten enthält, in die Zwischenablage kopieren. Sie können auch klicken **Liste in Microsoft Excel öffnen** aller der Codemetrikergebnisse in eine Excel-Kalkulationstabelle exportieren.  
   
-##  <a name="BKMK_Creating_a_Work_Item_Based_on_Code_Metric_Results"></a> Erstellen einer Arbeitsaufgabe auf Basis Codemetrik\-Ergebnisse  
- Sie können eine [!INCLUDE[esprfound](../code-quality/includes/esprfound_md.md)] \- Arbeitsaufgabe erstellen, die auf Ergebnissen im Fenster **Codemetrikergebnisse** ist.  Wenn die Arbeitsaufgabe erstellt wird, gibt [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] automatisch ein Titel im Feld **Titel** und die Codemetrikdaten werden in die Registerkarte **Verlauf** ein.  
+##  <a name="BKMK_Creating_a_Work_Item_Based_on_Code_Metric_Results"></a>Erstellen einer Arbeitsaufgabe anhand von Codemetrikergebnissen  
+ Sie erstellen eine [!INCLUDE[esprfound](../code-quality/includes/esprfound_md.md)] führt zur Arbeitsaufgabe, die basierend auf der **Codemetrikergebnisse** Fenster. Wenn das Arbeitselement erstellt wird, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] fügt automatisch einen Titel in die **Titel** Feld und Codemetrikdaten unter der **Verlauf** Registerkarte.  
   
- Weitere Informationen zum Erstellen von Arbeitsaufgaben finden Sie unter [Create a work item &#91;redirected&#93;](http://msdn.microsoft.com/de-de/24b2e064-16ac-4bf0-8de4-98a1f48b8c4b).  
+ Weitere Informationen über das Erstellen von Arbeitselementen finden Sie unter [Erstellen einer Arbeitsaufgabe &#91; umgeleitet &#93;](http://msdn.microsoft.com/en-us/24b2e064-16ac-4bf0-8de4-98a1f48b8c4b).  
   
-#### So erstellen Sie eine Arbeitsaufgabe auf der Grundlage eines Ergebnisses  
+#### <a name="to-create-a-work-item-based-on-a-result"></a>So erstellen eine Arbeitsaufgabe, die basierend auf ein Ergebnis  
   
-1.  Klicken Sie mit der rechten Maustaste auf das Ergebnis.  
+1.  Mit der rechten Maustaste in des Ergebnis.  
   
-2.  Zeigen Sie auf **Arbeitsaufgabe erstellen**, und klicken Sie auf den Typ der zu erstellenden Arbeitsaufgabe \(**Fehler**, **Aufgabe** usw.\).  
+2.  Zeigen Sie auf **Arbeitsaufgabe erstellen**, und klicken Sie dann auf den Typ der Arbeitsaufgabe, die Sie erstellen möchten (**Fehler**, **Aufgabe**usw.).  
   
-3.  Füllen Sie das Arbeitsaufgabenformular aus, indem Sie alle Pflichtfelder ausfüllen.  
+3.  Führen Sie im Arbeitsaufgabenformular, indem alle erforderlichen Felder ausgefüllt.  
   
-4.  Klicken Sie im Menü **Datei** auf **Alle speichern**, um die Arbeitsaufgabe zu speichern.  
+4.  Auf der **Datei** Menü klicken Sie auf **alle speichern** zum Speichern der Arbeitsaufgabe.  
   
-#### So erstellen Sie einen Fehler auf der Grundlage eines Ergebnisses  
+#### <a name="to-create-a-bug-based-on-a-result"></a>So erstellen Sie einen Fehler, die basierend auf ein Ergebnis  
   
-1.  Klicken Sie auf das Ergebnis, um es auszuwählen.  
+1.  Klicken Sie auf das Ergebnis aus, um ihn auszuwählen.  
   
-2.  Klicken Sie auf die Schaltfläche **Arbeitsaufgabe erstellen**.  
+2.  Klicken Sie auf die **Arbeitsaufgabe erstellen** Schaltfläche.  
   
-3.  Füllen Sie das Arbeitsaufgabenformular aus, indem Sie alle Pflichtfelder ausfüllen.  
+3.  Führen Sie im Arbeitsaufgabenformular, indem alle erforderlichen Felder ausgefüllt.  
   
-4.  Klicken Sie im Menü **Datei** auf **Alle speichern**, um die Arbeitsaufgabe zu speichern.  
+4.  Auf der **Datei** Menü klicken Sie auf **alle speichern** zum Speichern der Arbeitsaufgabe.  
   
-## Siehe auch  
- [Messen von Komplexität und Verwaltbarkeit verwalteten Codes](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)   
+## <a name="see-also"></a>Siehe auch  
+ [Messen von Komplexität und verwaltbarkeit verwalteten Codes](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)   
  [Gewusst wie: Generieren von Codemetrikdaten](../code-quality/how-to-generate-code-metrics-data.md)

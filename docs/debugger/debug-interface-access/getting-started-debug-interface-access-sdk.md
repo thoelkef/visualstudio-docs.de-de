@@ -1,54 +1,54 @@
 ---
-title: "Erste Schritte (Debug Interface Access SDK) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - ".dbg-Dateien"
-  - "DBG-Dateien"
+title: Erste Schritte (Debug Interface Access SDK) | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords:
+- .dbg files
+- DBG files
 ms.assetid: cb3d040a-2846-40d7-bdbc-8a5beb5dd2f6
-caps.latest.revision: 15
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 15
+caps.latest.revision: "15"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 938aaf760a2a6305580331945875391e6ad819af
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Erste Schritte (Debug Interface Access SDK)
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Das Debuggen von Zubehör des Schnittstellen\-Zugriffs \(SDK\) Durchmesser Dokumentation und \- Anweisung mit Sie ein Beispiel, das illustriert, wie der Durchmesser APIs verwendet.  Verwenden Sie die Schnittstellen und Methoden in DIA SDK, um benutzerdefinierte Anwendungen zu entwickeln, die die .pdb\- und .dbg\-Dateien öffnen und ihren Inhalt für Symbole, Werte, Attribute, Adressen und anderen Debuginformationen gefunden werden.  Dieses SDK stellt außerdem die Tabelle Orders der Verweise für die Eigenschaften bereit, die mit den Symbolen zugeordnet werden, die in C\+\+\-Anwendungen gefunden werden.  
+# <a name="getting-started-debug-interface-access-sdk"></a>Erste Schritte (Debug Interface Access SDK)
+Das Debug Interface Access (DIA) SDK liefert Anweisungstext Dokumentation und ein Beispiel, das veranschaulicht, wie die DIA-API verwenden. Verwenden Sie die Schnittstellen und Methoden in DIA-SDK, benutzerdefinierte Anwendungen entwickeln, die die PDB-Datei und .dbg-Dateien öffnen und ihre Inhalte für Symbole, Werte, Attribute, Adressen und andere Debuginformationen zu suchen. Dieses SDK bietet auch Verweistabellen für die Eigenschaften für die Symbole in C++-Anwendungen gefunden wurden.  
   
- Zur optimalen Verwendung der DIA SDK, sollten Sie mit folgendem vertraut sein:  
+ Um das DIA SDK zu verwenden, sollten Sie mit folgendem vertraut sein:  
   
--   C\+\+\-Programmiersprache  
+-   Die Programmiersprache C++  
   
--   COM\-Programmierung  
+-   COM-Programmierung  
   
--   Die integrierte Entwicklungsumgebung \(IDE\) von Visual Studio zum Kompilieren der Beispiele  
+-   Visual Studio integrierten Entwicklungsumgebung (IDE) für das Kompilieren der Beispiele  
   
- Das DIA SDK wird normalerweise mit Visual Studio installiert und seinem Standardspeicherort ist *\[Laufwerk\]*\\ Programme \\ Microsoft Visual Studio 9.0 \\ SDK DIA.  Im Rahmen der Installation wird das msdia90.dll, das das DIA SDK implementiert, automatisch alle so registriert, die Sie ausführen müssen, um es zu verwenden, das `dia2.h` , und im Programm im Link zu `diaguids.lib`eingeschlossen ist.  
+ Das DIA SDK wird normalerweise mit Visual Studio installiert und wird von seinem Standardspeicherort *[Laufwerk]*\Programme\Microsoft Visual Studio 9.0\DIA SDK. Im Rahmen der Installation wird "MSDIA90.dll", das das DIA SDK implementiert, wird automatisch registriert, damit tun können, um es verwenden, müssen Sie lediglich einschließen `dia2.h` in Ihrem Programm und Verknüpfung mit `diaguids.lib`.  
   
- Header: dia2.h \\ Include  
+ Header: include\dia2.h  
   
- Bibliothek: \\ lib diaguids.lib  
+ Bibliothek: lib\diaguids.lib  
   
- DLLs: bin \\ msdia80.dll  
+ DLL: bin\msdia80.dll  
   
- IDL\-Datei: dia2.idl \\ idl  
+ IDL: idl\dia2.idl  
   
-## In diesem Abschnitt  
+## <a name="in-this-section"></a>In diesem Abschnitt  
  [Übersicht](../../debugger/debug-interface-access/overview-debug-interface-access-sdk.md)  
- Wiederholt die grundlegende Architektur der Durchmesser.  
+ Überprüft die grundlegende Architektur von DIA.  
   
- [Abfragen der PDB\-Datei](../../debugger/debug-interface-access/querying-the-dot-pdb-file.md)  
- Stellt schrittweise Anweisungen darüber bereit, wie der Durchmesser API verwendet, um eine PDB\-Datei abzufragen.  
+ [Abfragen der PDB-Datei](../../debugger/debug-interface-access/querying-the-dot-pdb-file.md)  
+ Enthält schrittweise Anleitungen zur Verwendung der DIA-API zum Abfragen der PDB-Datei an.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Debug Interface Access SDK](../../debugger/debug-interface-access/debug-interface-access-sdk.md)

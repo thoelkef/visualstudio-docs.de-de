@@ -1,36 +1,38 @@
 ---
-title: "stackTraceLimit-Eigenschaft (Fehler) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "Error.stackTraceLimit"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "Fehlerstapellimit [JavaScript]"
-  - "JavaScript-Fehlerstapel"
-  - "Fehlerstapel [JavaScript]"
-  - "JavaScript-Stapelüberwachungslimit"
+title: StackTraceLimit-Eigenschaft (Fehler) (JavaScript) | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: Error.stackTraceLimit
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- error stack track limit [JavaScript]
+- JavaScript error stack
+- error stack [JavaScript]
+- JavaScript stack trace limit
 ms.assetid: 127ef8e8-892e-4263-9ebc-03364af01212
-caps.latest.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 9af736ee8b385f93b761f1dfa021c23ee5376292
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# stackTraceLimit-Eigenschaft (Fehler) (JavaScript)
-Ruft die Stapelüberwachungsgrenze ab, die der Anzahl der anzuzeigenden Fehlerrahmen entspricht, oder legt sie fest.  Die Standardgrenze ist 10.  
+# <a name="stacktracelimit-property-error-javascript"></a>stackTraceLimit-Eigenschaft (Fehler) (JavaScript)
+Abrufen oder Festlegen der stapelüberwachungslimit, entspricht die Anzahl der Fehler angezeigt. Die Standardgrenze ist 10.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
   
@@ -38,13 +40,13 @@ Error
 .stackTraceLimit   
 ```  
   
-## Hinweise  
- Sie können die `stackTraceLimit`\-Eigenschaft auf einen positiven Wert zwischen 0 und `Infinity` festlegen.  Wenn die Eigenschaft zum Zeitpunkt des Fehlers auf 0 `stackTraceLimit` festgelegt ist, wird keine Stapelüberwachung angezeigt.  Wenn die Eigenschaft auf einen negativen Wert oder einen nicht numerischen Wert festgelegt ist, wird der Wert in 0 konvertiert.  Wenn stackTraceLimit auf `Infinity` festgelegt ist, wird der gesamte Stapel angezeigt.  Andernfalls wird `ToUint32` verwendet, um den Wert zu konvertieren.  
+## <a name="remarks"></a>Hinweise  
+ Sie können festlegen, die `stackTraceLimit` Eigenschaft zu einem positiven Wert zwischen 0 und `Infinity`. Wenn die `stackTraceLimit` Eigenschaftensatz wird auf 0 zu dem Zeitpunkt ein Fehler ausgelöst wird, wird keine stapelüberwachung angezeigt. Wenn die Eigenschaft auf einen negativen Wert oder einen nicht numerischen Wert festgelegt ist, wird der Wert in 0 konvertiert. Wenn die StackTraceLimit, um festgelegt ist `Infinity`, der gesamte Stapel wird angezeigt. Andernfalls `ToUint32` wird verwendet, um den Wert zu konvertieren.  
   
-## Beispiel  
- Im folgenden Beispiel wird gezeigt, wie die Stapelüberwachungsgrenze festgelegt und anschließend abgerufen wird.  
+## <a name="example"></a>Beispiel  
+ Im folgende Beispiel veranschaulicht das Festlegen und anschließend die stapelüberwachungslimit abrufen.  
   
-```javascript  
+```JavaScript  
 try  
     {  
     var err = new Error("my error");  
@@ -58,13 +60,13 @@ catch(e)
     }  
 ```  
   
-## Anforderungen  
- Wird in Internet Explorer 10 und in der [!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)]\-App unterstützt.  
+## <a name="requirements"></a>Anforderungen  
+ Unterstützt in InternetExplorer 10 und [!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)] apps.  
   
- **Gilt für**: [Error\-Objekt](../../javascript/reference/error-object-javascript.md)  
+ **Gilt für**: [-Fehlerobjekt.](../../javascript/reference/error-object-javascript.md)  
   
-## Siehe auch  
- [description\-Eigenschaft \(Fehler\)](../../javascript/reference/description-property-error-javascript.md)   
- [message\-Eigenschaft \(Fehler\)](../../javascript/reference/message-property-error-javascript.md)   
- [name\-Eigenschaft \(Fehler\)](../../javascript/reference/name-property-error-javascript.md)   
- [stack\-Eigenschaft \(Fehler\)](../../javascript/reference/stack-property-error-javascript.md)
+## <a name="see-also"></a>Siehe auch  
+ [Description-Eigenschaft (Fehler)](../../javascript/reference/description-property-error-javascript.md)   
+ [Message-Eigenschaft (Fehler)](../../javascript/reference/message-property-error-javascript.md)   
+ [Name-Eigenschaft (Fehler)](../../javascript/reference/name-property-error-javascript.md)   
+ [stack-Eigenschaft (Fehler)](../../javascript/reference/stack-property-error-javascript.md)

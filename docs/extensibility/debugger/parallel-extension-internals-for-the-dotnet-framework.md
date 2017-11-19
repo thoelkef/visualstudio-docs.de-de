@@ -1,63 +1,48 @@
 ---
-title: "Parallele Erweiterung Internals für .NET Framework | Microsoft-Dokumentation"
+title: "Parallele Erweiterung Mechanismen für das .NET Framework | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- debug engines, internals [.NET Framework]
+helpviewer_keywords: debug engines, internals [.NET Framework]
 ms.assetid: 93e07cfa-91fa-464c-b866-8bf5570411df
-caps.latest.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: c679d573bde8352906471b4eded7ccb9051f5959
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 6ed417d9f63a90d539d104fb209b58703d10ccef
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="parallel-extension-internals-for-the-net-framework"></a>Parallelen Erweiterung Internals für .NET Framework
-Dieser Abschnitt beschreibt die internen Typen, Methoden und Felder von Klassen, mit denen Sie einen benutzerdefinierten Debugger für parallel Extensions for .NET Framework implementiert.  
+# <a name="parallel-extension-internals-for-the-net-framework"></a>Parallele Erweiterung Internals für .NET Framework
+In diesem Abschnitt wird beschrieben, die internen Typen, Methoden und Felder von Klassen, mit denen Sie implementieren einen benutzerdefinierte Debugger für die parallele Erweiterungen für .NET Framework.  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
  [Task-Klasse](../../extensibility/debugger/task-class-internal-members.md)  
- Beschreibt die interne Datenmember der <xref:System.Threading.Tasks.Task?displayProperty=fullName>Klasse.</xref:System.Threading.Tasks.Task?displayProperty=fullName>  
+ Beschreibt die interne Datenmember von der <xref:System.Threading.Tasks.Task?displayProperty=fullName> Klasse.  
   
  [TaskScheduler-Klasse](../../extensibility/debugger/taskscheduler-class-internal-members.md)  
- Beschreibt die interne Datenmember der <xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName>Klasse.</xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName>  
+ Beschreibt die interne Datenmember von der <xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName> Klasse.  
   
  [ContingentProperties-Klasse](../../extensibility/debugger/contingentproperties-class-internal-members.md)  
- Beschreibt die interne Datenmember, der die `System.Threading.Tasks.ContingentProperties` Klasse.  
+ Beschreibt die interne Datenmember von der `System.Threading.Tasks.ContingentProperties` Klasse.  
   
  [AsyncTaskMethodBuilder-Struktur](../../extensibility/debugger/asynctaskmethodbuilder-structure-internal-members.md)  
- Beschreibt die internen Member des der <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder>Struktur.</xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder>  
+ Beschreibt die internen Member des der <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder> Struktur.  
   
  [AsyncTaskMethodBuilder\<TResult > Struktur](../../extensibility/debugger/asynctaskmethodbuilder-tresult-structure-internal-members.md)  
- Beschreibt die internen Member des der <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder%601>Struktur.</xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder%601>  
+ Beschreibt die internen Member des der <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder%601> Struktur.  
   
  [AsyncVoidMethodBuilder-Struktur](../../extensibility/debugger/asyncvoidmethodbuilder-structure-internal-members.md)  
- Beschreibt die internen Member des der <xref:System.Runtime.CompilerServices.AsyncVoidMethodBuilder>Struktur.</xref:System.Runtime.CompilerServices.AsyncVoidMethodBuilder>  
+ Beschreibt die internen Member des der <xref:System.Runtime.CompilerServices.AsyncVoidMethodBuilder> Struktur.  
   
 ## <a name="see-also"></a>Siehe auch  
- <xref:System.Threading.Tasks.Task?displayProperty=fullName></xref:System.Threading.Tasks.Task?displayProperty=fullName>   
- <xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName></xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName>   
+ <xref:System.Threading.Tasks.Task?displayProperty=fullName>   
+ <xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName>   
  [Visual Studio-Debugger-Erweiterbarkeit](../../extensibility/debugger/visual-studio-debugger-extensibility.md)   
- [Parallele Programmierung](http://msdn.microsoft.com/Library/4d83c690-ad2d-489e-a2e0-b85b898a672d)
+ [Parallele Programmierung](/dotnet/standard/parallel-programming/index)

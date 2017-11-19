@@ -1,111 +1,110 @@
 ---
-title: "CV_CFL_LANG | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CV_CFL_LANG-Enumeration"
+title: CV_CFL_LANG | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: CV_CFL_LANG enumeration
 ms.assetid: 4e8e0613-ad02-4de9-9f46-e4753c5b0251
-caps.latest.revision: 13
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 89001fd224dbdf8c3cb783641bf2800041f657eb
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# CV_CFL_LANG
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Gibt die Quellcodesprache der Anwendung oder des verknüpften Moduls an.  
+# <a name="cvcfllang"></a>CV_CFL_LANG
+Gibt die Quellcodesprache der Anwendung oder des verknüpften Modul an.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-typedef enum CV_CFL_LANG {   
-   CV_CFL_C       = 0x00,  
-   CV_CFL_CXX     = 0x01,  
-   CV_CFL_FORTRAN = 0x02,  
-   CV_CFL_MASM    = 0x03,  
-   CV_CFL_PASCAL  = 0x04,  
-   CV_CFL_BASIC   = 0x05,  
-   CV_CFL_COBOL   = 0x06,  
-   CV_CFL_LINK    = 0x07,  
-   CV_CFL_CVTRES  = 0x08,  
-   CV_CFL_CVTPGD  = 0x09,  
-   CV_CFL_CSHARP  = 0x0A,  
-   CV_CFL_VB      = 0x0B,  
-   CV_CFL_ILASM   = 0x0C,  
-   CV_CFL_JAVA    = 0x0D,  
-   CV_CFL_JSCRIPT = 0x0E,  
-   CV_CFL_MSIL    = 0x0F,  
-   CV_CFL_HLSL    = 0x10  
+```C++  
+typedef enum CV_CFL_LANG {   
+   CV_CFL_C       = 0x00,  
+   CV_CFL_CXX     = 0x01,  
+   CV_CFL_FORTRAN = 0x02,  
+   CV_CFL_MASM    = 0x03,  
+   CV_CFL_PASCAL  = 0x04,  
+   CV_CFL_BASIC   = 0x05,  
+   CV_CFL_COBOL   = 0x06,  
+   CV_CFL_LINK    = 0x07,  
+   CV_CFL_CVTRES  = 0x08,  
+   CV_CFL_CVTPGD  = 0x09,  
+   CV_CFL_CSHARP  = 0x0A,  
+   CV_CFL_VB      = 0x0B,  
+   CV_CFL_ILASM   = 0x0C,  
+   CV_CFL_JAVA    = 0x0D,  
+   CV_CFL_JSCRIPT = 0x0E,  
+   CV_CFL_MSIL    = 0x0F,  
+   CV_CFL_HLSL    = 0x10  
 } CV_CFL_LANG;  
 ```  
   
-## Elements  
- CV\_CFL\_C  
+## <a name="elements"></a>Elements  
+ CV_CFL_C  
  Anwendungssprache ist C.  
   
- CV\_CFL\_CXX  
- Anwendungssprache ist C\+\+.  
+ CV_CFL_CXX  
+ Anwendungssprache ist C++.  
   
- CV\_CFL\_FORTRAN  
- Anwendungssprache FORTRAN ist.  
+ CV_CFL_FORTRAN  
+ Anwendungssprache ist FORTRAN.  
   
- CV\_CFL\_MASM  
+ CV_CFL_MASM  
  Anwendungssprache ist Microsoft Macro Assembler.  
   
- CV\_CFL\_PASCAL  
- Anwendungssprache ist Pascal.  
+ CV_CFL_PASCAL  
+ Anwendungssprache ist wie in Pascal.  
   
- CV\_CFL\_BASIC  
- Anwendungssprache ist GRUNDLEGEND.  
+ CV_CFL_BASIC  
+ Anwendungssprache ist BASIC.  
   
- CV\_CFL\_COBOL  
- Anwendungssprache COBOL ist.  
+ CV_CFL_COBOL  
+ Anwendungssprache ist COBOL.  
   
- CV\_CFL\_LINK  
- Anwendung ist ein Linker\-generiertes Modul.  
+ CV_CFL_LINK  
+ Anwendung ist ein Modul Linker generiert.  
   
- CV\_CFL\_CVTRES  
- Anwendung ist ein Ressourcenmodul, das mit CVTRES\-Tool konvertiert wird.  
+ CV_CFL_CVTRES  
+ Anwendung ist ein Ressourcenmodul mit dem Tool CVTRES konvertiert.  
   
- CV\_CFL\_CVTPGD  
- Anwendung ist ein POGO optimiertes Modul, das mit CVTPGD\-Tool generiert wird.  
+ CV_CFL_CVTPGD  
+ Anwendung ist ein optimiert PGO-Modul mit CVTPGD-Tool generiert.  
   
- CV\_CFL\_CSHARP  
- Anwendungssprache ist C\#.  
+ CV_CFL_CSHARP  
+ Anwendungssprache-ist c#.  
   
- CV\_CFL\_VB  
+ CV_CFL_VB  
  Anwendungssprache ist Visual Basic.  
   
- CV\_CFL\_ILASM  
- Anwendungssprache ist Intermediate Language\-Assembly \(das heißt, Assembly der CLR \(Common Language Runtime\)\).  
+ CV_CFL_ILASM  
+ Anwendungssprache ist zwischensprachenassembly (d. h. Common Language Runtime (CLR)-Assembly) an.  
   
- CV\_CFL\_JAVA  
+ CV_CFL_JAVA  
  Anwendungssprache ist Java.  
   
- CV\_CFL\_JSCRIPT  
- Anwendungssprache ist JScript.  
+ CV_CFL_JSCRIPT  
+ Anwendungssprache ist Jscript.  
   
- CV\_CFL\_MSIL  
- Anwendungssprache ist eine unbekannte Microsoft Intermediate Language \(MSIL\), möglicherweise ein Ergebnis von der Anwendung [\/LTCG \(Code zur Verknüpfungszeit generieren\)](/visual-cpp/build/reference/ltcg-link-time-code-generation) des Schalters.  
+ CV_CFL_MSIL  
+ Anwendungssprache ist ein Unbekannter Sprache MSIL (Microsoft Intermediate), möglicherweise ein Ergebnis der Verwendung der [/LTCG (Link-Time Code Generation)](/cpp/build/reference/ltcg-link-time-code-generation) wechseln.  
   
- CV\_CFL\_HLSL  
- Anwendungssprache ist High\-Level Shader Language.  
+ CV_CFL_HLSL  
+ Anwendungssprache handelt es sich um hohe Ebene Shader-Sprache.  
   
-## Hinweise  
- Die Werte in dieser Enumeration werden von einem Aufruf der [IDiaSymbol::get\_language](../../debugger/debug-interface-access/idiasymbol-get-language.md)\-Methode zurückgegeben.  
+## <a name="remarks"></a>Hinweise  
+ Die Werte in dieser Enumeration werden zurückgegeben, durch einen Aufruf der [idiasymbol:: Get_language](../../debugger/debug-interface-access/idiasymbol-get-language.md) Methode.  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  Header: cvconst.h  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Enumerationen und Strukturen](../../debugger/debug-interface-access/enumerations-and-structures.md)   
- [IDiaSymbol::get\_language](../../debugger/debug-interface-access/idiasymbol-get-language.md)
+ [IDiaSymbol::get_language](../../debugger/debug-interface-access/idiasymbol-get-language.md)

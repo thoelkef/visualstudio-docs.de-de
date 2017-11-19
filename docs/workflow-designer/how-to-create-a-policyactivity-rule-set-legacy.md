@@ -1,67 +1,71 @@
 ---
-title: "Vorgehensweise: Erstellen eines PolicyActivity-Regelsatzes (Vorg&#228;ngerversion) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
-helpviewer_keywords: 
-  - "PolicyActivity-Aktivität, Erstellen von Regelsätzen"
-  - "PolicyActivity-Aktivität, Auswählen von Regelsätzen"
-  - "Regelsatz-Editor (Dialogfeld)"
-  - "Regelsätze, Erstellen für PolicyActivity"
-  - "Regelsatz auswählen (Dialogfeld)"
+title: "Vorgehensweise: Erstellen eines PolicyActivity-Regelsatzes (Vorgängerversion) | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
+helpviewer_keywords:
+- PolicyActivity activity, creating rule sets
+- Rule Set Editor dialog box
+- PolicyActivity activity, selecting rule sets
+- Select Rule Set dialog box
+- rule sets, creating for PolicyActivity
 ms.assetid: f272489d-3342-4511-8b59-6a0fd7a42d70
-caps.latest.revision: 4
-author: "ErikRe"
-ms.author: "erikre"
-manager: "erikre"
-caps.handback.revision: 4
+caps.latest.revision: "4"
+author: ErikRe
+ms.author: erikre
+manager: erikre
+ms.openlocfilehash: 49c511c2d881a9996efe07dcc030e80e21a8cf88
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# Vorgehensweise: Erstellen eines PolicyActivity-Regelsatzes (Vorg&#228;ngerversion)
+# <a name="how-to-create-a-policyactivity-rule-set-legacy"></a>Vorgehensweise: Erstellen eines PolicyActivity-Regelsatzes (Vorgängerversion)
 In diesem Thema wird das Erstellen eines Richtlinienaktivitätsregelsatzes mithilfe der Vorgängerversion von [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] beschrieben, die auf [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] oder [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)] abzielt.  
   
- Nachdem Sie eine **Policy**\-Aktivität aus der **Toolbox** in die Workflowentwurfsoberfläche gezogen haben, können Sie eine vorhandene Regel auswählen oder einen neuen Regelsatz für die [PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019)\-Aktivität erstellen.Einen vorhandenen Regelsatz wählen Sie mit dem [Dialogfeld "Regelsatz\-Editor auswählen" \(Vorgängerversion\)](../workflow-designer/select-rule-set-dialog-box-legacy.md) aus. Einen neuen Regelsatz erstellen Sie mit dem [Dialogfeld "Regelsatz\-Editor" \(Vorgängerversion\)](../workflow-designer/rule-set-editor-dialog-box-legacy.md).  
+ Nachdem Sie gezogen haben eine **Richtlinie** Aktivitätselement aus der **Toolbox** auf der Workflowentwurfsoberfläche, sollten Sie eine vorhandene Regel auswählen oder erstellen einen neuen Regelsatz für die [PolicyActivity ](http://go.microsoft.com/fwlink?LinkID=65019) Aktivität. Wählen Sie einen vorhandenen Regelsatz, der mithilfe der [wählen Regelsatz festlegen (Dialogfeld) (Legacy)](../workflow-designer/select-rule-set-dialog-box-legacy.md) und Sie Regelsätze erstellen, indem die [Regelsatz festgelegt-Editor (Dialogfeld) (Legacy)](../workflow-designer/rule-set-editor-dialog-box-legacy.md).  
   
 > [!NOTE]
->  Sie können das Dialogfeld [Dialogfeld "Regelsatz\-Editor" \(Vorgängerversion\)](../workflow-designer/rule-set-editor-dialog-box-legacy.md) direkt durch Doppelklicken auf eine [PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019)\-Aktivität auf der Workflowentwurfsoberfläche öffnen.  
+>  Öffnen Sie die [Regelsatz festgelegt-Editor (Dialogfeld) (Legacy)](../workflow-designer/rule-set-editor-dialog-box-legacy.md) Dialogfeld direkt durch Doppelklicken auf eine [PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019) Aktivität, die auf der Entwurfsoberfläche des Workflows ist.  
   
-### So wählen Sie einen Regelsatz für eine PolicyActivity\-Aktivität aus beziehungsweise erstellen ihn  
+### <a name="to-select-or-create-a-rule-set-for-a-policyactivity-activity"></a>So wählen Sie einen Regelsatz für eine PolicyActivity-Aktivität aus beziehungsweise erstellen ihn  
   
-1.  Klicken Sie mit der rechten Maustaste auf die [PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019), und klicken Sie dann auf **Eigenschaften**, um das Eigenschaftenfenster aufzurufen.  
+1.  Mit der rechten Maustaste die [PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019), und klicken Sie dann auf **Eigenschaften** So öffnen die **Eigenschaften** Fenster.  
   
-2.  Klicken Sie auf die **RuleSetReference**\-Eigenschaft.  
+2.  Klicken Sie auf die **RuleSetReference** Eigenschaft.  
   
 3.  Führen Sie einen der folgenden Schritte aus:  
   
-    -   Klicken Sie auf die **RuleSetReference**\-Auslassungszeichen **\[…\]**, und wählen Sie dann im [Dialogfeld "Regelsatz\-Editor auswählen" \(Vorgängerversion\)](../workflow-designer/select-rule-set-dialog-box-legacy.md) einen vorhandenen Regelsatz aus.Wechseln Sie dann zu Schritt 10.  
+    -   Klicken Sie auf die **RuleSetReference** Auslassungszeichen **[...]** , und wählen Sie dann auf einen vorhandenen Regelsatz der [wählen Regelsatz festlegen (Dialogfeld) (Legacy)](../workflow-designer/select-rule-set-dialog-box-legacy.md). Wechseln Sie dann zu Schritt 10.  
   
-         \-oder\-  
+         - oder -   
   
-    -   Geben Sie einen Namen für einen Regelsatz ein.Klicken Sie auf die **RuleSetReference**\-Auslassungszeichen **\[…\]**, und wählen Sie dann im [Dialogfeld "Regelsatz\-Editor auswählen" \(Vorgängerversion\)](../workflow-designer/select-rule-set-dialog-box-legacy.md) die Option **Bearbeiten** aus.  
+    -   Geben Sie einen Namen für einen Regelsatz ein. Klicken Sie auf die **RuleSetReference** Auslassungszeichen **[...]** , und wählen Sie dann **bearbeiten** in der [wählen Regelsatz festlegen (Dialogfeld) (Legacy)](../workflow-designer/select-rule-set-dialog-box-legacy.md).  
   
-         – oder –  
+         - oder -   
   
-    -   Geben Sie einen Namen für einen Regelsatz ein.Erweitern Sie die **RuleSetReference**\-Eigenschaft, und wählen Sie die Auslassungszeichen **\[…\]** der **RuleSetDefinition**\-Eigenschaft aus.  
+    -   Geben Sie einen Namen für einen Regelsatz ein. Erweitern Sie die **RuleSetReference** Eigenschaft, und wählen Sie die Auslassungspunkte **[...]**  in der **Rulesetdefinition** Eigenschaft.  
   
-         Daraufhin wird das [Dialogfeld "Regelsatz\-Editor" \(Vorgängerversion\)](../workflow-designer/rule-set-editor-dialog-box-legacy.md) geöffnet.  
+         Die [Regelsatz festgelegt-Editor (Dialogfeld) (Legacy)](../workflow-designer/rule-set-editor-dialog-box-legacy.md) wird geöffnet.  
   
-4.  Klicken Sie im [Dialogfeld "Regelsatz\-Editor" \(Vorgängerversion\)](../workflow-designer/rule-set-editor-dialog-box-legacy.md) auf die Option **Regel hinzufügen**, um dem Regelsatz eine neue Regel hinzuzufügen.  
+4.  In der [Regelsatz festgelegt-Editor (Dialogfeld) (Legacy)](../workflow-designer/rule-set-editor-dialog-box-legacy.md), klicken Sie auf **Regel hinzufügen** dem Regelsatz eine neue Regel hinzu.  
   
-5.  Geben Sie die Eigenschaften **Name**, **Priorität** und **Erneute Auswertung** ein, oder behalten Sie die Standardwerte bei.  
+5.  Geben Sie die **Namen**, **Priorität**, und **erneute Bewertung** Eigenschaften, oder behalten Sie die Standardwerte.  
   
-6.  Geben Sie den Text für die **Bedingung** ein.  
+6.  Geben Sie den Text für die **Bedingung**.  
   
-7.  Geben Sie den Text für die **Then\-Aktionen** und die **Else\-Aktionen** ein.  
+7.  Geben Sie den Text für die **Then-Aktionen** und **Else-Aktionen**.  
   
-8.  Klicken Sie erneut auf **Regel hinzufügen**, um eine weitere Regel hinzuzufügen.  
+8.  Klicken Sie auf **Regel hinzufügen** erneut aus, um eine weitere Regel hinzuzufügen.  
   
-9. Klicken Sie abschließend auf **OK**.  
+9. Wenn Sie fertig sind, klicken Sie auf **OK**.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019)   
- [Dialogfeld "Regelsatz\-Editor auswählen" \(Vorgängerversion\)](../workflow-designer/select-rule-set-dialog-box-legacy.md)   
- [Dialogfeld "Regelsatz\-Editor" \(Vorgängerversion\)](../workflow-designer/rule-set-editor-dialog-box-legacy.md)   
- [Verwenden der PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65004)   
+ [Regel für die Auswahl festlegen (Dialogfeld) (Vorgängerversion)](../workflow-designer/select-rule-set-dialog-box-legacy.md)   
+ [Regelsatz-Editor (Dialogfeld) (Vorgängerversion)](../workflow-designer/rule-set-editor-dialog-box-legacy.md)   
+ [Verwenden der Policy-Aktivität](http://go.microsoft.com/fwlink?LinkID=65004)   
  [Legacyworkflowaktivitäten](../workflow-designer/legacy-workflow-activities.md)

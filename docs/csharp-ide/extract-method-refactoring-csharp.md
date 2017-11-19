@@ -1,52 +1,50 @@
 ---
-title: "Umgestaltung &quot;Methode extrahieren&quot; (C#) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.csharp.refactoring.extractmethod"
-dev_langs: 
-  - "CSharp"
-helpviewer_keywords: 
-  - "Umgestaltung [C#], Methode extrahieren"
-  - "Methode extrahieren (Umgestaltungsvorgang) [C#]"
+redirect_url: /visualstudio/csharp-ide/refactoring/extract-method
+title: Umgestaltung (c#) Methode extrahieren | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: CSharp
+helpviewer_keywords:
+- refactoring [C#], Extract Method
+- Extract Method refactoring operation [C#]
 ms.assetid: eeba11df-a815-4bec-9c21-8a831891b783
-caps.latest.revision: 29
-caps.handback.revision: 29
-author: "BillWagner"
-ms.author: "wiwagn"
-manager: "wpickett"
+caps.latest.revision: "29"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: e85e745241d8fa880098b73a6306cbca3f19da70
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Umgestaltung &quot;Methode extrahieren&quot; (C#)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-**Methode extrahieren** ist ein Umgestaltungsvorgang und bietet eine einfache Möglichkeit, eine neue Methode auf der Grundlage eines Codefragments in einem vorhandenen Member zu erstellen.  
+# <a name="extract-method-refactoring-c"></a>Umgestaltung "Methode extrahieren" (C#)
+**Methode extrahieren** ist ein Umgestaltungsvorgang, können eine einfache Möglichkeit, eine neue Methode aus einem Codefragment in einem vorhandenen Member zu erstellen.  
   
- Mithilfe von **Methode extrahieren** können Sie eine neue Methode erstellen, indem Sie eine Codeauswahl aus dem Codeblock eines vorhandenen Members heraus extrahieren.  Die neue, extrahierte Methode enthält den ausgewählten Code, und der im vorhandenen Member ausgewählte Code wird durch einen Aufruf der neuen Methode ersetzt.  Durch die Umwandlung eines Codefragments in eine eigene Methode haben Sie die Möglichkeit, Code schnell und exakt neu zu ordnen. Dadurch verbessern Sie die Wiederverwendbarkeit und die Lesbarkeit.  
+ Mit **Methode extrahieren**, erstellen Sie eine neue Methode, mit dem eine Auswahl von Code aus innerhalb eines vorhandenen Mitglieds der Codeblock zu extrahieren. Die neue, extrahierte Methode enthält den ausgewählten Code, und der ausgewählte Code in das vorhandene Element mit einem Aufruf in die neue Methode ersetzt wird. Aktivieren ein Fragment des Codes in eine eigene Methode können Sie schnell und präzise reorganize Code zur Wiederverwendung und die Lesbarkeit besser.  
   
- **Methode extrahieren** bietet folgende Vorteile:  
+ **Methode extrahieren** hat die folgenden Vorteile:  
   
--   Optimale Codierungstechniken aufgrund diskreter, wiederverwendbarer Methoden.  
+-   Betonung von diskreten, wiederverwendbare-Methoden, um am besten Codierungstechniken vertraut zu machen.  
   
--   Selbstdokumentierender Code durch gute Organisation.  
+-   Sich selbst dokumentierender Code durch gute Organisation vertraut zu machen.  
   
-     Bei Verwendung beschreibender Namen können hoch entwickelte Methoden mehr Informationen einlesen als eine Reihe von Kommentaren.  
+     Wenn aussagekräftige Namen verwendet wird, sind allgemeine Methoden sind können weitere, z. B. eine Reihe von Kommentaren.  
   
--   Erstellung von Methoden mit höherer Granularität, um Überschreibungen zu vereinfachen.  
+-   Vertraut zu machen, die Erstellung von differenziertere Methoden zum Überschreiben zu vereinfachen.  
   
--   Vorkommen von doppeltem Code werden reduziert.  
+-   Codeduplikaten wird reduziert.  
   
-### So verwenden Sie "Methode extrahieren"  
+### <a name="to-use-extract-method"></a>Verwenden der Methode extrahieren  
   
 1.  Erstellen Sie eine Konsolenanwendung mit dem Namen `ExtractMethod`, und ersetzen Sie `Program` durch den folgenden Beispielcode.  
   
-    ```c#  
+    ```csharp  
     class A  
     {  
         const double PI = 3.141592;  
@@ -68,44 +66,43 @@ manager: "wpickett"
     }  
     ```  
   
-2.  Wählen Sie das Codefragment aus, das Sie extrahieren möchten:  
+2.  Wählen Sie das Codefragment, die, das Sie extrahieren möchten:  
   
-    ```c#  
+    ```csharp  
     double area = PI * radius * radius;  
-  
     ```  
   
-3.  Klicken Sie im Menü **Umgestalten** auf **Methode extrahieren**.  
+3.  Auf der **Umgestalten** Menü klicken Sie auf **Methode extrahieren**.  
   
-     Das Dialogfeld **Methode extrahieren** wird angezeigt.  
+     Die **Methode extrahieren** Dialogfeld wird angezeigt.  
   
-     Alternativ können Sie auch die Tastenkombination STRG\+R, M drücken, um das Dialogfeld **Methode extrahieren** anzuzeigen.  
+     Alternativ können Sie auch die Tastenkombination STRG + R, M anzuzeigenden eingeben der **Methode extrahieren** (Dialogfeld).  
   
-     Sie können auch mit der rechten Maustaste auf den ausgewählten Code klicken, auf **Umgestalten** zeigen und dann auf **Methode extrahieren** klicken, um das Dialogfeld **Methode extrahieren** aufzurufen.  
+     Sie können auch mit der rechten Maustaste den ausgewählten code, zeigen Sie auf **Umgestalten**, und klicken Sie dann auf **Methode extrahieren** zum Anzeigen der **Methode extrahieren** (Dialogfeld).  
   
-4.  Geben Sie im Feld **Neuer Methodenname** einen Namen für die neue Methode ein, z. B. `CircleArea`.  
+4.  Geben Sie einen Namen für die neue Methode, wie z. B. `CircleArea`in der **neue Methodennamen** Feld.  
   
-     Eine Vorschau der neuen Methodensignatur wird unter **Vorschau der Methodensignatur** angezeigt.  
+     Eine Vorschau der neuen Methodensignatur zeigt unter **Vorschau der Methodensignatur**.  
   
 5.  Klicken Sie auf **OK**.  
   
-## Hinweise  
- Bei Verwendung des Befehls **Methode extrahieren** wird die neue Methode nach dem Quellmember in derselben Klasse eingefügt.  
+## <a name="remarks"></a>Hinweise  
+ Bei Verwendung der **Methode extrahieren** Befehl, die neue Methode nach der Source-Element in der gleichen Klasse eingefügt wird.  
   
-## Partielle Typen  
- Wenn die Klasse ein partieller Typ ist, erzeugt **Methode extrahieren** eine neue Methode, die unmittelbar auf den Quellmember folgt.  **Methode extrahieren** bestimmt die Signatur der neuen Methode und erstellt eine statische Methode, wenn von dem Code in der neuen Methode nicht auf Instanzdaten verwiesen wird.  
+## <a name="partial-types"></a>Partielle Typen  
+ Wenn die Klasse ein partieller Typ, klicken Sie dann ist **Methode extrahieren** generiert die neue Methode sofort nach der Quelle-Element. **Methode extrahieren** bestimmt die Signatur der neuen Methode und erstellt eine statische Methode, wenn keine Instanzdaten vom Code in die neue Methode verwiesen werden.  
   
-## Parameter für generische Typen  
- Wenn Sie eine Methode extrahieren, die über einen Parameter mit einem nicht beschränkten generischen Typ verfügt, fügt der generierte Code dem Parameter nur dann einen `ref`\-Modifizierer hinzu, wenn dem Parameter ein Wert zugewiesen wurde.  Wenn die extrahierte Methode Referenztypen als Argument für den generischen Typ unterstützt, sollten Sie dem Parameter in der Methodensignatur den `ref`\-Modifizierer manuell hinzufügen.  
+## <a name="generic-type-parameters"></a>Generische Typparameter  
+ Wenn Sie eine Methode, die einen nicht eingeschränkte generischer Typparameter hat extrahieren, wird der generierte Code nicht hinzufügen der `ref` Modifizierer an diesen Parameter, wenn ein Wert zugewiesen wird. Wenn die extrahierte Methode Verweistypen als das generische Typargument unterstützt, sollten Sie manuell hinzufügen der `ref` Modifizierer, um den Parameter in der Methodensignatur.  
   
-## Anonyme Methoden  
- Wenn Sie versuchen, ein Fragment aus einer anonymen Methode zu extrahieren, das einen Verweis auf eine außerhalb der anonymen Methode deklarierte oder referenzierte lokale Variable enthält, zeigt Visual Studio eine Warnung zu möglichen semantischen Änderungen an.  
+## <a name="anonymous-methods"></a>Anonyme Methoden  
+ Wenn Sie versuchen, die Teil einer anonymen Methode extrahieren, die einen Verweis auf eine lokale Variable, die enthält entweder deklariert oder außerhalb der anonymen Methode verwiesen wird, klicken Sie dann warnt Visual Studio Sie, zu möglichen semantischen Änderungen.  
   
- Wenn eine anonyme Methode den Wert einer lokalen Variablen verwendet, wird der Wert zu dem Zeitpunkt abgerufen, zu dem die anonyme Methode ausgeführt wird.  Wenn eine anonyme Methode in eine andere Methode extrahiert wird, wird der Wert der lokalen Variablen abgerufen, wenn die extrahierte Methode aufgerufen wird.  
+ Wenn den Wert einer lokalen Variablen in eine anonyme Methode verwendet wird, wird der Wert im Moment abgerufen, wenn die anonyme Methode ausgeführt wird. Wenn eine anonyme Methode in einer anderen Methode extrahiert wurde, wird der Wert der lokalen Variablen zum Zeitpunkt des Aufrufs der extrahierten Methode abgerufen.  
   
- Diese semantische Änderung wird anhand des folgenden Beispiels veranschaulicht.  Wenn dieser Code ausgeführt wird, wird **11** auf der Konsole ausgegeben.  Wenn Sie einen durch Codekommentare gekennzeichneten Bereich mit **Methode extrahieren** in eine eigene Methode extrahieren und dann den umgestalteten Code ausführen, wird **10** auf der Konsole ausgegeben.  
+ Das folgende Beispiel veranschaulicht diese semantische Änderung. Wenn dieser Code, klicken Sie dann ausgeführt wird **11** werden auf der Konsole ausgegeben. Bei Verwendung von **Methode extrahieren** zum Extrahieren von des Codebereich an, die durch die Codekommentare, die in eine eigene Methode markiert ist, und führen Sie dann die umgestalteten Code dann **10** werden auf der Konsole ausgegeben.  
   
-```c#  
+```csharp  
 class Program  
 {  
     delegate void D();  
@@ -123,7 +120,7 @@ class Program
 }  
 ```  
   
- Um diese Situation zu vermeiden, konfigurieren Sie die in der anonymen Methode verwendeten lokalen Variablen als Felder der Klasse.  
+ Stellen Sie um diese Situation zu vermeiden die lokalen Variablen, die in den Feldern der anonymen Methode der Klasse verwendet werden.  
   
-## Siehe auch  
- [Refactoring \(C\#\)](../csharp-ide/refactoring-csharp.md)
+## <a name="see-also"></a>Siehe auch  
+ [Refactoring (C#)](refactoring-csharp.md)

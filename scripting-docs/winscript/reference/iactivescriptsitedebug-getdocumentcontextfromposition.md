@@ -1,27 +1,30 @@
 ---
-title: "IActiveScriptSiteDebug::GetDocumentContextFromPosition | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IActiveScriptSiteDebug::GetDocumentContextFromPosition | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IActiveScriptSiteDebug.GetDocumentContextFromPosition
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "IActiveScriptSiteDebug::GetDocumentContextFromPosition"
+helpviewer_keywords: IActiveScriptSiteDebug::GetDocumentContextFromPosition
 ms.assetid: ba5f7348-0107-4b12-b949-79a012476cf7
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 25ce03a124f246443afd0f5a8540a93e7d474f9a
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# IActiveScriptSiteDebug::GetDocumentContextFromPosition
-Wird vom Sprachmodul, um `IDebugCodeContext::GetSourceContext` zu delegieren.  
+# <a name="iactivescriptsitedebuggetdocumentcontextfromposition"></a>IActiveScriptSiteDebug::GetDocumentContextFromPosition
+Durch das Sprachmodul zum Delegieren verwendet `IDebugCodeContext::GetSourceContext`.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 HRESULT GetDocumentContextFromPosition(  
@@ -32,28 +35,28 @@ HRESULT GetDocumentContextFromPosition(
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `dwSourceContext`  
- \[in\] Der Inhalt der Quelldatei wie geplant zu `ParseScriptText` oder zu `AddScriptlet`.  
+ [in] Der Quellinhalt wie für die `ParseScriptText` oder `AddScriptlet`.  
   
  `uCharacterOffset`  
- \[in\] Zeichenoffset relativ zum Anfang des Skriptblocks oder des Skriptlets.  
+ [in] Zeichenoffset relativ zum Beginn des Skriptblocks oder Scriptlet.  
   
  `uNumChars`  
- \[in\] Anzahl von Zeichen in diesem Kontext.  
+ [in] Anzahl der Zeichen in diesem Kontext.  
   
  `ppsc`  
- \[out\] Der Dokumentenkontext entsprechend diesem Zeichenpositionsbereich.  
+ [out] Der Dokumentenkontext, diesen Zeichenposition Bereich entspricht.  
   
-## Rückgabewert  
- Die Methode gibt ein `HRESULT` zurück.  Zu den möglichen Werten zählen, aber nicht zu, die in der folgenden Tabelle beschränkt.  
+## <a name="return-value"></a>Rückgabewert  
+ Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
   
-|Wert|Description|  
-|----------|-----------------|  
+|Wert|Beschreibung|  
+|-----------|-----------------|  
 |`S_OK`|Die Methode war erfolgreich.|  
   
-## Hinweise  
- Sprachmodule verwenden diese Methode, um `IDebugCodeContext::GetSourceContext` zu delegieren.  
+## <a name="remarks"></a>Hinweise  
+ Sprache-Module mit dieser Methode können Delegieren `IDebugCodeContext::GetSourceContext`.  
   
-## Siehe auch  
- [IActiveScriptSiteDebug\-Schnittstelle](../../winscript/reference/iactivescriptsitedebug-interface.md)
+## <a name="see-also"></a>Siehe auch  
+ [IActiveScriptSiteDebug-Schnittstelle](../../winscript/reference/iactivescriptsitedebug-interface.md)

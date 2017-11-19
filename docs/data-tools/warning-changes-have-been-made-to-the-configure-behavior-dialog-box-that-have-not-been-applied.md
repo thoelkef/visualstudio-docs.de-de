@@ -1,34 +1,36 @@
 ---
-title: "Warnung. Es wurden &#196;nderungen am Dialogfeld &#39;Verhalten konfigurieren&#39; vorgenommen, die nicht &#252;bernommen wurden | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: "Warnung. Das Verhalten konfigurieren (Dialogfeld), die nicht angewendet wurden Änderungen vorgenommen wurden | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: ce5822dd-4f10-4c86-b707-7766837be216
-caps.latest.revision: 3
-caps.handback.revision: 1
-author: "mikeblome"
-ms.author: "mblome"
-manager: "ghogen"
+caps.latest.revision: "3"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.technology: vs-data-tools
+ms.openlocfilehash: cb887a31855c7c31451b2f15c4da3c386a3fe0f4
+ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/09/2017
 ---
-# Warnung. Es wurden &#196;nderungen am Dialogfeld &#39;Verhalten konfigurieren&#39; vorgenommen, die nicht &#252;bernommen wurden
-Warnung.Sie haben Änderungen am Dialogfeld "Verhalten konfigurieren" vorgenommen, die nicht übernommen wurden.Möchten Sie die Änderungen übernehmen?  
+# <a name="warning-changes-have-been-made-to-the-configure-behavior-dialog-box-that-have-not-been-applied"></a>Warnung. Es wurden Änderungen am Dialogfeld 'Verhalten konfigurieren' vorgenommen, die nicht übernommen wurden
+Warnung. Sie haben Änderungen am Dialogfeld "Verhalten konfigurieren" vorgenommen, die nicht übernommen wurden. Möchten Sie die Änderungen übernehmen?  
   
- Das Dialogfeld **Verhalten konfigurieren** ermöglicht das Konfigurieren des Einfüge\-, Update\- und Löschverhaltens für alle verfügbaren Klassen.Diese Nachricht wird angezeigt, wenn Sie eine neue Kombination von **Klasse** und **Verhalten** auswählen und die vorangegangene Änderung noch nicht übernommen wurde.  
+ Die **Verhalten konfigurieren** Dialogfeld können Sie INSERT-, Update- und Delete-Verhalten für alle verfügbaren Klassen zu konfigurieren. Diese Meldung wird angezeigt, wenn Sie ein neues auswählen **Klasse** und **Verhalten** Kombination und die vorangegangene Änderung nicht noch angewendet wurde.  
   
-### So übernehmen Sie die Änderung und fahren fort  
+### <a name="to-apply-the-change-and-continue"></a>So übernehmen Sie die Änderung und fahren fort  
   
--   Klicken Sie auf **Ja**, um die Änderung für die ausgewählte **Klasse** und das **Verhalten** zu übernehmen.  
+-   Klicken Sie auf **Ja** zum Anwenden der Änderung, die dem ausgewählten **Klasse** und **Verhalten**.  
   
-### So brechen Sie die vorangegangene Änderung ab und fahren fort  
+### <a name="to-cancel-the-previous-change-and-continue"></a>So brechen Sie die vorangegangene Änderung ab und fahren fort  
   
--   Klicken Sie auf **Nein**, um die Änderung für die ausgewählte **Klasse** und das **Verhalten** nicht zu übernehmen.  
+-   Klicken Sie auf **keine** um die Änderung, die dem ausgewählten **Klasse** und **Verhalten**.  
   
-## Siehe auch  
- [Object Relational Designer \(O\/R\-Designer\)](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
- [Vorgehensweise: Zuweisen von gespeicherten Prozeduren zur Durchführung von Update\-, Einfüge\- und Löschvorgängen \(O\/R\-Designer\)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)   
- [Exemplarische Vorgehensweise: Erstellen von LINQ to SQL\-Klassen \(O\/R\-Designer\)](../Topic/Walkthrough:%20Creating%20LINQ%20to%20SQL%20Classes%20\(O-R%20Designer\).md)   
- [LINQ to SQL](../Topic/LINQ%20to%20SQL.md)
+## <a name="see-also"></a>Siehe auch
+[O/R-Designer-Nachrichten](../data-tools/o-r-designer-messages.md)  
+[LINQ to SQL-tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

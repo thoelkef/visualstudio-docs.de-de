@@ -1,87 +1,89 @@
 ---
-title: "Haltepunkt-verwandten Methoden | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Debuggen [Debugging-SDK] Haltepunkt-Methoden"
-  - "Haltepunkte, Methoden"
+title: Haltepunkt-bezogenen Methoden | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- debugging [Debugging SDK], breakpoint methods
+- breakpoints, methods
 ms.assetid: a6f77bf0-bf81-443f-8683-5f12075bbe10
-caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: d0d743c98fd9e311f7f118c152e579178b07513d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Haltepunkt-verwandten Methoden
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Ein Modul \(Debug\) muss DE die Einstellung von Haltepunkten unterstützen.  Visual Studio\-Debugunterstützung die folgenden Typen von Haltepunkten:  
+# <a name="breakpoint-related-methods"></a>Haltepunkt-bezogenen Methoden
+Die Einstellung von Haltepunkten muss ein Debugging-Modul (DE) unterstützt werden. Debuggen von Visual Studio unterstützt die folgenden Typen von Haltepunkten:  
   
--   Gebunden  
+-   gebunden  
   
-     Angefordert von der Benutzeroberfläche und an einem angegebenen Speicherort der Code erfolgreich gebunden  
+     Über die Benutzeroberfläche angefordert und erfolgreich gebunden an einen Speicherort für die angegebene Codepage  
   
--   Schwebend  
+-   Ausstehend  
   
-     Angefordert von der Benutzeroberfläche jedoch den tatsächlichen Anweisungen noch nicht gebundener  
+     Über die Benutzeroberfläche, aber noch nicht mit tatsächlichen gebundenen Anweisungen angefordert  
   
-## Erörterung  
- Ein anstehender Haltepunkt tritt beispielsweise auf, wenn die Anweisungen noch nicht geladen werden.  Wenn der Code geladen wird, versuchen auf Code ausstehender Haltepunkte am Speicherort vorgeschriebenen d. h. auf Einfügungs\-Unterbrechungs Anweisungen im Code zu binden.  Ereignisse werden dem Debuggen von Manager der Sitzung \(SDM\), um erfolgreichen Bindung anzugeben gesendet oder zu benachrichtigen, dass eine Bindung Fehler aufgetreten ist.  
+## <a name="discussion"></a>Diskussion  
+ Ein ausstehender Haltepunkt tritt beispielsweise auf, wenn es sich bei die Anweisungen noch nicht geladen werden. Wenn der Code, ausstehenden Haltepunkte, versuchen Sie es an Code am Speicherort vorgeschriebenen, d. h. binden, um die Break-Anweisungen in den Code einfügen geladen wird. Ereignisse werden auf der Sitzungs-Manager (SDM) gesendet, um erfolgreiche Bindung anzugeben oder zu benachrichtigen, dass die Bindung Fehler aufgetreten sind.  
   
- Ein anstehender Haltepunkt verwaltet auch eigene interne Liste der zugehörigen gebundenen Haltepunkte.  Ein anstehender Haltepunkt kann die Einfügung mehrerer Haltepunkte im Code verursachen.  Das Visual Studio debuggen, die Benutzeroberfläche zeigt eine Strukturansicht eines anstehenden Haltepunkten und ihre entsprechenden gebundenen Haltepunkte an.  
+ Ein ausstehender Haltepunkt verwaltet auch eine eigene interne Liste der entsprechenden gebundenen Haltepunkte. Ein ausstehender Haltepunkt kann dazu führen, dass das Einfügen von vielen Haltepunkte im Code. Der Visual Studio-debugging UI zeigt eine Strukturansicht der ausstehenden Haltepunkte und die entsprechenden Haltepunkte gebunden.  
   
- Erstellung und Verwendung von anstehenden Haltepunkts erfordern die Implementierung der [IDebugEngine2::CreatePendingBreakpoint](../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md)\-Methode sowie der folgenden Methoden aus [IDebugPendingBreakpoint2](../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)\-Schnittstellen.  
+ Erstellen und Verwenden eines ausstehenden Haltepunkte erfordern die Implementierung der [IDebugEngine2::CreatePendingBreakpoint](../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md) Methode als auch die folgenden Methoden der [IDebugPendingBreakpoint2](../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) Schnittstellen.  
   
 |Methode|Beschreibung|  
-|-------------|------------------|  
-|[CanBind](../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md)|Bestimmt, ob ein angegebener anstehender Haltepunkt zu einem Speicherort des Codes gebunden werden kann.|  
-|[Binden](../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)|Bindet einen angegebenen anstehenden Haltepunkt zu einem oder mehreren Code speicherorten.|  
-|[GetState](../../extensibility/debugger/reference/idebugpendingbreakpoint2-getstate.md)|Ruft den Zustand eines anstehenden Haltepunkts ab.|  
-|[GetBreakpointRequest](../../extensibility/debugger/reference/idebugpendingbreakpoint2-getbreakpointrequest.md)|Ruft den Haltepunkt Anforderungen ab, die verwendet wird, um einen anstehenden Haltepunkt zu erstellen.|  
-|[Aktivieren](../../extensibility/debugger/reference/idebugpendingbreakpoint2-enable.md)|Schaltet den aktivierten Zustand eines anstehenden Haltepunkts.|  
-|[EnumBoundBreakpoints](../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md)|Listet alle Haltepunkte aufgelistet, die von einem anstehenden Haltepunkt gebunden sind.|  
-|[EnumErrorBreakpoints](../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md)|Listet alle Fehler von Haltepunkten aufgelistet, die von einem anstehenden Haltepunkt auftreten.|  
-|[Delete](../../extensibility/debugger/reference/idebugpendingbreakpoint2-delete.md)|Löscht einen anstehenden Haltepunkt, und alle Haltepunkte, die aus ihm gebunden sind.|  
+|------------|-----------------|  
+|[CanBind](../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md)|Bestimmt, ob ein angegebener ausstehender Haltepunkt an einem Speicherort Code binden können.|  
+|[Binden](../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)|Binden ein angegebenes ausstehender Haltepunkt auf eine oder mehrere Codepositionen.|  
+|[GetState](../../extensibility/debugger/reference/idebugpendingbreakpoint2-getstate.md)|Ruft den Zustand eines ausstehenden Haltepunkts ab.|  
+|[GetBreakpointRequest](../../extensibility/debugger/reference/idebugpendingbreakpoint2-getbreakpointrequest.md)|Ruft das Haltepunkt-Anforderung verwendet, um ein ausstehender Haltepunkt zu erstellen.|  
+|[Aktivieren](../../extensibility/debugger/reference/idebugpendingbreakpoint2-enable.md)|Schaltet den aktivierten Zustand eines ausstehenden Haltepunkts an.|  
+|[EnumBoundBreakpoints](../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md)|Listet alle Breakpoints, die über ein ausstehender Haltepunkt gebunden.|  
+|[EnumErrorBreakpoints](../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md)|Listet alle Fehler Breakpoints, die ein ausstehender Haltepunkt ergeben.|  
+|[Löschen](../../extensibility/debugger/reference/idebugpendingbreakpoint2-delete.md)|Löscht ein ausstehender Haltepunkt und alle Breakpoints, die von ihm gebunden.|  
   
- Um die gebundenen Haltepunkte Haltepunkte und Fehler aufzulisten, müssen Sie alle Methoden aus [IEnumDebugBoundBreakpoints2](../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md) und [IEnumDebugErrorBreakpoints2](../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md)implementieren.  
+ Um die gebundenen Haltepunkte und Fehler Haltepunkte auflisten möchten, müssen Sie die Methoden der implementieren [IEnumDebugBoundBreakpoints2](../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md) und [IEnumDebugErrorBreakpoints2](../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md).  
   
- Ausstehende Haltepunkte, die an einem Speicherort des Codes binden, benötigen Implementierung der folgenden Methoden [IDebugBoundBreakpoint2](../../extensibility/debugger/reference/idebugboundbreakpoint2.md) .  
+ Ausstehender Haltepunkte, die an einen Code binden erfordern Speicherort Implementierung der folgenden [IDebugBoundBreakpoint2](../../extensibility/debugger/reference/idebugboundbreakpoint2.md) Methoden.  
   
 |Methode|Beschreibung|  
-|-------------|------------------|  
-|[GetPendingBreakpoint](../../extensibility/debugger/reference/idebugboundbreakpoint2-getpendingbreakpoint.md)|Ruft den anstehenden Haltepunkt ab, der einen Haltepunkt enthält.|  
-|[GetState](../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md)|Ruft den Zustand eines gebundenen Haltepunkte ab.|  
-|[GetBreakpointResolution](../../extensibility/debugger/reference/idebugboundbreakpoint2-getbreakpointresolution.md)|Ruft die Auflösung von Haltepunkt ab, die den Haltepunkt beschreibt.|  
+|------------|-----------------|  
+|[GetPendingBreakpoint](../../extensibility/debugger/reference/idebugboundbreakpoint2-getpendingbreakpoint.md)|Ruft den ausstehenden Haltepunkts, der einen Haltepunkt enthält.|  
+|[GetState](../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md)|Ruft den Zustand eines Haltepunkts gebundenen ab.|  
+|[GetBreakpointResolution](../../extensibility/debugger/reference/idebugboundbreakpoint2-getbreakpointresolution.md)|Ruft die Breakpoint-Lösung, die beschreibt, einen Haltepunkt an.|  
 |[Aktivieren](../../extensibility/debugger/reference/idebugboundbreakpoint2-enable.md)|Aktiviert oder deaktiviert einen Haltepunkt.|  
-|[Delete](../../extensibility/debugger/reference/idebugboundbreakpoint2-delete.md)|Löscht einen gebundenen Haltepunkt.|  
+|[Löschen](../../extensibility/debugger/reference/idebugboundbreakpoint2-delete.md)|Löscht einen gebundenen Haltepunkt an.|  
   
- Auflösungs\- und Anforderungsinformationen erfordern Implementierung der folgenden Methoden [IDebugBreakpointResolution2](../../extensibility/debugger/reference/idebugbreakpointresolution2.md) .  
-  
-|Methode|Beschreibung|  
-|-------------|------------------|  
-|[GetBreakpointType](../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md)|Ruft den Typ des Haltepunkts ab, der von einer Auflösung dargestellt wird.|  
-|[GetResolutionInfo](../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)|Ruft den Haltepunkt auflösungs Informationen ab, die den Haltepunkt beschreibt.|  
-  
- Die Behebung der Fehler, die möglicherweise während der Bindung auftreten können, benötigt die Implementierung der folgenden Methoden [IDebugErrorBreakpoint2](../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) .  
+ Auflösung und Anforderung, die Informationen benötigen, die Implementierung der folgenden [IDebugBreakpointResolution2](../../extensibility/debugger/reference/idebugbreakpointresolution2.md) Methoden.  
   
 |Methode|Beschreibung|  
-|-------------|------------------|  
-|[GetPendingBreakpoint](../../extensibility/debugger/reference/idebugerrorbreakpoint2-getpendingbreakpoint.md)|Ruft den anstehenden Haltepunkt ab, der einen Fehler breakpoint enthält.|  
-|[GetBreakpointResolution](../../extensibility/debugger/reference/idebugerrorbreakpoint2-getbreakpointresolution.md)|Ruft die Auflösung von Fehlern Haltepunkt ab, die den Fehler beschreibt. breakpoint|  
+|------------|-----------------|  
+|[GetBreakpointType](../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md)|Ruft den Typ des Haltepunkts eine Auflösung dargestellt.|  
+|[GetResolutionInfo](../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)|Ruft die breakpointinformationen für die Auflösung, die einen Breakpoint beschreibt.|  
   
- Die Behebung der Fehler, die möglicherweise während binden auftreten können, benötigt die folgenden Arten von [IDebugErrorBreakpointResolution2](../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md).  
+ Auflösung von Fehlern, die während der Bindung auftreten erfordert die Implementierung der folgenden [IDebugErrorBreakpoint2](../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) Methoden.  
   
 |Methode|Beschreibung|  
-|-------------|------------------|  
-|[GetBreakpointType](../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getbreakpointtype.md)|Ruft den Typ eines Haltepunkts ab.|  
-|[GetResolutionInfo](../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md)|Ruft die Informationen Auflösungs eines Haltepunkts ab.|  
+|------------|-----------------|  
+|[GetPendingBreakpoint](../../extensibility/debugger/reference/idebugerrorbreakpoint2-getpendingbreakpoint.md)|Ruft den ausstehenden Haltepunkts, der einen Haltepunkt auf Fehler enthält.|  
+|[GetBreakpointResolution](../../extensibility/debugger/reference/idebugerrorbreakpoint2-getbreakpointresolution.md)|Ruft die Auflösung der Breakpoint-Fehler, die einen Haltepunkt auf Fehler beschreibt.|  
   
- Das Anzeigen des Quellcodes an einem Haltepunkt müssen Sie die Methoden von [IDebugStackFrame2::GetDocumentContext](../../extensibility/debugger/reference/idebugstackframe2-getdocumentcontext.md) und\/oder die Methoden von [IDebugStackFrame2::GetCodeContext](../../extensibility/debugger/reference/idebugstackframe2-getcodecontext.md)zu implementieren.  
+ Auflösung von Fehlern, die während der Bindung auftreten erfordert außerdem die folgenden Methoden der [IDebugErrorBreakpointResolution2](../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md).  
   
-## Siehe auch  
- [Steuerung der Ausführung und Status Bewertung](../../extensibility/debugger/execution-control-and-state-evaluation.md)
+|Methode|Beschreibung|  
+|------------|-----------------|  
+|[GetBreakpointType](../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getbreakpointtype.md)|Ruft den Typ eines Haltepunkts.|  
+|[GetResolutionInfo](../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md)|Ruft die problemlösungsinformationen eines Haltepunkts.|  
+  
+ Anzeigen des Quellcodes an einem Haltepunkt erfordert, dass Sie die Methoden implementieren [IDebugStackFrame2::GetDocumentContext](../../extensibility/debugger/reference/idebugstackframe2-getdocumentcontext.md) und/oder die Methoden der [IDebugStackFrame2::GetCodeContext](../../extensibility/debugger/reference/idebugstackframe2-getcodecontext.md).  
+  
+## <a name="see-also"></a>Siehe auch  
+ [Ausführungssteuerung und Zustandsauswertung](../../extensibility/debugger/execution-control-and-state-evaluation.md)

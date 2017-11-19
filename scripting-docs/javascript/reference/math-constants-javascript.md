@@ -1,67 +1,70 @@
 ---
-title: "Math-Konstanten (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "LN2-Konstante [JavaScript]"
-  - "E-Konstante [JavaScript]"
-  - "LOG10E-Konstante [JavaScript]"
-  - "SQRT1_2-Konstante [JavaScript]"
-  - "LOG2E-Konstante [JavaScript]"
-  - "Math.SQRT2-Konstante [JavaScript]"
-  - "PI-Konstante [JavaScript]"
-  - "Math.LOG2E-Konstante [JavaScript]"
-  - "Konstanten [JavaScript], Math"
-  - "Math.E-Konstante [JavaScript]"
-  - "Logarithmuskonstante [JavaScript]"
-  - "Math.LOG10E-Konstante [JavaScript]"
-  - "Math.SQRT1_2-Konstante [JavaScript]"
-  - "SQRT2-Konstante [JavaScript]"
-  - "Quadratwurzelkonstante [JavaScript]"
-  - "Math.PI-Konstante [JavaScript]"
-  - "Math-Konstanten [JavaScript]"
-  - "LN10-Konstante [JavaScript]"
-  - "Math.LN2-Konstante [JavaScript]"
-  - "Math.LN10-Konstante [JavaScript]"
+title: Math-Konstanten (JavaScript) | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- LN2 constant [JavaScript]
+- E constant [JavaScript]
+- LOG10E constant [JavaScript]
+- SQRT1_2 constant [JavaScript]
+- LOG2E constant [JavaScript]
+- Math.SQRT2 constant [JavaScript]
+- PI constant [JavaScript]
+- Math.LOG2E constant [JavaScript]
+- constants [JavaScript], math
+- Math.E constant [JavaScript]
+- logarithm consants [JavaScript]
+- Math.LOG10E constant [JavaScript]
+- Math.SQRT1_2 constant [JavaScript]
+- SQRT2 constant [JavaScript]
+- square root constants [JavaScript]
+- Math.PI constant [JavaScript]
+- math constants [JavaScript]
+- LN10 constant [JavaScript]
+- Math.LN2 constant [JavaScript]
+- Math.LN10 constant [JavaScript]
 ms.assetid: 8a674046-cb99-4103-92be-83697fba6344
-caps.latest.revision: 13
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 9942abb69af416cd4cd7f092dc9f1478e0bc3a69
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# Math-Konstanten (JavaScript)
-Mathematische Konstanten geben konstante Werte zurück, die Eigenschaften des `Math`\-Objekts sind.  
+# <a name="math-constants-javascript"></a>Math-Konstanten (JavaScript)
+Math-Konstanten Konstante Werte zurückgeben, die Eigenschaften sind die `Math` Objekt.  
   
-## Konstanten des Math\-Objekts  
- In der folgenden Tabelle sind konstante Werte aufgelistet, bei denen es sich um Eigenschaften des [Math\-Objekts](../../javascript/reference/math-object-javascript.md) handelt.  
+## <a name="math-object-constants"></a>Konstanten des Math-Objekts  
+ Die folgende Tabelle enthält konstante Werte, die Eigenschaften sind die [Math-Objekt](../../javascript/reference/math-object-javascript.md).  
   
 |Konstante|Beschreibung|Ungefährer Wert|  
-|---------------|------------------|---------------------|  
-|`Math.E`|Die mathematische Konstante e.  Die Eulersche Zahl, Basis natürlicher Logarithmen.|2.718|  
+|--------------|-----------------|-----------------------|  
+|`Math.E`|Die mathematische Konstante e. Dies ist die eulersche Zahl, die Basis des natürlichen Logarithmus.|2.718|  
 |`Math.LN2`|Der natürliche Logarithmus von 2.|0.693|  
 |`Math.LN10`|Der natürliche Logarithmus von 10.|2.302|  
-|`Math.LOG2E`|Der Logarithmus zur Basis 2 von e.|1.443|  
-|`Math.LOG10E`|Der Logarithmus zur Basis 10 von e.|0.434|  
-|`Math.PI`|Pi.  Gibt das Verhältnis eines Kreisumfangs zum Kreisdurchmesser an.|3.14159|  
-|`Math.SQRT1_2`|Die Quadratwurzel von 0,5 oder 1 geteilt durch die Quadratwurzel von 2.|0.707|  
+|`Math.LOG2E`|Der Logarithmus zur Basis 2 von e.|1.443|  
+|`Math.LOG10E`|Der Logarithmus zur Basis 10 von e.|0.434|  
+|`Math.PI`|Pi. Dies ist das Verhältnis vom Umfang eines Kreises zu dessen Durchmesser.|3.14159|  
+|`Math.SQRT1_2`|Die Quadratwurzel von 0,5 oder, anders ausgedrückt, 1 dividiert durch die Quadratwurzel von 2.|0.707|  
 |`Math.SQRT2`|Die Quadratwurzel von 2.|1.414|  
   
-## Beispiel  
- Im folgenden Beispiel wird die Verwendung der `Math.PI`\-Konstante veranschaulicht.  
+## <a name="example"></a>Beispiel  
+ Das folgende Beispiel zeigt, wie die `Math.PI` konstant.  
   
-```javascript  
+```JavaScript  
 var radius = 3;  
 var area = Math.PI * radius * radius;  
 document.write(area);  
@@ -70,11 +73,11 @@ document.write(area);
   
 ```  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
- **Gilt für**: [Math\-Objekt](../../javascript/reference/math-object-javascript.md)  
+ **Gilt für**: [Math-Objekt](../../javascript/reference/math-object-javascript.md)  
   
-## Siehe auch  
- [Nummerkonstanten](../../javascript/reference/number-constants-javascript.md)   
- [JavaScript\-Konstanten](../../javascript/reference/javascript-constants.md)
+## <a name="see-also"></a>Siehe auch  
+ [Konstanten des Number](../../javascript/reference/number-constants-javascript.md)   
+ [JavaScript-Konstanten](../../javascript/reference/javascript-constants.md)

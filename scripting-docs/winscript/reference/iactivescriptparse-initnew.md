@@ -1,37 +1,40 @@
 ---
-title: "IActiveScriptParse::InitNew | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IActiveScriptParse::InitNew | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IActiveScriptParse.InitNew
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "IActiveScriptParse_InitNew"
+helpviewer_keywords: IActiveScriptParse_InitNew
 ms.assetid: 3a582bd6-fc0d-43a5-812f-5ea55a8517a1
-caps.latest.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: e34094bcc25c0316fa670f570d8b2664acc0ba78
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# IActiveScriptParse::InitNew
+# <a name="iactivescriptparseinitnew"></a>IActiveScriptParse::InitNew
 Initialisiert das Skriptmodul.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 HRESULT InitNew(void);  
 ```  
   
-## Rückgabewert  
- Gibt zurück, wenn `S_OK` erfolgreich oder `E_FAIL`, wenn ein Fehler bei der Initialisierung aufgetreten ist.  
+## <a name="return-value"></a>Rückgabewert  
+ Gibt `S_OK` im Erfolgsfall oder `E_FAIL` bei einem während der Initialisierung Fehler.  
   
-## Hinweise  
- Bevor das Skriptmodul verwendet werden kann, muss eine der folgenden Methoden aufgerufen werden: `IPersist*::Load`, `IPersist*::InitNew` oder `IActiveScriptParse::InitNew`.  Die Semantik dieser Methode ist die `IPersistStreamInit::InitNew` identisch, insofern, dass diese Methode das Skriptmodul anweist, sich zu initialisieren.  Beachten Sie, dass sie ungültig ist, `IPersist*::InitNew` oder `IActiveScriptParse::InitNew` und `IPersist*::Load` aufzurufen, noch ist es gültig, `IPersist*::InitNew`, `IActiveScriptParse::InitNew` oder `IPersist*::Load` mehrmals aufzurufen.  
+## <a name="remarks"></a>Hinweise  
+ Bevor das Skriptmodul verwendet werden kann, eine der folgenden Methoden muss aufgerufen werden: `IPersist*::Load`, `IPersist*::InitNew`, oder `IActiveScriptParse::InitNew`. Die Semantik dieser Methode ist identisch mit `IPersistStreamInit::InitNew`in dieser weist diese des Skriptmoduls in sich selbst zu initialisieren. Beachten Sie, dass es nicht zulässig, beide rufen `IPersist*::InitNew` oder `IActiveScriptParse::InitNew` und `IPersist*::Load`, noch ist es zulässig, rufen Sie `IPersist*::InitNew`, `IActiveScriptParse::InitNew`, oder `IPersist*::Load` mehr als einmal.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IActiveScriptParse](../../winscript/reference/iactivescriptparse.md)

@@ -1,312 +1,314 @@
 ---
-title: "Lokale Werte abrufen | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Auswertung von Ausdrücken, lokale Werte"
-  - "Debuggen von lokalen Werte [Debugging-SDK]"
-  - "Auswertung von Ausdrücken, die lokalen Werte abrufen"
+title: Abrufen von lokalen Werten | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- expression evaluation, local values
+- debugging [Debugging SDK], local values
+- expression evaluation, getting local values
 ms.assetid: a10b0764-65ac-476f-bf42-b4a9c38e20de
-caps.latest.revision: 13
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: c94da91d5b91696ac02de778035a581a3f28c1d4
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Lokale Werte abrufen
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
+# <a name="getting-local-values"></a>Abrufen von lokalen Werten
 > [!IMPORTANT]
->  In Visual Studio 2015 ist diese Art der Implementierung von ausdrucksauswertungen veraltet. Informationen über das Implementieren von CLR\-ausdrucksauswertungen finden Sie unter [CLR\-Ausdrucksauswertungen](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) und [Managed Expression Evaluator Sample](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+>  In Visual Studio 2015 wird diese Möglichkeit zum Implementieren von ausdruckauswertung veraltet. Informationen zu CLR-ausdrucksauswertungen implementieren, finden Sie unter [CLR-Ausdrucksauswertungen](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) und [Managed Expression Evaluator Sample](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
- Um den Wert einer lokalen abzurufen, ruft Visual Studio [GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) für diese lokale. In dieser Implementierung der Klasse `CFieldProperty` implementiert die IDebugProperty2\-Schnittstelle für jede lokale.  
+ Um den Wert einer lokalen abzurufen, ruft Visual Studio [GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) für diese lokale. In dieser Implementierung der Klasse `CFieldProperty` implementiert die Schnittstelle IDebugProperty2 für jede lokale.  
   
  Diese Implementierung der `IDebugProperty2::GetPropertyInfo` führt die folgenden Aufgaben:  
   
-1.  Ruft des lokalen Namen, Eigenschaft und Attribute aus der [FIELD\_INFO](../../extensibility/debugger/reference/field-info.md) Struktur gefüllt, wenn die Klasse instanziiert und initialisiert wurde.  
+1.  Ruft des lokalen Namen, Eigenschaft und Attribute aus der [FIELD_INFO](../../extensibility/debugger/reference/field-info.md) Struktur ausgefüllt, wenn die Klasse instanziiert und initialisiert wurde.  
   
 2.  Ruft den lokalen Typ aus der [IDebugField](../../extensibility/debugger/reference/idebugfield.md) Objekt.  
   
-3.  Ruft den lokalen Wert aus der `IDebugField` Objekt. Dieses Feld gebunden ist, auf die Speicheradresse des lokalen mithilfe der [IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md) Objekts und der Wert stammt aus dem resultierenden [IDebugObject](../../extensibility/debugger/reference/idebugobject.md) Objekt.  
+3.  Ruft den lokalen Wert aus der `IDebugField` Objekt. Dieses Feld gebunden ist, auf die Speicheradresse des lokalen mithilfe der [IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md) Objekts und der Wert stammt aus den resultierenden [IDebugObject](../../extensibility/debugger/reference/idebugobject.md) Objekt.  
   
-4.  Gibt alle angeforderte Eigenschaften in einer [DEBUG\_PROPERTY\_INFO](../../extensibility/debugger/reference/debug-property-info.md) Struktur.  
+4.  Gibt alle angeforderte Eigenschaften in einem [DEBUG_PROPERTY_INFO](../../extensibility/debugger/reference/debug-property-info.md) Struktur.  
   
-## Verwalteter Code  
- Dieses Beispiel zeigt eine Implementierung von `IDebugProperty2::GetPropertyInfo` für eine Methode in verwaltetem Code lokalen's. Es zeigt auch eine Hilfsfunktion `Field.GetType`, besteht, wird der Typ des Felds abgerufen.`Field.GetValue` sehen Sie in [Auswertung der lokalen Variablen](../../extensibility/debugger/evaluating-locals.md). Die Hilfsfunktion `Field.MapModifiersToAttributes` \(nicht dargestellt\) einfach konvertiert ein Feld [FIELD\_MODIFIERS](../../extensibility/debugger/reference/field-modifiers.md) flags [DBG\_ATTRIB\_FLAGS](../../extensibility/debugger/reference/dbg-attrib-flags.md) Werte.  
+## <a name="managed-code"></a>Verwalteter Code  
+ Dieses Beispiel zeigt eine Implementierung von `IDebugProperty2::GetPropertyInfo` für eine Methode den lokalen in verwaltetem Code. Darüber hinaus wird gezeigt, eine Hilfsfunktion `Field.GetType`, d. h. zum Abrufen der Typ des Felds verwendet. `Field.GetValue`wird angezeigt, [auswerten "lokal"](../../extensibility/debugger/evaluating-locals.md). Die Hilfsfunktion `Field.MapModifiersToAttributes` (nicht dargestellt) einfach ein Feld konvertiert [FIELD_MODIFIERS](../../extensibility/debugger/reference/field-modifiers.md) flags [DBG_ATTRIB_FLAGS](../../extensibility/debugger/reference/dbg-attrib-flags.md) Werte.  
   
-```c#  
+```csharp  
 namespace EEMC  
 {  
-    public class CFieldProperty : IDebugProperty2  
-    {  
-        public HRESULT GetPropertyInfo(  
-            uint                  dwFields,  
-            uint                  radix,  
-            uint                  timeout,  
-            IDebugReference2[]    refArgs,  
-            uint                  argCount,   
-            DEBUG_PROPERTY_INFO[] infoArray)  
-        {  
-            DEBUGPROP_INFO_FLAGS flags = (DEBUGPROP_INFO_FLAGS) dwFields;  
-            DEBUGPROP_INFO_FLAGS infoFields = DEBUGPROP_INFO_FLAGS.DEBUGPROP_INFO_NONE;  
+    public class CFieldProperty : IDebugProperty2  
+    {  
+        public HRESULT GetPropertyInfo(  
+            uint                  dwFields,  
+            uint                  radix,  
+            uint                  timeout,  
+            IDebugReference2[]    refArgs,  
+            uint                  argCount,   
+            DEBUG_PROPERTY_INFO[] infoArray)  
+        {  
+            DEBUGPROP_INFO_FLAGS flags = (DEBUGPROP_INFO_FLAGS) dwFields;  
+            DEBUGPROP_INFO_FLAGS infoFields = DEBUGPROP_INFO_FLAGS.DEBUGPROP_INFO_NONE;  
   
-            // Initialize the structure.  
-            DEBUG_PROPERTY_INFO info = infoArray[0];  
-            info.pProperty = null;  
+            // Initialize the structure.  
+            DEBUG_PROPERTY_INFO info = infoArray[0];  
+            info.pProperty = null;  
   
-            // Fill in the full name, if requested.   
-            if (0 != (flags & DEBUGPROP_INFO_FLAGS.DEBUGPROP_INFO_FULLNAME))  
-            {  
-                info.bstrFullName = fieldInfo.bstrFullName;  
-                infoFields |= DEBUGPROP_INFO_FLAGS.DEBUGPROP_INFO_FULLNAME;   
-            }  
-            // Fill in the name, if requested.   
-            if (0 != (flags & DEBUGPROP_INFO_FLAGS.DEBUGPROP_INFO_NAME))  
-            {  
-                info.bstrName = fieldInfo.bstrName;  
-                infoFields |= DEBUGPROP_INFO_FLAGS.DEBUGPROP_INFO_NAME;   
-            }  
-            // Fill in the type, if requested.  
-            if (0 != (flags & DEBUGPROP_INFO_FLAGS.DEBUGPROP_INFO_TYPE))  
-            {  
-                if (fieldType == null)  
-                    fieldType = Field.GetType(field, out fieldSize);  
-                if (fieldType == null)  
-                    info.bstrType = "unknown";  
-                else  
-                    info.bstrType = fieldType.ToString();  
-                infoFields |= DEBUGPROP_INFO_FLAGS.DEBUGPROP_INFO_TYPE;  
-            }  
-            // The property associated with this property is this property.  
-            if (0 != (flags & DEBUGPROP_INFO_FLAGS.DEBUGPROP_INFO_PROP))  
-            {  
-                info.pProperty = this;  
-                infoFields |= DEBUGPROP_INFO_FLAGS.DEBUGPROP_INFO_PROP;   
-            }  
-            // Get the property value, if requested.  
-            if (0 != (flags & DEBUGPROP_INFO_FLAGS.DEBUGPROP_INFO_VALUE))  
-            {  
-                if (fieldType == null)  
-                    fieldType = Field.GetType(field, out fieldSize);  
-                if (fieldType == null)  
-                    info.bstrValue = "?";  
-                else  
-                {  
-                    object o = Field.GetValue(binder, field, fieldType, fieldSize);  
-                    if (o == null)  
-                        info.bstrValue = "?";  
-                    else  
-                        info.bstrValue = o.ToString();  
-                }  
-                infoFields |= DEBUGPROP_INFO_FLAGS.DEBUGPROP_INFO_VALUE;   
-            }  
-            // Get the property attributes, if requested.  
-            if (0 != (flags & DEBUGPROP_INFO_FLAGS.DEBUGPROP_INFO_ATTRIB))  
-            {  
-                info.dwAttrib =   
-                    (ulong) Field.MapModifiersToAttributes(  
-                        (FIELD_MODIFIERS) fieldInfo.dwModifiers,  
-                        fieldKind);  
-                infoFields |= DEBUGPROP_INFO_FLAGS.DEBUGPROP_INFO_ATTRIB;   
-            }  
-            info.dwFields = (uint) infoFields;  
-            infoArray[0] = info;  
-            return COM.S_OK;  
-        }  
-    }  
+            // Fill in the full name, if requested.   
+            if (0 != (flags & DEBUGPROP_INFO_FLAGS.DEBUGPROP_INFO_FULLNAME))  
+            {  
+                info.bstrFullName = fieldInfo.bstrFullName;  
+                infoFields |= DEBUGPROP_INFO_FLAGS.DEBUGPROP_INFO_FULLNAME;   
+            }  
+            // Fill in the name, if requested.   
+            if (0 != (flags & DEBUGPROP_INFO_FLAGS.DEBUGPROP_INFO_NAME))  
+            {  
+                info.bstrName = fieldInfo.bstrName;  
+                infoFields |= DEBUGPROP_INFO_FLAGS.DEBUGPROP_INFO_NAME;   
+            }  
+            // Fill in the type, if requested.  
+            if (0 != (flags & DEBUGPROP_INFO_FLAGS.DEBUGPROP_INFO_TYPE))  
+            {  
+                if (fieldType == null)  
+                    fieldType = Field.GetType(field, out fieldSize);  
+                if (fieldType == null)  
+                    info.bstrType = "unknown";  
+                else  
+                    info.bstrType = fieldType.ToString();  
+                infoFields |= DEBUGPROP_INFO_FLAGS.DEBUGPROP_INFO_TYPE;  
+            }  
+            // The property associated with this property is this property.  
+            if (0 != (flags & DEBUGPROP_INFO_FLAGS.DEBUGPROP_INFO_PROP))  
+            {  
+                info.pProperty = this;  
+                infoFields |= DEBUGPROP_INFO_FLAGS.DEBUGPROP_INFO_PROP;   
+            }  
+            // Get the property value, if requested.  
+            if (0 != (flags & DEBUGPROP_INFO_FLAGS.DEBUGPROP_INFO_VALUE))  
+            {  
+                if (fieldType == null)  
+                    fieldType = Field.GetType(field, out fieldSize);  
+                if (fieldType == null)  
+                    info.bstrValue = "?";  
+                else  
+                {  
+                    object o = Field.GetValue(binder, field, fieldType, fieldSize);  
+                    if (o == null)  
+                        info.bstrValue = "?";  
+                    else  
+                        info.bstrValue = o.ToString();  
+                }  
+                infoFields |= DEBUGPROP_INFO_FLAGS.DEBUGPROP_INFO_VALUE;   
+            }  
+            // Get the property attributes, if requested.  
+            if (0 != (flags & DEBUGPROP_INFO_FLAGS.DEBUGPROP_INFO_ATTRIB))  
+            {  
+                info.dwAttrib =   
+                    (ulong) Field.MapModifiersToAttributes(  
+                        (FIELD_MODIFIERS) fieldInfo.dwModifiers,  
+                        fieldKind);  
+                infoFields |= DEBUGPROP_INFO_FLAGS.DEBUGPROP_INFO_ATTRIB;   
+            }  
+            info.dwFields = (uint) infoFields;  
+            infoArray[0] = info;  
+            return COM.S_OK;  
+        }  
+    }  
   
 //----------------------------------------------------------------------------  
   
-    internal class Field  
-    {  
-        internal static Type GetType(IDebugField field, out uint size)  
-        {  
-            size = 0;  
+    internal class Field  
+    {  
+        internal static Type GetType(IDebugField field, out uint size)  
+        {  
+            size = 0;  
   
-            IDebugField fieldType = null;  
-            field.GetType(out fieldType);  
-            if (fieldType == null)  return null;  
+            IDebugField fieldType = null;  
+            field.GetType(out fieldType);  
+            if (fieldType == null)  return null;  
   
-            // Get field size.  
-            fieldType.GetSize(out size);  
+            // Get field size.  
+            fieldType.GetSize(out size);  
   
-            // Get approximate type name.  
-            FIELD_INFO[] fieldTypeInfo = new FIELD_INFO[1];  
-            fieldType.GetInfo((uint) FIELD_INFO_FIELDS.FIF_NAME,  
-                fieldTypeInfo);  
+            // Get approximate type name.  
+            FIELD_INFO[] fieldTypeInfo = new FIELD_INFO[1];  
+            fieldType.GetInfo((uint) FIELD_INFO_FIELDS.FIF_NAME,  
+                fieldTypeInfo);  
   
-            // Map approximate name to type name.  
-            switch (fieldTypeInfo[0].bstrName)  
-            {  
-                case "whole":  
-                switch (size)  
-                {  
-                    case 1: return typeof(sbyte);  
-                    case 2: return typeof(short);  
-                    case 4: return typeof(int);  
-                    case 8: return typeof(long);  
-                }  
-                    break;  
-                case "uwhole":  
-                switch (size)  
-                {  
-                    case 1: return typeof(byte);  
-                    case 2: return typeof(char);  
-                    case 4: return typeof(uint);  
-                    case 8: return typeof(ulong);  
-                }  
-                    break;  
-                case "real":  
-                switch (size)  
-                {  
-                    case 4: return typeof(float);  
-                    case 8: return typeof(double);  
-                }  
-                    break;  
-                case "bool": return typeof(bool);  
-                case "string": return typeof(string);  
-            }  
-            return null;  
-        }  
+            // Map approximate name to type name.  
+            switch (fieldTypeInfo[0].bstrName)  
+            {  
+                case "whole":  
+                switch (size)  
+                {  
+                    case 1: return typeof(sbyte);  
+                    case 2: return typeof(short);  
+                    case 4: return typeof(int);  
+                    case 8: return typeof(long);  
+                }  
+                    break;  
+                case "uwhole":  
+                switch (size)  
+                {  
+                    case 1: return typeof(byte);  
+                    case 2: return typeof(char);  
+                    case 4: return typeof(uint);  
+                    case 8: return typeof(ulong);  
+                }  
+                    break;  
+                case "real":  
+                switch (size)  
+                {  
+                    case 4: return typeof(float);  
+                    case 8: return typeof(double);  
+                }  
+                    break;  
+                case "bool": return typeof(bool);  
+                case "string": return typeof(string);  
+            }  
+            return null;  
+        }  
 }  
 ```  
   
-## Nicht verwalteter Code  
- Dieses Beispiel zeigt eine Implementierung von `IDebugProperty2::GetPropertyInfo` für eine Methode in nicht verwaltetem Code lokalen's. Es zeigt außerdem zwei Hilfsfunktionen, `FieldGetType` und `FieldGetValue` werden verwendet, um des Felds Typ und Wert abzurufen. Beachten Sie, dass `VARIANT`s für den Wert des Felds verwendet werden, und geben Sie als eine `VARIANT` können eine Vielzahl von Werttypen behandeln. In dieser Implementierung `FieldGetValue` Gibt ein [IDebugField](../../extensibility/debugger/reference/idebugfield.md) Objekt, das später in einen Wert konvertiert in einem Aufruf von `FieldGetPrimitiveValue` \(wie im [Auswertung der lokalen Variablen](../../extensibility/debugger/evaluating-locals.md)\).  
+## <a name="unmanaged-code"></a>Nicht verwalteter Code  
+ Dieses Beispiel zeigt eine Implementierung von `IDebugProperty2::GetPropertyInfo` für eine Methode den lokalen in nicht verwaltetem Code. Darüber hinaus wird gezeigt, zwei Hilfsfunktionen `FieldGetType` und `FieldGetValue` , dienen zum Typ und Wert des Felds bzw. abrufen. Beachten Sie, dass `VARIANT`s werden für den Wert des Felds verwendet, und geben Sie als eine `VARIANT` kann eine Vielzahl von Werttypen zu behandeln. In dieser Implementierung `FieldGetValue` gibt eine [IDebugField](../../extensibility/debugger/reference/idebugfield.md) Objekt, das später in einen Wert in einem Aufruf konvertiert `FieldGetPrimitiveValue` (wie im [auswerten "lokal"](../../extensibility/debugger/evaluating-locals.md)).  
   
-```cpp#  
+```cpp  
 STDMETHODIMP CFieldProperty::GetPropertyInfo(   
-    in  DEBUGPROP_INFO_FLAGS infoFlags,  
-    in  DWORD                radix,  
-    in  DWORD                timeout,  
-    in  IDebugReference2**   ppargs,  
-    in  DWORD                argCount,  
-    out DEBUG_PROPERTY_INFO* ppropertyInfo  
-    )  
+    in  DEBUGPROP_INFO_FLAGS infoFlags,  
+    in  DWORD                radix,  
+    in  DWORD                timeout,  
+    in  IDebugReference2**   ppargs,  
+    in  DWORD                argCount,  
+    out DEBUG_PROPERTY_INFO* ppropertyInfo  
+    )  
 {  
-    if (!ppropertyInfo)  
-        return E_INVALIDARG;  
-    else  
-        memset(ppropertyInfo,0,sizeof(*ppropertyInfo));  
+    if (!ppropertyInfo)  
+        return E_INVALIDARG;  
+    else  
+        memset(ppropertyInfo,0,sizeof(*ppropertyInfo));  
   
-    if (infoFlags & DEBUGPROP_INFO_FULLNAME)  
-    {  
-        ppropertyInfo->dwFields     |= DEBUGPROP_INFO_FULLNAME;  
-        ppropertyInfo->bstrFullName  = SysAllocString( m_fieldInfo.bstrFullName );  
-    }  
+    if (infoFlags & DEBUGPROP_INFO_FULLNAME)  
+    {  
+        ppropertyInfo->dwFields     |= DEBUGPROP_INFO_FULLNAME;  
+        ppropertyInfo->bstrFullName  = SysAllocString( m_fieldInfo.bstrFullName );  
+    }  
   
-    if (infoFlags & DEBUGPROP_INFO_NAME)  
-    {  
-        ppropertyInfo->dwFields     |= DEBUGPROP_INFO_NAME;  
-        ppropertyInfo->bstrName      = SysAllocString( m_fieldInfo.bstrName );  
-    }  
+    if (infoFlags & DEBUGPROP_INFO_NAME)  
+    {  
+        ppropertyInfo->dwFields     |= DEBUGPROP_INFO_NAME;  
+        ppropertyInfo->bstrName      = SysAllocString( m_fieldInfo.bstrName );  
+    }  
   
-    if (infoFlags & DEBUGPROP_INFO_TYPE)  
-    {  
-        ppropertyInfo->dwFields     |= DEBUGPROP_INFO_TYPE;  
+    if (infoFlags & DEBUGPROP_INFO_TYPE)  
+    {  
+        ppropertyInfo->dwFields     |= DEBUGPROP_INFO_TYPE;  
   
-        VARIANT type;  
-        if (SUCCEEDED(FieldGetType( m_field, &type )))  
-        {  
-            // Convert the variant's type to a string  
-            VariantTypeToString( type, &(ppropertyInfo->bstrType) );  
-            VariantClear(&type);  
+        VARIANT type;  
+        if (SUCCEEDED(FieldGetType( m_field, &type )))  
+        {  
+            // Convert the variant's type to a string  
+            VariantTypeToString( type, &(ppropertyInfo->bstrType) );  
+            VariantClear(&type);  
   
-        }  
-        if (ppropertyInfo->bstrType == NULL)   
-            ppropertyInfo->bstrType = SysAllocString( GetString(IDS_MSG_UNKNOWNTYPE) );  
-    }  
+        }  
+        if (ppropertyInfo->bstrType == NULL)   
+            ppropertyInfo->bstrType = SysAllocString( GetString(IDS_MSG_UNKNOWNTYPE) );  
+    }  
   
-    if (infoFlags & DEBUGPROP_INFO_PROP)  
-    {  
-        ppropertyInfo->dwFields     |= DEBUGPROP_INFO_PROP;  
-        QueryInterface( IID_IDebugProperty2,  
-                        reinterpret_cast<void**>(&(ppropertyInfo->pProperty)) );  
-    }  
+    if (infoFlags & DEBUGPROP_INFO_PROP)  
+    {  
+        ppropertyInfo->dwFields     |= DEBUGPROP_INFO_PROP;  
+        QueryInterface( IID_IDebugProperty2,  
+                        reinterpret_cast<void**>(&(ppropertyInfo->pProperty)) );  
+    }  
   
-    if (infoFlags & DEBUGPROP_INFO_VALUE)  
-    {  
-        ppropertyInfo->dwFields   |= DEBUGPROP_INFO_VALUE;  
+    if (infoFlags & DEBUGPROP_INFO_VALUE)  
+    {  
+        ppropertyInfo->dwFields   |= DEBUGPROP_INFO_VALUE;  
   
-        //only show primitive values  
-        VARIANT value;  
-        if (SUCCEEDED(FieldGetValue(m_field, &value)))  
-        {  
-            VariantValueToString( radix, m_binder, value,  
-                                  &(ppropertyInfo->bstrValue) );  
-            VariantClear(&value);  
-        }  
+        //only show primitive values  
+        VARIANT value;  
+        if (SUCCEEDED(FieldGetValue(m_field, &value)))  
+        {  
+            VariantValueToString( radix, m_binder, value,  
+                                  &(ppropertyInfo->bstrValue) );  
+            VariantClear(&value);  
+        }  
   
-        if (ppropertyInfo->bstrValue == NULL)   
-            ppropertyInfo->bstrValue = SysAllocString( GetString(IDS_MSG_UNKNOWNVALUE) );  
-    }  
+        if (ppropertyInfo->bstrValue == NULL)   
+            ppropertyInfo->bstrValue = SysAllocString( GetString(IDS_MSG_UNKNOWNVALUE) );  
+    }  
   
-    if (infoFlags & DEBUGPROP_INFO_VALUE_AUTOEXPAND)  
-    {  
-    // AUTOEXPAND is ignored in this example  
-    }  
+    if (infoFlags & DEBUGPROP_INFO_VALUE_AUTOEXPAND)  
+    {  
+    // AUTOEXPAND is ignored in this example  
+    }  
   
-    if (infoFlags & DEBUGPROP_INFO_ATTRIB)  
-    {  
-        ppropertyInfo->dwFields   |= DEBUGPROP_INFO_ATTRIB;  
+    if (infoFlags & DEBUGPROP_INFO_ATTRIB)  
+    {  
+        ppropertyInfo->dwFields   |= DEBUGPROP_INFO_ATTRIB;  
   
-        FIELD_MODIFIERS   modifiers = m_fieldInfo.dwModifiers;  
-        DBG_ATTRIB_FLAGS  attrib    = DBG_ATTRIB_NONE;  
+        FIELD_MODIFIERS   modifiers = m_fieldInfo.dwModifiers;  
+        DBG_ATTRIB_FLAGS  attrib    = DBG_ATTRIB_NONE;  
   
-        //access      
-        if (modifiers & FIELD_MOD_ACCESS_PUBLIC)  
-            attrib |= DBG_ATTRIB_ACCESS_PUBLIC;  
-        if (modifiers & FIELD_MOD_ACCESS_PRIVATE)  
-            attrib |= DBG_ATTRIB_ACCESS_PRIVATE;  
-        if (modifiers & FIELD_MOD_ACCESS_PROTECTED)  
-            attrib |= DBG_ATTRIB_ACCESS_PROTECTED;  
-        if (modifiers & FIELD_MOD_FINAL)  
-            attrib |= DBG_ATTRIB_ACCESS_FINAL;  
+        //access      
+        if (modifiers & FIELD_MOD_ACCESS_PUBLIC)  
+            attrib |= DBG_ATTRIB_ACCESS_PUBLIC;  
+        if (modifiers & FIELD_MOD_ACCESS_PRIVATE)  
+            attrib |= DBG_ATTRIB_ACCESS_PRIVATE;  
+        if (modifiers & FIELD_MOD_ACCESS_PROTECTED)  
+            attrib |= DBG_ATTRIB_ACCESS_PROTECTED;  
+        if (modifiers & FIELD_MOD_FINAL)  
+            attrib |= DBG_ATTRIB_ACCESS_FINAL;  
   
-        //constant  
-        if (modifiers & FIELD_MOD_CONSTANT)  
-            attrib |= DBG_ATTRIB_VALUE_READONLY;  
+        //constant  
+        if (modifiers & FIELD_MOD_CONSTANT)  
+            attrib |= DBG_ATTRIB_VALUE_READONLY;  
   
-        //storage  
-        if (m_fieldKind & FIELD_SYM_GLOBAL)  
-            attrib |= DBG_ATTRIB_STORAGE_GLOBAL;  
-        if (modifiers & FIELD_MOD_STATIC)  
-            attrib |= DBG_ATTRIB_STORAGE_STATIC;  
+        //storage  
+        if (m_fieldKind & FIELD_SYM_GLOBAL)  
+            attrib |= DBG_ATTRIB_STORAGE_GLOBAL;  
+        if (modifiers & FIELD_MOD_STATIC)  
+            attrib |= DBG_ATTRIB_STORAGE_STATIC;  
   
-        //type modifier  
-        if (modifiers & FIELD_MOD_VIRTUAL)  
-            attrib |= DBG_ATTRIB_TYPE_VIRTUAL;  
-        if (modifiers & FIELD_MOD_CONSTANT)  
-            attrib |= DBG_ATTRIB_TYPE_CONSTANT;  
-        if (modifiers & FIELD_MOD_SYNCHRONIZED)  
-            attrib |= DBG_ATTRIB_TYPE_SYNCHRONIZED;  
-        if (modifiers & FIELD_MOD_VOLATILE)  
-            attrib |= DBG_ATTRIB_TYPE_VOLATILE;  
+        //type modifier  
+        if (modifiers & FIELD_MOD_VIRTUAL)  
+            attrib |= DBG_ATTRIB_TYPE_VIRTUAL;  
+        if (modifiers & FIELD_MOD_CONSTANT)  
+            attrib |= DBG_ATTRIB_TYPE_CONSTANT;  
+        if (modifiers & FIELD_MOD_SYNCHRONIZED)  
+            attrib |= DBG_ATTRIB_TYPE_SYNCHRONIZED;  
+        if (modifiers & FIELD_MOD_VOLATILE)  
+            attrib |= DBG_ATTRIB_TYPE_VOLATILE;  
   
-        //type  
-        if (m_fieldKind & FIELD_TYPE_METHOD)  
-            attrib |= DBG_ATTRIB_METHOD;  
-        if (m_fieldKind & FIELD_TYPE_PROP)  
-            attrib |= DBG_ATTRIB_PROPERTY;  
-        if (m_fieldKind & FIELD_TYPE_CLASS)  
-            attrib |= DBG_ATTRIB_CLASS;  
-        if (m_fieldKind & FIELD_TYPE_INTERFACE)  
-            attrib |= DBG_ATTRIB_INTERFACE;  
-        if (m_fieldKind & FIELD_TYPE_INNERCLASS)  
-            attrib |= DBG_ATTRIB_INNERCLASS;  
-        if (m_fieldKind & FIELD_KIND_SYMBOL)  
-            attrib |= DBG_ATTRIB_DATA;  
+        //type  
+        if (m_fieldKind & FIELD_TYPE_METHOD)  
+            attrib |= DBG_ATTRIB_METHOD;  
+        if (m_fieldKind & FIELD_TYPE_PROP)  
+            attrib |= DBG_ATTRIB_PROPERTY;  
+        if (m_fieldKind & FIELD_TYPE_CLASS)  
+            attrib |= DBG_ATTRIB_CLASS;  
+        if (m_fieldKind & FIELD_TYPE_INTERFACE)  
+            attrib |= DBG_ATTRIB_INTERFACE;  
+        if (m_fieldKind & FIELD_TYPE_INNERCLASS)  
+            attrib |= DBG_ATTRIB_INNERCLASS;  
+        if (m_fieldKind & FIELD_KIND_SYMBOL)  
+            attrib |= DBG_ATTRIB_DATA;  
   
-        //set the debug attributes  
-        ppropertyInfo->dwAttrib = attrib;  
-    }  
+        //set the debug attributes  
+        ppropertyInfo->dwAttrib = attrib;  
+    }  
   
-    return S_OK;  
+    return S_OK;  
 }  
   
 //////////////////////////////////////////////////////////////////////  
@@ -314,132 +316,132 @@ STDMETHODIMP CFieldProperty::GetPropertyInfo(
   
 struct PrimitiveTypeInfo  
 {  
-    LPCOLESTR  pszName;  
-    UINT       size;  
-    VARTYPE    vt;  
+    LPCOLESTR  pszName;  
+    UINT       size;  
+    VARTYPE    vt;  
 };  
   
 PrimitiveTypeInfo primitiveTypeTable[] =  
 {  
-    { OLE("string"),    0,    VT_BSTR },  
-    { OLE("whole"),     1,    VT_I1   },  
-    { OLE("whole"),     2,    VT_I2   },  
-    { OLE("whole"),     4,    VT_I4   },  
-    { OLE("whole"),     8,    VT_I8   },  
-    { OLE("uwhole"),    1,    VT_UI1  },  
-    { OLE("uwhole"),    2,    VT_UI2  },  
-    { OLE("uwhole"),    4,    VT_UI4  },  
-    { OLE("uwhole"),    8,    VT_UI8  },  
-    { OLE("real"),      4,    VT_R4   },  
-    { OLE("real"),      8,    VT_R8   },  
-    { OLE("bool"),      1,    VT_BOOL },  
-    { OLE("bool"),      2,    VT_BOOL },  
-    { OLE("bool"),      4,    VT_BOOL },  
+    { OLE("string"),    0,    VT_BSTR },  
+    { OLE("whole"),     1,    VT_I1   },  
+    { OLE("whole"),     2,    VT_I2   },  
+    { OLE("whole"),     4,    VT_I4   },  
+    { OLE("whole"),     8,    VT_I8   },  
+    { OLE("uwhole"),    1,    VT_UI1  },  
+    { OLE("uwhole"),    2,    VT_UI2  },  
+    { OLE("uwhole"),    4,    VT_UI4  },  
+    { OLE("uwhole"),    8,    VT_UI8  },  
+    { OLE("real"),      4,    VT_R4   },  
+    { OLE("real"),      8,    VT_R8   },  
+    { OLE("bool"),      1,    VT_BOOL },  
+    { OLE("bool"),      2,    VT_BOOL },  
+    { OLE("bool"),      4,    VT_BOOL },  
   
-    { OLE("System.String"),   0,  VT_BSTR },  
-    { OLE("System.SByte"),    1,  VT_I1   },  
-    { OLE("System.Int16"),    2,  VT_I2   },  
-    { OLE("System.Int32"),    4,  VT_I4   },  
-    { OLE("System.Int64"),    8,  VT_I8   },  
-    { OLE("System.Byte"),     1,  VT_UI1  },  
-    { OLE("System.Char"),     1,  VT_UI2  },  
-    { OLE("System.UInt16"),   2,  VT_UI2  },  
-    { OLE("System.UInt32"),   4,  VT_UI4  },  
-    { OLE("System.UInt64"),   8,  VT_UI8  },  
-    { OLE("System.Single"),   4,  VT_R4   },  
-    { OLE("System.Double"),   8,  VT_R8   },  
-    { OLE("System.Boolean"),  1,  VT_BOOL },  
-    { OLE("System.Boolean"),  2,  VT_BOOL },  
-    { OLE("System.Boolean"),  4,  VT_BOOL },  
+    { OLE("System.String"),   0,  VT_BSTR },  
+    { OLE("System.SByte"),    1,  VT_I1   },  
+    { OLE("System.Int16"),    2,  VT_I2   },  
+    { OLE("System.Int32"),    4,  VT_I4   },  
+    { OLE("System.Int64"),    8,  VT_I8   },  
+    { OLE("System.Byte"),     1,  VT_UI1  },  
+    { OLE("System.Char"),     1,  VT_UI2  },  
+    { OLE("System.UInt16"),   2,  VT_UI2  },  
+    { OLE("System.UInt32"),   4,  VT_UI4  },  
+    { OLE("System.UInt64"),   8,  VT_UI8  },  
+    { OLE("System.Single"),   4,  VT_R4   },  
+    { OLE("System.Double"),   8,  VT_R8   },  
+    { OLE("System.Boolean"),  1,  VT_BOOL },  
+    { OLE("System.Boolean"),  2,  VT_BOOL },  
+    { OLE("System.Boolean"),  4,  VT_BOOL },  
   
-    { NULL, 0, VT_EMPTY }  
+    { NULL, 0, VT_EMPTY }  
 };  
   
 HRESULT FieldGetType( in IDebugField* pfield, out VARIANT* pvarType )  
 {  
-    HRESULT hr;  
+    HRESULT hr;  
   
-    if (pfield == NULL)  
-        return E_INVALIDARG;  
-    if (pvarType == NULL)  
-        return E_INVALIDARG;  
-    else  
-        *pvarType = 0;  
+    if (pfield == NULL)  
+        return E_INVALIDARG;  
+    if (pvarType == NULL)  
+        return E_INVALIDARG;  
+    else  
+        *pvarType = 0;  
   
-    //get type size and name  
-    DWORD        fieldTypeSize;  
-    FIELD_INFO   fieldTypeInfo;  
-    IDebugField* pfieldType = NULL;  
+    //get type size and name  
+    DWORD        fieldTypeSize;  
+    FIELD_INFO   fieldTypeInfo;  
+    IDebugField* pfieldType = NULL;  
   
-    hr = pfield->GetType( &pfieldType );  
-    if (FAILED(hr))  
-        return hr;   
+    hr = pfield->GetType( &pfieldType );  
+    if (FAILED(hr))  
+        return hr;   
   
-    hr = pfieldType->GetSize( &fieldTypeSize );  
-    if (FAILED(hr))  
-    {  
-        pfieldType->Release();  
-        return hr;  
-    }  
+    hr = pfieldType->GetSize( &fieldTypeSize );  
+    if (FAILED(hr))  
+    {  
+        pfieldType->Release();  
+        return hr;  
+    }  
   
-    hr = pfieldType->GetInfo( FIF_NAME, &fieldTypeInfo );    
-    if (FAILED(hr))  
-    {  
-        pfieldType->Release();  
-        return hr;  
-    }  
+    hr = pfieldType->GetInfo( FIF_NAME, &fieldTypeInfo );    
+    if (FAILED(hr))  
+    {  
+        pfieldType->Release();  
+        return hr;  
+    }  
   
-    //check for primitive types  
-    memset( pvarType, 0, sizeof(*pvarType) );  
-    VariantInit(pvarType);  
+    //check for primitive types  
+    memset( pvarType, 0, sizeof(*pvarType) );  
+    VariantInit(pvarType);  
   
-    for (PrimitiveTypeInfo* pprimTypeInfo = primitiveTypeTable;  
-         pprimTypeInfo->pszName != NULL;  
-         pprimTypeInfo++)  
-    {  
-        if (pprimTypeInfo->size == fieldTypeSize &&   
-           (wcscmp(pprimTypeInfo->pszName,fieldTypeInfo.bstrName) == 0))  
-        {  
-            pvarType->vt = pprimTypeInfo->vt;  
-            break;  
-        }  
-    }  
+    for (PrimitiveTypeInfo* pprimTypeInfo = primitiveTypeTable;  
+         pprimTypeInfo->pszName != NULL;  
+         pprimTypeInfo++)  
+    {  
+        if (pprimTypeInfo->size == fieldTypeSize &&   
+           (wcscmp(pprimTypeInfo->pszName,fieldTypeInfo.bstrName) == 0))  
+        {  
+            pvarType->vt = pprimTypeInfo->vt;  
+            break;  
+        }  
+    }  
   
-    //VT_UNKNOWN is used for all other (structured) types  
-    if (pvarType->vt == VT_EMPTY)  
-    {  
-        pvarType->vt      = VT_UNKNOWN;  
-        pvarType->punkVal = pfieldType;  
-        pvarType->punkVal->AddRef();  
-    }  
+    //VT_UNKNOWN is used for all other (structured) types  
+    if (pvarType->vt == VT_EMPTY)  
+    {  
+        pvarType->vt      = VT_UNKNOWN;  
+        pvarType->punkVal = pfieldType;  
+        pvarType->punkVal->AddRef();  
+    }  
   
-    if (fieldTypeInfo.bstrName != NULL)  
-        SysFreeString(fieldTypeInfo.bstrName);  
-    pfieldType->Release();  
-    return S_OK;  
+    if (fieldTypeInfo.bstrName != NULL)  
+        SysFreeString(fieldTypeInfo.bstrName);  
+    pfieldType->Release();  
+    return S_OK;  
 }  
   
 //----------------------------------------------------------------------------  
   
 HRESULT FieldGetValue( in IDebugField* pfield, out VARIANT* pvarValue )  
 {  
-    if (pvarValue == NULL)  
-        return E_INVALIDARG;  
-    else  
-        *pvarValue = 0;  
-    if (pfield == NULL)  
-        return E_INVALIDARG;  
+    if (pvarValue == NULL)  
+        return E_INVALIDARG;  
+    else  
+        *pvarValue = 0;  
+    if (pfield == NULL)  
+        return E_INVALIDARG;  
   
-    //we delay getting the primitive value by just setting VT_UNKNOWN  
-    pvarValue->vt      = VT_UNKNOWN;  
-    pvarValue->punkVal = pfield;  
-    pvarValue->punkVal->AddRef();  
+    //we delay getting the primitive value by just setting VT_UNKNOWN  
+    pvarValue->vt      = VT_UNKNOWN;  
+    pvarValue->punkVal = pfield;  
+    pvarValue->punkVal->AddRef();  
   
-    return S_OK;  
+    return S_OK;  
 }  
 ```  
   
-## Siehe auch  
- [Beispielimplementierung von lokalen Variablen](../../extensibility/debugger/sample-implementation-of-locals.md)   
- [Lokale Eigenschaften abrufen](../../extensibility/debugger/getting-local-properties.md)   
- [Evaluierungskontext](../../extensibility/debugger/evaluation-context.md)
+## <a name="see-also"></a>Siehe auch  
+ [Beispielimplementierung von "lokal"](../../extensibility/debugger/sample-implementation-of-locals.md)   
+ [Abrufen von lokalen Eigenschaften](../../extensibility/debugger/getting-local-properties.md)   
+ [Auswertungskontext](../../extensibility/debugger/evaluation-context.md)

@@ -1,27 +1,30 @@
 ---
-title: "IActiveScript::AddNamedItem | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IActiveScript::AddNamedItem | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IActiveScript.AddNamedItem
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "AddNamedItem-Methode, IActiveScript-Schnittstelle"
+helpviewer_keywords: AddNamedItem method, IActiveScript interface
 ms.assetid: a7c6317d-948f-4bb3-b169-1bbe5b7c7cc5
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: db65361e4bde14e803d9085a4530a505ccaf9fcb
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# IActiveScript::AddNamedItem
-Fügt den Namen eines Elements auf Stammebene den Namespace des Skriptmoduls hinzu.  Ein Element auf der Stammebene ist ein Objekt mit Eigenschaften und Methoden, eine Ereignisquelle oder alle drei.  
+# <a name="iactivescriptaddnameditem"></a>IActiveScript::AddNamedItem
+Das Skriptmodul Namespace hinzugefügt der Name eines Elements auf der Stammebene. Ein Element auf der Stammebene ist ein Objekt mit Eigenschaften und Methoden, die eine Ereignisquelle oder alle drei.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 HRESULT AddNamedItem(  
@@ -30,31 +33,31 @@ HRESULT AddNamedItem(
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `pstrName`  
- \[in\] Adresse eines Puffers, der den Namen des Elements enthält, wie im Skript angezeigt.  Der Name muss eindeutig sein und bleiben.  
+ [in] Die Adresse eines Puffers, der den Namen des Elements enthält, wie aus dem Skript angezeigt. Der Name muss eindeutig und dauerhaft sein.  
   
  `dwFlags`  
- \[in\] Flags mit einem Element zugeordnet.  Kann eine Kombination dieser Werte:  
+ [in] Flags, die einem Element zugeordnet werden. Es kann eine Kombination dieser Werte sein:  
   
 |Wert|Bedeutung|  
-|----------|---------------|  
-|SCRIPTITEM\_CODEONLY|Gibt an, dass das genannte Element ein nur für Code Objekt darstellt und dass der Host kein mit diesem hat nur für Code Objekt zugeordnet werden `IUnknown`.  Der Host verfügt über einen Namen für dieses Objekt.  In objektorientierten Sprachen wie C\+\+, würde dieses Flag eine Klasse erstellen.  Nicht alle Sprachen unterstützen dieses Flag.|  
-|SCRIPTITEM\_GLOBALMEMBERS|Gibt an, dass das Element eine Auflistung globale Eigenschaften und Methoden ist, die dem Skript zugeordnet sind.  Normalerweise würde ein Skriptmodul den Objektnamen \(außer, mit dem Ziel die Anwendung er als Cookie für die [IActiveScriptSite::GetItemInfo](../../winscript/reference/iactivescriptsite-getiteminfo.md)\-Methode oder zum Auflösen des expliziten Bewertens\) ignorieren und seine Member als globale Variablen und Methoden verfügbar machen.  Dies ermöglicht es dem Host, die Bibliothek \(Laufzeitfunktionen. usw.\) zu erweitern für das Skript.  Es wird dem Skriptmodul überlassen, um Namenskonflikte zu verarbeiten \(beispielsweise, wenn zwei SCRIPTITEM\_GLOBALMEMBERS\-Elemente Methoden des gleichen Namens haben\), wobei ein Fehler nicht zurückgegebene Situation deswegen sein sollte.|  
-|SCRIPTITEM\_ISPERSISTENT|Gibt an, dass das Element gespeichert werden soll, wenn das Skriptmodul gespeichert wird.  Entsprechend Festlegen dieses Flag gibt an, dass ein Übergang zurück zum initialisierten Zustand den Namen des Elements und die Typinformationen \(das Skriptmodul muss alle Zeiger Schnittstellen auf den tatsächlichen Objekt jedoch freigeben\) beibehalten soll.|  
-|SCRIPTITEM\_ISSOURCE|Gibt an, dass die Elementquellereignisse die das Skript empfangen kann.  Untergeordnete Objekte \(Eigenschaften des Objekts, die in selbst Objekte sind\), können auch Ereignisse hervorruft dem Skript.  Dies ist nicht rekursiv, jedoch stellt einen geeigneten Mechanismus für den allgemeinen Fall zum Beispiel für das Erstellen eines Containers und der aller seine Membersteuerelementen bereit.|  
-|SCRIPTITEM\_ISVISIBLE|Gibt an, dass der Name des Elements im Namespace des Skripts verfügbar ist und Zugriff auf Eigenschaften, Methoden und Ereignisse des Elements festlegen.  Standardmäßig enthalten die Eigenschaften des Elements die untergeordneten Elemente des Elements; Daher sind alle untergeordneten Objekteigenschaften und \-methoden \(und ihre untergeordneten Elemente, rekursiv\) zugänglich.|  
-|SCRIPTITEM\_NOCODE|Gibt, an, dass das Element einfach ein Name, der dem Namespace des Skripts hinzugefügt wird, und sollte nicht behandelt werden als Element, für das Code zugeordnet werden soll.  Beispielsweise ohne dieses Flag, das festgelegt wird, erstellt VBScript ein separates Modul für das genannte Element, C\+\+ und erstellt möglicherweise eine eigene Wrapperklasse für das genannte Element.|  
+|-----------|-------------|  
+|SCRIPTITEM_CODEONLY|Gibt an, dass das benannte Element einer reinen Objekt darstellt und der Host enthält keine `IUnknown` dieses reinen-Objekt zugeordnet werden soll. Der Host hat nur einen Namen für dieses Objekt. In objektorientierten Sprachen wie C++ würde dieses Flag eine Klasse erstellen. Nicht alle Sprachen unterstützen dieses Flag.|  
+|SCRIPTITEM_GLOBALMEMBERS|Gibt an, dass das Element eine Auflistung von globalen Eigenschaften und Methoden, die dem Skript zugeordnet ist. Normalerweise würde ein Skriptmodul ignorieren den Objektnamen (außer für die Verwendung als Cookie für die [IActiveScriptSite::GetItemInfo](../../winscript/reference/iactivescriptsite-getiteminfo.md) -Methode, oder zum Auflösen von expliziten Bereichsdefinition) und dessen Member als global verfügbar machen Variablen und Methoden. Dadurch wird den Host in der Bibliothek (Laufzeitfunktionen usw.) für das Skript verfügbar zu erweitern. Es obliegt dem Skriptmodul für den Umgang mit Namen in Konflikt stehen (z. B. wenn zwei SCRIPTITEM_GLOBALMEMBERS-Elemente Methoden mit demselben Namen vorhanden sind), obwohl ein Fehler aufgrund dieser Situation nicht zurückgegeben werden sollen.|  
+|SCRIPTITEM_ISPERSISTENT|Gibt an, dass das Element gespeichert werden soll, wenn das Skriptmodul gespeichert wird. Auf ähnliche Weise gibt dieses Flag an, dass das Element Name und Typ-Informationen (das Skriptmodul muss alle Verweise auf Schnittstellen auf das eigentliche Objekt jedoch Version) ein Übergang zurück zum initialisierten Zustand beibehalten werden sollen.|  
+|SCRIPTITEM_ISSOURCE|Gibt an, dass das Element Ereignisquelle, die das Skript empfangen können. Untergeordnete Objekte (Eigenschaften des Objekts in sich selbst Objekte sind) können Ereignisse an das Skript auch Datenquellen. Dies ist nicht rekursiv, aber es bietet eine bequeme den meisten Fällen, z. B. zum Erstellen eines Containers und alle seine Member Steuerelemente.|  
+|SCRIPTITEM_ISVISIBLE|Gibt an, dass der Name des Elements im Namespace des Skripts, den Zugriff auf die Eigenschaften, Methoden und Ereignisse des Elements verfügbar ist. Gemäß der Konvention sind die Eigenschaften des Elements das Element untergeordnete Elemente: aus diesem Grund alle untergeordneten Objekteigenschaften und Methoden (und ihre untergeordneten rekursiv) zugegriffen werden.|  
+|SCRIPTITEM_NOCODE|Gibt an, dass das Element ist einfach ein Name, den Skriptnamensbereich hinzugefügt wird, und nicht als ein Element, das für den Code zugeordnet sein sollte behandelt werden soll. Z. B. Wenn dieses Kennzeichen nicht festgelegt wird, VBScript wird kein separates Modul für den Namen des Elements erstellt, und C++ kann eine separate Wrapperklasse für den Namen des Elements erstellen.|  
   
-## Rückgabewert  
- Gibt eine der folgenden Werte:  
+## <a name="return-value"></a>Rückgabewert  
+ Gibt einen der folgenden Werte zurück:  
   
 |Rückgabewert|Bedeutung|  
-|------------------|---------------|  
+|------------------|-------------|  
 |`S_OK`|Erfolgreich.|  
 |`E_INVALIDARG`|Ein Argument war ungültig.|  
-|`E_POINTER`|Ein ungültiger Zeiger wurde angegeben.|  
-|`E_UNEXPECTED`|Der Aufruf wurde nicht erwartet \(beispielsweise, ist das Skriptmodul noch nicht geladen wurde oder initialisiert wurden\).|  
+|`E_POINTER`|Es wurde ein ungültiger Zeiger angegeben.|  
+|`E_UNEXPECTED`|Der Aufruf wurde nicht erwartet (z. B. das Skriptmodul wurde noch kein geladen oder initialisiert).|  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IActiveScript](../../winscript/reference/iactivescript.md)

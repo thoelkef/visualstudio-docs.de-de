@@ -1,64 +1,65 @@
 ---
-title: "Assembly-Element (Assistentenerweiterung f&#252;r Visual Studio-Vorlagen) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "http://schemas.microsoft.com/developer/vstemplate/2005#Assembly"
-helpviewer_keywords: 
-  - "Assembly-Element [Visual Studio-Vorlagen-Assistenterweiterung]"
-  - "< Assembly >-Element [Visual Studio-Vorlage-Assistenterweiterung]"
+title: Assembly-Element (Assistentenerweiterung der Visual Studio-Vorlagen) | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: http://schemas.microsoft.com/developer/vstemplate/2005#Assembly
+helpviewer_keywords:
+- Assembly element [Visual Studio Template Wizard Extension]
+- <Assembly> element [Visual Studio Template Wizard Extension]
 ms.assetid: 0c3dc280-1753-4ea2-a13c-d31d13b935b2
-caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 2adc2113d9ce1fbc2a80c9465ce403f03fc42db5
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Assembly-Element (Assistentenerweiterung f&#252;r Visual Studio-Vorlagen)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Gibt den Namen oder der starke Name der Assembly, implementiert die `IWizard` Schnittstelle.  
+# <a name="assembly-element-visual-studio-template-wizard-extension"></a>Assembly-Element (Assistentenerweiterung für Visual Studio-Vorlagen)
+Gibt den Namen oder den starken Namen der Assembly, implementiert die `IWizard` Schnittstelle.  
   
- \<VSTemplate\>  
-\<WizardExtension\>  
-\<Assembly\>  
+ \<VSTemplate >  
+\<WizardExtension >  
+\<Assembly >  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 <Assembly>AssemblyName</Assembly>  
 ```  
   
-## Attribute und Elemente  
- In den folgenden Abschnitten werden attribute\-Elemente sowie untergeordnete und übergeordnete Elemente beschrieben.  
+## <a name="attributes-and-elements"></a>Attribute und Elemente  
+ In den folgenden Abschnitten werden attribute-Elemente sowie untergeordnete und übergeordnete Elemente beschrieben.  
   
-### Attribute  
+### <a name="attributes"></a>Attribute  
  Keine.  
   
-### Untergeordnete Elemente  
+### <a name="child-elements"></a>Untergeordnete Elemente  
  Keine  
   
-### Übergeordnete Elemente  
+### <a name="parent-elements"></a>Übergeordnete Elemente  
   
 |Element|Beschreibung|  
-|-------------|------------------|  
-|[WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md)|Enthält die Registrierungselemente zum Anpassen des Vorlagenassistenten.|  
+|-------------|-----------------|  
+|[WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md)|Enthält die Registrierungselemente zum Anpassen der Vorlagen-Assistenten.|  
   
-## Textwert  
+## <a name="text-value"></a>Textwert  
  Ein Textwert ist erforderlich.  
   
- Dieser Text gibt die Assembly, implementiert die `IWizard` Schnittstelle. Dieser Assemblyname muss als vollständiger Assemblyname angegeben werden. Beispielsweise `MyAssembly, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11dd0a3a, Custom = null`.  
+ Dieser Text gibt die Assembly, implementiert die `IWizard` Schnittstelle. Diese Assembly muss als vollständige Assemblyname angegeben werden. Beispielsweise `MyAssembly, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11dd0a3a, Custom = null`.  
   
-## Hinweise  
+## <a name="remarks"></a>Hinweise  
  `Assembly` ist ein erforderliches untergeordnetes Element von `WizardExtension`.  
   
-## Beispiel  
- Das folgende Beispiel veranschaulicht die Metadaten für die Standardprojektvorlage für eine [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] Windows\-Anwendung.  
+## <a name="example"></a>Beispiel  
+ Das folgende Beispiel veranschaulicht die Metadaten für die standard-Projektvorlage für eine [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] Windows-Anwendung.  
   
 ```  
 <VSTemplate Version="3.0.0" Type="Item"  
@@ -88,7 +89,7 @@ Gibt den Namen oder der starke Name der Assembly, implementiert die `IWizard` Sc
 </VSTemplate>  
 ```  
   
-## Siehe auch  
- [Schemareferenz zu Visual Studio\-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)   
- [Erstellen von benutzerdefinierten Projekt\- und Elementvorlagen](../ide/creating-project-and-item-templates.md)   
+## <a name="see-also"></a>Siehe auch  
+ [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)   
+ [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)   
  [Gewusst wie: Verwenden von Assistenten mit Projektvorlagen](../extensibility/how-to-use-wizards-with-project-templates.md)

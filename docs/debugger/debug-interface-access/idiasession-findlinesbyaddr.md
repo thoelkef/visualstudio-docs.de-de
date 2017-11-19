@@ -1,60 +1,59 @@
 ---
-title: "IDiaSession::findLinesByAddr | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSession::findLinesByAddr-Methode"
+title: 'Idiasession:: Findlinesbyaddr | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSession::findLinesByAddr method
 ms.assetid: 640403c0-14cf-403c-ad19-38b3bdc28ca8
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 05e4ecac42acc1bf9eab27fb5e095dfc883ff3ad
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSession::findLinesByAddr
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Ruft die Zeilen in einer bestimmten Kompiliereinheit ab, die einer angegebenen Adresse enthalten.  
+# <a name="idiasessionfindlinesbyaddr"></a>IDiaSession::findLinesByAddr
+Ruft ab, die Zeilen in einer angegebenen Kompiliereinheit, die eine bestimmten Adresse enthalten.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT findLinesByAddr (   
-   DWORD                 seg,  
-   DWORD                 offset,  
-   DWORD                 length,  
-   IDiaEnumLineNumbers** ppResult  
+```C++  
+HRESULT findLinesByAddr (   
+   DWORD                 seg,  
+   DWORD                 offset,  
+   DWORD                 length,  
+   IDiaEnumLineNumbers** ppResult  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `seg`  
- \[in\]  Gibt die Stammkomponente Abschnitts der spezifischen Adresse auf.  
+ [in] Gibt die Komponente Abschnitt bestimmte Adresse an.  
   
  `offset`  
- \[in\]  Gibt die Stammkomponente Offset der spezifischen Adresse an.  
+ [in] Gibt den Offset Komponente bestimmte Adresse.  
   
  `length`  
- \[in\]  Gibt die Anzahl der Bytes Adressbereich an, die mit dieser Abfrage abzudecken.  
+ [in] Gibt die Anzahl der Bytes der Adressbereich aus, um mit dieser Abfrage abzudecken.  
   
  `ppResult`  
- \[out\]  Gibt ein [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)\-Objekt zurück, das eine Liste aller Zeilennummern enthält, die mit dem angegebenen Adressbereich enthalten.  
+ [out] Gibt eine [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) -Objekt, das eine Liste aller Einzelposten enthält Zahlen, deckt der angegebene Adressbereich.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Beispiel  
- In diesem Beispiel wird eine Funktion veranschaulicht, die alle Zeilennummern erhält, die in einer Funktion mit der Adresse und der Länge der Funktion enthalten sind.  
+## <a name="example"></a>Beispiel  
+ Dieses Beispiel zeigt eine Funktion, die alle in einer Funktion, die mit der Adresse und die Länge der Funktion enthaltene Zeilennummern abruft.  
   
-```cpp#  
+```C++  
 IDiaEnumLineNumbers* GetLineNumbersByAddr(IDiaSymbol *pFunc,  
                                           IDiaSession *pSession)  
 {  
@@ -73,7 +72,7 @@ IDiaEnumLineNumbers* GetLineNumbersByAddr(IDiaSymbol *pFunc,
 }  
 ```  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)   
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [IDiaSession::findLinesByVA](../../debugger/debug-interface-access/idiasession-findlinesbyva.md)

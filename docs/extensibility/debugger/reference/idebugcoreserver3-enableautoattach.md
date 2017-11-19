@@ -1,66 +1,66 @@
 ---
-title: "IDebugCoreServer3::EnableAutoAttach | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugCoreServer3::EnableAutoAttach"
-helpviewer_keywords: 
-  - "IDebugCoreServer3::EnableAutoAttach"
+title: IDebugCoreServer3::EnableAutoAttach | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugCoreServer3::EnableAutoAttach
+helpviewer_keywords: IDebugCoreServer3::EnableAutoAttach
 ms.assetid: 06aa633b-263b-4e08-8844-9a52d5120b94
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 23c7faed077b8af442d81593808f9360995ba246
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugCoreServer3::EnableAutoAttach
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Aktiviert das automatische Anhängen für die angegebenen Debugmodule.  
+# <a name="idebugcoreserver3enableautoattach"></a>IDebugCoreServer3::EnableAutoAttach
+Ermöglicht das automatische anfügen für die angegebene Debug-Module.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT EnableAutoAttach(  
-   GUID*     rgguidSpecificEngines,  
-   DWORD     celtSpecificEngines,  
-   LPCOLESTR pszStartPageUrl,  
-   BSTR*     pbstrSessionId  
+```cpp  
+HRESULT EnableAutoAttach(  
+   GUID*     rgguidSpecificEngines,  
+   DWORD     celtSpecificEngines,  
+   LPCOLESTR pszStartPageUrl,  
+   BSTR*     pbstrSessionId  
 );  
 ```  
   
-```c#  
-int EnableAutoAttach(  
-   Guid[]     rgguidSpecificEngines,  
-   uint       celtSpecificEngines,  
-   string     pszStartPageUrl,  
-   out string pbstrSessionId  
+```csharp  
+int EnableAutoAttach(  
+   Guid[]     rgguidSpecificEngines,  
+   uint       celtSpecificEngines,  
+   string     pszStartPageUrl,  
+   out string pbstrSessionId  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `rgguidSpecificEngines`  
- \[in\]  Array von GUIDs für jedes Modul Debug\- zu kennzeichnen, z. B. AUTO\-anfügend.  
+ [in] Array von GUIDs für jedes Debugmodul markieren als von der automatischen anfügen.  
   
  `celtSpecificEngines`  
- \[in\]  Die Anzahl der Module angegeben in `rgguidSpecificEngines`.  
+ [in] Die Anzahl der Module, die im angegebenen `rgguidSpecificEngines`.  
   
  `pszStartPageUrl`  
- \[in\]  Das beim Starten AUTO\-anfügen zu verwendende URL.  
+ [in] Die Start-URL zu verwendende automatische anfügen.  
   
  `pbstrSessionID`  
- \[out\]  ID der Sitzung, die AUTO\-angefügt wurde.  
+ [out] Die ID der Sitzung, die automatisch angefügt wurde.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. gibt andernfalls Fehlercode zurück.  Ein Fehlercode ist `E_AUTO_ATTACH_NOT_REGISTERED`, der angibt, ob die selbstklebende Klassenfactory nicht registriert wurde.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`; andernfalls wird Fehlercode zurückgegeben. Wird ein Fehlercode `E_AUTO_ATTACH_NOT_REGISTERED`, was bedeutet, dass die Klassenfactory Auto-attach nicht registriert wurde.  
   
-## Hinweise  
- Wenn ein Programm, das mit der angegebenen URL zugeordnet ist, gestartet wird, werden die angegebenen Debugmodule gestartet und automatisch angefügt.  
+## <a name="remarks"></a>Hinweise  
+ Wenn ein Programm, das der angegebenen URL zugeordnete gestartet wird, werden die angegebenen Debugmodule automatisch gestartet und angefügt.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)

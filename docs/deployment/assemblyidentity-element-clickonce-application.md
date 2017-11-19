@@ -1,34 +1,33 @@
 ---
-title: "&lt;assemblyIdentity&gt; Element (ClickOnce Application) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-deployment"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "urn:schemas-microsoft-com:asm.v2#assemblyIdentity"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "<assemblyIdentity> element [ClickOnce application manifest]"
+title: '&lt;AssemblyIdentity&gt; Element (ClickOnce-Anwendung) | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-deployment
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: urn:schemas-microsoft-com:asm.v2#assemblyIdentity
+dev_langs:
+- VB
+- CSharp
+- C++
+helpviewer_keywords: <assemblyIdentity> element [ClickOnce application manifest]
 ms.assetid: f48e9531-efac-4d11-8166-f63a5ece1ac5
-caps.latest.revision: 20
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 20
+caps.latest.revision: "20"
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+ms.openlocfilehash: db313077fa7903b2bdb2fbbe6b76aa80c940fecd
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# &lt;assemblyIdentity&gt; Element (ClickOnce Application)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Identifiziert die mit einer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]\-Bereitstellung bereitgestellte Anwendung.  
+# <a name="ltassemblyidentitygt-element-clickonce-application"></a>&lt;AssemblyIdentity&gt; Element (ClickOnce-Anwendung)
+Identifiziert die bereitgestellte Anwendung eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Bereitstellung.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
   
@@ -41,23 +40,23 @@ Identifiziert die mit einer [!INCLUDE[ndptecclick](../deployment/includes/ndptec
 />  
 ```  
   
-## Elemente und Attribute  
- Das `assemblyIdentity`\-Element ist erforderlich.  Es enthält keine untergeordneten Elemente und verfügt über die folgenden Attribute.  
+## <a name="elements-and-attributes"></a>Elemente und Attribute  
+ Die `assemblyIdentity` Element ist erforderlich. Es enthält keine untergeordneten Elemente und weist folgende Attribute.  
   
 |Attribut|Beschreibung|  
-|--------------|------------------|  
-|`Name`|Erforderlich.  Identifiziert den Namen der Anwendung.<br /><br /> Wenn `Name` Sonderzeichen, z. B. einzelne oder doppelte Anführungszeichen, enthält, wird die Anwendung möglicherweise nicht aktiviert.|  
-|`Version`|Erforderlich.  Gibt die Versionsnummer der Anwendung im folgenden Format an: `major.minor.build.revision`|  
-|`publicKeyToken`|Optional.  Gibt eine aus 16 Zeichen bestehende hexadezimale Zeichenfolge an, die die letzten 8 Bytes des `SHA-1`\-Hashwerts des öffentlichen Schlüssels darstellt, der zum Signieren der Anwendung oder der Assembly verwendet wird.  Der öffentliche Schlüssel, der zum Signieren des Katalogs verwendet wird, muss mindestens 2048 Bits groß sein.<br /><br /> Obwohl das Signieren einer Assembly optional empfohlen wird, ist dieses Attribut erforderlich.  Wenn eine Assembly nicht signiert ist, sollten Sie den Wert einer selbst signierten Assembly kopieren oder einen ausschließlich aus 0\-Werten bestehenden "Dummy"\-Wert verwenden.|  
-|`processorArchitecture`|Erforderlich.  Gibt den Prozessor an.  Die gültigen Werte sind `msil` für alle Prozessoren, `x86` für 32\-Bit\-Windows, `IA64` für 64\-Bit\-Windows und `Itanium` für Intel 64\-Bit\-Itanium\-Prozessoren.|  
-|`language`|Erforderlich.  Identifiziert die zweiteiligen Sprachcodes \(z. B. `en-US`\) der Assembly.  Dieses Element ist im `asmv2`\-Namespace vorhanden.  Falls nicht angegeben, stellt `neutral` den Standard dar.|  
+|---------------|-----------------|  
+|`Name`|Erforderlich. Identifiziert den Namen der Anwendung.<br /><br /> Wenn `Name` Sonderzeichen enthält, z. B. einfache oder doppelte Anführungszeichen, die Anwendung möglicherweise nicht aktiviert.|  
+|`Version`|Erforderlich. Gibt die Versionsnummer der Anwendung im folgenden Format an:`major.minor.build.revision`|  
+|`publicKeyToken`|Dies ist optional. Gibt eine hexadezimale Zeichenfolge von 16-Zeichen, die die letzten 8 Bytes des darstellt der `SHA-1` der Hashwert des öffentlichen Schlüssels unter dem die Anwendung oder Assembly signiert ist. Die öffentliche Schlüssel, der zum Signieren des Katalogs verwendet wird, muss 2048 Bits betragen.<br /><br /> Obwohl das Signieren einer Assembly wird empfohlen, aber dies ist optional, dieses Attribut ist erforderlich. Wenn eine Assembly nicht signiert ist, sollten Sie Kopieren eines Werts aus einem selbst signierten Assembly oder verwenden Sie den Wert "dummy" Nullen.|  
+|`processorArchitecture`|Erforderlich. Gibt den Prozessor. Gültige Werte sind `msil` für alle Prozessoren `x86` für 32-Bit-Windows `IA64` für 64-Bit-Windows und `Itanium` für Intel 64-Bit-Itanium-Prozessoren.|  
+|`language`|Erforderlich. Identifiziert die zweiteiligen Sprachcodes (z. B. `en-US`) der Assembly. Dieses Element ist der `asmv2` Namespace. Wenn nicht angegeben, wird standardmäßig `neutral`.|  
   
-## Beispiele  
+## <a name="examples"></a>Beispiele  
   
-### Beschreibung  
- Im folgenden Codebeispiel wird ein `assemblyIdentity`\-Element in einem [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]\-Anwendungsmanifest veranschaulicht.  Dieses Codebeispiel ist Teil eines umfangreichen Beispiels, das im Thema [ClickOnce\-Anwendungsmanifest](../deployment/clickonce-application-manifest.md) bereitgestellt wird.  
+### <a name="description"></a>Beschreibung  
+ Das folgende Codebeispiel veranschaulicht eine `assemblyIdentity` Element in einer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendungsmanifest. Dieses Codebeispiel ist Teil eines umfangreicheren Beispiels [ClickOnce-Anwendungsmanifest](../deployment/clickonce-application-manifest.md).  
   
-### Code  
+### <a name="code"></a>Code  
   
 ```  
 <asmv1:assemblyIdentity   
@@ -69,6 +68,6 @@ Identifiziert die mit einer [!INCLUDE[ndptecclick](../deployment/includes/ndptec
   type="win32" />  
 ```  
   
-## Siehe auch  
- [ClickOnce Application Manifest](../deployment/clickonce-application-manifest.md)   
- [\<assemblyIdentity\> Element](../deployment/assemblyidentity-element-clickonce-deployment.md)
+## <a name="see-also"></a>Siehe auch  
+ [ClickOnce-Anwendungsmanifest](../deployment/clickonce-application-manifest.md)   
+ [\<AssemblyIdentity >-Element](../deployment/assemblyidentity-element-clickonce-deployment.md)

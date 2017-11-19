@@ -1,46 +1,45 @@
 ---
-title: "IDiaSourceFile::get_uniqueId | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSourceFile::get_uniqueId-Methode"
+title: 'Idiasourcefile:: Get_uniqueid | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSourceFile::get_uniqueId method
 ms.assetid: e0b8dbc0-6061-4f31-bead-2cd72be44e41
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 3d7a01aafad5349cf3da6957f39130639de34b58
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSourceFile::get_uniqueId
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Ruft einen einfachen ganzzahligen Schlüsselwert ab, der für das Bild eindeutig ist.  
+# <a name="idiasourcefilegetuniqueid"></a>IDiaSourceFile::get_uniqueId
+Ruft einen Schlüssel einfache Integer-Wert, der für dieses Bild eindeutig ist.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT get_uniqueId (   
-   DWORD* pRetVal  
+```C++  
+HRESULT get_uniqueId (   
+   DWORD* pRetVal  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `pRetVal`  
- \[out\]  Gibt einen einfachen ganzzahligen Schlüsselwert zurück, der für das Bild eindeutig ist.  
+ [out] Gibt einen Schlüssel einfache Integer-Wert, der für dieses Bild eindeutig ist.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Hinweise  
- Das Vergleichen von Schlüsseln anstelle von Zeichenfolgen kann das Verarbeiten von Zeilennummern beschleunigen.  
+## <a name="remarks"></a>Hinweise  
+ Vergleichen von Schlüsseln, anstatt Zeichenfolgen Zeile Verarbeitung beschleunigt werden können.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)

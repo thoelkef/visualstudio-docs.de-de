@@ -1,28 +1,30 @@
 ---
-title: "Tastenk&#252;rzel-Element | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Tastenkürzel-Element (VSCT-XML-Schema)"
-  - "VSCT XML-Schemaelemente, Tastenkürzel"
+title: "Tastenkürzel Element | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- Combos element (VSCT XML schema)
+- VSCT XML schema elements, Combos
 ms.assetid: ef48d2d2-0c47-4f93-8cfe-52026b6c463e
-caps.latest.revision: 6
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 6
+caps.latest.revision: "6"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 2c729f92992ddea109a7024452457bd56d281b89
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Tastenk&#252;rzel-Element
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Gruppiert [Kombinationsfeld\-Element](../extensibility/combo-element.md)\-Elemente.  
+# <a name="combos-element"></a>Tastenkürzel-Element
+Gruppen [Kombinationsfeld Element](../extensibility/combo-element.md) Elemente.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 <Combos>  
@@ -31,34 +33,52 @@ Gruppiert [Kombinationsfeld\-Element](../extensibility/combo-element.md)\-Elemen
 </Combos>  
 ```  
   
-## Attribute und Elemente  
+## <a name="attributes-and-elements"></a>Attribute und Elemente  
  In den folgenden Abschnitten werden Attribute sowie untergeordnete und übergeordnete Elemente beschrieben.  
   
-### Attribute  
+### <a name="attributes"></a>Attribute  
   
 |Attribut|Beschreibung|  
-|--------------|------------------|  
-|Bedingung|Optional. Siehe [Bedingten Attribute](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|---------------|-----------------|  
+|Bedingung|Dies ist optional. Finden Sie unter [bedingte Attribute](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
-### Untergeordnete Elemente  
-  
-|Element|Beschreibung|  
-|-------------|------------------|  
-|[Combos Element](../extensibility/combos-element.md)|Gruppiert Elemente Kombinationsfeld.|  
-|[Kombinationsfeld\-Element](../extensibility/combo-element.md)|Definiert die Befehle, die in einem Kombinationsfeld angezeigt werden.|  
-  
-### Übergeordnete Elemente  
+### <a name="child-elements"></a>Untergeordnete Elemente  
   
 |Element|Beschreibung|  
-|-------------|------------------|  
-|[Commands\-Element](../extensibility/commands-element.md)|Stellt die Auflistung von Befehlen auf der Symbolleiste des VSPackage.|  
+|-------------|-----------------|  
+|[Combos-Element](../extensibility/combos-element.md)|Gruppiert Kombinationsfeld Elemente.|  
+|[Combo-Element](../extensibility/combo-element.md)|Definiert die Befehle, die in einem Kombinationsfeld angezeigt werden.|  
   
-## Beispiel  
+### <a name="parent-elements"></a>Übergeordnete Elemente  
+  
+|Element|Beschreibung|  
+|-------------|-----------------|  
+|[Commands-Element](../extensibility/commands-element.md)|Stellt die Auflistung von Befehlen auf der Symbolleiste des VSPackage.|  
+  
+## <a name="example"></a>Beispiel  
   
 ```  
-<Combos> <Combo guid="guidWidgetPackage" id="cmdidInsertOptions" defaultWidth="100" idCommandList="cmdidGetInsertOptionsList"> <CommandFlag>DynamicVisibility</CommandFlag> <Strings> <ButtonText>Select Insert Options</ButtonText> </Strings> </Combo> <Combo guid="guidWidgetPackage" id="cmdidInsertOptions" priority="0x0500" type="DropDownCombo" defaultWidth="100" idCommandList="cmdidGetInsertOptionsList"> <Parent guid="cmdSetGuidWidgetCommands" id="groupIDFileEdit"> <CommandFlag>DynamicVisibility</CommandFlag> <Strings> <ButtonText>Select Insert Options</ButtonText> </Strings> </Combo> </Combos>  
+<Combos>  
+  <Combo guid="guidWidgetPackage" id="cmdidInsertOptions"  
+    defaultWidth="100" idCommandList="cmdidGetInsertOptionsList">  
+    <CommandFlag>DynamicVisibility</CommandFlag>  
+    <Strings>  
+      <ButtonText>Select Insert Options</ButtonText>  
+    </Strings>  
+  </Combo>  
+  
+  <Combo guid="guidWidgetPackage" id="cmdidInsertOptions"  
+    priority="0x0500" type="DropDownCombo" defaultWidth="100"  
+    idCommandList="cmdidGetInsertOptionsList">  
+    <Parent guid="cmdSetGuidWidgetCommands" id="groupIDFileEdit">  
+    <CommandFlag>DynamicVisibility</CommandFlag>  
+    <Strings>  
+      <ButtonText>Select Insert Options</ButtonText>  
+    </Strings>  
+  </Combo>  
+</Combos>  
 ```  
   
-## Siehe auch  
- [Wie VSPackages Benutzeroberflächenelemente hinzufügen](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
+## <a name="see-also"></a>Siehe auch  
+ [Wie VSPackages Elemente der Benutzeroberfläche hinzufügen](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [Befehle, Menüs und Symbolleisten](../extensibility/internals/commands-menus-and-toolbars.md)

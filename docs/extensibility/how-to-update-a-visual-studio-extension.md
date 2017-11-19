@@ -1,66 +1,68 @@
 ---
-title: "Gewusst wie: Aktualisieren von Visual Studio-Erweiterung | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Update-Paket"
-  - "Erweiterung aktualisieren"
-  - "neue Paketversion"
+title: 'Vorgehensweise: Aktualisieren eine Visual Studio-Erweiterung | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- update package
+- update extension
+- new package version
 ms.assetid: 93f79774-7b79-4dd6-94ad-13698f72c257
-caps.latest.revision: 14
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 14
+caps.latest.revision: "14"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 098d8ca0d779b7a7877c47125017dd2cd6880445
+ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/09/2017
 ---
-# Gewusst wie: Aktualisieren von Visual Studio-Erweiterung
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Sie können mithilfe von Visual Studio\-Erweiterung auf Ihrem System aktualisieren **Erweiterungen und Updates** die aktualisierte Version zu installieren. Wenn Sie eine aktualisierte Version der Erweiterung erstellen, können Sie es kennzeichnen, erhöhen Sie die Versionsnummer im VSIX\-Manifest aktualisiert.  
+# <a name="how-to-update-a-visual-studio-extension"></a>Vorgehensweise: Aktualisieren eine Visual Studio-Erweiterung
+Sie können mithilfe eine Visual Studio-Erweiterung auf Ihrem System aktualisieren **Erweiterungen und Updates** die aktualisierte Version zu installieren. Wenn Sie eine aktualisierte Version der Erweiterung erstellen, können Sie es anzugeben, wie aktualisiert, indem Sie die Versionsnummer im VSIX-Manifest erhöht.  
   
- Updates werden installiert, wenn das VSIX\-Manifest der eingehenden Erweiterung verfügt `ID` als die installierte Version und eine höhere `Version` Anzahl. Wenn die `Version` Anzahl entspricht oder niedriger ist, das Paket nicht installiert werden kann. Wenn die `ID` stimmen nicht überein, das Paket, das noch nicht installiert ist, wird als separate Erweiterung erkannt.  
+ Updates werden installiert, wenn der eingehende Erweiterung VSIX-Manifest verfügt `ID` als der installierten und eine höhere `Version` Anzahl. Wenn die `Version` Anzahl ist gleich oder niedriger ist, das Paket kann nicht installiert werden kann. Wenn die `ID` Werte stimmen nicht überein, das Paket, das noch nicht installiert ist, wird als separate Erweiterung erkannt.  
   
- Um Konflikte während der Entwicklung zu vermeiden, wird empfohlen, deinstallieren frühere Versionen von Erweiterungen ausgeführt wird, und auch deinstallieren oder deaktivieren alle anderen potenziell in Konflikt stehende Erweiterungen.  
+ Zum Vermeiden von Konflikten während der Entwicklung, wird empfohlen, Sie deinstallieren frühere Versionen von Erweiterungen läuft, auch deinstallieren oder deaktivieren alle anderen potenziell in Konflikt stehende Erweiterungen.  
   
-### Eine Erweiterung auf Ihrem System aktualisieren  
+### <a name="to-update-an-extension-on-your-system"></a>Um eine Erweiterung auf Ihrem System zu aktualisieren.  
   
 1.  Klicken Sie im Menü **Extras** auf **Erweiterungen und Updates**.  
   
 2.  Klicken Sie im linken Bereich auf **Updates**.  
   
-3.  Klicken Sie im mittleren Bereich auf das Update, das Sie installieren möchten.  
+3.  Klicken Sie im mittleren Bereich auf das Update, die, das Sie installieren möchten.  
   
-     Die Versionsnummer der aktualisierten Erweiterung wird im rechten Bereich, zusammen mit weiteren Informationen angezeigt.  
+     Die Versionsnummer der aktualisierten Erweiterung wird im rechten Bereich, zusammen mit anderen Informationen angezeigt.  
   
 4.  Klicken Sie unten im rechten Bereich auf **Update**.  
   
-### So veröffentlichen Sie ein Update einer Erweiterung  
+### <a name="to-publish-an-update-of-an-extension"></a>So veröffentlichen Sie ein Update einer Erweiterung  
   
-1.  Öffnen Sie in Visual Studio die Projektmappe für die Erweiterung, die Sie aktualisieren möchten. Stellen Sie die Änderungen.  
+1.  Öffnen Sie in Visual Studio die Projektmappe für die Erweiterung, die Sie aktualisieren möchten. Nehmen Sie Änderungen vor.  
   
     > [!IMPORTANT]
-    >  Vorzeichenlose Erweiterungen für alle Benutzer nicht automatisch aktualisiert werden. Sie sollten Ihre Erweiterungen immer signieren.  
+    >  Unsignierte Erweiterungen für alle Benutzer nicht automatisch aktualisiert werden. Sie sollten immer Ihre Erweiterungen anmelden.  
   
-2.  In **Projektmappen\-Explorer**, "Source.Extension.vsixmanifest" zu öffnen.  
+2.  In **Projektmappen-Explorer**, öffnen Sie "Source.Extension.vsixmanifest".  
   
-3.  Erhöhen Sie im manifest\-Designer, den Wert der Zahl in die **Version** Feld.  
+3.  Im manifest-Designer, erhöhen Sie den Wert der Zahl in die **Version** Feld.  
   
 4.  Speichern Sie die Projektmappe, und erstellen Sie sie.  
   
-5.  Die neue VSIX\-Datei \(im Ordner "\\bin\\Debug\\" des Projekts\) zum Hochladen der [Visual Studio Gallery](http://go.microsoft.com/fwlink/?LinkID=123847) Website.  
+5.  Die neue VSIX-Datei (im Ordner "\bin\Debug\" des Projekts) hochladen, um die [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs) Website.  
   
-     Wenn ein Benutzer mit einer früheren Version der Erweiterung öffnet **Erweiterungen und Updates**, die neue Version wird angezeigt, der **Updates** aufzulisten, vorausgesetzt, dass das Tool festgelegt wird, automatisch nach Updates suchen.  
+     Wenn ein Benutzer mit einer früheren Version der Erweiterung öffnet **Erweiterungen und Updates**, die neue Version wird angezeigt, der **Updates** aufzulisten, vorausgesetzt, dass das Tool festgelegt ist, automatisch nach Updates gesucht werden soll.  
   
-     Können Sie aktivieren oder deaktivieren Sie die automatische Überprüfung auf Updates am unteren Rand der **Updates** Bereich \(**aktiviert bzw. deaktiviert die automatische Erkennung der verfügbaren Updates**\), welche Änderungen der **nach Updates suchen** in die Einstellung **Extras \/ Optionen \/ Umgebung \/ Erweiterungen und Updates**.  
+     Sie aktivieren oder deaktivieren Sie die automatische Überprüfung auf Updates am unteren Rand der **Updates** Bereich (**aktiviert bzw. deaktiviert die automatische Erkennung der verfügbaren Updates**), welche Änderungen der **überprüfen Updates** festlegen in **Extras / Optionen / Umgebung / Erweiterungen und Updates**.  
   
     > [!NOTE]
-    >  Ab Visual Studio 2015 Update 2 können Sie angeben \(in **Extras \/ Optionen \/ Umgebung \/ Erweiterungen und Updates**\) gibt an, ob Sie automatische Updates für Erweiterungen pro Benutzer, alle Benutzer\-Erweiterungen oder beide \(Standardeinstellung\) möchten.  
+    >  Von Visual Studio 2015 Update 2 an können Sie (in **Extras / Optionen / Umgebung / Erweiterungen und Updates**) angeben, ob automatische Updates für Erweiterungen pro Benutzer, alle Benutzererweiterungen oder beides (Standardeinstellung) vorgenommen werden sollen.  
   
-## Siehe auch  
- [Anatomie eines VSIX\-Pakets](../extensibility/anatomy-of-a-vsix-package.md)   
- [Suchen und Verwenden von Visual Studio\-Erweiterungen](../ide/finding-and-using-visual-studio-extensions.md)
+## <a name="see-also"></a>Siehe auch  
+ [Aufbau eines VSIX-Pakets](../extensibility/anatomy-of-a-vsix-package.md)   
+ [Suchen und Verwenden von Visual Studio-Erweiterungen](../ide/finding-and-using-visual-studio-extensions.md)

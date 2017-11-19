@@ -1,54 +1,54 @@
 ---
-title: "IDebugProcess3::DisableENC | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugProcess3::DisableENC"
-helpviewer_keywords: 
-  - "IDebugProcess3::DisableENC"
+title: IDebugProcess3::DisableENC | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugProcess3::DisableENC
+helpviewer_keywords: IDebugProcess3::DisableENC
 ms.assetid: cffdbdac-4d76-4aeb-aa55-5d0410db99f1
-caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: fed5f54c843732b45339d7cc37d7d0820a58d8a7
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugProcess3::DisableENC
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Diese Methode explizit wird Bearbeiten und Fortfahren deaktiviert in diesem Prozess fort \(und Alle Programme, die sie enthält.\)  Ein benutzerdefinierter Port lieferant sollte immer `E_NOTIMPL`zurückgeben.  
+# <a name="idebugprocess3disableenc"></a>IDebugProcess3::DisableENC
+Diese Methode explizit bearbeiten und Fortfahren deaktiviert auf diesem Prozess (und alle Programme, die es enthält). Ein benutzerdefinierten Port Lieferanten sollten stets `E_NOTIMPL`.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```cpp  
-HRESULT DisableENC(  
-   EncUnavailableReason reason  
+HRESULT DisableENC(  
+   EncUnavailableReason reason  
 );  
 ```  
   
-```c#  
-   EncUnavailableReason reason  
+```csharp  
+   EncUnavailableReason reason  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `reason`  
- \[in\]  Ein Wert aus der [EncUnavailableReason](../../../extensibility/debugger/reference/encunavailablereason.md)\-Enumeration.  
+ [in] Ein Wert aus der [EncUnavailableReason](../../../extensibility/debugger/reference/encunavailablereason.md) Enumeration.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. Gibt andernfalls Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird Fehlercode zurückgegeben.  
   
 > [!NOTE]
->  Ein benutzerdefinierter Port lieferant sollte immer `E_NOTIMPL`zurückgeben.  
+>  Ein benutzerdefinierten Port Lieferanten sollten stets `E_NOTIMPL`.  
   
-## Hinweise  
- Einmal Bearbeiten und Fortfahren wird für einen Prozess erneut aktiviert werden, es kann nur deaktiviert werden, indem dem Prozess neu gestartet wird.  
+## <a name="remarks"></a>Hinweise  
+ Bearbeiten und Fortfahren für einen Prozess deaktiviert ist, kann erneut nur durch den Neustart des Prozesses aktiviert.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)   
  [EncUnavailableReason](../../../extensibility/debugger/reference/encunavailablereason.md)

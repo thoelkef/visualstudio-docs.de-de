@@ -1,62 +1,64 @@
 ---
-title: "Gewusst wie: Lokalisieren von ASPX-Markup"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "Lokalisieren von XML [SharePoint-Entwicklung in Visual Studio]"
-  - "SharePoint-Entwicklung in Visual Studio, Lokalisieren"
+title: 'Vorgehensweise: Lokalisieren von ASPX-Markup | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- VB
+- CSharp
+helpviewer_keywords:
+- localizing XML [SharePoint development in Visual Studio]
+- SharePoint development in Visual Studio, localizing
 ms.assetid: 9559a1d1-6558-4c24-a51e-c6ee79432778
-caps.latest.revision: 16
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 15
+caps.latest.revision: "16"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 39d72d4807f61adcab1321b6471c2bea31f048a8
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Gewusst wie: Lokalisieren von ASPX-Markup
-  Von [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)]\-Seiten \(ASPX\-Dateien\) werden üblicherweise hartcodierte Zeichenfolgenwerte verwendet.  Zum Lokalisieren dieser Zeichenfolgen werden sie durch Ausdrücke ersetzt, die auf lokalisierte Ressourcen verweisen.  
+# <a name="how-to-localize-aspx-markup"></a>Gewusst wie: Lokalisieren von ASPX-Markup
+  [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)]in der Regel verwenden Sie Seiten (ASPX) hartcodierte Zeichenfolgenwerte. Um diese Zeichenfolgen zu lokalisieren, ersetzen Sie sie mit Ausdrücken, die lokalisierte Ressourcen zu verweisen.  
   
-## Lokalisieren von ASPX\-Markup  
+## <a name="localizing-aspx-markup"></a>Lokalisieren von ASPX-Markup  
   
-#### So lokalisieren Sie ASPX\-Markup  
+#### <a name="to-localize-aspx-markup"></a>Zum Lokalisieren von ASPX-markup  
   
 1.  Fügen Sie separate Ressourcendateien hinzu: eine für die Standardsprache und jeweils eine für jede lokalisierte Sprache.  
   
-     Wenn Sie nur Markup und keinen Code lokalisieren möchten, fügen Sie ein Projektelement vom Typ "Globale Ressourcendatei" hinzu.  Wenn Sie Code und Markup lokalisieren möchten, fügen Sie ein Projektelement vom Typ "Ressourcendatei" hinzu.  
+     Wenn Sie nur Markup und keinen Code lokalisieren, fügen Sie ein Projektelement globale Ressourcendatei hinzu. Wenn Sie Code und Markup lokalisieren, fügen Sie ein Projektelement Ressourcendatei hinzu.  
   
-    1.  So einer globalen Ressourcen, im **Projektmappen\-Explorer** hinzuzufügen, öffnen das Kontextmenü für ein SharePoint\-Projektelement und wählen dann, **HinzufügenNeues Element** aus.  Wählen Sie unter dem SharePoint\-Knoten **2010** die Vorlage **Globale Ressourcendatei** aus.  
+    1.  So fügen Sie eine globale Ressourcendatei in hinzu **Projektmappen-Explorer**, öffnen Sie das Kontextmenü für ein SharePoint-Projektelement, und wählen Sie dann **hinzufügen**, **neues Element**. Unter SharePoint **2010** Knoten, wählen Sie die **globale Ressourcendatei** Vorlage.  
   
-    2.  So fügen Sie eine Ressourcendatei, in **Projektmappen\-Explorer** hinzuzufügen, öffnen das Kontextmenü für ein SharePoint\-Projektelement und wählen dann, **HinzufügenNeues Element** aus.  Entweder unter **Visual Basic** oder **Visual C\#** Knoten wählen Sie die Vorlage **Ressourcendatei** aus.  
+    2.  Hinzufügen einer Ressourcendatei in **Projektmappen-Explorer**, öffnen Sie das Kontextmenü für ein SharePoint-Projektelement, und wählen Sie dann **hinzufügen**, **neues Element**. Unter einem der **Visual Basic** oder **Visual C#-** Knoten, wählen Sie die **Ressourcendatei** Vorlage.  
   
     > [!NOTE]  
-    >  Fügen Sie einem SharePoint\-Projektelement die Ressourcendateien hinzuzufügen, um die Eigenschaft "Bereitstellungstyp" zu aktivieren.  Diese Eigenschaft ist später in dieser Prozedur erforderlich.  Wenn die Projektmappe kein SharePoint\-Projektelement enthält, können Sie ein leeres SharePoint\-Projekt hinzufügen und die Standarddatei "Elements.xml" entfernen.  
+    >  Achten Sie darauf, dass die Ressourcendateien in einer SharePoint-Projektelement So aktivieren Sie die Eigenschaft "Bereitstellung" hinzufügen. Diese Eigenschaft ist später in dieser Prozedur erforderlich. Wenn Ihre Lösung kein SharePoint-Projektelement vorhanden ist, können Sie ein leeres SharePoint-Projekt hinzufügen und entfernen die Standarddatei für die Datei "Elements.xml".  
   
-2.  Benennen Sie die Ressourcendatei für die Standardsprache mit einem beliebigen Namen, und versehen Sie diesen mit der Erweiterung ".resx" \(also beispielsweise "MyAppResources.resx"\).  Verwenden Sie für jede lokalisierte Ressourcendatei den gleichen Basisnamen, aber fügen Sie jeweils die Kultur\- [!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)] hinzu.  Benennen Sie also beispielsweise eine für Deutsch lokalisierte Ressource mit "MyAppResources.de\-DE.resx".  
+2.  Benennen Sie die Ressourcendatei für die Standardsprache mit einem beliebigen Namen, und versehen Sie diesen mit der Erweiterung ".resx" (also beispielsweise "MyAppResources.resx"). Verwenden Sie für jede lokalisierte Ressourcendatei den gleichen Basisnamen, aber fügen Sie die Kultur [!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)]. Benennen Sie also beispielsweise eine für Deutsch lokalisierte Ressource mit "MyAppResources.de-DE.resx".  
   
-3.  Ändern Sie den Wert der Eigenschaft **Bereitstellungstyp** einzelnen Ressourcendateien zu **AppGlobalResource**, um sie zu veranlassen, um im Ordner "App GlobalResources" des Servers erfolgt.  
+3.  Ändern Sie den Wert, der die **Bereitstellungstyp** Eigenschaft der einzelnen Ressourcendateien zu **AppGlobalResource** , dazu führen, dass sie zum Ordner "App_GlobalResources" des Servers bereitstellen.  
   
-4.  Wenn Sie Ressourcen verwenden, um neben ASPX\-Markup auch Code lokalisieren, belassen Sie den Wert der Eigenschaft **Buildvorgang** jeder Datei als **Eingebettete Ressource**.  Wenn Sie mithilfe der Ressourcendateien ausschließlich Markup lokalisieren, können Sie den Eigenschaftswert der Dateien optional zu **Inhalt** ändern.  Weitere Informationen finden Sie unter [Lokalisieren von SharePoint-Lösungen](../sharepoint/localizing-sharepoint-solutions.md).  
+4.  Wenn Sie der Ressourcen neben ASPX-Markup Code lokalisieren mithilfe, belassen Sie den Wert des der **Buildvorgang** Eigenschaft der einzelnen Dateien **eingebettete Ressource**. Wenn Sie nur für Markup lokalisiert die Ressourcendateien verwenden, können Sie optional ändern, auf den Wert der Eigenschaft der Dateien, die **Content**. Weitere Informationen finden Sie unter [Lokalisieren von SharePoint-Lösungen](../sharepoint/localizing-sharepoint-solutions.md).  
   
-5.  Öffnen Sie die einzelnen Ressourcendateien, und fügen Sie lokalisierte Zeichenfolgen hinzu. Verwenden Sie dabei in jeder Datei die gleichen Zeichenfolgen\-IDs.  
+5.  Öffnen Sie die einzelnen Ressourcendateien und fügen Sie lokalisierte Zeichenfolgen, die die gleiche Zeichenfolgen-IDs in jeder Datei verwenden.  
   
-6.  Ersetzen Sie im [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]\-Markup für die ASPX\-Seite oder für das ASPX\-Steuerelement die hartcodierten Zeichenfolgen durch Werte im folgenden Format:  
+6.  In der [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] Markup für die ASPX-Seite oder ein Steuerelement, ersetzen Sie die hartcodierte Zeichenfolgen mit Werten, die das folgende Format verwenden:  
   
     ```  
     <%$Resources:Resource File Name, String ID%>  
     ```  
   
-     Wenn Sie also beispielsweise den Text für ein Label\-Steuerelement auf einer Anwendungsseite lokalisieren möchten, ändern Sie Folgendes:  
+     Beispielsweise um den Text für ein Label-Steuerelement auf einer Anwendungsseite lokalisieren möchten, ändern Sie:  
   
     ```  
     <asp:Content ID="Main" ContentPlaceHolderID="PlaceHolderMain" runat="server">  
@@ -72,16 +74,16 @@ caps.handback.revision: 15
     </asp:Content>  
     ```  
   
-7.  Drücken Sie die F5\-TASTE, um die Anwendung zu erstellen und auszuführen.  
+7.  Drücken Sie die F5-TASTE, um die Anwendung zu erstellen und auszuführen.  
   
 8.  Legen Sie die Anzeigesprache in SharePoint auf eine Sprache fest, die nicht der Standardsprache entspricht.  
   
-     In der Anwendung werden die lokalisierten Zeichenfolgen angezeigt.  Zum Anzeigen lokalisierter Ressourcen muss auf dem SharePoint\-Server ein Language Pack installiert sein, das der Kultur der Ressourcendatei entspricht.  
+     In der Anwendung werden die lokalisierten Zeichenfolgen angezeigt. Zum Anzeigen lokalisierter Ressourcen muss auf dem SharePoint-Server ein Sprachpaket installiert sein, das der Kultur der Ressourcendatei entspricht.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Lokalisieren von SharePoint-Lösungen](../sharepoint/localizing-sharepoint-solutions.md)   
- [Gewusst wie: Lokalisieren einer Funktion](../sharepoint/how-to-localize-a-feature.md)   
- [Gewusst wie: Hinzufügen einer Ressourcendatei](../sharepoint/how-to-add-a-resource-file.md)   
- [Gewusst wie: Lokalisieren von Code](../sharepoint/how-to-localize-code.md)  
+ [Vorgehensweise: Lokalisieren einer Funktion](../sharepoint/how-to-localize-a-feature.md)   
+ [Vorgehensweise: hinzufügen eine Ressourcendatei](../sharepoint/how-to-add-a-resource-file.md)   
+ [Vorgehensweise: Lokalisieren von Code](../sharepoint/how-to-localize-code.md)  
   
   

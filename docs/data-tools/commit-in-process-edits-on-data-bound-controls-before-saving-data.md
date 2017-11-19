@@ -1,57 +1,57 @@
 ---
-title: "Gewusst wie: Ausf&#252;hren eines Commits f&#252;r aktuelle Bearbeitungen von datengebundenen Steuerelementen vor dem Speichern von Daten | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "aspx"
-helpviewer_keywords: 
-  - "BindingSource-Klasse, Übertragen von bearbeiteten Datensätzen"
-  - "Übertragen von bearbeiteten Datensätzen"
-  - "DataBinding-Klasse, Übertragen von bearbeiteten Datensätzen"
-  - "Datengebundene Steuerelemente, Aktuell ausgeführte Bearbeitungen"
-  - "EndEdit-Methode"
-  - "Hierarchische Aktualisierung, Übertragen von bearbeiteten Datensätzen"
+title: Commit in Bearbeitungen von datengebundenen Steuerelementen vor dem Speichern | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- commiting edited records
+- data-bound controls, in-process edits
+- DataBinding class, commiting edited records
+- hierarchical update, commiting edited records
+- BindingSource class, commiting edited records
+- EndEdit method
 ms.assetid: 61af4798-eef7-468c-b229-5e1497febb2f
-caps.latest.revision: 13
-caps.handback.revision: 8
-author: "mikeblome"
-ms.author: "mblome"
-manager: "ghogen"
+caps.latest.revision: "13"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.technology: vs-data-tools
+ms.openlocfilehash: 191206e9cc16271e64abbeaba87d86ac0108924b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Gewusst wie: Ausf&#252;hren eines Commits f&#252;r aktuelle Bearbeitungen von datengebundenen Steuerelementen vor dem Speichern von Daten
-Wenn Werte in datengebundenen Steuerelementen bearbeitet werden, müssen die Benutzer vom aktuellen Datensatz weg navigieren, um den aktualisierten Wert in die zugrunde liegende Datenquelle zu übernehmen, an die das Steuerelement gebunden ist.  Wenn Sie Elemente aus dem [Datenquellenfenster](../Topic/Data%20Sources%20Window.md) auf ein Formular ziehen, generiert das erste abgelegte Element Code im <xref:System.Windows.Forms.BindingNavigator>\-Klickereignis für die Schaltfläche zum Speichern.  Dieser Code ruft die <xref:System.Windows.Forms.BindingSource.EndEdit%2A>\-Methode der <xref:System.Windows.Forms.BindingSource> auf.  Daher wird der Aufruf der <xref:System.Windows.Forms.BindingSource.EndEdit%2A>\-Methode nur für die erste <xref:System.Windows.Forms.BindingSource> generiert, die dem Formular hinzugefügt wird.  
+# <a name="commit-in-process-edits-on-data-bound-controls-before-saving-data"></a>Commit in Bearbeitungen von datengebundenen Steuerelementen vor dem Speichern
+Wenn Sie Werte in datengebundene Steuerelemente zu bearbeiten, müssen Benutzer navigieren, aus dem aktuellen Datensatz, um den aktualisierten Wert für den zugrunde liegenden Datenquelle zu übernehmen, die das Steuerelement gebunden ist. Beim Ziehen von Elementen aus der [Datenquellenfenster](add-new-data-sources.md) auf ein Formular, das erste Element, das Sie löschen generiert den Code in der **speichern** click-Ereignis von der <xref:System.Windows.Forms.BindingNavigator>. Dieser Code Ruft die <xref:System.Windows.Forms.BindingSource.EndEdit%2A> Methode der <xref:System.Windows.Forms.BindingSource>. Aus diesem Grund wird der Aufruf von der <xref:System.Windows.Forms.BindingSource.EndEdit%2A> -Methode wird nur für die erste generiert <xref:System.Windows.Forms.BindingSource> , die dem Formular hinzugefügt wird.  
   
- Durch den <xref:System.Windows.Forms.BindingSource.EndEdit%2A>\-Aufruf wird für sämtliche anstehenden Änderungen in allen gegenwärtig bearbeiteten datengebundenen Steuerelementen ein Commit ausgeführt.  Wenn das datengebundene Steuerelement daher immer noch über den Fokus verfügt und Sie auf die Schaltfläche **Speichern** klicken, wird vor dem eigentlichen Speichern für sämtliche anstehenden Bearbeitungen im Steuerelement ein Commit ausgeführt \(`TableAdapterManager.UpdateAll`\-Methode\).  
+ Die <xref:System.Windows.Forms.BindingSource.EndEdit%2A> Aufruf führt einen Commit für alle Änderungen, die, in irgendeinem datengebundenen Steuerelement ablaufen, das derzeit bearbeitet wird. Aus diesem Grund, wenn ein datengebundenes Steuerelement noch einen Fokus hat und Sie klicken die **speichern** Schaltfläche alle ausstehenden Bearbeitungen insofern, dass Steuerelement werden vor dem eigentlichen speichern durchgeführt (die `TableAdapterManager.UpdateAll` Methode).  
   
- Sie können die Anwendung so konfigurieren, dass für Änderungen während des Speichervorgangs automatisch ein Commit ausgeführt wird, auch wenn ein Benutzer versucht, Daten ohne Ausführen eines Commits für die Änderungen zu speichern.  
+ Sie können Ihre Anwendung beim commit der Änderungen, automatisch konfigurieren, selbst wenn ein Benutzer versucht, Daten zu speichern, ohne dass die Änderungen im Rahmen des Sicherungspunkts Prozess.  
   
 > [!NOTE]
->  Der Designer fügt den `BindingSource.EndEdit`\-Code nur für das erste Element hinzu, das auf einem Formular abgelegt wird.  Daher müssen Sie eine Codezeile hinzufügen, um die <xref:System.Windows.Forms.BindingSource.EndEdit%2A>\-Methode für jede <xref:System.Windows.Forms.BindingSource> auf dem Formular aufzurufen.  Sie können manuell eine Codezeile hinzufügen, um die <xref:System.Windows.Forms.BindingSource.EndEdit%2A>\-Methode für jede <xref:System.Windows.Forms.BindingSource> aufzurufen.  Es ist auch möglich, dem Formular die `EndEditOnAllBindingSources`\-Methode hinzuzufügen und sie vor dem Speichern aufzurufen.  
+>  Der Designer fügt die `BindingSource.EndEdit` Code nur für das erste Element auf einem Formular abgelegte. Aus diesem Grund müssen Sie eine Codezeile zum Aufrufen Hinzufügen der <xref:System.Windows.Forms.BindingSource.EndEdit%2A> Methode für die einzelnen <xref:System.Windows.Forms.BindingSource> auf dem Formular. Sie können manuell hinzufügen, eine Codezeile zum Aufrufen der <xref:System.Windows.Forms.BindingSource.EndEdit%2A> Methode für die einzelnen <xref:System.Windows.Forms.BindingSource>. Sie können auch hinzufügen die `EndEditOnAllBindingSources` Methode, um das Formular, und rufen sie vor dem Ausführen eines Speichervorgangs.  
   
- Der folgende Code verwendet eine [LINQ \(Language\-Integrated Query\)](../Topic/LINQ%20\(Language-Integrated%20Query\).md), um alle <xref:System.Windows.Forms.BindingSource>\-Komponenten zu durchlaufen und die <xref:System.Windows.Forms.BindingSource.EndEdit%2A>\-Methode für jede <xref:System.Windows.Forms.BindingSource> auf einem Formular aufzurufen.  
+ Der folgende code verwendet eine [LINQ (Language-Integrated Query)](http://msdn.microsoft.com/Library/a73c4aec-5d15-4e98-b962-1274021ea93d) Abfrage durchlaufen alle <xref:System.Windows.Forms.BindingSource> Komponenten, und rufen die <xref:System.Windows.Forms.BindingSource.EndEdit%2A> Methode für die einzelnen <xref:System.Windows.Forms.BindingSource> in einem Formular.  
   
-### So rufen Sie EndEdit für alle BindingSource\-Komponenten auf einem Formular auf  
+## <a name="to-call-endedit-for-all-bindingsource-components-on-a-form"></a>Aufrufen von EndEdit für alle BindingSource-Komponenten auf einem Formular  
   
-1.  Fügen Sie den folgenden Code dem Formular hinzu, das die <xref:System.Windows.Forms.BindingSource>\-Komponenten enthält.  
+1.  Fügen Sie den folgenden Code, um das Formular mit dem <xref:System.Windows.Forms.BindingSource> Komponenten.  
   
-     [!code-cs[VSProDataOrcasEndEditOnAll#1](../data-tools/codesnippet/CSharp/commit-in-process-edits-on-data-bound-controls-before-saving-data_1.cs)]
+     [!code-csharp[VSProDataOrcasEndEditOnAll#1](../data-tools/codesnippet/CSharp/commit-in-process-edits-on-data-bound-controls-before-saving-data_1.cs)]
      [!code-vb[VSProDataOrcasEndEditOnAll#1](../data-tools/codesnippet/VisualBasic/commit-in-process-edits-on-data-bound-controls-before-saving-data_1.vb)]  
   
-2.  Fügen Sie die folgende Codezeile unmittelbar vor Aufrufen zum Speichern der Formulardaten hinzu \(`TableAdapterManager.UpdateAll()`\-Methode\):  
+2.  Fügen Sie die folgende Codezeile unmittelbar vor allen Aufrufen zum Speichern von Daten des Formulars (die `TableAdapterManager.UpdateAll()` Methode):  
   
-     [!code-cs[VSProDataOrcasEndEditOnAll#2](../data-tools/codesnippet/CSharp/commit-in-process-edits-on-data-bound-controls-before-saving-data_2.cs)]
+     [!code-csharp[VSProDataOrcasEndEditOnAll#2](../data-tools/codesnippet/CSharp/commit-in-process-edits-on-data-bound-controls-before-saving-data_2.cs)]
      [!code-vb[VSProDataOrcasEndEditOnAll#2](../data-tools/codesnippet/VisualBasic/commit-in-process-edits-on-data-bound-controls-before-saving-data_2.vb)]  
   
-## Siehe auch  
- [Übersicht über die hierarchische Aktualisierung](../Topic/Hierarchical%20Update%20Overview.md)   
- [Übersicht über TableAdapterManager](../Topic/TableAdapterManager%20Overview.md)   
- [Übersicht über TableAdapters](../data-tools/tableadapter-overview.md)   
- [Übersicht über die BindingSource\-Komponente](../Topic/BindingSource%20Component%20Overview.md)
+## <a name="see-also"></a>Siehe auch  
+ [Binden von Windows Forms-Steuerelementen an Daten in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)   
+ [Hierarchische Aktualisierung](../data-tools/hierarchical-update.md)

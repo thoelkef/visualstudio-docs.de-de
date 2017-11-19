@@ -1,44 +1,45 @@
 ---
-title: "&lt;trustInfo&gt;-Element (ClickOnce-Anwendung) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-deployment"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "urn:schemas-microsoft-com:asm.v2#IPermission"
-  - "urn:schemas-microsoft-com:asm.v2#PermissionSet"
-  - "urn:schemas-microsoft-com:asm.v2#assemblyRequest"
-  - "urn:schemas-microsoft-com:asm.v2#trustInfo"
-  - "urn:schemas-microsoft-com:asm.v2#defaultAssemblyRequest"
-  - "urn:schemas-microsoft-com:asm.v2#security"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "Manifeste [ClickOnce], trustInfo-Element"
-  - "<trustInfo>-Element [ClickOnce-Anwendungsmanifest]"
+title: '&lt;TrustInfo&gt; Element (ClickOnce-Anwendung) | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-deployment
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- urn:schemas-microsoft-com:asm.v2#IPermission
+- urn:schemas-microsoft-com:asm.v2#PermissionSet
+- urn:schemas-microsoft-com:asm.v2#assemblyRequest
+- urn:schemas-microsoft-com:asm.v2#trustInfo
+- urn:schemas-microsoft-com:asm.v2#defaultAssemblyRequest
+- urn:schemas-microsoft-com:asm.v2#security
+dev_langs:
+- VB
+- CSharp
+- C++
+helpviewer_keywords:
+- manifests [ClickOnce], trustInfo element
+- <trustInfo> element [ClickOnce application manifest]
 ms.assetid: 8a813a74-e158-4308-be78-565937f6af83
-caps.latest.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 16
+caps.latest.revision: "16"
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+ms.openlocfilehash: 645d4252dd13f4e4629d1ab636ad8b85142242c2
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# &lt;trustInfo&gt;-Element (ClickOnce-Anwendung)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="lttrustinfogt-element-clickonce-application"></a>&lt;TrustInfo&gt; Element (ClickOnce-Anwendung)
 Beschreibt die Mindestsicherheitsberechtigungen, die zum Ausführen der Anwendung auf dem Clientcomputer erforderlich sind.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
   
-<trustInfo>  
+      <trustInfo>  
    <security>  
       <applicationRequestMinimum>  
          <PermissionSet  
@@ -66,20 +67,19 @@ Beschreibt die Mindestsicherheitsberechtigungen, die zum Ausführen der Anwendun
       </requestedPrivileges>  
    </security>  
 </trustInfo>  
-  
 ```  
   
-## Elemente und Attribute  
- Das `trustInfo`\-Element ist erforderlich und befindet sich im `asm.v2`\-Namespace. Es besitzt keine Attribute und enthält die folgenden Elemente.  
+## <a name="elements-and-attributes"></a>Elemente und Attribute  
+ Das `trustInfo` -Element ist erforderlich und befindet sich im `asm.v2` -Namespace. Es besitzt keine Attribute und enthält die folgenden Elemente.  
   
-## Sicherheit  
- Erforderlich. Dieses Element ist ein untergeordnetes Element des `trustInfo`\-Elements. Es enthält das `applicationRequestMinimum`\-Element und besitzt keine Attribute.  
+## <a name="security"></a>Sicherheit  
+ Erforderlich. Dieses Element ist ein untergeordnetes Element des `trustInfo` -Elements. Es enthält das `applicationRequestMinimum` -Element und besitzt keine Attribute.  
   
-## applicationRequestMinimum  
- Erforderlich. Dieses Element ist ein untergeordnetes Element des `security`\-Elements und enthält die Elemente `PermissionSet`, `assemblyRequest` und `defaultAssemblyRequest`. Dieses Element weist keine Attribute auf.  
+## <a name="applicationrequestminimum"></a>applicationRequestMinimum  
+ Erforderlich. Dieses Element ist ein untergeordnetes Element des `security` -Elements und enthält die Elemente `PermissionSet`, `assemblyRequest`und `defaultAssemblyRequest`. Dieses Element weist keine Attribute auf.  
   
-## PermissionSet  
- Erforderlich. Dieses Element ist ein untergeordnetes Element des `applicationRequestMinimum`\-Elements und enthält das `IPermission`\-Element. Dieses Element weist folgende Attribute auf.  
+## <a name="permissionset"></a>PermissionSet  
+ Erforderlich. Dieses Element ist ein untergeordnetes Element des `applicationRequestMinimum` -Elements und enthält das `IPermission` -Element. Dieses Element weist folgende Attribute auf.  
   
 -   `ID`  
   
@@ -89,12 +89,12 @@ Beschreibt die Mindestsicherheitsberechtigungen, die zum Ausführen der Anwendun
   
      Erforderlich. Bezeichnet die Version der Berechtigung. Normalerweise ist dieser Wert `1`.  
   
-## IPermission  
- Dies ist optional. Dieses Element ist ein untergeordnetes Element des `PermissionSet`\-Elements. Das `IPermission`\-Element identifiziert eine Berechtigungsklasse in [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] vollständig. Das `IPermission`\-Element besitzt die folgenden Attribute, kann aber zusätzliche Attribute aufweisen, die den Eigenschaften der Berechtigungsklasse entsprechen. In der Security.config\-Datei finden Sie Beispiele, mit denen Sie die Syntax einer bestimmten Berechtigung ermitteln können.  
+## <a name="ipermission"></a>IPermission  
+ Dies ist optional. Dieses Element ist ein untergeordnetes Element des `PermissionSet` -Elements. Das `IPermission` -Element identifiziert eine Berechtigungsklasse in [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]vollständig. Das `IPermission` -Element besitzt die folgenden Attribute, kann aber zusätzliche Attribute aufweisen, die den Eigenschaften der Berechtigungsklasse entsprechen. In der Security.config-Datei finden Sie Beispiele, mit denen Sie die Syntax einer bestimmten Berechtigung ermitteln können.  
   
 -   `class`  
   
-     Erforderlich. Bezeichnet die Berechtigungsklasse mit einem starken Namen. Beispielsweise identifiziert der folgende Code den Typ `FileDialogPermission`.  
+     Erforderlich. Bezeichnet die Berechtigungsklasse mit einem starken Namen. Beispielsweise identifiziert der folgende Code den Typ `FileDialogPermission` .  
   
      `System.Security.Permissions.FileDialogPermission, mscorlib, Version=1.2.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089`  
   
@@ -104,7 +104,7 @@ Beschreibt die Mindestsicherheitsberechtigungen, die zum Ausführen der Anwendun
   
 -   `Unrestricted`  
   
-     Erforderlich. Bestimmt, ob für die Anwendung eine unbeschränkte Erteilung dieser Berechtigung erforderlich ist. Bei `true` ist die Erteilung der Berechtigung ohne Bedingungen. Bei `false` oder nicht definiertem Attribut erfolgt die Erteilung gemäß den berechtigungsspezifischen Attributen, die im `IPermission`\-Tag definiert sind. Betrachten wir die folgenden Berechtigungen:  
+     Erforderlich. Bestimmt, ob für die Anwendung eine unbeschränkte Erteilung dieser Berechtigung erforderlich ist. Bei `true`ist die Erteilung der Berechtigung ohne Bedingungen. Bei `false`oder nicht definiertem Attribut erfolgt die Erteilung gemäß den berechtigungsspezifischen Attributen, die im `IPermission` -Tag definiert sind. Betrachten wir die folgenden Berechtigungen:  
   
     ```  
     <IPermission  
@@ -117,17 +117,17 @@ Beschreibt die Mindestsicherheitsberechtigungen, die zum Ausführen der Anwendun
       Unrestricted="true" />  
     ```  
   
-     In diesem Beispiel schränkt die Deklaration für <xref:System.Security.Permissions.EnvironmentPermission> die Anwendung auf das ausschließliche Lesen der Umgebungsvariablen USERNAME ein, während die Deklaration für <xref:System.Security.Permissions.FileDialogPermission> der Anwendung die uneingeschränkte Verwendung aller <xref:System.Windows.Forms.FileDialog>\-Klassen erlaubt.  
+     In diesem Beispiel schränkt die Deklaration für <xref:System.Security.Permissions.EnvironmentPermission> die Anwendung auf das ausschließliche Lesen der Umgebungsvariablen USERNAME ein, während die Deklaration für <xref:System.Security.Permissions.FileDialogPermission> der Anwendung die uneingeschränkte Verwendung aller <xref:System.Windows.Forms.FileDialog> -Klassen erlaubt.  
   
-## defaultAssemblyRequest  
- Dies ist optional. Bezeichnet den allen Assemblys erteilten Berechtigungssatz. Dieses Element ist ein untergeordnetes Element des `applicationRequestMinimum`\-Elements und weist folgende Attribute auf.  
+## <a name="defaultassemblyrequest"></a>defaultAssemblyRequest  
+ Dies ist optional. Bezeichnet den allen Assemblys erteilten Berechtigungssatz. Dieses Element ist ein untergeordnetes Element des `applicationRequestMinimum` -Elements und weist folgende Attribute auf.  
   
 -   `permissionSetReference`  
   
-     Erforderlich. Bezeichnet die ID des Berechtigungssatzes, der die Standardberechtigung bildet. Der Berechtigungssatz wird im `PermissionSet`\-Element deklariert.  
+     Erforderlich. Bezeichnet die ID des Berechtigungssatzes, der die Standardberechtigung bildet. Der Berechtigungssatz wird im `PermissionSet` -Element deklariert.  
   
-## assemblyRequest  
- Dies ist optional. Bezeichnet die Berechtigungen für eine bestimmte Assembly. Dieses Element ist ein untergeordnetes Element des `applicationRequestMinimum`\-Elements und weist folgende Attribute auf.  
+## <a name="assemblyrequest"></a>assemblyRequest  
+ Dies ist optional. Bezeichnet die Berechtigungen für eine bestimmte Assembly. Dieses Element ist ein untergeordnetes Element des `applicationRequestMinimum` -Elements und weist folgende Attribute auf.  
   
 -   `Name`  
   
@@ -135,12 +135,12 @@ Beschreibt die Mindestsicherheitsberechtigungen, die zum Ausführen der Anwendun
   
 -   `permissionSetReference`  
   
-     Erforderlich. Bezeichnet die ID des Berechtigungssatzes, der für diese Assembly erforderlich ist. Der Berechtigungssatz wird im `PermissionSet`\-Element deklariert.  
+     Erforderlich. Bezeichnet die ID des Berechtigungssatzes, der für diese Assembly erforderlich ist. Der Berechtigungssatz wird im `PermissionSet` -Element deklariert.  
   
-## requestedPrivileges  
- Dies ist optional. Dieses Element ist ein untergeordnetes Element des `security`\-Elements und enthält das `requestedExecutionLevel`\-Element. Dieses Element weist keine Attribute auf.  
+## <a name="requestedprivileges"></a>requestedPrivileges  
+ Dies ist optional. Dieses Element ist ein untergeordnetes Element des `security` -Elements und enthält das `requestedExecutionLevel` -Element. Dieses Element weist keine Attribute auf.  
   
-## requestedExecutionLevel  
+## <a name="requestedexecutionlevel"></a>requestedExecutionLevel  
  Dies ist optional. Bezeichnet die Sicherheitsstufe, die von der Anwendung für die Ausführung angefordert wird. Dieses Element hat keine untergeordneten Elemente und weist folgende Attribute auf.  
   
 -   `Level`  
@@ -153,23 +153,23 @@ Beschreibt die Mindestsicherheitsberechtigungen, die zum Ausführen der Anwendun
   
      `requireAdministrator`, es werden vollständige Administratorberechtigungen angefordert.  
   
-     [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]\-Anwendungen können nur mit dem Wert `asInvoker` installiert werden. Bei der Installation mit anderen Werten tritt ein Fehler auf.  
+     [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendungen können nur mit dem Wert `asInvoker`installiert werden. Bei der Installation mit anderen Werten tritt ein Fehler auf.  
   
 -   `uiAccess`  
   
-     Optional. Gibt an, ob die Anwendung Zugriff auf geschützte Elemente der Benutzeroberfläche benötigt. Die Werte sind `true` und `false`, und der Standardwert ist „false“. Nur signierte Anwendungen sollten den Wert „true“ haben.  
+     Dies ist optional. Gibt an, ob die Anwendung Zugriff auf geschützte Elemente der Benutzeroberfläche benötigt. Die Werte sind `true` und `false`, und der Standardwert ist „false“. Nur signierte Anwendungen sollten den Wert „true“ haben.  
   
-## Hinweise  
- Wenn eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]\-Anwendung mehr Berechtigungen anfordert, als der Clientcomputer standardmäßig erteilt, fragt der Trust\-Manager der Common Language Runtime beim Benutzer nach, ob er der Anwendung die höhere Vertrauensstellung einräumen möchte. Wenn er ablehnt, wird die Anwendung nicht ausgeführt; andernfalls wird sie mit den angeforderten Berechtigungen ausgeführt.  
+## <a name="remarks"></a>Hinweise  
+ Wenn eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendung mehr Berechtigungen anfordert, als der Clientcomputer standardmäßig erteilt, fragt der Trust-Manager der Common Language Runtime beim Benutzer nach, ob er der Anwendung die höhere Vertrauensstellung einräumen möchte. Wenn er ablehnt, wird die Anwendung nicht ausgeführt; andernfalls wird sie mit den angeforderten Berechtigungen ausgeführt.  
   
  Alle mithilfe von `defaultAssemblyRequest` und `assemblyRequest` angeforderten Berechtigungen werden ohne Nachfrage beim Benutzer erteilt, wenn das Bereitstellungsmanifest eine gültige Vertrauenslizenz aufweist.  
   
- Weitere Informationen zur Berechtigungserweiterung finden Sie unter [Sichern von ClickOnce\-Anwendungen](../deployment/securing-clickonce-applications.md). Weitere Informationen zur Bereitstellung von Richtlinien finden Sie unter [Überblick über die Bereitstellung vertrauenswürdiger Anwendungen](../deployment/trusted-application-deployment-overview.md).  
+ Weitere Informationen zur Berechtigungserweiterung finden Sie unter [Sichern von ClickOnce-Anwendungen](../deployment/securing-clickonce-applications.md). Weitere Informationen zur Bereitstellung von Richtlinien finden Sie unter [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md).  
   
-## Beispiele  
- Die folgenden drei Codebeispiele veranschaulichen `trustInfo`\-Elemente für die benannten Standardsicherheitszonen – Internet, Lokales Intranet und Vertrauenswürdige Sites – für die Verwendung im Anwendungsmanifest einer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]\-Bereitstellung.  
+## <a name="examples"></a>Beispiele  
+ Die folgenden drei Codebeispiele veranschaulichen `trustInfo` -Elemente für die benannten Standardsicherheitszonen – Internet, Lokales Intranet und Vertrauenswürdige Sites – für die Verwendung im Anwendungsmanifest einer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Bereitstellung.  
   
- Das erste Beispiel zeigt das `trustInfo`\-Element für die in der Sicherheitszone „Internet“ verfügbaren Standardberechtigungen.  
+ Das erste Beispiel zeigt das `trustInfo` -Element für die in der Sicherheitszone „Internet“ verfügbaren Standardberechtigungen.  
   
 ```  
 <trustInfo>  
@@ -205,7 +205,7 @@ Beschreibt die Mindestsicherheitsberechtigungen, die zum Ausführen der Anwendun
   </trustInfo>  
 ```  
   
- Das zweite Beispiel zeigt das `trustInfo`\-Element für die in der Sicherheitszone „Lokales Intranet“ verfügbaren Standardberechtigungen.  
+ Das zweite Beispiel zeigt das `trustInfo` -Element für die in der Sicherheitszone „Lokales Intranet“ verfügbaren Standardberechtigungen.  
   
 ```  
 <trustInfo>  
@@ -257,7 +257,7 @@ Beschreibt die Mindestsicherheitsberechtigungen, die zum Ausführen der Anwendun
 </trustInfo>  
 ```  
   
- Das dritte Beispiel zeigt das `trustInfo`\-Element für die in der Sicherheitszone „Vertrauenswürdige Sites“ verfügbaren Standardberechtigungen.  
+ Das dritte Beispiel zeigt das `trustInfo` -Element für die in der Sicherheitszone „Vertrauenswürdige Sites“ verfügbaren Standardberechtigungen.  
   
 ```  
 <trustInfo>  
@@ -270,6 +270,6 @@ Beschreibt die Mindestsicherheitsberechtigungen, die zum Ausführen der Anwendun
 </trustInfo>  
 ```  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Überblick über die Bereitstellung vertrauenswürdiger Anwendungen](../deployment/trusted-application-deployment-overview.md)   
- [ClickOnce Application Manifest](../deployment/clickonce-application-manifest.md)
+ [ClickOnce-Anwendungsmanifest](../deployment/clickonce-application-manifest.md)

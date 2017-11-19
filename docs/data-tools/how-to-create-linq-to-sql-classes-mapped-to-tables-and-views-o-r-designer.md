@@ -1,69 +1,71 @@
 ---
-title: "Vorgehensweise: Erstellen von LINQ to SQL-Klassen, die Tabellen und Ansichten (O/R-Designer) zugeordnet sind | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: 'Vorgehensweise: Erstellen von LINQ to SQL-Klassen zugeordnet, die mit Tabellen und Sichten (O-R-Designer) | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 0fb78bbc-7a78-4ab4-b32f-85ece912e660
-caps.latest.revision: 3
-caps.handback.revision: 1
-author: "mikeblome"
-ms.author: "mblome"
-manager: "ghogen"
+caps.latest.revision: "3"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.technology: vs-data-tools
+ms.openlocfilehash: 318acd282090dd17fcfd7fd12e7370e906c67806
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Vorgehensweise: Erstellen von LINQ to SQL-Klassen, die Tabellen und Ansichten (O/R-Designer) zugeordnet sind
-[!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)]\-Klassen, die Datenbanktabellen und \-sichten zugeordnet sind, werden als *Entitätsklassen* bezeichnet. Die Entitätsklasse wird einem Datensatz zugeordnet, während die einzelnen Eigenschaften einer Entitätsklasse den jeweiligen Spalten eines Datensatzes zugeordnet werden.Sie können Entitätsklassen auf Grundlage von Datenbanktabellen oder \-sichten erstellen, indem Sie Tabellen oder Sichten von **Server\-Explorer**\/**Datenbank\-Explorer** auf den [Object Relational Designer \(O\/R\-Designer\)](../data-tools/linq-to-sql-tools-in-visual-studio2.md) ziehen.[!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] generiert die Klassen und wendet die spezifischen [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)]\-Attribute an, um die [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)]\-Funktionalität zu aktivieren \(die Datenkommunikations\- und Bearbeitungsfunktionen von <xref:System.Data.Linq.DataContext>\).Ausführliche Informationen zu [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)]\-Klassen finden Sie unter [Das LINQ to SQL\-Objektmodell](../Topic/The%20LINQ%20to%20SQL%20Object%20Model.md).  
+# <a name="how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-or-designer"></a>Vorgehensweise: Erstellen von LINQ to SQL-Klassen zugeordnet, die mit Tabellen und Sichten (O/R-Designer)
+[!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)]Klassen, Datenbanktabellen und-Ansichten zugeordnet sind, heißen *Entitätsklassen*. Die Entitätsklasse wird einem Datensatz zugeordnet, während die einzelnen Eigenschaften einer Entitätsklasse den jeweiligen Spalten eines Datensatzes zugeordnet werden. Erstellen von Entitätsklassen, die auf die Datenbanktabellen oder-Ansichten basieren, ziehen Sie Tabellen oder Sichten aus **Server-Explorer**/**Datenbank-Explorer** auf die [LINQ to SQL-Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md). Die [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] generiert die Klassen und wendet die spezifischen [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] Attribute ermöglichen [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] Funktionalität (die Datenkommunikations- und Bearbeitungsfunktionen von der <xref:System.Data.Linq.DataContext>). Ausführliche Informationen zu [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] Klassen, finden Sie unter [das LINQ to SQL-Objektmodell](/dotnet/framework/data/adonet/sql/linq/the-linq-to-sql-object-model).  
   
 > [!NOTE]
->  Bei [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] handelt es sich um eine einfache objektrelationale Zuordnung, da nur 1:1\-Zuordnungsbeziehungen unterstützt werden.Das heißt, dass eine Entitätsklasse nur über eine 1:1\-Zuordnungsbeziehung zu einer Datenbanktabelle oder \-sicht verfügen kann.Eine komplexe Zuordnung, z. B. das Zuordnen einer Entitätsklasse zu mehreren Tabellen, wird nicht unterstützt.Sie können jedoch einer Sicht, die mehrere zusammengehörige Tabellen verknüpft, eine Entitätsklasse zuordnen.  
+>  Die [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] ist eine einfache objektrelationale Zuordnungen, da er nur 1:1-zuordnungsbeziehungen unterstützt. Das heißt, dass eine Entitätsklasse nur über eine 1:1-Zuordnungsbeziehung zu einer Datenbanktabelle oder -ansicht verfügen kann. Eine komplexe Zuordnung, z. B. das Zuordnen einer Entitätsklasse zu mehreren Tabellen, wird nicht unterstützt. Sie können jedoch einer Ansicht, die mehrere zusammengehörige Tabellen verknüpft, eine Entitätsklasse zuordnen.  
   
-## Erstellen von LINQ to SQL\-Klassen, die Datenbanktabellen oder \-sichten zugeordnet sind  
- Entitätsklassen können erstellt werden, indem die Tabellen oder Sichten von **Server\-Explorer**\/**Datenbank\-Explorer** auf den [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] gezogen werden, zusätzlich zu den <xref:System.Data.Linq.DataContext>\-Methoden zum Durchführen von Updates.  
+## <a name="create-linq-to-sql-classes-that-are-mapped-to-database-tables-or-views"></a>Erstellen von LINQ to SQL-Klassen, die Datenbanktabellen oder -ansichten zugeordnet sind  
+ Ziehen Sie Tabellen oder Sichten von **Server-Explorer**/**Datenbank-Explorer** auf die [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] erstellt Entitätsklassen zusätzlich zu den <xref:System.Data.Linq.DataContext> Methoden, die für verwendet werden Ausführen von Updates.  
   
- Standardmäßig erstellt die [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)]\-Laufzeit die Logik zum Speichern von in einer aktualisierbaren Entitätsklasse vorgenommenen Änderungen in der Datenbank.Diese Logik basiert auf dem Schema der Tabelle \(den Spaltendefinitionen und Primärschlüsselinformationen\).Wenn Sie dieses Verhalten nicht wünschen, können Sie eine Entitätsklasse konfigurieren, um anstelle des [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)]\-Laufzeitverhaltens gespeicherte Prozeduren zum Durchführen von Einfüge\-, Update\- und Löschvorgängen zu verwenden.Weitere Informationen finden Sie unter [Vorgehensweise: Zuweisen von gespeicherten Prozeduren zur Durchführung von Update\-, Einfüge\- und Löschvorgängen \(O\/R\-Designer\)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md).  
+ Standardmäßig erstellt die [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)]-Laufzeit die Logik zum Speichern von in einer aktualisierbaren Entitätsklasse vorgenommenen Änderungen in der Datenbank. Diese Logik basiert auf dem Schema der Tabelle (den Spaltendefinitionen und Primärschlüsselinformationen). Wenn Sie dieses Verhalten nicht wünschen, können Sie eine Entitätsklasse konfigurieren, um anstelle des [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)]-Laufzeitverhaltens gespeicherte Prozeduren zum Durchführen von Einfüge-, Update- und Löschvorgängen zu verwenden. Weitere Informationen finden Sie unter [Vorgehensweise: Zuweisen von gespeicherten Prozeduren zum Ausführen von Updates, einfügungen und löschen (O/R-Designer)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md).  
   
- [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
+[!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
   
-#### So erstellen Sie LINQ to SQL\-Klassen, die Datenbanktabellen oder \-sichten zugeordnet sind  
+#### <a name="to-create-linq-to-sql-classes-that-are-mapped-to-database-tables-or-views"></a>So erstellen Sie LINQ to SQL-Klassen, die Datenbanktabellen oder -ansichten zugeordnet sind  
   
-1.  Erweitern Sie in **Server**\/**Datenbank\-Explorer** den Knoten **Tabellen** oder **Sichten**, und suchen Sie die Datenbanktabelle oder \-sicht, die Sie in Ihrer Anwendung verwenden möchten.  
+1.  In **Server**/**Datenbank-Explorer**, erweitern Sie **Tabellen** oder **Ansichten** und suchen Sie die Datenbanktabelle oder -Ansicht, werden sollen in der Anwendung verwenden zu können.  
   
-2.  Ziehen Sie die Tabelle oder die Sicht auf den [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].  
+2.  Ziehen Sie die Tabelle oder die Ansicht auf den [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].  
   
-     Eine Entitätsklasse wird erstellt und auf der Entwurfsoberfläche angezeigt.Die Entitätsklasse verfügt über Eigenschaften, die sich auf die Spalten in der ausgewählten Tabelle oder Sicht beziehen.  
+     Eine Entitätsklasse wird erstellt und auf der Entwurfsoberfläche angezeigt. Die Entitätsklasse verfügt über Eigenschaften, die sich auf die Spalten in der ausgewählten Tabelle oder Ansicht beziehen.  
   
-## Erstellen einer Objektdatenquelle und Anzeigen der Daten auf einem Formular  
- Nach dem Erstellen von Entitätsklassen mithilfe von [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] können Sie eine Objektdatenquelle erstellen und das [Datenquellenfenster](../Topic/Data%20Sources%20Window.md) mit den Entitätsklassen füllen.  
+## <a name="create-an-object-data-source-and-display-the-data-on-a-form"></a>Erstellen einer Objektdatenquelle und Anzeigen der Daten auf einem Formular  
+ Nach der Erstellung von Entitätsklassen mithilfe der [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)], können Sie eine Objektdatenquelle erstellen und Auffüllen der [Datenquellenfenster](add-new-data-sources.md) mit den Entitätsklassen.  
   
-#### So erstellen Sie eine Objektdatenquelle auf Grundlage von LINQ to SQL\-Entitätsklassen  
+#### <a name="to-create-an-object-data-source-based-on-linq-to-sql-entity-classes"></a>So erstellen Sie eine Objektdatenquelle auf Grundlage von LINQ to SQL-Entitätsklassen  
   
-1.  Klicken Sie im Menü **Erstellen** auf **Projektmappe erstellen**, um ein Projekt zu erstellen.  
+1.  Auf der **erstellen** Menü klicken Sie auf **Projektmappe** zur Erstellung des Projekts.  
   
 2.  Klicken Sie im Menü **Daten** auf **Datenquellen anzeigen**.  
   
 3.  Klicken Sie im **Datenquellenfenster** auf **Neue Datenquelle hinzufügen**.  
   
-4.  Klicken Sie auf der Seite **Datenquellentyp auswählen** auf **Objekt** und dann auf **Weiter**.  
+4.  Klicken Sie auf **Objekt** auf die **wählen Sie einen Datenquellentyp** Seite, und klicken Sie dann auf **Weiter**.  
   
 5.  Erweitern Sie die Knoten, suchen und wählen Sie die Klasse aus.  
   
     > [!NOTE]
-    >  Wenn die Klasse **Customer** nicht verfügbar ist, beenden Sie den Assistenten, erstellen Sie das Projekt, und führen Sie den Assistenten erneut aus.  
+    >  Wenn die **Kunden** Klasse ist nicht verfügbar, beenden Sie den Assistenten, erstellen Sie das Projekt und führen Sie den Assistenten erneut aus.  
   
-6.  Klicken Sie auf **Fertig stellen**, um die Datenquelle zu erstellen, und fügen Sie die Entitätsklasse **Customer** zum Fenster **Datenquellen** hinzu.  
+6.  Klicken Sie auf **Fertig stellen** zum Erstellen der Datenquelle und Hinzufügen der **Kunden** Entitätsklasse, die **Datenquellen** Fenster.  
   
-7.  Ziehen Sie Elemente aus dem Fenster **Datenquellen** auf ein Formular.  
+7.  Ziehen Sie Elemente aus der **Datenquellen** auf das Formular.  
   
-## Siehe auch  
- [Object Relational Designer \(O\/R\-Designer\)](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
- [Exemplarische Vorgehensweise: Erstellen von LINQ to SQL\-Klassen \(O\/R\-Designer\)](../Topic/Walkthrough:%20Creating%20LINQ%20to%20SQL%20Classes%20\(O-R%20Designer\).md)   
- [DataContext\-Methoden \(O\/R\-Designer\)](../data-tools/datacontext-methods-o-r-designer.md)   
- [Vorgehensweise: Erstellen von DataContext\-Methoden, die gespeicherten Prozeduren und Funktionen \(O\/R\-Designer\) zugeordnet sind](../data-tools/how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-o-r-designer.md)   
- [Das LINQ to SQL\-Objektmodell](../Topic/The%20LINQ%20to%20SQL%20Object%20Model.md)   
- [Vorgehensweise: Hinzufügen von Validierungen zu Entitätsklassen](../data-tools/how-to-add-validation-to-entity-classes.md)   
- [Exemplarische Vorgehensweise: Anpassen des Einfüge\-, Update\- und Löschverhaltens von Entitätsklassen](../data-tools/walkthrough-customizing-the-insert-update-and-delete-behavior-of-entity-classes.md)   
- [Exemplarische Vorgehensweise: Hinzufügen von Validierung zu Entitätsklassen](../Topic/Walkthrough:%20Adding%20Validation%20to%20Entity%20Classes.md)   
- [Vorgehensweise: Erstellen einer Zuordnung \(Beziehung\) zwischen LINQ to SQL\-Klassen \(O\/R\-Designer\)](../data-tools/how-to-create-an-association-relationship-between-linq-to-sql-classes-o-r-designer.md)
+## <a name="see-also"></a>Siehe auch  
+ [LINQ to SQL-Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
+ [Exemplarische Vorgehensweise: Erstellen von LINQ to SQL-Klassen (O-R-Designer)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)   
+ [DataContext-Methoden (O/R-Designer)](../data-tools/datacontext-methods-o-r-designer.md)   
+ [Vorgehensweise: Erstellen von DataContext-Methoden zugeordnet werden, um gespeicherte Prozeduren und Funktionen (O/R-Designer)](../data-tools/how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-o-r-designer.md)   
+ [Die LINQ to SQL-Objektmodell](/dotnet/framework/data/adonet/sql/linq/the-linq-to-sql-object-model)   
+ [Exemplarische Vorgehensweise: Anpassen der Insert, update und delete Verhalten von Entitätsklassen](../data-tools/walkthrough-customizing-the-insert-update-and-delete-behavior-of-entity-classes.md)   
+  [Vorgehensweise: erstellen eine Zuordnung (Beziehung) zwischen LINQ to SQL-Klassen (O/R-Designer)](../data-tools/how-to-create-an-association-relationship-between-linq-to-sql-classes-o-r-designer.md)

@@ -1,55 +1,61 @@
 ---
-title: "BuildProjectOnload-Element (Visual Studio-Vorlagen) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: BuildProjectOnload-Element (Visual Studio-Vorlagen) | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: b07d3074-0fc9-45e1-baf5-da6bd4f3f1c0
-caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 362dd868e6f9c273e9495295a453d8da4e2183cd
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# BuildProjectOnload-Element (Visual Studio-Vorlagen)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Neue Projekte der Builds nur, wie Sie sie einer Projektmappe erstellen und hinzufügen.  Die gesamte Projektmappe wird nicht erstellt.  
+# <a name="buildprojectonload-element-visual-studio-templates"></a>BuildProjectOnload-Element (Visual Studio-Vorlagen)
+Erstellt nur neue Projekte, erstellen und diese zu einer Projektmappe hinzufügen. Es wird nicht die gesamte Projektmappe erstellt.  
   
-## Syntax  
+ \<VSTemplate >  
+ \<TemplateData >  
+ \<BuildProjectOnLoad >  
+  
+## <a name="syntax"></a>Syntax  
   
 ```vb  
 <BuildProjectOnLoad> true/false </BuildOnLoad>  
 ```  
   
-## Attribute und Elemente  
+## <a name="attributes-and-elements"></a>Attribute und Elemente  
  In den folgenden Abschnitten werden Attribute sowie untergeordnete und übergeordnete Elemente beschrieben.  
   
-### Attribute  
+### <a name="attributes"></a>Attribute  
  Keine.  
   
-### Untergeordnete Elemente  
- Keine.  
+### <a name="child-elements"></a>Untergeordnete Elemente  
+ Keine  
   
-### Übergeordnete Elemente  
+### <a name="parent-elements"></a>Übergeordnete Elemente  
   
-|Element|Description|  
+|Element|Beschreibung|  
 |-------------|-----------------|  
-|TemplateData|Kategorisiert die Vorlage und definiert, wie sie in **Neues Projekt** und in den **Neues Element hinzufügen** Dialogfeldern angezeigt wird.|  
+|TemplateData|Kategorisiert die Vorlage und definiert, wie es in beiden wird der **neues Projekt** und **neues Element hinzufügen** Dialogfelder.|  
   
-## Textwert  
+## <a name="text-value"></a>Textwert  
  Ein Textwert ist erforderlich.  
   
- Es muss entweder `true` anzugeben `false` sein, oder ob nur das neue Projekt erstellt, wenn er von der Vorlage erstellt hat.  
+ Der Text muss entweder `true` oder `false` , um anzugeben, ob Sie nur das neue Projekt zu erstellen, wenn es aus der Vorlage erstellt wird.  
   
-## Hinweise  
- `BuildProjectOnLoad` ist ein optionales Element.  Der Standardwert ist `false`.  
+## <a name="remarks"></a>Hinweise  
+ `BuildProjectOnLoad` ist ein optionales Element. Der Standardwert ist `false`.  
   
-## Beispiel  
- Das folgende Beispiel veranschaulicht die Metadaten für eine Visual C\# vorlage.  
+## <a name="example"></a>Beispiel  
+ Das folgende Beispiel veranschaulicht die Metadaten für eine Visual C#-Vorlage.  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  
@@ -74,9 +80,8 @@ Neue Projekte der Builds nur, wie Sie sie einer Projektmappe erstellen und hinzu
         </Project>  
     </TemplateContent>  
 </VSTemplate>  
-  
 ```  
   
-## Siehe auch  
- [Erstellen von benutzerdefinierten Projekt\- und Elementvorlagen](../ide/creating-project-and-item-templates.md)   
- [Schemareferenz zu Visual Studio\-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)
+## <a name="see-also"></a>Siehe auch  
+ [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)   
+ [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)

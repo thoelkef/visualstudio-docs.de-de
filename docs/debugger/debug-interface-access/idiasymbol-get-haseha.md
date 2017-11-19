@@ -1,56 +1,55 @@
 ---
-title: "IDiaSymbol::get_hasEHa | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSymbol::get_hasEHa-Methode"
+title: 'Idiasymbol:: Get_haseha | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSymbol::get_hasEHa method
 ms.assetid: cb61dfd9-fe69-461c-8185-288440454864
-caps.latest.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 323f94ffdbb05fcf37cd749a1b29bef47738489b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSymbol::get_hasEHa
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Ruft ein Flag ab, das angibt, ob die Funktion asynchrone \(strukturierte Ausnahmebehandlung\) enthält.  
+# <a name="idiasymbolgethaseha"></a>IDiaSymbol::get_hasEHa
+Ruft ein Flag, das angibt, ob die Funktion asynchrone (strukturierte) Ausnahmebehandlung enthält.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp  
+```C++  
 HRESULT get_hasEHa(  
-   BOOL *pFlag  
+   BOOL *pFlag  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `pFlag`  
- \[out\]  Gibt `TRUE` zurück, wenn die Funktion eine asynchrone Ausnahmebehandlung verfügt. andernfalls gibt `FALSE`zurück.  
+ [out] Gibt `TRUE` , wenn die Funktion asynchrone Ausnahmebehandlung; aufweist, andernfalls `FALSE`.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt `S_FALSE` oder einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
   
 > [!NOTE]
->  Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft nicht für das Symbol verfügbar ist.  
+>  Ein Rückgabewert von `S_FALSE` bedeutet, dass die Eigenschaft nicht für das Symbol verfügbar ist.  
   
-## Hinweise  
- Es besteht die Möglichkeit, asynchrone oder strukturierte Ausnahmebehandlung mit C\+\+\-style Ausnahmebehandlung zu kombinieren, aber erfordert einen bestimmten Compilerschalter, \/EHa, um sie zu aktivieren.  
+## <a name="remarks"></a>Hinweise  
+ Es ist möglich, asynchrone oder strukturierte Ausnahmebehandlung bei C++-Stil Ausnahmebehandlung mischen, aber dafür, dass eine bestimmte Compilerschalter/EHa, um ihn zu aktivieren.  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
   
 |Anforderung|Beschreibung|  
-|-----------------|------------------|  
+|-----------------|-----------------|  
 |Header:|dia2.h|  
-|Version:|DIA SDK v8.0|  
+|Version:|DIA-SDK 8.0|  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

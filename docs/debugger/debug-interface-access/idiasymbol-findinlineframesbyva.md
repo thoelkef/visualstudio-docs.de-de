@@ -1,48 +1,48 @@
 ---
-title: "IDiaSymbol::findInlineFramesByVA | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
+title: IDiaSymbol::findInlineFramesByVA | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
 ms.assetid: 54295d3e-bbb6-4c10-ab9d-adcfc22b1f71
-caps.latest.revision: 3
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 3
+caps.latest.revision: "3"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 58bceec88a9e5e4423bb0c004a22b5487e929364
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSymbol::findInlineFramesByVA
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Ruft eine Enumeration ab, die einem Client ermöglicht, um alle inline Frames auf einer angegebenen virtuellen Adresse \(VA\) zu durchlaufen.  
+# <a name="idiasymbolfindinlineframesbyva"></a>IDiaSymbol::findInlineFramesByVA
+Ruft eine Enumeration, die einen Client zum iterieren durch alle Inlineframes auf einer bestimmten virtuellen Adresse ("VA" ist) ermöglicht.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT findInlineFramesByVA (   
+```C++  
+HRESULT findInlineFramesByVA (   
    ULONGLONG         va,  
-   IDiaEnumSymbols** ppResult  
+   IDiaEnumSymbols** ppResult  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `va`  
- \[in\] Gibt die Adresse als VA an.  
+ [in] Gibt die Adresse als eine VA.  
   
  `ppResult`  
- \[out\] `IDiaEnumSymbols` enthält ein Objekt, das die Liste von Rahmen enthält, die abgerufen werden.  
+ [out] Enthält eine `IDiaEnumSymbols` -Objekt, das die Liste der Bilder enthält, die abgerufen werden.  
   
-## Rückgabewert  
- Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [SymTagEnum\-Enumeration](../../debugger/debug-interface-access/symtagenum.md)   
+ [SymTagEnum-Enumeration](../../debugger/debug-interface-access/symtagenum.md)   
  [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)

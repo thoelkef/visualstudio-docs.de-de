@@ -1,49 +1,49 @@
 ---
-title: "IDebugPortEx2::TerminateProcess | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugPortEx2::TerminateProcess"
-helpviewer_keywords: 
-  - "IDebugPortEx2::TerminateProcess"
+title: IDebugPortEx2::TerminateProcess | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugPortEx2::TerminateProcess
+helpviewer_keywords: IDebugPortEx2::TerminateProcess
 ms.assetid: bf8fa94c-6d9d-4e4f-ac08-3b44ba5ace68
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: d4863c9c810c4986efea4c87c37460a80ad5e943
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugPortEx2::TerminateProcess
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Beendet einen Prozess.  
+# <a name="idebugportex2terminateprocess"></a>IDebugPortEx2::TerminateProcess
+Beendet einen Prozess an.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT TerminateProcess(   
-   IDebugProcess2* pPortProcess  
+```cpp  
+HRESULT TerminateProcess(   
+   IDebugProcess2* pPortProcess  
 );  
 ```  
   
-```c#  
-int TerminateProcess(   
-   IDebugProcess2 pPortProcess  
+```csharp  
+int TerminateProcess(   
+   IDebugProcess2 pPortProcess  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `pPortProcess`  
- \[in\]  Ein [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)\-Objekt, das den Prozess darstellt beendet werden soll.  
+ [in] Ein [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) Objekt, durch die der Prozess beendet wird.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDebugPortEx2](../../../extensibility/debugger/reference/idebugportex2.md)   
  [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

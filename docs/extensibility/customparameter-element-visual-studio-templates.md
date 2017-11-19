@@ -1,58 +1,58 @@
 ---
-title: "CustomParameter-Element (Visual Studio-Vorlagen) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "http://schemas.microsoft.com/developer/vstemplate/2005#CustomParameter"
-helpviewer_keywords: 
-  - "CustomParameters-Element [Visual Studio-Projektvorlagen]"
+title: CustomParameter-Element (Visual Studio-Vorlagen) | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: http://schemas.microsoft.com/developer/vstemplate/2005#CustomParameter
+helpviewer_keywords: CustomParameters element [Visual Studio project templates]
 ms.assetid: 743c4489-74ac-403a-bbaa-eed7d785a3ac
-caps.latest.revision: 6
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 6
+caps.latest.revision: "6"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: d52d22e3b4200cee0bd5d3dd3eab3e5356f0dbbd
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# CustomParameter-Element (Visual Studio-Vorlagen)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Enthält einen benutzerdefinierten Parameternamen und \-wert, der beim Erstellen eines Projekts oder Elements von der Vorlage verwendet wird.  
+# <a name="customparameter-element-visual-studio-templates"></a>CustomParameter-Element (Visual Studio-Vorlagen)
+Enthält eine benutzerdefinierte Parametername und der Wert, der verwendet wird, wenn ein Projekt oder Element aus der Vorlage erstellt wird.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 <CustomParameter Name="name" Value="value">  
 ```  
   
-## Attribute und Elemente  
+## <a name="attributes-and-elements"></a>Attribute und Elemente  
  In den folgenden Abschnitten werden Attribute sowie untergeordnete und übergeordnete Elemente beschrieben.  
   
-### Attribute  
+### <a name="attributes"></a>Attribute  
   
-|Attribut|Description|  
-|--------------|-----------------|  
-|`Name`|Erforderlich.  Der Name des Parameters.  Das Format für Parameter lautet $*name*$.|  
-|`Value`|Erforderlich.  Der Ersetzungswert für den Parameter.|  
+|Attribut|Beschreibung|  
+|---------------|-----------------|  
+|`Name`|Erforderlich. Der Name des Parameters. Das Format für Parameter lautet $*Namen*$.|  
+|`Value`|Erforderlich. Der Ersatzwert für den Parameter.|  
   
-### Untergeordnete Elemente  
- Keine.  
+### <a name="child-elements"></a>Untergeordnete Elemente  
+ Keine  
   
-### Übergeordnete Elemente  
+### <a name="parent-elements"></a>Übergeordnete Elemente  
   
-|Element|Description|  
+|Element|Beschreibung|  
 |-------------|-----------------|  
-|[CustomParameters](../extensibility/customparameters-element-visual-studio-templates.md)|Gruppiert die benutzerdefinierten Parameter, die an den Vorlagen\-Assistenten übergeben werden sollen, wenn der Assistent Parameterersetzungen vornimmt.|  
+|[CustomParameters](../extensibility/customparameters-element-visual-studio-templates.md)|Gruppiert die benutzerdefinierten Parameter ab, auf dem Vorlagen-Assistenten übergeben werden, wenn der Assistent sorgt für die Parameter-Ersetzungen.|  
   
-## Hinweise  
- Wenn eine Vorlage `CustomParameter`\-Elemente enthält, wird jede Instanz des `Name`\-Attributs durch das `Value`\-Attribut in den erstellten Projekt\- oder Elementdateien ersetzt.  
+## <a name="remarks"></a>Hinweise  
+ Wenn eine Vorlage enthält `CustomParameter` Elemente, die jede Instanz die `Name` Attribut wird durch ersetzt die `Value` -Attribut in die erstellten Projekt oder Element-Dateien.  
   
-## Beispiel  
- Im folgenden Beispiel wird veranschaulicht, wie mehrere benutzerdefinierte Parameter in einer Vorlage verwendet werden.  Wenn ein Projekt oder Element mit den folgenden benutzerdefinierten Parametern von einer Vorlage erstellt wird, werden alle Instanzen von `$color1$` und `$color2$` in den Vorlagendateien durch `Red` bzw. `Blue` ersetzt.  
+## <a name="example"></a>Beispiel  
+ Im folgende Beispiel wird gezeigt, wie mehrere benutzerdefinierte Parameter in einer Vorlage verwendet wird. Wenn ein Projekt oder Element aus einer Vorlage mit den folgenden benutzerdefinierten Parametern, alle Instanzen der erstellt wird `$color1$` und `$color2$` in der Vorlage die Dateien ersetzt werden, mit `Red` und `Blue`zugeordnet.  
   
 ```  
 <CustomParameters>  
@@ -61,7 +61,7 @@ Enthält einen benutzerdefinierten Parameternamen und \-wert, der beim Erstellen
 </CustomParameters>  
 ```  
   
-## Siehe auch  
- [CustomParameters\-Element \(Visual Studio\-Vorlagen\)](../extensibility/customparameters-element-visual-studio-templates.md)   
+## <a name="see-also"></a>Siehe auch  
+ [CustomParameters-Element (Visual Studio-Vorlagen)](../extensibility/customparameters-element-visual-studio-templates.md)   
  [Vorlagenparameter](../ide/template-parameters.md)   
- [Schemareferenz zu Visual Studio\-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)
+ [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)

@@ -1,56 +1,56 @@
 ---
-title: "IDebugEngine2::GetEngineID | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugEngine2::GetEngineID"
-helpviewer_keywords: 
-  - "IDebugEngine2::GetEngineID"
+title: IDebugEngine2::GetEngineID | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugEngine2::GetEngineID
+helpviewer_keywords: IDebugEngine2::GetEngineID
 ms.assetid: 0d5674c8-a9b9-4b72-8211-d2d68695775a
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 008c3cb2f2c4f8e12eedbae347515099524da2c0
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugEngine2::GetEngineID
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Ruft die GUID des Debugmoduls ab \(DE\).  
+# <a name="idebugengine2getengineid"></a>IDebugEngine2::GetEngineID
+Ruft die GUID des Debugging-Modul (DE) ab.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT GetEngineID(   
-   GUID* pguidEngine  
+```cpp  
+HRESULT GetEngineID(   
+   GUID* pguidEngine  
 );  
 ```  
   
-```c#  
-int GetEngineID(   
-   out Guid pguidEngine  
+```csharp  
+int GetEngineID(   
+   out Guid pguidEngine  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `pguidEngine`  
- \[out\]  Gibt die GUID DEs zurück.  
+ [out] Gibt die GUID des DE zurück.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Hinweise  
- Einige Beispiele für typische GUIDs sind `guidScriptEng`, `guidNativeEng`oder `guidSQLEng`.  Neue von Modulen erstellen ihr eigenes GUID für die Identifizierung.  
+## <a name="remarks"></a>Hinweise  
+ Einige Beispiele für typische GUIDs sind `guidScriptEng`, `guidNativeEng`, oder `guidSQLEng`. Neue Debugmodule erstellen ihre eigenen GUID für die Identifikation.  
   
-## Beispiel  
- Im folgenden Beispiel wird veranschaulicht, wie diese Methode für ein einfaches `CEngine`\-Objekt implementiert, das die [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)\-Schnittstelle implementiert.  
+## <a name="example"></a>Beispiel  
+ Im folgende Beispiel wird gezeigt, wie diese Methode für eine einfache implementiert `CEngine` Objekt, implementiert die [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) Schnittstelle.  
   
-```cpp#  
+```cpp  
 HRESULT CEngine::GetEngineId(GUID *pguidEngine){    
    if (pguidEngine) {    
       // Set pguidEngine to guidBatEng, as defined in the Batdbg.idl file.    
@@ -64,5 +64,5 @@ HRESULT CEngine::GetEngineId(GUID *pguidEngine){
 }    
 ```  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)

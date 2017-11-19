@@ -1,54 +1,55 @@
 ---
-title: "Codemetrikwerte | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Codemetrik"
-  - "Codeanalyse"
-  - "Messen der Codequalität"
+title: Code Metrikwerte | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- code metrics
+- code analysis
+- measure code quality
 ms.assetid: bc38831e-2083-4ea4-8527-ee41499a342f
-caps.latest.revision: 20
-author: "erickson-doug"
-ms.author: "douge"
-manager: "douge"
-caps.handback.revision: 20
+caps.latest.revision: "20"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 234ec06d47afee3cbde7c2333742fe43ab599219
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Codemetrikwerte
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Bei der Codemetrik handelt es sich um eine Reihe von Softwaremaßstäben, die Entwicklern einen besseren Einblick in den von ihnen entwickelten Code bieten.  Die Codemetrikergebnisse vermitteln Entwicklern ein Verständnis dafür, welche Typen und\/oder Methoden überarbeitet oder gründlicher getestet werden sollten.  Entwicklerteams können potenzielle Risiken erkennen, den aktuellen Zustand eines Projekts feststellen und den Fortschritt bei der Softwareentwicklung verfolgen.  
+# <a name="code-metrics-values"></a>Codemetrikwerte
+Bei der Codemetrik handelt es sich um eine Reihe von Softwaremaßstäben, die Entwicklern einen besseren Einblick in den von ihnen entwickelten Code bieten. Durch Codemetrik nutzen, können Entwickler verstehen, welche Typen und/oder Methoden überarbeitet oder mehr gründlich getestet werden sollen. Entwicklungsteams können potenzielle Risiken zu identifizieren, den aktuellen Status eines Projekts verstehen und Nachverfolgen des Status bei der Softwareentwicklung.  
   
-## Softwaremaßstäben  
- Die folgende Liste enthält die von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] berechneten Codemetrikergebnisse:  
+## <a name="software-measurements"></a>Software-Maßangaben  
+ Die folgende Liste zeigt die Codemetrikergebnisse an, dass [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] berechnet:  
   
--   **Wartbarkeitsindex** – Berechnet einen relativen Indexwert zwischen 0 und 100, der angibt, wie einfach der Code zu verwalten ist.  Ein hoher Wert steht für bessere Verwaltbarkeit.  Mit farbcodierten Bewertungen können problematische Stellen im Code schnell ermittelt werden.  Eine grüne Bewertung liegt zwischen 20 und 100 und gibt an, dass der Code über ein gute Wartbarkeit verfügt.  Eine gelbe Bewertung liegt zwischen 10 und 19 und gibt an, dass der Code über eine mäßige Wartbarkeit verfügt.  Eine rote Bewertung liegt zwischen 0 und 9 und gibt eine niedrige Wartbarkeit an.  
+-   **Wartbarkeitsindex** -berechnet einen Indexwert zwischen 0 und 100, der relativ einfach zu pflegen des Codes darstellt. Ein hoher Wert bedeutet eine bessere Verwaltbarkeit. Farblich codiert Bewertungen können verwendet werden, um Problempunkte im Code schnell zu identifizieren. Eine grüne Bewertung liegt zwischen 20 und 100 und gibt an, dass der Code gute Verwaltbarkeit aufweist. Eine gelbe Bewertung liegt zwischen 10 und 19 und gibt an, dass der Code leicht verwaltet werden. Eine rote Bewertung wird eine Bewertung zwischen 0 und 9 und niedrig verwaltbarkeit angibt.  
   
--   **Zyklomatische Komplexität** – Misst die strukturelle Komplexität des Codes.  Sie wird durch Berechnung der Anzahl unterschiedlicher Codepfade im Programmfluss erstellt.  Für ein Programm mit komplexer Ablaufsteuerung sind mehr Komponententests erforderlich, wenn eine gute Codeabdeckung erzielt werden soll, zudem verschlechtert sich die Verwaltbarkeit.  
+-   **Zyklomatische Komplexität** -misst die strukturelle Komplexität des Codes. Es wird durch die Berechnung der Anzahl der unterschiedlichen Codepfaden in den Fluss des Programms erstellt. Ein Programm, das komplexe ablaufsteuerung benötigen mehr Tests guten codeabdeckung zu erreichen, und es werden weniger verwaltbar.  
   
     > [!NOTE]
-    >  In einigen Fällen unterscheidet sich die Berechnung der zyklomatischen Komplexität einer Methode in [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] von der Berechnung in früheren Versionen.  Weitere Informationen finden Sie unter [Problembehandlung für Codemetrikfehler](../code-quality/troubleshooting-code-metrics-issues.md) im Abschnitt "Änderungen in den Visual Studio 2010\-Berechnungen für die Codekomplexität".  
+    >  In einigen Fällen, die Berechnung, die zyklomatische Komplexität für eine Methode in [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] unterscheidet sich von früheren Versionen. Weitere Informationen finden Sie unter "Änderungen in Visual Studio 2010 Komplexität Berechnungen Codeabschnitt" der [Problembehandlung für Codemetrikfehler](../code-quality/troubleshooting-code-metrics-issues.md).  
   
--   **Vererbungstiefe** – Gibt die Anzahl der Klassendefinitionen an, die sich bis zum Stamm der Klassenhierarchie erstrecken.  Je tiefer die Hierarchie, umso schwieriger ist u. U. zu erkennen, wo bestimmte Methoden und Felder definiert oder\/und neu definiert werden.  
+-   **Vererbungstiefe** -gibt die Anzahl der Klassendefinitionen, die auf den Stamm der Hierarchie von Klassen erweitern. Je tiefer sich die Hierarchie der schwieriger zu verstehen, in denen bestimmte Methoden und Felder definiert sind möglicherweise oder / und neu definiert.  
   
--   **Klassenkopplung** – Misst die Kopplung an eindeutige Klassen durch Parameter, lokale Variablen, Rückgabetypen, Methodenaufrufe, generische oder Vorlageninstanziierungen, Basisklassen, Schnittstellenimplementierungen, für externe Typen definierte Felder sowie Attributdekorationen.  Gute Softwareentwürfe zeichnen sich durch Typen und Methoden mit hoher Kohäsion und loser Kopplung aus.  Eine enge Kopplung deutet auf einen Entwurf hin, der aufgrund zahlreicher gegenseitiger Abhängigkeiten zwischen anderen Typen nur schwer wiederzuverwenden und zu verwalten ist.  
+-   **-Klasse Kopplung** -misst die Kopplung eindeutige Klassen über Parameter, lokale Variablen, Rückgabetypen, Methodenaufrufe, generische oder Vorlagenklasse Instanziierungen, Basisklassen, schnittstellenimplementierungen, Felder für externe Typen definiert und Ergänzung des Attributs. Gute Software Entwurfsprinzipien verlangen, dass die Typen und Methoden hohen Kohäsion haben und arbeitet mit einer geringen Kopplung sollten. Hohe Kopplung gibt an, einen Entwurf, die schwer zu wiederverwenden und aufgrund seiner viele Abhängigkeiten von anderen Typen verwalten.  
   
--   **Codezeilen** – Gibt die ungefähre Anzahl von Zeilen im Code an.  Da die Anzahl auf dem IL\-Code basiert, entspricht der Wert nicht der exakten Anzahl von Zeilen in der Quellcodedatei.  Ein sehr hoher Wert kann darauf hinweisen, dass ein Typ oder eine Methode zu viele Aufgaben ausführt und aufgeteilt werden sollte.  Er könnte auch darauf hindeuten, dass der Typ oder die Methode schwierig zu verwalten ist.  
+-   **Codezeilen** -gibt die ungefähre Anzahl der Zeilen im Code. Die Anzahl die basiert auf den IL-Code und ist daher nicht die genaue Anzahl der Zeilen in der Quellcodedatei. Eine sehr hohe Anzahl wird angegeben, dass ein Typ oder eine Methode versucht, zu viel Arbeit zu erledigen und aufgeteilt werden sollte. Es kann auch angeben, dass der Typ oder eine Methode möglicherweise schwer zu verwalten.  
   
-## Anonyme Methoden  
- Eine *anonyme Methode* ist einfach eine Methode ohne Namen.  Anonyme Methoden werden am häufigsten verwendet, um einen Codeblock als Delegatparameter zu übergeben.  Metrikergebnisse für eine anonyme Methode, die in einem Member deklariert ist, z. B. als Methode oder Accessor, sind mit dem Member verknüpft, der die Methode deklariert.  Mit dem Member, der die Methode aufruft, sind sie nicht verknüpft.  
+## <a name="anonymous-methods"></a>Anonyme Methoden  
+ Ein *anonyme Methode* ist nur eine Methode, die keinen Namen hat. Anonyme Methoden werden am häufigsten verwendet, um einen Codeblock als Delegatparameter zu übergeben. Metrikergebnisse für eine anonyme Methode, die in einem Member, z. B. eine Methode oder einen Accessor, deklariert ist, sind das Element, das die Methode deklariert zugeordnet. Sie sind nicht das Element, das die Methodenaufrufe zugeordnet.  
   
- Weitere Informationen dazu, wie anonyme Methoden in der Codemetrik behandelt werden, finden Sie unter [Anonyme Methoden und Codeanalyse](../code-quality/anonymous-methods-and-code-analysis.md).  
+ Weitere Informationen dazu, wie anonyme Methoden in der Codemetrik behandelt, finden Sie unter [anonyme Methoden und Codeanalyse](../code-quality/anonymous-methods-and-code-analysis.md).  
   
-## Generierter Code  
- Einige Softwaretools und \-compiler generieren Code, der einem Projekt hinzugefügt wird und für den Projektentwickler entweder nicht sichtbar ist oder von ihm nicht geändert werden sollte.  In den meisten Fällen wird generierter Code bei der Berechnung der Metrikwerte von der Codemetrik ignoriert.  Auf diese Weise spiegeln die Metrikwerte nur den Code wider, der vom Entwickler eingesehen und geändert werden kann.  
+## <a name="generated-code"></a>Generierter Code  
+ Einige Softwaretools und der Compiler generiert Code, der einem Projekt hinzugefügt wird und, die der Projektentwickler erkennt nicht oder nicht ändern sollen. In den meisten Fällen ignoriert Codemetrik generierten Code, wenn die Metrikwerte berechnet. Dadurch werden die Metrikwerte widerspiegeln, was vom Entwickler angezeigt und ändern kann.  
   
- Für Windows Forms generierter Code wird nicht ignoriert, da dieser Code vom Entwickler angezeigt und geändert werden kann.  
+ Für Windows Forms generierten Code wird nicht ignoriert, da es sich um Code handelt, die der Entwickler anzeigen und ändern kann.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Messen von Komplexität und Verwaltbarkeit verwalteten Codes](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)

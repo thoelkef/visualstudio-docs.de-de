@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -13,36 +12,23 @@ helpviewer_keywords:
 - Visual Studio integration SDK roadmap
 - integration roadmap, Visual Studio SDK
 ms.assetid: 9118eaa4-0453-4dc5-9e16-c7062d254869
-caps.latest.revision: 30
+caps.latest.revision: "30"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
-ms.openlocfilehash: 565aaeb189ad129d5e4e26d9c73c080de2e77676
-ms.lasthandoff: 04/05/2017
-
+ms.openlocfilehash: ebba0ea11781a4b5a3d01aabb718b0ad778daab9
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="inside-the-visual-studio-sdk"></a>In der Visual Studio SDK
+# <a name="inside-the-visual-studio-sdk"></a>Im Visual Studio SDK
 Dieser Abschnitt enthält ausführliche Informationen zu Visual Studio-Erweiterungen, einschließlich Visual Studio-Architektur, Komponenten, Dienste, Schemas, Dienstprogramme und Like.  
   
 ## <a name="extensibility-architecture"></a>Erweiterbarkeitsarchitektur  
- Die folgende Abbildung zeigt die Architektur der Visual Studio-Erweiterbarkeit. VSPackages bieten die Funktionalität der Anwendung, die in der IDE als Dienste gemeinsam verwendet wird. Die standard-IDE verfügt zudem über eine Breite Palette von Diensten, z. B. <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>, die Zugriff auf den Funktionsumfang der IDE Windowing bereitstellen.</xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>  
+ Die folgende Abbildung zeigt die Architektur der Visual Studio-Erweiterbarkeit. VSPackages bieten die Funktionalität der Anwendung, die in der IDE als Dienste gemeinsam verwendet wird. Die standard-IDE verfügt zudem über eine Breite Palette von Diensten, z. B. <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>, die Zugriff auf den Funktionsumfang der IDE Windowing bereitstellen.  
   
- ![Grafik zur Umgebungsarchitektur](~/extensibility/internals/media/environment.gif "environment")  
+ ![Grafik zur Umgebungsarchitektur](../../extensibility/internals/media/environment.gif "Umgebung")  
 Generalisierte Überblick über die Visual Studio-Architektur  
   
 ## <a name="vspackages"></a>VSPackages  
@@ -51,7 +37,7 @@ Generalisierte Überblick über die Visual Studio-Architektur
 ## <a name="visual-studio-shell"></a>Visual Studio Shell  
  Die Visual Studio-Shell stellt grundlegende Funktionalität bereit und Cross-Kommunikation zwischen der Komponente VSPackages und MEF-Erweiterungen unterstützen. Weitere Informationen finden Sie unter [Visual Studio-Shell](../../extensibility/internals/visual-studio-shell.md).  
   
-## <a name="user-experience-guidelines"></a>User Experience Guidelines  
+## <a name="user-experience-guidelines"></a>Richtlinien zur Benutzerfreundlichkeit  
  Wenn Sie planen, Entwerfen neue Features für Visual Studio, Sie sollten sehen Sie sich diese Richtlinien für Design und Nutzbarkeit Tipps: [Visual Studio-Umgebung Leitfäden](../../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md).  
   
 ## <a name="commands"></a>Befehle  
@@ -59,7 +45,7 @@ Generalisierte Überblick über die Visual Studio-Architektur
   
  Wenn Sie Visual Studio erweitern, können Sie Befehle erstellen und registrieren sie mit der Visual Studio-Shell. Sie können angeben, wie diese Befehle in der IDE, z. B. in einem Menü oder die Symbolleiste angezeigt werden. Ein benutzerdefinierter Befehl erscheint in der Regel auf die **Tools** Menü und einen Befehl für die Anzeige eines Toolfensters angezeigt würde, auf die **Weitere Fenster** Untermenü die **Ansicht** im Menü.  
   
- Wenn Sie einen Befehl erstellen, müssen Sie auch einen Ereignishandler für ihn erstellen. Der Ereignishandler bestimmt, wenn der Befehl angezeigt oder aktiviert, können Sie den zugehörigen Text zu ändern und stellt sicher, dass der Befehl entsprechend reagiert, wenn es aktiviert wird. In den meisten Fällen verarbeitet die IDE Befehle mithilfe der <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>Schnittstelle.</xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> Befehle in Visual Studio werden verarbeitet, beginnend mit dem innersten Befehlskontext, basierend auf der lokalen Auswahl, und es wird bis zum äußersten Kontext, basierend auf der globalen Auswahl. Befehle, die dem Hauptmenü hinzugefügt werden, sind sofort für die Skripterstellung verfügbar.  
+ Wenn Sie einen Befehl erstellen, müssen Sie auch einen Ereignishandler für ihn erstellen. Der Ereignishandler bestimmt, wenn der Befehl angezeigt oder aktiviert, können Sie den zugehörigen Text zu ändern und stellt sicher, dass der Befehl entsprechend reagiert, wenn es aktiviert wird. In den meisten Fällen verarbeitet die IDE Befehle mithilfe der <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> Schnittstelle. Befehle in Visual Studio werden verarbeitet, beginnend mit dem innersten Befehlskontext, basierend auf der lokalen Auswahl, und es wird bis zum äußersten Kontext, basierend auf der globalen Auswahl. Befehle, die dem Hauptmenü hinzugefügt werden, sind sofort für die Skripterstellung verfügbar.  
   
  Weitere Informationen finden Sie unter [Befehle, Menüs und Symbolleisten](../../extensibility/internals/commands-menus-and-toolbars.md).  
   
@@ -75,11 +61,11 @@ Generalisierte Überblick über die Visual Studio-Architektur
   
  Betrachten Sie das folgende Bild von Visual Studio, die mehrere Toolfenster enthält.  
   
- ![Screenshot](~/extensibility/internals/media/t1gui.png "T1gui")  
+ ![Screenshot](../../extensibility/internals/media/t1gui.png "T1gui")  
   
  Einige Toolfenster sind zusammen auf einem einzelnen Bereich angedockt, die zeigt der Projektmappen-Explorer-Toolfenster an und blendet die anderen Toolfenster, jedoch werden sie durch Klicken auf die Registerkarten verfügbar gemacht. Die Abbildung zeigt zwei andere Toolfenster, die **Fehlerliste** und **Ausgabe** Fenster zusammen auf einem einzelnen Bereich angedockt.  
   
- Außerdem wird dargestellt Bereich Hauptspeicherorte für Dokumente, in der mehrere-Editor-Fenster angezeigt. Obwohl Toolfenster in der Regel nur eine Instanz haben (Sie können z. B. Öffnen nur eine **Projektmappen-Explorer**),-Editor-Fenster können mehrere Instanzen, von denen jeder wird verwendet, um ein separates Dokument bearbeiten, aber alle im gleichen Bereich angedockt sind. Das Bild zeigt ein Dokumentfenster, dessen zwei Editorfenster, ein Formular-Designer-Fenster und ein Browserfenster, in der die Startseite angezeigt. Alle Fenster im Dokumentfenster sind verfügbar, indem Sie auf die Registerkarten, aber im Editor-Fenster, das EditorPane.cs-Datei enthält ist, sichtbar und aktiv.  
+ Außerdem wird dargestellt Bereich Hauptspeicherorte für Dokumente, in der mehrere-Editor-Fenster angezeigt. Obwohl Toolfenster in der Regel nur eine Instanz haben (Sie können z. B. Öffnen nur eine **Projektmappen-Explorer**),-Editor-Fenster können mehrere Instanzen, von denen jeder wird verwendet, um ein separates Dokument bearbeiten, aber alle angedockt werden der gleiche Bereich. Das Bild zeigt ein Dokumentfenster, dessen zwei Editorfenster, ein Formular-Designer-Fenster und ein Browserfenster, in der die Startseite angezeigt. Alle Fenster im Dokumentfenster sind verfügbar, indem Sie auf die Registerkarten, aber im Editor-Fenster, das EditorPane.cs-Datei enthält ist, sichtbar und aktiv.  
   
  Wenn Sie Visual Studio erweitern, können Sie Tools, die Interaktion von Windows, mit die Visual Studio-Benutzer können mit der Erweiterung erstellen. Sie können auch eigene Editoren erstellen, mit die Visual Studio-Benutzer Dokumente bearbeiten können. Da Ihr Toolfenster und Editoren in Visual Studio integriert werden, müssen Sie keinen Programmieren zu andocken oder ordnungsgemäß auf einer Registerkarte angezeigt werden. Wenn sie in Visual Studio ordnungsgemäß registriert sind, müssen sie die Tabellen enthalten typische Features von Toolfenstern und Dokumentfenstern in Visual Studio automatisch. Weitere Informationen finden Sie unter [Extending und Anpassen von Toolfenstern](../../extensibility/extending-and-customizing-tool-windows.md).  
   
@@ -118,7 +104,7 @@ Generalisierte Überblick über die Visual Studio-Architektur
  Weitere Informationen finden Sie unter [Hinzufügen von Projekt- und Projektelementvorlagen](../../extensibility/internals/adding-project-and-project-item-templates.md).  
   
 ## <a name="properties-and-options"></a>Eigenschaften und Optionen  
- Die **Eigenschaften** Fenster zeigt die Eigenschaften der einzelnen oder mehreren gewählten Elementen: [Erweitern von Eigenschaften](../../extensibility/internals/extending-properties.md) Optionsseiten enthalten Gruppen von Optionen, die eine bestimmte Komponente, z. B. einer Programmiersprache Ihrer Wahl oder ein VSPackage betreffen: [Optionen und Seiten für Optionen](../../extensibility/internals/options-and-options-pages.md). Einstellungen sind im Allgemeinen auf die Benutzeroberfläche bezogenen Funktionen, die nicht importiert und exportiert werden können: [Unterstützung für Benutzereinstellungen](../../extensibility/internals/support-for-user-settings.md).  
+ Die **Eigenschaften** Fenster zeigt die Eigenschaften der einzelnen oder mehreren gewählten Elementen: [Erweitern von Eigenschaften](../../extensibility/internals/extending-properties.md) Optionsseiten enthalten Gruppen von Optionen, die einer bestimmten Komponente, wie z. B. betreffen ein Sprache oder ein VSPackage Programmieren: [Optionen und Seiten für Optionen](../../extensibility/internals/options-and-options-pages.md). Einstellungen sind im Allgemeinen auf die Benutzeroberfläche bezogenen Funktionen, die nicht importiert und exportiert werden können: [Unterstützung für Benutzereinstellungen](../../extensibility/internals/support-for-user-settings.md).  
   
 ## <a name="visual-studio-services"></a>Visual Studio-Dienste  
  Einen Dienst bereitstellt, einen bestimmten Satz von Schnittstellen für die Komponenten nutzen. Visual Studio bietet eine Reihe von Diensten, die von Komponenten, einschließlich Erweiterungen verwendet werden kann. Visual Studio-Dienste aktivieren beispielsweise Toolfenster angezeigt werden, oder Aktivieren des Zugriffs auf Hilfe, Statusleiste oder Benutzeroberflächenereignisse dynamisch, ausgeblendet. Der Visual Studio-Editor stellt auch Dienste, die durch die editorerweiterungen importiert werden können. Weitere Informationen finden Sie unter [verwenden und Bereitstellen von Diensten](../../extensibility/using-and-providing-services.md).  

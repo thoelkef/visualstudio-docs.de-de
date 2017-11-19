@@ -1,38 +1,41 @@
 ---
-title: "length-Eigenschaft (UInt16Array) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
+title: Length-Eigenschaft (UInt16Array) | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
 ms.assetid: dca1cbf3-3c40-4d33-b83d-4195c66ceb05
-caps.latest.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 766e4d3b761d1c5699249d16b01e11da552d42da
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# length-Eigenschaft (UInt16Array)
+# <a name="length-property-uint16array"></a>length-Eigenschaft (UInt16Array)
 Die Länge des Arrays.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```javascript  
+```JavaScript  
 var arrayLength = uint16Array.length;  
 ```  
   
-## Beispiel  
+## <a name="example"></a>Beispiel  
  Im folgenden Beispiel wird veranschaulicht, wie die Länge des Arrays abgerufen wird.  
   
-```javascript  
+```JavaScript  
 var req = new XMLHttpRequest();  
     req.open('GET', "http://www.example.com");  
     req.responseType = "arraybuffer";  
@@ -49,5 +52,5 @@ var req = new XMLHttpRequest();
   
 ```  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  [!INCLUDE[jsv10](../../javascript/reference/includes/jsv10-md.md)]

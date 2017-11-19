@@ -1,43 +1,42 @@
 ---
-title: "Wo sind die Win32-Fehlercodes zu finden? | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vc.errors"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "C++"
-helpviewer_keywords: 
-  - "Fehlercodes, Win32"
-  - "Win32, Fehlercodes"
+title: Wo sind die Win32-Fehlercodes zu finden? | Microsoft-Dokumentation
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vc.errors
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+helpviewer_keywords:
+- error codes, Win32
+- Win32, error codes
 ms.assetid: 8fb4ff42-b8eb-4152-b49e-b802d194b05e
-caps.latest.revision: 16
-caps.handback.revision: 16
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "16"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 508b741dcac0662d41e58b37ecaf177a2245010f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Wo sind die Win32-Fehlercodes zu finden?
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+# <a name="where-can-i-look-up-win32-error-codes"></a>Wo sind die Win32-Fehlercodes zu finden?
 
-**WINERROR.H** im Verzeichnis **INCLUDE** der Standardsysteminstallation enthält die Definitionen der Fehlercodes für die Win32\-API\-Funktionen.  
+          WINERROR.H im Verzeichnis INCLUDE der Standardsysteminstallation enthält die Definitionen der Fehlercodes für die Win32-API-Funktionen.  
   
- Sie können den Fehlercode nachsehen, indem Sie den Code im **Überwachungsfenster** oder im Dialogfeld **Schnellüberwachung** eingeben.  Beispiel:  
+ Sie können einen Fehlercode nachschlagen, dazu den Code in der **Überwachen** Fenster oder den **Schnellüberwachung** (Dialogfeld). Zum Beispiel:  
   
 ```  
 0x80000004,hr  
 ```  
   
-## Siehe auch  
- [FAQs zum Debuggen von systemeigenem Code](../debugger/debugging-native-code-faqs.md)   
- [Debuggen von systemeigenem Code](../debugger/debugging-native-code.md)
+## <a name="see-also"></a>Siehe auch  
+ [Debuggen von systemeigenem Code häufig gestellte Fragen](../debugger/debugging-native-code-faqs.md)   
+ [Debuggen von nativem Code](../debugger/debugging-native-code.md)

@@ -1,53 +1,52 @@
 ---
-title: "&lt;assembly&gt; Element (ClickOnce Deployment) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-deployment"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "urn:schemas-microsoft-com:asm.v2#assembly"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "<assembly> element [ClickOnce deployment manifest]"
+title: '&lt;Assembly&gt; Element (ClickOnce-Bereitstellung) | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-deployment
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: urn:schemas-microsoft-com:asm.v2#assembly
+dev_langs:
+- VB
+- CSharp
+- C++
+helpviewer_keywords: <assembly> element [ClickOnce deployment manifest]
 ms.assetid: b8e3362a-f821-4696-b98d-571d4bbfe431
-caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+ms.openlocfilehash: 90def1bc4d824c6fdfd597ec8beb4b1f18f9e008
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# &lt;assembly&gt; Element (ClickOnce Deployment)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="ltassemblygt-element-clickonce-deployment"></a>&lt;Assembly&gt; Element (ClickOnce-Bereitstellung)
 Das Element der obersten Ebene für das Bereitstellungsmanifest.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
   
-      <assembly    
+      <assembly    
    manifestVersion  
 />  
 ```  
   
-## Elemente und Attribute  
- Das `assembly`\-Element stellt das Stammelement dar und ist erforderlich.  Das erste darin enthaltene Element muss ein `assemblyIdentity`\-Element sein.  Die Manifestelemente müssen in den folgenden Namespaces vorhanden sein: `urn:schemas-microsoft-com:asm.v1`, `urn:schemas-microsoft-com:asm.v2` und `http://www.w3.org/2000/09/xmldsig#`.  Untergeordnete Elemente der Assembly müssen ebenfalls in diesen Namespaces vorhanden sein, entweder durch Vererbung oder durch Tagging.  
+## <a name="elements-and-attributes"></a>Elemente und Attribute  
+ Die `assembly` Element ist das Stammelement und ist erforderlich. Das erste darin enthaltene Element muss ein `assemblyIdentity` Element. Die Elemente von Manifesten muss in den folgenden Namespaces: `urn:schemas-microsoft-com:asm.v1`, `urn:schemas-microsoft-com:asm.v2`, und `http://www.w3.org/2000/09/xmldsig#`. Untergeordnete Elemente der Assembly muss auch in diesen Namespaces, durch Vererbung oder durch tagging.  
   
- Das `assembly`\-Element verfügt über das folgende Attribut.  
+ Die `assembly` Element hat das folgende Attribut.  
   
 |Attribut|Beschreibung|  
-|--------------|------------------|  
-|`manifestVersion`|Erforderlich.  Das Attribut muss auf `1.0` festgelegt werden.|  
+|---------------|-----------------|  
+|`manifestVersion`|Erforderlich. Dieses Attribut muss festgelegt werden, um `1.0`.|  
   
-## Beispiel  
- Im folgenden Codebeispiel wird ein `assembly`\-Element in einem Bereitstellungsmanifest für eine mit [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] bereitgestellte Anwendung veranschaulicht.  Dieses Codebeispiel ist Teil eines umfangreichen Beispiels, das für das Thema [ClickOnce\-Bereitstellungsmanifest](../deployment/clickonce-deployment-manifest.md) bereitgestellt wird.  
+## <a name="example"></a>Beispiel  
+ Das folgende Codebeispiel veranschaulicht eine `assembly` Element in ein Bereitstellungsmanifest für eine Anwendung bereitgestellt, mit [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]. Dieses Codebeispiel ist Teil eines umfangreicheren Beispiels für die [ClickOnce-Bereitstellungsmanifest](../deployment/clickonce-deployment-manifest.md) Thema.  
   
 ```  
 <asmv1:assembly   
@@ -64,6 +63,6 @@ Das Element der obersten Ebene für das Bereitstellungsmanifest.
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">  
 ```  
   
-## Siehe auch  
- [ClickOnce Deployment Manifest](../deployment/clickonce-deployment-manifest.md)   
- [\<assembly\> Element](../deployment/assembly-element-clickonce-application.md)
+## <a name="see-also"></a>Siehe auch  
+ [ClickOnce-Bereitstellungsmanifest](../deployment/clickonce-deployment-manifest.md)   
+ [\<Assembly >-Element](../deployment/assembly-element-clickonce-application.md)

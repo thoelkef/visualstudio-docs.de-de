@@ -1,52 +1,51 @@
 ---
-title: "IDiaAddressMap::put_imageAlign | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaAddressMap::put_imageAlign-Methode"
+title: 'Idiaaddressmap:: Put_imagealign | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaAddressMap::put_imageAlign method
 ms.assetid: f9ce875d-c263-43e5-a534-f34c37f9866f
-caps.latest.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 38856520641ff2ea191e3f712a1f355e841e1aff
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaAddressMap::put_imageAlign
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Legt die Ausrichtung des Bilds fest.  
+# <a name="idiaaddressmapputimagealign"></a>IDiaAddressMap::put_imageAlign
+Legt die Ausrichtung des Bilds an.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT put_imageAlign (   
-   DWORD NewVal  
+```C++  
+HRESULT put_imageAlign (   
+   DWORD NewVal  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  NewVal  
- \[in\]  Der neue Wert für das Bild für die ausführbare Datei.  
+ [in] Das neue Image Ausrichtungswert für die ausführbare Datei.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Hinweise  
- Bilder \(geladene ausführbare Dateien\) sind mit den angegebenen Arbeitsspeicher begrenzen ausgerichtet.  Diese Ausrichtung kann beeinträchtigt sein von der aktuellen Systemarchitektur und zu kompilieren und die Verknüpfungszeit. Optionen  Bild Ausrichtung ist immer ein Byte begrenzen.  Die folgenden Bild für Werte sind gültig: 1, 2, 4, 8, 16, 32 und 64 Byte begrenzen.  
+## <a name="remarks"></a>Hinweise  
+ Bilder (geladenen ausführbare Dateien) werden angegebene Speicher-Grenzen ausgerichtet. Diese Ausrichtung kann durch die aktuelle Systemarchitektur und durch Kompilieren und verknüpfen Zeitoptionen beeinflusst werden. Ausrichtung des Hintergrundbilds ist immer auf Byte-Grenzen. Das folgende Bild Ausrichtungswerte sind gültig: 1, 2, 4, 8, 16, 32 und 64-Byte-Grenzen.  
   
- Die aktuelle Bild kann mit Ausrichtung von einem Aufruf der [IDiaAddressMap::get\_imageAlign](../../debugger/debug-interface-access/idiaaddressmap-get-imagealign.md)\-Methode abgerufen werden.  
+ Die Ausrichtung für das aktuelle abgerufen werden kann, durch einen Aufruf der [idiaaddressmap:: Get_imagealign](../../debugger/debug-interface-access/idiaaddressmap-get-imagealign.md) Methode.  
   
 > [!NOTE]
->  Das Bild wird bereits geladen, bis diese Methode aufgerufen werden kann.  Die `put_imageAlign`\-Methode wird in der Regel verwendet, wenn das Bild verschoben oder geändert wurde und eine neue Ausrichtung erforderlich ist.  
+>  Das Bild geladen wird bereits von der Zeit, die diese Methode aufgerufen werden kann. Die `put_imageAlign` Methode wird normalerweise verwendet, wenn das Image wurde verschoben oder geändert und eine neue Ausrichtung erforderlich ist.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md)   
- [IDiaAddressMap::get\_imageAlign](../../debugger/debug-interface-access/idiaaddressmap-get-imagealign.md)
+ [IDiaAddressMap::get_imageAlign](../../debugger/debug-interface-access/idiaaddressmap-get-imagealign.md)

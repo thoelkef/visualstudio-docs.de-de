@@ -1,43 +1,42 @@
 ---
-title: "IDiaEnumSectionContribs::Clone | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaEnumSectionContribs::Clone-Methode"
+title: 'Idiaenumsectioncontribs:: Clone | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaEnumSectionContribs::Clone method
 ms.assetid: 81d3f3a7-3684-4e5c-b028-29b268684a2c
-caps.latest.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 2f12f3a2c67a91fb865bf5a96a9c851e1fd877c9
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaEnumSectionContribs::Clone
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Erstellt einen Enumerator, der den gleichen Enumerationszustand wie der aktuelle Enumerator enthält.  
+# <a name="idiaenumsectioncontribsclone"></a>IDiaEnumSectionContribs::Clone
+Erstellt einen Enumerator, der den gleichen Enumeration Status als der aktuelle Enumerator enthält.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT Clone(   
-   IDiaEnumSectionContrib** ppenum  
+```C++  
+HRESULT Clone(   
+   IDiaEnumSectionContrib** ppenum  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  ppenum  
- \[out\]  Gibt ein [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md)\-Objekt zurück, das ein Duplikat des Enumerators enthält.  Die Abschnitt stellt nur der Enumerator werden nicht dupliziert.  
+ [out] Gibt eine [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md) Objekt, das ein Duplikat des Enumerators enthält. Der Abschnitt nicht Beiträge werden dupliziert, nur den Enumerator.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md)

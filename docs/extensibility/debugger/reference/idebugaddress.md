@@ -1,57 +1,57 @@
 ---
-title: "IDebugAddress | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugAddress"
-helpviewer_keywords: 
-  - "IDebugAddress-Schnittstelle"
+title: IDebugAddress | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugAddress
+helpviewer_keywords: IDebugAddress interface
 ms.assetid: bc709ff7-4966-4f36-9af2-690efe2cea1d
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 9f009002e9c454b1e10cac13c297e067da9c44ff
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugAddress
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Diese Schnittstelle stellt die Adresse eines Elements dar.  Es wird im Symbol für zurückgegeben.  
+# <a name="idebugaddress"></a>IDebugAddress
+Diese Schnittstelle stellt die Adresse eines Elements dar. Es wird von der Symbol-Handler zurückgegeben.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 IDebugAddress : IUnknown  
 ```  
   
-## Hinweise für Implementierer  
- Ein Symbol für implementiert diese Schnittstelle, um eine Adresse eines Objekts darstellt.  
+## <a name="notes-for-implementers"></a>Hinweise für Implementierer  
+ Ein Symbol-Anbieter implementiert diese Schnittstelle, um eine Adresse eines Objekts darstellen.  
   
-## Hinweise für Aufrufer  
- Viele Methoden in zahlreichen Schnittstellen geben diese Schnittstelle zurück.  
+## <a name="notes-for-callers"></a>Hinweise für Aufrufer  
+ Viele Methoden auf viele Schnittstellen geben diese Schnittstelle zurück.  
   
-## Methoden in die Vtable\-Reihenfolge  
- Diese Schnittstelle implementiert die folgende Weise:  
+## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
+ Diese Schnittstelle implementiert, die folgende Methode:  
   
 |Methode|Beschreibung|  
-|-------------|------------------|  
-|[GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md)|Ruft eine [DEBUG\_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) Struktur ab, die ein Objekt und dessen Position beschreibt.|  
+|------------|-----------------|  
+|[GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md)|Ruft eine [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) Struktur, die beschreibt ein Objekt und dessen Speicherort.|  
   
-## Hinweise  
- Der Anbieter Symbol gibt diese Schnittstelle zurück, die ein Objekt und dessen Position innerhalb eines bestimmten Bereichs darstellt \(z. B. Funktion, Methode oder Klasse\).  Diese Schnittstelle wird von zurückgegeben und übergeben den verschiedenen Möglichkeiten des Symbols Anbieters und Ausdrucksauswerters.  Normalerweise ist der Anbieter Symbol als einzige Entität, die den Inhalt dieser Schnittstelle interpretiert werden muss.  
+## <a name="remarks"></a>Hinweise  
+ Die Symbol-Anbieter gibt diese Schnittstelle, um ein Objekt und dessen Speicherort innerhalb eines bestimmten Bereichs (z. B. Funktion, Methode oder Klasse) darstellen. Diese Schnittstelle wird von zurückgegeben und auf verschiedenen-Methoden der Symbol-Anbieter und der Ausdruck übergeben bei der ausdrucksauswertung. Die Symbol-Anbieter ist in der Regel wird die einzige Entität, die zum Interpretieren des Inhalts dieser Schnittstelle muss.  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  Header: sh.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Siehe auch  
- [Symbol\-Provider\-Schnittstellen](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)   
- [DEBUG\_ADDRESS](../../../extensibility/debugger/reference/debug-address.md)
+## <a name="see-also"></a>Siehe auch  
+ [Symbol-Anbieter-Schnittstellen](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)   
+ [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md)

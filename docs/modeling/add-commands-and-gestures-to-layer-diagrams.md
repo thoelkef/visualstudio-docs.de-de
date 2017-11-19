@@ -1,5 +1,5 @@
 ---
-title: "Hinzufügen von Befehlen und Gesten, Abhängigkeitsdiagramme | Microsoft-Dokumentation"
+title: "Hinzufügen von Befehlen und Bewegungen zu Abhängigkeit Diagrammen | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -10,41 +10,26 @@ helpviewer_keywords:
 - dependency diagrams, adding custom commands
 - dependency diagrams, adding custom gestures
 ms.assetid: ac9c417b-0b40-4a90-86f5-ee3cbdce030b
-caps.latest.revision: 38
+caps.latest.revision: "38"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Machine Translation
-ms.sourcegitcommit: fd26c504273cae739ccbeef5e406891def732985
-ms.openlocfilehash: 6f833612aaa1859c312a5343fe12a209780e3ee3
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 40bad32ef38fb99032690804d572f630bb60ac6d
+ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/07/2017
 ---
-# <a name="add-commands-and-gestures-to-dependency-diagrams"></a>Hinzufügen von Befehlen und Gesten, Abhängigkeitsdiagramme
-Sie können definieren Kontextmenübefehle und Gestenhandler in Abhängigkeitsdiagramme in Visual Studio. Sie können diese Erweiterungen in einer Visual Studio-Integrationserweiterung (VSIX) verpacken, die Sie an andere Visual Studio-Benutzer verteilen können.  
+# <a name="add-commands-and-gestures-to-dependency-diagrams"></a>Hinzufügen von Befehlen und Bewegungen zu Abhängigkeit Diagrammen
+Sie können definieren Kontextmenübefehle und Gestenhandler in Abhängigkeit von Diagrammen in Visual Studio. Sie können diese Erweiterungen in einer Visual Studio-Integrationserweiterung (VSIX) verpacken, die Sie an andere Visual Studio-Benutzer verteilen können.  
   
- Sie können bei Bedarf mehrere Befehls- und Gestenhandler im gleichen Visual Studio-Projekt definieren. Sie können auch mehrere Projekte dieser Art in einer VSIX kombinieren. Sie könnten z. B. eine einzelne VSIX definieren, die Ebenenbefehle und eine domänenspezifische Sprache enthält.  
+ Sie können bei Bedarf mehrere Befehls- und Gestenhandler im gleichen Visual Studio-Projekt definieren. Sie können auch mehrere Projekte dieser Art in einer VSIX kombinieren. Sie können z. B. eine einzelne VSIX definieren, die Ebenenbefehle, und eine domänenspezifische Sprache enthält.  
   
 > [!NOTE]
->  Sie können architekturvalidierung auch anpassen, in welche Benutzer der Quellcode mit Abhängigkeitsdiagramme verglichen wird. Sie sollten die Architekturvalidierung in einem separaten Visual Studio-Projekt definieren. Sie können sie der gleichen VSIX hinzufügen wie anderen Erweiterungen. Weitere Informationen finden Sie unter [Hinzufügen von benutzerdefinierten architekturüberprüfung zu Abhängigkeit Diagrammen](../modeling/add-custom-architecture-validation-to-layer-diagrams.md).  
+>  Sie können architekturvalidierung auch anpassen, in welcher Benutzer Quellcode Abhängigkeit Diagrammen verglichen wird. Sie sollten die Architekturvalidierung in einem separaten Visual Studio-Projekt definieren. Sie können sie der gleichen VSIX hinzufügen wie anderen Erweiterungen. Weitere Informationen finden Sie unter [Hinzufügen von benutzerdefinierten architekturüberprüfung zu Abhängigkeit Diagrammen](../modeling/add-custom-architecture-validation-to-layer-diagrams.md).  
   
 ## <a name="requirements"></a>Anforderungen  
- Finden Sie unter [Anforderungen](../modeling/extend-layer-diagrams.md#prereqs).  
+ Siehe [Anforderungen](../modeling/extend-layer-diagrams.md#prereqs).  
   
 ## <a name="defining-a-command-or-gesture-in-a-new-vsix"></a>Definieren eines Befehls oder einer Geste in einer neuen VSIX  
  Projektvorlagen stellen die schnellste Methode dar, eine Erweiterung zu erstellen. Dabei werden der Code und die VSIX im selben Projekt platziert.  
@@ -59,9 +44,9 @@ Sie können definieren Kontextmenübefehle und Gestenhandler in Abhängigkeitsdi
   
 3.  Drücken Sie **STRG+F5** oder **F5**, um die Erweiterung zu testen.  
   
-     Eine experimentelle Instanz von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] wird gestartet. Erstellen Sie in diesem Fall ein Abhängigkeitsdiagramm. Der Befehl oder die Gestenerweiterung sollte in diesem Diagramm funktionieren.  
+     Eine experimentelle Instanz von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] wird gestartet. Erstellen Sie in diesem Beispiel wird eine Abhängigkeit Diagramm ein. Der Befehl oder die Gestenerweiterung sollte in diesem Diagramm funktionieren.  
   
-4.  Schließen Sie die experimentelle Instanz, und ändern Sie den Beispielcode. Weitere Informationen finden Sie unter [navigieren und Update layer-Modellen im Programmcode](../modeling/navigate-and-update-layer-models-in-program-code.md).  
+4.  Schließen Sie die experimentelle Instanz, und ändern Sie den Beispielcode. Weitere Informationen finden Sie unter [navigieren und Update überlagern Sie die Modelle im Programmcode](../modeling/navigate-and-update-layer-models-in-program-code.md).  
   
 5.  Sie können dem gleichen Projekt mehrere Befehls- oder Gestenhandler hinzufügen. Weitere Informationen finden Sie in einem der folgenden Abschnitte:  
   
@@ -69,7 +54,7 @@ Sie können definieren Kontextmenübefehle und Gestenhandler in Abhängigkeitsdi
   
      [Definieren eines Gestenhandlers](#gesture)  
   
-6.  So installieren Sie die Erweiterung in der Hauptinstanz von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], oder auf einem anderen Computer die **VSIX** in der Datei **Bin\\\***. Kopieren Sie die Datei auf den Computer, auf dem Sie sie installieren möchten, und doppelklicken Sie dann darauf. Verwenden Sie zum Deinstallieren der Datei die Option **Erweiterungen und Updates** im Menü **Extras** .  
+6.  Um die Erweiterung in der Hauptinstanz von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]oder auf einem anderen Computer zu installieren, suchen Sie die Datei **.vsix** im Ordner **bin\\\***. Kopieren Sie die Datei auf den Computer, auf dem Sie sie installieren möchten, und doppelklicken Sie dann darauf. Verwenden Sie zum Deinstallieren der Datei die Option **Erweiterungen und Updates** im Menü **Extras** .  
   
 ## <a name="adding-a-command-or-gesture-to-a-separate-vsix"></a>Hinzufügen eines Befehls oder einer Geste zu einem separaten VSIX  
  Wenn Sie eine VSIX erstellen möchten, die Befehle, Ebenenvalidierungssteuerelemente und andere Erweiterungen enthält, empfiehlt es sich, ein Projekt zum Definieren der VSIX und getrennte Projekte für die Handler zu erstellen.
@@ -101,7 +86,7 @@ Sie können definieren Kontextmenübefehle und Gestenhandler in Abhängigkeitsdi
   
 4.  Kehren Sie zum Befehls- oder Gestenhandlerprojekt zurück, und fügen Sie die folgenden Projektverweise hinzu.  
   
-|**Referenz**|**Was können Sie tun**|  
+|**Verweis**|**Optionen**|  
 |-------------------|------------------------------------|  
 |Programme\Microsoft Visual Studio [Version]\Common7\IDE\Extensions\Microsoft\Architecture Tools\ExtensibilityRuntime\Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.dll|Erstellen und Bearbeiten von Ebenen|  
 |Microsoft.VisualStudio.Uml.Interfaces|Erstellen und Bearbeiten von Ebenen|  
@@ -116,15 +101,15 @@ Sie können definieren Kontextmenübefehle und Gestenhandler in Abhängigkeitsdi
   
      [Definieren eines Gestenhandlers](#gesture)  
   
-     Siehe auch [navigieren und Update layer-Modellen im Programmcode](../modeling/navigate-and-update-layer-models-in-program-code.md).  
+     Siehe auch [navigieren und Update überlagern Sie die Modelle im Programmcode](../modeling/navigate-and-update-layer-models-in-program-code.md).  
   
-2.  Drücken Sie STRG+F5 oder F5, um die Anwendung zu testen. Eine experimentelle Instanz von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] wird geöffnet. Erstellen Sie in diesem Fall oder öffnen Sie ein Abhängigkeitsdiagramm.  
+2.  Drücken Sie STRG+F5 oder F5, um die Anwendung zu testen. Eine experimentelle Instanz von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] wird geöffnet. Erstellen Sie in dieser Instanz oder öffnen Sie ein Diagramm der Abhängigkeit.  
   
-3.  So installieren Sie die VSIX-Projekt in der Hauptinstanz von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], oder auf einem anderen Computer die **VSIX** in der Datei der **Bin** Verzeichnis des VSIX-Projekts. Kopieren Sie die Datei auf den Computer, auf dem Sie die VSIX installieren möchten. Doppelklicken Sie auf die VSIX-Datei in Windows-Explorer (Datei-Explorer in Windows 8).  
+3.  Um die Erweiterung in der Hauptinstanz von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]oder auf einem anderen Computer zu installieren, suchen Sie die Datei **.vsix** im Verzeichnis **bin** des VSIX-Projekts. Kopieren Sie die Datei auf den Computer, auf dem Sie die VSIX installieren möchten. Doppelklicken Sie auf die VSIX-Datei in Windows-Explorer (Datei-Explorer in Windows 8).  
   
      Verwenden Sie zum Deinstallieren der Datei die Option **Erweiterungen und Updates** im Menü **Extras** .  
   
-##  <a name="a-namecommanda-defining-a-menu-command"></a><a name="command"></a>Definieren eines Menübefehls  
+##  <a name="command"></a> Definieren eines Menübefehls  
  Sie können einer vorhandenen Geste oder einem Befehlsprojekt mehrere Menübefehlsdefinitionen hinzufügen. Jeder Befehl wird von einer Klasse definiert, die über die folgenden Eigenschaften verfügt:  
   
 -   Die Klasse wird folgendermaßen deklariert:  
@@ -137,8 +122,7 @@ Sie können definieren Kontextmenübefehle und Gestenhandler in Abhängigkeitsdi
   
 -   Der Namespace und der Name der Klasse sind unwichtig.  
   
--   
-          `ICommandExtension` wird mit den folgenden Methoden implementiert:  
+-   `ICommandExtension` wird mit den folgenden Methoden implementiert:  
   
     -   `string Text {get;}` - Die Bezeichnung, die im Menü angezeigt wird.  
   
@@ -156,7 +140,7 @@ Sie können definieren Kontextmenübefehle und Gestenhandler in Abhängigkeitsdi
   
      `DiagramContext.CurrentDiagram.SelectedShapes.Count()...`  
   
- Weitere Informationen finden Sie unter [navigieren und Update layer-Modellen im Programmcode](../modeling/navigate-and-update-layer-models-in-program-code.md).  
+ Weitere Informationen finden Sie unter [navigieren und Update überlagern Sie die Modelle im Programmcode](../modeling/navigate-and-update-layer-models-in-program-code.md).  
   
  Erstellen Sie zum Hinzufügen eines neuen Befehls eine neue Codedatei, die das folgende Beispiel enthält. Testen und bearbeiten Sie das Beispiel dann.  
   
@@ -230,8 +214,8 @@ namespace MyLayerExtension // Change to your preference.
 }  
 ```  
   
-##  <a name="a-namegesturea-defining-a-gesture-handler"></a><a name="gesture"></a>Definieren eines Gestenhandlers  
- Ein Gestenhandler reagiert, wenn der Benutzer Elemente auf das Abhängigkeitsdiagramm zieht und der Benutzer auf eine beliebige Stelle im Diagramm doppelklickt.  
+##  <a name="gesture"></a> Definieren eines Gestenhandlers  
+ Ein Gestenhandler reagiert, wenn der Benutzer Elemente auf das Diagramm Abhängigkeit zieht und der Benutzer auf eine beliebige Stelle im Diagramm doppelklickt.  
   
  Sie können dem vorhandenen Befehls- oder Gestenhandler-VSIX-Projekt eine Codedatei hinzufügen, die einen Gestenhandler definiert:  
   
@@ -275,12 +259,9 @@ namespace MyLayerExtensions // change to your preference
     }  
     ```  
   
--   Handler für einige Typen von gezogenen Elementen sind bereits definiert. Beispielsweise kann Benutzer Elemente im Projektmappen-Explorer in ein Abhängigkeitsdiagramm ziehen. Sie können keinen Ziehhandler für diese Elementtypen definieren. In diesen Fällen werden die `DragDrop` -Methoden nicht aufgerufen.  
+-   Handler für einige Typen von gezogenen Elementen sind bereits definiert. Beispielsweise kann der Benutzer Elemente im Projektmappen-Explorer in eine Abhängigkeit-Diagramm ziehen. Sie können keinen Ziehhandler für diese Elementtypen definieren. In diesen Fällen werden die `DragDrop` -Methoden nicht aufgerufen.  
   
- Weitere Informationen dazu, wie Sie andere Elemente decodiert werden, wenn sie in das Diagramm gezogen werden, finden Sie unter [Definieren eines gestenhandlers in einem Modellierungsdiagramm](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md).  
   
 ## <a name="see-also"></a>Siehe auch  
  [Navigieren in und Aktualisieren von Ebenenmodellen im Programmcode](../modeling/navigate-and-update-layer-models-in-program-code.md)   
- [Hinzufügen von benutzerdefinierten architekturvalidierung Abhängigkeitsdiagramme](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)   
- [Definieren und Installieren einer Modellierungserweiterung](../modeling/define-and-install-a-modeling-extension.md)
-
+ [Hinzufügen einer benutzerdefinierten Architekturvalidierung zu Abhängigkeitsdiagrammen](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)   

@@ -1,12 +1,10 @@
 ---
-title: 'How to: Programmatically Hide Worksheets | Microsoft Docs'
+title: "Vorgehensweise: Programmgesteuertes Ausblenden von Arbeitsblättern | Microsoft Docs"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -16,49 +14,50 @@ helpviewer_keywords:
 - hidden worksheets
 - worksheets, hiding
 ms.assetid: 3208f633-137f-47f9-9c9c-2cf8e3c72096
-caps.latest.revision: 44
-author: kempb
-ms.author: kempb
+caps.latest.revision: "44"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: b3218c230bd8728684b49425f97f6bbbbcc04718
-ms.contentlocale: de-de
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: ef9d6e72f7d69e3b71b8ea6f6acea9021be6b2cf
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="how-to-programmatically-hide-worksheets"></a>How to: Programmatically Hide Worksheets
-  You can show or hide any worksheet in a workbook. To hide a worksheet, use the worksheet host item or access the worksheet by using the sheets collection of the workbook.  
+# <a name="how-to-programmatically-hide-worksheets"></a>Gewusst wie: Programmgesteuertes Ausblenden von Arbeitsblättern
+  Sie können jedes Arbeitsblatt in einer Arbeitsmappe anzeigen oder ausblenden. Wenn Sie ein Arbeitsblatt ausblenden möchten, verwenden Sie das Arbeitsblatt-Hostelement, oder greifen Sie auf das Arbeitsblatt mithilfe der Sheets-Auflistung der Arbeitsmappe zu.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
-## <a name="using-the-worksheet-host-item"></a>Using the Worksheet Host Item  
- If the worksheet was added at design-time in a document-level customization, use the <xref:Microsoft.Office.Tools.Excel.Worksheet.Visible%2A> property to hide the specified worksheet.  
+## <a name="using-the-worksheet-host-item"></a>Verwenden das Arbeitsblatt-Hostelements  
+ Wenn das Arbeitsblatt zur Entwurfszeit in einer Anpassung auf Dokumentebene hinzugefügt wurde, verwenden Sie die <xref:Microsoft.Office.Tools.Excel.Worksheet.Visible%2A> -Eigenschaft, um das angegebene Arbeitsblatt auszublenden.  
   
-#### <a name="to-hide-a-worksheet-using-a-worksheet-host-item"></a>To hide a worksheet using a worksheet host item  
+#### <a name="to-hide-a-worksheet-using-a-worksheet-host-item"></a>So blenden Sie ein Arbeitsblatt mit einem Worksheet-Hostelement aus  
   
-1.  Set the <xref:Microsoft.Office.Tools.Excel.Worksheet.Visible%2A> property of the `Sheet1` host item to the <xref:Microsoft.Office.Interop.Excel.XlSheetVisibility.xlSheetHidden> enumeration value.  
+1.  Legen Sie die <xref:Microsoft.Office.Tools.Excel.Worksheet.Visible%2A> -Eigenschaft des `Sheet1` -Hostelements auf den <xref:Microsoft.Office.Interop.Excel.XlSheetVisibility.xlSheetHidden> -Enumerationswert fest.  
   
-     [!code-csharp[Trin_VstcoreExcelAutomation#25](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#25)]  [!code-vb[Trin_VstcoreExcelAutomation#25](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#25)]  
+     [!code-csharp[Trin_VstcoreExcelAutomation#25](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#25)]
+     [!code-vb[Trin_VstcoreExcelAutomation#25](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#25)]  
   
-## <a name="using-the-sheets-collection-of-the-excel-workbook"></a>Using the Sheets Collection of the Excel Workbook  
- Access worksheets through the Microsoft Office Excel <xref:Microsoft.Office.Interop.Excel.Sheets> collection in the following cases:  
+## <a name="using-the-sheets-collection-of-the-excel-workbook"></a>Verwenden der Sheets-Auflistung der Excel-Arbeitsmappe  
+ Greifen Sie auf Arbeitsblätter über die Microsoft Office Excel-Auflistung <xref:Microsoft.Office.Interop.Excel.Sheets> in den folgenden Fällen zu:  
   
--   You want to hide a worksheet in an VSTO Add-in.  
+-   Sie möchten ein Arbeitsblatt in einem VSTO-Add-In ausblenden.  
   
--   The worksheet that you want to hide was created at run time in a document-level customization.  
+-   Das Arbeitsblatt, das Sie ausblenden möchten, wurde zur Laufzeit in einer Anpassung auf Dokumentebene erstellt.  
   
-#### <a name="to-hide-a-worksheet-using-the-sheets-collection-of-the-excel-workbook"></a>To hide a worksheet using the Sheets collection of the Excel workbook  
+#### <a name="to-hide-a-worksheet-using-the-sheets-collection-of-the-excel-workbook"></a>So blenden Sie ein Arbeitsblatt mit der Sheets-Auflistung der Excel-Arbeitsmappe aus  
   
-1.  Set the <xref:Microsoft.Office.Interop.Excel.Worksheets.Visible%2A> property of the worksheet to the <xref:Microsoft.Office.Interop.Excel.XlSheetVisibility.xlSheetHidden> enumeration value.  
+1.  Legen Sie die <xref:Microsoft.Office.Interop.Excel.Worksheets.Visible%2A> -Eigenschaft des Arbeitsblatts auf den <xref:Microsoft.Office.Interop.Excel.XlSheetVisibility.xlSheetHidden> -Enumerationswert fest.  
   
-     [!code-csharp[Trin_VstcoreExcelAutomation#26](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#26)]  [!code-vb[Trin_VstcoreExcelAutomation#26](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#26)]  
+     [!code-csharp[Trin_VstcoreExcelAutomation#26](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#26)]
+     [!code-vb[Trin_VstcoreExcelAutomation#26](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#26)]  
   
-## <a name="see-also"></a>See Also  
- [Working with Worksheets](../vsto/working-with-worksheets.md)   
- [How to: Programmatically Delete Worksheets from Workbooks](../vsto/how-to-programmatically-delete-worksheets-from-workbooks.md)   
- [How to: Programmatically Move Worksheets Within Workbooks](../vsto/how-to-programmatically-move-worksheets-within-workbooks.md)   
- [How to: Programmatically Protect Worksheets](../vsto/how-to-programmatically-protect-worksheets.md)   
+## <a name="see-also"></a>Siehe auch  
+ [Arbeiten mit Arbeitsblättern](../vsto/working-with-worksheets.md)   
+ [Vorgehensweise: Programmgesteuertes Löschen von Arbeitsblättern aus Arbeitsmappen](../vsto/how-to-programmatically-delete-worksheets-from-workbooks.md)   
+ [Vorgehensweise: Programmgesteuertes Verschieben von Arbeitsblättern in Arbeitsmappen](../vsto/how-to-programmatically-move-worksheets-within-workbooks.md)   
+ [Vorgehensweise: Programmgesteuertes Schützen von Arbeitsblättern](../vsto/how-to-programmatically-protect-worksheets.md)   
  [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md)   
- [Global Access to Objects in Office Projects](../vsto/global-access-to-objects-in-office-projects.md)  
+ [Globaler Zugriff auf Objekte in Office-Projekten](../vsto/global-access-to-objects-in-office-projects.md)  
   

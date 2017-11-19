@@ -1,42 +1,43 @@
 ---
-title: "Zugriff auf den Textpuffer mit der Legacy-API | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Editoren [Visual Studio SDK] legacy - Textpuffer"
+title: Zugreifen auf den Textpuffer mithilfe der Legacy-API | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: editors [Visual Studio SDK], legacy - text buffers
 ms.assetid: cd6cf4ae-fff5-4e23-b293-7cbafdb8aed2
-caps.latest.revision: 15
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 15
+caps.latest.revision: "15"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: facfc1670bf9d04035beffc47b7124bd5d309a7c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Zugriff auf den Textpuffer mit der Legacy-API
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Der Text wird zur Verwaltung von Textstreams Aus Datei und Dauerhaftigkeit verantwortlich.  Obwohl der Puffer andere Formate lesen oder schreiben kann, wird die normale Kommunikation mit dem Puffer ausgeführt, indem Unicode verwendet.  Im Legacy API, kann der Textpuffer oder ein zweidimensionales Koordinatensystem verwenden, um Speicherorte Zeichen im Puffer zu identifizieren.  
+# <a name="accessing-the-text-buffer-by-using-the-legacy-api"></a>Zugreifen auf den Textpuffer mithilfe der Legacy-API
+Der Text ist zuständig für das Verwalten von Textstreams und Datei-Dauerhaftigkeit. Obwohl der Puffer Lese- oder Schreibzugriff anderen Formaten alle normalen Kommunikation mit dem Puffer mithilfe von Unicode ausgeführt wird. In die legacy-APIs können die den Textpuffer ein- oder in einem zweidimensionalen Koordinatensystem um Zeichenpositionen im Puffer zu identifizieren.  
   
-## Ein Zwei\-Dimension und Koordinatensysteme  
- Eine eindimensionale Koordinatenposition basiert auf einer Zeichenstelle vom ersten Zeichen im Puffer, z. B. 147.  Mit der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream>\-Schnittstelle, um einen eindimensionalen Position im Puffer zuzugreifen.  Ein zweidimensionales Koordinatensystem basiert auf Zeilen\- und Index.  Beispielsweise würde ein Zeichen im Puffer für Zeile bei 43, 5, 43 fünf Zeichen rechts vom ersten Zeichens in der Zeile sein.  Sie greifen auf einem zweidimensionalen Position im Puffer mithilfe der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines>\-Schnittstelle.  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines> werden und die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream>\-Schnittstellen im Textpuffer Objekt \(<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>\) implementiert und können voneinander zugegriffen werden, indem `QueryInterface`verwendet.  Das folgende Diagramm zeigt diese und andere Tasten auf Schnittstellen <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>an.  
+## <a name="one--and-two-dimension-coordinate-systems"></a>Dimension ein und zwei Koordinatensysteme  
+ Eine eindimensionale Koordinatenposition basiert auf ein Zeichen Position vom ersten Zeichen im Puffer, z. B. 147. Sie verwenden die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream> Schnittstelle, um den Zugriff auf eine eindimensionale Speicherort im Puffer. Ein zweidimensionales Koordinatensystem basiert auf Linien- und Index-Paaren. Beispielsweise wäre ein Zeichen im Puffer, ab der 43, 5 in Zeile 43, fünf Zeichen rechts von das erste Zeichen in dieser Zeile. Sie Zugriff auf eine zweidimensionale Ort in den Puffer mit den <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines> Schnittstelle. Sowohl die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines> und <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream> Schnittstellen werden von der TextBuffer-Objekt implementiert (<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>) und kann voneinander zugegriffen werden, indem `QueryInterface`. Das folgende Diagramm zeigt diese und andere wichtigsten Schnittstellen auf <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>.  
   
- ![TextBuffer&#45;Objekt](~/extensibility/media/vstextbuffer.gif "vsTextBuffer")  
-Textpuffer Objekt  
+ ![TextBuffer-Objekt](../extensibility/media/vstextbuffer.gif "VsTextBuffer")  
+TextBuffer-Objekt  
   
- Obwohl ein Koordinatensystem im Textpuffer arbeitet, wird sie optimiert, um zweidimensionale Koordinaten zu verwenden.  Ein eindimensionales Koordinatensystem kann Leistungsaufwand erstellen.  Verwenden Sie daher das Koordinatensystem zweidimensionale, wann immer dies möglich ist.  
+ Obwohl entweder Koordinatensystem in den Textpuffer funktioniert, ist es optimiert, um zweidimensionalen Koordinaten zu verwenden. Ein eindimensionales Koordinatensystem können Verwaltungsaufwand erstellen. Verwenden Sie daher die zweidimensionale Koordinatensystem wann immer möglich.  
   
- Die Verantwortung des Textpuffers Dauerhaftigkeit Datei zweiten ist.  Dazu implementiert das Textpuffer Objekt <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2> und fungiert als Dokumenten das angegebene Channeldatenobjekt Komponente für die Projektelemente Umgebung und andere Komponenten auf, die in der Beibehaltung beteiligt sind.  Weitere Informationen finden Sie unter [Öffnen und Speichern von Projektelementen](../extensibility/internals/opening-and-saving-project-items.md).  
+ Der Text des Puffers zweite Verantwortung ist die Datei Persistenz. Zu diesem Zweck die TextBuffer-Objekt implementiert <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2> und fungiert als die Daten Objektkomponente für Projektelemente angezeigt und andere Persistenz beteiligten Komponenten. Weitere Informationen finden Sie unter [öffnen und Speichern von Projektelementen](../extensibility/internals/opening-and-saving-project-items.md).  
   
-## In diesem Abschnitt  
- [Ändern die Ansicht mit der Legacy\-API](../extensibility/changing-view-settings-by-using-the-legacy-api.md)  
- Erklärt, wie mithilfe des Einstellungen anzeigen Legacy API geändert wird.  
+## <a name="in-this-section"></a>In diesem Abschnitt  
+ [Ändern Einstellungen anzeigen, über die Legacy-API](../extensibility/changing-view-settings-by-using-the-legacy-api.md)  
+ Erläutert das Anzeigen von Einstellungen mithilfe der legacy-API zu ändern.  
   
- [Verwenden die Text\-Manager zum Überwachen von globaler Einstellungen](../extensibility/using-the-text-manager-to-monitor-global-settings.md)  
- Erläutert, wie der Text Manager verwendet, um globale Einstellungen zu überwachen.  
+ [Verwenden die Text-Manager zum Überwachen von globaler Einstellungen](../extensibility/using-the-text-manager-to-monitor-global-settings.md)  
+ Erklärt, wie der Text-Manager zum Überwachen von globaler Einstellungen...  
   
-## Siehe auch  
- [In der Core\-Editor](../extensibility/inside-the-core-editor.md)
+## <a name="see-also"></a>Siehe auch  
+ [In der Core-Editor](../extensibility/inside-the-core-editor.md)

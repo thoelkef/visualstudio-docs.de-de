@@ -1,47 +1,48 @@
 ---
-title: "COM-Debugtools | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.debug.com"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "ActiveX-Steuerelemente, Debuggen"
-  - "COM, Debuggen"
-  - "Debuggen [C++], COM"
-  - "Spy-Programme"
-  - "Viewer"
+title: Com-Debugtools | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vs.debug.com
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+helpviewer_keywords:
+- COM, debugging
+- spy programs
+- viewers
+- ActiveX controls, debugging
+- debugging [C++], COM
 ms.assetid: 4296ad30-6952-46cb-b002-6b34eee1993a
-caps.latest.revision: 18
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 18
+caps.latest.revision: "18"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 795f911e9020c4bec6e6bfe9d103666d007d0711
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# COM-Debugtools
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-In diesem Thema finden Sie eine Liste der Tools, mit denen Sie COM\-Programme testen und untersuchen können.  
+# <a name="com-debugging-tools"></a>COM-Debugtools
+In diesem Thema finden Sie eine Liste der Tools, mit denen Sie COM-Programme testen und untersuchen können.  
   
- OLE\/COM\-Objektkatalog  
- OLEVIEW zeigt die auf dem Computer installierten ActiveX\- und OLE\-Objekte sowie die von ihnen unterstützten Schnittstellen an.  Zudem können Sie mit diesem Viewer die Registrierung bearbeiten und Typbibliotheken einsehen.  Weitere Informationen hierzu finden Sie unter [Verwenden des OLE\/COM\-Objektkatalogs](/visual-cpp/data/ado-rdo/using-the-ole-com-object-viewer).  
+ OLE/COM-Objektkatalog  
+ OLEVIEW zeigt die auf dem Computer installierten ActiveX- und OLE-Objekte sowie die von ihnen unterstützten Schnittstellen an. Zudem können Sie mit diesem Viewer die Registrierung bearbeiten und Typbibliotheken einsehen. Weitere Informationen finden Sie unter [Verwenden des OLE/COM-Objektkatalogs](/cpp/data/ado-rdo/using-the-ole-com-object-viewer).  
   
- Microsoft Foundation Class\-Beispiele  
- Die MFC\-ActiveX\-Beispiele OCLIENT und SUPERPAD stehen ebenfalls zum Testen der Anwendungen zur Verfügung.  Der vollständige Quellcode für diese Beispiele ist vorhanden.  
+ Microsoft Foundation Class-Beispiele  
+ Die MFC-ActiveX-Beispiele OCLIENT und SUPERPAD stehen ebenfalls zum Testen der Anwendungen zur Verfügung. Der vollständige Quellcode für diese Beispiele ist vorhanden.  
   
-## Siehe auch  
- [Debuggen von COM und ActiveX](../debugger/com-and-activex-debugging.md)   
- [COM\-Debugtools](../debugger/com-debugging-tools.md)   
- [Debuggen in Visual Studio](../debugger/debugging-in-visual-studio.md)   
- [OCLIENT Sample: Illustrates a Visual Editing Container Application](http://msdn.microsoft.com/de-de/8cd5c234-9a4e-4934-8f5d-bac189ad92c4)   
- [SUPERPAD Sample: Demonstrates a Visual Editing Server That Edits Text Using CEditView](http://msdn.microsoft.com/de-de/7b14e975-d986-4e6a-8289-226485cfcb72)
+## <a name="see-also"></a>Siehe auch  
+ [COM und ActiveX-Debugging](../debugger/com-and-activex-debugging.md)   
+ [COM-Debugtools](../debugger/com-debugging-tools.md)  
+ [Debuggen in Visual Studio](../debugger/index.md)  
+ [Debugger – Featuretour](../debugger/debugger-feature-tour.md)   
+ [OCLIENT-Beispiel: Zeigt ein visuelles Steuerelementcontainer-Anwendung bearbeiten](http://msdn.microsoft.com/en-us/8cd5c234-9a4e-4934-8f5d-bac189ad92c4)   
+ [SUPERPAD-Beispiel: Zeigt ein visuelles Bearbeiten-Server, der mithilfe von CEditView Text bearbeitet](http://msdn.microsoft.com/en-us/7b14e975-d986-4e6a-8289-226485cfcb72)

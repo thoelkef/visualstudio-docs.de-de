@@ -1,55 +1,55 @@
 ---
-title: "IDebugCanStopEvent2::GetCodeContext | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugCanStopEvent2::GetCodeContext"
-helpviewer_keywords: 
-  - "IDebugCanStopEvent2::GetCodeContext"
+title: IDebugCanStopEvent2::GetCodeContext | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugCanStopEvent2::GetCodeContext
+helpviewer_keywords: IDebugCanStopEvent2::GetCodeContext
 ms.assetid: eecf08b6-f9b7-4358-941b-3a448a92ac62
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 542003e3a1885a73c2d2ac7198625034930d77b0
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugCanStopEvent2::GetCodeContext
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Ruft den Kontext des Codes ab, der die Position dieses Ereignisses beschreibt.  
+# <a name="idebugcanstopevent2getcodecontext"></a>IDebugCanStopEvent2::GetCodeContext
+Ruft den Codekontext, der den Speicherort der dieses Ereignis beschreibt.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT GetCodeContext(   
-   IDebugCodeContext2** ppCodeContext  
+```cpp  
+HRESULT GetCodeContext(   
+   IDebugCodeContext2** ppCodeContext  
 );  
 ```  
   
-```c#  
-int GetCodeContext(   
-   out IDebugCodeContext2 ppCodeContext  
+```csharp  
+int GetCodeContext(   
+   out IDebugCodeContext2 ppCodeContext  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `ppCodeContext`  
- \[out\]  Gibt das [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)\-Objekt zurück, das den aktuellen Speicherort des Codes darstellt.  
+ [out] Gibt die [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) -Objekt, das die aktuelle Codeposition darstellt.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Hinweise  
- Für die meisten von architekturen Code kann ein Kontext für eine Adresse des Programms Laufzeit in einem datenstrom gehalten werden, und zeigen auf eine bestimmte Anweisung.  
+## <a name="remarks"></a>Hinweise  
+ Für die meisten zur Laufzeit Architekturen kann ein Codekontext als eine Adresse im Datenstrom der Ausführung des Programms, zeigen auf eine bestimmte Anweisung betrachtet werden.  
   
- Um den Dokumentenkontext abzurufen, der zu den Quellcodezeilen ausgerichtet ist, rufen Sie die [GetDocumentContext](../../../extensibility/debugger/reference/idebugcanstopevent2-getdocumentcontext.md)\-Methode auf.  
+ Rufen Sie den Dokumentenkontext abrufen, die Quellcodezeilen serverworkflow ist die [GetDocumentContext](../../../extensibility/debugger/reference/idebugcanstopevent2-getdocumentcontext.md) Methode.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDebugCanStopEvent2](../../../extensibility/debugger/reference/idebugcanstopevent2.md)   
  [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)   
  [GetDocumentContext](../../../extensibility/debugger/reference/idebugcanstopevent2-getdocumentcontext.md)

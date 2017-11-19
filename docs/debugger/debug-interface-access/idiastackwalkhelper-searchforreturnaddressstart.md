@@ -1,52 +1,51 @@
 ---
-title: "IDiaStackWalkHelper::searchForReturnAddressStart | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaStackWalkHelper::searchForReturnAddressStart-Methode"
+title: 'Idiastackwalkhelper:: Searchforreturnaddressstart | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaStackWalkHelper::searchForReturnAddressStart method
 ms.assetid: 0a33142e-5d31-44ea-874a-a2e94d95cbd2
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 0d949a10e437a3f5b43a85ab9e1a5bf048438c59
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaStackWalkHelper::searchForReturnAddressStart
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Sucht den angegebenen Stapelrahmen für eine Rückgabeadresse nah an der angegebenen Stapeladresse.  
+# <a name="idiastackwalkhelpersearchforreturnaddressstart"></a>IDiaStackWalkHelper::searchForReturnAddressStart
+Sucht den angegebenen Stapelrahmen für eine Absenderadresse Beginn oder kurz vor dem angegebenen Stapeladresse an.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT searchForReturnAddressStart(   
-   IDiaFrameData*  frame,  
-   ULONGLONG       startAddress,  
-   ULONGLONG*      returnAddress  
+```C++  
+HRESULT searchForReturnAddressStart(   
+   IDiaFrameData*  frame,  
+   ULONGLONG       startAddress,  
+   ULONGLONG*      returnAddress  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `frame`  
- \[in\]  Ein [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)\-Objekt, das den aktuellen Stapelrahmen darstellt.  
+ [in] Ein [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) Objekt, das den aktuellen Stapelrahmen darstellt.  
   
  `startAddress`  
- \[in\]  Von der eine virtuelle Speicheradresse, an dem die Suche beginnen soll.  
+ [in] Eine Adresse des virtuellen Arbeitsspeichers aus dem die Suche beginnen soll.  
   
  `ReturnAddress`  
- \[out\]  Gibt die nächste Funktion rückgabeadresse zu `startAddress`zurück.  
+ [out] Gibt die nächste Funktion zurückgeben Adresse `startAddress`.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)   
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

@@ -1,51 +1,52 @@
 ---
-title: "CA2226: Operatoren sollten symmetrische &#220;berladungen aufweisen | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "OperatorsShouldHaveSymmetricalOverloads"
-  - "CA2226"
-helpviewer_keywords: 
-  - "CA2226"
-  - "OperatorsShouldHaveSymmetricalOverloads"
+title: "CA2226: Operatoren sollten symmetrische Überladungen aufweisen | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- OperatorsShouldHaveSymmetricalOverloads
+- CA2226
+helpviewer_keywords:
+- OperatorsShouldHaveSymmetricalOverloads
+- CA2226
 ms.assetid: d202401a-ea14-4559-b15e-0ea4f5b68789
-caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 14
+caps.latest.revision: "14"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 209741d29e3607f268fff6963723c59bc2221cb0
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# CA2226: Operatoren sollten symmetrische &#220;berladungen aufweisen
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="ca2226-operators-should-have-symmetrical-overloads"></a>CA2226: Operatoren sollten symmetrische Überladungen aufweisen
 |||  
 |-|-|  
 |TypeName|OperatorsShouldHaveSymmetricalOverloads|  
 |CheckId|CA2226|  
-|Kategorie \(Category\)|Microsoft.Usage|  
-|Unterbrechende Änderung|Nicht unterbrechend|  
+|Kategorie|Microsoft.Usage|  
+|Unterbrechende Änderung|Nicht unterbrechende Änderung|  
   
-## Ursache  
- Ein Typ implementiert den Gleichheits\- oder Ungleichheitsoperator, ohne den entgegengesetzten Operator zu implementieren.  
+## <a name="cause"></a>Ursache  
+ Ein Typ implementiert den Gleichheits- oder Ungleichheitsoperator, ohne den entgegengesetzten Operator zu implementieren.  
   
-## Regelbeschreibung  
- Es gibt keine Umstände, unter denen der Gleichheits\- oder Ungleichheitsoperator auf Instanzen eines Typs anwendbar ist und der entgegengesetzte Operator nicht definiert ist.  Typen implementieren i. d. R. den Ungleichheitsoperator, indem der negierte Wert des Gleichheitsoperators zurückgegeben wird.  
+## <a name="rule-description"></a>Regelbeschreibung  
+ Es gibt keine Situationen, in denen Gleichheit oder Ungleichheit gilt für Instanzen eines Typs, und der entgegengesetzte Operator ist nicht definiert. Typen implementieren i. d. r. den Ungleichheitsoperator wird durch zurückgeben den negierten Wert des Gleichheitsoperators.  
   
- Der C\#\-Compiler gibt bei Verstößen gegen diese Regel einen Fehler heraus.  
+ Der c#-Compiler gibt einen Fehler für Verstöße gegen diese Regel.  
   
-## Behandeln von Verstößen  
- Um einen Verstoß gegen diese Regel zu beheben, implementieren Sie sowohl Gleichheits\- und Ungleichheitsoperator, oder entfernen Sie die vorhandene Operatorimplementierung.  
+## <a name="how-to-fix-violations"></a>Behandeln von Verstößen  
+ Um einen Verstoß gegen diese Regel zu beheben, sowohl die Gleichheits- und Ungleichheitsoperatoren implementiert, oder entfernen Sie das Projekt, das vorhanden ist.  
   
-## Wann sollten Warnungen unterdrückt werden?  
- Unterdrücken Sie keine Warnung dieser Regel.  Der Typ verfügt sonst über kein mit [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] konsistentes Verhalten.  
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?  
+ Unterdrücken Sie keine Warnung dieser Regel. Ihres Typs funktionieren nicht in einer Weise, die konsistent mit der [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].  
   
-## Verwandte Regeln  
+## <a name="related-rules"></a>Verwandte Regeln  
  [CA1046: Gleichheitsoperator für Referenztypen nicht überladen](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md)  
   
  [CA2225: Operatorüberladungen weisen benannte Alternativen auf](../code-quality/ca2225-operator-overloads-have-named-alternates.md)  

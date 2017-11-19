@@ -1,55 +1,56 @@
 ---
-title: "CA1059: Member sollten bestimmte konkrete Typen nicht verf&#252;gbar machen | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA1059"
-  - "MembersShouldNotExposeCertainConcreteTypes"
-helpviewer_keywords: 
-  - "CA1059"
-  - "MembersShouldNotExposeCertainConcreteTypes"
+title: "CA1059: Member sollten bestimmte konkreten Typen nicht Verfügbarmachen | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA1059
+- MembersShouldNotExposeCertainConcreteTypes
+helpviewer_keywords:
+- MembersShouldNotExposeCertainConcreteTypes
+- CA1059
 ms.assetid: 59f61f52-8d6c-49cb-aefb-191910523a3c
-caps.latest.revision: 18
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 18
+caps.latest.revision: "18"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: d5b8b4a50ce23a7ed50f2e608334f9b438a0b090
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# CA1059: Member sollten bestimmte konkrete Typen nicht verf&#252;gbar machen
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="ca1059-members-should-not-expose-certain-concrete-types"></a>CA1059: Member sollten bestimmte konkrete Typen nicht verfügbar machen
 |||  
 |-|-|  
 |TypeName|MembersShouldNotExposeCertainConcreteTypes|  
 |CheckId|CA1059|  
-|Kategorie \(Category\)|Microsoft.Design|  
+|Kategorie|Microsoft.Design|  
 |Unterbrechende Änderung|Breaking|  
   
-## Ursache  
- Ein extern sichtbarer Member ist ein bestimmter konkreter Typ, oder er macht bestimmte konkrete Typen über einen seiner Parameter oder den Rückgabewert verfügbar.  Derzeit meldet diese Regel das Verfügbarmachen der folgenden konkreten Typen:  
+## <a name="cause"></a>Ursache  
+ Extern sichtbaren Members ist eine bestimmte konkreten Typ macht bestimmte konkreten Typen durch einen seiner Parameter oder Rückgabewert. Diese Regel meldet derzeit Offenlegung der folgenden konkrete Typen:  
   
--   Ein von <xref:System.Xml.XmlNode?displayProperty=fullName> abgeleiteter Typ.  
+-   Ein abgeleiteter Typ von <xref:System.Xml.XmlNode?displayProperty=fullName>.  
   
-## Regelbeschreibung  
- Ein konkreter Typ ist ein Typ, der eine vollständige Implementierung aufweist und deshalb instanziiert werden kann.  Damit der Member durchgängig verwendet werden kann, ersetzen Sie den konkreten Typ durch die vorgeschlagene Schnittstelle.  So kann der Member jeden Typ akzeptieren, der die Schnittstelle implementiert, oder dort verwendet werden, wo ein Typ erwartet wird, der die Schnittstelle implementiert.  
+## <a name="rule-description"></a>Regelbeschreibung  
+ Ein konkreter Typ ist ein Typ, der eine vollständige Implementierung aufweist und deshalb instanziiert werden kann. Damit wird der Member universell verwendet, ersetzen Sie den konkreten Typ durch die vorgeschlagene Schnittstelle ein. Dadurch wird das Element zum Akzeptieren von jeder Typ, der die Schnittstelle implementiert oder verwendet werden, wo ein Typ, der die Schnittstelle implementiert erwartet wird.  
   
- In der folgenden Tabelle werden die verwendeten konkreten Typen und jeweils vorgeschlagenen Ersatzschnittstellen aufgelistet.  
+ Die folgende Tabelle enthält die gezielten konkreten Typen und ihre vorgeschlagenen Ersetzungen.  
   
 |Konkreter Typ|Ersetzung|  
-|-------------------|---------------|  
-|<xref:System.Xml.XPath.XPathDocument>|<xref:System.Xml.XPath.IXPathNavigable?displayProperty=fullName>.<br /><br /> Bei Verwenden der Schnittstelle wird der Member von einer bestimmten Implementierung einer XML\-Datenquelle entkoppelt.|  
+|-------------------|-----------------|  
+|<xref:System.Xml.XPath.XPathDocument>|<xref:System.Xml.XPath.IXPathNavigable?displayProperty=fullName>.<br /><br /> Mithilfe der Benutzeroberfläche entkoppelt das Element aus einer XML-Datenquelle eine bestimmte Implementierung.|  
   
-## Behandeln von Verstößen  
+## <a name="how-to-fix-violations"></a>Behandeln von Verstößen  
  Um einen Verstoß gegen diese Regel zu beheben, ändern Sie den konkreten Typ in die vorgeschlagene Schnittstelle.  
   
-## Wann sollten Warnungen unterdrückt werden?  
- Eine Warnung dieser Regel kann gefahrlos unterdrückt werden, wenn die bestimmte, vom konkreten Typ bereitgestellte Funktionalität erforderlich ist.  
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?  
+ Sie können ruhig auf eine Meldung von dieser Regel zu unterdrücken, sofern die spezifische Funktionalität bereitgestellt, die von den konkreten Typ erforderlich ist.  
   
-## Verwandte Regeln  
+## <a name="related-rules"></a>Verwandte Regeln  
  [CA1011: Basistypen als Parameter übergeben](../code-quality/ca1011-consider-passing-base-types-as-parameters.md)

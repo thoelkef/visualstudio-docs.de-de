@@ -1,25 +1,27 @@
 ---
-title: "IDebugComPlusSymbolProvider::CreateTypeFromPrimitive | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "IDebugComPlusSymbolProvider::CreateTypeFromPrimitive"
-  - "CreateTypeFromPrimitive"
+title: IDebugComPlusSymbolProvider::CreateTypeFromPrimitive | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- IDebugComPlusSymbolProvider::CreateTypeFromPrimitive
+- CreateTypeFromPrimitive
 ms.assetid: 37213cc2-a038-42ea-9b28-3ae40d4cfe69
-caps.latest.revision: 13
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 57b820ee1f6d7286188d8083a86be62f65e50ceb
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugComPlusSymbolProvider::CreateTypeFromPrimitive
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
+# <a name="idebugcomplussymbolprovidercreatetypefromprimitive"></a>IDebugComPlusSymbolProvider::CreateTypeFromPrimitive
 Erstellt einen Typ aus der angegebenen primitiven Typs.  
   
 ## <a name="syntax"></a>Syntax  
@@ -44,7 +46,7 @@ int CreateTypeFromPrimitive(
   
 #### <a name="parameters"></a>Parameter  
  `dwPrimType`  
- [in] Der Wert aus der [CorElementType-Enumeration](CorElementType%20Enumeration.xml) der den primitiven Typ darstellt.  
+ [in] Der Wert aus der [CorElementType-Enumeration](/dotnet/framework/unmanaged-api/metadata/corelementtype-enumeration) , der den primitiven Typ darstellt.  
   
  `pAddress`  
  [in] Ein Adressobjekt dargestellt durch eine [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) Schnittstelle.  
@@ -53,12 +55,12 @@ int CreateTypeFromPrimitive(
  [in] Gibt eine [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) -Objekt, das den Typ beschreibt.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Bei erfolgreicher Ausführung gibt `S_OK`andernfalls wird ein Fehlercode zurückgegeben.  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
 ## <a name="example"></a>Beispiel  
  Das folgende Beispiel veranschaulicht die Implementierung dieser Methode für eine **CDebugSymbolProvider** -Objekt, das macht die [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) Schnittstelle.  
   
-```cpp#  
+```cpp  
 HRESULT CDebugSymbolProvider::CreateTypeFromPrimitive(  
     DWORD dwPrimType,  
     IDebugAddress* pAddress,  

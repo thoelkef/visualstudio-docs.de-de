@@ -1,77 +1,78 @@
 ---
-title: "Subtraktionsoperator (-) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "-"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "--Operator"
-  - "--Operator, Informationen über den --Operator"
-  - "Arithmetische Operatoren, Subtraktion"
-  - "Negationsoperator"
-  - "Operatoren, Subtraktion"
-  - "Subtraktionsoperator, Syntax"
+title: Subtraktionsoperator (-) (JavaScript) | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: '-'
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- '- operator, about - operator'
+- '- operator'
+- negation operator
+- subtraction operator, syntax
+- arithmetic operators, subtraction
+- operators, subtraction
 ms.assetid: cd0681d3-15cd-49fe-b4dd-e087de55d778
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: fb79aab0a57c733871dbfc73ac96c7ddbf4db37c
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# Subtraktionsoperator (-) (JavaScript)
-Subtrahiert den Wert eines Ausdrucks von einem anderen oder bewirkt die unäre Negation eines einzelnen Ausdrucks.  
+# <a name="subtraction-operator---javascript"></a>Subtraktionsoperator (-) (JavaScript)
+Subtrahiert den Wert eines Ausdrucks von einem anderen oder unäre Negation von einem einzelnen Ausdruck enthält.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
   
 result = number1 - number2;  
-  
 ```  
   
-## Parameter  
+## <a name="parameters"></a>Parameter  
  *Ergebnis*  
  Beliebige numerische Variable.  
   
  `number`  
- Beliebiger numerischer Ausdruck.  
+ Ein beliebiger numerischer Ausdruck.  
   
  `number1`  
- Beliebiger numerischer Ausdruck.  
+ Ein beliebiger numerischer Ausdruck.  
   
  `number2`  
- Beliebiger numerischer Ausdruck.  
+ Ein beliebiger numerischer Ausdruck.  
   
-## Hinweise  
- In Syntax 1 wird der Subtraktionsoperator \(**\-**\) verwendet, um die Differenz zweier Zahlen durch arithmetische Subtraktion zu bestimmen.  In Syntax 2 wird der Subtraktionsoperator \(**\-**\) als unärer Negationsoperator verwendet, um den negativen Wert eines Ausdrucks anzugeben.  
+## <a name="remarks"></a>Hinweise  
+ In der Syntax 1 wird die  **-**  Operator wird der arithmetische Subtraktion-Operator verwendet, um den Unterschied zwischen zwei Zahlen zu suchen. In der Syntax 2 wird die  **-**  Operator wird als der unäre Negationsoperator verwendet, um den negativen Wert eines Ausdrucks anzugeben.  
   
- In Syntax 2 werden Ausdrücke wie bei allen anderen unären Operatoren wie folgt ausgewertet:  
+ Bei Syntax 2 wird werden wie alle unäre Operatoren für Ausdrücke wie folgt ausgewertet:  
   
--   Wenn der Operator auf die Ausdrücke "undefined" oder `null` angewendet wird, entsteht ein Laufzeitfehler.  
+-   Wenn undefined zugewiesen oder `null` Ausdrücke ein Laufzeitfehler ausgelöst wird.  
   
 -   Objekte werden in Zeichenfolgen konvertiert.  
   
--   Zeichenfolgen werden, sofern möglich, in Zahlen konvertiert.  Andernfalls wird ein Laufzeitfehler generiert.  
+-   Zeichenfolgen werden nach Möglichkeit in Zahlen konvertiert. Wenn dies nicht der Fall ist, wird ein Laufzeitfehler ausgelöst.  
   
--   Boolesche Werte werden wie Zahlen behandelt \(0 \= false, 1 \= true\).  
+-   Boolesche Werte werden als Zahlen (0, wenn "false", 1, wenn "true") behandelt.  
   
- Der Operator wird auf die resultierende Zahl angewendet.  Wenn das Ergebnis in Syntax 2 ungleich Null ist, entspricht *result* der resultierenden Zahl mit umgekehrtem Vorzeichen.  Wenn die resultierende Zahl Null ist, ist *result* gleich Null.  
+ Der Operator wird auf die daraus resultierende Zahl angewendet. In der Syntax 2, wenn die daraus resultierende Zahl ungleich NULL ist, *Ergebnis* entspricht die daraus resultierende Zahl mit umgekehrtem Vorzeichen. Wenn die daraus resultierende Zahl Null ist, *Ergebnis* 0 (null).  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
-## Siehe auch  
- [Subtraktionszuweisungsoperator \(\-\=\)](../../javascript/reference/subtraction-assignment-operator-decrement-equal-javascript.md)   
+## <a name="see-also"></a>Siehe auch  
+ [Subtraktionszuweisungsoperator (-)](../../javascript/reference/subtraction-assignment-operator-decrement-equal-javascript.md)   
  [Operatorrangfolge](../../javascript/operator-subtractprecedence-javascript.md)   
- [Zusammenfassung der Operatoren \(JavaScript\)](../../javascript/misc/operator-subtractsummary-javascript.md)
+ [Zusammenfassung der Operatoren (JavaScript)](../../javascript/misc/operator-subtractsummary-javascript.md)

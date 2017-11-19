@@ -1,41 +1,43 @@
 ---
-title: "Datenobjekt erwartet | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "VS.WebClient.Help.SCRIPT5006"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
+title: Date-Objekt erwartet | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: javascript
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: VS.WebClient.Help.SCRIPT5006
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
 ms.assetid: d6ab82e6-ca64-46b4-a06c-5c6b0aa057cb
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 05e27b822f933ade811084552f6f0379257ae82e
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# Datenobjekt erwartet
-Sie haben versucht, die **Date.prototype.toString**\-Methode oder die **Date.prototype.valueOf**\-Methode für ein Objekt aufzurufen, das nicht vom Typ `Date` ist.  Das Objekt, für das diese Art von Aufruf erfolgt, muss vom Typ `Date` sein.  Beispiel:  
+# <a name="date-object-expected"></a>Date-Objekt erwartet
+Sie haben versucht, das Aufrufen der **Date.prototype.toString** oder **Date.prototype.valueOf** Methode für ein Objekt von einem anderen Typ als `Date`. Das Objekt dieses Typs des Aufrufs muss vom Typ `Date`. Zum Beispiel:  
   
-```javascript  
+```JavaScript  
 var o = new Object;  
 o.f = Date.prototype.toString;  
 o.f();  
 ```  
   
-### So beheben Sie diesen Fehler  
+### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
   
--   Rufen die **Date.prototype.toString**\-Methode oder die **Date.prototype.valueOf**\-Methode nur für Objekte des Typs `Date` auf.  
+-   Rufen Sie nur die **Date.prototype.toString** oder **Date.prototype.valueOf** Methoden für Objekte vom Typ `Date`.  
   
-## Siehe auch  
- [Date\-Objekt](../../javascript/reference/date-object-javascript.md)   
- [getDate\-Methode \(Datum\)](../../javascript/reference/getdate-method-date-javascript.md)   
+## <a name="see-also"></a>Siehe auch  
+ [Date-Objekt](../../javascript/reference/date-object-javascript.md)   
+ [GetDate-Methode (Datum)](../../javascript/reference/getdate-method-date-javascript.md)   
  [Systeminterne Objekte](../../javascript/intrinsic-objects-javascript.md)

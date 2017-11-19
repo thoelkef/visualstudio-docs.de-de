@@ -1,60 +1,59 @@
 ---
-title: "IDiaSegment | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSegment-Schnittstelle"
+title: IDiaSegment | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSegment interface
 ms.assetid: 384ae0e1-077e-4d4f-98de-ac43c32c882f
-caps.latest.revision: 13
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 12bc8e73457c1afc4b1799549ad43974d5771252
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSegment
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Wird von Daten aus der Nummer des Abschnitts in Segmenten des Adressbereichs.  
+# <a name="idiasegment"></a>IDiaSegment
+Ordnet Daten von der Anzahl der Abschnitt für Segmente des Adressraums.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
-IDiaSegment : IUnknown  
+IDiaSegment : IUnknown  
 ```  
   
-## Methoden in die Vtable\-Reihenfolge  
- In der folgenden Tabelle werden die Methoden von `IDiaSegment`an.  
+## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
+ Die folgende Tabelle zeigt die Methoden der `IDiaSegment`.  
   
 |Methode|Beschreibung|  
-|-------------|------------------|  
-|[IDiaSegment::get\_frame](../../debugger/debug-interface-access/idiasegment-get-frame.md)|Ruft die Segmentnummer ab.|  
-|[IDiaSegment::get\_offset](../../debugger/debug-interface-access/idiasegment-get-offset.md)|Ruft den Offset in Segmenten ab, in dem der Bereich beginnt.|  
-|[IDiaSegment::get\_length](../../debugger/debug-interface-access/idiasegment-get-length.md)|Ruft die Anzahl von Bytes im Segment ab.|  
-|[IDiaSegment::get\_read](../../debugger/debug-interface-access/idiasegment-get-read.md)|Ruft ein Flag ab, das angibt, ob das Segment gelesen werden kann.|  
-|[IDiaSegment::get\_write](../../debugger/debug-interface-access/idiasegment-get-write.md)|Ruft ein Flag ab, das angibt, ob das Segment geändert werden kann.|  
-|[IDiaSegment::get\_execute](../../debugger/debug-interface-access/idiasegment-get-execute.md)|Ruft ein Flag ab, das angibt, ob das Segment ausführbar ist.|  
-|[IDiaSegment::get\_addressSection](../../debugger/debug-interface-access/idiasegment-get-addresssection.md)|Ruft die Nummer des Abschnitts ab, die diesem Segment zuordnet.|  
-|[IDiaSegment::get\_relativeVirtualAddress](../../debugger/debug-interface-access/idiasegment-get-relativevirtualaddress.md)|Ruft die relative virtuelle Adresse \(RVA\) vom Anfang des Abschnitts ab.|  
-|[IDiaSegment::get\_virtualAddress](../../debugger/debug-interface-access/idiasegment-get-virtualaddress.md)|Ruft die virtuelle Adresse \(VA\) vom Anfang des Abschnitts ab.|  
+|------------|-----------------|  
+|[IDiaSegment::get_frame](../../debugger/debug-interface-access/idiasegment-get-frame.md)|Ruft die Anzahl Segment ab.|  
+|[IDiaSegment::get_offset](../../debugger/debug-interface-access/idiasegment-get-offset.md)|Ruft den Offset in Segmenten, die im Abschnitt beginnt.|  
+|[IDiaSegment::get_length](../../debugger/debug-interface-access/idiasegment-get-length.md)|Ruft die Anzahl der Bytes im Segment ab.|  
+|[IDiaSegment::get_read](../../debugger/debug-interface-access/idiasegment-get-read.md)|Ruft ein Flag, das angibt, ob das Segment gelesen werden kann.|  
+|[IDiaSegment::get_write](../../debugger/debug-interface-access/idiasegment-get-write.md)|Ruft ein Flag, das angibt, ob das Segment geändert werden kann.|  
+|[IDiaSegment::get_execute](../../debugger/debug-interface-access/idiasegment-get-execute.md)|Ruft ein Flag, das angibt, ob das Segment ausführbar ist.|  
+|[IDiaSegment::get_addressSection](../../debugger/debug-interface-access/idiasegment-get-addresssection.md)|Ruft die Anzahl von Abschnitt, die dieses Segment zugeordnet ist.|  
+|[IDiaSegment::get_relativeVirtualAddress](../../debugger/debug-interface-access/idiasegment-get-relativevirtualaddress.md)|Ruft die relative virtuelle Adresse (RVA) am Anfang des Abschnitts ab.|  
+|[IDiaSegment::get_virtualAddress](../../debugger/debug-interface-access/idiasegment-get-virtualaddress.md)|Ruft die virtuelle Adresse ("VA" ist), der den Anfang des Abschnitts ab.|  
   
-## Hinweise  
- Da das DIA SDK bereits ausgeführt wird, Übersetzungen im Abschnitt zu den relativen virtuellen Adressen, die meisten Anwendungen verwenden nicht die Informationen in der Segment aus zugeordnet.  
+## <a name="remarks"></a>Hinweise  
+ Da das DIA SDK bereits Übersetzungen vom Abschnittoffset zu relativen virtuellen Adressen ausgeführt werden, wird die meisten Anwendungen nicht stellen die Informationen in der segmentzuordnung.  
   
-## Hinweise für Aufrufer  
- Rufen Sie diese Schnittstelle, indem sie die [IDiaEnumSegments::Item](../../debugger/debug-interface-access/idiaenumsegments-item.md) oder [IDiaEnumSegments::Next](../../debugger/debug-interface-access/idiaenumsegments-next.md)\-Methoden aufgerufen werden.  Weitere Informationen finden Sie im Beispiel für Details.  
+## <a name="notes-for-callers"></a>Hinweise für Aufrufer  
+ Rufen Sie diese Schnittstelle durch Aufrufen der [idiaenumsegments:: Item](../../debugger/debug-interface-access/idiaenumsegments-item.md) oder [idiaenumsegments:: Next](../../debugger/debug-interface-access/idiaenumsegments-next.md) Methoden. Siehe das Beispiel für Details.  
   
-## Beispiel  
- Diese Funktion wird die Adresse aller Segmente in einer Tabelle und im nächsten Symbol an.  
+## <a name="example"></a>Beispiel  
+ Diese Funktion zeigt die Adresse eines alle Segmente in einer Tabelle und das nächste Symbol.  
   
-```cpp#  
+```C++  
 void ShowSegments(IDiaTable *pTable, IDiaSession *pSession)  
 {  
     CComPtr<IDiaEnumSegments> pSegments;  
@@ -95,14 +94,14 @@ void ShowSegments(IDiaTable *pTable, IDiaSession *pSession)
 }  
 ```  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  Header: Dia2.h  
   
  Bibliothek: diaguids.lib  
   
- DLLs: msdia80.dll  
+ DLL: "MSDIA80.dll"  
   
-## Siehe auch  
- [Schnittstellen \(Debug Interface Access SDK\)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
- [IDiaEnumSegments::Item](../../debugger/debug-interface-access/idiaenumsegments-item.md)   
+## <a name="see-also"></a>Siehe auch  
+ [Schnittstellen (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+ [Idiaenumsegments:: Item](../../debugger/debug-interface-access/idiaenumsegments-item.md)   
  [IDiaEnumSegments::Next](../../debugger/debug-interface-access/idiaenumsegments-next.md)

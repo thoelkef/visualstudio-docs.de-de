@@ -1,51 +1,51 @@
 ---
-title: "CA2221: Finalizer sollten gesch&#252;tzt sein | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA2221"
-  - "FinalizersShouldBeProtected"
-helpviewer_keywords: 
-  - "CA2221"
-  - "FinalizersShouldBeProtected"
+title: "CA2221: Finalizer sollten geschützt werden | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA2221
+- FinalizersShouldBeProtected
+helpviewer_keywords:
+- FinalizersShouldBeProtected
+- CA2221
 ms.assetid: bda03aee-4cce-45d3-907d-17f4ee030acc
-caps.latest.revision: 14
-caps.handback.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
+caps.latest.revision: "14"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 8ff2d5cd64a77f09437a07b446f486e1c2dd5024
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# CA2221: Finalizer sollten gesch&#252;tzt sein
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="ca2221-finalizers-should-be-protected"></a>CA2221: Finalizer sollten geschützt sein
 |||  
 |-|-|  
 |TypeName|FinalizersShouldBeProtected|  
 |CheckId|CA2221|  
-|Kategorie \(Category\)|Microsoft.Usage|  
-|Unterbrechende Änderung|Nicht unterbrechend|  
+|Kategorie|Microsoft.Usage|  
+|Unterbrechende Änderung|Nicht unterbrechende Änderung|  
   
-## Ursache  
- Ein öffentlicher Typ implementiert einen Finalizer, der keinen Familienzugriff \(protected\) angibt.  
+## <a name="cause"></a>Ursache  
+ Ein öffentlicher Typ implementiert einen Finalizer, der kein (geschützten) Zugriff angegeben ist.  
   
-## Regelbeschreibung  
- Finalizer müssen den Familienzugriffsmodifizierer verwenden.  Diese Regel wird von den Compilern für C\#, Visual Basic und Visual C\+\+ durchgesetzt.  
+## <a name="rule-description"></a>Regelbeschreibung  
+ Finalizer müssen den Familienzugriffsmodifizierer verwenden. Diese Regel wird vom C#-, Visual Basic und Visual C++-Compiler erzwungen.  
   
-## Behandeln von Verstößen  
- Um einen Verstoß gegen diese Regel zu beheben, ändern Sie den Finalizer, sodass er den Familienzugriff ermöglicht.  
+## <a name="how-to-fix-violations"></a>Behandeln von Verstößen  
+ Um einen Verstoß gegen diese Regel zu beheben, ändern Sie den Finalizer Familie zugegriffen werden.  
   
-## Wann sollten Warnungen unterdrückt werden?  
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?  
  Unterdrücken Sie keine Warnung dieser Regel.  
   
-## Beispiel  
- Diese Regel darf in keiner höheren .NET\-Sprache verletzt werden. Sie darf verletzt werden, wenn Sie in Microsoft Intermediate Language programmieren.  
+## <a name="example"></a>Beispiel  
+ Diese Regel kann nicht in jeder .NET-Sprache auf hoher Ebene verletzt; Es kann verletzt werden, wenn Sie Microsoft Intermediate Language schreiben.  
   
 ```  
 // =============== CLASS MEMBERS DECLARATION ===================  
@@ -80,5 +80,5 @@ manager: "wpickett"
 } // end of namespace  
 ```  
   
-## Siehe auch  
- [Dispose\-Muster](../Topic/Dispose%20Pattern.md)
+## <a name="see-also"></a>Siehe auch  
+ [Dispose-Muster](/dotnet/standard/design-guidelines/dispose-pattern)

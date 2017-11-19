@@ -1,48 +1,49 @@
 ---
-title: "leftContext-Eigenschaft ($`) (RegExp) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "$`"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "leftContext-Eigenschaft ($`)"
+title: LeftContext-Eigenschaft ($') (RegExp) (JavaScript) | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: $`
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords: leftContext property ($`)
 ms.assetid: 840e56c0-eb7c-461f-bb56-91acff9b5bcf
-caps.latest.revision: 12
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: b0234a547d2e26c6cf6b1d1a058a46135e577fdd
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# leftContext-Eigenschaft ($`) (RegExp) (JavaScript)
-Gibt die Zeichen vom Anfang einer durchsuchten Zeichenfolge bis zu der Position zurück, an der die letzte Übereinstimmung beginnt.  Schreibgeschützt.  
+# <a name="leftcontext-property--regexp-javascript"></a>leftContext-Eigenschaft ($`) (RegExp) (JavaScript)
+Gibt die Zeichen vom Anfang einer durchsuchten Zeichenfolge bis zu der Position zurück, an der die letzte Übereinstimmung beginnt. Schreibgeschützt.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
   
 RegExp.leftContext  
 ```  
   
-## Hinweise  
- Das mit dieser Eigenschaft verknüpfte Objekt ist immer das globale `RegExp`\-Objekt.  
+## <a name="remarks"></a>Hinweise  
+ Das Objekt, das dieser Eigenschaft zugeordnet ist immer die globale `RegExp` Objekt.  
   
- Der Anfangswert der `leftContext`\-Eigenschaft ist eine leere Zeichenfolge.  Der Wert der `leftContext`\-Eigenschaft wird stets geändert, wenn eine Übereinstimmung gefunden wurde.  
+ Der Anfangswert von der `leftContext` Eigenschaft ist eine leere Zeichenfolge. Der Wert, der die `leftContext` Eigenschaft ändert, wenn eine Übereinstimmung gefunden wird.  
   
-## Beispiel  
- Im folgenden Beispiel wird die Verwendung der `leftContext`\-Eigenschaft veranschaulicht:  
+## <a name="example"></a>Beispiel  
+ Das folgende Beispiel veranschaulicht die Verwendung der `leftContext`-Eigenschaft.  
   
-```javascript  
+```JavaScript  
 // Create the regular expression pattern.  
 var re = new RegExp("d(b+)(d)","ig");  
 var str = "cdbBdbsbdbdz";  
@@ -64,16 +65,16 @@ s += "lastParen: " + RegExp.lastParen + "<br />";
 document.write(s);  
 ```  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  [!INCLUDE[jsv55](../../javascript/reference/includes/jsv55-md.md)]  
   
- **Gilt für**: [RegExp\-Objekt](../../javascript/reference/regexp-object-javascript.md)  
+ **Gilt für**: [RegExp-Objekt](../../javascript/reference/regexp-object-javascript.md)  
   
-## Siehe auch  
- [$1...$9\-Eigenschaften \(RegExp\)](../../javascript/reference/dollar-1-dot-dot-dot-dollar-9-properties-regexp-javascript.md)   
- [index\-Eigenschaft \(RegExp\)](../../javascript/reference/index-property-regexp-javascript.md)   
- [input\-Eigenschaft \($\_\) \(RegExp\)](../../javascript/reference/input-property-dollar-regexp-javascript.md)   
- [lastIndex\-Eigenschaft \(RegExp\)](../../javascript/reference/lastindex-property-regexp-javascript.md)   
- [lastMatch\-Eigenschaft \($&\) \(RegExp\)](../../javascript/reference/lastmatch-property-dollar-regexp-javascript.md)   
- [lastParen\-Eigenschaft \($\+\) \(RegExp\)](../../javascript/reference/lastparen-property-dollar-regexp-javascript.md)   
- [rightContext\-Eigenschaft \($'\) \(RegExp\)](../../javascript/reference/rightcontext-property-dollar-regexp-javascript.md)
+## <a name="see-also"></a>Siehe auch  
+ [$1... $9-Eigenschaften (RegExp)](../../javascript/reference/dollar-1-dot-dot-dot-dollar-9-properties-regexp-javascript.md)   
+ [Index-Eigenschaft (RegExp)](../../javascript/reference/index-property-regexp-javascript.md)   
+ [Input-Eigenschaft ($_) (RegExp)](../../javascript/reference/input-property-dollar-regexp-javascript.md)   
+ [LastIndex-Eigenschaft (RegExp)](../../javascript/reference/lastindex-property-regexp-javascript.md)   
+ [LastMatch-Eigenschaft ($&) (RegExp)](../../javascript/reference/lastmatch-property-dollar-regexp-javascript.md)   
+ [LastParen-Eigenschaft ($ +) (RegExp)](../../javascript/reference/lastparen-property-dollar-regexp-javascript.md)   
+ [rightContext-Eigenschaft ($') (RegExp)](../../javascript/reference/rightcontext-property-dollar-regexp-javascript.md)

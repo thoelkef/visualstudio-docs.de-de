@@ -1,27 +1,30 @@
 ---
-title: "IActiveScriptAuthor::IsCommitChar | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IActiveScriptAuthor::IsCommitChar | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IActiveScriptAuthor.IsCommitChar
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "IActiveScriptAuthor::IsCommitChar"
+helpviewer_keywords: IActiveScriptAuthor::IsCommitChar
 ms.assetid: 7857c6f9-61e6-41e5-8e01-f56588c10421
-caps.latest.revision: 13
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 67dcdd7107372ee2766d59374a1d5aa9eb98576d
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# IActiveScriptAuthor::IsCommitChar
-Gibt einen Wert zurück, der angibt, ob ein bestimmtes Zeichen einen Anweisungsvervollständigungscommit durch die Anwendung starten soll.  
+# <a name="iactivescriptauthoriscommitchar"></a>IActiveScriptAuthor::IsCommitChar
+Gibt einen Wert, der angibt, ob ein angegebenes Zeichen einen Anweisung Abschluss Commit von der Anwendung ausgelöst werden soll.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 HRESULT IsCommitChar(  
@@ -30,21 +33,21 @@ HRESULT IsCommitChar(
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `ch`  
- \[in\] Das Zeichen zu testen.  
+ [in] Das zu überprüfende Zeichen.  
   
  `pfcommit`  
- \[out\] `True`, wenn das Zeichen ein Commitzeichen ist; andernfalls `False`.  
+ [out] `True` ist das Zeichen ein Commit ist, andernfalls `False`.  
   
-## Rückgabewert  
- Ein `HRESULT`.  Zu den möglichen Werten zählen, aber nicht zu, die in der folgenden Tabelle beschränkt.  
+## <a name="return-value"></a>Rückgabewert  
+ Eine `HRESULT`. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
   
-|Wert|Description|  
-|----------|-----------------|  
+|Wert|Beschreibung|  
+|-----------|-----------------|  
 |`S_OK`|Die Methode war erfolgreich.|  
   
-## Hinweise  
+## <a name="remarks"></a>Hinweise  
   
-## Siehe auch  
- [IActiveScriptAuthor\-Schnittstelle](../../winscript/reference/iactivescriptauthor-interface.md)
+## <a name="see-also"></a>Siehe auch  
+ [IActiveScriptAuthor-Schnittstelle](../../winscript/reference/iactivescriptauthor-interface.md)

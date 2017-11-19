@@ -1,51 +1,54 @@
 ---
-title: "String.raw-Funktion (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
+title: String.Raw-Funktion (JavaScript) | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
 ms.assetid: b1038b73-3944-4645-b075-3a674b313762
-caps.latest.revision: 3
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 3
+caps.latest.revision: "3"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 53df2bf0e455da8b1ccc6de3cbf3f4e3ebee4c09
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# String.raw-Funktion (JavaScript)
+# <a name="stringraw-function-javascript"></a>String.raw-Funktion (JavaScript)
 Gibt eine Vorlagenzeichenfolge in Form einer unformatierten Zeichenfolge zurück.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 String.raw`templateStr`;  
 String.raw(obj, ...substitutions);  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `templateStr`  
- Erforderlich.  Die Vorlagenzeichenfolge.  
+ Erforderlich. Die Vorlagenzeichenfolge.  
   
  `obj`  
- Erforderlich.  Ein wohlgeformtes mit der Objektliteralnotation angegebenes Objekt, wie z. B. {raw: 'Wert'}.  
+ Erforderlich. Ein wohlgeformtes mit der Objektliteralnotation angegebenes Objekt, wie z. B. {raw: 'Wert'}.  
   
  `...substitutions`  
- Dies ist optional.  Ein Array \(ein [Rest\-Parameter](../../javascript/functions-javascript.md)\), das aus einem oder mehreren Ersetzungswerten besteht.  
+ Dies ist optional. Ein Array (eine [rest-Parameter](../../javascript/functions-javascript.md)) aus einem oder mehreren Ersetzungswerten besteht.  
   
-## Hinweise  
- Die `String.raw`\-Funktion ist für die Verwendung mit [Vorlagenzeichenfolgen](../../javascript/advanced/template-strings-javascript.md) vorgesehen.  Die unformatierte Zeichenfolge enthält alle Escapezeichen und umgekehrten Schrägstriche, die in der Zeichenfolge vorhanden sind.  
+## <a name="remarks"></a>Hinweise  
+ Die `String.raw` Funktion dient zur Verwendung mit [Zeichenfolgen für Dokumentvorlagen](../../javascript/advanced/template-strings-javascript.md). Die unformatierte Zeichenfolge enthält alle Escapezeichen und umgekehrten Schrägstriche, die in der Zeichenfolge vorhanden sind.  
   
  Ein Fehler wird ausgelöst, wenn `obj` kein wohlgeformtes Objekt ist.  
   
-## Beispiel  
+## <a name="example"></a>Beispiel  
   
 ```  
 function log(arg) {  
@@ -65,9 +68,8 @@ log(String.raw({ raw: 'fred'}, 'F', 'R', 'E'));
 // Output:  
 // hello   bob  
 // hello \tbob  
-// fFrReEd  
-  
+// fFrReEd   
 ```  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  [!INCLUDE[jsv12](../../javascript/reference/includes/jsv12-md.md)]

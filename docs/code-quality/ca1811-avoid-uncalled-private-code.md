@@ -1,59 +1,60 @@
 ---
-title: "CA1811: Nicht aufgerufenen privaten Code vermeiden | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "AvoidUncalledPrivateCode"
-  - "CA1811"
-helpviewer_keywords: 
-  - "CA1811"
-  - "AvoidUncalledPrivateCode"
+title: 'CA1811: Nicht aufgerufenen privaten Code vermeiden | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- AvoidUncalledPrivateCode
+- CA1811
+helpviewer_keywords:
+- CA1811
+- AvoidUncalledPrivateCode
 ms.assetid: aadbba74-7821-475f-8980-34d17c0a0a8b
-caps.latest.revision: 20
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 20
+caps.latest.revision: "20"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: fc7bac9804c42cb7910df6b6d89ad766b09ee0d9
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# CA1811: Nicht aufgerufenen privaten Code vermeiden
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="ca1811-avoid-uncalled-private-code"></a>CA1811: Nicht aufgerufenen privaten Code vermeiden
 |||  
 |-|-|  
 |TypeName|AvoidUncalledPrivateCode|  
 |CheckId|CA1811|  
-|Kategorie \(Category\)|Microsoft.Performance|  
+|Kategorie|Microsoft.Performance|  
 |Unterbrechende Änderung|Nicht unterbrechend|  
   
-## Ursache  
- Zu einem privaten oder internen Member \(auf Assemblyebene\) gibt es in der Assembly keine Aufrufer, er wird nicht durch die Common Language Runtime und nicht durch einen Delegaten aufgerufen.  Die folgenden Member werden von dieser Regel nicht überprüft:  
+## <a name="cause"></a>Ursache  
+ Ein privater oder internen (auf Assemblyebene)-Member in der Assembly keine Aufrufer, wird nicht aufgerufen werden, indem die common Language Runtime und nicht durch einen Delegaten aufgerufen. Die folgenden Member werden nicht durch diese Regel überprüft:  
   
--   Explizite Schnittstellenmember.  
+-   Explizite Mitglieder.  
   
 -   Statische Konstruktoren.  
   
 -   Serialisierungskonstruktoren.  
   
--   Mit <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName> oder <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName> markierte Methoden.  
+-   Mit markierte Methoden <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName> oder <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName>.  
   
--   Member, bei denen es sich um Überschreibungen handelt.  
+-   Elemente, die Außerkraftsetzungen beschränkt sind.  
   
-## Regelbeschreibung  
- Diese Regel kann fälschlicherweise Verstöße melden, wenn es Einstiegspunkte gibt, die derzeit nicht durch die Regellogik identifiziert werden.  Auch gibt ein Compiler möglicherweise nicht aufrufbaren Code in eine Assembly aus.  
+## <a name="rule-description"></a>Regelbeschreibung  
+ Mit dieser Regel kann Berichts falsch positive Ergebnisse, wenn Einstiegspunkte Auftreten von der Regellogik derzeit nicht identifiziert werden. Darüber hinaus kann ein Compiler nicht aufrufbaren Code in eine Assembly ausgeben.  
   
-## Behandeln von Verstößen  
- Um einen Verstoß gegen diese Regel zu beheben, entfernen Sie den nicht aufrufbaren Code, oder fügen Sie Code hinzu, der den Code aufruft.  
+## <a name="how-to-fix-violations"></a>Behandeln von Verstößen  
+ Um einen Verstoß gegen diese Regel zu beheben, entfernen Sie den aufrufbaren Code aus, oder fügen Sie Code, den sie aufruft.  
   
-## Wann sollten Warnungen unterdrückt werden?  
- Warnungen dieser Regel können gefahrlos unterdrückt werden.  
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?  
+ Sie können ruhig zum Unterdrücken einer Warnung dieser Regel.  
   
-## Verwandte Regeln  
+## <a name="related-rules"></a>Verwandte Regeln  
  [CA1812: Nicht instanziierte interne Klassen vermeiden](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)  
   
  [CA1801: Nicht verwendete Parameter überprüfen](../code-quality/ca1801-review-unused-parameters.md)  

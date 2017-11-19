@@ -1,70 +1,72 @@
 ---
-title: "var-Anweisung (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/22/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "var_JavaScriptKeyword"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "Deklarieren von Variablen, Var-Anweisung"
-  - "var-Anweisung"
+title: Var-Anweisung (JavaScript) | Microsoft Docs
+ms.custom: 
+ms.date: 01/22/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: var_JavaScriptKeyword
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- declaring variables, var statement
+- var statement
 ms.assetid: 56f900af-a5c4-4667-9664-5956d30f0aae
-caps.latest.revision: 18
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 16
+caps.latest.revision: "18"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 839b6904fa59b6f4ea9a5c4d8e00213cd351517a
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# var-Anweisung (JavaScript)
+# <a name="var-statement-javascript"></a>var-Anweisung (JavaScript)
 Deklariert eine Variable.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 var variable1 = value1  
 ```  
   
-## Parameter  
+## <a name="parameters"></a>Parameter  
  `variable1`  
  Der Name der Variablen, die deklariert wird.  
   
  `value1`  
  Die Startwerte, die den Variablen zugewiesen sind.  
   
-## Hinweise  
- Verwenden Sie die `var`\-Anweisung zum Deklarieren von Variablen.  Den Variablen können in der Deklaration oder später im Skript Werte zugewiesen werden.  
+## <a name="remarks"></a>Hinweise  
+ Verwenden der `var` Anweisung, um Variablen zu deklarieren. Den Variablen können in der Deklaration oder später im Skript Werte zugewiesen werden.  
   
- Eine Variable wird deklariert, wenn sie zum ersten Mal im Skript angezeigt wird.  
+ Eine Variable wird erstmalig deklariert, wird Sie in das Skript.  
   
- Sie können eine Variable deklarieren, ohne das `var`\-Schlüsselwort in der Deklaration zu verwenden und ihr einen Wert zuzuweisen.  Dies wird als *implizite Deklaration* bezeichnet und ist nicht empfehlenswert.  Eine implizite Deklaration resultiert im globalen Gültigkeitsbereich der Variablen.  Wenn eine Variable auf Prozedurebene deklariert wird, soll diese jedoch meist keinen globalen Gültigkeitsbereich haben.  Um zu verhindern, dass die Variable einen globalen Gültigkeitsbereich erhält, müssen Sie das `var`\-Schlüsselwort in der Variablendeklaration verwenden.  
+ Sie können eine Variable deklarieren, ohne die `var` -Schlüsselwort und weisen Sie einen Wert zu. Dies bezeichnet man eine *impliziten Deklaration*, und es wird nicht empfohlen. Eine implizite Deklaration gibt den globalen Gültigkeitsbereich den Variablen. Wenn Sie eine Variable auf Prozedurebene deklarieren, jedoch sollen in der Regel nicht es einen globalen Gültigkeitsbereich haben. Verwenden Sie zur Vermeidung, erteilen den globalen Gültigkeitsbereich den Variablen, die `var` Schlüsselwort in der Variablendeklaration.  
   
- Wenn Sie die Variable in der `var`\-Anweisung nicht initialisieren, wird ihr automatisch der [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]\-Wert `undefined` zugewiesen.  
+ Wenn Sie die Variable in der `var`-Anweisung nicht initialisieren, wird ihr automatisch der [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]-Wert `undefined` zugewiesen.  
   
-## Beispiel  
- Die folgenden Beispiele veranschaulichen die Verwendung der `var`\-Anweisung.  
+## <a name="example"></a>Beispiel  
+ Die folgenden Beispiele veranschaulichen die Verwendung der `var` Anweisung.  
   
-```javascript  
+```JavaScript  
 var index;  
 var name = "Thomas Jefferson";  
 var answer = 42, counter, numpages = 10;  
 var myarray = new Array();  
 ```  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
-## Siehe auch  
- [function\-Anweisung](../../javascript/reference/function-statement-javascript.md)   
- [new\-Operator](../../javascript/reference/new-operator-decrementjavascript.md)   
- [Array\-Objekt](../../javascript/reference/array-object-javascript.md)   
+## <a name="see-also"></a>Siehe auch  
+ [Function-Anweisung](../../javascript/reference/function-statement-javascript.md)   
+ [new-Operator](../../javascript/reference/new-operator-decrementjavascript.md)   
+ [Array-Objekt](../../javascript/reference/array-object-javascript.md)   
  [Variablen](../../javascript/variables-javascript.md)

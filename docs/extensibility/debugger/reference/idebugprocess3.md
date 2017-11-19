@@ -4,37 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugProcess3
-helpviewer_keywords:
-- IDebugProcess3 interface
+f1_keywords: IDebugProcess3
+helpviewer_keywords: IDebugProcess3 interface
 ms.assetid: 7bd6b952-cf34-4e66-b8f6-d472dac3748f
-caps.latest.revision: 24
+caps.latest.revision: "24"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
-ms.openlocfilehash: 6b98394c4880ce78eb8069534b009ea351608cd6
-ms.lasthandoff: 04/05/2017
-
+ms.openlocfilehash: cc6c8fe7553a1fdff43875ec305978ea4f983843
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugprocess3"></a>IDebugProcess3
 Diese Schnittstelle stellt einen laufenden Prozess und seine Programme dar. Diese Schnittstelle vorhanden ist, als Ersatz für einige Methoden in der [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) Schnittstelle. Er ermöglicht die Steuerung über alle Programme im Prozess.  
@@ -61,9 +45,9 @@ IDebugProcess3 : IDebugProcess2
   
 |Methode|Beschreibung|  
 |------------|-----------------|  
-|[Fortsetzen](../../../extensibility/debugger/reference/idebugprocess3-continue.md)|Wird fortgesetzt, Ausführung oder das schrittweise eines Prozess.|  
+|[Continue](../../../extensibility/debugger/reference/idebugprocess3-continue.md)|Wird fortgesetzt, Ausführung oder das schrittweise eines Prozess.|  
 |[Führen Sie](../../../extensibility/debugger/reference/idebugprocess3-execute.md)|Beginnt die Ausführung eines Prozesses.|  
-|[Schritt](../../../extensibility/debugger/reference/idebugprocess3-step.md)|Eine Anweisung oder-Anweisung im Prozess Schritte weitergeleitet werden.|  
+|[Step](../../../extensibility/debugger/reference/idebugprocess3-step.md)|Eine Anweisung oder-Anweisung im Prozess Schritte weitergeleitet werden.|  
 |[GetDebugReason](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md)|Ruft den Grund, dass der Prozess zum Debuggen gestartet wurde.|  
 |[SetHostingProcessLanguage](../../../extensibility/debugger/reference/idebugprocess3-sethostingprocesslanguage.md)|Die hosting-Sprache festgelegt so, dass die entsprechenden ausdrucksauswertung Debugging-Modul geladen werden kann.|  
 |[GetHostingProcessLanguage](../../../extensibility/debugger/reference/idebugprocess3-gethostingprocesslanguage.md)|Ruft die Sprache, die zurzeit für diesen Prozess festgelegt.|  

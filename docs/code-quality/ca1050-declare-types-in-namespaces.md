@@ -1,11 +1,10 @@
 ---
-title: 'CA1050: Declare types in namespaces | Microsoft Docs'
+title: 'CA1050: Typen in Namespaces deklarieren | Microsoft Docs'
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,57 +14,44 @@ helpviewer_keywords:
 - DeclareTypesInNamespaces
 - CA1050
 ms.assetid: 1002748d-ac8d-404f-85dd-7a12d1ad3e05
-caps.latest.revision: 15
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: c8027dcac0515017a1e71c839f00cf84c8073ae2
-ms.contentlocale: de-de
-ms.lasthandoff: 08/30/2017
-
+caps.latest.revision: "15"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: c0aeaaf3531c45668b8804a6285be5df211c2754
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="ca1050-declare-types-in-namespaces"></a>CA1050: Declare types in namespaces
+# <a name="ca1050-declare-types-in-namespaces"></a>CA1050: Typen in Namespaces deklarieren
 |||  
 |-|-|  
 |TypeName|DeclareTypesInNamespaces|  
 |CheckId|CA1050|  
-|Category|Microsoft.Design|  
-|Breaking Change|Breaking|  
+|Kategorie|Microsoft.Design|  
+|Unterbrechende Änderung|Breaking|  
   
-## <a name="cause"></a>Cause  
- A public or protected type is defined outside the scope of a named namespace.  
+## <a name="cause"></a>Ursache  
+ Ein öffentlicher oder geschützter Typ ist außerhalb des Bereichs eines benannten Namespaces definiert.  
   
-## <a name="rule-description"></a>Rule Description  
- Types are declared in namespaces to prevent name collisions, and as a way to organize related types in an object hierarchy. Types that are outside any named namespace are in a global namespace that cannot be referenced in code.  
+## <a name="rule-description"></a>Regelbeschreibung  
+ Typen werden in Namespaces, um Namenskonflikte zu verhindern und als eine Möglichkeit, verwandte Typen in einer Objekthierarchie zu organisieren deklariert. Typen, die außerhalb eines benannten Namespaces befinden sich in einen globalen Namespace, der im Code verwiesen werden kann.  
   
-## <a name="how-to-fix-violations"></a>How to Fix Violations  
- To fix a violation of this rule, place the type in a namespace.  
+## <a name="how-to-fix-violations"></a>Behandeln von Verstößen  
+ Um einen Verstoß gegen diese Regel zu beheben, platzieren Sie den Typ in einem Namespace.  
   
-## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
- Although you never have to suppress a warning from this rule, it is safe to do this when the assembly will never be used together with other assemblies.  
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?  
+ Obwohl Sie nie zum Unterdrücken einer Warnung dieser Regel müssen, ist es sicher, dieses Verfahren, wenn die Assembly nie zusammen mit anderen Assemblys verwendet werden soll.  
   
-## <a name="example"></a>Example  
- The following example shows a library that has a type incorrectly declared outside a namespace, and a type that has the same name declared in a namespace.  
+## <a name="example"></a>Beispiel  
+ Im folgende Beispiel wird gezeigt, eine Bibliothek, deren Typ falsch außerhalb eines Namespace deklariert und ein Typ, der den gleichen Namen in einem Namespace deklariert hat.  
   
- [!code-csharp[FxCop.Design.TypesLiveInNamespaces#1](../code-quality/codesnippet/CSharp/ca1050-declare-types-in-namespaces_1.cs)] [!code-vb[FxCop.Design.TypesLiveInNamespaces#1](../code-quality/codesnippet/VisualBasic/ca1050-declare-types-in-namespaces_1.vb)]  
+ [!code-csharp[FxCop.Design.TypesLiveInNamespaces#1](../code-quality/codesnippet/CSharp/ca1050-declare-types-in-namespaces_1.cs)]
+ [!code-vb[FxCop.Design.TypesLiveInNamespaces#1](../code-quality/codesnippet/VisualBasic/ca1050-declare-types-in-namespaces_1.vb)]  
   
-## <a name="example"></a>Example  
- The following application uses the library that was defined previously. Note that the type that is declared outside a namespace is created when the name `Test` is not qualified by a namespace. Note also that to access the `Test` type in `Goodspace`, the namespace name is required.  
+## <a name="example"></a>Beispiel  
+ Die folgende Anwendung verwendet die Bibliothek, die zuvor definiert wurde. Beachten Sie, dass der Typ, der außerhalb eines Namespace deklariert wird erstellt wird der Name `Test` ist nicht mit einem Namespace qualifiziert. Beachten Sie auch den Zugriff auf die `Test` geben `Goodspace`, der Namespacename ist erforderlich.  
   
- [!code-csharp[FxCop.Design.TestTypesLive#1](../code-quality/codesnippet/CSharp/ca1050-declare-types-in-namespaces_2.cs)] [!code-vb[FxCop.Design.TestTypesLive#1](../code-quality/codesnippet/VisualBasic/ca1050-declare-types-in-namespaces_2.vb)]
+ [!code-csharp[FxCop.Design.TestTypesLive#1](../code-quality/codesnippet/CSharp/ca1050-declare-types-in-namespaces_2.cs)]
+ [!code-vb[FxCop.Design.TestTypesLive#1](../code-quality/codesnippet/VisualBasic/ca1050-declare-types-in-namespaces_2.vb)]

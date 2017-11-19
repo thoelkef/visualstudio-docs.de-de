@@ -1,27 +1,30 @@
 ---
-title: "IActiveScriptAuthor::GetChars | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IActiveScriptAuthor::GetChars | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IActiveScriptAuthor.GetChars
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "IActiveScriptAuthor::GetChars"
+helpviewer_keywords: IActiveScriptAuthor::GetChars
 ms.assetid: a73ba263-12f7-4d5f-b4c8-9ad7e2d5d3cb
-caps.latest.revision: 12
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: abc9c819c2dd4a75d6223af86b4fe89baebc186b
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# IActiveScriptAuthor::GetChars
-Gibt den Satz von Abschlusszeichen für einen angeforderten Abschlusskontext zurück.  
+# <a name="iactivescriptauthorgetchars"></a>IActiveScriptAuthor::GetChars
+Gibt den Satz der Abschluss Zeichen für einen Kontext für die angeforderte Abschluss.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 HRESULT GetChars(  
@@ -30,35 +33,35 @@ HRESULT GetChars(
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `fRequestedList`  
- \[in\] Der angeforderte Abschlusskontext.  
+ [in] Der angeforderte Abschluss-Kontext.  
   
-|Konstante|Wert|Description|  
-|---------------|----------|-----------------|  
-|SCRIPT\_CMPL\_ENUM\_TRIGGER|0x0001|Fordert die Enumeration der linken Seite.|  
-|SCRIPT\_CMPL\_MEMBER\_TRIGGER|0x0002|Fordert den Memberabschlusskontext.|  
-|SCRIPT\_CMPL\_PARAM\_TRIGGER|0x0003|Fordert die Parameterliste.|  
-|SCRIPT\_CMPL\_COMMIT|0x0004|Fordert Abschluss der Parameterliste.|  
+|Konstante|Wert|Beschreibung|  
+|--------------|-----------|-----------------|  
+|SCRIPT_CMPL_ENUM_TRIGGER|0 x 0001|Fordert an die linken Seite-Enumeration.|  
+|SCRIPT_CMPL_MEMBER_TRIGGER|0 x 0002|Fordert den Member-Abschluss-Kontext.|  
+|SCRIPT_CMPL_PARAM_TRIGGER|0 x 0003|Fordert die Parameterliste.|  
+|SCRIPT_CMPL_COMMIT|0 x 0004|Fordert den Abschluss der Parameterliste.|  
   
  `pbstrChars`  
- \[out\] Die Zeichen, die zum angeforderten Abschlusskontext entsprechen.  
+ [out] Die Zeichen, die auf den Abschluss des angeforderten Vorgangs Kontext entsprechen.  
   
-|`fRequestedList`\-Parameter|Zeichen zurückgegeben|  
-|---------------------------------|---------------------------|  
-|SCRIPT\_CMPL\_ENUM\_TRIGGER|"."|  
-|SCRIPT\_CMPL\_MEMBER\_TRIGGER|"\="|  
-|SCRIPT\_CMPL\_PARAM\_TRIGGER|\(","|  
-|SCRIPT\_CMPL\_COMMIT|"\(\)"|  
+|`fRequestedList`Parameter|Zurückgegebene Zeichen|  
+|--------------------------------|-------------------------|  
+|SCRIPT_CMPL_ENUM_TRIGGER|"."|  
+|SCRIPT_CMPL_MEMBER_TRIGGER|"="|  
+|SCRIPT_CMPL_PARAM_TRIGGER|"(,"|  
+|SCRIPT_CMPL_COMMIT|"()"|  
   
-## Rückgabewert  
- Ein `HRESULT`.  Zu den möglichen Werten zählen, aber nicht zu, die in der folgenden Tabelle beschränkt.  
+## <a name="return-value"></a>Rückgabewert  
+ Eine `HRESULT`. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
   
-|Wert|Description|  
-|----------|-----------------|  
+|Wert|Beschreibung|  
+|-----------|-----------------|  
 |`S_OK`|Die Methode war erfolgreich.|  
   
-## Hinweise  
+## <a name="remarks"></a>Hinweise  
   
-## Siehe auch  
- [IActiveScriptAuthor\-Schnittstelle](../../winscript/reference/iactivescriptauthor-interface.md)
+## <a name="see-also"></a>Siehe auch  
+ [IActiveScriptAuthor-Schnittstelle](../../winscript/reference/iactivescriptauthor-interface.md)

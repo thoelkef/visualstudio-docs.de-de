@@ -1,67 +1,67 @@
 ---
-title: "IDebugBinder3::GetTypeArguments | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugBinder3::GetTypeArguments"
-helpviewer_keywords: 
-  - "IDebugBinder3::GetTypeArguments-Methode"
+title: IDebugBinder3::GetTypeArguments | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugBinder3::GetTypeArguments
+helpviewer_keywords: IDebugBinder3::GetTypeArguments method
 ms.assetid: fa0c37a7-327f-463e-9a9d-bb3f534584cb
-caps.latest.revision: 7
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 7aff11599f00ad417915c4cb4f4e6ad907b5660d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugBinder3::GetTypeArguments
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Diese Methode ruft eine Liste der Argumenttypen ab, die diesem Objekt zugeordnet sind.  
+# <a name="idebugbinder3gettypearguments"></a>IDebugBinder3::GetTypeArguments
+Diese Methode ruft eine Liste der Argumenttypen, die diesem Objekt zugeordneten ab.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```cpp  
-HRESULT GetTypeArguments(  
-   UINT          skip,  
-   UINT          count,  
-   IDebugField** ppFields,  
-   UINT*         pFetched  
+HRESULT GetTypeArguments(  
+   UINT          skip,  
+   UINT          count,  
+   IDebugField** ppFields,  
+   UINT*         pFetched  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetTypeArguments(  
-   uint          skip,  
-   uint          count,  
-   IDebugField[] ppFields,  
-   out uint      pFetched  
+   uint          skip,  
+   uint          count,  
+   IDebugField[] ppFields,  
+   out uint      pFetched  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `skip`  
- \[in\]Bevor Zahl Felder zu überspringen, Argumenttypen abgerufen werden.  
+ [in] Anzahl der Felder, die vor dem Abrufen von Argumenttypen überspringen.  
   
  `count`  
- \[in\]  Die Anzahl der zurückzugebenden Feldern Argument \(gibt außerdem die Größe des Arrays `ppFields` \).  
+ [in] Die Anzahl der zurückzugebenden Argument Felder (auch gibt die Größe des der `ppFields` Arrays).  
   
  `ppFields`  
- \[in, out\]  Ein Array von Feldern, die bei Rückgabe dieser Methode aufgefüllt werden.  
+ [in, out] Ein Array von Feldern, die bei der Rückgabe dieser Methode gefüllt werden.  
   
  `pFetched`  
- \[out\]  \(optional\) Die Anzahl der den Argumenttyp Felder, die tatsächlich zurückgegeben werden.  
+ [out] \(optional) Die Nummer des Arguments geben tatsächlich zurückgegebenen Felder an.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Hinweise  
- Die Anzahl von Argumenttypen kann mit [GetTypeArgumentCount](../../../extensibility/debugger/reference/idebugbinder3-gettypeargumentcount.md)vorab abgerufen werden.  
+## <a name="remarks"></a>Hinweise  
+ Die Anzahl der Argumenttypen kann vorab abgerufen werden, mit [GetTypeArgumentCount](../../../extensibility/debugger/reference/idebugbinder3-gettypeargumentcount.md).  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)   
  [GetTypeArgumentCount](../../../extensibility/debugger/reference/idebugbinder3-gettypeargumentcount.md)

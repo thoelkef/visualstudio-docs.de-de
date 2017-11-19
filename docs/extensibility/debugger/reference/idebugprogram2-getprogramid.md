@@ -1,53 +1,53 @@
 ---
-title: "IDebugProgram2::GetProgramId | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugProgram2::GetProgramId"
-helpviewer_keywords: 
-  - "IDebugProgram2::GetProgramId"
+title: IDebugProgram2::GetProgramId | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugProgram2::GetProgramId
+helpviewer_keywords: IDebugProgram2::GetProgramId
 ms.assetid: 2c31c0aa-2b71-46c7-849c-356e237d26f8
-caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 094dde4330775b77a50ce98451fc9dafcd3bd23b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugProgram2::GetProgramId
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Ruft eine GUID für dieses Programm ab.  
+# <a name="idebugprogram2getprogramid"></a>IDebugProgram2::GetProgramId
+Ruft eine GUID für dieses Programm an.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT GetProgramId(   
-   GUID* pguidProgramId  
+```cpp  
+HRESULT GetProgramId(   
+   GUID* pguidProgramId  
 );  
 ```  
   
-```c#  
-int GetProgramId(   
-   out Guid pguidProgramId  
+```csharp  
+int GetProgramId(   
+   out Guid pguidProgramId  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `pguidProgramId`  
- \[out\]  Gibt `GUID` für dieses Programm zurück.  
+ [out] Gibt die `GUID` für dieses Programm.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Hinweise  
- Ein Modul \(Debug\) muss DE den Programmbezeichner zurückgeben, der ursprünglich zum [OnAttach](../../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) oder [Anfügen](../../../extensibility/debugger/reference/idebugengine2-attach.md)\-Methode übergeben wird.  Dadurch kann die Identifikation des Programms über Debugger Komponenten.  
+## <a name="remarks"></a>Hinweise  
+ Ein Debugging-Modul (DE) muss den Programmbezeichner, der ursprünglich übergeben Zurückgeben der [OnAttach](../../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) oder [Anfügen](../../../extensibility/debugger/reference/idebugengine2-attach.md) Methoden. Dies ermöglicht die Identifikation des Programms über Debugger Komponenten.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   
  [OnAttach](../../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md)   
  [Anfügen](../../../extensibility/debugger/reference/idebugengine2-attach.md)

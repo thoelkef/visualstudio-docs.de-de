@@ -1,60 +1,62 @@
 ---
-title: "Callback-Funktionen, die von der IDE implementiert | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Source Control-Plug-ins Rückruffunktionen"
-  - "Rückruffunktionen Source Control-Plug-ins"
+title: "Von der IDE implementiert Rückruffunktionen | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- source control plug-ins, callback functions
+- callback functions, source control plug-ins
 ms.assetid: 4a8833f0-6ac0-4ea7-9400-8275aa991468
-caps.latest.revision: 24
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 24
+caps.latest.revision: "24"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: fbc71942a87685a4011b13d1054c4855a5e18012
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Callback-Funktionen, die von der IDE implementiert
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Integration mit stellen kann der integrated Development Environment \(IDE\) als nahtlos wie möglich und eine einheitliche benutzererfahrung das Quellcodeverwaltungs\-Plug\-in Rückruffunktionen verwenden, die von der IDE implementiert werden. Das plug\-in kann diese Funktionen zum entsprechenden Zeitpunkt während eines Datenquellen\-Steuerelement übergeben von Informationen an die IDE aufrufen. die IDE können Sie diese Informationen als eingebettete Elemente in die systemeigene Benutzeroberfläche anzeigen. Der Benutzer hat eine weniger fragmentierte Erfahrung in diesem Szenario als wenn das plug\-in eine eigene Benutzeroberfläche beschäftigt.  
+# <a name="callback-functions-implemented-by-the-ide"></a>Rückruffunktionen implementiert, die von der IDE
+Stellen Sie die Integration mit der integrierten Entwicklungsumgebung (IDE) als eine nahtlose möglichst und eine einheitliche benutzererfahrung das Quellsteuerelement-Plug-in Rückruffunktionen können, die von der IDE implementiert werden. Das plug-in kann diese Funktionen zu geeigneten Zeitpunkten während einer Quelle-Steuerungsvorgang zum Weiterleiten von Informationen an den IDE aufrufen; die IDE können Sie diese Informationen als eingebettete Elemente in der systemeigenen Benutzeroberfläche anzeigen. Der Benutzer hat eine weniger fragmentierte Experience in diesem Szenario als wenn das plug-in eine eigene Benutzeroberfläche beschäftigt.  
   
- Die erforderlichen Header\-Datei ist scc.h. Der Standardspeicherort ist \\Program Files\\VSIP 8.0\\EnvSDK\\common\\inc\\. Sie ist auch in den VSIP\-Ordner mit dem Datenquellen\-Steuerelement\-Plug\-in Beispiel am \\Program Files\\VSIP 8.0\\MSSCCI\\.  
+ Die erforderlichen Header-Datei ist scc.h. Der Standardspeicherort ist \Program Files\VSIP 8.0\EnvSDK\common\inc\\. Es ist auch im Ordner "VSIP" mit dem Datenquellen-Steuerelement-Plug-in Beispiel am \Program Files\VSIP 8.0\MSSCCI\\.  
   
-## In diesem Abschnitt  
+## <a name="in-this-section"></a>In diesem Abschnitt  
  [LPTEXTOUTPROC](../extensibility/lptextoutproc.md)  
- Beschreibt die Callback\-Funktion, mit der [SccOpenProject](../extensibility/sccopenproject-function.md) werden die Nachrichten vom Datenquellen\-Steuerelement\-Plug\-in in der IDE angezeigt.  
+ Beschreibt die Rückruffunktion, die vom verwendet [SccOpenProject](../extensibility/sccopenproject-function.md) um Meldungen aus dem Quellsteuerelement-Plug-in über die IDE anzuzeigen.  
   
  [POPLISTFUNC](../extensibility/poplistfunc.md)  
- Beschreibt die Callback\-Funktion, mit der [SccPopulateList](../extensibility/sccpopulatelist-function.md) bei die IDE keinen vollständigen Zugriff auf Informationen, die nur für das Quellcodeverwaltungs\-Plug\-in, z. B. eine vollständige Liste der Dateien unter Versionskontrolle verfügbar sind.  
+ Beschreibt die Rückruffunktion, die vom verwendet [SccPopulateList](../extensibility/sccpopulatelist-function.md) bei die IDE keinen vollständigen Zugriff auf Informationen, die nur die Datenquellen-Steuerelement-Plug-in, z. B. eine vollständige Liste der Dateien unter Versionskontrolle zur Verfügung steht.  
   
  [QUERYCHANGESFUNC](../extensibility/querychangesfunc.md)  
- Beschreibt die Callback\-Funktion, mit der die [SccQueryChanges](../extensibility/sccquerychanges-function.md) Vorgang.  
+ Beschreibt die Rückruffunktion, die von verwendet wird, die [SccQueryChanges](../extensibility/sccquerychanges-function.md) Vorgang.  
   
  [POPDIRLISTFUNC](../extensibility/popdirlistfunc.md)  
- Beschreibt die Callback\-Funktion, mit der die [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md) Vorgang.  
+ Beschreibt die Rückruffunktion, die von verwendet wird, die [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md) Vorgang.  
   
  [OPTNAMECHANGEPFN](../extensibility/optnamechangepfn.md)  
- Beschreibt die Callback\-Funktion festlegen, indem Sie einen Aufruf der [SccSetOption](../extensibility/sccsetoption-function.md) die das Datenquellen\-Steuerelement kommunizieren Namensänderungen zurück, in der IDE\-Plug\-in ermöglicht.  
+ Beschreibt die Rückruffunktion, die durch einen Aufruf zum Festlegen der [SccSetOption](../extensibility/sccsetoption-function.md) mit der die Datenquellen-Steuerelement-Plug-In für die Kommunkation Namensänderungen zurück, in der IDE.  
   
-## Verwandte Abschnitte  
+## <a name="related-sections"></a>Verwandte Abschnitte  
  [SccOpenProject](../extensibility/sccopenproject-function.md)  
  Öffnet ein Projekt.  
   
  [SccPopulateList](../extensibility/sccpopulatelist-function.md)  
- Untersucht die Liste der Dateien für den aktuellen Status an. Darüber hinaus verwendet die `pfnPopulate` Funktion, um den Aufrufer zu benachrichtigen, wenn eine Datei nicht den Kriterien entsprechen der `nCommand`.  
+ Überprüft die Liste der Dateien für ihren aktuellen Status an. Darüber hinaus verwendet der `pfnPopulate` Funktion, um den Aufrufer benachrichtigen, wenn eine Datei nicht den Kriterien entsprechen der `nCommand`.  
   
  [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md)  
- Überprüft eine Liste von Verzeichnissen und Dateien in einem Projekt oder in Projekten, die verwaltet werden. Jedes Verzeichnis und der Dateiname gefunden wird, eine Callback\-Funktion übergeben.  
+ Überprüft eine Liste von Verzeichnissen und Dateien in einem Projekt oder in Projekten, die in der quellcodeverwaltung sind. Jeder Name Verzeichnis- und Dateinamen, die gefunden wird, eine Rückruffunktion übergeben.  
   
  [SccQueryChanges](../extensibility/sccquerychanges-function.md)  
- Überprüft die Änderungen, die eine Liste der Dateien vorgenommen wurden. Jeder Dateiname wird an eine Callback\-Funktion zusammen mit seinem Änderungsstatus übergeben.  
+ Überprüft die Änderungen des Computernamens, die auf eine Liste von Dateien vorgenommen wurden. Jeder Dateiname wird auf eine Rückruffunktion zusammen mit seinem Änderungsstatus übergeben.  
   
  [SccSetOption](../extensibility/sccsetoption-function.md)  
- Legt eine Vielzahl von Optionen fest. Jede Option beginnt mit `SCC_OPT_xxx` und verfügt über einen eigenen definierten Satz von Werten.  
+ Legt eine Vielzahl von Optionen an. Jede Option beginnt mit `SCC_OPT_xxx` und weist einen eigenen definierten Satz von Werten.  
   
- [Source Control\-Plug\-ins](../extensibility/source-control-plug-ins.md)  
- Beschreibt den Inhalt des Abschnitts Verweis Source Control\-Plug\-in\-SDK.
+ [Quellcodeverwaltungs-Plug-Ins](../extensibility/source-control-plug-ins.md)  
+ Beschreibt den Inhalt von der Quelle Steuerelement-Plug-in SDK im Abschnitt "Referenz".

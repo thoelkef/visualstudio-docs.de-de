@@ -1,32 +1,34 @@
 ---
-title: "Die ausgew&#228;hlte Klasse kann nicht gel&#246;scht werden, da sie als R&#252;ckgabetyp f&#252;r mindestens eine DataContext-Methode verwendet wird | Microsoft Docs"
-ms.custom: ""
-ms.date: "09/21/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: "Die ausgewählte Klasse kann nicht gelöscht werden, da er als Rückgabetyp für mindestens eine DataContext-Methode dient | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: d68254a0-f3a1-47e2-aed3-a83471e1d711
-caps.latest.revision: 3
-caps.handback.revision: 1
-author: "mikeblome"
-ms.author: "mblome"
-manager: "ghogen"
+caps.latest.revision: "3"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.technology: vs-data-tools
+ms.openlocfilehash: 865c8f9fa91c24eed1e10bde68b239932237a62b
+ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/09/2017
 ---
-# Die ausgew&#228;hlte Klasse kann nicht gel&#246;scht werden, da sie als R&#252;ckgabetyp f&#252;r mindestens eine DataContext-Methode verwendet wird
-Der Rückgabetyp mindestens einer <xref:System.Data.Linq.DataContext>\-Methode ist die ausgewählte Entitätsklasse.Durch das Löschen einer Entitätsklasse, die als Rückgabetyp für eine <xref:System.Data.Linq.DataContext>\-Methode verwendet wird, tritt bei der Kompilierung des Projekts ein Fehler auf.Zum Löschen der ausgewählten Entitätsklasse identifizieren Sie die <xref:System.Data.Linq.DataContext>\-Methoden, die sie verwenden, und legen Sie deren Rückgabetypen auf eine andere Entitätsklasse fest.  
+# <a name="the-selected-class-cannot-be-deleted-because-it-is-used-as-a-return-type-for-one-or-more-datacontext-methods"></a>Die ausgewählte Klasse kann nicht gelöscht werden, da sie als Rückgabetyp für mindestens eine DataContext-Methode verwendet wird.
+Der Rückgabetyp mindestens einer <xref:System.Data.Linq.DataContext>-Methode ist die ausgewählte Entitätsklasse. Durch das Löschen einer Entitätsklasse, die als Rückgabetyp für eine <xref:System.Data.Linq.DataContext>-Methode verwendet wird, tritt bei der Kompilierung des Projekts ein Fehler auf. Zum Löschen der ausgewählten Entitätsklasse identifizieren Sie die <xref:System.Data.Linq.DataContext>-Methoden, die sie verwenden, und legen Sie deren Rückgabetypen auf eine andere Entitätsklasse fest.  
   
- Für das Zurücksetzen der Rückgabetypen von <xref:System.Data.Linq.DataContext>\-Methoden auf ihre ursprünglichen, automatisch erstellten Typen löschen Sie zunächst die <xref:System.Data.Linq.DataContext>\-Methode aus dem Methodenbereich und ziehen anschließend das Objekt aus dem **Server\-Explorer**\/**Datenbank\-Explorer** erneut in den O\/R\-Designer.  
+ Zum Zurücksetzen der Rückgabetypen von <xref:System.Data.Linq.DataContext> -Methoden auf ihre ursprünglichen automatisch generierten Typen löschen zunächst die <xref:System.Data.Linq.DataContext> Methode aus dem Methodenbereich und ziehen anschließend das Objekt aus **Server-Explorer** / **Datenbank-Explorer** erneut in den O/R-Designer.  
   
-### So beheben Sie diesen Fehler  
+### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
   
-1.  Identifizieren Sie die <xref:System.Data.Linq.DataContext>\-Methoden, die diese Entitätsklasse als Rückgabetyp verwenden, indem Sie im Methodenbereich eine <xref:System.Data.Linq.DataContext>\-Methode auswählen und im Fenster **Eigenschaften** die Eigenschaft **Rückgabetyp** überprüfen.  
+1.  Identifizieren <xref:System.Data.Linq.DataContext> Methoden, mit denen die Entitätsklasse als Rückgabetyp dazu eine <xref:System.Data.Linq.DataContext> Methode in den Methoden Bereich und Überprüfen der **Rückgabetyp** Eigenschaft in der **Eigenschaften** Fenster .  
   
-2.  Legen Sie den **Rückgabewert** auf eine andere Entitätsklasse fest, oder entfernen Sie die <xref:System.Data.Linq.DataContext>\-Methode aus dem Methodenbereich.  
+2.  Legen Sie die **Rückgabetyp** auf eine andere Entitätsklasse oder Entfernen der <xref:System.Data.Linq.DataContext> Methode aus dem Methodenbereich.  
   
-## Siehe auch  
- [Übersicht über den O\/R\-Designer](../Topic/LINQ%20to%20SQL%20Tools%20in%20Visual%20Studio1.md)   
- [Exemplarische Vorgehensweise: Erstellen von LINQ to SQL\-Klassen \(O\/R\-Designer\)](../Topic/Walkthrough:%20Creating%20LINQ%20to%20SQL%20Classes%20\(O-R%20Designer\).md)   
- [DataContext\-Methoden \(O\/R\-Designer\)](../data-tools/datacontext-methods-o-r-designer.md)   
- [Vorgehensweise: Ändern des Rückgabetyps einer DataContext\-Methode \(O\/R\-Designer\)](../data-tools/how-to-change-the-return-type-of-a-datacontext-method-o-r-designer.md)
+## <a name="see-also"></a>Siehe auch
+[O/R-Designer-Nachrichten](../data-tools/o-r-designer-messages.md)  
+[LINQ to SQL-tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

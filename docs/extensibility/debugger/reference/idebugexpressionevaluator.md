@@ -1,70 +1,70 @@
 ---
-title: "IDebugExpressionEvaluator | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugExpressionEvaluator"
-helpviewer_keywords: 
-  - "IDebugExpressionEvaluator-Schnittstelle"
+title: IDebugExpressionEvaluator | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugExpressionEvaluator
+helpviewer_keywords: IDebugExpressionEvaluator interface
 ms.assetid: 0636d8c3-625a-49fa-94b6-516f22b7e1bc
-caps.latest.revision: 14
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 14
+caps.latest.revision: "14"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 3b7cc2e6c0d25ceebd41648b227405978d1fb67d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugExpressionEvaluator
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
+# <a name="idebugexpressionevaluator"></a>IDebugExpressionEvaluator
 > [!IMPORTANT]
->  In Visual Studio 2015 ist diese Art der Implementierung von ausdrucksauswertungen veraltet. Informationen über das Implementieren von CLR\-ausdrucksauswertungen finden Sie unter [CLR\-Ausdrucksauswertungen](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) und [Managed Expression Evaluator Sample](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+>  In Visual Studio 2015 wird diese Möglichkeit zum Implementieren von ausdruckauswertung veraltet. Informationen zu CLR-ausdrucksauswertungen implementieren, finden Sie unter [CLR-Ausdrucksauswertungen](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) und [Managed Expression Evaluator Sample](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
- Diese Schnittstelle stellt die Auswertung eines Ausdrucks.  
+ Diese Schnittstelle stellt die ausdrucksauswertung dar.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 IDebugExpressionEvaluator : IUnknown  
 ```  
   
-## Hinweise für Implementierer  
- Die Auswertung eines Ausdrucks muss diese Schnittstelle implementieren.  
+## <a name="notes-for-implementers"></a>Hinweise für Implementierer  
+ Die ausdrucksauswertung muss diese Schnittstelle implementieren.  
   
-## Hinweise für Aufrufer  
- Um diese Schnittstelle zu erhalten, instanziieren Sie die Auswertung eines Ausdrucks durch die `CoCreateInstance` Methode, indem Sie mithilfe der Klassen\-ID \(CLSID\), der die Auswertung. Siehe das Beispiel.  
+## <a name="notes-for-callers"></a>Hinweise für Aufrufer  
+ Um diese Schnittstelle abzurufen, instanziieren Sie die ausdrucksauswertung über die `CoCreateInstance` Methode mit der Klasse-ID (CLSID) der Auswertung. Siehe das Beispiel.  
   
-## Methoden in Vtable\-Reihenfolge  
+## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
  Die folgende Tabelle zeigt die Methoden der `IDebugExpressionEvaluator`.  
   
 |Methode|Beschreibung|  
-|-------------|------------------|  
-|[Parse](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md)|Konvertiert eine Ausdruckszeichenfolge zu einer analysierten Ausdrucks.|  
-|[GetMethodProperty](../../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md)|Ruft die lokalen Variablen, Argumenten und andere Eigenschaften einer Methode.|  
+|------------|-----------------|  
+|[Auslesen](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md)|Konvertiert eine Ausdruckszeichenfolge auf eine analysierten Ausdrucks.|  
+|[GetMethodProperty](../../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md)|Ruft die lokalen Variablen, Argumente und andere Eigenschaften einer Methode an.|  
 |[GetMethodLocationProperty](../../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodlocationproperty.md)|Konvertiert einen Methode Speicherort und einen Offset in eine Speicheradresse.|  
 |[SetLocale](../../../extensibility/debugger/reference/idebugexpressionevaluator-setlocale.md)|Bestimmt, welche Sprache zum Erstellen von druckbaren Ergebnisse.|  
-|[SetRegistryRoot](../../../extensibility/debugger/reference/idebugexpressionevaluator-setregistryroot.md)|Legt den Registrierungsstamm. Zum Debuggen von Seite\-an\-Seite verwendet.|  
+|[SetRegistryRoot](../../../extensibility/debugger/reference/idebugexpressionevaluator-setregistryroot.md)|Legt den Registrierungsstamm fest. Für das Debuggen von Seite-an-Seite verwendet.|  
   
-## Hinweise  
- Erziehungsberechtigte, instanziiert die Debugging\-Modul \(DE\) der Auswertung eines Ausdrucks \(EE\) aufgrund eines Aufrufs von [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md). Da die DE kennt die Sprache und den Hersteller der EE verwenden möchte, ruft die DE die EE CLSID aus der Registrierung \(die [SDK\-Hilfsprogramme für das Debuggen](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) \-Funktion, `GetEEMetric`, hilft bei diesen Abruf\).  
+## <a name="remarks"></a>Hinweise  
+ Eine typische Situation instanziiert die Debugging-Modul (DE) die ausdrucksauswertung (EE) infolge eines Aufrufs für [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md). Da DE bekannt ist, die Sprache und den Hersteller der EE verwenden möchte, ruft die DE die EE CLSID aus der Registrierung (die [SDK-Hilfsprogramme zum Debugging](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) -Funktion, `GetEEMetric`, können mit diesen Abruf).  
   
- Nachdem die EE instanziiert wurde, ruft die DE [Parse](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) Analysieren des Ausdrucks, und speichern Sie sie in ein [IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md) Objekt. Später, einen Aufruf von [EvaluateSync](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) wird der Ausdruck ausgewertet.  
+ Nach der EE instanziiert wird, ruft die DE [analysieren](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) zum Analysieren des Ausdrucks und speichern Sie ihn in ein [IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md) Objekt. Später, einen Aufruf von [EvaluateSync](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) wertet den Ausdruck.  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  Header: ee.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Beispiel  
- Dieses Beispiel zeigt, wie die Auswertung eines Ausdrucks erhält ein Symbol\-Anbieter und eine Adresse im Quellcode zu instanziieren. Dieses Beispiel verwendet die Funktion, `GetEEMetric`, aus der [SDK\-Hilfsprogramme für das Debuggen](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) Library, dbgmetric.lib.  
+## <a name="example"></a>Beispiel  
+ Dieses Beispiel zeigt, wie die ausdrucksauswertung erhält ein Symbol-Anbieter und eine Adresse im Quellcode zu instanziieren. In diesem Beispiel verwendet die Funktion, `GetEEMetric`, aus der [SDK-Hilfsprogramme zum Debugging](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) Library, dbgmetric.lib.  
   
-```cpp#  
+```cpp  
 IDebugExpressionEvaluator GetExpressionEvaluator(IDebugSymbolProvider pSymbolProvider,  
                                                  IDebugAddress *pSourceAddress)  
 {  
@@ -103,9 +103,9 @@ IDebugExpressionEvaluator GetExpressionEvaluator(IDebugSymbolProvider pSymbolPro
 }  
 ```  
   
-## Siehe auch  
- [Ausdruck Evaluation\-Schnittstellen](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)   
+## <a name="see-also"></a>Siehe auch  
+ [Ausdruck Auswertung Schnittstellen](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)   
  [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)   
  [IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md)   
  [EvaluateSync](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)   
- [SDK\-Hilfsprogramme für das Debuggen](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)
+ [SDK-Hilfsprogramme für das Debugging](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)

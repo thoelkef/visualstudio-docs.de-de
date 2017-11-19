@@ -1,54 +1,53 @@
 ---
-title: "IDiaSymbol::get_isNaked | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSymbol::get_isNaked-Methode"
+title: 'Idiasymbol:: Get_isnaked | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSymbol::get_isNaked method
 ms.assetid: b16629dc-8e17-476b-9c7b-58e7277c61ed
-caps.latest.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: fc65b6a9612565b50c0e70451a373f917bb840b6
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSymbol::get_isNaked
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Ruft ein Flag ab, das angibt, ob die Funktion das [naked](/visual-cpp/cpp/naked-cpp)\-Attribut aufweist \(das heißt keine Funktion besitzt die Einleitungs\- Epilogcode oder vom Compiler hinzugefügt wird\).  
+# <a name="idiasymbolgetisnaked"></a>IDiaSymbol::get_isNaked
+Ruft ein Flag, das angibt, ob die Funktion verfügt über die [naked](/cpp/cpp/naked-cpp) Attribut (d. h. für die Funktion hat keinen Prolog oder Epilog Code, der vom Compiler hinzugefügt).  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp  
+```C++  
 HRESULT get_isNaked(  
-   BOOL *pFlag  
+   BOOL *pFlag  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `pFlag`  
- \[out\]  Gibt `TRUE` zurück, wenn die Funktion das `naked`\-Attribut verfügt. andernfalls gibt `FALSE`zurück.  
+ [out] Gibt `TRUE` Wenn die Funktion der `naked` -Attribut; andernfalls wird zurückgegeben `FALSE`.  
   
-## Rückgabewert  
- Bei Erfolg gibt`S_OK`zurück. andernfalls gibt `S_FALSE` oder einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
   
 > [!NOTE]
->  Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft nicht für das Symbol verfügbar ist.  
+>  Ein Rückgabewert von `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
   
 |Anforderung|Beschreibung|  
-|-----------------|------------------|  
+|-----------------|-----------------|  
 |Header:|dia2.h|  
-|Version:|DIA SDK v8.0|  
+|Version:|DIA-SDK 8.0|  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [Naked\-Funktionsaufrufe](/visual-cpp/cpp/naked-function-calls)
+ [Naked-Funktionsaufrufe](/cpp/cpp/naked-function-calls)

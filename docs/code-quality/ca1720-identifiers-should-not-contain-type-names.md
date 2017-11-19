@@ -1,47 +1,48 @@
 ---
-title: "CA1720: Bezeichner d&#252;rfen keine Typnamen enthalten | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA1720"
-  - "IdentifiersShouldNotContainTypeNames"
-helpviewer_keywords: 
-  - "IdentifiersShouldNotContainTypeNames"
-  - "CA1720"
+title: "CA1720: Bezeichner dürfen keine Typnamen enthalten | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA1720
+- IdentifiersShouldNotContainTypeNames
+helpviewer_keywords:
+- IdentifiersShouldNotContainTypeNames
+- CA1720
 ms.assetid: c95ee48f-f23a-45f0-ac9e-a3c1ecfabdea
-caps.latest.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 15
+caps.latest.revision: "15"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 5418bc8d265c32057911df2d3a15aaddacf1398e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# CA1720: Bezeichner d&#252;rfen keine Typnamen enthalten
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="ca1720-identifiers-should-not-contain-type-names"></a>CA1720: Bezeichner dürfen keine Typnamen enthalten
 |||  
 |-|-|  
 |TypeName|IdentifiersShouldNotContainTypeNames|  
 |CheckId|CA1720|  
-|Kategorie \(Category\)|Microsoft.Naming|  
+|Kategorie|Microsoft.Naming|  
 |Unterbrechende Änderung|Breaking|  
   
-## Ursache  
+## <a name="cause"></a>Ursache  
  Der Name eines Parameters in einem extern sichtbaren Member enthält einen Datentypnamen.  
   
- \- oder \-  
+ - oder -   
   
  Der Name eines extern sichtbaren Members enthält einen sprachspezifischen Datentypnamen.  
   
-## Regelbeschreibung  
- Parameternamen und Membernamen eignen sich besser zur Vermittlung ihrer Bedeutung als zur Beschreibung des Typs. Dieser sollte von Entwicklungstools angegeben werden.  Wenn ein Datentypname verwendet werden muss, verwenden Sie für Membernamen anstelle eines sprachspezifischen Namens einen sprachunabhängigen.  Verwenden Sie z. B. statt des C\#\-Typnamens 'int' den sprachunabhängigen Datentypnamen Int32.  
+## <a name="rule-description"></a>Regelbeschreibung  
+ Namen von Parametern und Membern dienen besser kommunizieren ihre Bedeutung als zur Beschreibung des Typs der erwartet wird, vom Entwicklungstools zur Verfügung gestellt werden. Für Namen von Elementen, wenn ein Datentypnamen verwendet werden muss, eine sprachunabhängige Name statt einer sprachspezifischen verwenden. Verwenden Sie anstelle der C#-Typ "Int" z. B. den sprachunabhängige Datentypnamen, Int32.  
   
- Jedes diskrete Token im Namen des Parameters oder Members wird unter Ignorierung der Groß\-\/Kleinschreibung mit den folgenden sprachspezifischen Typnamen verglichen:  
+ Jedes diskrete Token im Namen der Parameter- oder Membernamen wird mit den folgenden sprachspezifischen Datentypnamen, unter Beachtung verglichen:  
   
 -   Bool  
   
@@ -57,9 +58,9 @@ caps.handback.revision: 15
   
 -   Int  
   
--   UInt  
+-   "Uint"  
   
--   Integer  
+-   Ganze Zahl  
   
 -   UInteger  
   
@@ -67,9 +68,9 @@ caps.handback.revision: 15
   
 -   ULong  
   
--   Unsigned  
+-   Ohne Vorzeichen  
   
--   Signed  
+-   Mit Vorzeichen  
   
 -   Float  
   
@@ -77,13 +78,13 @@ caps.handback.revision: 15
   
 -   Float64  
   
- Darüber hinaus werden die Namen eines Parameters auch unter Ignorierung der Groß\-\/Kleinschreibung mit den folgenden sprachunabhängigen Datentypnamen verglichen:  
+ Darüber hinaus werden die Namen der Parameter auch mit den folgenden sprachunabhängige Datentypnamen, unter Beachtung verglichen:  
   
 -   Objekt  
   
--   Obj  
+-   obj  
   
--   Boolean  
+-   Boolesch  
   
 -   Char  
   
@@ -109,7 +110,7 @@ caps.handback.revision: 15
   
 -   IntPtr  
   
--   Ptr  
+-   PTR  
   
 -   Zeiger  
   
@@ -127,22 +128,22 @@ caps.handback.revision: 15
   
 -   Guid  
   
-## Behandeln von Verstößen  
- **Bei Auslösung gegen einen Parameter:**  
+## <a name="how-to-fix-violations"></a>Behandeln von Verstößen  
+ **Wenn für einen Parameter ausgelöst:**  
   
- Ersetzen Sie den Datentypbezeichner im Parameternamen mit einem Begriff, der seine Bedeutung besser beschreibt, oder einem allgemeineren Begriff, z. B. 'value'.  
+ Ersetzen Sie den Datentypbezeichner den Namen der Parameter durch ein Begriff, der seine Bedeutung besser beschreibt oder ein generischer Begriff, z. B. "Value".  
   
- **Bei Auslösung gegen einen Member:**  
+ **Wenn für ein Element, das ausgelöst wird:**  
   
- Ersetzen Sie den sprachspezifischen Datentypbezeichner im Membernamen mit einem Begriff, der seine Bedeutung besser beschreibt, einer sprachunabhängigen Entsprechung oder einem allgemeineren Begriff, z. B. 'value'.  
+ Ersetzen Sie den sprachspezifischen Datentypbezeichner, der Namen der Member mit einem Begriff, der besser die Bedeutung, eine sprachunabhängige Entsprechung oder ein generischer Begriff, z. B. "Value beschreibt" ein.  
   
-## Wann sollten Warnungen unterdrückt werden?  
- Gelegentlich können auch typbasierte Parameter\- und Membernamen verwendet werden.  In Zusammenhang mit Neuentwicklungen kommt es jedoch zu keinem Szenario, in dem Sie eine Warnung dieser Regel unterdrücken sollten.  Bei Bibliotheken, die zuvor versandt wurden, müssen Sie u. U. eine Warnung dieser Regel unterdrücken.  
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?  
+ Gelegentliche Nutzung eines basierende Namen für Parameter und der Member möglicherweise geeignet sein. Allerdings für neue Entwicklungen keine bekannten Szenarien auftreten, in dem Sie eine Warnung dieser Regel unterdrücken soll. Für Bibliotheken, die zuvor versandt wurden, müssen Sie möglicherweise eine Warnung dieser Regel zu unterdrücken.  
   
-## Verwandte Regeln  
- [CA1709: Bei Bezeichnern sollte die Groß\-\/Kleinschreibung beachtet werden](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)  
+## <a name="related-rules"></a>Verwandte Regeln  
+ [CA1709: Bei Bezeichnern sollte die Groß-/Kleinschreibung beachtet werden](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)  
   
- [CA1708: Bezeichner sollten sich nicht nur durch die Groß\-\/Kleinschreibung unterscheiden](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)  
+ [CA1708: Bezeichner sollten sich nicht nur durch die Groß-/Kleinschreibung unterscheiden](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)  
   
  [CA1707: Bezeichner sollten keine Unterstriche enthalten](../code-quality/ca1707-identifiers-should-not-contain-underscores.md)  
   

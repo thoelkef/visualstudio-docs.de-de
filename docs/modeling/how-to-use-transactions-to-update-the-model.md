@@ -1,29 +1,31 @@
 ---
-title: "Gewusst wie: Verwenden von Transaktionen zum Aktualisieren des Modells | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: 'Vorgehensweise: Verwenden von Transaktionen zum Aktualisieren des Modells | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: e24436a5-7f97-401b-bc83-20d188d10d5b
-caps.latest.revision: 7
-author: "alancameronwills"
-ms.author: "awills"
-manager: "douge"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: alancameronwills
+ms.author: awills
+manager: douge
+ms.openlocfilehash: 3fdf24bbcfcbda2e5e6c1d8a3737d9a53ed5ae23
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# Gewusst wie: Verwenden von Transaktionen zum Aktualisieren des Modells
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Transaktionen sicherzustellen, dass Änderungen, die im Speicher vorgenommen wurden, als Gruppe behandelt werden.  Änderungen, die als Einheit ein Commit oder Rollback gruppiert sind.  
+# <a name="how-to-use-transactions-to-update-the-model"></a>Gewusst wie: Verwenden von Transaktionen zum Aktualisieren des Modells
+Transaktionen stellen Sie sicher, dass Änderungen an den Store wurden als eine Gruppe behandelt werden. Änderungen, die gruppiert werden können ein Commit oder Rollback als einzelne Einheit.  
   
- Sobald der Programmcode hinzufügt, ändert oder löscht jedes Element im Speicher in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Visualisierung und Modellieren SDK, muss er innerhalb einer Transaktion.  Es muss eine aktive Instanz von <xref:Microsoft.VisualStudio.Modeling.Transaction> geben den Speicher zugeordnet sind, wenn die Änderung ausgeführt wird.  Dies gilt für alle Modellelemente, Beziehungen, Formen, Diagramme und ihre Eigenschaften zu.  
+ Bei jedem Programmcode ändert, hinzufügt oder löscht jedes Element im Speicher [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Visualization and Modeling SDK muss geschieht dies innerhalb einer Transaktion. Es muss eine aktive Instanz von <xref:Microsoft.VisualStudio.Modeling.Transaction> dem Speicher zugeordnet wird, wenn die Änderung erfolgt. Dies gilt für alle betroffenen Modellelemente, Beziehungen, Formen, Diagramme und ihre Eigenschaften.  
   
- Der Mechanismus für Transaktionen hilft Ihnen, zu inkonsistenten Zustand zu vermeiden.  Wenn ein Fehler während einer Transaktion auftritt, stellen alle Änderungen zurück.  Wenn der Benutzer einen Befehl Rückgängig ausführt, wird jede neue Transaktion als Schritt behandelt.  Der Benutzer kann Teile einer neuen Änderung nicht rückgängig gemacht werden, es sei denn, Sie sie in separaten Transaktionen explizit einfügen.  
+ Der Transaktionsmechanismus hilft Ihnen inkonsistente Zustände zu vermeiden. Wenn ein Fehler während einer Transaktion auftritt, werden alle Änderungen rückgängig gemacht. Wenn der Benutzer einen Befehl "Rückgängig" ausführt, wird jede letzte Transaktion als einem einzigen Schritt behandelt. Der Benutzer nicht Bestandteile eine aktuelle Änderung rückgängig machen, es sei denn, Sie explizit in getrennten Transaktionen eingefügt.  
   
-## Eine Transaktion öffnen  
- Die bequemste Methode für die Verwaltung einer Transaktion mit einer `using`\-Anweisung, die in einer `try...catch`\-Anweisung eingeschlossen werden:  
+## <a name="opening-a-transaction"></a>Öffnen eine Transaktion  
+ Die einfachste Methode zur Verwaltung einer Transaktions wird mit einem `using` -Anweisung eingeschlossen werden, eine `try...catch` Anweisung:  
   
 ```  
 Store store; ...  
@@ -49,37 +51,37 @@ catch (Exception ex)
 }  
 ```  
   
- Wenn eine Ausnahme, die während der letzten `Commit()`verhindert Änderungen auftritt, wird der Speicher auf ihren vorherigen Zustand zurückgesetzt.  Dies hilft Ihnen, um sicherzustellen, dass keine Fehler in einem inkonsistenten Zustand des Modells lassen.  
+ Wenn eine Ausnahme, die verhindert, die endgültige dass `Commit()` tritt auf, während die Änderungen der Speicher auf den ursprünglichen Zustand zurückgesetzt. Dadurch können Sie sicherstellen, dass Fehler nicht das Modell in einem inkonsistenten Zustand verlassen.  
   
- Sie können eine beliebige Anzahl von Änderungen innerhalb einer Transaktion erstellen.  Sie können neue Transaktionen innerhalb einer aktiven Transaktion öffnen.  Die geschachtelten Transaktionen müssen sich vor den enthaltenden Beenden Transaktionen einen Commit bzw. Rollback.  Weitere Informationen finden Sie im Beispiel für die <xref:Microsoft.VisualStudio.Modeling.Transaction.TransactionDepth%2A>\-Eigenschaft.  
+ Sie können eine beliebige Anzahl von Änderungen innerhalb einer Transaktion vornehmen. Sie können neue Transaktionen innerhalb einer aktiven Transaktion öffnen. Geschachtelten Transaktionen müssen einen commit oder Rollback vor dem Ende der enthaltenden Transaktion. Weitere Informationen finden Sie im Beispiel für die <xref:Microsoft.VisualStudio.Modeling.Transaction.TransactionDepth%2A> Eigenschaft.  
   
- Um die permanente Änderung vorzunehmen, sollten Sie `Commit` die Transaktion bevor sie wieder zugänglich gemacht wird.  Wenn eine Ausnahme auftritt, die nicht innerhalb der Transaktion abgefangen wird, wird der Speicher auf seinen Zustand vor den Änderungen zurückgesetzt.  
+ Um Ihre Änderungen permanent zu machen, sollten Sie `Commit` der Transaktion, bevor sie freigegeben ist. Wenn eine Ausnahme, die innerhalb der Transaktion nicht aufgefangen werden kann auftritt, wird der Speicher in dem Zustand vor der Änderungen zurückgesetzt.  
   
-## Eine Transaktion zurücksetzen  
- Um sicherzustellen, dass der Speicher in verbleibt oder in den Zustand vor der Transaktion wiederhergestellt werden kann, können Sie eine dieser Taktiken verwenden:  
+## <a name="rolling-back-a-transaction"></a>Rollback einer Transaktion  
+ Um sicherzustellen, dass der Speicher im verbleibt oder auf den Zustand vor der Transaktion zurückgesetzt, können Sie eine der folgenden Taktiken:  
   
-1.  Lösen Sie eine Ausnahme aus, die sich nicht im Gültigkeitsbereich der Transaktion abgefangen wird.  
+1.  Löst eine Ausnahme, die innerhalb des Bereichs der Transaktion nicht aufgefangen werden kann.  
   
-2.  Setzen Sie explizit die Transaktion zurück:  
+2.  Explizit Rollback der Transaktion:  
   
     ```  
     this.Store.TransactionManager.CurrentTransaction.Rollback();  
     ```  
   
-## Transaktionen wirken sich nicht auf Objekte Nicht\-Speicher  
- Regeln für Transaktionen nur den Zustand des Speichers.  Sie können partielle Änderungen nicht rückgängig machen, die zu externen Elementen wie Dateien, Datenbanken oder Objekten vorgenommen wurden, die Sie mit gewöhnlichen Typen außerhalb der DSL\-Definition deklariert wurden.  
+## <a name="transactions-do-not-affect-non-store-objects"></a>Transaktionen wirken sich nicht auf die nicht aus dem Store-Objekte  
+ Transaktionen Regeln nur den Status des Speichers. Sie können keine partielle Änderungen rückgängig machen, die zu externen Elementen wie Dateien, Datenbanken oder Objekte, die mit normalen Typen außerhalb der DSL-Klassendefinition deklariert wurden vorgenommen wurden.  
   
- Wenn eine Ausnahme möglicherweise eine solche Änderung im Speicher inkonsistent. h., sollten Sie diese Möglichkeit im Ausnahmehandler verarbeiten.  Eine Möglichkeit, zu überprüfen, ob externe Ressourcen mit den Speicherobjekten synchronisiert bleiben, ist jedes externe Objekt auf einen speicherinternen Element zu verknüpfen, indem Sie Ereignishandler verwendet.  Weitere Informationen finden Sie unter [Ereignishandler propagieren Änderungen außerhalb des Modells](../modeling/event-handlers-propagate-changes-outside-the-model.md).  
+ Wenn eine Ausnahme eine solche Änderung inkonsistent mit dem Store lassen kann, sollten Sie diese Möglichkeit im Ausnahmehandler behandeln. Eine Möglichkeit, um sicherzustellen, dass externe Ressourcen mit den Speicherobjekten synchronisiert bleiben werden mithilfe von Ereignishandlern jedes externes Objekt auf ein Element im Store zu verknüpfen. Weitere Informationen finden Sie unter [Handler verteilt Änderungen außerhalb der Ereignismodell](../modeling/event-handlers-propagate-changes-outside-the-model.md).  
   
-## Regeln lösen beim Ende einer Transaktion aus  
- Am Ende einer Transaktion, bevor die Transaktion freigegeben wird, werden die Regeln, die für die Elemente im Speicher verbunden sind, ausgelöst.  Jede Regel ist eine Methode, die zu einem Modellelement angewendet wird, das geändert wurde.  Es gibt z. B. „korrigieren oben“ Regeln, die den Zustand einer Form zu aktualisieren, wenn das Modellelement geändert hat, und eine Form erstellen, wenn ein Modellelement erstellt wird.  Es gibt keine bestimmte Zündfolge.  Eine Regel, die durch eine Änderung vorgenommen wurde, kann eine andere Regel auslösen.  
+## <a name="rules-fire-at-the-end-of-a-transaction"></a>Auslösen von Regeln am Ende einer Transaktion  
+ Bevor die Transaktion freigegeben wird, werden am Ende einer Transaktion zugeordneten Elemente im Speicher Regeln ausgelöst. Jede Regel ist eine Methode, die mit einem Modellelement angewendet wird, die geändert wurden. Beispielsweise sind "Reparieren" Regeln, die den Zustand einer Form aktualisieren, wenn seine Modellelement geändert hat, und die eine Form "erstellt, wenn ein Modellelement erstellt wird. Es gibt keine angegebenen auslösungsreihenfolge. Eine Änderung durch eine Regel kann eine andere Regel ausgelöst werden.  
   
- Sie können definieren Regeln besitzen.  Weitere Informationen zu Regeln finden Sie unter [Reagieren auf und Propagieren von Änderungen](../modeling/responding-to-and-propagating-changes.md).  
+ Sie können Ihre eigenen Regeln definieren. Weitere Informationen zu Regeln finden Sie unter [Weitergeben von Änderungen und reagieren auf](../modeling/responding-to-and-propagating-changes.md).  
   
- Regeln lösen keine nachdem ein Rückgängig\- oder ein Rollback für eine wiederholte Befehl aus.  
+ Regeln werden nach einer Rückgängig, wiederholen oder einen Rollbackbefehl nicht ausgelöst.  
   
-## Transaktions\-Kontext  
- Jede Transaktion ist ein Wörterbuch, in dem Sie alle Informationen können, die Sie speichern möchten:  
+## <a name="transaction-context"></a>Bereits verwendeten Transaktionskontext  
+ Jede Transaktion besitzt ein Wörterbuch, in dem Sie alle Informationen speichern können Sie die gewünschte:  
   
  `store.TransactionManager`  
   
@@ -87,16 +89,16 @@ catch (Exception ex)
   
  `.Context.Add(aKey, aValue);`  
   
- Dies ist zum Übertragen von Informationen zwischen Regeln hilfreich.  
+ Dies ist besonders nützlich für die Übertragung von Informationen zwischen Regeln.  
   
-## Zustand der Transaktion  
- In einigen Fällen müssen Sie eine Änderung weitergegeben werden vermeiden, wenn die Änderung verursacht wird, indem eine Transaktion rückgängig gemacht bzw. wiederholt.  Dies kann der Fall sein, z. B. wenn Sie einen Eigenschaftswert Handler schreiben, der einen anderen Wert im Speicher aktualisieren kann.  Da der Rückgängig\-Vorgang alle Werte im Speicher zu ihren vorherigen Zustand zurückgesetzt wird, ist es nicht erforderlich, aktualisierte Werte zu berechnen.  Verwenden Sie den folgenden Code:  
+## <a name="transaction-state"></a>Transaktionsstatus  
+ In einigen Fällen, die Sie zur Vermeidung müssen weitergeben eine Änderung, wenn die Änderung durch Rückgängigmachen oder Wiederherstellen von einer Transaktions verursacht wird. Dies kann beispielsweise vorkommen, wenn Sie einen Eigenschaft-Wert-Handler schreiben, der einen anderen Wert im Speicher aktualisiert werden können. Da die Rückgängig-Vorgang alle Werte in den Speicher in ihren vorherigen Zustand zurückgesetzt wird, ist es nicht notwendig, die aktualisierten Werte zu berechnen. Verwenden Sie diesen Code ein:  
   
 ```  
 if (!this.Store.InUndoRedoOrRollback) {...}  
 ```  
   
- Regeln können ausgelöst werden, wenn der Speicher zunächst aus einer Datei geladen wird.  So reagieren Sie auf diese Änderungen zu vermeiden, verwenden Sie:  
+ Regeln können immer dann ausgelöst, wenn der Speicher ursprünglich aus einer Datei geladen wird. Zur Vermeidung von Antworten auf diese Änderungen zu verwenden:  
   
 ```  
 if (!this.Store.InSerializationTransaction) {...}  

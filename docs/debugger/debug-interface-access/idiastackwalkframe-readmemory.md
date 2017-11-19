@@ -1,59 +1,58 @@
 ---
-title: "IDiaStackWalkFrame::readMemory | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaStackWalkFrame::readMemory-Methode"
+title: 'Idiastackwalkframe:: ReadMemory | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaStackWalkFrame::readMemory method
 ms.assetid: 7ab0b525-a5a7-4692-acad-e8c00fa9ab9a
-caps.latest.revision: 12
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 03750c990d259bab3a4942021e0b3ee8b1e0fd65
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaStackWalkFrame::readMemory
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Liest Speicher im Abbild.  
+# <a name="idiastackwalkframereadmemory"></a>IDiaStackWalkFrame::readMemory
+Liest Arbeitsspeicher aus Image an.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT readMemory (   
-   MemoryTypeEnum type,  
-   ULONGLONG va,  
-   DWORD     cbData,  
-   DWORD*    pcbData,  
-   BYTE      data[]  
+```C++  
+HRESULT readMemory (   
+   MemoryTypeEnum type,  
+   ULONGLONG va,  
+   DWORD     cbData,  
+   DWORD*    pcbData,  
+   BYTE      data[]  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `type`  
- \[in\] Einer der [MemoryTypeEnum\-Enumeration](../../debugger/debug-interface-access/memorytypeenum.md)\-Enumerationswerte, der den Typ des Speichers angibt, die zuzugreifen.  
+ [in] Eines der [MemoryTypeEnum-Enumeration](../../debugger/debug-interface-access/memorytypeenum.md) Enumerationswerte, der die Art des Arbeitsspeichers, den Zugriff auf angibt.  
   
  `va`  
- \[in\] virtueller Adressenplatz im Bild, ab dem gelesen werden soll.  
+ [in] Virtuelle Adressspeicherort in Abbildung Lesevorgang begonnen werden soll.  
   
  `cbData`  
- \[in\] Größe in Bytes im Datenpuffer.  
+ [in] Die Größe des Datenpuffers in Bytes.  
   
  `pcbData`  
- \[out\] Gibt die Anzahl der zurückgegebenen Bytes zurück.  Wenn `data``NULL` ist, enthält `pcbData` die Gesamtzahl von Bytes verfügbaren Daten.  
+ [out] Gibt die Anzahl der zurückgegebenen Bytes zurück. Wenn `data` ist `NULL`, klicken Sie dann `pcbData` enthält die Gesamtzahl der Bytes der Daten verfügbar.  
   
  `data`  
- \[out\] Ein Puffer, der vom angegebenen Speicherort mit Daten gefüllt werden soll.  
+ [out] Ein Puffer, die mit Daten aus der angegebenen Position ausgefüllt werden.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK` zurück; andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)

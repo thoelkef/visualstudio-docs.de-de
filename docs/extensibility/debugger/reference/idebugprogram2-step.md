@@ -1,69 +1,69 @@
 ---
-title: "IDebugProgram2::Step | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugProgram2::Step"
-helpviewer_keywords: 
-  - "IDebugProgram2::Step"
+title: IDebugProgram2::Step | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugProgram2::Step
+helpviewer_keywords: IDebugProgram2::Step
 ms.assetid: e4c2ffce-9810-4088-8162-eac9ef04f2a9
-caps.latest.revision: 16
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 16
+caps.latest.revision: "16"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: d0e4b8533c1b6a14c61fc556f06594945037bbbd
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugProgram2::Step
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
+# <a name="idebugprogram2step"></a>IDebugProgram2::Step
 Führt einen Schritt aus.  
   
 > [!NOTE]
->  Diese Methode ist veraltet.  Verwenden Sie stattdessen die [Schritt](../../../extensibility/debugger/reference/idebugprocess3-step.md)\-Methode.  
+>  Diese Methode ist veraltet. Verwenden der [Schritt](../../../extensibility/debugger/reference/idebugprocess3-step.md) Methode stattdessen.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT Step(   
-   IDebugThread2*  pThread,  
-   STEPKIND        sk,  
-   STEPUNIT        step  
+```cpp  
+HRESULT Step(   
+   IDebugThread2*  pThread,  
+   STEPKIND        sk,  
+   STEPUNIT        step  
 );  
 ```  
   
-```c#  
-int Step(   
-   IDebugThread2  pThread,  
-   enum_STEPKIND  sk,  
-   enum_STEPUNIT  step  
+```csharp  
+int Step(   
+   IDebugThread2  pThread,  
+   enum_STEPKIND  sk,  
+   enum_STEPUNIT  step  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `pThread`  
- \[in\]  Ein [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)\-Objekt, das den Thread darstellt, der aufgetreten ist.  
+ [in] Ein [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) -Objekt, das den Thread wird in Einzelschritten darstellt.  
   
  `sk`  
- \[in\]  Ein Wert aus der [STEPKIND](../../../extensibility/debugger/reference/stepkind.md)\-Enumeration, der den Typ des Schrittes angibt.  
+ [in] Ein Wert aus der [STEPKIND](../../../extensibility/debugger/reference/stepkind.md) -Enumeration, der den Typ des Schritts angibt.  
   
  `step`  
- \[in\]  Ein Wert aus der [STEPUNIT](../../../extensibility/debugger/reference/stepunit.md)\-Enumeration, der die Einheit des Schritts angegeben wird \(beispielsweise durch Anweisung oder \- Anweisung\).  
+ [in] Ein Wert aus der [STEPUNIT](../../../extensibility/debugger/reference/stepunit.md) -Enumeration, die Einheit des Schritts (z. B. von einer Anweisung oder der Anweisung) angibt.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Hinweise  
- Falls alle Threadsynchronisierung Kommunikation zwischen Threads oder sollten sich andere Threads im Programm ausgeführt werden, wenn ein bestimmter Thread erfolgt.  
+## <a name="remarks"></a>Hinweise  
+ Für den Fall, dass Threadsynchronisierung oder die Kommunikation zwischen Threads vorhanden ist, sollten andere Threads in die Anwendung ausführen, Prozedurschritt ein bestimmter Thread ausgeführt wird.  
   
 > [!WARNING]
->  Senden Sie ein aufhörendes Ereignis oder ein unmittelbares \(synchrone\) Ereignis nicht beim Behandeln dieses Aufrufs zu [Ereignis](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) . Andernfalls hängt vom Debugger kann.  
+>  Keine Stopping-Ereignis oder ein sofort (synchron) Ereignis senden [Ereignis](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) während der Bearbeitung dieser Aufruf; andernfalls der Debugger reagiert.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   
  [IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md)   
- [Ereignis](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)
+ [Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)

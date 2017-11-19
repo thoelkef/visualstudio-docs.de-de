@@ -1,26 +1,25 @@
 ---
-title: Arbeiten mit dem DSL-Explorer | Microsoft-Dokumentation
+title: "Arbeiten mit einer domänenspezifischen Sprache-Explorer | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- Domain-Specific Language Tools, DSL Explorer
+helpviewer_keywords: Domain-Specific Language Tools, DSL Explorer
 ms.assetid: ca0e8550-bb55-4218-92e2-f79ab5308d4f
-caps.latest.revision: 11
+caps.latest.revision: "11"
 author: alancameronwills
 ms.author: awills
 manager: douge
-translationtype: Machine Translation
-ms.sourcegitcommit: eb2ab9d49cdeb1ed71da8ef67841f7796862dc30
 ms.openlocfilehash: 6297c5643de30331b8cf6a807df637d5cc043518
-ms.lasthandoff: 02/22/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="working-with-the-domain-specific-language-explorer"></a>Arbeiten mit dem DSL-(Domain-Specific Languge)-Explorer
-Die **DSL-Explorer** verschiedene Arten von Informationen in einer Strukturansicht angezeigt. Weitere Informationen über die meisten Elemente im DSL-Explorer finden Sie unter [wie eine domänenspezifische Sprache definiert](../modeling/how-to-define-a-domain-specific-language.md).  
+Die **Explorer für DSL** zeigt verschiedene Arten von Informationen in einer Strukturansicht an. Weitere Informationen über die meisten Elemente im Explorer für DSL finden Sie unter [zum Definieren einer domänenspezifischen Sprache](../modeling/how-to-define-a-domain-specific-language.md).  
   
  Er enthält die folgenden Knoten:  
   
@@ -32,18 +31,17 @@ Die **DSL-Explorer** verschiedene Arten von Informationen in einer Strukturansic
   
 -   **Domänenklassen**. Eine Liste der Domänenklassen im Modell.  
   
--   **Zwischen Domänen**. Eine Liste der Domänenbeziehungen im Modell.  
+-   **Domänenbeziehungen**. Eine Liste der Domänenbeziehungen im Modell.  
   
 -   **Domänentypen**. Eine Liste der integrierten und externen Typen, die im Modell verwendet werden.  
   
--   **Editor**. Eine Liste der **Toolbox** Registerkarten und die darin enthaltenen Elemente und Einstellungen für die Überprüfung für das Modell. Weitere Informationen zur Überprüfung finden Sie unter [Überprüfung in einer domänenspezifischen Sprache](../modeling/validation-in-a-domain-specific-language.md).  
+-   **Editor**. Eine Liste der **Toolbox** Registerkarten und die darin enthaltenen Elemente und Einstellungen für die Clientvalidierung für das Modell. Weitere Informationen zur Validierung finden Sie unter [Überprüfung in einer domänenspezifischen Sprache](../modeling/validation-in-a-domain-specific-language.md).  
   
--   **Explorer-Verhalten**. Einstellungen, die das Verhalten des Explorers im generierten Designer bestimmen. Weitere Informationen zum Anpassen des Explorers finden Sie unter [im Modell-Explorer anpassen](../modeling/customizing-the-model-explorer.md).  
+-   **Explorer-Verhalten**. Einstellungen, die das Verhalten des Explorers im generierten Designer bestimmen. Weitere Informationen zum Anpassen des Explorers finden Sie unter [Anpassen der Modell-Explorer](../modeling/customizing-the-model-explorer.md).  
   
 -   **Formen**. Eine Liste der Formdiagrammelemente im Modell.  
   
--   **XML-Serialisierungsverhalten**. Serialisierungseinstellungen für das Modell. Weitere Informationen zur Serialisierung finden Sie unter [Anpassen von Dateispeicher und XML-Serialisierung](../modeling/customizing-file-storage-and-xml-serialization.md).  
+-   **XML-Serialisierungsverhalten**. Serialisierungseinstellungen für das Modell. Weitere Informationen zur Serialisierung finden Sie unter [Dateispeicher anpassen und XML-Serialisierung](../modeling/customizing-file-storage-and-xml-serialization.md).  
   
 ## <a name="see-also"></a>Siehe auch  
- [Tools für domänenspezifische Sprache – Glossar](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
-
+ [Domänenspezifische Sprache Tools Glossar](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)

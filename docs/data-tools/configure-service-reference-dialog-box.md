@@ -1,99 +1,100 @@
 ---
-title: "Dialogfeld &quot;Dienstverweis konfigurieren&quot; | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "msvse_wcf.dlg.ConfigureServiceReference"
-helpviewer_keywords: 
-  - "WCF-Dienste, Dienstverweis konfigurieren (Dialogfeld)"
-  - "Dienstverweise [Visual Studio], Konfigurieren des Verhaltens"
-  - "Dienstverweis konfigurieren (Dialogfeld)"
+title: Dienst-Dialogfelds "Verweis" Konfigurieren | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: msvse_wcf.dlg.ConfigureServiceReference
+helpviewer_keywords:
+- WCF services, Configure Service Reference dialog box
+- service references [Visual Studio], configuring behavior
+- Configure Service Reference dialog box
 ms.assetid: 25e4c36b-2db6-4e71-9010-b7068255d09d
-caps.latest.revision: 16
-caps.handback.revision: 13
-author: "mikeblome"
-ms.author: "mblome"
-manager: "ghogen"
+caps.latest.revision: "16"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.technology: vs-data-tools
+ms.openlocfilehash: 26e74c43e79012adc6b241390cd463a35c9f58c1
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Dialogfeld &quot;Dienstverweis konfigurieren&quot;
-Das Dialogfeld **Dienstverweis konfigurieren** ermöglicht Ihnen, das Verhalten der [!INCLUDE[vsindigo](../data-tools/includes/vsindigo_md.md)]\-Dienste zu konfigurieren.  
+# <a name="configure-service-reference-dialog-box"></a>Dienstverweis konfigurieren (Dialogfeld)
+Die **Dienstverweis konfigurieren** Dialogfeld können Sie so konfigurieren Sie das Verhalten des [!INCLUDE[vsindigo](../data-tools/includes/vsindigo_md.md)] Dienste.  
   
 > [!NOTE]
->  Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen.  Klicken Sie im Menü Extras auf Einstellungen importieren und exportieren, um die Einstellungen zu ändern.  Weitere Informationen finden Sie unter [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/de-de/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen. Klicken Sie im Menü Extras auf Einstellungen importieren und exportieren, um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../ide/personalizing-the-visual-studio-ide.md).  
   
- Klicken Sie mit der rechten Maustaste auf einen Dienstverweis im **Projektmappen\-Explorer**, und wählen Sie **Dienstverweis konfigurieren** aus, um auf das Dialogfeld **Dienstverweis konfigurieren** zuzugreifen.  Sie können auch auf das Dialogfeld zugreifen, indem Sie im Dialogfeld [Add Service Reference Dialog Box](../Topic/Add%20Service%20Reference%20Dialog%20Box.md)auf die Schaltfläche **Erweitert** klicken.  
+ Für den Zugriff auf die **Dienstverweis konfigurieren** (Dialogfeld), mit der rechten Maustaste, einen Dienst verweisen **Projektmappen-Explorer** , und wählen Sie **Dienstverweis konfigurieren**. Sie können auch das Dialogfeld zugreifen, indem Sie auf die **erweitert** Schaltfläche der **hinzufügen Dienst Dialogfelds "Verweis"**.  
   
-## Aufgabenliste  
+## <a name="task-list"></a>Aufgabenliste  
   
--   Geben Sie zum Ändern der Adresse, unter der ein WCF\-Dienst gehostet wird, die neue Adresse in das Feld **Adresse** ein.  
+-   Um die Adresse zu ändern, in denen ein WCF-Dienst gehostet wird, geben Sie die neue Adresse in der **Adresse** Feld.  
   
--   Wählen Sie zum Ändern der Zugriffsebene für Klassen in einem WCF\-Client ein Zugriffsebenenschlüsselwort in der Liste **Zugriffsebene für generierte Klassen** aus.  
+-   Wählen Sie zum Ändern der Zugriffsebene für Klassen in einem WCF-Client ein zugriffsebenenschlüsselwort in der **Zugriffsebene für generierte Klassen** Liste.  
   
--   Aktivieren Sie zum asynchronen Aufrufen der Methoden eines WCF\-Diensts das Kontrollkästchen **Asynchrone Vorgänge generieren**.  
+-   Um die Methoden eines WCF-Diensts asynchron aufzurufen, wählen Sie die **asynchrone Vorgänge generieren** Kontrollkästchen.  
   
--   Aktivieren Sie zum Generieren von Meldungsvertragstypen in einem WCF\-Client das Kontrollkästchen **Meldungsverträge immer generieren**.  
+-   Wählen Sie zum Generieren von Meldungsvertragstypen in einem WCF-Client die **Meldungsverträge immer generieren** Kontrollkästchen.  
   
--   Wählen Sie zum Angeben einer von Listen oder Wörterbuchauflistungstypen für einen WCF\-Client die Typen aus den Listen **Auflistungstyp** und **Wörterbuchauflistungstyp** aus.  
+-   Wählen Sie zum Angeben von Liste oder Wörterbuchauflistungstypen für einen WCF-Client die Typen aus den **"Sammlung"** und **Wörterbuchauflistungstyp** aufgeführt.  
   
--   Deaktivieren Sie zum Deaktivieren der Typfreigabe das Kontrollkästchen **Typen in Assemblys, auf die verwiesen wird, wiederverwenden**.  Aktivieren Sie zum Auswählen der Typfreigabe für eine Teilmenge an referenzierten Assemblys das Kontrollkästchen **Typen in Assemblys, auf die verwiesen wird, wiederverwenden**, wählen Sie **Typen in folgenden Assemblys, auf die verwiesen wird, wiederverwenden** aus, und wählen Sie die gewünschten Verweise in der Liste **Referenzierte Assemblys** aus.  
+-   Deaktivieren Sie zum Deaktivieren der Typfreigabe das **Typen in Assemblys verwiesen wird, wiederverwenden** Kontrollkästchen. Zum Aktivieren der Typfreigabe für eine Teilmenge an referenzierten Assemblys wählen die **Typen in Assemblys verwiesen wird, wiederverwenden** Kontrollkästchen **Typen in Assemblys, auf die verwiesen wird, wiederverwenden**, und wählen Sie den gewünschten verweist der **referenzierte Assemblyliste**.  
   
-## UIElement-Liste  
+## <a name="uielement-list"></a>UIElement-Liste  
  **Adresse**  
- Wird zum Aktualisieren der Webadresse verwendet, wo ein Dienstverweis nach einem Dienst sucht.  Beispielsweise wird während der Entwicklung der Dienst möglicherweise auf einem Entwicklungsserver gehostet und später auf einen Produktionsserver verschoben, was eine Adressenänderung erfordert.  
+ Wird zum Aktualisieren der Webadresse verwendet, wo ein Dienstverweis nach einem Dienst sucht. Beispielsweise wird während der Entwicklung der Dienst möglicherweise auf einem Entwicklungsserver gehostet und später auf einen Produktionsserver verschoben, was eine Adressenänderung erfordert.  
   
 > [!NOTE]
->  Das Adressenelement ist nicht verfügbar, wenn das Dialogfeld **Dienstverweis konfigurieren** aus dem Dialogfeld [Add Service Reference Dialog Box](../Topic/Add%20Service%20Reference%20Dialog%20Box.md) angezeigt wird.  
+>  Das adressenelement ist nicht verfügbar, wenn die **Dienstverweis konfigurieren** Dialogfeld wird angezeigt, aus der **hinzufügen Dienst Dialogfelds "Verweis"**.  
   
  **Zugriffsebene für generierte Klassen**  
- Bestimmt die Codezugriffsebene für WCF\-Clientklassen.  
+ Bestimmt die Codezugriffsebene für WCF-Clientklassen.  
   
 > [!NOTE]
->  Bei Websiteprojekten ist diese Option immer auf `Public` festgelegt und kann nicht geändert werden.  Weitere Informationen finden Sie unter [Troubleshooting Service References](../data-tools/troubleshooting-service-references.md).  
+>  Bei Websiteprojekten ist diese Option immer auf `Public` festgelegt und kann nicht geändert werden. Weitere Informationen finden Sie unter [Problembehandlung bei Dienstverweisen](../data-tools/troubleshooting-service-references.md).  
   
  **Asynchrone Vorgänge generieren**  
- Bestimmt, ob WCF\-Dienstmethoden synchron \(standardmäßig\) oder asynchron aufgerufen werden.  
+ Bestimmt, ob WCF-Dienstmethoden synchron (standardmäßig) oder asynchron aufgerufen werden.  
   
  **Aufgabenbasierte Vorgänge generieren**  
- Beim Schreiben von asynchronem Code können Sie mit dieser Option von der in .Net 4 eingeführten Task Parallel Library \(TPL\) profitieren.  Siehe dazu [Task Parallel Library \(TPL\)](http://msdn.microsoft.com/library/dd460717.aspx).  
+ Beim Schreiben von asynchronem Code können Sie mit dieser Option von der in .Net 4 eingeführten Task Parallel Library (TPL) profitieren. Finden Sie unter [Task Parallel Library (TPL)](http://msdn.microsoft.com/library/dd460717.aspx).  
   
  **Meldungsverträge immer generieren**  
- Bestimmt, ob Meldungsvertragstypen für einen WCF\-Client generiert werden.  Weitere Informationen zu Nachrichtenverträgen finden Sie unter [Verwendung von Nachrichtenverträgen](../Topic/Using%20Message%20Contracts.md).  
+ Bestimmt, ob Meldungsvertragstypen für einen WCF-Client generiert werden. Weitere Informationen zu Nachrichtenverträgen finden Sie unter [Verwendung von Nachrichtenverträgen](/dotnet/framework/wcf/feature-details/using-message-contracts).  
   
- **Auflistungstyp**  
- Gibt den Listenauflistungstyp für einen WCF\-Client an.  Der Standardtyp ist <xref:System.Array>.  
+ **"Sammlung"**  
+ Gibt den Listenauflistungstyp für einen WCF-Client an. Der Standardtyp ist <xref:System.Array>.  
   
  **Wörterbuchauflistungstyp**  
- Gibt den Wörterbuchauflistungstyp für einen WCF\-Client an.  Der Standardtyp ist <xref:System.Collections.Generic.Dictionary%602>.  
+ Gibt den Wörterbuchauflistungstyp für einen WCF-Client an. Der Standardtyp ist <xref:System.Collections.Generic.Dictionary%602>.  
+  
+ **Typen in Assemblys verwiesen wird, wiederverwenden**  
+ Bestimmt, ob ein WCF-Client versucht, die in den referenzierten Assemblys bereits vorhandenen Elemente erneut zu verwenden, anstelle neue Typen zu generieren, wenn ein Dienst hinzugefügt oder aktualisiert wird. Diese Option ist standardmäßig aktiviert.  
+  
+ **Typen in allen Assemblys verwiesen wird, wiederverwenden**  
+ Bei Auswahl dieser Option alle Typen in der **referenzierte Assemblyliste** wird nach Möglichkeit wiederverwendet werden. Diese Option ist standardmäßig ausgewählt.  
   
  **Typen in Assemblys, auf die verwiesen wird, wiederverwenden**  
- Bestimmt, ob ein WCF\-Client versucht, die in den referenzierten Assemblys bereits vorhandenen Elemente erneut zu verwenden, anstelle neue Typen zu generieren, wenn ein Dienst hinzugefügt oder aktualisiert wird.  Diese Option ist standardmäßig aktiviert.  
+ Bei Auswahl dieser Option nur die ausgewählten Typen in der **referenzierte Assemblyliste** wiederverwendet.  
   
- **Typen in allen Assemblys, auf die verwiesen wird, wiederverwenden**  
- Bei Auswahl werden alle Typen in der Liste **Assemblys, auf die verwiesen wird** nach Möglichkeit wiederverwendet.  Diese Option ist standardmäßig ausgewählt.  
-  
- **Typen in folgenden Assemblys, auf die verwiesen wird, wiederverwenden**  
- Bei Auswahl werden nur die ausgewählten Typen in der Liste **Assemblys, auf die verwiesen wird** wiederverwendet.  
-  
- **Liste "Assemblys, auf die verwiesen wird"**  
- Enthält eine Liste von referenzierten Assemblys für das Projekt oder die Website.  Wenn **Typen in folgenden Assemblys, auf die verwiesen wird, wiederverwenden** ausgewählt ist, können einzelne Assemblys aktiviert oder deaktiviert werden.  
+ **Liste der referenzierten Assemblys**  
+ Enthält eine Liste von referenzierten Assemblys für das Projekt oder die Website. Wenn **Typen in Assemblys, auf die verwiesen wird, wiederverwenden** ausgewählt ist, einzelne Assemblys aktiviert oder deaktiviert werden können.  
   
  **Webverweis hinzufügen**  
- Zeigt das Dialogfeld [NIB: Add Web Reference Dialog Box](http://msdn.microsoft.com/de-de/bdf05776-c591-40af-bfd7-e1e2aa1e87b5) an.  
+ Zeigt die [Hinzufügen von Web-Dialogfelds "Verweis"](https://msdn.microsoft.com/en-us/library/8dcbc50t(v=vs.100).aspx).  
   
 > [!NOTE]
 >  Diese Option sollte für Projekte verwendet werden, die Version 2.0 von [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] vorgeben.  
   
 > [!NOTE]
->  Die Schaltfläche **Webverweis hinzufügen** ist nur verfügbar, wenn das Dialogfeld **Dienstverweis konfigurieren** aus dem Dialogfeld [Add Service Reference Dialog Box](../Topic/Add%20Service%20Reference%20Dialog%20Box.md) angezeigt wird.  
+>  Die **Webverweis hinzufügen** Schaltfläche ist nur verfügbar, wenn die **Dienstverweis konfigurieren** Dialogfeld wird angezeigt, aus der **hinzufügen Dienst Dialogfelds "Verweis"**.  
   
-## Siehe auch  
- [Add Service Reference Dialog Box](../Topic/Add%20Service%20Reference%20Dialog%20Box.md)   
- [How to: Add, Update, or Remove a Service Reference](../Topic/How%20to:%20Add,%20Update,%20or%20Remove%20a%20Service%20Reference.md)   
- [How to: Add a Reference to a Web Service](../Topic/How%20to:%20Add%20a%20Reference%20to%20a%20Web%20Service.md)   
- [Windows Communication Foundation\-Dienste und WCF Data Services](../data-tools/configure-service-reference-dialog-box.md)   
- [Beispiel für das Nutzen von ASMX\- und WCF\-Diensten](http://msdn.microsoft.com/de-de/788ddf2c-2ac1-416b-8789-2fbb1e29b8fe)
+## <a name="see-also"></a>Siehe auch  
+
+ [Vorgehensweise: Hinzufügen eines Verweises auf einen Webdienst](how-to-add-update-or-remove-a-wcf-data-service-reference.md)   
+ [Windows Communication Foundation-Dienste und WCF Data Services](../data-tools/configure-service-reference-dialog-box.md)

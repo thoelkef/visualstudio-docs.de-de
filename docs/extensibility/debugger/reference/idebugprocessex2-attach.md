@@ -1,51 +1,51 @@
 ---
-title: "IDebugProcessEx2::Attach | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugProcessEx2::Attach"
-helpviewer_keywords: 
-  - "IDebugProcessEx2::Attach-Methode"
+title: IDebugProcessEx2::Attach | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugProcessEx2::Attach
+helpviewer_keywords: IDebugProcessEx2::Attach method
 ms.assetid: f3334ed7-39bf-4d02-a338-36f567b9b287
-caps.latest.revision: 15
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 15
+caps.latest.revision: "15"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 111895b73ee9685b9608be9812452d04d84cd48c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugProcessEx2::Attach
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Diese Methode informiert den Prozess, dass eine Sitzung jetzt den Prozess gedebuggt wird.  
+# <a name="idebugprocessex2attach"></a>IDebugProcessEx2::Attach
+Diese Methode informiert dem Prozess, dass eine Sitzung jetzt den Prozess debuggen.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT Attach(   
-   IDebugSession2* pSession  
+```cpp  
+HRESULT Attach(   
+   IDebugSession2* pSession  
 );  
 ```  
   
-```c#  
+```csharp  
 int Attach(  
-   IDebugSession2 pSession  
+   IDebugSession2 pSession  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `pSession`  
- \[in\]  Ein Wert, der die Sitzung eindeutig identifiziert wird, die an diesen Prozess anfügt.  
+ [in] Ein Wert, der die Sitzung, Anhängen an diesem Prozess eindeutig identifiziert.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Hinweise  
- Die Schnittstelle, die in `pSession` übergeben wird, soll nur als Cookie behandelt werden, ein Wert, der den Debug\- Manager der Sitzung eindeutig identifiziert, der an diesen Prozess anfügt. Keine Methoden für die angegebene Schnittstelle sind aktiviert.  
+## <a name="remarks"></a>Hinweise  
+ Die Schnittstelle übergebenen `pSession` nur als ein Cookie, das einen Wert behandelt werden soll, die eindeutig von der Sitzung Debug-Manager für diesen Prozess; anfügen keine der Methoden für die angegebene Schnittstelle funktionsfähig sind.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDebugProcessEx2](../../../extensibility/debugger/reference/idebugprocessex2.md)

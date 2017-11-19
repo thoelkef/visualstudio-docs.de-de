@@ -1,43 +1,28 @@
 ---
-title: "Hinzufügen benutzerdefinierter Eigenschaften zu Abhängigkeitsdiagramme | Microsoft-Dokumentation"
+title: "Hinzufügen benutzerdefinierter Eigenschaften zu Abhängigkeit Diagramme | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- dependency diagrams, adding custom properties
+helpviewer_keywords: dependency diagrams, adding custom properties
 ms.assetid: 52b3ac25-d10b-4507-a1fe-209ccb4d2777
-caps.latest.revision: 21
+caps.latest.revision: "21"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 8f84f22444a5df5b9f4f4af44cd8ee9136403467
-ms.openlocfilehash: 6c7e43c180ac5210d9c29961ed7330b370a99075
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 130222ef3a603576f02961979e64b0c8160430af
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# <a name="add-custom-properties-to-dependency-diagrams"></a>Fügen Sie benutzerdefinierter Eigenschaften zu Abhängigkeitsdiagramme hinzu
-Wenn Sie Erweiterungscode für Abhängigkeitsdiagramme schreiben, können Sie Werte mit jedem Element in einem Abhängigkeitsdiagramm speichern. Die Werte bleiben erhalten, wenn das Diagramm gespeichert und erneut geöffnet wird. Sie können auch diese Eigenschaften in angezeigt werden sollen die **Eigenschaften** Fenster, damit Benutzer anzeigen und bearbeiten können. Beispielsweise können Sie Benutzer für jede Ebene einen regulären Ausdruck angeben lassen und Überprüfungscode schreiben, um sicherzustellen, dass die Namen der Klassen in jeder Ebene dem Muster entsprechen, das vom Benutzer angegeben wird.  
+# <a name="add-custom-properties-to-dependency-diagrams"></a>Fügen Sie benutzerdefinierter Eigenschaften zu Abhängigkeit-Diagramme hinzu
+Wenn Sie Erweiterungscode Abhängigkeit Diagramme schreiben, können Sie Werte mit jedem Element in einem Diagramm Abhängigkeit speichern. Die Werte bleiben erhalten, wenn das Diagramm gespeichert und erneut geöffnet wird. Außerdem können Sie diese Eigenschaften werden in der **Eigenschaften** Fenster, damit Benutzer angezeigt und werden bearbeitet können. Beispielsweise können Sie Benutzer für jede Ebene einen regulären Ausdruck angeben lassen und Überprüfungscode schreiben, um sicherzustellen, dass die Namen der Klassen in jeder Ebene dem Muster entsprechen, das vom Benutzer angegeben wird.  
   
 ## <a name="properties-not-visible-to-the-user"></a>Für den Benutzer nicht sichtbare Eigenschaften  
- Wenn Sie nur Code, um Werte an ein Element in einem Abhängigkeitsdiagramm angefügt werden sollen, müssen Sie eine MEF-Komponente definieren. Es gibt ein Wörterbuch mit dem Namen `Properties` <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerElement>.</xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerElement> Fügen Sie einfach Werte zum Wörterbuch jedes Ebenenelements hinzu, die gemarshallt werden können. Sie werden als Teil des Diagramms Abhängigkeit gespeichert werden. Weitere Informationen finden Sie unter [navigieren und Update layer-Modellen im Programmcode](../modeling/navigate-and-update-layer-models-in-program-code.md).  
+ Wenn Sie nur Code Werte auf jedes Element in einem Diagramm Abhängigkeit anfügen möchten, müssen Sie eine MEF-Komponente zu definieren. Es gibt ein Wörterbuch namens `Properties` in <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerElement>. Fügen Sie einfach Werte zum Wörterbuch jedes Ebenenelements hinzu, die gemarshallt werden können. Sie werden als Teil des Diagramms Abhängigkeit gespeichert werden. Weitere Informationen finden Sie unter [navigieren und Update überlagern Sie die Modelle im Programmcode](../modeling/navigate-and-update-layer-models-in-program-code.md).  
   
 ## <a name="properties-that-the-user-can-edit"></a>Eigenschaften, die der Benutzer bearbeiten kann  
  **Erste Vorbereitung**  
@@ -60,9 +45,9 @@ Wenn Sie Erweiterungscode für Abhängigkeitsdiagramme schreiben, können Sie We
 >      `devenv /rootSuffix Exp /updateConfiguration`  
 > 4.  Starten Sie Visual Studio neu.  
   
- **Stellen Sie sicher, dass Ihr Code in einem VSIX-Projekt**  
+ **Stellen Sie sicher, dass der Code in einem VSIX-Projekt ist**  
   
- Wenn die Eigenschaft Teil eines Befehls-, Gesten- oder Validierungsprojekts ist, müssen Sie nichts hinzufügen. Der Code für die benutzerdefinierte Eigenschaft sollte in einem Visual Studio-Erweiterungsprojekt definiert werden, das als MEF-Komponente definiert wird. Weitere Informationen finden Sie unter [Hinzufügen von Befehlen und Gesten, Abhängigkeitsdiagramme](../modeling/add-commands-and-gestures-to-layer-diagrams.md) oder [Hinzufügen von benutzerdefinierten architekturüberprüfung zu Abhängigkeit Diagrammen](../modeling/add-custom-architecture-validation-to-layer-diagrams.md).  
+ Wenn die Eigenschaft Teil eines Befehls, Gestenhandler oder Validierungsprojekt ist, müssen Sie nichts hinzufügen. Der Code für die benutzerdefinierte Eigenschaft sollte in einem Visual Studio-Erweiterungsprojekt definiert werden, das als MEF-Komponente definiert wird. Weitere Informationen finden Sie unter [Hinzufügen von Befehlen und Bewegungen zu Abhängigkeit Diagrammen](../modeling/add-commands-and-gestures-to-layer-diagrams.md) oder [Hinzufügen von benutzerdefinierten architekturüberprüfung zu Abhängigkeit Diagrammen](../modeling/add-custom-architecture-validation-to-layer-diagrams.md).  
   
  **Definieren der benutzerdefinierten Eigenschaft**  
   
@@ -77,7 +62,7 @@ public class MyProperty
 }  
 ```  
   
- Sie können die Eigenschaften definieren, auf <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerElement>oder eine der davon abgeleiteten Klassen, darunter:</xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerElement>  
+ Sie können Eigenschaften für <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerElement> oder eine der abgeleiteten Klassen definieren, darunter folgende:  
   
 -   `ILayerModel` - das Modell  
   
@@ -176,5 +161,4 @@ namespace MyNamespace
 ```  
   
 ## <a name="see-also"></a>Siehe auch  
- [Erweitern Sie Abhängigkeitsdiagramme](../modeling/extend-layer-diagrams.md)
-
+ [Erweitern von Abhängigkeitsdiagrammen](../modeling/extend-layer-diagrams.md)

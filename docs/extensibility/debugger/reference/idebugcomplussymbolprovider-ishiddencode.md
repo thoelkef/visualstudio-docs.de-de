@@ -1,51 +1,52 @@
 ---
-title: "IDebugComPlusSymbolProvider::IsHiddenCode | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "IDebugComPlusSymbolProvider::IsHiddenCode"
+title: IDebugComPlusSymbolProvider::IsHiddenCode | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: IDebugComPlusSymbolProvider::IsHiddenCode
 ms.assetid: 1352c6ab-7b92-4a16-b2d2-6520b628830e
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: d73dcdb26524fe2dfa8f84eeed620c18e02cd613
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugComPlusSymbolProvider::IsHiddenCode
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Bestimmt, ob die Codeausführung an der angegebenen Debugger adresse ausgeblendet ist.  
+# <a name="idebugcomplussymbolproviderishiddencode"></a>IDebugComPlusSymbolProvider::IsHiddenCode
+Bestimmt, ob der Code bei der Adresse angegebenen Debugger ausgeblendet ist.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT IsHiddenCode(  
-   IDebugAddress* pAddress  
+   IDebugAddress* pAddress  
 );  
 ```  
   
-```c#  
+```csharp  
 int IsHiddenCode(  
-   IDebugAddress pAddress  
+   IDebugAddress pAddress  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `pAddress`  
- \[in\]  Die Debuginformationen Adresse, die von einer [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)\-Schnittstelle dargestellt wird.  
+ [in] Die Debug-Adresse, die durch dargestellt wird ein [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) Schnittstelle.  
   
-## Rückgabewert  
- Wenn der Code ausgeblendet ist, gibt `S_OK`zurück. andernfalls gibt `S_FALSE`zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Wenn der Code ausgeblendet ist, gibt `S_OK`ist, andernfalls gibt `S_FALSE`.  
   
-## Beispiel  
- Im folgenden Beispiel wird veranschaulicht, wie diese Methode für ein **CDebugSymbolProvider\-Objekt** implementiert, das die [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)\-Schnittstelle verfügbar macht.  
+## <a name="example"></a>Beispiel  
+ Das folgende Beispiel veranschaulicht die Implementierung dieser Methode für eine **CDebugSymbolProvider** -Objekt, das macht die [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) Schnittstelle.  
   
-```cpp#  
+```cpp  
 HRESULT CDebugSymbolProvider::IsHiddenCode(  
     IDebugAddress* pAddress  
 )  
@@ -90,5 +91,5 @@ Error:
 }  
 ```  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

@@ -1,12 +1,10 @@
 ---
-title: 'Walkthrough: Complex Data Binding in VSTO add-in Project | Microsoft Docs'
+title: 'Exemplarische Vorgehensweise: Komplexe Datenbindung in einem VSTO-add-in-Projekt | Microsoft Docs'
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -17,135 +15,139 @@ helpviewer_keywords:
 - data [Office development in Visual Studio], binding data
 - complex data [Office development in Visual Studio]
 ms.assetid: ff52fb56-1f67-4ae2-a3d1-93038619d4e6
-caps.latest.revision: 38
-author: kempb
-ms.author: kempb
+caps.latest.revision: "38"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 3309d011d3b74093bd38f56eb6d063ae5b2c4821
-ms.contentlocale: de-de
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: 9b106e9d1ef1fc10c5c0cd99ceaed76f87408713
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="walkthrough-complex-data-binding-in-vsto-add-in-project"></a>Walkthrough: Complex Data Binding in VSTO add-in Project
-  You can bind data to host controls and Windows Forms controls in VSTO Add-in projects. This walkthrough demonstrates how to add controls to a Microsoft Office Excel worksheet and bind the controls to data at run time.  
+# <a name="walkthrough-complex-data-binding-in-vsto-add-in-project"></a>Exemplarische Vorgehensweise: Komplexe Datenbindung in einem VSTO-Add-In-Projekt
+  Sie können in VSTO-Add-In-Projekten Daten an Hoststeuerelemente und Windows Forms-Steuerelemente binden. In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie einem Microsoft Office Excel-Arbeitsblatt zur Laufzeit Steuerelemente hinzugefügt und diese Steuerelemente an Daten gebunden werden.  
   
  [!INCLUDE[appliesto_xlallapp](../vsto/includes/appliesto-xlallapp-md.md)]  
   
- This walkthrough illustrates the following tasks:  
+ In dieser exemplarischen Vorgehensweise werden die folgenden Aufgaben veranschaulicht:  
   
--   Adding a <xref:Microsoft.Office.Tools.Excel.ListObject> control to a worksheet at run time.  
+-   Hinzufügen eines <xref:Microsoft.Office.Tools.Excel.ListObject> -Steuerelements zu einem Arbeitsblatt zur Laufzeit  
   
--   Creating a <xref:System.Windows.Forms.BindingSource> that connects the control to an instance of a dataset.  
+-   Erstellen eines <xref:System.Windows.Forms.BindingSource> -Objekts, das das Steuerelement mit einer Instanz eines Datasets verbindet  
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
-## <a name="prerequisites"></a>Prerequisites  
- You need the following components to complete this walkthrough:  
+## <a name="prerequisites"></a>Erforderliche Komponenten  
+ Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
   
--   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] or [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].  
+-   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] oder [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].  
   
--   Access to a running instance of SQL Server 2005 or SQL Server 2005 Express that has the `AdventureWorksLT` sample database attached to it. You can download the `AdventureWorksLT` database from the [CodePlex Web site](http://go.microsoft.com/fwlink/?LinkId=115611). For more information about attaching a database, see the following topics:  
+-   Zugriff auf eine aktive Instanz von SQL Server 2005 oder SQL Server 2005 Express, an die die `AdventureWorksLT` -Beispieldatenbank angefügt ist. Sie können die `AdventureWorksLT` -Datenbank von der [CodePlex-Website](http://go.microsoft.com/fwlink/?LinkId=115611)herunterladen. Weitere Informationen zum Anhängen von Datenbanken finden Sie in den folgenden Themen:  
   
-    -   To attach a database by using SQL Server Management Studio or SQL Server Management Studio Express, see [How to: Attach a Database (SQL Server Management Studio)](http://msdn.microsoft.com/en-us/b4efb0ae-cfe6-4d81-a4b4-6e4916885caa).  
+    -   Informationen zum Anfügen einer Datenbank mit SQL Server Management Studio oder SQL Server Management Studio Express finden Sie unter [Gewusst wie: Anfügen einer Datenbank (SQL Server Management Studio)](http://msdn.microsoft.com/en-us/b4efb0ae-cfe6-4d81-a4b4-6e4916885caa).  
   
-    -   To attach a database by using the command line, see [How to: Attach a Database File to SQL Server Express](http://msdn.microsoft.com/en-us/0f8e42b5-7a8c-4c30-8c98-7d2bdc8dcc68).  
+    -   Informationen zum Anfügen einer Datenbank über die Befehlszeile finden Sie unter [Gewusst wie: Anfügen einer Datenbankdatei an SQL Server Express](http://msdn.microsoft.com/en-us/0f8e42b5-7a8c-4c30-8c98-7d2bdc8dcc68).  
   
-## <a name="creating-a-new-project"></a>Creating a New Project  
- The first step is to create an Excel VSTO Add-in project.  
+## <a name="creating-a-new-project"></a>Erstellen eines neuen Projekts  
+ Der erste Schritt besteht im Erstellen eines VSTO-Add-In-Projekts für Excel.  
   
-#### <a name="to-create-a-new-project"></a>To create a new project  
+#### <a name="to-create-a-new-project"></a>So erstellen Sie ein neues Projekt  
   
-1.  Create an Excel VSTO Add-in project with the name **Populating Worksheets from a Database**, using either Visual Basic or C#.  
+1.  Erstellen Sie mit Visual Basic oder C# ein Excel-VSTO-Add-In-Projekt, das den Namen **Füllen von Arbeitsblättern aus einer Datenbank**hat.  
   
-     For more information, see [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+     Weitere Informationen finden Sie unter [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
-     Visual Studio opens the `ThisAddIn.vb` or `ThisAddIn.cs` file and adds the **Populating Worksheets from a Database** project to **Solution Explorer**.  
+     Visual Studio öffnet die Datei `ThisAddIn.vb` oder `ThisAddIn.cs` und fügt dem **Projektmappen-Explorer** das Projekt **Füllen von Arbeitsblättern aus einer Datenbank**hinzu.  
   
-## <a name="creating-a-data-source"></a>Creating a Data Source  
- Use the **Data Sources** window to add a typed dataset to your project.  
+## <a name="creating-a-data-source"></a>Erstellen einer Datenquelle  
+ Verwenden das Fenster **Datenquellen** , um dem Projekt ein typisiertes Dataset hinzuzufügen.  
   
-#### <a name="to-add-a-typed-dataset-to-the-project"></a>To add a typed dataset to the project  
+#### <a name="to-add-a-typed-dataset-to-the-project"></a>So fügen Sie dem Projekt ein typisiertes Dataset hinzu  
   
-1.  If the **Data Sources** window is not visible, display it by, on the menu bar, choosing **View**, **Other Windows**, **Data Sources**.  
+1.  Wenn das Fenster **Datenquellen** nicht sichtbar ist, zeigen Sie es an, indem Sie in der Menüleiste **Ansicht**, **Weitere Fenster**und **Datenquellen**wählen.  
   
-2.  Choose **Add New Data Source** to start the **Data Source Configuration Wizard**.  
+2.  Wählen Sie **Neue Datenquelle hinzufügen** , um den **Assistenten zum Konfigurieren von Datenquellen**zu starten.  
   
-3.  Click **Database**, and then click **Next**.  
+3.  Klicken Sie auf **Datenbank**, und klicken Sie dann auf **Weiter**.  
   
-4.  If you have an existing connection to the `AdventureWorksLT` database, choose this connection and click **Next**.  
+4.  Wenn eine Verbindung mit der `AdventureWorksLT` -Datenbank vorhanden ist, wählen Sie diese Verbindung aus, und klicken Sie auf **Weiter**.  
   
-     Otherwise, click **New Connection**, and use the **Add Connection** dialog box to create the new connection. For more information, see [Add new connections](../data-tools/add-new-connections.md).  
+     Klicken Sie andernfalls auf **Neue Verbindung**, und erstellen Sie die neue Verbindung im Dialogfeld **Verbindung hinzufügen** . Weitere Informationen finden Sie unter [neue Verbindungen hinzufügen](../data-tools/add-new-connections.md).  
   
-5.  In the **Save the Connection String to the Application Configuration File** page, click **Next**.  
+5.  Klicken Sie auf der Seite **Verbindungszeichenfolge in der Anwendungskonfigurationsdatei speichern** auf **Weiter**.  
   
-6.  In the **Choose Your Database Objects** page, expand **Tables** and select **Address (SalesLT)**.  
+6.  Erweitern Sie auf der Seite **Datenbankobjekte auswählen** den Knoten **Tabellen** , und wählen Sie **Address (SalesLT)**aus.  
   
-7.  Click **Finish**.  
+7.  Klicken Sie auf **Fertig stellen**.  
   
-     The AdventureWorksLTDataSet.xsd file is added to **Solution Explorer**. This file defines the following items:  
+     Öffnen Sie im **Projektmappen-Explorer**die Datei „AdventureWorksLTDataSet.xsd“. In dieser Datei sind die folgenden Elemente definiert:  
   
-    -   A typed dataset named `AdventureWorksLTDataSet`. This dataset represents the contents of the **Address (SalesLT)** table in the AdventureWorksLT database.  
+    -   Ein typisiertes Dataset namens `AdventureWorksLTDataSet`. Dieses Dataset entspricht dem Inhalt der **Address (SalesLT)** -Tabelle in der AdventureWorksLT-Datenbank.  
   
-    -   A TableAdapter named `AddressTableAdapter`. This TableAdapter can be used to read and write data in the `AdventureWorksLTDataSet`. For more information, see [TableAdapter Overview](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview).  
+    -   Einen TableAdapter namens `AddressTableAdapter`. Diese TableAdapter dienen zum Lesen und Schreiben von Daten in der `AdventureWorksLTDataSet`. Weitere Informationen finden Sie unter [TableAdapter Overview](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview).  
   
-     You will use both of these objects later in this walkthrough.  
+     Zu einem späteren Zeitpunkt in dieser exemplarischen Vorgehensweise verwenden Sie beide Objekte.  
   
-## <a name="creating-controls-and-binding-controls-to-data"></a>Creating Controls and Binding Controls to Data  
- For this walkthrough, the <xref:Microsoft.Office.Tools.Excel.ListObject> control displays all the data in the table you selected as soon as the user opens the workbook. The list object uses a <xref:System.Windows.Forms.BindingSource> to connect the control to the database.  
+## <a name="creating-controls-and-binding-controls-to-data"></a>Erstellen von Steuerelementen und Binden von Steuerelementen an Daten  
+ In dieser exemplarischen Vorgehensweise zeigt das <xref:Microsoft.Office.Tools.Excel.ListObject> -Steuerelement alle von Ihnen ausgewählten Daten in der Tabelle an, sobald der Benutzer die Arbeitsmappe öffnet. Das Listenobjekt stellt mit einer <xref:System.Windows.Forms.BindingSource> eine Verbindung zwischen Steuerelement und Datenbank her.  
   
- For more information about binding controls to data, see [Binding Data to Controls in Office Solutions](../vsto/binding-data-to-controls-in-office-solutions.md).  
+ Weitere Informationen zum Binden von Steuerelementen an Daten finden Sie unter [Binding Data to Controls in Office Solutions](../vsto/binding-data-to-controls-in-office-solutions.md).  
   
-#### <a name="to-add-the-list-object-dataset-and-table-adapter"></a>To add the list object, dataset, and table adapter  
+#### <a name="to-add-the-list-object-dataset-and-table-adapter"></a>So fügen Sie das Listenobjekt, das Dataset und den Tabellenadapter hinzu  
   
-1.  In the `ThisAddIn` class, declare the following controls to display the `Address` table of the `AdventureWorksLTDataSet` dataset.  
+1.  Deklarieren Sie in der `ThisAddIn` -Klasse die folgenden Steuerelemente, um die `Address` -Tabelle des `AdventureWorksLTDataSet` -Datsets anzuzeigen.  
   
-     [!code-csharp[Trin_ExcelAddInDatabase#1](../vsto/codesnippet/CSharp/Trin_ExcelAddInDatabase_O12/ThisAddIn.cs#1)]  [!code-vb[Trin_ExcelAddInDatabase#1](../vsto/codesnippet/VisualBasic/Trin_ExcelAddInDatabase_O12/ThisAddIn.vb#1)]  
+     [!code-csharp[Trin_ExcelAddInDatabase#1](../vsto/codesnippet/CSharp/Trin_ExcelAddInDatabase_O12/ThisAddIn.cs#1)]
+     [!code-vb[Trin_ExcelAddInDatabase#1](../vsto/codesnippet/VisualBasic/Trin_ExcelAddInDatabase_O12/ThisAddIn.vb#1)]  
   
-2.  In the `ThisAddIn_Startup` method, add the following code to initialize the dataset and fill the dataset with information from the `AdventureWorksLTDataSet` dataset.  
+2.  Fügen Sie der `ThisAddIn_Startup` -Methode den folgenden Code hinzu, um das Dataset zu initialisieren und es mit Daten aus dem `AdventureWorksLTDataSet` -Dataset zu füllen.  
   
-     [!code-csharp[Trin_ExcelAddInDatabase#2](../vsto/codesnippet/CSharp/Trin_ExcelAddInDatabase_O12/ThisAddIn.cs#2)]  [!code-vb[Trin_ExcelAddInDatabase#2](../vsto/codesnippet/VisualBasic/Trin_ExcelAddInDatabase_O12/ThisAddIn.vb#2)]  
+     [!code-csharp[Trin_ExcelAddInDatabase#2](../vsto/codesnippet/CSharp/Trin_ExcelAddInDatabase_O12/ThisAddIn.cs#2)]
+     [!code-vb[Trin_ExcelAddInDatabase#2](../vsto/codesnippet/VisualBasic/Trin_ExcelAddInDatabase_O12/ThisAddIn.vb#2)]  
   
-3.  Add the following code to the `ThisAddIn_Startup` method. This generates a host item that extends the worksheet. For more information, see [Extending Word Documents and Excel Workbooks in VSTO Add-ins at Run Time](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
+3.  Fügen Sie der `ThisAddIn_Startup` -Methode folgenden Code hinzu. Dadurch wird ein Hostelement generiert, das das Arbeitsblatt erweitert. Weitere Informationen finden Sie unter [Extending Word Documents and Excel Workbooks in VSTO Add-ins at Run Time](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
   
-     [!code-csharp[Trin_ExcelAddInDatabase#3](../vsto/codesnippet/CSharp/Trin_ExcelAddInDatabase_O12/ThisAddIn.cs#3)]  [!code-vb[Trin_ExcelAddInDatabase#3](../vsto/codesnippet/VisualBasic/Trin_ExcelAddInDatabase_O12/ThisAddIn.vb#3)]  
+     [!code-csharp[Trin_ExcelAddInDatabase#3](../vsto/codesnippet/CSharp/Trin_ExcelAddInDatabase_O12/ThisAddIn.cs#3)]
+     [!code-vb[Trin_ExcelAddInDatabase#3](../vsto/codesnippet/VisualBasic/Trin_ExcelAddInDatabase_O12/ThisAddIn.vb#3)]  
   
-4.  Create a range and add the <xref:Microsoft.Office.Tools.Excel.ListObject> control.  
+4.  Erstellen Sie einen Bereich und fügen das <xref:Microsoft.Office.Tools.Excel.ListObject> -Steuerelement hinzu.  
   
-     [!code-csharp[Trin_ExcelAddInDatabase#4](../vsto/codesnippet/CSharp/Trin_ExcelAddInDatabase_O12/ThisAddIn.cs#4)]  [!code-vb[Trin_ExcelAddInDatabase#4](../vsto/codesnippet/VisualBasic/Trin_ExcelAddInDatabase_O12/ThisAddIn.vb#4)]  
+     [!code-csharp[Trin_ExcelAddInDatabase#4](../vsto/codesnippet/CSharp/Trin_ExcelAddInDatabase_O12/ThisAddIn.cs#4)]
+     [!code-vb[Trin_ExcelAddInDatabase#4](../vsto/codesnippet/VisualBasic/Trin_ExcelAddInDatabase_O12/ThisAddIn.vb#4)]  
   
-5.  Bind the list object to `AdventureWorksLTDataSet` by using the <xref:System.Windows.Forms.BindingSource>. Pass in the names of the columns you want to bind to the list object.  
+5.  Binden Sie das Listenobjekt mithilfe der `AdventureWorksLTDataSet` an das <xref:System.Windows.Forms.BindingSource>. Übergeben Sie die Namen der Spalten, die an das Listenobjekt gebunden werden sollen.  
   
-     [!code-csharp[Trin_ExcelAddInDatabase#5](../vsto/codesnippet/CSharp/Trin_ExcelAddInDatabase_O12/ThisAddIn.cs#5)]  [!code-vb[Trin_ExcelAddInDatabase#5](../vsto/codesnippet/VisualBasic/Trin_ExcelAddInDatabase_O12/ThisAddIn.vb#5)]  
+     [!code-csharp[Trin_ExcelAddInDatabase#5](../vsto/codesnippet/CSharp/Trin_ExcelAddInDatabase_O12/ThisAddIn.cs#5)]
+     [!code-vb[Trin_ExcelAddInDatabase#5](../vsto/codesnippet/VisualBasic/Trin_ExcelAddInDatabase_O12/ThisAddIn.vb#5)]  
   
-## <a name="testing-the-add-in"></a>Testing the Add-In  
- When you open Excel, the <xref:Microsoft.Office.Tools.Excel.ListObject> control displays the data from the `Address` table of the `AdventureWorksLTDataSet` dataset.  
+## <a name="testing-the-add-in"></a>Testen des Add-Ins  
+ Beim Öffnen von Excel zeigt das <xref:Microsoft.Office.Tools.Excel.ListObject> -Steuerelement die Daten aus der `Address` -Tabelle des `AdventureWorksLTDataSet` -Datasets .  
   
-#### <a name="to-test-the-vsto-add-in"></a>To test the VSTO Add-in  
+#### <a name="to-test-the-vsto-add-in"></a>So testen Sie das VSTO-Add-In  
   
--   Press **F5**.  
+-   Drücken Sie **F5**.  
   
-     A <xref:Microsoft.Office.Tools.Excel.ListObject> control named `addressListObject` is created in the worksheet. At the same time, a dataset object named `adventureWorksLTDataSet` and a <xref:System.Windows.Forms.BindingSource> named `addressBindingSource` are added to the project. The <xref:Microsoft.Office.Tools.Excel.ListObject> is bound to the <xref:System.Windows.Forms.BindingSource>, which in turn is bound to the dataset object.  
+     Im Arbeitsblatt wird ein <xref:Microsoft.Office.Tools.Excel.ListObject> -Steuerelement namens `addressListObject` erstellt. Gleichzeitig werden dem Projekt ein Datasetobjekt namens `adventureWorksLTDataSet` und ein <xref:System.Windows.Forms.BindingSource> -Objekt namens `addressBindingSource` hinzugefügt. Das <xref:Microsoft.Office.Tools.Excel.ListObject> -Steuerelement ist an das <xref:System.Windows.Forms.BindingSource>-Objekt gebunden, das wiederum an das Datasetobjekt gebunden ist.  
   
-## <a name="see-also"></a>See Also  
- [Data in Office Solutions](../vsto/data-in-office-solutions.md)   
- [Binding Data to Controls in Office Solutions](../vsto/binding-data-to-controls-in-office-solutions.md)   
- [How to: Populate Worksheets with Data from a Database](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)   
- [How to: Populate Documents with Data from a Database](../vsto/how-to-populate-documents-with-data-from-a-database.md)   
- [How to: Populate Documents with Data from Services](../vsto/how-to-populate-documents-with-data-from-services.md)   
- [How to: Populate Documents with Data from Objects](../vsto/how-to-populate-documents-with-data-from-objects.md)   
- [How to: Scroll Through Database Records in a Worksheet](../vsto/how-to-scroll-through-database-records-in-a-worksheet.md)   
- [How to: Update a Data Source with Data from a Host Control](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)   
- [Walkthrough: Simple Data Binding in a Document-Level Project](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md)   
- [Walkthrough: Complex Data Binding in a Document-Level Project](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md)   
- [Using Local Database Files in Office Solutions Overview](../vsto/using-local-database-files-in-office-solutions-overview.md)   
- [Add new data sources](/visualstudio/data-tools/add-new-data-sources)   
- [Bind Windows Forms controls to data in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)   
- [Using Local Database Files in Office Solutions Overview](../vsto/using-local-database-files-in-office-solutions-overview.md)   
- [Connecting to Data in Windows Forms Applications](/visualstudio/data-tools/connecting-to-data-in-windows-forms-applications)   
- [BindingSource Component Overview](/dotnet/framework/winforms/controls/bindingsource-component-overview)  
+## <a name="see-also"></a>Siehe auch  
+ [Daten in Office-Projektmappen](../vsto/data-in-office-solutions.md)   
+ [Binden von Daten an Steuerelemente in Office-Projektmappen](../vsto/binding-data-to-controls-in-office-solutions.md)   
+ [Vorgehensweise: Auffüllen von Arbeitsblättern mit Daten aus einer Datenbank](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)   
+ [Vorgehensweise: Auffüllen von Dokumenten mit Daten aus einer Datenbank](../vsto/how-to-populate-documents-with-data-from-a-database.md)   
+ [Vorgehensweise: Auffüllen von Dokumenten mit Daten aus Diensten](../vsto/how-to-populate-documents-with-data-from-services.md)   
+ [Vorgehensweise: Auffüllen von Dokumenten mit Daten aus Objekten](../vsto/how-to-populate-documents-with-data-from-objects.md)   
+ [Vorgehensweise: Führen Sie einen Bildlauf durch Datenbankdatensätze in einem Arbeitsblatt](../vsto/how-to-scroll-through-database-records-in-a-worksheet.md)   
+ [Vorgehensweise: Aktualisieren einer Datenquelle mit Daten eines Hoststeuerelements](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)   
+ [Exemplarische Vorgehensweise: Einfache Datenbindung in einem Projekt auf Dokumentebene](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md)   
+ [Exemplarische Vorgehensweise: Komplexe Datenbindung in einem Projekt auf Dokumentebene](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md)   
+ [Verwendung lokaler Datenbankdateien in Office-Projektmappen (Übersicht)](../vsto/using-local-database-files-in-office-solutions-overview.md)   
+ [Neue Datenquellen hinzufügen](/visualstudio/data-tools/add-new-data-sources)   
+ [Binden von Windows Forms-Steuerelementen an Daten in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)   
+ [Verwendung lokaler Datenbankdateien in Office-Projektmappen (Übersicht)](../vsto/using-local-database-files-in-office-solutions-overview.md)   
+ [Herstellen einer Verbindung mit Daten in Windows Forms-Anwendungen](/visualstudio/data-tools/connecting-to-data-in-windows-forms-applications)   
+ [Übersicht über die BindingSource-Komponente](/dotnet/framework/winforms/controls/bindingsource-component-overview)  
   
   

@@ -1,53 +1,53 @@
 ---
-title: "IDebugClassField::GetDefaultIndexer | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugClassField::GetDefaultIndexer"
-helpviewer_keywords: 
-  - "IDebugClassField::GetDefaultIndexer-Methode"
+title: IDebugClassField::GetDefaultIndexer | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugClassField::GetDefaultIndexer
+helpviewer_keywords: IDebugClassField::GetDefaultIndexer method
 ms.assetid: 47ce4f45-3816-4b40-909c-5032d0692d75
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: d30388b170f4a7de672fbdda11ccead83acce32c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugClassField::GetDefaultIndexer
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Ruft den Namen des standardmäßigen Indexers ab.  
+# <a name="idebugclassfieldgetdefaultindexer"></a>IDebugClassField::GetDefaultIndexer
+Ruft den Namen der Standardindexer ab.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT GetDefaultIndexer(   
-   BSTR* pbstrIndexer  
+```cpp  
+HRESULT GetDefaultIndexer(   
+   BSTR* pbstrIndexer  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetDefaultIndexer(  
-   out string pbstrIndexer  
+   out string pbstrIndexer  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `pbstrIndexer`  
- \[out\]  Gibt eine Zeichenfolge zurück, die den Namen des standardmäßigen Indexers enthält.  
+ [out] Gibt eine Zeichenfolge, die mit dem Namen des der Standardindexer zurück.  
   
-## Rückgabewert  
- Bei Erfolg gibt S\_OK zurück oder gibt S\_FALSE zurück, wenn kein Standardindexer vorhanden ist.  Andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Bei Erfolg S_OK zurück oder gibt S_FALSE zurück, wenn keine Standardindexer vorhanden ist. Andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Hinweise  
- Der Standardindexer einer Klasse ist die Eigenschaft gekennzeichnet ist, während die `Default`\-Eigenschaft für Arrays veranschaulicht.  Dies ist mit [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)]bestimmt.  Im Folgenden finden Sie ein Beispiel für einen standardmäßigen Indexers, der in [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] deklariert wird und wie er verwendet wird.  
+## <a name="remarks"></a>Hinweise  
+ Der Standardindexer einer Klasse ist die Eigenschaft mit der Kennzeichnung der `Default` -Eigenschaft für das Array greift auf. Dies bezieht sich auf [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)]. Hier ist ein Beispiel für einen Standardindexer deklariert [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] und wie diese verwendet werden.  
   
-```vb#  
+```vb  
 Imports System.Collections;  
   
 Public Class Class1  
@@ -77,5 +77,5 @@ Function GetItem(Index as Integer) as Integer
 End Function  
 ```  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)

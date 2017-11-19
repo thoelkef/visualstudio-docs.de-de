@@ -1,78 +1,78 @@
 ---
-title: "Verwenden von Regels&#228;tzen zum Festlegen von C++-Regeln f&#252;r die Ausf&#252;hrung | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/16/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: "Mithilfe der Regel an die C++-Regeln für die Ausführung legt | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: ac3877e6-5349-4c03-9541-3d5be259f1e8
-caps.latest.revision: 5
-caps.handback.revision: 5
-author: "corob-msft"
-ms.author: "corob"
-manager: "ghogen"
+caps.latest.revision: "5"
+author: mikeblome
+ms.author: mblome
+manager: ghogen
+ms.openlocfilehash: 5ad51388ae1580ada61442798b46048ad71ece64
+ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/15/2017
 ---
-# Verwenden von Regels&#228;tzen zum Festlegen von C++-Regeln f&#252;r die Ausf&#252;hrung
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-In [!INCLUDE[vsPreShort](../code-quality/includes/vspreshort_md.md)] und [!INCLUDE[vsUltShort](../code-quality/includes/vsultshort_md.md)] können Sie einen benutzerdefinierten *Regelsatz* erstellen und ändern, um bestimmte Projektanforderungen für die Codeanalyse zu erfüllen.  Um einen benutzerdefinierten C\+\+\-Regelsatz zu erstellen, muss Projekt eine \/C \+\+ in der Visual Studio\-Entwicklungsumgebung geöffnet sein.  Sie öffnen einen Standardregelsatz im Regelsatz\-Editor und anschließend fügen hinzu oder entfernen bestimmte Regeln und optional die Aktion ändern, die auftritt, wenn eine Codeanalyse bestimmt, dass eine Regel verstoßen wurde.  
+# <a name="using-rule-sets-to-specify-the-c-rules-to-run"></a>Verwenden von Regelsätzen zum Festlegen von C++-Regeln für die Ausführung
+In [!INCLUDE[vsPreShort](../code-quality/includes/vspreshort_md.md)] und [!INCLUDE[vsUltShort](../code-quality/includes/vsultshort_md.md)], können Sie erstellen und ändern Sie eine benutzerdefinierte *Regelsatz* um bestimmte projektanforderungen mit der Codeanalyse zu erfüllen. Zum Erstellen eines benutzerdefinierten Regelsatzes für C++ festgelegt, muss ein C/C++-Projekt in Visual Studio-IDE geöffnet werden. Sie öffnen Sie einen standard-Regelsatz im Regelsatz-Editor und dann hinzufügen oder entfernen bestimmte Regeln und optional die Aktion, die bei der Codeanalyse feststellt, dass es sich bei einem Verstoß gegen eine Regel ändern.  
   
- Zum Erstellen eines neuen benutzerdefinierten Regelsatzes speichern Sie diesen unter einem neuen Dateinamen.  Der benutzerdefinierte Regelsatz wird dem Projekt automatisch zugewiesen.  
+ Zum Erstellen eines neuen benutzerdefinierten Regelsatzes speichern Sie diesen unter einem neuen Dateinamen. Der benutzerdefinierte Regelsatz wird dem Projekt automatisch zugewiesen.  
   
-## Öffnen des Regelsatz\-Editors  
+## <a name="opening-the-rule-set-editor"></a>Öffnen des Regelsatz-Editors  
   
-#### So erstellen Sie eine benutzerdefinierte Regel aus einem einzelnen vorhandenen Regelsatz  
+#### <a name="to-create-a-custom-rule-from-a-single-existing-rule-set"></a>So erstellen Sie eine benutzerdefinierte Regel aus einem einzelnen vorhandenen Regelsatz  
   
-1.  In Projektmappen\-Explorer öffnen Explorer, das Kontextmenü für das Projekt und dann **Eigenschaften** aus.  
+1.  Klicken Sie im Projektmappen-Explorer das Kontextmenü für das Projekt zu öffnen, und wählen Sie dann **Eigenschaften**.  
   
-2.  Auf der Registerkarte **Eigenschaften** wählen Sie **Codeanalyse** aus.  
+2.  Auf der **Eigenschaften** Registerkarte **Codeanalyse**.  
   
-3.  Führen Sie in der Dropdownliste **Regelsatz** einen der folgenden Schritte aus:  
+3.  In der **Regelsatz** Dropdown-Liste, führen Sie einen der folgenden:  
   
     -   Wählen Sie den Regelsatz, den Sie anpassen möchten.  
   
-     – oder –  
+     \- oder –  
   
-    -   Wählen **\<Durchsuchen...\>**, um einen vorhandenen Regelsatz anzugeben, der nicht in der Liste ist.  
+    -   Wählen Sie  **\<durchsuchen... >** Geben Sie einen vorhandenen Regelsatz ist nicht in der Liste.  
   
-4.  Wählen **Öffnen**, um die Regeln im Regelsatz\-Editor anzuzeigen.  
+4.  Wählen Sie **öffnen** auf die Regeln im Regelsatz-Editor anzuzeigen.  
   
-#### So ändern Sie einen Regelsatz im Regelsatz\-Editor  
+#### <a name="to-modify-a-rule-set-in-the-rule-set-editor"></a>So ändern Sie einen Regelsatz im Regelsatz-Editor  
   
--   Um der Anzeigename des Regelsatzes, im Menü **Ansicht** zu ändern, wählen Sie **Eigenschaftenfenster** aus.  Geben Sie im Feld **Name** den gewünschten Anzeigenamen ein.  Der Anzeigename kann sich vom Dateinamen unterscheiden.  
+-   Der Anzeigename des Regelsatzes, zum Ändern der **Ansicht** Menü wählen **Fenster "Eigenschaften"**. Geben Sie den Anzeigenamen in der **Namen** Feld. Der Anzeigename kann sich vom Dateinamen unterscheiden.  
   
--   Wenn Sie einem benutzerdefinierten Regelsatz alle Regeln der Gruppe hinzufügen möchten, aktivieren Sie das Kontrollkästchen für die Gruppe.  Wenn Sie alle Regeln der Gruppe entfernen möchten, deaktivieren Sie das Kontrollkästchen.  
+-   Wenn Sie einem benutzerdefinierten Regelsatz alle Regeln der Gruppe hinzufügen möchten, aktivieren Sie das Kontrollkästchen für die Gruppe. Wenn Sie alle Regeln der Gruppe entfernen möchten, deaktivieren Sie das Kontrollkästchen.  
   
--   Wenn Sie dem benutzerdefinierten Regelsatz eine bestimmte Regel hinzufügen möchten, aktivieren Sie das Kontrollkästchen für die Regel.  Wenn Sie die Regel aus dem Regelsatz entfernen möchten, deaktivieren Sie das zugehörige Kontrollkästchen.  
+-   Wenn Sie dem benutzerdefinierten Regelsatz eine bestimmte Regel hinzufügen möchten, aktivieren Sie das Kontrollkästchen für die Regel. Wenn Sie die Regel aus dem Regelsatz entfernen möchten, deaktivieren Sie das zugehörige Kontrollkästchen.  
   
--   Wenn Sie die Aktion ändern wenn eine Regel in einer Codeanalyse verstoßen wird, wählen Sie das Feld **Aktion** für die Regel und wählen Sie dann einen der folgenden Werte aus:  
+-   Um die Aktion ausführt, wenn es sich bei einem Verstoß gegen eine Regel in einer Codeanalyse zu ändern, wählen Sie die **Aktion** Feld für die Regel, und wählen Sie dann einen der folgenden Werte:  
   
-     **Warn** – erzeugt eine Warnung.  
+     **Warnhinweis anzeigen,** -wird eine Warnung generiert.  
   
-     **Error**\- erzeugt einen Fehler.  
+     **Fehler beim** -generiert einen Fehler.  
   
-     **None** \- deaktiviert die Regel.  Diese Aktion ist mit der Aktion identisch, die beim Entfernen der Regel aus dem Regelsatz ausgeführt wird.  
+     **Keine** -deaktiviert die Regel. Diese Aktion ist mit der Aktion identisch, die beim Entfernen der Regel aus dem Regelsatz ausgeführt wird.  
   
-#### So gruppieren, filtern oder ändert Sie Felder auf der Symbolleiste des Regelsatz\-Editors  
+#### <a name="to-group-filter-or-change-the-fields-in-the-rule-set-editor-by-using-the-rule-set-editor-toolbar"></a>So gruppieren, filtern oder ändert Sie Felder auf der Symbolleiste des Regelsatz-Editors  
   
--   Wenn Sie die Regeln in allen Gruppen erweitern, wählen Sie **Alle erweitern** aus.  
+-   Um die Regeln in allen Gruppen erweitern möchten, wählen Sie **alle erweitern**.  
   
--   Wenn Sie die Regeln in allen Gruppen reduzieren, wählen Sie **Alle reduzieren** aus.  
+-   Um die Regeln in allen Gruppen reduzieren möchten, wählen Sie **alle reduzieren**.  
   
--   Um das Feld ändern möchten anhand dessen Regeln gruppiert werden, wählen Sie das Feld in der Liste **Gruppieren nach**.  Wenn Sie die Regeln ohne Gruppierung anzeigen möchten, wählen Sie **\<Keine\>** aus.  
+-   Wählen Sie das Feld aus, um das Feld ändern, die Regeln gruppiert werden, die **Group By** Liste. Um die Regeln ohne Gruppierung anzuzeigen, wählen Sie  **\<None >**.  
   
--   Wenn Sie in Regelspalten Felder hinzuzufügen oder zu entfernen, wählen Sie **Spaltenoptionen** aus.  
+-   Wählen Sie zum Hinzufügen oder Entfernen von Feldern in Regelspalten, **Spaltenoptionen**.  
   
--   Um Regeln auszublenden die nicht für die aktuelle Projektmappe gelten, wählen Sie **Regeln ausblenden, die auf die aktuelle Projektmappe nicht zutreffen** aus.  
+-   Ausblenden von Regeln, die auf der aktuellen Projektmappe nicht anwendbar sind, wählen Sie **Ausblenden von Regeln, die nicht für die aktuelle Projektmappe gelten**.  
   
--   Um zwischen dem Ein\- und Ausblenden von Regeln wechseln denen die Fehleraktion zugewiesen ist, wählen Sie **Regeln anzeigen, die Codeanalysefehler generieren können** aus.  
+-   Zum Wechseln zwischen dem ein- und Ausblenden von Regeln, die die Fehleraktion zugewiesen sind, wählen Sie **Regeln angezeigt, die Codeanalysefehler generieren können**.  
   
--   Um zwischen dem Ein\- und Ausblenden von Regeln wechseln die die Warnregel Aktion zugewiesen werden, wählen Sie **Regeln anzeigen, die Codeanalysewarnungen generieren können** aus.  
+-   Zum Wechseln zwischen dem ein- und Ausblenden von Regeln, die die Warnaktion zugewiesen sind, wählen Sie **Regeln angezeigt, die codeanalysewarnungen generieren können**.  
   
--   Um zwischen dem Ein\- und Ausblenden von Regeln wechseln die die Aktion **Keine** zugewiesen werden, wählen Sie **Nicht aktivierte Regeln anzeigen** aus.  
+-   So wechseln Sie zwischen dem ein- und Ausblenden von Regeln, die zugewiesen wurden die **keine** Aktion, wählen Sie **Regeln angezeigt, die nicht aktiviert sind**.  
   
--   So Microsoft hinzuzufügen oder zu entfernen führen Regelsätze zum aktuellen Regelsatz, **Untergeordnete Regelsätze hinzufügen oder entfernen** auswählen.
+-   Wählen Sie zum Hinzufügen oder Entfernen von Microsoft-hinzuzufügen dem aktuellen Regelsatz Standardregelsätze, **Add- oder Remove untergeordnete Regelsätze**.

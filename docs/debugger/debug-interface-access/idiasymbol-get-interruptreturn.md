@@ -1,53 +1,52 @@
 ---
-title: "IDiaSymbol::get_interruptReturn | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSymbol::get_interruptReturn-Methode"
+title: 'Idiasymbol:: Get_interruptreturn | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSymbol::get_interruptReturn method
 ms.assetid: 9665da6c-4cc0-41d7-b2e2-0d9e50174cf8
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 0152db685eedd82915eddb817aecc8208a1f821e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSymbol::get_interruptReturn
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Ruft ein Flag ab, das angibt, ob die Funktion eine Rückgabe von der Unterbrechungsanweisung enthält \(z. B. den X86\-Assemblycode `iret`\).  
+# <a name="idiasymbolgetinterruptreturn"></a>IDiaSymbol::get_interruptReturn
+Ruft ein Flag, das angibt, ob die Funktion eine Rückgabe von Interrupt-Anweisung enthält (z. B. die X86 Assemblycode `iret`).  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp  
+```C++  
 HRESULT get_interruptReturn(  
-   BOOL *pFlag  
+   BOOL *pFlag  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `pFlag`  
- \[out\]  Gibt `TRUE` zurück, wenn die Funktion eine Rückgabe von der Unterbrechungsanweisung enthält. andernfalls gibt `FALSE`zurück.  
+ [out] Gibt `TRUE` Wenn die Funktion eine Rückgabe von Interrupt-Anweisung; andernfalls wird zurückgegeben `FALSE`.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt `S_FALSE` oder einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
   
 > [!NOTE]
->  Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft nicht für das Symbol verfügbar ist.  
+>  Ein Rückgabewert von `S_FALSE` bedeutet, dass die Eigenschaft nicht für das Symbol verfügbar ist.  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
   
 |Anforderung|Beschreibung|  
-|-----------------|------------------|  
+|-----------------|-----------------|  
 |Header:|dia2.h|  
-|Version:|DIA SDK v8.0|  
+|Version:|DIA-SDK 8.0|  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

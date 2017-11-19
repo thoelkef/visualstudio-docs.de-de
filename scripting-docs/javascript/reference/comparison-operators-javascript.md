@@ -1,94 +1,96 @@
 ---
-title: "Vergleichsoperatoren (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "Comparison"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "Vergleichsoperatoren, Skript"
-  - "Greater Than-Operator"
-  - "Vergleichsoperatoren"
-  - "Greater Than- oder Equals-Operator"
-  - "Ungleichheitsoperator"
-  - "Identitätsoperator"
+title: Vergleichsoperatoren (JavaScript) | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: Comparison
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- comparison operators, script
+- greater than operator
+- comparison operators
+- greater than or equal to operator
+- inequity operator
+- identity operator
 ms.assetid: 084f90f0-d010-47cf-96dd-13d637fc9b68
-caps.latest.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 067d570523fc2241b4f2e0442785a49aedb15200
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# Vergleichsoperatoren (JavaScript)
+# <a name="comparison-operators-javascript"></a>Vergleichsoperatoren (JavaScript)
 Geben einen booleschen Wert zurück, der das Ergebnis des Vergleichs angibt.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
   
 expression1 comparisonoperator expression2  
 ```  
   
-## Parameter  
+## <a name="parameters"></a>Parameter  
  `expression1`  
- Ein beliebiger Ausdruck.  
+ Beliebiger Ausdruck.  
   
  `comparisonoperator`  
- Beliebiger Vergleichsoperator.  
+ Jeder Vergleichsoperator.  
   
  `expression2`  
- Ein beliebiger Ausdruck.  
+ Beliebiger Ausdruck.  
   
-## Hinweise  
- Beim Vergleich von Zeichenfolgen verwendet [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] den Unicodezeichenwert des Zeichenfolgenausdrucks.  
+## <a name="remarks"></a>Hinweise  
+ Beim Vergleichen von Zeichenfolgen, [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] den Unicode-Zeichenwert des Zeichenfolgenausdrucks verwendet.  
   
- Im Folgenden wird beschrieben, wie sich die verschiedenen Operatorgruppen abhängig von Typ und Wert der beiden Ausdrücke `expression1` und `expression2` verhalten:  
+ Im folgenden beschrieben, wie die verschiedenen Gruppen von Operatoren abhängig von den Typen und Werte des Verhalten `expression1` und `expression2`:  
   
- Relationale Operatoren: `<`, `>`, `<=`, `>=`  
+ Relationale Operatoren: `<`, `>`, `<=`,`>=`  
   
--   Es wird versucht, sowohl `expression1` als auch `expression2` in Zahlen zu konvertieren.  
+-   Beide konvertieren `expression1` und `expression2` in Zahlen.  
   
--   Wenn beide Ausdrücke Zeichenfolgen sind, wird ein Zeichenfolgenvergleich durchgeführt.  
+-   Wenn beide Ausdrücke Zeichenfolgen sind, führen Sie einen Zeichenfolgenvergleich.  
   
--   Wenn einer der Ausdrücke den Wert `NaN` hat, wird `false` zurückgegeben.  
+-   Wenn einer der Ausdrücke ist `NaN`, den Rückgabetyp `false`.  
   
--   Die negative Null entspricht der positiven Null.  
+-   Negative 0 (null) entspricht der positiven NULL.  
   
--   Die negative Unendlichkeit ist kleiner als jede Zahl, einschließlich ihrer selbst.  
+-   Minus unendlich ist kleiner als alles, was sich selbst eingeschlossen.  
   
--   Die positive Unendlichkeit ist größer als jede Zahl, einschließlich ihrer selbst.  
+-   Plus unendlich ist größer als alles, was sich selbst eingeschlossen.  
   
- equality\-Operatoren: `==`, `!=`  
+ Gleichheitsoperatoren: `==`,`!=`  
   
--   Wenn die beiden Ausdrücke unterschiedlichen Typs sind, wird versucht, diese in Zeichenfolgen, Zahlen oder boolesche Werte zu konvertieren.  
+-   Wenn die Typen der beiden Ausdrücke unterschiedlich sind, versucht, die sie in eine Zeichenfolge, eine Zahl oder ein boolescher Wert zu konvertieren.  
   
--   `NaN` entspricht keiner Zahl, einschließlich ihrer selbst.  
+-   `NaN`stimmt nicht mit etwas sich selbst eingeschlossen.  
   
--   Die negative Null entspricht der positiven Null.  
+-   Negative 0 (null) entspricht der positiven NULL.  
   
--   `null` ist sowohl gleich `null` als auch gleich `undefined`.  
+-   `null`beide gleich `null` und `undefined`.  
   
--   Werte werden als gleich betrachtet, wenn es sich dabei um identische Zeichenfolgen, numerisch äquivalente Zahlen, das gleiche Objekt oder identische boolesche Werte handelt. Bei unterschiedlichen Datentypen kann die Konvertierung in eines dieser Elemente erzwungen werden.  
+-   Werte werden als gleich betrachtet werden identische Zeichenfolgen, numerisch äquivalente Zahlen, die dasselbe Objekt, das identische boolesche Werte oder (wenn verschiedene Typen) können sie in einem solchen Fall umgewandelt werden.  
   
--   Bei jedem anderen Vergleich werden die Werte als ungleich angesehen.  
+-   Alle anderen Vergleichs wird als ungleich betrachtet.  
   
- Identity\-Operatoren: `===`, `!==`  
+ Identity-Operatoren: `===`,`!==`  
   
- Diese Operatoren verhalten sich genauso wie die equality\-Operatoren, außer dass keine Typkonvertierung ausgeführt wird.  Wenn die Typen beider Ausdrücke nicht identisch sind, geben diese Ausdrücke immer `false` zurück.  
+ Diese Operatoren Verhalten sich die Gleichheitsoperatoren identisch, außer, dass keine Konvertierung ausgeführt wird. Wenn die Typen der beiden Ausdrücke nicht identisch sind, diese Ausdrücke stets `false`.  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Operatorrangfolge](../../javascript/operator-subtractprecedence-javascript.md)   
- [Zusammenfassung der Operatoren \(JavaScript\)](../../javascript/misc/operator-subtractsummary-javascript.md)
+ [Zusammenfassung der Operatoren (JavaScript)](../../javascript/misc/operator-subtractsummary-javascript.md)

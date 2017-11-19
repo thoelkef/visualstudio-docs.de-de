@@ -1,101 +1,77 @@
 ---
-title: "Einfache Lösung laden (LSL) | Microsoft-Dokumentation"
-ms.custom: 
-ms.date: 01/17/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- VSPackages, lightweight solution load
-- VSPackages, fast solution load
-ms.assetid: 0a71d91e-dc71-4d6b-bbfe-9e4ecd9e5fd1
-caps.latest.revision: 1
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 221f4911981deec0330f76a82c0cc8a1b968e56e
-ms.openlocfilehash: 28957abccc03001546038da10cf4ff7bbe21f63e
-ms.lasthandoff: 02/22/2017
-
+redirect_url: /visualstudio/extensibility/what-s-new-in-the-visual-studio-2017-sdk/
+ms.openlocfilehash: 5706797ed88dce5b2f481b17d99e9501b960ddca
+ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/15/2017
 ---
-# <a name="lightweight-solution-load-lsl"></a>Einfache Lösung laden (LSL)
+Title: "einfache Laden der Projektmappe (LSL) | Microsoft Docs"ms.custom:" "ms.date:" 01/17/2017"ms.reviewer:" "ms.suite:" "ms.technology: 
+  - MS. tgt_pltfrm "Vs Ide Sdk": "" ms.topic: "Artikel" Helpviewer_keywords: 
+  - "VSPackages, einfache Lösung laden
+  - "VSPackages, schnelle Laden der Projektmappe" ms.assetid: 0a71d91e-dc71-4d6b-bbfe-9e4ecd9e5fd1 caps.latest.revision: 1-Autor: "Gregvanl" ms.author: "Gregvanl"-Manager: Ghogen
+---
+# <a name="lightweight-solution-load-lsl"></a>Einfache Lösung, Load (LSL)
 
 ## <a name="background-information-on-lsl"></a>Hintergrundinformationen zu LSL
 
-Einfache Projektmappe zu laden ist ein neues Feature in Visual Studio 2017, Ladezeit Lösung wird erheblich aktivieren Sie schnell produktiver sein. Wenn LSL aktiviert ist, wird Visual Studio nicht vollständig Projekte geladen, wenn Sie mit ihnen zu arbeiten beginnen.
+Einfache Projektmappe zu laden, ist ein neues Feature in VS 2017 an erheblich Ladezeit Lösung zu reduzieren, sodass Sie schnell produktiver zu sein. Wenn LSL aktiviert ist, wird Visual Studio nicht vollständig Projekte geladen werden erst beim Arbeiten mit ihnen starten.
 
-LSL kann Visual Studio-Erweiterungen wirksam. Erweiterungen, die an einem Projekt geladen werden, deren Funktionen abhängen möglicherweise nicht funktioniert oder nicht ordnungsgemäß arbeiten, ohne die Anweisungen in diesem Dokument aufgeführten.
+LSL kann Visual Studio-Erweiterungen beeinträchtigen. Erweiterungen, die an einem Projekt geladen werden, deren Funktionen abhängen, möglicherweise nicht funktioniert oder ohne gemäß der Anleitung in diesem Dokument aufgeführten voll funktionsfähig oder fehlerhaft.
 
-Weitere Hintergrundinformationen zur LSL verwenden Sie die folgenden Links:
+Weitere Hintergrundinformationen zu LSL verwenden Sie die folgenden Links:
 
 * [Einfache Lösung Load-Blog](https://blogs.msdn.microsoft.com/visualstudio/2016/10/11/shorter-solution-load-time-in-visual-studio-15)
-* Fragen? Kontaktieren Sie uns[lslsupport@microsoft.com](mailto:lslsupport@microsoft.com)
+* Fragen? Wenden Sie sich an uns[lslsupport@microsoft.com](mailto:lslsupport@microsoft.com)
 
-## <a name="enable-the-setting-to-load-projects-in-deferred-mode"></a>Aktivieren Sie die Einstellung zum Laden von Projekten im Modus "verzögerte"
+## <a name="enable-the-setting-to-load-projects-in-deferred-mode"></a>Aktivieren der Einstellung, um Projekte in "Verzögerungsmodus" zu laden.
 
-1. Schließen Sie alle geöffneten Projektmappen.
-2. Wechseln Sie zu **Tools** > **Option** > **Projekte und Projektmappen** > **allgemeine** Einstellungsseite.
-3. Überprüfen Sie die **einfache Lösung Load** um die Einstellung zu aktivieren.
+1. Schließen Sie alle aktuell geöffnete Projektmappe.
+2. Wechseln Sie zu **Tools** > **Option** > **Projekte und Projektmappen** > **allgemeine** Einstellungen Seite ".
+3. Überprüfen Sie die **einfache Lösung laden** die Einstellung zu aktivieren.
 
-Beim Öffnen einer Projektmappe mit der oben genannten Einstellung aktiviert ist, die IDE zeigt eine reguläre Ansicht der Projekte, aber die Projekte werden nicht geladen.
+Beim Öffnen einer Projektmappe mit der oben genannten Einstellung aktiviert, die IDE zeigt eine reguläre Ansicht der Projekte, aber die Projekte werden nicht geladen.
 
 ## <a name="differences-between-deferred-load-and-regular-load-of-projects"></a>Unterschiede bei der verzögerten Laden und reguläre Laden von Projekten
 
-Laden der Lightweight-Projektmappe Projekte nicht geladen, wenn Sie eine Projektmappe öffnen. Für diesen "verzögerte Projekten" ist eine Stub-Hierarchie erstellt. Im Projektmappen-Explorer zeigt die erwarteten Ansicht mit Symbolen und Namen von Projekten, es gibt keine UI-hin, dass einige oder alle Projekte in "Verzögerungsmodus" befinden.
+Mit Lightweight Projektmappe Laden werden die Projekte beim Öffnen einer Projektmappe nicht geladen. Für diese "verzögerte Projekte" wird eine Stub-Hierarchie erstellt. Im Projektmappen-Explorer zeigt die erwarteten Ansicht mit Symbolen und Namen von Projekten, es gibt keinen UI-Hinweis, der einige oder alle Projekte in "Verzögerungsmodus" sind.
 
-Mit LSL aktiviert können die Erweiterungen nicht mehr erwarten, erforderlichen Projekte bereits vollständig geladen sind, wenn eine Operation ausgelöst wird. Aufrufer müssen überprüfen, ob diese geladenen Projekte eine Abhängigkeit aufweisen. Wenn eine Erweiterung Informationen aus einem verzögerten Projekt erfordert müssen, die Erweiterung folgendermaßen vor:
+Mit LSL aktiviert können Erweiterungen nicht mehr erwartet, dass erforderlichen Projekte bereits vollständig geladen werden, wenn ein Vorgang ausgelöst wird. Aufrufer müssen überprüfen, ob sie eine Abhängigkeit geladenen Projekte aufweisen. Wenn eine Erweiterung mit Informationen aus einem verzögerten Projekt erforderlich ist, führen Sie die Erweiterung folgende:
 
 1. Laden Sie die Projekte nach Bedarf.
-2. Verwenden Sie die neue **APIs Arbeitsbereich** zum Abrufen von Informationen von einer verzögerten Projekt, ohne sie zu laden.
+2. Verwenden Sie die neue **Arbeitsbereich APIs** beim Abrufen von Informationen aus einem verzögerten-Projekt, ohne sie zu laden.
 
-Die neue **Arbeitsbereich APIs** zum Abrufen von Informationen, z. B. eine Quelldatei und alle Quelldateien für ein bestimmtes Projekt, das gewünschte Projekt aus einem Projekt verzögerte Erweiterungen zulassen. In einigen Fällen nur eine begrenzte Anzahl von Projekten geladen werden müssen. Die richtige Option ist ein Gleichgewicht zwischen der Häufigkeit der Vorgänge, einfache alternative Ansätze und optimiert.
+Die neue **Arbeitsbereich APIs** durch Erweiterungen zum Abrufen von Informationen, z. B. das besitzende Projekt eine Quelldatei und aller die Quelldateien für ein angegebenes Projekt aus einem Projekt verzögerte zulassen. In einigen Fällen müssen nur ein begrenzten Satz von Projekten geladen werden. Die richtige Option ist ein Gleichgewicht zwischen der Häufigkeit der Vorgänge, einfache alternative Ansätze und durchgängig Benutzer.
 
-Alle Projekt- und Laden der Projektmappe-bezogene Ereignisse im LSL Modus weiterhin ausgelöst werden. Dadurch können Komponenten, um das erwartete Verhalten in VS abzurufen und sie verhalten sich genauso wie bei Projekten geladen werden. Das Laden des Projekts bezogenen Arbeit während der geöffneten Projektmappe jedoch erheblich reduziert wird.
+Alle Projekt- und Laden der Projektmappe-bezogene Ereignisse im LSL Modus weiterhin ausgelöst werden. Dies ermöglicht Komponenten das erwartete Verhalten in VS abrufen und sie verhalten sich genauso wie bei Projekten geladen werden. Im Zusammenhang mit des Laden des Projekts Arbeit, die während der geöffneten Projektmappe jedoch erheblich reduziert wird.
 
 ## <a name="ui-requirements-and-changes"></a>UI-Anforderungen und Änderungen
 
-Wird keine Benutzeroberfläche muss geladen und zurückgestellte Projekte als gleich behandelt. Dies bedeutet, dass alle Aktionen, die für ein geladenes Projekt ausgeführt werden kann mit einigen Ausnahmen für verzögerte Projekte muss. Damit können Funktionen dazu, wurden einige vorhandene Plattform-APIs sowie die Einführung neuer APIs geändert.
+Alle UI muss geladen und verzögerte Projekte als gleich behandelt. Dies bedeutet, dass alle Aktionen, die auf einem anderen geladenen Projekt ausgeführt werden, kann mit einigen Ausnahmen auch für verzögerte Projekte muss. Um dies zu erreichen Funktionen zu erleichtern, stehen Änderungen für einige vorhandene Plattform-APIs als auch in der Einführung der neuen APIs zur Verfügung.
 
-### <a name="expectations-for-ui"></a>Ziele für die Benutzeroberfläche
+### <a name="expectations-for-ui"></a>Anforderungen an die Benutzeroberfläche
 
-1. Funktionen anzeigen müssen nicht visuell abhängig Unterschiede, wenn Projekte geladen oder zurückgestellt werden.
-2. Jede Auflistung oder eines Enumerationswerts über die Projekte der Projektmappe geladen muss verzögerte Projekte enthalten.
-3. Jede Aktion, die für ein geladenes Projekt sollte für eine verzögerte Projekt verfügbar sein.
+1. Funktionen müssen werden angezeigt, dass kein visuelles abhängig Unterschiede, wenn Projekte geladen oder verzögert werden.
+2. Eine Liste oder eines Enumerationswerts über die Projekte der Projektmappe geladen muss verzögerte Projekte enthalten.
+3. Alle Aktionen zur Verfügung, mit einem anderen geladenen Projekt sollte für eine verzögerte Projekt verfügbar sein.
 4. Funktionen müssen Anforderung zum Laden Projekte nur, wenn:
-  * Es gibt direkte Benutzerinteraktion mit einer Funktion. Laden Sie die Projekte nicht präemptiv.
-  * Eine "Weitere Ergebnisse anzeigen" Bewegung erfolgt durch den Benutzer. Diese UI-Richtlinie finden Sie unten.
-  * Nur die vollständig geladene Projekt kann verwendet werden, um die Aktion zu erfüllen. Verwenden Sie LSL und öffnen Sie Project-APIs nach Möglichkeit, und senden Sie Anforderung zur gefragt werden, wenn Funktionen nicht vorhanden ist.
+  * Es gibt direkte Interaktion mit einer Funktion. Laden Sie die Projekte nicht präemptiv.
+  * Eine Geste "Finden Sie weitere Ergebnisse" wird vom Benutzer vorgenommen. Dieses UI-Richtlinie finden Sie weiter unten.
+  * Nur den vollständig geladene Projekt kann verwendet werden, um die Aktion zu erfüllen. Verwenden Sie LSL und geöffneten Projekt-APIs nach Möglichkeit, und senden Sie Funktionsanfrage gefragt werden, wenn Funktionen nicht vorhanden ist.
 
-### <a name="changes-in-platform-apis-to-help-drive-ui"></a>Änderungen im Plattform-APIs UI bringen
+### <a name="changes-in-platform-apis-to-help-drive-ui"></a>Änderungen im Plattform-APIs zu Laufwerk UI
 
-1. Neue APIs werden bereitgestellt, der Lösung zu Fragen, ob sie geöffnet wurde, im Laden einer Projektmappe Lightweight-Modus und wie viele Projekte in einem verzögerte Zustand befinden.
+1. Neue APIs werden bereitgestellt, um der Projektmappe zu gefragt, ob es geöffnet wurde, im Laden der Projektmappe Lightweight-Modus und wie viele Projekte in einem verzögerte Zustand befinden.
 2. Neues Ereignis wird für bereitgestellt, wenn alle verzögerten Projekte in der Projektmappe geladen werden.
-3. Neue APIs werden bereitgestellt, ein Projekt zu Fragen, ob es verzögert wird.
-4. Vorhandenen APIs werden aktualisiert, um die verzögerte Projekte umfassen, wenn für die geladenen Projekte.
-5. Vorhandenen APIs werden aktualisiert, um schnelle Lösung vollständig geladen wird nach Projektmappe geöffnet wird.
+3. Neue APIs werden bereitgestellt, um ein Projekt zu gefragt, ob es verzögert wird.
+4. Vorhandene APIs werden aktualisiert, um die verzögerte Projekte umfassen, bei der Nachfrage der geladenen Projekte.
+5. Vorhandene APIs werden aktualisiert, um express die Lösung vollständig geladen wird nach der Projektmappe geöffnet ist.
 
-### <a name="how-to-add-see-more-results-for-a-feature"></a>"Weitere Ergebnisse anzeigen" für ein Feature hinzufügen
+### <a name="how-to-add-see-more-results-for-a-feature"></a>So fügen Sie "Finden Sie weitere Ergebnisse" für eine Funktion.
 
-Funktionen, die eine Abfrage für den Inhalt von Projekten ausführen, sollten die Auswirkung der verzögerte Projekte. In einigen Situationen können Features die Ergebnisse ihrer Abfrage von LSL und Arbeitsbereich-APIs für eine verzögerte Projekt erhalten. In anderen Fällen erfordern ein Feature Einschränkungen Projekte geladen werden. Beide Situationen sollte eine neue "Weitere Ergebnisse anzeigen" Geste bereitstellen, die Benutzern ermöglicht, Projekte und erneut Abfragen vollständig geladen. Diese Bewegung aktiviert Funktionen, um eine optimale Schätzung zu erstellen, wenn es verzögerte Projekte sind und des Benutzers eine Möglichkeit, das perfekte Ergebnis zu erhalten, wenn Projekte tatsächlich geladen werden.
+Funktionen, die eine Abfrage für den Inhalt von Projekten ausführen, sollten die Auswirkungen der verzögerten Projekte. In einigen Situationen können Features die Ergebnisse ihrer Abfrage LSL und Arbeitsbereich APIs für eine verzögerte Projekt bekommen. In anderen Fällen erfordern eine Funktion Einschränkungen Projekte geladen werden soll. Beiden Fällen sollten eine neue "Finden Sie weitere Ergebnisse" Geste bereitstellen, die Benutzern ermöglicht, Projekte und erneut abgefragt vollständig geladen. Diese Bewegung aktiviert Funktionen, um eine optimale Schätzung zu erstellen, wenn es verzögerte Projekte sind, wobei des Benutzers eine Möglichkeit, die perfekte Ergebnis zu erhalten, wenn Projekte tatsächlich geladen werden.
 
-Der allgemeine Algorithmus für Features muss:
+Der allgemeine Algorithmus für Funktionen sollten sein:
 
 ### <a name="when-the-query-is-performed-over-a-single-project"></a>Wenn die Abfrage über ein einzelnes Projekt ausgeführt wird
 
@@ -150,7 +126,7 @@ public void Query()
     var solution = // the solution
     object deferredCount = 0;
     int hr = ((IVsSolution)solution).GetProperty((int)__VSPROPID7.VSPROPID_DeferredProjectCount, out deferredCount);
-    if (ErrorHandler.Succeeded(hr) && ((uint)deferredCount > 0))
+    if (ErrorHandler.Succeeded(hr) && ((int)deferredCount > 0))
     {
         ShowSeeMoreResults();
     }
@@ -179,17 +155,17 @@ public void OnClick_SeeMoreResults()
 
 IVsSolution7.IsSolutionLoadDeferred (out Bool zurückgestellt)
 
-Gibt True zurück, wenn die aktuelle Projektmappe im zurückgestellten Modus geladen wurde. Beachten Sie, die, wenn die Projektmappe zunächst in Verzögerungsmodus geladen wurde, selbst wenn alle verzögerten Projekte schließlich sind in der aktuellen Sitzung (durch explizite Benutzeraktionen oder erzwungene von Vorgängen), diese Eigenschaft geladen, würde true zurückgeben.
+Gibt "true" zurück, wenn die aktuelle Projektmappe im Verzögerungsmodus geladen wurde. Beachten Sie, die, wenn die Projektmappe im Verzögerungsmodus anfänglich geladen wurde, selbst wenn die verzögerte Projekte letztendlich sind in der aktuellen Sitzung (aufgrund von expliziten Benutzergesten oder erzwungene von Vorgängen), diese Eigenschaft geladen, würde weiterhin "true" zurückgeben.
 
 __VSPROPID7. VSPROPID_DeferredProjectCount
 
-Gibt die Anzahl der Projekte, die zurzeit im Verzögerungsmodus zurück. Diese Eigenschaft wird einen Wert im Bereich [0, VSPROPID_ProjectCount] haben.
+Gibt die Anzahl der Projekte zurück, die sich derzeit im Verzögerungsmodus befinden. Diese Eigenschaft wird einen Wert im Bereich [0, VSPROPID_ProjectCount] aufweisen.
 
 __VSHPROPID9. VSHPROPID_IsDeferred
 
-Gibt True zurück, wenn das verzögerte Laden eine Projekthierarchie ist.
+Gibt "true" zurück, wenn eine Projekthierarchie verzögerte Laden Status aufweist.
 
-Mit den Werten EPF_DEFERRED und EPF_NOTDEFERRED __VSENUMPROJFLAGS3
+__VSENUMPROJFLAGS3 mit Werten EPF_DEFERRED und EPF_NOTDEFERRED
 
 Diese Flags übergeben werden können, um [IVsSolution.GetProjectEnum()](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivssolution.getprojectenum.aspx) verzögerte und nicht verzögerte Projekten durchlaufen.
 
@@ -197,18 +173,18 @@ Diese Flags übergeben werden können, um [IVsSolution.GetProjectEnum()](https:/
 
 IVsSolutionEvents7.OnAfterLoadAllDeferredProjects()
 
-Dieses Ereignis wird ausgelöst, nachdem alle verzögerten Projekte geladen wurden. An diesem Punkt ist VSPROPID_DeferredProjectCount gleich 0. Beachten Sie, dass dieses Ereignis nicht als Teil der Lösung Load ausgelöst und kann nicht ausgelöst werden alle in einer Sitzung. Es wird nur ausgelöst, wenn alle verzögerten Projekte geladen werden.
+Dieses Ereignis wird ausgelöst, nachdem alle verzögerten Projekte geladen wurden. An diesem Punkt ist VSPROPID_DeferredProjectCount gleich 0. Beachten Sie, dass dieses Ereignis nicht ausgelöst wird, im Rahmen des Laden der Projektmappe, und kann nicht ausgelöst werden alle in einer Sitzung. Es wird nur ausgelöst, wenn alle verzögerten Projekte geladen werden.
 
-### <a name="changes-to-existing-api"></a>Änderungen an vorhandenen API
+### <a name="changes-to-existing-api"></a>Änderungen an vorhandenen-API
 
-* Übergeben von [__VSENUMPROJFLAGS](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.__vsenumprojflags.aspx). EPF_LOADEDINSOLUTION, [IVsSolution.GetProjectEnum()](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivssolution.getprojectenum.aspx) gibt Projekte zurückgestellt.
+* Übergeben von [__VSENUMPROJFLAGS](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.__vsenumprojflags.aspx). EPF_LOADEDINSOLUTION auf [IVsSolution.GetProjectEnum()](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivssolution.getprojectenum.aspx) gibt verzögert Projekte.
 * Übergeben von [__VSENUMPROJFLAGS](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.__vsenumprojflags.aspx). EPF_UNLOADEDINSOLUTION gibt keine verzögerte Projekte zurück.
-* [KnownUIContexts.SolutionExistsAndFullyLoadedContext](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.knownuicontexts.solutionexistsandfullyloadedcontext.aspx) Wert true für Projektmappe öffnen. Verzögerte Projekte werden behandelt, wie geladen werden, damit dieser Kontext viel festgelegt wurde früher als in nicht-LSL-Modus.
-* [__VSPROPID](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.__vspropid.aspx). VSPROPID_ProjectCount gibt die Summe der geladen und zurückgestellte Projekte zurück.
+* [KnownUIContexts.SolutionExistsAndFullyLoadedContext](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.knownuicontexts.solutionexistsandfullyloadedcontext.aspx) festgelegt ist, auf "true" bei Projektmappe öffnen. Verzögerte Projekte werden behandelt, als geladen werden, damit diesem Kontext viel festgelegt ist im nicht-LSL-Modus vor.
+* [__VSPROPID](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.__vspropid.aspx). VSPROPID_ProjectCount gibt die Summe der geladen und verzögerte Projekte zurück.
 
 ## <a name="helpful-code-snippets"></a>Hilfreiche Codeausschnitte
 
-### <a name="check-if-a-solution-was-opened-in-deferred-load-mode"></a>Überprüfen Sie, ob eine Projektmappe, im Modus für verzögertes Laden geöffnet wurde
+### <a name="check-if-a-solution-was-opened-in-deferred-load-mode"></a>Überprüfen Sie, ob eine Projektmappe, im Modus für verzögerte Laden geöffnet wurde
 
 ```csharp
 /// <summary>
@@ -231,11 +207,11 @@ Dieses Ereignis wird ausgelöst, nachdem alle verzögerten Projekte geladen wurd
 /// </summary>
 /// <param name="projectsToLoad">A set of deferred and/or loaded projects to ensure are loaded.</param>
 /// <returns>True if the project is deferred. False if it is any other state, such as loaded, unloaded, or virtual.</returns>
-/// <remarks>Requires Microsoft.VisualStudio.Shell.15.0.dll</remarks>
+/// <remarks>Requires Microsoft.VisualStudio.Shell.Interop.15.0.DesignTime.dll</remarks>
 public static bool IsInDeferredState(IVsHierarchy vsHierarchy)
 {
     object deferred;
-    int hr = vsHierarchy.GetProperty((int)VSConstants.VSITEMID.Root, (uint)__VSHPROPID9.VSHPROPID_IsDeferred, out deferred);
+    int hr = vsHierarchy.GetProperty((uint)VSConstants.VSITEMID.Root, (int)__VSHPROPID9.VSHPROPID_IsDeferred, out deferred);
 
     if (ErrorHandler.Succeeded(hr))
     {
@@ -341,19 +317,19 @@ public static bool SolutionHasDeferredProjects()
 }
 ```
 
-## <a name="getting-detailed-information-with-workspace-apis"></a>Beim Abrufen des ausführliche Informationen mit Workspace-APIs
+## <a name="getting-detailed-information-with-workspace-apis"></a>Abrufen von ausführliche Informationen mit der Arbeitsbereich APIs
 
-### <a name="how-to-get-detailed-info-on-a-lsl-solution"></a>Gewusst wie: erhalten Sie detaillierte Informationen auf eine LSL-Lösung
+### <a name="how-to-get-detailed-info-on-a-lsl-solution"></a>Gewusst wie: Abrufen von ausführliche Informationen zu einem Lösungsvorschlag LSL
 
-Neuen Arbeitsbereich-APIs werden über IVsSolutionWorkspaceService, um detaillierte Informationen zu einer Lösung abzurufen verfügbar gemacht.
+Neuen Arbeitsbereich APIs werden über IVsSolutionWorkspaceService können detaillierte Informationen zu einer Lösung abrufen verfügbar gemacht.
 
-Diese APIs kann verwendet werden, um den aktuellen Arbeitsbereich, der aktiven Projektmappe, die verwaltete Befehlszeile Informationen sowie den Indexdienst für den Arbeitsbereich abrufen. Diese APIs können Sie den Indexdienst zum Abrufen der detaillierter Daten, z. B. alle Quelldateien in einem Projekt, das gewünschte Projekt einer Quelldatei alle Projekte in der aktuellen Projektmappe, alle P2P-Verweise in einem Projekt usw. weiter nutzen.
+Diese APIs kann verwendet werden, um den aktuellen Arbeitsbereich, der aktiven Projektmappe, die Informationen des verwalteten Befehlszeile sowie den Indexdienst für den Arbeitsbereich abrufen. Diese APIs können weitere den Indexdienst zum Abrufen der detaillierter Daten, z. B. alle Quelldateien in einem Projekt auf das gewünschte Projekt einer Quelldatei alle Projekte in der aktuellen Projektmappe befinden, enthalten alle P2P-Verweise in einem Projekt usw. nutzen.
 
-Die folgenden Codeausschnitte veranschaulichen die Verwendung der Workspace-APIs.
+Die folgenden Codeausschnitte veranschaulichen die Verwendung der APIs Arbeitsbereich.
 
-### <a name="get-ivssolutionworkspaceservice-initially"></a>IVsSolutionWorkspaceService Anfangs abrufen
+### <a name="get-ivssolutionworkspaceservice-initially"></a>IVsSolutionWorkspaceService anfänglich abrufen
 
->**Hinweis:** IVsSolutionWorkspaceService Bitte nur in LSL Szenarien zu vermeiden, das Laden des Pakets Workspace-API abrufen.
+>**Hinweis:** IVsSolutionWorkspaceService geben nur LSL-Szenarios zu vermeiden, Laden des Pakets Arbeitsbereich API zu erhalten.
 
 ```csharp
 private readonly Lazy<IVsSolutionWorkspaceService> _solutionWorkspaceService;
@@ -366,9 +342,9 @@ public DeferredProjectWorkspaceService(SVsServiceProvider serviceProvider)
 }
 ```
 
->**Hinweis:** nehmen Sie an die folgenden Codeausschnitten _solutionWorkspaceService bereits verzögert initialisiert wird.
+>**Hinweis:** den folgenden Codeausschnitt wird davon ausgegangen, _solutionWorkspaceService bereits verzögert initialisiert wird.
 
-### <a name="get-managed-command-line-info-for-deferred-projects-for-active-solution-configuration"></a>Verwaltete Befehlszeile Informationen für verzögerte Projekte für die aktive Projektmappenkonfiguration abrufen
+### <a name="get-managed-command-line-info-for-deferred-projects-for-active-solution-configuration"></a>Abrufen von verwalteten Befehlszeile Informationen für verzögerte Projekte für die Konfiguration der aktuellen Projektmappe
 
 ```csharp
 /// <summary>
@@ -387,7 +363,7 @@ public async Task<IReadOnlyDictionary<string, ManagedCommandLineInfo>> GetManage
 }
 ```
 
-### <a name="get-the-active-solution-file-in-lsl"></a>Rufen Sie die Lösung für die aktive Datei in LSL
+### <a name="get-the-active-solution-file-in-lsl"></a>Abrufen der aktiven Projektmappendatei im LSL
 
 ```csharp
 /// <summary>
@@ -400,7 +376,7 @@ public string GetActiveSolutionFile()
 }
 ```
 
-### <a name="get-the-owning-project-of-a-source-file"></a>Rufen Sie das besitzende Projekt einer Quelldatei
+### <a name="get-the-owning-project-of-a-source-file"></a>Das besitzende Projekt einer Quelldatei abrufen
 
 ```csharp
 /// <summary>
@@ -451,7 +427,7 @@ public async Task<IEnumerable<string>> GetFileReferenceAsync(string projectFileP
 }
 ```
 
-### <a name="get-all-the-projects-in-a-solution"></a>Erhalten Sie alle Projekte in einer Projektmappe
+### <a name="get-all-the-projects-in-a-solution"></a>Abrufen Sie aller Projekte in einer Projektmappe
 
 ```csharp
 /// <summary>
@@ -472,9 +448,9 @@ public async Task<IEnumerable<string>> GetProjectsInSolutionAsync(string solutio
 
 ## <a name="troubleshooting"></a>Problembehandlung
 
-Aufgrund der Natur der LSL ist es beabsichtigt, dass Benutzer einen Unterschied zwischen geladen und zurückgestellte Projekte sehen können. Dies kann Featureentwicklung und Tests erschweren.
+Aufgrund der Natur der LSL ist es beabsichtigt, dass Benutzer einen Unterschied zwischen geladen und verzögerte Projekte nicht angezeigt. Dies kann Feature Entwicklungs- und Testzwecken erschweren.
 
-Sie können visuelle Hinweise in der Benutzeroberfläche für verzögerte Projekte wie folgt aktivieren:
+Sie können visuelle Hinweise in der Benutzeroberfläche für verzögerte Projekte aktivieren, indem Sie auf folgende Weise:
 
 1. Schließen Sie Visual Studio.
 2. Regedit.exe
@@ -484,11 +460,10 @@ Sie können visuelle Hinweise in der Benutzeroberfläche für verzögerte Projek
 6. Geben Sie "VisualStudio" als ein Schlüsselname
 7. Legen Sie `HKLM\VisualStudio\Software\Microsoft\VisualStudio\15.0_<instanceID>\FeatureFlags\Solution\Loading\Deferred\Hint\Value=1` (DWORD)
 8. Wählen Sie HKLM\VisualStudio
-9. Datei > entladen
+9. Datei > Struktur entfernen
 10. Starten Sie Visual Studio
 
-Noch weiteren Fragen wenden Sie sich an [ lslsupport@microsoft.com ](mailto:lslsupport@microsoft.com).
-
+Alle weiteren Fragen wenden Sie Remoteknoten [ lslsupport@microsoft.com ](mailto:lslsupport@microsoft.com).
 
 
 

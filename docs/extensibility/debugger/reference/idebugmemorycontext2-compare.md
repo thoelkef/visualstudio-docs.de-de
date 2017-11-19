@@ -1,68 +1,69 @@
 ---
-title: "IDebugMemoryContext2::Compare | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugMemoryContext2::Compare"
-helpviewer_keywords: 
-  - "IDebugMemoryContext2::Compare-Methode"
-  - "Compare-Methode"
+title: IDebugMemoryContext2::Compare | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugMemoryContext2::Compare
+helpviewer_keywords:
+- IDebugMemoryContext2::Compare method
+- Compare method
 ms.assetid: c51b5128-848e-4d8e-b2e9-1161339763c3
-caps.latest.revision: 14
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 14
+caps.latest.revision: "14"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: dbcb3f93a4db6a14775cfe518ed257e60282f1fb
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugMemoryContext2::Compare
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Vergleicht den Arbeitsspeicher Elementkontext zu jedem Kontext im angegebenen Array nach der Art und Weise, in der angegeben wird, vergleicht die Flags und gibt den Index des ersten Kontext zurück, der übereinstimmt.  
+# <a name="idebugmemorycontext2compare"></a>IDebugMemoryContext2::Compare
+Vergleicht den Speicherkontext, um jeden Kontext, in dem angegebenen Array in der Weise, angegeben durch Vergleichen-Flags, die einen Index der ersten Kontext, der mit übereinstimmt zurückgeben.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT Compare(   
-   CONTEXT_COMPARE        compare,  
-   IDebugMemoryContext2** rgpMemoryContextSet,  
-   DWORD                  dwMemoryContextSetLen,  
-   DWORD*                 pdwMemoryContext  
+```cpp  
+HRESULT Compare(   
+   CONTEXT_COMPARE        compare,  
+   IDebugMemoryContext2** rgpMemoryContextSet,  
+   DWORD                  dwMemoryContextSetLen,  
+   DWORD*                 pdwMemoryContext  
 );  
 ```  
   
-```c#  
+```csharp  
 int Compare(  
-   enum_CONTEXT_COMPARE   compare,   
-   IDebugMemoryContext2[] rgpMemoryContextSet,   
-   uint                   dwMemoryContextSetLen,   
-   out uint               pdwMemoryContext  
+   enum_CONTEXT_COMPARE   compare,   
+   IDebugMemoryContext2[] rgpMemoryContextSet,   
+   uint                   dwMemoryContextSetLen,   
+   out uint               pdwMemoryContext  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `compare`  
- \[in\]  Ein Wert aus der [CONTEXT\_COMPARE](../../../extensibility/debugger/reference/context-compare.md)\-Enumeration, der den Typ des Vergleiches bestimmt.  
+ [in] Ein Wert aus der [CONTEXT_COMPARE](../../../extensibility/debugger/reference/context-compare.md) -Enumeration, der den Typ des Vergleichs bestimmt.  
   
  `rgpMemoryContextSet`  
- \[in\]  Ein Array von Verweisen auf die zu vergleichende [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)\-Objekten.  
+ [in] Ein Array von Verweisen auf die [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) Objekte, die mit verglichen.  
   
  `dwMemoryContextSetLen`  
- \[in\]  Die Anzahl von Kontexten im `rgpMemoryContextSet` Array.  
+ [in] Die Anzahl von Kontexten, die in der `rgpMemoryContextSet` Array.  
   
  `pdwMemoryContext`  
- \[out\]  Gibt den Index des ersten kontexts Arbeitsspeicher zurück, der den Vergleich erfüllt.  
+ [out] Gibt den Index des ersten Arbeitsspeicher-Kontexts, die den Vergleich zu erfüllen.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  Gibt `E_COMPARE_CANNOT_COMPARE` zurück, wenn die beiden Kontexte nicht verglichen werden können.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben. Gibt `E_COMPARE_CANNOT_COMPARE` , wenn die beiden Kontexte nicht verglichen werden können.  
   
-## Hinweise  
- Ein Modul \(Debug\) DE muss alle Typen werden nicht unterstützt, aber es muss `CONTEXT_EQUAL`, `CONTEXT_LESS_THAN`, `CONTEXT_GREATER_THAN` und mindestens `CONTEXT_SAME_SCOPE`unterstützen.  
+## <a name="remarks"></a>Hinweise  
+ Ein Debugging-Modul (DE) muss nicht alle Typen von vergleichen zu unterstützen, aber es muss mindestens unterstützen `CONTEXT_EQUAL`, `CONTEXT_LESS_THAN`, `CONTEXT_GREATER_THAN` und `CONTEXT_SAME_SCOPE`.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)   
- [CONTEXT\_COMPARE](../../../extensibility/debugger/reference/context-compare.md)
+ [CONTEXT_COMPARE](../../../extensibility/debugger/reference/context-compare.md)

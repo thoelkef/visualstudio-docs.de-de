@@ -1,44 +1,42 @@
 ---
-title: "Wie werden Debuggerfenster beim Debuggen eines im Vordergrund ausgef&#252;hrten Programms verwendet? | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.debug.background"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "C++"
-helpviewer_keywords: 
-  - "Debuggen [Visual Studio], Vordergrundprogramme"
-  - "Debuggen [Visual Studio], Beim Beobachten von Vordergrundprogrammen"
-  - "Fokus, Debuggen beim Beobachten von Vordergrundprogrammen"
-  - "Vordergrundprogramm-Debuggen"
-  - "Remotedebuggen, Debuggen von Vordergrundprogrammen"
+title: "Wie werden Debuggerfenster beim Debuggen eines im Vordergrund ausgeführten Programms verwendet? | Microsoft-Dokumentation"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vs.debug.background
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+helpviewer_keywords:
+- foreground program debugging
+- remote debugging, debugging foreground programs
+- debugging [Visual Studio], while observing foreground programs
+- focus, debugging while observing foreground programs
+- debugging [Visual Studio], foreground programs
 ms.assetid: 9e67a308-1c81-42ab-966b-7fc3c1d2bf7a
-caps.latest.revision: 16
-caps.handback.revision: 16
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "16"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 08f6b369da587ecb0b4bc9e991bbdcce36235fa8
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Wie werden Debuggerfenster beim Debuggen eines im Vordergrund ausgef&#252;hrten Programms verwendet?
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-## Problembeschreibung  
- Es liegt ein Problem beim Zeichnen auf dem Bildschirm vor.  Um das Problem beobachten zu können, muss das Programm im Vordergrund bleiben; das bedeutet jedoch, dass kein Zugriff auf die Debuggerfenster möglich wäre.  Welche Möglichkeiten gibt es?  
+# <a name="how-can-i-use-debugger-windows-while-debugging-a-foreground-program"></a>Wie werden Debuggerfenster beim Debuggen eines im Vordergrund ausgeführten Programms verwendet?
+## <a name="problem-description"></a>Problembeschreibung  
+ Es liegt ein Problem beim Zeichnen auf dem Bildschirm vor. Um das Problem beobachten zu können, muss das Programm im Vordergrund bleiben; das bedeutet jedoch, dass kein Zugriff auf die Debuggerfenster möglich wäre. Welche Möglichkeiten gibt es?  
   
-## Lösung  
- Wenn Sie über einen zweiten Computer verfügen, können Sie das Remotedebuggen verwenden.  So können Sie das Zeichnen auf dem Bildschirm auf dem Remotecomputer beobachten und gleichzeitig den Debugger auf dem Host ausführen.  Weitere Informationen zum Remotedebuggen finden Sie unter [Einrichten des Remotedebuggens](../Topic/Set%20Up%20the%20Remote%20Tools%20on%20the%20Device.md).  
+## <a name="solution"></a>Lösung  
+ Wenn Sie über einen zweiten Computer verfügen, können Sie das Remotedebuggen verwenden. So können Sie das Zeichnen auf dem Bildschirm auf dem Remotecomputer beobachten und gleichzeitig den Debugger auf dem Host ausführen. Weitere Informationen zum Remotedebuggen finden Sie unter [Remotedebuggen](../debugger/remote-debugging.md).  
   
-## Siehe auch  
- [FAQs zum Debuggen von systemeigenem Code](../debugger/debugging-native-code-faqs.md)   
- [Debuggen von systemeigenem Code](../debugger/debugging-native-code.md)
+## <a name="see-also"></a>Siehe auch  
+ [Debuggen von systemeigenem Code häufig gestellte Fragen](../debugger/debugging-native-code-faqs.md)   
+ [Debuggen von nativem Code](../debugger/debugging-native-code.md)

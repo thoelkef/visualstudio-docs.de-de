@@ -1,27 +1,30 @@
 ---
-title: "IActiveScript::GetScriptThreadID | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IActiveScript::GetScriptThreadID | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IActiveScript.GetScriptThreadID
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "IActiveScript_GetScriptThreadID"
+helpviewer_keywords: IActiveScript_GetScriptThreadID
 ms.assetid: 2595d76e-30b5-429f-88b4-1d026645dd9b
-caps.latest.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 8850319035b7b5e3a9cbbd4bbe4340e1eefacc96
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# IActiveScript::GetScriptThreadID
-Ruft einen Skripterstellung\-Modul\-definierten Bezeichner für den Thread ab, der mit dem angegebenen Win32\-Thread zugeordnet ist.  
+# <a name="iactivescriptgetscriptthreadid"></a>IActiveScript::GetScriptThreadID
+Ruft einen scripting-Engine-definierten Bezeichner für den Thread, der dem angegebenen Win32-Thread zugeordnet.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 HRESULT GetScriptThreadID(  
@@ -30,26 +33,26 @@ HRESULT GetScriptThreadID(
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `dwWin32ThreadID` ,  
- \[in\] Threadbezeichner eines laufenden Win32\-Threads im aktuellen Prozess.  Verwenden Sie die [IActiveScript::GetCurrentScriptThreadID](../../winscript/reference/iactivescript-getcurrentscriptthreadid.md)\-Funktion, um den Threadbezeichner des momentan ausgeführten Threads abzurufen.  
+ [in] Thread-ID eines ausgeführten Win32-Threads im aktuellen Prozess. Verwenden der [IActiveScript::GetCurrentScriptThreadID](../../winscript/reference/iactivescript-getcurrentscriptthreadid.md) -Funktion zum Abrufen des Threadbezeichner des aktuell ausgeführten Threads.  
   
  `pstidThread` ,  
- \[out\] Zugeordnete Adresse einer Variablen, die den Skriptthreadbezeichner empfängt, mit dem angegebenen Win32\-Thread zu.  Die Darstellung dieses Bezeichners wird dem Skriptmodul überlassen, kann jedoch nur eine Kopie des Windows\-Threadbezeichners sein.  Beachten Sie, dass, wenn der Win32\-Thread endet, dieser Bezeichner wird möglicherweise nicht zugewiesen und anschließend zu einem anderen Thread zugewiesen ist.  
+ [out] Die Adresse einer Variablen, die die angegebenen Win32-Thread zugeordneten Skript Threadbezeichner empfängt. Die Interpretation dieser Bezeichner obliegt dem Skriptmodul, aber es kann nur eine Kopie des Windows-Thread-ID sein. Beachten Sie, dass wenn der Win32-Thread beendet wird, wird dieser Bezeichner nicht zugewiesen wird und anschließend an einen anderen Thread zugewiesen sein.  
   
-## Rückgabewert  
- Gibt eine der folgenden Werte:  
+## <a name="return-value"></a>Rückgabewert  
+ Gibt einen der folgenden Werte zurück:  
   
 |Rückgabewert|Bedeutung|  
-|------------------|---------------|  
+|------------------|-------------|  
 |`S_OK`|Erfolgreich.|  
-|`E_POINTER`|Ein ungültiger Zeiger wurde angegeben.|  
-|`E_UNEXPECTED`|Der Aufruf wurde nicht erwartet \(beispielsweise, ist das Skriptmodul noch nicht geladen wurde oder initialisiert wurden\) und fehlgeschlagen ist daher.|  
+|`E_POINTER`|Es wurde ein ungültiger Zeiger angegeben.|  
+|`E_UNEXPECTED`|Der Aufruf wurde nicht erwartet (z. B. das Skriptmodul wurde noch kein geladen oder initialisiert) und konnte daher nicht.|  
   
-## Hinweise  
- Der abgerufene Bezeichner kann in nachfolgenden Aufrufen verwendet werden, um Threadausführungssteuerungsmethoden wie die [IActiveScript::InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md)\-Methode zu erstellen.  
+## <a name="remarks"></a>Hinweise  
+ Der abgerufene Bezeichner kann z. B. bei nachfolgenden Funktionsaufrufen Skript Thread Steuerelement Ausführungsmethoden verwendet werden die [IActiveScript::InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md) Methode.  
   
- Diese Methode kann von NichtBasis Threads mit dem Ergebnis einer NichtBasis Legende zu den Hostobjekten oder zur [IActiveScript::InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md)\-Schnittstelle ohne aufgerufen werden.  
+ Diese Methode kann von nicht zur Basis Threads aufgerufen werden, ohne dass eine Legende nicht zur Basis Hostobjekte oder in der [IActiveScript::InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md) Schnittstelle.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IActiveScript](../../winscript/reference/iactivescript.md)

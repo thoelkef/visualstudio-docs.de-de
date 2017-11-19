@@ -1,50 +1,51 @@
 ---
-title: "XML-Schemata (Dialogfeld) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: XML-Schemata (Dialogfeld) | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 0271fa26-2205-49bd-96e0-ae1441571808
-caps.latest.revision: 2
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 2
+caps.latest.revision: "2"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: c9c248532c5724c5d5bc3a3bad6c1e6b4674fd5e
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/02/2017
 ---
-# XML-Schemata (Dialogfeld)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Das Dialogfeld **XML\-Schemas** wird verwendet, um festzulegen, welche Schemas der XML\-Schemadefinitionssprache \(XML schema definition language, XSD\) einem XML\-Dokument zugeordnet werden sollen.Es kann ein Schema aus dem Schemacache ausgewählt oder ein Schema angegeben werden, das sich nicht im Cache befindet.Ausgewählte Schemas werden als Teil eines Schemasatzes behandelt.Das Schemaset wird für IntelliSense und zur Überprüfung von XML\-Dokumenten verwendet.  
+# <a name="xml-schemas-dialog-box"></a>XML-Schemata (Dialogfeld)
+Die **XML-Schemas** (Dialogfeld) Dient zum Auswählen der XML Schema Definition Language (XSD) Schemas ein XML-Dokument zugeordnet werden soll. Es kann ein Schema aus dem Schemacache ausgewählt oder ein Schema angegeben werden, das sich nicht im Cache befindet. Ausgewählte Schemas werden als Teil eines Schemasatzes behandelt. Das Schemaset wird für IntelliSense und zur Validierung von XML-Dokumenten verwendet.  
   
- Sie können auf das Dialogfeld **XML\-Schemas** zugreifen, indem Sie im Eigenschaftenfenster des Dokuments auf die Schaltfläche **Schemas** klicken oder im Menü **XML** die Option **Schemas** wählen.  
+ Sie erreichen die **XML-Schemas** (Dialogfeld), indem Sie entweder auf die **Schemas** Schaltfläche im Eigenschaftenfenster Dokuments oder durch Auswählen von **Schemas** aus der **XML** Menü.  
   
-## UIElement-Liste  
+## <a name="uielement-list"></a>UIElement-Liste  
  **Verwendung**  
- Wählen Sie aus, wie das XML\-Schema verwendet werden soll.  
+ Wählen Sie aus, wie das XML-Schema verwendet werden soll.  
   
--   **Automatisch**.Dieses Schema wird vom aktuellen Dokument nicht verwendet, ist jedoch für eine automatische Zuordnung verfügbar.Wenn im XML\-Dokument ein Namespace deklariert wird, der dem `targetNamespace` dieses Schemas entspricht, wird das Schema automatisch zugeordnet und dem Schemaset hinzugefügt.  
+-   **Automatische**. Dieses Schema wird vom aktuellen Dokument nicht verwendet, ist jedoch für eine automatische Zuordnung verfügbar. Wenn im XML-Dokument ein Namespace deklariert wird, der dem `targetNamespace` dieses Schemas entspricht, wird das Schema automatisch zugeordnet und dem Schemaset hinzugefügt.  
   
--   **Dieses Schema verwenden**.Dieses Schema wird vom aktuellen Dokument verwendet.Entweder wurde die Verwendung dieses Schemas durch Klicken auf diese Spalte explizit durch den Benutzer festgelegt, oder das Schema wurde auf Grundlage eines übereinstimmenden `targetNamespace` automatisch zugeordnet.  
+-   **Verwenden Sie dieses Schema**. Dieses Schema wird vom aktuellen Dokument verwendet. Entweder wurde die Verwendung dieses Schemas durch Klicken auf diese Spalte explizit durch den Benutzer festgelegt, oder das Schema wurde auf Grundlage eines übereinstimmenden `targetNamespace` automatisch zugeordnet.  
   
--   **Ausgewählte Schemas nicht verwenden**.Dieses Schema wird vom aktuellen Dokument nicht verwendet. Dies gilt auch, wenn ein mit dem Schema übereinstimmender `targetNamespace` vorhanden ist.Diese Einstellung ist nützlich zum Lösen von Konflikten, wenn sich mehrere Versionen desselben Schemas im Schemacache oder der Projektmappe befinden.  
+-   **Ausgewählte Schemas nicht verwenden**. Dieses Schema wird vom aktuellen Dokument nicht verwendet. Dies gilt auch, wenn ein mit dem Schema übereinstimmender `targetNamespace` vorhanden ist. Diese Einstellung ist nützlich zum Lösen von Konflikten, wenn sich mehrere Versionen desselben Schemas im Schemacache oder der Projektmappe befinden.  
   
- **Zielnamespace**  
- Zeigt den dem XML\-Schema zugeordneten Zielnamespace an.  
+**Target-Namespace**  
+Zeigt den dem XML-Schema zugeordneten Zielnamespace an.  
   
- **Dateiname**  
- Zeigt den Dateinamen des XML\-Schemas an.  
+**Dateiname**  
+Zeigt den Dateinamen des XML-Schemas an.  
   
- **Hinzufügen**  
- Öffnet das Dialogfeld **XSD\-Schema öffnen**, in dem Sie dem Schemaset zusätzliche Schemas hinzufügen können.Wenn Sie dem Schemaset ein Schema hinzufügen, wird der Wert der Spalte **Verwendung** auf **Dieses Schema verwenden** festgelegt.  
+**Add**  
+Öffnet die **XSD-Schema öffnen** Dialogfeld, in dem Sie zusätzliche Schemas, um den Schemasatz hinzufügen auswählen kann. Wenn Sie das Schema ein Schema hinzufügen festgelegt, die **verwenden** Spaltenwert auf festgelegt ist **dieses Schema verwenden**.  
   
- **Entfernen**  
- Entfernt das ausgewählte Schema aus dem Schemaset.Dies entfernt das Schema aus dem Schemacache im Speicher, jedoch nicht aus dem Dateisystem.  
+**Entfernen**  
+Entfernt das ausgewählte Schema aus dem Schemaset. Dies entfernt das Schema aus dem Schemacache im Speicher, jedoch nicht aus dem Dateisystem.  
   
-## Siehe auch  
- [Komponenten des XML\-Editors](../xml-tools/xml-editor-components.md)   
- [Gewusst wie: Auswählen der zu verwendenden XML\-Schemas](../xml-tools/how-to-select-the-xml-schemas-to-use.md)   
+## <a name="see-also"></a>Siehe auch  
+ [Komponenten des XML-Editors](../xml-tools/xml-editor-components.md)   
+ [Vorgehensweise: Auswählen der XML-Schemas zu verwenden](../xml-tools/how-to-select-the-xml-schemas-to-use.md)   
  [Schemacache](../xml-tools/schema-cache.md)

@@ -1,47 +1,48 @@
 ---
-title: "CA1308: Zeichenfolgen in Gro&#223;buchstaben normalisieren | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA1308"
-  - "NormalizeStringsToUppercase"
-helpviewer_keywords: 
-  - "NormalizeStringsToUppercase"
-  - "CA1308"
+title: "CA1308: Zeichenfolgen in Großbuchstaben normalisieren | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA1308
+- NormalizeStringsToUppercase
+helpviewer_keywords:
+- NormalizeStringsToUppercase
+- CA1308
 ms.assetid: 7e9a7457-3f93-4938-ac6f-1389fba8d9cc
-caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 8c9746d150fb2a47b1ce874ad003afd86d178e9a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# CA1308: Zeichenfolgen in Gro&#223;buchstaben normalisieren
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="ca1308-normalize-strings-to-uppercase"></a>CA1308: Zeichenfolgen in Großbuchstaben normalisieren
 |||  
 |-|-|  
 |TypeName|NormalizeStringsToUppercase|  
 |CheckId|CA1308|  
-|Kategorie \(Category\)|Microsoft.Globalization|  
+|Kategorie|Microsoft.Globalization|  
 |Unterbrechende Änderung|Nicht unterbrechend|  
   
-## Ursache  
- Die Zeichenfolge wird durch einen Vorgang in Kleinbuchstaben normalisiert.  
+## <a name="cause"></a>Ursache  
+ Ein Vorgang wird eine Zeichenfolge in Kleinbuchstaben normalisiert.  
   
-## Regelbeschreibung  
- Zeichenfolgen sollten in Großschreibung normalisiert werden.  Bei einer kleinen Gruppe von Zeichen kann bei der Konvertierung in Kleinbuchstaben kein Roundtrip ausgeführt werden.  Ein Roundtrip bedeutet, dass die Zeichen von einem Gebietsschema in ein anderes Gebietsschema konvertiert werden, das Zeichendaten anders darstellt, und anschließend die ursprünglichen Zeichen aus den konvertierten Zeichen exakt wieder abgerufen werden.  
+## <a name="rule-description"></a>Regelbeschreibung  
+ Zeichenfolgen sollten in Großschreibung normalisiert werden. Eine kleine Gruppe von Zeichen, wenn sie in Kleinbuchstaben konvertiert wurden, kann keinen Roundtrip vorgenommen werden. Um einen Roundtrip abrufen Möglichkeit zum Konvertieren der Zeichen aus einem Gebietsschema auf einem anderen Gebietsschema, die Zeichendaten anders darstellt, und dann zu genau die ursprünglichen Zeichen aus der konvertierten Zeichen.  
   
-## Behandeln von Verstößen  
- Ändern Sie Operationen, durch die Zeichenfolgen in Kleinschreibung konvertiert werden, damit die Zeichenfolgen stattdessen in Großschreibung konvertiert werden.  Ändern Sie beispielsweise `String.ToLower(CultureInfo.InvariantCulture)` zu `String.ToUpper(CultureInfo.InvariantCulture)`.  
+## <a name="how-to-fix-violations"></a>Behandeln von Verstößen  
+ Ändern Sie die Vorgänge, die Zeichenfolgen in Kleinbuchstaben konvertiert, sodass die Zeichenfolgen konvertiert werden stattdessen in Großbuchstaben. Ändern Sie beispielsweise `String.ToLower(CultureInfo.InvariantCulture)` zu `String.ToUpper(CultureInfo.InvariantCulture)`.  
   
-## Wann sollten Warnungen unterdrückt werden?  
- Warnmeldungen können gefahrlos unterdrückt werden, wenn Sie keine Sicherheitsentscheidung auf der Grundlage des Ergebnisses treffen, dieses also beispielsweise in der Benutzeroberfläche anzeigen lassen.  
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?  
+ Sie können ruhig auf eine Warnung zu unterdrücken, wenn Sie nicht sicherheitsentscheidung abhängig vom Ergebnis (z. B. vornehmen, wenn Sie in der Benutzeroberfläche angezeigt werden).  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Globalisierungswarnungen](../code-quality/globalization-warnings.md)

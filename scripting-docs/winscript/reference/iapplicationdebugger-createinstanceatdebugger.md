@@ -1,30 +1,33 @@
 ---
-title: "IApplicationDebugger::CreateInstanceAtDebugger | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IApplicationDebugger::CreateInstanceAtDebugger | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IApplicationDebugger.CreateInstanceAtDebugger
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "IApplicationDebugger::CreateInstanceAtDebugger"
+helpviewer_keywords: IApplicationDebugger::CreateInstanceAtDebugger
 ms.assetid: 6763afac-c86a-4e88-9580-77108fb242fb
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: f6495c2d8782d1128700bdfb6d4081b80ffae878
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# IApplicationDebugger::CreateInstanceAtDebugger
-Ermöglicht die Erstellung von Objekten im Debuggerprozess durch Code, der dem Debugger prozessextern ist.  
+# <a name="iapplicationdebuggercreateinstanceatdebugger"></a>IApplicationDebugger::CreateInstanceAtDebugger
+Ermöglicht die Erstellung von Objekten im Debuggerprozess in Code vorgesehen, Out-of-Process an den Debugger.  
   
 > [!IMPORTANT]
->  Diese Methode sollte nicht implementiert werden, da sie nicht vertrauenswürdigem Code ermöglicht, beliebige Objekte in einem vertrauenswürdigen Debuggerthread zu erstellen.  
+>  Diese Methode sollte nicht implementiert werden, da dadurch nicht vertrauenswürdigen Code auf beliebige Objekte in eine vertrauenswürdige Debuggerthread zu erstellen.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 HRESULT CreateInstanceAtDebugger(  
@@ -36,33 +39,33 @@ HRESULT CreateInstanceAtDebugger(
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `rclsid`  
- \[in\] Klassenbezeichner \(CLSID\) des zu erstellenden Objekts.  
+ [in] Klassenbezeichner (CLSID) des zu erstellenden Objekts.  
   
  `pUnkOuter`  
- \[in\] `NULL`, wenn das Objekt nicht als Teil eines Aggregats erstellt wird.  Andernfalls ist `pUnkOuter` ein Zeiger auf die gesamte `IUnknown`\-Schnittstelle des Objekts \(steuernde `IUnknown`\).  
+ [in] Wenn `NULL`, das Objekt wird nicht als Teil eines Aggregats erstellt. Andernfalls `pUnkOuter` ist ein Zeiger auf des aggregatobjekts `IUnknown` Schnittstelle (steuernde `IUnknown`).  
   
  `dwClsContext`  
- \[in\] Kontext für ausgeführten ausführbaren Code.  Die Werte werden aus der Enumeration `CLSCTX` entnommen.  
+ [in] Kontext für die Ausführung von ausführbarem Code. Die Werte stammen aus der Enumeration `CLSCTX`.  
   
  `riid`  
- \[in\] Der Schnittstellenbezeichner verwendet, um mit dem Objekt zu kommunizieren.  
+ [in] Der Schnittstellenbezeichner verwendet, um die Kommunikation mit dem Objekt.  
   
  `ppvObject`  
- \[out\] Die Adresse der Zeigervariablen, die den in `riid` angeforderten Schnittstellenzeiger empfängt.  Nach der erfolgreichen Rückgabe \*`ppvObject` enthält den angeforderten Schnittstellenzeiger.  Nach einem Fehler \*`ppvObject` enthält `NULL`.  
+ [out] Adresse des Zeigervariable, die den Schnittstellenzeiger in angeforderte empfängt `riid`. Nach erfolgreicher Rückkehr *`ppvObject` enthält den angeforderten Schnittstellenzeiger auf. Bei einem Ausfall \* `ppvObject` enthält `NULL`.  
   
-## Rückgabewert  
- Die Methode gibt ein `HRESULT` zurück.  Zu den möglichen Werten zählen, aber nicht zu, die in der folgenden Tabelle beschränkt.  
+## <a name="return-value"></a>Rückgabewert  
+ Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
   
-|Wert|Description|  
-|----------|-----------------|  
+|Wert|Beschreibung|  
+|-----------|-----------------|  
 |`S_OK`|Die Methode war erfolgreich.|  
   
-## Hinweise  
- Delegaten dieser Methode zu `CoCreateInstance`.  
+## <a name="remarks"></a>Hinweise  
+ Diese Methode delegiert an `CoCreateInstance`.  
   
  Die Methode wird derzeit nicht implementiert.  
   
-## Siehe auch  
- [IApplicationDebugger\-Schnittstelle](../../winscript/reference/iapplicationdebugger-interface.md)
+## <a name="see-also"></a>Siehe auch  
+ [IApplicationDebugger-Schnittstelle](../../winscript/reference/iapplicationdebugger-interface.md)

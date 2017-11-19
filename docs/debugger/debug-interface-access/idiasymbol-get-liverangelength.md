@@ -1,55 +1,54 @@
 ---
-title: "IDiaSymbol::get_liveRangeLength | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSymbol::get_liveRangeLength"
+title: IDiaSymbol::get_liveRangeLength | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSymbol::get_liveRangeLength
 ms.assetid: ffcce3cc-085c-44eb-8145-46e3819c54f9
-caps.latest.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: cbb517fda948a916815072ab406aafe49f7dc241
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSymbol::get_liveRangeLength
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Gibt die Länge des Adressbereichs zurück, in dem das lokale Symbol gültig ist.  
+# <a name="idiasymbolgetliverangelength"></a>IDiaSymbol::get_liveRangeLength
+Gibt die Länge des-Adressbereichs in der lokalen Symbolcache gültig ist.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT get_liveRangeLength (   
-   ULONGLONG* length  
+```C++  
+HRESULT get_liveRangeLength (   
+   ULONGLONG* length  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `length`  
- \[out\]  Gibt die Länge des Adressbereichs zurück.  
+ [out] Gibt die Länge der Adressbereich zurück.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
 > [!NOTE]
->  Ein zurückgegebener Fehlercode bedeutet, dass das Symbol nicht aktive Bereichs Informationen verfügt.  
+>  Ein zurückgegebene Fehlercode bedeutet, dass das Symbol keinen live Bereichsinformationen.  
   
-## Hinweise  
+## <a name="remarks"></a>Hinweise  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  Header: Dia2.h  
   
  Bibliothek: diaguids.lib  
   
- DLLs: msdia100.dll  
+ DLL: msdia100.dll  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

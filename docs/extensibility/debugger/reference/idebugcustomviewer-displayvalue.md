@@ -1,70 +1,70 @@
 ---
-title: "IDebugCustomViewer::DisplayValue | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugCustomViewer::DisplayValue"
-helpviewer_keywords: 
-  - "IDebugCustomViewer::DisplayValue"
+title: IDebugCustomViewer::DisplayValue | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugCustomViewer::DisplayValue
+helpviewer_keywords: IDebugCustomViewer::DisplayValue
 ms.assetid: 7a538248-5ced-450e-97cd-13fabe35fb1c
-caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 701c5e33273dc6d00156e554e1abaa9a003568eb
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugCustomViewer::DisplayValue
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
+# <a name="idebugcustomviewerdisplayvalue"></a>IDebugCustomViewer::DisplayValue
 Diese Methode wird aufgerufen, um den angegebenen Wert anzuzeigen.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT DisplayValue(  
-   HWND             hwnd,  
-   DWORD            dwID,  
-   IUnknown *       pHostServices,  
-   IDebugProperty3* pDebugProperty);  
+   HWND             hwnd,  
+   DWORD            dwID,  
+   IUnknown *       pHostServices,  
+   IDebugProperty3* pDebugProperty);  
 );  
 ```  
   
-```c#  
+```csharp  
 int DisplayValue(  
-   IntPtr          hwnd,   
-   uint            dwID,   
-   object          pHostServices,   
-   IDebugProperty3 pDebugProperty  
+   IntPtr          hwnd,   
+   uint            dwID,   
+   object          pHostServices,   
+   IDebugProperty3 pDebugProperty  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `hwnd`  
- \[in\]  Übergeordnetes Fenster  
+ [in] Übergeordnetes Fenster  
   
  `dwID`  
- \[in\]  IDs für benutzerdefinierte Viewer, die mehr als einen Typ unterstützen.  
+ [in] ID für den benutzerdefinierten Viewer, die mehrere Typen zu unterstützen.  
   
  `pHostServices`  
- \[in\] Reserviert.  Immer auf NULL festgelegt.  
+ [in] Reserviert. Legen Sie immer auf Null.  
   
  `pDebugProperty`  
- \[in\]  Schnittstelle, die verwendet werden kann, um auf den anzuzeigenden Wert abzurufen.  
+ [in] Schnittstelle, die verwendet werden kann, zum Abrufen des Werts angezeigt werden.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. gibt andernfalls Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`; andernfalls wird Fehlercode zurückgegeben.  
   
-## Hinweise  
- Die Anzeige ist dadurch, dass diese Methode das notwendige Fenster erstellt, den Wert anzeigt, bei der Eingabe wartet und schließen Sie das Fenster modal all „,“ bevor sie an den Aufrufer zurückkehrt.  Dies bedeutet, dass die Methode alle Aspekte der Anzeige des Werts der Eigenschaft, für das Erstellen eines Fensters für die Ausgabe, um Benutzereingaben zu Antworten Zerstören des Fensters behandelt werden muss.  
+## <a name="remarks"></a>Hinweise  
+ Die Anzeige ist "gebunden", da diese Methode wird Erstellen des erforderlichen Zeitfensters, zeigt den Wert für die Eingabe zu warten und schließen Sie das Fenster, alle vor der Rückgabe an den Aufrufer. Dies bedeutet, dass die Methode zum Anzeigen von den Wert der Eigenschaft, von der Erstellung eines Fensters für die Ausgabe, um Benutzereingaben zu zerstören das Fenster warten alle Aspekte behandelt werden muss.  
   
- Um das Ändern des Werts für das angegebene [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)\-Objekt unterstützt werden sollen, können Sie die [SetValueAsStringWithError](../../../extensibility/debugger/reference/idebugproperty3-setvalueasstringwitherror.md)\-Methode verwenden, wenn der Wert als Zeichenfolge ausgedrückt werden kann.  Andernfalls ist es erforderlich, eine benutzerdefinierte Schnittstelle zum exklusiven Ausdrucksauswertung zu erstellen, der dieses `DisplayValue` METHOD\-auf demselben Objekt implementiert, das die `IDebugProperty3`\-Schnittstelle implementiert.  Diese benutzerdefinierte Schnittstelle wäre Methoden zum Ändern der Daten eine beliebige Größe oder der Komplexität führen.  
+ Zur Unterstützung der Änderung des Werts auf die angegebenen [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) -Objekt können Sie die [SetValueAsStringWithError](../../../extensibility/debugger/reference/idebugproperty3-setvalueasstringwitherror.md) Methode – Wenn der Wert als Zeichenfolge ausgedrückt werden kann. Andernfalls ist es notwendig, eine benutzerdefinierte Benutzeroberfläche erstellen – exklusiv für die ausdrucksauswertung zur Implementierung `DisplayValue` Methode – für das gleiche Objekt, das implementiert die `IDebugProperty3` Schnittstelle. Diese benutzerdefinierte Schnittstelle, die Methoden zum Ändern der Daten ein beliebiger Größe und Komplexität angeben.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDebugCustomViewer](../../../extensibility/debugger/reference/idebugcustomviewer.md)   
  [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)   
  [SetValueAsStringWithError](../../../extensibility/debugger/reference/idebugproperty3-setvalueasstringwitherror.md)

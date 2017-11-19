@@ -1,55 +1,56 @@
 ---
-title: "How to: Include Prerequisites with a ClickOnce Application | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-deployment"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: "Vorgehensweise: Einschließen von erforderlichen Komponenten mit einer ClickOnce-Anwendung | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-deployment
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: c66bf0a5-8c93-4e68-a224-3b29ac36fe4d
-caps.latest.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 16
+caps.latest.revision: "16"
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+ms.openlocfilehash: 18431ea15b53959234da4b2c6dedb24b8fa2e390
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# How to: Include Prerequisites with a ClickOnce Application
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Bevor Sie die erforderliche Software mit einer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]\-Anwendung verteilen können, müssen Sie zunächst die Installationspakete für diese erforderlichen Komponenten auf Ihren Entwicklungscomputer herunterladen.  Wenn Sie eine Anwendung veröffentlichen und **Erforderliche Komponenten von demselben Speicherort wie die Anwendung herunterladen** auswählen, tritt ein Fehler auf, wenn die Installationspakete nicht im Ordner **Pakete** enthalten sind.  
+# <a name="how-to-include-prerequisites-with-a-clickonce-application"></a>Gewusst wie: Einschließen von erforderlichen Komponenten mit einer ClickOnce-Anwendung
+Bevor Sie die erforderliche Software mit einer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]-Anwendung verteilen können, müssen Sie zunächst die Installationspakete für diese erforderlichen Komponenten auf Ihren Entwicklungscomputer herunterladen. Wenn Sie eine Anwendung veröffentlichen, und wählen Sie **erforderliche Komponenten von demselben Speicherort wie Anwendung herunterladen**, wird eine Fehlermeldung angezeigt, wenn die Installationspakete nicht im die **Pakete** Ordner.  
   
 > [!NOTE]
->  Informationen zum Hinzufügen eines Installationspakets für .NET Framework finden Sie unter [Handbuch für die Bereitstellung von .NET Framework für Entwickler](http://msdn.microsoft.com/library/ee942965\(v=vs.110\).aspx).  
+>  Um ein Installationspaket für .NET Framework hinzuzufügen, finden Sie unter [Handbuch für die Bereitstellung von .NET Framework für Entwickler](http://msdn.microsoft.com/library/ee942965\(v=vs.110\).aspx).  
   
-##  <a name="Package"></a> So fügen Sie mit Package.xml ein Installationspaket hinzu  
+##  <a name="Package"></a>So fügen Sie ein Installationspaket, das mithilfe von "Package.xml" hinzu  
   
-1.  Öffnen Sie im Datei\-Explorer den Ordner **Pakete**.  
+1.  Öffnen Sie im Datei-Explorer die **Pakete** Ordner.  
   
-     Der Pfad ist standardmäßig C:\\Programme\\Microsoft Visual Studio 14.0\\SDK\\Bootstrapper\\Packages auf einem 32\-Bit\-System und C:\\Programme \(x86\)\\Microsoft Visual Studio 14.0\\SDK\\Bootstrapper\\Packages auf einem 64\-Bit\-System.  
+     Der Pfad ist standardmäßig C:\Programme\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages auf einem 32-Bit-System und C:\Programme (x86)\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages auf einem 64-Bit-System.  
   
-2.  Öffnen Sie den Ordner für die erforderliche Komponente, die Sie hinzufügen möchten, und öffnen Sie dann den Sprachordner für die installierte Version von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] \(z. B. **en** für Englisch\).  
+2.  Öffnen Sie den Ordner für die erforderlichen Komponenten, die Sie hinzufügen möchten, und öffnen Sie dann den Sprachordner für die installierte Version von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] (z. B. **En** für Englisch).  
   
-3.  Öffnen Sie im Editor die Datei **Package.xml**.  
+3.  Öffnen Sie im Editor die **"Package.xml"** Datei.  
   
-4.  Suchen Sie das **Name**\-Element, das **http:\/\/go.microsoft.com\/fwlink** enthält, und kopieren Sie die URL.  Schließen Sie die **LinkID**\-Komponente ein.  
+4.  Suchen Sie die **Namen** Element, das enthält **http://go.microsoft.com/fwlink**, und kopieren Sie die URL. Enthalten die **LinkID** Teil.  
   
     > [!NOTE]
-    >  Wenn kein **Name**\-Element **http:\/\/go.microsoft.com\/fwlink** enthält, öffnen Sie die Datei **Product.xml** im Stammordner für die erforderliche Komponente, und suchen Sie die Zeichenfolge **fwlink**.  
+    >  Wenn kein **Namen** Element enthält **http://go.microsoft.com/fwlink**öffnen die **Product.xml** Datei im Stammordner für die erforderliche Komponente, und suchen Sie die  **Fwlink** Zeichenfolge.  
   
     > [!IMPORTANT]
-    >  Einige erforderliche Komponenten haben mehrere Installationspakete \(z. B. für 32\-Bit\- oder 64\-Bit\-Systeme\).  Wenn mehrere **Name**\-Elemente **fwlink** enthalten, müssen Sie die verbleibenden Schritte für jedes dieser Elemente überprüfen.  
+    >  Einige erforderliche Komponenten haben mehrere Installationspakete (z. B. für 32-Bit- oder 64-Bit-Systeme). Wenn mehrere **Namen** Elemente enthalten **Fwlink**, müssen Sie die verbleibenden Schritte für jede von ihnen wiederholen.  
   
-5.  Fügen Sie die URL in die Adressleiste des Browsers ein, und wählen Sie dann, wenn Sie zum Ausführen oder Speichern aufgefordert werden, **Speichern** aus.  
+5.  Fügen Sie die URL in die Adressleiste des Browsers ein, und klicken Sie dann, wenn Sie aufgefordert werden, auszuführen oder zu speichern, wählen Sie **speichern**.  
   
      In diesem Schritt wird die Installationsdatei auf den Computer heruntergeladen.  
   
 6.  Kopieren Sie die Datei in den Stammordner für die erforderliche Komponente.  
   
-     Für die erforderliche Komponente von Windows Installer 4.5 kopieren Sie z. B. die Datei in den Ordner \\Packages\\WindowsInstaller4\_5.  
+     Für die erforderliche Komponente von Windows Installer 4.5 kopieren Sie z. B. die Datei in den Ordner \Packages\WindowsInstaller4_5.  
   
      Sie können das Installationspaket jetzt mit der Anwendung verteilen.  
   
-## Siehe auch  
- [How to: Install Prerequisites with a ClickOnce Application](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)
+## <a name="see-also"></a>Siehe auch  
+ [Gewusst wie: Installieren von erforderlichen Komponenten mit einer ClickOnce-Anwendung](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)

@@ -1,55 +1,57 @@
 ---
-title: "IDebugGenericParamField::GetFlags | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "GetFlags"
-  - "IDebugGenericParamField::GetFlags"
+title: IDebugGenericParamField::GetFlags | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- GetFlags
+- IDebugGenericParamField::GetFlags
 ms.assetid: adcbbca1-8960-4c88-86b0-8b9467056c97
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 5241889fc3a64a251295504a3d491168f725beac
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugGenericParamField::GetFlags
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
+# <a name="idebuggenericparamfieldgetflags"></a>IDebugGenericParamField::GetFlags
 Ruft die Flags für diesen generischen Parameter ab.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetFlags(  
-   DWORD* pdwFlags  
+   DWORD* pdwFlags  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetFlags(  
-   ref uint pdwFlags  
+   ref uint pdwFlags  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `pdwFlags`  
- \[out\]  Gibt die Flags für diesen generischen Parameter zurück.  
+ [out] Gibt die Flags für diesen generischen Parameter zurück.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Hinweise  
- Diese Flags enthalten Informationen über verschiedene spezielle Einschränkungen.  
+## <a name="remarks"></a>Hinweise  
+ Diese Flags enthalten Informationen zu verschiedenen besonderen Einschränkungen.  
   
-## Beispiel  
- Im folgenden Beispiel wird veranschaulicht, wie diese Methode für ein **CDebugGenericParamFieldType\-Objekt** implementiert, das die [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)\-Schnittstelle verfügbar macht.  
+## <a name="example"></a>Beispiel  
+ Das folgende Beispiel veranschaulicht die Implementierung dieser Methode für eine **CDebugGenericParamFieldType** -Objekt, das macht die [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md) Schnittstelle.  
   
-```cpp#  
+```cpp  
 HRESULT CDebugGenericParamFieldType::GetFlags(DWORD *pdwFlags)  
 {  
     HRESULT hr = S_OK;  
@@ -67,5 +69,5 @@ Error:
 }  
 ```  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)

@@ -1,57 +1,56 @@
 ---
-title: "IDiaSymbol::get_offset | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSymbol::get_offset-Methode"
+title: 'Idiasymbol:: Get_offset | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSymbol::get_offset method
 ms.assetid: 8292bb08-4dc8-4663-beb4-258f5d5a448d
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: bd3fa794da188e228f44b0930bcf5b27f4b3a0fb
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSymbol::get_offset
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Ruft den Offset des Symbols ab.  Verwenden Sie diese Option, wenn [LocationType\-Enumeration](../../debugger/debug-interface-access/locationtype.md)`LocIsRegRel` oder `LocIsBitField`ist.  
+# <a name="idiasymbolgetoffset"></a>IDiaSymbol::get_offset
+Ruft den Offset des Symbolspeicherort ab. Verwenden in folgenden Fällen die [LocationType-Enumeration](../../debugger/debug-interface-access/locationtype.md) ist `LocIsRegRel` oder `LocIsBitField`.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT get_offset (   
-   LONG* pRetVal  
+```C++  
+HRESULT get_offset (   
+   LONG* pRetVal  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `pRetVal`  
- \[out\]  Gibt den Offset in Bytes des Symbols zurück.  
+ [out] Gibt den Offset des Symbolspeicherort in Bytes zurück.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt `S_FALSE` oder einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
   
 > [!NOTE]
->  Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft nicht für das Symbol verfügbar ist.  
+>  Ein Rückgabewert von `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
   
-## Hinweise  
- Der Offset wird von einigen bekanntem zuvor bestimmtem Punkt.  Beispielsweise ist der Offset für einen `LocIsBitField` Positionstyp i. d. R. vom Beginn des enthaltenden Klasse.  
+## <a name="remarks"></a>Hinweise  
+ Der Offset ist von einigen bekannten Punkt zuvor bestimmt. Z. B. den Offset für einen `LocIsBitField` Speicherorttyp ist in der Regel vom Beginn der enthaltenden Klasse.  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
   
 |Anforderung|Beschreibung|  
-|-----------------|------------------|  
+|-----------------|-----------------|  
 |Header:|dia2.h|  
-|Version:|DIA SDK v7.0|  
+|Version:|DIA-SDK Version 7.0|  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [LocationType\-Enumeration](../../debugger/debug-interface-access/locationtype.md)
+ [LocationType-Enumeration](../../debugger/debug-interface-access/locationtype.md)

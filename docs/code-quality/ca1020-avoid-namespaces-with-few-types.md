@@ -1,47 +1,48 @@
 ---
-title: "CA1020: Namespaces mit wenigen Typen vermeiden | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA1020"
-  - "AvoidNamespacesWithFewTypes"
-helpviewer_keywords: 
-  - "AvoidNamespacesWithFewTypes"
-  - "CA1020"
+title: 'CA1020: Namespaces mit wenigen Typen vermeiden | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA1020
+- AvoidNamespacesWithFewTypes
+helpviewer_keywords:
+- CA1020
+- AvoidNamespacesWithFewTypes
 ms.assetid: 9cb272f6-a3ff-45af-b35d-70dea620b074
-caps.latest.revision: 17
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 17
+caps.latest.revision: "17"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: c09f3fa7855f2dadfce7a22914c4a7010b84f210
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# CA1020: Namespaces mit wenigen Typen vermeiden
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="ca1020-avoid-namespaces-with-few-types"></a>CA1020: Namespaces mit wenigen Typen vermeiden
 |||  
 |-|-|  
 |TypeName|AvoidNamespacesWithFewTypes|  
 |CheckId|CA1020|  
-|Kategorie \(Category\)|Microsoft.Design|  
+|Kategorie|Microsoft.Design|  
 |Unterbrechende Änderung|Breaking|  
   
-## Ursache  
- Ein anderer Namespace als der globale Namespace enthält weniger als fünf Typen.  
+## <a name="cause"></a>Ursache  
+ Ein anderen Namespace als dem globalen Namespace enthält Typen, die weniger als fünf.  
   
-## Regelbeschreibung  
- Stellen Sie sicher, dass jeder der Namespaces logisch organisiert ist und dass es einen zulässigen Grund dafür gibt, Typen in einen wenig gefüllten Namespace einzufügen.  Namespaces sollten Typen enthalten, die in den meisten Szenarien zusammen verwendet werden.  Wenn die Anwendungen sich gegenseitig ausschließen, sollten sich die Typen in separaten Namespaces befinden.  Der <xref:System.Web.UI>\-Namespace enthält z. B. Typen, die in Webanwendungen verwendet werden, während der <xref:System.Windows.Forms>\-Namespace Typen enthält, die in [!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)]\-basierten Anwendungen verwendet werden.  Obwohl beide Namespaces Typen haben, die Aspekte der Benutzeroberfläche steuern, sind diese Typen nicht zur Verwendung in der gleichen Anwendung vorgesehen.  Daher sind sie in separaten Namespaces.  Eine sorgfältige Organisation der Namespaces kann auch hilfreich sein, da sich Features dadurch leichter auffinden lassen.  Bibliotheksconsumer sollten durch Prüfung der Namespacehierarchie in der Lage sein, die Typen zu finden, die ein Feature implementieren.  
+## <a name="rule-description"></a>Regelbeschreibung  
+ Stellen Sie sicher, dass jeder der Namespaces logisch organisiert und ein zulässigen Grund vorhanden ist, zum Einfügen einer in einen wenig gefüllten Namespace Typen. Namespaces sollten Typen enthalten, die in den meisten Szenarien zusammen verwendet werden. Wenn ihre Anwendungen gegenseitig sind, sollten die Typen in separaten Namespaces befinden. Z. B. die <xref:System.Web.UI> -Namespace enthält Typen, die in Webanwendungen verwendet werden und die <xref:System.Windows.Forms> -Namespace enthält Typen, die in verwendet werden [!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)]-basierenden Anwendungen. Obwohl beide Namespaces Typen, die Aspekte der Benutzeroberfläche steuern enthalten, sind diese Typen nicht für die Verwendung in der gleichen Anwendung entwickelt. Aus diesem Grund befinden sie sich in separaten Namespaces. Eine sorgfältige Namespace Organisation kann auch hilfreich sein, da es die Erkennbarkeit einer Funktion erhöht. Untersuchen Sie die Namespacehierarchie, sollte Bibliotheksconsumer nach Typen suchen, die eine Funktion implementieren können.  
   
 > [!NOTE]
->  Zur Einhaltung dieser Richtlinie sollten Entwurfszeittypen und Berechtigungen nicht in andere Namespaces integriert werden.  Diese Typen gehören in ihre eigenen Namespaces unterhalb des Hauptnamespaces, und die Namespaces sollten auf `.Design` bzw. `.Permissions` enden.  
+>  Entwurfszeittypen und Berechtigungen sollten nicht in anderen Namespaces, um die Einhaltung dieser Richtlinie zusammengeführt werden. Diese Typen gehören in ihre eigenen Namespaces unterhalb der und die Namespaces auf enden sollte `.Design` und `.Permissions`zugeordnet.  
   
-## Behandeln von Verstößen  
- Um einen Verstoß gegen diese Regel zu beheben, versuchen Sie, Namespaces, die nur wenig Typen enthalten, zu einem einzigen Namespace zusammenzufassen.  
+## <a name="how-to-fix-violations"></a>Behandeln von Verstößen  
+ Um einen Verstoß gegen diese Regel zu beheben, versuchen Sie, Namespaces zu kombinieren, die nur wenige Typen in einem einzelnen Namespace enthalten.  
   
-## Wann sollten Warnungen unterdrückt werden?  
- Eine Warnung dieser Regel kann gefahrlos unterdrückt werden, wenn der Namespace keine Typen enthält, die mit den Typen in den anderen Namespaces verwendet werden.
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?  
+ Sie können ruhig auf eine Warnung dieser Regel zu unterdrücken, wenn der Namespace keine Typen enthalten, die mit den Typen in den anderen Namespaces verwendet werden.

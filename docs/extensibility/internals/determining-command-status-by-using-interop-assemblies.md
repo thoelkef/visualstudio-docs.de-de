@@ -1,39 +1,41 @@
 ---
-title: "Bestimmen des Status des Befehls mithilfe von Interop-Assemblys | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Interop-Assemblys, die Bestimmung des Befehlsstatus"
-  - "Befehlsbehandlung mit Interop-Assemblys, status"
+title: Bestimmen mithilfe von Interop-Assemblys Befehlsstatus | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- interop assemblies, determining command status
+- command handling with interop assemblies, status
 ms.assetid: 2f5104d1-7b4c-4ca0-a626-50530a8f7f5c
-caps.latest.revision: 18
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 18
+caps.latest.revision: "18"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 3cde6ae841271622e0d538d679991288c111095e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Bestimmen des Status des Befehls mithilfe von Interop-Assemblys
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Ein VSPackage muss den Status der Befehle von verfolgt, die nicht verarbeitet werden können. Die Umgebung kann nicht bestimmt werden, wenn ein Befehl in das VSPackage behandelt aktiviert oder deaktiviert wird. Es handelt sich um die Verantwortung für das VSPackage um die Umgebung zum Befehl Status zu informieren, z. B. der Status der allgemeine Befehle wie **Ausschneiden**, **Kopie**, und **Einfügen**.  
+# <a name="determining-command-status-by-using-interop-assemblies"></a>Bestimmen der Befehlsstatus mithilfe von Interop-Assemblys
+Eine VSPackage muss den Status der Befehle von verfolgt, die sie behandeln kann. Die Umgebung kann nicht bestimmt werden, wenn ein Befehl innerhalb Ihres VSPackage behandelt aktiviert oder deaktiviert wird. Es handelt sich um die Zuständigkeit für das VSPackage, um die Umgebung zum Befehl Status zu informieren, z. B. der Status der allgemeine Befehle wie **Ausschneiden**, **Kopie**, und **einfügen**.  
   
-## Status Benachrichtigungsquellen  
- Die Umgebung empfängt Informationen über die VSPackages' <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> Methode, die Teil der Implementierung des VSPackage ist von der <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> Schnittstelle. Die Umgebung Ruft die <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> \-Methode des VSPackages in zwei Situationen:  
+## <a name="status-notification-sources"></a>Status-Benachrichtigung-Quellen  
+ Die Umgebung empfängt Informationen zu Befehlen durch den VSPackages' <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> Methode, die Teil der VSPackage Implementierung ist von der <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> Schnittstelle. Die Umgebung Ruft die <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> Methode des VSPackage unter zwei Bedingungen:  
   
--   Die Umgebung ausgeführt wird, wenn ein Benutzer ein Hauptmenü oder im Kontextmenü \(durch Rechtsklick\) geöffnet wird, die <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> Methode für alle Befehle in diesem Menü, deren Status zu bestimmen.  
+-   Wenn ein Benutzer eine Hauptmenü oder ein Kontextmenü (indem Sie mit der rechten Maustaste) geöffnet wird, führt die Umgebung die <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> Methode auf alle Befehle in diesem Menü, um ihren Status zu bestimmen.  
   
--   Wenn das VSPackage angefordert wird, dass die Umgebung die aktuelle Benutzeroberfläche \(UI\) aktualisieren. In diesem Fall wie die Befehle, die derzeit für den Benutzer sichtbar, z. B. sind die **Ausschneiden**, **Kopie**, und **Einfügen** auf der Symbolleiste standard gruppieren, werden aktiviert und deaktiviert als Antwort auf den Kontext und Benutzeraktionen.  
+-   Wenn das VSPackage anfordert, dass die Umgebung die aktuelle Benutzeroberfläche (UI) aktualisieren. In diesem Fall als Befehle ein, die derzeit für den Benutzer sichtbar, z. B. sind die **Ausschneiden**, **Kopie**, und **einfügen** auf der Standardsymbolleiste gruppieren, werden aktiviert und deaktiviert Antwort auf die Aktionen "Kontext" und Benutzer.  
   
- Da die Shell mehrere VSPackages hostet, würde die Shell\-Leistung unannehmbar beeinträchtigen, wenn er erforderlich waren, um jede VSPackage zum Bestimmen des Status des Befehls abrufen. Stattdessen sollten Ihr VSPackage die Umgebung aktiv benachrichtigen, wenn zum Zeitpunkt der Änderung die Benutzeroberfläche ändert. Weitere Informationen über die Benachrichtigung über Updates, finden Sie unter [Aktualisieren der Benutzeroberfläche](../../extensibility/updating-the-user-interface.md).  
+ Da die Shell mehrere VSPackages hostet, würde der Shell Leistung unannehmbar beeinträchtigt werden, sofern dies für jedes VSPackage erkundigen Befehlsstatus abrufen erforderlich waren. Stattdessen sollten das VSPackage aktiv Umgebung benachrichtigen, wenn zum Zeitpunkt der Änderung die Benutzeroberfläche ändert. Weitere Informationen zu updatebenachrichtigung, finden Sie unter [Aktualisieren der Benutzeroberfläche](../../extensibility/updating-the-user-interface.md).  
   
-## Fehler bei Status der Benachrichtigung  
- Fehlgeschlagene Ihr VSPackage benachrichtigen die Umgebung eine Zustandsänderung Befehl kann die Benutzeroberfläche in einem inkonsistenten Zustand platzieren. Denken Sie daran, dass die Menübefehle im Menü oder Kontext auf einer Symbolleiste vom Benutzer platziert werden können. Daher ist Aktualisierung der Benutzeroberfläche nur, wenn ein Menü oder im Kontextmenü öffnet nicht ausreichend.  
+## <a name="status-notification-failure"></a>Fehler beim Status-Benachrichtigung  
+ Fehler Ihres VSPackage die Umgebung eine statusänderung Befehl benachrichtigen kann die Benutzeroberfläche in einem inkonsistenten Zustand platzieren. Denken Sie daran, dass die Menübefehle Menü- oder Kontext auf einer Symbolleiste vom Benutzer platziert werden können. Deshalb reicht Aktualisierung der Benutzeroberfläche nur, wenn ein Menü oder im Kontextmenü öffnet nicht.  
   
-## Siehe auch  
- [Wie VSPackages Benutzeroberflächenelemente hinzufügen](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
- [Implementierung](../../extensibility/internals/command-implementation.md)
+## <a name="see-also"></a>Siehe auch  
+ [Wie VSPackages Elemente der Benutzeroberfläche hinzufügen](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
+ [Implementation (Implementierung)](../../extensibility/internals/command-implementation.md)

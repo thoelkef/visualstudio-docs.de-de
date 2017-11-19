@@ -1,64 +1,64 @@
 ---
-title: "IDebugDocumentPosition2::GetRange | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugDocumentPosition2::GetRange"
-helpviewer_keywords: 
-  - "IDebugDocumentPosition2::GetRange"
+title: IDebugDocumentPosition2::GetRange | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugDocumentPosition2::GetRange
+helpviewer_keywords: IDebugDocumentPosition2::GetRange
 ms.assetid: 91a06ee7-253a-4215-be22-04bf57305aa8
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 9c1ea17c8125aea6c962c0562095ea8fba680f8b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugDocumentPosition2::GetRange
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Ruft den Bereich für diese Position des Dokuments ab.  
+# <a name="idebugdocumentposition2getrange"></a>IDebugDocumentPosition2::GetRange
+Ruft den Bereich für dieses Dokumentposition ab.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT GetRange(   
-   TEXT_POSITION* pBegPosition,  
-   TEXT_POSITION* pEndPosition  
+```cpp  
+HRESULT GetRange(   
+   TEXT_POSITION* pBegPosition,  
+   TEXT_POSITION* pEndPosition  
 );  
 ```  
   
-```c#  
-int GetRange(   
-   TEXT_POSITION[] pBegPosition,  
-   TEXT_POSITION[] pEndPosition  
+```csharp  
+int GetRange(   
+   TEXT_POSITION[] pBegPosition,  
+   TEXT_POSITION[] pEndPosition  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `pBegPosition`  
- \[in, out\]  Eine [TEXT\_POSITION](../../../extensibility/debugger/reference/text-position.md) Struktur, die mit der Anfangsposition gefüllt wird.  Legen Sie dieses Argument mit einem NULL\-Wert fest, wenn diese Informationen nicht benötigt werden.  
+ [in, out] Ein [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) -Struktur, die mit der Startposition ausgefüllt ist. Legen Sie dieses Argument auf einen null-Wert, wenn diese Informationen nicht benötigt wird.  
   
  `pEndPosition`  
- \[in, out\]  Eine [TEXT\_POSITION](../../../extensibility/debugger/reference/text-position.md) Struktur, die mit der Endposition gefüllt wird.  Legen Sie dieses Argument mit einem NULL\-Wert fest, wenn diese Informationen nicht benötigt werden.  
+ [in, out] Ein [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) -Struktur, die mit der Endposition ausgefüllt ist. Legen Sie dieses Argument auf einen null-Wert, wenn diese Informationen nicht benötigt wird.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Hinweise  
- Der Bereich, der in einer Dokumentsequenz Zeilenposition für einen Positionshaltepunkt angegeben wird, wird durch das Debugmodul \(DE\) voran für eine Anweisung zu suchen, die tatsächlich Code beiträgt.  Beachten Sie z. B. folgenden Code:  
+## <a name="remarks"></a>Hinweise  
+ In einem Dokumentposition für einen Positionshaltepunkt angegebene Bereich werden vom Debugging-Modul (DE) für eine Anweisung voraus suchen, die tatsächlich Code beiträgt. Beachten Sie z. B. folgenden Code:  
   
 ```  
 Line 5: // comment  
 Line 6: x = 1;  
 ```  
   
- Zeile 5 enthält keinen Code in das Programm, das gedebuggt wird.  Wenn der Debugger den Haltepunkt auf Zeile 5 festgelegt, DE Vorwärts einen bestimmten für die erste Zeile gezeichnet suchen, die Code beiträgt, wird der Debugger einen Bereich angeben, der mögliche zusätzliche Zeilen enthält, würde sich in denen ein Haltepunkt ordnungsgemäß.  DE vorwärts würde dann über die Zeilen suchen, bis er eine Zeile mit einem Haltepunkt gründet annehmen konnte.  
+ Zeile 5 trägt dazu bei keinen Code für das Programm, das gerade gedebuggt wird. Wenn der Debugger, der den Haltepunkt in Zeile 5 festlegt die DE möchte um eine bestimmte Menge für die erste Zeile vorwärts zu suchen, die Code beiträgt, würde der Debugger einen Bereich angeben, der weitere Kandidat Zeilen enthält, in denen ein Haltepunkt ordnungsgemäß eingefügt werden kann. DE würde dann vorwärts durch die Zeilen suchen, bis er eine Zeile gefunden, die einen Haltepunkt akzeptieren konnte.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md)   
- [TEXT\_POSITION](../../../extensibility/debugger/reference/text-position.md)
+ [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)

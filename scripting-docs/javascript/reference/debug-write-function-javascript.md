@@ -1,65 +1,66 @@
 ---
-title: "Debug.write-Funktion (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "Write"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "write-Methode [JavaScript]"
+title: Debug.Write-Funktion (JavaScript) | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: Write
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords: write method [JavaScript]
 ms.assetid: fd1cfbb3-46cb-47cc-896c-a70d457dd413
-caps.latest.revision: 22
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 22
+caps.latest.revision: "22"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 74aad7a01e0dc166f22173cf193b312e1fd4d804
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# Debug.write-Funktion (JavaScript)
-Sendet Zeichenfolgen an den Skriptdebugger.  
+# <a name="debugwrite-function-javascript"></a>Debug.write-Funktion (JavaScript)
+Zeichenfolgen an den Skriptdebugger gesendet.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
   
 Debug.write([str1 [, str2 [, ... [, strN]]]])  
 ```  
   
-## Parameter  
- *str1, str2,... , strN*  
- Optional.  An den Skriptdebugger zu sendende Zeichenfolgen.  
+## <a name="parameters"></a>Parameter  
+ *str1, str2,..., strN*  
+ Dies ist optional. Zeichenfolgen an den Skriptdebugger senden.  
   
-## Hinweise  
- Die `Debug.write`\-Funktion sendet zur Laufzeit Zeichenfolgen zum Direktfenster eines Skriptdebuggers.  Wenn das Skript nicht debuggt wird, hat die `Debug.write`\-Funktion keine Auswirkungen.  
+## <a name="remarks"></a>Hinweise  
+ Die `Debug.write` -Funktion sendet Zeichenfolgen an das Direktfenster ein Script-Debugger zur Laufzeit. Wenn das Skript nicht debuggt wird, die `Debug.write` Funktion hat keine Auswirkungen.  
   
- Die `Debug.write`\-Funktion ist mit der `Debug.writeln`\-Funktion fast identisch.  Der einzige Unterschied ist, dass die `Debug.writeln`\-Funktion nach dem Übermitteln der Zeichenfolgen ein Zeilenumbruchzeichen sendet.  
+ Die `Debug.write` Funktion ist fast identisch mit der `Debug.writeln` Funktion. Der einzige Unterschied besteht darin, die die `Debug.writeln` -Funktion sendet ein Zeilenumbruchzeichen, nachdem die Zeichenfolgen gesendet werden.  
   
-## Beispiel  
- Im Beispiel ist zu sehen, wie mit der `Debug.write`\-Funktion der Wert der Variablen im Direktfenster des Skriptdebuggers gezeigt wird.  
+## <a name="example"></a>Beispiel  
+ Dieses Beispiel verwendet die `Debug.write` Funktion, um den Wert der Variablen im Script Debugger das "Direktfenster" anzuzeigen.  
   
 > [!NOTE]
->  Um dieses Beispiel auszuführen, müssen Sie einen Skriptdebugger installiert haben, und das Skript muss im Debugmodus ausgeführt werden.  
+>  Um dieses Beispiel auszuführen, benötigen Sie einen Skriptdebugger installiert, und das Skript muss im Debugmodus ausgeführt.  
 >   
->  Internet Explorer 8 enthält den [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]\-Debugger.  Wenn Sie eine frühere Version von Internet Explorer verwenden, finden Sie unter [Gewusst wie: Aktivieren und Starten des Skriptdebuggings in Internet Explorer](http://go.microsoft.com/fwlink/?LinkId=133801) weitere Informationen.  
+>  Internet Explorer 8 umfasst die [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Debugger. Wenn Sie eine frühere Version von Internet Explorer verwenden, finden Sie unter [Gewusst wie: Aktivieren und Starten des Skriptdebuggings in Internet Explorer](http://go.microsoft.com/fwlink/?LinkId=133801)weitere Informationen.  
   
-```javascript  
+```JavaScript  
 var counter = 42;  
 Debug.write("The value of counter is " + counter);  
 ```  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  [!INCLUDE[jsv3](../../javascript/reference/includes/jsv3-md.md)]  
   
- **Gilt für**: [Debugobjekt](../../javascript/reference/debug-object-javascript.md)  
+ **Gilt für**: [Debug-Objekt](../../javascript/reference/debug-object-javascript.md)  
   
-## Siehe auch  
- [Debug.writeln\-Funktion](../../javascript/reference/debug-writeln-function-javascript.md)
+## <a name="see-also"></a>Siehe auch  
+ [Debug.writeln-Funktion](../../javascript/reference/debug-writeln-function-javascript.md)

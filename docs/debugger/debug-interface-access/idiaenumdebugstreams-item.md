@@ -1,51 +1,50 @@
 ---
-title: "IDiaEnumDebugStreams::Item | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaEnumDebugStreams::Item-Methode"
+title: 'Idiaenumdebugstreams:: Item | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaEnumDebugStreams::Item method
 ms.assetid: 6b388fe1-eabc-4720-9d59-dc09b0ceaeac
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: fefec4989c649e7b4113f78948c1ce30d42f050f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaEnumDebugStreams::Item
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Ruft einen Stream Debuggen mithilfe eines Indexes oder eines Titels ab.  
+# <a name="idiaenumdebugstreamsitem"></a>IDiaEnumDebugStreams::Item
+Ruft eine Debugstream über einen Index oder Name ab.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT Item (   
-   VARIANT                   index,  
-   IDiaEnumDebugStreamData** stream  
+```C++  
+HRESULT Item (   
+   VARIANT                   index,  
+   IDiaEnumDebugStreamData** stream  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  Index  
- \[in\]  Der Index oder Name des abzurufenden Debuggen Streams.  Wenn eine integrale Variante verwendet wird, muss sie `count`im Bereich von 0 bis \-1 liegen, wobei `count` wurde, aufgezeichnet von der [IDiaEnumDebugStreams::get\_Count](../../debugger/debug-interface-access/idiaenumdebugstreams-get-count.md)\-Methode zurückgegeben wird.  
+ [in] Index oder Name des Datenstroms Debug abgerufen werden sollen. Eine ganze Zahl Variante verwendet wird, muss er im Bereich 0 bis `count`-1 und, in denen `count` wie zurückgegeben wird die [idiaenumdebugstreams:: Get_count](../../debugger/debug-interface-access/idiaenumdebugstreams-get-count.md) Methode.  
   
- stream  
- \[out\]  Gibt ein [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)\-Objekt zurück, das das angegebene darstellt, debuggen Stream.  
+ Stream  
+ [out] Gibt eine [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md) Objekt, das der angegebenen Debugstream darstellt.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Beispiel  
+## <a name="example"></a>Beispiel  
   
-```cpp#  
+```C++  
 IDiaEnumDebugStreamData *GetStreamData(IDiaEnumDebugStreams *pStreamList,  
                                        LONG whichStream)  
 {  
@@ -69,6 +68,6 @@ IDiaEnumDebugStreamData *GetStreamData(IDiaEnumDebugStreams *pStreamList,
 }  
 ```  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)   
  [IDiaEnumDebugStreams](../../debugger/debug-interface-access/idiaenumdebugstreams.md)

@@ -1,42 +1,45 @@
 ---
-title: "Assign-Aktivit&#228;tsdesigner | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
-f1_keywords: 
-  - "System.Activities.Statements.Assign.UI"
+title: "Assign-Aktivitätsdesigner | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
+f1_keywords: System.Activities.Statements.Assign.UI
 ms.assetid: ba3feb3c-f144-47ea-926d-cf752b804153
-caps.latest.revision: 6
-author: "ErikRe"
-ms.author: "erikre"
-manager: "erikre"
-caps.handback.revision: 6
+caps.latest.revision: "6"
+author: ErikRe
+ms.author: erikre
+manager: erikre
+ms.openlocfilehash: 87398c82d0a22c79d852292fef3f86abe63a443d
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# Assign-Aktivit&#228;tsdesigner
-Der **Assign**\-Aktivitätsdesigner wird verwendet, um eine <xref:System.Activities.Statements.Assign>\-Aktivität zu erstellen und zu konfigurieren.  
+# <a name="assign-activity-designer"></a>Assign-Aktivitätsdesigner
+Die **zuweisen** Aktivitäts-Designer dient zum Erstellen und Konfigurieren einer <xref:System.Activities.Statements.Assign> Aktivität.  
   
-## Die Assign\-Aktivität  
- Die <xref:System.Activities.Statements.Assign>\-Aktivität weist einer Variablen oder einem Argument einen Wert zu.  
+## <a name="the-assign-activity"></a>Die Assign-Aktivität  
+ Die <xref:System.Activities.Statements.Assign>-Aktivität weist einer Variablen oder einem Argument einen Wert zu.  
   
-### Verwenden des Assign\-Aktivitätsdesigners  
- Der **Assign**\-Aktivitätsdesigner befindet sich in der Kategorie **Primitives** der **Toolbox**, auf die Sie durch Klicken auf die Registerkarte **Toolbox** zugreifen. \(Sie können stattdessen auch im Menü **Ansicht** die Option **Toolbox** auswählen oder STRG\+ALT\+X drücken.\)  
+### <a name="using-the-assign-activity-designer"></a>Verwenden des Assign-Aktivitätsdesigners  
+ Die **zuweisen** Aktivitäts-Designer finden Sie in der **primitive** Kategorie der **Toolbox**, die erfolgt durch Klicken auf die **Toolbox**Registerkarte (Wählen Sie alternativ **Toolbox** aus der **Ansicht** Menüs oder STRG + ALT + X drücken.)  
   
- Der **Assign**\-Aktivitätsdesigner kann aus der **Toolbox** gezogen und auf der [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)]\-Oberfläche dort abgelegt werden, wo Aktivitäten normalerweise platziert werden, etwa innerhalb einer <xref:System.Activities.Statements.Sequence>.Daraufhin wird eine <xref:System.Activities.Statements.Assign>\-Aktivität mit dem **DisplayName**\-Standardwert Assign erstellt.Der <xref:System.Activities.Activity.DisplayName%2A>\-Wert kann im Header des **Assign**\-Aktivitätsdesigners oder im Feld **DisplayName** des Eigenschaftenrasters bearbeitet werden.  
+ Die **zuweisen** Aktivitäts-Designer gezogen werden kann, aus der **Toolbox** gezogen und auf die [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] -Oberfläche, wo Aktivitäten normalerweise platziert werden, etwa innerhalb einer <xref:System.Activities.Statements.Sequence>. Dies erstellt eine <xref:System.Activities.Statements.Assign> -Aktivität mit dem standardmäßigen **DisplayName** von zuweisen. Die <xref:System.Activities.Activity.DisplayName%2A> kann im Header des bearbeitet werden die **zuweisen** Aktivitäts-Designer oder in der **DisplayName** Feld des Eigenschaftenrasters.  
   
-### Die Assign\-Eigenschaften  
- In der folgenden Tabelle werden die <xref:System.Activities.Statements.Assign>\-Eigenschaften aufgeführt, und es wird beschrieben, wie sie im Designer verwendet werden.Diese Eigenschaften können im Eigenschaftenraster bearbeitet werden, einige davon können auch auf der [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)]\-Oberfläche bearbeitet werden.  
+### <a name="the-assign-properties"></a>Die Assign-Eigenschaften  
+ In der folgenden Tabelle werden die <xref:System.Activities.Statements.Assign>-Eigenschaften aufgeführt, und es wird beschrieben, wie sie im Designer verwendet werden. Diese Eigenschaften können im Eigenschaftenraster bearbeitet werden, einige davon können auch auf der [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)]-Oberfläche bearbeitet werden.  
   
 |Eigenschaftenname|Erforderlich|Verwendung|  
-|-----------------------|------------------|----------------|  
-|<xref:System.Activities.Activity.DisplayName%2A>|False|Gibt den benutzerfreundlichen Namen der <xref:System.Activities.Statements.Assign>\-Aktivität an.Der Standardwert lautet Assign.Obwohl der <xref:System.Activities.Activity.DisplayName%2A>\-Wert nicht zwingend erforderlich ist, wird empfohlen, einen Anzeigenamen zu verwenden.|  
-|<xref:System.Activities.Statements.Assign.To%2A>|True|Die Variable oder das Argument, dem der <xref:System.Activities.Statements.Assign.Value%2A> zugewiesen wird.Dies muss ein gültiger Visual Basic\-Bezeichner sein.Um die Eigenschaft festzulegen, geben Sie einen Visual Basic\-Ausdruck im Feld **To** im **Assign**\-Aktivitätsdesigner oder im Eigenschaftenraster ein.|  
-|<xref:System.Activities.Statements.Assign.Value%2A>|True|Der der Variablen zugewiesene Wert.Um die <xref:System.Activities.Statements.Assign.Value%2A>\-Eigenschaft festzulegen, geben Sie einen Visual Basic\-Ausdruck im Feld **Wert** im **Assign**\-Aktivitätsdesigner oder im Eigenschaftenraster ein.|  
+|-------------------|--------------|-----------|  
+|<xref:System.Activities.Activity.DisplayName%2A>|False|Der Anzeigename der <xref:System.Activities.Statements.Assign>-Aktivität. Der Standardwert lautet Assign. Obwohl der <xref:System.Activities.Activity.DisplayName%2A>-Wert nicht zwingend erforderlich ist, wird empfohlen, einen Anzeigenamen zu verwenden.|  
+|<xref:System.Activities.Statements.Assign.To%2A>|True|Die Variable oder das Argument, dem der <xref:System.Activities.Statements.Assign.Value%2A> zugewiesen wird. Dies muss ein gültiger Visual Basic-Bezeichner sein. Geben Sie zum Festlegen der Eigenschaft einen Visual Basic-Ausdruck in der **auf** Feld der **zuweisen** -Aktivitätsdesigner oder im Eigenschaftenraster.|  
+|<xref:System.Activities.Statements.Assign.Value%2A>|True|Der der Variablen zugewiesene Wert. Festlegen der <xref:System.Activities.Statements.Assign.Value%2A>, geben Sie einen Visual Basic-Ausdruck in der **Wert** Feld der **zuweisen** -Aktivitätsdesigner oder im Eigenschaftenraster.|  
   
-## Siehe auch  
- [Primitive](../workflow-designer/primitives-activity-designers.md)   
- [Delay](../workflow-designer/delay-activity-designer.md)   
+## <a name="see-also"></a>Siehe auch  
+ [Primitive Typen](../workflow-designer/primitives-activity-designers.md)   
+ [Verzögerung](../workflow-designer/delay-activity-designer.md)   
  [InvokeMethod](../workflow-designer/invokemethod-activity-designer.md)   
  [WriteLine](../workflow-designer/writeline-activity-designer.md)

@@ -1,46 +1,46 @@
 ---
-title: "IDebugPortSupplier3::CanPersistPorts | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugPortSupplier3::CanPersistPorts"
-helpviewer_keywords: 
-  - "IDebugPortSupplier3::CanPersistPorts"
+title: IDebugPortSupplier3::CanPersistPorts | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugPortSupplier3::CanPersistPorts
+helpviewer_keywords: IDebugPortSupplier3::CanPersistPorts
 ms.assetid: 4127760c-e602-4e86-9232-457e382a52c7
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 95e62f283d2ea0411162fb0406c712f0d17a1183
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugPortSupplier3::CanPersistPorts
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Diese Methode bestimmt, ob der Port lieferant Ports \(indem sie auf einen Datenträger geschrieben\) zwischen den Aufrufen des Debuggers beibehalten kann.  
+# <a name="idebugportsupplier3canpersistports"></a>IDebugPortSupplier3::CanPersistPorts
+Diese Methode bestimmt, ob der Port Lieferant Ports beibehalten werden kann (indem sie auf den Datenträger geschrieben wird) zwischen den Aufrufen des Debuggers.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```cpp  
-HRESULT CanPersistPorts();  
+HRESULT CanPersistPorts();  
 ```  
   
-```c#  
-int CanPersistPorts();  
+```csharp  
+int CanPersistPorts();  
 ```  
   
-#### Parameter  
- Keine.  
+#### <a name="parameters"></a>Parameter  
+ Keine  
   
-## Rückgabewert  
- `S_OK` beibehalten werden können, wenn Ports oder `S_FALSE` anzugeben, dass Ports nicht beibehalten werden können.  
+## <a name="return-value"></a>Rückgabewert  
+ `S_OK`Wenn Ports beibehalten werden können, oder `S_FALSE` , um anzugeben, dass die Ports nicht dauerhaft gespeichert werden können.  
   
-## Hinweise  
- Wenn der Anschluss lieferant Ports beibehalten kann, muss er so vorgehen, wenn er erneut zu laden und sie anschließend zerstört wird, wenn er noch einmal instanziiert wird.  
+## <a name="remarks"></a>Hinweise  
+ Wenn der Lieferant Port Ports beibehalten werden kann, sollte er dies tun, wenn es zerstört wird und Laden sie dann erneut, wenn es noch einmal instanziiert wird.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDebugPortSupplier3](../../../extensibility/debugger/reference/idebugportsupplier3.md)

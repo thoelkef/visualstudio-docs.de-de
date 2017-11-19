@@ -1,12 +1,10 @@
 ---
-title: 'Walkthrough: Retrieving Cached Data from a Workbook on a Server | Microsoft Docs'
+title: 'Exemplarische Vorgehensweise: Abrufen von zwischengespeicherten Daten aus einer Arbeitsmappe auf einem Server | Microsoft Docs'
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -19,296 +17,299 @@ helpviewer_keywords:
 - data [Office development in Visual Studio], accessing on server
 - documents [Office development in Visual Studio], server-side data access
 ms.assetid: ef6d61e5-a498-4b38-8e2e-2e80706d854b
-caps.latest.revision: 35
-author: kempb
-ms.author: kempb
+caps.latest.revision: "35"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: ec1e9c72991bdfded96cb53907f5dd3d4fb87dca
-ms.contentlocale: de-de
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: eb745f97b2ab1499206b94cfcd03c2255c7bb3b9
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="walkthrough-retrieving-cached-data-from-a-workbook-on-a-server"></a>Walkthrough: Retrieving Cached Data from a Workbook on a Server
-  This walkthrough demonstrates how to retrieve data from a dataset that is cached in a Microsoft Office Excel workbook without starting Excel by using the <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> class.  
+# <a name="walkthrough-retrieving-cached-data-from-a-workbook-on-a-server"></a>Exemplarische Vorgehensweise: Abrufen zwischengespeicherter Daten aus einer Arbeitsmappe auf einem Server
+  Diese exemplarische Vorgehensweise veranschaulicht, wie Daten aus einem Dataset abzurufen, die in einer Microsoft Office Excel-Arbeitsmappe zwischengespeichert ist, ohne Excel zu starten, mit der <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> Klasse.  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
   
- This walkthrough illustrates the following tasks:  
+ In dieser exemplarischen Vorgehensweise werden die folgenden Aufgaben veranschaulicht:  
   
--   Defining a dataset that contains data from the AdventureWorksLT database.  
+-   Definieren eines Datasets, die Daten aus der AdventureWorksLT-Datenbank enthält.  
   
--   Creating instances of the dataset in an Excel workbook project and a console application project.  
+-   Erstellen von Instanzen des Datasets in einem Excel-Arbeitsmappenprojekt und ein Konsolenanwendungsprojekt.  
   
--   Creating a <xref:Microsoft.Office.Tools.Excel.ListObject> that is bound to the dataset in the workbook, and populating the <xref:Microsoft.Office.Tools.Excel.ListObject> with data when the workbook is opened.  
+-   Erstellen einer <xref:Microsoft.Office.Tools.Excel.ListObject> ist gebunden an das Dataset in der Arbeitsmappe und Auffüllen der <xref:Microsoft.Office.Tools.Excel.ListObject> mit Daten, wenn die Arbeitsmappe geöffnet wird.  
   
--   Adding the dataset in the workbook to the data cache.  
+-   Hinzufügen des Datasets in der Arbeitsmappe für den Datencache.  
   
--   Reading data from the cached dataset into the dataset in the console application, without starting Excel.  
+-   Lesen von Daten aus das zwischengespeicherte Dataset in das Dataset in der Konsolenanwendung ohne Excel zu starten.  
   
- Although this walkthrough assumes that you are running the code on your development computer, the code demonstrated by this walkthrough can be used on a server that does not have Excel installed.  
+ Obwohl in dieser exemplarischen Vorgehensweise wird davon ausgegangen, dass Sie den Code auf dem Entwicklungscomputer ausgeführt werden, kann der Code in dieser exemplarischen Vorgehensweise veranschaulichten auf einem Server verwendet werden, die über keinen Excel installiert.  
   
 > [!NOTE]  
->  Your computer might show different names or locations for some of the Visual Studio user interface elements in the following instructions. The Visual Studio edition that you have and the settings that you use determine these elements. For more information, see [Personalize the Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md).  
+>  Auf Ihrem Computer werden möglicherweise andere Namen oder Speicherorte für die Benutzeroberflächenelemente von Visual Studio angezeigt als die in den folgenden Anweisungen aufgeführten. Diese Elemente sind von der jeweiligen Visual Studio-Version und den verwendeten Einstellungen abhängig. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../ide/personalizing-the-visual-studio-ide.md).  
   
-## <a name="prerequisites"></a>Prerequisites  
- You need the following components to complete this walkthrough:  
+## <a name="prerequisites"></a>Erforderliche Komponenten  
+ Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
   
--   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] or [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].  
+-   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] oder [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].  
   
--   Access to a running instance of Microsoft SQL Server or Microsoft SQL Server Express that has the AdventureWorksLT sample database attached to it. You can download the AdventureWorksLT database from the [CodePlex Web site](http://go.microsoft.com/fwlink/?linkid=87843). For more information about attaching a database, see the following topics:  
+-   Zugriff auf eine ausgeführte Instanz von Microsoft SQL Server oder Microsoft SQL Server Express, die AdventureWorksLT-Beispieldatenbank angefügt ist. Sie können die AdventureWorksLT-datenbankvon der [CodePlex-Website](http://go.microsoft.com/fwlink/?linkid=87843). Weitere Informationen zum Anhängen von Datenbanken finden Sie in den folgenden Themen:  
   
-    -   To attach a database by using SQL Server Management Studio or SQL Server Management Studio Express, see [How to: Attach a Database (SQL Server Management Studio)](http://msdn.microsoft.com/en-us/b4efb0ae-cfe6-4d81-a4b4-6e4916885caa).  
+    -   Informationen zum Anfügen einer Datenbank mit SQL Server Management Studio oder SQL Server Management Studio Express finden Sie unter [Gewusst wie: Anfügen einer Datenbank (SQL Server Management Studio)](http://msdn.microsoft.com/en-us/b4efb0ae-cfe6-4d81-a4b4-6e4916885caa).  
   
-    -   To attach a database by using the command line, see [How to: Attach a Database File to SQL Server Express](http://msdn.microsoft.com/en-us/0f8e42b5-7a8c-4c30-8c98-7d2bdc8dcc68).  
+    -   Informationen zum Anfügen einer Datenbank über die Befehlszeile finden Sie unter [Gewusst wie: Anfügen einer Datenbankdatei an SQL Server Express](http://msdn.microsoft.com/en-us/0f8e42b5-7a8c-4c30-8c98-7d2bdc8dcc68).  
   
-## <a name="creating-a-class-library-project-that-defines-a-dataset"></a>Creating a Class Library Project That Defines a Dataset  
- To use the same dataset in an Excel workbook project and a console application, you must define the dataset in a separate assembly that is referenced by both of these projects. For this walkthrough, define the dataset in a class library project.  
+## <a name="creating-a-class-library-project-that-defines-a-dataset"></a>Erstellen ein Klassenbibliotheksprojekt, die ein Dataset definiert  
+ Um das gleiche Dataset in einem Excel-Arbeitsmappenprojekt und einer Konsolenanwendung zu verwenden, müssen Sie das Dataset in einer separaten Assembly definieren, die beide Projekte verwiesen wird. In dieser exemplarischen Vorgehensweise definieren Sie das Dataset in einem Klassenbibliotheksprojekt aus.  
   
-#### <a name="to-create-the-class-library-project"></a>To create the class library project  
+#### <a name="to-create-the-class-library-project"></a>Um das Klassenbibliotheksprojekt zu erstellen.  
   
-1.  Start [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
+1.  Starten Sie [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
-2.  On the **File** menu, point to **New**, and then click **Project**.  
+2.  Zeigen Sie im Menü **Datei** auf **Neu**, und klicken Sie dann auf **Projekt**.  
   
-3.  In the templates pane, expand **Visual C#** or **Visual Basic**, and then click **Windows**.  
+3.  Erweitern Sie im Vorlagenbereich **Visual C#-** oder **Visual Basic**, und klicken Sie dann auf **Windows**.  
   
-4.  In the list of project templates, select **Class Library**.  
+4.  Wählen Sie in der Liste der Projektvorlagen **-Klassenbibliothek**.  
   
-5.  In the **Name** box, type **AdventureWorksDataSet**.  
+5.  In der **Namen** geben **AdventureWorksDataSet**.  
   
-6.  Click **Browse**, navigate to your %UserProfile%\My Documents (for Windows XP and earlier) or %UserProfile%\Documents (for Windows Vista) folder, and then click **Select Folder**.  
+6.  Klicken Sie auf **Durchsuchen**, navigieren Sie zu Ihrer %UserProfile%\My Dokumente (für Windows XP und ältere Versionen) bzw. den Ordner %UserProfile%\Documents (für Windows Vista), und klicken Sie dann auf **Ordner auswählen**.  
   
-7.  In the **New Project** dialog box, ensure that the **Create directory for solution** check box is not selected.  
+7.  In der **neues Projekt** Dialogfeld sicher, dass die **Projektmappenverzeichnis erstellen** das Kontrollkästchen nicht aktiviert ist.  
   
-8.  Click **OK**.  
+8.  Klicken Sie auf **OK**.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] adds the **AdventureWorksDataSet** project to **Solution Explorer** and opens the **Class1.cs** or **Class1.vb** code file.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Fügt der **AdventureWorksDataSet** Projekt **Projektmappen-Explorer** und öffnet die **"Class1.cs"** oder **Class1.vb** -Codedatei.  
   
-9. In **Solution Explorer**, right-click **Class1.cs** or **Class1.vb**, and then click **Delete**. You do not need this file for this walkthrough.  
+9. In **Projektmappen-Explorer**, mit der rechten Maustaste **"Class1.cs"** oder **Class1.vb**, und klicken Sie dann auf **löschen**. Sie können diese Datei ist nicht für diese exemplarische Vorgehensweise erforderlich.  
   
-## <a name="defining-a-dataset-in-the-class-library-project"></a>Defining a Dataset in the Class Library Project  
- Define a typed dataset that contains data from the AdventureWorksLT database for SQL Server 2005. Later in this walkthrough, you will reference this dataset from an Excel workbook project and a console application project.  
+## <a name="defining-a-dataset-in-the-class-library-project"></a>Definieren eines Datasets in das Klassenbibliotheksprojekt  
+ Definieren Sie ein typisiertes Dataset, das Daten aus der AdventureWorksLT-Datenbank für SQL Server 2005 enthält. Weiter unten in dieser exemplarischen Vorgehensweise werden Sie dieses Dataset aus einem Excel-Arbeitsmappenprojekt und ein Konsolenanwendungsprojekt verweisen.  
   
- The dataset is a *typed dataset* that represents the data in the Product table of the AdventureWorksLT database. For more information about typed datasets, see [Dataset tools in Visual Studio](/visualstudio/data-tools/dataset-tools-in-visual-studio).  
+ Das Dataset ist ein *typisiertes Dataset* , die die Daten in der Product-Tabelle der AdventureWorksLT-Datenbank darstellt. Weitere Informationen zu typisierten "Datasets", finden Sie unter [Dataset-Tools in Visual Studio](/visualstudio/data-tools/dataset-tools-in-visual-studio).  
   
-#### <a name="to-define-a-typed-dataset-in-the-class-library-project"></a>To define a typed dataset in the class library project  
+#### <a name="to-define-a-typed-dataset-in-the-class-library-project"></a>So definieren Sie ein typisiertes Dataset in das Klassenbibliotheksprojekt  
   
-1.  In **Solution Explorer**, click the **AdventureWorksDataSet** project.  
+1.  In **Projektmappen-Explorer**, klicken Sie auf die **AdventureWorksDataSet** Projekt.  
   
-2.  If the **Data Sources** window is not visible, display it by, on the menu bar, choosing **View**, **Other Windows**, **Data Sources**.  
+2.  Wenn das Fenster **Datenquellen** nicht sichtbar ist, zeigen Sie es an, indem Sie in der Menüleiste **Ansicht**, **Weitere Fenster**und **Datenquellen**wählen.  
   
-3.  Choose **Add New Data Source** to start the **Data Source Configuration Wizard**.  
+3.  Wählen Sie **Neue Datenquelle hinzufügen** , um den **Assistenten zum Konfigurieren von Datenquellen**zu starten.  
   
-4.  Click **Database**, and then click **Next**.  
+4.  Klicken Sie auf **Datenbank**, und klicken Sie dann auf **Weiter**.  
   
-5.  If you have an existing connection to the AdventureWorksLT database, choose this connection and click **Next**.  
+5.  Wenn Sie eine vorhandene Verbindung zur Datenbank AdventureWorksLT haben, wählen Sie diese Verbindung, und klicken Sie auf **Weiter**.  
   
-     Otherwise, click **New Connection**, and use the **Add Connection** dialog box to create the new connection. For more information, see [Add new connections](../data-tools/add-new-connections.md).  
+     Klicken Sie andernfalls auf **Neue Verbindung**, und erstellen Sie die neue Verbindung im Dialogfeld **Verbindung hinzufügen** . Weitere Informationen finden Sie unter [neue Verbindungen hinzufügen](../data-tools/add-new-connections.md).  
   
-6.  In the **Save the Connection String to the Application Configuration File** page, click **Next**.  
+6.  Klicken Sie auf der Seite **Verbindungszeichenfolge in der Anwendungskonfigurationsdatei speichern** auf **Weiter**.  
   
-7.  In the **Choose Your Database Objects** page, expand **Tables** and select **Product (SalesLT)**.  
+7.  In der **Datenbankobjekte auswählen** Seite **Tabellen** , und wählen Sie **Product (SalesLT)**.  
   
-8.  Click **Finish**.  
+8.  Klicken Sie auf **Fertig stellen**.  
   
-     The AdventureWorksLTDataSet.xsd file is added to the **AdventureWorksDataSet** project. This file defines the following items:  
+     Die Datei "AdventureWorksLTDataSet.xsd" wird hinzugefügt, um die **AdventureWorksDataSet** Projekt. In dieser Datei sind die folgenden Elemente definiert:  
   
-    -   A typed dataset named `AdventureWorksLTDataSet`. This dataset represents the contents of the Product table in the AdventureWorksLT database.  
+    -   Ein typisiertes Dataset namens `AdventureWorksLTDataSet`. Dieses Dataset stellt den Inhalt der Product-Tabelle in der AdventureWorksLT-Datenbank dar.  
   
-    -   A TableAdapter named `ProductTableAdapter`. This TableAdapter can be used to read and write data in the `AdventureWorksLTDataSet`. For more information, see [TableAdapter Overview](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview).  
+    -   Einen TableAdapter namens `ProductTableAdapter`. Diese TableAdapter dienen zum Lesen und Schreiben von Daten in der `AdventureWorksLTDataSet`. Weitere Informationen finden Sie unter [TableAdapter Overview](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview).  
   
-     You will use both of these objects later in this walkthrough.  
+     Zu einem späteren Zeitpunkt in dieser exemplarischen Vorgehensweise verwenden Sie beide Objekte.  
   
-9. In **Solution Explorer**, right-click **AdventureWorksDataSet** and click **Build**.  
+9. In **Projektmappen-Explorer**, mit der rechten Maustaste **AdventureWorksDataSet** , und klicken Sie auf **erstellen**.  
   
-     Verify that the project builds without errors.  
+     Vergewissern Sie sich, dass das Projekt ohne Fehler erstellt wurde.  
   
-## <a name="creating-an-excel-workbook-project"></a>Creating an Excel Workbook Project  
- Create an Excel workbook project for the interface to the data. Later in this walkthrough, you will create a <xref:Microsoft.Office.Tools.Excel.ListObject> that displays the data, and you will add an instance of the dataset to the data cache in the workbook.  
+## <a name="creating-an-excel-workbook-project"></a>Erstellen eines Excel-Arbeitsmappenprojekts  
+ Erstellen Sie ein Excel-Arbeitsmappenprojekt für die Schnittstelle, um die Daten an. Später in dieser exemplarischen Vorgehensweise erstellen Sie eine <xref:Microsoft.Office.Tools.Excel.ListObject> , die die Daten anzeigt, und fügen Sie eine Instanz des Datasets für den Datencache in der Arbeitsmappe.  
   
-#### <a name="to-create-the-excel-workbook-project"></a>To create the Excel workbook project  
+#### <a name="to-create-the-excel-workbook-project"></a>So erstellen die Excel-Arbeitsmappenprojekts  
   
-1.  In **Solution Explorer**, right-click the **AdventureWorksDataSet** solution, point to **Add**, and then click **New Project**.  
+1.  In **Projektmappen-Explorer**, mit der rechten Maustaste die **AdventureWorksDataSet** Projektmappe, zeigen Sie auf **hinzufügen**, und klicken Sie dann auf **neues Projekt**.  
   
-2.  In the templates pane, expand **Visual C#** or **Visual Basic**, and then expand **Office/SharePoint**.  
+2.  Erweitern Sie im Vorlagenbereich **Visual C#** oder **Visual Basic**und dann **Office/SharePoint**.  
   
-3.  Under the expanded **Office/SharePoint** node, select the **Office Add-ins** node.  
+3.  Wählen Sie unter dem erweiterten Knoten **Office/SharePoint** den Knoten **Office-Add-Ins** aus.  
   
-4.  In the list of project templates, select the **Excel 2010 Workbook** or **Excel 2013 Workbook** project.  
+4.  Wählen Sie in der Liste der Projektvorlagen das Projekt **Excel 2010-Arbeitsmappe** oder **Excel 2013-Arbeitsmappe** aus.  
   
-5.  In the **Name** box, type **AdventureWorksReport**. Do not modify the location.  
+5.  In der **Namen** geben **AdventureWorksReport**. Ändern Sie den Speicherort nicht.  
   
-6.  Click **OK**.  
+6.  Klicken Sie auf **OK**.  
   
-     The **Visual Studio Tools for Office Project Wizard** opens.  
+     Der **Projekt-Assistent aus Visual Studio Tools for Office** wird geöffnet.  
   
-7.  Ensure that **Create a new document** is selected, and click **OK**.  
+7.  Sicherstellen, dass **erstellen Sie ein neues Dokument** ausgewählt ist, und klicken Sie auf **OK**.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] opens the **AdventureWorksReport** workbook in the designer and adds the **AdventureWorksReport** project to **Solution Explorer**.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Öffnet die **AdventureWorksReport** Arbeitsmappe im Designer und fügt die **AdventureWorksReport** Projekt **Projektmappen-Explorer**.  
   
-## <a name="adding-the-dataset-to-data-sources-in-the-excel-workbook-project"></a>Adding the Dataset to Data Sources in the Excel Workbook Project  
- Before you can display the dataset in the Excel workbook, you must first add the dataset to data sources in the Excel workbook project.  
+## <a name="adding-the-dataset-to-data-sources-in-the-excel-workbook-project"></a>Hinzufügen des Datasets zu Datenquellen in der Excel-Arbeitsmappenprojekts  
+ Bevor Sie das Dataset in der Excel-Arbeitsmappe angezeigt werden können, müssen Sie zuerst das Dataset mit Datenquellen in der Excel-Arbeitsmappenprojekt hinzufügen.  
   
-#### <a name="to-add-the-dataset-to-the-data-sources-in-the-excel-workbook-project"></a>To add the dataset to the data sources in the Excel workbook project  
+#### <a name="to-add-the-dataset-to-the-data-sources-in-the-excel-workbook-project"></a>So fügen Sie das Dataset mit den Datenquellen in der Excel-Arbeitsmappenprojekt hinzu  
   
-1.  In **Solution Explorer**, double-click **Sheet1.cs** or **Sheet1.vb** under the **AdventureWorksReport** project.  
+1.  In **Projektmappen-Explorer**, doppelklicken Sie auf **Sheet1.cs** oder **Sheet1.vb** unter der **AdventureWorksReport** Projekt.  
   
-     The workbook opens in the designer.  
+     Die Arbeitsmappe im Designer geöffnet.  
   
-2.  On the **Data** menu, click **Add New Data Source**.  
+2.  Klicken Sie im Menü **Daten** auf **Neue Datenquelle hinzufügen**.  
   
-     The **Data Source Configuration Wizard** opens.  
+     Die **Data Source Configuration Wizard** wird geöffnet.  
   
-3.  Click **Object**, and then click **Next**.  
+3.  Klicken Sie auf **Objekt**, und klicken Sie dann auf **Weiter**.  
   
-4.  In the **Select the Object You Wish to Bind** to page, click **Add Reference**.  
+4.  In der **auswählen, das Objekt zu bindende** Seite, klicken Sie auf **Verweis hinzufügen**.  
   
-5.  On the **Projects** tab, click **AdventureWorksDataSet** and then click **OK**.  
+5.  Auf der **Projekte** auf **AdventureWorksDataSet** , und klicken Sie dann auf **OK**.  
   
-6.  Under the **AdventureWorksDataSet** namespace of the **AdventureWorksDataSet** assembly, click **AdventureWorksLTDataSet** and then click **Finish**.  
+6.  Unter den **AdventureWorksDataSet** Namespace, der die **AdventureWorksDataSet** Assembly, klicken Sie auf **AdventureWorksLTDataSet** , und klicken Sie dann auf **Fertig stellen** .  
   
-     The **Data Sources** window opens, and **AdventureWorksLTDataSet** is added to the list of data sources.  
+     Die **Datenquellen** Fenster geöffnet ist, und **AdventureWorksLTDataSet** wird zur Liste der Datenquellen hinzugefügt.  
   
-## <a name="creating-a-listobject-that-is-bound-to-an-instance-of-the-dataset"></a>Creating a ListObject That Is Bound to an Instance of the Dataset  
- To display the dataset in the workbook, create a <xref:Microsoft.Office.Tools.Excel.ListObject> that is bound to an instance of the dataset. For more information about binding controls to data, see [Binding Data to Controls in Office Solutions](../vsto/binding-data-to-controls-in-office-solutions.md).  
+## <a name="creating-a-listobject-that-is-bound-to-an-instance-of-the-dataset"></a>Erstellen ein ListObject, das mit einer Instanz des Datasets gebunden ist  
+ Um das Dataset in der Arbeitsmappe anzuzeigen, erstellen eine <xref:Microsoft.Office.Tools.Excel.ListObject> , die mit einer Instanz des Datasets gebunden ist. Weitere Informationen zum Binden von Steuerelementen an Daten finden Sie unter [Binding Data to Controls in Office Solutions](../vsto/binding-data-to-controls-in-office-solutions.md).  
   
-#### <a name="to-create-a-listobject-that-is-bound-to-an-instance-of-the-dataset"></a>To create a ListObject that is bound to an instance of the dataset  
+#### <a name="to-create-a-listobject-that-is-bound-to-an-instance-of-the-dataset"></a>Um ein ListObject erstellen, die an eine Instanz des Datasets gebunden ist  
   
-1.  In the **Data Sources** window, expand the **AdventureWorksLTDataSet** node under **AdventureWorksDataSet**.  
+1.  In der **Datenquellen** Fenster, erweitern Sie die **AdventureWorksLTDataSet** Knoten unter **AdventureWorksDataSet**.  
   
-2.  Select the **Product** node, click the drop-down arrow that appears, and select **ListObject** in the drop-down list.  
+2.  Wählen Sie die **Produkt** Knoten, klicken Sie auf den Dropdown-Pfeil, der angezeigt wird, und wählen Sie **ListObject** in der Dropdown-Liste.  
   
-     If the drop-down arrow does not appear, confirm that the workbook is open in the designer.  
+     Wenn der Dropdownpfeil nicht angezeigt wird, vergewissern Sie sich, dass die Arbeitsmappe im Designer geöffnet ist.  
   
-3.  Drag the **Product** table to cell A1.  
+3.  Ziehen Sie die **Produkt** Tabelle in die Zelle A1.  
   
-     A <xref:Microsoft.Office.Tools.Excel.ListObject> control named `productListObject` is created on the worksheet, starting in cell A1. At the same time, a dataset object named `adventureWorksLTDataSet` and a <xref:System.Windows.Forms.BindingSource> named `productBindingSource` are added to the project. The <xref:Microsoft.Office.Tools.Excel.ListObject> is bound to the <xref:System.Windows.Forms.BindingSource>, which in turn is bound to the dataset object.  
+     Ein <xref:Microsoft.Office.Tools.Excel.ListObject> Steuerelement namens `productListObject` wird erstellt, auf dem Arbeitsblatt, in die Zelle A1 ab. Gleichzeitig, ein Dataset-Objekt, das mit dem Namen `adventureWorksLTDataSet` und ein <xref:System.Windows.Forms.BindingSource> mit dem Namen `productBindingSource` werden dem Projekt hinzugefügt. Das <xref:Microsoft.Office.Tools.Excel.ListObject> -Steuerelement ist an das <xref:System.Windows.Forms.BindingSource>-Objekt gebunden, das wiederum an das Datasetobjekt gebunden ist.  
   
-## <a name="adding-the-dataset-to-the-data-cache"></a>Adding the Dataset to the Data Cache  
- To enable code outside the Excel workbook project to access the dataset in the workbook, you must add the dataset to the data cache. For more information about the data cache, see [Cached Data in Document-Level Customizations](../vsto/cached-data-in-document-level-customizations.md) and [Caching Data](../vsto/caching-data.md).  
+## <a name="adding-the-dataset-to-the-data-cache"></a>Hinzufügen des Datasets für den Datencache  
+ Um Code außerhalb der Excel-Arbeitsmappenprojekt, den Zugriff auf das Dataset in der Arbeitsmappe zu aktivieren, müssen Sie das Dataset für den Datencache hinzufügen. Weitere Informationen zu den Datencache, finden Sie unter [zwischengespeicherte Daten in Anpassungen auf Dokumentebene](../vsto/cached-data-in-document-level-customizations.md) und [Zwischenspeichern von Daten](../vsto/caching-data.md).  
   
-#### <a name="to-add-the-dataset-to-the-data-cache"></a>To add the dataset to the data cache  
+#### <a name="to-add-the-dataset-to-the-data-cache"></a>So fügen Sie das Dataset für den Datencache hinzu  
   
-1.  In the designer, click **adventureWorksLTDataSet**.  
+1.  Klicken Sie im Designer auf **AdventureWorksLTDataSet**.  
   
-2.  In the **Properties** window, set the **Modifiers** property to **Public**.  
+2.  In der **Eigenschaften** legen die **Modifizierer** Eigenschaft **öffentlichen**.  
   
-3.  Set the **CacheInDocument** property to **True**.  
+3.  Legen Sie die **CacheInDocument** Eigenschaft **"true"**.  
   
-## <a name="initializing-the-dataset-in-the-workbook"></a>Initializing the Dataset in the Workbook  
- Before you can retrieve the data from the cached dataset by using the console application, you must first populate the cached dataset with data.  
+## <a name="initializing-the-dataset-in-the-workbook"></a>Initialisieren das Dataset in der Arbeitsmappe  
+ Bevor Sie die Daten aus das zwischengespeicherte Dataset mithilfe der Konsolenanwendung abrufen können, müssen Sie zuerst das zwischengespeicherte Dataset mit Daten auffüllen.  
   
-#### <a name="to-initialize-the-dataset-in-the-workbook"></a>To initialize the dataset in the workbook  
+#### <a name="to-initialize-the-dataset-in-the-workbook"></a>Um das Dataset in der Arbeitsmappe zu initialisieren.  
   
-1.  In **Solution Explorer**, right-click the **Sheet1.cs** or **Sheet1.vb** file and click **View Code**.  
+1.  In **Projektmappen-Explorer**, mit der rechten Maustaste die **Sheet1.cs** oder **Sheet1.vb** Datei, und klicken Sie auf **Code anzeigen**.  
   
-2.  Replace the `Sheet1_Startup` event handler with the following code. This code uses an instance of the `ProductTableAdapter` class that is defined in the **AdventureWorksDataSet** project to fill the cached dataset with data, if it is currently empty.  
+2.  Ersetzen Sie den `Sheet1_Startup`-Ereignishandler durch den folgenden Code. Dieser Code verwendet eine Instanz von der `ProductTableAdapter` in definierten Klasse der **AdventureWorksDataSet** Projekt, um das zwischengespeicherte Dataset mit Daten aufgefüllt werden, wenn sie derzeit leer ist.  
   
-     [!code-csharp[Trin_CachedDataWalkthroughs#8](../vsto/codesnippet/CSharp/AdventureWorksDataSet/AdventureWorksReport/Sheet1.cs#8)]  [!code-vb[Trin_CachedDataWalkthroughs#8](../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/AdventureWorksReport/Sheet1.vb#8)]  
+     [!code-csharp[Trin_CachedDataWalkthroughs#8](../vsto/codesnippet/CSharp/AdventureWorksDataSet/AdventureWorksReport/Sheet1.cs#8)]
+     [!code-vb[Trin_CachedDataWalkthroughs#8](../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/AdventureWorksReport/Sheet1.vb#8)]  
   
 ## <a name="checkpoint"></a>Checkpoint  
- Build and run the Excel workbook project to ensure that it compiles and runs without errors. This operation also fills the cached dataset and saves the data in the workbook.  
+ Erstellen Sie und führen Sie die Excel-Arbeitsmappenprojekt, um sicherzustellen, dass die Kompilierung und ohne Fehler ausgeführt wird. Dieser Vorgang wird auch das zwischengespeicherte Dataset füllt und speichert die Daten in der Arbeitsmappe.  
   
-#### <a name="to-build-and-run-the-project"></a>To build and run the project  
+#### <a name="to-build-and-run-the-project"></a>So erstellen Sie das Projekt und führen es aus  
   
-1.  In **Solution Explorer**, right-click the **AdventureWorksReport** project, choose **Debug**, and then click **Start new instance**.  
+1.  In **Projektmappen-Explorer**, mit der rechten Maustaste die **AdventureWorksReport** Projekts **Debuggen**, und klicken Sie dann auf **neue Instanz starten**.  
   
-     The project is built, and the workbook opens in Excel. Verify the following:  
+     Das Projekt wird erstellt, und die Arbeitsmappe in Excel geöffnet. Überprüfen Sie Folgendes:  
   
-    -   The <xref:Microsoft.Office.Tools.Excel.ListObject> fills with data.  
+    -   Die <xref:Microsoft.Office.Tools.Excel.ListObject> mit Daten füllt.  
   
-    -   The value in the **ListPrice** column for the first row of the <xref:Microsoft.Office.Tools.Excel.ListObject> is 1431.5. Later in this walkthrough, you will use a console application to modify the values in the **ListPrice** column.  
+    -   Der Wert in der **ListPrice** für die erste Zeile der Spalte die <xref:Microsoft.Office.Tools.Excel.ListObject> 1431.5 ist. Weiter unten in dieser exemplarischen Vorgehensweise verwenden Sie eine Konsolenanwendung, so ändern Sie die Werte in der **ListPrice** Spalte.  
   
-2.  Save the workbook. Do not modify the file name or the location of the workbook.  
+2.  Speichern Sie die Arbeitsmappe. Ändern Sie den Dateinamen oder den Speicherort der Arbeitsmappe nicht.  
   
-3.  Close Excel.  
+3.  Schließen Sie Excel.  
   
-## <a name="creating-a-console-application-project"></a>Creating a Console Application Project  
- Create a console application project to use to modify data in the cached dataset in the workbook.  
+## <a name="creating-a-console-application-project"></a>Erstellen ein Konsolenanwendungsprojekt  
+ Erstellen Sie ein Konsolenanwendungsprojekt zu verwenden, um Daten in das zwischengespeicherte Dataset in der Arbeitsmappe zu ändern.  
   
-#### <a name="to-create-the-console-application-project"></a>To create the console application project  
+#### <a name="to-create-the-console-application-project"></a>Um das Konsolenanwendungsprojekt zu erstellen.  
   
-1.  In **Solution Explorer**, right-click the **AdventureWorksDataSet** solution, point to **Add**, and then click **New Project**.  
+1.  In **Projektmappen-Explorer**, mit der rechten Maustaste die **AdventureWorksDataSet** Projektmappe, zeigen Sie auf **hinzufügen**, und klicken Sie dann auf **neues Projekt**.  
   
-2.  In the **Project Types** pane, expand **Visual C#** or **Visual Basic**, and then click **Windows**.  
+2.  In der **Projekttypen** Bereich, erweitern Sie **Visual C#-** oder **Visual Basic**, und klicken Sie dann auf **Windows**.  
   
-3.  In the **Templates** pane, select **Console Application**.  
+3.  In der **Vorlagen** klicken Sie im Bereich **Konsolenanwendung**.  
   
-4.  In the **Name** box, type **DataReader**. Do not modify the location.  
+4.  In der **Namen** geben **DataReader**. Ändern Sie den Speicherort nicht.  
   
-5.  Click **OK**.  
+5.  Klicken Sie auf **OK**.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] adds the **DataReader** project to **Solution Explorer** and opens the **Program.cs** or **Module1.vb** code file.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Fügt der **DataReader** Projekt **Projektmappen-Explorer** und öffnet die **"Program.cs"** oder **"Module1.vb"** -Codedatei.  
   
-## <a name="retrieving-data-from-the-cached-dataset-by-using-the-console-application"></a>Retrieving Data from the Cached Dataset by Using the Console Application  
- Use the <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> class in the console application to read the data into a local `AdventureWorksLTDataSet` object. To confirm that the local dataset was initialized with data from the cached dataset, the application displays the number of rows in the local dataset.  
+## <a name="retrieving-data-from-the-cached-dataset-by-using-the-console-application"></a>Abrufen von Daten aus das zwischengespeicherte Dataset mithilfe der Konsolenanwendung  
+ Verwenden der <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> Klasse in der Konsolenanwendung zum Lesen der Daten in einer lokalen `AdventureWorksLTDataSet` Objekt. Um zu bestätigen, dass das lokale Dataset mit Daten aus das zwischengespeicherte Dataset initialisiert wurde, zeigt die Anwendung die Anzahl der Zeilen im lokalen Dataset an.  
   
-#### <a name="to-retrieve-data-from-the-cached-dataset"></a>To retrieve data from the cached dataset  
+#### <a name="to-retrieve-data-from-the-cached-dataset"></a>Zum Abrufen von Daten aus dem zwischengespeicherten dataset  
   
-1.  In **Solution Explorer**, right-click the **DataReader** project and click **Add Reference**.  
+1.  In **Projektmappen-Explorer**, mit der rechten Maustaste die **DataReader** Projekt, und klicken Sie auf **Verweis hinzufügen**.  
   
-2.  On the **.NET** tab, select Microsoft.VisualStudio.Tools.Applications.ServerDocument.  
+2.  Auf der **.NET** Registerkarte, wählen Sie "Microsoft.VisualStudio.Tools.Applications.ServerDocument" hinzu.  
   
-3.  Click **OK**.  
+3.  Klicken Sie auf **OK**.  
   
-4.  In **Solution Explorer**, right-click the **DataReader** project and click **Add Reference**.  
+4.  In **Projektmappen-Explorer**, mit der rechten Maustaste die **DataReader** Projekt, und klicken Sie auf **Verweis hinzufügen**.  
   
-5.  On the **Projects** tab, select **AdventureWorksDataSet**, and click **OK**.  
+5.  Auf der **Projekte** Registerkarte **AdventureWorksDataSet**, und klicken Sie auf **OK**.  
   
-6.  Open the Program.cs or Module1.vb file in the Code Editor.  
+6.  Öffnen Sie die Datei "Program.cs" oder "Module1.vb" im Code-Editor.  
   
-7.  Add the following **using** (for C#) or **Imports** (for Visual Basic) statement to the top of the code file.  
+7.  Fügen Sie die folgenden **mit** (für c#) oder **Importe** (für Visual Basic) Anweisungen am Anfang der Codedatei an.  
   
-     [!code-csharp[Trin_CachedDataWalkthroughs#1](../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs#1)]  [!code-vb[Trin_CachedDataWalkthroughs#1](../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb#1)]  
+     [!code-csharp[Trin_CachedDataWalkthroughs#1](../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs#1)]
+     [!code-vb[Trin_CachedDataWalkthroughs#1](../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb#1)]  
   
-8.  Add the following code to the `Main` method. This code declares the following objects:  
+8.  Fügen Sie der `Main` -Methode folgenden Code hinzu. Dieser Code deklariert die folgenden Objekte:  
   
-    -   An instance of the `AdventureWorksLTDataSet` type that is defined in the **AdventureWorksDataSet** project.  
+    -   Eine Instanz von der `AdventureWorksLTDataSet` in definierten Typs der **AdventureWorksDataSet** Projekt.  
   
-    -   The path to the AdventureWorksReport workbook in the build folder of the **AdventureWorksReport** project.  
+    -   Der Pfad zur Arbeitsmappe AdventureWorksReport im Ordner "Builds" von der **AdventureWorksReport** Projekt.  
   
-    -   A <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> object to use to access the data cache in the workbook.  
+    -   Ein <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> Objekt, mit dem Datencache in der Arbeitsmappe zugreifen.  
   
         > [!NOTE]  
-        >  The following code assumes that the workbook is saved using the .xlsx extension. If the workbook in your project has a different extension, modify the path as necessary.  
+        >  Im folgende Code wird davon ausgegangen, dass die Arbeitsmappe mit der Erweiterung XLSX gespeichert wird. Wenn die Arbeitsmappe in Ihrem Projekt eine andere Erweiterung enthält, ändern Sie den Pfad nach Bedarf.  
   
-     [!code-csharp[Trin_CachedDataWalkthroughs#10](../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs#10)] [!code-vb[Trin_CachedDataWalkthroughs#10](../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb#10)]  
+     [!code-csharp[Trin_CachedDataWalkthroughs#10](../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs#10)]
+     [!code-vb[Trin_CachedDataWalkthroughs#10](../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb#10)]  
   
-9. Add the following code to the `Main` method, after the code you added in the previous step. This code performs the following tasks:  
+9. Fügen Sie folgenden Code, der `Main` -Methode nach der im vorherigen Schritt hinzugefügten Code. Mit diesem Code werden die folgenden Aufgaben ausgeführt:  
   
-    -   It uses the <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.CachedData%2A> property of the <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> class to access the cached dataset in the workbook.  
+    -   Er verwendet die <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.CachedData%2A> Eigenschaft von der <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> Klasse den Zugriff auf das zwischengespeicherte Dataset in der Arbeitsmappe.  
   
-    -   It reads the data from the cached dataset into the local dataset.  
+    -   Er liest die Daten aus dem zwischengespeicherten Dataset in das lokale Dataset.  
   
-    -   It displays the number of rows in the local dataset, to confirm that it has data.  
+    -   Es zeigt die Anzahl der Zeilen in der lokalen Dataset aus, um sicherzustellen, dass es Daten enthält.  
   
-     [!code-csharp[Trin_CachedDataWalkthroughs#11](../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs#11)] [!code-vb[Trin_CachedDataWalkthroughs#11](../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb#11)]  
+     [!code-csharp[Trin_CachedDataWalkthroughs#11](../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs#11)]
+     [!code-vb[Trin_CachedDataWalkthroughs#11](../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb#11)]  
   
-10. On the **Build** menu, click **Build DataReader**.  
+10. Auf der **erstellen** Menü klicken Sie auf **DataReader erstellen**.  
   
-## <a name="testing-the-project"></a>Testing the Project  
- When you run the console application, it displays the number of rows in the local dataset.  
+## <a name="testing-the-project"></a>Testen des Projekts  
+ Wenn Sie die Konsolenanwendung ausführen, zeigt die Anzahl der Zeilen im lokalen Dataset an.  
   
-#### <a name="to-test-the-workbook"></a>To test the workbook  
+#### <a name="to-test-the-workbook"></a>So testen Sie die Arbeitsmappe  
   
-1.  In **Solution Explorer**, right-click the **DataReader** project, point to **Debug**, and then click **Start new instance**.  
+1.  In **Projektmappen-Explorer**, mit der rechten Maustaste die **DataReader** Projekt, zeigen Sie auf **Debuggen**, und klicken Sie dann auf **neue Instanz starten**.  
   
-     Verify that the application reports that the local dataset has 295 rows.  
+     Stellen Sie sicher, dass die Anwendung meldet, dass das lokale Dataset 295 Zeilen verfügt.  
   
-2.  Press ENTER to close the application.  
+2.  Drücken Sie EINGABETASTE, um die Anwendung zu schließen.  
   
-## <a name="next-steps"></a>Next Steps  
- You can learn more about working with cached data from these topics:  
+## <a name="next-steps"></a>Nächste Schritte  
+ Sie können weitere Informationen zum Arbeiten mit zwischengespeicherten Daten in den folgenden Themen erfahren:  
   
--   Changing the data in a cached dataset without starting Excel. For more information, see [Walkthrough: Changing Cached Data in a Workbook on a Server](../vsto/walkthrough-changing-cached-data-in-a-workbook-on-a-server.md).  
+-   Ändern die Daten in einem zwischengespeicherten Dataset, ohne Excel zu starten. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Ändern von zwischengespeicherten Daten in einer Arbeitsmappe auf einem Server](../vsto/walkthrough-changing-cached-data-in-a-workbook-on-a-server.md).  
   
-## <a name="see-also"></a>See Also  
- [Walkthrough: Inserting Data into a Workbook on a Server](../vsto/walkthrough-inserting-data-into-a-workbook-on-a-server.md)   
- [Walkthrough: Changing Cached Data in a Workbook on a Server](../vsto/walkthrough-changing-cached-data-in-a-workbook-on-a-server.md)   
- [Connecting to Data in Windows Forms Applications](/visualstudio/data-tools/connecting-to-data-in-windows-forms-applications)  
+## <a name="see-also"></a>Siehe auch  
+ [Exemplarische Vorgehensweise: Einfügen von Daten in eine Arbeitsmappe auf einem Server](../vsto/walkthrough-inserting-data-into-a-workbook-on-a-server.md)   
+ [Exemplarische Vorgehensweise: Ändern zwischengespeicherter Daten in einer Arbeitsmappe auf einem Server](../vsto/walkthrough-changing-cached-data-in-a-workbook-on-a-server.md)   
+ [Herstellen einer Verbindung mit Daten in Windows Forms-Anwendungen](/visualstudio/data-tools/connecting-to-data-in-windows-forms-applications)  
   
   

@@ -1,51 +1,52 @@
 ---
-title: "Programmsteuerelement | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Debuggen [Debuggen SDK], Steuerung der Ausführung"
+title: Die Programmsteuerung | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: debugging [Debugging SDK], control of execution
 ms.assetid: 6be80904-e66c-4cae-8891-1113b799fb01
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: cb69afe513010a7da4b4a85669bbc5f145f8dbc5
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Programmsteuerelement
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-In Visual Studio\-Debugging treten alle nachfolgenden tretenden und fortfahrenden Routinen auf der Ebene Programm auf:  
+# <a name="program-control"></a>Programmsteuerung
+In Visual Studio auftreten, Debuggen, die alle der folgenden schrittweise durchlaufen und Fortsetzen von Routinen auf der Ebene der Anwendung:  
   
--   Die folgende Anweisung festlegen d. h. den Computer an die nächste Anweisung festlegen, in einer bestimmten Rahmen Umgebungen ausgeführt werden soll  
+-   Festlegen der nächsten Anweisung an, d. h. Einrichten des Computers für die nächste Anweisung in einer bestimmten Frame-Umgebung ausgeführt werden  
   
--   d. h. sie beginnend weiterhin Auschecken aus treten Modus beenden  
+-   Ausführen, d. h. weiterhin schrittweisen Modus beenden  
   
--   Zur nächsten Anweisung befinden  
+-   Schrittweises durchlaufen für die nächste Anweisung  
   
--   Mit dem aktuellen Modus Schritt fortsetzen  
+-   Mit dem aktuellen Modus für die schrittweise Ausführung fortsetzen  
   
--   Die Threads angehalten werden vom Programm enthalten  
+-   Die von der Anwendung enthaltenen Threads anhalten  
   
--   Die Threads fort vom Programm enthalten  
+-   Die Threads, die von der Anwendung enthaltenen fortsetzen  
   
 > [!NOTE]
->  Die Aufrufliste angezeigt wird, wird der Thread auf Anwendungsebene implementiert.  Um die Rahmeninformationen auflisten, wenn Sie die Aufrufliste für einen Thread, müssen Sie alle Methoden der [IEnumDebugFrameInfo2](../../extensibility/debugger/reference/ienumdebugframeinfo2.md)\-Schnittstelle implementieren.  
+>  Die Aufrufliste anzuzeigen, wird auf der Threadebene implementiert. Um die Frame-Informationen aufgezählt werden beim Anzeigen der Aufrufliste für einen Thread, müssen Sie die Methoden der implementieren die [IEnumDebugFrameInfo2](../../extensibility/debugger/reference/ienumdebugframeinfo2.md) Schnittstelle.  
   
-## Methoden des Programm\-Steuerelements  
- In der folgenden Tabelle werden die Methoden von [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) an, die für ein funktionales minimal Modul \(Debug\) und DE Execution Control implementiert werden müssen.  
+## <a name="methods-of-program-control"></a>Methoden der Programmsteuerung  
+ Die folgende Tabelle zeigt die Methoden der [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) , muss für eine minimal funktionale Debugging-Modul (Deutschland) und die Steuerung der Ausführung implementiert werden.  
   
 |Methode|Beschreibung|  
-|-------------|------------------|  
-|[IDebugProgram2::Ausführen](../../extensibility/debugger/reference/idebugprogram2-execute.md)|Setzt die Ausführung aller Threads fort, die durch ein Programm aus einem Beendet enthalten sind.  Erforderlich für Execution Control.|  
-|[IDebugProgram2::Fahren Sie fort](../../extensibility/debugger/reference/idebugprogram2-continue.md)|Setzt die Ausführung aller Threads fort, die durch ein Programm aus einem Beendet enthalten sind.  Erforderlich für Execution Control.|  
-|[IDebugProgram2::Schritt](../../extensibility/debugger/reference/idebugprogram2-step.md)|Führt einen Einzelschritt für den angegebenen Thread aus.  Setzt die Ausführung aller anderen Threads fort, die durch das Programm enthalten sind.  Erforderlich für Execution Control.|  
+|------------|-----------------|  
+|[IDebugProgram2::Execute](../../extensibility/debugger/reference/idebugprogram2-execute.md)|Weiterhin die Ausführung aller Threads, die von einem Programm aus dem Status "beendet" enthalten. Für die Steuerung der Ausführung erforderlich.|  
+|[IDebugProgram2::Continue](../../extensibility/debugger/reference/idebugprogram2-continue.md)|Weiterhin die Ausführung aller Threads, die von einem Programm aus dem Status "beendet" enthalten. Für die Steuerung der Ausführung erforderlich.|  
+|[IDebugProgram2::Step](../../extensibility/debugger/reference/idebugprogram2-step.md)|Führt einen Schritt auf den angegebenen Thread. Alle anderen Threads, die von der Anwendung enthaltenen läuft. Für die Steuerung der Ausführung erforderlich.|  
   
- In Multithreaded Programme müssen Sie die [IDebugProgram2::EnumThreads](../../extensibility/debugger/reference/idebugprogram2-enumthreads.md)\-Methode und alle Methoden der [IEnumDebugThreads2](../../extensibility/debugger/reference/ienumdebugthreads2.md) auch Schnittstelle implementieren.  
+ Für Multithreadprogramme, müssen Sie auch implementieren die [IDebugProgram2::EnumThreads](../../extensibility/debugger/reference/idebugprogram2-enumthreads.md) -Methode und alle Methoden der [IEnumDebugThreads2](../../extensibility/debugger/reference/ienumdebugthreads2.md) Schnittstelle.  
   
-## Siehe auch  
- [Steuerung der Ausführung und Status Bewertung](../../extensibility/debugger/execution-control-and-state-evaluation.md)
+## <a name="see-also"></a>Siehe auch  
+ [Ausführungssteuerung und Zustandsauswertung](../../extensibility/debugger/execution-control-and-state-evaluation.md)

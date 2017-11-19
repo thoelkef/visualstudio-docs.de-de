@@ -1,28 +1,30 @@
 ---
-title: "SetWefProcessId-Methode"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
+title: SetWefProcessId-Methode | Microsoft Docs
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
 ms.assetid: 404eec23-a67e-4f5b-b27d-86651f08be03
-caps.latest.revision: 8
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "8"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 0821c799a4d6385997704724c00a2aff4669eb17
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# SetWefProcessId-Methode
-  Stellt die Prozess\-ID bereit, die Inhalt des Internet\-Erweiterungs\-Frameworks \(WEF\) ausführt.  
+# <a name="setwefprocessid-method"></a>SetWefProcessId-Methode
+  Enthält die Prozess-ID, die Inhalt Web Erweiterungen Framework (WEF) ausgeführt wird.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 HRESULT SetWefProcessId(  
@@ -30,18 +32,18 @@ HRESULT SetWefProcessId(
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
   
-|Parameter|Description|  
+|Parameter|Beschreibung|  
 |---------------|-----------------|  
-|*dwProcessId*|Die Prozess\-ID, die verwendet wird, um WEF\-Inhalt auszuführen.|  
+|*ist dwProcessId*|Die Prozess-ID, die zum Ausführen von WEF-Inhalt verwendet werden.|  
   
-## Rückgabewert  
- Ein HRESULT\-Wert, der angibt, ob die Methode erfolgreich ausgeführt wurde.  
+## <a name="return-value"></a>Rückgabewert  
+ Ein HRESULT-Wert, der angibt, ob die Methode erfolgreich abgeschlossen wurde.  
   
-## Hinweise  
- Diese Methode muss aufgerufen werden, nachdem der WEF\-Inhaltsprozess erstellt, jedoch bevor ein WEF\-Inhalt ausgeführt wird.  
+## <a name="remarks"></a>Hinweise  
+ Diese Methode muss aufgerufen werden, nachdem der Inhalt WEF-Prozess erstellt wurde, aber bevor der Inhalt WEF ausgeführt wird.  
   
- Wenn Sie die Entwicklungsumgebung einen Debugger an den WEF\-Inhaltsprozess anfügen möchten, muss die Umgebung den Vorgang in der Implementierung dieser Methode ausführen.  
+ Wenn Sie die Entwicklungsumgebung für einen Debugger an den Inhalt WEF-Prozess anfügen möchten, muss die Umgebung diesen Vorgang in der Implementierung dieser Methode ausführen.  
   
   

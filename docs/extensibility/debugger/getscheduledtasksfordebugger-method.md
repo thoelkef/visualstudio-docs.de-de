@@ -1,43 +1,44 @@
 ---
-title: "GetScheduledTasksForDebugger-Methode | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "GetScheduledTasksForDebugger Methode TaskScheduler-Klasse [Debugmodule [.NET Framework]"
+title: GetScheduledTasksForDebugger Methode | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: GetScheduledTasksForDebugger method, TaskScheduler class [.NET Framework debug engines]
 ms.assetid: 7c9b4cde-6e4a-4cef-929f-7d02b1da5762
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 0f3099cdbcc8c49c7b6cb5064efad240ea32dea4
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# GetScheduledTasksForDebugger-Methode
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Ruft ein Array aller geplanten Aufgaben.  
+# <a name="getscheduledtasksfordebugger-method"></a>GetScheduledTasksForDebugger-Methode
+Ruft ein Array aller geplanten Aufgaben ab.  
   
- **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>  
+ **Namespace:**<xref:System.Threading.Tasks?displayProperty=fullName>  
   
- **Assembly:** Mscorlib \(in "mscorlib.dll"\)  
+ **Assembly:** "mscorlib" (in "mscorlib.dll")  
   
- Da Sie diesen internen Member von .NET Framework zugreifen können, wird die folgende Syntax gemeinsam Intermediate Language \(CIL\) bereitgestellt.  
+ Da dieses interne Member von .NET Framework zugegriffen werden kann, wird die folgende Syntax gemeinsame Intermediate Language (CIL) bereitgestellt.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 .method assembly hidebysig instance class System.Threading.Tasks.Task[] GetScheduledTasksForDebugger() cil managed  
 ```  
   
-## Rückgabewert  
- Ein Array aller geplanten Aufgaben. Jede Aufgabe wird ausgeführt oder die Ausführung abgeschlossen ist.  
+## <a name="return-value"></a>Rückgabewert  
+ Ein Array von aller geplanten Aufgaben. Jede Aufgabe wird ausgeführt oder hat die Ausführung beendet.  
   
-## Hinweise  
- Diese Methode ist nicht threadsicher und sollte nicht verwendet werden, gleichzeitig mit anderen Instanzen der <xref:System.Threading.Tasks.TaskScheduler> sollte aufgerufen werden von einem Debugger nur, wenn der Debugger alle anderen Threads angehalten hat.  
+## <a name="remarks"></a>Hinweise  
+ Diese Methode ist nicht threadsicher und sollte nicht verwendet werden, gleichzeitig mit anderen Instanzen von <xref:System.Threading.Tasks.TaskScheduler> sollte aufgerufen werden von einem Debugger nur, wenn der Debugger alle anderen Threads angehalten hat.  
   
-## Siehe auch  
- [TaskScheduler\-Klasse](../../extensibility/debugger/taskscheduler-class-internal-members.md)
+## <a name="see-also"></a>Siehe auch  
+ [TaskScheduler-Klasse](../../extensibility/debugger/taskscheduler-class-internal-members.md)

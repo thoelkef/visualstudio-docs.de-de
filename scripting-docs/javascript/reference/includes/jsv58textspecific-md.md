@@ -1,1 +1,1 @@
-Internet Explorer 8 \(Standardmodus\)
+Internet Explorer 8 (Standardmodus)

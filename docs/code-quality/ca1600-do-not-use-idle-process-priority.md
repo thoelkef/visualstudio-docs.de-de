@@ -1,44 +1,45 @@
 ---
-title: "CA1600: Verwenden Sie keine Prozesse mit der Priorit&#228;t &quot;idle&quot; | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "DoNotUseIdleProcessPriority"
-  - "CA1600"
-helpviewer_keywords: 
-  - "CA1600"
-  - "DoNotUseIdleProcessPriority"
+title: "CA1600: Verwenden Sie nicht im Leerlauf Prozesspriorität | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- DoNotUseIdleProcessPriority
+- CA1600
+helpviewer_keywords:
+- CA1600
+- DoNotUseIdleProcessPriority
 ms.assetid: 9b0d073b-78b6-41be-8ef3-14692a735283
-caps.latest.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 15
+caps.latest.revision: "15"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: e52a658bd6161542ce909b8294f33d6e4bf140ba
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# CA1600: Verwenden Sie keine Prozesse mit der Priorit&#228;t &quot;idle&quot;
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="ca1600-do-not-use-idle-process-priority"></a>CA1600: Verwenden Sie keine Prozesse mit der Priorität "idle"
 |||  
 |-|-|  
 |TypeName|DoNotUseIdleProcessPriority|  
 |CheckId|CA1600|  
-|Kategorie \(Category\)|Microsoft.Mobility|  
+|Kategorie|Microsoft.Mobility|  
 |Unterbrechende Änderung|Breaking|  
   
-## Ursache  
- Diese Regel tritt auf, wenn Prozesse auf `ProcessPriorityClass.Idle` festgelegt werden.  
+## <a name="cause"></a>Ursache  
+ Mit dieser Regel tritt auf, wenn Prozesse, um festgelegt sind `ProcessPriorityClass.Idle`.  
   
-## Regelbeschreibung  
- Legen Sie für Prozesse nicht die Priorität Idle fest.  Prozesse, die über `System.Diagnostics.ProcessPriorityClass.Idle` verfügen, belegen die CPU, wenn sie sich andernfalls im Leerlauf befinden würde, und blockieren daher Standby.  
+## <a name="rule-description"></a>Regelbeschreibung  
+ Legen Sie für Prozesse nicht die Priorität Idle fest. Prozesse mit `System.Diagnostics.ProcessPriorityClass.Idle` belegen die CPU, wenn diese andernfalls im Leerlauf werden würde, und daher den Standbymodus blockieren.  
   
-## Behandeln von Verstößen  
- Legen Sie Prozesse auf `ProcessPriorityClass.BelowNormal` fest.  
+## <a name="how-to-fix-violations"></a>Behandeln von Verstößen  
+ Legen Sie Prozesse auf `ProcessPriorityClass.BelowNormal`.  
   
-## Wann sollten Warnungen unterdrückt werden?  
- Diese Regel sollte nur dann unterdrückt werden, wenn für Prozesse die Priorität Idle erforderlich ist und Mobilitätsüberlegungen ohne Bedenken ignoriert werden können.
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?  
+ Mit dieser Regel sollen nur, wenn im Leerlauf Prozesspriorität erforderlich ist und Mobilität Überlegungen gefahrlos ignoriert werden können unterdrückt werden.

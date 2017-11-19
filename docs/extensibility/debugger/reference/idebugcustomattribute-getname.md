@@ -1,51 +1,51 @@
 ---
-title: "IDebugCustomAttribute::GetName | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugCustomAttribute::GetName"
-helpviewer_keywords: 
-  - "IDebugCustomAttribute::GetName"
+title: IDebugCustomAttribute::GetName | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugCustomAttribute::GetName
+helpviewer_keywords: IDebugCustomAttribute::GetName
 ms.assetid: ba509cc5-5816-4925-a094-4c72d88c360c
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 165362ab03685a3acca457e4095778b9dcb182e8
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugCustomAttribute::GetName
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
+# <a name="idebugcustomattributegetname"></a>IDebugCustomAttribute::GetName
 Ruft den Namen des benutzerdefinierten Attributs ab.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT GetName(   
-   BSTR* bstrName  
+```cpp  
+HRESULT GetName(   
+   BSTR* bstrName  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetName(  
-   out string bstrName  
+   out string bstrName  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `bstrName`  
- \[out\]  Gibt eine Zeichenfolge zurück, die den Namen des benutzerdefinierten Attributs enthält.  
+ [out] Gibt eine Zeichenfolge mit dem Namen des benutzerdefinierten Attributs.  
   
-## Rückgabewert  
- Bei Erfolg gibt S\_OK zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt S_OK zurück. Andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Hinweise  
- Benannt Rückgabe von dieser Methode entspricht dem Namen der Klasse, die verwendet wird, um das Attribut zu deklarieren.  Dies entspricht möglicherweise nicht genau den Namen der benutzerdefinierten Attributklasse „C\# als auch über einen benutzerdefinierten Attributnamen können zu verwerfenden Suffix“ \- Attribut, wenn es in einer Deklaration verwendet wird.  
+## <a name="remarks"></a>Hinweise  
+ Die von dieser Methode zurückgegebene benannte entspricht dem Namen der Klasse verwendet, um das Attribut zu deklarieren. Dies möglicherweise nicht genau den Namen der benutzerdefinierten Attributklasse selbst entspricht c# können das Suffix "Attribute" aus benutzerdefiniertem Attributsnamen gelöscht werden, wenn er in einer Deklaration verwendet wird.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md)

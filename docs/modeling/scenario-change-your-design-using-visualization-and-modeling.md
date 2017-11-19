@@ -1,11 +1,10 @@
 ---
-title: "Szenario: Ändern des Entwurfs mithilfe von Visualisierung und Modellierung | Microsoft-Dokumentation"
+title: "Szenario: Ändern des Entwurfs mithilfe von Visualisierung und Modellierung | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-techdebt
+ms.technology: vs-devops-techdebt
 ms.tgt_pltfrm: 
 ms.topic: get-started-article
 helpviewer_keywords:
@@ -17,36 +16,21 @@ helpviewer_keywords:
 - walkthrough [Visual Studio ALM], modeling software
 - walkthroughs [Visual Studio ALM], modeling software
 ms.assetid: ccc80825-a4a0-44fa-a0bb-f95254785a3b
-caps.latest.revision: 61
+caps.latest.revision: "61"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Machine Translation
-ms.sourcegitcommit: 3d07f82ea737449fee6dfa04a61e195654ba35fa
-ms.openlocfilehash: 4f46bc8e8b4dd476e90ebd122895bb354d967795
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: f0b99b4a4bcfbec58c23e529e3ee250ca19554ab
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Szenario: Ändern des Entwurfs mithilfe von Visualisierung und Modellierung
 Stellen Sie sicher, dass das Softwaresystem die Anforderungen der Benutzer erfüllt, indem Sie die Visualisierungs- und Modellierungstools in Visual Studio verwenden.
-Verwenden Sie Tools wie Code Maps, Abhängigkeitsdiagramme und Klassendiagramme für:  
+Verwenden Sie Tools wie z. B. Code Maps, Abhängigkeit Diagramme und Klassendiagramme für:  
   
- Welche Versionen von Visual Studio die einzelnen Tools unterstützen, finden Sie unter [versionsunterstützung für Architektur- und Modellierungstools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
+ Informationen dazu, welche Versionen von Visual Studio die einzelnen Tools unterstützen, finden Sie unter [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
 -   Ermitteln der Anforderungen und Geschäftsprozesse von Benutzern  
   
@@ -70,7 +54,7 @@ Verwenden Sie Tools wie Code Maps, Abhängigkeitsdiagramme und Klassendiagramme 
   
 -   [Visualisieren von Code](../modeling/visualize-code.md)  
   
-##  <a name="a-namescenariooverviewa-scenario-overview"></a><a name="ScenarioOverview"></a>Übersicht über das Szenario  
+##  <a name="ScenarioOverview"></a> Übersicht über das Szenario  
  Dieses Szenario beschreibt Episoden in den Lebenszyklen der Softwareentwicklung von zwei fiktiven Unternehmen: Dinner Now und Lucerne Publishing. Dinner Now bietet einen webbasierten Essenslieferdienst in Seattle an. Kunden können Essen bestellen auf der Dinner Now-Website bezahlen. Die Bestellungen werden dann an das entsprechende örtliche Restaurant für die Lieferung gesendet. Lucerne Publishing, ein Unternehmen in New York, unterhält mehrere Geschäfte sowohl im Internet als auch außerhalb des Internets. Beispielsweise wird eine Website betrieben, auf der Kunden Restaurantkritiken veröffentlichen können.  
   
  Lucerne hat vor kurzem Dinner Now übernommen und möchte die folgenden Änderungen vornehmen:  
@@ -91,24 +75,24 @@ Verwenden Sie Tools wie Code Maps, Abhängigkeitsdiagramme und Klassendiagramme 
   
 -   [Planen und Nachverfolgen der Arbeit](#PlanningTracking)  
   
--   [Testen, überprüfen und Einchecken von aktualisiertem code](#TestValidateCheckInCode)  
+-   [Testen, Überprüfen und Einchecken von aktualisiertem Code](#TestValidateCheckInCode)  
   
-##  <a name="a-namemodelingdiagramstoolsa-roles-of-architecture-and-modeling-diagrams-in-software-development"></a><a name="ModelingDiagramsTools"></a>Rollen von Architektur- und Modellierungsdiagrammen in der Softwareentwicklung  
+##  <a name="ModelingDiagramsTools"></a> Rollen von Architektur- und Modellierungsdiagrammen in der Softwareentwicklung  
  In der folgenden Tabelle werden Rollen beschrieben, die diese Tools während verschiedener Phasen des Lebenszyklus der Softwareentwicklung spielen können:  
   
-||**Modellieren von Benutzeranforderungen**|**Modellierung von Geschäftsprozessen**|**Systemarchitektur & Design**|**Codevisualisierung & durchsuchen**|**Überprüfung**|  
+||**Modellieren von Benutzeranforderungen**|**Modellierung von Geschäftsprozessen**|**Systemarchitektur und -entwurf**|**Visualisieren und Untersuchen von Code**|**Überprüfung**|  
 |------|------------------------------------|-----------------------------------|--------------------------------------|------------------------------------------|----------------------|  
 |DSL-Diagramm (domänenspezifische Sprache)|Ja|Ja|Ja|||  
-|Abhängigkeitsdiagramm, ebenenvalidierung|||Ja|Ja|Ja|  
+|Diagramm der Abhängigkeit, ebenenvalidierung|||Ja|Ja|Ja|  
 |Code Map|||Ja|Ja|Ja|  
 |Klassen-Designer (codebasiert)||||Ja||  
   
-Um Abhängigkeitsdiagramme zu zeichnen, müssen Sie ein Modellierungsprojekt als Teil einer vorhandenen Projektmappe oder eine neue erstellen. Diese Diagramme müssen im Modellierungsprojekt erstellt werden.
-Elemente in Abhängigkeit von Diagrammen befinden sich im Modellierungsprojekt, aber sie werden nicht im allgemeinen Modell gespeichert. Code Maps und .NET-Klassendiagramme, die aus Code erstellt werden, sind außerhalb des Modellierungsprojekts vorhanden.  
+Um die Abhängigkeit-Diagramme zeichnen, müssen Sie ein Modellierungsprojekt als Teil einer vorhandenen Projektmappe oder ein neues Konto erstellen. Diese Diagramme müssen im Modellierungsprojekt erstellt werden.
+Elemente in Abhängigkeit von Diagrammen befinden sich im Modellierungsprojekt, aber sie sind nicht im allgemeinen Modell gespeichert. Code Maps und .NET-Klassendiagramme, die aus Code erstellt werden, sind außerhalb des Modellierungsprojekts vorhanden.  
   
  Thema  
   
--   [Erstellen Sie Abhängigkeitsdiagramme aus dem code](../modeling/create-layer-diagrams-from-your-code.md)  
+-   [Erstellen von Abhängigkeitsdiagrammen aus dem Code](../modeling/create-layer-diagrams-from-your-code.md)  
   
 -   [Projektmappenübergreifendes Zuordnen von Abhängigkeiten](../modeling/map-dependencies-across-your-solutions.md)  
   
@@ -118,20 +102,20 @@ Elemente in Abhängigkeit von Diagrammen befinden sich im Modellierungsprojekt, 
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
   
- Beide Teams verwenden außerdem abhängigkeitsüberprüfung, um sicherzustellen, dass der Code in der Entwicklung mit dem Entwurf konsistent bleibt.  
+ Beide Teams verwenden außerdem abhängigkeitsüberprüfung, um sicherzustellen, dass Code in der Entwicklung mit dem Entwurf konsistent bleibt.  
   
  Thema  
   
--   [Sicherstellen der Code konsistent mit dem Entwurf](#ValidatingCode)  
+-   [Sicherstellen der Konsistenz von Code und Entwurf](#ValidatingCode)  
   
--   [Beschreiben der logischen Architektur: Abhängigkeitsdiagramme](#DescribeLayers)  
+-   [Beschreiben der logischen Architektur: Abhängigkeit-Diagramme](#DescribeLayers)  
   
--   [Überprüfen von Code mit Abhängigkeitsdiagramme](../modeling/validate-code-with-layer-diagrams.md)  
+-   [Überprüfen von Code mit Abhängigkeitsdiagrammen](../modeling/validate-code-with-layer-diagrams.md)  
   
     > [!NOTE]
-    >  Einige Versionen von Visual Studio unterstützen abhängigkeitsüberprüfung und schreibgeschützte Versionen von Code Maps für Visualisierung und Modellierung. Welche Versionen von Visual Studio dieses Feature unterstützen, finden Sie unter [versionsunterstützung für Architektur- und Modellierungstools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
+    >  Einige Versionen von Visual Studio unterstützen abhängigkeitsüberprüfung und schreibgeschützte Versionen von Code Maps für Visualisierung und Modellierung. Welche Versionen von Visual Studio dieses Feature unterstützen, erfahren Sie unter [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
-##  <a name="a-nameunderstandingcommunicatinga-understanding-and-communicating-information-about-the-system"></a><a name="UnderstandingCommunicating"></a>Verstehen und kommunizieren von Informationen über das System  
+##  <a name="UnderstandingCommunicating"></a> Verstehen und Kommunizieren von Informationen zum System  
  Es gibt keine vorgeschriebene Reihenfolge zum Verwenden der Visual Studio-Modellierungsdiagramme. Daher können Sie sie ganz Ihren Anforderungen oder dem Ansatz entsprechend verwenden. Normalerweise rufen Teams ihre Modelle im Verlauf des Projekts wiederholt und häufig auf. Jedes Diagramm bietet bestimmte Vorteile, um verschiedene Aspekte des Systems in der Entwicklung zu verstehen, zu beschreiben und zu kommunizieren.  
   
  Dinner Now und Lucerne kommunizieren untereinander sowie mit Projektbeteiligten anhand von Diagrammen als einheitliche Sprache. Beispielsweise verwendet Dinner Now Diagramme, um folgende Aufgaben auszuführen:  
@@ -160,33 +144,33 @@ Elemente in Abhängigkeit von Diagrammen befinden sich im Modellierungsprojekt, 
   
 -   [Identifizieren von Änderungen am vorhandenen System](#DeterminingChanges)  
   
--   [Sicherstellen der Code konsistent mit dem Entwurf](#ValidatingCode)  
+-   [Keeping code consistent with the design](#ValidatingCode)  
   
 -   [Allgemeine Tipps zum Erstellen und Verwenden von Modellen](#GeneralTips)  
   
 -   [Planen und Nachverfolgen der Arbeit](#PlanningTracking)  
   
--   [Testen, überprüfen und Einchecken von aktualisiertem code](#TestValidateCheckInCode)  
+-   [Testen, Überprüfen und Einchecken von aktualisiertem Code](#TestValidateCheckInCode)  
 
-###  <a name="a-namedeterminingchangesa-identifying-changes-to-the-existing-system"></a><a name="DeterminingChanges"></a>Identifizieren von Änderungen am vorhandenen System  
+###  <a name="DeterminingChanges"></a> Identifying Changes to the Existing System  
  Dinner Now muss die Kosten für die Erfüllung der neuen Anforderung schätzen. Diese hängen teilweise davon ab, wie sehr sich diese Änderung auf andere Teile des Systems auswirkt. Zur Verdeutlichung erstellt einer der Dinner Now-Entwickler die folgenden Code Maps und Diagramme aus vorhandenem Code:  
   
-|**Code Map oder Diagramm**|**Zeigt**|  
+|**Code Map oder Diagramm**|**Zeigt Folgendes an**|  
 |------------------------|---------------|  
-|*Codezuordnung*<br /><br /> Thema<br /><br /> -   [Projektmappenübergreifendes Zuordnen von Abhängigkeiten](../modeling/map-dependencies-across-your-solutions.md)<br />-   [Durchsuchen und Neuanordnen von Code maps](../modeling/browse-and-rearrange-code-maps.md)<br />-   [Anpassen von Code Maps durch Bearbeiten der DGML-Dateien](../modeling/customize-code-maps-by-editing-the-dgml-files.md)|Abhängigkeiten und andere Beziehungen im Code.<br /><br /> Dinner Now könnte z. B. damit beginnen, Assembly-Code Maps zu überprüfen, um eine Übersicht der Assemblys und ihrer Abhängigkeiten zu erhalten. Sie können in den Code Maps einen Drilldown durchführen, um die Namespaces und Klassen in diesen Assemblys zu untersuchen.<br /><br /> Dinner Now kann auch Code Maps erstellen, um bestimmte Bereiche und andere Arten von Beziehungen im Code zu untersuchen. Sie verwenden den Projektmappen-Explorer, um relevante Bereiche und Beziehungen zu finden und auszuwählen.|  
-|*Codebasierte Klassendiagramm*<br /><br /> Finden Sie unter [Gewusst wie: Hinzufügen von Klassendiagrammen zu Projekten (Klassen-Designer)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).|Vorhandene Klassen in Code|  
+|*Code Map*<br /><br /> Thema<br /><br /> -   [Zuordnen von lösungsübergreifenden Abhängigkeiten](../modeling/map-dependencies-across-your-solutions.md)<br />-   [Durchsuchen und Neuanordnen von Code maps](../modeling/browse-and-rearrange-code-maps.md)<br />-   [Anpassen von Code Maps durch Bearbeiten der DGML-Dateien](../modeling/customize-code-maps-by-editing-the-dgml-files.md)|Abhängigkeiten und andere Beziehungen im Code.<br /><br /> Dinner Now könnte z. B. damit beginnen, Assembly-Code Maps zu überprüfen, um eine Übersicht der Assemblys und ihrer Abhängigkeiten zu erhalten. Sie können in den Code Maps einen Drilldown durchführen, um die Namespaces und Klassen in diesen Assemblys zu untersuchen.<br /><br /> Dinner Now kann auch Code Maps erstellen, um bestimmte Bereiche und andere Arten von Beziehungen im Code zu untersuchen. Sie verwenden den Projektmappen-Explorer, um relevante Bereiche und Beziehungen zu finden und auszuwählen.|  
+|*Codebasiertes Klassendiagramm*<br /><br /> Siehe [How to: Add Class Diagrams to Projects (Class Designer)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).|Vorhandene Klassen in Code|  
   
  Beispiel: Die Entwicklerin erstellt eine Code Map. Sie passt den Umfang an, um sich auf die Bereiche zu konzentrieren, die von dem neuen Szenario betroffen sind. Diese Bereiche werden ausgewählt und auf der Code Map hervorgehoben:  
   
- ![Abhängigkeitsdiagramm Namespace](../modeling/media/namespace_reviewsystem.png "Namespace_ReviewSystem")  
+ ![Namespace-Abhängigkeitsdiagramm](../modeling/media/namespace_reviewsystem.png "Namespace_ReviewSystem")  
   
- **Namespace-Code-Zuordnung**  
+ **Namespace-Code Map**  
   
  Die Entwicklerin erweitert die ausgewählten Namespaces, um die zugehörigen Klassen, Methoden und Beziehungen anzuzeigen:  
   
- ![Abhängigkeitsdiagramm für Namespaces erweiterte](../modeling/media/dep_reviewsystem.png "Dep_ReviewSystem")  
+ ![Abhängigkeitsdiagramm für Namespaces erweiterten](../modeling/media/dep_reviewsystem.png "Dep_ReviewSystem")  
   
- **Code Map für erweiterte Namespaces mit sichtbaren gruppenübergreifenden links**  
+ **Erweiterte Code Map für Namespaces mit sichtbaren gruppenübergreifenden Links**  
   
  Die Entwicklerin untersucht den Code, um nach den betroffenen Klassen und Methoden zu suchen. Um die Auswirkungen der einzelnen Änderungen sofort anzuzeigen, generieren Sie Code Maps nach jeder Änderung neu. Finden Sie unter [Visualisieren von Code](../modeling/visualize-code.md).  
   
@@ -194,32 +178,32 @@ Elemente in Abhängigkeit von Diagrammen befinden sich im Modellierungsprojekt, 
   
 |**Diagramme**|**Beschreibt**|  
 |------------------|-------------------|  
-|*Codebasierte Klassendiagramm*<br /><br /> Finden Sie unter [Gewusst wie: Hinzufügen von Klassendiagrammen zu Projekten (Klassen-Designer)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).|Vorhandene Klassen in Code|  
+|*Codebasiertes Klassendiagramm*<br /><br /> Siehe [How to: Add Class Diagrams to Projects (Class Designer)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).|Vorhandene Klassen in Code|  
   
-###  <a name="a-namevalidatingcodea-keeping-code-consistent-with-the-design"></a><a name="ValidatingCode"></a>Sicherstellen der Code konsistent mit dem Entwurf  
- Dinner Now muss sicherstellen, dass der aktualisierte Code konsistent mit dem Entwurf bleibt. Sie erstellen Sie Abhängigkeitsdiagramme, die die Funktionsebenen im System beschreiben, die erlaubten Abhängigkeiten zwischen Ihnen und verknüpfen diese Ebenen angeben.  
+###  <a name="ValidatingCode"></a> Sicherstellen der Konsistenz von Code und Entwurf  
+ Dinner Now muss sicherstellen, dass der aktualisierte Code konsistent mit dem Entwurf bleibt. Diagramme werden erstellt, Abhängigkeit, die die Funktionsebenen im System beschreiben, die erlaubten Abhängigkeiten zwischen diesen Ebenen Lösungsartefakte zuordnen und diese Lösungsartefakten angeben.  
   
 |**Diagramm**|**Beschreibt**|  
 |-----------------|-------------------|  
-|*Abhängigkeitsdiagramm*<br /><br /> Thema<br /><br /> -   [Erstellen Sie Abhängigkeitsdiagramme aus dem code](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [Abhängigkeitsdiagramme: Referenz](../modeling/layer-diagrams-reference.md)<br />-   [Abhängigkeitsdiagramme: Richtlinien](../modeling/layer-diagrams-guidelines.md)<br />-   [Überprüfen von Code mit Abhängigkeitsdiagramme](../modeling/validate-code-with-layer-diagrams.md)|Die logische Architektur des Codes<br /><br /> Ein Abhängigkeitsdiagramm organisiert und ordnet die Elemente in einem [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Lösung abstrakten Gruppen, genannt *Ebenen*. Diese Ebenen identifizieren die Rollen, Aufgaben oder Funktionen, die diese Artefakte im System spielen.<br /><br /> Ebenendiagramme sind hilfreich, um den beabsichtigten Entwurf des Systems zu beschreiben und in der Entwicklung befindlichen Code anhand des Entwurfs zu validieren.<br /><br /> Um Ebenen zu erstellen, ziehen Sie Elemente aus dem Projektmappen-Explorer, Code Maps, der Klassenansicht und dem Objektkatalog. Verwenden Sie die Toolbox, oder klicken Sie mit der rechten Maustaste auf die Diagrammoberfläche, um neue Ebenen zu zeichnen.<br /><br /> Um vorhandene Abhängigkeiten anzuzeigen, klicken Sie mit der rechten Maustaste auf die Ebenendiagrammoberfläche, und klicken Sie dann auf **Abhängigkeiten generieren**. Um beabsichtigte Abhängigkeiten anzugeben, zeichnen Sie neue Abhängigkeiten.|  
+|*Diagramm zur Abhängigkeitseigenschaft*<br /><br /> Thema<br /><br /> -   [Erstellen von Diagrammen Abhängigkeit aus Ihrem code](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [Abhängigkeit Diagrammen: Referenz](../modeling/layer-diagrams-reference.md)<br />-   [Abhängigkeit Diagrammen: Richtlinien](../modeling/layer-diagrams-guidelines.md)<br />-   [Überprüfen von Code mit der Abhängigkeit-Diagramme](../modeling/validate-code-with-layer-diagrams.md)|Die logische Architektur des Codes<br /><br /> Ein Diagramm Abhängigkeit organisiert und ordnet die Elemente in einem [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Lösung abstrakten Gruppen, genannt *Ebenen*. Diese Ebenen identifizieren die Rollen, Aufgaben oder Funktionen, die diese Artefakte im System spielen.<br /><br /> Ebenendiagramme sind hilfreich, um den beabsichtigten Entwurf des Systems zu beschreiben und in der Entwicklung befindlichen Code anhand des Entwurfs zu validieren.<br /><br /> Um Ebenen zu erstellen, ziehen Sie Elemente aus dem Projektmappen-Explorer, Code Maps, der Klassenansicht und dem Objektkatalog. Verwenden Sie die Toolbox, oder klicken Sie mit der rechten Maustaste auf die Diagrammoberfläche, um neue Ebenen zu zeichnen.<br /><br /> Um vorhandene Abhängigkeiten anzuzeigen, klicken Sie mit der rechten Maustaste auf die Ebenendiagrammoberfläche, und klicken Sie dann auf **Abhängigkeiten generieren**. Um beabsichtigte Abhängigkeiten anzugeben, zeichnen Sie neue Abhängigkeiten.|  
   
- Das folgende Abhängigkeitsdiagramm beschreibt z. B. Abhängigkeiten zwischen Ebenen sowie die Anzahl der Elemente, die jeder Ebene zugeordnet sind:  
+ Das folgende Diagramm für die Abhängigkeitseigenschaft beschreibt z. B. Abhängigkeiten zwischen Ebenen sowie die Anzahl der Artefakte, die jeder Ebene zugeordnet sind:  
   
- ![Abhängigkeitsdiagramm für integriertes Zahlungssystem](../modeling/media/layer_integrated_dnlucerne.png "Layer_Integrated_DNLucerne")  
+ ![Diagramm der Abhängigkeit integriertes Zahlungssystem](../modeling/media/layer_integrated_dnlucerne.png "Layer_Integrated_DNLucerne")  
   
- **Abhängigkeitsdiagramm**  
+ **Diagramm zur Abhängigkeitseigenschaft**  
   
- Um sicherzustellen, dass Konflikte mit dem Entwurf nicht während der Codeentwicklung erfolgen, sind die Teams abhängigkeitsüberprüfung für Builds in Team Foundation Build ausgeführt. Außerdem erstellen Sie eine benutzerdefinierte MSBuild-Aufgabe, um Abhängigkeit Validierung in ihre Vorgänge erforderlich ist. Mithilfe von Buildberichten werden Validierungsfehler erfasst.  
+ Um sicherzustellen, während der Codeentwicklung keine Konflikte mit dem Entwurf auftreten, werden die Teams abhängigkeitsüberprüfung für Builds auf Team Foundation Build ausgeführt werden. Außerdem erstellen Sie eine benutzerdefinierte MSBuild-Aufgabe, um abhängigkeitsüberprüfung in ihrer Vorgänge Einchecken zu erfordern. Mithilfe von Buildberichten werden Validierungsfehler erfasst.  
   
  Thema  
   
 -   [Definieren des Buildprozesses](http://msdn.microsoft.com/Library/61593e10-d24b-492f-b19a-af4d85abea6b)  
   
--   [Verwenden Sie einen abgegrenzten Eincheckbuild Prozess zur Überprüfung von Änderungen](http://msdn.microsoft.com/Library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec)  
+-   [Verwenden eines abgegrenzten Eincheckbuildprozesses zur Überprüfung von Änderungen](http://msdn.microsoft.com/Library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec)  
   
 -   [Anpassen der Buildprozessvorlage](http://msdn.microsoft.com/Library/b94c58f2-ae6f-4245-bedb-82cd114f6039)  
   
-###  <a name="a-namegeneraltipsa-general-tips-for-creating-and-using-models"></a><a name="GeneralTips"></a>Allgemeine Tipps zum Erstellen und Verwenden von Modellen  
+###  <a name="GeneralTips"></a> General Tips for Creating and Using Models  
   
 -   Die meisten Diagramme bestehen aus Knoten, die durch Linien verbunden sind. Für jeden Diagrammtyp stellt die Toolbox verschiedene Arten von Knoten und Linien bereit.  
   
@@ -229,7 +213,7 @@ Elemente in Abhängigkeit von Diagrammen befinden sich im Modellierungsprojekt, 
   
 -   Um eine Linie oder Verbindung zu erstellen, klicken Sie in der Toolbox auf das entsprechende Tool, klicken Sie auf den Quellknoten und dann auf den Zielknoten. Einige Linien können nur zwischen bestimmten Arten von Knoten erstellt werden. Wenn Sie den Mauszeiger über mögliche Quellen oder Ziele bewegen, wird angezeigt, ob Sie eine Verbindung erstellen können.  
   
-###  <a name="a-nameplanningtrackinga-planning-and-tracking-work"></a><a name="PlanningTracking"></a>Planen und Nachverfolgen der Arbeit  
+###  <a name="PlanningTracking"></a> Planning and Tracking Work  
  Visual Studio-Modellierungsdiagramme sind in Team Foundation Server integriert, sodass Sie Arbeit leichter planen, verwalten und nachverfolgen können. Beide Teams verwenden Modelle, um Testfälle und Entwicklungsaufgaben zu identifizieren und ihre Arbeit einzuschätzen. Lucerne erstellt und verknüpft Team Foundation Server-Arbeitsaufgaben mit Modellelementen, wie z. B. Anwendungsfälle oder Komponenten. Auf diese Weise kann der Status überwacht werden, und die Arbeit kann bis zu den Benutzeranforderungen zurückverfolgt werden. Somit wird sichergestellt, dass die Änderungen stets den Anforderungen entsprechen.  
   
  Im Verlauf ihrer Arbeit aktualisieren die Teams die Arbeitsaufgaben, um die Zeit zu berücksichtigen, die sie mit ihren Aufgaben verbracht haben. Außerdem wird eine Überwachung und Berichterstellung des Status der Arbeit mithilfe der folgenden Team Foundation Server-Funktionen durchgeführt:  
@@ -244,11 +228,11 @@ Elemente in Abhängigkeit von Diagrammen befinden sich im Modellierungsprojekt, 
   
 -   [Nachverfolgen von Arbeit mit Visual Studio Team Services oder Team Foundation Server](http://msdn.microsoft.com/Library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)  
   
--   [Diagramme, Dashboards und Berichten für Visual Studio ALM](http://msdn.microsoft.com/Library/1f28ba6c-c5e5-46d3-9209-ede24ae78e48)  
+-   [Diagramme, Dashboards und Berichte für Visual Studio ALM](http://msdn.microsoft.com/Library/1f28ba6c-c5e5-46d3-9209-ede24ae78e48)  
   
 -   [Erstellen von Backlog und Aufgaben mit Project](http://msdn.microsoft.com/Library/be5cef4f-755f-4ffe-8dd7-876d1e02c330)  
   
-###  <a name="a-nametestvalidatecheckincodea-testing-validating-and-checking-in-code"></a><a name="TestValidateCheckInCode"></a>Testen, überprüfen und Einchecken von Code  
+###  <a name="TestValidateCheckInCode"></a> Testen, Überprüfen und Einchecken von Code  
  Beim Abschließen der einzelnen Aufgaben wird der Code von den Teams in der Team Foundation-Versionskontrolle eingecheckt. Wird dies vergessen, werden von Team Foundation Server entsprechende Erinnerungen angezeigt. Bevor Team Foundation Server das Einchecken akzeptiert, führen die Teams Komponententests und abhängigkeitsüberprüfung auf den Code anhand der Testfälle und des Entwurfs zu überprüfen. Verwenden sie Team Foundation Server zum Ausführen von Builds, automatisierte Komponententests und abhängigkeitsüberprüfung regelmäßig. Dadurch wird sichergestellt, dass der Code die folgenden Kriterien erfüllt:  
   
 -   Er funktioniert.  
@@ -271,14 +255,14 @@ Elemente in Abhängigkeit von Diagrammen befinden sich im Modellierungsprojekt, 
   
 -   [Erstellen der Anwendung](http://msdn.microsoft.com/Library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)  
   
-##  <a name="a-nameupdatingsystema-updating-the-system-using-visualization-and-modeling"></a><a name="UpdatingSystem"></a>Aktualisieren des Systems mithilfe von Visualisierung und Modellierung  
+##  <a name="UpdatingSystem"></a> Updating the System Using Visualization and Modeling  
  Lucerne und Dinner Now müssen ihre Zahlungssysteme integrieren. Die folgenden Abschnitte zeigen die Modellierungsdiagramme in Visual Studio, die beim Ausführen dieser Aufgabe helfen:  
   
 -   [Visualisieren von vorhandenem Code: Code Maps](#VisualizeCode)  
   
 -   [Definieren eines Glossars der Typen: Klassendiagramme](#DefineClasses)  
   
--   [Beschreiben der logischen Architektur: Abhängigkeitsdiagramme](#DescribeLayers)  
+-   [Beschreiben der logischen Architektur: Abhängigkeit-Diagramme](#DescribeLayers)  
   
  Thema  
   
@@ -288,14 +272,14 @@ Elemente in Abhängigkeit von Diagrammen befinden sich im Modellierungsprojekt, 
   
 -   [Modellieren der Architektur Ihrer App](../modeling/model-your-app-s-architecture.md)  
  
-###  <a name="a-namevisualizecodea-visualize-existing-code-code-maps"></a><a name="VisualizeCode"></a>Visualisieren von vorhandenem Code: Code Maps  
+###  <a name="VisualizeCode"></a> Visualisieren von vorhandenem Code: Code Maps  
  Code Maps zeigen die aktuelle Organisation und die Beziehungen im Code. Elemente werden auf der Code Map durch *Knoten* und Beziehungen durch *Links*dargestellt. Mit Code Maps können Sie die folgenden Arten von Aufgaben ausführen:  
   
 -   Untersuchen von unbekanntem Code  
   
 -   Verstehen, wo und wie sich eine vorgeschlagene Änderung auf vorhandenen Code auswirken könnte  
   
--   Suchen Sie Bereichen mit Komplexität, natürlichen Abhängigkeiten oder Muster oder anderen Bereichen, die von Verbesserungen profitieren könnten.  
+-   Suchen von Bereichen mit Komplexität, natürlichen Abhängigkeiten oder Muster oder anderen Bereichen, die von Verbesserungen profitieren könnten.  
   
  Dinner Now muss z. B. die Kosten für die Aktualisierung der PaymentProcessing-Komponente schätzen. Diese hängen teilweise davon ab, wie sehr sich diese Änderung auf andere Teile des Systems auswirkt. Zur Verdeutlichung erstellt einer der Dinner Now-Entwickler Code Maps aus dem Code und richtet den Fokus des Projektumfangs auf die Bereiche aus, die durch die Änderung betroffen sein könnten.  
   
@@ -307,7 +291,7 @@ Elemente in Abhängigkeit von Diagrammen befinden sich im Modellierungsprojekt, 
   
  Der Entwickler untersucht die Code Map, indem er die PaymentProcessing-Klasse erweitert und die zugehörigen Member auswählt, um die potenziell betroffenen Bereiche anzuzeigen:  
   
- ![Methoden in der PaymentProcessing und Abhängigkeiten](../modeling/media/depgraph_expandeddn.png "DepGraph_ExpandedDN")  
+ ![Methoden in "PaymentProcessing" und Abhängigkeiten](../modeling/media/depgraph_expandeddn.png "DepGraph_ExpandedDN")  
   
  **Methoden in der PaymentProcessing-Klasse und ihre Abhängigkeiten**  
   
@@ -323,7 +307,7 @@ Elemente in Abhängigkeit von Diagrammen befinden sich im Modellierungsprojekt, 
   
  ![Abhängigkeitsdiagramm mit neu organisiertem Code](../modeling/media/depgraph_integrated.png "DepGraph_Integrated")  
   
- **Code Map mit neu organisiertem code**  
+ **Code Map mit neu organisiertem Code**  
   
  Diese Code Map zeigt, dass sich die PaymentApprover-Klasse jetzt im DinnerNow.Business-Namespace befindet und über ein paar neue Methoden verfügt. Die Dinner Now-Transaktionsklassen verfügen jetzt über einen eigenen PaymentSystem-Namespace, mit dem der Code später leichter behandelt werden kann.  
   
@@ -335,7 +319,7 @@ Elemente in Abhängigkeit von Diagrammen befinden sich im Modellierungsprojekt, 
   
      Erstellen Sie für eine schnelle Übersicht über kompilierten Code eine leere Code Map, und ziehen Sie dann Assemblydateien oder Binärdateien auf die Oberfläche der Code Map.  
   
--   Um bestimmte Code- oder Projektmappenelemente zu untersuchen, wählen Sie im Projektmappen-Explorer die Elemente und Beziehungen aus, die Sie visualisieren möchten. Sie können dann entweder eine neue Code Map generieren oder einer vorhandenen Code Map ausgewählte Elemente hinzufügen. Finden Sie unter [projektmappenübergreifendes Zuordnen von Abhängigkeiten](../modeling/map-dependencies-across-your-solutions.md).  
+-   Um bestimmte Code- oder Projektmappenelemente zu untersuchen, wählen Sie im Projektmappen-Explorer die Elemente und Beziehungen aus, die Sie visualisieren möchten. Sie können dann entweder eine neue Code Map generieren oder einer vorhandenen Code Map ausgewählte Elemente hinzufügen. Finden Sie unter [Zuordnen von lösungsübergreifenden Abhängigkeiten](../modeling/map-dependencies-across-your-solutions.md).  
   
 -   Um die Code Map einfacher zu untersuchen, können Sie das Layout den auszuführenden Aufgaben entsprechend neu anordnen.  
   
@@ -354,15 +338,15 @@ Elemente in Abhängigkeit von Diagrammen befinden sich im Modellierungsprojekt, 
   
 |**Diagramm**|**Beschreibt**|  
 |-----------------|-------------------|  
-|Abhängigkeitsdiagramm|Die logische Architektur des Systems Verwenden Sie abhängigkeitsüberprüfung, um sicherzustellen, dass der Code konsistent mit dem Entwurf bleibt.<br /><br /> Um vorhandene Dependencys oder vorgesehenen Dependencys zu identifizieren, erstellen Sie eine Code Map, und gruppieren Sie verwandte Elemente. Erstellen ein Abhängigkeitsdiagramm, finden Sie unter:<br /><br /> -   [Erstellen Sie Abhängigkeitsdiagramme aus dem code](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [Abhängigkeitsdiagramme: Richtlinien](../modeling/layer-diagrams-guidelines.md)|  
-|Klassendiagramm (codebasiert)|Vorhandene Klassen in Code für ein bestimmtes Projekt<br /><br /> Verwenden Sie den Klassen-Designer, um eine vorhandene Klasse in Code zu visualisieren und zu ändern.<br /><br /> Finden Sie unter [Gewusst wie: Hinzufügen von Klassendiagrammen zu Projekten (Klassen-Designer)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).|  
+|Diagramm zur Abhängigkeitseigenschaft|Die logische Architektur des Systems Verwenden Sie abhängigkeitsüberprüfung, um sicherzustellen, dass der Code konsistent mit dem Entwurf bleibt.<br /><br /> Um vorhandene Dependencys oder vorgesehenen Dependencys identifizieren zu können, erstellen Sie eine Code Map, und gruppieren Sie zugehörige Elemente. Um eine Abhängigkeit Diagramm erstellen zu können, finden Sie unter:<br /><br /> -   [Erstellen von Diagrammen Abhängigkeit aus Ihrem code](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [Abhängigkeit Diagrammen: Richtlinien](../modeling/layer-diagrams-guidelines.md)|  
+|Klassendiagramm (codebasiert)|Vorhandene Klassen in Code für ein bestimmtes Projekt<br /><br /> Verwenden Sie den Klassen-Designer, um eine vorhandene Klasse in Code zu visualisieren und zu ändern.<br /><br /> Siehe [How to: Add Class Diagrams to Projects (Class Designer)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).|  
   
-###  <a name="a-namedefineclassesa-define-a-glossary-of-types-class-diagrams"></a><a name="DefineClasses"></a>Definieren eines Glossars der Typen: Klassendiagramme  
+###  <a name="DefineClasses"></a> Definieren eines Glossars der Typen: Klassendiagramme  
  Klassendiagramme definieren die am System beteiligten Entitäten, Begriffe oder Konzepte sowie ihre Beziehungen untereinander. Beispielsweise können Sie diese Diagramme während der Entwicklung verwenden, um die Attribute und Vorgänge für jede Klasse unabhängig von Implementierungssprache oder Format zu beschreiben.  
   
  Um die am Anwendungsfall "Process Payment" (Zahlung verarbeiten) beteiligten Entitäten zu erläutern und zu besprechen, zeichnet Lucerne das folgende Klassendiagramm:  
   
- ![Process Payment-Entitäten in einem Klassendiagramm](../modeling/media/uml_payentities.png "UML_PayEntities")  
+ ![Process Payment-Entitäten im Klassendiagramm](../modeling/media/uml_payentities.png "UML_PayEntities")  
   
  **Process Payment-Entitäten in einem Klassendiagramm**  
   
@@ -414,7 +398,7 @@ Elemente in Abhängigkeit von Diagrammen befinden sich im Modellierungsprojekt, 
   
 -   Ein allgemeines Glossar von Begriffen, die zum Erläutern der Benutzeranforderungen und der am System beteiligten Entitäten verwendet werden. Finden Sie unter [Modellieren von benutzeranforderungen](../modeling/model-user-requirements.md).  
   
--   Typen, die von Teilen des Systems verwendet werden, wie z. B. Komponenten, unabhängig von ihrer Implementierung. Finden Sie unter [Modellieren der Architektur Ihrer app](../modeling/model-your-app-s-architecture.md).  
+-   Typen, die von Teilen des Systems verwendet werden, wie z. B. Komponenten, unabhängig von ihrer Implementierung. Finden Sie unter [modellieren Ihrer app-Architektur](../modeling/model-your-app-s-architecture.md).  
   
 -   Beziehungen, wie z. B. Abhängigkeiten zwischen Typen. Sie können z. B. anzeigen, dass ein Typ mehreren Instanzen eines anderen Typs zugeordnet sein kann.  
   
@@ -422,17 +406,17 @@ Elemente in Abhängigkeit von Diagrammen befinden sich im Modellierungsprojekt, 
   
 |**Diagramm**|**Beschreibung**|  
 |-----------------|---------------------|  
-|Abhängigkeitsdiagramm|Definieren Sie die logische Architektur des Systems in Bezug auf Klassen.<br /><br /> Verwenden Sie abhängigkeitsüberprüfung, um sicherzustellen, dass der Code konsistent mit dem Entwurf bleibt.<br /><br /> Thema<br /><br /> -   [Erstellen Sie Abhängigkeitsdiagramme aus dem code](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [Abhängigkeitsdiagramme: Referenz](../modeling/layer-diagrams-reference.md)<br />-   [Abhängigkeitsdiagramme: Richtlinien](../modeling/layer-diagrams-guidelines.md)<br />-   [Überprüfen von Code mit Abhängigkeitsdiagramme](../modeling/validate-code-with-layer-diagrams.md)|  
-|Code Map|Visualisieren Sie die Organisation und Beziehungen in vorhandenem Code.<br /><br /> Um Klassen, ihre Beziehungen und ihre Methoden zu identifizieren, erstellen Sie eine Code Map, in der diese Elemente angezeigt werden.<br /><br /> Thema<br /><br /> -   [Projektmappenübergreifendes Zuordnen von Abhängigkeiten](../modeling/map-dependencies-across-your-solutions.md)|  
+|Diagramm zur Abhängigkeitseigenschaft|Definieren Sie die logische Architektur des Systems in Bezug auf Klassen.<br /><br /> Verwenden Sie abhängigkeitsüberprüfung, um sicherzustellen, dass der Code konsistent mit dem Entwurf bleibt.<br /><br /> Thema<br /><br /> -   [Erstellen von Diagrammen Abhängigkeit aus Ihrem code](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [Abhängigkeit Diagrammen: Referenz](../modeling/layer-diagrams-reference.md)<br />-   [Abhängigkeit Diagrammen: Richtlinien](../modeling/layer-diagrams-guidelines.md)<br />-   [Überprüfen von Code mit der Abhängigkeit-Diagramme](../modeling/validate-code-with-layer-diagrams.md)|  
+|Code Map|Visualisieren Sie die Organisation und Beziehungen in vorhandenem Code.<br /><br /> Um Klassen, ihre Beziehungen und ihre Methoden zu identifizieren, erstellen Sie eine Code Map, in der diese Elemente angezeigt werden.<br /><br /> Thema<br /><br /> -   [Zuordnen von lösungsübergreifenden Abhängigkeiten](../modeling/map-dependencies-across-your-solutions.md)|  
   
-###  <a name="a-namedescribelayersa-describe-the-logical-architecture-dependency-diagrams"></a><a name="DescribeLayers"></a>Beschreiben der logischen Architektur: Abhängigkeitsdiagramme  
- Abhängigkeitsdiagramme beschreiben die logische Architektur eines Systems, indem die Artefakte in der Projektmappe in abstrakten Gruppen organisieren oder *Ebenen*. Artefakte können viele Dinge sein, z. B. Namespaces, Projekte, Klassen, Methoden usw. Ebenen stellen die Rollen oder Aufgaben dar, die die Artefakte im System ausführen. Sie können auch eine Ebenenvalidierung in die Build- und Eincheckvorgänge einschließen, um sicherzustellen, dass der Code konsistent mit dem Entwurf bleibt.  
+###  <a name="DescribeLayers"></a>Beschreiben der logischen Architektur: Abhängigkeit-Diagramme  
+ Abhängigkeit Diagramme beschreiben die logische Architektur eines Systems, indem die Artefakte in der Projektmappe in abstrakten Gruppen organisieren oder *Ebenen*. Artefakte können viele Dinge sein, z. B. Namespaces, Projekte, Klassen, Methoden usw. Ebenen stellen die Rollen oder Aufgaben dar, die die Artefakte im System ausführen. Sie können auch eine Ebenenvalidierung in die Build- und Eincheckvorgänge einschließen, um sicherzustellen, dass der Code konsistent mit dem Entwurf bleibt.  
   
- Den Code verwenden konsistent mit dem Entwurf, wenn Dinner Now und Lucerne das folgende Abhängigkeitsdiagramm So überprüfen Sie ihren Code während der Entwicklung:  
+ Dinner Now und Lucerne verwenden die folgende Abhängigkeit Diagramm um den Code mit dem Entwurf konsistent zu halten, um ihren Code zu überprüfen, während der Entwicklung:  
   
- ![Abhängigkeitsdiagramm für integriertes Zahlungssystem](../modeling/media/layer_integrated_dnlucerne.png "Layer_Integrated_DNLucerne")  
+ ![Diagramm der Abhängigkeit integriertes Zahlungssystem](../modeling/media/layer_integrated_dnlucerne.png "Layer_Integrated_DNLucerne")  
   
- **Abhängigkeitsdiagramm für Dinner Now nach der Integration mit Lucerne**  
+ **Abhängigkeit-Diagramm für Dinner Now nach der Integration mit Lucerne**  
   
  Die Ebenen in diesem Diagramm sind mit den entsprechenden Lösungsartefakten von Dinner Now und Lucerne verknüpft. Die Business-Ebene ist z. B. mit dem DinnerNow.Business-Namespace und seinen Membern verknüpft, die nun die PaymentApprover-Klasse einschließen. Die Resource Access-Ebene ist mit dem DinnerNow.Data-Namespace verknüpft. Die Pfeile (bzw. *Abhängigkeiten*) geben an, dass die Funktionen in der Resource Access-Ebene nur von der Business-Ebene verwendet werden können. Beim Aktualisieren des Codes durch die Teams wird regelmäßig eine Ebenenvalidierung ausgeführt, um Konflikte bei ihrer Entstehung sofort erkennen und beheben zu können.  
   
@@ -448,10 +432,10 @@ Elemente in Abhängigkeit von Diagrammen befinden sich im Modellierungsprojekt, 
   
  ![Abhängigkeitsdiagramm ohne PaymentProcessing](../modeling/media/depgraph_nomore.png "DepGraph_NoMore")  
   
- **Code Map ohne PaymentProcessing**  
+ **Code Map ohne "PaymentProcessing"**  
   
-#### <a name="drawing-a-dependency-diagram"></a>Zeichnen ein Abhängigkeitsdiagramm  
- Ein Abhängigkeitsdiagramm umfasst die folgenden Hauptfunktionen:  
+#### <a name="drawing-a-dependency-diagram"></a>Zeichnen ein Diagramm zur Abhängigkeitseigenschaft  
+ Eine Abhängigkeit Diagramm umfasst die folgenden Hauptfunktionen:  
   
 -   *Ebenen* beschreiben logische Gruppen von Artefakten.  
   
@@ -467,24 +451,24 @@ Elemente in Abhängigkeit von Diagrammen befinden sich im Modellierungsprojekt, 
   
     -   Wenn eine Ebene andere Ebenen enthält, die mit Artefakten verknüpft sind, ist die Containerebene ebenfalls mit diesen Artefakten verknüpft, obwohl in der Zahl auf der Containerebene diese Artefakte nicht berücksichtigt sind.  
   
-     Um die Elemente anzuzeigen, die mit einer Ebene verknüpft sind, mit der rechten Maustaste der Abhängigkeits, und klicken Sie dann auf **Links anzeigen** öffnen **Ebenen-Explorer**.  
+     Um die Artefakte anzuzeigen, die auf eine Ebene verknüpft sind, mit der rechten Maustaste der Abhängigkeitsverhältnis, und klicken Sie dann auf **Links anzeigen** öffnen **Ebenen-Explorer**.  
   
 -   Eine *Abhängigkeit* gibt an, dass eine Ebene die Funktionen in einer anderen Ebene verwenden darf, jedoch nicht umgekehrt. Eine *bidirektionale Abhängigkeit* gibt an, dass eine Ebene die Funktionen in einer anderen Ebene verwenden darf und umgekehrt.  
   
-     Um vorhandene Abhängigkeiten im Diagramm Abhängigkeit anzuzeigen, mit der rechten Maustaste in der Diagrammoberfläche, und klicken Sie dann auf **Abhängigkeiten generieren**. Um beabsichtigte Abhängigkeiten zu beschreiben, zeichnen Sie neue.  
+     Um vorhandene Abhängigkeiten im Diagramm Abhängigkeit anzuzeigen, mit der rechten Maustaste der Diagrammoberfläche, und klicken Sie dann auf **Abhängigkeiten generieren**. Um beabsichtigte Abhängigkeiten zu beschreiben, zeichnen Sie neue.  
   
  Thema  
   
--   [Erstellen Sie Abhängigkeitsdiagramme aus dem code](../modeling/create-layer-diagrams-from-your-code.md)  
+-   [Erstellen von Abhängigkeitsdiagrammen aus dem Code](../modeling/create-layer-diagrams-from-your-code.md)  
   
 -   [Abhängigkeitsdiagramme: Referenz](../modeling/layer-diagrams-reference.md)  
   
 -   [Abhängigkeitsdiagramme: Richtlinien](../modeling/layer-diagrams-guidelines.md)  
   
--   [Überprüfen von Code mit Abhängigkeitsdiagramme](../modeling/validate-code-with-layer-diagrams.md)  
+-   [Überprüfen von Code mit Abhängigkeitsdiagrammen](../modeling/validate-code-with-layer-diagrams.md)  
   
-#### <a name="summary-strengths-of-dependency-diagrams"></a>Zusammenfassung: Vorteile von Abhängigkeitsdiagramme  
- Abhängigkeitsdiagramme können Sie Folgendes:  
+#### <a name="summary-strengths-of-dependency-diagrams"></a>Zusammenfassung: Vorteile von Abhängigkeit-Diagramme  
+ Abhängigkeit Diagrammen können Sie Folgendes:  
   
 -   Beschreiben der logischen Architektur eines Systems entsprechend den Funktionen der zugehörigen Artefakte  
   
@@ -494,20 +478,19 @@ Elemente in Abhängigkeit von Diagrammen befinden sich im Modellierungsprojekt, 
   
 |**Diagramm**|**Beschreibung**|  
 |-----------------|---------------------|  
-|Code Map|Visualisieren Sie die Organisation und Beziehungen in vorhandenem Code.<br /><br /> Um Ebenen zu erstellen, generieren Sie eine Code Map, und gruppieren Sie dann die Elemente auf der Code Map als potenzielle Ebenen. Ziehen Sie die Gruppen aus der Zuordnung in das Abhängigkeitsdiagramm.<br /><br /> Thema<br /><br /> -   [Projektmappenübergreifendes Zuordnen von Abhängigkeiten](../modeling/map-dependencies-across-your-solutions.md)<br />-   [Durchsuchen und Neuanordnen von Code maps](../modeling/browse-and-rearrange-code-maps.md)|  
+|Code Map|Visualisieren Sie die Organisation und Beziehungen in vorhandenem Code.<br /><br /> Um Ebenen zu erstellen, generieren Sie eine Code Map, und gruppieren Sie dann die Elemente auf der Code Map als potenzielle Ebenen. Ziehen Sie die Gruppen aus der Zuordnung in das Diagramm Abhängigkeit.<br /><br /> Thema<br /><br /> -   [Zuordnen von lösungsübergreifenden Abhängigkeiten](../modeling/map-dependencies-across-your-solutions.md)<br />-   [Durchsuchen und Neuanordnen von Code maps](../modeling/browse-and-rearrange-code-maps.md)|  
   
 ## <a name="external-resources"></a>Externe Ressourcen  
   
 |**Kategorie**|**Links**|  
 |------------------|---------------|  
-|**Foren**|-   [Visual Studio-Visualisierungs & Modellierungstools](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio-Visualisierungs & Modeling SDK (DSL-Tools)](http://go.microsoft.com/fwlink/?LinkId=184721)|  
+|**Foren**|-   [Visual Studio-Visualisierungs- & Modellierungstools](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio Visualization & Modeling SDK (DSL Tools)](http://go.microsoft.com/fwlink/?LinkId=184721)|  
   
 ## <a name="see-also"></a>Siehe auch  
  [Visualisieren von code](../modeling/visualize-code.md)   
  [Verwenden von Modellen im Entwicklungsprozess](../modeling/use-models-in-your-development-process.md)   
- [Verwenden von Modellen in der Agile-Entwicklung](http://msdn.microsoft.com/en-us/592ac27c-3d3e-454a-9c38-b76658ed137f)   
+ [Verwenden von Modellen in Agile development](http://msdn.microsoft.com/en-us/592ac27c-3d3e-454a-9c38-b76658ed137f)   
  [Überprüfen des Systems während der Entwicklung](../modeling/validate-your-system-during-development.md)   
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
  
-

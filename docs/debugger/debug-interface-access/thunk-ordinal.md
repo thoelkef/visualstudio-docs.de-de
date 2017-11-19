@@ -1,73 +1,72 @@
 ---
-title: "THUNK_ORDINAL | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Thunk_Ordinal-Enumeration"
+title: THUNK_ORDINAL | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: Thunk_Ordinal enumeration
 ms.assetid: 026f98a9-36b8-41ef-8a72-12d7cbc2d362
-caps.latest.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 3a2711ab101299b47e954e56fcbbae98d9f5fdb6
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# THUNK_ORDINAL
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Legt Thunk Typen festgelegt.  
+# <a name="thunkordinal"></a>THUNK_ORDINAL
+Kennzeichnet Thunk-Typen.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-typedef enum THUNK_ORDINAL {   
-   THUNK_ORDINAL_NOTYPE,  
-   THUNK_ORDINAL_ADJUSTOR,  
-   THUNK_ORDINAL_VCALL,  
-   THUNK_ORDINAL_PCODE,  
-   THUNK_ORDINAL_LOAD   
+```C++  
+typedef enum THUNK_ORDINAL {   
+   THUNK_ORDINAL_NOTYPE,  
+   THUNK_ORDINAL_ADJUSTOR,  
+   THUNK_ORDINAL_VCALL,  
+   THUNK_ORDINAL_PCODE,  
+   THUNK_ORDINAL_LOAD   
   
-   // trampoline thunk ordinals - only for use in Trampoline thunk symbols  
-   THUNK_ORDINAL_TRAMP_INCREMENTAL,  
-   THUNK_ORDINAL_TRAMP_BRANCHISLAND,  
+   // trampoline thunk ordinals - only for use in Trampoline thunk symbols  
+   THUNK_ORDINAL_TRAMP_INCREMENTAL,  
+   THUNK_ORDINAL_TRAMP_BRANCHISLAND,  
 } THUNK_ORDINAL;  
 ```  
   
-## Elements  
- THUNK\_ORDINAL\_NOTYPE  
- Standardwert thunk.  
+## <a name="elements"></a>Elements  
+ THUNK_ORDINAL_NOTYPE  
+ Standard-Thunk.  
   
- THUNK\_ORDINAL\_ADJUSTOR  
- Ein `this`\-Steuerelement thunk.  
+ THUNK_ORDINAL_ADJUSTOR  
+ Ein `this` Abwicklung Thunk.  
   
- THUNK\_ORDINAL\_VCALL  
- Verbindungsanforderungsthunk.  
+ THUNK_ORDINAL_VCALL  
+ Virtueller Thunk.  
   
- THUNK\_ORDINAL\_PCODE  
- P\-Code Thunk.  
+ THUNK_ORDINAL_PCODE  
+ P-Code Thunk.  
   
- THUNK\_ORDINAL\_LOAD  
- Verzögern thunk laden.  
+ THUNK_ORDINAL_LOAD  
+ Verzögert Thunk.  
   
- THUNK\_ORDINAL\_TRAMP\_INCREMENTAL  
- Inkrementeller Trampoline thunk \(ein Trampoline thunk wird verwendet, um Aufrufe von einem Speicherbereich zu einem anderen zu wechseln.\)  
+ THUNK_ORDINAL_TRAMP_INCREMENTAL  
+ Inkrementelle Trampoline Thunk (ein Thunk Trampoline dient zum Aufrufen aus einem Speicherbereich zu einem anderen zu springen).  
   
- THUNK\_ORDINAL\_TRAMP\_BRANCHISLAND  
- Verzweigungspunkt\-Trampolinethunk.  
+ THUNK_ORDINAL_TRAMP_BRANCHISLAND  
+ Verzweigung Punkt Trampoline Thunk.  
   
-## Hinweise  
- Die Werte in dieser Enumeration werden von einem Aufruf der [IDiaSymbol::get\_thunkOrdinal](../../debugger/debug-interface-access/idiasymbol-get-thunkordinal.md)\-Methode zurückgegeben.  
+## <a name="remarks"></a>Hinweise  
+ Die Werte in dieser Enumeration werden zurückgegeben, von einem Aufruf der [idiasymbol:: Get_thunkordinal](../../debugger/debug-interface-access/idiasymbol-get-thunkordinal.md) Methode.  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  Header: cvconst.h  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Enumerationen und Strukturen](../../debugger/debug-interface-access/enumerations-and-structures.md)   
- [IDiaSymbol::get\_thunkOrdinal](../../debugger/debug-interface-access/idiasymbol-get-thunkordinal.md)
+ [IDiaSymbol::get_thunkOrdinal](../../debugger/debug-interface-access/idiasymbol-get-thunkordinal.md)

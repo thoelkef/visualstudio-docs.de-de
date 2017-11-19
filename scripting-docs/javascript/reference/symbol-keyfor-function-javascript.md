@@ -1,44 +1,47 @@
 ---
-title: "Symbol.keyFor-Funktion (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
+title: Symbol.keyFor-Funktion (JavaScript) | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
 ms.assetid: f0b6f034-6d0a-421c-b1c6-52489411e9a3
-caps.latest.revision: 2
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 2
+caps.latest.revision: "2"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 22f671a1ea14ce56c52fccbce75893516a10bcc5
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# Symbol.keyFor-Funktion (JavaScript)
+# <a name="symbolkeyfor-function-javascript"></a>Symbol.keyFor-Funktion (JavaScript)
 Gibt den Schlüssel eines angegebenen Symbols zurück.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```vb  
 Symbol.keyFor(sym);  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `sym`  
- Erforderlich.  Das Symbolobjekt.  
+ Erforderlich. Das Symbolobjekt.  
   
-## Hinweise  
+## <a name="remarks"></a>Hinweise  
  Diese Methode sucht das Symbol in der globalen Symbolregistrierung.  
   
-## Beispiel  
+## <a name="example"></a>Beispiel  
   
-```javascript  
+```JavaScript  
 // Local symbol  
 var sym1 = Symbol("desc");  
 // Global symbol  
@@ -52,5 +55,5 @@ console.log(Symbol.keyFor(sym2));
 // desc  
 ```  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  [!INCLUDE[jsv12](../../javascript/reference/includes/jsv12-md.md)]

@@ -1,58 +1,58 @@
 ---
-title: "Registerkarte &quot;Ausgabe&quot;, Dialogfeld &quot;Meldungsoptionen&quot; | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Meldungsoptionen, Ausgabe"
+title: Registerkarte Ausgabe, Optionen (Dialogfeld)-Nachricht | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: message options, Output
 ms.assetid: 22dd48c2-6d17-41b1-b84c-9ddeaef68411
-caps.latest.revision: 4
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 4
+caps.latest.revision: "4"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 0de62e38a3be36ae144b2311b89b51aac0c45b01
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Registerkarte &quot;Ausgabe&quot;, Dialogfeld &quot;Meldungsoptionen&quot;
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Verwenden Sie die Registerkarte **Ausgabe**, um anzugeben, welche Daten der einzelnen Meldungen in der [Meldungsansicht](../debugger/messages-view.md) aufgeführt werden sollen.  Klicken Sie im Menü **Spy** auf **Meldungen protokollieren**, um das Dialogfeld [Meldungsoptionen](../debugger/message-options-dialog-box.md) anzuzeigen.  
+# <a name="output-tab-message-options-dialog-box"></a>Registerkarte "Ausgabe", Dialogfeld "Meldungsoptionen"
+Verwenden der **Ausgabe** Registerkarte angeben, welche Daten aus jeder Nachricht zur Liste im [Ansicht "Nachrichten"](../debugger/messages-view.md). Zum Anzeigen der [Nachricht Optionen (Dialogfeld)](../debugger/message-options-dialog-box.md), wählen Sie **Protokollmeldungen** aus der **Spy++** Menü.  
   
- Auf der Registerkarte **Ausgabe** sind die folgenden Einstellungen verfügbar:  
+ Die folgenden Einstellungen sind verfügbar, auf die **Ausgabe** Registerkarte:  
   
  **Zeilennummern**  
- Zeigt Zeilennummern an.  
+ Anzeigen von Zeilennummern.  
   
- **Meldungsschachtelungsebene**  
- Stellt geschachtelten Meldungen einen Punkt pro Ebene voran.  
+ **Die Schachtelung auf Nachrichtenebene**  
+ Geschachtelte Nachrichten mit einem Punkt Ebene des einzelnen-Präfix.  
   
- **Nicht formatierte Meldungsparameter**  
- Zeigt die Hexadezimalwerte **wParam** und **lParam** an.  
+ **Meldungsparameter**  
+ Anzeigen der Hexadezimalwert **wParam** und **lParam** Werte.  
   
- **Decodierte Meldungsparameter**  
- Zeigt die Ergebnisse der meldungsspezifischen Decodierung des **wParam**\-Werts und des **lParam**\-Werts an.  
+ **Decodierte Nachricht-Parameter**  
+ Zeigt die Ergebnisse der spezifischen Message-Decodierung von der **wParam** und **lParam** Werte.  
   
- **Nicht formatierte Rückgabewerte**  
- Zeigt den zurückgegebenen **lResult**\-Hexadezimalwert an.  
+ **RAW-Rückgabewerte**  
+ Anzeigen der Hexadezimalwert **lResult** Rückgabewert.  
   
  **Decodierte Rückgabewerte**  
- Zeigt die Ergebnisse der meldungsspezifischen Decodierung des **lResult**\-Rückgabewerts an.  
+ Zeigt die Ergebnisse der spezifischen Message-Decodierung von der **lResult** Rückgabewert.  
   
- **Zeitpunkt der Meldungssendung \(nur bereitgestellte Meldungen\)**  
- Die seit dem Starten des Windows\-Systems verstrichene Zeit \(nur für bereitgestellte Meldungen\).  
+ **Zeitpunkt der Ursprung**  
+ Die verstrichene Zeit seit dem Start der Windows-System (für gesendete Nachrichten).  
   
- **Meldungsmausposition \(nur bereitgestellte Meldungen\)**  
- Die Bildschirmkoordinaten der Maus beim Bereitstellen der Meldung \(nur für bereitgestellte Meldungen\).  
+ **Position des Mauszeigers Nachricht**  
+ Die Bildschirmkoordinaten der Maus, wenn die Nachricht (für gesendete Nachrichten) bereitgestellt wurde.  
   
- **Zeilen maximal**  
- Beschränkt die Anzahl der Zeilen, die in der gegenwärtig ausgewählten Meldungsansicht beibehalten werden.  
+ **Maximale Zeilen**  
+ Die Anzahl der Zeilen, die in der aktuell ausgewählten Ansicht "Nachrichten" aufbewahrt werden.  
   
- **Nachrichten in der angegebenen Datei protokollieren**  
- Geben Sie eine Ausgabedatei für das Meldungsprotokoll an.  Diese Ausgabedatei wird gleichzeitig mit dem Meldungsprotokollfenster geschrieben.  
+ **Protokollieren von Meldungen auch in Datei**  
+ Geben Sie eine Ausgabedatei für das Message-Protokoll. Dieser Ausgabedatei wird gleichzeitig mit Nachrichtenfenster Protokoll geschrieben.  
   
- **Als Voreinstellung speichern**  
- Speichert die vorangehenden Einstellungen für neue Meldungsstreamfenster.  Diese Einstellungen werden gespeichert, wenn Sie Spy\+\+ beenden.
+ **Einstellungen als Standard speichern**  
+ Speichern Sie die vorherigen Einstellungen für neue Fenster des Nachrichten-Datenstrom. Diese Einstellungen werden gespeichert, wenn Sie Spy++ beenden.

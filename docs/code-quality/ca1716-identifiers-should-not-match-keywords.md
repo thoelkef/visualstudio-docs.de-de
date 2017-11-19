@@ -1,54 +1,55 @@
 ---
-title: "CA1716: Bezeichner sollten nicht mit Schl&#252;sselw&#246;rtern &#252;bereinstimmen | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IdentifiersShouldNotMatchKeywords"
-  - "CA1716"
-helpviewer_keywords: 
-  - "IdentifiersShouldNotMatchKeywords"
-  - "CA1716"
+title: "CA1716: Bezeichner sollten nicht mit Schlüsselwörtern übereinstimmen | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IdentifiersShouldNotMatchKeywords
+- CA1716
+helpviewer_keywords:
+- IdentifiersShouldNotMatchKeywords
+- CA1716
 ms.assetid: 900cc8a1-1089-4069-a4ce-10b109ac4fab
-caps.latest.revision: 21
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 21
+caps.latest.revision: "21"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 619fc7867d14a26f2c3b674b4b8ac8b2d8fba114
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# CA1716: Bezeichner sollten nicht mit Schl&#252;sselw&#246;rtern &#252;bereinstimmen
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="ca1716-identifiers-should-not-match-keywords"></a>CA1716: Bezeichner sollten nicht mit Schlüsselwörtern übereinstimmen
 |||  
 |-|-|  
 |TypeName|IdentifiersShouldNotMatchKeywords|  
 |CheckId|CA1716|  
-|Kategorie \(Category\)|Microsoft.Naming|  
+|Kategorie|Microsoft.Naming|  
 |Unterbrechende Änderung|Breaking|  
   
-## Ursache  
- Der Name eines Namespaces, eines Typs oder eines virtuellen Members oder eines Schnittstellenmembers stimmt mit einem reservierten Schlüsselwort in einer Programmiersprache überein.  
+## <a name="cause"></a>Ursache  
+ Ein Namen für einen Namespace, einen Typ oder ein Element Schnittstellenmembers entspricht ein reserviertes Schlüsselwort in einer Programmiersprache Ihrer Wahl.  
   
-## Regelbeschreibung  
- Bezeichner für Namespaces, Typen und virtuelle sowie Schnittstellenmember sollten nicht mit Schlüsselwörtern übereinstimmen, die in Programmiersprachen definiert sind, die auf die Common Language Runtime abzielen.  Je nach der verwendeten Sprache und dem Schlüsselwort können Compilerfehler und Mehrdeutigkeiten die Verwendung der Bibliothek erschweren.  
+## <a name="rule-description"></a>Regelbeschreibung  
+ Bezeichner für Namespaces, Typen und virtuelle und Schnittstellenmember sollten nicht übereinstimmen, Schlüsselwörter, die von Sprachen definiert werden, die die common Language Runtime abzielen. Abhängig von der Sprache, die verwendet wird und das Schlüsselwort können Compilerfehlern und -Mehrdeutigkeiten die Verwendung die Bibliothek erschweren.  
   
- Durch diese Regel wird ein Vergleich mit Schlüsselwörtern folgender Sprachen vorgenommen:  
+ Diese Regel überprüft anhand von Schlüsselwörtern in den folgenden Sprachen:  
   
 -   Visual Basic  
   
--   C\#  
+-   C#  
   
--   C\+\+\/CLI  
+-   C++/CLI  
   
- Ein Vergleich ohne Berücksichtigung von Groß\- und Kleinschreibung wird für [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]\-Schlüsselwörter verwendet, und ein Vergleich unter Berücksichtigung von Groß\-\/Kleinschreibung wird für die anderen Sprachen verwendet.  
+ Groß-und Kleinschreibung unterschieden wird zum [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] -Schlüsselwörter und Groß-/ kleinschreibungsvergleich für die anderen Sprachen verwendet wird.  
   
-## Behandeln von Verstößen  
- Wählen Sie einen Namen aus, der in der Liste der Schlüsselwörter nicht angezeigt wird.  
+## <a name="how-to-fix-violations"></a>Behandeln von Verstößen  
+ Wählen Sie einen Namen, der nicht angezeigt wird, in der Liste der Schlüsselwörter.  
   
-## Wann sollten Warnungen unterdrückt werden?  
- Sie können eine Warnung von dieser Regel unterdrücken, wenn Sie sicher sind, dass der Bezeichner keine Benutzer der API verwirrt und dass die Bibliothek in allen verfügbaren Sprachen in [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] verwendbar ist.
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?  
+ Sie können eine Warnung dieser Regel unterdrücken, wenn Sie überzeugt sind, dass der Bezeichner keine Benutzer der API verwirrt und, dass die Bibliothek verwendet werden, kann in allen verfügbaren Sprachen in der [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].

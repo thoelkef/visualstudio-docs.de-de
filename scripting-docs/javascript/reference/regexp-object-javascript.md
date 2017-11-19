@@ -1,130 +1,77 @@
 ---
-title: "RegExp-Objekt (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "RegExp"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "RegExp-Objekt"
-  - "RegExp-Objekt, Übersicht"
+title: RegExp-Objekt (JavaScript) | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: RegExp
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- RegExp object, overview
+- RegExp object
 ms.assetid: 7f6b1073-8cbb-49ed-94b6-56833ba663c5
-caps.latest.revision: 12
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: b7319e4556721bcfd397061ce525acfb3278c6b9
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# RegExp-Objekt (JavaScript)
-Ein systeminternes globales Objekt, das die Informationen zu den Ergebnissen des übereinstimmenden Musters des regulären Ausdrucks speichert.  
+# <a name="regexp-object-javascript"></a>RegExp-Objekt (JavaScript)
+Ein systeminternes globales Objekt, das speichert Informationen zu den Ergebnissen des Muster eines regulären Ausdrucks übereinstimmt.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
   
 RegExp.property   
 ```  
   
-## Hinweise  
- Das erforderliche *Eigenschaftargument* kann eine der `RegExp`\-Objekteigenschaften sein.  
+## <a name="remarks"></a>Hinweise  
+ Die erforderliche *Eigenschaft* Argument kann eines der `RegExp` -Objekteigenschaften.  
   
- Das `RegExp`\-Objekt kann nicht direkt erstellt werden, ist jedoch stets zur Verwendung verfügbar.  Bis eine Suche mit einem regulärem Ausdruck erfolgreich beendet werden kann, haben die einzelnen Eigenschaften des `RegExp`\-Objekts folgende Startwerte:  
+ Die `RegExp` Objekt kann nicht direkt erstellt werden, ist jedoch immer zur Verwendung verfügbar. Bis zum Abschluss einer erfolgreichen reguläre Ausdruckssuche die Anfangswerte fest, der die verschiedenen Eigenschaften der der `RegExp` Objekt lauten wie folgt:  
   
-|Eigenschaft|Kurznotation|Anfangswert|  
-|-----------------|------------------|-----------------|  
-|index||\-1|  
-|input|$\_|Leere Zeichenfolge.|  
-|lastIndex||\-1|  
+|Eigenschaft|Kurzform|Anfangswert|  
+|--------------|---------------|-------------------|  
+|Index||-1|  
+|Eingabe|$_|Leere Zeichenfolge.|  
+|lastIndex||-1|  
 |lastMatch|$&|Leere Zeichenfolge.|  
-|lastParen|$\+|Leere Zeichenfolge.|  
-|leftContext|$\`|Leere Zeichenfolge.|  
+|lastParen|$+|Leere Zeichenfolge.|  
+|leftContext|$`|Leere Zeichenfolge.|  
 |rightContext|$'|Leere Zeichenfolge.|  
-|$1 \- $9|$1 \- $9|Leere Zeichenfolge.|  
+|$1 - $9|$1 - $9|Leere Zeichenfolge.|  
   
- Die Eigenschaften haben solange "undefined" als Wert, bis eine erfolgreiche Suche mit einem regulären Ausdruck abgeschlossen wurde.  
+ Seine Eigenschaften haben als ihren Wert nicht definiert, bis zum Abschluss einer erfolgreichen reguläre Ausdruckssuche.  
   
- Das globale `RegExp`\-Objekt darf nicht mit dem **Regular Expression**\-Objekt verwechselt werden.  Es sieht so aus, als wären es dieselben Objekte, sie sind jedoch verschieden.  Die Eigenschaften des globalen `RegExp`\-Objekts enthalten fortwährend aktualisierte Informationen über jede aufgetretene Übereinstimmung, während die Eigenschaften des **Regular Expression**\-Objekts nur Informationen über die Übereinstimmungen enthalten, die bei einer einzigen Instanz von **Regular Expression** auftreten.  
+ Die globale `RegExp` Objekt sollte nicht mit verwechselt werden die **reguläre** Objekt. Obwohl sie dasselbe klingen, sind sie unabhängig und unterscheidet sich. Die Eigenschaften des globalen `RegExp` -Objekts ständig aktualisierte Informationen über jede Übereinstimmung enthalten, während es eintritt, während die Eigenschaften des der **reguläre** -Objekts enthalten nur Informationen zu den Übereinstimmungen an, die auftreten mit dieser Instanz von der **reguläre**.  
   
-## Beispiel  
- Im folgenden Beispiel wird eine Suche mit einem regulären Ausdruck durchgeführt.  Es werden Übereinstimmungen und teilweise Übereinstimmungen aus dem globalen `RegExp`\-Objekt und aus dem Array angezeigt, das von der `exec`\-Methode zurückgegeben wird.  
+## <a name="example"></a>Beispiel  
+ Im folgenden Beispiel wird eine Suche mit regulärem Ausdruck. Übereinstimmungen angezeigt und von der globalen submatches `RegExp` -Objekt, und aus dem Array, das von zurückgegebene die `exec` Methode.  
   
-```javascript  
-var newLine = "<br />";  
-  
-var re = /(\w+)@(\w+)\.(\w+)/g  
-var src = "Please send mail to george@contoso.com and someone@example.com. Thanks!"  
-  
-var result;  
-var s = "";  
-  
-// Get the first match.  
-result = re.exec(src);  
-  
-while (result != null) {  
-    // Show the entire match.  
-    s += newLine;  
-  
-    // Show the match and submatches from the RegExp global object.  
-    s += "RegExp.lastMatch: " + RegExp.lastMatch + newLine;  
-    s += "RegExp.$1: " + RegExp.$1 + newLine;  
-    s += "RegExp.$2: " + RegExp.$2 + newLine;  
-    s += "RegExp.$3: " + RegExp.$3 + newLine;  
-  
-    // Show the match and submatches from the array that is returned  
-    // by the exec method.  
-    for (var index = 0; index < result.length; index++) {  
-        s +=  index + ": ";  
-        s += result[index];  
-        s += newLine;  
-    }  
-  
-    // Get the next match.  
-    result = re.exec(src);  
-}  
-document.write(s);  
-  
-// Output:  
-//  RegExp.lastMatch: george@contoso.com  
-//  RegExp.$1: george  
-//  RegExp.$2: contoso  
-//  RegExp.$3: com  
-//  0: george@contoso.com  
-//  1: george  
-//  2: contoso  
-//  3: com  
-  
-//  RegExp.lastMatch: someone@example.com  
-//  RegExp.$1: someone  
-//  RegExp.$2: example  
-//  RegExp.$3: com  
-//  0: someone@example.com  
-//  1: someone  
-//  2: example  
-//  3: com  
-  
-```  
-  
+<CodeContentPlaceHolder>1</CodeContentPlaceHolder>  
 <a name="js56jsobjregexpprop"></a>   
-## Eigenschaften  
- [$1...$9\-Eigenschaften](../../javascript/reference/dollar-1-dot-dot-dot-dollar-9-properties-regexp-javascript.md) &#124; [index\-Eigenschaft](../../javascript/reference/index-property-regexp-javascript.md) &#124; [input\-Eigenschaft](../../javascript/reference/input-property-dollar-regexp-javascript.md) &#124; [lastIndex\-Eigenschaft](../../javascript/reference/lastindex-property-regexp-javascript.md) &#124; [lastMatch\-Eigenschaft](../../javascript/reference/lastmatch-property-dollar-regexp-javascript.md) &#124; [lastParen\-Eigenschaft](../../javascript/reference/lastparen-property-dollar-regexp-javascript.md) &#124; [leftContext\-Eigenschaft](../../javascript/reference/leftcontext-property-dollar-grave-regexp-javascript.md) &#124; [rightContext\-Eigenschaft](../../javascript/reference/rightcontext-property-dollar-regexp-javascript.md)  
+## <a name="properties"></a>Eigenschaften  
+ [$1... $9-Eigenschaften](../../javascript/reference/dollar-1-dot-dot-dot-dollar-9-properties-regexp-javascript.md) &#124; [-Indexeigenschaft](../../javascript/reference/index-property-regexp-javascript.md) &#124; [input-Eigenschaft](../../javascript/reference/input-property-dollar-regexp-javascript.md) &#124; [LastIndex-Eigenschaft](../../javascript/reference/lastindex-property-regexp-javascript.md) &#124; [LastMatch-Eigenschaft](../../javascript/reference/lastmatch-property-dollar-regexp-javascript.md) &#124; [LastParen-Eigenschaft](../../javascript/reference/lastparen-property-dollar-regexp-javascript.md) &#124; [LeftContext-Eigenschaft](../../javascript/reference/leftcontext-property-dollar-grave-regexp-javascript.md) &#124; [RightContext-Eigenschaft](../../javascript/reference/rightcontext-property-dollar-regexp-javascript.md)  
   
-## Methoden  
- Für das `RegExp`\-Objekt sind keine Methoden verfügbar.  
+## <a name="methods"></a>Methoden  
+ Die `RegExp` Objekt hat keine Methoden.  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  [!INCLUDE[jsv3](../../javascript/reference/includes/jsv3-md.md)]  
   
-## Siehe auch  
- [Regular Expression\-Objekt](../../javascript/reference/regular-expression-object-javascript.md)   
- [Regular Expression Syntax \(JavaScript\)](http://msdn.microsoft.com/de-de/ab0766e1-7037-45ed-aa23-706f58358c0e)   
- [String\-Objekt](../../javascript/reference/string-object-javascript.md)
+## <a name="see-also"></a>Siehe auch  
+ [Regular Expression-Objekt](../../javascript/reference/regular-expression-object-javascript.md)   
+ [Syntax regulärer Ausdrücke (JavaScript)](http://msdn.microsoft.com/en-us/ab0766e1-7037-45ed-aa23-706f58358c0e)   
+ [String-Objekt](../../javascript/reference/string-object-javascript.md)

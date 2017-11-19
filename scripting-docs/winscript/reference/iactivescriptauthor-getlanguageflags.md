@@ -1,27 +1,30 @@
 ---
-title: "IActiveScriptAuthor::GetLanguageFlags | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IActiveScriptAuthor::GetLanguageFlags | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IActiveScriptAuthor.GetLanguageFlags
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "IActiveScriptAuthor::GetLanguageFlags"
+helpviewer_keywords: IActiveScriptAuthor::GetLanguageFlags
 ms.assetid: eb244452-62f7-4a73-b48f-1aa05cbcc32d
-caps.latest.revision: 14
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 14
+caps.latest.revision: "14"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 6137f1cd77d2f305a9ff9d51ac49c214e4c4237b
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# IActiveScriptAuthor::GetLanguageFlags
-Gibt Sprachinformationen zurück.  
+# <a name="iactivescriptauthorgetlanguageflags"></a>IActiveScriptAuthor::GetLanguageFlags
+Gibt Informationen zurück.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 HRESULT GetLanguageFlags(  
@@ -29,27 +32,27 @@ HRESULT GetLanguageFlags(
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `pgrfasa`  
- \[out\] Die Flags, die Sprachinformationen enthalten.  Kann eine Kombination der folgenden Werte:  
+ [out] Die Flags, die Language-Informationen enthalten. Eine Kombination der folgenden Werte ist möglich:  
   
-|Konstante|Wert|Description|  
-|---------------|----------|-----------------|  
-|fasaPreferInternalHandler|0x0001|Die Sprache bevorzugt Skriptereignishandlererstellung durch das Skripterstellungsmodul anstelle der Anwendung.|  
-|fasaSupportInternalHandler|0x0002|Die Unterstützung sowie die Ereignishandler, die durch das Skripterstellungsmodul erstellt werden.|  
-|fasaCaseSensitive|0x0004|Die Skriptsprache wird die Groß\-\/Kleinschreibung beachtet.|  
+|Konstante|Wert|Beschreibung|  
+|--------------|-----------|-----------------|  
+|fasaPreferInternalHandler|0 x 0001|Die Sprache bevorzugt Erstellung von Ereignishandler Skript unter Verwendung des Skripts Modul anstelle der Anwendung zu erstellen.|  
+|fasaSupportInternalHandler|0 x 0002|Die Sprache unterstützt Skript-Ereignishandler, die vom Datenbankmodul authoring Skript erstellt.|  
+|fasaCaseSensitive|0 x 0004|Die Skriptsprache ist Groß-/Kleinschreibung beachtet.|  
   
-## Rückgabewert  
- Ein `HRESULT`.  Zu den möglichen Werten zählen, aber nicht zu, die in der folgenden Tabelle beschränkt.  
+## <a name="return-value"></a>Rückgabewert  
+ Eine `HRESULT`. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
   
-|Wert|Description|  
-|----------|-----------------|  
+|Wert|Beschreibung|  
+|-----------|-----------------|  
 |`S_OK`|Die Methode war erfolgreich.|  
   
-## Hinweise  
- Wenn das Skripterstellungsmodul Ereignishandler verwaltet, sollte die Anwendung `CreateChildHandler` von einem `IScriptEntry`\-Objekt aufrufen.  Dies `IScriptScriptlet` erstellt ein Objekt, das dem Ereignishandler entspricht.  Das Modul wird auch ein Ereignishandler dem Skripteintrag hinzu.  Der Ereignishandler wird eine leere Funktion, die die Signaturinformationen enthält.  
+## <a name="remarks"></a>Hinweise  
+ Wenn das Skript authoring Modul Ereignishandler verwaltet, sollte Ihre Anwendung aufrufen `CreateChildHandler` aus einem `IScriptEntry` Objekt. Dies erstellt ein `IScriptScriptlet` -Objekt, das an den Ereignishandler entspricht. Das Modul fügt auch einen Ereignishandler hinzu, um den Skripteintrag. Der Ereignishandler ist eine leere Funktion, die Informationen für die angegebene Signatur enthält.  
   
- Wenn die Anwendung Ereignishandler verwaltet, sollte sie `CreateChildHandler` von einem `IScriptNode`\-Objekt aufrufen, das ein Ereignishandlerskriptlet darstellt.  Es wird ein `IScriptScriptlet`\-Objekt, das mit dem Ereignishandlerskriptlet zugeordnet ist.  Die Anwendung muss eine leere Funktion als Ereignishandler einem neuen oder vorhandenen `IScriptEntry`\-Objekt hinzufügen.  
+ Wenn Ihre Anwendung Ereignishandler verwaltet werden, rufen sie `CreateChildHandler` aus einem `IScriptNode` Objekt, das eine Ereignis-Handler-Scriptlet darstellt. Dies erstellt ein `IScriptScriptlet` -Objekt, das die Ereignis-Handler-Scriptlet zugeordnet ist. Die Anwendung muss außerdem eine leere Funktion als ein Ereignis hinzufügen Handler, ein neues oder vorhandenes `IScriptEntry` Objekt.  
   
-## Siehe auch  
- [IActiveScriptAuthor\-Schnittstelle](../../winscript/reference/iactivescriptauthor-interface.md)
+## <a name="see-also"></a>Siehe auch  
+ [IActiveScriptAuthor-Schnittstelle](../../winscript/reference/iactivescriptauthor-interface.md)

@@ -1,90 +1,90 @@
 ---
-title: "EVALFLAGS | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "EVALFLAGS"
-helpviewer_keywords: 
-  - "EVALFLAGS-enumeration"
+title: EVALFLAGS | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: EVALFLAGS
+helpviewer_keywords: EVALFLAGS enumeration
 ms.assetid: 7b2cb14a-511a-4fef-9e4f-308139719fba
-caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 45bef946605818f11d0199600849fd49b5463ab8
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# EVALFLAGS
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Gibt Flags an, die Ausdrucksauswertung steuern.  
+# <a name="evalflags"></a>EVALFLAGS
+Gibt Flags an, die Auswertung von Ausdrücken zu steuern.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-enum enum_EVALFLAGS {  
-   EVAL_RETURNVALUE = 0x0002,  
-   EVAL_NOSIDEEFFECTS = 0x0004,  
-   EVAL_ALLOWBPS = 0x0008,  
-   EVAL_ALLOWERRORREPORT = 0x0010,  
-   EVAL_FUNCTION_AS_ADDRESS = 0x0040,  
-   EVAL_NOFUNCEVAL = 0x0080,  
-   EVAL_NOEVENTS = 0x1000  
+```cpp  
+enum enum_EVALFLAGS {  
+   EVAL_RETURNVALUE = 0x0002,  
+   EVAL_NOSIDEEFFECTS = 0x0004,  
+   EVAL_ALLOWBPS = 0x0008,  
+   EVAL_ALLOWERRORREPORT = 0x0010,  
+   EVAL_FUNCTION_AS_ADDRESS = 0x0040,  
+   EVAL_NOFUNCEVAL = 0x0080,  
+   EVAL_NOEVENTS = 0x1000  
 };  
 typedef DWORD EVALFLAGS;  
 ```  
   
-```c#  
-public enum enum_EVALFLAGS {  
-   EVAL_RETURNVALUE = 0x0002,  
-   EVAL_NOSIDEEFFECTS = 0x0004,  
-   EVAL_ALLOWBPS = 0x0008,  
-   EVAL_ALLOWERRORREPORT = 0x0010,  
-   EVAL_FUNCTION_AS_ADDRESS = 0x0040,  
-   EVAL_NOFUNCEVAL = 0x0080,  
-   EVAL_NOEVENTS = 0x1000  
+```csharp  
+public enum enum_EVALFLAGS {  
+   EVAL_RETURNVALUE = 0x0002,  
+   EVAL_NOSIDEEFFECTS = 0x0004,  
+   EVAL_ALLOWBPS = 0x0008,  
+   EVAL_ALLOWERRORREPORT = 0x0010,  
+   EVAL_FUNCTION_AS_ADDRESS = 0x0040,  
+   EVAL_NOFUNCEVAL = 0x0080,  
+   EVAL_NOEVENTS = 0x1000  
 }  
 ```  
   
-## Mitglieder  
- EVAL\_RETURNVALUE  
- Gibt an, dass der Rückgabewert falls vorhanden\) ausgewertet wird.  
+## <a name="members"></a>Member  
+ EVAL_RETURNVALUE  
+ Gibt an, dass der Rückgabewert, sofern vorhanden, ausgewertet werden.  
   
- EVAL\_NOSIDEEFFECTS  
- Gibt an, dass Nebeneffekte an nicht zulässig.  
+ EVAL_NOSIDEEFFECTS  
+ Gibt an, dass Nebeneffekte nicht zulässig.  
   
- EVAL\_ALLOWBPS  
- Gibt das Beenden auf Haltepunkte an.  
+ EVAL_ALLOWBPS  
+ Gibt den Beenden an Haltepunkten an.  
   
- EVAL\_ALLOWERRORREPORT  
- Gibt Problemberichte zu gewährenden an den Host an.  Hauptsächlich wird für die Ausdrucksauswertung im Skript in Internet Explorer.  
+ EVAL_ALLOWERRORREPORT  
+ Gibt an, Fehlerberichte an den Host zugelassen werden. In erster Linie verwendet für die Auswertung von Ausdrücken im Skript in Internet Explorer.  
   
- EVAL\_FUNCTION\_AS\_ADDRESS  
- Erzwingt die als Adressen ausgewertet werden soll, Funktionen, anstatt die Funktion aufzurufen.  
+ EVAL_FUNCTION_AS_ADDRESS  
+ Erzwingt, dass Funktionen, die als Adressen, statt den Funktionsaufruf ausgewertet werden.  
   
- EVAL\_NOFUNCEVAL  
- Verhindert Funktion ausgewertet werden.  Betrachten Sie beispielsweise das `int` Token im Ausdruck `myExpression(int) + 10`.  Diese Funktion kann als Adresse, aber nicht als Wert richtig ausgewertet werden.  
+ EVAL_NOFUNCEVAL  
+ Verhindern Sie, dass Funktion ausgewertet wird. Betrachten Sie beispielsweise die `int` token im Ausdruck `myExpression(int) + 10`. Diese Funktion kann als eine Adresse, jedoch nicht als Wert richtig ausgewertet werden.  
   
- EVAL\_NOEVENTS  
- Mit Flag, dass Ereignisse, die während der Ausdrucksauswertung auftreten, Debuggen nicht auf den Manager der Sitzung \(SDM\) oder in der IDE gesendet werden sollen.  
+ EVAL_NOEVENTS  
+ Kennzeichen Sie, um anzugeben, dass Ereignisse während der Auswertung von Ausdrücken nicht zu der Sitzung Debug-Manager (SDM) oder der IDE gesendet werden sollen.  
   
-## Hinweise  
- Diese Flags werden als Argument an den [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) und [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)\-Methode übergeben.  
+## <a name="remarks"></a>Hinweise  
+ Diese Flags werden übergeben, als Argument an die [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) und [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) Methoden.  
   
- Diese Flags werden mit einem bitweisen OR\-Operation kombiniert werden.  
+ Diese Flags können mit einem bitweisen OR kombiniert werden.  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  Header: msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)   
  [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)

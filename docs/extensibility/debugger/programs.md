@@ -1,43 +1,45 @@
 ---
-title: "Programs | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Programme Debuggen [SDK-Debuggen]"
-  - "Debuggen von Programmen"
+title: Programme | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- debugging [Debugging SDK], programs
+- programs, debugging
 ms.assetid: e1f955d8-95da-493b-837e-e97741a26d7e
-caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: e34dbcf9c19b5e8e7a16d2f409159597670cb8cc
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Programs
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Im Hinblick auf die Architektur der Debugger ein **Programm**:  
+# <a name="programs"></a>Programs
+Im Hinblick auf die Architektur des Debuggers einen **Programm**:  
   
--   Ist ein Container für eine Gruppe von Threads und einen Satz von Modulen.  Ein Programm verfügt über keine Analogie im Windows\-Betriebssystem.  
+-   Ist ein Container für eine Gruppe von Threads und einen Satz von Modulen. Ein Programm hat keine einzelnen Analogie in Windows-Betriebssystems.  
   
-     Ein Programm ist eine Art Unterprozess.  Wenn Sie beispielsweise eine Website debuggen, kann ein Skript als Programm angezeigt werden.  Während ein Skript im Skriptmodul Prozess ausgeführt wird, unabhängig von anderen Skripts, verfügt es auch über einen eigenen Satz von Threads.  Ein Modul \(Debug\) DE und nicht mit einem Programm fügt den Debugger an einen Prozess oder einen Thread an.  
+     Ein Programm ist eine Art von Unterprozess. Während des Debuggens einer Websites kann beispielsweise ein Skript als Programm betrachtet werden. Während ein Skript in den Skriptprozess-Modul ausgeführt wird, unabhängig von anderen Skripts besitzt auch über einen eigenen Satz von Threads. Ein Debugging-Modul (DE) wird an ein Programm, und nicht auf einen Prozess oder einen Thread angefügt.  
   
--   Kann sich selbst und den Prozess identifizieren, die er ausgeführt wird und kann angefügt werden, getrennt sind, und beschreiben ggf. DE, das sie erstellt hat.  Ein Programm kann ausgeführt werden, anzuhalten, fährt fort und wird beendet.  
+-   Erkennen selbst und den Prozess, den es im ausgeführt wird, den und von getrennt, und beschreiben, die sie ggf. erstellt DE angefügt werden kann. Ein Programm kann ausführen, beenden, den Vorgang fortzusetzen, und beendet werden.  
   
--   Es können alle Threads auflisten.  Ein Programm kann auch einen eigenen Disassemblys datenstrom angeben und kann alle Code kontexte einer bestimmten Position des Dokuments auflisten.  
+-   Alle Threads können aufgelistet werden. Ein Programm kann auch einen eigenen Disassembly Stream bereitgestellt und kann die Code Kontexten von einem angegebenen Dokumentposition aufzählen.  
   
--   Wird von einer Schnittstelle dargestellt [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) erstellt, bevor das Programm angefügt wird oder Anfügen als Teil des Prozesses, abhängig von der Implementierung.  Wenn ein Anschluss Programme eines Prozesses auflistet, wird jedes Programm in Übereinstimmung mit einer entsprechenden [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md)\-Schnittstelle erstellt, die als Argument an [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md)übergeben wird.  Beim Debuggen von Modulen `IDebugProgram2` auch Schnittstellen erstellen, um Programme zu zeigen, werden diese Programmen nicht in Übereinstimmung mit einem Knoten Programm erstellt.  Die Schnittstellen, die von `IDebugProgramNode2` DE erstellt wurden, sind für das Debuggen verwendet, während die tatsächlich von einem Port erstellt werden, nur zum Ermitteln von Programmen verwendet werden, die in einem Prozess ausgeführt werden.  
+-   Wird durch dargestellt ein [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) Schnittstelle, bevor die Anwendung angefügt ist, oder als Teil der anfügungsvorgang, je nach Implementierung erstellt. Wenn ein Port die Programmen eines Prozesses aufgezählt wird, wird jedes Programm in Übereinstimmung mit einer entsprechenden erstellt [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) Schnittstelle übergeben, als Argument an [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md). Während Debugmodule auch erstellen `IDebugProgram2` Schnittstellen zum Darstellen von Programmen, die diese Programme werden nicht in Übereinstimmung mit einem Programm Knoten erstellt. Die `IDebugProgramNode2` Schnittstellen, die von einer bereitgestellten Kompatibilitätsrichtlinie erstellt dienen zum tatsächlichen Debuggen, während solche, die von einem Port erstellt verwendet werden, nur für die Ermittlung, welche Programme in einem Prozess ausgeführt werden.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Prozesse](../../extensibility/debugger/processes.md)   
- [Programm\-Knoten](../../extensibility/debugger/program-nodes.md)   
+ [Programm-Knoten](../../extensibility/debugger/program-nodes.md)   
  [Module](../../extensibility/debugger/modules.md)   
- [Debugger\-Konzepte](../../extensibility/debugger/debugger-concepts.md)   
- [Debug\-Modul](../../extensibility/debugger/debug-engine.md)   
+ [Debugger-Konzepte](../../extensibility/debugger/debugger-concepts.md)   
+ [Debuggen des Datenbankmoduls](../../extensibility/debugger/debug-engine.md)   
  [Dokumentposition](../../extensibility/debugger/document-position.md)   
  [Codekontext](../../extensibility/debugger/code-context.md)   
  [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md)   

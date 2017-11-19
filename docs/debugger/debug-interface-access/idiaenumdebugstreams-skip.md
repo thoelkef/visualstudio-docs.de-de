@@ -1,43 +1,42 @@
 ---
-title: "IDiaEnumDebugStreams::Skip | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaEnumDebugStreams::Skip-Methode"
+title: 'Idiaenumdebugstreams:: Skip | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaEnumDebugStreams::Skip method
 ms.assetid: 6ec7753c-d7af-4879-b107-1b3442e0b025
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 739ee9aa628858d1ea26749872b791ddd2e1cd90
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaEnumDebugStreams::Skip
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Überspringt eine angegebene Anzahl von Streams in der Enumerationsfolge.  
+# <a name="idiaenumdebugstreamsskip"></a>IDiaEnumDebugStreams::Skip
+Überspringt eine angegebene Anzahl der Debug-Streams in einen Enumerationsfolge.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT Skip (   
-   ULONG celt  
+```C++  
+HRESULT Skip (   
+   ULONG celt  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `celt`  
- \[in\]  Die Anzahl der zu überspringenden Streams Debuggen in der Enumerationsfolge.  
+ [in] Die Anzahl der Debug-Datenströme in der Enumeration Sequenz zu überspringen.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. Andernfalls gibt `S_FALSE` zurück, wenn keine weiteren zu überspringen, Datensätze vorhanden sind.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls gibt `S_FALSE` , wenn es keine weiteren Datensätze zu überspringen sind.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDiaEnumDebugStreams](../../debugger/debug-interface-access/idiaenumdebugstreams.md)

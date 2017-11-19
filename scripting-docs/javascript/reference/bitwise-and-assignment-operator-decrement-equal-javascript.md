@@ -1,59 +1,61 @@
 ---
-title: "Bitweiser AND-Zuweisungsoperator&#160;(&amp;=) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "&="
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "&= (Operator)"
-  - "Zuweisungsoperatoren, Bitweise [JavaScript]"
-  - "AND-Operator"
-  - "Bitweise Operatoren, AND-Operator"
+title: Bitweise AND-Zuweisungsoperator (&amp;=) (JavaScript) | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: '&='
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- '&= operator'
+- assignment operators, bitwise [JavaScript]
+- AND operator
+- bitwise operators, AND operator
 ms.assetid: e7e2eabb-4fc1-4fdc-9dd8-1e6d715371fa
-caps.latest.revision: 10
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: dfd2a77e66296cafc6c8403570f0536e1333e081
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# Bitweiser AND-Zuweisungsoperator&#160;(&amp;=) (JavaScript)
-Legt das Ergebnis einer bitweisen AND\-Operation auf den Wert einer Variablen und den Wert eines Ausdrucks fest.  Die Variable und der Ausdruck werden als 32\-Bit\-Ganzzahlen behandelt.  
+# <a name="bitwise-and-assignment-operator-amp-javascript"></a>Bitweise AND-Zuweisungsoperator (&amp;=) (JavaScript)
+Legt das Ergebnis einer bitweisen AND-Operation für den Wert einer Variablen und den Wert eines Ausdrucks. Die Variable und des Ausdrucks werden als 32-Bit-Ganzzahlen behandelt.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
   
 result &= expression  
 ```  
   
-## Parameter  
+## <a name="parameters"></a>Parameter  
  `result`  
  Beliebige Variable.  
   
  `expression`  
- Ein beliebiger Ausdruck.  
+ Beliebiger Ausdruck.  
   
-## Hinweise  
- Die Verwendung dieses Operators entspricht genau der folgenden Angabe:  
+## <a name="remarks"></a>Hinweise  
+ Mithilfe dieser Operator entspricht der Angabe:  
   
-```javascript  
+```JavaScript  
 result = result & expression  
 ```  
   
- Der [Bitweiser AND\-Operator \(&\)](../../javascript/reference/bitwise-and-operator-decrement-javascript.md) liest die binäre Darstellung der Werte von `result` und `expression` und führt mit ihnen eine bitweise AND‑Operation durch.  Diese Operation zeigt folgendes Verhalten:  
+ Die [bitweisen und-Operator (&)](../../javascript/reference/bitwise-and-operator-decrement-javascript.md) prüft die binäre Darstellung der Werte von `result` und `expression` an und führt eine bitweise AND-Operation darauf. Die Ausgabe dieses Vorgangs verhält sich wie folgt:  
   
-```javascript  
+```JavaScript  
 // 9 is 00000000000000000000000000001001  
 var expr1 = 9;  
   
@@ -64,15 +66,14 @@ var expr2 = 5;
 expr1 &= expr2;  
   
 document.write(expr1);  
-  
 ```  
   
- Jedes Mal, wenn beide Ausdrücke eine 1 an einer Stelle aufweisen, hat auch das Ergebnis an dieser Stelle eine 1.  Andernfalls enthält das Ergebnis eine 0 an dieser Stelle.  
+ Beide Ausdrücke in eine Ziffer 1 haben immer das Ergebnis einer "1" wurde an dieser Stelle. Andernfalls hat das Ergebnis 0 an dieser Stelle.  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
-## Siehe auch  
- [Bitweiser AND\-Operator \(&\)](../../javascript/reference/bitwise-and-operator-decrement-javascript.md)   
+## <a name="see-also"></a>Siehe auch  
+ [Bitweiser AND-Operator (&)](../../javascript/reference/bitwise-and-operator-decrement-javascript.md)   
  [Operatorrangfolge](../../javascript/operator-subtractprecedence-javascript.md)   
- [Zusammenfassung der Operatoren \(JavaScript\)](../../javascript/misc/operator-subtractsummary-javascript.md)
+ [Zusammenfassung der Operatoren (JavaScript)](../../javascript/misc/operator-subtractsummary-javascript.md)

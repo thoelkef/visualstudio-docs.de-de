@@ -1,54 +1,53 @@
 ---
-title: "IDiaTable | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaTable-Schnittstelle"
+title: IDiaTable | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaTable interface
 ms.assetid: c99a2c44-7b72-4e3c-b963-25fe3df3a555
-caps.latest.revision: 15
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 15
+caps.latest.revision: "15"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: be24edc89328f08199316df8bdedf2ab6391907b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaTable
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Listet Durchmesser\-Datenquellen eine Tabelle auf.  
+# <a name="idiatable"></a>IDiaTable
+Listet eine DIA Datenquellentabelle.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
-IDiaTable : IEnumUnknown  
+IDiaTable : IEnumUnknown  
 ```  
   
-## Methoden in die Vtable\-Reihenfolge  
- In der folgenden Tabelle werden die Methoden von `IDiaTable`an.  
+## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
+ Die folgende Tabelle zeigt die Methoden der `IDiaTable`.  
   
 |Methode|Beschreibung|  
-|-------------|------------------|  
-|[IDiaTable::get\_\_NewEnum](../../debugger/debug-interface-access/idiatable-get-newenum.md)|Ruft die [IEnumVARIANT Interface](http://msdn.microsoft.com/de-de/139e3c93-faef-4003-9079-e0e94494db3e)\-Version dieses Enumerators ab.|  
-|[IDiaTable::get\_name](../../debugger/debug-interface-access/idiatable-get-name.md)|Ruft den Namen der Tabelle ab oder legt ihn fest.|  
-|[IDiaTable::get\_Count](../../debugger/debug-interface-access/idiatable-get-count.md)|Ruft die Anzahl der Elemente in der Tabelle ab.|  
-|[IDiaTable::Item](../../debugger/debug-interface-access/idiatable-item.md)|Ruft einen Verweis auf einen bestimmten Eintrags Index ab.|  
+|------------|-----------------|  
+|[IDiaTable::get__NewEnum](../../debugger/debug-interface-access/idiatable-get-newenum.md)|Ruft die [IEnumVARIANT-Schnittstelle](http://msdn.microsoft.com/en-us/139e3c93-faef-4003-9079-e0e94494db3e) Version des Enumerators.|  
+|[IDiaTable::get_name](../../debugger/debug-interface-access/idiatable-get-name.md)|Ruft den Namen der Tabelle ab.|  
+|[IDiaTable::get_Count](../../debugger/debug-interface-access/idiatable-get-count.md)|Ruft die Anzahl der Elemente in der Tabelle ab.|  
+|[IDiaTable::Item](../../debugger/debug-interface-access/idiatable-item.md)|Ruft einen Verweis auf einen bestimmten Eintrag Index ab.|  
   
-## Hinweise  
- Diese Schnittstelle implementiert die `IEnumUnknown`\-Enumerationsmethoden im Microsoft.VisualStudio.OLE.Interop\-Namespace.  Die `IEnumUnknown`\-Enumerationsschnittstelle kann zum Durchlaufen von Tabellen und [IDiaTable::get\_Count](../../debugger/debug-interface-access/idiatable-get-count.md) die als Inhalt der [IDiaTable::Item](../../debugger/debug-interface-access/idiatable-item.md)\-Methoden deutlich effizienter.  
+## <a name="remarks"></a>Hinweise  
+ Diese Schnittstelle implementiert, die `IEnumUnknown` Enumerationsmethoden im Microsoft.VisualStudio.OLE.Interop-Namespace. Die `IEnumUnknown` Enumerationsschnittstelle ist erheblich effizienter für den Inhalt der Tabelle als Durchlaufen der [idiatable:: Get_count](../../debugger/debug-interface-access/idiatable-get-count.md) und [idiatable:: Item](../../debugger/debug-interface-access/idiatable-item.md) Methoden.  
   
- Die Interpretation der `IUnknown`\-Schnittstelle, die von der `IDiaTable::Item`\-Methode oder der `Next`\-Methode zurückgegeben wird \(im Microsoft.VisualStudio.OLE.Interop\-Namespace\) weist den Typ der Tabelle ab.  Wenn beispielsweise die `IDiaTable`\-Schnittstelle eine Liste mit eingefügten Quellen darstellt, sollte die `IUnknown`\-Schnittstelle für die [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)\-Schnittstelle abgefragt werden.  
+ Die Interpretation der der `IUnknown` -Schnittstelle zurückgegeben wird, entweder aus der `IDiaTable::Item` Methode oder die `Next` Methode (im Namespace Microsoft.VisualStudio.OLE.Interop) ist abhängig vom Typ der Tabelle. Z. B. wenn die `IDiaTable` Schnittstelle stellt eine Liste von eingefügtem Quellen der `IUnknown` Schnittstelle abgefragt werden muss, für die [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md) Schnittstelle.  
   
-## Hinweise für Aufrufer  
- Rufen Sie diese Schnittstelle, indem sie die [IDiaEnumTables::Item](../../debugger/debug-interface-access/idiaenumtables-item.md) oder [IDiaEnumTables::Next](../../debugger/debug-interface-access/idiaenumtables-next.md)\-Methoden aufgerufen werden.  
+## <a name="notes-for-callers"></a>Hinweise für Aufrufer  
+ Rufen Sie diese Schnittstelle durch Aufrufen der [idiaenumtables:: Item](../../debugger/debug-interface-access/idiaenumtables-item.md) oder [idiaenumtables:: Next](../../debugger/debug-interface-access/idiaenumtables-next.md) Methoden.  
   
- Die folgenden Schnittstellen werden mit der `IDiaTable`\-Schnittstelle implementiert \(das heißt Sie können die `IDiaTable`\-Schnittstelle für eine der folgenden Schnittstellen abfragen\):  
+ Die folgenden Schnittstellen implementiert werden, mit der `IDiaTable` Schnittstelle (d. h., Sie können Abfragen, die `IDiaTable` Schnittstelle für eine der folgenden Schnittstellen):  
   
 -   [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)  
   
@@ -64,13 +63,13 @@ IDiaTable : IEnumUnknown
   
 -   [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)  
   
-## Beispiel  
- Die erste Funktion, `ShowTableNames`, werden die Namen aller Tabellen in der Sitzung an.  Die zweite Funktion, `GetTable`allen Tabellen durchsucht, für eine Tabelle, die eine angegebene Schnittstelle implementiert.  Die dritte Funktion, `UseTable`, wird gezeigt, wie die `GetTable`\-Funktion verwendet.  
+## <a name="example"></a>Beispiel  
+ Die erste Funktion `ShowTableNames`, zeigt die Namen aller Tabellen in der Sitzung. Die zweite Funktion `GetTable`, sucht alle Tabellen für eine Tabelle, die eine angegebene Schnittstelle implementiert. Die dritte Funktion `UseTable`, zeigt, wie die `GetTable` Funktion.  
   
 > [!NOTE]
->  `CDiaBSTR` ist eine Klasse, die `BSTR` behandelt und automatisch durchgeführt wird, die die Zeichenfolge freigeben, wenn die Instanziierung den Gültigkeitsbereich verlässt.  
+>  `CDiaBSTR`ist eine Klasse, umschließt eine `BSTR` und behandelt automatisch die Zeichenfolge freigeben, wenn es sich bei die Instanziierung den Gültigkeitsbereich verlässt.  
   
-```cpp#  
+```C++  
 void ShowTableNames(IDiaSession *pSession)  
 {  
     CComPtr<IDiaEnumTables> pTables;  
@@ -132,15 +131,15 @@ void UseTable(IDiaSession *pSession)
 }  
 ```  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  Header: Dia2.h  
   
  Bibliothek: diaguids.lib  
   
- DLLs: msdia80.dll  
+ DLL: "MSDIA80.dll"  
   
-## Siehe auch  
- [Schnittstellen \(Debug Interface Access SDK\)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+## <a name="see-also"></a>Siehe auch  
+ [Schnittstellen (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md)   
- [IDiaEnumTables::Item](../../debugger/debug-interface-access/idiaenumtables-item.md)   
+ [Idiaenumtables:: Item](../../debugger/debug-interface-access/idiaenumtables-item.md)   
  [IDiaEnumTables::Next](../../debugger/debug-interface-access/idiaenumtables-next.md)

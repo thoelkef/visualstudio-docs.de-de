@@ -1,47 +1,48 @@
 ---
-title: "CA1809: &#220;berm&#228;&#223;ige lokale Variablen vermeiden | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA1809"
-  - "AvoidExcessiveLocals"
-helpviewer_keywords: 
-  - "AvoidExcessiveLocals"
-  - "CA1809"
+title: "CA1809: Übermäßige lokale Variablen vermeiden | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA1809
+- AvoidExcessiveLocals
+helpviewer_keywords:
+- AvoidExcessiveLocals
+- CA1809
 ms.assetid: 5c81ea43-cb49-448f-980f-a1dd9764043c
-caps.latest.revision: 19
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 19
+caps.latest.revision: "19"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 0a96616d1ee0f7c63e8f36f56a18f234fa27a173
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# CA1809: &#220;berm&#228;&#223;ige lokale Variablen vermeiden
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="ca1809-avoid-excessive-locals"></a>CA1809: Übermäßige lokale Variablen vermeiden
 |||  
 |-|-|  
 |TypeName|AvoidExcessiveLocals|  
 |CheckId|CA1809|  
-|Kategorie \(Category\)|Microsoft.Performance|  
+|Kategorie|Microsoft.Performance|  
 |Unterbrechende Änderung|Nicht unterbrechend|  
   
-## Ursache  
- Ein Member enthält mehr als 64 lokale Variablen, von denen einige möglicherweise vom Compiler generiert wurden.  
+## <a name="cause"></a>Ursache  
+ Ein Element enthält mehr als 64 lokale Variablen, von die einige Compiler generiert werden kann.  
   
-## Regelbeschreibung  
- Zur Leistungsoptimierung wird ein Wert häufig in einem Prozessorregister statt im Speicher gespeichert. Dieser Vorgang wird als *Registrierung* des Werts bezeichnet.  Die Common Language Runtime zieht bis zu 64 lokale Variablen für die Registrierung in Betracht.  Variablen, die nicht registriert werden, werden auf den Stapel verschoben und müssen vor der Bearbeitung in ein Register verschoben werden.  Um die Möglichkeit offen zu halten, dass alle lokalen Variablen registriert werden, beschränken Sie die Anzahl der lokalen Variablen auf 64.  
+## <a name="rule-description"></a>Regelbeschreibung  
+ Zur leistungsoptimierung wird zum Speichern eines Werts in einem Prozessorregister statt im Arbeitsspeicher, die so genannte *Ablaufanalyse* den Wert. Die common Language Runtime betrachtet, bis zu 64 lokale Variablen können. Variablen, die nicht registriert werden, die auf dem Stapel abgelegt werden und müssen vor der Bearbeitung in ein Register verschoben werden. Um die Möglichkeit, dass alle lokale Variablen registriert werden, die Anzahl der lokalen Variablen auf 64 beschränken.  
   
-## Behandeln von Verstößen  
- Um einen Verstoß gegen diese Regel zu beheben, gestalten Sie die Implementierung so um, dass nicht mehr als 64 lokale Variablen verwendet werden.  
+## <a name="how-to-fix-violations"></a>Behandeln von Verstößen  
+ Um einen Verstoß gegen diese Regel zu beheben, gestalten Sie die Implementierung, um nicht mehr als 64 lokale Variablen verwenden.  
   
-## Wann sollten Warnungen unterdrückt werden?  
- Eine Warnung dieser Regel kann gefahrlos unterdrückt werden, bzw. die Regel kann deaktiviert werden, wenn das Leistungsverhalten nicht von Belang ist.  
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?  
+ Sie können ruhig zum Unterdrücken einer Warnung dieser Regel, oder um die Regel deaktivieren, wenn Leistung kein Problem darstellt.  
   
-## Verwandte Regeln  
+## <a name="related-rules"></a>Verwandte Regeln  
  [CA1804: Nicht verwendete lokale Variablen entfernen](../code-quality/ca1804-remove-unused-locals.md)

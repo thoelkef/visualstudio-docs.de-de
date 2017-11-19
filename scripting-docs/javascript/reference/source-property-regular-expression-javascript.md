@@ -1,43 +1,44 @@
 ---
-title: "source-Eigenschaft (regul&#228;rer Ausdruck) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "source"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "Source-Eigenschaft"
+title: "Source-Eigenschaft (regulärer Ausdruck) (JavaScript) | Microsoft Docs"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: source
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords: Source property
 ms.assetid: d58ac57e-fcde-49d1-bbba-e8c4218448c4
-caps.latest.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 05bf118aec0f31de11a3df6f4b875fad3092e53d
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# source-Eigenschaft (regul&#228;rer Ausdruck) (JavaScript)
-Gibt eine Kopie des Textes mit dem Muster eines regulären Ausdrucks zurück.  Schreibgeschützt.  Das `rgExp`\-Argument ist ein **Regular expression**\-Objekt.  Es kann ein Variablenname oder ein Literal sein.  
+# <a name="source-property-regular-expression-javascript"></a>source-Eigenschaft (regulärer Ausdruck) (JavaScript)
+Gibt eine Kopie des Textes mit dem Muster eines regulären Ausdrucks zurück. Schreibgeschützt. Die `rgExp` Argument ist ein **reguläre** Objekt. Sie können einen Variablennamen oder ein Literal sein.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
   
 rgExp.source  
 ```  
   
-## Beispiel  
- Das folgende Beispiel veranschaulicht die Verwendung der **source**\-Eigenschaft:  
+## <a name="example"></a>Beispiel  
+ Das folgende Beispiel veranschaulicht die Verwendung der **Quelle** Eigenschaft:  
   
-```javascript  
+```JavaScript  
 function SourceDemo(re, s){  
    var s1;  
    // Test string for existence of regular expression.  
@@ -50,12 +51,12 @@ function SourceDemo(re, s){
 }  
 ```  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  [!INCLUDE[jsv3](../../javascript/reference/includes/jsv3-md.md)]  
   
- **Gilt für**: [Regular Expression\-Objekt](../../javascript/reference/regular-expression-object-javascript.md)  
+ **Gilt für**: [Regular Expression-Objekt](../../javascript/reference/regular-expression-object-javascript.md)  
   
-## Siehe auch  
- [Regular Expression\-Objekt](../../javascript/reference/regular-expression-object-javascript.md)   
- [Regular Expression\-Objekt](../../javascript/reference/regular-expression-object-javascript.md)   
- [Regular Expression Syntax \(JavaScript\)](http://msdn.microsoft.com/de-de/ab0766e1-7037-45ed-aa23-706f58358c0e)
+## <a name="see-also"></a>Siehe auch  
+ [Regular Expression-Objekt](../../javascript/reference/regular-expression-object-javascript.md)   
+ [Regular Expression-Objekt](../../javascript/reference/regular-expression-object-javascript.md)   
+ [Syntax regulärer Ausdrücke (JavaScript)](http://msdn.microsoft.com/en-us/ab0766e1-7037-45ed-aa23-706f58358c0e)

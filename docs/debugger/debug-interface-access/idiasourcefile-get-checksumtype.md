@@ -1,57 +1,56 @@
 ---
-title: "IDiaSourceFile::get_checksumType | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSourceFile::get_checksumType-Methode"
+title: 'Idiasourcefile:: Get_checksumtype | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSourceFile::get_checksumType method
 ms.assetid: 4c363e61-a6a9-409a-9cc0-d06eb2bee645
-caps.latest.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 8fafd9e813c22b899603a2e62c5a2c90ece1a709
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSourceFile::get_checksumType
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Ruft den Typ der Prüfsummen ab.  
+# <a name="idiasourcefilegetchecksumtype"></a>IDiaSourceFile::get_checksumType
+Ruft den Typ von Prüfsumme ab.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT get_checksumType (   
-   DWORD* pRetVal  
+```C++  
+HRESULT get_checksumType (   
+   DWORD* pRetVal  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `pRetVal`  
- \[out\]  Gibt den Typ der Prüfsummen zurück.  
+ [out] Gibt den Typ von Prüfsumme an.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Hinweise  
- Der Typ der Prüfsummen ist ein Wert, der in einen Prüfsummenalgorithmus zugeordnet werden kann.  Beispielsweise kann das Dateiformat des Standards PDB einen der folgenden Werte haben: i. d. R.  
+## <a name="remarks"></a>Hinweise  
+ Der Typ von Prüfsumme wird ein Wert, der eine Prüfsummenalgorithmus zugeordnet werden kann. Beispielsweise kann das Standardformat der PDB-Datei in der Regel einen der folgenden Werte aufweisen:  
   
-|Prüfsummen\-Typ|CryptoAPI\-Bezeichnung|Beschreibung|  
-|---------------------|----------------------------|------------------|  
-|0|\<Keine\>|Kein Prüfsummen vorhanden ist.|  
-|1|`CALG_MD5`|Prüfsumme wird mit dem Hashalgorithmus MD5.|  
-|2|`CALG_SHA1`|Prüfsumme wird mit dem SHA1\-Hashalgorithmus.|  
+|Typ von Prüfsumme an|CryptoAPI-Bezeichnung|Beschreibung|  
+|-------------------|---------------------|-----------------|  
+|0|\<keine >|Keine Prüfsumme vorhanden ist.|  
+|1|`CALG_MD5`|die Prüfsumme mit MD5-Hashalgorithmus generiert.|  
+|2|`CALG_SHA1`|die Prüfsumme mit SHA1-Hashalgorithmus generiert.|  
   
- Die `CryptoAPI` Bezeichnungen sind von der `ALG_ID`\-Enumeration.  Weitere Informationen über die Verwendung in Hashalgorithmen `CryptoAPI` , lesen Sie den Abschnitt Microsoft [!INCLUDE[winsdkshort](../../debugger/debug-interface-access/includes/winsdkshort_md.md)].  
+ Die `CryptoAPI` Bezeichnungen sind von der `ALG_ID` Enumeration. Weitere Informationen zu Hashalgorithmen, wenden Sie sich an den `CryptoAPI` der Microsoft [!INCLUDE[winsdkshort](../../debugger/debug-interface-access/includes/winsdkshort_md.md)].  
   
- Zum Abrufen der eigentlichen Prüfsummen Bytes für die Quelldatei, rufen Sie die [IDiaSourceFile::get\_checksum](../../debugger/debug-interface-access/idiasourcefile-get-checksum.md)\-Methode auf.  
+ Um die tatsächliche Prüfsumme Bytes für die Quelldatei zu erhalten, rufen Sie die [idiasourcefile:: Get_checksum](../../debugger/debug-interface-access/idiasourcefile-get-checksum.md) Methode.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)   
- [IDiaSourceFile::get\_checksum](../../debugger/debug-interface-access/idiasourcefile-get-checksum.md)
+ [IDiaSourceFile::get_checksum](../../debugger/debug-interface-access/idiasourcefile-get-checksum.md)

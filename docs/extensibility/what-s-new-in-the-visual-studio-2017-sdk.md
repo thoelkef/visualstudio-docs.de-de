@@ -1,75 +1,52 @@
 ---
-title: Neuigkeiten in Visual Studio SDK 2017 | Microsoft-Dokumentation
+title: Welche &#39; s in der Visual Studio-SDK 2017 | Microsoft Docs
 ms.custom: 
-ms.date: 11/09/2016
+ms.date: 10/31/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 9efcf0a3-dbde-4cab-8ed3-425826a48b2e
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Machine Translation
-ms.sourcegitcommit: 8163a0e1230712734936b7548bef1753ee0c1d2a
-ms.openlocfilehash: 3da360fc4df5516f5d976f807319c07b49d8c4e8
-ms.contentlocale: de-de
-ms.lasthandoff: 03/07/2017
-
+ms.openlocfilehash: 0be477d54ffeab52c415890c7d95447fa3f55ffc
+ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/15/2017
 ---
-# <a name="what39s-new-in-the-visual-studio-2017-sdk"></a>Was ist neu in Visual Studio 2017 SDK
+# <a name="what39s-new-in-the-visual-studio-2017-sdk"></a>Welche &#39; s in der Visual Studio 2017 SDK
 
-Das Visual Studio SDK hat die folgenden neuen und aktualisierten Features für Visual Studio 2017.
+Das Visual Studio SDK hat die folgenden neuen und aktualisierten Features für Visual Studio-2017.
 
 ## <a name="vsix-v3-format"></a>VSIX-v3-format
 
-Zur Unterstützung der Installation des neuen leicht von Visual Studio 2017 wurde das VSIX-Erweiterung Manifeste-Format Version 3 (v3 VSIX) aktualisiert.
+Um die neue Lightweight-Installation von Visual Studio 2017 zu unterstützen, wurde das VSIX-Erweiterung manifest Format auf Version 3 (VSIX v3) aktualisiert.
 
-Das neue Format bietet Unterstützung für:
+Das neue Format wurde Unterstützung für:
 
-* Erforderliche Komponenten werden erkannt und installiert, indem Sie die VSIXInstaller deklarieren explizit.
-* Ngen'ing Assemblys bei Installation der Erweiterung.
-* Installieren von Ressourcen außerhalb des üblichen Erweiterung Root.
+* Deklarieren explizit Voraussetzungen erkannt und durch die VSIXInstaller installiert werden.
+* Ngen'ing Assemblys, auf die Installation der Erweiterung.
+* Installieren die Objekte außerhalb des üblichen Erweiterung Root.
 
 Weitere Informationen zu diesen Änderungen finden Sie unter den folgenden Themen:
 
-* [Änderungen an Erweiterbarkeit für 2017](breaking-changes-2017.md)
+* [Änderungen an der Erweiterbarkeit für 2017](breaking-changes-2017.md)
 * [NGen-Unterstützung in VSIX v3](ngen-support.md)
 * [Installieren außerhalb des Ordners für Erweiterungen](set-install-root.md)
 * [Häufig gestellte Fragen für die Erweiterbarkeit von Visual Studio 2017](faq-2017.md)
 
-## <a name="migrating-extensibility-project-to-visual-studio-2017"></a>Migrieren zu Visual Studio 2017-Erweiterungsprojekt
+## <a name="migrating-extensibility-project-to-visual-studio-2017"></a>Migrieren von auf 2017 von Visual Studio-Erweiterungsprojekt
 
-Um weitere Informationen zum Aktualisieren Ihrer Erweiterungsprojekte und ihre VSIX-Manifeste auf Visual Studio 2017 finden Sie unter [wie: Erweiterungsprojekte migrieren, um Visual Studio 2017](how-to-migrate-extensibility-projects-to-visual-studio-2017.md).
-
-## <a name="lightweight-solution-load-lsl"></a>Einfache Lösung laden (LSL)
-
-Laden Sie einfache Lösung ist ein neues Feature in VS 2017, Ladezeit Lösung wird erheblich schneller produktiver ermöglicht. Wenn LSL aktiviert ist, wird Visual Studio nicht vollständig Projekte geladen, wenn Sie mit ihnen zu arbeiten beginnen.
-
-LSL kann Visual Studio-Erweiterungen auswirken. Abhängen, deren Funktionen an einem Projekt vollständig geladenen Erweiterungen möglicherweise nicht funktioniert oder nicht ordnungsgemäß funktionieren. Finden Sie unter [Laden einer Projektmappe Lightweight](lightweight-solution-load-extension-impact.md) zur Feststellung, ob die Erweiterung wird möglicherweise beeinträchtigt werden, und erhalten einen Leitfaden zum Aktualisieren der Erweiterungs.
+Zum Aktualisieren der Erweiterbarkeit von Projekten und die VSIX-Manifest an Visual Studio 2017 finden Sie unter [Vorgehensweise: Migrieren Erweiterungsprojekte zu Visual Studio 2017](how-to-migrate-extensibility-projects-to-visual-studio-2017.md).
 
 ## <a name="custom-project-and-item-templates"></a>Benutzerdefinierte Projekt- und Elementvorlagen
 
-Ab Visual Studio 2017 Überprüfung von benutzerdefinierten Projekt- und Elementvorlagen nicht mehr erfolgt. Stattdessen muss die Erweiterung Manifestdateien Vorlage bereitstellen, die den Installationsspeicherort dieser Vorlagen zu beschreiben. Visual Studio 2017 können Sie um die VSIX-Erweiterungen zu aktualisieren. Wenn Sie die Erweiterung mithilfe einer MSI-Datei bereitstellen, müssen Sie die Vorlage Manifestdateien manuell erstellen. Weitere Informationen finden Sie unter [Aktualisieren von benutzerdefinierten Projekt- und Elementvorlagen für Visual Studio 2017](../extensibility/upgrading-custom-project-and-item-templates-for-visual-studio-2017.md). Die Vorlage Manifestschema finden Sie unter [Visual Studio-Vorlage Manifest Schema Reference](../extensibility/visual-studio-template-manifest-schema-reference.md).
+Ab Visual Studio 2017, Überprüfung von benutzerdefinierten Projekt- und Elementvorlagen nicht mehr erfolgt. Stattdessen muss die Erweiterung vorlagenmanifestdateien bereitstellen, die den Installationsspeicherort dieser Vorlagen zu beschreiben. Visual Studio-2017 können Sie um die VSIX-Erweiterungen zu aktualisieren. Wenn Sie die Erweiterung mithilfe einer MSI-Datei bereitstellen, müssen Sie die vorlagenmanifestdateien manuell generieren. Weitere Informationen finden Sie unter [Aktualisieren von benutzerdefinierten Projekt- und Elementvorlagen für Visual Studio-2017](../extensibility/upgrading-custom-project-and-item-templates-for-visual-studio-2017.md). Die Vorlage Manifestschema finden Sie im [Visual Studio Manifest Schemareferenz](../extensibility/visual-studio-template-manifest-schema-reference.md).
 
 ## <a name="updated-extension-performance-guidelines"></a>Aktualisierte Erweiterung Leistungsrichtlinien
 
-Es gibt eine neue [wie: Diagnose-Erweiterung Leistung](how-to-diagnose-extension-performance.md) Thema unter [Verwalten von VSPackages](managing-vspackages.md) um zu zeigen, wie Sie erkennen und Analysieren der Auswirkung der Erweiterung für Visual Studio starten und Lösung Ladezeiten.
-
+Es gibt eine neue [wie: Diagnose Erweiterung Leistung](how-to-diagnose-extension-performance.md) Thema unter [Verwalten von VSPackages](managing-vspackages.md) um zu zeigen, wie Sie erkennen und Analysieren der Auswirkungen der Erweiterung für Visual Studio starten und die Lösung Ladezeiten.

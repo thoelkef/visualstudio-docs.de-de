@@ -1,61 +1,63 @@
 ---
-title: "slice-Methode (String) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "slice"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "slice-Methode"
-  - "Zeichenfolgen [Visual Studio], zurückgegebene Zeichen"
+title: Slice-Methode (String) (JavaScript) | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: slice
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- strings [Visual Studio], returning characters
+- slice method
 ms.assetid: 80cd77a6-3718-492e-8e96-f909d8721d91
-caps.latest.revision: 16
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 16
+caps.latest.revision: "16"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 1baa0a05a2d6aa8c06cc962761c8e557632d034c
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# slice-Methode (String) (JavaScript)
+# <a name="slice-method-string-javascript"></a>slice-Methode (String) (JavaScript)
 Gibt einen Abschnitt einer Zeichenfolge zurück.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
   
 stringObj.slice(start, [end])   
 ```  
   
-## Parameter  
+## <a name="parameters"></a>Parameter  
  `stringObj`  
- Erforderlich.  Ein `String`\-Objekt oder Zeichenfolgenliteral.  
+ Erforderlich. Ein `String`-Objekt oder Zeichenfolgenliteral.  
   
  `start`  
- Erforderlich.  Der Index am Anfang des angegebenen Abschnitts von `stringObj`.  
+ Erforderlich. Der Index auf den Anfang des angegebenen Teils `stringObj`.  
   
  `end`  
- Dies ist optional.  Der Index am Ende des angegebenen Abschnitts von `stringObj`.  Die Teilzeichenfolge enthält die Zeichen bis zum, aber nicht einschließlich des von `end` angegebenen Zeichens.  Wenn dieser Wert nicht angegeben wird, erstreckt sich die Teilzeichenfolge bis zum Ende von `stringObj`.  
+ Dies ist optional. Der Index bis zum Ende des angegebenen Bereichs des `stringObj`. Die Teilzeichenfolge enthält die Zeichen bis zum, aber nicht einschließlich, das Zeichen, die durch angegeben `end`. Wenn dieser Wert nicht angegeben wird, weiterhin die Teilzeichenfolge bis zum Ende des `stringObj`.  
   
-## Hinweise  
- Die `slice`\-Methode gibt ein `String`\-Objekt zurück, das den angegebenen Abschnitt von `stringObj` enthält.  
+## <a name="remarks"></a>Hinweise  
+ Die `slice` Methode gibt ein `String` Objekt, das den angegebenen Teil enthält `stringObj`.  
   
- Die `slice`\-Methode kopiert bis zu dem Zeichen, das durch `end` angegeben wird. Das Zeichen ist jedoch nicht in der Kopie enthalten.  
+ Die `slice` -Methode kopiert bis zur, aber nicht einschließlich, die durch angegebene Zeichen `end`.  
   
- Falls `start` negativ ist, wird es als *length* \+ `start` behandelt, wobei *length* der Länge der Zeichenfolge entspricht.  Wenn `end` negativ ist, wird dieser Parameter als *length* \+ `end` behandelt.  Wird `end` ausgelassen, wird das Kopieren bis zum Ende von `stringObj` fortgesetzt.  Falls `end` vor `start` auftritt, werden keine Elemente in die neue Zeichenfolge kopiert.  
+ Wenn `start` ist negativ ist, wird dies als behandelt *Länge*  +  `start` , in denen *Länge* ist die Länge der Zeichenfolge. Wenn `end` ist negativ ist, wird dies als behandelt *Länge* + `end`. Wenn `end` wird weggelassen, bis zum Ende weiterhin kopieren `stringObj`. Wenn `end` tritt ein, bevor `start`, keine Zeichen in der neuen Zeichenfolge kopiert werden.  
   
-## Beispiel  
- Im ersten Beispiel gibt die `slice`\-Methode die gesamte Zeichenfolge zurück.  Im zweiten Beispiel gibt die `slice`\-Methode die gesamte Zeichenfolge, mit Ausnahme des letzten Zeichens zurück.  
+## <a name="example"></a>Beispiel  
+ Im ersten Beispiel das `slice` Methode die gesamte Zeichenfolge zurückgegeben. Im zweiten Beispiel die `slice` Methode gibt die gesamte Zeichenfolge, mit Ausnahme der letzten Zeichen zurück.  
   
-```javascript  
+```JavaScript  
 var str1 = "all good boys do fine";  
   
 var slice1 = str1.slice(0);  
@@ -76,10 +78,10 @@ document.write(slice4);
   
 ```  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  [!INCLUDE[jsv3](../../javascript/reference/includes/jsv3-md.md)]  
   
- **Gilt für**: [String\-Objekt](../../javascript/reference/string-object-javascript.md)  
+ **Gilt für**: [String-Objekt](../../javascript/reference/string-object-javascript.md)  
   
-## Siehe auch  
- [slice\-Methode \(Array\)](../../javascript/reference/slice-method-array-javascript.md)
+## <a name="see-also"></a>Siehe auch  
+ [slice-Methode (Array)](../../javascript/reference/slice-method-array-javascript.md)

@@ -1,53 +1,55 @@
 ---
-title: "getMilliseconds-Methode (Datum) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "getMilliseconds"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "Millisekunden"
-  - "getMilliseconds-Methode"
+title: GetMilliseconds-Methode (Datum) (JavaScript) | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: getMilliseconds
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- milliseconds
+- getMilliseconds method
 ms.assetid: 1b512146-1e8a-44a4-89da-6cc5338d15cb
-caps.latest.revision: 11
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 33e5fc54dffbe06e47f0978e6cef94b1f650c90f
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# getMilliseconds-Methode (Datum) (JavaScript)
-Ruft die Millisekunden eines Datumswerts ab, unter Verwendung der lokalen Zeit.  
+# <a name="getmilliseconds-method-date-javascript"></a>getMilliseconds-Methode (Datum) (JavaScript)
+Ruft ab, der ein Datum unter Verwendung der Ortszeit in Millisekunden.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
   
 dateObj.getMilliseconds()   
 ```  
   
-#### Parameter  
- Der erforderliche `dateObj`\-Verweis ist ein `Date`\-Objekt.  
+#### <a name="parameters"></a>Parameter  
+ Der erforderliche `dateObj` -Verweis ist ein `Date` -Objekt.  
   
-## Rückgabewert  
- Ruft die Millisekunden eines Datumswerts ab  Der Wert kann im Bereich 0 bis 999 liegen.  Wenn ein Datum ohne Angabe der Millisekunden erstellt wurde, wird der Wert 0 \(null\) zurückgegeben.  
+## <a name="return-value"></a>Rückgabewert  
+ Gibt die Millisekunden des Datums zurück. Der Wert kann zwischen 0 und 999 liegen. Wenn ein Datum ohne die Millisekunden erstellt wurde, ist der zurückgegebene Wert 0.  
   
-## Hinweise  
- Um die Anzahl der Millisekunden unter Verwendung der koordinierten Weltzeit \(Universal Coordinated Time, UTC\) zu bestimmen, verwenden Sie die `getUTCMilliseconds`\-Methode.  
+## <a name="remarks"></a>Hinweise  
+ Um die Anzahl der Millisekunden in Universal Coordinated Time (UTC) abzurufen, verwenden die `getUTCMilliseconds` Methode.  
   
-## Beispiel  
- Das folgende Beispiel zeigt die Anwendung der **getMilliseconds**\-Methode.  
+## <a name="example"></a>Beispiel  
+ Das folgende Beispiel zeigt, wie Sie die **GetMilliseconds** Methode.  
   
-```javascript  
+```JavaScript  
 var date = new Date("1/1/2001");  
 document.write(date.getMilliseconds());  
 document.write("<br/>");  
@@ -60,12 +62,12 @@ document.write(date.getMilliseconds());
   
 ```  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  [!INCLUDE[jsv3](../../javascript/reference/includes/jsv3-md.md)]  
   
- **Gilt für**: [Date\-Objekt](../../javascript/reference/date-object-javascript.md)  
+ **Gilt für**: [Date Object](../../javascript/reference/date-object-javascript.md)  
   
-## Siehe auch  
- [getUTCMilliseconds\-Methode \(Datum\)](../../javascript/reference/getutcmilliseconds-method-date-javascript.md)   
- [setMilliseconds\-Methode \(Datum\)](../../javascript/reference/setmilliseconds-method-date-javascript.md)   
- [setUTCMilliseconds\-Methode \(Datum\)](../../javascript/reference/setutcmilliseconds-method-date-javascript.md)
+## <a name="see-also"></a>Siehe auch  
+ [GetUTCMilliseconds-Methode (Datum)](../../javascript/reference/getutcmilliseconds-method-date-javascript.md)   
+ [SetMilliseconds-Methode (Datum)](../../javascript/reference/setmilliseconds-method-date-javascript.md)   
+ [setUTCMilliseconds-Methode (Datum)](../../javascript/reference/setutcmilliseconds-method-date-javascript.md)

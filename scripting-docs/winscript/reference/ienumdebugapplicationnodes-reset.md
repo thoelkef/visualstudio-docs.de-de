@@ -1,44 +1,47 @@
 ---
-title: "IEnumDebugApplicationNodes::Reset | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IEnumDebugApplicationNodes::Reset | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IEnumDebugApplicationNodes.Reset
 apilocation: pdm.dll
-helpviewer_keywords: 
-  - "IEnumDebugApplicationNodes::Reset"
+helpviewer_keywords: IEnumDebugApplicationNodes::Reset
 ms.assetid: 56ecdafe-ff11-461a-92e1-93254a49f1a1
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 9b237117a942beb3564d8b5012231aca1df1c4ad
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# IEnumDebugApplicationNodes::Reset
-Setzt eine Enumerationsfolge auf den Anfang zurück.  
+# <a name="ienumdebugapplicationnodesreset"></a>IEnumDebugApplicationNodes::Reset
+Setzt ein Enumerationsfolge auf den Anfang zurück.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 HRESULT Reset();  
 ```  
   
-#### Parameter  
- Diese Methode verwendet keine Parameter.  
+#### <a name="parameters"></a>Parameter  
+ Diese Methode nimmt keine Parameter.  
   
-## Rückgabewert  
- Die Methode gibt ein `HRESULT` zurück.  Zu den möglichen Werten zählen, aber nicht zu, die in der folgenden Tabelle beschränkt.  
+## <a name="return-value"></a>Rückgabewert  
+ Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
   
-|Wert|Description|  
-|----------|-----------------|  
+|Wert|Beschreibung|  
+|-----------|-----------------|  
 |`S_OK`|Die Methode war erfolgreich.|  
   
-## Hinweise  
- Diese Methode wird eine Enumerationsfolge zum Anfang zurück.  
+## <a name="remarks"></a>Hinweise  
+ Diese Methode setzt einen Enumerationsfolge auf den Anfang zurück.  
   
-## Siehe auch  
- [IEnumDebugApplicationNodes\-Schnittstelle](../../winscript/reference/ienumdebugapplicationnodes-interface.md)
+## <a name="see-also"></a>Siehe auch  
+ [IEnumDebugApplicationNodes-Schnittstelle](../../winscript/reference/ienumdebugapplicationnodes-interface.md)

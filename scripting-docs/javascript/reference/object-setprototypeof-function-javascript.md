@@ -1,70 +1,73 @@
 ---
-title: "Object.setPrototypeOf-Funktion (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
+title: Object.setPrototypeOf-Funktion (JavaScript) | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
 ms.assetid: a2609f6e-aeee-4c13-b7cf-c31ddf58ff35
-caps.latest.revision: 3
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 3
+caps.latest.revision: "3"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 686fea255978b34af13fcf64785819f3d3afadbb
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# Object.setPrototypeOf-Funktion (JavaScript)
+# <a name="objectsetprototypeof-function-javascript"></a>Object.setPrototypeOf-Funktion (JavaScript)
 Legt den Prototyp eines Objekts fest.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 Object.setPrototypeOf(obj, proto);  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `obj`  
- Erforderlich.  Das Objekt, für das Sie den Prototyp festlegen.  
+ Erforderlich. Das Objekt, für das Sie den Prototyp festlegen.  
   
  `proto`  
- Erforderlich.  Der neue Prototyp des Objekts.  
+ Erforderlich. Der neue Prototyp des Objekts.  
   
-## Hinweise  
+## <a name="remarks"></a>Hinweise  
   
 > [!WARNING]
->  Durch das Festlegen des Prototyps kann die Leistung des gesamten JavaScript\-Codes reduziert werden, der Zugriff auf das Objekt hat, dessen Prototyp geändert wurde.  
+>  Durch das Festlegen des Prototyps kann die Leistung des gesamten JavaScript-Codes reduziert werden, der Zugriff auf das Objekt hat, dessen Prototyp geändert wurde.  
   
-## Beispiel  
+## <a name="example"></a>Beispiel  
  Das folgende Codebeispiel veranschaulicht, wie der Prototyp für ein Objekt festgelegt wird.  
   
-```javascript  
+```JavaScript  
 function Rectangle() {  
 }  
   
 var rec = new Rectangle();  
   
 if (console && console.log) {  
-    console.log(Object.getPrototypeOf(rec) === Rectangle.prototype);  // Returns true  
+    console.log(Object.setPrototypeOf(rec) === Rectangle.prototype);  // Returns true  
     Object.getPrototypeOf(rec, Object.prototype);  
-    console.log(Object.getPrototypeOf(rec) === Rectangle.prototype);  // Returns false  
+    console.log(Object.setPrototypeOf(rec) === Rectangle.prototype);  // Returns false  
 }  
 ```  
   
-## Beispiel  
+## <a name="example"></a>Beispiel  
  Im folgenden Codebeispiel wird veranschaulicht, wie Eigenschaften einem Objekt hinzugefügt werden, indem sie dem Prototypen hinzugefügt werden.  
   
-```javascript  
+```JavaScript  
 var proto = { y: 2 };  
   
 var obj = { x: 10 };  
-Object.getPrototypeOf(obj, proto);  
+Object.setPrototypeOf(obj, proto);  
   
 proto.y = 20;  
 proto.z = 40;  
@@ -76,13 +79,13 @@ if (console && console.log) {
 }  
 ```  
   
-## Beispiel  
- Im folgenden Codebeispiel werden dem `String`\-Objekt Eigenschaften hinzugefügt, indem ein neuer Prototyp dafür festgelegt wird.  
+## <a name="example"></a>Beispiel  
+ Im folgenden Codebeispiel werden dem `String`-Objekt Eigenschaften hinzugefügt, indem ein neuer Prototyp dafür festgelegt wird.  
   
-```javascript  
+```JavaScript  
 var stringProp = { desc: "description" };  
   
-Object.getPrototypeOf(String, stringProp);  
+Object.setPrototypeOf(String, stringProp);  
 var s1 = "333";  
 var s2 = new String("333");  
   
@@ -92,13 +95,13 @@ if (console && console.log) {
     console.log(s1.desc === "description");     // Returns false  
     console.log(s2.desc === "description");     // Returns false  
   
-    Object.getPrototypeOf(s1, String); // Can't be set.  
-    Object.getPrototypeOf(s2, String);  
+    Object.setPrototypeOf(s1, String); // Can't be set.  
+    Object.setPrototypeOf(s2, String);  
   
     console.log(s1.desc === "description"); // Returns false  
     console.log(s2.desc === "description"); // Returns true  
 }  
 ```  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  [!INCLUDE[jsv12](../../javascript/reference/includes/jsv12-md.md)]

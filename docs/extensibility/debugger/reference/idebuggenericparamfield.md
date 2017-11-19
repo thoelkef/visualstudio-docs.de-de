@@ -1,48 +1,49 @@
 ---
-title: "IDebugGenericParamField | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "IDebugGenericParamField-Schnittstelle"
+title: IDebugGenericParamField | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: IDebugGenericParamField interface
 ms.assetid: ba24f499-5ba7-4c67-83e6-923229b52327
-caps.latest.revision: 6
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 6
+caps.latest.revision: "6"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 78ad46b37274a3a2164f3618a1acbce55f0928bf
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugGenericParamField
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Stellt einen Parameter für einen generischen Typ von verwaltetem Code dar.  
+# <a name="idebuggenericparamfield"></a>IDebugGenericParamField
+Stellt einen Parameter für einen generischen Typ für verwalteten Code dar.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 IDebugGenericParamField : IDebugField  
 ```  
   
-## Hinweise für Implementierer  
- Wird für die Unterstützung von Generika.  
+## <a name="notes-for-implementers"></a>Hinweise für Implementierer  
+ Für die Unterstützung von Generika verwendet.  
   
-## Methoden  
- Zusätzlich zu den Methoden der [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)\-Schnittstelle implementiert diese Schnittstelle die folgenden Methoden:  
+## <a name="methods"></a>Methoden  
+ Zusätzlich zu den Methoden für die [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) diese Schnittstelle implementiert, die folgenden Methoden:  
   
 |Methode|Beschreibung|  
-|-------------|------------------|  
-|[ConstraintCount](../../../extensibility/debugger/reference/idebuggenericparamfield-constraintcount.md)|Gibt die Anzahl der Einschränkungen zurück, die bei diesem generischen Parameter zugeordnet sind.|  
-|[GetConstraints](../../../extensibility/debugger/reference/idebuggenericparamfield-getconstraints.md)|Ruft die Einschränkungen ab, die bei diesem generischen Parameter zugeordnet sind.|  
+|------------|-----------------|  
+|[ConstraintCount](../../../extensibility/debugger/reference/idebuggenericparamfield-constraintcount.md)|Gibt die Anzahl der Einschränkungen, die diese generischen Parameter zugeordnet sind.|  
+|[GetConstraints](../../../extensibility/debugger/reference/idebuggenericparamfield-getconstraints.md)|Ruft ab den Einschränkungen, die diese generischen Parameter zugeordnet sind.|  
 |[GetFlags](../../../extensibility/debugger/reference/idebuggenericparamfield-getflags.md)|Ruft die Flags für diesen generischen Parameter ab.|  
 |[GetIndex](../../../extensibility/debugger/reference/idebuggenericparamfield-getindex.md)|Ruft den Index dieses generischen Parameters ab.|  
-|[GetNameOfFormalParam](../../../extensibility/debugger/reference/idebuggenericparamfield-getnameofformalparam.md)|Ruft den Namen des generischen Parameters ab.|  
-|[GetOwner](../../../extensibility/debugger/reference/idebuggenericparamfield-getowner.md)|Ruft den Besitzer dieses generischen Typ\- oder Methoden Parameters ab.|  
+|[GetNameOfFormalParam](../../../extensibility/debugger/reference/idebuggenericparamfield-getnameofformalparam.md)|Ruft den Namen dieses generischen Parameters ab.|  
+|[GetOwner](../../../extensibility/debugger/reference/idebuggenericparamfield-getowner.md)|Ruft den Typ oder eine Methode Besitzer dieses generischen Parameters ab.|  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  Header: Sh.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  

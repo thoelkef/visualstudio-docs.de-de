@@ -1,36 +1,38 @@
 ---
-title: "Zugriff auf gespeicherte Schriftart- und Farbeinstellungen | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Schriftarten, die Zugriff auf die gespeicherten Einstellungen"
-  - "Schriftart und Farbe Control [Visual Studio SDK], Persistenz"
-  - "Farben, die Zugriff auf die gespeicherten Einstellungen"
+title: Zugriff auf gespeicherte Schriftart- und Farbeinstellungen | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- fonts, accessing stored settings
+- font and color control [Visual Studio SDK], persistence
+- colors, accessing stored settings
 ms.assetid: beba7174-e787-45c2-b6ff-a60f67ad4998
-caps.latest.revision: 26
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 26
+caps.latest.revision: "26"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: bc4424b3cf277bcee13123081deecac070344054
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Zugriff auf gespeicherte Schriftart- und Farbeinstellungen
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="accessing-stored-font-and-color-settings"></a>Zugriff auf gespeicherte Schriftart- und Farbeinstellungen
 Die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] integrierten Entwicklungsumgebung (IDE) Speichert geänderte Einstellungen für Schriftarten und Farben in der Registrierung. Sie können die <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> Schnittstelle, um diese Einstellungen zuzugreifen.  
   
 ## <a name="to-initiate-state-persistence-of-fonts-and-colors"></a>So initiieren Sie Statuspersistenz von Schriftarten und Farben  
- Schriftart und Farbe Informationen werden nach Kategorie im folgenden Registrierungsschlüssel gespeichert: [HKCU\SOFTWARE\Microsoft \Visual Studio\\*\< Visual Studio-Version>*\FontAndColors\\*\< CategoryGUID>*], wobei *\< CategoryGUID>* Kategorie-GUID ist.  
+ Schriftart und Farbe Informationen werden nach Kategorie im folgenden Registrierungsschlüssel gespeichert: [HKCU\SOFTWARE\Microsoft \Visual Studio\\*\<Visual Studio-Version >*\FontAndColors\\  *\<CategoryGUID >*], wobei  *\<CategoryGUID >* Kategorie-GUID ist.  
   
  Aus diesem Grund, um Persistenz zu initiieren, muss eine VSPackage:  
   
 -   Abrufen einer <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> Schnittstelle durch den Aufruf `QueryService` für den globalen Service-Anbieter.  
   
-     `QueryService` muss aufgerufen werden, mithilfe des Dienst-ID-Argument der `SID_SVsFontAndColorStorage` und ID Schnittstellenargument `IID_IVsFontAndColorStorage`.  
+     `QueryService`muss aufgerufen werden, mithilfe des Dienst-ID-Argument der `SID_SVsFontAndColorStorage` und ID Schnittstellenargument `IID_IVsFontAndColorStorage`.  
   
 -   Verwenden der <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.OpenCategory%2A> Methode, um eine Kategorie, die beibehalten werden, mithilfe der Kategorie-GUID und einem moduskennzeichnung als Argumente zu öffnen.  
   
@@ -60,7 +62,7 @@ Die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] integrierten Entwi
  Standardmäßig ist die Generierung von Ereignissen nicht aktiviert. Um die Generierung von Ereignissen zu aktivieren, muss eine Kategorie mit geöffnet werden <xref:Microsoft.VisualStudio.Shell.Interop.__FCSTORAGEFLAGS>. Dies bewirkt, dass die IDE rufen Sie die entsprechende <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> Methode, die eine VSPackage implementiert.  
   
 > [!NOTE]
->  Änderungen durch die **Schriftart und Farbe** Eigenschaftenseite generieren Ereignisse unabhängig von <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>. Können Sie die <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager> Schnittstelle, um zu bestimmen, ob ein Update der zwischengespeicherten Einstellungen von Schriftart und Farbe erforderlich ist, vor dem Aufrufen der Methoden der <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> Klasse.  
+>  Änderungen, die über die **Schriftart und Farbe** Eigenschaftenseite generieren Ereignisse unabhängig von <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>. Können Sie die <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager> Schnittstelle, um zu bestimmen, ob ein Update der zwischengespeicherten Einstellungen von Schriftart und Farbe erforderlich ist, vor dem Aufrufen der Methoden der <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> Klasse.  
   
 ### <a name="storing-and-retrieving-information"></a>Speichern und Abrufen von Informationen  
  Um zu erhalten, oder konfigurieren Sie die Informationen, die ein Benutzer für eine benannte Anzeigeelements in einer geöffneten Kategorie ändern können, VSPackages Aufrufen der <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetItem%2A> und <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.SetItem%2A> Methoden.  
@@ -68,12 +70,12 @@ Die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] integrierten Entwi
  Informationen zur Schriftart Attribute für eine bestimmte Kategorie, mithilfe abgerufen wird der <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetFont%2A> und <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.SetFont%2A> Methoden.  
   
 > [!NOTE]
->  Die `fFlags` Argument zu übergeben der <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.OpenCategory%2A> Methode beim Öffnen der entsprechenden Kategorie definiert das Verhalten der <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetItem%2A> und die <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetFont%2A> Methoden. Diese Methoden nur Rückgabeinformationen Aboutdisplay Itemsthat standardmäßig wurden geändert. Jedoch wenn eine Kategorie, mithilfe geöffnet wird der <xref:Microsoft.VisualStudio.Shell.Interop.__FCSTORAGEFLAGS> kennzeichnen, beide aktualisiert und unverändert Anzeigeelementen zugegriffen werden können, indem <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetItem%2A> und <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetFont%2A>.  
+>  Die `fFlags` Argument zu übergeben der <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.OpenCategory%2A> Methode beim Öffnen der entsprechenden Kategorie definiert das Verhalten der <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetItem%2A> und <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetFont%2A> Methoden. Diese Methoden nur Rückgabeinformationen Aboutdisplay Itemsthat standardmäßig wurden geändert. Allerdings wird eine Kategorie mit geöffnet der <xref:Microsoft.VisualStudio.Shell.Interop.__FCSTORAGEFLAGS> kennzeichnen, beide aktualisiert und unverändert Anzeigeelementen zugegriffen werden können, indem <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetItem%2A> und <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetFont%2A>.  
   
  Nur in der Standardeinstellung geändert **Anzeigeelementen** Informationen in der Registrierung gespeichert ist. Die <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> Schnittstelle kann nicht verwendet werden, um alle Einstellungen für Schriftarten und Farben abgerufen werden.  
   
 > [!NOTE]
->  Die <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetItem%2A> und die <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetFont%2A> -Methoden zurückgeben REGDB_E_KEYMISSING (0x80040152L), wenn Sie sie zum Abrufen von Informationen verwenden zu unverändert **Anzeigeelementen**.  
+>  Die <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetItem%2A> und <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetFont%2A> -Methoden zurückgeben REGDB_E_KEYMISSING (0x80040152L), wenn Sie sie zum Abrufen von Informationen verwenden zu unverändert **Anzeigeelementen**.  
   
  Die Einstellungen aller **Anzeigeelementen** in einer bestimmten **Kategorie** erhalten Sie, indem Sie mit den Methoden der der `T:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults` Schnittstelle.  
   

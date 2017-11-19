@@ -1,51 +1,51 @@
 ---
-title: "IDebugProcess2::GetProcessId | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugProcess2::GetProcessId"
-helpviewer_keywords: 
-  - "IDebugProcess2::GetProcessId"
+title: IDebugProcess2::GetProcessId | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugProcess2::GetProcessId
+helpviewer_keywords: IDebugProcess2::GetProcessId
 ms.assetid: d5b6f03c-d49d-4b83-b072-016ac3124f5f
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 779420e37f3057651f86273ec7d09368443ad1bb
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugProcess2::GetProcessId
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
+# <a name="idebugprocess2getprocessid"></a>IDebugProcess2::GetProcessId
 Ruft die GUID für diesen Prozess ab.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT GetProcessId(  
-   GUID* pguidProcessId  
+```cpp  
+HRESULT GetProcessId(  
+   GUID* pguidProcessId  
 );  
 ```  
   
-```c#  
-int GetProcessId(  
-   out Guid pguidProcessId  
+```csharp  
+int GetProcessId(  
+   out Guid pguidProcessId  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `pguidProcessId`  
- \[out\]  Gibt die GUID für diesen Prozess zurück.  
+ [out] Gibt die GUID für diesen Prozess zurück.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Hinweise  
- Der GUID \(Globally Unique Identifier\) gibt diesen Prozess von allen anderen Prozessen, die im System ausgeführt werden.  
+## <a name="remarks"></a>Hinweise  
+ Die GUID (GLOBALLY Unique IDentifier) gibt dieser Vorgang von allen Prozessen, die im System ausgeführt werden.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

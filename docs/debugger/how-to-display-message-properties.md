@@ -1,31 +1,31 @@
 ---
-title: "How to: Display Message Properties | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "message properties in SpyHelp"
+title: 'Vorgehensweise: Anzeigen von Meldungseigenschaften | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: message properties in SpyHelp
 ms.assetid: 8b72b071-691b-48b7-8852-f748c20fc787
-caps.latest.revision: 4
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 4
+caps.latest.revision: "4"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 1ea76ebef8903e5d4937cc8d9a35933c9182746f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# How to: Display Message Properties
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Verwenden Sie das Dialogfeld [Meldungseigenschaften](../debugger/message-properties-dialog-box.md), um Informationen über eine in der [Meldungsansicht](../debugger/messages-view.md) aufgeführte Meldung zu erhalten.  
+# <a name="how-to-display-message-properties"></a>Gewusst wie: Anzeigen von Meldungseigenschaften
+So ermitteln Sie weitere Informationen zu einer Nachricht aufgeführt [Ansicht "Nachrichten"](../debugger/messages-view.md), verwenden die [Nachricht Eigenschaftendialogfeld](../debugger/message-properties-dialog-box.md).  
   
-### So öffnen Sie das Dialogfeld "Meldungseigenschaften"  
+### <a name="to-open-a-message-properties-dialog-box"></a>So öffnen Sie das Dialogfeld Nachrichteneigenschaften  
   
-1.  Wählen Sie in der Struktur, die in der Meldungsansicht angezeigt wird, eine Meldung aus.  
+1.  Wählen Sie eine Nachricht aus der Struktur, die in der Ansicht "Nachrichten" angezeigt.  
   
-2.  Klicken Sie im Menü **Ansicht** auf **Eigenschaften**.  
+2.  Aus der **Ansicht** Menü wählen **Eigenschaften**.  
   
- Eigenschaftendialogfelder sind nicht modal, sodass Sie in einem Ansichtsfenster auf ein anderes Element klicken können und im Dialogfeld Informationen zum ausgewählten Element angezeigt werden.
+ Eigenschaftendialogfelder sind nicht modal ist, klicken Sie auf ein anderes Element in einem Fenster anzeigen und im Dialogfeld Informationen für das ausgewählte Element angezeigt werden.

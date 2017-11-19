@@ -1,23 +1,27 @@
 ---
-title: "Die Zuordnung &lt;Zuordnungsname&gt; kann nicht erstellt werden – die Eigenschaften weisen keine &#252;bereinstimmenden Typen auf | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: "Erstellen Sie eine Zuordnung kann nicht &lt;Zuordnungsname&gt; -Eigenschaftstypen stimmen nicht überein. | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 97ec5a04-6e23-45a2-9226-d77ead854392
-caps.latest.revision: 3
-caps.handback.revision: 3
-author: "mikeblome"
-ms.author: "mblome"
-manager: "ghogen"
+caps.latest.revision: "3"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.technology: vs-data-tools
+ms.openlocfilehash: c950abb08e937ded4511408367f7163f3b2e16de
+ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/09/2017
 ---
-# Die Zuordnung &lt;Zuordnungsname&gt; kann nicht erstellt werden – die Eigenschaften weisen keine &#252;bereinstimmenden Typen auf
-Kann nicht erstellt eine Zuordnung \< Zuordnungsname> -Eigenschaftstypen stimmen nicht überein. Eigenschaften weisen keine übereinstimmenden Typen: \< Eigenschaftennamen>.  
+# <a name="cannot-create-an-association-ltassociation-namegt---property-types-do-not-match"></a>Erstellen Sie eine Zuordnung kann nicht &lt;Zuordnungsname&gt; -Eigenschaftstypen stimmen nicht überein.
+Erstellen Sie eine Zuordnung kann nicht \<Association-Name >-Eigenschaftstypen stimmen nicht überein. Eigenschaften weisen keine übereinstimmenden Typen: \<Eigenschaftennamen >.  
   
- Zuordnungen definiert werden von den ausgewählten **Zuordnungseigenschaften** in die **Zuordnungs-Editor** (Dialogfeld). Eigenschaften auf jeder Seite der Zuordnung müssen den gleichen Datentyp haben.  
+ Zuordnungen definiert sind vom ausgewählten **Zuordnungseigenschaften** in der **Zuordnungs-Editor** (Dialogfeld). Eigenschaften auf jeder Seite der Zuordnung müssen den gleichen Datentyp haben.  
   
  Die in der Meldung aufgelisteten Eigenschaften haben nicht die gleichen Datentypen.  
   
@@ -27,11 +31,11 @@ Kann nicht erstellt eine Zuordnung \< Zuordnungsname> -Eigenschaftstypen stimmen
   
 2.  Klicken Sie auf **OK** um das Dialogfeld zu schließen.  
   
-3.  Überprüfen Sie die **Zuordnungseigenschaften** und wählen Sie Eigenschaften des gleichen Datentyps.  
+3.  Überprüfen Sie die **Zuordnungseigenschaften** und wählen Sie Eigenschaften des gleichen Datentyps aus.  
   
 4.  Klicken Sie auf **OK**.  
   
-## <a name="see-also"></a>Siehe auch  
- [Gewusst wie: Erstellen einer Zuordnung (Beziehung) zwischen LINQ to SQL-Klassen (O/R-Designer)](../data-tools/how-to-create-an-association-relationship-between-linq-to-sql-classes-o-r-designer.md)   
- [Exemplarische Vorgehensweise: Erstellen von LINQ to SQL-Klassen (O R-Designer)](../Topic/Walkthrough:%20Creating%20LINQ%20to%20SQL%20Classes%20\(O-R%20Designer\).md)   
- [LINQ to SQL](../Topic/LINQ%20to%20SQL.md)
+## <a name="see-also"></a>Siehe auch
+[O/R-Designer-Nachrichten](../data-tools/o-r-designer-messages.md)  
+[LINQ to SQL-tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)  
+[Vorgehensweise: Erstellen einer Assoziation zwischen LINQ to SQL-Klassen (O/R-Designer)](../data-tools/how-to-create-an-association-relationship-between-linq-to-sql-classes-o-r-designer.md) 

@@ -4,35 +4,19 @@ ms.custom:
 ms.date: 11/09/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 54d5af60-0b44-4ae1-aa57-45aa03f89f3d
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 1d474374a0c7603bc9b6995783bbed96c81c8907
+ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
 ms.translationtype: MT
-ms.sourcegitcommit: 17defdd0b96ec1c3273fc6b845af844b031a4a17
-ms.openlocfilehash: ac7a99673eb4dc23dd53a46c3c93fd735325c255
-ms.contentlocale: de-de
-ms.lasthandoff: 09/06/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/15/2017
 ---
 # <a name="changes-in-visual-studio-2017-extensibility"></a>Änderungen in Visual Studio 2017-Erweiterbarkeit
 
@@ -123,8 +107,3 @@ Die meisten Visual Studio Core-Assemblys werden nicht mehr im globalen Assemblyc
 * Externe Komponenten können den Visual Studio finden [anhand der Anleitungen im folgenden](https://blogs.msdn.microsoft.com/heaths/2016/09/15/changes-to-visual-studio-15-setup).
 * Es wird empfohlen, dass externe Komponenten verwenden die [externe Settings Manager](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.settings.externalsettingsmanager.aspx) anstelle von Lesen/Schreiben direkt in Visual Studio-Registrierungsschlüssel.
 * Überprüfen Sie, ob die Komponenten an, die die Erweiterung verwendet eine andere Technik für die Registrierung implementiert haben können. Z. B. möglicherweise Debuggererweiterungen nutzen die neuen [Msvsmon JSON-Datei COM-Registrierung](migrate-debugger-COM-registration.md).
-
-## <a name="change-lightweight-solution-load"></a>Ändern: Die einfache Lösung Last
-
-Einfache Projektmappen zu laden (LSL) verringert, dass Ladezeit für die Projektmappe Projekte nicht vollständig geladen, bis der Benutzer mit ihnen arbeiten beginnt. Dies kann Erweiterungen Auswirkungen auf die wird davon ausgegangen, dass ein Projekt vollständig geladen wurde. Finden Sie unter [Laden der Projektmappe Lightweight](lightweight-solution-load-extension-impact.md) zur Feststellung, ob die Erweiterung kann beeinträchtigt werden, und erhalten Anleitungen zum Aktualisieren der Erweiterungs.
-

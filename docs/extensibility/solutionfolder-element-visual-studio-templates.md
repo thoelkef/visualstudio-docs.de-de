@@ -1,30 +1,36 @@
 ---
-title: "SolutionFolder-Element (Visual Studio-Vorlagen) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "http://schemas.microsoft.com/developer/vstemplate/2005#SolutionFolder"
-helpviewer_keywords: 
-  - "<SolutionFolder>-Element [Visual Studio-Vorlagen]"
-  - "SolutionFolder-Element [Visual Studio-Vorlagen]"
+title: SolutionFolder-Element (Visual Studio-Vorlagen) | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: http://schemas.microsoft.com/developer/vstemplate/2005#SolutionFolder
+helpviewer_keywords:
+- <SolutionFolder> element [Visual Studio Templates]
+- SolutionFolder element [Visual Studio Templates]
 ms.assetid: 963f0398-fb50-4d8e-879d-d48f8b7c6d80
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: f67690b7b636bc52799f383c973bdecfbcb3d1ae
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# SolutionFolder-Element (Visual Studio-Vorlagen)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="solutionfolder-element-visual-studio-templates"></a>SolutionFolder-Element (Visual Studio-Vorlagen)
 Gruppiert Projekte in Vorlagen für mehrere Projekte.  
   
-## Syntax  
+ \<VSTemplate >  
+ \<TemplateContent >  
+ \<ProjectCollection >  
+ \<SolutionFolder >  
+  
+## <a name="syntax"></a>Syntax  
   
 ```  
 <SolutionFolder Name="DirectoryName">  
@@ -32,34 +38,34 @@ Gruppiert Projekte in Vorlagen für mehrere Projekte.
 </SolutionFolder>  
 ```  
   
-## Attribute und Elemente  
- In den folgenden Abschnitten werden attribute\-Elemente sowie untergeordnete und übergeordnete Elemente beschrieben.  
+## <a name="attributes-and-elements"></a>Attribute und Elemente  
+ In den folgenden Abschnitten werden attribute-Elemente sowie untergeordnete und übergeordnete Elemente beschrieben.  
   
-### Attribute  
+### <a name="attributes"></a>Attribute  
   
 |Attribut|Beschreibung|  
-|--------------|------------------|  
+|---------------|-----------------|  
 |`Name`|Erforderliches Attribut.<br /><br /> Der Name des Projektmappenordners.|  
   
-### Untergeordnete Elemente  
+### <a name="child-elements"></a>Untergeordnete Elemente  
   
 |Element|Beschreibung|  
-|-------------|------------------|  
-|[ProjectTemplateLink](../extensibility/projecttemplatelink-element-visual-studio-templates.md)|Optionales Element.<br /><br /> Gibt den Pfad zur VSTEMPLATE\-Datei eines Projekts in einer Vorlage für mehrere Projekte an.|  
+|-------------|-----------------|  
+|[ProjectTemplateLink](../extensibility/projecttemplatelink-element-visual-studio-templates.md)|Optionales Element.<br /><br /> Gibt den Pfad zur VSTEMPLATE-Datei eines Projekts in einer Vorlage für mehrere Projekte an.|  
 |`SolutionFolder`|Optionales Element.<br /><br /> Gruppiert Projekte in Vorlagen für mehrere Projekte.|  
   
-### Übergeordnete Elemente  
+### <a name="parent-elements"></a>Übergeordnete Elemente  
   
 |Element|Beschreibung|  
-|-------------|------------------|  
+|-------------|-----------------|  
 |[ProjectCollection](../extensibility/projectcollection-element-visual-studio-templates.md)|Legt die Organisation und den Inhalt von Vorlagen für mehrere Projekte fest.|  
 |`SolutionFolder`|Gruppiert Projekte in Vorlagen für mehrere Projekte.|  
   
-## Hinweise  
- Vorlagen mit mehreren Projekten fungieren als Container für mindestens zwei Projekte.  Das `SolutionFolder`\-Element wird verwendet, um die Projekte in der Vorlage in Gruppen zu organisieren.  Die von `SolutionFolder`\-Elementen angegebenen Ordner werden als Projektmappenordner im Projekt in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] erstellt.  Weitere Informationen zu Vorlagen mit mehreren Projekten finden Sie unter [Gewusst wie: Erstellen von Vorlagen mit mehreren Projekten](../ide/how-to-create-multi-project-templates.md).  
+## <a name="remarks"></a>Hinweise  
+ Vorlagen mit mehreren Projekten fungieren als Container für mindestens zwei Projekte. Das `SolutionFolder`-Element wird verwendet, um die Projekte in der Vorlage in Gruppen zu organisieren. Die von `SolutionFolder`-Elementen angegebenen Ordner werden als Projektmappenordner im Projekt in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] erstellt. Weitere Informationen zu Vorlagen mit mehreren Projekten finden Sie unter [Vorgehensweise: Erstellen von Vorlagen mit mehreren Projekten](../ide/how-to-create-multi-project-templates.md).  
   
-## Beispiel  
- Dieses Beispiel verwendet das `SolutionFolder`\-Element, um die Vorlage mit mehreren Projekten in zwei Gruppen zu unterteilen, `Math Classes` und `Graphics Classes`.  Die Vorlage enthält vier Projekte, von denen sich je zwei in jedem Projektmappenordner befinden.  
+## <a name="example"></a>Beispiel  
+ Dieses Beispiel verwendet das `SolutionFolder`-Element, um die Vorlage mit mehreren Projekten in zwei Gruppen zu unterteilen, `Math Classes` und `Graphics Classes`. Die Vorlage enthält vier Projekte, von denen sich je zwei in jedem Projektmappenordner befinden.  
   
 ```  
 <VSTemplate Version="3.0.0" Type="ProjectGroup"  
@@ -93,7 +99,7 @@ Gruppiert Projekte in Vorlagen für mehrere Projekte.
 </VSTemplate>  
 ```  
   
-## Siehe auch  
- [Schemareferenz zu Visual Studio\-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)   
- [Erstellen von benutzerdefinierten Projekt\- und Elementvorlagen](../ide/creating-project-and-item-templates.md)   
+## <a name="see-also"></a>Siehe auch  
+ [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)   
+ [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)   
  [Gewusst wie: Erstellen von Vorlagen mit mehreren Projekten](../ide/how-to-create-multi-project-templates.md)

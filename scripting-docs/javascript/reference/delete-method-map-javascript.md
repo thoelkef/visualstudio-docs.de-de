@@ -1,48 +1,51 @@
 ---
-title: "delete-Methode (Map) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
+title: Delete-Methode (Map) (JavaScript) | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
 ms.assetid: a073e1a1-5862-485b-b2bd-26c66a3aff51
-caps.latest.revision: 5
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 5
+caps.latest.revision: "5"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 5185b883cf603acdc91fe1f1c833d337c4468ba4
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# delete-Methode (Map) (JavaScript)
+# <a name="delete-method-map-javascript"></a>delete-Methode (Map) (JavaScript)
 Entfernt das angegebene Element aus einer Zuordnung.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```javascript  
+```JavaScript  
 mapObj.delete(key)  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `mapObj`  
- Erforderlich.  Ein `Map`\-Objekt.  
+ Erforderlich. Ein `Map`-Objekt.  
   
  `key`  
- Erforderlich.  Der Schlüssel des zu entfernenden Elements.  
+ Erforderlich. Der Schlüssel des zu entfernenden Elements.  
   
-## Eigenschaftswert\/Rückgabewert  
+## <a name="property-valuereturn-value"></a>Eigenschaftswert/Rückgabewert  
  `true`, wenn das Element entfernt wurde.  
   
-## Beispiel  
- Im folgenden Beispiel wird gezeigt, wie Sie einer `Map` Member hinzufügen und dann ein Member löschen.  
+## <a name="example"></a>Beispiel  
+ Im folgenden Beispiel wird gezeigt, wie Sie einem `Map` Member hinzufügen und dann ein Member löschen.  
   
-```javascript  
+```JavaScript  
 var m = new Map();  
 m.set(1, "black");  
 m.set(2, "red");  
@@ -58,5 +61,5 @@ m.forEach(function (item) {
 // 2  
 ```  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  [!INCLUDE[jsv11](../../javascript/reference/includes/jsv11-md.md)]

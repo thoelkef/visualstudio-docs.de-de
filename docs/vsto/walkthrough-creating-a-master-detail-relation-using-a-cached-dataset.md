@@ -1,12 +1,10 @@
 ---
-title: 'Walkthrough: Creating a Master Detail Relation Using a Cached Dataset | Microsoft Docs'
+title: 'Exemplarische Vorgehensweise: Erstellen einer Master-Detail-Beziehung mithilfe eines zwischengespeicherten Datasets | Microsoft Docs'
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -16,186 +14,188 @@ helpviewer_keywords:
 - master-detail tables [Office development in Visual Studio], walkthroughs
 - data caching [Office development in Visual Studio], Master/Detail Relation
 ms.assetid: 419f4e07-c67f-4fc9-973a-bc794f349ac3
-caps.latest.revision: 41
-author: kempb
-ms.author: kempb
+caps.latest.revision: "41"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: fb02770a5cb607cc13a5db2be2cc7128a699d569
-ms.contentlocale: de-de
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: b392b4de0288478c73fba8cecd88be1f701cd5ae
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="walkthrough-creating-a-master-detail-relation-using-a-cached-dataset"></a>Walkthrough: Creating a Master Detail Relation Using a Cached Dataset
-  This walkthrough demonstrates creating a master/detail relation on a worksheet, and caching the data so that the solution can be used offline.  
+# <a name="walkthrough-creating-a-master-detail-relation-using-a-cached-dataset"></a>Exemplarische Vorgehensweise: Erstellen einer Master-Detail-Beziehung mithilfe eines zwischengespeicherten Datasets
+  Diese exemplarische Vorgehensweise veranschaulicht das Erstellen einer Master/Detail-Beziehungs in einem Arbeitsblatt und das Zwischenspeichern der Daten, damit die Projektmappe offline verwendet werden kann.  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
   
- During this walkthrough, you will learn how to:  
+ Bei dieser exemplarischen Vorgehensweise lernen Sie Folgendes:  
   
--   Add controls to a worksheet.  
+-   Hinzufügen von Steuerelementen zu einem Arbeitsblatt.  
   
--   Set up a dataset to be cached in a worksheet.  
+-   Richten Sie ein Dataset in einem Arbeitsblatt zwischengespeichert werden soll.  
   
--   Add code to enable scrolling through the records.  
+-   Fügen Sie Code zum Durchführen eines Bildlaufs durch die Datensätze zu aktivieren.  
   
--   Test your project.  
+-   Testen des Projekts.  
   
 > [!NOTE]  
->  Your computer might show different names or locations for some of the Visual Studio user interface elements in the following instructions. The Visual Studio edition that you have and the settings that you use determine these elements. For more information, see [Personalize the Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md).  
+>  Auf Ihrem Computer werden möglicherweise andere Namen oder Speicherorte für die Benutzeroberflächenelemente von Visual Studio angezeigt als die in den folgenden Anweisungen aufgeführten. Diese Elemente sind von der jeweiligen Visual Studio-Version und den verwendeten Einstellungen abhängig. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../ide/personalizing-the-visual-studio-ide.md).  
   
-## <a name="prerequisites"></a>Prerequisites  
- You need the following components to complete this walkthrough:  
+## <a name="prerequisites"></a>Erforderliche Komponenten  
+ Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
   
--   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] or [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].  
+-   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] oder [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].  
   
--   Access to the Northwind SQL Server sample database. The database can be on your development computer or on a server.  
+-   Zugriff auf die Beispieldatenbank Northwind-SQL Server. Die Datenbank möglich auf dem Entwicklungscomputer oder auf einem Server.  
   
--   Permissions to read from and write to the SQL Server database.  
+-   Berechtigungen zum Lesen und Schreiben in SQL Server-Datenbank.  
   
-## <a name="creating-a-new-project"></a>Creating a New Project  
- In this step, you will create an Excel Workbook project.  
+## <a name="creating-a-new-project"></a>Erstellen eines neuen Projekts  
+ In diesem Schritt erstellen Sie ein Excel-Arbeitsmappenprojekt.  
   
-#### <a name="to-create-a-new-project"></a>To create a new project  
+#### <a name="to-create-a-new-project"></a>So erstellen Sie ein neues Projekt  
   
-1.  Create an Excel Workbook project with the name **My Master-Detail**, using either Visual Basic or C#. Make sure that **Create a new document** is selected. For more information, see [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  Erstellen Sie ein Excel-Arbeitsmappenprojekt mit dem Namen **Meine Master / Detail-**, mit Visual Basic oder c#. Stellen Sie sicher, dass **erstellen Sie ein neues Dokument** ausgewählt ist. Weitere Informationen finden Sie unter [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
- Visual Studio opens the new Excel workbook in the designer and adds the **My Master-Detail** project to **Solution Explorer**.  
+ Visual Studio öffnet die neue Excel-Arbeitsmappe im Designer und fügt die **Meine Master / Detail-** Projekt **Projektmappen-Explorer**.  
   
-## <a name="creating-the-data-source"></a>Creating the Data Source  
- Use the **Data Sources** window to add a typed dataset to your project.  
+## <a name="creating-the-data-source"></a>Erstellen der Datenquelle  
+ Verwenden das Fenster **Datenquellen** , um dem Projekt ein typisiertes Dataset hinzuzufügen.  
   
-#### <a name="to-create-the-data-source"></a>To create the data source  
+#### <a name="to-create-the-data-source"></a>So erstellen Sie die Datenquelle  
   
-1.  If the **Data Sources** window is not visible, display it by, on the menu bar, choosing **View**, **Other Windows**, **Data Sources**.  
+1.  Wenn das Fenster **Datenquellen** nicht sichtbar ist, zeigen Sie es an, indem Sie in der Menüleiste **Ansicht**, **Weitere Fenster**und **Datenquellen**wählen.  
   
-2.  Choose **Add New Data Source** to start the **Data Source Configuration Wizard**.  
+2.  Wählen Sie **Neue Datenquelle hinzufügen** , um den **Assistenten zum Konfigurieren von Datenquellen**zu starten.  
   
-3.  Select **Database** and then click **Next**.  
+3.  Wählen Sie **Datenbank** , und klicken Sie dann auf **Weiter**.  
   
-4.  Select a data connection to the Northwind sample SQL Server database, or add a new connection by using the **New Connection** button.  
+4.  Wählen Sie eine Datenverbindung zur Northwind-Beispieldatenbank SQL Server, oder fügen Sie eine neue Verbindung mit der **neue Verbindung** Schaltfläche.  
   
-5.  After selecting or creating a connection, click **Next**.  
+5.  Nach dem auswählen oder erstellen eine Verbindung, klicken Sie auf **Weiter**.  
   
-6.  Clear the option to save the connection if it is selected, and then click **Next**.  
+6.  Deaktivieren Sie die Option aus, um die Verbindung zu speichern, wenn diese Option ausgewählt ist, und klicken Sie dann auf **Weiter**.  
   
-7.  Expand the **Tables** node in the **Database objects** window.  
+7.  Erweitern Sie die **Tabellen** Knoten in der **-Datenbankobjekte** Fenster.  
   
-8.  Select the **Orders** table and the **Order Details** table.  
+8.  Wählen Sie die **Aufträge** Tabelle und die **Bestelldetails** Tabelle.  
   
-9. Click **Finish**.  
+9. Klicken Sie auf **Fertig stellen**.  
   
- The wizard adds the two tables to the **Data Sources** window. It also adds a typed dataset to your project that is visible in **Solution Explorer**.  
+ Der Assistent fügt die beiden Tabellen die **Datenquellen** Fenster. Es auch ein typisiertes Dataset dem Projekt hinzugefügt, die in angezeigt wird **Projektmappen-Explorer**.  
   
-## <a name="adding-controls-to-the-worksheet"></a>Adding Controls to the Worksheet  
- In this step, you will add a named range, a list object, and two buttons to the first worksheet. First, add the named range and the list object from the **Data Sources** window so that they are automatically bound to the data source. Next, add the buttons from the **Toolbox**.  
+## <a name="adding-controls-to-the-worksheet"></a>Hinzufügen von Steuerelementen zum Arbeitsblatt  
+ In diesem Schritt fügen Sie einen benannten Bereich, ein Listenobjekt und zwei Schaltflächen auf das erste Arbeitsblatt hinzu. Fügen Sie zunächst den benannten Bereich und das Listenobjekt aus der **Datenquellen** Fenster, damit sie automatisch an die Datenquelle gebunden sind. Als Nächstes fügen Sie die Schaltflächen über der **Toolbox**.  
   
-#### <a name="to-add-a-named-range-and-a-list-object"></a>To add a named range and a list object  
+#### <a name="to-add-a-named-range-and-a-list-object"></a>So fügen Sie einen benannten Bereich und ein Listenobjekt hinzu  
   
-1.  Verify that the **My Master-Detail.xlsx** workbook is open in the Visual Studio designer, with **Sheet1** displayed.  
+1.  Überprüfen Sie, ob die **Meine Master-Detail.xlsx** Arbeitsmappe geöffnet, in der Visual Studio-Designer ist mit **"Sheet1"** angezeigt.  
   
-2.  Open the **Data Sources** window and expand the **Orders** node.  
+2.  Öffnen der **Datenquellen** Fenster, und erweitern Sie die **Aufträge** Knoten.  
   
-3.  Select the **OrderID** column, and then click the drop-down arrow that appears.  
+3.  Wählen Sie die **OrderID** Spalte, und klicken Sie dann auf den Dropdown Pfeil, der angezeigt wird.  
   
-4.  Click **NamedRange** in the drop-down list, and then drag the **OrderID** column to cell **A2**.  
+4.  Klicken Sie auf **NamedRange** in der Dropdownliste aus, und ziehen Sie dann die **OrderID** Spalte Zelle **A2**.  
   
-     A <xref:Microsoft.Office.Tools.Excel.NamedRange> control named `OrderIDNamedRange` is created in cell **A2**. At the same time, a <xref:System.Windows.Forms.BindingSource> named `OrdersBindingSource`, a table adapter, and a <xref:System.Data.DataSet> instance are added to the project. The control is bound to the <xref:System.Windows.Forms.BindingSource>, which in turn is bound to the <xref:System.Data.DataSet> instance.  
+     Ein <xref:Microsoft.Office.Tools.Excel.NamedRange> Steuerelement namens `OrderIDNamedRange` ist in der Zelle erstellt **A2**. Zur gleichen Zeit eine <xref:System.Windows.Forms.BindingSource> mit dem Namen `OrdersBindingSource`, Tabellenadapters, und ein <xref:System.Data.DataSet> Instanz werden dem Projekt hinzugefügt. Das Steuerelement gebunden ist die <xref:System.Windows.Forms.BindingSource>, das wiederum gebunden ist, um die <xref:System.Data.DataSet> Instanz.  
   
-5.  Scroll down past the columns that are under the **Orders** table. At the bottom of the list is the **Order Details** table; it is here because it is a child of the **Orders** table. Select this **Order Details** table, not the one that is at the same level as the **Orders** table, and then click the drop-down arrow that appears.  
+5.  Führen Sie einen Bildlauf nach unten nach den Spalten, die unter der **Aufträge** Tabelle. Wird am unteren Rand der Liste der **Order Details** Tabelle; ist hier, da es ein untergeordnetes Element eines ist die **Aufträge** Tabelle. Wählen Sie diese Option **Bestelldetails** Tabelle, nicht auf das Projekt, das auf der gleichen Ebene wie ist die **Aufträge** Tabelle, und klicken Sie dann auf den Dropdown Pfeil, der angezeigt wird.  
   
-6.  Click **ListObject** in the drop-down list, and then drag the **OrderDetails** table to cell **A6**.  
+6.  Klicken Sie auf **ListObject** in der Dropdownliste aus, und ziehen Sie dann die **OrderDetails** Tabelle Zelle **A6**.  
   
-7.  A <xref:Microsoft.Office.Tools.Excel.ListObject> control named **Order_DetailsListObject** is created in cell **A6**, and bound to the <xref:System.Windows.Forms.BindingSource>.  
+7.  Ein <xref:Microsoft.Office.Tools.Excel.ListObject> Steuerelement namens **Order_DetailsListObject** ist in der Zelle erstellt **A6**, und das Binden der <xref:System.Windows.Forms.BindingSource>.  
   
-#### <a name="to-add-two-buttons"></a>To add two buttons  
+#### <a name="to-add-two-buttons"></a>So fügen Sie zwei Schaltflächen hinzu  
   
-1.  From the **Common Controls** tab of the **Toolbox**, add a <xref:System.Windows.Forms.Button> control to cell **A3** of the worksheet.  
+1.  Aus der **Standardsteuerelementen** auf der Registerkarte die **Toolbox**, Hinzufügen einer <xref:System.Windows.Forms.Button> -Steuerelement zur Zelle **A3** des Arbeitsblatts.  
   
-     This button is named `Button1`.  
+     Diese Schaltfläche den Namen `Button1`.  
   
-2.  Add another <xref:System.Windows.Forms.Button> control to cell **B3** of the worksheet.  
+2.  Fügen Sie einen anderen <xref:System.Windows.Forms.Button> -Steuerelement zur Zelle **B3** des Arbeitsblatts.  
   
-     This button is named `Button2`.  
+     Diese Schaltfläche den Namen `Button2`.  
   
- Next, mark the dataset to be cached in the document.  
+ Als Nächstes, markieren Sie das Dataset im Dokument zwischengespeichert werden soll.  
   
-## <a name="caching-the-dataset"></a>Caching the Dataset  
- Mark the dataset to be cached in the document by making the dataset public and setting the **CacheInDocument** property.  
+## <a name="caching-the-dataset"></a>Das Dataset zwischenspeichern  
+ Markieren Sie das Dataset im Dokument zwischengespeichert werden soll, indem Sie das Dataset machen, öffentliche und Festlegen der **CacheInDocument** Eigenschaft.  
   
-#### <a name="to-cache-the-dataset"></a>To cache the dataset  
+#### <a name="to-cache-the-dataset"></a>Das Dataset Zwischenspeichern  
   
-1.  Select **NorthwindDataSet** in the component tray.  
+1.  Wählen Sie **NorthwindDataSet** auf der Komponentenleiste.  
   
-2.  In the **Properties** window, change the **Modifiers** property to **Public**.  
+2.  In der **Eigenschaften** Ändern der **Modifizierer** Eigenschaft **öffentlichen**.  
   
-     Datasets must be public before caching is enabled.  
+     Datasets müssen öffentlich sein, bevor das Zwischenspeichern aktiviert ist.  
   
-3.  Change the **CacheInDocument** property to **True**.  
+3.  Ändern der **CacheInDocument** Eigenschaft **"true"**.  
   
- The next step is to add text to the buttons, and in C# add code to hook up the event handlers.  
+ Der nächste Schritt besteht, die Schaltflächen Text hinzu, und fügen Sie im C#-Code, um den Ereignishandler zu verknüpfen.  
   
-## <a name="initializing-the-controls"></a>Initializing the Controls  
- Set the button text and add event handlers during the <xref:Microsoft.Office.Tools.Excel.Workbook.Startup> event.  
+## <a name="initializing-the-controls"></a>Initialisieren der Steuerelemente  
+ Legen Sie den Text der Schaltfläche, und fügen Sie Ereignishandler während der <xref:Microsoft.Office.Tools.Excel.Workbook.Startup> Ereignis.  
   
-#### <a name="to-initialize-the-data-and-the-controls"></a>To initialize the data and the controls  
+#### <a name="to-initialize-the-data-and-the-controls"></a>So initialisieren Sie die Daten und die Steuerelemente  
   
-1.  In **Solution Explorer**, right-click **Sheet1.vb** or **Sheet1.cs**, and then click **View Code** on the shortcut menu.  
+1.  In **Projektmappen-Explorer**, mit der rechten Maustaste **Sheet1.vb** oder **Sheet1.cs**, und klicken Sie dann auf **Code anzeigen** im Kontextmenü.  
   
-2.  Add the following code to the `Sheet1_Startup` method to set the text for the buttons.  
+2.  Fügen Sie folgenden Code, der `Sheet1_Startup` Methode, um den Text für die Schaltflächen einzurichten.  
   
-     [!code-vb[Trin_VstcoreDataExcel#15](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet2.vb#15)]  [!code-csharp[Trin_VstcoreDataExcel#15](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet2.cs#15)]  
+     [!code-vb[Trin_VstcoreDataExcel#15](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet2.vb#15)]
+     [!code-csharp[Trin_VstcoreDataExcel#15](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet2.cs#15)]  
   
-3.  For C# only, add event handlers for the button click events to the `Sheet1_Startup` method.  
+3.  Nur c# fügen Ereignishandler für die Schaltfläche click-Ereignisse, die `Sheet1_Startup` Methode.  
   
      [!code-csharp[Trin_VstcoreDataExcel#16](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet2.cs#16)]  
   
-## <a name="adding-code-to-enable-scrolling-through-the-records"></a>Adding Code to Enable Scrolling Through the Records  
- Add code to the <xref:System.Windows.Forms.Control.Click> event handler of each button to move through the records.  
+## <a name="adding-code-to-enable-scrolling-through-the-records"></a>Hinzufügen von Code zum Durchführen eines Bildlaufs durch die Datensätze aktivieren  
+ Hinzufügen von Code für die <xref:System.Windows.Forms.Control.Click> -Ereignishandler der einzelnen Schaltflächen, um durch die Datensätze zu verschieben.  
   
-#### <a name="to-scroll-through-the-records"></a>To scroll through the records  
+#### <a name="to-scroll-through-the-records"></a>So führen Sie einen Bildlauf durch die Datensätze durch  
   
-1.  Add an event handler for the <xref:System.Windows.Forms.Control.Click> event of `Button1`, and add the following code to move backwards through the records:  
+1.  Fügen Sie einen Ereignishandler für das <xref:System.Windows.Forms.Control.Click> -Ereignis `Button1`, und fügen Sie den folgenden Code hinzu, durch die Datensätze rückwärts verschieben:  
   
-     [!code-vb[Trin_VstcoreDataExcel#17](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet2.vb#17)]  [!code-csharp[Trin_VstcoreDataExcel#17](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet2.cs#17)]  
+     [!code-vb[Trin_VstcoreDataExcel#17](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet2.vb#17)]
+     [!code-csharp[Trin_VstcoreDataExcel#17](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet2.cs#17)]  
   
-2.  Add an event handler for the <xref:System.Windows.Forms.Control.Click> event of `Button2`, and add the following code to advance through the records:  
+2.  Fügen Sie einen Ereignishandler für das <xref:System.Windows.Forms.Control.Click> -Ereignis `Button2`, und fügen Sie den folgenden Code hinzu, durch die Datensätze zu gelangen:  
   
-     [!code-vb[Trin_VstcoreDataExcel#18](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet2.vb#18)]  [!code-csharp[Trin_VstcoreDataExcel#18](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet2.cs#18)]  
+     [!code-vb[Trin_VstcoreDataExcel#18](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet2.vb#18)]
+     [!code-csharp[Trin_VstcoreDataExcel#18](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet2.cs#18)]  
   
-## <a name="testing-the-application"></a>Testing the Application  
- Now you can test your workbook to make sure that the data appears as expected, and that you can use the solution offline.  
+## <a name="testing-the-application"></a>Testen der Anwendung  
+ Jetzt können Sie die Arbeitsmappe aus, um sicherzustellen, dass die Daten wie erwartet angezeigt wird und die Projektmappe offline verwendet werden können, testen.  
   
-#### <a name="to-test-the-data-caching"></a>To test the data caching  
+#### <a name="to-test-the-data-caching"></a>So testen Sie das Zwischenspeichern von Daten  
   
-1.  Press **F5**.  
+1.  Drücken Sie **F5**.  
   
-2.  Verify that the named range and the list object are filled with data from the data source.  
+2.  Stellen Sie sicher, dass der benannte Bereich und das Listenobjekt mit Daten aus der Datenquelle gefüllt werden.  
   
-3.  Scroll through some of the records by clicking the buttons.  
+3.  Blättern Sie durch einige der Einträge, indem Sie auf die Schaltflächen.  
   
-4.  Save the workbook, and then close the workbook and Visual Studio.  
+4.  Speichern Sie die Arbeitsmappe, und schließen Sie dann die Arbeitsmappe und die Visual Studio.  
   
-5.  Disable the connection to the database. Unplug the network cable from your computer if the database is located on a server, or stop the SQL Server service if the database is on your development computer.  
+5.  Deaktivieren Sie die Verbindung mit der Datenbank. Ziehen Sie das Netzwerkkabel von Ihrem Computer, wenn die Datenbank auf einem Server befindet, oder beenden Sie den SQL Server-Dienst aus, wenn die Datenbank auf dem Entwicklungscomputer befindet.  
   
-6.  Open Excel, and then open **My Master-Detail.xlsx** from the \bin directory (\My Master-Detail\bin in Visual Basic or \My Master-Detail\bin\debug in C#).  
+6.  Öffnen Sie Excel, und öffnen Sie **Meine Master-Detail.xlsx** aus dem Verzeichnis \bin (\My Master-Detail\bin in Visual Basic oder C#-\My Master-Detail\bin\debug).  
   
-7.  Scroll through some of the records to see that the worksheet operates normally when disconnected.  
+7.  Blättern Sie durch einige der Einträge Sie feststellen, ob das Arbeitsblatt wird normal ausgeführt, wenn der getrennt.  
   
-8.  Reconnect to the database. Connect your computer to the network again if the database is located on a server, or start the SQL Server service if the database is on your development computer.  
+8.  Verbindung mit der Datenbank wiederherstellen. Verbinden Sie den Computer mit dem Netzwerk erneut, wenn die Datenbank auf einem Server befindet, oder starten Sie SQL Server-Dienst aus, wenn die Datenbank auf dem Entwicklungscomputer befindet.  
   
-## <a name="next-steps"></a>Next Steps  
- This walkthrough shows the basics of creating a master/detail data relationship on a worksheet and caching a dataset. Here are some tasks that might come next:  
+## <a name="next-steps"></a>Nächste Schritte  
+ Diese exemplarische Vorgehensweise veranschaulicht die Grundlagen erstellen eine Master/Detail-datenbeziehung in einem Arbeitsblatt und ein Dataset Zwischenspeichern. Die folgenden Aufgaben könnten sich daran anschließen:  
   
--   Deploy the solution. For more information, see [Deploying an Office Solution](../vsto/deploying-an-office-solution.md)  
+-   Die Lösung bereit. Weitere Informationen finden Sie unter [Bereitstellen einer Office-Lösung](../vsto/deploying-an-office-solution.md)  
   
-## <a name="see-also"></a>See Also  
- [Binding Data to Controls in Office Solutions](../vsto/binding-data-to-controls-in-office-solutions.md)   
- [Data in Office Solutions](../vsto/data-in-office-solutions.md)   
- [Caching Data](../vsto/caching-data.md)   
- [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md)  
+## <a name="see-also"></a>Siehe auch  
+ [Binden von Daten an Steuerelemente in Office-Projektmappen](../vsto/binding-data-to-controls-in-office-solutions.md)   
+ [Daten in Office-Projektmappen](../vsto/data-in-office-solutions.md)   
+ [Zwischenspeichern von Daten](../vsto/caching-data.md)   
+ [Übersicht über Hostelemente und Hoststeuerelemente](../vsto/host-items-and-host-controls-overview.md)  
   
   

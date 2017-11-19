@@ -1,60 +1,47 @@
 ---
-title: "Debuggen von Webanwendungen | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "ASP.NET-Debuggen, Webdienste"
-  - "ASP.NET-Webseiten, Debuggen"
-  - "Debuggen [ASP.NET], Informationen über das Debuggen von ASP.NET-Webanwendungen"
-  - "Debuggen von ASP.NET-Webanwendungen, Informationen über das Debuggen von ASP.NET-Webanwendungen"
+title: Debuggen von Webanwendungen | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+helpviewer_keywords:
+- debugging ASP.NET Web applications, about debugging ASP.NET Web applications
+- ASP.NET debugging, Web services
+- debugging [ASP.NET], about debugging ASP.NET Web applications
+- ASP.NET Web pages, debugging
 ms.assetid: a096a90d-6d0d-4752-9fb5-417635ccab3e
-caps.latest.revision: 24
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 24
+caps.latest.revision: "24"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 7e635a47553cdb0eef1b690e64323ca20188b476
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Debuggen von Webanwendungen
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="debugging-web-applications"></a>Debuggen von Webanwendungen
 In diesem Abschnitt wird erläutert, wie verschiedene Typen von Webanwendungen debuggt werden.  
   
-## In diesem Abschnitt  
- [Gewusst wie: Debuggen von Webanwendungen](../debugger/how-to-debug-web-applications.md)  
- Beschreibt das Debuggen eines [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]\-Projekts, das noch in der Entwicklung ist.  
-  
- [Debuggen bereitgestellter Webanwendungen](../debugger/debugging-deployed-web-applications.md)  
- Erläutert das Debuggen einer schon bereitgestellten [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]\-Webanwendung.  
-  
+## <a name="in-this-section"></a>In diesem Abschnitt   
  [Debuggen von clientseitigen Skripts](../debugger/client-side-script-debugging.md)  
- Erläutert Testskripts und clientseitige Skripts in [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]\-Seiten.  
+ Erläutert Testskripts und clientseitige Skripts in [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Seiten.  
   
- [Exemplarische Vorgehensweise: Debuggen eines Web Forms](../debugger/walkthrough-debugging-a-web-form.md)  
- Veranschaulicht das Debuggen einer [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]\-Webanwendung.  
+## <a name="related-sections"></a>Verwandte Abschnitte  
+ [Debuggen von ASP.NET-Anwendungen](../debugger/how-to-enable-debugging-for-aspnet-applications.md)  
+ Beschreibt die erforderlichen Schritte, um das Debuggen von [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Anwendungen zu ermöglichen.  
   
- [Gewusst wie: Debuggen von ASP.NET\-Ausnahmen](../debugger/how-to-debug-aspnet-exceptions.md)  
- Erläutert das Behandeln von Ausnahmen, die beim Debuggen von [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]\-Ausnahmen auftreten.  
-  
-## Verwandte Abschnitte  
- [Vorbereitungen zum Debuggen von ASP.NET](../debugger/preparing-to-debug-aspnet.md)  
- Beschreibt die erforderlichen Schritte, um das Debuggen von [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]\-Anwendungen zu ermöglichen.  
-  
- [Debuggen bereitgestellter Webanwendungen](../debugger/debugging-deployed-web-applications.md)  
- Erläutert das Debuggen einer schon bereitgestellten [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]\-Webanwendung.  
-  
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Debuggen von Webanwendungen und Skripts](../debugger/debugging-web-applications-and-script.md)   
- [Einstellungen und Vorbereitung für das Debuggen](../debugger/debugger-settings-and-preparation.md)   
+ [Debuggereinstellungen und -vorbereitung](../debugger/debugger-settings-and-preparation.md)   
  [Debugger – Grundlagen](../debugger/debugger-basics.md)   
- [Debuggen in Visual Studio](../debugger/debugging-in-visual-studio.md)
+ [Debuggen in Visual Studio](../debugger/index.md)  
+ [Debugger – Featuretour](../debugger/debugger-feature-tour.md)

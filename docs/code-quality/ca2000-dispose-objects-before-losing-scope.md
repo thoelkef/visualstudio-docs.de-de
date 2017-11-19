@@ -1,11 +1,10 @@
 ---
-title: 'CA2000: Dispose objects before losing scope | Microsoft Docs'
+title: 'CA2000: Objekte verwerfen, bevor Bereich verloren geht | Microsoft Docs'
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -16,89 +15,74 @@ helpviewer_keywords:
 - CA2000
 - DisposeObjectsBeforeLosingScope
 ms.assetid: 0c3d7d8d-b94d-46e8-aa4c-38df632c1463
-caps.latest.revision: 32
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: HT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 61903e0c6ec3a27648e69ca210e0a5fa71615c22
-ms.contentlocale: de-de
-ms.lasthandoff: 08/28/2017
-
+caps.latest.revision: "32"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 81c553a9ae45ed44e8c5d96f49f2063e6383e5ea
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="ca2000-dispose-objects-before-losing-scope"></a>CA2000: Dispose objects before losing scope
+# <a name="ca2000-dispose-objects-before-losing-scope"></a>CA2000: Objekte verwerfen, bevor Bereich verloren geht
 |||  
 |-|-|  
 |TypeName|DisposeObjectsBeforeLosingScope|  
 |CheckId|CA2000|  
-|Category|Microsoft.Reliability|  
-|Breaking Change|Non-breaking|  
+|Kategorie|Microsoft.Reliability|  
+|Unterbrechende Änderung|Nicht unterbrechend|  
   
-## <a name="cause"></a>Cause  
- A local object of a <xref:System.IDisposable> type is created but the object is not disposed before all references to the object are out of scope.  
+## <a name="cause"></a>Ursache  
+ Es wird ein lokales Objekt eines <xref:System.IDisposable>-Typs erstellt. Das Objekt wird jedoch erst verworfen, nachdem sich alle Verweise auf das Objekt außerhalb des gültigen Bereichs befinden.  
   
-## <a name="rule-description"></a>Rule Description  
- If a disposable object is not explicitly disposed before all references to it are out of scope, the object will be disposed at some indeterminate time when the garbage collector runs the finalizer of the object. Because an exceptional event might occur that will prevent the finalizer of the object from running, the object should be explicitly disposed instead.  
+## <a name="rule-description"></a>Regelbeschreibung  
+ Wenn ein verwerfbares Objekt nicht explizit verworfen wird, bevor alle Verweise darauf außerhalb des gültigen Bereichs liegen, wird das Objekt zu einer unbestimmten Zeit verworfen, wenn der Garbage Collector den Finalizer des Objekts ausführt. Da möglicherweise ein Ausnahmeereignis auftritt, durch das die Ausführung des Finalizers des Objekts verhindert wird, muss das Objekt stattdessen explizit verworfen werden.  
   
-## <a name="how-to-fix-violations"></a>How to Fix Violations  
- To fix a violation of this rule, call <xref:System.IDisposable.Dispose%2A> on the object before all references to it are out of scope.  
+## <a name="how-to-fix-violations"></a>Behandeln von Verstößen  
+ Um einen Verstoß gegen diese Regel zu beheben, rufen Sie <xref:System.IDisposable.Dispose%2A> für das Objekt auf, bevor sich alle Verweise darauf außerhalb des gültigen Bereichs befinden.  
   
- Note that you can use the `using` statement (`Using` in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) to wrap objects that implement `IDisposable`. Objects that are wrapped in this manner will automatically be disposed at the close of the `using` block.  
+ Beachten Sie, dass Sie die `using`-Anweisung (`Using` in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) zum Umschließen von Objekten verwenden können, die `IDisposable` implementieren. Auf diese Weise umschlossene Objekte werden zum Abschluss des `using`-Blocks automatisch verworfen.  
   
- The following are some situations where the using statement is not enough to protect IDisposable objects and can cause CA2000 to occur.  
+ Im Folgenden werden einige Situationen beschrieben, in denen die using-Anweisung nicht zum Schutz von IDisposable-Objekten ausreicht und bewirken kann, dass CA2000 ausgelöst wird.  
   
--   Returning a disposable object requires that the object is constructed in a try/finally block outside a using block.  
+-   Um ein verwerfbares Objekt zurückzugeben, ist es erforderlich, dass das Objekt in einem try/finally-Block außerhalb eines using-Blocks erstellt ist.  
   
--   Initializing members of a disposable object should not be done in the constructor of a using statement.  
+-   Die Member eines verwerfbaren Objekts sollten nicht im Konstruktor einer using-Anweisung initialisiert werden.  
   
--   Nesting constructors that are protected only by one exception handler. For example,  
+-   Das Schachteln von Konstruktoren, die nur von einem Ausnahmehandler geschützt sind. Beispiel:  
   
     ```csharp
     using (StreamReader sr = new StreamReader(new FileStream("C:\myfile.txt", FileMode.Create)))  
     { ... }  
     ```
   
-     causes CA2000 to occur because a failure in the construction of the StreamReader object can result in the FileStream object never being closed.  
+     Dadurch wird bewirkt, dass CA2000 ausgelöst wird, da ein Fehler in der Konstruktion des StreamReader-Objekts dazu führen kann, dass das FileStream-Objekt nie geschlossen wird.  
   
--   Dynamic objects should use a shadow object to implement the Dispose pattern of IDisposable objects.  
+-   Dynamische Objekte sollten ein Schattenobjekt verwenden, um das Dispose-Muster von IDisposable-Objekten zu implementieren.  
   
-## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
- Do not suppress a warning from this rule unless you have called a method on your object that calls `Dispose`, such as <xref:System.IO.Stream.Close%2A>, or if the method that raised the warning returns an IDisposable object wraps your object.  
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?  
+ Unterdrücken Sie keine Warnung dieser Regel, es sei denn, Sie haben eine Methode für das Objekt aufgerufen, die `Dispose` aufruft, zum Beispiel <xref:System.IO.Stream.Close%2A>, oder die Methode, durch die die Warnung ausgelöst wurde, gibt ein IDisposable-Objekt zurück, das das Objekt umschließt.  
   
-## <a name="related-rules"></a>Related Rules  
- [CA2213: Disposable fields should be disposed](../code-quality/ca2213-disposable-fields-should-be-disposed.md)  
+## <a name="related-rules"></a>Verwandte Regeln  
+ [CA2213: Verwerfbare Felder verwerfen](../code-quality/ca2213-disposable-fields-should-be-disposed.md)  
   
- [CA2202: Do not dispose objects multiple times](../code-quality/ca2202-do-not-dispose-objects-multiple-times.md)  
+ [CA2202: Objekte nicht mehrmals verwerfen](../code-quality/ca2202-do-not-dispose-objects-multiple-times.md)  
   
-## <a name="example"></a>Example  
- If you are implementing a method that returns a disposable object, use a try/finally block without a catch block to make sure that the object is disposed. By using a try/finally block, you allow exceptions to be raised at the fault point and make sure that object is disposed.  
+## <a name="example"></a>Beispiel  
+ Wenn Sie eine Methode implementieren, die ein verwerfbares Objekt zurückgibt, verwenden Sie einen try/finally-Block ohne einen catch-Block, um sicherzustellen, dass das Objekt verworfen wird. Mit einem try/finally-Block lassen Sie Ausnahmen zu, die am Fehlerpunkt ausgelöst werden sollen, und stellen sicher, dass das Objekt verworfen wird.  
   
- In the OpenPort1 method, the call to open the ISerializable object SerialPort or the call to SomeMethod can fail. A CA2000 warning is raised on this implementation.  
+ In der OpenPort1-Methode kann der Aufruf zum Öffnen des SerialPorts des ISerializable-Objekts oder der Aufruf von SomeMethod fehlschlagen. Eine CA2000-Warnung wird für diese Implementierung ausgelöst.  
   
- In the OpenPort2 method, two SerialPort objects are declared and set to null:  
+ In der OpenPort2-Methode werden zwei SerialPort-Objekte deklariert und auf NULL festgelegt:  
   
--   `tempPort`, which is used to test that the method operations succeed.  
+-   `tempPort` zum Testen, ob die Methodenoperationen erfolgreich ausgeführt werden.  
   
--   `port`, which is used for the return value of the method.  
+-   `port` für den Rückgabewert der Methode.  
   
- The `tempPort` is constructed and opened in a `try` block, and any other required work is performed in the same `try` block. At the end of the `try` block, the opened port is assigned to the `port` object that will be returned and the `tempPort` object is set to `null`.  
+ `tempPort` wird erstellt und in einem `try`-Block geöffnet. Alle anderen erforderlichen Arbeiten werden im gleichen `try`-Block ausgeführt. Am Ende des `try`-Blocks wird dem `port`-Objekt, das zurückgegeben wird, der geöffnete Port zugewiesen und das `tempPort`-Objekt wird auf `null` festgelegt.  
   
- The `finally` block checks the value of `tempPort`. If it is not null, an operation in the method has failed, and `tempPort` is closed to make sure that any resources are released. The returned port object will contain the opened SerialPort object if the operations of the method succeeded, or it will be null if an operation failed.  
+ Der `finally`-Block überprüft den Wert von `tempPort`. Wenn nicht NULL, ist eine Operation in der Methode fehlgeschlagen und `tempPort` wird geschlossen, um sicherzustellen, dass alle Ressourcen freigegeben werden. Das zurückgegebene Port-Objekt enthält das geöffnete SerialPort-Objekt, wenn die Operationen der Methode erfolgreich waren, oder es ist NULL, wenn eine Operation fehlschlug.  
 
 ```csharp
 public SerialPort OpenPort1(string portName)
@@ -171,15 +155,15 @@ Public Function OpenPort2(ByVal PortName As String) As SerialPort
 End Function
 ```
  
-## <a name="example"></a>Example  
- By default, the [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] compiler has all arithmetic operators check for overflow. Therefore, any Visual Basic arithmetic operation might throw an <xref:System.OverflowException>. This could lead to unexpected violations in rules such as CA2000. For example, the following CreateReader1 function will produce a CA2000 violation because the Visual Basic compiler is emitting an overflow checking instruction for the addition that could throw an exception that would cause the StreamReader not to be disposed.  
+## <a name="example"></a>Beispiel  
+ Standardmäßig überprüft der [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]-Compiler auf Überläufe mit allen arithmetischen Operatoren. Daher kann jede arithmetische Visual Basic-Operation eine <xref:System.OverflowException> auslösen. Dies kann zu unerwarteten Regelverletzungen führen, z. B. CA2000. Die folgende CreateReader1-Funktion erzeugt z. B. eine CA2000-Verletzung, da der Visual Basic-Compiler einen Befehl zur Überlaufprüfung für die Hinzufügung ausgibt, die eine Ausnahme auslösen könnte, durch die der StreamReader nicht verworfen werden würde.  
   
- To fix this, you can disable the emitting of overflow checks by the Visual Basic compiler in your project or you can modify your code as in the following CreateReader2 function.  
+ Um dieses zu korrigieren, können Sie das Ausgeben von Überlaufprüfungen durch den Visual Basic-Compiler im Projekt deaktivieren, oder Sie können den Code entsprechend der folgenden CreateReader2-Funktion ändern.  
   
- To disable the emitting of overflow checks, right-click the project name in Solution Explorer and then click **Properties**. Click **Compile**, click **Advanced Compile Options**, and then check **Remove integer overflow checks**.  
+ Um das Ausgeben von überlaufprüfungen zu deaktivieren, mit der rechten Maustaste im Projektmappen-Explorer des Projektnamen, und klicken Sie dann auf **Eigenschaften**. Klicken Sie auf **Kompilieren**, klicken Sie auf **Erweiterte Kompilierungsoptionen**, und überprüfen Sie dann **Überprüfungen auf Ganzzahlüberlauf entfernen**.  
   
   [!code-vb[FxCop.Reliability.CA2000.DisposeObjectsBeforeLosingScope#1](../code-quality/codesnippet/VisualBasic/ca2000-dispose-objects-before-losing-scope-vboverflow_1.vb)]
 
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Siehe auch  
  <xref:System.IDisposable>   
- [Dispose Pattern](/dotnet/standard/design-guidelines/dispose-pattern)
+ [Dispose-Muster](/dotnet/standard/design-guidelines/dispose-pattern)

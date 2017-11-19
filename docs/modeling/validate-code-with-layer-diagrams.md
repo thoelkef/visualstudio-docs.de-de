@@ -19,30 +19,15 @@ helpviewer_keywords:
 - MSBuild, dependency diagrams
 - MSBuild, validating code
 ms.assetid: 70cbe55d-4b33-4355-b0a7-88c770a6f75c
-caps.latest.revision: 82
+caps.latest.revision: "82"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Machine Translation
-ms.sourcegitcommit: 5581224b17a7b42f65b69f741f984a144d78fc26
-ms.openlocfilehash: 53c623ce7ab7126c22aaab856a439862252a5d56
-ms.contentlocale: de-de
-ms.lasthandoff: 04/04/2017
-
+ms.openlocfilehash: c6c5954cdb4979ede5e43d2052801ca399f128fd
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Überprüfen von Code mit der Abhängigkeit-Diagramme
 
@@ -58,7 +43,7 @@ Um sicherzustellen dass der Code mit dem Entwurf nicht widerspricht., überprüf
   
 -   Ermitteln von Abhängigkeiten, die möglicherweise von vorgeschlagenen Änderungen betroffen sind  
   
-     Beispielsweise können Sie durch Bearbeiten der Abhängigkeit-Diagramm, um potenzielle architekturänderungen darzustellen, und überprüfen Sie den Code, um die betroffenen Abhängigkeiten zu ermitteln.  
+     Beispielsweise können Sie das Diagramm Abhängigkeit, um potenzielle architekturänderungen darzustellen, und überprüfen Sie den Code, um die betroffenen Abhängigkeiten finden Sie unter Bearbeiten.  
   
 -   Umgestalten oder Migrieren von Code in einen anderen Entwurf  
   
@@ -72,7 +57,7 @@ Um sicherzustellen dass der Code mit dem Entwurf nicht widerspricht., überprüf
   
 -   Eine Lösung, die ein Modellierungsprojekt mit einem Diagramm Abhängigkeit enthält. Dieses Diagramm Abhängigkeit muss mit Artefakten in Visual c# .NET- oder Visual Basic-Projekten verknüpft werden, die Sie überprüfen möchten. Finden Sie unter [Abhängigkeit Diagramme erstellen, aus dem Code](../modeling/create-layer-diagrams-from-your-code.md).  
   
- Welche Versionen von Visual Studio dieses Feature unterstützen, finden Sie unter [versionsunterstützung für Architektur- und Modellierungstools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
+ Welche Versionen von Visual Studio dieses Feature unterstützen, erfahren Sie unter [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
  Sie können Code manuell aus einem Diagramm öffnen Abhängigkeit in Visual Studio oder über eine Eingabeaufforderung überprüfen. Sie können Code beim Ausführen von lokalen Builds oder Team Foundation Build auch automatisch überprüfen. Finden Sie unter [Channel 9-Video: Entwerfen und Überprüfen der Architektur von Abhängigkeit Diagrammen](http://go.microsoft.com/fwlink/?LinkID=252073).  
   
@@ -282,4 +267,3 @@ In dieser Version von Visual Studio Abhängigkeit Überprüfungen in Echtzeit, u
 ## <a name="see-also"></a>Siehe auch  
  [Überprüfen des Systems während der Entwicklung](../modeling/validate-your-system-during-development.md)   
  [Video: Überprüfen Sie Ihre Architektur Abhängigkeiten in Echtzeit](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)   
-

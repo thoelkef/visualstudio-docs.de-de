@@ -1,50 +1,51 @@
 ---
-title: "IDebugArrayObject2 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "IDebugArrayObject2-Schnittstelle"
+title: IDebugArrayObject2 | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: IDebugArrayObject2 interface
 ms.assetid: be6e504d-4ab3-4141-a61b-0953ee0e038e
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 1363f2cf7ad14c6d95dcf710d3489172857a9587
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugArrayObject2
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
+# <a name="idebugarrayobject2"></a>IDebugArrayObject2
 > [!IMPORTANT]
->  In Visual Studio 2015 ist diese Art der Implementierung von ausdrucksauswertungen veraltet. Informationen über das Implementieren von CLR\-ausdrucksauswertungen finden Sie unter [CLR\-Ausdrucksauswertungen](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) und [Managed Expression Evaluator Sample](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+>  In Visual Studio 2015 wird diese Möglichkeit zum Implementieren von ausdruckauswertung veraltet. Informationen zu CLR-ausdrucksauswertungen implementieren, finden Sie unter [CLR-Ausdrucksauswertungen](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) und [Managed Expression Evaluator Sample](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
- Stellt ein verwaltetes Array\-Objekt dar und ermöglicht eine Auswertung eines Ausdrucks \(EE\), um den Basisindex \(Untergrenze\) für das Array zu bestimmen.  
+ Stellt ein verwaltetes Array-Objekt dar und ermöglicht eine ausdrucksauswertung (EE), um zu bestimmen, den Basisindex (Untergrenze) für das Array.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 IDebugArrayObject2 : IDebugArrayObject  
 ```  
   
-## Hinweise für Implementierer  
- Dies ist das verwaltete Debugging\-Modul \(DE\) implementiert.  
+## <a name="notes-for-implementers"></a>Hinweise für Implementierer  
+ Dies wird von der verwalteten Debugging-Modul (DE) implementiert.  
   
-## Methoden  
- Zusätzlich zu den Methoden für die [IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md) Schnittstelle, die diese Schnittstelle implementiert die folgenden Methoden:  
+## <a name="methods"></a>Methoden  
+ Zusätzlich zu den Methoden für die [IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md) diese Schnittstelle implementiert, die folgenden Methoden:  
   
 |Methode|Beschreibung|  
-|-------------|------------------|  
-|[GetBaseIndices](../../../extensibility/debugger/reference/idebugarrayobject2-getbaseindices.md)|Ruft den Basis\-Indizes \(Untergrenze\) für jeden Index, der die Anzahl der Dimensionen im Array angegeben.|  
-|[HasBaseIndices](../../../extensibility/debugger/reference/idebugarrayobject2-hasbaseindices.md)|Bestimmt, ob das Array Basis Indizes \(untere Grenze\) definiert wurde.|  
+|------------|-----------------|  
+|[GetBaseIndices](../../../extensibility/debugger/reference/idebugarrayobject2-getbaseindices.md)|Ruft den Basis-Indizes (Untergrenze) für jeden Index, der die Anzahl der Dimensionen im Array angegebenen ab.|  
+|[HasBaseIndices](../../../extensibility/debugger/reference/idebugarrayobject2-hasbaseindices.md)|Bestimmt, ob das Array Basis Indizes (Untergrenze) definiert wurde.|  
   
-## Hinweise  
- Eine Auswertung eines Ausdrucks verwendet diese Schnittstelle für verwaltete Arrays in eine Analysestruktur darstellen.  
+## <a name="remarks"></a>Hinweise  
+ Eine ausdrucksauswertung verwendet diese Schnittstelle, um verwaltete Arrays in einer Analysestruktur darzustellen.  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  Header: Ee.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  

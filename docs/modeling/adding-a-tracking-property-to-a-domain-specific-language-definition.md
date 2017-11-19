@@ -11,30 +11,15 @@ helpviewer_keywords:
 - Domain-Specific Language Tools, walkthroughs
 - walkthroughs [Domain-Specific Language Tools]
 ms.assetid: 4aa47777-de75-4897-a423-a3c4426b4125
-caps.latest.revision: 22
+caps.latest.revision: "22"
 author: alancameronwills
 ms.author: awills
 manager: douge
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: a126524672b0b827d278d2d76c01d907c9d403a1
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: ef5f86cb3b41af6cc9e7432cdbfb7365471320b8
-ms.contentlocale: de-de
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="adding-a-tracking-property-to-a-domain-specific-language-definition"></a>Hinzufügen einer Nachverfolgungseigenschaft zu einer domänenspezifischen Sprachdefinition
 Diese exemplarische Vorgehensweise zeigt, wie eine Tracking-Eigenschaft zu einem Domänenmodell hinzugefügt.  
@@ -120,7 +105,7 @@ Diese exemplarische Vorgehensweise zeigt, wie eine Tracking-Eigenschaft zu einem
   
 3.  Um die **ExampleElement** Domäne-Klasse erstellt wird, eine Eigenschaft "Domain" mit dem Namen `Namespace`.  
   
-     In der **Eigenschaften** legen Sie im Fenster für die neue Eigenschaft **durchsuchbar ist** auf **"false"**, und legen Sie **Art** auf **CustomStorage **.  
+     In der **Eigenschaften** legen Sie im Fenster für die neue Eigenschaft **durchsuchbar ist** auf **"false"**, und legen Sie **Art** auf **CustomStorage** .  
   
 4.  Um die **ExampleElement** Domäne-Klasse erstellt wird, eine Eigenschaft "Domain" mit dem Namen `IsNamespaceTracking`.  
   
@@ -748,7 +733,7 @@ Diese exemplarische Vorgehensweise zeigt, wie eine Tracking-Eigenschaft zu einem
   
 4.  Ziehen Sie ein **ExampleElement** Element aus der **Toolbox** auf der Diagrammoberfläche.  
   
-5.  In der **Eigenschaften** Fenster für das Element, wählen Sie die **Element-Namespace** -Eigenschaft, und ändern Sie den Wert von **DefaultNamespace** auf ** OtherNamespace**.  
+5.  In der **Eigenschaften** Fenster für das Element, wählen Sie die **Element-Namespace** -Eigenschaft, und ändern Sie den Wert von **DefaultNamespace** auf  **OtherNamespace**.  
   
      Beachten Sie, dass der Wert der **Element-Namespace** wird jetzt in Fettdruck angezeigt.  
   
@@ -766,7 +751,7 @@ Diese exemplarische Vorgehensweise zeigt, wie eine Tracking-Eigenschaft zu einem
   
 9. Änderung **Default Namespace** für das Diagramm aus **DefaultNamespace** auf **NewNamespace**.  
   
-     Die **Namespace** der das erste Element verfolgt den **Default Namespace** -Eigenschaft, während die **Namespace** des zweiten Element behält seine Benutzer aktualisierte Wert des ** OtherNamespace**.  
+     Die **Namespace** der das erste Element verfolgt den **Default Namespace** -Eigenschaft, während die **Namespace** des zweiten Element behält seine Benutzer aktualisierte Wert des  **OtherNamespace**.  
   
 10. Speichern Sie die Projektmappe, und schließen Sie dann das experimentelle Build.  
   
@@ -778,4 +763,3 @@ Diese exemplarische Vorgehensweise zeigt, wie eine Tracking-Eigenschaft zu einem
  <xref:Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor>   
  [Gewusst wie: definieren eine domänenspezifischen Sprache](../modeling/how-to-define-a-domain-specific-language.md)   
  [Gewusst wie: Erstellen einer domänenspezifischen Sprachlösung](../modeling/how-to-create-a-domain-specific-language-solution.md)   
-

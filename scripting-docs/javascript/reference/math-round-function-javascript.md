@@ -1,34 +1,36 @@
 ---
-title: "Math.round-Funktion (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "round"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "Math-Objekt"
-  - "Round-Methode"
+title: Math.Round-Funktion (JavaScript) | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: round
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- Round method
+- Math object
 ms.assetid: 51008df3-5d0c-4951-84cb-4f41000db0be
-caps.latest.revision: 13
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 9543d529e3d0e4e45cff29f1286edbfad8dc0e27
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# Math.round-Funktion (JavaScript)
-Gibt den die nächste ganze Zahl gerundeten angegebenen numerischen Ausdruck zurück.  
+# <a name="mathround-function-javascript"></a>Math.round-Funktion (JavaScript)
+Gibt einen angegebenen numerischen Ausdruck, der auf die nächste ganze Zahl gerundet zurück.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
   
@@ -37,19 +39,19 @@ number
 )   
 ```  
   
-## Hinweise  
- Das obligatorische `number`\-Argument bildet den Wert, der auf die nächste ganze Zahl gerundet werden soll.  
+## <a name="remarks"></a>Hinweise  
+ Die erforderliche `number` Argument ist der Wert auf die nächste Ganzzahl gerundet werden soll.  
   
- Wenn bei positiven ganzen Zahlen der Nachkommateil von `number` 0,5 oder größer ist, wird als Rückgabewert die kleinste ganze Zahl größer als `number` verwendet.  Falls der Nachkommateil kleiner als 0,5 ist, wird als Rückgabewert die größte ganze Zahl kleiner oder gleich `number` verwendet.  
+ Für positive Zahlen Wenn die Nachkommastellen des `number` 0,5 oder größer ist, ist der Rückgabewert ist die kleinste ganze Zahl größer gleich `number`. Wenn die Nachkommastellen kleiner als 0,5 ist, der Rückgabewert ist die größte ganze Zahl kleiner als oder gleich `number`.  
   
- Wenn bei negativen Zahlen der Nachkommateil genau \-0,5 beträgt, wird als Rückgabewert die kleinste ganze Zahl verwendet, die größer als die Zahl ist.  
+ Bei negativen Zahlen, wenn die Nachkommastellen exakt Verschiebung von -0,5, der Rückgabewert ist die kleinste ganze Zahl, die größer als die Anzahl ist.  
   
- Beispielsweise gibt `Math.round(8.5)` 9, `Math.round(-8.5)` jedoch \-8 zurück.  
+ Beispielsweise `Math.round(8.5)` gibt 9, aber `Math.round(-8.5)` gibt-8.  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
- **Gilt für**: [Math\-Objekt](../../javascript/reference/math-object-javascript.md)  
+ **Gilt für**: [Math-Objekt](../../javascript/reference/math-object-javascript.md)  
   
-## Siehe auch  
- [Math.random\-Funktion](../../javascript/reference/math-random-function-javascript.md)
+## <a name="see-also"></a>Siehe auch  
+ [Math.random-Funktion](../../javascript/reference/math-random-function-javascript.md)

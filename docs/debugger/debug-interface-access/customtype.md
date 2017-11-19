@@ -1,41 +1,40 @@
 ---
-title: "CustomType | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CustomType-Symbol"
+title: CustomType | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: CustomType symbol
 ms.assetid: 1b66bc0a-7979-416f-bf7f-e5df91584c91
-caps.latest.revision: 15
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 15
+caps.latest.revision: "15"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: d2c3c122852730dc8aa5e8a478ff4b023cc8bd83
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# CustomType
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Anbieter\-definierte compilerspezifisch Typen \(Typen\) `SymTagCustomType` werden durch ein Symbol gekennzeichnet.  
+# <a name="customtype"></a>CustomType
+Vom Hersteller festgelegten Typen (Compiler-spezifische Typen) werden identifiziert, indem ein `SymTagCustomType` Symbol.  
   
-## Eigenschaften  
- In der folgenden Tabelle sind die zusätzlichen gültige Eigenschaften für diesen Typ Symbol an.  
+## <a name="properties"></a>Eigenschaften  
+ Die folgende Tabelle zeigt zusätzliche gültige Eigenschaften für diese Symboltyp.  
   
-|Property|Datentyp|Beschreibung|  
-|--------------|--------------|------------------|  
-|[IDiaSymbol::get\_oemId](../../debugger/debug-interface-access/idiasymbol-get-oemid.md)|`DWORD`|Bezeichner der OEM.|  
-|[IDiaSymbol::get\_oemSymbolId](../../debugger/debug-interface-access/idiasymbol-get-oemsymbolid.md)|`DWORD`|Interne OEM ID.|  
-|[IDiaSymbol::get\_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md)|`DWORD`|Index\-ID des Symbols.|  
-|[IDiaSymbol::get\_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|Gibt `SymTagCustomType` zurück \(einen der Werte [SymTagEnum\-Enumeration](../../debugger/debug-interface-access/symtagenum.md) \).|  
-|[IDiaSymbol::get\_type](../../debugger/debug-interface-access/idiasymbol-get-type.md)|`IDiaSymbol*`|Der erste Typ vom benutzerdefinierten Typ verwiesen wird.|  
-|[IDiaSymbol::get\_typeId](../../debugger/debug-interface-access/idiasymbol-get-typeid.md)|`DWORD`|ID des Symbols für das Typ.|  
-|[IDiaSymbol::get\_types](../../debugger/debug-interface-access/idiasymbol-get-types.md)|`IDiaSymbol**`|Array aller Arten von benutzerdefinierten Typ verwiesen wird.|  
+|Eigenschaft|Datentyp|Beschreibung|  
+|--------------|---------------|-----------------|  
+|[IDiaSymbol::get_oemId](../../debugger/debug-interface-access/idiasymbol-get-oemid.md)|`DWORD`|Der Bezeichner des OEM.|  
+|[IDiaSymbol::get_oemSymbolId](../../debugger/debug-interface-access/idiasymbol-get-oemsymbolid.md)|`DWORD`|OEM interne-ID.|  
+|[IDiaSymbol::get_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md)|`DWORD`|Index-ID des Symbols.|  
+|[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|Gibt `SymTagCustomType` (eines der [SymTagEnum-Enumeration](../../debugger/debug-interface-access/symtagenum.md) Werte).|  
+|[IDiaSymbol::get_type](../../debugger/debug-interface-access/idiasymbol-get-type.md)|`IDiaSymbol*`|Der erste Typ, der auf das Symbol für benutzerdefinierten Typ verweist.|  
+|[IDiaSymbol::get_typeId](../../debugger/debug-interface-access/idiasymbol-get-typeid.md)|`DWORD`|Die ID des Symbols Typ.|  
+|[IDiaSymbol::get_types](../../debugger/debug-interface-access/idiasymbol-get-types.md)|`IDiaSymbol**`|Ein Array aller Typen, die auf das Symbol für benutzerdefinierten Typ verweist.|  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Klassenhierarchie der Symboltypen](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)

@@ -1,67 +1,67 @@
 ---
-title: "BP_COND_STYLE | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "BP_COND_STYLE"
-helpviewer_keywords: 
-  - "BP_COND_STYLE-enumeration"
+title: BP_COND_STYLE | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: BP_COND_STYLE
+helpviewer_keywords: BP_COND_STYLE enumeration
 ms.assetid: a93b1412-f447-48a1-af9d-38f3dbb3092f
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: a2dd89bd7e70e619bea5f1f2cb17b70e98eecaf3
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# BP_COND_STYLE
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Gibt das Format für die anstehende zustands Haltepunkt und gebundenen Haltepunkte an.  
+# <a name="bpcondstyle"></a>BP_COND_STYLE
+Gibt den Haltepunkt Bedingung Stil für ausstehende und Haltepunkte gebunden.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-enum enum_BP_COND_STYLE {   
-   BP_COND_NONE         = 0x0000,  
-   BP_COND_WHEN_TRUE    = 0x0001,  
-   BP_COND_WHEN_CHANGED = 0x0002  
+```cpp  
+enum enum_BP_COND_STYLE {   
+   BP_COND_NONE         = 0x0000,  
+   BP_COND_WHEN_TRUE    = 0x0001,  
+   BP_COND_WHEN_CHANGED = 0x0002  
 };  
 typedef DWORD BP_COND_STYLE;  
 ```  
   
-```c#  
-public enum enum_BP_COND_STYLE {   
-   BP_COND_NONE         = 0x0000,  
-   BP_COND_WHEN_TRUE    = 0x0001,  
-   BP_COND_WHEN_CHANGED = 0x0002  
+```csharp  
+public enum enum_BP_COND_STYLE {   
+   BP_COND_NONE         = 0x0000,  
+   BP_COND_WHEN_TRUE    = 0x0001,  
+   BP_COND_WHEN_CHANGED = 0x0002  
 };  
 ```  
   
-## Mitglieder  
- BP\_COND\_NONE  
- Löst den Haltepunkt aus, wenn sich die Position des Haltepunkts unterbrochen wird.  Eine Haltepunktbedingung angegeben.  
+## <a name="members"></a>Member  
+ BP_COND_NONE  
+ Wird den Haltepunkt ausgelöst, wenn Position der Haltepunkt erreicht wird. Keine Bedingung für Haltepunkt angegeben.  
   
- BP\_COND\_WHEN\_TRUE  
- Löst den Haltepunkt nur ausgeführt, wenn der bedingte Ausdruck, der mit dem Haltepunkt zugeordnet ist, `true`ergibt.  
+ BP_COND_WHEN_TRUE  
+ Den Haltepunkt ausgelöst wird, nur wenn der bedingte Ausdruck mit dem Haltepunkt zugeordnete ergibt `true`.  
   
- BP\_COND\_WHEN\_CHANGED  
- Löst den Haltepunkt nur ausgeführt, wenn sich der Wert des bedingten Ausdrucks, der dem Haltepunkt zugeordnet ist, aus der vorherigen Auswertung geändert hat.  
+ BP_COND_WHEN_CHANGED  
+ Wird ausgelöst, die der Breakpoint nur, wenn der Wert des bedingten Ausdrucks mit dem Haltepunkt zugeordneten aus der vorherigen Bewertung geändert hat.  
   
-## Hinweise  
- Wird für den `styleCondition`\-Member der [BP\_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) Struktur.  
+## <a name="remarks"></a>Hinweise  
+ Verwendet für die `styleCondition` Mitglied der [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) Struktur.  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  Header: msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [BP\_CONDITION](../../../extensibility/debugger/reference/bp-condition.md)
+ [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md)

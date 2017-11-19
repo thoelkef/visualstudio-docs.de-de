@@ -1,55 +1,54 @@
 ---
-title: "IDiaSourceFile | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSourceFile-Schnittstelle"
+title: IDiaSourceFile | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSourceFile interface
 ms.assetid: 6e9be757-797f-4960-ba62-c14092620bbd
-caps.latest.revision: 10
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: b742986d59024021eff5e85d54fc64247571df61
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSourceFile
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Stellt eine Quelldatei dar.  
+# <a name="idiasourcefile"></a>IDiaSourceFile
+Eine Quelldatei darstellt.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
-IDiaSourceFile : IUnknown  
+IDiaSourceFile : IUnknown  
 ```  
   
-## Methoden in die Vtable\-Reihenfolge  
- In der folgenden Tabelle werden die Methoden von `IDiaSourceFile`an.  
+## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
+ Die folgende Tabelle zeigt die Methoden der `IDiaSourceFile`.  
   
 |Methode|Beschreibung|  
-|-------------|------------------|  
-|[IDiaSourceFile::get\_uniqueId](../../debugger/debug-interface-access/idiasourcefile-get-uniqueid.md)|Ruft einen einfachen ganzzahligen Schlüsselwert ab, der für das Bild eindeutig ist.|  
-|[IDiaSourceFile::get\_fileName](../../debugger/debug-interface-access/idiasourcefile-get-filename.md)|Ruft den Namen der Quelldatei ab.|  
-|[IDiaSourceFile::get\_checksumType](../../debugger/debug-interface-access/idiasourcefile-get-checksumtype.md)|Ruft den Typ der Prüfsummen ab.|  
-|[IDiaSourceFile::get\_compilands](../../debugger/debug-interface-access/idiasourcefile-get-compilands.md)|Ruft einen Enumerator für die Kompiliereinheiten mit Zeilennummern diese Datei verweisen ab.|  
-|[IDiaSourceFile::get\_checksum](../../debugger/debug-interface-access/idiasourcefile-get-checksum.md)|Ruft die Prüfsummen Bytes ab.|  
+|------------|-----------------|  
+|[IDiaSourceFile::get_uniqueId](../../debugger/debug-interface-access/idiasourcefile-get-uniqueid.md)|Ruft einen Schlüssel einfache Integer-Wert, der für dieses Bild eindeutig ist.|  
+|[IDiaSourceFile::get_fileName](../../debugger/debug-interface-access/idiasourcefile-get-filename.md)|Ruft den Namen der Quelldatei ab.|  
+|[IDiaSourceFile::get_checksumType](../../debugger/debug-interface-access/idiasourcefile-get-checksumtype.md)|Ruft den Typ von Prüfsumme ab.|  
+|[IDiaSourceFile::get_compilands](../../debugger/debug-interface-access/idiasourcefile-get-compilands.md)|Ruft einen Enumerator mit dem Compilands mit Zeilennummern verweisen auf diese Datei ab.|  
+|[IDiaSourceFile::get_checksum](../../debugger/debug-interface-access/idiasourcefile-get-checksum.md)|Ruft die Prüfsumme Bytes ab.|  
   
-## Hinweise  
+## <a name="remarks"></a>Hinweise  
   
-## Hinweise für Aufrufer  
- Rufen Sie diese Schnittstelle, indem sie die [IDiaEnumSourceFiles::Item](../../debugger/debug-interface-access/idiaenumsourcefiles-item.md) oder [IDiaEnumSourceFiles::Next](../../debugger/debug-interface-access/idiaenumsourcefiles-next.md)\-Methoden aufgerufen werden.  Weitere Informationen finden Sie im Beispiel für Details.  
+## <a name="notes-for-callers"></a>Hinweise für Aufrufer  
+ Rufen Sie diese Schnittstelle durch Aufrufen der [idiaenumsourcefiles:: Item](../../debugger/debug-interface-access/idiaenumsourcefiles-item.md) oder [idiaenumsourcefiles:: Next](../../debugger/debug-interface-access/idiaenumsourcefiles-next.md) Methoden. Siehe das Beispiel für Details.  
   
-## Beispiel  
- Diese Funktion wird die Namen aller Quelldateien an, die dem angegebenen Tabelle verwendet werden sollen.  
+## <a name="example"></a>Beispiel  
+ Diese Funktion zeigt die Namen aller Quelldateien, die der angegebenen Tabelle verwendet werden sollen.  
   
-```cpp#  
+```C++  
 void ShowSourceFiles(IDiaTable *pTable)  
 {  
     CComPtr<IDiaEnumSourceFiles> pSourceFiles;  
@@ -74,18 +73,18 @@ void ShowSourceFiles(IDiaTable *pTable)
 }  
 ```  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  Header: Dia2.h  
   
  Bibliothek: diaguids.lib  
   
- DLLs: msdia80.dll  
+ DLL: "MSDIA80.dll"  
   
-## Siehe auch  
- [Schnittstellen \(Debug Interface Access SDK\)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
- [IDiaEnumSourceFiles::Item](../../debugger/debug-interface-access/idiaenumsourcefiles-item.md)   
- [IDiaEnumSourceFiles::Next](../../debugger/debug-interface-access/idiaenumsourcefiles-next.md)   
- [IDiaLineNumber::get\_sourceFile](../../debugger/debug-interface-access/idialinenumber-get-sourcefile.md)   
- [IDiaSession::findFileById](../../debugger/debug-interface-access/idiasession-findfilebyid.md)   
- [IDiaSession::findLines](../../debugger/debug-interface-access/idiasession-findlines.md)   
+## <a name="see-also"></a>Siehe auch  
+ [Schnittstellen (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+ [Idiaenumsourcefiles:: Item](../../debugger/debug-interface-access/idiaenumsourcefiles-item.md)   
+ [Idiaenumsourcefiles:: Next](../../debugger/debug-interface-access/idiaenumsourcefiles-next.md)   
+ [Idialinenumber:: Get_sourcefile](../../debugger/debug-interface-access/idialinenumber-get-sourcefile.md)   
+ [Idiasession:: Findfilebyid](../../debugger/debug-interface-access/idiasession-findfilebyid.md)   
+ [Idiasession:: Findlines](../../debugger/debug-interface-access/idiasession-findlines.md)   
  [IDiaSession::findLinesByLinenum](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)

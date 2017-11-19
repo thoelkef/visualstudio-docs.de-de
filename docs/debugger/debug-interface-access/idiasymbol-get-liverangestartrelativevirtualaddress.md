@@ -1,55 +1,54 @@
 ---
-title: "IDiaSymbol::get_liveRangeStartRelativeVirtualAddress | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSymbol::get_liveRangeStartRelativeVirtualAddress"
+title: IDiaSymbol::get_liveRangeStartRelativeVirtualAddress | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSymbol::get_liveRangeStartRelativeVirtualAddress
 ms.assetid: 1da52539-9872-4c20-8eaa-74b6cb5f3b02
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 7fe43b99ce430e1e06683494fdeb1c5716b30cea
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSymbol::get_liveRangeStartRelativeVirtualAddress
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Gibt den Anfang des Adressbereichs zurück, in dem das lokale Symbol gültig ist.  
+# <a name="idiasymbolgetliverangestartrelativevirtualaddress"></a>IDiaSymbol::get_liveRangeStartRelativeVirtualAddress
+Gibt den Anfang der Adressbereich aus, in dem die lokalen Symbolcache gültig ist.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT get_liveRangeStartRelativeVirtualAddress (   
-   DWORD* address  
+```C++  
+HRESULT get_liveRangeStartRelativeVirtualAddress (   
+   DWORD* address  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `address`  
- \[out\]  Gibt den Anfang des Adressbereichs zurück.  
+ [out] Gibt den Beginn des Adressbereichs zurück.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  Die relative virtuelle zurückgegebene Adresse ist der Anfang des Bereichs, in dem das Symbol gültig ist.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben. Die relative virtuelle Adresse zurückgegeben, ist der Anfang des Bereichs, in dem das Symbol gültig ist.  
   
 > [!NOTE]
->  Ein zurückgegebener Fehlercode bedeutet, dass das Symbol nicht aktive Bereichs Informationen verfügt.  
+>  Ein zurückgegebene Fehlercode bedeutet, dass das Symbol keinen live Bereichsinformationen.  
   
-## Hinweise  
+## <a name="remarks"></a>Hinweise  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  Header: Dia2.h  
   
  Bibliothek: diaguids.lib  
   
- DLLs: msdia100.dll  
+ DLL: msdia100.dll  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -1,52 +1,51 @@
 ---
-title: "IDiaEnumStackFrames::Next | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaEnumStackFrames::Next-Methode"
+title: 'Idiaenumstackframes:: Next | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaEnumStackFrames::Next method
 ms.assetid: 09378a21-d5e3-4213-b7e2-10f04d85295f
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 784744321a76c7142c948bac5c5f83a896d443be
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaEnumStackFrames::Next
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Ruft eine angegebene Anzahl von Stapelrahmen Elementen in der Enumerationsfolge ab.  
+# <a name="idiaenumstackframesnext"></a>IDiaEnumStackFrames::Next
+Ruft eine angegebene Anzahl von Stack-Frame-Elemente aus der Enumerationsfolge ab.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT Next(   
-   ULONG             celt,  
-   IDiaStackFrame**  rgelt,  
-   ULONG*            pceltFetched  
+```C++  
+HRESULT Next(   
+   ULONG             celt,  
+   IDiaStackFrame**  rgelt,  
+   ULONG*            pceltFetched  
 );  
 ```  
   
-#### Parameter  
- Celt  
- \[in\]  Die Anzahl der Elemente im stackframe Enumerator abgerufen werden sollen.  
+#### <a name="parameters"></a>Parameter  
+ celt  
+ [in] Die Anzahl der StackFrame-Elemente im Enumerator abgerufen werden sollen.  
   
  rgelt  
- \[out\]  Ein Array, das den angeforderten [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)\-Objekten gefüllt werden soll.  
+ [out] Ein Array, das mit der angeforderten gefüllt werden soll, im [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md) Objekte.  
   
  pceltFetched  
- \[out\]  Gibt die Anzahl der Stapelrahmen Elementen im abgerufenen Enumerator zurück.  
+ [out] Gibt die Anzahl der Stapel Frameelemente in der abgerufenen Enumerator zurück.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück.  Gibt `S_FALSE` zurück, wenn keine weiteren Stapelrahmen auftreten.  Andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`. Gibt `S_FALSE` Wenn es keine weiteren Stapelrahmen sind. Andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDiaEnumStackFrames](../../debugger/debug-interface-access/idiaenumstackframes.md)   
  [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)

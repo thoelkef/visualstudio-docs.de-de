@@ -1,25 +1,27 @@
 ---
-title: "Kombinationsfeld-Element | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Tastenkürzel-Element (VSCT-XML-Schema)"
-  - "VSCT XML-Schemaelemente, Tastenkürzel"
+title: Kombinationsfeld-Element | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- Combos element (VSCT XML schema)
+- VSCT XML schema elements, Combos
 ms.assetid: 392e3063-f0a0-4130-9583-23bd2aa3fa36
-caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: f170efc945f92d13eda61830ef682ab4cd8fc755
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Kombinationsfeld-Element
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="combo-element"></a>Kombinationsfeld-Element
 Definiert die Befehle, die in einem Kombinationsfeld angezeigt werden. Gibt es vier Arten von Kombinationsfelder, wie folgt: Kombinationsfeld, DynamicCombo IndexCombo und MRUCombo.  
   
 ## <a name="syntax"></a>Syntax  
@@ -51,7 +53,7 @@ Definiert die Befehle, die in einem Kombinationsfeld angezeigt werden. Gibt es v
   
 |Element|Beschreibung|  
 |-------------|-----------------|  
-|Parent (Übergeordnet)|Optional. Das übergeordnete Element der Schaltfläche.|  
+|Übergeordnetes Element|Dies ist optional. Das übergeordnete Element der Schaltfläche.|  
 |CommandFlag|Erforderlich. Finden Sie unter [Befehl Flag Element](../extensibility/command-flag-element.md). Gültige Werte für eine Schaltfläche CommandFlag sind wie folgt aus.<br /><br /> -CaseSensitive<br /><br /> -CommandWellOnly<br /><br /> -DefaultDisabled<br /><br /> -DefaultInvisible<br /><br /> -DynamicVisibility<br /><br /> -Drücken<br /><br /> -IconAndText<br /><br /> -NoAutoComplete<br /><br /> -NoButtonCustomize<br /><br /> -NoCustomize<br /><br /> -NoKeyCustomize<br /><br /> -StretchHorizontally|  
 |Zeichenfolgen|Erforderlich. Finden Sie unter [Zeichenfolgen Element](../extensibility/strings-element.md). Das untergeordnete ButtonText-Element muss definiert werden.|  
 |Anmerkung|Optionaler Kommentar.|  
@@ -85,4 +87,4 @@ Definiert die Befehle, die in einem Kombinationsfeld angezeigt werden. Gibt es v
 ```  
   
 ## <a name="see-also"></a>Siehe auch  
- [Visual Studio-Befehlstabelle (. VSCT)-Dateien](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [VSCT-Dateien (Visual Studio Command Table)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

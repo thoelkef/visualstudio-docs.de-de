@@ -1,33 +1,34 @@
 ---
-title: "&lt;fileAssociation&gt; Element (ClickOnce Application) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-deployment"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "<fileAssociation> element [ClickOnce application manifest]"
-  - "manifests [ClickOnce], fileAssociation element"
+title: '&lt;FileAssociation&gt; Element (ClickOnce-Anwendung) | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-deployment
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- C++
+helpviewer_keywords:
+- <fileAssociation> element [ClickOnce application manifest]
+- manifests [ClickOnce], fileAssociation element
 ms.assetid: 8f951b4f-54f9-412e-a9e5-af4e379fcf08
-caps.latest.revision: 8
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+ms.openlocfilehash: 1b5040f6de578a6436f16c1a1c81d9cef4f789ee
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# &lt;fileAssociation&gt; Element (ClickOnce Application)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Gibt eine Dateierweiterung an, die der Anwendung zugeordnet sein soll.  
+# <a name="ltfileassociationgt-element-clickonce-application"></a>&lt;FileAssociation&gt; Element (ClickOnce-Anwendung)
+Gibt eine Erweiterung der Anwendung zugeordnet werden soll.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 <fileAssociation  
@@ -39,23 +40,23 @@ Gibt eine Dateierweiterung an, die der Anwendung zugeordnet sein soll.
 />  
 ```  
   
-## Elemente und Attribute  
- Das `fileAssociation`\-Element ist optional.  Das Element verfügt über die folgenden Attribute.  
+## <a name="elements-and-attributes"></a>Elemente und Attribute  
+ Das `fileAssociation`-Element ist optional. Das Element weist folgende Attribute.  
   
 |Attribut|Beschreibung|  
-|--------------|------------------|  
-|`extension`|Erforderlich.  Die Dateierweiterung, die der Anwendung zugeordnet werden soll.|  
-|`description`|Erforderlich.  Eine Beschreibung des Dateityps, der von der Shell verwendet werden soll.|  
-|`progid`|Erforderlich.  Ein Name, der den Dateityp eindeutig identifiziert.|  
-|`defaultIcon`|Erforderlich.  Gibt das Symbol an, das für Dateien mit dieser Erweiterung verwendet werden soll.  Die Symboldatei muss durch das [\<file\> Element](../deployment/file-element-clickonce-application.md) in dem [\<assembly\> Element](../deployment/assembly-element-clickonce-application.md) angegeben werden, das dieses Element enthält.|  
+|---------------|-----------------|  
+|`extension`|Erforderlich. Die Dateierweiterung der Anwendung zugeordnet werden soll.|  
+|`description`|Erforderlich. Eine Beschreibung des Dateityps für die Verwendung von der Shell.|  
+|`progid`|Erforderlich. Ein Name, die den Dateityp eindeutig identifiziert.|  
+|`defaultIcon`|Erforderlich. Gibt das Symbol für Dateien mit dieser Erweiterung verwenden. Die Symboldatei muss angegeben werden, mithilfe der [ \<Datei > Element](../deployment/file-element-clickonce-application.md) innerhalb der [ \<Assembly >-Element](../deployment/assembly-element-clickonce-application.md) , enthält dieses Element.|  
   
-## Hinweise  
- Dieses Element muss einen XML\-Namespaceverweis auf "urn:schemas\-microsoft\-com:clickonce.v1" einschließen.  Wenn das `<fileAssociation>`\-Element verwendet wird, muss es nach dem `<application>`\-Element in seinem übergeordneten [\<assembly\> Element](../deployment/assembly-element-clickonce-application.md) eingeordnet werden.  
+## <a name="remarks"></a>Hinweise  
+ Dieses Element muss enthalten einen XML-Namespaceverweis auf "Urn: Schemas-Microsoft-com:clickonce.v1". Wenn die `<fileAssociation>` Element verwendet wird, müssen sie nach dem stammen die `<application>` in seinem übergeordneten Element [ \<Assembly >-Element](../deployment/assembly-element-clickonce-application.md).  
   
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] überschreibt keine vorhandenen Dateizuordnungen.  Allerdings kann eine ClickOnce\-Anwendung die Dateierweiterung nur für den aktuellen Benutzer überschreiben.  Nach der Deinstallation der ClickOnce\-Anwendung löscht ClickOnce die Dateizuordnung für den Benutzer, und die Zuordnung pro Computer ist wieder aktiv.  
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]überschreibt keine vorhandenen dateizuordnungen. Eine ClickOnce-Anwendung kann jedoch die Dateierweiterung für den aktuellen Benutzer nur überschreiben. Nach der Deinstallation von ClickOnce-Anwendung ClickOnce löscht die dateizuordnung für den Benutzer und die Zuordnung pro Computer wieder aktiv ist.  
   
-## Beispiel  
- Im folgenden Codebeispiel werden `fileAssociation`\-Elemente in einem Anwendungsmanifest für eine mit [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] bereitgestellte Texteditoranwendung veranschaulicht.  In diesem Codebeispiel ist auch das vom `defaultIcon`\-Attribut angeforderte [\<file\> Element](../deployment/file-element-clickonce-application.md) enthalten.  
+## <a name="example"></a>Beispiel  
+ Im folgenden Codebeispiel wird veranschaulicht, `fileAssociation` Elemente in einer Anwendung für einen Text-Editor-Anwendung bereitgestellt, mit manifest [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]. Dieses Codebeispiel enthält auch die [ \<Datei >-Element](../deployment/file-element-clickonce-application.md) erforderlich die `defaultIcon` Attribut.  
   
 ```  
 <file name="text.ico" size="4286">  
@@ -80,5 +81,5 @@ Gibt eine Dateierweiterung an, die der Anwendung zugeordnet sein soll.
 <fileAssociation xmlns="urn:schemas-microsoft-com:clickonce.v1" extension=".writing" description="Writings (ClickOnce)" progid="Writing.Document" defaultIcon="writing.ico" />  
 ```  
   
-## Siehe auch  
- [ClickOnce Application Manifest](../deployment/clickonce-application-manifest.md)
+## <a name="see-also"></a>Siehe auch  
+ [ClickOnce-Anwendungsmanifest](../deployment/clickonce-application-manifest.md)

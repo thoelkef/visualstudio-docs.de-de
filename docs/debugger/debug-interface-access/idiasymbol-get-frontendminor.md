@@ -1,33 +1,31 @@
 ---
-title: "IDiaSymbol::get_frontEndMinor | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSymbol::get_frontEndMinor-Methode"
+title: 'Idiasymbol:: Get_frontendminor | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSymbol::get_frontEndMinor method
 ms.assetid: 40792153-827c-4859-be7c-6aa16d5abab6
-caps.latest.revision: 9
-caps.handback.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 30bfe092ed8454b14a7e26d77b375c75cabc0836
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSymbol::get_frontEndMinor
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Ruft die Nebenversionsnummer der Front-End.  
+# <a name="idiasymbolgetfrontendminor"></a>IDiaSymbol::get_frontEndMinor
+Ruft die Nebenversionsnummer der front-End ab.  
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```C++  
 HRESULT get_frontEndMinor (   
    DWORD* pRetVal  
 );  
@@ -35,25 +33,25 @@ HRESULT get_frontEndMinor (
   
 #### <a name="parameters"></a>Parameter  
  `pRetVal`  
- [out] Gibt die Nummer der Nebenversion front.end zurück.  
+ [out] Gibt die Nebenversionsnummer der front.end zurück.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Bei erfolgreicher Ausführung gibt `S_OK`andernfalls gibt `S_FALSE` oder Fehlercode.  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls gibt `S_FALSE` oder Fehlercode.  
   
 > [!NOTE]
->  Ein Rückgabewert von `S_FALSE` bedeutet, dass die Eigenschaft nicht für das Symbol verfügbar.  
+>  Ein Rückgabewert von `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
   
 ## <a name="remarks"></a>Hinweise  
- Ein Compiler besteht in der Regel zwei Hauptelemente: Front-End (Parser), der analysiert den Quellcode in einem Zwischenformat behandelt und eine Back-End (Codegenerator), das Zwischenformat in Assembly konvertiert. Es ist nicht ungewöhnlich, dass front-End für eine andere Version als Back-End verfügen.  
+ Ein Compiler besteht in der Regel zwei Hauptelemente: Front-End (Parser), der verarbeitet die Analyse des Quellcodes in eine temporäre Form, und ein Back-End (Code-Generator), die in der Assembly intermediate Format konvertiert. Es ist nicht ungewöhnlich, dass front-End für eine andere Version als der Back-End haben.  
   
- Ein Front-End oder Back-End-Versionsnummer besteht aus drei Teilen: \< wichtigen>. \< Nebenversion>. \< erstellen>, wobei \< wichtige> ist die Hauptversionsnummer \< kleinere> ist die Nummer der Nebenversion, und \< erstellen> die Buildnummer. Beispielsweise 13.10.3077.  
+ Ein front-End- oder Back-End-Versionsnummer besteht aus drei Teilen: \<wichtigen >.\< kleinere >. \<erstellen >, wobei \<wichtigen > ist die Hauptversionsnummer \<kleinere > ist die Nummer der Nebenversion und \<erstellen > Nummer des Builds. Beispielsweise 13.10.3077.  
   
 ## <a name="requirements"></a>Anforderungen  
   
 |Anforderung|Beschreibung|  
 |-----------------|-----------------|  
 |Header:|dia2.h|  
-|Version:|DIA-SDK V7. 0|  
+|Version:|DIA-SDK Version 7.0|  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

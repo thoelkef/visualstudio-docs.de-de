@@ -1,50 +1,50 @@
 ---
-title: "IDebugDynamicField | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugDynamicField"
-helpviewer_keywords: 
-  - "IDebugDynamicField-Schnittstelle"
+title: IDebugDynamicField | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugDynamicField
+helpviewer_keywords: IDebugDynamicField interface
 ms.assetid: caffbd95-7596-4714-84b1-b964e89a78bb
-caps.latest.revision: 7
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 5bb632d2ca51090f88b33ea6a8365fa9ac13ba9f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugDynamicField
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Diese Schnittstelle stellt einen Typ Variable dar.  
+# <a name="idebugdynamicfield"></a>IDebugDynamicField
+Diese Schnittstelle stellt einen Typ einer Variablen dar.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 IDebugDynamicField : IDebugField  
 ```  
   
-## Hinweise für Implementierer  
- Diese Schnittstelle wird von Symbol Textanbieter als Basisklasse für jeden Typ implementiert, der zur Laufzeit bestimmt werden kann.  Dies ist nur für verwalteten Code.  
+## <a name="notes-for-implementers"></a>Hinweise für Implementierer  
+ Diese Schnittstelle wird als Basisklasse für jeden Typ von Symbol-Anbieter implementiert, die zur Laufzeit bestimmt werden kann. Dies ist nur für verwalteten Code.  
   
-## Hinweise für Aufrufer  
- Diese Schnittstelle stellt eine Basisklasse dar, von der spezielle mehr Schnittstellen abgeleitet werden können.  
+## <a name="notes-for-callers"></a>Hinweise für Aufrufer  
+ Diese Schnittstelle stellt eine Basisklasse, von der spezialisiertere Schnittstellen abgeleitet werden können.  
   
-## Methoden in die Vtable\-Reihenfolge  
- Diese Schnittstelle stellt keine Methoden bereit, die andere als die von `IDebugField`vererbt werden.  
+## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
+ Diese Schnittstelle stellt keine Methoden außer den von geerbten `IDebugField`.  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  Header: sh.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Siehe auch  
- [Symbol\-Provider\-Schnittstellen](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)   
+## <a name="see-also"></a>Siehe auch  
+ [Symbol-Anbieter-Schnittstellen](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)   
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

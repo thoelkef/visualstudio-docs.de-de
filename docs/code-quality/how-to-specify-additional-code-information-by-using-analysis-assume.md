@@ -1,40 +1,39 @@
 ---
-title: "Gewusst wie: Angeben zus&#228;tzlicher Codeinformationen mit __analysis_assume | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "__analysis_assume"
-helpviewer_keywords: 
-  - "__analysis_assume"
+title: "Vorgehensweise: Angeben zusätzlicher Codeinformationen mit __analysis_assume | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: __analysis_assume
+helpviewer_keywords: __analysis_assume
 ms.assetid: 51205d97-4084-4cf4-a5ed-3eeaf67deb1b
-caps.latest.revision: 10
-author: "corob-msft"
-ms.author: "corob"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: mikeblome
+ms.author: mblome
+manager: ghogen
+ms.openlocfilehash: 72892328e9e0cd2f85176cfc4a514d64f853d209
+ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/15/2017
 ---
-# Gewusst wie: Angeben zus&#228;tzlicher Codeinformationen mit __analysis_assume
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Sie können dem Codeanalysetool für C\/C\+\+\-Code Hinweise zur Verfügung stellen, durch die der Analyseprozess unterstützt und Warnungen reduziert werden.  Um zusätzliche Informationen bereitzustellen, verwenden Sie die folgende Funktion:  
+# <a name="how-to-specify-additional-code-information-by-using-analysisassume"></a>Gewusst wie: Angeben zusätzlicher Codeinformationen mit __analysis_assume
+Sie können Hinweise an, die das Codeanalysetool für C/C++-Code bereitstellen, die denen des Analysevorgangs und Warnungen zu reduzieren. Um zusätzliche Informationen bereitzustellen, verwenden Sie die folgende Funktion:  
   
- `__analysis_assume(`   `expr`   `)`  
+ `__analysis_assume(`  `expr`  `)`  
   
- `expr` – beliebiger Ausdruck, von dem angenommen wird, dass er true ergibt.  
+ `expr`-Ein Ausdruck, der davon ausgegangen, dass wird "Wahr" ausgewertet.  
   
- Das Codeanalysetool geht davon aus, dass die durch den Ausdruck angegebene Bedingung an dem Punkt, an dem die Funktion auftritt, true ergibt und so lange gültig bleibt, bis der Ausdruck, beispielsweise durch die Zuweisung zu einer Variablen, geändert wird.  
+ Das Codeanalysetool wird davon ausgegangen, dass die Bedingung, die durch den Ausdruck dargestellt wird, in dem die Funktion angezeigt wird, und "true" bleibt, bis der Ausdruck geändert wird, z. B. durch die Zuweisung zur Variable, Zeitpunkt "true" ist.  
   
 > [!NOTE]
->  `__analysis_assume` hat keine Auswirkungen auf die Codeoptimierung.  Außerhalb des Codeanalysetools wird durch `__analysis_assume` keine Aktion ausgeführt.  
+>  `__analysis_assume`Code-Optimierung hat keine Auswirkungen. Außerhalb der Codeanalysetool `__analysis_assume` als ein ohne-Op definiert ist.  
   
-## Beispiel  
- Im folgenden Code wird `__analysis_assume` verwendet, um die Codeanalysewarnung [C6388](../code-quality/c6388.md) zu korrigieren:  
+## <a name="example"></a>Beispiel  
+ Der folgende code verwendet `__analysis_assume` der codeanalysewarnung zu korrigieren [C6388](../code-quality/c6388.md):  
   
 ```  
 #include<windows.h>  
@@ -57,5 +56,5 @@ void test( )
 }  
 ```  
   
-## Siehe auch  
- [\_\_assume](/visual-cpp/intrinsics/assume)
+## <a name="see-also"></a>Siehe auch  
+ [__assume](/cpp/intrinsics/assume)

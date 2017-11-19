@@ -1,48 +1,47 @@
 ---
-title: "Gewusst wie: Konfigurieren der Codeanalyse f&#252;r eine ASP.NET-Anwendung | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/16/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.codeanalysis.propertypages.asp"
+title: "Vorgehensweise: Konfigurieren der Codeanalyse für eine ASP.NET-Webanwendung | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vs.codeanalysis.propertypages.asp
 ms.assetid: b3000b31-fd9d-489e-81a2-a4bee49453ba
-caps.latest.revision: 13
-caps.handback.revision: 13
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
+caps.latest.revision: "13"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: dbc2ba8f78cc8f38bce62adbd3d91604875bffa3
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Gewusst wie: Konfigurieren der Codeanalyse f&#252;r eine ASP.NET-Anwendung
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-In [!INCLUDE[vsPreShort](../code-quality/includes/vspreshort_md.md)] und [!INCLUDE[vsUltShort](../code-quality/includes/vsultshort_md.md)] können Sie *Regelsätze* für die Codeanalyse aus einer Liste auswählen, um diese auf die [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]\-Webanwendung anzuwenden.  Der Standardregelsatz sind die Microsoft\-Mindestregeln.  Sie können eine andere Regel auswählen, die auf die Website angewendet werden soll.  
+# <a name="how-to-configure-code-analysis-for-an-aspnet-web-application"></a>Gewusst wie: Konfigurieren der Codeanalyse für eine ASP.NET-Anwendung
+In [!INCLUDE[vsPreShort](../code-quality/includes/vspreshort_md.md)] und [!INCLUDE[vsUltShort](../code-quality/includes/vsultshort_md.md)] aus einer Liste der Codeanalyse Auszuwählender *-Regelsätze* zuweisen [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Webanwendung. Der Standardregelsatz sind die Microsoft-Mindestregeln. Sie können einen anderen Regelsatz Zuweisen der Website auswählen.  
   
-### So konfigurieren Sie einen Regelsatz für ein ASP.NET\-Seitenframeworkprojekt  
+### <a name="to-configure-a-rule-set-for-an-aspnet-page-framework-project"></a>So konfigurieren Sie einen Regelsatz für ein ASP.NET-Seitenframeworkprojekt  
   
-1.  Wählen Sie die Website im **Projektmappen\-Explorer** aus.  
+1.  Wählen Sie die Website im **Projektmappen-Explorer**.  
   
-2.  Klicken Sie im Menü **Analyse** auf **Codeanalyse für Website konfigurieren**.  
+2.  Auf der **analysieren** Menü klicken Sie auf **Konfigurieren der Codeanalyse für Website**.  
   
-3.  Wenn Sie die Projektmappe ausgewählt haben und diese mehrere Projekte enthält, wählen Sie in den Listen **Konfiguration** und **Plattform** die Buildkonfiguration sowie das Zielbetriebssystem aus.  
+3.  Wenn Sie die Lösung ausgewählt, und die Lösung mehr als ein Projekt bietet, wählen Sie den Build und Betriebssystem von der **Konfiguration** und **Plattform** aufgeführt.  
   
-4.  Klicken Sie für jedes Projekt in der Lösung auf die Spalte **Regelsatz** und anschließend auf den Namen des auszuführenden Regelsatzes.  
+4.  Für jedes Projekt in der Projektmappe, klicken Sie auf die **Regelsatz** Spalte, und klicken Sie dann auf der Namen der Regel legen Sie auf ausführen.  
   
-5.  Standardmäßig wird die Codeanalyse für alle Projekte in der Lösung ausgeführt.  Um Codeanalyse für ein bestimmtes Projekt zu deaktivieren oder zu aktivieren, führen Sie folgende Schritte aus:  
+5.  Standardmäßig wird die Codeanalyse für alle Projekte in der Projektmappe ausgeführt. So deaktivieren oder aktivieren die Codeanalyse für ein bestimmtes Projekt, gehen Sie folgendermaßen vor:  
   
-    1.  Klicken Sie mit der rechten Maustaste auf den Projektnamen, und klicken Sie anschließend auf Eigenschaften.  
+    1.  Maustaste auf den Projektnamen, und klicken Sie dann auf Eigenschaften.  
   
-    2.  Aktivieren oder deaktivieren Sie das Kontrollkästchen **Codeanalyse aktivieren**.  Sie können die Codeanalyse auch manuell ausführen, indem Sie im Menü **Analyse** die Option **Codeanalyse auf Website ausführen** auswählen.  
+    2.  Aktivieren oder Deaktivieren der **Codeanalyse aktivieren** Kontrollkästchen. Sie können Codeanalyse auch manuell ausführen, indem Sie auswählen **Codeanalyse ausführen, auf der Website** aus der **analysieren** Menü.  
   
-6.  Führen Sie in der Dropdownliste **Diesen Regelsatz ausführen** die folgenden Schritte aus:  
+6.  In der **diesen Regelsatz ausführen** Dropdown-Liste, gehen Sie folgendermaßen vor:  
   
     -   Wählen Sie den Regelsatz, den Sie verwenden möchten.  
   
-    -   Wählen **\<Durchsuchen\>**, um einen vorhandenen benutzerdefinierten Regelsatz anzugeben, der nicht in der Liste ist.  
+    -   Wählen Sie  **\<Durchsuchen >** zu einer vorhandenen benutzerdefinierten Regelsatz anzugeben, ist nicht in der Liste.  
   
-    -   Definieren Sie einen benutzerdefinierten Regelsatz.  Weitere Informationen finden Sie unter [Erstellen von benutzerdefinierten Regelsätzen](../code-quality/creating-custom-code-analysis-rule-sets.md).
+    -   Definieren Sie einen benutzerdefinierten Regelsatz. Weitere Informationen finden Sie unter [Erstellen von benutzerdefinierten Regelsätzen](../code-quality/creating-custom-code-analysis-rule-sets.md).

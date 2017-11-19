@@ -1,11 +1,10 @@
 ---
-title: 'CA2231: Overload operator equals on overriding ValueType.Equals | Microsoft Docs'
+title: "CA2231: Überladung Gleichheitsoperator beim Überschreiben von ValueType.Equals | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -16,46 +15,31 @@ helpviewer_keywords:
 - OverloadOperatorEqualsOnOverridingValueTypeEquals
 - CA2231
 ms.assetid: 114c0161-261a-40ad-8b2c-0932d6909d2a
-caps.latest.revision: 17
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 9ef801c33ef92a9d45a5ecaba69b4cf44d622d6c
-ms.contentlocale: de-de
-ms.lasthandoff: 08/30/2017
-
+caps.latest.revision: "17"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 0295b7379fbac1ae3e1c84afca651503d6984ba6
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="ca2231-overload-operator-equals-on-overriding-valuetypeequals"></a>CA2231: Overload operator equals on overriding ValueType.Equals
+# <a name="ca2231-overload-operator-equals-on-overriding-valuetypeequals"></a>CA2231: Überladen Sie den Gleichheitsoperator beim Überschreiben von ValueType.Equals
 |||  
 |-|-|  
 |TypeName|OverloadOperatorEqualsOnOverridingValueTypeEquals|  
 |CheckId|CA2231|  
-|Category|Microsoft.Usage|  
-|Breaking Change|Non Breaking|  
+|Kategorie|Microsoft.Usage|  
+|Unterbrechende Änderung|Nicht unterbrechende Änderung|  
   
-## <a name="cause"></a>Cause  
- A value type overrides <xref:System.Object.Equals%2A?displayProperty=fullName> but does not implement the equality operator.  
+## <a name="cause"></a>Ursache  
+ Ein Werttyp überschreibt <xref:System.Object.Equals%2A?displayProperty=fullName> ohne den Gleichheitsoperator implementiert wird.  
   
-## <a name="rule-description"></a>Rule Description  
- In most programming languages there is no default implementation of the equality operator (==) for value types. If your programming language supports operator overloads, you should consider implementing the equality operator. Its behavior should be identical to that of <xref:System.Object.Equals%2A>.  
+## <a name="rule-description"></a>Regelbeschreibung  
+ In den meisten Programmiersprachen ist es keine Standardimplementierung des Gleichheitsoperators (==) für Werttypen. Wenn Ihre Programmiersprache operatorüberladungen unterstützt, sollten Sie erwägen, den Gleichheitsoperator zu implementieren. Das Verhalten sollte identisch mit <xref:System.Object.Equals%2A>.  
   
- You cannot use the default equality operator in an overloaded implementation of the equality operator. Doing so will cause a stack overflow. To implement the equality operator, use the Object.Equals method in your implementation. For example:  
+ Sie können nicht den Gleichheitsoperator standardmäßig in einer überladenen Implementierung des Gleichheitsoperators verwenden. Auf diese Weise wird einen Stapelüberlauf verursachen. Um den Gleichheitsoperator zu implementieren, verwenden Sie die Object.Equals-Methode in Ihrer Implementierung. Zum Beispiel:  
   
 ```vb  
 If (Object.ReferenceEquals(left, Nothing)) Then  
@@ -71,27 +55,27 @@ if (Object.ReferenceEquals(left, null))
 return left.Equals(right);  
 ```  
   
-## <a name="how-to-fix-violations"></a>How to Fix Violations  
- To fix a violation of this rule, implement the equality operator.  
+## <a name="how-to-fix-violations"></a>Behandeln von Verstößen  
+ Um einen Verstoß gegen diese Regel zu beheben, implementieren Sie den Gleichheitsoperator.  
   
-## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
- It is safe to suppress a warning from this rule; however, we recommend that you provide the equality operator if possible.  
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?  
+ Sie können ruhig zum Unterdrücken einer Warnung dieser Regel; Allerdings wird empfohlen, den Gleichheitsoperator nach Möglichkeit bieten.  
   
-## <a name="example"></a>Example  
- The following example defines a type that violates this rule.  
+## <a name="example"></a>Beispiel  
+ Das folgende Beispiel definiert einen Typ, der mit dieser Regel verletzt.  
   
  [!code-csharp[FxCop.Usage.EqualsGetHashCode#1](../code-quality/codesnippet/CSharp/ca2231-overload-operator-equals-on-overriding-valuetype-equals_1.cs)]  
   
-## <a name="related-rules"></a>Related Rules  
- [CA1046: Do not overload operator equals on reference types](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md)  
+## <a name="related-rules"></a>Verwandte Regeln  
+ [CA1046: Gleichheitsoperator für Referenztypen nicht überladen](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md)  
   
- [CA2225: Operator overloads have named alternates](../code-quality/ca2225-operator-overloads-have-named-alternates.md)  
+ [CA2225: Operatorüberladungen weisen benannte Alternativen auf](../code-quality/ca2225-operator-overloads-have-named-alternates.md)  
   
- [CA2226: Operators should have symmetrical overloads](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)  
+ [CA2226: Operatoren sollten symmetrische Überladungen aufweisen](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)  
   
- [CA2224: Override equals on overloading operator equals](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)  
+ [CA2224: Equals beim Überladen von Gleichheitsoperatoren überschreiben](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)  
   
- [CA2218: Override GetHashCode on overriding Equals](../code-quality/ca2218-override-gethashcode-on-overriding-equals.md)  
+ [CA2218: GetHashCode beim Überschreiben von Equals überschreiben](../code-quality/ca2218-override-gethashcode-on-overriding-equals.md)  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Siehe auch  
  <xref:System.Object.Equals%2A?displayProperty=fullName>

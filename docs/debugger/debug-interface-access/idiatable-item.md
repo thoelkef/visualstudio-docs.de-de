@@ -1,55 +1,54 @@
 ---
-title: "IDiaTable::Item | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaTable::Item-Methode"
+title: 'Idiatable:: Item | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaTable::Item method
 ms.assetid: eae11b26-4807-400c-be25-e85bbc0c6b20
-caps.latest.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: e5c0c810dfd1a17f2fa63e64bf199a5882174aae
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaTable::Item
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
+# <a name="idiatableitem"></a>IDiaTable::Item
 Ruft einen Verweis auf den angegebenen Eintrag in der Tabelle ab.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT Item (   
-   DWORD      index,  
-   IUnknown** element  
+```C++  
+HRESULT Item (   
+   DWORD      index,  
+   IUnknown** element  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `index`  
- \[in\]  Der Index des Tabelleneintrags im Bereich von 0 bis \-1, wobei `count``count` von der [IDiaTable::get\_Count](../../debugger/debug-interface-access/idiatable-get-count.md)Methode zurückgegeben wird.  
+ [in] Der Index des Eintrags Tabelle im Bereich von 0 bis `count`-1 und, in denen `count` wird zurückgegeben, indem Sie die [idiatable:: Get_count](../../debugger/debug-interface-access/idiatable-get-count.md)Methode.  
   
  `element`  
- \[out\]  Gibt ein `IUnknown`\-Objekt zurück, das den angegebenen Tabelleneintrag darstellt.  
+ [out] Gibt ein `IUnknown` Objekt, das dem angegebenen Verzeichniseintrag darstellt.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Hinweise  
- Eine Tabelle enthält eine Auflistung von Objekten dar.  Je nach diesen Objekten kann der Parameter Element an die entsprechende Schnittstelle umgewandelt werden.  Wenn z. B. eine Tabelle [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)\-Objekte enthält, dann kann der Parameter Element der `IDiaSegment`\-Schnittstelle umgewandelt werden.  
+## <a name="remarks"></a>Hinweise  
+ Eine Tabelle stellt eine Auflistung von Objekten dar. In Abhängigkeit von diesen Objekten kann der Elementparameter in der entsprechenden Schnittstelle umgewandelt werden. Wenn eine Tabelle enthält z. B. [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md) Objekte aufweist, und klicken Sie dann in der Elementparameter umgewandelt werden kann die `IDiaSegment` Schnittstelle.  
   
- Es handelt sich um eine allgemeine Ansatz mehr, um die `QueryInterface`\-Methode in der [IDiaTable](../../debugger/debug-interface-access/idiatable.md) Enumeratorschnittstelle für die entsprechende Schnittstelle aufzurufen und der spezifischen Methoden des Enumerators zu verwenden, um den Inhalt auf die Tabellen zuzugreifen.  Zeigen Sie die [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)\-Schnittstelle als Beispiel.  
+ Es ist ein gängigerer Ansatz zum Aufrufen der `QueryInterface` Methode in der [IDiaTable](../../debugger/debug-interface-access/idiatable.md) Benutzeroberfläche für die entsprechenden Enumerator-Schnittstelle und den Enumerator spezifischen Methoden Zugriff auf den Tabelleninhalt zu verwenden. Finden Sie unter der [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md) Schnittstelle für ein Beispiel.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDiaTable](../../debugger/debug-interface-access/idiatable.md)   
- [IDiaTable::get\_Count](../../debugger/debug-interface-access/idiatable-get-count.md)   
+ [Idiatable:: Get_count](../../debugger/debug-interface-access/idiatable-get-count.md)   
  [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)   
  [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)

@@ -1,62 +1,64 @@
 ---
-title: "IDebugCustomAttributeQuery::GetCustomAttributeByName | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "IDebugCustomAttributeQuery::GetCustomAttributeByName"
-  - "[GetCustomAttributeByName"
+title: IDebugCustomAttributeQuery::GetCustomAttributeByName | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- IDebugCustomAttributeQuery::GetCustomAttributeByName
+- GetCustomAttributeByName
 ms.assetid: 6779727c-d10a-4abe-9acd-d0a1eb0737e7
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: fa8a3bb56b9391b8b668394e0a01cb21e2da44ea
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugCustomAttributeQuery::GetCustomAttributeByName
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Ruft ein benutzerdefiniertes angegebenes Attribut Name ab.  
+# <a name="idebugcustomattributequerygetcustomattributebyname"></a>IDebugCustomAttributeQuery::GetCustomAttributeByName
+Ruft ein benutzerdefiniertes Attribut mit dem angegebenen Namen ab.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetCustomAttributeByName(  
-   LPCOLESTR pszCustomAttributeName,  
-   BYTE*     ppBlob,  
-   DWORD*    pdwLen  
+   LPCOLESTR pszCustomAttributeName,  
+   BYTE*     ppBlob,  
+   DWORD*    pdwLen  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetCustomAttributeByName(  
-   string    pszCustomAttributeName,  
-   ref int[] ppBlob,  
-   out uint  pdwLen  
+   string    pszCustomAttributeName,  
+   ref int[] ppBlob,  
+   out uint  pdwLen  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `pszCustomAttributeName`  
- \[in\]  Der Name des benutzerdefinierten Attributs.  
+ [in] Der Name des benutzerdefinierten Attributs.  
   
  `ppBlob`  
- \[in, out\] Array, das sämtliche benutzerdefinierte Attributdaten enthalten.  
+ [in, out] Ein Array von Bytes, die benutzerdefinierte Attributdaten enthalten.  
   
  `pdwLen`  
- \[out\]  Länge in Bytes `ppBlob` des Parameters.  
+ [out] Länge in Bytes, der die `ppBlob` Parameter.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück.  Wenn benutzerdefiniert Attribut nicht vorhanden ist, gibt `S_FALSE`zurück.  Andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`. Wenn ein benutzerdefiniertes Attribut nicht vorhanden ist, gibt `S_FALSE`. Andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Beispiel  
- Im folgenden Beispiel wird veranschaulicht, wie diese Methode für ein **CDebugClassFieldSymbol\-Objekt** implementiert, das die [IDebugCustomAttributeQuery](../../../extensibility/debugger/reference/idebugcustomattributequery.md)\-Schnittstelle verfügbar macht.  
+## <a name="example"></a>Beispiel  
+ Das folgende Beispiel veranschaulicht die Implementierung dieser Methode für eine **CDebugClassFieldSymbol** -Objekt, das macht die [IDebugCustomAttributeQuery](../../../extensibility/debugger/reference/idebugcustomattributequery.md) Schnittstelle.  
   
-```cpp#  
+```cpp  
 HRESULT CDebugClassFieldSymbol::GetCustomAttributeByName(  
     LPCOLESTR pszCustomAttributeName,  
     BYTE *pBlob,  
@@ -91,5 +93,5 @@ Error:
 }  
 ```  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDebugCustomAttributeQuery](../../../extensibility/debugger/reference/idebugcustomattributequery.md)

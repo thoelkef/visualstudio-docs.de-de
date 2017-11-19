@@ -1,61 +1,63 @@
 ---
-title: "setMonth-Methode (Datum) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "setMonth"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "Month-Methode"
-  - "setMonth-Methode"
+title: SetMonth-Methode (Datum) (JavaScript) | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: setMonth
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- Month method
+- setMonth method
 ms.assetid: 4f5be295-d536-46c0-b3a4-ad06457efe82
-caps.latest.revision: 15
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 15
+caps.latest.revision: "15"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 0f2672abebd327af8b0da58d46ebc183b8159711
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# setMonth-Methode (Datum) (JavaScript)
-Legt den Wert des Monats im `Date`\-Objekt unter Verwendung der Ortszeit fest.  
+# <a name="setmonth-method-date-javascript"></a>setMonth-Methode (Datum) (JavaScript)
+Legt den Monatswert fest, dem `Date` -Objekt unter Verwendung der Ortszeit.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
   
 dateObj. setMonth(numMonth[, dateVal])   
 ```  
   
-## Parameter  
+## <a name="parameters"></a>Parameter  
  `dateObj`  
- Erforderlich.  Ein beliebiges `Date`\-Objekt.  
+ Erforderlich. Ein `Date`-Objekt.  
   
  `numMonth`  
- Erforderlich.  Ein dem Monat entsprechender numerischer Wert.  Januar hat den Wert 0, und die nachfolgenden Werte geben die weiteren Monate an.  
+ Erforderlich. Ein numerischer Wert, der den Monat gleich ist. Der Wert für Januar ist 0 und andere Monatswerte hintereinander folgen.  
   
  `dateVal`  
- Optional.  Ein numerischer Wert, der den Tag des Monats darstellt.  Ohne Angabe dieses Werts wird der Wert aus einem Aufruf der `getDate`\-Methode verwendet.  
+ Dies ist optional. Ein numerischer Wert, der den Tag des Monats darstellt. Wenn dieser Wert nicht angegeben ist, den Wert von einem Aufruf der `getDate` Methode verwendet wird.  
   
-## Hinweise  
- Um den Monatswert unter Verwendung der koordinierten Weltzeit \(Universal Coordinated Time, UTC\) festzulegen, verwenden Sie die `setUTCMonth`\-Methode.  
+## <a name="remarks"></a>Hinweise  
+ Um den Monatswert unter Verwendung der koordinierten Weltzeit (UTC) festzulegen, verwenden Sie die `setUTCMonth` Methode.  
   
- Ist der Wert von `numMonth` größer als 11 \(Januar entspricht dem Monat 0\) oder eine negative Zahl, wird das gespeicherte Jahr entsprechend geändert.  Wenn das gespeicherte Datum z. B. "5. Jan 1996" lautet und **setMonth\(14\)** aufgerufen wird, ändert sich das Datum in "5. März 1997".  
+ Wenn der Wert des `numMonth` ist größer als 11 (Januar ist Monat 0) bzw. eine negative Zahl, die gespeicherte Jahr entsprechend geändert. Wenn das gespeicherte Datum "5. Januar 1996" ist beispielsweise und **setMonth(14)** wird aufgerufen, das Datum wird geändert in "5. März 1997".  
   
- Mit der **setFullYear**\-Methode können Jahr, Monat und Tag des Monats festgelegt werden.  
+ Die **SetFullYear** Methode kann verwendet werden, um das Jahr, Monat und Tag des Monats festgelegt.  
   
-## Beispiel  
- Im folgenden Beispiel wird die Verwendung der `setMonth`\-Methode veranschaulicht.  
+## <a name="example"></a>Beispiel  
+ Im folgenden Beispiel wird die Verwendung der `setMonth`-Methode veranschaulicht.  
   
-```javascript  
+```JavaScript  
 date = new Date('1/1/1990');  
 date.setMonth(14);  
 document.write(date);  
@@ -65,12 +67,12 @@ document.write(date);
   
 ```  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
- **Gilt für**: [Date\-Objekt](../../javascript/reference/date-object-javascript.md)  
+ **Gilt für**: [Date Object](../../javascript/reference/date-object-javascript.md)  
   
-## Siehe auch  
- [getMonth\-Methode \(Datum\)](../../javascript/reference/getmonth-method-date-javascript.md)   
- [getUTCMonth\-Methode \(Datum\)](../../javascript/reference/getutcmonth-method-date-javascript.md)   
- [setUTCMonth\-Methode \(Datum\)](../../javascript/reference/setutcmonth-method-date-javascript.md)
+## <a name="see-also"></a>Siehe auch  
+ [GetMonth-Methode (Datum)](../../javascript/reference/getmonth-method-date-javascript.md)   
+ [GetUTCMonth-Methode (Datum)](../../javascript/reference/getutcmonth-method-date-javascript.md)   
+ [setUTCMonth-Methode (Datum)](../../javascript/reference/setutcmonth-method-date-javascript.md)

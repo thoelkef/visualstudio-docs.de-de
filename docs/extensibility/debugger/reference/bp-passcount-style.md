@@ -1,74 +1,74 @@
 ---
-title: "BP_PASSCOUNT_STYLE | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "BP_PASSCOUNT_STYLE"
-helpviewer_keywords: 
-  - "BP_PASSCOUNT_STYLE-Struktur"
+title: BP_PASSCOUNT_STYLE | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: BP_PASSCOUNT_STYLE
+helpviewer_keywords: BP_PASSCOUNT_STYLE structure
 ms.assetid: 0a647047-e2d5-4724-a0b8-68108425ecad
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 58baa5aca9ef5bddf5d7060fdc88022952bc9ce3
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# BP_PASSCOUNT_STYLE
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Gibt die Bedingung an, die mit der Anzahl der haben Haltepunkt zugeordnet ist, die den Haltepunkt ausgelöst wird.  
+# <a name="bppasscountstyle"></a>BP_PASSCOUNT_STYLE
+Gibt die Bedingung, die die Anzahl der Breakpoint-Übergabe, die bewirkt, den Haltepunkt dass ausgelöst zugeordnet.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-enum enum_BP_PASSCOUNT_STYLE {   
-   BP_PASSCOUNT_NONE             = 0x0000,  
-   BP_PASSCOUNT_EQUAL            = 0x0001,  
-   BP_PASSCOUNT_EQUAL_OR_GREATER = 0x0002,  
-   BP_PASSCOUNT_MOD              = 0x0003  
+```cpp  
+enum enum_BP_PASSCOUNT_STYLE {   
+   BP_PASSCOUNT_NONE             = 0x0000,  
+   BP_PASSCOUNT_EQUAL            = 0x0001,  
+   BP_PASSCOUNT_EQUAL_OR_GREATER = 0x0002,  
+   BP_PASSCOUNT_MOD              = 0x0003  
 };  
 typedef DWORD BP_PASSCOUNT_STYLE;  
 ```  
   
-```c#  
-public enum enum_BP_PASSCOUNT_STYLE {   
-   BP_PASSCOUNT_NONE             = 0x0000,  
-   BP_PASSCOUNT_EQUAL            = 0x0001,  
-   BP_PASSCOUNT_EQUAL_OR_GREATER = 0x0002,  
-   BP_PASSCOUNT_MOD              = 0x0003  
+```csharp  
+public enum enum_BP_PASSCOUNT_STYLE {   
+   BP_PASSCOUNT_NONE             = 0x0000,  
+   BP_PASSCOUNT_EQUAL            = 0x0001,  
+   BP_PASSCOUNT_EQUAL_OR_GREATER = 0x0002,  
+   BP_PASSCOUNT_MOD              = 0x0003  
 };  
 ```  
   
-## Mitglieder  
- BP\_PASSCOUNT\_NONE  
- Gibt kein Haltepunkt übergaben\-Anzahl Format an.  
+## <a name="members"></a>Member  
+ BP_PASSCOUNT_NONE  
+ Gibt keine Haltepunkt Pass Count-Stil.  
   
- BP\_PASSCOUNT\_EQUAL  
- Legt das übergaben\-Anzahl Haltepunkt fest, um zu entsprechen.  Die Haltepunkt ausgelöst wird, wenn die Häufigkeit der Haltepunkt erreicht gleichgestellte die Anzahl übergeben wird.  
+ BP_PASSCOUNT_EQUAL  
+ Legt den Haltepunkt Pass Anzahl Stil gleich. Der Haltepunkt ausgelöst wird, wenn die Anzahl der Häufigkeit, mit die der Breakpoint erreicht wird die Anzahl der Durchläufe entspricht.  
   
- BP\_PASSCOUNT\_EQUAL\_OR\_GREATER  
- Legt das übergaben\-Anzahl Haltepunkt fest, um zu entsprechen oder höher.  Die Haltepunkt ausgelöst wird, wenn die Häufigkeit der Haltepunkt getroffen wird, ist gleich oder höher als die Anzahl übergeben.  
+ BP_PASSCOUNT_EQUAL_OR_GREATER  
+ Legt den Haltepunkt Pass Count-Stil auf gleich oder größer fest. Der Haltepunkt ausgelöst wird, wenn die Anzahl der Häufigkeit, mit die der Breakpoint erreicht wird, gleich oder größer als die Anzahl der erfolgreich ist.  
   
- BP\_PASSCOUNT\_MOD  
- Gibt eine Modulo\-Übergaben Anzahl an.  Wenn z. B. die Anzahl der vom Typ `BP_PASSCOUNT_MOD` übergeben wird und der gültige Zählwert 4 ist, die Haltepunkt ausgelöst, wenn die Trefferanzahl ein Vielfaches von 4 ist.  
+ BP_PASSCOUNT_MOD  
+ Gibt an, ein modulo Durchläufe. Beispielsweise ist die Anzahl der Durchläufe des Typs `BP_PASSCOUNT_MOD` und der Wert für die Übergabe ist 4, der Haltepunkt ausgelöst, die jedes Mal, wenn die Trefferanzahl ein Vielfaches von 4 ist.  
   
-## Hinweise  
- Wird für den `stylePassCount`\-Member der [BP\_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) Struktur, die wiederum Mitglied der [BP\_REQUEST\_INFO](../../../extensibility/debugger/reference/bp-request-info.md) und [BP\_REQUEST\_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) Strukturen ist.  
+## <a name="remarks"></a>Hinweise  
+ Verwendet für die `stylePassCount` Mitglied der [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) -Struktur, die wiederum Mitglied ist die [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) und [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) Strukturen.  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  Header: msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [BP\_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md)   
- [BP\_REQUEST\_INFO](../../../extensibility/debugger/reference/bp-request-info.md)   
- [BP\_REQUEST\_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)
+ [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md)   
+ [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)   
+ [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)

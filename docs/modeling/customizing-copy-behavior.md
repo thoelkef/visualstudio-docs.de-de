@@ -1,29 +1,31 @@
 ---
-title: "Anpassen des Kopierverhaltens | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: Anpassen des Kopierverhaltens | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 87fff01c-60ba-440a-b8a0-185edcef83ac
-caps.latest.revision: 16
-author: "alancameronwills"
-ms.author: "awills"
-manager: "douge"
-caps.handback.revision: 16
+caps.latest.revision: "16"
+author: alancameronwills
+ms.author: awills
+manager: douge
+ms.openlocfilehash: 532fd69bea467403047a7151584b7cf918ad602d
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# Anpassen des Kopierverhaltens
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-In einer domänenspezifischen Sprache \(Domain\-Specific Language, DSL\), die mit dem [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]\-SDK für Visualisierung und Modellierung erstellt wurde, können Sie ändern, was beim Kopieren und Einfügen von Elementen passiert.  
+# <a name="customizing-copy-behavior"></a>Anpassen des Kopierverhaltens
+In einer domänenspezifischen Sprache (Domain-Specific Language, DSL), die mit dem [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-SDK für Visualisierung und Modellierung erstellt wurde, können Sie ändern, was beim Kopieren und Einfügen von Elementen passiert.  
   
-## Standardmäßiges Verhalten beim Kopieren und Einfügen  
- Sie können Kopiervorgänge aktivieren, indem Sie die Eigenschaft **Kopieren\/Einfügen aktivieren** des Knotens **Editor** im DSL\-Explorer festlegen.  
+## <a name="standard-copy-and-paste-behavior"></a>Standardmäßiges Verhalten beim Kopieren und Einfügen  
+ Legen Sie zum Aktivieren der Kopieren der **aktivieren Kopieren Einfügen** Eigenschaft von der **Editor** Knoten im Explorer für DSL.  
   
  Wenn der Benutzer Elemente in die Zwischenablage kopiert, werden standardmäßig auch die folgenden Elemente kopiert:  
   
--   Eingebettete Nachfolger der ausgewählten Elemente. \(Also Elemente, die Ziele von Einbettungsbeziehungen sind, deren Quelle kopierte Elemente sind.\)  
+-   Eingebettete Nachfolger der ausgewählten Elemente. (Also Elemente, die Ziele von Einbettungsbeziehungen sind, deren Quelle kopierte Elemente sind.)  
   
 -   Beziehungslinks zwischen kopierten Elementen.  
   
@@ -31,32 +33,32 @@ In einer domänenspezifischen Sprache \(Domain\-Specific Language, DSL\), die mi
   
  ![Kopierte und eingefügte Elemente](../modeling/media/dslcopypastedefault.png "DslCopyPasteDefault")  
   
- Die kopierten Elemente und Links werden serialisiert und in einem <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> \(EGP\) gespeichert, der in der Zwischenablage platziert wird.  
+ Die kopierten Elemente und Links werden serialisiert und in einem <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> (EGP) gespeichert, der in der Zwischenablage platziert wird.  
   
  Ein Bild der kopierten Elemente wird ebenfalls in die Zwischenablage aufgenommen. Dies ermöglicht das Einfügen in andere Anwendungen wie Word.  
   
- Der Benutzer kann kopierte Elemente in ein Ziel einfügen, das gemäß DSL\-Definition die Elemente akzeptiert. In einer DSL, die aus der Projektmappenvorlage "Komponenten" generiert wurde, kann der Benutzer beispielsweise Ports in Komponenten einfügen, nicht aber in das Diagramm. Und er kann Komponenten in das Diagramm einfügen, nicht aber in andere Komponenten.  
+ Der Benutzer kann kopierte Elemente in ein Ziel einfügen, das gemäß DSL-Definition die Elemente akzeptiert. In einer DSL, die aus der Projektmappenvorlage "Komponenten" generiert wurde, kann der Benutzer beispielsweise Ports in Komponenten einfügen, nicht aber in das Diagramm. Und er kann Komponenten in das Diagramm einfügen, nicht aber in andere Komponenten.  
   
-## Anpassen des Verhaltens beim Kopieren und Einfügen  
- Weitere Informationen zum Anpassen des Modells mit Programmcode finden Sie unter [Navigieren in und Aktualisieren von Modellen im Programmcode](../modeling/navigating-and-updating-a-model-in-program-code.md).  
+## <a name="customizing-copy-and-paste-behavior"></a>Anpassen des Verhaltens beim Kopieren und Einfügen  
+ Weitere Informationen zum Anpassen des Modells mithilfe von Programmcode finden Sie unter [Navigieren in und Aktualisieren eines Modells im Programmcode](../modeling/navigating-and-updating-a-model-in-program-code.md).  
   
- **Aktivieren oder deaktivieren Sie das Kopieren, Ausschneiden und Einfügen.**  
- Legen Sie im DSL\-Explorer die Eigenschaft **Kopieren\/Einfügen aktivieren** des Knotens **Editor** fest.  
+ **Aktivieren Sie oder deaktivieren Sie, kopieren, Ausschneiden und einfügen.**  
+ Legen Sie im Explorer für DSL, die **aktivieren Kopieren Einfügen** Eigenschaft von der **Editor** Knoten.  
   
- **Kopieren Sie Links zum gleichen Ziel.** Auf diese Weise können Sie beispielsweise ein kopiertes Kommentarfeld mit dem gleichen Betreffelement verknüpfen.  
- Legen Sie die Eigenschaft **Überträgt Kopie** der Rolle auf **Kopie nur an Link übertragen** fest. Weitere Informationen finden Sie unter [Anpassen des Verhaltens beim Kopieren von Links](#customizeLinks).  
+ **Kopieren Sie Links auf dasselbe Ziel an.** Beispielsweise haben eine kopierte Kommentarfeld verknüpft, mit dem gleichen Antragsteller-Element.  
+ Festlegen der **Kopie überträgt** Eigenschaft der Rolle, **weitergeben Kopie nur verknüpfen**. Weitere Informationen finden Sie unter [Verhalten beim Anpassen von Link kopieren](#customizeLinks).  
   
  Kopieren Sie verknüpfte Elemente. Wenn Sie ein neues Element kopieren, werden beispielsweise auch Kopien verknüpfter Kommentarfelder erstellt.  
- Legen Sie die Eigenschaft **Überträgt Kopie** der Rolle auf **Kopie an Link und Inhaber der Gegenrolle übertragen** fest. Weitere Informationen finden Sie unter [Anpassen des Verhaltens beim Kopieren von Links](#customizeLinks).  
+ Festlegen der **weitergibt Kopie** Eigenschaft der Rolle, **Kopie Link und der gegenüberliegende Rolleninhaber weitergegeben**. Weitere Informationen finden Sie unter [Verhalten beim Anpassen von Link kopieren](#customizeLinks).  
   
- **Duplizieren Sie Elemente schnell durch Kopieren und Einfügen.** Normalerweise ist das Element, das Sie gerade kopiert haben, noch ausgewählt, und Sie können nicht den gleichen Elementtyp darin einfügen.  
- Fügen Sie der Domänenklasse eine Direktive für Elementzusammenführungen hinzu, und legen Sie sie für vorwärts gerichtete Zusammenführungen in der übergeordneten Klasse fest. Dies hat die gleichen Auswirkungen auf Ziehvorgänge. Weitere Informationen finden Sie unter [Anpassen der Elementerstellung und \-verschiebung](../modeling/customizing-element-creation-and-movement.md).  
+ **Schnell doppelte Elemente durch Kopieren und Einfügen ein.** Klicken Sie in der Regel wird das Element, das Sie gerade kopiert haben weiterhin ausgewählt ist, und auf diesem Element desselben Typs können nicht eingefügt werden.  
+ Fügen Sie der Domänenklasse eine Direktive für Elementzusammenführungen hinzu, und legen Sie sie für vorwärts gerichtete Zusammenführungen in der übergeordneten Klasse fest. Dies hat die gleichen Auswirkungen auf Ziehvorgänge. Weitere Informationen finden Sie unter [Element erstellen anpassen und Bewegung](../modeling/customizing-element-creation-and-movement.md).  
   
- \- oder \-  
+ \- oder –  
   
- Wählen Sie vor dem Einfügen der Elemente das Diagramm aus, indem Sie `ClipboardCommandSet.ProcessOnPasteCommand()` überschreiben. Fügen Sie diesen Code in einer benutzerdefinierten Datei im DslPackage\-Projekt hinzu:  
+ Wählen Sie vor dem Einfügen der Elemente das Diagramm aus, indem Sie `ClipboardCommandSet.ProcessOnPasteCommand()` überschreiben. Fügen Sie diesen Code in einer benutzerdefinierten Datei im DslPackage-Projekt hinzu:  
   
-```c#  
+```csharp  
 namespace Company.MyDsl {  
 using System.Linq;  
 using Microsoft.VisualStudio.Modeling.Diagrams;   
@@ -74,25 +76,25 @@ partial class MyDslClipboardCommandSet
   
 ```  
   
- **Erstellen Sie weitere Links, wenn der Benutzer Einfügevorgänge im ausgewählten Ziel vornimmt.** Wenn beispielsweise ein Kommentarfeld in ein Element eingefügt wird, wird zwischen beiden ein Link erstellt.  
- Fügen Sie der Zieldomänenklasse eine Direktive für Elementzusammenführungen hinzu, und legen Sie für sie fest, dass die Zusammenführung durch Hinzufügen von Links verarbeitet wird. Dies hat die gleichen Auswirkungen auf Ziehvorgänge. Weitere Informationen finden Sie unter [Anpassen der Elementerstellung und \-verschiebung](../modeling/customizing-element-creation-and-movement.md).  
+ **Erstellen Sie weitere Links, wenn der Benutzer auf eine ausgewählte Ziel eingefügt.** Ein Kommentarfeld auf einem Element eingefügt wird, wird z. B. ein Link zwischen ihnen hinzugefügt.  
+ Fügen Sie der Zieldomänenklasse eine Direktive für Elementzusammenführungen hinzu, und legen Sie für sie fest, dass die Zusammenführung durch Hinzufügen von Links verarbeitet wird. Dies hat die gleichen Auswirkungen auf Ziehvorgänge. Weitere Informationen finden Sie unter [Element erstellen anpassen und Bewegung](../modeling/customizing-element-creation-and-movement.md).  
   
- \- oder \-  
+ \- oder –  
   
  Überschreiben Sie `ClipboardCommandSet.ProcessOnPasteCommand()`, um nach dem Aufruf der Basismethode weitere Links zu erstellen.  
   
- **Passen Sie die Formate an, in denen Elemente** in externe Anwendungen kopiert werden können, um beispielsweise der Bitmapform einen Rahmen hinzuzufügen.  
- Überschreiben Sie *MyDsl*`ClipboardCommandSet.ProcessOnMenuCopyCommand()` im DslPackage\-Projekt.  
+ **Anpassen der Formate, in dem Elemente kopiert werden** für externe Anwendungen – z. B. das Bitmap-Formular einen Rahmen hinzu.  
+ Überschreiben Sie *MyDsl* `ClipboardCommandSet.ProcessOnMenuCopyCommand()` im DslPackage-Projekt.  
   
- **Passen Sie an, wie Elemente mit dem Kopierbefehl in die Zwischenablage kopiert werden, aber nicht in einem Ziehvorgang.**  
- Überschreiben Sie *MyDsl*`ClipboardCommandSet.CopyModelElementsIntoElementGroupPrototype()` im DslPackage\-Projekt.  
+ **Passen Sie an, wie Elemente in die Zwischenablage kopiert werden durch den Kopierbefehl, jedoch nicht in einen Ziehvorgang.**  
+ Überschreiben Sie *MyDsl* `ClipboardCommandSet.CopyModelElementsIntoElementGroupPrototype()` im DslPackage-Projekt.  
   
- **Erhalten Sie das Formlayout beim Kopieren und Einfügen.**  
- Wenn der Benutzer mehrere Formen kopiert, können Sie deren relative Positionen beim Einfügen erhalten. Diese Technik wird mit dem Beispiel unter [VMSDK: Circuit Diagrams sample \(VMSDK: Schaltplanbeispiel, in englischer Sprache\)](http://go.microsoft.com/fwlink/?LinkId=213879) veranschaulicht.  
+ **Beibehalten Sie des Layouts einer Form durch Kopieren und fügen Sie.**  
+ Wenn der Benutzer mehrere Formen kopiert, können Sie deren relative Positionen beim Einfügen erhalten. Dieses Verfahren wird veranschaulicht, durch das Beispiel am [VMSDK: Schaltpläne Beispiel](http://go.microsoft.com/fwlink/?LinkId=213879).  
   
- Sie können diesen Effekt erreichen, indem Sie dem kopierten ElementGroupPrototype Formen und Konnektoren hinzufügen. Für das Überschreiben empfiehlt sich ElementOperations.CreateElementGroupPrototype\(\). Fügen Sie dem Dsl\-Projekt zu diesem Zweck den folgenden Code hinzu:  
+ Sie können diesen Effekt erreichen, indem Sie dem kopierten ElementGroupPrototype Formen und Konnektoren hinzufügen. Für das Überschreiben empfiehlt sich ElementOperations.CreateElementGroupPrototype(). Fügen Sie dem Dsl-Projekt zu diesem Zweck den folgenden Code hinzu:  
   
-```c#  
+```csharp  
   
 public class MyElementOperations : DesignSurfaceElementOperations  
 {  
@@ -144,12 +146,12 @@ partial class MyDslDiagram // EDIT NAME
   
 ```  
   
- **Fügen Sie Formen an einer ausgewählten Stelle ein, beispielsweise an der aktuelle Cursorposition.**  
- Wenn der Benutzer mehrere Formen kopiert, können Sie deren relative Positionen beim Einfügen erhalten. Diese Technik wird mit dem Beispiel unter [VMSDK: Circuit Diagrams sample \(VMSDK: Schaltplanbeispiel, in englischer Sprache\)](http://go.microsoft.com/fwlink/?LinkId=213879) veranschaulicht.  
+ **Einfügen von Shapes in einem ausgewählten Speicherort, z. B. der aktuellen Cursorposition.**  
+ Wenn der Benutzer mehrere Formen kopiert, können Sie deren relative Positionen beim Einfügen erhalten. Dieses Verfahren wird veranschaulicht, durch das Beispiel am [VMSDK: Schaltpläne Beispiel](http://go.microsoft.com/fwlink/?LinkId=213879).  
   
- Diesen Effekt erreichen Sie, indem Sie `ClipboardCommandSet.ProcessOnMenuPasteCommand()` überschreiben, sodass die positionsspezifische Version von `ElementOperations.Merge()` verwendet wird. Fügen Sie dem DslPackage\-Projekt zu diesem Zweck den folgenden Code hinzu:  
+ Diesen Effekt erreichen Sie, indem Sie `ClipboardCommandSet.ProcessOnMenuPasteCommand()` überschreiben, sodass die positionsspezifische Version von `ElementOperations.Merge()` verwendet wird. Fügen Sie dem DslPackage-Projekt zu diesem Zweck den folgenden Code hinzu:  
   
-```c#  
+```csharp  
   
 partial class MyDslClipboardCommandSet // EDIT NAME  
 {  
@@ -211,13 +213,13 @@ partial class MyDslClipboardCommandSet // EDIT NAME
   }  
 ```  
   
- **Lassen Sie den Benutzer Elemente ziehen und ablegen.**  
- Siehe [Gewusst wie: Hinzufügen eines Drag & Drop\-Handlers](../modeling/how-to-add-a-drag-and-drop-handler.md).  
+ **Ermöglichen Sie das Ziehen und Ablegen von Elementen.**  
+ Finden Sie unter [wie: Hinzufügen eines Drag-and-Drop-Ereignishandlers](../modeling/how-to-add-a-drag-and-drop-handler.md).  
   
-##  <a name="customizeLinks"></a> Anpassen des Verhaltens beim Kopieren von Links  
- Wenn der Benutzer ein Element kopiert, ist das Standardverhalten, dass etwaige eingebettete Elemente ebenfalls kopiert werden. Sie können das standardmäßige Kopierverhalten ändern. Wählen Sie in der DSL\-Definition eine Rolle auf einer Seite einer Beziehung aus, und legen Sie im Eigenschaftenfenster den Wert für **Überträgt Kopie** fest.  
+##  <a name="customizeLinks"></a>Anpassen des Verhaltens von Link kopieren  
+ Wenn der Benutzer ein Element kopiert, ist das Standardverhalten, dass etwaige eingebettete Elemente ebenfalls kopiert werden. Sie können das standardmäßige Kopierverhalten ändern. Wählen Sie in der DSL-Definition eine Rolle auf einer Seite einer Beziehung und Fenster in den Eigenschaften der **Kopie überträgt** Wert.  
   
- ![Überträgt die Eigenschaft einer Domänenrolle zum Kopieren](../modeling/media/dslpropagatescopy.png "DslPropagatesCopy")  
+ ![Gibt die Eigenschaft "Kopie" der Rolle "Domäne" Weiter](../modeling/media/dslpropagatescopy.png "DslPropagatesCopy")  
   
  Es gibt drei Werte:  
   
@@ -231,27 +233,27 @@ partial class MyDslClipboardCommandSet // EDIT NAME
   
  Die Änderungen, die Sie vornehmen, haben Auswirkungen auf die Elemente und das kopierte Bild.  
   
-## Programmieren des Verhaltens beim Kopieren und Einfügen  
- Viele Aspekte des DSL\-Verhaltens beim Kopieren, Einfügen, Erstellen und Löschen von Objekten werden von einer Instanz von <xref:Microsoft.VisualStudio.Modeling.ElementOperations> gesteuert, die mit dem Diagramm verknüpft ist. Sie können das DSL\-Verhalten ändern, indem Sie eine eigene Klasse von <xref:Microsoft.VisualStudio.Modeling.ElementOperations> ableiten und die Eigenschaft <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.ElementOperations%2A> Ihrer Diagrammklasse überschreiben.  
+## <a name="programming-copy-and-paste-behavior"></a>Programmieren des Verhaltens beim Kopieren und Einfügen  
+ Viele Aspekte einer DSL-Verhalten in Bezug auf Kopieren, einfügen, erstellen und Löschen von Objekten auf einer Instanz von unterliegen <xref:Microsoft.VisualStudio.Modeling.ElementOperations> , die dem Diagramm verknüpft ist. Sie können der DSL-Verhalten ändern, indem Sie eine eigene Klasse von ableiten <xref:Microsoft.VisualStudio.Modeling.ElementOperations> und überschreiben die <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.ElementOperations%2A> Eigenschaft der Diagramm-Klasse.  
   
 > [!TIP]
->  Weitere Informationen zum Anpassen des Modells mit Programmcode finden Sie unter [Navigieren in und Aktualisieren von Modellen im Programmcode](../modeling/navigating-and-updating-a-model-in-program-code.md).  
+>  Weitere Informationen zum Anpassen des Modells mithilfe von Programmcode finden Sie unter [Navigieren in und Aktualisieren eines Modells im Programmcode](../modeling/navigating-and-updating-a-model-in-program-code.md).  
   
- ![Sequenzdiagramm für den Kopiervorgang](../modeling/media/dslcopyseqdiagram.png "dslCopySeqDiagram")  
+ ![Sequenzdiagramm für den Kopiervorgang](../modeling/media/dslcopyseqdiagram.png "DslCopySeqDiagram")  
   
- ![Sequenzdiagramm für den Einfügevorgang](../modeling/media/dslpasteseqdiagram.png "dslPasteSeqDiagram")  
+ ![Sequenzdiagramm für den Einfügevorgang](../modeling/media/dslpasteseqdiagram.png "DslPasteSeqDiagram")  
   
-#### So definieren Sie eine eigene ElementOperations\-Klasse  
+#### <a name="to-define-your-own-elementoperations"></a>So definieren Sie eine eigene ElementOperations-Klasse  
   
-1.  Erstellen Sie in einer neuen Datei in Ihrem DSL\-Projekt eine Klasse, die von <xref:Microsoft.VisualStudio.Modeling.Diagrams.DesignSurfaceElementOperations> abgeleitet ist.  
+1.  Erstellen Sie in einer neuen Datei in Ihrem DSL-Projekt eine Klasse, die von <xref:Microsoft.VisualStudio.Modeling.Diagrams.DesignSurfaceElementOperations> abgeleitet ist.  
   
-2.  Fügen Sie eine partielle Klassendefinition für Ihre Diagrammklasse hinzu. Den Namen dieser Klasse finden Sie in **Dsl\\GeneratedCode\\Diagrams.cs**.  
+2.  Fügen Sie eine partielle Klassendefinition für Ihre Diagrammklasse hinzu. Der Name dieser Klasse finden Sie im **Dsl\GeneratedCode\Diagrams.cs**.  
   
-     Überschreiben Sie in der Diagrammklasse <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.ElementOperations%2A>, um eine Instanz Ihrer ElementOperations\-Unterklasse zurückzugeben. Sie sollten bei jedem Aufruf die gleiche Instanz zurückgeben.  
+     Überschreiben Sie in der Klasse Diagramm <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.ElementOperations%2A> zurückgeben eine Instanz des ElementOperations-Unterklasse. Sie sollten bei jedem Aufruf die gleiche Instanz zurückgeben.  
   
- Fügen Sie diesen Code in einer benutzerdefinierten Codedatei im DslPackage\-Projekt hinzu:  
+ Fügen Sie diesen Code in einer benutzerdefinierten Codedatei im DslPackage-Projekt hinzu:  
   
-```c#  
+```csharp  
   
 using Microsoft.VisualStudio.Modeling;  
 using Microsoft.VisualStudio.Modeling.Diagrams;  
@@ -283,21 +285,21 @@ using Microsoft.VisualStudio.Modeling.Diagrams.ExtensionEnablement;
   
 ```  
   
-## Empfangen von Elementen, die aus anderen Modellen gezogen wurden  
- Mit ElementOperations kann auch das Verhalten von Kopier\-, Verschiebe\-, Lösch\- und Drag & Drop\-Vorgängen definiert werden. Zur Veranschaulichung der Verwendung von ElementOperations wird im hier angegebenen Beispiel ein benutzerdefiniertes Drag & Drop\-Verhalten konfiguriert. Für diesen Zweck könnten Sie die unter [Gewusst wie: Hinzufügen eines Drag & Drop\-Handlers](../modeling/how-to-add-a-drag-and-drop-handler.md) beschriebene Alternativmethode in Betracht ziehen, die besser erweiterbar ist.  
+## <a name="receiving-items-dragged-from-other-models"></a>Empfangen von Elementen, die aus anderen Modellen gezogen wurden  
+ Mit ElementOperations kann auch das Verhalten von Kopier-, Verschiebe-, Lösch- und Drag & Drop-Vorgängen definiert werden. Zur Veranschaulichung der Verwendung von ElementOperations wird im hier angegebenen Beispiel ein benutzerdefiniertes Drag & Drop-Verhalten konfiguriert. Jedoch zu diesem Zweck Sie ggf. einen anderen Ansatz bietet, die in beschriebenen [wie: Hinzufügen eines Drag-and-Drop-Ereignishandlers](../modeling/how-to-add-a-drag-and-drop-handler.md), mehr erweiterbar ist.  
   
- Definieren Sie zwei Methoden in Ihrer ElementOperations\-Klasse:  
+ Definieren Sie zwei Methoden in Ihrer ElementOperations-Klasse:  
   
 -   `CanMerge(ModelElement targetElement, System.Windows.Forms.IDataObject data)` bestimmt, ob das Quellelement auf die Zielform, den Zielkonnektor oder das Zieldiagramm gezogen werden kann.  
   
 -   `MergeElementGroupPrototype(ModelElement targetElement, ElementGroupPrototype sourcePrototype)` kombiniert das Quellelement im Ziel.  
   
-### CanMerge\(\)  
- `CanMerge()` wird aufgerufen, um Feedback für den Benutzer festzulegen, wenn er die Maus über das Diagramm bewegt. Die Parameter der Methode sind die Elemente, über die die Maus bewegt wird, sowie die Daten zur Quelle, aus der der Ziehvorgang durchgeführt wurde. Der Benutzer kann von überall auf dem Bildschirm ziehen. Daher kann das Quellobjekt viele verschiedene Typen aufweisen und in unterschiedlichen Formaten serialisiert werden. Wenn die Quelle ein DSL\- oder UML\-Modell ist, ist der Datenparameter die Serialisierung von <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype>. Zieh\-, Kopier\- und Toolboxvorgänge verwenden ElementGroupPrototypes zur Darstellung von Fragmenten von Modellen.  
+### <a name="canmerge"></a>CanMerge()  
+ `CanMerge()` wird aufgerufen, um Feedback für den Benutzer festzulegen, wenn er die Maus über das Diagramm bewegt. Die Parameter der Methode sind die Elemente, über die die Maus bewegt wird, sowie die Daten zur Quelle, aus der der Ziehvorgang durchgeführt wurde. Der Benutzer kann von überall auf dem Bildschirm ziehen. Daher kann das Quellobjekt viele verschiedene Typen aufweisen und in unterschiedlichen Formaten serialisiert werden. Wenn die Quelle ein DSL- oder UML-Modell ist, ist der Datenparameter die Serialisierung von <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype>. Zieh-, Kopier- und Toolboxvorgänge verwenden ElementGroupPrototypes zur Darstellung von Fragmenten von Modellen.  
   
- Ein Elementgruppenprototyp kann eine beliebige Anzahl von Elementen und Links enthalten. Elementtypen können anhand ihrer GUIDs identifiziert werden. Die GUID ist die Form, die gezogen wurde, und nicht das zugrunde liegende Modellelement. Im folgenden Beispiel gibt `CanMerge()` "true" zurück, wenn eine Klassenform aus einem UML\-Diagramm in dieses Diagramm gezogen wird.  
+ Ein Elementgruppenprototyp kann eine beliebige Anzahl von Elementen und Links enthalten. Elementtypen können anhand ihrer GUIDs identifiziert werden. Die GUID ist die Form, die gezogen wurde, und nicht das zugrunde liegende Modellelement. Im folgenden Beispiel gibt `CanMerge()` "true" zurück, wenn eine Klassenform aus einem UML-Diagramm in dieses Diagramm gezogen wird.  
   
-```c#  
+```csharp  
 public override bool CanMerge(ModelElement targetShape, System.Windows.Forms.IDataObject data)  
  {  
   // Extract the element prototype from the data.  
@@ -313,10 +315,10 @@ public override bool CanMerge(ModelElement targetShape, System.Windows.Forms.IDa
   
 ```  
   
-## MergeElementGroupPrototype\(\)  
+## <a name="mergeelementgroupprototype"></a>MergeElementGroupPrototype()  
  Diese Methode wird aufgerufen, wenn der Benutzer ein Element auf einem Diagramm, einer Form oder einem Konnektor ablegt. Sie sollte den gezogenen Inhalt im Zielelement zusammenführen. In diesem Beispiel bestimmt der Code, ob die Kombination der Typen des Ziels und des Prototyps erkannt wird. Falls ja, konvertiert die Methode die gezogenen Elemente in einen Prototyp der Elemente, die dem Modell hinzugefügt werden sollen. Die Basismethode wird aufgerufen, um die Zusammenführung der konvertieren oder nicht konvertieren Elemente vorzunehmen.  
   
-```c#  
+```csharp  
 public override void MergeElementGroupPrototype(ModelElement targetShape, ElementGroupPrototype sourcePrototype)  
 {  
   ElementGroupPrototype prototypeToMerge = sourcePrototype;  
@@ -331,9 +333,9 @@ public override void MergeElementGroupPrototype(ModelElement targetShape, Elemen
   
 ```  
   
- In diesem Beispiel werden UML\-Klassenelemente verarbeitet, die aus einem UML\-Klassendiagramm gezogen werden. Die DSL ist nicht dafür vorgesehen, UML\-Klassen direkt zu speichern. Stattdessen wird für jede gezogene UML\-Klasse ein DSL\-Element erstellt. Dies ist z. B. dann nützlich, wenn die DSL ein Instanzendiagramm ist. Der Benutzer könnte Klassen auf das Diagramm ziehen, um Instanzen dieser Klassen zu erstellen.  
+ In diesem Beispiel werden UML-Klassenelemente verarbeitet, die aus einem UML-Klassendiagramm gezogen werden. Die DSL ist nicht dafür vorgesehen, UML-Klassen direkt zu speichern. Stattdessen wird für jede gezogene UML-Klasse ein DSL-Element erstellt. Dies ist z. B. dann nützlich, wenn die DSL ein Instanzendiagramm ist. Der Benutzer könnte Klassen auf das Diagramm ziehen, um Instanzen dieser Klassen zu erstellen.  
   
-```c#  
+```csharp  
   
 private ElementGroupPrototype ConvertDraggedTypeToLocal (MyTargetShape snapshot, ElementGroupPrototype prototype)  
 {  
@@ -369,14 +371,14 @@ private ElementGroupPrototype ConvertDraggedTypeToLocal (MyTargetShape snapshot,
   
 ```  
   
-## Standardmäßiges Kopierverhalten  
+## <a name="standard-copy-behavior"></a>Standardmäßiges Kopierverhalten  
  Der Code in diesem Abschnitt veranschaulicht Methoden, die Sie überschreiben können, um das Kopierverhalten zu ändern. Um Ihnen zu zeigen, wie Sie eigene Anpassungen erreichen, wird in diesem Abschnitt Code dargestellt, mit dem die an Kopiervorgängen beteiligten Methoden überschrieben werden. Das Standardverhalten wird jedoch nicht geändert.  
   
- Wenn der Benutzer STRG\+C drückt oder den Menübefehl "Kopieren" verwendet, wird die Methode <xref:Microsoft.VisualStudio.Modeling.Shell.ClipboardCommandSet.ProcessOnMenuCopyCommand%2A> aufgerufen. Diese Konfiguration wird in **DslPackage\\Generated Code\\CommandSet.cs** veranschaulicht. Weitere Informationen zum Konfigurieren von Befehlen finden Sie unter [Gewusst wie: Hinzufügen eines Befehls zum Kontextmenü](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).  
+ Wenn der Benutzer STRG+C drückt oder den Menübefehl "Kopieren" verwendet, wird die Methode <xref:Microsoft.VisualStudio.Modeling.Shell.ClipboardCommandSet.ProcessOnMenuCopyCommand%2A> aufgerufen. Sie können sehen, wie dies in eingerichtet wird **DslPackage\Generated Code\CommandSet.cs**. Weitere Informationen dazu, wie die Befehle sind einrichten, finden Sie unter [wie: Hinzufügen eines Befehls zum Kontextmenü](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).  
   
- Sie können ProcessOnMenuCopyCommand überschreiben, indem Sie eine partielle Klassendefinition von *MyDsl*`ClipboardCommandSet` im DslPackage\-Projekt hinzufügen.  
+ Sie können ProcessOnMenuCopyCommand überschreiben, indem Sie eine partielle Klassendefinition hinzufügen *MyDsl* `ClipboardCommandSet` im DslPackage-Projekt.  
   
-```c#  
+```csharp  
 using System.Collections.Generic;  
 using System.Drawing;  
 using System.Windows.Forms;  
@@ -388,7 +390,7 @@ partial class MyDslClipboardCommandSet
   /// <summary>  
   /// Override ProcessOnMenuCopyCommand() to copy elements to the  
   /// clipboard in different formats, or to perform additional tasks  
-  /// before or after copying – for example deselect the copied elements.  
+  /// before or after copying - for example deselect the copied elements.  
   /// </summary>  
   protected override void ProcessOnMenuCopyCommand()  
   {  
@@ -439,9 +441,9 @@ protected override void CopyModelElementsIntoElementGroupPrototype(IDataObject d
 }  
 ```  
   
- Jedes Diagramm weist eine Singleton\-Instanz von ElementOperations auf. Sie können eigene Ableitungen bereitstellen. Diese Datei, die in das DSL\-Projekt aufgenommen werden kann, verhält sich wie der Code, den sie überschreibt:  
+ Jedes Diagramm weist eine Singleton-Instanz von ElementOperations auf. Sie können eigene Ableitungen bereitstellen. Diese Datei, die in das DSL-Projekt aufgenommen werden kann, verhält sich wie der Code, den sie überschreibt:  
   
-```c#  
+```csharp  
 using System;  
 using System.Collections.Generic;  
 using System.Linq;  
@@ -560,8 +562,11 @@ namespace Company.MyDsl
   
 ```  
   
-## Siehe auch  
- [Anpassen der Elementerstellung und \-verschiebung](../modeling/customizing-element-creation-and-movement.md)   
- [Gewusst wie: Hinzufügen eines Drag & Drop\-Handlers](../modeling/how-to-add-a-drag-and-drop-handler.md)   
- [Anpassen des Löschverhaltens](../modeling/customizing-deletion-behavior.md)   
- [VMSDK Circuit Diagrams sample \(VMSDK: Schaltplanbeispiel, in englischer Sprache\)](http://go.microsoft.com/fwlink/?LinkId=213879)
+## <a name="see-also"></a>Siehe auch  
+ [Anpassen von Element erstellen und verschieben](../modeling/customizing-element-creation-and-movement.md)   
+ [Vorgehensweise: Hinzufügen eines Drag-and-Drop-Ereignishandlers](../modeling/how-to-add-a-drag-and-drop-handler.md)   
+ [Anpassen des Verhaltens löschen](../modeling/customizing-deletion-behavior.md)   
+ [: Beispiel VMSDK Schaltpläne](http://go.microsoft.com/fwlink/?LinkId=213879)
+ 
+[!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
+ 

@@ -1,119 +1,119 @@
 ---
-title: "FRAMEINFO | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "FRAMEINFO"
-helpviewer_keywords: 
-  - "FRAMEINFO-Struktur"
+title: FRAMEINFO | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: FRAMEINFO
+helpviewer_keywords: FRAMEINFO structure
 ms.assetid: 95001b89-dddb-45bb-889d-8327994e38a5
-caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 31f87c5261db32e19c9382d4d9cd95f4081cbe19
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# FRAMEINFO
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Beschreibt einen Stapelrahmen.  
+# <a name="frameinfo"></a>FRAMEINFO
+Beschreibt einen Stapelrahmen entspricht.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-typedef struct tagFRAMEINFO {   
-   FRAMEINFO_FLAGS    m_dwValidFields;  
-   BSTR               m_bstrFuncName;  
-   BSTR               m_bstrReturnType;  
-   BSTR               m_bstrArgs;  
-   BSTR               m_bstrLanguage;  
-   BSTR               m_bstrModule;  
-   UINT64             m_addrMin;  
-   UINT64             m_addrMax;  
-   IDebugStackFrame2* m_pFrame;  
-   IDebugModule2*     m_pModule;  
-   BOOL               m_fHasDebugInfo;  
-   BOOL               m_fStaleCode;  
-   BOOL               m_fAnnotatedFrame;  
+```cpp  
+typedef struct tagFRAMEINFO {   
+   FRAMEINFO_FLAGS    m_dwValidFields;  
+   BSTR               m_bstrFuncName;  
+   BSTR               m_bstrReturnType;  
+   BSTR               m_bstrArgs;  
+   BSTR               m_bstrLanguage;  
+   BSTR               m_bstrModule;  
+   UINT64             m_addrMin;  
+   UINT64             m_addrMax;  
+   IDebugStackFrame2* m_pFrame;  
+   IDebugModule2*     m_pModule;  
+   BOOL               m_fHasDebugInfo;  
+   BOOL               m_fStaleCode;  
+   BOOL               m_fAnnotatedFrame;  
 } FRAMEINFO;  
 ```  
   
-```c#  
-public struct FRAMEINFO {   
-   public uint              m_dwValidFields;  
-   public string            m_bstrFuncName;  
-   public string            m_bstrReturnType;  
-   public string            m_bstrArgs;  
-   public string            m_bstrLanguage;  
-   public string            m_bstrModule;  
-   public ulong             m_addrMin;  
-   public ulong             m_addrMax;  
-   public IDebugStackFrame2 m_pFrame;  
-   public IDebugModule2     m_pModule;  
-   public int               m_fHasDebugInfo;  
-   public int               m_fStaleCode;  
-   public int               m_fAnnotatedFrame;  
+```csharp  
+public struct FRAMEINFO {   
+   public uint              m_dwValidFields;  
+   public string            m_bstrFuncName;  
+   public string            m_bstrReturnType;  
+   public string            m_bstrArgs;  
+   public string            m_bstrLanguage;  
+   public string            m_bstrModule;  
+   public ulong             m_addrMin;  
+   public ulong             m_addrMax;  
+   public IDebugStackFrame2 m_pFrame;  
+   public IDebugModule2     m_pModule;  
+   public int               m_fHasDebugInfo;  
+   public int               m_fStaleCode;  
+   public int               m_fAnnotatedFrame;  
 } FRAMEINFO;  
 ```  
   
-## Mitglieder  
- m\_dwValidFields  
- Eine Kombination von Flags aus der [FRAMEINFO\_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md)\-Enumeration, die angibt, welche Felder aufgefüllt werden.  
+## <a name="members"></a>Member  
+ m_dwValidFields  
+ Eine Kombination aus Flags aus der [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) -Enumeration, der angibt, welche Felder ausgefüllt werden.  
   
- m\_bstrFuncName  
- Der Funktionsname, die dem Stapelrahmen.  
+ m_bstrFuncName  
+ Der Funktionsname, die dem Stapelrahmen zugeordnet wird.  
   
- m\_bstrReturnType  
- Der Rückgabetyp dem Stapelrahmen zugeordnet ist.  
+ m_bstrReturnType  
+ Der Rückgabetyp des Stapelrahmens zugeordnet.  
   
- m\_bstrArgs  
- Die Argumente für die Funktion, die dem Stapelrahmen.  
+ m_bstrArgs  
+ Die Argumente der Funktion, die dem Stapelrahmen zugeordnet.  
   
- m\_bstrLanguage  
+ m_bstrLanguage  
  Die Sprache, in der die Funktion implementiert wird.  
   
- m\_bstrModule  
- Der Modulname dem Stapelrahmen zugeordnet ist.  
+ m_bstrModule  
+ Der Modulname der Stapelrahmen zugeordnet.  
   
- m\_addrMin  
- Die minimale physische Stapeladresse.  
+ m_addrMin  
+ Die minimale physischen Stapel-Adresse.  
   
- m\_addrMAX  
- Die maximale physikalische Stapeladresse.  
+ m_addrMAX  
+ Die maximale physischen Stapel-Adresse.  
   
- m\_pFrame  
- Das [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)\-Objekt, das diesen Stapelrahmen darstellt.  
+ m_pFrame  
+ Die [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) Objekt, das diesem Stapelrahmen darstellt.  
   
- m\_pFrame  
- Das [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md)\-Objekt, das das Modul darstellt, die diesen Stapelrahmen enthält.  
+ m_pFrame  
+ Die [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md) -Objekt, das das Modul darstellt, das diesem Stapelrahmen enthält.  
   
- m\_fHasDebugInfo  
- Ein Wert ungleich 0 \(`TRUE`\), wenn Debuginformationen in den angegebenen Rahmen vorhanden sind.  
+ m_fHasDebugInfo  
+ Ungleich 0 (`TRUE`) wenn Debuginformationen im angegebenen Bereich vorhanden ist.  
   
- m\_fHasDebugInfo  
- Ein Wert ungleich 0 \(`TRUE`\) Wenn der Stapelrahmen mit dem Code zugeordnet ist, der nicht mehr gültig ist.  
+ m_fHasDebugInfo  
+ Ungleich 0 (`TRUE`) Wenn der Stapelrahmen Code zugeordnet ist, die nicht mehr gültig ist.  
   
- m\_fHasDebugInfo  
- Ein Wert ungleich 0 \(`TRUE`\) Wenn der Stapelrahmen vom Manager der Sitzung Debuggen \(SDM\) mit Anmerkungen versehen wird.  
+ m_fHasDebugInfo  
+ Ungleich 0 (`TRUE`) Wenn der Stapelrahmen vom Sitzung Debug-Manager (SDM) mit Anmerkungen versehen wird.  
   
-## Hinweise  
- Diese Struktur wird auf die gefüllt werden soll [GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md)\-Methode übergeben.  Diese Struktur wird ebenfalls in einer Liste enthalten, auf die in der [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md)\-Schnittstelle enthalten ist, die wiederum von einem Aufruf der [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)\-Methode zurückgegeben wird.  
+## <a name="remarks"></a>Hinweise  
+ Diese Struktur wird zum Übergeben der [GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md) Methode ausgefüllt werden. Diese Struktur ist auch in eine Liste der im enthaltene enthalten die [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md) -Schnittstelle, die wiederum von einem Aufruf zurückgegeben wird das [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) Methode.  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  Header: msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Strukturen und Unions](../../../extensibility/debugger/reference/structures-and-unions.md)   
- [FRAMEINFO\_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md)   
+ [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md)   
  [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)   
  [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md)   
  [GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md)   

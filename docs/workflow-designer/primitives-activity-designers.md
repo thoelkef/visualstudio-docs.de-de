@@ -1,37 +1,41 @@
 ---
-title: "Primitive Aktivit&#228;tsdesigner | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "Primitive Aktivitätsdesigner | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 ms.assetid: 0a2b613e-dc04-49a1-a787-caec2ec63b90
-caps.latest.revision: 7
-author: "ErikRe"
-ms.author: "erikre"
-manager: "erikre"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: ErikRe
+ms.author: erikre
+manager: erikre
+ms.openlocfilehash: d8f4c4763d40583f02aa97eaea066db5de2a7479
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# Primitive Aktivit&#228;tsdesigner
-Primitives\-Aktivitätsdesigner werden verwendet, um verschiedene Aktivitäten im <xref:System.Activities.Statement>\-Namespace zu erstellen und zu konfigurieren, z. B. "Assign" und "Delay".Die in diesem Abschnitt enthaltenen Themen bieten eine Anleitung zur Verwendung der [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)]\-Aktivitäts\- und Vorlagendesigner.  
+# <a name="primitives-activity-designers"></a>Primitive Aktivitätsdesigner
+Primitive Aktivitätsdesigner werden verwendet, um verschiedene Aktivitäten im <xref:System.Activities.Statements>-Namespace zu erstellen und zu konfigurieren, z. B. Assign und Delay. Die Themen in diesem Abschnitt enthalten Anleitungen zur Verwendung der [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)]-Aktivitäts- und Vorlagen-Designer.  
   
-## In diesem Abschnitt  
- [Assign](../workflow-designer/assign-activity-designer.md)  
- Wird verwendet, um eine <xref:System.Activities.Statements.Assign>\-Aktivität zu erstellen und zu konfigurieren.  
+## <a name="in-this-section"></a>In diesem Abschnitt  
+ [Zuweisen](../workflow-designer/assign-activity-designer.md)  
+ Dient zum Erstellen und Konfigurieren einer <xref:System.Activities.Statements.Assign>-Aktivität.  
   
- [Delay](../workflow-designer/delay-activity-designer.md)  
- Wird verwendet, um eine <xref:System.Activities.Statements.Delay>\-Aktivität zu erstellen und zu konfigurieren.  
+ [Verzögerung](../workflow-designer/delay-activity-designer.md)  
+ Dient zum Erstellen und Konfigurieren einer <xref:System.Activities.Statements.Delay>-Aktivität.  
   
  [InvokeMethod](../workflow-designer/invokemethod-activity-designer.md)  
- Wird verwendet, um eine <xref:System.Activities.Statements.InvokeMethod>\-Aktivität zu erstellen und zu konfigurieren.  
+ Dient zum Erstellen und Konfigurieren einer <xref:System.Activities.Statements.InvokeMethod>-Aktivität.  
   
  [WriteLine](../workflow-designer/writeline-activity-designer.md)  
- Wird verwendet, um eine <xref:System.Activities.Statements.WriteLine>\-Aktivität zu erstellen und zu konfigurieren.  
+ Dient zum Erstellen und Konfigurieren einer <xref:System.Activities.Statements.WriteLine>-Aktivität.  
   
-## Referenz  
+## <a name="reference"></a>Verweis  
   
-## Verwandte Abschnitte  
+## <a name="related-sections"></a>Verwandte Abschnitte  
  [Ablaufsteuerung](../workflow-designer/control-flow-activity-designers.md)  
   
  [Flussdiagramm](../workflow-designer/flowchart-activity-designers.md)  
@@ -46,5 +50,5 @@ Primitives\-Aktivitätsdesigner werden verwendet, um verschiedene Aktivitäten i
   
  [Fehlerbehandlung](../workflow-designer/error-handling-activity-designers.md)  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Verwenden der Aktivitätsdesigner](../workflow-designer/using-the-activity-designers.md)

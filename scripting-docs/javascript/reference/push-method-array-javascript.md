@@ -1,55 +1,56 @@
 ---
-title: "push-Methode (Array) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "push"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "Push-Methode"
+title: Push-Methode (Array) (JavaScript) | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: push
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords: Push method
 ms.assetid: fa6e5799-dabe-4b3d-bd1f-0afc68c77134
-caps.latest.revision: 15
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 15
+caps.latest.revision: "15"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: ddb49f310eaff51fe9e9ba584281fdf07bc2e818
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# push-Methode (Array) (JavaScript)
+# <a name="push-method-array-javascript"></a>push-Methode (Array) (JavaScript)
 Fügt neue Elemente an ein Array an und gibt die neue Länge des Arrays zurück.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
   
 arrayObj.push([item1 [item2 [. . . [itemN ]]]])  
 ```  
   
-## Parameter  
+## <a name="parameters"></a>Parameter  
  `arrayObj`  
- Erforderlich.  Ein `Array`\-Objekt.  
+ Erforderlich. Ein `Array`-Objekt.  
   
  `item, item2,. . ., itemN`  
- Optional.  Neue Elemente von dem `Array`.  
+ Dies ist optional. Neue Elemente, die von der `Array`.  
   
-## Hinweise  
- Die `push`\-Methode und die `pop`\-Methode ermöglichen Ihnen, einen LIFO\-Stack \(last in, first out\) zu simulieren.  
+## <a name="remarks"></a>Hinweise  
+ Die `push` und `pop` Methoden ermöglichen es Ihnen, eine letzte in, out Stapel zuerst zu simulieren.  
   
- Die `push`\-Methode fügt Elemente in der Reihenfolge hinzu, in der sie auftreten.  Wenn eines der Argumente ein Array ist, wird es als einzelnes Element hinzugefügt.  Mit der `concat`\-Methode können Sie Elemente von zwei oder mehr Arrays verknüpfen.  
+ Die `push` Methode fügt Elemente in der Reihenfolge, in der sie angezeigt werden. Wenn eines der Argumente ein Array ist, wird es als ein einzelnes Element hinzugefügt. Verwenden der `concat` Methode, um die Elemente von zwei oder mehr Arrays zu verknüpfen.  
   
-## Beispiel  
- Im folgenden Beispiel wird die Verwendung der `push`\-Methode veranschaulicht.  
+## <a name="example"></a>Beispiel  
+ Im folgenden Beispiel wird die Verwendung der `push`-Methode veranschaulicht.  
   
-```javascript  
+```JavaScript  
 var number;  
 var my_array = new Array();  
   
@@ -67,9 +68,9 @@ while (number != undefined)
 // 9 8 7 6 5  
 ```  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  [!INCLUDE[jsv55](../../javascript/reference/includes/jsv55-md.md)]  
   
-## Siehe auch  
- [concat\-Methode \(Array\)](../../javascript/reference/concat-method-array-javascript.md)   
- [pop\-Methode \(Array\)](../../javascript/reference/pop-method-array-javascript.md)
+## <a name="see-also"></a>Siehe auch  
+ [Concat-Methode (Array)](../../javascript/reference/concat-method-array-javascript.md)   
+ [pop-Methode (Array)](../../javascript/reference/pop-method-array-javascript.md)

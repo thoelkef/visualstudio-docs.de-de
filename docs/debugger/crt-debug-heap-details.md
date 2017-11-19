@@ -1,89 +1,89 @@
 ---
-title: "Details zum CRT-Debugheap | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "C++"
-helpviewer_keywords: 
-  - "_BLOCK_SUBTYPE-Makro"
-  - "_BLOCK_TYPE-Makro"
-  - "_CLIENT_BLOCK-Makro"
-  - "_CRT_BLOCK-Makro"
-  - "_crtBreakAlloc (globale Variable)"
-  - "_CrtCheckMemory-Funktion"
-  - "_CRTDBG_ALLOC_MEM_DF-Makro"
-  - "_CRTDBG_CHECK_ALWAYS_DF-Makro"
-  - "_CRTDBG_CHECK_CRT_DF-Makro"
-  - "_CRTDBG_DELAY_FREE_MEM_DF-Makro"
-  - "_CRTDBG_LEAK_CHECK_DF-Makro"
-  - "_crtDbgFlag-Funktion"
-  - "_CrtDoForAllClientObjects-Funktion"
-  - "_CrtDumpMemoryLeaks-Funktion"
-  - "_CrtMemBlockHeader-Funktion"
-  - "_CrtMemCheckpoint-Funktion"
-  - "_CrtMemDifference-Funktion"
-  - "_CrtMemDumpAllObjectsSince-Funktion"
-  - "_CrtMemDumpStatistics-Funktion"
-  - "_CrtMemState-Funktion"
-  - "_CrtReportBlockType-Funktion"
-  - "_CrtSetBreakAlloc-Funktion"
-  - "_CrtSetDbgFlag-Funktion"
-  - "_CrtSetDumpClient-Funktion"
-  - "_FREE_BLOCK-Block"
-  - "_IGNORE_BLOCK-Block"
-  - "_NORMAL_BLOCK-Block"
-  - "Reservierungsanforderungsnummern"
-  - "Blöcke, Typen auf dem Debugheap"
-  - "Clientblöcke, Angeben von Untertypen"
-  - "crtBreakAlloc (globale Variable)"
-  - "DBGINT.H (Datei)"
-  - "Debugbuilds, Verknüpfen zum Debuggen eines Heaps"
-  - "Debugheap"
-  - "Debugheap, Aufrufen"
-  - "Debugheap, CRT"
-  - "Debugheap, Speicherblöcke"
-  - "Debugheap, Berichtsfunktionen"
-  - "Debugheap, Lösen von Speicherreservierungsproblemen"
-  - "Debugheap, Rückverfolgen von Heapreservierungsanforderungen"
-  - "Debugheap, Verwendung von C++"
-  - "Debuggen [C++], CRT-Debugunterstützung"
-  - "Debuggen [C++], Debugheap"
-  - "Debuggen [CRT], Heapbezogene Probleme"
-  - "Debuggen [Visual Studio], Debugheap"
-  - "Debuggen von Speicherverlusten"
-  - "delete-Operator, Verwenden des Debugheaps in C++"
-  - "Heapzuordnung, Debug"
-  - "Heapzuordnung, Rückverfolgen von Anforderungen"
-  - "Heapfunktionen"
-  - "Berichtsfunktionen für den Heapzustand"
-  - "Speicherreservierung, Debugheap"
-  - "Speicherblöcke, Reservierungstypen im Debugheap"
-  - "Speicherblöcke, Frei"
-  - "Speicherverluste, CRT-Debugbibliotheksfunktionen"
-  - "Speicherverluste, Verfolgen"
-  - "Speicher, Debuggen"
-  - "nBlockUse-Methode"
-  - "new-Operator, Verwenden des Debugheaps in C++"
+title: CRT Debug Heap Details | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+helpviewer_keywords:
+- debug heap, accessing
+- heap functions
+- _CRTDBG_CHECK_ALWAYS_DF macro
+- _CrtMemDumpStatistics function
+- debugging [C++], debug heap
+- _CRT_BLOCK macro
+- DBGINT.H file
+- _CrtMemDumpAllObjectsSince function
+- _crtBreakAlloc global variable
+- _CrtMemState function
+- _CLIENT_BLOCK macro
+- _FREE_BLOCK block
+- _CrtMemBlockHeader function
+- heap state reporting functions
+- _CRTDBG_ALLOC_MEM_DF macro
+- _CrtSetBreakAlloc function
+- memory blocks, allocation types on debug heap
+- debugging [C++], CRT debug support
+- debug heap, tracking heap allocation requests
+- memory allocation, debug heap
+- _NORMAL_BLOCK block
+- crtBreakAlloc global variable
+- _CrtDoForAllClientObjects function
+- new operator, using debug heap from C++
+- _CrtSetDumpClient function
+- debugging [CRT], heap-related problems
+- debug heap, solving memory allocation problems
+- _CrtMemCheckpoint function
+- debug builds, linking to debug heap
+- _IGNORE_BLOCK block
+- _crtDbgFlag function
+- client blocks, specifying subtypes
+- memory leaks, tracking
+- _CrtSetDbgFlag function
+- nBlockUse method
+- memory leaks, CRT debug library functions
+- _CRTDBG_DELAY_FREE_MEM_DF macro
+- allocation request numbers
+- _CRTDBG_LEAK_CHECK_DF macro
+- debug heap
+- memory, debugging
+- _CrtReportBlockType function
+- _CrtDumpMemoryLeaks function
+- _CrtCheckMemory function
+- debug heap, CRT
+- memory blocks, free
+- _BLOCK_TYPE macro
+- debug heap, memory blocks
+- heap allocation, debug
+- debugging memory leaks
+- _BLOCK_SUBTYPE macro
+- debug heap, using from C++
+- _CrtMemDifference function
+- heap allocation, tracking requests
+- debugging [Visual Studio], debug heap
+- delete operator, using debug heap from C++
+- blocks, types of on the debug heap
+- _CRTDBG_CHECK_CRT_DF macro
+- debug heap, reporting functions
 ms.assetid: bf78ace6-28e4-4a04-97c6-39e0cdd00ba4
-caps.latest.revision: 19
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 19
+caps.latest.revision: "19"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 947da9ccdbf67a71edfaa122de8861912a9e9596
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Details zum CRT-Debugheap
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="crt-debug-heap-details"></a>Details zum CRT-Debugheap
 Dieses Thema umfasst eine detaillierte Erläuterung des CRT‑Debugheaps.  
   
 ##  <a name="BKMK_Contents"></a> Inhalt  
@@ -91,24 +91,24 @@ Dieses Thema umfasst eine detaillierte Erläuterung des CRT‑Debugheaps.
   
  [Blocktypen auf dem Debugheap](#BKMK_Types_of_blocks_on_the_debug_heap)  
   
- [Überprüfen auf Heapintegrität und Speicherverluste](#BKMK_Check_for_heap_integrity_and_memory_leaks)  
+ [Überprüfen Sie auf Heapintegrität und Speicherverluste](#BKMK_Check_for_heap_integrity_and_memory_leaks)  
   
  [Konfigurieren des Debugheap](#BKMK_Configure_the_debug_heap)  
   
- [Neu, Löschen und _CLIENT_BLOCKs im C++-Debugheap](#BKMK_new__delete__and__CLIENT_BLOCKs_in_the_C___debug_heap)  
+ [neue Debugheap löschen und _CLIENT_BLOCKs im C++](#BKMK_new__delete__and__CLIENT_BLOCKs_in_the_C___debug_heap)  
   
- [Berichtsfunktionen für den Heapzustand](#BKMK_Heap_State_Reporting_Functions)  
+ [Für den Heapzustand](#BKMK_Heap_State_Reporting_Functions)  
   
- [Nachverfolgen von Heapzuweisungsanforderungen](#BKMK_Track_Heap_Allocation_Requests)  
+ [Nachverfolgen von Heapreservierungsanforderungen](#BKMK_Track_Heap_Allocation_Requests)  
   
-##  <a name="BKMK_Find_buffer_overruns_with_debug_heap"></a> Suchen von Pufferüberläufen mit Debugheap  
- Zwei der geläufigsten und hartnäckigsten Probleme, denen sich Programmierer immer wieder gegenüber sehen, ist das Überschreiben eines reservierten Pufferendes und Speicherverluste \(wobei die Freigabe der nicht mehr benötigten Belegung fehlschlägt\).  Der Debugheap stellt leistungsfähige Tools bereit, die derartige Speicherbelegungsprobleme beheben helfen.  
+##  <a name="BKMK_Find_buffer_overruns_with_debug_heap"></a>Suchen von Pufferüberläufen mit Debugheap  
+ Zwei der geläufigsten und hartnäckigsten Probleme, denen sich Programmierer immer wieder gegenüber sehen, ist das Überschreiben eines reservierten Pufferendes und Speicherverluste (wobei die Freigabe der nicht mehr benötigten Belegung fehlschlägt). Der Debugheap stellt leistungsfähige Tools bereit, die derartige Speicherbelegungsprobleme beheben helfen.  
   
- Durch die Debugversionen der Heapfunktionen wird die Standard\- oder Basisversion aufgerufen, die in Releasebuilds verwendet wird.  Wenn Sie einen Speicherblock anfordern, belegt der Debugheap\-Manager auf dem Basisheap einen Speicherblock, der geringfügig größer als der angeforderte ist, und gibt einen Zeiger auf den jeweiligen Bereich des Blocks zurück.  Angenommen, die Anwendung enthält den `malloc( 10 )`\-Aufruf.  In einem Releasebuild wird von [malloc](/visual-cpp/c-runtime-library/reference/malloc) die Reservierungsroutine für den Basisheap aufgerufen und eine Reservierung von 10 Bytes angefordert.  In einem Debugbuild wird von `malloc` jedoch [\_malloc\_dbg](/visual-cpp/c-runtime-library/reference/malloc-dbg) aufgerufen. Dieser ruft anschließend die Reservierungsroutine für den Basisheap auf und fordert eine Reservierung von 10 Bytes sowie etwa 36 Bytes an zusätzlichem Arbeitsspeicher an.  Alle resultierenden Speicherblöcke im Debugheap werden über eine einzelne verknüpfte Liste verbunden und sind nach ihrem Reservierungszeitpunkt angeordnet.  
+ Durch die Debugversionen der Heapfunktionen wird die Standard- oder Basisversion aufgerufen, die in Releasebuilds verwendet wird. Wenn Sie einen Speicherblock anfordern, belegt der Debugheap-Manager auf dem Basisheap einen Speicherblock, der geringfügig größer als der angeforderte ist, und gibt einen Zeiger auf den jeweiligen Bereich des Blocks zurück. Angenommen, die Anwendung enthält den `malloc( 10 )`-Aufruf. In einem Releasebuild ["malloc"](/cpp/c-runtime-library/reference/malloc) würde eine Reservierung von 10 Bytes anfordern Basisheap Zuweisung Routine aufrufen. In einem Debugbuild jedoch `malloc` aufrufen würde [_malloc_dbg](/cpp/c-runtime-library/reference/malloc-dbg), die aufrufen würde dann der Basisheap Zuweisung Routine eine Reservierung von 10 Bytes sowie etwa 36 Bytes zusätzlicher Speicher angefordert. Alle resultierenden Speicherblöcke im Debugheap werden über eine einzelne verknüpfte Liste verbunden und sind nach ihrem Reservierungszeitpunkt angeordnet.  
   
  Der durch die Debugheaproutinen belegte Zusatzspeicher wird wie folgt verwendet: für Verwaltungsinformationen, für Zeiger, die die Debugspeicherblöcke verknüpfen, und für kleine Puffer auf beiden Seiten der Daten, um Überschreibungen des reservierten Bereichs abzufangen.  
   
- Derzeit ist die zum Speichern der Debugheap\-Verwaltungsinformationen verwendete Blockheaderstruktur wie folgt in der Headerdatei **DBGINT.H** deklariert:  
+ Derzeit ist die zum Speichern der Debugheap-Verwaltungsinformationen verwendete Blockheaderstruktur wie folgt in der Headerdatei DBGINT.H deklariert:  
   
 ```  
 typedef struct _CrtMemBlockHeader  
@@ -133,92 +133,94 @@ typedef struct _CrtMemBlockHeader
  */  
 ```  
   
- Die  \-Puffer auf beiden Seiten des Benutzerdatenbereichs belegen derzeit je 4 Bytes. Sie enthalten einen definierten Bytewert, mit dessen Hilfe die Debugheaproutinen sicherstellen, dass die Grenzen des belegten Benutzerspeicherblocks nicht überschrieben wurden.  Der Debugheap schreibt zusätzlich einen definierten Wert in neue Speicherblöcke.  Wenn Sie freigegebene Blöcke, wie nachstehend beschrieben, in der verknüpften Heapliste belassen möchten, erhalten diese ebenfalls einen definierten Wert.  Derzeit werden die folgenden Bytewerte verwendet:  
+ Die `NoMansLand` Puffer auf beiden Seiten der Datenbereich des Blocks Benutzer sind derzeit 4 Byte lang und mit einem definierten Bytewert, der durch die debugheaproutinen verwendet, um sicherzustellen, dass die Grenzwerte des Speicherblocks des Benutzers nicht überschrieben wurden aufgefüllt werden. Der Debugheap schreibt zusätzlich einen definierten Wert in neue Speicherblöcke. Wenn Sie freigegebene Blöcke, wie nachstehend beschrieben, in der verknüpften Heapliste belassen möchten, erhalten diese ebenfalls einen definierten Wert. Derzeit werden die folgenden Bytewerte verwendet:  
   
- NoMansLand \(0xFD\)  
- Die "NoMansLand"\-Puffer auf beiden Seiten des von der Anwendung verwendeten Speichers enthalten derzeit den Wert 0xFD.  
+ NoMansLand (0xFD)  
+ Die "NoMansLand"-Puffer auf beiden Seiten des von der Anwendung verwendeten Speichers enthalten derzeit den Wert 0xFD.  
   
- Freigegebene Blöcke \(0xDD\)  
- Die freigegebenen Blöcke, die in der verknüpften Heapliste unbenutzt bleiben, wenn das `_CRTDBG_DELAY_FREE_MEM_DF`\-Flag festgelegt ist, enthalten derzeit den Wert 0xDD.  
+ Freigegebene Blöcke (0xDD)  
+ Die freigegebenen Blöcke, die in der verknüpften Heapliste unbenutzt bleiben, wenn das `_CRTDBG_DELAY_FREE_MEM_DF`-Flag festgelegt ist, enthalten derzeit den Wert 0xDD.  
   
- Neue Objekte \(0xCD\)  
+ Neue Objekte (0xCD)  
  Neue Objekte werden bei der Reservierung mit 0xCD beschrieben.  
   
- ![Zurück nach oben](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Inhalt](#BKMK_Contents)  
+ ![Zurück nach oben](../debugger/media/pcs_backtotop.png "PCS_BackToTop")  
   
-##  <a name="BKMK_Types_of_blocks_on_the_debug_heap"></a> Blocktypen auf dem Debugheap  
- Jeder Speicherblock im Debugheap hat einen von fünf möglichen Reservierungstypen.  Die Typen werden abhängig von der jeweiligen Aufgabe, z. B. Erkennung von Speicherverlusten und Erstellung von Zustandsberichten, auf unterschiedliche Weise nachverfolgt und ausgegeben.  Sie legen den Blocktyp fest, indem Sie ihn durch den direkten Aufruf der Debugheapreservierungsfunktion, z. B. [\_malloc\_dbg](/visual-cpp/c-runtime-library/reference/malloc-dbg), reservieren.  Es gibt die folgenden fünf Speicherblocktypen im Debugheap \(sie werden im **nBlockUse**\-Member der **\_CrtMemBlockHeader**\-Struktur festgelegt\):  
+ ![Zurück nach oben](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [Inhalt](#BKMK_Contents)  
   
- **\_NORMAL\_BLOCK**  
- Durch einen Aufruf von [malloc](/visual-cpp/c-runtime-library/reference/malloc) oder [calloc](/visual-cpp/c-runtime-library/reference/calloc) wird ein normaler Block erstellt.  Wenn Sie ausschließlich normale Blöcke verwenden möchten und keine Clientblöcke benötigen, können Sie [\_CRTDBG\_MAP\_ALLOC](/visual-cpp/c-runtime-library/crtdbg-map-alloc) definieren, wodurch alle Heapreservierungsaufrufe ihren Debugäquivalenten in Debugbuilds zugeordnet werden.  Auf diese Weise können die Dateinamen und Zeilennummern zu jedem Reservierungsaufruf im entsprechenden Blockheader gespeichert werden.  
+##  <a name="BKMK_Types_of_blocks_on_the_debug_heap"></a>Blocktypen auf dem Debugheap  
+ Jeder Speicherblock im Debugheap hat einen von fünf möglichen Reservierungstypen. Die Typen werden abhängig von der jeweiligen Aufgabe, z. B. Erkennung von Speicherverlusten und Erstellung von Zustandsberichten, auf unterschiedliche Weise nachverfolgt und ausgegeben. Sie können Blocktyp angeben, indem Sie die Zuordnung mit einem direkten Aufruf der Debugheapreservierungsfunktion wie [_malloc_dbg](/cpp/c-runtime-library/reference/malloc-dbg). Die fünf Typen von Speicherblöcke im Debugheap (festgelegt der **nBlockUse** Mitglied der **_CrtMemBlockHeader** Struktur) lauten wie folgt:  
+  
+ **_NORMAL_BLOCK**  
+ Ein Aufruf von ["malloc"](/cpp/c-runtime-library/reference/malloc) oder [Calloc](/cpp/c-runtime-library/reference/calloc) einen normalen Block erstellt. Wenn Sie beabsichtigen, die ausschließlich normale Blöcke verwenden und keine Clientblöcke benötigen, sollten Sie definieren [_CRTDBG_MAP_ALLOC](/cpp/c-runtime-library/crtdbg-map-alloc), die alle Heapreservierungsaufrufe ihren Debugäquivalenten in Debugbuilds zugeordnet werden. Auf diese Weise können die Dateinamen und Zeilennummern zu jedem Reservierungsaufruf im entsprechenden Blockheader gespeichert werden.  
   
  `_CRT_BLOCK`  
- Die Speicherblöcke, die intern von zahlreichen Laufzeitbibliotheksfunktionen reserviert werden, sind als CRT\-Blöcke gekennzeichnet und können daher gesondert behandelt werden.  So haben sie auf die Erkennung von Speicherverlusten und andere Operationen u. U. keinen Einfluss.  CRT\-Blöcke werden zu keiner Zeit durch eine Reservierungsoperation zugeordnet, erneut reserviert oder freigegeben.  
+ Die Speicherblöcke, die intern von zahlreichen Laufzeitbibliotheksfunktionen reserviert werden, sind als CRT-Blöcke gekennzeichnet und können daher gesondert behandelt werden. So haben sie auf die Erkennung von Speicherverlusten und andere Operationen u. U. keinen Einfluss. CRT-Blöcke werden zu keiner Zeit durch eine Reservierungsoperation zugeordnet, erneut reserviert oder freigegeben.  
   
  `_CLIENT_BLOCK`  
- Eine Anwendung kann eine bestimmte Reservierungsgruppe zu Debugzwecken auf besondere Weise nachverfolgen, indem sie diese unter Verwendung expliziter Debugheap\-Funktionsaufrufe als Speicherblöcke eines bestimmten Typs reserviert.  Beispielsweise reserviert MFC alle **CObjects** als Clientblöcke, während andere Anwendungen andere Speicherobjekte in Clientblöcken verwalten können.  Um die Nachverfolgung feiner abzustufen, können auch Untertypen von Clientblöcken definiert werden.  Untertypen von Clientblöcken werden festgelegt, indem Sie die Zahl um 16 Bits nach links verschieben und eine `OR`\-Operation mit `_CLIENT_BLOCK` ausführen.  Beispiel:  
+ Eine Anwendung kann eine bestimmte Reservierungsgruppe zu Debugzwecken auf besondere Weise nachverfolgen, indem sie diese unter Verwendung expliziter Debugheap-Funktionsaufrufe als Speicherblöcke eines bestimmten Typs reserviert. Beispielsweise reserviert MFC alle **CObjects** als Clientblöcke, möglicherweise andere Anwendungen andere Speicherobjekte in Clientblöcken beibehalten. Um die Nachverfolgung feiner abzustufen, können auch Untertypen von Clientblöcken definiert werden. Untertypen von Clientblöcken werden festgelegt, indem Sie die Zahl um 16 Bits nach links verschieben und eine `OR`-Operation mit `_CLIENT_BLOCK` ausführen. Zum Beispiel:  
   
 ```  
 #define MYSUBTYPE 4  
 freedbg(pbData, _CLIENT_BLOCK|(MYSUBTYPE<<16));  
 ```  
   
- Eine vom Client bereitgestellte Hookfunktion zum Ausgeben der in Clientblöcken gespeicherten Objekte kann mithilfe von [\_CrtSetDumpClient](/visual-cpp/c-runtime-library/reference/crtsetdumpclient) installiert werden. Sie wird immer dann aufgerufen, wenn ein Clientblock durch eine Debugfunktion als Dump ausgegeben wird.  Auch [\_CrtDoForAllClientObjects](/visual-cpp/c-runtime-library/reference/crtdoforallclientobjects) kann dazu verwendet werden, eine bestimmte Funktion der Anwendung für jeden Clientblock im Debugheap aufzurufen.  
+ Eine Client bereitgestellte Hookfunktion zum Ausgeben der in Clientblöcken gespeicherten Objekte kann installiert werden, mithilfe von [_CrtSetDumpClient](/cpp/c-runtime-library/reference/crtsetdumpclient), und wird dann aufgerufen, wenn ein Clientblock durch eine Debugfunktion als Dump ausgegeben wird. Darüber hinaus [_CrtDoForAllClientObjects](/cpp/c-runtime-library/reference/crtdoforallclientobjects) können verwendet werden, um eine bestimmte Funktion von der Anwendung für jeden Clientblock im Debugheap aufzurufen.  
   
- **\_FREE\_BLOCK**  
- Normalerweise werden freigegebene Blöcke aus der Liste entfernt.  Wenn Sie jedoch überprüfen möchten, ob weiterhin in freigegebene Blöcke geschrieben wird, oder wenn Sie Speichermangel simulieren möchten, können Sie die freigegebenen Blöcke auch weiterhin in der verknüpften Liste belassen. Diese Blöcke werden dann als freigegeben gekennzeichnet und mit einem definierten Bytewert \(derzeit 0xDD\) gefüllt.  
+ **_FREE_BLOCK**  
+ Normalerweise werden freigegebene Blöcke aus der Liste entfernt. Wenn Sie jedoch überprüfen möchten, ob weiterhin in freigegebene Blöcke geschrieben wird, oder wenn Sie Speichermangel simulieren möchten, können Sie die freigegebenen Blöcke auch weiterhin in der verknüpften Liste belassen. Diese Blöcke werden dann als freigegeben gekennzeichnet und mit einem definierten Bytewert (derzeit 0xDD) gefüllt.  
   
- **\_IGNORE\_BLOCK**  
- Es ist möglich, Debugheapoperationen zeitweilig zu deaktivieren.  In diesem Zeitraum werden die Speicherblöcke zwar in der Liste geführt, aber als ignorierte Blöcke gekennzeichnet.  
+ **_IGNORE_BLOCK**  
+ Es ist möglich, Debugheapoperationen zeitweilig zu deaktivieren. In diesem Zeitraum werden die Speicherblöcke zwar in der Liste geführt, aber als ignorierte Blöcke gekennzeichnet.  
   
- Um den Typ und Untertyp eines bestimmten Blocks zu bestimmen, verwenden Sie die [\_CrtReportBlockType](/visual-cpp/c-runtime-library/reference/crtreportblocktype)\-Funktion sowie die Makros **\_BLOCK\_TYPE** und **\_BLOCK\_SUBTYPE**.  Die Makros sind wie folgt \(in **crtdbg.h**\) definiert:  
+ Um den Typ und Untertyp eines bestimmten Blocks zu bestimmen, verwenden Sie die Funktion [_CrtReportBlockType](/cpp/c-runtime-library/reference/crtreportblocktype) sowie die Makros **_BLOCK_TYPE** und **_BLOCK_SUBTYPE**. Die Makros sind wie folgt (in crtdbg.h) definiert:  
   
 ```  
 #define _BLOCK_TYPE(block)          (block & 0xFFFF)  
 #define _BLOCK_SUBTYPE(block)       (block >> 16 & 0xFFFF)  
 ```  
   
- ![Zurück nach oben](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Inhalt](#BKMK_Contents)  
+ ![Zurück nach oben](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [Inhalt](#BKMK_Contents)  
   
-##  <a name="BKMK_Check_for_heap_integrity_and_memory_leaks"></a> Überprüfen auf Heapintegrität und Speicherverluste  
- Auf viele Features des Debugheaps muss über den Code zugegriffen werden.  Im folgenden Abschnitt werden einige Features und ihre Verwendung beschrieben.  
+##  <a name="BKMK_Check_for_heap_integrity_and_memory_leaks"></a>Überprüfen Sie auf Heapintegrität und Speicherverluste  
+ Auf viele Funktionen des Debugheaps muss über den Code zugegriffen werden. Im folgenden Abschnitt werden einige Funktionen und ihre Verwendung beschrieben.  
   
  `_CrtCheckMemory`  
- Die Heapintegrität kann beispielsweise jederzeit mit einem Aufruf von [\_CrtCheckMemory](/visual-cpp/c-runtime-library/reference/crtcheckmemory) überprüft werden.  Diese Funktion liest jeden Speicherblock im Heap, überprüft die Headerinformationen im Speicherblock auf ihre Gültigkeit und bestätigt, dass die Puffer nicht geändert wurden.  
+ Sie können einen Aufruf von [_CrtCheckMemory](/cpp/c-runtime-library/reference/crtcheckmemory), z. B. die Heapintegrität jederzeit zu überprüfen. Diese Funktion liest jeden Speicherblock im Heap, überprüft die Headerinformationen im Speicherblock auf ihre Gültigkeit und bestätigt, dass die Puffer nicht geändert wurden.  
   
  `_CrtSetDbgFlag`  
- Mit dem internen [\_crtDbgFlag](/visual-cpp/c-runtime-library/crtdbgflag)\-Flag kann gesteuert werden, wie Reservierungen vom Debugheap nachverfolgt werden. Das Flag kann mit der [\_CrtSetDbgFlag](/visual-cpp/c-runtime-library/reference/crtsetdbgflag)\-Funktion gelesen und festgelegt werden.  Indem Sie dieses Flag ändern, können Sie den Debugheap anweisen, beim Beenden des Programms mögliche Speicherverluste zu ermitteln und ggf. einen Speicherverlustbericht auszugeben.  Entsprechend können Sie festlegen, dass freigegebene Speicherblöcke nicht aus der verknüpften Liste entfernt werden, um beispielsweise Speichermangel zu simulieren.  Beim Überprüfen des Heaps werden die freigegebenen Blöcke insgesamt kontrolliert, um sicherzustellen, dass sie nicht behindert wurden.  
+ Sie können steuern, wie der Debugheap ein internes Flag, mit der nachverfolgt [_crtDbgFlag](/cpp/c-runtime-library/crtdbgflag), gelesen und festgelegt werden können die [_CrtSetDbgFlag](/cpp/c-runtime-library/reference/crtsetdbgflag) Funktion. Indem Sie dieses Flag ändern, können Sie den Debugheap anweisen, beim Beenden des Programms mögliche Speicherverluste zu ermitteln und ggf. einen Speicherverlustbericht auszugeben. Entsprechend können Sie festlegen, dass freigegebene Speicherblöcke nicht aus der verknüpften Liste entfernt werden, um beispielsweise Speichermangel zu simulieren. Beim Überprüfen des Heaps werden die freigegebenen Blöcke insgesamt kontrolliert, um sicherzustellen, dass sie nicht behindert wurden.  
   
- Das **\_crtDbgFlag**\-Flag enthält die folgenden Bitfelder:  
+ Die **_crtDbgFlag** Flag enthält die folgenden Bitfelder:  
   
-|Bitfeld|Default<br /><br /> Wert|Beschreibung|  
-|-------------|----------------------|------------------|  
-|**\_CRTDBG\_ALLOC\_MEM\_DF**|On|Aktiviert die Debugreservierung.  Wenn dieses Bit deaktiviert ist, bleiben die reservierten Blöcke weiterhin verknüpft, ihr Blocktyp wird jedoch zu **\_IGNORE\_BLOCK**.|  
-|**\_CRTDBG\_DELAY\_FREE\_MEM\_DF**|Off|Verhindert die Freigabe von Speicher, um beispielsweise Speichermangel zu simulieren.  Wenn dieses Bit aktiviert ist, werden die freigegebenen Blöcke weiterhin in der verknüpften Liste verwaltet, jedoch als **\_FREE\_BLOCK** gekennzeichnet und mit einem definierten Bytewert gefüllt.|  
-|**\_CRTDBG\_CHECK\_ALWAYS\_DF**|Off|Bewirkt den Aufruf von **\_CrtCheckMemory** bei jeder Speicherbelegung und jedem Aufheben der Speicherbelegung.  Dies verlangsamt zwar die Ausführung, beschleunigt aber die Fehlersuche.|  
-|**\_CRTDBG\_CHECK\_CRT\_DF**|Off|Bewirkt, dass Blöcke vom Typ **\_CRT\_BLOCK** in Operationen, die Speicherverluste und unterschiedliche Zustände feststellen sollen, eingeschlossen werden.  Wenn dieses Bit deaktiviert ist, wird der von der Laufzeitbibliothek intern verwendete Speicher während solcher Operationen ignoriert.|  
-|**\_CRTDBG\_LEAK\_CHECK\_DF**|Off|Bewirkt, dass Überprüfungen auf Speicherverluste beim Beenden des Programms durch einen **\_CrtDumpMemoryLeaks**\-Aufruf durchgeführt werden.  Wenn die Anwendung nicht den gesamten belegten Speicher freigeben konnte, wird ein Fehlerbericht generiert.|  
+|Bitfeld|Standard<br /><br /> Wert|Beschreibung|  
+|---------------|-----------------------|-----------------|  
+|**_CRTDBG_ALLOC_MEM_DF**|Ein|Aktiviert die Debugreservierung. Wenn dieses Bit deaktiviert ist, bleiben die miteinander verkettet werden, aber ihr Blocktyp wird **_IGNORE_BLOCK**.|  
+|**_CRTDBG_DELAY_FREE_MEM_DF**|Aus|Verhindert die Freigabe von Speicher, um beispielsweise Speichermangel zu simulieren. Wenn dieses Bit aktiviert ist, freigegebene Blöcke in der verknüpften Heapliste beibehalten werden, jedoch werden als **_FREE_BLOCK** und mit einer speziellen Bytewert gefüllt.|  
+|**_CRTDBG_CHECK_ALWAYS_DF**|Aus|Bewirkt, dass **_CrtCheckMemory** bei jeder speicherbelegung und Aufhebung der Zuordnung aufgerufen werden. Dies verlangsamt zwar die Ausführung, beschleunigt aber die Fehlersuche.|  
+|**_CRTDBG_CHECK_CRT_DF**|Aus|Bewirkt, dass Blöcke vom Typ **_CRT_BLOCK** , bei der Erkennung von Speicherverlusten und Status Unterschied eingeschlossen werden sollen. Wenn dieses Bit deaktiviert ist, wird der von der Laufzeitbibliothek intern verwendete Speicher während solcher Operationen ignoriert.|  
+|**_CRTDBG_LEAK_CHECK_DF**|Aus|Bewirkt, dass Speicherverlust überprüft wird, beim Beenden des Programms über einen Aufruf an erfolgen **_CrtDumpMemoryLeaks**. Wenn die Anwendung nicht den gesamten belegten Speicher freigeben konnte, wird ein Fehlerbericht generiert.|  
   
- ![Zurück nach oben](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Inhalt](#BKMK_Contents)  
+ ![Zurück nach oben](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [Inhalt](#BKMK_Contents)  
   
-##  <a name="BKMK_Configure_the_debug_heap"></a> Konfigurieren des Debugheap  
- Alle Aufrufe an Heapfunktionen, wie z. B. `malloc`, `free`, `calloc`, `realloc`, `new` und `delete`, werden in die Debugversionen der Funktionen aufgelöst, die auf dem Debugheap arbeiten.  Wenn Sie einen Speicherblock freigeben, überprüft der Debugheap automatisch die Pufferintegrität auf beiden Seiten des reservierten Bereichs und erstellt einen Fehlerbericht, falls über den Puffer hinaus geschrieben wurde.  
+##  <a name="BKMK_Configure_the_debug_heap"></a>Konfigurieren des Debugheap  
+ Alle Aufrufe an Heapfunktionen, wie z. B. `malloc`, `free`, `calloc`, `realloc`, `new` und `delete`, werden in die Debugversionen der Funktionen aufgelöst, die auf dem Debugheap arbeiten. Wenn Sie einen Speicherblock freigeben, überprüft der Debugheap automatisch die Pufferintegrität auf beiden Seiten des reservierten Bereichs und erstellt einen Fehlerbericht, falls über den Puffer hinaus geschrieben wurde.  
   
- **So verwenden Sie den Debugheap**  
+ **Verwenden Sie den Debugheap**  
   
--   Verknüpfen Sie das Debugbuild der Anwendung mit einer Debugversion der C\-Laufzeitbibliothek.  
+-   Verknüpfen Sie das Debugbuild der Anwendung mit einer Debugversion der C-Laufzeitbibliothek.  
   
- **So ändern Sie eines oder mehrere \_crtDbgFlag\-Bitfelder sowie den Flagzustand**  
+ **Ändern eine oder mehrere _crtDbgFlag-Bitfelder und erstellen einen neuen Zustand für das flag**  
   
-1.  Rufen Sie `_CrtSetDbgFlag` auf, wobei der `newFlag`\-Parameter auf `_CRTDBG_REPORT_FLAG` festgelegt ist \(um den aktuellen `_crtDbgFlag`\-Zustand zu erhalten\), und speichern Sie den Rückgabewert in einer temporären Variablen.  
+1.  Rufen Sie `_CrtSetDbgFlag` auf, wobei der `newFlag`-Parameter auf `_CRTDBG_REPORT_FLAG` festgelegt ist (um den aktuellen `_crtDbgFlag`-Zustand zu erhalten), und speichern Sie den Rückgabewert in einer temporären Variablen.  
   
-2.  Aktivieren Sie die Bits durch eine `OR`\-Verknüpfung \(bitweises &#124;\-Symbol\) der temporären Variable mit den entsprechenden Bitmasken \(im Anwendungscode durch Manifestkonstanten dargestellt\).  
+2.  Aktivieren Sie Bits durch `OR`--Verknüpfung (bitweises &#124; Symbol) der temporären Variable mit den entsprechenden Bitmasken (im Anwendungscode durch Manifestkonstanten dargestellt).  
   
-3.  Deaktivieren Sie die anderen Bits durch eine `AND`\-Verknüpfung \(bitweises &\-Symbol\) der Variablen mit der `NOT`\-Negation \(bitweises ~\-Symbol\) der entsprechenden Bitmasks.  
+3.  Deaktivieren Sie die anderen Bits durch eine `AND`-Verknüpfung (bitweises &-Symbol) der Variablen mit der `NOT`-Negation (bitweises ~-Symbol) der entsprechenden Bitmasks.  
   
-4.  Rufen Sie `_CrtSetDbgFlag` auf, wobei der `newFlag`\-Parameter auf den in der temporären Variablen gespeicherten Wert festgelegt ist, um den neuen Zustand von `_crtDbgFlag` festzulegen.  
+4.  Rufen Sie `_CrtSetDbgFlag` auf, wobei der `newFlag`-Parameter auf den in der temporären Variablen gespeicherten Wert festgelegt ist, um den neuen Zustand von `_crtDbgFlag` festzulegen.  
   
- Beispielsweise wird durch die folgenden Codezeilen die automatische Überprüfung auf Speicherverluste aktiviert und die Überprüfung von `_CRT_BLOCK`\-Blöcken deaktiviert:  
+ Beispielsweise wird durch die folgenden Codezeilen die automatische Überprüfung auf Speicherverluste aktiviert und die Überprüfung von `_CRT_BLOCK`-Blöcken deaktiviert:  
   
 ```  
 // Get current flag  
@@ -234,10 +236,10 @@ tmpFlag &= ~_CRTDBG_CHECK_CRT_DF;
 _CrtSetDbgFlag( tmpFlag );  
 ```  
   
- ![Zurück nach oben](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Inhalt](#BKMK_Contents)  
+ ![Zurück nach oben](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [Inhalt](#BKMK_Contents)  
   
-##  <a name="BKMK_new__delete__and__CLIENT_BLOCKs_in_the_C___debug_heap"></a> Neu, Löschen und \_CLIENT\_BLOCKs im C\+\+\-Debugheap  
- Die Debugversionen der C\-Laufzeitbibliothek enthalten Debugversionen der `new`\- und `delete`\-C\+\+\-Operatoren.  Bei Verwendung des `_CLIENT_BLOCK`\-Zuweisungstyps müssen Sie die Debugversion des `new`\-Operators direkt aufrufen oder Makros erstellen, die den `new`\-Operator im Debugmodus ersetzen, wie im folgenden Beispiel dargestellt:  
+##  <a name="BKMK_new__delete__and__CLIENT_BLOCKs_in_the_C___debug_heap"></a>neue Debugheap löschen und _CLIENT_BLOCKs im C++  
+ Die Debugversionen der C-Laufzeitbibliothek enthalten Debugversionen der `new`- und `delete`-C++-Operatoren. Bei Verwendung des `_CLIENT_BLOCK`-Zuweisungstyps müssen Sie die Debugversion des `new`-Operators direkt aufrufen oder Makros erstellen, die den `new`-Operator im Debugmodus ersetzen, wie im folgenden Beispiel dargestellt:  
   
 ```  
 /* MyDbgNew.h  
@@ -272,12 +274,12 @@ int main( )   {
   
  Die Debugversion des Operators `delete` funktioniert mit allen Blocktypen und macht daher bei der Kompilierung einer Releaseversion keine Programmänderungen erforderlich.  
   
- ![Zurück nach oben](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Inhalt](#BKMK_Contents)  
+ ![Zurück nach oben](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [Inhalt](#BKMK_Contents)  
   
-##  <a name="BKMK_Heap_State_Reporting_Functions"></a> Berichtsfunktionen für den Heapzustand  
- **"\_CrtMemState"**  
+##  <a name="BKMK_Heap_State_Reporting_Functions"></a>Für den Heapzustand  
+ **_CrtMemState**  
   
- Um zu einem bestimmten Zeitpunkt eine zusammenfassende Momentaufnahme des Heapzustands aufzuzeichnen, verwenden Sie die in CRTDBG.H definierte \_CrtMemState\-Struktur:  
+ Um zu einem bestimmten Zeitpunkt eine zusammenfassende Momentaufnahme des Heapzustands aufzuzeichnen, verwenden Sie die in CRTDBG.H definierte _CrtMemState-Struktur:  
   
 ```  
 typedef struct _CrtMemState  
@@ -295,34 +297,34 @@ typedef struct _CrtMemState
 } _CrtMemState;  
 ```  
   
- Diese Struktur speichert einen Zeiger auf den ersten \(zuletzt reservierten\) Block in der verknüpften Heapliste.  Anschließend zeichnet sie in zwei Arrays auf, wie viele Speicherblöcke jedes Typs \(\_NORMAL\_BLOCK, `_CLIENT_BLOCK`, \_FREE\_BLOCK usw.\) sich in der Liste befinden und wie viele Bytes für jeden Blocktyp reserviert wurden.  Schließlich zeichnet die Struktur auf, wie viele Bytes bisher maximal gleichzeitig im Heap reserviert waren und wie viele Bytes momentan reserviert sind.  
+ Diese Struktur speichert einen Zeiger auf den ersten (zuletzt reservierten) Block in der verknüpften Heapliste. Anschließend zeichnet sie in zwei Arrays auf, wie viele Speicherblöcke jedes Typs (_NORMAL_BLOCK, `_CLIENT_BLOCK`, _FREE_BLOCK usw.) sich in der Liste befinden und wie viele Bytes für jeden Blocktyp reserviert wurden. Schließlich zeichnet die Struktur auf, wie viele Bytes bisher maximal gleichzeitig im Heap reserviert waren und wie viele Bytes momentan reserviert sind.  
   
  **Andere CRT‑Berichtsfunktionen**  
   
- Die folgenden Funktionen geben den Heapzustand und \-inhalt wieder. Diese Informationen werden verwendet, um Speicherverluste und andere Probleme zu erkennen.  
+ Die folgenden Funktionen geben den Heapzustand und -inhalt wieder. Diese Informationen werden verwendet, um Speicherverluste und andere Probleme zu erkennen.  
   
 |Funktion|Beschreibung|  
-|--------------|------------------|  
-|[\_CrtMemCheckpoint](/visual-cpp/c-runtime-library/reference/crtmemcheckpoint)|Speichert eine Heapmomentaufnahme in einer von der Anwendung bereitgestellten **\_CrtMemState**\-Struktur.|  
-|[\_CrtMemDifference](/visual-cpp/c-runtime-library/reference/crtmemdifference)|Vergleicht zwei Speicherzustandsstrukturen, speichert die Unterschiede in einer dritten Zustandsstruktur und gibt TRUE zurück, falls unterschiedliche Zustände festgestellt wurden.|  
-|[\_CrtMemDumpStatistics](/visual-cpp/c-runtime-library/reference/crtmemdumpstatistics)|Gibt eine bestimmte **\_CrtMemState**\-Struktur aus.  Die Struktur kann eine Zustandsmomentaufnahme des Debugheaps oder die Unterschiede zwischen zwei Momentaufnahmen enthalten.|  
-|[\_CrtMemDumpAllObjectsSince](/visual-cpp/c-runtime-library/reference/crtmemdumpallobjectssince)|Gibt Informationen zu allen Objekten aus, die seit einer bestimmten Heapmomentaufnahme oder seit Beginn der Ausführung reserviert wurden.  Bei jedem Dump eines **\_CLIENT\_BLOCK**\-Blocks wird eine von der Anwendung bereitgestellte Hookfunktion aufgerufen, falls eine solche mit **\_CrtSetDumpClient** installiert wurde.|  
-|[\_CrtDumpMemoryLeaks](/visual-cpp/c-runtime-library/reference/crtdumpmemoryleaks)|Stellt fest, ob seit dem Programmstart Speicherverluste aufgetreten sind, und gibt ggf. alle reservierten Objekte aus.  Wenn **\_CrtDumpMemoryLeaks** einen **\_CLIENT\_BLOCK**\-Block ausgibt, wird eine von der Anwendung bereitgestellte Hookfunktion aufgerufen, falls eine solche mit **\_CrtSetDumpClient** installiert wurde.|  
+|--------------|-----------------|  
+|[_CrtMemCheckpoint](/cpp/c-runtime-library/reference/crtmemcheckpoint)|Speichert eine Momentaufnahme des Heaps in einer **_CrtMemState** Struktur, die von der Anwendung bereitgestellt.|  
+|[_CrtMemDifference](/cpp/c-runtime-library/reference/crtmemdifference)|Vergleicht zwei Speicherzustandsstrukturen, speichert die Unterschiede in einer dritten Zustandsstruktur und gibt TRUE zurück, falls unterschiedliche Zustände festgestellt wurden.|  
+|[_CrtMemDumpStatistics](/cpp/c-runtime-library/reference/crtmemdumpstatistics)|Gibt einen bestimmten **_CrtMemState** Struktur. Die Struktur kann eine Zustandsmomentaufnahme des Debugheaps oder die Unterschiede zwischen zwei Momentaufnahmen enthalten.|  
+|[_CrtMemDumpAllObjectsSince](/cpp/c-runtime-library/reference/crtmemdumpallobjectssince)|Gibt Informationen zu allen Objekten aus, die seit einer bestimmten Heapmomentaufnahme oder seit Beginn der Ausführung reserviert wurden. Jedes Mal, wenn sie einen Dump erstellt eine **_CLIENT_BLOCK** blockieren, wird eine von der Anwendung bereitgestellte Hookfunktion aufgerufen, falls es sich bei einer mit installiert worden **_CrtSetDumpClient**.|  
+|[_CrtDumpMemoryLeaks](/cpp/c-runtime-library/reference/crtdumpmemoryleaks)|Stellt fest, ob seit dem Programmstart Speicherverluste aufgetreten sind, und gibt ggf. alle reservierten Objekte aus. Jedes Mal, wenn **_CrtDumpMemoryLeaks** sichert eine **_CLIENT_BLOCK** blockieren, wird eine von der Anwendung bereitgestellte Hookfunktion aufgerufen, falls es sich bei einer mit installiert worden **_CrtSetDumpClient**.|  
   
- ![Zurück nach oben](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Inhalt](#BKMK_Contents)  
+ ![Zurück nach oben](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [Inhalt](#BKMK_Contents)  
   
-##  <a name="BKMK_Track_Heap_Allocation_Requests"></a> Nachverfolgen von Heapzuweisungsanforderungen  
- Die Angabe des Quelldateinamens und der Zeilennummer, in der eine Assertion oder ein Berichtsmakro ausgeführt wird, ist häufig sehr nützlich, um die Fehlerursache festzustellen. Auf Heapreservierungsfunktionen trifft dies in der Regel jedoch nicht zu.  Makros können an vielen geeigneten Stellen in der logischen Struktur einer Anwendung eingefügt werden, während eine Reservierung meist in einer speziellen Routine verborgen wird, die zu unterschiedlichen Zeitpunkten von vielen verschiedenen Stellen aus aufgerufen wird.  Die Frage ist in der Regel nicht, welche Codezeile eine Fehlreservierung verursacht, sondern welche der vielen tausend Reservierungen durch diese Codezeile fehlerhaft waren und warum.  
+##  <a name="BKMK_Track_Heap_Allocation_Requests"></a>Nachverfolgen von Heapreservierungsanforderungen  
+ Die Angabe des Quelldateinamens und der Zeilennummer, in der eine Assertion oder ein Berichtsmakro ausgeführt wird, ist häufig sehr nützlich, um die Fehlerursache festzustellen. Auf Heapreservierungsfunktionen trifft dies in der Regel jedoch nicht zu. Makros können an vielen geeigneten Stellen in der logischen Struktur einer Anwendung eingefügt werden, während eine Reservierung meist in einer speziellen Routine verborgen wird, die zu unterschiedlichen Zeitpunkten von vielen verschiedenen Stellen aus aufgerufen wird. Die Frage ist in der Regel nicht, welche Codezeile eine Fehlreservierung verursacht, sondern welche der vielen tausend Reservierungen durch diese Codezeile fehlerhaft waren und warum.  
   
- **Eindeutige Reservierungsanforderungsnummern und "\_crtBreakAlloc"**  
+ **Eindeutige Reservierungsanforderungsnummern und "_crtBreakAlloc"**  
   
- Der gesuchte falsche Heapreservierungsaufruf lässt sich am besten feststellen, wenn man die eindeutige Reservierungsanforderungsnummer jedes Blocks im Debugheap berücksichtigt.  Wenn Blockinformationen über eine der Dumpfunktionen ausgegeben werden, wird die Reservierungsanforderungsnummer in geschweiften Klammern angezeigt \(z. B. "{36}"\).  
+ Der gesuchte falsche Heapreservierungsaufruf lässt sich am besten feststellen, wenn man die eindeutige Reservierungsanforderungsnummer jedes Blocks im Debugheap berücksichtigt. Wenn Blockinformationen über eine der Dumpfunktionen ausgegeben werden, wird die Reservierungsanforderungsnummer in geschweiften Klammern angezeigt (z. B. "{36}").  
   
- Wenn Sie die Reservierungsanforderungsnummer eines falsch reservierten Blocks kennen, können Sie diese Nummer an [\_CrtSetBreakAlloc](/visual-cpp/c-runtime-library/reference/crtsetbreakalloc) übergeben, um einen Haltepunkt zu erstellen.  Die Ausführung wird dann unmittelbar vor der Reservierung des betreffenden Blocks unterbrochen, und Sie können zurückverfolgen, welche Routine für den falschen Aufruf verantwortlich ist.  Um eine erneute Kompilierung zu vermeiden, können Sie im Debugger genauso verfahren, indem Sie **\_crtBreakAlloc** auf die gewünschte Reservierungsanforderungsnummer festlegen.  
+ Sobald Sie die Reservierungsanforderungsnummer eines falsch reservierten Blocks kennen, können übergeben Sie das-Zahl in [_CrtSetBreakAlloc](/cpp/c-runtime-library/reference/crtsetbreakalloc) um einen Haltepunkt zu erstellen. Die Ausführung wird dann unmittelbar vor der Reservierung des betreffenden Blocks unterbrochen, und Sie können zurückverfolgen, welche Routine für den falschen Aufruf verantwortlich ist. Um die erneute Kompilierung zu vermeiden, Sie können die gleiche Aufgabe im Debugger durch Festlegen von **_crtBreakAlloc** auf die Reservierungsanforderungsnummer, die Sie von Interesse sind.  
   
  **Erstellen von Debugversionen von Reservierungsroutinen**  
   
- Etwas komplizierter ist ein anderes Verfahren, bei dem Sie Debugversionen eigener Reservierungsroutinen erstellen. Diese sind vergleichbar mit den **\_dbg**\-Versionen der [Heapreservierungsfunktionen](../debugger/debug-versions-of-heap-allocation-functions.md).  Sie können dann den Quelldateinamen und die Zeilennummer als Argumente an die zugrunde liegenden Heapreservierungsroutinen übergeben und sofort den Ursprung einer Fehlreservierung feststellen.  
+ Etwas komplizierter ist, erstellen Sie Debugversionen eigener Reservierungsroutinen vergleichbar sein, um die **_dbg** -Versionen der [heap Zuordnungsfunktionen](../debugger/debug-versions-of-heap-allocation-functions.md). Sie können dann den Quelldateinamen und die Zeilennummer als Argumente an die zugrunde liegenden Heapreservierungsroutinen übergeben und sofort den Ursprung einer Fehlreservierung feststellen.  
   
  Angenommen, die Anwendung enthält eine häufig verwendete Routine, die etwa wie folgt aussieht:  
   
@@ -364,7 +366,7 @@ int addNewRecord(struct RecStruct *prevRecord,
   
  Nun werden der Quelldateiname und die Zeilennummer, in der `addNewRecord` aufgerufen wurde, in jedem dadurch reservierten Block im Debugheap gespeichert und beim Überprüfen des Blocks ausgegeben.  
   
- ![Zurück nach oben](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Inhalt](#BKMK_Contents)  
+ ![Zurück nach oben](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [Inhalt](#BKMK_Contents)  
   
-## Siehe auch  
- [Debuggen von systemeigenem Code](../debugger/debugging-native-code.md)
+## <a name="see-also"></a>Siehe auch  
+ [Debuggen von nativem Code](../debugger/debugging-native-code.md)

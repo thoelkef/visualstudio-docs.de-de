@@ -1,12 +1,10 @@
 ---
-title: 'How to: Read from and Write to Document Properties | Microsoft Docs'
+title: 'Vorgehensweise: Lesen und Schreiben in Dokumenteigenschaften | Microsoft Docs'
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -18,74 +16,77 @@ helpviewer_keywords:
 - document properties [Office development in Visual Studio]
 - Excel [Office development in Visual Studio], document properties
 ms.assetid: e9ef9fa3-36b9-48fb-8148-f5152463c03c
-caps.latest.revision: 54
-author: kempb
-ms.author: kempb
+caps.latest.revision: "54"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 8af86f91c6a2a7782ae6e02c482dfa8d76f91866
-ms.contentlocale: de-de
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: ca687f9482d65621ad848c2ca6459c6fe782f8ba
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="how-to-read-from-and-write-to-document-properties"></a>How to: Read from and Write to Document Properties
-  You can store document properties along with a document. Office applications provide a number of built-in properties, such as author, title, and subject. This topic shows how to set document properties in Microsoft Office Excel and Microsoft Office Word.  
+# <a name="how-to-read-from-and-write-to-document-properties"></a>Gewusst wie: Lesen von und Schreiben in Dokumenteigenschaften
+  Sie können Dokumenteigenschaften zusammen mit einem Dokument speichern. Office-Anwendungen stellen eine Reihe integrierter Eigenschaften (z. B. Autor, Titel und Betreff) bereit. In diesem Thema wird gezeigt, wie Dokumenteigenschaften in Microsoft Office Excel und Microsoft Office Word festgelegt werden.  
   
- ![link to video](../vsto/media/playvideo.gif "link to video") For a related video demonstration, see [How Do I: Access and Manipulate Custom Document Properties in Microsoft Word?](http://go.microsoft.com/fwlink/?LinkId=136772).  
+ ![Link zu Video](../vsto/media/playvideo.gif "Link zu Video") eine entsprechende Videodemo finden Sie unter [wie: Zugreifen auf und Bearbeiten von benutzerdefinierten Dokumenteigenschaften in Microsoft Word?](http://go.microsoft.com/fwlink/?LinkId=136772).  
   
  [!INCLUDE[appliesto_docprops](../vsto/includes/appliesto-docprops-md.md)]  
   
-## <a name="setting-document-properties-in-excel"></a>Setting Document Properties in Excel  
- To work with built-in properties in Excel, use the following properties:  
+## <a name="setting-document-properties-in-excel"></a>Festlegen von Dokumenteigenschaften in Excel  
+ Verwenden Sie die folgenden Eigenschaften, um in Excel mit integrierten Eigenschaften zu arbeiten:  
   
--   In a document-level project, use the <xref:Microsoft.Office.Tools.Excel.Workbook.BuiltinDocumentProperties%2A> property of the `ThisWorkbook` class.  
+-   In einem Projekt auf Dokumentebene verwenden Sie die Eigenschaft <xref:Microsoft.Office.Tools.Excel.Workbook.BuiltinDocumentProperties%2A> der Klasse `ThisWorkbook` .  
   
--   In a VSTO Add-in project, use the <xref:Microsoft.Office.Interop.Excel._Workbook.BuiltinDocumentProperties%2A> property of a <xref:Microsoft.Office.Interop.Excel.Workbook> object.  
+-   Verwenden Sie in einem VSTO-Add-In-Projekt die Eigenschaft <xref:Microsoft.Office.Interop.Excel._Workbook.BuiltinDocumentProperties%2A> eines <xref:Microsoft.Office.Interop.Excel.Workbook> -Objekts.  
   
- These properties return a <xref:Microsoft.Office.Core.DocumentProperties> object, which is a collection of <xref:Microsoft.Office.Core.DocumentProperty> objects. You can use the `Item` property of the collection to retrieve a particular property, either by name or by index within the collection.  
+ Diese Eigenschaften geben eine <xref:Microsoft.Office.Core.DocumentProperties> -Objekt zurück, das eine Auflistung von <xref:Microsoft.Office.Core.DocumentProperty> -Objekten ist. Sie können die Eigenschaft `Item` der Auflistung verwenden, um eine bestimmte Eigenschaft nach Name oder Index in der Auflistung abzurufen.  
   
- The following code example shows how to change the built-in **Revision Number** property in a document-level project.  
+ Im folgenden Codebeispiel wird veranschaulicht, wie die integrierte Eigenschaft **Revision Number** in einem Projekt auf Dokumentebene geändert wird.  
   
-#### <a name="to-change-the-revision-number-property-in-excel"></a>To change the Revision Number property in Excel  
+#### <a name="to-change-the-revision-number-property-in-excel"></a>So ändern Sie die Eigenschaft "Revisionsnummer" in Excel  
   
-1.  Assign the built-in document properties to a variable.  
+1.  Weisen Sie die integrierten Eigenschaften einer Variablen zu.  
   
-     [!code-vb[Trin_VstcoreProgramming#7](../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingExcelVB/ThisWorkbook.vb#7)]  [!code-csharp[Trin_VstcoreProgramming#7](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingExcelCS/ThisWorkbook.cs#7)]  
+     [!code-vb[Trin_VstcoreProgramming#7](../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingExcelVB/ThisWorkbook.vb#7)]
+     [!code-csharp[Trin_VstcoreProgramming#7](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingExcelCS/ThisWorkbook.cs#7)]  
   
-2.  Increment the `Revision Number` property by one.  
+2.  Inkrementieren Sie die Eigenschaft `Revision Number` um eins.  
   
-     [!code-vb[Trin_VstcoreProgramming#8](../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingExcelVB/ThisWorkbook.vb#8)]  [!code-csharp[Trin_VstcoreProgramming#8](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingExcelCS/ThisWorkbook.cs#8)]  
+     [!code-vb[Trin_VstcoreProgramming#8](../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingExcelVB/ThisWorkbook.vb#8)]
+     [!code-csharp[Trin_VstcoreProgramming#8](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingExcelCS/ThisWorkbook.cs#8)]  
   
-## <a name="setting-document-properties-in-word"></a>Setting Document Properties in Word  
- To work with built-in properties in Word, use the following properties:  
+## <a name="setting-document-properties-in-word"></a>Festlegen von Dokumenteigenschaften in Word  
+ Verwenden Sie die folgenden Eigenschaften, um in Word mit integrierten Eigenschaften zu arbeiten:  
   
--   In a document-level project, use the <xref:Microsoft.Office.Tools.Word.Document.BuiltInDocumentProperties%2A> property of the `ThisDocument` class.  
+-   In einem Projekt auf Dokumentebene verwenden Sie die Eigenschaft <xref:Microsoft.Office.Tools.Word.Document.BuiltInDocumentProperties%2A> der Klasse `ThisDocument` .  
   
--   In a VSTO Add-in project, use the <xref:Microsoft.Office.Interop.Word._Document.BuiltInDocumentProperties%2A> property of a <xref:Microsoft.Office.Interop.Word.Document> object.  
+-   Verwenden Sie in einem VSTO-Add-In-Projekt die Eigenschaft <xref:Microsoft.Office.Interop.Word._Document.BuiltInDocumentProperties%2A> eines <xref:Microsoft.Office.Interop.Word.Document> -Objekts.  
   
- These properties return a <xref:Microsoft.Office.Core.DocumentProperties> object, which is a collection of <xref:Microsoft.Office.Core.DocumentProperty> objects. You can use the `Item` property of the collection to retrieve a particular property, either by name or by index within the collection.  
+ Diese Eigenschaften geben eine <xref:Microsoft.Office.Core.DocumentProperties> -Objekt zurück, das eine Auflistung von <xref:Microsoft.Office.Core.DocumentProperty> -Objekten ist. Sie können die Eigenschaft `Item` der Auflistung verwenden, um eine bestimmte Eigenschaft nach Name oder Index in der Auflistung abzurufen.  
   
- The following code example shows how to change the built-in **Subject** property in a document-level project.  
+ Im folgenden Codebeispiel wird veranschaulicht, wie die integrierte Eigenschaft **Subject** in einem Projekt auf Dokumentebene geändert wird.  
   
-#### <a name="to-change-the-subject-property"></a>To change the Subject property  
+#### <a name="to-change-the-subject-property"></a>So ändern Sie die Eigenschaft "Subject"  
   
-1.  Assign the built-in document properties to a variable.  
+1.  Weisen Sie die integrierten Eigenschaften einer Variablen zu.  
   
-     [!code-csharp[Trin_VstcoreProgrammingWord#1](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingWordCS/ThisDocument.cs#1)]  [!code-vb[Trin_VstcoreProgrammingWord#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingWordVB/ThisDocument.vb#1)]  
+     [!code-csharp[Trin_VstcoreProgrammingWord#1](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingWordCS/ThisDocument.cs#1)]
+     [!code-vb[Trin_VstcoreProgrammingWord#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingWordVB/ThisDocument.vb#1)]  
   
-2.  Change the `Subject` property to "Whitepaper".  
+2.  Ändern Sie die Eigenschaft `Subject` in "Whitepaper".  
   
-     [!code-csharp[Trin_VstcoreProgrammingWord#2](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingWordCS/ThisDocument.cs#2)]  [!code-vb[Trin_VstcoreProgrammingWord#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingWordVB/ThisDocument.vb#2)]  
+     [!code-csharp[Trin_VstcoreProgrammingWord#2](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingWordCS/ThisDocument.cs#2)]
+     [!code-vb[Trin_VstcoreProgrammingWord#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingWordVB/ThisDocument.vb#2)]  
   
-## <a name="robust-programming"></a>Robust Programming  
- The examples assume that you have written the code in the `ThisWorkbook` class in a document-level project for Excel, and the `ThisDocument` class in a document-level project for Word.  
+## <a name="robust-programming"></a>Stabile Programmierung  
+ In den Beispielen wird davon ausgegangen, dass Sie den Code in der Klasse `ThisWorkbook` in einem Projekt auf Dokumentebene für Excel und in der Klasse `ThisDocument` in einem Projekt auf Dokumentebene für Word geschrieben haben.  
   
- Although you are working with Word and Excel and their objects, Microsoft Office supplies the list of available built-in document properties. Attempting to access an undefined property raises an exception.  
+ Auch wenn Sie mit Word und Excel und deren Objekten arbeiten, stellt Microsoft Office die Liste der verfügbaren integrierten Dokumenteigenschaften zur Verfügung. Wenn versucht wird, auf eine nicht definierte Eigenschaft zuzugreifen, wird eine Ausnahme ausgelöst.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Siehe auch  
  [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)   
- [Programming Document-Level Customizations](../vsto/programming-document-level-customizations.md)   
- [How to: Create and Modify Custom Document Properties](../vsto/how-to-create-and-modify-custom-document-properties.md)  
+ [Programmieren von Anpassungen auf Dokumentebene](../vsto/programming-document-level-customizations.md)   
+ [Vorgehensweise: Erstellen und Ändern von benutzerdefinierten Dokumenteigenschaften](../vsto/how-to-create-and-modify-custom-document-properties.md)  
   
   

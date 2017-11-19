@@ -1,27 +1,30 @@
 ---
-title: "IDispError::GetSource | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IDispError::GetSource | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IDispError.GetSource
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "IDispError::GetSource"
+helpviewer_keywords: IDispError::GetSource
 ms.assetid: 20def54c-a67c-4102-babf-6f0704e5fc5c
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 922f95206d341773632b84c3922ea3b240d8d1ed
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# IDispError::GetSource
-Gibt den sprachabhängigen Programmbezeichner für die Klasse oder die Anwendung zurück, die den Fehler ausgelöst hat.  
+# <a name="idisperrorgetsource"></a>IDispError::GetSource
+Gibt den sprachabhängig programmgesteuerten Bezeichner für die Klasse oder eine Anwendung, die den Fehler ausgelöst.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 HRESULT GetSource(  
@@ -29,22 +32,22 @@ HRESULT GetSource(
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `pbstrSource`  
- \[out\] verbinden Sie, der einen Programmbezeichner enthält, in der Form `progname.objectname` auf.  
+ [out] Zeichenfolge, die einen programmgesteuerten Bezeichner, in das Formular enthält `progname.objectname`.  
   
-## Rückgabewert  
- Die Methode gibt ein `HRESULT` zurück.  Zu den möglichen Werten zählen, aber nicht zu, die in der folgenden Tabelle beschränkt.  
+## <a name="return-value"></a>Rückgabewert  
+ Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
   
-|Wert|Description|  
-|----------|-----------------|  
+|Wert|Beschreibung|  
+|-----------|-----------------|  
 |`S_OK`|Die Methode war erfolgreich.|  
   
-## Hinweise  
- Diese Methode wird verwendet, um die Klasse oder die Anwendung bestimmen, in der die Ausnahme aufgetreten ist.  Der programmgesteuerte Bezeichner wird in der Sprache zurückgegeben werden, die durch den Gebietsschemabezeichner \(LCID\) angegeben wurde angegeben zum Zeitpunkt des Aufrufs.  
+## <a name="remarks"></a>Hinweise  
+ Diese Methode wird verwendet, um zu bestimmen, die Klasse oder eine Anwendung, in dem die Ausnahme aufgetreten ist. Der programmatische Bezeichner kann in der Sprache, angegeben durch den Gebietsschemabezeichner (LCID), die zum Zeitpunkt des Aufrufs angegeben zurückgegeben werden.  
   
 > [!NOTE]
 >  Diese Methode ist nicht implementiert.  
   
-## Siehe auch  
- [IDispError\-Schnittstelle](../../winscript/reference/idisperror-interface.md)
+## <a name="see-also"></a>Siehe auch  
+ [IDispError-Schnittstelle](../../winscript/reference/idisperror-interface.md)

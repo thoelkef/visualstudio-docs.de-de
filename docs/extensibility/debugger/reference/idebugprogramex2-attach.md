@@ -1,65 +1,65 @@
 ---
-title: "IDebugProgramEx2::Attach | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugProgramEx2::Attach"
-helpviewer_keywords: 
-  - "IDebugProgramEx2::Attach"
+title: IDebugProgramEx2::Attach | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugProgramEx2::Attach
+helpviewer_keywords: IDebugProgramEx2::Attach
 ms.assetid: 33b22b2f-431e-4205-9441-d28a9c928c97
-caps.latest.revision: 13
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: b8d025d4e788ac63ab0c75429e08c48215b9c902
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugProgramEx2::Attach
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Fügen Sie eine Sitzung mit einem Programm an.  
+# <a name="idebugprogramex2attach"></a>IDebugProgramEx2::Attach
+Fügen Sie eine Sitzung mit einem Programm.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT Attach(   
-   IDebugEventCallback2* pCallback,  
-   DWORD                 dwReason,  
-   IDebugSession2*       pSession  
+```cpp  
+HRESULT Attach(   
+   IDebugEventCallback2* pCallback,  
+   DWORD                 dwReason,  
+   IDebugSession2*       pSession  
 );  
 ```  
   
 ```  
 [C#]  
-int Attach(   
-   IDebugEventCallback2 pCallback,  
-   uint                 dwReason,  
-   IDebugSession2       pSession  
+int Attach(   
+   IDebugEventCallback2 pCallback,  
+   uint                 dwReason,  
+   IDebugSession2       pSession  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `pCallback`  
- \[in\]  Ein [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)\-Objekt, das die Rückruffunktion zeigt, dass das Debugmodul für angefügte Ereignisse sendet.  
+ [in] Ein [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) -Objekt, das die Rückruffunktion darstellt, das die angefügte Debugmodul Ereignisse sendet.  
   
  `dwReason`  
- \[in\]  Ein Wert aus der [ATTACH\_REASON](../../../extensibility/debugger/reference/attach-reason.md)\-Enumeration, der den Grund für den Anfügevorgang zu beschreiben.  
+ [in] Ein Wert aus der [ATTACH_REASON](../../../extensibility/debugger/reference/attach-reason.md) -Enumeration, der den Grund für den Anfügevorgang beschreibt.  
   
  `pSession`  
- \[in\]  Ein Wert, der die Sitzung eindeutig identifiziert wird, die dem Programm angefügt werden.  
+ [in] Ein Wert, der die Sitzung eindeutig identifiziert wird, die an die Anwendung angefügt wird.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. Andernfalls wird ein Fehlercode zurückgegeben.  Diese Methode sollte `E_ATTACH_DEBUGGER_ALREADY_ATTACHED` zurückgeben, wenn das Programm bereits angefügt ist.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`; andernfalls wird ein Fehlercode zurückgegeben. Diese Methode sollte zurückgeben `E_ATTACH_DEBUGGER_ALREADY_ATTACHED` Wenn das Programm bereits angefügt ist.  
   
-## Hinweise  
- Der Anschluss, der das Programm enthält, kann der Wert in `pSession` verwenden, um zu bestimmen, welche Sitzung versucht, auf das Programm anzufügen.  Wenn beispielsweise ein Port nur eine Debugsitzung zur Anfügen an einen Prozess auf einmal zulässt, kann der Anschluss bestimmen, ob die gleiche Sitzung bereits in anderen Programmen im Prozess angefügt wird.  
+## <a name="remarks"></a>Hinweise  
+ Der Port mit dem Programm können den Wert in `pSession` um zu bestimmen, welche Sitzung versucht, die an die Anwendung anfügen. Wenn ein Port nur eine Debugsitzung Anfügen an einen Prozess zu einem Zeitpunkt zulässt, kann z. B. der Port ermitteln, ob die gleiche Sitzung bereits für andere Programme im Prozess angefügt ist.  
   
 > [!NOTE]
->  Die Schnittstelle, die in `pSession` übergeben wird, soll nur als Cookie behandelt werden, ein Wert, der den Debug\- Manager der Sitzung eindeutig identifiziert, der an diesem Programm angefügt wird. Keine Methoden für die angegebene Schnittstelle sind aktiviert.  
+>  Die Schnittstelle übergebenen `pSession` nur als ein Cookie, das einen Wert behandelt werden soll, die eindeutig das Anhängen an diesem Programm; Sitzung Debug-Manager keine der Methoden für die angegebene Schnittstelle funktionsfähig sind.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDebugProgramEx2](../../../extensibility/debugger/reference/idebugprogramex2.md)

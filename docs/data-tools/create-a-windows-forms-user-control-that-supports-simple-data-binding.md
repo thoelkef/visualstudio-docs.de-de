@@ -1,5 +1,5 @@
 ---
-title: Create a user control that supports simple data binding | Microsoft Docs
+title: "Erstellen eines Benutzersteuerelements, das einfache Datenbindung unterstützt | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -13,186 +13,182 @@ helpviewer_keywords:
 - custom controls [Visual Studio], Data Sources Window
 - Data Sources Window, controls
 ms.assetid: b1488366-6dfb-454e-9751-f42fd3f3ddfb
-caps.latest.revision: 14
+caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: cca2a707627c36221a654cf8a06730383492f371
-ms.openlocfilehash: 555cfdd530c8c72a14651c77eb48c039d8b081fd
-ms.contentlocale: de-de
-ms.lasthandoff: 09/13/2017
-
+ms.technology: vs-data-tools
+ms.openlocfilehash: 5f8638a915abe222e5676e0f1aed5134ae00a8e4
+ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/07/2017
 ---
-# <a name="create-a-windows-forms-user-control-that-supports-simple-data-binding"></a>Create a Windows Forms user control that supports simple data binding
-When displaying data on forms in Windows applications, you can choose existing controls from the **Toolbox**, or you can author custom controls if your application requires functionality that is not available in the standard controls. This walkthrough shows how to create a control that implements the <xref:System.ComponentModel.DefaultBindingPropertyAttribute>. Controls that implement the <xref:System.ComponentModel.DefaultBindingPropertyAttribute> can contain one property that can be bound to data. Such controls are similar to a <xref:System.Windows.Forms.TextBox> or <xref:System.Windows.Forms.CheckBox>.  
+# <a name="create-a-windows-forms-user-control-that-supports-simple-data-binding"></a>Erstellen eines Windows Forms-Benutzersteuerelements, das einfache Datenbindung unterstützt
+Anzeigen von Daten in Formularen in Windows-Anwendungen können Sie vorhandene Steuerelemente aus der **Toolbox**, oder Sie können benutzerdefinierte Steuerelemente erstellen, wenn Ihre Anwendung Funktionen erfordert, die in den Standardsteuerelementen nicht verfügbar ist. Diese exemplarische Vorgehensweise erläutert, wie Sie ein Steuerelement erstellen, das <xref:System.ComponentModel.DefaultBindingPropertyAttribute> implementiert. Steuerelemente, die <xref:System.ComponentModel.DefaultBindingPropertyAttribute> implementieren, können eine Eigenschaft enthalten, die an Daten gebunden werden kann. Solche Steuerelemente sind vergleichbar mit <xref:System.Windows.Forms.TextBox> oder <xref:System.Windows.Forms.CheckBox>.  
   
- For more information on control authoring, see [Developing Windows Forms Controls at Design Time](/dotnet/framework/winforms/controls/developing-windows-forms-controls-at-design-time).  
+ Weitere Informationen zu Steuerelementen, finden Sie unter [Entwickeln von Windows Forms-Steuerelementen zur Entwurfszeit](/dotnet/framework/winforms/controls/developing-windows-forms-controls-at-design-time).  
   
- When authoring controls for use in data-binding scenarios, you should implement one of the following data-binding attributes:  
+ Bei der Erstellung von Steuerelementen für die Verwendung in Datenbindungsszenarien sollten Sie eine der folgenden Datenbindungsattribute implementieren:  
   
-|Data-binding attribute usage|  
+|Die Datenbindung-Attributen|  
 |-----------------------------------|  
-|Implement the <xref:System.ComponentModel.DefaultBindingPropertyAttribute> on simple controls, like a <xref:System.Windows.Forms.TextBox>, that display a single column (or property) of data. (This process is described in this walkthrough page.)|  
-|Implement the <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> on controls, like a <xref:System.Windows.Forms.DataGridView>, that display lists (or tables) of data. For more information, see [Create a Windows Forms user control that supports complex data binding](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md).|  
-|Implement the <xref:System.ComponentModel.LookupBindingPropertiesAttribute> on controls, like a <xref:System.Windows.Forms.ComboBox>, that display lists (or tables) of data but also need to present a single column or property. For more information, see [Create a Windows Forms user control that supports lookup data binding](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md).|  
+|Implementieren Sie <xref:System.ComponentModel.DefaultBindingPropertyAttribute> für einfache Steuerelemente, die eine einzige Spalte (oder Eigenschaft) von Daten anzeigen, wie das <xref:System.Windows.Forms.TextBox>-Steuerelement. (Dieser Prozess wird in dieser exemplarischen Vorgehensweise beschrieben.)|  
+|Implementieren Sie <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> für Steuerelemente, die Listen (oder Tabellen) von Daten anzeigen, wie das <xref:System.Windows.Forms.DataGridView>-Steuerelement. Weitere Informationen finden Sie unter [Erstellen eines Windows Forms-Benutzersteuerelements, die komplexe Datenbindung unterstützt](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md).|  
+|Implementieren Sie die <xref:System.ComponentModel.LookupBindingPropertiesAttribute> auf Steuerelementen wie einem <xref:System.Windows.Forms.ComboBox>,das Listen (oder Tabellen) von Daten anzeigt, aber auch in einer einzelnen Spalte oder Eigenschaft vorhanden sein muss. Weitere Informationen finden Sie unter [erstellen Sie ein Windows Forms-Benutzersteuerelement die Suche Datenbindung unterstützenden](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md).|  
   
- This walkthrough creates a simple control that displays data from a single column in a table. This example uses the `Phone` column of the `Customers` table from the Northwind sample database. The simple user control will display customers' phone numbers in a standard phone-number format, by using a <xref:System.Windows.Forms.MaskedTextBox> and setting the mask to a phone number.  
+ In dieser exemplarischen Vorgehensweise wird ein einfaches Steuerelement erstellt, das Daten aus einer einzelnen Spalte in einer Tabelle anzeigt. In diesem Beispiel wird die Spalte `Phone` der Tabelle `Customers` aus der Beispieldatenbank Northwind verwendet. Das einfache Benutzersteuerelement zeigt Telefonnummern des Kunden in einem standardmäßigen Telefonnummernformat mithilfe einer <xref:System.Windows.Forms.MaskedTextBox> und Festlegen der Maske auf eine Telefonnummer.  
   
- During this walkthrough, you will learn how to:  
+ Bei dieser exemplarischen Vorgehensweise lernen Sie Folgendes:  
   
--   Create a new **Windows Forms Application**.  
+-   Erstellen Sie ein neues **Windows Forms-Anwendung**.  
   
--   Add a new **User Control** to your project.  
+-   Fügen Sie einen neuen **Benutzersteuerelement** zu Ihrem Projekt.  
   
--   Visually design the user control.  
+-   Entwerfen des Benutzersteuerelements im visuellen Designer.  
   
--   Implement the `DefaultBindingProperty` attribute.  
+-   Implementieren des `DefaultBindingProperty`-Attributs.  
   
--   Create a dataset with the **Data Source Configuration** wizard.  
+-   Erstellen Sie ein Dataset mit dem **Datenquellenkonfiguration** Assistenten.  
   
--   Set the **Phone** column in the **Data Sources** window to use the new control.  
+-   Legen Sie die **Phone** Spalte in der **Datenquellen** Fenster, das das neue Steuerelement verwendet.  
   
--   Create a form to display data in the new control.  
+-   Erstellen eines Formulars, um Daten in dem neuen Steuerelement anzuzeigen.  
   
-## <a name="prerequisites"></a>Prerequisites  
- In order to complete this walkthrough, you will need:  
+## <a name="prerequisites"></a>Erforderliche Komponenten  
+In dieser exemplarischen Vorgehensweise werden die SQL Server Express LocalDB und der Beispieldatenbank Northwind verwendet.  
   
--   Access to the Northwind sample database. For more information, see [How to: Install Sample Databases](../data-tools/installing-database-systems-tools-and-samples.md).  
+1.  Wenn Sie nicht über SQL Server Express LocalDB verfügen, installieren Sie es entweder aus der [Downloadseite für SQL Server-Editionen](https://www.microsoft.com/en-us/server-cloud/Products/sql-server-editions/sql-server-express.aspx), oder über die **Installer für Visual Studio**. In der Visual Studio-Installer können SQL Server Express LocalDB installiert werden als Teil der **datenspeicherung und Verarbeitung** arbeitsauslastung oder als eine einzelne Komponente.  
   
-## <a name="create-a-windows-forms-application"></a>Create a Windows Forms Application  
- The first step is to create a **Windows Forms Application**.  
-  
-#### <a name="to-create-the-new-windows-project"></a>To create the new Windows project  
-  
-1. In Visual Studio, on the **File** menu, select **New**, **Project...**.  
-  
-2. Expand either **Visual C#** or **Visual Basic** in the left-hand pane, then select **Windows Classic Desktop**.  
+2.  Installieren Sie die Beispieldatenbank Northwind, indem folgende Schritte:  
 
-3. In the middle pane, select the **Windows Forms App** project type.  
+    1. Öffnen Sie in Visual Studio die **Objekt-Explorer von SQL Server** Fenster. (Objekt-Explorer von SQL Server installiert ist, als Teil der **datenspeicherung und Verarbeitung** arbeitsauslastung in der Visual Studio-Installer.) Erweitern Sie die **SQL Server** Knoten. Rechtsklicken Sie auf der LocalDB-Instanz, und wählen Sie **neue Abfrage...** .  
 
-4. Name the project **SimpleControlWalkthrough**, and then choose **OK**. 
+       Ein Abfrage-Editorfenster wird geöffnet.  
+
+    2. Kopieren der [Northwind Transact-SQL-Skript](https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/docs/data-tools/samples/northwind.sql?raw=true) in die Zwischenablage. Dieses T-SQL-Skript die Northwind-Datenbank von Grund auf neu erstellt und mit Daten aufgefüllt.  
+
+    3. Fügen Sie das T-SQL-Skript im Abfrage-Editor, und wählen Sie dann die **Execute** Schaltfläche.  
+
+       Nach kurzer Zeit die Abfrage die Ausführung abgeschlossen ist, und die Northwind-Datenbank wird erstellt.  
   
-     The **SimpleControlWalkthrough** project is created, and added to **Solution Explorer**.  
+## <a name="create-a-windows-forms-application"></a>Erstellen einer Windows Forms-Anwendung  
+ Der erste Schritt ist die Erstellung einer **Windows Forms-Anwendung**.  
   
-## <a name="add-a-user-control-to-the-project"></a>Add a user control to the project  
- This walkthrough creates a simple data-bindable control from a **User Control**, so add a **User Control** item to the **SimpleControlWalkthrough** project.  
+#### <a name="to-create-the-new-windows-project"></a>So erstellen Sie ein neues Windows-Projekt  
   
-#### <a name="to-add-a-user-control-to-the-project"></a>To add a user control to the project  
+1. In Visual Studio auf die **Datei** klicken Sie im Menü **neu**, **Projekt...** .  
   
-1.  From the **Project** menu, choose **Add User Control**.  
+2. Erweitern Sie entweder **Visual C#-** oder **Visual Basic** im linken Bereich, und wählen Sie dann **klassische Windows-Desktop**.  
+
+3. Wählen Sie im mittleren Bereich die **Windows Forms-App** Projekttyp.  
+
+4. Nennen Sie das Projekt **SimpleControlWalkthrough**, und wählen Sie dann **OK**. 
   
-2.  Type `PhoneNumberBox` in the Name area, and click **Add**.  
+     Die **SimpleControlWalkthrough** Projekt wird erstellt und hinzugefügt **Projektmappen-Explorer**.  
   
-     The **PhoneNumberBox** control is added to **Solution Explorer**, and opens in the designer.  
+## <a name="add-a-user-control-to-the-project"></a>Hinzufügen eines Benutzersteuerelements zum Projekt  
+ In dieser exemplarischen Vorgehensweise erstellt ein einfaches, datenbindbares Steuerelement aus einer **Benutzersteuerelement**, fügen Sie daher eine **Benutzersteuerelement** Element zum der **SimpleControlWalkthrough** Projekt.  
   
-## <a name="design-the-phonenumberbox-control"></a>Design the PhoneNumberBox control  
- This walkthrough expands upon the existing <xref:System.Windows.Forms.MaskedTextBox> to create the `PhoneNumberBox` control.  
+#### <a name="to-add-a-user-control-to-the-project"></a>So fügen Sie dem Projekt ein Benutzersteuerelement hinzu  
   
-#### <a name="to-design-the-phonenumberbox-control"></a>To design the PhoneNumberBox control  
+1.  Aus der **Projekt** Menü wählen **Benutzersteuerelement hinzufügen**.  
   
-1.  Drag a <xref:System.Windows.Forms.MaskedTextBox> from the **Toolbox** onto the user control's design surface.  
+2.  Typ `PhoneNumberBox` in den Bereich Name ein und klicken Sie auf **hinzufügen**.  
   
-2.  Select the smart tag on the <xref:System.Windows.Forms.MaskedTextBox> you just dragged, and choose **Set Mask**.  
+     Die **PhoneNumberBox** -Steuerelement hinzugefügt **Projektmappen-Explorer**, und im Designer geöffnet.  
   
-3.  Select **Phone number** in the **Input Mask** dialog box, and click **OK** to set the mask.  
+## <a name="design-the-phonenumberbox-control"></a>Entwerfen des PhoneNumberBox-Steuerelements  
+ Diese exemplarische Vorgehensweise erweitert das vorhandene <xref:System.Windows.Forms.MaskedTextBox>, sodass das `PhoneNumberBox`-Steuerelement erstellt wird.  
   
-## <a name="add-the-required-data-binding-attribute"></a>Add the required data-binding attribute  
- For simple controls that support databinding, implement the <xref:System.ComponentModel.DefaultBindingPropertyAttribute>.  
+#### <a name="to-design-the-phonenumberbox-control"></a>Entwerfen des PhoneNumberBox-Steuerelements  
   
-#### <a name="to-implement-the-defaultbindingproperty-attribute"></a>To implement the DefaultBindingProperty attribute  
+1.  Ziehen Sie eine <xref:System.Windows.Forms.MaskedTextBox> aus der **Toolbox** auf die Entwurfsoberfläche des Benutzersteuerelements.  
   
-1.  Switch the `PhoneNumberBox` control to code view. (On the **View** menu, choose **Code**.)  
+2.  Wählen Sie auf das Smarttag der <xref:System.Windows.Forms.MaskedTextBox> Sie gerade gezogen haben, und wählen Sie **Maske festlegen**.  
   
-2.  Replace the code in the `PhoneNumberBox` with the following:  
+3.  Wählen Sie **Telefonnummer** in der **Eingabeformat** (Dialogfeld), und klicken Sie auf **OK** zum Festlegen der Maske.  
+  
+## <a name="add-the-required-data-binding-attribute"></a>Hinzufügen des erforderlichen Datenbindungsattributs  
+ Implementieren Sie für einfache Steuerelemente, die Datenbindung unterstützen, das <xref:System.ComponentModel.DefaultBindingPropertyAttribute>.  
+  
+#### <a name="to-implement-the-defaultbindingproperty-attribute"></a>So implementieren Sie das Attribut DefaultBindingProperty  
+  
+1.  Wechseln Sie für das `PhoneNumberBox`-Steuerelement zur Codeansicht. (Auf der **Ansicht** Menü wählen **Code**.)  
+  
+2.  Ersetzen Sie den Code in `PhoneNumberBox` durch folgenden Code:  
   
      [!code-csharp[VbRaddataDisplaying#3](../data-tools/codesnippet/CSharp/create-a-windows-forms-user-control-that-supports-simple-data-binding_1.cs)]
      [!code-vb[VbRaddataDisplaying#3](../data-tools/codesnippet/VisualBasic/create-a-windows-forms-user-control-that-supports-simple-data-binding_1.vb)]  
   
-3.  From the **Build** menu, choose **Build Solution**.  
+3.  Wählen Sie im Menü **Erstellen** die Option **Projektmappe erstellen**aus.  
   
-## <a name="create-a-data-source-from-your-database"></a>Create a data source from your database  
- This step uses the **Data Source Configuration**wizard to create a data source based on the `Customers` table in the Northwind sample database. You must have access to the Northwind sample database to create the connection. For information on setting up the Northwind sample database, see [How to: Install Sample Databases](../data-tools/installing-database-systems-tools-and-samples.md).  
+## <a name="create-a-data-source-from-your-database"></a>Erstellen Sie eine Datenquelle aus der Datenbank  
+ Dieser Schritt wird mithilfe der **Datenquellenkonfiguration**-Assistenten zum Erstellen einer Datenquelle basierend auf der `Customers` Tabelle in der Northwind-Beispieldatenbank. Sie benötigen Zugriff auf die Beispieldatenbank Northwind, um die Verbindung herstellen zu können. Informationen zum Einrichten der Northwind-Beispieldatenbank finden Sie unter [Vorgehensweise: Installieren von Beispieldatenbanken](../data-tools/installing-database-systems-tools-and-samples.md).  
   
-#### <a name="to-create-the-data-source"></a>To create the data source  
+#### <a name="to-create-the-data-source"></a>So erstellen Sie die Datenquelle  
   
-1.  On the **Data** menu, click **Show Data Sources**.  
+1.  Klicken Sie im Menü **Daten** auf **Datenquellen anzeigen**.  
   
-2.  In the **Data Sources** window, select **Add New Data Source** to start the **Data Source Configuration** wizard.  
+2.  In der **Datenquellen** wählen **neue Datenquelle hinzufügen** zum Starten der **Datenquellenkonfiguration** Assistenten.  
   
-3.  On the **Choose a Data Source Type** page, select **Database**, and then click **Next**.  
+3.  Auf der **wählen Sie einen Datenquellentyp** Seite **Datenbank**, und klicken Sie dann auf **Weiter**.  
   
-4.  On the **Choose your Data Connection** page, do one of the following:  
+4.  Auf der **wählen Sie Ihre Datenverbindung** Seite, führen Sie eine der folgenden:  
   
-    -   If a data connection to the Northwind sample database is available in the drop-down list, select it.  
+    -   Wenn in der Dropdownliste eine Datenverbindung zur Beispieldatenbank „Northwind“ verfügbar ist, wählen Sie diese aus.  
   
-    -   Select **New Connection** to launch the **Add/Modify Connection** dialog box.  
+    -   Wählen Sie **neue Verbindung** zum Starten der **Verbindung hinzufügen/ändern** (Dialogfeld).  
   
-5.  If your database requires a password, select the option to include sensitive data, and then click **Next**.  
+5.  Wenn die Datenbank ein Kennwort erfordern sollte, wählen Sie die Option auf Einbeziehung vertraulicher Daten, und klicken Sie dann auf **Weiter**.  
   
-6.  On the **Save connection string to the Application Configuration file** page, click **Next**.  
+6.  Auf der **Verbindungszeichenfolge in der Programmkonfigurationsdatei speichern** auf **Weiter**.  
   
-7.  On the **Choose your Database Objects** page, expand the **Tables** node.  
+7.  Auf der **Datenbankobjekte auswählen** Seite, erweitern Sie die **Tabellen** Knoten.  
   
-8.  Select the `Customers` table, and then click **Finish**.  
+8.  Wählen Sie die `Customers` Tabelle, und klicken Sie dann auf **Fertig stellen**.  
   
-     The **NorthwindDataSet** is added to your project, and the `Customers` table appears in the **Data Sources** window.  
+     Die **NorthwindDataSet** wird dem Projekt hinzugefügt und die `Customers` Tabelle wird angezeigt, der **Datenquellen** Fenster.  
   
-## <a name="set-the-phone-column-to-use-the-phonenumberbox-control"></a>Set the phone column to use the PhoneNumberBox control  
- Within the **Data Sources** window, you can set the control to be created prior to dragging items onto your form.  
+## <a name="set-the-phone-column-to-use-the-phonenumberbox-control"></a>Festlegen der Spalte "Phone" mithilfe des PhoneNumberBox-Steuerelements  
+ Innerhalb der **Datenquellen** können Sie das Steuerelement erstellt werden soll, vor dem Ziehen von Elementen auf das Formular festlegen.  
   
-#### <a name="to-set-the-phone-column-to-bind-to-the-phonenumberbox-control"></a>To set the phone column to bind to the PhoneNumberBox control  
+#### <a name="to-set-the-phone-column-to-bind-to-the-phonenumberbox-control"></a>So legen Sie die Bindung der Spalte "Telefon" an das PhoneNumberBox-Steuerelement fest  
   
-1.  Open **Form1** in the designer.  
+1.  Open **Form1** im Designer.  
   
-2.  Expand the **Customers** node in the **Data Sources** window.  
+2.  Erweitern Sie die **Kunden** Knoten in der **Datenquellen** Fenster.  
   
-3.  Click the drop-down arrow on the **Customers** node, and choose **Details** from the control list.  
+3.  Klicken Sie auf den Dropdown Pfeil auf der **Kunden** Knoten, und wählen Sie **Details** aus der Steuerungsliste.  
   
-4.  Click the drop-down arrow on the **Phone** column, and choose **Customize**.  
+4.  Klicken Sie auf den Dropdown Pfeil auf der **Phone** Spalte, und wählen Sie **anpassen**.  
   
-5.  Select the **PhoneNumberBox** from the list of **Associated Controls** in the **Data UI Customization Options** dialog box.  
+5.  Wählen Sie die **PhoneNumberBox** aus der Liste der **zugeordnete Steuerelemente** in der **Optionen für die Anpassung der Datenbenutzeroberfläche** (Dialogfeld).  
   
-6.  Click the drop-down arrow on the **Phone** column, and choose **PhoneNumberBox**.  
+6.  Klicken Sie auf den Dropdown Pfeil auf der **Phone** Spalte, und wählen Sie **PhoneNumberBox**.  
   
-## <a name="add-controls-to-the-form"></a>Add controls to the form  
- You can create the data-bound controls by dragging items from the **Data Sources** window onto the form.  
+## <a name="add-controls-to-the-form"></a>Hinzufügen von Steuerelementen zum Formular  
+ Sie können die datengebundenen Steuerelemente erstellen, durch Ziehen von Elementen aus der **Datenquellen** auf das Formular.  
   
-#### <a name="to-create-data-bound-controls-on-the-form"></a>To create data-bound controls on the form  
+#### <a name="to-create-data-bound-controls-on-the-form"></a>So erstellen Sie datengebundene Steuerelemente auf dem Formular  
   
--   Drag the main **Customers** node from the **Data Sources** window onto the form, and verify that the `PhoneNumberBox` control is used to display the data in the `Phone` column.  
+-   Ziehen Sie den Hauptknoten **Kunden** Knoten aus der **Datenquellen** auf das Formular, und überprüfen Sie, ob die `PhoneNumberBox` Steuerelement wird verwendet, um die Anzeige der Daten in der `Phone` Spalte.  
   
-     Data-bound controls with descriptive labels appear on the form, along with a tool strip (<xref:System.Windows.Forms.BindingNavigator>) for navigating records. A [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter, <xref:System.Windows.Forms.BindingSource>, and <xref:System.Windows.Forms.BindingNavigator> appear in the component tray.  
+     Auf dem Formular werden datengebundene Steuerelemente mit beschreibenden Bezeichnungen sowie ein Toolstrip (<xref:System.Windows.Forms.BindingNavigator>) für die Navigation in den Datensätzen angezeigt. Ein [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter <xref:System.Windows.Forms.BindingSource>, und <xref:System.Windows.Forms.BindingNavigator> auf der Komponentenleiste angezeigt.  
   
-## <a name="run-the-application"></a>Run the application  
+## <a name="run-the-application"></a>Ausführen der Anwendung  
   
-#### <a name="to-run-the-application"></a>To run the application  
+#### <a name="to-run-the-application"></a>So führen Sie die Anwendung aus  
   
--   Press F5 to run the application.  
+-   Drücken Sie F5, um die Anwendung auszuführen.  
   
-## <a name="next-steps"></a>Next Steps  
- Depending on your application requirements, there are several steps you may want to perform after creating a control that supports data binding. Some typical next steps include:  
+## <a name="next-steps"></a>Nächste Schritte  
+ Entsprechend den Anforderungen an Ihre Anwendung können Sie nach der Erstellung eines Steuerelements, das Datenbindung unterstützt, noch weitere Schritte ausführen. Zu den typischen nächsten Schritten gehören Folgende:  
   
--   Placing your custom controls in a control library so you can reuse them in other applications.  
+-   Platzieren der benutzerdefinierten Steuerelemente in eine Steuerelementbibliothek, sodass Sie sie in anderen Anwendungen wiederverwenden können.  
   
--   Creating controls that support more complex data-binding scenarios. For more information, see [Create a Windows Forms user control that supports complex data binding](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md) and [Create a Windows Forms user control that supports lookup data binding](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md).  
+-   Erstellen von Steuerelementen, die komplexere Datenbindungsszenarien unterstützen. Weitere Informationen finden Sie unter [Erstellen eines Windows Forms-Benutzersteuerelements, die komplexe Datenbindung unterstützt](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md) und [erstellen Sie ein Windows Forms-Benutzersteuerelement die Suche Datenbindung unterstützenden](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md).  
   
-## <a name="see-also"></a>See Also  
- [Bind Windows Forms controls to data in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)   
- [Set the control to be created when dragging from the Data Sources window](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)
-
+## <a name="see-also"></a>Siehe auch  
+ [Binden von Windows Forms-Steuerelementen an Daten in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)   
+ [Festlegen des Steuerelements, das beim Ziehen aus dem Datenquellenfenster erstellt werden soll](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)

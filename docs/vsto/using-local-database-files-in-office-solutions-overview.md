@@ -1,49 +1,51 @@
 ---
-title: "&#220;bersicht &#252;ber die Verwendung lokaler Datenbankdateien in Office-L&#246;sungen"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "Daten [Office-Entwicklung in Visual Studio], Lokal"
-  - "Lokale Daten [Office-Entwicklung in Visual Studio]"
-  - "Office-Anwendungen [Office-Entwicklung in Visual Studio], Daten"
+title: "Verwendung lokaler Datenbankdateien in Office-Projektmappen (Übersicht) | Microsoft Docs"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- Office applications [Office development in Visual Studio], data
+- data [Office development in Visual Studio], local
+- local data [Office development in Visual Studio]
 ms.assetid: 7a920e6b-f0c3-4a62-b5dd-02668a6177b6
-caps.latest.revision: 30
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 29
+caps.latest.revision: "30"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 5e90143904c8d628e4288e24602907a75ae4bc59
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# &#220;bersicht &#252;ber die Verwendung lokaler Datenbankdateien in Office-L&#246;sungen
-  Sie können eine Datenbankdatei, wie eine Datei des SQL Server Express \(.mdf\) oder eine Microsoft Office Access\-Datei \(.mdb\), in der Office\-Projektmappe einschließen.  Dadurch können Endbenutzer in Situationen, in denen die Verwendung einer zentralen Datenbank nicht erforderlich ist, eine lokale Datenbank verwenden. Diese Lösung bietet sich zum Beispiel bei einer lokalen Inventarprojektmappe an, die nur auf einem Computer verwendet wird.  
+# <a name="using-local-database-files-in-office-solutions-overview"></a>Übersicht über die Verwendung lokaler Datenbankdateien in Office-Lösungen
+  Sie können eine Datenbankdatei, z. B. einer SQL Server Express (MDF) oder einer Microsoft Office Access (MDB)-Datei, in der Office-Projektmappe einschließen. Dies ermöglicht es den Benutzern zu eine lokale Datenbank in Situationen zu verwalten, in denen Verwendung einer zentralen Datenbank nicht erforderlich ist, z. B. in einer lokalen Inventory-Lösung ist, die auf nur einem einzelnen Computer verwendet wird.  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
-## Importieren der Datenbankdatei in ein Projekt  
- Verwenden Sie zum Importieren der Datenbankdatei in das Projekt den **Assistenten zum Konfigurieren von Datenquellen**, um auf Grundlage der Datenbankdatei eine Datenquelle zu erstellen.  Der Assistent fügt dem Projekt die Datenbankdatei und ein typisiertes Dataset hinzu.  
+## <a name="importing-the-database-file-into-a-project"></a>Importieren die Datenbankdatei in einem Projekt  
+ Verwenden, um die Datenbankdatei in Ihr Projekt zu importieren, die **Data Source Configuration Wizard** So erstellen eine Datenquelle basierend auf die Datenbankdatei. Der Assistent fügt die Datenbankdatei und ein typisiertes Dataset zu Ihrem Projekt hinzu.  
   
-## Bereitstellen der Datenbankdatei  
- Der **Assistent zum Konfigurieren von Datenquellen** verwendet einen relativen Pfad, um Verbindungen zur lokalen Datenbankdatei zu erstellen.  Dadurch können Sie die Projektmappen von einem Computer auf einen anderen kopieren, wenn Sie die relativen Positionen der Dateien beibehalten.  
+## <a name="deploying-the-database-file"></a>Bereitstellen der Datenbankdatei  
+ Die **Data Source Configuration Wizard** einen relativen Pfad verwendet, um Verbindungen mit der lokalen Datenbankdatei zu erstellen. Dadurch können Sie die Lösung von einem Computer in eine andere kopieren, wenn Sie die relativen Positionen der Dateien beibehalten.  
   
- Wenn Sie die Projektmappe auf einem Server bereitstellen und anschließend das Dokument an alle Endbenutzer verteilen, müssen Sie zusätzlich die Datenbankdatei manuell verteilen und an derselben relativen Position zum Dokument installieren.  Dies bedeutet, dass der Endbenutzer das Dokument nicht an einen neuen Speicherort auf dem Computer verschieben darf, wenn er nicht auch die Datenbankdatei verschiebt.  
+ Wenn Sie die Projektmappe auf einem Server bereitstellen und anschließend das Dokument an alle Endbenutzer verteilen, müssen Sie auch manuell verteilen die Datenbankdatei und installieren Sie es in der gleichen Position relativ zum Dokument. Dies bedeutet, dass der Endbenutzer das Dokument an einen neuen Speicherort auf dem Computer verschoben werden kann, es sei denn, er auch die Datenbankdatei verschiebt.  
   
-## Lokale Datenbankdateien und das Zwischenspeichern des Datasets  
- In Projektmappen auf Dokumentebene für Microsoft Office Excel oder Microsoft Office Word können Sie Datasets zwischenspeichern, indem Sie die Dataset\-Instanz mit dem Attribut <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> kennzeichnen.  Wenn Sie dem Projekt die Datenbankdatei unter Verwendung des **Assistenten zum Konfigurieren von Datenquellen** hinzufügen, wird dem Projekt automatisch ein typisiertes Dataset hinzugefügt.  Es ist nur selten erforderlich, auf dieses Dataset das Attribut <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> anzuwenden, da die Daten bereits lokal auf dem Computer des Benutzers vorhanden sind.  Weitere Informationen finden Sie unter [Zwischenspeichern von Daten](../vsto/caching-data.md).  
+## <a name="local-database-files-and-caching-the-dataset"></a>Lokale Datenbankdateien und das Dataset zwischenspeichern  
+ In Projektmappen auf Dokumentebene für Microsoft Office Excel und Microsoft Office Word können Sie Datasets im Dokument zwischenspeichern, durch die Markierung der Dataset-Instanz mit dem Attribut <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute>. Wenn Sie die Datenbankdatei zum Projekt mit Hinzufügen der **Data Source Configuration Wizard**, ein typisiertes Dataset wird Ihrem Projekt automatisch hinzugefügt. Es ist nur selten notwendig, gelten <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> mit diesem Dataset, da die Daten bereits lokal auf dem Computer des Benutzers vorhanden ist. Weitere Informationen finden Sie unter [Caching Data](../vsto/caching-data.md).  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Binden von Daten an Steuerelemente in Office-Projektmappen](../vsto/binding-data-to-controls-in-office-solutions.md)   
- [Gewusst wie: Auffüllen von Dokumenten mit Daten aus einer Datenbank](../vsto/how-to-populate-documents-with-data-from-a-database.md)   
- [Gewusst wie: Aktualisieren einer Datenquelle mit Daten eines Hoststeuerelements](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)   
- [Bereitstellen einer Office-Projektmappe](../vsto/deploying-an-office-solution.md)   
+ [Vorgehensweise: Auffüllen von Dokumenten mit Daten aus einer Datenbank](../vsto/how-to-populate-documents-with-data-from-a-database.md)   
+ [Vorgehensweise: Aktualisieren einer Datenquelle mit Daten eines Hoststeuerelements](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)   
+ [Bereitstellen einer Office-Lösung](../vsto/deploying-an-office-solution.md)   
  [Zwischenspeichern von Daten](../vsto/caching-data.md)  
   
   

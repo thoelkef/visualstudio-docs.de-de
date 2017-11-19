@@ -1,68 +1,68 @@
 ---
-title: "IDebugBinder3::GetEEService | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugBinder3::GetEEService"
-helpviewer_keywords: 
-  - "IDebugBinder3::GetEEService-Methode"
+title: IDebugBinder3::GetEEService | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugBinder3::GetEEService
+helpviewer_keywords: IDebugBinder3::GetEEService method
 ms.assetid: eb07aa40-8cd9-4a52-a4c7-4affd2307a01
-caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: aa705de1871530c8f53f5b29b6040909530b6639
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugBinder3::GetEEService
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
+# <a name="idebugbinder3geteeservice"></a>IDebugBinder3::GetEEService
 Diese Methode gibt einen angeforderten Dienst zurück.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```cpp  
-HRESULT GetEEService(  
-   [in] GUID        vendor,  
-   [in] GUID        language,  
-   [in] GUID        iid,  
-   [out] IUnknown** ppService  
+HRESULT GetEEService(  
+   [in] GUID        vendor,  
+   [in] GUID        language,  
+   [in] GUID        iid,  
+   [out] IUnknown** ppService  
 );  
 ```  
   
-```c#  
-Int GetEEService(  
-   Guid       vendor,  
-   Guid       language,  
-   Guid       iid,  
-   out object ppService  
+```csharp  
+Int GetEEService(  
+   Guid       vendor,  
+   Guid       language,  
+   Guid       iid,  
+   out object ppService  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `vendor`  
- \[in\]  `GUID` eines Anbieters \(ein NULL\-Wert ist zulässig\).  
+ [in] `GUID` von einem Anbieter (ein null-Wert ist akzeptabel).  
   
  `language`  
- \[in\]  `GUID` einer Sprache \(ein NULL\-Wert ist zulässig\).  
+ [in] `GUID` einer Sprache (ein null-Wert ist akzeptabel).  
   
  `iid`  
- \[in\]  `IID` des Diensts abzurufen.  
+ [in] `IID` des abzurufenden Diensts.  
   
  `ppService`  
- \[out\]  Eine Schnittstelle des angeforderten Diensts.  
+ [out] Eine Schnittstelle für den angeforderten Dienst.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Hinweise  
- Führen Sie `IID` für die [IEEVisualizerServiceProvider](../../../extensibility/debugger/reference/ieevisualizerserviceprovider.md)\-Schnittstelle \(`IID_IEEVisualizerServiceProvider`\), um festzustellen, ob der Typ\-Schnellansichts für verfügbar ist.  In diesem Fall kann die Ausdrucksauswertung Abrufen der [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md)\-Schnittstelle, um Typ schnellansichten zu unterstützen.  Ausführliche Informationen finden Sie unter [Visualisieren und Anzeigen von Daten](../../../extensibility/debugger/visualizing-and-viewing-data.md).  
+## <a name="remarks"></a>Hinweise  
+ Übergeben Sie die `IID` für die [IEEVisualizerServiceProvider](../../../extensibility/debugger/reference/ieevisualizerserviceprovider.md) Schnittstelle (`IID_IEEVisualizerServiceProvider`) zu überprüfen, ob der Typ Schnellansicht-Dienst verfügbar ist. Wenn also die ausdrucksauswertung erhalten Sie bei der [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md) Schnittstelle, um die Typ-Schnellansichten unterstützen. Finden Sie unter [Visualizing und Anzeige von Daten](../../../extensibility/debugger/visualizing-and-viewing-data.md) für Details.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)   
  [IEEVisualizerServiceProvider](../../../extensibility/debugger/reference/ieevisualizerserviceprovider.md)   
  [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md)   

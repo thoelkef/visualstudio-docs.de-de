@@ -1,43 +1,28 @@
 ---
-title: "Modeling SDK für Visual Studio - domänenspezifische Sprachen | Microsoft-Dokumentation"
+title: "Modeling SDK für Visual Studio - domänenspezifische Sprachen | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-techdebt
+ms.technology: vs-devops-techdebt
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - Domain-Specific Language Tools
 - Domain-Specific Language
 ms.assetid: 17a531e2-1964-4a9d-84fd-6fb1b4aee662
-caps.latest.revision: 77
+caps.latest.revision: "77"
 author: alancameronwills
 ms.author: awills
 manager: douge
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 3d07f82ea737449fee6dfa04a61e195654ba35fa
-ms.openlocfilehash: 86e70eb82260cdced1ee4d74965832fbc7fa56ab
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 48cb7e5a274092a3ed82d2e41137633d12c3be01
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="modeling-sdk-for-visual-studio---domain-specific-languages"></a>Modellierungs-SDK für Visual Studio - Domänenspezifische Sprachen
-Mit dem Modeling SDK für [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], können Sie leistungsstarke modellbasierte Entwicklungstools, die Sie in integrieren können erstellen [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Auf diese Weise können Sie eine oder mehrere Modelldefinitionen erstellen und diese in einen Toolsatz integrieren.  
+Mithilfe der Modellierungs-SDK für [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], können Sie leistungsstarke modellbasierten Entwicklungstools, die Sie in integrieren können erstellen [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Auf diese Weise können Sie eine oder mehrere Modelldefinitionen erstellen und diese in einen Toolsatz integrieren.  
   
  Im Mittelpunkt von MSDK befindet sich die Definition eines Modells, das Sie erstellen, um Konzepte in Ihrem Geschäftsbereich darzustellen. Sie können das Modell mit einer Vielzahl von Tools umgeben, z. B. mit einer Diagrammansicht, der Möglichkeit zur Generierung von Code und anderen Artefakten, Befehlen zum Transformieren des Modells und der Möglichkeit zur Interaktion mit Code und anderen Objekten in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Während Sie das Modell entwickelt, können Sie es mit anderen Modellen und Tools kombinieren, um ein leistungsstarkes Toolset zu erstellen, das auf ihre Entwicklung ausgerichtet ist.  
   
@@ -57,9 +42,9 @@ Mit dem Modeling SDK für [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.m
   
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
  
- [Verwandte Blog-Einträge](https://blogs.msdn.microsoft.com/visualstudioalm/tag/code-index/)
+ [Verwandte Blogbeiträge](https://blogs.msdn.microsoft.com/visualstudioalm/tag/code-index/)
   
- Hilfestellung bei der fortgeschrittenen Techniken und Problembehandlung, besuchen Sie [Visual Studio DSL & Modellierungstool-Erweiterbarkeit Forum](http://go.microsoft.com/fwlink/?LinkID=186074).  
+ Um Hilfe bei der erweiterten Techniken und Problembehandlung, besuchen Sie [Visual Studio DSL & Modeling Tools Extensibility Forum](http://go.microsoft.com/fwlink/?LinkID=186074).  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
  [Erste Schritte mit domänenspezifischen Sprachen](../modeling/getting-started-with-domain-specific-languages.md)  
@@ -93,4 +78,3 @@ Mit dem Modeling SDK für [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.m
  [Gewusst wie: Migrieren einer domänenspezifischen Sprache zu einer neuen Version](../modeling/how-to-migrate-a-domain-specific-language-to-a-new-version.md)  
   
  [API-Referenz für Modellierungs-SDK für Visual Studio](../modeling/api-reference-for-modeling-sdk-for-visual-studio.md)
-

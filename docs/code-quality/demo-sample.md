@@ -1,71 +1,72 @@
 ---
-title: "Demobeispiel | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Codeanalyse, Beispiele"
-  - "Demobeispiel [Visual Studio-ALM]"
+title: Demo-Beispiel | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- demo sample [Visual Studio ALM]
+- code analysis, samples
 ms.assetid: 09e1b9f7-5916-4ed6-a001-5c2d7e710682
-caps.latest.revision: 21
-author: "corob-msft"
-ms.author: "corob"
-manager: "ghogen"
-caps.handback.revision: 21
+caps.latest.revision: "21"
+author: mikeblome
+ms.author: mblome
+manager: ghogen
+ms.openlocfilehash: 32d129e0e895978d50753feedad7940f385ed715
+ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/15/2017
 ---
-# Demobeispiel
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-In den folgenden Verfahren wird das Erstellen des Beispiels für [Exemplarische Vorgehensweise: Analysieren von C\/C\+\+\-Code auf Fehler](../code-quality/walkthrough-analyzing-c-cpp-code-for-defects.md) veranschaulicht.  Folgende Elemente werden in den Verfahren erstellt:  
+# <a name="demo-sample"></a>Demobeispiel
+Dieses Verfahren veranschaulichen das Erstellen des Beispiels für [Exemplarische Vorgehensweise: Analysieren von C/C++-Code für Mängel](../code-quality/walkthrough-analyzing-c-cpp-code-for-defects.md). Die Prozeduren erstellen:  
   
--   Eine [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]\-Projektmappe mit dem Namen CppDemo.  
+-   Ein [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Projektmappe mit dem Namen CppDemo.  
   
--   Ein statisches Bibliotheksprojekt mit dem Namen CodeDefects.  
+-   Ein statisches Bibliotheksprojekt mit dem Namen CodeDefects aus.  
   
--   Ein statisches Bibliotheksprojekt mit dem Namen Annotations.  
+-   Ein statisches Bibliotheksprojekt mit dem Namen Anmerkungen.  
   
- Darüber hinaus wird in den Verfahren der Code für die Header\- und CPP\-Dateien für die statischen Bibliotheken bereitgestellt.  
+ Die Prozeduren bieten auch den Code für die Header und CPP-Dateien für den statischen Bibliotheken.  
   
-### Erstellen der CppDemo\-Projektmappe und des CodeDefects\-Projekts  
+### <a name="create-the-cppdemo-solution-and-the-codedefects-project"></a>Erstellen der CppDemo-Projektmappe und das Projekt CodeDefects  
   
-1.  Klicken Sie im Menü **Datei** auf **Neu** und anschließend auf **Neues Projekt**.  
+1.  Klicken Sie auf die **Datei** Sie im Menü **neu**, und klicken Sie dann auf **neues Projekt**.  
   
-2.  Erweitern Sie in der Strukturliste **Projekttypen** den Knoten **Andere Sprachen**, wenn Visual C\+\+ nicht als Standardsprache in VS verwendet wird.  
+2.  In der **-Projekttypen** Struktur Liste, erweitern Sie bei Visual C++ nicht als Standardsprache in VS ist **andere Sprachen**.  
   
-3.  Erweitern Sie **Visual C\+\+**, und klicken Sie dann auf **Allgemein**.  
+3.  Erweitern Sie **Visual C++**, und klicken Sie dann auf **allgemeine**.  
   
-4.  Klicken Sie unter **Vorlagen** auf **Leeres Projekt**.  
+4.  In **Vorlagen**, klicken Sie auf **leeres Projekt**.  
   
-5.  Geben Sie im Textfeld **Name** die Zeichenfolge **CodeDefects** ein.  
+5.  In der **Namen** Textfeld **CodeDefects**.  
   
-6.  Aktivieren Sie das Kontrollkästchen **Projektmappenverzeichnis erstellen**.  
+6.  Wählen Sie die **Projektmappenverzeichnis erstellen** Kontrollkästchen.  
   
-7.  Geben Sie **CppDemo** im Textfeld **Projektmappenname** ein.  
+7.  In der **Projektmappenname** Textfeld **CppDemo**.  
   
-### Konfigurieren des CodeDefects\-Projekts als statische Bibliothek  
+### <a name="configure-the-codedefects-project-as-a-static-library"></a>Konfigurieren Sie das Projekt CodeDefects als statische Bibliothek  
   
-1.  Klicken Sie im Projektmappen\-Explorer mit der rechten Maustaste auf **CodeDefects**, und klicken Sie anschließend auf **Eigenschaften**.  
+1.  Klicken Sie im Projektmappen-Explorer mit der Maustaste **CodeDefects** , und klicken Sie dann auf **Eigenschaften**.  
   
-2.  Erweitern Sie die **Konfigurationseigenschaften**, und klicken Sie dann **Allgemein**.  
+2.  Erweitern Sie **Konfigurationseigenschaften** , und klicken Sie dann auf **allgemeine**.  
   
-3.  Wählen Sie in der Liste **Allgemein** den Text in der Spalte neben **Zielerweiterung** aus, und geben Sie **.lib** ein.  
+3.  In der **allgemeine** Liste, wählen Sie den Text in der Spalte neben **Zielerweiterung**, und geben Sie dann **lib**.  
   
-4.  Klicken Sie unter **Projektstandards** auf die Spalte neben **Konfigurationstyp** und anschließend auf **Statische Bibliothek \(.lib\)**.  
+4.  In **Projektstandards**, klicken Sie auf die Spalte neben **Konfigurationstyp**, und klicken Sie dann auf **statische Bibliothek (.lib)**.  
   
-### Hinzufügen der Headerdatei und der Quelldatei zum CodeDefects\-Projekt  
+### <a name="add-the-header-and-source-file-to-the-codedefects-project"></a>Fügen Sie die Header- und Quelle-Datei zum CodeDefects-Projekt  
   
-1.  Erweitern Sie im Projektmappen\-Explorer **CodeDefects**, klicken Sie mit der rechten Maustaste auf **Headerdateien**, zeigen Sie auf **Hinzufügen**, und klicken Sie dann auf **Neues Element**.  
+1.  Erweitern Sie im Projektmappen-Explorer **CodeDefects**, mit der rechten Maustaste **Headerdateien**, klicken Sie auf **hinzufügen**, und klicken Sie dann auf **neues Element**.  
   
-2.  Klicken Sie im Dialogfeld **Neues Element hinzufügen** auf **Code** und dann auf **Headerdatei \(.h\)**.  
+2.  In der **neues Element hinzufügen** (Dialogfeld), klicken Sie auf **Code**, und klicken Sie dann auf **Headerdatei (. h)**.  
   
-3.  Geben Sie in das Feld **Name** den Namen **Bug.cpp** ein, und klicken Sie dann auf **Hinzufügen**.  
+3.  In der **Namen** geben **Bug.cpp** , und klicken Sie dann auf **hinzufügen**.  
   
-4.  Kopieren Sie den folgenden Code, und fügen Sie ihn im [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]\-Editor in die Datei **Bug.cpp** ein.  
+4.  Kopieren Sie den folgenden Code, und fügen Sie ihn in die **Bug.cpp** in der Datei die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Editor.  
   
     ```  
     #include <windows.h>  
@@ -87,13 +88,13 @@ In den folgenden Verfahren wird das Erstellen des Beispiels für [Exemplarische 
     const int ACCOUNT_DOMAIN_LEN = 128;  
     ```  
   
-5.  Klicken Sie im Projektmappen\-Explorer mit der rechten Maustaste auf **Quelldateien**, zeigen Sie auf **Neu**, und klicken Sie anschließend auf **Neues Element**.  
+5.  Klicken Sie im Projektmappen-Explorer mit der Maustaste **Quelldateien**, zeigen Sie auf **neu**, und klicken Sie dann auf **neues Element**.  
   
-6.  Klicken Sie im Dialogfeld **Neues Element hinzufügen** auf **C\+\+\-Datei \(.cpp\)**.  
+6.  In der **neues Element hinzufügen** (Dialogfeld), klicken Sie auf **C++-Datei (.cpp)**  
   
-7.  Geben Sie in das Feld **Name** den Namen **Bug.cpp** ein, und klicken Sie dann auf **Hinzufügen**.  
+7.  In der **Namen** geben **Bug.cpp** , und klicken Sie dann auf **hinzufügen**.  
   
-8.  Kopieren Sie den folgenden Code und fügen sie ihn in die Datei "Bug.h" im [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]\-Editor ein.  
+8.  Kopieren Sie den folgenden Code, und fügen Sie ihn in die Datei "Bug.h" in der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Editor.  
   
     ```  
     #include <stdlib.h>  
@@ -153,33 +154,33 @@ In den folgenden Verfahren wird das Erstellen des Beispiels für [Exemplarische 
     }  
     ```  
   
-9. Klicken Sie im Menü **Datei** auf **Alle speichern**.  
+9. Klicken Sie auf die **Datei** Menü, und klicken Sie dann auf **alle speichern**.  
   
-### Hinzufügen und Konfigurieren des Annotations\-Projekts als statische Bibliothek  
+### <a name="add-the-annotations-project-and-configure-it-as-a-static-library"></a>Fügen Sie die Anmerkungen-Projekt hinzu und konfiguriert ihn als eine statische Bibliothek  
   
-1.  Klicken Sie im Projektmappen\-Explorer auf **CppDemo**, zeigen Sie auf **Hinzufügen**, und klicken Sie auf **Neues Projekt**.  
+1.  Klicken Sie im Projektmappen-Explorer auf **CppDemo**, zeigen Sie auf **hinzufügen**, und klicken Sie dann auf **neues Projekt**.  
   
-2.  Erweitern Sie im Dialogfeld **Neues Projekt hinzufügen** den Knoten "Visual C\+\+", klicken Sie auf **Allgemein** und anschließend auf **Leeres Projekt**.  
+2.  In der **neues Projekt hinzufügen** Dialogfeld Feld, erweitern Sie die Visual C++, klicken Sie auf **allgemeine**, und klicken Sie dann auf **leeres Projekt**.  
   
-3.  Geben Sie im Textfeld **Name** den Namen **Annotations** ein, und klicken Sie auf **Hinzufügen**.  
+3.  In der **Namen** Textfeld **Anmerkungen**, und klicken Sie dann auf **hinzufügen**.  
   
-4.  Klicken Sie im Projektmappen\-Explorer mit der rechten Maustaste auf **Annotations**, und klicken Sie anschließend auf **Eigenschaften**.  
+4.  Klicken Sie im Projektmappen-Explorer mit der Maustaste **Anmerkungen** , und klicken Sie dann auf **Eigenschaften**.  
   
-5.  Erweitern Sie die **Konfigurationseigenschaften**, und klicken Sie dann **Allgemein**.  
+5.  Erweitern Sie **Konfigurationseigenschaften** , und klicken Sie dann auf **allgemeine**.  
   
-6.  Wählen Sie in der Liste **Allgemein** den Text in der Spalte neben **Zielerweiterung** aus, und geben Sie **.lib** ein.  
+6.  In der **allgemeine** Liste, wählen Sie den Text in der Spalte neben **Zielerweiterung**, und geben Sie dann **lib**.  
   
-7.  Klicken Sie unter **Projektstandards** auf die Spalte neben **Konfigurationstyp** und anschließend auf **Statische Bibliothek \(.lib\)**.  
+7.  In **Projektstandards**, klicken Sie auf die Spalte neben **Konfigurationstyp**, und klicken Sie dann auf **statische Bibliothek (.lib)**.  
   
-### Hinzufügen der Headerdatei und der Quelldatei zum Annotations\-Projekt  
+### <a name="add-the-header-file-and-source-file-to-the-annotations-project"></a>Hinzufügen der Headerdatei und der Quelldatei zum Annotations-Projekt  
   
-1.  Erweitern Sie im Projektmappen\-Explorer den Knoten **Annotations**, und klicken Sie mit der rechten Maustaste auf **Headerdateien**. Klicken Sie auf **Hinzufügen** und dann auf **Neues Element**.  
+1.  Erweitern Sie im Projektmappen-Explorer **Anmerkungen**, mit der rechten Maustaste **Headerdateien**, klicken Sie auf **hinzufügen**, und klicken Sie dann auf **neues Element**.  
   
-2.  Klicken Sie im Dialogfeld **Neues Element hinzufügen** auf **Headerdatei \(.h\)**.  
+2.  In der **neues Element hinzufügen** (Dialogfeld), klicken Sie auf **Headerdatei (. h)**.  
   
-3.  Geben Sie in das Feld **Name** den Namen **annotations.h** ein, und klicken Sie dann auf **Hinzufügen**.  
+3.  In der **Namen** geben **annotations.h** , und klicken Sie dann auf **hinzufügen**.  
   
-4.  Kopieren Sie den folgenden Code und fügen sie ihn in die Datei **annotations.h** im [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]\-Editor ein.  
+4.  Kopieren Sie den folgenden Code, und fügen Sie ihn in die **annotations.h** in der Datei die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Editor.  
   
     ```  
     #include <CodeAnalysis/SourceAnnotations.h>  
@@ -196,13 +197,13 @@ In den folgenden Verfahren wird das Erstellen des Beispiels für [Exemplarische 
   
     ```  
   
-5.  Klicken Sie im Projektmappen\-Explorer mit der rechten Maustaste auf **Quelldateien**, zeigen Sie auf **Neu**, und klicken Sie anschließend auf **Neues Element**.  
+5.  Klicken Sie im Projektmappen-Explorer mit der Maustaste **Quelldateien**, zeigen Sie auf **neu**, und klicken Sie dann auf **neues Element**.  
   
-6.  Klicken Sie im Dialogfeld **Neues Element hinzufügen** auf **Code** und dann auf **C\+\+\-Datei \(.cpp\)**.  
+6.  In der **neues Element hinzufügen** (Dialogfeld), klicken Sie auf **Code** , und klicken Sie dann auf **C++-Datei (.cpp)**  
   
-7.  Geben Sie im Feld **Name annotations.cpp** ein, und klicken Sie dann auf **Hinzufügen**.  
+7.  In der **Namen** geben **annotations.cpp** , und klicken Sie dann auf **hinzufügen**.  
   
-8.  Kopieren Sie den folgenden Code und fügen sie ihn in die Datei **annotations.cpp** im [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]\-Editor ein.  
+8.  Kopieren Sie den folgenden Code, und fügen Sie ihn in die **annotations.cpp** in der Datei die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Editor.  
   
     ```  
     #include <CodeAnalysis/SourceAnnotations.h>  
@@ -231,4 +232,4 @@ In den folgenden Verfahren wird das Erstellen des Beispiels für [Exemplarische 
   
     ```  
   
-9. Klicken Sie im Menü **Datei** auf **Alle speichern**.
+9. Klicken Sie auf die **Datei** Menü, und klicken Sie dann auf **alle speichern**.

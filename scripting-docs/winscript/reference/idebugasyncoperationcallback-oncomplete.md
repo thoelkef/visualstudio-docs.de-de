@@ -1,45 +1,48 @@
 ---
-title: "IDebugAsyncOperationCallBack::onComplete | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IDebugAsyncOperationCallBack::onComplete | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IDebugAsyncOperationCallBack.onComplete
 apilocation: jscript.dll
-helpviewer_keywords: 
-  - "IDebugAsyncOperationCallBack::onComplete"
+helpviewer_keywords: IDebugAsyncOperationCallBack::onComplete
 ms.assetid: d4023f5a-41f9-4948-b0dc-3317d61bb783
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: bc55918c25da695f9eab470bf39fc648910ddc97
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# IDebugAsyncOperationCallBack::onComplete
-signalisiert, dass ein Ergebnis aus einem asynchronen Debugvorgang verfügbar ist.  
+# <a name="idebugasyncoperationcallbackoncomplete"></a>IDebugAsyncOperationCallBack::onComplete
+Signalisiert, dass ein Ergebnis aus einem asynchronen Debugvorgang verfügbar ist.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 HRESULT onComplete();  
 ```  
   
-#### Parameter  
- Diese Methode verwendet keine Parameter.  
+#### <a name="parameters"></a>Parameter  
+ Diese Methode nimmt keine Parameter.  
   
-## Rückgabewert  
- Die Methode gibt ein `HRESULT` zurück.  Zu den möglichen Werten zählen, aber nicht zu, die in der folgenden Tabelle beschränkt.  
+## <a name="return-value"></a>Rückgabewert  
+ Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
   
-|Wert|Description|  
-|----------|-----------------|  
+|Wert|Beschreibung|  
+|-----------|-----------------|  
 |`S_OK`|Die Methode war erfolgreich.|  
   
-## Hinweise  
- dieser Methode signalisiert, dass ein Ergebnis von einem `IDebugAsyncOperation`\-Objekt verfügbar ist.  Das Ereignis wird im Debuggerthread.  
+## <a name="remarks"></a>Hinweise  
+ Diese Methode signalisiert, ein Ergebnis von verfügbar ist ein `IDebugAsyncOperation` Objekt. Dieses Ereignis wird im Debuggerthread ausgelöst.  
   
-## Siehe auch  
- [IDebugAsyncOperationCallBack\-Schnittstelle](../../winscript/reference/idebugasyncoperationcallback-interface.md)   
- [IDebugAsyncOperation\-Schnittstelle](../../winscript/reference/idebugasyncoperation-interface.md)
+## <a name="see-also"></a>Siehe auch  
+ [IDebugAsyncOperationCallBack-Schnittstelle](../../winscript/reference/idebugasyncoperationcallback-interface.md)   
+ [IDebugAsyncOperation-Schnittstelle](../../winscript/reference/idebugasyncoperation-interface.md)

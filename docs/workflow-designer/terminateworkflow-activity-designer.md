@@ -1,40 +1,43 @@
 ---
-title: "TerminateWorkflow-Aktivit&#228;tsdesigner | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
-f1_keywords: 
-  - "System.Activities.Statements.TerminateWorkflow.UI"
+title: "TerminateWorkflow-Aktivitätsdesigner | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
+f1_keywords: System.Activities.Statements.TerminateWorkflow.UI
 ms.assetid: 08e632ed-0724-4fb4-9df1-f8d443eaf0ac
-caps.latest.revision: 4
-author: "ErikRe"
-ms.author: "erikre"
-manager: "erikre"
-caps.handback.revision: 4
+caps.latest.revision: "4"
+author: ErikRe
+ms.author: erikre
+manager: erikre
+ms.openlocfilehash: 0a3b7c7cf56aa465f88ae918056e2d71ad6c41e4
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# TerminateWorkflow-Aktivit&#228;tsdesigner
-Der **TerminateWorkflow**\-Aktivitätsdesigner wird verwendet, um eine <xref:System.Activities.Statements.TerminateWorkflow>\-Aktivität zu erstellen und zu konfigurieren.  
+# <a name="terminateworkflow-activity-designer"></a>TerminateWorkflow-Aktivitätsdesigner
+Die **TerminateWorkflow** Aktivitäts-Designer dient zum Erstellen und Konfigurieren einer <xref:System.Activities.Statements.TerminateWorkflow> Aktivität.  
   
-## Die TerminateWorkflow\-Aktivität  
- Mit der <xref:System.Activities.Statements.TerminateWorkflow>\-Aktivität können Sie die Ausführung eines Workflows beenden.  
+## <a name="the-terminateworkflow-activity"></a>Die TerminateWorkflow-Aktivität  
+ Mit der <xref:System.Activities.Statements.TerminateWorkflow>-Aktivität können Sie die Ausführung eines Workflows beenden.  
   
-### Verwenden des TerminateWorkflow\-Aktivitätsdesigners  
- Der **TerminateWorkflow**\-Aktivitätsdesigner befindet sich in der Kategorie **Laufzeit** der **Toolbox**, auf die Sie durch Klicken auf die Registerkarte **Toolbox** zugreifen. \(Alternativ können Sie **Toolbox** im Menü **Ansicht** wählen oder die Tastenkombination STRG\+ALT\+X verwenden.\)  
+### <a name="using-the-terminateworkflow-activity-designer"></a>Verwenden des TerminateWorkflow-Aktivitätsdesigners  
+ Die **TerminateWorkflow** Aktivitäts-Designer finden Sie in der **Runtime** Kategorie von der **Toolbox**, die erfolgt durch Klicken auf die **Toolbox** Registerkarte (Wählen Sie alternativ **Toolbox** aus der **Ansicht** Menüs oder STRG + ALT + X drücken.)  
   
- Sie können den **TerminateWorkflow**\-Aktivitätsdesigner aus der **Toolbox** ziehen und auf der [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)]\-Oberfläche ablegen, wo normalerweise Aktivitäten platziert werden, z. B. in einem <xref:System.Activities.Statements.Sequence>\-Element.Hierdurch erstellen Sie eine <xref:System.Activities.Statements.TerminateWorkflow>\-Aktivität mit dem **DisplayName**\-Standardwert TerminateWorkflow.Der <xref:System.Activities.Activity.DisplayName%2A>\-Wert kann im Header des **TerminateWorkflow**\-Aktivitätsdesigners oder im Feld **DisplayName** des Eigenschaftenrasters geändert werden.  
+ Die **TerminateWorkflow** Aktivitäts-Designer gezogen werden kann, aus der **Toolbox** gezogen und auf die [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] -Oberfläche ablegen, wo Aktivitäten normalerweise platziert werden, z. B. in einem <xref:System.Activities.Statements.Sequence>. Dies erstellt eine <xref:System.Activities.Statements.TerminateWorkflow> -Aktivität mit dem standardmäßigen **DisplayName** des TerminateWorkflow. Die <xref:System.Activities.Activity.DisplayName%2A> kann im Header des bearbeitet werden die **TerminateWorkflow** Aktivitäts-Designer oder in der **DisplayName** Feld des Eigenschaftenrasters.  
   
-### Die TerminateWorkflow\-Eigenschaften  
- Die folgende Tabelle enthält die <xref:System.Activities.Statements.TerminateWorkflow>\-Eigenschaften und eine Beschreibung zu deren Verwendung im Designer.Diese Eigenschaften können im Eigenschaftenraster bearbeitet werden, einige davon können auch auf der [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)]\-Oberfläche bearbeitet werden.  
+### <a name="the-terminateworkflow-properties"></a>Die TerminateWorkflow-Eigenschaften  
+ In der folgenden Tabelle werden die <xref:System.Activities.Statements.TerminateWorkflow>-Eigenschaften aufgeführt, und es wird beschrieben, wie sie im Designer verwendet werden. Diese Eigenschaften können im Eigenschaftenraster bearbeitet werden, einige davon können auch auf der [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)]-Oberfläche bearbeitet werden.  
   
 |Eigenschaftenname|Erforderlich|Verwendung|  
-|-----------------------|------------------|----------------|  
-|<xref:System.Activities.Activity.DisplayName%2A>|Nein|Der Anzeigename der <xref:System.Activities.Statements.TerminateWorkflow>\-Aktivität.Der Standardwert ist TerminateWorkflow.Der Anzeigename ist zwar nicht unbedingt erforderlich, die Verwendung wird jedoch empfohlen.|  
-|<xref:System.Activities.Statements.TerminateWorkflow.Exception%2A>|Nein|Die Ausnahme, die beim Beenden des Workflows ausgelöst werden soll.Legen Sie diese Eigenschaft im Eigenschaftenraster fest.|  
-|<xref:System.Activities.Statements.TerminateWorkflow.Reason%2A>|Nein|Die Ursache für das Beenden des Workflows.Legen Sie diese Eigenschaft im Eigenschaftenraster fest.|  
+|-------------------|--------------|-----------|  
+|<xref:System.Activities.Activity.DisplayName%2A>|False|Der Anzeigename der <xref:System.Activities.Statements.TerminateWorkflow>-Aktivität. Der Standardwert ist TerminateWorkflow. Obwohl der Anzeigename nicht unbedingt erforderlich ist, wird empfohlen, einen Anzeigenamen zu verwenden.|  
+|<xref:System.Activities.Statements.TerminateWorkflow.Exception%2A>|False|Die Ausnahme, die beim Beenden des Workflows ausgelöst werden soll. Legen Sie diese Eigenschaft im Eigenschaftenraster fest.|  
+|<xref:System.Activities.Statements.TerminateWorkflow.Reason%2A>|False|Die Ursache für das Beenden des Workflows. Legen Sie diese Eigenschaft im Eigenschaftenraster fest.|  
   
-## Siehe auch  
- [Laufzeit](../workflow-designer/runtime-activity-designers.md)   
- [Persist](../workflow-designer/persist-activity-designer.md)
+## <a name="see-also"></a>Siehe auch  
+ [Common Language Runtime](../workflow-designer/runtime-activity-designers.md)   
+ [Beibehalten](../workflow-designer/persist-activity-designer.md)

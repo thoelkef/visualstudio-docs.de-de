@@ -1,49 +1,49 @@
 ---
-title: "IDebugEngine3::SetAllExceptions | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugEngine3::SetAllExceptions"
-helpviewer_keywords: 
-  - "IDebugEngine3::SetAllExceptions"
+title: IDebugEngine3::SetAllExceptions | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugEngine3::SetAllExceptions
+helpviewer_keywords: IDebugEngine3::SetAllExceptions
 ms.assetid: 8f03a6ac-a854-42f7-933c-a2df1b351975
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 33801c7228e9f4b43c76ef3f29f26631bdad5edf
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugEngine3::SetAllExceptions
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Diese Methode legt den Zustand aller ausstehenden Ausnahmen fest.  
+# <a name="idebugengine3setallexceptions"></a>IDebugEngine3::SetAllExceptions
+Diese Methode legt den Zustand aller ausstehenden Ausnahmen.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```cpp  
-HRESULT SetAllExceptions(  
-   EXCEPTION_STATE dwState  
+HRESULT SetAllExceptions(  
+   EXCEPTION_STATE dwState  
 );  
 ```  
   
-```c#  
+```csharp  
 int SetAllExceptions(  
-   enum_EXCEPTION_STATE dwState  
+   enum_EXCEPTION_STATE dwState  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `dwState`  
- \[in\]  Einer der [EXCEPTION\_STATE](../../../extensibility/debugger/reference/exception-state.md)\-Werte.  
+ [in] Eines der [EXCEPTION_STATE](../../../extensibility/debugger/reference/exception-state.md) Werte.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. Gibt andernfalls Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird Fehlercode zurückgegeben.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDebugEngine3](../../../extensibility/debugger/reference/idebugengine3.md)   
- [EXCEPTION\_STATE](../../../extensibility/debugger/reference/exception-state.md)
+ [EXCEPTION_STATE](../../../extensibility/debugger/reference/exception-state.md)

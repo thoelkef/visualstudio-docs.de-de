@@ -1,87 +1,87 @@
 ---
-title: "CA1063: IDisposable korrekt implementieren | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "ImplementIDisposableCorrectly"
-  - "CA1063"
-helpviewer_keywords: 
-  - "CA1063"
-  - "ImplementIDisposableCorrectly"
+title: 'CA1063: Implementieren IDisposable korrekt | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- ImplementIDisposableCorrectly
+- CA1063
+helpviewer_keywords:
+- CA1063
+- ImplementIDisposableCorrectly
 ms.assetid: 12afb1ea-3a17-4a3f-a1f0-fcdb853e2359
-caps.latest.revision: 17
-caps.handback.revision: 17
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
+caps.latest.revision: "17"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 55784b95f12d83318b8d217282c3a2bb8933d76b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# CA1063: IDisposable korrekt implementieren
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="ca1063-implement-idisposable-correctly"></a>CA1063: IDisposable korrekt implementieren
 |||  
 |-|-|  
 |TypeName|ImplementIDisposableCorrectly|  
 |CheckId|CA1063|  
-|Kategorie \(Category\)|Microsoft.Design|  
+|Kategorie|Microsoft.Design|  
 |Unterbrechende Änderung|Nicht unterbrechend|  
   
-## Ursache  
- `IDisposable` wurde nicht korrekt implementiert.  Zu den möglichen Gründen für dieses Problem gehören:  
+## <a name="cause"></a>Ursache  
+ `IDisposable`ist nicht ordnungsgemäß implementiert werden. Einige Ursachen für dieses Problem sind hier aufgeführt:  
   
--   IDisposable wurde in der Klasse erneut implementiert.  
+-   IDisposable ist neu in der Klasse implementiert.  
   
--   Finalize wurde erneut überschrieben.  
+-   Finalize erneut überschrieben wird.  
   
--   Dispose wurde überschrieben.  
+-   Dispose überschrieben wird.  
   
--   Dispose\(\) ist nicht public, sealed oder mit Dispose bezeichnet.  
+-   Dispose() ist nicht öffentlich, versiegelt oder mit dem Namen Dispose.  
   
--   Dispose\(bool\) ist nicht protected, virtual oder unsealed.  
+-   Dispose(bool) ist nicht geschützten, virtuellen oder unversiegelte.  
   
--   In unversiegelten Typen muss Dispose\(\) Dispose\(true\) aufrufen.  
+-   Unversiegelte Typen muss Dispose() Dispose(true) aufrufen.  
   
--   Bei unversiegelten Typen ruft die Finalize\-Implementierung weder Dispose\(bool\) noch den Basisklassen\-Finalizer noch beide auf.  
+-   Für unversiegelte Typen aufrufen die Finalize-Implementierung nicht eine oder beide Dispose(bool) oder den Basisklassen-Finalizer.  
   
- Bei einem Verstoß gegen eines dieser Muster wird diese Warnung ausgelöst.  
+ Verstoß gegen eine dieser Muster wird diese Warnung ausgelöst.  
   
- Jeder unversiegelte IDisposable\-Stammtyp muss eine eigene geschützte virtuelle void Dispose \(bool\)\-Methode bereitstellen.  Dispose\(\) muss Dipose\(true\) und Finalize muss Dispose\(false\) aufrufen.  Wenn Sie einen unversiegelten IDisposable\-Stammtyp erstellen, müssen Sie Dispose\(bool\) definieren und aufrufen.  Weitere Informationen finden Sie unter [Cleaning Up Unmanaged Resources](../Topic/Cleaning%20Up%20Unmanaged%20Resources.md) im Abschnitt [Framework\-Entwurfsrichtlinien](../Topic/Framework%20Design%20Guidelines.md) der Dokumentation zu .NET Framework.  
+ Jeder unversiegelte IDisposable-Typ muss eigene geschützte virtuelle "void" Dispose(bool) Methode angeben. Dispose() muss Dipose(true) und Finalize muss Dispose(false) aufrufen. Wenn Sie eine unversiegelte IDisposable-Stammtyp erstellen, müssen Sie Dispose(bool) definieren und ihn aufrufen. Weitere Informationen finden Sie unter [Bereinigen von nicht verwalteten Ressourcen](/dotnet/standard/garbage-collection/unmanaged) in der [Framework-Entwurfsrichtlinien](/dotnet/standard/design-guidelines/index) Abschnitt der .NET Framework-Dokumentation.  
   
-## Regelbeschreibung  
- Alle IDisposable\-Typen müssen das Dispose\-Muster korrekt implementieren.  
+## <a name="rule-description"></a>Regelbeschreibung  
+ Alle IDisposable-Typen müssen das Dispose-Muster korrekt implementieren.  
   
-## Behandeln von Verstößen  
- Untersuchen Sie den Code, um festzustellen, durch welche der folgenden Lösungen dieser Verstoß behoben werden kann.  
+## <a name="how-to-fix-violations"></a>Behandeln von Verstößen  
+ Überprüfen Sie den Code, und bestimmen Sie, welche der folgenden Lösungen diese Verletzung zu korrigieren.  
   
--   Entfernen Sie IDisposable aus der Liste von Schnittstellen, die durch {0} implementiert wurden, und überschreiben Sie stattdessen die Dispose\-Implementierung der Basisklasse.  
+-   Entfernen Sie IDisposable aus der Liste der Schnittstellen, die von {0} implementiert, und überschreiben Sie stattdessen die Dispose-Implementierung der Basisklasse.  
   
--   Entfernen Sie den Finalizer aus dem Typ {0}, überschreiben Sie Dispose\(bool disposing\), und platzieren Sie die Finalize\-Logik in dem Codepfad, in dem 'disposing' False ist.  
+-   Entfernen Sie den Finalizer von Typ ' {0} ', überschreiben Sie Dispose (Bool disposing), und platzieren Sie die Finalize-Logik in der Codepfad, in denen "Offen" "false".  
   
--   Entfernen Sie {0}, überschreiben Sie Dispose\(bool disposing\), und platzieren Sie die Dispose\-Logik in dem Codepfad, in dem 'disposing' True ist.  
+-   Entfernen von {0}, überschreiben Sie Dispose (Bool disposing) und platzieren Sie die Dispose-Logik in der Codepfad, in denen "Offen" "true".  
   
--   Vergewissern Sie sich, dass {0} als public und sealed deklariert ist.  
+-   Stellen Sie sicher, dass diese {0} als öffentlich und versiegelt deklariert ist.  
   
--   Benennen Sie {0} in 'Dispose' um, und vergewissern Sie sich, dass {0} als public und sealed deklariert ist.  
+-   Benennen Sie die {0} in 'Dispose', und stellen Sie sicher, dass es als öffentlich und versiegelt deklariert ist.  
   
--   Vergewissern Sie sich, dass {0} als protected, virtual und unsealed deklariert ist.  
+-   Stellen Sie sicher, dass diese {0} deklariert wird, als geschützt, virtuelle und nicht versiegelte.  
   
--   Ändern Sie {0} so, dass Dispose\(true\) und anschließend GC.SuppressFinalize in der aktuellen Objektinstanz aufgerufen \('this' oder 'Me' in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]\) und anschließend ein Wert zurückgegeben wird.  
+-   Ändern Sie {0} so, dass es Dispose(true) und anschließend GC aufruft. SuppressFinalize auf die aktuelle Objektinstanz ('this' oder 'Me' in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]), und gibt dann zurück.  
   
--   Ändern Sie {0} so, dass Dispose\(false\) aufgerufen und anschließend ein Wert zurückgegeben wird.  
+-   Ändern Sie {0} so, dass Dispose(false) aufgerufen und gibt dann zurück.  
   
--   Wenn Sie eine unversiegelte IDisposable\-Stammklasse schreiben, stellen Sie sicher, dass die Implementierung von IDisposable dem Muster folgt, das früher in diesem Abschnitt beschrieben wird.  
+-   Wenn Sie eine unversiegelte IDisposable-Klasse schreiben, stellen Sie sicher, dass die Implementierung von IDisposable dem Muster folgt, das weiter oben in diesem Abschnitt beschrieben wird.  
   
-## Wann sollten Warnungen unterdrückt werden?  
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?  
  Unterdrücken Sie keine Warnung dieser Regel.  
   
-## Beispiel für Pseudocode  
- Der folgende Pseudocode enthält ein allgemeines Beispiel für die Implementierung von Dispose\(bool\) in einer Klasse, die verwaltete und systemeigene Ressourcen verwendet.  
+## <a name="pseudo-code-example"></a>Pseudocodebeispiel  
+ Der folgende Pseudocode enthält ein allgemeines Beispiel wie Dispose(bool) implementiert werden soll, in einer Klasse verwendet verwaltete und systemeigene Ressourcen.  
   
 ```  
 public class Resource : IDisposable   

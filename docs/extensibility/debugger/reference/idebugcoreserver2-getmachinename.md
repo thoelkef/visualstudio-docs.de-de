@@ -1,48 +1,48 @@
 ---
-title: "IDebugCoreServer2::GetMachineName | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugCoreServer2::GetName"
-helpviewer_keywords: 
-  - "IDebugCoreServer2::GetName"
+title: IDebugCoreServer2::GetMachineName | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugCoreServer2::GetName
+helpviewer_keywords: IDebugCoreServer2::GetName
 ms.assetid: 693bd794-7215-4f07-8651-b57366d39953
-caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: d44fa397423d4b7c50f3eac0ae860e4c84cc938a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugCoreServer2::GetMachineName
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Ruft den Namen des Computers ab, auf dem der zentralen Server ausgeführt wird.  
+# <a name="idebugcoreserver2getmachinename"></a>IDebugCoreServer2::GetMachineName
+Ruft den Namen des Computers, auf der Server Core ausgeführt wird.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT GetName(   
-   BSTR* pbstrName  
+```cpp  
+HRESULT GetName(   
+   BSTR* pbstrName  
 );  
 ```  
   
-```c#  
-int GetName(   
-   out string pbstrName  
+```csharp  
+int GetName(   
+   out string pbstrName  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `pbstrName`  
- \[out\]  Gibt eine Zeichenfolge zurück, die den Namen des Computers enthält.  
+ [out] Gibt eine Zeichenfolge, die mit dem Namen des Computers zurück.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)

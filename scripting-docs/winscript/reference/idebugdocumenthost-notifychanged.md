@@ -1,44 +1,47 @@
 ---
-title: "IDebugDocumentHost::NotifyChanged | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IDebugDocumentHost::NotifyChanged | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IDebugDocumentHost.NotifyChanged
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "IDebugDocumentHost::NotifyChanged"
+helpviewer_keywords: IDebugDocumentHost::NotifyChanged
 ms.assetid: 33a4a54f-3bcb-4422-b3c0-bdbf46590f34
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 1890aeb64346994480a7e4ef452543107bd1544e
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# IDebugDocumentHost::NotifyChanged
-Benachrichtigt den Host, dass die Quelldatei des Dokuments gespeichert wurde und dass sein Inhalt aktualisiert werden soll.  
+# <a name="idebugdocumenthostnotifychanged"></a>IDebugDocumentHost::NotifyChanged
+Benachrichtigt den Host, dass das Dokument Quelldatei gespeichert wurde und dessen Inhalt aktualisiert werden sollen.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 HRESULT NotifyChanged();  
 ```  
   
-#### Parameter  
- Diese Methode verwendet keine Parameter.  
+#### <a name="parameters"></a>Parameter  
+ Diese Methode nimmt keine Parameter.  
   
-## Rückgabewert  
- Die Methode gibt ein `HRESULT` zurück.  Zu den möglichen Werten zählen, aber nicht zu, die in der folgenden Tabelle beschränkt.  
+## <a name="return-value"></a>Rückgabewert  
+ Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
   
-|Wert|Description|  
-|----------|-----------------|  
+|Wert|Beschreibung|  
+|-----------|-----------------|  
 |`S_OK`|Die Methode war erfolgreich.|  
   
-## Hinweise  
- Diese Methode den Host benachrichtigt, dass die Quelldatei des Dokuments gespeichert wurde und dass sein Inhalt aktualisiert werden soll.  
+## <a name="remarks"></a>Hinweise  
+ Diese Methode benachrichtigt den Host, dass das Dokument Quelldatei gespeichert wurde und dessen Inhalt aktualisiert werden sollen.  
   
-## Siehe auch  
- [IDebugDocumentHost\-Schnittstelle](../../winscript/reference/idebugdocumenthost-interface.md)
+## <a name="see-also"></a>Siehe auch  
+ [IDebugDocumentHost-Schnittstelle](../../winscript/reference/idebugdocumenthost-interface.md)

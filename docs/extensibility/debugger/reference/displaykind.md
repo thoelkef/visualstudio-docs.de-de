@@ -1,29 +1,30 @@
 ---
-title: "DisplayKind | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "DisplayKind-enumeration"
+title: DisplayKind | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: DisplayKind enumeration
 ms.assetid: 940968c5-6065-4bda-8ee6-c31597db4d71
-caps.latest.revision: 5
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 5
+caps.latest.revision: "5"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 2a13d9146596bfc3d13cc4eea93224c5e7dceaae
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# DisplayKind
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Listet die gültigen Werte, die die Arten von Informationen darstellen, die von einem [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)\-Objekt und dem Benutzer angezeigt.  
+# <a name="displaykind"></a>DisplayKind
+Listet die gültigen Werte, die die Arten von Informationen vom schalten darstellen einer [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) -Objekt und dem Benutzer angezeigt.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 enum enum_DisplayKind  
 {  
    DisplayKind_Value = 0x1,  
@@ -33,7 +34,7 @@ enum enum_DisplayKind
 typedef DWORD DisplayKind;  
 ```  
   
-```c#  
+```csharp  
 public enum enum_DisplayKind  
 {  
    DisplayKind_Value = 0x1,  
@@ -42,23 +43,23 @@ public enum enum_DisplayKind
 };  
 ```  
   
-#### Parameter  
- DisplayKind\_Value  
+#### <a name="parameters"></a>Parameter  
+ DisplayKind_Value  
  Der Wert des Felds.  
   
- DisplayKind\_Name  
- Name des Felds.  
+ DisplayKind_Name  
+ Der Name des Felds.  
   
- DisplayKind\_Type  
+ DisplayKind_Type  
  Der Typ des Felds.  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  Header: Ee.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetValueDisplayStringCount](../../../extensibility/debugger/reference/ieevisualizerservice-getvaluedisplaystringcount.md)

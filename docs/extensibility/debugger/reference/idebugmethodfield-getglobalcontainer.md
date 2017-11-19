@@ -1,52 +1,52 @@
 ---
-title: "IDebugMethodField::GetGlobalContainer | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugMethodField::GetGlobalContainer"
-helpviewer_keywords: 
-  - "IDebugMethodField::GetGlobalContainer-Methode"
+title: IDebugMethodField::GetGlobalContainer | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugMethodField::GetGlobalContainer
+helpviewer_keywords: IDebugMethodField::GetGlobalContainer method
 ms.assetid: 041ac5aa-0b80-4310-b9ae-b88f8e7e0e5f
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: ffeb7c7c1abe6e5a816c2d7a67ad6820e0921bc8
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugMethodField::GetGlobalContainer
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
+# <a name="idebugmethodfieldgetglobalcontainer"></a>IDebugMethodField::GetGlobalContainer
 Ruft den globalen Container der Methode ab.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetGlobalContainer(  
-   IDebugClassField** ppClass  
+   IDebugClassField** ppClass  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetGlobalContainer(  
-   out IDebugClassField ppClass  
+   out IDebugClassField ppClass  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `ppClass`  
- \[out\]  Gibt [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) zurück, das das Modul darstellt, in dem diese Methode definiert ist.  
+ [out] Gibt eine [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) für das Modul, in dem diese Methode definiert wird.  
   
-## Rückgabewert  
- Bei Erfolg gibt S\_OK zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt S_OK zurück. Andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Hinweise  
- Das zurückgegebene Objekt stellt [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) das gesamte Modul dar und stellt ein Objekt künstliches, d.h., hat das Modul selbst keine tatsächliche Klasse, kann jedoch durch ein `IDebugClassField`\-Objekt dargestellt werden und die verschiedenen Elemente aufgelistet und ermittelt worden Moduls kann.  
+## <a name="remarks"></a>Hinweise  
+ Das zurückgegebene [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) -Objekt, das gesamte Modul darstellt, und ist ein künstlicher Objekt, d. h. das Modul selbst verfügt nicht über eine tatsächliche Klasse, aber es dargestellt werden kann ein `IDebugClassField` -Objekt, sodass die verschiedenen Elemente des Moduls aufgelistet und ermittelt werden.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)   
  [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)

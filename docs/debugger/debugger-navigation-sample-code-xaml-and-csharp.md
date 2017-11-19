@@ -1,33 +1,34 @@
 ---
-title: "Beispielcode f&#252;r die Navigation im Debugger (Xaml und C#) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
+title: Debugger-Navigation-Beispielcode (Xaml und c#) | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
 ms.assetid: 8f4266bc-4597-43ab-b620-8b08ea988a8e
-caps.latest.revision: 3
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 3
+caps.latest.revision: "3"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: fc03dff54a254c71729d702c887ed81c86b4d48d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Beispielcode f&#252;r die Navigation im Debugger (Xaml und C#)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Der Code in diesem Thema ist die Beispieldatei für das Thema [Navigieren in einer Debugsitzung \(Xaml und C\#\)](../debugger/navigate-a-debugging-session-in-visual-studio-xaml-and-csharp.md).  
+# <a name="debugger-navigation-sample-code-xaml-and-c"></a>Beispielcode für die Navigation im Debugger (Xaml und C#)
+Der Code in diesem Thema ist die Beispieldatei für die [Navigieren in einer Debugsitzung (Xaml und c#)](../debugger/navigate-a-debugging-session-in-visual-studio-xaml-and-csharp.md) Thema.  
   
-## Beispielcode  
+## <a name="sample-code"></a>Beispielcode  
   
-```c#  
+```CSharp  
 public MainPage()  
 {  
     InitializeComponent();  

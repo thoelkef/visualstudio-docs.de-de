@@ -1,52 +1,52 @@
 ---
-title: "IDebugCustomAttribute::GetAttributeTypeField | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugCustomAttribute::GetAttributeTypeField"
-helpviewer_keywords: 
-  - "IDebugCustomAttribute::GetAttributeTypeField"
+title: IDebugCustomAttribute::GetAttributeTypeField | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugCustomAttribute::GetAttributeTypeField
+helpviewer_keywords: IDebugCustomAttribute::GetAttributeTypeField
 ms.assetid: d6ce26d5-42ba-44c1-8659-0516db5bc82d
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: fa26c30c89d5af317bd1b63848ac4ca71287d123
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugCustomAttribute::GetAttributeTypeField
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Ruft den Typ des benutzerdefinierten Attributklassen ab.  
+# <a name="idebugcustomattributegetattributetypefield"></a>IDebugCustomAttribute::GetAttributeTypeField
+Ruft den Typ des benutzerdefinierten Attributs-Klasse.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT GetAttributeTypeField(   
-   IDebugClassField** ppCAType  
+```cpp  
+HRESULT GetAttributeTypeField(   
+   IDebugClassField** ppCAType  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetAttributeTypeField(  
-   out IDebugClassField ppCAType  
+   out IDebugClassField ppCAType  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `ppCAType`  
- \[out\]  Gibt das [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)\-Objekt zurück, das die Klasse darstellt, aus der das benutzerdefinierte Attribut eine Instanz ist.  
+ [out] Gibt die [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) Objekt, das die Klasse darstellt, von denen das benutzerdefinierte Attribut eine Instanz ist.  
   
-## Rückgabewert  
- Bei Erfolg gibt S\_OK zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt S_OK zurück. Andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Hinweise  
- Ein benutzerdefiniertes Attribut ist immer eine Klasse.  Diese Methode bietet Zugriff auf ein [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)\-Objekt, das diese Klasse beschreibt.  
+## <a name="remarks"></a>Hinweise  
+ Ein benutzerdefiniertes Attribut ist immer eine Klasse. Diese Methode bietet Zugriff auf eine [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) -Objekt, das diese Klasse beschreibt.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md)   
  [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)

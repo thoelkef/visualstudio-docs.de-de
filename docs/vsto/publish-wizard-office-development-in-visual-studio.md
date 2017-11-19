@@ -1,75 +1,77 @@
 ---
-title: "Ver&#246;ffentlichungsassistent (Office-Entwicklung in Visual Studio)"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "VST.ProjectProperties.PublishWizard"
-  - "VST.PublishWizard.Publish.2007System"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "ClickOnce-Bereitstellung [Office-Entwicklung in Visual Studio], Webpublishing-Assistent"
-  - "Bereitstellen von Anwendungen [Office-Entwicklung in Visual Studio], Webpublishing-Assistent"
-  - "Office-Anwendungen [Office-Entwicklung in Visual Studio], Webpublishing-Assistent"
-  - "Webpublishing-Assistent, Office-Projektmappen"
+title: "Veröffentlichungsassistent (Office-Entwicklung in Visual Studio) | Microsoft Docs"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- VST.ProjectProperties.PublishWizard
+- VST.PublishWizard.Publish.2007System
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- ClickOnce deployment [Office development in Visual Studio], Publish Wizard
+- deploying applications [Office development in Visual Studio], Publish Wizard
+- Office applications [Office development in Visual Studio], Publish Wizard
+- Publish Wizard, Office solutions
 ms.assetid: 793314b6-b6a6-4509-8f1c-dd9466cf5190
-caps.latest.revision: 17
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "17"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 8eeb0a002e2d62b9066165a99ce474cf7a01a88f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Ver&#246;ffentlichungsassistent (Office-Entwicklung in Visual Studio)
-  Verwenden Sie **Webpublishing\-Assistent**, um die Projektmappendateien an einen bestimmten Speicherort kopiert, erstellen Sie die Manifestdateien und erstellen Sie ein Setupprogramm.  
+# <a name="publish-wizard-office-development-in-visual-studio"></a>Veröffentlichungsassistent (Office-Entwicklung in Visual Studio)
+  Verwenden der **Veröffentlichungs-Assistenten** um Projektmappendateien an einem bestimmten Speicherort zu kopieren, Erstellen der Manifestdateien, und ein Setupprogramm erstellen.  
   
- Um diesen Assistenten, auf dem **Erstellen** Menü zuzugreifen, wählen Sie **Veröffentlichen** *SolutionName*.  Sie können auf den **Webpublishing\-Assistenten** auch vom **Projektmappen\-Explorer** aus zugreifen.  Öffnen Sie das Kontextmenü für den Projektknoten, und wählen Sie dann **Veröffentlichen**aus.  
+ Mit diesem Assistenten für den Zugriff auf die **erstellen** Menü wählen **veröffentlichen** *SolutionName*. Sie können auch Zugriff auf die **Veröffentlichungs-Assistenten** aus **Projektmappen-Explorer**. Öffnen Sie das Kontextmenü für den Projektknoten, und wählen Sie dann **veröffentlichen**.  
   
- In jedem der folgenden Abschnitte wird eine Seite des Assistenten beschrieben.  
+ Jeder Abschnitt weiter unten wird eine Seite des Assistenten beschrieben.  
   
-## Wo möchten Sie die Anwendung veröffentlichen?  
- **Veröffentlichungsort für diese Anwendung angeben**  
- Erforderlich.  Beim Veröffentlichungsort handelt es sich um das Verzeichnis, in das der **Webpublishing\-Assistent** die Projektmappendateien, wie Manifeste, Assemblys, temporäre Zertifikate und andere Dateien, aus dem Build kopiert.  Sie müssen über Schreibzugriff für dieses Verzeichnis verfügen.  
+## <a name="where-do-you-want-to-publish-the-application"></a>Wo möchten Sie die Anwendung veröffentlichen?  
+ **Geben Sie den Speicherort aus, um diese Anwendung zu veröffentlichen.**  
+ Erforderlich. Ort der Veröffentlichung ist das Verzeichnis, in dem die **Veröffentlichungs-Assistenten** kopiert die Projektmappendateien, z. B. Manifeste, Assemblys, temporäre Zertifikate und andere Dateien aus dem Build. Sie benötigen Schreibzugriff auf dieses Verzeichnis.  
   
- Geben Sie den Speicherort als dem Datenträger des, Dateifreigabe, FTP\-Site oder eine Website URL ein, oder klicken Sie auf die Schaltfläche **Durchsuchen** für den Speicherort zu suchen.  Der Pfad kann folgende Formate aufweisen:  
+ Geben Sie den Speicherort als Datenträgerpfad, Dateifreigabe, FTP-Site oder URL der Website, oder klicken Sie auf die **Durchsuchen** Schaltfläche, um den Speicherort zu navigieren. Der Pfad kann in diesen Formaten sein:  
   
--   Einen relativen oder absoluten Pfad im Windows\-Standardformat, wie C:\\Deploy\\MyApplication oder \\MyApplication  
+-   Ein relativer oder absoluter Pfad im Windows-Standardformat, z. B. C:\Deploy\MyApplication oder \MyApplication.  
   
--   Einen UNC \(Universal Naming Convention\)\-Pfad, wie \\\\ServerName\\MyApplication\\  
+-   Einen Pfad (UNC = Universal Naming Convention) wie z. B. \\\ServerName\MyApplication\\.  
   
--   Eine URL einer Website, z. B. http:\/\/www.microsoft.com\/MyApplication.  
+-   Eine URL einer Website, z. B. http://www.microsoft.com/MyApplication.  
   
- Standardmäßig ist der Veröffentlichungsort *http:\/\/localhost\/Projektname\/* wenn Sie IIS installiert haben, oder das Verzeichnis publish\\, wenn IIS nicht installiert ist.  
+ Standardmäßig wird *http://localhost/Projektname/* als Speicherort für die Veröffentlichung verwendet, wenn IIS installiert ist. Wenn IIS nicht installiert ist, wird das Verzeichnis „publish\“ verwendet.  
   
 > [!NOTE]  
->  Wird auf dem Zielcomputer Windows Vista ausgeführt, sind noch weitere Aspekte zu berücksichtigen.  Sie benötigen auf dem Computer mit dem Betriebssystem Windows Vista Administratorrechte, um die Option für lokale Veröffentlichung nutzen zu können.  Zudem ist der Standardspeicherort immer das Verzeichnis *publish\\*, unabhängig davon, ob IIS installiert ist.  
+>  Es sind weitere Aspekte auf, wenn der Zielcomputer Windows Vista ausgeführt wird. Sie müssen Administrator auf dem Windows Vista-Computer mit der Option "lokale veröffentlichen" sein. Darüber hinaus ist der Standardspeicherort immer die *veröffentlichen\\*  Verzeichnis, unabhängig davon, ob IIS installiert ist.  
   
-## Wie lautet der Standardinstallationspfad auf Endbenutzercomputern?  
- Der Installationspfad ist optional.  Auf Wunsch können Sie den Installationspfad später festlegen.  Ausführlichere Informationen finden Sie unter [Gewusst wie: Ändern des Installationspfads einer Office\-Projektmappe](http://msdn.microsoft.com/de-de/d0eaa07b-2d72-4902-899f-2f9fb165b8fd).  
+## <a name="what-is-the-default-installation-path-on-end-user-computers"></a>Was ist der Standardinstallationspfad auf Endbenutzercomputern vorhanden?  
+ Der Installationspfad ist optional. Sie können den Installationspfad später festlegen, falls gewünscht. Weitere Informationen finden Sie unter [Vorgehensweise: Ändern des Installationspfads einer Office-Projektmappe](http://msdn.microsoft.com/en-us/d0eaa07b-2d72-4902-899f-2f9fb165b8fd).  
   
- Der Installationspfad ist das Verzeichnis, von dem der Endbenutzer die Anpassung installiert.  Es handelt sich zudem um den Pfad, der von der Projektmappe für die Suche nach Updates verwendet wird.  Der **Webpublishing\-Assistent** stellt die Projektmappe nur dann an diesem Speicherort bereit, wenn der Pfad mit dem Pfad identisch ist, den Sie auf der vorherigen Seite im Feld **Veröffentlichungsort für diese Anwendung angeben** eingegeben haben.  
+ Der Installationspfad ist das Verzeichnis, über das der Endbenutzer die Anpassung installiert. Hierbei handelt es sich ebenfalls um den Pfad, der von der Projektmappe für die Suche nach Updates verwendet wird. Die **Veröffentlichungs-Assistenten** wird nicht an diesem Speicherort die Projektmappe bereitgestellt, es sei denn, der Pfad identisch, mit der Sie eingegeben, in haben der **Geben Sie den Speicherort aus, um diese Anwendung veröffentlichen** Feld auf der vorherigen Seite.  
   
  **Von einer Website**  
- Geben Sie die URL an, der die Endbenutzer folgen sollen, um die Projektmappe zu installieren.  
+ Geben Sie die URL, die Endbenutzer folgen, um die Projektmappe installiert wird.  
   
- **Von UNC\-Pfad oder Dateifreigabe**  
- Geben Sie den UNC\-Pfad an, dem die Endbenutzer folgen sollen, um die Projektmappe zu installieren.  
+ **Von einem UNC-Pfad oder die Dateifreigabe**  
+ Geben Sie den UNC-Pfad, den Endbenutzer folgen, um die Projektmappe installiert wird.  
   
- **Von CD\-ROM oder DVD\-ROM**  
- Für diese Option ist kein Installationspfad erforderlich.  
+ **Von einer CD-ROM oder DVD-ROM**  
+ Diese Option erfordert keinen Installationspfad aus.  
   
- Visual Studio brennt die CD oder die DVD nicht.  Sie müssen die Ausgabe manuell auf eine CD oder DVD kopieren.  
+ Visual Studio ist nicht die CD oder DVD zu brennen. Sie müssen die Ausgabe mit einer CD oder DVD manuell kopieren.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Bereitstellen einer Office-Lösung mithilfe von ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md)   
- [Veröffentlichungsseite, Projekt-Designer &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/publish-page-project-designer-office-development-in-visual-studio.md)   
+ [Veröffentlichen Sie die Seite, Projekt-Designer &#40; Office-Entwicklung in Visual Studio &#41;](../vsto/publish-page-project-designer-office-development-in-visual-studio.md)   
  [Bereitstellen einer Office-Projektmappe](../vsto/deploying-an-office-solution.md)  
   
   

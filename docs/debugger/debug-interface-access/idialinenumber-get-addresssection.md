@@ -1,52 +1,51 @@
 ---
-title: "IDiaLineNumber::get_addressSection | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaLineNumber::get_addressSection-Methode"
+title: 'Idialinenumber:: Get_addresssection | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaLineNumber::get_addressSection method
 ms.assetid: a01c1bae-04b2-4c30-8621-60939a3124c2
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: e12b06df539ba8b4250905c0fd5d5f66539018e0
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaLineNumber::get_addressSection
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Ruft den Teil der Speicheradresse Abschnitts ab, in der ein Block beginnt.  
+# <a name="idialinenumbergetaddresssection"></a>IDiaLineNumber::get_addressSection
+Ruft ab den Abschnitt Teil die Speicheradresse, an ein Block beginnt.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT get_addressSection (   
-   DWORD* pRetVal  
+```C++  
+HRESULT get_addressSection (   
+   DWORD* pRetVal  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  pRetVal  
- \[out\]  Gibt den Abschnitt teil der Speicheradresse zurück, in der ein Block beginnt.  
+ [out] Gibt den Teil "Abschnitt" die Speicheradresse, wo beginnt einen Block.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück.  Gibt `S_FALSE` zurück, wenn diese Eigenschaft nicht unterstützt wird.  Andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`. Gibt `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Beispiel  
+## <a name="example"></a>Beispiel  
   
-```cpp#  
+```C++  
 CComPtr< IDiaLineNumber > pLine;  
 DWORD seg;  
 pLine->get_addressSection( &seg );  
 ```  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)   
- [IDiaLineNumber::get\_addressOffset](../../debugger/debug-interface-access/idialinenumber-get-addressoffset.md)
+ [IDiaLineNumber::get_addressOffset](../../debugger/debug-interface-access/idialinenumber-get-addressoffset.md)

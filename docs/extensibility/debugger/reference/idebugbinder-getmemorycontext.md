@@ -1,60 +1,60 @@
 ---
-title: "IDebugBinder::GetMemoryContext | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugBinder::GetMemoryContext"
-helpviewer_keywords: 
-  - "IDebugBinder::GetMemoryContext-Methode"
+title: IDebugBinder::GetMemoryContext | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugBinder::GetMemoryContext
+helpviewer_keywords: IDebugBinder::GetMemoryContext method
 ms.assetid: 801c5b60-acff-4822-b23d-e9c7bbca8a0f
-caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: f8765bcef2d1c9c97a8180cf75acc1d0581990c7
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugBinder::GetMemoryContext
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Diese Methode konvertiert ein Objekt oder eine Speicheradresse Speicherort zu einem Speicher Elementkontext.  
+# <a name="idebugbindergetmemorycontext"></a>IDebugBinder::GetMemoryContext
+Diese Methode konvertiert ein Ort des Objekts oder einer Speicheradresse in einem Speicherkontext an.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT GetMemoryContext(   
-   IDebugField*           pField,  
-   DWORD                  dwConstant,  
-   IDebugMemoryContext2** ppMemCxt  
+```cpp  
+HRESULT GetMemoryContext(   
+   IDebugField*           pField,  
+   DWORD                  dwConstant,  
+   IDebugMemoryContext2** ppMemCxt  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetMemoryContext(  
-   IDebugField              pField,   
-   uint                     dwConstant,   
-   out IDebugMemoryContext2 ppMemCxt  
+   IDebugField              pField,   
+   uint                     dwConstant,   
+   out IDebugMemoryContext2 ppMemCxt  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `pField`  
- \[in\]  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) , das das Objekt beschreibt.  Wenn `NULL`, `dwConstant`\-Version verwenden.  
+ [in] Ein [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) , beschreibt das zu suchende Objekt. Wenn `NULL`, verwenden Sie dann `dwConstant` stattdessen.  
   
  `dwConstant`  
- \[in\]  Eine konstante Speicheradresse, wie 0x5000.  
+ [in] Eine Konstante Speicheradresse, z. B. 0x5000.  
   
  `ppMemCxt`  
- \[out\]  Gibt die [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)\-Schnittstelle, die die Adresse des Objekts darstellt, oder die Adresse im Arbeitsspeicher zurück.  
+ [out] Gibt die [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) Schnittstelle, die die Adresse des Objekts oder die Adresse im Speicher darstellt.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)   
  [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)   
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

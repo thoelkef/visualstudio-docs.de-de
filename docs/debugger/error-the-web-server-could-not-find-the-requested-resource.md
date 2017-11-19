@@ -1,38 +1,38 @@
 ---
-title: "Fehler: Der Webserver konnte die angeforderte Ressource nicht finden | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "Debugger, Webanwendungsfehler"
+title: 'Fehler: Der Webserver konnte die angeforderte Ressource nicht gefunden | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+helpviewer_keywords: debugger, Web application errors
 ms.assetid: 1ceeaf30-918c-42bb-ace1-96944530fef3
-caps.latest.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 782abbf8a5cb30801bbe6041143e031792ff247a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Fehler: Der Webserver konnte die angeforderte Ressource nicht finden
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="error-the-web-server-could-not-find-the-requested-resource"></a>Fehler: Der Webserver konnte die angeforderte Ressource nicht finden
 Aufgrund von Sicherheitsüberlegungen wurde von IIS ein generischer Fehler zurückgegeben.  
   
- Eine mögliche Ursache ist die Sicherheitskonfiguration des Servers.  In IIS 6.0 und früheren Versionen wurde ein Zusatzhardwareprogramm, das als URLScan bekannt ist, zum Herausfiltern verdächtiger und fehlerhafter Anforderungen verwendet.  Bei IIS 7.0 ist zu diesem Zweck die Anforderungsfilterung integriert.  In beiden Fällen kann übermäßig einschränkende Anforderungsfilterung Visual Studio am Debuggen des Servers hindern.  
+ Eine mögliche Ursache ist die Sicherheitskonfiguration des Servers. In IIS 6.0 und früheren Versionen wurde ein Zusatzhardwareprogramm, das als URLScan bekannt ist, zum Herausfiltern verdächtiger und fehlerhafter Anforderungen verwendet. Bei IIS 7.0 ist zu diesem Zweck die Anforderungsfilterung integriert. In beiden Fällen kann übermäßig einschränkende Anforderungsfilterung Visual Studio am Debuggen des Servers hindern.  
   
- Für diesen Fehler sind viele Ursachen möglich.  Einige der häufigsten Ursachen schließen ein Problem mit der IIS\-Installation oder der Konfigurationsroutine, der Websitekonfiguration oder den Berechtigungen im Dateisystem ein.  Sie können versuchen, mit einem Browser auf die Ressource zuzugreifen.  Abhängig von der IIS\-Konfiguration müssen Sie möglicherweise einen lokalen Browser auf dem Server verwenden oder das IIS\-Fehlerprotokoll überprüfen, um eine ausführliche Fehlermeldung zu erhalten.  
+ Für diesen Fehler sind viele Ursachen möglich. Einige der häufigsten Ursachen schließen ein Problem mit der IIS-Installation oder der Konfigurationsroutine, der Websitekonfiguration oder den Berechtigungen im Dateisystem ein. Sie können versuchen, mit einem Browser auf die Ressource zuzugreifen. Abhängig von der IIS-Konfiguration müssen Sie möglicherweise einen lokalen Browser auf dem Server verwenden oder das IIS-Fehlerprotokoll überprüfen, um eine ausführliche Fehlermeldung zu erhalten.  
   
- Weitere Informationen über die Problembehandlung bei IIS finden Sie unter [IIS\-Verwaltung](http://go.microsoft.com/fwlink/?LinkId=255872).  
+ Weitere Informationen zur Behandlung von IIS finden Sie unter [IIS-Verwaltung und Administration](http://go.microsoft.com/fwlink/?LinkId=255872).  
   
-## Siehe auch  
- [UrlScan\-Sicherheitstool](http://www.microsoft.com/technet/security/tools/urlscan.mspx)   
- [Fehler: Der Webserver wurde gesperrt und blockiert das DEBUG\-Verb](../debugger/error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb.md)
+## <a name="see-also"></a>Siehe auch  
+ [UrlScan-Sicherheitstool](http://www.microsoft.com/technet/security/tools/urlscan.mspx)   
+ [Fehler: Der Webserver wurde gesperrt und blockiert das DEBUG-Verb](../debugger/error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb.md)

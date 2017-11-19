@@ -1,64 +1,66 @@
 ---
-title: "Object.defineProperties-Funktion (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "Object.defineProperties-Funktion [JavaScript]"
+title: Object.defineProperties-Funktion (JavaScript) | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords: Object.defineProperties function [JavaScript]
 ms.assetid: 2dae6658-a1c9-495f-bf06-bb3e964e6762
-caps.latest.revision: 24
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 24
+caps.latest.revision: "24"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 65f4f5817a105283a26c971bd98869d000ca0bc2
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# Object.defineProperties-Funktion (JavaScript)
-Fügt eine oder mehrere Eigenschaften zu einem Objekt hinzu und\/oder ändert Attribute vorhandener Eigenschaften.  
+# <a name="objectdefineproperties-function-javascript"></a>Object.defineProperties-Funktion (JavaScript)
+Fügt eine oder mehrere Eigenschaften zu einem Objekt hinzu und/oder ändert Attribute vorhandener Eigenschaften.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
   
 object.defineProperties(object, descriptors)  
 ```  
   
-## Parameter  
+## <a name="parameters"></a>Parameter  
  `object`  
- Erforderlich.  Das Objekt, zu dem die Eigenschaft hinzugefügt oder dessen Eigenschaften geändert werden sollen.  Dies kann ein systemeigenes [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]\-Objekt oder ein DOM\-Objekt sein.  
+ Erforderlich. Das Objekt auf das Hinzufügen oder Ändern der Eigenschaften. Dies kann ein systemeigenes [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Objekt oder ein DOM-Objekt.  
   
  `descriptors`  
- Erforderlich.  Ein [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]\-Objekt, das eine oder mehrere Deskriptorobjekte enthält.  Jedes Deskriptorobjekt beschreibt eine Dateneigenschaft oder eine Accessoreigenschaft.  
+ Erforderlich. Ein [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Objekt, das ein oder mehrere Deskriptor Objekte enthält. Jede Deskriptorobjekt beschreibt eine Dateneigenschaft oder einer Accessor-Eigenschaft.  
   
-## Rückgabewert  
- Das an die Funktion übergebene Objekt.  
+## <a name="return-value"></a>Rückgabewert  
+ Das Objekt, das an die Funktion übergeben wurde.  
   
-## Hinweise  
- Das `descriptors`\-Argument ist ein Objekt, das ein oder mehrere Deskriptorobjekte enthält.  
+## <a name="remarks"></a>Hinweise  
+ Die `descriptors` Argument ist ein Objekt, das ein oder mehrere Deskriptor Objekte enthält.  
   
- Eine *Dateneigenschaft* ist eine Eigenschaft, die einen Wert speichern und abrufen kann.  Ein Dateneigenschaftendeskriptor enthält ein `value`\-Attribut, ein `writable`\-Attribut oder beides.  Weitere Informationen finden Sie unter [Dateneigenschaften und Accessor\-Eigenschaften](../../javascript/advanced/data-properties-and-accessor-properties.md).  
+ Ein *Dateneigenschaft* ist eine Eigenschaft, speichern und einen Wert abrufen kann. Ein dateneigenschaftendeskriptor enthält ein `value` -Attribut, eine `writable` -Attribut oder beides. Weitere Informationen finden Sie unter [Dateneigenschaften und Accessoreigenschaften](../../javascript/advanced/data-properties-and-accessor-properties.md).  
   
- Eine *Accessoreigenschaft* ruft eine vom Benutzer bereitgestellte Funktion immer dann auf, wenn der Eigenschaftswert festgelegt oder abgerufen wird.  Ein Accessoreigenschaftendeskriptor enthält ein `set`\-Attribut, ein `get`\-Attribut oder beides.  
+ Ein *Accessoreigenschaft* eine vom Benutzer bereitgestellte Funktion aufruft, jedes Mal, wenn der Eigenschaftswert festgelegt oder abgerufen wird. Ein Accessoreigenschaftendeskriptor enthält ein `set`-Attribut, ein `get`-Attribut oder beides.  
   
- Wenn das Objekt bereits eine Eigenschaft mit dem angegebenen Namen besitzt, werden die Eigenschaftenattribute geändert.  Weitere Informationen finden Sie unter [Object.defineProperty\-Funktion](../../javascript/reference/object-defineproperty-function-javascript.md).  
+ Wenn das Objekt bereits eine Eigenschaft, die den angegebenen Namen verfügt enthält, werden die Eigenschaftenattribute geändert. Weitere Informationen finden Sie unter [Object.defineProperty-Funktion](../../javascript/reference/object-defineproperty-function-javascript.md).  
   
- Um ein Objekt zu erstellen und Eigenschaften zum neuen Objekt hinzuzufügen, können Sie [Object.create\-Funktion](../../javascript/reference/object-create-function-javascript.md) verwenden.  
+ Erstellen ein Objekt, und Eigenschaften in das neue Objekt hinzufügen, können Sie die [Object.create-Funktion](../../javascript/reference/object-create-function-javascript.md).  
   
-## Hinzufügen von Eigenschaften  
- Im folgenden Beispiel fügt die `Object.defineProperties`\-Funktion eine Dateneigenschaft und eine Accessoreigenschaft zu einem benutzerdefinierten Objekt hinzu.  
+## <a name="adding-properties"></a>Hinzufügen von Eigenschaften  
+ Im folgenden Beispiel die `Object.defineProperties` Funktion fügt eine Dateneigenschaft und einer Accessor-Eigenschaft mit einem benutzerdefinierten Objekt.  
   
- Im Beispiel wird ein Objektliteral verwendet, um das `descriptors`\-Objekt mit dem `newDataProperty`\-Deskriptorobjekt und dem `newAccessorProperty`\-Deskriptorobjekt zu erstellen.  
+ Im Beispiel wird ein Objektliteral zum Erstellen der `descriptors` -Objekt mit den `newDataProperty` und `newAccessorProperty` Deskriptor-Objekte.  
   
-```javascript  
+```JavaScript  
 var newLine = "<br />";  
   
 var obj = {};  
@@ -93,9 +95,9 @@ document.write ("newAccessorProperty value: " + obj.newAccessorProperty + newLin
   
 ```  
   
- Wie im vorherigen Beispiel werden im folgenden Beispiel Eigenschaften dynamisch anstatt mit Objektliteral hinzugefügt.  
+ Wie die oben aufgeführten Beispiel fügt das folgende Beispiel Eigenschaften dynamisch anstelle von mit einem Objektliteral.  
   
-```javascript  
+```JavaScript  
   
 var newLine = "<br />";  
   
@@ -137,8 +139,8 @@ document.write ("newAccessorProperty value: " + obj.newAccessorProperty + newLin
   
 ```  
   
-## Ändern von Eigenschaften  
- Um Eigenschaftenattribute für das Objekt zu ändern, fügen Sie den folgenden Code hinzu.  Die `Object.defineProperties`\-Funktion ändert das `writable`\-Attribut von `newDataProperty` und das `enumerable`\-Attribut von `newAccessorProperty`.  Sie fügt `anotherDataProperty` zum Objekt hinzu, da dieser Eigenschaftsname noch nicht vorhanden ist.  
+## <a name="modifying-properties"></a>Ändern von Eigenschaften  
+ Um Attribute für das Objekt zu ändern, fügen Sie den folgenden Code ein. Die `Object.defineProperties` Funktion ändert den `writable` Attribut des `newDataProperty`, und ändert die `enumerable` Attribut des `newAccessorProperty`. Es fügt `anotherDataProperty` auf das Objekt, da dieser Eigenschaftenname noch nicht vorhanden ist.  
   
 ```  
 Object.defineProperties(obj, {  
@@ -148,12 +150,12 @@ Object.defineProperties(obj, {
 });  
 ```  
   
-## Anforderungen  
- Wird in Internet Explorer 9 \(Standardmodus\), in Internet Explorer 10 \(Standardmodus\) und in [!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)]\-Apps unterstützt.  Unterstützt in Internet Explorer 8 für DOM\-Objekte; andernfalls keine Unterstützung.  
+## <a name="requirements"></a>Anforderungen  
+ Unterstützt in Internet Explorer 9-Standardmodus, Internet Explorer 10-Standards und [!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)] apps. Unterstützt in Internet Explorer 8 für DOM-Objekte nur ansonsten nicht unterstützt.  
   
-## Siehe auch  
- [Object.getOwnPropertyDescriptor\-Funktion](../../javascript/reference/object-getownpropertydescriptor-function-javascript.md)   
- [Object.getOwnPropertyNames\-Funktion](../../javascript/reference/object-getownpropertynames-function-javascript.md)   
- [Object.defineProperty\-Funktion](../../javascript/reference/object-defineproperty-function-javascript.md)   
- [Object.create\-Funktion](../../javascript/reference/object-create-function-javascript.md)   
- [Object\-Objekt](../../javascript/reference/object-object-javascript.md)
+## <a name="see-also"></a>Siehe auch  
+ [Object.getOwnPropertyDescriptor-Funktion](../../javascript/reference/object-getownpropertydescriptor-function-javascript.md)   
+ [Object.getOwnPropertyNames-Funktion](../../javascript/reference/object-getownpropertynames-function-javascript.md)   
+ [Object.defineProperty-Funktion](../../javascript/reference/object-defineproperty-function-javascript.md)   
+ [Object.Create-Funktion](../../javascript/reference/object-create-function-javascript.md)   
+ [Object-Objekt](../../javascript/reference/object-object-javascript.md)

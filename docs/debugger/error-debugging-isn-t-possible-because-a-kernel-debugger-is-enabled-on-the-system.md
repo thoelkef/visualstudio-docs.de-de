@@ -1,36 +1,31 @@
 ---
-title: "Fehler: Das Debuggen ist nicht m&#246;glich, da ein Kerndebugger auf dem System aktiviert ist | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.debug.error.kernel_dbg_enabled"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "Kernel-Debugger"
+title: "&#39; Fehler: Das Debuggen ist t möglich, da ein Kerndebugger auf dem System aktiviert | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vs.debug.error.kernel_dbg_enabled
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+helpviewer_keywords: kernel debugger
 ms.assetid: 630a7abd-3303-4aaa-888a-6de3de14bc01
-caps.latest.revision: 23
-caps.handback.revision: 23
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "23"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 448dbc486d58bc46e531b92de9f78272e4304d27
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Fehler: Das Debuggen ist nicht m&#246;glich, da ein Kerndebugger auf dem System aktiviert ist
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="error-debugging-isn39t-possible-because-a-kernel-debugger-is-enabled-on-the-system"></a>Fehler: Das Debuggen &#39; ist t möglich, da ein Kerndebugger auf dem System aktiviert
 Beim Debuggen von verwaltetem Code kann die folgende Fehlermeldung ausgegeben werden:  
   
 ```  
@@ -39,15 +34,15 @@ Debugging isn't possible because a kernel debugger is enabled on the system
   
  Diese Meldung wird angezeigt, wenn Sie versuchen, verwalteten Code zu debuggen:  
   
--   auf einem [!INCLUDE[win7](../debugger/includes/win7_md.md)]\- oder [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)]\-System, das im Debugmodus gestartet wurde.  
+-   auf einem [!INCLUDE[win7](../debugger/includes/win7_md.md)]- oder [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)]-System, das im Debugmodus gestartet wurde.  
   
--   Die Anwendung verwendet die CLR\-Version 2.0, 3.0 oder 3.5.  
+-   Die Anwendung verwendet die CLR-Version 2.0, 3.0 oder 3.5.  
   
-## Lösung  
+## <a name="solution"></a>Lösung  
   
-#### So beheben Sie dieses Problem  
+#### <a name="to-fix-this-problem"></a>So beheben Sie dieses Problem  
   
--   Aktualisieren Sie die Anwendung auf CLR\-Version 4.0 oder 4.5.  
+-   Aktualisieren Sie die Anwendung auf CLR-Version 4.0 oder 4.5.  
   
      – oder –  
   
@@ -61,7 +56,7 @@ Debugging isn't possible because a kernel debugger is enabled on the system
   
 -   Deaktivieren Sie im Kerneldebugger die Benutzermodusausnahmen.  
   
-#### So deaktivieren Sie Kerneldebugging in der aktuellen Sitzung  
+#### <a name="to-disable-kernel-debugging-in-the-current-session"></a>So deaktivieren Sie Kerneldebugging in der aktuellen Sitzung  
   
 -   Geben Sie an der Eingabeaufforderung Folgendes ein:  
   
@@ -69,7 +64,7 @@ Debugging isn't possible because a kernel debugger is enabled on the system
     Kdbgctrl.exe -d  
     ```  
   
-#### So deaktivieren Sie Kerneldebugging für alle Sitzungen \(Windows Vista und Windows 7\)  
+#### <a name="to-disable-kernel-debugging-for-all-sessions-windows-vista-and-windows-7"></a>So deaktivieren Sie Kerneldebugging für alle Sitzungen (Windows Vista und Windows 7)  
   
 1.  Geben Sie an der Eingabeaufforderung Folgendes ein:  
   
@@ -79,9 +74,9 @@ Debugging isn't possible because a kernel debugger is enabled on the system
   
 2.  Starten Sie den Computer neu.  
   
-#### So deaktivieren Sie Kerneldebuggen für alle Sitzungen \(andere Windows\-Betriebssysteme\)  
+#### <a name="to-disable-kernel-debugging-for-all-sessions-other-windows-operating-systems"></a>So deaktivieren Sie Kerneldebuggen für alle Sitzungen (andere Windows-Betriebssysteme)  
   
-1.  Suchen Sie die Datei "boot.ini" auf dem Systemlaufwerk \(normalerweise C:\\\).  Die Datei "boot.ini" ist möglicherweise versteckt installiert und schreibgeschützt.  Verwenden Sie zur Anzeige der Datei daher folgenden Befehl:  
+1.  Suchen Sie die Datei "Boot.ini" auf dem Systemlaufwerk (normalerweise "c:"\\). Die Datei "boot.ini" ist möglicherweise versteckt installiert und schreibgeschützt. Verwenden Sie zur Anzeige der Datei daher folgenden Befehl:  
   
     ```  
     dir /ASH  
@@ -97,14 +92,14 @@ Debugging isn't possible because a kernel debugger is enabled on the system
   
 3.  Starten Sie den Computer neu.  
   
-#### So debuggen Sie mit dem Kerneldebugger  
+#### <a name="to-debug-with-the-kernel-debugger"></a>So debuggen Sie mit dem Kerneldebugger  
   
-1.  Wenn der Kerneldebugger verknüpft ist, werden Sie in einer Meldung gefragt, ob Sie das Debuggen fortsetzen möchten.  Klicken Sie auf die Schaltfläche, um den Vorgang fortzusetzen.  
+1.  Wenn der Kerneldebugger verknüpft ist, werden Sie in einer Meldung gefragt, ob Sie das Debuggen fortsetzen möchten. Klicken Sie auf die Schaltfläche, um den Vorgang fortzusetzen.  
   
-2.  Sie erhalten möglicherweise einen `User break exception(Int 3).`\-Wert. Geben Sie in diesem Fall den folgenden Befehl für den Kerneldebugger ein, um das Debuggen fortzusetzen:  
+2.  Sie erhalten möglicherweise einen `User break exception(Int 3).`-Wert. Geben Sie in diesem Fall den folgenden Befehl für den Kerneldebugger ein, um das Debuggen fortzusetzen:  
   
      `gn`  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Debuggersicherheit](../debugger/debugger-security.md)   
  [Debuggen von verwaltetem Code](../debugger/debugging-managed-code.md)

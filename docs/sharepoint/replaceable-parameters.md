@@ -1,84 +1,86 @@
 ---
-title: "Ersetzbare Parameter"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "Ersetzbare Parameter [SharePoint-Entwicklung in Visual Studio]"
-  - "SharePoint-Entwicklung in Visual Studio, Ersetzbare Parameter"
-  - "SharePoint-Entwicklung in Visual Studio, Token"
-  - "Token [SharePoint-Entwicklung in Visual Studio]"
+title: Ersetzbare Parameter | Microsoft Docs
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- VB
+- CSharp
+helpviewer_keywords:
+- SharePoint development in Visual Studio, tokens
+- tokens [SharePoint development in Visual Studio]
+- replaceable parameters [SharePoint development in Visual Studio]
+- SharePoint development in Visual Studio, replaceable parameters
 ms.assetid: 3c46bbb1-0a98-495c-9fd1-dc57a6aedc11
-caps.latest.revision: 16
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 15
+caps.latest.revision: "16"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 80f9770fe0e6a0294ec43e450acc75f55b8ddbe2
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Ersetzbare Parameter
-  Ersetzbare Parameter oder *Token* können in Projektdateien verwendet werden, um Werte für SharePoint\-Lösungselemente bereitzustellen, deren tatsächliche Werte zur Entwurfszeit nicht bekannt sind.  Sie sind in der Funktion zu standardmäßigen [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Vorlagentoken ähnlich.  Weitere Informationen finden Sie unter [Vorlagenparameter](../ide/template-parameters.md).  
+# <a name="replaceable-parameters"></a>Ersetzbare Parameter
+  Ersetzbare Parameter oder *Token*, können in Projektdateien verwendet werden, um Werte für SharePoint-Projektmappenelemente bereitzustellen, deren tatsächliche Werte zur Entwurfszeit nicht bekannt sind. Sie sind Funktion ähnelt dem Standard [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] vorlagentoken. Weitere Informationen finden Sie unter [Vorlagenparameter](/visualstudio/ide/template-parameters).  
   
-## Tokenformat  
- Token beginnen und enden mit einem Dollarzeichen \($\).  Alle verwendeten Token werden durch tatsächliche Werte ersetzt, wenn ein Projekt zur Bereitstellungszeit in einer SharePoint\-Lösungspaketdatei \(WSP\) verpackt wird.  Beispielsweise kann das Token **$SharePoint.Package.Name$** in die Zeichenfolge "Test SharePoint Package" aufgelöst werden.  
+## <a name="token-format"></a>Tokenformat  
+ Token beginnen und enden mit einem Dollarzeichen ($). Alle Token verwendet werden durch tatsächliche Werte ersetzt, wenn ein Projekt zum Zeitpunkt der Bereitstellung in einer SharePoint-Lösung-Paketdatei (.wsp) verpackt wird. Z. B. das Token **$SharePoint.Package.Name$** möglicherweise behoben, um die Zeichenfolge "Test der SharePoint-Paket".  
   
-## Tokenregeln  
- Für Token gelten die folgenden Regeln:  
+## <a name="token-rules"></a>Token Regeln  
+ Die folgenden Regeln gelten für Token:  
   
--   Token können an beliebigen Positionen in einer Zeile angegeben werden.  
+-   Token können eine beliebige Stelle in einer Zeile angegeben werden.  
   
 -   Token können nicht mehrere Zeilen umfassen.  
   
--   Ein Token kann mehrmals in derselben Zeile und in derselben Datei angegeben werden.  
+-   Das gleiche Token möglicherweise mehrere Male in derselben Zeile und in derselben Datei angegeben werden.  
   
--   Verschiedene Token können in derselben Zeile angegeben werden.  
+-   Unterschiedliche Token können in derselben Zeile angegeben werden.  
   
- Token, die diesen Regeln nicht folgen, werden ignoriert, ohne dass eine Warnung oder ein Fehler bereitgestellt wird.  
+ Token, die nicht diese Regeln folgen werden ignoriert, ohne eine Warnung oder einen Fehler.  
   
- Die Ersetzung von Token durch Zeichenfolgenwerte erfolgt direkt nach der Manifesttransformation, sodass von einem Benutzer bearbeitete Manifestvorlagen Token verwenden können.  
+ Das Ersetzen von Token durch Zeichenfolgenwerte erfolgt sofort nach der manifest Transformation, sodass manifest Vorlagen zum Verwenden von Token von einem Benutzer bearbeitet.  
   
-### Tokennamensauflösung  
- In den meisten Fällen wird ein Token unabhängig vom Container zu einem bestimmten Wert aufgelöst.  Wenn sich das Token jedoch auf ein Paket oder eine Funktion bezieht, hängt der Wert des Tokens vom Container ab.  Wenn eine Funktion z. B. in Paket A enthalten ist, wird das Token `$SharePoint.Package.Name$` zum Wert "Paket A" aufgelöst. Ist die gleiche Funktion in Paket B enthalten, wird `$SharePoint.Package.Name$` zu "Paket B" aufgelöst.  
+### <a name="token-name-resolution"></a>Tokenname Auflösung  
+ In den meisten Fällen löst ein Token auf einen bestimmten Wert, unabhängig davon, in dem sie enthalten ist. Wenn das Token auf ein Paket oder eine Funktion verknüpft ist, hängt jedoch das Token-Wert, in dem sie enthalten ist. Beispielsweise ist eine Funktion ein, und klicken Sie dann das Token Packen `$SharePoint.Package.Name$` aufgelöst wird, auf den Wert "Paket a" Wenn die gleiche Funktion klicken Sie dann im Paket-B ist `$SharePoint.Package.Name$` zu "Paket b" aufgelöst.  
   
-## Liste von Token  
- In der folgenden Tabelle sind die verfügbaren Token aufgeführt.  
+## <a name="tokens-list"></a>Tokenliste  
+ Die folgende Tabelle enthält die verfügbaren Token.  
   
-|Name|**Beschreibung**|  
-|----------|----------------------|  
-|$SharePoint.Project.FileName$|Der Name der enthaltenden Projektdatei, z. B. "NewProj.csproj".|  
-|$SharePoint.Project.FileNameWithoutExtension$|Der Name der enthaltenden Projektdatei ohne Dateinamenerweiterung.  Beispiel: "NewProj".|  
-|$SharePoint.Project.AssemblyFullName$|Der Anzeigename \(starker Name\) der Ausgabeassembly des enthaltenden Projekts.|  
-|$SharePoint.Project.AssemblyFileName$|Der Name der Ausgabeassembly des enthaltenden Projekts.|  
-|$SharePoint.Project.AssemblyFileNameWithoutExtension$|Der Name der Ausgabeassembly des enthaltenden Projekts ohne Dateinamenerweiterung.|  
-|$SharePoint.Project.AssemblyPublicKeyToken$|Das öffentliche Schlüsseltoken der Ausgabeassembly des enthaltenden Projekts, konvertiert in eine Zeichenfolge. \(16 Zeichen in "x2"\-Hexadezimalformat.\)|  
-|$SharePoint.Package.Name$|Der Name des enthaltenden Pakets.|  
-|$SharePoint.Package.FileName$|Der Name der Definitionsdatei des enthaltenden Pakets.|  
-|$SharePoint.Package.FileNameWithoutExtension$|Der Name der Definitionsdatei des enthaltenden Pakets \(ohne Dateinamenerweiterung\).|  
-|$SharePoint.Package.Id$|Die SharePoint\-ID für das enthaltende Paket.  Wenn eine Funktion in mehreren Paketen verwendet wird, ändert sich dieser Wert.|  
-|$SharePoint.Feature.FileName$|Der Name der Definitionsdatei der enthaltenden Funktion, z. B. "Feature1.feature".|  
-|$SharePoint.Feature.FileNameWithoutExtension$|Der Name der Definitionsdatei der Funktion ohne die Dateinamenerweiterung.|  
-|$SharePoint.Feature.DeploymentPath$|Der Name des Ordners, der die Funktion im Paket enthält.  Dieses Token entspricht der Bereitstellungspfadeigenschaft im Funktions\-Designer.  Beispiel: "Project1\_Feature1".|  
-|$SharePoint.Feature.Id$|Die SharePoint\-ID der enthaltenden Funktion.  Dieses Token sowie alle Token auf Funktionsebene können nur von Dateien verwendet werden, die über eine Funktion in ein Paket eingeschlossen wurden. Für Dateien, die einem Paket direkt außerhalb einer Funktion hinzugefügt wurden, ist dies nicht möglich.|  
-|$SharePoint.ProjectItem.Name$|Der mit **ISharePointProjectItem.Name** abgerufene Name des Projektelements \(nicht der Dateiname\).|  
-|$SharePoint.Type.GUID.AssemblyQualifiedName$\<\>|Der durch die Assembly qualifizierte Name des Typs, der der [!INCLUDE[TLA2#tla_guid](../sharepoint/includes/tla2sharptla-guid-md.md)] des Tokens entspricht.  Das Format [!INCLUDE[TLA2#tla_guid](../sharepoint/includes/tla2sharptla-guid-md.md)] wird klein geschrieben Format entspricht dem Guid.ToString \("D"\) \(das heißt,\-. Es|  
-|$SharePoint.Type.GUID.FullName$\<\>|Der vollständige Name des Typs, der der GUID im Token entspricht.  Für das Format der GUID wird die Kleinschreibung verwendet. Es entspricht dem Guid.ToString \("D"\)\-Format \(d. h. xxxxxxxx\-xxxx\-xxxx\-xxxx\-xxxxxxxxxxxx\).|  
+|Name|Beschreibung|  
+|----------|-----------------|  
+|$SharePoint.Project.FileName$|Der Name der enthaltenden Projektdatei, z. B. "NewProj.csproj".|  
+|$SharePoint.Project.FileNameWithoutExtension$|Der Name der enthaltenden Projektdatei ohne die Dateinamenerweiterung. Zum Beispiel: "NewProj".|  
+|$SharePoint.Project.AssemblyFullName$|Der Anzeigename (starker Name) des enthaltenden Projekts Ausgabeassembly.|  
+|$SharePoint.Project.AssemblyFileName$|Der Name des enthaltenden Projekts Ausgabeassembly.|  
+|$SharePoint.Project.AssemblyFileNameWithoutExtension$|Der Name des enthaltenden Projekts Ausgabe Assembly ohne die Dateinamenerweiterung.|  
+|$SharePoint.Project.AssemblyPublicKeyToken$|Das Token des öffentliche Schlüssels des enthaltenden Projekts Ausgabe Assembly, in eine Zeichenfolge konvertiert. (16-Zeichen in "X2" Hexadezimalformat.)|  
+|$SharePoint.Package.Name$|Der Name des Pakets enthält.|  
+|$SharePoint.Package.FileName$|Der Name der dem entsprechenden Paket-Definitionsdatei.|  
+|$SharePoint.Package.FileNameWithoutExtension$|Der Name (ohne Erweiterung), der dem entsprechenden Paket-Definitionsdatei.|  
+|$SharePoint.Package.Id$|Die SharePoint-ID für das Paket enthält. Wenn eine Funktion in mehreren Paketen verwendet wird, wird dieser Wert geändert.|  
+|$SharePoint.Feature.FileName$|Der Name der Definitionsdatei der enthaltenden Funktion, z. B. "Feature1.Feature".|  
+|$SharePoint.Feature.FileNameWithoutExtension$|Der Name von der Funktionsdefinitionsdatei, ohne die Dateinamenerweiterung.|  
+|$SharePoint.Feature.DeploymentPath$|Der Name des Ordners, der die Funktion im Paket enthält. Dieses Token entspricht der Eigenschaft "Bereitstellungspfad" im Funktions-Designer. Ein Beispielwert ist "Project1_Feature1".|  
+|$SharePoint.Feature.Id$|Die SharePoint-ID der enthaltenden Funktion. Dieses Token hinzugefügt, da nur von Dateien in ein Paket über eine Funktion, die mit allen Funktionsebene Token verwendet werden kann nicht direkt zu einem Paket außerhalb einer Funktion.|  
+|$SharePoint.ProjectItem.Name$|Der Name des Projektelements (nicht der Dateiname), als vom erhaltenen **ISharePointProjectItem.Name**.|  
+|$SharePoint.Type. \<GUID >. AssemblyQualifiedName$|Die Assembly qualifizierten Namen der übereinstimmenden Typ der [!INCLUDE[TLA2#tla_guid](../sharepoint/includes/tla2sharptla-guid-md.md)] des Tokens. Das Format der [!INCLUDE[TLA2#tla_guid](../sharepoint/includes/tla2sharptla-guid-md.md)] Kleinbuchstaben und entspricht dem Format Kleinschreibung verwendet (also Xxxxxxxx-Xxxx-Xxxx-Xxxx-Xxxxxxxxxxxx).|  
+|$SharePoint.Type. \<GUID >. FullName$|Der vollständige Name des Typs der GUID im Token. Das Format der GUID Kleinbuchstaben und entspricht dem Format Kleinschreibung verwendet (also Xxxxxxxx-Xxxx-Xxxx-Xxxx-Xxxxxxxxxxxx).|  
   
-## Hinzufügen von Erweiterungen zur Liste der Tokenersatz\-Dateinamenerweiterungen  
- Obwohl Token theoretisch von jeder Datei verwendet werden können, die zu einem im Paket enthaltenen SharePoint\-Projektelement gehört, sucht [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] standardmäßig nur in Paketdateien, Manifestdateien und Dateien mit den folgenden Dateinamenerweiterungen nach Token:  
+## <a name="adding-extensions-to-the-token-replacement-file-extensions-list"></a>Hinzufügen von Erweiterungen für die Tokenersetzung Datei Erweiterungsliste  
+ Obwohl Token theoretisch von einer beliebigen Datei verwendet werden können, die zu einem SharePoint-Projekt, das standardmäßig im Paket enthaltenen gehört [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] sucht Token nur Paketdateien, die Manifestdateien und Dateien mit den folgenden Erweiterungen:  
   
 -   [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]  
   
--   ASCX  
+-   ASCX-DATEI  
   
 -   ASPX  
   
@@ -86,14 +88,14 @@ caps.handback.revision: 15
   
 -   DWP  
   
- Diese Erweiterungen werden durch das `<TokenReplacementFileExtensions>`\-Element in der Datei "Microsoft.VisualStudio.SharePoint.targets" definiert, im Ordner  "…\\\<Programme\>\\MSBuild\\Microsoft\\VisualStudio\\v11.0\\SharePointTools.  
+ Diese Erweiterungen werden definiert, indem die `<TokenReplacementFileExtensions>` Element in der Datei Microsoft.VisualStudio.SharePoint.targets befindet sich in der... \\<-Programmdateien\>\MSBuild\Microsoft\VisualStudio\v11.0\SharePointTools Ordner.  
   
- Sie können der Liste jedoch zusätzliche Dateinamenerweiterungen hinzufügen.  Hierzu, fügen Sie ein `<TokenReplacementFileExtensions>`\-Element einer Eigenschaftengruppe in der SharePoint\-Projektdatei hinzu die vor dem \<Import\> der SharePoint\-Zieledatei definiert wird.  
+ Sie können jedoch zusätzliche Erweiterungen zur Liste hinzufügen. Zu diesem Zweck fügen eine `<TokenReplacementFileExtensions>` Element jeder PropertyGroup in der SharePoint-Projektdatei, bevor Sie definiert ist, die \<Import > von der SharePoint-Targets-Datei.  
   
 > [!NOTE]  
->  Da die Tokenersetzung nach dem Kompilieren eines Projekts erfolgt, sollten keine Dateierweiterungen für Dateitypen hinzugefügt werden, die kompiliert werden \(z. B. .cs, .vb oder .resx\).  Token werden nur in Dateien ersetzt, die nicht kompiliert werden.  
+>  Da tokenersetzung tritt auf, nachdem ein Projekt kompiliert ist, sollten Sie nicht für Dateitypen, die kompiliert werden, z. B. cs,. vb oder RESX-Erweiterungen hinzufügen. Token werden nur in Dateien ersetzt, die nicht kompiliert werden.  
   
- Fügen Sie einer CSPROJ\-Datei z. B. Folgendes hinzu, um der Liste der Dateinamenerweiterungen für die Tokenersetzung die Erweiterungen ".myextension" und ".yourextension" hinzuzufügen:  
+ Beispielsweise würden Sie zum Hinzufügen der Datei Name Extensions ".myextension" und ".yourextension" zur Liste der Dateinamenerweiterungen tokenersetzung Folgendes in einer CSPROJ-Datei hinzufügen:  
   
 ```  
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
@@ -108,9 +110,9 @@ caps.handback.revision: 15
 </PropertyGroup>  
 ```  
   
- Alternativ können Sie der TARGETS\-Datei die Erweiterung direkt hinzufügen.  Hierdurch wird jedoch die Liste der Erweiterungen für alle im lokalen System verpackten SharePoint\-Projekte und nicht nur für Ihr Projekt geändert.  Dies ist möglicherweise zweckmäßig, wenn Sie der einzige Entwickler im System sind, oder wenn dies für die meisten Ihrer Projekte erforderlich ist.  Da dieser Ansatz jedoch systemspezifisch ist, ist er nicht sehr übertragbar. Es wird daher empfohlen, Erweiterungen stattdessen der Projektdatei hinzuzufügen.  
+ Alternativ können Sie die Erweiterung direkt an die TARGETS-Datei hinzufügen. Allerdings auf diese Weise die Liste der Erweiterungen für alle SharePoint-Projekte, die nicht nur auf dem lokalen System verpackt ändert eigene. Dies kann praktisch sein, wenn Sie der einzige Entwickler im System sind oder Großteil Ihrer Projekte erforderlich. Jedoch hinzugefügt werden, da es systemspezifische ist, diese Vorgehensweise nicht sehr leicht portieren ist und aus diesem Grund empfohlen, die wird Sie alle Erweiterungen an der Projektdatei stattdessen.  
   
-## Siehe auch  
- [Developing SharePoint Solutions](../sharepoint/developing-sharepoint-solutions.md)  
+## <a name="see-also"></a>Siehe auch  
+ [Entwickeln von SharePoint-Projektmappen](../sharepoint/developing-sharepoint-solutions.md)  
   
   

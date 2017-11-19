@@ -1,27 +1,30 @@
 ---
-title: "IDebugDocumentTextAuthor::RemoveText | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IDebugDocumentTextAuthor::RemoveText | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IDebugDocumentTextAuthor.RemoveText
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "IDebugDocumentTextAuthor::RemoveText"
+helpviewer_keywords: IDebugDocumentTextAuthor::RemoveText
 ms.assetid: 2b74d850-c0b1-4a3c-a37c-2c8d06d1ae02
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 24a366b35c777d09a14a0ad96e0f6dc25c03a26b
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# IDebugDocumentTextAuthor::RemoveText
-Entfernt Text aus dem Dokument.  
+# <a name="idebugdocumenttextauthorremovetext"></a>IDebugDocumentTextAuthor::RemoveText
+Entfernt den Text aus dem Dokument.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 HRESULT RemoveText(  
@@ -30,23 +33,23 @@ HRESULT RemoveText(
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `cCharacterPosition`  
- \[in\] starten Sie Speicherort des Zeichenbereichs, um zu entfernen.  
+ [in] Die Startposition des Zeichenbereichs folgt entfernen.  
   
  `cNumToRemove`  
- \[in\] Zahl zu entfernen eingegebenes Zeichen.  
+ [in] Die Anzahl der zu entfernenden Zeichen.  
   
-## Rückgabewert  
- Die Methode gibt ein `HRESULT` zurück.  Zu den möglichen Werten zählen, aber nicht zu, die in der folgenden Tabelle beschränkt.  
+## <a name="return-value"></a>Rückgabewert  
+ Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
   
-|Wert|Description|  
-|----------|-----------------|  
+|Wert|Beschreibung|  
+|-----------|-----------------|  
 |`S_OK`|Die Methode war erfolgreich.|  
   
-## Hinweise  
- Diese Methode entfernt Text aus dem Dokument.  
+## <a name="remarks"></a>Hinweise  
+ Diese Methode wird Text aus dem Dokument entfernt.  
   
-## Siehe auch  
- [IDebugDocumentTextAuthor\-Schnittstelle](../../winscript/reference/idebugdocumenttextauthor-interface.md)   
+## <a name="see-also"></a>Siehe auch  
+ [IDebugDocumentTextAuthor-Schnittstelle](../../winscript/reference/idebugdocumenttextauthor-interface.md)   
  [IDebugDocumentTextAuthor::InsertText](../../winscript/reference/idebugdocumenttextauthor-inserttext.md)

@@ -1,127 +1,142 @@
 ---
-title: "Walkthrough: Manually Deploying a ClickOnce Application | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-deployment"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "Mage.exe, manual ClickOnce deployments"
-  - "MageUI.exe, manual ClickOnce deployments"
-  - "deploying applications [ClickOnce], manual ClickOnce deployments"
-  - "ClickOnce deployment, manually"
-  - "ClickOnce deployment, SDK tools"
-  - "manual ClickOnce deployments"
-  - "manifests [ClickOnce]"
+title: 'Exemplarische Vorgehensweise: Manuelles Bereitstellen einer ClickOnce-Anwendung | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-deployment
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- C++
+helpviewer_keywords:
+- Mage.exe, manual ClickOnce deployments
+- MageUI.exe, manual ClickOnce deployments
+- deploying applications [ClickOnce], manual ClickOnce deployments
+- ClickOnce deployment, manually
+- ClickOnce deployment, SDK tools
+- manual ClickOnce deployments
+- manifests [ClickOnce]
 ms.assetid: ccee6551-a1b9-4ca2-8845-9c1cf4ac2560
-caps.latest.revision: 49
-caps.handback.revision: 47
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
+caps.latest.revision: "49"
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+ms.openlocfilehash: 10f99d620060245fd7dac4e2420216a23d068a83
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# Walkthrough: Manually Deploying a ClickOnce Application
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Wenn Sie die [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]\-Anwendung nicht mit Visual Studio bereitstellen können oder wenn Sie erweiterte Bereitstellungsfunktionen, z. B. die Bereitstellung vertrauenswürdiger Anwendungen, benötigen, sollten Sie zum Erstellen der [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]\-Manifeste das Befehlszeilentool Mage.exe verwenden.  In dieser exemplarischen Vorgehensweise wird beschrieben, wie Sie eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]\-Bereitstellung mithilfe der Befehlszeilenversion \(Mage.exe\) oder der grafischen Version \(MageUI.exe\) des Tools zum Generieren und Bearbeiten von Manifesten erstellen.  
+# <a name="walkthrough-manually-deploying-a-clickonce-application"></a>Exemplarische Vorgehensweise: Manuelles Bereitstellen einer ClickOnce-Anwendung
+Wenn Sie Visual Studio, zum Bereitstellen verwenden können Ihrer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] , oder Sie müssen erweiterte Funktionen verwenden, z. B. Bereitstellung vertrauenswürdiger Anwendungen, sollten Sie das Befehlszeilentool "Mage.exe" verwenden, um das Erstellen Ihrer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Manifeste. In dieser exemplarischen Vorgehensweise wird beschrieben, wie zum Erstellen einer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Bereitstellung mithilfe der Befehlszeilenversion (Mage.exe) oder die grafische Version (MageUI.exe), der das Manifest Tool zum Generieren und bearbeiten.  
   
-## Vorbereitungsmaßnahmen  
- In dieser exemplarischen Vorgehensweise müssen Sie erforderliche Komponenten und Optionen auswählen, bevor Sie eine Bereitstellung erstellen.  
+## <a name="prerequisites"></a>Erforderliche Komponenten  
+ In dieser exemplarischen Vorgehensweise verfügt über einige erforderliche Komponenten und Optionen, die Sie vor dem Erstellen einer Bereitstellung auswählen müssen.  
   
 -   Installieren Sie Mage.exe und MageUI.exe.  
   
-     Mage.exe und MageUI.exe sind Teil des [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)].  Das [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] oder die Version des in Visual Studio enthaltenen [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] muss installiert sein.  Weitere Informationen finden Sie auf MSDN unter [Windows SDK](http://go.microsoft.com/fwlink/?LinkId=158044).  
+     Mage.exe und MageUI.exe sind Teil der [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]. Entweder muss Ihnen die [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] installiert oder die Version des der [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] in Visual Studio enthaltene. Weitere Informationen finden Sie unter [Windows SDK](http://go.microsoft.com/fwlink/?LinkId=158044) auf MSDN.  
   
--   Geben Sie eine Anwendung an, die bereitgestellt werden soll.  
+-   Geben Sie eine bereitzustellende Anwendung.  
   
-     In dieser exemplarischen Vorgehensweise wird davon ausgegangen, dass Sie über eine Windows\-Anwendung verfügen, die bereitgestellt werden kann.  Diese Anwendung wird als AppToDeploy bezeichnet.  
+     In dieser exemplarischen Vorgehensweise wird davon ausgegangen, dass Sie eine Windows-Anwendung verfügen, die Sie bereitstellen möchten. Diese Anwendung wird als AppToDeploy bezeichnet werden.  
   
--   Bestimmen Sie, wie die Bereitstellung verteilt wird.  
+-   Bestimmen Sie, wie die Bereitstellung verteilt werden soll.  
   
-     Verteilungsoptionen sind Web, Dateifreigabe oder CD.  Weitere Informationen finden Sie unter [ClickOnce Security and Deployment](../deployment/clickonce-security-and-deployment.md).  
+     Die zu den Verteilungsoptionen gehören: Web, Dateifreigabe oder CD. Weitere Informationen finden Sie unter [ClickOnce Security and Deployment](../deployment/clickonce-security-and-deployment.md).  
   
--   Bestimmen Sie, ob die Anwendung eine höhere Vertrauensebene erfordert.  
+-   Bestimmen Sie, ob die Anwendung mit erhöhten Rechten ein Maß an Vertrauenswürdigkeit erforderlich ist.  
   
-     Wenn die Anwendung volle Vertrauenswürdigkeit, z. B. vollständigen Zugriff auf das System des Benutzers, erfordert, können Sie dies mit der `-TrustLevel`\-Option von Mage.exe festlegen.  Wenn Sie einen benutzerdefinierten Berechtigungssatz für die Anwendung definieren möchten, können Sie den Abschnitt mit der Internet\- oder Intranetberechtigung aus einem anderen Manifest kopieren, mit einem Text\-Editor oder MageUI.exe nach Bedarf bearbeiten und dem Anwendungsmanifest hinzufügen.   Weitere Informationen finden Sie unter [Überblick über die Bereitstellung vertrauenswürdiger Anwendungen](../deployment/trusted-application-deployment-overview.md).  
+     Wenn Ihre Anwendung volle Vertrauenswürdigkeit erforderlich ist – z. B. vollen Zugriff auf das System des Benutzers – können Sie die `-TrustLevel` -Option von Mage.exe festlegen. Wenn Sie einen benutzerdefinierten Berechtigungssatz für die Anwendung definieren möchten, können Sie im Internet oder Intranet Berechtigung Abschnitt aus einem anderen Manifest kopieren, ändern Sie sie entsprechend Ihren Anforderungen und das Anwendungsmanifest mit einem Text-Editor oder MageUI.exe hinzugefügt. Weitere Informationen finden Sie unter [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md).  
   
--   Rufen Sie ein Authenticode\-Zertifikat ab.  
+-   Rufen Sie ein Authenticode-Zertifikat.  
   
-     Signieren Sie die Bereitstellung mit einem Authenticode\-Zertifikat.  Sie können mit Visual Studio, MageUI.exe oder den Tools MakeCert.exe und Pvk2Pfx.exe ein Testzertifikat generieren oder ein Zertifikat von einer Zertifizierungsstelle abrufen.  Wenn Sie sich für die Bereitstellung vertrauenswürdiger Anwendungen entscheiden, müssen Sie das Zertifikat einmal auf allen Clientcomputern installieren.  Weitere Informationen finden Sie unter [Überblick über die Bereitstellung vertrauenswürdiger Anwendungen](../deployment/trusted-application-deployment-overview.md).  
-  
--   Stellen Sie sicher, dass die Anwendung kein Manifest mit UAC\-Informationen aufweist.  
-  
-     Sie müssen bestimmen, ob die Anwendung ein Manifest mit UAC \(User Account Control\)\-Informationen, z. B. ein `<dependentAssembly>`\-Element, enthält.  Um ein Anwendungsmanifest zu untersuchen, können Sie das Windows Sysinternals\-Hilfsprogramm [Sigcheck](http://go.microsoft.com/fwlink/?LinkId=158035) verwenden.  
-  
-     Wenn die Anwendung ein Manifest mit UAC\-Informationen enthält, müssen Sie es ohne die UAC\-Informationen neu erstellen.  Öffnen Sie für ein C\#\-Projekt in Visual Studio die Projekteigenschaften, und wählen Sie die Registerkarte Anwendung aus.  Wählen Sie in der Dropdownliste **Manifest** die Option **Anwendung ohne Manifest erstellen** aus.  Öffnen Sie für ein Visual Basic\-Projekt in Visual Studio die Projekteigenschaften, wählen Sie die Registerkarte Anwendung aus, und klicken Sie auf **Einstellungen für die Benutzerkontensteuerung anzeigen**.  Entfernen Sie in der geöffneten Manifestdatei alle Elemente innerhalb des einzelnen `<asmv1:assembly>`\-Elements.  
-  
--   Bestimmen Sie, ob für die Anwendung erforderliche Komponenten auf dem Clientcomputer vorhanden sein müssen.  
-  
-     Von Visual Studio bereitgestellte [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]\-Anwendungen können einen Bootstrapper für die Installation erforderlicher Komponenten \(setup.exe\) enthalten.  In dieser exemplarischen Vorgehensweise werden die beiden für eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]\-Bereitstellung erforderlichen Manifeste erstellt.  Sie können mit der [GenerateBootstrapper Task](../msbuild/generatebootstrapper-task.md) einen Bootstrapper für erforderliche Komponenten erstellen.  
-  
-### So stellen Sie eine Anwendung mit dem Befehlszeilentool Mage.exe bereit  
-  
-1.  Erstellen Sie ein Verzeichnis, in dem Sie die [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]\-Bereitstellungsdateien speichern.  
-  
-2.  Erstellen Sie in dem Bereitstellungsverzeichnis, das Sie gerade erstellt haben, ein Versionsunterverzeichnis.  Wenn Sie die Anwendung zum ersten Mal bereitstellen, legen Sie für das Versionsunterverzeichnis den Namen 1.0.0.0 fest.  
+     Sie sollten Ihre Bereitstellung mit einem Authenticode-Zertifikat signieren. Generieren eines Testzertifikats können mithilfe von Tools für Visual Studio "," MageUI.exe "oder" MakeCert.exe "und" Pvk2Pfx.exe, oder Sie können ein Zertifikat von einer Zertifizierungsstelle (Certificate Authority, CA) abrufen. Falls gewünscht, um die Bereitstellung einer vertrauenswürdigen Anwendung verwenden, müssen Sie auch eine einmalige Installation des Zertifikats auf allen Clientcomputern ausführen. Weitere Informationen finden Sie unter [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md).  
   
     > [!NOTE]
-    >  Die Version der Bereitstellung muss nicht unbedingt mit der Version der Anwendung identisch sein.  
+    >  Sie können auch die Bereitstellung mit einem CNG-Zertifikat signieren, die Sie von einer Zertifizierungsstelle erhalten können.  
   
-3.  Kopieren Sie alle Anwendungsdateien, d. h. ausführbare Dateien, Assemblys, Ressourcen und Datendateien, in das Versionsunterverzeichnis.  Sie können ggf. zusätzliche Unterverzeichnisse erstellen, die weitere Dateien enthalten.  
+-   Stellen Sie sicher, dass die Anwendung ein Manifest mit UAC-Informationen nicht verfügbar ist.  
   
-4.  Öffnen Sie die [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)]\- oder Visual Studio\-Eingabeaufforderung, und wechseln Sie zum Versionsunterverzeichnis.  
+     Sie müssen bestimmen, ob die Anwendung ein Manifest mit Informationen zur Benutzerkontensteuerung (UAC), z. B. enthält ein `<dependentAssembly>` Element. Um ein Anwendungsmanifest zu untersuchen, können Sie das Windows Sysinternals [Sigcheck](http://go.microsoft.com/fwlink/?LinkId=158035) Hilfsprogramm.  
   
-5.  Erstellen Sie mit einem Aufruf von Mage.exe das Anwendungsmanifest.  Mit der folgenden Anweisung wird ein Anwendungsmanifest für Code erstellt, der für die Ausführung mit dem Intel\-x86\-Prozessor kompiliert wurde.  
+     Wenn Ihre Anwendung ein Manifest mit UAC-Informationen enthält, müssen Sie es ohne die UAC-Informationen neu erstellt werden. Öffnen Sie für ein C#-Projekt in Visual Studio die Projekteigenschaften, und wählen Sie die Registerkarte "Anwendung". In der **Manifest** Dropdown-Liste **Anwendung ohne Manifest erstellen**. Für eine Visual Basic-Projekt in Visual Studio, öffnen Sie die Projekteigenschaften, wählen Sie die Registerkarte "Anwendung", und klicken Sie auf **UAC Ansichtseinstellungen**. In der Manifestdatei geöffnet ist, entfernen Sie alle Elemente innerhalb der einzelnen `<asmv1:assembly>` Element.  
+  
+-   Bestimmen Sie, ob die Anwendung erforderlichen Komponenten auf dem Clientcomputer erforderlich ist.  
+  
+     [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]in Visual Studio bereitgestellte Anwendungen können erforderlichen Installationskomponenten Bootstrapper (setup.exe) mit Ihrer Bereitstellung enthalten. In dieser exemplarischen Vorgehensweise erstellt, die zwei Manifeste erforderlich für eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Bereitstellung. Sie können einen erforderliche Bootstrapper erstellen, mit der [GenerateBootstrapper-Aufgabe](../msbuild/generatebootstrapper-task.md).  
+  
+### <a name="to-deploy-an-application-with-the-mageexe-command-line-tool"></a>Zum Bereitstellen einer Anwendung mit dem Befehlszeilentool Mage.exe  
+  
+1.  Erstellen Sie ein Verzeichnis, in dem Sie speichern, Ihre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Bereitstellungsdateien.  
+  
+2.  Erstellen Sie in den Bereitstellungsordner, den Sie gerade erstellt haben eine Versionsunterverzeichnis. Ist dies das erste Mal, dass Sie die Anwendung bereitstellen möchten, benennen Sie die im Versionsunterverzeichnis **1.0.0.0**.  
+  
+    > [!NOTE]
+    >  Die Version der Bereitstellung kann sich von der Version der Anwendung unterscheiden.  
+  
+3.  Kopieren Sie alle Ihre Anwendungsdateien zum Unterverzeichnis "Version", einschließlich der ausführbaren Dateien, Assemblys, Ressourcen und Datendateien. Bei Bedarf können Sie zusätzliche Unterverzeichnisse erstellen, die zusätzliche Dateien enthalten.  
+  
+4.  Öffnen der [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] oder der Eingabeaufforderung ein, und wechseln Sie zum Versionsunterverzeichnis des Visual Studio-Befehl.  
+  
+5.  Erstellen Sie das Anwendungsmanifest mit einem Aufruf von Mage.exe. Die folgende Anweisung erstellt ein Anwendungsmanifest für Code, der zum Ausführen der Intel X86-Prozessor kompiliert.  
   
     ```  
     mage -New Application -Processor x86 -ToFile AppToDeploy.exe.manifest -name "My App" -Version 1.0.0.0 -FromDirectory .   
     ```  
   
     > [!NOTE]
-    >  Fügen Sie nach der `-FromDirectory`\-Option, die das aktuelle Verzeichnis angibt, unbedingt den Punkt \(.\) ein.  Wenn Sie den Punkt nicht einfügen, müssen Sie den Pfad der Anwendungsdateien angeben.  
+    >  Achten Sie darauf, dass Sie nach dem Punkt (.) enthalten die `-FromDirectory` Option an, der das aktuelle Verzeichnis angegeben. Wenn Sie den Punkt nicht einschließen, müssen Sie den Pfad zu Anwendungsdateien angeben.  
   
-6.  Signieren Sie das Anwendungsmanifest mit dem Authenticode\-Zertifikat.  Ersetzen Sie *mycert.pfx* durch den Pfad der Zertifikatdatei.  Ersetzen Sie *passwd* durch das Kennwort für die Zertifikatdatei.  
+6.  Melden Sie sich das Anwendungsmanifest mit Authenticode-Zertifikat. Ersetzen Sie *mycert.pfx* durch den Pfad zu der Zertifikatdatei. Ersetzen Sie *Folgendes* durch das Kennwort für die Zertifikatdatei.  
   
     ```  
     mage -Sign AppToDeploy.exe.manifest -CertFile mycert.pfx -Password passwd  
     ```  
   
-7.  Wechseln Sie zum Stamm des Bereitstellungsverzeichnisses.  
+     Verwenden Sie folgende Schritte aus, um das Anwendungsmanifest mit einem CNG-Zertifikat zu signieren. Ersetzen Sie *cngCert.pfx* durch den Pfad zu der Zertifikatdatei.  
   
-8.  Generieren Sie das Bereitstellungsmanifest mit einem Aufruf von Mage.exe.  Mage.exe markiert die [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]\-Bereitstellung standardmäßig als installierte Anwendung, sodass sie sowohl online als auch offline ausgeführt werden kann.  Wenn die Anwendung nur verfügbar sein soll, während der Benutzer online ist, verwenden Sie die `-Install`\-Option mit dem Wert `false`.  Bei Verwendung der Standardeinstellung, bei der Benutzer die Anwendung von einer Website oder Dateifreigabe installieren, muss der Wert der `-ProviderUrl`\-Option auf den Speicherort des Anwendungsmanifests auf dem Webserver bzw. der Freigabe verweisen.  
+    ```  
+    mage -Sign AppToDeploy.exe.manifest -CertFile cngCert.pfx  
+    ```  
+  
+7.  Ändern Sie in das Stammverzeichnis des Bereitstellungsverzeichnis.  
+  
+8.  Generieren Sie das Bereitstellungsmanifest mit einem Aufruf von Mage.exe. Standardmäßig Mage.exe markiert die [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Bereitstellung als installierte Anwendung, damit die It sowohl online ausgeführt werden kann und offline. Um die Anwendung zur Verfügung stellen nur, wenn der Benutzer online ist, verwenden die `-Install` Option mit dem Wert `false`. Wenn Sie verwenden Sie den Standardnamen und Benutzer Ihre Anwendung von einer Website oder Dateifreigabe installieren, stellen sicher, dass der Wert des der `-ProviderUrl` Option verweist auf den Speicherort der Anwendung auf dem Webserver oder der Freigabe manifest.  
   
     ```  
     mage -New Deployment -Processor x86 -Install true -Publisher "My Co." -ProviderUrl "\\myServer\myShare\AppToDeploy.application" -AppManifest 1.0.0.0\AppToDeploy.exe.manifest -ToFile AppToDeploy.application  
     ```  
   
-9. Signieren Sie das Bereitstellungsmanifest mit dem Authenticode\-Zertifikat.  
+9. Melden Sie das Bereitstellungsmanifest mit Ihrem Authenticode oder CNG-Zertifikat.  
   
     ```  
     mage -Sign AppToDeploy.application -CertFile mycert.pfx -Password passwd  
     ```  
   
-10. Kopieren Sie alle Dateien im Bereitstellungsverzeichnis in das Bereitstellungsziel oder auf das Bereitstellungsmedium.  Dabei kann es sich um einen Ordner auf einer Website oder FTP\-Site, eine Dateifreigabe oder eine CD\-ROM handeln.  
+     oder  
   
-11. Geben Sie den Benutzern die URL oder einen UNC\-Pfad für die Anwendungsinstallation an, oder stellen Sie das physische Medium bereit.  Wenn Sie eine URL oder einen UNC\-Pfad angeben, müssen Sie den Benutzern den vollständigen Pfad zum Bereitstellungsmanifest mitteilen.  Wenn AppToDeploy z. B. unter http:\/\/webserver01\/ im Verzeichnis AppToDeploy bereitgestellt wird, lautet der vollständige URL\-Pfad http:\/\/webserver01\/AppToDeploy\/AppToDeploy.application.  
+    ```  
+    mage -Sign AppToDeploy.exe.manifest -CertFile cngCert.pfx  
+    ```  
   
-### So stellen Sie eine Anwendung mit dem grafischen Tool MageUI.exe bereit  
+10. Kopieren Sie alle Dateien im Bereitstellungsverzeichnis in das Bereitstellungsziel oder ein Medium. Dies kann entweder einen Ordner auf einer Website oder FTP-Site, eine Dateifreigabe oder eine CD-ROM sein.  
   
-1.  Erstellen Sie ein Verzeichnis, in dem Sie die [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]\-Bereitstellungsdateien speichern.  
+11. Geben Sie Ihre Benutzer mit der URL, den UNC- oder die physische Medien, die zur Installation der Anwendungsstatus erforderlich sind. Wenn Sie eine URL oder eine UNC-angeben, müssen Sie Ihre Benutzer den vollständigen Pfad zum Bereitstellungsmanifest erteilen. Z. B. Wenn AppToDeploy für http://webserver01/ im Verzeichnis AppToDeploy bereitgestellt wird, wäre die vollständige URL-Pfad http://webserver01/AppToDeploy/AppToDeploy.application.  
   
-2.  Erstellen Sie in dem Bereitstellungsverzeichnis, das Sie gerade erstellt haben, ein Versionsunterverzeichnis.  Wenn Sie die Anwendung zum ersten Mal bereitstellen, legen Sie für das Versionsunterverzeichnis den Namen 1.0.0.0 fest.  
+### <a name="to-deploy-an-application-with-the-mageuiexe-graphical-tool"></a>Zum Bereitstellen einer Anwendung mit dem grafischen Tool MageUI.exe  
+  
+1.  Erstellen Sie ein Verzeichnis, in dem Sie speichern, Ihre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Bereitstellungsdateien.  
+  
+2.  Erstellen Sie in den Bereitstellungsordner, den Sie gerade erstellt haben eine Versionsunterverzeichnis. Ist dies das erste Mal, dass Sie die Anwendung bereitstellen möchten, benennen Sie die im Versionsunterverzeichnis **1.0.0.0**.  
   
     > [!NOTE]
-    >  Die Version der Bereitstellung ist wahrscheinlich nicht mit der Version der Anwendung identisch.  
+    >  Die Version der Bereitstellung unterscheidet sich wahrscheinlich von der Version der Anwendung.  
   
-3.  Kopieren Sie alle Anwendungsdateien, d. h. ausführbare Dateien, Assemblys, Ressourcen und Datendateien, in das Versionsunterverzeichnis.  Sie können ggf. zusätzliche Unterverzeichnisse erstellen, die weitere Dateien enthalten.  
+3.  Kopieren Sie alle Ihre Anwendungsdateien zum Unterverzeichnis "Version", einschließlich der ausführbaren Dateien, Assemblys, Ressourcen und Datendateien. Bei Bedarf können Sie zusätzliche Unterverzeichnisse erstellen, die zusätzliche Dateien enthalten.  
   
 4.  Starten Sie das grafische Tool MageUI.exe.  
   
@@ -129,70 +144,70 @@ Wenn Sie die [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]\-
     MageUI.exe  
     ```  
   
-5.  Erstellen Sie ein neues Anwendungsmanifest, indem Sie im Menü **Datei** die Optionen **Neu** und **Anwendungsmanifest** auswählen.  
+5.  Erstellen Sie ein neues Anwendungsmanifest dazu **Datei**, **neu**, **Anwendungsmanifest** aus dem Menü.  
   
-6.  Geben Sie auf der standardmäßig angezeigten Registerkarte **Name** den Namen und die Versionsnummer dieser Bereitstellung ein.  Geben Sie außerdem den **Prozessor** an, für den die Anwendung erstellt wurde, z. B. x86.  
+6.  Auf dem standardmäßigen **Namen** Registerkarte, geben Sie die Anzahl der Name und Version dieser Bereitstellung. Geben Sie auch die **Prozessor** , die Ihre Anwendung, z. B. X86 erstellt wird.  
   
-7.  Wählen Sie die Registerkarte **Dateien** aus, und klicken Sie neben dem Textfeld **Anwendungsverzeichnis** auf die Schaltfläche mit den Auslassungszeichen \(**...**\).  Das Dialogfeld Ordner suchen wird angezeigt.  
+7.  Wählen Sie die **Dateien** Registerkarte, und klicken Sie auf die Auslassungspunkte (**...** ) neben dem **Anwendungsverzeichnis** Textfeld. Ein Dialogfeld Ordner suchen wird angezeigt.  
   
-8.  Wählen Sie das Versionsunterverzeichnis aus, das die Anwendungsdateien enthält, und klicken Sie dann auf **OK**.  
+8.  Wählen Sie das Versionsunterverzeichnis, das Ihre Anwendungsdateien enthält, und klicken Sie dann auf **OK**.  
   
-9. Wenn die Bereitstellung über Internetinformationsdienste \(IIS\) erfolgt, aktivieren Sie das Kontrollkästchen **Beim Füllen die Erweiterung ".deploy" zu allen Dateien ohne diese Erweiterung hinzufügen**.  
+9. Wenn Sie von Internet Information Services (IIS) bereitstellen, wählen Sie die **Wenn Auffüllen Hinzufügen der Erweiterung ".deploy" eine Datei, die es keinen** Kontrollkästchen.  
   
-10. Klicken Sie auf die Schaltfläche **Auffüllen**, um alle Anwendungsdateien zur Dateiliste hinzuzufügen.  Wenn die Anwendung mehrere ausführbare Dateien enthält, markieren Sie die zentrale ausführbare Datei für diese Bereitstellung als Startanwendung. Wählen Sie dazu in der Dropdownliste **Dateityp** die Option **Einstiegspunkt** aus.  \(Wenn die Anwendung nur eine ausführbare Datei enthält, wird diese automatisch markiert.\)  
+10. Klicken Sie auf die **Auffüllen** , um Ihre Anwendungsdateien der Dateiliste hinzuzufügen. Wenn Ihre Anwendung mehr als eine ausführbare Datei enthält, markieren Sie die zentrale ausführbare Datei für diese Bereitstellung als startanwendung dazu **Einstiegspunkt** aus der **Dateityp** Dropdown-Liste. (Wenn die Anwendung nur eine ausführbare Datei enthält, wird diese MageUI.exe markiert.)  
   
-11. Wählen Sie die Registerkarte **Erforderliche Berechtigungen** aus, und wählen Sie dann die Vertrauensebene aus, die die Anwendung anfordern muss.  Die Standardeinstellung lautet **FullTrust**. Diese ist für die meisten Anwendungen geeignet.  
+11. Wählen Sie die **erforderlichen Berechtigungen** Registerkarte, und wählen Sie die Ebene der Vertrauenswürdigkeit, die Sie benötigen, Ihre Anwendung zu bestätigen. Die Standardeinstellung ist **FullTrust**, der für die meisten Anwendungen geeignet ist.  
   
-12. Wählen Sie im Menü **Datei** die Option **Speichern unter** aus.  Das Dialogfeld Signaturoptionen wird mit der Aufforderung angezeigt, das Anwendungsmanifest zu signieren.  
+12. Wählen Sie **Datei**, **speichern unter** aus dem Menü. Ein Dialogfeld "Signaturoptionen" wird die Aufforderung zum Signieren des Anwendungsmanifests angezeigt.  
   
-13. Wenn ein Zertifikat als Datei im Dateisystem gespeichert ist, verwenden Sie die Option **Mit Zertifikatsdatei signieren**, und wählen Sie mit der Schaltfläche mit den Auslassungszeichen \(**...**\) das Zertifikat im Dateisystem aus.  Geben Sie dann das Zertifikatkennwort ein.  
+13. Wenn Sie ein Zertifikat als Datei im Dateisystem gespeichert haben, verwenden Sie die **mit Zertifikatsdatei signieren** aus, und wählen Sie das Zertifikat aus dem Dateisystem mit den Auslassungspunkten (**...** ) Schaltfläche. Geben Sie dann das Kennwort für Ihr Zertifikat ein.  
   
-     \- oder \-  
+     - oder -   
   
-     Wenn das Zertifikat in einem Zertifikatspeicher vorhanden ist, auf den Sie von Ihrem Computer aus zugreifen können, wählen Sie die Option **Mit gespeichertem Zertifikat signieren** aus, und wählen Sie dann das Zertifikat aus der Liste aus.  
+     Wenn das Zertifikat in keinem Zertifikatspeicher der von Ihrem Computer zugegriffen werden kann gehalten wird, wählen Sie die **mit gespeichertem Zertifikat signieren** aus, und wählen Sie das Zertifikat in der Liste.  
   
-14. Klicken Sie auf **OK**, um das Anwendungsmanifest zu signieren.  Das Dialogfeld Speichern unter wird angezeigt.  
+14. Klicken Sie auf **OK** das Anwendungsmanifest zu signieren. Das Dialogfeld Speichern unter wird angezeigt.  
   
-15. Geben Sie im Dialogfeld Speichern unter das Versionsverzeichnis an, und klicken Sie dann auf **Speichern**.  
+15. Klicken Sie im Dialogfeld Speichern unter Geben Sie das Versionsverzeichnis, und klicken Sie dann auf **speichern**.  
   
-16. Wählen Sie im Menü **Datei**, **Neu**, **Bereitstellungsmanifest** aus, um das Bereitstellungsmanifest zu erstellen.  
+16. Wählen Sie **Datei**, **neu**, **Bereitstellungsmanifest** aus, um das Bereitstellungsmanifest zu erstellen.  
   
-17. Geben Sie auf der Registerkarte **Name** einen Namen und eine Versionsnummer für die Bereitstellung \(in diesem Beispiel 1.0.0.0\) an.  Geben Sie außerdem den **Prozessor** an, für den die Anwendung erstellt wurde, z. B. x86.  
+17. Auf der **Namen** Registerkarte, geben einen Namen und Version für diese Bereitstellung (**1.0.0.0** in diesem Beispiel). Geben Sie auch die **Prozessor** , die Ihre Anwendung, z. B. X86 erstellt wird.  
   
-18. Wählen Sie die Registerkarte **Beschreibung** aus, und geben Sie Werte für **Herausgeber** und **Produkt** an.  \(**Produkt** ist der im Windows\-Startmenü für die Anwendung angegebene Name, wenn die Anwendung auf einem Clientcomputer für die Offlineverwendung installiert wird.\)  
+18. Wählen Sie die **Beschreibung** Registerkarte, und geben Sie Werte für **Publisher** und **Produkt *** t**. (**Produkt** ist der Name für Ihre Anwendung auf Windows-Startmenü Wenn Ihre Anwendung auf einem Clientcomputer für die Offlineverwendung installiert wird.)  
   
-19. Wählen Sie die Registerkarte **Bereitstellungsoptionen** aus, und geben Sie im Textfeld **Startposition** den Speicherort des Anwendungsmanifests auf dem Webserver oder der Freigabe an.  Beispiel: \\\\myServer\\myShare\\AppToDeploy.application.  
+19. Wählen Sie die **Bereitstellungsoptionen** Registerkarte, und klicken Sie in der **Startspeicherort** Text geben den Speicherort des Anwendungsmanifests auf dem Webserver oder der Freigabe. Beispielsweise \\\myServer\myShare\AppToDeploy.application.  
   
-20. Wenn Sie in einem vorherigen Schritt die Erweiterung .deploy hinzugefügt haben, wählen Sie jetzt außerdem **Dateinamenerweiterung ".deploy" verwenden** aus.  
+20. Wenn Sie die Erweiterung ".deploy" in einem vorherigen Schritt hinzugefügt haben, aktivieren Sie auch **verwenden Sie die Dateinamenerweiterung ".deploy"** hier.  
   
-21. Wählen Sie die Registerkarte **Aktualisierungsoptionen** aus, und geben Sie an, wie oft die Anwendung aktualisiert werden soll.  Wenn die Anwendung <xref:System.Deployment.Application.UpdateCheckInfo> verwendet, um selbst nach Updates zu suchen, deaktivieren Sie das Kontrollkästchen **Diese Anwendung soll nach Updates suchen**.  
+21. Wählen Sie die **Clientupdateoptionen** Registerkarte, und geben Sie, wie oft Sie diese Anwendung aktualisiert werden soll. Wenn Ihre Anwendung verwendet <xref:System.Deployment.Application.UpdateCheckInfo> um selbst Überprüfung auf Updates Deaktivieren der **diese Anwendung soll nach Updates suchen** Kontrollkästchen.  
   
-22. Wählen Sie die Registerkarte **Anwendungsverweis** aus, und klicken Sie dann auf die Schaltfläche **Manifest auswählen**.  Das Dialogfeld Öffnen wird angezeigt.  
+22. Wählen Sie die **Anwendungsverweis** Registerkarte, und klicken Sie dann auf die **Manifest auswählen** Schaltfläche. Ein geöffnetes Dialogfenster wird angezeigt.  
   
-23. Wählen Sie das Anwendungsmanifest aus, das Sie zuvor erstellt haben, und klicken Sie dann auf **Öffnen**.  
+23. Wählen Sie das Anwendungsmanifest, das Sie zuvor erstellt haben, und klicken Sie dann auf **öffnen**.  
   
-24. Wählen Sie im Menü **Datei** die Option **Speichern unter** aus.  Das Dialogfeld Signaturoptionen wird mit der Aufforderung angezeigt, das Bereitstellungsmanifest zu signieren.  
+24. Wählen Sie **Datei**, **speichern unter** aus dem Menü. Ein Dialogfeld "Signaturoptionen" angezeigt wird, dazu aufgefordert, dem das Bereitstellungsmanifest signiert.  
   
-25. Wenn ein Zertifikat als Datei im Dateisystem gespeichert ist, verwenden Sie die Option **Mit Zertifikatsdatei signieren**, und wählen Sie mit der Schaltfläche mit den Auslassungszeichen \(**...**\) das Zertifikat im Dateisystem aus.  Geben Sie dann das Zertifikatkennwort ein.  
+25. Wenn Sie ein Zertifikat als Datei im Dateisystem gespeichert haben, verwenden Sie die **mit Zertifikatsdatei signieren** aus, und wählen Sie das Zertifikat aus dem Dateisystem mit den Auslassungspunkten (**...** ) Schaltfläche. Geben Sie dann das Kennwort für Ihr Zertifikat ein.  
   
-     \- oder \-  
+     - oder -   
   
-     Wenn das Zertifikat in einem Zertifikatspeicher vorhanden ist, auf den Sie von Ihrem Computer aus zugreifen können, wählen Sie die Option **Mit gespeichertem Zertifikat signieren** aus, und wählen Sie dann das Zertifikat aus der Liste aus.  
+     Wenn das Zertifikat in keinem Zertifikatspeicher der von Ihrem Computer zugegriffen werden kann gehalten wird, wählen Sie die **mit gespeichertem Zertifikat signieren** aus, und wählen Sie das Zertifikat in der Liste.  
   
-26. Klicken Sie auf **OK**, um das Bereitstellungsmanifest zu signieren.  Das Dialogfeld Speichern unter wird angezeigt.  
+26. Klicken Sie auf **OK** um das Bereitstellungsmanifest zu signieren. Das Dialogfeld Speichern unter wird angezeigt.  
   
-27. Wechseln Sie im Dialogfeld **Speichern unter** zum Stammverzeichnis der Bereitstellung, und klicken Sie auf **Speichern**.  
+27. In der **speichern unter** (Dialogfeld), verschieben Sie ein Verzeichnis in das Stammverzeichnis Ihrer Bereitstellung und klicken Sie dann auf **speichern**.  
   
-28. Kopieren Sie alle Dateien im Bereitstellungsverzeichnis in das Bereitstellungsziel oder auf das Bereitstellungsmedium.  Dabei kann es sich um einen Ordner auf einer Website oder FTP\-Site, eine Dateifreigabe oder eine CD\-ROM handeln.  
+28. Kopieren Sie alle Dateien im Bereitstellungsverzeichnis in das Bereitstellungsziel oder ein Medium. Dies kann entweder einen Ordner auf einer Website oder FTP-Site, eine Dateifreigabe oder eine CD-ROM sein.  
   
-29. Geben Sie den Benutzern die URL oder einen UNC\-Pfad für die Anwendungsinstallation an, oder stellen Sie das physische Medium bereit.  Wenn Sie eine URL oder einen UNC\-Pfad angeben, müssen Sie den Benutzern den vollständigen Pfad zum Bereitstellungsmanifest mitteilen.  Wenn AppToDeploy z. B. unter http:\/\/webserver01\/ im Verzeichnis AppToDeploy bereitgestellt wird, lautet der vollständige URL\-Pfad http:\/\/webserver01\/AppToDeploy\/AppToDeploy.application.  
+29. Geben Sie Ihre Benutzer mit der URL, den UNC- oder die physische Medien, die zur Installation der Anwendungsstatus erforderlich sind. Wenn Sie eine URL oder eine UNC-angeben, müssen Sie Ihre Benutzer den vollständigen Pfad des Bereitstellungsmanifests erteilen. Z. B. Wenn AppToDeploy für http://webserver01/ im Verzeichnis AppToDeploy bereitgestellt wird, wäre die vollständige URL-Pfad http://webserver01/AppToDeploy/AppToDeploy.application.  
   
-## Nächste Schritte  
- Um eine neue Version der Anwendung bereitzustellen, erstellen Sie ein neues Verzeichnis, dessen Name der neuen Version entspricht, z. B. 1.0.0.1, und kopieren Sie die neuen Anwendungsdateien in das neue Verzeichnis.  Danach müssen Sie die vorherigen Schritte ausführen, um ein neues Anwendungsmanifest zu erstellen und zu signieren, und das Bereitstellungsmanifest aktualisieren und signieren.  Sie müssen im `-New`\-Aufruf und im `–Update`\-Aufruf von Mage.exe die gleiche höhere Version angeben, da [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] nur höhere Versionen aktualisiert, wobei die äußerste linke ganze Zahl die höchste Signifikanz aufweist.  Wenn Sie MageUI.exe verwenden, können Sie das Bereitstellungsmanifest aktualisieren, indem Sie es öffnen, die Registerkarte **Anwendungsverweis** auswählen, auf die Schaltfläche **Manifest auswählen** klicken und dann das aktualisierte Anwendungsmanifest auswählen.  
+## <a name="next-steps"></a>Nächste Schritte  
+ Wenn Sie eine neue Version der Anwendung bereitstellen, erstellen Sie ein neues Verzeichnis mit dem Namen der neuen Version – z. B. 1.0.0.1 kopieren Sie die neue Anwendungsdateien in das neue Verzeichnis. Als Nächstes müssen Sie die vorherigen Schritte zum Erstellen und Signieren ein neues Anwendungsmanifest und aktualisieren sowie das Bereitstellungsmanifest zu signieren. Achten Sie darauf, dass Sie an die gleiche höhere Version in beide Mage.exe `-New` und `-Update` Aufrufe als [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aktualisiert nur die am weitesten links Ganzzahl, die die wichtigsten höhere Versionen. Wenn Sie MageUI.exe verwenden, können Sie aktualisieren das Bereitstellungsmanifest öffnen, Auswahl der **Anwendungsverweis** Registerkarte, auf die **Manifest auswählen** Schaltfläche und wählen Sie dann die aktualisierte Anwendungsmanifest.  
   
-## Siehe auch  
- [Mage.exe \(Tool zum Generieren und Bearbeiten von Manifesten\)](../Topic/Mage.exe%20\(Manifest%20Generation%20and%20Editing%20Tool\).md)   
- [MageUI.exe \(Manifest Generation and Editing Tool, Graphical Client\)](../Topic/MageUI.exe%20\(Manifest%20Generation%20and%20Editing%20Tool,%20Graphical%20Client\).md)   
- [Publishing ClickOnce Applications](../deployment/publishing-clickonce-applications.md)   
- [ClickOnce Deployment Manifest](../deployment/clickonce-deployment-manifest.md)   
- [ClickOnce Application Manifest](../deployment/clickonce-application-manifest.md)
+## <a name="see-also"></a>Siehe auch  
+ [„Mage.exe“ (Tool zum Generieren und Bearbeiten von Manifesten)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)   
+ [MageUI.exe (Tool zum Generieren und Bearbeiten von Manifesten, grafischer Client)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)   
+ [Veröffentlichen von ClickOnce-Anwendungen](../deployment/publishing-clickonce-applications.md)   
+ [ClickOnce-Bereitstellungsmanifest](../deployment/clickonce-deployment-manifest.md)   
+ [ClickOnce-Anwendungsmanifest](../deployment/clickonce-application-manifest.md)

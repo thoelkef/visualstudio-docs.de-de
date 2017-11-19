@@ -1,49 +1,49 @@
 ---
-title: "IDebugReturnValueEvent2::GetReturnValue | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugReturnValueEvent2::GetReturnValue"
-helpviewer_keywords: 
-  - "IDebugReturnValueEvent2::GetReturnValue"
+title: IDebugReturnValueEvent2::GetReturnValue | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugReturnValueEvent2::GetReturnValue
+helpviewer_keywords: IDebugReturnValueEvent2::GetReturnValue
 ms.assetid: 86c50d5a-6df6-4798-818a-c587a8741f90
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 530d187d74143c2f3419147e0ded0265052b588e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugReturnValueEvent2::GetReturnValue
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Ruft den Wert ab, der für das schrittweise Ausführen oder über eine Funktion zurückgegeben wird.  
+# <a name="idebugreturnvalueevent2getreturnvalue"></a>IDebugReturnValueEvent2::GetReturnValue
+Ruft den Wert für das Ausführen in Einzelschritten aus oder über eine Funktion zurückgegeben wird.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT GetReturnValue (   
-   IDebugProperty2** ppReturnValue  
+```cpp  
+HRESULT GetReturnValue (   
+   IDebugProperty2** ppReturnValue  
 );  
 ```  
   
-```c#  
-int GetReturnValue (   
-   out IDebugProperty2 ppReturnValue  
+```csharp  
+int GetReturnValue (   
+   out IDebugProperty2 ppReturnValue  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `ppReturnValue`  
- \[out\]  Gibt ein [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)\-Objekt zurück, das den Wert darstellt, der abgerufen werden soll.  
+ [out] Gibt eine [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) Objekt, das das abzurufende Wert darstellt.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDebugReturnValueEvent2](../../../extensibility/debugger/reference/idebugreturnvalueevent2.md)   
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

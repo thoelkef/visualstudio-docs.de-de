@@ -1,12 +1,10 @@
 ---
-title: 'Walkthrough: Creating a Web Part for SharePoint by Using a Designer | Microsoft Docs'
+title: "Exemplarische Vorgehensweise: Erstellen eines Webparts für SharePoint mithilfe eines Designers | Microsoft Docs"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -19,188 +17,191 @@ helpviewer_keywords:
 - Web Parts [SharePoint development in Visual Studio], creating
 - Web Parts [SharePoint development in Visual Studio], designing
 ms.assetid: 3dd62654-ada2-468f-b7da-eb5704a2ff7a
-caps.latest.revision: 34
-author: kempb
-ms.author: kempb
+caps.latest.revision: "34"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 58ffc130a6b339d101cb24b582420d78f892aaa5
-ms.contentlocale: de-de
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: 55da85b9740216cefe55911d79dab2c16b035695
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer"></a>Walkthrough: Creating a Web Part for SharePoint by Using a Designer
-  If you create web parts for a SharePoint site, your users can directly modify the content, appearance, and behavior of pages in that site by using a browser. This walkthrough shows you how to create a web part visually by using the SharePoint **Visual Web Part** project template in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
+# <a name="walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer"></a>Exemplarische Vorgehensweise: Erstellen eines Webparts für SharePoint mithilfe eines Designers
+  Wenn Sie Webparts für eine SharePoint-Website erstellen, können Benutzer Inhalt, Darstellung und Verhalten der Seiten auf dieser Website direkt mithilfe eines Browsers ändern. Diese exemplarische Vorgehensweise veranschaulicht das Erstellen eines Webparts visuell mithilfe der SharePoint **visuelles Webpart** -Projektvorlage in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
- The web part that you'll create displays a monthly calendar view and a check box for each calendar list on the site. Users can specify which calendar lists to include in the monthly calendar view by selecting the check boxes.  
+ Das erstellte Webpart zeigt eine monatliche Kalenderansicht und ein Kontrollkästchen für jede Kalenderliste auf der Website an. Die Benutzer können angeben, welche Kalenderlisten in die monatliche Kalenderansicht eingeschlossen werden, indem sie die Kontrollkästchen aktivieren.  
   
- This walkthrough illustrates the following tasks:  
+ In dieser exemplarischen Vorgehensweise werden die folgenden Aufgaben veranschaulicht:  
   
--   Creating a web part by using the **Visual Web Part** project template.  
+-   Erstellen eines Webparts mit der **visuelles Webpart** -Projektvorlage.  
   
--   Designing the web part by using the Visual Web Developer designer in Visual Studio.  
+-   Entwerfen des Webparts mit dem Visual Web Developer-Designer in Visual Studio  
   
--   Adding code to handle the events of controls on the web part.  
+-   Hinzufügen von Code, um die Ereignisse der Steuerelemente des Webparts zu behandeln  
   
--   Testing the web part in SharePoint.  
+-   Testen des Webparts in SharePoint  
   
     > [!NOTE]  
-    >  Your computer might show different names or locations for some elements of the user interface for Visual Studio in the following instructions. The Visual Studio edition that you have and the settings that you use determine these elements. See [Personalize the Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md).  
+    >  Auf Ihrem Computer werden möglicherweise andere Namen oder Speicherorte für die Benutzeroberflächenelemente von Visual Studio angezeigt, als in den folgenden Anweisungen aufgeführt werden. Diese Elemente sind von der jeweiligen Visual Studio-Version und den verwendeten Einstellungen abhängig. Weitere Informationen finden Sie unter [Personalisieren der Visual Studio-IDE](../ide/personalizing-the-visual-studio-ide.md).  
   
-## <a name="prerequisites"></a>Prerequisites  
- You need the following components to complete this walkthrough:  
+## <a name="prerequisites"></a>Erforderliche Komponenten  
+ Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:  
   
--   Supported editions of Windows and SharePoint. See [Requirements for Developing SharePoint Solutions](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
+-   Unterstützte Editionen von Windows und SharePoint. Finden Sie unter [Anforderungen für die Entwicklung von SharePoint-Lösungen](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
   
--   [!INCLUDE[vsPro](../sharepoint/includes/vspro-md.md)] or greater.  
+-   [!INCLUDE[vsPro](../sharepoint/includes/vspro-md.md)] oder höher  
   
-## <a name="creating-a-web-part-project"></a>Creating a web part project  
- First, create a web part project by using the **Visual Web Part** project template.  
+## <a name="creating-a-web-part-project"></a>Erstellen eines Webpartprojekts  
+ Erstellen Sie zunächst ein Webpartprojekts mithilfe der **visuelles Webpart** -Projektvorlage.  
   
-#### <a name="to-create-a-visual-web-part-project"></a>To create a Visual Web Part project  
+#### <a name="to-create-a-visual-web-part-project"></a>So erstellen Sie ein Projekt vom Typ Visuelles Webpart  
   
-1.  Start [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] by using the **Run as Administrator** option.  
+1.  Starten Sie [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] mithilfe der **als Administrator ausführen** Option.  
   
-2.  On the menu bar, choose **File**, **New**, **Project**.  
+2.  Wählen Sie in der Menüleiste **Datei**, **Neu**, **Projekt**aus.  
   
-     The **New Project** dialog box appears.  
+     Das Dialogfeld **Neues Projekt** wird angezeigt.  
   
-3.  In the **New Project** dialog box, under either **Visual C#** or **Visual Basic**, expand **Office/SharePoint**, and then choose the **SharePoint Solutions** category.  
+3.  In der **neues Projekt** im Dialogfeld unter entweder **Visual C#-** oder **Visual Basic**, erweitern Sie **Office/SharePoint**, und wählen Sie dann die  **SharePoint-Lösungen** Kategorie.  
   
-4.  In the list of templates, choose the **SharePoint 2013 - Visual Web Part** template, and then choose the **OK** button.  
+4.  Wählen Sie in der Liste der Vorlagen, die **SharePoint 2013 - visuelles Webpart** Vorlage, und wählen Sie dann die **OK** Schaltfläche.  
   
-     The **SharePoint Customization Wizard** appears. By using this wizard, you can specify the site that you'll use to debug the project and the trust level of the solution.  
+     Die **Assistent zum Anpassen von SharePoint** angezeigt wird. Mit diesem Assistenten können Sie die Website, die Sie zum Debuggen des Projekts verwenden, sowie die Vertrauensebene der Projektmappe angeben.  
   
-5.  In the **What is the trust level for this SharePoint solution?** section, choose the **Deploy as a farm solution** option button.  
+5.  In der **neuerungen die Vertrauensebene für diese SharePoint-Lösung?** Abschnitt der **als farmlösung bereitstellen** Optionsfeld.  
   
-6.  Choose the **Finish** button to accept the default local SharePoint site.  
+6.  Wählen Sie die **Fertig stellen** Schaltfläche, um die standardmäßige lokale SharePoint-Website zu übernehmen.  
   
-## <a name="designing-the-web-part"></a>Designing the web part  
- Design the web part by adding controls from the **Toolbox** to the surface of the Visual Web Developer designer.  
+## <a name="designing-the-web-part"></a>Entwerfen des Webparts  
+ Entwerfen des Webparts durch Hinzufügen von Steuerelementen aus dem **Toolbox** auf die Oberfläche des Visual Web Developer-Designer.  
   
-#### <a name="to-design-the-layout-of-the-web-part"></a>To design the layout of the web part  
+#### <a name="to-design-the-layout-of-the-web-part"></a>So entwerfen Sie das Layout für das Webpart  
   
-1.  On the Visual Web Developer designer, choose the **Design** tab to switch to Design view.  
+1.  Wählen Sie in Visual Web Developer-Designer, der **Entwurf** Registerkarte ", um zur Entwurfsansicht zu wechseln.  
   
-2.  On the menu bar, choose **View**, **Toolbox**.  
+2.  Klicken Sie in der Menüleiste auf **Ansicht**, **Toolbox**.  
   
-3.  In the **Standard** node of the **Toolbox**, choose the **CheckBoxList** control, and then perform one of the following steps:  
+3.  In der **Standard** Knoten der **Toolbox**, wählen Sie die **CheckBoxList** steuern, und führen Sie einen der folgenden Schritte aus:  
   
-    -   Open the shortcut menu for the **CheckBoxList** control, choose **Copy**, open the shortcut menu for the first line in the designer, and then choose **Paste**.  
+    -   Öffnen Sie das Kontextmenü für die **CheckBoxList** steuern, wählen Sie **Kopie**, öffnen Sie das Kontextmenü für die erste Zeile im Designer, und wählen Sie dann **einfügen**.  
   
-    -   Drag the **CheckBoxList** control from the **Toolbox**, and connect the control to the first line in the designer.  
+    -   Ziehen Sie die **CheckBoxList** -Steuerelement aus der **Toolbox**, und verbinden Sie das Steuerelement mit der ersten Zeile im Designer.  
   
-4.  Repeat the previous step, but move a Button to the next line of the designer.  
+4.  Wiederholen Sie den vorherigen Schritt, aber verschieben Sie eine Schaltfläche in die nächste Zeile des Designers.  
   
-5.  In the designer, choose the **Button1** button.  
+5.  Wählen Sie im Designer die **Button1** Schaltfläche.  
   
-6.  On the menu bar, choose **View**, **Properties Window**.  
+6.  Wählen Sie in der Menüleiste **Ansicht**, **Fenster "Eigenschaften"**.  
   
-     The **Properties** window opens.  
+     Die **Eigenschaften** Fenster wird geöffnet.  
   
-7.  In the **Text** property of the button, enter **Update**.  
+7.  In der **Text** Geben Sie die Eigenschaft der Schaltfläche **Update**.  
   
-## <a name="handling-the-events-of-controls-on-the-web-part"></a>Handling the events of controls on the web part  
- Add code that enables the user to add calendars to the master calendar view.  
+## <a name="handling-the-events-of-controls-on-the-web-part"></a>Behandeln der Ereignisse von Steuerelementen des Webparts  
+ Fügen Sie Code hinzu, der es dem Benutzer ermöglicht, der Masterkalenderansicht Kalender hinzuzufügen.  
   
-#### <a name="to-handle-events-of-controls-on-the-web-part"></a>To handle events of controls on the web part  
+#### <a name="to-handle-events-of-controls-on-the-web-part"></a>So behandeln Sie Ereignisse der Steuerelemente des Webparts  
   
-1.  Perform one of the following sets of steps:  
+1.  Führen Sie einen der folgenden Schritte aus:  
   
-    -   In the designer, double-click the **Update** button.  
+    -   Doppelklicken Sie im Designer auf die **Update** Schaltfläche.  
   
-    -   In the **Properties** window for the **Update** button, choose the **Events** button. In the **Click** property, enter **Button1_Click**, and then choose the Enter key.  
+    -   In der **Eigenschaften** Fenster für die **Update** Schaltfläche der **Ereignisse** Schaltfläche. In der **klicken Sie auf** -Eigenschaft, geben Sie **Button1_Click**, und wählen Sie dann die EINGABETASTE.  
   
-     The user control code file opens in Code Editor and the `Button1_Click` event handler appears. Later, you'll add code to this event handler.  
+     Die Benutzersteuerelement-Codedatei wird im Code-Editor geöffnet, und der `Button1_Click`-Ereignishandler wird angezeigt. Später fügen Sie diesem Ereignishandler Code.  
   
-2.  Add the following statements to the top of the user control code file.  
+2.  Fügen Sie am Anfang der Benutzersteuerelement-Codedatei die folgenden Anweisungen hinzu.  
   
-     [!code-vb[SP_VisualWebPart#1](../sharepoint/codesnippet/VisualBasic/sp_visualwebpart.vb/visualwebpart1/visualwebpart1usercontrol.ascx.vb#1)]  [!code-csharp[SP_VisualWebPart#1](../sharepoint/codesnippet/CSharp/sp_visualwebpart.cs/visualwebpart1/visualwebpart1usercontrol.ascx.cs#1)]  
+     [!code-vb[SP_VisualWebPart#1](../sharepoint/codesnippet/VisualBasic/sp_visualwebpart.vb/visualwebpart1/visualwebpart1usercontrol.ascx.vb#1)]
+     [!code-csharp[SP_VisualWebPart#1](../sharepoint/codesnippet/CSharp/sp_visualwebpart.cs/visualwebpart1/visualwebpart1usercontrol.ascx.cs#1)]  
   
-3.  Add the following line of code to the `VisualWebPart1` class. This code declares a monthly calendar view control.  
+3.  Fügen Sie der `VisualWebPart1`-Klasse folgende Codezeile hinzu. In diesem Code wird ein monatliches Kalenderansichtssteuerelement deklariert.  
   
-     [!code-vb[SP_VisualWebPart#2](../sharepoint/codesnippet/VisualBasic/sp_visualwebpart.vb/visualwebpart1/visualwebpart1usercontrol.ascx.vb#2)]  [!code-csharp[SP_VisualWebPart#2](../sharepoint/codesnippet/CSharp/sp_visualwebpart.cs/visualwebpart1/visualwebpart1usercontrol.ascx.cs#2)]  
+     [!code-vb[SP_VisualWebPart#2](../sharepoint/codesnippet/VisualBasic/sp_visualwebpart.vb/visualwebpart1/visualwebpart1usercontrol.ascx.vb#2)]
+     [!code-csharp[SP_VisualWebPart#2](../sharepoint/codesnippet/CSharp/sp_visualwebpart.cs/visualwebpart1/visualwebpart1usercontrol.ascx.cs#2)]  
   
-4.  Replace the `Page_Load` method of the `VisualWebPart1` class with the following code. This code performs the following tasks:  
+4.  Ersetzen Sie die `Page_Load`-Methode der `VisualWebPart1`-Klasse durch folgenden Code. Mit diesem Code werden die folgenden Aufgaben ausgeführt:  
   
-    -   Adds a monthly calendar view to the user control.  
+    -   Fügt dem Benutzersteuerelement eine monatliche Kalenderansicht hinzu.  
   
-    -   Adds a check box for each calendar list on the site.  
+    -   Fügt ein Kontrollkästchen für jede Kalenderliste der Website hinzu.  
   
-    -   Specifies a template for each type of item that appears in the calendar view.  
+    -   Gibt eine Vorlage für jeden Typ von Element an, das in der Kalenderansicht angezeigt wird.  
   
-     [!code-vb[SP_VisualWebPart#3](../sharepoint/codesnippet/VisualBasic/sp_visualwebpart.vb/visualwebpart1/visualwebpart1usercontrol.ascx.vb#3)] [!code-csharp[SP_VisualWebPart#3](../sharepoint/codesnippet/CSharp/sp_visualwebpart.cs/visualwebpart1/visualwebpart1usercontrol.ascx.cs#3)]  
+     [!code-vb[SP_VisualWebPart#3](../sharepoint/codesnippet/VisualBasic/sp_visualwebpart.vb/visualwebpart1/visualwebpart1usercontrol.ascx.vb#3)]
+     [!code-csharp[SP_VisualWebPart#3](../sharepoint/codesnippet/CSharp/sp_visualwebpart.cs/visualwebpart1/visualwebpart1usercontrol.ascx.cs#3)]  
   
-5.  Replace the `Button1_Click` method of the `VisualWebPart1` class with the following code. This code adds items from each selected calendar to the master calendar view.  
+5.  Ersetzen Sie die `Button1_Click`-Methode der `VisualWebPart1`-Klasse durch folgenden Code. Mit diesem Code werden der Masterkalenderansicht Elemente aus jedem ausgewählten Kalender hinzugefügt.  
   
-     [!code-vb[SP_VisualWebPart#4](../sharepoint/codesnippet/VisualBasic/sp_visualwebpart.vb/visualwebpart1/visualwebpart1usercontrol.ascx.vb#4)]  [!code-csharp[SP_VisualWebPart#4](../sharepoint/codesnippet/CSharp/sp_visualwebpart.cs/visualwebpart1/visualwebpart1usercontrol.ascx.cs#4)]  
+     [!code-vb[SP_VisualWebPart#4](../sharepoint/codesnippet/VisualBasic/sp_visualwebpart.vb/visualwebpart1/visualwebpart1usercontrol.ascx.vb#4)]
+     [!code-csharp[SP_VisualWebPart#4](../sharepoint/codesnippet/CSharp/sp_visualwebpart.cs/visualwebpart1/visualwebpart1usercontrol.ascx.cs#4)]  
   
-## <a name="testing-the-web-part"></a>Testing the web part  
- When you run the project, the SharePoint site opens. The web part is automatically added to the Web Part Gallery in SharePoint. To test this project, you'll perform the following tasks:  
+## <a name="testing-the-web-part"></a>Testen des Webparts  
+ Wenn Sie das Projekt ausführen, wird die SharePoint-Website geöffnet. Das Webpart wird automatisch dem Webpartkatalog in SharePoint hinzugefügt. Um dieses Projekt zu testen, müssen Sie die folgenden Aufgaben ausführen:  
   
--   Add an event to each of two separate calendar lists.  
+-   Fügen Sie jeder von zwei separaten Kalenderlisten ein Ereignis hinzu.  
   
--   Add the web part to a web part page.  
+-   Fügen Sie das Webpart einer Webpartseite hinzu.  
   
--   Specify the lists to include in the monthly calendar view.  
+-   Geben Sie die Listen an, die in die monatliche Kalenderansicht eingeschlossen werden sollen.  
   
-#### <a name="to-add-events-to-calendar-lists-on-the-site"></a>To add events to calendar lists on the site  
+#### <a name="to-add-events-to-calendar-lists-on-the-site"></a>So fügen Sie Kalenderlisten der Website Ereignisse hinzu  
   
-1.  In Visual Studio, choose the F5 key.  
+1.  In Visual Studio drücken Sie die Taste F5.  
   
-     The SharePoint site opens, and the [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] Quick Launch bar appears on the page.  
+     Die SharePoint-Website wird geöffnet, und die [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] -Schnellstartleiste wird auf der Seite angezeigt.  
   
-2.  On the Quick Launch bar, under **Lists**, choose the **Calendar** link.  
+2.  Auf der Schnellstartleiste unter **listet**, wählen Sie die **Kalender** Link.  
   
-     The **Calendar** page appears.  
+     Die **Kalender** Seite wird angezeigt.  
   
-     If you no Calendar link appears on the Quick Launch bar, choose the **Site Contents** link. If the Site Contents page doesn't show a **Calendar** item, create one.  
+     Wenn Sie kein Link "Kalender" auf der Schnellstartleiste angezeigt wird, wählen Sie die **Websiteinhalte** Link. Die Seite "Websiteinhalte" angezeigt ein **Kalender** Element, erstellen Sie einen.  
   
-3.  On the Calendar page, choose a day, and then choose the **Add** link in the selected day to add an event.  
+3.  Klicken Sie auf der Seite "Kalender" Wählen Sie ein Tag aus, und wählen Sie dann die **hinzufügen** Link in der ausgewählten Tag um ein Ereignis hinzuzufügen.  
   
-4.  In the **Title** box, enter **Event in the default calendar**, and then choose the **Save** button.  
+4.  In der **Titel** geben **Ereignis im Standardkalender**, und wählen Sie dann die **speichern** Schaltfläche.  
   
-5.  Choose the **Site Contents** link, and then choose the **Add an app** tile.  
+5.  Wählen Sie die **Websiteinhalte** verknüpfen, und wählen Sie dann die **app hinzufügen** Kachel.  
   
-6.  On the **Create** page, choose the **Calendar** type, name the calendar, and then choose the **Create** button.  
+6.  Auf der **erstellen** Seite, und wählen Sie die **Kalender** geben, benennen Sie den Kalender, und wählen Sie dann die **erstellen** Schaltfläche.  
   
-7.  Add an event to the new calendar, name the event **Event in the custom calendar**, and then choose the **Save** button.  
+7.  Dem neuen Kalender ein Ereignis hinzugefügt haben, benennen Sie das Ereignis **Ereignis im benutzerdefinierten Kalender**, und wählen Sie dann die **speichern** Schaltfläche.  
   
-#### <a name="to-add-the-web-part-to-a-web-part-page"></a>To add the web part to a web part page  
+#### <a name="to-add-the-web-part-to-a-web-part-page"></a>So fügen Sie das Webpart einer Webpartseite hinzu  
   
-1.  On the **Site Contents** page, open the **Site Pages** folder.  
+1.  Auf der **Websiteinhalte** Seite öffnen die **Websiteseiten** Ordner.  
   
-2.  On the ribbon, choose the **Files** tab, open the **New Document** menu, and then choose the **Web Part Page** command.  
+2.  Wählen Sie auf dem Menüband der **Dateien** Registerkarte Öffnen der **neues Dokument** im Menü, und wählen Sie dann die **Webpartseite** Befehl.  
   
-3.  On the **New Web Part Page** page, name the page **SampleWebPartPage.aspx**, and then choose the **Create** button.  
+3.  Auf der **neue Webpartseite** Seite, nennen Sie die Seite **SampleWebPartPage.aspx**, und wählen Sie dann die **erstellen** Schaltfläche.  
   
-     The web part page appears.  
+     Die Webpartseite wird angezeigt.  
   
-4.  In the top zone of the web part page, choose the **Insert** tab, and then choose the **Web Part** button.  
+4.  Wählen Sie im oberen Bereich der Webpartseite, die **einfügen** Registerkarte, und wählen Sie dann die **Webpart** Schaltfläche.  
   
-5.  Choose the **Custom** folder, choose the **VisualWebPart1** web part, and then choose the **Add** button.  
+5.  Wählen Sie die **benutzerdefinierte** Ordner, wählen Sie die **VisualWebPart1** -Webpart, und wählen Sie dann die **hinzufügen** Schaltfläche.  
   
-     The web part appears on the page. The following controls appear on the web part:  
+     Das Webpart wird auf der Seite angezeigt. Die folgenden Steuerelemente werden für das Webpart angezeigt:  
   
-    -   A monthly calendar view.  
+    -   Eine monatliche Kalenderansicht.  
   
-    -   An **Update** button.  
+    -   Ein **Update** Schaltfläche.  
   
-    -   A **Calendar** check box.  
+    -   Ein **Kalender** Kontrollkästchen.  
   
-    -   A **Custom Calendar** check box.  
+    -   Ein **benutzerdefinierter Kalender** Kontrollkästchen.  
   
-#### <a name="to-specify-lists-to-include-in-the-monthly-calendar-view"></a>To specify lists to include in the monthly calendar view  
+#### <a name="to-specify-lists-to-include-in-the-monthly-calendar-view"></a>So geben Sie die Listen an, die in die monatliche Kalenderansicht eingeschlossen werden sollen  
   
-1.  In the web part, specify calendars that you want to include in the monthly calendar view, and then choose the **Update** button.  
+1.  Geben Sie im Webpart Kalender, die Sie verwenden möchten, in die monatliche Kalenderansicht einschließen, und wählen Sie dann die **Update** Schaltfläche.  
   
-     Events from all calendars that you specified appear in the monthly calendar view.  
+     Die Ereignisse aus allen angegebenen Kalendern werden in der monatlichen Kalenderansicht angezeigt.  
   
-## <a name="see-also"></a>See Also  
- [Creating Web Parts for SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)   
- [How to: Create a SharePoint Web Part](../sharepoint/how-to-create-a-sharepoint-web-part.md)   
- [How to: Create a SharePoint Web Part by Using a Designer](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)   
- [Walkthrough: Creating a Web Part for SharePoint](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)  
+## <a name="see-also"></a>Siehe auch  
+ [Erstellen von Webparts für SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)   
+ [Vorgehensweise: Erstellen eines SharePoint-Webparts](../sharepoint/how-to-create-a-sharepoint-web-part.md)   
+ [Vorgehensweise: erstellen ein SharePoint-Webparts mithilfe eines Designers](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)   
+ [Exemplarische Vorgehensweise: Erstellen eines Webparts für SharePoint](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)  
   
   

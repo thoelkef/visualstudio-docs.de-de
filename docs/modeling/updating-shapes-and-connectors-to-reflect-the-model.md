@@ -7,16 +7,15 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 51eb2af9-00e7-4725-a87d-62fb4f39f444
-caps.latest.revision: 6
+caps.latest.revision: "6"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: ae3a0d952b8ff88f2df4d297509d01d1a6731d56
-ms.contentlocale: de-de
-ms.lasthandoff: 09/26/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="updating-shapes-and-connectors-to-reflect-the-model"></a>Aktualisieren von Formen und Konnektoren zur Darstellung des Modells
 In einer domänenspezifischen Sprache in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], Sie können die Darstellung einer Form, die den Status der zugrunde liegenden Modell wieder vornehmen.  
@@ -158,4 +157,3 @@ public partial class ArrowConnector // My connector class.
  `AssociateValueWith()`sollte für jede Eigenschaft "Domain" einmal aufgerufen werden, die Sie registrieren möchten. Nachdem er aufgerufen wurde, ruft alle Änderungen an der angegebenen Eigenschaft `OnAssociatedPropertyChanged()` in alle Formen, die die Eigenschaft Modellelement darstellen.  
   
  Es ist nicht notwendig, `AssociateValueWith()` für jede Instanz. Obwohl InitializeResources eine Instanzmethode ist, wird es nur ein Mal für jede Form "-Klasse aufgerufen.
-

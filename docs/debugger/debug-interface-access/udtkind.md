@@ -1,41 +1,40 @@
 ---
-title: "UdtKind | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "UdtKind-Enumeration"
+title: UdtKind | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: UdtKind enumeration
 ms.assetid: 400b59b9-373c-42cb-aae1-570494214328
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: fb391e284df3102313cb12a78e26b857cd6e0f62
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# UdtKind
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Beschreibt die Vielzahl von benutzerdefinierten Typ \(UDT\).  
+# <a name="udtkind"></a>UdtKind
+Beschreibt die unterschiedlichen den benutzerdefinierten Typ (UDT).  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-enum UdtKind {   
-   UdtStruct,  
-   UdtClass,  
-   UdtUnion,  
-   UdtInterface  
+```C++  
+enum UdtKind {   
+   UdtStruct,  
+   UdtClass,  
+   UdtUnion,  
+   UdtInterface  
 };  
 ```  
   
-## Elements  
+## <a name="elements"></a>Elements  
  UdtStruct  
  UDT ist eine Struktur.  
   
@@ -48,12 +47,12 @@ enum UdtKind { 
  UdtInterface  
  UDT ist eine Schnittstelle.  
   
-## Hinweise  
- Die Werte in dieser Enumeration zurückgegeben von der [IDiaSymbol::get\_udtKind](../../debugger/debug-interface-access/idiasymbol-get-udtkind.md) Methode.  
+## <a name="remarks"></a>Hinweise  
+ Die Werte in dieser Enumeration werden zurückgegeben, durch die [idiasymbol:: Get_udtkind](../../debugger/debug-interface-access/idiasymbol-get-udtkind.md) Methode.  
   
-## Anforderungen  
- Header: dia2.idl  
+## <a name="requirements"></a>Anforderungen  
+ Header: cvconst.h  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Enumerationen und Strukturen](../../debugger/debug-interface-access/enumerations-and-structures.md)   
- [IDiaSymbol::get\_udtKind](../../debugger/debug-interface-access/idiasymbol-get-udtkind.md)
+ [IDiaSymbol::get_udtKind](../../debugger/debug-interface-access/idiasymbol-get-udtkind.md)

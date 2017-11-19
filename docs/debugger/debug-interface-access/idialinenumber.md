@@ -1,64 +1,63 @@
 ---
-title: "IDiaLineNumber | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaLineNumber-Schnittstelle"
+title: IDiaLineNumber | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaLineNumber interface
 ms.assetid: 1071f7d0-1f8c-4384-933f-c49c7eb930bd
-caps.latest.revision: 13
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 45996e66500ebf275154553774d5116c6075af0f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaLineNumber
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Greift auf Informationen, die den Prozess der Zuordnung einer Byteblock Bild von Text in einer Quelldatei Zeilennummer für beschreibt.  
+# <a name="idialinenumber"></a>IDiaLineNumber
+Greift auf die Informationen, die den Prozess der Zuordnung aus einen Block von Bytes des Image-Texts für eine Quellzeilennummer der Datei beschreibt.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
-IDiaLineNumber : IUnknown  
+IDiaLineNumber : IUnknown  
 ```  
   
-## Methoden in die Vtable\-Reihenfolge  
- In der folgenden Tabelle werden die Methoden von `IDiaLineNumber`an.  
+## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
+ Die folgende Tabelle zeigt die Methoden der `IDiaLineNumber`.  
   
 |Methode|Beschreibung|  
-|-------------|------------------|  
-|[IDiaLineNumber::get\_compiland](../../debugger/debug-interface-access/idialinenumber-get-compiland.md)|Ruft einen Verweis auf das Symbol für die Kompiliereinheit ab, die die Bytes Bild von Text beitrug.|  
-|[IDiaLineNumber::get\_sourceFile](../../debugger/debug-interface-access/idialinenumber-get-sourcefile.md)|Ruft einen Verweis auf die Quelldatei Objekt ab.|  
-|[IDiaLineNumber::get\_lineNumber](../../debugger/debug-interface-access/idialinenumber-get-linenumber.md)|Ruft die Zeilennummer in der Quelldatei ab.|  
-|[IDiaLineNumber::get\_lineNumberEnd](../../debugger/debug-interface-access/idialinenumber-get-linenumberend.md)|Die 1\-basierte Quellzeilen Zahl in der die Anweisungen oder enden Ausdrucks abruft.|  
-|[IDiaLineNumber::get\_columnNumber](../../debugger/debug-interface-access/idialinenumber-get-columnnumber.md)|Ruft die Spaltennummer ab, in der der Ausdruck oder die Anweisung begonnen wird.|  
-|[IDiaLineNumber::get\_columnNumberEnd](../../debugger/debug-interface-access/idialinenumber-get-columnnumberend.md)|Die Spaltennummer in der die Ausdrucks\- oder Anweisung beendet wird.|  
-|[IDiaLineNumber::get\_addressSection](../../debugger/debug-interface-access/idialinenumber-get-addresssection.md)|Ruft den Teil der Speicheradresse Abschnitts ab, in der ein Block beginnt.|  
-|[IDiaLineNumber::get\_addressOffset](../../debugger/debug-interface-access/idialinenumber-get-addressoffset.md)|Ruft den Offset Teil der Speicheradresse ab, in der ein Block beginnt.|  
-|[IDiaLineNumber::get\_relativeVirtualAddress](../../debugger/debug-interface-access/idialinenumber-get-relativevirtualaddress.md)|Ruft die relative virtuelle Adresse des Bildes \(RVA\) eines Blocks ab.|  
-|[IDiaLineNumber::get\_virtualAddress](../../debugger/debug-interface-access/idialinenumber-get-virtualaddress.md)|Ruft die virtuelle Adresse \(VA\) eines Blocks ab.|  
-|[IDiaLineNumber::get\_length](../../debugger/debug-interface-access/idialinenumber-get-length.md)|Ruft die Anzahl der Bytes in einem Block ab.|  
-|[IDiaLineNumber::get\_sourceFileId](../../debugger/debug-interface-access/idialinenumber-get-sourcefileid.md)|Ruft einen eindeutigen Bezeichner für eine Quelldatei für die Quelldatei ab, die diese Zeile beitrug.|  
-|[IDiaLineNumber::get\_statement](../../debugger/debug-interface-access/idialinenumber-get-statement.md)|Ruft ein Flag ab, das angibt, dass die Zeileninformationen den Anfang einer Anweisung in der Quelle des Programms beschrieben.|  
-|[IDiaLineNumber::get\_compilandId](../../debugger/debug-interface-access/idialinenumber-get-compilandid.md)|Ruft den eindeutigen Bezeichner der Kompiliereinheit ab, die diese Zeile beitrug.|  
+|------------|-----------------|  
+|[IDiaLineNumber::get_compiland](../../debugger/debug-interface-access/idialinenumber-get-compiland.md)|Ruft einen Verweis auf das Symbol für die Kompiliereinheit, die die Bytes der Image-Text beigetragen haben.|  
+|[IDiaLineNumber::get_sourceFile](../../debugger/debug-interface-access/idialinenumber-get-sourcefile.md)|Ruft einen Verweis auf das Objekt "Datei" Quelle ab.|  
+|[IDiaLineNumber::get_lineNumber](../../debugger/debug-interface-access/idialinenumber-get-linenumber.md)|Ruft die Zeilennummer in der Quelldatei ab.|  
+|[IDiaLineNumber::get_lineNumberEnd](../../debugger/debug-interface-access/idialinenumber-get-linenumberend.md)|Ruft die einsbasierte Zeilennummer, in der Anweisung oder der Ausdruck endet.|  
+|[IDiaLineNumber::get_columnNumber](../../debugger/debug-interface-access/idialinenumber-get-columnnumber.md)|Ruft die Nummer der Spalte, an den Ausdruck oder Anweisung beginnt.|  
+|[IDiaLineNumber::get_columnNumberEnd](../../debugger/debug-interface-access/idialinenumber-get-columnnumberend.md)|Ruft die Nummer der Spalte, in den Ausdruck oder Anweisung endet.|  
+|[IDiaLineNumber::get_addressSection](../../debugger/debug-interface-access/idialinenumber-get-addresssection.md)|Ruft ab den Abschnitt Teil die Speicheradresse, an ein Block beginnt.|  
+|[IDiaLineNumber::get_addressOffset](../../debugger/debug-interface-access/idialinenumber-get-addressoffset.md)|Ruft den Offset Teil die Speicheradresse, an ein Block beginnt.|  
+|[IDiaLineNumber::get_relativeVirtualAddress](../../debugger/debug-interface-access/idialinenumber-get-relativevirtualaddress.md)|Ruft das Bild relative virtuelle Adresse (RVA) eines Blocks ab.|  
+|[IDiaLineNumber::get_virtualAddress](../../debugger/debug-interface-access/idialinenumber-get-virtualaddress.md)|Ruft die virtuelle Adresse ("VA" ist) eines Blocks ab.|  
+|[IDiaLineNumber::get_length](../../debugger/debug-interface-access/idialinenumber-get-length.md)|Ruft die Anzahl der Bytes in einem Block ab.|  
+|[IDiaLineNumber::get_sourceFileId](../../debugger/debug-interface-access/idialinenumber-get-sourcefileid.md)|Ruft einen eindeutige Quelle Dateibezeichner für die Quelldatei, die diese Zeile beigetragen haben.|  
+|[IDiaLineNumber::get_statement](../../debugger/debug-interface-access/idialinenumber-get-statement.md)|Ruft ein Flag gibt an, dass diese Zeileninformationen den Anfang einer Anweisung in den Programmquellcode ein beschreibt ab.|  
+|[IDiaLineNumber::get_compilandId](../../debugger/debug-interface-access/idialinenumber-get-compilandid.md)|Ruft den eindeutigen Bezeichner für die Kompiliereinheit, die diese Zeile beigetragen haben.|  
   
-## Hinweise  
+## <a name="remarks"></a>Hinweise  
   
-## Hinweise für Aufrufer  
- Rufen Sie diese Schnittstelle, indem sie die [IDiaEnumLineNumbers::Item](../../debugger/debug-interface-access/idiaenumlinenumbers-item.md) oder [IDiaEnumLineNumbers::Next](../../debugger/debug-interface-access/idiaenumlinenumbers-next.md)\-Methoden aufgerufen werden.  
+## <a name="notes-for-callers"></a>Hinweise für Aufrufer  
+ Rufen Sie diese Schnittstelle durch Aufrufen der [idiaenumlinenumbers:: Item](../../debugger/debug-interface-access/idiaenumlinenumbers-item.md) oder [idiaenumlinenumbers:: Next](../../debugger/debug-interface-access/idiaenumlinenumbers-next.md) Methoden.  
   
-## Beispiel  
- Die folgende Funktion werden die Zeilennummern an, die in einer Funktion verwendet werden \(dargestellt durch `pSymbol`\).  
+## <a name="example"></a>Beispiel  
+ Die folgende Funktion zeigt Zeilennummern, die in einer Funktion verwendet (dargestellt durch `pSymbol`).  
   
-```cpp#  
+```C++  
 void dumpFunctionLines( IDiaSymbol* pSymbol, IDiaSession* pSession )  
 {  
     ULONGLONG length = 0;  
@@ -136,15 +135,15 @@ void dumpFunctionLines( IDiaSymbol* pSymbol, IDiaSession* pSession )
 }  
 ```  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  Header: Dia2.h  
   
  Bibliothek: diaguids.lib  
   
- DLLs: msdia80.dll  
+ DLL: "MSDIA80.dll"  
   
-## Siehe auch  
- [Schnittstellen \(Debug Interface Access SDK\)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+## <a name="see-also"></a>Siehe auch  
+ [Schnittstellen (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)   
- [IDiaEnumLineNumbers::Item](../../debugger/debug-interface-access/idiaenumlinenumbers-item.md)   
+ [Idiaenumlinenumbers:: Item](../../debugger/debug-interface-access/idiaenumlinenumbers-item.md)   
  [IDiaEnumLineNumbers::Next](../../debugger/debug-interface-access/idiaenumlinenumbers-next.md)

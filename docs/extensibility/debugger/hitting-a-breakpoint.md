@@ -1,32 +1,34 @@
 ---
-title: "Treffen eines Haltepunkts | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Debuggen [Debugging-SDK], erreichen von Haltepunkten"
-  - "Haltepunkte, drücken"
+title: Das Erreichen eines Haltepunkts | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- debugging [Debugging SDK], hitting breakpoints
+- breakpoints, hitting
 ms.assetid: a77816e3-b15b-46a0-90cd-be7242e4d6c9
-caps.latest.revision: 7
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 73cdce5415dd50059dcd443f67424203430aba87
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Treffen eines Haltepunkts
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Im Folgenden wird der Prozess, wenn das Debugmodul \(DE\) ausgeführt werden, während ein Haltepunkt trifft, oder wenden:  
+# <a name="hitting-a-breakpoint"></a>Das Erreichen eines Haltepunkts
+Die folgenden beschreibt den Prozess, bei der Debugging-Modul (DE) einen Haltepunkt trifft, bei der Ausführung oder das schrittweise durchlaufen:  
   
-## Problembehandlung bei Erreichen eines Treffer\-Breakpoint  
+## <a name="troubleshooting-a-hit-breakpoint"></a>Problembehandlung bei einem Treffer Haltepunkt  
   
-1.  DE sendet eine [IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md)\-Schnittstelle als **EVENT\_SYNCHRONIZATION\_STOP**.  
+1.  Sendet die DE ein [IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md) -Schnittstelle als eine **EVENT_SYNC_STOP**.  
   
-2.  Der Debuginformationen Manager der Sitzung \(SDM\) ruft [IDebugBreakpointEvent2:::EnumBreakpoints](../../extensibility/debugger/reference/idebugbreakpointevent2-enumbreakpoints.md) auf, um den Haltepunkt zu erhalten, der ermittelt wurde.  
+2.  Ruft die Sitzungs-Debug-Manager (SDM) [IDebugBreakpointEvent2:::EnumBreakpoints](../../extensibility/debugger/reference/idebugbreakpointevent2-enumbreakpoints.md) Haltepunkt abgerufen, die erreicht wurde.  
   
-## Siehe auch  
- [Aufrufen von Debugger\-Ereignissen](../../extensibility/debugger/calling-debugger-events.md)
+## <a name="see-also"></a>Siehe auch  
+ [Aufrufen von Debuggerereignissen](../../extensibility/debugger/calling-debugger-events.md)

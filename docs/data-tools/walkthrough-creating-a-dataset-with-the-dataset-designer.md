@@ -1,7 +1,7 @@
 ---
-title: 'Walkthrough: Creating a Dataset with the Dataset Designer | Microsoft Docs'
+title: 'Exemplarische Vorgehensweise: Erstellen eines Datasets mit dem Dataset-Designer | Microsoft Docs'
 ms.custom: 
-ms.date: 11/02/2016
+ms.date: 09/11/2017
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
@@ -13,133 +13,128 @@ helpviewer_keywords:
 - Dataset Designer, walkthroughs
 - datasets [Visual Basic], creating
 ms.assetid: 12360f54-db6c-45d2-a91f-fee43214b555
-caps.latest.revision: 19
+caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: cca2a707627c36221a654cf8a06730383492f371
-ms.openlocfilehash: 4dca7e32af0f3c24542a7a069ac74f4da7d114b1
-ms.contentlocale: de-de
-ms.lasthandoff: 09/13/2017
-
+ms.technology: vs-data-tools
+ms.openlocfilehash: f327d2010105c12c4b137317ed2406cae6cad9a3
+ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/09/2017
 ---
-# <a name="walkthrough-creating-a-dataset-with-the-dataset-designer"></a>Walkthrough: Creating a Dataset with the Dataset Designer
-In this walkthrough you will create a dataset using the **Dataset Designer**. It will take you through the process of creating a new project and adding a new **DataSet** item to it. You will learn how to create tables based on tables in a database without using a wizard.  
+# <a name="walkthrough-creating-a-dataset-with-the-dataset-designer"></a>Exemplarische Vorgehensweise: Erstellen eines Datasets mit dem DataSet-Designer
+In dieser exemplarischen Vorgehensweise erstellen Sie ein Dataset mithilfe der **Dataset-Designer**. Sie gelangen Sie durch den Prozess zum Erstellen eines neuen Projekts und Hinzufügen eines neuen **DataSet** wird. Sie erfahren, wie Sie auf den Tabellen einer Datenbank basierende Tabellen erstellen können, ohne einen Assistenten zu verwenden.  
   
- Tasks illustrated in this walkthrough include:  
+ In dieser exemplarischen Vorgehensweise werden u. a. folgende Aufgaben veranschaulicht:  
   
--   Creating a new **Windows Forms Application** project.  
+-   Erstellen eines neuen **Windows Forms-Anwendung** Projekt.  
   
--   Adding an empty **DataSet** item to the project.  
+-   Hinzufügen eines leeren **DataSet** Element aus, um das Projekt.  
   
--   Creating and configuring a data source in your application by building a dataset with the **Dataset Designer**.  
+-   Erstellen und Konfigurieren einer Datenquelle in Ihrer Anwendung durch Erstellung eines Datasets mit dem **Dataset-Designer**.  
   
--   Creating a connection to the Northwind database in **Server Explorer**.  
+-   Erstellen einer Verbindung mit der Datenbank Northwind im **Server-Explorer**.  
   
--   Creating tables with TableAdapters in the dataset based on tables in the database.  
+-   Erstellen von Tabellen mit TableAdapters im Dataset, auf der Grundlage von Tabellen der Datenbank  
   
- [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
+[!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
   
-## <a name="prerequisites"></a>Prerequisites  
-In order to complete this walkthrough, you need:  
+## <a name="prerequisites"></a>Erforderliche Komponenten  
+In dieser exemplarischen Vorgehensweise werden die SQL Server Express LocalDB und der Beispieldatenbank Northwind verwendet.  
   
--   Access to the Northwind sample database (SQL Server or Access version). For more information, see [How to: Install Sample Databases](../data-tools/installing-database-systems-tools-and-samples.md).  
+1.  Wenn Sie nicht über SQL Server Express LocalDB verfügen, installieren Sie es entweder aus der [Downloadseite für SQL Server-Editionen](https://www.microsoft.com/en-us/server-cloud/Products/sql-server-editions/sql-server-express.aspx), oder über die **Installer für Visual Studio**. In der Visual Studio-Installer können SQL Server Express LocalDB installiert werden als Teil der **datenspeicherung und Verarbeitung** arbeitsauslastung oder als eine einzelne Komponente.  
   
-## <a name="creating-a-new-windows-forms-application-project"></a>Creating a New Windows Forms Application Project  
-  
-#### <a name="to-create-a-new-windows-forms-application-project"></a>To create a new Windows Forms Application project  
-  
-1. In Visual Studio, on the **File** menu, select **New**, **Project...**.  
-  
-2. Expand either **Visual C#** or **Visual Basic** in the left-hand pane, then select **Windows Classic Desktop**.  
+2.  Installieren Sie die Beispieldatenbank Northwind, indem folgende Schritte:  
 
-3. In the middle pane, select the **Windows Forms App** project type.  
+    1. Öffnen Sie in Visual Studio die **Objekt-Explorer von SQL Server** Fenster. (Objekt-Explorer von SQL Server installiert ist, als Teil der **datenspeicherung und Verarbeitung** arbeitsauslastung in der Visual Studio-Installer.) Erweitern Sie die **SQL Server** Knoten. Rechtsklicken Sie auf der LocalDB-Instanz, und wählen Sie **neue Abfrage...** .  
 
-4. Name the project **DatasetDesignerWalkthrough**, and then choose **OK**. 
+       Ein Abfrage-Editorfenster wird geöffnet.  
+
+    2. Kopieren der [Northwind Transact-SQL-Skript](https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/docs/data-tools/samples/northwind.sql?raw=true) in die Zwischenablage. Dieses T-SQL-Skript die Northwind-Datenbank von Grund auf neu erstellt und mit Daten aufgefüllt.  
+
+    3. Fügen Sie das T-SQL-Skript im Abfrage-Editor, und wählen Sie dann die **Execute** Schaltfläche.  
+
+       Nach kurzer Zeit die Abfrage die Ausführung abgeschlossen ist, und die Northwind-Datenbank wird erstellt.  
   
-     The **DatasetDesignerWalkthrough** project is created, and added to **Solution Explorer**.  
+## <a name="creating-a-new-windows-forms-application-project"></a>Erstellen ein neues Windows Forms-Anwendungsprojekt  
   
-## <a name="adding-a-new-dataset-to-the-application"></a>Adding a New Dataset to the Application  
+#### <a name="to-create-a-new-windows-forms-application-project"></a>So erstellen ein neues Windows Forms-Anwendungsprojekt  
   
-#### <a name="to-add-a-new-dataset-item-to-the-project"></a>To add a new dataset item to the project  
+1. In Visual Studio auf die **Datei** klicken Sie im Menü **neu**, **Projekt...** .  
   
-1.  On the **Project** menu, click **Add New Item**.  
+2. Erweitern Sie entweder **Visual C#-** oder **Visual Basic** im linken Bereich, und wählen Sie dann **klassische Windows-Desktop**.  
+
+3. Wählen Sie im mittleren Bereich die **Windows Forms-App** Projekttyp.  
+
+4. Nennen Sie das Projekt **DatasetDesignerWalkthrough**, und wählen Sie dann **OK**.  
   
-     The **Add New Item** dialog box appears.  
+     Fügt das Projekt in Visual Studio **Projektmappen-Explorer** und ein neues Formular im Designer anzuzeigen.  
   
-2.  In the **Templates** box of the **Add New Item** dialog box, click **DataSet**.  
+## <a name="adding-a-new-dataset-to-the-application"></a>Hinzufügen eines neuen Datasets zur Anwendung  
   
-3.  Name the Dataset `NorthwindDataset`, and then click **Add**.  
+#### <a name="to-add-a-new-dataset-item-to-the-project"></a>So fügen Sie dem Projekt ein neues Dataset-Element hinzu  
   
-     [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] will add a file called **NorthwindDataset.xsd** to the project and open it in the **Dataset Designer**.  
+1.  Auf der **Projekt** klicken Sie im Menü **neues Element hinzufügen...** .  
   
-## <a name="creating-a-data-connection-in-server-explorer"></a>Creating a Data Connection in Server Explorer  
+     Das Dialogfeld **Neues Element hinzufügen** wird angezeigt.  
   
-#### <a name="to-create-a-connection-to-the-northwind-database"></a>To create a connection to the Northwind database  
+2.  Wählen Sie im linken Bereich **Daten**, und wählen Sie dann **DataSet** im mittleren Bereich.  
   
-1.  On the **View** menu, click **Server Explorer**.  
+3.  Nennen Sie das Dataset **NorthwindDataset**, und wählen Sie dann **hinzufügen**.  
   
-2.  In **Server Explorer**, click the **Connect to Database** button.  
+     Visual Studio fügt eine Datei namens **NorthwindDataset.xsd** auf das Projekt und öffnet sie in der **Dataset-Designer**.  
   
-3.  Create a connection to the Northwind sample database.  
+## <a name="creating-a-data-connection-in-server-explorer"></a>Erstellen einer Datenverbindung im Server-Explorer  
   
-    > [!NOTE]
-    >  You can connect to the SQL Server or Access version of Northwind for this walkthrough.  
+#### <a name="to-create-a-connection-to-the-northwind-database"></a>So stellen Sie eine Verbindung mit der Datenbank Northwind her  
   
-## <a name="creating-the-tables-in-the-dataset"></a>Creating the Tables in the Dataset  
-This section explains how to add tables to the dataset.  
+1.  Auf der **Ansicht** Menü klicken Sie auf **Server-Explorer**.  
   
-#### <a name="to-create-the-customers-table"></a>To create the Customers table  
+2.  In **Server-Explorer**, klicken Sie auf die **mit Datenbank verbinden** Schaltfläche.  
   
-1.  Expand the data connection you created in **Server Explorer**, and then expand the **Tables** node.  
+3.  Erstellen Sie eine Verbindung mit der Beispieldatenbank Northwind.  
   
-2.  Drag the **Customers** table from **Server Explorer** onto the **Dataset Designer**.  
+## <a name="creating-the-tables-in-the-dataset"></a>Erstellen von Tabellen im Dataset  
+In diesem Abschnitt wird erläutert, wie dem Dataset Tabellen hinzugefügt werden.  
   
-     A **Customers** data table and **CustomersTableAdapter** are added to the dataset.  
+#### <a name="to-create-the-customers-table"></a>So erstellen Sie die Tabelle Customers  
   
-#### <a name="to-create-the-orders-table"></a>To create the Orders table  
+1.  Erweitern Sie die Datenverbindung, die Sie erstellt, im haben **Server-Explorer**, und erweitern Sie dann die **Tabellen** Knoten.  
   
--   Drag the **Orders** table from **Server Explorer** onto the **Dataset Designer**.  
+2.  Ziehen Sie die **Kunden** aus Tabelle **Server-Explorer** auf die **Dataset-Designer**.  
   
-     An **Orders** data table, **OrdersTableAdapter**, and data relation between the **Customers** and **Orders** tables are added to the dataset.  
+     Ein **Kunden** Datentabelle und **CustomersTableAdapter** zum Dataset hinzugefügt werden.  
   
-#### <a name="to-create-the-orderdetails-table"></a>To create the OrderDetails table  
+#### <a name="to-create-the-orders-table"></a>So erstellen Sie die Tabelle Orders  
   
--   Drag the **Order Details** table from **Server Explorer** onto the **Dataset Designer**.  
+-   Ziehen Sie die **Aufträge** aus Tabelle **Server-Explorer** auf die **Dataset-Designer**.  
   
-     An **Order Details** data table, **OrderDetailsTableAdapter**, and a data relation between the **Orders** and **OrderDetails** tables are added to the dataset.  
+     Ein **Aufträge** Datentabelle **OrdersTableAdapter**, und eine datenbeziehung zwischen den **Kunden** und **Aufträge** Tabellen hinzugefügt werden die das DataSet.  
   
-## <a name="next-steps"></a>Next Steps  
+#### <a name="to-create-the-orderdetails-table"></a>So erstellen Sie die Tabelle OrderDetails  
   
-### <a name="to-add-functionality-to-your-application"></a>To add functionality to your application  
+-   Ziehen Sie die **Bestelldetails** aus Tabelle **Server-Explorer** auf die **Dataset-Designer**.  
   
--   Save the dataset.  
+     Ein **Bestelldetails** Datentabelle **OrderDetailsTableAdapter**, und eine datenbeziehung zwischen den **Aufträge** und **OrderDetails** Tabellen werden zum Dataset hinzugefügt.  
   
--   Select items in the **Data Sources** window and drag them onto a form. For more information, see [Bind Windows Forms controls to data in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md).  
+## <a name="next-steps"></a>Nächste Schritte  
   
--   Add more queries to the TableAdapters. 
+### <a name="to-add-functionality-to-your-application"></a>So fügen Sie der Anwendung Funktionalität hinzu  
   
--   Add validation logic to the <xref:System.Data.DataTable.ColumnChanging> or <xref:System.Data.DataTable.RowChanging> events of the data tables in the dataset. For more information, see [Validate data in datasets](../data-tools/validate-data-in-datasets.md).  
+-   Speichern Sie das DataSet.  
   
-## <a name="see-also"></a>See Also  
- [Bind Windows Forms controls to data in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)   
- [Bind controls to data in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)   
- [Validating Data](validate-data-in-datasets.md)   
- [Saving Data](../data-tools/saving-data.md)
+-   Wählen Sie Elemente in der **Datenquellen** Fenster ein Formular ziehen. Weitere Informationen finden Sie unter [Binden von Windows Forms-Steuerelementen an Daten in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md).  
+  
+-   Fügen Sie den TableAdapters weitere Abfragen hinzu. 
+  
+-   Fügen Sie dem <xref:System.Data.DataTable.ColumnChanging>-Ereignis oder dem <xref:System.Data.DataTable.RowChanging>-Ereignis der im Dataset enthaltenen Datentabellen Anweisungen für eine Validierung hinzu. Weitere Informationen finden Sie unter [Validieren von Daten in Datasets](../data-tools/validate-data-in-datasets.md).  
+  
+## <a name="see-also"></a>Siehe auch
+[Erstellen und Konfigurieren von Datasets in Visual Studio](../data-tools/create-and-configure-datasets-in-visual-studio.md)  
+[Binden von Windows Forms-Steuerelementen an Daten in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)   
+[Binden von Steuerelementen an Daten in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)   
+[Überprüfen von Daten](../data-tools/validate-data-in-datasets.md)   
+[Speichern von Daten](../data-tools/saving-data.md)

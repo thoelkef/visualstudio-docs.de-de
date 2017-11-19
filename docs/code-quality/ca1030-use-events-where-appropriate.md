@@ -1,54 +1,55 @@
 ---
-title: "CA1030: Nach M&#246;glichkeit Ereignisse verwenden | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "UseEventsWhereAppropriate"
-  - "CA1030"
-helpviewer_keywords: 
-  - "CA1030"
-  - "UseEventsWhereAppropriate"
+title: "CA1030: nach Möglichkeit Ereignisse verwenden | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- UseEventsWhereAppropriate
+- CA1030
+helpviewer_keywords:
+- CA1030
+- UseEventsWhereAppropriate
 ms.assetid: ea051367-deeb-40f9-9b65-eb818f1e133a
-caps.latest.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 16
+caps.latest.revision: "16"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 4c07aac3780abc10dd3995b21b5c9636607166f8
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# CA1030: Nach M&#246;glichkeit Ereignisse verwenden
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="ca1030-use-events-where-appropriate"></a>CA1030: Nach Möglichkeit Ereignisse verwenden
 |||  
 |-|-|  
 |TypeName|UseEventsWhereAppropriate|  
 |CheckId|CA1030|  
-|Kategorie \(Category\)|Microsoft.Design|  
+|Kategorie|Microsoft.Design|  
 |Unterbrechende Änderung|Nicht unterbrechend|  
   
-## Ursache  
- Ein öffentlicher, geschützter oder privater Methodenname beginnt mit einer der folgenden Zeichenfolgen:  
+## <a name="cause"></a>Ursache  
+ Eine öffentlich, geschützt oder privat Methodenname beginnt mit einer der folgenden:  
   
 -   AddOn  
   
 -   RemoveOn  
   
--   Fire  
+-   Auslösen  
   
--   Raise  
+-   Auslösen  
   
-## Regelbeschreibung  
- Diese Regel erkennt Methoden, deren Namen normalerweise für Ereignisse verwendet würden.  Ereignisse entsprechen dem Entwurfsmuster Beobachter oder Veröffentlichen\-Abonnieren. Sie werden benutzt, wenn andere Objekte über eine Zustandsänderung in einem Objekt informiert werden müssen.  Wenn eine Methode auf eine klar definierte Zustandsänderung hin aufgerufen wird, sollte die Methode von einem Ereignishandler aufgerufen werden.  Objekte, die die Methode aufrufen, sollten Ereignisse auslösen, statt die Methode direkt aufzurufen.  
+## <a name="rule-description"></a>Regelbeschreibung  
+ Diese Regel erkennt Methoden, deren Namen normalerweise für Ereignisse verwendet würden. Ereignisse folgen das Entwurfsmuster "Beobachter" oder veröffentlichen-abonnieren. Sie werden verwendet, wenn eine statusänderung in einem Objekt auf andere Objekte übertragen werden muss. Wenn eine Methode als Reaktion auf eine klar definierte Zustandsänderung hin aufgerufen wird, sollte die Methode von einem Ereignishandler aufgerufen werden. Objekte, die die Methode aufrufen, sollten Ereignisse auslösen, statt die Methode direkt aufzurufen.  
   
- Einige gängige Beispiele für Ereignisse finden sich in Benutzeroberflächenanwendungen, in denen eine Benutzeraktion, z. B. das Klicken auf eine Schaltfläche, die Ausführung eines bestimmtes Codesegments bewirkt.  Das Ereignismodell von [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] ist nicht auf Benutzeroberflächen beschränkt. Es sollte überall dort verwendet werden, wo ein oder mehrere Objekte über Zustandsänderungen informiert werden müssen.  
+ Einige gängige Beispiele von Ereignissen werden in Benutzeroberflächenanwendungen erörtert, in denen eine Benutzeraktion wie das Klicken auf eine Schaltfläche führt dazu, ein Segment der dass auszuführenden Code. Die [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] Ereignismodell ist nicht auf Benutzeroberflächen beschränkt; er sollte überall dort verwendet werden Sie kommunizieren müssen, Zustand ändert, um ein oder mehrere Objekte.  
   
-## Behandeln von Verstößen  
- Wenn die Methode aufgerufen wird, sobald sich der Zustand eines Objekts ändert, sollten Sie in Erwägung ziehen, den Entwurf zu ändern und das Ereignismodell von [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] zu verwenden.  
+## <a name="how-to-fix-violations"></a>Behandeln von Verstößen  
+ Wenn die Methode aufgerufen wird, wenn sich der Zustand eines Objekts ändert, sollten Sie erwägen, den Entwurf zu verwenden, ändern die [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] Ereignismodell.  
   
-## Wann sollten Warnungen unterdrückt werden?  
- Unterdrücken Sie eine Warnung dieser Regel, wenn sich das Ereignismodell von [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] nicht für die Methode eignet.
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?  
+ Eine Warnung dieser Regel zu unterdrücken, sofern die Methode funktioniert nicht mit der [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] Ereignismodell.

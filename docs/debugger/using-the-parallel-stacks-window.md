@@ -1,98 +1,96 @@
 ---
-title: "Verwenden des Fensters &quot;Parallele Stapel&quot; | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.debug.parallelstacks"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "Debugger, Fenster „Parallele Aufgaben“"
+title: Anzeigen von Threads, die das Fenster "Parallele Stapel" mit | Microsoft Docs
+ms.custom: 
+ms.date: 04/25/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vs.debug.parallelstacks
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+helpviewer_keywords: debugger, parallel tasks window
 ms.assetid: f50efb78-5206-4803-bb42-426ef8133f2f
-caps.latest.revision: 18
-caps.handback.revision: 18
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "18"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 32870ebf31c88bbc6bdf024c2c4c93ae1869660a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Verwenden des Fensters &quot;Parallele Stapel&quot;
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Das Fenster **Parallele Stapel** ist hilfreich beim Debuggen von Multithreadanwendungen.  In der zugehörigen Threadansicht werden Aufruflisteninformationen für alle Threads in der Anwendung angezeigt.  Im Fenster können Sie zwischen Threads und Stapelrahmen in diesen Threads navigieren.  In verwaltetem Code werden in der **Aufgabenansicht** Aufruflisten von <xref:System.Threading.Tasks.Task?displayProperty=fullName>\-Objekten angezeigt.  In systemeigenem Code werden in der **Aufgabenansicht** Aufruflisten von [Aufgabengruppen](/visual-cpp/parallel/concrt/task-parallelism-concurrency-runtime), [parallelen Algorithmen](/visual-cpp/parallel/concrt/parallel-algorithms), [asynchronen Agents](/visual-cpp/parallel/concrt/asynchronous-agents) und [einfachen Aufgaben](/visual-cpp/parallel/concrt/task-scheduler-concurrency-runtime) angezeigt.  
+# <a name="view-threads-and-tasks-using-the-parallel-stacks-window"></a>Threads anzeigen und Aufgaben mit dem Fenster "Parallele Stapel"
+Die **parallele Stapel** Fenster ist hilfreich beim Debuggen von Multithreadanwendungen. Die **Threadansicht** werden Aufruflisteninformationen für alle Threads in der Anwendung. Im Fenster können Sie zwischen Threads und Stapelrahmen in diesen Threads navigieren. In verwaltetem Code die **Aufgabenansicht** Aufruflisten von <xref:System.Threading.Tasks.Task?displayProperty=fullName> Objekte. In systemeigenen Code der die **Aufgabenansicht** Aufruflisten von [Aufgabengruppen](/cpp/parallel/concrt/task-parallelism-concurrency-runtime), [parallele Algorithmen](/cpp/parallel/concrt/parallel-algorithms), [asynchrone Agents](/cpp/parallel/concrt/asynchronous-agents), und [einfache Aufgaben](/cpp/parallel/concrt/task-scheduler-concurrency-runtime).  
   
-## Threadansicht  
- In der folgenden Abbildung wird ein Thread dargestellt, der vom Hauptthread zu A und zu B und anschließend zu externem Code gewechselt ist.  Zwei andere Threads starteten in externem Code und wechselten zu A. Einer der Threads fuhr jedoch mit B und anschließend mit externem Code fort, während der andere Thread mit C und dann mit einer AnonymousMethod fortfuhr.  
+## <a name="threads-view"></a>Threadansicht  
+ In der folgenden Abbildung wird ein Thread dargestellt, der vom Hauptthread zu A und zu B und anschließend zu externem Code gewechselt ist. Zwei andere Threads starteten in externem Code und wechselten zu A. Einer der Threads fuhr jedoch mit B und anschließend mit externem Code fort, während der andere Thread mit C und dann mit einer AnonymousMethod fortfuhr.  
   
- ![Ansicht "Threads" im Fenster "Parallele Stapel"](../debugger/media/parallel_stacksthread.png "Parallel\_StacksThread")  
+ ![Threadansicht im Fenster "Parallele Stapel"](../debugger/media/parallel_stacksthread.png "Parallel_StacksThread")  
   
- In der Abbildung wird der Aufrufpfad des aktuellen Threads blau hervorgehoben, und der aktive Stapelrahmen wird durch den gelben Pfeil angegeben.  Sie können den aktuellen Stapelrahmen ändern, indem Sie im Fenster **Parallele Stapel** eine andere Methode auswählen.  Dies kann auch zu einem Wechsel des aktuellen Threads führen, je nachdem, ob die ausgewählte Methode bereits zum aktuellen Threads oder zu einem anderen Thread gehört.  In der folgenden Tabelle werden die Hauptmerkmale des Fensters **Parallele Stapel** beschrieben, das in der Abbildung dargestellt wird.  
+ In der Abbildung wird der Aufrufpfad des aktuellen Threads blau hervorgehoben, und die aktuelle Position (aktiven Stapelrahmen) des Threads wird durch den gelben Pfeil gekennzeichnet. Sie können den aktuellen Stapelrahmen ändern, indem Sie in eine andere Methode auswählen der **parallele Stapel** Fenster. Dies kann auch zu einem Wechsel des aktuellen Threads führen, je nachdem, ob die ausgewählte Methode bereits zum aktuellen Threads oder zu einem anderen Thread gehört. Die folgende Tabelle beschreibt die wichtigsten Funktionen von der **parallele Stapel** wie in der Abbildung gezeigt.  
   
 |Legendenbuchstabe|Elementname|Beschreibung|  
-|-----------------------|-----------------|------------------|  
-|A|Aufruflistensegment oder \-knoten|Enthält eine Reihe von Methodenkontexten für einen oder mehrere Threads.  Wenn mit dem Knoten keine Pfeillinien verbunden sind, stellt er den gesamten Aufrufpfad für den Thread bzw. die Threads dar.|  
+|--------------------|------------------|-----------------|  
+|A|Aufruflistensegment oder -knoten|Enthält eine Reihe von Methoden für einen oder mehrere Threads. Wenn mit dem Knoten keine Pfeillinien verbunden sind, stellt er den gesamten Aufrufpfad für den Thread bzw. die Threads dar.|  
 |B|Blaue Hervorhebung|Gibt den Aufrufpfad des aktuellen Threads an.|  
-|C|Pfeillinien|Diese verbinden Knoten, um den gesamten Aufrufpfad für den Thread bzw. die Threads darzustellen.|  
+|A|Pfeillinien|Diese verbinden Knoten, um den gesamten Aufrufpfad für den Thread bzw. die Threads darzustellen.|  
 |D|QuickInfo zum Knotenheader|Zeigt die ID sowie den benutzerdefinierten Namen der einzelnen Threads an, deren Aufrufpfad diesen Knoten enthält.|  
-|E|Methodenkontext|Stellt einen oder mehrere Stapelrahmen in derselben Methode dar.|  
-|F|QuickInfo zum Methodenkontext|In der Threadansicht werden alle Threads in einer Tabelle ähnlich wie im Fenster **Threads** angezeigt.  In der Aufgabenansicht werden alle Aufgaben in einer Tabelle ähnlich wie im Fenster **Parallele Aufgaben** angezeigt.|  
+|E|Methode|Stellt einen oder mehrere Stapelrahmen in derselben Methode dar.|  
+|F|QuickInfo für die Methode|In der Threadansicht werden alle Threads in einer Tabelle ähnlich wie die **Threads** Fenster. In der Aufgabenansicht werden alle Aufgaben in einer Tabelle ähnlich wie auf die **Aufgaben** Fenster.|  
   
- Außerdem wird im Fenster **Parallele Stapel** im Hauptbereich ein Symbol für die Vogelperspektive angezeigt, wenn das Diagramm zu groß ist, um in das Fenster zu passen.  Sie können auf das Symbol klicken, um das ganze Diagramm im Fenster zu sehen.  
+ Darüber hinaus wird gezeigt, das Fenster "Parallele Stapel" eine **Vogelperspektive** Symbol im Hauptbereich, wenn das Diagramm zu groß, um in das Fenster zu passen. Sie können auf das Symbol klicken, um das ganze Diagramm im Fenster zu sehen.  
   
-## Methodenkontextsymbole  
+## <a name="stack-frame-icons"></a>Stack-Frame-Symbole  
  In der folgenden Tabelle werden die Symbole beschrieben, die Informationen zu aktiven Stapelrahmen und zum aktuellen Stapelrahmen liefern:  
   
 |||  
 |-|-|  
 |Symbol|Beschreibung|  
-|![Parallele Stapel &#45; Gelber Pfeil](~/debugger/media/icon_parallelyellowarrow.gif "Icon\_ParallelYellowArrow")|Gibt an, dass der Methodenkontext den aktiven Stapelrahmen des aktuellen Threads enthält.|  
-|![Parallele Stapel &#45; Threads&#45;Symbol](~/debugger/media/icon_parallelthreads.gif "Icon\_ParallelThreads")|Gibt an, dass der Methodenkontext den aktiven Stapelrahmen eines nicht\-aktuellen Threads enthält.|  
-|![Parallele Stapel &#45; Grüner Pfeil](~/debugger/media/icon_parallelgreenarrow.gif "Icon\_ParallelGreenArrow")|Gibt an, dass der Methodenkontext den aktuellen Stapelrahmen enthält.  Dieser Methodenname ist in allen Knoten fett formatiert, in denen er angezeigt wird.|  
+|![Parallele Stapel-gelben Pfeil](../debugger/media/icon_parallelyellowarrow.gif "Icon_ParallelYellowArrow")|Gibt an, dass die Methode den aktuellen Speicherort (aktiven Stapelrahmen) des aktuellen Threads enthält.|  
+|![Parallele Stapel-Threads-Symbol](../debugger/media/icon_parallelthreads.gif "Icon_ParallelThreads")|Gibt an, dass die Methode den aktuellen Speicherort (aktiven Stapelrahmen) eines nicht-aktuellen Threads enthält.|  
+|![Parallele Stapel-grünen Pfeil](../debugger/media/icon_parallelgreenarrow.gif "Icon_ParallelGreenArrow")|Gibt an, dass die Methode den aktuellen Stapelrahmen (der aktuelle Debuggerkontext) enthält. Dieser Methodenname ist in allen Knoten fett formatiert, in denen er angezeigt wird.|  
   
-## Symbolleisten\-Steuerelemente  
+## <a name="toolbar-controls"></a>Symbolleisten-Steuerelemente  
  In der folgenden Abbildung und der Tabelle werden die verfügbaren Steuerelemente auf der Symbolleiste Parallele Stapel beschrieben.  
   
- ![Symbolleiste im Fenster "Parallele Stapel"](../debugger/media/parallel_stackstoolbar.png "Parallel\_StacksToolbar")  
+ ![Symbolleiste im Fenster "Parallele Stapel"](../debugger/media/parallel_stackstoolbar.png "Parallel_StacksToolbar")  
   
 |Legendenbuchstabe|Steuerelement|Beschreibung|  
-|-----------------------|-------------------|------------------|  
-|A|Kombinationsfeld Threads\/Aufgaben|Schaltet die Ansicht zwischen Aufruflisten von Threads und Aufruflisten von Aufgaben um.  Weitere Informationen finden Sie unter Aufgabenansicht und Threadansicht.|  
-|B|Nur gekennzeichnete Elemente anzeigen|Zeigt nur Aufruflisten für die Threads an, die in anderen Debug\-Fenster, wie dem Fenster **GPU\-Threads** und dem Fenster **Parallele Überwachung** gekennzeichnet werden.|  
-|C|Methodenansicht ein\- bzw. ausschalten|Wechselt zwischen Stapelansicht und Methodenansicht.  Weitere Informationen finden Sie unter Methodenansicht.|  
-|D|Automatischen Bildlauf zu aktuellem Stapelrahmen durchführen|Führt einen automatischen Bildlauf durch das Diagramm aus, sodass der aktuelle Stapelrahmen angezeigt wird.  Diese Funktion ist hilfreich beim Ändern des aktuellen Stapelrahmens aus anderen Fenstern oder beim Erreichen eines neuen Haltepunkts in großen Diagrammen.|  
-|E|Zoomsteuerung ein\- bzw. ausschalten|Blendet die Zoomsteuerung ein oder aus.  Sie können die Ansicht auch unabhängig von der Sichtbarkeit der Zoomsteuerung vergrößern bzw. verkleinern, indem Sie STRG gedrückt halten und das Mausrad drehen.|  
+|--------------------|-------------|-----------------|  
+|A|Kombinationsfeld Threads/Aufgaben|Schaltet die Ansicht zwischen Aufruflisten von Threads und Aufruflisten von Aufgaben um. Weitere Informationen finden Sie unter Aufgabenansicht und Threadansicht.|  
+|B|Nur gekennzeichnete Elemente anzeigen|Zeigt Aufruflisten nur für die Threads, die in anderen Debug-Fenster, z. B. gekennzeichnet sind die **GPU-Threads** Fenster und die **parallele Überwachung** Fenster.|  
+|C|Methodenansicht ein- bzw. ausschalten|Wechselt zwischen Stapelansicht und Methodenansicht. Weitere Informationen finden Sie unter Methodenansicht.|  
+|D|Automatischen Bildlauf zu aktuellem Stapelrahmen durchführen|Führt einen automatischen Bildlauf durch das Diagramm aus, sodass der aktuelle Stapelrahmen angezeigt wird. Diese Funktion ist hilfreich beim Ändern des aktuellen Stapelrahmens aus anderen Fenstern oder beim Erreichen eines neuen Haltepunkts in großen Diagrammen.|  
+|E|Zoomsteuerung ein- bzw. ausschalten|Blendet die Zoomsteuerung ein oder aus. Sie können auch vergrößern STRG gedrückt, und aktivieren das Mausrad, unabhängig von der Sichtbarkeit der zoomsteuerung, oder mithilfe von STRG + UMSCHALT + '+', um zu vergrößern und STRG + UMSCHALT + "-" zu verkleinern. Drücken Sie STRG + F8 wird vergrößert, um den Bildschirm zu passen.|  
   
-### Elemente des Kontextmenüs  
- In der folgenden Abbildung und der Tabelle werden die verfügbaren Kontextmenüelemente beschrieben. Das Kontextmenü wird aufgerufen, wenn Sie in der Threadansicht oder in der Aufgabenansicht mit der rechten Maustaste auf einen Methodenkontext klicken.  Die letzten sechs Elemente sind direkt aus dem Fenster Aufrufliste übernommen, und sie weisen kein neues Verhalten auf.  
+### <a name="context-menu-items"></a>Elemente des Kontextmenüs  
+ Die folgende Abbildung und Tabelle beschreiben die Kontextmenü wird aufgerufen, die verfügbar sind, wenn Sie eine Methode in der Threadansicht oder Aufgabenansicht mit der rechten Maustaste. Die letzten sechs Elemente sind direkt aus dem Fenster Aufrufliste übernommen, und sie weisen kein neues Verhalten auf.  
   
- ![Kontextmenü im Fenster "Parallele Stapel"](../debugger/media/parallel_contmenu.png "Parallel\_ContMenu")  
+ !["Kontextmenü" im Fenster "Parallele Stapel"](../debugger/media/parallel_contmenu.png "Parallel_ContMenu")  
   
-|MenuItem|Beschreibung|  
-|--------------|------------------|  
+|Menübefehl|Beschreibung|  
+|---------------|-----------------|  
 |Flag|Kennzeichnet das ausgewählte Element.|  
 |Kennzeichnung aufheben|Hebt die Kennzeichnung des ausgewählten Elements auf.|  
 |Einfrieren|Friert das ausgewählte Element ein.|  
 |Reaktivieren|Reaktiviert das ausgewählte Element.|  
-|Zu Aufgabe wechseln \(Zu Thread wechseln\)|Führt dieselbe Funktion wie das Kombinationsfeld auf der Symbolleiste aus, dabei bleibt jedoch derselbe Stapelrahmen hervorgehoben.|  
+|Zu Aufgabe wechseln (Zu Thread wechseln)|Führt dieselbe Funktion wie das Kombinationsfeld auf der Symbolleiste aus, dabei bleibt jedoch derselbe Stapelrahmen hervorgehoben.|  
 |Gehe zu Quellcode|Navigiert zu der Position im Quellcode, die dem Stapelrahmen entspricht, auf den der Benutzer mit der rechten Maustaste geklickt hat.|  
-|Zu Rahmen wechseln|Identisch mit dem entsprechenden Menübefehl im Fenster Aufrufliste.  Bei Parallele Stapel dürfen jedoch mehrere Frames einem Methodenkontext entsprechen.  Daher weist das Menüelement Untermenüs auf, von denen jedes einen bestimmten Stapelrahmen darstellt.  Wenn sich einer der Stapelrahmen im aktuellen Thread befindet, wird das Menü ausgewählt, das diesem Stapelrahmen entspricht.|  
+|Zu Rahmen wechseln|Identisch mit dem entsprechenden Menübefehl im Fenster Aufrufliste. Bei Parallele Stapel können jedoch mehrere Frames an eine Methode entsprechen. Daher weist das Menüelement Untermenüs auf, von denen jedes einen bestimmten Stapelrahmen darstellt. Wenn sich einer der Stapelrahmen im aktuellen Thread befindet, wird das Menü ausgewählt, das diesem Stapelrahmen entspricht.|  
 |Gehe zu Disassembly|Navigiert zu der Position im Disassemblyfenster, die dem Stapelrahmen entspricht, auf den der Benutzer mit der rechten Maustaste geklickt hat.|  
 |Externen Code anzeigen|Blendet externen Code ein bzw. aus.|  
 |Hexadezimale Anzeige|Schaltet zwischen dezimaler und hexadezimaler Anzeige um.|  
 |Symbolladeinformationen|Zeigt das entsprechende Dialogfeld an.|  
 |Symboleinstellungen|Zeigt das entsprechende Dialogfeld an.|  
   
-## Aufgabenansicht  
- Wenn die Anwendung Parallelität mit <xref:System.Threading.Tasks.Task?displayProperty=fullName>\-Objekten \(verwalteter Code\) oder `task_handle`\-Objekten \(systemeigener Code\) ausdrückt, können Sie über das Kombinationsfeld auf der Symbolleiste des Fensters Parallele Stapel zur *Aufgabenansicht* wechseln.  In der Aufgabenansicht werden Aufruflisten von Aufgaben anstatt von Threads angezeigt.  Die Aufgabenansicht unterscheidet sich von der Threadansicht wie folgt:  
+## <a name="tasks-view"></a>Aufgabenansicht  
+ Wenn die Anwendung Parallelität mit <xref:System.Threading.Tasks.Task?displayProperty=fullName> -Objekten (verwalteter Code) oder `task_handle` -Objekten (nativer Code) ausdrückt, können Sie das Kombinationsfeld auf der Symbolleiste des Fensters Parallele Stapel, wechseln Sie zu *Aufgabenansicht*. In der Aufgabenansicht werden Aufruflisten von Aufgaben anstatt von Threads angezeigt. Die Aufgabenansicht unterscheidet sich von der Threadansicht wie folgt:  
   
 -   Aufruflisten von Threads, die keine Aufgaben ausführen, werden nicht angezeigt.  
   
@@ -102,26 +100,26 @@ Das Fenster **Parallele Stapel** ist hilfreich beim Debuggen von Multithreadanwe
   
  In der folgenden Abbildung wird rechts die Aufgabenansicht von Parallele Stapel angezeigt, und auf der linken Seite ist die entsprechende Threadansicht dargestellt.  
   
- ![Aufgabenansicht im Fenster "Parallele Stapel"](../debugger/media/parallel_tasksview.png "Parallel\_TasksView")  
+ ![Aufgabenansicht im Fenster "Parallele Stapel"](../debugger/media/parallel_tasksview.png "Parallel_TasksView")  
   
- Wenn die gesamte Aufrufliste angezeigt werden soll, wechseln Sie einfach zur Threadansicht zurück. Klicken Sie dazu mit der rechten Maustaste auf einen Stapelrahmen, und klicken Sie anschließend auf **Zu Thread wechseln**.  
+ Um die gesamte Aufrufliste anzuzeigen, wechseln Sie einfach zur Threadansicht zurück, indem Sie mit der rechten Maustaste eines Stapelrahmen entspricht, und klicken Sie dann auf **zu Thread wechseln**.  
   
- Wie bereits in der obigen Tabelle erläutert, können Sie weitere Informationen aufrufen, indem Sie mit dem Mauszeiger auf einen Methodenkontext zeigen.  In der folgenden Abbildung werden die Informationen in der QuickInfo für die Threadansicht und die Aufgabenansicht dargestellt.  
+ Wie in der obigen Tabelle beschrieben, indem Sie mit dem Mauszeiger auf eine Methode können Sie weitere Informationen finden Sie unter. In der folgenden Abbildung werden die Informationen in der QuickInfo für die Threadansicht und die Aufgabenansicht dargestellt.  
   
- ![QuickInfo im Fenster "Parallele Stapel"](../debugger/media/parallel_stack_tooltips.png "Parallel\_Stack\_Tooltips")  
+ ![QuickInfos im Fenster "Parallele Stapel"](../debugger/media/parallel_stack_tooltips.png "Parallel_Stack_Tooltips")  
   
-## Methodenansicht  
- Sowohl in der Threadansicht als auch in der Aufgabenansicht können Sie das Diagramm zur aktuellen Methode pivotieren, indem Sie auf der Symbolleiste auf das Symbol Methodenansicht klicken.  In der Methodenansicht sind auf einen Blick alle Methoden für sämtliche Threads angezeigt, die entweder Aufrufer oder Aufgerufene der aktuellen Methode sind.  Die folgende Abbildung zeigt eine Threadansicht. Zudem wird veranschaulicht, wie dieselben Informationen in der Methodenansicht dargestellt werden.  
+## <a name="method-view"></a>Methodenansicht  
+ Sowohl in der Threadansicht als auch in der Aufgabenansicht können Sie das Diagramm zur aktuellen Methode pivotieren, indem Sie auf der Symbolleiste auf das Symbol Methodenansicht klicken. In der Methodenansicht sind auf einen Blick alle Methoden für sämtliche Threads angezeigt, die entweder Aufrufer oder Aufgerufene der aktuellen Methode sind. Die folgende Abbildung zeigt eine Threadansicht. Zudem wird veranschaulicht, wie dieselben Informationen in der Methodenansicht dargestellt werden.  
   
- ![Methodenansicht im Fenster "Parallele Stapel"](../debugger/media/parallel_methodview.png "Parallel\_MethodView")  
+ ![Methodenansicht im Fenster "Parallele Stapel"](../debugger/media/parallel_methodview.png "Parallel_MethodView")  
   
- Durch das Wechseln in einen neuen Stapelrahmen legen Sie diese Methode als aktuelle Methode fest, und im Fenster werden alle Aufrufer und Aufgerufenen für die neue Methode angezeigt.  Dabei werden möglicherweise einige Threads in der Ansicht eingeblendet oder ausgeblendet, je nachdem, ob die betreffende Methode in ihren Aufruflisten enthalten ist.  Wenn Sie in die Stapelansicht zurückwechseln möchten, klicken Sie erneut auf die Symbolleistenschaltfläche Methodenansicht.  
+ Durch das Wechseln in einen neuen Stapelrahmen legen Sie diese Methode als aktuelle Methode fest, und im Fenster werden alle Aufrufer und Aufgerufenen für die neue Methode angezeigt. Dabei werden möglicherweise einige Threads in der Ansicht eingeblendet oder ausgeblendet, je nachdem, ob die betreffende Methode in ihren Aufruflisten enthalten ist. Wenn Sie in die Stapelansicht zurückwechseln möchten, klicken Sie erneut auf die Symbolleistenschaltfläche Methodenansicht.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
+ [Erste Schritte zum Debuggen einer Multithread-Tasksequenzausführungsmodul](../debugger/get-started-debugging-multithreaded-apps.md)   
  [Exemplarische Vorgehensweise: Debuggen einer parallelen Anwendung](../debugger/walkthrough-debugging-a-parallel-application.md)   
  [Debugger – Grundlagen](../debugger/debugger-basics.md)   
  [Debuggen von verwaltetem Code](../debugger/debugging-managed-code.md)   
- [Parallel Programming](../Topic/Parallel%20Programming%20in%20the%20.NET%20Framework.md)   
- [Verwenden des Fensters "Aufgaben"](../debugger/using-the-tasks-window.md)   
- [Exemplarische Vorgehensweise: Debuggen einer parallelen Anwendung](../debugger/walkthrough-debugging-a-parallel-application.md)   
- [Task\-Klasse](../extensibility/debugger/task-class-internal-members.md)
+ [Parallele Programmierung](/dotnet/standard/parallel-programming/index)   
+ [Verwenden das Fenster "Aufgaben"](../debugger/using-the-tasks-window.md)   
+ [Task-Klasse](../extensibility/debugger/task-class-internal-members.md)

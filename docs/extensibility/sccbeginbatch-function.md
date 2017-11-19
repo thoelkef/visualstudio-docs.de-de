@@ -1,50 +1,50 @@
 ---
-title: "SccBeginBatch-Funktion | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "SccBeginBatch"
-helpviewer_keywords: 
-  - "SccBeginBatch-Funktion"
+title: SccBeginBatch Funktion | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: SccBeginBatch
+helpviewer_keywords: SccBeginBatch function
 ms.assetid: 33968183-2e15-4e0d-955b-ca12212d1c25
-caps.latest.revision: 14
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 14
+caps.latest.revision: "14"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 0e18eedcab133329f10064ef3dd6486beb2e1596
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# SccBeginBatch-Funktion
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Diese Funktion startet eine Batch\-Sequenz von Quellcodeverwaltungsvorgänge. Die [SccEndBatch](../extensibility/sccendbatch-function.md) wird aufgerufen, um den Batch beenden. Diese Batches können nicht geschachtelt werden.  
+# <a name="sccbeginbatch-function"></a>SccBeginBatch-Funktion
+Diese Funktion wird eine Batch-Sequenz von Quellcodeverwaltungsvorgänge gestartet. Die [SccEndBatch](../extensibility/sccendbatch-function.md) wird aufgerufen, um den Batch beenden. Diese Batches können nicht geschachtelt werden.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 SCCRTN SccBeginBatch(void);  
 ```  
   
-#### Parameter  
- Keine.  
+#### <a name="parameters"></a>Parameter  
+ Keine  
   
-## Rückgabewert  
- Datenquellen\-Steuerelement Plug\-in\-Implementierung dieser Funktion muss einen der folgenden Werte zurückgeben:  
+## <a name="return-value"></a>Rückgabewert  
+ Die Source Control-Plug-in-Implementierung dieser Funktion muss einen der folgenden Werte zurückgeben:  
   
 |Wert|Beschreibung|  
-|----------|------------------|  
-|SCC\_OK|Batch Vorgänge wurde erfolgreich gestartet.|  
-|SCC\_E\_UNKNOWNERROR|Nicht spezifischen Fehler.|  
+|-----------|-----------------|  
+|SCC_OK|Batches von Vorgängen wurde erfolgreich gestartet.|  
+|SCC_E_UNKNOWNERROR|Unspezifischen Fehlers.|  
   
-## Hinweise  
- Source Control Batches werden verwendet, um die gleichen Vorgänge über mehrere Projekte oder mehrere Kontexte auszuführen. Batches können verwendet werden, um redundante pro Projekt\-Dialogfelder über die Benutzeroberfläche während eines Vorgangs im Batch zu entfernen. Die `SccBeginBatch` \-Funktion und die [SccEndBatch](../extensibility/sccendbatch-function.md) werden als Funktionspaar verwendet, um Anfang und Ende eines Vorgangs anzugeben. Sie können geschachtelt, sein.`SccBeginBatch` Legt ein Flag, das angibt, dass ein Batchvorgang ausgeführt wird.  
+## <a name="remarks"></a>Hinweise  
+ Source Control Batches werden verwendet, um über mehrere Projekte oder mehrere Kontexte hinweg die gleichen Vorgänge auszuführen. Batches können verwendet werden, um redundante pro Projekt Dialogfelder, über die Benutzeroberfläche während eines Vorgangs im Batchmodus zu vermeiden. Die `SccBeginBatch` Funktion und die [SccEndBatch](../extensibility/sccendbatch-function.md) werden als Funktionspaar verwendet, um Anfang und Ende eines Vorgangs anzugeben. Sie sind nicht schachtelbar. `SccBeginBatch`setzt ein Flag gibt an, dass ein Batch ausgeführt wird.  
   
- Während ein Batchvorgangs aktiviert ist, sollte das Quellcodeverwaltungs\-Plug\-in höchstens ein Dialogfeld für jede Frage dem Benutzer angezeigt und die Antwort über dieses Dialogfeld alle nachfolgenden Operationen angewendet.  
+ Während ein Batchvorgangs aktiviert ist, sollte das Quellsteuerelement-Plug-in präsentieren darf höchstens ein Dialogfeld für jede Frage an den Benutzer und die Antwort in diesem Dialogfeld auf alle nachfolgenden Vorgänge gelten.  
   
-## Siehe auch  
- [Source Control\-Plug\-in\-API\-Funktionen](../extensibility/source-control-plug-in-api-functions.md)   
+## <a name="see-also"></a>Siehe auch  
+ [Quellcodeverwaltungsfunktionen-Plug-in-API](../extensibility/source-control-plug-in-api-functions.md)   
  [SccEndBatch](../extensibility/sccendbatch-function.md)

@@ -1,37 +1,39 @@
 ---
-title: "Hinzuf&#252;gen und Entfernen von Eigenschaftenseiten | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Hinzufügen von Eigenschaftenseiten"
-  - "Eigenschaftenseiten für Projekt Untertypen"
-  - "Eigenschaftenseiten, entfernen"
+title: "Hinzufügen und Entfernen von Eigenschaftenseiten | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- property pages, adding
+- property pages, project subtypes
+- property pages, removing
 ms.assetid: 34853412-ab8a-4caa-9601-7d0727b2985d
-caps.latest.revision: 29
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 29
+caps.latest.revision: "29"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 00cc60b0b6c522c6a6674456adae50aace266030
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Hinzuf&#252;gen und Entfernen von Eigenschaftenseiten
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Der Projekt\-Designer stellt einen zentralen Ort zum Verwalten von Projekteigenschaften, \- einstellungen und von Ressourcen in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]bereit.  Es wird als einzelnes Fenster in der integrierten Entwicklungsumgebung \(IDE\) [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] und enthält verschiedene Bereiche auf der rechten Seite, die durch die Registerkarten auf der linken Seite zugegriffen werden.  Die Bereiche \(oft als Eigenschaftenseiten\) im Projekt\-Designer hängt vom Projekttyp und Sprache.  Der Projekt\-Designer können mit dem **Eigenschaften** Befehl im Menü **Projekt** zugegriffen werden.  
+# <a name="adding-and-removing-property-pages"></a>Hinzufügen und Entfernen von Eigenschaftenseiten
+Projekt-Designer bietet einen zentralen Ort zum Verwalten von Projekteigenschaften, Einstellungen und Ressourcen in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Es wird als ein einzelnes Fenster in den [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] integrierte Entwicklungsumgebung (IDE) und enthält eine Reihe von Bereichen auf der rechten Seite, die über die Registerkarten auf der linken Seite zugegriffen wird. Die Bereiche (häufig als Eigenschaftenseiten bezeichnet) im Projekt-Designer variieren je nach Projekttyp und Programmiersprache. Projekt-Designer möglich, die mit der **Eigenschaften** Befehl die **Projekt** Menü.  
   
- Ein Projekt untertyp muss häufig zusätzliche Eigenschaftenseiten im Projekt\-Designer anzeigen.  Ebenso müssen möglicherweise einige Projekt untertypen, dass die integrierte Eigenschaftenseiten entfernt werden.  Um ein auszuführen, muss das Projekt untertyp die <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>\-Schnittstelle implementieren und die <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A>\-Methode überschreiben.  Wenn Sie diese Methode überschreiben und `propId`\-Parameter, der einen der Werte der <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2>\-Enumeration enthält, können Sie Projekteigenschaften filtern, hinzufügen oder entfernen.  Beispielsweise müssen Sie möglicherweise eine Seite anlagenabhängigen den Eigenschaftenseiten auf Hinzufügen.  Dazu müssen Sie anlagenabhängige Eigenschaftenseiten filtern und eine neue Seite der vorhandenen Liste dann auf Hinzufügen.  
+ Ein Projektuntertyp muss häufig zusätzliche Eigenschaftenseiten im Projekt-Designer angezeigt. Ebenso möglicherweise einige Projekt Untertypen, dass integrierte Eigenschaftenseiten entfernt werden. Hierfür entweder der Projektuntertyp implementieren muss die <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> Schnittstelle, und überschreiben die <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> Methode. Indem Sie diese Methode überschreiben und `propId` mit einem der Werte der Parameter der <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2> -Enumeration, können Sie filtern, hinzufügen oder Entfernen von Projekteigenschaften. Sie möchten z. B. eine Seite mit den Eigenschaftenseiten die konfigurationsabhängigen hinzufügen. Zu diesem Zweck müssen Sie die konfigurationsabhängigen Eigenschaftenseiten zu filtern und fügen Sie eine neue Seite hinzu, der vorhandenen Liste.  
   
-## Hinzufügen und Entfernen von Eigenschaftenseiten im Projekt\-Designer  
+## <a name="adding-and-removing-property-pages-in-project-designer"></a>Hinzufügen und Entfernen von Eigenschaftenseiten im Projekt-Designer  
   
-#### So erstellen Sie eine Eigenschaftenseite im Projekt\-Designer entfernen  
+#### <a name="to-remove-a-property-page-in-project-designer"></a>So entfernen Sie eine Eigenschaftenseite im Projekt-Designer  
   
-1.  Überschreiben Sie die `GetProperty(uint itemId, int propId, out object property)`\-Methode, um Eigenschaftenseiten zu filtern und zu erhalten eine `clsids` Liste.  
+1.  Überschreiben der `GetProperty(uint itemId, int propId, out object property)` Methode, um Eigenschaftenseiten zu filtern und Abrufen einer `clsids` Liste.  
   
-    ```vb#  
+    ```vb  
     Protected Overrides int GetProperty(uint itemId, int propId, out object property)  
     Protected Overrides Function GetProperty(ByVal itemId As UInteger, ByVal propId As Integer, ByRef [property] As Object) As Integer  
         'Use propId to filter configuration-independent property pages.  
@@ -51,7 +53,7 @@ Der Projekt\-Designer stellt einen zentralen Ort zum Verwalten von Projekteigens
   
     ```  
   
-    ```c#  
+    ```csharp  
     protected override int GetProperty(uint itemId, int propId, out object property)  
     {  
         //Use propId to filter configuration-independent property pages.  
@@ -74,9 +76,9 @@ Der Projekt\-Designer stellt einen zentralen Ort zum Verwalten von Projekteigens
     }  
     ```  
   
-2.  Entfernen Sie die **Buildereignisse** Seite erhaltener `clsids` Liste.  
+2.  Entfernen Sie die **Buildereignisse** Seite abgerufen `clsids` Liste.  
   
-    ```vb#  
+    ```vb  
     Private buildEventsPageGuid As String = "{1E78F8DB-6C07-4D61-A18F-7514010ABD56}"  
     Private index As Integer = propertyPagesList.IndexOf(buildEventsPageGuid)  
     If index <> -1 Then  
@@ -92,7 +94,7 @@ Der Projekt\-Designer stellt einen zentralen Ort zum Verwalten von Projekteigens
     property = propertyPagesList  
     ```  
   
-    ```c#  
+    ```csharp  
     string buildEventsPageGuid = "{1E78F8DB-6C07-4D61-A18F-7514010ABD56}";  
     int index = propertyPagesList.IndexOf(buildEventsPageGuid);  
     if (index != -1)  
@@ -108,11 +110,11 @@ Der Projekt\-Designer stellt einen zentralen Ort zum Verwalten von Projekteigens
     property = propertyPagesList;  
     ```  
   
-#### So erstellen Sie eine Eigenschaftenseite im Projekt\-Designer hinzu  
+#### <a name="to-add-a-property-page-in-project-designer"></a>Hinzufügen eine Eigenschaftenseite im Projekt-Designer  
   
 1.  Erstellen Sie eine Eigenschaftenseite, die Sie hinzufügen möchten.  
   
-    ```vb#  
+    ```vb  
     Class DeployPropertyPage  
             Inherits Form  
             Implements Microsoft.VisualStudio.OLE.Interop.IPropertyPage  
@@ -134,7 +136,7 @@ Der Projekt\-Designer stellt einen zentralen Ort zum Verwalten von Projekteigens
     End Class  
     ```  
   
-    ```c#  
+    ```csharp  
     class DeployPropertyPage : Form, Microsoft.VisualStudio.OLE.Interop.IPropertyPage  
     {  
         . . . .   
@@ -155,19 +157,19 @@ Der Projekt\-Designer stellt einen zentralen Ort zum Verwalten von Projekteigens
     }  
     ```  
   
-2.  Registrieren Sie die neue Eigenschaftenseite.  
+2.  Registrieren Sie Ihre neue Eigenschaftsseite.  
   
-    ```vb#  
+    ```vb  
     <MSVSIP.ProvideObject(GetType(DeployPropertyPage), RegisterUsing = RegistrationMethod.CodeBase)>  
     ```  
   
-    ```c#  
+    ```csharp  
     [MSVSIP.ProvideObject(typeof(DeployPropertyPage), RegisterUsing = RegistrationMethod.CodeBase)]  
     ```  
   
-3.  Überschreiben Sie die `GetProperty(uint itemId, int propId, out object property)`\-Methode, um Eigenschaftenseiten zu filtern, verwenden Sie eine `clsids` Liste, und fügen Sie eine neue Eigenschaftenseite hinzufügen.  
+3.  Überschreiben der `GetProperty(uint itemId, int propId, out object property)` Methode, um Eigenschaftenseiten zu filtern, erhalten eine `clsids` aus, und fügen Sie eine neue Eigenschaftsseite hinzu.  
   
-    ```vb#  
+    ```vb  
     Protected Overrides Function GetProperty(ByVal itemId As UInteger, ByVal propId As Integer, ByRef [property] As Object) As Integer  
         'Use propId to filter configuration-dependent property pages.  
         Select Case propId  
@@ -183,7 +185,7 @@ Der Projekt\-Designer stellt einen zentralen Ort zum Verwalten von Projekteigens
     End Function  
     ```  
   
-    ```c#  
+    ```csharp  
     protected override int GetProperty(uint itemId, int propId, out object property)  
     {  
         //Use propId to filter configuration-dependent property pages.  
@@ -204,7 +206,7 @@ Der Projekt\-Designer stellt einen zentralen Ort zum Verwalten von Projekteigens
     ```  
   
 > [!NOTE]
->  Alle Codebeispiele in diesem Thema bereitgestellt werden, sind Teil eines umfangreicheren Beispiels, [VSSDK\-Beispiele](../misc/vssdk-samples.md).  
+>  Alle in diesem Thema bereitgestellten Codebeispiele sind Teil eines umfangreicheren Beispiels in [VSSDK-Beispiele](http://aka.ms/vs2015sdksamples).  
   
-## Siehe auch  
- [Projekt\-Untertypen](../extensibility/internals/project-subtypes.md)
+## <a name="see-also"></a>Siehe auch  
+ [Projektuntertypen](../extensibility/internals/project-subtypes.md)

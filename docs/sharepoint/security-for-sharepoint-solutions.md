@@ -1,92 +1,94 @@
 ---
-title: "Sicherheit f&#252;r SharePoint-L&#246;sungen"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "Sicherheit [SharePoint-Entwicklung in Visual Studio]"
-  - "SharePoint-Entwicklung in Visual Studio, Sicherheit"
+title: "Sicherheit für SharePoint-Lösungen | Microsoft Docs"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- VB
+- CSharp
+helpviewer_keywords:
+- security [SharePoint development in Visual Studio]
+- SharePoint development in Visual Studio, security
 ms.assetid: 5ab33141-ba82-4960-8b29-3c907127fea6
-caps.latest.revision: 16
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 15
+caps.latest.revision: "16"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: c57626827be8487d19cd546bc31bd32b0859cec7
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Sicherheit f&#252;r SharePoint-L&#246;sungen
-  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] enthält die folgenden Funktionen zur Erhöhung der Sicherheit von SharePoint\-Anwendungen.  
+# <a name="security-for-sharepoint-solutions"></a>Sicherheit für SharePoint-Lösungen
+  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]umfasst die folgenden Funktionen, mit denen die Sicherheit von SharePoint-Anwendungen zu verbessern.  
   
-## Einträge für sicheres Steuerelement  
- Jedes in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] erstellte SharePoint\-Projektelement verfügt über eine Eigenschaft vom Typ **Einträge für sicheres Steuerelement**, die für eine Auflistung sicherer Steuerelemente steht.  Mithilfe der untergeordneten Eigenschaft **Sicher** können die Steuerelemente angegeben werden, die Sie für sicher halten.  Weitere Informationen finden Sie unter [Angeben sicherer Webparts](http://go.microsoft.com/fwlink/?LinkId=177521)[Bereitstellen von Pack- und Bereitstellungsinformationen in Projektelementen](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).  
+## <a name="safe-control-entries"></a>Einträge für sicheres Steuerelement  
+ In jeder SharePoint-Projektelements erstellt [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] verfügt über eine **Einträge für sicheres Steuerelement** steuerelementauflistung der Eigenschaft, ein sicheres darstellt. Die **sichere** Untereigenschaften ermöglicht Ihnen das Festlegen der Steuerelemente, die Sie sicheren berücksichtigen. Weitere Informationen finden Sie unter [Bereitstellen von Pack- und Bereitstellungsinformationen in Projektelementen](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md) und [angeben sicherer Webparts](http://go.microsoft.com/fwlink/?LinkId=177521).  
   
-## AllowPartiallyTrustedCallers\-Attribut  
- Standardmäßig kann nur von Anwendungen, die im Laufzeit\-Codezugriffssicherheitssystem \(CAS\) als voll vertrauenswürdig gelten, auf eine freigegebene verwaltete Codeassembly zugegriffen werden.  Durch Markieren einer voll vertrauenswürdigen Assembly mit dem AllowPartiallyTrustedCallers\-Attribut wird teilweise vertrauenswürdigen Assemblys der Zugriff auf die Assembly ermöglicht.  
+## <a name="allowpartiallytrustedcallers-attribute"></a>AllowPartiallyTrustedCallers-Attribut  
+ Standardmäßig können nur Anwendungen, die das Laufzeitsystem Code Access Security (CAS) vollständig vertrauenswürdig sind, eine freigegebene verwaltete Codeassembly zugreifen. Markieren einer voll vertrauenswürdigen Assembly mit dem AllowPartiallyTrustedCallers-Attribut kann teilweise vertrauenswürdige Assemblys, darauf zuzugreifen.  
   
- Das AllowPartiallyTrustedCallers\-Attribut wird jeder SharePoint\-Lösung hinzugefügt, die nicht im globalen Assemblycache \([!INCLUDE[TLA2#tla_gac](../sharepoint/includes/tla2sharptla-gac-md.md)]\) des Systems bereitgestellt wird.  Dies gilt auch für Sandkastenlösungen oder Lösungen, die im Verzeichnis "Bin" der SharePoint\-Anwendung bereitgestellt werden.  Weitere Informationen finden Sie und [Sicherheits\-Änderungen der Versions\-1 für. Microsoft .NET Framework](http://go.microsoft.com/fwlink/?LinkId=177515) [Bereitstellen von Webparts in SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkId=177509).  
+ AllowPartiallyTrustedCallers-Attribut wird auf alle SharePoint-Lösung, die im globalen Systemassemblycache bereitgestellt wurde hinzugefügt ([!INCLUDE[TLA2#tla_gac](../sharepoint/includes/tla2sharptla-gac-md.md)]). Dies schließt sandkastenlösungen oder Lösungen, die für die SharePoint-Anwendung-Verzeichnis "bin" bereitgestellt. Weitere Informationen finden Sie unter [Version 1 Sicherheitsänderungen für das Microsoft .NET Framework](http://go.microsoft.com/fwlink/?LinkId=177515) und [Bereitstellen von Webparts in SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkId=177509).  
   
-## Eigenschaft "Sicher vor Skripteinschleusung"  
- Der Begriff *Skripteinschleusung* bezeichnet das Einfügen von potenziell bösartigem Code in Steuerelemente oder Webseiten.  Zum Schutz von SharePoint 2010\-Websites vor Skripteinschleusungen können Mitwirkende standardmäßig keine Webparts oder deren Eigenschaften anzeigen oder bearbeiten.  Dieses Verhalten wird von einem SafeControl\-Attribut mit der Bezeichnung "SafeAgainstScript" gesteuert.  Legen Sie dieses Attribut in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] unter **Einträge für sicheres Steuerelement** in der untergeordneten Eigenschaft **Sicher vor Skripteinschleusung** eines Projektelements fest.  Weitere Informationen finden Sie unter [Bereitstellen von Pack- und Bereitstellungsinformationen in Projektelementen](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md) und [Gewusst wie: Markieren von Steuerelementen als sichere Steuerelemente](../sharepoint/how-to-mark-controls-as-safe-controls.md).  
+## <a name="safe-against-script-property"></a>Safe für Script-Eigenschaft  
+ *Script-Injection* ist das Einfügen von potenziell bösartigen Code in Steuerelementen oder Webseiten. Zum Schutz von SharePoint 2010-Websites für Script-Injection nicht Contributors anzeigen oder Bearbeiten von Webparts oder ihre Eigenschaften in der Standardeinstellung. Dieses Verhalten wird durch eine SafeControl-Attribut, die mit der Bezeichnung "SafeAgainstScript" gesteuert. In [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], legen Sie dieses Attribut in einem Projektelement **Einträge für sicheres Steuerelement** Untereigenschaften **sicher für Skript**. Weitere Informationen finden Sie unter [Bereitstellen von Pack- und Bereitstellungsinformationen in Projektelementen](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md) und [wie: Markieren von Steuerelementen als sichere Steuerelemente](../sharepoint/how-to-mark-controls-as-safe-controls.md).  
   
-## Benutzerkontensteuerung von Windows Vista und Windows 7  
- [!INCLUDE[windowsver](../sharepoint/includes/windowsver-md.md)] und [!INCLUDE[win7](../sharepoint/includes/win7-md.md)] enthalten eine Sicherheitsfunktion, die als Benutzerkontensteuerung \(User Account Control, UAC\) bezeichnet wird.  Zum Entwickeln von SharePoint\-Lösungen in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] unter [!INCLUDE[windowsver](../sharepoint/includes/windowsver-md.md)] und [!INCLUDE[win7](../sharepoint/includes/win7-md.md)] muss [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] aufgrund der Benutzerkontensteuerung als Systemadministrator ausgeführt werden.  Wählen Sie im Menü **Starten** öffnen Sie das Kontextmenü für [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], und wählen Sie dann **Als Administrator ausführen** aus.  
+## <a name="vista-and-windows-7-user-account-control"></a>Vista und Windows 7 Benutzerkontensteuerung  
+ [!INCLUDE[windowsver](../sharepoint/includes/windowsver-md.md)]und [!INCLUDE[win7](../sharepoint/includes/win7-md.md)] enthalten eine Sicherheitsfunktion, die als Benutzerkontensteuerung (UAC) bezeichnet. Zum Entwickeln von SharePoint-Lösungen in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] unter [!INCLUDE[windowsver](../sharepoint/includes/windowsver-md.md)] und [!INCLUDE[win7](../sharepoint/includes/win7-md.md)] muss [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] aufgrund der Benutzerkontensteuerung als Systemadministrator ausgeführt werden. Aus der **starten** Menü öffnen Sie das Kontextmenü für [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], und wählen Sie dann **als Administrator ausführen**.  
   
- Um [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] zu konfigurieren kürzte ab um immer ausgeführt werden während Administrator, das Kontextmenü öffnen, dann **Eigenschaften** auswählen, die Schaltfläche **Erweitert** im Dialogfeld **Eigenschaften** und das Kontrollkästchen **Als Administrator ausführen** aktivieren.  
+ So konfigurieren Sie die [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Verknüpfung immer als Administrator ausführen, öffnen Sie das Kontextmenü, wählen **Eigenschaften**, wählen Sie die **erweitert** Schaltfläche der **Eigenschaften**(Dialogfeld), und wählen Sie dann die **als Administrator ausführen** Kontrollkästchen.  
   
- Weitere Informationen finden Sie unter [Verstehen und Konfigurieren der Benutzerkontensteuerung in Windows Vista](http://go.microsoft.com/fwlink/?LinkID=156476) und [Windows 7\-Benutzerkontensteuerung](http://go.microsoft.com/fwlink/?LinkId=177523).  
+ Weitere Informationen finden Sie unter [verstehen und Konfigurieren der Benutzerkontensteuerung in Windows Vista](http://go.microsoft.com/fwlink/?LinkID=156476). und [Windows 7-Benutzerkontensteuerung](http://go.microsoft.com/fwlink/?LinkId=177523).  
   
-## Überlegungen zu SharePoint\-Berechtigungen  
- Bei der Entwicklung von SharePoint\-Lösungen benötigen Sie ausreichende Berechtigungen, um SharePoint\-Lösungen auszuführen und zu debuggen.  Bevor Sie eine SharePoint\-Lösung testen können, führen Sie die folgenden Schritte aus, um sicherzustellen, dass Sie über die erforderlichen Berechtigungen verfügen:  
+## <a name="sharepoint-permissions-considerations"></a>Überlegungen zu SharePoint-Berechtigungen  
+ Bei der Entwicklung von SharePoint-Lösungen benötigen Sie ausreichende Berechtigungen, um SharePoint-Lösungen auszuführen und zu debuggen. Bevor Sie eine SharePoint-Lösung testen können, führen Sie die folgenden Schritte aus, um sicherzustellen, dass Sie über die erforderlichen Berechtigungen verfügen:  
   
 1.  Fügen Sie Ihr Benutzerkonto als Administrator für das System hinzu.  
   
-2.  Fügen Sie Ihr Benutzerkonto als Farmadministrator für den SharePoint\-Server hinzu.  
+2.  Fügen Sie Ihr Benutzerkonto als Farmadministrator für den SharePoint-Server hinzu.  
   
-    1.  In der SharePoint 2010\-Zentraladministration Wählen Sie den Link **Farmadministratorgruppe verwalten** aus.  
+    1.  Wählen Sie in SharePoint 2010-Zentraladministration die **Administratorgruppe der Farm verwalten** Link.  
   
-    2.  Auf der Seite **Farmadministratoren** wählen Sie die Menüoptionen **Neu** aus  
+    2.  Auf der **Farmadministratoren** Seite, und wählen Sie die **neu** Menüoption  
   
-3.  Fügen Sie das Benutzerkonto zur Gruppe "WSS\_ADMIN\_WPG" hinzu.  
+3.  Fügen Sie das Benutzerkonto zur Gruppe "WSS_ADMIN_WPG" hinzu.  
   
-## Zusätzliche Sicherheitsressourcen  
- Weitere Informationen zu Sicherheitsproblemen finden Sie auf den folgenden Seiten:  
+## <a name="additional-security-resources"></a>Zusätzliche Ressourcen  
+ Weitere Informationen zu Sicherheitsproblemen finden Sie hier.  
   
-### Visual Studio\-Sicherheit  
+### <a name="visual-studio-security"></a>Visual Studio-Sicherheit  
   
 -   [Sicherheit und Benutzerberechtigungen](http://go.microsoft.com/fwlink/?LinkId=177503)  
   
--   [Sicherheit in systemeigenem und in .NET Framework](http://go.microsoft.com/fwlink/?LinkId=177504)  
+-   [Sicherheit im einheitlichen als auch .NET Framework-Code](http://go.microsoft.com/fwlink/?LinkId=177504)  
   
 -   [Sicherheit in .NET Framework](http://go.microsoft.com/fwlink/?LinkId=177502)  
   
-### SharePoint\-Sicherheit  
+### <a name="sharepoint-security"></a>SharePoint-Sicherheit  
   
--   [SharePoint Foundations\-Verwaltung und Sicherheit](http://go.microsoft.com/fwlink/?LinkId=177501)  
+-   [SharePoint Foundation-Verwaltung und Sicherheit](http://go.microsoft.com/fwlink/?LinkId=177501)  
   
--   [SharePoint\-Sicherheits\-Ressourcen\-Mittelpunkt](http://go.microsoft.com/fwlink/?LinkId=177498)  
+-   [Ressourcencenter für SharePoint-Sicherheit](http://go.microsoft.com/fwlink/?LinkId=177498)  
   
 -   [Sichern von Webparts in SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkId=177511)  
   
--   [Verbessern der Sicherheit von Webanwendungen: Bedrohungen und entsprechende Gegenmaßnahmen](http://go.microsoft.com/fwlink/?LinkID=140080)  
+-   [Verbesserung Webanwendungssicherheit: Bedrohungen und Gegenmaßnahmen](http://go.microsoft.com/fwlink/?LinkID=140080)  
   
-### Allgemeine Sicherheit  
+### <a name="general-security"></a>Allgemeine Sicherheit  
   
--   [MSDN\-Sicherheits\-Entwicklungs\-Lebenszyklus](http://go.microsoft.com/fwlink/?LinkID=147149)  
+-   [MSDN Security Development Lifecycle](http://go.microsoft.com/fwlink/?LinkID=147149)  
   
--   [Erstellen sicherer ASP.NET\-Anwendungen: Authentifizierung, Autorisierung und sichere Kommunikation](http://go.microsoft.com/fwlink/?LinkId=177494)  
+-   [Building Secure ASP.NET Applications: Authentifizierung, Autorisierung und sichere Kommunikation](http://go.microsoft.com/fwlink/?LinkId=177494)  
   
-## Siehe auch  
- [Developing SharePoint Solutions](../sharepoint/developing-sharepoint-solutions.md)   
- [Anforderungen für die Entwicklung von SharePoint-Lösungen](../sharepoint/requirements-for-developing-sharepoint-solutions.md)  
+## <a name="see-also"></a>Siehe auch  
+ [Entwickeln von SharePoint-Lösungen](../sharepoint/developing-sharepoint-solutions.md)   
+ [Anforderungen für die Entwicklung von SharePoint-Projektmappen](../sharepoint/requirements-for-developing-sharepoint-solutions.md)  
   
   

@@ -1,62 +1,64 @@
 ---
-title: "concat-Methode (Array) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "concat"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "concat-Methode (Array)"
-  - "Concat-Methode"
+title: Concat-Methode (Array) (JavaScript) | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: concat
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- concat method (array)
+- Concat method
 ms.assetid: bc2b4a6a-209e-4d59-8c24-59db01d53b1e
-caps.latest.revision: 16
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 16
+caps.latest.revision: "16"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 19f3a216a36f9ad8c422036476e46b89b6ee488c
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# concat-Methode (Array) (JavaScript)
+# <a name="concat-method-array-javascript"></a>concat-Methode (Array) (JavaScript)
 Kombiniert zwei oder mehr Arrays.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
   
 array1.concat([item1[, item2[, . . . [, itemN]]]])   
 ```  
   
-## Parameter  
+## <a name="parameters"></a>Parameter  
  `array1`  
- Erforderlich.  Das `Array`\-Objekt, mit dem die anderen Arrays verkettet werden.  
+ Erforderlich. Die `Array` -Objekt, das das andere Arrays verkettet werden.  
   
  `item1,. . ., itemN`  
- Optional.  Weitere Elemente, die am Ende von `array1` hinzugefügt werden sollen.  
+ Dies ist optional. Zusätzliche Elemente, die am Ende hinzugefügt `array1`.  
   
-## Hinweise  
- Die Methode `concat` gibt ein `Array`\-Objekt zurück, das die Verkettung von `array1` und allen anderen bereitgestellten Elementen enthält.  
+## <a name="remarks"></a>Hinweise  
+ Die `concat` Methode gibt ein `Array` Objekt, das die Verkettung von enthält `array1` und aller anderen angegebenen Elemente.  
   
- Die dem Array hinzuzufügenden Elemente \(*itemN Element1*\) werden geordnet hinzugefügt, beginnend mit dem ersten Element in der Liste.  Wenn eines der Elemente ein Array ist, wird dessen Inhalt am Ende von `array1` angefügt.  Wenn das Element kein Array ist, wird es am Ende des Arrays als einzelnes Arrayelement angefügt.  
+ Die Elemente hinzugefügt werden (*item1 ItemN*), das Array hinzugefügt werden sollen, in der Reihe nach beginnend mit dem ersten Element in der Liste. Wenn eines der Elemente ein Array ist, werden dessen Inhalt am Ende hinzugefügt `array1`. Wenn das Element etwas anderes als ein Array ist, wird es als ein einzelnes Arrayelement bis zum Ende des Arrays hinzugefügt.  
   
- Elemente von Quellarrays werden wie folgt in das resultierende Array kopiert:  
+ Elemente des Quellarrays werden wie folgt auf das resultierende Array kopiert:  
   
--   Wenn ein Objekt aus einem beliebigen Array kopiert wurde, das mit dem neuen Array verkettet wird, zeigt der Objektverweis weiterhin auf dasselbe Objekt.  Eine im neuen oder im ursprünglichen Array vorgenommene Änderung bewirkt, dass eine entsprechende Änderung im jeweils anderen Array vorgenommen wird.  
+-   Wenn ein Objekt von einem beliebigen der Arrays verkettet werden, in das neue Array kopiert wird, wird der Objektverweis weiterhin auf dasselbe Objekt zeigen. Eine Änderung in das neue Array oder das ursprüngliche Array führt zu einer Änderung in den anderen.  
   
--   Werden eine Zahl oder ein Zeichenfolgenwert dem neuen Array hinzugefügt, wird nur der Wert kopiert.  Änderungen eines Werts in einem Arrays haben keine Auswirkungen auf den Wert im anderen Array.  
+-   Wenn ein Wert eine Zahl oder Zeichenfolge in das neue Array hinzugefügt wird, wird nur der Wert kopiert. Ändern des Werts in einem Array wirkt sich nicht auf den Wert in der anderen aus.  
   
-## Beispiel  
- Im folgenden Codebeispiel wird die Anwendung der `concat`\-Methode auf ein Array veranschaulicht:  
+## <a name="example"></a>Beispiel  
+ Das folgende Beispiel zeigt, wie Sie die `concat` Methode, wenn mit einem Array verwendet:  
   
-```javascript  
+```JavaScript  
 var a, b, c, d;  
 a = new Array(1,2,3);  
 b = "dog";  
@@ -69,9 +71,9 @@ document.write(d);
   
 ```  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  [!INCLUDE[jsv3](../../javascript/reference/includes/jsv3-md.md)]  
   
-## Siehe auch  
- [concat\-Methode \(String\)](../../javascript/reference/concat-method-string-javascript.md)   
- [join\-Methode \(Array\)](../../javascript/reference/join-method-array-javascript.md)
+## <a name="see-also"></a>Siehe auch  
+ [Concat-Methode (String)](../../javascript/reference/concat-method-string-javascript.md)   
+ [join-Methode (Array)](../../javascript/reference/join-method-array-javascript.md)

@@ -1,12 +1,10 @@
 ---
-title: Content Controls | Microsoft Docs
+title: Inhaltssteuerelemente | Microsoft Docs
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -41,148 +39,147 @@ helpviewer_keywords:
 - templates [Office development in Visual Studio], content controls
 - BuildingBlockGalleryContentControl class
 ms.assetid: ed59e522-dd6e-4c82-8d49-f5dbcfcc950d
-caps.latest.revision: 65
-author: kempb
-ms.author: kempb
+caps.latest.revision: "65"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: b6c09c989a481dba36da5b7de05f3b47d7047a79
-ms.contentlocale: de-de
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: 5b2950370b35eb8e2f60f15c5de032284c5546f3
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="content-controls"></a>Content Controls
-  Content controls provide a way for you to design documents and templates that have these features:  
+# <a name="content-controls"></a>Inhaltssteuerelemente
+  Inhaltssteuerelemente bieten Ihnen eine Möglichkeit, Dokumente und Vorlagen zu entwerfen, die die folgenden Funktionen aufweisen:  
   
--   A user interface (UI) that has controlled input like a form.  
+-   Eine Benutzeroberfläche (UI), die über verwaltete Eingaben wie ein Formular verfügt.  
   
--   Restrictions that prevent users from editing protected sections of the document or template. For more information, see [Protecting Parts of Documents by Using Content Controls](#Protection).  
+-   Einschränkungen, die verhindern, dass Benutzer geschützte Abschnitte des Dokuments oder der Vorlage bearbeiten können. Weitere Informationen finden Sie unter [Schützen von Teilen von Dokumenten mithilfe von Inhaltssteuerelementen](#Protection).  
   
--   Data binding to a data source. For more information, see [Binding Data to Content Controls](#DataBinding).  
+-   Datenbindung an eine Datenquelle. Weitere Informationen finden Sie unter [Binden von Daten an Inhaltssteuerelemente](#DataBinding).  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
- ![link to video](../vsto/media/playvideo.gif "link to video") For a related video demonstration, see [Binding Data to Word 2007 Content Controls Using Visual Studio Tools for the Office System (3.0)](http://go.microsoft.com/fwlink/?LinkId=136785).  
+ ![Link zu Video](../vsto/media/playvideo.gif "Link zu Video") eine entsprechende Videodemo finden Sie unter [Binden von Daten an Word 2007 Inhalt Steuerelemente mit Visual Studio-Tools für Office System (3.0)](http://go.microsoft.com/fwlink/?LinkId=136785).  
   
-## <a name="overview-of-content-controls"></a>Overview of Content Controls  
- Content controls provide a UI that is optimized for both user input and print. When you add a content control to a document, the control is identified by a border, a title, and temporary text that can provide instructions to the user. The border and the title of the control do not appear in printed versions of the document.  
+## <a name="overview-of-content-controls"></a>Übersicht über Inhaltssteuerelemente  
+ Inhaltssteuerelemente stellen eine Benutzeroberfläche bereit, die für Benutzereingaben und Druck optimiert ist. Wenn Sie einem Dokument ein Inhaltssteuerelement hinzufügen, wird das Steuerelement durch einen Rahmen, einen Titel und temporären Text identifiziert, der Anweisungen für den Benutzer bereitstellen kann. Der Rahmen und der Titel des Steuerelements werden nicht in gedruckten Versionen des Dokuments angezeigt.  
   
- For example, if you want the user to enter a date in a section of your document, you can add a date picker content control to the document. When users click the control, the standard date picker UI appears. You can also set properties of the control to set the regional calendar that is displayed and to specify the date format. After the user chooses a date, the UI of the control is hidden, and only the date appears if the user prints the document.  
+ Wenn Sie z. B. möchten, dass der Benutzer ein Datum in einem Abschnitt Ihres Dokuments eingibt, können Sie dem Dokument ein Datumsauswahl-Inhaltssteuerelement hinzufügen. Wenn Benutzer auf das Steuerelement klicken, wird die Datumsauswahl-Standardbenutzeroberfläche angezeigt. Sie können die Eigenschaften des Steuerelements auch so festlegen, dass der regionale Kalender festgelegt wird, der angezeigt wird, und Sie können das Datumsformat angeben. Nachdem der Benutzer ein Datum ausgewählt hat, wird die Benutzeroberfläche des Steuerelements ausgeblendet, und nur das Datum wird angezeigt, wenn der Benutzer das Dokument druckt.  
   
- Content controls also help you do the following:  
+ Inhaltssteuerelemente unterstützen Sie auch bei den folgenden Aufgaben:  
   
--   Prevent users from editing or deleting parts of a document. This is useful if you have information in a document or template that users should be able to read but not edit, or if you want users to be able to edit content controls but not delete them.  
+-   Verhindern, dass Benutzer Teile eines Dokuments bearbeiten oder löschen. Dies ist sinnvoll, wenn Informationen in einem Dokument oder einer Vorlage vorhanden sind, die Benutzer lesen, jedoch nicht bearbeiten können sollen, oder wenn Benutzer Steuerelemente bearbeiten, jedoch nicht löschen dürfen.  
   
--   Bind parts of a document or template to data. You can bind content controls to database fields, managed objects in the [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)], XML elements that are stored in the document, and other data sources.  
+-   Binden von Teilen eines Dokuments oder einer Vorlage an Daten. Sie können Inhaltssteuerelementen an Datenbankfelder, verwaltete Objekte in [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)], XML-Elemente, die im Dokument gespeichert sind, und andere Datenquellen binden.  
   
- In document-level projects, you can add content controls to your document at design time or at run time. In VSTO Add-in projects, you can add content controls to any open document at run time. For more information, see [How to: Add Content Controls to Word Documents](../vsto/how-to-add-content-controls-to-word-documents.md).  
+ In Projekten auf Dokumentebene können Sie dem Dokument Inhaltssteuerelemente zur Entwurfszeit oder zur Laufzeit hinzufügen. In VSTO-Add-In-Projekten können Sie einem beliebigen geöffneten Dokument zur Laufzeit Inhaltssteuerelemente hinzufügen. Weitere Informationen finden Sie unter [wie: Hinzufügen von Inhaltssteuerelementen zu Word-Dokumenten](../vsto/how-to-add-content-controls-to-word-documents.md).  
   
 > [!NOTE]  
->  You can use content controls only in documents that are saved in the Open XML Format. You cannot use content controls in documents that are saved in the Word 97-2003 document (.doc) format.  
+>  Sie können Inhaltssteuerelemente nur in Dokumenten verwenden, die im Open XML-Format gespeichert werden. Sie können Inhaltssteuerelemente nicht in Dokumenten verwenden, die im Dokumentformat von Word 97 - 2003 (DOC) gespeichert werden.  
   
-## <a name="types-of-content-controls"></a>Types of Content Controls  
- There are nine different types of content controls that you can add to documents. Most of the content controls have a corresponding type in the <xref:Microsoft.Office.Tools.Word> namespace. You can also use a generic <xref:Microsoft.Office.Tools.Word.ContentControl>, which can represent any of the available content controls. For a walkthrough that demonstrates how to use each of the available content controls, see [Walkthrough: Creating a Template By Using Content Controls](../vsto/walkthrough-creating-a-template-by-using-content-controls.md).  
+## <a name="types-of-content-controls"></a>Typen von Inhaltssteuerelementen  
+ Es gibt neun verschiedene Typen von Inhaltssteuerelementen, die Sie Dokumenten hinzufügen können. Die meisten der Inhaltssteuerelemente besitzen einen entsprechenden Typ im Namespace <xref:Microsoft.Office.Tools.Word>. Sie können auch einen generischen Namespace <xref:Microsoft.Office.Tools.Word.ContentControl> verwenden, der eines der verfügbaren Inhaltssteuerelemente darstellen kann. Eine exemplarische Vorgehensweise, die jeweils verfügbaren Inhaltssteuerelemente veranschaulicht, finden Sie unter [Exemplarische Vorgehensweise: Erstellen einer Vorlage von mithilfe von Inhaltssteuerelementen](../vsto/walkthrough-creating-a-template-by-using-content-controls.md).  
   
-### <a name="building-block-gallery"></a>Building Block Gallery  
- A building block gallery enables users to select from a list of *document building blocks* to insert into a document. A document building block is a piece of content that has been created to be used multiple times, such as a common cover page, a formatted table, or a header. For more information, see the <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl> type. For more information about building blocks, see [What's New for Developers in Word 2007](http://msdn.microsoft.com/en-us/74aa6688-65b3-4167-997d-131f26ad8f84).  
+### <a name="building-block-gallery"></a>Bausteinkatalog  
+ Ein Bausteinkatalog ermöglicht Benutzern die Auswahl aus einer Liste von *Dokumentbausteinen* in ein Dokument einfügen. Ein Dokumentbaustein ist ein Inhaltselement, das erstellt wurde, um mehrere Male verwendet zu werden, z. B. eine allgemeine Titelseite, eine formatierte Tabelle oder ein Header . Weitere Informationen finden Sie unter dem <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl>-Typ. Weitere Informationen zu Bausteinen finden Sie unter [neues für Entwickler in Word 2007](http://msdn.microsoft.com/en-us/74aa6688-65b3-4167-997d-131f26ad8f84).  
   
-### <a name="check-box"></a>Check Box  
- A check box provides a UI that represents a binary state: selected or cleared.  
+### <a name="check-box"></a>Kontrollkästchen  
+ Ein Kontrollkästchen stellt eine Benutzeroberfläche zur Verfügung, die einen binären Zustand darstellt: aktiviert oder deaktiviert.  
   
- Unlike the other types of content controls, the [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] does not provide a specific type that represents a check box content control. In other words, there is no CheckBoxContentControl type. However, you can still create a check box content control by adding a generic <xref:Microsoft.Office.Tools.Word.ContentControl> to a document programmatically. For more information, see [Check Box Content Controls in Word Projects](#checkbox).  
+ Im Gegensatz zu anderen Typen von Inhaltssteuerelementen stellt die [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] keinen bestimmten Typ bereit, der ein Kontrollkästchen-Inhaltssteuerelement darstellt. Das heißt, ist es kein CheckBoxContentControl-Typ. Sie können jedoch trotzdem ein Kontrollkästchen-Inhaltssteuerelement erstellen, indem Sie ein generisches <xref:Microsoft.Office.Tools.Word.ContentControl> einem Dokument programmgesteuert hinzufügen. Weitere Informationen finden Sie unter [Kontrollkästchen-Inhaltssteuerelemente in Word-Projekten](#checkbox).  
   
-### <a name="combo-box"></a>Combo Box  
- A combo box displays a list of items that users can select. Unlike a drop-down list, the combo box enables users to add their own items. For more information, see the <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl> type.  
+### <a name="combo-box"></a>Kombinationsfeld  
+ Ein Kombinationsfeld zeigt eine Liste von Elementen an, die Benutzer auswählen können. Im Gegensatz zu einer Dropdownliste ermöglicht das Kombinationsfeld das Hinzufügen eigener Elemente. Weitere Informationen finden Sie unter dem <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl>-Typ.  
   
-### <a name="date-picker"></a>Date Picker  
- A date picker provides a calendar UI for selecting a date. The calendar appears when the end user clicks the drop-down arrow in the control. You can use regional calendars and different date formats. For more information, see the <xref:Microsoft.Office.Tools.Word.DatePickerContentControl> type.  
+### <a name="date-picker"></a>Datumsauswahl  
+ Eine Datumsauswahl stellt eine Kalenderbenutzeroberfläche zum Auswählen eines Datums zur Verfügung. Der Kalender wird angezeigt, wenn der Endbenutzer auf den Dropdownpfeil im Steuerelement klickt. Sie können regionale Kalender und verschiedene Datumsformate verwenden. Weitere Informationen finden Sie unter dem <xref:Microsoft.Office.Tools.Word.DatePickerContentControl>-Typ.  
   
-### <a name="drop-down-list"></a>Drop-Down List  
- A drop-down list displays a list of items that users can select. Unlike a combo box, the drop-down list does not let users add or edit items. For more information, see the <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> type.  
+### <a name="drop-down-list"></a>Dropdownliste  
+ Eine Dropdownliste zeigt eine Liste von Elementen an, die Benutzer auswählen können. Im Gegensatz zu einem Kombinationsfeld ermöglicht die Dropdownliste Benutzern nicht das Hinzufügen oder Bearbeiten von Elementen. Weitere Informationen finden Sie unter dem <xref:Microsoft.Office.Tools.Word.DropDownListContentControl>-Typ.  
   
-### <a name="group"></a>Group  
- A group control defines a protected region of a document that users cannot edit or delete. A group control can contain any document items, such as text, tables, graphics, and other content controls. For more information, see the <xref:Microsoft.Office.Tools.Word.GroupContentControl> type.  
+### <a name="group"></a>Gruppe  
+ Ein Gruppensteuerelement definiert einen geschützten Bereich eines Dokuments, den Benutzer weder bearbeiten noch löschen können. Ein Gruppensteuerelement kann beliebige Dokumentelemente enthalten, z. B. Text, Tabellen, Grafiken und andere Inhaltssteuerelemente. Weitere Informationen finden Sie unter dem <xref:Microsoft.Office.Tools.Word.GroupContentControl>-Typ.  
   
-### <a name="picture"></a>Picture  
- A picture control displays an image. You can specify the image at design time or run time, or users can click this control to select an image to insert in the document. For more information, see the <xref:Microsoft.Office.Tools.Word.PictureContentControl> type.  
+### <a name="picture"></a>Bild  
+ Ein Bildsteuerelement zeigt ein Bild an. Sie können das Bild zur Entwurfszeit oder zur Laufzeit angeben, oder Benutzer können auf dieses Steuerelement klicken, um ein Bild auszuwählen, das in das Dokument eingefügt werden soll. Weitere Informationen finden Sie unter dem <xref:Microsoft.Office.Tools.Word.PictureContentControl>-Typ.  
   
-### <a name="rich-text"></a>Rich Text  
- A rich text control contains text or other items, such as tables, pictures, or other content controls. For more information, see the <xref:Microsoft.Office.Tools.Word.RichTextContentControl> type.  
+### <a name="rich-text"></a>Rich-Text  
+ Ein Rich-Text-Steuerelement enthält Text oder andere Elemente, z. B. Tabellen, Bilder oder andere Inhaltssteuerelemente. Weitere Informationen finden Sie unter dem <xref:Microsoft.Office.Tools.Word.RichTextContentControl>-Typ.  
   
-### <a name="plain-text"></a>Plain Text  
- A plain text control contains text. A plain text control cannot contain other items, such as tables, pictures, or other content controls. In addition, all of the text in a plain text control has the same formatting. For example, if you italicize one word of a sentence that is in a plain text control, all the text inside the control is italicized. For more information, see the <xref:Microsoft.Office.Tools.Word.PlainTextContentControl> type.  
+### <a name="plain-text"></a>Nur Text  
+ Ein Nur-Text-Steuerelement enthält Text. Ein Nur-Text-Steuerelement kann keine anderen Elemente (z. B. Tabellen, Bilder oder andere Inhaltssteuerelemente) enthalten. Darüber hinaus weist der gesamte Text in einem Nur-Text-Steuerelement die gleiche Formatierung auf. Wenn Sie z. B. ein Wort in einem Satz kursiv formatieren, das sich in einem Nur-Text-Steuerelement befindet, wird der gesamte Text im Steuerelement kursiv formatiert. Weitere Informationen finden Sie unter dem <xref:Microsoft.Office.Tools.Word.PlainTextContentControl>-Typ.  
   
-### <a name="generic-content-control"></a>Generic Content Control  
- A generic content control is a <xref:Microsoft.Office.Tools.Word.ContentControl> object that can represent any of the available types of content controls. You can change a <xref:Microsoft.Office.Tools.Word.ContentControl> object to behave like a different type of content control by using the <xref:Microsoft.Office.Tools.Word.ContentControl.Type%2A> property. For example, if you create a <xref:Microsoft.Office.Tools.Word.ContentControl> object that represents a plain text control, you can change it at run time so that it behaves like a combo box.  
+### <a name="generic-content-control"></a>Generisches Inhaltssteuerelement  
+ Ein generisches Inhaltssteuerelement ist ein <xref:Microsoft.Office.Tools.Word.ContentControl>-Objekt, das jeden der verfügbaren Typen von Steuerelementen darstellen kann. Sie können ein <xref:Microsoft.Office.Tools.Word.ContentControl>-Objekt so ändern, dass es sich wie ein anderer Typ von Inhaltssteuerelement verhält, indem Sie die Eigenschaft <xref:Microsoft.Office.Tools.Word.ContentControl.Type%2A> verwenden. Wenn Sie z. B. ein <xref:Microsoft.Office.Tools.Word.ContentControl>-Objekt erstellen, das ein Nur-Text-Steuerelement darstellt, können Sie dieses zur Laufzeit so ändern, dass es sich wie ein Kombinationsfeld verhält.  
   
- You can create <xref:Microsoft.Office.Tools.Word.ContentControl> objects only at run time, not at design time. For more information, see [How to: Add Content Controls to Word Documents](../vsto/how-to-add-content-controls-to-word-documents.md).  
+ Sie können <xref:Microsoft.Office.Tools.Word.ContentControl>-Objekte nur zur Laufzeit erstellen, nicht zur Entwurfszeit. Weitere Informationen finden Sie unter [wie: Hinzufügen von Inhaltssteuerelementen zu Word-Dokumenten](../vsto/how-to-add-content-controls-to-word-documents.md).  
   
-## <a name="common-features-of-content-controls"></a>Common Features of Content Controls  
- Most content controls share a set of members that you can use to perform common tasks. The following table describes some of the tasks that you can perform by using these members.  
+## <a name="common-features-of-content-controls"></a>Allgemeine Funktionen von Inhaltssteuerelementen  
+ Die meisten Inhaltssteuerelemente verwenden eine Sammlung von Elementen gemeinsam, die Sie verwenden können, um allgemeine Aufgaben auszuführen. In der folgenden Tabelle werden einige der Aufgaben beschrieben, die Sie mithilfe dieser Elemente ausführen können.  
   
-|For this task:|Do this:|  
+|Aufgabe:|Vorgehensweise:|  
 |--------------------|--------------|  
-|Get or set the text that is displayed in the control.|Use the **Text** property. **Note:**  The <xref:Microsoft.Office.Tools.Word.PictureContentControl> and <xref:Microsoft.Office.Tools.Word.ContentControl> types do not have this property.|  
-|Get or set the temporary text that is displayed in the control until a user edits the control, the control is populated with data from a data source, or the control's contents are deleted.|Use the **PlaceholderText** property. **Note:**  The <xref:Microsoft.Office.Tools.Word.PictureContentControl> type does not have this property.|  
-|Get or set the title that is displayed in the border of the content control when the user clicks it.|Use the **Title** property.|  
-|Remove the control from the document automatically after the user edits the control. (The text in the control remains in the document.)|Use the **Temporary** property.|  
-|Run code when the user clicks in the content control, or when the cursor is moved into the content control programmatically.|Handle the <xref:Microsoft.Office.Tools.Word.ContentControlBase.Entering> event of the control.|  
-|Run code when the user clicks outside the content control, or when the cursor is moved outside the content control programmatically.|Handle the <xref:Microsoft.Office.Tools.Word.ContentControlBase.Exiting> event of the control.|  
-|Run code after the content control is added to the document as a result of a redo or undo operation.|Handle the <xref:Microsoft.Office.Tools.Word.ContentControlBase.Added> event of the control.|  
-|Run code just before the content control is deleted from the document.|Handle the <xref:Microsoft.Office.Tools.Word.ContentControlBase.Deleting> event of the control.|  
+|Abrufen oder Festlegen des Texts, der im Steuerelement angezeigt wird.|Verwenden der **Text** Eigenschaft. **Hinweis:** der <xref:Microsoft.Office.Tools.Word.PictureContentControl> und <xref:Microsoft.Office.Tools.Word.ContentControl> Typen verfügen nicht über diese Eigenschaft.|  
+|Abrufen oder Festlegen des temporären Texts, der im Steuerelement angezeigt wird, bis ein Benutzer das Steuerelement bearbeitet, das Steuerelement mit Daten aus einer Datenquelle aufgefüllt wird oder der Inhalt des Steuerelements gelöscht wird.|Verwenden der **PlaceholderText** Eigenschaft. **Hinweis:** der <xref:Microsoft.Office.Tools.Word.PictureContentControl> Typ verfügt nicht über diese Eigenschaft.|  
+|Abrufen oder Festlegen des Titels, der im Rahmen des Inhaltssteuerelements angezeigt wird, wenn der Benutzer darauf klickt.|Verwenden der **Titel** Eigenschaft.|  
+|Automatisches Entfernen des Steuerelement aus dem Dokument, nachdem der Benutzer das Steuerelement bearbeitet hat. (Der Text im Steuerelement verbleibt im Dokument.)|Verwenden der **temporäre** Eigenschaft.|  
+|Ausführen von Code, wenn der Benutzer im Inhaltssteuerelement klickt oder wenn der Cursor programmgesteuert in das Inhaltssteuerelement verschoben wird.|Behandeln des <xref:Microsoft.Office.Tools.Word.ContentControlBase.Entering>-Ereignisses des Steuerelements.|  
+|Ausführen von Code, wenn der Benutzer außerhalb des Inhaltssteuerelements klickt oder der Cursor programmgesteuert aus dem Inhaltssteuerelement verschoben wird.|Behandeln des <xref:Microsoft.Office.Tools.Word.ContentControlBase.Exiting>-Ereignisses des Steuerelements.|  
+|Ausführen von Code, nachdem das Inhaltssteuerelement als Ergebnis eines Vorgangs "Wiederholen" oder "Rückgängig" dem Dokument hinzugefügt wurde.|Behandeln des <xref:Microsoft.Office.Tools.Word.ContentControlBase.Added>-Ereignisses des Steuerelements.|  
+|Ausführen von Code, kurz bevor das Inhaltssteuerelement aus dem Dokument gelöscht wird.|Behandeln des <xref:Microsoft.Office.Tools.Word.ContentControlBase.Deleting>-Ereignisses des Steuerelements.|  
   
-##  <a name="Protection"></a> Protecting Parts of Documents By Using Content Controls  
- When you protect a part of a document, you prevent users from changing or deleting the content in that part of the document. There are several ways you can protect parts of a document by using content controls.  
+##  <a name="Protection"></a>Schützen von Teilen von Dokumenten mithilfe von Inhaltssteuerelementen  
+ Wenn Sie einen Teil eines Dokuments schützen, verhindern Sie dass Benutzer den Inhalt in diesem Teil des Dokuments ändern oder löschen können. Es gibt mehrere Möglichkeiten, wie Sie Teile eines Dokuments mithilfe von Inhaltssteuerelementen schützen können.  
   
- If the area you want to protect is inside a content control, you can use properties of the content control to prevent users from editing or deleting the control:  
+ Wenn sich der Bereich, den Sie schützen möchten, innerhalb eines Inhaltssteuerelements befindet, können Sie Eigenschaften des Inhaltssteuerelements verwenden, um zu verhindern, dass Benutzer das Steuerelement bearbeiten oder löschen können:  
   
--   The **LockContents** property prevents users from editing the contents.  
+-   Die **LockContents** Eigenschaft wird verhindert, dass Benutzer den Inhalt bearbeiten.  
   
--   The **LockContentControl** property prevents users from deleting the control.  
+-   Die **LockContentControl** Eigenschaft wird verhindert, dass Benutzer das Steuerelement löschen.  
   
- If the area you want to protect is not inside a content control, or if you want to protect an area that contains content controls and other types of content, you can put the whole area in a <xref:Microsoft.Office.Tools.Word.GroupContentControl>. Unlike other content controls, a <xref:Microsoft.Office.Tools.Word.GroupContentControl> provides no UI that is visible to the user. Its only purpose is to define a region that users cannot edit.  
+ Wenn sich der Bereich, den Sie schützen möchten, nicht innerhalb eines Inhaltssteuerelements befindet, oder wenn Sie einen Bereich schützen möchten, der Inhaltssteuerelemente und andere Inhaltstypen enthält, können Sie den gesamten Bereich in einem <xref:Microsoft.Office.Tools.Word.GroupContentControl> positionieren. Im Gegensatz zu anderen Inhaltssteuerelementen stellt ein <xref:Microsoft.Office.Tools.Word.GroupContentControl> keine Benutzeroberfläche zur Verfügung, die für den Benutzer sichtbar ist. Sein einziger Zweck besteht darin, einen Bereich zu definieren, den Benutzern nicht bearbeiten können.  
   
 > [!NOTE]  
->  If you create a <xref:Microsoft.Office.Tools.Word.GroupContentControl> that contains embedded content controls, the embedded content controls are not automatically protected. You must use the **LockContents** property of each embedded control to prevent users from editing their contents.  
+>  Wenn Sie ein <xref:Microsoft.Office.Tools.Word.GroupContentControl> erstellen, das eingebettete Inhaltssteuerelemente enthält, sind die eingebetteten Inhaltssteuerelemente nicht automatisch geschützt. Verwenden Sie die **LockContents** -Eigenschaft jedes eingebetteten Steuerelements verhindert, dass Benutzer den jeweiligen Inhalt bearbeiten.  
   
- For more information about how to use content controls to protect parts of documents, see [How to: Protect Parts of Documents by Using Content Controls](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md).  
+ Weitere Informationen zur Verwendung von Inhaltssteuerelementen zum Schützen von Teilen von Dokumenten finden Sie unter [wie: Schützen von Teilen von Dokumenten mithilfe von Inhaltssteuerelementen](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md).  
   
-##  <a name="DataBinding"></a> Binding Data to Content Controls  
- You can display data in documents by binding a content control to a data source. When the data source is updated, the content control reflects the changes. You can also save changes back to the data source.  
+##  <a name="DataBinding"></a>Binden von Daten an Inhaltssteuerelemente  
+ Sie können Daten in Dokumenten anzeigen, indem Sie ein Inhaltssteuerelement an eine Datenquelle binden. Wenn die Datenquelle aktualisiert wird, spiegelt das Inhaltssteuerelement die Änderungen. Sie können Änderungen auch in der Datenquelle speichern.  
   
- Content controls provide the following data binding options:  
+ Inhaltssteuerelemente stellen die folgenden Datenbindungsoptionen zur Verfügung:  
   
--   You can bind content controls to database fields or managed objects by using the same data binding model as Windows Forms.  
+-   Sie können Inhaltssteuerelemente an Datenbankfelder oder verwaltete Objekte binden, indem Sie das gleiche Datenbindungsmodell wie Windows Forms verwenden.  
   
--   You can bind content controls to elements in pieces of XML (also named *custom XML parts*) that are embedded in the document.  
+-   Binden von Inhaltssteuerelementen an Elemente in der XML-(auch als *benutzerdefinierte XML-Teile*), die im Dokument eingebettet sind.  
   
- For an overview of binding host controls in Office solutions to data, see [Binding Data to Controls in Office Solutions](../vsto/binding-data-to-controls-in-office-solutions.md).  
+ Einen Überblick über das Binden von Hoststeuerelementen in Office-Projektmappen mit Daten finden Sie unter [Binden von Daten an Steuerelemente in Office-Projektmappen](../vsto/binding-data-to-controls-in-office-solutions.md).  
   
-### <a name="using-the-windows-forms-data-binding-model"></a>Using the Windows Forms Data Binding Model  
- Most content controls support the simple data binding model that Windows Forms uses. Simple data binding means that a control is bound to a single data element, such as a value in a column of a data table. For more information, see [Data Binding and Windows Forms](/dotnet/framework/winforms/data-binding-and-windows-forms).  
+### <a name="using-the-windows-forms-data-binding-model"></a>Verwenden des Windows Forms-Datenbindungsmodells  
+ Die meisten Inhaltssteuerelemente unterstützen das einfache Datenbindungsmodell, das Windows Forms verwendet. Einfache Datenbindung bedeutet, dass ein Steuerelement an ein einzelnes Datenelement gebunden ist, z. B. an einen Wert in einer Spalte einer Datentabelle. Weitere Informationen finden Sie unter [Data Binding and Windows Forms](/dotnet/framework/winforms/data-binding-and-windows-forms).  
   
- In document-level projects, you can bind data to content controls by using the **Data Sources** window in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. For more information about how to add data-bound content controls to documents, see [How to: Populate Documents with Data from a Database](../vsto/how-to-populate-documents-with-data-from-a-database.md) and [How to: Populate Documents with Data from Objects](../vsto/how-to-populate-documents-with-data-from-objects.md).  
+ In Projekten auf Dokumentebene können Sie Daten an Inhaltssteuerelemente binden, indem die **Datenquellen** Fenster in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Weitere Informationen zum Hinzufügen von datengebundenen Inhaltssteuerelementen an Dokumente finden Sie unter [wie: Auffüllen von Dokumenten mit Daten aus einer Datenbank](../vsto/how-to-populate-documents-with-data-from-a-database.md) und [wie: Auffüllen von Dokumenten mit Daten aus Objekten](../vsto/how-to-populate-documents-with-data-from-objects.md).  
   
- The following table lists the content controls that you can bind to each data type in the **Data Sources** window.  
+ Die folgende Tabelle listet die Inhaltssteuerelemente, die Sie für jeden Datentyp in binden können die **Datenquellen** Fenster.  
   
-|Data type|Default content control|Other content controls that can be bound to this data type|  
+|Datentyp|Standard-Inhaltssteuerelement|Andere Inhaltssteuerelemente, die an diesen Datentyp gebunden werden können|  
 |---------------|-----------------------------|----------------------------------------------------------------|  
 |<xref:System.Boolean><br /><br /> <xref:System.Byte><br /><br /> <xref:System.Char><br /><br /> <xref:System.Double><br /><br /> <xref:System.Enum><br /><br /> <xref:System.Guid><br /><br /> <xref:System.Int16><br /><br /> <xref:System.Int32><br /><br /> <xref:System.Int64><br /><br /> <xref:System.SByte><br /><br /> <xref:System.Single><br /><br /> <xref:System.String><br /><br /> <xref:System.TimeSpan><br /><br /> <xref:System.UInt16><br /><br /> <xref:System.UInt32><br /><br /> <xref:System.UInt64>|<xref:Microsoft.Office.Tools.Word.PlainTextContentControl>|<xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.DatePickerContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.RichTextContentControl>|  
 |<xref:System.DateTime>|<xref:Microsoft.Office.Tools.Word.DatePickerContentControl>|<xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.PlainTextContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.RichTextContentControl>|  
-|<xref:System.Drawing.Image><br /><br /> <xref:System.Byte> array|<xref:Microsoft.Office.Tools.Word.PictureContentControl>|None|  
+|<xref:System.Drawing.Image><br /><br /> <xref:System.Byte>-Array|<xref:Microsoft.Office.Tools.Word.PictureContentControl>|Keine|  
   
- In document-level and VSTO Add-in projects, you can bind a content control to a data source programmatically by using the <xref:System.Windows.Forms.ControlBindingsCollection.Add%2A> method of the <xref:System.Windows.Forms.IBindableComponent.DataBindings%2A> property of the control. If you do this, pass in the string **Text** to the *propertyName* parameter of the <xref:System.Windows.Forms.ControlBindingsCollection.Add%2A> method. The **Text** property is the default data binding property of content controls.  
+ In Projekten auf Dokumentebene und VSTO-Add-In-Projekten können Sie ein Inhaltssteuerelement programmgesteuert an eine Datenquelle mithilfe der Methode <xref:System.Windows.Forms.ControlBindingsCollection.Add%2A> der Eigenschaft <xref:System.Windows.Forms.IBindableComponent.DataBindings%2A> des Steuerelements binden. Wenn Sie so vorgehen, übergeben Sie die Zeichenfolge **Text** auf die *PropertyName* Parameter von der <xref:System.Windows.Forms.ControlBindingsCollection.Add%2A> Methode. Die **Text** Eigenschaft ist für die Standard-Datenbindungseigenschaft von Inhaltssteuerelementen.  
   
- Content controls also support two-way data binding, in which changes in the control are updated to the data source. For more information, see [How to: Update a Data Source with Data from a Host Control](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md).  
+ Inhaltssteuerelemente unterstützen auch bidirektionale Datenbindung, bei der Änderungen im Steuerelement in der Datenquelle aktualisiert werden. Weitere Informationen finden Sie unter [How to: Update a Data Source with Data from a Host Control](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md).  
   
 > [!NOTE]  
->  Content controls do not support complex data binding. If you bind a <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> or <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl> to a data source by using the Windows Forms data model, users will see only a single value when they click the control. If you want to bind these controls to a set of data values that users can choose from, you can bind these controls to elements in a custom XML part.  
+>  Inhaltssteuerelemente unterstützen keine komplexe Datenbindung. Wenn Sie ein <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> oder <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl> mithilfe des Windows Forms-Datenmodells an eine Datenquelle binden, wird Benutzern beim Klicken auf das Steuerelement nur ein einziger Wert angezeigt. Wenn Sie diese Steuerelemente an einen Satz von Datenwerten binden möchten, aus denen Benutzer auswählen können, können Sie diese Steuerelemente an Elemente in einem benutzerdefinierten XML-Abschnitt binden.  
   
-### <a name="binding-content-controls-to-custom-xml-parts"></a>Binding Content Controls to Custom XML Parts  
- You can bind some content controls to elements in custom XML parts that are embedded in the document. For more information about custom XML parts, see [Custom XML Parts Overview](../vsto/custom-xml-parts-overview.md).  
+### <a name="binding-content-controls-to-custom-xml-parts"></a>Binden von Inhaltssteuerelementen an benutzerdefinierte XML-Abschnitte  
+ Sie können einige Inhaltssteuerelemente an Elemente in benutzerdefinierten XML-Abschnitten binden, die im Dokument eingebettet sind. Weitere Informationen zu benutzerdefinierten XML-Elementen, finden Sie unter [Übersicht über benutzerdefinierte XML-Teile](../vsto/custom-xml-parts-overview.md).  
   
- To bind a content control to an element in a custom XML part, use the **XMLMapping** property of the control. The following code example demonstrates how to bind a <xref:Microsoft.Office.Tools.Word.PlainTextContentControl> to the `Price` element under the `Product` node in a custom XML part that has already been added to the document.  
+ Wenn Sie ein Inhaltssteuerelement an ein Element in einem benutzerdefinierten XML-Abschnitt binden möchten, verwenden Sie die **XMLMapping** Eigenschaft des Steuerelements. Im folgenden Codebeispiel wird veranschaulicht, wie ein <xref:Microsoft.Office.Tools.Word.PlainTextContentControl> an das Element `Price` unter dem Knoten `Product` in einem benutzerdefinierten XML-Abschnitt gebunden wird, der dem Dokument bereits hinzugefügt wurde.  
   
 ```vb  
 plainTextContentControl1.XMLMapping.SetMapping("/Product/Price")  
@@ -192,11 +189,11 @@ plainTextContentControl1.XMLMapping.SetMapping("/Product/Price")
 plainTextContentControl1.XMLMapping.SetMapping("/Product/Price", String.Empty, null);  
 ```  
   
- For a walkthrough that demonstrates how to bind content controls to custom XML parts in more detail, see [Walkthrough: Binding Content Controls to Custom XML Parts](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md).  
+ Eine exemplarische Vorgehensweise, das Binden von Inhaltssteuerelementen an benutzerdefinierte XML-Abschnitte veranschaulicht, finden Sie unter [Exemplarische Vorgehensweise: Binden von Inhaltssteuerelementen an benutzerdefinierte XML-Abschnitte](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md).  
   
- When you bind a content control to a custom XML part, two-way data binding is automatically enabled. If a user edits text in the control, the corresponding XML elements are automatically updated. Similarly, if element values in the custom XML parts are changed, the content controls that are bound to the XML elements will display the new data.  
+ Wenn Sie ein Inhaltssteuerelement an einen benutzerdefinierten XML-Abschnitt binden, wird die bidirektionale Datenbindung automatisch aktiviert. Wenn ein Benutzer Text im Steuerelement bearbeitet, werden die entsprechenden XML-Elemente automatisch aktualisiert. Wenn Elementwerte in den benutzerdefinierten XML-Abschnitten geändert werden, zeigen die Inhaltssteuerelemente, die an die XML-Elemente gebunden sind, auf ähnliche Weise die neuen Daten an.  
   
- You can bind the following types of content controls to custom XML parts:  
+ Sie können die folgenden Typen von Inhaltssteuerelementen an benutzerdefinierte XML-Abschnitte binden:  
   
 -   <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl>  
   
@@ -208,43 +205,43 @@ plainTextContentControl1.XMLMapping.SetMapping("/Product/Price", String.Empty, n
   
 -   <xref:Microsoft.Office.Tools.Word.PlainTextContentControl>  
   
-### <a name="data-binding-events-for-content-controls"></a>Data Binding Events for Content Controls  
- All content controls provide a set of events that you can handle to perform data-related tasks, such as validating that the text in a control meets certain criteria before the data source is updated. The following table lists the content control events that are related to data binding.  
+### <a name="data-binding-events-for-content-controls"></a>Datenbindungsereignisse für Inhaltssteuerelemente  
+ Alle Inhaltssteuerelemente stellen einen Satz von Ereignissen bereit, die Sie behandeln können, um datenbezogene Aufgaben auszuführen. Sie können z. B. überprüfen, ob der Text in einem Steuerelement bestimmte Kriterien erfüllt, bevor die Datenquelle aktualisiert wird. Die folgende Tabelle listet die Inhaltssteuerelement-Ereignisse auf, die mit der Datenbindung zusammenhängen.  
   
-|Task|Event|  
+|Aufgabe|Ereignis|  
 |----------|-----------|  
-|Run code just before Word automatically updates the text in a content control that is bound to a custom XML part.|<xref:Microsoft.Office.Tools.Word.ContentControlBase.ContentUpdating>|  
-|Run code just before Word automatically updates data in a custom XML part that is bound to a content control (that is, after the text in the content control changes).|<xref:Microsoft.Office.Tools.Word.ContentControlBase.StoreUpdating>|  
-|Run your own code to validate the contents of the control according to custom criteria.|<xref:Microsoft.Office.Tools.Word.ContentControlBase.Validating>|  
-|Run code after the contents of the control have been successfully validated.|<xref:Microsoft.Office.Tools.Word.ContentControlBase.Validated>|  
+|Ausführen von Code , kurz bevor Word automatisch den Text in einem Inhaltssteuerelement aktualisiert, das an einen benutzerdefinierten XML-Abschnitt gebunden ist.|<xref:Microsoft.Office.Tools.Word.ContentControlBase.ContentUpdating>|  
+|Ausführen von Code, kurz bevor Word automatisch die Daten in einem benutzerdefinierten XML-Abschnitt aktualisiert, der an ein Inhaltssteuerelement gebunden ist (d. h. nachdem sich der Text im Inhaltssteuerelement ändert).|<xref:Microsoft.Office.Tools.Word.ContentControlBase.StoreUpdating>|  
+|Ausführen Ihres eigenen Codes, um den Inhalt des Steuerelements gemäß benutzerdefinierten Kriterien zu überprüfen.|<xref:Microsoft.Office.Tools.Word.ContentControlBase.Validating>|  
+|Ausführen von Code, nachdem der Inhalt des Steuerelements erfolgreich überprüft wurde.|<xref:Microsoft.Office.Tools.Word.ContentControlBase.Validated>|  
   
-## <a name="limitations-of-content-controls"></a>Limitations of Content Controls  
- When you use content controls in your Office projects, be aware of the following limitations.  
+## <a name="limitations-of-content-controls"></a>Einschränkungen von Inhaltssteuerelementen  
+ Wenn Sie Inhaltssteuerelemente in Office-Projekten verwenden, beachten Sie auf die folgenden Einschränkungen.  
   
-### <a name="behavior-differences-between-design-time-and-run-time"></a>Behavior Differences Between Design Time and Run Time  
- Many of the limitations that Microsoft Office Word imposes on content controls at run time are not enforced at design time. When you design the UI of a document-level solution in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], be sure to modify content controls only in ways that are supported at run time.  
+### <a name="behavior-differences-between-design-time-and-run-time"></a>Unterschiede im Verhalten zwischen Entwurfs- und Laufzeit  
+ Viele der Einschränkungen, die Microsoft Office Word-Inhaltssteuerelementen zur Laufzeit auferlegt, werden zur Entwurfszeit nicht erzwungen. Beim Entwerfen der Benutzeroberfläche einer Projektmappe auf Dokumentebene in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] sollten Sie Inhaltssteuerelemente nur auf eine Weise ändern, die zur Laufzeit unterstützt wird.  
   
- If you modify a content control at design time in a way that the control does not support at run time, the [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] designer will not alert you of the unsupported changes. However, when you debug or run the project, or if you save and then reopen the project, Word will display an error message and request permission to repair the document. When you repair the document, Word removes all unsupported content and formatting from the control.  
+ Wenn Sie ein Inhaltssteuerelement zur Entwurfszeit auf eine Weise ändern, die das Steuerelement zur Laufzeit nicht unterstützt, warnt Sie der [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]-Designer nicht vor den nicht unterstützten Änderungen. Allerdings wird beim Debuggen oder Ausführen des Projekts oder beim Speichern und erneuten Öffnen des Projekts von Word eine Fehlermeldung angezeigt und die Berechtigung zum Reparieren des Dokuments angefordert. Wenn Sie das Dokument reparieren, entfernt Word alle nicht unterstützten Inhalte und Formatierungen aus dem Steuerelement.  
   
- For example, Word does not prevent you from adding a table to a <xref:Microsoft.Office.Tools.Word.PlainTextContentControl> at design time. However, because <xref:Microsoft.Office.Tools.Word.PlainTextContentControl> objects cannot contain tables at run time, Word will display an error message when the document is opened.  
+ Word verhindert z. B. nicht, dass Sie einem <xref:Microsoft.Office.Tools.Word.PlainTextContentControl> zur Entwurfszeit eine Tabelle hinzufügen. Da <xref:Microsoft.Office.Tools.Word.PlainTextContentControl>-Objekte jedoch zur Laufzeit keine Tabellen enthalten dürfen, zeigt Word eine Fehlermeldung an, wenn das Dokument geöffnet wird.  
   
- Also note that many properties that define the behavior of content controls have no effect at design time. For example, if you set the **LockContents** property of a content control to **True** at design time, you can still edit text in the control in the [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] designer. This property only prevents users from editing the control at run time.  
+ Beachten Sie außerdem, dass viele Eigenschaften, die das Verhalten von Inhaltssteuerelementen definieren, zur Entwurfszeit keine Auswirkungen besitzen. Wenn Sie festlegen, z. B. die **LockContents** Eigenschaft eines Inhaltssteuerelements an **"true"** zur Entwurfszeit können Sie weiterhin Text im Steuerelement Bearbeiten der [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Designer. Diese Eigenschaft verhindert nur, dass Benutzer das Steuerelement zur Laufzeit bearbeiten können.  
   
-### <a name="event-limitations"></a>Event Limitations  
- Content controls do not provide an event that is raised when the user changes text or other items in the control. For example, there is no event that is raised when a user selects a different item in a <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> or <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl>.  
+### <a name="event-limitations"></a>Ereigniseinschränkungen  
+ Inhaltssteuerelemente stellen kein Ereignis zur Verfügung, das ausgelöst wird, wenn der Benutzer Text oder andere Elemente im Steuerelement ändert. Es ist z. B. kein Ereignis vorhanden, das ausgelöst wird, wenn ein Benutzer ein anderes Element in einem <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> oder <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl> auswählt.  
   
- To determine when a user edits the contents of a content control, you can bind the control to a custom XML part, and then handle the <xref:Microsoft.Office.Tools.Word.ContentControlBase.StoreUpdating> event. This event is raised when the user changes the contents of a control that is bound to a custom XML part. For a walkthrough that demonstrates how to bind a content control to a custom XML part, see [Walkthrough: Binding Content Controls to Custom XML Parts](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md).  
+ Wenn Sie ermitteln möchten, wenn ein Benutzer den Inhalt eines Inhaltssteuerelements bearbeitet, können Sie das Steuerelement an einen benutzerdefinierten XML-Abschnitt binden und dann das Ereignis <xref:Microsoft.Office.Tools.Word.ContentControlBase.StoreUpdating> behandeln. Dieses Ereignis wird ausgelöst, wenn der Benutzer den Inhalt eines Steuerelements ändert, das an einen benutzerdefinierten XML-Abschnitt gebunden ist. Eine exemplarische Vorgehensweise, die zeigt, wie Sie ein Inhaltssteuerelement an einen benutzerdefinierten XML-Abschnitt binden, finden Sie unter [Exemplarische Vorgehensweise: Binden von Inhaltssteuerelementen an benutzerdefinierte XML-Abschnitte](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md).  
   
-###  <a name="checkbox"></a> Check Box Content Controls in Word Projects  
- Word 2010 introduced a new type of content control that represents a check box. However, the [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] does not provide a corresponding CheckBoxContentControl type for you to use in Office projects. To create a check box content control in a [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] or Word 2010 project, use the <xref:Microsoft.Office.Tools.Word.ControlCollection.AddContentControl%2A> method to create a <xref:Microsoft.Office.Tools.Word.ContentControl> object, and pass the <xref:Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlCheckBox> value to the method to specify a check box content control. The following code example demonstrates how to do this.  
+###  <a name="checkbox"></a>Kontrollkästchen Sie-Inhaltssteuerelemente in Word-Projekten  
+ Mit Word 2010 wurde eine neue Art von Steuerelement eingeführt, das ein Kontrollkästchen darstellt. Allerdings die [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] bietet keinen entsprechenden CheckBoxContentControl-Typ für die Sie in Office-Projekten verwenden. Verwenden Sie zum Erstellen eines Kontrollkästchen-Inhaltssteuerelements in einem [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)]- oder Word 2010-Projekt die Methode <xref:Microsoft.Office.Tools.Word.ControlCollection.AddContentControl%2A> zum Erstellen eines <xref:Microsoft.Office.Tools.Word.ContentControl>-Objekts, und übergeben Sie den Wert <xref:Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlCheckBox> an die Methode, um ein Kontrollkästchen-Inhaltssteuerelement anzugeben. Das folgende Codebeispiel veranschaulicht, wie Sie dabei vorgehen:  
   
- [!code-vb[Trin_ContentControlReference#800](../vsto/codesnippet/VisualBasic/trin_contentcontrolreference/checkbox.vb#800)] [!code-csharp[Trin_ContentControlReference#800](../vsto/codesnippet/CSharp/trin_wordcontentcontrolreference/checkbox.cs#800)]  
+ [!code-vb[Trin_ContentControlReference#800](../vsto/codesnippet/VisualBasic/trin_contentcontrolreference/checkbox.vb#800)]
+ [!code-csharp[Trin_ContentControlReference#800](../vsto/codesnippet/CSharp/trin_wordcontentcontrolreference/checkbox.cs#800)]  
   
-## <a name="see-also"></a>See Also  
- [Automating Word by Using Extended Objects](../vsto/automating-word-by-using-extended-objects.md)   
- [How to: Add Content Controls to Word Documents](../vsto/how-to-add-content-controls-to-word-documents.md)   
- [Walkthrough: Creating a Template By Using Content Controls](../vsto/walkthrough-creating-a-template-by-using-content-controls.md)   
- [Data in Office Solutions](../vsto/data-in-office-solutions.md)   
- [Binding Data to Controls in Office Solutions](../vsto/binding-data-to-controls-in-office-solutions.md)   
- [Programmatic Limitations of Host Items and Host Controls](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
-
+## <a name="see-also"></a>Siehe auch  
+ [Automatisieren von Word mithilfe von erweiterten Objekten](../vsto/automating-word-by-using-extended-objects.md)   
+ [Vorgehensweise: Hinzufügen von Inhaltssteuerelementen zu Word-Dokumenten](../vsto/how-to-add-content-controls-to-word-documents.md)   
+ [Exemplarische Vorgehensweise: Erstellen einer Vorlage mithilfe von Inhaltssteuerelementen](../vsto/walkthrough-creating-a-template-by-using-content-controls.md)   
+ [Daten in Office-Projektmappen](../vsto/data-in-office-solutions.md)   
+ [Binden von Daten an Steuerelemente in Office-Projektmappen](../vsto/binding-data-to-controls-in-office-solutions.md)   
+ [Programmgesteuerte Einschränkungen von Hostelementen und Hoststeuerelementen](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  

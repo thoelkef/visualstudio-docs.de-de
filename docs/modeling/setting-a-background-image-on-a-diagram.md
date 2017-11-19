@@ -1,64 +1,66 @@
 ---
-title: "Festlegen eines Hintergrundbilds f&#252;r ein Diagramm | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: Festlegen eines Hintergrundbilds in einem Diagramm | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: e334a24c-8521-4072-b50f-e59158dde145
-caps.latest.revision: 2
-author: "alancameronwills"
-ms.author: "awills"
-manager: "douge"
-caps.handback.revision: 2
+caps.latest.revision: "2"
+author: alancameronwills
+ms.author: awills
+manager: douge
+ms.openlocfilehash: 13e52e30ebeda4d881474bcf990068d1a92bb7f4
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# Festlegen eines Hintergrundbilds f&#252;r ein Diagramm
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Im Visualisierungs\- und Modellierungs\-SDK von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] können Sie das Hintergrundbild für einen generierten Designer mithilfe von benutzerdefiniertem Code festlegen.  
+# <a name="setting-a-background-image-on-a-diagram"></a>Festlegen eines Hintergrundbilds für ein Diagramm
+Im Visualisierungs- und Modellierungs-SDK von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] können Sie das Hintergrundbild für einen generierten Designer mithilfe von benutzerdefiniertem Code festlegen.  
   
-## Festlegen des Hintergrundbildes  
+## <a name="setting-the-background-image"></a>Festlegen des Hintergrundbildes  
   
-#### So legen Sie ein Hintergrundbild für einen generierten Designer fest  
+#### <a name="to-set-a-background-image-for-a-generated-designer"></a>So legen Sie ein Hintergrundbild für einen generierten Designer fest  
   
-1.  Kopieren Sie die Bilddatei, die Sie als Diagrammhintergrund verwenden möchten, in das Verzeichnis "Dsl\\Resources" des aktuellen Projekts.  
+1.  Kopieren Sie die Bilddatei, die Sie als Diagrammhintergrund verwenden möchten, in das Verzeichnis "Dsl\Resources" des aktuellen Projekts.  
   
-2.  Klicken Sie im **Projektmappen\-Explorer** mit der rechten Maustaste auf den Ordner "Dsl\\Resources", zeigen Sie auf **Hinzufügen**, und klicken Sie anschließend auf **Vorhandenes Element**.  
+2.  In **Projektmappen-Explorer**mit der rechten Maustaste auf den Ordner Dsl\Resources, zeigen Sie auf **hinzufügen**, und klicken Sie dann auf **vorhandenes Element**.  
   
-3.  Navigieren Sie im Dialogfeld **Vorhandenes Element hinzufügen** zum Ordner "Dsl\\Resources".  
+3.  In der **vorhandenes Element hinzufügen** (Dialogfeld), navigieren Sie zu dem Ordner Dsl\Resources.  
   
-4.  Klicken Sie in der Dropdownliste **Dateityp** auf **Bilddateien**.  
+4.  In der **Dateityp** auf **Bilddateien**.  
   
-5.  Klicken Sie auf die Bilddatei, die Sie in das Verzeichnis kopiert haben, und klicken Sie dann auf **Hinzufügen**.  
+5.  Klicken Sie auf die Bilddatei, die Sie in das Verzeichnis kopiert, und klicken Sie dann auf **hinzufügen**.  
   
-6.  Klicken Sie mit der rechten Maustaste auf "Dsl", und klicken Sie auf **Eigenschaften**, um die Eigenschaften des Projekts "Dsl" zu öffnen.  
+6.  Mit der rechten Maustaste Dsl, und klicken Sie auf **Eigenschaften** um die Eigenschaften des Projekts Dsl öffnen.  
   
-7.  Klicken Sie auf der Registerkarte **Ressourcen** auf **Dieses Projekt enthält keine Standardressourcendatei. Klicken Sie hier, um eine zu erstellen.**  
+7.  Auf der **Ressourcen** auf **dieses Projekt enthält keine Standarddatei für die Ressourcen. Klicken Sie hier, um eine zu erstellen.**  
   
-8.  Fügen Sie die Bilddatei der Ressourcendatei hinzu, indem Sie das Bild aus dem **Projektmappen\-Explorer** in das Ressourcenfenster ziehen.  
+8.  Fügen Sie die Bilddatei in der Ressourcendatei durch Ziehen das Bild aus **Projektmappen-Explorer** in den Ressourcen-Fenster.  
   
 9. Öffnen Sie das Menü "Datei", und klicken Sie auf die Option zum Speichern der Projekteigenschaften.  
   
-10. Prüfen Sie, ob die Datei "Dsl\\Properties\\Resources.resx" vorhanden ist und die Datei "Resources.Designer.cs" enthält.  
+10. Prüfen Sie, ob die Datei "Dsl\Properties\Resources.resx" vorhanden ist und die Datei "Resources.Designer.cs" enthält.  
   
-11. Wenn "Resources.Designer.cs" fehlt, klicken Sie im **Projektmappen\-Explorer** auf die Datei "Resources.resx".  
+11. Wenn Resources.Designer.cs nicht vorhanden ist, klicken Sie auf die Datei "Resources.resx" in **Projektmappen-Explorer**.  
   
-12. Legen Sie im Fenster **Eigenschaften** für die `Custom Tool`\-Eigenschaft den Wert `ResXFileCodeGenerator` fest.  
+12. In der **Eigenschaften** legen die `Custom Tool` Eigenschaft `ResXFileCodeGenerator`.  
   
-13. Klicken Sie im **Projektmappen\-Explorer** mit der rechten Maustaste auf das Projekt "Dsl", zeigen Sie auf **Hinzufügen**, und klicken Sie dann auf **Neuer Ordner**.  
+13. In **Projektmappen-Explorer**mit der rechten Maustaste auf das Projekt Dsl, zeigen Sie auf **hinzufügen**, und klicken Sie auf **neuer Ordner**.  
   
-14. Geben Sie dem Ordner den Namen "Custom".  
+14. Benennen Sie den Ordner **benutzerdefinierte**.  
   
-15. Klicken Sie mit der rechten Maustaste auf den Ordner "Custom", zeigen Sie auf **Hinzufügen**, und klicken Sie auf **Neues Element**.  
+15. Mit der rechten Maustaste in des benutzerdefinierten Ordners, zeigen Sie auf **hinzufügen**, und klicken Sie auf **neues Element**.  
   
-16. Klicken Sie im Dialogfeld **Neues Element hinzufügen** im Feld **Vorlagen** auf **Codedatei**.  
+16. In der **neues Element hinzufügen** Dialogfeld die **Vorlagen** auf **Codedatei**.  
   
-17. Geben Sie Feld **Name** den Dateinamen `BackgroundImage.cs` ein, und klicken Sie auf **Hinzufügen**.  
+17. In der **Namen** geben `BackgroundImage.cs`, und klicken Sie auf **hinzufügen**.  
   
-18. Kopieren Sie den folgenden Code in die Datei "BackgroundImage.cs", und passen Sie den Namespace, den Diagrammklassennamen und den Bilddatei\-Ressourcennamen an.  
+18. Kopieren Sie den folgenden Code in die Datei "BackgroundImage.cs", und passen Sie den Namespace, den Diagrammklassennamen und den Bilddatei-Ressourcennamen an.  
   
-     Ersetzen Sie "MyDiagramClass" durch den Namen der partiellen Diagrammklasse, die in "Dsl\\GeneratedCode\\Diagrams.cs" definiert ist.  Den richtigen Namespace können Sie auch aus der Datei "Dsl\\GeneratedCode\\Diagrams.cs" abrufen.  
+     Ersetzen Sie "MyDiagramClass" durch den Namen der partiellen Diagrammklasse, die in "Dsl\GeneratedCode\Diagrams.cs" definiert ist. Den richtigen Namespace können Sie auch aus der Datei "Dsl\GeneratedCode\Diagrams.cs" abrufen.  
   
     ```  
     using System;  
@@ -99,10 +101,12 @@ Im Visualisierungs\- und Modellierungs\-SDK von [!INCLUDE[vsprvs](../code-qualit
     }  
     ```  
   
-     Weitere Informationen zum Anpassen des Modells mit Programmcode finden Sie unter [Navigieren in und Aktualisieren von Modellen im Programmcode](../modeling/navigating-and-updating-a-model-in-program-code.md).  
+     Weitere Informationen zum Anpassen des Modells mit Programmcode finden Sie unter [Navigieren in und Aktualisieren eines Modells im Programmcode](../modeling/navigating-and-updating-a-model-in-program-code.md).  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Definieren von Formen und Konnektoren](../modeling/defining-shapes-and-connectors.md)   
- [Anpassen von Text\- und Image\-Feldern](../modeling/customizing-text-and-image-fields.md)   
- [Navigieren in und Aktualisieren von Modellen im Programmcode](../modeling/navigating-and-updating-a-model-in-program-code.md)   
+ [Anpassen von Text- und Image-Felder](../modeling/customizing-text-and-image-fields.md)   
+ [Navigieren in und Aktualisieren eines Modells im Programmcode](../modeling/navigating-and-updating-a-model-in-program-code.md)   
  [Schreiben von Code zum Anpassen einer domänenspezifischen Sprache](../modeling/writing-code-to-customise-a-domain-specific-language.md)
+ 
+[!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]

@@ -1,34 +1,35 @@
 ---
-title: "Debuggen von Beispielcode f&#252;r HTML, CSS und JavaScript | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
+title: Debuggen von HTML, CSS und JavaScript-Beispielcode | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
 ms.assetid: 51893967-98c8-4141-ba40-03646f221760
-caps.latest.revision: 13
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 762caca321cdda941fd295306fdfdf73e03b0aae
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Debuggen von Beispielcode f&#252;r HTML, CSS und JavaScript
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-![Gilt für Windows und Windows Phone](~/debugger/media/windows_and_phone_content.png "windows\_and\_phone\_content")  
+# <a name="debug-html-css-and-javascript-sample-code"></a>Debuggen von Beispielcode für HTML, CSS und JavaScript
+![Gilt für Windows und Windows Phone](../debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
   
- Der Code in diesem Thema ist die Beispieldatei für [Schnellstart: Debuggen von HTML und CSS](../debugger/quickstart-debug-html-and-css.md).  Die Fehler, die im QuickStart vorhanden sind, werden in dieser Version des Codes behoben.  
+ Der Code in diesem Thema ist die Beispieldatei für [Schnellstart: Debuggen von HTML und CSS-](../debugger/quickstart-debug-html-and-css.md). Die Fehler, die im QuickStart vorhanden sind, werden in dieser Version des Codes behoben.  
   
-## Beispielcode  
- Der folgende HTML\-Code wird im \<body\>\-Tag im Schnellstart verwendet.  
+## <a name="sample-code"></a>Beispielcode  
+ Der folgende HTML-Code wird verwendet, der \<Body >-Tag im Schnellstart.  
   
 ```html  
 <div id="flipTemplate" data-win-control="WinJS.Binding.Template"  
@@ -52,7 +53,7 @@ caps.handback.revision: 13
 }  
 ```  
   
- Im folgenden Codebeispiel wird der vollständige JavaScript\-Code in default.js dargestellt.  Die Verweise auf WinJS\-Namespaces für diesen Code befinden sich in der Datei "default.html" der Vorlage.  
+ Im folgenden Codebeispiel wird der vollständige JavaScript-Code in default.js dargestellt. Die Verweise auf WinJS-Namespaces für diesen Code befinden sich in der Vorlagendatei "default.HTML".  
   
 ```javascript  
 (function () {  
@@ -103,5 +104,5 @@ caps.handback.revision: 13
 })();  
 ```  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Schnellstart: Debuggen von HTML und CSS](../debugger/quickstart-debug-html-and-css.md)

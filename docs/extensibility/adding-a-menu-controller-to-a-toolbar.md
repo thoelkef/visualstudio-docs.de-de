@@ -1,48 +1,50 @@
 ---
-title: "Hinzuf&#252;gen eines Controllers im Men&#252; auf einer Symbolleiste | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Symbolleisten [Visual Studio], Hinzufügen von Controllern im Menü"
-  - "Menüs, Symbolleisten im Menücontroller hinzufügen"
-  - "Menücontroller hinzufügen zu Symbolleisten"
+title: "Hinzufügen einer Symbolleiste ein Menücontroller | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- toolbars [Visual Studio], adding menu controllers
+- menus, adding menu controllers to toolbars
+- menu controllers, adding to toolbars
 ms.assetid: 6af9b0b4-037f-404c-bb40-aaa1970768ea
-caps.latest.revision: 38
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 38
+caps.latest.revision: "38"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 786d7c8841f680d5af5c539e30723289df4db0f5
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Hinzuf&#252;gen eines Controllers im Men&#252; auf einer Symbolleiste
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Diese exemplarische Vorgehensweise baut auf den [Ein Toolfenster hinzugefügt eine Symbolleiste](../extensibility/adding-a-toolbar-to-a-tool-window.md) Exemplarische Vorgehensweise und veranschaulicht das Hinzufügen ein Controllers im Menü auf der Symbolleiste des Toolfensters. Die hier gezeigten Schritte auch können angewendet werden auf die Symbolleiste, die in erstellt haben, wird die [Hinzufügen einer Symbolleiste](../extensibility/adding-a-toolbar.md) Exemplarische Vorgehensweise.  
+# <a name="adding-a-menu-controller-to-a-toolbar"></a>Eine Symbolleiste hinzugefügt ein Menücontroller
+Diese exemplarische Vorgehensweise basiert auf der [ein Toolfenster eine Symbolleiste hinzugefügt](../extensibility/adding-a-toolbar-to-a-tool-window.md) Exemplarische Vorgehensweise und gezeigt, wie die Symbolleiste des Toolfensters ein Menücontroller hinzugefügt. Die hier gezeigten Schritte auch können angewendet werden auf der Symbolleiste, die in erstellt haben, ist die [Hinzufügen einer Symbolleiste](../extensibility/adding-a-toolbar.md) Exemplarische Vorgehensweise.  
   
- Ein Menü\-Controller ist ein Split\-Steuerelement. Zeigt den zuletzt verwendeten Befehl an der linken Seite des Controllers im Menü aus, und klicken Sie auf ausgeführt werden kann. Rechts neben den Menü\-Controller wird als Pfeil dargestellt, die durch Klicken auf eine Liste mit zusätzlichen Befehlen geöffnet. Wenn Sie einen Befehl in der Liste der Befehl ausgeführt wird, klicken Sie auf, und den Befehl auf der linken Seite des Controllers im Menü ersetzt. Auf diese Weise arbeitet der Controller im Menü wie eine Befehlsschaltfläche, die immer die zuletzt verwendeten Befehl in einer Liste anzeigt.  
+ Ein Menücontroller ist ein Split-Steuerelement. Der linken Seite des Controllers im Menü werden mit dem zuletzt verwendete Befehl und es kann ausgeführt werden, indem Sie darauf klicken. Rechts neben den Menücontroller wird als Pfeil dargestellt, die durch Klicken auf eine Liste mit zusätzlichen Befehlen geöffnet. Wenn Sie einen Befehl in der Liste der Befehl ausgeführt wird, klicken Sie auf, und den Befehl auf der linken Seite des Controllers Menü ersetzt. Auf diese Weise funktioniert die Menücontroller, wie eine Befehlsschaltfläche, die immer die zuletzt verwendeten Befehl aus einer Liste anzeigt.  
   
- Menücontroller können in Menüs angezeigt werden, aber am häufigsten auf Symbolleisten verwendet werden.  
+ Menüsteuerelemente können auf Menüs angezeigt werden, aber sie werden am häufigsten verwendet, auf der Symbolleiste.  
   
-## Vorbereitungsmaßnahmen  
- Starten in Visual Studio 2015, führen Sie Sie nicht Visual Studio SDK aus dem Downloadcenter installieren. Er ist als optionales Feature in Visual Studio\-Setup enthalten. Sie können auch später im Visual Studio SDK installieren. Weitere Informationen finden Sie unter [Das Visual Studio SDK installieren](../extensibility/installing-the-visual-studio-sdk.md).  
+## <a name="prerequisites"></a>Erforderliche Komponenten  
+ Ab Visual Studio 2015, führen Sie Sie nicht Visual Studio-SDK aus dem Downloadcenter installieren. Sie ist als optionales Feature in Visual Studio-Setup aus. Sie können das VS-SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren von Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
-## Erstellen eines Controllers im Menü  
+## <a name="creating-a-menu-controller"></a>Erstellen ein Menücontroller  
   
-#### Zum Erstellen eines Controllers im Menü  
+#### <a name="to-create-a-menu-controller"></a>So erstellen ein Menücontroller  
   
-1.  Führen Sie die beschriebenen Schritte [Ein Toolfenster hinzugefügt eine Symbolleiste](../extensibility/adding-a-toolbar-to-a-tool-window.md) ein Toolfenster erstellen, die eine Symbolleiste enthält.  
+1.  Führen Sie die in beschriebenen Verfahren [ein Toolfenster eine Symbolleiste hinzugefügt](../extensibility/adding-a-toolbar-to-a-tool-window.md) ein Toolfenster erstellen, die eine Symbolleiste hat.  
   
-2.  Finden Sie in TWTestCommandPackage.vsct im Abschnitt Symbole. Im Element GuidSymbol **GuidTWTestCommandPackageCmdSet**, der Menü\-Controller, Controller Menügruppe und drei Menüelemente deklariert.  
+2.  TWTestCommandPackage.vsct wechseln Sie zum Abschnitt Symbole. In der GuidSymbol-Element mit dem Namen **GuidTWTestCommandPackageCmdSet**, Ihre Menücontroller, Menü-Domänencontrollergruppe und drei Menüelemente deklariert.  
   
     ```xml  
     <IDSymbol name="TestMenuController" value="0x1300" /><IDSymbol name="TestMenuControllerGroup" value="0x1060" /><IDSymbol name="cmdidMCItem1" value="0x0130" /><IDSymbol name="cmdidMCItem2" value="0x0131" /><IDSymbol name="cmdidMCItem3" value="0x0132" />  
     ```  
   
-3.  Klicken Sie im Abschnitt Menüs nach dem der letzte Menüeintrag im definieren Sie den Menü\-Controller als Menü.  
+3.  Definieren Sie im Abschnitt Menüs nach der letzten Menüeintrag der Menücontroller als Menü.  
   
     ```xml  
     <Menu guid="guidTWTestCommandPackageCmdSet" id="TestMenuController" priority="0x0100" type="MenuController">  
@@ -57,9 +59,9 @@ Diese exemplarische Vorgehensweise baut auf den [Ein Toolfenster hinzugefügt ei
     </Menu>  
     ```  
   
-     Die `TextChanges` und `TextIsAnchorCommand` Flags So aktivieren Sie den Controller im Menü entsprechend den zuletzt ausgewählten Befehl eingeschlossen werden müssen.  
+     Die `TextChanges` und `TextIsAnchorCommand` Flags So aktivieren Sie die Menücontroller entsprechend den letzten ausgewählten Befehl eingeschlossen werden müssen.  
   
-4.  Fügen Sie in den Gruppen hinter dem letzten Eintrag für die Gruppe im Abschnitt verwenden zu können, die Gruppe der Menü\-Controller.  
+4.  Fügen Sie in den Gruppen nach der letzten Gruppe Eintrag im Abschnitt verwenden zu können, im Menü-Controller-Gruppe.  
   
     ```xml  
     <Group guid="guidTWTestCommandPackageCmdSet" id="TestMenuControllerGroup" priority="0x000">  
@@ -67,9 +69,9 @@ Diese exemplarische Vorgehensweise baut auf den [Ein Toolfenster hinzugefügt ei
     </Group>  
     ```  
   
-     Alle Befehle, die in dieser Gruppe platziert werden durch Festlegen des Menü\-Controllers als übergeordnetes Element, im Controller im Menü angezeigt. Die `priority` Attribut ausgelassen wird, die wird auf den Standardwert 0, da es die einzige Gruppe auf dem Menü Controller sein wird.  
+     Alle Befehle, die in dieser Gruppe platziert werden durch Festlegen der Menücontroller als übergeordnetes Element, im Menücontroller im angezeigt. Die `priority` Attribut weggelassen wird, wodurch er auf den Standardwert 0, da es die einzige Gruppe auf dem Menücontroller im werden.  
   
-5.  Fügen Sie im Abschnitt Schaltflächen hinter dem letzten Eintrag für die Schaltfläche ein Button\-Element für jedes der Menüelemente im aus.  
+5.  Fügen Sie Schaltflächen im Abschnitt hinter dem letzten Eintrag für die Schaltfläche ein Button-Element für jedes der Menüelemente im hinzu.  
   
     ```xml  
     <Button guid="guidTWTestCommandPackageCmdSet" id="cmdidMCItem1" priority="0x0000" type="Button">  
@@ -101,35 +103,35 @@ Diese exemplarische Vorgehensweise baut auf den [Ein Toolfenster hinzugefügt ei
     </Button>  
     ```  
   
-6.  An diesem Punkt können Sie den Controller im Menü anzeigen. Erstellen Sie das Projekt, und starten Sie das Debugging. Die experimentelle Instanz sollte angezeigt werden.  
+6.  An diesem Punkt können Sie die Menücontroller betrachten. Erstellen Sie das Projekt, und starten Sie das Debugging. Die experimentelle Instanz sollte angezeigt werden.  
   
-    1.  Auf der **Anzeigen \/ andere Fenster** öffnen Sie im Menü **Test im**.  
+    1.  Auf der **Ansicht / Weitere Fenster** öffnen Sie im Menü **Test (Toolfenster)**.  
   
-    2.  Der Menü\-Controller wird auf der Symbolleiste im Toolfenster angezeigt.  
+    2.  Der Menücontroller im wird auf der Symbolleiste im Toolfenster angezeigt.  
   
     3.  Klicken Sie auf den Pfeil auf der rechten Seite des Controllers im Menü auf die drei möglichen Befehle finden Sie unter.  
   
-     Beachten Sie, dass wenn Sie einen Befehl klicken, wird der Titel des Controllers im Menü geändert, um diesen Befehl anzuzeigen. In im nächsten Abschnitt fügen wir den Code, um diese Befehle zu aktivieren.  
+     Beachten Sie, dass wenn Sie einen Befehl klicken, wird der Titel des Controllers im Menü zum Anzeigen dieser Befehls ändert. Im nächsten Abschnitt werden wir den Code, um diese Befehle aktivieren hinzufügen.  
   
-## Implementieren die Controller\-Menübefehle  
+## <a name="implementing-the-menu-controller-commands"></a>Implementieren die Menübefehle-Controller  
   
-1.  Fügen Sie in TWTestCommandPackageGuids.cs Befehls\-IDs für die drei Menüelemente nach den vorhandenen Befehls\-IDs.  
+1.  Fügen Sie im TWTestCommandPackageGuids.cs Befehls-IDs für die drei Menüelemente nach den vorhandenen Befehls-IDs.  
   
-    ```c#  
-    public const int cmdidMCItem1 = 0x130;  
-    public const int cmdidMCItem2 = 0x131;  
-    public const int cmdidMCItem3 = 0x132;  
+    ```csharp  
+    public const int cmdidMCItem1 = 0x130;  
+    public const int cmdidMCItem2 = 0x131;  
+    public const int cmdidMCItem3 = 0x132;  
     ```  
   
-2.  Fügen Sie in TWTestCommand.cs den folgenden Code am Anfang der TWTestCommand\-Klasse.  
+2.  Fügen Sie in TWTestCommand.cs den folgenden Code am Anfang der TWTestCommand-Klasse.  
   
-    ```c#  
-    private int currentMCCommand; // The currently selected menu controller command  
+    ```csharp  
+    private int currentMCCommand; // The currently selected menu controller command  
     ```  
   
-3.  In den TWTestCommand\-Konstruktor nach dem letzten Aufruf der `AddCommand` \-Methode Code hinzufügen, um die Ereignisse für jeden Befehl über die gleichen Handler weitergeleitet.  
+3.  Im Konstruktor TWTestCommand nach dem letzten Aufruf von der `AddCommand` -Methode Code hinzufügen, um die Ereignisse für jeden Befehl über die gleichen Handler weiterzuleiten.  
   
-    ```c#  
+    ```csharp  
     for (int i = TWTestCommandPackageGuids.cmdidMCItem1; i <=  
         TWTestCommandPackageGuids.cmdidMCItem3; i++)  
     {  
@@ -139,7 +141,7 @@ Diese exemplarische Vorgehensweise baut auf den [Ein Toolfenster hinzugefügt ei
           EventHandler(OnMCItemClicked), cmdID);  
         mc.BeforeQueryStatus += new EventHandler(OnMCItemQueryStatus);  
         commandService.AddCommand(mc);  
-        // The first item is, by default, checked.   
+        // The first item is, by default, checked.   
         if (TWTestCommandPackageGuids.cmdidMCItem1 == i)  
         {  
             mc.Checked = true;  
@@ -148,10 +150,10 @@ Diese exemplarische Vorgehensweise baut auf den [Ein Toolfenster hinzugefügt ei
     }  
     ```  
   
-4.  Fügen Sie einen Ereignishandler, um die TWTestCommand\-Klasse, um den ausgewählten Befehl als überprüft markieren.  
+4.  Fügen Sie einen Ereignishandler, um die TWTestCommand-Klasse, um den ausgewählten Befehl als überprüft markiert.  
   
-    ```c#  
-    private void OnMCItemQueryStatus(object sender, EventArgs e)  
+    ```csharp  
+    private void OnMCItemQueryStatus(object sender, EventArgs e)  
     {  
         OleMenuCommand mc = sender as OleMenuCommand;  
         if (null != mc)  
@@ -161,10 +163,10 @@ Diese exemplarische Vorgehensweise baut auf den [Ein Toolfenster hinzugefügt ei
     }  
     ```  
   
-5.  Fügen Sie einen Ereignishandler, der eine MessageBox anzeigt, bei der Auswahl eines Befehls im Menü\-Controller:  
+5.  Fügen Sie einen Ereignishandler, der eine MessageBox anzeigt, wenn der Benutzer einen Befehl auf dem Menücontroller im auswählt:  
   
-    ```c#  
-    private void OnMCItemClicked(object sender, EventArgs e)  
+    ```csharp  
+    private void OnMCItemClicked(object sender, EventArgs e)  
     {  
         OleMenuCommand mc = sender as OleMenuCommand;  
         if (null != mc)  
@@ -211,20 +213,20 @@ Diese exemplarische Vorgehensweise baut auf den [Ein Toolfenster hinzugefügt ei
     }  
     ```  
   
-## Testen den Controller im Menü  
+## <a name="testing-the-menu-controller"></a>Testen der Menücontroller  
   
 1.  Erstellen Sie das Projekt, und starten Sie das Debugging. Die experimentelle Instanz sollte angezeigt werden.  
   
-2.  Öffnen Sie die **Test im** auf der **Anzeigen \/ Weitere Fenster** Menü.  
+2.  Öffnen der **Test (Toolfenster)** auf die **Ansicht / Weitere Fenster** Menü.  
   
-     Der Controller im Menü auf der Symbolleiste im Toolfenster angezeigt und zeigt **MC Element 1**.  
+     Der Menücontroller im angezeigt wird, in der Symbolleiste auf das Toolfenster und zeigt **MC Element 1**.  
   
-3.  Klicken Sie auf die Schaltfläche auf der linken Seite des Pfeils Controller.  
+3.  Klicken Sie auf die Menüschaltfläche Controller auf der linken Seite des Pfeils.  
   
-     Drei Elemente enthält, sollte das erste Argument ausgewählt ist und verfügt über ein Highlight\-Feld, um dessen Symbol angezeigt werden. Klicken Sie auf **MC Element 3**.  
+     Das erste ausgewählt ist, und verfügt über eine Markierungsfeld, um das Symbol sollte drei Elemente angezeigt werden. Klicken Sie auf **MC Element 3**.  
   
-     Ein Dialogfeld mit der Meldung **ausgewählten Menü Controller Element 3**. Beachten Sie, dass die Nachricht den Text auf die Schaltfläche Controller entspricht. Die Controller\-Schaltfläche zeigt nun **MC Element 3**.  
+     Ein Dialogfeld wird angezeigt, mit der Meldung **Menücontroller Element 3 gewählte**. Beachten Sie, dass die Meldung für den Text auf die Menüschaltfläche Controller entspricht. Zeigt die Menüschaltfläche Controller jetzt **MC Element 3**.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Ein Toolfenster hinzugefügt eine Symbolleiste](../extensibility/adding-a-toolbar-to-a-tool-window.md)   
  [Hinzufügen einer Symbolleiste](../extensibility/adding-a-toolbar.md)

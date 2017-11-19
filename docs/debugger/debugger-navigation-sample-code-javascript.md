@@ -1,31 +1,32 @@
 ---
-title: "Beispielcode f&#252;r die Navigation im Debugger (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
+title: Debugger-Navigation-Beispielcode (JavaScript) | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
 ms.assetid: 4e2d1346-91d6-4935-9e70-130e369a4cb7
-caps.latest.revision: 3
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 3
+caps.latest.revision: "3"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: c6c0642e645fa3eba284fc1e4de888916aeb4a3a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Beispielcode f&#252;r die Navigation im Debugger (JavaScript)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Der Code in diesem Thema ist die Beispieldatei für das Thema [Steuern der Ausführung in einer Debugsitzung \(JavaScript\)](../debugger/control-execution-of-a-store-app-in-a-visual-studio-debug-session-for-windows-store-apps-javascript.md).  
+# <a name="debugger-navigation-sample-code-javascript"></a>Beispielcode für die Navigation im Debugger (JavaScript)
+Der Code in diesem Thema ist die Beispieldatei für die [Steuern der Ausführung in einer Debugsitzung (JavaScript)](../debugger/control-execution-of-a-store-app-in-a-visual-studio-debug-session-for-windows-store-apps-javascript.md) Thema.  
   
-## default.js\-Beispielcode  
+## <a name="defaultjs-sample-code"></a>Beispielcode für die Datei "default.js"  
   
 ```javascript  
 // For an introduction to the Blank template, see the following documentation:  

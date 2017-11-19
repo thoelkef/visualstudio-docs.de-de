@@ -1,32 +1,33 @@
 ---
-title: "Commands-Element | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "Commands"
-helpviewer_keywords: 
-  - "Commands-Element (VSCT-XML-Schema)"
-  - "VSCT XML-Schemaelemente, Befehle"
+title: Befehle Element | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: Commands
+helpviewer_keywords:
+- Commands element (VSCT XML schema)
+- VSCT XML schema elements, Commands
 ms.assetid: 47cf16a5-d78b-452e-86f6-b5893856dddf
-caps.latest.revision: 17
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 17
+caps.latest.revision: "17"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 61d7f67eda9bdd1d215586a75ed01c1089ccf7fc
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Commands-Element
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Stellt die Auflistung von Befehlen auf der Symbolleiste des VSPackage. Die Auflistung kann bis zu fünf Unterabschnitte haben, wie folgt: Gruppen, Menüs, Schaltflächen, Kombinationen und Bitmaps.  
+# <a name="commands-element"></a>Commands-Element
+Stellt die Auflistung von Befehlen auf der Symbolleiste des VSPackage. Die Auflistung kann bis zu fünf Unterabschnitte haben, wie folgt: Gruppen, Menüs, Schaltflächen, Tastenkürzel und Bitmaps.  
   
- Jeder Unterabschnitt untergeordnetes Element, z. B. \< Menü \> wird durch eine eindeutige Befehls\-ID identifiziert, die einen GUID auch einen numerischen Bezeichner ist. Die GUID identifiziert die "Befehl" und wird verwendet, um eine Gruppe von logisch verknüpften Befehlen. Das VSPackage sollte eine eigene\-Befehlssatz zum Vermeiden von Konflikten mit der Befehls\-IDs, die von anderen VSPackages definiert sind definieren.  
+ Jedes Unterabschnitt untergeordnete Element, z. B. \<Menü >, wird durch eine eindeutige Befehls-ID, die eine GUID und die numerische ID-Paar wird identifiziert. Die GUID den "Befehlssatz" bezeichnet und wird verwendet, um eine Gruppe von logisch verwandter Befehle. Das VSPackage sollten eigene Befehlssatz Konflikte mit der Befehls-IDs zu vermeiden, die von anderen VSPackages definiert sind definieren.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 <Commands package="GuidMyPackage" >  
@@ -38,38 +39,57 @@ Stellt die Auflistung von Befehlen auf der Symbolleiste des VSPackage. Die Aufli
 </Commands>  
 ```  
   
-## Attribute und Elemente  
+## <a name="attributes-and-elements"></a>Attribute und Elemente  
  In den folgenden Abschnitten werden Attribute sowie untergeordnete und übergeordnete Elemente beschrieben.  
   
-### Attribute  
+### <a name="attributes"></a>Attribute  
   
 |Attribut|Beschreibung|  
-|--------------|------------------|  
-|package|Eine GUID, die VSPackages identifiziert, die die Befehle bereitstellt.<br /><br /> Z. B. Verpacken \= "guidVsPackage1Pkg".|  
+|---------------|-----------------|  
+|package|Eine GUID, die das VSPackage bestimmt wird, das Befehle bereitstellt.<br /><br /> Beispielsweise packen = "guidVsPackage1Pkg".|  
   
-### Untergeordnete Elemente  
-  
-|Element|Beschreibung|  
-|-------------|------------------|  
-|[Menüs\-Element](../extensibility/menus-element.md)|Definiert alle Menüs, die ein VSPackage implementiert.|  
-|[Groups\-Element](../extensibility/groups-element.md)|Enthält Einträge, die die Befehlsgruppen in ein VSPackage definieren.|  
-|[Schaltflächen\-Element](../extensibility/buttons-element.md)|Gruppen\-Button\-Elemente.|  
-|[Bitmaps\-Element](../extensibility/bitmaps-element.md)|Gruppen\-Bitmap\-Elemente.|  
-|[Tastenkürzel\-Element](../extensibility/combos-element.md)|Gruppiert Elemente Kombinationsfeld.|  
-  
-### Übergeordnete Elemente  
+### <a name="child-elements"></a>Untergeordnete Elemente  
   
 |Element|Beschreibung|  
-|-------------|------------------|  
-|[CommandTable\-Element](../extensibility/commandtable-element.md)|Definiert die Elemente aus, die die Befehle darstellen, die einem VSPackage in der IDE bietet. Mögliche Elemente sind Elemente, Menüs, Symbolleisten und Kombinationsfelder.|  
+|-------------|-----------------|  
+|[Menus-Element](../extensibility/menus-element.md)|Definiert alle Menüs, die eine VSPackage implementiert.|  
+|[Groups-Element](../extensibility/groups-element.md)|Enthält Einträge, die die Befehlsgruppen in einem VSPackage definieren.|  
+|[Buttons-Element](../extensibility/buttons-element.md)|Gruppiert die Elemente der Schaltfläche.|  
+|[Bitmaps-Element](../extensibility/bitmaps-element.md)|Gruppiert die Elemente mithilfe einer Bitmap.|  
+|[Combos-Element](../extensibility/combos-element.md)|Gruppiert Kombinationsfeld Elemente.|  
   
-## Beispiel  
- Das folgende Beispiel zeigt, wie Sie eine [Commands Element](../extensibility/commands-element.md).  
+### <a name="parent-elements"></a>Übergeordnete Elemente  
+  
+|Element|Beschreibung|  
+|-------------|-----------------|  
+|[CommandTable-Element](../extensibility/commandtable-element.md)|Definiert die Elemente aus, die die Befehle darstellen, die eine VSPackage mit der IDE ermöglicht. Mögliche Elemente sind Menüelemente, Menüs, Symbolleisten und Kombinationsfelder.|  
+  
+## <a name="example"></a>Beispiel  
+ Das folgende Beispiel zeigt, wie Sie eine [Commands-Element](../extensibility/commands-element.md).  
   
 ```  
-<Commands package="guidMyPackage"> <Menus> <Menu Condition="'%(DEBUG)' != 'true'" guid="cmdSetGuidMyProductCommands" id="menuIDMainMenu" priority="0x0000" type="Menu"> <Annotation> <Documentation>this is an annotation</Documentation> <AppInfo> <CustomData> <CustomSubElement>Some data</CustomSubElement> </CustomData> </AppInfo> </Annotation> <CommandFlag>AlwaysCreate</CommandFlag> <Strings> <ButtonText>MainMenu</ButtonText> </Strings> </Menu> </Menus> <Commands>  
+<Commands package="guidMyPackage">  
+    <Menus>  
+      <Menu Condition="'%(DEBUG)' != 'true'"   
+        guid="cmdSetGuidMyProductCommands" id="menuIDMainMenu"   
+        priority="0x0000" type="Menu">  
+        <Annotation>  
+          <Documentation>this is an annotation</Documentation>  
+          <AppInfo>  
+            <CustomData>  
+              <CustomSubElement>Some data</CustomSubElement>  
+            </CustomData>  
+          </AppInfo>  
+        </Annotation>  
+        <CommandFlag>AlwaysCreate</CommandFlag>  
+        <Strings>  
+          <ButtonText>MainMenu</ButtonText>  
+        </Strings>  
+      </Menu>  
+  </Menus>  
+<Commands>  
 ```  
   
-## Siehe auch  
- [Wie VSPackages Benutzeroberflächenelemente hinzufügen](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
+## <a name="see-also"></a>Siehe auch  
+ [Wie VSPackages Elemente der Benutzeroberfläche hinzufügen](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [Befehle, Menüs und Symbolleisten](../extensibility/internals/commands-menus-and-toolbars.md)

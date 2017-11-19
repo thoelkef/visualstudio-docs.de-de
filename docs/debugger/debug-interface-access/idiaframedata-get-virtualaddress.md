@@ -1,43 +1,42 @@
 ---
-title: "IDiaFrameData::get_virtualAddress | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaFrameData::get_virtualAddress-Methode"
+title: 'Idiaframedata:: Get_virtualaddress | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaFrameData::get_virtualAddress method
 ms.assetid: de137bee-132f-4aae-a067-9578b7a3e6d4
-caps.latest.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 8387b7b5096f0efe5e05a560f5c76af03fa7d165
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaFrameData::get_virtualAddress
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Ruft die virtuelle Adresse \(VA\) des Codes für den Zielframe ab.  
+# <a name="idiaframedatagetvirtualaddress"></a>IDiaFrameData::get_virtualAddress
+Ruft die virtuelle Adresse ("VA" ist) des Codes für den Frame ab.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT get_virtualAddress (   
-   ULONGLONG* pRetVal  
+```C++  
+HRESULT get_virtualAddress (   
+   ULONGLONG* pRetVal  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `pRetVal`  
- \[out\]  Gibt die virtuelle Adresse des Codes für die Frames zurück.  
+ [out] Gibt die virtuelle Adresse des Codes für den Frame zurück.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück.  Gibt `S_FALSE` zurück, wenn diese Eigenschaft nicht unterstützt wird.  Andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`. Gibt `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

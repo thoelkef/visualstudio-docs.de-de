@@ -1,51 +1,51 @@
 ---
-title: "CA2103: Imperative Sicherheit &#252;berpr&#252;fen | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA2103"
-  - "ReviewImperativeSecurity"
-helpviewer_keywords: 
-  - "CA2103"
-  - "ReviewImperativeSecurity"
+title: "CA2103: Imperative Sicherheit überprüfen | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA2103
+- ReviewImperativeSecurity
+helpviewer_keywords:
+- CA2103
+- ReviewImperativeSecurity
 ms.assetid: d24fde71-bdf6-46c0-8965-9a73dc33c1aa
-caps.latest.revision: 18
-caps.handback.revision: 18
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
+caps.latest.revision: "18"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: b6047df9ea1b5454d4c4c689a5baef887907779a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# CA2103: Imperative Sicherheit &#252;berpr&#252;fen
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="ca2103-review-imperative-security"></a>CA2103: Imperative Sicherheit überprüfen
 |||  
 |-|-|  
 |TypeName|ReviewImperativeSecurity|  
 |CheckId|CA2103|  
-|Kategorie \(Category\)|Microsoft.Security|  
+|Kategorie|Microsoft.Security|  
 |Unterbrechende Änderung|Breaking|  
   
-## Ursache  
+## <a name="cause"></a>Ursache  
  Eine Methode verwendet imperative Sicherheit und erstellt möglicherweise die Berechtigung mit Zustandsinformationen oder Rückgabewerten, die sich ändern können, während die Forderung wirksam ist.  
   
-## Regelbeschreibung  
- Bei Verwendung imperativer Sicherheit werden mithilfe verwalteter Objekte während der Codeausführung Berechtigungen und Sicherheitsaktionen festgelegt. Im Vergleich dazu werden beim Einsatz deklarativer Sicherheit Attribute verwendet, um Berechtigungen und Aktionen in Metadaten zu speichern.  Imperative Sicherheit ermöglicht großen Handlungsspielraum, weil die Festlegung des Zustands eines Berechtigungsobjekts und die Auswahl von Sicherheitsaktionen mithilfe von Informationen erfolgen kann, die erst zur Laufzeit zur Verfügung stehen.  Diese Flexibilität bringt mit sich aber auch das Risiko in sich, dass die Laufzeitdaten, die zur Festlegung des Berechtigungszustands verwendet werden, nicht unverändert bleiben, während die Aktion ausgeführt wird.  
+## <a name="rule-description"></a>Regelbeschreibung  
+ Imperativer Sicherheit verwendet verwaltete Objekte angeben, Berechtigungen und Sicherheitsaktionen während der Ausführung von Code, die im Vergleich zu deklarative Sicherheit, der Attribute verwendet wird, um Berechtigungen und Aktionen in den Metadaten speichern. Imperativer Sicherheit ist sehr flexibel, da können Sie legen Sie den Status des ein Berechtigungsobjekt und Auswählen von Sicherheitsaktionen mithilfe von Informationen, die erst zur Laufzeit nicht verfügbar ist. Zusammen, die mit stammen Flexibilität das Risiko, das die Laufzeitinformationen, die Sie verwenden, um zu bestimmen, dass der Status einer Berechtigung nicht bleibt unverändert, solange die Aktion aktiviert ist.  
   
- Verwenden Sie, wenn irgend möglich, deklarative Sicherheit.  Deklarative Anforderungen sind einfacher zu verstehen.  
+ Verwenden Sie, wenn irgend möglich, deklarative Sicherheit. Deklarative Befehle sind einfacher zu verstehen.  
   
-## Behandeln von Verstößen  
- Überprüfen Sie die imperativen Sicherheitsforderungen, um sicherzustellen, dass der Zustand der Berechtigung nicht von Daten abhängt, die sich ändern können, während die Berechtigung verwendet wird.  
+## <a name="how-to-fix-violations"></a>Behandeln von Verstößen  
+ Überprüfen Sie die Anforderungen imperative Sicherheit, um sicherzustellen, dass der Zustand der Berechtigung nicht von den Informationen abhängig wird, die sich ändern können, solange die Berechtigung verwendet wird.  
   
-## Wann sollten Warnungen unterdrückt werden?  
- Eine Warnung dieser Regel kann gefahrlos unterdrückt werden, wenn die Berechtigung nicht auf einer Änderung der Daten beruht.  Die imperative Forderung sollte jedoch in ihre deklarative Entsprechung geändert werden.  
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?  
+ Sie können ruhig zum Unterdrücken einer Warnung dieser Regel, wenn die Berechtigung nicht zum Ändern von Daten. Allerdings ist es besser, die imperative Forderung in die entsprechende deklarative zu ändern.  
   
-## Siehe auch  
- [Secure Coding Guidelines](../Topic/Secure%20Coding%20Guidelines.md)   
- [Daten und Modellierung](../Topic/Data%20and%20Modeling%20in%20the%20.NET%20Framework.md)
+## <a name="see-also"></a>Siehe auch  
+ [Schreiben von sicherem Richtlinien](/dotnet/standard/security/secure-coding-guidelines)   
+ [Daten und Modellierung](/dotnet/framework/data/index)

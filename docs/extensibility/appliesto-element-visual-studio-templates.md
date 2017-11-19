@@ -1,70 +1,76 @@
 ---
-title: "AppliesTo-Element (Visual Studio-Vorlagen) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: AppliesTo-Element (Visual Studio-Vorlagen) | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 8fb1334b-d78c-405f-98b4-786e9f6b58d7
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: fc168ca6433204a4f5f50a55c79b9e4320773841
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# AppliesTo-Element (Visual Studio-Vorlagen)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Legt einen optionalen Ausdruck fest, um eine oder mehrere Funktionen auszuwählen.  \(siehe <xref:Microsoft.VisualStudio.Shell.Interop.VsProjectCapabilityExpressionMatcher>\).  Funktionen werden von Projekttypen über die Hierarchie als Eigenschaft <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID5> verfügbar gemacht.  Dadurch kann die Vorlage von mehreren Projekttypen gemeinsam genutzt werden, die über geläufige anwendbare Funktionen verfügen.  
+# <a name="appliesto-element-visual-studio-templates"></a>AppliesTo-Element (Visual Studio-Vorlagen)
+Legt einen optionalen Ausdruck fest, um eine oder mehrere Funktionen auszuwählen. (siehe <xref:Microsoft.VisualStudio.Shell.Interop.VsProjectCapabilityExpressionMatcher>). Funktionen werden von Projekttypen über die Hierarchie als Eigenschaft <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID5> verfügbar gemacht. Dadurch kann die Vorlage von mehreren Projekttypen gemeinsam genutzt werden, die über geläufige anwendbare Funktionen verfügen.  
   
- Dieses Element ist optional.  Es kann maximal eine Instanz in einer Vorlagendatei geben.  Dieses Element ermöglicht einer Elementvorlage nur, auf Grundlage der Funktionen des ausgewählten aktiven Projekts als anwendbar zu optieren.  Es kann nicht verwendet werden, um eine Elementvorlage nicht anwendbar zu machen.  Wenn `AppliesTo` fehlt oder der Ausdruck nicht erfolgreich optiert, wird `TemplateID` oder `TemplateGroupID` verwendet, um die Vorlage anwendbar zu machen, wie mit früheren Versionen des Produkts.  
+ Dieses Element ist optional. Es kann maximal eine Instanz in einer Vorlagendatei geben. Dieses Element ermöglicht einer Elementvorlage nur, auf Grundlage der Funktionen des ausgewählten aktiven Projekts als anwendbar zu optieren. Es kann nicht verwendet werden, um eine Elementvorlage nicht anwendbar zu machen. Wenn `AppliesTo` fehlt oder der Ausdruck nicht erfolgreich optiert, wird `TemplateID` oder `TemplateGroupID` verwendet, um die Vorlage anwendbar zu machen, wie mit früheren Versionen des Produkts.  
   
- Eingeführt in Visual Studio 2013 Update 2  Informationen zum Verweisen auf die richtige Version finden Sie unter [Referencing Assemblies Delivered in the Visual Studio 2013 SDK Update 2](http://msdn.microsoft.com/de-de/42b65c3e-e42b-4c39-98c8-bea285f25ffb).  
+ Eingeführt in Visual Studio 2013 Update 2. Um die richtige Version zu verweisen, finden Sie unter [verweisen auf Assemblys in Visual Studio 2013 SDK Update 2 übermittelten](http://msdn.microsoft.com/en-us/42b65c3e-e42b-4c39-98c8-bea285f25ffb).  
   
-## Syntax  
+ \<VSTemplate >  
+ \<TemplateData >  
+ \<AppliesTo >  
+  
+## <a name="syntax"></a>Syntax  
   
 ```  
-<AppliesTo>Capability1</AppliesTo>    
+<AppliesTo>Capability1</AppliesTo>   
 ```  
   
-## Attribute und Elemente  
+## <a name="attributes-and-elements"></a>Attribute und Elemente  
  In den folgenden Abschnitten werden Attribute sowie untergeordnete und übergeordnete Elemente beschrieben.  
   
-### Attribute  
+### <a name="attributes"></a>Attribute  
+ Keine.  
+  
+### <a name="child-elements"></a>Untergeordnete Elemente  
  Keine  
   
-### Untergeordnete Elemente  
- Keine  
-  
-### Übergeordnete Elemente  
+### <a name="parent-elements"></a>Übergeordnete Elemente  
   
 |Element|Beschreibung|  
-|-------------|------------------|  
+|-------------|-----------------|  
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Kategorisiert die Vorlage.|  
   
-## Textwert  
- Ein Textwert ist erforderlich.  Dieser Text gibt die Funktionen des Projekts an.  
+## <a name="text-value"></a>Textwert  
+ Ein Textwert ist erforderlich. Dieser Text gibt die Funktionen des Projekts an.  
   
  Gültige Ausdruckssyntax ist folgendermaßen definiert:  
   
--   Der Funktionsausdruck, wie "\(VisualC &#124; CSharp\) \+ \(MSTest &#124; NUnit\)".  
+-   Der Funktionsausdruck, wie z. B. "(VisualC &#124; CSharp) + (MSTest &#124; NUnit) ".  
   
--   "&#124;" ist der Operator OR.  
+-   Die "&#124;" ist der OR-Operator.  
   
--   Die Zeichen "&" und "\+" sind beide AND\-Operatoren.  
+-   Die Zeichen "&" und "+" sind beide AND-Operatoren.  
   
--   Das Zeichen "\!" ist der Operator NOT.  
+-   Das Zeichen "!" ist der Operator NOT.  
   
 -   Klammern erzwingen die Auswertungsreihenfolge.  
   
--   Eine leerer oder NULL\-Ausdruck wird als Übereinstimmung ausgewertet.  
+-   Eine leerer oder NULL-Ausdruck wird als Übereinstimmung ausgewertet.  
   
--   Projektfunktionen können jedes Zeichen sein außer diesen reservierten Zeichen: "'\`:;,\+\-\*\/\\\!~&#124;&%$@^\(\)\={}\[\]\<\>?  \\t\\b\\n\\r  
+-   Projektfunktionen jedes Zeichen außer diesen reservierten Zeichen sein: "'' :;,+-*/\\! ~ &#124; & %$@^()={} [] <>? \t\b\n\r  
   
-## Beispiel  
- Im folgenden Beispiel werden drei unterschiedliche Vorlagen gezeigt.  `Template1` gilt für alle C\#\-Projekttypen oder jeden anderen Projekttyp, der die `WindowsAppContainer`\-Funktion unterstützt.  `Template2` gilt für C\#\-Projekte beliebiger Art.  `Template3` gilt für C\#\-Projekte, die keine `WindowsAppContainer` sind Projekte.  
+## <a name="example"></a>Beispiel  
+ Im folgenden Beispiel werden drei unterschiedliche Vorlagen gezeigt. `Template1` gilt für alle C#-Projekttypen oder jeden anderen Projekttyp, der die `WindowsAppContainer`-Funktion unterstützt. `Template2` gilt für C#-Projekte beliebiger Art. `Template3` gilt für C#-Projekte, die keine `WindowsAppContainer` sind Projekte.  
   
 ```xml  
 <!--  Template 1 -->  
@@ -93,6 +99,6 @@ Legt einen optionalen Ausdruck fest, um eine oder mehrere Funktionen auszuwähle
   
 ```  
   
-## Siehe auch  
- [Schemareferenz zu Visual Studio\-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)   
- [Erstellen von benutzerdefinierten Projekt\- und Elementvorlagen](../ide/creating-project-and-item-templates.md)
+## <a name="see-also"></a>Siehe auch  
+ [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)   
+ [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)

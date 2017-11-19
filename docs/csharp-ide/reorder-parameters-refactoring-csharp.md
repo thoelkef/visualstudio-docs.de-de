@@ -1,43 +1,42 @@
 ---
-title: "Reorder Parameters Refactoring (C#) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.csharp.refactoring.reorder"
-dev_langs: 
-  - "CSharp"
-helpviewer_keywords: 
-  - "refactoring [C#], Reorder Parameters"
-  - "Reorder Parameters refactoring [C#]"
+redirect_url: /visualstudio/csharp-ide/refactoring/change-method-signature
+title: Neuanordnen von Parametern, die Umgestaltung (c#) | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vs.csharp.refactoring.reorder
+dev_langs: CSharp
+helpviewer_keywords:
+- refactoring [C#], Reorder Parameters
+- Reorder Parameters refactoring [C#]
 ms.assetid: 4dabf21a-a9f0-41e9-b11b-55760cf2bd90
-caps.latest.revision: 26
-caps.handback.revision: 26
-author: "BillWagner"
-ms.author: "wiwagn"
-manager: "wpickett"
+caps.latest.revision: "26"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 3469e9ae7101c9e180fba5558fce389c6dfcc72d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Reorder Parameters Refactoring (C#)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-`Reorder Parameters` ist ein Visual C\#\-Umgestaltungsvorgang, mit dem Sie die Reihenfolge der Parameter für Methoden, Indexer und Delegaten leicht ändern können.  Durch `Reorder Parameters` wird die Deklaration geändert, und an allen Positionen, an denen der Member aufgerufen wird, werden die Parameter entsprechend der neuen Reihenfolge neu angeordnet.  
+# <a name="reorder-parameters-refactoring-c"></a>Refactoring „Parameter neu anordnen“ (C#)
+`Reorder Parameters`ist eine Visual C#-Umgestaltungsvorgang, die eine einfache Möglichkeit zum Ändern der Reihenfolge der Parameter für Methoden, Indexer und Delegaten bereitstellt. `Reorder Parameters`Ändert die Deklaration und überall, wo das Element wird aufgerufen, werden die Parameter entsprechend die neue Reihenfolge neu angeordnet.  
   
- Sie können den Vorgang `Reorder Parameters` ausführen, indem Sie den Cursor auf einer Methode, einem Indexer oder einem Delegaten positionieren.  Nachdem der Cursor richtig positioniert wurde, rufen Sie den `Reorder Parameters`\-Vorgang auf, indem Sie die Tastenkombination drücken oder indem Sie im Kontextmenü auf den Befehl klicken.  
+ Zum Ausführen der `Reorder Parameters` Vorgang, platzieren Sie den Cursor auf oder neben einer Methode, Indexer oder einem Delegaten. Wenn Sie der Cursor in Position befindet, rufen Sie die `Reorder Parameters` Vorgang durch Drücken der Tastenkombination zugreifen, oder indem Sie den Befehl aus dem Kontextmenü.  
   
 > [!NOTE]
->  Der erste Parameter in einer Erweiterungsmethode kann nicht neu angeordnet werden.  
+>  Sie können den ersten Parameter in einer Erweiterungsmethode nicht ändern.  
   
-### So ordnen Sie Parameter neu an  
+### <a name="to-reorder-parameters"></a>Parameter neu anordnen.  
   
-1.  Erstellen Sie eine Klassenbibliothek mit dem Namen `ReorderParameters`, und ersetzen Sie dann `Class1` durch folgendes Codebeispiel.  
+1.  Erstellen Sie eine Klassenbibliothek mit dem Namen `ReorderParameters`, und Ersetzen Sie `Class1` mit dem folgenden Beispielcode.  
   
-    ```c#  
+    ```csharp  
     class ProtoClassA  
     {  
         // Invoke on 'MethodB'.  
@@ -56,26 +55,26 @@ manager: "wpickett"
     }  
     ```  
   
-2.  Positionieren Sie den Cursor entweder in der Methodendeklaration oder im Methodenaufruf auf `MethodB`.  
+2.  Platzieren Sie den Cursor auf `MethodB`, entweder in der Deklaration der Methode oder dem Aufruf der Methode.  
   
-3.  Klicken Sie im Menü **Umgestalten** auf **Parameter neu anordnen**.  
+3.  Auf der **Umgestalten** Menü klicken Sie auf **Parameter neu anordnen**.  
   
-     Das Dialogfeld **Parameter neu anordnen** wird angezeigt.  
+     Die **Parameter neu anordnen** Dialogfeld wird angezeigt.  
   
-4.  Wählen Sie im Dialogfeld **Parameter neu anordnen** in der Liste **Parameter** `int i`, und klicken Sie dann auf die Schaltfläche Nach unten.  
+4.  In der **Parameter neu anordnen** wählen Sie im Dialogfeld `int i` in der **Parameter** aus, und klicken Sie dann auf die Schaltfläche nach unten.  
   
-     Alternativ können Sie `int i` in der Liste **Parameter** an eine Position nach `bool b` ziehen.  
+     Alternativ können Sie ziehen `int i` nach `bool b` in der **Parameter** Liste.  
   
-5.  Klicken Sie im Dialogfeld **Parameter neu anordnen** auf **OK**.  
+5.  In der **Parameter neu anordnen** (Dialogfeld), klicken Sie auf **OK**.  
   
-     Wenn im Dialogfeld **Parameter neu anordnen** die Option **Vorschau der Verweisänderungen** aktiviert ist, wird das Dialogfeld **Vorschau der Änderungen \- Parameter neu anordnen** eingeblendet.  Das Dialogfeld enthält eine Vorschau der Änderungen, die in der Parameterliste für `MethodB` sowohl in der Signatur als auch im Methodenaufruf vorgenommen wurden.  
+     Wenn die **Vorschau der Änderungen Verweis** ausgewählt ist die **Parameter neu anordnen** (Dialogfeld), die **Vorschau der Änderungen - Parameter neu anordnen** Dialogfeld wird angezeigt. Es bietet eine Vorschau der Änderungen in der Parameterliste für `MethodB` in der Signatur und dem Aufruf der Methode.  
   
-    1.  Falls das Dialogfeld **Vorschau der Änderungen \- Parameter neu anordnen** angezeigt wird, klicken Sie auf **Übernehmen**.  
+    1.  Wenn die **Vorschau der Änderungen - Parameter neu anordnen** Dialogfeld angezeigt wird, klicken Sie auf **übernehmen**.  
   
-         In diesem Beispiel werden die Methodendeklaration und sämtliche Aufrufsites der Methode für `MethodB` aktualisiert.  
+         In diesem Beispiel wird die Deklaration der Methode und alle der Methodenaufruf Websites für `MethodB` aktualisiert werden.  
   
-## Hinweise  
- Sie können Parameter aus einer Methodendeklaration oder einem Methodenaufruf neu anordnen.  Positionieren Sie den Cursor in der Methoden\- oder Delegatdeklaration, nicht jedoch im Text.  
+## <a name="remarks"></a>Hinweise  
+ Sie können die Parameter aus einer Methodendeklaration oder einem Methodenaufruf neu anordnen. Positionieren Sie den Cursor auf oder neben der Deklaration Methode oder der Delegat aber nicht im Text.  
   
-## Siehe auch  
- [Refactoring \(C\#\)](../csharp-ide/refactoring-csharp.md)
+## <a name="see-also"></a>Siehe auch  
+ [Refactoring (C#)](refactoring-csharp.md)

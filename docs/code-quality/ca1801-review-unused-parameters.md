@@ -1,69 +1,70 @@
 ---
-title: "CA1801: Nicht verwendete Parameter &#252;berpr&#252;fen | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "AvoidUnusedParameters"
-  - "CA1801"
-  - "ReviewUnusedParameters"
-helpviewer_keywords: 
-  - "CA1801"
-  - "ReviewUnusedParameters"
+title: "CA1801: Nicht verwendete Parameter überprüfen | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- AvoidUnusedParameters
+- CA1801
+- ReviewUnusedParameters
+helpviewer_keywords:
+- CA1801
+- ReviewUnusedParameters
 ms.assetid: 5d73545c-e153-4b7c-a7b2-be6bf5aca5be
-caps.latest.revision: 30
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 30
+caps.latest.revision: "30"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 1bb8c38d1436ca687664f92bfe0ba6db1ccf68ea
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# CA1801: Nicht verwendete Parameter &#252;berpr&#252;fen
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="ca1801-review-unused-parameters"></a>CA1801: Nicht verwendete Parameter überprüfen
 |||  
 |-|-|  
 |TypeName|ReviewUnusedParameters|  
 |CheckId|CA1801|  
-|Kategorie \(Category\)|Microsoft.Usage|  
-|Unterbrechende Änderung|Nicht unterbrechend – Wenn der Member unabhängig von der vorgenommenen Änderung außerhalb der Assembly nicht sichtbar ist.<br /><br /> Nicht unterbrechend – Wenn Sie den Member ändern, um den Parameter im Text zu verwenden.<br /><br /> Unterbrechend – Wenn Sie den Parameter entfernen und er außerhalb der Assembly sichtbar ist.|  
+|Kategorie|Microsoft.Usage|  
+|Unterbrechende Änderung|Nicht unterbrechend – Wenn das Element nicht außerhalb der Assembly, unabhängig von der Änderung angezeigt wird, die Sie vornehmen.<br /><br /> Nicht unterbrechend – Wenn Sie das Element den Parameter innerhalb des Textkörpers Verwendung ändern.<br /><br /> Unterbrechend – Wenn Sie den Parameter entfernen und außerhalb der Assembly sichtbar ist.|  
   
-## Ursache  
- Eine Methodensignatur enthält einen Parameter, der nicht im Methodentext verwendet wird.  Die folgenden Methoden werden mit dieser Regel nicht geprüft:  
+## <a name="cause"></a>Ursache  
+ Eine Methodensignatur enthält einen Parameter, der nicht im Methodentext verwendet wird. Mit dieser Regel wird nicht überprüfen Sie die folgenden Methoden:  
   
--   Methoden, auf die von einem Delegaten verwiesen wird.  
+-   Methoden, die ein Delegat verweist.  
   
 -   Methoden, die als Ereignishandler verwendet werden.  
   
--   Methoden, die mit dem `abstract`\-Modifizierer \(`MustOverride` in Visual Basic\) deklariert werden.  
+-   Methoden deklariert werden, mit der `abstract` (`MustOverride` in Visual Basic) Modifizierer.  
   
--   Methoden, die mit dem `virtual`\-Modifizierer \(`Overridable` in Visual Basic\) deklariert werden.  
+-   Methoden deklariert werden, mit der `virtual` (`Overridable` in Visual Basic) Modifizierer.  
   
--   Methoden, die mit dem `override`\-Modifizierer \(`Overrides` in Visual Basic\) deklariert werden.  
+-   Methoden deklariert werden, mit der `override` (`Overrides` in Visual Basic) Modifizierer.  
   
--   Methoden, die mit dem `extern`\-Modifizierer \(`Declare`\-Anweisung in Visual Basic\) deklariert werden.  
+-   Methoden deklariert werden, mit der `extern` (`Declare` -Anweisung in Visual Basic) Modifizierer.  
   
-## Regelbeschreibung  
- Überprüfen Sie in nicht virtuellen Methoden die Parameter, die nicht im Methodentext verwendet werden, um sicherzustellen, dass im Umfeld des gescheiterten Zugriffs keine Richtigkeit vorhanden ist.  Nicht verwendete Parameter führen zu höheren Wartungskosten und einer geringeren Leistung.  
+## <a name="rule-description"></a>Regelbeschreibung  
+ Überprüfen Sie die Parameter in nicht virtuelle Methoden, die nicht im Methodentext verwendet werden, um sicherzustellen, dass keine Richtigkeit vorhanden ist, um den Zugriff darauf möglich. Nicht verwendete Parameter fallen Kosten für Wartung und Leistung.  
   
- Manchmal kann ein Verstoß dieser Regel auf einen Implementierungsfehler in der Methode hinweisen.  Der Parameter sollte beispielsweise im Methodentext verwendet werden.  Unterdrücken Sie Warnungen dieser Regel, wenn der Parameter zwecks Abwärtskompatibilität vorhanden sein muss.  
+ Manchmal kann ein Verstoß gegen diese Regel zu einem Implementierungsfehler in der Methode hinweisen. Z. B. sollte der Parameter im Methodentext verwendet haben. Unterdrücken Sie Warnungen gegen diese Regel aus, wenn der Parameter hat aufgrund der Abwärtskompatibilität vorhanden.  
   
-## Behandeln von Verstößen  
- Um einen Verstoß gegen diese Regel zu beheben, entfernen Sie den nicht verwendeten Parameter \(eine unterbrechende Änderung\), oder verwenden Sie den Parameter im Methodentext \(eine nicht unterbrechende Änderung\).  
+## <a name="how-to-fix-violations"></a>Behandeln von Verstößen  
+ Um einen Verstoß gegen diese Regel zu beheben, entfernen Sie den nicht verwendeten Parameter (eine unterbrechende Änderung), oder verwenden Sie den Parameter im Methodentext (eine nicht unterbrechende Änderung).  
   
-## Wann sollten Warnungen unterdrückt werden?  
- Eine Warnung dieser Regel kann bei zuvor veröffentlichtem Code, für den die Korrektur eine unterbrechende Änderung wäre, gefahrlos unterdrückt werden.  
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?  
+ Sie können ruhig zum Unterdrücken einer Warnung dieser Regel für zuvor gelieferten Code, für den die Lösung eine unterbrechende Änderung wäre.  
   
-## Beispiel  
- Im folgenden Beispiel werden zwei Methoden veranschaulicht.  Eine Methode verstößt gegen die Regel, und die andere Methode erfüllt die Regel.  
+## <a name="example"></a>Beispiel  
+ Das folgende Beispiel zeigt zwei Methoden. Eine Methode verstößt gegen die Regel, und die andere Methode erfüllt, die die Regel.  
   
- [!code-cs[FxCop.Usage.ReviewUnusedParameters#1](../code-quality/codesnippet/CSharp/ca1801-review-unused-parameters_1.cs)]  
+ [!code-csharp[FxCop.Usage.ReviewUnusedParameters#1](../code-quality/codesnippet/CSharp/ca1801-review-unused-parameters_1.cs)]  
   
-## Verwandte Regeln  
+## <a name="related-rules"></a>Verwandte Regeln  
  [CA1811: Nicht aufgerufenen privaten Code vermeiden](../code-quality/ca1811-avoid-uncalled-private-code.md)  
   
  [CA1812: Nicht instanziierte interne Klassen vermeiden](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)  

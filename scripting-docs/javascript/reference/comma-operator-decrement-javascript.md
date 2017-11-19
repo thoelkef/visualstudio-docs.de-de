@@ -1,50 +1,51 @@
 ---
-title: "Kommaoperator (,) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "%2C"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "Kommaoperator"
+title: Kommaoperator (,) (JavaScript) | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: '%2C'
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords: comma operator
 ms.assetid: 699fa0bf-cd0a-45ee-a291-2fbed4ecd470
-caps.latest.revision: 13
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 2cb504beefc5ce4c260ec8296e2cf097e17d349e
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# Kommaoperator (,) (JavaScript)
+# <a name="comma-operator--javascript"></a>Kommaoperator (,) (JavaScript)
 Bewirkt die sequenzielle Ausführung von zwei Ausdrücken.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
   
 expression1, expression2  
 ```  
   
-## Parameter  
+## <a name="parameters"></a>Parameter  
  `expression1`  
- Ein beliebiger Ausdruck.  
+ Beliebiger Ausdruck.  
   
  `expression2`  
- Ein beliebiger Ausdruck.  
+ Beliebiger Ausdruck.  
   
-## Hinweise  
- Der `,`\-Operator bewirkt, dass die Ausdrücke von links nach rechts ausgeführt werden.  Der `,`\-Operator wird häufig im Inkrementausdruck einer `for`\-Schleife verwendet.  Beispiel:  
+## <a name="remarks"></a>Hinweise  
+ Die `,` Operator bewirkt, dass die Ausdrücke, die in der Reihenfolge von links nach rechts ausgeführt werden. Eine übliche Verwendung für die `,` Operator im Inkrementausdruck ist eine `for` Schleife. Zum Beispiel:  
   
-```javascript  
+```JavaScript  
 j=25;  
 for (i = 0; i < 10; i++, j++)  
 {  
@@ -52,12 +53,12 @@ for (i = 0; i < 10; i++, j++)
 }  
 ```  
   
- Die `for`\-Anweisung lässt nur die Ausführung eines einzigen Ausdrucks am Ende jedes Schleifendurchlaufs zu.  Der `,`\-Operator kann mehrere Ausdrücke zu einem Ausdruck zusammenfassen, sodass beide Variablen inkrementiert werden können.  
+ Die `for` -Anweisung können nur einen einzelnen Ausdruck am Ende jeder Pass-through einer Schleife ausgeführt werden. Die `,` Operators können mehrere Ausdrücke als ein einziger Ausdruck behandelt werden, damit beide Variablen inkrementiert werden können.  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
-## Siehe auch  
- [for\-Anweisung](../../javascript/reference/for-statement-javascript.md)   
+## <a name="see-also"></a>Siehe auch  
+ [für die Anweisung](../../javascript/reference/for-statement-javascript.md)   
  [Operatorrangfolge](../../javascript/operator-subtractprecedence-javascript.md)   
- [Zusammenfassung der Operatoren \(JavaScript\)](../../javascript/misc/operator-subtractsummary-javascript.md)
+ [Zusammenfassung der Operatoren (JavaScript)](../../javascript/misc/operator-subtractsummary-javascript.md)

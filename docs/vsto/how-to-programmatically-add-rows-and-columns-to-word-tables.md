@@ -1,12 +1,10 @@
 ---
-title: 'How to: Programmatically Add Rows and Columns to Word Tables | Microsoft Docs'
+title: "Vorgehensweise: Programmgesteuertes Hinzufügen von Zeilen und Spalten zu Word-Tabellen | Microsoft Docs"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -17,70 +15,73 @@ helpviewer_keywords:
 - tables [Office development in Visual Studio], adding rows and columns
 - columns [Office development in Visual Studio], adding to Word tables
 ms.assetid: 01a9b6ca-1373-4a6e-b9e6-2225a1321daf
-caps.latest.revision: 42
-author: kempb
-ms.author: kempb
+caps.latest.revision: "42"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 2fa335afd18ffb43341b4fcd64d97903071484e4
-ms.contentlocale: de-de
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: bbe1ad8bea69f7d91b7796bae7cc03880fef7b04
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="how-to-programmatically-add-rows-and-columns-to-word-tables"></a>How to: Programmatically Add Rows and Columns to Word Tables
-  In a Microsoft Office Word table, the cells are organized into rows and columns. You can use the <xref:Microsoft.Office.Interop.Word.Rows.Add%2A> method of the <xref:Microsoft.Office.Interop.Word.Rows> object to add rows to the table and the <xref:Microsoft.Office.Interop.Word.Columns.Add%2A> method of the <xref:Microsoft.Office.Interop.Word.Columns> object to add columns.  
+# <a name="how-to-programmatically-add-rows-and-columns-to-word-tables"></a>Gewusst wie: Programmgesteuertes Hinzufügen von Zeilen und Spalten zu Word-Tabellen
+  In einer Microsoft Office Word-Tabelle werden die Zellen in Zeilen und Spalten angeordnet. Sie können die <xref:Microsoft.Office.Interop.Word.Rows.Add%2A>-Methode des <xref:Microsoft.Office.Interop.Word.Rows>-Objekts verwenden, um der Tabelle Zeilen hinzuzufügen, und die <xref:Microsoft.Office.Interop.Word.Columns.Add%2A>-Methode des <xref:Microsoft.Office.Interop.Word.Columns>-Objekts, um Spalten hinzuzufügen.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
-## <a name="document-level-customization-examples"></a>Document-Level Customization Examples  
- The following code examples can be used in a document-level customization. To use these examples, run them from the `ThisDocument` class in your project. These examples assume that the document associated with your customization already has at least one table.  
+## <a name="document-level-customization-examples"></a>Beispiele für die Anpassung auf Dokumentebene  
+ Die folgenden Codebeispiele können in einer Anpassung auf Dokumentebene verwendet werden. Wenn Sie diese Beispiele verwenden möchten, führen Sie den Code von der `ThisDocument`-Klasse im Projekt aus. In diesen Beispielen wird davon ausgegangen, dass das mit der Anpassung verknüpfte Dokument bereits über mindestens eine Tabelle verfügt.  
   
 > [!IMPORTANT]  
->  This code runs only in projects that you create by using any of the following project templates:  
+>  Dieser Code wird nur in Projekten ausgeführt, die Sie mithilfe einer der folgenden Projektvorlagen erstellen:  
 >   
->  -   Word 2013 Document  
-> -   Word 2013 Template  
-> -   Word 2010 Document  
-> -   Word 2010 Template  
+>  -   Word 2013-Dokument  
+> -   Word 2013-Vorlage  
+> -   Word 2010-Dokument  
+> -   Word 2010-Vorlage  
 >   
->  If you want to perform this task in any other type of project, you must add a reference to the **Microsoft.Office.Interop.Word** assembly, and then you must use classes from that assembly to add rows and columns to tables. For more information, see [How to: Target Office Applications Through Primary Interop Assemblies](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md) and [Word 2010 Primary Interop Assembly Reference](http://go.microsoft.com/fwlink/?LinkId=189588).  
+>  Wenn Sie diese Aufgabe einem anderen Typ von Projekt ausführen möchten, müssen Sie hinzufügen, einen Verweis auf die **Microsoft.Office.Interop.Word** Assembly vorliegt und Sie müssen Klassen aus dieser Assembly verwenden, Zeilen und Spalten zu Tabellen hinzufügen. Weitere Informationen finden Sie unter [wie: Ziel Office-Anwendungen durch primäre Interopassemblys](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md) und [Word 2010 Referenz für primäre Interopassemblys](http://go.microsoft.com/fwlink/?LinkId=189588).  
   
-#### <a name="to-add-a-row-to-a-table"></a>To add a row to a table  
+#### <a name="to-add-a-row-to-a-table"></a>So fügen Sie einer Tabelle eine Zeile hinzu  
   
-1.  Use the <xref:Microsoft.Office.Interop.Word.Rows.Add%2A> method to add a row to the table.  
+1.  Verwenden Sie die <xref:Microsoft.Office.Interop.Word.Rows.Add%2A>-Methode, um der Tabelle eine Zeile hinzuzufügen.  
   
-     [!code-vb[Trin_VstcoreWordAutomation#95](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#95)]  [!code-csharp[Trin_VstcoreWordAutomation#95](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#95)]  
+     [!code-vb[Trin_VstcoreWordAutomation#95](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#95)]
+     [!code-csharp[Trin_VstcoreWordAutomation#95](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#95)]  
   
-#### <a name="to-add-a-column-to-a-table"></a>To add a column to a table  
+#### <a name="to-add-a-column-to-a-table"></a>So fügen Sie einer Tabelle eine Spalte hinzu  
   
-1.  Use the <xref:Microsoft.Office.Interop.Word.Columns.Add%2A> method, and then use the <xref:Microsoft.Office.Interop.Word.Columns.DistributeWidth%2A> method to make all the columns the same width.  
+1.  Verwenden Sie erst die <xref:Microsoft.Office.Interop.Word.Columns.Add%2A>-Methode und dann die <xref:Microsoft.Office.Interop.Word.Columns.DistributeWidth%2A>-Methode, um alle Spalten mit der gleichen Breite zu formatieren.  
   
-     [!code-vb[Trin_VstcoreWordAutomation#96](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#96)]  [!code-csharp[Trin_VstcoreWordAutomation#96](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#96)]  
+     [!code-vb[Trin_VstcoreWordAutomation#96](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#96)]
+     [!code-csharp[Trin_VstcoreWordAutomation#96](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#96)]  
   
-## <a name="vsto-add-in-examples"></a>VSTO Add-in Examples  
- The following code examples can be used in a VSTO Add-in. To use the examples, run them from the `ThisAddIn` class in your project. These examples assume that the active document already has at least one table.  
+## <a name="vsto-add-in-examples"></a>Beispiele für das VSTO-Add-In  
+ Die folgenden Codebeispiele können in einem VSTO-Add-In verwendet werden. Wenn Sie diese Beispiele verwenden möchten, führen Sie sie von der `ThisAddIn`-Klasse im Projekt aus. In diesen Beispielen wird davon ausgegangen, dass das aktive Dokument bereits über mindestens eine Tabelle verfügt.  
   
 > [!IMPORTANT]  
->  This code runs only in projects that you create by using Word VSTO Add-in templates.  
+>  Dieser Code wird nur in Projekten ausgeführt, die Sie mithilfe der VSTO-Add-In-Vorlagen für Word erstellen.  
 >   
->  If you want to perform this task in any other type of project, you must add a reference to the **Microsoft.Office.Interop.Word** assembly, and then you must use classes from that assembly to add rows and columns to tables. For more information, see [How to: Target Office Applications Through Primary Interop Assemblies](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md) and [Word 2010 Primary Interop Assembly Reference](http://go.microsoft.com/fwlink/?LinkId=189588).  
+>  Wenn Sie diese Aufgabe einem anderen Typ von Projekt ausführen möchten, müssen Sie hinzufügen, einen Verweis auf die **Microsoft.Office.Interop.Word** Assembly vorliegt und Sie müssen Klassen aus dieser Assembly verwenden, Zeilen und Spalten zu Tabellen hinzufügen. Weitere Informationen finden Sie unter [wie: Ziel Office-Anwendungen durch primäre Interopassemblys](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md) und [Word 2010 Referenz für primäre Interopassemblys](http://go.microsoft.com/fwlink/?LinkId=189588).  
   
-#### <a name="to-add-a-row-to-a-table"></a>To add a row to a table  
+#### <a name="to-add-a-row-to-a-table"></a>So fügen Sie einer Tabelle eine Zeile hinzu  
   
-1.  Use the <xref:Microsoft.Office.Interop.Word.Rows.Add%2A> method to add a row to the table.  
+1.  Verwenden Sie die <xref:Microsoft.Office.Interop.Word.Rows.Add%2A>-Methode, um der Tabelle eine Zeile hinzuzufügen.  
   
-     [!code-vb[Trin_VstcoreWordAutomationAddIn#95](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#95)]  [!code-csharp[Trin_VstcoreWordAutomationAddIn#95](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#95)]  
+     [!code-vb[Trin_VstcoreWordAutomationAddIn#95](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#95)]
+     [!code-csharp[Trin_VstcoreWordAutomationAddIn#95](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#95)]  
   
-#### <a name="to-add-a-column-to-a-table"></a>To add a column to a table  
+#### <a name="to-add-a-column-to-a-table"></a>So fügen Sie einer Tabelle eine Spalte hinzu  
   
-1.  Use the <xref:Microsoft.Office.Interop.Word.Columns.Add%2A> method, and then use the <xref:Microsoft.Office.Interop.Word.Columns.DistributeWidth%2A> method to make all the columns the same width.  
+1.  Verwenden Sie erst die <xref:Microsoft.Office.Interop.Word.Columns.Add%2A>-Methode und dann die <xref:Microsoft.Office.Interop.Word.Columns.DistributeWidth%2A>-Methode, um alle Spalten mit der gleichen Breite zu formatieren.  
   
-     [!code-vb[Trin_VstcoreWordAutomationAddIn#96](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#96)]  [!code-csharp[Trin_VstcoreWordAutomationAddIn#96](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#96)]  
+     [!code-vb[Trin_VstcoreWordAutomationAddIn#96](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#96)]
+     [!code-csharp[Trin_VstcoreWordAutomationAddIn#96](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#96)]  
   
-## <a name="see-also"></a>See Also  
- [How to: Programmatically Create Word Tables](../vsto/how-to-programmatically-create-word-tables.md)   
- [How to: Programmatically Add Text and Formatting to Cells in Word Tables](../vsto/how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables.md)   
- [How to: Programmatically Populate Word Tables with Document Properties](../vsto/how-to-programmatically-populate-word-tables-with-document-properties.md)  
+## <a name="see-also"></a>Siehe auch  
+ [Vorgehensweise: Programmgesteuertes Erstellen von Word-Tabellen](../vsto/how-to-programmatically-create-word-tables.md)   
+ [Vorgehensweise: Programmgesteuertes Hinzufügen von Text und Formatierungen zu Zellen in Word-Tabellen](../vsto/how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables.md)   
+ [Vorgehensweise: Programmgesteuertes Auffüllen von Word-Tabellen mit Dokumenteigenschaften](../vsto/how-to-programmatically-populate-word-tables-with-document-properties.md)  
   
   

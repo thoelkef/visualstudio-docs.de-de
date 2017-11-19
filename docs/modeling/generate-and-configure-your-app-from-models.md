@@ -1,5 +1,5 @@
 ---
-title: Erstellen und konfigurieren Sie Ihre app aus Modellen | Microsoft-Dokumentation
+title: Erstellen und Konfigurieren von Apps aus Modellen | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -7,29 +7,15 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 4dc8f572-a09e-4d19-a92d-f1df383e728b
-caps.latest.revision: 7
+caps.latest.revision: "7"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 8f84f22444a5df5b9f4f4af44cd8ee9136403467
-ms.openlocfilehash: 864963f32fe703ada943f7e5202d7ebf6bf21e51
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 7dabd752aed4213c03ffd32ed5cc255ea4f2852e
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="generate-and-configure-your-app-from-models"></a>Generieren und Konfigurieren von Apps aus Modellen
 Sie können Teile Ihrer Anwendung aus einem Modell generieren oder konfigurieren.
@@ -37,7 +23,7 @@ Sie können Teile Ihrer Anwendung aus einem Modell generieren oder konfigurieren
  Das Modell stellt die Anforderungen direkter dar als der Code. Durch das Ableiten des Verhaltens der Anwendung direkt aus dem Modell können Sie schneller und zuverlässiger auf geänderte Anforderungen reagieren als durch eine Aktualisierung des Codes. Obwohl anfänglich einiger Arbeitsaufwand zum Einrichten der Ableitung erforderlich ist, rentiert sich diese Investition, wenn Sie Änderungen an den Anforderungen erwarten, oder wenn Sie mehrere Varianten des Produkts fertigen möchten.  
   
 ## <a name="generating-the-code-of-your-application-from-a-model"></a>Generieren des Codes der Anwendung aus einem Modell  
- Die einfachste Möglichkeit zum Generieren von Code ist die Verwendung von Textvorlagen. Sie können Code generieren, in der gleichen [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Lösung, in dem Sie das Modell speichern. Weitere Informationen finden Sie unter:  
+ Die einfachste Möglichkeit zum Generieren von Code ist die Verwendung von Textvorlagen. Sie können Code generieren, in der gleichen [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Lösung, die in dem Sie das Modell beibehalten. Weitere Informationen finden Sie unter:  
   
 -   [Generieren von Code zur Entwurfszeit mithilfe von T4-Textvorlagen](../modeling/design-time-code-generation-by-using-t4-text-templates.md)  
   
@@ -52,7 +38,7 @@ Sie können Teile Ihrer Anwendung aus einem Modell generieren oder konfigurieren
  Wenn Sie allerdings mit einer vorhandenen Anwendung starten, ist möglicherweise viel Umgestaltung erforderlich, um die verschiedenen Verhaltensweisen, die vom Modell gesteuert werden, zu trennen, damit sie unabhängig voneinander variiert werden können. Wir empfehlen, dass Sie diesen Aspekt der Anwendung bewerten, wenn Sie die Kosten des Projekts schätzen.  
   
 ## <a name="configuring-your-application-from-a-model"></a>Konfigurieren der Anwendung aus einem Modell  
- Wenn Sie das Verhalten der Anwendung zur Laufzeit ändern möchten, können Sie nicht die Codegenerierung verwenden, die Quellcode generiert, bevor die Anwendung kompiliert wird. Stattdessen können Sie die Anwendung, die das Modell lesen und ihr Verhalten entsprechend anpasst entwerfen. Weitere Informationen finden Sie unter:  
+ Wenn Sie das Verhalten der Anwendung zur Laufzeit ändern möchten, können Sie nicht die Codegenerierung verwenden, die Quellcode generiert, bevor die Anwendung kompiliert wird. Stattdessen können Sie die Anwendung aus, um das Modell zu lesen, und sein Verhalten entsprechend variiert entwerfen. Weitere Informationen finden Sie unter:  
   
 -   [Gewusst wie: Öffnen eines Modells aus einer Datei im Programmcode](../modeling/how-to-open-a-model-from-file-in-program-code.md)  
   
@@ -63,11 +49,11 @@ Sie können Teile Ihrer Anwendung aus einem Modell generieren oder konfigurieren
 ## <a name="developing-a-derived-application"></a>Entwickeln einer abgeleiteten Anwendung  
  Die folgenden allgemeinen Richtlinien könnten hilfreich sein.  
   
--   **Beginnen Sie spezifisch und gehen Sie dann.** Schreiben Sie zuerst eine spezifische Version der Anwendung. Diese Version sollte in einem Satz von Bedingungen funktionieren. Wenn Sie zufrieden sind und sie ordnungsgemäß funktioniert, können Sie einen Teil von ihr aus einem Modell ableiten. Erweitern Sie die abgeleiteten Teile nach und nach.  
+-   **Beginnen Sie spezifisch, und generalisieren.** Schreiben Sie zuerst eine spezifische Version der Anwendung. Diese Version sollte in einem Satz von Bedingungen funktionieren. Wenn Sie zufrieden sind und sie ordnungsgemäß funktioniert, können Sie einen Teil von ihr aus einem Modell ableiten. Erweitern Sie die abgeleiteten Teile nach und nach.  
   
      Entwerfen Sie beispielsweise eine Website, die über einen bestimmten Satz von Webseiten verfügt, bevor Sie eine Webanwendung entwerfen, die Seiten dargestellt, die in einem Modell definiert sind.  
   
--   **Modellieren Sie die veränderlichen Aspekte.** Identifizieren Sie die Aspekte, die entweder zwischen zwei Bereitstellungen oder im Laufe der Zeit, wenn sich die Anforderungen ändern, abweichen werden. Diese Aspekte sollten aus einem Modell abgeleitet werden.  
+-   **Die Variante Aspekte zu modellieren.** Identifizieren Sie die Aspekte, die entweder zwischen zwei Bereitstellungen oder im Laufe der Zeit, wenn sich die Anforderungen ändern, abweichen werden. Diese Aspekte sollten aus einem Modell abgeleitet werden.  
   
      Wenn sich beispielsweise der Satz von Webseiten und die Verknüpfungen zwischen ihnen ändern, Stil und Format der Seiten jedoch immer gleich sind, sollte das Modell die Verknüpfungen beschreiben, aber nicht unbedingt das Format der Seiten.  
   
@@ -75,7 +61,7 @@ Sie können Teile Ihrer Anwendung aus einem Modell generieren oder konfigurieren
   
      Verwenden Sie beispielsweise ein Modell, um die Navigation zwischen Webseiten zu definieren, und ein anderes Modell, um das Layout der Seiten zu definieren.
   
--   **Modellieren Sie die Anforderung, nicht die Projektmappe.** Entwerfen Sie das Modell so, dass die Anforderungen beschrieben. Entwerfen Sie aber nicht die Schreibweise entsprechend den abweichenden Aspekten der Implementierung.  
+-   **Die Anforderung, nicht die Projektmappe zu modellieren.** Entwerfen Sie das Modell aus, sodass die benutzeranforderungen beschrieben. Entwerfen Sie aber nicht die Schreibweise entsprechend den abweichenden Aspekten der Implementierung.  
   
      Zum Beispiel sollte das Webnavigationsmodell Webseiten und Hyperlinks zwischen diesen darstellen. Das Webnavigationsmodell sollte keine Fragmente von HTML oder Klassen in der Anwendung darstellen.  
   
@@ -88,6 +74,6 @@ Sie können Teile Ihrer Anwendung aus einem Modell generieren oder konfigurieren
      Ein UML-Klassendiagramm beispielsweise ist eine Auflistung von Feldern und Pfeilen. Mit dieser Schreibweise können Sie theoretisch alles definieren. Jedoch empfehlen wir nicht, dass Sie das Klassendiagramm verwenden, es sei denn, Sie beschreiben tatsächlich einen Satz von Typen. Beispielsweise könnten Sie Klassendiagramme so anpassen,dass verschiedene Arten von Webseiten beschrieben werden.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Generieren von Code für eine domänenspezifische Sprache](../modeling/generating-code-from-a-domain-specific-language.md)   
- [Gewusst wie: Öffnen eines Modells aus einer Datei im Programmcode](../modeling/how-to-open-a-model-from-file-in-program-code.md)   
+ [Generieren von Code aus einer domänenspezifischen Sprache](../modeling/generating-code-from-a-domain-specific-language.md)   
+ [Vorgehensweise: Öffnen Sie ein Modell aus der Datei im Programmcode](../modeling/how-to-open-a-model-from-file-in-program-code.md)   
  [Generieren von Code zur Entwurfszeit mithilfe von T4-Textvorlagen](../modeling/design-time-code-generation-by-using-t4-text-templates.md)

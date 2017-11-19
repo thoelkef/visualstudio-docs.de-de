@@ -1,52 +1,54 @@
 ---
-title: "IDebugGenericParamField::ConstraintCount | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "ConstraintCount"
-  - "IDebugGenericParamField::ConstraintCount"
+title: IDebugGenericParamField::ConstraintCount | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- ConstraintCount
+- IDebugGenericParamField::ConstraintCount
 ms.assetid: 76bef0cb-8a3c-4ce5-87cc-1809de229f33
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 58c266beca272a13399a97378c9be14792912f60
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugGenericParamField::ConstraintCount
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Gibt die Anzahl der Einschränkungen zurück, die bei diesem generischen Parameter zugeordnet sind.  
+# <a name="idebuggenericparamfieldconstraintcount"></a>IDebugGenericParamField::ConstraintCount
+Gibt die Anzahl der Einschränkungen, die diese generischen Parameter zugeordnet sind.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT ConstraintCount(  
-   ULONG32* pcConst  
+   ULONG32* pcConst  
 );  
 ```  
   
-```c#  
+```csharp  
 int ConstraintCount(  
-   ref uint pcConst  
+   ref uint pcConst  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `pcConst`  
- \[in, out\]  Die Anzahl der Einschränkungen, die diesem Feld zugeordnet sind.  
+ [in, out] Anzahl der Einschränkungen, die diesem Feld zugeordnet sind.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Beispiel  
- Im folgenden Beispiel wird veranschaulicht, wie diese Methode für ein **CDebugGenericParamFieldType\-Objekt** implementiert, das die [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)\-Schnittstelle verfügbar macht.  
+## <a name="example"></a>Beispiel  
+ Das folgende Beispiel veranschaulicht die Implementierung dieser Methode für eine **CDebugGenericParamFieldType** -Objekt, das macht die [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md) Schnittstelle.  
   
-```cpp#  
+```cpp  
 HRESULT CDebugGenericParamFieldType::ConstraintCount(ULONG32* pcConst)  
 {  
     HRESULT hr = S_OK;  
@@ -79,5 +81,5 @@ Error:
 }  
 ```  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)

@@ -1,40 +1,41 @@
 ---
-title: "IDebugPrimitiveTypeField | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "IDebugPrimitiveTypeField-Schnittstelle"
+title: IDebugPrimitiveTypeField | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: IDebugPrimitiveTypeField interface
 ms.assetid: 73a428fd-797e-4ceb-8392-ba16f1c5226b
-caps.latest.revision: 6
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 6
+caps.latest.revision: "6"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 817f788c90eea9d52d5579aa7f2d6a73ea129eb3
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugPrimitiveTypeField
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Stellt einen Typ enumerationswert aus einer [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)\-Schnittstelle dar.  
+# <a name="idebugprimitivetypefield"></a>IDebugPrimitiveTypeField
+Stellt einen primitiven Typ Enumerationswert aus einer [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) Schnittstelle.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 IDebugPrimitiveTypeField : IDebugField  
 ```  
   
-## Methoden  
- Zusätzlich zu den Methoden der [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)\-Schnittstelle implementiert diese Schnittstelle die folgende Methode:  
+## <a name="methods"></a>Methoden  
+ Zusätzlich zu den Methoden für die [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) diese Schnittstelle implementiert, die folgende Methode:  
   
 |Methode|Beschreibung|  
-|-------------|------------------|  
-|[GetPrimitiveType](../../../extensibility/debugger/reference/idebugprimitivetypefield-getprimitivetype.md)|Ruft den Typ ab, dem dieses Feld zugeordnet ist.|  
+|------------|-----------------|  
+|[GetPrimitiveType](../../../extensibility/debugger/reference/idebugprimitivetypefield-getprimitivetype.md)|Ruft den primitiven Typ, der diesem Feld zugeordnet.|  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  Header: Sh.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  

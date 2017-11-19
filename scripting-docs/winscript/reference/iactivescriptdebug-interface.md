@@ -1,36 +1,39 @@
 ---
-title: "IActiveScriptDebug-Schnittstelle | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
-helpviewer_keywords: 
-  - "IActiveScriptDebug-Schnittstelle"
+title: IActiveScriptDebug-Schnittstelle | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
+helpviewer_keywords: IActiveScriptDebug interface
 ms.assetid: e3e28cba-ee08-4a52-973a-b74be488c348
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: a1e1d0c1cf51c63f1bb3fcd90ae72520da907e50
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# IActiveScriptDebug-Schnittstelle
-Wird von Skriptmodule, die das Debuggen unterstützen.  In der Regel implementiert ein Objekt, das die `IActiveScriptDebug`\-Schnittstelle implementiert, auch die `IActiveScript`\-Schnittstelle.  Wenn dies der Fall ist, rufen Sie die `IActiveScript::QueryInterface`\-Methode auf, erhält die `IActiveScriptDebug`\-Schnittstelle.  
+# <a name="iactivescriptdebug-interface"></a>IActiveScriptDebug-Schnittstelle
+Implementiert, indem Script-Module, unterstützen das Debuggen. In der Regel ein Objekt, implementiert die `IActiveScriptDebug` Schnittstelle auch implementiert die `IActiveScript` Schnittstelle. Wenn dies der Fall ist, rufen Sie die `IActiveScript::QueryInterface` Methode zum Abrufen der `IActiveScriptDebug` Schnittstelle.  
   
- Die `IActiveScriptDebug`\-Schnittstelle stellt die Mittel bereit:  
+ Die `IActiveScriptDebug` Schnittstelle bietet die notwendigen Mittel zum:  
   
--   Smarthosts, um die Dokumentenverwaltung anzuwenden.  
+-   Smarthosts Dokumentverwaltungsfunktionen übernehmen.  
   
--   Debuggen Manager des Prozesses, um das Debuggen mehrerer Skriptmodule zu synchronisieren.  
+-   Prozess-Debug-Manager mit dem Debuggen von mehreren Skriptmodule synchronisiert.  
   
- Zusätzlich zu den von `IUnknown` geerbten Methoden macht die `IActiveScriptDebug`\-Schnittstelle die folgenden Methoden verfügbar.  
+ Zusätzlich zu den von geerbten Methoden `IUnknown`, `IActiveScriptDebug` Schnittstelle macht die folgenden Methoden verfügbar.  
   
-## Methoden in Vtable\-Reihenfolge  
+## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
   
-|Methode|Description|  
-|-------------|-----------------|  
-|[IActiveScriptDebug::GetScriptTextAttributes](../../winscript/reference/iactivescriptdebug-getscripttextattributes.md)|Gibt die Textattribute für einen beliebigen Block Skripttext zurück.|  
-|[IActiveScriptDebug::GetScriptletTextAttributes](../../winscript/reference/iactivescriptdebug-getscriptlettextattributes.md)|Gibt die Textattribute für ein beliebiges Skriptlet zurück.|  
-|[IActiveScriptDebug::EnumCodeContextsOfPosition](../../winscript/reference/iactivescriptdebug-enumcodecontextsofposition.md)|Delegaten zu `IDebugDocumentContext::EnumCodeContexts`.|
+|Methode|Beschreibung|  
+|------------|-----------------|  
+|[IActiveScriptDebug::GetScriptTextAttributes](../../winscript/reference/iactivescriptdebug-getscripttextattributes.md)|Gibt die Textattribute für einen beliebigen TextBlock Skript.|  
+|[IActiveScriptDebug::GetScriptletTextAttributes](../../winscript/reference/iactivescriptdebug-getscriptlettextattributes.md)|Gibt den Textattribute für eine beliebige Scriptlet zurück.|  
+|[IActiveScriptDebug::EnumCodeContextsOfPosition](../../winscript/reference/iactivescriptdebug-enumcodecontextsofposition.md)|Delegiert an `IDebugDocumentContext::EnumCodeContexts`.|

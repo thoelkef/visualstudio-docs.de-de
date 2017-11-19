@@ -1,121 +1,121 @@
 ---
-title: "ClickOnce Security and Deployment | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-deployment"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "Windows applications, ClickOnce deployment"
-  - "deploying applications [ClickOnce]"
-  - "ClickOnce deployment"
-  - "publishing, ClickOnce"
+title: ClickOnce-Sicherheit und Bereitstellung | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-deployment
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- C++
+helpviewer_keywords:
+- Windows applications, ClickOnce deployment
+- deploying applications [ClickOnce]
+- ClickOnce deployment
+- publishing, ClickOnce
 ms.assetid: abab6d34-c3c2-45c1-a8b6-43c7d3131e7a
-caps.latest.revision: 32
-caps.handback.revision: 32
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
+caps.latest.revision: "32"
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+ms.openlocfilehash: 7e56d596c37960ddfa548921da897f08fbfbbf5b
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# ClickOnce Security and Deployment
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ist eine Bereitstellungstechnologie, mit der selbstaktualisierende Windows\-basierte Anwendungen erstellt werden können, für deren Installation und Ausführung sehr wenig Benutzerinteraktion erforderlich ist. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] bietet vollständige Unterstützung zur Veröffentlichung und Aktualisierung von Anwendungen, die mit ClickOnce\-Technologie bereitgestellt wurden, sofern die Projekte mithilfe von Visual Basic und Visual C\# entwickelt wurden.  Informationen zum Bereitstellen von Visual C\+\+\-Anwendungen finden Sie unter [ClickOnce\-Bereitstellung für Visual C\+\+\-Anwendungen](/visual-cpp/ide/clickonce-deployment-for-visual-cpp-applications).  
+# <a name="clickonce-security-and-deployment"></a>ClickOnce-Sicherheit und Bereitstellung
+[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]ist eine bereitstellungstechnologie, mit dem Sie selbstaktualisierung Windows-basierten Anwendungen erstellen, die installiert und mit minimaler Benutzerinteraktion ausgeführt werden können. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]bietet vollständige Unterstützung für das Veröffentlichen und Aktualisieren von Anwendungen mit ClickOnce-Technologie bereitgestellt werden, wenn Sie Ihre Projekte mit Visual Basic und Visual c# entwickelt haben. Informationen zum Bereitstellen von Visual C++-Anwendungen finden Sie unter [ClickOnce-Bereitstellung für Visual C++-Anwendungen](/cpp/ide/clickonce-deployment-for-visual-cpp-applications).  
   
- Die [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]\-Bereitstellung löst drei Hauptprobleme bei der Bereitstellung:  
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]Bereitstellung überwunden werden drei wichtige Aspekte, die bei der Bereitstellung:  
   
--   **Schwierigkeiten beim Aktualisieren von Anwendungen.** Bei der Bereitstellung mit Microsoft Windows Installer kann der Benutzer bei jeder Aktualisierung ein Update \(eine MSP\-Datei\) installieren und auf das installierte Produkt anwenden. Mit [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] können Sie Updates automatisch bereitstellen.  Dabei werden nur die Teile der Anwendung heruntergeladen, die geändert wurden. Anschließend wird die vollständige aktualisierte Anwendung von einem neuen parallelen Ordner aus neu installiert.  
+-   **Probleme beim Aktualisieren von Anwendungen.** Mit Microsoft Windows Installer-Bereitstellung Wenn eine Anwendung aktualisiert wird, der Benutzer kann ein Update, ein MSP-Datei installiert und auf das installierte Produkt angewendet; mit [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Bereitstellung, Sie können Updates automatisch bereitstellt. Nur die Teile der Anwendung, die geändert wurden, werden heruntergeladen und über einen neuen Ordner für die Seite-an-Seite klicken Sie dann auf die vollständige, aktualisierte Anwendung neu installiert.  
   
--   **Auswirkungen auf den Computer des Benutzers.** Bei der Bereitstellung mit Windows Installer hängen Anwendungen oft von gemeinsam genutzten Komponenten ab. Dies kann zu Versionskonflikten führen. Bei der [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]\-Bereitstellung ist jede Anwendung völlig unabhängig und verursacht keine Konflikte mit anderen Anwendungen.  
+-   **Auswirkungen auf dem Computer des Benutzers.** Mit Windows Installer-Bereitstellung basieren die Anwendungen häufig auf gemeinsam genutzte Komponenten, mit einem möglichen Versionskonflikte; mit [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Bereitstellung, jede Anwendung ist in sich geschlossen und kann nicht in Konflikt mit anderen Anwendungen.  
   
--   **Sicherheitsberechtigungen.** Bei der Bereitstellung mit Windows Installer sind Administratorberechtigungen erforderlich. Außerdem ist nur eine eingeschränkte Benutzerinstallation möglich. Bei der [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]\-Bereitstellung kann die Installation durch Benutzer ohne Administratorberechtigungen erfolgen. Es werden nur die Rechte für Codezugriffssicherheit gewährt, die für die Anwendung erforderlich sind.  
+-   **Sicherheitsberechtigungen.** Windows Installer-Bereitstellung sind Administratorrechte erforderlich und kann nur Benutzer mit eingeschränkten Rechten installiert werden. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Bereitstellung ermöglicht Nichtadministrator-Benutzern zur Installation und gewährt nur die Code Access Security-Berechtigungen für die Anwendung erforderlich.  
   
- In der Vergangenheit haben diese Probleme manchmal dazu geführt, dass Webanwendungen anstelle von Windows\-Anwendungen entwickelt wurden. Dabei gingen die umfangreichen Features für die Benutzeroberfläche zu Gunsten der einfacheren Installation verloren.  Bei Anwendungen, die mit [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] bereitgestellt werden, können Sie die Vorzüge beider Technologien nutzen.  
+ In der Vergangenheit liegen verursacht diese Probleme mitunter Entwickler zum Erstellen von Web-Anwendungen anstelle von Windows-basierten Anwendungen verwendet werden, müssen eine umfangreiche Benutzeroberfläche für die einfache Installation entscheiden. Mithilfe von Anwendungen bereitgestellt, mit [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], dass das Beste beider Technologien.  
   
-## Was ist eine ClickOnce\-Anwendung?  
- Eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]\-Anwendung ist eine Windows Presentation Foundation \(XBAP\-Format\)\-, Windows Forms \(EXE\-Format\)\-, Konsolenanwendungs \(EXE\-Format\)\- oder Office \(DLL\-Format\)\-Lösung, die unter Verwendung der [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]\-Technologie veröffentlicht wurde.  Sie können eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]\-Anwendung auf drei Arten veröffentlichen: auf einer Webseite, in einer Dateifreigabe im Netzwerk oder auf einem Datenträger wie einer CD\-ROM.  Eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]\-Anwendung kann auf dem Computer des Endbenutzers installiert und lokal ausgeführt werden, auch wenn der Computer offline ist, oder sie kann als nur online verfügbares Programm ausgeführt werden, ohne dass auf dem Computer des Endbenutzers Dateien installiert werden.  Weitere Informationen finden Sie unter [Choosing a ClickOnce Deployment Strategy](../deployment/choosing-a-clickonce-deployment-strategy.md).  
+## <a name="what-is-a-clickonce-application"></a>Was ist eine ClickOnce-Anwendung?  
+ Ein [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung ist eine beliebige Windows Presentation Foundation (XBAP), Windows Forms (.exe), Konsolenanwendung (.exe) oder Office-Projektmappe (.dll) mithilfe der veröffentlicht [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Technologie. Sie veröffentlichen eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung auf drei verschiedene Arten: von einer Webseite, aus einer Dateifreigabe im Netzwerk oder von einem Medium wie einer CD-ROM. Ein [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung kann auf dem Computer des Endbenutzers installiert und lokal ausgeführt werden, auch wenn der Computer offline ist oder in einem nur online-Modus ohne etwas dauerhaft auf dem Computer des Endbenutzers installiert ausgeführt werden. Weitere Informationen finden Sie unter [Auswählen einer Strategie für die ClickOnce-Bereitstellung](../deployment/choosing-a-clickonce-deployment-strategy.md).  
   
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]\-Anwendungen können sich selbst aktualisieren. Dabei können sie prüfen, ob neuere Versionen vorliegen, und die aktualisierten Dateien automatisch austauschen.  Der Entwickler kann das Updateverhalten festlegen. Der Netzwerkadministrator kann ebenfalls Updatestrategien steuern und ein Update z. B. als obligatorisch kennzeichnen.  Der Endbenutzer oder Administrator kann ein Update auch auf eine vorherige Version zurücksetzen.  Weitere Informationen hierzu finden Sie unter [Choosing a ClickOnce Update Strategy](../deployment/choosing-a-clickonce-update-strategy.md).  
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]Anwendungen können selbstaktualisierung; Sie können überprüfen, neuere Versionen verfügbar, und Ersetzen Sie alle aktualisierten Dateien automatisch. Der Entwickler kann das Updateverhalten festlegen. Ein Netzwerkadministrator kann auch steuern, Aktualisierungsstrategien, z. B. ein Update als obligatorisch kennzeichnen. Updates können auch auf eine frühere Version vom Endbenutzer oder vom Administrator rückgängig gemacht werden. Weitere Informationen finden Sie unter [Auswählen einer Strategie für die ClickOnce-Aktualisierung](../deployment/choosing-a-clickonce-update-strategy.md).  
   
- Da [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]\-Anwendungen isoliert sind, kann das Installieren oder Ausführen einer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]\-Anwendung vorhandene Anwendungen nicht beschädigen.  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]\-Anwendungen sind in sich abgeschlossen. Jede [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]\-Anwendung wird je Benutzer bzw. je Anwendung in einen sicheren Cache installiert und dort ausgeführt.  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]\-Anwendungen werden in der Sicherheitszone für das Internet oder Intranet ausgeführt.  Falls notwendig kann die Anwendung erhöhte Sicherheitsberechtigungen anfordern.  Weitere Informationen finden Sie unter [Sichern von ClickOnce\-Anwendungen](../deployment/securing-clickonce-applications.md).  
+ Da [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendungen sind isoliert, installieren oder Ausführen einer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung kann nicht unterbrochen werden vorhandene Anwendungen. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]Anwendungen sind eigenständig und enthalten; Jede [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung installiert ist, und führen Sie von einem sicheren, Benutzer Cache pro Anwendung. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]Anwendungen, die im Internet oder Intranet Sicherheitszonen ausgeführt werden. Bei Bedarf kann die Anwendung mit erhöhten Rechten Sicherheitsberechtigungen anfordern. Weitere Informationen finden Sie unter [Sichern von ClickOnce-Anwendungen](../deployment/securing-clickonce-applications.md).  
   
-## Funktionsweise der ClickOnce\-Sicherheit  
- Die [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]\-Kernsicherheit basiert auf Zertifikaten, Codezugriffssicherheitsrichtlinien und der vertrauenswürdigen ClickOnce\-Eingabeaufforderung.  
+## <a name="how-clickonce-security-works"></a>Funktionsweise von ClickOnce-Sicherheit  
+ Der Kern [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Sicherheit basiert auf Zertifikaten, Codezugriffs-Sicherheitsrichtlinien und die ClickOnce-vertrauensaufforderung.  
   
-### Zertifikate  
- Authenticode\-Zertifikate werden zur Überprüfung der Echtheit des Herausgebers der Anwendung verwendet.  Durch die Verwendung von Authenticode zur Anwendungsbereitstellung ist ClickOnce dabei behilflich, schädliche Programme davon abzuhalten, sich als rechtmäßiges Programm mit vertrauenswürdiger Quelle auszugeben.  Optional können Zertifikate auch zur Unterzeichnung der Anwendung und der Bereitstellungsmanifeste verwendet werden. So kann bewiesen werden, dass die Dateien nicht verändert wurden.  Weitere Informationen finden Sie unter [ClickOnce und Authenticode](../deployment/clickonce-and-authenticode.md).  Zertifikate können ebenfalls verwendet werden, um Clientcomputer für die Integration einer Liste vertrauenswürdiger Herausgeber zu konfigurieren.  Wurde eine Anwendung von einem vertrauenswürdigen Herausgeber veröffentlicht, kann sie ohne Benutzerinteraktion installiert werden.  Weitere Informationen finden Sie unter [Überblick über die Bereitstellung vertrauenswürdiger Anwendungen](../deployment/trusted-application-deployment-overview.md).  
+### <a name="certificates"></a>Zertifikate  
+ Authenticode-Zertifikate werden verwendet, um die Echtheit des Herausgebers der Anwendung zu überprüfen. Mithilfe von Authenticode für die Bereitstellung einer Anwendung verhindert ClickOnce ein schädliches Programm nahm selbst als sicheres Programm aus einer bekannten und vertrauenswürdigen Quelle stammen. Optional können Zertifikate auch zum Signieren der Anwendung verwendet werden und die Bereitstellungsmanifeste um nachzuweisen, dass die Dateien nicht manipuliert wurden. Weitere Informationen finden Sie unter [ClickOnce und Authenticode](../deployment/clickonce-and-authenticode.md). Zertifikate können auch verwendet werden, zum Konfigurieren von Clientcomputern, um eine Liste der vertrauenswürdigen Herausgeber verfügen. Wenn eine Anwendung von einem vertrauenswürdigen Herausgeber stammen, kann er ohne Eingreifen des Benutzers installiert werden. Weitere Informationen finden Sie unter [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md).  
   
-### Codezugriffssicherheit  
- Mit der Funktion für die Codezugriffssicherheit lässt sich der Codezugriff auf geschützte Ressourcen einschränken.  In den meisten Fällen können Sie die Zonen "Internet" oder "Lokales Intranet" auswählen, um die Berechtigungen zu beschränken.  Verwenden Sie im **Projekt**\-**Designer** die Seite **Sicherheit**, um die für die Anwendung erforderliche Zone anzufordern.  Sie können auch Anwendungen mit eingeschränkten Berechtigungen debuggen, um die Endbenutzererfahrung zu emulieren.  Weitere Informationen finden Sie unter [Codezugriffssicherheit für ClickOnce\-Anwendungen](../deployment/code-access-security-for-clickonce-applications.md).  
+### <a name="code-access-security"></a>Codezugriffssicherheit  
+ Codezugriffssicherheit wird den Zugriff zu begrenzen, den Code auf geschützte Ressourcen hat. In den meisten Fällen können Sie die Zonen "Internet" oder "Lokales Intranet befinden, die Berechtigungen zu beschränken. Verwenden der **Sicherheit** auf der Seite der **ProjectDesigner** , die für die Anwendung entsprechende Zone anfordert. Sie können auch Debuggen von Anwendungen mit eingeschränkten Berechtigungen für den Endbenutzer zu emulieren. Weitere Informationen finden Sie unter [Codezugriffssicherheit für ClickOnce-Anwendungen](../deployment/code-access-security-for-clickonce-applications.md).  
   
-### ClickOnce\-Eingabeaufforderung zur Vertrauenswürdigkeit  
- Fordert die Anwendung mehr Berechtigungen an als die Zone zulässt, kann der Endbenutzer zum Treffen einer Entscheidung über die Vertrauenswürdigkeit aufgefordert werden.  Der Endbenutzer kann entscheiden, ob ClickOnce\-Anwendungen, wie Windows Forms\-Anwendungen, Windows Presentation Foundation\-Anwendungen, Konsolenanwendungen, XAML\-Browseranwendungen und Office\-Lösungen vertrauenswürdig sind und ausgeführt werden dürfen.  Weitere Informationen finden Sie unter [How to: Configure the ClickOnce Trust Prompt Behavior](../deployment/how-to-configure-the-clickonce-trust-prompt-behavior.md).  
+### <a name="clickonce-trust-prompt"></a>ClickOnce-Vertrauensaufforderung  
+ Wenn die Anwendung mehr Berechtigungen fordert als die Zone zulässt, kann der Endbenutzer aufgefordert werden, um eine Vertrauensstellung Entscheidung zu treffen. Die Endbenutzer können entscheiden, ob ClickOnce-Anwendungen wie z. B. Windows Forms-Anwendungen, Windows Presentation Foundation-Anwendungen, konsolenanwendungen, XAML-Browseranwendungen und Office-Projektmappen vertrauenswürdig ist und ausgeführt werden. Weitere Informationen finden Sie unter [Vorgehensweise: Konfigurieren der ClickOnce-vertrauen Verhalten der Authentifizierungeingabeaufforderung](../deployment/how-to-configure-the-clickonce-trust-prompt-behavior.md).  
   
-## Funktionsweise der ClickOnce\-Bereitstellung  
- Der Kern der [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]\-Bereitstellungsarchitektur beruht auf zwei XML\-Manifestdateien: einem Anwendungsmanifest und einem Bereitstellungsmanifest.  Die Dateien werden zur Beschreibung verwendet, von wo die ClickOnce\-Anwendungen installiert werden und wie und wann sie aktualisiert werden.  
+## <a name="how-clickonce-deployment-works"></a>Funktionsweise der ClickOnce-Bereitstellung  
+ Der Kern [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Bereitstellungsarchitektur basiert auf zwei XML-Manifestdateien: ein Anwendungsmanifest und ein Bereitstellungsmanifest. Die Dateien werden verwendet, um zu beschreiben, auf dem die ClickOnce-Anwendungen aus installiert werden, wie sie aktualisiert werden und wenn sie aktualisiert werden.  
   
-### Veröffentlichen von ClickOnce\-Anwendungen  
- Im Anwendungsmanifest wird die Anwendung selbst beschrieben.  Eingeschlossen sind dabei die Assemblys, die Abhängigkeiten und die Dateien, aus denen die Anwendung besteht, die erforderlichen Berechtigungen und der Speicherort, an dem Updates verfügbar sind.  Der Anwendungsentwickler erstellt das Anwendungsmanifest mit dem Webpublishing\-Assistenten in Visual Studio oder mit dem Tool zum Generieren und Bearbeiten von Manifesten \(Mage.exe\) in [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)].  Weitere Informationen finden Sie unter [How to: Publish a ClickOnce Application using the Publish Wizard](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).  
+### <a name="publishing-clickonce-applications"></a>Veröffentlichen von ClickOnce-Anwendungen  
+ Das Anwendungsmanifest beschreibt die Anwendung selbst. Dies schließt die Assemblys, die Abhängigkeiten und Dateien, aus denen die Anwendung, die erforderlichen Berechtigungen und den Speicherort, in denen Updates zur Verfügung stehen. Der Anwendungsentwickler erstellt das Anwendungsmanifest mit dem Webpublishing-Assistenten in Visual Studio oder das Manifest Tool zum Generieren und bearbeiten (Mage.exe) in der [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]. Weitere Informationen finden Sie unter [Vorgehensweise: Veröffentlichen einer ClickOnce-Anwendung mit dem Webpublishing-Assistenten](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).  
   
- Im Bereitstellungsmanifest wird beschrieben, wie die Anwendung bereitgestellt wird.  Eingeschlossen sind dabei der Speicherort des Anwendungsmanifests sowie die Version der Anwendung, die auf den Clients ausgeführt wird.  
+ Das Bereitstellungsmanifest beschreibt, wie die Anwendung bereitgestellt wird. Dies schließt den Speicherort des Anwendungsmanifests und der Version der Anwendung, die Clients ausgeführt werden soll.  
   
-### Bereitstellen von ClickOnce\-Anwendungen  
- Nach der Erstellung wird das Bereitstellungsmanifest an den Bereitstellungsspeicherort kopiert.  Hierbei kann es sich um einen Webserver, eine Dateifreigabe im Netzwerk oder einen Datenträger wie eine CD handeln.  Außerdem werden das Anwendungsmanifest und alle Anwendungsdateien an einen Bereitstellungsspeicherort kopiert, der im Bereitstellungsmanifest angegeben ist.  Dies kann derselbe Bereitstellungsspeicherort oder ein anderer Speicherort sein.  Wenn Sie den **Webpublishing\-Assistenten** in Visual Studio verwenden, werden die Kopiervorgänge automatisch ausgeführt.  
+### <a name="deploying-clickonce-applications"></a>Bereitstellen von ClickOnce-Anwendungen  
+ Nachdem sie erstellt wurde, wird das Bereitstellungsmanifest an den Bereitstellungsspeicherort kopiert. Dies kann ein Web-Server, Netzwerk-Dateifreigabe oder Medien wie CD sein. Das Anwendungsmanifest und alle Dateien der Anwendung werden auch in einen Speicherort für die Bereitstellung kopiert, die im Bereitstellungsmanifest angegeben ist. Dies kann der Speicherort für die Bereitstellung identisch sein, oder es kann sich auf einem anderen Speicherort. Bei Verwendung der **Veröffentlichungs-Assistenten** in Visual Studio werden die Kopiervorgänge automatisch ausgeführt.  
   
-### Installieren von ClickOnce\-Anwendungen  
- Nach der Bereitstellung am Bereitstellungsspeicherort können Endbenutzer die Anwendung herunterladen und installieren, indem Sie auf einer Webseite oder in einem Ordner auf das Symbol doppelklicken, dass die Datei mit dem Bereitstellungsmanifest darstellt.  In den meisten Fällen wird ein einfaches Dialogfeld angezeigt, in dem der Endbenutzer die Installation bestätigen muss. Anschließend erfolgt die die Installation ohne weiteren Eingriff, und die Anwendung wird gestartet.  In Situationen, in denen für die Anwendung höhere Berechtigungen erforderlich sind oder die Anwendung nicht mit einem vertrauenswürdigen Zertifikat unterzeichnet wurde, wird der Benutzer im Dialogfeld außerdem dazu aufgefordert, die Berechtigungen zu gewähren, bevor die Installation fortfahren kann.  Obwohl ClickOnce für einzelne Benutzer installiert wird, kann die Berechtigungsausweitung erforderlich sein, wenn für erforderliche Komponenten Administratorrechte benötigt werden.  Weitere Informationen zu erweiterten Berechtigungen finden Sie unter [Sichern von ClickOnce\-Anwendungen](../deployment/securing-clickonce-applications.md).  
+### <a name="installing-clickonce-applications"></a>Installieren der ClickOnce-Anwendungen  
+ Nachdem sie an den Bereitstellungsspeicherort bereitgestellt wurde, können Endbenutzer herunterladen und installieren Sie die Anwendung, indem Sie auf ein Symbol, das die Bereitstellungsmanifestdatei auf einer Webseite oder in einem Ordner darstellt. In den meisten Fällen erhält der Endbenutzer mit einem einfachen Dialogfeld fordert den Benutzer bestätigen, nachdem die Installation wird fortgesetzt, und die Anwendung, ohne weiteren Eingriff gestartet wird. In Fällen, in denen die Anwendung erfordert, erhöhten Berechtigungen, oder wenn die Anwendung nicht von einem vertrauenswürdigen Zertifikat signiert ist, fordert das Dialogfeld auch den Benutzer auf die Berechtigung zu erteilen, bevor die Installation fortgesetzt werden kann. Obwohl ClickOnce-Installationen pro Benutzer sind, möglicherweise berechtigungserweiterung erforderlich, wenn erforderliche Komponenten, die Administratorrechte erfordern vorhanden sind. Weitere Informationen zu erweiterten Berechtigungen finden Sie unter [Sichern von ClickOnce-Anwendungen](../deployment/securing-clickonce-applications.md).  
   
- Zertifikate können über Vertrauenswürdigkeit auf Computer\- oder Unternehmensebene verfügen. So können vertrauenswürdige ClickOnce\-Anwendungen automatisch installiert werden.  Weitere Informationen über vertrauenswürdige Zertifikate finden Sie unter [Überblick über die Bereitstellung vertrauenswürdiger Anwendungen](../deployment/trusted-application-deployment-overview.md).  
+ Zertifikate können vertrauenswürdige Ebene der Computer- oder Unternehmensebene sein, damit ClickOnce-Anwendungen, die mit einem vertrauenswürdigen Zertifikat signiert im Hintergrund installiert werden können. Weitere Informationen zu vertrauenswürdigen Zertifikaten finden Sie unter [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md).  
   
- Die Anwendung kann dem **Startmenü** des Benutzers und der Gruppe **Software** in der **Systemsteuerung** hinzugefügt werden.  Im Gegensatz zu anderen Bereitstellungstechnologien wird dem Ordner **Programme** oder der Registrierung nichts hinzugefügt, und für die Installation sind keine Administratorberechtigungen erforderlich.  
+ Die Anwendung kann des Benutzers hinzugefügt werden **starten** Menü und die **Software** in Gruppe der **Systemsteuerung**. Im Gegensatz zu anderen bereitstellungstechnologien ist keine Elemente hinzugefügt die **Programmdateien** Ordner oder die Registrierung und keine Administratorrechte für die Installation erforderlich sind  
   
 > [!NOTE]
->  Es kann auch festgelegt werden, dass die Anwendung nicht dem **Startmenü** und der Gruppe **Software** hinzugefügt wird. Die Anwendung verhält sich dann wie eine Webanwendung.  Weitere Informationen finden Sie unter [Choosing a ClickOnce Deployment Strategy](../deployment/choosing-a-clickonce-deployment-strategy.md).  
+>  Es ist auch möglich, zu verhindern, dass die Anwendung eingefügt werden die **starten** Menü und **Software** Gruppe faktisch somit verhält sich wie eine Webanwendung. Weitere Informationen finden Sie unter [Auswählen einer Strategie für die ClickOnce-Bereitstellung](../deployment/choosing-a-clickonce-deployment-strategy.md).  
   
-### Aktualisieren von ClickOnce\-Anwendungen  
- Beim Erstellen einer aktualisierten Version der Anwendung müssen Entwickler auch ein neues Anwendungsmanifest generieren und Dateien an einen Bereitstellungsspeicherort kopieren. Hierbei handelt es sich i. d. R. um einen nebengeordneten Ordner des ursprünglichen Bereitstellungsordners der Anwendung.  Der Administrator aktualisiert das Bereitstellungsmanifest, um den Speicherort der neuen Anwendungsversion anzugeben.  
+### <a name="updating-clickonce-applications"></a>Aktualisieren von ClickOnce-Anwendungen  
+ Wenn der Anwendungsentwickler eine aktualisierte Version der Anwendung erstellen, sie generieren ein neues Anwendungsmanifest und kopieren Sie Dateien auf einen Speicherort für die Bereitstellung – in der Regel einen gleichgeordneten Ordner in den ursprünglichen Bereitstellungsordner für die Anwendung. Der Administrator aktualisiert das Bereitstellungsmanifest, um auf den Speicherort der neuen Version der Anwendung zu verweisen.  
   
 > [!NOTE]
->  Diese Schritte können mit dem **Webpublishing\-Assistenten** in Visual Studio ausgeführt werden.  
+>  Die **Veröffentlichungs-Assistenten** in Visual Studio zum Ausführen dieser Schritte verwendet werden.  
   
- Zusätzlich zum Bereitstellungsspeicherort enthält das Bereitstellungsmanifest einen Updatepfad \(eine Webseite oder eine Dateifreigabe im Netzwerk\), über den die Anwendung nach aktualisierten Versionen sucht.  Die Eigenschaften für die Veröffentlichung in [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] geben an, wann und wie oft die Anwendung die Updates überprüfen soll.  Das Updateverhalten kann im Bereitstellungsmanifest angegeben werden. Mit den [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]\-APIs kann es aber auch in der Benutzeroberfläche der Anwendung als Auswahlmöglichkeit für den Benutzer angezeigt werden.  Außerdem können die **Publish**\-Eigenschaften verwendet werden, um Updates als obligatorisch zu kennzeichnen oder die Anwendung auf eine frühere Version zurückzusetzen.  Weitere Informationen hierzu finden Sie unter [Choosing a ClickOnce Update Strategy](../deployment/choosing-a-clickonce-update-strategy.md).  
+ Zusätzlich zu den Bereitstellungsspeicherort enthält das Bereitstellungsmanifest auch einen Updatespeicherort (eine Webseite oder eine Netzwerkdateifreigabe), in dem die Anwendung nach aktualisierten Versionen sucht. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]**Veröffentlichen** Eigenschaften werden verwendet, um anzugeben, wann und wie oft die Anwendung nach Updates suchen soll. Updateverhalten kann im Bereitstellungsmanifest angegeben werden, oder sie können als Benutzerauswahl in der Benutzeroberfläche mithilfe von der Anwendung angezeigt werden die [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] APIs. Darüber hinaus **veröffentlichen** Eigenschaften können verwendet werden, um Updates als obligatorisch festzulegen oder ein Rollback auf eine frühere Version. Weitere Informationen finden Sie unter [Auswählen einer Strategie für die ClickOnce-Aktualisierung](../deployment/choosing-a-clickonce-update-strategy.md).  
   
-### Drittanbieter\-Installationsprogramme  
- Sie können das ClickOnce\-Installationsprogramm so anpassen, dass Komponenten von Drittanbietern zusammen mit Ihrer Anwendung installiert werden.  Das verteilbare Paket \(EXE\- oder MSI\-Datei\) muss vorliegen und mit einem sprachunabhängigen Produktmanifest und einem sprachspezifischen Paketmanifest beschrieben werden.  Weitere Informationen finden Sie unter [Erstellen von Bootstrapperpaketen](../deployment/creating-bootstrapper-packages.md).  
+### <a name="third-party-installers"></a>Drittanbieter-Installationsprogramme  
+ Sie können Ihre ClickOnce-Installationsprogramms zum Installieren von Drittanbieter-Komponenten zusammen mit der Anwendung anpassen. Das redistributable Package (.exe oder .msi-Datei) muss und das Paket mit einem sprachneutrale Produktmanifest und ein Paketmanifest sprachspezifische beschreiben. Weitere Informationen finden Sie unter [Bootstrapperpakete erstellen](../deployment/creating-bootstrapper-packages.md).  
   
-## ClickOnce\-Tools  
- In der folgenden Tabelle sind die Tools zur Erstellung, Bearbeitung, Unterzeichnung und erneuten Unterzeichnung der Anwendungs\- und Bereitstellungsmanifeste abgebildet.  
+## <a name="clickonce-tools"></a>ClickOnce-Tools  
+ In der folgenden Tabelle zeigt die Tools, die Sie verwenden können, erstellen, bearbeiten, Signieren und signieren Sie die Anwendungs- und Bereitstellungsmanifeste erneut.  
   
 |Tool|Beschreibung|  
-|----------|------------------|  
-|[Seite "Sicherheit", Projekt\-Designer](../ide/reference/security-page-project-designer.md)|Unterzeichnet die Anwendungs\- und Bereitstellungsmanifeste.|  
-|[Seite "Veröffentlichen", Projekt\-Designer](../ide/reference/publish-page-project-designer.md)|Erstellt und bearbeitet die Anwendungs\- und Bereitstellungsmanifeste für Visual Basic\- und Visual C\#\-Anwendungen.|  
-|[Mage.exe \(Tool zum Generieren und Bearbeiten von Manifesten\)](../Topic/Mage.exe%20\(Manifest%20Generation%20and%20Editing%20Tool\).md)|Erstellt die Anwendungs\- und Bereitstellungsmanifeste für Visual Basic\-, Visual C\#\- und Visual C\+\+\-Anwendungen.<br /><br /> Unterzeichnet die Anwendungs\- und Bereitstellungsmanifeste bzw. unterzeichnet sie erneut.<br /><br /> Kann von Batchskripts und der Eingabeaufforderung ausgeführt werden.|  
-|[MageUI.exe \(Manifest Generation and Editing Tool, Graphical Client\)](../Topic/MageUI.exe%20\(Manifest%20Generation%20and%20Editing%20Tool,%20Graphical%20Client\).md)|Erstellt und bearbeitet die Anwendungs\- und Bereitstellungsmanifeste.<br /><br /> Unterzeichnet die Anwendungs\- und Bereitstellungsmanifeste bzw. unterzeichnet sie erneut.|  
-|[GenerateApplicationManifest Task](../msbuild/generateapplicationmanifest-task.md)|Erstellt das Anwendungsmanifest.<br /><br /> Kann in MSBuild ausgeführt werden.  Weitere Informationen hierzu finden Sie unter [MSBuild Reference](../msbuild/msbuild-reference.md).|  
-|[GenerateDeploymentManifest Task](../msbuild/generatedeploymentmanifest-task.md)|Erstellt das Bereitstellungsmanifest.<br /><br /> Kann in MSBuild ausgeführt werden.  Weitere Informationen hierzu finden Sie unter [MSBuild Reference](../msbuild/msbuild-reference.md).|  
-|[SignFile Task](../msbuild/signfile-task.md)|Unterzeichnet die Anwendungs\- und Bereitstellungsmanifeste.<br /><br /> Kann in MSBuild ausgeführt werden.  Weitere Informationen hierzu finden Sie unter [MSBuild Reference](../msbuild/msbuild-reference.md).|  
-|<xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities>|Entwickeln Sie eigene Anwendung, um die Anwendungs\- und die Bereitstellungsmanifeste zu generieren.|  
+|----------|-----------------|  
+|[Seite „Sicherheit“, Projekt-Designer](../ide/reference/security-page-project-designer.md)|Meldet die Anwendungs- und Bereitstellungsmanifeste.|  
+|[Seite „Veröffentlichen“, Projekt-Designer](../ide/reference/publish-page-project-designer.md)|Generiert und bearbeitet die Anwendungs- und Bereitstellungsmanifeste für Visual Basic und Visual C#-Anwendungen.|  
+|[Mage.exe (Tool zum Generieren und Bearbeiten von Manifesten)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)|Generiert die Anwendungs- und Bereitstellungsmanifeste für Visual Basic, Visual c# und Visual C++-Anwendungen.<br /><br /> Signiert und die Anwendungs- und Bereitstellungsmanifeste erneut signiert.<br /><br /> Kann von batchskripten und der Befehlszeile aus ausgeführt werden.|  
+|[MageUI.exe (Tool zum Generieren und Bearbeiten von Manifesten, grafischer Client)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)|Wird generiert, und die Anwendungs- und Bereitstellungsmanifeste bearbeitet.<br /><br /> Signiert und die Anwendungs- und Bereitstellungsmanifeste erneut signiert.|  
+|[GenerateApplicationManifest-Aufgabe](../msbuild/generateapplicationmanifest-task.md)|Generiert das Anwendungsmanifest.<br /><br /> Kann von MSBuild ausgeführt werden. Weitere Informationen finden Sie unter [Referenz zu MSBuild-](../msbuild/msbuild-reference.md).|  
+|[GenerateDeploymentManifest-Aufgabe](../msbuild/generatedeploymentmanifest-task.md)|Generiert das Bereitstellungsmanifest.<br /><br /> Kann von MSBuild ausgeführt werden. Weitere Informationen finden Sie unter [Referenz zu MSBuild-](../msbuild/msbuild-reference.md).|  
+|[SignFile-Aufgabe](../msbuild/signfile-task.md)|Meldet die Anwendungs- und Bereitstellungsmanifeste.<br /><br /> Kann von MSBuild ausgeführt werden. Weitere Informationen finden Sie unter [Referenz zu MSBuild-](../msbuild/msbuild-reference.md).|  
+|<xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities>|Entwickeln Sie eine eigene Anwendung, um die Anwendungs- und Bereitstellungsmanifeste zu generieren.|  
   
- In der folgenden Tabelle wird die jeweilige .NET Framework\-Version angezeigt, die für die Unterstützung von ClickOnce\-Anwendungen in diesen Browsern erforderlich ist.  
+ Die folgende Tabelle zeigt die .NET Framework-Version erforderlich, um die ClickOnce-Anwendungen in den folgenden Browsern unterstützt.  
   
-|Browser|.NET Framework\-Version|  
-|-------------|-----------------------------|  
-|Internet Explorer|2.0, 3.0, 3.5, 3.5 SP1, 4|  
+|Browser|.NET Framework-Version|  
+|-------------|----------------------------|  
+|Internet Explorer|2.0, 3.0, 3.5, 4 3.5 SP1|  
 |Firefox|2.0 SP1, 3.5 SP1, 4|  
   
-## Siehe auch  
- [ClickOnce Deployment on Windows Vista](../deployment/clickonce-deployment-on-windows-vista.md)   
- [Publishing ClickOnce Applications](../deployment/publishing-clickonce-applications.md)   
- [Sichern von ClickOnce\-Anwendungen](../deployment/securing-clickonce-applications.md)   
- [Deploying COM Components with ClickOnce](../deployment/deploying-com-components-with-clickonce.md)   
- [Building ClickOnce Applications from the Command Line](../deployment/building-clickonce-applications-from-the-command-line.md)   
- [Debugging ClickOnce Applications That Use System.Deployment.Application](../deployment/debugging-clickonce-applications-that-use-system-deployment-application.md)
+## <a name="see-also"></a>Siehe auch  
+ [ClickOnce-Bereitstellung unter Windows Vista](../deployment/clickonce-deployment-on-windows-vista.md)   
+ [Veröffentlichen von ClickOnce-Anwendungen](../deployment/publishing-clickonce-applications.md)   
+ [Sichern von ClickOnce-Anwendungen](../deployment/securing-clickonce-applications.md)   
+ [Bereitstellen von COM-Komponenten mit ClickOnce](../deployment/deploying-com-components-with-clickonce.md)   
+ [Erstellen von ClickOnce-Anwendungen über die Befehlszeile](../deployment/building-clickonce-applications-from-the-command-line.md)   
+ [Debuggen von ClickOnce-Anwendungen, die System.Deployment.Application verwenden](../deployment/debugging-clickonce-applications-that-use-system-deployment-application.md)

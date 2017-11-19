@@ -1,57 +1,57 @@
 ---
-title: "IDebugModule2::ReloadSymbols_Deprecated | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugModule2::ReloadSymbols"
-helpviewer_keywords: 
-  - "IDebugModule2::ReloadSymbols-Methode"
+title: IDebugModule2::ReloadSymbols_Deprecated | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugModule2::ReloadSymbols
+helpviewer_keywords: IDebugModule2::ReloadSymbols method
 ms.assetid: 0f9f0133-7d58-4cd9-a6ca-1141e095749d
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 3923431ed4936cf34a077d8d5d818c96e9630221
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugModule2::ReloadSymbols_Deprecated
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-VERALTET.  NOT TUN USE.  Lädt die Symbole für dieses Modul.  
+# <a name="idebugmodule2reloadsymbolsdeprecated"></a>IDebugModule2::ReloadSymbols_Deprecated
+VERALTET. DARF NICHT VERWENDET WERDEN. Lädt die Symbole für dieses Modul erneut.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT ReloadSymbols(   
-   LPCOLESTR pszUrlToSymbols,  
-   BSTR*     pbstrDebugMessage  
+```cpp  
+HRESULT ReloadSymbols(   
+   LPCOLESTR pszUrlToSymbols,  
+   BSTR*     pbstrDebugMessage  
 );  
 ```  
   
-```c#  
-int ReloadSymbols(   
-   string     pszUrlToSymbols,  
-   out string pbstrDebugMessage  
+```csharp  
+int ReloadSymbols(   
+   string     pszUrlToSymbols,  
+   out string pbstrDebugMessage  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `pszUrlToSymbols`  
- \[in\]  Der Pfad des Symbolspeichers.  
+ [in] Der Pfad zu den Symbolspeicher.  
   
  `pbstrDebugMessage`  
- \[out\]  Gibt eine Informationsmeldung, z. B. einen Status oder eine Fehlermeldung zurück, die rechts neben dem Namen des Moduls im Fenster Module angezeigt werden sollen.  
+ [out] Gibt eine informative Meldung, z. B. eine Status- oder Fehlerinformationen Nachricht, der rechts neben den Namen des Moduls, in dem Fenster "Module" angezeigt wird.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  Ein Modul sollte immer `E_FAIL`Debug zurückgeben.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben. Debugging-Modul sollte stets `E_FAIL`.  
   
-## Hinweise  
- Diese Methode wird nicht mehr unterstützt.  Implementieren Sie die [LoadSymbols](../../../extensibility/debugger/reference/idebugmodule3-loadsymbols.md)\-Methode.  
+## <a name="remarks"></a>Hinweise  
+ Diese Methode wird nicht mehr unterstützt. Implementieren der [LoadSymbols](../../../extensibility/debugger/reference/idebugmodule3-loadsymbols.md) Methode stattdessen.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md)   
  [LoadSymbols](../../../extensibility/debugger/reference/idebugmodule3-loadsymbols.md)

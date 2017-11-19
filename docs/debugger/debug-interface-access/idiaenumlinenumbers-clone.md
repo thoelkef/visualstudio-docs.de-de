@@ -1,43 +1,42 @@
 ---
-title: "IDiaEnumLineNumbers::Clone | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaEnumLineNumbers::Clone-Methode"
+title: 'Idiaenumlinenumbers:: Clone | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaEnumLineNumbers::Clone method
 ms.assetid: fcd2479a-8ff7-4aba-a737-06123c280d54
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: d58a149a0353a35f3ef9ec1c04b01a2148f8e0dc
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaEnumLineNumbers::Clone
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Erstellt einen Enumerator, der den gleichen Enumerationszustand wie der aktuelle Enumerator enthält.  
+# <a name="idiaenumlinenumbersclone"></a>IDiaEnumLineNumbers::Clone
+Erstellt einen Enumerator, der den gleichen Enumeration Status als der aktuelle Enumerator enthält.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT Clone (   
-   IDiaEnumLineNumbers** ppenum  
+```C++  
+HRESULT Clone (   
+   IDiaEnumLineNumbers** ppenum  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `ppenum`  
- \[out\]  Gibt ein [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)\-Objekt zurück, das ein Duplikat des Enumerators enthält.  Die Zeilennummern werden nicht, sondern lediglich den Enumerator. dupliziert.  
+ [out] Gibt eine [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) Objekt, das ein Duplikat des Enumerators enthält. Die Zeile an, die keine Zahlen sind doppelt vorhanden, nur den Enumerator...  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)

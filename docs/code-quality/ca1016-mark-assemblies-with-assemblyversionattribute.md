@@ -1,11 +1,10 @@
 ---
-title: 'CA1016: Mark assemblies with AssemblyVersionAttribute | Microsoft Docs'
+title: 'CA1016: Assemblys mit AssemblyVersionAttribute markieren | Microsoft Docs'
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,67 +14,53 @@ helpviewer_keywords:
 - CA1016
 - MarkAssembliesWithAssemblyVersion
 ms.assetid: 4340aed8-d92b-4cde-a398-cb6963c6da5a
-caps.latest.revision: 19
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: d86a1bc4c8cbb7f327b837c03e826039f6e52e91
-ms.contentlocale: de-de
-ms.lasthandoff: 08/30/2017
-
+caps.latest.revision: "19"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 414a533e781be82cd0ffef1e9db234738ef07f16
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="ca1016-mark-assemblies-with-assemblyversionattribute"></a>CA1016: Mark assemblies with AssemblyVersionAttribute
+# <a name="ca1016-mark-assemblies-with-assemblyversionattribute"></a>CA1016: Assemblys mit AssemblyVersionAttribute markieren
 |||  
 |-|-|  
 |TypeName|MarkAssembliesWithAssemblyVersion|  
 |CheckId|CA1016|  
-|Category|Microsoft.Design|  
-|Breaking Change|Non-breaking|  
+|Kategorie|Microsoft.Design|  
+|Unterbrechende Änderung|Nicht unterbrechend|  
   
-## <a name="cause"></a>Cause  
- The assembly does not have a version number.  
+## <a name="cause"></a>Ursache  
+ Die Assembly keine Versionsnummer.  
   
-## <a name="rule-description"></a>Rule Description  
- The identity of an assembly is composed of the following information:  
+## <a name="rule-description"></a>Regelbeschreibung  
+ Die Identität einer Assembly besteht aus den folgenden Informationen:  
   
--   Assembly name  
+-   Assemblyname  
   
--   Version number  
+-   Versionsnummer  
   
--   Culture  
+-   Kultur  
   
--   Public key (for strongly named assemblies).  
+-   Öffentliche Schlüssel (für Assemblys mit starkem Namen).  
   
- The [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] uses the version number to uniquely identify an assembly, and to bind to types in strongly named assemblies. The version number is used together with version and publisher policy. By default, applications run only with the assembly version with which they were built.  
+ [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] verwendet die Versionsnummer für die eindeutige Identifizierung einer Assembly und zum Binden an Datentypen in Assemblys mit starkem Namen. Die Versionsnummer wird zusammen mit der Versions- und Herausgeberrichtlinie verwendet. Standardmäßig werden Anwendungen nur mit der Assemblyversion ausgeführt, mit der sie erstellt wurden.  
   
-## <a name="how-to-fix-violations"></a>How to Fix Violations  
- To fix a violation of this rule, add a version number to the assembly by using the <xref:System.Reflection.AssemblyVersionAttribute?displayProperty=fullName> attribute. See the following example.  
+## <a name="how-to-fix-violations"></a>Behandeln von Verstößen  
+ Um einen Verstoß gegen diese Regel zu beheben, fügen Sie eine Versionsnummer der Assembly mithilfe der <xref:System.Reflection.AssemblyVersionAttribute?displayProperty=fullName> Attribut. Weitere Informationen finden Sie im folgenden Beispiel.  
   
-## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
- Do not suppress a warning from this rule for assemblies that are used by third parties, or in a production environment.  
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?  
+ Unterdrücken Sie keine Warnung dieser Regel für Assemblys, die von Drittanbietern oder in einer produktiven Umgebung verwendet werden.  
   
-## <a name="example"></a>Example  
- The following example shows an assembly that has the <xref:System.Reflection.AssemblyVersionAttribute> attribute applied.  
+## <a name="example"></a>Beispiel  
+ Das folgende Beispiel zeigt eine Assembly, die <xref:System.Reflection.AssemblyVersionAttribute> Attribut angewendet.  
   
- [!code-csharp[FxCop.Design.AssembliesVersion#1](../code-quality/codesnippet/CSharp/ca1016-mark-assemblies-with-assemblyversionattribute_1.cs)] [!code-vb[FxCop.Design.AssembliesVersion#1](../code-quality/codesnippet/VisualBasic/ca1016-mark-assemblies-with-assemblyversionattribute_1.vb)] [!code-cpp[FxCop.Design.AssembliesVersion#1](../code-quality/codesnippet/CPP/ca1016-mark-assemblies-with-assemblyversionattribute_1.cpp)]  
+ [!code-csharp[FxCop.Design.AssembliesVersion#1](../code-quality/codesnippet/CSharp/ca1016-mark-assemblies-with-assemblyversionattribute_1.cs)]
+ [!code-vb[FxCop.Design.AssembliesVersion#1](../code-quality/codesnippet/VisualBasic/ca1016-mark-assemblies-with-assemblyversionattribute_1.vb)]
+ [!code-cpp[FxCop.Design.AssembliesVersion#1](../code-quality/codesnippet/CPP/ca1016-mark-assemblies-with-assemblyversionattribute_1.cpp)]  
   
-## <a name="see-also"></a>See Also  
- [Assembly Versioning](/dotnet/framework/app-domains/assembly-versioning)   
- [How to: Create a Publisher Policy](/dotnet/framework/configure-apps/how-to-create-a-publisher-policy)
+## <a name="see-also"></a>Siehe auch  
+ [Assemblyversionen](/dotnet/framework/app-domains/assembly-versioning)   
+ [Gewusst wie: Erstellen einer Herausgeberrichtlinie](/dotnet/framework/configure-apps/how-to-create-a-publisher-policy)

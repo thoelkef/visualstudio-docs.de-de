@@ -1,27 +1,30 @@
 ---
-title: "IDebugApplicationNodeEvents::onRemoveChild | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IDebugApplicationNodeEvents::onRemoveChild | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IDebugApplicationNodeEvents.onRemoveChild
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "IDebugApplicationNodeEvents::onRemoveChild"
+helpviewer_keywords: IDebugApplicationNodeEvents::onRemoveChild
 ms.assetid: 2e025d29-b8c0-4793-a2d3-c20d548d6386
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 4a62f187286f66f8adff8acda339e02a02bc6225
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# IDebugApplicationNodeEvents::onRemoveChild
-Behandelt das Ereignis, wenn ein untergeordneter Knoten von einem Debuganwendungsknotenobjekt entfernt wird.  
+# <a name="idebugapplicationnodeeventsonremovechild"></a>IDebugApplicationNodeEvents::onRemoveChild
+Behandelt das Ereignis, wenn ein untergeordneter Knoten vom Knotenobjekt für eine Debug-Anwendung entfernt wird.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 HRESULT onRemoveChild(  
@@ -29,23 +32,23 @@ HRESULT onRemoveChild(
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `prddpChild`  
- \[in\] Der untergeordnete Anwendungsknoten, der entfernt wurde.  
+ [in] Der Knoten der untergeordneten-Anwendung, der entfernt wurde.  
   
-## Rückgabewert  
- Die Methode gibt ein `HRESULT` zurück.  Zu den möglichen Werten zählen, aber nicht zu, die in der folgenden Tabelle beschränkt.  
+## <a name="return-value"></a>Rückgabewert  
+ Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
   
-|Wert|Description|  
-|----------|-----------------|  
+|Wert|Beschreibung|  
+|-----------|-----------------|  
 |`S_OK`|Die Methode war erfolgreich.|  
   
-## Hinweise  
- Diese Methode behandelt das Ereignis, wenn ein untergeordneter Knoten von einem Debuganwendungsknotenobjekt entfernt wird.  
+## <a name="remarks"></a>Hinweise  
+ Diese Methode behandelt das Ereignis, wenn ein untergeordneter Knoten vom Knotenobjekt für eine Debug-Anwendung entfernt wird.  
   
- Implementierungen der Schnittstelle `IDebugApplicationNode` lösen dieses Ereignis aus.  
+ Implementierer der `IDebugApplicationNode` Schnittstelle dieses Ereignis auslösen.  
   
-## Siehe auch  
- [IDebugApplicationNodeEvents\-Schnittstelle](../../winscript/reference/idebugapplicationnodeevents-interface.md)   
+## <a name="see-also"></a>Siehe auch  
+ [IDebugApplicationNodeEvents-Schnittstelle](../../winscript/reference/idebugapplicationnodeevents-interface.md)   
  [IDebugApplicationNodeEvents::onAddChild](../../winscript/reference/idebugapplicationnodeevents-onaddchild.md)   
- [IDebugApplicationNode\-Schnittstelle](../../winscript/reference/idebugapplicationnode-interface.md)
+ [IDebugApplicationNode-Schnittstelle](../../winscript/reference/idebugapplicationnode-interface.md)

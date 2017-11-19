@@ -1,44 +1,45 @@
 ---
-title: "CA1601: Verwenden Sie keine Timer, um &#196;nderungen am Betriebszustand zu verhindern | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA1601"
-  - "DoNotUseTimersThatPreventPowerStateChanges"
-helpviewer_keywords: 
-  - "CA1601"
-  - "DoNotUseTimersThatPreventPowerStateChanges"
+title: "CA1601: Verwenden Sie keine Timer, die Änderungen zu verhindern, dass | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA1601
+- DoNotUseTimersThatPreventPowerStateChanges
+helpviewer_keywords:
+- CA1601
+- DoNotUseTimersThatPreventPowerStateChanges
 ms.assetid: b8028c92-0696-4c54-9773-0028f29bda9a
-caps.latest.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 15
+caps.latest.revision: "15"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 5fc42c15beda68472f4a980fe96b0055b70a01cc
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# CA1601: Verwenden Sie keine Timer, um &#196;nderungen am Betriebszustand zu verhindern
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="ca1601-do-not-use-timers-that-prevent-power-state-changes"></a>CA1601: Verwenden Sie keine Timer, um Änderungen am Betriebszustand zu verhindern
 |||  
 |-|-|  
 |TypeName|DoNotUseTimersThatPreventPowerStateChanges|  
 |CheckId|CA1601|  
-|Kategorie \(Category\)|Microsoft.Mobility|  
+|Kategorie|Microsoft.Mobility|  
 |Unterbrechende Änderung|Breaking|  
   
-## Ursache  
- Für einen Zeitgeber wurde das Intervall so eingestellt, dass mehr als einmal pro Sekunde ein Ereignis ausgelöst wird.  
+## <a name="cause"></a>Ursache  
+ Ein Timer verfügt über ein Intervall Ausführung von mehr als einmal pro Sekunde festgelegt.  
   
-## Regelbeschreibung  
- Führen Sie Abrufe nicht öfter als einmal pro Sekunde durch, und verwenden Sie keine Zeitgeber, die öfter als einmal pro Sekunde ein Ereignis auslösen.  Regelmäßige Aktivitäten mit einer höheren Frequenz belasten die CPU und beeinflussen energiesparende Leerlaufzeitgeber, mit denen die Anzeige sowie die Festplatten ausgeschaltet werden.  
+## <a name="rule-description"></a>Regelbeschreibung  
+ Führen Sie Abrufe nicht öfter als einmal pro Sekunde oder auf Zeitgeber, verwenden, die öfter als einmal auftreten pro Sekunde. Regelmäßige Aktivitäten mit einer höheren Frequenz belasten die CPU und beeinflussen energiesparende Leerlaufzeitgeber, mit denen die Anzeige sowie die Festplatten ausgeschaltet werden.  
   
-## Behandeln von Verstößen  
- Stellen Sie die Zeitgeberintervalle so ein, dass weniger als einmal pro Sekunde ein Ereignis ausgelöst wird.  
+## <a name="how-to-fix-violations"></a>Behandeln von Verstößen  
+ Legen Sie Zeitgeberintervallen kleiner als ein Mal pro Sekunde auftreten.  
   
-## Wann sollten Warnungen unterdrückt werden?  
- Diese Regel sollte nur unterdrückt werden, wenn der Zeitgeber mehr als einmal pro Sekunde ausgelöst werden muss und Mobilitätsüberlegungen ohne Bedenken ignoriert werden können.
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?  
+ Diese Regel sollen nur, wenn den Zeitgeber das Auslösen von mehr als einmal pro Sekunde erforderlich ist und Mobility Überlegungen ohne weiteres ignoriert werden können unterdrückt werden.

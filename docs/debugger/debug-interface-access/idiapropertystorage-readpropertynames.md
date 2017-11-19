@@ -1,54 +1,53 @@
 ---
-title: "IDiaPropertyStorage::ReadPropertyNames | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaPropertyStorage::ReadPropertyNames"
+title: IDiaPropertyStorage::ReadPropertyNames | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaPropertyStorage::ReadPropertyNames
 ms.assetid: f8bcab77-afca-4a8f-8710-697842f8a518
-caps.latest.revision: 10
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 338d2c4f59eb9023d8a7d8c8618585bb902785f3
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaPropertyStorage::ReadPropertyNames
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Ruft entsprechende Zeichenfolgennamens für den angegebenen Eigenschaftenbezeichner ab.  
+# <a name="idiapropertystoragereadpropertynames"></a>IDiaPropertyStorage::ReadPropertyNames
+Ruft Zeichenfolgennamen für entsprechende angegebenen Eigenschaftsbezeichner.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp  
+```C++  
 HRESULT ReadPropertyNames (  
-   ULONG         cpropid,  
-   PROPID const* rgpropid,  
-   BSTR*         rglpwstrName  
+   ULONG         cpropid,  
+   PROPID const* rgpropid,  
+   BSTR*         rglpwstrName  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `cpropid`  
- \[in\]  Eigenschaft\-ID Zahl in `rgpropid`.  
+ [in] Anzahl der Eigenschafts-Ids in `rgpropid`.  
   
  `rgpropid`  
- \[in\]  Eigenschaft\-ID Array, für die die Namen abgerufen werden \(`PROPID` wird in WTypes.h als `ULONG`definiert\).  
+ [in] Array von Eigenschaften-Ids für die die Namen abgerufen (`PROPID` ist definiert in WTypes.h als eine `ULONG`).  
   
  `rglpwstrName`  
- \[in, out\]  Array von Eigenschaftennamen für die angegebene Eigenschaft\-ID.  Das Array muss zugeordnet werden, um die angeforderte Anzahl von Eigenschaftennamen enthalten und muss in der Lage sein, Zeichenfolgen `cpropid`mindestens`BSTR` aufzunehmen.  
+ [in, out] Ein Array von Eigenschaftennamen für die angegebene Eigenschaft-Ids. Das Array muss vorab zugeordnet, um die angeforderte Anzahl von Eigenschaftennamen enthalten und muss in der Lage, halten Sie über mindestens `cpropid``BSTR` Zeichenfolgen.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. Andernfalls wird ein Fehlercode zurückgegeben.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`; andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Hinweise  
- Die zurückgegebenen Eigenschaftennamen müssen gemeinsam genutzt werden \(durch Aufrufen der `SysFreeString`\-Funktion\), wenn sie nicht mehr benötigt werden.  
+## <a name="remarks"></a>Hinweise  
+ Die zurückgegebene Eigenschaftennamen müssen freigegeben werden (durch Aufrufen der `SysFreeString` Funktion) Wenn sie nicht mehr benötigt.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

@@ -1,34 +1,36 @@
 ---
-title: "name-Eigenschaft (Fehler) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "name"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "Name-Eigenschaft"
-  - "name-Eigenschaft, Fehlerbezeichnung"
+title: Name-Eigenschaft (Fehler) (JavaScript) | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: name
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- Name property
+- name property, error name
 ms.assetid: 94df2d6b-f1a1-4931-a956-0a930cb87f76
-caps.latest.revision: 15
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 15
+caps.latest.revision: "15"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 1a12157b4c467499fab23f7c4cb1be91e9ac5440
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# name-Eigenschaft (Fehler) (JavaScript)
+# <a name="name-property-error-javascript"></a>name-Eigenschaft (Fehler) (JavaScript)
 Gibt den Namen eines Fehlers zurück.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
   
@@ -37,27 +39,27 @@ name
   
 ```  
   
-## Parameter  
+## <a name="parameters"></a>Parameter  
  `errorObj`  
- Erforderlich.  Instanz eines `Error`\-Objekts.  
+ Erforderlich. Instanz des `Error` Objekt.  
   
-## Hinweise  
- Die **name**\-Eigenschaft gibt den Namen oder den Ausnahmetyp eines Fehlers zurück.  Wenn ein Laufzeitfehler auftritt, wird die name\-Eigenschaft auf einen der folgenden systemeigenen Ausnahmetypen festgelegt:  
+## <a name="remarks"></a>Hinweise  
+ Die **Namen** -Eigenschaft gibt den Namen oder die Ausnahme einen Fehler zurück. Wenn ein Laufzeitfehler auftritt, wird die Name-Eigenschaft auf einen der folgenden systemeigenen Ausnahme-Typen festgelegt:  
   
 |Ausnahmetyp|Bedeutung|  
-|-----------------|---------------|  
-|ConversionError|Dieser Fehler tritt immer dann auf, wenn versucht wird, ein Objekt in etwas zu konvertieren, in das es nicht konvertiert werden kann.|  
-|RangeError|Dieser Fehler tritt auf, wenn einer Funktion ein Argument übergeben wird, das nicht im zulässigen Bereich liegt.  Beispielsweise tritt dieser Fehler auf, wenn Sie versuchen, ein `Array`\-Objekt mit einer Länge zu erstellen, die keine gültige positive ganze Zahl ist.|  
-|ReferenceError|Dieser Fehler tritt auf, wenn ein ungültiger Verweis gefunden wurde.  Der Fehler wird beispielsweise ausgegeben, wenn ein erwarteter Verweis `null` ist.|  
-|RegExpError|Dieser Fehler tritt auf, wenn bei einem regulären Ausdruck ein Kompilierungsfehler auftritt.  Nachdem der reguläre Ausdruck kompiliert wurde, kann dieser Fehler jedoch nicht auftreten.  Beispielsweise tritt der Fehler auf, wenn ein regulärer Ausdruck mit einem Muster deklariert wird, das eine ungültige Syntax aufweist, oder wenn er mit anderen Flags als **i**, **g** oder **m** deklariert wird bzw. mehrmals das gleiche Flag enthält.|  
-|SyntaxError|Dieser Fehler tritt auf, wenn Quelltext analysiert wird und nicht die richtige Syntax besitzt.  Beispielsweise tritt der Fehler auf, wenn die `eval`\-Funktion mit einem Argument aufgerufen wird, das kein gültiger Programmtext ist.|  
-|TypeError|Dieser Fehler tritt immer dann auf, wenn der tatsächliche Typ eines Operanden nicht dem erwarteten Typ entspricht.  Ein Beispiel für das Auftreten dieses Fehlers ist ein Funktionsaufruf für etwas, das kein Objekt ist oder den Aufruf nicht unterstützt.|  
-|URIError|Dieser Fehler tritt auf, wenn ein unzulässiger URI \(Uniform Resource Indicator\) gefunden wird.  Beispielsweise tritt dieser Fehler auf, wenn in einer zu codierenden oder zu decodierenden Zeichenfolge ein ungültiges Zeichen gefunden wird.|  
+|--------------------|-------------|  
+|ConversionError|Dieser Fehler tritt auf, wenn der Versuch, ein Objekt in etwas zu konvertieren, die konvertiert werden kann.|  
+|RangeError|Dieser Fehler tritt auf, wenn eine Funktion mit einem Argument angegeben wird, die den zulässigen Bereich überschritten hat. Angenommen, dieser Fehler tritt auf, wenn Sie versuchen, Sie erstellen ein `Array` Objekt mit einer Länge, die nicht auf eine gültige positive ganze Zahl ist.|  
+|ReferenceError|Dieser Fehler tritt auf, wenn ein ungültiger Verweis erkannt wurde. Dieser Fehler wird z. B. auftreten, ist ein erwarteter Verweis `null`.|  
+|RegExpError|Dieser Fehler tritt auf, wenn mit einem regulären Ausdruck ein Kompilierungsfehler auftritt. Sobald der reguläre Ausdruck kompiliert ist, kann nicht allerdings dieser Fehler auftreten. In diesem Beispiel wird z. B. auftreten, wenn ein regulärer Ausdruck mit einem Muster, die eine ungültige Syntax aufweist deklariert wird, oder flags außer **ich**, **g**, oder **m**, oder er enthält das gleiche Flag mehr als einmal.|  
+|SyntaxError|Dieser Fehler tritt auf, wenn Quelltext analysiert wird und dieser Quelltext nicht die richtige Syntax befolgt. Dieser Fehler wird z. B. auftreten, wenn die `eval` Funktion wird aufgerufen, mit der ein Argument, das kein gültiger Programmtext ist.|  
+|TypeError|Dieser Fehler tritt auf, wenn der tatsächliche Typ des Operanden nicht mit den erwarteten Typ übereinstimmt. Ein Beispiel für das Auftreten dieses Fehlers ist ein Funktionsaufruf von etwas, das ist kein Objekt oder den Aufruf nicht unterstützt.|  
+|URIError|Dieser Fehler tritt auf, wenn ein ungültiger Uniform Resource Indicator (URI) erkannt wird. Dies ist z. B. Fehler tritt auf, wenn ein unzulässiges Zeichen in eine Zeichenfolge, gefunden wird, codiert oder decodiert.|  
   
-## Beispiel  
- Im folgenden Beispiel werden eine TypeError\-Ausnahme ausgelöst und der Name des Fehlers und die zugehörige Meldung angezeigt.  
+## <a name="example"></a>Beispiel  
+ Das folgende Beispiel bewirkt, dass eine TypeError-Ausnahme ausgelöst wird, und zeigt den Namen des Fehlers und der Meldung.  
   
-```javascript  
+```JavaScript  
 try  
 {  
     var x = y;  
@@ -73,21 +75,21 @@ catch(e)
 }  
 ```  
   
-## Beispiel  
- Dieser Code generiert die folgende Ausgabe.  
+## <a name="example"></a>Beispiel  
+ Die Ausgabe dieses Codes lautet wie folgt.  
   
-```javascript  
+```JavaScript  
 Error Message: 'y' is undefined  
 Error Code: 5009  
 Error Name: TypeError  
 ```  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  [!INCLUDE[jsv55](../../javascript/reference/includes/jsv55-md.md)]  
   
- **Gilt für**: [Error\-Objekt](../../javascript/reference/error-object-javascript.md)  
+ **Gilt für**: [-Fehlerobjekt.](../../javascript/reference/error-object-javascript.md)  
   
-## Siehe auch  
- [description\-Eigenschaft \(Fehler\)](../../javascript/reference/description-property-error-javascript.md)   
- [message\-Eigenschaft \(Fehler\)](../../javascript/reference/message-property-error-javascript.md)   
- [number\-Eigenschaft \(Fehler\)](../../javascript/reference/number-property-error-javascript.md)
+## <a name="see-also"></a>Siehe auch  
+ [Description-Eigenschaft (Fehler)](../../javascript/reference/description-property-error-javascript.md)   
+ [Message-Eigenschaft (Fehler)](../../javascript/reference/message-property-error-javascript.md)   
+ [number-Eigenschaft (Fehler)](../../javascript/reference/number-property-error-javascript.md)

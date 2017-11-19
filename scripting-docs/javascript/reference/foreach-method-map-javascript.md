@@ -1,48 +1,51 @@
 ---
-title: "forEach-Methode (Map) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
+title: foreach-Methode (Map) (JavaScript) | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
 ms.assetid: 9cdf0adc-77c7-4407-8ba7-ada0fb09e507
-caps.latest.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 8d0ffa12b9a1995df14f4868872238cdc45b674a
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# forEach-Methode (Map) (JavaScript)
+# <a name="foreach-method-map-javascript"></a>forEach-Methode (Map) (JavaScript)
 Führt die angegebene Aktion für jedes Element in einer Zuordnung aus.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```javascript  
+```JavaScript  
 mapObj.forEach(callbackfn[, thisArg])  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `mapObj`  
- Erforderlich.  Ein `Map`\-Objekt.  
+ Erforderlich. Ein `Map`-Objekt.  
   
  `callbackfn`  
- Erforderlich.  Die Funktion, die `forEach` einmal für jedes Element in der Zuordnung aufruft.  `callbackfn` akzeptiert bis zu drei Argumente.  `forEach` ruft die `callbackfn`\-Funktion für jedes Element in der Zuordnung einmal auf.  
+ Erforderlich. Die Funktion, die `forEach` einmal für jedes Element in der Zuordnung aufruft. `callbackfn`bis zu drei Argumente akzeptiert. `forEach` ruft die `callbackfn`-Funktion für jedes Element in der Zuordnung einmal auf.  
   
  `thisArg`  
- Optional.  Ein Objekt, auf das das `this`\-Schlüsselwort in der `callbackfn`\-Funktion verweisen kann.  Wird `thisArg` nicht angegeben, wird `undefined` als `this`\-Wert verwendet.  
+ Dies ist optional. Ein Objekt, auf das das `this`-Schlüsselwort in der `callbackfn`-Funktion verweisen kann. Wird `thisArg` nicht angegeben, wird `undefined` als `this`-Wert verwendet.  
   
-## Ausnahmen  
- Wenn es sich beim `callbackfn`\-Argument nicht um ein Funktionsobjekt handelt, wird eine `TypeError`\-Ausnahme ausgelöst.  
+## <a name="exceptions"></a>Ausnahmen  
+ Wenn es sich beim `callbackfn`-Argument nicht um ein Funktionsobjekt handelt, wird eine `TypeError`-Ausnahme ausgelöst.  
   
-## Hinweise  
+## <a name="remarks"></a>Hinweise  
  Die Syntax der Rückruffunktion lautet wie folgt:  
   
  `function callbackfn(value, key, mapObj)`  
@@ -50,15 +53,15 @@ mapObj.forEach(callbackfn[, thisArg])
  Sie können die Rückruffunktion deklarieren, indem Sie bis zu drei Parameter verwenden, wie in der folgenden Tabelle dargestellt.  
   
 |Rückrufargument|Definition|  
-|---------------------|----------------|  
+|-----------------------|----------------|  
 |`value`|Ein Wert in der Zuordnung.|  
 |`key`|Ein Schlüssel in der Zuordnung.|  
-|`mapObj`|Das zu durchlaufende `Map`\-Objekt.|  
+|`mapObj`|Das zu durchlaufende `Map`-Objekt.|  
   
-## Beispiel  
+## <a name="example"></a>Beispiel  
  Im folgenden Beispiel wird gezeigt, wie Sie ein Member einer `Map` mithilfe von `forEach` abrufen.  
   
-```javascript  
+```JavaScript  
 var m = new Map();  
 m.set(1, "black");  
 m.set(2, "red");  
@@ -66,7 +69,7 @@ m.set("colors", 2);
 m.set({x:1}, 3);  
   
 m.forEach(function (item, key, mapObj) {  
-    document.write(item.toString() + "<br />");  
+    document.write(item.toString() + "<br />");  
 });  
   
 document.write("<br />");  
@@ -82,5 +85,5 @@ document.write(m.get(2));
   
 ```  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  [!INCLUDE[jsv11](../../javascript/reference/includes/jsv11-md.md)]

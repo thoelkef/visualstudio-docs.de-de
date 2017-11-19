@@ -1,51 +1,53 @@
 ---
-title: "delete-Operator (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "delete_JavaScriptKeyword"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "Arrayelemente, löschen"
-  - "Eigenschaften, löschen"
-  - "delete-Operator"
+title: Delete-Operator (JavaScript) | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: delete_JavaScriptKeyword
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- array elements, deleting
+- properties, deleting
+- delete operator
 ms.assetid: 55c6487e-96ea-455b-a7ed-dc35c41ac2f3
-caps.latest.revision: 16
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 16
+caps.latest.revision: "16"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: ee3def1977c0b29ee14ebf836f2d9ebb51d5a5ef
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# delete-Operator (JavaScript)
+# <a name="delete-operator-javascript"></a>delete-Operator (JavaScript)
 Löscht eine Eigenschaft aus einem Objekt oder entfernt ein Element aus einem Array.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 delete expression  
 ```  
   
-## Hinweise  
- Das `expression`\-Argument ist ein gültiger [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Ausdruck, der normalerweise einen Eigenschaftennamen oder ein Arrayelement ergibt.  
+## <a name="remarks"></a>Hinweise  
+ Die `expression` Argument ist ein gültiger [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] verursacht Ausdruck, der normalerweise ein Eigenschaftenelement für Namen oder Array.  
   
- Wenn das Ergebnis von `expression` ein Objekt ist, die in `expression` angegebene Eigenschaft existiert und das Objekt nicht zulässt, diese zu löschen, wird `false` zurückgegeben.  
+ Wenn das Ergebnis des `expression` ist ein Objekt, in die angegebene Eigenschaft `expression` vorhanden ist, und das Objekt wird nicht gelöscht werden soll, `false` wird zurückgegeben.  
   
- In allen anderen Fällen wird `true` zurückgegeben.  
+ In allen anderen Fällen `true` zurückgegeben wird.  
   
-## Beispiel  
- Im folgenden Beispiel wird veranschaulicht, wie ein Element aus einem Array entfernt wird.  
+## <a name="example"></a>Beispiel  
+ Das folgende Beispiel zeigt, wie ein Element aus einem Array zu entfernen.  
   
-```javascript  
+```JavaScript  
 // Create an array.  
 var ar = new Array (10, 11, 12, 13, 14);  
   
@@ -61,10 +63,10 @@ document.write ("array: " + ar);
 //  array: 10,,12,13,14  
 ```  
   
-## Beispiel  
- Im folgenden Beispiel wird das Löschen einer Eigenschaft aus einem Objekt veranschaulicht.  
+## <a name="example"></a>Beispiel  
+ Im folgende Beispiel wird gezeigt, wie Eigenschaften aus einem Objekt gelöscht wird.  
   
-```javascript  
+```JavaScript  
 // Create an object and add expando properties.  
 var myObj = new Object();  
 myObj.name = "Fred";  
@@ -83,9 +85,9 @@ document.write ("count: " + myObj.count);
 //  count: undefined  
 ```  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  [!INCLUDE[jsv3](../../javascript/reference/includes/jsv3-md.md)]  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Operatorrangfolge](../../javascript/operator-subtractprecedence-javascript.md)   
- [Zusammenfassung der Operatoren \(JavaScript\)](../../javascript/misc/operator-subtractsummary-javascript.md)
+ [Zusammenfassung der Operatoren (JavaScript)](../../javascript/misc/operator-subtractsummary-javascript.md)

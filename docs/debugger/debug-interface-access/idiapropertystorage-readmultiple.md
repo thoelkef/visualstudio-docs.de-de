@@ -1,54 +1,53 @@
 ---
-title: "IDiaPropertyStorage::ReadMultiple | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaPropertyStorage::ReadMultiple"
+title: IDiaPropertyStorage::ReadMultiple | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaPropertyStorage::ReadMultiple
 ms.assetid: 6ccc9397-ce41-4f72-b261-72ac252cd4a5
-caps.latest.revision: 10
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 77ead9e28f86067c08aa610fc902f2a0847bfb25
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaPropertyStorage::ReadMultiple
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Reads aktuellen Eigenschaften des angegebenen Eigenschaft an.  
+# <a name="idiapropertystoragereadmultiple"></a>IDiaPropertyStorage::ReadMultiple
+Liest eine angegebene Eigenschaften nicht mit der aktuellen Eigenschaft.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT ReadMultiple(   
-   ULONG          cpspec,  
-   PROPSPEC const rgpspec,  
-   PROPVARIANT    rgvar  
+```C++  
+HRESULT ReadMultiple(   
+   ULONG          cpspec,  
+   PROPSPEC const rgpspec,  
+   PROPVARIANT    rgvar  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `cpspec`  
- \[in\]  Anzahl von Eigenschaften im angegebenen `rgpspec` Array.  Wenn Null, die Methode zurückgibt, gibt aber keine Eigenschaften als `S_OK` Erfolgs Code zurück.  
+ [in] Anzahl der in der angegebenen Eigenschaften der `rgpspec` Array. Wenn der Wert 0 ist, die Methode keine Eigenschaften zurückgegeben, aber gibt zurück `S_OK` als einen Erfolgscode.  
   
  `rgpspec`  
- \[in\]  Ein Array von zu lesenden Eigenschaften.  Eigenschaften können entweder von einer Eigenschaften\-ID oder durch einen optionalen Zeichenfolgennamen angegeben werden.  Es ist nicht erforderlich, Eigenschaften in einer bestimmten Reihenfolge im Array an.  Das Array kann doppelte Eigenschaften mit dem Ergebnis der doppelten Eigenschaftswerte bei Rückgabe für einfache Eigenschaften enthalten.  Nicht\-SIMPLE\-Eigenschaften sollten den Zugriff zurückgeben, der auf einem Versuch, ein zweites Mal öffnen, verweigert wird.  Das Array kann eine Kombination aus Eigenschaften\-ID und IDs Zeichenfolge enthalten.  Dieses Array muss mindestens `cpspec` Zahl Eigenschaftswerte verfügen.  
+ [in] Ein Array von Eigenschaften gelesen werden. Eigenschaften können entweder durch eine Eigenschafts-ID oder durch eine optionale Zeichenfolgenname angegeben werden. Es ist nicht notwendig, dass Eigenschaften in einer bestimmten Reihenfolge in das Array angeben. Das Array kann doppelte Eigenschaften, wodurch doppelte Werte bei der Rückgabe für einfache Eigenschaften enthalten. Nicht einfach Eigenschaften sollte zurückgeben Zugriff verweigert, bei einem Versuch, ein zweites Mal zu öffnen. Das Array kann eine Kombination von Eigenschaften-IDs und Zeichenfolgen-IDs enthalten. Dieses Array benötigen mindestens `cpspec` Anzahl von Eigenschaftswerten.  
   
  `rgvar`  
- \[in, out\]  Ein Array mit Werten für jede Eigenschaft ausgefüllt wird, oder legt `PROPVARIANT` Strukturen \(im Microsoft.VisualStudio.OLE.Interop\-Namespace\).  Das Array muss mindestens `cpspec`\-Elemente an.  Der Aufrufer muss nicht die Werte im Array zu initialisieren.  
+ [in, out] Ein Array von `PROPVARIANT` Strukturen (im Namespace Microsoft.VisualStudio.OLE.Interop), die mit Werten für jede Eigenschaft ausgefüllt werden. Das Array muss mindestens `cpspec` Elemente in der Größe. Der Aufrufer muss es sich nicht um die Werte im Array zu initialisieren.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück.  Gibt `S_FALSE` zurück, wenn eine oder mehrere der Eigenschaften nicht gefunden wurden.  Gibt andernfalls ein Fehlercode zurückgegeben.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`. Gibt `S_FALSE` , wenn eine oder mehrere der Eigenschaften nicht gefunden wurde. Andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Hinweise  
- Wenn eine Eigenschaft nicht gefunden wurde, enthält die entsprechenden Eintrag im `rgvar` Array `VARIANT` mit dem Typ von `VT_EMPTY`.  
+## <a name="remarks"></a>Hinweise  
+ Wenn eine Eigenschaft wurde nicht gefunden, den zugehörigen Eintrag in der `rgvar` Array enthält ein `VARIANT` mit dem Typ des `VT_EMPTY`.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

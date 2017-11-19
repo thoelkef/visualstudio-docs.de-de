@@ -1,32 +1,34 @@
 ---
-title: "&lt;update&gt;-Element (Office-Entwicklung in Visual Studio)"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "update-Element"
-  - "<update>-Element"
-  - "Anwendungsmanifeste [Office-Entwicklung in Visual Studio], <update>-Element"
+title: '&lt;Aktualisieren Sie&gt; -Element (Office-Entwicklung in Visual Studio) | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- update element
+- <update> element
+- application manifests [Office development in Visual Studio], <update> element
 ms.assetid: bdd5dbf7-ddda-4ef6-9db5-1fb4405261a0
-caps.latest.revision: 24
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 24
+caps.latest.revision: "24"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 3a41e7580e7c6c169554bb50c4d0c9af29a992b5
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# &lt;update&gt;-Element (Office-Entwicklung in Visual Studio)
-  Das `update`\-Element gibt das Intervall an, in dem die Projektmappe nach Aktualisierungen sucht.  
+# <a name="ltupdategt-element-office-development-in-visual-studio"></a>&lt;Aktualisieren Sie&gt; -Element (Office-Entwicklung in Visual Studio)
+  Die `update` Element gibt das Updateintervall an dem die Lösung überprüft.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 <update  
@@ -38,44 +40,44 @@ caps.handback.revision: 24
 </update>  
 ```  
   
-## Elemente und Attribute  
- Das `update`\-Element ist erforderlich und befindet sich im `vstav3`\-Namespace.  
+## <a name="elements-and-attributes"></a>Elemente und Attribute  
+ Das `update`-Element ist erforderlich und befindet sich im `vstav3`-Namespace.  
   
- Das `update`\-Element verfügt über die folgenden Attribute.  
-  
-|Attribut|Beschreibung|  
-|--------------|------------------|  
-|`enabled`|Erforderlich.  Aktivieren Sie einen der folgenden Werte:<br /><br /> -   **true**, um nach Aktualisierungen zu suchen.<br />-   **false**, um das Suchen nach Aktualisierungen zu verhindern.|  
-  
- Das `update`\-Element verfügt über die folgenden untergeordneten Elemente.  
-  
-### expiration  
- Das `expiration`\-Element ist erforderlich und befindet sich im `vstav3`\-Namespace.  Dieses Element gibt das Intervall an, in dem die Projektmappe nach Aktualisierungen sucht.  
-  
- Das `expiration`\-Element verfügt über die folgenden Attribute.  
+ Die `update` Element weist folgende Attribute.  
   
 |Attribut|Beschreibung|  
-|--------------|------------------|  
-|`maximumAge`|-   Erforderlich.  Legen Sie für diesen Wert eine ganze Zahl fest.|  
-|`unit`|Erforderlich.  Legen Sie für `unit` einen der folgenden Werte fest:<br /><br /> -   **hours**<br />-   **days**<br />-   **weeks**|  
+|---------------|-----------------|  
+|`enabled`|Erforderlich. Legen Sie aktiviert, um einen der folgenden Werte fest:<br /><br /> -   **"true"** nach Updates suchen.<br />-   **"false"** zum Verhindern der Suche nach Updates.|  
   
-## Beispiel für ständiges Suchen nach Aktualisierungen  
+ Die `update` -Element weist die folgenden untergeordneten Elemente.  
   
-### Beschreibung  
- Im folgenden Codebeispiel wird ein `update`\-Element veranschaulicht, das so festgelegt ist, dass in Office\-Projektmappen immer nach Aktualisierungen gesucht wird.  
+### <a name="expiration"></a>Ablaufdatum  
+ Das `expiration`-Element ist erforderlich und befindet sich im `vstav3`-Namespace. Dieses Element gibt das Intervall, in dem die Projektmappe abfragt, für die Updates an.  
   
-### Code  
+ Die `expiration` Element weist folgende Attribute.  
+  
+|Attribut|Beschreibung|  
+|---------------|-----------------|  
+|`maximumAge`|– Erforderlich. Legen Sie dies auf eine ganze Zahl.|  
+|`unit`|Erforderlich. Legen Sie `unit` auf einen der folgenden Werte:<br /><br /> -   **Stunden**<br />-   **Tage**<br />-   **Wochen**|  
+  
+## <a name="example-of-always-checking-for-updates"></a>Beispiel für immer eine Überprüfung auf Updates  
+  
+### <a name="description"></a>Beschreibung  
+ Das folgende Codebeispiel veranschaulicht ein `update` Element, das immer zur Überprüfung auf Updates in Office-Projektmappen festgelegt ist.  
+  
+### <a name="code"></a>Code  
   
 ```  
 <vstav3:update enabled="true" />  
 ```  
   
-## Beispiel für das Festlegen eines standardmäßigen Aktualisierungsintervalls  
+## <a name="example-of-setting-a-default-update-interval"></a>Beispiel zum Festlegen eines standardmäßigen Aktualisierungsintervalls  
   
-### Beschreibung  
- Im folgenden Codebeispiel wird ein `update`\-Element in einem Anwendungsmanifest für Office\-Projektmappen veranschaulicht.  Dieses Codebeispiel ist Teil eines umfangreicheren Beispiels, das Sie im Thema [Anwendungsmanifeste für Office-Projektmappen](../vsto/application-manifests-for-office-solutions.md) finden.  
+### <a name="description"></a>Beschreibung  
+ Das folgende Codebeispiel veranschaulicht ein `update` Element in einem Anwendungsmanifest für Office-Projektmappen. Dieses Codebeispiel ist Teil eines umfangreicheren Beispiels unter [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md).  
   
-### Code  
+### <a name="code"></a>Code  
   
 ```  
 <vstav3:update enabled="true">  
@@ -83,10 +85,10 @@ caps.handback.revision: 24
 </vstav3:update>  
 ```  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Bereitstellen einer Office-Lösung mithilfe von ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md)   
- [Anwendungsmanifeste für Office-Projektmappen](../vsto/application-manifests-for-office-solutions.md)   
+ [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md)   
  [Bereitstellungsmanifeste für Office-Projektmappen](../vsto/deployment-manifests-for-office-solutions.md)   
- [ClickOnce Application Manifest](../deployment/clickonce-application-manifest.md)  
+ [ClickOnce-Anwendungsmanifest](/visualstudio/deployment/clickonce-application-manifest)  
   
   

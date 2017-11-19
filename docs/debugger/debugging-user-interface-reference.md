@@ -1,43 +1,39 @@
 ---
-title: "Referenz zur Debugger-Benutzeroberfl&#228;che | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.debug.uiref"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "JScript"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "Debugger, Benutzeroberflächenreferenz"
+title: "Referenz zur Benutzeroberfläche Debuggen | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vs.debug.uiref
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+- JScript
+helpviewer_keywords: debugger, user interface reference
 ms.assetid: 57f1cad8-c908-42bf-8ec5-6eb567df08e9
-caps.latest.revision: 10
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: b2187f115b9b3bc9705eb313068e155c999768ae
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Referenz zur Debugger-Benutzeroberfl&#228;che
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="debugging-user-interface-reference"></a>Referenz zur Debugger-Benutzeroberfläche
 Beim Debuggen einer Anwendung werden möglicherweise folgende Dialogfelder angezeigt.  
   
- Mithilfe des Erweiterbarkeitsmodells von Visual Studio lassen sich zahlreiche Debuggerfeatures automatisieren.  Weitere Informationen finden Sie unter Visual Studio Debugging\-SDK.  
+ Mithilfe des Erweiterbarkeitsmodells von Visual Studio lassen sich zahlreiche Debuggerfeatures automatisieren. Weitere Informationen finden Sie unter Visual Studio Debugging-SDK.  
   
 -   [Dialogfeld "Haltepunkte wählen"](../debugger/choose-breakpoints-dialog-box.md)  
   
--   [Quelldateien debuggen, Allgemeine Eigenschaften, Dialogfeld "\<Projektmappe\>\-Eigenschaftenseiten"](../debugger/debug-source-files-common-properties-solution-property-pages-dialog-box.md)  
+-   [Quelldateien debuggen, Allgemeine Eigenschaften, Eigenschaftenseiten (Dialogfeld)](../debugger/debug-source-files-common-properties-solution-property-pages-dialog-box.md)  
   
 -   [Debuggen, Dialogfeld "Optionen"](../debugger/debugging-options-dialog-box.md)  
   
@@ -47,6 +43,7 @@ Beim Debuggen einer Anwendung werden möglicherweise folgende Dialogfelder angez
   
 -   [Debugfehler und Warnmeldungen](../debugger/debugging-errors-and-warning-dialog-boxes.md)  
   
-## Siehe auch  
- [Debuggen in Visual Studio](../debugger/debugging-in-visual-studio.md)   
+## <a name="see-also"></a>Siehe auch  
+ [Debuggen in Visual Studio](../debugger/index.md)  
+ [Debugger – Featuretour](../debugger/debugger-feature-tour.md)   
  [Befehlsfenster](../ide/reference/command-window.md)

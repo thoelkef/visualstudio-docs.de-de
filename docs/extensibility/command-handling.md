@@ -1,24 +1,25 @@
 ---
-title: "Befehlsbehandlung | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Editoren [Visual Studio SDK], legacy - Befehlsbehandlung"
+title: Befehlsbehandlung | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: editors [Visual Studio SDK], legacy - command handling
 ms.assetid: 78f67d92-77f7-45cb-ad75-6e3346379cc3
-caps.latest.revision: 20
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 20
+caps.latest.revision: "20"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 0cb2bf52c038b0abbac742aafa942f2f7ea7ea1d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Befehlsbehandlung
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="command-handling"></a>Befehlsbehandlung
 Der Editor kann neue Befehle definieren. Befehle werden in der Regel in einem Menü, das auf einer Symbolleiste oder in einem Kontextmenü angezeigt.  
   
  Weitere Informationen zum Definieren von Befehlen und Menüs finden Sie unter [Befehle, Menüs und Symbolleisten](../extensibility/internals/commands-menus-and-toolbars.md).  
@@ -28,21 +29,21 @@ Der Editor kann neue Befehle definieren. Befehle werden in der Regel in einem Me
 ## <a name="adding-commands-to-the-editor-context-menu"></a>Hinzufügen von Befehlen zu Editor-Kontextmenüs  
  Um einen Befehl im Kontextmenü den Befehl hinzuzufügen, müssen Sie zunächst einen Satz von Menübefehlen, die zu einer bestimmten Gruppe gehören definieren. Das folgende Beispiel stammt aus der VSCT-Datei, die als Teil der exemplarischen Vorgehensweise generiert [Exemplarische Vorgehensweise: Hinzufügen von Funktionen eines benutzerdefinierten Editors](../extensibility/walkthrough-adding-features-to-a-custom-editor.md):  
   
- \< Menü Guid = "GuidCustomEditorCmdSet" Id = "IDMX_RTF" Priorität = "0 x 0000" Type = "Kontext">  
+ \<Menü-Guid = "GuidCustomEditorCmdSet" Id = "IDMX_RTF" Priorität = "0 x 0000" Type = "Context" >  
   
- \< übergeordneten Guid = "GuidCustomEditorCmdSet" Id = "0" />  
+ \<Übergeordnete Guid = "GuidCustomEditorCmdSet" Id = "0" / >  
   
- \< Zeichenfolgen>  
+ \<Zeichenfolgen >  
   
- \< ButtonText>CustomEditor Kontextmenü \< / ButtonText>  
+ \<ButtonText > CustomEditor Kontextmenü\</ButtonText >  
   
- \< CommandName>CustomEditorContextMenu \< / CommandName>  
+ \<CommandName > CustomEditorContextMenu\</CommandName >  
   
- \< / Zeichenfolgen>  
+ \</ Zeichenfolgen, die >  
   
- \< / Menü>  
+ \</ Menü >  
   
- \< / Menüs>  
+ \</-Menüs >  
   
  Die oben genannten Text Fügt einen Befehl im Kontextmenü, mit dem Text **CustomEditor Kontextmenü**. Die im Menü-GUID ist, dass für den Befehlssatz, mit diesem Editor erstellt wird, und der Typ ist "Kontext".  
   

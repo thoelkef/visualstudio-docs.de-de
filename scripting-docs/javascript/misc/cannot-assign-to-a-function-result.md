@@ -1,49 +1,51 @@
 ---
-title: "Die Zuweisung zu einem Funktionsergebnis ist nicht m&#246;glich | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "VS.WebClient.Help.SCRIPT5003"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
+title: Kann nicht zu einem Funktionsergebnis zuweisen | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: javascript
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: VS.WebClient.Help.SCRIPT5003
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
 ms.assetid: ee8ffb3a-1451-4cb3-99bf-5e9cf8b77d79
-caps.latest.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: f7e7ea718aa97ab7b2eb0924458826cd1eac5672
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# Die Zuweisung zu einem Funktionsergebnis ist nicht m&#246;glich
-Sie haben versucht, dem Ergebnis einer Funktion einen Wert zuzuweisen.  Das Ergebnis einer Funktion kann einer Variablen zugewiesen, jedoch nicht als Variable verwendet werden.  Wenn Sie der Funktion selbst einen neuen Wert zuweisen möchten, lassen Sie die Klammern \(den Funktionsaufrufoperator\) weg.  Das folgende Beispiel zeigt eine Situation, in der dieser Fehler generiert wird.  
+# <a name="cannot-assign-to-a-function-result"></a>Zuweisen zu einem Funktionsergebnis nicht möglich
+Sie haben versucht, einen Wert zu einem Funktionsergebnis zuzuweisen. Das Ergebnis einer Funktion einer Variablen zugewiesen werden kann, aber er kann als eine Variable verwendet werden. Wenn Sie einen neuen Wert für die Funktion selbst zuweisen möchten, lassen Sie die Klammern (den Funktionsaufrufoperator). Das folgende Beispiel zeigt eine Situation, in der dieser Fehler generiert wird.  
   
 ```  
 myFunction() = 42;  // Attempting to assign the value 42 to the result of the function call.  
 ```  
   
-### So beheben Sie diesen Fehler  
+### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
   
--   Verwenden Sie den Wert des Ergebnisses eines Funktionsaufrufs nicht als Element, auf das eine *Zuweisung erfolgen* kann.  Sie können das Ergebnis des Funktionsaufrufs jedoch *einer Variablen* zuweisen:  
+-   Verwenden Sie den Wert des Ergebnisses eines Funktionsaufrufs nicht als ein Element Sie können *zuweisen*. Sie können das Ergebnis des Funktionsaufrufs zuweisen *einer Variablen* Obwohl.  
   
-    ```javascript  
+    ```JavaScript  
     myVar = myFunction(42);  
     ```  
   
--   Alternativ können Sie die Funktion selbst \(und nicht ihren Rückgabewert\) einer Variablen zuweisen.  
+-   Alternativ können Sie der Funktion selbst (und nicht dessen Rückgabewert) einer Variablen zuweisen.  
   
-    ```javascript  
+    ```JavaScript  
     myFunction = new Function("return 42;");  
     ```  
   
-## Siehe auch  
- [Function\-Objekt](../../javascript/reference/function-object-javascript.md)   
- [Schreiben von JavaScript\-Code](../../javascript/writing-javascript-code.md)   
+## <a name="see-also"></a>Siehe auch  
+ [Function-Objekt](../../javascript/reference/function-object-javascript.md)   
+ [Schreiben von JavaScript-Code](../../javascript/writing-javascript-code.md)   
  [Funktionen](../../javascript/functions-javascript.md)

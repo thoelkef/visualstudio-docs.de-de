@@ -1,54 +1,55 @@
 ---
-title: "IDebugGenericParamField::GetIndex | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "IDebugGenericParamField::GetIndex"
+title: IDebugGenericParamField::GetIndex | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: IDebugGenericParamField::GetIndex
 ms.assetid: 8e0bdb26-1247-44d9-8d80-ec6e35187fb4
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 550716f7f080d3cf6b9bfa09a4450be090355791
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugGenericParamField::GetIndex
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
+# <a name="idebuggenericparamfieldgetindex"></a>IDebugGenericParamField::GetIndex
 Ruft den Index dieses generischen Parameters ab.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetIndex(  
-   DWORD* pIndex  
+   DWORD* pIndex  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetIndex(  
-   out uint pIndex  
+   out uint pIndex  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `pIndex`  
- \[out\]  Indexwert des generischen Parameters.  
+ [out] Der Indexwert des dieser generische Parameter.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Hinweise  
- Zum Beispiel für Wörterbuch \(K, V\), K ist Index 0, V ist Index 1.  
+## <a name="remarks"></a>Hinweise  
+ Für Dictionary(K,V), z. B. K ist Index 0, V ist Index 1.  
   
-## Beispiel  
- Im folgenden Beispiel wird veranschaulicht, wie diese Methode für ein **CDebugGenericParamFieldType\-Objekt** implementiert, das die [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)\-Schnittstelle verfügbar macht.  
+## <a name="example"></a>Beispiel  
+ Das folgende Beispiel veranschaulicht die Implementierung dieser Methode für eine **CDebugGenericParamFieldType** -Objekt, das macht die [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md) Schnittstelle.  
   
-```cpp#  
+```cpp  
 HRESULT CDebugGenericParamFieldType::GetIndex(DWORD* pIndex)  
 {  
     HRESULT hr = S_OK;  
@@ -66,5 +67,5 @@ Error:
 }  
 ```  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)

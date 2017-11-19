@@ -1,57 +1,59 @@
 ---
-title: "IEEVisualizerService::GetValueDisplayStringCount | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "IEEVisualizerService::GetValueDisplayStringCount"
-  - "GetValueDisplayStringCount"
+title: IEEVisualizerService::GetValueDisplayStringCount | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- IEEVisualizerService::GetValueDisplayStringCount
+- GetValueDisplayStringCount
 ms.assetid: d683a833-fbfb-4042-84df-6905124a268a
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 6fd3d05935c2edaeff723dc979764faf04d61c10
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IEEVisualizerService::GetValueDisplayStringCount
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Ruft die Anzahl der Wert von Zeichenfolgen ab, die für die angegebene Eigenschaft oder das Feld anzuzeigen.  
+# <a name="ieevisualizerservicegetvaluedisplaystringcount"></a>IEEVisualizerService::GetValueDisplayStringCount
+Ruft die Anzahl von Zeichenfolgen, die für die angegebene Eigenschaft oder das Feld angezeigt.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetValueDisplayStringCount (  
-   DWORD         displayKind,   
-   IDebugField * propertyOrField,   
-   ULONG *       pcelt  
+   DWORD         displayKind,   
+   IDebugField * propertyOrField,   
+   ULONG *       pcelt  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetValueDisplayStringCount (  
-   uint        displayKind,   
-   IDebugField propertyOrField,   
-   out ulong   pcelt  
+   uint        displayKind,   
+   IDebugField propertyOrField,   
+   out ulong   pcelt  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `displayKind`  
- \[in\]  Ein Wert aus der [DisplayKind](../../../extensibility/debugger/reference/displaykind.md)\-Enumeration.  
+ [in] Der Wert aus der [DisplayKind](../../../extensibility/debugger/reference/displaykind.md) Enumeration.  
   
  `propertyOrField`  
- \[in\]  Eine [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)\-Schnittstelle, die eine Eigenschaft oder ein Feld darstellt.  
+ [in] Ein [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) -Schnittstelle, eine Eigenschaft oder ein Feld darstellt.  
   
  `pcelt`  
- \[out\]  Gibt die Anzahl der Werte von Zeichenfolgen zurück, die angezeigt werden sollen.  
+ [out] Gibt die Anzahl der anzuzeigenden Zeichenfolgen zurück.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md)

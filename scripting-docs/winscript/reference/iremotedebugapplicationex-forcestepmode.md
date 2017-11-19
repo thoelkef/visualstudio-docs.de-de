@@ -1,27 +1,30 @@
 ---
-title: "IRemoteDebugApplicationEx:ForceStepMode | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IRemoteDebugApplicationEx:ForceStepMode | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IRemoteDebugApplicationEx:ForceStepMode
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "IRemoteDebugApplicationEx:ForceStepMode"
+helpviewer_keywords: IRemoteDebugApplicationEx:ForceStepMode
 ms.assetid: 83e69a3e-e4c9-4ddd-b01b-1820e4177a03
-caps.latest.revision: 5
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 5
+caps.latest.revision: "5"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: add26689122ffe4944b4bbad15106a825d43ccf0
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# IRemoteDebugApplicationEx:ForceStepMode
-Erzwingt den Debugger in einschrittigen Modus.  
+# <a name="iremotedebugapplicationexforcestepmode"></a>IRemoteDebugApplicationEx:ForceStepMode
+Erzwingt, dass den Debugger in einschrittigen Modus.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 HRESULT ForceStepMode(  
@@ -29,18 +32,18 @@ HRESULT ForceStepMode(
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `pStepThread`  
- \[in\] Debuggen Thread zum Prozess Bildschirm, um zu durchlaufen.  Wenn NULL, das PDM seinen Tretenthread gelöscht wird.  
+ [in] Thread für die Debug-Prozessmonitor schrittweise. Bei null ist, löscht der PDM einen schrittweisen Thread an.  
   
-## Rückgabewert  
- Die Methode gibt ein `HRESULT` zurück.  Zu den möglichen Werten zählen, aber nicht zu, die in der folgenden Tabelle beschränkt.  
+## <a name="return-value"></a>Rückgabewert  
+ Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
   
-|Wert|Description|  
-|----------|-----------------|  
+|Wert|Beschreibung|  
+|-----------|-----------------|  
 |`S_OK`|Die Methode war erfolgreich.|  
   
-## Hinweise  
+## <a name="remarks"></a>Hinweise  
   
-## Siehe auch  
- [IRemoteDebugApplicationEx Interface](http://msdn.microsoft.com/de-de/2f65fa67-06b7-4053-8945-22383ab66343)
+## <a name="see-also"></a>Siehe auch  
+ [IRemoteDebugApplicationEx-Schnittstelle](http://msdn.microsoft.com/en-us/2f65fa67-06b7-4053-8945-22383ab66343)

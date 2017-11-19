@@ -1,32 +1,34 @@
 ---
-title: "Accessing Visual Studio or other Hosts from a Text Template | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: Zugreifen auf Visual Studio oder andere Hosts von einer Textvorlage | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: a68886da-7416-4785-8145-3796bb382cba
-caps.latest.revision: 5
-author: "alancameronwills"
-ms.author: "awills"
-manager: "douge"
-caps.handback.revision: 5
+caps.latest.revision: "5"
+author: alancameronwills
+ms.author: awills
+manager: douge
+ms.openlocfilehash: 6b75a3b3e57ee72afc11013a1cf7a041b222b204
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# Accessing Visual Studio or other Hosts from a Text Template
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-In einer Textvorlage können Sie Methoden und Eigenschaften verwenden, die vom Host verfügbar gemacht werden, der die Vorlage ausführt, z. B. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+# <a name="accessing-visual-studio-or-other-hosts-from-a-text-template"></a>Zugreifen auf Visual Studio oder andere Hosts von einer Textvorlage
+Sie können in einer Textvorlage verwenden, Methoden und Eigenschaften verfügbar gemacht werden, durch den Host aus, die die Vorlage, wie z. B. führt [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
- Dies gilt für reguläre Textvorlagen, jedoch nicht für vorverarbeitete Textvorlagen.  
+ Dies gilt für reguläre Textvorlagen nicht vorverarbeitete Textvorlagen.  
   
-## Erhalten von Zugriff auf den Host  
- Legen Sie `hostspecific="true"` in der `template`\-Direktive fest.  Damit können Sie `this.Host` verwenden, das den Typ <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost> hat.  Dieser Typ verfügt über Member, die Sie verwenden können, z. B., um Dateinamen aufzulösen und Fehler zu protokollieren.  
+## <a name="obtaining-access-to-the-host"></a>Erhalten Zugriff auf den host  
+ Legen Sie `hostspecific="true"` in der `template` Richtlinie. Auf diese Weise können Sie die verwenden `this.Host`, weist den Typ der <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>. Dieser Typ verfügt über Member, die z. b. Auflösen von Dateinamen und Protokollieren von Fehlern verwendet werden können.  
   
-### Auflösen von Dateinamen  
- Um den vollständigen Pfad einer Datei relativ zur Textvorlage zu suchen, verwenden Sie this.Host.ResolvePath\(\).  
+### <a name="resolving-file-names"></a>Auflösen von Dateinamen  
+ Verwenden Sie diese Schritte aus, um den vollständigen Pfad einer Datei relativ zur Textvorlage zu suchen. Host.ResolvePath().  
   
-```c#  
+```csharp  
 <#@ template hostspecific="true" language="C#" #>  
 <#@ output extension=".txt" #>  
 <#@ import namespace="System.IO" #>  
@@ -39,10 +41,10 @@ Content of myFile is:
   
 ```  
   
-### Anzeigen von Fehlermeldungen  
- In diesem Beispiel werden Meldungen protokolliert, wenn die Vorlage transformiert wird.  Wenn der Host [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ist, werden sie dem Fehlerfenster hinzugefügt.  
+### <a name="displaying-error-messages"></a>Anzeigen von Fehlermeldungen  
+ In diesem Beispiel protokolliert Nachrichten beim Transformieren der Vorlage. Wenn der Host ist [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], werden sie dem Fehlerfenster hinzugefügt.  
   
-```c#  
+```csharp  
 <#@ template hostspecific="true" language="C#" #>  
 <#@ output extension=".txt" #>  
 <#@ import namespace="System.CodeDom.Compiler" #>  
@@ -57,14 +59,14 @@ Content of myFile is:
   
 ```  
   
-## Verwenden der Visual Studio\-API  
- Wenn Sie eine Textvorlage in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ausführen, können Sie mit `this.Host` auf Dienste zugreifen, die von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] und allen geladenen Paketen oder Erweiterungen bereitgestellt werden.  
+## <a name="using-the-visual-studio-api"></a>Mithilfe der Visual Studio-API  
+ Wenn Sie eine Textvorlage in ausführen [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], können Sie `this.Host` Dienste zugreifen, die von bereitgestellte [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] sowie alle Pakete und die Erweiterungen, die geladen werden.  
   
- Legen Sie hostspecific\="true" fest, und wandeln Sie `this.Host` in <xref:System.IServiceProvider> um.  
+ Legen Sie Hostspecific = "true", und wandeln Sie `this.Host` auf <xref:System.IServiceProvider>.  
   
- In diesem Beispiel wird die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]\-API, <xref:EnvDTE.DTE>, als Dienst abgerufen:  
+ In diesem Beispiel wird die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] -API, <xref:EnvDTE.DTE>, als Dienst:  
   
-```c#  
+```csharp  
 <#@ template hostspecific="true" language="C#" #>  
 <#@ output extension=".txt" #>  
 <#@ assembly name="EnvDTE" #>  
@@ -77,5 +79,5 @@ Number of projects in this solution: <#=  dte.Solution.Projects.Count #>
   
 ```  
   
-## Verwenden HostSpecific mit Template\-Vererbung  
- Geben Sie `hostspecific="trueFromBase"` Wenn Sie auch verwenden, die `inherits` \-Attribut, und wenn Sie von einer Vorlage erben, der angibt, `hostspecific="true"`.  Dies vermeidet eine Compilerwarnung dahingehend, dass die Eigenschaft `Host` wurde zweimal deklariert.
+## <a name="using-hostspecific-with-template-inheritance"></a>Verwenden HostSpecific mit Vorlage Vererbung  
+ Geben Sie `hostspecific="trueFromBase"` , wenn Sie auch verwenden, die `inherits` -Attribut, und aus einer Vorlage zu erben, der angibt, `hostspecific="true"`. Dies vermeidet eine compilerwarnung für den Effekt, der die Eigenschaft `Host` zweimal deklariert wurde.

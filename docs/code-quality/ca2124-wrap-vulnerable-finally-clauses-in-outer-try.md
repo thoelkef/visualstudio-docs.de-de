@@ -1,57 +1,58 @@
 ---
-title: "CA2124: Anf&#228;llige finally-Klauseln mit &#228;u&#223;erem try-Block umschlie&#223;en | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA2124"
-  - "WrapVulnerableFinallyClausesInOuterTry"
-helpviewer_keywords: 
-  - "CA2124"
-  - "WrapVulnerableFinallyClausesInOuterTry"
+title: "CA2124: Anfällige finally Klauseln mit äußerem versuchen Sie es | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA2124
+- WrapVulnerableFinallyClausesInOuterTry
+helpviewer_keywords:
+- CA2124
+- WrapVulnerableFinallyClausesInOuterTry
 ms.assetid: 82efd224-9e60-4b88-a0f5-dfabcc49a254
-caps.latest.revision: 20
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 20
+caps.latest.revision: "20"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: f4d30a07ed0930d5165629f7c4b468d7e5146613
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# CA2124: Anf&#228;llige finally-Klauseln mit &#228;u&#223;erem try-Block umschlie&#223;en
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="ca2124-wrap-vulnerable-finally-clauses-in-outer-try"></a>CA2124: Anfällige finally-Klauseln mit äußerem try-Block umschließen
 |||  
 |-|-|  
 |TypeName|WrapVulnerableFinallyClausesInOuterTry|  
 |CheckId|CA2124|  
-|Kategorie \(Category\)|Microsoft.Security|  
-|Unterbrechende Änderung|Nicht unterbrechend|  
+|Kategorie|Microsoft.Security|  
+|Unterbrechende Änderung|Nicht unterbrechende Änderung|  
   
-## Ursache  
- In den Versionen 1.0 und 1.1 von [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] enthält eine öffentliche oder geschützte Methode einen `try`\/`catch`\/`finally`\-Block.  Durch den `finally`\-Block, der nicht in einen `finally`\-Block eingeschlossen ist, wird anscheinend der Sicherheitszustand zurückgesetzt.  
+## <a name="cause"></a>Ursache  
+ In den Versionen 1.0 und 1.1 von der [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], eine öffentliche oder geschützte Methode enthält einen `try` / `catch` / `finally` Block. Die `finally` Block wird der Sicherheitszustand zurückgesetzt angezeigt und steht nicht in einem `finally` Block.  
   
-## Regelbeschreibung  
- Diese Regel sucht in Code, der auf die Versionen 1.0 und 1.1 von [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] abzielt, `try`\/`finally`\-Blöcke, die für böswillige Ausnahmefilter in der Aufrufliste anfällig sein könnten.  Wenn vertrauliche Vorgänge wie ein Identitätswechsel im try\-Block stattfinden und eine Ausnahme ausgelöst wird, kann der Filter vor dem `finally`\-Block ausgeführt werden.  Bei dem Beispiel mit Identitätswechsel bedeutet dies, dass der Filter als Benutzer ausgeführt wird, für den ein Identitätswechsel vorgenommen wurde.  Filter können derzeit nur in Visual Basic implementiert werden.  
+## <a name="rule-description"></a>Regelbeschreibung  
+ Diese Regel sucht `try` / `finally` Blöcke in Code, der Versionen 1.0 und 1.1 von abzielt die [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] , die möglicherweise anfällig für böswillige Ausnahmefilter in der Aufrufliste vorhanden. Wenn sicherheitsrelevante Vorgänge wie z. B. Identitätswechsel in Try-Blocks auftreten, und eine Ausnahme ausgelöst wird, kann der Filter vor dem Ausführen der `finally` Block. Für das Impersonation-Beispiel bedeutet dies, dass der Filter als die Identität eines Benutzers ausgeführt werden würde. Filter sind derzeit nur in Visual Basic implementiert.  
   
 > [!WARNING]
->  **Hinweis**  In Version 2.0 und höher von [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] schützt die Laufzeit einen `try`\/`catch`\/`finally`\-Block automatisch vor böswilligen Ausnahmefiltern, wenn die Rücksetzung direkt innerhalb der Methode auftritt, die den Ausnahmeblock enthält.  
+>  **Hinweis** In Version 2.0 oder höher, der die [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], die Common Language Runtime automatisch schützt eine `try` / `catch` /  `finally` Blockieren von böswilligen Ausnahmefilter, erfolgt das Zurücksetzen direkt innerhalb der Methode, die vom Ausnahmeblock enthält.  
   
-## Behandeln von Verstößen  
- Fügen Sie den allein stehenden `try`\/`finally`\-Block in einen äußeren try\-Block ein.  Vergleichen Sie das folgende zweite Beispiel.  Dabei wird `finally` zwangsweise vor dem Filtercode ausgeführt.  
+## <a name="how-to-fix-violations"></a>Behandeln von Verstößen  
+ Platzieren Sie die entpackte `try` / `finally` in einem äußeren Try-Block. Finden Sie im zweiten Beispiel, das folgt. Dies zwingt den `finally` ausgeführt wird, bevor die Filtercode.  
   
-## Wann sollten Warnungen unterdrückt werden?  
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?  
  Unterdrücken Sie keine Warnung dieser Regel.  
   
-## Beispiel für Pseudocode  
+## <a name="pseudo-code-example"></a>Pseudocodebeispiel  
   
-### **Beschreibung**  
- Mit dem folgenden Pseudocode wird das von dieser Regel erkannte Muster veranschaulicht.  
+### <a name="description"></a>Beschreibung  
+ Der folgende Pseudocode veranschaulicht das von dieser Regel erkannte Muster.  
   
-### Code  
+### <a name="code"></a>Code  
   
 ```  
 try {  
@@ -65,8 +66,8 @@ finally {
 }  
 ```  
   
-## Beispiel  
- Im folgenden Pseudocode wird das Muster dargestellt, das Sie verwenden können, um den Code zu schützen und diese Regel zu erfüllen.  
+## <a name="example"></a>Beispiel  
+ Der folgende Pseudocode zeigt das Muster, die Sie verwenden können, um Ihren Code zu schützen und diese Regel zu erfüllen.  
   
 ```  
 try {  

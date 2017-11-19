@@ -1,56 +1,59 @@
 ---
-title: "forEach-Methode (Array) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "Arrays [JavaScript], forEach-Methode"
-  - "Rückruffunktion, forEach-Methode [JavaScript]"
-  - "forEach-Methode [JavaScript]"
+title: foreach-Methode (Array) (JavaScript) | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- forEach method [JavaScript]
+- arrays [JavaScript], forEach method
+- callback function, forEach method [JavaScript]
 ms.assetid: bd188034-a62b-4cbd-99c8-46d70dd6823d
-caps.latest.revision: 28
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 28
+caps.latest.revision: "28"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: ec35c49e272ba50e26d3e4e7d892aa719a090d73
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# forEach-Methode (Array) (JavaScript)
+# <a name="foreach-method-array-javascript"></a>forEach-Methode (Array) (JavaScript)
 Führt die angegebene Aktion für jedes Element in einem Array aus.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
   
 array1.forEach(callbackfn[, thisArg])  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
   
 |Parameter|Definition|  
 |---------------|----------------|  
-|`array1`|Erforderlich.  Ein Arrayobjekt.|  
-|`callbackfn`|Erforderlich.  Eine Funktion, die bis zu drei Argumente akzeptiert.  `forEach` ruft die `callbackfn`\-Funktion für jedes Element im Array einmal auf.|  
-|`thisArg`|Optional.  Ein Objekt, auf welches das `this`\-Schlüsselwort in der `callbackfn`\-Funktion verweisen kann.  Wird `thisArg` nicht angegeben, wird `undefined` als `this`\-Wert verwendet.|  
+|`array1`|Erforderlich. Ein Arrayobjekt.|  
+|`callbackfn`|Erforderlich. Eine Funktion, die bis zu drei Argumente akzeptiert. `forEach` ruft die `callbackfn`-Funktion für jedes Element im Array einmal auf.|  
+|`thisArg`|Dies ist optional. Ein Objekt, auf welches das `this`-Schlüsselwort in der `callbackfn`-Funktion verweisen kann. Wird `thisArg` nicht angegeben, wird `undefined` als `this`-Wert verwendet.|  
   
-## Ausnahmen  
- Wenn es sich beim `callbackfn`\-Argument nicht um ein Funktionsobjekt handelt, wird eine `TypeError`\-Ausnahme ausgelöst.  
+## <a name="exceptions"></a>Ausnahmen  
+ Wenn es sich beim `callbackfn`-Argument nicht um ein Funktionsobjekt handelt, wird eine `TypeError`-Ausnahme ausgelöst.  
   
-## Hinweise  
- Die `forEach`\-Methode ruft die `callbackfn`\-Funktion einmal für jedes Element im Array in aufsteigender Indexreihenfolge auf.  Die Rückruffunktion wird nicht für fehlende Elemente des Arrays aufgerufen.  
+## <a name="remarks"></a>Hinweise  
+ Die `forEach`-Methode ruft die `callbackfn`-Funktion einmal für jedes Element im Array in aufsteigender Indexreihenfolge auf. Die Rückruffunktion wird nicht für fehlende Elemente des Arrays aufgerufen.  
   
- Außer für Arrayobjekte kann die `forEach`\-Methode für jedes Objekt verwendet werden, das über eine `length`\-Eigenschaft und numerisch indizierte Eigenschaftennamen verfügt.  
+ Außer für Arrayobjekte kann die `forEach`-Methode für jedes Objekt verwendet werden, das über eine `length`-Eigenschaft und numerisch indizierte Eigenschaftennamen verfügt.  
   
-## Syntax der Rückruffunktion  
+## <a name="callback-function-syntax"></a>Syntax der Rückruffunktion  
  Die Syntax der Rückruffunktion lautet wie folgt:  
   
  `function callbackfn(value, index, array1)`  
@@ -60,25 +63,25 @@ array1.forEach(callbackfn[, thisArg])
  Die Rückruffunktionsparameter lauten wie folgt:  
   
 |Rückrufargument|Definition|  
-|---------------------|----------------|  
+|-----------------------|----------------|  
 |`value`|Der Wert des Arrayelements.|  
 |`index`|Der numerische Index des Arrayelements.|  
 |`array1`|Das Arrayobjekt, in dem das Element enthalten ist.|  
   
-## Ändern des Arrayobjekts  
- Die `forEach`\-Methode ändert das Originalarray nicht direkt, dies ist jedoch über die Rückruffunktion möglich.  In der folgenden Tabelle werden die Ergebnisse der Änderung des Arrayobjekts nach dem Start der `forEach`\-Methode beschrieben.  
+## <a name="modifying-the-array-object"></a>Ändern des Arrayobjekts  
+ Die `forEach`-Methode ändert das Originalarray nicht direkt, dies ist jedoch über die Rückruffunktion möglich. In der folgenden Tabelle werden die Ergebnisse der Änderung des Arrayobjekts nach dem Start der `forEach`-Methode beschrieben.  
   
-|Bedingung nach dem Start der `forEach`\-Methode|Wurde das Element an die Rückruffunktion übergeben?|  
-|-----------------------------------------------------|---------------------------------------------------------|  
+|Bedingung nach dem Start der `forEach`-Methode|Wurde das Element an die Rückruffunktion übergeben?|  
+|---------------------------------------------|------------------------------------------|  
 |Das Element wird der ursprünglichen Länge des Arrays hinzugefügt.|Nein.|  
 |Das Element wird hinzugefügt, um ein fehlendes Element des Arrays zu ersetzen.|Ja, wenn dieser Index noch nicht an die Rückruffunktion übergeben wurde.|  
 |Das Element wird geändert.|Ja, wenn dieses Element noch nicht an die Rückruffunktion übergeben wurde.|  
 |Das Element wird aus dem Array gelöscht.|Nein, es sei denn, dieses Element wurde bereits an die Rückruffunktion übergeben.|  
   
-## Beispiel  
- Im folgenden Beispiel wird die Verwendung der `forEach`\-Methode veranschaulicht.  
+## <a name="example"></a>Beispiel  
+ Im folgenden Beispiel wird die Verwendung der `forEach`-Methode veranschaulicht.  
   
-```javascript  
+```JavaScript  
 // Define the callback function.  
 function ShowResults(value, index, ar) {  
     document.write("value: " + value);  
@@ -99,10 +102,10 @@ letters.forEach(ShowResults);
 //  value: ef index: 2   
 ```  
   
-## Beispiel  
- Im folgenden Beispiel enthält das `callbackfn`\-Argument den Code der Rückruffunktion.  
+## <a name="example"></a>Beispiel  
+ Im folgenden Beispiel enthält das `callbackfn`-Argument den Code der Rückruffunktion.  
   
-```javascript  
+```JavaScript  
 // Create an array.  
 var numbers = [10, 11, 12];  
   
@@ -117,10 +120,10 @@ document.write(sum);
   
 ```  
   
-## Beispiel  
- Das folgende Beispiel veranschaulicht die Verwendung des `thisArg`\-Arguments, das ein Objekt angibt, auf das mit dem `this`\-Schlüsselwort verwiesen werden kann.  
+## <a name="example"></a>Beispiel  
+ Das folgende Beispiel veranschaulicht die Verwendung des `thisArg`-Arguments, das ein Objekt angibt, auf das mit dem `this`-Schlüsselwort verwiesen werden kann.  
   
-```javascript  
+```JavaScript  
 // Define the object that contains the callback function.  
 var obj = {  
     showResults: function(value, index) {  
@@ -155,13 +158,13 @@ numbers.forEach(function(value, index) { this.showResults(value, index) }, obj);
 //  value: 6 index: 1 squared: 36  
 ```  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  [!INCLUDE[jsv9](../../javascript/includes/jsv9-md.md)]  
   
-## Siehe auch  
- [filter\-Methode \(Array\)](../../javascript/reference/filter-method-array-javascript.md)   
- [map\-Methode \(Array\)](../../javascript/reference/map-method-array-javascript.md)   
- [some\-Methode \(Array\)](../../javascript/reference/some-method-array-javascript.md)   
- [Array\-Objekt](../../javascript/reference/array-object-javascript.md)   
+## <a name="see-also"></a>Siehe auch  
+ [Filter-Methode (Array)](../../javascript/reference/filter-method-array-javascript.md)   
+ [Map-Methode (Array)](../../javascript/reference/map-method-array-javascript.md)   
+ [Some-Methode (Array)](../../javascript/reference/some-method-array-javascript.md)   
+ [Array-Objekt](../../javascript/reference/array-object-javascript.md)   
  [Verwenden von Arrays](../../javascript/advanced/using-arrays-javascript.md)   
- [Beispiel\-App für Hilo JavaScript \(Windows Store\)](http://hilojs.codeplex.com/SourceControl/latest)
+ [HiLo JavaScript-Beispiel-app (Windows Store)](http://hilojs.codeplex.com/SourceControl/latest)

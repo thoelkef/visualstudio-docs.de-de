@@ -1,39 +1,41 @@
 ---
-title: "Validierung in einer dom&#228;nenspezifischen Sprache | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Einschränkungen einer domänenspezifischen Sprache"
-  - "Domänenspezifische Sprache, Validierung"
+title: "Überprüfung in einer domänenspezifischen Sprache | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- Domain-Specific Language, constraints
+- Domain-Specific Language, validation
 ms.assetid: 65b93df8-af3c-462b-904c-60292f8ed381
-caps.latest.revision: 33
-author: "alancameronwills"
-ms.author: "awills"
-manager: "douge"
-caps.handback.revision: 33
+caps.latest.revision: "33"
+author: alancameronwills
+ms.author: awills
+manager: douge
+ms.openlocfilehash: f4e27cfcff61be6712df97de0bb36008bda2547e
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# Validierung in einer dom&#228;nenspezifischen Sprache
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="validation-in-a-domain-specific-language"></a>Validierung in einer domänenspezifischen Sprache
 Als Autor einer domänenspezifischen Sprache (Domain-Specific Language, DSL) können Sie Validierungseinschränkungen definieren, um zu überprüfen, ob das vom Benutzer erstellte Modell sinnvoll ist. Wenn Benutzer in Ihrer DSL beispielsweise einen Stammbaum von Personen und deren Vorfahren zeichnen können, könnten Sie eine Einschränkung schreiben, mit der sichergestellt wird, dass die Geburtstage der Kinder nach denen der Eltern liegen.  
   
- Stehen Ihnen die validierungseinschränkungen, wenn das Modell gespeichert wird, wenn sie geöffnet ist, und der Benutzer führt die **Validate** Menübefehl. Sie können die Validierung auch vom Programm gesteuert ausführen. Sie könnten die Validierung beispielsweise als Reaktion auf die Änderung eines Eigenschaftswerts oder einer Beziehung ausführen.  
+ Können Sie die validierungseinschränkungen ausgeführt, wenn das Modell gespeichert wird, wenn dieses geöffnet wird, oder wenn der Benutzer explizit ausführt haben die **Validate** Menübefehl. Sie können die Validierung auch vom Programm gesteuert ausführen. Sie könnten die Validierung beispielsweise als Reaktion auf die Änderung eines Eigenschaftswerts oder einer Beziehung ausführen.  
   
- Die Validierung ist besonders wichtig, wenn Sie Textvorlagen oder andere Tools schreiben, in denen die Modelle Ihrer Benutzer verarbeitet werden. Durch die Validierung wird sichergestellt, dass die Modelle die von den Tools angenommenen Vorbedingungen erfüllen.  
+ Überprüfung ist besonders wichtig, wenn Sie schreiben den Textvorlagen oder andere Tools verwenden, die der Benutzer Modelle zu verarbeiten. Durch die Validierung wird sichergestellt, dass die Modelle die von den Tools angenommenen Vorbedingungen erfüllen.  
   
 > [!WARNING]
->  Sie können auch zulassen, dass Validierungseinschränkungen in separaten Erweiterungen Ihrer DSL zusammen mit Menübefehlen und Gestenhandlern der Erweiterungen definiert werden. Die Benutzer könnten dann diese Erweiterungen zusätzlich zu Ihrer DSL installieren. Weitere Informationen finden Sie unter [Erweitern von DSL mittels MEF](../modeling/extend-your-dsl-by-using-mef.md).  
+>  Sie können auch zulassen, dass Validierungseinschränkungen in separaten Erweiterungen Ihrer DSL zusammen mit Menübefehlen und Gestenhandlern der Erweiterungen definiert werden. Die Benutzer könnten dann diese Erweiterungen zusätzlich zu Ihrer DSL installieren. Weitere Informationen finden Sie unter [Erweitern der DSL mithilfe des MEF erstellte](../modeling/extend-your-dsl-by-using-mef.md).  
   
 ## <a name="running-validation"></a>Ausführen der Validierung  
  Wenn ein Benutzer ein Modell bearbeitet, also eine Instanz Ihrer domänenspezifischen Sprache, kann die Validierung mit den folgenden Aktionen ausgeführt werden:  
   
--   Mit der rechten Maustaste im Diagramms, und wählen Sie **Alle überprüfen**.  
+-   Mit der rechten Maustaste in des Diagramms, und wählen Sie **überprüfen alle**.  
   
--   Mit der rechten Maustaste in des obersten Knotens im Explorer Ihrer DSL, und wählen Sie **Alle überprüfen**  
+-   Mit der rechten Maustaste im Explorer Ihrer DSL und wählen Sie des obersten Knotens **alle überprüfen**  
   
 -   Speichern Sie das Modell.  
   
@@ -41,7 +43,7 @@ Als Autor einer domänenspezifischen Sprache (Domain-Specific Language, DSL) kö
   
 -   Darüber hinaus können Sie Programmcode schreiben, mit dem die Validierung ausgeführt wird, beispielsweise als Teil eines Menübefehls oder als Reaktion auf eine Änderung.  
   
- Validierungsfehler werden angezeigt, dem **Fehlerliste** Fenster. Der Benutzer kann auf eine Fehlermeldung doppelklicken, um die Modellelemente auszuwählen, die den Fehler verursachen.  
+ Alle vorhandenen Überprüfungsfehler werden angezeigt, der **Fehlerliste** Fenster. Der Benutzer kann auf eine Fehlermeldung doppelklicken, um die Modellelemente auszuwählen, die den Fehler verursachen.  
   
 ## <a name="defining-validation-constraints"></a>Definieren von Validierungseinschränkungen  
  Sie definieren Validierungseinschränkungen, indem Sie den Domänenklassen und Beziehungen Ihrer DSL Validierungsmethoden hinzufügen. Wenn eine Validierung vom Benutzer oder durch das Programm ausgeführt wird, werden einige oder alle Validierungsmethoden ausgeführt. Jede Methode wird auf jede Instanz ihrer Klasse angewendet, und in jeder Klasse sind mehrere Validierungsmethoden möglich.  
@@ -49,35 +51,35 @@ Als Autor einer domänenspezifischen Sprache (Domain-Specific Language, DSL) kö
  Die von Validierungsmethoden gefundenen Fehler werden ausgegeben.  
   
 > [!NOTE]
->  Validierungsmethoden geben Fehler aus, nehmen aber keine Änderungen am Modell vor. Zum Anpassen oder verhindern bestimmter Änderungen finden ggf. [Alternativen zur Validierung](#alternatives).  
+>  Validierungsmethoden geben Fehler aus, nehmen aber keine Änderungen am Modell vor. Wenn Sie verhindern möchten, passen oder bestimmte Änderungen, finden Sie unter [Alternativen zur Überprüfung](#alternatives).  
   
 #### <a name="to-define-a-validation-constraint"></a>So definieren Sie eine Validierungseinschränkung  
   
-1.  Aktivieren Sie die Validierung in der **editor\validierung** Knoten:  
+1.  Aktivieren Sie die Überprüfung in der **Editor\Validation** Knoten:  
   
-    1.  Öffnen Sie **Dsl\DslDefinition.dsl**.  
+    1.  Open **Dsl\DslDefinition.dsl**.  
   
-    2.  Erweitern Sie im DSL-Explorer die **Editor** Knoten, und wählen **Überprüfung**.  
+    2.  Erweitern Sie im Explorer für DSL, die **Editor** Knoten, und wählen **Überprüfung**.  
   
-    3.  Legen Sie im Fenster Eigenschaften die **verwendet**  Eigenschaften `true`. Am zweckmäßigsten ist es, alle dieser Eigenschaften festzulegen.  
+    3.  Legen Sie im Fenster Eigenschaften die **verwendet** Eigenschaften `true`. Am zweckmäßigsten ist es, alle dieser Eigenschaften festzulegen.  
   
-    4.  Klicken Sie auf **Alle Vorlagen transformieren** in der Symbolleiste des Projektmappen-Explorer.  
+    4.  Klicken Sie auf **alle Vorlagen transformieren** in der Projektmappen-Explorer-Symbolleiste.  
   
 2.  Schreiben Sie partielle Klassendefinitionen für mindestens eine Ihrer Domänenklassen oder -beziehungen. Schreiben Sie diese Definitionen in eine neue Codedatei, in der **Dsl** Projekt.  
   
 3.  Stellen Sie jeder Klasse das folgende Attribut voran:  
   
-    ```c#  
+    ```csharp  
     [ValidationState(ValidationState.Enabled)]  
     ```  
   
     -   Standardmäßig aktiviert dieses Attribut auch die Validierung für abgeleitete Klassen. Wenn Sie die Validierung für eine bestimmte abgeleitete Klasse deaktivieren möchten, können Sie `ValidationState.Disabled` verwenden.  
   
-4.  Fügen Sie den Klassen Validierungsmethoden hinzu. Jede Validierungsmethode kann einen beliebigen Namen aufweisen, aber Sie verfügen über einen Parameter vom Typ <xref:Microsoft.VisualStudio.Modeling.Validation.ValidationContext>.  
+4.  Fügen Sie den Klassen Validierungsmethoden hinzu. Jede Validierungsmethode kann einen beliebigen Namen aufweisen, muss aber einen Parameter mit dem Typ <xref:Microsoft.VisualStudio.Modeling.Validation.ValidationContext> enthalten.  
   
      Ihm muss mindestens ein `ValidationMethod`-Attribut vorangestellt werden:  
   
-    ```c#  
+    ```csharp  
     [ValidationMethod (ValidationCategories.Open | ValidationCategories.Save | ValidationCategories.Menu ) ]  
     ```  
   
@@ -85,7 +87,7 @@ Als Autor einer domänenspezifischen Sprache (Domain-Specific Language, DSL) kö
   
  Beispiel:  
   
-```c#  
+```csharp  
 using Microsoft.VisualStudio.Modeling;  
 using Microsoft.VisualStudio.Modeling.Validation;  
   
@@ -136,14 +138,14 @@ public partial class ParentsHaveChildren
   
 -   Im LogError-Aufruf können Sie eine Liste der Modellelemente oder Beziehungslinks bereitstellen, die ausgewählt werden, wenn der Benutzer auf die Fehlermeldung doppelklickt.  
   
--   Informationen dazu, wie Sie das Modell im Programmcode lesen, finden Sie unter [Navigieren in und Aktualisieren eines Modells im Programmcode](../modeling/navigating-and-updating-a-model-in-program-code.md).  
+-   Weitere Informationen dazu, wie das Modell im Programmcode lesen, finden Sie unter [Navigieren in und Aktualisieren eines Modells im Programmcode](../modeling/navigating-and-updating-a-model-in-program-code.md).  
   
  Das Beispiel gilt für das folgende Domänenmodell. Die ParentsHaveChildren-Beziehung weist die Rollen "Child" und "Parent" auf.  
   
  ![DSL-Definitionsdiagramm &#45; stammbaummodell](../modeling/media/familyt_person.png "FamilyT_Person")  
   
 ## <a name="validation-categories"></a>Validierungskategorien  
- In der <xref:Microsoft.VisualStudio.Modeling.Validation.ValidationMethodAttribute> -Attribut, Sie angeben, wenn die Validierungsmethode ausgeführt werden soll.  
+ Im Attribut <xref:Microsoft.VisualStudio.Modeling.Validation.ValidationMethodAttribute> geben Sie an, wann die Validierungsmethode ausgeführt werden soll.  
   
 |Kategorie|Ausführung|  
 |--------------|---------------|  
@@ -175,13 +177,13 @@ public partial class Person
   
 ```  
   
- **Aggregieren von validierungseinschränkungen.** Definieren Sie zum Anwenden der Validierung in einer vorhersagbaren Reihenfolge eine Validierungsmethode für eine Besitzerklasse wie dem Stammelement des Modells. Mit dieser Technik können Sie mehrere Fehlerberichte in einer Meldung aggregieren.  
+ **Aggregieren von validierungseinschränkungen.** Um die Überprüfung in einer vorhersagbaren Reihenfolge anwenden zu können, definieren Sie eine einzelne Validierung-Methode auf eine Besitzerklasse ist; solche das Stammelement des Modells. Mit dieser Technik können Sie mehrere Fehlerberichte in einer Meldung aggregieren.  
   
  Zu den Nachteilen gehört, dass die Verwaltung der kombinierten Methode schwieriger ist und dass alle Einschränkungen die gleichen `ValidationCategories` aufweisen müssen. Daher empfiehlt es sich, jede Einschränkung möglichst in einer gesonderten Methode zu belassen.  
   
- **Übergeben von Werten in den Kontextcache.** Der Kontextparameter weist ein Wörterbuch, in dem Sie beliebige Werte aufnehmen können. Das Wörterbuch bleibt für die Dauer der Validierung erhalten. Eine bestimmte Validierungsmethode könnte beispielsweise eine Fehleranzahl im Kontext speichern und dazu verwenden, eine Überflutung des Fehlerfensters mit wiederholten Meldungen zu vermeiden. Beispiel:  
+ **Übergeben von Werten in den Kontextcache.** Der Kontextparameter ist ein Wörterbuch, in dem Sie beliebige Werte platzieren können. Das Wörterbuch bleibt für die Dauer der Validierung erhalten. Eine bestimmte Validierungsmethode könnte beispielsweise eine Fehleranzahl im Kontext speichern und dazu verwenden, eine Überflutung des Fehlerfensters mit wiederholten Meldungen zu vermeiden. Beispiel:  
   
-```c#  
+```csharp  
 List<ParentsHaveChildren> erroneousLinks;  
 if (!context.TryGetCacheValue("erroneousLinks", out erroneousLinks))  
 erroneousLinks = new List<ParentsHaveChildren>();  
@@ -192,16 +194,16 @@ if (erroneousLinks.Count < 5) { context.LogError( ... ); }
 ```  
   
 ## <a name="validation-of-multiplicities"></a>Validierung von Multiplizitäten  
- Validierungsmethoden zur Überprüfung der minimalen Multiplizität werden für Ihre DSL automatisch generiert. Der Code geschrieben ist **Dsl\Generated Code\MultiplicityValidation.cs**. Diese Methoden werden wirksam, wenn Sie die Validierung in Aktivieren der **editor\validierung** Knoten im DSL-Explorer.  
+ Validierungsmethoden zur Überprüfung der minimalen Multiplizität werden für Ihre DSL automatisch generiert. Der Code geschrieben ist **Dsl\Generated Code\MultiplicityValidation.cs**. Diese Methoden werden wirksam, wenn Sie die Überprüfung im Aktivieren der **Editor\Validation** Knoten im Explorer für DSL.  
   
  Wenn Sie als Multiplizität einer Rolle in einer Domänenbeziehung 1..* oder 1..1 festlegen, der Benutzer aber keinen Link mit dieser Beziehung erstellt, wird eine Validierungsfehlermeldung angezeigt.  
   
- Wenn Ihre DSL weist z. B. Klassen, Person und Stadt und eine Beziehung "PersonLivesInTown" mit einer Beziehung **1...\*** die Rolle Stadt wird dann für jede Person, die keine Stadt hat eine Fehlermeldung angezeigt.  
+ Beispielsweise besitzt der DSL-Klassen Person und Stadt und eine Beziehung PersonLivesInTown mit einer Beziehung **1..\***  auf die Rolle "Stadt" klicken Sie dann für jede Person, die keine Örtlichkeit hat folgende Fehlermeldung wird angezeigt.  
   
 ## <a name="running-validation-from-program-code"></a>Ausführen der Validierung über den Programmcode  
- Sie können die Validierung ausführen, indem Sie auf einen ValidationController zugreifen oder ihn erstellen. Wenn der Benutzer Fehler im Fehlerfenster sehen soll, verwenden Sie den ValidationController, der an DocData des Diagramms angefügt ist. Wenn Sie beispielsweise einen Menübefehl schreiben, ist `CurrentDocData.ValidationController` in der Befehlssatzklasse verfügbar:  
+ Sie können die Validierung ausführen, indem Sie auf einen ValidationController zugreifen oder ihn erstellen. Wenn Sie die Fehler, die für den Benutzer im Fehlerfenster angezeigt werden soll, verwenden Sie die ValidationController, die dem Diagramm DocData angefügt ist. Wenn Sie beispielsweise einen Menübefehl schreiben, ist `CurrentDocData.ValidationController` in der Befehlssatzklasse verfügbar:  
   
-```c#  
+```csharp  
 using Microsoft.VisualStudio.Modeling;  
 using Microsoft.VisualStudio.Modeling.Validation;  
 using Microsoft.VisualStudio.Modeling.Shell;  
@@ -215,11 +217,11 @@ partial class MyLanguageCommandSet
   
 ```  
   
- Weitere Informationen finden Sie unter [Gewusst wie: Hinzufügen eines Befehls zum Kontextmenü](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).  
+ Weitere Informationen finden Sie unter [wie: Hinzufügen eines Befehls zum Kontextmenü](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).  
   
  Sie können auch einen gesonderten Validierungscontroller erstellen und Fehler selbst verwalten. Beispiel:  
   
-```c#  
+```csharp  
 using Microsoft.VisualStudio.Modeling;  
 using Microsoft.VisualStudio.Modeling.Validation;  
 using Microsoft.VisualStudio.Modeling.Shell;  
@@ -236,11 +238,11 @@ if (!validator.Validate(store, ValidationCategories.Save))
 ```  
   
 ## <a name="running-validation-when-a-change-occurs"></a>Ausführen der Validierung bei einer Änderung  
- Wenn Sie sicherstellen möchten, dass der Benutzer sofort gewarnt wird, sobald das Modell ungültig wird, können Sie ein Speicherereignis definieren, das die Validierung ausführt. Weitere Informationen zu Speicherereignissen finden Sie unter [Handler weitergeben Änderungen außerhalb der Ereignismodell](../modeling/event-handlers-propagate-changes-outside-the-model.md).  
+ Wenn Sie sicherstellen möchten, dass der Benutzer sofort gewarnt wird, sobald das Modell ungültig wird, können Sie ein Speicherereignis definieren, das die Validierung ausführt. Weitere Informationen zu Store-Ereignissen finden Sie unter [Handler verteilt Änderungen außerhalb der Ereignismodell](../modeling/event-handlers-propagate-changes-outside-the-model.md).  
   
- Zusätzlich zu den Validierungscode hinzufügen, eine benutzerdefinierte Codedatei der **DslPackage** -Projekt mit Inhalt wie im folgenden Beispiel. In diesem Code wird der an das Dokument angefügte `ValidationController` verwendet. Dieser Controller zeigt die Validierungsfehler in der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Fehlerliste an.  
+ Zusätzlich zu den Validierungscode hinzufügen eine benutzerdefinierten Codedatei, um Ihre **DslPackage** -Projekt mit Inhalt wie im folgenden Beispiel. In diesem Code wird der an das Dokument angefügte `ValidationController` verwendet. Dieser Controller zeigt die Validierungsfehler in der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Fehlerliste an.  
   
-```c#  
+```csharp  
 using System;  
 using System.Linq;  
 using Microsoft.VisualStudio.Modeling;  
@@ -301,14 +303,14 @@ namespace Company.FamilyTree
   
  Die Handler werden auch nach Vorgängen zum Rückgängigmachen oder Wiederholen aufgerufen, wenn die Vorgänge Auswirkungen auf die Links oder Elemente haben.  
   
-##  <a name="a-namecustoma-custom-validation-categories"></a><a name="custom"></a> Benutzerdefinierte Validierungskategorien  
+##  <a name="custom"></a>Benutzerdefinierte Validierungskategorien  
  Neben den standardmäßigen Validierungskategorien wie "Menü" und "Öffnen" können Sie eigene Kategorien erstellen. Sie können diese Kategorien über Programmcode aufrufen. Sie können nicht direkt vom Benutzer aufgerufen werden.  
   
  Ein typischer Einsatzbereich benutzerdefinierter Kategorien ist die Definition einer Kategorie, mit der getestet wird, ob das Modell die Vorbedingungen eines bestimmten Tools erfüllt.  
   
  Um einer bestimmten Kategorie eine Validierungsmethode hinzuzufügen, stellen Sie ihr beispielsweise das folgende Attribut voran:  
   
-```c#  
+```csharp  
 [ValidationMethod(CustomCategory = "PreconditionsForGeneratePartsList")]  
 [ValidationMethod(ValidationCategory.Menu)]   
 private void TestForCircularLinks(ValidationContext context)   
@@ -321,7 +323,7 @@ private void TestForCircularLinks(ValidationContext context)
   
  So rufen Sie eine benutzerdefinierte Validierung auf  
   
-```c#  
+```csharp  
   
 // Invoke all validation methods in a custom category:   
 validationController.ValidateCustom  
@@ -329,14 +331,14 @@ validationController.ValidateCustom
    "PreconditionsForGeneratePartsList");  
 ```  
   
-##  <a name="a-namealternativesa-alternatives-to-validation"></a><a name="alternatives"></a> Alternativen zur Validierung  
+##  <a name="alternatives"></a>Alternativen zur Überprüfung  
  Validierungseinschränkungen geben Fehler aus, nehmen aber keine Änderungen am Modell vor. Wenn Sie allerdings verhindern möchten, dass das Modell ungültig wird, können Sie andere Techniken einsetzen.  
   
  Diese Techniken werden jedoch nicht empfohlen. Normalerweise ist es besser, den Benutzer entscheiden zu lassen, wie ein ungültiges Modell korrigiert wird.  
   
- **Passen Sie die ändern, um die Gültigkeit des Modells wiederherzustellen.** Wenn der Benutzer eine Eigenschaft überschreitet den maximal zulässigen Wert festlegt, konnte Sie z. B. die Eigenschaft auf den maximalen Wert zurücksetzen. Definieren Sie dazu eine Regel. Weitere Informationen finden Sie unter [Regeln weitergeben Änderungen in das Modell](../modeling/rules-propagate-changes-within-the-model.md).  
+ **Passen Sie die ändern, um die Gültigkeit des Modells wiederherzustellen.** Der Benutzer eine Eigenschaft über dem zulässigen Höchstwert festgelegt wird, konnte Sie z. B. die Eigenschaft dem maximalen Wert zurücksetzen. Definieren Sie dazu eine Regel. Weitere Informationen finden Sie unter [weitergeben Änderungen innerhalb des Modells](../modeling/rules-propagate-changes-within-the-model.md).  
   
- **Rollback der Transaktion, wenn eine ungültige Änderung vorgenommen wird.** Sie können auch eine Regel definieren, zu diesem Zweck, aber in einigen Fällen ist es möglich, eine Eigenschaft überschrieben **OnValueChanging()**, oder eine Methode zu überschreiben, wie z. B. `OnDeleted().` verwenden, um ein Rollback eine Transaktion, `this.Store.TransactionManager.CurrentTransaction.Rollback().` Weitere Informationen finden Sie unter [Handler für Wertänderungen von Domäne](../modeling/domain-property-value-change-handlers.md).  
+ **Rollback der Transaktion, wenn, eine ungültige ändern versucht wird.** Sie können auch eine Regel definieren, für diesen Zweck, aber in einigen Fällen ist es möglich, einen Handler für die Eigenschaft außer Kraft setzen **OnValueChanging()**, oder um eine Methode zu überschreiben, wie z. B. `OnDeleted().` verwenden, um ein Rollback eine Transaktion, `this.Store.TransactionManager.CurrentTransaction.Rollback().` Weitere Informationen finden Sie unter [Domäne Eigenschaft Wert ändern Handler](../modeling/domain-property-value-change-handlers.md).  
   
 > [!WARNING]
 >  Stellen Sie sicher, dass der Benutzer weiß, dass die Änderung angepasst oder zurückgesetzt wurde. Verwenden Sie beispielsweise `System.Windows.Forms.MessageBox.Show("message").`.  

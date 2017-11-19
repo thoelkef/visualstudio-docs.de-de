@@ -1,36 +1,36 @@
 ---
-title: "Fehler: Auf die Debugschnittstelle von SQL Server kann nicht zugegriffen werden | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.debug.error.sqlde_debugging_not_enabled"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "SQL"
+title: 'Fehler: Nicht auf die SQL Server-Debugschnittstelle zugreifen | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vs.debug.error.sqlde_debugging_not_enabled
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+- SQL
 ms.assetid: 527cf400-d12d-45ef-a7e7-baa65ca96ec5
-caps.latest.revision: 5
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 5
+caps.latest.revision: "5"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 10aedafec0acac21f25f27f13166f49d4769ae10
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Fehler: Auf die Debugschnittstelle von SQL Server kann nicht zugegriffen werden
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Diese Meldung wird angezeigt, wenn Sie SQL\-Debuggen auf einem Computer versuchen, bei dem SQL\-Debuggen nicht aktiviert ist.  
+# <a name="error-unable-to-access-the-sql-server-debugging-interface"></a>Fehler: Auf die Debugschnittstelle von SQL Server kann nicht zugegriffen werden
+Diese Meldung wird angezeigt, wenn Sie SQL-Debuggen auf einem Computer versuchen, bei dem SQL-Debuggen nicht aktiviert ist.  
   
-### So beheben Sie diesen Fehler  
+### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
   
--   Siehe [Setting Up SQL Debugging](http://msdn.microsoft.com/de-de/3db09e68-edcc-42de-9c22-4e97cfd55ab3).  
+-   Finden Sie unter [Einrichten von SQL-Debuggen](http://msdn.microsoft.com/en-us/3db09e68-edcc-42de-9c22-4e97cfd55ab3).  
   
-## Siehe auch  
- [Debugging SQL](http://msdn.microsoft.com/de-de/f27c17e6-1d90-49f2-9fc0-d02e6a27f109)
+## <a name="see-also"></a>Siehe auch  
+ [SQL-Debuggen](http://msdn.microsoft.com/en-us/f27c17e6-1d90-49f2-9fc0-d02e6a27f109)

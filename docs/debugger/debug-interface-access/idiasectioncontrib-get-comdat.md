@@ -1,46 +1,45 @@
 ---
-title: "IDiaSectionContrib::get_comdat | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSectionContrib::get_comdat-Methode"
+title: 'Idiasectioncontrib:: Get_comdat | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSectionContrib::get_comdat method
 ms.assetid: 8bd9be8d-59ee-4698-b055-daba354b8dcc
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: d3797f60e9ca6e97da3b7b6e44c89f802b086d13
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSectionContrib::get_comdat
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Ruft ein Flag ab, das angibt, ob es sich bei dem Abschnitt ein COMDAT\-Datensatz ist.  
+# <a name="idiasectioncontribgetcomdat"></a>IDiaSectionContrib::get_comdat
+Ruft ein Flag, das angibt, ob der Abschnitt ein COMDAT-Datensatz ist.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT get_comdat (   
-   BOOL* pRetVal  
+```C++  
+HRESULT get_comdat (   
+   BOOL* pRetVal  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `pRetVal`  
- \[out\]  Gibt `TRUE` zurück, wenn der Abschnitt ein COMDAT\-Datensatz ist. andernfalls gibt `FALSE`zurück.  
+ [out] Gibt `TRUE` , wenn der Abschnitt eine COMDAT-Datensatz; ist, andernfalls `FALSE`.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück.  Gibt `S_FALSE` zurück, wenn diese Eigenschaft nicht unterstützt wird.  Andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`. Gibt `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Hinweise  
- Ein COMDAT\-Datensatz ist ein Datensatz im COFF\-Format \(Common Object File Format\) an den Linker der gepackten Funktionen sichtbar gemacht werden.  
+## <a name="remarks"></a>Hinweise  
+ Ein COMDAT-Datensatz ist ein Common Object File Format (COFF), der Paketfunktionen an den Linker sichtbar macht.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

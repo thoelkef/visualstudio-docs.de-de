@@ -1,38 +1,40 @@
 ---
-title: "Launch-basierte Anlage | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Debugmodule, starten"
-  - "Debugmodule, Anhängen an Programme"
+title: Start-basierte Anlage | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- debug engines, launching
+- debug engines, attaching to programs
 ms.assetid: 362f00ac-1909-4a3a-bacb-c0ceb5549816
-caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 2aa9787ad432e402375680c4e27e433236b13249
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Launch-basierte Anlage
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Start\-basierte Anlage zu einem Programm ist automatisch.  Wenn das Programm das Hosten Prozess vom SDM gestartet wird, folgt Start\-basierte Anlage einem Pfad, der dem der manuellen Anlagen Methode ähnelt.  Weitere Informationen finden Sie unter [Zum Programmieren anfügen](../../extensibility/debugger/attaching-to-the-program.md).  
+# <a name="launch-based-attachment"></a>Start-basierte Anlage
+Start-basierte das Anfügen an ein Programm wird automatisch wiederhergestellt. Wenn der Hostprozess für das Programm durch die SDM gestartet wird, folgt Launch-basierte Anlage einen Pfad, der ähnlich dem Konzept der manuellen Methode. Informationen finden Sie unter [Anfügen an das Programm](../../extensibility/debugger/attaching-to-the-program.md).  
   
-## Der Prozess anfügende  
- Der Hauptunterschied ist die Sequenz von Ereignissen **Anfügen** dem nächsten Aufruf wie folgt:  
+## <a name="the-attaching-process"></a>Der Prozess anfügen  
+ Der Hauptunterschied ist die Abfolge der Ereignisse, die nach der **Anfügen** wie folgt aufrufen:  
   
-1.  Senden Sie ein **IDebugEngineCreateEvent2** SDM auf das Ereignisobjekt.  Ausführliche Informationen finden Sie unter [Senden von Ereignissen](../../extensibility/debugger/sending-events.md).  
+1.  Senden einer **IDebugEngineCreateEvent2** Ereignisobjekt, das SDM. Weitere Informationen finden Sie unter [Ereignisse senden](../../extensibility/debugger/sending-events.md).  
   
-2.  Rufen Sie die `IDebugProgram2::GetProgramId`\-Methode für die **IDebugProgram2**\-Schnittstelle an, die an die Methode übergeben wird. **Anfügen**  
+2.  Rufen Sie die `IDebugProgram2::GetProgramId` Methode für die **IDebugProgram2** Schnittstelle übergeben, um die **Anfügen** Methode.  
   
-3.  Senden Sie ein **IDebugProgramCreateEvent2**\-Ereignisobjekt, um das SDM zu benachrichtigen, dass das lokale **IDebugProgram2**\-Objekt erstellt wurde, um das Programm zu präsentieren. DE  
+3.  Senden einer **IDebugProgramCreateEvent2** Ereignisobjekt, das SDM benachrichtigen, die der lokalen **IDebugProgram2** Objekt, das Sie erstellt wurde, um das Programm de darstellen.  
   
-4.  Senden Sie ein [IDebugThreadCreateEvent2](../../extensibility/debugger/reference/idebugthreadcreateevent2.md)\-Ereignisobjekt, um das SDM zu benachrichtigen, dass ein neuer Thread für den Prozess erstellt wird, der ausgelöst hat.  
+4.  Senden einer [IDebugThreadCreateEvent2](../../extensibility/debugger/reference/idebugthreadcreateevent2.md) Ereignisobjekt, das SDM benachrichtigen, dass ein neuer Thread für den Prozess erstellt wird, die gestartet.  
   
-## Siehe auch  
- [Die erforderlichen Ereignisse senden](../../extensibility/debugger/sending-the-required-events.md)   
- [Ein Programm zum Debuggen aktivieren](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)
+## <a name="see-also"></a>Siehe auch  
+ [Senden die erforderlichen Ereignisse](../../extensibility/debugger/sending-the-required-events.md)   
+ [Aktivieren eines Programms für das Debuggen](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)

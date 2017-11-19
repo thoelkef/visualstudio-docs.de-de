@@ -1,38 +1,41 @@
 ---
-title: "byteLength-Eigenschaft (Int32Array) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
+title: ByteLength-Eigenschaft (Int32Array) | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
 ms.assetid: 9d09754d-d08b-434a-a9c4-46700fa49377
-caps.latest.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: b9e8df3807fc1fd5cf5397094c6638cbc24b03df
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# byteLength-Eigenschaft (Int32Array)
-Schreibgeschützt.  Die Länge dieses Arrays vom Beginn seines ArrayBuffers in Bytes, so wie während der Konstruktionszeit festgelegt.  
+# <a name="bytelength-property-int32array"></a>byteLength-Eigenschaft (Int32Array)
+Schreibgeschützt. Die Länge dieses Arrays vom Beginn des ArrayBuffers in Bytes, so wie bei der Konstruktion festgelegt.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```javascript  
+```JavaScript  
 var arrayByteLength = int32Array.byteLength;  
 ```  
   
-## Beispiel  
+## <a name="example"></a>Beispiel  
  Im folgenden Beispiel wird veranschaulicht, wie die Länge des Arrays abgerufen wird.  
   
-```javascript  
+```JavaScript  
 var req = new XMLHttpRequest();  
     req.open('GET', "http://www.example.com");  
     req.responseType = "arraybuffer";  
@@ -49,5 +52,5 @@ var req = new XMLHttpRequest();
   
 ```  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  [!INCLUDE[jsv10](../../javascript/reference/includes/jsv10-md.md)]

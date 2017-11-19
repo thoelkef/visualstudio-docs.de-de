@@ -1,48 +1,50 @@
 ---
-title: "Kennwortschutz f&#252;r Office-Dokumente"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "Dokumente [Office-Entwicklung in Visual Studio], Eingeschränkte Berechtigungen"
-  - "Office-Dokumente [Office-Entwicklung in Visual Studio], Eingeschränkte Berechtigungen"
-  - "Kennwörter [Office-Entwicklung in Visual Studio], Dokumentschutz"
-  - "Berechtigungen [Office-Entwicklung in Visual Studio]"
-  - "Arbeitsmappen [Office-Entwicklung in Visual Studio], Eingeschränkte Berechtigungen"
+title: "Kennwortschutz für Office-Dokumente | Microsoft Docs"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- permissions [Office development in Visual Studio]
+- workbooks [Office development in Visual Studio], restricted permissions
+- passwords [Office development in Visual Studio], document protections
+- documents [Office development in Visual Studio], restricted permissions
+- Office documents [Office development in Visual Studio, restricted permissions
 ms.assetid: 9cee99c8-73c6-4f89-9d5e-7912c876ff96
-caps.latest.revision: 21
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 20
+caps.latest.revision: "21"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 45f350fed3c806a9ac8f79178a50ef22aa0a800e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Kennwortschutz f&#252;r Office-Dokumente
-  Es ist möglich, ein Kennwort für Ihre Microsoft Office Word\-Dokumente und Microsoft Office Excel\-Arbeitsmappen festzulegen, sodass sie von einem Benutzer, der das Kennwort nicht kennt, nicht geöffnet werden können.  Diese Option heißt **Kennwort beim Öffnen**.  
+# <a name="password-protection-on-office-documents"></a>Kennwortschutz für Office-Dokumente
+  Es ist möglich, ein Kennwort für Microsoft Office Word-Dokumente und Microsoft Office Excel-Arbeitsmappen festlegen, damit sie von einem Benutzer geöffnet werden können, die nicht das Kennwort kennt. Diese Option heißt auch **Kennwort beim Öffnen**.  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
- Sie können Projekte auf Dokumentebene mithilfe vorhandener Dokumente und Arbeitsmappen erstellen, bei denen **Kennwort beim Öffnen** aktiviert ist.  Das Verhalten in Visual Studio unterscheidet sich bei Word\- und Excel\-Dokumenten, bei denen **Kennwort beim Öffnen** aktiviert ist.  
+ Sie können Projekte auf Dokumentebene, die mithilfe vorhandener Dokumente und Arbeitsmappen mit erstellen **Kennwort beim Öffnen** aktiviert. Das Verhalten in Visual Studio unterscheidet sich für Word und Excel-Dokumenten, die über **Kennwort beim Öffnen** aktiviert.  
   
- Informationen zum Aktivieren von **Kennwort beim Öffnen** finden Sie in der Hilfe in Word oder Excel.  
+ Informationen zum Aktivieren der **Kennwort beim Öffnen**, finden Sie in Word oder Excel-Hilfe.  
   
-## Verhalten von Excel und Word  
- Bei jedem Öffnen einer Excel\-Arbeitsmappe in Visual Studio, bei der **Kennwort beim Öffnen** aktiviert ist, werden Sie von Excel zur Eingabe des Kennworts aufgefordert.  Beim Erstellen der Projektmappe werden Sie erneut zur Eingabe des Kennworts aufgefordert, da das Dokument während des Erstellens geöffnet wird.  
+## <a name="behavior-of-excel-and-word"></a>Das Verhalten von Excel und Word  
+ Jedes Mal, wenn Sie eine Excel-Arbeitsmappe in Visual Studio öffnen, die hat **Kennwort beim Öffnen** aktiviert, Excel fordert Sie das Kennwort. Beim Erstellen der Projektmappe werden Sie für das Kennwort erneut aufgefordert werden, da das Dokument, während des Buildvorgangs geöffnet wird.  
   
- Beim ersten Öffnen eines Word\-Dokuments in Visual Studio, bei dem **Kennwort beim Öffnen** aktiviert ist, werden Sie von Word zur Eingabe des Kennworts aufgefordert.  Nachdem Sie das Kennwort eingegeben haben, wird **Kennwort beim Öffnen** aus dem Dokument entfernt. Beim Öffnen des Dokuments ist daher kein Kennwort mehr erforderlich.  Wenn zum Öffnen des Dokuments in Ihrer Projektmappe ein Kennwort erforderlich sein soll, müssen Sie **Kennwort beim Öffnen** nach dem endgültigen Build und vor Bereitstellung der Projektmappe aktivieren.  
+ Beim ersten Öffnen Sie ein Word-Dokument in Visual Studio, ist **Kennwort beim Öffnen** aktiviert, Word fordert Sie das Kennwort. Nachdem Sie das Kennwort erfolgreich eingegeben **Kennwort beim Öffnen** aus dem Dokument entfernt wird und das Dokument zu öffnen, wird nicht mehr ein Kennwort erfordern. Wenn das Dokument in der Projektmappe verwendet werden soll, ein Kennwort erforderlich kann geöffnet ist, müssen Sie aktivieren **Kennwort beim Öffnen** nach dem letzten Build und vor dem Bereitstellen der Lösung.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Dokumentschutz in Projektmappen auf Dokumentebene](../vsto/document-protection-in-document-level-solutions.md)   
- [Übersicht über Information Rights Management und Erweiterungen durch verwalteten Code](../vsto/information-rights-management-and-managed-code-extensions-overview.md)   
- [Gewusst wie: Zulassen der Ausführung von Code im Hintergrund von Dokumenten mit eingeschränkten Berechtigungen](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)   
- [Entwerfen und Erstellen von Office-Lösungen](../vsto/designing-and-creating-office-solutions.md)  
+ [Information Rights Management und Erweiterungen – Übersicht von verwaltetem Code](../vsto/information-rights-management-and-managed-code-extensions-overview.md)   
+ [Vorgehensweise: Zulassen von Code für die Ausführung Hintergrund von Dokumenten mit eingeschränkten Berechtigungen](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)   
+ [Entwerfen und Erstellen von Office-Projektmappen](../vsto/designing-and-creating-office-solutions.md)  
   
   

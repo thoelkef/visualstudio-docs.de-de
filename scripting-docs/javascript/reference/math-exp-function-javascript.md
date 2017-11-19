@@ -1,52 +1,54 @@
 ---
-title: "Math.exp-Funktion (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "exp"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "Eulers Konstante"
-  - "exp-Methode"
-  - "exp-Methode, JavaScript"
-  - "Logarithmen"
-  - "Math-Objekt"
+title: Math.exp-Funktion (JavaScript) | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: exp
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- exp method
+- exp method, JavaScript
+- Math object
+- logarithms
+- Euler's constant
 ms.assetid: a36845a8-2c15-45be-83f1-b33914423201
-caps.latest.revision: 10
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: aa2891b20496ceb5f740a0b94e8b5c8a0184e844
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# Math.exp-Funktion (JavaScript)
-Berechnet die Exponentialfunktion e. e ist die Basis des natürlichen Logarithmus.  
+# <a name="mathexp-function-javascript"></a>Math.exp-Funktion (JavaScript)
+Gibt e (die Basis des natürlichen Logarithmus) potenziert mit einem Exponenten zurück.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
   
 Math.exp(number)   
 ```  
   
-## Hinweise  
- Das erforderliche `number`\-Argument ist ein numerischer Ausdruck, der die Potenz von *e* darstellt.  
+## <a name="remarks"></a>Hinweise  
+ Die erforderliche `number` Argument ist ein numerischer Ausdruck, die die Leistungsfähigkeit von darstellt *e*.  
   
- Der Rückgabewert ist eine Zahl.  Die Konstante *e* ist die eulersche Zahl, die annähernd gleich 2,71828 ist, und `number` ist das angegebene Argument.  
+ Der Rückgabewert ist eine Zahl. Die Konstante *e* ist eulers Zahl, entspricht ca. 2,71828 und `number` ist das bereitgestellte Argument.  
   
- **Gilt für**: [Math\-Objekt](../../javascript/reference/math-object-javascript.md)  
+ **Gilt für**: [Math-Objekt](../../javascript/reference/math-object-javascript.md)  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
-## Siehe auch  
- [Math\-Konstanten](../../javascript/reference/math-constants-javascript.md)
+## <a name="see-also"></a>Siehe auch  
+ [Math-Konstanten](../../javascript/reference/math-constants-javascript.md)

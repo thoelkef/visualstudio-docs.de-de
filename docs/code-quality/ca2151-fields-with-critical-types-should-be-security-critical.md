@@ -1,49 +1,33 @@
 ---
-title: 'CA2151: Fields with critical types should be security critical | Microsoft Docs'
+title: 'CA2151: Felder mit kritischen Typen sollten sicherheitskritisch sein | Microsoft Docs'
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 09db9d25-7d58-4725-a252-4a07baadf046
-caps.latest.revision: 4
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: c312bf4cd90dff17ff10063ab8a293161e2fa328
-ms.contentlocale: de-de
-ms.lasthandoff: 08/30/2017
-
+caps.latest.revision: "4"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 9a703dec98c93c03a2df51d3bd3d4ecf870f2031
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="ca2151-fields-with-critical-types-should-be-security-critical"></a>CA2151: Fields with critical types should be security critical
+# <a name="ca2151-fields-with-critical-types-should-be-security-critical"></a>CA2151: Felder mit kritischen Typen sollten sicherheitskritisch sein
 |||  
 |-|-|  
 |TypeName||  
 |CheckId|CA2151|  
-|Category|Microsoft.Security|  
-|Breaking Change|Breaking|  
+|Kategorie|Microsoft.Security|  
+|Unterbrechende Änderung|Breaking|  
   
-## <a name="cause"></a>Cause  
- A security transparent field or a safe critical field is declared. Its type is specified as security critical. For example:  
+## <a name="cause"></a>Ursache  
+ Ein sicherheitstransparentes Feld oder ein sicherungskritisches Feld wird deklariert. Sein Typ wird als sicherheitskritisch angegeben. Zum Beispiel:  
   
 ```csharp  
 [assembly: AllowPartiallyTrustedCallers]  
@@ -58,13 +42,13 @@ ms.lasthandoff: 08/30/2017
   
 ```  
   
- In this example, `m_field` is a security transparent field of a type that is security critical.  
+ In diesem Beispiel ist `m_field` ein sicherheitstransparentes Feld eines Typs, der sicherheitskritisch ist.  
   
-## <a name="rule-description"></a>Rule Description  
- To use security critical types, the code that references the type must be either security critical or security safe critical. This is true even if the reference is indirect. For example, when you reference a transparent field that has a critical type, your code must be either security critical or security safe. Therefore, having a security transparent or security safe critical field is misleading because transparent code will still be unable to access the field.  
+## <a name="rule-description"></a>Regelbeschreibung  
+ Um sicherheitskritische Typen zu verwenden, muss der Code, der auf den Typ verweist, entweder sicherheitskritisch oder sicherungskritisch sein. Dies gilt auch, wenn der Verweis indirekt ist. Wenn Sie beispielsweise auf ein transparentes Feld verweisen, das über einen kritischen Typ verfügt, muss der Code entweder sicherheitskritisch oder sicherungskritisch sein. Daher kann ein sicherheitstransparentes oder sicherungskritisches Feld irreführend sein, denn transparenter Code kann trotzdem nicht auf das Feld zugreifen.  
   
-## <a name="how-to-fix-violations"></a>How to Fix Violations  
- To fix a violation of this rule, mark the field with the <xref:System.Security.SecurityCriticalAttribute> attribute, or make the type that is referenced by the field eith security transparent or safe critical.  
+## <a name="how-to-fix-violations"></a>Behandeln von Verstößen  
+ Um einen Verstoß gegen diese Regel zu beheben, markieren Sie das Feld mit dem <xref:System.Security.SecurityCriticalAttribute>-Attribut, oder ändern Sie den Typ, auf den durch das Feld verwiesen wird, in sicherheitstransparent oder sicherungskritisch.  
   
 ```csharp  
 // Fix 1: Make the referencing field security critical  
@@ -92,10 +76,10 @@ ms.lasthandoff: 08/30/2017
   
 ```  
   
-## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
- Do not suppress a warning from this rule.  
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?  
+ Unterdrücken Sie keine Warnung dieser Regel.  
   
 ### <a name="code"></a>Code  
  [!code-csharp[FxCop.Security.CA2145.TransparentMethodsShouldNotUseSuppressUnmanagedCodeSecurity#1](../code-quality/codesnippet/CSharp/ca2151-fields-with-critical-types-should-be-security-critical_1.cs)]  
   
-### <a name="comments"></a>Comments
+### <a name="comments"></a>Kommentare

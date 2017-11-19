@@ -1,46 +1,47 @@
 ---
-title: "IDebugComPlusSymbolProvider2 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "IDebugComPlusSymbolProvider2-Schnittstelle"
+title: IDebugComPlusSymbolProvider2 | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: IDebugComPlusSymbolProvider2 interface
 ms.assetid: fa2f9b49-03ad-43c7-92d6-6dcb9c3d0531
-caps.latest.revision: 6
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 6
+caps.latest.revision: "6"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: ab11d2b7df3cc69898544f2be567fbd7f5547f25
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugComPlusSymbolProvider2
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Stellt einen Anbieter COM\+\-Symbol mit Methoden, die für den verwalteten Code beziehen und erweitert das **IDebugComPlusSymbolProvider[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)**.  
+# <a name="idebugcomplussymbolprovider2"></a>IDebugComPlusSymbolProvider2
+Stellt einen COM+-Symbol-Anbieter mit Methoden, die auf verwalteten Code beziehen und erweitert die **IDebugComPlusSymbolProvider**[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md).  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 IDebugComPlusSymbolProvider2 : IDebugComPlusSymbolProvider  
 ```  
   
-## Methoden  
- Zusätzlich zu den Methoden der [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)\-Schnittstelle implementiert diese Schnittstelle die folgenden Methoden:  
+## <a name="methods"></a>Methoden  
+ Zusätzlich zu den Methoden für die [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) diese Schnittstelle implementiert, die folgenden Methoden:  
   
 |Methode|Beschreibung|  
-|-------------|------------------|  
-|[FunctionHasLineInfo](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2-functionhaslineinfo.md)|Bestimmt, ob die angegebene Methode Zeileninformationen verfügt.|  
-|[GetTypesByName](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2-gettypesbyname.md)|Ruft einen angegebenen Typ sein Name ab.|  
-|[GetTypeFromToken](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2-gettypefromtoken.md)|Ruft einen angegebenen Typ das Token ab.|  
-|[IsAddressSequencePoint](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2-isaddresssequencepoint.md)|Bestimmt, ob die angegebene Adresse Debuggen eines Sequenzpunkts verwendet wird.|  
-|[LoadSymbolsFromCallback](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2-loadsymbolsfromcallback.md)|Lädt Symbole Debuggen mithilfe der angegebenen Rückrufmethode.|  
-|[LoadSymbolsFromStreamWithCorModule](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2-loadsymbolsfromstreamwithcormodule.md)|Debugsymbole der Auslastung aus einem Datenstrom des angegebenen **ICorDebugModule\-Objekt** .|  
-|[LoadSymbolsWithCorModule](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2-loadsymbolswithcormodule.md)|Lädt die angegebenen Symbole das Debuggen **ICorDebugModule\-Objekt** .|  
+|------------|-----------------|  
+|[FunctionHasLineInfo](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2-functionhaslineinfo.md)|Bestimmt, ob die angegebene Methode Zeileninformationen hat.|  
+|[GetTypesByName](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2-gettypesbyname.md)|Ruft einen Typ mit dem angegebenen Namen ab.|  
+|[GetTypeFromToken](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2-gettypefromtoken.md)|Ruft einen Typ, dessen Token erhält.|  
+|[IsAddressSequencePoint](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2-isaddresssequencepoint.md)|Bestimmt, ob die angegebene Debug-Adresse ein Sequenzpunkt ist.|  
+|[LoadSymbolsFromCallback](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2-loadsymbolsfromcallback.md)|Lädt Symbole, die über die angegebene Rückrufmethode für das Debuggen.|  
+|[LoadSymbolsFromStreamWithCorModule](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2-loadsymbolsfromstreamwithcormodule.md)|Laden von Debugsymbolen, die aus einem angegebenen Datenstrom der **ICorDebugModule** Objekt.|  
+|[LoadSymbolsWithCorModule](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2-loadsymbolswithcormodule.md)|Lädt Debuggen Symbole erhält die **ICorDebugModule** Objekt.|  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  Header: Sh.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  

@@ -1,110 +1,93 @@
 ---
-title: Create and configure datasets in Visual Studio | Microsoft Docs
+title: Erstellen und Konfigurieren von Datasets in Visual Studio | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs:
-- VB
-- CSharp
-- C++
-- aspx
 helpviewer_keywords:
 - typed datasets, creating
 - datasets [Visual Basic], creating
 ms.assetid: 58f33b43-24e1-43b1-b08b-b74329960bd6
-caps.latest.revision: 36
-author: mikeblome
-ms.author: mblome
+caps.latest.revision: "36"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
-ms.openlocfilehash: c598bcc7d591f14a0854e5a53c76a219146de933
-ms.contentlocale: de-de
-ms.lasthandoff: 08/22/2017
-
+ms.technology: vs-data-tools
+ms.openlocfilehash: 5dd27f35bdfd0ee2f576c1a4ac2fe3fde5a357e6
+ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/09/2017
 ---
-# <a name="create-and-configure-datasets-in-visual-studio"></a>Create and configure datasets in Visual Studio
-A *dataset* is a set of objects that store data from a database in memory and support change tracking to enable create, read, update and delete (CRUD) operations on that data without the need to be always connected to the database. Datasets were designed for simple *forms over data* business applications. For new applications, consider using Entity Framework to store and model data in memory. To work with datasets, you should have a basic knowledge of database concepts.  
+# <a name="create-and-configure-datasets-in-visual-studio"></a>Erstellen und Konfigurieren von Datasets in Visual Studio
+Ein *Dataset* ist ein Satz von Objekten, die Daten aus einer Datenbank im Arbeitsspeicher speichern und unterstützen, änderungsnachverfolgung, zum Aktivieren zu erstellen, lesen, aktualisieren und Löschvorgänge (CRUD) für diese Daten, ohne dass Sie immer mit der Datenbank verbunden sein müssen. Für einfache Datasets entworfen wurden *Formulare über Daten* Geschäftsanwendungen. Für neue Anwendungen sollten Sie in Erwägung ziehen, Entity Framework zum Speichern und Modellieren von Daten im Arbeitsspeicher zu verwenden. Um mit Datasets arbeiten, benötigen Sie Grundkenntnisse von Datenbankkonzepten.  
   
- You create a typed <xref:System.Data.DataSet> class in Visual Studio at design time by using the **Data Source Configuration Wizard**. For information on creating datasets programmatically, see [Creating a DataSet](/dotnet/framework/data/adonet/dataset-datatable-dataview/creating-a-dataset).  
+ Erstellen Sie eine typisierte <xref:System.Data.DataSet> Klasse in Visual Studio zur Entwurfszeit mithilfe der **Datenquellen Konfigurations-Assistenten**. Informationen zum programmgesteuerten Erstellen von Datasets finden Sie unter [Erstellen eines Datasets](/dotnet/framework/data/adonet/dataset-datatable-dataview/creating-a-dataset).  
   
-## <a name="create-a-new-dataset-by-using-the-data-source-configuration-wizard"></a>Create a new dataset by using the Data Source Configuration Wizard  
+## <a name="create-a-new-dataset-by-using-the-data-source-configuration-wizard"></a>Erstellen Sie ein neues Dataset mit dem Konfigurations-Assistenten  
   
-1.  On the **Project** menu, click **Add New Data Source** to start the **Data Source Configuration Wizard**.  
+1.  Auf der **Projekt** Menü klicken Sie auf **neue Datenquelle hinzufügen** zum Starten der **Datenquellen Konfigurations-Assistenten**.  
   
-2.  Choose the type of data source that you will be connecting to.  
+2.  Wählen Sie den Typ der Datenquelle, die Sie mit herstellen möchte.  
   
-     ![Data Source Configuration Wizard](../data-tools/media/data-source-configuration-wizard.png "Data Source Configuration Wizard")  
+     ![Datenquellen Konfigurationsassistenten](../data-tools/media/data-source-configuration-wizard.png "Datenquellen Konfigurationsassistenten")  
   
-3.  For databases, choose the database or databases that will be the data source for your dataset.  
+3.  Wählen Sie für Datenbanken Datenbanken, die die Datenquelle für das Dataset ein.  
   
-     ![Data source choose a connection](../data-tools/media/data-source-choose-a-connection.png "Data source choose a connection")  
+     ![Auswählen der Datenquelle eine Verbindung](../data-tools/media/data-source-choose-a-connection.png "-Datenquelle wählen Sie eine Verbindung")  
   
-4.  Choose the tables (or individual columns), stored procedures, functions, and views from the database that you want to be represented in the dataset.  
+4.  Wählen Sie die Tabellen (oder einzelne Spalten), gespeicherte Prozeduren, Funktionen und Sichten aus der Datenbank, die im Dataset dargestellt werden soll.  
   
-     ![Choose database objects](../data-tools/media/raddata-chose-objects.png "raddata Chose objects")  
+     ![Wählen Sie Datenbankobjekte](../data-tools/media/raddata-chose-objects.png "Raddata ausgewählten Objekte")  
   
-5.  Click **Finish**.  
+5.  Klicken Sie auf **Fertig stellen**.  
   
-6.  The dataset appears as a node in **Solution Explorer**:  
+6.  Das Dataset wird als Knoten in **Projektmappen-Explorer**:  
   
-     ![DataSet in Solution Explorer](../data-tools/media/dataset-in-solution-explorer.png "DataSet in Solution Explorer")  
+     ![Datasets im Projektmappen-Explorer](../data-tools/media/dataset-in-solution-explorer.png "Datasets im Projektmappen-Explorer")  
   
-     Click that node, and the dataset appears in the **DataSet Designer**. Note that each table in the dataset has an associated TableAdapter object, which is represented at the bottom. The table adapter is used to populate the dataset and optionally to send commands to the database.  
+     Klicken Sie auf diesem Knoten und das Dataset wird in der **DataSet-Designer**. Beachten Sie, dass jede Tabelle im Dataset ein zugeordneten TableAdapter-Objekt verfügt, die im unteren Bereich dargestellt wird. Der Tabellenadapter wird an das Dataset zu füllen und optional zum Senden von Befehlen in der Datenbank verwendet.  
   
-     ![DataSet Designer](../data-tools/media/dataset-designer.png "DataSet Designer")  
+     ![DataSet-Designer](../data-tools/media/dataset-designer.png "DataSet-Designer")  
   
-7.  The relation lines that connect the tables represent table relationships, as defined in the database. By default, foreign-key constraints in a database are represented as a relation only, with the update and delete rules set to none. Typically, that is what you want. However, you can click the lines to bring up the **Relation** dialog, where you can change the behavior of  hierarchical updates. For more information, see [Relationships in datasets](../data-tools/relationships-in-datasets.md) and [Hierarchical update](../data-tools/hierarchical-update.md).  
+7.  Die Relation-Zeilen, die Tabellen verbinden darstellen tabellenbeziehungen, wie in der Datenbank definiert. Standardmäßig foreign Key-Einschränkungen in einer Datenbank werden als nur eine Beziehung dargestellt, mit dem Aktualisieren und Löschen von Regeln, die auf none festgelegt. In der Regel ist, was Sie möchten. Sie können jedoch klicken, die Zeilen aus, um die **Beziehung** Dialogfeld, in dem Sie das Verhalten hierarchischer Aktualisierungen ändern können. Weitere Informationen finden Sie unter [Beziehungen in Datasets](../data-tools/relationships-in-datasets.md) und [hierarchische Aktualisierung](../data-tools/hierarchical-update.md).  
   
-     ![Dataset Relation dialog](../data-tools/media/raddata-relation-dialog.png "raddata Relation dialog")  
+     ![DataSet-Beziehung Dialogfeld](../data-tools/media/raddata-relation-dialog.png "Raddata Beziehung Dialogfeld")  
   
-8.  Click a table, table adapter, or column name in a table to see its properties in the **Properties** window. You can modify some of the values here. Just remember that you are modifying the dataset, not the source database.  
+8.  Klicken Sie auf eine Tabelle, Tabellenadapters oder Spaltennamen in einer Tabelle, um seine Eigenschaften im finden Sie unter der **Eigenschaften** Fenster. Sie können einige der Werte hier ändern. Bedenken Sie, dass Sie das Dataset, die nicht in der Quelldatenbank gewählt haben.  
   
-     ![DataSet column properties](../data-tools/media/dataset-column-properties.png "DataSet column properties")  
+     ![DataSet-Spalteneigenschaften](../data-tools/media/dataset-column-properties.png "DataSet Spalteneigenschaften")  
   
-9. You can add new tables or table adapters to the dataset, or add new queries for existing table adapters, or specify new relations between tables by dragging those items from the **Toolbox** tab. This tab appears when the **DataSet Designer** is in focus.  
+9. Sie können neue Tabellen oder TableAdapter zum Dataset hinzufügen oder fügen Sie neue Abfragen für vorhandene TableAdapter, oder geben Sie neue Beziehungen zwischen Tabellen ziehen Sie diese Elemente aus der **Toolbox** Registerkarte. Auf dieser Registerkarte wird angezeigt, wenn die **DataSet-Designer** im Fokus ist.  
   
-     ![Dataset Toolbox](../data-tools/media/raddata-dataset-toolbox.png "raddata Dataset Toolbox")  
+     ![DataSet-Toolbox](../data-tools/media/raddata-dataset-toolbox.png "Raddata Dataset-Toolbox")  
   
-10. Next, you probably want to specify how to populate the dataset with data. For that, you use the **TableAdapter Configuration Wizard**. For more information, see [Fill datasets by using TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md) .  
+10. Als Nächstes möchten Sie möglicherweise angeben, wie das Dataset mit Daten zu füllen. Verwenden Sie dazu die **TableAdapter-Konfigurations-Assistenten**. Weitere Informationen finden Sie unter [Datasets mit TableAdapters füllen](../data-tools/fill-datasets-by-using-tableadapters.md) .  
   
-## <a name="add-a-database-table-or-other-object-to-an-existing-dataset"></a>Add a database table or other object to an existing dataset  
- This procedure shows how to add a table from the same database that you used to first create the dataset.  
+## <a name="add-a-database-table-or-other-object-to-an-existing-dataset"></a>Hinzufügen einer Datenbanktabelle oder ein anderes Objekt zu einem vorhandenen dataset  
+ Diese Prozedur zeigt, wie eine Tabelle aus der gleichen Datenbank hinzuzufügen, mit denen Sie zuerst das Dataset zu erstellen.  
   
-1.  Click the dataset node in **Solution Explorer** to bring the dataset designer into focus.  
+1.  Klicken Sie auf der datasetknoten in **Projektmappen-Explorer** auf den Dataset-Designer den Fokus zu bringen.  
   
-2.  Click the **Data Sources** tab in the left margin of Visual Studio, or enter `Data Sources` in **QuickLaunch**.  
+2.  Klicken Sie auf die **Datenquellen** Registerkarte am linken Rand von Visual Studio, oder geben Sie `Data Sources` in **QuickLaunch**.  
   
-3.  Right-click the dataset node and select **Configure Data Source with Wizard** .  
+3.  Mit der rechten Maustaste des Dataset-Knotens, und wählen Sie **Datenquelle konfigurieren, mit dem Assistenten** .  
   
-     ![Data Source context menu](../data-tools/media/data-source-context-menu.png "Data Source context menu")  
+     ![Datenquelle-Kontextmenü](../data-tools/media/data-source-context-menu.png "Datenquelle-Kontextmenü")  
   
-4.  Use the wizard to specify which additional tables, or stored procedures or other database object, to add to the dataset.  
+4.  Mithilfe des Assistenten an, welche zusätzlichen Tabellen oder gespeicherte Prozeduren oder anderen Datenbankobjekt, das Dataset hinzu.  
   
-## <a name="add-a-stand-alone-data-table-to-a-dataset"></a>Add a stand-alone data table to a dataset  
+## <a name="add-a-stand-alone-data-table-to-a-dataset"></a>Hinzufügen einer eigenständigen Datentabelle zu einem dataset  
   
-1.  Open your dataset in the **Dataset Designer**.  
+1.  Öffnen Sie das Dataset in die **Dataset-Designer**.  
   
-2.  Drag a <xref:System.Data.DataTable> class from the **DataSet** tab of the **Toolbox** onto the **Dataset Designer**.  
+2.  Ziehen Sie eine <xref:System.Data.DataTable> -Klasse aus den **DataSet** auf der Registerkarte die **Toolbox** auf die **Dataset-Designer**.  
   
-3.  Add columns to define your data table. Right-click on the table and choose **Add > Column**. Use the **Properties** window to set the data type of the column and a key if necessary.  
+3.  Fügen Sie Spalten hinzu, um die Datentabelle zu definieren. Mit der rechten Maustaste auf die Tabelle, und wählen Sie **hinzufügen > Spalte**. Verwenden der **Eigenschaften** Fenster aus, um den Datentyp der Spalte und einen Schlüssel bei Bedarf festgelegt.  
   
-4.  Stand-alone tables need to Implement `Fill` logic in stand-alone tables so that you can fill them with data. For information on filling stand-alone data tables, see [Populating a DataSet from a DataAdapter](/dotnet/framework/data/adonet/populating-a-dataset-from-a-dataadapter).
+4.  Eigenständige Tabellen müssen implementieren `Fill` Logik in eigenständige Tabellen, damit Sie mit Daten gefüllt werden können. Informationen zum Füllen von eigenständigen Datentabellen finden Sie unter [Auffüllen eines Datasets mit "DataAdapter"](/dotnet/framework/data/adonet/populating-a-dataset-from-a-dataadapter).
+
+## <a name="see-also"></a>Siehe auch
+[Datasettools in Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)

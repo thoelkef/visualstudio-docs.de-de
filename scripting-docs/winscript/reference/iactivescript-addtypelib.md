@@ -1,27 +1,30 @@
 ---
-title: "IActiveScript::AddTypeLib | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IActiveScript::AddTypeLib | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IActiveScript.AddTypeLib
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "IActiveScript_AddTypeLib"
+helpviewer_keywords: IActiveScript_AddTypeLib
 ms.assetid: 8e507ea8-c80a-471c-b482-ae753c6e8595
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: a2be7cf033b4b5dd4d99b19a3b71ed53e32af855
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# IActiveScript::AddTypeLib
-Fügt eine Typbibliothek dem Namespace für das Skript hinzu.  Dies ist mit den `#include`\-Direktive in C\/C\+\+ ähnlich.  Es ermöglicht einen Satz vordefinierter Elemente wie Klassendefinitionen, `typedefs` und die Laufzeitumgebung hinzugefügt werden, benannter Konstanten, die dem Skript verfügbar ist.  
+# <a name="iactivescriptaddtypelib"></a>IActiveScript::AddTypeLib
+Der Namespace für das Skript wird eine Typbibliothek hinzugefügt. Dies ist vergleichbar mit der `#include` in C/C++-Richtlinie. Sie ermöglicht eine Reihe von vordefinierten Elemente wie Klassendefinitionen, `typedefs`, und benannte Konstanten für das Skript verfügbar Laufzeitumgebung hinzugefügt werden.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 HRESULT AddTypeLib(  
@@ -32,32 +35,32 @@ HRESULT AddTypeLib(
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `guidTypeLib`  
- \[in\] CLSID der Typbibliothek hinzuzufügen.  
+ [in] Die CLSID der Typbibliothek hinzufügen.  
   
  `dwMaj`  
- \[in\] Hauptversionsnummer.  
+ [in] Die Hauptversionsnummer.  
   
  `dwMin`  
- \[in\] Nebenversionsnummer.  
+ [in] Nummer der Nebenversion.  
   
  `dwFlags`  
- \[in\] Optionsflags.  Als kann Folgendes:  
+ [in] Flags-Option. Folgendes kann sein:  
   
 |Wert|Bedeutung|  
-|----------|---------------|  
-|SCRIPTTYPELIB\_ISCONTROL|Die Typbibliothek beschreibt ein ActiveX\-Steuerelement, das vom Host verwendet wird.|  
+|-----------|-------------|  
+|SCRIPTTYPELIB_ISCONTROL|Die Typbibliothek wird beschrieben, ein ActiveX-Steuerelement, die vom Host verwendet wird.|  
   
-## Rückgabewert  
- Gibt eine der folgenden Werte:  
+## <a name="return-value"></a>Rückgabewert  
+ Gibt einen der folgenden Werte zurück:  
   
 |Rückgabewert|Bedeutung|  
-|------------------|---------------|  
+|------------------|-------------|  
 |`S_OK`|Erfolgreich.|  
 |`E_INVALIDARG`|Ein Argument war ungültig.|  
-|`E_UNEXPECTED`|Der Aufruf wurde nicht erwartet \(beispielsweise, ist das Skriptmodul noch nicht geladen wurde oder initialisiert wurden\).|  
+|`E_UNEXPECTED`|Der Aufruf wurde nicht erwartet (z. B. das Skriptmodul wurde noch kein geladen oder initialisiert).|  
 |`TYPE_E_CANTLOADLIBRARY`|Die angegebene Typbibliothek konnte nicht geladen werden.|  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IActiveScript](../../winscript/reference/iactivescript.md)

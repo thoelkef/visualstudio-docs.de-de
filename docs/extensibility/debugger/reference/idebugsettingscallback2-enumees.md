@@ -1,61 +1,62 @@
 ---
-title: "IDebugSettingsCallback2::EnumEEs | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "IDebugSettingsCallback2::EnumEEs"
+title: IDebugSettingsCallback2::EnumEEs | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: IDebugSettingsCallback2::EnumEEs
 ms.assetid: 9f884c49-426f-461b-b547-9d909486e73f
-caps.latest.revision: 7
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 8c916ce59e1a96122d4fc50113ca74cbe5133acf
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugSettingsCallback2::EnumEEs
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Listet die verfügbaren Sprach\- und Anbieter die Ausdrucksauswertung angegebenen Bezeichner.  
+# <a name="idebugsettingscallback2enumees"></a>IDebugSettingsCallback2::EnumEEs
+Listet die verfügbaren ausdruckauswertung erhält die Sprache und Lieferanten-IDs an.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT EnumEEs(  
-   DWORD  celtBuffer,  
-   GUID*  rgguidLang,  
-   GUID*  rgguidVendor,  
-   DWORD* pceltEEs  
+   DWORD  celtBuffer,  
+   GUID*  rgguidLang,  
+   GUID*  rgguidVendor,  
+   DWORD* pceltEEs  
 );  
 ```  
   
-```c#  
+```csharp  
 public int EnumEEs(  
-   uint       celtBuffer,  
-   ref Guid   rgguidLang,  
-   ref Guid   rgguidVendor,  
-   ref uint[] pceltEEs  
+   uint       celtBuffer,  
+   ref Guid   rgguidLang,  
+   ref Guid   rgguidVendor,  
+   ref uint[] pceltEEs  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `celtBuffer`  
- \[in\]  Die Anzahl der Elemente im Puffer `pceltEEs` .  
+ [in] Anzahl der Elemente in der `pceltEEs` Puffer.  
   
  `rgguidLang`  
- \[in, out\]  Eindeutiger Bezeichner für die Programmiersprache.  
+ [in, out] Eindeutiger Bezeichner für die Programmiersprache ab.  
   
  `rgguidVendor`  
- \[in, out\]  Eindeutiger Bezeichner für den Anbieter.  
+ [in, out] Eindeutiger Bezeichner für den Anbieter.  
   
  `pceltEEs`  
- \[in, out\]  Array von der Ausdrucksauswertung.  
+ [in, out] Array von ausdrucksauswertungen.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md)

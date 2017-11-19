@@ -1,65 +1,66 @@
 ---
-title: "How to: Specify a Publish Page for a ClickOnce Application | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-deployment"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "deploying applications [ClickOnce], specifying publish page"
-  - "Publish Page property"
-  - "publishing, ClickOnce"
-  - "ClickOnce deployment, specifying publish page"
+title: "Vorgehensweise: Angeben einer Veröffentlichungsseite für eine ClickOnce-Anwendung | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-deployment
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- C++
+helpviewer_keywords:
+- deploying applications [ClickOnce], specifying publish page
+- Publish Page property
+- publishing, ClickOnce
+- ClickOnce deployment, specifying publish page
 ms.assetid: 9d70eebb-bdee-4b42-8e7e-7a07e199bdf7
-caps.latest.revision: 18
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 18
+caps.latest.revision: "18"
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+ms.openlocfilehash: e05718d2a00df76d2c78e16c5b4473ab48d43a39
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# How to: Specify a Publish Page for a ClickOnce Application
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Wenn Sie eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]\-Anwendung im Web veröffentlichen, wird eine Standardwebseite \(Publish.htm\) generiert und gemeinsam mit der Anwendung veröffentlicht.  Diese Seite enthält den Namen der Anwendung, einen Link zur Installation der Anwendung und\/oder erforderliche Komponenten sowie einen Link zu einem Hilfethema für [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].  Mit der **Publish Page**\-Eigenschaft des Projekts können Sie einen Namen für die Webseite für die [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]\-Anwendung angeben.  
+# <a name="how-to-specify-a-publish-page-for-a-clickonce-application"></a>Gewusst wie: Angeben einer Veröffentlichungsseite für eine ClickOnce-Anwendung
+Beim Veröffentlichen einer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung eine Standardwebseite (publish.htm) generiert und zusammen mit der Anwendung veröffentlicht wird. Diese Seite enthält den Namen der Anwendung, einen Link zu der Anwendung und/oder alle vorausgesetzten Komponenten installieren und einen Link zu einem Hilfethema [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]. Die **Seite "Veröffentlichen"** -Eigenschaft für das Projekt bietet die Möglichkeit, geben Sie einen Namen für die Webseite für Ihre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung.  
   
- Nach dem Einrichten der Veröffentlichungsseite wird diese bei der nächsten Veröffentlichung an den Veröffentlichungsort kopiert. Sie wird bei einer erneuten Veröffentlichung nicht überschrieben.  Sie können das Layout der Seite anpassen, ohne dass die von Ihnen vorgenommenen Änderungen verloren gehen.  Weitere Informationen finden Sie unter [Gewusst wie: Anpassen der ClickOnce\-Standardwebseite](../deployment/how-to-customize-the-default-web-page-for-a-clickonce-application.md).  
+ Sobald die Seite "Veröffentlichen" angegeben wurde, wird das nächste Mal veröffentlichen, es an den Veröffentlichungsort kopiert. Es wird nicht überschrieben werden, wenn Sie erneut veröffentlichen. Wenn Sie die Darstellung der Seite anpassen möchten, können Sie dies tun, ohne befürchten, verlieren Ihre Änderungen. Weitere Informationen finden Sie unter [wie: Anpassen der ClickOnce-Standard-Webseite](../deployment/how-to-customize-the-default-web-page-for-a-clickonce-application.md).  
   
- Sie können die **Publish Page**\-Eigenschaft im Dialogfeld **Veröffentlichungsoptionen** festlegen, auf das im **Projekt\-Designer** im Bereich **Veröffentlichen** zugegriffen werden kann.  
+ Die **Seite "Veröffentlichen"** Eigenschaft kann festgelegt werden, der **Veröffentlichungsoptionen** (Dialogfeld), über die **veröffentlichen** Bereich des der **Projekt-Designer**.  
   
-### So geben Sie für eine ClickOnce\-Anwendung eine benutzerdefinierte Webseite an  
+### <a name="to-specify-a-custom-web-page-for-a-clickonce-application"></a>Eine benutzerdefinierte Website für eine ClickOnce-Anwendung angeben  
   
-1.  Wählen Sie im **Projektmappen\-Explorer** ein Projekt aus, und klicken Sie im Menü **Projekt** auf **Eigenschaften**.  
+1.  Klicken Sie bei ausgewähltem Projekt im **Projektmappen-Explorer**im Menü **Projekt** auf **Eigenschaften**.  
   
-2.  Wählen Sie den Bereich **Veröffentlichen** aus.  
+2.  Wählen Sie die **veröffentlichen** Bereich.  
   
-3.  Klicken Sie auf die Schaltfläche **Optionen**, um das Dialogfeld **Veröffentlichungsoptionen** zu öffnen.  
+3.  Klicken Sie auf die **Optionen** die Schaltfläche, um die **Veröffentlichungsoptionen** (Dialogfeld).  
   
 4.  Klicken Sie auf **Bereitstellung**.  
   
-5.  Stellen Sie im Dialogfeld **Veröffentlichungsoptionen** sicher, dass das Kontrollkästchen **Nach dem Veröffentlichen Bereitstellungswebseite öffnen** aktiviert ist \(Dies sollte in der Standardeinstellung der Fall sein\).  
+5.  In der **Veröffentlichungsoptionen** Dialogfeld Feld, stellen Sie sicher, dass die **öffnen Bereitstellungswebseite nach dem Veröffentlichen** Kontrollkästchen (sollte standardmäßig ausgewählt sein).  
   
-6.  Geben Sie im Feld **Bereitstellungswebseite** einen Namen für die Webseite ein, und klicken Sie anschließend auf **OK**.  
+6.  In der **Bereitstellungswebseite:** Feld Geben Sie den Namen für die Webseite, und klicken Sie dann auf **OK**.  
   
-### So verhindern Sie, dass die Veröffentlichungsseite bei jeder Veröffentlichung aufgerufen wird  
+### <a name="to-prevent-the-publish-page-from-launching-each-time-you-publish"></a>Um zu verhindern, dass die Seite "Veröffentlichen" Starten jedes Mal, die Sie veröffentlichen  
   
-1.  Wählen Sie im **Projektmappen\-Explorer** ein Projekt aus, und klicken Sie im Menü **Projekt** auf **Eigenschaften**.  
+1.  Klicken Sie bei ausgewähltem Projekt im **Projektmappen-Explorer**im Menü **Projekt** auf **Eigenschaften**.  
   
-2.  Wählen Sie den Bereich **Veröffentlichen** aus.  
+2.  Wählen Sie die **veröffentlichen** Bereich.  
   
-3.  Klicken Sie auf die Schaltfläche **Optionen**, um das Dialogfeld **Veröffentlichungsoptionen** zu öffnen.  
+3.  Klicken Sie auf die **Optionen** die Schaltfläche, um die **Veröffentlichungsoptionen** (Dialogfeld).  
   
 4.  Klicken Sie auf **Bereitstellung**.  
   
-5.  Deaktivieren Sie im Dialogfeld **Veröffentlichungsoptionen** das Kontrollkästchen **Nach dem Veröffentlichen Bereitstellungswebseite öffnen**.  
+5.  In der **Veröffentlichungsoptionen** deaktivieren Sie im Dialogfeld die **öffnen Bereitstellungswebseite nach dem Veröffentlichen** Kontrollkästchen.  
   
-## Siehe auch  
- [Publishing ClickOnce Applications](../deployment/publishing-clickonce-applications.md)   
- [How to: Publish a ClickOnce Application using the Publish Wizard](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)   
- [Gewusst wie: Anpassen der ClickOnce\-Standardwebseite](../deployment/how-to-customize-the-default-web-page-for-a-clickonce-application.md)
+## <a name="see-also"></a>Siehe auch  
+ [Veröffentlichen von ClickOnce-Anwendungen](../deployment/publishing-clickonce-applications.md)   
+ [Vorgehensweise: Veröffentlichen einer ClickOnce-Anwendung mit dem Webpublishing-Assistenten](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)   
+ [Vorgehensweise: Anpassen der ClickOnce-Standardwebseite](../deployment/how-to-customize-the-default-web-page-for-a-clickonce-application.md)

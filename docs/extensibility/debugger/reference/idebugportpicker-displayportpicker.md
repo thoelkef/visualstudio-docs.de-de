@@ -1,52 +1,54 @@
 ---
-title: "IDebugPortPicker::DisplayPortPicker | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "DisplayPortPicker"
-  - "IDebugPortPicker::DisplayPortPicker"
+title: IDebugPortPicker::DisplayPortPicker | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- DisplayPortPicker
+- IDebugPortPicker::DisplayPortPicker
 ms.assetid: 08511ef5-be64-4069-b169-a569cc94bc64
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: bf6dee7f9c79e82d9e952e481c638c870308e890
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugPortPicker::DisplayPortPicker
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Zeigt das angegebene Dialogfeld an, das es dem Benutzer ermöglicht, einen Port auszuwählen.  
+# <a name="idebugportpickerdisplayportpicker"></a>IDebugPortPicker::DisplayPortPicker
+Zeigt das angegebene Dialogfeld an, das dem Benutzer ermöglicht, einen Port auswählen.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT DisplayPortPicker(  
-   HWND hwndParentDialog,  
-   BSTR* pbstrPortId  
+   HWND hwndParentDialog,  
+   BSTR* pbstrPortId  
 );  
 ```  
   
-```c#  
+```csharp  
 public int DisplayPortPicker(  
-   int hwndParentDialog,  
-   out string pbstrPortId  
+   int hwndParentDialog,  
+   out string pbstrPortId  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `hwndParentDialog`  
- \[in\]  Handle für das übergeordnete Dialogfeld.  
+ [in] Handle für das übergeordnete-Dialogfeld.  
   
  `pbstrPortId`  
- \[out\]  Bezeichner des Anschlusses.  
+ [out] Port-ID-Zeichenfolge.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  Der Rückgabewert `S_FALSE` \(oder ein Rückgabewert von `S_OK` mit `BSTR` festgelegt `NULL`\) gibt an, dass der Benutzer auf **Abbrechen**geklickt hat.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben. Ein Rückgabewert von `S_FALSE` (oder einen Rückgabewert von `S_OK` mit der `BSTR` festgelegt `NULL`) gibt an, dass der Benutzer geklickt hat **"Abbrechen"**.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDebugPortPicker](../../../extensibility/debugger/reference/idebugportpicker.md)

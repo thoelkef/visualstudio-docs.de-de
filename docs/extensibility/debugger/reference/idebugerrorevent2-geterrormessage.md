@@ -1,77 +1,77 @@
 ---
-title: "IDebugErrorEvent2::GetErrorMessage | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugErrorEvent2::GetErrorMessage"
-helpviewer_keywords: 
-  - "IDebugErrorEvent2::GetErrorMessage"
+title: IDebugErrorEvent2::GetErrorMessage | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugErrorEvent2::GetErrorMessage
+helpviewer_keywords: IDebugErrorEvent2::GetErrorMessage
 ms.assetid: 9e3b0d74-a2dd-4eaa-bd95-21b2f9c79409
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 0b8a4e4c2ca938d8c600d3fd9ef0e615aa847fd9
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugErrorEvent2::GetErrorMessage
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Gibt Informationen zurück, die die Konstruktion einer lesbaren Fehlermeldung zulässig.  
+# <a name="idebugerrorevent2geterrormessage"></a>IDebugErrorEvent2::GetErrorMessage
+Gibt Informationen zurück, die zur Erstellung der eine lesbare Fehlermeldung ermöglicht.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT GetErrorMessage(  
-   MESSAGETYPE* pMessageType,  
-   BSTR*        pbstrErrorFormat,  
-   HRESULT*     hrErrorReason,  
-   DWORD*       pdwType,  
-   BSTR*        pbstrHelpFileName,  
-   DWORD*       pdwHelpId  
+```cpp  
+HRESULT GetErrorMessage(  
+   MESSAGETYPE* pMessageType,  
+   BSTR*        pbstrErrorFormat,  
+   HRESULT*     hrErrorReason,  
+   DWORD*       pdwType,  
+   BSTR*        pbstrHelpFileName,  
+   DWORD*       pdwHelpId  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetErrorMessage(  
-   out enum_MESSAGETYPE   pMessageType,  
-   out string             pbstrErrorFormat,  
-   out int                phrErrorReason,  
-   out uint               pdwType,  
-   out string             pbstrHelpFileName,  
-   out uint               pdwHelpId  
+   out enum_MESSAGETYPE   pMessageType,  
+   out string             pbstrErrorFormat,  
+   out int                phrErrorReason,  
+   out uint               pdwType,  
+   out string             pbstrHelpFileName,  
+   out uint               pdwHelpId  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `pMessageType`  
- \[out\]  Gibt einen Wert aus der [MESSAGETYPE](../../../extensibility/debugger/reference/messagetype.md)\-Enumeration zurück und beschreibt den Typ der Meldung.  
+ [out] Gibt einen Wert aus der [MESSAGETYPE](../../../extensibility/debugger/reference/messagetype.md) Enumeration, die den Typ der Nachricht beschreibt.  
   
  `pbstrErrorFormat`  
- \[out\]  Das Format der letzten Meldung für den Benutzer finden Sie im Abschnitt „Hinweise“ \(Details\).  
+ [out] Das Format der die endgültige Nachricht an den Benutzer (Details finden Sie unter "Hinweise").  
   
  `hrErrorReason`  
- \[out\]  Der Fehlercode ist ungefähr der Meldung.  
+ [out] Der Fehlercode der Nachricht geht.  
   
  `pdwType`  
- \[out\]  Schweregrad des Fehlers \(verwenden Sie die MB\_XXX\-Konstanten für `MessageBox`. `MB_EXCLAMATION` oder z. B. `MB_WARNING`\).  
+ [out] Schweregrad des Fehlers (verwenden Sie die Konstanten MB_XXX für `MessageBox`, z. B. `MB_EXCLAMATION` oder `MB_WARNING`).  
   
  `pbstrHelpFileName`  
- \[out\]  Pfad zu einer Hilfedatei \(mit einem NULL\-Wert, wenn keine Hilfedatei vorhanden ist\).  
+ [out] Der Pfad zu einer Hilfedatei (festgelegt auf den Wert null, wenn keine Hilfedatei vorhanden ist).  
   
  `pdwHelpId`  
- \[out\]  ID des anzuzeigenden Hilfethemas \(auf 0 festgelegt, wenn kein Hilfethema vorhanden ist\).  
+ [out] Die ID des Hilfethemas anzeigen (auf 0, wenn kein Hilfethema festgelegt).  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Hinweise  
- Die Fehlermeldung sollte nach den Grundsätzen von `"What I was doing.  %1"`formatiert werden.  `"%1"` würde dann vom Aufrufer über die Fehlermeldung ersetzt, die vom Fehlercode abgeleitet wurde \(der in `hrErrorReason`zurückgegeben wurde\).  Der `pMessageType`\-Parameter weist den Aufrufer, wie die letzte Fehlermeldung angezeigt werden soll.  
+## <a name="remarks"></a>Hinweise  
+ Die Fehlermeldung formatiert werden sollen, nach dem Vorbild der `"What I was doing.  %1"`. Die `"%1"` würde dann vom Aufrufer mit der Fehlermeldung, abgeleitet aus dem Fehlercode ersetzt (der zurückgegeben wird, `hrErrorReason`). Die `pMessageType` -Parameter weist den Aufrufer wie die endgültigen Fehlermeldung angezeigt werden soll.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDebugErrorEvent2](../../../extensibility/debugger/reference/idebugerrorevent2.md)   
  [MESSAGETYPE](../../../extensibility/debugger/reference/messagetype.md)

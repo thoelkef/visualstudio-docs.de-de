@@ -1,33 +1,33 @@
 ---
-title: "&lt;Product&gt;-Element (Bootstrapper) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-deployment"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "<product>-Element [Bootstrapper]"
+title: '&lt;Produkt&gt; Element (Bootstrapper) | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-deployment
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- FSharp
+- VB
+- CSharp
+- C++
+helpviewer_keywords: <product> element [bootstrapper]
 ms.assetid: 52b414af-ec80-4d2f-ad14-902543cd268e
-caps.latest.revision: 8
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+ms.openlocfilehash: c115fa5cb7191ab1edcff3005620d9ac7835f8a0
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# &lt;Product&gt;-Element (Bootstrapper)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Das `Product`\-Element ist das XML\-Element der obersten Ebene innerhalb einer Produktdatei.  
+# <a name="ltproductgt-element-bootstrapper"></a>&lt;Produkt&gt; Element (Bootstrapper)
+Die `Product` Element ist das XML-Element der obersten Ebene innerhalb einer Produktdatei.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 <Product  
@@ -139,15 +139,15 @@ ProductCode
 </Package>  
 ```  
   
-## Elemente und Attribute  
- Das `Product`\-Element ist in einer Produktdatei erforderlich.  Es verfügt über das folgende Attribut.  
+## <a name="elements-and-attributes"></a>Elemente und Attribute  
+ Die `Product` -Element muss sich in einer Datei für das Produkt. Er hat das folgende Attribut.  
   
 |Attribut|Beschreibung|  
-|--------------|------------------|  
+|---------------|-----------------|  
 |`ProductCode`|Ein eindeutiger Bezeichner für das Produkt.|  
   
-## Beispiel  
- Im folgenden Codebeispiel wird eine vollständige Produktdatei für das Installieren von [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] gezeigt.  
+## <a name="example"></a>Beispiel  
+ Das folgende Codebeispiel zeigt eine vollständige Produktdokumentation-Datei für die Installation der [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].  
   
 ```  
 <?xml version="1.0" encoding="utf-8" ?>  
@@ -251,5 +251,5 @@ ProductCode
 </Product>  
 ```  
   
-## Siehe auch  
- [Referenz zum Produkt\- und Paketschema](../deployment/product-and-package-schema-reference.md)
+## <a name="see-also"></a>Siehe auch  
+ [Referenz zum Produkt- und Paketschema](../deployment/product-and-package-schema-reference.md)

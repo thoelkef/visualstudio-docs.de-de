@@ -1,69 +1,70 @@
 ---
-title: "Eigenschaften von Decorators | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Domänenspezifische Sprache, Decorators"
+title: Eigenschaften des Decorators | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: Domain-Specific Language, decorators
 ms.assetid: f6322fe5-dc08-4d32-a6b3-0bd18879136d
-caps.latest.revision: 23
-author: "alancameronwills"
-ms.author: "awills"
-manager: "douge"
-caps.handback.revision: 23
+caps.latest.revision: "23"
+author: alancameronwills
+ms.author: awills
+manager: douge
+ms.openlocfilehash: 23288d1afe9b9c0a181a5d978b1956071b683218
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# Eigenschaften von Decorators
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Decorator\-Elemente sind, Symbole oder simsen Erweitern\/Reduzieren chevrone, die Formen oder Konnektoren im Diagramm angezeigt werden können.  In den folgenden Tabellen sind die Eigenschaften für die drei Arten des Decorator\-Elements an.  Einige Eigenschaften werden nur in Form decorator\-elementen oder nur auf Konnektor decorator\-elementen.  
+# <a name="properties-of-decorators"></a>Eigenschaften von Decorators
+Decorator-Elemente sind Symbole, Text oder erweitern/reduzieren in spitzen Klammern, die auf die Formen oder Verbindungen im Diagramm angezeigt werden können. In den folgenden Tabellen zeigen die Eigenschaften für die drei Arten von Decorator-Element. Einige der Eigenschaften werden nur auf die Form Decorator-Elemente oder nur auf Connector Decorator-Elementen angezeigt.  
   
- Weitere Informationen finden Sie unter [So definieren Sie eine domänenspezifische Sprache](../modeling/how-to-define-a-domain-specific-language.md).  Weitere Informationen zum Verwenden dieser Eigenschaften finden Sie unter [Anpassen und Erweitern einer domänenspezifischen Sprache](../modeling/customizing-and-extending-a-domain-specific-language.md)verwendet.  
+ Weitere Informationen finden Sie unter [zum Definieren einer domänenspezifischen Sprache](../modeling/how-to-define-a-domain-specific-language.md). Weitere Informationen zum Verwenden dieser Eigenschaften finden Sie unter [anpassen und Erweitern einer domänenspezifischen Sprache](../modeling/customizing-and-extending-a-domain-specific-language.md).  
   
-## Erweitert\/Einsturz\-Decorator\-Element  
+## <a name="expandcollapse-decorator"></a>Expand/Collapse-Decorator-Element  
   
-|Property|Beschreibung|Standardwert|  
-|--------------|------------------|------------------|  
-|DisplayName|Der Name des Decorator\-Elements, das im generierten Designer angezeigt wird.|Erweitern Sie Einsturz\-Decorator\-Element|  
-|Name|Der Name des Decorator\-Elements.|ExpandCollapseDecorator|  
-|Hinweise|Informelle Hinweise, die diesem Decorator\-Element zugeordnet sind.|\<Keine\>|  
-|HorizontalOffset|Der horizontale Offset in Bezug auf die Standardposition des Decorator\-Elements, in Zoll.  \(nur auf Formen.\)|0|  
-|VerticalOffset|Der vertikale Offset in Bezug auf die Standardposition des Decorator\-Elements, in Zoll.  \(nur auf Formen.\)|0|  
-|OffsetFromLine|Der Offset des Decorator\-Elements aus der Zeile in Bezug zu seiner Standardposition, in Zoll.  \(nur auf Verbindungen.\)|0|  
-|OffsetFromShape|Der Offset des Decorator\-Elements von der Form, relativ zu dessen Standardposition, in Zoll.  \(nur auf Verbindungen.\)|0|  
-|Position|Die Standardposition des Decorator\-Elements.|SourceTop|  
+|Eigenschaft|Beschreibung|Standard|  
+|--------------|-----------------|-------------|  
+|DisplayName|Der Name des Decorator-Element, die im generierten-Designer angezeigt werden.|Erweitern Reduzieren Decorator-Element|  
+|Name|Der Name des der Decorator-Element.|ExpandCollapseDecorator|  
+|Hinweise|Informelle Hinweise, die diese Decorator-Element zugeordnet sind.|\<keine >|  
+|HorizontalOffset|Der horizontale Offset relativ zum die Standardposition der Decorator in Zoll. (Auf nur-Shapes.)|0|  
+|VerticalOffset|Der vertikale Offset relativ zum die Standardposition der Decorator in Zoll. (Auf nur-Shapes.)|0|  
+|OffsetFromLine|Der Offset der Decorator-Element aus der Zeile, relativ zum Standardposition in Zoll. (Auf Connectors nur.)|0|  
+|OffsetFromShape|Der Offset der Decorator-Element aus der Form relativ zur Standardposition in Zoll. (Auf Connectors nur.)|0|  
+|Position|Die Standardposition der Decorator.|SourceTop|  
   
-## Symbol\-Decorator\-Element  
+## <a name="icon-decorator"></a>Symbol "Decorator-Element  
   
-|Property|Beschreibung|Standardwert|  
-|--------------|------------------|------------------|  
-|DefaultIcon|Der Pfad des anzuzeigenden Symbols oder der Bilddatei.|\<Keine\>|  
-|DisplayName|Der Name des generierten im Designer angezeigt werden soll, Decorator\-Elements.|Symbol\-Decorator\-Element|  
-|Name|Der Name des Decorator\-Elements.|IconDecorator|  
-|Hinweise|Informelle Hinweise, die mit dem Decorator\-Element zugeordnet sind.|\<Keine\>|  
-|HorizontalOffset|Der horizontale Offset in Bezug auf die Standardposition des Decorator\-Elements, in Zoll.  \(nur auf Formen.\)|0|  
-|VerticalOffset|Der vertikale Offset in Bezug auf die Standardposition des Decorator\-Elements, in Zoll.  \(nur auf Formen.\)|0|  
-|OffsetFromLine|Der Offset des Decorator\-Elements aus der Zeile in Bezug zu seiner Standardposition, in Zoll.  \(nur auf Verbindungen.\)|0|  
-|OffsetFromShape|Der Offset des Decorator\-Elements von der Form, relativ zu dessen Standardposition, in Zoll.  \(nur auf Verbindungen.\)|0|  
-|Position|Die Standardposition des Decorator\-Elements.|SourceTop|  
+|Eigenschaft|Beschreibung|Standard|  
+|--------------|-----------------|-------------|  
+|DefaultIcon|Der Pfad der Datei Symbol oder Bild angezeigt werden.|\<keine >|  
+|DisplayName|Der Name des der Decorator-Element in der generierten-Designer angezeigt werden.|Symbol "Decorator-Element|  
+|Name|Der Name des der Decorator-Element.|IconDecorator|  
+|Hinweise|Informelle Hinweise, die die Decorator-Element zugeordnet sind.|\<keine >|  
+|HorizontalOffset|Der horizontale Offset relativ zum die Standardposition der Decorator in Zoll. (Auf nur-Shapes.)|0|  
+|VerticalOffset|Der vertikale Offset relativ zum die Standardposition der Decorator in Zoll. (Auf nur-Shapes.)|0|  
+|OffsetFromLine|Der Offset der Decorator-Element aus der Zeile, relativ zum Standardposition in Zoll. (Auf Connectors nur.)|0|  
+|OffsetFromShape|Der Offset der Decorator-Element aus der Form relativ zur Standardposition in Zoll. (Auf Connectors nur.)|0|  
+|Position|Die Standardposition der Decorator.|SourceTop|  
   
-## TextDecorator  
+## <a name="textdecorator"></a>TextDecorator  
   
-|Property|Beschreibung|Standardwert|  
-|--------------|------------------|------------------|  
-|DefaultText|Der Standardtext angezeigt werden soll.|Bezeichnung|  
-|DisplayName|Der Name des generierten im Designer angezeigt werden soll, Decorator\-Elements.|Bezeichnung|  
-|FontSize|Der Schriftgrad für den Text, der im Decorator\-Element angezeigt wird.|8|  
-|FontStyle|Der Schriftschnitt für den Text, der im Decorator\-Element angezeigt wird.|Regulär|  
-|Name|Der Name des Decorator\-Elements.|Bezeichnung|  
-|Hinweise|Informelle Hinweise, die mit dem Decorator\-Element zugeordnet sind.|\<Keine\>|  
-|HorizontalOffset|Der horizontale Offset in Bezug auf die Standardposition des Decorator\-Elements, in Zoll.  \(nur auf Formen.\)|0|  
-|VerticalOffset|Der vertikale Offset in Bezug auf die Standardposition des Decorator\-Elements, in Zoll.  \(nur auf Formen.\)|0|  
-|OffsetFromLine|Der Offset des Decorator\-Elements aus der Zeile in Bezug zu seiner Standardposition, in Zoll.  \(nur auf Verbindungen.\)|0|  
-|OffsetFromShape|Der Offset des Decorator\-Elements von der Form, relativ zu dessen Standardposition, in Zoll.  \(nur auf Verbindungen.\)|0|  
-|Position|Die Standardposition des Decorator\-Elements.|TargetBottom|  
+|Eigenschaft|Beschreibung|Standard|  
+|--------------|-----------------|-------------|  
+|DefaultText|Der Standardtext angezeigt werden.|Bezeichnung|  
+|DisplayName|Der Name des der Decorator-Element in der generierten-Designer angezeigt werden.|Bezeichnung|  
+|FontSize|Der Schriftgrad für den Text, der in der Decorator-Element angezeigt wird.|8|  
+|FontStyle|Der Schriftschnitt für den Text, der in der Decorator-Element angezeigt wird.|Regulär|  
+|Name|Der Name des der Decorator-Element.|Bezeichnung|  
+|Hinweise|Informelle Hinweise, die die Decorator-Element zugeordnet sind.|\<keine >|  
+|HorizontalOffset|Der horizontale Offset relativ zum die Standardposition der Decorator in Zoll. (Auf nur-Shapes.)|0|  
+|VerticalOffset|Der vertikale Offset relativ zum die Standardposition der Decorator in Zoll. (Auf nur-Shapes.)|0|  
+|OffsetFromLine|Der Offset der Decorator-Element aus der Zeile, relativ zum Standardposition in Zoll. (Auf Connectors nur.)|0|  
+|OffsetFromShape|Der Offset der Decorator-Element aus der Form relativ zur Standardposition in Zoll. (Auf Connectors nur.)|0|  
+|Position|Die Standardposition der Decorator.|TargetBottom|  
   
-## Siehe auch  
- [Domain\-Specific Language Tools Glossary](http://msdn.microsoft.com/de-de/ca5e84cb-a315-465c-be24-76aa3df276aa)
+## <a name="see-also"></a>Siehe auch  
+ [Domänenspezifische Sprache Tools Glossar](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)

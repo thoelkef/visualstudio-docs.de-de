@@ -1,45 +1,45 @@
 ---
-title: "IDiaSymbol::findSymbolsForAcceleratorPointerTag | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
+title: IDiaSymbol::findSymbolsForAcceleratorPointerTag | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
 ms.assetid: fb66852c-c5f7-4140-b9fe-20cb4e51a9fe
-caps.latest.revision: 3
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 3
+caps.latest.revision: "3"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: c39e6ac981cae6195023d63f008b1ee4b0013bbd
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSymbol::findSymbolsForAcceleratorPointerTag
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Gibt die Anzahl der Zugriffstastenzeigertags in der AMP\-Stubfunktion einer C\+\+\-Datei zurück.  
+# <a name="idiasymbolfindsymbolsforacceleratorpointertag"></a>IDiaSymbol::findSymbolsForAcceleratorPointerTag
+Gibt die Anzahl der Zugriffstaste Zeiger Tags in einer C++ AMP-Stub-Funktion zurück.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp  
+```C++  
 HRESULT findSymbolsForAccleratorPointerTag (   
    DWORD             tagValue,  
    IDiaEnumSymbols** ppResult);  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `tagValue`  
- \[\] werden in der Zeigertagwert, für den das pointee Symbol aufzeichnet, gefunden.  
+ [in] Der Wert des Zeigers-Tag, für den die Pointee symboldatensätze gefunden werden.  
   
  `ppResult`  
- \[out\] Ein Zeiger auf einen `IDiaEnumSymbols`\-Schnittstellenzeiger, der mit dem Ergebnis initialisiert wird.  
+ [out] Ein Zeiger auf ein `IDiaEnumSymbols` Schnittstellenzeiger auf die mit dem Ergebnis initialisiert wird.  
   
-## Rückgabewert  
- Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls `S_FALSE` oder ein Fehlercode zurückgegeben.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)

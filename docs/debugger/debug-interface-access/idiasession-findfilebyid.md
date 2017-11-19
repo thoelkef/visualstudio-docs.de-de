@@ -1,52 +1,51 @@
 ---
-title: "IDiaSession::findFileById | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSession::findFileById-Methode"
+title: 'Idiasession:: Findfilebyid | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSession::findFileById method
 ms.assetid: 710efe04-78b5-4f3e-a1d8-f9b069063503
-caps.latest.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 1996bed14323adeac794f12ed4307e96e3ba8b54
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSession::findFileById
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Ruft eine Quelldatei nach Bezeichner der Quelldatei ab oder legt diese fest.  
+# <a name="idiasessionfindfilebyid"></a>IDiaSession::findFileById
+Ruft eine Quelldatei von Datei-ID ab.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT findFileById (   
-   DWORD            uniqueId,  
-   IDiaSourceFile** ppResult  
+```C++  
+HRESULT findFileById (   
+   DWORD            uniqueId,  
+   IDiaSourceFile** ppResult  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `uniqueId`  
- \[in\]  Gibt den Bezeichner der Quelldatei an.  
+ [in] Gibt den Bezeichner der Datei an.  
   
  `ppResult`  
- \[out\]  Gibt ein [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)\-Objekt zurück, das die abgerufene Quelldatei darstellt.  
+ [out] Gibt eine [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) abgerufene Objekt, das die Quelldatei darstellt.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Hinweise  
- Der Bezeichner der Quelldatei ist ein eindeutiger Wert, der intern zum DIA SDK verwendet wird, um alle Quelldateien eindeutig zu erstellen.  Diese Methode wird i. d. R. an das intern DIA SDK verwendet.  
+## <a name="remarks"></a>Hinweise  
+ Der Quellenbezeichner für die Datei ist ein eindeutiger Wert, der intern verwendet, um die DIA-SDK, die alle Quelldateien eindeutig macht. Diese Methode wird intern in der Regel auf das DIA SDK verwendet.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
- [IDiaSession::findFile](../../debugger/debug-interface-access/idiasession-findfile.md)   
+ [Idiasession:: FindFile](../../debugger/debug-interface-access/idiasession-findfile.md)   
  [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)

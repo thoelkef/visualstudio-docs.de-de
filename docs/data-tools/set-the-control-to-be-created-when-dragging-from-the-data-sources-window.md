@@ -1,77 +1,70 @@
 ---
-title: "Festlegen des Steuerelements, das beim Ziehen aus dem Datenquellenfenster erstellt werden soll | Microsoft Docs"
-ms.custom: ""
-ms.date: "09/21/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "aspx"
-helpviewer_keywords: 
-  - "Datenquellenfenster, Auswählen von Steuerelementen"
-  - "Windows Forms, Anzeigen von Daten"
-  - "Daten [Visual Studio], Anzeigen in Windows Forms"
-  - "Daten [Visual Studio], Datenquellenfenster"
+title: Legen Sie das Steuerelement erstellt werden, beim Ziehen aus Datenquellenfenster | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- Data Sources Window, select controls
+- Windows Forms, displaying data
+- data [Visual Studio], displaying on Windows Forms
+- data [Visual Studio], Data Sources window
 ms.assetid: 20597ff8-0c98-43ec-8fb1-05376804ba48
-caps.latest.revision: 31
-caps.handback.revision: 28
-author: "mikeblome"
-ms.author: "mblome"
-manager: "ghogen"
+caps.latest.revision: "31"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.technology: vs-data-tools
+ms.openlocfilehash: 12b8c166873802e3c0e6a8d4e73ff1b686229222
+ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/09/2017
 ---
-# Festlegen des Steuerelements, das beim Ziehen aus dem Datenquellenfenster erstellt werden soll
-Sie können datengebundene Steuerelemente erstellen, indem Sie Elemente aus dem **Datenquellenfenster** in den WPF\- oder den Windows Forms\-Designer ziehen.  Jedes Element im **Datenquellenfenster** verfügt über ein Standardsteuerelement, das erstellt wird, wenn Sie es in den Designer ziehen.  Sie können jedoch ein anderes Steuerelement erstellen.  
+# <a name="set-the-control-to-be-created-when-dragging-from-the-data-sources-window"></a>Festlegen des Steuerelements, das beim Ziehen aus dem Datenquellenfenster erstellt werden soll
+Sie können datengebundene Steuerelemente durch Ziehen von Elementen aus der **Datenquellen** Fenster in den WPF- oder Windows Forms-Designer. Jedes Element in der **Datenquellen** verfügt über ein Standardsteuerelement, das erstellt wird, wenn Sie es in den Designer ziehen. Sie können jedoch ein anderes Steuerelement erstellen.  
   
-## Festlegen der Steuerelemente, die für Datentabellen oder Objekte erstellt werden sollen  
- Bevor Sie Elemente aus dem **Datenquellenfenster** ziehen, die Datentabellen oder Objekte darstellen, können Sie zwischen zwei Optionen wählen: Alle Daten können in einem Steuerelement oder jede Spalte bzw. Eigenschaft in einem separaten Steuerelement angezeigt werden.  
+## <a name="set-the-controls-to-be-created-for-data-tables-or-objects"></a>Legen Sie die Steuerelemente, die für Datentabellen oder Objekte erstellt werden  
+Bevor Sie Elemente ziehen, die die Datentabellen oder Objekte darstellen der **Datenquellen** Fenster können Sie auswählen, um alle Daten in einem Steuerelement anzuzeigen oder um jede Spalte oder Eigenschaft in einem separaten Steuerelement anzuzeigen.  
   
- In diesem Kontext bezieht sich der Begriff *Objekt* auf ein benutzerdefiniertes Geschäftsobjekt, eine Entität \(in einem Entity Data Model\) oder ein von einem Dienst zurückgegebenes Objekt.  
+In diesem Kontext ist der Begriff *Objekt* bezieht sich auf ein benutzerdefiniertes Geschäftsobjekt, eine Entität (in einem Entity Data Model) oder ein Objekt, das von einem Dienst zurückgegeben.  
   
-#### So legen Sie die Steuerelemente fest, die für Datentabellen oder Objekte erstellt werden sollen  
+### <a name="to-set-the-controls-to-be-created-for-data-tables-or-objects"></a>So legen Sie die Steuerelemente fest, die für Datentabellen oder Objekte erstellt werden sollen  
   
-1.  Der WPF\- oder der Windows Forms\-Designer muss geöffnet sein.  
+1.  Der WPF- oder der Windows Forms-Designer muss geöffnet sein.  
   
-2.  Wählen Sie im **Datenquellenfenster** das Element aus, das die festzulegende Datentabelle oder das Objekt darstellt.  
+2.  In der **Datenquellen** Fenster, wählen Sie das Element, das die Datentabelle darstellt oder ein Objekt festgelegt werden sollen.  
   
 3.  Klicken Sie auf das Dropdownmenü für das Element, und klicken Sie im Menü auf eines der folgenden Elemente:  
   
-    -   Klicken Sie auf **Details**, um jedes Datenfeld in einem separaten Steuerelement anzuzeigen.  Wenn Sie das Datenelement in den Designer ziehen, werden für jede Spalte bzw. jede Eigenschaft der übergeordneten Datentabelle oder des Objekts ein anderes datengebundenes Steuerelement sowie Bezeichnungen für jedes Steuerelement erstellt.  
+    -   Um jedes Datenfeld in einem separaten Steuerelement anzuzeigen, klicken Sie auf **Details**. Wenn Sie das Datenelement in den Designer ziehen, werden für jede Spalte bzw. jede Eigenschaft der übergeordneten Datentabelle oder des Objekts ein anderes datengebundenes Steuerelement sowie Bezeichnungen für jedes Steuerelement erstellt.  
   
-    -   Wählen Sie ein anderes Steuerelement in der Liste, z. B. **DataGrid** oder **List** in einer WPF\-Anwendung, oder **DataGridView** in einer Windows Forms\-Anwendung aus, um alle Daten in einem einzelnen Steuerelement anzuzeigen.  
+    -   Um alle Daten in einem einzelnen Steuerelement anzuzeigen, wählen Sie ein anderes Steuerelement in der Liste, z. B. **DataGrid** oder **Liste** in einer WPF-Anwendung oder **DataGridView** in einer Windows Forms die Anwendung.  
   
-     Die Liste der verfügbaren Steuerelemente hängt vom geöffneten Designer, der Version von .NET Framework, auf die das Projekt abzielt, und davon ab, ob Sie benutzerdefinierte Steuerelemente hinzugefügt haben, die die Datenbindung zur **Toolbox** unterstützen.  Wenn das gewünschte Steuerelement in der Liste der verfügbaren Steuerelemente aufgeführt ist, können Sie der Liste das Steuerelement hinzufügen.  Weitere Informationen finden Sie unter [Hinzufügen benutzerdefinierter Steuerelemente zum Datenquellenfenster](../data-tools/add-custom-controls-to-the-data-sources-window.md).  
+    Die Liste der verfügbaren Steuerelemente hängt vom Designer geöffneten, welche Version von .NET Framework das Projekt abzielt, und gibt an, ob Sie benutzerdefinierte Steuerelemente hinzugefügt haben, unterstützen Datenbindung an die **Toolbox**. Wenn das Steuerelement, das Sie erstellen möchten, nicht in der Liste der verfügbaren Steuerelemente ist, können Sie das Steuerelement zur Liste hinzufügen. Weitere Informationen finden Sie unter [Hinzufügen benutzerdefinierter Steuerelemente zum Datenquellenfenster](../data-tools/add-custom-controls-to-the-data-sources-window.md).  
   
-     Informationen dazu, wie ein benutzerdefiniertes Windows Forms\-Steuerelement erstellt wird, das der Liste der Steuerelemente für Datentabellen oder Objekte im **Datenquellenfenster** hinzugefügt werden kann, erhalten Sie unter [Exemplarische Vorgehensweise: Erstellen eines Windows Forms\-Benutzersteuerelements, das komplexe Datenbindung unterstützt](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md).  
+    Erfahren Sie, wie ein benutzerdefiniertes Windows Forms-Steuerelement zu erstellen, die die Liste der Steuerelemente für Datentabellen oder Objekte in hinzugefügt werden kann die **Datenquellen** Fenster finden Sie unter [Erstellen eines Windows Forms-Benutzersteuerelements, die komplexe Daten unterstützt Binden von](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md).  
   
-## Festlegen der Steuerelemente, die für Datenspalten oder \-eigenschaften erstellt werden sollen  
- Bevor Sie ein Element, das eine Spalte oder eine Eigenschaft eines Objekts im **Datenquellenfenster** darstellt, in den Designer ziehen, können Sie das zu erstellende Steuerelement festlegen.  
+## <a name="set-the-controls-to-be-created-for-data-columns-or-properties"></a>Legen Sie die Steuerelemente für Datenspalten oder-Eigenschaften erstellt werden  
+Bevor Sie ein Element zu ziehen, der eine Spalte oder eine Eigenschaft eines Objekts aus der **Datenquellen** Fenster in den Designer, Sie können die zu erstellende Steuerelement festlegen.  
   
-#### So legen Sie die Steuerelemente fest, die für Spalten oder Eigenschaften erstellt werden sollen  
+#### <a name="to-set-the-controls-to-be-created-for-columns-or-properties"></a>So legen Sie die Steuerelemente fest, die für Spalten oder Eigenschaften erstellt werden sollen  
   
-1.  Der WPF\- oder der Windows Forms\-Designer muss geöffnet sein.  
+1.  Der WPF- oder der Windows Forms-Designer muss geöffnet sein.  
   
-2.  Erweitern Sie im **Datenquellenfenster** die gewünschte Tabelle oder das gewünschte Objekt, sodass die Spalten bzw. Eigenschaften angezeigt werden.  
+2.  In der **Datenquellen** Fenster, erweitern Sie die gewünschte Tabelle oder Objekt, sodass die Spalten bzw. Eigenschaften angezeigt.  
   
 3.  Wählen Sie jede Spalte oder jede Eigenschaft aus, für die das Steuerelement erstellt werden soll.  
   
 4.  Klicken Sie auf das Dropdownmenü für die Spalte oder die Eigenschaft, und wählen Sie das Steuerelement aus, das beim Ziehen des Elements in den Designer erstellt werden soll.  
   
-     Die Liste der verfügbaren Steuerelemente hängt vom geöffneten Designer, der Version von .NET Framework, auf die das Projekt abzielt, und davon ab, welche benutzerdefinierten Steuerelemente, die die Datenbindung zur **Toolbox** unterstützen, Sie hinzugefügt haben.  Wenn das gewünschte Steuerelement in der Liste der verfügbaren Steuerelemente aufgeführt ist, können Sie der Liste das Steuerelement hinzufügen.  Weitere Informationen finden Sie unter [Hinzufügen benutzerdefinierter Steuerelemente zum Datenquellenfenster](../data-tools/add-custom-controls-to-the-data-sources-window.md).  
+     Die Liste der verfügbaren Steuerelemente hängt vom Designer geöffneten, welche Version von .NET Framework das Projekt abzielt, und welche benutzerdefinierten Steuerelemente, die Sie Binden von Daten hinzugefügt haben unterstützen die **Toolbox**. Wenn das gewünschte Steuerelement in der Liste der verfügbaren Steuerelemente aufgeführt ist, können Sie der Liste das Steuerelement hinzufügen. Weitere Informationen finden Sie unter [Hinzufügen benutzerdefinierter Steuerelemente zum Datenquellenfenster](../data-tools/add-custom-controls-to-the-data-sources-window.md).  
   
-     Informationen dazu, wie ein benutzerdefiniertes Steuerelement erstellt wird, das der Liste der Steuerelemente für Datenspalten oder Eigenschaften im **Datenquellenfenster** hinzugefügt werden kann, finden Sie unter [Exemplarische Vorgehensweise: Erstellen eines Windows Forms\-Benutzersteuerelements, das einfache Datenbindung unterstützt](../data-tools/create-a-windows-forms-user-control-that-supports-simple-data-binding.md).  
+     Erfahren Sie, wie ein benutzerdefiniertes Steuerelement zu erstellen, die die Liste der Steuerelemente für Datenspalten oder-Eigenschaften in hinzugefügt werden, können, die **Datenquellen** Fenster finden Sie unter [Erstellen eines Windows Forms-Benutzersteuerelements, die einfache Datenbindungunterstützt](../data-tools/create-a-windows-forms-user-control-that-supports-simple-data-binding.md).  
   
-     Wählen Sie im Dropdownmenü die Option **Keine** aus, wenn Sie kein Steuerelement für die Spalte oder Eigenschaft erstellen wollen.  Dies ist nützlich, wenn Sie die übergeordnete Tabelle oder das Objekt in den Designer ziehen, aber die Spalte oder die Eigenschaft nicht einschließen möchten.  
+     Wenn Sie ein Steuerelement für die Spalte oder Eigenschaft erstellen möchten, wählen Sie **keine** im Dropdown-Menü. Dies ist nützlich, wenn Sie die übergeordnete Tabelle oder das Objekt in den Designer ziehen, aber die Spalte oder die Eigenschaft nicht einschließen möchten.  
   
-## Siehe auch  
- [Exemplarische Vorgehensweisen zur Arbeit mit Daten](../Topic/Data%20Walkthroughs.md)   
- [Exemplarische Vorgehensweise: Anzeigen von Daten in einem Windows Form](../data-tools/walkthrough-displaying-data-on-a-windows-form.md)   
- [Binden von Windows Forms\-Steuerelementen an Daten in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)   
- [Erstellen und Bearbeiten von typisierten Datasets](../data-tools/creating-and-editing-typed-datasets.md)   
- [Übersicht über Datenquellen](../data-tools/add-new-data-sources.md)   
- [Datenquellenfenster](../Topic/Data%20Sources%20Window.md)   
- [Hinzufügen benutzerdefinierter Steuerelemente zum Datenquellenfenster](../data-tools/add-custom-controls-to-the-data-sources-window.md)
+## <a name="see-also"></a>Siehe auch
+[Binden von Steuerelementen an Daten in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)

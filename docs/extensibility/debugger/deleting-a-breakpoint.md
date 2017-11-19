@@ -1,32 +1,34 @@
 ---
-title: "L&#246;schen eines Haltepunktes | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Löschen von Haltepunkten"
-  - "Debuggen [Debugging-SDK], Löschen von Haltepunkten"
+title: "Löschen eines Haltepunktes | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- breakpoints, deleting
+- debugging [Debugging SDK], deleting breakpoints
 ms.assetid: 75a046cc-d20a-4c79-ad2d-1f18426ac5d0
-caps.latest.revision: 7
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 2789fd46942a9b54ca3d6efb082a6b21511969ca
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# L&#246;schen eines Haltepunktes
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Im Folgenden wird der Prozess, wenn ein anstehender Haltepunkt gelöscht wird:  
+# <a name="deleting-a-breakpoint"></a>Löschen eines Haltepunkts
+Im folgenden wird erläutert, wenn einen ausstehenden Haltepunkt zu löschen:  
   
-## Löschen\-Prozess  
- Der Debuginformationen Manager der Sitzung \(SDM\) ruft die [IDebugPendingBreakpoint2::Löschen](../../extensibility/debugger/reference/idebugpendingbreakpoint2-delete.md)\-Methode an, die den anstehenden Haltepunkt, und alle gebundenen Haltepunkte zu entfernen, die von ihm gebunden sind.  
+## <a name="deletion-process"></a>Löschvorgang  
+ Ruft die Sitzungs-Debug-Manager (SDM) die [IDebugPendingBreakpoint2::Delete](../../extensibility/debugger/reference/idebugpendingbreakpoint2-delete.md) Methode, um die ausstehenden Haltepunkts und alle gebundenen Haltepunkte entfernen daraus gebunden.  
   
 > [!NOTE]
->  Ein einzelner gebundener Haltepunkt kann durch einen Aufruf an [IDebugBoundBreakpoint2::Löschen](../../extensibility/debugger/reference/idebugboundbreakpoint2-delete.md)ebenfalls gelöscht werden.  
+>  Ein einzelnen gebundener Haltepunkt auch gelöscht werden, durch den Aufruf von [IDebugBoundBreakpoint2::Delete](../../extensibility/debugger/reference/idebugboundbreakpoint2-delete.md).  
   
-## Siehe auch  
- [Aufrufen von Debugger\-Ereignissen](../../extensibility/debugger/calling-debugger-events.md)
+## <a name="see-also"></a>Siehe auch  
+ [Aufrufen von Debuggerereignissen](../../extensibility/debugger/calling-debugger-events.md)

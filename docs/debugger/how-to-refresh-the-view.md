@@ -1,32 +1,32 @@
 ---
-title: "How to: Refresh the View | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "refreshing views"
+title: 'Vorgehensweise: Aktualisieren Sie die Ansicht | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: refreshing views
 ms.assetid: 2ed0ba66-7259-486b-a518-aab6e45030aa
-caps.latest.revision: 5
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 5
+caps.latest.revision: "5"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: b52d62a3da405f2bc0abbac91b0de8c1690cab2c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# How to: Refresh the View
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Spy\+\+ erfasst eine Momentaufnahme der Systemtabellen und aktualisiert die Ansicht auf Grundlage dieser Informationen.  Sie müssen die Systemansichten in regelmäßigen Abständen aktualisieren.  Wenn eine Spy\+\+\-Ansicht geöffnet ist und Sie die Ansicht nicht aktualisiert haben, werden die anschließend erstellten Prozesse, Threads und Fenster nicht angezeigt.  Außerdem werden möglicherweise Elemente angezeigt, die nicht mehr vorhanden sind.  Der Befehl **Aktualisieren** ist für alle Ansichten außer der Meldungsansicht verfügbar.  
+# <a name="how-to-refresh-the-view"></a>Gewusst wie: Aktualisieren der Ansicht
+Spy++-erstellt eine "Momentaufnahme" der Systemtabellen und aktualisiert eine Ansicht auf Grundlage dieser Informationen. Es ist wichtig, dass Sie Ihre Systemsichten in regelmäßigen Abständen aktualisieren. Wenn Sie verfügen über eine Spy++-Ansicht öffnen und die Ansicht nicht aktualisiert haben, sehen Sie nicht die Prozesse, Threads und Fenstern, die anschließend erstellt werden. Darüber hinaus möglicherweise Elemente angezeigt, die nicht mehr vorhanden sind. Die **aktualisieren** Befehl steht für alle Ansichten mit Ausnahme der Ansicht "Nachrichten".  
   
-### So aktualisieren Sie die gegenwärtig aktive Ansicht  
+### <a name="to-refresh-the-currently-active-view"></a>Die momentan aktive Ansicht aktualisieren  
   
--   Wählen Sie im Menü **Fenster** die Option **Aktualisieren** aus, oder klicken Sie in der Symbolleiste auf **Aktualisieren**.  
+-   Wählen Sie **aktualisieren** aus der **Fenster** Menü, oder klicken Sie auf die **aktualisieren** auf der Symbolleiste.  
   
-## Siehe auch  
- [Using Spy\+\+](../debugger/using-spy-increment.md)   
- [Spy\+\+ Views](../debugger/spy-increment-views.md)   
- [Spy\+\+ Reference](../debugger/spy-increment-reference.md)
+## <a name="see-also"></a>Siehe auch  
+ [Verwenden von Spy++](../debugger/using-spy-increment.md)   
+ [Spy++-Ansichten](../debugger/spy-increment-views.md)   
+ [Spy++-Referenz](../debugger/spy-increment-reference.md)

@@ -1,62 +1,65 @@
 ---
-title: "lastIndexOf-Methode (Array) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "Arrays [JavaScript], lastIndexOf-Methode"
-  - "lastIndexOf-Methode [JavaScript]"
+title: LastIndexOf-Methode (Array) (JavaScript) | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- arrays [JavaScript], lastIndexOf method
+- lastIndexOf method [JavaScript]
 ms.assetid: 04f5145d-007e-498f-b06f-11ab384c2968
-caps.latest.revision: 10
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 12d2a0fca7a7cd82543a83ea19aca49d3cbb93b6
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# lastIndexOf-Methode (Array) (JavaScript)
+# <a name="lastindexof-method-array-javascript"></a>lastIndexOf-Methode (Array) (JavaScript)
 Gibt den Index des letzten Vorkommens eines angegebenen Werts in einem Array zurück.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
   
 array1.lastIndexOf(searchElement[, fromIndex])  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
   
 |Parameter|Definition|  
 |---------------|----------------|  
-|`array1`|Erforderlich.  Das Array\-Objekt, das durchsucht werden soll.|  
-|`searchElement`|Erforderlich.  Der im `array1` zu suchende Wert.|  
-|`fromIndex`|Optional.  Der Arrayindex, an der mit der Suche begonnen werden soll.  Wenn `fromIndex` ausgelassen wird, wird die Suche beim letzten Index im Array gestartet.|  
+|`array1`|Erforderlich. Das Arrayobjekt, gesucht werden soll.|  
+|`searchElement`|Erforderlich. Der zu suchende Wert `array1`.|  
+|`fromIndex`|Dies ist optional. Der Index des Arrays an dem die Suche zu starten. Wenn `fromIndex` wird weggelassen, die Suche beginnt an der letzte Index im Array.|  
   
-## Rückgabewert  
- Der Index des letzten Vorkommens von `searchElement` im Array oder \-1, wenn `searchElement` nicht gefunden wird.  
+## <a name="return-value"></a>Rückgabewert  
+ Der Index des letzten Vorkommens von `searchElement` im Array, oder -1, wenn `searchElement` wurde nicht gefunden.  
   
-## Hinweise  
- Die `lastIndexOf`\-Methode durchsucht ein Array nach dem angegebenen Wert.  Die Methode gibt den Index des ersten Vorkommens oder \-1 zurück, wenn der angegebene Wert nicht gefunden wird.  
+## <a name="remarks"></a>Hinweise  
+ Die `lastIndexOf` sucht die Methode ein Array für einen angegebenen Wert. Die Methode gibt den Index des ersten Vorkommens oder -1, wenn der angegebene Wert nicht gefunden wird.  
   
- Die Suche wird in absteigenden Indexreihenfolge durchgeführt \(letztes Member zuerst\).  Verwenden Sie [indexOf\-Methode \(Array\)](../../javascript/reference/indexof-method-array-javascript.md) für die Suche in aufsteigender Reihenfolge.  
+ Die Suche erfolgt in absteigender Reihenfolge (last Element zuerst). Um in aufsteigender Reihenfolge zu suchen, verwenden die [IndexOf-Methode (Array)](../../javascript/reference/indexof-method-array-javascript.md).  
   
- Die Arrayelemente werden mit dem `searchElement`\-Wert durch strikte Gleichheit verglichen, ähnlich wie der Vergleich durch den `===`\-Operator.  Weitere Informationen finden Sie unter [Vergleichsoperatoren](../../javascript/reference/comparison-operators-javascript.md).  
+ Die Elemente des Arrays sind im Vergleich zu der `searchElement` Wert durch strikte Gleichheit, ähnlich wie der Vergleich vorgenommen werden, indem die `===` Operator. Weitere Informationen finden Sie unter [Vergleichsoperatoren](../../javascript/reference/comparison-operators-javascript.md).  
   
- Das optionale `fromIndex`\-Argument gibt den Arrayindex an, in dem die Suche starten soll.  Wenn `fromIndex` größer oder gleich der Arraylänge ist, wird das gesamte Array durchsucht.  Wenn `fromIndex` negativ ist, startet die Suche bei Arraylänge plus `fromIndex`.  Wenn der berechnete Index kleiner als 0 ist, wird \-1 zurückgegeben.  
+ Das optionale `fromIndex` -Argument gibt den Index des Arrays, an dem die Suche zu starten. Wenn `fromIndex` ist größer als oder gleich der Arraylänge, wird das gesamte Array gesucht. Wenn `fromIndex` ist negativ ist, die Suche beginnt an der Arraylänge plus `fromIndex`. Wenn der berechnete Index kleiner als 0 ist, wird-1 zurückgegeben.  
   
-## Beispiel  
- In den folgenden Beispielen wird die Verwendung der `lastIndexOf`\-Methode veranschaulicht.  
+## <a name="example"></a>Beispiel  
+ Die folgenden Beispiele veranschaulichen die Verwendung der `lastIndexOf` Methode.  
   
-```javascript  
+```JavaScript  
 // Create an array.  
 var ar = ["ab", "cd", "ef", "ab", "cd"];  
   
@@ -83,10 +86,10 @@ document.write(ar.lastIndexOf("ab", -3) + "<br/>");
   
 ```  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  [!INCLUDE[jsv9](../../javascript/includes/jsv9-md.md)]  
   
-## Siehe auch  
- [indexOf\-Methode \(Array\)](../../javascript/reference/indexof-method-array-javascript.md)   
- [Array\-Objekt](../../javascript/reference/array-object-javascript.md)   
+## <a name="see-also"></a>Siehe auch  
+ [IndexOf-Methode (Array)](../../javascript/reference/indexof-method-array-javascript.md)   
+ [Array-Objekt](../../javascript/reference/array-object-javascript.md)   
  [Verwenden von Arrays](../../javascript/advanced/using-arrays-javascript.md)

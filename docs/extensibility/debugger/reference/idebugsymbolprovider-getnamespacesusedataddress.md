@@ -1,57 +1,57 @@
 ---
-title: "IDebugSymbolProvider::GetNamespacesUsedAtAddress | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugSymbolProvider::GetNamespacesUsedAtAddress"
-helpviewer_keywords: 
-  - "IDebugSymbolProvider::GetNamespacesUsedAtAddress-Methode"
+title: IDebugSymbolProvider::GetNamespacesUsedAtAddress | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugSymbolProvider::GetNamespacesUsedAtAddress
+helpviewer_keywords: IDebugSymbolProvider::GetNamespacesUsedAtAddress method
 ms.assetid: 392de54b-9af0-4567-953b-1b41acd1e05c
-caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: ca03fd4430c3cfcb9474cfd4c420ec5ab560aa94
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugSymbolProvider::GetNamespacesUsedAtAddress
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Diese Methode erstellt einen Enumerator für die Namespaces Debuggen, die mit der Adresse zugeordnet sind.  
+# <a name="idebugsymbolprovidergetnamespacesusedataddress"></a>IDebugSymbolProvider::GetNamespacesUsedAtAddress
+Diese Methode erstellt einen Enumerator für Namespaces, die die Debug-Adresse zugeordnet.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT GetNamespacesUsedAtAddress(   
-   IDebugAddress*     pAddress,  
-   IEnumDebugFields** ppEnum  
+```cpp  
+HRESULT GetNamespacesUsedAtAddress(   
+   IDebugAddress*     pAddress,  
+   IEnumDebugFields** ppEnum  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetNamespacesUsedAtAddress(  
-   IDebugAddress        pAddress,  
-   out IEnumDebugFields ppEnum  
+   IDebugAddress        pAddress,  
+   out IEnumDebugFields ppEnum  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `pAddress`  
- \[in\]  Die Debuginformationen Adresse.  
+ [in] Die Debug-Adresse.  
   
  `ppEnum`  
- \[out\]  Gibt einen Enumerator [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) für die Namespaces zurück.  
+ [out] Gibt eine [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) Enumerator für die Namespaces.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Hinweise  
- Es gibt möglicherweise mehrere Namespaces mit einer angegebenen Adresse Debuggen z. B. geschachtelte Namespaces oder mehrere `using`\-Anweisungen zugeordnet sind.  
+## <a name="remarks"></a>Hinweise  
+ Es gibt möglicherweise mehrere Namespaces, die mit einer angegebenen Adresse z. B. verknüpfte geschachtelte Namespaces oder mehrere `using` Anweisungen.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)   
  [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)

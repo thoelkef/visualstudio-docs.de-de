@@ -1,51 +1,51 @@
 ---
-title: "Search Tools for Spy++ Views | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "searching, Spy++"
-  - "Spy++, searching"
+title: "Suchen von Tools für Spy++-Ansichten | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- searching, Spy++
+- Spy++, searching
 ms.assetid: db0c32cf-8e50-4e1b-9a9f-4c07fd6a2163
-caps.latest.revision: 4
-caps.handback.revision: 4
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "4"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 4fe030aef4ba755b9a147bcc1430d2e6046c9dbf
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Search Tools for Spy++ Views
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Verwenden Sie diese Dialogfelder, um anzugeben, welche Daten in einem Spy\+\+\-Ansichtsfenster angezeigt werden:  
+# <a name="search-tools-for-spy-views"></a>Suchtools für Spy++-Ansichten
+Verwenden Sie diese Dialogfelder, um die angeben, welche Daten ein Fenster Spy++-Ansichten angezeigt werden:  
   
-## In diesem Abschnitt  
+## <a name="in-this-section"></a>In diesem Abschnitt  
  [Dialogfeld "Fenster suchen"](../debugger/find-window-dialog-box.md)  
- Wird verwendet, um die Eigenschaften oder Meldungen aus einem bestimmten Fenster anzuzeigen.  
+ Zum Anzeigen der Eigenschaften oder Nachrichten von einem bestimmten Fenster verwendet.  
   
  [Dialogfeld "Fenstersuche"](../debugger/window-search-dialog-box.md)  
- Wird verwendet, um in der Fensteransicht den Knoten für ein bestimmtes Fenster zu suchen.  
+ So suchen Sie den Knoten für ein bestimmtes Fenster in der Fensteransicht verwendet.  
   
- [Dialogfeld "Meldungssuche"](../debugger/message-search-dialog-box.md)  
- Wird verwendet, um in der Meldungsansicht den Knoten für eine bestimmte Meldung zu suchen.  
+ [Meldungssuche (Dialogfeld)](../debugger/message-search-dialog-box.md)  
+ Verwendet, um den Knoten für eine bestimmte Nachricht in der Ansicht Nachricht suchen.  
   
  [Dialogfeld "Prozesssuche"](../debugger/process-search-dialog-box.md)  
- Wird verwendet, um in der Prozessansicht den Knoten für einen bestimmten Prozess zu suchen.  
+ So suchen Sie den Knoten für einen bestimmten Prozess in der Prozessansicht verwendet.  
   
  [Dialogfeld "Threadsuche"](../debugger/thread-search-dialog-box.md)  
- Wird verwendet, um in der Threadansicht den Knoten für einen bestimmten Thread zu suchen.  
+ Verwendet, um den Knoten für einen bestimmten Thread in der Threadansicht suchen.  
   
-## Verwandte Abschnitte  
- [Spy\+\+\-Ansichten](../debugger/spy-increment-views.md)  
- Erklärt die Spy\+\+\-Strukturansichten von Fenstern, Meldungen, Prozessen und Threads.  
+## <a name="related-sections"></a>Verwandte Abschnitte  
+ [Spy++-Ansichten](../debugger/spy-increment-views.md)  
+ Erläutert die Spy++-Strukturansichten von Windows, Nachrichten, Prozesse und Threads an.  
   
- [Verwenden von Spy\+\+](../debugger/using-spy-increment.md)  
- Stellt das Tool Spy\+\+ vor und erläutert die Verwendung.  
+ [Verwenden von Spy++](../debugger/using-spy-increment.md)  
+ Führt das Tool Spy++ und erläutert, wie sie verwendet werden kann.  
   
- [Spy\+\+\-Referenz](../debugger/spy-increment-reference.md)  
- Enthält Abschnitte mit Beschreibungen der einzelnen Spy\+\+\-Menüs und \-Dialogfelder.
+ [Spy++-Referenz](../debugger/spy-increment-reference.md)  
+ Enthält Abschnitte beschreiben die einzelnen Spy++-Menü und das Dialogfeld.

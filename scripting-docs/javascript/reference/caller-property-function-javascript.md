@@ -1,50 +1,52 @@
 ---
-title: "caller-Eigenschaft (Funktion) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "caller"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "caller-Eigenschaft"
-  - "Funktionsaufrufe, Derzeit ausgeführte Funktionen"
+title: Caller-Eigenschaft (Funktion) (JavaScript) | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: caller
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- caller property
+- function calls, functions that are executing
 ms.assetid: ae210853-7160-4102-9cfd-ab489f180ce1
-caps.latest.revision: 12
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 8c6eef1b8304612c2ed16a4cc389bf3b2a28b70f
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# caller-Eigenschaft (Funktion) (JavaScript)
-Ruft die Funktion ab, welche die aktuelle Funktion aufgerufen hat.  
+# <a name="caller-property-function-javascript"></a>caller-Eigenschaft (Funktion) (JavaScript)
+Ruft die Funktion, die die aktuelle Funktion aufgerufen hat.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
   
 functionName.caller  
 ```  
   
-## Hinweise  
- Das `functionName`\-Objekt ist der Name einer beliebigen ausgeführten Funktion.  
+## <a name="remarks"></a>Hinweise  
+ Die `functionName` -Objekt der Namen der Funktion ausgeführt.  
   
- Die `caller`\-Eigenschaft einer Funktion ist nur während ihrer Ausführung definiert.  Wenn die Funktion auf der obersten Ebene eines [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]\-Programms aufgerufen wird, enthält `caller` den Wert `null`.  
+ Die `caller` Eigenschaft für eine Funktion nur bei definiert, die Funktion ausgeführt wird. Wenn die Funktion von der obersten Position der aufgerufen wird eine [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] -Programm `caller` enthält `null`.  
   
- Wird die `caller`\-Eigenschaft in einer Zeichenfolge verwendet, entspricht dies `functionName`.`toString`, d. h., der dekompilierte Text der Funktion wird angezeigt.  
+ Wenn die `caller` Eigenschaft in einer Zeichenfolge verwendet wird, das Ergebnis entspricht dem `functionName`.`toString`, d. h. die dekompilierte Text der Funktion angezeigt wird.  
   
- Im folgenden Beispiel wird die Verwendung der `caller`\-Eigenschaft veranschaulicht:  
+ Das folgende Beispiel veranschaulicht die Verwendung der `caller`-Eigenschaft.  
   
-```javascript  
+```JavaScript  
 function CallLevel(){  
    if (CallLevel.caller == null)  
       return("CallLevel was called from the top level.");  
@@ -57,8 +59,8 @@ document.write(CallLevel());
 // Output: CallLevel was called from the top level.  
 ```  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  [!INCLUDE[jsv2](../../javascript/reference/includes/jsv2-md.md)]  
   
-## Siehe auch  
- [function\-Anweisung](../../javascript/reference/function-statement-javascript.md)
+## <a name="see-also"></a>Siehe auch  
+ [function-Anweisung](../../javascript/reference/function-statement-javascript.md)
