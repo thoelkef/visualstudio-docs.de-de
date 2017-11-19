@@ -1,30 +1,31 @@
 ---
-title: "VisibilityConstraints-Element | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "VisibilityConstraints"
-helpviewer_keywords: 
-  - "VSCT XML-Schemaelemente, VisibilityConstraints"
-  - "VisibilityConstraints-Element (VSCT-XML-Schema)"
+title: VisibilityConstraints Element | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: VisibilityConstraints
+helpviewer_keywords:
+- VSCT XML schema elements, VisibilityConstraints
+- VisibilityConstraints element (VSCT XML schema)
 ms.assetid: d6dcd314-6fe4-4693-a189-91fa026c7b34
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: f26268e6168379632868c07a9d9c58f9485c8ada
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# VisibilityConstraints-Element
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Das Element VisibilityConstraints bestimmt die statische Sichtbarkeit von Gruppen von Befehlen und Symbolleisten. Die Sichtbarkeit wird zuerst gesteuert, indem die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] integrierten Entwicklungsumgebung \(IDE\) ohne das VSPackage geladen.  
+# <a name="visibilityconstraints-element"></a>VisibilityConstraints-Element
+Das Element VisibilityConstraints bestimmt die statische Sichtbarkeit von Gruppen von Befehlen und Symbolleisten. Die Sichtbarkeit wird zunächst vom gesteuert der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] integrierte Entwicklungsumgebung (IDE) ohne laden das VSPackage.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 <VisibilityConstraints>  
@@ -33,34 +34,37 @@ Das Element VisibilityConstraints bestimmt die statische Sichtbarkeit von Gruppe
 </VisibilityConstraint>  
 ```  
   
-## Attribute und Elemente  
+## <a name="attributes-and-elements"></a>Attribute und Elemente  
  In den folgenden Abschnitten werden Attribute sowie untergeordnete und übergeordnete Elemente beschrieben.  
   
-### Attribute  
+### <a name="attributes"></a>Attribute  
   
 |Attribut|Beschreibung|  
-|--------------|------------------|  
-|Bedingung|Optional. Siehe [Bedingten Attribute](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|---------------|-----------------|  
+|Bedingung|Dies ist optional. Finden Sie unter [bedingte Attribute](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
-### Untergeordnete Elemente  
-  
-|Element|Beschreibung|  
-|-------------|------------------|  
-|[VisibilityItem\-Element](../extensibility/visibilityitem-element.md)|Bestimmt die Sichtbarkeit statische, Befehle und Symbolleisten.|  
-|[VisibilityConstraints](../extensibility/visibilityconstraints-element.md)|Bestimmt die Sichtbarkeit statische Gruppen von Befehlen und Symbolleisten.|  
-  
-### Übergeordnete Elemente  
+### <a name="child-elements"></a>Untergeordnete Elemente  
   
 |Element|Beschreibung|  
-|-------------|------------------|  
-|[CommandTable\-Element](../extensibility/commandtable-element.md)|Definiert die Elemente aus, die die Befehle \(z. B. Menüelemente, Menüs, Symbolleisten und Kombinationsfelder\) darstellen, die einem VSPackage in der IDE bietet.|  
+|-------------|-----------------|  
+|[VisibilityItem-Element](../extensibility/visibilityitem-element.md)|Bestimmt die Sichtbarkeit statische, Befehle und Symbolleisten.|  
+|[VisibilityConstraints](../extensibility/visibilityconstraints-element.md)|Bestimmt die statische Sichtbarkeit von Gruppen von Befehlen und Symbolleisten.|  
   
-## Beispiel  
+### <a name="parent-elements"></a>Übergeordnete Elemente  
+  
+|Element|Beschreibung|  
+|-------------|-----------------|  
+|[CommandTable-Element](../extensibility/commandtable-element.md)|Definiert die Elemente aus, die die Befehle (z. B. Menüelemente, Menüs, Symbolleisten und Kombinationsfeldern) darstellen, die eine VSPackage mit der IDE ermöglicht.|  
+  
+## <a name="example"></a>Beispiel  
   
 ```  
-<VisibilityConstraints> <VisibilityItem guid="cmdSetGuidMyProductCommands"     id="cmdidAddWidget" context="guidNotViewSourceMode"/> </VisibilityConstraints>  
+<VisibilityConstraints>  
+  <VisibilityItem guid="cmdSetGuidMyProductCommands"     id="cmdidAddWidget"  
+    context="guidNotViewSourceMode"/>  
+</VisibilityConstraints>  
 ```  
   
-## Siehe auch  
- [VisibilityItem\-Element](../extensibility/visibilityitem-element.md)   
- [Visual Studio\-Befehl\-Tabelle \(. VSCT\) Dateien](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+## <a name="see-also"></a>Siehe auch  
+ [VisibilityItem-Element](../extensibility/visibilityitem-element.md)   
+ [VSCT-Dateien (Visual Studio Command Table)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

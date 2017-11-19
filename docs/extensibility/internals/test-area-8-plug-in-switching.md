@@ -1,57 +1,59 @@
 ---
-title: "Testbereich 8: Plug-In-Umschaltung | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Datenquellen-Steuerelement [Visual Studio SDK] switching-Plug-ins"
-  - "Source Control-Plug-ins wechseln"
+title: Testbereich 8:-Plug-in zu wechseln | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- source control [Visual Studio SDK], switching plug-ins
+- source control plug-ins, switching
 ms.assetid: 01370792-b5da-4e46-9ce2-7dd326587141
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 03e7bd5728320bb2efd0b90728b6c1a16f5997ba
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Testbereich 8: Plug-In-Umschaltung
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrierte Entwicklungsumgebung \(IDE\) verfügt über die Benutzeroberfläche \(UI\), um den aktuellen Quelle Plug\-In für steuer zu ändern.  Dieses Testgebiet stellt Testfälle für den Prozess des Sammelns, der für Projektmappen quellcodeverwaltung das Plug\-In zu verwenden.  
+# <a name="test-area-8-plug-in-switching"></a>Testbereich 8: Plug-in wechseln
+Die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrierten Entwicklungsumgebung (IDE) verfügt über die Benutzeroberfläche (UI) so ändern Sie den Quellcodeverwaltungs-Plug-in. Dieser Testbereich bietet Testfälle für den Prozess der Entnahme das plug-in für die quellcodeverwaltung des Projektmappen verwenden.  
   
-## Befehls\-Menü\-Zugriff  
- Die folgenden integrierten Entwicklungsumgebung [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] für Menüs werden in Testfällen verwendet.  
+## <a name="command-menu-access"></a>Menüzugriff Befehl  
+ Die folgenden [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrated Development-Umgebung im Menüpfade werden in den Testfällen verwendet.  
   
--   Plug\-In für steuer aktuellen Quelle: **Extras** \- \> **Optionen** \- \> **Quellcodeverwaltung** \- \> **Plug\-In\-Auswahl**.  
+-   Aktuelles Quellcodeverwaltungs-Plug-in: **Tools** -> **Optionen** -> **Quellcodeverwaltung** -> **Plug-in-Auswahl** .  
   
--   Ändern quellcodeverwaltungsbindung: **Datei** \- \> **Quellcodeverwaltung** \- \> **Quellcodeverwaltung ändern**…  
+-   Ändern der Quelle Bindung steuern: **Datei** -> **Quellcodeverwaltung** -> **Quellcodeverwaltung ändern**...  
   
-## Allgemeines erwartetes Verhalten  
- Das Quellcodeverwaltungs\-Plug\-In für eine Projektmappe zu ändern ist möglich, ohne Visual Studio zu beenden oder die Projektmappe erneut zu laden.  Außerdem ändert der aktuellen Quelle steuer automatisch auf das Plug\-In für das von einer Projektmappe verwendet wird, wenn diese Projektmappe geladen wird.  
+## <a name="common-expected-behavior"></a>Allgemeine erwartet  
+ Ändern das Quellsteuerelement-Plug-In für eine Projektmappe kann ohne Beenden Sie Visual Studio oder das erneute Laden der Projektmappe zur Verfügung. Darüber hinaus wird der Quellcodeverwaltungs-Plug-in automatisch von einer Lösung verwendet werden, wenn die Projektmappe geladen wird.  
   
-## Testfälle  
- Im Folgenden sind bestimmte Testfälle für das Plug\-In umschaltende Testgebiet.  
+## <a name="test-cases"></a>Testfälle  
+ Im folgenden finden bestimmte Testfälle für den Plug-in-switching Testbereich.  
   
-### Fall 8a: Automatische Änderung  
+### <a name="case-8a-automatic-change"></a>Fall 8a: automatisch ändern  
   
-#### Erwartetes Verhalten  
- Wenn ein Benutzer eine Projektmappe geladen wird, die der Quellcodeverwaltung unterliegt, wird die Projektmappe automatisch geladen und das entsprechende Quellcodeverwaltungs\-Plug\-In wird als aktuell ausgewählt.  
+#### <a name="expected-behavior"></a>Erwartetes Verhalten  
+ Wenn ein Benutzer eine Projektmappe geladen wird, die quellcodeverwaltung unterliegt, die Projektmappe wird automatisch geladen, und der entsprechenden Quelle-Steuerelement-Plug-in als aktuell ausgewählt ist.  
   
-|Aktion|Testschritte|Erwartete Ergebnisse zu überprüfen|  
-|------------|------------------|----------------------------------------|  
-|Automatische Quellcodeverwaltungs\-Plug\-In\-Änderung|1.  Wählen Sie in Plug\-In als versucht \> \-**Extras** \(Current \> \- **OptionenQuellcodeverwaltung** \- \> **Plug\-In\-Auswahl**\).<br />2.  Erstellen Sie ein neues Projekt.<br />3.  Fügen Sie die Projektmappe zur Quellcodeverwaltung hinzufügen.<br />4.  Wählen Sie ein anderes Plug\-In aus \(z. B. [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)]\).<br />5.  Accept Projektmappen Eingabeaufforderung nehmend entladen.<br />6.  Öffnen Sie die Projektmappe aus dem Datenträger.|Projektmappe geöffnet ist.<br /><br /> Plug\-In getestet wird das Plug\-In für steuer aktuellen Quelle.|  
+|Aktion|Testschritte|Erwartete Ergebnisse überprüfen|  
+|------------|----------------|--------------------------------|  
+|Automatische Source Control-Plug-in ändern|1.  Select-Plug-in unter als aktuell testen (**Tools** -> **Optionen** -> **Quellcodeverwaltung** -> **-Plug-in Auswahl**.)<br />2.  Erstellen Sie ein neues Projekt.<br />3.  Fügen Sie der Projektmappe zur quellcodeverwaltung hinzu.<br />4.  Wählen Sie ein anderes plug-in (z. B. [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)]).<br />5.  Akzeptieren der Aufforderung für entladen Lösung.<br />6.  Öffnen Sie erneut die Projektmappe vom Datenträger.|Lösung wird geöffnet.<br /><br /> -Plug-in unter dem Test wird der Quellcodeverwaltungs-Plug-in.|  
   
-### Fall 8b: Projektmappe\-basierte Änderung  
+### <a name="case-8b-solution-based-change"></a>Case-8 b: Change basierten Lösung  
   
-#### Erwartetes Verhalten  
- Die Projektmappe kann das zugehörige geändertes Quellcodeverwaltungs\-Plug\-In haben.  
+#### <a name="expected-behavior"></a>Erwartetes Verhalten  
+ Die Lösung kann seine zugeordneten Datenquellen-Steuerelement-Plug-Ins geändert haben.  
   
-|Aktion|Testschritte|Erwartete Ergebnisse zu überprüfen|  
-|------------|------------------|----------------------------------------|  
-|Ändern des Plug\-Ins für eine Projektmappe|1.  Wählen Sie in Plug\-In als versucht \> \-**Extras** \(Current \> \- **OptionenQuellcodeverwaltung** \- \> **Plug\-In\-Auswahl**\).<br />2.  Erstellt ein neues Projekt und eine Projektmappe.<br />3.  Fügen Sie die Projektmappe zur Quellcodeverwaltung hinzufügen.<br />4.  Befreien Sie die Projektmappe aus der Quellcodeverwaltung \(unter Verwendung des **Quellcodeverwaltung ändern** Dialogfelds\).<br />5.  Wählen Sie ein anderes Plug\-In aus \(z. B. [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)]\).<br />6.  Laden Sie die Projektmappe von einem Datenträger, wenn Sie entladen werden.<br />7.  Fügen Sie die Projektmappe zur Quellcodeverwaltung hinzufügen.<br />8.  Befreien Sie die Projektmappe aus der Quellcodeverwaltung \(mithilfe **Quellcodeverwaltung ändern** Dialogfelds\).<br />9. Wählen Sie in Plug\-In versuchen Sie es erneut.<br />10. Lädt beim Ausführen von der Festplatte Projektmappe entladen werden.<br />11. Binden Sie die Projektmappe im ursprünglichen Speicherort \(unter Verwendung des **Quellcodeverwaltung ändern** Dialogfelds\).|Projektmappe zur Quellcodeverwaltung hinzugefügt wird, indem das ausgewählte Plug\-In verwendet.|  
+|Aktion|Testschritte|Erwartete Ergebnisse überprüfen|  
+|------------|----------------|--------------------------------|  
+|Änderung des-Plug-In für eine Projektmappe|1.  Select-Plug-in unter als aktuell testen (**Tools** -> **Optionen** -> **Quellcodeverwaltung** -> **-Plug-in Auswahl**).<br />2.  Erstellen Sie ein neues Projekt und Projektmappe.<br />3.  Fügen Sie der Projektmappe zur quellcodeverwaltung hinzu.<br />4.  Heben Sie die Bindung der Projektmappe aus der quellcodeverwaltung (mithilfe der **Quellcodeverwaltung ändern** Dialogfeld).<br />5.  Wählen Sie ein anderes plug-in (z. B. [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)]).<br />6.  Laden Sie die Projektmappe vom Datenträger aus, wenn entladen.<br />7.  Fügen Sie der Projektmappe zur quellcodeverwaltung hinzu.<br />8.  Heben Sie die Bindung der Projektmappe aus der quellcodeverwaltung (mit **Quellcodeverwaltung ändern** Dialogfeld).<br />9. Wählen Sie-Plug-in unter dem Test erneut aus.<br />10. Laden Sie Projektmappen vom Datenträger aus, wenn entladen.<br />11. Binden Sie die Projektmappe am ursprünglichen Speicherort (mithilfe der **Quellcodeverwaltung ändern** Dialogfeld).|Lösung wird zur quellcodeverwaltung hinzugefügt, mit dem ausgewählten-Plug-in.|  
   
-## Siehe auch  
- [Test\-Handbuch für Source Control\-Plug\-ins](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)
+## <a name="see-also"></a>Siehe auch  
+ [Testleitfaden für Quellcodeverwaltungs-Plug-Ins](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)
