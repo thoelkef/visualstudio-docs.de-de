@@ -1,60 +1,65 @@
 ---
-title: "ShowByDefault (Visual Studio-Vorlagen) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "http://schemas.microsoft.com/developer/vstemplate/2005#ShowByDefault"
-helpviewer_keywords: 
-  - "<ShowByDefault>-Element [Visual Studio-Vorlagen]"
-  - "ShowByDefault-Element [Visual Studio-Vorlagen]"
+title: ShowByDefault (Visual Studio-Vorlagen) | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: http://schemas.microsoft.com/developer/vstemplate/2005#ShowByDefault
+helpviewer_keywords:
+- <ShowByDefault> element [Visual Studio Templates]
+- ShowByDefault element [Visual Studio Templates]
 ms.assetid: 7be783f6-0ef6-42bc-924a-df9a2eba7781
-caps.latest.revision: 7
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 0b6679cdd8f6239d5548f95d8d07146c6cda1ac9
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# ShowByDefault (Visual Studio-Vorlagen)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Gibt bei `false` an, dass die Vorlage nur unter der angegebenen [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md) angezeigt wird.  
+# <a name="showbydefault-visual-studio-templates"></a>ShowByDefault (Visual Studio-Vorlagen)
+Wenn `false`, gibt an, dass die Vorlage nur angezeigt wird, unter der angegebenen [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md).  
   
-## Syntax  
+ \<VSTemplate >  
+ \<TemplateData >  
+ \<ShowByDefault >  
+  
+## <a name="syntax"></a>Syntax  
   
 ```  
 <ShowByDefault> true/false </ShowByDefault>  
 ```  
   
-## Attribute und Elemente  
+## <a name="attributes-and-elements"></a>Attribute und Elemente  
  In den folgenden Abschnitten werden Attribute sowie untergeordnete und übergeordnete Elemente beschrieben.  
   
-### Attribute  
+### <a name="attributes"></a>Attribute  
+ Keine.  
+  
+### <a name="child-elements"></a>Untergeordnete Elemente  
  Keine  
   
-### Untergeordnete Elemente  
- Keine  
-  
-### Übergeordnete Elemente  
+### <a name="parent-elements"></a>Übergeordnete Elemente  
   
 |Element|Beschreibung|  
-|-------------|------------------|  
+|-------------|-----------------|  
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Kategorisiert die Vorlage und definiert, wie diese in den Dialogfeldern **Neues Projekt** oder **Neues Element hinzufügen** angezeigt wird.|  
   
-## Textwert  
+## <a name="text-value"></a>Textwert  
  Ein Textwert ist erforderlich.  
   
- Der Text muss entweder `true` oder `false` sein.  Gibt bei TRUE an, dass die Vorlage für alle Projekttypen angezeigt wird.  Bei FALS wird die Vorlage nur unter der angegebenen `TemplateGroupID` angezeigt.  
+ Der Text muss entweder `true` oder `false` sein. Gibt bei TRUE an, dass die Vorlage für alle Projekttypen angezeigt wird. Bei FALS wird die Vorlage nur unter der angegebenen `TemplateGroupID` angezeigt.  
   
-## Hinweise  
- `ShowByDefault` ist ein optionales Element.  Der Standardwert ist `true`.  
+## <a name="remarks"></a>Hinweise  
+ `ShowByDefault` ist ein optionales Element. Der Standardwert ist `true`.  
   
-## Beispiel  
- Im folgenden Beispiel werden die Metadaten für eine [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]\-Vorlage veranschaulicht.  
+## <a name="example"></a>Beispiel  
+ Im folgenden Beispiel werden die Metadaten für eine [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]-Vorlage veranschaulicht.  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  
@@ -81,7 +86,7 @@ Gibt bei `false` an, dass die Vorlage nur unter der angegebenen [TemplateGroupID
 </VSTemplate>  
 ```  
   
-## Siehe auch  
- [Erstellen von benutzerdefinierten Projekt\- und Elementvorlagen](../ide/creating-project-and-item-templates.md)   
- [Schemareferenz zu Visual Studio\-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)   
- [TemplateGroupID\-Element \(Visual Studio\-Vorlagen\)](../extensibility/templategroupid-element-visual-studio-templates.md)
+## <a name="see-also"></a>Siehe auch  
+ [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)   
+ [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)   
+ [TemplateGroupID-Element (Visual Studio-Vorlagen)](../extensibility/templategroupid-element-visual-studio-templates.md)

@@ -1,12 +1,10 @@
 ---
-title: 'Walkthrough: Calling into the SharePoint Client Object Model in a Server Explorer Extension | Microsoft Docs'
+title: 'Exemplarische Vorgehensweise: Aufrufe in die SharePoint-Clientobjektmodell innerhalb einer Server-Explorererweiterung | Microsoft Docs'
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -16,109 +14,105 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, client object model
 - SharePoint commands [SharePoint development in Visual Studio]
 ms.assetid: 897d3798-42c1-4fff-b280-8b84b53d80c6
-caps.latest.revision: 100
-author: kempb
-ms.author: kempb
+caps.latest.revision: "100"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 4270879f39fe0c5bae41c7810f23f948355c6218
-ms.contentlocale: de-de
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: 489a11c215fe590b85e9dfaf5cbd815fdc43acb3
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension"></a>Walkthrough: Calling into the SharePoint Client Object Model in a Server Explorer Extension
-  This walkthrough demonstrates how to call the SharePoint client object model from an extension for the **SharePoint Connections** node in **Server Explorer**. For more information about how to use the SharePoint client object model, see [Calling into the SharePoint Object Models](../sharepoint/calling-into-the-sharepoint-object-models.md).  
+# <a name="walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension"></a>Exemplarische Vorgehensweise: Aufrufe in das SharePoint-Clientobjektmodell innerhalb einer Server-Explorererweiterung
+  Diese exemplarische Vorgehensweise veranschaulicht, wie aus einer Erweiterung für das SharePoint-Clientobjektmodell Aufrufen der **SharePoint-Verbindungen** Knoten **Server-Explorer**. Weitere Informationen zur Verwendung des SharePoint-Clientobjektmodells finden Sie unter [Aufrufe in die SharePoint-Objektmodelle](../sharepoint/calling-into-the-sharepoint-object-models.md).  
   
- This walkthrough demonstrates the following tasks:  
+ Diese exemplarische Vorgehensweise enthält die folgenden Aufgaben:  
   
--   Creating a [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] extension that extends the **SharePoint Connections** node of **Server Explorer** in the following ways:  
+-   Erstellen einer [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] -Erweiterung, die erweitert die **SharePoint-Verbindungen** Knoten **Server-Explorer** auf folgende Weise:  
   
-    -   The extension adds a **Web Part Gallery** node under each SharePoint site node in **Server Explorer**. This new node contains child nodes that represent each Web Part in the Web Part gallery on the site.  
+    -   Fügt die Erweiterung einer **Webpartkatalog** unter jedem SharePoint-Website-Knoten im Knoten **Server-Explorer**. Dieser neue Knoten enthält untergeordnete Knoten, die jedes Webpart in den Webpartkatalog auf der Website darstellen.  
   
-    -   The extension defines a new type of node that represents a Web Part instance. This new node type is the basis for the child nodes under the new **Web Part Gallery** node. The new Web Part node type displays information in the **Properties** window about the Web Part that the node represents.  
+    -   Die Erweiterung definiert einen neuen Typ von Knoten, der eine Webpart-Instanz darstellt. Diese neuen Knotentyps bildet die Grundlage für die untergeordneten Knoten unter der neuen **Webpartkatalog** Knoten. Die neuen Knotentyps-Webpart zeigt die Informationen in den **Eigenschaften** Fenster über das Webpart, das der Knoten darstellt.  
   
--   Building a Visual Studio Extension (VSIX) package to deploy the extension.  
+-   Erstellen eines Visual Studio-Erweiterung (VSIX) zum Bereitstellen der Erweiterung.  
   
--   Debugging and testing the extension.  
+-   Debuggen und Testen der Erweiterung.  
   
 > [!NOTE]  
->  The extension that you create in this walkthrough resembles the extension that you create in [Walkthrough: Extending Server Explorer to Display Web Parts](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md). That walkthrough uses the SharePoint server object model, but this walkthrough accomplishes the same tasks by using the client object model.  
+>  Die Erweiterung, die Sie in dieser exemplarischen Vorgehensweise erstellen, ähnelt der Erweiterung, die Sie in erstellen [Exemplarische Vorgehensweise: Erweitern von Server-Explorer zum Anzeigen von Webparts](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md). Diese exemplarische Vorgehensweise verwendet das SharePoint-Serverobjektmodell, während diese exemplarische Vorgehensweise führt dieselben Aufgaben mithilfe des Clientobjektmodells.  
   
-## <a name="prerequisites"></a>Prerequisites  
- You need the following components on the development computer to complete this walkthrough:  
+## <a name="prerequisites"></a>Erforderliche Komponenten  
+ Zum Durchführen dieser exemplarischen Vorgehensweise werden auf dem Entwicklungscomputer die folgenden Komponenten benötigt:  
   
--   Supported editions of Windows, SharePoint, and Visual Studio. For more information, see [Requirements for Developing SharePoint Solutions](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
+-   Unterstützte Editionen von Windows, SharePoint und Visual Studio. Weitere Informationen finden Sie unter [Anforderungen für die Entwicklung von SharePoint-Lösungen](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
   
--   The Visual Studio SDK. This walkthrough uses the **VSIX Project** template in the SDK to create a VSIX package to deploy the extension. For more information, see [Extending the SharePoint Tools in Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
+-   Das Visual Studio SDK. Diese exemplarische Vorgehensweise verwendet die **VSIX-Projekt** Vorlage im SDK, um ein VSIX-Paket zum Bereitstellen der Erweiterung zu erstellen. Weitere Informationen finden Sie unter [Erweitern der SharePoint-Tools in Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
   
- Knowledge of the following concepts is helpful, but not required, to complete the walkthrough:  
+Kenntnisse der folgenden Konzepte sind hilfreich, wenn auch für die Durchführung der exemplarischen Vorgehensweise nicht erforderlich:  
   
--   Using the SharePoint client object model. For more information, see [Managed Client Object Model](http://go.microsoft.com/fwlink/?LinkId=177797).  
+-   Verwenden das SharePoint-Clientobjektmodell. Weitere Informationen finden Sie unter [verwaltetes Clientobjektmodell](http://go.microsoft.com/fwlink/?LinkId=177797).  
   
--   Web parts in SharePoint. For more information, see [Web Parts Overview](http://go.microsoft.com/fwlink/?LinkId=177803).  
+-   Webparts in SharePoint. Weitere Informationen finden Sie unter [Web Parts Overview](http://go.microsoft.com/fwlink/?LinkId=177803).  
   
-## <a name="creating-the-projects"></a>Creating the Projects  
- To complete this walkthrough, you must create two projects:  
+## <a name="creating-the-projects"></a>Erstellen der Projekte  
+ Zum Durchführen dieser exemplarischen Vorgehensweise müssen Sie zwei Projekte erstellen:  
   
--   A VSIX project to create the VSIX package to deploy the **Server Explorer** extension.  
+-   Ein VSIX-Projekt so erstellen das VSIX-Paket zum Bereitstellen der **Server-Explorer** Erweiterung.  
   
--   A class library project that implements the **Server Explorer** extension.  
+-   Ein Klassenbibliotheksprojekt, das implementiert die **Server-Explorer** Erweiterung.  
   
- Start the walkthrough by creating the projects.  
+ Beginnen Sie mit der exemplarischen Vorgehensweise, indem Sie beide Projekte erstellen.  
   
-#### <a name="to-create-the-vsix-project"></a>To create the VSIX project  
+#### <a name="to-create-the-vsix-project"></a>So erstellen Sie das VSIX-Projekt  
   
-1.  Start [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
+1.  Starten Sie [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
-2.  On the menu bar, choose **File**, **New**, **Project**.  
+2.  Wählen Sie in der Menüleiste **Datei**, **Neu**, **Projekt**aus.  
   
-3.  In the **New Project** dialog box, expand the **Visual C#** or **Visual Basic** nodes, and then choose **Extensibility**.  
-  
-    > [!NOTE]  
-    >  The **Extensibility** node is available only if you install the Visual Studio SDK. For more information, see the prerequisites section earlier in this topic.  
-  
-4.  At the top of the dialog box, choose **.NET Framework 4.5** in the list of versions of the .NET Framework.  
-  
-     SharePoint tool extensions require features in this version of the .NET Framework.  
-  
-5.  Choose the **VSIX Project** template.  
-  
-6.  In the **Name** box, type **WebPartNode**, and then choose the **OK** button.  
-  
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] adds the **WebPartNode** project to **Solution Explorer**.  
-  
-#### <a name="to-create-the-extension-project"></a>To create the extension project  
-  
-1.  In **Solution Explorer**, open the shortcut menu for the solution node, choose **Add**, and then choose **New Project**.  
+3.  In der **neues Projekt** Dialogfeld erweitern Sie die **Visual C#-** oder **Visual Basic** Knoten, und wählen Sie dann **Erweiterbarkeit**.  
   
     > [!NOTE]  
-    >  In Visual Basic projects, the solution node appears in **Solution Explorer** only when the **Always show solution** check box is selected in the [NIB: General, Projects and Solutions, Options Dialog Box](http://msdn.microsoft.com/en-us/8f8e37e8-b28d-4b13-bfeb-ea4d3312aeca).  
+    >  Die **Erweiterbarkeit** Knoten ist nur verfügbar, wenn Sie das Visual Studio SDK installieren. Weitere Informationen finden Sie weiter oben in diesem Thema im Abschnitt zu den erforderlichen Komponenten.  
   
-2.  In the  **New Project** dialog box, expand the **Visual C#** or **Visual Basic** nodes, and then choose **Windows**.  
+4.  Wählen Sie am oberen Rand des Dialogfelds, **.NET Framework 4.5** in der Liste der Versionen von .NET Framework.  
   
-3.  At the top of the dialog box, choose **.NET Framework 4.5** in the list of versions of the .NET Framework.  
+     SharePoint-Tools-Erweiterungen werden Funktionen in dieser Version von .NET Framework erfordern.  
   
-4.  In the list of project templates, choose **Class Library**.  
+5.  Wählen Sie die **VSIX-Projekt** Vorlage.  
   
-5.  In the **Name** box, enter **WebPartNodeExtension**, and then choose the **OK** button.  
+6.  In der **Namen** geben **WebPartNode**, und wählen Sie dann die **OK** Schaltfläche.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] adds the **WebPartNodeExtension** project to the solution and opens the default Class1 code file.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Fügt der **WebPartNode** Projekt **Projektmappen-Explorer**.  
   
-6.  Delete the Class1 code file from the project.  
+#### <a name="to-create-the-extension-project"></a>So erstellen Sie das Erweiterungsprojekt  
   
-## <a name="configuring-the-extension-project"></a>Configuring the Extension Project  
- Before you write code to create the extension, you must add code files and assembly references to your project, and you must update the default namespace.  
+1.  In **Projektmappen-Explorer**, öffnen Sie das Kontextmenü für den Projektmappenknoten, wählen Sie **hinzufügen**, und wählen Sie dann **neues Projekt**.  
   
-#### <a name="to-configure-the-project"></a>To configure the project  
+2.  In der **neues Projekt** Dialogfeld erweitern Sie die **Visual C#-** oder **Visual Basic** Knoten, und wählen Sie dann **Windows**.  
   
-1.  In the **WebPartNodeExtension** project, add two code files that are named SiteNodeExtension and WebPartNodeTypeProvider.  
+3.  Wählen Sie am oberen Rand des Dialogfelds, **.NET Framework 4.5** in der Liste der Versionen von .NET Framework.  
   
-2.  Open the shortcut menu for the WebPartNodeExtension project, and then choose **Add Reference**.  
+4.  Wählen Sie in der Liste der Projektvorlagen **-Klassenbibliothek**.  
   
-3.  In the **Reference Manager - WebPartNodeExtension** dialog box, choose the **Framework** node, and then select the check boxes for the  System.ComponentModel.Composition and System.Windows.Forms assemblies.  
+5.  In der **Namen** geben **WebPartNodeExtension**, und wählen Sie dann die **OK** Schaltfläche.  
   
-4.  Choose the **Extensions** node, select the check box for each of the following assemblies, and then choose the **OK** button:  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Fügt der **WebPartNodeExtension** Projekt der Projektmappe und öffnet die Class1-Codedatei.  
+  
+6.  Löschen Sie die Class1-Codedatei aus dem Projekt.  
+  
+## <a name="configuring-the-extension-project"></a>Konfigurieren des Erweiterungsprojekts  
+ Bevor Sie Code zum Erstellen der Erweiterung schreiben, müssen Sie Codedateien und Assemblyverweise zu Ihrem Projekt hinzufügen und müssen Sie den Standardnamespace aktualisieren.  
+  
+#### <a name="to-configure-the-project"></a>So konfigurieren Sie das Projekt  
+  
+1.  In der **WebPartNodeExtension** Projekt, fügen Sie zwei Codedateien mit den Namen SiteNodeExtension und WebPartNodeTypeProvider hinzu.  
+  
+2.  Öffnen Sie das Kontextmenü für das Projekt WebPartNodeExtension, und wählen Sie dann **Verweis hinzufügen**.  
+  
+3.  In der **Verweis-Manager - WebPartNodeExtension** Dialogfeld Wählen Sie die **Framework** Knoten, und wählen Sie dann die Kontrollkästchen für System.ComponentModel.Composition und "System.Windows.Forms" Assemblys.  
+  
+4.  Wählen Sie die **Erweiterungen** Knoten, wählen Sie das Kontrollkästchen für jede der folgenden Assemblys, und wählen Sie dann die **OK** Schaltfläche:  
   
     -   Microsoft.SharePoint.Client  
   
@@ -126,172 +120,174 @@ ms.lasthandoff: 08/30/2017
   
     -   Microsoft.VisualStudio.SharePoint  
   
-5.  Open the shortcut menu for the **WebPartNodeExtension** project, and then choose **Properties**.  
+5.  Öffnen Sie das Kontextmenü für die **WebPartNodeExtension** Projekt, und wählen Sie dann **Eigenschaften**.  
   
-     The **Project Designer** opens.  
+     Der **Projekt-Designer** wird geöffnet.  
   
-6.  Choose the **Application** tab.  
+6.  Wählen Sie die Registerkarte **Anwendung** aus.  
   
-7.  In the **Default namespace** box (C#) or **Root namespace** box (Visual Basic), enter **ServerExplorer.SharePointConnections.WebPartNode**.  
+7.  In der **Standardnamespace** Feld (c#) oder **Stammnamespace** (Visual Basic) Geben Sie **Wert ServerExplorer.SharePointConnections.WebPartNode**.  
   
-## <a name="creating-icons-for-the-new-nodes"></a>Creating Icons for the New Nodes  
- Create two icons for the **Server Explorer** extension: an icon for the new **Web Part Gallery** node and another icon for each child Web Part node under the **Web Part Gallery** node. Later in this walkthrough, you'll write code that associates these icons with the nodes.  
+## <a name="creating-icons-for-the-new-nodes"></a>Erstellen von Symbolen für die neuen Knoten  
+ Erstellen Sie zwei Symbole für die **Server-Explorer** Erweiterung: ein Symbol für die neue **Webpartkatalog** Knoten und ein anderes Symbol für jeden untergeordneten Webpart Knoten unter dem **Webpartkatalog** Knoten. Weiter unten in dieser exemplarischen Vorgehensweise fügen Sie Code schreiben, die diese Symbole Knoten zuordnet.  
   
-#### <a name="to-create-icons-for-the-nodes"></a>To create icons for the nodes  
+#### <a name="to-create-icons-for-the-nodes"></a>Zum Erstellen von Symbolen für die Knoten  
   
-1.  In the **Project Designer** for the WebPartNodeExtension project, choose the **Resources** tab.  
+1.  In der **Projekt-Designer** für das Projekt WebPartNodeExtension wählen Sie die **Ressourcen** Registerkarte.  
   
-2.  Choose the link **This project does not contain a default resources file. Click here to create one.**  
+2.  Wählen Sie den Link **dieses Projekt enthält keine Standarddatei für die Ressourcen. Klicken Sie hier, um eine zu erstellen.**  
   
-     Visual Studio creates a resource file and opens it in the designer.  
+     Visual Studio erstellt eine Ressourcendatei und im Designer geöffnet.  
   
-3.  At the top of the designer, choose the arrow on the **Add Resource** menu command, and then choose **Add New Icon**.  
+3.  Am oberen Rand des Designers, wählen Sie auf den Pfeil auf der **Ressource hinzufügen** Menü Befehl, und wählen Sie dann **Symbol "Neu" hinzufügen**.  
   
-4.  Enter **WebPartsNode** for the new icon name, and then choose the **Add** button.  
+4.  Geben Sie **WebPartsNode als Namen** für das Symbol "Neu" nennen, und wählen Sie dann die **hinzufügen** Schaltfläche.  
   
-     The new icon opens in the **Image Editor**.  
+     Das Symbol "neue" wird geöffnet, der **Bildbearbeitung**.  
   
-5.  Edit the 16x16 version of the icon so that it has a design that you can easily recognize.  
+5.  Bearbeiten Sie die 16 x 16-Version des Symbols, sodass sie einen Entwurf aufweist, den Sie leicht erkennen können.  
   
-6.  Open the shortcut menu for the 32x32 version of the icon, and then choose **Delete Image Type**.  
+6.  Öffnen Sie das Kontextmenü für die 32 x 32-Version des Symbols, und wählen Sie dann **Bildtyp löschen**.  
   
-7.  Repeat steps 3 through 7 to add a second icon to the project resources, and name this icon **WebPart**.  
+7.  Wiederholen Sie die Schritte 3 bis 7 der Projektressourcen ein Symbol hinzu, und nennen Sie dieses Symbol **WebPart**.  
   
-8.  In **Solution Explorer**, in the **Resources** folder for the **WebPartNodeExtension** project, choose **WebPartsNode.ico**.  
+8.  In **Projektmappen-Explorer**in der **Ressourcen** Ordner für die **WebPartNodeExtension** Projekts **Datei WebPartsNode.ico**.  
   
-9. In the **Properties** window, open the **Build Action** list, and then choose **Embedded Resource**.  
+9. In der **Eigenschaften** geöffnete Fenster die **Buildvorgang** aus, und wählen Sie dann **eingebettete Ressource**.  
   
-10. Repeat the last two steps for **WebPart.ico**.  
+10. Wiederholen Sie die letzten beiden Schritte für **WebPart.ico**.  
   
-## <a name="adding-the-web-part-gallery-node-to-server-explorer"></a>Adding the Web Part Gallery Node to Server Explorer  
- Create a class that adds the new **Web Part Gallery** node to each SharePoint site node. To add the new node, the class implements the <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension> interface. Implement this interface whenever you want to extend the behavior of an existing node in **Server Explorer**, such as adding a new child node to a node.  
+## <a name="adding-the-web-part-gallery-node-to-server-explorer"></a>Server-Explorer hinzufügen den Knoten Webpartkatalog  
+ Erstellen Sie eine Klasse, die die neue fügt **Webpartkatalog** Knoten für jeden Knoten des SharePoint-Website. Zum Hinzufügen des neuen Knotens, die Klasse implementiert die <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension> Schnittstelle. Diese Schnittstelle implementieren, wenn Sie das Verhalten in einen vorhandenen Knoten erweitern möchten **Server-Explorer**, z. B. Hinzufügen eines Knotens einen neuen untergeordneten Knoten.  
   
-#### <a name="to-add-the-web-part-gallery-node-to-server-explorer"></a>To add the Web Part Gallery node to Server Explorer  
+#### <a name="to-add-the-web-part-gallery-node-to-server-explorer"></a>Server-Explorer den Knoten Webpartkatalog hinzu  
   
-1.  Paste the following code into the **SiteNodeExtension** code file for the **WebPartNodeExtension** project.  
+1.  Fügen Sie den folgenden Code in die **SiteNodeExtension** Codedatei für die **WebPartNodeExtension** Projekt.  
   
     > [!NOTE]  
-    >  After you add this code, the project will have some compile errors. These errors will go away when you add code in later steps.  
+    >  Nach dem Hinzufügen dieses Codes weist das Projekt einige Kompilierungsfehler auf. Diese Fehler werden durch Code behoben, den Sie in späteren Schritten hinzufügen.  
   
-     [!code-csharp[SPExtensibility.SPExplorer.WebPartNode#1](../sharepoint/codesnippet/CSharp/webpartnode/webpartnodeextension/sitenodeextension.cs#1)]  [!code-vb[SPExtensibility.SPExplorer.WebPartNode#1](../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnode.webpartnode/webpartnodeextension/sitenodeextension.vb#1)]  
+     [!code-csharp[SPExtensibility.SPExplorer.WebPartNode#1](../sharepoint/codesnippet/CSharp/webpartnode/webpartnodeextension/sitenodeextension.cs#1)]
+     [!code-vb[SPExtensibility.SPExplorer.WebPartNode#1](../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnode.webpartnode/webpartnodeextension/sitenodeextension.vb#1)]  
   
-## <a name="defining-a-node-type-that-represents-a-web-part"></a>Defining a Node Type that Represents a Web Part  
- Create a class that defines a new type of node that represents a Web Part. Visual Studio uses this new node type to display child nodes under the **Web Part Gallery** node. Each of these child nodes represents a single Web Part on the SharePoint site.  
+## <a name="defining-a-node-type-that-represents-a-web-part"></a>Definieren einen Knotentyp, das ein Webpart darstellt.  
+ Erstellen Sie eine Klasse, die einen neuen Typ des Knotens definiert, das ein Webpart darstellt. Visual Studio verwendet diese neuen Knotentyps anzuzeigenden untergeordneten Knoten unter dem **Webpartkatalog** Knoten. Jedes dieser untergeordneten Knoten stellt ein einzelnes Webpart auf der SharePoint-Website.  
   
- To define the new node type, the class implements the <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeProvider> interface. Implement this interface whenever you want to define a new type of node in **Server Explorer**.  
+ Definieren Sie den neuen Knotentyp, implementiert die Klasse der <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeProvider> Schnittstelle. Diese Schnittstelle implementieren, wenn Sie einen neuen Typ des Knotens im definieren möchten **Server-Explorer**.  
   
-#### <a name="to-define-the-web-part-node-type"></a>To define the Web Part node type  
+#### <a name="to-define-the-web-part-node-type"></a>Zum Definieren des Webpart-Knotentyp  
   
-1.  Paste the following code into the **WebPartNodeTypeProvider** code file for the **WebPartNodeExtension** project.  
+1.  Fügen Sie den folgenden Code in die **WebPartNodeTypeProvider** Codedatei für die **WebPartNodeExtension** Projekt.  
   
-     [!code-csharp[SPExtensibility.SPExplorer.WebPartNode#2](../sharepoint/codesnippet/CSharp/webpartnode/webpartnodeextension/webpartnodetypeprovider.cs#2)]  [!code-vb[SPExtensibility.SPExplorer.WebPartNode#2](../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnode.webpartnode/webpartnodeextension/webpartnodetypeprovider.vb#2)]  
+     [!code-csharp[SPExtensibility.SPExplorer.WebPartNode#2](../sharepoint/codesnippet/CSharp/webpartnode/webpartnodeextension/webpartnodetypeprovider.cs#2)]
+     [!code-vb[SPExtensibility.SPExplorer.WebPartNode#2](../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnode.webpartnode/webpartnodeextension/webpartnodetypeprovider.vb#2)]  
   
 ## <a name="checkpoint"></a>Checkpoint  
- At this point in the walkthrough, all the code for the **Web Part Gallery** node is now in the project. Build the **WebPartNodeExtension** project to make sure that it compiles without errors.  
+ An diesem Punkt in der exemplarischen Vorgehensweise wurde der Code für die **Webpartkatalog** Knoten befindet sich jetzt im Projekt. Erstellen der **WebPartNodeExtension** Projekt, um sicherzustellen, dass sie fehlerfrei kompiliert wird.  
   
-#### <a name="to-build-the-project"></a>To build the project  
+#### <a name="to-build-the-project"></a>So erstellen Sie das Projekt  
   
-1.  In **Solution Explorer**, open the shortcut menu for the **WebPartNodeExtension** project, and then choose **Build**.  
+1.  In **Projektmappen-Explorer**, öffnen Sie das Kontextmenü für die **WebPartNodeExtension** Projekt, und wählen Sie dann **erstellen**.  
   
-## <a name="creating-a-vsix-package-to-deploy-the-extension"></a>Creating a VSIX Package to Deploy the Extension  
- To deploy the extension, use the VSIX project in your solution to create a VSIX package. First, configure the VSIX package by modifying the source.extension.vsixmanifest file that's included in the project. Then create the VSIX package by building the solution.  
+## <a name="creating-a-vsix-package-to-deploy-the-extension"></a>Erstellen ein VSIX-Paket zum Bereitstellen der Erweiterung  
+ Zum Bereitstellen der Erweiterung erstellen Sie anhand des VSIX-Projekts in der Lösung ein VSIX-Paket. Konfigurieren Sie zuerst das VSIX-Paket, durch Ändern der Datei "Source.Extension.vsixmanifest", die im Projekt enthalten ist. Dann erstellen Sie das VSIX-Paket, indem Sie beim Erstellen der Projektmappe.  
   
-#### <a name="to-configure-the-vsix-package"></a>To configure the VSIX package  
+#### <a name="to-configure-the-vsix-package"></a>So konfigurieren Sie das VSIX-Paket  
   
-1.  In **Solution Explorer**, in the **WebPartNode** project, open **source.extension.vsixmanifest** file in the manifest editor.  
+1.  In **Projektmappen-Explorer**in der **WebPartNode** geöffneten Projekts **"Source.Extension.vsixmanifest"** Datei im manifest-Editor.  
   
-     The source.extension.vsixmanifest file is the basis for the extension.vsixmanifest file that all VSIX packages require. For more information about this file, see [VSIX Extension Schema 1.0 Reference](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
+     Die Datei "source.extension.vsixmanifest" bildet die Grundlage für die Datei "extension.vsixmanifest", die für alle VSIX-Pakete erforderlich ist. Weitere Informationen zu dieser Datei finden Sie unter [VSIX-Erweiterung Schemareferenz 1.0](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
   
-2.  In the **Product Name** box, enter **Web Part Gallery Node for Server Explorer**.  
+2.  In der **Produktname** geben **Web Part Gallery Node für Server-Explorer**.  
   
-3.  In the **Author** box, enter **Contoso**.  
+3.  In der **Autor** geben **Contoso**.  
   
-4.  In the **Description** box, enter **Adds a custom Web Part Gallery node to the SharePoint Connections node in Server Explorer**.  
+4.  In der **Beschreibung** geben **des SharePoint-Verbindungsknotens im Server-Explorer einen benutzerdefinierten Webpartkatalog Knoten hinzugefügt**.  
   
-5.  On the **Assets** tab of the editor, choose the **New** button.  
+5.  Auf der **Bestand** Registerkarte im Editor wählen Sie die **neu** Schaltfläche.  
   
-6.  In the **Add New Asset** dialog box, in the **Type** list, choose **Microsoft.VisualStudio.MefComponent**.  
+6.  In der **neue Anlage hinzufügen** Dialogfeld die **Typ** wählen **Microsoft.VisualStudio.MefComponent**.  
   
     > [!NOTE]  
-    >  This value corresponds to the `MefComponent` element in the extension.vsixmanifest file. This element specifies the name of an extension assembly in the VSIX package. For more information, see [NIB: MEFComponent Element (VSX Schema)](http://msdn.microsoft.com/en-us/8a813141-8b73-44c9-b80b-ca85bbac9551).  
+    >  Dieser Wert entspricht dem `MefComponent`-Element in der Datei "extension.vsixmanifest". Von diesem Element wird der Name einer Erweiterungsassembly im VSIX-Paket angegeben. Weitere Informationen finden Sie unter [MEFComponent-Element (VSX-Schema)](http://msdn.microsoft.com/en-us/8a813141-8b73-44c9-b80b-ca85bbac9551).  
   
-7.  In the **Source** list, choose **A project in current solution**.  
+7.  In der **Quelle** wählen **ein Projekt in der aktuellen Projektmappe**.  
   
-8.  In the **Project** list, choose **WebPartNodeExtension**, and then choose the **OK** button.  
+8.  In der **Projekt** wählen **WebPartNodeExtension**, und wählen Sie dann die **OK** Schaltfläche.  
   
-9. On the menu bar, choose **Build**, **Build Solution**, and then make sure that the solution compiles without errors.  
+9. Wählen Sie in der Menüleiste **erstellen**, **Projektmappe**, und stellen Sie sicher, dass die Lösung ohne Fehler kompiliert wird.  
   
-10. Make sure that the build output folder for the WebPartNode project now contains the WebPartNode.vsix file.  
+10. Stellen Sie sicher, dass der Buildausgabeordner für das Projekt WebPartNode jetzt die Datei WebPartNode.VSIX enthält.  
   
-     By default, the build output folder is the ..\bin\Debug folder under the folder that contains your project file.  
+     Standardmäßig handelt es sich beim Buildausgabeordner um den Ordner "...\bin\Debug" in dem Ordner mit der Projektdatei.  
   
-## <a name="testing-the-extension"></a>Testing the Extension  
- You are now ready to test the new **Web Part Gallery** node in **Server Explorer**. First, start to debug the extension project in an experimental instance of Visual Studio. Then use the new **Web Parts** node in the experimental instance of Visual Studio.  
+## <a name="testing-the-extension"></a>Testen der Erweiterung  
+ Sie können nun den neuen test **Webpartkatalog** Knoten **Server-Explorer**. Starten Sie das Erweiterungsprojekt in einer experimentellen Instanz von Visual Studio debuggen. Verwenden Sie die neue **Webparts** Knoten in der experimentellen Instanz von Visual Studio.  
   
-#### <a name="to-start-debugging-the-extension"></a>To start debugging the extension  
+#### <a name="to-start-debugging-the-extension"></a>So debuggen Sie die Erweiterung  
   
-1.  Restart Visual Studio with administrative credentials, and then open the **WebPartNode** solution.  
+1.  Starten Sie Visual Studio mit Administratorrechten, und öffnen Sie die **WebPartNode** Lösung.  
   
-2.  In the WebPartNodeExtension project, open the **SiteNodeExtension** code file, and then add a breakpoint to the first lines of code in the `NodeChildrenRequested` and `CreateWebPartNodes` methods.  
+2.  Öffnen Sie im Projekt WebPartNodeExtension der **SiteNodeExtension** Codedatei, und fügen Sie einen Haltepunkt auf die ersten Zeilen des Codes in der `NodeChildrenRequested` und `CreateWebPartNodes` Methoden.  
   
-3.  Choose the F5 key to start debugging.  
+3.  Drücken Sie die F5-TASTE, um das Debuggen zu starten.  
   
-     Visual Studio installs the extension to %UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0Exp\Extensions\Contoso\Web Part Gallery Node Extension for Server Explorer\1.0 and starts an experimental instance of Visual Studio. You'll test the project item in this instance of Visual Studio.  
+     Visual Studio die Erweiterung %UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0Exp\Extensions\Contoso\Web Teil Knoten Katalogerweiterung für Server Explorer\1.0 und eine experimentelle Instanz von Visual Studio wird gestartet. Sie testen das Projektelement in dieser Instanz von Visual Studio.  
   
-#### <a name="to-test-the-extension"></a>To test the extension  
+#### <a name="to-test-the-extension"></a>So testen Sie die Erweiterung  
   
-1.  In the experimental instance of Visual Studio, on the menu bar, choose **View**, **Server Explorer**.  
+1.  Wählen Sie in der experimentellen Instanz von Visual Studio in der Menüleiste **Ansicht**, **Server-Explorer**.  
   
-2.  Verify that the SharePoint site that you want to use for testing appears under the **SharePoint Connections** node in **Server Explorer**. If it's not listed, follow these steps:  
+2.  Stellen Sie sicher, dass die SharePoint-Website, die Sie zum Testen verwenden möchten unter angezeigt wird der **SharePoint-Verbindungen** Knoten **Server-Explorer**. Wenn es nicht aufgeführt ist, gehen Sie folgendermaßen vor:  
   
-    1.  Open the shortcut menu for **SharePoint Connections**, and then choose **Add Connection**.  
+    1.  Öffnen Sie das Kontextmenü für **SharePoint-Verbindungen**, und wählen Sie dann **Verbindung hinzufügen**.  
   
-    2.  In the **Add SharePoint Connection** dialog box, enter the URL for the SharePoint site to which you want to connect, and then choose the **OK** button.  
+    2.  In der **SharePoint-Verbindung hinzufügen** Dialogfeld Geben Sie die URL für die SharePoint-Website, die Sie möchten eine Verbindung herstellen, und wählen Sie dann die **OK** Schaltfläche.  
   
-         To specify the SharePoint site on your development computer, type **http://localhost**.  
+         Geben Sie die SharePoint-Website auf dem Entwicklungscomputer an, indem **http://localhost**.  
   
-3.  Expand the site connection node (which displays the URL of your site), and then expand a child site node (for example, **Team Site**).  
+3.  Erweitern Sie den Website-Verbindungsknoten (in der die URL Ihrer Website angezeigt werden), und dann einen untergeordneten Standort Knoten (z. B. **Teamwebsite**).  
   
-4.  Verify that the code in the other instance of Visual Studio stops on the breakpoint that you set earlier in the `NodeChildrenRequested` method, and then choose the F5 key to continue to debug the project.  
+4.  Stellen Sie sicher, dass der Code in der anderen Instanz von Visual Studio an dem Haltepunkt unterbrochen wird, die Sie zuvor im Festlegen der `NodeChildrenRequested` -Methode, und wählen Sie dann die F5-Taste, um das Debuggen des Projekts fortzusetzen.  
   
-5.  In the experimental instance of Visual Studio, expand the **Web Part Gallery** node, which appears under the top-level site node.  
+5.  Erweitern Sie in der experimentellen Instanz von Visual Studio die **Webpartkatalog** Knoten, die unter dem Knoten der Standort der obersten Ebene angezeigt wird.  
   
-6.  Verify that the code in the other instance of Visual Studio stops on the breakpoint that you set earlier in the `CreateWebPartNodes` method, and then choose the F5 key to continue to debug the project.  
+6.  Stellen Sie sicher, dass der Code in der anderen Instanz von Visual Studio an dem Haltepunkt unterbrochen wird, die Sie zuvor im Festlegen der `CreateWebPartNodes` -Methode, und wählen Sie dann die F5-Taste, um das Debuggen des Projekts fortzusetzen.  
   
-7.  In the experimental instance of Visual Studio, verify that all the Web Parts on the connected site appear under the **Web Part Gallery** node in **Server Explorer**.  
+7.  In der experimentellen Instanz von Visual Studio, überprüfen Sie, ob alle Webparts auf die verbundene Website unter der **Webpartkatalog** Knoten **Server-Explorer**.  
   
-8.  Open the shortcut menu for a Web Part, and then choose **Properties**.  
+8.  Öffnen Sie das Kontextmenü für ein Webpart, und wählen Sie dann **Eigenschaften**.  
   
-9. In the **Properties** window, verify that details about the Web Part appear.  
+9. In der **Eigenschaften** Fenster, stellen Sie sicher, dass die Details zum Webpart angezeigt.  
   
-10. In **Server Explorer**, open the shortcut menu for the same Web Part, and then choose **Display Message**.  
+10. In **Server-Explorer**, öffnen Sie das Kontextmenü für das gleiche Webpart, und wählen Sie dann **angezeigte Meldung**.  
   
-     In the message box that appears, choose the **OK** button.  
+     Klicken Sie im Meldungsfeld, das angezeigt wird, wählen Sie die **OK** Schaltfläche.  
   
-## <a name="uninstalling-the-extension-from-visual-studio"></a>Uninstalling the Extension from Visual Studio  
- After you finish testing the extension, uninstall it from Visual Studio.  
+## <a name="uninstalling-the-extension-from-visual-studio"></a>Deinstallieren die Erweiterung von Visual Studio  
+ Nachdem Sie das Testen der Erweiterung abgeschlossen haben, deinstallieren Sie es in Visual Studio.  
   
-#### <a name="to-uninstall-the-extension"></a>To uninstall the extension  
+#### <a name="to-uninstall-the-extension"></a>So deinstallieren Sie die Erweiterung  
   
-1.  In the experimental instance of Visual Studio, on the menu bar, choose **Tools**, **Extensions and Updates**.  
+1.  Wählen Sie in der experimentellen Instanz von Visual Studio in der Menüleiste **Tools**, **Erweiterungen und Updates**.  
   
-     The **Extensions and Updates** dialog box opens.  
+     Das Dialogfeld **Erweiterungen und Updates** wird geöffnet.  
   
-2.  In the list of extensions, choose **Web Part Gallery Node for Server Explorer**, and then choose the **Uninstall** button.  
+2.  Wählen Sie in der Liste der Erweiterungen, **Web Part Gallery Node für Server-Explorer**, und wählen Sie dann die **Deinstallieren** Schaltfläche.  
   
-3.  In the dialog box that appears, choose the **Yes** button.  
+3.  Wählen Sie im angezeigten Dialogfeld die **Ja** Schaltfläche.  
   
-4.  Choose the **Restart Now** button to complete the uninstallation.  
+4.  Wählen Sie die **jetzt neu starten** Schaltfläche, um die Deinstallation abzuschließen.  
   
-     The project item is also uninstalled.  
+     Das Projektelement wird ebenfalls deinstalliert.  
   
-5.  Close both instances of Visual Studio (the experimental instance and the instance of Visual Studio in which the WebPartNode solution is open).  
+5.  Schließen Sie beide Instanzen von Visual Studio (die experimentelle Instanz und die Instanz von Visual Studio in der die Projektmappe WebPartNode geöffnet ist).  
   
-## <a name="see-also"></a>See Also  
- [Calling into the SharePoint Object Models](../sharepoint/calling-into-the-sharepoint-object-models.md)   
- [Extending the SharePoint Connections Node in Server Explorer](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)   
- [Walkthrough: Extending Server Explorer to Display Web Parts](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)   
- [Image Editor for Icons](/cpp/windows/image-editor-for-icons)   
- [Creating an Icon or Other Image &#40;Image Editor for Icons&#41;](/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons)  
+## <a name="see-also"></a>Siehe auch  
+ [Aufrufe in die SharePoint-Objektmodelle](../sharepoint/calling-into-the-sharepoint-object-models.md)   
+ [Erweitern des SharePoint-Verbindungsknotens im Server-Explorer](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)   
+ [Exemplarische Vorgehensweise: Erweitern von Server-Explorer zum Anzeigen von Webparts](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)   
+ [Bildbearbeitung für Symbole](/cpp/windows/image-editor-for-icons)   
+ [Erstellen ein Symbol oder anderen Bilds &#40; Bildbearbeitung für Symbole &#41;](/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons)  
   
   

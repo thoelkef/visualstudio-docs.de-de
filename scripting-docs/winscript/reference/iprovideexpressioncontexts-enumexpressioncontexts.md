@@ -1,27 +1,30 @@
 ---
-title: "IProvideExpressionContexts::EnumExpressionContexts | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IProvideExpressionContexts::EnumExpressionContexts | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IProvideExpressionContexts.EnumExpressionContexts
 apilocation: jscript.dll
-helpviewer_keywords: 
-  - "IProvideExpressionContexts::EnumExpressionContexts"
+helpviewer_keywords: IProvideExpressionContexts::EnumExpressionContexts
 ms.assetid: ec5f0065-00df-41e6-b480-4c04ba464872
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: c47619fface892e7e0d80141d7d4be53398a356e
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# IProvideExpressionContexts::EnumExpressionContexts
-Gibt einen Enumerator von den Ausdruckskontexten zurück, die von dieser Komponente bezeichnet werden.  
+# <a name="iprovideexpressioncontextsenumexpressioncontexts"></a>IProvideExpressionContexts::EnumExpressionContexts
+Gibt einen Enumerator von ausdruckskontexten, die von dieser Komponente bezeichnet.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 HRESULT EnumExpressionContexts(  
@@ -29,22 +32,22 @@ HRESULT EnumExpressionContexts(
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `ppedec`  
- \[out\] Ein Enumerator von den Ausdruckskontexten wird von dieser Komponente.  
+ [out] Ein Enumerator von ausdruckskontexten, die von dieser Komponente bezeichnet.  
   
-## Rückgabewert  
- Die Methode gibt ein `HRESULT` zurück.  Zu den möglichen Werten zählen, aber nicht zu, die in der folgenden Tabelle beschränkt.  
+## <a name="return-value"></a>Rückgabewert  
+ Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
   
-|Wert|Description|  
-|----------|-----------------|  
+|Wert|Beschreibung|  
+|-----------|-----------------|  
 |`S_OK`|Die Methode war erfolgreich.|  
   
-## Hinweise  
- Der Debug\- ProzessManager verwendet diese Methode, um alle globalen Ausdruckskontexte zu suchen, die mit einem angegebenen Thread zugeordnet werden.  
+## <a name="remarks"></a>Hinweise  
+ Der Prozess-Manager verwendet diese Methode, um alle globalen ausdruckskontexten, die ein bestimmter Thread zugeordnet zu suchen.  
   
 > [!NOTE]
->  Diese Methode wird aus dem Thread relevante bezeichnet.  Sie ist von der Implementierung, um des aktuellen Threads ermitteln und eines entsprechenden Enumerators zurückzugeben.  
+>  Diese Methode wird vom Thread von Interesse aus aufgerufen. Es wird vom Implementierer identifizieren den aktuellen Thread und einen entsprechenden Enumerator zurück.  
   
-## Siehe auch  
- [IProvideExpressionContexts\-Schnittstelle](../../winscript/reference/iprovideexpressioncontexts-interface.md)
+## <a name="see-also"></a>Siehe auch  
+ [IProvideExpressionContexts-Schnittstelle](../../winscript/reference/iprovideexpressioncontexts-interface.md)

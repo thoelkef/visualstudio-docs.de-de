@@ -1,70 +1,71 @@
 ---
-title: "Arbeiten mit XML-Daten | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: Arbeiten mit XML-Daten | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 465cd132-2e36-435d-920b-50b767c2217c
-caps.latest.revision: 3
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 3
+caps.latest.revision: "3"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: fa74884edc5f0dea16d95fc5f177323da1fab6ab
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/02/2017
 ---
-# Arbeiten mit XML-Daten
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-XML und XML\-Technologien spielen beim Bearbeiten von Daten in [!INCLUDE[msCoName](../xml-tools/includes/msconame_md.md)] Visual Studio eine große Rolle.Visual Studio enthält Tools und Funktionen, die das Arbeiten mit XML, XSLT und XML\-Schemas vereinfachen.  
+# <a name="working-with-xml-data"></a>Arbeiten mit XML-Daten
+XML und XML-Technologien spielen beim Verarbeiten von Daten in [!INCLUDE[msCoName](../xml-tools/includes/msconame_md.md)] Visual Studio eine große Rolle. Visual Studio enthält Tools und Funktionen, die das Arbeiten mit XML, XSLT und XML-Schemas vereinfachen.  
   
-## XML\-Editor  
- Der XML\-Editor dient zum Bearbeiten von XML\-Dokumenten.Er bietet eine vollständige Syntaxüberprüfung für XML 1.0, die Schemavalidierung beim Eingeben, Farbcodierung und IntelliSense.Wenn ein Schema oder eine DTD \(Dokumenttypdefinition\) bereitgestellt wird, werden von IntelliSense damit die zulässigen Elemente und Attribute aufgelistet.  
+## <a name="xml-editor"></a>XML-Editor  
+ Der XML-Editor dient zum Bearbeiten von XML-Dokumenten. Er bietet eine vollständige Syntaxüberprüfung für XML 1.0, die Schemavalidierung beim Eingeben, Farbcodierung und IntelliSense. Wenn ein Schema oder eine DTD (Dokumenttypdefinition) bereitgestellt wird, werden von IntelliSense damit die zulässigen Elemente und Attribute aufgelistet.  
   
  Folgende zusätzlichen Features sind verfügbar:  
   
--   Unterstützung von XML\-Ausschnitten, einschließlich schemagenerierter Ausschnitte.  
+-   Unterstützung von XML-Ausschnitten, einschließlich schemagenerierter Ausschnitte.  
   
 -   Gliedern von Dokumenten, sodass Elemente erweitert und reduziert werden können.  
   
--   Ausführen von XSLT\-Transformationen und Anzeigen der Ergebnisse als Text, XML oder HTML.  
+-   Ausführen von XSL-Transformationen und Anzeigen der Ergebnisse als Text, XML oder HTML.  
   
--   Generieren von XSD\-Schemas \(XML\-Schemadefinitionssprache\) aus dem XML\-Instanzdokument.  
+-   Generieren von XSD-Schemas (XML-Schemadefinitionssprache) aus dem XML-Instanzdokument.  
   
--   Unterstützung für das Bearbeiten von XSLT\-Stylesheets, einschließlich IntelliSense\-Unterstützung.  
+-   Unterstützung für das Bearbeiten von XSLT-Stylesheets, einschließlich IntelliSense-Unterstützung.  
   
--   XML\-Schema\-Explorer  
+-   XML-Schema-Explorer  
   
-## XML\-Schema\-Designer  
- Der XML\-Schema\-Designer ist in Microsoft Visual Studio 2010 und den XML\-Editor integriert, um die Arbeit mit XSD\-Schemas \(XML\-Schemadefinitionssprache\) zu ermöglichen.  
+## <a name="xml-schema-designer"></a>XML-Schema-Designer  
+ Der XML-Schema-Designer ist in Visual Studio und der XML-Editor, damit Sie zur Bearbeitung des Schemas für XML Schema Definition Language (XSD) integriert.  
   
-## XSLT\-Debugging  
- Visual Studio unterstützt das Debuggen von XSLT\-Stylesheets.Mithilfe des Debuggers können Sie Haltepunkte in einem XSLT\-Stylesheet festlegen, vom Code aus einen Einzelschritt in ein XSLT\-Stylesheet ausführen usw.  
+## <a name="xslt-debugging"></a>XSLT-Debuggen  
+ Visual Studio unterstützt das Debuggen von XSLT-Stylesheets. Mithilfe des Debuggers können Sie Haltepunkte in einem XSLT-Stylesheet festlegen, den Code in einem XSLT-Stylesheet schrittweise ausführen usw.  
   
 > [!NOTE]
->  XSLT\-Debugging ist in der Professional Edition und in der Team Edition verfügbar.  
+>  XSLT-Debuggen ist in der Professional Edition und in der Team Edition verfügbar.  
   
-## Inhalt dieses Abschnitts  
- [XML\-Editor](../xml-tools/xml-editor.md)  
- In diesem Abschnitt erhalten Sie eine Einführung in den XML\-Editor.  
+## <a name="in-this-section"></a>In diesem Abschnitt  
+ [XML-Editor](../xml-tools/xml-editor.md)  
+ In diesem Abschnitt erhalten Sie eine Einführung zum XML-Editor.  
   
- [XML\-Schema\-Designer](../xml-tools/xml-schema-designer.md)  
- In diesem Abschnitt werden der XML\-Schema\-Designer und das Arbeiten mit XSD\-Schemas \(XML\-Schemadefinitionssprache\) erläutert.  
+ [XML-Schema-Designer](../xml-tools/xml-schema-designer.md)  
+ In diesem Abschnitt werden der XML-Schema-Designer und das Arbeiten mit XSD-Schemas (XML-Schemadefinitionssprache) erläutert.  
   
-## Verwandte Abschnitte  
+## <a name="related-sections"></a>Verwandte Abschnitte  
  [Debuggen von XSLT](../xml-tools/debugging-xslt.md)  
- In diesem Abschnitt wird das Debuggen von Stylesheets mithilfe des Visual Studio\-Debuggers erläutert.  
+ In diesem Abschnitt wird erläutert, wie mithilfe des Visual Studio-Debuggers Stylesheets debuggt werden.  
   
- [Referenzen zu XML\-Standards](http://msdn.microsoft.com/de-de/79c78508-c9d0-423a-a00f-672e855de401)  
- In diesem Abschnitt werden Informationen zu XML\-Technologien, einschließlich XML, DTD \(Document Type Definition\), XSD \(XML Schema Definition Language\) und XSLT bereitgestellt.  
+ [Verweise zu XML-Standards](http://msdn.microsoft.com/en-us/79c78508-c9d0-423a-a00f-672e855de401)  
+ Bietet Informationen über XML-Technologien, darunter XML, Document Type Definition (DTD), XML Schema Definition Language (XSD) und XSLT.  
   
- [Erstellen und Bearbeiten von typisierten Datasets](../data-tools/creating-and-editing-typed-datasets.md)  
+ [Erstellen und Konfigurieren von Datasets in Visual Studio](../data-tools/create-and-configure-datasets-in-visual-studio.md)  
  In diesem Abschnitt werden zur Entwurfszeit verwendete Tools zum Erstellen von DataSets erläutert.  
   
- [XML Web Services in Managed Code](http://msdn.microsoft.com/de-de/c9a7dc25-3e68-4723-bfb7-de4320830196)  
- In diesem Abschnitt wird erläutert, wie XML\-Webdienste erstellt und bereitgestellt werden und wie auf die XML\-Webdienste zugegriffen wird.  
+ [XML-Webdienste in verwaltetem Code](http://msdn.microsoft.com/en-us/c9a7dc25-3e68-4723-bfb7-de4320830196)  
+ In diesem Abschnitt wird erläutert, wie XML-Webdienste erstellt und bereitgestellt werden und wie auf die XML-Webdienste zugegriffen wird.  
   
-## Siehe auch  
- [XML\-Tools in Visual Studio](../xml-tools/xml-tools-in-visual-studio.md)
+## <a name="see-also"></a>Siehe auch  
+ [XML-Tools in Visual Studio](../xml-tools/xml-tools-in-visual-studio.md)

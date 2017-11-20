@@ -1,36 +1,38 @@
 ---
-title: "Threads | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Debuggen [Debugging-SDK] threads"
-  - "Threading [SDK-Debuggen]"
+title: Threads | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- debugging [Debugging SDK], threads
+- threading [Debugging SDK]
 ms.assetid: 2243d24a-c3d2-41d1-abbb-6db21a2db9ee
-caps.latest.revision: 13
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 150e27c4b8df06784848829bfe713773cf9d48a0
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Threads
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Im Hinblick auf die Architektur der Debugger **thread**:  
+# <a name="threads"></a>Threads
+Im Hinblick auf die Architektur des Debuggers einen **Thread**:  
   
--   Ist die grundlegende Einheit der Berechnung mitgeführt wird.  Ein Thread wird sequenziell ihre Anweisungen im Kontext einer einzelnen Aufruflisten aus und wird von einem Code Elementkontext.  
+-   Ist die grundlegende Einheit der Berechnung an. Ein Thread ausgeführt wird sequenziell auf die Anweisungen im Kontext einer einzelnen Aufrufliste, wechseln zur nächsten aus einem Kontext aus.  
   
--   Kann sich selbst und das Programm ermitteln, die es ausgeführt wird und kann benannt werden, angehalten und fortgesetzt werden.  Ein Thread kann die zugehörigen Stapelrahmen und unter verschiedenen Bedingungen ebenfalls aufgelistet werden, kann auf einen anderen Stapelrahmen verschoben werden.  Wenn der Kontext eines Stapelrahmens, kann ein Thread die zugeordneten logischen Thread zurückgegeben, sofern vorhanden.  Ein Thread verfügt über Eigenschaften, z. B. ein Unterbrechungszähler, der im Fenster Threads der IDE angezeigt werden kann.  
+-   Erkennen selbst und das Programm, das er wird ausgeführt, und kann werden mit dem Namen, angehalten und fortgesetzt. Ein Thread kann auch die zugehörigen Stapelrahmen aufzählen und unter bestimmten Umständen kann auf einen anderen Stapelrahmen verschoben werden. Im Rahmen einer Stapelrahmen entspricht kann, ein Thread seine zugeordneten logischen Thread ggf. zurück. Ein Thread verfügt über Eigenschaften, z. B. dem Unterbrechungszähler, die im Fenster Threads von der IDE angezeigt werden können.  
   
--   Wird von einer Schnittstelle dargestellt [IDebugThread2](../../extensibility/debugger/reference/idebugthread2.md) erstellt, in der Regel durch eine Debug\- Modul \(DE\) oder virtuellen Computer als Folge der Ausführung eines Programms.  
+-   Dargestellt durch eine [IDebugThread2](../../extensibility/debugger/reference/idebugthread2.md) Schnittstelle, die in der Regel durch einen Debugging-Modul (DE) oder die virtuelle Maschine als Folge Ausführen eines Programms erstellt.  
   
-## Siehe auch  
- [Programs](../../extensibility/debugger/programs.md)   
+## <a name="see-also"></a>Siehe auch  
+ [Programme](../../extensibility/debugger/programs.md)   
  [Stapelrahmen](../../extensibility/debugger/stack-frames.md)   
- [Debug\-Modul](../../extensibility/debugger/debug-engine.md)   
- [Debugger\-Konzepte](../../extensibility/debugger/debugger-concepts.md)   
- [Session\-Debug\-Manager](../../extensibility/debugger/session-debug-manager.md)
+ [Debuggen des Datenbankmoduls](../../extensibility/debugger/debug-engine.md)   
+ [Debugger-Konzepte](../../extensibility/debugger/debugger-concepts.md)   
+ [Sitzungsbasierter Debug-Manager](../../extensibility/debugger/session-debug-manager.md)

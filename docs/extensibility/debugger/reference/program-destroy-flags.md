@@ -1,57 +1,58 @@
 ---
-title: "PROGRAM_DESTROY_FLAGS | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "PROGRAM_DESTROY_FLAGS-enumeration"
+title: PROGRAM_DESTROY_FLAGS | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: PROGRAM_DESTROY_FLAGS enumeration
 ms.assetid: be00d4a3-d5b8-4159-b632-64577f534883
-caps.latest.revision: 7
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 011808759562310db47af2d9809c2ea36fe624c9
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# PROGRAM_DESTROY_FLAGS
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Listet die gültigen Werte des Programms zerstört Flags aufgelistet.  
+# <a name="programdestroyflags"></a>PROGRAM_DESTROY_FLAGS
+Listet die gültigen Werte des Programms zerstört Flags.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 enum enum_PPROGRAM_DESTROY_FLAGS  
 {  
-   PROGRAM_DESTROY_CONTINUE_DEBUGGING = 0x1  
+   PROGRAM_DESTROY_CONTINUE_DEBUGGING = 0x1  
 };  
 typedef DWORD PROGRAM_DESTROY_FLAGS;  
 ```  
   
-```c#  
+```csharp  
 public enum enum_PPROGRAM_DESTROY_FLAGS  
 {  
-   PROGRAM_DESTROY_CONTINUE_DEBUGGING = 0x1  
+   PROGRAM_DESTROY_CONTINUE_DEBUGGING = 0x1  
 };  
 ```  
   
-## Ausdrücke  
- PROGRAM\_DESTROY\_CONTINUE\_DEBUGGING  
- Zerstören Sie Programms, sondern fahren Sie fort, um zu debuggen.  
+## <a name="terms"></a>Begriffe  
+ PROGRAM_DESTROY_CONTINUE_DEBUGGING  
+ Zerstören Sie des Programms, jedoch mit dem Debuggen fortfahren.  
   
-## Hinweise  
- Die Enumeration wird von der [GetFlags](../../../extensibility/debugger/reference/idebugprogramdestroyeventflags2-getflags.md)\-Methode zurückgegeben.  
+## <a name="remarks"></a>Hinweise  
+ Die Enumeration wird zurückgegeben, durch die [GetFlags](../../../extensibility/debugger/reference/idebugprogramdestroyeventflags2-getflags.md) Methode.  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  Header: Msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetFlags](../../../extensibility/debugger/reference/idebugprogramdestroyeventflags2-getflags.md)

@@ -1,43 +1,44 @@
 ---
-title: "XMLNode-Steuerelement"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "XMLNode-Steuerelement"
+title: XMLNode-Steuerelement | Microsoft Docs
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords: XMLNode control
 ms.assetid: 4f5c7f17-62aa-483c-ab0d-b04614ab065d
-caps.latest.revision: 39
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 38
+caps.latest.revision: "39"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: c35726314dc679289554e24d4150da4294cf8a0b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# XMLNode-Steuerelement
-  **Wichtig** die Informationen, die in diesem Thema bezüglich Microsoft Word erläutert werden, wird ausschließlich für den Nutzen und die Verwendung von Personen und Organisationen, die außerhalb der USA und ihrer Außengebiete befinden, oder die verwenden, oder entwickeln Programme, die auf ausgeführt werden, Microsoft Word\-Produkte dargestellt, die von Microsoft vor Januar 2010 lizenziert wurden, als Microsoft eine Implementierung der bestimmte Funktionen Beziehung zur benutzerdefinierten XML aus Microsoft Word entfernt wurde.  Diese Informationen bezüglich Microsoft Word dürfen nicht von Personen oder Organisationen in den Vereinigten Staaten oder ihren Außengebieten verwendet werden, die Programme verwenden oder entwickeln, die unter Microsoft Word\-Produkten ausgeführt werden, die von Microsoft nach dem 10. Januar 2010 lizenziert wurden. Diese Produkte verhalten sich nicht wie Produkte, die vor diesem Datum lizenziert oder für die Verwendung außerhalb der Vereinigten Staaten erworben und lizenziert wurden.  
+# <a name="xmlnode-control"></a>XMLNode-Steuerelement
+  **Wichtige** die Informationen in diesem Thema nach Microsoft Word wird dargestellten ausschließlich für die Vorteile und die Verwendung von Einzelpersonen und Organisationen, die außerhalb der Vereinigten Staaten und seine Gebiete befinden, oder verwenden, oder entwickeln Programme, die unter ausgeführt, im Zusammenhang mit benutzerdefinierten XML-Code von Microsoft Word Microsoft Word-Produkte, die von Microsoft vor Januar 2010 lizenziert wurden, wenn eine Implementierung der einzelnen Funktionen von Microsoft entfernt. Diese Informationen bezüglich Microsoft Word kann nicht gelesen oder von Einzelpersonen oder Organisationen aus, in den Vereinigten Staaten oder die Vertriebsgebiete, denen der verwenden, oder entwickeln Programme, die auf Microsoft Word-Produkte ausgeführt, die von Microsoft nach dem 10. Januar 2010 lizenziert wurden verwendet werden ; Diese Produkte verhält sich nicht wie Produkte, die vor diesem Datum lizenziert oder erworben und lizenziert für die Verwendung außerhalb der Vereinigten Staaten.  
   
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]  
   
- Das <xref:Microsoft.Office.Tools.Word.XMLNode>\-Steuerelement ist ein zugeordnetes XML\-Knotenobjekt, das Ereignisse verfügbar macht und an Daten gebunden werden kann.  Das <xref:Microsoft.Office.Tools.Word.XMLNode>\-Steuerelement wird nur erstellt, wenn ein sich nicht wiederholendes Schemaelement einem Microsoft Office Word\-Dokument zugeordnet wird.  Nachdem Visual Studio den XML\-Knoten erstellt hat, können Sie beim Programmieren direkt darauf zugreifen, ohne das Word\-Objektmodell durchlaufen zu müssen.  
+ Die <xref:Microsoft.Office.Tools.Word.XMLNode> -Steuerelement ist ein zugeordnetes XML-Knoten-Objekt, das Ereignisse verfügbar macht und an Daten gebunden werden kann. Die <xref:Microsoft.Office.Tools.Word.XMLNode> Steuerelement wird nur erstellt, wenn ein nicht wiederholendes Schemaelement in Microsoft Office Word-Dokument zugeordnet ist. Nachdem Visual Studio den XML-Knoten erstellt hat, können Sie es Programmieren ohne das Word-Objektmodell durchlaufen.  
   
- Das <xref:Microsoft.Office.Tools.Word.XMLNode>\-Steuerelement kann nur gelöscht werden, indem die Elementzuordnung in Word entfernt wird.  
+ Die <xref:Microsoft.Office.Tools.Word.XMLNode> Steuerelement kann nur durch Entfernen der elementzuordnung in Word gelöscht werden.  
   
-## Binden von Daten an das Steuerelement  
- Ein <xref:Microsoft.Office.Tools.Word.XMLNode>\-Steuerelement unterstützt die einfache Datenbindung.  Der XML\-Knoten sollte mit der <xref:System.Windows.Forms.IBindableComponent.DataBindings%2A>\-Eigenschaft an eine Datenquelle gebunden werden.  Wenn die Daten im gebundenen Dataset aktualisiert werden, werden diese Änderungen vom <xref:Microsoft.Office.Tools.Word.XMLNode>\-Steuerelement nachvollzogen.  
+## <a name="binding-data-to-the-control"></a>Binden von Daten an das Steuerelement  
+ Ein <xref:Microsoft.Office.Tools.Word.XMLNode> -Steuerelement unterstützt die einfache Datenbindung. Der XML-Knoten sollten mit einer Datenquelle gebunden werden, mithilfe der <xref:System.Windows.Forms.IBindableComponent.DataBindings%2A> Eigenschaft. Wenn die Daten im gebundenen Dataset aktualisiert werden, die <xref:Microsoft.Office.Tools.Word.XMLNode> -Steuerelement wiedergibt, die Änderungen.  
   
-## Formatierung  
- Die Formatierung für das <xref:Microsoft.Office.Interop.Word.XMLNode>\-Objekt kann auch auf das <xref:Microsoft.Office.Tools.Word.XMLNode>\-Steuerelement angewendet werden.  Das schließt Schriftarten, Unterstreichungsstile und Zeichenformatvorlagen ein.  
+## <a name="formatting"></a>Formatierung  
+ Formatierung aus, die angewendet werden kann ein <xref:Microsoft.Office.Interop.Word.XMLNode> Objekt kann angewendet werden, um eine <xref:Microsoft.Office.Tools.Word.XMLNode> Steuerelement. Dies schließt Schriftarten, unterstreichen und Zeichenformate.  
   
-## Ereignisse  
- Die folgenden Ereignisse sind für das <xref:Microsoft.Office.Tools.Word.XMLNode>\-Steuerelement verfügbar:  
+## <a name="events"></a>Ereignisse  
+ Die folgenden Ereignisse sind für das <xref:Microsoft.Office.Tools.Word.XMLNode>-Steuerelement verfügbar:  
   
 -   <xref:Microsoft.Office.Tools.Word.XMLNode.AfterInsert>  
   
@@ -57,8 +58,8 @@ caps.handback.revision: 38
   
 -   <xref:Microsoft.Office.Tools.Word.XMLNode.ValidationError>  
   
-## Vergleichen von Ereignissen  
- Sie können ein Ereignis erfassen, wenn der Benutzer den Cursor im Kontext eines bestimmten <xref:Microsoft.Office.Tools.Word.XMLNode>\-Steuerelements bewegt.  Gehen wir im folgenden Beispiel davon aus, dass Sie ein <xref:Microsoft.Office.Tools.Word.XMLNode>\-Steuerelement mit dem Namen `Customer` mit einem untergeordneten <xref:Microsoft.Office.Tools.Word.XMLNode>\-Steuerelement mit dem Namen `Company` haben, wobei `Company` zwei untergeordnete <xref:Microsoft.Office.Tools.Word.XMLNode>\-Steuerelemente mit dem Namen `CompanyName` und `CompanyRegion` hat:  
+## <a name="comparing-events"></a>Vergleichen von Ereignissen  
+ Sie können ein Ereignis, wenn der Benutzer den Cursor innerhalb des Kontexts eines bestimmten bewegt erfassen <xref:Microsoft.Office.Tools.Word.XMLNode> Steuerelement. Angenommen, Sie haben ein <xref:Microsoft.Office.Tools.Word.XMLNode> Steuerelement namens `Customer` , besitzt ein untergeordnetes Element <xref:Microsoft.Office.Tools.Word.XMLNode> Steuerelement namens `Company`, und `Company` verfügt über zwei untergeordnete <xref:Microsoft.Office.Tools.Word.XMLNode> -Steuerelemente namens `CompanyName` und `CompanyRegion` wie folgt:  
   
 ```  
 <Customer>  
@@ -67,24 +68,24 @@ caps.handback.revision: 38
         <CompanyRegion>  
 ```  
   
- Wenn Sie im Aktionsbereich ein Steuerelement anzeigen möchten, sobald der Cursor auf den `Company`\-Knoten bewegt wird, sollte es keine Rolle spielen, ob der Cursor über `CompanyName` oder `CompanyRegion` platziert wird, da beide im Kontext von `Company` liegen.  In diesem Fall können Sie den Code in das <xref:Microsoft.Office.Tools.Word.XMLNode.ContextEnter>\-Ereignis von `Company` schreiben.  
+ Wenn Sie ein Steuerelement im Aktionsbereich anzeigen möchten bei jedem bewegt sich der Cursor in die `Company` Knoten, es sollte nicht ausschlaggebend, ob in der sich der Cursor befindet `CompanyName` oder `CompanyRegion` , da beide im Kontext der `Company`. In diesem Fall können Sie Code schreiben, der <xref:Microsoft.Office.Tools.Word.XMLNode.ContextEnter> -Ereignis `Company`.  
   
- Sobald sich der Cursor in ein <xref:Microsoft.Office.Tools.Word.XMLNode>\-Steuerelement hineinbewegt, werden in den meisten Fällen sowohl das <xref:Microsoft.Office.Tools.Word.XMLNode.Select>\-Ereignis und als auch das <xref:Microsoft.Office.Tools.Word.XMLNode.ContextEnter>\-Ereignis ausgelöst.  In der folgenden Tabelle werden die Unterschiede zwischen diesen Ereignissen aufgeführt.  
+ In den meisten Fällen, wenn der Cursor wechselt ein <xref:Microsoft.Office.Tools.Word.XMLNode> steuern, sowohl die <xref:Microsoft.Office.Tools.Word.XMLNode.Select> und <xref:Microsoft.Office.Tools.Word.XMLNode.ContextEnter> Ereignisse ausgelöst werden. In der folgenden Tabelle werden die Unterschiede zwischen diesen Ereignissen dargestellt.  
   
-|Select\-Ereignis|ContextEnter\-Ereignis|  
-|----------------------|----------------------------|  
-|Wird ausgelöst, wenn der Cursor in einen <xref:Microsoft.Office.Tools.Word.XMLNode> platziert wird.|Wird ausgelöst, wenn der Cursor ausgehend von einem Bereich außerhalb des Knotenkontexts in einen <xref:Microsoft.Office.Tools.Word.XMLNode> oder von ihm abgeleiteten Knoten platziert wird.  In anderen Worten: Das Ereignis wird nur ausgelöst, wenn sich der Kontext ändert.|  
+|Wählen Sie Ereignis|ContextEnter-Ereignis|  
+|------------------|------------------------|  
+|Tritt auf, wenn der Cursor sich innerhalb befindet einer <xref:Microsoft.Office.Tools.Word.XMLNode>.|Tritt auf, wenn der Cursor sich innerhalb befindet einer <xref:Microsoft.Office.Tools.Word.XMLNode> oder eines seiner untergeordneten Knoten aus einem Bereich außerhalb des Kontexts des Knotens. Das heißt, er nur ausgelöst, wenn der Kontext geändert wird.|  
   
- Wenn Sie beispielsweise den Cursor außerhalb von `Customer` in `CompanyName` hineinbewegen, wird das <xref:Microsoft.Office.Tools.Word.XMLNode.ContextEnter>\-Ereignis für `Customer`, `Company` und `CompanyName` ausgelöst.  Beim anschließenden Bewegen des Cursors von `CompanyName` nach `CompanyRegion`, wird das <xref:Microsoft.Office.Tools.Word.XMLNode.ContextEnter>\-Ereignis nur für `CompanyRegion` ausgelöst, da sich der Cursor immer noch im Kontext von `Company` und `Customer` befindet.  
+ Wenn Sie beispielsweise den Cursor außerhalb von verschieben `Customer` in `CompanyName`, die <xref:Microsoft.Office.Tools.Word.XMLNode.ContextEnter> -Ereignis für `Customer`, `Company`, und `CompanyName` ausgelöst wird. Wenn Sie dann den Cursor bewegen `CompanyName` auf `CompanyRegion`, nur die <xref:Microsoft.Office.Tools.Word.XMLNode.ContextEnter> -Ereignis für `CompanyRegion` wird ausgelöst, da Sie immer noch innerhalb des Kontexts beider `Company` und `Customer`.  
   
- Die gleichen Unterschiede bestehen zwischen dem <xref:Microsoft.Office.Tools.Word.XMLNode.ContextLeave>\-Ereignis und dem <xref:Microsoft.Office.Tools.Word.XMLNode.Deselect>\-Ereignis.  
+ Die gleichen Unterschiede bestehen zwischen dem <xref:Microsoft.Office.Tools.Word.XMLNode.ContextLeave> Ereignis und <xref:Microsoft.Office.Tools.Word.XMLNode.Deselect> Ereignis.  
   
-## Siehe auch  
- [Übersicht über Hostelemente und Hoststeuerelemente](../vsto/host-items-and-host-controls-overview.md)   
+## <a name="see-also"></a>Siehe auch  
+ [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md)   
  [Automatisieren von Word mithilfe von erweiterten Objekten](../vsto/automating-word-by-using-extended-objects.md)   
  [XMLNodes-Steuerelement](../vsto/xmlnodes-control.md)   
- [Gewusst wie: Hinzufügen von XMLNode-Steuerelementen zu Word-Dokumenten](../vsto/how-to-add-xmlnode-controls-to-word-documents.md)   
- [Gewusst wie: Zuordnen von Schemas zu Word-Dokumenten in Visual Studio](../vsto/how-to-map-schemas-to-word-documents-inside-visual-studio.md)   
+ [Vorgehensweise: Hinzufügen von XMLNode-Steuerelementen zu Word-Dokumenten](../vsto/how-to-add-xmlnode-controls-to-word-documents.md)   
+ [Vorgehensweise: Zuordnen von Schemas zu Word-Dokumenten in Visual Studio](../vsto/how-to-map-schemas-to-word-documents-inside-visual-studio.md)   
  [Programmgesteuerte Einschränkungen von Hostelementen und Hoststeuerelementen](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
   
   

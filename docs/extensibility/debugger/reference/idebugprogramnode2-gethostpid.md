@@ -1,53 +1,53 @@
 ---
-title: "IDebugProgramNode2::GetHostPid | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugProgramNode2::GetHostPid"
-helpviewer_keywords: 
-  - "IDebugProgramNode2::GetHostPid"
+title: IDebugProgramNode2::GetHostPid | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugProgramNode2::GetHostPid
+helpviewer_keywords: IDebugProgramNode2::GetHostPid
 ms.assetid: e65b4b15-46d8-4ca7-9456-2b4c078f7cf9
-caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 163999e160baeaaad618ee793a1879da694e35ea
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugProgramNode2::GetHostPid
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Ruft die prozess\-id für das Hosten Prozess des Programms ab.  
+# <a name="idebugprogramnode2gethostpid"></a>IDebugProgramNode2::GetHostPid
+Ruft die System-Prozess-ID für den Prozess, der die Anwendung hostet.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT GetHostPid (   
-   AD_PROCESS_ID * pdwHostPid  
+```cpp  
+HRESULT GetHostPid (   
+   AD_PROCESS_ID * pdwHostPid  
 );  
 ```  
   
-```c#  
-int GetHostPid (   
-   out AD_PROCESS_ID pdwHostPid  
+```csharp  
+int GetHostPid (   
+   out AD_PROCESS_ID pdwHostPid  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `pdwHostPid`  
- \[out\]  Gibt die prozess\-id für den Hostprozess zurück.  
+ [out] Gibt das System-Prozess-ID für den Hostprozess zuzugreifen.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Beispiel  
- Im folgenden Beispiel wird veranschaulicht, wie diese Methode für ein einfaches `CProgram`\-Objekt implementiert, das die [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)\-Schnittstelle implementiert.  
+## <a name="example"></a>Beispiel  
+ Im folgende Beispiel wird gezeigt, wie diese Methode für eine einfache implementiert `CProgram` Objekt, implementiert die [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) Schnittstelle.  
   
-```cpp#  
+```cpp  
 HRESULT CProgram::GetHostPid(DWORD* pdwHostPid) {    
     // Check for valid argument.    
    if (pdwHostPid)    
@@ -62,5 +62,5 @@ HRESULT CProgram::GetHostPid(DWORD* pdwHostPid) {
 }    
 ```  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)

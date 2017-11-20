@@ -1,12 +1,10 @@
 ---
-title: 'Walkthrough: Changing Document Formatting Using CheckBox Controls | Microsoft Docs'
+title: "Exemplarische Vorgehensweise: Ändern der Dokumentformatierung mit CheckBox-Steuerelementen | Microsoft Docs"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -19,153 +17,155 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], check box controls
 - controls [Office development in Visual Studio], adding to documents
 ms.assetid: 3740e41d-a57e-43bb-87e7-6e5481ef290b
-caps.latest.revision: 70
-author: kempb
-ms.author: kempb
+caps.latest.revision: "70"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 69edcb6d683c910d02e4224ec44590c288fefefa
-ms.contentlocale: de-de
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: cf214f2ffc55cf0846373fcaa226253f276e3d69
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="walkthrough-changing-document-formatting-using-checkbox-controls"></a>Walkthrough: Changing Document Formatting Using CheckBox Controls
-  This walkthrough demonstrates how to use Windows Forms controls in a document-level customization for Microsoft Office Word to change text formatting.  
+# <a name="walkthrough-changing-document-formatting-using-checkbox-controls"></a>Exemplarische Vorgehensweise: Ändern der Dokumentformatierung mit CheckBox-Steuerelementen
+  In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie Windows Forms-Steuerelemente in einer Anpassung auf Dokumentebene für Microsoft Office Word verwenden, um textformatierung zu ändern.  
   
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]  
   
- This walkthrough illustrates the following tasks:  
+ In dieser exemplarischen Vorgehensweise werden die folgenden Aufgaben veranschaulicht:  
   
--   Adding text and a control to the document in a document-level project at design time.  
+-   Hinzufügen von Text und ein Steuerelement auf das Dokument in einem Projekt auf Dokumentebene zur Entwurfszeit.  
   
--   Formatting the text when an option is selected.  
+-   Formatieren des Texts an, wenn eine Option ausgewählt ist.  
   
- To see the result as a completed sample, see the Word Controls Sample at [Office Development Samples and Walkthroughs](../vsto/office-development-samples-and-walkthroughs.md).  
+ Das Ergebnis als vollständiges Beispiel finden Sie unter dem Beispiel der Word-Steuerelemente unter [Office Development Samples and Walkthroughs](../vsto/office-development-samples-and-walkthroughs.md).  
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
-## <a name="prerequisites"></a>Prerequisites  
- You need the following components to complete this walkthrough:  
+## <a name="prerequisites"></a>Erforderliche Komponenten  
+ Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
   
--   [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] or [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].  
+-   [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] oder [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].  
   
-## <a name="creating-the-project"></a>Creating the Project  
- The first step is to create a Word Document project.  
+## <a name="creating-the-project"></a>Erstellen des Projekts  
+ Im ersten Schritt wird ein Word-Dokumentprojekt erstellt.  
   
-#### <a name="to-create-a-new-project"></a>To create a new project  
+#### <a name="to-create-a-new-project"></a>So erstellen Sie ein neues Projekt  
   
-1.  Create a Word Document project with the name **My Word Formatting**. In the wizard, select **Create a new document**.  
+1.  Erstellen Sie ein Word-Dokumentprojekt mit dem Namen **My Word Formatting**. Wählen Sie im Assistenten **erstellen Sie ein neues Dokument**.  
   
-     For more information, see [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+     Weitere Informationen finden Sie unter [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
-     Visual Studio opens the new Word document in the designer and adds the **My Word Formatting** project to **Solution Explorer**.  
+     Visual Studio öffnet das neue Word-Dokument im Designer und fügt die **My Word Formatting** Projekt **Projektmappen-Explorer**.  
   
-## <a name="adding-text-and-controls-to-the-word-document"></a>Adding Text and Controls to the Word Document  
- For this walkthrough, add three check boxes and some text in a <xref:Microsoft.Office.Tools.Word.Bookmark> control to the Word document. The check boxes will present options to the user for formatting the text.  
+## <a name="adding-text-and-controls-to-the-word-document"></a>Hinzufügen von Text und Steuerelementen zu Word-Dokument  
+ In dieser exemplarischen Vorgehensweise fügen Sie drei Kontrollkästchen und Text in einem <xref:Microsoft.Office.Tools.Word.Bookmark> Steuerelement zum Word-Dokument. Die Kontrollkästchen werden Optionen zum Formatieren des Texts für den Benutzer anzuzeigen.  
   
-#### <a name="to-add-three-check-boxes"></a>To add three check boxes  
+#### <a name="to-add-three-check-boxes"></a>So fügen Sie drei Kontrollkästchen hinzu  
   
-1.  Verify that the document is open in the Visual Studio designer.  
+1.  Stellen Sie sicher, dass das Dokument im Visual Studio-Designer geöffnet ist.  
   
-2.  From the **Common Controls** tab of the **Toolbox**, drag the first <xref:Microsoft.Office.Tools.Word.Controls.CheckBox> control to the document.  
+2.  Aus der **Standardsteuerelementen** auf der Registerkarte die **Toolbox**, ziehen Sie das erste <xref:Microsoft.Office.Tools.Word.Controls.CheckBox> -Steuerelement auf das Dokument.  
   
-3.  In the **Properties** window, change the following properties.  
+3.  Ändern Sie im Fenster **Eigenschaften** die folgenden Eigenschaften:  
   
-    |Property|Value|  
+    |Eigenschaft|Wert|  
     |--------------|-----------|  
     |**Name**|**applyBoldFont**|  
-    |**Text**|**Bold**|  
+    |**Text**|**Fett**|  
   
-4.  Press **Enter** to move the insertion point below the first check box.  
+4.  Drücken Sie **EINGABETASTE** so verschieben Sie die Einfügemarke unter das erste aktivierte Kontrollkästchen.  
   
-5.  Add a second check box to the document below the `ApplyBoldFont` check box and change the following properties.  
+5.  Fügen Sie ein zweites Kontrollkästchen auf das Dokument unten die `ApplyBoldFont` Kontrollkästchen, und ändern Sie die folgenden Eigenschaften.  
   
-    |Property|Value|  
+    |Eigenschaft|Wert|  
     |--------------|-----------|  
     |**Name**|**applyItalicFont**|  
-    |**Text**|**Italic**|  
+    |**Text**|**Kursiv**|  
   
-6.  Press **Enter** to move the insertion point below the second check box.  
+6.  Drücken Sie **EINGABETASTE** so verschieben Sie die Einfügemarke unter das zweite Kontrollkästchen.  
   
-7.  Add a third check box to the document below the `ApplyItalicFont` check box and change the following properties.  
+7.  Fügen Sie ein drittes Kontrollkästchen auf das Dokument unten die `ApplyItalicFont` Kontrollkästchen, und ändern Sie die folgenden Eigenschaften.  
   
-    |Property|Value|  
+    |Eigenschaft|Wert|  
     |--------------|-----------|  
     |**Name**|**applyUnderlineFont**|  
-    |**Text**|**Underline**|  
+    |**Text**|**"Unterstreichen"**|  
   
-#### <a name="to-add-text-and-a-bookmark-control"></a>To add text and a Bookmark control  
+#### <a name="to-add-text-and-a-bookmark-control"></a>So fügen Sie Text und Lesezeichen-Steuerelement hinzu  
   
-1.  Move the insertion point below the check box controls and type the following text:  
+1.  Verschieben der Einfügemarke unter dem Kontrollkästchen-Steuerelemente, und geben Sie den folgenden Text:  
   
-     **Click a check box to change the formatting of this text.**  
+     **Klicken Sie auf das Kontrollkästchen, um die Formatierung des Texts zu ändern.**  
   
-2.  From the **Word Controls** tab of the **Toolbox**, drag a <xref:Microsoft.Office.Tools.Word.Bookmark> control to the document.  
+2.  Aus der **Word-Steuerelemente** auf der Registerkarte die **Toolbox**, ziehen Sie eine <xref:Microsoft.Office.Tools.Word.Bookmark> -Steuerelement auf das Dokument.  
   
-     The **Add Bookmark Control** dialog box appears.  
+     Die **Lesezeichen-Steuerelement hinzufügen** Dialogfeld wird angezeigt.  
   
-3.  Select the text you added to the document and click **OK**.  
+3.  Wählen Sie den Text, die Sie dem Dokument hinzugefügt, und klicken Sie auf **OK**.  
   
-     A <xref:Microsoft.Office.Tools.Word.Bookmark> control named **Bookmark1** is added to the selected text in the document.  
+     Ein <xref:Microsoft.Office.Tools.Word.Bookmark> Steuerelement namens **Bookmark1** den markierten Text im Dokument hinzugefügt wird.  
   
-4.  In the **Properties** window, change the value of the **(Name)** property to **fontText.**  
+4.  In der **Eigenschaften** Fenster, ändern Sie den Wert von der **(Name)** Eigenschaft **FontText.**  
   
- Next, write the code to format the text when a check box is checked or cleared.  
+ Anschließend schreiben Sie den Code, um den Text zu formatieren, wenn Sie das Kontrollkästchen aktiviert oder deaktiviert ist.  
   
-## <a name="formatting-the-text-when-a-check-box-is-checked-or-cleared"></a>Formatting the Text When a Check box is Checked or Cleared  
- When the user selects a formatting option, change the format of the text in the document.  
+## <a name="formatting-the-text-when-a-check-box-is-checked-or-cleared"></a>Formatieren den Text bei eines Kontrollkästchens ist aktiviert oder deaktiviert  
+ Wenn der Benutzer eine Formatierungsoption aus auswählt, wird ändern Sie das Format des Texts im Dokument.  
   
-#### <a name="to-change-formatting-when-a-check-box-is-selected"></a>To change formatting when a check box is selected  
+#### <a name="to-change-formatting-when-a-check-box-is-selected"></a>Zum Ändern der Formatierung, wenn Sie das Kontrollkästchen aktiviert ist  
   
-1.  Right-click `ThisDocument` in **Solution Explorer**, and then click **View Code** on the shortcut menu.  
+1.  Mit der rechten Maustaste `ThisDocument` in **Projektmappen-Explorer**, und klicken Sie dann auf **Code anzeigen** im Kontextmenü.  
   
-2.  For C# only, add the following constants to the **ThisDocument** class.  
+2.  Nur für c#, fügen Sie die folgenden Konstanten, mit denen die **ThisDocument** Klasse.  
   
      [!code-csharp[Trin_VstcoreProgrammingControlsWord#2](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#2)]  
   
-3.  Add the following code to the <xref:System.Windows.Forms.Control.Click> event handler of the `applyBoldFont` check box.  
+3.  Fügen Sie den folgenden Code hinzu. die <xref:System.Windows.Forms.Control.Click> -Ereignishandler des der `applyBoldFont` Kontrollkästchen.  
   
-     [!code-vb[Trin_VstcoreProgrammingControlsWord#3](../vsto/codesnippet/VisualBasic/my chart options/ThisDocument.vb#3)]  [!code-csharp[Trin_VstcoreProgrammingControlsWord#3](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#3)]  
+     [!code-vb[Trin_VstcoreProgrammingControlsWord#3](../vsto/codesnippet/VisualBasic/my chart options/ThisDocument.vb#3)]
+     [!code-csharp[Trin_VstcoreProgrammingControlsWord#3](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#3)]  
   
-4.  Add the following code to the <xref:System.Windows.Forms.Control.Click> event handler of the `applyItalicFont` check box.  
+4.  Fügen Sie den folgenden Code hinzu. die <xref:System.Windows.Forms.Control.Click> -Ereignishandler des der `applyItalicFont` Kontrollkästchen.  
   
-     [!code-vb[Trin_VstcoreProgrammingControlsWord#4](../vsto/codesnippet/VisualBasic/my chart options/ThisDocument.vb#4)]  [!code-csharp[Trin_VstcoreProgrammingControlsWord#4](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#4)]  
+     [!code-vb[Trin_VstcoreProgrammingControlsWord#4](../vsto/codesnippet/VisualBasic/my chart options/ThisDocument.vb#4)]
+     [!code-csharp[Trin_VstcoreProgrammingControlsWord#4](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#4)]  
   
-5.  Add the following code to the <xref:System.Windows.Forms.Control.Click> event handler of the `applyUnderlineFont` check box.  
+5.  Fügen Sie den folgenden Code hinzu. die <xref:System.Windows.Forms.Control.Click> -Ereignishandler des der `applyUnderlineFont` Kontrollkästchen.  
   
-     [!code-vb[Trin_VstcoreProgrammingControlsWord#5](../vsto/codesnippet/VisualBasic/my chart options/ThisDocument.vb#5)]  [!code-csharp[Trin_VstcoreProgrammingControlsWord#5](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#5)]  
+     [!code-vb[Trin_VstcoreProgrammingControlsWord#5](../vsto/codesnippet/VisualBasic/my chart options/ThisDocument.vb#5)]
+     [!code-csharp[Trin_VstcoreProgrammingControlsWord#5](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#5)]  
   
-6.  In C#, you must add event handlers for the text boxes to the <xref:Microsoft.Office.Tools.Word.Document.Startup> event. For information about how to create event handlers, see [How to: Create Event Handlers in Office Projects](../vsto/how-to-create-event-handlers-in-office-projects.md).  
+6.  In c# müssen Sie Ereignishandler für die Textfelder hinzufügen der <xref:Microsoft.Office.Tools.Word.Document.Startup> Ereignis. Informationen über das Erstellen von Ereignishandlern finden Sie unter [Vorgehensweise: Erstellen von Ereignishandlern in Office-Projekten](../vsto/how-to-create-event-handlers-in-office-projects.md).  
   
      [!code-csharp[Trin_VstcoreProgrammingControlsWord#6](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#6)]  
   
-## <a name="testing-the-application"></a>Testing the Application  
- You can now test your document to verify that the text is formatted correctly when you select or clear a check box.  
+## <a name="testing-the-application"></a>Testen der Anwendung  
+ Sie können jetzt Ihr Dokument, um sicherzustellen, dass der Text korrekt formatiert ist, wenn Sie aktivieren bzw. Sie das Kontrollkästchen deaktivieren testen.  
   
-#### <a name="to-test-your-document"></a>To test your document  
+#### <a name="to-test-your-document"></a>So testen Sie das Dokument  
   
-1.  Press F5 to run your project.  
+1.  Drücken Sie F5, um das Projekt auszuführen.  
   
-2.  Select or clear a check box.  
+2.  Aktivieren Sie oder deaktivieren Sie das Kontrollkästchen.  
   
-3.  Confirm that the text is formatted correctly.  
+3.  Vergewissern Sie sich, dass der Text korrekt formatiert sind.  
   
-## <a name="next-steps"></a>Next Steps  
- This walkthrough shows the basics of using check boxes and programmatically changing text formatting on Word documents. Here are some tasks that might come next:  
+## <a name="next-steps"></a>Nächste Schritte  
+ Diese exemplarische Vorgehensweise veranschaulicht die Grundlagen der Verwendung von Kontrollkästchen und textformatierung in Word-Dokumenten programmgesteuert ändern. Die folgenden Aufgaben könnten sich daran anschließen:  
   
--   Use a button to populate a text box. For more information, see [Walkthrough: Displaying Text in a Text Box in a Document Using a Button](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md).  
+-   Verwenden Sie eine Schaltfläche, um ein Textfeld aufzufüllen. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Anzeigen von Text in einem Textfeld in einem Dokument mithilfe einer Schaltfläche](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md).  
   
--   Using radio buttons to select chart styles. For more information, see [Walkthrough: Updating a Chart in a Document Using Radio Buttons](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md).  
+-   Auswählen von Diagrammformaten mithilfe von Optionsfeldern. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Aktualisieren eines Diagramms in einem Dokument mithilfe von Optionsschaltflächen](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md).  
   
 -  
   
-## <a name="see-also"></a>See Also  
- [Walkthroughs Using Word](../vsto/walkthroughs-using-word.md)   
- [Office Development Samples and Walkthroughs](../vsto/office-development-samples-and-walkthroughs.md)   
- [NamedRange Control](../vsto/namedrange-control.md)   
- [Limitations of Windows Forms Controls on Office Documents](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)  
+## <a name="see-also"></a>Siehe auch  
+ [Exemplarische Vorgehensweisen in Word](../vsto/walkthroughs-using-word.md)   
+ [Office-Entwicklungsbeispiele und exemplarische Vorgehensweisen](../vsto/office-development-samples-and-walkthroughs.md)   
+ [NamedRange-Steuerelement](../vsto/namedrange-control.md)   
+ [Einschränkungen für Windows Forms-Steuerelemente in Office-Dokumenten](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)  
   
   

@@ -1,31 +1,31 @@
 ---
-title: "SccDirQueryInfo-Funktion | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "SccDirQueryInfo"
-helpviewer_keywords: 
-  - "SccDirQueryInfo-Funktion"
+title: SccDirQueryInfo Funktion | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: SccDirQueryInfo
+helpviewer_keywords: SccDirQueryInfo function
 ms.assetid: 459e2d99-573d-47c4-b834-6d82c5e14162
-caps.latest.revision: 14
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 14
+caps.latest.revision: "14"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: aa1bc3624c8d03cfc484aaace906c2660c3a790e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# SccDirQueryInfo-Funktion
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Diese Funktion überprüft eine Liste der vollqualifizierten Verzeichnisse für den aktuellen Status.  
+# <a name="sccdirqueryinfo-function"></a>SccDirQueryInfo-Funktion
+Diese Funktion überprüft eine Liste der vollständig qualifizierte Verzeichnisse für ihren aktuellen Status an.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 SCCRTN SccDirQueryInfo(  
 LPVOID  pContext,  
 LONG    nDirs,  
@@ -34,37 +34,37 @@ LPLONG  lpStatus
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  "pContext"  
- \[in\] Source Control\-Plug\-in Context\-Struktur.  
+ [in] Datenquellen-Steuerelement-Plug-in-Context-Struktur.  
   
  nDirs  
- \[in\] Die Anzahl der Verzeichnisse, die abgefragt werden ausgewählt.  
+ [in] Die Anzahl der Verzeichnisse, die abgefragt werden ausgewählt.  
   
  lpDirNames  
- \[in\] Ein Array von vollständig qualifizierten Pfads, der abgefragt werden soll.  
+ [in] Ein Array von voll qualifizierten Pfade der Verzeichnisse abgefragt werden.  
   
  lpStatus  
- \[in, out\] Eine Arraystruktur für das Quellcodeverwaltungs\-Plug\-in, um die Statusflags zurückzugeben \(siehe [Directory\-Statuscode](../extensibility/directory-status-code-enumerator.md) Details\).  
+ [in, out] Eine Arraystruktur für die Datenquellen-Steuerelement-Plug-in die Statusflags zurückgeben (finden Sie unter [Statuscode "Directory"](../extensibility/directory-status-code-enumerator.md) Einzelheiten).  
   
-## Rückgabewert  
- Datenquellen\-Steuerelement Plug\-in\-Implementierung dieser Funktion muss einen der folgenden Werte zurückgeben:  
+## <a name="return-value"></a>Rückgabewert  
+ Die Source Control-Plug-in-Implementierung dieser Funktion muss einen der folgenden Werte zurückgeben:  
   
 |Wert|Beschreibung|  
-|----------|------------------|  
-|SCC\_OK|Die Abfrage war erfolgreich.|  
-|SCC\_E\_OPNOTSUPPORTED|Das Quellcodeverwaltungssystem unterstützt diesen Vorgang nicht.|  
-|SCC\_E\_ACCESSFAILURE|Es wurde ein Problem, das Zugriff auf Quellcode\-Verwaltungssystem, möglicherweise aufgrund eines Netzwerk\-oder Konflikte. Eine Wiederholung wird empfohlen.|  
-|SCC\_E\_NONSPECIFICERROR<br /><br /> SCC\_E\_UNKNOWNERROR|Nicht spezifischen Fehler.|  
+|-----------|-----------------|  
+|SCC_OK|Die Abfrage war erfolgreich.|  
+|SCC_E_OPNOTSUPPORTED|Dieser Vorgang wird von der Quellcodeverwaltungs-System nicht unterstützt.|  
+|SCC_E_ACCESSFAILURE|Es wurde ein Problem, das Zugriff auf das Quellcodeverwaltungssystem, wahrscheinlich aufgrund eines Netzwerk-oder Konflikte. Eine Wiederholung wird empfohlen.|  
+|SCC_E_NONSPECIFICERROR<br /><br /> SCC_E_UNKNOWNERROR|Unspezifischen Fehlers.|  
   
-## Hinweise  
- Die Funktion füllt das return Array mit einer Bitmaske der Bits aus der `SCC_DIRSTATUS` Familie \(finden Sie unter [Directory\-Statuscode](../extensibility/directory-status-code-enumerator.md)\), einen Eintrag für jedes Verzeichnis angegeben. Das Statusarray, die vom Aufrufer zugeordnet ist.  
+## <a name="remarks"></a>Hinweise  
+ Die Funktion füllt das return Array mit einer Bitmaske der Bits aus der `SCC_DIRSTATUS` Familie (finden Sie unter [Statuscode "Directory"](../extensibility/directory-status-code-enumerator.md)), einen Eintrag für jedes Verzeichnis angegeben. Der Statusarray, die vom Aufrufer zugeordnet ist.  
   
- Die IDE verwendet diese Funktion auf, bevor ein Verzeichnis umbenannt wird, um zu überprüfen, ob das Verzeichnis Quellcodeverwaltungsprojekt Abfragen, ob es einen entsprechenden Projekt verfügt. Wenn das Verzeichnis nicht verwaltet ist, kann die IDE die richtige Warnung für dem Benutzer bereitstellen.  
+ Die IDE verwendet diese Funktion auf, bevor ein Verzeichnis umbenannt wird, um zu überprüfen, ob das Verzeichnis in der quellcodeverwaltung ist von Abfragen, ob es sich um eine entsprechende Projekt verfügt. Wenn das Verzeichnis nicht in der quellcodeverwaltung ist, kann die IDE die richtige Warnung für dem Benutzer bereitstellen.  
   
 > [!NOTE]
->  Wenn ein Quellcodeverwaltungs\-Plug\-in entscheidet, eine oder mehrere der Statuswerte nicht implementiert, sollte nicht implementierte Bits 0 \(null\) festgelegt werden.  
+>  Wenn ein Quellcodeverwaltungs-Plug-in entscheidet, eine oder mehrere der Statuswerte nicht implementieren, sollten nicht implementierte Bits auf NULL festgelegt werden.  
   
-## Siehe auch  
- [Source Control\-Plug\-in\-API\-Funktionen](../extensibility/source-control-plug-in-api-functions.md)   
- [Directory\-Statuscode](../extensibility/directory-status-code-enumerator.md)
+## <a name="see-also"></a>Siehe auch  
+ [Quellcodeverwaltungsfunktionen-Plug-in-API](../extensibility/source-control-plug-in-api-functions.md)   
+ [Statuscode "Directory"](../extensibility/directory-status-code-enumerator.md)

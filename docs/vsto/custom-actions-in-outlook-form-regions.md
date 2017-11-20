@@ -1,59 +1,61 @@
 ---
-title: "Benutzerdefinierte Aktionen in Outlook-Formularbereichen"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "Benutzerdefinierte Aktionen [Office-Entwicklung in Visual Studio]"
-  - "Formularbereiche [Office-Entwicklung in Visual Studio], Benutzerdefinierte Aktionen"
+title: Benutzerdefinierte Aktionen in Outlook-Formularbereichen | Microsoft Docs
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- form regions [Office development in Visual Studio], custom actions
+- custom actions [Office development in Visual Studio]
 ms.assetid: 583fd5f0-aafa-4858-9c54-38a9fdf3bede
-caps.latest.revision: 23
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 22
+caps.latest.revision: "23"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 74c688d0430b95c54f1f871ad6f82fde6fa781ac
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Benutzerdefinierte Aktionen in Outlook-Formularbereichen
-  Aktionen zeigen Schaltflächen an, die Benutzern das Antworten auf ein Microsoft Office Outlook\-Element ermöglichen.  Zum Antworten auf ein E\-Mail\-Element klicken Benutzer beispielsweise auf die Aktionsschaltflächen **Antworten**, **Allen antworten** oder **Weiterleiten**.  Durch jede dieser Aktionen wird ein neues E\-Mail\-Element erstellt, und die Felder des Elements werden mit den Informationen aus dem ursprünglichen Element ausgefüllt.  
+# <a name="custom-actions-in-outlook-form-regions"></a>Benutzerdefinierte Aktionen in Outlook-Formularbereichen
+  Aktionen werden die Schaltflächen, mit denen Benutzer für die Reaktion auf ein Microsoft Office Outlook-Element angezeigt. Beispielsweise um eine e-Mail-Element zu behandeln, Benutzer klicken auf die **Antwort**, **allen Antworten**, oder **Vorwärts** Aktionsschaltflächen. Jede dieser Aktionen erstellt ein neue e-Mail-Element und füllt die Felder des Elements mithilfe von Informationen aus dem ursprünglichen Element.  
   
- Sie können eine benutzerdefinierte Aktion erstellen, durch die jede Art von Outlook\-Elementen geöffnet wird.  Beispielsweise kann eine benutzerdefinierte Aktion hinzugefügt werden, durch die ein neuer Termin oder ein Aufgabenelement geöffnet wird.  Legen Sie die Eigenschaften einer benutzerdefinierten Aktion fest, oder verwenden Sie benutzerdefinierten Code, um die Felder des neuen Elements auszufüllen.  Benutzerdefinierte Aktionen werden in der Dropdownliste **Benutzerdefinierte Aktionen** eines Elements angezeigt, das in einem Fenster des Outlook\-Inspektors geöffnet ist.  
+ Sie können eine benutzerdefinierte Aktion erstellen, die alle Arten von Outlook-Element geöffnet wird. Beispielsweise können Sie eine benutzerdefinierte Aktion hinzufügen, die ein neues Element der Termin oder die Aufgabe wird geöffnet. Legen Sie die Eigenschaften einer benutzerdefinierten Aktion oder verwenden Sie benutzerdefinierten Code, um die Felder des neuen Elements aufzufüllen. Benutzerdefinierte Aktionen werden in der **benutzerdefinierte Aktionen** Dropdown-Elemente, die in einem Outlook-Inspektor-Fenster geöffnet ist.  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   
-## Hinzufügen von benutzerdefinierten Aktionen zu einem Formularbereich  
- Fügen Sie einem Formularbereich eine benutzerdefinierte Aktion mithilfe des Dialogfelds **Benutzerdefinierte Aktionen** hinzu.  Sie können das Dialogfeld in **Benutzerdefinierte AktionenProjektmappen\-Explorer** öffnen, indem Sie den Knoten erweitern **Manifest** auswählen, die Eigenschaft **CustomActions**, und dann auf die Schaltfläche mit den Auslassungspunkten \(![Auslassungszeichen im ASP.NET Mobile-Designer](~/sharepoint/media/mwellipsis.gif "Auslassungszeichen im ASP.NET Mobile-Designer")\) klicken.  
+## <a name="adding-custom-actions-to-a-form-region"></a>Hinzufügen von benutzerdefinierten Aktionen zu einem Formularbereich  
+ Verwenden Sie zum Hinzufügen einer benutzerdefinierten Aktion zu einem Formularbereich der **benutzerdefinierte Aktionen** (Dialogfeld). Öffnen Sie die **benutzerdefinierte Aktionen** im Dialogfeld **Projektmappen-Explorer** durch Erweitern der **Manifest** Knoten auswählen der **CustomActions**-Eigenschaft, und klicken Sie dann auf die Schaltfläche mit den Auslassungspunkten (![ASP.NET Mobile-Designer Ellipse](../sharepoint/media/mwellipsis.gif "ASP.NET Mobile-Designer Ellipse")).  
   
- Geben Sie im Dialogfeld **Benutzerdefinierte Aktionen** ein *Zielformular* an.  Bei einem Zielformular handelt es sich um das Formular, das beim Ausführen der benutzerdefinierten Aktion angezeigt wird.  
+ Können Sie die **benutzerdefinierte Aktionen** im Dialogfeld eine *Ziel Formulars*. Ein Zielformular ist das Formular, das angezeigt wird, wenn der Benutzer die benutzerdefinierte Aktion ausführt.  
   
- Im Dialogfeld **Benutzerdefinierte Aktionen** kann zudem angegeben werden, wie Informationen aus dem ursprünglichen Element im Zielformular angezeigt werden sollen.  
+ Sie können auch die **benutzerdefinierte Aktionen** (Dialogfeld), um anzugeben, wie Informationen aus dem ursprünglichen Element in der Ziel-Form angezeigt werden sollen.  
   
- In der folgenden Tabelle werden die im Dialogfeld **Benutzerdefinierte Aktionen** verfügbaren Eigenschaften beschrieben.  
+ Die folgende Tabelle beschreibt die Eigenschaften, die in verfügbaren der **benutzerdefinierte Aktionen** (Dialogfeld).  
   
-|Eigenschaft|Description|  
-|-----------------|-----------------|  
-|**AddressLike**|Gibt an, wie das Zielformular bearbeitet wird.|  
-|**Body**|Gibt an, wie der Text des ursprünglichen Elements an das Zielformular angefügt wird.|  
-|**Aktiviert**|Gibt an, ob die benutzerdefinierte Aktion aktiviert ist.  Wenn diese Eigenschaft auf **false** festgelegt wird, wird die benutzerdefinierte Aktion deaktiviert.|  
-|**Methode**|Gibt den Typ der Antwort an, die beim Ausführen der benutzerdefinierten Aktion verfügbar ist.  Durch die benutzerdefinierte Aktion kann das Formular gesendet bzw. geöffnet werden, und der Benutzer wird gefragt, ob er das Formular senden oder öffnen möchte.|  
-|**Name**|Gibt den internen Namen an, mit dem auf diese benutzerdefinierte Aktion in Code verwiesen werden kann.|  
-|****ShowOnRibbon****|Gibt an, ob die benutzerdefinierte Aktion auf dem Menüband des ursprünglichen Elements angezeigt wird.|  
-|****SubjectPrefix****|Gibt Text an, der am Anfang der Betreffzeile des Zielformulars eingefügt wird.|  
-|****TargetForm****|Gibt den Nachrichtenklassennamen des Zielformulars an.  Geben Sie zum Öffnen eines Aufgabenformulars beispielsweise **IPM.Task** ein.|  
-|**Titel**|Gibt die Bezeichnung der benutzerdefinierten Aktionsschaltfläche an.|  
+|Eigenschaft|Beschreibung|  
+|--------------|-----------------|  
+|**AddressLike**|Gibt an, wie die Zielformular adressiert wird.|  
+|**Text**|Gibt an, wie der Text, der das ursprüngliche Element in das Zielformular angefügt wird.|  
+|**Aktiviert**|Gibt an, ob die benutzerdefinierte Aktion aktiviert ist. Wenn diese Eigenschaft, um festgelegt wird **"false"**, die benutzerdefinierte Aktion ist deaktiviert.|  
+|**Methode**|Gibt den Typ der Antwort verfügbar, wenn die benutzerdefinierte Aktion ausgeführt wird. Die benutzerdefinierte Aktion kann Senden des Formulars, öffnen Sie das Formular oder der Benutzer aufgefordert werden, ob sie möchten, senden, oder öffnen Sie das Formular.|  
+|**Name**|Gibt den internen Namen, den Sie verwenden können, um auf diese benutzerdefinierte Aktion im Code zu verweisen.|  
+|**ShowOnRibbon**|Gibt an, ob die benutzerdefinierte Aktion auf dem Menüband der das ursprüngliche Element angezeigt werden soll.|  
+|**SubjectPrefix**|Gibt den Text, der am Anfang der Betreffzeile des Zielformulars eingefügt wird.|  
+|**TargetForm**|Gibt die Namen der Nachrichtenklasse des Zielformulars an. Geben Sie z. B. **IPM. Aufgabe** ein Aufgabenformular zu öffnen.|  
+|**Titel**|Gibt die Bezeichnung der Schaltfläche für benutzerdefinierte Aktionen.|  
   
-## Anpassen einer benutzerdefinierten Aktion während der Laufzeit  
- Mithilfe von Code kann der benutzerdefinierten Aktion auch Verhalten hinzugefügt werden.  Beispielsweise kann Code hinzugefügt werden, der die Namen von E\-Mail\-Empfängern verwendet und diese Namen als Teilnehmer für einen neuen Termin hinzufügt.  Behandeln Sie dafür das [CustomAction](HV05247448)\-Ereignis des [Action](HV05247650)\-Objekts.  
+## <a name="customizing-a-custom-action-at-run-time"></a>Anpassen einer benutzerdefinierten Aktion zur Laufzeit  
+ Sie können auch die benutzerdefinierte Aktion, die mithilfe von Code Verhalten hinzufügen. Sie können z. B. Code hinzufügen, die die Namen der e-Mail-Empfänger und fügt diesen Namen als Teilnehmer in einen neuen Termin. Behandeln Sie dazu die [CustomAction](http://msdn.microsoft.com/library/office/ff862186.aspx) -Ereignis für die [MailItem-Objekt](http://msdn.microsoft.com/library/office/ff861332.aspx).  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Erstellen von Outlook-Formularbereichen](../vsto/creating-outlook-form-regions.md)   
  [Exemplarische Vorgehensweise: Entwerfen eines Outlook-Formularbereichs](../vsto/walkthrough-designing-an-outlook-form-region.md)   
  [Zuordnen eines Formularbereichs zu einer Outlook-Nachrichtenklasse](../vsto/associating-a-form-region-with-an-outlook-message-class.md)  

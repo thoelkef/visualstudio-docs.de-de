@@ -1,41 +1,42 @@
 ---
-title: "Die erforderlichen Ereignisse senden | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Ereignisse durch erforderliche Debuggen [SDK-Debuggen]"
+title: Senden die erforderlichen Ereignisse | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: debugging [Debugging SDK], required events
 ms.assetid: 08319157-43fb-44a9-9a63-50b919fe1377
-caps.latest.revision: 7
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 30a5b1150d44c138465db36da2b032b71f075397
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Die erforderlichen Ereignisse senden
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Verwenden Sie dieses Verfahren zum Senden von erforderlichen Ereignisse.  
+# <a name="sending-the-required-events"></a>Senden die erforderlichen Ereignisse
+Verwenden Sie dieses Verfahren für das Senden von Ereignissen Erforderlicher.  
   
-## Prozess zum Senden von Ereignissen erforderlichen  
- Die folgenden Ereignisse sind, in dieser Reihenfolge erforderlich, wenn eine Debug\- Modul \(DE\) erstellt wurde und es in einem Programm angefügt ist:  
+## <a name="process-for-sending-required-events"></a>Prozess für das Senden von Ereignissen Erforderlicher  
+ Die folgenden Ereignisse sind erforderlich, in der Reihenfolge, erstellen eine Debug-engine (Deutschland) und an ein Programm anzufügen:  
   
-1.  Senden Sie ein [IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md)\-Ereignisobjekt für das Debuggen von Manager der Sitzung \(SDM\), wenn DE zum Debuggen einer oder mehreren Programmen in einem Prozess initialisiert wird.  
+1.  Senden einer [IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md) Ereignisobjekt Sitzung Debug-Manager (SDM), wenn die DE initialisiert wird, für eine oder mehrere Programme in einem Prozess zu debuggen.  
   
-2.  Wenn das Programm gedebuggt werden soll angefügt ist, senden Sie ein [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) SDM auf das Ereignisobjekt.  Dieses Ereignis kann ein aufhörendes Ereignis, je nachdem, welche Motorbauart.  
+2.  Wenn das Programm, das gedebuggt werden angefügt ist, senden wir Ihnen eine [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) Ereignisobjekt, das SDM. Dieses Ereignis möglicherweise je nach Entwurf des Datenbankmoduls ein Stopping-Ereignis.  
   
-3.  Wenn das Programm angefügt wird, wenn der Prozess gestartet wird, senden Sie ein [IDebugThreadCreateEvent2](../../extensibility/debugger/reference/idebugthreadcreateevent2.md) SDM auf das Ereignisobjekt, damit die IDE des neuen Threads zu benachrichtigen.  Dieses Ereignis kann ein aufhörendes Ereignis, je nachdem, welche Motorbauart.  
+3.  Wenn die Anwendung angefügt ist, wenn der Prozess gestartet wird, senden Sie eine [IDebugThreadCreateEvent2](../../extensibility/debugger/reference/idebugthreadcreateevent2.md) Ereignisobjekt, das SDM der der neue Thread IDE benachrichtigt. Dieses Ereignis möglicherweise je nach Entwurf des Datenbankmoduls ein Stopping-Ereignis.  
   
-4.  Senden Sie ein [IDebugLoadCompleteEvent2](../../extensibility/debugger/reference/idebugloadcompleteevent2.md) SDM auf das Ereignisobjekt, wenn das Programm, das gedebuggt wird, die beim Laden oder das Anfügen an das Programm ausgeführt wird.  Dieses Ereignis muss ein aufhörendes Ereignis sein.  
+4.  Senden einer [IDebugLoadCompleteEvent2](../../extensibility/debugger/reference/idebugloadcompleteevent2.md) Ereignisobjekt, das SDM bei der zu debuggenden Programms ist, beendet das Laden oder wenn das Anfügen an das Programm abgeschlossen ist. Dieses Ereignis muss einen Stopping-Ereignis.  
   
-5.  Wenn die Anwendung gedebuggt werden gestartet wird, senden Sie ein [IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md) SDM auf das Ereignisobjekt, wenn die erste Anweisung des Codes in der Architektur der Laufzeit gerade ausgeführt wird.  Dieses Ereignis wird immer ein aufhörendes Ereignis.  Beim schrittweisen in der Debugsitzung, wird die IDE für dieses Ereignis auf.  
+5.  Wenn die zu debuggende Anwendung gestartet wird, senden Sie eine [IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md) Ereignisobjekt, das SDM bei die erste Anweisung des Codes in der Laufzeit-Architektur ausgeführt werden soll. Dieses Ereignis wird immer eine Stopping-Ereignis. Wenn die Debugsitzung schrittweise ausführen, wird die IDE auf dieses Ereignis beendet.  
   
 > [!NOTE]
->  Zahlreiche Sprachen verwenden globale Initialisierungen oder die externe, vorkompilierten Funktionen \(von der CRT\-Bibliothek oder \- \_Main\) am Anfang des Codes.  Wenn die Sprache des Programms, das Sie debuggen, einen dieser Typen der Elemente vor der ersten Eintrag Haupteinstiegspunkt enthält, wird dieser Code ausgeführt wird und das Einstiegspunkt für Auswahlereignisse wird gesendet, wenn der benutzerdefinierte Einstiegspunkt, wie **Main** oder `WinMain`, erreicht ist.  
+>  Viele Sprachen werden globale Initialisierer oder externe, vorkompilierte Funktionen (aus der CRT-Bibliothek oder _Main) am Anfang des Codes verwenden. Wenn die Sprache des Programms, das Sie Debuggen enthält diesen Typen von Elementen vor dem ersten Einstiegspunkt, dieser Code ausgeführt wird, und das punktereignis Eintrag wird gesendet. wenn der benutzerdefinierte Einstiegspunkt zeigen, wie z. B. **main** oder `WinMain`, erreicht ist.  
   
-## Siehe auch  
- [Ein Programm zum Debuggen aktivieren](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)
+## <a name="see-also"></a>Siehe auch  
+ [Aktivieren eines Programms für das Debuggen](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)

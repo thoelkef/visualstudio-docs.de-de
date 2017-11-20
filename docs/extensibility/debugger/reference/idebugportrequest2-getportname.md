@@ -1,51 +1,51 @@
 ---
-title: "IDebugPortRequest2::GetPortName | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugPortRequest2::GetPortName"
-helpviewer_keywords: 
-  - "IDebugPortRequest2::GetPortName"
+title: IDebugPortRequest2::GetPortName | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugPortRequest2::GetPortName
+helpviewer_keywords: IDebugPortRequest2::GetPortName
 ms.assetid: 53e2a3a4-bb34-4a02-a983-6bd84ea70587
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: ab94c9bcb0ec686b9b2d8aba7378bbd55ca71c72
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugPortRequest2::GetPortName
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Ruft den Namen des Anschlusses ab.  
+# <a name="idebugportrequest2getportname"></a>IDebugPortRequest2::GetPortName
+Ruft den Namen des Ports ab.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT GetPortName(   
-   BSTR* pbstrPortName  
+```cpp  
+HRESULT GetPortName(   
+   BSTR* pbstrPortName  
 );  
 ```  
   
-```c#  
-int GetPortName(   
-   out string pbstrPortName  
+```csharp  
+int GetPortName(   
+   out string pbstrPortName  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `pbstrPortName`  
- \[out\]  Gibt den Namen des Anschlusses zurück.  
+ [out] Gibt den Namen des Ports.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Hinweise  
- Die [IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md)\-Schnittstelle wird normalerweise von einem Client Paket \(Debuggen\) zu einem Anschlusslieferanten \(den Server übergeben\) zum Abrufen einer Verbindung mit einem Port.  berücksichtigen die Debug\- Paket und der Port lieferant die möglichen Auswahlmöglichkeiten für den Port.  Wenn eine einfache Zeichenfolge den angegebenen Anschluss beschrieben werden kann, hat die `IDebugPortRequest2::GetPortName`\-Methode über ausreichende Informationen, um die Beziehung zu erstellen.  Andernfalls können zusätzliche Schnittstellen durch den Client bereitgestellt werden, der vom Server mithilfe `IDebugPortRequest2::QueryInterface`abgerufen werden kann.  
+## <a name="remarks"></a>Hinweise  
+ Die [IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md) Schnittstelle ist in der Regel übergeben aus einem debugpaket (Client) an einen Lieferanten Port (Server), um eine Verbindung zu erhalten, einen Port. Das debugpaket und den Lieferanten Port kennen die möglichen Optionen für den Port. Wenn Sie eine einfache Zeichenfolge den Port kann beschrieben werden, und klicken Sie dann die `IDebugPortRequest2::GetPortName` Methode verfügt über genügend Informationen zum Herstellen die Verbindung. Andernfalls können weitere Schnittstellen bereitgestellt werden, durch den Client, der vom Server mit abgerufen werden kann `IDebugPortRequest2::QueryInterface`.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md)

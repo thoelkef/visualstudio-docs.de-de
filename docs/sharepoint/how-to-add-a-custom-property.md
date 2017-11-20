@@ -1,53 +1,54 @@
 ---
-title: "Gewusst wie: Hinzuf&#252;gen einer benutzerdefinierten Eigenschaft"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "VS.SharePointTools.BDC.Property_Editor"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "BDC [SharePoint-Entwicklung in Visual Studio], Benutzerdefinierte Eigenschaften"
-  - "BDC [SharePoint-Entwicklung in Visual Studio], Eigenschaften"
-  - "Business Data Connectivity-Dienst [SharePoint-Entwicklung in Visual Studio], Benutzerdefinierte Eigenschaften"
-  - "Business Data Connectivity-Dienst [SharePoint-Entwicklung in Visual Studio], Eigenschaften"
+title: "Vorgehensweise: Hinzufügen einer benutzerdefinierten Eigenschaft | Microsoft Docs"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: VS.SharePointTools.BDC.Property_Editor
+dev_langs:
+- VB
+- CSharp
+- VB
+- CSharp
+helpviewer_keywords:
+- BDC [SharePoint development in Visual Studio], properties
+- Business Data Connectivity service [SharePoint development in Visual Studio], properties
+- Business Data Connectivity service [SharePoint development in Visual Studio], custom properties
+- BDC [SharePoint development in Visual Studio], custom properties
 ms.assetid: 670c7fff-a8fb-499f-8694-d5aecc432c16
-caps.latest.revision: 10
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "10"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: b087ae9f767ed762b6d9269f60f2612127bdc705
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Gewusst wie: Hinzuf&#252;gen einer benutzerdefinierten Eigenschaft
-  Mit dem Eigenschaften\-Editor können dem Modell benutzerdefinierte Eigenschaften hinzugefügt werden.  Sie können auf diese Eigenschaften im Code zugreifen, um zur Laufzeit Informationen wie Verbindungszeichenfolgen und andere Daten abzurufen.  
+# <a name="how-to-add-a-custom-property"></a>Gewusst wie: Hinzufügen einer benutzerdefinierten Eigenschaft
+  Sie können benutzerdefinierte Eigenschaften für das Modell hinzufügen, indem Sie mit der **Eigenschaften-Editor**. Sie können diese Eigenschaften im Code zum Abrufen von Informationen wie Verbindungszeichenfolgen und andere Daten zur Laufzeit zugreifen.  
   
-### So fügen Sie eine benutzerdefinierte Eigenschaft hinzu  
+### <a name="to-add-a-custom-property"></a>So fügen Sie eine benutzerdefinierte Eigenschaft hinzu  
   
-1.  Wählen Sie im **BDC\-Explorer** den Knoten aus, der das Modellelement darstellt, für den Sie eine benutzerdefinierte Eigenschaft anwenden möchten.  
+1.  In der **BDC-Explorer**, wählen Sie den Knoten aus, die das Modellelement darstellt, zu dem Sie eine benutzerdefinierte Eigenschaft anwenden möchten.  
   
-2.  Wählen Sie auf der Menüleiste die Optionen **Ansicht** und **Eigenschaftenfenster** aus.  
+2.  Wählen Sie in der Menüleiste **Ansicht**, **Fenster "Eigenschaften"**.  
   
-3.  Im Fenster **Eigenschaften** wählen Sie die Eigenschaft **Benutzerdefinierte Eigenschaften**, und wählen Sie dann die Schaltfläche mit den drei Auslassungszeichen \(![Auslassungszeichen im ASP.NET Mobile-Designer](~/sharepoint/media/mwellipsis.gif "Auslassungszeichen im ASP.NET Mobile-Designer")\).  
+3.  In der **Eigenschaften** Fenster, wählen Sie die **Custom Properties** -Eigenschaft, und wählen Sie dann die Schaltfläche mit den Auslassungspunkten (![ASP.NET Mobile-Designer Ellipse](../sharepoint/media/mwellipsis.gif "ASP. NET-Mobile-Designer Ellipse")).  
   
-     Das Dialogfeld **Eigenschaften\-Editor** wird angezeigt.  
+     Die **Eigenschaften-Editor** Dialogfeld wird angezeigt.  
   
-4.  Im Textfeld in der Spalte **Name**, geben Sie den Namen der Eigenschaft an.  
+4.  In das Textfeld in der **Namen** Spalte Geben Sie den Namen der Eigenschaft.  
   
-5.  Für das Feld **Typ** der benutzerdefinierten Eigenschaft, wählen Sie den entsprechenden Datentyp aus.  
+5.  Für die **Typ** der benutzerdefinierten Eigenschaft, Feld Wählen Sie den entsprechenden Datentyp.  
   
-6.  Für das Feld **Wert** der benutzerdefinierten Eigenschaft, geben Sie einen Wert an, und wählen Sie dann die Schaltfläche **OK** aus.  
+6.  Für die **Wert** der benutzerdefinierten Eigenschaft, Feld Geben Sie einen Wert ein, und wählen Sie dann die **OK** Schaltfläche.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Entwerfen eines Business Data Connectivity-Modells](../sharepoint/designing-a-business-data-connectivity-model.md)   
  [Entwerfen eines Business Data Connectivity-Modells](../sharepoint/designing-a-business-data-connectivity-model.md)   
  [Erstellen eines Business Data Connectivity-Modells](../sharepoint/creating-a-business-data-connectivity-model.md)   

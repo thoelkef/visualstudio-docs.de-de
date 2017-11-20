@@ -1,27 +1,30 @@
 ---
-title: "IDispatchEx::GetMemberName | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IDispatchEx::GetMemberName | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IDispatchEx.GetMemberName
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "GetMemberName-Methode"
+helpviewer_keywords: GetMemberName method
 ms.assetid: 5e59b63c-b781-4b90-88fd-40603a379a2d
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 63489dad447ece245e14e483127cb67327d55fe5
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# IDispatchEx::GetMemberName
+# <a name="idispatchexgetmembername"></a>IDispatchEx::GetMemberName
 Ruft den Namen eines Members ab.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 HRESULT GetMemberName(  
@@ -30,22 +33,22 @@ HRESULT GetMemberName(
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `id`  
- Bezeichnet den Member.  Verwendung `GetDispID` oder `GetNextDispID`, in der Dispatchbezeichner.  
+ Bezeichnet den Member. Verwendet `GetDispID` oder `GetNextDispID` die Dispatch-ID abrufen.  
   
  `pbstrName`  
- Adresse von `BSTR`, die den Namen des Members empfängt.  Die Anwendung ist für die Freigabe dieses Werts zuständig.  
+ Adresse der einen `BSTR` , empfängt der Name des Elements. Die aufrufende Anwendung ist für die Freigabe dieses Werts verantwortlich.  
   
-## Rückgabewert  
- Gibt eine der folgenden Werte:  
+## <a name="return-value"></a>Rückgabewert  
+ Gibt einen der folgenden Werte zurück:  
   
 |||  
 |-|-|  
 |`S_OK`|Erfolgreich.|  
-|`DISP_E_UNKNOWNNAME`|Der Name ist nicht bekannt.|  
+|`DISP_E_UNKNOWNNAME`|Der Name wurde nicht bekannt.|  
   
-## Beispiel  
+## <a name="example"></a>Beispiel  
   
 ```  
 HRESULT hr;  
@@ -68,7 +71,7 @@ HRESULT hr;
    }  
 ```  
   
-## Siehe auch  
- [IDispatchEx\-Schnittstelle](../../winscript/reference/idispatchex-interface.md)   
+## <a name="see-also"></a>Siehe auch  
+ [IDispatchEx-Schnittstelle](../../winscript/reference/idispatchex-interface.md)   
  [IDispatchEx::GetDispID](../../winscript/reference/idispatchex-getdispid.md)   
  [IDispatchEx::GetNextDispID](../../winscript/reference/idispatchex-getnextdispid.md)

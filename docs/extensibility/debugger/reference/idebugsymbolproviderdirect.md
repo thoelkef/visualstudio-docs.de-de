@@ -1,48 +1,49 @@
 ---
-title: "IDebugSymbolProviderDirect | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "IDebugSymbolProviderDirect-Schnittstelle"
+title: IDebugSymbolProviderDirect | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: IDebugSymbolProviderDirect interface
 ms.assetid: 872b04a8-70de-4ab5-aceb-684c81828545
-caps.latest.revision: 6
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 6
+caps.latest.revision: "6"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 077a4422d7e8edde460e03dd2a26675df3fdd6fb
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugSymbolProviderDirect
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Stellt ein Symbol für, der direkte Zugriff auf die Metadaten und zu den wichtigsten Schnittstellen Symbol verfügt.  
+# <a name="idebugsymbolproviderdirect"></a>IDebugSymbolProviderDirect
+Stellt einen Symbol-Anbieter, der direkte Zugriff auf Metadaten und Core Symbol Schnittstellen hat.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 IDebugSymbolProviderDirect: IUnknown  
 ```  
   
-## Methoden  
- Diese Schnittstelle implementiert die folgenden Methoden:  
+## <a name="methods"></a>Methoden  
+ Diese Schnittstelle implementiert, die folgenden Methoden:  
   
 |Methode|Beschreibung|  
-|-------------|------------------|  
-|[GetAppIDFromAddress](../../../extensibility/debugger/reference/idebugsymbolproviderdirect-getappidfromaddress.md)|Ruft den bereitgestellten Bezeichner der Anwendungsdomäne Debug\- Adresse ab.|  
-|[GetCurrentModulesInfo](../../../extensibility/debugger/reference/idebugsymbolproviderdirect-getcurrentmodulesinfo.md)|Ruft Informationen über die Module in der Gruppe Symbol ab oder legt diese fest.|  
-|[GetCurrentModulesState](../../../extensibility/debugger/reference/idebugsymbolproviderdirect-getcurrentmodulesstate.md)|Ruft Informationen zu der Gruppe Symbol ab, aus der der Symbol für Mitglied ist.|  
-|[GetMetaDataImport](../../../extensibility/debugger/reference/idebugsymbolproviderdirect-getmetadataimport.md)|Ruft die Metadaten import Informationen ab.|  
-|[GetMethodFromAddress](../../../extensibility/debugger/reference/idebugsymbolproviderdirect-getmethodfromaddress.md)|Ruft Informationen über die Methode auf dem angegebenen debuggen Adresse ab.|  
+|------------|-----------------|  
+|[GetAppIDFromAddress](../../../extensibility/debugger/reference/idebugsymbolproviderdirect-getappidfromaddress.md)|Ruft den Bezeichner der Anwendungsdomäne der Debug-Adresse ab.|  
+|[GetCurrentModulesInfo](../../../extensibility/debugger/reference/idebugsymbolproviderdirect-getcurrentmodulesinfo.md)|Ruft Informationen zu den Modulen in der Gruppe "Symbol" ab.|  
+|[GetCurrentModulesState](../../../extensibility/debugger/reference/idebugsymbolproviderdirect-getcurrentmodulesstate.md)|Ruft Informationen über die Symbol-Gruppe, die der Symbol-Anbieter angehört.|  
+|[GetMetaDataImport](../../../extensibility/debugger/reference/idebugsymbolproviderdirect-getmetadataimport.md)|Ruft die Metadaten-Import-Informationen ab.|  
+|[GetMethodFromAddress](../../../extensibility/debugger/reference/idebugsymbolproviderdirect-getmethodfromaddress.md)|Ruft Informationen zu der Methode an die angegebene Debug-Adresse ab.|  
 |[GetSymUnmanagedReader](../../../extensibility/debugger/reference/idebugsymbolproviderdirect-getsymunmanagedreader.md)|Ruft einen Symbolreader für nicht verwalteten Code ab.|  
   
-## Hinweise  
- Diese Schnittstelle kann statt den meisten anderen Anbieter Symbol Schnittstellen verwendet werden.  Sie bietet direkten Zugriff auf Metadaten und zum `CorSym`\-Schnittstellen.  
+## <a name="remarks"></a>Hinweise  
+ Diese Schnittstelle kann anstelle der Großteil der Symbol-anbieterschnittstellen verwendet werden. Es bietet direkten Zugriff auf die Metadaten und `CorSym` Schnittstellen.  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  Header: Sh.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  

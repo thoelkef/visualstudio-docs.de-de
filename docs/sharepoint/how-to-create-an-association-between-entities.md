@@ -1,82 +1,83 @@
 ---
-title: "Gewusst wie: Erstellen einer Assoziation zwischen Entit&#228;ten"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "AssociationGroupTool"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "BDC [SharePoint-Entwicklung in Visual Studio], Zuordnen von externen Inhaltstypen"
-  - "BDC [SharePoint-Entwicklung in Visual Studio], Zuordnungen zwischen Entitäten"
-  - "BDC [SharePoint-Entwicklung in Visual Studio], Erstellen einer Zuordnung"
-  - "BDC [SharePoint-Entwicklung in Visual Studio], Verwandte Entitäten"
-  - "Business Data Connectivity-Dienst [SharePoint-Entwicklung in Visual Studio], Zuordnen von externen Inhaltstypen"
-  - "Business Data Connectivity-Dienst [SharePoint-Entwicklung in Visual Studio], Zuordnungen zwischen Entitäten"
-  - "Business Data Connectivity-Dienst [SharePoint-Entwicklung in Visual Studio], Erstellen einer Zuordnung"
-  - "Business Data Connectivity-Dienst [SharePoint-Entwicklung in Visual Studio], Verwandte Entitäten"
+title: "Vorgehensweise: Erstellen einer Assoziation zwischen Entitäten | Microsoft Docs"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: AssociationGroupTool
+dev_langs:
+- VB
+- CSharp
+- VB
+- CSharp
+helpviewer_keywords:
+- BDC [SharePoint development in Visual Studio], create an assocation
+- Business Data Connectivity service [SharePoint development in Visual Studio], associations between entities
+- BDC [SharePoint development in Visual Studio], associations between entities
+- Business Data Connectivity service [SharePoint development in Visual Studio], create an assocation
+- Business Data Connectivity service [SharePoint development in Visual Studio], associate external content types
+- Business Data Connectivity service [SharePoint development in Visual Studio], relate entities
+- BDC [SharePoint development in Visual Studio], relate entities
+- BDC [SharePoint development in Visual Studio], associate external content types
 ms.assetid: 0c095df8-1f40-4c4d-9fed-e125a8429724
-caps.latest.revision: 17
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 16
+caps.latest.revision: "17"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 92c8643a87a6226e03e8726910a459168e8b4c5d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Gewusst wie: Erstellen einer Assoziation zwischen Entit&#228;ten
-  Sie können im Business Data Connectivity \(BDC\)\-Modell Beziehungen zwischen Entitäten definieren, indem Sie Zuordnungen erstellen.  Visual Studio generiert Methoden, die Consumern des Modells zu jeder Zuordnung Informationen bereitstellen.  Diese Methoden können von SharePoint\-Webparts, Listen oder benutzerdefinierten Anwendungen verwendet werden, um Datenbeziehungen in einer Benutzeroberfläche anzuzeigen \(UI\).  
+# <a name="how-to-create-an-association-between-entities"></a>Gewusst wie: Erstellen einer Assoziation zwischen Entitäten
+  Sie können Beziehungen zwischen Entitäten in Ihrem Modell Business Data Connectivity (BDC) durch das Erstellen von Zuordnungen definieren. Methoden, die Consumern des Modells mit Informationen über jede Zuordnung bereitstellen, generiert Visual Studio. Diese Methoden können von SharePoint-Webparts, Listen oder benutzerdefinierten Anwendungen zum Anzeigen von datenbeziehungen in einer Benutzeroberfläche (UI) verwendet werden.  
   
- Sie können im BDC\-Designer zwei Typen von Zuordnungen erstellen: auf Fremdschlüsseln basierte Zuordnungen und Zuordnungen ohne Fremdschlüssel.  Weitere Informationen finden Sie unter [Erstellen einer Assoziation zwischen Entitäten](../sharepoint/creating-an-association-between-entities.md).  
+ Sie können zwei Arten von Zuordnungen im BDC-Designer erstellen: foreign Key-basierte Zuordnungen und Fremdschlüssel Zuordnungen. Weitere Informationen finden Sie unter [erstellen eine Zuordnung zwischen Entitäten](../sharepoint/creating-an-association-between-entities.md).  
   
-### So erstellen Sie eine Zuordnung zwischen Entitäten  
+### <a name="to-create-an-association-between-entities"></a>So erstellen eine Zuordnung zwischen Entitäten  
   
-1.  Auf der Registerkarte **BusinessDataConnectivityWerkzeugkasten**, wählen Sie das Element **Zuordnung** aus.  
+1.  Auf der **BusinessDataConnectivity** auf der Registerkarte die **Toolbox**, wählen Sie die **Zuordnung** Element.  
   
-2.  Wählen Sie im BDC\-Designer die Quellentität aus, und klicken Sie dann auf die Zielentität aus.  
+2.  Wählen Sie auf dem BDC-Designer die Quellentität, und wählen Sie dann auf die Zielentität.  
   
-     Der **Zuordnungs\-Editor** wird angezeigt.  
+     Die **Zuordnungs-Editor** angezeigt wird.  
   
-3.  Wenn Sie eine fremdschlüsselbasierte Zuordnung erstellen möchten, aktivieren Sie das Kontrollkästchen **Ist Foreign Key Association**.  
+3.  Wenn Sie eine foreign Key-basierte Zuordnung erstellen möchten, wählen Sie die **ist Foreign Key Association** Kontrollkästchen.  
   
-    1.  In der Spalte **Quell\-ID** der Tabelle **Bezeichnerzuordnung**, wählen Sie den Bezeichner neben jedem entsprechenden Typdeskriptor aus, der in der Spalte **Feld** wird.  
+    1.  In der **Datenquellen-ID:** Spalte die **Bezeichner zuordnen** table, wählen Sie den Bezeichner neben jeder übereinstimmenden Typdeskriptor, die in angezeigt wird der **Feld** Spalte.  
   
-         Wählen Sie in der Spalte **Quell\-ID** beispielsweise `ContactID` neben dem `ReadList.salesOrderList.SalesOrderList.SalesOrder.ContactID`\-Typdeskriptor und dem `ReadItem.salesOrder.SalesOrder.ContactID`\-Typdeskriptor aus.  
+         Beispielsweise ist In der **Datenquellen-ID:** Spalte `ContactID` neben der `ReadList.salesOrderList.SalesOrderList.SalesOrder.ContactID` Typdeskriptor und `ReadItem.salesOrder.SalesOrder.ContactID` Typdeskriptor.  
   
-4.  Wenn Sie eine Zuordnung ohne Fremdschlüssel erstellen möchten, deaktivieren Sie das Kontrollkästchen **Ist Foreign Key Association**.  
+4.  Wenn Sie eine Zuordnung ohne Fremdschlüssel erstellen möchten, deaktivieren Sie die **ist Foreign Key Association** Kontrollkästchen.  
   
-5.  Klicken Sie auf die Schaltfläche **OK**.  
+5.  Klicken Sie auf die Schaltfläche **OK** .  
   
-6.  Im BDC\-Designer wird eine Zeile angezeigt, die die Zuordnung zwischen der Quellentität und der Zielentität darstellt.  
+6.  Im BDC-Designer wird Sie eine Linie, die Zuordnung darstellt, zwischen die Quellentität und der Zielentität angezeigt.  
   
-     Visual Studio fügt der Dienstklasse der Zielentität und der Dienstklasse der Quellentität eine Zuordnungsnavigatormethode hinzu.  Weitere Informationen zu Zuordnungsnavigationsmethoden, Sie finden. [Unterstützte Vorgänge](http://go.microsoft.com/fwlink/?LinkId=169286)  
+     Visual Studio fügt eine Zuordnung Navigator-Methode, um die Dienstklasse der Zielentität und die Dienstklasse der Quellentität. Weitere Informationen zur Zuordnung Navigationsmethoden finden Sie unter [unterstützte Vorgänge](http://go.microsoft.com/fwlink/?LinkId=169286).  
   
-7.  Fügen Sie in der Zuordnungsnavigatormethode der Quellentität Code hinzu, mit dem eine Auflistung von Zielentitäten zurückgegeben wird.  
+7.  Fügen Sie Code, der eine Auflistung von Zielentitäten zurückgibt, in der Zuordnung Navigator-Methode der Quellentität.  
   
-8.  Fügen Sie in der Zuordnungsnavigatormethode der Zielentität Code hinzu, mit dem die verknüpfte Quellentität zurückgegeben wird.  
+8.  Fügen Sie Code, der die verwandten Quellentität zurückgibt, in der Zuordnung Navigator-Methode der Zielentität.  
   
-     Beispiele für Zuordnungsnavigatormethoden finden Sie unter [Erstellen einer Assoziation zwischen Entitäten](../sharepoint/creating-an-association-between-entities.md).  
+     Beispiele für Methoden der Zuordnung Navigator, finden Sie unter [erstellen eine Zuordnung zwischen Entitäten](../sharepoint/creating-an-association-between-entities.md).  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Erstellen einer Assoziation zwischen Entitäten](../sharepoint/creating-an-association-between-entities.md)   
  [Entwerfen eines Business Data Connectivity-Modells](../sharepoint/designing-a-business-data-connectivity-model.md)   
- [Gewusst wie: Hinzufügen einer Finder-Methode](../sharepoint/how-to-add-a-finder-method.md)   
- [Gewusst wie: Hinzufügen einer bestimmten Finder-Methode](../sharepoint/how-to-add-a-specific-finder-method.md)   
- [Gewusst wie: Hinzufügen einer Creator-Methode](../sharepoint/how-to-add-a-creator-method.md)   
- [Gewusst wie: Hinzufügen einer Deleter-Methode](../sharepoint/how-to-add-a-deleter-method.md)   
- [Gewusst wie: Hinzufügen einer Updater-Methode](../sharepoint/how-to-add-an-updater-method.md)   
- [Übersicht über Entwurfstools für BDC-Modelle](../sharepoint/bdc-model-design-tools-overview.md)   
- [Gewusst wie: Hinzufügen eines Parameters zu einer Methode](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
- [Gewusst wie: Definieren einer Methodeninstanz](../sharepoint/how-to-define-a-method-instance.md)   
- [How to: Define the Type Descriptor of a Parameter](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)   
+ [Vorgehensweise: hinzufügen eine Finder-Methode](../sharepoint/how-to-add-a-finder-method.md)   
+ [Vorgehensweise: hinzufügen eine bestimmten Finder-Methode](../sharepoint/how-to-add-a-specific-finder-method.md)   
+ [Vorgehensweise: hinzufügen eine Creator-Methode](../sharepoint/how-to-add-a-creator-method.md)   
+ [Vorgehensweise: Hinzufügen einer Deleter-Methode](../sharepoint/how-to-add-a-deleter-method.md)   
+ [Vorgehensweise: hinzufügen eine Updater-Methode](../sharepoint/how-to-add-an-updater-method.md)   
+ [Übersicht über Entwurfstools für BDC-Modell](../sharepoint/bdc-model-design-tools-overview.md)   
+ [Vorgehensweise: Hinzufügen eines Parameters einer Methode](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
+ [Vorgehensweise: Definieren einer Methodeninstanz](../sharepoint/how-to-define-a-method-instance.md)   
+ [Vorgehensweise: Definieren des Typdeskriptors eines Parameters](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)   
  [Exemplarische Vorgehensweise: Erstellen einer externen Liste in SharePoint mithilfe von Geschäftsdaten](../sharepoint/walkthrough-creating-an-external-list-in-sharepoint-by-using-business-data.md)  
   
   

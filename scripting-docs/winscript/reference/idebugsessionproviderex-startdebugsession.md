@@ -1,25 +1,29 @@
 ---
-title: "IDebugSessionProviderEx:StartDebugSession | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IDebugSessionProviderEx:StartDebugSession | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IDebugSessionProviderEx:StartDebugSession
 apilocation: scrobj.dll
 ms.assetid: 247337ca-476c-4aa7-8500-d84fd1d98176
-caps.latest.revision: 4
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 4
+caps.latest.revision: "4"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: c6f68d5bef91a71d475ea8b0c5131b5945b4c930
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# IDebugSessionProviderEx:StartDebugSession
-Initiiert eine Debugsitzung mit der angegebenen Anwendung.  
+# <a name="idebugsessionproviderexstartdebugsession"></a>IDebugSessionProviderEx:StartDebugSession
+Startet eine Debugsitzung mit der angegebenen Anwendung an.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 HRESULT StartDebugSession(  
@@ -28,23 +32,23 @@ HRESULT StartDebugSession(
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `pda`  
- \[in\] Gibt die Debugsitzung Anwendung.  
+ [in] Gibt die Anwendung debuggen.  
   
  `fQuery`  
- \[in\] Gibt True eine Abfrage an.  
+ [in] "True" gibt eine Abfrage an.  
   
-## Rückgabewert  
- Die Methode gibt ein `HRESULT` zurück.  Zu den möglichen Werten zählen, aber nicht zu, die in der folgenden Tabelle beschränkt.  
+## <a name="return-value"></a>Rückgabewert  
+ Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
   
-|Wert|Description|  
-|----------|-----------------|  
+|Wert|Beschreibung|  
+|-----------|-----------------|  
 |`S_OK`|Die Methode war erfolgreich.|  
   
-## Hinweise  
- Diese Methode initiiert eine Debugsitzung mit der angegebenen Anwendung.  Der Debugger sollte `IRemoteDebugApplication::ConnectDebugger` aufrufen, bevor er von diesem Aufruf zurückgibt.  
+## <a name="remarks"></a>Hinweise  
+ Diese Methode startet eine Debugsitzung mit der angegebenen Anwendung. Der Debugger sollte Aufrufen `IRemoteDebugApplication::ConnectDebugger` vor der Rückgabe von diesen Aufruf.  
   
-## Siehe auch  
- [IDebugSessionProviderEx\-Schnittstelle](../../winscript/reference/idebugsessionproviderex-interface.md)   
+## <a name="see-also"></a>Siehe auch  
+ [IDebugSessionProviderEx-Schnittstelle](../../winscript/reference/idebugsessionproviderex-interface.md)   
  [IRemoteDebugApplication::ConnectDebugger](../../winscript/reference/iremotedebugapplication-connectdebugger.md)

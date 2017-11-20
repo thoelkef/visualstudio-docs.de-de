@@ -1,45 +1,47 @@
 ---
-title: "Bereitstellungsmanifeste f&#252;r Office-Projektmappen"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "Office-Anwendungen [Office-Entwicklung in Visual Studio], Bereitstellungsmanifeste"
-  - "Bereitstellungsmanifeste [Office-Entwicklung in Visual Studio]"
-  - "Manifeste [Office-Entwicklung in Visual Studio], Bereitstellung"
-  - "Office-Entwicklung in Visual Studio, Bereitstellungsmanifeste"
+title: "Bereitstellungsmanifeste für Office-Projektmappen | Microsoft Docs"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- Office applications [Office development in Visual Studio], deployment manifests
+- deployment manifests [Office development in Visual Studio]
+- manifests [Office development in Visual Studio], deployment
+- Office development in Visual Studio, deployment manifests
 ms.assetid: 3fb29743-fb96-4d61-a99a-9b1bbafeee13
-caps.latest.revision: 22
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 21
+caps.latest.revision: "22"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: f6569c8c4a2420949862b8d09532c217606073d8
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Bereitstellungsmanifeste f&#252;r Office-Projektmappen
-  Bei einem Bereitstellungsmanifest handelt es sich um eine XML\-Datei zur Beschreibung der Bereitstellungseinstellungen einer Office\-Projektmappe und zur Angabe der aktuellen Anwendungsversion.  
+# <a name="deployment-manifests-for-office-solutions"></a>Bereitstellungsmanifeste für Office-Projektmappen
+  Ein Bereitstellungsmanifest ist eine XML-Datei, die die bereitstellungseinstellungen der Office-Projektmappe beschreibt und identifiziert die aktuelle Anwendungsversion.  
   
- Für die Office\-Entwicklung in Visual Studio wird das im [ClickOnce Deployment Manifest](../deployment/clickonce-deployment-manifest.md)\-Verweis definierte [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]\-Bereitstellungsmanifestschema verwendet.  
+ Die Office-Entwicklung in Visual Studio verwendet die [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] -Bereitstellung Anwendungsmanifestschema, das definiert, der [ClickOnce-Bereitstellungsmanifest](/visualstudio/deployment/clickonce-deployment-manifest) Verweis.  
   
-## Hinweise  
- Die Bereitstellungsmanifestdatei für Office\-Projektmappen gibt die aktuelle Version und andere Bereitstellungseinstellungen an.  Sie verweist auf das Anwendungsmanifest, das die aktuelle Version der Projektmappe und alle in der Projektmappe enthaltenen Dateien beschreibt.  
+## <a name="remarks"></a>Hinweise  
+ Für Office-Projektmappen die Bereitstellungsmanifestdatei identifiziert die aktuelle Version und anderer bereitstellungseinstellungen. Er verweist auf das Anwendungsmanifest, in dem beschrieben wird die aktuelle Version der Projektmappe und alle Dateien, die in der Projektmappe enthalten sind.  
   
-## Dateinamensyntax  
- Der Name einer Bereitstellungsmanifestdatei muss mit der Erweiterung .vsto enden.  Obwohl es sich um ein standardmäßiges [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] Bereitstellungsmanifest handelt, weicht die Erweiterung auf die Visual Studio Tools zu aktivieren, damit Office\-Laufzeit die Datei bearbeitet.  
+## <a name="file-name-syntax"></a>Dateinamensyntax  
+ Der Name einer Bereitstellungsmanifestdatei muss mit der Dateinamenerweiterung ".vsto" enden. Obwohl es sich um ein Standard ist [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] Bereitstellungsmanifest, die Erweiterung unterscheidet sich um Visual Studio-Tools für Office-Laufzeit, behandeln die Datei zu aktivieren.  
   
-## Beispiel  
- Im Folgenden Codebeispiel wird ein Bereitstellungsmanifest für Visual Studio Tools für Office\-Projektmappen.  
+## <a name="example"></a>Beispiel  
+ Das folgende Codebeispiel veranschaulicht ein Bereitstellungsmanifest für eine Visual Studio-Tools für Office-Projektmappe.  
   
 ```  
-  
+<?xml version="1.0" encoding="utf-8"?>  
 <asmv1:assembly   
   xsi:schemaLocation=  
     "urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd"   
@@ -185,7 +187,7 @@ caps.handback.revision: 21
 </asmv1:assembly>  
 ```  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Anwendungsmanifeste für Office-Projektmappen](../vsto/application-manifests-for-office-solutions.md)  
   
   

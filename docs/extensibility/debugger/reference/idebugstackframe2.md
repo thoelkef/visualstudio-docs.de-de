@@ -1,65 +1,65 @@
 ---
-title: "IDebugStackFrame2 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugStackFrame2"
-helpviewer_keywords: 
-  - "IDebugStackFrame2-Schnittstelle"
+title: IDebugStackFrame2 | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugStackFrame2
+helpviewer_keywords: IDebugStackFrame2 interface
 ms.assetid: bd212a6a-dcc6-4756-a77a-e8dfda38b104
-caps.latest.revision: 14
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 14
+caps.latest.revision: "14"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 4d7c08cd7fc89e33ef9d505c9e32c23737ef7e84
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugStackFrame2
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
+# <a name="idebugstackframe2"></a>IDebugStackFrame2
 Diese Schnittstelle stellt einen einzelnen Stapelrahmen in einer Aufrufliste in einem bestimmten Thread dar.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 IDebugStackFrame2 : IUnknown  
 ```  
   
-## Hinweise für Implementierer  
- Das Debugmodul \(DE\) implementiert diese Schnittstelle, um einen Stapelrahmen darstellt.  
+## <a name="notes-for-implementers"></a>Hinweise für Implementierer  
+ Die Debugging-Modul (DE) implementiert diese Schnittstelle, um einen Stapelrahmen darstellen.  
   
-## Hinweise für Aufrufer  
- Aufruf [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) , um eine [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md)\-Schnittstelle abzurufen.  Rufen Sie [Weiter](../../../extensibility/debugger/reference/ienumdebugframeinfo2-next.md) auf, um eine [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) Struktur abzurufen, die die `IDebugStackFrame2`\-Schnittstelle enthält.  
+## <a name="notes-for-callers"></a>Hinweise für Aufrufer  
+ Rufen Sie [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) zum Abrufen einer [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md) Schnittstelle. Rufen Sie [Weiter](../../../extensibility/debugger/reference/ienumdebugframeinfo2-next.md) zum Abrufen einer [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) -Struktur, enthält die `IDebugStackFrame2` Schnittstelle.  
   
-## Methoden in die Vtable\-Reihenfolge  
- In der folgenden Tabelle werden die Methoden von `IDebugStackFrame2`an.  
+## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
+ Die folgende Tabelle zeigt die Methoden der `IDebugStackFrame2`.  
   
 |Methode|Beschreibung|  
-|-------------|------------------|  
-|[GetCodeContext](../../../extensibility/debugger/reference/idebugstackframe2-getcodecontext.md)|Ruft den Kontext des Codes für diesen Stapelrahmen ab.|  
+|------------|-----------------|  
+|[GetCodeContext](../../../extensibility/debugger/reference/idebugstackframe2-getcodecontext.md)|Ruft den Codekontext für diesen Stapelrahmen ab.|  
 |[GetDocumentContext](../../../extensibility/debugger/reference/idebugstackframe2-getdocumentcontext.md)|Ruft den Dokumentenkontext für diesen Stapelrahmen ab.|  
 |[GetName](../../../extensibility/debugger/reference/idebugstackframe2-getname.md)|Ruft den Namen des Stapelrahmens ab.|  
 |[GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md)|Ruft eine Beschreibung des Stapelrahmens ab.|  
-|[GetPhysicalStackRange](../../../extensibility/debugger/reference/idebugstackframe2-getphysicalstackrange.md)|Ruft eine Darstellung des abhängigen MACHINE des Bereichs der physikalischen Adressen ab, die einem Stapelrahmen zugeordnet sind.|  
-|[GetExpressionContext](../../../extensibility/debugger/reference/idebugstackframe2-getexpressioncontext.md)|Ruft einen Auswertungs Elementkontext für das diese der Ausdrucksauswertung innerhalb des aktuellen Kontexts eines Stapelrahmens und des Threads ab.|  
-|[GetLanguageInfo](../../../extensibility/debugger/reference/idebugstackframe2-getlanguageinfo.md)|Ruft die Sprache ab, die einem Stapelrahmen zugeordnet ist.|  
-|[GetDebugProperty](../../../extensibility/debugger/reference/idebugstackframe2-getdebugproperty.md)|Ruft eine Beschreibung der Eigenschaften ab, die einem Stapelrahmen zugeordnet sind.|  
-|[\[EnumProperties](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md)|Erstellt einen Enumerator für Stapelrahmen Properties.|  
-|[GetThread](../../../extensibility/debugger/reference/idebugstackframe2-getthread.md)|Ruft den Thread ab, der einem Stapelrahmen zugeordnet ist.|  
+|[GetPhysicalStackRange](../../../extensibility/debugger/reference/idebugstackframe2-getphysicalstackrange.md)|Ruft eine rechnerabhängige Darstellung des Bereichs von physischen Adressen, die einen Stapelrahmen zugeordnet.|  
+|[GetExpressionContext](../../../extensibility/debugger/reference/idebugstackframe2-getexpressioncontext.md)|Ruft einen Evaluierungskontext für die Auswertung von Ausdrücken im aktuellen Kontext einer Stapelrahmen und die Threads ausführt.|  
+|[GetLanguageInfo](../../../extensibility/debugger/reference/idebugstackframe2-getlanguageinfo.md)|Ruft die Sprache, die einen Stapelrahmen zugeordnet.|  
+|[GetDebugProperty](../../../extensibility/debugger/reference/idebugstackframe2-getdebugproperty.md)|Ruft eine Beschreibung der Eigenschaften, die einen Stapelrahmen zugeordnet.|  
+|[EnumProperties](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md)|Erstellt einen Enumerator für die Stack-Frame-Eigenschaften.|  
+|[GetThread](../../../extensibility/debugger/reference/idebugstackframe2-getthread.md)|Ruft den Thread, der einen Stapelrahmen zugeordnet.|  
   
-## Hinweise  
- Diese Schnittstelle wird erhalten nur, wenn das Programm, das gedebuggt wird, an einem Haltepunkt angehalten wurde \(entweder verursacht durch einen USER\-festgelegten Haltepunkt oder eine Ausnahme\).  Von dieser Schnittstelle kann ein Ausdruckskontext abgerufen werden, um Ausdrücke auswerten, kann eine Liste von Registern zurückgegeben werden, oder die Aufrufliste kann abgerufen und überprüft werden.  
+## <a name="remarks"></a>Hinweise  
+ Diese Schnittstelle wird abgerufen, nur, wenn das Programm, das gerade gedebuggt wird an einem Haltepunkt angehalten wurde (entweder durch einen Benutzer festgelegten Haltepunkt oder verursacht eine Ausnahme). Von dieser Schnittstelle eine Ausdruckskontext abgerufen werden kann, um Ausdrücke ausgewertet werden, eine Liste mit Registrierungen zurückgegeben werden kann oder die Aufrufliste abgerufen und untersucht werden kann.  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  Header: msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Siehe auch  
- [Core\-Schnittstellen](../../../extensibility/debugger/reference/core-interfaces.md)
+## <a name="see-also"></a>Siehe auch  
+ [Wichtige Schnittstellen](../../../extensibility/debugger/reference/core-interfaces.md)

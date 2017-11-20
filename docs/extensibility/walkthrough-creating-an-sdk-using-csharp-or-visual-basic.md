@@ -4,34 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: ef96a249-5eef-402a-a8d5-d74cb49239bd
-caps.latest.revision: 20
+caps.latest.revision: "20"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: f5f944dad46225a70192bbfb0dbd0d1dc6dc861a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: d40de5bedbb0e77aee2a0dbed34f8dc22d3835c9
-ms.contentlocale: de-de
-ms.lasthandoff: 09/06/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="walkthrough-creating-an-sdk-using-c-or-visual-basic"></a>Exemplarische Vorgehensweise: Erstellen einer SDKS mit c# oder Visual Basic
 In dieser exemplarischen Vorgehensweise erfahren Sie, wie Sie einen einfachen mathematischen Bibliothek SDK mit Visual c# erstellen und dann das SDK als eine Visual Studio-Erweiterung (VSIX) verpacken. Sie müssen die folgenden Verfahren ausführen:  
@@ -57,7 +42,8 @@ In dieser exemplarischen Vorgehensweise erfahren Sie, wie Sie einen einfachen ma
   
 5.  Benennen Sie **"Class1.cs"** auf **Arithmetic.cs** und aktualisieren, damit Sie entsprechend folgendem Code:  
   
-     [!code-csharp[CreatingAnSDKUsingWinRT Nr. 3](../extensibility/codesnippet/CSharp/walkthrough-creating-an-sdk-using-csharp-or-visual-basic_1.cs)][!code-vb[CreatingAnSDKUsingWinRT Nr. 3  ](../extensibility/codesnippet/VisualBasic/walkthrough-creating-an-sdk-using-csharp-or-visual-basic_1.vb)]  
+     [!code-csharp[CreatingAnSDKUsingWinRT#3](../extensibility/codesnippet/CSharp/walkthrough-creating-an-sdk-using-csharp-or-visual-basic_1.cs)]
+     [!code-vb[CreatingAnSDKUsingWinRT#3](../extensibility/codesnippet/VisualBasic/walkthrough-creating-an-sdk-using-csharp-or-visual-basic_1.vb)]  
   
 6.  In **Projektmappen-Explorer**, öffnen Sie das Kontextmenü für die **Lösung "SimpleMath"** Knoten, und wählen Sie dann **Configuration Manager**.  
   
@@ -86,7 +72,7 @@ In dieser exemplarischen Vorgehensweise erfahren Sie, wie Sie einen einfachen ma
   
 6.  Ersetzen Sie den vorhandenen XML-Code durch folgendes XML:  
   
-     [!code-xml[CreatingAnSDKUsingWinRT Nr. 1](../extensibility/codesnippet/XML/walkthrough-creating-an-sdk-using-csharp-or-visual-basic_2.xml)]
+     [!code-xml[CreatingAnSDKUsingWinRT#1](../extensibility/codesnippet/XML/walkthrough-creating-an-sdk-using-csharp-or-visual-basic_2.xml)]
   
 7.  In **Projektmappen-Explorer**, wählen Sie die **SimpleMathVSIX** Projekt.  
   
@@ -245,7 +231,8 @@ In dieser exemplarischen Vorgehensweise erfahren Sie, wie Sie einen einfachen ma
   
 11. Aktualisieren Sie die Datei "MainPage.Xaml.cs", um entsprechend folgendem Code:  
   
-     [!code-csharp[CreatingAnSDKUsingWinRTDemoApp Nr. 2](../extensibility/codesnippet/CSharp/walkthrough-creating-an-sdk-using-csharp-or-visual-basic_5.cs)][!code-vb[CreatingAnSDKUsingWinRTDemoApp Nr. 2  ](../extensibility/codesnippet/VisualBasic/walkthrough-creating-an-sdk-using-csharp-or-visual-basic_5.vb)]  
+     [!code-csharp[CreatingAnSDKUsingWinRTDemoApp#2](../extensibility/codesnippet/CSharp/walkthrough-creating-an-sdk-using-csharp-or-visual-basic_5.cs)]
+     [!code-vb[CreatingAnSDKUsingWinRTDemoApp#2](../extensibility/codesnippet/VisualBasic/walkthrough-creating-an-sdk-using-csharp-or-visual-basic_5.vb)]  
   
 12. Drücken Sie die Taste F5, um die app auszuführen.  
   

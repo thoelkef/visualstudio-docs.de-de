@@ -1,41 +1,42 @@
 ---
-title: "Vereinfachen des Einbettens | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Editoren [Visual Studio SDK], Benutzerdefiniert - einfache anzeigen einbetten"
+title: Einbetten von vereinfacht | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: editors [Visual Studio SDK], custom - simple view embedding
 ms.assetid: f1292478-a57d-48ec-8c9e-88a23f04ffe5
-caps.latest.revision: 16
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 16
+caps.latest.revision: "16"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: d4315a55b74d938576572b0630f5dca553643a24
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Vereinfachen des Einbettens
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Vereinfachte Einbettung ist in einem Editor aktiviert sein, wenn die Dokumente Objekt ist \(d. h. ein untergeordnetes Element\), [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]gemachte untergeordnet, und die <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane>\-Schnittstelle wird implementiert, um die zugehörigen Befehle Fenster zu behandeln.  Vereinfacht kann das Einbetten von Editoren keine aktive Steuerelemente des Hosts.  Die Objekte, die verwendet werden, um einen Editor mit vereinfachter Einbettung zu erstellen, werden in der folgenden Abbildung gezeigt.  
+# <a name="simplified-embedding"></a>Einbetten von vereinfacht
+Vereinfachte Einbetten in einem Editor aktiviert ist, wenn seine dokumentansichtsobjekts übergeordnet ist (d. h. ein untergeordnetes Element des vorgenommen) [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], und die <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane> Schnittstelle wird implementiert, um die Befehle "Fenster" zu behandeln. Vereinfachte Einbetten von Editoren können keine aktive Steuerelemente hosten. Beim Erstellen eines Editors mit vereinfachten einbetten verwendeten Objekte sind in der folgenden Abbildung gezeigt.  
   
- ![Grafik zum vereinfachten Einbettungs&#45;Editor](~/extensibility/media/vssimplifiedembeddingeditor.gif "vsSimplifiedEmbeddingEditor")  
-Editor mit dem Einbetten vereinfachter  
+ ![Vereinfachten Einbettungs-Editor-Grafik](../extensibility/media/vssimplifiedembeddingeditor.gif "VsSimplifiedEmbeddingEditor")  
+-Editor mit vereinfachten einbetten  
   
 > [!NOTE]
->  Von den Objekten in dieser Abbildung lediglich das `CYourEditorFactory`\-Objekt ist erforderlich, um einen dateibasierten StandardEditor zu erstellen.  Wenn Sie einen benutzerdefinierten Editor erstellen, ist es nicht erforderlich, <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2>zu implementieren, da sich der Editor über einen eigenen privaten Mechanismus zur Beibehaltung.  Für gewohnheit Editoren Sie müssen jedoch nicht.  
+>  Der Objekte in dieser Abbildung bietet nur die `CYourEditorFactory` Objekt ist erforderlich, um einen standardmäßigen dateibasierten-Editor zu erstellen. Wenn Sie einen benutzerdefinierten Editor erstellen, müssen Sie nicht implementieren <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2>, da Ihr Editor wahrscheinlich einen eigenen Mechanismus für die dauerhafte Speicherung verfügt. Für nicht benutzerdefinierte Editoren aber müssen Sie.  
   
- Alle Schnittstellen, die implementiert werden, um einen Editor mit vereinfachter Einbettung zu erstellen, werden im `CYourEditorDocument`\-Objekt enthalten.  Um mehrere Ansichten von Dokumenten von Daten zu unterstützen, weisen Sie die Schnittstellen für separate Daten und Objekte, wie in der folgenden Tabelle angegeben.  
+ Alle Schnittstellen implementiert, um das Erstellen eines Editors mit vereinfachten einbetten enthalten sind, der `CYourEditorDocument` Objekt. Jedoch zur Unterstützung von mehreren Ansichten der Dokumentdaten unterteilt werden die Schnittstellen auf separaten Daten und Ansicht-Objekte in der folgenden Tabelle aufgeführt.  
   
-|Schnittstelle|Speicherort der Schnittstelle|Verwendung|  
-|-------------------|-----------------------------------|----------------|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane>|Ansicht|Stellt eine Verbindung mit dem übergeordneten Fenster.|  
-|<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>|Ansicht|Behandelt Befehle.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser>|Ansicht|Aktiviert Statusleisten aktualisiert.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsToolboxUser>|Ansicht|Aktiviert Toolboxelemente.|  
+|Schnittstelle|Speicherort der-Schnittstelle|Verwendung|  
+|---------------|---------------------------|---------|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane>|Ansicht|Stellt die Verbindung mit dem übergeordneten Fenster.|  
+|<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>|Ansicht|Befehle behandelt.|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser>|Ansicht|Ermöglicht Aktualisierungen der Statusleiste.|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsToolboxUser>|Ansicht|Ermöglicht **Toolbox** Elemente.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsFileChangeEvents>|Daten|Sendet Benachrichtigungen, wenn die Datei geändert wird.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat>|Daten|Aktiviert das Feature für einen Dateityp.|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat>|Daten|Aktiviert die Funktion "Speichern unter" für einen Dateityp an.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2>|Daten|Aktiviert die Persistenz für das Dokument.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl>|Daten|Ermöglicht die Änderung der Datei Unterdrückung von Ereignissen, z. B. Reload starten.|
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl>|Daten|Ermöglicht die Unterdrückung der Änderungsereignisse für Datei, z. B. zum erneuten Laden auslösen.|

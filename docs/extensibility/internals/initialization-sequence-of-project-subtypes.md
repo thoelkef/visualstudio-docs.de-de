@@ -1,53 +1,54 @@
 ---
-title: "Initialisierungssequenz Projekt Untertypen | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Projekt-Untertypen, Initialisierungssequenz"
+title: Initialisierungssequenz Projekt Untertypen | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: project subtypes, initialization sequence
 ms.assetid: f657f8c3-5e68-4308-9971-e81e3099ba29
-caps.latest.revision: 15
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 15
+caps.latest.revision: "15"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: fd80a8571a9c6167dab3be355365754a9e1fb7f9
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Initialisierungssequenz Projekt Untertypen
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Die Umgebung erstellt ein Projekt, indem sie die Implementierung des <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A>factory Projekt aufruft.  Beim Erstellen eines Projekts untertyps beginnt, wenn die Umgebung bestimmt, ob die Liste des Projekttyps GUID für die Erweiterung einer Projektdatei nicht leer ist.  Die Projektdatei Namespaceerweiterung und der Projekt\-GUID geben an, ob das Projekt ein, oder  [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)][!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] Projekttyp ist.  Zum Beispiel identifizieren die .vbproj\-Erweiterung C81 C\-45F6\-A57F\-5ABD9991F28F} und {F184B08F\- ein [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] Projekt.  
+# <a name="initialization-sequence-of-project-subtypes"></a>Initialisierungssequenz Projekt Untertypen
+Die Umgebung erstellt ein Projekt durch Aufrufen der Basis projektfactoryimplementierung von <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A>. Die zur Erstellung eines Untertyps Projekt beginnt, wenn die Umgebung bestimmt, dass das Projekt GUID Typliste für ein Projekt die Dateierweiterung nicht leer ist. Die Projekt-Dateierweiterung und der Projekt-GUID angeben, ob das Projekt ist eine [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] oder [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] Projekttyp. Z. B. die vbproj-Erweiterung und {F184B08F-C81C-45F6-A57F-5ABD9991F28F} identifiziert eine [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] Projekt.  
   
-## Die Initialisierung der Umgebung aus Projekt\-Untertypen  
- Die folgenden Schritte sind, die die Initialisierung für ein Projektsystem Sequenz von mehreren Projekt untertypen aggregierte.  
+## <a name="environments-initialization-of-project-subtypes"></a>Initialisierung von der Umgebung Projekt Untertypen  
+ Das folgende Verfahren erläutert die Initialisierungssequenz für ein Projektsystem wird durch mehrere Projekt Untertypen aggregiert.  
   
-1.  Die Umgebung wird das Basis\- <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A>des Projekts und während das Projekt die Projektdatei analysiert es ermittelt, dass die gesamte Liste des Projekttyps GUID nicht `null`ist.  Das Projekt wird ein Projekt, das direkt erstellen.  
+1.  Ruft die Umgebung die Basisprojekt <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A>, während das Projekt auf die Projektdatei analysiert werden, dass die aggregate Projekttyp GUIDs Liste nicht `null`. Das Projekt reagiert nicht mehr, die ihr Projekt direkt erstellen.  
   
-2.  Das Projekt wird `QueryService` auf <xref:Microsoft.VisualStudio.Shell.Interop.SVsCreateAggregateProject> Dienst auf, um einen untertyp Projekt mithilfe der Implementierung der Umgebung der <xref:Microsoft.VisualStudio.Shell.Interop.IVsCreateAggregateProject.CreateAggregateProject%2A>\-Methode zu erstellen.  Innerhalb dieser Methode werden die Umgebung rekursiven Funktionsaufrufe Implementierungen von <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProjectFactory.PreCreateForOuter%2A>, `M:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProject.SetInnerProject(System.Object)` und <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProject.InitializeForOuter%2A>\-Methode, um zunächst die Liste des Projekttyps GUID durchläuft, beginnend mit der äußersten Projekt untertyp.  
+2.  Ruft die Projekt `QueryService` auf <xref:Microsoft.VisualStudio.Shell.Interop.SVsCreateAggregateProject> zu Projektuntertyp mit der Umgebung Implementierung des zu erstellenden Dienst den <xref:Microsoft.VisualStudio.Shell.Interop.IVsCreateAggregateProject.CreateAggregateProject%2A> Methode. Innerhalb dieser Methode stellt die Umgebung rekursive Funktionsaufrufe Ihre Implementierungen von <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProjectFactory.PreCreateForOuter%2A>, `M:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProject.SetInnerProject(System.Object)` und <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProject.InitializeForOuter%2A> Methoden, während es die Liste des Projekts durchläuft geben GUIDs, beginnend mit dem äußersten Projektuntertyp.  
   
-     Die folgenden Details der Initialisierung Bereitstellungsschritte.  
+     Im folgenden sind die Schritte zum Initialisieren.  
   
-    1.  Die Implementierung der Umgebung der Methode <xref:Microsoft.VisualStudio.Shell.Interop.IVsCreateAggregateProject.CreateAggregateProject%2A> methodenaufruf\- `HrCreateInnerProj```mit der folgenden Funktionsdeklaration aufgeführt wird:  
+    1.  Implementierung der Umgebung der <xref:Microsoft.VisualStudio.Shell.Interop.IVsCreateAggregateProject.CreateAggregateProject%2A> Methodenaufrufe "HrCreateInnerProj'' '-Methode mit der folgenden Deklaration:  
   
 <CodeContentPlaceHolder>0</CodeContentPlaceHolder>  
-         Wenn diese Funktion zum ersten Mal d. h. für den äußeren Projekt untertyp aufgerufen wird, werden die Parameter `pOuter` und `pOwner` übergeben, während `null` und die Funktion den äußersten Projekt untertyp `IUnknown` zu `pOuter`festlegt.  
+         Wenn dieser Funktion wird zum ersten Mal, also für den Projektuntertyp äußersten Parameter `pOuter` und `pOwner` als übergeben `null` und setzt die Funktion den Untertyp des äußersten Projekts `IUnknown` auf `pOuter`.  
   
-    2.  Als Nächstes die Umgebung aufrufs\- `HrCreateInnerProj`\-Funktion mit dem zweiten Projekttyp\-GUID in der Liste.  Dieses GUID entspricht dem zweiten inneren Projekt untertyp hin, der dem Basis\- Projekt in der Sequenz Aggregations.  
+    2.  Als Nächstes ruft die Umgebung `HrCreateInnerProj` -Funktion mit dem zweiten Projekttyp GUID in der Liste. Diese GUID entspricht der zweite innere Projektuntertyp ausführen in Einzelschritten gegen die Basis-Projekt in der Sequenz Aggregation.  
   
-    3.  `pOuter` verweist nun auf `IUnknown` des äußeren untertyps Projekt, und `HrCreateInnerProj` Aufrufe, die die Implementierung von <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProjectFactory.PreCreateForOuter%2A> von einem Aufruf der Implementierung von <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProject.SetInnerProject%2A>erfolgreich war.  In <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProjectFactory.PreCreateForOuter%2A>\-Methode übergeben Sie steuernde `IUnknown` des äußersten Projekt untertyps, `pOuter`.  Das Besitze Projekt \(innerer Projekt untertyp hier Projektobjekt ganzes sein muss\) erstellen.  In der <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProject.SetInnerProject%2A>\-Methodenimplementierung übergeben Sie einen Zeiger auf `IUnknown` des inneren Projekts, die aggregiert wird.  Diese beiden Methoden erstellen das Aggregations Objekt und die Implementierung COM\-Aggregations regeln, zu folgen, um sicherzustellen, dass ein Projekt untertyp einen Verweiszähler hochhalten nicht mit sich selbst beendet wird.  
+    3.  Die `pOuter` jetzt verweist auf die `IUnknown` des Untertyps äußersten Projekt und `HrCreateInnerProj` ruft Ihre Implementierung von <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProjectFactory.PreCreateForOuter%2A> gefolgt von einem Aufruf Ihrer Implementierung von <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProject.SetInnerProject%2A>. In <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProjectFactory.PreCreateForOuter%2A> Methode steuernde übergebenen `IUnknown` des Untertyps äußersten Projekt `pOuter`. Das zugehörige Projekt (innere Projektuntertyp) muss hier die aggregierten Projektobjekt zu erstellen. In der <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProject.SetInnerProject%2A> methodenimplementierung, die Sie übergeben einen Zeiger auf die `IUnknown` des inneren Projekts, das aggregiert wird. Diese beiden Methoden erstellen des Aggregationsentwurfs-Objekts, und Ihre Implementierungen von COM Aggregationsregeln, um sicherzustellen, dass ein Projektuntertyp nicht annehmen enthalten einen Verweiszähler auf sich selbst entsprechen müssen.  
   
-    4.  `HrCreateInnerProj` ruft die Implementierung von <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProjectFactory.PreCreateForOuter%2A>an.  In dieser Methode übernimmt das Projekt untertyp ihre Initialisierung.  Sie können Projektmappen von Ereignissen im <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProject.InitializeForOuter%2A>z. B. registrieren.  
+    4.  `HrCreateInnerProj`Ruft die Implementierung der <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProjectFactory.PreCreateForOuter%2A>. Bei dieser Methode funktioniert der Untertyp des Projekts die Initialisierung. Sie können z. B. registrieren Lösung Ereignisse in <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProject.InitializeForOuter%2A>.  
   
-    5.  `HrCreateInnerProj` wird rekursiv aufgerufen, bis die letzte GUID \(das niedrige Projekt\) in der Liste erreicht ist.  Für jeden dieser Aufrufe werden die Schritte, c, d und wiederholt.  `pOuter` zeigt auf den äußersten Projekt untertyp Aggregationsebene für jede `IUnknown` .  
+    5.  `HrCreateInnerProj`ist rekursiv aufgerufen werden, bis die letzte GUID (die Basis-Projekt) in der Liste erreicht ist. Für jede von diesen aufrufen werden die Schritte, bis d, C wiederholt. `pOuter`verweist auf den äußersten Projektuntertyp `IUnknown` für jede Ebene der Aggregation.  
   
- Im folgenden Beispiel sind der programmgesteuerten Vorgang in einer ungefähren Darstellung der <xref:Microsoft.VisualStudio.Shell.Interop.IVsCreateAggregateProject.CreateAggregateProject%2A>\-Methode, da sie von der Umgebung implementiert wird.  Der Code ist nur ein Beispiel. Er ist nicht vorgesehen kompiliert, und alle Fehlerüberprüfung wurde aus Gründen der Übersichtlichkeit entfernt.  
+ Das folgende Beispiel erläutert das programmgesteuerte in eine ungefähre Darstellung der <xref:Microsoft.VisualStudio.Shell.Interop.IVsCreateAggregateProject.CreateAggregateProject%2A> -Methode wird von der Umgebung implementiert. Der Code ist nur ein Beispiel. Es ist nicht vorgesehen, kompiliert werden, und alle fehlerüberprüfung aus Gründen der Übersichtlichkeit entfernt wurde.  
   
-## Beispiel  
+## <a name="example"></a>Beispiel  
   
-### Code  
+### <a name="code"></a>Code  
   
 ```  
 HRESULT CreateAggregateProject  
@@ -133,6 +134,6 @@ HRESULT HrCreateInnerProj
 }  
 ```  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  <xref:Microsoft.VisualStudio.Shell.Flavor>   
- [Projekt\-Untertypen](../../extensibility/internals/project-subtypes.md)
+ [Projektuntertypen](../../extensibility/internals/project-subtypes.md)

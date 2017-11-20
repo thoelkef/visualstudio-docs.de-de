@@ -1,70 +1,74 @@
 ---
-title: "IDispatchEx-Schnittstelle | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
-helpviewer_keywords: 
-  - "IDispatchEx-Schnittstelle"
-  - "IDispatchEx-Schnittstelle, über IDispatchEx"
+title: IDispatchEx-Schnittstelle | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
+helpviewer_keywords:
+- IDispatchEx interface, about IDispatchEx
+- IDispatchEx interface
 ms.assetid: 37a3303f-f78e-4b5b-aac8-b836c92819de
-caps.latest.revision: 12
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 9a100a193f5e3abcb076fb8aaf3d64a0d0c38833
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# IDispatchEx-Schnittstelle
-`IDispatchEx`, eine Erweiterung der `IDispatch`\-Schnittstelle, Stützfunktionen entsprechend für dynamische Sprachen wie Skriptsprachen.  In diesem Abschnitt werden die `IDispatchEx`\-Schnittstelle selbst, die Unterschiede zwischen `IDispatch` und `IDispatchEx` und das Grundprinzip für die Erweiterungen.  Es wird erwartet, dass Leser mit `IDispatch` vertraut sind und Zugriff auf die `IDispatch` Dokumentation haben.  
+# <a name="idispatchex-interface"></a>IDispatchEx-Schnittstelle
+`IDispatchEx`, eine Erweiterung der `IDispatch` Schnittstelle unterstützt Funktionen für dynamischen Sprachen wie z. B. Skriptsprachen geeignet. In diesem Abschnitt wird beschrieben, die `IDispatchEx` Schnittstelle selbst, die Unterschiede zwischen `IDispatch` und `IDispatchEx`, und die Begründung für die Erweiterungen. Es wird erwartet, dass der Leser mit vertraut sind `IDispatch` und haben Zugriff auf die `IDispatch` Dokumentation.  
   
-## Hinweise  
- `IDispatch` wurde im Wesentlichen für Microsoft Visual Basic entwickelt.  Die primäre Einschränkung von `IDispatch` ist, dass sie ausgegangen wird, dass Objekte statisch sind.  Das heißt, da Objekte nicht während der Laufzeit ändern, können Typinformationen sie vollständig zur Kompilierzeit beschreiben.  Dynamische Ablaufmodelle, die in den Skriptsprachen wie Visual Basic Scripting Edition \(VBScript\) und [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] und Objektmodelle wie Dynamic HTML gefunden werden, eine flexiblere Schnittstelle erfordern.  
+## <a name="remarks"></a>Hinweise  
+ `IDispatch`für Microsoft Visual Basic wurde im Grunde entwickelt werden. Die primäre Einschränkung des `IDispatch` ist, es wird davon ausgegangen, dass Objekte statisch sind. Mit anderen Worten, da Objekte während der Laufzeit nicht ändern, kann Typinformationen vollständig diese zum Zeitpunkt der Kompilierung beschreiben. Dynamische-Laufzeit-Modelle, die im Skriptsprachen, z. B. Visual Basic Scripting Edition (VBScript) befinden und [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] und das Objekt modelliert, z. B. Dynamic HTML erfordern eine flexiblere Schnittstelle.  
   
- `IDispatchEx` wurde entwickelt, um alle Dienste von `IDispatch` sowie von einige Erweiterungen bereitzustellen, die für dynamischere spät gebundenen Sprachen wie Skriptsprachen geeignet sind.  Die zusätzlichen Funktionen von `IDispatchEx` über die hinaus, die von `IDispatch` bereitgestellt werden, sind:  
+ `IDispatchEx`wurde entwickelt, um alle Dienste eines bieten `IDispatch` sowie einige Erweiterungen, die für dynamischerer spät gebundenen Sprachen wie z. B. Skriptsprachen geeignet sind. Die zusätzlichen Funktionen der `IDispatchEx` jenseits von bereitgestellten `IDispatch` sind:  
   
--   Fügen Sie neue Member ein Objekt \("expando"\) \- verwenden `GetDispID` mit dem `fdexNameEnsure`\-Flag hinzu.  
+-   Neue Elemente hinzufügen, um ein Objekt ("Expando") – verwenden Sie `GetDispID` mit der `fdexNameEnsure` Flag.  
   
--   Löschen Sie Member einer ObjektVerwendung `DeleteMemberByName` oder `DeleteMemberByDispID`.  
+-   Löschen von Elementen eines Objekts – verwenden Sie `DeleteMemberByName` oder `DeleteMemberByDispID`.  
   
--   Groß\-\/Kleinschreibung Dispatch VorgangVerwendung `fdexNameCaseSensitive` oder `fdexNameCaseInsensitive`.  
+-   Groß-/Kleinschreibung Dispatch-Vorgänge – verwenden Sie `fdexNameCaseSensitive` oder `fdexNameCaseInsensitive`.  
   
--   Suche für Member mit impliziter NameVerwendung `fdexNameImplicit`.  
+-   Suchen Sie nach dem Element mit dem impliziten Namen – verwenden Sie `fdexNameImplicit`.  
   
--   Listen Sie DISPID einer ObjektVerwendung `GetNextDispID` auf.  
+-   Auflisten von DISPIDs eines Objekts – verwenden Sie `GetNextDispID`.  
   
--   Zuordnung von DISPID zu Element NameVerwendung `GetMemberName`.  
+-   Zuordnung von DISPID zu Elementname – verwenden Sie `GetMemberName`.  
   
--   Abrufen von Eigenschaften Objekt MemberVerwendung `GetMemberProperties`.  
+-   Rufen Sie die Eigenschaften des Objektmember – verwenden Sie `GetMemberProperties`.  
   
--   Methodenaufruf mit `this` ZeigerVerwendung `InvokeEx` mit DISPATCH\_METHOD.  
+-   Der Methodenaufruf mit `this` Zeiger – verwenden Sie `InvokeEx` mit DISPATCH_METHOD.  
   
--   Lassen Sie Browser, die das Konzept von Namespaces unterstützen, erhält das Namespaceübergeordnetes Elemente übergeordnete Ebene einer ObjektVerwendung `GetNameSpaceParent`.  
+-   Zulassen von Browsern mit Unterstützung für das Konzept von Namespaces übergeordneten Speicherplatz Name eines Objekts abrufen – verwenden Sie `GetNameSpaceParent`.  
   
- Objekte, die `IDispatchEx` unterstützen, möglicherweise auch `IDispatch` für Abwärtskompatibilität.  Die dynamische Verhalten von Objekten, die `IDispatchEx` unterstützen, hat verschiedene Auswirkungen für die `IDispatch`\-Schnittstelle dieser Objekte.  Beispielsweise nimmt `IDispatch` die folgende Annahme:  
+ -Objekte zur Unterstützung `IDispatchEx` unterstützen möglicherweise auch `IDispatch` für die Abwärtskompatibilität. Der dynamischen Natur der Objekte, die unterstützen `IDispatchEx` hat einige Auswirkungen für die `IDispatch` Schnittstelle dieser Objekte. Beispielsweise `IDispatch` geht die folgenden Annahmen aus:  
   
--   Der Member und der Parameter DISPID müssen während der Lebensdauer des Objekts unverändert bleiben.  Dies ermöglicht einem Client, um einmal zu erhalten DISPID und sie für die spätere Verwendung zwischenzuspeichern.  
+-   Das Element und der Parameter müssen für die Lebensdauer des Objekts DISPIDs konstant bleiben. Dadurch wird einen Client DISPIDs einmal erhalten und zur späteren Verwendung zwischenspeichern.  
   
- Da `IDispatchEx` das Hinzufügen und Löschen von Member zulässig ist, bleibt der Satz gültigen DISPID nicht konstant.  Für `IDispatchEx`, dass die Zuordnung zwischen DISPID und Membernamen unverändert bleiben.  Das bedeutet, wenn ein Member gelöscht wird:  
+ Da `IDispatchEx` ermöglicht das Hinzufügen und Löschen von Elementen, die den Satz von gültigen DISPIDs bleibt nicht konstant. Allerdings `IDispatchEx` erfordert, dass die Zuordnung zwischen DISPID und der Elementname gleich bleibt. Dies bedeutet, dass, wenn ein Element gelöscht wird:  
   
--   Das DISPID kann nicht wiederverwendet werden, bis ein Member mit demselben Namen erstellt wurde.  
+-   Die DISPID kann nicht wiederverwendet werden, bis ein Element mit demselben Namen erstellt wird.  
   
--   Das DISPID muss für `GetNextDispID` gültig bleiben.  
+-   Die DISPID gültig bleiben muss `GetNextDispID`.  
   
--   Das DISPID muss von einem `IDispatch` oder des `IDispatchEx` ordnungsgemäß akzeptiert werden, die Methode\-sie den Member erkennen muss, wie gelöscht und einen entsprechenden Fehlercode zurückgeben \(normalerweise DISP\_E\_MEMBERNOTFOUND oder S\_FALSE\).  
+-   Die DISPID muss ordnungsgemäß akzeptiert werden, mithilfe einer der `IDispatch` oder `IDispatchEx` Methoden – erkennen, wenn das Element gelöscht und einen entsprechende Fehlercode (in der Regel DISP_E_MEMBERNOTFOUND oder "S_FALSE") zurückgegeben werden muss.  
   
-## Beispiele  
- Dieser [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Code in der Funktion test\(\) bewirkt Folgendes:  
+## <a name="examples"></a>Beispiele  
+ Dies [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Code in der Funktion test() bewirkt Folgendes:  
   
--   Erstellt ein neues Objekt, durch Aufrufen des `Object`\-Konstruktors und weist einen Zeiger auf das neue Objekt an den variablen Obj zu.  
+-   Erstellt ein neues Objekt durch Aufrufen der `Object` Konstruktor und weist einen Zeiger auf das neue Objekt der Variable-Objekt  
   
--   Erstellt ein neues Element, das Elem im Objekt namens und weist der Funktionskatze zu diesem Element einen Zeiger auf.  
+-   Erstellt ein neues Element mit dem Namen Elem, in dem Objekt, und weist diesem Element einen Zeiger auf die Funktion Cat.  
   
--   Ruft diese Funktion auf.  Da sie als Methode aufgerufen wird, verweist der `this` Zeiger das Objekt Obj an.  Die Funktion wird ein neues Element, Balkendiagramm, dem Objekt hinzu.  
+-   Ruft diese Funktion. Da es als eine Methode aufgerufen wird, wird der `this` Zeiger verweist auf das Objekt Objekt Die Funktion fügt ein neues Element mit dem Objekt-Leiste.  
   
- Der vollständige HTML\-Code ist:  
+ Der vollständige HTML-Code ist:  
   
 ```  
 <html>  
@@ -95,7 +99,7 @@ test();
 </html>  
 ```  
   
- Ein Steuerelement, das auf die gleiche Webseite platziert wurde, könnte ein Dispatchzeiger zu den Skriptmodulen vom Browser erhalten.  Das Steuerelement kann die Funktion test\(\) dann implementieren:  
+ Ein Steuerelement auf dieser Webseite gleichen platziert konnte einen Dispatch-Zeiger Skriptmodulen des vom Browser abgerufen werden. Das Steuerelement konnte klicken Sie dann die Funktion test() implementieren:  
   
 ```  
 <html>  
@@ -113,23 +117,23 @@ function cat()
 </html>  
 ```  
   
- Code vom Steuerelement, Test, wird die gleiche Aufgabe wie die [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]\-Funktion `test()`.  Beachten Sie, dass diese, Dispatchaufrufe in das ausgeführte [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Modul gemacht und ändern Sie den Zustand des Moduls:  
+ Code aus dem Steuerelement, zu testen, führt die gleiche Aufgabe wie die [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Funktion `test()`. Beachten Sie, dass diese Dispatch-Aufrufe in die Ausführung erfolgen [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Modul und den Zustand des Moduls ändern:  
   
--   Erhält der Dispatchzeiger zur Katzenfunktion mithilfe `GetDispID()`.  
+-   Erhält die Dispatch-Zeiger auf die Cat-Funktion mit `GetDispID()`.  
   
--   Erhält der Dispatchzeiger zur Objektfunktion mithilfe `GetDispID()`.  
+-   Erhält die Dispatch-Zeiger auf das Objekt mit `GetDispID()`.  
   
--   Erstellt ein Objekt, durch Aufrufen der Objektfunktion mit `InvokeEx()` und erhält ein Dispatchzeiger dem neu erstellten Objekt.  
+-   Konstruiert ein Objekt durch Aufrufen der Funktion Objekt mit `InvokeEx()` und erhält einen Dispatch-Zeiger auf das neu erstellte Objekt.  
   
--   Erstellt ein neues Element, Elem, im Objekt unter Verwendung `GetDispID()` mit dem `fdexNameEnsure`\-Flag.  
+-   Erstellt ein neues Element, Elem, in das Objekt mit `GetDispID()` mit der `fdexNameEnsure` Flag.  
   
--   Setzt den Dispatchzeiger zur Katze in das Element unter `InvokeEx()`.  
+-   Setzt die Dispatch-Zeiger in Katze in das Element mit `InvokeEx()`.  
   
--   Ruft den Dispatchzeiger zur Katze als Methode durch Aufrufen von und Übergeben `InvokeEx()` in den Dispatchzeiger zum erstellten Objekt als den `this` Zeiger an.  
+-   Die Dispatch-Zeiger, Cat als eine Methode aufruft, durch den Aufruf `InvokeEx()` und übergeben die Dispatch-Zeiger auf das konstruierte Objekt als die `this` Zeiger.  
   
--   Die Katzenmethode erstellt ein neues Element, Balkendiagramm, auf dem aktuellen `this`\-Objekt.  
+-   Die Cat-Methode erstellt ein neues Element-Leiste auf der aktuellen `this` Objekt.  
   
--   Überprüft, ob das neue Element, Balkendiagramm, im erstellten Objekt erstellt wurde, indem Sie durch die Elemente mithilfe `GetNextDispID()` auflistete.  
+-   Überprüft, ob das neue Element Balken-, wurde im erstellten Objekt durch Auflisten der Elemente, die mit `GetNextDispID()`.  
   
  Der Code für das Teststeuerelement:  
   
@@ -232,5 +236,5 @@ LDone:
    }  
 ```  
   
-## Methoden  
- [IDispatchEx\-Methode](../../winscript/reference/idispatchex-methods.md)
+## <a name="methods"></a>Methoden  
+ [IDispatchEx-Methode](../../winscript/reference/idispatchex-methods.md)

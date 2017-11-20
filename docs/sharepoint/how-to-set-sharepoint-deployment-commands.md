@@ -1,52 +1,53 @@
 ---
-title: "Gewusst wie: Festlegen von SharePoint-Bereitstellungsbefehlen"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "SharePoint-Entwicklung in Visual Studio, Bereitstellen"
+title: 'Vorgehensweise: Festlegen von SharePoint-Bereitstellungsbefehlen | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- VB
+- CSharp
+helpviewer_keywords: SharePoint development in Visual Studio, deploying
 ms.assetid: 289c8c33-a603-434e-889f-a0d0a1736ecb
-caps.latest.revision: 12
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "12"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 65c67972dddedcd05338d793883b2dcba0789d48
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Gewusst wie: Festlegen von SharePoint-Bereitstellungsbefehlen
-  Sie können den Bereitstellungsvorgang anpassen, indem Sie Befehle vor der Bereitstellung und nach der Bereitstellung festlegen.  Diese Befehle werden vor und nach anderen Bereitstellungsaktionen ausgeführt, wenn Sie SharePoint\-Lösungen für Visual Studio debuggen.  
+# <a name="how-to-set-sharepoint-deployment-commands"></a>Gewusst wie: Festlegen von SharePoint-Bereitstellungsbefehlen
+  Sie können den Bereitstellungsprozess anpassen, indem Sie Befehle vor der Bereitstellung und nach der Bereitstellung festlegen. Diese Befehle führen Sie vor und nach anderen Bereitstellungsaktionen beim Debuggen von SharePoint-Lösungen in Visual Studio.  
   
-### So fügen Sie einen Befehl vor der Bereitstellung hinzu  
+### <a name="to-add-a-pre-deployment-command"></a>So fügen Sie einen Befehl vor der Bereitstellung hinzu  
   
-1.  Wählen Sie in der Menüleiste **Projekt** und die Option für *ProjectName*\-**Eigenschaften** aus.  
+1.  Wählen Sie in der Menüleiste **Projekt**, *Projektname***Eigenschaften**.  
   
-2.  Wählen Sie die Registerkarte **SharePoint** aus.  
+2.  Wählen Sie die **SharePoint** Registerkarte.  
   
-3.  Im Textfeld geben Sie **Befehlszeile vor der Bereitstellung** MS\-DOS\- oder MSBuild\-Befehle ein, um diesen Schritt anzupassen.  
+3.  In der **vor der Bereitstellung über die Befehlszeile** Text Geben Sie MS-DOS- oder MSBuild Befehle aus, um diesen Schritt anzupassen.  
   
-     Um beispielsweise den Verzeichnisinhalt aufzuführen, bevor die Bereitstellung abgeschlossen wird, geben Sie **dir** ein.  
+     Geben Sie beispielsweise zum Auflisten der Verzeichnisinhalt vor dem Abschluss der Bereitstellung **Dir**.  
   
-### So fügen Sie einen Befehl nach der Bereitstellung hinzu  
+### <a name="to-add-a-post-deployment-command"></a>So fügen Sie einen Befehl nach der Bereitstellung hinzu  
   
-1.  Wählen Sie in der Menüleiste **Projekt** und die Option für *ProjectName*\-**Eigenschaften** aus.  
+1.  Wählen Sie in der Menüleiste **Projekt**, *Projektname***Eigenschaften**.  
   
-2.  Wählen Sie die Registerkarte **SharePoint** aus.  
+2.  Wählen Sie die **SharePoint** Registerkarte.  
   
-3.  Im Textfeld geben Sie **Befehlszeile nach der Bereitstellung** MS\-DOS\- oder MSBuild\-Befehle ein, um diesen Schritt anzupassen.  
+3.  In der **nach der Bereitstellung über die Befehlszeile** Text Geben Sie MS-DOS- oder MSBuild Befehle aus, um diesen Schritt anzupassen.  
   
-     Um beispielsweise den Verzeichnisinhalt aufzuführen, nachdem die Bereitstellung abgeschlossen ist, geben Sie **dir** ein.  Um eine MSBuild\-Variable verwenden die Assembly aus dem Buildverzeichnis zu kopieren, geben Sie **copy $\(TargetPath\) c:\\DeploymentDirectory** ein.  
+     Geben Sie beispielsweise zum Auflisten der Verzeichnisinhalt nach Abschluss der Bereitstellung **Dir**. Um einer MSBuild-Variablen verwenden, um die Assembly aus dem Verzeichnis "Build" zu kopieren, geben Sie **kopieren $(TargetPath) c:\DeploymentDirectory**.  
   
-## Siehe auch  
- [Verpacken und Bereitstellen von SharePoint-Lösungen](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
+## <a name="see-also"></a>Siehe auch  
+ [Verpacken und Bereitstellen von SharePoint-Projektmappen](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
   
   

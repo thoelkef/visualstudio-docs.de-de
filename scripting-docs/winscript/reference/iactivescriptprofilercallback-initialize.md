@@ -1,44 +1,48 @@
 ---
-title: "IActiveScriptProfilerCallback::Initialize | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IActiveScriptProfilerCallback::Initialize | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IActiveScriptProfilerCallback.Initialize
 apilocation: scrobj.dll
 ms.assetid: a257111e-a50b-4962-9dd6-c893d40f6985
-caps.latest.revision: 10
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 82e599ae94f422352706a0ec6cd9387bfa6799f2
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# IActiveScriptProfilerCallback::Initialize
-Wird aufgerufen, um das Profilerobjekt zu initialisieren, wenn ein Profil erstellen auf einem Skriptmodul gestartet wird.  
+# <a name="iactivescriptprofilercallbackinitialize"></a>IActiveScriptProfilerCallback::Initialize
+Wird aufgerufen, um das Profilerobjekt zu initialisieren, wenn die profilerstellung auf einem Skriptmodul gestartet wird.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 HRESULT Initialize(  
     [in] DWORD dwContext);  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `dwContext`  
- \[in\] Ein 4\-Byte\-Wert, der zu [IActiveScriptProfilerControl::StartProfiling](../../winscript/reference/iactivescriptprofilercontrol-startprofiling.md) übergeben wird.  
+ [in] Eine 4-Byte-Wert, der übergeben wird [IActiveScriptProfilerControl::StartProfiling](../../winscript/reference/iactivescriptprofilercontrol-startprofiling.md).  
   
-## Rückgabewert  
- Gibt ein HRESULT zurück.  Folgende Werte sind möglich:  
+## <a name="return-value"></a>Rückgabewert  
+ Gibt ein HRESULT zurück. Folgende Werte sind möglich:  
   
 |Rückgabewert|Bedeutung|  
-|------------------|---------------|  
+|------------------|-------------|  
 |`S_OK`|Die Methode war erfolgreich.|  
   
-## Hinweise  
- Wenn die Methode das Profilerobjekt nicht initialisieren kann, sollte sie ein Fehler\-HRESULT zurückgeben, um das Skriptmodul zu benachrichtigen.  In diesem Fall sollte das Skriptmodul [IActiveScriptProfilerCallback::Shutdown](../../winscript/reference/iactivescriptprofilercallback-shutdown.md) direkt aufrufen und das HRESULT im Parameter übergeben, und gibt dann das Profilerobjekt frei.  
+## <a name="remarks"></a>Hinweise  
+ Wenn die Methode das Profilerobjekt nicht initialisieren kann, sollte es einen Fehler-HRESULT auf das Skriptmodul benachrichtigen zurückgeben. In diesem Fall sollte das Skriptmodul direkt aufrufen [IActiveScriptProfilerCallback::Shutdown](../../winscript/reference/iactivescriptprofilercallback-shutdown.md), übergeben Sie das HRESULT im Parameter und lassen Sie anschließend das Profilerobjekt.  
   
-## Siehe auch  
- [IActiveScriptProfilerCallback\-Schnittstelle](../../winscript/reference/iactivescriptprofilercallback-interface.md)
+## <a name="see-also"></a>Siehe auch  
+ [IActiveScriptProfilerCallback-Schnittstelle](../../winscript/reference/iactivescriptprofilercallback-interface.md)

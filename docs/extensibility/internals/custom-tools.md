@@ -1,58 +1,57 @@
 ---
-title: "Benutzerdefinierte Tools | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "VSPackages benutzerdefinierte tools"
-  - "benutzerdefinierte Tools [Visual Studio]"
-  - "Benutzerdefinierte tools"
+title: Benutzerdefinierte Tools | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- VSPackages, custom tools
+- tools [Visual Studio], custom
+- custom tools
 ms.assetid: d669f154-9b23-48b6-b9f6-7419c8dd61a6
-caps.latest.revision: 21
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 21
+caps.latest.revision: "21"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 7c198065c72f1e6eaa0722de562abe6079f88aa1
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Benutzerdefinierte Tools
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-*Benutzerdefinierte Tools* lassen Sie ein Tool mit einem Element in einem Projekt zugeordnet werden und das Tool ausführen, wenn die Datei gespeichert wird.  Bestimmte benutzerdefinierte Tools, manchmal als *Einzeldateie Generatoren*, werden häufig verwendet, um Übersetzung zu implementieren, die von den Daten Code generieren und umgekehrt.  Zum Beispiel erstellen Einzeldateie Generatoren [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] und [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] Quellcode aus den .settings\- und RESX\-Dateien.  Der generierte Quellcode ermöglicht stark typisierten Zugriff auf Daten in den .settings\- und RESX\-Dateien.  Die [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] und [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] Projekttypen unterstützen benutzerdefinierte Tools. [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] Projekttypen dagegen nicht.  besitzen kann, Projekttypen auch benutzerdefinierte Tools unterstützen.  
+# <a name="custom-tools"></a>Benutzerdefinierte Tools
+*Benutzerdefinierte Tools* können Sie ein Element in einem Projekt ein Tool zuordnen, und führen Sie dieses Tool aus, bei jedem Speichern die Datei. Bestimmte benutzerdefinierte Tools, auch bezeichnet als *Einzeldatei Generatoren*, häufig zum Konvertierer implementieren, das Generieren von Code aus Daten und umgekehrt verwendet werden. Z. B. Einzeldatei Generatoren erstellen [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] und [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] Quellcode aus der "Settings" und RESX-Dateien. Die generierten Quellcode stellt stark typisierten Zugriffs auf die Daten in den "Settings" und RESX-Dateien bereit. Die [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] und [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] Projekttypen unterstützen benutzerdefinierte Tools; [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] Projekttypen nicht der Fall. Eigene Projekttypen können auch benutzerdefinierte Tools unterstützen.  
   
- Benutzerdefinierte Tools sind registrierte Komponenten, die die `IVsSingleFileGenerator`\-Schnittstelle implementieren.  
+ Benutzerdefinierte Tools sind eingetragene implementierenden Komponenten der `IVsSingleFileGenerator` Schnittstelle.  
   
- Benutzerdefinierte Tools werden mit einem `ProjectItem`\-Schnittstellenobjekt zugeordnet sind und die Designer und Editoren.  Ein benutzerdefiniertes Tool übernimmt die Datei, die von `ProjectItem` als Eingabe dargestellt wird, und schreibt eine neue Datei, deren Dateiname für die `DefaultExtension` Art angegeben ist.  
+ Benutzerdefinierte Tools zugeordnet sind ein `ProjectItem` oberflächenobjekts und Designer und Editoren entsprechen. Ein benutzerdefiniertes Tool verwendet die Datei, dargestellt durch eine `ProjectItem` als Eingabe und schreibt eine neue Datei, deren Dateiname, indem bereitgestellt wird, die `DefaultExtension` Methode.  
   
-## In diesem Abschnitt  
- [Implementieren von Einzeldatei\-Generatoren](../../extensibility/internals/implementing-single-file-generators.md)  
- Beschreibt, wie die <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>\-Schnittstelle verwendet, um ein benutzerdefiniertes Tool zu implementieren.  
+## <a name="in-this-section"></a>In diesem Abschnitt  
+ [Implementieren von Generatoren einzelner Dateien](../../extensibility/internals/implementing-single-file-generators.md)  
+ Beschreibt, wie die <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator> Schnittstelle, um ein benutzerdefiniertes Tool zu implementieren.  
   
- [Ermitteln des Standardnamespaces eines Projekts](../../misc/determining-the-default-namespace-of-a-project.md)  
- Beschreibt, wie Sie den richtigen Namespace auf Grundlage der Sprache bestimmt.  
+ [Registrieren von Generatoren einzelner Dateien](../../extensibility/internals/registering-single-file-generators.md)  
+ Stellt Beschreibungen für die Registrierungseinträge für ein benutzerdefiniertes Tool bereit.  
   
- [Registrieren von Einzeldatei\-Generatoren](../../extensibility/internals/registering-single-file-generators.md)  
- Enthält Beschreibungen für alle Registrierungseinträge für ein benutzerdefiniertes Tool bereit.  
+ [Verfügbarmachen von Typen für visuelle Designer](../../extensibility/internals/exposing-types-to-visual-designers.md)  
+ Erläutert, wie Projektsystemen visuelle Designer zum Zugriff auf generierte Klassen und Typen durch temporäre PE (portable Executable)-Dateien unterstützen.  
   
- [\-Typen für visuelle Designer verfügbar gemacht](../../extensibility/internals/exposing-types-to-visual-designers.md)  
- Erläutert das Projektsysteme Unterstützung für visuelle Designer Zugriff generierten Klassen und Typen durch temporäre Dateien der PE\-Datei \(Portable Executable\) \- Datei bereitstellen.  
+ [Beibehalten der Eigenschaft eines Projektelements](../../extensibility/persisting-the-property-of-a-project-item.md)  
+ Zeigt, wie eine Eigenschaft des Projekt-Element, z. B. der Autor einer Quelldatei, in der Projektdatei beibehalten werden.  
   
- [Die Eigenschaft eines Projektelements beibehalten](../../extensibility/persisting-the-property-of-a-project-item.md)  
- Zeigt, wie ein Projektelement Eigenschaft, wie der Autor einer Quelldatei, in der Projektdatei beibehalten wird.  
-  
-## Referenz  
+## <a name="reference"></a>Verweis  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>  
- Enthält Details über <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>bereit, das eine Ein\-Input Datei in eine Datei mit Ein\-Output Transformationen, die einem Projekt kompiliert werden oder hinzugefügt werden kann.  
+ Enthält Informationen über die <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>, die eine einzelne Eingabedatei transformiert, in einer einzigen Ausgabedatei, die kompiliert oder zu einem Projekt hinzugefügt werden kann.  
   
  <xref:EnvDTE.ProjectItem>  
- Erläutert die `ProjectItem`\-Schnittstelle, die ein Element in einem Projekt darstellt.  
+ Erläutert die `ProjectItem` -Schnittstelle, die ein Element in einem Projekt darstellt.  
   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.DefaultExtension%2A>  
- Stellt Details über die `DefaultExtension`\-Methode bereit, die die Dateinamenerweiterung abruft, die dem Ausgabedateinamen angegeben ist.  
+ Enthält Informationen über die `DefaultExtension` -Methode, die die Dateinamenerweiterung abruft, der den Namen der Ausgabedatei zugewiesen ist.  
   
-## Verwandte Abschnitte  
+## <a name="related-sections"></a>Verwandte Abschnitte  
  [Erweitern von Projekten](../../extensibility/extending-projects.md)  
- Beschreibt, wie [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Projekte und Projektmappen, Codedateien und Ressourcendateien zu organisieren und wie die Quellcodeverwaltung implementiert.
+ Beschreibt, wie [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Projekte und Projektmappen, Codedateien und Ressourcendateien und wie die quellcodeverwaltung implementiert zu organisieren.

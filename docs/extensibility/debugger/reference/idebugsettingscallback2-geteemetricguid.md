@@ -1,61 +1,62 @@
 ---
-title: "IDebugSettingsCallback2::GetEEMetricGuid | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "IDebugSettingsCallback2::GetEEMetricGuid"
+title: IDebugSettingsCallback2::GetEEMetricGuid | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: IDebugSettingsCallback2::GetEEMetricGuid
 ms.assetid: 3d70c19a-595d-44f1-a7b3-a0cf8f15e371
-caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 4ff78fe1aee2a0f9b72f5b90544fb936f4075c4f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugSettingsCallback2::GetEEMetricGuid
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Ruft den eindeutigen Bezeichner für ein metrisches angegebenes des Ausdrucksauswerters ihr Name ab.  
+# <a name="idebugsettingscallback2geteemetricguid"></a>IDebugSettingsCallback2::GetEEMetricGuid
+Ruft den eindeutigen Bezeichner für eine Expression Evaluator Metrik angegebenen Namen ab.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetEEMetricGuid(  
-   REFGUID guidLang,  
-   REFGUID guidVendor,  
-   LPCWSTR pszMetric,  
-   GUID*   pguidValue  
+   REFGUID guidLang,  
+   REFGUID guidVendor,  
+   LPCWSTR pszMetric,  
+   GUID*   pguidValue  
 );  
 ```  
   
-```c#  
+```csharp  
 HRESULT GetEEMetricGuid(  
-   ref Guid guidLang,  
-   ref Guid guidVendor,  
-   string   pszMetric,  
-   out Guid pguidValue  
+   ref Guid guidLang,  
+   ref Guid guidVendor,  
+   string   pszMetric,  
+   out Guid pguidValue  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `guidLang`  
- \[in\]  Eindeutiger Bezeichner der Programmiersprache.  
+ [in] Eindeutiger Bezeichner der Programmiersprache.  
   
  `guidVendor`  
- \[in\]  Eindeutiger Bezeichner des Anbieters.  
+ [in] Eindeutiger Bezeichner des Herstellers.  
   
  `pszMetric`  
- \[in\]  Name der Metriken.  
+ [in] Der Name der Metrik.  
   
  `pguidValue`  
- \[out\]  Gibt den eindeutigen Bezeichner der Metriken zurück.  
+ [out] Gibt den eindeutigen Bezeichner der Metrik an.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md)

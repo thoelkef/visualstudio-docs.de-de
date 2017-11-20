@@ -1,52 +1,53 @@
 ---
-title: "Bietet einen Dienstkontext Sprache mit der Legacy-API | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Editoren [Visual Studio SDK] legacy - Language-Dienstkontext"
+title: "Bereitstellen von Language Dienstkontext über die Legacy-API | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: editors [Visual Studio SDK], legacy - language service context
 ms.assetid: daa2df22-9181-4bad-b007-a7d40302bce1
-caps.latest.revision: 14
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 14
+caps.latest.revision: "14"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 79f58bf66e5d0a137738d0a2cc90f67a287246dc
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Bietet einen Dienstkontext Sprache mit der Legacy-API
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Es gibt zwei Möglichkeiten, damit ein Sprachdienst Benutzerkontext mit dem [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Kern editors bereitstellt: Bereitstellen Textmarkierungs Elementkontext oder stellen Sie den Benutzerkontext bereit.  Die Unterschiede zwischen beiden werden hier erläutert.  
+# <a name="providing-a-language-service-context-by-using-the-legacy-api"></a>Bereitstellen von Language Dienstkontext über die Legacy-API
+Es gibt zwei Optionen für einen Sprachdienst Benutzer Kontext mit Bereitstellen der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Core-Editor: Text Marker Kontext bereitzustellen, oder geben Sie alle Benutzerkontext. Hier werden die Unterschiede zwischen den einzelnen beschrieben.  
   
- Weitere Informationen über das Bereitstellen des Kontexts in ein Sprachdienst, der verbunden ist, Editors sind, finden Sie unter [Gewusst wie: Bereitstellen von Kontext für Editoren](../extensibility/how-to-provide-context-for-editors.md).  
+ Weitere Informationen zum Bereitstellen von Kontext, um einen Sprachdienst, die mit Ihren eigenen Editor verbunden ist, finden Sie unter [Vorgehensweise: Bereitstellen von Kontext für Editoren](../extensibility/how-to-provide-context-for-editors.md).  
   
-## Stellen Sie Textmarkierungs\-Kontext in den Editor bereit  
- Um Kontext für die Compilerfehler bereitzustellen, die von Textmarkierungen im [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Kern des Editors angegeben werden, implementieren Sie die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerContextProvider>\-Schnittstelle.  In diesem Szenario stellt der Sprachdienst Kontext bereit, wenn der Cursor in einer Textmarkierung ist.  Dadurch kann der Editor verwendet, um das Schlüsselwort am Cursor an den **Dynamische Hilfe** Fenster ohne Attribute bereitzustellen.  
+## <a name="provide-text-marker-context-to-the-editor"></a>Geben Sie Text Marker Kontext auf den Editor  
+ Compilerfehler erkennbar Text Marker im Kontext bereit der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Haupt-Editor, implementieren Sie die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerContextProvider> Schnittstelle. In diesem Szenario stellt der Sprachdienst Kontext aus, nur, wenn der Cursor in einen Text-Marker befindet. Dadurch wird den Editor das Schlüsselwort an der Cursorposition zum Bereitstellen der **dynamische Hilfe** Fenster keine Attribute.  
   
-## Stellen Sie alle Benutzer\-Kontext in den Editor bereit  
- Wenn Sie einen Sprachdienst und verwenden den [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Kern des Editors erstellen, können Sie die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageContextProvider>\-Schnittstelle implementieren, um Kontextinformationen für den Sprachdienst bereitzustellen.  
+## <a name="provide-all-user-context-to-the-editor"></a>Geben Sie alle Benutzerkontext auf dem Editor  
+ Wenn Sie einen Sprachdienst erstellen und Verwenden der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] core-Editor, und klicken Sie dann die Sie implementieren können, die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageContextProvider> Schnittstelle, um Kontext für den Sprachdienst bereitzustellen.  
   
- Für die Implementierung von `IVsLanguageContextProvider`, wird ein Kontext behälter \(Auflistung\) für den Editor angefügt, der zum Aktualisieren des Kontexts behälters zuständig ist.  Wenn das Fenster **Dynamische Hilfe** die <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.Update%2A>\-Schnittstelle in diesem Kontext behälter an der Leerlaufzeit behälter Kontext aufruft, die fragt den Editor für ein Update.  Der Editor benachrichtigt den Sprachdienst, dass er den Editor aktualisieren soll, und übergibt einen Zeiger auf den Kontext behälter.  Hierzu wird die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageContextProvider.UpdateLanguageContext%2A>\-Methode vom Editor zum Sprachdienst aufruft.  Verwenden des Zeigers auf den Kontext behälter, kann der Sprachdienst Attribute und Schlüsselwörter jetzt hinzufügen und entfernen.  Weitere Informationen finden Sie unter <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageContextProvider>.  
+ Für die Implementierung von `IVsLanguageContextProvider`, eine Kontextsammlung (Auflistung) angefügt ist, auf den Editor, der für die Aktualisierung Kontext Behälter verantwortlich ist. Wenn die **dynamische Hilfe** Fenster Aufrufe der <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.Update%2A> Schnittstelle in diesem Kontext Behälter während der Leerlaufzeit Kontext Behälter fragt den Editor für ein Update. Der Editor benachrichtigt dann dem Sprachdienst sollten Editor aktualisieren, und übergibt einen Zeiger auf den Kontext Eigenschaftenbehälters. Dies erfolgt durch Aufrufen der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageContextProvider.UpdateLanguageContext%2A> Methode aus dem Editor, um der Sprachdienst. Verwenden den Mauszeiger, um Kontext Behälter, kann der Sprachdienst jetzt hinzufügen und entfernen Attribute und Schlüsselwörter. Weitere Informationen finden Sie unter <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageContextProvider>.  
   
- Es gibt zwei Möglichkeiten, `IVsLanguageContextProvider`zu implementieren:  
+ Es gibt zwei verschiedene Möglichkeiten zur Implementierung `IVsLanguageContextProvider`:  
   
--   Erstellen Sie ein Schlüsselwort bereit behälter Kontext  
+-   Geben Sie ein Schlüsselwort, um den Kontext Eigenschaftenbehälters.  
   
-     Wenn der Editor aufgerufen wird, um den Kontext behälter zu aktualisieren, geben übergeben Sie den geeigneten Schlüsselwörtern und Attribute und dann `S_OK`zurück.  Dieser Rückgabewert weist den Editor an, um den Kontext beizubehalten Attribut aus Schlüsselwörtern und bereitstellen, anstatt das Schlüsselwort am Cursor auf den Kontext behälter.  
+     Wenn der Editor zum Aktualisieren der Behälter Kontext aufgerufen wird, übergeben Sie die geeignete Schlüsselwörter und Attribute und wieder `S_OK`. Dieser Rückgabewert weist den Editor zum Beibehalten des Kontexts-Schlüsselwort und Attribut, sondern geben Sie das Schlüsselwort an der Cursorposition zum Kontext Behälter.  
   
--   Abrufen des Schlüsselworts vom Schlüsselwort am Cursor  
+-   Das Schlüsselwort aus das Schlüsselwort an der Cursorposition abrufen  
   
-     Wenn der Editor aufgerufen wird, um den Kontext behälter zu aktualisieren, übergeben Sie die entsprechenden Attribute und geben Sie dann in `E_FAIL`.  Dieser Rückgabewert weist den Editor auf, um die Attribute im Kontext behälter beizubehalten, sondern aktualisiert den Kontext behälter mit dem Schlüsselwort am Cursor.  
+     Wenn der Editor zum Aktualisieren der Behälter Kontext aufgerufen wird, übergeben Sie die entsprechenden Attribute und wieder `E_FAIL`. Dieser Rückgabewert wird angewiesen, den Editor, um die Attribute im Behälter Kontext beibehalten, aber Kontext Behälter mit dem Schlüsselwort an der Cursorposition zu aktualisieren.  
   
- Das folgende Diagramm zeigt, wie der Kontext für einen Sprachdienst bereitgestellt wird, der `IVsLanguageContextProvider`implementiert.  
+ Das folgende Diagramm veranschaulicht, wie der Kontext für einen Sprachdienst bereitgestellt wird, die implementiert `IVsLanguageContextProvider`.  
   
- ![LangServiceImplementation2&#45;Grafik](~/extensibility/media/vslanguageservice2.gif "vsLanguageService2")  
+ ![Grafik zu LangServiceImplementation2](../extensibility/media/vslanguageservice2.gif "vsLanguageService2")  
 Kontext für einen Sprachdienst  
   
- Wie Sie im Diagramm finden können, hat der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Kern text\-editor einen Kontext, der behälter daran angefügt wird.  Punkte dieses Kontexts behälters zu drei verschiedenen Unterkontext behältern: Sprachdienst, Standard\-Editor und Textmarkierung.  Die Sprachendienst\- und Textmarkierungs unterkontext behälter enthalten Attribute und Schlüsselwörter für den Sprachdienst, wenn die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageContextProvider>\-Schnittstelle implementiert wird, und die Textmarkierungen, wenn die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerContextProvider>\-Schnittstelle implementiert wird.  Wenn Sie einem dieser Schnittstellen implementieren, stellt der Editor Kontext für das Schlüsselwort an der Cursorposition im Unterkontext behälter des standardmäßigen Editor bereit.  
+ Siehe das Diagramm die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Core Text-Editor verfügt über einen Kontext Behälter angefügt ist. Dieser Kontext Behälter verweist auf drei separaten Unterkontext aus diesem: Sprachdienst, Standard-Editor und einem Text-Marker. Die Language-Dienst und Text Marker Unterkontext aus diesem enthalten Attribute und Schlüsselwörter für den Sprachdienst, wenn die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageContextProvider> Schnittstelle wird implementiert, und Text-Marker Wenn die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerContextProvider> Schnittstelle implementiert wird. Wenn Sie nicht eine der folgenden Schnittstellen implementieren, stellt der Editor Kontext für das Schlüsselwort an der Cursorposition im Standard-Editor Unterkontext Behälter bereit.  
   
-## Kontext\-Richtlinien für Editoren und Designer  
- Designer und Editoren müssen ein allgemeines Schlüsselwort für das Editor\- oder Designerfenster bereitstellen.  Dies erfolgt, damit ein generisches, aber ein entsprechendes, Hilfethema für den Designer oder den Editor anzeigen, wenn ein Benutzer F1 drückt.  Ein Editor muss, zusätzlich zu diesem, der das aktuelle Schlüsselwort am Cursor anzugeben oder einen Schlüsselbegriff auf Grundlage der aktuellen Auswahl bereitgestellt werden.  Dies geschieht, um sicherzustellen, dass ein Hilfethema für den Text oder UI\-Element auf sich selbst zeigten oder das Anzeigen ausgewählt haben, wenn der Benutzer F1 drückt.  Ein Designer stellt Elementkontext für ein Element ausgewählt in einem Designer, z. B. einer Schaltfläche in einem Formular.  Editoren und Designer müssen an einen Sprachdienst auch beschrieben, wie in [Ältere Sprache Service – Grundlagen](../extensibility/internals/legacy-language-service-essentials.md)herstellen.
+## <a name="context-guidelines-for-editors-and-designers"></a>Kontext-Richtlinien für die Editoren und Designern  
+ Designer und Editoren müssen für den Editor oder Designer-Fenster ein allgemeines Schlüsselwort angeben. Dies erfolgt, damit ein Hilfethema generische jedoch gegebenenfalls für den Designer oder Editor angezeigt wird, wenn ein Benutzer F1 drückt. Einen Editor muss darüber hinaus geben die aktuellen Schlüsselworts an der Cursorposition oder geben Sie eine wesentliche Begriffe, die basierend auf der aktuellen Auswahl. Dies erfolgt, um sicherzustellen, dass ein Hilfethema für den Text oder UI-Element gezeigt wird, oder zeigt ausgewählt, wenn der Benutzer F1 drückt. Ein Designer stellt Kontext für ein Element in einem Designer, z. B. eine Schaltfläche in einem Formular ausgewählt. Editoren und Designern müssen auch eine Verbindung herstellen, einen Sprachdienst im [Legacy Language Service Essentials](../extensibility/internals/legacy-language-service-essentials.md).

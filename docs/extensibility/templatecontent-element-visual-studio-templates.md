@@ -1,29 +1,32 @@
 ---
-title: "TemplateContent-Element (Visual Studio-Vorlagen) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "http://schemas.microsoft.com/developer/vstemplate/2005#TemplateContent"
-helpviewer_keywords: 
-  - "TemplateContent-Element [Visual Studio-Projektvorlagen]"
+title: TemplateContent-Element (Visual Studio-Vorlagen) | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: http://schemas.microsoft.com/developer/vstemplate/2005#TemplateContent
+helpviewer_keywords: TemplateContent element [Visual Studio project templates]
 ms.assetid: 90ae401c-b294-49ac-98da-e0d274f5bebb
-caps.latest.revision: 14
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 14
+caps.latest.revision: "14"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 1f083097ae79d045891b64d806820a58686b4c95
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# TemplateContent-Element (Visual Studio-Vorlagen)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Gibt den Inhalt der Vorlage an.  
+# <a name="templatecontent-element-visual-studio-templates"></a>TemplateContent-Element (Visual Studio-Vorlagen)
+Gibt den Inhalt der Vorlage.  
   
-## Syntax  
+ \<VSTemplate >  
+ \<TemplateContent >  
+  
+## <a name="syntax"></a>Syntax  
   
 ```  
 <TemplateContent>  
@@ -31,36 +34,36 @@ Gibt den Inhalt der Vorlage an.
 </TemplateContent>  
 ```  
   
-## Attribute und Elemente  
+## <a name="attributes-and-elements"></a>Attribute und Elemente  
  In den folgenden Abschnitten werden Attribute sowie untergeordnete und übergeordnete Elemente beschrieben.  
   
-### Attribute  
+### <a name="attributes"></a>Attribute  
   
-|Attribut|Description|  
-|--------------|-----------------|  
-|[BuildOnLoad](../extensibility/buildprojectonload-visual-studio-templates.md)|Gibt an, ob die Projektmappe beim Erstellen eines Projekts von der Vorlage erstellt wird.|  
+|Attribut|Beschreibung|  
+|---------------|-----------------|  
+|[BuildOnLoad](../extensibility/buildprojectonload-visual-studio-templates.md)|Gibt an, ob die Projektmappe zu erstellen, wenn ein Projekt aus der Vorlage erstellt wird.|  
   
-### Untergeordnete Elemente  
+### <a name="child-elements"></a>Untergeordnete Elemente  
   
-|Element|Description|  
+|Element|Beschreibung|  
 |-------------|-----------------|  
-|[ProjectCollection](../extensibility/projectcollection-element-visual-studio-templates.md)|Optionales Element.<br /><br /> Legt die Organisation und den Inhalt von Vorlagen mit mehreren Projekten fest.|  
-|[Project](../extensibility/project-element-visual-studio-templates.md)|Optionales Element.<br /><br /> Gibt die Dateien oder Verzeichnisse an, die dem Projekt hinzugefügt werden sollen.|  
-|[Verweise](../extensibility/references-element-visual-studio-templates.md)|Optionales Element.<br /><br /> Gibt die für eine Elementvorlage erforderlichen Assemblyverweise an.|  
-|[ProjectItem](../extensibility/projectitem-element-visual-studio-item-templates.md)|Optionales Element.<br /><br /> Gibt eine in der Vorlage enthaltene Datei an.|  
-|[CustomParameters](../extensibility/customparameters-element-visual-studio-templates.md)|Optionales Element.<br /><br /> Gibt alle benutzerdefinierten Parameter an, die verwendet werden sollen, wenn ein Projekt oder Element von der Vorlage erstellt wird.|  
+|[ProjectCollection](../extensibility/projectcollection-element-visual-studio-templates.md)|Optionales Element.<br /><br /> Legt die Organisation und den Inhalt von Vorlagen für mehrere Projekte fest.|  
+|[Projekt](../extensibility/project-element-visual-studio-templates.md)|Optionales Element.<br /><br /> Gibt an, Dateien oder Verzeichnisse zu dem Projekt hinzugefügt.|  
+|[Verweise](../extensibility/references-element-visual-studio-templates.md)|Optionales Element.<br /><br /> Gibt an, die für eine Elementvorlage erforderlichen Assemblyverweise.|  
+|[ProjectItem](../extensibility/projectitem-element-visual-studio-item-templates.md)|Optionales Element.<br /><br /> Gibt eine Datei, die in der Vorlage enthalten sind.|  
+|[CustomParameters](../extensibility/customparameters-element-visual-studio-templates.md)|Optionales Element.<br /><br /> Gibt alle benutzerdefinierten Parameter ab, die verwendet werden, wenn ein Projekt oder Element aus der Vorlage erstellt wird.|  
   
-### Übergeordnete Elemente  
+### <a name="parent-elements"></a>Übergeordnete Elemente  
   
-|Element|Description|  
+|Element|Beschreibung|  
 |-------------|-----------------|  
-|[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|Erforderliches Element.<br /><br /> Enthält alle Metadaten für die Projektvorlage, Elementvorlage oder das Starter Kit.|  
+|[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|Erforderliches Element.<br /><br /> Enthält alle Metadaten für die Projektvorlage, Elementvorlage oder Starterkit.|  
   
-## Hinweise  
- `TemplateContent` ist ein erforderliches Element.  
+## <a name="remarks"></a>Hinweise  
+ `TemplateContent`ist ein erforderliches Element.  
   
-## Beispiel  
- Im folgenden Beispiel werden die Metadaten für eine Projektvorlage einer [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]\-Anwendung veranschaulicht.  
+## <a name="example"></a>Beispiel  
+ Im folgenden Beispiel werden die Metadaten für eine Projektvorlage einer [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]-Anwendung veranschaulicht.  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  
@@ -86,6 +89,6 @@ Gibt den Inhalt der Vorlage an.
 </VSTemplate>  
 ```  
   
-## Siehe auch  
- [Schemareferenz zu Visual Studio\-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)   
- [Erstellen von benutzerdefinierten Projekt\- und Elementvorlagen](../ide/creating-project-and-item-templates.md)
+## <a name="see-also"></a>Siehe auch  
+ [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)   
+ [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)

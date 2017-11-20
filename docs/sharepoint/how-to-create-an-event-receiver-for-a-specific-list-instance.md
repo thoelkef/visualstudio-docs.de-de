@@ -1,94 +1,96 @@
 ---
-title: "Gewusst wie: Erstellen eines Ereignisempf&#228;ngers f&#252;r eine bestimmte Listeninstanz"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "Ereignisempfänger [SharePoint-Entwicklung in Visual Studio]"
-  - "SharePoint-Entwicklung in Visual Studio, Ereignisempfänger"
+title: "Vorgehensweise: Erstellen eines Ereignisempfängers für eine bestimmte Listeninstanz | Microsoft Docs"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- SharePoint development in Visual Studio, event receivers
+- event receivers [SharePoint development in Visual Studio]
 ms.assetid: 4b4b3564-161a-4327-8963-50896c084ac2
-caps.latest.revision: 13
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "13"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 3db5af044b1e3eb25e68c96a42335082fd3523f1
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Gewusst wie: Erstellen eines Ereignisempf&#228;ngers f&#252;r eine bestimmte Listeninstanz
-  Ein Listeninstanzereignisempfänger reagiert auf Ereignisse, die in einer beliebigen Instanz einer Listendefinition auftreten.  Obwohl die Ereignisempfängervorlage die Zielgruppenadressierung einer bestimmten Listeninstanz nicht aktiviert, können Sie einen auf eine Listendefinition beschränkten Ereignisempfänger ändern, um auf Ereignisse in einer bestimmten Listeninstanz zu reagieren.  
+# <a name="how-to-create-an-event-receiver-for-a-specific-list-instance"></a>Gewusst wie: Erstellen eines Ereignisempfängers für eine bestimmte Listeninstanz
+  Ein Liste Instanz Ereignisempfänger antwortet auf Ereignisse, die in einer beliebigen Instanz einer Listendefinition auftreten. Obwohl die ereignisvorlage für den Empfänger nicht die Zielgruppenadressierung für eine bestimmte Listeninstanz aktiviert wird, können Sie einen Ereignisempfänger ändern, der auf einer Listendefinition Reaktion auf Ereignisse in eine bestimmte Listeninstanz begrenzt ist.  
   
- Ersetzen Sie in der Datei "Elements.xml" für den Ereignisempfänger `ListTemplateId` durch `ListUrl`, und fügen Sie die URL der Listeninstanz hinzu, um eine bestimmte Listeninstanz als Ziel festzulegen.  
+ Ersetzen Sie für eine bestimmte Listeninstanz in der Datei "Elements.xml" für den Ereignisempfänger entwickeln `ListTemplateId` mit `ListUrl` und die URL der Listeninstanz hinzufügen.  
   
-## Erstellen eines Listeninstanzereignisempfängers  
- Die folgenden Schritte zeigen, wie ein Listenelementereignisempfänger geändert wird, um nur auf Ereignisse, die in einer benutzerdefinierten Ankündigungslisteninstanz auftreten, zu reagieren.  
+## <a name="creating-a-list-instance-event-receiver"></a>Erstellen einen Liste Instanz Ereignisempfänger  
+ Die folgenden Schritte zeigen, wie einen Liste Element-Ereignisempfänger, um nur auf Ereignisse reagieren, die in eine benutzerdefinierte Ankündigungen-Listeninstanz auftreten zu ändern.  
   
-#### So ändern Sie einen Ereignisempfänger, der auf eine bestimmte Listeninstanz reagieren soll  
+#### <a name="to-modify-an-event-receiver-to-respond-to-a-specific-list-instance"></a>So ändern Sie einen Ereignisempfänger zum Reagieren auf eine bestimmte Listeninstanz  
   
-1.  In einem Browser öffnen Sie die SharePoint\-Website.  
+1.  Öffnen Sie die SharePoint-Website in einem Browser.  
   
-2.  im Navigationsbereich Link **Listen**.  
+2.  Klicken Sie im Bereich "Navigation" **listet** Link.  
   
-3.  Auf der Seite **Gesamter Websiteinhalt** Wählen Sie den Link **Erstellen** aus.  
+3.  In der **Alle Websiteinhalte einblenden** Seite, und wählen Sie die **erstellen** Link.  
   
-4.  Im Dialogfeld **Erstellen** wählen Sie den Typ **Ankündigungen** aus, nennen Sie die Ankündigung "TestAnnouncements", und wählen Sie dann die Schaltfläche **Erstellen** aus.  
+4.  In der **erstellen** Dialogfeld Wählen Sie die **Ankündigungen** geben, nennen Sie die Ankündigung **TestAnnouncements**, und wählen Sie dann die **erstellen**Schaltfläche.  
   
-5.  Erstellen Sie in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ein Ereignisempfängerprojekt.  
+5.  In [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], ein Ereignisempfängerprojekt erstellen.  
   
-6.  In der Liste **Welchen Typ soll der Ereignisempfänger aufweisen?** wählen Sie **Listenelementereignisse** aus.  
+6.  In der **Art-Ereignisempfänger verwenden, möchten Sie?** wählen **Listenelementereignisse**.  
   
     > [!NOTE]  
-    >  Sie können auch einen beliebigen anderen Ereignisempfänger auswählen, der auf eine Listendefinition beschränkt ist, z. B. **Listen\-E\-Mail\-Ereignisse** oder **Listenworkflowereignisse**.  
+    >  Sie können auch eine beliebige andere Art von Ereignisempfänger, die auf einer Listendefinition, z. B. Bereiche auswählen **-e-Mail-Listenereignisse** oder **Listenworkflowereignisse**.  
   
-7.  In der Liste **Welche Element soll als Ereignisquelle dienen?** wählen Sie **Ankündigungen** aus.  
+7.  In der **welches Element der Ereignisquelle werden sollten?** wählen **Ankündigungen**.  
   
-8.  In der Liste **Die folgenden Ereignisse behandeln** aktivieren Sie das Kontrollkästchen **Ein Element wird hinzugefügt.** und wählen Sie dann die Schaltfläche **Fertig stellen** aus.  
+8.  In der **die folgenden Ereignisse behandeln** Liste der **ein Element hinzugefügt wird** Kontrollkästchen, und wählen Sie dann die **Fertig stellen** Schaltfläche.  
   
-9. In **Projektmappen\-Explorer** unter "EventReceiver1", öffnen Sie Elements.xml.  
+9. In **Projektmappen-Explorer**, unter EventReceiver1, öffnen Sie die Datei "Elements.xml".  
   
-     Der Ereignisempfänger verweist gerade die Ankündigungenlistendefinition, indem er die folgende Zeile:  
+     Ereignisempfänger verweist derzeit die Listendefinition Ankündigungen mithilfe der folgenden Zeile:  
   
     ```  
     <Receivers ListTemplateId="104">  
     ```  
   
-     Ändern Sie diese Zeile in den folgenden Text:  
+     Ändern Sie diese Zeile in den folgenden Text ein:  
   
     ```  
     <Receivers ListUrl="Lists/TestAnnouncements">  
     ```  
   
-     Dies weist den Ereignisempfänger an, nur auf Ereignisse, die in der neuen, von Ihnen gerade erstellten Ankündigungsliste **TestAnnouncements** auftreten, zu reagieren.  Sie können das `ListURL`\-Attribut ändern, um auf eine beliebige Listeninstanz auf dem SharePoint\-Server zu verweisen.  
+     Dies weist den Ereignisempfänger, um nur auf Ereignisse reagieren, die in der neuen auftreten **TestAnnouncements** Ankündigungsliste, die Sie gerade erstellt haben. Sie können ändern, die `ListURL` Attribut auf eine beliebige Listeninstanz auf dem SharePoint-Server verweisen.  
   
-10. Öffnen Sie die Codedatei für den Ereignisempfänger, und setzen Sie einen Haltepunkt in der ItemAdding\-Methode.  
+10. Öffnen Sie die Codedatei für die-Ereignisempfänger verwenden, und legen Sie einen Haltepunkt in der ItemAdding-Methode.  
   
-11. Drücken Sie die F5\-TASTE, um die Projektmappe zu erstellen und auszuführen.  
+11. Wählen Sie die F5-Taste zum Erstellen und führen Sie die Projektmappe aus.  
   
-12. In SharePoint Wählen Sie den Link **TestAnnouncements** im Navigationsbereich aus.  
+12. Wählen Sie in SharePoint, die **TestAnnouncements** Link im Navigationsbereich.  
   
-13. Wählen Sie den Link **Neue Ankündigung hinzufügen** aus.  
+13. Wählen Sie die **neue Ankündigung hinzufügen** Link.  
   
-14. Geben Sie einen Titel für die Ankündigung ein, und wählen Sie dann die Schaltfläche **Speichern** aus.  
+14. Geben Sie einen Titel für die Ankündigung, und wählen Sie dann die **speichern** Schaltfläche.  
   
-     Beachten Sie, dass der Haltepunkt erreicht wird, wenn der benutzerdefinierten Ankündigungsliste das neue Element hinzugefügt wird.  
+     Beachten Sie, dass der Haltepunkt erreicht wird, wenn benutzerdefinierte Ankündigungen das neue Element hinzugefügt wird.  
   
-15. Drücken Sie die F5\-TASTE, um fortzusetzen.  
+15. Wählen Sie zum Fortsetzen die Taste F5.  
   
-16. im Navigationsbereich Wählen Sie den Link **Listen**, und dann den Link **Ankündigungen** aus.  
+16. Wählen Sie im Navigationsbereich die **listet** verknüpfen, und wählen Sie dann die **Ankündigungen** Link.  
   
-17. Fügen Sie eine neue Ankündigung hinzu.  
+17. Fügen Sie eine neue Ankündigung an.  
   
-     Beachten Sie, dass der Ereignisempfänger nicht bei der neuen Ankündigung ausgelöst wird, da der Empfänger so konfiguriert ist, dass er nur auf Ereignisse in der benutzerdefinierten Ankündigungslisteninstanz **TestAnnouncements** reagiert.  
+     Beachten Sie die Ereignisempfänger nicht auf die neue Ankündigung ausgelöst werden, da der Empfänger konfiguriert ist, um nur für Ereignisse in die Listeninstanz benutzerdefinierten ankündigungslistenerdienst zu reagieren **TestAnnouncements**.  
   
-## Siehe auch  
- [Gewusst wie: Erstellen eines Ereignisempfängers](../sharepoint/how-to-create-an-event-receiver.md)   
- [Developing SharePoint Solutions](../sharepoint/developing-sharepoint-solutions.md)  
+## <a name="see-also"></a>Siehe auch  
+ [Vorgehensweise: Erstellen eines Ereignisempfängers](../sharepoint/how-to-create-an-event-receiver.md)   
+ [Entwickeln von SharePoint-Projektmappen](../sharepoint/developing-sharepoint-solutions.md)  
   
   

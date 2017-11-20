@@ -1,68 +1,68 @@
 ---
-title: "IDebugProperty2::GetExtendedInfo | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugProperty2::GetExtendedInfo"
-helpviewer_keywords: 
-  - "IDebugProperty2::GetExtendedInfo"
+title: IDebugProperty2::GetExtendedInfo | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugProperty2::GetExtendedInfo
+helpviewer_keywords: IDebugProperty2::GetExtendedInfo
 ms.assetid: 0c9c0b2b-7540-4424-adb5-fce7aa37a026
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 7456ebe1e28618270bd90f09186ec49814c62b66
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugProperty2::GetExtendedInfo
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Ruft die erweiterten Informationen für die Eigenschaft.  
+# <a name="idebugproperty2getextendedinfo"></a>IDebugProperty2::GetExtendedInfo
+Ruft Informationen für die Eigenschaft erweitert werden.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT GetExtendedInfo (   
-   REFGUID* guidExtendedInfo,  
-   VARIANT* pExtendedInfo  
+```cpp  
+HRESULT GetExtendedInfo (   
+   REFGUID* guidExtendedInfo,  
+   VARIANT* pExtendedInfo  
 );  
 ```  
   
-```c#  
-int GetExtendedInfo (   
-   ref Guid guidExtendedInfo,  
-   out object pExtendedInfo  
+```csharp  
+int GetExtendedInfo (   
+   ref Guid guidExtendedInfo,  
+   out object pExtendedInfo  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `guidExtendedInfo`  
- \[in\]  GUID, die den Typ des erweiterten Informationen bestimmt, der abgerufen werden soll.  Weitere Informationen finden Sie in den Hinweisen.  
+ [in] GUID, der bestimmt, welche erweiterten Informationen abgerufen werden sollen. Einzelheiten finden Sie unter "Hinweise".  
   
  `pExtendedInfo`  
- \[out\]  Gibt `VARIANT` \(C\+\+\) oder ein Objekt zurück \(C\#\), die verwendet werden können, um die erweiterten Eigenschaft abgerufen werden soll.  Beispielsweise kann dieser Parameter eine `IUnknown`\-Schnittstelle zurück, die für eine [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)\-Schnittstelle abgefragt werden kann.  Weitere Informationen finden Sie in den Hinweisen.  
+ [out] Gibt eine `VARIANT` (C++) oder ein Objekt (c#), die zum Abrufen von Informationen über die erweiterte Eigenschaft verwendet werden kann. Dieser Parameter möglicherweise zurück, z. B. ein `IUnknown` -Schnittstelle, die abgefragt werden kann eine [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md) Schnittstelle. Einzelheiten finden Sie unter "Hinweise".  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. gibt andernfalls Fehlercode zurück.  Gibt `S_GETEXTENDEDINFO_NO_EXTENDEDINFO` zurück, wenn keine erweiterten gibt Informationen abzurufen.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`; andernfalls wird Fehlercode zurückgegeben. Gibt `S_GETEXTENDEDINFO_NO_EXTENDEDINFO` Wenn es keine erweiterten Informationen sind abgerufen.  
   
-## Hinweise  
- Diese Methode ist mit dem Ziel das Abrufen von Informationen, die nicht auf leiht abgerufen werden, indem die [GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)\-Methode aufrufen.  
+## <a name="remarks"></a>Hinweise  
+ Diese Methode zum Abrufen von Informationen, die nicht selbst geeignet ist, wird durch den Aufruf abgerufen vorhanden ist die [GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) Methode.  
   
- Im folgenden GUID ist in der Regel so erkannt \(die GUID\-Werte für C\# angegeben werden, da der Name nicht in einer Assembly verfügbar ist\).  Zusätzliches GUID kann zur internen Verwendung erstellt werden.  
+ Die folgenden GUIDs werden in der Regel von dieser Methode erkannt (die GUID-Werte werden für c# angegeben, da der Name nicht in jeder beliebigen Assembly verfügbar ist). Zusätzliche GUIDs können für die interne Verwendung erstellt werden.  
   
 |Name|GUID|Beschreibung|  
-|----------|----------|------------------|  
-|guidDocument|{3f98de84\-fee9\-11d0\-b47f\-00a0244a1dd2}|Gibt eine `IUnknown`\-Schnittstelle zum Dokument zurück.  In der Regel kann die [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md) von dieser Schnittstelle `IUnknown`\-Schnittstelle ermittelt werden.|  
-|guidCodeContext|{e2fc65e\-56ce\-11d1\-b528\-00aax004a8797}|Gibt eine `IUnknown`\-Schnittstelle für den Dokumentenkontext zurück.  In der Regel kann die [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) von dieser Schnittstelle `IUnknown`\-Schnittstelle ermittelt werden.|  
-|guidCustomViewerSupported|{d9c9da31\-ffbe\-4eeb\-9186\-23121e3c088c}|Gibt eine Zeichenfolge zurück, die die CLSID eines benutzerdefinierten Viewers enthält, in der Regel von einer Ausdrucksauswertung implementiert.|  
-|guidExtendedInfoSlot|{6df235ad\-82c6\-4292\-9c97\-7389770bc42f}|Gibt eine 32\-Bit\-Zahl zurück, die die gewünschte Slotnummer darstellt, wenn diese Eigenschaft über eine lokale Adresse des verwalteten Codes darstellt.|  
-|guidExtendedInfoSignature|{b5fb6d46\-f805\-417f\-96a3\-8ba737073ffd}|Gibt eine Zeichenfolge zurück, die die Signatur der Variablen enthält, die mit dem Eigenschaftenobjekt zugeordnet ist.|  
+|----------|----------|-----------------|  
+|guidDocument|{3f98de84-fee9-11d0-b47f-00a0244a1dd2}|Gibt eine `IUnknown` Schnittstelle, um das Dokument. In der Regel die [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md) Schnittstelle abgerufen werden kann, aus dieser `IUnknown` Schnittstelle.|  
+|guidCodeContext|{e2fc65e 56ce - 11d 1-b528-00aax004a8797}|Gibt eine `IUnknown` Schnittstelle, um den Dokumentenkontext. In der Regel die [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) Schnittstelle abgerufen werden kann, aus dieser `IUnknown` Schnittstelle.|  
+|guidCustomViewerSupported|{d9c9da31-ffbe-4eeb-9186-23121e3c088c}|Gibt eine Zeichenfolge mit der CLSID von einem benutzerdefinierten Viewer, die in der Regel von der ausdrucksauswertung implementiert.|  
+|guidExtendedInfoSlot|{6df235ad-82c6-4292-9c97-7389770bc42f}|Gibt eine 32-Bit-Zahl, die die gewünschten Slotnummer darstellt, wenn diese Eigenschaft stellt eine lokale Adresse für verwalteten Code dar.|  
+|guidExtendedInfoSignature|{b5fb6d46-f805-417f-96a3-8ba737073ffd}|Gibt eine Zeichenfolge, die die Signatur der Property-Objekt zugeordneten Variablen enthält.|  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)   
  [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)   
  [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)

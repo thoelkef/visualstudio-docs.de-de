@@ -1,54 +1,59 @@
 ---
-title: "Raster von Eigenschaften anzeigen | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Eigenschaften [Visual Studio SDK], Raster"
+title: Eigenschaften anzeigen Raster | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: properties [Visual Studio SDK], grid
 ms.assetid: 318e41b0-acf5-4842-b85e-421c9d5927c5
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 35b36c357c9b98d81627eea0d511b0b4fd49f693
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Raster von Eigenschaften anzeigen
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Die **Eigenschaften** Fenster Felder in einem Raster angezeigt.  Die linke Spalte enthält die Eigenschaftennamen. die rechte Spalte enthält die Eigenschaftswerte.  
+# <a name="properties-display-grid"></a>Raster von Eigenschaften anzeigen
+Die **Eigenschaften** Fenster werden Felder in einem Raster angezeigt. Die linke Spalte enthält die Eigenschaftennamen. die rechte Spalte enthält die Eigenschaftswerte an.  
   
-## Mit dem Datenblatt bearbeiten  
- Die Zwei COLUMN\-Liste wird konfigurationsunabhängige Eigenschaften, die zur Entwurfszeit geändert werden können, und ihre aktuellen Einstellungen an.  Beachten Sie, dass alle Eigenschaften möglicherweise nicht angezeigt würden.  Eine Eigenschaft kann festgelegt werden, wie ausgeblendet werden, z. B. durch Festlegen der <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing.HideProperty%2A>\-Methode implementiert.  Insbesondere Eigenschaften mit untergeordneten Eigenschaften ausblenden können, finden [Ausblenden von Eigenschaftenfenster mit untergeordneten Eigenschaften](../../misc/hiding-properties-that-have-child-properties.md).  
+## <a name="working-with-the-grid"></a>Arbeiten mit dem Raster  
+ Die zweispaltige Liste zeigt konfigurationsunabhängigen Eigenschaften, die zur Entwurfszeit und ihren aktuellen Einstellungen geändert werden können. Beachten Sie, dass alle Eigenschaften nicht angezeigt werden können. Eine Eigenschaft kann festgelegt werden als ausgeblendet, z. B. durch Implementieren der <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing.HideProperty%2A> Methode. Insbesondere zum Ausblenden von Eigenschaften, die untergeordneten Eigenschaften:  
   
- Um Informationen zum **Eigenschaften** Fenster zu drücken, wird die IDE <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>.  <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> wird von VSPackages für alle Fenster aufgerufen, das auswählbare Objekte mit den zugehörigen enthält **Eigenschaften** im Fenster Eigenschaften angezeigt.  Die Implementierung der Projektmappen\-Explorer aus <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> ruft `GetProperty` mit <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID> in der Projekthierarchie auf, um die browsebaren Objekte in der Hierarchie abzurufen.  
+1.  Legen Sie die `pfDisplay` im Parameters <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing.DisplayChildProperties%2A> auf `FALSE`.  
   
- Wenn ein VSPackage <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID>nicht unterstützt, versucht die IDE, <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> unter Verwendung des Werts für <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID> zu verwenden, das die Hierarchien oder \- Elemente festlegen.  
+2.  Legen Sie die `pfHide` im Parameters <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing.HideProperty%2A> auf `TRUE`.  
   
- Das Projekt muss keine <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> VSPackages zu erstellen, da die IDE\-angegebene Sichtverpackung, die er implementiert \(z. B. **Projektmappen\-Explorer**\) <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> für die Zwecke erstellt.  
+ Push-Informationen zu den **Eigenschaften** Fenster die IDE verwendet <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>. <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>wird von VSPackages aufgerufen, für jedes Fenster, die auswählbare Objekte mit verwandten Eigenschaften anzuzeigenden enthält die **Eigenschaften** Fenster. **Projektmappen-Explorer**der Implementierung von <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> Aufrufe `GetProperty` mit <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID> in der Projekthierarchie durchsuchbare Objekte in der Hierarchie zu erhalten.  
   
- <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> besteht aus drei Methoden, die von der IDE aufgerufen werden:  
+ Wenn Ihr VSPackage nicht unterstützt <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID>, versucht die IDE verwenden <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> mithilfe des Werts für <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID> , dass die Hierarchieelement oder Elemente angeben.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer.CountObjects%2A> enthält die Anzahl der Objekte, die ausgewählt werden, im **Eigenschaften** Fenster angezeigt werden soll.  
+ Das Projekt, das VSPackage nicht erstellen muss <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> , da das Paket bereitgestellten IDE-Fenster, in dem sie implementiert (z. B. **Projektmappen-Explorer**) erstellt <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> in dessen Auftrag aufzubauen.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer.GetObjects%2A> gibt die `IDispatch`\-Objekten zurück, die dieser Option werden im **Eigenschaften** Fenster angezeigt werden soll.  
+ <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>besteht aus drei Methoden, die von der IDE aufgerufen werden:  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer.SelectObjects%2A> ermöglicht es für alle Objekte, die von zurückgegebenen <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer.GetObjects%2A> vom Benutzer ausgewählt werden sollen.  Dadurch kann ein VSPackage, um die Auswahl visuell zu aktualisieren, die dem Benutzer in der Benutzeroberfläche angezeigt wird.  
+-   <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer.CountObjects%2A>enthält die Anzahl der anzuzeigenden ausgewählten Objekte die **Eigenschaften** Fenster.  
   
- Das Fenster **Eigenschaften** extrahiert Informationen aus den `IDispatch`\-Objekten, um den Eigenschaften zu erhalten, die durchsucht werden.  Der Eigenschaftenbrowser `IDispatch` verwendet, um das Objekt zu fragen, welche Eigenschaften es unterstützt, indem `ITypeInfo`abfragt, das von `IDispatch::GetTypeInfo`abgerufen wird.  Der Browser verwendet dann diese Werte, um das Fenster **Eigenschaften** gefüllt und die Werte für die einzelnen Eigenschaften zu ändern, die im Datenblatt angezeigt werden.  Die Eigenschafteninformationen werden innerhalb des Objekts selbst beibehalten.  
+-   <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer.GetObjects%2A>Gibt die `IDispatch` anzuzeigenden ausgewählten Objekte die **Eigenschaften** Fenster.  
   
- Da die zurückgegebenen Objekte `IDispatch`unterstützen, kann der Aufrufer erhalten Informationen wie der Name des Objekts, indem er entweder `IDispatch::Invoke` oder `ITypeInfo::Invoke` mit einem vordefinierten Dispatchbezeichner \(DISPID\) aufruft, der die gewünschten Informationen darstellt.  Deklariertes DISPID ist negativ, um sicherzustellen, dass sie nicht mit benutzerdefinierten Bezeichnern Konflikt auftritt.  
+-   <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer.SelectObjects%2A>ermöglicht es einer der vom zurückgegebenen Objekte <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer.GetObjects%2A> vom Benutzer ausgewählt werden. Dadurch wird das VSPackage, um die Auswahl, die dem Benutzer in der Benutzeroberfläche angezeigten visuell zu aktualisieren.  
   
- Das **Eigenschaften** Fenster zeigt verschiedene Typen von Feldern je nach Attributen bestimmter Eigenschaften eines ausgewählten Objekts an.  Diese Felder werden Eingabefelder, Dropdownlisten und Links zu den Dialogfeldern benutzerdefinierten Editor.  
+ Die **Eigenschaften** Fenster extrahiert Informationen aus der `IDispatch` Objekte zum Abrufen der Eigenschaften, die durchsucht wird. Eigenschaftenbrowser verwendet `IDispatch` , Fragen Sie dem Objekt Eigenschaften unterstützt, indem Sie Abfragen `ITypeInfo`, erhalten Sie von `IDispatch::GetTypeInfo`. Der Browser verwendet dann diese Werte zum Auffüllen der **Eigenschaften** Fenster und ändern Sie die Werte für die einzelnen Eigenschaften im Raster angezeigt. Die Eigenschafteninformationen werden innerhalb des Objekts selbst verwaltet.  
   
--   Die Werte, die in einer Aufzählungsliste enthalten sind, werden durch eine <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer.GetObjects%2A>\-Abfrage zu `IDispatch`abgerufen.  abgerufene Werte aus einer Aufzählungsliste können im Eigenschaftenraster bearbeitet werden, indem Sie auf den Feldnamen doppelklickten, oder indem Sie auf den Wert klicken und den neuen Wert aus der Dropdownliste ausgewählt haben.  Für Eigenschaften, die Einstellungen aus den Aufzählungslisten vordefiniert sind, auf den Eigenschaftennamen in den listgängen Eigenschaftenlisten über die verfügbaren Optionen doppelklicken.  Für vordefinierte Eigenschaften mit nur zwei Optionen, z. B. true oder false, doppelklicken Sie auf den Namen, um zwischen der Auswahl umzuschalten.  
+ Da die zurückgegebenen Objekte unterstützen `IDispatch`, der Aufrufer kann Informationen wie den Namen des Objekts abzurufen, durch den Aufruf eines `IDispatch::Invoke` oder `ITypeInfo::Invoke` mit einem vordefinierten Dispatch-ID (DISPID), die die gewünschte Informationen darstellt. Deklarierte DISPIDs sind negativ ist, um sicherzustellen, dass sie nicht mit benutzerdefinierten Bezeichnern in Konflikt stehen.  
   
--   Wenn <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing.HasDefaultValue%2A>`false`ist. Er gibt an, dass der Wert geändert wurde, wird der Wert in fett formatiertem Text angezeigt.  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing.CanResetPropertyValue%2A> wird verwendet, um zu ermitteln, ob der Wert in den ursprünglichen Wert zurückgesetzt werden kann.  In diesem Fall können Sie an den Standardwert ändern, indem Sie auf den Wert mit der rechten Maustaste darauf klicken und **Zurücksetzen** im angezeigten Menü auswählen.  Andernfalls müssen Sie den Wert für den standardmäßigen manuell ändern.  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing> können Sie auch die Namen von Eigenschaften zu suchen und zu verbergen, die während der Entwurfszeit angezeigt werden, doch hat keine Auswirkungen auf die Eigenschaftennamen, die während der Laufzeit angezeigt werden.  
+ Die **Eigenschaften** Fenster werden verschiedene Typen von Feldern, die Abhängigkeit von den Attributen der bestimmte Eigenschaften eines ausgewählten Objekts angezeigt. Diese Felder umfassen Bearbeitungsfelder, Dropdownlisten und Links zu benutzerdefinierten Editor-Dialogfeldern.  
   
--   Durch Klicken auf die Schaltfläche mit den Auslassungspunkten \(...\) zeigt eine Liste von Eigenschaftswerten an, aus der der Benutzer auswählen kann \(z. B. eine Liste Schriftart oder Farben\-Auswahl\-\).  <xref:Microsoft.VisualStudio.Shell.Interop.IProvidePropertyBuilder> stellt diese Werte.  
+-   In einer nummerierten Liste enthaltenen Werte werden abgerufen, indem eine <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer.GetObjects%2A> Abfragen zum `IDispatch`. Vom eine Aufzählungsliste abgerufene Werte können im Eigenschaftenraster geändert werden, auf den Feldnamen doppelklicken oder indem Sie auf den Wert und den neuen Wert aus der Dropdown-Liste auswählen. Für Eigenschaften, die Einstellungen von aufgezählten Listen vordefinierte verfügen, durchläuft die verfügbaren Auswahlmöglichkeiten Doppelklicken auf den Eigenschaftennamen in der Eigenschaftenliste. Doppelklicken Sie für vordefinierte Eigenschaften mit nur zwei Optionen, wie beispielsweise "true" / "false" auf den Namen der Eigenschaft, um zwischen den Optionen wechseln.  
   
-## Siehe auch  
+-   Wenn <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing.HasDefaultValue%2A> ist `false`, gibt an, dass der Wert geändert wurde, wird der Wert in Fettdruck angezeigt. <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing.CanResetPropertyValue%2A>wird verwendet, um festzustellen, ob der Wert auf den ursprünglichen Wert zurückgesetzt werden kann. Wenn also Sie wieder auf den Standardwert ändern können, indem Sie mit der rechten Maustaste des Werts und **zurücksetzen** aus dem Menü angezeigt. Andernfalls müssen Sie den Wert manuell wieder auf den Standardwert zu ändern. <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing>Außerdem können Sie mit dem lokalisieren und blenden die Namen von Eigenschaften, die während der Entwurfszeit angezeigt, jedoch wirkt sich nicht auf die Eigenschaftennamen, die während der Laufzeit angezeigt.  
+  
+-   Klicken auf die Schaltfläche mit den Auslassungspunkten (...) zeigt eine Liste der Eigenschaftenwerte aus denen der Benutzer (z. B. eine Farbauswahl oder Schriftartenliste) auswählen kann. <xref:Microsoft.VisualStudio.Shell.Interop.IProvidePropertyBuilder>Diese Werte werden bereitgestellt.  
+  
+## <a name="see-also"></a>Siehe auch  
  [Erweitern von Eigenschaften](../../extensibility/internals/extending-properties.md)

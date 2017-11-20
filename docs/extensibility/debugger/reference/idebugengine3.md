@@ -1,57 +1,57 @@
 ---
-title: "IDebugEngine3 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugEngine3"
-helpviewer_keywords: 
-  - "IDebugEngine3-Schnittstelle"
+title: IDebugEngine3 | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugEngine3
+helpviewer_keywords: IDebugEngine3 interface
 ms.assetid: 8bdf4bb7-3b5d-4991-8981-772d4f6bb656
-caps.latest.revision: 15
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 15
+caps.latest.revision: "15"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: df8ea8f5e95cf32f5b1425a4f110c424155b2ef2
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugEngine3
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Stellt ein einzelnes Modul \(Debug\), die Steuerelemente DE das Debuggen eines oder mehrerer Module dar.  
+# <a name="idebugengine3"></a>IDebugEngine3
+Stellt eine einzelne Debugging-Modul (DE), die das Debuggen von einem oder mehreren Modulen steuert.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 IDebugEngine3 : IDebugEngine2  
 ```  
   
-## Hinweise für Implementierer  
- Diese Schnittstelle wird von benutzerdefinierten DE \(wenn sie Symbole unterstützt\) implementiert, um den JustMyCode\-Zustand zu aktivieren.  Diese Schnittstelle muss von DE implementiert werden, wenn sie Symbole und JustMyCode unterstützt.  
+## <a name="notes-for-implementers"></a>Hinweise für Implementierer  
+ Diese Schnittstelle wird durch eine benutzerdefinierte Deutschland (sofern es sich um Symbole unterstützt) um den JustMyCode-Status aktivieren implementiert. Diese Schnittstelle muss von der DE implementiert werden, wenn es sich um Symbole und JustMyCode unterstützt.  
   
-## Hinweise für Aufrufer  
- Diese Schnittstelle wird vom Debugbuild Manager der Sitzung \(SDM\) aufgerufen, um Speicherorte für Benutzeroptionen weiterzuleiten, von denen Symbole laden.  Sie wird auch aufgerufen, um die GUID des Moduls festzulegen, wenn sie instanziiert wird \(diese GUID basiert auf die Metrik seit Modul Registration\).  Das SDM ruft außerdem diese Schnittstelle, um den JustMyCode\-Zustand festzulegen und alle Ausnahmen festzulegen, die vom Debugger mit einem angegebenen Zustand bekannt sind.  
+## <a name="notes-for-callers"></a>Hinweise für Aufrufer  
+ Diese Schnittstelle wird von der Sitzung Debug-Manager (SDM) für die Übergabe über Optionen für Speicherorte, von denen So laden Sie Symbole aufgerufen. Es wird auch aufgerufen, um die GUID des Moduls festzulegen, wenn er instanziiert wird (diese GUID wird von der Testmetrik, ab dem Zeitpunkt der Registrierung von Modul basierend). Die SDM ruft auch diese Schnittstelle zum Festlegen des JustMyCode-Status und alle Ausnahmen, die durch den Debugger an einen bestimmten Status bekannt festzulegen.  
   
-## Methoden in die Vtable\-Reihenfolge  
- Zusätzlich zu den von [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) geerbten Methoden macht die `IDebugEngine3`\-Schnittstelle die folgenden Methoden verfügbar.  
+## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
+ Zusätzlich zu den von geerbten Methoden [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md), `IDebugEngine3` Schnittstelle macht die folgenden Methoden verfügbar.  
   
 |Methode|Beschreibung|  
-|-------------|------------------|  
-|[SetSymbolPath](../../../extensibility/debugger/reference/idebugengine3-setsymbolpath.md)|Legt den Pfad oder die Pfade fest, die verwendet wird, um DE für Debugsymbole zu suchen.|  
-|[LoadSymbols](../../../extensibility/debugger/reference/idebugengine3-loadsymbols.md)|Lädt die Symbole für alle Module, die noch nicht ihre geladenen Symbole aufweisen.|  
-|[SetJustMyCodeState](../../../extensibility/debugger/reference/idebugengine3-setjustmycodestate.md)|Verweist auf DE über die JustMyCode\-Informationen.|  
-|[SetEngineGuid](../../../extensibility/debugger/reference/idebugengine3-setengineguid.md)|Legt DE GUID aus der Metriken fest.|  
-|[SetAllExceptions](../../../extensibility/debugger/reference/idebugengine3-setallexceptions.md)|Legen Sie alle Ausnahmen ab, die derzeit einem angegebenen Zustand aus.|  
+|------------|-----------------|  
+|[SetSymbolPath](../../../extensibility/debugger/reference/idebugengine3-setsymbolpath.md)|Legt den Pfad oder die Pfade, die die DE bei der Suche nach Debugsymbole verwendet wird.|  
+|[LoadSymbols](../../../extensibility/debugger/reference/idebugengine3-loadsymbols.md)|Lädt die Symbole für alle Module, die noch nicht über die Symbole geladen wurde.|  
+|[SetJustMyCodeState](../../../extensibility/debugger/reference/idebugengine3-setjustmycodestate.md)|Weist die DE zu den JustMyCode-Informationen an.|  
+|[SetEngineGuid](../../../extensibility/debugger/reference/idebugengine3-setengineguid.md)|Legt die DE GUID aus der Metriken fest.|  
+|[SetAllExceptions](../../../extensibility/debugger/reference/idebugengine3-setallexceptions.md)|Alle Ausnahmen, die auf einem angegebenen Zustand derzeit ausstehenden festgelegt.|  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  Header: msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)

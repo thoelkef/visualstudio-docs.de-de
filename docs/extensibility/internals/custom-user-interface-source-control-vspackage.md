@@ -1,62 +1,64 @@
 ---
-title: "Benutzerdefinierte Oberfl&#228;che (Source Control VSPackage) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Benutzeroberfläche, Source Control-Pakete"
-  - "Quellcode-Verwaltungspaketen-Benutzeroberfläche"
+title: "Benutzerdefinierte Oberfläche (Source Control VSPackage) | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- user interface, source control packages
+- source control packages, user interface
 ms.assetid: f35ddb24-53bf-461e-b34f-7414f657c082
-caps.latest.revision: 28
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 28
+caps.latest.revision: "28"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 6138ffcd0c56b87e9e29a316aa2ae0ad9f982e18
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Benutzerdefinierte Oberfl&#228;che (Source Control VSPackage)
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-VSPackage deklariert seine Menüelemente und ihre Standardannahhmen von der Datei Studio\-Befehls\-Tabelle \(Visual .vsct\).  Die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrierte Entwicklungsumgebung \(IDE\) werden die Menüelemente im Standardannahhmen an, bis VSPackages geladen wurde.  Anschließend wird die <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>\-Methode aufgerufen, um die Menüelemente zu aktivieren oder zu deaktivieren.  
+# <a name="custom-user-interface-source-control-vspackage"></a>Benutzerdefinierte Oberfläche (Source Control VSPackage)
+Eine VSPackage deklariert die Menüelemente und deren Standardstatus über die Visual Studio-Befehlstabelle (VSCT)-Datei. Die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrierten Entwicklungsumgebung (IDE) werden die Menüelemente in ihrem Standard angezeigt, bis das VSPackage geladen wurde. Anschließend kann die <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> Methode wird aufgerufen, um zu aktivieren oder Deaktivieren von Menüelementen.  
   
- VSPackage kann einen Registrierungsschlüssel festlegen, sodass ein VSPackage Befehl je nach einem Kontext der Benutzeroberfläche \(UI\) automatisch geladen werden, obwohl in der Regel eine Quellcodeverwaltung VSPackage bei Bedarf laden soll, statt an einen Kontext der bestimmten Benutzeroberfläche nur zu wechseln.  Weitere Informationen zu den AutoLoadPackages\-Registrierungsschlüssel finden Sie unter [Verwalten von VSPackages](../../extensibility/managing-vspackages.md).  
+ Eine VSPackage kann einen Registrierungsschlüssel festlegen, damit das VSPackage automatisch geladen werden kann, können Sie je nach einem Befehl Benutzerkontext-Benutzeroberfläche (UI), obwohl eine Quelle zu steuern, in der Regel sollte VSPackage statt nur Wechsel zu einem bestimmten UI-Kontext Bedarfsgesteuert laden. Weitere Informationen zum Registrierungsschlüssel AutoLoadPackages finden Sie unter [Verwalten von VSPackages](../../extensibility/managing-vspackages.md).  
   
-## VSPackage Benutzeroberfläche  
- Ein Paket wird als Quellcodeverwaltung ein VSPackage implementieren und keine Benutzeroberfläche von [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]verwendet.  Jede Quellcodeverwaltung VSPackage muss seine eigene Benutzeroberflächenelemente wie Menü Menüelemente Gruppen, Toolfenster, Symbolleisten und jedes erforderliche Benutzeroberfläche zum Festlegen von Optionen angeben, die der Quellcodeverwaltung VSPackage spezifisch sind.  Diese Benutzeroberflächenelemente können statisch oder dynamisch aktiviert sind.  Statische Benutzeroberflächenelemente werden in einer .vsct\-Datei definiert und werden angezeigt, ob ein VSPackage oder nicht geladen wird.  Dynamische Benutzeroberflächenelemente sind davon abhängig von einem bestimmten Kontext Befehlsbenutzeroberflächen, z. B. <xref:EnvDTE.Constants.vsContextNoSolution>oder als Ergebnis eines Aufrufs der <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>\-Methode sichtbar.  Die Sichtbarkeit von dynamischen Benutzeroberflächenelementen stimmt mit der Strategie für das verzögerte Laden von VSPackages.  
+## <a name="vspackage-ui"></a>VSPackage-Benutzeroberfläche  
+ Eine Source Control-Paket wird als ein VSPackage implementiert und verwendet keinen Benutzeroberflächen aus [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Jede quellcodeverwaltung VSPackage muss eigene Benutzeroberflächenelemente, z. B. Menüelemente, Menügruppen Toolfenster, Symbolleisten und Benutzeroberflächenelemente erforderlich zum Festlegen von Optionen quellcodeverwaltung des VSPackage bestimmte angeben. Diese Elemente der Benutzeroberfläche können statisch oder dynamisch aktiviert werden. Statische Elemente der Benutzeroberfläche in einer VSCT-Datei definiert sind und angezeigt werden, ob das VSPackage oder nicht geladen wird. Dynamische Elemente der Benutzeroberfläche möglicherweise sichtbar je nach einem bestimmten Befehl UI-Kontext, z. B. <xref:EnvDTE.Constants.vsContextNoSolution>, oder als Ergebnis eines Aufrufs an die <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> Methode. Die Sichtbarkeit der dynamischen Elemente der Benutzeroberfläche entspricht der Strategie für das verzögerte Laden von VSPackages.  
   
-## VSPackages auf Quellcodeverwaltung Benutzeroberfläche\-Einschränkungen  
- Da die Quellcodeverwaltung ein VSPackage über die IDE nicht entfernt werden können, nachdem sie geladen wurde, muss ein VSPackage in der Lage sein, einen inaktiven Zustand übergegangen ist.  Wenn ein VSPackage Benachrichtigung erhält, dass sie nicht mehr aktiv ist, VSPackages deaktiviert sein Benutzeroberfläche und ignoriert jede externe IDE\-Interaktion.  Die VSPackages Implementierung der <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>\-Methode sollte Befehle ausgeblendet, wenn ein VSPackage nicht aktiv ist.  
+## <a name="ui-constraints-on-source-control-vspackages"></a>UI-Beschränkungen Source Control VSPackages  
+ Da das Quellsteuerelement VSPackage nicht aus der IDE entfernt werden kann, nachdem es geladen wird, muss das VSPackage einen inaktiven Status eingeben können. Wenn eine VSPackage Benachrichtigung erhält, dass es nicht mehr aktiv ist, wird das VSPackage die Benutzeroberfläche deaktiviert und ignoriert externe IDE ein Eingreifen. Die VSPackage Implementierung der <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> Methode sollten Befehle ausblenden, wenn das VSPackage nicht aktiv ist.  
   
- Jede Quellcodeverwaltung VSPackage muss die `IVsSccProvider`\-Schnittstelle implementieren.  Zwei Methoden der Schnittstelle, <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider.SetActive%2A> und <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider.SetInactive%2A>, müssen von VSPackages implementiert werden.  
+ Alle Datenquellen-Steuerelements, das VSPackage implementieren muss die `IVsSccProvider` Schnittstelle. Zwei Methoden der Schnittstelle <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider.SetActive%2A> und <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider.SetInactive%2A>, von dem VSPackage implementiert werden muss.  
   
- Die Quellcodeverwaltung VSPackage abonniert möglicherweise zu unterschiedlichen IDE\-Ereignissen, die von <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3>, <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents2>implementiert werden, usw.  Außerdem kann ein VSPackage Rückruf Registrierung\-aktivierte Schnittstellen implementiert, z. B. <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence>.  Diese müssen alle ignoriert werden, wenn inaktiv.  
+ Die Datenquellen-Steuerelements, das VSPackage möglicherweise verschiedene IDE-Ereignisse, die von implementiert werden abonniert haben die <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3>, <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents2>und so weiter. Darüber hinaus das VSPackage möglicherweise haben implementiert Registrierung aktiviert eine Rückrufschnittstelle, wie z. B. die <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence>. Dazu müssen alle inaktiven Zustand ignoriert werden.  
   
- In der folgenden Liste sind die Schnittstellen aufgeführt, die in den aktiven Zustand einer Quellcodeverwaltung VSPackage betroffen sind:  
+ Die folgende Liste enthält die Schnittstellen, die von den aktiven Status des VSPackage ein Datenquellen-Steuerelements betroffen sind:  
   
--   Titel\-Projektdokumentations Events.  
+-   Project-Dokumente Ereignisse zu verfolgen.  
   
--   Projektmappen Events.  
+-   Projektmappenereignisse, die.  
   
--   Dauerhaftigkeit von Projektmappen Schnittstellen.  Wenn keine Pakete sollten inaktiv, .suo\-Dateien SLN\- und zu schreiben.  
+-   Lösung Persistenz-Schnittstellen. Wenn inaktiv ist, sollten Pakete nicht auf .sln und .suo-Dateien geschrieben.  
   
--   Eigenschaftextender.  
+-   Eigenschaftenextender.  
   
- Erforderliche <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> und <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>und auch keine optionalen Schnittstellen, die Quellcodeverwaltung verknüpft sind, werden nicht aufgerufen, wenn die Quellcodeverwaltung VSPackages deaktiviert ist.  
+ Die erforderliche <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> und <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>, und auch optionalen Schnittstellen zugeordneten Datenquellen-Steuerelements werden nicht aufgerufen, wenn das Quellsteuerelement VSPackage inaktiv ist.  
   
- Wenn die IDE [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] beginnt, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] den Kontext Befehlsbenutzeroberflächen auf die ID der aktuellen Standardeinstellung quellcodeverwaltung VSPackages festlegt.  Dies bewirkt, dass das statische Benutzeroberfläche der aktiven Quellcodeverwaltung VSPackage, in der IDE angezeigt werden, ohne tatsächlich VSPackages geladen werden soll.  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Pausen, damit [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] mit einem VSPackage über <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterScciProvider> registriert, bevor ein VSPackage alle Aufrufe vornimmt.  
+ Wenn die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE gestartet wird, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] des Kontexts Befehl UI auf die ID der Standardeinstellung Quellcodeverwaltungs VSPackage-ID. Dies bewirkt, dass die statische Benutzeroberfläche des aktiven Datenquellen-Steuerelements VSPackage in der IDE angezeigt werden, ohne tatsächlich laden das VSPackage. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]für das VSPackage zu registrierenden hält [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] über die <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterScciProvider> vor dem alle Aufrufe an das VSPackage.  
   
- In der folgenden Tabelle werden bestimmte Details darüber, wie sich das [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE andere Benutzeroberflächenelemente ausblendet.  
+ Die folgende Tabelle beschreibt spezifische Details darüber, wie die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE Blendet Sie aus verschiedenen UI-Elemente.  
   
-|Benutzeroberflächenelement|Beschreibung|  
-|--------------------------------|------------------|  
-|Menüs und Symbolleisten|Das Paket muss die ursprünglichen Quellcodeverwaltung Menü\- und Symbolleisten sichtbarkeits Bedingungen zur Quellcodeverwaltung paket\-id im [VisibilityConstraints](../../extensibility/visibilityconstraints-element.md)\-Abschnitt der .vsct\-Datei festlegen.  Dies ermöglicht das [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE, um den Zustand der Menüelemente entsprechend festzulegen, ohne VSPackages geladen und eine Implementierung der <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>\-Methode aufzurufen.|  
-|Toolfenster|Die Quellcodeverwaltung VSPackage blendet alle Toolfenster aus, die dieser besitzt, wenn sie deaktiviert.|  
-|Quellcodeverwaltung VSPackage\-Besondere Optionsseiten|Der Registrierungsschlüssel HKLM \\ SOFTWARE \\ Microsoft \\ VisualStudio \\ X.Y \\ ToolsOptionsPages \\ VisibilityCmdUIContexts VSPackage können die Kontexte festlegen, in denen es erforderlich ist, seine Optionsseiten angezeigt werden soll.  Ein Registrierungseintrag unter diesem Schlüssel erstellt werden kann, muss der Dienst ID \(SID\) des verwendeten diensts Quellcodeverwaltung und ihr einen DWORD\-Wert 1. zuwies.  Sobald ein Benutzeroberfläche\-Ereignis in einem Kontext auftritt, wird die Quellcodeverwaltung bezeichnet wird, mit einem VSPackage VSPackages registriert, wenn es aktiv ist.|  
+|Benutzeroberflächenautomatisierungs-Element|Beschreibung|  
+|-------------|-----------------|  
+|Menüs und Symbolleisten|Das Quellcodeverwaltungspaket muss die Menü- und Symbolleistenelemente Sichtbarkeit Anfangszustände festgelegt, auf die Datenquellen-Steuerelement Paket-ID in der [VisibilityConstraints](../../extensibility/visibilityconstraints-element.md) Abschnitt der VSCT-Datei. Dies ermöglicht die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE zum Festlegen des Status der Menüelemente entsprechend ohne laden das VSPackage und eine Implementierung von Aufrufen der <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> Methode.|  
+|Toolfenster|Die Datenquellen-Steuerelements VSPackage Blendet alle Toolfenster, die er besitzt, wenn sie inaktive bereitgestellt wird.|  
+|Datenquellen-Steuerelements VSPackage-spezifischen Optionen-Seiten|Der Registrierungsschlüssel HKLM\SOFTWARE\Microsoft\VisualStudio\X.Y\ToolsOptionsPages\VisibilityCmdUIContexts kann eine VSPackage die Kontexte festgelegt, in denen dafür seine Optionsseiten angezeigt werden. Ein Registrierungseintrag unter diesem Schlüssel mithilfe von Dienst-ID (SID) des der quellcodeverwaltungsdienst und einen DWORD-Wert von 1 Vorlagenkörpers erstellt werden müssten. Eintreten ein UI-Ereignis in einem Kontext die Datenquellen-Steuerelements, das VSPackage registriert ist, wird das VSPackage aufgerufen werden, wenn er aktiv ist.|  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>   

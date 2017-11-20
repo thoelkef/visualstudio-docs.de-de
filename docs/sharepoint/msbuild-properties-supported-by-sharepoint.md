@@ -1,61 +1,62 @@
 ---
-title: "Von SharePoint unterst&#252;tzte MSBuild-Eigenschaften"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "SharePoint-Entwicklung in Visual Studio, MSBuild-Eigenschaften"
+title: "MSBuild-Eigenschaften, die von SharePoint unterstützte | Microsoft Docs"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- VB
+- CSharp
+helpviewer_keywords: SharePoint development in Visual Studio, MSBuild properties
 ms.assetid: 7b2b58c6-55cd-4682-a5d7-43874e70920d
-caps.latest.revision: 10
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "10"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 53e90448d5e7a24f4904f9c4ea02ac041531ce02
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Von SharePoint unterst&#252;tzte MSBuild-Eigenschaften
-  Jede [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)]\-Eigenschaft, die in der Datei "Microsoft.VisualStudio.SharePoint.targets", in der Projektdatei oder in der Projektbenutzerdatei definiert ist, kann in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint\-Projekten verwendet werden.  Neben den allgemeinen, im Projekt angegebenen [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)]\-Eigenschaften werden von SharePoint zusätzliche, für SharePoint\-Projekte spezifische Eigenschaften definiert.  
+# <a name="msbuild-properties-supported-by-sharepoint"></a>Von SharePoint unterstützte MSBuild-Eigenschaften
+  Alle [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] der Microsoft.VisualStudio.SharePoint.targets Datei, die Projektdatei oder die Benutzer-Projektdatei definierte Eigenschaft kann verwendet werden, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint-Projekte. Zusätzlich zu den allgemeinen [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] Eigenschaften, die von der SharePoint-Projekt bereitgestellten definiert zusätzliche Eigenschaften, die spezifisch für SharePoint-Projekte sind.  
   
- Eine Liste allgemeiner Eigenschaften [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)], Sie finden [Allgemeine MSBuild\-Projekteigenschaften](http://go.microsoft.com/fwlink/?LinkID=168687).  Eine vollständige Liste mit den Eigenschaften, die von der Programmiersprache unterstützt werden, finden Sie in der TARGETS\-Datei, in der Projektdatei \(CSPROJ\- oder VBPROJ\-Datei\) oder in der Projektbenutzerdatei \(CSPROJ.USER\- oder VBPROJ.USER\-Datei\).  
+ Eine Liste der allgemeinen [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] Eigenschaften finden Sie in [gemeinsame MSBuild-Projekteigenschaften](http://go.microsoft.com/fwlink/?LinkID=168687). Eine vollständige Liste der Eigenschaften, die von der Programmiersprache unterstützt, finden Sie in den TARGETS-Datei, die Projektdatei (.csproj oder .vbproj) oder die Projektdatei des Benutzers (csproj.user oder. vbproj.user).  
   
-## SharePoint\-spezifische MSBuild\-Eigenschaften  
- Die folgende Tabelle enthält die [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)]\-Eigenschaften, die spezifisch für SharePoint\-Projekte in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] gelten.  Zwar sind noch weitere Eigenschaften vorhanden, diese dienen jedoch lediglich zur internen Verwendung.  
+## <a name="msbuild-properties-specific-to-sharepoint"></a>MSBuild-spezifische Eigenschaften in SharePoint  
+ Die folgende Tabelle enthält [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] Eigenschaften, die speziell für die SharePoint-Projekte in gelten [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Andere Eigenschaften vorhanden, aber sie sind für die interne Verwendung.  
   
-|Eigenschaftenname|**Beschreibung**|  
-|-----------------------|----------------------|  
-|SharePointSiteUrl|Eine Zeichenfolge, die die [!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)] zur SharePoint\-Website darstellt.|  
-|SandboxedSolution|Ein boolescher Wert, der angibt, ob es sich bei der Lösung um eine Sandkastenlösung handelt.|  
+|Eigenschaftenname|Beschreibung|  
+|-------------------|-----------------|  
+|' SharePointSiteUrl '|Eine Zeichenfolge, die stellt die [!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)] zur SharePoint-Website.|  
+|SandboxedSolution|Ein boolescher Wert, der angibt, ob die Lösung eine Sandbox geeignet ist.|  
 |ActiveDeploymentConfiguration|Die aktive Bereitstellungskonfiguration.|  
-|IncludeAssemblyInPackage|Ein boolescher Wert, der angibt, ob die Assembly in der Paketdatei enthalten ist.|  
-|PreDeploymentCommand|Ein Zeichenfolgenwert, der den Befehl darstellt, der im Befehlsschritt vor der Bereitstellung ausgeführt werden soll.|  
-|PostDeploymentCommand|Ein Zeichenfolgenwert, der den Befehl darstellt, der im Befehlsschritt nach der Bereitstellung ausgeführt werden soll.|  
-|CustomBeforeSharePointTargets|Eine Zeichenfolge, die den Pfad einer [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)]\-Zieledatei darstellt.  Wenn die Zieledatei vorhanden und definiert ist, wird sie vor allen SharePoint\-Zieledaten importiert.  Mithilfe dieser Eigenschaft können Sie den Packvorgang durch Vordefinieren packbezogener Eigenschaften anpassen, ohne die veröffentlichte SharePoint\-Zieledatei zu ändern; die Zieledatei gilt auch weiterhin für alle SharePoint\-Projekte.|  
-|CustomAfterSharePointTargets|Eine Zeichenfolge, die den Pfad einer [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)]\-Zieledatei darstellt.  Wenn die Zieledatei vorhanden und definiert ist, wird sie nach allen SharePoint\-Zieledaten importiert.  Mithilfe dieser Eigenschaft können Sie den Packvorgang durch Überschreiben packbezogener Eigenschaften und Ziele anpassen, ohne die veröffentlichte SharePoint\-Zieledatei ändern zu müssen; die Zieledatei gilt auch weiterhin für alle SharePoint\-Projekte.|  
-|LayoutPath|Eine Zeichenfolge, die das Stammverzeichnis darstellt, in dem alle zu verpackenden Dateien vorübergehend platziert werden, bevor sie schließlich der WSP\-Datei hinzugefügt werden.  Dieser Pfad sollte Ihnen bekannt sein, wenn Sie das BeforeLayout\-Ziel und das AfterLayout\-Ziel zum Hinzufügen, Entfernen oder Ändern von zu packenden Dateien überschreiben, da Sie ihn zum Ändern des Inhalts der WSP\-Datei verwenden können.|  
-|BasePackagePath|Eine Zeichenfolge, die den Ordner darstellt, in dem das Paket platziert wird.  Von diesem Wert wird das Ausgabeverzeichnis des Projekts \(beispielsweise "Bin\\Debug"\) verwendet.|  
-|PackageExtension|Eine Zeichenfolge, die die an das Paket anzufügende Dateinamenerweiterung darstellt.  Standardwert: wsp.|  
-|AssemblyDeploymentTarget|Eine Zeichenfolge, die den Ort darstellt, an dem die Projektassembly auf dem SharePoint\-Server bereitgestellt wird.  Der Wert lautet entweder "GlobalAssemblyCache" \(Standardwert\) oder "WebApplication".  Diese Eigenschaft kann auch im Eigenschaftenfenster festgelegt werden.|  
-|PackageWithValidation|Ein boolescher Wert, der angibt, ob vor dem Packen eine Validierung ausgeführt wird.  Mithilfe dieser Eigenschaft können Validierungsfehler bei der Paketerstellung ignoriert werden.|  
-|ValidatePackageDependsOn|Eine Zeichenfolge zum Definieren zusätzlicher Ziele, die vor dem ValidatePackage\-Ziel ausgeführt werden sollen.|  
-|TokenReplacementFileExensions|Eine Zeichenfolge zum Definieren der Dateien, deren Token beim Packen ersetzt werden.|  
+|IncludeAssemblyInPackage|Ein boolescher Wert, der angibt, ob die Assembly im Paket enthalten ist.|  
+|PreDeploymentCommand|Ein Zeichenfolgenwert, der im Befehl vor der Bereitstellung-Schritt-Anweisung auszuführende Befehl darstellt.|  
+|PostDeploymentCommand|Ein Zeichenfolgenwert, der im Befehl nach der Bereitstellung-Schritt-Anweisung auszuführende Befehl darstellt.|  
+|CustomBeforeSharePointTargets|Eine Zeichenfolge, die den Pfad des repräsentiert eine [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] Targets-Datei. Wenn die Zieldatei vorhanden ist und definiert ist, wird sie vor allen anderen SharePoint-Ziele-Daten importiert. Diese Eigenschaft können Sie der Paketprozess durch vordefinieren Packaging-bezogene Eigenschaften anpassen, ohne die gelieferte SharePoint Targets-Datei ändern, aber Targets-Datei gilt weiterhin für alle SharePoint-Projekte.|  
+|CustomAfterSharePointTargets|Eine Zeichenfolge, die den Pfad des repräsentiert eine [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] Targets-Datei. Wenn die Zieldatei vorhanden ist und definiert ist, ist es nach allen SharePoint-Ziele-Daten importiert. Mit dieser Eigenschaft können Sie anpassen, wie der Paketprozess durch Überschreiben der Verpackung-bezogene Eigenschaften und Ziele ohne gelieferte SharePoint Targets-Datei ändern zu müssen, aber die Targets-Datei gilt weiterhin für alle SharePoint-Projekte.|  
+|LayoutPath|Eine Zeichenfolge darstellt, das Stammverzeichnis, in dem alle Dateien verpackt werden vorübergehend platziert werden, bevor sie die WSP-Datei hinzugefügt werden. Dieser Pfad kann hilfreich zu wissen, wenn Sie überschreiben die BeforeLayout und AfterLayout Ziele hinzufügen, entfernen oder Ändern von Dateien verpackt werden, da Sie so ändern Sie den Inhalt der WSP-Datei verwendet werden können.|  
+|BasePackagePath|Eine Zeichenfolge, die den Ordner darstellt, in dem das Paket befindet. Dieser Wert verwendet das Ausgabeverzeichnis des Projekts, z. B. "bin\Debug".|  
+|PackageExtension|Eine Zeichenfolge, die die Dateinamenerweiterung zum Anfügen an das Paket darstellt. Der Standardwert ist Wsp.|  
+|AssemblyDeploymentTarget|Eine Zeichenfolge, die den Speicherort darstellt, in dem die Projektassembly auf dem SharePoint-Server bereitgestellt wird. Der Wert ist GlobalAssemblyCache (Standard) oder WebApplication. Diese Eigenschaft kann auch im Eigenschaftenfenster festgelegt werden.|  
+|PackageWithValidation|Ein boolescher Wert, der angibt, ob die Überprüfung vor dem Packen. Diese Eigenschaft können Sie die Überprüfungsfehler ignorieren beim Erstellen von Paketen.|  
+|ValidatePackageDependsOn|Eine Zeichenfolge, die zusätzliche Ziele ausgeführt wird, bevor das ValidatePackage Ziel definiert.|  
+|TokenReplacementFileExensions|Eine Zeichenfolge, die Dateien definiert, die ihren Token, die während des Verpackens ersetzt haben.|  
   
-## Verwenden von MSBuild\-Eigenschaften auf der Eigenschaftenseite  
- Aus Gründen der Flexibilität können Sie anstelle der hartcodierten Zeichenfolgen in den Feldern **Befehlszeile vor der Bereitstellung** und **Befehlszeile nach der Bereitstellung** auf der SharePoint\-Eigenschaftenseite die SharePoint\-Eigenschaften als Argumente verwenden.  So können Sie beispielsweise `$(SharePointSiteUrl)` verwenden, anstatt eine bestimmte [!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)]\-Zeichenfolge für die SharePoint\-Website anzugeben.  
+## <a name="using-msbuild-properties-in-the-properties-page"></a>Verwenden von MSBuild-Eigenschaften in der Seite "Eigenschaften"  
+ Für Flexibilität, anstelle von hartcodierten Zeichenfolgen in die **vor der Bereitstellung über die Befehlszeile** und **nach der Bereitstellung über die Befehlszeile** Felder auf der Seite "SharePoint-Eigenschaften" können Sie die SharePoint die Eigenschaften als Argumente. Z. B. angeben, statt einen bestimmten [!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)] Zeichenfolge für die SharePoint-Website können Sie stattdessen `$(SharePointSiteUrl)`.  
   
 > [!NOTE]  
->  Eine Eigenschaft kann entweder mithilfe der [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)]\-Variablensyntax `$(`*propertyName*`)` oder mithilfe der Umgebungsvariablensyntax `%`*propertyName*`%` angegeben werden.  
+>  Verwenden Sie entweder die [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] Variable Syntax `$(` *PropertyName* `)` oder die Umgebungsvariablensyntax `%` *PropertyName* `%` Um eine Eigenschaft anzugeben.  
   
-## Siehe auch  
- [MSBuild Reference](../msbuild/msbuild-reference.md)  
+## <a name="see-also"></a>Siehe auch  
+ [MSBuild-Referenz](/visualstudio/msbuild/msbuild-reference)  
   
   

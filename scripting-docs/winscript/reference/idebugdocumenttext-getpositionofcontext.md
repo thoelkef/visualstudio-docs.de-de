@@ -1,27 +1,30 @@
 ---
-title: "IDebugDocumentText::GetPositionOfContext | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IDebugDocumentText::GetPositionOfContext | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IDebugDocumentText.GetPositionOfContext
 apilocation: pdm.dll
-helpviewer_keywords: 
-  - "IDebugDocumentText::GetPositionOfContext"
+helpviewer_keywords: IDebugDocumentText::GetPositionOfContext
 ms.assetid: 90fec730-c3fb-45fb-92ef-05ecc90dca38
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 0f843d71096dea4c22eda757a4d6975dfda94180
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# IDebugDocumentText::GetPositionOfContext
-Gibt den Zeichenpositionsbereich entsprechend einem Dokumentenkontext zurück.  
+# <a name="idebugdocumenttextgetpositionofcontext"></a>IDebugDocumentText::GetPositionOfContext
+Gibt die Zeichenposition Bereich für eine Dokumentenkontext zurück.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 HRESULT GetPositionOfContext(  
@@ -31,25 +34,25 @@ HRESULT GetPositionOfContext(
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `psc`  
- \[in\] Das Dokumentenkontextobjekt.  
+ [in] Das Dokumentobjekt Kontext.  
   
  `pcCharacterPosition`  
- \[out\] Startposition des Zeichenpositionsbereichs.  
+ [out] Die Startposition des Zeichenbereichs folgt Position.  
   
  `cNumChars`  
- \[out\] Anzahl von Zeichen im Bereich.  
+ [out] Anzahl der Zeichen im Bereich.  
   
-## Rückgabewert  
- Die Methode gibt ein `HRESULT` zurück.  Zu den möglichen Werten zählen, aber nicht zu, die in der folgenden Tabelle beschränkt.  
+## <a name="return-value"></a>Rückgabewert  
+ Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
   
-|Wert|Description|  
-|----------|-----------------|  
+|Wert|Beschreibung|  
+|-----------|-----------------|  
 |`S_OK`|Die Methode war erfolgreich.|  
   
-## Hinweise  
- Der Dokumentenkontext, der dieser Methode bereitgestellt wird, muss mit diesem Dokument zugeordnet werden.  
+## <a name="remarks"></a>Hinweise  
+ Der Dokumentenkontext für diese Methode muss mit diesem Dokument zugeordnet werden.  
   
-## Siehe auch  
- [IDebugDocumentText\-Schnittstelle](../../winscript/reference/idebugdocumenttext-interface.md)
+## <a name="see-also"></a>Siehe auch  
+ [IDebugDocumentText-Schnittstelle](../../winscript/reference/idebugdocumenttext-interface.md)

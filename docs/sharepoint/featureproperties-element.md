@@ -1,30 +1,31 @@
 ---
-title: "FeatureProperties Element"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "FeatureProperties element"
+title: FeatureProperties-Element | Microsoft Docs
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords: FeatureProperties element
 ms.assetid: 89233274-a842-4f40-a81a-5548379f6f39
-caps.latest.revision: 11
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "11"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 30580096838ebdeb651906f5a61514d63eb9f391
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# FeatureProperties Element
-  Stellt eine Auflistung von Eigenschaftswerten dar, die beim Bereitstellen für SharePoint in einer Funktion enthalten sind.  Nach dem Bereitstellen einer Funktion können Sie im Code auf die Eigenschaftswerte zugreifen.  
+# <a name="featureproperties-element"></a>FeatureProperties-Element
+  Stellt eine Auflistung von Eigenschaftswerten, die in eine Funktion eingeschlossen werden, wenn er für SharePoint bereitgestellt wird. Nachdem eine Funktion bereitgestellt wird, können Sie die Eigenschaftswerte in Ihrem Code zugreifen.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 <FeatureProperties>  
@@ -32,38 +33,38 @@ caps.handback.revision: 7
 </FeatureProperties>  
 ```  
   
-## Attribute und Elemente  
+## <a name="attributes-and-elements"></a>Attribute und Elemente  
  In den folgenden Abschnitten werden Attribute sowie untergeordnete und übergeordnete Elemente beschrieben.  
   
-### Attribute  
+### <a name="attributes"></a>Attribute  
  Keine.  
   
-### Untergeordnete Elemente  
+### <a name="child-elements"></a>Untergeordnete Elemente  
   
 |Element|Beschreibung|  
-|-------------|------------------|  
-|[FeatureProperty](../sharepoint/featureproperty-element.md)|Optionales Element.<br /><br /> Stellt eine benutzerdefinierte Eigenschaft im Schlüssel\-Wert\-Format dar.|  
+|-------------|-----------------|  
+|[FeatureProperty](../sharepoint/featureproperty-element.md)|Optionales Element.<br /><br /> Stellt eine benutzerdefinierte Eigenschaft im Schlüssel/Wert-Format dar.|  
   
-### Übergeordnete Elemente  
+### <a name="parent-elements"></a>Übergeordnete Elemente  
   
 |Element|Beschreibung|  
-|-------------|------------------|  
-|[ProjectItem](../sharepoint/projectitem-element.md)|Stellt ein SharePoint\-Projektelement dar.  Dies ist das erforderliche Stammelement der SPDATA\-Datei.|  
+|-------------|-----------------|  
+|[ProjectItem](../sharepoint/projectitem-element.md)|Stellt ein SharePoint-Projektelement dar. Dies ist das erforderliche Stammelement der SPDATA-Datei.|  
   
-## Hinweise  
- Weitere Informationen zu Funktionseigenschaften finden Sie unter [Bereitstellen von Pack- und Bereitstellungsinformationen in Projektelementen](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).  
+## <a name="remarks"></a>Hinweise  
+ Weitere Informationen zu Eigenschaften finden Sie unter [Bereitstellen von Pack- und Bereitstellungsinformationen in Projektelementen](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).  
   
-## Elementinformationen  
+## <a name="element-information"></a>Elementinformationen  
   
-|||  
-|-|-|  
-|**Namespace**|http:\/\/schemas.microsoft.com\/VisualStudio\/2010\/SharePointTools\/SharePointProjectItemModel|  
-|**Schemaname**|SharePoint\-Projektelementschema|  
-|**Validierungsdatei**|ProjectItemModelSchema.xsd|  
-|**Kann leer sein.**|Nein|  
+|Element|Beschreibung|  
+|-------------|-----------------|  
+|**Namespace**|http://Schemas.Microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel|  
+|**Schemaname**|SharePoint-Projektelementschema|  
+|**Validierungsdatei**|"ProjectItemModelSchema.xsd" benannt|  
+|**Kann leer sein**|Nein|  
   
-## Siehe auch  
- [SharePoint Project Item Schema Reference](../sharepoint/sharepoint-project-item-schema-reference.md)   
+## <a name="see-also"></a>Siehe auch  
+ [SharePoint-Projektelementschema](../sharepoint/sharepoint-project-item-schema-reference.md)   
  [Bereitstellen von Pack- und Bereitstellungsinformationen in Projektelementen](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)  
   
   

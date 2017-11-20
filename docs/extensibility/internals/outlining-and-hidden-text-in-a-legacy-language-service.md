@@ -1,32 +1,33 @@
 ---
-title: "Gliederung und ausgeblendeten Text in einem Legacy-Sprachdienst | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Gliedern, Unterstützung von in systemeigenem code"
+title: Gliederung und ausgeblendeten Text in einen Legacy-Sprachdienst | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: outlining, supporting in native code
 ms.assetid: 252c5221-2e64-461c-8dcf-b622e400e0be
-caps.latest.revision: 5
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 5
+caps.latest.revision: "5"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: c28fbedddcd5a3d7bb80f1c14cd9a7f2ffe89eb8
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Gliederung und ausgeblendeten Text in einem Legacy-Sprachdienst
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Gliederungen ermöglicht es, eine Sequenz von Textzeilen in einer einzelnen Zeile zu reduzieren.  In C\+\+ können alle Methoden in einer einzelnen Zeile reduziert sind und nur die Methodensignatur anzeigen.  Ausgeblendeter Text ist die Abfolge von Textzeilen, die angezeigt oder ausgeblendet werden können.  
+# <a name="outlining-and-hidden-text-in-a-legacy-language-service"></a>Gliederung und ausgeblendeten Text in einen Legacy-Sprachdienst
+Gliederung erleichtert möglich, eine Sequenz von Textzeilen in einer einzelnen Zeile zu reduzieren. In C++ können z. B. alle Methoden einer einzelnen Zeile eine zeigt nur die Methodensignatur reduziert werden. Ausgeblendeten Text ist die Sequenz der Textzeilen, die angezeigt oder ausgeblendet werden können.  
   
-## In diesem Abschnitt  
- [Gewusst wie: unterstützen Gliederung im ein Legacy\-Sprachdienst](../../extensibility/internals/how-to-support-outlining-in-a-legacy-language-service.md)  
- Erklärt, wie implementiert  
+## <a name="in-this-section"></a>In diesem Abschnitt  
+ [Gewusst wie: Unterstützen der Gliederung in einem Legacysprachdienst](../../extensibility/internals/how-to-support-outlining-in-a-legacy-language-service.md)  
+ Erläutert, wie implementieren  
   
- [Gewusst wie: unterstützen ausgeblendeter Text in einem Legacy\-Sprachdienst](../../extensibility/internals/how-to-provide-hidden-text-support-in-a-legacy-language-service.md)  
- Erläutert den Zweck eines Bereichs des ausgeblendeten Textes und enthält Anweisungen darüber bereit, wie Sie einen Bereich des ausgeblendeten Textes implementiert.  
+ [Gewusst wie: Unterstützen von ausgeblendetem Text in einem Legacysprachdienst](../../extensibility/internals/how-to-provide-hidden-text-support-in-a-legacy-language-service.md)  
+ Erläutert den Zweck eines Datenbereichs ausgeblendetem Text, und bietet Anweisungen zum Implementieren einer Region ausgeblendeten Text.  
   
- [Gewusst wie: unterstützen erweiterte Gliederung in eine Legacy\-Sprachdienst](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)  
- Erläutert die zwei Optionen, die für die Unterstützung von Gliedern die Sprache über das Sichern des *Einsturzes hinaus auf den* Befehl *Definitions* .
+ [Gewusst wie: Bereitstellen von Unterstützung für erweiterte Gliederungen in einem Legacysprachdienst](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)  
+ Erläutert die zwei Optionen, die für Ihre Sprache nicht nur Unterstützung für Gliederungsmodus ausdehnen der *Definitionen* Befehl.

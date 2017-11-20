@@ -1,63 +1,63 @@
 ---
-title: "SccEnumChangedFiles-Funktion | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "SccEnumChangedFiles"
-helpviewer_keywords: 
-  - "SccEnumChangedFiles-Funktion"
+title: SccEnumChangedFiles Funktion | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: SccEnumChangedFiles
+helpviewer_keywords: SccEnumChangedFiles function
 ms.assetid: 76cac510-107b-4c1a-ba60-9c39b6db2e71
-caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 0ad62f14ea658e4af6e22d4beef410e6d9cf02df
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# SccEnumChangedFiles-Funktion
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Erhalten eine Liste von lokalen Dateien, bestimmt diese Funktion, welche Dateien in der Quellcode\-Verwaltungsdatenbank Code die entsprechenden Versionen unterscheiden.  
+# <a name="sccenumchangedfiles-function"></a>SccEnumChangedFiles-Funktion
+Basierend auf einer Liste von lokalen Dateien, bestimmt diese Funktion, welche Dateien in der Quellcode-Verwaltungsdatenbank Code die entsprechenden Versionen unterscheiden.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```cpp  
 SCCRTN SccEnumChangedFiles(  
-   LPVOID  pContext,  
-   HWND    hWnd,  
-   LONG    cFiles,  
-   LPCSTR* lpFileNames,  
-   LONG*   plIsFileDifferent  
+   LPVOID  pContext,  
+   HWND    hWnd,  
+   LONG    cFiles,  
+   LPCSTR* lpFileNames,  
+   LONG*   plIsFileDifferent  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  "pContext"  
- \[in\] Der Source Control\-Plug\-in Kontextzeiger.  
+ [in] Der Datenquellen-Steuerelement-Plug-in Kontextzeiger.  
   
  hWnd  
- \[in\] Ein Handle für die IDE\-Fenster, das Quellcodeverwaltungs\-Plug\-in als übergeordnetes Element für alle Dialogfelder verwenden kann, die es bereitstellt.  
+ [in] Ein Handle für die IDE-Fenster, das das Quellsteuerelement-Plug-in als übergeordnetes Element für alle Dialogfelder verwenden kann, die es bereitstellt.  
   
  cFiles  
- \[in\] Anzahl der im angegebenen Dateinamen der `lpFileNames` Array. Gibt auch die Größe des `plIsFileDifferent` Array.  
+ [in] Anzahl der im angegebenen Dateinamen der `lpFileNames` Array. Gibt auch die Größe des `plIsFileDifferent` Array.  
   
  lpFileNames  
- \[in\] Array der Namen der lokalen Datei zu überprüfen.  
+ [in] Array der Namen der lokalen Datei zu überprüfen.  
   
  plIsFileDifferent  
- \[in, out\] Array von Werten, die den Unterschied Status jeder Datei \(Array benötigen mindestens `cFiles` Einträge\). Ungleich NULL bedeutet, dass sich die Datei unterscheidet.  
+ [in, out] Array von Werten, die den Unterschied Status der einzelnen Dateien (Array benötigen mindestens `cFiles` Einträge). Ungleich NULL bedeutet, dass die Datei unterscheidet.  
   
-## Rückgabewert  
- Datenquellen\-Steuerelement Plug\-in\-Implementierung dieser Funktion muss einen der folgenden Werte zurückgeben:  
+## <a name="return-value"></a>Rückgabewert  
+ Die Source Control-Plug-in-Implementierung dieser Funktion muss einen der folgenden Werte zurückgeben:  
   
 |Wert|Beschreibung|  
-|----------|------------------|  
-|SCC\_OK|Der Vorgang wurde erfolgreich abgeschlossen.|  
-|SCC\_UNSPECIFIEDERROR|Allgemeiner Fehler.|  
+|-----------|-----------------|  
+|SCC_OK|Der Vorgang wurde erfolgreich abgeschlossen.|  
+|SCC_UNSPECIFIEDERROR|Allgemeiner Fehler.|  
   
-## Siehe auch  
- [Source Control\-Plug\-in\-API\-Funktionen](../extensibility/source-control-plug-in-api-functions.md)
+## <a name="see-also"></a>Siehe auch  
+ [API-Funktionen von Quellcodeverwaltungs-Plug-Ins](../extensibility/source-control-plug-in-api-functions.md)

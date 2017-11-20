@@ -1,44 +1,46 @@
 ---
-title: "Erstellen ein Quellcodeverwaltungs-Plug-in | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Plug-ins und Datenquellen-Steuerelement"
-  - "Source Control-Plug-ins"
-  - "Datenquellen-Steuerelement [Visual Studio SDK]-Plug-ins"
+title: Erstellen ein Quellcodeverwaltungs-Plug-in | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- plug-ins, source control
+- source control plug-ins
+- source control [Visual Studio SDK], plug-ins
 ms.assetid: c7e69fa4-150e-469a-a6fc-fa1260bdbb07
-caps.latest.revision: 18
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 18
+caps.latest.revision: "18"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: e376ced68301abae6090a87114e2178c0adc28cf
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Erstellen ein Quellcodeverwaltungs-Plug-in
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Das Visual Studio SDK bietet Ressourcen bereit, mit denen Sie das Feature für Quellcodeverwaltung [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] der integrierten Entwicklungsumgebung \(IDE\) hinzuzufügen.  Außerdem können Sie jedes Plug\-In DLL verwenden, das dem Quellcodeverwaltungs\-Plug\-In entspricht API, die in dieser Dokumentation erläutert wird.  
+# <a name="creating-a-source-control-plug-in"></a>Erstellen ein Quellcodeverwaltungs-Plug-in
+Das Visual Studio SDK enthält Ressourcen, die Ihnen ermöglichen, Quelle Steuerungsfunktionen für das Hinzufügen der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrierten Entwicklungsumgebung (IDE). Es können Sie alle Plug-in-DLL, der kompatibel mit der Quelle-Plug-in-API mit dem in dieser Dokumentation beschriebenen Schritte aus.  
   
-## In diesem Abschnitt  
+## <a name="in-this-section"></a>In diesem Abschnitt  
  [Erste Schritte](../../extensibility/internals/getting-started-with-source-control-plug-ins.md)  
- Beschreibt, wie ein Quellcodeverwaltungs\-Plug\-In installiert und hebt die derzeit verfügbaren Versionen des Quellcodeverwaltungs\-Plug\-In API hervor.  
+ Beschreibt, wie ein Quellcodeverwaltungs-Plug-in zu installieren, und hebt die derzeit verfügbaren Source Control-Plug-in-API-Versionen.  
   
  [Architektur](../../extensibility/internals/source-control-plug-in-architecture.md)  
- Wird ein Diagramm Architektur für die Integration eines Quellcodeverwaltungs\-Plug\-In mit dem [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE zu verdeutlichen.  
+ Wird mit einer Architekturdiagramm erläutert, die Integration von ein Quellcodeverwaltungs-Plug-in mit der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE.  
   
- [Test\-Handbuch für Source Control\-Plug\-ins](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)  
- Stellt Anweisungen darüber bereit, wie Sie die Installation und die Ausführung eines Quellcodeverwaltungs\-Plug\-In testet.  
+ [Testleitfaden für Quellcodeverwaltungs-Plug-Ins](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)  
+ Enthält Hinweise dazu, wie Sie die Installation und Ausführung von ein Quellcodeverwaltungs-Plug-in zu testen.  
   
-## Verwandte Abschnitte  
- [Erstellen eines VSPackages Datenquellen\-Steuerelement](../../extensibility/internals/creating-a-source-control-vspackage.md)  
- Erläutert, wie eine Quellcodeverwaltung VSPackage erstellen, dass nicht nur Funktionen bereitstellt quellcodeverwaltungs jedoch [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Benutzeroberfläche der Quellcodeverwaltung ersetzt.  
+## <a name="related-sections"></a>Verwandte Abschnitte  
+ [Erstellen eines Quellcodeverwaltungs-VSPackage](../../extensibility/internals/creating-a-source-control-vspackage.md)  
+ Erläutert, wie ein Datenquellen-Steuerelement VSPackage zu erstellen, der nicht nur Quellcodeverwaltungsfunktion bereitstellt, aber ersetzt [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] quellcodeverwaltung UI.  
   
- [Source Control\-Plug\-ins](../../extensibility/source-control-plug-ins.md)  
- Stellt vollständige Liste aller Elemente im Quellcodeverwaltungs\-Plug\-In API bereit.  
+ [Quellcodeverwaltungs-Plug-Ins](../../extensibility/source-control-plug-ins.md)  
+ Bietet eine vollständige Liste aller Elemente in der Quelle Steuerelement-Plug-in-API.  
   
  [Quellcodeverwaltung](../../extensibility/internals/source-control.md)  
- Erläutert die Optionen zum Implementieren der Quellcodeverwaltung als integrierte Funktionen von [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
+ Erläutert die Optionen für die Implementierung von Datenquellen-Steuerelements als eine integrierte Funktion von [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].

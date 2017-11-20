@@ -1,33 +1,35 @@
 ---
-title: "&#196;ltere Sprache-Schnittstellen | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "IVsLanguageInfo-Schnittstelle"
-  - "Language Services, Objekte"
+title: "Ältere Sprache Dienstschnittstellen | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- IVsLanguageInfo interface
+- language services, objects
 ms.assetid: 03b2d507-f463-417e-bc22-bdac68eeda52
-caps.latest.revision: 24
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 24
+caps.latest.revision: "24"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 925b504d8cba4813631d4f8ba6f7dbd9750f5eae
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# &#196;ltere Sprache-Schnittstellen
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Für jede bestimmte Programmiersprache kann es nur eine Instanz des Sprachdiensts gleichzeitig vorhanden sein.  Allerdings kann ein einsprachiger Dienst mehr als einen Editor dienen.  
+# <a name="legacy-language-service-interfaces"></a>Legacy-Sprachdienst-Schnittstellen
+Für eine bestimmte Programmiersprache können nur eine Instanz eines Sprachdiensts zu einem Zeitpunkt vorhanden sein. Allerdings kann ein Dienst (einsprachig) mehr als einer der Redakteure dienen.  
   
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ordnet einen Sprachdienst keinem bestimmten Editor.  Wenn Sie einen Sprachen dienstvorgang benötigen, müssen Sie den geeigneten Editor als Parameter angeben.  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]einen Sprachdienst ist nicht mit einem bestimmten Editor zuordnen werden. Wenn Sie einen Dienstvorgang Sprache anfordern, müssen Sie die geeigneten Editor als Parameter identifizieren.  
   
-## Allgemeine Sprachendiensten zugeordnete Schnittstellen  
- Im Editor wird der Sprachdienst ab, indem er <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A> auf entsprechenden VSPackage aufruft.  Die Dienst ID \(SID\) in diesem Aufruf wird der Sprachdienst, die angefordert wird.  
+## <a name="common-interfaces-associated-with-language-services"></a>Common Language Diensten zugeordnet Schnittstellen  
+ Der Editor ruft Ihre Sprachdienst durch Aufrufen von <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A> für das entsprechende VSPackage. Der Dienst-ID (SID) in diesem Aufruf übergebenen identifiziert der Sprachdienst angefordert wird.  
   
- Sie können die wichtigsten Schnittstellen Sprachdienst auf einer beliebigen Anzahl von anderen Klassen implementiert werden.  Es ist ein allgemeiner Ansatz, die folgenden Schnittstellen in einer einzelnen Klasse zu implementieren:  
+ Sie können die Dienstschnittstellen Core Sprache auf eine beliebige Anzahl von separaten Klassen implementieren. Allerdings ist eine gängige Methode in einer einzelnen Klasse die folgenden Schnittstellen implementieren:  
   
 -   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo>  
   
@@ -35,22 +37,22 @@ Für jede bestimmte Programmiersprache kann es nur eine Instanz des Sprachdienst
   
 -   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageDebugInfo>  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageBlock> \(optional\)  
+-   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageBlock> (optional)  
   
- Die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo>\-Schnittstelle muss auf allen Sprachendiensten implementiert werden.  Es stellt Informationen über den Sprachdienst, z. B. den lokalisierten Namen der Sprache, die Dateinamenerweiterungen, die mit dem Sprachdienst zugeordnet werden und wie eine farbige Darstellung veranschaulicht.  
+ Die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> -Schnittstelle muss implementiert werden, auf die Dienste für alle Sprachen. Es enthält Informationen zu Ihrem Sprachdienst, z. B. den lokalisierten Namen der Sprache, die die Dateinamenerweiterungen der Sprachdienst und zum Abrufen einer Colorizer zugeordnet.  
   
-## Weitere Sprachendienst\-Schnittstellen  
- Andere Schnittstellen können mit dem Sprachdienst bereitgestellt werden.  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] erfordert eine separate Instanz dieser Schnittstellen für jede Instanz des Textpuffers.  Daher sollten Sie jede dieser Schnittstellen on Its Own Objekt implementieren.  In der folgenden Tabelle werden die Schnittstellen, die eine Instanz pro Textpuffer Objektinstanz erforderlich sind.  
+## <a name="additional-language-service-interfaces"></a>Zusätzliche Sprachdienst-Schnittstellen  
+ Andere Schnittstellen können mit dem Language-Dienst bereitgestellt werden. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]fordert eine separate Instanz dieser Schnittstellen für jede Instanz des Textpuffers. Aus diesem Grund sollten Sie jede dieser Schnittstellen in sein eigenes Objekt implementieren. Die folgende Tabelle zeigt die Schnittstellen, die eine Instanz pro Instanz des Text-Puffer erforderlich.  
   
 |Schnittstelle|Beschreibung|  
-|-------------------|------------------|  
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager>|Verwaltet Codefenster zusatzelemente, wie die Dropdownliste Leiste.  Sie können diese Schnittstelle abrufen, indem Sie die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetCodeWindowManager%2A>\-Methode verwenden.  Es gibt ein <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager> pro Codefenster.|  
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer>|Farbig stellt Schlüsselwörter und Trennzeichen dar.  Sie können diese Schnittstelle abrufen, indem Sie die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetColorizer%2A>\-Methode verwenden.  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> wird an der Farben Zeit bezeichnet.  Vermeiden Sie Berechnung\-intensive Arbeit innerhalb <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> kann die Leistung oder leiden.|  
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData>|Stellt IntelliSense\-Parameter die QuickInfo bereit.  Wenn der Sprachdienst erkennt, wird ein Zeichen, das angibt, dass Daten Methoden, z. B. eine öffnende Klammer angezeigt werden sollen, es, die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow.SetMethodData%2A>\-Methode auf, um die Textansicht zu benachrichtigen, dass der Sprachdienst bereit ist, eine Parameterinformationens\-QuickInfo anzuzeigen.  Die Aufrufe der Textansicht dann wieder in den Sprachdienst mithilfe der Methoden der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData>\-Schnittstelle, um die erforderlichen Informationen zu erhalten, um die QuickInfo anzuzeigen.|  
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet>|Stellt IntelliSense\-Anweisungsvervollständigung bereit.  Wenn der Sprachdienst bereit ist, eine Vervollständigungsliste anzuzeigen, ruft sie die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateCompletionStatus%2A>\-Methode für die Textansicht an.  Die Aufrufe der Textansicht dann wieder in den Sprachdienst mithilfe von Methoden für den <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet>\-Objekt.|  
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter>|Ermöglicht das Ändern der Textansicht mithilfe des Befehls handlers.  Die Klasse, in der die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter>\-Schnittstelle implementieren, muss auch die <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>\-Schnittstelle implementieren.  Die Textansicht ruft das <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter>\-Objekt ab, indem er das <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>\-Objekt abgefragt wird, das in die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A>\-Methode übergeben wird.  Es sollte ein <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter>\-Objekt für jede Sicht sein.|  
-|<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>|Fängt diese Befehle der Benutzer auf die im Codefenster ab.  Überwachen Sie die Ausgabe der <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> Informationen zum Schließen, um eine benutzerdefinierte Implementierung und Änderung der Ansicht bereitzustellen<br /><br /> Um das <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>\-Objekt der Textansicht übergeben, Aufrufs <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A>.|  
+|---------------|-----------------|  
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager>|Verwaltet die Code-Fenster Zusatzelemente, z. B. die Dropdown-Leiste. Sie können diese Schnittstelle abrufen, indem Sie mit der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetCodeWindowManager%2A> Methode. Es ist eine <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager> pro Fenster "Code".|  
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer>|Färbt Programmiersprachen-Schlüsselworten und Trennzeichen. Sie können diese Schnittstelle abrufen, indem Sie mit der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetColorizer%2A> Methode. <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer>Paint Zeitpunkt aufgerufen wird. Vermeiden Sie rechenintensive Aufgaben innerhalb <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> oder konnte die Leistung darunter leiden.|  
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData>|Zeigt QuickInfos für IntelliSense-Parameter. Wenn der Sprachdienst erkennt, muss ein Zeichen, das diese Methodendaten an angezeigt, z. B. eine öffnende Klammer, ruft er die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow.SetMethodData%2A> -Methode benachrichtigen Sie den Text anzuzeigen, die der Sprachdienst ist für die Anzeige einer Parameter-QuickInfo bereit. Textansicht ruft dann wieder in der Sprachdienst nach mit den Methoden der der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData> Schnittstelle, um die erforderlichen Informationen für die Anzeige der QuickInfo abzurufen.|  
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet>|Stellt IntelliSense-Anweisungsvervollständigung bereit. Wenn der Sprachdienst eine Vervollständigungsliste anzeigen bereit ist, ruft er die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateCompletionStatus%2A> Methode für die Textansicht. Textansicht ruft dann wieder in der Sprachdienst nach verwenden Sie Methoden für die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet> Objekt.|  
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter>|Ermöglicht die Änderung der Textansicht Befehlshandler verwenden. Die Klasse, in dem Sie implementieren, die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter> Schnittstelle muss auch implementieren die <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> Schnittstelle. Textansicht Ruft die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter> Objekt durch Abfragen der <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> -Objekt, das übergeben wird die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A> Methode. Ein SqlEndAltersStep vorhanden sein <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter> Objekt für jede Ansicht.|  
+|<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>|Fängt Befehle, dass der Benutzer in das Codefenster Typen ab. Überwachen Sie die Ausgabe der <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> Implementierung zur Bereitstellung von Informationen über den benutzerdefinierten Abschluss und Änderung anzeigen<br /><br /> Übergabe Ihrer <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> Objekt, das die Textansicht Aufruf <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A>.|  
   
-## Siehe auch  
- [Entwickeln einer Sprache](../../extensibility/internals/developing-a-legacy-language-service.md)   
- [Prüfliste: Erstellen einer Legacy\-Sprachdienst](../../extensibility/internals/checklist-creating-a-legacy-language-service.md)
+## <a name="see-also"></a>Siehe auch  
+ [Entwickeln von einem Legacy-Sprachdienst](../../extensibility/internals/developing-a-legacy-language-service.md)   
+ [Prüfliste: Erstellen eines Legacysprachdiensts](../../extensibility/internals/checklist-creating-a-legacy-language-service.md)

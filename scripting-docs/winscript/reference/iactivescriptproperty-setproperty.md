@@ -1,27 +1,30 @@
 ---
-title: "IActiveScriptProperty::SetProperty | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IActiveScriptProperty::SetProperty | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IActiveScriptProperty.SetProperty
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "SetProperty-Methode, IActiveScriptProperty-Schnittstelle"
+helpviewer_keywords: SetProperty method, IActiveScriptProperty interface
 ms.assetid: 0ba429c5-04a3-4505-bc5f-69c505dfca91
-caps.latest.revision: 21
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 21
+caps.latest.revision: "21"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: bc9b5f4c0d02789988bb41f46417651414beed7f
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# IActiveScriptProperty::SetProperty
-Legt die Eigenschaft fest, die vom Parameter angegeben wird.  
+# <a name="iactivescriptpropertysetproperty"></a>IActiveScriptProperty::SetProperty
+Legt die Eigenschaft, die durch den Parameter angegeben wird.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 HRESULT SetProperty(  
@@ -34,48 +37,48 @@ HRESULT SetProperty(
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `dwProperty`  
- Der Wert, auf den die Eigenschaft festgelegt werden soll.  
+ Der festzulegende Eigenschaftswert.  
   
  `pvarIndex`  
- Wird nicht verwendet.  
+ Nicht verwendet.  
   
  `pvarValue`  
  Der Wert der Eigenschaft.  
   
- Die Werte, die für `dwProperty` zulässig sind, werden in der folgenden Tabelle beschrieben.  
+ Die Werte für zulässige `dwProperty` werden in der folgenden Tabelle beschrieben.  
   
 |Konstante|Wert|Bedeutung|  
-|---------------|----------|---------------|  
-|SCRIPTPROP\_INTEGERMODE|0x00003000|Erzwingt das Skriptmodul, um im Modus anstelle des Gleitkommamodus aufzuteilen.  Der Standardwert ist `False`.|  
-|SCRIPTPROP\_STRINGCOMPAREINSTANCE|0x00003001|Ermöglicht die Zeichenfolgencompare\-funktion des Skriptmoduls, ersetzt werden.|  
-|SCRIPTPROP\_ABBREVIATE\_GLOBALNAME\_RESOLUTION|0x70000002|Informiert das Skriptmodul, dass keine anderen Skriptmodule vorhanden sein, um im globalen Objekt beizutragen.|  
-|SCRIPTPROP\_INVOKEVERSIONING|0x00004000|Erzwingt das [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Skriptmodul, um einen Satz von unterstützt werden, Sprachfunktionen auszuwählen.  Der Standardsatz von den Sprachfunktionen, die vom [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Skriptmodul unterstützt werden, ist zur festgelegten Sprachfunktion entsprechend, die in Version 5.7 des [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Skriptmoduls angezeigt.|  
+|--------------|-----------|-------------|  
+|SCRIPTPROP_INTEGERMODE|0x00003000|Erzwingt, dass das Skriptmodul im Modus ganze Zahl, anstelle von unverankerten Modus aufteilen. Der Standardwert ist `False`.|  
+|SCRIPTPROP_STRINGCOMPAREINSTANCE|0x00003001|Kann die Zeichenfolge vergleichen-Funktion des verwendeten Skriptmoduls ersetzt werden.|  
+|SCRIPTPROP_ABBREVIATE_GLOBALNAME_RESOLUTION|0x70000002|Informiert das Skriptmodul, das keine anderen Skriptmodule vorhanden sein, um auf das globale Objekt beitragen.|  
+|SCRIPTPROP_INVOKEVERSIONING|0x00004000|Erzwingt, dass die [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Skriptmodul zum Auswählen eines Satzes von Funktionen der Programmiersprache unterstützt werden müssen. Der Standardsatz von Sprachfunktionen, die von unterstützt die [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Skriptmodul entspricht den Satz von Sprache, die in Version 5.7 angezeigt wurden die [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Skriptmodul.|  
   
-## Rückgabewert  
- Gibt eine der folgenden Werte:  
+## <a name="return-value"></a>Rückgabewert  
+ Gibt einen der folgenden Werte zurück:  
   
 |Rückgabewert|Bedeutung|  
-|------------------|---------------|  
+|------------------|-------------|  
 |`S_OK`|Erfolgreich.|  
 |`E_INVALIDARG`|Ein Argument ist ungültig.|  
-|`E_UNEXPECTED`|Der Aufruf wurde nicht erwartet \(beispielsweise, ist das Skriptmodul noch nicht geladen wurde oder initialisiert wurden\).|  
+|`E_UNEXPECTED`|Der Aufruf wurde nicht erwartet (z. B. das Skriptmodul wurde noch kein geladen oder initialisiert).|  
   
-## Hinweise  
- So ganzzahlige Division, Aufruf `SetProperty` aktivieren oder deaktivieren und `Boolean` zu `Object` konvertieren.  Standardmäßig ist der Eigenschaftswert `False`.  Wenn Sie festlegen `True`, Divisionen nur ganze Zahlen zurückgeben.  
+## <a name="remarks"></a>Hinweise  
+ Rufen Sie zum Aktivieren oder Deaktivieren der ganzzahligen Division, `SetProperty` , und konvertieren Sie eine `Boolean` auf eine `Object`. Standardmäßig ist der Eigenschaftswert `False`. Wenn Sie die Einstellung `True`, Divisionen nur ganze Zahlen zurück.  
   
- So benutzerdefinierten Zeichenfolgenvergleich, Aufruf `SetProperty` und in einem `Object`\-Wert aktivieren oder deaktivieren.  Das Objekt, das Sie in übergeben, muss die Schnittstelle [IActiveScriptStringCompare\-Schnittstelle](../../winscript/reference/iactivescriptstringcompare-interface.md) implementieren.  Die [StrComp](../../winscript/reference/iactivescriptstringcompare-strcomp.md)\-Methode der [IActiveScriptStringCompare\-Schnittstelle](../../winscript/reference/iactivescriptstringcompare-interface.md)\-Schnittstelle wird jedes Mal aufgerufen, dass eine Zeichenfolgencompare\-funktion ausgeführt wird.  
+ Rufen Sie zum Aktivieren oder Deaktivieren von benutzerdefinierten Zeichenfolgenvergleich, `SetProperty` auf und übergeben ein `Object` Wert. Das Objekt, das Sie übergeben, muss die Schnittstelle implementieren [IActiveScriptStringCompare-Schnittstelle](../../winscript/reference/iactivescriptstringcompare-interface.md). Die [StrComp](../../winscript/reference/iactivescriptstringcompare-strcomp.md) Methode der [IActiveScriptStringCompare-Schnittstelle](../../winscript/reference/iactivescriptstringcompare-interface.md) Schnittstelle wird jedes Mal aufgerufen, die eine Zeichenfolge vergleichen-Funktion ausgeführt wird.  
   
- Um den von unterstützt werden Sprachfunktionen auszuwählen [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] wenn das Skriptmodul initialisiert wird, rufen Sie `SetProperty` auf und übergeben Sie einen Wert der zur Sprachfunktion entspricht, die festgelegt wird für SCRIPTPROP\_INVOKEVERSIONING aktiviert werden.  Wenn diese Eigenschaft auf 1 \(SCRIPTLANGUAGEVERSION\_5\_7\) festgelegt ist, sind die verfügbaren Sprachfunktionen identisch, die die, die in Version 5.7 des [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Skriptmoduls angezeigt.  Wenn es auf 2 \(SCRIPTLANGUAGEVERSION\_5\_8\) festgelegt ist, sind die verfügbaren Sprachfeatures, die in Version 5.7 zusätzlich zu den neuen Funktionen angezeigt, die in Version 5.8 hinzugefügt wurden.  Diese Eigenschaft ist standardmäßig auf 0 \(SCRIPTLANGUAGEVERSION\_DEFAULT\) festgelegt, das der festgelegten Sprachfunktion entspricht, die in Version 5.7 ist, es sei denn, der Host ein anderes Standardverhalten unterstützt.  Beispielsweise entscheidet Internet Explorer 8 in die [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Sprachfunktionen, die vom [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Skriptmodul der Version 5.8 standardmäßig unterstützt werden, wenn der Standardwert Dokumente für Internet Explorer 8 "Internet Explorer 8\-Standard" Modus ist.  Das Wechseln des Internet Explorer 8\-Dokumentenmodus an Internet Explorer 7\-Standards oder \-Quirksmodus macht das Skriptmodul [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] zurück, um die festgelegte Sprachfunktion zu unterstützen, die nur im [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Skriptmodul der Version 5.7 vorhanden war.  
+ Wählen Sie den Satz von Sprachfunktionen, wenn unterstützt werden müssen die [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Skriptmodul initialisiert wird, rufen Sie `SetProperty` und übergeben Sie einen Wert, der an die Sprachfunktion, legen Sie für SCRIPTPROP_INVOKEVERSIONING aktiviert werden soll. Wenn diese Eigenschaft auf 1 (SCRIPTLANGUAGEVERSION_5_7) festgelegt ist, die verfügbaren Sprachfunktionen sind identisch mit denen, die in Version 5.7 angezeigt wurden die [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Skriptmodul. Wenn es auf 2 (SCRIPTLANGUAGEVERSION_5_8) festgelegt ist, werden die verfügbaren Sprachen-Funktionen, die in Version 5.7 zusätzlich zu den neuen Features angezeigt, die in Version 5.8 hinzugefügt wurden. Standardmäßig ist diese Eigenschaft auf 0 (SCRIPTLANGUAGEVERSION_DEFAULT), festgelegt Dies entspricht den Satz von Sprache, der in Version 5.7, angezeigt wurden, wenn der Host einem anderen Standardverhalten unterstützt. Z. B. Internet Explorer 8 "OPTS" in der [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Sprachfunktionen, die von der Version 5.8 unterstützt werden [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Skriptmodul Standard, wenn der Dokument-Standardmodus von Internet Explorer 8 "Internet Explorer 8 (Standardmodus)" Modus ist. Umschalten zwischen der Dokumentmodus für Internet Explorer 8, Internet Explorer 7 (Standardmodus) oder im Quirksmodus setzt die [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Skriptmodul unterstützt nur die Sprache Funktionsgruppe, die vorhanden waren in der Version 5.7 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Skriptmodul.  
   
 > [!NOTE]
->  SCRIPTPROP\_INVOKEVERSIONING sollte nur festgelegt werden, wenn das [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Skriptmodul initialisiert wird.  
+>  SCRIPTPROP_INVOKEVERSIONING sollte festgelegt werden, nur, wenn die [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Skriptmodul initialisiert wird.  
   
-## Beispiel  
- Im folgenden Beispiel wird gezeigt, wie das Skriptmodul erzwingt, um ganzzahlige Division verwenden und wie Überladen der Compare\-Funktion zulässig.  
+## <a name="example"></a>Beispiel  
+ Im folgende Beispiel wird gezeigt, wie das Skriptmodul in Ganzzahldivision verwenden erzwingen und ermöglichen das Überladen von der Compare-Funktion.  
   
-```csharp  
+```c#  
 BMLScriptEngine bmlScriptEngine = new BMLScriptEngine();  
 IActiveScriptProperty scriptProperties = bmlScriptEngine as   
     IActiveScriptProperty;  
@@ -94,7 +97,7 @@ scriptProperties.SetProperty(SCRIPTPROP_STRCOMPINST,
     System.IntPtr.Zero, ref vtStrCmpInstance);  
 ```  
   
-## Siehe auch  
- [Definieren von Dokumenten\-Kompatibilität](http://msdn.microsoft.com/library/cc288325)   
+## <a name="see-also"></a>Siehe auch  
+ [Definieren der Dokumentkompatibilität](http://msdn.microsoft.com/library/cc288325)   
  [IActiveScriptProperty](../../winscript/reference/iactivescriptproperty.md)   
  [Versionsinformationen](../../javascript/reference/javascript-version-information.md)

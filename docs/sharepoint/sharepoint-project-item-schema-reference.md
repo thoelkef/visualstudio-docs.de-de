@@ -1,59 +1,61 @@
 ---
-title: "SharePoint Project Item Schema Reference"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "FeatureProperty element"
-  - "SafeControls element"
-  - "SafeControl element"
-  - ".spdata files"
-  - "ExtensionData element"
-  - "FeatureProperties element"
-  - "ProjectOutputFile element"
-  - "Files element"
-  - "ProjectItemFolder element"
-  - "ProjectItemFile element"
-  - "ExtensionDataItem element"
-  - "ProjectItem element"
+title: SharePoint-Projektelementschema | Microsoft Docs
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- FeatureProperty element
+- SafeControls element
+- SafeControl element
+- .spdata files
+- ExtensionData element
+- FeatureProperties element
+- ProjectOutputFile element
+- Files element
+- ProjectItemFolder element
+- ProjectItemFile element
+- ExtensionDataItem element
+- ProjectItem element
 ms.assetid: 12b63cbc-bf94-4175-bfa8-2117943d00d1
-caps.latest.revision: 16
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 15
+caps.latest.revision: "16"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 67f9d29ff18f4ec12653838d25dc3951a53757bd
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# SharePoint Project Item Schema Reference
-  Anhand des SharePoint\-Projektelementschemas wird von Visual Studio der Inhalt von SPDATA\-Dateien überprüft.  SPDATA\-Dateien dienen zum Angeben des Inhalts und des Verhaltens eines SharePoint\-Projektelements.  Weitere Informationen zum Inhalt der SharePoint\-Projektelemente finden Sie unter [Creating Item Templates and Project Templates for SharePoint Project Items](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md).  
+# <a name="sharepoint-project-item-schema-reference"></a>Referenz zum SharePoint-Projektelementschema
+  Visual Studio verwendet die SharePoint-Projektelementschema auf um den Inhalt von SPDATA-Dateien zu überprüfen. SPDATA-Datei gibt den Inhalt und das Verhalten von einer SharePoint-Projektelement. Weitere Informationen zum Inhalt der SharePoint-Projektelemente, finden Sie unter [Erstellen von Elementvorlagen und Projektvorlagen für SharePoint-Projektelemente](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md).  
   
- Das SharePoint\-Projektelementschema ist mit "ProjectItemModelSchema.xsd" benannt und standardmäßig unter "%Programme \(x86\)%\\Microsoft Visual Studio 11.0\\Xml\\Schemas" installiert.  
+ Die SharePoint-Projektelementschema ist mit dem Namen "ProjectItemModelSchema.xsd" benannt und standardmäßig im %Programme (x86)%\Microsoft Visual Studio 11.0\Xml\Schemas.  
   
- Das Stammelement ist das [ProjectItem](../sharepoint/projectitem-element.md)\-Element.  In der folgenden Tabelle werden alle durch das Schema definierten Elemente beschrieben:  
+ Das Stammelement ist das [ProjectItem](../sharepoint/projectitem-element.md) Element. Die folgende Tabelle beschreibt alle vom Schema definierten Elemente.  
   
-|Element|Description|  
+|Element|Beschreibung|  
 |-------------|-----------------|  
-|[ExtensionData](../sharepoint/extensiondata-element.md)|Stellt eine Auflistung benutzerdefinierter Datenelemente dar, die dem SharePoint\-Projektelement zugeordnet sind.|  
-|[ExtensionDataItem](../sharepoint/extensiondataitem-element.md)|Stellt ein benutzerdefiniertes Datenelement \(im Schlüssel\-Wert\-Format\) dar, das dem SharePoint\-Projektelement zugeordnet ist.  Sowohl der Schlüssel als auch der Wert muss eine Zeichenfolge sein.|  
-|[FeatureProperties](../sharepoint/featureproperties-element.md)|Stellt eine Auflistung von Eigenschaftswerten dar, die beim Bereitstellen für SharePoint in einer Funktion enthalten sind.  Nach dem Bereitstellen einer Funktion können Sie im Code auf die Eigenschaftswerte zugreifen.|  
-|[FeatureProperty](../sharepoint/featureproperty-element.md)|Stellt eine benutzerdefinierte Eigenschaft dar, die in eine Funktion eingeschlossen wird, wenn diese für SharePoint bereitgestellt wird.  Nach dem Bereitstellen einer Funktion können Sie im Code auf die Eigenschaft zugreifen.|  
-|[Dateien](../sharepoint/files-element.md)|Gibt die Dateien an, die zusammen mit dem SharePoint\-Projektelement bereitgestellt werden sollen \(beispielsweise eine Feature\-Elementdatei oder die Ausgabe eines Projekts\).|  
-|[ProjectItem](../sharepoint/projectitem-element.md)|Stellt ein SharePoint\-Projektelement dar.|  
-|[ProjectItemFile](../sharepoint/projectitemfile-element.md)|Stellt eine SharePoint\-Datei \(beispielsweise eine Feature\-Elementdatei\) dar, die im Projektelement enthalten sein soll, wenn dieses für SharePoint bereitgestellt wird.|  
+|[ExtensionData](../sharepoint/extensiondata-element.md)|Stellt eine Auflistung benutzerdefinierter Datenelemente, die SharePoint-Projektelements zugeordnet sind.|  
+|[ExtensionDataItem](../sharepoint/extensiondataitem-element.md)|Stellt ein Element von benutzerdefinierten Daten, die die SharePoint-Projektelement im Schlüssel/Wert-Format zugeordnet ist. Sowohl der Schlüssel und Wert müssen Zeichenfolgen sein.|  
+|[FeatureProperties](../sharepoint/featureproperties-element.md)|Stellt eine Auflistung von Eigenschaftswerten, die in eine Funktion eingeschlossen werden, wenn er für SharePoint bereitgestellt wird. Nachdem eine Funktion bereitgestellt wird, können Sie die Eigenschaftswerte in Ihrem Code zugreifen.|  
+|[FeatureProperty](../sharepoint/featureproperty-element.md)|Stellt eine benutzerdefinierte Eigenschaft, die in eine Funktion eingeschlossen wird, wenn er für SharePoint bereitgestellt wird. Nachdem eine Funktion bereitgestellt wird, können Sie die Eigenschaft im Code zugreifen.|  
+|[Dateien](../sharepoint/files-element.md)|Gibt die Dateien, die mit der SharePoint-Projektelement, z. B. eine Featuredatei für das Element oder die Ausgabe eines Projekts bereitgestellt.|  
+|[ProjectItem](../sharepoint/projectitem-element.md)|Stellt ein SharePoint-Projektelement dar.|  
+|[ProjectItemFile](../sharepoint/projectitemfile-element.md)|Stellt eine SharePoint-Datei, z. B. Elementdatei Feature, das Projektelement enthalten sein soll, wenn er für SharePoint bereitgestellt wird.|  
 |[ProjectItemFolder](../sharepoint/projectitemfolder-element.md)|Stellt einen zugeordneten Ordner dar.|  
-|[ProjectOutputFile](../sharepoint/projectoutputfile-element.md)|Stellt die Ausgabe eines Projekts dar, die im Projektelement enthalten sein soll, wenn es in SharePoint bereitgestellt wird.|  
-|[SafeControl](../sharepoint/safecontrol-element.md)|Stellt ein ASPX\-Steuerelement oder \-Webpart dar, das als sicher festgelegt ist, um allen Benutzern auf der SharePoint\-Website den Zugriff auf jede ASPX\-Seite zu ermöglichen.|  
-|[SafeControls](../sharepoint/safecontrols-element.md)|Stellt eine Auflistung von ASPX\-Steuerelementen oder \-Webparts dar, die als sicher festgelegt sind, um allen Benutzern auf der SharePoint\-Website den Zugriff auf jede ASPX\-Seite zu ermöglichen.|  
+|[ProjectOutputFile](../sharepoint/projectoutputfile-element.md)|Stellt die Ausgabe eines Projekts mit dem Projektelement eingeschlossen werden soll, wenn er für SharePoint bereitgestellt wird.|  
+|[SafeControl](../sharepoint/safecontrol-element.md)|Stellt eine ASPX-Steuerelement oder ein Webpart, das als sichere für alle Benutzer Zugriff auf alle ASPX-Seite auf der SharePoint-Website festgelegt ist.|  
+|["SafeControls"](../sharepoint/safecontrols-element.md)|Stellt eine Auflistung von ASPX-Steuerelementen und Webparts, die als sichere für alle Benutzer Zugriff auf alle ASPX-Seite auf der SharePoint-Website festgelegt werden.|  
   
-## Siehe auch  
- [Creating Item Templates and Project Templates for SharePoint Project Items](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)  
+## <a name="see-also"></a>Siehe auch  
+ [Erstellen von Elementvorlagen und Projektvorlagen für SharePoint-Projektelemente](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)  
   
   

@@ -1,30 +1,34 @@
 ---
-title: "WizardData-Element (Visual Studio-Vorlagen) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "http://schemas.microsoft.com/developer/vstemplate/2005#WizardData"
-helpviewer_keywords: 
-  - "<WizardData>-Element [Visual Studio-Vorlagen]"
-  - "WizardData-Element [Visual Studio-Vorlagen]"
+title: WizardData-Element (Visual Studio-Vorlagen) | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: http://schemas.microsoft.com/developer/vstemplate/2005#WizardData
+helpviewer_keywords:
+- WizardData element [Visual Studio Templates]
+- <WizardData> element [Visual Studio Templates]
 ms.assetid: d0403a16-5d07-4fe5-b474-19ae3d9fd3ab
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 44d74aff60e4b53c223795e6cadc32a30270c8c0
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# WizardData-Element (Visual Studio-Vorlagen)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Gibt benutzerdefinierten XML\-Code an.  
+# <a name="wizarddata-element-visual-studio-templates"></a>WizardData-Element (Visual Studio-Vorlagen)
+Gibt benutzerdefinierte XML-Datei  
   
-## Syntax  
+ \<VSTemplate >  
+ \<WizardData >  
+  
+## <a name="syntax"></a>Syntax  
   
 ```  
 <WizardData>  
@@ -33,33 +37,33 @@ Gibt benutzerdefinierten XML\-Code an.
 </WizardData>  
 ```  
   
-## Attribute und Elemente  
- In den folgenden Abschnitten werden Attribute, untergeordnete Elemente und übergeordnete Elemente beschrieben.  
+## <a name="attributes-and-elements"></a>Attribute und Elemente  
+ In den folgenden Abschnitten werden attribute-Elemente sowie untergeordnete und übergeordnete Elemente beschrieben.  
   
-### Attribute  
+### <a name="attributes"></a>Attribute  
  Keine.  
   
-### Untergeordnete Elemente  
- Keine.  
+### <a name="child-elements"></a>Untergeordnete Elemente  
+ Keine  
   
-### Übergeordnete Elemente  
+### <a name="parent-elements"></a>Übergeordnete Elemente  
   
-|Element|Description|  
+|Element|Beschreibung|  
 |-------------|-----------------|  
-|[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|Erforderliches Element.<br /><br /> Enthält alle Metadaten für die Projektvorlage, Elementvorlage oder das Starter Kit.|  
+|[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|Erforderliches Element.<br /><br /> Enthält alle Metadaten für die Projektvorlage, Elementvorlage oder Starterkit.|  
   
-## Textwert  
+## <a name="text-value"></a>Textwert  
  Ein Textwert ist optional.  
   
- Durch diesen Text wird der benutzerdefinierte XML\-Code angegeben, der an die mit dem [WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md)\-Element angegebene benutzerdefinierte Assistentenerweiterung übergeben wird.  
+ Dieser Text gibt das benutzerdefinierte XML Übergabe an den benutzerdefinierten Assistenten-Erweiterung angegeben wurde der [WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md) Element.  
   
-## Hinweise  
- In diesem Element kann beliebiger XML\-Code angegeben werden.  Der XML\-Code wird als Parameter an die benutzerdefinierte Assistentenerweiterung übergeben. Dadurch hat die Erweiterung Zugriff auf den Inhalt dieses Elements.  Für diese Daten wird keine Validierung ausgeführt.  
+## <a name="remarks"></a>Hinweise  
+ In diesem Element kann beliebige XML-Daten angegeben werden. Der XML-Code wird als Parameter an die Erweiterung benutzerdefinierten Assistenten übergeben ermöglicht die Erweiterung der Inhalt dieses Elements verwendet. Auf diese Daten wird keine Validierung durchgeführt.  
   
- Der Inhalt des `WizardData`\-Elements wird innerhalb des Zeichenfolgenwörterbuchs für Parameter in der `IWizard.RunStarted`\-Methode unverändert als Parameter übergeben.  Der Parameter wird $WizardData$ genannt.  
+ Den Inhalt der `WizardData` Element übergeben, unverändert, als Parameter innerhalb der Zeichenfolgenwörterbuch der Parameter in der `IWizard.RunStarted` Methode. Name des Parameters lautet $WizardData$.  
   
-## Beispiel  
- Im folgenden Beispiel werden die Metadaten für die Standardprojektvorlage einer Windows\-Anwendung in [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] veranschaulicht.  
+## <a name="example"></a>Beispiel  
+ Das folgende Beispiel veranschaulicht die Metadaten für die standard-Projektvorlage für eine [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] Windows-Anwendung.  
   
 ```  
 <VSTemplate Version="3.0.0" Type="Item"  
@@ -92,8 +96,8 @@ Gibt benutzerdefinierten XML\-Code an.
 </VSTemplate>  
 ```  
   
-## Siehe auch  
- [Schemareferenz zu Visual Studio\-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)   
- [Erstellen von benutzerdefinierten Projekt\- und Elementvorlagen](../ide/creating-project-and-item-templates.md)   
- [WizardExtension\-Element \(Visual Studio\-Vorlagen\)](../extensibility/wizardextension-element-visual-studio-templates.md)   
+## <a name="see-also"></a>Siehe auch  
+ [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)   
+ [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)   
+ [WizardExtension-Element (Visual Studio-Vorlagen)](../extensibility/wizardextension-element-visual-studio-templates.md)   
  [Gewusst wie: Verwenden von Assistenten mit Projektvorlagen](../extensibility/how-to-use-wizards-with-project-templates.md)

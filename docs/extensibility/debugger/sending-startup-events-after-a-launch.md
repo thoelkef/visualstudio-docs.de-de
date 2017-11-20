@@ -1,49 +1,50 @@
 ---
-title: "Senden Startereignisse nach einem starten | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Debuggen [Debugging-SDK] Startup-Ereignisse"
+title: Senden von Startereignisse nach einem Start | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: debugging [Debugging SDK], startup events
 ms.assetid: 306ea0b4-6d9e-4871-8d8d-a4032d422940
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 0620821ec908deed2c57ddfefb40763a48fd2074
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Senden Startereignisse nach einem starten
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Einmal wird das Debugmodul \(DE\) in das Programm sendet er eine Reihe von Ereignissen Start wieder der Debugsitzung angefügt.  
+# <a name="sending-startup-events-after-a-launch"></a>Senden von Startereignisse nach einem starten
+Sobald die Debugging-Modul (DE) an die Anwendung angefügt ist, sendet er eine Reihe von Startereignisse die Debugsitzung an.  
   
- Ereignisse schickten Debuggen auf Start der Sitzung umfassen Folgendes zurück:  
+ Startup-Ereignisse, die an Sie zurückgesendet und die Debugsitzung umfassen Folgendes:  
   
--   Ein Modul Builds wird.  
+-   Ein Modul erstellen-Ereignis.  
   
--   Ein Programm Builds wird.  
+-   Ein Programm erstellen-Ereignis.  
   
--   Threaderstellungs\- und \-Modulladeereignisse.  
+-   Thread-Erstellung und Ladeereignisse für Module.  
   
--   Ein vollständiges Ereignis der Auslastung, wenn der Code geladen ist und bereiten, um vor ausgeführt werden, bevor gesendet, aber jeder Code ausgeführt wird  
+-   Eine vollständige Ladeereignis, gesendet, wenn der Code geladen und für die Ausführung bereit ist, aber bevor Code ausgeführt wird  
   
     > [!NOTE]
-    >  Wenn dieses Ereignis fortgesetzt wird, werden globale Variablen und Startroutine initialisiert werden.  
+    >  Wenn dieses Ereignis fortgesetzt wird, globale Variablen werden initialisiert und startroutinen ausführen.  
   
--   Folgende anderen Thread erstellungs\- und \- Modul ladeereignisse.  
+-   Mögliche andere thread erstellen und Ladeereignisse für Module an.  
   
--   Ein Einstiegspunkt Ereignis, das signalisiert, dass das Programm den Haupteinstiegspunkt erreicht hat, z. B. **Hauptframe** oder `WinMain`.  Dieses Ereignis wird i. d. R. nicht gesendet, wenn DE mit einem Programm angefügt wird, das bereits ausgeführt wird.  
+-   Ein Eintrag Punkt-Ereignis, das signalisiert, dass die Anwendung wie z. B. der Haupteinstiegspunkt erreicht hat **Main** oder `WinMain`. Dieses Ereignis wird nicht in der Regel gesendet, wenn die DE an ein Programm angefügt wird, die bereits ausgeführt wird.  
   
- Programmgesteuert sendet DE Debuggen zunächst den Manager der Sitzung \(SDM\) eine [IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md)\-Schnittstelle, die ein Modul Builds Ereignis darstellt, das [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md), gefolgt von einem Programm Builds Ereignis darstellt.  
+ Programmgesteuert, DE den Sitzungs-Manager (SDM) zuerst sendet eine [IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md) -Schnittstelle, die ein Modul Erstellung-Ereignis darstellt, gefolgt von einer [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) , der ein Programm Erstellungsereignis darstellt.  
   
- Dies wird in der Regel von einem oder mehreren [IDebugThreadCreateEvent2](../../extensibility/debugger/reference/idebugthreadcreateevent2.md) Thread erstellungs\-Ereignis\- und [IDebugModuleLoadEvent2](../../extensibility/debugger/reference/idebugmoduleloadevent2.md) Modul ladeereignissen.  
+ Dies ist i. d. r. gefolgt von einem oder mehreren [IDebugThreadCreateEvent2](../../extensibility/debugger/reference/idebugthreadcreateevent2.md) Ereignisse beim Erstellen von Threads und [IDebugModuleLoadEvent2](../../extensibility/debugger/reference/idebugmoduleloadevent2.md) Ladeereignisse für Module.  
   
- Wenn der Code geladen wird und die Ausführung vorbereitet, aber vor jeder Code ausgeführt wird, sendet das Ereignis ein vollständiges SDM DE [IDebugLoadCompleteEvent2](../../extensibility/debugger/reference/idebugloadcompleteevent2.md) Auslastung.  Wenn das Programm nicht bereits ausgeführt wird, sendet signalisiert wird, und ein DE [IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md) Einstiegspunkt, dass das Programm den Haupteinstiegspunkt erreicht hat und ist zum Debuggen beginnen.  
+ Wenn der Code geladen und ausgeführt, aber bevor Code ausgeführt wird, der Deutschland die SDM sendet ein [IDebugLoadCompleteEvent2](../../extensibility/debugger/reference/idebugloadcompleteevent2.md) Last ausgelöste Ereignis. Wenn das Programm nicht bereits ausgeführt wird, die DE sendet eine [IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md) Eintrag punktereignis, signalisieren, dass das Programm die Haupteinstiegspunkt erreicht hat und bereit für das Debuggen ist.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Steuerung der Ausführung](../../extensibility/debugger/control-of-execution.md)   
- [Debugging\-Aufgaben](../../extensibility/debugger/debugging-tasks.md)
+ [Debuggingaufgaben](../../extensibility/debugger/debugging-tasks.md)

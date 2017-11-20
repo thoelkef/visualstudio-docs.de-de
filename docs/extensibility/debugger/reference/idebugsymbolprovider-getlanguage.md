@@ -1,62 +1,62 @@
 ---
-title: "IDebugSymbolProvider::GetLanguage | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugSymbolProvider::GetLanguage"
-helpviewer_keywords: 
-  - "IDebugSymbolProvider::GetLanguage-Methode"
+title: IDebugSymbolProvider::GetLanguage | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugSymbolProvider::GetLanguage
+helpviewer_keywords: IDebugSymbolProvider::GetLanguage method
 ms.assetid: e4142183-3d8b-418f-907f-4ee4c753d8ce
-caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: b327207f9082cc5df6e20a178798e98daddc67f3
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugSymbolProvider::GetLanguage
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Diese Methode ruft die Sprache ab, die verwendet wurde, um den Code an der Adresse Debuggen kompilieren.  
+# <a name="idebugsymbolprovidergetlanguage"></a>IDebugSymbolProvider::GetLanguage
+Diese Methode ruft die Sprache, die zum Kompilieren des Codes bei der Debug-Adresse verwendet wurde.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT GetLanguage(   
-   IDebugAddress* pAddress,  
-   GUID*          pguidLanguage,  
-   GUID*          pguidLanguageVendor  
+```cpp  
+HRESULT GetLanguage(   
+   IDebugAddress* pAddress,  
+   GUID*          pguidLanguage,  
+   GUID*          pguidLanguageVendor  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetLanguage(  
-   IDebugAddress pAddress,   
-   out Guid      pguidLanguage,   
-   out Guid      pguidLanguageVendor  
+   IDebugAddress pAddress,   
+   out Guid      pguidLanguage,   
+   out Guid      pguidLanguageVendor  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `pAddress`  
- \[in\]  Ein Adressen Objekt dargestellt durch eine [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)\-Schnittstelle.  
+ [in] Ein Adressobjekt dargestellt durch eine [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) Schnittstelle.  
   
  `pguidLanguage`  
- \[out\]  Gibt `GUID` zurück, der die Sprache angibt.  
+ [out] Gibt eine `GUID` , die die Sprache angibt.  
   
  `pguidLanguageVendor`  
- \[out\]  Gibt `GUID` zurück, das den Compilerhersteller angibt.  
+ [out] Gibt eine `GUID` , die den Compilerhersteller angibt.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Hinweise  
- Das Debugmodul ruft diese Methode auf, um die Informationen abzurufen, die den richtigen Ausdrucksauswertung auswählen muss.  
+## <a name="remarks"></a>Hinweise  
+ Debugging-Modul ruft diese Methode zum Abrufen der Informationen, es muss sich um die richtige ausdrucksauswertung auszuwählen.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)   
  [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)

@@ -1,29 +1,33 @@
 ---
-title: "Name-Element (Visual Studio-Vorlagen) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "http://schemas.microsoft.com/developer/vstemplate/2005#Name"
-helpviewer_keywords: 
-  - "Name-Element [Visual Studio-Projektvorlagen]"
+title: Name-Element (Visual Studio-Vorlagen) | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: http://schemas.microsoft.com/developer/vstemplate/2005#Name
+helpviewer_keywords: Name element [Visual Studio project templates]
 ms.assetid: 48788dbf-7da0-4443-8061-aab966fc22c8
-caps.latest.revision: 17
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 17
+caps.latest.revision: "17"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 919244051df838861816279513f14e8e98f3e34f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Name-Element (Visual Studio-Vorlagen)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Gibt den Namen der Vorlage an, so wie sie im Dialogfeld **Neues Projekt** oder **Neues Element hinzufügen** angezeigt wird.  
+# <a name="name-element-visual-studio-templates"></a>Name-Element (Visual Studio-Vorlagen)
+Gibt den Namen der Vorlage an, wie in der **neues Projekt** oder **neues Element hinzufügen** (Dialogfeld).  
   
-## Syntax  
+ \<VSTemplate >  
+ \<TemplateData >  
+ \<Name >  
+  
+## <a name="syntax"></a>Syntax  
   
 ```  
 <Name> Template Name </Name>  
@@ -33,35 +37,35 @@ Gibt den Namen der Vorlage an, so wie sie im Dialogfeld **Neues Projekt** oder *
 <Name Package="{PackageID}" ID="ResourceID" />  
 ```  
   
-## Attribute und Elemente  
+## <a name="attributes-and-elements"></a>Attribute und Elemente  
  In den folgenden Abschnitten werden Attribute sowie untergeordnete und übergeordnete Elemente beschrieben.  
   
-### Attribute  
+### <a name="attributes"></a>Attribute  
   
-|Attribut|Description|  
-|--------------|-----------------|  
-|`Package`|Optionales Attribut für komplexere Benutzerszenarien.<br /><br /> Eine GUID, durch die die ID des Visual Studio\-Pakets angegeben wird.|  
-|`ID`|Optionales Attribut für komplexere Benutzerszenarien.<br /><br /> Gibt die ID der Visual Studio\-Ressource an.|  
+|Attribut|Beschreibung|  
+|---------------|-----------------|  
+|`Package`|Optionales Attribut für erweiterte Szenarien.<br /><br /> Eine GUID, der angibt, die Visual Studio-Paket-ID auf.|  
+|`ID`|Optionales Attribut für erweiterte Szenarien.<br /><br /> Gibt an, die Visual Studio-Ressourcen-ID.|  
   
-### Untergeordnete Elemente  
- Keine.  
+### <a name="child-elements"></a>Untergeordnete Elemente  
+ Keine  
   
-### Übergeordnete Elemente  
+### <a name="parent-elements"></a>Übergeordnete Elemente  
   
-|Element|Description|  
+|Element|Beschreibung|  
 |-------------|-----------------|  
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Erforderliches Element.<br /><br /> Kategorisiert die Vorlage und definiert, wie diese in den Dialogfeldern **Neues Projekt** oder **Neues Element hinzufügen** angezeigt wird.|  
   
-## Textwert  
- Ein Textwert ist erforderlich, es sei denn, das `Package`\-Attribut und das `ID`\-Attribut werden verwendet.  
+## <a name="text-value"></a>Textwert  
+ Ein Textwert ist erforderlich, es sei denn, die `Package` und `ID` Attribute verwendet werden.  
   
- Der Text gibt den Namen der Vorlage an.  
+ Der Text enthält den Namen der Vorlage.  
   
-## Hinweise  
+## <a name="remarks"></a>Hinweise  
  `Name` ist ein erforderliches untergeordnetes Element von `TemplateData`.  
   
-## Beispiel  
- Im folgenden Beispiel werden die Metadaten für eine Projektvorlage einer [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]\-Anwendung veranschaulicht.  
+## <a name="example"></a>Beispiel  
+ Im folgenden Beispiel werden die Metadaten für eine Projektvorlage einer [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]-Anwendung veranschaulicht.  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  
@@ -87,6 +91,6 @@ Gibt den Namen der Vorlage an, so wie sie im Dialogfeld **Neues Projekt** oder *
 </VSTemplate>  
 ```  
   
-## Siehe auch  
- [Schemareferenz zu Visual Studio\-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)   
- [Erstellen von benutzerdefinierten Projekt\- und Elementvorlagen](../ide/creating-project-and-item-templates.md)
+## <a name="see-also"></a>Siehe auch  
+ [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)   
+ [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)

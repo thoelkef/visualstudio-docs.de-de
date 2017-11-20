@@ -1,27 +1,30 @@
 ---
-title: "IDispError::GetHelpInfo | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IDispError::GetHelpInfo | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IDispError.GetHelpInfo
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "IDispError::GetHelpInfo"
+helpviewer_keywords: IDispError::GetHelpInfo
 ms.assetid: a146df13-eda4-4e56-8bf0-cf9886a2150f
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 17098b4055bb61e9a2f639404edfe2214abc931e
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# IDispError::GetHelpInfo
-Gibt den Pfad der Hilfedatei und der Kontexts\-ID des Themas zurück, das den Fehler erläutert, wenn möglich.  
+# <a name="idisperrorgethelpinfo"></a>IDispError::GetHelpInfo
+Gibt den Pfad der Hilfedatei und des Themas, die den Fehler, wenn möglich wird erläutert, die Kontext-ID zurück.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 HRESULT GetHelpInfo(  
@@ -30,28 +33,28 @@ HRESULT GetHelpInfo(
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `pbstrFileName`  
- \[out\] können Sie die mit dem vollqualifizierten Pfad der Hilfedatei auf.  Wenn keine Hilfedatei gibt, oder ein Fehler auftritt, ist der Rückgabewert NULL.  
+ [out] Zeichenfolge, die den vollqualifizierten Pfad der Hilfedatei enthält. Wenn keine Hilfe-Datei vorhanden ist, oder ein Fehler auftritt, ist der Rückgabewert NULL.  
   
  `pdwContext`  
- \[out\] Die Hilfekontext\-id für den Fehler.  Wenn keine Hilfedatei gibt \(wenn `pbstrFileName` NULL ist\), hat dieser Parameter keine Bedeutung.  
+ [out] Die Hilfekontext-ID für den Fehler. Wenn keine Hilfe-Datei vorhanden ist (Wenn `pbstrFileName` NULL ist), dieser Parameter hat keine Bedeutung.  
   
-## Rückgabewert  
- Die Methode gibt ein `HRESULT` zurück.  Zu den möglichen Werten zählen, aber nicht zu, die in der folgenden Tabelle beschränkt.  
+## <a name="return-value"></a>Rückgabewert  
+ Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
   
-|Wert|Description|  
-|----------|-----------------|  
+|Wert|Beschreibung|  
+|-----------|-----------------|  
 |`S_OK`|Die Methode war erfolgreich.|  
 |`E_FAIL`|Ein anbieterspezifischer Fehler ist aufgetreten.|  
-|`E_INVALIDARG`|`pbstrFileName` oder `pdwContext` waren NULL.|  
-|`E_OUTOFMEMORY`|Der Anbieter konnte nicht vom, ausreichend Speicher zuzuordnen, in dem den Hilfedateipfad zurückgeben.|  
+|`E_INVALIDARG`|`pbstrFileName`oder `pdwContext` war NULL.|  
+|`E_OUTOFMEMORY`|Der Anbieter konnte nicht genügend Speicher in den Pfad der Hilfe zurückgegeben.|  
   
-## Hinweise  
- Diese Methode gibt den Pfad der Hilfedatei und der Kontexts\-ID des Themas zurück, das den Fehler erläutert, wenn möglich.  
+## <a name="remarks"></a>Hinweise  
+ Diese Methode gibt den Pfad der Hilfedatei und des Themas, die den Fehler, wenn möglich wird erläutert, die Kontext-ID zurück.  
   
 > [!NOTE]
 >  Diese Methode ist nicht implementiert.  
   
-## Siehe auch  
- [IDispError\-Schnittstelle](../../winscript/reference/idisperror-interface.md)
+## <a name="see-also"></a>Siehe auch  
+ [IDispError-Schnittstelle](../../winscript/reference/idisperror-interface.md)

@@ -4,36 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - text, coloring
 - font and color control [Visual Studio SDK], coloring
 ms.assetid: d1f985bd-743e-40b7-9458-d9af53647c91
-caps.latest.revision: 22
+caps.latest.revision: "22"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
-ms.openlocfilehash: 57b3d53f86d132779fb00608886fa7c479b71551
-ms.lasthandoff: 04/05/2017
-
+ms.openlocfilehash: e3b31ad2ec080070dec3c68b304f400d204d47a0
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="getting-font-and-color-information-for-text-colorization"></a>Abrufen von Informationen zur Schriftart und Farbe für die farbliche Kennzeichnung von Text
 Der Prozess, der gerendert wird, oder zeigt Farbdruckoption Text in die Elemente der Benutzeroberfläche (UI) hängt vom Typ von Projekt, dessen Technologie und Developer-Einstellungen. Die **Schriftarten und Farben** Eigenschaftenseite speichert die Einstellungen.  
@@ -50,17 +36,17 @@ Der Prozess, der gerendert wird, oder zeigt Farbdruckoption Text in die Elemente
   
 -   Verwenden Sie die Dauerhaftigkeit von Schriftart und Farbe beim Abrufen des gespeicherten oder der aktuellen Status an. Weitere Informationen finden Sie unter [Zugriff auf gespeicherte Schriftart und Farbe Einstellungen](../extensibility/accessing-stored-font-and-color-settings.md).  
   
--   Verwenden der <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider>Schnittstelle eines Diensts Bereitstellen von Schriftart und Farbe Daten zum Abrufen einer Instanz des <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults>, wenn das VSPackage nicht gleichzeitig die Schriftart und Farbe Anbieter fungiert.</xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults> </xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider>  
+-   Verwenden der <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider> Schnittstelle eines Diensts Bereitstellen von Schriftart und Farbe Daten zum Abrufen einer Instanz des <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults>, wenn das VSPackage nicht gleichzeitig die Schriftart und Farbe Anbieter fungiert.  
   
--   Implementieren der <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents>Schnittstelle.</xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents>  
+-   Implementieren Sie die <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents>-Schnittstelle.  
   
- Um sicherzustellen, dass durch Abruf erzielten Ergebnisse sind auf dem neuesten Stand, es kann hilfreich sein, verwenden Sie die <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager>Schnittstelle, um zu bestimmen, ob ein Update erforderlich ist, vor dem Aufrufen der Abrufmethoden, der die <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>Schnittstelle.</xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> </xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager>  
+ Um sicherzustellen, dass durch Abruf erzielten Ergebnisse sind auf dem neuesten Stand, es kann hilfreich sein, verwenden Sie die <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager> Schnittstelle, um zu bestimmen, ob ein Update erforderlich ist, vor dem Aufrufen der Abrufmethoden, der die <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> Schnittstelle.  
   
  Nachdem Sie Schriftart und Farbe Informationen abgerufen wurden, analysieren Sie den Text, der zum Identifizieren von Elementen, die farbliche Kennzeichnung erfordern angezeigt werden, und klicken Sie dann den Text im Fenster mit der entsprechenden Schriftarten und Farben angezeigt.  
   
 ## <a name="see-also"></a>Siehe auch  
- <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider></xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider>   
- <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults></xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults>   
- [Verwenden von Schriftarten und Text](http://msdn.microsoft.com/Library/d43640f3-da94-4df2-a29d-a9d021a1c069)   
+ <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider>   
+ <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults>   
+ [Verwenden von Schriftarten und Text](/dotnet/framework/winforms/advanced/using-fonts-and-text)   
  [Arbeiten mit Farben](/cpp/windows/working-with-color-image-editor-for-icons)   
  [GDI (Graphics Device Interface)](http://msdn.microsoft.com/en-us/7e1d4540-bb2e-4257-8eee-eee376acba83)

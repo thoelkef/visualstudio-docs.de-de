@@ -1,81 +1,83 @@
 ---
-title: "Gewusst wie: Erste Schritte beim Anpassen der Multifunktionsleiste"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "Benutzerdefiniertes Menüband, Hinzufügen einer Multifunktionsleiste zu einem Projekt"
-  - "Anpassen des Menübands, Hinzufügen einer Multifunktionsleiste zu einem Projekt"
-  - "Menüband [Office-Entwicklung in Visual Studio], Hinzufügen"
-  - "Menüband [Office-Entwicklung in Visual Studio], Anpassen"
+title: "Vorgehensweise: Erste Schritte beim Anpassen des Menübands | Microsoft Docs"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- custom Ribbon, adding Ribbon to project
+- Ribbon [Office development in Visual Studio], adding
+- Ribbon [Office development in Visual Studio], customizing
+- customizing the Ribbon, adding Ribbon to project
 ms.assetid: 9eb6b8b3-1842-4cb3-8229-273ce35c64fb
-caps.latest.revision: 22
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 21
+caps.latest.revision: "22"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: eb47be36cbda86c8383760ced20b65691fd16842
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Gewusst wie: Erste Schritte beim Anpassen der Multifunktionsleiste
-  Soll das Menüband einer Microsoft Office\-Anwendung angepasst werden, fügen Sie einem Office\-Projekt ein Element von **Menüband \(Visual Designer\)** oder **Menüband \(XML\)** hinzu.  
+# <a name="how-to-get-started-customizing-the-ribbon"></a>Gewusst wie: Erste Schritte beim Anpassen der Multifunktionsleiste
+  Fügen Sie zum Anpassen des Menübands einer Microsoft Office-Anwendung eine **Menüband (visueller Designer)** oder **Menüband (XML)** Element aus, um ein Office-Projekt.  
   
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]  
   
-### So fügen Sie einem Projekt ein Menüband hinzu  
+### <a name="to-add-a-ribbon-to-a-project"></a>Hinzufügen eine Multifunktionsleiste zu einem Projekt  
   
-1.  Klicken Sie im Menü **Projekt** auf **Neues Element hinzufügen**.  
+1.  Auf der **Projekt** Menü klicken Sie auf **neues Element hinzufügen**.  
   
-2.  Wählen Sie im Dialogfeld **Neues Element hinzufügen Menüband \(Visual Designer\)** oder **Menüband \(XML\)** aus.  Weitere Informationen zu diesen Vorlagen finden Sie unter [Übersicht über die Multifunktionsleiste](../vsto/ribbon-overview.md).  
+2.  In der **neues Element hinzufügen** wählen Sie im Dialogfeld **Menüband (visueller Designer)** oder **Menüband (XML)**. Weitere Informationen zu diesen Vorlagen finden Sie unter [Übersicht über das Menüband](../vsto/ribbon-overview.md).  
   
-3.  Geben Sie im Feld **Name** einen Namen für das Menübandelement ein.  
+3.  In der **Namen** geben einen Namen für das Element "Menüband".  
   
-     Namen dürfen nicht die folgenden Zeichen enthalten:  
+     Dürfen enthalten nicht die folgenden Zeichen:  
   
-    -   Nummernzeichen \(\#\)  
+    -   Nummernzeichen (#)  
   
-    -   Prozent \(%\)  
+    -   Prozentzeichen (%)  
   
-    -   Kaufmännisches Und\-Zeichen \(&\)  
+    -   Kaufmännisches und-Zeichen (&)  
   
-    -   Sternchen \(\*\)  
+    -   Sternchen (*)  
   
-    -   Senkrechter Strich \(|\)  
+    -   Senkrechter Strich (|)  
   
-    -   Umgekehrter Schrägstrich \(\\\)  
+    -   Umgekehrter Schrägstrich (\\)  
   
-    -   Doppelpunkt \(:\)  
+    -   Doppelpunkt (:))  
   
-    -   Doppeltes Anführungszeichen \("\)  
+    -   Doppeltes Anführungszeichen (")  
   
-    -   Kleiner als \(\<\)  
+    -   Kleiner als (\<)  
   
-    -   Größer als \(\>\)  
+    -   Größer als (>)  
   
-    -   Fragezeichen \(?\)  
+    -   Fragezeichen (?)  
   
-    -   Schrägstrich \(\/\)  
+    -   Schrägstrich (/)  
   
-    -   Führende oder nachfolgende Leerzeichen \(' '\)  
+    -   Führende oder nachfolgende Leerzeichen ("")  
   
-    -   Von Windows oder DOS reservierte Namen, z. B. "nul", "aux", "con", "com1", "lpt1" usw.  
+    -   Z. B. ("Nul", "Aux", "con", "com1", "lpt1" usw.) von Windows oder DOS reservierte Namen  
   
 4.  Klicken Sie auf **OK**.  
   
- Das Menübandelement wird im **Projektmappen\-Explorer** angezeigt.  Weitere Informationen zu den nächsten Schritten finden Sie unter [Übersicht über die Multifunktionsleiste](../vsto/ribbon-overview.md).  
+ Das Element "Menüband" wird im **Projektmappen-Explorer**. Informationen zu den nächsten Schritten finden Sie unter [Übersicht über das Menüband](../vsto/ribbon-overview.md).  
   
-## Siehe auch  
- [Zugreifen auf die Multifunktionsleiste zur Laufzeit](../vsto/accessing-the-ribbon-at-run-time.md)   
- [Multifunktionsleisten-Designer](../vsto/ribbon-designer.md)   
- [Multifunktionsleisten-XML](../vsto/ribbon-xml.md)   
- [Exemplarische Vorgehensweise: Erstellen einer benutzerdefinierten Registerkarte mit dem Multifunktionsleisten-Designer](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   
- [Exemplarische Vorgehensweise: Erstellen einer benutzerdefinierten Registerkarte mit Multifunktionsleisten-XML](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)  
+## <a name="see-also"></a>Siehe auch  
+ [Accessing the Ribbon at Run Time](../vsto/accessing-the-ribbon-at-run-time.md)   
+ [Menüband-Designer](../vsto/ribbon-designer.md)   
+ [Menüband-XML](../vsto/ribbon-xml.md)   
+ [Exemplarische Vorgehensweise: Erstellen einer benutzerdefinierten Registerkarte mit Menüband-Designer](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   
+ [Exemplarische Vorgehensweise: Erstellen einer benutzerdefinierten Registerkarte mit Menüband-XML](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)  
   
   

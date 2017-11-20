@@ -1,60 +1,63 @@
 ---
-title: "Shell (isoliert oder integriert) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Visual Studio-shell"
-  - "Visual Studio Shell"
-  - "Shell [Visual Studio]"
-  - "Visual Studio-Shell, Shell-basierten Anwendung"
-  - "Shell-basierte-Shell [Visual Studio]"
+redirect_url: shell/shell-isolated-or-integrated
+title: Shell (isoliert oder integriert) | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- Visual Studio shell
+- Visual Studio, Shell
+- Shell [Visual Studio]
+- Visual Studio shell, shell-based applications
+- Shell [Visual Studio], shell-based applications
 ms.assetid: c64a9bf0-9bf8-45c3-8fa2-306fa6cab66a
-caps.latest.revision: 25
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 25
+caps.latest.revision: "25"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 8f06af0b884d404b3fd2e8e36cac235c10d254bd
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Shell (isoliert oder integriert)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Sie können Ihre eigene Visual Studio\-basierte Anwendung im integrierten oder im isolierten Modus erstellen. Im integrierten Modus stehen viele Visual Studio\-Funktionen neben der Anwendung. Im isolierten Modus wählen Sie eine Teilmenge der Visual Studio\-Funktionen, die Sie zusammen mit Ihren eigenen Erweiterung verteilen möchten.  
+# <a name="shell-isolated-or-integrated"></a>Shell (isoliert oder integriert)
+Sie können eigene Visual Studio-basierten Anwendung im integrierten oder im isolierten Modus erstellen. Im integrierten Modus stehen viele Visual Studio-Funktionen zusätzlich zu Ihrer Anwendung. Im isolierten Modus wählen Sie eine Teilmenge von Visual Studio-Funktionen, die Sie zusammen mit Ihren eigenen Erweiterung verteilen möchten.  
   
-## Im integrierten Modus  
- Im integrierter Modus ermöglicht den Benutzern standardmäßige Visual Studio\-Funktionen sowie die benutzerdefinierten Tools verwenden. Die integrierte Shell dient in erster Linie für das Hosten von Programmiersprachen und Tools zur Softwareentwicklung.  
+## <a name="integrated-mode"></a>Im integrierten Modus  
+ Im integrierter Modus ermöglicht Benutzern mithilfe von Visual Studio-Standardfunktionen sowie die benutzerdefinierten Tools. Die integrierte Shell dient in erster Linie zum Hosten von Programmiersprachen und Software Development Tools.  
   
- Benutzerdefinierte Tools, die auf die integrierte Shell, automatisch integriert sind Zusammenführen mit allen anderen Editionen von Visual Studio, die auf demselben Computer installiert ist. Sie können eine verteilbare Version von Visual Studio integrierte Shell bereitstellen, wenn Visual Studio nicht bereits installiert ist.  
+ Benutzerdefinierte Tools, die auf die integrierte Shell, automatisch integriert sind Zusammenführen mit eine andere Edition von Visual Studio, die auf demselben Computer installiert ist. Sie können eine verteilbare Version der Visual Studio integrierten Shell bereitstellen, wenn Visual Studio nicht bereits installiert ist.  
   
- Die verteilbare Version von Visual Studio integrierte Shell enthält keine Programmiersprachen oder Funktionen, die zur Unterstützung der jeweiligen Projektsysteme.  
+ Die verteilbare Version von Visual Studio integrierte Shell enthält keine Programmiersprachen und die Funktionen, die jeweiligen Projektsysteme unterstützen.  
   
 > [!NOTE]
->  Die integrierte Visual Studio\-Shell\-Modus kann zusammen mit allen Editionen von Visual Studio mit Ausnahme der Express\-Editionen installiert werden.  
+>  Die integrierte Visual Studio-Shell-Modus kann zusammen mit allen Editionen von Visual Studio mit Ausnahme der Express-Editionen installiert werden.  
   
- Weitere Informationen finden Sie unter [Visual Studio\-Shell \(integriert\)](../extensibility/visual-studio-shell-integrated.md).  
+ Weitere Informationen finden Sie unter [Visual Studio Shell (integrierter Modus)](../extensibility/visual-studio-shell-integrated.md).  
   
-## Isolierten Modus  
- Isolierter Modus können Sie benutzerdefinierte Tools erstellen, die Side\-by\-Side\-Ausführung mit anderen Versionen von Visual Studio. Sie dient in erster Linie für Tools, die Visual Studio\-Dienste ohne abhängig von der standardmäßigen Visual Studio\-Funktionen zugreifen können. Sie können die Darstellung der bei Visual Studio isolated Shell anpassen. Sie können problemlos deaktivieren der Funktionen und der Befehl Menügruppen, die Sie nicht, werden zusammen mit Ihrer Anwendung möchten.  
+## <a name="isolated-mode"></a>Isolierten Modus  
+ Isolierte Modus können Sie benutzerdefinierte Tools erstellen, die Seite-an-Seite ausführen mit anderen Versionen von Visual Studio. Es dient in erster Linie für Tools, die Visual Studio-Dienste ohne abhängig von der standardmäßigen Visual Studio-Funktionen zugreifen können. Sie können die Darstellung von Anwendungen, die auf die Visual Studio isolated Shell anpassen. Sie können problemlos aktivieren, deaktivieren Sie die Funktionen und die im Menü Befehlsgruppen, die Sie nicht, die angezeigt werden zusammen mit der Anwendung möchten.  
   
- Weitere Informationen finden Sie unter [Visual Studio Shell Isolated](../extensibility/visual-studio-isolated-shell.md).  
+ Weitere Informationen finden Sie unter [Visual Studio Isolated Shell](../extensibility/visual-studio-isolated-shell.md).  
   
-## Bereitstellen der Shellanwendung integriert oder isolierte  
- Um die integrierte oder isolierte Shell\-Anwendung verteilen, müssen Sie die Anwendung, eine spezielle integrierte oder isoliert\-Shell redistributable und ein Installationsprogramm enthalten. Weitere Informationen zur Verteilung und Installation, finden Sie unter [Isolierte Shell anwendungsverteilung](../extensibility/distributing-isolated-shell-applications.md).  
+## <a name="distributing-your-integrated-or-isolated-shell-application"></a>Verteilen der Shellanwendung integriert oder isolierte  
+ Um die integrierte oder isolierte Shell-Anwendung verteilen, müssen Sie die Anwendung, eine besondere integrierte oder isolierte Shell, die verteilbare und kein Installationsprogramm enthalten. Weitere Informationen zur Verteilung und Installation finden Sie unter [isolierten Shell-Anwendungen Verteilen von](../extensibility/distributing-isolated-shell-applications.md).  
   
 > [!IMPORTANT]
->  Die [Endbenutzer\-Lizenzvertrag \(EULA\)](https://www.visualstudio.com/en-us/support/legal/mt171552) für Visual Studio integriert und isolierte Shells Abschnitt enthält, für die Datensammlung \(**Abschnitt 3. Data**\).  Es beschreibt die Nutzung der Kundendaten, die von Microsoft von der Software integriert oder isolierte Shell\-Benutzern erfasst werden können, die Sie in Ihre Anwendung integrieren. Weitere Informationen finden Sie unter [Microsoft Visual Studio Datenschutzbestimmungen\-Produktfamilie](https://www.visualstudio.com/en-us/dn948229).  
+>  Die [Endbenutzer-Lizenzvertrag (EULA)](https://www.visualstudio.com/en-us/support/legal/mt171552) für Visual Studio integriert und isoliert enthält Shells einen Abschnitt für die Datensammlung (**Abschnitt 3. Daten**).  Es wird beschrieben, die Nutzungsdaten für Kunden, die von Microsoft Benutzer, der entweder integriert oder isolierte Shell Software gesammelt werden können, die Sie in Ihrer Anwendung zu erstellen. Weitere Informationen finden Sie unter [Microsoft Visual Studio Produktfamilie – Datenschutzbestimmungen](https://www.visualstudio.com/en-us/dn948229).  
 >   
->  Wenn Sie separate Daten Ihrer Kunden durch die Anwendung erfassen, müssen Sie entsprechende Mitteilung an Benutzer der Anwendung der Gegenstand der Sammlung angeben. Beim Verteilen von Software isoliert oder integrierte Shell als Teil der Anwendung gemäß der Lizenz für Visual Studio Software Development Kit, müssen Sie eine der folgenden einschließen:  
+>  Wenn separate Nutzungsdaten aus Ihrer Kunden durch die Anwendung gesammelt, müssen Sie entsprechende Mitteilung bereitstellen, für Benutzer der Anwendung von was Sie erfassen.  Wenn Sie die isolierten oder integrierte Shell-Software als Teil Ihrer Anwendung entsprechend der Visual Studio-Software Development Kit-Lizenz verteilen, müssen Sie eine der folgenden einschließen:  
 >   
->  -   der Endbenutzer\-Lizenzvertrag als Teil Ihrer Anwendung\-Lizenz  
-> -   eigene EULA, die Ihre Kunden akzeptieren, die Visual Studio schützen muss integriert oder isolierte Shell mindestens genauso viel wie dem Microsoft\-Endbenutzer\-Lizenzvertrag für die Shell\-software  
+>  -   die Endbenutzer-Lizenzvertrag als Teil Ihrer Anwendung-Lizenz  
+> -   Ihre eigenen Endbenutzer-Lizenzvertrag, die Ihre Kunden zustimmen, die Visual Studio schützen erfordert integriert oder isolierte Shell mindestens so viel wie den Microsoft-Endbenutzer-Lizenzbedingungen für die Shell-software  
   
-## Zusätzliche Ressourcen  
- Weitere Informationen zu den verteilbaren Paketen, finden Sie unter der [Downloads zu Visual Studio\-Erweiterbarkeit](http://go.microsoft.com/fwlink/?LinkID=119298) Website.  
+## <a name="additional-resources"></a>Zusätzliche Ressourcen  
+ Weitere Informationen zu verteilbare Pakete, finden Sie unter der [Visual Studio-Erweiterbarkeit Downloads](http://go.microsoft.com/fwlink/?LinkID=119298) Website.  
   
-## Siehe auch  
- [Lieferung von Visual Studio\-Erweiterungen](../extensibility/shipping-visual-studio-extensions.md)
+## <a name="see-also"></a>Siehe auch  
+ [Bereitstellen von Visual Studio-Erweiterungen](../extensibility/shipping-visual-studio-extensions.md)

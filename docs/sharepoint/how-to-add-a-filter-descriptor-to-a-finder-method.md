@@ -1,12 +1,10 @@
 ---
-title: 'How to: Add a Filter Descriptor to a Finder Method | Microsoft Docs'
+title: "Vorgehensweise: Hinzufügen eines Filterdeskriptors zu einer Finder-Methode | Microsoft Docs"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -20,67 +18,67 @@ helpviewer_keywords:
 - BDC [SharePoint development in Visual Studio], add a filter
 - BDC [SharePoint development in Visual Studio], filter descriptors
 ms.assetid: 228a6190-8cb8-4182-b6d9-d4c656f4a164
-caps.latest.revision: 14
-author: kempb
-ms.author: kempb
+caps.latest.revision: "14"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: fea1eb561889f545fd4d97bb05855d83b4070ddb
-ms.contentlocale: de-de
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: 37aff0510af501b75aafe190fc412a0d4b9fd625
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="how-to-add-a-filter-descriptor-to-a-finder-method"></a>How to: Add a Filter Descriptor to a Finder Method
-  Filter descriptors enable consumers of the model to pass values to methods before they execute. For more information, see [Designing a Business Data Connectivity Model](../sharepoint/designing-a-business-data-connectivity-model.md).  
+# <a name="how-to-add-a-filter-descriptor-to-a-finder-method"></a>Gewusst wie: Hinzufügen eines Filterdeskriptors zu einer Finder-Methode
+  Filterdeskriptoren ermöglichen Consumern des Modells, Werte an Methoden übergeben werden, bevor sie ausgeführt werden. Weitere Informationen finden Sie unter [Entwerfen eines Business Data Connectivity-Modells](../sharepoint/designing-a-business-data-connectivity-model.md).  
   
- One common scenario is that users in SharePoint want to retrieve instances of an external content type that match some criteria. You can support this scenario by adding a filter descriptor to a Finder method.  
+ Ein häufiges Szenario ist, dass Benutzer in SharePoint beim Abrufen von Instanzen von einem externen Inhaltstyp, die bestimmte Kriterien erfüllen. Hinzufügen eines Filterdeskriptors zu einer Finder-Methode, um dieses Szenario zu unterstützen.  
   
-### <a name="to-add-a-filter-descriptor-to-a-finder-method"></a>To add a filter descriptor to a Finder method  
+### <a name="to-add-a-filter-descriptor-to-a-finder-method"></a>Hinzufügen ein Filterdeskriptors zu einer Finder-Methode  
   
-1.  In the **BDC Method Details** window, expand the node of a Finder method, expand the **Parameters** node, and then add an input parameter. For more information, see [How to: Add a Parameter to a Method](../sharepoint/how-to-add-a-parameter-to-a-method.md).  
+1.  In der **BDC-Methodendetails** Fenster, erweitern Sie den Knoten einer Finder-Methode und die **Parameter** Knoten, und fügen Sie einen Eingabeparameter hinzu. Weitere Informationen finden Sie unter [wie: Hinzufügen eines Parameters einer Methode](../sharepoint/how-to-add-a-parameter-to-a-method.md).  
   
-2.  In the **Method Details** window, choose the type descriptor of the parameter.  
+2.  In der **Methodendetails** Fenster, wählen Sie den Typdeskriptor des Parameters.  
   
-3.  On the menu bar, choose **View**, **Properties Window**.  
+3.  Wählen Sie in der Menüleiste **Ansicht**, **Fenster "Eigenschaften"**.  
   
-4.  In the **Properties** window, set the **Type Name** property to a data type that is appropriate for the filter.  
+4.  In der **Eigenschaften** legen die **Typnamen** Eigenschaft in einen Datentyp, der für den Filter geeignet ist.  
   
-     For example, a filter might use an order date to limit the number of sales orders returned by the method. To support that filter, the **Type Name** property of the type descriptor must be set to **System.DateTime**.  
+     Ein Filter möglicherweise z. B. ein Bestelldatum verwendet, um die Anzahl der von der Methode zurückgegebenen Aufträge zu beschränken. Um den Filter unterstützen die **Typnamen** Eigenschaft des Typdeskriptors muss festgelegt werden, um **System.DateTime**.  
   
-5.  In the **Method Details** window, expand the **Filter Descriptors** node.  
+5.  In der **Methodendetails** Fenster, erweitern Sie die **Filterdeskriptoren** Knoten.  
   
-6.  In **Add a Filter Descriptor** list, choose **Create Filter Descriptor**.  
+6.  In **Hinzufügen eines Filterdeskriptors** wählen **Filterdeskriptors erstellen**.  
   
-     A new filter descriptor appears underneath the **Filter Descriptors** node.  
+     Eine neue Filterdeskriptors wird unterhalb der **Filterdeskriptoren** Knoten.  
   
-7.  On the menu bar, choose **View**, **Properties Window**.  
+7.  Wählen Sie in der Menüleiste **Ansicht**, **Fenster "Eigenschaften"**.  
   
-8.  In the **Properties** window, choose the **Type** property.  
+8.  In der **Eigenschaften** Fenster, wählen Sie die **Typ** Eigenschaft.  
   
-9. In the list that appears for the **Type** property, choose the filtering pattern that you want.  
+9. In der Liste, die für die **Typ** -Eigenschaft, wählen Sie das Filtermuster, die Sie möchten.  
   
-     For example, to create a filter that uses an order date to limit the number of sales orders returned in a Finder method, choose **Comparison**. A Comparison filter ensures that a finder method returns only instances that meet a specific condition. For more information about each filtering pattern, see [Types of Filters Supported by the BDC](http://go.microsoft.com/fwlink/?LinkId=169287).  
+     Wählen Sie zum Erstellen eines Filters, der ein Bestelldatum verwendet, um die Anzahl der in einer Finder-Methode zurückgegebenen Aufträge zu beschränken, z. B. **Vergleich**. Ein Vergleichsfilter wird sichergestellt, dass es sich bei eine Finder-Methode nur Instanzen zurückgegeben, die eine bestimmte Bedingung erfüllen. Weitere Informationen zu jeder Filtermuster, finden Sie unter [von BDC unterstützte Filter](http://go.microsoft.com/fwlink/?LinkId=169287).  
   
-10. In the **Properties** window, choose the **Associated Type Descriptors** property.  
+10. In der **Eigenschaften** Fenster, wählen Sie die **zugeordnete Typdeskriptoren** Eigenschaft.  
   
-11. In the list that appears for the **Associated Type Descriptors** property, choose the type descriptor that you created earlier in this procedure. This relates the filter to the input parameter of the Finder method.  
+11. In der Liste, die für die **zugeordnete Typdeskriptoren** -Eigenschaft, wählen Sie den Typdeskriptor, die Sie zuvor in dieser Prozedur erstellt haben. Diese Metrik bezieht sich den Filter für die Eingabeparameter der Finder-Methode.  
   
-12. Add code to the Finder method that returns data. You can use the input parameter as a condition in a select query.  
+12. Fügen Sie Code, der Finder-Methode, die Daten zurückgibt. Sie können den Eingabeparameter als Bedingung in einer select-Abfrage verwenden.  
   
-     The following example returns sales orders that have the specified order date.  
+     Im folgende Beispiel werden Aufträge, die den angegebenen Bestelldatum zurückgegeben.  
   
     > [!NOTE]  
-    >  Replace the value of the `ServerName` field with the name of your server.  
+    >  Ersetzen Sie den Wert, der die `ServerName` Feld mit dem Namen Ihres Servers.  
   
-     [!code-csharp[SP_BDC#11](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/salesorderservice.cs#11)]  [!code-vb[SP_BDC#11](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/salesorderservice.vb#11)]  
+     [!code-csharp[SP_BDC#11](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/salesorderservice.cs#11)]
+     [!code-vb[SP_BDC#11](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/salesorderservice.vb#11)]  
   
-## <a name="see-also"></a>See Also  
- [How to: Add a Finder Method](../sharepoint/how-to-add-a-finder-method.md)   
- [How to: Add a Specific Finder Method](../sharepoint/how-to-add-a-specific-finder-method.md)   
- [How to: Add a Parameter to a Method](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
- [How to: Define the Type Descriptor of a Parameter](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)   
- [Designing a Business Data Connectivity Model](../sharepoint/designing-a-business-data-connectivity-model.md)   
- [Integrating Business Data into SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)  
+## <a name="see-also"></a>Siehe auch  
+ [Vorgehensweise: hinzufügen eine Finder-Methode](../sharepoint/how-to-add-a-finder-method.md)   
+ [Vorgehensweise: hinzufügen eine bestimmten Finder-Methode](../sharepoint/how-to-add-a-specific-finder-method.md)   
+ [Vorgehensweise: Hinzufügen eines Parameters einer Methode](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
+ [Vorgehensweise: Definieren des Typdeskriptors eines Parameters](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)   
+ [Entwerfen eines Business Data Connectivity-Modells](../sharepoint/designing-a-business-data-connectivity-model.md)   
+ [Integrieren von Geschäftsdaten in SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)  
   
   

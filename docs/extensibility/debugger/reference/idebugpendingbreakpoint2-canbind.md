@@ -1,57 +1,58 @@
 ---
-title: "IDebugPendingBreakpoint2::CanBind | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugPendingBreakpoint2::CanBind"
-helpviewer_keywords: 
-  - "IDebugPendingBreakpoint2::CanBind-Methode"
-  - "CanBind-Methode"
+title: IDebugPendingBreakpoint2::CanBind | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugPendingBreakpoint2::CanBind
+helpviewer_keywords:
+- IDebugPendingBreakpoint2::CanBind method
+- CanBind method
 ms.assetid: 84a2b189-ccf1-467e-8fab-0c0da68f0b91
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: c1e64de7048f071437b6166b8cc9a6cc5cd920b2
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugPendingBreakpoint2::CanBind
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Bestimmt, ob dieser ausstehende Haltepunkt zu einem Speicherort des Codes gebunden werden kann.  
+# <a name="idebugpendingbreakpoint2canbind"></a>IDebugPendingBreakpoint2::CanBind
+Bestimmt, ob diese ausstehenden Haltepunkts an einem Speicherort Code binden kann.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT CanBind (   
-   IEnumDebugErrorBreakpoints2** ppErrorEnum  
+```cpp  
+HRESULT CanBind (   
+   IEnumDebugErrorBreakpoints2** ppErrorEnum  
 );  
 ```  
   
-```c#  
-int CanBind (   
-   out IEnumDebugErrorBreakpoints2 ppErrorEnum  
+```csharp  
+int CanBind (   
+   out IEnumDebugErrorBreakpoints2 ppErrorEnum  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `ppErrorEnum`  
- \[out\]  Gibt ein [IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md)\-Objekt zurück, das eine Liste von [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md)\-Objekte enthält, wenn Fehler geben könnte.  
+ [out] Gibt eine [IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md) -Objekt, das eine Liste von enthält [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) Objekte möglicherweise Fehler.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK.`zurückgibt `S_FALSE` zurück, wenn der Haltepunkt nicht gebunden werden kann. In diesem Fall wird der Fehler vom `ppErrorEnum`\-Parameter zurückgegeben werden.  Andernfalls gibt einen Fehlercode zurück.  Gibt `E_BP_DELETED` zurück, wenn der Haltepunkt gelöscht wurde.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK.` gibt `S_FALSE` Wenn der Haltepunkt gebunden werden kann, in diesem Fall die Fehler durch zurückgegeben der `ppErrorEnum` Parameter. Andernfalls wird ein Fehlercode zurückgegeben. Gibt `E_BP_DELETED` , wenn der Haltepunkt gelöscht wurde.  
   
-## Hinweise  
- Diese Methode wird aufgerufen, um zu bestimmen, was geschehen würde, wenn dieser ausstehende Haltepunkt gebunden wurde.  Rufen Sie die [Binden](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)\-Methode auf, um den anstehenden Haltepunkt tatsächlich zu binden.  
+## <a name="remarks"></a>Hinweise  
+ Diese Methode wird aufgerufen, um zu bestimmen, was passieren würde, wenn diese ausstehender Haltepunkt gebunden wurde. Rufen Sie die [binden](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md) Methode, um die ausstehender Haltepunkt eine tatsächliche Bindung.  
   
-## Beispiel  
- Im folgenden Beispiel wird veranschaulicht, wie diese Methode für ein einfaches `CPendingBreakpoint`\-Objekt implementiert, das die [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)\-Schnittstelle verfügbar macht.  
+## <a name="example"></a>Beispiel  
+ Im folgende Beispiel wird gezeigt, wie diese Methode für eine einfache implementiert `CPendingBreakpoint` -Objekt, das macht die [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) Schnittstelle.  
   
-```cpp#  
+```cpp  
 HRESULT CPendingBreakpoint::CanBind(IEnumDebugErrorBreakpoints2** ppErrorEnum)    
 {    
    HRESULT hr;    
@@ -136,7 +137,7 @@ HRESULT CPendingBreakpoint::CanBind(IEnumDebugErrorBreakpoints2** ppErrorEnum)
 }    
 ```  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)   
  [IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md)   
  [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md)   

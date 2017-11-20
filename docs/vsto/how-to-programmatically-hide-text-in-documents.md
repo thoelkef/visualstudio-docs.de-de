@@ -1,12 +1,10 @@
 ---
-title: 'How to: Programmatically Hide Text in Documents | Microsoft Docs'
+title: 'Vorgehensweise: Programmgesteuertes Ausblenden von Text in Dokumenten | Microsoft Docs'
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -16,52 +14,55 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], hiding text
 - text [Office development in Visual Studio], hiding in documents
 ms.assetid: f5ced4ec-22ca-463b-b963-d34ce631b486
-caps.latest.revision: 28
-author: kempb
-ms.author: kempb
+caps.latest.revision: "28"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 980f8f996665d795ace7c88ffa023115343d80da
-ms.contentlocale: de-de
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: b9ec425a3d83ea088e47725866688ada834ffd34
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="how-to-programmatically-hide-text-in-documents"></a>How to: Programmatically Hide Text in Documents
-  You can hide text in a document by setting the <xref:Microsoft.Office.Interop.Word._Font.Hidden%2A> property of the <xref:Microsoft.Office.Interop.Word.Range.Font%2A> for a particular range of text.  
+# <a name="how-to-programmatically-hide-text-in-documents"></a>Gewusst wie: Programmgesteuertes Ausblenden von Text in Dokumenten
+  Sie können Text in einem Dokument ausblenden, indem Sie die <xref:Microsoft.Office.Interop.Word._Font.Hidden%2A> -Eigenschaft der <xref:Microsoft.Office.Interop.Word.Range.Font%2A> für einen bestimmten Textbereich festlegen.  
   
- For example, you can temporarily hide the text within a <xref:Microsoft.Office.Tools.Word.Bookmark> (in a document-level customization) or a <xref:Microsoft.Office.Interop.Word.Bookmark> (in an VSTO Add-in) before sending a document to a printer.  
+ Sie können z. B. den Text in einer <xref:Microsoft.Office.Tools.Word.Bookmark> (in einer Anpassung auf Dokumentebene) oder in einer <xref:Microsoft.Office.Interop.Word.Bookmark> (in einem VSTO-Add-In) vorübergehend ausblenden, bevor Sie das Dokument an einen Drucker senden.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
-### <a name="to-hide-text-in-a-bookmark-control-while-printing-the-document"></a>To hide text in a Bookmark control while printing the document  
+### <a name="to-hide-text-in-a-bookmark-control-while-printing-the-document"></a>So blenden Sie Text in einem Bookmark-Steuerelement beim Drucken des Dokuments aus  
   
-1.  Create a procedure that hides all text that is in a specified range.  
+1.  Erstellen Sie eine Prozedur, die sämtlichen Text in einem angegebenen Bereich ausblendet.  
   
-     [!code-vb[Trin_VstcoreWordAutomation#105](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#105)]  [!code-csharp[Trin_VstcoreWordAutomation#105](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#105)]  
+     [!code-vb[Trin_VstcoreWordAutomation#105](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#105)]
+     [!code-csharp[Trin_VstcoreWordAutomation#105](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#105)]  
   
-2.  Create a procedure that unhides all text that is in a specified range.  
+2.  Erstellen Sie eine Prozedur, die sämtlichen Text in einem angegebenen Bereich anzeigt.  
   
-     [!code-vb[Trin_VstcoreWordAutomation#106](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#106)]  [!code-csharp[Trin_VstcoreWordAutomation#106](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#106)]  
+     [!code-vb[Trin_VstcoreWordAutomation#106](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#106)]
+     [!code-csharp[Trin_VstcoreWordAutomation#106](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#106)]  
   
-3.  Pass the range of a bookmark to the `HideText` method, print the document, and then pass the same range to the `UnhideText` method.  
+3.  Übergeben Sie den Bereich einer Textmarke an die `HideText` -Methode, drucken Sie das Dokument, und übergeben Sie dann denselben Bereich an die `UnhideText` -Methode.  
   
-     The following code example can be used in a document-level customization. To use this example, run it from the `ThisDocument` class in your project.  
+     Das folgende Codebeispiel kann in einer Anpassung auf Dokumentebene verwendet werden. Wenn Sie dieses Beispiel verwenden möchten, führen Sie es von der `ThisDocument` -Klasse Ihres Projekts aus.  
   
-     [!code-vb[Trin_VstcoreWordAutomation#107](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#107)]  [!code-csharp[Trin_VstcoreWordAutomation#107](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#107)]  
+     [!code-vb[Trin_VstcoreWordAutomation#107](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#107)]
+     [!code-csharp[Trin_VstcoreWordAutomation#107](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#107)]  
   
-     The following code example can be used in an VSTO Add-in. This example uses the active document. To use the example, run it from the `ThisAddIn` class in your project.  
+     Das folgende Codebeispiel kann in einem VSTO-Add-In verwendet werden. In diesem Beispiel wird das aktive Dokument verwendet. Wenn Sie dieses Beispiel verwenden möchten, führen Sie es von der `ThisAddIn` -Klasse Ihres Projekts aus.  
   
-     [!code-vb[Trin_VstcoreWordAutomationAddIn#107](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#107)]  [!code-csharp[Trin_VstcoreWordAutomationAddIn#107](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#107)]  
+     [!code-vb[Trin_VstcoreWordAutomationAddIn#107](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#107)]
+     [!code-csharp[Trin_VstcoreWordAutomationAddIn#107](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#107)]  
   
-## <a name="compiling-the-code"></a>Compiling the Code  
- This code example assumes that the document contains a <xref:Microsoft.Office.Tools.Word.Bookmark> control (in a document-level customization) or <xref:Microsoft.Office.Interop.Word.Bookmark> control (in an VSTO Add-in) that is named `bookmark1`.  
+## <a name="compiling-the-code"></a>Kompilieren des Codes  
+ In diesem Codebeispiel wird davon ausgegangen, dass das Dokument ein <xref:Microsoft.Office.Tools.Word.Bookmark> -Steuerelement (in einer Anpassung auf Dokumentebene) oder <xref:Microsoft.Office.Interop.Word.Bookmark> -Steuerelement (in einem VSTO-Add-In) namens `bookmark1`enthält.  
   
-## <a name="see-also"></a>See Also  
- [How to: Programmatically Print Documents](../vsto/how-to-programmatically-print-documents.md)   
- [How to: Programmatically Define and Select Ranges in Documents](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
- [How to: Programmatically Reset Ranges in Word Documents](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)   
- [How to: Programmatically Update Bookmark Text](../vsto/how-to-programmatically-update-bookmark-text.md)   
- [Optional Parameters in Office Solutions](../vsto/optional-parameters-in-office-solutions.md)  
+## <a name="see-also"></a>Siehe auch  
+ [Vorgehensweise: Programmgesteuertes Drucken von Dokumenten](../vsto/how-to-programmatically-print-documents.md)   
+ [Vorgehensweise: Programmgesteuertes definieren und Markieren von Bereichen in Dokumenten](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
+ [Vorgehensweise: Programmgesteuertes Zurücksetzen von Bereichen in Word-Dokumenten](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)   
+ [Vorgehensweise: Programmgesteuertes Aktualisieren von Lesezeichentext](../vsto/how-to-programmatically-update-bookmark-text.md)   
+ [Optionale Parameter in Office-Projektmappen](../vsto/optional-parameters-in-office-solutions.md)  
   
   

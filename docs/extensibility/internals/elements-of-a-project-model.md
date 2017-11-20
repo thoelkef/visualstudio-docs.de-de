@@ -1,51 +1,53 @@
 ---
-title: "Elemente eines Projektmodells | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Projekte [Visual Studio SDK] Aspekte der Implementierung"
-  - "Projektmodelle"
-  - "Projekte [Visual Studio SDK] Elemente"
+title: Elemente eines Modells Projekt | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- projects [Visual Studio SDK], implementation considerations
+- project models
+- projects [Visual Studio SDK], elements
 ms.assetid: a1dbe0dc-68da-45d7-8704-5b43ff7e4fc4
-caps.latest.revision: 18
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 18
+caps.latest.revision: "18"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 689fac97264aad3d301095cffed07b825c723474
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Elemente eines Projektmodells
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Die Schnittstellen und den Implementierungen aller Projekte in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] geben eine grundlegende Struktur frei: das Projektmodell für den Projekttyp.  Klicken Sie im Projektmodell VSPackage ist, das Sie entwickeln, erstellen Sie die Objekte, die den betreffenden Entscheidungen Entwurf zusammen mit der Arbeit und globale Funktionen entsprechen, die in der IDE bereitgestellt wird.  Obwohl Sie steuern, wie ein Projektelement gespeichert werden, z. B. Gehen Sie nicht Steuerelementbenachrichtigung, dass eine Datei beibehalten werden muss.  Wenn ein Benutzer den Fokus in einem geöffneten Projektelement gespeichert und **Speichern** auf dem **Datei** Menü auf der Menüleiste [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Projekttyp auswählen, muss der Code den Befehl über die IDE abfangen, besteht die Datei weiter und sendet eine Benachrichtigung an die IDE, dass die Datei nicht mehr geändert wird.  
+# <a name="elements-of-a-project-model"></a>Elemente eines Projekt-Modells
+Die Schnittstellen und Implementierungen aller Projekte in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Teilen Sie Basisstruktur: das Projektmodell für den Projekttyp. In Ihrem Projektmodell, das das VSPackage ist, Sie entwickeln, erstellen Sie Objekte, die gemeinsam mit globalen Funktionen, die von der IDE bereitgestellt und mit entwurfsentscheidungen übereinstimmen. Obwohl Sie steuern, wie ein Projektelement beibehalten wird, können z. B. Sie keine Benachrichtigung gesteuert werden, dass eine Datei beibehalten werden muss. Wenn ein Benutzer den Fokus auf ein Projekt öffnen Element platziert und wählt **speichern** auf die **Datei** Menü auf die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Menü Projektcode Typ muss Balken-, den Befehl in der IDE abzufangen, persistent speichern die Datei und Benachrichtigungen der IDE an, dass die Datei nicht mehr geändert wird.  
   
- VSPackage interagiert mit der IDE über Dienste, die den Zugriff auf IDE\-Schnittstellen ermöglichen.  Zum Beispiel von bestimmten Diensten, und überwachen Sie Befehle ausführen und stellen weitere Kontextinformationen für die Auswahl bereit, die im Projekt erstellt wird.  Die gesamte globale IDE\-Funktionalität, die für ein VSPackage benötigt wird, wird von den Diensten bereitgestellt.  Weitere Informationen zu Diensten finden Sie unter [Gewusst wie: Abrufen eines Diensts](../../extensibility/how-to-get-a-service.md).  
+ Das VSPackage interagiert mit der IDE über Dienste, die Zugriff auf die IDE-Schnittstellen bereitstellen. Z. B. über bestimmte Dienste überwachen und die Routenwerte Befehle zu Kontextinformationen für die Auswahl im Projekt bereitstellen. Alle globalen IDE benötigten Funktionen für das VSPackage wird von Diensten bereitgestellt. Weitere Informationen zu Diensten finden Sie unter [Vorgehensweise: Abrufen eines Diensts](../../extensibility/how-to-get-a-service.md).  
   
- Andere Überlegungen zur Implementierung:  
+ Andere Aspekte der Implementierung:  
   
--   Ein einzelnes Projektmodell kann mehr als einen Projekttyp enthalten.  
+-   Ein einzelnes Projekt-Modell kann mehrere Projekttyp enthalten.  
   
--   Projekttypen und den begleitenden Projekt factorys werden unabhängig mit GUIDs registriert.  
+-   Projekttypen und das zugehörige projektfactorys werden unabhängig voneinander GUIDs registriert.  
   
--   Jedes Projekt muss eine Vorlagendatei oder einen Assistenten verwenden, um die neue Projektdatei zu initialisieren, wenn ein Benutzer ein neues Projekt vom [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Benutzeroberfläche erstellt.  Zum Beispiel initialisieren die [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] Vorlagen, was schließlich .vcproj\-Dateien werden.  
+-   Jedes Projekt muss einer Vorlagendatei oder den Assistenten, um die neue Projektdatei zu initialisieren, wenn ein Benutzer über ein neues Projekt erstellt haben die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] UI. Z. B. die [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] Vorlagen zu initialisieren, was schließlich .vcproj-Dateien werden.  
   
- Die folgende Abbildung zeigt die wichtigsten Schnittstellen, die Dienste und die Objekte an, die eine typische Projektdurchführung zusammensetzt.  Sie können die Anwendung können, HierUtil7 verwenden, um die zugrunde liegenden Objekte und anderen Programmierung vorformulierten Satz zu erstellen.  Weitere Informationen über die Verwendung der Hilfe HierUtil7 finden Sie unter [Not in Build: Using HierUtil7 Project Classes to Implement a Project Type \(C\+\+\)](http://msdn.microsoft.com/de-de/a5c16a09-94a2-46ef-87b5-35b815e2f346).  
+ Die folgende Abbildung zeigt den primären Schnittstellen, Diensten und Objekten, die eine typischen Projekt Implementierung bilden. Die Anwendung Hilfsprogramms, des HierUtil7, können Sie die zugrunde liegenden Objekte und anderen Programmiersprachen Textbaustein erstellen. Weitere Informationen zu der Anwendung HierUtil7-Hilfsprogramm, finden Sie unter [nicht im Build: verwenden HierUtil7 Projektklassen zum Implementieren von einem Project-Typs (C++)](http://msdn.microsoft.com/en-us/a5c16a09-94a2-46ef-87b5-35b815e2f346).  
   
- ![Grafik zum Visual Studio&#45;Projektmodell](~/extensibility/internals/media/vsprojectmodel.gif "vsProjectModel")  
+ ![Grafik zu Visual Studio-Projektmodell](../../extensibility/internals/media/vsprojectmodel.gif "VsProjectModel")  
 Projektmodell  
   
- Weitere Informationen zu den Schnittstellen und Dienste, die im vorherigen Diagramm aufgeführt sind, und anderen optionalen Schnittstellen, die nicht im Diagramm eingeschlossen werden, finden Sie unter [Projekt\-Modell\-Kernkomponenten](../../extensibility/internals/project-model-core-components.md).  
+ Weitere Informationen über die Schnittstellen und in der vorherigen Abbildung aufgeführten Dienste und andere optionalen Schnittstellen, die nicht im Diagramm enthalten, finden Sie unter [Projekt Modell Kernkomponenten](../../extensibility/internals/project-model-core-components.md).  
   
- Projekte können Befehle unterstützen und daher müssen die <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>\-Schnittstelle implementieren, um am Befehls routing durch den Befehl Elementkontext GUID teilzunehmen.  
+ Projekte können Befehle unterstützen und daher implementieren, müssen die <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> Schnittstelle Befehlsrouting über den Befehlskontext GUIDs teilnehmen.  
   
-## Siehe auch  
- [Prüfliste: Erstellen von neuen Typen](../../extensibility/internals/checklist-creating-new-project-types.md)   
- [Not in Build: Using HierUtil7 Project Classes to Implement a Project Type \(C\+\+\)](http://msdn.microsoft.com/de-de/a5c16a09-94a2-46ef-87b5-35b815e2f346)   
- [Projekt\-Modell\-Kernkomponenten](../../extensibility/internals/project-model-core-components.md)   
- [Erstellen von Instanzen von Project mithilfe von Project\-Factorys](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)   
- [Gewusst wie: Abrufen eines Diensts](../../extensibility/how-to-get-a-service.md)   
+## <a name="see-also"></a>Siehe auch  
+ [Prüfliste: Erstellen neuen Projekttypen](../../extensibility/internals/checklist-creating-new-project-types.md)   
+ [Nicht im Build: Verwenden von HierUtil7 Projektklassen zum Implementieren von eines Projekttyps (C++)](http://msdn.microsoft.com/en-us/a5c16a09-94a2-46ef-87b5-35b815e2f346)   
+ [Projekt-Modell-Kernkomponenten](../../extensibility/internals/project-model-core-components.md)   
+ [Erstellen von Instanzen von Project mithilfe von Projektfactorys](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)   
+ [Vorgehensweise: Abrufen eines Diensts](../../extensibility/how-to-get-a-service.md)   
  [Erstellen von Projekttypen](../../extensibility/internals/creating-project-types.md)

@@ -1,44 +1,47 @@
 ---
-title: "IPerPropertyBrowsing2::MapPropertyToPage | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IPerPropertyBrowsing2::MapPropertyToPage | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IPerPropertyBrowsing2.MapPropertyToPage
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "IPerPropertyBrowsing2::MapPropertyToPage"
+helpviewer_keywords: IPerPropertyBrowsing2::MapPropertyToPage
 ms.assetid: e6418a8e-500b-42e1-9b5a-52e6f7567f99
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 79b8d7cb9e1c8a9f79cdddc4f8d3404ff7a2036c
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# IPerPropertyBrowsing2::MapPropertyToPage
-Gibt die CLSID der Eigenschaftenseite zurück, die verwendet werden kann, um die Eigenschaft zu bearbeiten.  
+# <a name="iperpropertybrowsing2mappropertytopage"></a>IPerPropertyBrowsing2::MapPropertyToPage
+Gibt die CLSID der Eigenschaftenseite, die zum Bearbeiten dieser Eigenschaft verwendet werden kann.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 HRESULT MapPropertyToPage(  
-   DISPID  dispid,  
-   CLSID*  pClsidPropPage  
+   DISPID  dispid,  
+   CLSID*  pClsidPropPage  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `dispid`  
- \[in\] Dispatchbezeichner in der relevanten Eigenschaft.  
+ [in] Dispatchbezeichner von der gewünschten Eigenschaft.  
   
  `pClsidPropPage`  
- \[out\] Zeiger auf CLSID, das die Eigenschaftenseite zugeordnet mit der Eigenschaft identifiziert.  Wenn diese Methode fehlschlägt, \*`pClsidPropPage` wird zu CLSID\_NULL festgelegt.  
+ [out] Ein Zeiger auf die CLSID, identifizieren die Eigenschaftenseite der Eigenschaft zugeordnet. Wenn diese Methode fehlschlägt, *`pClsidPropPage` auf CLSID_NULL festgelegt ist.  
   
-## Rückgabewert  
- Gibt gültiges `HRESULT`, in der Regel `S_OK` zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Gibt eine gültige `HRESULT`, in der Regel `S_OK`.  
   
-## Siehe auch  
- [IPerPropertyBrowsing2\-Schnittstelle](../../winscript/reference/iperpropertybrowsing2-interface-1.md)
+## <a name="see-also"></a>Siehe auch  
+ [IPerPropertyBrowsing2-Schnittstelle 1](../../winscript/reference/iperpropertybrowsing2-interface-1.md)

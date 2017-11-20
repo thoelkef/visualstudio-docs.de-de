@@ -1,64 +1,69 @@
 ---
-title: "SupportsCodeSeparation-Element (Visual Studio-Vorlagen) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "http://schemas.microsoft.com/developer/vstemplate/2005#SupportsCodeSeparation"
-helpviewer_keywords: 
-  - "<SupportsCodeSeparation>-Element [Visual Studio-Vorlagen]"
-  - "SupportsCodeSeparation-Element [Visual Studio-Vorlagen]"
+title: SupportsCodeSeparation-Element (Visual Studio-Vorlagen) | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: http://schemas.microsoft.com/developer/vstemplate/2005#SupportsCodeSeparation
+helpviewer_keywords:
+- SupportsCodeSeparation element [Visual Studio Templates]
+- <SupportsCodeSeparation> element [Visual Studio Templates]
 ms.assetid: 8112aac8-a269-40e5-b92b-9b9a6ff5a542
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: aa232e26309bf910ae4c19a9ebb2006b2ef2f7c6
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# SupportsCodeSeparation-Element (Visual Studio-Vorlagen)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Gibt an, ob das Kontrollkästchen **Code in eigener Datei platzieren** im Dialogfeld **Neues Element hinzufügen** aktiviert ist.  
+# <a name="supportscodeseparation-element-visual-studio-templates"></a>SupportsCodeSeparation-Element (Visual Studio-Vorlagen)
+Gibt an, und zwar unabhängig davon, ob die **fügen Sie Code in separate Datei** Kontrollkästchen in aktiviert ist die **neues Element hinzufügen** (Dialogfeld).  
   
-## Syntax  
+ \<VSTemplate >  
+ \<TemplateData >  
+ \<SupportsCodeSeparation >  
+  
+## <a name="syntax"></a>Syntax  
   
 ```  
 <SupportsCodeSeparation> true/false </SupportsCodeSeparation>  
 ```  
   
-## Attribute und Elemente  
- In den folgenden Abschnitten werden Attribute, untergeordnete Elemente und übergeordnete Elemente beschrieben.  
+## <a name="attributes-and-elements"></a>Attribute und Elemente  
+ In den folgenden Abschnitten werden attribute-Elemente sowie untergeordnete und übergeordnete Elemente beschrieben.  
   
-### Attribute  
+### <a name="attributes"></a>Attribute  
  Keine.  
   
-### Untergeordnete Elemente  
- Keine.  
+### <a name="child-elements"></a>Untergeordnete Elemente  
+ Keine  
   
-### Übergeordnete Elemente  
+### <a name="parent-elements"></a>Übergeordnete Elemente  
   
-|Element|Description|  
+|Element|Beschreibung|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Erforderliches Element.<br /><br /> Kategorisiert die Vorlage und definiert, wie diese in den Dialogfeldern **Neues Projekt** oder **Neues Element** angezeigt wird.|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Erforderliches Element.<br /><br /> Kategorisiert die Vorlage und definiert, wie es in beiden angezeigt der **neues Projekt** oder **neues Element** (Dialogfeld).|  
   
-## Textwert  
+## <a name="text-value"></a>Textwert  
  Ein Textwert ist erforderlich.  
   
- Der Text muss `true` oder `false` lauten. Dadurch wird angegeben, ob das Kontrollkästchen **Code in eigener Datei platzieren** im Dialogfeld **Neues Element hinzufügen** aktiviert ist oder nicht.  
+ Der Text muss entweder `true` oder `false`gibt an, fest, ob die **Code in separaten Datei platzieren** das Kontrollkästchen aktiviert ist, der **neues Element hinzufügen** (Dialogfeld).  
   
-## Hinweise  
- `SupportsCodeSeparation` ist ein optionales Element.  Der Standardwert ist `false`.  
+## <a name="remarks"></a>Hinweise  
+ `SupportsCodeSeparation` ist ein optionales Element. Der Standardwert ist `false`.  
   
- Das `SupportsCodeSeparation`\-Element ist nur für Webelementvorlagen verfügbar.  
+ Die `SupportsCodeSeparation` Element ist nur für Elementvorlagen Web verfügbar.  
   
- Die Codetrennung oder das Code\-Behind\-Seitenmodell ermöglichen es Ihnen, Markup\- und Programmiercode auf zwei verschiedene Dateien zu verteilen.  Dieses Modell wird von [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] und anderen .NET\-Sprachen verwendet.  
+ Getrenntem Code oder der Code-Behind-Seitenmodell können Sie das Markup in eine Datei und den Programmcode in einer anderen Datei beibehalten. [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]und anderen dieses Modell verwendet.  
   
-## Beispiel  
- Im folgenden Beispiel wird festgelegt, dass die Option **Code in eigener Datei platzieren** angezeigt wird.  
+## <a name="example"></a>Beispiel  
+ Im folgenden Beispiel wird zum Anzeigen der **fügen Sie Code in separate Datei** Option.  
   
 ```  
 <VSTemplate Version="3.0.0" Type="Project"  
@@ -82,6 +87,6 @@ Gibt an, ob das Kontrollkästchen **Code in eigener Datei platzieren** im Dialog
 </VSTemplate>  
 ```  
   
-## Siehe auch  
- [Schemareferenz zu Visual Studio\-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)   
- [Erstellen von benutzerdefinierten Projekt\- und Elementvorlagen](../ide/creating-project-and-item-templates.md)
+## <a name="see-also"></a>Siehe auch  
+ [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)   
+ [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)

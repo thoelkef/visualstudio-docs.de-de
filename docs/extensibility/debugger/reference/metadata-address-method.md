@@ -1,69 +1,69 @@
 ---
-title: "METADATA_ADDRESS_METHOD | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "METADATA_ADDRESS_METHOD"
-helpviewer_keywords: 
-  - "METADATA_ADDRESS_METHOD-Struktur"
+title: METADATA_ADDRESS_METHOD | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: METADATA_ADDRESS_METHOD
+helpviewer_keywords: METADATA_ADDRESS_METHOD structure
 ms.assetid: fc0e5370-1b4f-4867-837f-0d63c4b9dd09
-caps.latest.revision: 6
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 6
+caps.latest.revision: "6"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: d94087b9408afcc82dda8715faa643fa4f348cf0
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# METADATA_ADDRESS_METHOD
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Diese Struktur enthält die Adresse einer Methode einer Klasse dar.  
+# <a name="metadataaddressmethod"></a>METADATA_ADDRESS_METHOD
+Diese Struktur stellt die Adresse einer Methode einer Klasse dar.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```cpp  
 typedef struct _tagMETADATA_ADDRESS_METHOD {  
-   _mdToken tokMethod;  
-   DWORD    dwOffset;  
-   DWORD    dwVersion;  
+   _mdToken tokMethod;  
+   DWORD    dwOffset;  
+   DWORD    dwVersion;  
 } METADATA_ADDRESS_METHOD;  
 ```  
   
-```c#  
+```csharp  
 public struct METADATA_ADDRESS_METHOD {  
-   public int  tokMethod;  
-   public uint dwOffset;  
-   public uint dwVersion;  
+   public int  tokMethod;  
+   public uint dwOffset;  
+   public uint dwVersion;  
 }  
 ```  
   
-## Ausdrücke  
+## <a name="terms"></a>Begriffe  
  tokMethod  
  Die ID der Methode.  
   
- \[C\+\+\] `_mdToken``typedef` für 32\-Bit\- `int`.  
+ [C++] `_mdToken` ist ein `typedef` für 32-Bit- `int`.  
   
  dwOffset  
- Der Offset vom Klassen, wobei dieser Methode \(kann den Offset in der vtable darstellen\).  
+ Der Offset vom Beginn Klasse an diese Methode (kann den Offset in die Vtable darstellen).  
   
  dwVersion  
- Die Version der Methode \(dieser Wert entspricht dem Symbol für eindeutig\).  
+ Die Version der Methode (dieser Wert ist nur für die Symbol-Anbieter).  
   
-## Hinweise  
- Diese Struktur ist Teil der Union in der [DEBUG\_ADDRESS\_UNION](../../../extensibility/debugger/reference/debug-address-union.md) Struktur, wenn das `dwKind` Feld der `DEBUG_ADDRESS_UNION` Struktur in `ADDRESS_KIND_METHOD` festgelegt wird \(ein Wert aus der [ADDRESS\_KIND](../../../extensibility/debugger/reference/address-kind.md)\-Enumeration\).  
+## <a name="remarks"></a>Hinweise  
+ Diese Struktur ist Teil der Union der [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) Struktur, wenn die `dwKind` Feld der `DEBUG_ADDRESS_UNION` Struktur auf festgelegt ist `ADDRESS_KIND_METHOD` (ein Wert aus der [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) die Enumeration).  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  Header: sh.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Strukturen und Unions](../../../extensibility/debugger/reference/structures-and-unions.md)   
- [DEBUG\_ADDRESS\_UNION](../../../extensibility/debugger/reference/debug-address-union.md)   
- [ADDRESS\_KIND](../../../extensibility/debugger/reference/address-kind.md)
+ [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)   
+ [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)

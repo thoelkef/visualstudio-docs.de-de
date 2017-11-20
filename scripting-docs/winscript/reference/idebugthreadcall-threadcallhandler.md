@@ -1,27 +1,30 @@
 ---
-title: "IDebugThreadCall::ThreadCallHandler | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IDebugThreadCall::ThreadCallHandler | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IDebugThreadCall.ThreadCallHandler
 apilocation: jscript.dll
-helpviewer_keywords: 
-  - "IDebugThreadCall::ThreadCallHandler"
+helpviewer_keywords: IDebugThreadCall::ThreadCallHandler
 ms.assetid: c6d5d9db-bfed-44ec-90bc-46637f7de0ab
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: e2b7a22026090c8b3b8b7ded4c960ebf92689cd4
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# IDebugThreadCall::ThreadCallHandler
-Handleaufrufe um Code in einem anderen Thread.  
+# <a name="idebugthreadcallthreadcallhandler"></a>IDebugThreadCall::ThreadCallHandler
+Aufrufe zum Ausführen von Code in einem anderen Thread verarbeitet.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 HRESULT ThreadCallHandler(  
@@ -31,27 +34,27 @@ HRESULT ThreadCallHandler(
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `dwParam1`  
- \[in\] Der erste Parameter.  
+ [in] Der erste Parameter.  
   
  `dwParam2`  
- \[in\] Der zweite Parameter.  
+ [in] Der zweite Parameter.  
   
  `dwParam3`  
- \[in\] Der dritte Parameter.  
+ [in] Der dritte Parameter.  
   
-## Rückgabewert  
- Die Methode gibt ein `HRESULT` zurück.  Zu den möglichen Werten zählen, aber nicht zu, die in der folgenden Tabelle beschränkt.  
+## <a name="return-value"></a>Rückgabewert  
+ Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
   
-|Wert|Description|  
-|----------|-----------------|  
+|Wert|Beschreibung|  
+|-----------|-----------------|  
 |`S_OK`|Die Methode war erfolgreich.|  
   
-## Hinweise  
- Diese Methode behandelt Aufrufe, um Code im Debuggerthread auszuführen.  
+## <a name="remarks"></a>Hinweise  
+ Diese Methode behandelt, Aufrufen von Code im Debuggerthread ausgeführt wird.  
   
-## Siehe auch  
- [IDebugThreadCall\-Schnittstelle](../../winscript/reference/idebugthreadcall-interface.md)   
+## <a name="see-also"></a>Siehe auch  
+ [IDebugThreadCall-Schnittstelle](../../winscript/reference/idebugthreadcall-interface.md)   
  [IDebugApplication::SynchronousCallInDebuggerThread](../../winscript/reference/idebugapplication-synchronouscallindebuggerthread.md)   
  [IDebugApplicationThread::SynchronousCallIntoThread](../../winscript/reference/idebugapplicationthread-synchronouscallintothread.md)

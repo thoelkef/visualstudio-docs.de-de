@@ -1,30 +1,31 @@
 ---
-title: "Toolfenster in der Registrierung | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Toolfenster, registrieren"
+title: Toolfenster in der Registrierung | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: tool windows, registering
 ms.assetid: c4bb8add-7148-49e4-a377-01d059fd5524
-caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 38b4415a24a7440a2d3725fb1183863e7a337bbb
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Toolfenster in der Registrierung
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-VSPackages die Toolfenster angeben, muss mit [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Toolfenster als Anbieter registrieren.  Die Toolfenster, die erstellt werden, indem sie die Vorlage Visual Studio\-Paket hierfür verwenden standardmäßig.  Toolfenster Systemregistrierungs Anbieter haben, die von Sichtbarkeits Attribute, z. B. Toolfenster Standard Größe und Position, die GUID des Fensters, das als Tool und dient fensterbereich durch Andocken des Stils angeben.  
+# <a name="tool-windows-in-the-registry"></a>Toolfenster in der Registrierung
+VSPackages, die Toolfenster bereitstellen müssen bei registrieren [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] als tool Anbietern für Fenster. Toolfenster, die mithilfe der Visual Studio-Paketvorlage erstellt dazu standardmäßig. Tool-Fenster-Anbieter haben Systemregistrierungsschlüssel, die Sichtbarkeitsattribute, z. B. Standardgröße Tool-Fenster und die Position der GUID des Fensters, das als Toolfensterbereich und andockstil dient angeben.  
   
- Während der Entwicklung verwalteter Toolfenster für das Tool register Fenster durch Hinzufügen von Attributen zu Quellcode, und das RegPkg.exe\-Hilfsprogramm in der resultierenden Assembly anschließend ausführen.  Weitere Informationen finden Sie unter [Registrieren ein Toolfenster](../extensibility/registering-a-tool-window.md).  
+ Während der Entwicklung registrieren verwalteten Tool Fenster Anbieter Toolfenster durch Hinzufügen von Attributen zum Quellcode, und klicken Sie dann das RegPkg.exe-Dienstprogramm für die resultierende Assembly ausführen. Weitere Informationen finden Sie unter [registrieren ein Toolfenster](../extensibility/registering-a-tool-window.md).  
   
-## Nicht verwaltete Tool\-Fenster\-Anbieter registrieren  
- Nicht verwaltete Anbieter müssen mit [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Toolfenster im Toolfenster der Systemregistrierung registrieren.  Im Folgenden .reg\-Datei fragment zeigt, wie ein dynamisches Toolfenster registriert sein könnte:  
+## <a name="registering-unmanaged-tool-window-providers"></a>Registrieren von Anbietern für nicht verwalteten Tool-Fenster  
+ Nicht verwaltete Tool Fenster Anbieter müssen bei registrieren [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] im Abschnitt ToolWindows der systemregistrierung. Das folgende Fragment einer REG-Datei zeigt, wie eine dynamische Toolfenster registriert werden kann:  
   
 ```  
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\<version number>\ToolWindows\{f0e1e9a1-9860-484d-ad5d-367d79aabf55}]  
@@ -37,9 +38,9 @@ VSPackages die Toolfenster angeben, muss mit [!INCLUDE[vsprvs](../code-quality/i
 "{f1536ef8-92ec-443c-9ed7-fdadf150da82}"=dword:00000000  
 ```  
   
- In der ersten Schlüssel im Beispiel oben wurde Versionsnummer der Version von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], z. B. 7.1 oder 8.0, der Unterschlüssel {f0e1e9a1\-9860\-484d\-ad5d\-367d79aabf55} ist die GUID des fensterbereichs Tool \(DynamicWindowPane\), und der Standardwert " {} " ist die GUID 01069cdd\-95ce\-4620\-ac21\-ddff6c57f012 VSPackages, das das Toolfenster bereitstellt.  Eine Erläuterung der Gleitkomma\- und DontForceCreate\-Unterschlüssel finden Sie unter [Tool\-Fenster Anzeigekonfiguration](../extensibility/tool-window-display-configuration.md).  
+ In den ersten Schlüssel im obigen Beispiel, ist die Versionsnummer die Version des [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], z. B. 7.1 oder 8.0, den Unterschlüssel {f0e1e9a1-9860-484d-ad5d-367d79aabf55} ist die GUID der Toolfensterbereich (DynamicWindowPane) und der standardmäßige Wert {} 01069cdd-95ce-4620-Ac21-ddff6c57f012} ist die GUID des VSPackage das Toolfenster bereitstellen. Eine Erläuterung der Unterschlüssel "float" und DontForceCreate, finden Sie unter [Tool Fenster Anzeigekonfiguration](../extensibility/tool-window-display-configuration.md).  
   
- Die zweite optionale Schlüssel Toolfenster \\ Sichtbarkeit, gibt die GUID der Befehle an, die das Toolfenster sichtbar gemacht werden müssen.  In diesem Fall gibt es keine angegebenen Befehle.  Weitere Informationen finden Sie unter [Tool\-Fenster Anzeigekonfiguration](../extensibility/tool-window-display-configuration.md).  
+ Der zweite optionale Schlüssel ToolWindows\Visibility, gibt die GUIDs der Befehle, die erfordern das Toolfenster sichtbar gemacht werden sollen. In diesem Fall keine angegebenen Befehle vorhanden sind. Weitere Informationen finden Sie unter [Tool Fenster Anzeigekonfiguration](../extensibility/tool-window-display-configuration.md).  
   
-## Siehe auch  
- [Grundlegendes zu VSPackages](../misc/vspackage-essentials.md)
+## <a name="see-also"></a>Siehe auch  
+ [VSPackages](../extensibility/internals/vspackages.md)

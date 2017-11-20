@@ -4,34 +4,19 @@ ms.custom:
 ms.date: 04/26/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 3e893949-6398-42f1-9eab-a8d8c2b7f02d
-caps.latest.revision: 7
+caps.latest.revision: "7"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Machine Translation
-ms.sourcegitcommit: 9524ecc3cadef58821fba857de8e82e59eea9b43
-ms.openlocfilehash: 185fc30458fed4303eb0cf6d59b5e6784840f89e
-ms.contentlocale: de-de
-ms.lasthandoff: 05/04/2017
-
+ms.openlocfilehash: 3e06a3e89b69b2b69a97c4deb2d68d98913f6e03
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="common-control-patterns-for-visual-studio"></a>Allgemeine Steuerelementmuster für Visual Studio
 ##  <a name="BKMK_CommonControls"></a>Allgemeine Steuerelemente  
@@ -88,9 +73,9 @@ Als erstes beim Formatieren von Steuerelementen berücksichtigt wird, ob die Ste
   
 -   Eingabefelder sollte angepasst werden, um den Inhalt nicht auf die Breite des Fensters in der sie angezeigt werden, noch die Zeitdauer in einem langen Feld, z. B. einen Pfad nach dem Zufallsprinzip entsprechend anpassen. Länge möglicherweise ein Hinweis darauf sein, die dem Benutzer Einschränkungen hinsichtlich der Anzahl der Zeichen in das Feld zulässig sind.  
   
-     ![Falsche Eingabe Feldlänge: Es ist unwahrscheinlich, dass der Name diesem lang kann.](../../extensibility/ux-guidelines/media/0707-01_incorrectinputfieldcontrol.png "0707-01_IncorrectInputFieldControl")<br />Falsche Eingabe Feldlänge: Es ist unwahrscheinlich, dass der Name diesem lang kann.
+     ![Falsche Eingabe Feldlänge: Es ist unwahrscheinlich, dass der Name diesem lang kann. ] (../../extensibility/ux-guidelines/media/0707-01_incorrectinputfieldcontrol.png "0707 01_IncorrectInputFieldControl")<br />Falsche Eingabe Feldlänge: Es ist unwahrscheinlich, dass der Name diesem lang kann.
   
-     ![Beheben Sie die Eingabe der Feldlänge: das Eingabefeld ist eine angemessene Breite für den erwarteten Inhalt.](../../extensibility/ux-guidelines/media/0707-02_correctinputfieldcontrol.png "0707-02_CorrectInputFieldControl")<br />Beheben Sie die Eingabe der Feldlänge: das Eingabefeld ist eine angemessene Breite für den erwarteten Inhalt.
+     ![Beheben Sie die Eingabe der Feldlänge: das Eingabefeld ist eine angemessene Breite für den erwarteten Inhalt. ] (../../extensibility/ux-guidelines/media/0707-02_correctinputfieldcontrol.png "0707 02_CorrectInputFieldControl")<br />Beheben Sie die Eingabe der Feldlänge: das Eingabefeld ist eine angemessene Breite für den erwarteten Inhalt.
   
 ###  <a name="BKMK_ComboBoxesAndDropDowns"></a>Kombinationsfelder und Dropdown-Listen  
 Für typische Interaktionsverhalten, befolgen Sie die [Windows-Desktop-Richtlinien für Dropdownlisten und Kombinationsfelder](https://msdn.microsoft.com/en-us/library/windows/desktop/dn742404\(v=vs.85\).aspx).  
@@ -104,9 +89,9 @@ Für typische Interaktionsverhalten, befolgen Sie die [Windows-Desktop-Richtlini
 #### <a name="layout"></a>Layout  
 Kombinationsfelder und Dropdownlisten sollte angepasst werden, um den Inhalt nicht auf die Breite des Fensters in der sie angezeigt werden, noch die Zeitdauer in einem langen Feld, z. B. einen Pfad nach dem Zufallsprinzip entsprechend anpassen.  
   
-![Falsche: die Breite des Dropdown-Liste ist zu lang für den Inhalt, der angezeigt wird.](../../extensibility/ux-guidelines/media/0707-03_incorrectdropdownlayout.png "0707-03_IncorrectDropDownLayout")<br />Falsche: die Breite des Dropdown-Liste ist zu lang für den Inhalt, der angezeigt wird.
+![Falsche: die Breite des Dropdown-Liste ist zu lang für den Inhalt, der angezeigt wird. ] (../../extensibility/ux-guidelines/media/0707-03_incorrectdropdownlayout.png "0707 03_IncorrectDropDownLayout")<br />Falsche: die Breite des Dropdown-Liste ist zu lang für den Inhalt, der angezeigt wird.
   
-![Richtig: der Dropdown-ist die Größe kann Übersetzung anwachsen, aber nicht unnötig lange.](../../extensibility/ux-guidelines/media/0707-04_correctdropdownlayout.png "0707-04_CorrectDropDownLayout")<br />Richtig: der Dropdown-ist die Größe kann Übersetzung anwachsen, aber nicht unnötig lange. 
+![Richtig: der Dropdown-ist die Größe kann Übersetzung anwachsen, aber nicht unnötig lange. ] (../../extensibility/ux-guidelines/media/0707-04_correctdropdownlayout.png "0707 04_CorrectDropDownLayout")<br />Richtig: der Dropdown-ist die Größe kann Übersetzung anwachsen, aber nicht unnötig lange. 
   
 ###  <a name="BKMK_CheckBoxes"></a>Kontrollkästchen  
 Für typische Interaktionsverhalten, befolgen Sie die [Windows-Desktop-Richtlinien für Kontrollkästchen](https://msdn.microsoft.com/en-us/library/windows/desktop/dn742401\(v=vs.85\).aspx).  
@@ -123,9 +108,9 @@ Für typische Interaktionsverhalten, befolgen Sie die [Windows-Desktop-Richtlini
   
 -   Richten Sie Kontrollkästchen die Grundlinie der ersten Zeile des Texts an.  
   
-     ![Falsch: das Kontrollkästchen ist in der Text zentriert.](../../extensibility/ux-guidelines/media/0707-05_incorrectcheckboxalign.png "0707-05_IncorrectCheckBoxAlign")<br />Falsch: das Kontrollkästchen ist in der Text zentriert.
+     ![Falsch: das Kontrollkästchen ist in der Text zentriert. ] (../../extensibility/ux-guidelines/media/0707-05_incorrectcheckboxalign.png "0707 05_IncorrectCheckBoxAlign")<br />Falsch: das Kontrollkästchen ist in der Text zentriert.
   
-     ![Richtig: dieses Kontrollkästchen ist mit der ersten Zeile des Texts ausgerichtet.](../../extensibility/ux-guidelines/media/0707-06_correctcheckboxalign.png "0707-06_CorrectCheckBoxAlign")<br />Richtig: dieses Kontrollkästchen ist mit der ersten Zeile des Texts ausgerichtet.
+     ![Richtig: dieses Kontrollkästchen ist mit der ersten Zeile des Texts ausgerichtet. ] (../../extensibility/ux-guidelines/media/0707-06_correctcheckboxalign.png "0707 06_CorrectCheckBoxAlign")<br />Richtig: dieses Kontrollkästchen ist mit der ersten Zeile des Texts ausgerichtet.
   
 ###  <a name="BKMK_RadioButtons"></a>Optionsfelder  
 Für typische Interaktionsverhalten, befolgen Sie die [Windows-Desktop-Richtlinien für die Optionsfelder](https://msdn.microsoft.com/en-us/library/windows/desktop/dn742436\(v=vs.85\).aspx).  
@@ -160,11 +145,11 @@ Es gibt zwei Möglichkeiten zum Anzeigen von statischem Textinformationen.
 
 Statischer Text kann auf eine eigene in einem Dialog ohne Containment When keine Gruppierung Konflikt vorliegt. Entscheiden Sie, ob die zusätzlichen Zeilen eines Felds wirklich erforderlich sind. Ein Beispiel ist die Anzeige von einen Verzeichnispfad ein Abschnitt durch eine Gruppenlinie erstellt, wie unten dargestellt:  
 
-![Statischer Text Informationen im Text-Steuerelemente](~/extensibility/ux-guidelines/media/DisplayingStaticText.png "DisplayingStaticText.png")<br />Statischer Text Informationen im Text-Steuerelemente
+![Statischer Text Informationen in Textsteuerelemente](../../extensibility/ux-guidelines/media/DisplayingStaticText.png "DisplayingStaticText.png")<br />Statischer Text Informationen im Text-Steuerelemente
 
-In einem Dialogfeld, in dem anderen gruppierten Bereichen vorhanden und Kapselung der Informationen würden Lesbarkeit und wenn ein Abschnitt ausgeblendet oder angezeigt werden kann (wie in der **Fenster "Eigenschaften"** Beschreibungsbereich) oder mit ähnlichen Benutzeroberfläche konsistent sein, platzieren Sie den statischen Text in einem Feld werden sollen. Diese Gruppenfeld muss eine einzelne Regel und gefärbt, mit der `ButtonShadow`:
+In einem Dialogfeld, in dem anderen gruppierten Bereichen vorhanden und Kapselung der Informationen würden Lesbarkeit und wenn ein Abschnitt ausgeblendet oder angezeigt werden kann (wie in der **Fenster "Eigenschaften"** Beschreibungsbereich) oder mit ähnlichen Benutzeroberfläche konsistent sein sollen Platzieren Sie den statischen Text in einem Feld. Diese Gruppenfeld muss eine einzelne Regel und gefärbt, mit der `ButtonShadow`:
 
-![Statischer Text im Fenster Eigenschaften](~/extensibility/ux-guidelines/media/PropertiesWindow.png "PropertiesWindow.png")<br />Statischer Text im Fenster Eigenschaften
+![Statischer Text im Fenster Eigenschaften](../../extensibility/ux-guidelines/media/PropertiesWindow.png "PropertiesWindow.png")<br />Statischer Text im Fenster Eigenschaften
 
 ### <a name="read-only-text-box"></a>Nur-Lese Textfeld
 
@@ -172,7 +157,7 @@ Dies ermöglicht es dem Benutzer, wählen Sie den Text in das Feld jedoch nicht 
 
 Ein Textfeld kann aktiv (bearbeitet werden), wenn ein Benutzer eine zugeordnete Steuerelement, z. B. ein Kontrollkästchen aktivieren bzw. deaktivieren oder ein Optionsfeld auswählen/aufheben ändert. Z. B. in der **Tools &gt; Optionen** Seite unten die **Startseite** Textfeld wird aktiviert, wenn die **Standard verwenden** das Kontrollkästchen deaktiviert ist.
 
-![Nur-Lese Textfeld, inaktiven und den aktiven Status anzeigen](~/extensibility/ux-guidelines/media/ReadOnlyTextBox.png "ReadOnlyTextBox.png")<br />Nur-Lese Textfeld, inaktiven und den aktiven Status anzeigen
+![Nur-Lese Textfeld mit inaktiven und den aktiven Status](../../extensibility/ux-guidelines/media/ReadOnlyTextBox.png "ReadOnlyTextBox.png")<br />Nur-Lese Textfeld, inaktiven und den aktiven Status anzeigen
 
 ### <a name="using-text-in-dialogs"></a>Verwenden von Text in Dialogfeldern
 
@@ -219,7 +204,7 @@ Dialoge profitieren von etwas anderes Wasserzeichen Richtlinien. Da ein Dialogfe
 
 -   Wasserzeichen können linksbündig oder zentriert. Wenden Sie standard-Design-Regeln an, wenn Ausrichtung Entscheidungen zu treffen. Das Wasserzeichen kann nicht auf den Hintergrund ausgewählt werden.
 
-![Wasserzeichen Text (Beispiel)](~/extensibility/ux-guidelines/media/WatermarkTextExample.gif)<br />Wasserzeichen Text (Beispiel)
+![Wasserzeichen Text (Beispiel)](../../extensibility/ux-guidelines/media/WatermarkTextExample.gif)<br />Wasserzeichen Text (Beispiel)
 
 ### <a name="context-specific-dynamic-text"></a>Kontextspezifisch (dynamisch) text
 
@@ -262,11 +247,11 @@ Vermeiden Sie die Befehlsschaltflächen in Toolfenstern, oder wenn Sie mehr als 
 -   Deduplizierung Hervorhebungseffekt sekundäre Befehle in Situationen viele Befehle vorhanden sind  
   
 #### <a name="examples"></a>Beispiele  
-![Befehl Links in der Statusmeldung Infoleiste verwendet](../../extensibility/ux-guidelines/media/070703-01_commandlinkinfobar.png "070703-01_CommandLinkInfobar")<br />Befehl Links in der Statusmeldung Infoleiste verwendet
+![Links in der Statusmeldung Infoleiste verwendeten Befehl](../../extensibility/ux-guidelines/media/070703-01_commandlinkinfobar.png "070703 01_CommandLinkInfobar")<br />Befehl Links in der Statusmeldung Infoleiste verwendet
   
-![Links im CodeLens-popup](../../extensibility/ux-guidelines/media/070703-02_linksincodelens.png "070703-02_LinksInCodeLens")<br />Links im CodeLens-Popup
+![Links im CodeLens-Popup](../../extensibility/ux-guidelines/media/070703-02_linksincodelens.png "070703 02_LinksInCodeLens")<br />Links im CodeLens-Popup
   
-![Links zum sekundären Befehle Schaltflächen würden, in denen zu viel Aufmerksamkeit gewinnen.](../../extensibility/ux-guidelines/media/070703-03_linksassecondarycommands.png "070703-03_LinksAsSecondaryCommands")<br />Links zum sekundären Befehle Schaltflächen würden, in denen zu viel Aufmerksamkeit gewinnen.
+![Links für die sekundäre Befehle verwendet werden, in denen Schaltflächen zu viel Aufmerksamkeit gewinnen würde](../../extensibility/ux-guidelines/media/070703-03_linksassecondarycommands.png "070703 03_LinksAsSecondaryCommands")<br />Links zum sekundären Befehle Schaltflächen würden, in denen zu viel Aufmerksamkeit gewinnen.
   
 ### <a name="common-buttons"></a>Allgemeine Schaltflächen  
   
@@ -286,9 +271,9 @@ In einigen Fällen Schaltflächen mit formatierte Benutzeroberfläche verwendet 
 #### <a name="browse-buttons"></a>Durchsuchen von Schaltflächen  
 **[Durchsuchen...]**  Schaltflächen werden im Raster, Dialogfelder und Toolfenster sowie andere Elemente der Benutzeroberfläche nicht modalen verwendet. Sie zeigen eine Auswahl, die den Benutzer beim Ausfüllen der eines Werts in ein Steuerelement hilft. Es gibt zwei Varianten dieser Schaltfläche, die lange und kurze.  
   
-![Die lange [durchsuchen...]-Schaltfläche](../../extensibility/ux-guidelines/media/070703-04_browselong.gif "070703-04_BrowseLong")<br />Die lange [durchsuchen...]-Schaltfläche
+![Die lange [durchsuchen...] Schaltfläche](../../extensibility/ux-guidelines/media/070703-04_browselong.gif "070703 04_BrowseLong")<br />Die lange [durchsuchen...]-Schaltfläche
   
-![Die Schaltfläche mit den Auslassungspunkten nur kurze [...]](../../extensibility/ux-guidelines/media/070703-05_browseshort.gif "070703-05_BrowseShort")<br />Die Schaltfläche mit den Auslassungspunkten nur kurze [...]
+![Die Schaltfläche mit den Auslassungspunkten nur kurze [...]](../../extensibility/ux-guidelines/media/070703-05_browseshort.gif "070703 05_BrowseShort")<br />Die Schaltfläche mit den Auslassungspunkten nur kurze [...]
   
 Wenn Auslassungspunkte nur kurze Schaltfläche zu verwenden:  
   
@@ -307,9 +292,9 @@ Richtlinien für die Verwendung der Schaltfläche:
 -   Verwenden Sie niemals ein Auslassungszeichen **[...]**  Schaltfläche für nur eine Aktion "Durchsuchen". Angenommen, Sie müssen eine **[Neu]**  Schaltfläche, aber keine ausreichend Platz für den Text aus, und klicken Sie dann das Dialogfeld muss geändert werden.  
   
 ##### <a name="sizing-and-spacing"></a>Sizing und Abstand  
-![Schaltflächen [durchsuchen...] Größe: Standardversion beträgt 75 x 23 Pixel, Kurzversion 26 x 23 Pixel](../../extensibility/ux-guidelines/media/070703-06_browsesizing.png "070703-06_BrowseSizing")<br />Festlegen der Größe für Schaltfläche [Durchsuchen...]
+![Schaltflächen [durchsuchen...] Größe: Standardversion beträgt 75 x 23 Pixel, Kurzversion 26 x 23 Pixel](../../extensibility/ux-guidelines/media/070703-06_browsesizing.png "070703 06_BrowseSizing")<br />Festlegen der Größe für Schaltfläche [Durchsuchen...]
   
-![Zeilenabstand [durchsuchen...] Schaltflächen: Abstände zwischen den dazugehörigen Steuerelement und standard Durchsuchen-Schaltfläche 7 Pixel, Abstand zwischen den dazugehörigen Steuerelement, und navigieren Sie kurze Schaltfläche 5 Pixel.](../../extensibility/ux-guidelines/media/070703-07_browsespacing.png "070703-07_BrowseSpacing")<br />Festlegen der Abstände für Schaltfläche [Durchsuchen...]
+![Zeilenabstand [durchsuchen...] Schaltflächen: Abstände zwischen den dazugehörigen Steuerelement und standard Durchsuchen-Schaltfläche 7 Pixel, Abstand zwischen den dazugehörigen Steuerelement, und navigieren Sie kurze Schaltfläche 5 Pixel](../../extensibility/ux-guidelines/media/070703-07_browsespacing.png "070703 07_BrowseSpacing")<br />Festlegen der Abstände für Schaltfläche [Durchsuchen...]
   
 #### <a name="graphical-buttons"></a>Grafische Schaltflächen  
 Einige Schaltflächen sollten immer eine Grafik und nie enthalten Text zum Einsparen von Speicherplatz und Lokalisierung Probleme zu vermeiden. Diese werden häufig in Feld Bildlaufbereich und anderen sortierbaren Listen verwendet.  
@@ -321,7 +306,7 @@ Einige Schaltflächen sollten immer eine Grafik und nie enthalten Text zum Einsp
 | Hinzufügen | ![Grafische Schaltfläche ""Hinzufügen""](../../extensibility/ux-guidelines/media/070703-08_buttonadd.png "070703 08_ButtonAdd") |
 | Remove | ![Grafische Schaltfläche "Entfernen",](../../extensibility/ux-guidelines/media/070703-09_buttonremove.png "070703 09_ButtonRemove") |
 | Alle hinzufügen | ![Grafische Schaltfläche "Alle hinzufügen"](../../extensibility/ux-guidelines/media/070703-10_buttonaddall.png "070703 10_ButtonAddAll") |
-| Alle entfernen | ![Grafische Schaltfläche "Alle entfernen"](../../extensibility/ux-guidelines/media/070703-11_buttonremoveall.png "070703 11_ButtonRemoveAll") |
+| Entfernen Sie alle | ![Grafische Schaltfläche "Alle entfernen"](../../extensibility/ux-guidelines/media/070703-11_buttonremoveall.png "070703 11_ButtonRemoveAll") |
 | Nach oben | ![Grafische Schaltfläche "Nach oben"](../../extensibility/ux-guidelines/media/070703-12_buttonmoveup.png "070703 12_ButtonMoveUp") |
 | Nach unten | ![Grafische Schaltfläche "Nach unten"](../../extensibility/ux-guidelines/media/070703-13_buttonmovedown.png "070703 13_ButtonMoveDown") |
 | Löschen | ![Grafische Schaltfläche "Löschen",](../../extensibility/ux-guidelines/media/070703-14_buttondelete.png "070703 14_ButtonDelete") |
@@ -329,9 +314,9 @@ Einige Schaltflächen sollten immer eine Grafik und nie enthalten Text zum Einsp
 ##### <a name="sizing-and-spacing"></a>Sizing und Abstand  
 Ändern der Größe für grafische Schaltflächen genauso wie bei der Kurzversion des ist die **[durchsuchen...]**  Schaltfläche (26 x 23 Pixel):  
   
-![Darstellung der eine Grafik auf die Schaltfläche mit und ohne transparenter Farbe](../../extensibility/ux-guidelines/media/070703-15_graphicalbuttonspacing.png "070703-15_GraphicalButtonSpacing")<br />Darstellung der eine Grafik auf die Schaltfläche mit und ohne transparenter Farbe
+![Darstellung der eine Grafik auf die Schaltfläche mit und ohne transparenter Farbe](../../extensibility/ux-guidelines/media/070703-15_graphicalbuttonspacing.png "070703 15_GraphicalButtonSpacing")<br />Darstellung der eine Grafik auf die Schaltfläche mit und ohne transparenter Farbe
   
-### <a name="hyperlinks"></a>Links  
+### <a name="hyperlinks"></a>Hyperlinks  
 Hyperlinks eignen sich gut für die Navigation basierende Aktionen, wie das Öffnen eines Hilfethemas, modales Dialogfeld, oder eines Assistenten. Ein Link für einen Befehl verwendet wird, sollten sie immer eine sichtbare und merkliche Änderung zu der Benutzeroberfläche angezeigt. Im Allgemeinen werden Aktionen, die Commits für eine Aktion (z. B. speichern, auf "Abbrechen", und löschen) besser übermittelt mithilfe einer Schaltfläche.  
   
 #### <a name="writing-style"></a>Handschrift  
@@ -354,16 +339,16 @@ Strukturansichten bieten eine Möglichkeit zum Organisieren von komplexen in üb
 #### <a name="expanders"></a>Erweiterungen  
 Strukturansicht-Steuerelemente sollten der Expander-Entwurf von Windows und Visual Studio verwendet, entsprechen. Jeder Knoten verwendet ein Expandersteuerelement zum Anzeigen oder Ausblenden von zugrunde liegenden Elementen. Verwenden ein Expandersteuerelement wird die Konsistenz für Benutzer, die verschiedene Strukturansichten in Windows und Visual Studio auftreten können.  
   
-![Richtig: ordnungsgemäßes Format von Strukturansichtsknoten verwenden ein Expandersteuerelement](../../extensibility/ux-guidelines/media/070705-1_treeviewcorrect.png "070705-1_TreeViewCorrect")<br />Richtig: ordnungsgemäßes Format von Strukturansichtsknoten verwenden ein Expandersteuerelement
+![Richtig: ordnungsgemäßes Format von Strukturansichtsknoten ein Expandersteuerelement mit](../../extensibility/ux-guidelines/media/070705-1_treeviewcorrect.png "070705 1_TreeViewCorrect")<br />Richtig: ordnungsgemäßes Format von Strukturansichtsknoten verwenden ein Expandersteuerelement
   
-![Falsche: falsches Format des Strukturansichtsknoten](../../extensibility/ux-guidelines/media/070705-2_treeviewincorrect1.png "070705-2_TreeViewIncorrect1")<br />Falsche: falsches Format des Strukturansichtsknoten
+![Falsche: falsches Format des Strukturansichtsknoten](../../extensibility/ux-guidelines/media/070705-2_treeviewincorrect1.png "070705 2_TreeViewIncorrect1")<br />Falsche: falsches Format des Strukturansichtsknoten
   
 #### <a name="selection"></a>Auswahl  
 Wenn ein Knoten in der Strukturansicht ausgewählt ist, sollte die Markierung auf die gesamte Breite des Strukturansicht-Steuerelement erweitert. Es hilft Benutzern, welches Element eindeutig sie ausgewählt haben. Die aktuelle Visual Studio-Designs sollten Auswahl Farben berücksichtigt werden.  
   
-![Richtig: Hervorheben des ausgewählten Knotens passt die gesamte Breite des Strukturansicht-Steuerelement.](../../extensibility/ux-guidelines/media/070705-1_treeviewcorrect.png "070705-1_TreeViewCorrect")<br />Richtig: Hervorheben des ausgewählten Knotens passt die gesamte Breite des Strukturansicht-Steuerelement.
+![Richtig: Hervorheben des ausgewählten Knotens passt die gesamte Breite des Strukturansicht-Steuerelement. ] (../../extensibility/ux-guidelines/media/070705-1_treeviewcorrect.png "070705 1_TreeViewCorrect")<br />Richtig: Hervorheben des ausgewählten Knotens passt die gesamte Breite des Strukturansicht-Steuerelement.
   
-![Falsche: Hervorheben des ausgewählten Knotens passt nicht die gesamte Breite des Strukturansicht-Steuerelement.](../../extensibility/ux-guidelines/media/070705-3_treeviewincorrect2.png "070705-3_TreeViewIncorrect2")<br />Falsche: Hervorheben des ausgewählten Knotens passt nicht die gesamte Breite des Strukturansicht-Steuerelement.
+![Falsche: Hervorheben des ausgewählten Knotens passt nicht die gesamte Breite des Strukturansicht-Steuerelement. ] (../../extensibility/ux-guidelines/media/070705-3_treeviewincorrect2.png "070705 3_TreeViewIncorrect2")<br />Falsche: Hervorheben des ausgewählten Knotens passt nicht die gesamte Breite des Strukturansicht-Steuerelement.
   
 #### <a name="icons"></a>Symbole  
 Symbole sollte nur in der Strukturansicht-Steuerelemente verwendet werden, wenn sie bei der Unterschiede zwischen Elementen visuell identifizieren. Symbole sollte im Allgemeinen nur in heterogenen Listen verwendet werden in denen die Symbole Informationen zum unterscheiden der Typen von Elementen ausführen. In einer homogenen Liste mit Symbolen kann häufig als Füllwörter betrachtet werden und sollte vermieden werden. In diesem Fall kann das Symbol "Gruppe" (übergeordneten) den Typ der Elemente im übermitteln. Die Ausnahme zu dieser Regel wäre, wenn das Symbol dynamisch ist und zur Angabe des Status dient.  
@@ -371,14 +356,14 @@ Symbole sollte nur in der Strukturansicht-Steuerelemente verwendet werden, wenn 
 #### <a name="scroll-bars"></a>Bildlaufleisten  
 Bildlaufleisten sollten immer ausgeblendet werden, wenn der Inhalt in der Strukturansicht-Steuerelement passt. Es ist ausgeblendet oder halbtransparente in einem bildlauffähigen Fenster und angezeigt werden, wenn das Fenster mit der Strukturansicht den Fokus besitzt, oder bei Hover der Struktur anzeigen, selbst für Bildlaufleisten akzeptabel.  
   
-![Sowohl vertikale und horizontale Bildlaufleisten werden angezeigt, da der Inhalt die Grenzen des Strukturansicht-Steuerelements überschritten haben.](../../extensibility/ux-guidelines/media/070705-4_scrollbars.png "070705-4_Scrollbars")<br />Sowohl vertikale und horizontale Bildlaufleisten werden angezeigt, da der Inhalt die Grenzen des Strukturansicht-Steuerelements überschritten haben.
+![Sowohl vertikale und horizontale Bildlaufleisten werden angezeigt, da der Inhalt die Grenzen des Strukturansicht-Steuerelements überschritten haben. ] (../../extensibility/ux-guidelines/media/070705-4_scrollbars.png "070705 4_Scrollbars")<br />Sowohl vertikale und horizontale Bildlaufleisten werden angezeigt, da der Inhalt die Grenzen des Strukturansicht-Steuerelements überschritten haben.
   
 ###  <a name="BKMK_TreeViewInteractions"></a>Struktur anzeigen Interaktionen  
   
 #### <a name="context-menus"></a>Kontextmenüs  
 Knoten einer Strukturansicht kann im Untermenü Optionen in einem Kontextmenü offenlegen. Das tritt in der Regel auf, wenn ein Benutzer ein Element mit der rechten Maustaste, oder drücken die Menütaste auf einer Windows-Tastatur, mit das ausgewählte Element. Es ist wichtig, dass der Knoten den Fokus erhält, und aktiviert ist. Dadurch wird den Benutzer ermitteln, welches Element zu Untermenü gehört.  
   
-![Das Element, das dem Fokus Kontext Menü Gewinne, um Benutzer zu benachrichtigen, welches Element generiert wurde, wurde ausgewählt.](../../extensibility/ux-guidelines/media/070705-5_contextmenu.png "070705-5_ContextMenu")<br />Das Element, das dem Fokus Kontext Menü Gewinne, um Benutzer zu benachrichtigen, welches Element generiert wurde, wurde ausgewählt.
+![Das Element, das dem Fokus Kontext Menü Gewinne, um Benutzer zu benachrichtigen, welches Element generiert wurde, wurde ausgewählt. ] (../../extensibility/ux-guidelines/media/070705-5_contextmenu.png "070705 5_ContextMenu")<br />Das Element, das dem Fokus Kontext Menü Gewinne, um Benutzer zu benachrichtigen, welches Element generiert wurde, wurde ausgewählt.
   
 #### <a name="keyboard"></a>Tastatur  
 Die Strukturansicht sollte die Möglichkeit, Elemente auswählen, und Erweitern/Reduzieren von Knoten mithilfe der Tastatur bereitzustellen. Dadurch wird sichergestellt, dass Navigation unsere Eingabehilfen-Anforderungen erfüllt.  
@@ -405,4 +390,4 @@ Ein Rastersteuerelement ist ein komplexes Steuerelement, das eine Strukturansich
   
 -   **Umschalt + Tab:** Werkzeug dient zum Navigieren, auf die nächste Zelle auf der linken Seite.  Navigation weiterhin am Anfang der Zeile, aus der äußersten rechten Zelle in der vorherigen Zeile.  
   
-![Ein Rastersteuerelement in Visual Studio](../../extensibility/ux-guidelines/media/070705-6_trid.png "070705-6_Trid")<br />Ein Rastersteuerelement in Visual Studio
+![Ein Rastersteuerelement in Visual Studio](../../extensibility/ux-guidelines/media/070705-6_trid.png "070705 6_Trid")<br />Ein Rastersteuerelement in Visual Studio

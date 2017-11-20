@@ -1,59 +1,60 @@
 ---
-title: "Gewusst wie: &#214;ffnen von Editoren f&#252;r ge&#246;ffnete Dokumente | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Editoren [Visual Studio SDK] für geöffnete Dokumente öffnen"
+title: "Vorgehensweise: Öffnen von Editoren für geöffnete Dokumente | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: editors [Visual Studio SDK], opening for open documents
 ms.assetid: 1a0fa49c-efa4-4dcc-bdc0-299b7052acdc
-caps.latest.revision: 13
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: dfd145281a467a23cd01d73ff04721d68580254e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Gewusst wie: &#214;ffnen von Editoren f&#252;r ge&#246;ffnete Dokumente
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Bevor ein Projekt ein Dokumentfenster geöffnet wird, muss das Projekt zuerst ermitteln, ob die Datei bereits im Dokumentfenster für einen anderen Editor geöffnet ist.  Die Datei kann entweder als öffnen in einem projektspezifischen Editor oder einem der Standardwert editoren, die mit [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]registriert werden.  
+# <a name="how-to-open-editors-for-open-documents"></a>Vorgehensweise: Öffnen von Editoren für geöffnete Dokumente
+Bevor Sie ein Projekt mit einem Dokumentfenster geöffnet wird, muss das Projekt zuerst feststellen, ob die Datei bereits im Dokumentfenster für einen anderen Editor geöffnet ist. Datei kann es sich entweder in einem projektspezifischen-Editor zu öffnen, oder eine der standard-Editoren registriert [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
-## Wenn Sie einen projektspezifischen Editor öffnen  
- Führen Sie die folgenden Schritte aus, um einen projektspezifischen Editor für eine Datei zu öffnen, die bereits geöffnet ist.  
+## <a name="opening-a-project-specific-editor"></a>Öffnen einen projektspezifische-Editor  
+ Verwenden Sie das folgende Verfahren, um eine projektspezifische-Editor für eine Datei zu öffnen, die bereits geöffnet ist.  
   
-#### So fügen Sie einen projektspezifischen Editor für eine offene Datei öffnen  
+#### <a name="to-open-a-project-specific-editor-for-an-open-file"></a>So öffnen einen projektspezifische-Editor für eine geöffnete Datei  
   
-1.  Rufen Sie die <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.IsDocumentOpen%2A>\-Methode auf.  
+1.  Rufen Sie die <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.IsDocumentOpen%2A>-Methode auf.  
   
-     Dieses Rückkehraufruf des Dokuments Zeiger, um Hierarchien der Hierarchie " \- Element und dem Fensterrahmen, falls erforderlich.  
+     Dieser Aufruf gibt Zeiger an des Dokuments Hierarchie Hierarchieelement und Fensterrahmen, zurück, falls zutreffend.  
   
-2.  Wenn das Dokument geöffnet ist, muss das Projekt untersuchen, um festzustellen, ob nur ein Dokument das angegebene Channeldatenobjekt vorhanden ist oder wenn die Dokumente auch ein Objekt vorhanden ist.  
+2.  Wenn das Dokument geöffnet ist, muss das Projekt überprüfen, um festzustellen, ob ein dokumentdatenobjekt vorhanden ist oder wenn ein Dokument Ansichtsobjekt auch vorhanden ist.  
   
-    -   Wenn ein Objekt vorhanden ist und die Dokumente für diese Ansicht einer anderen Hierarchie oder Hierarchien element ist, verwendet das Projekt den Zeiger auf den Fensterrahmen der Ansicht, um das vorhandene Fenster wieder aufzukommen.  
+    -   Ein Document-Objekt vorhanden ist und in dieser Ansicht wird für eine andere Hierarchie oder Hierarchieelement, verwendet das Projekt den Zeiger auf die Sicht Fensterrahmen zum vorhandene Fenster diesem an.  
   
-    -   Wenn ein Objekt vorhanden ist und die Dokumente für diese Ansicht der gleichen Hierarchie und Hierarchien " \- Element wurde, kann das Projekt eine zweite Ansicht öffnen, wenn es an das zugrunde liegende Dokument das angegebene Channeldatenobjekt angefügt werden kann.  Andernfalls sollte das Projekt den Zeiger auf den Fensterrahmen der Ansicht verwenden, um das vorhandene Fenster wieder aufzukommen.  
+    -   Ein Document-Objekt vorhanden ist und in dieser Ansicht wird für die gleiche Hierarchie und Hierarchieelement, können das Projekt eine zweite Ansicht öffnen, wenn es an das zugrunde liegende Datenobjekt von Dokument anfügen kann. Verwenden Sie andernfalls sollte das Projekt den Zeiger auf die Sicht Fensterrahmen zum vorhandene Fenster diesem.  
   
-    -   Wenn nur das Dokument das angegebene Channeldatenobjekt vorhanden ist, muss das Projekt bestimmen, ob das Dokument das angegebene Channeldatenobjekt für die Ansicht verwendet werden kann.  Wenn das Dokument das angegebene Channeldatenobjekt kompatibel ist, führen Sie die Schritte aus, die in [Wenn Sie einen projektspezifischen Editor öffnen](../extensibility/how-to-open-project-specific-editors.md)erläutert werden.  
+    -   Wenn nur das dokumentdatenobjekt vorhanden ist, sollte das Projekt ermitteln, ob das dokumentdatenobjekt für die Ansicht verwendet werden können. Wenn das dokumentdatenobjekt kompatibel ist, vollständige die Schritte im erläutert [öffnen eine projektspezifische-Editors](../extensibility/how-to-open-project-specific-editors.md).  
   
-     Wenn das Dokument das angegebene Channeldatenobjekt nicht kompatibel ist, sollte ein Fehler angezeigt werden, der angibt, dass die Datei gerade verwendet wird.  Dieser Fehler wird in den flüchtigen Fällen, z. B. nur angezeigt, wenn eine Datei gleichzeitig ein Benutzer versucht, die Datei zu öffnen kompiliert wird, indem Sie einen anderen als den Editor [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Kern text\-editor verwendet.  Der Kern text\-editor das angegebene Channeldatenobjekt Dokumenten kann mit dem Compiler freigeben.  
+     Wenn das dokumentdatenobjekt nicht kompatibel ist, sollte ein Fehler für den Benutzer angezeigt werden, der angibt, dass die Datei zurzeit verwendet wird. Dieser Fehler sollte nur in vorübergehender Fällen angezeigt werden, z. B. beim Kompilieren einer Datei zur gleichen Zeit der Benutzer versucht, die Datei zu öffnen, mithilfe eines Editors außer der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Core Text-Editor. Die Core-Text-Editor kann der Compiler dokumentdatenobjekt freigeben.  
   
-3.  Wenn das Dokument nicht geöffnet ist, weil kein Dokument oder das angegebene Channeldatenobjekt die Dokumente Objekt vorhanden ist, führen Sie die Schritte in [Wenn Sie einen projektspezifischen Editor öffnen](../extensibility/how-to-open-project-specific-editors.md)ab.  
+3.  Wenn das Dokument nicht geöffnet ist, da keine dokumentdatenobjekt oder dokumentansichtsobjekts vorhanden ist, führen Sie die Schritte in [öffnen eine projektspezifische-Editors](../extensibility/how-to-open-project-specific-editors.md).  
   
-## Erstellen eines standardmäßigen Editor öffnen  
- Führen Sie die folgenden Schritte aus, um einen standardmäßigen Editor für eine Datei zu öffnen, die bereits geöffnet ist.  
+## <a name="opening-a-standard-editor"></a>Öffnen einen Standard-Editor  
+ Öffnen Sie mithilfe des folgenden Verfahrens können Sie einen standard-Editor für eine Datei zu öffnen, die bereits ist.  
   
-#### So fügen Sie einen standardmäßigen Editor für eine offene Datei öffnen  
+#### <a name="to-open-a-standard-editor-for-an-open-file"></a>Um eine standard-Editor für eine geöffnete Datei zu öffnen.  
   
 1.  Rufen Sie <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> auf.  
   
-     Diese Methode überprüft zuerst, dass das Dokument noch nicht durch Aufrufen von <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.IsDocumentOpen%2A>geöffnet ist.  Wenn das Dokument bereits geöffnet ist, wird ihr Editorfenster erneuert.  
+     Diese Methode überprüft zuerst, dass das Dokument nicht bereits geöffnet durch den Aufruf ist <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.IsDocumentOpen%2A>. Wenn das Dokument bereits geöffnet ist, wird das Editorfenster auftaucht.  
   
-2.  Wenn das Dokument nicht geöffnet ist, führen Sie die Schritte in [Gewusst wie: Öffnen Sie die Standard\-Editoren](../extensibility/how-to-open-standard-editors.md)ab.  
+2.  Wenn das Dokument nicht geöffnet ist, führen Sie die Schritte im [wie: Öffnen Sie Standard-Editoren](../extensibility/how-to-open-standard-editors.md).  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Öffnen und Speichern von Projektelementen](../extensibility/internals/opening-and-saving-project-items.md)   
- [Gewusst wie: Öffnen von Editoren projektspezifische](../extensibility/how-to-open-project-specific-editors.md)   
- [Gewusst wie: Öffnen Sie die Standard\-Editoren](../extensibility/how-to-open-standard-editors.md)
+ [Vorgehensweise: Öffnen von Editoren projektspezifische](../extensibility/how-to-open-project-specific-editors.md)   
+ [Gewusst wie: Öffnen von Standard-Editoren](../extensibility/how-to-open-standard-editors.md)

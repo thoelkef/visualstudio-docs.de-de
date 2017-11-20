@@ -1,37 +1,40 @@
 ---
-title: "IDebugDocumentProvider-Schnittstelle | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
-helpviewer_keywords: 
-  - "IDebugDocumentProvider-Schnittstelle"
+title: IDebugDocumentProvider-Schnittstelle | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
+helpviewer_keywords: IDebugDocumentProvider interface
 ms.assetid: 36510acf-1ef9-479c-a430-d3f09502f82c
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 262794718e238068cfd9a8e3fae5161b9fe8cc54
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# IDebugDocumentProvider-Schnittstelle
-Stellt eine Möglichkeit für ein Dokument bei Bedarf instanziieren bereit.  
+# <a name="idebugdocumentprovider-interface"></a>IDebugDocumentProvider-Schnittstelle
+Bietet die Möglichkeit zum Instanziieren eines Dokuments nach Bedarf.  
   
-## Hinweise  
- Dieses indirekte Möglichkeit zum Instanziieren eines Dokuments:  
+## <a name="remarks"></a>Hinweise  
+ Das indirekte bedeutet, dass zum Instanziieren eines Dokuments:  
   
--   Ermöglicht dem Dokument, um zu laden, wenn es erforderlich ist.  
+-   Ermöglicht das Dokument geladen werden, wenn er benötigt wird.  
   
--   Ermöglicht das innerhalb des Debuggers IDE enthalten werden Document\-Objekt.  
+-   Ermöglicht das Document-Objekt innerhalb des Debuggers IDE enthalten sein soll.  
   
--   Ermöglicht mehrere Möglichkeiten, auf das gleiche Dokumentobjekt zuzugreifen.  
+-   Können mehrere Möglichkeiten, auf das gleichen Dokumentobjekt zuzugreifen.  
   
- Dieses effektiv trennt das Dokument von seinem Anbieter und ermöglicht es dem Anbieter, um zusätzliche Laufzeit, Kontextinformationen zu tragen.  
+ Dadurch effektiv trennt das Dokument, von dem Anbieter und den Anbieter Zusatzinformationen zur Laufzeit Kontext durchführen.  
   
- Zusätzlich zu den von `IDebugDocumentInfo` geerbten Methoden macht die `IDebugDocumentProvider`\-Schnittstelle die folgenden Methoden verfügbar.  
+ Zusätzlich zu den von geerbten Methoden `IDebugDocumentInfo`, `IDebugDocumentProvider` Schnittstelle macht die folgenden Methoden verfügbar.  
   
-|Methode|Description|  
-|-------------|-----------------|  
-|[IDebugDocumentProvider::GetDocument](../../winscript/reference/idebugdocumentprovider-getdocument.md)|Veranlasst das Dokument instanziiert werden, wenn es nicht bereits vorhanden ist.|
+|Methode|Beschreibung|  
+|------------|-----------------|  
+|[IDebugDocumentProvider::GetDocument](../../winscript/reference/idebugdocumentprovider-getdocument.md)|Bewirkt, dass das Dokument instanziiert werden, wenn sie nicht bereits vorhanden ist.|

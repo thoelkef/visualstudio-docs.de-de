@@ -1,64 +1,65 @@
 ---
-title: "Einzelne und mehrere Registerkarte Ansichten | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Editoren [Visual Studio SDK] benutzerdefinierte - Ansichten für einzelne und mehrere Registerkarte"
+title: "Ansichten für einzelne und Registerkarte \"Multi\" | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: editors [Visual Studio SDK], custom - single and multi-tab views
 ms.assetid: e3611704-349f-4323-b03c-f2b0a445d781
-caps.latest.revision: 22
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 22
+caps.latest.revision: "22"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 6c90f7cec454cc6562e2cd20e2da64cfe86e243f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Einzelne und mehrere Registerkarte Ansichten
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Ein Editor können verschiedene Typen von Ansichten erstellen.  Ein Beispiel hierfür ist ein Code\-Editor\-Fenster, ist ein anderes Formular\-Designer.  
+# <a name="single-and-multi-tab-views"></a>Ansichten für einzelne und Registerkarte "Multi"
+Erstellen eines Editors kann verschiedene Arten von Ansichten. Ein Beispiel ist ein Code-Editor-Fenster, ein weiterer Vorteil ist ein Forms-Designer.  
   
- Eine Ansicht MULTI\-im Registerkartenformat ist eine Ansicht, die mehrere Registerkarten verfügt.  Beispielsweise verfügt der HTML\-Editor folgenden zwei Registerkarten: **Entwurf** und **Quelle**, die jeweils eine logische Ansicht.  Die Entwurfsansicht zeigt eine gerenderte Webseite an, während die andere den HTML\-Code anzuzeigen, das die Webseite enthält.  
+ Eine Registerkarten-Ansicht ist eine Sicht, die mehrere Registerkarten verfügt. Z. B. der HTML-Editor verfügt über zwei Registerkarten am unteren: **Entwurf** und **Quelle**, die jeweils eine logische Sicht. Die Entwurfsansicht zeigt einer gerenderten Webseite an, während die andere den HTML-Code zeigt, die auf der Webseite besteht aus.  
   
-## Zugreifen auf Systemtest\-Ansichten  
- physikalischen Host wird dokumenten\-Ansichts Objekte, die jeweils mit einer Ansicht von Daten im Puffer, wie Code oder in einem Formular darstellt.  Dementsprechend verfügt jedes Objekt eine physikalische Ansicht der Dokumente, identifiziert durch \(bezeichnet als eine Zeichenfolge der Ansicht eine physikalische\) und im Allgemeinen eine einzelne logische Ansicht.  
+## <a name="accessing-physical-views"></a>Beim Zugriff auf physische Ansichten  
+ Physische Ansichten Hostobjekte Dokument anzeigen, jeweils eine Ansicht der Daten in den Puffer, z. B. Code oder eine Form darstellen. Dementsprechend ist jede dokumentansichtsobjekts eine physische Ansicht (identifiziert etwas anderes als eine Zeichenfolge für die physische Ansicht bezeichnet) und in der Regel eine einzelne logische Sicht.  
   
- In einigen Fällen jedoch eine physikalische Sicht verfügen oder zwei Ansichten logischere kann.  Einige Beispiele sind ein Editor, in dem ein geteiltes Fenster Parallele Ansichten verfügt, oder mit einem Formular\-Designer, der eine GUI\-\/design und eine Code\-hinter\-d Formular Sicht hat.  
+ In einigen Fällen kann eine physische Ansicht jedoch mindestens zwei logische Ansichten haben. Beispiele hierfür sind einen Editor, der einem geteilten Fenster mit Ansichten Seite-an-Seite verfügt oder ein Forms-Designer, der eine GUI/Entwurfsansicht und eine Code-Behind-des-Formulars Ansicht verfügt.  
   
- Um den Editor zu aktivieren, um alle verfügbaren physischen Ansichten zuzugreifen, müssen Sie eine eindeutige Zeichenfolge der Ansicht physische für jeden Typ von Dokumenten für den Erstellen der Editor die factory erstellen kann.  Beispielsweise kann die [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] Editor Dokumente factory die Objekte für ein Codefenster, und ein Fenster Formular\-Designer erstellen.  
+ Um den Zugriff auf alle verfügbaren physischen Ansichten Editor zu aktivieren, müssen Sie eine eindeutige physische Ansicht Zeichenfolge für jeden Typ von dokumentansichtsobjekts erstellen, die der Editorfactory erstellen können. Z. B. die [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] -Editor-Factory kann Dokument Sichtobjekte für ein Codefenster und ein Forms-Designer-Fenster erstellen.  
   
-## Erstellen von Ansichten MULTI\-Im Registerkartenformat  
- Obwohl die Dokumente ein Objekt in einer physischen Ansicht anzeigen physische durch eine eindeutige Zeichenfolge zugeordnet werden muss, können Sie mehrere Registerkarten in der physischen Ansicht ablegen, um das Anzeigen von Daten auf unterschiedliche Weise zu aktivieren.  In dieser Konfiguration MULTI\-im Registerkartenformat werden alle Registerkarten mit derselben physikalischen Zeichenfolge Ansicht zugeordnet, aber jede Registerkarte ist eine weitere logische Ansicht GUID angegeben.  
+## <a name="creating-multi-tabbed-views"></a>Erstellen von Ansichten mit mehreren Registerkarten  
+ Obwohl ein Document-Objekt für eine physische Ansicht über eine eindeutige physische Ansicht Zeichenfolge zugeordnet werden soll, muss, können Sie mehrere Registerkarten innerhalb der physischen Ansicht so aktivieren Sie die Anzeige von Daten auf unterschiedliche Weise platzieren. In dieser Konfiguration Registerkarten alle Registerkarten sind die gleiche physische Ansicht Zeichenfolge zugeordnet, aber jede Registerkarte wird eine andere logische Ansicht GUID zugewiesen.  
   
- Um eine Ansicht MULTI\-im Registerkartenformat für einen Editor zu erstellen, implementieren Sie die <xref:Microsoft.VisualStudio.Shell.Interop.IVsMultiViewDocumentView>\-Schnittstelle, und ordnen Sie dann eine weitere logische Ansicht \(GUID\)<xref:Microsoft.VisualStudio.Shell.Interop.LogicalViewID>mit jeder Registerkarte, die Sie erstellen.  
+ Um eine Sicht Registerkarten für einen Editor erstellen, implementieren die <xref:Microsoft.VisualStudio.Shell.Interop.IVsMultiViewDocumentView> Schnittstelle, und ordnen Sie eine andere logischen Ansicht GUID (<xref:Microsoft.VisualStudio.Shell.Interop.LogicalViewID>) mit den einzelnen Registerkarten, die Sie erstellen.  
   
- Der Visual Studio\-HTML\-Editor ist ein Beispiel für einen Editor mit einer Umgebung mit mehreren Registerkarte Ansicht.  Sie verfügt über **Entwurf** und **Quelle** Tabstopps.  Dazu wird eine weitere logische Ansicht mit jeder Registerkarte, `LOGICALVIEWID_TextView` für die **Entwurf** Registerkarte, und `LOGICALVIEWID_Code` für die **Quelle** Registerkarte zugeordnet.  
+ Visual Studio-HTML-Editor ist ein Beispiel für einen Editor mit einer Ansicht der Registerkarte "Multi". Es wurde **Entwurf** und **Quelle** Registerkarten. Um dies zu ermöglichen, eine andere logische Ansicht bezieht sich auf jeder Registerkarte `LOGICALVIEWID_TextView` für die **Entwurf** Registerkarte und `LOGICALVIEWID_Code` für die **Quelle** Registerkarte.  
   
- Mit den entsprechenden logische Ansicht angibt, kann ein VSPackage die Ansicht zugreifen, die zu einem bestimmten Zweck, wie Entwerfen eines Formulars entspricht und Code oder Debugcode bearbeitet.  Allerdings muss eines der Fenster durch die NULL\-Zeichenfolge identifiziert und es muss`LOGVIEWID_Primary`logischen Primärschlüssel \(Sicht\) entsprechen.  
+ Durch die Angabe der entsprechenden logischen Ansicht, kann eine VSPackage die Ansicht zugreifen, die einen bestimmten Zweck, z. B. ein Formular entwerfen, Bearbeiten von Code oder Debugcode entspricht. Allerdings muss eines der Fenster identifiziert werden, durch die NULL-Zeichenfolge und dadurch die primäre logische Sicht entsprechen (`LOGVIEWID_Primary`).  
   
- In der folgenden Tabelle sind die verfügbaren logischen Werte anzeigen und ihre Verwendung.  
+ Die folgende Tabelle enthält die verfügbaren logischen Ansicht Werte und deren Verwendung.  
   
-|LOGVIEWID GUID|Empfohlene Verwendung|  
-|--------------------|---------------------------|  
-|`LOGVIEWID_Primary`|Standardwert\/primäre Ansicht der Editor factorys.<br /><br /> Alle Editorfactorys müssen diesen Wert unterstützen.  Diese Sicht muss die NULL\-Zeichenfolge verwenden z. B. seine physische Zeichenfolge der Ansicht.  muss mindestens eine logische Ansicht auf diesen Wert festgelegt werden.|  
-|`LOGVIEWID_Debugging`|Ansicht debuggen.  In der Regel wird `LOGVIEWID_Debugging` wie bei den zugeordnet `LOGVIEWID_Code`an.|  
-|`LOGVIEWID_Code`|Ansicht, die vom **Code anzeigen** Befehl.|  
-|`LOGVIEWID_Designer`|Ansicht, die vom **Formular anzeigen** Befehl.|  
-|`LOGVIEWID_TextView`|Text\-Editor\-Ansicht.  Dies ist die Ansicht, die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow>zurückgibt, von denen Sie <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>zugreifen können.|  
-|`LOGVIEWID_UserChooseView`|Fordert den Benutzer auf, denen auszuwählen.|  
-|`LOGVIEWID_ProjectSpecificEditor`|Werden vom **Öffnen mit** Dialogfeld zu<br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject.OpenItem%2A><br /><br /> \(„wenn der Benutzer mit dem Standard\-Editor Eintrag“ des Projekts\) auswählt.|  
+|LOGVIEWID-GUID|Empfohlene Verwendung|  
+|--------------------|---------------------|  
+|`LOGVIEWID_Primary`|Standard/primäre Server Überblick über die Editor-Factory.<br /><br /> Dieser Wert müssen alle editorfactorys unterstützt werden. In dieser Ansicht muss die NULL-Zeichenfolge als die physische Ansicht Zeichenfolge verwenden. Mit diesem Wert muss mindestens eine logische Sicht festgelegt werden.|  
+|`LOGVIEWID_Debugging`|Debuggen die Ansicht. In der Regel `LOGVIEWID_Debugging` ordnet die gleiche Ansicht als `LOGVIEWID_Code`.|  
+|`LOGVIEWID_Code`|Ansicht gestartet, indem Sie die **Code anzeigen** Befehl.|  
+|`LOGVIEWID_Designer`|Ansicht gestartet, indem Sie die **Formular anzeigen** Befehl.|  
+|`LOGVIEWID_TextView`|Text-Editor-Ansicht. Dies ist die Ansicht, die zurückgibt <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow>, aus denen Sie Zugriff haben <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>.|  
+|`LOGVIEWID_UserChooseView`|Fordert den Benutzer auswählen, welche Ansicht verwenden.|  
+|`LOGVIEWID_ProjectSpecificEditor`|Durch Übergeben der **Öffnen mit** im Dialogfeld<br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject.OpenItem%2A><br /><br /> Wenn der Benutzer den Eintrag "(Projekt Standard-Editor)" auswählt.|  
   
- Obwohl logische Ansicht GUID erweiterbar sind, können Sie nur die logische Sicht GUIDs verwenden, die in einem VSPackage definiert ist.  
+ Obwohl die logische Sicht GUIDs sind erweiterbar, können Sie nur die logische Sicht GUIDs, die in Ihr VSPackage definiert.  
   
- Klicken Sie auf Herunterfahren Visual Studio behält die GUID der Editor anzeigen und der physischen factorys Formatzeichenfolgen bei, die mit dem Dokumentfenster zugeordnet werden, damit er verwendet werden kann, um Dokumentfenster erneut zu öffnen, wenn die Projektmappe erneut geöffnet wird.  Nur Windows, die geöffnet werden, wenn eine Projektmappe geschlossen ist, werden in der Projektmappendatei \(.suo\) beibehalten.  Diese Werte entsprechen den `VSFPROPID_guidEditorType` und `VSFPROPID_pszPhysicalView`\-Werten, die in den `propid`\-Parameter in der <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A>\-Methode übergeben werden.  
+ Beim Herunterfahren behält Visual Studio die GUID des die Editor-Factory und die physische Ansicht-Zeichenfolgen, die verknüpft sind mit dem Dokumentfenster, damit es verwendet werden kann, um Dokumentfenster erneut zu öffnen, wenn die Projektmappe erneut geöffnet wird. Nur Windows, die geöffnet sind, wenn eine Projektmappe geschlossen wird, werden in der Projektmappendatei (SUO) beibehalten. Diese Werte entsprechen den `VSFPROPID_guidEditorType` und `VSFPROPID_pszPhysicalView` übergebenen Werte der `propid` Parameter in der <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A> Methode.  
   
-## Beispiel  
- Dieser Codeausschnitt wird veranschaulicht, wie das <xref:Microsoft.VisualStudio.Shell.Interop.LogicalViewID.TextView>\-Objekt verwendet wird, um eine Ansicht zugreifen, die `IVsCodeWindow`implementiert.  In diesem Fall wird der <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShellOpenDocument> Dienst verwendet, um <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenDocumentViaProject%2A> aufzurufen und `LOGVIEWID_TextView`anzufordern, der ein Zeiger auf einen Fensterrahmen abgerufen wird.  Ein Zeiger auf den Dokumenten für die wird abgerufen, indem <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A> aufrufen und einen Wert von `VSFPROPID_DocView`angibt.  Wählen Sie die Dokumente Objekt wird `QueryInterface` für `IVsCodeWindow`aufgerufen.  Die Annahme ist in diesem Fall, dass ein Text\-Editor zurückgegeben wird, und deshalb ist das Objekt, das die Dokumente in der <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A>\-Methode zurückgegebene ein Codefenster.  
+## <a name="example"></a>Beispiel  
+ Dieser Codeausschnitt wird veranschaulicht, wie die <xref:Microsoft.VisualStudio.Shell.Interop.LogicalViewID.TextView> Objekt wird verwendet, um den Zugriff auf eine Sicht, die implementiert `IVsCodeWindow`. In diesem Fall die <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShellOpenDocument> Inanspruchnahme Aufrufen <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenDocumentViaProject%2A> und Anforderung `LOGVIEWID_TextView`, dem einen Zeiger auf einen Fensterrahmen abruft. Ein Zeiger auf das Ansichtsobjekt Dokument abgerufen wird, durch den Aufruf <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A> und dabei den Wert `VSFPROPID_DocView`. Aus der dokumentansichtsobjekts `QueryInterface` heißt für `IVsCodeWindow`. In diesem Fall wird erwartet, dass in ein Text-Editor wird zurückgegeben, und daher des dokumentansichtsobjekts die <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A> Methode ist ein Codefenster.  
   
-```cpp#  
+```cpp  
 HRESULT CFindTool::GotoFileLocation(const WCHAR * szFile, long iLine, long iStart, long iLen)  
 {  
   HRESULT hr;  
@@ -113,7 +114,7 @@ Error:
 }  
 ```  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Unterstützung mehrerer Dokumentansichten](../extensibility/supporting-multiple-document-views.md)   
- [Gewusst wie: Anfügen von Ansichten, um Daten](../extensibility/how-to-attach-views-to-document-data.md)   
+ [Vorgehensweise: Anfügen von Ansichten, um Daten zu dokumentieren.](../extensibility/how-to-attach-views-to-document-data.md)   
  [Erstellen von benutzerdefinierten Editoren und Designern](../extensibility/creating-custom-editors-and-designers.md)

@@ -1,51 +1,51 @@
 ---
-title: "IDebugCustomAttributeQuery2::IsCustomAttributeDefined | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugCustomAttributeQuery2::IsCustomAttributeDefined"
-helpviewer_keywords: 
-  - "IDebugCustomAttributeQuery2::IsCustomAttributeDefined"
+title: IDebugCustomAttributeQuery2::IsCustomAttributeDefined | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugCustomAttributeQuery2::IsCustomAttributeDefined
+helpviewer_keywords: IDebugCustomAttributeQuery2::IsCustomAttributeDefined
 ms.assetid: 5c07cc52-6d2d-42df-9d76-9f1f769641db
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 2f1311beccfb36364bb8039f75bbe2955cbc9fca
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugCustomAttributeQuery2::IsCustomAttributeDefined
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Bestimmt, ob sich ein benutzerdefiniertes Attribut anhand des Namens vorhanden ist.  
+# <a name="idebugcustomattributequery2iscustomattributedefined"></a>IDebugCustomAttributeQuery2::IsCustomAttributeDefined
+Bestimmt, ob ein benutzerdefiniertes Attribut anhand des Namens vorhanden ist.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT IsCustomAttributeDefined(   
-   LPCOLESTR pszCustomAttributeName  
+```cpp  
+HRESULT IsCustomAttributeDefined(   
+   LPCOLESTR pszCustomAttributeName  
 );  
 ```  
   
-```c#  
+```csharp  
 int IsCustomAttributeDefined(  
-   [In] string pszCustomAttributeName  
+   [In] string pszCustomAttributeName  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `pszCustomAttributeName`  
- \[in\]  Eine Zeichenfolge, die den Namen des benutzerdefinierten Attributs, das gesucht werden soll.  
+ [in] Eine Zeichenfolge mit dem Namen des zu suchenden benutzerdefinierten Attributs.  
   
-## Rückgabewert  
- Gibt S\_OK, wenn das benutzerdefinierte Attribut für dieses Feld definierten zurückgibt, andernfalls S\_FALSE zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Gibt zurück, S_OK, wenn das benutzerdefinierte Attribut für dieses Feld definiert ist, andernfalls "S_FALSE" zurückgegeben.  
   
-## Hinweise  
- Um die Attributdaten abgerufen, die mit dem benutzerdefinierten Attribut zugeordnet sind, rufen Sie die [\[GetCustomAttributeByName](../../../extensibility/debugger/reference/idebugcustomattributequery2-getcustomattributebyname.md)\-Methode auf.  
+## <a name="remarks"></a>Hinweise  
+ Um die Attributdaten das benutzerdefinierte Attribut zugeordnet zu erhalten, rufen Sie die [GetCustomAttributeByName](../../../extensibility/debugger/reference/idebugcustomattributequery2-getcustomattributebyname.md) Methode.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDebugCustomAttributeQuery2](../../../extensibility/debugger/reference/idebugcustomattributequery2.md)

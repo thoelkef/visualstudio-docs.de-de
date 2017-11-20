@@ -1,54 +1,56 @@
 ---
-title: "Gewusst wie: Bereitstellen und Ver&#246;ffentlichen einer SharePoint-L&#246;sung auf einer lokalen SharePoint-Website"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "Bereitstellen [SharePoint-Entwicklung in Visual Studio]"
-  - "SharePoint-Entwicklung in Visual Studio, Bereitstellen"
+title: "Vorgehensweise: Bereitstellen und veröffentlichen Sie eine SharePoint-Lösung in einer lokalen SharePoint-Website | Microsoft Docs"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- VB
+- CSharp
+helpviewer_keywords:
+- deploying [SharePoint development in Visual Studio]
+- SharePoint development in Visual Studio, deploying
 ms.assetid: 73f8d6a9-4c64-4bba-ae0e-9474baf8df26
-caps.latest.revision: 18
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 17
+caps.latest.revision: "18"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 4959334c9d6949e199ad18934e69ea46e1172b55
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Gewusst wie: Bereitstellen und Ver&#246;ffentlichen einer SharePoint-L&#246;sung auf einer lokalen SharePoint-Website
-  Sie können SharePoint\-Lösungen auf einem lokalen SharePoint\-Server auf dem Entwicklungscomputer bereitstellen oder veröffentlichen.  Der Bereitstellungsprozess wird die WSP\-Datei auf den SharePoint\-Server kopiert, die Lösung installiert und aktiviert die Funktionen.  Der Veröffentlichungsprozess kopiert nur die WSP\-Datei auf dem SharePoint\-Server und installiert sie.  Sie müssen ihn manuell aktivieren, um es in SharePoint zu aktivieren.  
+# <a name="how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site"></a>Gewusst wie: Bereitstellen und Veröffentlichen einer SharePoint-Lösung auf einer lokalen SharePoint-Website
+  Sie können bereitstellen oder Veröffentlichen von SharePoint-Lösungen auf einer lokalen SharePoint-Server auf dem Entwicklungscomputer. Der Bereitstellungsprozess die WSP-Datei auf dem SharePoint-Server kopiert werden, wird die Lösung installiert und aktiviert die Funktionen. Während der Veröffentlichung wird nur die WSP-Datei auf dem SharePoint-Server kopiert und installiert es. Sie müssen manuell aktivieren, damit es in SharePoint werden kann.  
   
-## So stellen Sie eine SharePoint\-Lösung auf dem lokalen SharePoint\-Server bereit  
+## <a name="to-deploy-a-sharepoint-solution-to-the-local-sharepoint-server"></a>Zum Bereitstellen von einer SharePoint-Lösung auf dem lokalen SharePoint-server  
   
-1.  Wählen Sie im **Projektmappen\-Explorer** das Projekt aus, das Sie bereitstellen möchten.  
+1.  In **Projektmappen-Explorer**, wählen Sie das Projekt, das Sie bereitstellen möchten.  
   
-2.  Wählen Sie in der Menüleiste **Projektmappe bereitstellen**, **Erstellen** aus.  
+2.  Wählen Sie in der Menüleiste **erstellen**, **Projektmappe bereitstellen**.  
   
-     Die WSP\-Datei wird erstellt und auf dem lokalen SharePoint\-Server installiert.  Außerdem werden die Funktionen aktiviert.  
+     Die WSP-Datei erstellt und auf dem lokalen SharePoint-Server installiert. Darüber hinaus werden die Funktionen aktiviert.  
   
-## So stellen Sie eine SharePoint\-Lösung in einen lokalen SharePoint\-Server veröffentlichen  
+## <a name="to-publish-a-sharepoint-solution-to-a-local-sharepoint-server"></a>So veröffentlichen Sie eine SharePoint-Lösung auf einer lokalen SharePoint-server  
   
-1.  In **Projektmappen\-Explorer** öffnen Sie das Kontextmenü für das SharePoint\-Projekt, das Sie veröffentlichen und dann **Veröffentlichen** auswählen möchten.  
+1.  In **Projektmappen-Explorer**, öffnen Sie das Kontextmenü für das SharePoint-Projekt, das Sie veröffentlichen möchten und wählen Sie dann **veröffentlichen**.  
   
-2.  Im Dialogfeld **Veröffentlichen** wählen Sie das Optionsfeld **Im Dateisystem veröffentlichen** aus.  
+2.  In der **veröffentlichen** Dialogfeld Wählen Sie die **Veröffentlichen im Dateisystem** Optionsfeld.  
   
-3.  Im Textfeld **Zielort** geben Sie einen lokalen Pfad ein, und wählen Sie dann die Schaltfläche **Veröffentlichen** aus.  
+3.  In der **Zielspeicherort** Textfeld, geben Sie einen lokalen Pfad, und wählen Sie dann die **veröffentlichen** Schaltfläche.  
   
-     Der Veröffentlichungsstatus wird im Visual Studio\-Fenster **Ausgabe**.  Wenn der Prozess abgeschlossen ist, wird die Projektmappendatei \(.wsp\) auf dem lokalen SharePoint\-Server installiert.  Sie muss jedoch noch aktiviert sein, in SharePoint verwendet werden.  Wenn die Lösungsdatei bereits vorhanden ist, tritt ein Fehler auf und fragt, ob Sie die vorhandene Datei überschreiben möchten.  Weitere Informationen über das Aktualisieren des Pakets, finden Sie im Abschnitt über den Paketen des Upgrades in [Gewusst wie: Bereitstellen, Veröffentlichen und Aktualisieren von SharePoint-Lösungen auf einem Remoteserver](../sharepoint/how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server.md).  
+     Die publishing Status wird angezeigt, in der Visual Studio **Ausgabe** Fenster. Wenn der Vorgang abgeschlossen ist, wird die Projektmappendatei (.wsp) auf dem lokalen SharePoint-Server installiert. Allerdings müssen sie immer noch aktiviert werden, die in SharePoint verwendet werden. Wenn die Projektmappendatei bereits vorhanden ist, ein Fehler tritt auf, und Sie werden gefragt, ob die vorhandene Datei überschrieben werden soll. Informationen zum Aktualisieren des Pakets, finden Sie im Abschnitt zum Aktualisieren von remotepakete in [Vorgehensweise: bereitstellen, veröffentlichen und Aktualisieren von SharePoint-Lösungen auf einem Remoteserver](../sharepoint/how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server.md).  
   
-## Siehe auch  
- [Gewusst wie: Bereitstellen, Veröffentlichen und Aktualisieren von SharePoint-Lösungen auf einem Remoteserver](../sharepoint/how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server.md)   
+## <a name="see-also"></a>Siehe auch  
+ [Vorgehensweise: bereitstellen, veröffentlichen und Aktualisieren von SharePoint-Lösungen auf einem Remoteserver](../sharepoint/how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server.md)   
  [Erstellen von SharePoint-Lösungspaketen](../sharepoint/creating-sharepoint-solution-packages.md)   
- [Gewusst wie: Anpassen eines SharePoint-Lösungspakets](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)   
- [Gewusst wie: Hinzufügen und Entfernen von Funktionen und Elementen in einem Paket mit dem Paket-Designer](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md)  
+ [Vorgehensweise: Anpassen eines SharePoint-Lösungspakets](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)   
+ [Vorgehensweise: Hinzufügen und Entfernen von Funktionen und Elementen in einem Paket mit dem Paket-Designer](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md)  
   
   

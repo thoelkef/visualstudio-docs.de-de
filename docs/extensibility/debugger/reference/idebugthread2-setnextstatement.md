@@ -1,64 +1,64 @@
 ---
-title: "IDebugThread2::SetNextStatement | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugThread2::SetNextStatement"
-helpviewer_keywords: 
-  - "IDebugThread2::SetNextStatement"
+title: IDebugThread2::SetNextStatement | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugThread2::SetNextStatement
+helpviewer_keywords: IDebugThread2::SetNextStatement
 ms.assetid: 9e2834dd-4ecf-45af-8e6c-f9318ebdac06
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 6dd345fe298af42a69ac076bf92de7df9db82ec2
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugThread2::SetNextStatement
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Legt den aktuellen Kontext des Codes Anweisungszeiger auf den angegebenen Wert fest.  
+# <a name="idebugthread2setnextstatement"></a>IDebugThread2::SetNextStatement
+Legt den aktuellen Anweisungszeiger an den angegebenen Kontext.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT SetNextStatement (   
-   IDebugStackFrame2*  pStackFrame,  
-   IDebugCodeContext2* pCodeContext  
+```cpp  
+HRESULT SetNextStatement (   
+   IDebugStackFrame2*  pStackFrame,  
+   IDebugCodeContext2* pCodeContext  
 );  
 ```  
   
-```c#  
-int SetNextStatement (   
-   IDebugStackFrame2  pStackFrame,  
-   IDebugCodeContext2 pCodeContext  
+```csharp  
+int SetNextStatement (   
+   IDebugStackFrame2  pStackFrame,  
+   IDebugCodeContext2 pCodeContext  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `pStackFrame`  
- Für zukünftige Verwendung reserviert. Auf einem NULL\-Wert.  
+ Für die zukünftige Verwendung reserviert. Legen Sie auf einen null-Wert.  
   
  `pCodeContext`  
- \[in\]  Ein [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)\-Objekt, das den auszuführenden Code ungefähr beschreibt Speicherort und der Kontext.  
+ [in] Ein [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) -Objekt, das den Speicherort der Code ausgeführt werden soll beschreibt und seines Kontexts.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  In der folgenden Tabelle werden weitere mögliche Werte an.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben. Die folgende Tabelle zeigt weitere mögliche Werte.  
   
 |Wert|Beschreibung|  
-|----------|------------------|  
-|\_SET\_NEXT\_STATEMENT\_ON\_NONLEAF\_FRAME E\_CAN NOT|Die folgende Anweisung kann nicht in einem Stapelrahmen sein, der auf den Frame stapel tiefer liegt.|  
-|\_SETIP\_TO\_DIFFERENT\_FUNCTION E\_CAN NOT|In der folgenden Anweisung wird nicht mit einem Rahmen im Stapel zugeordnet.|  
-|\_SET\_NEXT\_STATEMENT\_ON\_EXCEPTION E\_CAN NOT|Einige Module können Debuggen der folgenden Anweisung nicht nach einer Ausnahme fest.|  
+|-----------|-----------------|  
+|E_CANNOT_SET_NEXT_STATEMENT_ON_NONLEAF_FRAME|Die nächste Anweisung darf nicht in einem Stapelrahmen im Stapel Frame tiefer sein.|  
+|E_CANNOT_SETIP_TO_DIFFERENT_FUNCTION|Die nächste Anweisung kann keine Rahmen im Stapel zugeordnet ist.|  
+|E_CANNOT_SET_NEXT_STATEMENT_ON_EXCEPTION|Einige Debugmodule können nicht auf die nächste Anweisung nach einer Ausnahme festgelegt.|  
   
-## Hinweise  
- Der Anweisungszeiger gibt die folgende Anweisung oder die Anweisung auszuführen.  Diese Methode wird verwendet, um eine Zeile des Quellcodes zu wiederholen oder Ausführung zu erzwingen, dass in einer anderen Funktion fortzufahren, z. B.  
+## <a name="remarks"></a>Hinweise  
+ Der Anweisungszeiger gibt an, der nächsten Anweisung oder Anweisung ausgeführt. Diese Methode wird eine Zeile des Quellcodes zu wiederholen oder zu erzwingen, z. B. in einer anderen Funktion Fortsetzen der Ausführung verwendet.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)   
  [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)   
  [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)

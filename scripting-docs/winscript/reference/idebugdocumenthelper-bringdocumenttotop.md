@@ -1,44 +1,47 @@
 ---
-title: "IDebugDocumentHelper::BringDocumentToTop | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IDebugDocumentHelper::BringDocumentToTop | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IDebugDocumentHelper.BringDocumentToTop
 apilocation: pdm.dll
-helpviewer_keywords: 
-  - "IDebugDocumentHelper::BringDocumentToTop"
+helpviewer_keywords: IDebugDocumentHelper::BringDocumentToTop
 ms.assetid: 91bdbb05-6f79-4b07-a707-838cb75a770f
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 34da5d19b927bf80c05675cbc6871b0a26801247
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# IDebugDocumentHelper::BringDocumentToTop
-Setzt dieses Dokument zur oben in der Debuggerbenutzeroberfläche.  
+# <a name="idebugdocumenthelperbringdocumenttotop"></a>IDebugDocumentHelper::BringDocumentToTop
+Schaltet dieses Dokuments nach oben im Debugger-Benutzeroberfläche.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 HRESULT BringDocumentToTop();  
 ```  
   
-#### Parameter  
- Diese Methode verwendet keine Parameter.  
+#### <a name="parameters"></a>Parameter  
+ Diese Methode nimmt keine Parameter.  
   
-## Rückgabewert  
- Die Methode gibt ein `HRESULT` zurück.  Zu den möglichen Werten zählen, aber nicht zu, die in der folgenden Tabelle beschränkt.  
+## <a name="return-value"></a>Rückgabewert  
+ Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
   
-|Wert|Description|  
-|----------|-----------------|  
+|Wert|Beschreibung|  
+|-----------|-----------------|  
 |`S_OK`|Die Methode war erfolgreich.|  
   
-## Hinweise  
- Diese Methode stellt den Debugger an, wenn diese noch nicht gestartet wird.  
+## <a name="remarks"></a>Hinweise  
+ Diese Methode wird der Debugger gestartet, wenn er noch nicht gestartet wurde.  
   
-## Siehe auch  
- [IDebugDocumentHelper\-Schnittstelle](../../winscript/reference/idebugdocumenthelper-interface.md)
+## <a name="see-also"></a>Siehe auch  
+ [IDebugDocumentHelper-Schnittstelle](../../winscript/reference/idebugdocumenthelper-interface.md)

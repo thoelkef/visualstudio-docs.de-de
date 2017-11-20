@@ -1,46 +1,30 @@
 ---
-title: Entwickeln von Tests aus einem Modell | Microsoft-Dokumentation
+title: Entwickeln von Tests aus einem Modell | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- tests and requirements
+helpviewer_keywords: tests and requirements
 ms.assetid: 40f87192-ba85-4552-8804-314a678261ae
-caps.latest.revision: 20
+caps.latest.revision: "20"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Machine Translation
-ms.sourcegitcommit: 08aabdfe0e268f93ef7723076375b7f65b15ccf3
-ms.openlocfilehash: b7cb109d11669f411b5ca3bdf3c4c32a63ac53a1
-ms.contentlocale: de-de
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: ea0753130b6fa1da60cf83cf15c0ee5c7f4010c2
+ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="develop-tests-from-a-model"></a>Entwickeln von Tests aus einem Modell
 Sie können Anforderungen und architektonische Modelle verwenden, um die Tests des Systems und seiner Komponenten zu organisieren. Hierdurch wird sichergestellt, dass Sie die für die Benutzer und anderen Projektbeteiligten wichtigen Anforderungen testen, und es hilft Ihnen, die Tests schnell zu aktualisieren, wenn sich die Anforderungen ändern. Bei Verwendung von [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] können Sie auch Verknüpfungen zwischen den Modellen und den Tests verwalten.  
   
- Welche Versionen von Visual Studio diese Features unterstützen, finden Sie unter [versionsunterstützung für Architektur- und Modellierungstools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
+ Welche Versionen von Visual Studio diese Funktionen unterstützen, finden Sie unter [versionsunterstützung für Architektur- und Modellierungstools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
 ## <a name="system-and-subsystem-testing"></a>Testen von System und Subsystemen  
- *Systemtests,* auch bekannt als *Akzeptanztests*, wird überprüft, ob die Anforderungen der Benutzer erfüllt werden. Diese Tests beziehen sich auf das nach außen hin sichtbare Verhalten des Systems und nicht auf den internen Entwurf.  
+ *Systemtests,* auch bekannt als *Akzeptanztests*bedeutet testen, ob die Anforderungen der Benutzer erfüllt werden. Diese Tests beziehen sich auf das nach außen hin sichtbare Verhalten des Systems und nicht auf den internen Entwurf.  
   
  Systemtests sind sehr wertvoll, wenn Sie ein System erweitern oder neu entwerfen. Sie unterstützen Sie dabei, bei der Änderung des Codes Fehler zu vermeiden.  
   
@@ -51,7 +35,7 @@ Sie können Anforderungen und architektonische Modelle verwenden, um die Tests d
  Beim Testen von Subsystemen werden dieselben Prinzipien auf die Hauptkomponenten eines Systems angewendet. Jede Komponente wird getrennt von den anderen Komponenten getestet. Subsystemtests konzentrieren sich auf das Verhalten, das auf den Benutzeroberflächen oder der API der Komponente sichtbar ist.  
   
 ## <a name="deriving-system-tests-from-a-requirements-model"></a>Ableiten von Systemtests aus einem Anforderungsmodell  
- Sie können eine Beziehung zwischen Systemtests und einem Anforderungsmodell erstellen und verwalten. Um diese Beziehung zu erstellen, schreiben Sie Tests, die den wichtigsten Elementen des Anforderungsmodells entsprechen. Visual Studio hilft Ihnen, diese Beziehung zu verwalten, indem es Ihnen ermöglicht, Verknüpfungen zwischen den Tests und Teilen des Modells zu erstellen. Weitere Informationen über Anforderungsmodelle finden Sie unter [Modellieren von benutzeranforderungen](../modeling/model-user-requirements.md).  
+ Sie können eine Beziehung zwischen Systemtests und einem Anforderungsmodell erstellen und verwalten. Um diese Beziehung zu erstellen, schreiben Sie Tests, die den wichtigsten Elementen des Anforderungsmodells entsprechen. Visual Studio hilft Ihnen, diese Beziehung zu verwalten, indem es Ihnen ermöglicht, Verknüpfungen zwischen den Tests und Teilen des Modells zu erstellen. Weitere Informationen zu Anforderungsmodelle, finden Sie unter [Modellieren von benutzeranforderungen](../modeling/model-user-requirements.md).  
   
 ### <a name="write-tests-for-each-use-case"></a>Schreiben von Tests für jeden Anwendungsfall  
  Bei Verwendung von [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] können Sie eine Gruppe von Tests für jeden Anwendungsfall erstellen, den Sie im Anforderungsmodell definiert haben. Wenn Sie beispielsweise einen Anwendungsfall zur Bestellung einer Mahlzeit haben, der das Erstellen der Bestellung und das Hinzufügen des Position zur Bestellung umfasst, können Sie Tests für den allgemeinen und den ausführlicheren Anwendungsfall erstellen. 
@@ -71,7 +55,7 @@ Sie können Anforderungen und architektonische Modelle verwenden, um die Tests d
 -   Wenn Sie die Tests entwerfen, trennen Sie die Auswahl der Testdaten vom Code oder Skript, das bestimmt, ob die Nachbedingung erreicht wurde. Beispielsweise kann ein Test einer einfachen arithmetischen Funktion folgendermaßen aussehen: Eingabe ist 4. Prüfen Sie, ob die Ausgabe 2 ist. Entwerfen Sie das Skript stattdessen folgendermaßen: Wählen Sie eine Eingabe. Multiplizieren Sie die Ausgabe mit sich selbst, und prüfen Sie, ob das Ergebnis der ursprünglichen Eingabe entspricht. Durch dieses Format können Sie die Testeingaben variieren, ohne den Hauptteil des Tests zu ändern.  
   
 #### <a name="linking-tests-to-use-cases"></a>Verknüpfen von Tests mit Anwendungsfällen  
- Bei Verwendung von [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)] zum Entwerfen und die Tests ausführen, können Sie die Tests unter der Voraussetzung, Anwendungsfall- oder User Story-Arbeitsaufgaben organisieren. Sie können diese Arbeitsaufgaben mit Anwendungsfällen im Modell verknüpfen. Auf diese Weise können Sie Änderungen der Anforderungen für die Tests schnell nachverfolgen und den Fortschritt der einzelnen Anwendungsfälle prüfen.  
+ Bei Verwendung von [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)] zum Entwerfen und Ausführen der Tests, können Sie die Tests unter Anforderung, Anwendungsfall oder User Story Arbeitsaufgaben organisieren. Sie können diese Arbeitsaufgaben mit Anwendungsfällen im Modell verknüpfen. Auf diese Weise können Sie Änderungen der Anforderungen für die Tests schnell nachverfolgen und den Fortschritt der einzelnen Anwendungsfälle prüfen.  
   
 ###### <a name="to-link-tests-to-a-use-case"></a>So verknüpfen Sie Tests mit einem Anwendungsfall  
   
@@ -81,7 +65,7 @@ Sie können Anforderungen und architektonische Modelle verwenden, um die Tests d
   
 2.  Verknüpfen Sie die Anforderungsarbeitsaufgabe mit einem oder mehreren Anwendungsfällen im Modell.  
   
-     In einem Anwendungsfalldiagramm mit der rechten Maustaste eines Anwendungsfalls, und klicken Sie dann auf **mit Arbeitsaufgabe verknüpfen**. Weitere Informationen finden Sie unter [Verknüpfen von Modellelementen und Arbeitsaufgaben](../modeling/link-model-elements-and-work-items.md).  
+     Klicken Sie in einem Anwendungsfalldiagramm mit der rechten Maustaste eines Anwendungsfalls, und klicken Sie dann auf **mit Arbeitsaufgabe verknüpfen**. 
   
 3.  Fügen Sie der Testsammlung Testfälle hinzu, die die Anwendungsfälle überprüfen.  
   
@@ -128,7 +112,7 @@ Assert (countAfter == countBefore = 1);
 ## <a name="deriving-subsystem-tests-from-models"></a>Ableiten von Subsystemtests aus Modellen  
  Im allgemeinen Entwurf eines großen Systems können Sie Komponenten oder Subsysteme identifizieren. Diese stellen Teile dar, die getrennt voneinander entworfen werden können oder sich auf verschiedenen Computern befinden oder bei denen es sich um wiederverwendbare Module handelt, die auf verschiedene Weise kombiniert werden können. 
   
- Sie können auf jede Hauptkomponente die gleichen Grundsätze wie auf das gesamte System anwenden. In einem großen Projekt kann jede Komponente über ein eigenes Anforderungsmodell verfügen. In kleineren Projekten kann ein Architekturmodell oder ein allgemeiner Entwurf erstellt werden, um die Hauptkomponenten und ihre Interaktionen zu zeigen. Weitere Informationen finden Sie unter [Modellieren der Architektur Ihrer app](../modeling/model-your-app-s-architecture.md).  
+ Sie können auf jede Hauptkomponente die gleichen Grundsätze wie auf das gesamte System anwenden. In einem großen Projekt kann jede Komponente über ein eigenes Anforderungsmodell verfügen. In kleineren Projekten kann ein Architekturmodell oder ein allgemeiner Entwurf erstellt werden, um die Hauptkomponenten und ihre Interaktionen zu zeigen. Weitere Informationen finden Sie unter [modellieren Ihrer app-Architektur](../modeling/model-your-app-s-architecture.md).  
   
  In beiden Fällen können Sie eine Beziehung zwischen den Modellelementen und den Subsystemtests auf die gleiche Weise herstellen, wie Sie dies zwischen dem Anforderungsmodell und den Systemtests tun würden.  
   
@@ -146,7 +130,7 @@ Assert (countAfter == countBefore = 1);
   
  Aus Testsicht kann ein Anforderungsmodell als eine Kurzschreibweise für die Tests betrachtet werden. Folglich ist es wichtig, die Beziehung zwischen Tests und Modell über das gesamte Projekt hinweg aufrechtzuerhalten.  
   
-##  <a name="Attaching"></a>Anfügen von Testsituationen an Modellelemente  
+##  <a name="Attaching"></a>Anfügen von Testfällen Modellelementen  
  Wenn das Projekt [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)] verwendet, können Sie Tests mit den Elementen im Modell verknüpfen. Dadurch können Sie schnell die Tests finden, die von einer Änderung der Anforderungen betroffen sind, und nachverfolgen, in welchem Umfang eine Anforderung erfüllt wurde.  
   
  Sie können Tests mit allen Arten von Elementen verknüpfen. Hier einige Beispiele:  
@@ -169,13 +153,12 @@ Assert (countAfter == countBefore = 1);
   
 2.  Verknüpfen Sie die Anforderungsarbeitsaufgabe mit einem oder mehreren Elementen im Modell.  
   
-     Klicken Sie in einem Modellierungsdiagramm mit der rechten Maustaste eine Element, Kommentar oder eine Beziehung, und klicken Sie dann auf **mit Arbeitsaufgabe verknüpfen**. Weitere Informationen finden Sie unter [Verknüpfen von Modellelementen und Arbeitsaufgaben](../modeling/link-model-elements-and-work-items.md).  
+     Klicken Sie in einem Modellierungsdiagramm Maustaste auf ein Element, Kommentar oder Beziehung, und klicken Sie dann auf **mit Arbeitsaufgabe verknüpfen**.
   
 3.  Fügen Sie der Testsammlung Testfälle hinzu, die die im Modellelement ausgedrückte Anforderung überprüfen.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Erstellen von Modellen für Ihre app](../modeling/create-models-for-your-app.md)   
- [Modellanforderungen](../modeling/model-user-requirements.md)   
- [Modellieren der Architektur Ihrer app](../modeling/model-your-app-s-architecture.md)   
+ [Modellieren von benutzeranforderungen](../modeling/model-user-requirements.md)   
+ [Modellieren Sie Ihrer app-Architektur](../modeling/model-your-app-s-architecture.md)   
  [Analysieren und Modellieren der Architektur](../modeling/analyze-and-model-your-architecture.md)
-

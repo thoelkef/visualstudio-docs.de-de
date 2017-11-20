@@ -1,29 +1,33 @@
 ---
-title: "Icon-Element (Visual Studio-Vorlagen) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "http://schemas.microsoft.com/developer/vstemplate/2005#Icon"
-helpviewer_keywords: 
-  - "Icon-Element [Visual Studio-Projektvorlagen]"
+title: Icon-Element (Visual Studio-Vorlagen) | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: http://schemas.microsoft.com/developer/vstemplate/2005#Icon
+helpviewer_keywords: Icon element [Visual Studio project templates]
 ms.assetid: ec01d903-f4c2-4ca2-9cbc-e939ec84016c
-caps.latest.revision: 14
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 14
+caps.latest.revision: "14"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 00dd81c93e089a840c99efbd6165f005aff88b57
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Icon-Element (Visual Studio-Vorlagen)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Gibt den Pfad und den Dateinamen der Bilddatei an, die als Symbol dient, das in den Dialogfeldern **Neues Projekt** oder **Neues Element hinzufügen** für die Vorlage angezeigt wird.  
+# <a name="icon-element-visual-studio-templates"></a>Icon-Element (Visual Studio-Vorlagen)
+Gibt den Pfad und den Dateinamen der Bilddatei, die als Symbol dient, die entweder in angezeigt wird der **neues Projekt** oder **neues Element hinzufügen** (Dialogfeld), für die Vorlage.  
   
-## Syntax  
+ \<VSTemplate >  
+ \<TemplateData >  
+ \<Symbol ">  
+  
+## <a name="syntax"></a>Syntax  
   
 ```  
 <Icon>  
@@ -35,35 +39,35 @@ Gibt den Pfad und den Dateinamen der Bilddatei an, die als Symbol dient, das in 
 <Icon Package="{PackageID}" ID="ResourceID" />  
 ```  
   
-## Attribute und Elemente  
+## <a name="attributes-and-elements"></a>Attribute und Elemente  
  In den folgenden Abschnitten werden Attribute sowie untergeordnete und übergeordnete Elemente beschrieben.  
   
-### Attribute  
+### <a name="attributes"></a>Attribute  
   
-|Attribut|Description|  
-|--------------|-----------------|  
-|`Package`|Optionales Attribut für komplexere Benutzerszenarien.<br /><br /> Eine GUID, durch die die ID des Visual Studio\-Pakets angegeben wird.|  
-|`ID`|Optionales Attribut für komplexere Benutzerszenarien.<br /><br /> Gibt die ID der Visual Studio\-Ressource an.|  
+|Attribut|Beschreibung|  
+|---------------|-----------------|  
+|`Package`|Optionales Attribut für erweiterte Szenarien.<br /><br /> Eine GUID, der angibt, die Visual Studio-Paket-ID auf.|  
+|`ID`|Optionales Attribut für erweiterte Szenarien.<br /><br /> Gibt an, die Visual Studio-Ressourcen-ID.|  
   
-### Untergeordnete Elemente  
- Keine.  
+### <a name="child-elements"></a>Untergeordnete Elemente  
+ Keine  
   
-### Übergeordnete Elemente  
+### <a name="parent-elements"></a>Übergeordnete Elemente  
   
-|Element|Description|  
+|Element|Beschreibung|  
 |-------------|-----------------|  
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Erforderliches Element.<br /><br /> Kategorisiert die Vorlage und definiert, wie diese in den Dialogfeldern **Neues Projekt** oder **Neues Element hinzufügen** angezeigt wird.|  
   
-## Textwert  
- Ein Textwert ist erforderlich, es sei denn, das `Package`\-Attribut und das `ID`\-Attribut werden verwendet.  
+## <a name="text-value"></a>Textwert  
+ Ein Textwert ist erforderlich, es sei denn, die `Package` und `ID` Attribute verwendet werden.  
   
- Der Text gibt den Pfad und Dateinamen des Vorlagensymbols an, das im Dialogfeld **Neues Projekt** angezeigt wird.  
+ Der Text enthält, der Pfad und Dateiname des Vorlagensymbols, die in angezeigt werden die **neues Projekt** (Dialogfeld).  
   
-## Hinweise  
+## <a name="remarks"></a>Hinweise  
  `Icon` ist ein erforderliches untergeordnetes Element von `TemplateData`.  
   
-## Beispiel  
- Im folgenden Beispiel werden die Metadaten für eine Projektvorlage einer [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]\-Anwendung veranschaulicht.  
+## <a name="example"></a>Beispiel  
+ Im folgenden Beispiel werden die Metadaten für eine Projektvorlage einer [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]-Anwendung veranschaulicht.  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  
@@ -89,6 +93,6 @@ Gibt den Pfad und den Dateinamen der Bilddatei an, die als Symbol dient, das in 
 </VSTemplate>  
 ```  
   
-## Siehe auch  
- [Schemareferenz zu Visual Studio\-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)   
- [Erstellen von benutzerdefinierten Projekt\- und Elementvorlagen](../ide/creating-project-and-item-templates.md)
+## <a name="see-also"></a>Siehe auch  
+ [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)   
+ [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)

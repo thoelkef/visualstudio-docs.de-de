@@ -1,48 +1,50 @@
 ---
-title: "Unterschiede zwischen Sandkasten- und Farml&#246;sungen"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "Farmlösungen [SharePoint-Entwicklung in Visual Studio]"
-  - "Sandkastenlösungen [SharePoint-Entwicklung in Visual Studio]"
-  - "SharePoint-Entwicklung in Visual Studio, Farmlösungen"
-  - "SharePoint-Entwicklung in Visual Studio, Sandkastenlösungen"
+title: "Unterschiede zwischen Sandkasten- und Farmlösungen | Microsoft Docs"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- VB
+- CSharp
+helpviewer_keywords:
+- SharePoint development in Visual Studio, sandboxed solutions
+- sandboxed solutions [SharePoint development in Visual Studio]
+- SharePoint development in Visual Studio, farm solutions
+- farm solutions [SharePoint development in Visual Studio]
 ms.assetid: 43beb7e7-0cd9-4a8f-bb72-6b1e0cba5be8
-caps.latest.revision: 12
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "12"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: d82bc012b2be9736b83fc07f7d0a83d354dda002
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Unterschiede zwischen Sandkasten- und Farml&#246;sungen
-  Bei der Kompilierung einer SharePoint\-Lösung wird sie auf dem SharePoint\-Server bereitgestellt, und ein Debugger zum Debuggen der Lösung wird angefügt.  Der Prozess, der zum Debuggen der Lösung verwendet wird, hängt von der Einstellung der Eigenschaft "Sandkastenlösung" \("Sandkastenlösung" oder "Farmlösung"\) ab.  
+# <a name="differences-between-sandboxed-and-farm-solutions"></a>Unterschiede zwischen Sandkasten- und Farmlösungen
+  Beim Kompilieren einer SharePoint-Lösung bereitgestellt wird, auf dem SharePoint-Server und ein Debugger angehängt, um es zu debuggen. Der Prozess zum Debuggen der Projektmappe verwendet, hängt von der Einstellung der Eigenschaft Sandkastenlösung: sandkastenlösung oder farmlösung.  
   
  Weitere Informationen finden Sie unter [Überlegungen zu Sandkastenlösungen](../sharepoint/sandboxed-solution-considerations.md).  
   
-## Farmlösungen  
- Farmlösungen, die im IIS\-Arbeitsprozess \(W3WP.exe\) gehostet werden, führen Code aus, der sich auf die ganze Farm auswirken kann.  Beim Debuggen eines SharePoint\-Projekts, dessen Eigenschaft "Sandkastenlösung" auf "Farmlösung" festgelegt ist, wird der IIS\-Anwendungspool des Systems wiederverwendet, bevor SharePoint die Funktion zurückzieht oder bereitstellt, um so vom IIS\-Arbeitsprozess gesperrte Dateien freizugeben.  Nur der IIS\-Anwendungspool für die Website\-URL des SharePoint\-Projekts wird wiederverwendet.  
+## <a name="farm-solutions"></a>Farmlösungen  
+ Farmlösungen, die in der IIS-Arbeitsprozess (W3WP.exe) gehostet werden, führen Sie Code, der die gesamte Farm auswirken kann. Wenn Sie ein SharePoint-Projekt debuggen, deren Sandkastenlösung-Eigenschaft auf "farmlösung" festgelegt ist, verwendet das System IIS-Anwendungspool wieder, bevor SharePoint zurückgezogen oder die Funktion stellt, um alle vom IIS-Arbeitsprozess gesperrte Dateien freigegeben. Nur der IIS-Anwendungspool für die Website-URL der SharePoint-Projekt wird wiederverwendet.  
   
-## Sandkastenlösungen  
- Sandkastenlösungen, die im SharePoint\-Anwendercodelösungs\-Arbeitsprozess \(SPUCWorkerProcess.exe\) gehostet werden, führen Code aus, der sich auf nur die Websiteauflistung der Lösung auswirken kann.  Da Sandkastenlösungen nicht im IIS\-Arbeitsprozess ausgeführt werden, muss weder der IIS\-Anwendungspool noch der IIS\-Server neu gestartet werden.  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] fügt den Debugger an den SPUCWorkerProcess\-Prozess an, der vom SPUserCodeV4\-Dienst in SharePoint automatisch ausgelöst und gesteuert wird.  Der SPUCWorkerProcess\-Prozess muss nicht wiederverwendet werden, um die neueste Version der Lösung zu laden.  
+## <a name="sandboxed-solutions"></a>Sandkastenlösungen  
+ Sandkastenlösungen, die in SharePoint Benutzer Code Lösung Worker Prozess (SPUCWorkerProcess.exe) gehostet werden, führen Sie Code, der nur die Websitesammlung der Lösung auswirken kann. Weil sandkastenlösungen nicht in der IIS-Arbeitsprozess ausgeführt werden, muss weder den IIS-Server als auch der IIS-Anwendungspool neu starten. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Fügt der Debugger an den SPUCWorkerProcess-Prozess, der der SPUserCodeV4-Dienst in SharePoint automatisch ausgelöst und die Steuerelemente. Es ist nicht erforderlich, für den SPUCWorkerProcess-Prozess wiederverwendet, um die neueste Version der Projektmappe zu laden.  
   
-## Beide Lösungstypen  
- Mit beiden Lösungstypen wird der Debugger von [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] an den Browser angefügt, um clientseitiges Skriptdebugging zu aktivieren.  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] verwendet zu diesem Zweck das Skriptdebugmodul.  Um Skriptdebugging zu aktivieren, müssen bei Aufforderung die Standardbrowsereinstellungen geändert werden.  
+## <a name="either-type-of-solution"></a>Geben Sie entweder der Lösung  
+ Mit beiden Lösungstyp [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] wird auch der Debugger an den Browser anzuweisen, clientseitiges Skriptdebuggen zu aktivieren. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Das Skript Debugmodul für diesen Zweck verwendet. Um Debuggen zu aktivieren, müssen Sie die Standardeinstellungen für den Browser ändern, wenn Sie aufgefordert werden.  
   
- [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] fügt den Debugger nur an die W3WP\- oder SPUCWorkerProcess\-Prozesse an, von denen die aktuelle Website ausgeführt wird.  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] fügt zudem das verwaltete COM\-Plus\-Modul und das Workflowdebugmodul an.  
+ [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Fügt der Debugger nur an die W3WP oder SPUCWorkerProcess-Prozesse, die mit dem aktuellen Standort an. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Außerdem fügt der verwalteten COM-Plus- und Debugmodule Workflow.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Debuggen von SharePoint-Lösungen](../sharepoint/debugging-sharepoint-solutions.md)   
  [Erstellen und Debuggen von SharePoint-Lösungen](../sharepoint/building-and-debugging-sharepoint-solutions.md)   
  [Überlegungen zu Sandkastenlösungen](../sharepoint/sandboxed-solution-considerations.md)  

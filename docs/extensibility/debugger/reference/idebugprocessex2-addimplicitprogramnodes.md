@@ -1,62 +1,62 @@
 ---
-title: "IDebugProcessEx2::AddImplicitProgramNodes | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugProcessEx2::AddImplicitProgramNodes"
-helpviewer_keywords: 
-  - "IDebugProcessEx2::AddImplicitProgramNodes-Methode"
+title: IDebugProcessEx2::AddImplicitProgramNodes | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugProcessEx2::AddImplicitProgramNodes
+helpviewer_keywords: IDebugProcessEx2::AddImplicitProgramNodes method
 ms.assetid: 8b491b00-f9e7-45b3-9115-fe58c3464289
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 799ac5ee39322579ab60901ffe2abb2f2a683138
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugProcessEx2::AddImplicitProgramNodes
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Diese Methode fügt für jedes Programm einen Knoten hinzu, das Debuggen Modul \(DE\) angegeben hat.  
+# <a name="idebugprocessex2addimplicitprogramnodes"></a>IDebugProcessEx2::AddImplicitProgramNodes
+Diese Methode fügt einen Knoten Programm für jedes Debugmodul (DE) angegeben.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT AddImplicitProgramNodes(  
-   REFGUID guidLaunchingEngine,  
-   GUID*   rgguidSpecificEngines,  
-   DWORD   celtSpecificEngines  
+   REFGUID guidLaunchingEngine,  
+   GUID*   rgguidSpecificEngines,  
+   DWORD   celtSpecificEngines  
 );  
 ```  
   
-```c#  
+```csharp  
 int AddImplicitProgramNodes(  
-   ref Guid guidLaunchingEngine,  
-   Guid[]   rgguidSpecificEngines,  
-   uint     celtSpecificEngines  
+   ref Guid guidLaunchingEngine,  
+   Guid[]   rgguidSpecificEngines,  
+   uint     celtSpecificEngines  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `guidLaunchingEngine`  
- \[in\]  DE `GUID` aus, das verwendet werden soll, um Programme zu starten \(und wird angenommen, dass seine eigenen Knoten Programm hinzufügen\).  
+ [in] Die `GUID` ein de, die zum Starten von Programmen verwendet werden soll (und wird davon ausgegangen, dass eine eigene Anwendung Knoten hinzufügen).  
   
  `rgguidSpecificEngines`  
- \[in\]  Array von `GUID`aus dem Knoten für das Programm hinzugefügt werden.  
+ [in] Array von `GUID`s DEs für die programmausführung Knoten hinzugefügt werden.  
   
  `celtSpecificEngines`  
- \[in\]  Die Anzahl der `GUID`im `rgguidSpecificEngines` Array.  
+ [in] Die Anzahl der `GUID`s in der `rgguidSpecificEngines` Array.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Hinweise  
- DE[Programm\-Knoten](../../../extensibility/debugger/program-nodes.md) wird für jedes hinzugefügte, das in `rgguidSpecificEngines`— moduls Starten ohne den aufgeführten \(wie angegeben\), das in `guidLaunchingEngine`angenommen wird, um den eigenen Knoten Programms hinzuzufügen, wenn es ein Programm gestartet wird.  
+## <a name="remarks"></a>Hinweise  
+ [Programmieren von Knoten](../../../extensibility/debugger/program-nodes.md) hinzugefügt werden, für jede DE in aufgeführt `rgguidSpecificEngines`– mit Ausnahme der starten-Moduls (in festgelegten `guidLaunchingEngine`), dem wird davon ausgegangen, dass einen eigene Anwendung Knoten hinzufügen, wenn sie ein Programm gestartet wird.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDebugProgramEx2](../../../extensibility/debugger/reference/idebugprogramex2.md)   
- [Programm\-Knoten](../../../extensibility/debugger/program-nodes.md)
+ [Programmknoten](../../../extensibility/debugger/program-nodes.md)

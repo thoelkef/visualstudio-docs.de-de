@@ -1,25 +1,29 @@
 ---
-title: "IDebugSessionProviderEx:CanJITDebug | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IDebugSessionProviderEx:CanJITDebug | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IDebugSessionProviderEx:CanJITDebug
 apilocation: scrobj.dll
 ms.assetid: 68f91bed-ca69-46b5-b517-ca9ca80b8803
-caps.latest.revision: 3
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 3
+caps.latest.revision: "3"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 1dd2f9245f6691b2faaae75e064a299a22c59255
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# IDebugSessionProviderEx:CanJITDebug
-Bestimmt, ob ein gegebener Prozess mit Just\-in\-timedebugging gedebuggt werden kann.  
+# <a name="idebugsessionproviderexcanjitdebug"></a>IDebugSessionProviderEx:CanJITDebug
+Bestimmt, ob ein angegebene Prozess debuggten mit JIT-Debuggen kann.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 HRESULT CanJITDebug(  
@@ -27,18 +31,18 @@ HRESULT CanJITDebug(
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `pid`  
- \[in\] Die Prozess\-ID, damit der Prozess gedebuggt werden kann.  
+ [in] Die Prozess-ID für den Prozess, die debuggt werden.  
   
-## Rückgabewert  
- Die Methode gibt ein `HRESULT` zurück.  Zu den möglichen Werten zählen, aber nicht zu, die in der folgenden Tabelle beschränkt.  
+## <a name="return-value"></a>Rückgabewert  
+ Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
   
-|Wert|Description|  
-|----------|-----------------|  
+|Wert|Beschreibung|  
+|-----------|-----------------|  
 |`S_OK`|Die Methode war erfolgreich.|  
   
-## Hinweise  
+## <a name="remarks"></a>Hinweise  
   
-## Siehe auch  
- [IDebugSessionProviderEx\-Schnittstelle](../../winscript/reference/idebugsessionproviderex-interface.md)
+## <a name="see-also"></a>Siehe auch  
+ [IDebugSessionProviderEx-Schnittstelle](../../winscript/reference/idebugsessionproviderex-interface.md)

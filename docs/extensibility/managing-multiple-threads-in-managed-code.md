@@ -4,34 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 59730063-cc29-4dae-baff-2234ad8d0c8f
-caps.latest.revision: 7
+caps.latest.revision: "7"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: c246c8be1d10893b018d5d0c5727d4af42efdc6b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 21fcc9388b40baa9e003b4beb876ba2f0f23fbaf
-ms.contentlocale: de-de
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="how-to-managing-multiple-threads-in-managed-code"></a>Vorgehensweise: Verwalten von mehreren Threads in verwaltetem Code
 Wenn Sie eine verwaltete VSPackage-Erweiterung, die asynchronen Methoden aufruft oder Vorgänge, die Threads als dem Visual Studio-UI-Thread ausgeführt hat haben, sollten Sie die unten angegebenen Richtlinien befolgen. Da nicht für die Arbeit in einem anderen Thread abgeschlossen warten muss, können Sie den UI-Thread reaktionsfähig bleibt. Sie können Lesbarkeit Ihres Codes erschweren effizienter, da Sie nicht über zusätzliche Threads verfügen, die Stapelspeicher einnehmen, und können zuverlässiger und einfacher zu debuggen, da Sie, Deadlocks und Blockaden vermeiden vornehmen.  

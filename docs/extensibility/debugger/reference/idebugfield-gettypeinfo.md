@@ -1,53 +1,53 @@
 ---
-title: "IDebugField::GetTypeInfo | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugField::GetTypeInfo"
-helpviewer_keywords: 
-  - "IDebugField::GetTypeInfo-Methode"
+title: IDebugField::GetTypeInfo | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugField::GetTypeInfo
+helpviewer_keywords: IDebugField::GetTypeInfo method
 ms.assetid: bb5acfa3-04c3-4088-be84-9ff8926cd16f
-caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 11b04ce148fbfe8129f62c21da0a0b015ed6e8f3
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugField::GetTypeInfo
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Diese Methode ruft TYPE\-unabhängige Informationen über das Symbol oder den Typ ab.  
+# <a name="idebugfieldgettypeinfo"></a>IDebugField::GetTypeInfo
+Diese Methode ruft die typunabhängig Informationen über das Symbol oder den Typ ab.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT GetTypeInfo(   
-   TYPE_INFO* pTypeInfo  
+```cpp  
+HRESULT GetTypeInfo(   
+   TYPE_INFO* pTypeInfo  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetTypeInfo(  
-   TYPE_INFO[] pTypeInfo  
+   TYPE_INFO[] pTypeInfo  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `pTypeInfo`  
- \[out\]  Gibt Typinformationen in der angegebenen [TYPE\_INFO](../../../extensibility/debugger/reference/type-info.md) Struktur zurück.  
+ [out] Gibt die Typinformationen im bereitgestellten [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) Struktur.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Hinweise  
- TYPE\-unabhängige Informationen würden, z. B. AppDomain, das Modul und die Klasse umfassen, die das Symbol enthält.  
+## <a name="remarks"></a>Hinweise  
+ Typunabhängig Informationen zählen, z. B. der AppDomain, das Modul und die Klasse, die das Symbol enthält.  
   
-## Siehe auch  
- [GetType](../../../extensibility/debugger/reference/idebugfield-gettype.md)   
+## <a name="see-also"></a>Siehe auch  
+ ["GetType"](../../../extensibility/debugger/reference/idebugfield-gettype.md)   
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)   
- [TYPE\_INFO](../../../extensibility/debugger/reference/type-info.md)
+ [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md)

@@ -1,37 +1,39 @@
 ---
-title: "Optimieren der Men&#252;- und Symbolleistenbefehle | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Befehle [Visual Studio] Menüs"
-  - "Symbolleisten-Befehle [Visual Studio]"
-  - "Menüs [Visual Studio SDK] Befehle"
-  - "Implementieren von Menübefehlen"
-  - "Symbolleisten [Visual Studio] Befehle"
+title: "Optimieren der Menü- und Symbolleistenbefehle | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- commands [Visual Studio], menus
+- commands [Visual Studio], toolbars
+- menus [Visual Studio SDK], commands
+- menu commands, implementing
+- toolbars [Visual Studio], commands
 ms.assetid: 8385f1a6-1e98-4dca-83d2-fcbed7177242
-caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 08502ab2e1161d753323642589ed00b00ed94ad2
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Optimieren der Men&#252;- und Symbolleistenbefehle
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Das Hinzufügen von VSPackages und die entsprechenden Befehle zum [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] kann dazu führen, dass eine überfüllt Benutzeroberfläche.[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] bietet Methoden zum UI\-Befehl Verwirrung zu minimieren.  
+# <a name="optimizing-menu-and-toolbar-commands"></a>Optimieren der Menü- und Symbolleiste
+Das Hinzufügen von VSPackages und ihre entsprechenden Befehle zum [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] kann dazu führen, dass ein Rechenzentrum weiter aufzurüsten UI. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]bietet Möglichkeiten zur Unterstützung von UI-Befehl verwirrungen zu vermeiden.  
   
-## In diesem Abschnitt  
- [Befehle stellen zur Verfügung](../../extensibility/internals/making-commands-available.md)  
- Enthält allgemeine Richtlinien für das Minimieren von Versammeln der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Benutzeroberfläche beim VSPackages hinzufügen.  
+## <a name="in-this-section"></a>In diesem Abschnitt  
+ [Verfügbarmachen von Befehlen](../../extensibility/internals/making-commands-available.md)  
+ Enthält allgemeine Richtlinien zum Minimieren der Versammeln der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] UI, wenn Sie VSPackages hinzufügen.  
   
  [Richtlinien zur Platzierung](../../extensibility/internals/command-placement-guidelines.md)  
- Bietet spezielle Richtlinien für die Implementierung eines VSPackages entsprechend der Größe von den Befehlssatz.  
+ Stellt bestimmte Richtlinien für die Implementierung eines VSPackages entsprechend der Größe für den Befehlssatz.  
   
-## Verwandte Abschnitte  
+## <a name="related-sections"></a>Verwandte Abschnitte  
  [Befehle, Menüs und Symbolleisten](../../extensibility/internals/commands-menus-and-toolbars.md)  
- Erläutert, wie eine Benutzeroberfläche erstellen, die Menüs, Symbolleisten und Kombinationsfelder Befehl enthält.
+ Erläutert, wie eine Benutzeroberfläche mit Menüs, Symbolleisten und Kombinationsfeldern für Befehle erstellt wird.

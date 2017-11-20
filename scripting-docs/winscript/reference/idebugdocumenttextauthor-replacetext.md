@@ -1,27 +1,30 @@
 ---
-title: "IDebugDocumentTextAuthor::ReplaceText | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IDebugDocumentTextAuthor::ReplaceText | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IDebugDocumentTextAuthor.ReplaceText
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "IDebugDocumentTextAuthor::ReplaceText"
+helpviewer_keywords: IDebugDocumentTextAuthor::ReplaceText
 ms.assetid: f89304e6-5be0-45a5-947d-2c59c3c0a05e
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 6aa7ef34d035ad89a096414c285b4f66a4f4fa1e
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# IDebugDocumentTextAuthor::ReplaceText
-Ersetzt Text im Dokument.  
+# <a name="idebugdocumenttextauthorreplacetext"></a>IDebugDocumentTextAuthor::ReplaceText
+Ersetzt Text in das Dokument.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 HRESULT ReplaceText(  
@@ -31,25 +34,25 @@ HRESULT ReplaceText(
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `cCharacterPosition`  
- \[in\] starten Sie Speicherort des Zeichenbereichs, um zu ersetzen.  
+ [in] Die Startposition des Zeichenbereichs zu ersetzen.  
   
  `cNumToReplace`  
- \[in\] Zahl Zeichen zu ersetzen.  
+ [in] Anzahl der zu ersetzenden Zeichen.  
   
  `pcharText[]`  
- \[in\] Ein Puffer, der die neuen Zeichen enthält, um die alten Zeichen zu ersetzen.  
+ [in] Ein Puffer mit den neuen Zeichen, um die alte Zeichen zu ersetzen.  
   
-## Rückgabewert  
- Die Methode gibt ein `HRESULT` zurück.  Zu den möglichen Werten zählen, aber nicht zu, die in der folgenden Tabelle beschränkt.  
+## <a name="return-value"></a>Rückgabewert  
+ Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
   
-|Wert|Description|  
-|----------|-----------------|  
+|Wert|Beschreibung|  
+|-----------|-----------------|  
 |`S_OK`|Die Methode war erfolgreich.|  
   
-## Hinweise  
- Diese Methode ersetzt Text im Dokument.  
+## <a name="remarks"></a>Hinweise  
+ Diese Methode ersetzt Text in das Dokument.  
   
-## Siehe auch  
- [IDebugDocumentTextAuthor\-Schnittstelle](../../winscript/reference/idebugdocumenttextauthor-interface.md)
+## <a name="see-also"></a>Siehe auch  
+ [IDebugDocumentTextAuthor-Schnittstelle](../../winscript/reference/idebugdocumenttextauthor-interface.md)

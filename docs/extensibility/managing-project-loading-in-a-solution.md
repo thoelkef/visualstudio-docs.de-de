@@ -1,113 +1,117 @@
 ---
-title: "Verwalten von Projekt laden in einer Projektmappe | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Lösungen, Verwalten von Projekt laden"
+title: Verwalten von Projekt laden in einer Projektmappe | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: solutions, managing project loading
 ms.assetid: 097c89d0-f76a-4aaf-ada9-9a778bd179a0
-caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: b28db42e17e95ea7c354f5ba4d7b0c231c2d2fe5
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Verwalten von Projekt laden in einer Projektmappe
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Visual Studio\-Projektmappen können es sich um eine große Anzahl von Projekten enthalten. Das Standardverhalten von Visual Studio wird auf alle Projekte in einer Projektmappe gleichzeitig zu laden, wenn die Projektmappe geöffnet wird und nicht auf dem Benutzer ermöglichen, die Projekte zugreifen können, bis alle abgeschlossen sind. Wenn der Prozess des Ladens Projekt mehr als zwei Minuten zuletzt wird, wird eine Statusanzeige angezeigt, die Anzahl der geladenen Projekte und die Gesamtzahl der Projekte. Der Benutzer kann Projekte entladen, während Sie in einer Projektmappe mit mehreren Projekten arbeiten, aber diese Prozedur umfasst einige Nachteile: entladen Projekte sind nicht als Teil eines Befehls für die Projektmappe neu erstellt, und IntelliSense\-Beschreibungen der Typen und Member der abgeschlossenen Projekten werden nicht angezeigt.  
+# <a name="managing-project-loading-in-a-solution"></a>Verwalten von Projekt laden in einer Projektmappe
+Visual Studio-Projektmappen können eine große Anzahl von Projekten enthalten. Das Standardverhalten für Visual Studio wird beim Laden aller Projekte in einer Projektmappe zum Zeitpunkt der Projektmappe geöffnet ist und nicht auf ermöglicht dem Benutzer die Projekte zugreifen, bis alle von ihnen geladen wurden. Wenn die während des Ladevorgangs Projekt mehr als zwei Minuten dauert, wird eine Statusanzeige angezeigt, die Anzahl der geladenen Projekte und die Gesamtzahl der Projekte. Der Benutzer kann Projekte entladen, während in einer Projektmappe mit mehreren Projekten arbeiten, aber diese Prozedur umfasst einige Nachteile: die entladen Projekte werden nicht als Teil eines Befehls für die Projektmappe neu erstellen erstellt, und IntelliSense Beschreibungen von Typen und Member von "geschlossen" Projekte werden nicht angezeigt.  
   
- Entwickler können Ladezeiten Lösung verringern und Projekt Ladeverhaltens durch Erstellen einer Lösung Last Manager verwalten. Der Lösung Manager kann anderen Projekt laden Prioritäten für bestimmte Projekte oder Projekttypen festlegen, stellen Sie sicher, dass Projekte vor dem Erstellen eines Builds Hintergrund geladen werden, verzögert Hintergrund geladen, bis andere Tasks im Hintergrund abgeschlossen sind, und andere Projekt laden Verwaltungsaufgaben ausführen.  
+ Entwickler können Lösung Ladezeiten reduzieren und Projekt loading-Verhaltens durch das Erstellen einer Lösung Last Manager verwalten. Die Lösung des Managers anderen Projekt laden Prioritäten für bestimmte Projekte oder Projekttypen festgelegt, stellen Sie sicher, dass Projekte vor dem Starten eines Builds im Hintergrund geladen werden, verzögert werden im Hintergrund geladen, bis andere Vorgänge im Hintergrund abgeschlossen sind und ausführen andere Verwaltungsaufgaben für den Projekt laden.  
   
-## Projekt Laden von Prioritäten  
- Visual Studio definiert vier Prioritäten von anderen Projekt laden:  
+## <a name="project-loading-priorities"></a>Projekt Laden von Prioritäten  
+ Visual Studio definiert vier verschiedene laden Projektprioritäten:  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop._VSProjectLoadPriority> \(Standard\): Wenn eine Projektmappe geöffnet ist, werden Projekte asynchron geladen. Wenn dieser Priorität auf eine entladene Projekt festgelegt wird, nachdem die Projektmappe bereits geöffnet ist, wird das Projekt am nächsten im Leerlauf geladen werden.  
+-   <xref:Microsoft.VisualStudio.Shell.Interop._VSProjectLoadPriority>(Standard): Wenn eine Projektmappe geöffnet ist, werden Projekte asynchron geladen. Wenn die Priorität auf eine entladene Projekt festgelegt ist, nachdem die Projektmappe bereits geöffnet ist, wird das Projekt am nächsten Leerlauf geladen werden.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop._VSProjectLoadPriority>: Wenn eine Projektmappe geöffnet wird, werden Projekte im Hintergrund, sodass der Benutzer auf die Projekte zugreifen, ohne zu warten, bis alle Projekte geladen werden geladen werden geladen.  
+-   <xref:Microsoft.VisualStudio.Shell.Interop._VSProjectLoadPriority>: Wenn eine Projektmappe geöffnet ist, werden Projekte im Hintergrund, sodass der Benutzer auf die Projekte zugreifen, da sie ohne zu warten, bis alle Projekte geladen werden erneut geladen werden geladen.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop._VSProjectLoadPriority>: Projekte werden geladen, wenn darauf zugegriffen wird. Ein Projekt zugegriffen wird, wenn der Benutzer den Projektknoten im Projektmappen\-Explorer erweitert, wenn eine Datei, die für das Projekt geöffnet wird, wenn die Projektmappe geöffnet wird, da sie in der Liste der geöffneten Dokument \(persistent in der Projektmappe Benutzeroptionendatei\) ist, oder wenn ein anderes Projekt ist, die geladen wird eine Abhängigkeit auf das Projekt hat. Diese Art von Projekt wird nicht automatisch geladen, bevor ein Buildprozess gestartet; der Solution Manager ist dafür verantwortlich, dass alle notwendigen Projekte geladen werden. Diese Projekte sollten auch vor dem Starten einer suchen und Ersetzen in Dateien in der gesamten Projektmappe geladen werden.  
+-   <xref:Microsoft.VisualStudio.Shell.Interop._VSProjectLoadPriority>: Projekte werden geladen, wenn darauf zugegriffen wird. Ein Projekt erfolgt, wenn der Benutzer den Projektknoten im Projektmappen-Explorer erweitert wird, wenn eine Datei, die dem Projekt gehören geöffnet wird, wenn die Projektmappe geöffnet wird, weil es in der Liste der geöffneten Dokument (persistent in der Projektmappen-Benutzeroptionendatei) ist, oder wenn ein anderes Projekt d. h. setzt auf das Projekt geladen wird. Diese Art von Projekt wird nicht automatisch geladen, bevor ein Buildprozess gestartet; der Projektmappen-Load-Manager ist dafür verantwortlich, dass die notwendigen Projekte geladen werden. Diese Projekte sollte auch vor dem Starten einer Suchen/Ersetzen in Dateien in der gesamten Projektmappe geladen werden.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop._VSProjectLoadPriority>: Projekte werden nicht geladen, wenn der Benutzer explizit anfordert. Dies ist der Fall, wenn Projekte explizit entladen werden.  
+-   <xref:Microsoft.VisualStudio.Shell.Interop._VSProjectLoadPriority>: Projekte werden nicht geladen, wenn der Benutzer explizit anfordert. Dies ist der Fall, wenn Sie Projekte explizit entladen werden.  
   
-## Erstellen eine Lösung Last\-manager  
- Entwickler können ein Laden der Projektmappe Manager durch Implementieren von <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadManager> und der Beratung von Visual Studio, dass der Lösung Manager aktiv ist.  
+## <a name="creating-a-solution-load-manager"></a>Erstellen einer Lösung Last-Managers  
+ Entwickler eine Lösung Last-Manager erstellen können durch die Implementierung <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadManager> und der Beratung von Visual Studio der Projektmappe Load-Manager aktiv ist.  
   
-#### Einen Lösung Load\-Manager aktivieren  
- Visual Studio können nur eine Lösung des Managers zu einem Zeitpunkt auf, daher Sie Visual Studio mitteilen müssen, wenn Sie Ihre Projektmappe Last aktivieren möchten Manager. Wenn eine zweite Lösung des Managers später aktiviert ist, wird Ihre Lösung Load\-Manager getrennt.  
+#### <a name="activating-a-solution-load-manager"></a>Einen Lösung Load-Manager aktivieren  
+ Visual Studio bietet nur eine Projektmappe des Managers zu einem bestimmten Zeitpunkt auf, sodass Sie Visual Studio informieren müssen, wenn Sie Ihre Projektmappe Last aktivieren möchten Manager. Wenn später auf ein zweite Lösung Load-Manager aktiviert ist, wird Ihre Lösung Load-Manager getrennt.  
   
- Sie benötigen die <xref:Microsoft.VisualStudio.Shell.Interop.SVsSolution> Dienst, und stellen die <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4> Eigenschaft:  
+ Benötigen Sie die <xref:Microsoft.VisualStudio.Shell.Interop.SVsSolution> service, und legen Sie die <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4> Eigenschaft:  
   
-```c#  
-IVsSolution pSolution = GetService(typeof(SVsSolution)) as IVsSolution; object objLoadMgr = this;   //the class that implements IVsSolutionManager pSolution.SetProperty((int)__VSPROPID4.VSPROPID_ActiveSolutionLoadManager, objLoadMgr);  
+```csharp  
+IVsSolution pSolution = GetService(typeof(SVsSolution)) as IVsSolution;  
+object objLoadMgr = this;   //the class that implements IVsSolutionManager  
+pSolution.SetProperty((int)__VSPROPID4.VSPROPID_ActiveSolutionLoadManager, objLoadMgr);  
 ```  
   
-#### Implementieren von IVsSolutionLoadManager  
- Die <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadManager.OnBeforeOpenProject%2A> Methode wird aufgerufen, bei der die Projektmappe öffnen. Um diese Methode zu implementieren, verwenden Sie die <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadManagerSupport> Dienst zum Festlegen der Load\-Priorität für den Typ des Projekts, Sie verwalten möchten. Im folgende Code wird z. B. C\#\-Projekttypen im Hintergrund geladen:  
+#### <a name="implementing-ivssolutionloadmanager"></a>Implementieren von IVsSolutionLoadManager  
+ Die <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadManager.OnBeforeOpenProject%2A> Methode wird aufgerufen, während der Prozess des Öffnens der Projektmappe. Um diese Methode implementieren, verwenden Sie die <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadManagerSupport> Dienst für die Load-Priorität für den Typ des Projekts festgelegt. Sie verwalten möchten. Der folgende Code legt beispielsweise C#-Projekttypen im Hintergrund geladen:  
   
-```c#  
-Guid guidCSProjectType = new Guid("{FAE04EC0-301F-11d3-BF4B-00C04F79EFBC}"); pSLMgrSupport.SetProjectLoadPriority(guidProjectID, (uint)_VSProjectLoadPriority.PLP_BackgroundLoad);  
+```csharp  
+Guid guidCSProjectType = new Guid("{FAE04EC0-301F-11d3-BF4B-00C04F79EFBC}");  
+pSLMgrSupport.SetProjectLoadPriority(guidProjectID, (uint)_VSProjectLoadPriority.PLP_BackgroundLoad);  
 ```  
   
- Die <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadManager.OnDisconnect%2A> Methode wird aufgerufen, wenn die Visual Studio heruntergefahren wird oder wenn ein anderes Paket durch Aufrufen von als der aktuellen Projektmappe Manager übernommen wurde <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.SetProperty%2A> mit der <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4> Eigenschaft.  
+ Die <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadManager.OnDisconnect%2A> Methode wird aufgerufen, wenn Visual Studio geschlossen wird oder ein anderes Paket von Aufrufen als die aktive Projektmappe des Managers übernommen wurde <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.SetProperty%2A> mit der <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4> Eigenschaft.  
   
-#### Strategien für verschiedene Arten von Projektmappen lädt\-manager  
- Unterschiedlich, abhängig von den Typen von Projektmappen, die sie zum Verwalten von vorgesehen sind, können Sie Projektmappen Load\-Manager implementieren.  
+#### <a name="strategies-for-different-kinds-of-solution-load-manager"></a>Strategien für verschiedene Arten von Projektmappen Load-manager  
+ Unterschiedlich, abhängig von den Arten von Projektmappen, die sie zum Verwalten von vorgesehen sind, können Sie Projektmappen Load-Manager implementieren.  
   
- Wenn der Manager Lösung zum Verwalten von Projektmappen, die in der Regel laden gedacht ist, kann es als Teil eines VSPackage implementiert werden. Das Paket muss auf Autoload festgelegt werden, durch Hinzufügen der <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> auf das VSPackage mit einem Wert von <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionOpening_guid>. Der Lösung Manager kann dann aktiviert werden, der <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> Methode.  
+ Wenn der Projektmappen-Load-Manager zum Verwalten von Projektmappen, die in der Regel laden gedacht ist, kann es als Teil eines VSPackage implementiert werden. Das Paket sollte auf Autoload festgelegt werden, durch Hinzufügen der <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> für das VSPackage, mit dem Wert <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionOpening_guid>. Die Lösung des Managers kann dann in aktiviert werden die <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> Methode.  
   
 > [!NOTE]
->  Weitere Informationen zu es Paketen finden Sie unter [Laden von VSPackages](../extensibility/loading-vspackages.md).  
+>  Weitere Informationen zu Automatisches Laden von Paketen finden Sie unter [Laden von VSPackages](../extensibility/loading-vspackages.md).  
   
- Da Visual Studio nur den letzten Projektmappe laden Manager aktiviert werden erkennt, sollte allgemeine Lösung Load\-Manager immer erkannt werden, ob vor dem Aktivieren der selbst ein vorhandenen Auslastungstest\-Manager ist. Wenn GetProperty\(\) für den Dienst Lösung Aufrufen <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4> gibt `null`, keine Lösung für die aktive Load\-Manager vorhanden ist. Wenn es nicht null zurückgibt, überprüfen Sie, ob das Objekt identisch mit der Lösung des Managers.  
+ Da Visual Studio nur den letzten Projektmappe laden Manager aktiviert werden, erkennt, sollte die allgemeine Lösung Load-Manager immer erkennen, ob es ein vorhandenen Load-Manager vor dem Aktivieren selbst ist. GetProperty() im Projektmappen-Dienst für die beim Aufrufen <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4> gibt `null`, es ist kein aktive Projektmappe Load-Manager. Wenn es nicht null zurückgibt, überprüfen Sie, ob das Objekt identisch mit der Lösung des Managers ist.  
   
- Wenn der Manager Lösung nur einige Arten von Lösung verwalten soll, kann das VSPackage Lösung laden Ereignisse abonnieren \(durch Aufrufen von <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.AdviseSolutionEvents%2A>\), und verwenden Sie den Ereignishandler für <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeOpenSolution%2A> den Lösung Manager aktivieren.  
+ Wenn die Lösung des Managers nur einige Arten von Projektmappen verwaltet werden sollen, kann das VSPackage Lösung laden Ereignisse abonnieren (durch Aufrufen von <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.AdviseSolutionEvents%2A>), und verwenden Sie den Ereignishandler für <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeOpenSolution%2A> So aktivieren Sie die Lösung des Managers.  
   
- Wenn der Manager Lösung gedacht ist, um nur bestimmte Lösungen zu verwalten, kann die Aktivierungsinformationen als Teil der Projektmappendatei beibehalten werden. Hierzu rufen Sie <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps.WriteSolutionProps%2A> für den Abschnitt vor der Lösung.  
+ Wenn die Lösung des Managers dafür vorgesehen ist, um nur bestimmte Lösungen zu verwalten, kann die Aktivierungsinformationen im Rahmen der Projektmappendatei beibehalten werden. Zu diesem Zweck rufen <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps.WriteSolutionProps%2A> für den Abschnitt vor der Lösung.  
   
- Spezifische Lösung Load\-Manager sollten deaktivieren, sich selbst in der <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents.OnAfterCloseSolution%2A> \-Ereignishandler in der Reihenfolge nicht mit anderen Lösung Load\-Managern in Konflikt stehen.  
+ Spezifische Lösung Load-Manager sollten deaktivieren, selbst in den <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents.OnAfterCloseSolution%2A> -Ereignishandler in der Reihenfolge nicht mit anderen Lösung Load-Managern in Konflikt stehen.  
   
- Wenn Sie eine Lösung des\-Managers benötigen, nur um globale Load Projektprioritäten \(z. B. Eigenschaften, die auf eine Optionsseite festgelegt\) beizubehalten, in den Projektmappe Manager aktiviert werden kann der <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenProject%2A> \-Ereignishandler die Einstellung in den Projektmappeneigenschaften, speichern und dann den Projektmappe Manager deaktivieren.  
+ Wenn Sie einen Projektmappe laden Manager benötigen, nur um globale laden Projektprioritäten (z. B. Eigenschaften, die auf einer Seite "Optionen" festgelegt) beizubehalten, die Lösung des Managers in aktiviert werden kann die <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenProject%2A> Ereignishandler, d. h. die Einstellung in den Projektmappeneigenschaften beibehalten Deaktivieren Sie die Lösung des Managers.  
   
-## Behandlung von Ereignissen für Projektmappe laden  
- Rufen Sie zum abonnieren Ereignisse Laden der Projektmappe <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.AdviseSolutionEvents%2A> beim Aktivieren der Lösung des Managers. Wenn Sie implementieren <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents>, Sie reagieren auf Ereignisse, die auf anderen Projekt laden Prioritäten beziehen.  
+## <a name="handling-solution-load-events"></a>Behandlung von Ereignissen für Projektmappe laden  
+ Rufen Sie zum Abonnieren der Lösung ladeereignissen <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.AdviseSolutionEvents%2A> bei Sie Ihrer Projektmappe Load-Manager aktivieren. Wenn Sie implementieren <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents>, Sie können reagieren auf Ereignisse, die auf anderen Projekt laden Prioritäten beziehen.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeOpenSolution%2A>: Wird ausgelöst, bevor eine Projektmappe geöffnet wird. Sie können es verwenden, so ändern Sie das Projekt, die Priorität für die Projekte in der Projektmappe geladen.  
+-   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeOpenSolution%2A>: Wird ausgelöst, bevor eine Projektmappe geöffnet ist. Sie können es verwenden, um das Projekt, laden die Priorität für die Projekte in der Projektmappe zu ändern.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeBackgroundSolutionLoadBegins%2A>: Wird ausgelöst, nachdem die Projektmappe vollständig geladen ist, aber vor dem Hintergrund Projekt laden erneut beginnt. Z. B. ein Benutzer kann einem Projekt, dessen Priorität Load LoadIfNeeded zugegriffen haben, oder möglicherweise der Lösung Manager eine Projekt laden Priorität geändert, um BackgroundLoad, die einen Hintergrund Laden des Projekts gestartet werden konnte.  
+-   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeBackgroundSolutionLoadBegins%2A>: Dieses Ereignis wird ausgelöst, nachdem die Projektmappe vollständig geladen, aber vor dem Hintergrund Projekt laden erneut beginnt. Z. B. ein Benutzer kann auf ein Projekt, dessen Priorität laden LoadIfNeeded ist, zugegriffen haben oder die Lösung des Managers möglicherweise eine Projekt laden Priorität zu BackgroundLoad, d. h. einen Hintergrund laden dieses Projekts starten würden geändert haben.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnAfterBackgroundSolutionLoadComplete%2A>: Wird ausgelöst, nachdem eine Projektmappe zunächst vollständig geladen ist, ob ein Projektmappe Load\-Manager vorhanden ist. Es wird auch ausgelöst, nachdem der Hintergrund laden oder bei Bedarf geladen werden, sobald die Lösung vollständig geladen wird. Gleichzeitig <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExistsAndFullyLoaded_guid> wird erneut aktiviert.  
+-   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnAfterBackgroundSolutionLoadComplete%2A>: Dieses Ereignis wird ausgelöst, nachdem eine Projektmappe anfänglich wurden vollständig geladen ist, und zwar unabhängig davon, ob ein Lösung Load-Manager vorhanden ist. Es wird auch ausgelöst, nachdem der Hintergrund laden oder bei Bedarf geladen werden, wenn die Projektmappe vollständig geladen wird. Zur gleichen Zeit <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExistsAndFullyLoaded_guid> erneut aktiviert wird.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnQueryBackgroundLoadProjectBatch%2A>: Dies ist vor dem Laden eines Projekts \(oder Projekten\) ausgelöst. Festlegen, um sicherzustellen, dass andere Hintergrundprozesse abgeschlossen sind, bevor die Projekte geladen werden, `pfShouldDelayLoadToNextIdle`**true**.  
+-   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnQueryBackgroundLoadProjectBatch%2A>: Dies ist vor dem Laden eines Projekts (oder Projekte) ausgelöst. Um sicherzustellen, dass andere Hintergrundprozesse im abgeschlossen werden, bevor die Projekte geladen werden, legen Sie `pfShouldDelayLoadToNextIdle` auf **"true"**.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeLoadProjectBatch%2A>: Wird ausgelöst, wenn ein Batch von Projekten wird geladen werden soll. Wenn `fIsBackgroundIdleBatch` true ist, die Projekte sind im Hintergrund; geladen werden, wenn `fIsBackgroundIdleBatch` "false", die Projekte werden geladen synchron als Ergebnis einer benutzeranforderung, z. B. wenn der Benutzer eine ausstehende Projekt im Projektmappen\-Explorer erweitert wird. Implementieren Sie diese Option, um Aktionen teuer, die ansonsten in ausgeführt werden müssten <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnAfterOpenProject%2A>.  
+-   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeLoadProjectBatch%2A>: Wird ausgelöst, wenn ein Batch von Projekten wird geladen werden soll. Wenn `fIsBackgroundIdleBatch` ist "true", die Projekte sind im Hintergrund; geladen werden, wenn `fIsBackgroundIdleBatch` "false", die Projekte werden geladen synchron als Ergebnis einer Anforderung des Benutzers, z. B. wenn der Benutzer eine ausstehende Projekt im Projektmappen-Explorer erweitert wird. Implementieren Sie diese Option, um teure Arbeit zu erledigen, die andernfalls benötigen würden, erfolgen <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenProject%2A>.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnAfterLoadProjectBatch%2A>: Wird ausgelöst, nachdem ein Batch von Projekten geladen wurde.  
+-   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnAfterLoadProjectBatch%2A>: Dieses Ereignis wird ausgelöst, nachdem ein Batch von Projekten geladen wurde.  
   
-## Erkennen und Verwalten von Projektmappen und Projekt laden  
- Aufrufen, damit den Status des von Projekten und Projektmappen zu erkennen, <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.GetProperty%2A> mit den folgenden Werten:  
+## <a name="detecting-and-managing-solution-and-project-loading"></a>Erkennen und Verwalten von Projektmappen und Projekt laden  
+ Aufrufen, um den Status Laden von Projekten und Projektmappen zu erkennen, <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.GetProperty%2A> mit den folgenden Werten:  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4>: `var` gibt `true` wenn die Projektmappe und alle darin enthaltenen Projekte geladen wurde, andernfalls werden `false`.  
+-   <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4>: `var` gibt `true` , wenn die Projektmappe und alle darin enthaltenen Projekte geladen wurde, andernfalls werden `false`.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4>: `var` gibt `true` wenn ein Batch von Projekten gerade andernfalls im Hintergrund geladen werden `false`.  
+-   <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4>: `var` gibt `true` , wenn ein Batch von Projekten werden gerade andernfalls im Hintergrund geladen `false`.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4>: `var` gibt `true` wenn ein Batch von Projekten werden gerade geladen synchron als Ergebnis eines Befehls Benutzer oder andere explizite laden, andernfalls `false`.  
+-   <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4>: `var` gibt `true` , wenn ein Batch von Projekten werden gerade geladen synchron als Ergebnis eines Befehls Benutzer oder andere explizite laden, andernfalls `false`.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID2>: `var` gibt `true` wenn die Projektmappe aktuell, andernfalls geschlossen wird `false`.  
+-   <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID2>: `var` gibt `true` , wenn die Projektmappe aktuell, andernfalls geschlossen wird `false`.  
   
 -   <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID>: `var` gibt `true` Wenn Öffnen einer Projektmappe derzeit, andernfalls wird `false`.  
   
- Sie können auch sicherstellen, dass Projekte und Projektmappen geladen werden \(unabhängig davon, was die Auslastung Projektprioritäten sind\) eine der folgenden Methoden aufrufen:  
+ Sie können auch sicherstellen, dass Projekte und Projektmappen geladen werden (unabhängig davon, was die Auslastung Projektprioritäten sind) durch Aufrufen einer der folgenden Methoden:  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution4.EnsureSolutionIsLoaded%2A>: das Aufrufen dieser Methode erzwingt, dass die Projekte in einer Projektmappe geladen werden, bevor die Methode zurückgegeben.  
+-   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution4.EnsureSolutionIsLoaded%2A>: das Aufrufen dieser Methode erzwingt, dass die Projekte in einer Projektmappe geladen, bevor die Methode zurückgegeben.  
   
 -   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution4.EnsureProjectIsLoaded%2A>: das Aufrufen dieser Methode erzwingt, dass die Projekte in `guidProject` geladen, bevor die Methode zurückgegeben.  
   
 -   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution4.EnsureProjectsAreLoaded%2A>: das Aufrufen dieser Methode erzwingt, dass das Projekt im `guidProjectID` geladen, bevor die Methode zurückgegeben.  
   
 > [!NOTE]
->  . Standardmäßig nur die Projekte, die über den Bedarf laden und Hintergrund laden Prioritäten geladen, aber wenn die <xref:Microsoft.VisualStudio.Shell.Interop.__VSBSLFLAGS> Flag an die Methode übergeben wird, werden alle Projekte geladen, mit Ausnahme derer, die markiert sind, um explizit zu laden.
+>  . Standardmäßig nur die Projekte, die der Anforderung haben laden und Hintergrund laden Prioritäten werden geladen, aber wenn die <xref:Microsoft.VisualStudio.Shell.Interop.__VSBSLFLAGS> Flag wird an die Methode übergeben, werden alle Projekte außer diejenigen, die markiert sind, um explizit laden geladen.

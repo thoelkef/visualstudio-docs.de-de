@@ -1,52 +1,54 @@
 ---
-title: "Gewusst wie: Hinzuf&#252;gen einer Projektausgabereferenz"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "Projektausgabeverweise [SharePoint-Entwicklung in Visual Studio]"
-  - "SharePoint-Entwicklung in Visual Studio, Erweiterte Tools zum Packen"
-  - "SharePoint-Entwicklung in Visual Studio, Projektausgabeverweise"
+title: "Vorgehensweise: hinzufügen eine Projektausgabereferenz | Microsoft Docs"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- VB
+- CSharp
+helpviewer_keywords:
+- project output references [SharePoint development in Visual Studio]
+- SharePoint development in Visual Studio, project output references
+- SharePoint development in Visual Studio, advanced packaging tools
 ms.assetid: 9d6bc25e-bf0d-4483-a691-2ad7a796fa80
-caps.latest.revision: 15
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 14
+caps.latest.revision: "15"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: faf46489be0b9a56485fc93c2138a7f6702c4778
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Gewusst wie: Hinzuf&#252;gen einer Projektausgabereferenz
-  Wenn Sie SharePoint\-fremde Projektassemblys \(oder XAP\-Dateien in Silverlight\-Projekten\) in SharePoint bereitstellen möchten, fügen Sie sie als Projektausgabeverweis hinzu.  
+# <a name="how-to-add-a-project-output-reference"></a>Gewusst wie: Hinzufügen einer Projektausgabereferenz
+  Fügen Sie sie zum Bereitstellen von Assemblys für nicht-SharePoint-Projekt (oder XAP-Dateien in Silverlight-Projekte) in SharePoint als einer Projektausgabereferenz hinzu.  
   
- Bei diesem Prozess wird eine Lösungsbuildabhängigkeit zwischen den beiden Projekten erstellt.  Projektausgabeverweisen zugeordnete Projekte werden erstellt, bevor das SharePoint\-Projekt erstellt und bereitgestellt wird.  
+ Dieser Vorgang erstellt eine Projektmappe Buildabhängigkeit zwischen den zwei Projekten. Projekte Projektausgabeverweise zugeordnet werden erstellt, bevor das SharePoint-Projekt erstellt und bereitgestellt wird.  
   
-### So fügen Sie eine Projektausgabereferenz hinzu  
+### <a name="to-add-a-project-output-reference"></a>Hinzufügen einer Projektausgabereferenz  
   
-1.  Laden Sie eine Lösung, die mindestens ein SharePoint\-Projekt und ein SharePoint\-fremdes Projekt enthält.  
+1.  Laden Sie eine Lösung, die mindestens ein SharePoint-Projekt und eine nicht-SharePoint-Projekt enthält.  
   
-2.  Wählen Sie im **Projektmappen\-Explorer** ein Element im SharePoint\-Projektknoten aus.  
+2.  In **Projektmappen-Explorer**, wählen Sie ein Element in der SharePoint-Projektknoten.  
   
-3.  Im Fenster **Eigenschaften** wählen Sie die Eigenschaft **Projektausgabeverweis**, und wählen Sie dann die Schaltfläche mit den Auslassungszeichen \(![Auslassungszeichen im ASP.NET Mobile-Designer](~/sharepoint/media/mwellipsis.gif "Auslassungszeichen im ASP.NET Mobile-Designer")\) neben sie aus.  
+3.  In der **Eigenschaften** Fenster, wählen Sie die **Projektausgabeverweise** -Eigenschaft, und klicken Sie dann auf die Auslassungspunkte (![ASP.NET Mobile-Designer Ellipse](../sharepoint/media/mwellipsis.gif "ASP. NET-Mobile-Designer Ellipse")) Schaltfläche daneben.  
   
-4.  Im Dialogfeld **Projektausgabeverweis** wählen Sie die Schaltfläche **Hinzufügen** aus.  
+4.  In der **Projektausgabeverweise** Dialogfeld Wählen Sie die **hinzufügen** Schaltfläche.  
   
-5.  Im Eigenschaftenbereich wählen Sie den Pfeil neben der Eigenschaft **Bereitstellungstyp**, und wählen Sie einen geeigneten Wert für das SharePoint\-fremde Element, das Sie verweisen, wie **ElementFile** aus.  
+5.  Klicken Sie im Bereich "Eigenschaften" Wählen Sie den Pfeil neben der **Bereitstellungstyp** -Eigenschaft, und wählen Sie dann einen geeigneten Wert für das nicht-SharePoint-Element, das Sie verweisen auf, wie z. B. **ElementFile**.  
   
-6.  Wählen Sie den Pfeil neben **Projektname**, wählen Sie den Namen des SharePoint\-fremden Namen, und wählen Sie dann die Schaltfläche **OK** aus.  
+6.  Wählen Sie den Pfeil neben **Projektname**, wählen Sie den Namen des nicht-SharePoint-Projektelements aus, und wählen Sie dann die **OK** Schaltfläche.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Bereitstellen von Pack- und Bereitstellungsinformationen in Projektelementen](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)   
- [Gewusst wie: Markieren von Steuerelementen als sichere Steuerelemente](../sharepoint/how-to-mark-controls-as-safe-controls.md)   
- [Verpacken und Bereitstellen von SharePoint-Lösungen](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
+ [Vorgehensweise: Markieren von Steuerelementen als sichere Steuerelemente](../sharepoint/how-to-mark-controls-as-safe-controls.md)   
+ [Verpacken und Bereitstellen von SharePoint-Projektmappen](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
   
   

@@ -1,28 +1,30 @@
 ---
-title: "IWefDebuggingSupport-Schnittstelle"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
+title: IWefDebuggingSupport-Schnittstelle | Microsoft Docs
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
 ms.assetid: 0bd1c6a6-67a5-4478-b942-8b937b28f723
-caps.latest.revision: 12
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "12"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 7768465f46e5344b88da9006a7de2396e3b75ba6
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IWefDebuggingSupport-Schnittstelle
-  Wird von eine Debugumgebung, wie Visual Studio, um das Debuggen von Apps für Office erleichtern.  Die Office\-Anwendung, wie Word oder Excel, erhält diese Schnittstelle von Visual Studio und ruft dann Methoden auf der Schnittstelle an bestimmten Punkten während der Debugsitzung an.  
+# <a name="iwefdebuggingsupport-interface"></a>IWefDebuggingSupport-Schnittstelle
+  Implementiert eine debugging-Umgebung, z. B. Visual Studio zum Debuggen von apps für Office zu erleichtern. Die Office-Anwendung, z. B. Word oder Excel, erhält diese Schnittstelle über Visual Studio und ruft dann die Methoden für die Schnittstelle an bestimmten Punkten während der Debugsitzung.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 [  
@@ -38,12 +40,12 @@ interface IWefDebuggingSupport : IUnknown
 }  
 ```  
   
-## Methoden  
- In der folgenden Tabelle sind die Methoden auf, die die IWefDebuggingSupport\-Schnittstelle definiert.  
+## <a name="methods"></a>Methoden  
+ Die folgende Tabelle enthält die Methoden, die die IWefDebuggingSupport-Schnittstelle definiert.  
   
-|Name|Description|  
+|Name|Beschreibung|  
 |----------|-----------------|  
-|[GetAutoInsertExtensions-Methode](../vsto/getautoinsertextensions-method.md)|Ruft Informationen über die Apps für Office ab, die während des Debuggens automatisch eingefügt werden sollen.|  
-|[SetWefProcessId-Methode](../vsto/setwefprocessid-method.md)|Stellt die Prozess\-ID bereit, die Inhalt des Internet\-Erweiterungs\-Frameworks \(WEF\) ausführt.|  
+|[GetAutoInsertExtensions-Methode](../vsto/getautoinsertextensions-method.md)|Ruft Informationen zu den apps für Office, die während des Debuggens automatisch eingefügt werden sollen.|  
+|[SetWefProcessId-Methode](../vsto/setwefprocessid-method.md)|Enthält die Prozess-ID, die Inhalt Web Erweiterungen Framework (WEF) ausgeführt wird.|  
   
   

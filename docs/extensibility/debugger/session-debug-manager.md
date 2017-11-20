@@ -1,43 +1,45 @@
 ---
-title: "Session-Debug-Manager | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Sitzung Debug-Manager zu Sitzung Ansichten"
-  - "Sitzung Debug-Manager senden"
-  - "Debuggen [Debugging-SDK] Sitzung Debug-Managers"
-  - "Sitzung Debug-manager"
-  - "Debuggen Sie Debug-Sitzungsmanager Engine multiplexing"
-  - "Sitzung Debug-Manager delegieren"
+title: Manager-Debugsitzung | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- session debug manager, unifying session views
+- session debug manager, broadcasting
+- debugging [Debugging SDK], session debug manager
+- session debug manager
+- session debug manager, debug engine multiplexing
+- session debug manager, delegating
 ms.assetid: fbb1928d-dddc-43d1-98a4-e23b0ecbae09
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 8100c43578c11ae73f26764df74aa17caccc3611
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Session-Debug-Manager
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Der Debuginformationen Manager der Sitzung \(SDM\) verwaltet beliebig viele Module \(Debuggen\) DE eine beliebige Anzahl an mehreren Prozessen Programme auf einer beliebigen Anzahl von Computern.  Zusätzlich zum Debuggen mehrfachkoppler sich ein Modul stellt das SDM eine einheitliche Sicht der Debugsitzung zur IDE bereit.  
+# <a name="session-debug-manager"></a>Sitzungs-Debug-Manager
+Die Sitzungs-Debug-Manager (SDM) verwaltet eine beliebige Anzahl von Debugmodule (DE), die eine beliebige Anzahl von Programmen in mehreren Prozessen in einer beliebigen Anzahl von Computern zu debuggen. Abgesehen davon, dass ein Debugmodul multiplexer, bietet die SDM einen schnellen Überblick über die Debugsitzung der IDE an.  
   
-## Sitzungs\-Debuger Manager\-Vorgang  
- Der Debuginformationen Manager der Sitzung \(SDM\) verwaltet. DE  Es gibt potenziell mehrere Triebwerklauf Debuggen auf einem Computer gleichzeitig.  Um das den zu multiplexen, wird die umbrüche SDM mehrere Schnittstellen aus dem und der IDE als einzelne Schnittstelle aus.  
+## <a name="session-debug-manager-operation"></a>Sitzung Debug-Manager-Vorgang  
+ Die Sitzungs-Debug-Manager (SDM) verwaltet die Deutschland. Es gibt möglicherweise mehr als ein Debugging-Modul zur gleichen Zeit auf einem Computer ausgeführt. Zum Bündeln von des DEs der SDM dient als Wrapper für eine Anzahl von Schnittstellen, von dem DEs und macht sie der IDE als eine einzelne Schnittstelle verfügbar.  
   
- Um die Leistung zu verbessern, können nicht mehrere Schnittstellen Multiplex.  Stattdessen werden sie direkt von DE verwendet und Aufrufe dieser Schnittstellen von SDM das nicht ausgeführt werden.  Beispielsweise sind die Schnittstellen, die Arbeitsspeicher, Code und Dokumenten kontexten Multiplex nicht verwendet werden, weil sie eine bestimmte Anweisung, um einen Speicher oder ein Dokument in einem bestimmten Programm verwiesen werden, die von bestimmten DE gedebuggt wird.  Kein anderes DE muss in dieser Ebene der Kommunikation beteiligten sein.  
+ Zur Erhöhung der Leistung, sind einige Schnittstellen nicht Multiplexbetrieb. Stattdessen werden sie direkt aus dem DE verwendet und Aufrufe auf diese Schnittstellen nicht durchlaufen die SDM. Mit Speicher, Code und Kontexte Dokument verwendete Schnittstellen sind z. B. nicht Multiplexbetrieb, da sie auf eine bestimmte Anweisung, Arbeitsspeicher oder Dokuments in ein bestimmtes Programm von einem bestimmten DE gedebuggt verweisen. Keine anderen DE muss in dieser Ebene der Kommunikation beteiligten sein.  
   
- Dies ist nicht von allen Kontexten true.  Aufrufe der Ausdrucksauswertungs Elementkontext Oberfläche des ausgeführten SDM\).  Während der Ausdrucksauswertung umschließt das SDM die [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md)\-Schnittstelle, die es in der IDE vorhanden ist, da bei dieser Ausdruck ausgewertet wird, es sich bei dem mehrere Debugprogramme sind, die in demselben Prozess liefe, die sich im selben Thread.  
+ Dies gilt nicht für alle Kontexte. Aufrufe der Ausdruck Auswertung Kontextschnittstelle durchlaufen die SDM ab. Während der Auswertung von Ausdrücken, die SDM dient als Wrapper für die [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) -Schnittstelle, die sie für die IDE bietet, da bei diesen Ausdruck ausgewertet wird, es muss möglicherweise mehrere des-, die Programme im selben Prozess debuggen, die möglicherweise auf dem gleichen Thread ausgeführt wird.  
   
- Das SDM tritt normalerweise als Mechanismus für Delegierungs, sondern es tritt möglicherweise als Mechanismus für Übertragungs auf.  Zum Beispiel bei der Ausdrucksauswertung, tritt das SDM als Mechanismus für Übertragungs auf, um alle DES zu benachrichtigen, dass sie Code für einen bestimmten Thread ausführen können.  Auch wenn das SDM ein aufhörendes Ereignis empfängt, überträgt sie auf Alle Programme, dass sie nicht ausgeführt werden sollten.  Wenn ein Schritt aufgerufen wird, die auf Alle Programme SDM\-Übertragungen Ausführung fortsetzen können, dass sie.  Haltepunkte werden auch in jedem DE übertragen.  
+ Die SDM fungiert in der Regel als delegierungsmechanismus für die, jedoch möglicherweise fungiert als einem Übertragungsmechanismus. Während der Auswertung von Ausdrücken fungiert der SDM als einem Übertragungsmechanismus alle des-benachrichtigen, dass sie Code für einen angegebenen Thread ausgeführt werden können. Wenn die SDM Stopping-Ereignis empfängt, sendet es auf ähnliche Weise auf alle Programme, dass ihre Ausführung beendet werden soll. Wenn ein Schritt aufgerufen wird, sendet der SDM auf alle Programme, die Ausführung fortgesetzt werden kann. Haltepunkte werden auch an jeder DE übermittelt.  
   
- Das SDM verfolgt nicht das aktuelle Programm den Thread oder den Stapelrahmen.  Der Prozess, und das Programm wird der Thread Informationen werden an den SDM in Verbindung mit bestimmten Ereignissen Debuggen gesendet.  
+ Die SDM verfolgt nicht den aktuellen Programm, den Thread oder den Stapelrahmen entspricht. Der Prozess, Programm- und Thread Informationen an die SDM in Verbindung mit bestimmten Debugereignisse gesendet.  
   
-## Siehe auch  
- [Debug\-Modul](../../extensibility/debugger/debug-engine.md)   
+## <a name="see-also"></a>Siehe auch  
+ [Debuggen des Datenbankmoduls](../../extensibility/debugger/debug-engine.md)   
  [Debuggerkomponenten](../../extensibility/debugger/debugger-components.md)   
- [Debugger\-Kontexte](../../extensibility/debugger/debugger-contexts.md)
+ [Debuggerkontexte](../../extensibility/debugger/debugger-contexts.md)

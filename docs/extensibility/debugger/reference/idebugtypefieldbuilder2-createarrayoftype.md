@@ -1,57 +1,59 @@
 ---
-title: "IDebugTypeFieldBuilder2::CreateArrayOfType | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "IDebugTypeFieldBuilder2::CreateArrayOfType"
-  - "CreateArrayOfType"
+title: IDebugTypeFieldBuilder2::CreateArrayOfType | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- IDebugTypeFieldBuilder2::CreateArrayOfType
+- CreateArrayOfType
 ms.assetid: 85166ac9-0bff-49a0-b2fd-ca7f7a8eae4b
-caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: d3322b281f41721bda712b2b86a53aeaf22cebee
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugTypeFieldBuilder2::CreateArrayOfType
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Erstellt ein Array des angegebenen Typs und Größe.  
+# <a name="idebugtypefieldbuilder2createarrayoftype"></a>IDebugTypeFieldBuilder2::CreateArrayOfType
+Erstellt ein Array mit dem angegebenen Typ und Größe.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT CreateArrayOfType (  
-   IDebugField*  pTypeField,  
-   DWORD         rank,  
-   IDebugField** pArrayOfTypeField  
+   IDebugField*  pTypeField,  
+   DWORD         rank,  
+   IDebugField** pArrayOfTypeField  
 );  
 ```  
   
-```c#  
+```csharp  
 int CreateArrayOfType (  
-   IDebugField     pTypeField,  
-   uint            rank,  
-   out IDebugField pArrayOfTypeField  
+   IDebugField     pTypeField,  
+   uint            rank,  
+   out IDebugField pArrayOfTypeField  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `pTypeField`  
- \[in\]  Der Typ der Elemente, die in das Array enthält.  
+ [in] Typ der Elemente, die das Array gespeichert wird.  
   
  `rank`  
- \[in\]  Die Anzahl der Elemente im Array.  
+ [in] Anzahl der Elemente im Array.  
   
  `pArrayOfTypeField`  
- \[out\]  Gibt die [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)\-Objekten zurück, die das neue Array darstellen.  
+ [out] Gibt die [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) Objekte, die das neue Array darstellen.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDebugTypeFieldBuilder2](../../../extensibility/debugger/reference/idebugtypefieldbuilder2.md)

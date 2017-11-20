@@ -1,72 +1,73 @@
 ---
-title: "ProjectItemFolder Element"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "ProjectItemFolder element"
+title: ProjectItemFolder-Element | Microsoft Docs
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords: ProjectItemFolder element
 ms.assetid: 15b386dd-f523-4425-9fcc-517325681358
-caps.latest.revision: 12
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "12"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: c108540f24529866a03c4e4eb22dc027037d1185
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# ProjectItemFolder Element
+# <a name="projectitemfolder-element"></a>ProjectItemFolder-Element
   Stellt einen zugeordneten Ordner dar.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 <ProjectItemFolder Target = "Path of SharePoint folder the mapped folder corresponds to"  
     Type = "Type of deployment for the mapped folder" />  
 ```  
   
-## Typ  
+## <a name="type"></a>Typ  
  **ProjectItemFolderType**  
   
-## Attribute und Elemente  
+## <a name="attributes-and-elements"></a>Attribute und Elemente  
  In den folgenden Abschnitten werden Attribute sowie untergeordnete und übergeordnete Elemente beschrieben.  
   
-### Attribute  
+### <a name="attributes"></a>Attribute  
   
 |Attribut|Beschreibung|  
-|--------------|------------------|  
-|**Target**|Erforderliches **xs:string**\-Attribut.<br /><br /> Der Pfad des Ordners in der SharePoint\-Installation, dem der zugeordnete Ordner entspricht, relativ zum Bereitstellungsstammordner.  Der Bereitstellungsstammordner wird vom Bereitstellungstyp angegeben, der vom **Type**\-Attribut angegeben wird.<br /><br /> Weitere Informationen erhalten Sie in den Beschreibungen zu den **Deployment Path**\- und **Deployment Root**\-Eigenschaften von SharePoint\-Projektelementen in [Developing SharePoint Solutions](../sharepoint/developing-sharepoint-solutions.md).|  
-|**Type**|Erforderliches **xs:string**\-Attribut.<br /><br /> Der Typ der Bereitstellung für den zugeordneten Ordner.  Weitere Informationen zur den möglichen Werten finden Sie in der Beschreibung der **Deployment Type**\-Eigenschaft von SharePoint\-Projektelementen unter [Developing SharePoint Solutions](../sharepoint/developing-sharepoint-solutions.md).|  
+|---------------|-----------------|  
+|**Target**|Erforderliche **xs: String** Attribut.<br /><br /> Der Pfad des Ordners, in der SharePoint-Installation, die der zugeordnete Ordner, relativ zum Stammordner Bereitstellung entspricht. Stammordner der Bereitstellung richtet sich nach den Bereitstellungstyp, der gemäß der **Typ** Attribut.<br /><br /> Weitere Informationen finden Sie die Beschreibungen für die **Bereitstellungspfad** und **Bereitstellungsstamm-** Eigenschaften von SharePoint-Projektelemente in [Entwickeln von SharePoint-Lösungen](../sharepoint/developing-sharepoint-solutions.md).|  
+|**Typ**|Erforderliche **xs: String** Attribut.<br /><br /> Der Typ der Bereitstellung für den zugeordneten Ordner. Weitere Informationen zu den möglichen Werten finden Sie in der Beschreibung für die **Bereitstellungstyp** Eigenschaft der SharePoint-Projektelemente im [Entwickeln von SharePoint-Lösungen](../sharepoint/developing-sharepoint-solutions.md).|  
   
-### Untergeordnete Elemente  
- Keine.  
+### <a name="child-elements"></a>Untergeordnete Elemente  
+ Keine  
   
-### Übergeordnete Elemente  
+### <a name="parent-elements"></a>Übergeordnete Elemente  
   
 |Element|Beschreibung|  
-|-------------|------------------|  
-|[ProjectItem](../sharepoint/projectitem-element.md)|Stellt ein SharePoint\-Projektelement dar.  Dies ist das erforderliche Stammelement der SPDATA\-Datei.|  
+|-------------|-----------------|  
+|[ProjectItem](../sharepoint/projectitem-element.md)|Stellt ein SharePoint-Projektelement dar. Dies ist das erforderliche Stammelement der SPDATA-Datei.|  
   
-## Hinweise  
- Weitere Informationen zu zugewiesenen Ordnern finden Sie unter [Gewusst wie: Hinzufügen und Entfernen zugeordneter Ordner](../sharepoint/how-to-add-and-remove-mapped-folders.md).  
+## <a name="remarks"></a>Hinweise  
+ Weitere Informationen zur Anzeige zugeordneter Ordner finden Sie unter [wie: Hinzufügen und Entfernen von zugeordneten Ordner](../sharepoint/how-to-add-and-remove-mapped-folders.md).  
   
-## Elementinformationen  
+## <a name="element-information"></a>Elementinformationen  
   
 |||  
 |-|-|  
-|**Namespace**|http:\/\/schemas.microsoft.com\/VisualStudio\/2010\/SharePointTools\/SharePointProjectItemModel|  
-|**Schemaname**|SharePoint\-Projektelementschema|  
-|**Validierungsdatei**|ProjectItemModelSchema.xsd|  
-|**Kann leer sein.**|Nein|  
+|**Namespace**|http://Schemas.Microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel|  
+|**Schemaname**|SharePoint-Projektelementschema|  
+|**Validierungsdatei**|"ProjectItemModelSchema.xsd" benannt|  
+|**Kann leer sein**|Nein|  
   
-## Siehe auch  
- [SharePoint Project Item Schema Reference](../sharepoint/sharepoint-project-item-schema-reference.md)   
- [Gewusst wie: Hinzufügen und Entfernen zugeordneter Ordner](../sharepoint/how-to-add-and-remove-mapped-folders.md)  
+## <a name="see-also"></a>Siehe auch  
+ [SharePoint-Projektelementschema](../sharepoint/sharepoint-project-item-schema-reference.md)   
+ [Vorgehensweise: Hinzufügen und Entfernen zugeordneter Ordner](../sharepoint/how-to-add-and-remove-mapped-folders.md)  
   
   

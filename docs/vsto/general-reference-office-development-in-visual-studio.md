@@ -1,53 +1,57 @@
 ---
-title: "Allgemeine Referenz (Office-Entwicklung in Visual&#160;Studio)"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "Office-Entwicklung in Visual Studio, Referenz"
+title: Allgemeine Referenz (Office-Entwicklung in Visual Studio) | Microsoft Docs
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords: Office development in Visual Studio, reference
 ms.assetid: c7e78186-ee32-4dc1-b1fb-38310b1aadf7
-caps.latest.revision: 25
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 21
+caps.latest.revision: "25"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 1810a57d8f12cff2e34834684f39bf6f508ed5c8
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Allgemeine Referenz (Office-Entwicklung in Visual&#160;Studio)
-  Dieser Abschnitt enthält technische Details über Microsoft Office\-Projekte in Visual Studio.  
+# <a name="general-reference-office-development-in-visual-studio"></a>Allgemeine Referenz (Office-Entwicklung in Visual Studio)
+  Dieser Abschnitt enthält technische Details zu Microsoft Office-Projekten in Visual Studio.  
   
-## In diesem Abschnitt  
+> [!NOTE]  
+>  Bei der Entwicklung von Lösungen, die über die Office-Erfahrungen erweitern "interested" [mehrere Plattformen](https://dev.office.com/add-in-availability)? Sehen Sie sich die neue [Office-Add-ins Modell](https://dev.office.com/docs/add-ins/overview/office-add-ins). Office-Add-ins haben einen geringen Ressourcenbedarf im Vergleich zu VSTO-add-ins und Lösungen, und Sie können sie mithilfe von fast allen Web-Technologien, wie HTML5, JavaScript, CSS3 und XML-Programmierung erstellen.  
+  
+## <a name="in-this-section"></a>In diesem Abschnitt  
  [Primäre Interopassemblys in Office](../vsto/office-primary-interop-assemblies.md)  
- Führt die primären Interopassemblys auf, die mit Office installiert werden können, und beschreibt sie jeweils kurz.  
+ Listet die primären Interop-Assemblys, die mit Office installiert und enthält eine kurze Beschreibung der einzelnen an.  
   
  [Anwendungsmanifeste für Office-Projektmappen](../vsto/application-manifests-for-office-solutions.md)  
- Beschreibt, wie Anwendungsmanifeste in Office\-Lösungen verwendet werden.  
+ Beschreibt, wie Anwendungsmanifeste in Office-Projektmappen verwendet werden.  
   
  [Bereitstellungsmanifeste für Office-Projektmappen](../vsto/deployment-manifests-for-office-solutions.md)  
- Beschreibt, wie Bereitstellungsmanifeste in Office\-Lösungen verwendet werden.  
+ Beschreibt, wie Bereitstellungsmanifeste für Office-Projektmappen verwendet werden.  
   
- [Benutzeroberflächenreferenz &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/user-interface-reference-office-development-in-visual-studio.md)  
- Führt Themen mit Erläuterungen zu Optionen auf, die in verschiedenen Dialogfeldern, Fenstern und anderen Benutzeroberflächen angezeigt werden.  
+ [Referenz zur Benutzeroberfläche &#40; Office-Entwicklung in Visual Studio &#41;](../vsto/user-interface-reference-office-development-in-visual-studio.md)  
+ Enthält Themen, in denen die Optionen erläutert, die auf verschiedenen Dialogfeldern, Windows und andere Elemente der Benutzeroberfläche angezeigt werden.  
   
- [Fehlermeldungen &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/error-messages-office-development-in-visual-studio.md)  
- Enthält Themen, in denen Fehlermeldungen für Office\-Projekte erläutert werden.  
+ [Fehlermeldungen &#40; Office-Entwicklung in Visual Studio &#41;](../vsto/error-messages-office-development-in-visual-studio.md)  
+ Listet Themen, in denen Fehlermeldungen für Office-Projekten.  
   
-## Verwandte Abschnitte  
- [Erste Schritte &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
- Enthält Links zu Informationen über Setup, Projektvorlagen, primäre Interopassemblys für Office und neue Features in der Office\-Entwicklung.  
+## <a name="related-sections"></a>Verwandte Abschnitte  
+ [Erste Schritte &#40; Office-Entwicklung in Visual Studio &#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
+ Enthält Links zu Informationen über Setup, Projektvorlagen, primäre Interopassemblys für Office und Neuigkeiten in Office-Entwicklung.  
   
- [Beispiele und exemplarische Vorgehensweisen für die Programmierung mit Office](../vsto/office-development-samples-and-walkthroughs.md)  
- Beschreibt die Codebeispiele und schrittweise beschriebenen exemplarischen Vorgehensweisen zum Erstellen von Office\-Projekten in Visual Studio kennen zu lernen, mit dem Sie Experiment und mit der Syntax, Struktur und Techniken, die verwendet werden kann, um Office\-Projektmappen zu erstellen.  
+ [Office-Entwicklungsbeispiele und exemplarische Vorgehensweisen](../vsto/office-development-samples-and-walkthroughs.md)  
+ Beschreibt die Codebeispiele und schrittweise beschriebenen exemplarischen Vorgehensweisen zum Erstellen von Office-Projekten in Visual Studio, mit denen Sie können erfahren Sie, und experimentieren Sie mit der Syntax, Struktur und Techniken zum Erstellen von Office-Projektmappen verwendet.  
   
- [Entwerfen und Erstellen von Office-Lösungen](../vsto/designing-and-creating-office-solutions.md)  
- Enthält Links zu Informationen über die ersten Schritte beim Erstellen von Office\-Projekten mit Visual Studio.  
+ [Entwerfen und Erstellen von Office-Projektmappen](../vsto/designing-and-creating-office-solutions.md)  
+ Enthält Links zu Informationen über das Erstellen von Office-Projekten, die mit Visual Studio beginnen.  
   
   

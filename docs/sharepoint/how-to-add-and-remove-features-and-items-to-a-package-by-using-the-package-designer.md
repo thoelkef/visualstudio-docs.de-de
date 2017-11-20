@@ -1,69 +1,68 @@
 ---
-title: "Gewusst wie: Hinzuf&#252;gen und Entfernen von Funktionen und Elementen in einem Paket mit dem Paket-Designer | Microsoft Docs"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "VS.SharePointTools.RAD.PackageDesignerDesign"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "SharePoint-Entwicklung in Visual Studio, Pakete"
+title: "Vorgehensweise: Hinzufügen und Entfernen von Funktionen und Elementen in einem Paket mithilfe des Paket-Designers | Microsoft Docs"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: VS.SharePointTools.RAD.PackageDesignerDesign
+dev_langs:
+- VB
+- CSharp
+- VB
+- CSharp
+helpviewer_keywords: SharePoint development in Visual Studio, packages
 ms.assetid: 7dfa2c5d-3ac7-4573-abac-12a5e16efd1d
-caps.latest.revision: 22
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 21
+caps.latest.revision: "22"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 9da26de3b5a3a71927e7518ff126a7186c01d7e5
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Gewusst wie: Hinzuf&#252;gen und Entfernen von Funktionen und Elementen in einem Paket mit dem Paket-Designer
-  Wenn Sie eine SharePoint\-Lösung erstellen, fügt Visual Studio dem Paket in der Lösung die SharePoint\-Standardfunktionen hinzu.  Vor der abschließenden Bereitstellung können Sie SharePoint\-Projektelemente und \-Funktionen hinzufügen und entfernen, um das SharePoint\-Paket zu ändern.  
+# <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer"></a>Gewusst wie: Hinzufügen und Entfernen von Funktionen und Elementen in einem Paket mit dem Paket-Designer
+  Wenn Sie eine SharePoint-Lösung erstellen, fügt Visual Studio die Standard-SharePoint-Funktionen des Pakets in der Projektmappe. Vor der endgültigen Bereitstellung können Sie hinzufügen und Entfernen von SharePoint-Projektelemente und-Funktionen so ändern Sie die SharePoint-Paket.  
   
- Alternativ können Sie den Paket\-Explorer verwenden, um SharePoint\-Projektelemente hinzuzufügen und zu entfernen.  Sie können auch die Hierarchie der SharePoint\-Projektelemente und \-Funktionen anzeigen und ändern, die in das Paket \(.wsp\) eingeschlossen werden.  Weitere Informationen finden Sie unter [Gewusst wie: Hinzufügen und Entfernen von Funktionen und Elementen in einem Paket mit dem Paket-Explorer](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer.md).  
+ Alternativ können Sie dem Paket-Explorer verwenden, zum Hinzufügen und Entfernen von SharePoint-Projektelemente. Sie können auch anzeigen und ändern die Hierarchie der SharePoint-Projektelemente und -Funktionen, die das Paket (.wsp) abgelegt sind. Weitere Informationen finden Sie unter [wie: Hinzufügen und Entfernen von Funktionen und Elementen in einem Paket mit dem Paket-Explorer](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer.md).  
   
-## Hinzufügen von Funktionen zu einem SharePoint\-Paket  
- Sie können den Paket\-Designer verwenden, um einem SharePoint\-Paket Funktionen hinzufügen.  
+## <a name="adding-features-to-a-sharepoint-package"></a>Hinzufügen von Funktionen zu einer SharePoint-Paket  
+ Die Paket-Designer können ein SharePoint-Paket Funktionen hinzufügen.  
   
-#### So fügen Sie SharePoint\-Funktionen mit dem Paket\-Designer hinzu  
+#### <a name="to-add-sharepoint-features-with-the-package-designer"></a>SharePoint-Funktionen mit dem Paket-Designer hinzufügen  
   
-1.  Öffnen Sie den **Paket\-Designer**.  
+1.  Öffnen der **Paket-Designer**.  
   
-     Weitere Informationen finden Sie unter [Gewusst wie: Anpassen eines SharePoint-Lösungspakets](../sharepoint/how-to-customize-a-sharepoint-solution-package.md).  
+     Weitere Informationen finden Sie unter [wie: Anpassen eines SharePoint-Lösungspakets](../sharepoint/how-to-customize-a-sharepoint-solution-package.md).  
   
-2.  Fügen Sie eine oder mehrere SharePoint\-Funktionen hinzu, indem Sie eine oder mehrere der folgenden Schritte ausführen:  
+2.  Fügen Sie eine oder mehrere SharePoint-Funktionen, indem eine oder mehrere der folgenden Schritte ausführen:  
   
-    1.  Doppelklicken Sie auf jedes Element in der Liste **Elemente in der Lösung**, die Sie hinzufügen möchten.  
+    1.  Doppelklicken Sie auf jedes Element in der **Elemente in der Lösung** Liste, die Sie hinzufügen möchten.  
   
-    2.  Wählen Sie ein Element, das Sie hinzufügen möchten, und dann die Schaltfläche **Hinzufügen** aus \(\>\).  
+    2.  Wählen Sie ein Element, das Sie hinzufügen möchten, und wählen Sie dann die **hinzufügen** Schaltfläche (>).  
   
-    3.  Wählen Sie die Schaltfläche **Alle hinzufügen** \(\>\>\) um alle Elemente gleichzeitig hinzuzufügen.  
+    3.  Wählen Sie die **alle hinzufügen** Schaltfläche (>>), alle Elemente gleichzeitig hinzuzufügen.  
   
-     Beispielsweise können Sie auf ein Element in der Liste **Elemente in der Lösung** doppelklicken, um sie der Liste **Elemente in diesem Paket** hinzuzufügen.  
+     Angenommen, Sie können Doppelklicken Sie auf ein Element in der **Elemente in der Lösung** Liste aus, um ihn zum Hinzufügen der **Elemente in diesem Paket** Liste.  
   
-     Die SharePoint\-Projektelemente und \-Funktionen werden in der Liste **Elemente in diesem Paket** angezeigt.  
+     Die SharePoint-Projektelemente und-Funktionen werden in der **Elemente in diesem Paket** Liste.  
   
-## Entfernen von Funktionen aus einem SharePoint\-Paket  
- Sie können den Paket\-Designer verwenden, um Funktionen aus einem SharePoint\-Paket zu entfernen.  
+## <a name="removing-features-from-a-sharepoint-package"></a>Entfernen von Funktionen aus einer SharePoint-Paket  
+ Die Paket-Designer können zum Entfernen von Features auf einer SharePoint-Paket.  
   
-#### So entfernen Sie SharePoint\-Funktionen mit dem Paket\-Designer  
+#### <a name="to-remove-sharepoint-features-with-the-package-designer"></a>So entfernen Sie die SharePoint-Funktionen mit dem Paket-Designer  
   
-1.  In der Liste **Elemente in diesem Paket** wählen Sie ein Element, das Sie entfernen möchten, und dann die Schaltfläche **Entfernen** \(\<\), oder wählen Sie die Schaltfläche **Alle entfernen** \(\<\<\) um alle Elemente zu entfernen.  
+1.  In der **Elemente in diesem Paket** wählen Sie ein Element, das Sie entfernen möchten, und wählen Sie dann die **entfernen** (<) klicken, oder wählen Sie die **alle entfernen** Schaltfläche (<<) entfernen alle Elemente.  
   
-     Die SharePoint\-Elemente werden in der Liste **Elemente in der Lösung** angezeigt.  
+     Die SharePoint-Elemente werden in der **Elemente in der Lösung** Liste.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Erstellen von SharePoint-Lösungspaketen](../sharepoint/creating-sharepoint-solution-packages.md)   
- [Gewusst wie: Anpassen eines SharePoint-Lösungspakets](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)   
- [NOT IN BUILD: How to: Modify Package Properties](http://msdn.microsoft.com/de-de/372089ce-cda9-4c21-beb2-f964990b96ee)   
- [How to: Create a Package](http://msdn.microsoft.com/de-de/b24be45c-e91d-49bb-afb0-7b265404214b)  
+ [Vorgehensweise: Anpassen eines SharePoint-Lösungspakets](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)  
+ [Vorgehensweise: Erstellen eines Pakets](http://msdn.microsoft.com/en-us/b24be45c-e91d-49bb-afb0-7b265404214b)  
   
   

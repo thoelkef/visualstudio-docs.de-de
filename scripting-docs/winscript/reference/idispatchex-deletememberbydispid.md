@@ -1,27 +1,30 @@
 ---
-title: "IDispatchEx::DeleteMemberByDispID | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IDispatchEx::DeleteMemberByDispID | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IDispatchEx.DeleteMemberByDispID
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "DeleteMemberByDispID-Methode"
+helpviewer_keywords: DeleteMemberByDispID method
 ms.assetid: f61231e5-ba93-4ac3-bde8-d363548356b3
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 573eb60dc901e43706835c4d627b25bd54bbe751
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# IDispatchEx::DeleteMemberByDispID
-Löscht einen Member durch DISPID.  
+# <a name="idispatchexdeletememberbydispid"></a>IDispatchEx::DeleteMemberByDispID
+Löscht ein Element über die DISPID an.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 HRESULT DeleteMemberByDispID(  
@@ -29,24 +32,24 @@ HRESULT DeleteMemberByDispID(
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `id`  
- Memberbezeichner.  Verwendung `GetDispID` oder `GetNextDispID`, in der Dispatchbezeichner.  
+ Elementbezeichner. Verwendet `GetDispID` oder `GetNextDispID` die Dispatch-ID abrufen.  
   
-## Rückgabewert  
- Gibt eine der folgenden Werte:  
+## <a name="return-value"></a>Rückgabewert  
+ Gibt einen der folgenden Werte zurück:  
   
 |||  
 |-|-|  
 |`S_OK`|Erfolgreich.|  
-|`S_FALSE`|Member vorhanden ist, aber nicht gelöscht werden kann.|  
+|`S_FALSE`|Element vorhanden ist, aber es kann nicht gelöscht werden.|  
   
-## Hinweise  
- Wenn der Member gelöscht wird, muss das DISPID für `GetNextDispID` gültig bleiben.  
+## <a name="remarks"></a>Hinweise  
+ Wenn das Element gelöscht wird, muss die DISPID für gültig bleibt `GetNextDispID`.  
   
- Wenn ein Member mit einem angegebenen Namen gelöscht wird und später ein Member mit dem gleichen Namen neu erstellt wird, sollte das DISPID das identisch sein.  Ob \(Membernamen, die nur durch die Groß\-\/Kleinschreibung unterscheiden, sind "," identisch ist Objektabhängiges Element.\)  
+ Wenn ein Element mit einem angegebenen Namen wird gelöscht, und später ein Element mit dem gleichen Namen neu erstellt, sollte die DISPID identisch sein. (Ist, ob Elementnamen, die sich nur durch '-Fällen zu unterscheiden sind "identisch" Objekt abhängig.)  
   
-## Beispiel  
+## <a name="example"></a>Beispiel  
   
 ```  
 BSTR bstrName;  
@@ -58,7 +61,7 @@ if (SUCCEEDED(pdex->GetDispID(bstrName, fdexNameCaseSensitive, &dispid)))
     pdex->DeleteMemberByDispID(dispid);  
 ```  
   
-## Siehe auch  
- [IDispatchEx\-Schnittstelle](../../winscript/reference/idispatchex-interface.md)   
+## <a name="see-also"></a>Siehe auch  
+ [IDispatchEx-Schnittstelle](../../winscript/reference/idispatchex-interface.md)   
  [IDispatchEx::GetDispID](../../winscript/reference/idispatchex-getdispid.md)   
  [IDispatchEx::GetNextDispID](../../winscript/reference/idispatchex-getnextdispid.md)

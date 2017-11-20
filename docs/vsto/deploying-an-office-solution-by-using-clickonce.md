@@ -1,12 +1,10 @@
 ---
-title: Deploying an Office Solution by Using ClickOnce | Microsoft Docs
+title: "Bereitstellen einer Office-Lösung mithilfe von ClickOnce | Microsoft Docs"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -16,256 +14,256 @@ helpviewer_keywords:
 - Office development in Visual Studio, deploying solutions
 - ClickOnce deployment [Office development in Visual Studio], deploying solutions
 ms.assetid: feb516b3-5e4d-449a-9fd2-347d08d90252
-caps.latest.revision: 59
-author: kempb
-ms.author: kempb
+caps.latest.revision: "59"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: a8430c32a7d9352554a9fc940eabe3b4ef0428c4
-ms.contentlocale: de-de
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: 5ae3fceb52e0a99ee87a12a650333b3bc8cf1420
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="deploying-an-office-solution-by-using-clickonce"></a>Deploying an Office Solution by Using ClickOnce
-  You can deploy your Office solution in fewer steps if you use ClickOnce. If you publish updates, your solution will automatically detect and install them. However, ClickOnce requires that you install your solution separately for each user of a computer. Therefore, you should consider using Windows Installer (.msi) if more than one user will run your solution on the same computer.  
+# <a name="deploying-an-office-solution-by-using-clickonce"></a>Bereitstellen einer Office-Lösung mithilfe von ClickOnce
+  Wenn Sie ClickOnce verwenden, können Sie die Office-Projektmappe in weniger Schritten bereitstellen. Wenn Sie Updates veröffentlichen, erkennt die Projektmappe sie automatisch und installiert sie. Für ClickOnce ist es jedoch erforderlich, die Projektmappe für jeden Benutzer eines Computers separat zu installieren. Daher sollten Sie die Verwendung von Windows Installer (MSI-Format) in Erwägung ziehen, wenn mehrere Benutzer die Projektmappe auf dem gleichen Computer ausführen.  
   
-## <a name="in-this-topic"></a>In this topic  
+## <a name="in-this-topic"></a>In diesem Thema  
   
--   [Publish the solution](#Publish)  
+-   [Veröffentlichen Sie die Projektmappe](#Publish)  
   
--   [Decide how you want to grant trust to the solution](#Trust)  
+-   [Entscheiden Sie, wie der Projektmappe Vertrauenswürdigkeit gewährt werden sollen.](#Trust)  
   
--   [Help users install the solution](#Helping)  
+-   [Unterstützen von Benutzern, die die Projektmappe installieren](#Helping)  
   
--   [Put the document of a solution onto the end user's computer (document-level customizations only)](#Put)  
+-   [Kopieren des Dokuments einer Projektmappe auf die Endbenutzer-Computer (nur Anpassungen auf Dokumentebene)](#Put)  
   
--   [Put the document of a solution onto a server that's running SharePoint (document-level customizations only)](#SharePoint)  
+-   [Kopieren des Dokuments einer Projektmappe auf einem Server mit SharePoint (nur Anpassungen auf Dokumentebene)](#SharePoint)  
   
--   [Create a custom installer](#Custom)  
+-   [Erstellen eines benutzerdefinierten Installationsprogramms](#Custom)  
   
--   [Publish an update](#Update)  
+-   [Veröffentlichen eines Updates](#Update)  
   
--   [Change the installation location of a solution](#Location)  
+-   [Ändern des Installationspfads einer Projektmappe](#Location)  
   
--   [Roll back a solution to an earlier version](#Roll)  
+-   [Zurücksetzen der Projektmappe auf eine frühere version](#Roll)  
   
- For more information about how to deploy an Office solution by creating a Windows Installer file, see [Deploying an Office Solution by Using Windows Installer](../vsto/deploying-an-office-solution-by-using-windows-installer.md).  
+ Weitere Informationen zum Bereitstellen einer Office-Projektmappe durch das Erstellen einer Windows Installer-Datei finden Sie unter [Bereitstellen einer Office-Lösung mithilfe von Windows Installer](../vsto/deploying-an-office-solution-by-using-windows-installer.md).  
   
-##  <a name="Publish"></a> Publish the solution  
- You can publish your solution by using the **Publish Wizard** or the **Project Designer**. In this procedure, you'll use the **Project Designer** because it provides the complete set of publishing options. See [Publish Wizard &#40;Office Development in Visual Studio&#41;](../vsto/publish-wizard-office-development-in-visual-studio.md).  
+##  <a name="Publish"></a>Veröffentlichen Sie die Projektmappe  
+ Veröffentlichen Sie die Projektmappe mit der **Veröffentlichungs-Assistenten** oder **Projekt-Designer**. In diesem Verfahren wird anhand der **Projekt-Designer** da es sich um den vollständigen Satz von Veröffentlichungsoptionen bereitstellt. Finden Sie unter [Veröffentlichen-Assistenten &#40; Office-Entwicklung in Visual Studio &#41;](../vsto/publish-wizard-office-development-in-visual-studio.md).  
   
-#### <a name="to-publish-the-solution"></a>To publish the solution  
+#### <a name="to-publish-the-solution"></a>So veröffentlichen Sie die Projektmappe  
   
-1.  In **Solution Explorer**, choose the node that's named for your project.  
+1.  In **Projektmappen-Explorer**, wählen Sie den Knoten, die nach dem Projekt benannt wird.  
   
-2.  On the menu bar, choose **Project**, *ProjectName* **Properties**.  
+2.  Wählen Sie in der Menüleiste **Projekt**, *Projektname* **Eigenschaften**.  
   
-3.  In the **Project Designer**, choose the **Publish** tab, which the following illustration shows.  
+3.  In der **Projekt-Designer**, wählen Sie die **veröffentlichen** Registerkarte, die in die folgende Abbildung dargestellt wird.  
   
-     ![The publish tab of the Project Designer](../vsto/media/vsto-publishtab.png "The publish tab of the Project Designer")  
+     ![Die Registerkarte "Veröffentlichen" im Projekt-Designer](../vsto/media/vsto-publishtab.png "auf der Registerkarte "Veröffentlichen" im Projekt-Designer")  
   
-4.  In the **Publishing Folder Location (ftp server, or file path)** box, enter the path of the folder where you want the **Project Designer** to copy the solution files.  
+4.  In der **Speicherort des Veröffentlichungsordners (FTP-Server oder Dateipfad)** Geben Sie den Pfad des Ordners, in dem Sie möchten, die **Projekt-Designer** die Projektmappendateien kopieren.  
   
-     You can enter any of the following types of paths.  
+     Folgende Pfadtypen sind möglich:  
   
-    -   A local path (for example, *C:\FolderName\FolderName*).  
+    -   Ein lokaler Pfad (z. B. *C:\FolderName\FolderName*).  
   
-    -   A Uniform Naming Convention (UNC) path to a folder on your network (for example, *\\\ServerName\FolderName*).  
+    -   Ein Uniform Naming Convention (UNC)-Pfad zu einem Ordner im Netzwerk (z. B.  *\\\ServerName\FolderName*).  
   
-    -   A relative path (for example, *PublishFolder\\*, which is the folder into which the project is published by default).  
+    -   Ein relativer Pfad (z. B. *Veröffentlichungsordner\\*, also in den Ordner, in dem das Projekt standardmäßig veröffentlicht wird).  
   
-5.  In the **Installation Folder URL** box, enter the fully qualified path of the location where end users will find your solution.  
+5.  In der **URL des Installationsordners** Geben Sie den vollqualifizierten Pfad des Speicherorts, in dem Endbenutzer die Projektmappe finden.  
   
-     If you don't know the location yet, don't enter anything into this field. By default, ClickOnce looks for updates in the folder from which your users install the solution.  
+     Wenn Sie noch nicht den Speicherort kennen, geben Sie nicht alles in dieses Feld. Standardmäßig sucht ClickOnce in dem Ordner, von dem aus die Benutzer die Projektmappe installieren, nach Updates.  
   
-6.  Choose the **Prerequisites** button.  
+6.  Klicken Sie auf die Schaltfläche **Erforderliche Komponenten** .  
   
-7.  In the **Prerequisites** dialog box, ensure that the **Create setup program to install prerequisite components** check box is selected.  
+7.  In der **Voraussetzungen** Dialogfeld sicher, dass die **Setupprogramm zur Installation erforderlicher Komponenten erstellen** Kontrollkästchen aktiviert ist.  
   
-8.  In the **Choose which prerequisites to install** list, select the check boxes for **Windows Installer 4.5** and the appropriate .NET Framework package.  
+8.  In der **wählen Sie die Voraussetzungen für die Installation** wählen Sie die Kontrollkästchen für **Windows Installer 4.5** und den entsprechenden .NET Framework-Paket.  
   
-     For example, if your solution targets the [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)], select the check boxes for **Windows Installer 4.5** and **Microsoft .NET Framework 4.5 Full**.  
+     Beispielsweise, wenn Ihre Projektmappe als Zielversion verwendet die [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)], wählen Sie die Kontrollkästchen für **Windows Installer 4.5** und **Microsoft .NET Framework 4.5 Full**.  
   
-9. If your solution targets the .NET Framework 4.5, also select the **Visual Studio 2010 Tools for Office Runtime** check box.  
+9. Wenn die Projektmappe auf .NET Framework 4.5 abzielt, aktivieren Sie auch die **Visual Studio 2010-Tools für Office-Laufzeit** Kontrollkästchen.  
   
     > [!NOTE]  
-    >  By default, this check box doesn't appear. To show this check box, you must create a Bootstrapper package. See [Creating a Bootstrapper package for an Office 2013 VSTO Add-in with Visual Studio 2012](http://blogs.msdn.com/b/vsto/archive/2012/12/21/creating-a-bootstrapper-package-for-an-office-2013-vsto-add-in-with-visual-studio-2012.aspx).  
+    >  Standardmäßig wird dieses Kontrollkästchen angezeigt. Damit es angezeigt wird, müssen Sie ein Bootstrapperpaket erstellen. Finden Sie unter [zum Erstellen eines Bootstrapperpakets für ein Office 2013 VSTO-Add-in mit Visual Studio 2012](http://blogs.msdn.com/b/vsto/archive/2012/12/21/creating-a-bootstrapper-package-for-an-office-2013-vsto-add-in-with-visual-studio-2012.aspx).  
   
-10. Under **Specify the install location for prerequisites**, choose one of the options that appear, and then choose the **OK** button.  
+10. Klicken Sie unter **Installationsort für erforderliche Komponenten angeben**, wählen Sie eine der Optionen, die angezeigt werden, und wählen Sie dann die **OK** Schaltfläche.  
   
-     The following table describes each option.  
+     In der folgenden Tabelle sind die einzelnen Optionen beschrieben.  
   
-    |Option|Description|  
+    |Option|Beschreibung|  
     |------------|-----------------|  
-    |**Download prerequisites from the component vendor's web site**|The user is prompted to download and install these prerequisites from the vendor.|  
-    |**Download prerequisites from the same location as my application**|The prerequisite software is installed with the solution. If you choose this option, Visual Studio copies all of the prerequisite packages to the publish location for you. For this option to work, the prerequisite packages must be on the development computer.|  
-    |**Download prerequisites from the following location**|Visual Studio copies all of the prerequisite packages to the location that you specify and installs them with the solution.|  
+    |**Erforderliche Komponenten von der Website des Komponentenherstellers herunterladen**|Der Benutzer wird aufgefordert, diese erforderlichen Komponenten vom Hersteller herunterzuladen und zu installieren.|  
+    |**Erforderliche Komponenten von demselben Speicherort wie Anwendung herunterladen**|Die erforderliche Software wird mit der Projektmappe installiert. Wenn Sie diese Option auswählen, kopiert Visual Studio alle erforderlichen Pakete für Sie an den Veröffentlichungsort. Damit diese Option funktioniert, müssen sich die erforderlichen Pakete auf dem Entwicklungscomputer befinden.|  
+    |**Erforderliche Komponenten von folgendem Speicherort herunterladen**|Visual Studio kopiert alle erforderlichen Pakete an den angegebenen Speicherort und installiert sie mit der Projektmappe.|  
   
-     See [Prerequisites Dialog Box](/visualstudio/ide/reference/prerequisites-dialog-box).  
+     Finden Sie unter [Dialogfeld erforderliche](/visualstudio/ide/reference/prerequisites-dialog-box).  
   
-11. Choose the **Updates** button, specify how often you want each end user's VSTO Add-in or customization to check for updates, and then choose the **OK** button.  
-  
-    > [!NOTE]  
-    >  If you're deploying by using a CD or a removable drive, choose the **Never check for updates** option button.  
-  
-     For information about how to publish an update, see [Publish an update](#Update).  
-  
-12. Choose the **Options** button, review the options in the **Options** dialog box, and then choose the **OK** button.  
-  
-13. Choose the **Publish Now** button.  
-  
-     Visual Studio adds the following folders and files to the publishing folder that you specified earlier in this procedure.  
-  
-    -   The **Application Files** folder.  
-  
-    -   The setup program.  
-  
-    -   A deployment manifest that points to the deployment manifest of the most recent version.  
-  
-     The **Application Files** folder contains a subfolder for each version that you publish. Each version-specific subfolder contains the following files.  
-  
-    -   An application manifest.  
-  
-    -   A deployment manifest.  
-  
-    -   Customization assemblies.  
-  
-     The following illustration shows the structure of the publish folder for an Outlook VSTO Add-in.  
-  
-     ![Publish Folder Structure](../vsto/media/publishfolderstructure.png "Publish Folder Structure")  
+11. Wählen Sie die **Updates** Schaltfläche, die angeben, wie oft Sie jedes Endbenutzers VSTO-Add-in oder die Anpassung soll nach Updates suchen, und wählen Sie dann die **OK** Schaltfläche.  
   
     > [!NOTE]  
-    >  ClickOnce appends the .deploy extension to assemblies so that a secured installation of Internet Information Services (IIS) won't block the files because of an unsafe extension. When the user installs the solution, ClickOnce removes the .deploy extension.  
+    >  Wenn Sie die Bereitstellung mithilfe einer CD oder eines Wechsellaufwerks, wählen Sie die **nie nach Updates suchen** Optionsfeld.  
   
-14. Copy the solution files to the installation location that you specified earlier in this procedure.  
+     Weitere Informationen dazu, wie Sie ein Update veröffentlichen, finden Sie unter [Veröffentlichen eines Updates](#Update).  
   
-##  <a name="Trust"></a> Decide how you want to grant trust to the solution  
- Before a solution can run on user computers, either you must grant trust or users must respond to a trust prompt when they install the solution. To grant trust to the solution, sign the manifests by using a certificate that identifies a known and trusted publisher. See [Trusting the Solution by Signing the Application and Deployment Manifests](../vsto/granting-trust-to-office-solutions.md#Signing).  
+12. Wählen Sie die **Optionen** Schaltfläche, überprüfen Sie die Optionen in der **Optionen** Dialogfeld Feld, und wählen Sie dann die **OK** Schaltfläche.  
   
- If you're deploying a document-level customization and you want to put the document into a folder on the user's computer or make the document available on a SharePoint site, ensure that Office trusts the location of the document. See [Granting Trust to Documents](../vsto/granting-trust-to-documents.md).  
+13. Wählen Sie die **jetzt veröffentlichen** Schaltfläche.  
   
-##  <a name="Helping"></a> Help users install the solution  
- Users can install the solution by running the setup program, opening the deployment manifest, or in the case of a document-level customization, opening the document directly. As a best practice, users should install your solution by using the setup program. The other two approaches don't ensure that the prerequisite software is installed. If users want to open the document from the installation location, they must add it to the list of trusted locations in the Trust Center of the Office application.  
+     Visual Studio fügt dem Veröffentlichungsordner die folgenden Ordner und Dateien hinzu, die Sie zuvor in dieser Prozedur angegeben haben.  
   
-### <a name="opening-the-document-of-a-document-level-customization"></a>Opening the document of a document-level customization  
- Users can open the document of a document-level customization directly from the installation location or by copying the document to their local computer and then opening the copy.  
+    -   Die **Anwendungsdateien** Ordner.  
   
- As a best practice, users should open a copy of the document on their computers so that multiple users won't try to open the same copy at the same time. To enforce this practice, you can configure your setup program to copy the document to user computers. See [Put the document of a solution onto the end user's computer (document-level customizations only)](#Put).  
+    -   Das Setupprogramm.  
   
-### <a name="installing-the-solution-by-opening-the-deployment-manifest-from-an-iis-website"></a>Installing the solution by opening the deployment manifest from an IIS website  
- Users can install an Office solution by opening the deployment manifest from the web. However, a secured installation of Internet Information Services (IIS) will block files that have the .vsto extension. The MIME type must be defined in IIS before you can deploy an Office solution by using IIS.  
+    -   Ein Bereitstellungsmanifest, das auf das Bereitstellungsmanifest der neuesten Version verweist.  
   
-##### <a name="to-add-the-vsto-mime-type-to-iis-60"></a>To add the .vsto MIME type to IIS 6.0  
+     Die **Anwendungsdateien** Ordner enthält einen Unterordner für jede Version, die Sie veröffentlichen. Jeder versionsspezifische Unterordner enthält die folgenden Dateien.  
   
-1.  On the server that's running IIS 6.0, choose **Start**, **All Programs**, **Administrative Tools**,  **Internet Information Services (IIS) Manager**.  
+    -   Ein Anwendungsmanifest.  
   
-2.  Choose the computer name, the **Web Sites** folder, or the web site that you're configuring.  
+    -   Ein Bereitstellungsmanifest.  
   
-3.  On the menu bar, choose **Action**, **Properties**.  
+    -   Anpassungsassemblys.  
   
-4.  On the **HTTP Headers** tab, choose the **MIME Types** button.  
+     Die folgende Abbildung zeigt die Struktur des Veröffentlichungsordners für ein Outlook VSTO-Add-In.  
   
-5.  In the **MIME Types** window, choose the **New** button.  
-  
-6.  In the **MIME Type** window, enter **.vsto** as the extension, enter **application/x-ms-vsto** as the MIME type, and then apply the new settings.  
+     ![Struktur des Veröffentlichungsordners](../vsto/media/publishfolderstructure.png "Struktur des Veröffentlichungsordners")  
   
     > [!NOTE]  
-    >  For the changes to take effect, you must restart the World Wide Web Publishing Service or wait for the worker process to recycle. You must then flush the browser's disk cache and then try to open the .vsto file again.  
+    >  ClickOnce hängt die Erweiterung ".deploy" auf Assemblys, damit eine gesicherte Installation von Internet Information Services (IIS) die Dateien nicht aufgrund einer unsicheren Dateierweiterung blockiert. Wenn der Benutzer die Projektmappe installiert, entfernt ClickOnce die Erweiterung ".deploy".  
   
-##### <a name="to-add-the-vsto-mime-type-to-iis-70"></a>To add the .vsto MIME type to IIS 7.0  
+14. Kopieren Sie die Projektmappendateien an den Installationspfad, den Sie zuvor in dieser Prozedur angegeben haben.  
   
-1.  On the server that's running IIS 7.0, choose **Start**, **All Programs**, **Accessories**.  
+##  <a name="Trust"></a>Entscheiden Sie, wie der Projektmappe Vertrauenswürdigkeit gewährt werden sollen.  
+ Bevor eine Projektmappe auf Benutzercomputern ausgeführt werden kann, müssen Sie entweder Vertraulichkeit gewähren, oder Benutzer müssen auf eine vertrauenswürdige Eingabeaufforderung antworten, wenn Sie die Projektmappe installieren. Um der Projektmappe Vertraulichkeit zu gewähren, signieren Sie die Manifeste, indem Sie ein Zertifikat verwenden, das einen bekannten und vertrauenswürdigen Herausgeber identifiziert. Finden Sie unter [vertrauen die Projektmappe durch das Signieren der Anwendung und die Bereitstellung Manifeste](../vsto/granting-trust-to-office-solutions.md#Signing).  
   
-2.  Open the shortcut menu for **Command Prompt**, and then choose  **Run as administrator.**  
+ Wenn Sie eine Anpassung auf Dokumentebene bereitstellen, und Sie das Dokument in einem Ordner auf dem Computer des Benutzers speichern oder das Dokument auf einer SharePoint-Website zur Verfügung stellen möchten, stellen Sie sicher, dass Office dem Speicherort des Dokuments vertraut. Finden Sie unter [Gewähren von Vertrauenswürdigkeit für Dokumente](../vsto/granting-trust-to-documents.md).  
   
-3.  In the **Open** box, enter the following path, and then choose the **OK** button.  
+##  <a name="Helping"></a>Unterstützen von Benutzern, die die Projektmappe installieren  
+ Benutzer können die Projektmappe installieren, indem sie das Setupprogramm ausführen oder das Bereitstellungsmanifest öffnen; im Falle einer Anpassung auf Dokumentebene kann auch das Dokument direkt geöffnet werden. Als empfohlene Vorgehensweise sollten Benutzer die Projektmappe mithilfe des Setupprogramms installieren. Die anderen beiden Methoden ist nicht sichergestellt, dass die erforderliche Software installiert ist. Wenn Benutzer das Dokument vom Installationspfad öffnen möchten, müssen sie ihn der Liste vertrauenswürdiger Speicherorte im Sicherheitscenter der Office-Anwendung hinzufügen.  
+  
+### <a name="opening-the-document-of-a-document-level-customization"></a>Öffnen des Dokuments einer Anpassung auf Dokumentebene  
+ Benutzer können das Dokument einer Anpassung auf Dokumentebene direkt vom Installationspfad öffnen, oder indem Sie das Dokument auf den lokalen Computer kopieren und dann die Kopie öffnen.  
+  
+ Empfohlen wird, dass Benutzer eine Kopie des Dokuments auf ihrem Computer öffnen, damit nicht mehrere Benutzer gleichzeitig versuchen, die gleiche Kopie zu öffnen. Um diese Methode zu erzwingen, können Sie das Setupprogramm so konfigurieren, dass das Dokument auf die Benutzercomputer kopiert wird. Finden Sie unter [Kopieren des Dokuments einer Projektmappe auf die Endbenutzer-Computer (nur Anpassungen auf Dokumentebene)](#Put).  
+  
+### <a name="installing-the-solution-by-opening-the-deployment-manifest-from-an-iis-website"></a>Installieren der Projektmappe durch Öffnen des Bereitstellungsmanifests von einer IIS-Website  
+ Benutzer können eine Office-Projektmappe installieren, indem sie das Bereitstellungsmanifest aus dem Web öffnen. Eine gesicherte Installation von Internetinformationsdiensten (IIS) blockiert jedoch Dateien mit der Dateinamenerweiterung ".vsto". Der MIME-Typ muss in IIS definiert werden, bevor Sie Office-Projektmappen mithilfe von IIS bereitstellen können.  
+  
+##### <a name="to-add-the-vsto-mime-type-to-iis-60"></a>So fügen Sie den .vsto-MIME-Typ zu IIS 6.0 hinzu  
+  
+1.  Wählen Sie auf dem Server, auf denen IIS 6.0 ausgeführt wird, **starten**, **Programme**, **Verwaltung**, **(Internet Information Services, IIS) Manager**.  
+  
+2.  Wählen Sie den Computernamen, den **Websites** Ordner oder die Website, die Sie konfigurieren.  
+  
+3.  Wählen Sie in der Menüleiste **Aktion**, **Eigenschaften**.  
+  
+4.  Auf der **HTTP-Header** Registerkarte, und wählen Sie die **MIME-Typen** Schaltfläche.  
+  
+5.  In der **MIME-Typen** Fenster, wählen Sie die **neu** Schaltfläche.  
+  
+6.  In der **MIME-Typ** Fenster, geben Sie **".VSTO"** als Erweiterung und geben Sie **Application/X-ms-Vsto** als MIME-Geben Sie an, und klicken Sie dann die neuen Einstellungen anzuwenden.  
+  
+    > [!NOTE]  
+    >  Damit die Änderungen wirksam werden, müssen Sie den WWW-Publishingdienst neu starten oder abwarten, bis der Arbeitsprozess wiederverwendet wird. Anschließend müssen Sie den Datenträgercache des Browsers leeren und dann versuchen, die VSTO-Datei erneut zu öffnen.  
+  
+##### <a name="to-add-the-vsto-mime-type-to-iis-70"></a>So fügen Sie den .vsto-MIME-Typ zu IIS 7,0 hinzu  
+  
+1.  Wählen Sie auf dem Server, auf dem IIS 7.0 ausgeführt wird, **starten**, **Programme**, **Zubehör**.  
+  
+2.  Öffnen Sie das Kontextmenü für **Eingabeaufforderung**, und wählen Sie dann **als Administrator ausführen.**  
+  
+3.  In der **öffnen** Feld, geben Sie den folgenden Pfad aus, und wählen Sie dann die **OK** Schaltfläche.  
   
     ```  
     %windir%\system32\inetsrv   
     ```  
   
-4.  Enter the following command, and then apply the new settings.  
+4.  Geben Sie den folgenden Befehl ein, und wenden Sie dann die neuen Einstellungen an.  
   
     ```  
     set config /section:staticContent /+[fileExtension='.vsto',mimeType='application/x-ms-vsto']  
     ```  
   
     > [!NOTE]  
-    >  For the changes to take effect, you must restart the World Wide Web Publishing Service, or you must wait for the worker process to recycle. You must then flush the browser's disk cache and then try to open the .vsto file again.  
+    >  Damit die Änderungen wirksam werden, müssen Sie den WWW-Publishingdienst neu starten oder abwarten, bis der Arbeitsprozess wiederverwendet wird. Anschließend müssen Sie den Datenträgercache des Browsers leeren und dann versuchen, die VSTO-Datei erneut zu öffnen.  
   
-##  <a name="Put"></a> Put the document of a solution onto the end user's computer (document-level customizations only)  
- You can copy the document of your solution onto the end user's computer for them by creating a post-deployment action. That way, the user doesn't have to manually copy the document from the installation location to their computer after they install your solution. You'll have to create a class that defines the post-deployment action, build and publish the solution, modify the application manifest, and re-sign the application and deployment manifest.  
+##  <a name="Put"></a>Kopieren des Dokuments einer Projektmappe auf die Endbenutzer-Computer (nur Anpassungen auf Dokumentebene)  
+ Sie können das Dokument der Projektmappe auf dem Computer des Endbenutzers dafür erstellen eine Aktion nach der Bereitstellung markieren. Auf diese Weise wird nicht der Benutzer manuell kopieren, das Dokument vom Installationspfad auf ihren Computer nach der Installation der Projektmappe verfügen. Sie müssen eine Klasse erstellen, die die Aktion nach der Bereitstellung definiert, erstellen und veröffentlichen Sie die Projektmappe das Anwendungsmanifest ändern und die Anwendung und das Bereitstellungsmanifest erneut signieren.  
   
- The following procedures assume that your project name is **ExcelWorkbook** and that you publish the solution to the **C:\publish** directory on your computer.  
+ Die folgenden Verfahren wird davon ausgegangen, dass Ihr Projektname ist **ExcelWorkbook** und dass Sie die Projektmappe veröffentlichen der **C:\publish** Verzeichnis auf Ihrem Computer.  
   
-### <a name="create-a-class-that-defines-the-post-deployment-action"></a>Create a class that defines the post-deployment action  
+### <a name="create-a-class-that-defines-the-post-deployment-action"></a>Erstellen einer Klasse, in der die Aktion nach der Bereitstellung definiert wird  
   
-1.  On the menu bar, choose **File**, **Add**, **New Project**.  
+1.  Wählen Sie auf der Menüleiste **Datei**, **Hinzufügen**, **Neues Projekt**aus.  
   
-2.  In the **Add New Project** dialog box, in the **Installed Templates** pane, choose the **Windows** folder.  
+2.  In der **neues Projekt hinzufügen** Dialogfeld die **installierte Vorlagen** Bereich, wählen Sie die **Windows** Ordner.  
   
-3.  In the **Templates** pane, choose the **Class Library** template.  
+3.  In der **Vorlagen** Bereich, wählen Sie die **-Klassenbibliothek** Vorlage.  
   
-4.  In the **Name** field, enter **FileCopyPDA**, and then choose the **OK** button.  
+4.  In der **Namen** Feld **FileCopyPDA**, und wählen Sie dann die **OK** Schaltfläche.  
   
-5.  In **Solution Explorer**, choose the **FileCopyPDA** project.  
+5.  In **Projektmappen-Explorer**, wählen Sie die **FileCopyPDA** Projekt.  
   
-6.  On the menu bar, choose **Project**, **Add Reference**.  
+6.  Wählen Sie in der Menüleiste die Optionen **Projekt** und **Verweis hinzufügen** aus.  
   
-7.  On the **.NET** tab, add references to Microsoft.VisualStudio.Tools.Applications.Runtime and Microsoft.VisualStudio.Tools.Applications.ServerDocument.  
+7.  Auf der **.NET** Registerkarte, fügen Sie Verweise auf "Microsoft.VisualStudio.Tools.Applications.Runtime" und "Microsoft.VisualStudio.Tools.Applications.ServerDocument" hinzu.  
   
-8.  Rename the class to `FileCopyPDA`, and then replace the contents of the file with the code. This code performs the following tasks:  
+8.  Benennen Sie die Klasse in `FileCopyPDA` um, und ersetzen Sie den Inhalt der Datei durch den Code. Mit diesem Code werden die folgenden Aufgaben ausgeführt:  
   
-    -   Copies the document to the user's desktop.  
+    -   Kopieren des Dokuments auf den Desktop des Benutzers.  
   
-    -   Changes the _AssemblyLocation property from a relative path to a fully qualified path for the deployment manifest.  
+    -   Ändert die _AssemblyLocation-Eigenschaft von einem relativen Pfad um einen vollqualifizierten Pfad für das Bereitstellungsmanifest.  
   
-    -   Deletes the file if the user uninstalls the solution.  
+    -   Löschen der Datei, wenn der Benutzer die Projektmappe deinstalliert.  
   
-     [!code-vb[Trin_ExcelWorkbookPDA#7](../vsto/codesnippet/VisualBasic/trin_excelworkbookpda/filecopypda/class1.vb#7)] [!code-csharp[Trin_ExcelWorkbookPDA#7](../vsto/codesnippet/CSharp/trin_excelworkbookpda/filecopypda/class1.cs#7)]  
+     [!code-vb[Trin_ExcelWorkbookPDA#7](../vsto/codesnippet/VisualBasic/trin_excelworkbookpda/filecopypda/class1.vb#7)]
+     [!code-csharp[Trin_ExcelWorkbookPDA#7](../vsto/codesnippet/CSharp/trin_excelworkbookpda/filecopypda/class1.cs#7)]  
   
-### <a name="build-and-publish-the-solution"></a>Build and publish the solution  
+### <a name="build-and-publish-the-solution"></a>Erstellen und Veröffentlichen der Projektmappe  
   
-1.  In **Solution Explorer**, open the shortcut menu for the **FileCopyPDA** project, and then choose **Build**.  
+1.  In **Projektmappen-Explorer**, öffnen Sie das Kontextmenü für die **FileCopyPDA** Projekt, und wählen Sie dann **erstellen**.  
   
-2.  Open the shortcut menu for the **ExcelWorkbook** project, and then choose **Build**.  
+2.  Öffnen Sie das Kontextmenü für die **ExcelWorkbook** Projekt, und wählen Sie dann **erstellen**.  
   
-3.  Open the shortcut menu for the **ExcelWorkbook** project, and then choose **Add Reference**.  
+3.  Öffnen Sie das Kontextmenü für die **ExcelWorkbook** Projekt, und wählen Sie dann **Verweis hinzufügen**.  
   
-4.  In the **Add Reference** dialog box, choose the **Projects** tab, choose **FileCopyPDA**, and then choose the **OK** button.  
+4.  In der **Verweis hinzufügen** Dialogfeld Wählen Sie die **Projekte** Registerkarte **FileCopyPDA**, und wählen Sie dann die **OK** Schaltfläche.  
   
-5.  In **Solution Explorer**, choose the **ExcelWorkbook** project.  
+5.  In **Projektmappen-Explorer**, wählen Sie die **ExcelWorkbook** Projekt.  
   
-6.  On menu bar, choose **Project**, **New Folder**.  
+6.  Wählen Sie in der Menüleiste **Projekt**, **neuer Ordner**.  
   
-7.  Enter **Data**, and then choose the Enter key.  
+7.  Geben Sie **Daten**, und wählen Sie dann die EINGABETASTE.  
   
-8.  In **Solution Explorer**, choose the **Data** folder.  
+8.  In **Projektmappen-Explorer**, wählen Sie die **Daten** Ordner.  
   
-9. On the menu bar, choose **Project**, **Add Existing Item**.  
+9. Wählen Sie in der Menüleiste **Projekt**, **vorhandenes Element hinzufügen**.  
   
-10. In the **Add Existing Item** dialog box, browse to the output directory for the **ExcelWorkbook** project, choose the **ExcelWorkbook.xlsx** file, and then choose the **Add** button.  
+10. In der **vorhandenes Element hinzufügen** (Dialogfeld), navigieren Sie in das Ausgabeverzeichnis für die **ExcelWorkbook** Projekt, wählen Sie die **ExcelWorkbook.xlsx** , und wählen Sie dann die  **Hinzufügen** Schaltfläche.  
   
-11. In **Solution Explorer** choose the **ExcelWorkbook.xlsx** file.  
+11. In **Projektmappen-Explorer** wählen Sie die **ExcelWorkbook.xlsx** Datei.  
   
-12. In the **Properties** window, change the **Build Action** property to **Content** and the **Copy to Output Directory** property to **Copy if newer**.  
+12. In der **Eigenschaften** Ändern der **Buildvorgang** Eigenschaft **Content** und die **in Ausgabeverzeichnis kopieren** Eigenschaft  **Kopieren, wenn neuer**.  
   
-     When you've completed these steps, your project will resemble the following illustration.  
+     Wenn Sie diese Schritte abgeschlossen haben, wird das Projekt der folgenden Abbildung entsprechen.  
   
-     ![Project structure of the post deployment action.](../vsto/media/vsto-postdeployment.png "Project structure of the post deployment action.")  
+     ![Projektstruktur die Aktion nach der Bereitstellung. ] (../vsto/media/vsto-postdeployment.png "Projektstruktur die Aktion nach der Bereitstellung.")  
   
-13. Publish the **ExcelWorkbook** project.  
+13. Veröffentlichen der **ExcelWorkbook** Projekt.  
   
-### <a name="modify-the-application-manifest"></a>Modify the application manifest  
+### <a name="modify-the-application-manifest"></a>Ändern des Anwendungsmanifests  
   
-1.  Open the **c:\publish** directory by using **File Explorer**.  
+1.  Öffnen der **c:\publish** Verzeichnis **Datei-Explorer**.  
   
-2.  Open the **Application Files** folder, and then open the folder that corresponds to the most recent published version of your solution.  
+2.  Öffnen Sie die **Anwendungsdateien** Ordner, und öffnen Sie dann den Ordner, der aktuellen entspricht, veröffentlichten Version der Projektmappe.  
   
-3.  Open the **ExcelWorkbook.dll.manifest** file in a text editor such as Notepad.  
+3.  Öffnen der **ExcelWorkbook.dll.manifest** Datei in einem Texteditor wie Notepad.  
   
-4.  After the `</vstav3:update>` element, add following code. For the class attribute of the `<vstav3:entryPoint>` element, use the following syntax: *NamespaceName.ClassName*. In the following example, the namespace and class names are the same, so the resulting entry point name is `FileCopyPDA.FileCopyPDA`.  
+4.  Fügen Sie nach dem `</vstav3:update>`-Element den folgenden Code ein. Für das Klassenattribut des der `<vstav3:entryPoint>` -Element, verwenden Sie die folgende Syntax: *NamespaceName.ClassName*. Im folgenden Beispiel sind der Namespace und die Klassennamen gleich, sodass der Name des resultierenden Einstiegspunkts `FileCopyPDA.FileCopyPDA` lautet.  
   
     ```  
     <vstav3:postActions>  
@@ -284,25 +282,21 @@ ms.lasthandoff: 08/30/2017
     </vstav3:postActions>  
     ```  
   
-### <a name="re-sign-the-application-and-deployment-manifests"></a>Re-sign the application and deployment manifests  
+### <a name="re-sign-the-application-and-deployment-manifests"></a>Erneutes Signieren der Anwendungs- und Bereitstellungsmanifeste  
   
-1.  In the **%USERPROFILE%\Documents\Visual Studio 2013\Projects\ExcelWorkbook\ExcelWorkbook** folder, copy the **ExcelWorkbook_TemporaryKey.pfx** certificate file, and then paste it into the *PublishFolder* **\Application Files\ExcelWorkbook***MostRecentPublishedVersion* folder.  
+1.  In der **%USERPROFILE%\Documents\Visual Studio 2013\projects\excelarbeitsmappe\excelarbeitsmappe** Ordner, die Kopie der **ExcelWorkbook_TemporaryKey.pfx** Zertifikatdatei, und fügen Sie ihn in die  *Veröffentlichungsordner* **\Application Files\ExcelWorkbook**\__Zuletztveröffentlichteversion_ Ordner.
   
-2.  
+2.  Öffnen Sie die Visual Studio-Eingabeaufforderung, und wechseln Sie dann die **c:\publish\Application**\__Zuletztveröffentlichteversion_ Ordner (z. B. **c:\publish\Application Files\ExcelWorkbook_1_0_0_4**).  
   
-3.  Open the Visual Studio command prompt, and then change directories to the **c:\publish\Application Files\ExcelWorkbook***MostRecentPublishedVersion* folder (for example, **c:\publish\Application Files\ExcelWorkbook_1_0_0_4**).  
-  
-4.  Sign the modified application manifest by running the following command:  
+3.  Signieren Sie das geänderte Anwendungsmanifest, indem Sie den folgenden Befehl ausführen:  
   
     ```  
     mage -sign ExcelWorkbook.dll.manifest -certfile ExcelWorkbook_TemporaryKey.pfx  
     ```  
   
-     The message "ExcelWorkbook.dll.manifest successfully signed" appears.  
+     Die Meldung "ExcelWorkbook.dll.manifest erfolgreich signiert" wird angezeigt.  
   
-5.  
-  
-6.  Change to the **c:\publish** folder, and then update and sign the deployment manifest by running the following command:  
+4.  Ändern Sie in der **c:\publish** Ordner, und klicken Sie dann aktualisieren und Signieren der Bereitstellung manifest, indem Sie den folgenden Befehl ausführen:  
   
     ```  
     mage -update ExcelWorkbook.vsto -appmanifest "Application Files\Ex  
@@ -310,168 +304,168 @@ ms.lasthandoff: 08/30/2017
     ```  
   
     > [!NOTE]  
-    >  In the previous example, replace MostRecentVersionNumber with the version number of the most recently published version of your solution (for example, **1_0_0_4**).  
+    >  Ersetzen Sie im vorherigen Beispiel Aktuelleversionsnummer mit der Versionsnummer der zuletzt veröffentlichte Version der Projektmappe (z. B. **1_0_0_4**).  
   
-     The message "ExcelWorkbook.vsto successfully signed" appears.  
+     Die Meldung „ExcelWorkbook.vsto erfolgreich signiert“ wird angezeigt.  
   
-7.  Copy the ExcelWorkbook.vsto file to the **c:\publish\Application Files\ExcelWorkbook***MostRecentVersionNumber* directory.  
+5.  Kopieren Sie die Datei "ExcelWorkbook.VSTO" die **c:\publish\Application**\__Aktuelleversionsnummer_ Verzeichnis.  
   
-##  <a name="SharePoint"></a> Put the document of a solution onto a server that's running SharePoint (document-level customizations only)  
- You can publish your document-level customization to end users by using SharePoint. When users go to the SharePoint site and open the document, the runtime automatically installs the solution from the shared network folder to the user's local computer. After the solution is installed locally, the customization will still function even if the document is copied elsewhere, such as the desktop.  
+##  <a name="SharePoint"></a>Kopieren des Dokuments einer Projektmappe auf einem Server mit SharePoint (nur Anpassungen auf Dokumentebene)  
+ Sie können die Anpassung auf Dokumentebene für Endbenutzer mithilfe von SharePoint veröffentlichen. Wenn Benutzer die SharePoint-Site aufrufen und das Dokument öffnen, installiert die Laufzeit automatisch die Projektmappe aus dem freigegebenen Netzwerkordner auf den lokalen Computer des Benutzers. Nachdem die Projektmappe lokal installiert wurde, funktioniert die Anpassung sogar dann, wenn das Dokument an eine andere Stelle kopiert wird, z. B. auf den Desktop.  
   
-#### <a name="to-put-the-document-on-a-server-thats-running-sharepoint"></a>To put the document on a server that's running SharePoint  
+#### <a name="to-put-the-document-on-a-server-thats-running-sharepoint"></a>So kopieren Sie das Dokument auf einen Server, auf dem SharePoint ausgeführt wird  
   
-1.  Add the solution document to a document library on a SharePoint site.  
+1.  Fügen Sie das Projektmappendokument einer Dokumentbibliothek auf einer SharePoint-Site hinzu.  
   
-2.  Perform the steps for one of the following approaches:  
+2.  Führen Sie die Schritte für eines der folgenden Verfahren aus:  
   
-    -   Use the Office Configuration Tool to add the server that's running SharePoint to the Trust Center in Word or Excel on all user computers.  
+    -   Fügen Sie mit dem Office-Konfigurationstool den Server, auf dem SharePoint ausgeführt wird, auf allen Benutzercomputern dem Sicherheitscenter in Word oder Excel hinzu.  
   
-         See [Security policies and settings in Office 2010](http://go.microsoft.com/fwlink/?LinkId=99227).  
+         Finden Sie unter [Sicherheitsrichtlinien und-Einstellungen unter Office 2010](http://go.microsoft.com/fwlink/?LinkId=99227).  
   
-    -   Ensure that each user performs the following steps.  
+    -   Stellen Sie sicher, dass jeder Benutzer die folgenden Schritte ausführt.  
   
-        1.  On the local computer, open Word or Excel, choose the **File** tab, and then choose the **Options** button.  
+        1.  Wählen Sie auf dem lokalen Computer, und Öffnen von Word oder Excel, die **Datei** Registerkarte, und wählen Sie dann die **Optionen** Schaltfläche.  
   
-        2.  In the **Trust Center** dialog box, choose the **Trusted Locations** button.  
+        2.  In der **Trust Center** Dialogfeld Wählen Sie die **vertrauenswürdige Speicherorte** Schaltfläche.  
   
-        3.  Select the **Allow Trusted Locations on my network (not recommended)** check box, and then choose the **Add new location** button.  
+        3.  Wählen Sie die **vertrauenswürdige Speicherorte im Netzwerk herunter (nicht empfohlen) zulassen** Kontrollkästchen, und wählen Sie dann die **neuen Speicherort hinzufügen** Schaltfläche.  
   
-        4.  In the **Path** box, enter the URL of the SharePoint document library that contains the document that you uploaded (for example, *http://SharePointServerName/TeamName/ProjectName/DocumentLibraryName*).  
+        4.  In der **Pfad** Geben Sie die URL der SharePoint-Dokumentbibliothek, die das Dokument enthält, die Sie hochgeladen haben (z. B. *http://SharePointServerName/TeamName/ProjectName/DocumentLibraryName*).  
   
-             Don't add the name of the default Web page, such as default.aspx or AllItems.aspx.  
+             Fügen Sie den Namen der Standardwebseite, z. B. "default.aspx" "oder" AllItems.aspx nicht hinzu.  
   
-        5.  Select the **Subfolders of this location are also trusted** check box, and then choose the **OK** button.  
+        5.  Wählen Sie die **Unterordner dieses Speicherorts sind ebenfalls vertrauenswürdig** Kontrollkästchen, und wählen Sie dann die **OK** Schaltfläche.  
   
-             When users open the document from the SharePoint site, the document opens, and the customization is installed. Users can copy the document to their desktop. The customization will still run because properties in the document point to the network location of the document.  
+             Wenn Benutzer das Dokument von der SharePoint-Site öffnen, wird das Dokument geöffnet, und die Anpassung wird installiert. Benutzer können das Dokument auf den Desktop kopieren. Die Anpassung wird nach wie vor ausgeführt, da Eigenschaften im Dokument auf den Netzwerkspeicherort des Dokuments verweisen.  
   
-##  <a name="Custom"></a> Create a custom installer  
- You can create a custom installer for your Office solution, instead of using the setup program that's created for you when you publish the solution. For example, you could use a logon script to start the installation, or you could use a batch file to install the solution without user interaction. These scenarios work best if the prerequisites are already installed on end-user computers.  
+##  <a name="Custom"></a>Erstellen eines benutzerdefinierten Installationsprogramms  
+ Sie können ein benutzerdefiniertes Installationsprogramm erstellen, für die Office-Projektmappe, anstatt das Setupprogramm aus, das für Sie erstellt wird, wenn Sie die Projektmappe veröffentlichen. Beispielsweise können Sie die Installation mit einem Anmeldeskript starten oder mit einer Batchdatei die Projektmappe ohne Benutzerinteraktion installieren. Diese Szenarios funktionieren am besten, wenn die erforderlichen Komponenten bereits auf den Endbenutzercomputern installiert sind.  
   
- As part of your custom installation process, call the installer tool for Office solutions (VSTOInstaller.exe), which is installed in the following location by default:  
+ Rufen Sie im Rahmen des benutzerdefinierten Installationsprozesses das Installationstool für Office-Projektmappen (VSTOInstaller.exe) auf, das standardmäßig an folgendem Speicherort installiert ist:  
   
  %commonprogramfiles%\microsoft shared\VSTO\10.0\VSTOInstaller.exe  
   
- If the tool isn't in that location, you can use the HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VSTO Runtime Setup\v4\InstallerPath or HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VSTO Runtime Setup\v4\InstallerPath registry key to find the path to that tool.  
+ Wenn sich das Tool nicht an diesem Speicherort befindet, können Sie den Registrierungsschlüssel "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VSTO Runtime Setup\v4\InstallerPath" oder "HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VSTO Runtime Setup\v4\InstallerPath" verwenden, um den Pfad zu diesem Tool zu finden.  
   
- You can use the following parameters with VSTOinstaller.exe.  
+ Mit VSTOinstaller.exe können Sie die folgenden Parameter verwenden.  
   
 |Parameter|Definition|  
 |---------------|----------------|  
-|/Install or /I|Install the solution. You must follow this option with the path of a deployment manifest. You can specify a path on the local computer, a universal naming convention (UNC) file share. You can specify a local path (*C:\FolderName\PublishFolder*), a relative path (*Publish\\*), or a fully qualified location (*\\\ServerName\FolderName* or http://*ServerName/FolderName*).|  
-|/Uninstall or /U|Uninstall the solution. You must follow this option with the path of a deployment manifest. You can specify a path can be on the local computer, a UNC file share. You can specify a local path (*c:\FolderName\PublishFolder*), a relative path (*Publish\\*), or a fully qualified location (*\\\ServerName\FolderName* or http://*ServerName/FolderName*).|  
-|/Silent or /S|Install or uninstall without prompting the user for input or displaying any messages. If a trust prompt is required, the customization isn't installed or updated.|  
-|/Help or /?|Display the Help information.|  
+|/Install oder /I|Installation der Projektmappe. Dieser Option muss der Pfad eines Bereitstellungsmanifests folgen. Sie können einen Pfad auf dem lokalen Computer angeben, eine Universal Naming Convention (UNC)-Dateifreigabe. Sie können einen lokalen Pfad angeben (*C:\FolderName\PublishFolder*), einen relativen Pfad (*veröffentlichen\\*), oder einen vollqualifizierten Speicherort (*\\\ServerName\ Ordnername* oder http://*ServerName/Ordnername*).|  
+|/Uninstall oder /U|Deinstallation der Projektmappe. Dieser Option muss der Pfad eines Bereitstellungsmanifests folgen. Sie können einen Pfad auf dem lokalen Computer, eine UNC-Dateifreigabe, angeben. Sie können einen lokalen Pfad angeben (*c:\FolderName\PublishFolder*), einen relativen Pfad (*veröffentlichen\\*), oder einen vollqualifizierten Speicherort (*\\\ServerName\ Ordnername* oder http://*ServerName/Ordnername*).|  
+|/Silent oder /S|Installation bzw. Deinstallation, ohne dass der Benutzer zu einer Eingabe aufgefordert wird oder Meldungen angezeigt werden. Wenn eine vertrauenswürdige Eingabeaufforderung erforderlich ist, wird die Anpassung ist nicht installiert oder aktualisiert.|  
+|/Help oder /?|Anzeigen der Hilfeinformationen.|  
   
- When you run VSTOinstaller.exe, the following error codes might appear.  
+ Wenn Sie "VSTOinstaller.exe" ausführen, werden möglicherweise die folgenden Fehlercodes angezeigt.  
   
-|Error Code|Definition|  
+|Fehlercode|Definition|  
 |----------------|----------------|  
-|0|The solution was successfully installed or uninstalled, or the VSTOInstaller Help appeared.|  
-|-100|One or more command-line options isn't valid or was set more than once. For more information, enter "vstoinstaller /?" or see [Creating a Custom Installer for a ClickOnce Office Solution](http://msdn.microsoft.com/en-us/3e5887ed-155f-485d-b8f6-3c02c074085e).|  
-|-101|One or more command-line options isn't valid. For more information, enter "vstoinstaller /?".|  
-|-200|The deployment manifest URI isn't valid. For more information, enter "vstoinstaller /?".|  
-|-201|The solution couldn't be installed because the deployment manifest isn't valid. See [Deployment Manifests for Office Solutions](../vsto/deployment-manifests-for-office-solutions.md).|  
-|-202|The solution couldn't be installed because the Visual Studio Tools for Office section of the application manifest isn't valid. See [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md).|  
-|-203|The solution couldn't be installed because a download error occurred. Check the URI or network file location of the deployment manifest, and then try again.|  
-|-300|The solution couldn't be installed because a security exception occurred. See [Securing Office Solutions](../vsto/securing-office-solutions.md).|  
-|-400|The solution couldn't be installed.|  
-|-401|The solution couldn't be uninstalled.|  
-|-500|The operation has been canceled because the solution couldn't be installed or uninstalled or the deployment manifest couldn't be downloaded.|  
+|0|Die Projektmappe wurde erfolgreich installiert oder deinstalliert, oder die VSTOInstaller-Hilfe wurde angezeigt.|  
+|-100|Eine oder mehrere Befehlszeilenoptionen sind nicht gültig oder wurden mehrmals festgelegt. Weitere Informationen geben Sie "Vstoinstaller /?" oder finden Sie unter [erstellen ein benutzerdefiniertes Installationsprogramm für eine ClickOnce-Office-Projektmappe](http://msdn.microsoft.com/en-us/3e5887ed-155f-485d-b8f6-3c02c074085e).|  
+|-101|Eine oder mehrere Befehlszeilenoptionen sind nicht gültig. Weitere Informationen erhalten Sie, indem Sie „vstoinstaller/?“ eingeben.|  
+|-200|Der Bereitstellungsmanifest-URI ist ungültig. Weitere Informationen erhalten Sie, indem Sie „vstoinstaller/?“ eingeben.|  
+|-201|Die Projektmappe konnte nicht installiert werden, da das Bereitstellungsmanifest ungültig ist. Finden Sie unter [Bereitstellungsmanifeste für Office-Projektmappen](../vsto/deployment-manifests-for-office-solutions.md).|  
+|-202|Die Projektmappe konnte nicht installiert werden, da Visual Studio-Tools für Office-Abschnitt im Anwendungsmanifest ungültig ist. Finden Sie unter [Anwendungsmanifeste für Office-Projektmappen](../vsto/application-manifests-for-office-solutions.md).|  
+|-203|Die Projektmappe konnte nicht installiert werden, da ein Downloadfehler aufgetreten. Überprüfen Sie den URI bzw. den Netzspeicherort des Bereitstellungsmanifests, und versuchen Sie es erneut.|  
+|-300|Die Projektmappe konnte nicht installiert werden, da eine Sicherheitsausnahme aufgetreten ist. Finden Sie unter [Sichern von Office-Projektmappen](../vsto/securing-office-solutions.md).|  
+|-400|Die Projektmappe konnte nicht installiert werden.|  
+|-401|Die Projektmappe konnte nicht deinstalliert werden.|  
+|-500|Der Vorgang wurde abgebrochen, da die Projektmappe nicht installiert oder deinstalliert oder das Bereitstellungsmanifest nicht heruntergeladen werden konnte.|  
   
-##  <a name="Update"></a> Publish an update  
- To update a solution, you publish it again by using the **Project Designer** or **Publish Wizard**, and then you copy the updated solution to the installation location. When you copy the files to the installation location, make sure that you overwrite the previous files.  
+##  <a name="Update"></a>Veröffentlichen eines Updates  
+ Um eine Projektmappe zu aktualisieren, veröffentlichen sie erneut mit der **Projekt-Designer** oder **Veröffentlichungs-Assistenten**, und kopieren Sie dann die aktualisierte Lösung für den Installationsspeicherort. Wenn Sie die Dateien an den Installationsort kopieren, müssen Sie die älteren Dateien überschreiben.  
   
- The next time that the solution checks for an update, it'll find and load the new version automatically.  
+ Das nächste Mal, das die Lösung überprüft für ein Update müssen sie suchen und laden die neue Version automatisch.  
   
-##  <a name="Location"></a> Change the installation location of a solution  
- You can add or change the installation path after a solution is published. You might want to change the installation path for one or more of the following reasons:  
+##  <a name="Location"></a>Ändern des Installationspfads einer Projektmappe  
+ Sie können den Installationspfad hinzufügen oder ändern, nachdem eine Projektmappe veröffentlicht wurde. Eine Änderung des Installationspfads kann aus einem oder mehreren der folgenden Gründe erforderlich werden:  
   
--   The setup program was compiled before the installation path was known.  
+-   Das Setupprogramm wurde kompiliert, bevor der Installationspfad bekannt war.  
   
--   The solution files have been copied to a different location.  
+-   Die Projektmappendateien wurden an einen anderen Speicherort kopiert.  
   
--   The server that hosts the installation files has a new name or location.  
+-   Der Server, auf dem die Installationsdateien gehostet werden, hat einen neuen Namen oder einen neuen Speicherort.  
   
- To change the installation path of a solution, you must update the setup program, and then users must run it. For document-level customizations, users must also update a property in their document to point to the new location.  
+ Um den Installationspfad einer Projektmappe zu ändern, müssen Sie das Setupprogramm aktualisieren, das dann von den Benutzern ausgeführt werden muss. Bei Anpassungen auf Dokumentebene müssen Benutzer außerdem eine Eigenschaft in dem Dokument aktualisieren, das auf den neuen Speicherort verweist.  
   
 > [!NOTE]  
->  If you don't want to ask users to update their document properties, you can ask users to get the updated document from the installation location.  
+>  Wenn Sie Benutzer dazu auffordern, ihre Dokumenteigenschaften aktualisieren möchten, lassen Sie Benutzer auf das aktualisierte Dokument vom Installationspfad abzurufen.  
   
-#### <a name="to-change-the-installation-path-in-the-setup-program"></a>To change the installation path in the setup program  
+#### <a name="to-change-the-installation-path-in-the-setup-program"></a>So ändern Sie den Installationspfad im Setupprogramm  
   
-1.  Open a **Command Prompt** window, and then change directories to the installation folder.  
+1.  Öffnen einer **Eingabeaufforderung** Fenster, und klicken Sie dann wechseln in den Installationsordner.  
   
-2.  Run the setup program, and include the `/url` parameter, which takes the new installation path as a string.  
+2.  Führen Sie das Setupprogramm aus, und geben Sie den `/url`-Parameter an, der den neuen Installationspfad als Zeichenfolge entgegennimmt.  
   
-     The following example shows how to change the installation path to a location on the Fabrikam website, but you can replace that URL with the path that you want:  
+     Das folgende Beispiel zeigt, wie der Installationspfad auf einen Speicherort auf der Fabrikam-Website geändert wird; Sie können diese URL durch den gewünschten Pfad ersetzen:  
   
     ```  
     setup.exe /url="http://www.fabrikam.com/newlocation"  
     ```  
   
     > [!NOTE]  
-    >  If a message appears and state that the signature of the executable will be invalidated, the certificate that was used to sign the solution is no longer valid, and the publisher is unknown. As a result, users will need to confirm that they trust the source of the solution before they can install it.  
+    >  Wenn eine Meldung angezeigt wird, dass die Signatur der ausführbaren Datei ungültig gemacht wird, ist das Zertifikat, das zum Signieren der Projektmappe verwendet wurde, nicht mehr gültig, und der Herausgeber ist unbekannt. In diesem Fall müssen Benutzer bestätigen, dass die Quelle der Projektmappe vertrauenswürdig ist, bevor sie sie installieren können.  
   
     > [!NOTE]  
-    >  To display the current value of the URL, run `setup.exe /url`.  
+    >  Um den aktuellen Wert der URL anzuzeigen, führen Sie `setup.exe /url` aus.  
   
- For document-level customizations, users must open the document and then update its _AssemblyLocation property. The following steps describe how users can perform this task.  
+ Bei Anpassungen auf Dokumentebene müssen Benutzer das Dokument öffnen und aktualisieren Sie die _AssemblyLocation-Eigenschaft. Die folgenden Schritte beschreiben, wie Benutzer diese Aufgabe ausführen können.  
   
-#### <a name="to-update-the-assemblylocation-property-in-a-document"></a>To update the _AssemblyLocation property in a document  
+#### <a name="to-update-the-assemblylocation-property-in-a-document"></a>So aktualisieren Sie die _AssemblyLocation-Eigenschaft in einem Dokument  
   
-1.  On the **File** tab, choose **Info**, which the following illustration shows.  
+1.  Auf der **Datei** Registerkarte **Info**, die in die folgende Abbildung dargestellt wird.  
   
-     ![Info tab in Excel](../vsto/media/vsto-infotab.png "Info tab in Excel")  
+     ![Registerkarte "Info" in Excel](../vsto/media/vsto-infotab.png "Registerkarte "Info" in Excel")  
   
-2.  In the **Properties** list, choose **Advanced Properties**, which the following illustration shows.  
+2.  In der **Eigenschaften** wählen **erweiterte Eigenschaften**, die in die folgende Abbildung dargestellt wird.  
   
-     ![Advanced Properties in Excel.](../vsto/media/vsto-advanceddocumentproperties.png "Advanced Properties in Excel.")  
+     ![Erweiterte Eigenschaften in Excel. ] (../vsto/media/vsto-advanceddocumentproperties.png "Erweiterte Eigenschaften in Excel.")  
   
-3.  On the **Custom** tab in the **Properties** list, choose _AssemblyLocation, as the following illustration shows.  
+3.  Auf der **benutzerdefinierte** Registerkarte der **Eigenschaften** wählen Sie die _AssemblyLocation, wie die folgende Abbildung zeigt.  
   
-     ![The AssemblyLocation property.](../vsto/media/vsto-assemblylocationproperty.png "The AssemblyLocation property.")  
+     ![Die AssemblyLocation-Eigenschaft. ] (../vsto/media/vsto-assemblylocationproperty.png "Die AssemblyLocation-Eigenschaft.")  
   
-     The **Value** box contains the deployment manifest identifier.  
+     Die **Wert** Feld enthält den Bezeichner für das Bereitstellungsmanifest.  
   
-4.  Before the identifier, enter the fully qualified path of the document, followed by a bar, in the format *Path*|*Identifier* (for example, *File://ServerName/FolderName/FileName|74744e4b-e4d6-41eb-84f7-ad20346fe2d9*.  
+4.  Geben Sie vor dem Bezeichner den vollqualifizierten Pfad des Dokuments, gefolgt von einem senkrechten Strich im Format *Pfad*|*Bezeichner* (z. B. *File://ServerName/ Ordnername/FileName | 74744e4b-e4d6-41eb-84f7-ad20346fe2d9*.  
   
-     For more information about how to format this identifier, see [Custom Document Properties Overview](../vsto/custom-document-properties-overview.md).  
+     Weitere Informationen zum Formatieren dieses Bezeichners finden Sie unter [Übersicht über benutzerdefinierte Dokumenteigenschaften](../vsto/custom-document-properties-overview.md).  
   
-5.  Choose the **OK** button, and then save and close the document.  
+5.  Wählen Sie die **OK** Schaltfläche, und speichern und schließen Sie das Dokument.  
   
-6.  Run the setup program without the /url parameter to install the solution in the specified location.  
+6.  Führen Sie das Setupprogramm ohne den /url-Parameter aus, um die Projektmappe am angegebenen Speicherort zu installieren.  
   
-##  <a name="Roll"></a> Roll back a solution to an earlier version  
- When you roll back a solution, you revert users back to an earlier version of that solution.  
+##  <a name="Roll"></a>Zurücksetzen der Projektmappe auf eine frühere version  
+ Wenn Sie eine Projektmappe zurücksetzen, stellen Sie die Benutzer wieder auf eine frühere Version der Projektmappe um.  
   
-#### <a name="to-roll-back-a-solution"></a>To roll back a solution  
+#### <a name="to-roll-back-a-solution"></a>So setzen Sie eine Projektmappe zurück  
   
-1.  Open the installation location of the solution.  
+1.  Öffnen Sie den Installationspfad der Projektmappe.  
   
-2.  In the top-level publish folder, delete the deployment manifest (the .vsto file).  
+2.  Löschen Sie im Veröffentlichungsordner der obersten Ebene das Bereitstellungsmanifest (die Datei .vsto).  
   
-3.  Find the subfolder for the version to which you want to roll back.  
+3.  Suchen Sie nach dem Unterordner für die Version, auf die Sie die Datei zurücksetzen möchten.  
   
-4.  Copy the deployment manifest from that subfolder to the top-level publish folder.  
+4.  Kopieren Sie das Bereitstellungsmanifest aus diesem Unterordner in den Veröffentlichungsordner der obersten Ebene.  
   
-     For example, to roll back a solution that's called **OutlookAddIn1** from version 1.0.0.1 to version 1.0.0.0, copy the file **OutlookAddIn1.vsto** from the **OutlookAddIn1_1_0_0_0** folder. Paste the file into the top-level publish folder, overwriting the version-specific deployment manifest for **OutlookAddIn1_1_0_0_1** that was already there.  
+     Um beispielsweise eine Projektmappe zurück, die aufgerufen wird **OutlookAddIn1** von Version 1.0.0.1 auf Version 1.0.0.0 zurückzusetzen, kopieren Sie die Datei **OutlookAddIn1.vsto** aus der **OutlookAddIn1_1_0_0_0** Ordner. Fügen Sie die Datei in der obersten Ebene des Veröffentlichungsordners, das versionsspezifische Bereitstellungsmanifest für das Überschreiben **OutlookAddIn1_1_0_0_1** das war bereits vorhanden.  
   
-     The following illustration shows the publish folder structure in this example.  
+     Die folgende Abbildung zeigt die Struktur des Veröffentlichungsordners in diesem Beispiel.  
   
-     ![Publish Folder Structure](../vsto/media/publishfolderstructure.png "Publish Folder Structure")  
+     ![Struktur des Veröffentlichungsordners](../vsto/media/publishfolderstructure.png "Struktur des Veröffentlichungsordners")  
   
-     The next time that a user opens the application or customized document, the deployment manifest change is detected. The earlier version of the Office solution runs from the ClickOnce cache.  
+     Wenn ein Benutzer das nächste Mal die Anwendung oder das benutzerdefinierte Dokument öffnet, wird die Änderung des Bereitstellungsmanifests erkannt. Die frühere Version der Office-Projektmappe wird vom ClickOnce-Cache ausgeführt.  
   
 > [!NOTE]  
->  Local data is saved for only one previous version of a solution. If you roll back two versions, local data isn't retained. For more information about local data, see [Accessing Local and Remote Data in ClickOnce Applications](/visualstudio/deployment/accessing-local-and-remote-data-in-clickonce-applications).  
+>  Lokale Daten werden für nur eine vorherige Version einer Projektmappe gespeichert. Wenn Sie zwei Versionen zurücksetzen, werden lokale Daten nicht beibehalten. Weitere Informationen zu lokalen Daten finden Sie unter [zugreifen auf lokale und Remotedaten in ClickOnce-Anwendungen](/visualstudio/deployment/accessing-local-and-remote-data-in-clickonce-applications).  
   
-## <a name="see-also"></a>See Also  
- [Deploying an Office Solution](../vsto/deploying-an-office-solution.md)   
- [Publishing Office Solutions](../vsto/deploying-an-office-solution-by-using-clickonce.md)   
- [How to: Publish an Office Solution by Using ClickOnce](http://msdn.microsoft.com/en-us/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)   
- [How to: Install a ClickOnce Office Solution](http://msdn.microsoft.com/en-us/14702f48-9161-4190-994c-78211fe18065)   
- [How to: Publish a Document-Level Office Solution to a SharePoint Server by Using ClickOnce](http://msdn.microsoft.com/en-us/2408e809-fb78-42a1-9152-00afa1522e58)   
- [Creating a Custom Installer for a ClickOnce Office Solution](http://msdn.microsoft.com/en-us/3e5887ed-155f-485d-b8f6-3c02c074085e)  
+## <a name="see-also"></a>Siehe auch  
+ [Bereitstellen einer Office-Lösung](../vsto/deploying-an-office-solution.md)   
+ [Veröffentlichen von Office-Projektmappen](../vsto/deploying-an-office-solution-by-using-clickonce.md)   
+ [Vorgehensweise: Veröffentlichen einer Office-Projektmappe mithilfe von ClickOnce](http://msdn.microsoft.com/en-us/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)   
+ [Vorgehensweise: installieren eine ClickOnce-Office-Projektmappe](http://msdn.microsoft.com/en-us/14702f48-9161-4190-994c-78211fe18065)   
+ [Vorgehensweise: veröffentlichen eine auf Dokumentebene Office-Projektmappe mit einem SharePoint-Server mithilfe von ClickOnce](http://msdn.microsoft.com/en-us/2408e809-fb78-42a1-9152-00afa1522e58)   
+ [Erstellen eines benutzerdefinierten Installers für eine ClickOnce-Office-Projektmappe](http://msdn.microsoft.com/en-us/3e5887ed-155f-485d-b8f6-3c02c074085e)  
   
   

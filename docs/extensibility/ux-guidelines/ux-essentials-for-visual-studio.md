@@ -4,34 +4,19 @@ ms.custom:
 ms.date: 04/26/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: a793cf7a-f230-43ce-88d0-fa5d6f1aa9c7
-caps.latest.revision: 7
+caps.latest.revision: "7"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Machine Translation
-ms.sourcegitcommit: 9524ecc3cadef58821fba857de8e82e59eea9b43
-ms.openlocfilehash: 19db4e41ef35ddbec4f43823d4bf66bb148a854f
-ms.contentlocale: de-de
-ms.lasthandoff: 05/04/2017
-
+ms.openlocfilehash: 368540b909536523515ea610e509b22600628f81
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="ux-essentials-for-visual-studio"></a>UX: Grundlagen für Visual Studio
 ## <a name="best-practices"></a>Bewährte Methoden  
@@ -99,12 +84,12 @@ ms.lasthandoff: 05/04/2017
   
  In diesem Fall eine zusätzliche Bedeutung vorhanden ist, da das Symbol für die Warnung enthält einen "&times;" Symbol ", sodass das allgemeine Symbol" entfernen "daneben verwendet werden kann. Daher verwendet die Benutzeroberfläche eine Remove-Schaltfläche, ein mehr umständliche-Steuerelement.  
   
- ![Platzieren der Benutzeroberfläche im Status "Fehler" Standardmäßig ist eine Antimuster für Visual Studio.](../../extensibility/ux-guidelines/media/manifestdesignererrordeclarationsanti-pattern.png "ManifestDesignererrordeclarationsanti-pattern")<br />Platzieren der Benutzeroberfläche im Status "Fehler" Standardmäßig ist eine Antimuster für Visual Studio.
+ ![Platzieren der Benutzeroberfläche im Status "Fehler" Standardmäßig ist eine Antimuster für Visual Studio. ] (../../extensibility/ux-guidelines/media/manifestdesignererrordeclarationsanti-pattern.png "ManifestDesignererrordeclarationsanti-Muster")<br />Platzieren der Benutzeroberfläche im Status "Fehler" Standardmäßig ist eine Antimuster für Visual Studio.
   
 #### <a name="alternatives"></a>Alternativen  
  Eine bessere Lösung für dieses Problem zu würde folgendermaßen lauten:  
   
--   Ermöglicht dem Benutzer das Hinzufügen eine Deklaration ohne Warnung und dann sofort zum Festlegen von Eigenschaften für das Element verschieben.  
+-   Ermöglicht dem Benutzer das Hinzufügen eine Deklaration ohne Warnung, und klicken Sie dann sofort zum Festlegen von Eigenschaften für das Element verschieben.  
   
 -   Fügen Sie das Symbol "Warnung" (gold Dreieck) Wenn der Fokus wechselt von einem Element, z. B. eine andere Deklaration aus der Liste hinzuzufügen oder um versuchen, Registerkarten im Designer zu ändern.  
   
@@ -122,7 +107,7 @@ ms.lasthandoff: 05/04/2017
 Das Erzwingen des erläuternden Text zu lesen, bevor Sie verworfen wurde die Benutzeroberfläche des Benutzers ist ein Antimuster innerhalb von Visual Studio. Ordnungsgemäß entwickelten, video Links sollte eine QuickInfo mit weiteren Informationen angezeigt, wenn darauf gezeigt wird, und auf die "&times;" sollten verworfen werden, die Nachricht ohne weitere Interaktion erforderlich.
 
 
- ![Erläuternden Text anti &#45; Muster &#45; Falsche](../../extensibility/ux-guidelines/media/incorrectuseofmultipleclicks.png "Incorrectuseofmultipleclicks")<br />Falsche Videolinks-Muster
+ ![Erläuternden Text anti &#45; Muster &#45; falsche](../../extensibility/ux-guidelines/media/incorrectuseofmultipleclicks.png "Incorrectuseofmultipleclicks")<br />Falsche Videolinks-Muster
   
 #### <a name="result"></a>Ergebnis  
  Anstatt eine einfache Schaltfläche "Schließen" (einem Mausklick) wird der Benutzer gezwungen, zwei aufeinander folgende Mausklicks zu verwenden, um die Benutzeroberfläche in jedem Ort einfach zu verwerfen, die Videolinks angezeigt werden.  
@@ -130,20 +115,20 @@ Das Erzwingen des erläuternden Text zu lesen, bevor Sie verworfen wurde die Ben
 #### <a name="alternatives"></a>Alternativen  
  Der richtige Entwurf für diese Situation wäre das allgemeine Muster zu Internet Explorer, Office und Visual Studio folgen: Wenn darauf gezeigt wird, sieht der Benutzer kann die QuickInfo-Beschreibung und einem Mausklick Blendet Sie aus der Benutzeroberfläche.  
   
- ![Erläuternden Text anti &#45; Muster &#45; Richtig](../../extensibility/ux-guidelines/media/explanatorytextanti-pattern-correct.png "Explanatorytextanti-pattern-correct")<br />Richtige video Link-Muster
+ ![Erläuternden Text anti &#45; Muster &#45; richtige](../../extensibility/ux-guidelines/media/explanatorytextanti-pattern-correct.png "Explanatorytextanti Muster korrigieren")<br />Richtige video Link-Muster
   
 ### <a name="using-command-bars-for-settings"></a>Verwenden von Befehlsleisten für Einstellungen  
  **Abbildung A** stellt diese Antimuster: setzen eine Einstellung unter eine Befehlsschaltfläche, die auf mehr als nur den Befehl angewendet wird. In dieser Version stehen die folgenden Befehle neben Debuggen starten – wie im Browser starten ohne Debugging und Einzelschritt – berücksichtigt, die die ausgewählte Einstellung.  
 
-  ![Abbildung A: Antimuster Befehlsleiste](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figurea.png "Commandbaranti-pattern-FigureA")<br />Abbildung A: Antimuster Befehlsleiste
+  ![Abbildung A: Befehlsleisten Antimuster](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figurea.png "Commandbaranti-Muster-FigureA")<br />Abbildung A: Antimuster Befehlsleiste
   
  Etwas bessere Leistung, aber dennoch unerwünschtem bedeutet die nichtkonfiguration Einstellungen dieses Typs in den Symbolleisten entsprechend **Abbildung B**. Während Steuerelemente für unterteilte Schaltflächen weniger Speicherplatz belegen und sind daher eine Verbesserung über Dropdowns, sind beide Entwürfe eine Symbolleiste weiterhin verwenden, um etwas höher stufen, die tatsächlich ein Befehl nicht.  
  
- ![Abbildung B: besser, aber immer noch eine Antimuster für Befehlsleiste](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figureb.png "Commandbaranti-pattern-FigureB")<br />Abbildung B: besser, aber immer noch eine Antimuster für Befehlsleiste
+ ![Abbildung B: besser, aber dennoch eine Antimuster für Befehlsleiste](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figureb.png "Commandbaranti-Muster-FigureB")<br />Abbildung B: besser, aber immer noch eine Antimuster für Befehlsleiste
  
   In der richtige Ansatz gezeigt **Abbildung C**, die Einstellung an eine Reihe von Befehlen gebunden ist. Es gibt keine globale Einstellung wird festgelegt, und es sind nur Wechsel zwischen den vier Befehle. Dies ist die einzige Situation, in der Befehle auf der Symbolleiste zulässig sind. 
 
- ![Abbildung "c:" richtige Verwendung von Visual Studio-Befehlsleiste Muster](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figurec.png "Commandbaranti-pattern-FigureC")<br />Abbildung "c:" richtige Verwendung von Visual Studio-Befehlsleiste Muster
+ ![Abbildung "c:" beheben Sie die Verwendung von Visual Studio-Befehlsleiste Muster](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figurec.png "Commandbaranti-Muster-FigureC")<br />Abbildung "c:" richtige Verwendung von Visual Studio-Befehlsleiste Muster
    
 ### <a name="control-anti-patterns"></a>Anti-Steuerelementmuster  
  Antimuster für einige sind einfach falsche Verwendung oder eine Präsentation eines Steuerelements oder einer Gruppe von Steuerelementen.  
@@ -152,15 +137,15 @@ Das Erzwingen des erläuternden Text zu lesen, bevor Sie verworfen wurde die Ben
  Unterstrichenen Text sollte nur für Links verwendet werden.  
   
  **Ungültige:**    
- ![Unterstrichener Text, der nicht auf einen Link ist ist eine Antimuster für Visual Studio.](../../extensibility/ux-guidelines/media/0102-g_grouplabelincorrect.png "0102-g_GroupLabelIncorrect")<br />Unterstrichener Text, der nicht auf einen Link ist ist eine Antimuster für Visual Studio.
+ ![Unterstrichener Text, der nicht auf einen Link ist ist eine Antimuster für Visual Studio. ] (../../extensibility/ux-guidelines/media/0102-g_grouplabelincorrect.png "0102 G_GroupLabelIncorrect")<br />Unterstrichener Text, der nicht auf einen Link ist ist eine Antimuster für Visual Studio.
   
  **Gute:**   
- ![Richtig formatiert wurde, wird angezeigt, nicht Hyperlinktext einfacher in der Umgebungsschriftart.](../../extensibility/ux-guidelines/media/0102-h_grouplabelcorrect.png "0102-h_GroupLabelCorrect")<br />Richtig formatiert wurde, wird angezeigt, nicht Hyperlinktext einfacher in der Umgebungsschriftart.
+ ![Richtig formatiert wurde, wird angezeigt, nicht Hyperlinktext einfacher in der Umgebungsschriftart. ] (../../extensibility/ux-guidelines/media/0102-h_grouplabelcorrect.png "0102 H_GroupLabelCorrect")<br />Richtig formatiert wurde, wird angezeigt, nicht Hyperlinktext einfacher in der Umgebungsschriftart.
   
 #### <a name="clicking-on-a-check-box-results-in-a-pop-up-dialog"></a>Durch Klicken auf ein Kontrollkästchen-Ergebnisse in einem Popup-Dialogfeld  
  Durch Klicken auf das Kontrollkästchen "Remotedesktop für alle Rollen aktivieren" im Assistenten "Windows Azure-Anwendung veröffentlichen" sofort wird ein Popup-Dialogfeld eine Antimuster für Visual Studio. Darüber hinaus das Kontrollkästchen-Feld wird nicht aufgefüllt werden mit einem Kontrollkästchen nach ausgewählt wird, eine andere Aktivität Antimuster.  
   
- ![Schalten ein Dialogfeld, nachdem Sie ein Kontrollkästchen auf eine Antimuster für Visual Studio ist.](../../extensibility/ux-guidelines/media/0102-i_checkboxpopup.png "0102-i_CheckboxPopup")<br />Schalten ein Dialogfeld, nachdem Sie ein Kontrollkästchen auf eine Antimuster für Visual Studio ist.
+ ![Schalten ein Dialogfeld, nachdem Sie ein Kontrollkästchen auf eine Antimuster für Visual Studio ist. ] (../../extensibility/ux-guidelines/media/0102-i_checkboxpopup.png "0102 I_CheckboxPopup")<br />Schalten ein Dialogfeld, nachdem Sie ein Kontrollkästchen auf eine Antimuster für Visual Studio ist.
   
 ### <a name="hyperlink-anti-patterns"></a>Antimuster für Hyperlink  
  Das folgende Beispiel enthält zwei Anti-Muster.  
@@ -169,7 +154,7 @@ Das Erzwingen des erläuternden Text zu lesen, bevor Sie verworfen wurde die Ben
   
 2.  "Weitere" ist nicht die entsprechenden Text für einen Link auf ein grundlegendes Thema. Der Benutzer-Ziel ist nicht mehr zu erfahren, es um die Auswirkungen ihrer Wahl zu verstehen.  
   
- ![Ignorieren den Dienst für die Farbe und Verwenden von "Weitere" für Links sind Antimuster für Visual Studio.](../../extensibility/ux-guidelines/media/0102-j_hyperlinkincorrect.png "0102-j_HyperlinkIncorrect")<br />Ignorieren den Dienst für die Farbe und Verwenden von "Weitere" für Links sind Antimuster für Visual Studio.  
+ ![Ignorieren den Dienst für die Farbe und Verwenden von "Weitere" für Links sind Antimuster für Visual Studio. ] (../../extensibility/ux-guidelines/media/0102-j_hyperlinkincorrect.png "0102 J_HyperlinkIncorrect")<br />Ignorieren den Dienst für die Farbe und Verwenden von "Weitere" für Links sind Antimuster für Visual Studio.  
   
  **Eine bessere Lösung:** die Frage, der Benutzer gefragt werden würde, indem Sie auf den Link, darstellen.  
   

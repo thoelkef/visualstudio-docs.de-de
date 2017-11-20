@@ -1,30 +1,31 @@
 ---
-title: "ProjectItemFile Element"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "ProjectItemFile element"
+title: ProjectItemFile-Element | Microsoft Docs
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords: ProjectItemFile element
 ms.assetid: 68d44d31-625a-4f02-b998-463ac0ffb2ef
-caps.latest.revision: 10
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "10"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 023d2f64dc3f05d518add1cd4bf6c3415f435985
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# ProjectItemFile Element
-  Stellt eine SharePoint\-Datei \(beispielsweise eine Feature\-Elementdatei\) dar, die im Projektelement enthalten sein soll, wenn dieses für SharePoint bereitgestellt wird.  
+# <a name="projectitemfile-element"></a>ProjectItemFile-Element
+  Stellt eine SharePoint-Datei, z. B. Elementdatei Feature, das Projektelement enthalten sein soll, wenn er für SharePoint bereitgestellt wird.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 <ProjectItemFile Source = "Name of the file"  
@@ -32,42 +33,42 @@ caps.handback.revision: 9
     Type = "Type of deployment for the file" />  
 ```  
   
-## Typ  
+## <a name="type"></a>Typ  
  **ProjectItemFileType**  
   
-## Attribute und Elemente  
+## <a name="attributes-and-elements"></a>Attribute und Elemente  
  In den folgenden Abschnitten werden Attribute sowie untergeordnete und übergeordnete Elemente beschrieben.  
   
-### Attribute  
+### <a name="attributes"></a>Attribute  
   
 |Attribut|Beschreibung|  
-|--------------|------------------|  
-|**Source**|Erforderliches **xs:string**\-Attribut.<br /><br /> Der Name der Datei, die mit dem Projektelement bereitgestellt werden soll.|  
-|**Target**|Optionales **xs:string**\-Attribut.<br /><br /> Der Pfad, in dem die Datei unter SharePoint bereitgestellt wird, relativ zum Bereitstellungsstammordner.  Der Bereitstellungsstammordner wird vom Bereitstellungstyp angegeben, der vom **Type**\-Attribut angegeben wird.  Wenn das **Target**\-Attribut nicht angegeben ist, wird die Datei in einem Ordner mit dem im **Source**\-Attribut angegebenen Namen bereitgestellt.<br /><br /> Weitere Informationen erhalten Sie in den Beschreibungen zu den **Deployment Path**\- und **Deployment Root**\-Eigenschaften von SharePoint\-Projektelementen in [Developing SharePoint Solutions](../sharepoint/developing-sharepoint-solutions.md).|  
-|**Type**|Erforderliches **xs:string**\-Attribut.<br /><br /> Der Typ der Bereitstellung für die Datei.  Weitere Informationen zur den möglichen Werten finden Sie in der Beschreibung der **Deployment Type**\-Eigenschaft von SharePoint\-Projektelementen unter [Developing SharePoint Solutions](../sharepoint/developing-sharepoint-solutions.md).|  
+|---------------|-----------------|  
+|**Quelle**|Erforderliche **xs: String** Attribut.<br /><br /> Der Name der Datei, die mit dem Projektelement bereitgestellt.|  
+|**Target**|Optionale **xs: String** Attribut.<br /><br /> Der Pfad, in dem die Datei in SharePoint, relativ zum Stammordner Bereitstellung bereitgestellt wird. Stammordner der Bereitstellung richtet sich nach den Bereitstellungstyp, der gemäß der **Typ** Attribut. Wenn die **Ziel** Attribut nicht angegeben wird, die Datei wird in einem Ordner bereitgestellt werden, mit dem Namen im angegebenen der **Quelle** Attribut.<br /><br /> Weitere Informationen finden Sie die Beschreibungen für die **Bereitstellungspfad** und **Bereitstellungsstamm-** Eigenschaften von SharePoint-Projektelemente in [Entwickeln von SharePoint-Lösungen](../sharepoint/developing-sharepoint-solutions.md).|  
+|**Typ**|Erforderliche **xs: String** Attribut.<br /><br /> Der Typ der Bereitstellung für die Datei. Weitere Informationen zu den möglichen Werten finden Sie in der Beschreibung für die **Bereitstellungstyp** Eigenschaft der SharePoint-Projektelemente im [Entwickeln von SharePoint-Lösungen](../sharepoint/developing-sharepoint-solutions.md).|  
   
-### Untergeordnete Elemente  
- Keine.  
+### <a name="child-elements"></a>Untergeordnete Elemente  
+ Keine  
   
-### Übergeordnete Elemente  
+### <a name="parent-elements"></a>Übergeordnete Elemente  
   
 |Element|Beschreibung|  
-|-------------|------------------|  
-|[Dateien](../sharepoint/files-element.md)|Gibt die Dateien an, die im Projektelement enthalten sein sollen, wenn es in SharePoint bereitgestellt wird.|  
+|-------------|-----------------|  
+|[Dateien](../sharepoint/files-element.md)|Gibt die Dateien mit SharePoint-Projektelements eingeschlossen werden soll, wenn er für SharePoint bereitgestellt wird.|  
   
-## Hinweise  
- SharePoint\-Dateien, auf die normalerweise in **ProjectItemFile**\-Elementen verwiesen wird, enthalten Funktionselementdateien \(Elements.xml\), Schemadateien für Listendefinitionen \(Schema.xml\) und Webpartdefinitionsdateien für Webparts \(.webpart\).  
+## <a name="remarks"></a>Hinweise  
+ SharePoint-Dateien, auf die in der Regel verweist **ProjectItemFile** Elementen gehören featuredateien-Element ("Elements.xml"), die Schemadateien für Listendefinitionen (Schema.xml) und die Webpart-Definitionsdateien für Webparts (Webpart).  
   
-## Elementinformationen  
+## <a name="element-information"></a>Elementinformationen  
   
 |||  
 |-|-|  
-|**Namespace**|http:\/\/schemas.microsoft.com\/VisualStudio\/2010\/SharePointTools\/SharePointProjectItemModel|  
-|**Schemaname**|SharePoint\-Projektelementschema|  
-|**Validierungsdatei**|ProjectItemModelSchema.xsd|  
-|**Kann leer sein.**|Nein|  
+|**Namespace**|http://Schemas.Microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel|  
+|**Schemaname**|SharePoint-Projektelementschema|  
+|**Validierungsdatei**|"ProjectItemModelSchema.xsd" benannt|  
+|**Kann leer sein**|Nein|  
   
-## Siehe auch  
- [SharePoint Project Item Schema Reference](../sharepoint/sharepoint-project-item-schema-reference.md)  
+## <a name="see-also"></a>Siehe auch  
+ [Referenz zum SharePoint-Projektelementschema](../sharepoint/sharepoint-project-item-schema-reference.md)  
   
   

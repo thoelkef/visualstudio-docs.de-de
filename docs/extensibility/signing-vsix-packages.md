@@ -1,51 +1,53 @@
 ---
-title: "Signieren von VSIX-Paketen | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Signatur"
-  - "Signieren"
-  - "Authenticode"
-  - "VSIX"
-  - "Pakete"
+title: Signieren die VSIX-Pakete | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- signature
+- signing
+- authenticode
+- vsix
+- packages
 ms.assetid: e34cfc2c-361c-44f8-9cfe-9f2be229d248
-caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: d5a27b4e76e0cd8f986441778ed39c7fbb5a2211
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Signieren von VSIX-Paketen
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Assemblys müssen nicht signiert werden, bevor sie in Visual Studio ausführen können, aber es empfiehlt sich, dafür ist.  
+# <a name="signing-vsix-packages"></a>Signieren Sie die VSIX-Pakete
+Erweiterungsassemblys müssen nicht signiert werden, bevor sie in Visual Studio ausgeführt werden können, aber es empfiehlt sich zu diesem Zweck ist.  
   
- Wenn Sie möchten Ihre Erweiterung sichern und stellen Sie sicher, dass sie nicht manipuliert wurde, können Sie einem VSIX\-Paket eine digitale Signatur hinzufügen. Wenn eine VSIX signiert ist, wird das VSIX\-Installationsprogramm eine Meldung, dass es, sowie weitere Informationen über die Signatur selbst signiert ist angezeigt. Wenn der Inhalt des VSIX\-Projekt geändert wurden und der VSIX\-Datei nicht erneut signiert wurde, wird das VSIX\-Installationsprogramm anzeigen, dass die Signatur nicht gültig ist. Die Installation wird nicht beendet, aber der Benutzer wird gewarnt.  
+ Wenn Sie möchten Ihre Erweiterung sichern und stellen Sie sicher, dass er nicht manipuliert wurde, können Sie eine digitale Signatur zu einem VSIX-Paket hinzufügen. Wenn Sie eine VSIX signiert ist, wird das VSIX-Installationsprogramm eine Meldung, dass es, sowie weitere Informationen zur Signatur selbst signiert ist angezeigt. Wenn der Inhalt des VSIX-Pakete geändert wurden und VSIX-Pakete nicht erneut signiert wurde, wird das VSIX-Installationsprogramm angezeigt, dass die Signatur nicht gültig ist. Die Installation wurde nicht beendet, aber der Benutzer wird gewarnt.  
   
 > [!IMPORTANT]
->  Ab 2015 werden VSIX\-Pakete mit etwas anderes als Verschlüsselung SHA256 signiert identifiziert werden, als hätten Sie eine ungültige Signatur. VSIX\-Installation wird nicht blockiert, aber der Benutzer darauf hingewiesen.  
+>  2015 ab, werden VSIX-Pakete, die mit etwas anderes als Verschlüsselung SHA256 signiert identifiziert werden, als hätte eine ungültige Signatur. VSIX-Installation wird nicht blockiert, jedoch wird der Benutzer darüber informiert werden.  
   
-## Signieren einer VSIX\-Datei mit VSIXSignTool  
- Es ist ein SHA256 Signieren von verfügbaren Tools [VisualStudioExtensibility](http://www.nuget.org/profiles/VisualStudioExtensibility) unter "NuGet.org" unter [VsixSignTool](http://www.nuget.org/packages/Microsoft.VSSDK.Vsixsigntool).  
+## <a name="signing-a-vsix-with-vsixsigntool"></a>Signieren Sie eine VSIX mit VSIXSignTool  
+ Es ist eine Verschlüsselung mit einem SHA256 Signieren Tool verfügbar [VisualStudioExtensibility](http://www.nuget.org/profiles/VisualStudioExtensibility) auf nuget.org am [VsixSignTool](http://www.nuget.org/packages/Microsoft.VSSDK.Vsixsigntool).  
   
-#### Verwenden Sie die VSIXSignTool  
+#### <a name="to-use-the-vsixsigntool"></a>Verwenden Sie die VSIXSignTool  
   
-1.  Ihre VSIX zu einem Projekt hinzufügen.  
+1.  Fügen Sie die VSIX zu einem Projekt hinzu.  
   
-2.  Klicken Sie mit der rechten Maustaste auf den Projektknoten im Projektmappen\-Explorer auswählen **Hinzufügen &#124; NuGet\-Pakete verwalten**.  Weitere Informationen über NuGet und Hinzufügen von NuGet\-Pakete, finden Sie unter [NuGet\-Übersicht](http://docs.nuget.org/) und [Verwalten von NuGet\-Paketen mithilfe des Dialogs](http://docs.nuget.org/Consume/Package-Manager-Dialog).  
+2.  Klicken Sie mit der rechten Maustaste auf den Projektknoten im Projektmappen-Explorer auswählen **hinzufügen &#124; NuGet-Pakete verwalten**.  Weitere Informationen zu NuGet und Hinzufügen von NuGet-Paketen finden Sie unter finden Sie unter der [NuGet-Dokumentation](http://docs.microsoft.com/NuGet) und [Paket-Manager-UI](http://docs.microsoft.com/NuGet/Tools/Package-Manager-UI) Themen.  
   
-3.  VSIXSignTool aus VisualStudioExtensibility suchen Sie, und installieren Sie das NuGet\-Paket.  
+3.  VSIXSignTool aus VisualStudioExtensibility suchen Sie, und installieren Sie das NuGet-Paket.  
   
-4.  Sie können jetzt die VSIXSignTool aus den Projektspeicherort Lokale Pakete ausführen. Wenden Sie sich an die Hilfe des Tools über die Befehlszeile für das Signaturzertifikat Szenario \(VSIXSignTool.exe \/?\).  
+4.  Sie können jetzt die VSIXSignTool aus den Projektspeicherort Lokale Pakete ausführen. Wenden Sie sich an das Tool Befehlszeilenhilfe für Ihr Szenario signieren (VSIXSignTool.exe /?).  
   
- Zum Beispiel können Sie mit einem Kennwort geschützten Zertifikat\-Datei zu signieren:  
+ Z. B. zum Anmelden mit einem Kennwort geschützt Zertifikatdatei:  
   
- VSIXSignTool.exe Anmeldung\/f \< Zertifikatdatei \>\/p \< Kennwort \>\< VSIXfile \>  
+ VSIXSignTool.exe Anmeldung/f \<Zertifikatdatei >/p \<Kennwort > \<VSIXfile >  
   
-## Siehe auch  
- [Lieferung von Visual Studio\-Erweiterungen](../extensibility/shipping-visual-studio-extensions.md)
+## <a name="see-also"></a>Siehe auch  
+ [Bereitstellen von Visual Studio-Erweiterungen](../extensibility/shipping-visual-studio-extensions.md)

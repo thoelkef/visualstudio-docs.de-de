@@ -1,39 +1,40 @@
 ---
-title: "Anwendung der Einstellungen f&#252;r mehrere Project-Verbindungen | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Source Control Plug-ins und Anwendung von Einstellungen"
+title: "Anwendung der Einstellungen über mehrere Project-Verbindungen | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: source control plug-ins, application of settings
 ms.assetid: 2116d3d0-c46c-4d0a-b482-08a178584f46
-caps.latest.revision: 15
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 15
+caps.latest.revision: "15"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 9750d946a941e86a6c0a6973661f00f8f44cf9b5
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Anwendung der Einstellungen f&#252;r mehrere Project-Verbindungen
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Ein Quellcodeverwaltungs\-Plug\-In, mit dem das Quellcodeverwaltungs\-Plug\-In API 1.2 erstellt wurde, kann einen Batchvorgang verwendet werden, um denselben Quellcodeverwaltungsvorgang auf mehrere Projekte oder mehrere kontexten Verbindung auszuführen.  Batches können verwendet werden, um redundanten, Dialogfelder pro Projekt aus der Benutzerfreundlichkeit zu beseitigen.  
+# <a name="application-of-settings-across-multiple-project-connections"></a>Anwendung der Einstellungen über mehrere Project-Verbindungen
+Ein Quellcodeverwaltungs-Plug-in kann mithilfe des Datenquellen-Steuerelement-Plug-in-API 1.2 erstellt einen Batchvorgang mithilfe der gleichen Quelle-Steuerungsvorgang über mehrere Projekte oder mehrere Verbindung Kontexte hinweg ausführen. Batches können zum Entfernen der redundante pro Projekt Dialogfelder von erforderlichen Erfahrungsgrad des Benutzers verwendet werden.  
   
- Wenn ein Benutzer mehrere Elemente auswählen, die mehr als einer Verbindung in einem Quellcodeverwaltungs\-Plug\-In gehören, mit dem das Quellcodeverwaltungs\-Plug\-In API 1.1 erstellt wurde \(z. B. zwei Webprojekte auf verschiedenen Dateifreigabe computern\) und auschecken, sieht der Benutzer das gleiche Dialogfeld wiederholt.  Dies geschieht, auch wenn der Benutzer auf das Kontrollkästchen klickt im Dialogfeld **Auf alle anwenden** , da die IDE den Zustand für jeden Kontext Verbindung zurücksetzt.  
+ Wenn ein Benutzer mehrere Elemente, die mehr als eine Verbindung in ein Quellcodeverwaltungs-Plug-in erstellt wählt, mit der Quelle Steuerelement-Plug-in-API 1.1, (z. B. zwei Webprojekte auf Computern mit verschiedenen Dateifreigabe) angehören, und werden überprüft, kann der Benutzer im selben Dialogfeld sehen. wiederholt. Dies geschieht auch, wenn der Benutzer klickt auf die **anwenden auf alle** Kontrollkästchen im Dialogfeld, da die IDE den Zustand für jede Verbindungskontext zurückgesetzt.  
   
-## Ein neues Funktions\-Flag  
- `SccBeginBatch`\-Funktion `SCC_CAP_BATCH` legt das Flag fest, um anzugeben, dass ein Batchvorgang noch ausgeführt wird  
+## <a name="new-capability-flag"></a>Neue Funktion-Flag  
+ `SccBeginBatch`Funktion legt die `SCC_CAP_BATCH` Flag, um anzugeben, dass ein Batch ausgeführt wird  
   
-## Neue Funktionen  
- Die folgenden neuen Features unterstützen den Batchvorgang:  
+## <a name="new-functions"></a>Neue Funktionen  
+ Die folgenden neuen Funktionen unterstützen den Batchvorgang:  
   
 -   [SccBeginBatch](../../extensibility/sccbeginbatch-function.md)  
   
 -   [SccEndBatch](../../extensibility/sccendbatch-function.md)  
   
- Die `SCCBeginBatch`\-Funktion startet eine Gruppe Quellcodeverwaltungsvorgänge.  `SccEndBatch` die Gruppe gehören.  Die Gruppen werden nicht geschachtelt werden.  
+ Die `SCCBeginBatch` Funktion beginnt, eine Gruppe von Quellcodeverwaltungsvorgänge. `SccEndBatch`Schließt die Gruppe an. Gruppen können nicht geschachtelt werden.  
   
-## Siehe auch  
- [Was ist neu in Source Control\-Plug\-in API\-Version 1.2](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)
+## <a name="see-also"></a>Siehe auch  
+ [Neuigkeiten in API-Version 1.2 des Quellcodeverwaltungs-Plug-Ins](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

@@ -1,25 +1,26 @@
 ---
-title: "Im Editor | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Editoren [Visual Studio SDK] neue - Architektur"
+title: In den Editor | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: editors [Visual Studio SDK], new - architecture
 ms.assetid: 822cbb8d-7ab4-40ee-bd12-44016ebcce81
-caps.latest.revision: 31
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 31
+caps.latest.revision: "31"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 1876f334ad1b444b464ecc420767dea90baed6b3
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Im Editor
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Der Editor besteht aus einer Anzahl von verschiedenen Subsysteme, die entwickelt wurden, um den Editor Text Modell separaten Textansicht und die Benutzeroberfläche zu verhindern.  
+# <a name="inside-the-editor"></a>Innerhalb des-Editors
+Der Editor besteht aus einer Reihe von verschiedenen Subsysteme an, denen der Editor Text Modell separaten Textansicht und die Benutzeroberfläche beibehalten werden.  
   
  Diese Abschnitte beschreiben verschiedene Aspekte des Editors:  
   
@@ -27,165 +28,165 @@ Der Editor besteht aus einer Anzahl von verschiedenen Subsysteme, die entwickelt
   
 -   [Das Textmodell](../extensibility/inside-the-editor.md#textmodel)  
   
--   [Die Textansicht](../extensibility/inside-the-editor.md#textview)  
+-   [Textansicht](../extensibility/inside-the-editor.md#textview)  
   
  Diese Abschnitte beschreiben die Funktionen des Editors:  
   
--   [Tags und Klassifizierer](../extensibility/inside-the-editor.md#tagsandclassifiers)  
+-   [RFID-Transponder und Klassifizierer](../extensibility/inside-the-editor.md#tagsandclassifiers)  
   
--   [Details](../extensibility/inside-the-editor.md#adornments)  
+-   [Zusatzelemente](../extensibility/inside-the-editor.md#adornments)  
   
--   [Projection](../extensibility/inside-the-editor.md#projection)  
+-   [Projektion](../extensibility/inside-the-editor.md#projection)  
   
 -   [Gliedern](../extensibility/inside-the-editor.md#outlining)  
   
--   [Maus-Bindungen](../extensibility/inside-the-editor.md#mousebindings)  
+-   [Maus Bindungen](../extensibility/inside-the-editor.md#mousebindings)  
   
 -   [Editor-Vorgänge](../extensibility/inside-the-editor.md#editoroperations)  
   
 -   [IntelliSense](../extensibility/inside-the-editor.md#intellisense)  
   
-##  <a name="overview"></a> Übersicht über die Subsysteme  
+##  <a name="overview"></a>Übersicht über die Subsysteme  
   
-### Text\-Modell\-Subsystem  
- Das Text\-Modell\-Subsystem ist verantwortlich für die Darstellung von Text und die Bearbeitung aktivieren. Das Subsystem des Text\-Modell enthält die <xref:Microsoft.VisualStudio.Text.ITextBuffer> \-Schnittstelle, die die Sequenz von Zeichen beschreibt, die vom Editor angezeigt werden soll. Dieser Text kann geändert, nachverfolgt und auf vielfältige Weise bearbeitet werden. Das Textmodell bietet auch für die folgenden Aspekte:  
+### <a name="text-model-subsystem"></a>Text-Modell-Subsystem  
+ Der Text Modell Spoolersubsystem ist zum Darstellen von Text und die Bearbeitung aktivieren. Das Text-Subsystem Modell enthält die <xref:Microsoft.VisualStudio.Text.ITextBuffer> -Schnittstelle, die die Sequenz von Zeichen beschreibt, die vom Editor angezeigt werden soll. Dieser Text kann geändert, nachverfolgt und anderweitige in vielerlei Hinsicht. Der Textmodell bietet auch Typen, für die folgenden Aspekte:  
   
--   Ein Dienst, der Text Dateien zugeordnet und verwaltet werden, lesen und Schreiben in das Dateisystem.  
+-   Ein Dienst, der Text Dateien zugeordnet, und verwaltet werden, lesen und Schreiben sie im Dateisystem.  
   
--   Eine differenzierende\-Dienst, der die minimale Unterschiede zwischen zwei Sequenzen von Objekten ermittelt.  
+-   Eine differenzierende Dienst, der die minimale Unterschiede zwischen zwei Sequenzen von Objekten gefunden werden.  
   
--   Ein System zum Beschreiben des Texts in einem Puffer im Hinblick auf Teilmengen des Texts in andere Puffer.  
+-   Ein System zum Beschreiben des Texts in einem Puffer in Bezug auf Teilmengen des Texts in andere Puffer.  
   
- Das Text\-Modell\-Subsystem ist frei von Benutzer\-Benutzeroberfläche \(UI\)\-Konzepte. Z. B. es ist nicht verantwortlich für die textformatierung oder Textlayout, und es sind keine visuellen Zusatzelemente, die mit dem Text zugeordnet werden kann.  
+ Das Text-Modell-Subsystem ist kostenlos Benutzer Konzepte, die Benutzeroberfläche (UI). Beispielsweise ist nicht verantwortlich für die textformatierung oder Textlayout, und er hat keine Informationen über visual Zusatzelemente, die den Text zugeordnet werden kann.  
   
- Die öffentlichen Typen des Subsystems Modell Text sind in Microsoft.VisualStudio.Text.Data.dll und Microsoft.VisualStudio.CoreUtilitiy.dll, die nur von der .NET Framework\-Basisklassenbibliothek und das Managed Extensibility Framework \(MEF\) abhängen enthalten.  
+ Die öffentlichen Typen des Subsystems Modell Text enthalten sind, in Microsoft.VisualStudio.Text.Data.dll und Microsoft.VisualStudio.CoreUtilitiy.dll, die nur von der .NET Framework-Basisklassenbibliothek und Managed Extensibility Framework (MEF) abhängig sind.  
   
-### Text anzeigen\-Subsystem  
- Das Text\-Ansicht\-Subsystem ist verantwortlich für das Formatieren und Anzeigen von Text. Die Typen dieses Subsystem sind unterteilt in zwei Ebenen, je nachdem, ob die Typen in Windows Presentation Foundation \(WPF\) basieren. Die wichtigsten Typen sind <xref:Microsoft.VisualStudio.Text.Editor.ITextView> und <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView>, welches Steuerelement den Satz von Textzeilen, die angezeigt werden sollen, und auch die Einfügemarke, die Auswahl und die Funktionen zum Erweitern von Text mithilfe von WPF\-UI\-Elemente. Dieses Subsystem enthält zudem Ränder um den Text angezeigt. Diese Ränder erweitert werden können, und Sie können verschiedene Arten von Inhalten und visuelle Effekte enthalten. Beispiele für Ränder sind Zeile Nummer angezeigt und Bildlaufleisten.  
+### <a name="text-view-subsystem"></a>Text-Ansicht-Subsystem  
+ Der Text anzeigen Spoolersubsystem ist für das Formatieren und Anzeigen von Text. Die Typen in dieses Subsystems werden in zwei Ebenen, je nachdem, ob die Typen in Windows Presentation Foundation (WPF) beruhen aufgeteilt. Die wichtigsten Typen sind <xref:Microsoft.VisualStudio.Text.Editor.ITextView> und <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView>, die steuern, den Satz von Textzeilen, die angezeigt werden sollen, und auch das Caretzeichen, die Auswahl und die Funktionen zum Erweitern von Text mithilfe von WPF-UI-Elemente. Dieses Subsystems bietet auch Ränder um den Text im Bereich anzuzeigende. Diese Ränder erweitert werden können, und können verschiedene Arten von Inhalt und visuelle Effekte enthalten. Beispiele für Ränder sind Line Number zeigt und Bildlaufleisten.  
   
- Die öffentlichen Typen des Subsystems Ansicht Text sind in Microsoft.VisualStudio.Text.UI.dll und Microsoft.VisualStudio.Text.UI.Wpf.dll enthalten. Die erste Assembly die plattformunabhängige\-Elemente enthält und die zweite die WPF\-spezifische Elemente enthält.  
+ Die öffentlichen Typen des Subsystems Text anzeigen, sind in Microsoft.VisualStudio.Text.UI.dll und Microsoft.VisualStudio.Text.UI.Wpf.dll enthalten. Die erste Assembly enthält plattformunabhängige Elemente und die zweite enthält die WPF-spezifische Elemente.  
   
-### Klassifizierung\-Subsystem  
- Das Subsystem für die Klassifizierung ist zuständig für das Ermitteln von Schriftarteigenschaften für Text. Eine Classifier Textumbruch in verschiedene Klassen, z. B. "Schlüsselwort" oder "Kommentar". Klassifizierung gekachelten bezieht sich diese Klassen auf tatsächliche Schriftart\-Eigenschaften, z. B. "Blue Consolas 10 pt". Diese Informationen werden durch die Textansicht verwendet, wenn formatiert und Text gerendert. Tags, die weiter unten in diesem Thema ausführlicher beschrieben wird, können Daten Textabschnitte zugeordnet werden soll.  
+### <a name="classification-subsystem"></a>Klassifizierung-Subsystem  
+ Die Klassifizierung Spoolersubsystem ist für die Schriftarteigenschaften für Text bestimmt. Eine Klassifizierung teilt den Text in anderen Klassen, z. B. "Schlüsselwort" oder "Kommentar". Gekachelten Klassifizierung bezieht sich diese Klassen auf tatsächliche Schriftarteigenschaften, z. B. "Blue Consolas 10pt". Diese Informationen werden von der Textansicht verwendet, wenn es formatiert und Text gerendert. Tags, das weiter unten in diesem Thema ausführlicher beschrieben wird, können Daten Textpassagen zugeordnet werden soll.  
   
  Die öffentlichen Typen des Subsystems Klassifizierung in Microsoft.VisualStudio.Text.Logic.dll enthalten sind, und sie interagieren mit der visuellen Aspekte der Klassifizierung, die in Microsoft.VisualStudio.Text.UI.Wpf.dll enthalten sind.  
   
-### Operations\-Subsystem  
- Das Subsystem Vorgänge definiert das Verhalten von Editor. Die Implementierung für Visual Studio\-Editor und dem Rückgängig\-System bereitgestellt.  
+### <a name="operations-subsystem"></a>Vorgänge-Subsystem  
+ Das Operations-Subsystem definiert Verhalten-Editors. Er bietet die Implementierung für Visual Studio-Editor-Befehle und die rückgängig-System.  
   
-## Genauere Betrachtung des Text\-Modells und der Textansicht  
+## <a name="a-closer-look-at-the-text-model-and-the-text-view"></a>Genauere Betrachtung der Textmodell und Textansicht  
   
-###  <a name="textmodel"></a> Das Textmodell  
- Das Text\-Modell\-Subsystem besteht aus verschiedene Gruppen von Texttypen. Dazu gehören die Textpuffer, Text\-Snapshots und Textabschnitte.  
+###  <a name="textmodel"></a>Das Textmodell  
+ Das Subsystem des Text-Modell besteht aus unterschiedliche Gruppierungen der Texttypen. Dazu gehören die Textpuffer, Textmomentaufnahmen und unzusammenhängende.  
   
-#### Textpuffer und Text\-Snapshots  
- Die <xref:Microsoft.VisualStudio.Text.ITextBuffer> Schnittstelle stellt eine Folge von Unicode\-Zeichen, die codiert werden, mithilfe der UTF\-16, also die Codierung anhand der `String` Typ in .NET Framework. Ein Textpuffer als Dokument System Datei beibehalten werden kann, aber dies ist nicht erforderlich.  
+#### <a name="text-buffers-and-text-snapshots"></a>Text Buffers "und" Textmomentaufnahmen  
+ Die <xref:Microsoft.VisualStudio.Text.ITextBuffer> Schnittstelle darstellt, eine Sequenz von Unicode-Zeichen, die codiert werden, mithilfe von UTF-16, also die Codierung von verwendet die `String` Typ in .NET Framework. Ein Textpuffer als Datei Systemdokument beibehalten werden kann, aber dies ist nicht erforderlich.  
   
- Die <xref:Microsoft.VisualStudio.Text.ITextBufferFactoryService> Dient zum Erstellen einer leeren Textpuffer oder einen Textpuffer, der aus einer Zeichenfolge oder initialisiert wird <xref:System.IO.TextReader>. Textpuffer beibehalten werden kann, die im Dateisystem als eine <xref:Microsoft.VisualStudio.Text.ITextDocument>.  
+ Die <xref:Microsoft.VisualStudio.Text.ITextBufferFactoryService> dient zum Erstellen von ein leerer Text-Puffer oder einen Textpuffer, die Initialisierung aus einer Zeichenfolge oder von <xref:System.IO.TextReader>. Die Textpuffer beibehalten werden kann, die im Dateisystem als ein <xref:Microsoft.VisualStudio.Text.ITextDocument>.  
   
- Textpuffer kann von jedem Thread bearbeitet werden, bis ein Thread durch Aufrufen von den Besitz Textpuffer übernimmt <xref:Microsoft.VisualStudio.Text.ITextBuffer.TakeThreadOwnership%2A>. Danach kann nur von diesem Thread Bearbeitungen durchführen.  
+ Der Textpuffer kann über einen beliebigen Thread bearbeitet werden, bis ein Thread den Besitz des Textpuffers durch den Aufruf nimmt <xref:Microsoft.VisualStudio.Text.ITextBuffer.TakeThreadOwnership%2A>. Danach kann nur von diesem Thread Bearbeitungen ausführen.  
   
- Ein Textpuffer kann viele Versionen während seiner Lebensdauer durchlaufen. Eine neue Version wird jedes Mal, wenn der Puffer bearbeitet wird, und eine unveränderliche generiert <xref:Microsoft.VisualStudio.Text.ITextSnapshot> den Inhalt dieser Version des Puffers darstellt. Da Textmomentaufnahmen unveränderlich sind, können Sie eine Textmomentaufnahme auf einem beliebigen Thread ohne Einschränkungen zugreifen, selbst wenn ändert sich fortlaufend Textpuffer, den er darstellt.  
+ Ein Textpuffer kann viele Versionen während seiner Lebensdauer durchlaufen. Eine neue Version wird jedes Mal, wenn der Puffer bearbeitet wird, und eine unveränderliche generiert <xref:Microsoft.VisualStudio.Text.ITextSnapshot> den Inhalt dieser Version des Puffers darstellt. Da Textmomentaufnahmen unveränderlich sind, können Sie einen Text-Snapshot auf einen beliebigen Thread, ohne Einschränkungen zugreifen, selbst wenn der Textpuffer, den er darstellt weiterhin ändern.  
   
-#### Text\-Snapshots und Snapshot Textzeilen  
- Sie können den Inhalt einer Momentaufnahme Text als eine Folge von Zeichen oder als eine Sequenz von Linien anzeigen. Zeichen und Zeilen sind beide beginnend mit Null indiziert. Eine leerer Text\-Momentaufnahme enthält 0 \(null\) Zeichen und eine leere Zeile. Eine Linie wird durch eine beliebige gültige Unicode\-Zeilenumbruch Zeichen\-Sequenz oder vom Anfang oder Ende des Puffers begrenzt. Zeilenumbruchzeichen werden explizit in der Textmomentaufnahme dargestellt, und die Zeilenumbrüche in einem Text\-Snapshot müssen nicht alle identisch sein.  
+#### <a name="text-snapshots-and-text-snapshot-lines"></a>Textmomentaufnahmen und den Snapshot Textzeilen  
+ Sie können den Inhalt einer Momentaufnahme Text als eine Folge von Zeichen oder als eine Sequenz von Zeilen anzeigen. Zeichen und Linien sind, dass beide indiziert, beginnend mit 0 (null). Eine leerer Textmomentaufnahme enthält 0 (null) Zeichen und eine leere Zeile. Eine Linie wird durch eine beliebige gültige Unicode-Line-Break-Zeichen-Sequenz oder vom Anfang oder Ende des Puffers als Trennzeichen. -Zeilenumbruchzeichen werden explizit in der Textmomentaufnahme dargestellt, und die Zeilenumbrüche in einer Textmomentaufnahme müssen nicht alle identisch sein.  
   
 > [!NOTE]
->  Weitere Informationen zu Zeilenumbruchzeichen in der Visual Studio\-Editor, finden Sie unter [Codierungen und Zeilenumbrüche](../ide/encodings-and-line-breaks.md).  
+>  Weitere Informationen zu Zeilenumbruchzeichen in Visual Studio-Editor, finden Sie unter [Codierungen und Zeilenumbrüche](../ide/encodings-and-line-breaks.md).  
   
- Eine Textzeile wird dargestellt, indem ein <xref:Microsoft.VisualStudio.Text.ITextSnapshotLine> \-Objekt, das aus einer Textmomentaufnahme für eine bestimmte Zeilennummer oder einer bestimmten Zeichenposition abgerufen werden kann.  
+ Eine Textzeile wird dargestellt, indem ein <xref:Microsoft.VisualStudio.Text.ITextSnapshotLine> -Objekt, das aus einem Textmomentaufnahme für eine bestimmte Zeilennummer oder für einen bestimmten Zeichenposition abgerufen werden kann.  
   
-#### SnapshotPoints, SnapshotSpans und NormalizedSnapshotSpanCollections  
- Ein <xref:Microsoft.VisualStudio.Text.SnapshotPoint> eine Zeichenposition in einem Snapshot darstellt. Die Position ist garantiert liegen zwischen 0 \(null\) und die Länge der Momentaufnahme. Ein <xref:Microsoft.VisualStudio.Text.SnapshotSpan> ein Textabschnitts in einem Snapshot darstellt. Seine Endposition garantiert liegen zwischen 0 \(null\) und die Länge der Momentaufnahme. Die <xref:Microsoft.VisualStudio.Text.NormalizedSnapshotSpanCollection> besteht aus einem Satz von <xref:Microsoft.VisualStudio.Text.SnapshotSpan> Objekte aus der gleichen Momentaufnahme.  
+#### <a name="snapshotpoints-snapshotspans-and-normalizedsnapshotspancollections"></a>SnapshotPoints SnapshotSpans und NormalizedSnapshotSpanCollections  
+ Ein <xref:Microsoft.VisualStudio.Text.SnapshotPoint> eine Zeichenposition in eine Momentaufnahme darstellt. Die Position ist garantiert liegen zwischen 0 (null) und die Länge der Momentaufnahme. Ein <xref:Microsoft.VisualStudio.Text.SnapshotSpan> stellt eine Textpassage in einer Momentaufnahme. Wird sichergestellt, dass seine Endposition liegen zwischen 0 (null) und die Länge der Momentaufnahme. Die <xref:Microsoft.VisualStudio.Text.NormalizedSnapshotSpanCollection> besteht aus einem Satz von <xref:Microsoft.VisualStudio.Text.SnapshotSpan> Objekte aus der gleichen Momentaufnahme.  
   
-#### Bereiche und NormalizedSpanCollections  
- Ein <xref:Microsoft.VisualStudio.Text.Span> stellt einen Zeitraum, der auf einen Textabschnitt in einem Text\-Snapshot angewendet werden kann. Snapshot Positionen sind nullbasiert, sodass Spannen an einer beliebigen Position 0 \(null\) einschließlich beginnen können. Die `End` \-Eigenschaft eines Textabschnitts entspricht der Summe aus dessen `Start` Eigenschaft und dessen `Length` Eigenschaft. Ein `Span` umfasst nicht das Zeichen, das durch indiziert ist die `End` Eigenschaft. Angenommen, ein SPAN\-Tag, die Start \= 5 und Länge \= 3 bietet End \= 8, sowie die Zeichen an Position 5, 6 und 7. Die Notation für diese Spanne ist 5..8\).  
+#### <a name="spans-and-normalizedspancollections"></a>Bereiche und datenelementausgabe NormalizedSpanCollections  
+ Ein <xref:Microsoft.VisualStudio.Text.Span> stellt ein Intervall an, die auf einen Textabschnitt in einem Textmomentaufnahme angewendet werden kann. Momentaufnahme Positionen sind nullbasiert, sodass Spannen an einer beliebigen Position 0 (null) einschließlich beginnen können. Die `End` Eigenschaft eines Textabschnitts ist gleich der Summe von seiner `Start` Eigenschaft und die zugehörige `Length` Eigenschaft. Ein `Span` schließt nicht das Zeichen, die von indiziert ist die `End` Eigenschaft. Z. B. eine Spanne, die Start = 5 und Länge = 3 bietet End = 8, sowie die Zeichen an der Position 5, 6 und 7. Die Notation für diese Spanne ist 5..8).  
   
- Zwei Spannen überschneiden sich ggf. alle Positionen gemeinsam, einschließlich der Endposition. Aus diesem Grund die Schnittmenge der \[3, 5\) und \[2, 7\) ist \[3, 5\) und die Schnittmenge der \[3, 5\) und \[5, 7\) ist \[5, 5\). \(Beachten Sie, dass \[5, 5\) ist eine leere Spanne.\)  
+ Zwei Spannen schneiden besäßen sie alle Positionen gemeinsam, einschließlich der Endposition. Aus diesem Grund die Schnittmenge der [3, 5) und [2, 7) ist [3, 5) sowie die Auswirkungen von [3, 5) und [5, 7) wird [5, 5). (Beachten Sie, dass [5, 5) ist eine leere Spanne.)  
   
- Zwei Spannen überlappen sich, wenn sie Positionen gemeinsam, mit Ausnahme der Endposition haben. Eine leere Spanne überlappt nie keine anderen Spannen, und die Überlappung von zwei Spannen ist niemals leer.  
+ Zwei Spannen überlappen sich, wenn sie Positionen Gemeinsamkeit, mit Ausnahme der Endposition aufweisen. Eine leere Spanne nie überschneidet sich mit jeder anderen Spanne sowie die Überlappung von zwei Spannen ist niemals leer.  
   
- Ein <xref:Microsoft.VisualStudio.Text.NormalizedSpanCollection> ist eine Liste von Spannen in der Reihenfolge der Start\-Eigenschaften der Spannen. In der Liste werden die überlappende oder angrenzende Spannen zusammengeführt. Angenommen, den Satz von Spannen \[5..9\), \[0..1\), \[3..6\), und \[9..10\), wird die normalisierte Liste von Spannen \[0..1\), \[3..10\).  
+ Ein <xref:Microsoft.VisualStudio.Text.NormalizedSpanCollection> ist eine Liste der in der Reihenfolge der Start-Eigenschaften der Spannen Spannen. In der Liste sind überschneidende oder angrenzende Spannen zusammengeführt. Angenommen, die den Satz von Spannen [5..9), [0..1), [3..6), und [9..10), wird der normalisierte Werteliste Spannen [0..1), [3..10).  
   
-#### ITextEdit, TextVersion und Text Change Notifications  
- Der Inhalt eines Puffers Text kann geändert werden, mithilfe einer <xref:Microsoft.VisualStudio.Text.ITextEdit> Objekt. Ein solches Objekt erstellen \(mithilfe eines der `CreateEdit()` Methoden der <xref:Microsoft.VisualStudio.Text.ITextBuffer>\) startet eine Transaktion von Text, der von Textbearbeitungen besteht. Jede bearbeiten ist ein Ersatz einige Textabschnitts im Puffer durch eine Zeichenfolge. Die Koordinaten und den Inhalt jeder Bearbeitung werden relativ zu den Snapshot des Puffers ausgedrückt, wenn die Transaktion gestartet wurde. Das <xref:Microsoft.VisualStudio.Text.ITextEdit> Objekt passt die Koordinaten der Änderungen, die von anderen Änderungen in der gleichen Transaktion betroffen sind.  
+#### <a name="itextedit-textversion-and-text-change-notifications"></a>ITextEdit, TextVersion und Text-Änderungsbenachrichtigungen  
+ Der Inhalt von einem Textpuffer kann geändert werden, mithilfe einer <xref:Microsoft.VisualStudio.Text.ITextEdit> Objekt. Erstellen ein solches Objekt (mithilfe eines der `CreateEdit()` Methoden der <xref:Microsoft.VisualStudio.Text.ITextBuffer>) startet eine Transaktion von Text, der Textbearbeitungen besteht. Jede bearbeiten ist ein Ersatz einige Textabschnitts im Puffer durch eine Zeichenfolge. Die Koordinaten und den Inhalt jeder Bearbeitung sind relativ zu der Momentaufnahme des Puffers ausgedrückt, wenn die Transaktion gestartet wurde. Die <xref:Microsoft.VisualStudio.Text.ITextEdit> Objekt passt die Koordinaten der Bearbeitungen, die von anderen Änderungen an derselben Transaktion betroffen sind.  
   
- Betrachten Sie z. B. einen Textpuffer, der diese Zeichenfolge enthält:  
+ Betrachten Sie beispielsweise einen Textpuffer, der diese Zeichenfolge enthält:  
   
 ```  
 abcdefghij  
 ```  
   
- Wenden Sie eine Transaktion, enthält zwei Änderungen, ein Eintrag, der die Spanne bei ersetzt \[2..4\) mit dem Zeichen `X` und eine zweite bearbeiten, die die Spanne bei ersetzt \[6..9\) mit dem Zeichen `Y`. Das Ergebnis ist dieser Puffer:  
+ Wenden Sie eine Transaktion, enthält zwei Änderungen, die eine bearbeiten, die die Spanne am ersetzt [2..4) mit dem Zeichen `X` und eine zweite bearbeiten, die die Spanne am ersetzt [6..9) mit dem Zeichen `Y`. Das Ergebnis ist dieser Puffer:  
   
 ```  
 abXefYj  
 ```  
   
- Die Koordinaten für die zweite Bearbeitung berechnet wurden in Bezug auf den Inhalt des Puffers zu Beginn der Transaktion vor die erste Bearbeitung angewendet wurde.  
+ Die Koordinaten für die zweite Bearbeitung berechnet wurden in Bezug auf den Inhalt des Puffers am Anfang der Transaktions vor dem Anwenden der ersten Bearbeitung.  
   
- Die Änderungen in den Puffer wirksam bei der <xref:Microsoft.VisualStudio.Text.ITextEdit> Objekt wird ein Commit ausgeführt, durch Aufrufen der `Apply()` Methode. Gäbe es mindestens ein nicht leeres bearbeiten, eine neue <xref:Microsoft.VisualStudio.Text.ITextVersion> erstellt wird, ein neues <xref:Microsoft.VisualStudio.Text.ITextSnapshot> erstellt wird, und eine `Changed` \-Ereignis wird ausgelöst. Jeder Textversion hat einen anderen Textmomentaufnahme. Eine Textmomentaufnahme stellt den gesamten Status der Textpuffer nach eine Transaktion zum Bearbeiten, aber eine Textversion beschreibt nur die Änderungen von einer Momentaufnahme zur nächsten. Text\-Snapshots sind im Allgemeinen einmal verwendet werden soll und dann verworfen, während Text\-Versionen für einige Zeit aktiv bleiben müssen.  
+ Die Änderungen in den Puffer wirksam bei der <xref:Microsoft.VisualStudio.Text.ITextEdit> Objekt ein Commit wird durch Aufrufen seiner `Apply()` Methode. Wenn es mindestens eine nicht leere bearbeiten wurde, ein neues <xref:Microsoft.VisualStudio.Text.ITextVersion> erstellt wird, ein neues <xref:Microsoft.VisualStudio.Text.ITextSnapshot> erstellt wurde, und eine `Changed` Ereignis wird ausgelöst. Jeder Textversion hat einen anderen Textmomentaufnahme. Eine Textmomentaufnahme den gesamten Status des Textpuffers darstellt, nachdem eine Transaktion zum Bearbeiten, aber eine Textversion beschreibt nur die Änderungen von einer Momentaufnahme zur nächsten. Textmomentaufnahmen werden im Allgemeinen einmal verwendet werden sollen, und dann verworfen, während Text-Versionen für einige Zeit aktiv bleiben müssen.  
   
- Eine Text\-Version enthält eine <xref:Microsoft.VisualStudio.Text.INormalizedTextChangeCollection>. Dieser Sammlung beschreibt die Änderungen, wenn die Momentaufnahme angewendet wird, erzeugt die nachfolgenden Momentaufnahme. Jede <xref:Microsoft.VisualStudio.Text.ITextChange> in der Auflistung enthält die Zeichenposition, der die Änderung der ersetzten Zeichenfolge und die Ersatzzeichenfolge. Die ersetzte Zeichenfolge für das Einfügen eines grundlegenden leer ist, und die Ersatzzeichenfolge für das Löschen einer grundlegenden leer ist. Die normalisierte Auflistung ist immer `null` für die neueste Version der Textpuffer.  
+ Eine Textversion enthält eine <xref:Microsoft.VisualStudio.Text.INormalizedTextChangeCollection>. Diese Auflistung gibt Aufschluss über Änderungen, die bei Anwendung auf die Momentaufnahme die nachfolgenden Momentaufnahme erzeugt. Jede <xref:Microsoft.VisualStudio.Text.ITextChange> in der Auflistung enthält die Zeichenposition, der die Änderung der ersetzten Zeichenfolge und die Ersatzzeichenfolge. Die ersetzte Zeichenfolge für eine grundlegende Einfügung leer ist, und die Ersatzzeichenfolge für das Löschen einer grundlegenden leer ist. Die normalisierte Sammlung ist stets `null` für die neueste Version des Textpuffers.  
   
- Nur ein <xref:Microsoft.VisualStudio.Text.ITextEdit> Objekt für einen Textpuffer jederzeit instanziiert werden, und alle Textbearbeitungen müssen für den Thread, der Textpuffer besitzt \(sofern Besitz genommen wurden\) durchgeführt werden. Eine Textbearbeitung kann verworfen werden, durch Aufrufen der `Cancel` Methode oder den zugehörigen `Dispose` Methode.  
+ Nur ein <xref:Microsoft.VisualStudio.Text.ITextEdit> Objekt kann für einen Textpuffer jederzeit instanziiert werden, und alle Textbearbeitungen müssen ausgeführt werden, auf dem Thread, der den Textpuffer besitzt (sofern es sich bei den Besitz in Anspruch genommen wurde). Ein Text bearbeiten kann abgebrochen werden, durch Aufrufen seiner `Cancel` Methode oder den zugehörigen `Dispose` Methode.  
   
- <xref:Microsoft.VisualStudio.Text.ITextBuffer> bietet außerdem `Insert()`, `Delete()`, und `Replace()` Methoden, mit denen ähneln finden Sie auf der <xref:Microsoft.VisualStudio.Text.ITextEdit> Schnittstelle. Dieser Aufruf hat dieselbe Wirkung wie das Erstellen einer <xref:Microsoft.VisualStudio.Text.ITextEdit> \-Objekt, ähnlich wie Anruf anzuwenden und dann bearbeiten.  
+ <xref:Microsoft.VisualStudio.Text.ITextBuffer>bietet außerdem `Insert()`, `Delete()`, und `Replace()` Methoden, die ähneln finden Sie auf der <xref:Microsoft.VisualStudio.Text.ITextEdit> Schnittstelle. Dieser Aufruf hat dieselbe Wirkung wie das Erstellen einer <xref:Microsoft.VisualStudio.Text.ITextEdit> -Objekt, dem ähnliche Aufruf durchläuft und die Bearbeitung.  
   
-#### Überwachungspunkte und Nachverfolgen von Spannen  
- Eine <xref:Microsoft.VisualStudio.Text.ITrackingPoint> stellt eine Zeichenposition in einem Textpuffer. Der Puffer in einer Weise bearbeitet wird, der die Position des Zeichens verschoben wird, wechselt der Verfolgungspunkts mit. Beispielsweise verweist, wenn ein Überwachungspunkt bezieht sich auf Position 10 in einem Puffer und fünf Zeichen am Anfang des Puffers eingefügt werden, Verfolgungspunkts auf Position 15. An genau der Position, gekennzeichnet durch die Überwachungspunkt Einfügung Fall richtet sich das Verhalten nach der <xref:Microsoft.VisualStudio.Text.PointTrackingMode>, was kann entweder `Positive` oder `Negative`. Wenn der Modus zum Nachverfolgen von positiv ist, bezieht sich die Verfolgungspunkts in das gleiche Zeichen, der es sich nun am Ende einfügen. Wenn der Modus zum Nachverfolgen von negativ ist, verweist der Überwachungspunkt bis zum ersten eingefügten Zeichen an der ursprünglichen Position. Wenn das Zeichen an der Position, die durch ein Überwachungspunkt dargestellt gelöscht wird, wechselt der Verfolgungspunkts auf das erste Zeichen, das den gelöschten Bereich folgt. Bezieht sich z. B. wenn ein Verfolgungspunkt bezieht sich auf das Zeichen an Position 5 und die Zeichen an Position 3 bis 6 werden gelöscht, Verfolgungspunkts auf das Zeichen an Position 3.  
+#### <a name="tracking-points-and-tracking-spans"></a>Nachverfolgen von Punkten und Nachverfolgen der Spannen  
+ Ein <xref:Microsoft.VisualStudio.Text.ITrackingPoint> stellt eine Zeichenposition in einem Textpuffer. Wenn der Puffer auf eine Weise, der die Position des Zeichens bearbeitet wird zu verschiebenden verursacht, wechselt der Verfolgungspunkts mit. Beispielsweise verweist, wenn ein Verfolgungspunkt bezieht sich auf die Position 10 in einem Puffer, und fünf Zeichen am Anfang des Puffers eingefügt werden, Verfolgungspunkts klicken Sie dann auf Position 15. Wenn eine Einfügung genau der Position gekennzeichnet durch Verfolgungspunkts geschieht, richtet sich das Verhalten nach seiner <xref:Microsoft.VisualStudio.Text.PointTrackingMode>, dem kann es sich um `Positive` oder `Negative`. Wenn der Modus zum Nachverfolgen von positiv ist, bezieht sich die Verfolgungspunkts in das gleiche Zeichen, die nun am Ende einfügen ist. Wenn der Modus zum Nachverfolgen von negativ ist, bezieht sich die Verfolgungspunkts auf das erste eingefügten Zeichen an der ursprünglichen Position. Wenn das Zeichen an der Position, die durch ein Verfolgungspunkt dargestellt wird, gelöscht wird, wechselt der Verfolgungspunkts zum ersten Zeichen, das den gelöschten Bereich folgt. Bezieht sich z. B. wenn ein Verfolgungspunkt bezieht sich auf das Zeichen an Position 5 und die Zeichen an der Position 3 bis 6 werden gelöscht, Verfolgungspunkts auf das Zeichen an Position 3.  
   
- Eine <xref:Microsoft.VisualStudio.Text.ITrackingSpan> stellt einen Bereich von Zeichen anstatt nur eine Position. Das Verhalten richtet sich nach der <xref:Microsoft.VisualStudio.Text.SpanTrackingMode>. Ist der Modus zum Nachverfolgen von Span <xref:Microsoft.VisualStudio.Text.SpanTrackingMode>, die Überwachung Spanne vergrößert wird, um Text an seinen Rändern; eingefügt zu integrieren, wenn der Modus zum Nachverfolgen von Span\-Element ist <xref:Microsoft.VisualStudio.Text.SpanTrackingMode>, die Überwachung Spanne besitzt nicht an seinen Rändern eingefügten Text. Allerdings ist der Modus zum Nachverfolgen von Span <xref:Microsoft.VisualStudio.Text.SpanTrackingMode>, eine Einfügung legt die aktuelle Position in Richtung Anfang und, wenn der Modus zum Nachverfolgen von Span <xref:Microsoft.VisualStudio.Text.SpanTrackingMode>, eine Einfügung legt die aktuelle Position am Ende.  
+ Eine <xref:Microsoft.VisualStudio.Text.ITrackingSpan> stellt einen Bereich von Zeichen anstelle von nur einem Position dar. Das Verhalten richtet sich nach seiner <xref:Microsoft.VisualStudio.Text.SpanTrackingMode>. Wenn der Modus zum Nachverfolgen von Span ist <xref:Microsoft.VisualStudio.Text.SpanTrackingMode>, überschreitet die Überwachungsdatenbank Spanne an seinen Rändern; eingefügten Text zu integrieren, wenn der Modus zum Nachverfolgen von Span ist <xref:Microsoft.VisualStudio.Text.SpanTrackingMode>, die Spanne für die Überwachung wird nicht an seinen Rändern eingefügten Text eingebunden. Allerdings ist der Modus zum Nachverfolgen von Span <xref:Microsoft.VisualStudio.Text.SpanTrackingMode>, eine Einfügung legt die aktuelle Position bis zum Anfang und, wenn der Modus zum Nachverfolgen von Span <xref:Microsoft.VisualStudio.Text.SpanTrackingMode>, eine Einfügung legt die aktuelle Position am Ende.  
   
- Die Position eines Punkts nachverfolgen oder den Zeitraum für eine Überwachung Spanne erhalten für jede Momentaufnahme der Textpuffer Sie, die sie angehören. Überwachungspunkte und Nachverfolgen von Spannen können sicher von jedem Thread aus verwiesen werden.  
+ Sie können die Position eines Punkts Überwachung oder die Spanne eines Textabschnitts Überwachung für eine Momentaufnahme des Textpuffers abrufen, die sie angehören. Nachverfolgen von Punkten und Nachverfolgen der Spannen können von jedem Thread sicher verwiesen werden.  
   
-#### Inhaltstypen  
- Inhaltstypen sind ein Mechanismus zum Definieren von verschiedenen Arten von Inhalten. Ein Inhaltstyp möglich einen Dateityp, z. B. "Text", "Code" oder "binary" oder eine Technologietyp, z. B. "Xml", "Vb" oder "c\#". Beispielsweise ist das Wort "using" ein Schlüsselwort in c\# und Visual Basic, jedoch nicht in anderen Programmiersprachen. Daher wäre die Definition dieses Schlüsselwort auf die Inhaltstypen "c\#" und "Vb" beschränkt.  
+#### <a name="content-types"></a>Inhaltstypen  
+ Inhaltstypen sind ein Mechanismus zum Definieren von verschiedenen Arten von Inhalten. Ein Inhaltstyp möglich einen Dateityp, z. B. "Text", "Code" oder "binary" oder eine Technologietyp, z. B. "Xml", "Vb" oder "c#". Das Wort "mit" beispielsweise ist ein Schlüsselwort in c# und Visual Basic, jedoch nicht in anderen Programmiersprachen. Daher würde die Definition dieses Schlüsselwort auf den Inhalt vom Typ "c#" oder "Vb" beschränkt.  
   
- Inhaltstypen werden als Filter für Zusatzelemente und andere Elemente des Editors verwendet. Viele Editor\-Funktionen und Erweiterungspunkte werden pro Inhaltstyp definiert. beispielsweise unterscheidet sich Text Färbung für reine Textdateien, XML\-Dateien und Visual Basic\-Quellcodedateien. Textpuffer sind im Allgemeinen ein Inhaltstyp zugewiesen, wenn sie erstellt werden, und der Inhaltstyp eines Puffers Text geändert werden kann.  
+ Inhaltstypen sind für Zusatzelemente und andere Elemente des Editors als Filter verwendet. Viele Features im Editor und Erweiterungspunkte werden pro Inhaltstyp definiert. beispielsweise unterscheidet sich Text Färbung für nur-Text-Dateien, XML-Dateien und Visual Basic-Quellcodedateien. Textpuffer werden in der Regel einen Inhaltstyp zugewiesen, wenn sie erstellt wurden, und der Inhaltstyp der einen Textpuffer geändert werden kann.  
   
- Inhaltstypen können mehrere\-andere Inhaltstypen erben. Die <xref:Microsoft.VisualStudio.Utilities.ContentTypeDefinition> können Sie mehrere Basistypen als den übergeordneten Elementen von einem bestimmten Inhaltstyp angeben.  
+ Inhaltstypen können mehrere-andere Inhaltstypen erben. Die <xref:Microsoft.VisualStudio.Utilities.ContentTypeDefinition> können Sie mehrere Basistypen als den übergeordneten Elementen eines bestimmten Inhaltstyps angeben.  
   
- Entwickler können eigene Inhaltstypen definieren und registrieren Sie sie mithilfe der <xref:Microsoft.VisualStudio.Utilities.IContentTypeRegistryService>. Viele Editorfunktionen in Bezug auf einen bestimmten Inhaltstyp definiert werden, indem Sie mit der <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>. Beispielsweise können Editor Ränder, Details und Maushandler definiert werden, damit sie nur für Editoren gelten, die bestimmte Inhaltstypen anzeigen.  
+ Entwickler können eigene Inhaltstypen definieren und registrieren Sie sie mithilfe der <xref:Microsoft.VisualStudio.Utilities.IContentTypeRegistryService>. Viele Editorfunktionen können in Bezug auf einen bestimmten Inhaltstyp definiert werden, mithilfe der <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>. Beispielsweise können Editor Ränder Zusatzelemente und Maushandler definiert werden, damit sie nur für Editoren gelten, in denen bestimmte Inhaltstypen angezeigt.  
   
-###  <a name="textview"></a> Die Textansicht  
- Die Sicht Teil der Model\-View\-Controller \(MVC\)\-Muster definiert die Textansicht, die die Formatierung der anzeigen, Elemente wie z. B. die Bildlaufleiste, und die Einfügemarke. Alle Elemente der Visual Studio\-Editor basieren auf WPF.  
+###  <a name="textview"></a>Textansicht  
+ Die Ansichtsteil des Musters Model View Controller (MVC) definiert, der Textansicht, die die Formatierung von der Sicht, die grafische Elemente wie die Bildlaufleiste und die Einfügemarke. Alle Elemente von Visual Studio-Editor basieren auf WPF.  
   
-#### Text\-Ansichten  
- Die <xref:Microsoft.VisualStudio.Text.Editor.ITextView> \-Schnittstelle ist eine plattformunabhängige Darstellung angezeigt. Dient in erster Linie zur Text\-Dokumenten in einem Fenster angezeigt, aber es kann auch verwendet werden für andere Zwecke, z. B. in einer QuickInfo angezeigt.  
+#### <a name="text-views"></a>Text-Ansichten  
+ Die <xref:Microsoft.VisualStudio.Text.Editor.ITextView> Schnittstelle ist eine plattformunabhängige Darstellung einer Text-Sicht. Es dient in erster Linie zum Textdokumente in einem Fenster angezeigt, aber es kann auch verwendet werden für andere Zwecke verwenden, z. B. in einer QuickInfo angezeigt.  
   
- Die Textansicht verweist auf verschiedene Arten von Textpuffer. Die <xref:Microsoft.VisualStudio.Text.Editor.ITextView.TextViewModel%2A> Eigenschaft bezieht sich auf ein <xref:Microsoft.VisualStudio.Text.Editor.ITextViewModel> \-Objekt, das auf diese drei anderen Text\-Puffer verweist: im Datenpuffer ist der oberste Datenebene Puffer, den Bearbeitungspuffer, in welche Bearbeitung auftritt und visuellen Puffer, die der Puffer ist, in der Textansicht angezeigt wird.  
+ Textansicht verweist auf verschiedene Arten von Textpuffer. Die <xref:Microsoft.VisualStudio.Text.Editor.ITextView.TextViewModel%2A> Eigenschaft bezieht sich auf ein <xref:Microsoft.VisualStudio.Text.Editor.ITextViewModel> -Objekt, das auf diesen drei verschiedene Textpuffer verweist: im Datenpuffer der oberste Datenebene Puffer, in welche bearbeiten auftritt und visuellen Puffer, der den Puffer ist ist, ist der Bearbeiten--Puffer in der Textansicht angezeigt.  
   
- Der Text wird formatiert basierend auf Klassifizierer ab, die die zugrunde liegenden Textpuffer zugeordnet sind, und versehen ist, durch die Verwendung der Randsteuerelement\-Anbieter, die die Textansicht selbst zugeordnet sind.  
+ Der Text wird basierend auf der Klassifizierer, die an der zugrunde liegenden Textpuffer angefügt werden formatiert und gestaltet ist, durch die Verwendung der Randsteuerelement-Anbieter, die die Textansicht selbst zugeordnet sind.  
   
-#### Das Koordinatensystem des Text\-Ansicht  
- Das Koordinatensystem des Text\-Ansicht gibt die Positionen in der Textansicht an. In diesem Koordinatensystem der x Wert 0,0 entspricht dem linken Rand der Text angezeigt wird, und die y Wert 0,0 entspricht dem oberen Rand des Textes. Die x nimmt von links nach rechts zu koordinieren und die y nimmt von oben nach unten zu koordinieren.  
+#### <a name="the-text-view-coordinate-system"></a>Das Koordinatensystem des Text-Ansicht  
+ Das Koordinatensystem des Text-Sicht gibt die Positionen in der Textansicht an. In diesem Koordinatensystem der X-Wert 0,0 entspricht dem linken Rand des angezeigten Texts und der y-Wert 0,0 am oberen Rand des angezeigten Texts entspricht. Die X-Koordinate erhöht von links nach rechts und die y-Koordinate von oben nach unten.  
   
- Ein Viewport \(der Teil des Texts im Textfenster angezeigt\) kann nicht auf die gleiche Weise ein horizontaler Bildlauf durchgeführt werden wie ein vertikaler Bildlauf durchgeführt wird. Ein Viewport ist ein horizontaler Bildlauf durch die linke Koordinate geändert, sodass es in Bezug auf die Zeichenoberfläche verschiebt durchgeführt. Allerdings ein Viewport Bildlauf möglich vertikal nur durch ändern den zu rendernde Text, wodurch ein <xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged> Ereignis ausgelöst wird.  
+ Ein Viewport (der Teil des Texts im Fenster mit Text sichtbar) kann nicht auf die gleiche Weise ein horizontaler Bildlauf durchgeführt werden, wie sie ein vertikaler Bildlauf durchgeführt wird. Ein Viewport ist horizontaler Bildlauf durchgeführt, ändern Sie die linke Koordinate, damit sie in Bezug auf die Zeichenoberfläche verschoben wird. Allerdings ein Viewport kann Bildlauf durchgeführt werden vertikal nur durch Ändern der gerenderten-Texts, der bewirkt, dass ein <xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged> Ereignis ausgelöst wurde.  
   
- Abstände im Koordinatensystem entsprechen den logischen Pixeln. Wenn die Text\-Rendering\-Oberfläche ohne eine Skalierungstransformation angezeigt wird, entspricht einer Einheit in den Textrendering\-Koordinatensystem ein Pixel auf dem Bildschirm.  
+ Entfernungen im Koordinatensystem entsprechen logische Pixel. Wenn die Text-Rendering-Oberfläche ohne eine Skalierungstransformation angezeigt wird, klicken Sie dann entspricht eine Einheit in den Text-Rendering-Koordinatensystem ein Pixel in der Anzeige.  
   
-#### Seitenränder  
- Die <xref:Microsoft.VisualStudio.Text.Editor.ITextViewMargin> Schnittstelle stellt einen Rand und aktiviert die Steuerung der Sichtbarkeit der Rand\- und seine Größe. Es gibt vier vordefinierten Ränder, die "Top", "Left", "Right" und "Bottom" benannt werden und mit oben, unten, links oder rechts einer Ansicht verknüpft sind. Diese Ränder sind Container, die in denen anderen Rändern platziert werden können. Die\-Schnittstelle definiert Methoden, die Größe des Rands und die Sichtbarkeit von einem Rand. Ränder sind visuelle Elemente, die zusätzliche Informationen über die Textansicht bereitstellen, mit denen sie verbunden sind. Beispielsweise zeigt die Zeilennummer Rand Zeilennummern für die Textansicht. Der Symbolrand Zeigt Elemente der Benutzeroberfläche.  
+#### <a name="margins"></a>Seitenränder  
+ Die <xref:Microsoft.VisualStudio.Text.Editor.ITextViewMargin> Schnittstelle stellt einen Rand und aktiviert die Steuerung der Sichtbarkeit der den Rand und seine Größe. Es gibt vier vordefinierten Ränder, die "Top", "Left", "Right" und "Bottom" heißen und oben, unten, links oder rechten Rand einer Sicht zugeordnet sind. Diese Ränder sind Container, die in denen anderen Rändern platziert werden können. Die Schnittstelle definiert Methoden, die die Größe der Seitenränder und die Sichtbarkeit der einen Rand zurückgeben. Ränder werden visuelle Elemente, die zusätzliche Informationen über die Textansicht bereitstellen, mit denen sie verbunden sind. Beispielsweise zeigt die Nummer der Zeile Rand Zeilennummern für Textansicht. Der Symbolrand Zeigt Elemente der Benutzeroberfläche.  
   
- Die <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewMarginProvider> Schnittstelle behandelt die Erstellung und Platzierung der Ränder. Ränder können in Bezug auf die anderen Rändern angeordnet sein. Höhere Priorität Ränder befinden sich näher anzuzeigende Text. Beispielsweise wird angezeigt, wenn es zwei linken Ränder, A und B gibt und Rand B hat eine geringere Priorität als Rand ein, Margin B auf der linken Seite des Rands A.  
+ Die <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewMarginProvider> Schnittstelle ist für die Erstellung und Platzierung der Ränder. Ränder können in Bezug auf die anderen Rändern sortiert werden. Höhere Priorität Ränder befinden sich näher anzuzeigende Text. Beispielsweise wird angezeigt, wenn es zwei linken Rand, A und B-Seitenrand gibt und Rand B verfügt über eine niedrigere Priorität als Rand A, Rand B auf der linken Seite des Rands A.  
   
-#### Anzeigen des Hosts Text  
- Die <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewHost> Schnittstelle enthält die Textansicht und alle angrenzenden Dekorationen, die die Ansicht, z. B. Bildlaufleisten begleiten. Anzeigen des Hosts Text enthält auch die Ränder, die einen Rahmen der Ansicht zugeordnet sind.  
+#### <a name="the-text-view-host"></a>Text anzeigen des Hosts  
+ Die <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewHost> Schnittstelle enthält die Textansicht und alle angrenzenden Ergänzungen, die die Sicht, z. B. Bildlaufleisten offen. Text anzeigen des Hosts enthält auch die Ränder, die einen Rahmen der Sicht zugeordnet sind.  
   
-#### Formatierter Text  
- In einer Textansicht angezeigte Text besteht aus <xref:Microsoft.VisualStudio.Text.Formatting.ITextViewLine> Objekte. Eine Textzeile in der Textansicht entspricht jede Zeile Text anzeigen. Lange Zeilen im zugrunde liegenden Textpuffer können entweder teilweise verdeckt \(wenn Zeilenumbruch nicht aktiviert ist\) oder in mehreren Textansicht Zeilen aufgeteilt. Die <xref:Microsoft.VisualStudio.Text.Formatting.ITextViewLine> Schnittstelle enthält Methoden und Eigenschaften für die Zuordnung zwischen Koordinaten und Zeichen, und die Details, die der Zeile zugeordnet werden können.  
+#### <a name="formatted-text"></a>Formatierter Text  
+ In einer Textansicht angezeigte Text besteht aus <xref:Microsoft.VisualStudio.Text.Formatting.ITextViewLine> Objekte. Eine Textzeile in der Textansicht entspricht jede Zeile Text anzeigen. Lange Zeilen in der zugrunde liegenden Textpuffer können werden teilweise verdeckt (Wenn kein Zeilenumbruch aktiviert ist) oder in mehrere Textansicht Zeilen aufgeteilt. Die <xref:Microsoft.VisualStudio.Text.Formatting.ITextViewLine> Schnittstelle enthält Methoden und Eigenschaften für die Zuordnung zwischen Koordinaten und Zeichen, und für die Zusatzelemente, die der Zeile zugeordnet werden können.  
   
- <xref:Microsoft.VisualStudio.Text.Formatting.ITextViewLine> Objekte werden erstellt, mithilfe einer <xref:Microsoft.VisualStudio.Text.Formatting.IFormattedLineSource> Schnittstelle. Wenn Sie nur den Text, die derzeit in der Ansicht angezeigt wird befürchten, können Sie die Quelle die Formatierung ignorieren. Wenn Sie das Format des Texts interessiert sind, die nicht angezeigt wird, in der Ansicht \(z. B. zur Unterstützung von Rich\-Text Ausschneiden und Einfügen\), können Sie <xref:Microsoft.VisualStudio.Text.Formatting.IFormattedLineSource> zum Formatieren von Text in einem Textpuffer.  
+ <xref:Microsoft.VisualStudio.Text.Formatting.ITextViewLine>Objekte werden erstellt, mit einer <xref:Microsoft.VisualStudio.Text.Formatting.IFormattedLineSource> Schnittstelle. Wenn Sie nur den Text besorgt, die derzeit in der Ansicht angezeigt wird sind, können Sie die Quelle die Formatierung ignorieren. Wenn Sie das Format des Texts interessiert sind, die nicht angezeigt, in der Ansicht (z. B. zur Unterstützung von Rich-Text Ausschneiden und Einfügen), können Sie <xref:Microsoft.VisualStudio.Text.Formatting.IFormattedLineSource> zum Formatieren von Text in einem Textpuffer.  
   
- Die Textansicht formatiert eine <xref:Microsoft.VisualStudio.Text.ITextSnapshotLine> zu einem Zeitpunkt.  
+ Textansicht formatiert eine <xref:Microsoft.VisualStudio.Text.ITextSnapshotLine> zu einem Zeitpunkt.  
   
-## Editor\-Funktionen  
- Die Funktionen des Editors sind so gestaltet, dass die Definition der Funktion unabhängig von seiner Implementierung. Der Editor enthält die folgenden Features:  
+## <a name="editor-features"></a>Editor-Funktionen  
+ Die Funktionen des Editors sind so gestaltet, dass die Definition der Funktion getrennt von der Implementierung. Der Editor enthält die folgenden Funktionen:  
   
--   Tags und Klassifizierer  
+-   RFID-Transponder und Klassifizierer  
   
--   Details  
+-   Zusatzelemente  
   
 -   Projection  
   
@@ -193,99 +194,99 @@ abXefYj
   
 -   Maus und Tastatur Bindungen  
   
--   Vorgänge und primitive  
+-   Vorgänge und primitive Typen  
   
 -   IntelliSense  
   
-###  <a name="tagsandclassifiers"></a> Tags und Klassifizierer  
- Tags sind die Marker, die einen Textabschnitt zugeordnet sind. Sie können auf verschiedene Arten, z. B. dargestellt werden mithilfe von Farben für Text, unterstrichen, Grafiken oder Popups. Klassifizierer sind eine Art von Tags.  
+###  <a name="tagsandclassifiers"></a>RFID-Transponder und Klassifizierer  
+ Tags sind Marker, die einen Textabschnitt zugeordnet sind. Sie können auf unterschiedliche Weise z. B. dargestellt werden mithilfe von Farben für Text, unterstrichen, Grafiken oder Popups. Klassifizierern handelt es sich um eine Art des Tags.  
   
- Andere Arten von Tags sind <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag> für die Hervorhebung von Text <xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag> für Gliedern und <xref:Microsoft.VisualStudio.Text.Tagging.ErrorTag> für Kompilierungsfehler.  
+ Andere Arten von Tags sind <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag> für die Hervorhebung von Text <xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag> für Gliederungen, und <xref:Microsoft.VisualStudio.Text.Tagging.ErrorTag> für Kompilierungsfehler.  
   
-#### Klassifizierungstypen  
- Eine <xref:Microsoft.VisualStudio.Text.Classification.IClassificationType> Schnittstelle eine äquivalenzklasse, die eine abstrakte Kategorie des Texts darstellt. Klassifizierungstypen können mehrere\-andere Klassifizierungstypen erben. Z. B. programming Language Klassifikationen gehören "Schlüsselwort", "Comment" und "Bezeichner", die alle von "Code" erben. Natürliche Sprache Klassifizierungstypen gehören "Nomen", "Verb" und "Adjektiv", die alle von "natürlicher Sprache" erben.  
+#### <a name="classification-types"></a>Klassifizierungstypen  
+ Ein <xref:Microsoft.VisualStudio.Text.Classification.IClassificationType> Schnittstelle stellt eine äquivalenzklasse, also eine abstrakte Kategorie von Text. Klassifizierungstypen können mehrere-andere Klassifizierungstypen erben. Kann die programming Language Klassifikationen enthalten, "Schlüsselwort", "Comment" und "Bezeichner", die alle von "Code" erben. Natürlicher Sprache Klassifizierung möglicherweise die folgenden Anweisungstypen "Nomen", "Verb" und "Adjektiv", die alle von "natürlicher Sprache" erben.  
   
-#### Klassifizierungen  
- Eine Klassifizierung ist eine Instanz einer bestimmten Klassifizierung\-Typs in der Regel über einen Zeitraum von Text. Ein <xref:Microsoft.VisualStudio.Text.Classification.ClassificationSpan> wird verwendet, um eine Klassifizierung darstellen. Eine Klassifizierung Spanne kann als Bezeichnung betrachtet werden, die einen bestimmten Textabschnitt behandelt und weist das System, das für einen bestimmten Klassifizierungstyp dieses Textabschnitts ist.  
+#### <a name="classifications"></a>Klassifizierungen  
+ Eine Klassifizierung ist eine Instanz einer bestimmten Klassifizierung-Typs in der Regel über einen Zeitraum von Text. Ein <xref:Microsoft.VisualStudio.Text.Classification.ClassificationSpan> wird verwendet, um eine Klassifizierung darstellen. Eine Klassifizierung Spanne kann als Bezeichnung betrachtet werden, die einen bestimmten Textabschnitt behandelt und weist das System, das dieser Spanne des Texts einer bestimmten Klassifizierungstyp aufweist.  
   
-#### Klassifizierer  
- Ein <xref:Microsoft.VisualStudio.Text.Classification.IClassifier> ist ein Mechanismus, durch die Text in einen Satz von Klassifikationen unterbrochen. Klassifizierer müssen für bestimmte Inhaltstypen definiert und für bestimmte Textpuffer instanziiert werden. Clients müssen implementieren <xref:Microsoft.VisualStudio.Text.Classification.IClassifier> textklassifizierung teilnehmen.  
+#### <a name="classifiers"></a>Klassifizierer  
+ Ein <xref:Microsoft.VisualStudio.Text.Classification.IClassifier> ist ein Mechanismus, die Text in einen Satz von Klassifizierungen zu beeinträchtigen. Klassifizierer für bestimmte Inhaltstypen definiert und instanziiert wird, bestimmten Textpuffer. Clients müssen implementieren <xref:Microsoft.VisualStudio.Text.Classification.IClassifier> an textklassifizierung teilnehmen.  
   
-#### Klassifizierung Aggregatoren  
- Ein Classifier\-Aggregator ist ein Mechanismus, der alle Klassifizierer für eine Textpuffer in nur einem Satz von Klassifikationen kombiniert. Beispielsweise konnte ein C\#\-Klassifizierung und einen englischsprachigen Klassifizierer Klassifikationen über einen Kommentar in einer C\#\-Datei erstellen. Betrachten Sie diesen Kommentar:  
+#### <a name="classifier-aggregators"></a>Klassifizierung Aggregatoren  
+ Ein Klassifizierungsaggregator ist ein Mechanismus, der alle Klassifizierungen für einen Textpuffer in nur einem Satz von Klassifizierungen kombiniert. Eine C#-Klassifizierung und einen englischen Sprache Klassifizierer konnte Klassifikationen über einen Kommentar in einer C#-Datei erstellen. Betrachten Sie diesen Kommentar aus:  
   
 ```  
 // This method produces a classifier  
 ```  
   
- Eine C\#\-Klassifizierung kann die gesamte Spanne als Kommentar Bezeichnung, und die Klassifizierung der englischen Sprache möglicherweise als "Verb" und "Method" als ein "Nomen" klassifizieren "erstellt". Der Aggregator erstellt eine Gruppe von nicht überlappenden Klassifikationen, und der Typ der Menge basiert auf alle Ihre Beiträge.  
+ Eine C#-Klassifizierung möglicherweise die gesamte Spanne als Kommentar kennzeichnen und die Klassifizierung der englischen Sprache möglicherweise als "Verb" und "Method" als ein "Nomen" klassifizieren "erstellt". Der Aggregator erzeugt einen Satz nicht überschneidender Klassifizierungen, und der Typ der Menge basiert darauf, dass alle Beiträge.  
   
- Ein Classifier\-Aggregator ist auch eine Classifier, da sie Text in einen Satz von Klassifikationen unterbrochen. Der Klassifizierungsaggregator stellt außerdem sicher, dass keine überlappenden Klassifikationen vorhanden sind und dass die Klassifikationen sortiert sind. Einzelne Klassifizierer sind ein Satz von Klassifikationen, in beliebiger Reihenfolge zurückgeben und überlappende in keiner Weise.  
+ Ein Klassifizierungsaggregator ist auch eine Klassifizierung aus, da Text in einen Satz von Klassifizierungen beschädigt. Der Klassifizierungsaggregator wird sichergestellt, dass auch, dass es keine überlappenden Klassifikationen sind und Klassifikationen sortiert werden. Einzelne Klassifizierern sind frei, um einen beliebigen Satz von Klassifizierungen, in beliebiger Reihenfolge zurückgegeben und in keiner Weise überlappende.  
   
-#### Klassifizierung Formatierung und Text Codefarben  
- Formatieren von Text ist ein Beispiel für eine Funktion, die Klassifizierung von Texten erstellt wird. Es wird von der Ansicht Textebene verwendet, um die Anzeige von Text in einer Anwendung zu ermitteln. Die Formatierung Textbereich ist abhängig von WPF die logische Definition der Klassifikationen ist hingegen nicht.  
+#### <a name="classification-formatting-and-text-coloring"></a>Klassifizierung Formatierung und Farben für Text  
+ Formatieren von Text ist ein Beispiel für eine Funktion, die auf textklassifizierung erstellt wird. Es wird durch die Ansichtsebene Text verwendet, um die Anzeige von Text in einer Anwendung zu bestimmen. Die Formatierung Textbereich ist abhängig von WPF, aber die Definition des logischen Klassifizierungen ist.  
   
- Ein Klassifizierungsformat ist eine Reihe von Eigenschaften für einen bestimmten Klassifizierungstyp. Diese Formate werden aus dem Format des übergeordneten Elements den Klassifizierungstyp erben.  
+ Ein Klassifizierungsformat ist ein Satz von Eigenschaften für einen bestimmten Klassifizierung Formatierung. Diese Formate werden aus dem Format des übergeordneten Elements den Klassifizierungstyp erben.  
   
- Ein <xref:Microsoft.VisualStudio.Text.Classification.IClassificationFormatMap> ist eine Zuordnung von einem Klassifizierungstyp einer Reihe von Formatierungseigenschaften. Die Implementierung des gekachelten im Editor behandelt alle Exporte der Klassifizierung Formate.  
+ Ein <xref:Microsoft.VisualStudio.Text.Classification.IClassificationFormatMap> ist eine Zuordnung von einem Klassifizierungstyp auf einen Satz von Eigenschaften für die textformatierung. Die Implementierung des gekachelten im Editor behandelt alle Exporte Klassifizierung Formate.  
   
-###  <a name="adornments"></a> Details  
- Details sind Grafikeffekte, die nicht direkt mit der Schriftart und Farbe der Zeichen in der Textansicht verknüpft sind. Z. B. die rote Wellenlinie unterstrichen, die verwendet wird, nicht Kompilieren von Code in vielen Programmiersprachen markiert ist, ein eingebettetes Zusatzelement und QuickInfos sind Popupfenster Zusatzelemente. Zusatzelemente abgeleitet sind <xref:System.Windows.UIElement> und implementieren Sie <xref:Microsoft.VisualStudio.Text.Tagging.ITag>. Zwei spezielle Arten von Adornment Tag sind die <xref:Microsoft.VisualStudio.Text.Tagging.SpaceNegotiatingAdornmentTag>, für Zusatzelemente, die den gleichen Speicherplatz wie der Text in einer Ansicht zu belegen und die <xref:Microsoft.VisualStudio.Text.Tagging.ErrorTag>, für die Wellenlinie unterstrichen.  
+###  <a name="adornments"></a>Zusatzelemente  
+ Zusatzelemente sind Graphic Effekte, die nicht direkt auf die Schriftart und Farbe der Zeichen in der Textansicht beziehen. Z. B. die rote Wellenlinie Unterstreichung ab, das nicht Kompilieren von Code in zahlreichen Programmiersprachen markieren ist eine eingebettete Randsteuerelement und QuickInfos werden Popup Zusatzelemente. Zusatzelemente abgeleitet sind <xref:System.Windows.UIElement> und Implementieren von <xref:Microsoft.VisualStudio.Text.Tagging.ITag>. Zwei spezielle Arten von Randsteuerelement Tag sind die <xref:Microsoft.VisualStudio.Text.Tagging.SpaceNegotiatingAdornmentTag>, für Zusatzelemente, die den gleichen Speicherplatz wie der Text in einer Ansicht zu belegen und die <xref:Microsoft.VisualStudio.Text.Tagging.ErrorTag>, für die Unterstreichung Wellenlinie.  
   
- Eingebettete Zusatzelemente sind Grafiken, die Teil der formatierten Textansicht bilden. Sie sind in verschiedenen Schichten der Z\-Reihenfolge angeordnet. Bestehen die folgenden drei integrierte Ebenen: Text, der Einfügemarke und die Auswahl. Entwickler können jedoch weitere Ebenen definieren, und platzieren Sie sie in der Reihenfolge zueinander. Die drei Arten von eingebetteten Zusatzelemente sind Text relativ Zusatzelemente \(das Verschieben, wenn der Text bewegt und werden gelöscht, wenn der Text gelöscht wird\), Ansicht Relative Zusatzelemente \(die mit nicht\-Text\-Teilen der Ansicht zu tun haben\) und Besitzer\-gesteuerten Zusatzelemente \(der Entwickler muss die Platzierung verwalten\).  
+ Eingebettete Zusatzelemente sind Grafiken, die Teil der Sicht formatierten Text zu bilden. Sie sind auf unterschiedlichen Ebenen der Z-Reihenfolge angeordnet. Gibt es drei vordefinierte Ebenen, wie folgt werden: Text, der Einfügemarke und die Auswahl. Entwickler können jedoch weitere Ebenen definieren, und fügen Sie sie in der Reihenfolge in Bezug auf einen anderen. Die drei Typen von eingebetteten Zusatzelemente sind Text relativ Zusatzelemente (die verschieben, wenn der Text wird verschoben und werden gelöscht. wenn der Text gelöscht wurde), relativ zum Anzeigen von randsteuerelementen (die mit-n Nichttext Teilen der Ansicht zu tun haben) und Besitzer-gesteuerten Zusatzelemente (die Entwickler muss ihrer Platzierung verwalten).  
   
- Popup Zusatzelemente sind Grafiken, die in einem kleinen Fenster über der Textansicht, z. B. QuickInfos angezeigt werden.  
+ Popup Zusatzelemente sind Grafiken, die in einem kleinen Fenster oberhalb der Textansicht, z. B. QuickInfos angezeigt werden.  
   
-###  <a name="projection"></a> Projection  
- Projektion ist ein Verfahren zum Erstellen einer anderen Art von Textpuffer, die nicht tatsächlich Text gespeichert, sondern stattdessen kombiniert Text aus anderen Textpuffer. Beispielsweise kann ein Projektionspuffer verwendet werden, zum Verketten von Text aus zwei anderen Puffer und zeigt das Ergebnis wird in nur einem Puffer oder Teile des Texts in einem Puffer auszublenden. Ein Projektionspuffer kann als einen Quellpuffer in einen anderen Projektionspuffer fungieren. Ein Satz von Puffern, die von der Projektion beziehen kann erstellt werden, um Text auf unterschiedliche Weise neu anordnen. \(Eine Gruppe wird auch ein *Pufferdiagramm*.\) Die Gliederungsfunktion des Visual Studio\-Text wird mithilfe eines Projektionspuffers zum Ausblenden des reduzierten Text implementiert, und der Visual Studio\-Editor für ASP.NET\-Seiten Projektion verwendet, um eingebettete Sprachen wie Visual Basic und c\# unterstützen.  
+###  <a name="projection"></a>Projektion  
+ Projektion ist ein Verfahren zum Erstellen einer anderen Art von Textpuffer, die nicht tatsächlich Text gespeichert, sondern stattdessen kombiniert Text aus anderen Textpuffer. Ein Projektionspuffer kann beispielsweise verwendet werden, zum Verketten von Text aus zwei anderen Puffer und das Ergebnis darstellen, als wäre er in nur einem Puffer wird oder Teile des Texts in einem Puffer auszublenden. Ein Projektionspuffer kann als einen Quellpuffer in einen anderen Projektionspuffer fungieren. Ein Satz von Puffern, die von der Projektion beziehen kann erstellt werden, um Text auf viele verschiedene Arten neu anordnen. (Eine solchen Menge ist auch bekannt als ein *Puffer Graph*.) Die Gliederungsfunktion des Visual Studio Text wird mithilfe eines Projektionspuffers um den reduzierten Text auszublenden implementiert, und die Visual Studio-Editor für die ASP.NET-Seiten-Projektion verwendet, um eingebettete Sprachen wie Visual Basic und c# unterstützen.  
   
- Ein <xref:Microsoft.VisualStudio.Text.Projection.IProjectionBuffer> wird erstellt, indem Sie mithilfe von <xref:Microsoft.VisualStudio.Text.Projection.IProjectionBufferFactoryService>. Ein Projektionspuffer wird durch eine geordnete Sequenz von dargestellt <xref:Microsoft.VisualStudio.Text.ITrackingSpan> Objekte, die als bekanntermaßen *source Spannen*. Der Inhalt dieser Spannen werden als eine Folge von Zeichen dargestellt. Der Textpuffer aus der Quellspannen gezeichnet werden, werden mit dem Namen *Puffer source*. Clients eines Puffers Projektion ist nicht erforderlich, beachtet werden, dass es eine gewöhnliche Textpuffer unterscheidet.  
+ Ein <xref:Microsoft.VisualStudio.Text.Projection.IProjectionBuffer> wird erstellt, indem Sie mithilfe von <xref:Microsoft.VisualStudio.Text.Projection.IProjectionBufferFactoryService>. Ein Projektionspuffer wird durch eine geordnete Sequenz von dargestellt <xref:Microsoft.VisualStudio.Text.ITrackingSpan> Objekte, die als bekanntermaßen *Datenquelle Spannen*. Der Inhalt dieser Spannen wird als eine Folge von Zeichen angezeigt. Der Textpuffer aus der Quellspannen gezeichnet werden, werden mit dem Namen *Datenquelle Puffer*. Clients eines Puffers Projektion ist nicht erforderlich, um bewusst sein, dass es ein normales Textpuffer unterscheidet.  
   
- Der Projektionspuffer Lauscht auf Text\-Change\-Ereignissen auf der Quellpuffer. Wenn der Text in einer Quelle umfassen Änderungen, Projektionspuffer die geänderten Text Koordinaten in eigenen Koordinaten und löst Ereignisse aus entsprechenden Text ändern. Betrachten Sie z. B. Quellpuffer A und B, die diesen Inhalt haben:  
+ Die Projektionspuffer überwacht textänderung Ereignisse auf der Quellpuffer. Wenn der Text in einer Datenquelle umfassen ändert, wird der Projektionspuffer ordnet die Koordinaten geänderter Text in einem eigenen Koordinaten und löst Ereignisse aus entsprechenden textänderung. Betrachten Sie beispielsweise Quellpuffer A und B, die über diesen Inhalt verfügen:  
   
 ```  
 A: ABCDE  
 B: vwxyz  
 ```  
   
- Wenn Projektionspuffer P aus zwei Textabschnitte, d. h. alle Puffer, die gültig ist, andere, die alle Puffer B enthält P den folgenden Inhalt:  
+ Wenn Projektionspuffer P aus zwei unzusammenhängende, alle Puffer als auch die Kennzeichnung gebildet wird, andere, die alle Puffer B vorhanden sind, hat P den folgenden Inhalt:  
   
 ```  
 P: ABCDEvwxyz  
 ```  
   
- Wenn die Teilzeichenfolge `xy` aus Puffer B gelöscht wird, und klicken Sie dann Puffer P löst ein Ereignis aus, der angibt, dass die Zeichen an Position 7 und 8 gelöscht wurden.  
+ Wenn die Teilzeichenfolge `xy` aus Puffer B, gelöscht, und klicken Sie dann Puffer P löst ein Ereignis aus, der angibt, dass die Zeichen an Position 7 und 8 gelöscht wurden.  
   
- Der Projektionspuffer kann auch direkt bearbeitet werden. Es gibt Änderungen an die entsprechenden Quellpuffer weiter. Beispielsweise wird Puffer P an Position 6 \(die ursprüngliche Position der Buchstaben "V"\) eine Zeichenfolge eingefügt wird, die Einfügemarke in Puffer B an Position 1 weitergegeben.  
+ Die Projektionspuffer kann auch direkt bearbeitet werden. Es gibt Änderungen an der entsprechenden Quellpuffer weiter. Eine Zeichenfolge in Puffer P an Position 6 (der ursprünglichen Position des Zeichens "V") eingefügt wird, wird z. B. das Einfügen in Puffer B an Position 1 weitergegeben.  
   
- Es gibt Einschränkungen auf die Quellspannen, die auf einen Projektionspuffer beitragen. Quellspannen dürfen nicht überlappen; eine Position in einem Projektionspuffer nicht mehr als einer Position in einem Quellpuffer zuordnen und ein Speicherort in einem Quellpuffer nicht mehr als einer Position in einem Projektionspuffer zuordnen. In der Quelle Puffer Beziehung sind keine Circularities zulässig.  
+ Es gibt Einschränkungen für die Quellspannen, die auf einen Projektionspuffer beitragen. Quellspannen überschneiden sich möglicherweise nicht; eine Position in einer Projektionspuffer kann nicht an mehreren Stellen in jeder Quellpuffer zuordnen kann nicht, und eine Position in einen Quellpuffer zu mehr als einer Position in einem Projektionspuffer. In der Quelle Puffer Beziehung sind keine Circularities zulässig.  
   
- Ereignisse werden ausgelöst, wenn der Satz von Puffern für eine Projektion Puffer ändert und wenn der Satz von Änderungen umfasst.  
+ Ereignisse werden ausgelöst, wenn der Satz von puffert einer Projektion Puffer geändert, und wenn der Satz von Änderungen umfasst.  
   
- Ein Elisionspuffer ist eine besondere Art von Projektionspuffer. Es wird hauptsächlich für eine Gliederung und für Vorgänge, die erweitern und Reduzieren von Textblöcken. Ein Elisionspuffer basiert auf nur einen Quellpuffer und die Spannen im Elisionspuffer bestellt werden müssen, die gleiche wie diese in der Quellpuffer angeordnet werden.  
+ Ein Elisionspuffer ist eine besondere Art von Projektionspuffer. Es dient in erster Linie für eine Gliederung und für Vorgänge, die erweitert und reduziert die Textblöcke bestimmt. Ein Elisionspuffer basiert auf nur einem Quellpuffer und der Spannen im Elisionspuffer bestellt werden müssen, die gleiche wie sie in der Quellpuffer sortiert werden.  
   
-##### Der Pufferdiagramm  
- Die <xref:Microsoft.VisualStudio.Text.Projection.IBufferGraph> Schnittstelle ermöglicht die Zuordnung über Projektionspuffer in einem Diagramm dargestellt. Alle Textpuffer und Projektionspuffer werden in einem gerichteten Diagramm azyklisch, ähnlich wie die abstrakte Syntaxstruktur gesammelt, die durch einen Sprachcompiler erzeugt wird. Das Diagramm ist der oberste Puffer, Textpuffer werden kann definiert. Das Pufferdiagramm kann von einem Punkt im oberen Puffer zu einem Punkt in einem Quellpuffer oder aus einem Bereich im oberen Puffer einer Reihe von Bereichen in einem Quellpuffer zuordnen. Auf ähnliche Weise können sie ordnen Sie einen Punkt oder aus einem Quellpuffer an eine Stelle im oberen Puffer umfassen. Puffer Diagramme werden erstellt, mit der <xref:Microsoft.VisualStudio.Text.Projection.IBufferGraphFactoryService>.  
+##### <a name="the-buffer-graph"></a>Der Pufferdiagramm  
+ Die <xref:Microsoft.VisualStudio.Text.Projection.IBufferGraph> Schnittstelle ermöglicht die Zuordnung für ein Diagramm der Projektionspuffer. Alle Textpuffer und Projektionspuffer werden in ein gerichtetes azyklisches Diagramm, ähnlich wie die abstrakte Syntaxstruktur gesammelt, die durch einen Sprachcompiler erzeugt wird. Das Diagramm wird durch den oberen Puffer definiert, die keinen Textpuffer werden können. Das Pufferdiagramm kann von einem Punkt in der oberen Puffer zu einem Zeitpunkt einen Quellpuffer oder aus einer Spanne im obersten Puffer auf einen Satz von Spannen in einen Quellpuffer zuordnen. Sie können auf ähnliche Weise, ordnen Sie einen Punkt oder aus einem Quellpuffer zu einem Zeitpunkt in der oberen Puffer umfassen. Puffer Diagramme werden erstellt, mit der <xref:Microsoft.VisualStudio.Text.Projection.IBufferGraphFactoryService>.  
   
-##### Ereignisse und Projektionspuffer  
- Ein Projektionspuffer geändert wurde, werden die Änderungen aus dem Projektionspuffer in den Puffer gesendet, die davon abhängen. Wenn alle Puffer geändert wurden, werden Änderungsereignisse Puffer beginnend mit der tiefsten Puffer ausgelöst.  
+##### <a name="events-and-projection-buffers"></a>Ereignisse und Projektionspuffer  
+ Wenn ein Projektionspuffer geändert wird, werden die Änderungen aus dem Projektionspuffer in den Puffer gesendet, die von ihm abhängig sind. Nachdem alle Puffer geändert werden, werden Puffer Change-Ereignissen ausgelöst, mit dem tiefsten Puffer ab.  
   
-###  <a name="outlining"></a> Gliedern  
- Das Gliedern ist die Möglichkeit zum Erweitern oder reduzieren unterschiedliche Textblöcke in einer Textansicht. Gliederung ist definiert als eine Art von <xref:Microsoft.VisualStudio.Text.Tagging.ITag>, in der gleichen Weise wie Zusatzelemente definiert sind. Ein <xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag> ist ein Tag, das einen Textbereich definiert, die erweitert oder reduziert werden können. Um Gliederung zu verwenden, importieren Sie die <xref:Microsoft.VisualStudio.Text.Outlining.IOutliningManagerService> zum Abrufen einer <xref:Microsoft.VisualStudio.Text.Outlining.IOutliningManager>. Die Gliederung\-Manager listet, reduziert und erweitert die verschiedenen Blöcken, die als dargestellt werden <xref:Microsoft.VisualStudio.Text.Outlining.ICollapsible> \-Objekte und löst Ereignisse entsprechend.  
+###  <a name="outlining"></a>Gliederung  
+ Gliederung ist die Fähigkeit zum Erweitern oder reduzieren unterschiedliche Textblöcke in einer Textansicht. Gliederung ist definiert als eine Art von <xref:Microsoft.VisualStudio.Text.Tagging.ITag>, auf die gleiche Weise wie Zusatzelemente definiert sind. Ein <xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag> ist ein Tag, das einen Textbereich definiert, die erweitert oder reduziert werden können. Um Gliederung zu verwenden, müssen Sie importieren die <xref:Microsoft.VisualStudio.Text.Outlining.IOutliningManagerService> zum Abrufen einer <xref:Microsoft.VisualStudio.Text.Outlining.IOutliningManager>. Gliederungsmodus Manager zählt, reduziert und erweitert die verschiedenen Blöcke, die als dargestellt werden <xref:Microsoft.VisualStudio.Text.Outlining.ICollapsible> -Objekte und entsprechend löst Ereignisse aus.  
   
-###  <a name="mousebindings"></a> Maus\-Bindungen  
- Maus Bindungen verknüpfen Maus mit verschiedenen Befehlen. Mithilfe von Maus Bindungen definiert eine <xref:Microsoft.VisualStudio.Text.Editor.IMouseProcessorProvider>, und mithilfe von Tastenkombinationen definiert eine <xref:Microsoft.VisualStudio.Text.Editor.IKeyProcessorProvider>. Die <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewHost> automatisch alle Bindungen instanziiert und verbindet diese mit Mausereignisse in der Ansicht.  
+###  <a name="mousebindings"></a>Maus Bindungen  
+ Maus Bindungen verknüpfen mausbewegungen mit anderen Befehlen. Mithilfe von Maus Bindungen definiert ein <xref:Microsoft.VisualStudio.Text.Editor.IMouseProcessorProvider>, und tastenbindungen mithilfe von definiert ein <xref:Microsoft.VisualStudio.Text.Editor.IKeyProcessorProvider>. Die <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewHost> automatisch alle Bindungen instanziiert und verbindet diese Mausereignisse in der Ansicht.  
   
- Die <xref:Microsoft.VisualStudio.Text.Editor.IMouseProcessor> Schnittstelle enthält vorab zu verarbeiten und nach der Verarbeitung Ereignishandler für verschiedene Mausereignisse. Handle eines der Ereignisse, überschreiben Sie einige der Methoden in <xref:Microsoft.VisualStudio.Text.Editor.MouseProcessorBase>.  
+ Die <xref:Microsoft.VisualStudio.Text.Editor.IMouseProcessor> Schnittstelle enthält die vor der Verarbeitung und nachzuverarbeiten Ereignishandler für verschiedene Mausereignisse. Verarbeiten eines Ereignisses, können Sie einige der Methoden in überschreiben <xref:Microsoft.VisualStudio.Text.Editor.MouseProcessorBase>.  
   
-###  <a name="editoroperations"></a> Editor\-Vorgänge  
- Editor\-Vorgänge können zum Automatisieren der Interaktion mit dem Editor, für das Skripting oder andere Zwecke verwendet werden. Können importiert werden die <xref:Microsoft.VisualStudio.Text.Operations.IEditorOperationsFactoryService> für Access\-Vorgänge in einer bestimmten <xref:Microsoft.VisualStudio.Text.Editor.ITextView>. Dann können diese Objekte die Auswahl ändern, führen Sie einen Bildlauf der Ansicht oder verschiebt die Einfügemarke an verschiedenen Teilen der Ansicht.  
+###  <a name="editoroperations"></a>Editor-Vorgänge  
+ Editor-Vorgänge können verwendet werden, um Interaktion mit dem Editor für Skripterstellung oder für andere Zwecke zu automatisieren. Sie importieren können die <xref:Microsoft.VisualStudio.Text.Operations.IEditorOperationsFactoryService> für Access-Vorgänge in einer angegebenen <xref:Microsoft.VisualStudio.Text.Editor.ITextView>. Sie können diese Objekte klicken Sie dann die Auswahl zu ändern, führen Sie einen Bildlauf der Ansicht oder verschiebt die Einfügemarke an anderen Teilen der Ansicht.  
   
-###  <a name="intellisense"></a> IntelliSense  
- IntelliSense unterstützt Anweisungsabschluss, Signaturhilfe \(auch bekannt als ParameterInfo\), QuickInfo und Glühbirnen.  
+###  <a name="intellisense"></a>IntelliSense  
+ Es unterstützt IntelliSense-Anweisungsvervollständigung, Signaturhilfe (auch bekannt als ParameterInfo), QuickInfo und Glühbirnen.  
   
- Anweisungsabschluss bietet Popuplisten mit potenziellen Abschlüssen für Methodennamen, XML und andere Elemente zu codieren oder Markup. Im Allgemeinen wird eine Benutzeraktion eine Sitzung Abschluss aufgerufen. Die Sitzung wird die Liste der potenziellen Abschlüssen, und der Benutzer auswählen, oder schließen Sie die Liste kann. Die <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionBroker> ist verantwortlich für das Erstellen und Auslösen der <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSession>. Die <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource> berechnet die <xref:Microsoft.VisualStudio.Language.Intellisense.CompletionSet> Abschluss Elemente für die Sitzung.  
+ Anweisungsvervollständigung bietet Popup-Listen von potenziellen Abschlüssen für Methodennamen, XML-Elemente und andere Elemente zu codieren oder Markup. Im Allgemeinen wird eine Benutzeraktion eine Sitzung Abschluss aufgerufen. Die Sitzung zeigt die Liste der potenziellen Abschlüssen, und der Benutzer auswählen oder schließen Sie die Liste kann. Die <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionBroker> ist verantwortlich für das Erstellen und Auslösen der <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSession>. Die <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource> berechnet die <xref:Microsoft.VisualStudio.Language.Intellisense.CompletionSet> Abschluss Elemente für die Sitzung.  
   
-## Siehe auch  
- [Language Service und Erweiterungspunkte\-Editor](../extensibility/language-service-and-editor-extension-points.md)   
- [Imports\-Editor](../extensibility/editor-imports.md)
+## <a name="see-also"></a>Siehe auch  
+ [Sprachdienst und Erweiterungspunkten-Editor](../extensibility/language-service-and-editor-extension-points.md)   
+ [Editor-Importe](../extensibility/editor-imports.md)

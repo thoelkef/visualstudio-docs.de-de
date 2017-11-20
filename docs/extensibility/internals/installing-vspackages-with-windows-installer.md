@@ -1,63 +1,61 @@
 ---
-title: "Installieren von VSPackages mit Windows Installer | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "[Visual Studio SDK]-Installation mit Windows Installer"
-  - "Bereitstellen von VSPackages"
+title: Installieren von VSPackages mit Windows Installer | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- installation [Visual Studio SDK], with Windows Installer
+- VSPackages, deploying
 ms.assetid: 41d2c72c-0a97-4fcd-b3aa-33a8d3aa962a
-caps.latest.revision: 30
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 30
+caps.latest.revision: "30"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 5061a52de32f699bbe234f729bb4f852ee966933
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Installieren von VSPackages mit Windows Installer
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Die Integration VSPackages in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] erfordert mehr als nur Dateien auf den Computer eines Benutzers kopieren.  Das Installationsprogramm VSPackages muss ein VSPackage und ihre abhängigen Dateien installieren und registrieren und in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]integrieren.  VSPackages Integrationsfunktionen kann z. B. das Anzeigen eines Symbols für das Dialogfeld Info und Begrüßungsbildschirm [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] nutzen.  
+# <a name="installing-vspackages-with-windows-installer"></a>Installieren von VSPackages mit Windows Installer
+Integrieren Ihr VSPackage in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] erfordert mehr als nur kopieren von Dateien auf dem Computer eines Benutzers. Ihr VSPackage-Installer muss das VSPackage und seinen abhängigen Dateien installieren und registrieren und integrieren Sie sie in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Das VSPackage nutzen Integrationsfunktionen, z. B. ein Symbol angezeigt, auf die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] splash-Bildschirm und Info (Dialogfeld).  
   
- Microsoft Windows Installer\-Dateien ist die empfohlene Methode, die VSPackages zu verteilen.  Benutzerfreundliche von Windows Installer\-Paketen können auf jedes Windows\-Betriebssystem ausgeführt werden, das von [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]unterstützt wird.  Weitere Informationen finden Sie unter [Windows Installer](http://msdn.microsoft.com/de-de/121be21b-b916-43e2-8f10-8b080516d2a0).  
+ Microsoft Windows Installer-Dateien sind die empfohlene Methode, um Ihre VSPackages zu verteilen. Einfach zu verwendende Windows Installer-Pakete können auf alle von unterstützten Windows-Betriebssystem ausführen [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Weitere Informationen finden Sie unter [Windows Installer](http://msdn.microsoft.com/en-us/121be21b-b916-43e2-8f10-8b080516d2a0).  
   
-## In diesem Abschnitt  
- [Windows Installer\-Grundlagen](../../extensibility/internals/windows-installer-basics.md)  
- Bietet eine Übersicht über den Windows Installer\-Dateien bereit.  
+## <a name="in-this-section"></a>In diesem Abschnitt  
+ [Grundlagen zu Windows Installer](../../extensibility/internals/windows-installer-basics.md)  
+ Bietet eine Übersicht über die Windows Installer.  
   
- [VSPackage\-Setup\-Szenarien](../../extensibility/internals/vspackage-setup-scenarios.md)  
- Erläutert verschiedene Möglichkeiten, die Sie parallele Installationen von VSPackages und des [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]unterstützen können.  
+ [VSPackage-Setupszenarien](../../extensibility/internals/vspackage-setup-scenarios.md)  
+ Beschreibt verschiedene Möglichkeiten können Sie die Seite-an-Seite-Installationen von sowohl Ihre VSPackages unterstützen und [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
   
- [Erstellen ein Windows Installer\-Paket](../../extensibility/internals/authoring-a-windows-installer-package.md)  
- Bietet eine Übersicht über die typischen Schritte, die alle Installationsprogramme in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]VSPackages ausführen, um ordnungsgemäß zu installieren und zu integrieren.  
+ [Erstellen eines Windows Installer-Pakets](../../extensibility/internals/authoring-a-windows-installer-package.md)  
+ Bietet eine Übersicht über die typischen Schritte Installationsprogramme befolgen, um ordnungsgemäß zu installieren und Integrieren von VSPackages in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
   
  [Ermitteln von Systemanforderungen](../../extensibility/internals/detecting-system-requirements.md)  
- Beschreibt, wie ein Installationsprogramm [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] und seine Komponenten und Löschungen setup erkennen kann, wenn VSPackage\-Bedingungen nicht erfüllt werden.  
+ Beschreibt, wie ein Installationsprogramm erkennt [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] und richten Sie die Komponenten und "Abbrechen", falls VSPackage-Anforderungen nicht erfüllt werden.  
   
  [Verwaltung von Komponenten](../../extensibility/internals/component-management.md)  
- Erläutert, wie ein Installationsprogramm entwickelt, das die Integrität von früheren Versionen Produkt aufweist.  
+ Erläutert, wie ein Installationsprogramm entwickeln, die die Integrität der früheren Produktversionen beibehalten wird.  
   
- [Wählen das Installationsverzeichnis für ein VSPackage](../../extensibility/internals/choosing-the-installation-directory-for-a-vspackage.md)  
- Fasst die Optionen zum Suchen von VSPackages zusammen.  
+ [Auswählen des Installationsverzeichnisses für ein VSPackage](../../extensibility/internals/choosing-the-installation-directory-for-a-vspackage.md)  
+ Werden die Optionen zum Suchen von VSPackages zusammengefasst.  
   
- [VSPackage\-Registrierung](../../extensibility/internals/vspackage-registration.md)  
- Erläutert, wie VSPackages bei der Installation SELF Registrierung registriert werden und warum eine ungültige Idee ist.  
+ [VSPackage-Registrierung](../../extensibility/internals/vspackage-registration.md)  
+ Erläutert, wie VSPackages Zeitpunkt der Installation registriert sind und warum Self-Registrierung ist nicht sinnvoll.  
   
  [Bereitstellen von Projekttypen](../../extensibility/internals/deploying-project-types.md)  
- Erläutert, wie Sie den neuen Projekttyp aggregator für Projekttypen mit verwaltetem Code verwendet.  
+ Erläutert, wie die neuen Projekttyp Aggregator für verwalteten Code Projekttypen zur Verfügung.  
   
- [Gewusst wie: Generieren von Informationen in der Registrierung für ein Installationsprogramm](../../extensibility/internals/how-to-generate-registry-information-for-an-installer.md)  
- Erläutert, wie ein RegPkg.exe Registrierungsdaten manifest für verwaltete VSPackages zu generieren.  
+ [Gewusst wie: Generieren von Registrierungsinformationen für einen Installer](../../extensibility/internals/how-to-generate-registry-information-for-an-installer.md)  
+ Erläutert das RegPkg.exe verwenden, um ein Manifest für die Registrierung für ein verwaltetes VSPackage zu generieren.  
   
  [Befehle, die nach der Installation ausgeführt werden müssen](../../extensibility/internals/commands-that-must-be-run-after-installation.md)  
- Erläutert, wie die Befehle nach der Installation ausgeführt wird, VSPackages in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]zu integrieren.  
+ Erläutert, wie nach der Installation-Befehle zum Integrieren von VSPackages in ausführen [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
   
- [Deinstallieren ein VSPackage mit Windows Installer](../../extensibility/internals/uninstalling-a-vspackage-with-windows-installer.md)  
- Beschreibt die Schritte, die das Installationsprogramm ausgeführt werden muss, wenn Benutzer ein VSPackage deinstallieren.  
-  
-## Verwandte Abschnitte  
- [Installieren von VSPackages](../../misc/installing-vspackages.md)  
- Erläutert, wie VSPackages erstellt und installiert und wie Benutzer unterstützt, die mehrere Versionen von [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] gleichzeitig ausgeführt werden.
+ [Deinstallieren eines VSPackage mit Windows Installer](../../extensibility/internals/uninstalling-a-vspackage-with-windows-installer.md)  
+ Beschreibt die Schritte, die das Installationsprogramm ausführen muss, wenn Benutzer Ihr VSPackage deinstallieren.  

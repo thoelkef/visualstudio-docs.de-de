@@ -1,69 +1,71 @@
 ---
-title: "Erstellen von &#252;bergeordneten Containerordnern f&#252;r L&#246;sungen | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Erstellen von übergeordneten Container-Projektmappen"
-  - "Source Control-Plug-ins übergeordneten Container erstellt."
+title: "Erstellen von übergeordneten Container und Ordner für Lösungen | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- solutions, creating parent containers
+- source control plug-ins, creating parent containers
 ms.assetid: 961e68ed-2603-4479-a306-330eda2b2efa
-caps.latest.revision: 15
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 15
+caps.latest.revision: "15"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 6ea901fe4e380fd867db1c63e44bc1cb6e144feb
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Erstellen von &#252;bergeordneten Containerordnern f&#252;r L&#246;sungen
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-In der Version 1.2 des Quellcodeverwaltungs\-Plug\-In APIs, kann ein Benutzer ein einzelnes Stammelement quellcodeverwaltungs Ziel für alle Webprojekte in der Projektmappe angeben.  Dieser einzelne Stamm ist ein einheitlicher Stamm \(SUR einen super\) bezeichnet.  
+# <a name="creating-parent-container-folders-for-solutions"></a>Erstellen von übergeordneten Container und Ordner für Projektmappen
+In der Quelle Steuerelement-Plug-in-API Version 1.2 kann Benutzer ein einziger Stammknoten Quelle Steuerelement Ziel für alle Web-Projekte innerhalb der Projektmappe angeben. Diese einzelstamm wird eine Super Unified Stamm (SUR) bezeichnet.  
   
- In der Version 1.1 des Quellcodeverwaltungs\-Plug\-In API, wenn der Benutzer eine multiproject Projektmappe zur Quellcodeverwaltung hinzugefügt hat, wird der Benutzer aufgefordert, ein Webprojekt jedes Ziel für Quellcodeverwaltung festlegen.  
+ In der Quelle Steuerelement-Plug-in-API Version 1.1 Wenn der Benutzer eine Projektmappe zur quellcodeverwaltung, hinzugefügt wurde der Benutzer aufgefordert, ein Datenquellen-Steuerelement-Ziel für jedes Webprojekt anzugeben.  
   
-## Neue Funktions\-Flags  
+## <a name="new-capability-flags"></a>Neue Funktion Flags  
  `SCC_CAP_CREATESUBPROJECT`  
   
  `SCC_CAP_GETPARENTPROJECT`  
   
-## Neue Funktionen  
+## <a name="new-functions"></a>Neue Funktionen  
  [SccCreateSubProject](../../extensibility/scccreatesubproject-function.md)  
   
  [SccGetParentProjectPath](../../extensibility/sccgetparentprojectpath-function.md)  
   
- Das [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE stellt nahezu immer einen SUR\-Ordner erstellt, wenn eine Projektmappe zur Quellcodeverwaltung hinzufügen.  Insbesondere bleibt sie so in den folgenden Fällen:  
+ Die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE fast immer einen Ordner "SUR" erstellt, wenn eine Projektmappe zur quellcodeverwaltung hinzufügen. Insbesondere geschieht dies in den folgenden Fällen:  
   
 -   Das Projekt ist eine Dateifreigabe Webprojekt.  
   
--   Es gibt verschiedene Laufwerk für das Projekt und die Projektmappe.  
+-   Es gibt verschiedene Laufwerke für das Projekt und die Projektmappendatei.  
   
--   Es gibt verschiedene Freigabe für das Projekt und die Projektmappe.  
+-   Es gibt andere Freigaben für das Projekt und die Projektmappendatei.  
   
--   Projekte einzeln hinzugefügt wurden \(in einem unterliegender Quellcodeverwaltung Projektmappe\).  
+-   Projekte, die separat (in einer Projektmappe unter quellcodeverwaltung) hinzugefügt wurden.  
   
- In [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Es wird empfohlen, dass der Name für den SUR\-Ordner derselbe wie der Projektmappenname ohne Erweiterung ist.  In der folgenden Tabelle wird das Verhalten in den beiden Versionen zusammengefasst.  
+ In [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] wird vorgeschlagen, dass der Name des Ordners SUR identisch mit den Namen der Projektmappe ohne Erweiterung. In der folgenden Tabelle wird das Verhalten in beiden Versionen zusammengefasst.  
   
-|Feature|Plug\-In API Version 1.1 tSource Steuerelements|Version 1.2 des Quellcodeverwaltungs\-Plug\-In\-API|  
-|-------------|-----------------------------------------------------|---------------------------------------------------------|  
-|Fügen Sie der Projektmappe hinzufügen SCC|SccInitialize\(\)<br /><br /> SccGetProjPath\(\)<br /><br /> SccGetProjPath\(\)<br /><br /> SccOpenProject\(\)|SccInitialize\(\)<br /><br /> SccGetProjPath\(\)<br /><br /> SccCreateSubProject\(\)<br /><br /> SccCreateSubProject\(\)<br /><br /> SccOpenProject\(\)|  
-|Fügen Sie dem Projekt unterliegender Quellcodeverwaltung Projektmappe hinzu|SccGetProjPath\(\)<br /><br /> OpenProject\(\)|SccGetParentProjectPath\(\)<br /><br /> SccOpenProject\(\) **Note:**  Visual Studio wird davon ausgegangen, dass eine Projektmappe ein unmittelbares Unterelement des SUR ist.|  
+|Funktion|tSource Steuerelement-Plug-in-API-Version 1.1|Quellcodeverwaltung-Plug-in-API-Version 1.2|  
+|-------------|----------------------------------------------|---------------------------------------------|  
+|Hinzufügen von Projektmappen mit Quellcodeverwaltung|SccInitialize()<br /><br /> SccGetProjPath()<br /><br /> SccGetProjPath()<br /><br /> SccOpenProject()|SccInitialize()<br /><br /> SccGetProjPath()<br /><br /> SccCreateSubProject()<br /><br /> SccCreateSubProject()<br /><br /> SccOpenProject()|  
+|Projekt Projektmappe unter quellcodeverwaltung hinzufügen|SccGetProjPath()<br /><br /> OpenProject()|SccGetParentProjectPath()<br /><br /> SccOpenProject() **Hinweis:** Visual Studio wird davon ausgegangen, dass ein direkt untergeordnetes Element von der sur funktioniert|  
   
-## Beispiele  
- Die folgende Tabelle enthält zwei Beispiele.  In beiden Fällen wird der Speicherort des Ziels für einen Benutzer [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] für die Projektmappe unter Quellcodeverwaltung aufgefordert, bis *user\_choice* als Ziel angegeben ist. Wenn das user\_choice angegeben wird, werden die Projektmappe und zwei Projekte hinzugefügt, ohne den Benutzer zur Eingabe aufzufordern auf Quellcodeverwaltung.  
+## <a name="examples"></a>Beispiele  
+ Die folgende Tabelle enthält zwei Beispiele. In beiden Fällen die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Benutzer wird aufgefordert, für einen Zielspeicherort für die Projektmappe unter quellcodeverwaltung, bis die *User_choice* als Ziel angegeben ist. Wenn die User_choice angegeben wird, werden die Projektmappe und zwei Projekte hinzugefügt, ohne eine benutzeraufforderung Source Control Ziele.  
   
-|Projektmappe|Klicken Sie auf Speicherorte auf einem Datenträger|standardmäßigen Struktur der Datenbank|  
-|------------------|--------------------------------------------------------|--------------------------------------------|  
-|sln1.sln<br /><br /> Web1<br /><br /> Web2|C:\\Solutions\\sln1<br /><br /> C:\\Inetpub\\wwwroot\\Web1<br /><br /> wwwroot$ \\. \\ \\ Server \\ web2|$*user\_choice*\/sln1<br /><br /> $*user\_choice*\/C\/Web1<br /><br /> $*user\_choice*\/Web2|  
-|sln1.sln<br /><br /> Web1<br /><br /> Win1|C:\\Solutions\\sln1<br /><br /> D:\\Inetpub\\wwwroot\\Web1<br /><br /> C:\\solutions\\sln1\\Win1|$*user\_choice*\/sln1<br /><br /> $*user\_choice*\/D\/web1<br /><br /> $*user\_choice*\/sln1\/win1|  
+|Projektmappe enthält|Auf dem Datenträger|Datenbank-Standardstruktur|  
+|-----------------------|-----------------------|--------------------------------|  
+|sln1.sln<br /><br /> Web1<br /><br /> WEB2|C:\Solutions\sln1<br /><br /> C:\Inetpub\wwwroot\Web1<br /><br /> \\\server\wwwroot$\web2|$/*User_choice*/sln1<br /><br /> $/*User_choice*  /C/Web1<br /><br /> $/*User_choice*/Web2|  
+|sln1.sln<br /><br /> Web1<br /><br /> Win1|C:\Solutions\sln1<br /><br /> D:\Inetpub\wwwroot\Web1<br /><br /> C:\solutions\sln1\Win1|$/*User_choice*/sln1<br /><br /> $/*User_choice*  /D/web1<br /><br /> $/*User_choice*  /sln1/win1|  
   
- Der SUR\-Ordner und Unterordner werden erstellt, unabhängig davon, ob der Vorgang abgebrochen wurde oder aufgrund eines Fehlers fehlgeschlagen ist.  Sie werden nicht automatisch im Löschen oder in Fehlerzuständen entfernt.  
+ Die SUR-Ordner und Unterordner werden erstellt, unabhängig davon, ob der Vorgang abgebrochen wird oder aufgrund eines Fehlers fehlschlägt. Sie werden nicht automatisch in "Abbrechen" oder fehlerbedingungen entfernt.  
   
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] führt zu Verhalten der Version 1.1, wenn das Quellcodeverwaltungs\-Plug\-In nicht `SCC_CAP_CREATESUBPROJECT` und Flags für `SCC_CAP_GETPARENTPROJECT`\-Funktion zurückgibt.  Darüber hinaus können Benutzer von [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] auswählen, um das Verhalten der Version 1.1 wiederherzustellen, indem sie den Wert der folgenden Schlüssel zum steht " dword: 00000001:  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]standardmäßig auf Version 1.1-Verhalten, wenn die Datenquellen-Steuerelement-Plug-in nicht zurückgibt `SCC_CAP_CREATESUBPROJECT` und `SCC_CAP_GETPARENTPROJECT` Funktion Flags. Darüber hinaus Benutzern [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] können, um das Verhalten der Version 1.1 wiederherzustellen, indem Sie den Wert des folgenden Schlüssels auf DWORD: 00000001 auswählen:  
   
- \[HKEY\_CURRENT\_USER \\ Software \\ Microsoft \\ VisualStudio \\ 8.0 \\ SourceControl\] " DoNotCreateSolutionRootFolderInSourceControl „\=dword: 00000001  
+ [HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl] "DoNotCreateSolutionRootFolderInSourceControl" = DWORD: 00000001  
   
-## Siehe auch  
- [Was ist neu in Source Control\-Plug\-in API\-Version 1.2](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)
+## <a name="see-also"></a>Siehe auch  
+ [Neuigkeiten in API-Version 1.2 des Quellcodeverwaltungs-Plug-Ins](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

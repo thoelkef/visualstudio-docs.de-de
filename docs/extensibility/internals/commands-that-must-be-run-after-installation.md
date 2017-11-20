@@ -1,85 +1,86 @@
 ---
-title: "Befehle, die nach der Installation ausgef&#252;hrt werden m&#252;ssen | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "nach Abschluss der Installation Befehle"
+title: "Befehle, die nach der Installation ausgeführt werden müssen | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: post-install commands
 ms.assetid: c9601f2e-2c6e-4da9-9a6e-e707319b39e2
-caps.latest.revision: 22
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 22
+caps.latest.revision: "22"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 4fef2c76364c1ca1398aef3b94226e7a9a365cf1
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Befehle, die nach der Installation ausgef&#252;hrt werden m&#252;ssen
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Wenn Sie die Erweiterung über eine MSI\-Datei bereitstellen, müssen Sie ausführen `Devenv/Setup` als Teil der Installation in der Reihenfolge für Visual Studio Ihre Erweiterungen zu ermitteln.  
+# <a name="commands-that-must-be-run-after-installation"></a>Befehle, die nach der Installation ausgeführt werden muss
+Wenn Sie die Erweiterung mithilfe einer MSI-Datei bereitstellen, müssen Sie ausführen `devenv /setup` im Rahmen der Installation in der Reihenfolge für Visual Studio, um Ihre Erweiterungen zu ermitteln.  
   
 > [!NOTE]
->  Die Informationen in diesem Thema gelten für Suchen DevEnv mit Visual Studio 2008 und früheren Versionen von. Informationen zum Ermitteln von DevEnv mit einer neueren Version von Visual Studio finden Sie unter [Ermitteln von Systemanforderungen](../../extensibility/internals/detecting-system-requirements.md).  
+>  Die Informationen in diesem Thema gilt für DevEnv mit Visual Studio 2008 und früheren Versionen zu suchen. Weitere Informationen zum Ermitteln von DevEnv mit höheren Versionen von Visual Studio finden Sie unter [Ermitteln von Systemanforderungen](../../extensibility/internals/detecting-system-requirements.md).  
   
-## Suchen von devenv.exe  
- Jede Version finden Sie devenv.exe aus der Registrierung Werte, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Installationsprogramme schreiben, verwenden die RegLocator\-Tabelle und die AppSearch\-Tabelle Registrierungswerte als Eigenschaften zu speichern. Weitere Informationen finden Sie unter [Ermitteln von Systemanforderungen](../../extensibility/internals/detecting-system-requirements.md).  
+## <a name="finding-devenvexe"></a>Suchen von devenv.exe  
+ Sie können jede Version finden devenv.exe aus der Registrierung zu Werten, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Installationsprogramme zu schreiben, mit der RegLocator-Tabelle und AppSearch Tabelle zum Speichern der Registrierungswerte als Eigenschaften. Weitere Informationen finden Sie unter [Ermitteln von Systemanforderungen](../../extensibility/internals/detecting-system-requirements.md).  
   
-### RegLocator Tabellenzeilen devenv.exe aus unterschiedlichen Versionen von Visual Studio zu suchen.  
+### <a name="reglocator-table-rows-to-locate-devenvexe-from-different-versions-of-visual-studio"></a>RegLocator Tabellenzeilen um devenv.exe aus verschiedenen Versionen von Visual Studio zu suchen.  
   
-|Signature\_|Stammverzeichnis|Taste|Name|Typ|  
-|-----------------|----------------------|-----------|----------|---------|  
-|RL\_DevenvExe\_2002|2|SOFTWARE\\Microsoft\\VisualStudio\\7.0\\Setup\\VS|EnvironmentPath|2|  
-|RL\_DevenvExe\_2003|2|SOFTWARE\\Microsoft\\VisualStudio\\7.1\\Setup\\VS|EnvironmentPath|2|  
-|RL\_DevenvExe\_2005|2|SOFTWARE\\Microsoft\\VisualStudio\\8.0\\Setup\\VS|EnvironmentPath|2|  
-|RL\_DevenvExe\_2008|2|SOFTWARE\\Microsoft\\VisualStudio\\9.0\\Setup\\VS|EnvironmentPath|2|  
+|Signature_|Stamm|Key|Name|Typ|  
+|-----------------|----------|---------|----------|----------|  
+|RL_DevenvExe_2002|2|SOFTWARE\Microsoft\VisualStudio\7.0\Setup\VS|EnvironmentPath|2|  
+|RL_DevenvExe_2003|2|SOFTWARE\Microsoft\VisualStudio\7.1\Setup\VS|EnvironmentPath|2|  
+|RL_DevenvExe_2005|2|SOFTWARE\Microsoft\VisualStudio\8.0\Setup\VS|EnvironmentPath|2|  
+|RL_DevenvExe_2008|2|SOFTWARE\Microsoft\VisualStudio\9.0\Setup\VS|EnvironmentPath|2|  
   
-### AppSearch Tabellenzeilen für die entsprechende RegLocator Tabellenzeilen  
+### <a name="appsearch-table-rows-for-corresponding-reglocator-table-rows"></a>AppSearch Tabellenzeilen für die entsprechende RegLocator Tabellenzeilen  
   
-|Eigenschaft|Signature\_|  
-|-----------------|-----------------|  
-|DEVENV\_EXE\_2002|RL\_DevenvExe\_2002|  
-|DEVENV\_EXE\_2003|RL\_DevenvExe\_2003|  
-|DEVENV\_EXE\_2005|RL\_DevenvExe\_2005|  
-|DEVENV\_EXE\_2008|RL\_DevenvExe\_2008|  
+|Eigenschaft|Signature_|  
+|--------------|-----------------|  
+|DEVENV_EXE_2002|RL_DevenvExe_2002|  
+|DEVENV_EXE_2003|RL_DevenvExe_2003|  
+|DEVENV_EXE_2005|RL_DevenvExe_2005|  
+|DEVENV_EXE_2008|RL_DevenvExe_2008|  
   
- Visual Studio\-Installationsprogramm schreibt z. B. den Wert des Registrierungsschlüssels, der **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\VisualStudio\\9.0\\Setup\\VS\\EnvironmentPath** als **C:\\VS2008\\Common7\\IDE\\devenv.exe**, einen vollständigen Pfad der ausführbaren Datei, die das Installationsprogramm ausführen muss.  
+ Visual Studio-Installationsprogramm schreibt z. B. den Registrierungswert von **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0\Setup\VS\EnvironmentPath** als **C:\VS2008\Common7\IDE\devenv.exe**, einen vollständigen Pfad zur ausführbaren Datei muss das Installationsprogramm zu starten.  
   
- **Hinweis** da RegLocator Typspalte 2 ist, ist es nicht notwendig, die zusätzliche Versionsinformationen in der Signatur Tabelle angeben.  
+ **Hinweis** , da die RegLocator Type-Spalte 2 ist, ist es nicht notwendig, die zusätzliche Versionsinformationen in der Signatur Tabelle angeben.  
   
-## Ausführen von devenv.exe  
- Nach der AppSearch Standardaktionen im Installationsprogramm ausgeführt wird, hat jede Eigenschaft in der Tabelle AppSearch Wert verweist auf die Datei "devenv.exe" für die entsprechende Version von Visual Studio. Wenn der angegebene Registrierungswert nicht vorhanden sind –, da diese Version von Visual Studio nicht installiert ist – die angegebene Eigenschaft ist festgelegt auf Null.  
+## <a name="running-devenvexe"></a>Devenv.exe ausgeführt  
+ Nach der AppSearch Standardaktionen im Installationsprogramm ausgeführt wird, hat jede Eigenschaft in der Tabelle AppSearch einen Wert verweist auf die Datei "devenv.exe" für die entsprechende Version von Visual Studio. Wenn keines der angegebenen Registrierungswerte nicht vorhanden sind, da diese Version von Visual Studio nicht installiert ist – die angegebene Eigenschaft festgelegt ist auf Null.  
   
- Windows Installer unterstützt das Ausführen einer ausführbaren Datei, die auf eine Eigenschaft durch benutzerdefinierte Aktion geben Sie 50 ein. Die benutzerdefinierte Aktion aufzunehmen, die im Skript Ausführungsoptionen MsidbCustomActionTypeInScript \(1024\) und MsidbCustomActionTypeCommit \(512\), um sicherzustellen, dass das VSPackage erfolgreich installiert wurde, bevor Sie dessen Integration in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Weitere Informationen finden Sie unter CustomAction\-Tabelle und die benutzerdefinierte Aktion In\-Script Execution Options.  
+ Windows Installer-unterstützt, die Ausführung einer ausführbaren Datei, die auf der eine Eigenschaft zeigt über die benutzerdefinierte Aktion 50 eingeben. Die benutzerdefinierte Aktion aufzunehmen, die im Skript Ausführungsoptionen MsidbCustomActionTypeInScript (1024) und MsidbCustomActionTypeCommit (512), um sicherzustellen, dass das VSPackage erfolgreich installiert wurde, vor der Integration in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Weitere Informationen finden Sie unter CustomAction-Tabelle und die benutzerdefinierte Aktion im Skript Ausführungsoptionen.  
   
- Benutzerdefinierte Aktionen vom Typ 50 angeben die Eigenschaft, die die ausführbare Datei als Wert für die Quellspalte und die Befehlszeilenargumente in der Zielspalte.  
+ Benutzerdefinierte Aktionen vom Typ 50 Geben Sie die Eigenschaft, die die ausführbare Datei als Wert für die Quellspalte und die Befehlszeilenargumente in der Zielspalte enthält.  
   
-### CustomAction Tabellenzeilen devenv.exe ausgeführt.  
+### <a name="customaction-table-rows-to-run-devenvexe"></a>CustomAction Tabellenzeilen devenv.exe ausgeführt.  
   
 |Aktion|Typ|Quelle|Ziel|  
-|------------|---------|------------|----------|  
-|CA\_RunDevenv2002|1586|DEVENV\_EXE\_2002|\/ Setup|  
-|CA\_RunDevenv2003|1586|DEVENV\_EXE\_2003|\/ Setup|  
-|CA\_RunDevenv2005|1586|DEVENV\_EXE\_2005|\/ Setup|  
-|CA\_RunDevenv2008|1586|DEVENV\_EXE\_2008|\/ Setup|  
+|------------|----------|------------|------------|  
+|CA_RunDevenv2002|1586|DEVENV_EXE_2002|/ Setup|  
+|CA_RunDevenv2003|1586|DEVENV_EXE_2003|/ Setup|  
+|CA_RunDevenv2005|1586|DEVENV_EXE_2005|/ Setup|  
+|CA_RunDevenv2008|1586|DEVENV_EXE_2008|/ Setup|  
   
- Benutzerdefinierte Aktionen müssen in der Tabelle InstallExecuteSequence Planung für die Ausführung bei der Installation erstellt werden. Verwenden Sie die entsprechende Eigenschaft in jeder Zeile der Spalte Bedingung zu verhindern, dass die benutzerdefinierte Aktion ausgeführt werden, wenn diese Version von [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] nicht auf dem System installiert ist.  
+ Benutzerdefinierte Aktionen müssen in die Tabelle InstallExecuteSequence so planen Sie sie für die Ausführung bei der Installation erstellt werden. Verwenden Sie die entsprechende Eigenschaft in jeder Zeile der Spalte Bedingung, um zu verhindern, dass die benutzerdefinierte Aktion ausgeführt werden, wenn diese Version von [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ist nicht auf dem System installiert.  
   
 > [!NOTE]
->  `Null` Auswerten von Eigenschaften zu `False` beim bedingt verwendet.  
+>  `Null`Eigenschaften, die zum Auswerten `False` bei der Verwendung in Bedingungen.  
   
- Der Wert des Sequence\-Spalte für jede benutzerdefinierte Aktion hängt von anderen Sequence\-Werte in der Windows Installer\-Paket. Sequenz\-Schlüsselwerte sein, daß devenv.exe benutzerdefinierten Aktionen ausführen als möglichst unmittelbar vor der Standardaktion InstallFinalize schließen.  
+ Der Wert der Sequence-Spalte für jede benutzerdefinierte Aktion hängt von anderen Sequence-Werte in der Windows Installer-Paket. Sequenzwerte sollte sein, sodass die ausführende devenv.exe für benutzerdefinierte Aktionen als möglich, direkt vor dem die Standardaktionen InstallFinalize schließen.  
   
-### Tabelle InstallExecuteSequence devenv.exe benutzerdefinierten Aktionen zu planen.  
+### <a name="installexecutesequence-table-to-schedule-the-devenvexe-custom-actions"></a>InstallExecuteSequence Tabelle so planen Sie die benutzerdefinierten devenv.exe-Aktionen  
   
 |Aktion|Bedingung|Sequenz|  
-|------------|---------------|-------------|  
-|CA\_RunDevenv2002|DEVENV\_EXE\_2002|6602|  
-|CA\_RunDevenv2003|DEVENV\_EXE\_2003|6603|  
-|CA\_RunDevenv2005|DEVENV\_EXE\_2005|6605|  
-|CA\_RunDevenv2008|DEVENV\_EXE\_2008|6608|  
+|------------|---------------|--------------|  
+|CA_RunDevenv2002|DEVENV_EXE_2002|6602|  
+|CA_RunDevenv2003|DEVENV_EXE_2003|6603|  
+|CA_RunDevenv2005|DEVENV_EXE_2005|6605|  
+|CA_RunDevenv2008|DEVENV_EXE_2008|6608|  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Installieren von VSPackages mit Windows Installer](../../extensibility/internals/installing-vspackages-with-windows-installer.md)

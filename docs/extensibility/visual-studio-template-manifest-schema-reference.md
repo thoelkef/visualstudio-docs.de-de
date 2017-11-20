@@ -1,5 +1,5 @@
 ---
-title: Visual Studio-Vorlage Manifest Schemareferenz | Microsoft-Dokumentation
+title: Visual Studio-Vorlage Manifest Schemareferenz | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -7,36 +7,23 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: bc7d0a81-0df5-41a9-a912-1b30e5da1d13
-caps.latest.revision: 3
+caps.latest.revision: "3"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 512014c5070e4314ad2b7d0e8c5c404c43f32cd9
-ms.openlocfilehash: 0f4abf286dc8b1cf00e47468ddaa4831747a059d
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: f714120c6f5dced4760bb14cad1e53a794030a19
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="visual-studio-template-manifest-schema-reference"></a>Referenz zu Visual Studio-Vorlage Manifestschema
-Dieses Schema beschreibt das Format der Visual Studio-Manifest (.vstman) Vorlagendateien für Visual Studio-Projekt oder Element-Vorlagen generiert und den Speicherort und andere relevante Informationen über die Vorlage beschreibt.  
+# <a name="visual-studio-template-manifest-schema-reference"></a>Manifest Visual Studio-Schemareferenz
+Dieses Schema beschreibt das Format von der Visual Studio-Manifest (.vstman) Vorlagendateien für Visual Studio Projekt- oder Elementvorlagen generiert und beschreibt den Speicherort und andere relevante Informationen über die Vorlage.  
   
- : Da separate Element und Projektverzeichnisse Vorlage verfügbar sind, sollte ein Manifest nie eine Kombination von Element- und Projektvorlagen enthalten.  
+ : Da separates Element und Vorlage Projektverzeichnisse vorhanden sind, sollte ein Manifest nie eine Mischung aus Vorlagen für Element und Projekt haben.  
   
 > [!IMPORTANT]
->  Dieses Manifest ist verfügbar in Visual Studio 2017 ab.  
+>  Dieses Manifest steht in Visual Studio 2017 ab.  
   
 ## <a name="vstemplatemanifest-element"></a>VSTemplateManifest-Element  
  Das Stammelement des Manifests.  
@@ -45,7 +32,7 @@ Dieses Schema beschreibt das Format der Visual Studio-Manifest (.vstman) Vorlage
   
 -   **Version**: eine Zeichenfolge, die die Version des Manifests Vorlage darstellt. Erforderlich.  
   
--   **Gebietsschema**: eine Zeichenfolge, die das Gebietsschema oder Gebietsschemas des Manifests Vorlage darstellt. Gebietsschemawert gilt für alle Vorlagen, daher müssen Sie ein eigenes Manifest für jedes Gebietsschema verwenden. Optional.  
+-   **Gebietsschema**: eine Zeichenfolge, die das Gebietsschema oder die Gebietsschemas des Manifests Vorlage darstellt. Die Gebietsschemawert gilt für alle Vorlagen, müssen Sie ein separates Manifest für jedes Gebietsschema verwenden. Dies ist optional.  
   
 ### <a name="child-elements"></a>Untergeordnete Elemente  
   
@@ -57,14 +44,14 @@ Dieses Schema beschreibt das Format der Visual Studio-Manifest (.vstman) Vorlage
  Keine  
   
 ## <a name="vstemplatecontainer"></a>VSTemplateContainer  
- Der Container der Vorlage manifest Elemente. Ein Manifest besitzt eine Vorlagencontainers für jede Vorlage, die sie definiert.  
+ Der Container der Vorlage manifest Elemente. Ein Manifest ist eine Vorlage Container für jede Vorlage, die sie definiert.  
   
 ### <a name="attributes"></a>Attribute  
- **VSTemplateType** : ein String-Wert, der den Typ der Vorlage angibt (`"Project"`, `"Item"`, oder `"ProjectGroup"`). Erforderlich  
+ **VSTemplateType** : ein Zeichenfolgenwert, der den Typ der Vorlage angibt (`"Project"`, `"Item"`, oder `"ProjectGroup"`). Erforderlich  
   
 ### <a name="child-elements"></a>Untergeordnete Elemente  
   
--   **RelativePathOnDisk**: der relative Pfad der Vorlagendatei auf dem Datenträger. Dieser Speicherort definiert auch die Platzierung der Vorlage in der Struktur der Vorlage angezeigt, der **neues Projekt** oder **neues Element** Dialogfeld. Für Vorlagen, die als ein Verzeichnis und die einzelnen Dateien bereitgestellt werden bezieht sich dieser Pfad zum Verzeichnis mit die Vorlagendateien. Für Vorlagen, die als ZIP-Datei bereitgestellt werden sollte dieser Pfad den Pfad zu der ZIP-Datei.  
+-   **RelativePathOnDisk**: der relative Pfad der Vorlagendatei auf dem Datenträger. Hier definiert die Platzierung der Vorlage auch in der Struktur der Vorlage angezeigt, der **neues Projekt** oder **neues Element** Dialogfeld. Für Vorlagen, die als ein Verzeichnis und einzelne Dateien bereitgestellt werden bezieht sich dieser Pfad zum Verzeichnis mit der Dateien. Für Vorlagen, die als ZIP-Datei bereitgestellt werden sollten diesen Pfad den Pfad zur ZIP-Datei sein.  
   
 -   **VSTemplateHeader** : ein [TemplateData](../extensibility/templatedata-element-visual-studio-templates.md) Element, das den Header beschreibt.  
   
@@ -72,34 +59,34 @@ Dieses Schema beschreibt das Format der Visual Studio-Manifest (.vstman) Vorlage
  **VSTemplateManifest**  
   
 ## <a name="vstemplatedir"></a>VSTemplateDir  
- Beschreibt das Verzeichnis, in dem die Vorlage befindet. Ein Manifest kann mehrere enthalten **VSTemplateDir** Einträge lokalisierten Namen und Sortierreihenfolge für Verzeichnisse ihre Darstellung in der Struktur der Vorlage Kategorie angeben.  
+ Beschreibt das Verzeichnis, in dem die Vorlage befindet. Ein Manifest kann mehrere enthalten **VSTemplateDir** Einträge zum Bereitstellen von lokalisierten und die Sortierreihenfolge für Verzeichnisse Reihenfolge ihrer Darstellung in der Vorlage Kategoriestruktur steuern.  
   
- Aufgrund ihrer Konstruktion **VSTemplateDir** Einträge sollten nur in nicht um ein Gebietsschema angegebenen Manifeste angezeigt werden.  
+ Aufgrund ihrer Konstruktion **VSTemplateDir** Einträge sollte nur in nicht-Gebietsschema angegebenen Manifeste angezeigt werden.  
   
 ### <a name="attributes"></a>Attribute  
  Keine.  
   
 ### <a name="child-elements"></a>Untergeordnete Elemente  
   
--   **RelativePath**: der Pfad der Vorlage. Daher zuerst für alle Manifeste gewinnen kann nur einen Eintrag pro Pfad sein.  
+-   **RelativePath**: der Pfad der Vorlage. Damit die erste Vorlage für alle Manifeste gewinnen kann nur ein Eintrag pro Pfad sein.  
   
--   **LocalizedName**: ein **NameDescriptionIcon** Element, das den lokalisierten Namen angibt. Optional.  
+-   **LocalizedName**: ein **NameDescriptionIcon** Element, das den lokalisierten Namen angibt. Dies ist optional.  
   
--   **SortOrder** : eine Zeichenfolge, die die Sortierreihenfolge angibt. Optional.  
+-   **SortOrder** : eine Zeichenfolge, die Sortierreihenfolge angibt. Dies ist optional.  
   
--   **ParentFolderOverrideName**: der überschriebenen Name des übergeordneten Ordners. Optional. Dieses Element verfügt über eine **Namen** Attribut, das einen Zeichenfolgenwert, der den Namen angibt.  
+-   **ParentFolderOverrideName**: den außer Kraft gesetzten Namen des übergeordneten Ordners. Dies ist optional. Dieses Element verfügt über eine **Namen** -Attribut, das ist ein Zeichenfolgenwert, der den Namen angibt.  
   
 ### <a name="parent-element"></a>Parent-Element  
  **VSTemplateManifest**  
   
 ## <a name="namedescriptionicon"></a>NameDescriptionIcon  
- Gibt den Namen und die Beschreibung möglicherweise für lokalisierte Vorlagen. Finden Sie unter **LocalizedName** oben.  
+ Gibt den Name und Beschreibung, die möglicherweise für lokalisierte Vorlagen. Finden Sie unter **LocalizedName** oben.  
   
 ### <a name="attributes"></a>Attribute  
   
--   **Paket**: ein String-Wert, der das Paket angibt. Optional.  
+-   **Paket**: ein Zeichenfolgenwert, der das Paket angibt. Dies ist optional.  
   
--   **ID**: ein String-Wert, der angibt, die-ID. Optional.  
+-   **ID**: ein Zeichenfolgenwert, der angibt, die-ID. Dies ist optional.  
   
 ### <a name="child-elements"></a>Untergeordnete Elemente  
  Keine  
@@ -108,7 +95,7 @@ Dieses Schema beschreibt das Format der Visual Studio-Manifest (.vstman) Vorlage
  **LocalizedName**  
   
 ## <a name="examples"></a>Beispiele  
- Im folgenden ist ein Beispiel für eine Vorlage .vstman-Projektdatei.  
+ Im folgenden ist ein Beispiel einer Vorlage .vstman-Projektdatei.  
   
 ```xml  
 <VSTemplateManifest Version="1.0" Locale="1033" xmlns="http://schemas.microsoft.com/developer/vstemplatemanifest/2015">  
@@ -134,7 +121,7 @@ Dieses Schema beschreibt das Format der Visual Studio-Manifest (.vstman) Vorlage
   
 ```  
   
- Im folgenden ist ein Beispiel für eine Vorlagendatei .vstman eines Elements.  
+ Im folgenden ist ein Beispiel für ein Element .vstman Vorlagendatei.  
   
 ```  
 VSTemplateManifest Version="1.0" Locale="1033" xmlns="http://schemas.microsoft.com/developer/vstemplatemanifest/2015">  

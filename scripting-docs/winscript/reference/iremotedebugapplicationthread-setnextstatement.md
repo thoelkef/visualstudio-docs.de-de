@@ -1,27 +1,30 @@
 ---
-title: "IRemoteDebugApplicationThread::SetNextStatement | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IRemoteDebugApplicationThread::SetNextStatement | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IRemoteDebugApplicationThread.SetNextStatement
 apilocation: pdm.dll
-helpviewer_keywords: 
-  - "IRemoteDebugApplicationThread::SetNextStatement"
+helpviewer_keywords: IRemoteDebugApplicationThread::SetNextStatement
 ms.assetid: 356766da-f7b7-4e8d-b4f3-2ab8da0609b8
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: fb23fa643f9a2333e17239a74d0da2f75e1ea791
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# IRemoteDebugApplicationThread::SetNextStatement
-Kraftausführung, um der Vervollständigung so fortzusetzen, wie möglich an den angegebenen Codekontext, im Kontext des angegebenen Frames.  
+# <a name="iremotedebugapplicationthreadsetnextstatement"></a>IRemoteDebugApplicationThread::SetNextStatement
+Erzwingt die Ausführung so nah wie möglich an den Kontext angegebenen Code im Kontext des angegebenen Rahmens ermöglicht.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 HRESULT SetNextStatement(  
@@ -30,22 +33,22 @@ HRESULT SetNextStatement(
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `pStackFrame`  
- \[in\] Das Stapelrahmenobjekt.  Dieses Argument kann NULL sein, das den aktuellen Stapelrahmen bedeutet sollte verwendet werden.  
+ [in] Die Stack-Frame-Objekts. Dieses Argument kann NULL sein; das bedeutet, dass der aktuelle Stapelrahmen verwendet werden soll.  
   
  `pCodeContext`  
- \[in\] Der Codekontext.  Dieses Argument kann NULL sein, das den aktuellen Codekontext bedeutet sollte verwendet werden.  
+ [in] Der Codekontext. Dieses Argument kann NULL sein; das bedeutet, dass der aktuelle Codekontext verwendet werden soll.  
   
-## Rückgabewert  
- Die Methode gibt ein `HRESULT` zurück.  Zu den möglichen Werten zählen, aber nicht zu, die in der folgenden Tabelle beschränkt.  
+## <a name="return-value"></a>Rückgabewert  
+ Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
   
-|Wert|Description|  
-|----------|-----------------|  
+|Wert|Beschreibung|  
+|-----------|-----------------|  
 |`S_OK`|Die Methode war erfolgreich.|  
   
-## Hinweise  
- Diese Methode erzwingt Ausführung, um Abschluss so fortzusetzen, wie möglich an den Codekontext, der von `pCodeContext`, im Kontext der Rahmen angegeben wird, die von `pStackFrame` angegeben werden.  Jeder dieser Argumente ist möglicherweise `NULL` und stellt den aktuellen Frame oder den Kontext dar.  
+## <a name="remarks"></a>Hinweise  
+ Diese Methode erzwingt die Ausführung so nah wie möglich an den Codekontext gemäß fortgesetzt `pCodeContext`, im Kontext des Frames gemäß `pStackFrame`. Von diesen Argumenten ist möglicherweise `NULL`, den aktuellen Frame oder Kontext darstellt.  
   
-## Siehe auch  
- [IRemoteDebugApplicationThread\-Schnittstelle](../../winscript/reference/iremotedebugapplicationthread-interface.md)
+## <a name="see-also"></a>Siehe auch  
+ [IRemoteDebugApplicationThread-Schnittstelle](../../winscript/reference/iremotedebugapplicationthread-interface.md)

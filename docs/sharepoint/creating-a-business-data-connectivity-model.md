@@ -1,76 +1,78 @@
 ---
-title: "Erstellen eines Business Data Connectivity-Modells"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "BDC [SharePoint-Entwicklung in Visual Studio], Erstellen eines Modells"
-  - "Business Data Connectivity-Dienst [SharePoint-Entwicklung in Visual Studio], Erstellen eines Modells"
-  - "Business Data Connectivity-Dienst [SharePoint-Entwicklung in Visual Studio], Modell"
-  - "SharePoint-Entwicklung in Visual Studio, Business Data Connectivity-Dienst"
+title: Erstellen eines Business Data Connectivity-Modells | Microsoft Docs
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- VB
+- CSharp
+helpviewer_keywords:
+- Business Data Connectivity service [SharePoint development in Visual Studio], model
+- BDC [SharePoint development in Visual Studio], creating a model
+- Business Data Connectivity service [SharePoint development in Visual Studio], creating a model
+- SharePoint development in Visual Studio, Business Data Connectivity service
 ms.assetid: 19fd12d0-a51a-4da4-98ac-918542e84507
-caps.latest.revision: 24
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 23
+caps.latest.revision: "24"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 6661ca48321b1a19b5076beceb435e1f0c798ee0
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Erstellen eines Business Data Connectivity-Modells
-  Sie können ein Business Data Connectivity \(BDC\)\-Modell erstellen oder mit Visual Studio ein vorhandenes BDC\-Modell anpassen.  Jedes SharePoint\-Projekt kann jeweils nur ein Modell enthalten.  Weitere Informationen finden Sie unter [Integrieren von Geschäftsdaten in SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md).  
+# <a name="creating-a-business-data-connectivity-model"></a>Erstellen eines Business Data Connectivity-Modells
+  Sie können ein Business Data Connectivity (BDC)-Modell erstellen oder Anpassen ein vorhandenes BDC-Modell mithilfe von Visual Studio. Jede SharePoint-Projekt kann nur ein Modell enthalten. Weitere Informationen finden Sie unter [Integrieren von Geschäftsdaten in SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md).  
   
-## Erstellen eines neuen Modells  
- Wenn Sie ein neues Modell erstellen möchten, erstellen Sie ein Projekt vom Typ **Business Data Connectivity\-Modell**, oder fügen Sie einem **leeren SharePoint\-Projekt** ein Element **Business Data Connectivity\-Modell** hinzu.  
-  
-> [!NOTE]  
->  Auf Ihrem Computer muss [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] installiert sein.  
-  
- Visual Studio fügt dem Projekt einen Ordner hinzu.  Dieser Ordner weist den Namen auf, den Sie im Dialogfeld **Neues Element hinzufügen** für das Element **Business Data Connectivity\-Modell** angeben.  Wenn Sie ein neues Projekt vom Typ **Business Data Connectivity\-Modell** erstellen, weist Visual Studio dem Ordner den Namen **BdcModel1** zu.  
-  
- Visual Studio fügt dem neuen Ordner die folgenden Dateien hinzu:  
-  
-|Datei|**Beschreibung**|  
-|-----------|----------------------|  
-|Modelldefinitionsdatei|Enthält XML, das die Entitäten, Methoden, LOB\-Systemobjekte \(Line\-of\-Business\) und andere Metadaten definiert, die das Modell beschreiben.<br /><br /> Ändern Sie die Metadaten in dieser Datei mit dem BDC\-Designer, dem **BDC\-Explorer**, dem Fenster **BDC\-Methodendetails** und dem Fenster **Eigenschaften**.|  
-|Codedatei für den Entitätsdienst|Enthält Methoden, die Instanzen der Standardentität abrufen, aktualisieren und löschen.|  
-  
- Um die Eigenschaften einer Entität zu definieren, bearbeiten Sie die Entitätscodedatei.  Weitere Informationen finden Sie unter [Gewusst wie: Hinzufügen einer Entität zu einem Modell](../sharepoint/how-to-add-an-entity-to-a-model.md).  
-  
- Um Instanzen einer Entität abzurufen, zu aktualisieren und zu löschen, fügen Sie der Codedatei des Entitätsdiensts Code hinzu.  Weitere Informationen finden Sie unter [Entwerfen eines Business Data Connectivity-Modells](../sharepoint/designing-a-business-data-connectivity-model.md).  
-  
- Wenn Sie das Projekt kompilieren, erstellt Visual Studio eine Assembly.  Stellen Sie sicher, dass Sie dem Projekt keine weiteren Elemente hinzufügen, die der Projektassembly Code hinzufügen \(Beispiel: ein Element **Sequenzieller Workflow** oder ein Element **Webpart**\).  Der Code für das betreffende Element wird nicht ausgeführt, wenn Sie die Lösung bereitstellen, da das Lösungspaket die Assembly nicht in den globalen Assemblycache kopiert.  Das Lösungspaket stellt die Assembly nur in der BDC\-Datenbank in SharePoint bereit.  
+## <a name="creating-a-new-model"></a>Erstellen ein neues Modell  
+ Um ein neues Modell zu erstellen, erstellen eine **Business Data Connectivity-Modell** oder zum Hinzufügen einer **Business Data Connectivity-Modell** Element zum ein **leeres SharePoint-Projekt**.  
   
 > [!NOTE]  
->  Wenn Sie das Projekt debuggen, kopiert Visual Studio die Assembly an beide Positionen auf dem lokalen Computer.  
+>  Sie benötigen [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] auf Ihrem Computer installiert.  
   
-## Hinzufügen eines vorhandenen Modells  
- Sie können ein Modell importieren, das mit anderen Tools wie dem SharePoint\-Designer erstellt wurde.  In den folgenden Situationen können Sie beispielsweise ein vorhandenes Modell in das Projekt importieren:  
+ Visual Studio hinzugefügt dem Projekt einen Ordner. Dieser Ordner enthält den Namen, den Sie, für angeben die **Business Data Connectivity-Modell** Element in der **neues Element hinzufügen** (Dialogfeld). Wenn Sie ein neues erstellen **Business Data Connectivity-Modell** Visual Studio-Projekt den Namen des Ordners **BdcModel1**.  
   
--   Zum Anpassen eines Modells, das bereits in einer SharePoint\-Serverfarm bereitgestellt wurde.  
+ Visual Studio fügt die folgenden Dateien in den neuen Ordner:  
   
--   Zum Verpacken und Bereitstellen eines vorhandenen Modells für mehrere SharePoint\-Serverfarmen.  
+|Datei|Beschreibung|  
+|----------|-----------------|  
+|Modelldefinitionsdatei|Enthält XML, das definiert, die Entitäten, Methoden, Line of Business (LOB)-Systemobjekte und anderen Metadaten, die das Modell beschreiben.<br /><br /> Ändern Sie die Metadaten in dieser Datei mit dem BDC-Designer, **BDC-Explorer**, **BDC-Methodendetails** Fenster und **Eigenschaften** Fenster.|  
+|Entität Service-Codedatei|Enthält Methoden, die abgerufen werden, aktualisieren und Löschen von Instanzen der Entität Standardwert an.|  
   
- In beiden Fällen sind die LOB\-Systeme, die im importierten Modell definiert wurden, nicht betroffen und funktionieren weiterhin wie erwartet.  Um einem SharePoint\-Projekt ein vorhandenes Modell hinzuzufügen, verwenden Sie das Visual Studio\-Dialogfeld **Vorhandenes Element hinzufügen**.  Weitere Informationen finden Sie unter [Gewusst wie: Hinzufügen einer vorhandenen BDC-Modelldatei zu einem SharePoint-Projekt](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md).  
+ Um die Eigenschaften einer Entität zu definieren, bearbeiten Sie die Codedatei für die Entität ein. Weitere Informationen finden Sie unter [wie: hinzufügen eine Entität zu einem Modell](../sharepoint/how-to-add-an-entity-to-a-model.md).  
   
- Sie können dem importierten Modell ein LOB\-System vom Typ .NET Framework\-Assembly hinzufügen, indem Sie in **.NET\-Assembly\-LobSystem hinzufügen** eine Option auswählen.  Dies ermöglicht es Ihnen, benutzerdefinierten Code zu schreiben und einen Designer zu verwenden, um die Metadaten für das importierte Modell zu definieren.  
+ Fügen Sie Code zum Abrufen, aktualisieren und Löschen von Instanzen der Entität, der Entität Service-Codedatei. Weitere Informationen finden Sie unter [Entwerfen eines Business Data Connectivity-Modells](../sharepoint/designing-a-business-data-connectivity-model.md).  
   
-## Verwandte Themen  
+ Beim Kompilieren des Projekts erstellt Visual Studio eine Assembly an. Stellen Sie sicher, dass Sie keine weiteren Elemente nicht hinzufügen, um das Projekt, das die Projektassembly Code hinzu (z. B.: eine **sequenzieller Workflow** Element oder ein **Webpart** Element). Der Code für dieses Element wird nicht ausgeführt werden, wenn Sie die Lösung bereitgestellt werden, da das Lösungspaket die Assembly im globalen Assemblycache nicht kopiert.  Das Lösungspaket bereitstellt die Assembly, um nur das BDC-Datenbank in SharePoint.  
   
-|Titel|**Beschreibung**|  
-|-----------|----------------------|  
-|[Gewusst wie: Erstellen eines BDC-Modells](../sharepoint/how-to-create-a-bdc-model.md)|Zeigt, wie ein neues BDC\-Modell erstellt wird.|  
-|[Gewusst wie: Hinzufügen einer vorhandenen BDC-Modelldatei zu einem SharePoint-Projekt](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)|Zeigt, wie ein vorhandenes Modell in ein SharePoint\-Projekt importiert wird.|  
-|[Gewusst wie: Angeben von lokalisierten Namen, Eigenschaften und Berechtigungen mithilfe einer Ressourcendatei](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)|Beschreibt, wie Zeichenfolgen bereitgestellt werden, die mit Modellmetadaten zusammengeführt werden, wenn das Modell von einem Webpart oder einer Webseite verwendet wird.|  
-|[Gewusst wie: Einfügen einer benutzerdefinierten Assembly in eine BDC-Funktion](../sharepoint/how-to-include-a-custom-assembly-in-a-bdc-feature.md)|Zeigt, wie eine benutzerdefinierte Assembly in die Funktion eingeschlossen wird.|  
+> [!NOTE]  
+>  Visual Studio kopiert die Assembly in beide Speicherorte auf dem lokalen Computer an, wenn Sie das Debuggen des Projekts.  
+  
+## <a name="adding-an-existing-model"></a>Hinzufügen eines vorhandenen Modells  
+ Sie können ein Modell importieren, die mit anderen Tools wie dem SharePoint-Designer erstellt wurde. Sie können auswählen, importieren Sie ein vorhandenes Modell in das Projekt in den folgenden Situationen:  
+  
+-   Um ein Modell anpassen, die bereits mit einer SharePoint-Serverfarm bereitgestellt wird.  
+  
+-   Verpacken und Bereitstellen eines vorhandenen Modells für mehrere SharePoint-Serverfarmen.  
+  
+ In beiden Fällen die LOB-Systemen, die im Modell, das Sie importieren definierten sind nicht betroffen und weiterhin wie erwartet funktionsfähig. Um ein SharePoint-Projekt ein vorhandenes Modell hinzuzufügen, verwenden Sie die Visual Studio **vorhandenes Element hinzufügen** (Dialogfeld). Weitere Informationen finden Sie unter [wie: Hinzufügen einer vorhandenen BDC-Modelldatei zu einem SharePoint-Projekt](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md).  
+  
+ Sie können eine LOB-System vom Typ .NET Framework-Assembly importierten Modell hinzufügen, durch Auswahl einer Option in der **Hinzufügen von .NET Framework-Assembly LobSystem**. Dadurch können Sie benutzerdefinierten Code schreiben und verwenden Sie einen Designer, um die Metadaten für die importierte Modelle zu definieren.  
+  
+## <a name="related-topics"></a>Verwandte Themen  
+  
+|Titel|Beschreibung|  
+|-----------|-----------------|  
+|[Vorgehensweise: Erstellen eines BDC-Modells](../sharepoint/how-to-create-a-bdc-model.md)|Zeigt, wie ein neues BDC-Modell zu erstellen.|  
+|[Vorgehensweise: Hinzufügen einer vorhandenen BDC-Modelldatei zu einem SharePoint-Projekt](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)|Zeigt, wie ein vorhandenes Modell in ein SharePoint-Projekt importieren.|  
+|[Vorgehensweise: Angeben von lokalisierten Namen, Eigenschaften und Berechtigungen mithilfe einer Ressourcendatei](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)|Beschreibt, wie Zeichenfolgen, die zusammengeführt werden die darin enthaltenen Modellmetadaten bereitzustellen, wenn das Modell von einem Webpart oder einer Webseite genutzt wird.|  
+|[Vorgehensweise: Einfügen einer benutzerdefinierten Assembly in eine BDC-Funktion](../sharepoint/how-to-include-a-custom-assembly-in-a-bdc-feature.md)|Zeigt, wie die Funktion eine benutzerdefinierte Assembly einschließt.|  
   
   

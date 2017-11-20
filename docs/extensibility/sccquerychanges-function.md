@@ -1,70 +1,70 @@
 ---
-title: "SccQueryChanges-Funktion | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "SccQueryChanges"
-helpviewer_keywords: 
-  - "SccQueryChanges-Funktion"
+title: SccQueryChanges Funktion | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: SccQueryChanges
+helpviewer_keywords: SccQueryChanges function
 ms.assetid: 4cd58eb3-6952-49b1-9620-8682e3eaa604
-caps.latest.revision: 13
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 589013b996f9ed018e28292a27c6a760eef1dae7
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# SccQueryChanges-Funktion
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Diese Funktion listet bestimmte Dateien, die Informationen über Namensänderungen für jede Datei über eine Callback\-Funktion bereitgestellt.  
+# <a name="sccquerychanges-function"></a>SccQueryChanges-Funktion
+Diese Funktion Listet eine angegebene Liste mit Dateien, die Angabe von Informationen zu Änderungen des Computernamens für jede Datei über eine Rückruffunktion an.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```cpp  
-SCCRTN SccQueryChanges(  
-   LPVOID           pContext,  
-   LONG             nFiles,  
-   LPCSTR*          lpFileNames,  
-   QUERYCHANGESFUNC pfnCallback,  
-   LPVOID           pvCallerData  
+SCCRTN SccQueryChanges(  
+   LPVOID           pContext,  
+   LONG             nFiles,  
+   LPCSTR*          lpFileNames,  
+   QUERYCHANGESFUNC pfnCallback,  
+   LPVOID           pvCallerData  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  "pContext"  
- \[in\] Der Source Control\-Plug\-in Kontextzeiger.  
+ [in] Der Datenquellen-Steuerelement-Plug-in Kontextzeiger.  
   
  nFiles  
- \[in\] Anzahl der Dateien in `lpFileNames` Array.  
+ [in] Anzahl der Dateien im `lpFileNames` Array.  
   
  lpFileNames  
- \[in\] Array von Dateinamen für die Informationen abgerufen.  
+ [in] Array von Dateinamen, zu dem Informationen abgerufen.  
   
  pfnCallback  
- \[in\] Rückruffunktion für jede Datei in der Liste \(siehe [QUERYCHANGESFUNC](../extensibility/querychangesfunc.md) Details\).  
+ [in] Rückruffunktion für jedes Dateinamen in der Liste aufrufen (siehe [QUERYCHANGESFUNC](../extensibility/querychangesfunc.md) Einzelheiten).  
   
  pvCallerData  
- \[in\] Wert, der unverändert an die Rückruffunktion übergeben wird.  
+ [in] Wert, der unverändert an die Rückruffunktion übergeben wird.  
   
-## Rückgabewert  
- Datenquellen\-Steuerelement Plug\-in\-Implementierung dieser Funktion muss einen der folgenden Werte zurückgeben:  
+## <a name="return-value"></a>Rückgabewert  
+ Die Source Control-Plug-in-Implementierung dieser Funktion muss einen der folgenden Werte zurückgeben:  
   
 |Wert|Beschreibung|  
-|----------|------------------|  
-|SCC\_OK|Der Abfrageprozess erfolgreich abgeschlossen.|  
-|SCC\_E\_PROJNOTOPEN|Das Projekt wurde nicht im Datenquellen\-Steuerelement geöffnet.|  
-|SCC\_E\_ACCESSFAILURE|Es wurde ein Problem, das Zugriff auf Quellcode\-Verwaltungssystem, möglicherweise aufgrund eines Netzwerk\-oder Konflikte.|  
-|SCC\_E\_NONSPECIFICERROR|Nicht angegeben oder allgemeine Fehler.|  
+|-----------|-----------------|  
+|SCC_OK|Der Abfrageprozess erfolgreich abgeschlossen.|  
+|SCC_E_PROJNOTOPEN|Das Projekt wurde nicht in der quellcodeverwaltung geöffnet.|  
+|SCC_E_ACCESSFAILURE|Es wurde ein Problem, das Zugriff auf das Quellcodeverwaltungssystem, wahrscheinlich aufgrund eines Netzwerk-oder Konflikte.|  
+|SCC_E_NONSPECIFICERROR|Ein Unbekannter oder allgemeiner Fehler aufgetreten.|  
   
-## Hinweise  
+## <a name="remarks"></a>Hinweise  
  Änderungen, die abgefragt wird, die auf den Namespace sind: insbesondere umbenennen, hinzufügen und Entfernen einer Datei.  
   
-## Siehe auch  
- [Source Control\-Plug\-in\-API\-Funktionen](../extensibility/source-control-plug-in-api-functions.md)   
+## <a name="see-also"></a>Siehe auch  
+ [Quellcodeverwaltungsfunktionen-Plug-in-API](../extensibility/source-control-plug-in-api-functions.md)   
  [QUERYCHANGESFUNC](../extensibility/querychangesfunc.md)   
  [Fehlercodes](../extensibility/error-codes.md)

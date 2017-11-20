@@ -1,64 +1,66 @@
 ---
-title: "Calling into the SharePoint Object Models"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "SharePoint development in Visual Studio, client object model"
-  - "SharePoint development in Visual Studio, server object model"
-  - "SharePoint commands [SharePoint development in Visual Studio]"
-  - "SharePoint development in Visual Studio, extensibility features"
+title: Aufrufe in die SharePoint-Objektmodelle | Microsoft Docs
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- SharePoint development in Visual Studio, client object model
+- SharePoint development in Visual Studio, server object model
+- SharePoint commands [SharePoint development in Visual Studio]
+- SharePoint development in Visual Studio, extensibility features
 ms.assetid: 99934f9e-901e-464e-ac8c-22c6c86440f4
-caps.latest.revision: 38
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 37
+caps.latest.revision: "38"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 3bd3f81580af908d06fe7389c04a6559d14f1075
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Calling into the SharePoint Object Models
-  Wenn Sie Erweiterungen für die SharePoint\-Tools in Visual Studio erstellen, müssen Sie ggf. SharePoint\-APIs aufrufen, um bestimmte Aufgaben auszuführen.  Wenn Sie z. B. einen benutzerdefinierten Bereitstellungsschritt für SharePoint\-Projekte erstellen, müssen Sie eventuell SharePoint\-APIs aufrufen, um einige der Aufgaben für das Bereitstellen von Projektmappen auszuführen.  
+# <a name="calling-into-the-sharepoint-object-models"></a>Aufrufe in die SharePoint-Objektmodelle
+  Wenn Sie Erweiterungen für die SharePoint-Tools in Visual Studio erstellen, müssen Sie möglicherweise rufen Sie die SharePoint-APIs, um bestimmte Aufgaben ausführen. Bei der Erstellung eines benutzerdefinierten Bereitstellungsschritts für SharePoint-Projekte möglicherweise Sie z. B. SharePoint-APIs zum Ausführen einiger Aufgaben zum Bereitstellen von Projektmappen aufrufen.  
   
- [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] und [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] stellen zwei verschiedene Objektmodelle bereit, die Sie in Erweiterungen für SharePoint\-Tools verwenden können: ein Serverobjektmodell und ein Clientobjektmodell.  Jedes Objektmodell hat Vor\- und Nachteile im Kontext von SharePoint\-Tools\-Erweiterungen.  
+ [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)]und [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] bieten zwei unterschiedliche Objektmodelle, die Sie in der SharePoint-Tools-Erweiterungen verwenden können: ein Serverobjektmodell und ein Clientobjektmodell. Beide Objektmodelle haben vor- und Nachteile im Kontext der SharePoint-Tools-Erweiterungen.  
   
- Eine Übersicht über die SharePoint\-Objektmodelle finden Sie unter [Overview of the Programming Model of SharePoint Tools Extensions](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md).  
+ Einen Überblick über die SharePoint-Objektmodelle finden Sie unter [Überblick über die Programmierung Modell der SharePoint-Tools-Erweiterungen](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md).  
   
-## Verwenden des Clientobjektmodells in Erweiterungsprojekten  
- Wenn Sie eine Erweiterung für die SharePoint\-Tools entwickeln, können Sie das Clientobjektmodell im Projekt wie jeden anderen Satz verwalteter APIs verwenden.  Sie können dem Projekt Verweise auf Assemblys im Clientobjektmodell hinzufügen, und Sie können APIs im Clientobjektmodell direkt vom Code aufrufen.  
+## <a name="using-the-client-object-model-in-extension-projects"></a>Mithilfe des Clientobjektmodells in Erweiterungsprojekten  
+ Wenn Sie eine Erweiterung für die SharePoint-Tools entwickeln, können Sie das Clientobjektmodell in Ihrem Projekt wie einen beliebigen anderen Satz von verwalteten APIs. Sie können Verweise auf Assemblys in das Clientobjektmodell zu Ihrem Projekt hinzufügen, und Sie können APIs im Clientobjektmodell aufrufen, direkt aus Ihrem Code.  
   
- Das Clientobjektmodell weist jedoch zwei Nachteile bezüglich SharePoint\-Toolerweiterungen auf:  
+ Allerdings hat das Clientobjektmodell zwei Nachteile im Kontext der SharePoint-Tools-Erweiterungen:  
   
--   Das Clientobjektmodell stellt nur eine Teilmenge des Serverobjektmodells bereit.  Wenn Sie SharePoint\-Funktionalitäten verwenden müssen, die im Clientobjektmodell nicht verfügbar sind, müssen Sie das Serverobjektmodell verwenden.  
+-   Die Client-Objektmodell bietet nur eine Teilmenge des Server-Objektmodells. Wenn Sie SharePoint-Funktionen verwenden, die nicht in die Client-Objektmodell verfügbar gemacht werden müssen, müssen Sie das Serverobjektmodell verwenden.  
   
--   Außerdem kann das Clientobjektmodell zwar in vielen Fällen für SharePoint\-Toolerweiterungen verwendet werden, es gibt aber auch Szenarios, in denen Aufrufe des Clientobjektmodells nicht in der erwarteten Weise funktionieren.  Das Clientobjektmodell wurde für Aufrufe in SharePoint\-Websites auf einem Remoteserver oder in einer Remotefarm in Clientanwendungen entwickelt.  Die SharePoint\-Tools in Visual Studio funktionieren nur mit einer lokalen SharePoint\-Installation auf dem Entwicklungscomputer.  Wenn Sie das Clientobjektmodell in einer SharePoint\-Toolerweiterung verwenden, rufen Sie daher eine SharePoint\-Website auf dem lokalen Computer auf. Dies entspricht nicht der vorgesehenen Verwendung des Clientobjektmodells.  
+-   Obwohl mithilfe des Clientobjektmodells in SharePoint-Tools-Erweiterungen in den meisten Fällen funktionieren sollten, können einige Szenarien auftreten, in denen Aufrufe an den Client-Objektmodell nicht erwartungsgemäß funktionieren. Das Clientobjektmodell soll in Clientanwendungen verwendet werden, um SharePoint-Websites auf einem Remoteserver oder die Farm aufzurufen. SharePoint-Tools in Visual Studio funktionieren nur mit einer lokalen SharePoint-Installation auf dem Entwicklungscomputer. Daher bei der Verwendung des Clientobjektmodells in einer SharePoint-Tools-Erweiterung rufen Sie in einer SharePoint-Website auf dem lokalen Computer ist nicht wie das Clientobjektmodell konzipiert wurde.  
   
- Eine exemplarische Vorgehensweise, die zeigt, wie das Clientobjektmodell in einer Erweiterung der SharePoint\-Tools in Visual Studio finden. [Walkthrough: Calling into the SharePoint Client Object Model in a Server Explorer Extension](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)  
+ Eine exemplarische Vorgehensweise, die das Clientobjektmodell in einer Erweiterung der SharePoint-Tools in Visual Studio veranschaulicht, finden Sie unter [Exemplarische Vorgehensweise: Aufrufen von in der SharePoint-Clientobjektmodell innerhalb einer Server-Explorererweiterung](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md).  
   
-## Verwenden des Serverobjektmodells in Erweiterungsprojekten  
- Das Serverobjektmodell ist eine Obermenge des Clientobjektmodells.  Wenn Sie das Serverobjektmodell verwenden, können Sie alle Funktionen verwenden, die [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] und [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] programmgesteuert verfügbar machen.  
+## <a name="using-the-server-object-model-in-extension-projects"></a>Verwenden das Serverobjektmodell in Erweiterungsprojekten  
+ Das Serverobjektmodell ist eine Obermenge des Client-Objektmodells. Wenn Sie das Serverobjektmodell verwenden, können Sie alle Funktionen, die [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] und [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] programmgesteuert verfügbar machen.  
   
- SharePoint\-Tools\-Erweiterungen können APIs im Serverobjektmodell verwenden, aber sie können die APIs nicht direkt aufrufen.  Das Serverobjektmodell kann nur von einem 64\-Bit\-Prozess aufgerufen werden, der auf .NET Framework 3.5 abzielt.  SharePoint\-Tools\-Erweiterungen erfordern jedoch [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] und werden im 32\-Bit\-Prozess von Visual Studio ausgeführt.  Dies verhindert, dass SharePoint\-Tools\-Erweiterungen direkt auf die Assemblys im SharePoint\-Serverobjektmodell verweisen.  
+ SharePoint-Tools-Erweiterungen können APIs aus das Serverobjektmodell verwenden, aber sie können die APIs direkt aufrufen. Das Serverobjektmodell kann nur von einem 64-Bit-Prozess, der .NET Framework 3.5 abzielt aufgerufen werden. SharePoint-Tools-Erweiterungen erfordern jedoch die [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] und in der 32-Bit-Visual Studio-Prozess ausgeführt. Dadurch wird verhindert, dass SharePoint-Tools-Erweiterungen verweisen auf Assemblys in das SharePoint-Serverobjektmodell direkt.  
   
- Wenn Sie das Serverobjektmodell in einer SharePoint\-Tools\-Erweiterung verwenden möchten, müssen Sie einen benutzerdefinierten *SharePoint\-Befehl* erstellen, um die API aufzurufen.  Sie definieren den SharePoint\-Befehl in einer sekundären Assembly, die direkte Aufrufe des Serverobjektmodells ausführen kann.  Im Erweiterungsprojekt rufen Sie den SharePoint\-Befehl indirekt mit der ExecuteCommand\-Methode eines <xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection>\-Objekts auf.  
+ Wenn Sie das Serverobjektmodell in einer SharePoint-Tools-Erweiterung verwenden möchten, müssen Sie eine benutzerdefinierte erstellen *SharePoint-Befehl* zum Aufrufen der API. Sie definieren den SharePoint-Befehl in einer sekundären Assembly, die direkt in das Serverobjektmodell aufrufen kann. In Ihrem Erweiterungsprojekt Sie rufen den SharePoint-Befehl indirekt mithilfe der Methode "ExecuteCommand", der ein <xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection> Objekt.  
   
- Weitere Informationen zum Erstellen und Verwenden von SharePoint\-Befehlen finden Sie unter [How to: Create a SharePoint Command](../sharepoint/how-to-create-a-sharepoint-command.md) und [How to: Execute a SharePoint Command](../sharepoint/how-to-execute-a-sharepoint-command.md).  Informationen zum Bereitstellen von SharePoint\-Befehlen finden Sie unter [Deploying Extensions for the SharePoint Tools in Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
+ Weitere Informationen zum Erstellen und Verwenden von SharePoint-Befehlen finden Sie unter [wie: Erstellen eines SharePoint-Befehls](../sharepoint/how-to-create-a-sharepoint-command.md) und [wie: Ausführen eines SharePoint-Befehls](../sharepoint/how-to-execute-a-sharepoint-command.md). Informationen zum Bereitstellen von SharePoint-Befehlen finden Sie unter [Bereitstellen von Erweiterungen für SharePoint-Tools in Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
   
- Exemplarische Vorgehensweisen, in denen das Erstellen und Verwenden von SharePoint\-Befehlen veranschaulicht wird, finden Sie unter [Walkthrough: Creating a Custom Deployment Step for SharePoint Projects](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md) und [Walkthrough: Extending Server Explorer to Display Web Parts](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md).  
+ Exemplarische Vorgehensweisen, die zum Erstellen und Verwenden von SharePoint-Befehle veranschaulichen, finden Sie unter [Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Bereitstellungsschritts für SharePoint-Projekte](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md) und [Exemplarische Vorgehensweise: Erweitern von Server-Explorer auf Web-Anzeige Teile](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md).  
   
-### Grundlegendes zur Ausführung von SharePoint\-Befehlen  
- Assemblys, die SharePoint\-Befehle definieren, werden in einen 64\-Bit\-Hostprozess mit dem Namen "vssphost4.exe" geladen.  Nachdem Sie einen SharePoint\-Befehl in einer SharePoint\-Tools\-Erweiterung aufgerufen haben, wird der Befehl von "vssphost4.exe" ausgeführt, und nicht vom 32\-Bit\-Prozess von Visual Studio \(devenv.exe\).  Einige Aspekte der Ausführung von SharePoint\-Befehlen können mit Werten in der Registrierung gesteuert werden.  Weitere Informationen finden Sie unter [Debugging Extensions for the SharePoint Tools in Visual Studio](../sharepoint/debugging-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
+### <a name="understanding-how-sharepoint-commands-are-executed"></a>Grundlegendes zu wie SharePoint-Befehle werden ausgeführt.  
+ Assemblys, die SharePoint-Befehle definieren, werden in einem 64-Bit-Host-Prozess namens vssphost4.exe geladen. Nachdem Sie in einer SharePoint-Tools-Erweiterung einen SharePoint-Befehl aufrufen, wird der Befehl von vssphost4.exe statt an den 32-Bit-Visual Studio-Prozess (devenv.exe) ausgeführt. Sie können steuern, einige Aspekte wie SharePoint-Befehle ausgeführt werden, indem Sie Werte in der Registrierung festlegen. Weitere Informationen finden Sie unter [Debuggen von Erweiterungen für SharePoint-Tools in Visual Studio](../sharepoint/debugging-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
   
-## Siehe auch  
- [How to: Create a SharePoint Command](../sharepoint/how-to-create-a-sharepoint-command.md)   
- [How to: Execute a SharePoint Command](../sharepoint/how-to-execute-a-sharepoint-command.md)   
- [Overview of the Programming Model of SharePoint Tools Extensions](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)  
+## <a name="see-also"></a>Siehe auch  
+ [Vorgehensweise: Erstellen eines SharePoint-Befehls](../sharepoint/how-to-create-a-sharepoint-command.md)   
+ [Vorgehensweise: Ausführen eines SharePoint-Befehls](../sharepoint/how-to-execute-a-sharepoint-command.md)   
+ [Übersicht über das Programmiermodell von Erweiterungen für SharePoint-Tools](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)  
   
   

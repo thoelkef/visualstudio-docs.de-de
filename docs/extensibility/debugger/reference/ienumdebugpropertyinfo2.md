@@ -1,64 +1,64 @@
 ---
-title: "IEnumDebugPropertyInfo2 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IEnumDebugPropertyInfo2"
-helpviewer_keywords: 
-  - "IEnumDebugPropertyInfo2"
+title: IEnumDebugPropertyInfo2 | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IEnumDebugPropertyInfo2
+helpviewer_keywords: IEnumDebugPropertyInfo2
 ms.assetid: fdea8262-40b8-473e-88ba-639e4c4648e6
-caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 9e7f261a449e20873183ff59487c1a6b2df6b678
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IEnumDebugPropertyInfo2
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Diese Schnittstelle listet [DEBUG\_PROPERTY\_INFO](../../../extensibility/debugger/reference/debug-property-info.md) Strukturen auf.  
+# <a name="ienumdebugpropertyinfo2"></a>IEnumDebugPropertyInfo2
+Diese Schnittstelle listet [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) Strukturen.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 IEnumDebugPropertyInfo2 : IUnknown  
 ```  
   
-## Hinweise für Implementierer  
- Das Debugmodul \(DE\) implementiert diese Schnittstelle, um Informationen für eine bestimmte Eigenschaft darstellt.  
+## <a name="notes-for-implementers"></a>Hinweise für Implementierer  
+ Die Debugging-Modul (DE) implementiert diese Schnittstelle, um Informationen für eine bestimmte Eigenschaft darstellen.  
   
-## Hinweise für Aufrufer  
- Rufen Sie [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) an, die zum Abrufen dieser Schnittstelle, die die untergeordneten Elemente einer bestimmten Eigenschaft darstellt.  Rufen Sie [\[EnumProperties](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md) an, die zum Abrufen dieser Schnittstelle, die die Eigenschaften eines bestimmten Stapelrahmens darstellt.  
+## <a name="notes-for-callers"></a>Hinweise für Aufrufer  
+ Rufen Sie [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) beim Abrufen dieser Schnittstelle, die die untergeordneten Elemente einer bestimmten Eigenschaft darstellt. Rufen Sie [EnumProperties](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md) beim Abrufen dieser Schnittstelle, die die Eigenschaften für einen bestimmten Stapelrahmen darstellt.  
   
-## Methoden in die Vtable\-Reihenfolge  
- In der folgenden Tabelle werden die Methoden von `IEnumDebugPropertyInfo2`an.  
+## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
+ Die folgende Tabelle zeigt die Methoden der `IEnumDebugPropertyInfo2`.  
   
 |Methode|Beschreibung|  
-|-------------|------------------|  
-|[Weiter](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-next.md)|Ruft eine angegebene Anzahl [DEBUG\_PROPERTY\_INFO](../../../extensibility/debugger/reference/debug-property-info.md) Strukturen in der Enumerationsfolge ab.|  
-|[Skip](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-skip.md)|Überspringt eine angegebene Anzahl [DEBUG\_PROPERTY\_INFO](../../../extensibility/debugger/reference/debug-property-info.md) Strukturen in der Enumerationsfolge.|  
-|[Zurücksetzen](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-reset.md)|Setzt die Enumerationsfolge auf den Anfang zurück.|  
-|[Klonen](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-clone.md)|Erstellt einen Enumerator, der den gleichen Enumerationszustand wie der aktuelle Enumerator enthält.|  
-|[GetCount](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-getcount.md)|Ruft die Anzahl der [DEBUG\_PROPERTY\_INFO](../../../extensibility/debugger/reference/debug-property-info.md) Strukturen in einem Enumerator ab.|  
+|------------|-----------------|  
+|[Nächste](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-next.md)|Ruft eine angegebene Anzahl von [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) Strukturen in eine Enumerationsfolge.|  
+|[Skip](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-skip.md)|Überspringt die angegebene Anzahl von [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) Strukturen in eine Enumerationsfolge.|  
+|[Zurücksetzen](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-reset.md)|Setzt ein Enumerationsfolge auf den Anfang zurück.|  
+|[Klon](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-clone.md)|Erstellt einen Enumerator, der den gleichen Enumeration Status als der aktuelle Enumerator enthält.|  
+|[GetCount](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-getcount.md)|Ruft die Anzahl der [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) Strukturen in einen Enumerator.|  
   
-## Hinweise  
- Grundsätzlich handelt es sich um eine Eigenschaft einer Hierarchie von Informationen, die einen Namen, einen Wert, eine Adresse und einen Typ enthalten kann, sowie von allen weiteren Informationen, die zum zugeordneten Eigenschaftenobjekt oder Stapelrahmen äquivalent sind.  Ausführliche Informationen finden Sie unter [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md).  
+## <a name="remarks"></a>Hinweise  
+ Im Allgemeinen ist eine Eigenschaft einer Hierarchie von Informationen, die einen Namen, der Wert, der Adresse und der Typ enthalten kann, sowie alle anderen Informationen, die für die zugeordnete Eigenschaft Objekt oder Stack-Frame geeignet. Finden Sie unter [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) Weitere Details.  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  Header: msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Siehe auch  
- [Core\-Schnittstellen](../../../extensibility/debugger/reference/core-interfaces.md)   
- [DEBUG\_PROPERTY\_INFO](../../../extensibility/debugger/reference/debug-property-info.md)   
+## <a name="see-also"></a>Siehe auch  
+ [Core-Schnittstellen](../../../extensibility/debugger/reference/core-interfaces.md)   
+ [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)   
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)   
  [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)   
- [\[EnumProperties](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md)
+ [EnumProperties](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md)

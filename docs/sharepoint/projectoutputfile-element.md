@@ -1,30 +1,31 @@
 ---
-title: "ProjectOutputFile Element"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "ProjectOutputFile element"
+title: ProjectOutputFile-Element | Microsoft Docs
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords: ProjectOutputFile element
 ms.assetid: 52a017bf-e19c-49e4-bb8f-cbe6958195c2
-caps.latest.revision: 13
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "13"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: a397648dd81ead8134777c8b36982fa6b65b687b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# ProjectOutputFile Element
-  Stellt die Ausgabe eines separaten Projekts dar, die im Projektelement enthalten sein soll, wenn es in SharePoint bereitgestellt wird.  
+# <a name="projectoutputfile-element"></a>ProjectOutputFile-Element
+  Stellt die Ausgabe von einem separaten Projekt mit dem Projektelement eingeschlossen werden soll, wenn er für SharePoint bereitgestellt wird.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 <ProjectOutputFile ProjectId = "GUID of the project"  
@@ -33,45 +34,45 @@ caps.handback.revision: 12
     Type = "Type of deployment for the project output" />  
 ```  
   
-## Typ  
+## <a name="type"></a>Typ  
  **ProjectOutputFileType**  
   
-## Attribute und Elemente  
+## <a name="attributes-and-elements"></a>Attribute und Elemente  
  In den folgenden Abschnitten werden Attribute sowie untergeordnete und übergeordnete Elemente beschrieben.  
   
-### Attribute  
+### <a name="attributes"></a>Attribute  
   
 |Attribut|Beschreibung|  
-|--------------|------------------|  
-|**ProjectId**|Erforderliches **xs:string**\-Attribut.<br /><br /> Die GUID des abhängigen Projekts, das die einzuschließende Ausgabe besitzt.  Dieser Wert entspricht dem **ProjectGuid**\-Element in der abhängigen Projektdatei.|  
-|**ProjectPath**|Erforderliches **xs:string**\-Attribut.<br /><br /> Der relative Pfad \(einschließlich Projektdateiname\) des abhängigen Projekts, das die einzuschließende Ausgabe besitzt.  Dieser Pfad ist relativ zum Stammordner des SharePoint\-Projekts, das das SharePoint\-Projektelement enthält.|  
-|**Target**|Optionales **xs:string**\-Attribut.<br /><br /> Der Pfad, in dem die abhängige Projektausgabe auf dem SharePoint\-Server bereitgestellt werden soll, relativ zum Bereitstellungsstammordner.  Der Bereitstellungsstammordner wird vom Bereitstellungstyp angegeben, der vom **Type**\-Attribut angegeben wird.<br /><br /> Weitere Informationen erhalten Sie in den Beschreibungen zu den **Deployment Path**\- und **Deployment Root**\-Eigenschaften von SharePoint\-Projektelementen in [Developing SharePoint Solutions](../sharepoint/developing-sharepoint-solutions.md).|  
-|**Type**|Erforderliches **xs:string**\-Attribut.<br /><br /> Der Typ der Bereitstellung, der für die Ausgabe des abhängigen Projekts verwendet werden soll.  Weitere Informationen zur den möglichen Werten finden Sie in der Beschreibung der **Deployment Type**\-Eigenschaft von SharePoint\-Projektelementen unter [Developing SharePoint Solutions](../sharepoint/developing-sharepoint-solutions.md).|  
+|---------------|-----------------|  
+|**ProjectId**|Erforderliche **xs: String** Attribut.<br /><br /> Die GUID des abhängigen Projekts, das die Ausgabe verfügt, die Sie einschließen möchten. Dies entspricht der **ProjectGuid** Element in der abhängigen Projektdatei.|  
+|**ProjectPath**|Erforderliche **xs: String** Attribut.<br /><br /> Der relative Pfad, einschließlich des Dateinamens Projekt des abhängigen Projekts, das die Ausgabe verfügt, die Sie einschließen möchten. Dieser Pfad ist relativ zum Stammordner der SharePoint-Projekt, das die SharePoint-Projektelement enthält.|  
+|**Target**|Optionale **xs: String** Attribut.<br /><br /> Der Pfad, in dem die Ausgabe des abhängigen Projekts ist, auf dem SharePoint-Server, relativ zum Stammordner Bereitstellung bereitgestellt werden. Stammordner der Bereitstellung richtet sich nach den Bereitstellungstyp, der gemäß der **Typ** Attribut.<br /><br /> Weitere Informationen finden Sie die Beschreibungen für die **Bereitstellungspfad** und **Bereitstellungsstamm-** Eigenschaften von SharePoint-Projektelemente in [Entwickeln von SharePoint-Lösungen](../sharepoint/developing-sharepoint-solutions.md).|  
+|**Typ**|Erforderliche **xs: String** Attribut.<br /><br /> Die Art der Bereitstellung für die Ausgabe des abhängigen Projekts verwendet werden soll. Weitere Informationen zu den möglichen Werten finden Sie in der Beschreibung für die **Bereitstellungstyp** Eigenschaft der SharePoint-Projektelemente im [Entwickeln von SharePoint-Lösungen](../sharepoint/developing-sharepoint-solutions.md).|  
   
-### Untergeordnete Elemente  
- Keine.  
+### <a name="child-elements"></a>Untergeordnete Elemente  
+ Keine  
   
-### Übergeordnete Elemente  
+### <a name="parent-elements"></a>Übergeordnete Elemente  
   
 |Element|Beschreibung|  
-|-------------|------------------|  
-|[Dateien](../sharepoint/files-element.md)|Gibt die Dateien an, die im Projektelement enthalten sein sollen, wenn es in SharePoint bereitgestellt wird.|  
+|-------------|-----------------|  
+|[Dateien](../sharepoint/files-element.md)|Gibt die Dateien mit SharePoint-Projektelements eingeschlossen werden soll, wenn er für SharePoint bereitgestellt wird.|  
   
-## Hinweise  
- Verwenden Sie das **ProjectOutputFile**\-Element, um die Ausgabe eines Projekts in die Bereitstellung des SharePoint\-Projektelements einzuschließen.  Sie können ein anderes Projekt angeben oder das gleiche Projekt, das das Projektelement enthält.  Weitere Informationen finden Sie unter [Bereitstellen von Pack- und Bereitstellungsinformationen in Projektelementen](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).  
+## <a name="remarks"></a>Hinweise  
+ Verwenden der **ProjectOutputFile** Element, um die Ausgabe eines Projekts in der Bereitstellung des SharePoint-Projektelements einzuschließen. Sie können angeben, ein anderes Projekt oder das gleiche Projekt, das das Projektelement enthält. Weitere Informationen finden Sie unter [Bereitstellen von Pack- und Bereitstellungsinformationen in Projektelementen](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).  
   
-## Elementinformationen  
+## <a name="element-information"></a>Elementinformationen  
   
 |||  
 |-|-|  
-|**Namespace**|http:\/\/schemas.microsoft.com\/VisualStudio\/2010\/SharePointTools\/SharePointProjectItemModel|  
-|**Schemaname**|SharePoint\-Projektelementschema|  
-|**Validierungsdatei**|ProjectItemModelSchema.xsd|  
-|**Kann leer sein.**|Nein|  
+|**Namespace**|http://Schemas.Microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel|  
+|**Schemaname**|SharePoint-Projektelementschema|  
+|**Validierungsdatei**|"ProjectItemModelSchema.xsd" benannt|  
+|**Kann leer sein**|Nein|  
   
-## Siehe auch  
- [SharePoint Project Item Schema Reference](../sharepoint/sharepoint-project-item-schema-reference.md)   
+## <a name="see-also"></a>Siehe auch  
+ [SharePoint-Projektelementschema](../sharepoint/sharepoint-project-item-schema-reference.md)   
  [Bereitstellen von Pack- und Bereitstellungsinformationen in Projektelementen](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)   
- [Developing SharePoint Solutions](../sharepoint/developing-sharepoint-solutions.md)  
+ [Entwickeln von SharePoint-Projektmappen](../sharepoint/developing-sharepoint-solutions.md)  
   
   

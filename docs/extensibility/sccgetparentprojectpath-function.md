@@ -1,99 +1,99 @@
 ---
-title: "SccGetParentProjectPath-Funktion | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "SccGetParentProjectPath"
-helpviewer_keywords: 
-  - "SccGetParentProjectPath-Funktion"
+title: SccGetParentProjectPath Funktion | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: SccGetParentProjectPath
+helpviewer_keywords: SccGetParentProjectPath function
 ms.assetid: 62a71579-36b3-48b9-a1c8-04ab100efa08
-caps.latest.revision: 17
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 17
+caps.latest.revision: "17"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 47cf6ee34738e8830705c0bed30891223efcd103
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# SccGetParentProjectPath-Funktion
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Diese Funktion bestimmt den übergeordnete Pfad eines angegebenen Projekts. Diese Funktion wird aufgerufen, wenn der Benutzer Datenquellen\-Steuerelement eine Visual Studio\-Projekt hinzugefügt wird.  
+# <a name="sccgetparentprojectpath-function"></a>SccGetParentProjectPath-Funktion
+Diese Funktion bestimmt den Projektpfad übergeordnete Element eines angegebenen Projekts. Diese Funktion wird aufgerufen, wenn der Benutzer ein Visual Studio-Projekt zur quellcodeverwaltung hinzugefügt wird.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 SCCRTN SccGetParentProjectPath(  
-   LPVOID pContext,  
-   HWND   hWnd,  
-   LPSTR  lpUser,  
-   LPCSTR lpProjPath,  
-   LPSTR  lpAuxProjPath,  
-   LPSTR  lpParentProjPath  
+   LPVOID pContext,  
+   HWND   hWnd,  
+   LPSTR  lpUser,  
+   LPCSTR lpProjPath,  
+   LPSTR  lpAuxProjPath,  
+   LPSTR  lpParentProjPath  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  "pContext"  
- \[in\] Der Source Control\-Plug\-in Kontextzeiger.  
+ [in] Der Datenquellen-Steuerelement-Plug-in Kontextzeiger.  
   
  hWnd  
- \[in\] Ein Handle für die IDE\-Fenster, das Quellcodeverwaltungs\-Plug\-in als übergeordnetes Element für alle Dialogfelder verwenden kann, die es bereitstellt.  
+ [in] Ein Handle für die IDE-Fenster, das das Quellsteuerelement-Plug-in als übergeordnetes Element für alle Dialogfelder verwenden kann, die es bereitstellt.  
   
  lpUser  
- \[in, out\] Der Benutzername \(bis zu SCC\_USER\_SIZE, einschließlich des NULL\-Abschlusszeichens\).  
+ [in, out] Der Benutzername (bis zu SCC_USER_SIZE, einschließlich der NULL-Terminator).  
   
  lpProjPath  
- \[in\] Zeichenfolge, die den Projektpfad \(bis zu SCC\_PRJPATH\_SIZE, einschließlich des NULL\-Abschlusszeichens\).  
+ [in] Zeichenfolge, die Pfad des Projekts (bis zu SCC_PRJPATH_SIZE, einschließlich der NULL-Terminator) identifiziert.  
   
  lpAuxProjPath  
- \[in, out\] Zusätzliche Zeichenfolge identifizieren das Projekt \(bis zu SCC\_PRJPATH\_SIZE, einschließlich des NULL\-Abschlusszeichens\).  
+ [in, out] Zusätzlichen Zeichenfolge, die das Projekt (bis zu SCC_PRJPATH_SIZE, einschließlich der NULL-Terminator) identifiziert.  
   
  lpParentProjPath  
- \[in, out\] Die Ausgabezeichenfolge Identifizieren des übergeordnete Pfads \(bis zu SCC\_PRJPATH\_SIZE, einschließlich des NULL\-Abschlusszeichens\).  
+ [in, out] Die Ausgabezeichenfolge identifizieren den Pfad des übergeordneten Projekts (bis zu SCC_PRJPATH_SIZE, einschließlich der NULL-Terminator).  
   
-## Rückgabewert  
- Datenquellen\-Steuerelement Plug\-in\-Implementierung dieser Funktion muss einen der folgenden Werte zurückgeben:  
+## <a name="return-value"></a>Rückgabewert  
+ Die Source Control-Plug-in-Implementierung dieser Funktion muss einen der folgenden Werte zurückgeben:  
   
 |Wert|Beschreibung|  
-|----------|------------------|  
-|SCC\_OK|Pfad des übergeordneten Projekts wurde erfolgreich abgerufen.|  
-|SCC\_E\_INITIALIZEFAILED|Projekt konnte nicht initialisiert werden.|  
-|SCC\_E\_INVALIDUSER|Der Benutzer konnte nicht auf das Quellcodeverwaltungs\-Plug\-in anmelden.|  
-|SCC\_E\_UNKNOWNPROJECT|Projekt ist das Quellcodeverwaltungs\-Plug\-in nicht bekannt.|  
-|SCC\_E\_INVALIDFILEPATH|Ungültige oder nicht mehr Dateipfad.|  
-|SCC\_E\_NOTAUTHORIZED|Der Benutzer ist nicht zulässig, um diesen Vorgang auszuführen.|  
-|SCC\_E\_ACCESSFAILURE|Es wurde ein Problem, das Zugriff auf Quellcode\-Verwaltungssystem, möglicherweise aufgrund eines Netzwerk\-oder Konflikte. Eine Wiederholung wird empfohlen.|  
-|SCC\_E\_PROJSYNTAXERR|Ungültige Syntax.|  
-|SCC\_E\_CONNECTIONFAILURE|Verbindungsproblem zu speichern.|  
-|SCC\_E\_NONSPECIFICERROR<br /><br /> SCC\_E\_UNKNOWNERROR|Nicht spezifischen Fehler.|  
+|-----------|-----------------|  
+|SCC_OK|Pfad des übergeordneten Projekts wurde erfolgreich abgerufen.|  
+|SCC_E_INITIALIZEFAILED|Projekt konnte nicht initialisiert werden.|  
+|SCC_E_INVALIDUSER|Der Benutzer konnte nicht auf die Datenquellen-Steuerelement-Plug-in anmelden.|  
+|SCC_E_UNKNOWNPROJECT|Projekt ist das Quellsteuerelement-Plug-in nicht bekannt.|  
+|SCC_E_INVALIDFILEPATH|Das Dateipfad ist ungültig oder kann nicht verwendet werden.|  
+|SCC_E_NOTAUTHORIZED|Der Benutzer ist nicht zulässig, um diesen Vorgang auszuführen.|  
+|SCC_E_ACCESSFAILURE|Es wurde ein Problem, das Zugriff auf das Quellcodeverwaltungssystem, wahrscheinlich aufgrund eines Netzwerk-oder Konflikte. Eine Wiederholung wird empfohlen.|  
+|SCC_E_PROJSYNTAXERR|Ungültige Syntax.|  
+|SCC_E_CONNECTIONFAILURE|Problem mit der Verbindung zu speichern.|  
+|SCC_E_NONSPECIFICERROR<br /><br /> SCC_E_UNKNOWNERROR|Unspezifischen Fehlers.|  
   
-## Hinweise  
- Diese Funktion gibt einen Erfolg oder Fehler\-Code zurück, und bei Erfolg wird die Variable `lpParentProjPath` mit der vollständige Pfad zum angegebenen Projekt.  
+## <a name="remarks"></a>Hinweise  
+ Diese Funktion gibt einen Erfolg oder Misserfolg Code zurück, und bei Erfolg, füllt die Variable `lpParentProjPath` mit der vollständige Pfad zum angegebenen Projekt.  
   
- Diese Funktion gibt das übergeordnete Element Projektpfad eines vorhandenen Projekts. Für das Stammprojekt, gibt die Funktion den Pfad, der übergeben wurde \(d. h. die gleiche Projekt Stammpfad\). Beachten Sie, dass eine Projektpfad eine Zeichenfolge, die nur für das Quellcodeverwaltungs\-Plug\-in von Bedeutung ist.  
+ Diese Funktion gibt die übergeordnete Projektpfad eines vorhandenen Projekts. Für das Stammprojekt gibt die Funktion den Projektpfad, der übergeben wurde (d. h. den gleichen Stamm Projektpfad). Beachten Sie, dass eine Projektpfad eine Zeichenfolge, die nur für die Datenquellen-Steuerelement-Plug-in von Bedeutung ist.  
   
- Die IDE wird vorbereitet, um die Änderungen zu übernehmen die `lpUser` und `lpAuxProjPath` sowie Parameter. Die IDE wird diese Zeichenfolgen beibehalten und übergeben sie die [SccOpenProject](../extensibility/sccopenproject-function.md) Wenn der Benutzer öffnet dieses Projekt in der Zukunft. Diese Zeichenfolgen können daher für das Quellcodeverwaltungs\-Plug\-in Trackinformationen, die einem zugeordnet werden muss.  
+ Die IDE wird vorbereitet, zum Übernehmen der Änderungen an der `lpUser` und `lpAuxProjPath` auch Parameter. Die IDE wird diese Zeichenfolgen beibehalten und übergeben sie die [SccOpenProject](../extensibility/sccopenproject-function.md) Wenn der Benutzer öffnet dieses Projekt in der Zukunft. Diese Zeichenfolgen bieten eine Möglichkeit daher für die quellcodeverwaltung-Plug-in nachverfolgen-Informationen, die es benötigt, ein Projekt zugeordnet werden soll.  
   
- Diese Funktion ist vergleichbar mit der [SccGetProjPath](../extensibility/sccgetprojpath-function.md), außer dass es fordert nicht den Benutzer ein Projekt auswählen. Es erstellt auch nie ein neues Projekt, sondern nur mit einem vorhandenen Projekt.  
+ Diese Funktion ist vergleichbar mit der [SccGetProjPath](../extensibility/sccgetprojpath-function.md), außer dass es den Benutzer ein Projekt auswählen, nicht angefordert werden. Es erstellt auch nie ein neues Projekt aber funktioniert nur mit einem vorhandenen Projekt.  
   
- Wenn `SccGetParentProjectPath` aufgerufen wird, `lpProjPath` und `lpAuxProjPath` nicht leer sein und ein gültiges Projekt entspricht. Diese Zeichenfolgen werden in der Regel von der IDE aus einem vorherigen Aufruf empfangen die `SccGetProjPath` Funktion.  
+ Wenn `SccGetParentProjectPath` aufgerufen wird, `lpProjPath` und `lpAuxProjPath` nicht leer sein und wird zu einem gültigen Projekt entsprechen. Diese Zeichenfolgen werden in der Regel von der IDE aus einem vorherigen Aufruf empfangen die `SccGetProjPath` Funktion.  
   
- Die `lpUser` Argument ist der Benutzername. Die IDE übergibt den gleichen Benutzernamen, die Sie zuvor aus erhalten hatte die `SccGetProjPath` \-Funktion, und das Quellcodeverwaltungs\-Plug\-in sollte der Name als Standardwert verwendet. Verfügt der Benutzer bereits eine offene Verbindung mit dem plug\-in, versuchen das plug\-in, zu beseitigen alle Anweisungen, um sicherzustellen, dass die Funktion im Hintergrund funktioniert. Allerdings schlägt die Anmeldung das plug\-in sollte den Benutzer auffordern für eine Anmeldung und erhält eine gültige Anmeldung, übergeben Sie der Namen wieder `lpUser`. Da das plug\-in diese Zeichenfolge geändert werden kann, die IDE immer einen Puffer der Größe zuzuordnen \(`SCC_USER_LEN`\+ 1\). Wenn die Zeichenfolge geändert wird, muss die neue Zeichenfolge ein gültiger Anmeldename, die \(zumindest als gültig wie die alte Zeichenfolge\) sein.  
+ Die `lpUser` Argument ist der Benutzername. Die IDE in den gleichen Benutzernamen, die zuvor vom empfangenen hatte übergibt die `SccGetProjPath` -Funktion und die Datenquellen-Steuerelement-Plug-in verwenden, sollten den Namen als den Standardwert. Wenn der Benutzer bereits eine offene Verbindung mit dem plug-in verfügt, sollte das plug-in versuchen, beseitigen alle Anweisungen, um sicherzustellen, dass die Funktion im Hintergrund funktioniert. Jedoch, wenn die Anmeldung ein Fehler auftritt, das plug-in sollte den Benutzer auffordern für eine Anmeldung und beim Empfang einer gültigen Anmeldenamen, übergeben Sie der Namen wieder in `lpUser`. Da die-Plug-in dieser Zeichenfolge ändern kann, wird die IDE immer einen Puffer mit einer Größe zuweisen (`SCC_USER_LEN`+ 1). Wenn die Zeichenfolge geändert wird, muss die neue Zeichenfolge ein gültiger Anmeldename, die (zumindest als gültig mit der alten Zeichenfolge).  
   
-## Technische Hinweise für SccCreateSubProject und SccGetParentProjectPath  
- Hinzufügen von Projektmappen und Projekten zur quellcodeverwaltung wurde in Visual Studio, um die Anzahl der zu minimieren, die ein Benutzer aufgefordert wird, wählen Sie Speicherorte im Quellcode\-Verwaltungssystem vereinfacht. Diese Änderungen werden von Visual Studio aktiviert, wenn ein Quellcodeverwaltungs\-Plug\-in sowohl die neuen Funktionen unterstützt, die [SccCreateSubProject](../extensibility/scccreatesubproject-function.md) und die `SccGetParentProjectPath` Funktion. Der folgenden Registrierungseintrag kann jedoch verwendet werden, deaktivieren diese Änderungen und das vorherige Verhalten von Visual Studio \(Source Control\-Plug\-in API\-Version 1.1\) zurücksetzen:  
+## <a name="technical-notes-for-scccreatesubproject-and-sccgetparentprojectpath"></a>Technische Hinweise für SccCreateSubProject und SccGetParentProjectPath  
+ Hinzufügen von Projektmappen und Projekte zur quellcodeverwaltung wurde in Visual Studio für die Anzahl der zu minimieren, die ein Benutzer aufgefordert wird, wählen Sie Speicherorte in das Quellcodeverwaltungssystem vereinfacht. Diese Änderungen werden von Visual Studio aktiviert, wenn ein Quellcodeverwaltungs-Plug-in sowohl die neuen Funktionen unterstützt der [SccCreateSubProject](../extensibility/scccreatesubproject-function.md) und die `SccGetParentProjectPath` Funktion. Allerdings kann die folgenden Registrierungseintrag verwendet werden, deaktivieren diese Änderungen, und klicken Sie auf das vorherige Verhalten von Visual Studio (Source Control-Plug-in-API-Version 1.1) zurücksetzen:  
   
- \[HKEY\_CURRENT\_USER\\Software\\Microsoft\\VisualStudio\\8.0\\SourceControl\] "DoNotCreateSolutionRootFolderInSourceControl" \= DWORD: 00000001  
+ [HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl] "DoNotCreateSolutionRootFolderInSourceControl" = DWORD: 00000001  
   
- Wenn dieser Registrierungseintrag nicht vorhanden oder auf DWORD: 00000000 festgelegt ist, versucht Visual Studio, verwenden Sie die neuen Funktionen, `SccCreateSubProject`und`SccGetParentProjectPath`.  
+ Wenn dieses Registrierungseintrags nicht vorhanden ist oder auf DWORD: 00000000 festgelegt ist, versucht Visual Studio, die neuen Funktionen zu verwenden `SccCreateSubProject`und`SccGetParentProjectPath`.  
   
- Wenn der Registrierungseintrag auf DWORD: 00000001 festgelegt ist, Visual Studio versucht nicht, diese neuen Funktionen zu verwenden und die Vorgänge zur Versionskontrolle hinzufügen arbeiten, wie in früheren Versionen von Visual Studio.  
+ Wenn Sie der Registrierungseintrag auf DWORD: 00000001 festgelegt ist, Visual Studio versucht nicht, diese neuen Funktionen zu verwenden und die Vorgänge des Hinzufügens zur quellcodeverwaltung funktionieren, wie in früheren Versionen von Visual Studio.  
   
-## Siehe auch  
- [Source Control\-Plug\-in\-API\-Funktionen](../extensibility/source-control-plug-in-api-functions.md)   
+## <a name="see-also"></a>Siehe auch  
+ [Quellcodeverwaltungsfunktionen-Plug-in-API](../extensibility/source-control-plug-in-api-functions.md)   
  [SccCreateSubProject](../extensibility/scccreatesubproject-function.md)   
  [SccGetProjPath](../extensibility/sccgetprojpath-function.md)

@@ -1,60 +1,62 @@
 ---
-title: "Gewusst wie: Erstellen von Ereignishandlern in Office-Projekten"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "Ereignishandler [Office-Entwicklung in Visual Studio]"
-  - "Ereignisse [Office-Entwicklung in Visual Studio]"
-  - "Visual Basic [Office-Entwicklung in Visual Studio], Ereignishandler"
-  - "Visual C# [Office-Entwicklung in Visual Studio], Ereignishandler"
+title: 'Vorgehensweise: Erstellen von Ereignishandlern in Office-Projekten | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- Visual Basic [Office development in Visual Studio], event handlers
+- event handlers [Office development in Visual Studio]
+- Visual C# [Office development in Visual Studio], event handlers
+- events [Office development in Visual Studio]
 ms.assetid: 2cfd6a45-4c25-4431-b4fc-e0f2c0a72e54
-caps.latest.revision: 31
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 30
+caps.latest.revision: "31"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: af681832a8c298427c13060d858b57b99654953a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Gewusst wie: Erstellen von Ereignishandlern in Office-Projekten
-  Ereignishandler können in Visual Basic und C\# auf unterschiedliche Arten erstellt werden.  In der Entwurfsansicht können Sie die Standardereignishandler für Steuerelemente erstellen, indem Sie auf das Steuerelement doppelklicken. Sie können auch den Ereignisbereich im **Eigenschaftenfenster** verwenden, um Handler für jedes beliebige Ereignis für das Steuerelement zu erstellen.  Wenn Sie sich jedoch in der Codeansicht befinden, möchten Sie zum Erstellen eines Ereignishandlers möglicherweise nicht in die Entwurfsansicht wechseln.  
+# <a name="how-to-create-event-handlers-in-office-projects"></a>Gewusst wie: Erstellen von Ereignishandlern in Office-Projekten
+  Es gibt mehrere Möglichkeiten, Ereignishandler in Visual Basic und c# zu erstellen. In der Entwurfsansicht können Sie die Ereignishandler für Steuerelemente erstellen, indem Sie auf das Steuerelement doppelklicken oder verwenden Sie den Ereignisbereich "von der **Eigenschaften** Fenster Handler für jedes Ereignis auf das Steuerelement zu erstellen. Jedoch, wenn Sie in der Codeansicht sind, nicht empfiehlt, wechseln Sie zur Entwurfsansicht, um einen Ereignishandler zu erstellen.  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
-### So erstellen Sie einen Ereignishandler in Visual Basic  
+### <a name="to-create-an-event-handler-in-visual-basic"></a>So erstellen Sie einen Ereignishandler in Visual Basic  
   
-1.  Wählen Sie oben im Code\-Editor aus der Dropdownliste **Klassenname** das Objekt aus, für das Sie einen Ereignishandler erstellen möchten.  
+1.  Aus der **Klassenname** -Dropdownliste am oberen Rand des Code-Editor, wählen Sie das Objekt, das Sie möchten einen Ereignishandler für erstellen.  
   
     > [!NOTE]  
-    >  Wenn Sie Ereignishandler für `ThisDocument` bzw. `ThisWorkbook` erstellen möchten, müssen Sie in der Dropdownliste **Klassenname** den Eintrag **\(ThisDocument\-Ereignisse\)** bzw. **\(ThisWorkbook\-Ereignisse\)** auswählen.  
+    >  Wenn Sie Ereignishandler für erstellen möchten `ThisDocument` oder `ThisWorkbook`, müssen Sie auswählen, **(ThisDocument-Ereignisse)** oder **(ThisWorkbook-Ereignisse)** in die **Klassenname**Dropdown-Liste  
   
-2.  Wählen Sie oben im Code\-Editor aus der Dropdownliste **Methodenname** das Ereignis aus.  
+2.  Aus der **Methodennamen** Dropdown-Liste im oberen Bereich des Code-Editor wählen Sie das Ereignis.  
   
-     Visual Studio erstellt den Ereignishandler und bewegt die Einfügemarke zum neu erstellten Ereignishandler.  Wenn der Ereignishandler bereits vorhanden ist, wird die Einfügemarke zum vorhandenen Ereignishandler bewegt.  
+     Visual Studio erstellt den Ereignishandler und verschiebt die Einfügemarke an den neu erstellten Ereignishandler. Wenn der Ereignishandler bereits vorhanden ist, verschiebt die Einfügemarke an den vorhandenen Ereignishandler.  
   
-### So erstellen Sie einen Ereignishandler in C\#  
+### <a name="to-create-an-event-handler-in-c"></a>So erstellen Sie einen Ereignishandler in c#  
   
-1.  Erstellen Sie den Ereignisdelegaten im **Startup**\-Ereignis der Klasse, indem Sie den qualifizierten Ereignisnamen gefolgt von einem Leerzeichen eingeben. Geben Sie anschließend "\+\=" ohne darauf folgendes Leerzeichen ein.  Beispiel:  
+1.  Erstellen Sie den Ereignisdelegaten in der **Start** -Ereignis für die Klasse durch den qualifizierten Namen gefolgt von einem Leerzeichen eingeben, und geben dann  **+=**  ohne Leerzeichen im Anschluss. Zum Beispiel:  
   
      `this.<object name>.<event name> +=`  
   
-2.  Drücken Sie am Ende der Codezeile zweimal die TAB\-TASTE.  
+2.  Drücken Sie die TAB-Taste zweimal am Ende der Zeile des Codes.  
   
-     Visual Studio vervollständigt automatisch die Codezeile, erstellt den Ereignishandler und bewegt die Einfügemarke zum neu erstellten Ereignishandler.  
+     Visual Studio automatisch abgeschlossen wird die Codezeile, erstellt den Ereignishandler und verschiebt die Einfügemarke an den neu erstellten Ereignishandler.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Schreiben von Code in Office-Projektmappen](../vsto/writing-code-in-office-solutions.md)   
  [Exemplarische Vorgehensweise: Programmieren in Abhängigkeit von Ereignissen eines NamedRange-Steuerelements](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md)   
- [Aktualisieren von Office-Projektmappen](../vsto/building-office-solutions.md)  
+ [Erstellen von Office-Projektmappen](../vsto/building-office-solutions.md)  
   
   

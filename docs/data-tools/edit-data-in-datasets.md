@@ -1,54 +1,114 @@
 ---
-title: "Bearbeiten von Daten in Datasets | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "aspx"
-helpviewer_keywords: 
-  - "Daten [Visual Studio], Bearbeiten in Datasets"
-  - "Datasets [Visual Basic], Bearbeiten von Daten"
+title: Bearbeiten von Daten in Datasets | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- datasets [Visual Basic], editing data
+- data [Visual Studio], editing in datasets
 ms.assetid: 50d5c580-fbf7-408f-be70-e63ac4f4d0eb
-caps.latest.revision: 15
-caps.handback.revision: 7
-author: "mikeblome"
-ms.author: "mblome"
-manager: "ghogen"
+caps.latest.revision: "15"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.technology: vs-data-tools
+ms.openlocfilehash: bc42474ff9cb4762b43463e5e0929f11d58ad7d0
+ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/09/2017
 ---
-# Bearbeiten von Daten in Datasets
-Die Daten in einem <xref:System.Data.DataSet> werden bearbeitet, indem die Daten in den einzelnen <xref:System.Data.DataTable>\-Objekten bearbeitet werden, die das Dataset bilden.  Das Bearbeiten der Daten in Datentabellen entspricht weitgehend dem Bearbeiten von Daten in einer Datenbanktabelle und kann das Einfügen, Aktualisieren und Löschen von Datensätzen in der Tabelle umfassen.  
+# <a name="edit-data-in-datasets"></a>Bearbeiten von Daten in datasets
+Ähnlich wie die Daten in einer Tabelle in einer Datenbank zu bearbeiten, bearbeiten Sie die Daten in Datentabellen. Der Prozess kann enthalten, einfügen, aktualisieren und Löschen von Datensätzen in der Tabelle. In einem datengebundenen Formular können Sie angeben, welche Felder Benutzer bearbeitet werden. In diesen Fällen behandelt die Infrastruktur für die Datenbindung alle der änderungsnachverfolgung, damit die Änderungen später wieder in die Datenbank gesendet werden können. Wenn Sie programmgesteuert Bearbeitungen, um Daten vornehmen und die Änderungen zurück an die Datenbank gesendet werden sollen, müssen Sie verwenden, die Objekte und Methoden, die die änderungsnachverfolgung für Sie übernimmt.  
   
- Neben dem Ändern der Daten haben Sie auch die Möglichkeit, eine <xref:System.Data.DataTable> so abzufragen, dass bestimmte Datenzeilen zurückgegeben werden, z. B. einzelne Zeilen, bestimmte Versionen von Zeilen \(ursprüngliche und vorgesehene\), nur geänderte Zeilen oder Zeilen mit Fehlern.  
+Sie können auch Abfragen, zusätzlich zum Ändern der tatsächlichen Daten, eine <xref:System.Data.DataTable> bestimmte Datenzeilen zurückgegeben. Beispielsweise können Sie Abfragen für einzelne Zeilen, bestimmte Versionen von Zeilen (ursprüngliche und vorgesehene), geänderte Zeilen oder Zeilen mit Fehlern.  
   
-## Häufige Aufgaben beim Arbeiten mit Datentabellen  
- Die folgende Tabelle enthält Links zu Aufgaben, die beim Bearbeiten und Abfragen von Daten in einem Dataset häufig vorkommen:  
+## <a name="to-edit-rows-in-a-dataset"></a>So bearbeiten Sie die Zeilen in einem dataset  
+So bearbeiten Sie eine vorhandene Zeile in einer <xref:System.Data.DataTable>, müssen Sie zum Suchen der <xref:System.Data.DataRow> Sie bearbeiten, und klicken Sie dann die gewünschten Spalten die aktualisierten Werte zuweisen möchten.  
   
-|Aufgabe|Beschreibung|  
-|-------------|------------------|  
-|Einfügen von neuen Datensätzen in eine Datentabelle.|Erstellen Sie eine neue <xref:System.Data.DataRow>, und fügen Sie sie der Zeilenauflistung der Tabelle hinzu.  Weitere Informationen finden Sie unter [Gewusst wie: Hinzufügen von Zeilen zu einer DataTable](../Topic/How%20to:%20Add%20Rows%20to%20a%20DataTable.md).|  
-|Aktualisieren von vorhandenen Datensätzen in einer Datentabelle.|Weisen Sie einer bestimmten Spalte einer Datenzeile direkt einen Wert zu.  Weitere Informationen finden Sie unter [Gewusst wie: Bearbeiten von Zeilen in einer DataTable](../Topic/How%20to:%20Edit%20Rows%20in%20a%20DataTable.md).|  
-|Löschen von Datensätzen aus einer Datentabelle.|Rufen Sie die <xref:System.Data.DataRow.Delete%2A>\-Methode der Datenzeile auf, die Sie aus der Tabelle entfernen möchten.  Weitere Informationen finden Sie unter [Gewusst wie: Löschen von Zeilen in einer DataTable](../Topic/How%20to:%20Delete%20Rows%20in%20a%20DataTable.md).|  
-|Suchen von geänderten Datensätzen in einer Datentabelle.|Rufen Sie die <xref:System.Data.DataTable.GetChanges%2A>\-Methode einer Datentabelle auf.  Weitere Informationen finden Sie unter [Gewusst wie: Abrufen von geänderten Zeilen](../Topic/How%20to:%20Retrieve%20Changed%20Rows.md).|  
-|Zugreifen auf verschiedene Versionen einer Zeile in einer Datentabelle.|Greifen Sie auf die einzelnen Spalten einer Datenzeile zu, indem Sie die <xref:System.Data.DataRowVersion> übergeben, die Sie anzeigen möchten.  Weitere Informationen finden Sie unter [Gewusst wie: Abrufen spezifischer Versionen einer DataRow](../data-tools/how-to-get-specific-versions-of-a-datarow.md).|  
-|Suchen von Zeilen mit Fehlern in einer Datentabelle.|Überprüfen Sie die <xref:System.Data.DataTable.HasErrors%2A>\-Eigenschaft einer Datentabelle.  Weitere Informationen finden Sie unter [Gewusst wie: Suchen nach Zeilen mit Fehlern](../Topic/How%20to:%20Locate%20Rows%20that%20Have%20Errors.md).|  
+Wenn Sie nicht, dass den Index der Zeile wissen möchten Sie bearbeiten, verwenden Sie die `FindBy` Methode, durch den primären Schlüssel gesucht werden soll:  
   
-## Siehe auch  
- [DataTables](../Topic/DataTables.md)   
- [Vorbereiten der Anwendung auf den Empfang von Daten](../Topic/Preparing%20Your%20Application%20to%20Receive%20Data.md)   
- [Abrufen von Daten für die Anwendung](../data-tools/fetching-data-into-your-application.md)   
- [Bearbeiten von Daten in der Anwendung](../data-tools/editing-data-in-your-application.md)   
- [DataTables](../Topic/DataTables.md)   
- [Exemplarische Vorgehensweisen zur Arbeit mit Daten](../Topic/Data%20Walkthroughs.md)   
- [Binden von Windows Forms\-Steuerelementen an Daten in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)   
- [Übersicht über Datenanwendungen in Visual Studio](../data-tools/overview-of-data-applications-in-visual-studio.md)   
- [Herstellen von Datenverbindungen in Visual Studio](../data-tools/connecting-to-data-in-visual-studio.md)   
- [Binden von Steuerelementen an Daten in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)   
- [Überprüfen von Daten](../Topic/Validating%20Data.md)   
- [Speichern von Daten](../data-tools/saving-data.md)
+[!code-csharp[VbRaddataEditing#3](../data-tools/codesnippet/CSharp/edit-data-in-datasets_1.cs)]
+[!code-vb[VbRaddataEditing#3](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_1.vb)]  
+  
+Wenn Sie wissen, dass der Index der Zeile, Sie können auf zugreifen und Zeilen wie folgt bearbeitet:  
+  
+[!code-csharp[VbRaddataEditing#5](../data-tools/codesnippet/CSharp/edit-data-in-datasets_2.cs)]
+[!code-vb[VbRaddataEditing#5](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_2.vb)]  
+  
+## <a name="to-insert-new-rows-into-a-dataset"></a>So fügen Sie ein Dataset neue Zeilen  
+Anwendungen, die von datengebundenen Steuerelementen in der Regel verwenden neue Datensätze durch Hinzufügen der **hinzufügen** auf die Schaltfläche ein [BindingNavigator-Steuerelement](/dotnet/framework/winforms/controls/bindingnavigator-control-windows-forms).  
+  
+Um neue Datensätze zu einem Dataset manuell hinzuzufügen, erstellen Sie eine neue Datenzeile durch Aufrufen der Methode in das DataTable-Objekt. Fügen Sie dann auf die Zeile an die <xref:System.Data.DataRow> Auflistung (<xref:System.Data.DataTable.Rows%2A>) von der <xref:System.Data.DataTable>:  
+  
+[!code-csharp[VbRaddataEditing#1](../data-tools/codesnippet/CSharp/edit-data-in-datasets_3.cs)]
+[!code-vb[VbRaddataEditing#1](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_3.vb)]  
+  
+Um die Daten beizubehalten, dass das Dataset Updates mit der Datenquelle zu senden muss, verwenden die <xref:System.Data.DataRow.Delete%2A> Methode, um Zeilen in einer Datentabelle zu entfernen. Angenommen, Ihre Anwendung einen TableAdapter verwendet (oder <xref:System.Data.Common.DataAdapter>), TableAdapters `Update` Methode löscht Zeilen in der Datenbank mit einer <xref:System.Data.DataRow.RowState%2A> von <xref:System.Data.DataRowState.Deleted>.  
+  
+Wenn Ihre Anwendung nicht zum Senden von Updates an einer Datenquelle erforderlich ist, dann es ist möglich, Datensätze zu entfernen, indem Sie direkten Zugriff auf die datenzeilenauflistung (<xref:System.Data.DataRowCollection.Remove%2A>).  
+  
+#### <a name="to-delete-records-from-a-data-table"></a>Zum Löschen von Datensätzen aus einer Datentabelle  
+  
+-   Rufen Sie die <xref:System.Data.DataRow.Delete%2A> Methode von einer <xref:System.Data.DataRow>.  
+  
+     Diese Methode den Datensatz nicht physisch entfernt werden. Stattdessen wird es der Datensatz für die Löschung gekennzeichnet.  
+  
+    > [!NOTE]
+    >  Wenn Sie die Count-Eigenschaft des erhalten eine <xref:System.Data.DataRowCollection>, das Rekursionsergebnis enthält Datensätze, die zum Löschen markiert wurden. Um eine genaue Anzahl von Datensätzen zu erhalten, die für die Löschung markiert werden, können Sie eine Schleife durch die Auflistung der <xref:System.Data.DataRow.RowState%2A> Eigenschaft jedes Datensatzes. (Zum Löschen markierte Einträge enthalten eine <xref:System.Data.DataRow.RowState%2A> von <xref:System.Data.DataRowState.Deleted>.) Alternativ können Sie Erstellen einer Datenansicht eines Datasets, auf denen Zeilenstatus Filter basiert und die Count-Eigenschaft von dort abrufen.  
+  
+Im folgende Beispiel wird gezeigt, wie zum Aufrufen der <xref:System.Data.DataRow.Delete%2A> Methode zum Kennzeichnen der ersten Zeile in der `Customers` Tabelle als gelöscht:  
+  
+[!code-csharp[VbRaddataEditing#8](../data-tools/codesnippet/CSharp/edit-data-in-datasets_4.cs)]
+[!code-vb[VbRaddataEditing#8](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_4.vb)]  
+  
+## <a name="determine-if-there-are-changed-rows"></a>Bestimmen Sie, ob geänderte Zeilen vorhanden sind  
+Wenn Änderungen an Datensätzen in einem Dataset vorgenommen werden, werden die Informationen zu diesen Änderungen gespeichert, bis ein Commit ausgeführt wird. Wenn Sie aufrufen, übertragen Sie die Änderungen der `AcceptChanges` Methode einer Datasets oder einer Tabelle oder beim Aufrufen der `Update` -Methode eines TableAdapter oder Datenadapters.  
+  
+Änderungen für nachverfolgte zweierlei in jeder Datenzeile:  
+  
+-   Jede Datenzeile enthält Informationen, die im Zusammenhang mit der <xref:System.Data.DataRow.RowState%2A> (z. B. <xref:System.Data.DataRowState.Added>, <xref:System.Data.DataRowState.Modified>, <xref:System.Data.DataRowState.Deleted>, oder <xref:System.Data.DataRowState.Unchanged>).  
+  
+-   Jede geänderte Datenzeile enthält mehrere Versionen der betreffenden Zeile (<xref:System.Data.DataRowVersion>), die ursprüngliche Version (vor den Änderungen) und die aktuelle Version (nach den Änderungen). Während des Zeitraums, wenn eine Änderung aussteht (die Zeit, wenn Sie auf reagieren können, die <xref:System.Data.DataTable.RowChanging> Ereignis), eine dritte Version – die vorläufige Version – ist verfügbar. 
+  
+Wenn das Dataset geändert wurde, gibt die <xref:System.Data.DataSet.HasChanges%2A>-Methode eines Datasets den Wert `true` zurück. Nachdem festgestellt wurde, dass geänderte Zeilen vorhanden sind, können Sie die `GetChanges`-Methode eines <xref:System.Data.DataSet> oder einer <xref:System.Data.DataTable> aufrufen, um die Gruppe der geänderten Zeilen zurückzugeben.   
+  
+#### <a name="to-determine-if-changes-have-been-made-to-any-rows"></a>Um festzustellen, ob Änderungen an den Zeilen vorgenommen wurden  
+  
+-   Rufen Sie die <xref:System.Data.DataSet.HasChanges%2A>-Methode eines Datasets auf, um geänderte Zeilen zu suchen.  
+  
+Das folgende Beispiel zeigt, wie den Rückgabewert überprüft die <xref:System.Data.DataSet.HasChanges%2A> -Methode feststellen, ob alle geänderten Zeilen vorhanden, in einem Dataset mit dem Namen sind `NorthwindDataset1`:  
+  
+[!code-csharp[VbRaddataEditing#12](../data-tools/codesnippet/CSharp/edit-data-in-datasets_5.cs)]
+[!code-vb[VbRaddataEditing#12](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_5.vb)]  
+  
+## <a name="determine-the-type-of-changes"></a>Bestimmen Sie die Art der Änderungen  
+Sie können auch überprüfen, um festzustellen, welche Art von Änderungen vorgenommen wurden in einem Dataset durch Übergeben eines Werts aus der <xref:System.Data.DataRowState> -Enumeration der <xref:System.Data.DataSet.HasChanges%2A> Methode.  
+  
+#### <a name="to-determine-what-type-of-changes-have-been-made-to-a-row"></a>So stellen Sie fest, welche Art von Änderungen an einer Zeile vorgenommen wurden  
+  
+-   Übergeben Sie einen <xref:System.Data.DataRowState>-Wert an die <xref:System.Data.DataSet.HasChanges%2A>-Methode.  
+  
+Das folgende Beispiel zeigt, wie Sie ein Dataset namens `NorthwindDataset1` zu bestimmen, ob sie alle neuen Zeilen hinzugefügt wurden:  
+  
+[!code-csharp[VbRaddataEditing#13](../data-tools/codesnippet/CSharp/edit-data-in-datasets_6.cs)]
+[!code-vb[VbRaddataEditing#13](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_6.vb)]  
+  
+## <a name="to-locate-rows-that-have-errors"></a>Um Zeilen zu suchen, die Fehler enthalten  
+Bei der Arbeit mit den einzelnen Spalten und Zeilen mit Daten können Fehler auftreten. Sehen Sie sich die `HasErrors` Eigenschaft, um zu bestimmen, ob Fehler vorhanden, in sind einem <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, oder <xref:System.Data.DataRow>.  
+  
+1.  Überprüfen Sie die `HasErrors` Eigenschaft, um festzustellen, ob Fehler im Dataset vorhanden sind.  
+  
+2.  Wenn die `HasErrors` Eigenschaft ist `true`, durchlaufen die Auflistungen von Tabellen, und klicken Sie dann das mit die Zeilen, die Zeile mit dem Fehler finden.  
+
+[!code-csharp[VbRaddataEditing#23](../data-tools/codesnippet/CSharp/edit-data-in-datasets_7.cs)]
+[!code-vb[VbRaddataEditing#23](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_7.vb)]
+
+## <a name="see-also"></a>Siehe auch
+[Datasettools in Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)

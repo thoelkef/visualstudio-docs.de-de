@@ -1,58 +1,63 @@
 ---
-title: "MaxFrameworkVersion-Element (Visual Studio-Vorlagen) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "<MaxFrameworkVersion>-Element (Visual Studio-Vorlagen)"
-  - "MaxFrameworkVersion-Element (Visual Studio-Vorlagen)"
+title: MaxFrameworkVersion-Element (Visual Studio-Vorlagen) | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- <MaxFrameworkVersion> Element (Visual Studio Templates)
+- MaxFrameworkVersion Element (Visual Studio Templates)
 ms.assetid: f732a9d3-fc29-405b-9298-01ea83fc58b8
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: da1b30274254c5c1dd81ad20dd64e8749672f96e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# MaxFrameworkVersion-Element (Visual Studio-Vorlagen)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Gibt die höchste Version von .NET Framework an, die für die Vorlage erforderlich ist.  Sie bestimmt, ob die Vorlage im Abschnitt **Vorlagen** des Dialogfelds **Neues Projekt hinzufügen** angezeigt werden soll, basierend auf dem Wert, der im Feld **Framework\-Zielversion** des Dialogfelds **Neues Projekt hinzufügen** ausgewählt wurde.  
+# <a name="maxframeworkversion-element-visual-studio-templates"></a>MaxFrameworkVersion-Element (Visual Studio-Vorlagen)
+Gibt die maximale Version von .NET Framework, die von der Vorlage erforderlich ist. Sie bestimmt, ob die Vorlage in angezeigt wird der **Vorlagen** Teil der **neues Projekt hinzufügen** (Dialogfeld), basierend auf dem Wert, der im ausgewählt ist die **Zielframeworkversion** im Feld der **neues Projekt hinzufügen** (Dialogfeld).  
   
-## Syntax  
+ \<VSTemplate >  
+ \<MaxFrameworkVersion >  
+  
+## <a name="syntax"></a>Syntax  
   
 ```  
 <MaxFrameworkVersion> ... </MaxFrameworkVersion>  
 ```  
   
-## Attribute und Elemente  
+## <a name="attributes-and-elements"></a>Attribute und Elemente  
  In den folgenden Abschnitten werden Attribute sowie untergeordnete und übergeordnete Elemente beschrieben.  
   
-### Attribute  
+### <a name="attributes"></a>Attribute  
  Keine.  
   
-### Untergeordnete Elemente  
- Keine.  
+### <a name="child-elements"></a>Untergeordnete Elemente  
+ Keine  
   
-### Übergeordnete Elemente  
+### <a name="parent-elements"></a>Übergeordnete Elemente  
   
-|Element|Description|  
+|Element|Beschreibung|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Erforderliches Element.<br /><br /> Kategorisiert die Vorlage und definiert, wie diese in den Dialogfeldern **Neues Projekt** oder **Neues Element hinzufügen** angezeigt wird.|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Erforderliches Element.<br /><br /> Kategorisiert die Vorlage und definiert, wie er angezeigt wird, entweder in der **neues Projekt** oder **neues Element hinzufügen** (Dialogfeld).|  
   
-## Textwert  
+## <a name="text-value"></a>Textwert  
  Ein Textwert ist erforderlich.  
   
- Der Text muss die höchste Versionsnummer von .NET Framework sein, die von der Vorlage zugelassen wird.  
+ Der Text muss die höchste Versionsnummer von .NET Framework, die die Vorlage nicht zulässig ist.  
   
-## Hinweise  
- `MaxFrameworkVersion` ist ein optionales Element.  Das Element im `TemplateData`\-Abschnitt der VSTEMPLATE\-Datei fungiert als Filter für den Abschnitt **Vorlagen** des Dialogfelds **Neues Projekt hinzufügen**.  Nur Vorlagen, deren .NET Framework\-Anforderungen kleiner sind als `MaxFrameworkVersion`\-Elementwerte, werden angezeigt, je nach dem Wert, der im Feld **Framework\-Zielversion** im Dialogfeld **Neues Projekt hinzufügen** ausgewählt wird.  Das `MaxFrameworkVersion`\-Element sollte weggelassen werden, es sei denn, es ist erforderlich, damit Vorlagen nicht versehentlich angezeigt werden, wenn sie mit aktuelleren Versionen von .NET Framework verwendet werden.  
+## <a name="remarks"></a>Hinweise  
+ `MaxFrameworkVersion` ist ein optionales Element. Das Element in der `TemplateData` Abschnitt der VSTEMPLATE-Datei dient als Filter für die **Vorlagen** Teil der **neues Projekt hinzufügen** (Dialogfeld). Nur Vorlagen, deren für .NET Framework sind, weniger als `MaxFrameworkVersion` Elementwerte angezeigt, auf Grundlage des Werts, der im ausgewählt ist die **Zielframeworkversion** im Feld der **neues Projekt hinzufügen**(Dialogfeld). Die `MaxFrameworkVersion` Element sollte weggelassen werden, es sei denn, es ist erforderlich, damit nicht versehentlich dazu führen, dass Vorlagen angezeigt wird, wenn sie durch neuere Versionen von .NET Framework verwendet werden.  
   
-## Beispiel  
- Im folgenden Beispiel werden die Metadaten für die Vorlage einer Standardklasse in [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] veranschaulicht.  
+## <a name="example"></a>Beispiel  
+ Das folgende Beispiel veranschaulicht die Metadaten für einen Standard [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] Klassenvorlage.  
   
 ```  
 <VSTemplate Type="Item" Version="3.0.0"  
@@ -71,8 +76,8 @@ Gibt die höchste Version von .NET Framework an, die für die Vorlage erforderli
 </VSTemplate>  
 ```  
   
- In diesem Beispiel ist die maximale Version von .NET Framework, die für die von `MaxFrameworkVersion` dargestellte Vorlage erforderlich ist, 3.5.  Die oben stehende Vorlage wird nur angezeigt, wenn Sie entweder 3.0 oder 3.5 im Feld **Framework\-Zielversion** im Dialogfeld **Neues Projekt hinzufügen** auswählen.  
+ In diesem Beispiel die maximale Version des .NET Framework, die von der Vorlage erforderlich ist, die durch dargestellt `MaxFrameworkVersion`, 3.5 ist. Die oben stehende Vorlage wird nur angezeigt, wenn Auswahl 3.0 oder 3.5 in der **Zielframeworkversion** Feld der **neues Projekt hinzufügen** (Dialogfeld).  
   
-## Siehe auch  
- [Schemareferenz zu Visual Studio\-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)   
- [Erstellen von benutzerdefinierten Projekt\- und Elementvorlagen](../ide/creating-project-and-item-templates.md)
+## <a name="see-also"></a>Siehe auch  
+ [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)   
+ [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)

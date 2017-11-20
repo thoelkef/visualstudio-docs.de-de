@@ -1,30 +1,31 @@
 ---
-title: "Angeben von Dateihandler f&#252;r Dateinamenerweiterungen | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Dateityp, Dateihandler angeben"
+title: "Angeben von Dateihandlern für Dateinamenerweiterungen | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: file extensions, specifying file handlers
 ms.assetid: e3de4730-a95c-465a-b3b2-92ca85364ad7
-caps.latest.revision: 18
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 18
+caps.latest.revision: "18"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 5833285a3d9ce9df02dc0359379ea623054588a8
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Angeben von Dateihandler f&#252;r Dateinamenerweiterungen
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Es gibt verschiedene Arten die Anwendung zu ermitteln, die einer bestimmten Datei Erweiterung eine Datei verarbeitet. Die Verben OpenWithList und "OpenWithProgIds" werden auf zweierlei Weise Dateihandler unter der Registrierungseintrag für die Erweiterung angegeben.  
+# <a name="specifying-file-handlers-for-file-name-extensions"></a>Angeben von Dateihandlern für Dateinamenerweiterungen
+Es gibt zahlreiche Möglichkeiten, um die Anwendung zu bestimmen, die eine Datei verarbeitet, besitzt eine bestimmte Dateierweiterung an. Die Verben OpenWithList und "OpenWithProgIds" sind zwei Möglichkeiten, unter dem Registrierungseintrag für die Dateierweiterung dateihandlern anzugeben.  
   
-## OpenWithList\-Verb  
- Wenn Sie eine Datei im Windows\-Explorer mit der rechten Maustaste, sehen Sie die **Öffnen** Befehl. Wenn mehr als ein Produkt mit der Erweiterung verknüpft ist, finden Sie eine **Öffnen mit** Untermenü.  
+## <a name="openwithlist-verb"></a>OpenWithList-Verb  
+ Wenn Sie eine Datei im Windows-Explorer mit der rechten Maustaste, sehen Sie die **öffnen** Befehl. Wenn mehr als ein Produkt mit der Erweiterung zugeordnet ist, sehen Sie ein **Öffnen mit** Untermenü.  
   
- Sie können verschiedene Anwendungen, um eine Erweiterung zu öffnen, durch Festlegen des OpenWithList\-Schlüssels für die Erweiterung in HKEY\_CLASSES\_ROOT registrieren. Die unter diesem Schlüssel für die Erweiterung aufgeführten Programme werden unter der **Empfohlene Programme** Spaltenüberschrift in der **Öffnen mit** \(Dialogfeld\). Das folgende Beispiel zeigt die Anwendung registriert, sodass Sie um die Erweiterung .vcproj zu öffnen.  
+ Sie können verschiedene Anwendungen zu eine Erweiterung öffnen, durch Festlegen des OpenWithList-Schlüssels für die Dateierweiterung in HKEY_CLASSES_ROOT registrieren. Unter diesem Schlüssel für die Dateierweiterung aufgeführten Anwendungen werden unter der **Empfohlene Programme** Überschrift in der **Öffnen mit** (Dialogfeld). Das folgende Beispiel zeigt die Anwendungen, die zum Öffnen der .vcproj Erweiterungs registriert.  
   
 ```  
 HKEY_CLASSES_ROOT\  
@@ -35,25 +36,25 @@ HKEY_CLASSES_ROOT\
 ```  
   
 > [!NOTE]
->  Angeben von Clientanwendungen bei Schlüsseln wird aus der Liste unter HKEY\_CLASSES\_ROOT\\Applications.  
+>  Angeben von Anwendungen bei Schlüsseln wird aus der Liste unter HKEY_CLASSES_ROOT\Applications.  
   
- Durch Hinzufügen eines Schlüssels OpenWithList, deklarieren Sie, dass Ihre Anwendung Erweiterung unterstützt, auch wenn eine andere Anwendung den Besitz der Erweiterung übernimmt. Dies kann eine zukünftige Version der Anwendung oder einer anderen Anwendung sein.  
+ Durch Hinzufügen eines Schlüssels OpenWithList, deklarieren Sie, dass Ihre Anwendung eine Dateierweiterung unterstützt, auch wenn eine andere Anwendung den Besitz der Erweiterung akzeptiert. Dies ist möglicherweise eine zukünftige Version der Anwendung oder einer anderen Anwendung.  
   
-## "OpenWithProgIds"  
- Programmbezeichner \(ProgIDs\) sind Anzeigenamen von ClassIDs, die eine Version einer Anwendung oder COM\-Objekt zu identifizieren. Jede Co erstellbares Objekt sollte eine eigene ProgID verfügen. VisualStudio.DTE.7.1 beginnt z. B. Visual Studio .NET 2003, während des starts VisualStudio.DTE.10.0 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Als Besitzer eines Projekttyp oder Projektelementtyp müssen Sie eine ProgID hängt von der Version für Ihre Erweiterung erstellen. Diese ProgIDs möglicherweise redundant sein, mehr als eine ProgID dieselbe Anwendung starten kann. Weitere Informationen finden Sie unter [Registrieren von Verben für Dateinamenerweiterungen](../extensibility/registering-verbs-for-file-name-extensions.md).  
+## <a name="openwithprogids"></a>"OpenWithProgIds"  
+ Programmbezeichner (ProgIDs) sind Anzeigenamen von ClassIDs, die eine Version einer Anwendung oder COM-Objekt zu identifizieren. Jedes gemeinsam erstellbares Objekt sollte eine eigene ProgID haben. Beispielsweise VisualStudio.DTE.7.1 startet Visual Studio .NET 2003, während des starts VisualStudio.DTE.10.0 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Als Besitzer einer Projekttyp oder Projektelementtyp müssen Sie eine versionsspezifische ProgID für die Dateierweiterung erstellen. Diese ProgIDs möglicherweise darin, dass mehr als eine ProgID derselben Anwendung möglicherweise schon redundant. Weitere Informationen finden Sie unter [registrieren Verben für Dateinamenerweiterungen](../extensibility/registering-verbs-for-file-name-extensions.md).  
   
- Verwenden Sie die folgende Benennungskonvention für versionierte Datei ProgIDs, um mit der Registrierung von anderen Anbietern Duplikation zu vermeiden:  
+ Verwenden Sie die folgende Benennungskonvention für mit Versionsangabe Datei ProgIDs, um mit der Registrierung von anderen Anbietern Duplikation zu vermeiden:  
   
 |Dateierweiterung|Mit Versionsangabe ProgID|  
-|----------------------|-------------------------------|  
-|.Extension|Produktname. extension.versionMajor.versionMinor|  
+|--------------------|----------------------|  
+|.Extension|ProductName. extension.versionMajor.versionMinor|  
   
- Sie können verschiedene Anwendungen, die eine bestimmten Erweiterung öffnen, indem die HKEY\_CLASSES\_ROOT\\ mit Versionsangabe ProgIDs als Werte hinzugefügt werden registrieren*\< Erweiterung \>*\\OpenWithProgids\-Schlüssel. Dieser Registrierungsschlüssel enthält eine Liste der alternativen ProgIDs, die mit der Erweiterung verknüpft ist. Die Anwendung, die die aufgelisteten ProgIDs zugeordnet angezeigt, der **Öffnen mit***Produktname* Untermenü. Wenn dieselbe Anwendung, sowohl angegeben wird die `OpenWithList` und `OpenWithProgids` Schlüssel, das Betriebssystem führt die Duplikate.  
+ Registrieren Sie andere Anwendungen, die eine bestimmte Dateierweiterung zu öffnen, indem die HKEY_CLASSES_ROOT mit Versionsangabe versionsabhängige Programm-IDs als Werte hinzugefügt werden\\*\<Erweiterung >*\OpenWithProgids Schlüssel. Dieser Registrierungsschlüssel enthält eine Liste von alternativen Programm-IDs, die mit der Dateierweiterung verknüpft sind. Die aufgelisteten ProgIDs zugeordneten Anwendungen angezeigt werden, der **Öffnen mit***Produktname* Untermenü. Wenn dieselbe Anwendung, sowohl angegeben wird die `OpenWithList` und `OpenWithProgids` Schlüssel, das Betriebssystem führt die Duplikate.  
   
 > [!NOTE]
->  Die `OpenWithProgids` Schlüssel wird nur in Windows XP unterstützt. Da andere Betriebssysteme diesem Schlüssel ignorieren möchten, verwenden Sie nicht es wie die Registrierung nur für Dateihandler. Verwenden Sie diesen Schlüssel, um eine bessere benutzererfahrung in Windows XP bereitzustellen.  
+>  Die `OpenWithProgids` Schlüssel wird nur unter Windows XP unterstützt. Da andere Betriebssysteme auf diesen Schlüssel möchten ignorieren, nicht verwenden Sie sie als einzige Registrierung für Dateihandler. Verwenden Sie diesen Schlüssel, um eine bessere benutzererfahrung in Windows XP.  
   
- Fügen Sie die gewünschten ProgIDs, als Werte des Typs REG\_NONE. Der folgende Code bietet ein Beispiel für das Registrieren von Programm\-IDs für Erweiterung \(.*ext*\).  
+ Fügen Sie die gewünschten versionsabhängige Programm-IDs als Werte des Typs REG_NONE hinzu. Der folgende Code enthält ein Beispiel der Registrierung von Programm-IDs für die Dateierweiterung (. *Ext*).  
   
 ```  
 HKEY_CLASSES_ROOT\  
@@ -64,7 +65,7 @@ HKEY_CLASSES_ROOT\
          otherprogid   REG_NONE (zero-length binary value)  
 ```  
   
- Die ProgID angegeben werden, da der Standardwert für die Erweiterung der Standardhandler für die Datei ist. Wenn Sie die ProgID für Erweiterung ändern, die im Lieferumfang von einer früheren Version von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] oder von anderen Programmen ausgeführt werden können, und registrieren Sie die `OpenWithProgids` Schlüssel für die Dateierweiterung, und geben Sie die neue ProgID in der Liste zusammen mit den alten ProgIDs, die Sie unterstützen. Zum Beispiel:  
+ Die ProgID angegeben, wie der Standardwert für die Dateierweiterung der Standardhandler für die Datei ist. Wenn Sie die ProgID für die Dateierweiterung ändern, die mit einer früheren Version von geliefert [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] oder von anderen Anwendungen ausgeführt werden können, und registrieren Sie die `OpenWithProgids` Schlüssel für die Dateierweiterung, und geben Sie die neue ProgID in der Liste zusammen mit die alte ProgIDs, die Sie unterstützen. Zum Beispiel:  
   
 ```  
 HKEY_CLASSES_ROOT\  
@@ -76,8 +77,8 @@ HKEY_CLASSES_ROOT\
          VisualStudio.vcproj.14.0 //new progid  
 ```  
   
- Wenn der alte ProgID Verben zugeordnet, diese Verben werden auch angezeigt, unter **Öffnen mit** *Produktname* im Kontextmenü.  
+ Wenn der alte ProgID umfasst Verben zugeordnet, diese Verben werden auch angezeigt, unter **Öffnen mit** *Produktname* im Kontextmenü.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Informationen zu Dateinamenerweiterungen](../extensibility/about-file-name-extensions.md)   
- [Registrieren von Verben für Dateinamenerweiterungen](../extensibility/registering-verbs-for-file-name-extensions.md)
+ [Registrieren von Verben für Dateierweiterungen](../extensibility/registering-verbs-for-file-name-extensions.md)

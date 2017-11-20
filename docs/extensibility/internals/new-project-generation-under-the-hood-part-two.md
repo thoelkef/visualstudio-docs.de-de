@@ -4,37 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - projects [Visual Studio], new project dialog
 - projects [Visual Studio], new project generation
 ms.assetid: 73ce91d8-0ab1-4a1f-bf12-4d3c49c01e13
-caps.latest.revision: 14
+caps.latest.revision: "14"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Machine Translation
-ms.sourcegitcommit: 5581224b17a7b42f65b69f741f984a144d78fc26
-ms.openlocfilehash: 859eeac9c2fd322dcf231e9c70fe83b92b099111
-ms.contentlocale: de-de
-ms.lasthandoff: 04/04/2017
-
+ms.openlocfilehash: f7dc04752b034f666dfcb1d72b500f2c12f54fba
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="new-project-generation-under-the-hood-part-two"></a>Neue Projektgenerierung: Hinter den Kulissen Teil 2
 In [neue Projekterstellung: Details, Teil 1](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) wurde erläutert, wie die **neues Projekt** Dialogfeld Feld wird aufgefüllt. Angenommen, Sie haben ausgewählt, eine **Visual C#-Windows-Anwendung**, ausgefüllten der **Namen** und **Speicherort** Textfelder, und klicken auf OK.  
@@ -95,7 +80,7 @@ namespace Simple
   
  Erläutert die \<TemplateData > im Abschnitt der [neue Projekterstellung: Details, Teil 1](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md). Die Tags in diesem Abschnitt werden verwendet, um die Darstellung der steuern die **neues Projekt** (Dialogfeld).  
   
- Die Tags in der \<TemplateContent > Abschnitt Steuerelement die Generierung von neuen Projekten und Projektelementen. So sieht die \<TemplateContent > aus der cswindowsapplication.vstemplate-Datei im Ordner "\Programme\Microsoft Visual Studio 8\Common7\IDE\ProjectTemplates\CSharp\Windows\1033\WindowsApplication.zip".  
+ Die Tags in der \<TemplateContent >-Abschnitt Steuerelement die Generierung von neuen Projekten und Projektelementen. So sieht die \<TemplateContent > aus der cswindowsapplication.vstemplate-Datei im Ordner "\Programme\Microsoft Visual Studio 8\Common7\IDE\ProjectTemplates\CSharp\Windows\1033\WindowsApplication.zip".  
   
 ```  
 <TemplateContent>  
@@ -129,7 +114,7 @@ namespace Simple
 </TemplateContent>  
 ```  
   
- Die \<Projekt > Tag steuert die Generierung eines Projekts, und die \<ProjectItem > Tag steuert die Generierung des ein Projektelement. Wenn der Parameter ReplaceParameters auf "true" festgelegt ist, wird die Vorlage alle Vorlagenparameter in der Projektdatei oder Element anpassen. In diesem Fall werden alle Projektelemente angezeigt, mit Ausnahme von Settings.settings angepasst.  
+ Die \<Projekt > Tag steuert die Generierung eines Projekts, und die \<ProjectItem >-Tag steuert die Generierung des ein Projektelement. Wenn der Parameter ReplaceParameters auf "true" festgelegt ist, wird die Vorlage alle Vorlagenparameter in der Projektdatei oder Element anpassen. In diesem Fall werden alle Projektelemente angezeigt, mit Ausnahme von Settings.settings angepasst.  
   
  Der TargetFileName-Parameter gibt den Namen und den relativen Pfad der resultierenden Datei des Projekts oder des Elements. Dadurch können Sie eine Ordnerstruktur für das Projekt zu erstellen. Wenn Sie dieses Argument nicht angeben, wird das Projektelement den gleichen Namen wie die Projektelementvorlage haben.  
   
@@ -137,7 +122,7 @@ namespace Simple
   
  ![SimpleSolution](../../extensibility/internals/media/simplesolution.png "SimpleSolution")  
   
- Die erste und einzige \<Projekt > Tag in die Vorlage lautet:  
+ Die erste und einzige \<Projekt >-Tag in die Vorlage lautet:  
   
 ```  
 <Project File="WindowsApplication.csproj" ReplaceParameters="true">  
@@ -148,7 +133,7 @@ namespace Simple
 ### <a name="designers-and-references"></a>Designer und Verweise  
  Im Projektmappen-Explorer sehen Sie, dass der Ordner "Konfigurationseigenschaften" vorhanden ist und die erwarteten Dateien enthält. Aber was Projekt verweist, und Designerdatei Abhängigkeiten, z. B. Resources.Designer.cs auf "Resources.resx" und "Form1.Designer.cs" auf "Form1.cs"?  Diese werden in der Datei Simple.csproj eingerichtet, wenn sie generiert werden.  
   
- So sieht die \<ItemGroup > aus Simple.csproj, die den Verweisen des Projekts erstellt:  
+ So sieht die \<ItemGroup > von Simple.csproj, die die Projektverweisen erstellt:  
   
 ```  
 <ItemGroup>  

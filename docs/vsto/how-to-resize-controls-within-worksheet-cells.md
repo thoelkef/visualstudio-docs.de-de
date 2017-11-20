@@ -1,12 +1,10 @@
 ---
-title: 'How to: Resize Controls Within Worksheet Cells | Microsoft Docs'
+title: "Vorgehensweise: Ändern der Größe Steuerelementen innerhalb der Arbeitsblattzellen | Microsoft Docs"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -18,53 +16,53 @@ helpviewer_keywords:
 - worksheets, resizing
 - Windows Forms controls [Office development in Visual Studio], resizing
 ms.assetid: 1439db4a-e64b-4381-a6e6-605ba94db3de
-caps.latest.revision: 33
-author: kempb
-ms.author: kempb
+caps.latest.revision: "33"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 03a56a89259bd1f50be85ea244c97667bad906e1
-ms.contentlocale: de-de
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: 035021b3a49bd3fb2af2863e3c8a9b2f88c56077
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="how-to-resize-controls-within-worksheet-cells"></a>How to: Resize Controls Within Worksheet Cells
-  When you resize columns or rows on a worksheet, any host controls contained in the cells automatically resize to the height or width of the cell that was resized. Windows Forms controls do not resize automatically by default.  
+# <a name="how-to-resize-controls-within-worksheet-cells"></a>Gewusst wie: Ändern der Größe von Steuerelementen innerhalb der Arbeitsblattzellen
+  Wenn Sie die Spalten oder Zeilen in einem Arbeitsblatt Größe, ändern Sie die Größe alle Hoststeuerelemente, die in den Zellen enthalten sind, automatisch an die Höhe oder Breite der Zelle, die Größe geändert wurde. Windows Forms-Steuerelemente sind standardmäßig nicht automatisch angepasst.  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
   
- If you add the controls at design time, you must set positioning options for each control.  
+ Wenn Sie die Steuerelemente zur Entwurfszeit hinzufügen, müssen Sie die Positionierungsoptionen für jedes Steuerelement festlegen.  
   
- If you add a Windows Forms control programmatically and supply a range argument, the control automatically resizes when a cell within the range is resized. For more information, see [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md).  
+ Wenn Sie ein Windows Forms-Steuerelement programmgesteuert hinzufügen, und geben Sie ein Bereichsargument, ändert die Größe des Steuerelements automatisch beim Ändern der Größe einer Zelle innerhalb des Bereichs. Weitere Informationen finden Sie unter [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
-## <a name="resizing-controls-at-design-time"></a>Resizing Controls at Design Time  
+## <a name="resizing-controls-at-design-time"></a>Ändern der Größe von Steuerelementen zur Entwurfszeit  
   
-#### <a name="to-make-controls-resize-with-cells-at-design-time"></a>To make controls resize with cells at design time  
+#### <a name="to-make-controls-resize-with-cells-at-design-time"></a>Um zur Entwurfszeit mit Zellen Größe von Steuerelementen zu machen.  
   
-1.  From the **Toolbox**, drag a Windows Forms control to a worksheet.  
+1.  Aus der **Toolbox**, ziehen Sie ein Windows Forms-Steuerelement zu einem Arbeitsblatt.  
   
-2.  Right-click the control, and then click **Format Control**.  
+2.  Maustaste auf das Steuerelement, und klicken Sie dann auf **Formatsteuerung**.  
   
-3.  In the **Format Control** dialog box, click the **Properties** tab.  
+3.  In der **Formatsteuerung** (Dialogfeld), klicken Sie auf die **Eigenschaften** Registerkarte.  
   
-4.  Under **Object Positioning**, select the **Move and size with cells** option, and then click **OK**.  
+4.  Klicken Sie unter **Objektposition**, wählen die **Größe und mit Zellen** aus, und klicken Sie dann auf **OK**.  
   
-     When you resize the cell that contains the control, the control resizes to fit the cell.  
+     Wenn Sie die Größe der Zelle, die das Steuerelement enthält, wird das Steuerelement die Zelle angepasst.  
   
-## <a name="resizing-controls-at-run-time"></a>Resizing Controls at Run Time  
- If you add a Windows Forms control at run time and pass in a <xref:Microsoft.Office.Interop.Excel.Range> as the location for the control, the control will automatically resize when the worksheet cell that contains the range is resized.  
+## <a name="resizing-controls-at-run-time"></a>Ändern der Größe von Steuerelementen zur Laufzeit  
+ Wenn Sie ein Windows Forms-Steuerelement zur Laufzeit hinzufügen, und übergeben Sie eine <xref:Microsoft.Office.Interop.Excel.Range> als Speicherort für das Steuerelement, wird automatisch die Größe des Steuerelements beim Ändern der Größe der Zelle des Arbeitsblatts beschrieben, die der Bereich enthält.  
   
-#### <a name="to-make-controls-resize-with-cells-at-run-time"></a>To make controls resize with cells at run time  
+#### <a name="to-make-controls-resize-with-cells-at-run-time"></a>Um Steuerelemente zur Laufzeit mit Zellen ändern  
   
-1.  Add a control to range A1.  
+1.  Fügen Sie ein Steuerelement zum Bereich A1.  
   
-     [!code-vb[Trin_VstcoreProgrammingControlsExcel#5](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#5)]  [!code-csharp[Trin_VstcoreProgrammingControlsExcel#5](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#5)]  
+     [!code-vb[Trin_VstcoreProgrammingControlsExcel#5](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#5)]
+     [!code-csharp[Trin_VstcoreProgrammingControlsExcel#5](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#5)]  
   
-     When you resize the cell that contains the control, the control resizes to fit the cell.  
+     Wenn Sie die Größe der Zelle, die das Steuerelement enthält, wird das Steuerelement die Zelle angepasst.  
   
-## <a name="resetting-control-placement"></a>Resetting Control Placement  
- You can reset the placement and resizing of the control by setting the `Placement` property to one of the following <xref:Microsoft.Office.Interop.Excel.XlPlacement> values:  
+## <a name="resetting-control-placement"></a>Zurücksetzen von Steuerelementen  
+ Sie können zurücksetzen, die Platzierung und Ändern der Größe des Steuerelements durch Festlegen der `Placement` -Eigenschaft auf einen der folgenden <xref:Microsoft.Office.Interop.Excel.XlPlacement> Werte:  
   
 -   <xref:Microsoft.Office.Interop.Excel.XlPlacement.xlFreeFloating>  
   
@@ -72,16 +70,17 @@ ms.lasthandoff: 08/30/2017
   
 -   <xref:Microsoft.Office.Interop.Excel.XlPlacement.xlMoveAndSize>  
   
-#### <a name="to-change-the-behavior-of-a-control-so-that-it-does-not-resize-or-move-with-the-cell"></a>To change the behavior of a control so that it does not resize or move with the cell  
+#### <a name="to-change-the-behavior-of-a-control-so-that-it-does-not-resize-or-move-with-the-cell"></a>Um das Verhalten eines Steuerelements ändern, damit ändern Sie die Größe oder nicht mit der Zelle zu verschieben  
   
-1.  Call the placement property of the control and set the value to <xref:Microsoft.Office.Interop.Excel.XlPlacement.xlFreeFloating>.  
+1.  Rufen Sie die Platzierungseigenschaft des Steuerelements, und legen den Wert auf <xref:Microsoft.Office.Interop.Excel.XlPlacement.xlFreeFloating>.  
   
-     [!code-vb[Trin_VstcoreProgrammingControlsExcel#6](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#6)]  [!code-csharp[Trin_VstcoreProgrammingControlsExcel#6](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#6)]  
+     [!code-vb[Trin_VstcoreProgrammingControlsExcel#6](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#6)]
+     [!code-csharp[Trin_VstcoreProgrammingControlsExcel#6](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#6)]  
   
-## <a name="see-also"></a>See Also  
- [Controls on Office Documents](../vsto/controls-on-office-documents.md)   
- [How to: Add Windows Forms Controls to Office Documents](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   
- [How to: Hide Controls on Worksheets when Printing](../vsto/how-to-hide-controls-on-worksheets-when-printing.md)   
- [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md)   
- [Limitations of Windows Forms Controls on Office Documents](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)  
+## <a name="see-also"></a>Siehe auch  
+ [Steuerelemente für Office-Dokumente](../vsto/controls-on-office-documents.md)   
+ [Vorgehensweise: Hinzufügen von Windows Forms-Steuerelementen zu Office-Dokumenten](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   
+ [Vorgehensweise: Ausblenden von Steuerelementen auf Arbeitsblättern beim Drucken](../vsto/how-to-hide-controls-on-worksheets-when-printing.md)   
+ [Hinzufügen von Steuerelementen zu Office-Dokumenten zur Laufzeit](../vsto/adding-controls-to-office-documents-at-run-time.md)   
+ [Einschränkungen für Windows Forms-Steuerelemente in Office-Dokumenten](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)  
   

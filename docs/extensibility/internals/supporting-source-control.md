@@ -1,58 +1,59 @@
 ---
-title: "Unterst&#252;tzung von Datenquellen-Steuerelement | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Source Control [Visual Studio SDK], Unterstützung"
+title: "Datenquellen-Steuerelements unterstützen | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: source control [Visual Studio SDK], supporting
 ms.assetid: 567acde3-354e-4f39-8d99-0ef86c103396
-caps.latest.revision: 18
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 18
+caps.latest.revision: "18"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: a93dbdff19d0a0feaafb549b00968e095690fd78
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Unterst&#252;tzung von Datenquellen-Steuerelement
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Auscheckvorgänge unterstützt[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , Einchecken und andere Quellcodeverwaltungsvorgänge für das Projekt bzw. den Editor.  Als Quellcodeverwaltung client ist [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] entworfen, um mit einem Paket Quellcodeverwaltung, z. B. [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)]zu interagieren, das das Archivieren bereitstellt, Versionsverwaltung und Sicherheitsschnittstellen für einen dynamisch definierten Satz von Dateien.  
+# <a name="supporting-source-control"></a>Unterstützung von Datenquellen-Steuerelements
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Auschecken von Dateien, Check-ins und andere Quellcodeverwaltungsvorgänge für das Projekt oder die-Editor unterstützt. Als einem Quellcodeverwaltungsclient [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] dient für die Interaktion mit einem Steuerelement-Quellpaket [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)], Archivierung, versionsverwaltung und Steuerung Einrichtungen für eine dynamisch definierte Gruppe von Dateien bietet.  
   
-## In diesem Abschnitt  
- [Modell für Source Control\-Pakete](../../extensibility/internals/model-for-source-control-packages.md)  
- Beschreibt die Schnittstellen, die einen Projekttyp implementieren muss, um die Quellcodeverwaltung zu unterstützen.  
+## <a name="in-this-section"></a>In diesem Abschnitt  
+ [Modell für Quellcodeverwaltungspakete](../../extensibility/internals/model-for-source-control-packages.md)  
+ Beschreibt die Schnittstellen, die ein Projekttyp implementieren muss zur Unterstützung des Datenquellen-Steuerelements.  
   
- [Designentscheidungen](../../extensibility/internals/source-control-design-decisions.md)  
- Stellt Informationen bereit, deren Antworten ändern, wie Sie einen Projekttyp implementieren.  
+ [Entwurfsentscheidungen](../../extensibility/internals/source-control-design-decisions.md)  
+ Stellt Fragen, deren Antworten zu ändern, wie Sie einen Projekttyp implementieren.  
   
- [Ausführliche Informationen zur Konfiguration](../../extensibility/internals/source-control-configuration-details.md)  
- Beschreibt, wie Änderungen der Quellcodeverwaltung unterliegen, unterstützt die Implementierung eines Projekttyps.  
+ [Konfigurationsdetails](../../extensibility/internals/source-control-configuration-details.md)  
+ Beschreibt, wie Datenquellen-Steuerelements unterstützen die Implementierung des Project-Typs ändert.  
   
- [Weitere Richtlinien für Projekte und Editoren](../../extensibility/internals/additional-source-control-guidelines-for-projects-and-editors.md)  
- Erörtert Methoden für Projekttypen und Editoren.  
+ [Zusätzliche Richtlinien für Projekte und Editoren](../../extensibility/internals/additional-source-control-guidelines-for-projects-and-editors.md)  
+ Beschreibt bewährte Methoden für Projekttypen und Editoren.  
   
- [Laufzeit\-Details](../../extensibility/internals/source-control-runtime-details.md)  
- Beschreibt, wie ein Projekt registriert, wenn ein Benutzer einem Quellcodeverwaltungssystem sie hinzugefügt werden.  
+ [Common Language Runtime-Details](../../extensibility/internals/source-control-runtime-details.md)  
+ Beschreibt, wie ein Projekt zu registrieren, wenn ein Benutzer auf einem Quellcodeverwaltungssystem hinzufügt.  
   
-## Referenz  
+## <a name="reference"></a>Verweis  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>  
- Teilt dem Paket oder Umgebungs\- Quellcodeverwaltung an, dass eine Datei im Begriff ist, im Speicher geändert oder gespeichert werden.  
+ Gibt an, für die Umgebung oder Ihre Source Control-Paket, die eine Datei im Arbeitsspeicher geändert oder gespeichert werden.  
   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>  
- Ermöglicht Projekte und Hierarchien, deren Schnittmenge mit Quellcodeverwaltung zu registrieren und Quellcodeverwaltung Informationen über den Status zu erhalten.  
+ Können Projekte und-Hierarchien an, registrieren sich mit der quellcodeverwaltung und Abrufen von Informationen zum Status des Datenquellen-Steuerelement.  
   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2>  
- Wird in einem Projektsystem, um die Quellcodeverwaltung für Projektdateien und Projektelemente bereitzustellen.  
+ Implementiert ein Projektsystem Projektdateien und Projektelemente Datenquellen-Steuerelements bereit.  
   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>  
- Wird von Projekten, die Umgebung abzufragen, damit die Berechtigung hinzufügen, entfernen oder benennen Sie eine Datei oder ein Verzeichnis in einer Projektmappe.  
+ Von Projekten verwendet zum Abfragen der Umgebung für die Berechtigung zum Hinzufügen, entfernen oder Umbenennen einer Datei oder eines Verzeichnisses in einer Projektmappe.  
   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents2>  
- Benachrichtigt Clients über Änderungen, die an den Projektdateien oder Verzeichnissen vorgenommen wurden.  
+ Benachrichtigt Clients, der Project-Dateien oder Verzeichnisse vorgenommenen Änderungen.  
   
-## Verwandte Abschnitte  
+## <a name="related-sections"></a>Verwandte Abschnitte  
  [Projekttypen](../../extensibility/internals/project-types.md)  
- Bietet eine Übersicht über Projekte als die Grundbausteine der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrierten Entwicklungsumgebung \(IDE\).  Links zu weiteren Themen bereitgestellt, in denen das Projekt steuer und Kompilieren von Code verdeutlichen.
+ Bietet eine Übersicht über Projekte als die Grundbausteine der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrierten Entwicklungsumgebung (IDE). Links werden zu weiteren Themen bereitgestellt, die erläutern, wie Projekte steuern, erstellen und Kompilieren von Code.

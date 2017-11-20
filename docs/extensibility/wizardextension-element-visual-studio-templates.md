@@ -1,30 +1,35 @@
 ---
-title: "WizardExtension-Element (Visual Studio-Vorlagen) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "http://schemas.microsoft.com/developer/vstemplate/2005#WizardExtension"
-helpviewer_keywords: 
-  - "<WizardExtension>-Element [Visual Studio-Vorlagen]"
-  - "WizardExtension-Element [Visual Studio-Vorlagen]"
+title: WizardExtension-Element (Visual Studio-Vorlagen) | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: http://schemas.microsoft.com/developer/vstemplate/2005#WizardExtension
+helpviewer_keywords:
+- WizardExtension element [Visual Studio Templates]
+- <WizardExtension> element [Visual Studio Templates]
 ms.assetid: d54b01c1-50f5-4b65-828c-686e2321cc8c
-caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 41b5b3b786716603167b3917e5aa7b4a7ae14920
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# WizardExtension-Element (Visual Studio-Vorlagen)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Enthält die Registrierungselemente zum Anpassen des Vorlagen\-Assistenten.  
+# <a name="wizardextension-element-visual-studio-templates"></a>WizardExtension-Element (Visual Studio-Vorlagen)
+Enthält die Registrierungselemente zum Anpassen der Vorlagen-Assistenten.  
   
-## Syntax  
+ \<VSTemplate >  
+ ...  
+ \<WizardExtension >  
+  
+## <a name="syntax"></a>Syntax  
   
 ```  
 <WizardExtension>  
@@ -33,30 +38,30 @@ Enthält die Registrierungselemente zum Anpassen des Vorlagen\-Assistenten.
 </WizardExtension>  
 ```  
   
-## Attribute und Elemente  
- In den folgenden Abschnitten werden Attribute, untergeordnete Elemente und übergeordnete Elemente beschrieben.  
+## <a name="attributes-and-elements"></a>Attribute und Elemente  
+ In den folgenden Abschnitten werden attribute-Elemente sowie untergeordnete und übergeordnete Elemente beschrieben.  
   
-### Attribute  
+### <a name="attributes"></a>Attribute  
  Keine.  
   
-### Untergeordnete Elemente  
+### <a name="child-elements"></a>Untergeordnete Elemente  
   
-|Element|Description|  
+|Element|Beschreibung|  
 |-------------|-----------------|  
-|[Assembly](../extensibility/assembly-element-visual-studio-template-wizard-extension.md)|Erforderliches Element.<br /><br /> Gibt den Namen oder starken Namen einer Assembly an, die im globalen Assemblycache angezeigt wird.  Es muss mindestens ein `Assembly`\-Element in einem `WizardExtension`\-Element vorhanden sein.|  
-|[FullClassName](../extensibility/fullclassname-element-visual-studio-template-wizard-extension.md)|Erforderliches Element.<br /><br /> Der vollqualifizierte Name der Klasse, durch die die `IWizard`\-Schnittstelle implementiert wird.  Es muss mindestens ein `FullClassName`\-Element in einem `WizardExtension`\-Element vorhanden sein.|  
+|[Assembly](../extensibility/assembly-element-visual-studio-template-wizard-extension.md)|Erforderliches Element.<br /><br /> Gibt den Namen oder den starken Namen einer Assembly, die im globalen Assemblycache angezeigt wird. Es muss mindestens eine `Assembly` Element in einem `WizardExtension` Element.|  
+|[FullClassName](../extensibility/fullclassname-element-visual-studio-template-wizard-extension.md)|Erforderliches Element.<br /><br /> Der vollqualifizierte Name der Klasse, die implementiert die `IWizard` Schnittstelle. Es muss mindestens eine `FullClassName` Element in einem `WizardExtension` Element.|  
   
-### Übergeordnete Elemente  
+### <a name="parent-elements"></a>Übergeordnete Elemente  
   
-|Element|Description|  
+|Element|Beschreibung|  
 |-------------|-----------------|  
-|[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|Enthält alle Metadaten für die Projektvorlage, Elementvorlage oder das Starter Kit.|  
+|[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|Enthält alle Metadaten für die Projektvorlage, Elementvorlage oder Starterkit.|  
   
-## Hinweise  
+## <a name="remarks"></a>Hinweise  
  `WizardExtension` ist ein optionales untergeordnetes Element von `VSTemplate`.  
   
-## Beispiel  
- Im folgenden Beispiel werden die Metadaten für die Standardprojektvorlage einer Windows\-Anwendung in [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] veranschaulicht.  
+## <a name="example"></a>Beispiel  
+ Das folgende Beispiel veranschaulicht die Metadaten für die standard-Projektvorlage für eine [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] Windows-Anwendung.  
   
 ```  
 <VSTemplate Version="3.0.0" Type="Item"  
@@ -86,7 +91,7 @@ Enthält die Registrierungselemente zum Anpassen des Vorlagen\-Assistenten.
 </VSTemplate>  
 ```  
   
-## Siehe auch  
- [Schemareferenz zu Visual Studio\-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)   
- [Erstellen von benutzerdefinierten Projekt\- und Elementvorlagen](../ide/creating-project-and-item-templates.md)   
+## <a name="see-also"></a>Siehe auch  
+ [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)   
+ [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)   
  [Gewusst wie: Verwenden von Assistenten mit Projektvorlagen](../extensibility/how-to-use-wizards-with-project-templates.md)

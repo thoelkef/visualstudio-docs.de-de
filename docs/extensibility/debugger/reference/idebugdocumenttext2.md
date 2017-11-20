@@ -1,58 +1,58 @@
 ---
-title: "IDebugDocumentText2 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugDocumentText2"
-helpviewer_keywords: 
-  - "IDebugDocumentText2-Schnittstelle"
+title: IDebugDocumentText2 | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugDocumentText2
+helpviewer_keywords: IDebugDocumentText2 interface
 ms.assetid: e85f50a3-211c-4220-a9f4-789950ba2782
-caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: ebcb90f570ad29f38eabe8712928b484fd6961c0
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugDocumentText2
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Diese Schnittstelle stellt ein Textdokument dar.  
+# <a name="idebugdocumenttext2"></a>IDebugDocumentText2
+Diese Schnittstelle stellt ein Textdokument.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
-IDebugDocumentText2 : IDebugDocument2  
+IDebugDocumentText2 : IDebugDocument2  
 ```  
   
-## Hinweise für Implementierer  
- Ein Modul \(Debug\) DE implementiert diese Schnittstelle, wenn der Quellcode, den sie enthalten muss, ist in der Form von Text.  Da dies der gängigste Fall sein, wenn die DE [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)\-Schnittstelle implementiert, sollte sie die `IDebugDocumentText2` auch Schnittstelle implementieren.  
+## <a name="notes-for-implementers"></a>Hinweise für Implementierer  
+ Ein Debugging-Modul (DE) implementiert diese Schnittstelle auf, wenn der Quellcode angeben benötigten in Textform ist. Da dies der häufigste Fall ist, wenn ein DE implementiert die [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) -Schnittstelle, es sollte auch implementieren die `IDebugDocumentText2` Schnittstelle.  
   
-## Hinweise für Aufrufer  
- Verwenden Sie die `QueryInterface`\-Methode, um diese Schnittstelle aus einer `IDebugDocument2`\-Schnittstelle zu erhalten.  
+## <a name="notes-for-callers"></a>Hinweise für Aufrufer  
+ Verwenden der `QueryInterface` Methode zum Abrufen von dieser Schnittstelle aus einem `IDebugDocument2` Schnittstelle.  
   
-## Methoden in die Vtable\-Reihenfolge  
- Zusätzlich zu den Methoden der `IDebugDocument2`\-Schnittstelle implementiert diese Schnittstelle die folgenden Methoden:  
+## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
+ Zusätzlich zu den Methoden für die `IDebugDocument2` diese Schnittstelle implementiert, die folgenden Methoden:  
   
 |Methode|Beschreibung|  
-|-------------|------------------|  
+|------------|-----------------|  
 |[GetSize](../../../extensibility/debugger/reference/idebugdocumenttext2-getsize.md)|Ruft die Größe des Texts an dieser Position im Dokument ab.|  
-|[GetText](../../../extensibility/debugger/reference/idebugdocumenttext2-gettext.md)|Ruft den Text der angegebenen Position im Dokument ab.|  
+|[GetText](../../../extensibility/debugger/reference/idebugdocumenttext2-gettext.md)|Ruft den Text aus der angegebenen Position im Dokument ab.|  
   
-## Hinweise  
- Ein Objekt, das diese Schnittstelle implementiert, muss die <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer>\-Schnittstelle implementieren, die auch <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint> stellt die Schnittstelle für ein [IDebugDocumentTextEvents2](../../../extensibility/debugger/reference/idebugdocumenttextevents2.md)\-Objekt.  
+## <a name="remarks"></a>Hinweise  
+ Ein Objekt, das diese Schnittstelle implementiert, muss auch implementieren die <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer> -Schnittstelle ein, welche stellt die <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint> eine Schnittstelle für ein [IDebugDocumentTextEvents2](../../../extensibility/debugger/reference/idebugdocumenttextevents2.md) Objekt.  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  Header: msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)   
  [IDebugDocumentTextEvents2](../../../extensibility/debugger/reference/idebugdocumenttextevents2.md)

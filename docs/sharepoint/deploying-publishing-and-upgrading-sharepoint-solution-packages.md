@@ -1,73 +1,75 @@
 ---
-title: "Bereitstellen, Ver&#246;ffentlichen und Aktualisieren von SharePoint-L&#246;sungspaketen"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "VS.SharePointTools.Project.SharePointProjectPropertyTab"
-  - "VS.SharePointTools.Project.Publishing"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "Bereitstellen [SharePoint-Entwicklung in Visual Studio]"
-  - "SharePoint-Entwicklung in Visual Studio, Bereitstellen"
+title: "Bereitstellen, veröffentlichen und Aktualisieren von SharePoint-Lösungspaketen | Microsoft Docs"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- VS.SharePointTools.Project.SharePointProjectPropertyTab
+- VS.SharePointTools.Project.Publishing
+dev_langs:
+- VB
+- CSharp
+- VB
+- CSharp
+helpviewer_keywords:
+- deploying [SharePoint development in Visual Studio]
+- SharePoint development in Visual Studio, deploying
 ms.assetid: 5efc1d99-2bd2-4f1a-a7b0-86c3b8f533f0
-caps.latest.revision: 23
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 22
+caps.latest.revision: "23"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 5ae973b0a1fc30f0592f6cb2702df645708ab43f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Bereitstellen, Ver&#246;ffentlichen und Aktualisieren von SharePoint-L&#246;sungspaketen
-  Nachdem Sie eine SharePoint\-Lösung in Visual Studio entwickeln, können Sie die Datei dem Paket \(.wsp\) zu einem lokalen SharePoint\-Server bereitstellen oder sie auf einem Remotewebserver oder lokalen SharePoint\-Server veröffentlichen.  Wenn Sie die Dateien bereitstellen, können Sie anpassen, wie die Paketdateien \(.wsp\) bereitgestellt werden.  
+# <a name="deploying-publishing-and-upgrading-sharepoint-solution-packages"></a>Bereitstellen, Veröffentlichen und Aktualisieren von SharePoint-Lösungspaketen
+  Nachdem Sie eine SharePoint-Lösung in Visual Studio entwickelt haben, können Sie die Paketdatei (.wsp) auf einer lokalen SharePoint-Server bereitstellen oder auf einem Remote- oder lokalen SharePoint-Server zu veröffentlichen. Wenn Sie die Dateien bereitstellen, können Sie anpassen, wie die Paketdateien (.wsp) bereitgestellt werden.  
   
 > [!NOTE]  
->  Derzeit können nur Sandkastenlösungen auf die Remoterollen SharePoint\-Servern veröffentlicht werden.  Weitere Informationen finden Sie unter [Überlegungen zu Sandkastenlösungen](../sharepoint/sandboxed-solution-considerations.md).  
+>  Derzeit können nur sandkastenlösungen an remote-SharePoint-Server veröffentlicht werden. Weitere Informationen finden Sie unter [Überlegungen zu Sandkastenlösungen](../sharepoint/sandboxed-solution-considerations.md).  
   
-## Bereitstellen, beim Veröffentlichen und Aktualisieren  
- *Das Bereitstellen* verweist das Kopieren einer SharePoint\-Lösungs\-Datei an, die von einem SharePoint\-Projekt in Visual Studio auf einen lokalen Host erstellt wird.  In einer bereitgestellten Projektmappe können Sie die Bereitstellungsschritte, wie Wiederverwenden des Internetinformationsdienst \(iis\)\- Pools konfigurieren und die Projektmappe nach Bereitstellung ermöglichen, z. B.  So stellen, verwenden Sie den Befehl **Bereitstellen** im Menü **Erstellen**.  Weitere Informationen finden Sie unter [Gewusst wie: Bearbeiten einer SharePoint-Bereitstellungskonfiguration](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md) und [Gewusst wie: Bereitstellen und Veröffentlichen einer SharePoint-Lösung auf einer lokalen SharePoint-Website](../sharepoint/how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site.md).  
+## <a name="deploying-publishing-and-upgrading"></a>Bereitstellen, veröffentlichen und aktualisieren  
+ *Bereitstellen von* bezieht sich auf eine SharePoint-Projektmappendatei, die aus einem SharePoint-Projekt in Visual Studio erstellt werden, um einen lokalen Host zu kopieren. In einer bereitgestellten Lösung können Sie konfigurieren die Schritten zur Bereitstellung, z. B. Wiederverwendung der Anwendungspool (Internet Information Services, IIS) aktivieren die Projektmappe nach der Bereitstellung und so weiter. Verwenden Sie zum Bereitstellen der **bereitstellen** Befehl die **erstellen** Menü. Weitere Informationen finden Sie unter [wie: Bearbeiten einer SharePoint-Bereitstellungskonfiguration](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md) und [Vorgehensweise: Bereitstellen und veröffentlichen Sie eine SharePoint-Lösung in einer lokalen SharePoint-Website](../sharepoint/how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site.md).  
   
- *Veröffentlichung* ist das Hochladen einer Sandbox SharePoint\-Lösungs\-Datei eine Remoteanwendung zu SharePoint\-Website an; das heißt, eine Website auf einem anderen System.  Veröffentlicht ist, Sie können eine SharePoint\-Sandkastenlösungsdatei zu einer lokalen SharePoint\-Website veröffentlichen auch, aber unabhängig davon, ob die Website, die lokal oder remote ist, können Sie den Bereitstellungsschritt nicht konfigurieren.  
+ *Veröffentlichen von* bezieht sich bis zum Hochladen von einer Sandbox Projektmappendatei für SharePoint auf einem remote-SharePoint-Website, d. h. auf einer Website auf einem anderen System. Sie können auch eine SharePoint-sandkastenlösungen-Datei auf einer lokalen SharePoint-Website veröffentlichen unabhängig davon, ob die Website veröffentlicht lokal oder remote ist, Sie konfigurieren, nicht aber seine Bereitstellungsschritte.  
   
- *Upgrade* verweist das Aktualisieren eines vorhandenen der lokal oder remote veröffentlichten SharePoint\-Lösung an.  Nachdem Änderungen der SharePoint\-Lösung in Visual Studio vorgenommen sind, ändern Sie die Paketdatei der Projektmappe veröffentlichen, die Projektmappe neu und aktualisiert dann die Projektmappe, nachdem sie erfolgreich erneut veröffentlicht.  Wenn Sie eine veröffentlichte Projektmappe lokal erneut veröffentlichen, können Sie die vorhandene Projektmappendatei überschreiben.  
+ *Aktualisieren von* bezieht sich auf das Aktualisieren einer vorhandenen Remote oder lokal veröffentlichte SharePoint-Lösung. Nach Änderungen an der SharePoint-Lösung in Visual Studio vorgenommen werden, Sie Dateiname des Pakets die Projektmappe ändern, veröffentlichen Sie die Projektmappe erneut, und klicken Sie dann die Projektmappe zu aktualisieren, nachdem er erfolgreich erneut veröffentlicht. Wenn Sie eine lokal veröffentlichte Projektmappe erneut veröffentlichen, können Sie die vorhandene Projektmappendatei überschreiben.  
   
-## Bereitstellen von Paketen  
- Sie können die Paketdateien auf dem Entwicklungscomputer für den SharePoint\-Server für Tests und Debugging bereitstellen.  Außerdem können Sie eine Paketdatei erstellen, die Sie auf einem anderen Computer installieren können, indem Sie das Optionsfeld **Im Dateisystem veröffentlichen** im Dialogfeld **Veröffentlichen** auswählen.  Das Paket wird dem angegebenen lokalen Pfad erstellt und kopiert.  Wenn Sie eine SharePoint\-Lösung auf dem lokalen Server bereitzustellen, verwenden Sie den Befehl **Bereitstellen** im Menü **Erstellen**.  Weitere Informationen finden Sie unter [Gewusst wie: Bereitstellen und Veröffentlichen einer SharePoint-Lösung auf einer lokalen SharePoint-Website](../sharepoint/how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site.md).  
+## <a name="deploying-packages"></a>Bereitstellen von Paketen  
+ Auf Ihrem Entwicklungscomputer testen und Debuggen können Sie Paketdateien auf dem SharePoint-Server bereitstellen. Sie können auch erstellen, eine Paketdatei, die Sie auf einem anderen Computer, indem Sie auswählen installieren können der **Veröffentlichen im Dateisystem** Optionsfeld in der **veröffentlichen** (Dialogfeld). Das Paket erstellt und in die angegebene lokale Pfad kopiert. Verwenden Sie zum Bereitstellen einer SharePoint-Lösung mit dem lokalen Server der **bereitstellen** Befehl die **erstellen** Menü. Weitere Informationen finden Sie unter [Vorgehensweise: Bereitstellen und veröffentlichen Sie eine SharePoint-Lösung in einer lokalen SharePoint-Website](../sharepoint/how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site.md).  
   
- Informationen zum Bereitstellen einer Listendefinition, zum Hinzufügen eines Ereignisempfängers und zum Verwenden des Funktions\-Designers und des Paket\-Designers finden Sie unter [Exemplarische Vorgehensweise: Bereitstellen einer Aufgabenlistendefinition für Projekte](../sharepoint/walkthrough-deploying-a-project-task-list-definition.md).  
+ Zum Bereitstellen einer Listendefinition, Ereignisempfänger hinzufügen und Verwenden der Funktion und Paket-Designer finden Sie unter [Exemplarische Vorgehensweise: Bereitstellen einer Aufgabenlistendefinition Projekt](../sharepoint/walkthrough-deploying-a-project-task-list-definition.md).  
   
-## Anpassen des Bereitstellungsvorgangs  
- In der folgenden Tabelle werden die zwei Bereitstellungskonfigurationen gezeigt, die Sie beim Debuggen und Bereitstellen einer SharePoint\-Lösung verwenden können.  
+## <a name="customizing-the-deployment-process"></a>Anpassen des Bereitstellungsprozesses  
+ Die folgende Tabelle zeigt die beiden Bereitstellungskonfigurationen, die Sie beim Debuggen und eine SharePoint-Lösung bereitstellen verwenden können.  
   
-|Bereitstellungskonfiguration|**Beschreibung**|  
-|----------------------------------|----------------------|  
-|Default|Die Standardbereitstellungskonfiguration.  Die folgenden Bereitstellungsschritte werden ausgeführt:<br /><br /> 1.  Befehl der Ausführung vor der Bereitstellung.<br />2.  Wiederverwenden des IIS\-Anwendungspools.<br />3.  Zurücknehmen der Lösung.<br />4.  Hinzufügen der Lösung.<br />5.  Aktivieren von Funktionen.<br />6.  Ausführen des Befehls nach der Bereitstellung.<br /><br /> Wenn ein Paket deinstalliert wird, werden die folgenden Rücknahmeschritte ausgeführt.<br /><br /> 1.  Wiederverwenden des IIS\-Anwendungspools.<br />2.  Zurücknehmen der Lösung.|  
-|Keine Aktivierung|Bei dieser Bereitstellungskonfiguration werden die gleichen Schritte wie bei der Standardkonfiguration ausgeführt, aber der Aktivierungsschritt wird übersprungen.|  
+|Bereitstellungskonfiguration|Beschreibung|  
+|------------------------------|-----------------|  
+|Standard|Die Standardkonfiguration für die Bereitstellung. Die folgenden Bereitstellungsschritte werden ausgeführt:<br /><br /> 1.  Führen Sie vor der Bereitstellung-Befehl.<br />2.  Starten Sie IIS-Anwendungspool neu.<br />3.  Lösung zurückziehen.<br />4.  Fügen Sie die Projektmappe hinzu.<br />5.  Aktivieren von Funktionen.<br />6.  Führen Sie nach der Bereitstellung-Befehl.<br /><br /> Wenn ein Paket deinstalliert wird, werden die folgenden zurückziehen Schritte ausgeführt.<br /><br /> 1.  Starten Sie IIS-Anwendungspool neu.<br />2.  Lösung zurückziehen.|  
+|Keine Aktivierung|Diese Bereitstellungskonfiguration die gleichen Schritte als die Standardkonfiguration wird jedoch der Aktivierungsschritt überspringt.|  
   
- Sie können eigene Bereitstellungskonfigurationen erstellen, um einen einzelnen Schritt auszuführen oder die Reihenfolge der Schritte im Bereitstellungsprozess zu ändern.  Weitere Informationen finden Sie unter [Gewusst wie: Bearbeiten einer SharePoint-Bereitstellungskonfiguration](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md).  
+ Sie können eigene Bereitstellungskonfigurationen, um zu einen einzigen Schritt abschließen, oder Ändern der Reihenfolge der Schritte im Bereitstellungsprozess erstellen. Weitere Informationen finden Sie unter [wie: Bearbeiten einer SharePoint-Bereitstellungskonfiguration](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md).  
   
- Sie können auch Befehle hinzufügen, die vor und nach der Bereitstellung ausgeführt werden sollen.  Weitere Informationen finden Sie unter [Gewusst wie: Festlegen von SharePoint-Bereitstellungsbefehlen](../sharepoint/how-to-set-sharepoint-deployment-commands.md).  
+ Sie können auch vor und nach der Bereitstellung auszuführenden Befehle hinzufügen. Weitere Informationen finden Sie unter [Vorgehensweise: Festlegen von SharePoint-Bereitstellungsbefehlen](../sharepoint/how-to-set-sharepoint-deployment-commands.md).  
   
-## Veröffentlichungs\-Pakete auf einem Remotewebserver oder auf einem lokalen Server  
- Um eine Sandbox SharePoint\-Lösung auf einem Remoteserver, in der Menüleiste zu veröffentlichen, wählen Sie, **Veröffentlichen**, und klicken Sie im Dialogfeld **Veröffentlichen**, wählen Sie das Optionsfeld **In SharePoint veröffentlichenErstellen** aus und die URL des Remoteservers, wie https:\/\/someremoteserver.sharepoint.microsoftonline.com bereitstellen.  
+## <a name="publishing-packages-to-a-remote-or-local-server"></a>Veröffentlichen von Paketen auf einem Remote- oder lokalen Server  
+ So veröffentlichen Sie eine Sandbox-SharePoint-Lösung auf einem Remoteserver, auf der Menüleiste wählen Sie **erstellen**, **veröffentlichen**, und klicken Sie dann in der **veröffentlichen** Dialogfeld Wählen Sie die **In SharePoint-Website veröffentlichen** Optionsfeld, z. B. Bereitstellen von remote-Server-URL **https://someremoteserver.sharepoint.microsoftonline.com**.  
   
- Wenn Sie eine SharePoint\-Lösung auf einem lokalen Server, im Dialogfeld **Veröffentlichen** zu veröffentlichen, wählen Sie das Optionsfeld **Im Dateisystem veröffentlichen** und ein Pfad des lokalen Systems bereitstellen.  
+ So veröffentlichen Sie eine SharePoint-Lösung auf einem lokalen Server in der **veröffentlichen** Dialogfeld Wählen Sie die **Veröffentlichen im Dateisystem** Optionsfeld, ein lokaler Dateisystempfad bereitstellen.  
   
- Nachdem eine Projektmappe erfolgreich zu SharePoint veröffentlichen, wird die Projektmappe im **Lösungskatalog**, in dem Sie sie aktivieren können.  Weitere Informationen finden Sie unter [Gewusst wie: Bereitstellen, Veröffentlichen und Aktualisieren von SharePoint-Lösungen auf einem Remoteserver](../sharepoint/how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server.md).  
+ Nachdem eine Projektmappe erfolgreich in SharePoint veröffentlicht, die Projektmappe wird in der **Solution Gallery** , wo Sie sie aktivieren können. Weitere Informationen finden Sie unter [Vorgehensweise: bereitstellen, veröffentlichen und Aktualisieren von SharePoint-Lösungen auf einem Remoteserver](../sharepoint/how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server.md).  
   
-### Aktualisieren von veröffentlichten Paketen  
- Wenn Sie Änderungen an SharePoint vornehmen zu einem in Visual Studio, nachdem es veröffentlicht ist, muss das Verzeichnis publish Paket aktualisiert werden, um die Änderungen einzubinden.  Um erfolgreich zu aktualisieren, muss ein Paket einen eindeutigen Namen haben.  Wenn ein Paket mit dem gleichen Namen auf der SharePoint\-Website gefunden \- die auftreten können, wenn Sie eine vorhandene Anwendung aktualisieren \- einen Fehler werden Sie zum Dateinamenkonflikt und können Sie das Paket umbenennen.  Nachdem es erneut veröffentlicht wurde wird das neue Paket auf der SharePoint\-Website und kann aktualisiert werden.  Ermöglicht aktualisierte Paketupdates die Projektmappe, indem Daten aus älteren Paket verwenden, und dann die Projektmappe in SharePoint.  Weitere Informationen finden Sie unter [Gewusst wie: Bereitstellen, Veröffentlichen und Aktualisieren von SharePoint-Lösungen auf einem Remoteserver](../sharepoint/how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server.md).  
+### <a name="upgrading-published-packages"></a>Veröffentlichte Pakete aktualisieren  
+ Wenn Sie nach der Veröffentlichung auf einem SharePoint-Projekt in Visual Studio die Änderungen vornehmen, muss das veröffentlichte Paket aktualisiert werden, um die Änderungen einzubeziehen. Um erfolgreich zu aktualisieren, müssen ein Paket einen eindeutigen Namen verfügen. Wenn ein Paket mit dem gleichen Namen auf der SharePoint-Website gefunden wird - die auftreten kann, wenn Sie eine vorhandene Anwendung aktualisieren – eine fehlerwarnungen, die Sie auf den Dateinamen in Konflikt stehen und können Sie das Paket umbenennen. Nach erneut veröffentlicht wird, wird das neue Paket wird auf der SharePoint-Website angezeigt und kann aktualisiert werden. Ein aktualisiertes Paket mit Daten aus dem älteren Paket aktualisiert die Projektmappe, und klicken Sie dann die Projektmappe in SharePoint aktiviert. Weitere Informationen finden Sie unter [Vorgehensweise: bereitstellen, veröffentlichen und Aktualisieren von SharePoint-Lösungen auf einem Remoteserver](../sharepoint/how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server.md).  
   
-## Siehe auch  
- [Verpacken und Bereitstellen von SharePoint-Lösungen](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
+## <a name="see-also"></a>Siehe auch  
+ [Verpacken und Bereitstellen von SharePoint-Projektmappen](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
   
   

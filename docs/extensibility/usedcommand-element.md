@@ -1,65 +1,71 @@
 ---
-title: "UsedCommand-Element | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "UsedCommands-Element (VSCT-XML-Schema)"
-  - "VSCT XML-Schemaelemente, UsedCommands"
+title: UsedCommand Element | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- UsedCommands element (VSCT XML schema)
+- VSCT XML schema elements, UsedCommands
 ms.assetid: 99cd05d3-644a-42ff-b289-8458cd1b20c0
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 2b3974c9103a385badc56fda759ee95ef3a40a93
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# UsedCommand-Element
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Ermöglicht es einem VSPackage auf einen Befehl, der in einer anderen VSCT\-Datei definiert ist. Angenommen, Ihr VSPackage standardmäßiger **Kopieren** Befehl, der definiert wird die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Shell, können Sie den Befehl hinzufügen zu einem Menü oder Symbolleiste ohne erneut zu implementieren.  
+# <a name="usedcommand-element"></a>UsedCommand-Element
+Ermöglicht eine VSPackage, um einen Befehl zuzugreifen, der in eine andere VSCT-Datei definiert ist. Angenommen, Ihr VSPackage standardmäßiger **Kopie** Befehl, der definiert wird die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Shell, Sie können den Befehl zu einem Menü oder einer Symbolleiste ohne hinzufügen erneut zu implementieren.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 <UsedCommand guid="guidMyCommandGroup" id="MyCommand" />  
 ```  
   
-## Attribute und Elemente  
+## <a name="attributes-and-elements"></a>Attribute und Elemente  
  In den folgenden Abschnitten werden Attribute sowie untergeordnete und übergeordnete Elemente beschrieben.  
   
-### Attribute  
+### <a name="attributes"></a>Attribute  
   
 |Attribut|Beschreibung|  
-|--------------|------------------|  
-|GUID|Erforderlich. Die GUID die GUID\-ID\-Paar, die mit dem Befehl bezeichnet.|  
-|ID|Erforderlich. Die ID des GUID\-ID\-Paars, die den Befehl bezeichnet.|  
-|Bedingung|Optional. Siehe [Bedingten Attribute](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|---------------|-----------------|  
+|guid|Erforderlich. Die GUID der der GUID-ID-Paar, die den Befehl bezeichnet.|  
+|ID|Erforderlich. Die ID der der GUID-ID-Paar, die den Befehl bezeichnet.|  
+|Bedingung|Dies ist optional. Finden Sie unter [bedingte Attribute](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
-### Untergeordnete Elemente  
+### <a name="child-elements"></a>Untergeordnete Elemente  
   
 |Element|Beschreibung|  
-|-------------|------------------|  
+|-------------|-----------------|  
 |Keine||  
   
-### Übergeordnete Elemente  
+### <a name="parent-elements"></a>Übergeordnete Elemente  
   
 |Element|Beschreibung|  
-|-------------|------------------|  
-|[UsedCommands\-Element](../extensibility/usedcommands-element.md)|Gruppen UsedCommand Elementen und anderen UsedCommands Gruppierungen.|  
+|-------------|-----------------|  
+|[UsedCommands-Element](../extensibility/usedcommands-element.md)|Gruppen UsedCommand Elementen und anderen UsedCommands Gruppierungen.|  
   
-## Hinweise  
- Durch Hinzufügen eines Befehls in der `<UsedCommands>` \-Element, ein VSPackage informiert die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Umgebung VSPackage mit dem Befehl erforderlich. Hinzufügen einer `<UsedCommand>` \-Element für jeden Befehl, der das Paket erfordert, dass möglicherweise nicht in allen Versionen und Konfigurationen von Visual Studio enthalten. Angenommen, Ihr Paket einen Befehl aufruft, Visual C\+\+\-spezifisch ist, mit dem Befehl wird nicht für Benutzer von Visual Web Developer, sofern Sie keine `<UsedCommand>` \-Element für den Befehl.  
+## <a name="remarks"></a>Hinweise  
+ Durch einen Befehl zum Hinzufügen der `<UsedCommands>` Element, eine VSPackage informiert die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ab, das VSPackage der-Befehl erfordert. Sie sollten Hinzufügen einer `<UsedCommand>` -Element für jeden Befehl, der das Paket erfordert, dass möglicherweise nicht in allen Versionen und Konfigurationen von Visual Studio enthalten sein. Z. B. Wenn Ihr Paket einen Befehl, die Visual C++-spezifisch ist aufruft, der Befehl wird nicht für Benutzer von Visual Web Developer, sofern Sie eine `<UsedCommand>` -Element für den Befehl.  
   
-## Beispiel  
+## <a name="example"></a>Beispiel  
   
 ```  
-<UsedCommands> <UsedCommand guid="guidVSStd97" id="cmdidCut"/> <UsedCommand guid="guidVSStd97" id="cmdidCopy"/> <UsedCommand guid="guidVSStd97" id="cmdidPaste"/> </UsedCommands>  
+<UsedCommands>  
+  <UsedCommand guid="guidVSStd97" id="cmdidCut"/>  
+  <UsedCommand guid="guidVSStd97" id="cmdidCopy"/>  
+  <UsedCommand guid="guidVSStd97" id="cmdidPaste"/>  
+</UsedCommands>  
 ```  
   
-## Siehe auch  
- [UsedCommands\-Element](../extensibility/usedcommands-element.md)   
- [Visual Studio\-Befehl\-Tabelle \(. VSCT\) Dateien](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+## <a name="see-also"></a>Siehe auch  
+ [UsedCommands-Element](../extensibility/usedcommands-element.md)   
+ [VSCT-Dateien (Visual Studio Command Table)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

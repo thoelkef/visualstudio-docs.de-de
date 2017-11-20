@@ -1,44 +1,45 @@
 ---
-title: "Source Control Plug-in-Architektur | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Source Control-Plug-ins Architektur"
+title: Source Control Plug-in-Architektur | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: source control plug-ins, architecture
 ms.assetid: 35351d4c-9414-409b-98fc-f2023e2426b7
-caps.latest.revision: 24
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 24
+caps.latest.revision: "24"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: e0cde4ca360aa0059abcbe0b64d63b4a94e85d78
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Source Control Plug-in-Architektur
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Sie können Unterstützung für die Quellcodeverwaltung [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] der integrierten Entwicklungsumgebung \(IDE\) indem Sie ein Quellcodeverwaltungs\-Plug\-In hinzufügen implementieren und anfügen.  Die IDE stellt eine Verbindung über das Quellcodeverwaltungs\-Plug\-In das Quellcodeverwaltungs\-Plug\-In klar definierte APIs an.  Die IDE macht die Funktionen der Versionskontrolle des Quellcodeverwaltungssystems, indem eine Benutzeroberfläche bereitstellt, die Symbolleisten und Menübefehlen besteht.  Das Quellcodeverwaltungs\-Plug\-In implementiert die Quellcodeverwaltung.  
+# <a name="source-control-plug-in-architecture"></a>Source Control Plug-in-Architektur
+Sie können die Unterstützung des Datenquellen-Steuerelement zum Hinzufügen der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrierten Entwicklungsumgebung (IDE) durch Implementieren und ein Quellcodeverwaltungs-Plug-in anfügen. Die IDE eine Verbindung mit dem Datenquellen-Steuerelement-Plug-in über die klar definierte Source Control-Plug-in-API. Die IDE macht Funktionen für die Version von dem Quellcodeverwaltungssystem durch Bereitstellen einer Benutzeroberfläche (UI), die der Symbolleisten und Befehle im Menü besteht. Die Datenquellen-Steuerelement-Plug-in implementiert die Quellcodeverwaltungsfunktion.  
   
-## Quellcodeverwaltungs\-Plug\-In\-Betriebsmittel  
- Das Quellcodeverwaltungs\-Plug\-In stellt Ressourcen bereit, um die Versionsverwaltungs\-Anwendung an das [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE zu erstellen und zu verbinden.  Das Quellcodeverwaltungs\-Plug\-In enthält die API\-Spezifikation, die durch ein Quellcodeverwaltungs\-Plug\-In implementiert werden muss, damit es in das [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE integriert werden kann.  Sie enthält außerdem ein Codebeispiel \(geschrieben in C\+\+\) implementiert ein Skelett quellcodeverwaltungs\-plug\-in, das den wichtigsten Features der Implementierung veranschaulicht, die mit dem Quellcodeverwaltungs\-Plug\-In APIs kompatibel sind.  
+## <a name="source-control-plug-in-resources"></a>Plug-in-Quelle Steuerung von Ressourcen  
+ Die Datenquellen-Steuerelement-Plug-in enthält Ressourcen, die beim Erstellen und verbinden Sie die Anwendung Versioning unterstützen die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE. Die Datenquellen-Steuerelement-Plug-in enthält die API-Spezifikation, die durch ein Quellcodeverwaltungs-Plug-in implementiert werden muss, damit er in integriert werden kann die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE. Außerdem enthält ein Codebeispiel (in C++ geschriebene), die eine Skelett Source Steuerelement-Plug-in zeigt-Implementierung der Hauptfunktionen, die kompatibel mit der Source Control-Plug-in-API implementiert.  
   
- Die Spezifikation des Quellcodeverwaltungs\-Plug\-In API können Sie ein Quellcodeverwaltungssystem der Auswahl der Quellcodeverwaltung nutzen, wenn Sie eine DLL mit dem erforderlichen Satz von Funktionen erstellen, die in Übereinstimmung mit dem Quellcodeverwaltungs\-Plug\-In API implementiert werden.  
+ Die Datenquellen-Steuerelement-Plug-in API-Spezifikation können Sie einem beliebigen Quellcodeverwaltungssystem Ihrer Wahl zu nutzen, wenn ein Quellcodeverwaltungs-DLL zu, mit dem erforderlichen Satz von Funktionen, die in Übereinstimmung mit der Quelle Steuerelement-Plug-in-API implementiert erstellen.  
   
-## Komponenten  
- Das Quellcodeverwaltungs\-Adapter\-Paket im Diagramm werden die Komponente der IDE, das die Benutzeranforderung für einen Quellcodeverwaltungsvorgang in einen Funktionsaufruf übersetzt, der durch das Quellcodeverwaltungs\-Plug\-In unterstützt wird.  Damit dies, die IDE und das Quellcodeverwaltungs\-Plug\-In muss ein effektives Dialogfeld, das Informationen über hin und her zwischen die IDE und das Plug\-In übergibt.  Damit dieses Dialogfeld stattfindet, müssen beide dieselbe Sprache sprechen.  Das Quellcodeverwaltungs\-Plug\-In API, die in dieser Dokumentation erläutert wird, ist das allgemeine Vokabular für den Austausch.  
+## <a name="components"></a>Komponenten  
+ Das Quellcodeverwaltungspaket Adapter im Diagramm ist die Komponente der IDE, der die Anforderung des Benutzers für eine Quelle-Steuerungsvorgang in einem Funktionsaufruf, der von der quellcodeverwaltung-Plug-in unterstützt übersetzt. Damit dies der Fall sein benötigen die IDE und die Datenquellen-Steuerelement-Plug-in einen effektiven Dialog, der Informationen zwischen der IDE und des Plug-Ins hin-und übergibt. Für diesen Dialog erfolgen müssen beide dieselbe Sprache verwenden. Die Quell-Plug-in-API mit dem in dieser Dokumentation beschriebenen ist die Allgemeines Vokabular für diesen Austausch an.  
   
- ![Quellcodeverwaltung&#45;Architekturdiagramm](~/extensibility/internals/media/vs_sccsdk_plug_in_arch.gif "vs\_sccsdk\_plug\_in\_arch")  
-Architektur\-Diagramm mit interaktion zwischen GEGEN und Quellcodeverwaltungs\-Plug\-In  
+ ![Source-Architekturdiagramm](../../extensibility/internals/media/vs_sccsdk_plug_in_arch.gif "Vs_sccsdk_plug_in_arch")  
+Architekturdiagramm mit Interaktion zwischen VS und Datenquellen-Steuerelement-Plug-in  
   
- Wie im Diagramm Architektur der Shell [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Bezeichnung gezeigt, wie GEGEN Shell im Diagramm den Hosts in der Arbeitsprojekte des Benutzers und in den zugehörigen Komponenten wie Editoren und dem Projektmappen\-Explorer.  Das Quellcodeverwaltungs\-Adapter\-Paket behandelt die Interaktion zwischen dem IDE und das Quellcodeverwaltungs\-Plug\-In.  Das Quellcodeverwaltungs\-Adapter\-Paket stellt eine eigene Benutzeroberfläche für die Quellcodeverwaltung.  Es handelt sich um die Benutzeroberfläche der obersten Ebene, dass der Benutzer interagiert, um den Bereich eines Quellcodeverwaltungsvorgangs zu starten und zu definieren.  
+ Im Architekturdiagramm, entsprechend der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Shell, mit der Bezeichnung als VS Shell im Diagramm hostet, funktionierende Projekte und die zugehörigen Komponenten, z. B. die Editoren und Projektmappen-Explorer des Benutzers. Das Quellcodeverwaltungspaket-Adapter behandelt die Interaktion zwischen der IDE und die Datenquellen-Steuerelement-Plug-in. Das Quellcodeverwaltungspaket-Adapter stellt eine eigene Benutzeroberfläche des Datenquellen-Steuerelements bereit. Es ist die auf der obersten Ebene Benutzeroberfläche, die der Benutzer interagiert, um initiieren, und legen Sie den Projektumfang ein Quelle-Steuerungsvorgang.  
   
- Das Quellcodeverwaltungs\-Plug\-In kann über eine eigene Benutzeroberfläche verfügen, die aus zwei Teilen wie in der Abbildung gezeigt, besteht.  Das Feld mit dem Namen „Anbieter“ UI bezeichnet werden, stellt benutzerdefinierte Benutzeroberflächenelemente dar, die Sie als Quellcodeverwaltungs\-Plug\-In\-Ersteller, bereitstellen.  Diese werden direkt durch das Quellcodeverwaltungs\-Plug\-In angezeigt, wenn der Benutzer einen erweiterten Quellcodeverwaltungsvorgang aufruft.  Das Feld, das die Benutzeroberfläche „Hilfe“ beschriftet ist, ist eine Reihe von Funktionen des Quellcodeverwaltungs\-Plug\-In Benutzeroberfläche, die indirekt über die IDE aufgerufen werden.  Das Benutzeroberfläche\-verknüpfte Quellcodeverwaltungs\-Plug\-In leitet Nachrichten an die IDE durch die speziellen Rückruffunktionen weiter, die in der IDE bereitgestellt werden.  Die Hilfe Benutzeroberfläche erleichtert eine nahtlosere Integration mit der IDE \(meist durch die Verwendung einer **Erweitert** Schaltfläche\) und bietet somit eine einheitlichere Endbenutzer Darstellung.  
+ Die Datenquellen-Steuerelement-Plug-in kann eine eigene Benutzeroberfläche haben zwei Teilen bestehen kann, wie in der Abbildung dargestellt. Feld mit der Bezeichnung "Hersteller UI" stellt benutzerdefinierte Benutzeroberflächenelemente, die Sie als Quelle Steuerelement-Plug-in Ersteller, bereitstellen. Diese werden direkt von der quellcodeverwaltung-Plug-in angezeigt, wenn der Benutzer einen erweiterten Quelle-Steuerungsvorgang aufruft. Feld mit der Bezeichnung "Hilfsprogramm-UI" ist ein Satz Source Control-Plug-in von Features der Benutzeroberfläche, die indirekt über die IDE aufgerufen werden. Die Datenquellen-Steuerelement-Plug-in übergeben UI-bezogene Nachrichten der IDE über spezielle Fehlerrückruf-Funktionen, die von der IDE bereitgestellt. Der Hilfsprogramm-UI ermöglicht eine nahtlosere Integration mit der IDE (häufig durch die Verwendung der ein **erweitert** Schaltfläche) und bietet somit eine einheitliche endbenutzererfahrung.  
   
- Ein Quellcodeverwaltungs\-Plug\-In kann Änderungen an der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Shell und infolgedessen entweder am Quellcodeverwaltungs\-Adapter\-Paket bzw. der Quellcodeverwaltung Benutzeroberfläche nicht vornehmen, die in der IDE bereitgestellt werden.  Sie muss maximale Auslastung der Flexibilität machen, die durch die Implementierung von verschiedenen Quellcodeverwaltungs\-Plug\-In\-API\-Funktionen bereitgestellt wird, die zu einer integrierten Erfahrung für den Endbenutzer beitragen.  Das Referenzteil der Dokumentation des Quellcodeverwaltungs\-Plug\-In API enthält Informationen für einige erweiterte Quellcodeverwaltungs\-Plug\-In\-Funktionen.  Um diese Features zu verwenden, muss das Quellcodeverwaltungs\-Plug\-In die erweiterten Features zur IDE während der Initialisierung deklarieren, und sie muss bestimmten Erweiterte Features für jede Funktion implementieren.  
+ Ein Quellcodeverwaltungs-Plug-in kann keine Änderungen vornehmen, um die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] shell auf, und daher das Quellcodeverwaltungspaket-Adapter oder die Quelle steuern Benutzeroberfläche, die von der IDE bereitgestellt. Es muss nutzen, maximale Flexibilität, der durch die Implementierung des verschiedene Datenquellen-Steuerelement-Plug-in-API-Funktionen, die auf eine integrierte Lösung für den Endbenutzer beitragen. Der Abschnitt "Referenz" der Datenquellen-Steuerelement-Plug-in API-Dokumentation enthält Informationen für einige erweiterte Datenquellen-Steuerelement-Plug-in-Funktionen. Um diese Funktionen nutzen zu können, muss die Datenquellen-Steuerelement-Plug-in den erweiterten Funktionen der IDE während der Initialisierung deklarieren, und sie müssen bestimmte erweiterte Funktionen für jede Funktion implementiert.  
   
-## Siehe auch  
- [Source Control\-Plug\-ins](../../extensibility/source-control-plug-ins.md)   
+## <a name="see-also"></a>Siehe auch  
+ [Datenquellen-Steuerelement-Plug-ins](../../extensibility/source-control-plug-ins.md)   
  [Glossar](../../extensibility/source-control-plug-in-glossary.md)   
- [Erstellen ein Quellcodeverwaltungs\-Plug\-in](../../extensibility/internals/creating-a-source-control-plug-in.md)
+ [Erstellen eines Quellcodeverwaltungs-Plug-Ins](../../extensibility/internals/creating-a-source-control-plug-in.md)

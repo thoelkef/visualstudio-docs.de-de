@@ -1,48 +1,48 @@
 ---
-title: "IDebugProperty3::DestroyObjectID | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugProperty3::DestroyObjectID"
-helpviewer_keywords: 
-  - "IDebugProperty3::DestroyObjectID"
+title: IDebugProperty3::DestroyObjectID | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugProperty3::DestroyObjectID
+helpviewer_keywords: IDebugProperty3::DestroyObjectID
 ms.assetid: bd08f356-cc67-4717-98c9-c3d00cad2040
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 0ceae63b77f0797e0781318cfa362e735d995eb3
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugProperty3::DestroyObjectID
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Zerstört die eindeutige ID, die dieser Eigenschaft zugeordnet wird und angibt, dass der Aufrufer nicht mehr relevant, um diese Eigenschaft aller anderen Eigenschaften eindeutig zu identifizieren.  
+# <a name="idebugproperty3destroyobjectid"></a>IDebugProperty3::DestroyObjectID
+Zerstört die eindeutige ID dieser Eigenschaft zugeordnet, der angibt, dass der Aufrufer wird nicht mehr, dass diese Eigenschaft aus allen anderen Eigenschaften eindeutig zu identifizieren.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```cpp  
-HRESULT DestroyObjectID(  
-   void  
+HRESULT DestroyObjectID(  
+   void  
 );  
 ```  
   
-```c#  
-int DestroyObjectID();  
+```csharp  
+int DestroyObjectID();  
 ```  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Hinweise  
- Wenn das Debugmodul nicht eindeutige ID für eine Eigenschaft zu unterstützen \(da sie bereits verfolgt intern eindeutig\), kann es leicht `E_NOTIMPL` für diese Methode zurückgeben.  
+## <a name="remarks"></a>Hinweise  
+ Wenn die Debugging-Modul nicht eindeutige IDs für eine Eigenschaft unterstützen (da es bereits diese eindeutig intern verfolgt), und klicken Sie dann einfach zurückgegeben werden kann `E_NOTIMPL` für diese Methode.  
   
- Eindeutige ID wird mit einem Aufruf der [CreateObjectID](../../../extensibility/debugger/reference/idebugproperty3-createobjectid.md)\-Methode erstellt, wenn der Aufrufer überprüft werden soll, ob diese Eigenschaft für alle anderen Eigenschaften eindeutig identifiziert wird.  
+ Eindeutige IDs werden durch einen Aufruf erstellt die [CreateObjectID](../../../extensibility/debugger/reference/idebugproperty3-createobjectid.md) Methode, wenn der Aufrufer benötigt, um sicherzustellen, dass diese Eigenschaft für alle anderen Eigenschaften eindeutig identifiziert wird.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)   
  [CreateObjectID](../../../extensibility/debugger/reference/idebugproperty3-createobjectid.md)

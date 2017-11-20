@@ -1,89 +1,90 @@
 ---
-title: "Gewusst wie: Hinzuf&#252;gen und Entfernen zugeordneter Ordner"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "VS.SharePointTools.Project.MappedFolder"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "Zugeordnete Ordner [SharePoint-Entwicklung in Visual Studio]"
-  - "SharePoint-Entwicklung in Visual Studio, Zugeordnete Ordner"
+title: "Vorgehensweise: Hinzufügen und entfernen zugeordneter Ordner | Microsoft Docs"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: VS.SharePointTools.Project.MappedFolder
+dev_langs:
+- VB
+- CSharp
+- VB
+- CSharp
+helpviewer_keywords:
+- SharePoint development in Visual Studio, mapped folders
+- mapped folders [SharePoint development in Visual Studio]
 ms.assetid: 115c8b00-7d4c-4fbe-b42c-e82dca944504
-caps.latest.revision: 23
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 22
+caps.latest.revision: "23"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 7e54c4f4d95e5f8c23e6768ba3ebd09ef663fee1
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Gewusst wie: Hinzuf&#252;gen und Entfernen zugeordneter Ordner
-  Einige häufig verwendete Ordner in SharePoint, wie Bilder und Layouts, sind tief in die Dateihierarchie eingebettet.  Sie können diese Ordner in einem SharePoint\-Projekt zuordnen, um den Zugriff darauf zu erleichtern.  Zugeordnete Ordner sind Ordner im SharePoint\-Projekt, die dem physikalischen Speicherort der Dateien in der Installation des SharePoint Servers entsprechen.  
+# <a name="how-to-add-and-remove-mapped-folders"></a>Gewusst wie: Hinzufügen und Entfernen zugeordneter Ordner
+  Einige verwendete häufig Ordner in SharePoint, z. B. Bilder und Layouts werden in der Dateihierarchie tief eingebettet. Sie können diese Ordner in einem SharePoint-Projekt für den Zugriff leichter zuordnen. Zugeordnete Ordner sind Ordner in der SharePoint-Projekt, die den physischen Speicherort der Dateien bei der Installation von SharePoint-Server entsprechen.  
   
- Wenn Sie eine SharePoint\-Anwendung bereitstellen, wird der Inhalt des zugeordneten Ordners und aller Unterordner vom Lösungspaket \(.wsp\) auf den Server kopiert, der SharePoint an der angegebenen Position in der SharePoint\-Ordnerstruktur ausführt.  Dieser Speicherort wird von der **Deployment Location**\-Eigenschaft bestimmt, die für den zugeordneten Ordner festgelegt wird.  Alle Unterordner im zugeordneten Ordner sind relativ zum **Deployment Location** des zugeordneten Ordners.  Beachten Sie, dass die Eigenschaft **Deployment Location**, nicht der Name vom zugeordneten Ordner, bestimmt, wo Elemente bereitgestellt werden.  
+ Wenn Sie eine SharePoint-Anwendung bereitstellen, wird der Inhalt der zugeordneten Ordner und seinen Unterordnern durch das Lösungspaket (.wsp) auf den Server kopiert werden, SharePoint an der angegebenen Position in der SharePoint-Ordnerstruktur ausgeführt wird. Dieser Speicherort richtet sich nach der **Bereitstellungsspeicherort** -Eigenschaft, die für den zugeordneten Ordner festgelegt ist. Alle Unterordner im zugeordneten Ordner sind relativ zum **Bereitstellungsspeicherort** des zugeordneten Ordners. Beachten Sie, dass die **Bereitstellungsspeicherort** -Eigenschaft, nicht den Namen des Ordners "zugeordneten" bestimmt, wo die Elemente bereitgestellt werden.  
   
- Sie können einem Projekt zugeordnete Ordner hinzufügen, indem Sie Befehle auf der Menüleiste oder im Kontextmenü für das Projekt verwenden.  Sie können die Befehle **Zugeordneten SharePoint\-Ordner "Bilder" hinzufügen** und **SharePoint\-Ordner "Layouts" hinzufügen** verwenden, diese zugeordneten Ordner hinzuzufügen, die am häufigsten verwendet werden.  Außerdem können Sie einen der anderen verfügbaren SharePoint\-Ordner dem Project zuordnen, indem Sie den Befehl **Zugeordneten SharePoint\-Ordner hinzufügen** im Kontextmenü verwenden und dann den Ordner im Dialogfeld **Zugeordneten SharePoint\-Ordner hinzufügen** angeben.  
+ Ein Projekt kann mithilfe von Befehlen auf der Menüleiste oder das Kontextmenü für das Projekt zugeordnete Ordner hinzugefügt werden. Sie können die **Hinzufügen eines SharePoint "Ordner" Abbilder"zugeordnet"** und **Hinzufügen eines SharePoint "Layouts" Ordner** Befehle aus, um diese hinzufügen zugeordnet, Ordnern, die am häufigsten verwendet werden. Sie können eine der anderen verfügbaren SharePoint-Ordner zu Ihrem Projekt zuordnen, mithilfe der **zugeordneten SharePoint-Ordner hinzufügen** Befehl im Kontextmenü, und dann angeben, die Ordner in der **hinzufügen zugeordneten SharePoint-Ordner** (Dialogfeld).  
   
-## Hinzufügen von zugeordneten Ordnern zu einem Projekt  
- Die folgende Prozedur beschreibt, wie zwei zugeordnete Ordner ein visuelles Webpartprojekt hinzufügt.  Um zu starten, erstellen Sie ein visuelles Webpartprojekt.  
+## <a name="adding-mapped-folders-to-a-project"></a>Ein Projekt hinzugefügt zugeordnete Ordner  
+ Die folgenden Verfahren wird beschrieben, wie ein visuelles Webpartprojekt zwei zugeordnete Ordner hinzugefügt wird. Um zu starten, erstellen Sie ein visuelles Webpartprojekt.  
   
-#### So fügen Sie einem Projekt zugeordnete Ordner hinzu  
+#### <a name="to-add-mapped-folders-to-a-project"></a>Ein Projekt zugeordnete Ordner hinzu  
   
-1.  Wählen Sie in der Menüleiste **Datei**, **Neu**, **Projekt** aus.  
+1.  Wählen Sie in der Menüleiste **Datei**, **Neu**, **Projekt**aus.  
   
-2.  Im Dialogfeld **Neues Projekt** Erweitern Sie entweder **Visual Basic** oder **Visual C\#** Knoten, erweitern Sie den Knoten **Office\/SharePoint**, und wählen Sie den Knoten **SharePoint\-Lösungen** aus.  
+2.  In der **neues Projekt** Dialogfeld erweitern Sie entweder die **Visual Basic** oder **Visual C#-** Knoten, erweitern Sie die **Office/SharePoint** Knoten, und klicken Sie dann Wählen Sie die **SharePoint-Lösungen** Knoten.  
   
-3.  In der Liste der Projektvorlagen, wählen Sie die Vorlage **Visuelles SharePoint 2013\-Webpart** aus.  
+3.  Wählen Sie in der Liste der Projektvorlagen, die **visuelles für SharePoint 2013-Webpart** Vorlage.  
   
-4.  Im Feld **Name** geben Sie "TestProject1" ein und wählen Sie dann die Schaltfläche **OK** aus.  
+4.  In der **Namen** geben **TestProject1**, und wählen Sie dann die **OK** Schaltfläche.  
   
-5.  Im **Assistent zum Anpassen von SharePoint** wählen Sie die Schaltfläche **Fertig stellen**, um die Standardeinstellungen zu erhalten.  
+5.  In der **Assistent zum Anpassen von SharePoint**, wählen Sie die **Fertig stellen** Schaltfläche, um die Standardeinstellungen beibehalten.  
   
-6.  Wählen Sie im **Projektmappen\-Explorer** den Projektknoten, und klicken Sie auf der Menüleiste, **Projekt** auswählen, **Zugeordneten SharePoint\-Ordner "Bilder" hinzufügen** aus.  
+6.  In **Projektmappen-Explorer**, wählen Sie den Projektknoten, und wählen Sie dann auf der Menüleiste **Projekt**, **Hinzufügen eines SharePoint "Ordner" Abbilder"zugeordnet"**.  
   
-     Ein Ordner, der dem Namen **Bilder**, wird im Projekt angezeigt und enthält einen Unterordner, der TestProject1 ".  Dieser zugeordnete Ordner enthält Bilder für das visuelle Webpartprojekt.  
+     Einen Ordner mit dem Namen **Bilder** in Ihrem Projekt angezeigt und enthält einen Unterordner mit dem Namen TestProject1. Dieser zugeordneten Ordner enthält Bilder für die visuelles Webpartprojekt.  
   
-7.  Wählen Sie im **Projektmappen\-Explorer** den Projektknoten, und klicken Sie auf der Menüleiste, **Projekt** auswählen, **Zugeordneten SharePoint\-Ordner hinzufügen**, um das Dialogfeld anzuzeigen **Zugeordneten SharePoint\-Ordner hinzufügen** aus.  
+7.  In **Projektmappen-Explorer**, wählen Sie den Projektknoten, und wählen Sie dann auf der Menüleiste **Projekt**, **zugeordneten SharePoint-Ordner hinzufügen** zum Anzeigen der **hinzufügen Zugeordneter SharePoint-Ordner** (Dialogfeld).  
   
-8.  In der Strukturansicht von Ordnern, die zum Zuordnen verfügbar sind, wählen Sie den Ordner **Ressourcen**, und wählen Sie dann die Schaltfläche **OK** aus.  
+8.  Wählen Sie in der Strukturansicht der Ordner, die für die Zuordnung verfügbar sind, die **Ressourcen** Ordner, und wählen Sie dann die **OK** Schaltfläche.  
   
-     Ein Ordner, der dem Namen **Ressourcen**, wird im Projekt.  Dieser Ordner kann Elemente wie Zeichenfolgenressourcendateien speichern.  Unterordner können für das Organisieren des Inhalts eines zugeordneten Ordners nützlich sein, aber sie werden nicht automatisch erstellt, wenn Sie einen zugeordneten Ordner hinzufügen, indem Sie den Befehl **Zugeordneten SharePoint\-Ordner hinzufügen** verwenden.  Um einen Unterordner hinzuzufügen, wählen Sie den Ordner **Ressourcen** und dann, auf der Menüleiste, **Projekt** auswählen, **Neuer Ordner**.  
+     Einen Ordner mit dem Namen **Ressourcen** in Ihrem Projekt angezeigt wird. In diesem Ordner kann Elemente wie z. B. Zeichenfolgenressourcendateien zu speichern. Unterordner können zum Organisieren von den Inhalt der einen zugeordneten Ordner nützlich sein, aber sie sind nicht automatisch erstellt, wenn Sie einen zugeordneten Ordner hinzufügen, mit der **zugeordneten SharePoint-Ordner hinzufügen** Befehl. Um einen untergeordneten Ordner hinzuzufügen, wählen Sie die **Ressourcen** Ordner, und anschließend auf der Menüleiste die Optionen **Projekt**, **neuer Ordner**.  
   
-## Ändern des Bereitstellungsspeicherorts eines zugeordneten Ordners  
- Standardmäßig werden zugeordnete Ordner in bestimmten Speicherorten relativ zum SharePoint\-Stamminstallationspfad hinzugefügt, den Token {SharePointRoot} bezeichnet.  Sie können diesen Speicherort jedoch ändern, indem Sie die **Deployment location**\-Eigenschaft des zugeordneten Ordners ändern.  Jeder zugeordnete Ordner verfügt über eine eigene **Deployment location**\-Eigenschaft.  
+## <a name="changing-the-deployment-location-of-a-mapped-folder"></a>Ändern den Speicherort für die Bereitstellung der einen zugeordneten Ordner  
+ Standardmäßig werden zugeordnete Ordner an einen bestimmten Standort relativ zum Stammpfad Installation SharePoint hinzugefügt, das das Token {SharePointRoot} bezeichnet. Allerdings können Sie diesen Speicherort ändern, indem Sie ändern die **Bereitstellungsspeicherort** Eigenschaft des zugeordneten Ordners. Jeder zugeordnete Ordner verfügt über eine eigene **Bereitstellungsspeicherort** Eigenschaft.  
   
-#### So ändern Sie den Bereitstellungsspeicherort eines zugeordneten Ordners  
+#### <a name="to-change-the-deployment-location-of-a-mapped-folder"></a>So ändern Sie den Speicherort für die Bereitstellung der einen zugeordneten Ordner  
   
-1.  im Projekt, das Sie zuvor erstellt haben, wählen Sie einen zugeordneten Ordner aus.  
+1.  Wählen Sie in das Projekt, das Sie zuvor erstellt haben, einen zugeordneten Ordner aus.  
   
-2.  Im Fenster **Eigenschaften** wählen Sie die Schaltfläche mit den Auslassungszeichen \(![Auslassungszeichen im ASP.NET Mobile-Designer](~/sharepoint/media/mwellipsis.gif "Auslassungszeichen im ASP.NET Mobile-Designer")\) in der **Deployment location**\-Eigenschaft aus.  
+2.  In der **Eigenschaften** Fenster Schaltfläche mit den Auslassungszeichen (![ASP.NET Mobile-Designer Ellipse](../sharepoint/media/mwellipsis.gif "ASP.NET Mobile-Designer Ellipse")) auf die Schaltfläche der **Bereitstellung Speicherort** Eigenschaft.  
   
-3.  Im Dialogfeld **Zugeordneten SharePoint\-Ordner hinzufügen** zu dem Ordner, dem Sie den zugeordneten Ordner zum Punkt möchten.  
+3.  In der **zugeordneten SharePoint-Ordner hinzufügen** (Dialogfeld), navigieren Sie zu dem Ordner, zeigen Sie die zugeordneten Ordner möchten.  
   
-4.  Wählen Sie den Knoten, und wählen Sie dann die Schaltfläche **OK** aus.  
+4.  Wählen Sie den Knoten, und wählen Sie dann die **OK** Schaltfläche.  
   
-## Umbenennen oder Entfernen von zugeordneten Ordnern  
+## <a name="renaming-or-removing-mapped-folders"></a>Das Umbenennen oder entfernen zugeordneter Ordner  
   
-#### So benennen Sie einen zugeordneten Ordner um oder entfernen diesen  
+#### <a name="to-rename-or-remove-a-mapped-folder"></a>Umbenennen oder entfernen einen zugeordneten Ordner  
   
-1.  im Projekt, das Sie zuvor erstellt haben, wählen Sie einen zugeordneten Ordner aus.  
+1.  Wählen Sie in das Projekt, das Sie zuvor erstellt haben, einen zugeordneten Ordner aus.  
   
-2.  Um den zugeordneten Ordner umzubenennen, öffnen Sie das Kontextmenü, wählen Sie **Umbenennen** aus, geben Sie den neuen Namen ein, und wählen Sie dann die EINGABETASTE aus.  
+2.  Um den zugeordneten Ordner umzubenennen, öffnen Sie das Kontextmenü, wählen Sie **umbenennen**, geben Sie den neuen Namen, und wählen Sie dann die EINGABETASTE.  
   
-     Alternativ können Sie den zugeordneten Ordner auswählen, den Sie umbenennen möchten, öffnen das Fenster **Eigenschaften** und legen Sie dann den Wert der **Folder name**\-Eigenschaft auf den neuen Namen.  
+     Als Alternative können Sie festlegen, die zugeordneten Ordner, die Sie umbenennen möchten, öffnen Sie die **Eigenschaften** Fenster, und legen Sie dann den Wert des der **Ordnername** Eigenschaft in den neuen Namen.  
   
-3.  Um einen zugeordneten Ordner aus dem Projekt zu entfernen, öffnen Sie das Kontextmenü, wählen Sie **Löschen** aus und dann die Schaltfläche **OK** im Dialogfeld um den Löschvorgang zu bestätigen.  
+3.  Um einen zugeordneten Ordner aus dem Projekt entfernen möchten, öffnen Sie das Kontextmenü, wählen Sie **löschen**, und wählen Sie dann die **OK** Schaltfläche im Dialogfeld, das Entfernen zu bestätigen.  
   
-## Siehe auch  
- [Developing SharePoint Solutions](../sharepoint/developing-sharepoint-solutions.md)  
+## <a name="see-also"></a>Siehe auch  
+ [Entwickeln von SharePoint-Projektmappen](../sharepoint/developing-sharepoint-solutions.md)  
   
   

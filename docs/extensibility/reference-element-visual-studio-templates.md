@@ -1,30 +1,36 @@
 ---
-title: "Reference-Element (Visual Studio-Vorlagen) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "http://schemas.microsoft.com/developer/vstemplate/2005#Reference"
-helpviewer_keywords: 
-  - "<Reference>-Element [Visual Studio-Vorlagen]"
-  - "Reference-Element [Visual Studio-Vorlagen]"
+title: Verweisen Sie-Element (Visual Studio-Vorlagen) | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: http://schemas.microsoft.com/developer/vstemplate/2005#Reference
+helpviewer_keywords:
+- Reference element [Visual Studio templates]
+- <Reference> element [Visual Studio templates]
 ms.assetid: 852772ea-c324-42e9-8c8a-6d565414a109
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 2f25b39178141f3e3a40899645a0a1af6c8417ab
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Reference-Element (Visual Studio-Vorlagen)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Gibt den Assemblyverweis an, der hinzugefügt werden soll, wenn das Element in ein Projekt aufgenommen wird.  
+# <a name="reference-element-visual-studio-templates"></a>Reference-Element (Visual Studio-Vorlagen)
+Gibt den Assemblyverweis an, der hinzugefügt wird, wenn das Element einem Projekt hinzugefügt wird.  
   
-## Syntax  
+ \<VSTemplate >  
+ \<TemplateContent >  
+ \<Verweise >  
+ \<Verweis >  
+  
+## <a name="syntax"></a>Syntax  
   
 ```  
 <Reference>  
@@ -32,31 +38,31 @@ Gibt den Assemblyverweis an, der hinzugefügt werden soll, wenn das Element in e
 </Reference>  
 ```  
   
-## Attribute und Elemente  
- In den folgenden Abschnitten werden Attribute, untergeordnete Elemente und übergeordnete Elemente beschrieben.  
+## <a name="attributes-and-elements"></a>Attribute und Elemente  
+ In den folgenden Abschnitten werden attribute-Elemente sowie untergeordnete und übergeordnete Elemente beschrieben.  
   
-### Attribute  
+### <a name="attributes"></a>Attribute  
  Keine.  
   
-### Untergeordnete Elemente  
+### <a name="child-elements"></a>Untergeordnete Elemente  
   
-|Element|Description|  
+|Element|Beschreibung|  
 |-------------|-----------------|  
-|[Assembly](../extensibility/assembly-element-visual-studio-templates.md)|Erforderliches Element.<br /><br /> Gibt Informationen zu einer Assembly an, über die die Vorlage Projekten einen Verweis dieser Assembly hinzufügt.  Es muss ein `Assembly`\-Element in jedem `Reference`\-Element vorhanden sein.|  
+|[Assembly](../extensibility/assembly-element-visual-studio-templates.md)|Erforderliches Element.<br /><br /> Gibt Informationen zu einer Assembly, die die Vorlage verwendet, um einen Verweis von dieser Assembly zu Projekten hinzuzufügen. Es muss eine `Assembly` Element in jedem `Reference` Element.|  
   
-### Übergeordnete Elemente  
+### <a name="parent-elements"></a>Übergeordnete Elemente  
   
-|Element|Description|  
+|Element|Beschreibung|  
 |-------------|-----------------|  
-|[Verweise](../extensibility/references-element-visual-studio-templates.md)|Gruppiert die Assemblyverweise, die Projekten von der Vorlage hinzugefügt werden.|  
+|[Verweise](../extensibility/references-element-visual-studio-templates.md)|Gruppiert die Assemblyverweise, die von die Vorlage zu Projekten hinzugefügt.|  
   
-## Hinweise  
+## <a name="remarks"></a>Hinweise  
  `Reference` ist ein erforderliches untergeordnetes Element von `References`.  
   
- Das `Reference`\-Element und das `References`\-Element können nur in VSTEMPLATE\-Dateien verwendet werden, die über den `Type`\-Attributwert `Item` verfügen.  
+ Die `Reference` und `References` Elemente können nur verwendet werden, in der VSTEMPLATE-Dateien, die über eine `Type` -Attributwert `Item`.  
   
-## Beispiel  
- Im folgenden Beispiel wird das `TemplateContent`\-Element einer Elementvorlage veranschaulicht.  Durch diesen XML\-Code werden Verweise auf die Assemblys System.dll und System.Data.dll hinzugefügt.  
+## <a name="example"></a>Beispiel  
+ Das folgende Beispiel veranschaulicht die `TemplateContent` Element einer Elementvorlage. Durch dieses XML werden Verweise auf die Assemblys "System.dll" und "System.Data.dll" hinzugefügt.  
   
 ```  
 <TemplateContent>  
@@ -76,6 +82,6 @@ Gibt den Assemblyverweis an, der hinzugefügt werden soll, wenn das Element in e
 </TemplateContent>  
 ```  
   
-## Siehe auch  
- [Schemareferenz zu Visual Studio\-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)   
- [Erstellen von benutzerdefinierten Projekt\- und Elementvorlagen](../ide/creating-project-and-item-templates.md)
+## <a name="see-also"></a>Siehe auch  
+ [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)   
+ [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)

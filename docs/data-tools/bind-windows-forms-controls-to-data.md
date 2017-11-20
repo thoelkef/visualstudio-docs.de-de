@@ -1,134 +1,50 @@
 ---
-title: "Gewusst wie: Binden von Windows Forms-Steuerelementen an Daten | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "aspx"
-helpviewer_keywords: 
-  - "Daten [Windows Forms], Anzeigen"
-  - "Datenquellen, Anzeigen"
-  - "Anzeigen von Daten, Windows Forms-Steuerelemente"
-  - "Windows Forms, Anzeigen von Daten"
-ms.assetid: 0163a34a-38cb-40b9-8f38-3058a90caf21
-caps.latest.revision: 28
-caps.handback.revision: 17
-author: "mikeblome"
-ms.author: "mblome"
-manager: "ghogen"
+redirect_url: /visualstudio/data-tools/bind-windows-forms-controls-to-data-in-visual-studio
+ms.openlocfilehash: 5ba8ada294275a99aab27ff9c249d6c3d8e17da3
+ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/09/2017
 ---
-# Gewusst wie: Binden von Windows Forms-Steuerelementen an Daten
-Binden Sie Daten an Windows Forms\-Steuerelemente, indem Sie Objekte aus dem [Datenquellenfenster](../Topic/Data%20Sources%20Window.md) ziehen.  Bevor Sie Elemente aus dem **Datenquellenfenster** ziehen, können Sie den Steuerelementtyp der Tabelle für einzelne Steuerelemente auf **Details** oder **DataGridView** für ein <xref:System.Windows.Forms.DataGridView>\-Element festlegen.  Weitere Informationen finden Sie unter [Festlegen des Steuerelements, das beim Ziehen aus dem Datenquellenfenster erstellt werden soll](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).  
+Title: "Binden von Windows Forms-Steuerelementen an Daten | Microsoft Docs"ms.custom:" "ms.date:" 11/04/2016"ms.reviewer:" "ms.suite:" "ms. tgt_pltfrm:" "ms.topic:"Artikel"Helpviewer_keywords: 
+  - "zum Anzeigen von Daten Steuerelemente von Windows Forms"
+  - "Windows Forms, Anzeigen von Daten"
+  - "Data Sources, anzeigen"
+  - "Daten [Windows Forms], Anzeigen von" ms.assetid: 0163a34a-38cb-40b9-8f38-3058a90caf21 caps.latest.revision: 28 Autor: "Gewarren" ms.author: "Gewarren"-Manager: Ghogen ms.technology: "Vs-Daten-Tools"
+---
+# <a name="bind-windows-forms-controls-to-data"></a>Binden Sie Windows Forms-Steuerelementen an Daten.
+Sie können Datenquellen an Steuerelemente binden, durch Ziehen der Objekte aus der **Datenquellen** Fenster auf einem Windows Form oder auf ein vorhandenes Steuerelement in einem Formular. Bevor Sie Elemente ziehen, können Sie den Typ des Steuerelements festlegen, denen Sie binden möchten. Je nachdem, ob Sie der Tabelle selbst oder eine einzelne Spalte auswählen, werden unterschiedliche Werte angezeigt.  Sie können auch benutzerdefinierte Werte festlegen. Für eine Tabelle bedeutet "Details" an, dass jede Spalte an einem separaten Steuerelement gebunden ist.  
+
+![Binden Sie die Datenquelle an DataGridView](../data-tools/media/raddata-bind-data-source-to-datagridview.png "Raddata Bind-DataSource zu DataGridView")  
   
- Wenn die Steuerelemente, die von der Anwendung erforderlich sind, nicht aus dem Fenster **Datenquellen** verfügbar sind, können Sie Steuerelemente hinzufügen.  Weitere Informationen finden Sie unter [Hinzufügen benutzerdefinierter Steuerelemente zum Datenquellenfenster](../data-tools/add-custom-controls-to-the-data-sources-window.md).  
+[!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
   
- [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
+## <a name="bind-to--data-in-a-datagridview-control"></a>Binden Sie an Daten in einem DataGridView-Steuerelement  
+Für DataGridView wird die gesamte Tabelle auf das entsprechende einzelne Steuerelement gebunden. Wenn Sie ein DataGridView-Steuerelement in das Formular ziehen, wird ein Tool für die Navigation in den Datensätzen Bereichsstreifens (<xref:System.Windows.Forms.BindingNavigator>) wird ebenfalls angezeigt. Ein [DataSet](../data-tools/dataset-tools-in-visual-studio.md), [TableAdapter](../data-tools/create-and-configure-tableadapters.md), <xref:System.Windows.Forms.BindingSource>, und <xref:System.Windows.Forms.BindingNavigator> auf der Komponentenleiste angezeigt. In der folgenden Abbildung ist ein TableAdapterManager auch hinzugefügt, da die Customers-Tabelle eine Beziehung zu der Tabelle Orders sind. Diese Variablen werden in den automatisch generierten Code als Private Member in der Form-Klasse deklariert. Die automatisch generierten Code zum Ausfüllen der DataGridView befindet sich im Form_load-Ereignishandler. Der Code zum Speichern der Daten zum Aktualisieren der Datenbank befindet sich im Ereignishandler speichern für das BindingNavigator. Sie können verschieben oder ändern diesen Code nach Bedarf.  
   
-## Anzeigen einer gesamten Datentabelle in einzelnen Steuerelementen  
- Sie können eine gesamte Tabelle mit Daten in einzelnen Steuerelementen anzeigen, indem Sie die Tabelle \(oder einen Knoten, der eine Auflistung repräsentiert, wenn Sie ein Objekt als Datenquelle verwenden\) aus dem **Datenquellenfenster** auf ein Formular einer Windows\-Anwendung ziehen.  
+ ![GridView mit BindingNavigator](../data-tools/media/raddata-gridview-with-bindingnavigator.png "Raddata GridView mit BindingNavigator")  
   
-#### So zeigen Sie eine gesamte Datentabelle  
+ Sie können das Verhalten der DataGridView-Steuerelement und der BindingNavigator anpassen, indem Sie durch Klicken auf das Smarttag in der oberen rechten Ecke der einzelnen:  
   
-1.  Öffnen Sie das **Datenquellenfenster**.  Weitere Informationen finden Sie unter [Gewusst wie: Öffnen des Datenquellenfensters](../data-tools/how-to-open-the-data-sources-window.md).  
+ ![DataGridView-Steuerelement und Binden von Navigator Smarttags](../data-tools/media/raddata-datagridview-and-binding-navigator-smart-tags.png "Raddata DataGridView und Binden von Navigator-Smarttags")  
   
-    > [!NOTE]
-    >  Wenn das **Datenquellenfenster** leer ist, fügen Sie ihm eine Datenquelle hinzu.  Weitere Informationen finden Sie unter [Übersicht über Datenquellen](../data-tools/add-new-data-sources.md).  
+ Wenn die Steuerelemente die Anwendung muss nicht verfügbar sind die **Datenquellen** Fenster können Sie Steuerelemente hinzufügen. Weitere Informationen finden Sie unter [Hinzufügen benutzerdefinierter Steuerelemente zum Datenquellenfenster](../data-tools/add-custom-controls-to-the-data-sources-window.md).  
   
-2.  Öffnen Sie das Formular im **Windows Forms\-Designer**.  
+ Sie können auch ziehen Sie Elemente aus der **Datenquellen** auf Steuerelemente, die bereits in einem Formular das Steuerelement an Daten gebunden. Ein Steuerelement, das bereits an Daten gebunden ist, hat seine Daten auf das Element zuletzt gezogen Bindungen zurückgesetzt. Um gültige Ablageziele sein, Steuerelemente zum Anzeigen von dem zugrunde liegenden Datentyp, von der auf diesem aus gezogene Element in der Lage sein müssen die **Datenquellen** Fenster. Es ist z. B. nicht zulässig, ein Element zu ziehen, die einen-Datentyp zugehört <xref:System.DateTime> auf eine <xref:System.Windows.Forms.CheckBox>, da die <xref:System.Windows.Forms.CheckBox> kann keine Datum anzeigen.  
   
-3.  Wählen Sie eine Tabelle im **Datenquellenfenster** aus, klicken Sie auf den Dropdownpfeil, und wählen Sie **Details** aus.  
+## <a name="bind-to--data-in-individual-controls"></a>Binden Sie an Daten in einzelnen Steuerelementen  
+ Wenn Sie auf "Details" eine Datenquelle binden, wird jede Spalte im Dataset auf einem separaten Steuerelement gebunden.  
   
-4.  Ziehen Sie die Tabelle aus dem **Datenquellenfenster** auf ein Formular.  
+ ![Binden Sie die Datenquelle zu Details](../data-tools/media/raddata-bind-data-source-to-details.png "Raddata Bind-DataSource zu Details")  
   
-     Auf dem Formular werden für jede Spalte oder Eigenschaft ein eigenes datengebundenes Steuerelement sowie ein diesem Steuerelement zugeordnetes und entsprechend benanntes Label\-Steuerelement erstellt.  
+> [!IMPORTANT]
+>  Beachten Sie, dass in der obigen Abbildung können Sie aus der Orders-Eigenschaft der Customers-Tabelle nicht aus der Orders-Tabelle ziehen. Von der Bindung der Customer.Orders-Eigenschaft, sind Navigationsbefehle vorgenommen werden, in der DataGridView sofort in die Steuerelemente für Details dargestellt. Wenn Sie aus der Tabelle Orders gezogen haben, die Steuerelemente würde weiterhin auf das Dataset gebunden werden, aber nicht würden sie nicht mit der DataGridView synchronisiert.  
   
-## Anzeigen von ausgewählten Datenspalten in einzelnen Steuerelementen  
- Sie zeigen einzelne Datenspalten in einzelnen Steuerelementen an, indem Sie die einzelnen Spalten \(oder Eigenschaften, wenn Sie ein Objekt als Datenquelle verwenden\) aus dem **Datenquellenfenster** auf ein Formular einer Windows\-Anwendung ziehen.  
+ Die folgende Abbildung zeigt die Standardeinstellung von datengebundenen Steuerelementen, die dem Formular hinzugefügt werden, nachdem die Orders-Eigenschaft in der Tabelle Customers, auf "Details gebunden ist" in der **Datenquellen** Fenster.  
   
-#### So zeigen Sie ausgewählte Datenspalten an  
+ ![Tabelle "Orders" gebunden werden, um Details](../data-tools/media/raddata-orders-table-bound-to-details.png "Tabelle "Orders" Raddata gebunden werden, um Details")  
   
-1.  Öffnen Sie das **Datenquellenfenster**.  Weitere Informationen finden Sie unter [Gewusst wie: Öffnen des Datenquellenfensters](../data-tools/how-to-open-the-data-sources-window.md).  
+ Beachten Sie außerdem, dass jedes Steuerelement ein Smarttag verfügt. Dieses Tag kann Anpassungen, die auf das entsprechende Steuerelement nur gelten.  
   
-    > [!NOTE]
-    >  Wenn das **Datenquellenfenster** leer ist, fügen Sie ihm eine Datenquelle hinzu.  Weitere Informationen finden Sie unter [Übersicht über Datenquellen](../data-tools/add-new-data-sources.md).  
-  
-2.  Erweitern Sie die Tabelle, um die einzelnen Spalten anzuzeigen.  
-  
-    > [!TIP]
-    >  Um das Steuerelement festzulegen, das für die einzelnen Spalten erstellt wird, markieren Sie die Spalte im **Datenquellenfenster**, klicken Sie auf den Dropdownpfeil und wählen Sie ein Steuerelement in der Liste verfügbarer Steuerelemente aus.  Weitere Informationen finden Sie unter [Festlegen des Steuerelements, das beim Ziehen aus dem Datenquellenfenster erstellt werden soll](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).  
-  
-3.  Öffnen Sie das Formular im **Windows Forms\-Designer**.  
-  
-4.  Ziehen Sie die gewünschten Spalten aus dem **Datenquellenfenster** auf ein Formular.  
-  
-     Auf dem Formular werden für jede Spalte oder Eigenschaft, die Sie auf dieses ziehen, ein eigenes datengebundenes Steuerelement sowie ein diesem Steuerelement zugeordnetes und entsprechend benanntes Label\-Steuerelement erstellt.  
-  
- Sie können auch Elemente aus dem **Datenquellenfenster** auf vorhandene Steuerelemente, also bereits in einem Formular enthaltene Steuerelemente, ziehen, um das Steuerelement an Daten zu binden.  Bei Steuerelementen, die bereits an Daten gebunden sind, werden die Datenbindungen auf das Element zurückgesetzt, das zuletzt auf das jeweilige Steuerelement gezogen wurde.  
-  
-> [!NOTE]
->  Als gültige Ziele zum Ablegen müssen Steuerelemente den zugrunde liegenden Datentyp des Elements anzeigen können, das aus dem **Datenquellenfenster** gezogen wird.  Es stellt z. B. keinen gültigen Vorgang dar, ein Element des Datentyps <xref:System.DateTime> auf eine <xref:System.Windows.Forms.CheckBox> zu ziehen, da die <xref:System.Windows.Forms.CheckBox> kein Datum anzeigen kann.  
-  
-#### So binden Sie ein vorhandenes Steuerelement an Daten  
-  
-1.  Öffnen Sie das **Datenquellenfenster**.  Weitere Informationen finden Sie unter [Gewusst wie: Öffnen des Datenquellenfensters](../data-tools/how-to-open-the-data-sources-window.md).  
-  
-2.  Öffnen Sie das Formular im [Windows Forms Designer](http://msdn.microsoft.com/de-de/3c3d61f8-f36c-4d41-b9c3-398376fabb15).  
-  
-3.  Erweitern Sie im **Datenquellenfenster** eine Tabelle oder ein Objekt, und zeigen Sie die einzelnen Spalten oder Eigenschaften an.  
-  
-4.  Ziehen Sie das gewünschte Element aus dem **Datenquellenfenster** auf ein vorhandenes Steuerelement.  
-  
-     Das Steuerelement ist jetzt an dieses ausgewählte Element gebunden.  
-  
-## Anzeigen von Daten in einem DataGridView\-Steuerelement  
-  
-#### So zeigen Sie Daten in einem neuen DataGridView\-Steuerelement für Windows Forms an  
-  
-1.  Öffnen Sie das **Datenquellenfenster**.  Weitere Informationen finden Sie unter [Gewusst wie: Öffnen des Datenquellenfensters](../data-tools/how-to-open-the-data-sources-window.md).  
-  
-    > [!NOTE]
-    >  Wenn das **Datenquellenfenster** leer ist, fügen Sie ihm eine Datenquelle hinzu.  Weitere Informationen finden Sie unter [Übersicht über Datenquellen](../data-tools/add-new-data-sources.md).  
-  
-2.  Öffnen Sie das Formular im **Windows Forms\-Designer**.  
-  
-3.  Wählen Sie eine Tabelle im **Datenquellenfenster** aus, klicken Sie auf den Dropdownpfeil, und wählen Sie **DataGridView** aus.  
-  
-4.  Ziehen Sie die Tabelle aus dem **Datenquellenfenster** auf ein Formular.  
-  
-     Auf dem Formular wird ein <xref:System.Windows.Forms.DataGridView>\-Steuerelement und ein Toolstrip \(<xref:System.Windows.Forms.BindingNavigator>\) für die Navigation in den Datensätzen angezeigt.  Auf der Komponentenleiste werden ein [Dataset](../data-tools/dataset-tools-in-visual-studio.md), ein [TableAdapter](../data-tools/tableadapter-overview.md), eine <xref:System.Windows.Forms.BindingSource> und ein <xref:System.Windows.Forms.BindingNavigator> angezeigt.  
-  
-#### So zeigen Sie Daten in einem vorhandenen DataGridView\-Steuerelement für Windows Forms an  
-  
-1.  Öffnen Sie das **Datenquellenfenster**.  Weitere Informationen finden Sie unter [Gewusst wie: Öffnen des Datenquellenfensters](../data-tools/how-to-open-the-data-sources-window.md).  
-  
-    > [!NOTE]
-    >  Wenn das **Datenquellenfenster** leer ist, fügen Sie ihm eine Datenquelle hinzu.  Weitere Informationen finden Sie unter [Übersicht über Datenquellen](../data-tools/add-new-data-sources.md).  
-  
-2.  Öffnen Sie das Formular im **Windows Forms\-Designer**.  
-  
-3.  Wählen Sie eine Tabelle im **Datenquellenfenster** aus, klicken Sie auf den Dropdownpfeil, und wählen Sie **DataGridView** aus.  
-  
-4.  Ziehen Sie die Tabelle aus dem **Datenquellenfenster** auf die <xref:System.Windows.Forms.DataGridView> im Formular.  
-  
-     Das <xref:System.Windows.Forms.DataGridView>\-Steuerelement ist jetzt an die darauf gezogene Tabelle gebunden.  Ein [DataSet](../data-tools/dataset-tools-in-visual-studio.md), ein [TableAdapter](../data-tools/tableadapter-overview.md) und eine <xref:System.Windows.Forms.BindingSource> werden auf der Komponentenleiste angezeigt.  
-  
-## Siehe auch  
- [Exemplarische Vorgehensweise: Anzeigen von Daten in einem Windows Form](../data-tools/walkthrough-displaying-data-on-a-windows-form.md)   
- [Erstellen und Bearbeiten von typisierten Datasets](../data-tools/creating-and-editing-typed-datasets.md)   
- [Übersicht über die BindingSource\-Komponente](../Topic/BindingSource%20Component%20Overview.md)   
- [Übersicht über das BindingNavigator\-Steuerelement](../Topic/BindingNavigator%20Control%20Overview%20\(Windows%20Forms\).md)   
- [Herstellen von Datenverbindungen in Visual Studio](../data-tools/connecting-to-data-in-visual-studio.md)   
- [Vorbereiten der Anwendung auf den Empfang von Daten](../Topic/Preparing%20Your%20Application%20to%20Receive%20Data.md)   
- [Abrufen von Daten für die Anwendung](../data-tools/fetching-data-into-your-application.md)   
- [Binden von Steuerelementen an Daten in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)   
- [Bearbeiten von Daten in der Anwendung](../data-tools/editing-data-in-your-application.md)   
- [Überprüfen von Daten](../Topic/Validating%20Data.md)   
- [Speichern von Daten](../data-tools/saving-data.md)   
- [Tools zum Arbeiten mit Datenquellen in Visual Studio](../Topic/Tools%20for%20Working%20with%20Data%20Sources%20in%20Visual%20Studio.md)
+## <a name="see-also"></a>Siehe auch  
+ [Binden von Windows Forms-Steuerelementen an Daten in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

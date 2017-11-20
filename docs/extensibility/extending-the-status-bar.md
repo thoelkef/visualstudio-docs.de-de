@@ -1,43 +1,45 @@
 ---
-title: "Erweitern Sie die Statusleiste | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Statusleisten Informationen über Statusleisten"
-  - "Statusleisten, Übersicht"
+title: Erweitern die Statusleiste | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- status bars, about status bars
+- status bars, overview
 ms.assetid: f955115c-4c5f-45ec-b41b-365868c5ec0c
-caps.latest.revision: 23
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 23
+caps.latest.revision: "23"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: e170edf941455dd21727628c2e07a836db919d0e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Erweitern Sie die Statusleiste
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Die Visual Studio\-Statusleiste können am unteren Rand der IDE Sie die Informationen anzuzeigen.  
+# <a name="extending-the-status-bar"></a>Erweitern Sie auf der Statusleiste
+Sie können die Statusleiste von Visual Studio am unteren Rand der IDE verwenden, um Informationen anzuzeigen.  
   
- Wenn Sie die Statusleiste erweitern, zeigen Sie Informationen und Benutzeroberfläche in vier Bereiche: Bereich für Feedback, die Statusanzeige zu bewegen, die Animation Region und den Bereich des Designers. Die Feedback\-Region können Sie Text anzeigen, und markieren Sie den angezeigten Text. Die Statusanzeige zeigt schrittweisen Fortschritt für kurzer Vorgänge wie das Speichern einer Datei. Die Animation Region zeigt eine Animation kontinuierlich durchlaufen, lang andauernde oder Operationen nicht festgelegte Länge, wie z. B. das Erstellen von mehreren Projekten in einer Projektmappe an. Und der Bereich des Designers zeigt die Zeilen\- und die Anzahl der Cursorposition.  
+ Wenn Sie auf die Statusleiste erweitern, zeigen Sie Informationen und UI in vier Bereiche: die Feedbackbereich, Statusleiste, des animationsbereichs und des Designerbereichs. Die Feedbackbereich können Sie Text anzeigen, und markieren Sie den angezeigten Text. Die Statusanzeige zeigt Angaben zum Fortschritt für kurzer Vorgänge, z. B. eine Datei zu speichern. Die Animationsbereich zeigt eine fortlaufend in Schleife Animation für lang andauernde oder Operationen unbestimmt Länge, wie z. B. das Erstellen von mehreren Projekten in einer Projektmappe an. Und der Bereich des Designers zeigt die Anzahl Zeilen- und Spaltennummer der Cursorposition.  
   
- Erhalten Sie mithilfe die Statusleiste der <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbar> Schnittstelle \(aus der <xref:Microsoft.VisualStudio.Shell.Interop.SVsStatusbar> Service\). Darüber hinaus alle Objekte, die auf einen Fensterrahmen positioniert als registrieren eine Statusleiste Clientobjekt durch Implementieren der <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser> Schnittstelle. Wenn ein Fenster aktiviert wird, fragt Visual Studio das Objekt platziert, die in diesem Fenster für die `IVsStatusbarUser` Schnittstelle. Wenn gefunden, es Ruft die <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A> \-Methode auf die zurückgegebene Schnittstelle und das Objekt kann in dieser Methode die Statusleiste aus aktualisieren. Windows, z. B. zu dokumentieren, können die <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A> Methode, um die Informationen in den Bereich des Designers zu aktualisieren, wenn sie aktiv sind.  
+ Erhalten Sie mithilfe die Statusleiste der <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbar> Schnittstelle (aus der <xref:Microsoft.VisualStudio.Shell.Interop.SVsStatusbar> Service). Darüber hinaus jedes Objekt, positioniert auf einen Fensterrahmen als Registrieren einer Statusleisten-Clientobjekt, das durch die Implementierung der <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser> Schnittstelle. Wenn ein Fenster aktiviert ist, fragt Visual Studio das Objekt, positioniert auf das Fenster für die `IVsStatusbarUser` Schnittstelle. Wenn gefunden, er ruft die <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A> Methode für die zurückgegebene Schnittstelle und das Objekt kann in der Statusleiste aus innerhalb dieser Methode aktualisieren. Windows, z. B. zu dokumentieren, können Sie die <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A> Methode, um die Informationen in den Bereich des Designers zu aktualisieren, wenn sie aktiv sind.  
   
- Die folgenden Verfahren wird davon ausgegangen, dass Sie wissen, wie erstellen Sie ein VSIX\-Projekt, und fügen Sie einen benutzerdefinierten Befehl hinzu. Weitere Informationen finden Sie unter [Erstellen eine Erweiterung mit einem Menübefehl](../extensibility/creating-an-extension-with-a-menu-command.md).  
+ Die folgenden Verfahren wird davon ausgegangen, dass Sie wissen, wie ein VSIX-Projekt erstellen, und fügen Sie einen benutzerdefinierten Befehl hinzu. Informationen finden Sie unter [erstellen eine Erweiterung mit einem Menübefehl](../extensibility/creating-an-extension-with-a-menu-command.md).  
   
-## Ändern der Statusleiste  
- Dieses Verfahren zeigt, wie festgelegt und Text abrufen, statischen Text anzuzeigen, und markieren Sie den angezeigten Text in der Statusleiste der Feedback\-Region.  
+## <a name="modifying-the-status-bar"></a>Ändern der Statusleiste  
+ Dieses Verfahren wird gezeigt, wie zum Festlegen und Abrufen von Text, statischen Text angezeigt und markieren Sie den angezeigten Text in die Feedbackbereich der Statusleiste.  
   
-#### Lesen und Schreiben in der Statusleiste  
+#### <a name="reading-and-writing-to-the-status-bar"></a>Lesen und Schreiben in der Statusleiste  
   
-1.  Erstellen Sie ein VSIX\-Projekt namens **TestStatusBarExtension** und fügen Sie einen Befehl mit dem Namen **TestStatusBarCommand**.  
+1.  Erstellen Sie ein VSIX-Projekt mit dem Namen **TestStatusBarExtension** und Hinzufügen eines Menübefehls mit dem Namen **TestStatusBarCommand**.  
   
-2.  Ersetzen Sie den Befehl Methodencode \(MenuItemCallback\) in TestStatusBarCommand.cs durch den folgenden:  
+2.  Ersetzen Sie im TestStatusBarCommand.cs den Befehl Code Ereignishandlermethode (MenuItemCallback) wie folgt aus:  
   
-    ```c#  
+    ```csharp  
     private void MenuItemCallback(object sender, EventArgs e)  
     {  
         IVsStatusbar statusBar = (IVsStatusbar)ServiceProvider.GetService(typeof(SVsStatusbar));  
@@ -69,19 +71,19 @@ Die Visual Studio\-Statusleiste können am unteren Rand der IDE Sie die Informat
     }  
     ```  
   
-3.  Kompilieren Sie des Codes und mit dem Debuggen beginnen.  
+3.  Kompilieren Sie des Codes, und starten Sie das Debuggen.  
   
-4.  Öffnen Sie die **Tools** in der experimentellen Instanz von Visual Studio im Menü. Klicken Sie auf die **aufrufen TestStatusBarCommand** Schaltfläche.  
+4.  Öffnen der **Tools** Menü in der experimentellen Instanz von Visual Studio. Klicken Sie auf die **TestStatusBarCommand Aufrufen** Schaltfläche.  
   
-     Sollte der Text in der Statusleiste jetzt Lesevorgänge **"Wir soeben geschrieben haben auf der Statusleiste angezeigt."** und das Meldungsfeld enthält des gleichen Text.  
+     Sie sehen, das den Text in der Statusleiste jetzt Lesevorgänge **"Wir soeben geschrieben haben auf der Statusleiste angezeigt."** ein, und klicken Sie im Meldungsfeld hat den gleichen Text.  
   
-#### Die Statusanzeige wird aktualisiert.  
+#### <a name="updating-the-progress-bar"></a>Die Statusanzeige wird aktualisiert.  
   
-1.  In diesem Verfahren wird gezeigt, wie initialisiert und die Statusanzeige zu aktualisieren.  
+1.  In diesem Verfahren veranschaulichen wir, initialisieren und die Statusanzeige zu aktualisieren.  
   
-2.  Öffnen Sie die Datei TestStatusBarCommand.cs, und Ersetzen Sie die MenuItemCallback\-Methode durch den folgenden Code:  
+2.  Öffnen Sie die Datei TestStatusBarCommand.cs, und Ersetzen Sie die MenuItemCallback-Methode, durch den folgenden Code:  
   
-    ```c#  
+    ```csharp  
     private void MenuItemCallback(object sender, EventArgs e)  
     {  
         IVsStatusbar statusBar = (IVsStatusbar)ServiceProvider.GetService(typeof(SVsStatusbar));  
@@ -103,23 +105,23 @@ Die Visual Studio\-Statusleiste können am unteren Rand der IDE Sie die Informat
     }  
     ```  
   
-3.  Kompilieren Sie des Codes und mit dem Debuggen beginnen.  
+3.  Kompilieren Sie des Codes, und starten Sie das Debuggen.  
   
-4.  Öffnen Sie die **Tools** in der experimentellen Instanz von Visual Studio im Menü. Klicken Sie auf **TestStatusBarCommand Aufrufen** Schaltfläche.  
+4.  Öffnen der **Tools** Menü in der experimentellen Instanz von Visual Studio. Klicken Sie auf **TestStatusBarCommand Aufrufen** Schaltfläche.  
   
-     Sollte angezeigt werden, die den Text in der Statusleiste jetzt Lesevorgänge **"Schreiben in die Leiste Fortschritt"** Außerdem sollte die Statusanzeige, die pro Sekunde für 20 Sekunden aktualisiert. Danach werden die Statusleiste und die Statusanzeige gelöscht.  
+     Sollte angezeigt werden, die Text in der Statusleiste jetzt Lesevorgänge **"Schreiben in der Statusanzeige auf."** Die Statusanzeige, die pro Sekunde für 20 Sekunden aktualisiert werden sollte auch angezeigt werden. Danach werden die Statusleiste und die Statusanzeige gelöscht.  
   
-#### Eine Animation anzeigen  
+#### <a name="displaying-an-animation"></a>Eine Animation anzeigen  
   
-1.  Die Statusleiste zeigt einer Schleifen Animation, die entweder ein Hinweis darauf einen langer Vorgang \(z. B. das Erstellen von mehreren Projekten in einer Projektmappe\). Wenn diese Animation nicht angezeigt wird, stellen Sie sicher, dass der richtige **Extras \/ Optionen** Einstellungen:  
+1.  Die Statusleiste zeigt einer Schleifen Animation an, die entweder ein Hinweis darauf ein langer Vorgang (z. B. das Erstellen von mehreren Projekten in einer Projektmappe) an. Wenn Sie diese Animation nicht angezeigt werden, stellen Sie sicher, dass die richtige **Extras / Optionen** Einstellungen:  
   
-     Klicken Sie auf die **Extras\/Optionen \/ Allgemein** Registerkarte, und deaktivieren Sie **automatisch die visuelle Darstellung, die basierend auf der Clientleistung anpassen**. Klicken Sie dann das Kontrollkästchen Unterordner **Umfassende visuelle Clientdarstellung aktivieren**. Sie sollten jetzt in der Lage, die Animation zu sehen, wenn Sie das Projekt in der experimentellen Instanz von Visual Studio erstellen.  
+     Wechseln Sie zu der **Extras/Optionen / Allgemein** Registerkarte, und deaktivieren Sie **automatisch visuelle Darstellung, die basierend auf der Clientleistung anpassen**. Überprüfen Sie die untergeordnete Option **visuelle Clientdarstellung aktivieren**. Sie sollten jetzt möglich, um die Animation anzuzeigen, wenn Sie das Projekt in der experimentellen Instanz von Visual Studio erstellen.  
   
-     In diesem Verfahren zeigen wir die standardmäßige Visual Studio\-Animation, die Erstellen eines Projekts oder einer Projektmappe darstellt.  
+     In diesem Verfahren wird die standardmäßige Visual Studio-Animation Erstellen eines Projekts oder einer Projektmappe dar angezeigt.  
   
-2.  Öffnen Sie die Datei TestStatusBarCommand.cs, und Ersetzen Sie die MenuItemCallback\-Methode durch den folgenden Code:  
+2.  Öffnen Sie die Datei TestStatusBarCommand.cs, und Ersetzen Sie die MenuItemCallback-Methode, durch den folgenden Code:  
   
-    ```c#  
+    ```csharp  
     private void MenuItemCallback(object sender, EventArgs e)  
     {  
         IVsStatusbar statusBar =(IVsStatusbar)ServiceProvider.GetService(typeof(SVsStatusbar));  
@@ -138,8 +140,8 @@ Die Visual Studio\-Statusleiste können am unteren Rand der IDE Sie die Informat
     }  
     ```  
   
-3.  Kompilieren Sie des Codes und mit dem Debuggen beginnen.  
+3.  Kompilieren Sie des Codes, und starten Sie das Debuggen.  
   
-4.  Öffnen Sie die **Tools** in der experimentellen Instanz von Visual Studio, und klicken Sie im Menü **aufrufen TestStatusBarCommand**.  
+4.  Öffnen der **Tools** in der experimentellen Instanz von Visual Studio, und klicken Sie im Menü **aufrufen TestStatusBarCommand**.  
   
-     Wenn das Meldungsfeld angezeigt wird, sollte auch die Animation in der Statusleiste ganz rechts angezeigt werden. Wenn Sie das Meldungsfeld schließen, verschwindet die Animation.
+     Wenn Sie im Meldungsfeld angezeigt wird, sollte auch in der Statusleiste Animation ganz rechts angezeigt werden. Wenn Sie das Meldungsfeld schließen, verschwindet die Animation.

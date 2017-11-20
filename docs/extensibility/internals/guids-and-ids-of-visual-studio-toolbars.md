@@ -1,141 +1,143 @@
 ---
-title: "GUIDs und IDs der Visual Studio-Symbolleisten | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Visual Studio-Gruppen"
-  - "Symbolleisten"
-  - "Visual Studio-Symbolleiste"
-  - "ID"
-  - "Toolgar-Gruppe"
-  - "Symbolleiste des Toolfensters"
-  - "GUID"
+title: GUIDs und IDs der Visual Studio-Symbolleisten | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- visual studio groups
+- toolbars
+- visual studio toolbar
+- id
+- toolgar group
+- tool window toolbar
+- guid
 ms.assetid: c9cacd57-9225-450f-a9ac-cbf3168ea844
-caps.latest.revision: 7
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 787cebc77d0ca3d06fd88be8ab6f42c6bae3ee38
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# GUIDs und IDs der Visual Studio-Symbolleisten
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Dieses Thema listet die ID\-Werte der GUID\-Wert und auf Symbolleisten, die in der integrierten Entwicklungsumgebung \(IDE\) von Visual Studio enthalten sind, und der Gruppen enthalten.  Diese Werte werden in .vsct\-Dateien definiert, die als Teil von Visual Studio SDK installiert werden.  Weitere Informationen finden Sie unter [IDE\-definierte Befehle, Menüs und Gruppen](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).  
+# <a name="guids-and-ids-of-visual-studio-toolbars"></a>GUIDs und IDs der Visual Studio-Symbolleisten
+Dieses Thema listet die GUID und ID-Werte der Symbolleisten, die in der integrierten Entwicklungsumgebung (IDE) von Visual Studio enthalten sind, und der Gruppen enthalten. Diese Werte werden in der VSCT-Dateien definiert, die als Teil der Visual Studio-SDK installiert sind. Weitere Informationen finden Sie unter [IDE-Defined Befehle, Menüs und Gruppen](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).  
   
 > [!NOTE]
->  Viele der Symbolleisten, die in Visual Studio verfügbar sind, werden nicht von Visual Studio definiert, und ihre GUID\-Wert und ID\-Werte sind nicht öffentlich.  In diesem Thema werden nur auf Symbolleisten, die in den Dateien von Visual Studio SDK .vsct definiert sind.  
+>  Viele der Symbolleisten für Visual Studio verfügbar sind nicht durch Visual Studio, und die entsprechenden GUID-Werte definiert und ID-Werte sind nicht öffentlich. Dieses Thema listet nur die Symbolleisten, die in Visual Studio SDK VSCT-Dateien definiert werden.  
   
- Weitere Informationen zum Arbeiten mit IDE\-Objekten, die in .vsct\-Dateien definiert werden, finden Sie unter [Erweitern von Menüs und Befehlen](../../extensibility/extending-menus-and-commands.md)funktioniert.  
+ Weitere Informationen zum Arbeiten mit IDE-Objekte, die in der VSCT-Dateien definiert sind, finden Sie unter [Erweitern von Menüs und Befehlen](../../extensibility/extending-menus-and-commands.md).  
   
- Die standardmäßige Symbolleisten, die von der Visual Studio\-IDE bereitgestellt werden, verwenden die GUID `guidSHLMainMenu`, wenn andernfalls durch die Verwendung von GUIDs: Syntax für IDs.  
+ Verwenden Sie die GUID die von der Visual Studio-IDE bereitgestellten Standardsymbolleisten `guidSHLMainMenu`, anders angegeben mit GUID: ID-Syntax.  
   
-## IDE\-Symbolleisten  
- Die folgenden Symbolleisten werden von der Visual Studio\-IDE bereitgestellt.  Symbolleisten können angezeigt werden, indem Sie sie auf dem **Symbolleisten** Untermenü des Menüs **Extras** auswählt.  Symbolleisten in Toolfenstern werden nicht in diesem Abschnitt aufgeführt.  
+## <a name="ide-toolbars"></a>IDE-Symbolleisten  
+ Die folgenden Symbolleisten werden von der Visual Studio-IDE bereitgestellt. Symbolleisten können angezeigt werden, indem Sie sie auf Auswählen der **Symbolleisten** Untermenü die **Tools** Menü. Symbolleisten in Toolfenstern sind nicht in diesem Abschnitt enthalten.  
   
- Nur die Gruppen können direkt aus absteigen Symbolleisten.  Um eine Gruppe hinzuzufügen, legen Sie dessen übergeordnetes Element mit dem GUID und ID der Symbolleiste fest.  Um eine Schaltfläche auf einer Symbolleiste hinzugefügt werden soll, legen Sie das übergeordnete Element auf der Symbolleiste auf eine Gruppe fest.  
-  
-|Symbolleiste|ID|  
-|------------------|--------|  
-|Standard|IDM\_VS\_TOOL\_STANDARD|  
-|Build|IDM\_VS\_TOOL\_BUILD|  
-|Text\-Editor|IDM\_VS\_TOOL\_TEXTEDITOR|  
-|Debug|guidVSDebugGroup: IDM\_DEBUG\_TOOLBAR|  
-|Multithreaded Speicherort|guidVSDebugGroup: IDM\_DEBUG\_CONTEXT\_TOOLBAR|  
-  
-### Besondere Symbolleisten  
- Diese Symbolleisten werden von der Visual Studio\-IDE definiert, aber sie können spezielle Funktionen und nicht Host Befehlsgruppen.  
+ Nur Gruppen können direkt von Symbolleisten abgeleitet werden. Legen Sie zum Hinzufügen einer Gruppe seinem übergeordneten Element, auf die GUID und die ID der Symbolleiste. Um eine Symbolleiste eine Schaltfläche hinzuzufügen, legen Sie das übergeordnete Element zu einer Gruppe auf der Symbolleiste.  
   
 |Symbolleiste|ID|  
-|------------------|--------|  
-|Fügen Sie dem Befehl hinzu|IDM\_VS\_TOOL\_ADDCOMMAND|  
-|Nicht definiert|IDM\_VS\_TOOL\_UNDEFINED|  
-|XML\-Schema|IDM\_VS\_TOOL\_SCHEMA|  
-|XML\-Daten|IDM\_VS\_TOOL\_DATA|  
+|-------------|--------|  
+|Standard|IDM_VS_TOOL_STANDARD|  
+|Build|IDM_VS_TOOL_BUILD|  
+|Text-Editor|IDM_VS_TOOL_TEXTEDITOR|  
+|Debuggen|guidVSDebugGroup:IDM_DEBUG_TOOLBAR|  
+|Debugspeicherort|guidVSDebugGroup:IDM_DEBUG_CONTEXT_TOOLBAR|  
   
-## Gruppen auf den IDE\-Symbolleisten  
- Um eine Schaltfläche eine Standardsymbolleiste hinzuzufügen, legen Sie eine der folgenden Gruppen als übergeordnetes Element fest.  Die Symbolleiste Elemente werden durch Gruppen sortiert.  
+### <a name="special-toolbars"></a>Spezielle Symbolleisten  
+ Diese Symbolleisten von Visual Studio-IDE definiert sind, dienen aber spezielle Funktionen und Hosten Befehlsgruppen nicht.  
   
-### Standardwert symbolleisten\-Gruppen  
+|Symbolleiste|ID|  
+|-------------|--------|  
+|Befehl hinzufügen|IDM_VS_TOOL_ADDCOMMAND|  
+|Nicht definiert|IDM_VS_TOOL_UNDEFINED|  
+|XML-Schema|IDM_VS_TOOL_SCHEMA|  
+|XML-Daten|IDM_VS_TOOL_DATA|  
   
-|Name|ID|  
-|----------|--------|  
-|Speichern Sie öffnen\/|IDG\_VS\_TOOLSB\_SAVEOPEN|  
-|Ausschneiden bzw. Kopieren|IDG\_VS\_TOOLSB\_CUTCOPY|  
-|Rückgängig\/Wiederholen|IDG\_VS\_TOOLSB\_UNDOREDO|  
-|Build\/Ausführung|IDG\_VS\_TOOLSB\_RUNBUILD|  
-|Suche|IDG\_VS\_TOOLSB\_SEARCH|  
-|Windows|IDG\_VS\_TOOLSB\_WINDOWS|  
-|Das neue Fenster|IDG\_VS\_TOOLSB\_NEWWINDOWS|  
-|Laden und Speichern|IDG\_VS\_WINDOWUI\_LOADSAVE|  
-|Messgerät|IDG\_VS\_TOOLSB\_GAUGE|  
+## <a name="groups-on-the-ide-toolbars"></a>Gruppen auf dem IDE-Symbolleisten  
+ Um eine Standardsymbolleiste eine Schaltfläche hinzuzufügen, legen Sie eine der folgenden Gruppen wie das übergeordnete Objekt. Die Gruppen werden von der übergeordneten Symbolleiste sortiert.  
   
-### Erstellen Sie Symbolleisten\-Gruppen  
+### <a name="standard-toolbar-groups"></a>Standardsymbolleiste Gruppen  
   
 |Name|ID|  
 |----------|--------|  
-|Erstellen von leiste|IDG\_VS\_BUILDBAR|  
-|Abbrechen|IDG\_VS\_BUILD\_CANCEL|  
+|Speichern/Öffnen|IDG_VS_TOOLSB_SAVEOPEN|  
+|Ausschneiden/Kopieren|IDG_VS_TOOLSB_CUTCOPY|  
+|Rückgängig/Wiederholen|IDG_VS_TOOLSB_UNDOREDO|  
+|Ausführen/Build|IDG_VS_TOOLSB_RUNBUILD|  
+|Suchen|IDG_VS_TOOLSB_SEARCH|  
+|Windows|IDG_VS_TOOLSB_WINDOWS|  
+|Neue Fenster|IDG_VS_TOOLSB_NEWWINDOWS|  
+|Laden/Speichern|IDG_VS_WINDOWUI_LOADSAVE|  
+|Messgerät|IDG_VS_TOOLSB_GAUGE|  
   
-### Text\-Editor\-Symbolleisten\-Gruppen  
-  
-|Name|ID|  
-|----------|--------|  
-|Abschluss|IDM\_VS\_TOOL\_TEXTEDITOR|  
-|Indent|IDG\_VS\_EDITTOOLBAR\_INDENT|  
-|Kommentar|IDG\_VS\_EDITTOOLBAR\_COMMENT|  
-|Lesezeichen|IDG\_VS\_EDITTOOLBAR\_TEMPBOOKMARKS|  
-  
-### Debuggen von Symbolleisten\-Gruppen  
+### <a name="build-toolbar-groups"></a>Symbolleistengruppen erstellen  
   
 |Name|ID|  
 |----------|--------|  
-|Ausführung|IDM\_DEBUG\_TOOLBAR|  
-|Schrittweises Ausführen|IDG\_DEBUG\_TOOLBAR\_STEPPING|  
-|Watch|IDG\_DEBUG\_TOOLBAR\_WATCH|  
-|Windows|IDG\_DEBUG\_TOOLBAR\_WINDOWS|  
+|Build-Leiste|IDG_VS_BUILDBAR|  
+|Abbrechen|IDG_VS_BUILD_CANCEL|  
   
-### Debuggen Speicherort\-Symbolleisten\-Gruppen  
+### <a name="text-editor-toolbar-groups"></a>Text-Editor-Symbolleiste Gruppen  
   
 |Name|ID|  
 |----------|--------|  
-|Multithreaded Speicherort|IDG\_DEBUG\_CONTEXT\_TOOLBAR|  
+|Abschluss|IDM_VS_TOOL_TEXTEDITOR|  
+|Indent|IDG_VS_EDITTOOLBAR_INDENT|  
+|Kommentar|IDG_VS_EDITTOOLBAR_COMMENT|  
+|Lesezeichen|IDG_VS_EDITTOOLBAR_TEMPBOOKMARKS|  
   
-## Tool\-Fenster\-Symbolleisten  
- Symbolleisten können direkt in der IDE oder in Toolfenstern wie **Projektmappen\-Explorer**angezeigt werden.  Da Toolfenster nicht in .vsct\-Dateien definiert, Toolfenster symbolleisten haben keine übergeordneten Elemente definiert sind.  Stattdessen werden sie in den Code eingefügt.  In der folgenden Tabelle sind die Symbolleisten, die ein Toolfenster in der IDE angezeigt werden, und die Befehlsgruppen an.  
+### <a name="debug-toolbar-groups"></a>Debug-Symbolleistengruppen  
+  
+|Name|ID|  
+|----------|--------|  
+|Ausführung|IDM_DEBUG_TOOLBAR|  
+|Schrittweises Ausführen|IDG_DEBUG_TOOLBAR_STEPPING|  
+|Überwachen|IDG_DEBUG_TOOLBAR_WATCH|  
+|Windows|IDG_DEBUG_TOOLBAR_WINDOWS|  
+  
+### <a name="debug-location-toolbar-groups"></a>Debuggen Sie die Symbolleistengruppen Speicherort  
+  
+|Name|ID|  
+|----------|--------|  
+|Debugspeicherort|IDG_DEBUG_CONTEXT_TOOLBAR|  
+  
+## <a name="tool-window-toolbars"></a>Symbolleisten des Toolfensters  
+ Symbolleisten können angezeigt werden direkt in der IDE oder in Toolfenstern wie z. B. **Projektmappen-Explorer**. Da Toolfenster nicht in der VSCT-Dateien definiert sind, führen Sie Symbolleisten des Toolfensters nicht definierten übergeordneten Objekte verfügen. Stattdessen werden sie im Code platziert. Die folgende Tabelle zeigt die Symbolleisten, die Toolfenster in der IDE angezeigt werden, und die darin enthaltenen Befehlsgruppen.  
   
 > [!NOTE]
->  Symbolleisten und Gruppen verwenden die GUID `guidSHLMainMenu`, wenn andernfalls durch die Verwendung von GUIDs: Syntax für IDs.  Wo eine GUID für eine Symbolleiste angegeben wird, gilt es auch an die Gruppen, die von dieser Symbolleiste absteigen.  
+>  Verwenden Sie die GUID, Symbolleisten und Gruppen `guidSHLMainMenu`, anders angegeben mit GUID: ID-Syntax. Eine GUID für eine Symbolleiste angegeben ist, gelten auch für die Gruppen, die über diese Symbolleiste abgeleitet werden.  
   
 |Toolfenster|Symbolleiste|Gruppen|  
-|-----------------|------------------|-------------|  
-|Projektmappen\-Explorer|IDM\_VS\_TOOL\_PROJWIN|IDG\_VS\_PROJ\_TOOLBAR1..5|  
-|Server\-Explorer|guid\_SE\_MenuGroup: IDM\_SE\_TOOLBAR\_SERVEREXPLORER|IDG\_SE\_TOOLBAR\_REFRESH|  
-|Eigenschaften|IDM\_VS\_TOOL\_PROPERTIES|IDG\_VS\_PROPERTIES\_SORT<br /><br /> IDG\_VS\_PROPERTIES\_PAGES|  
-|Klassenansicht|IDM\_VS\_TOOL\_CLASSVIEW|IDG\_VS\_CLASSVIEW\_FOLDERS<br /><br /> IDG\_VS\_CLASSVIEW\_SEARCH<br /><br /> IDG\_VS\_CLASSVIEW\_SETTINGS|  
-|Klassenansicht|IDM\_VS\_TOOL\_CLASSVIEW\_GO|IDG\_VS\_CLASSVIEW\_SEAR CH2|  
-|Objektkatalog|IDM\_VS\_TOOL\_OBJBROWSER|IDG\_VS\_OBJBROWSER\_SUBSETS<br /><br /> IDG\_VS\_OBJBROWSER\_SEARCH<br /><br /> IDG\_VS\_OBJBROWSER\_ADDREFERENCE<br /><br /> IDG\_VS\_OBJBROWSER\_BROWSERSETTINGS|  
-|Objektkatalog|IDM\_VS\_TOOL\_OBJECT\_BROWSER\_GO|IDG\_VS\_OBJBROWSER\_SEAR CH2|  
-|Output|IDM\_VS\_TOOL\_OUTPUTWINDOW|IDG\_VS\_OUTPUTWINDOW\_SELECT<br /><br /> IDG\_VS\_OUTPUTWINDOW\_GOTO<br /><br /> IDG\_VS\_OUTPUTWINDOW\_NEXTPREV<br /><br /> IDG\_VS\_OUTPUTWINDOW\_CLEAR<br /><br /> IDG\_VS\_OUTPUTWINDOW\_WORDWRAP|  
-|Suchen und Ersetzen|IDM\_VS\_TOOL\_UNIFIEDFIND|IDG\_VS\_FINDTAB<br /><br /> IDG\_VS\_REPLACETAB|  
-|Suchergebnisse: 1|IDM\_VS\_TOOL\_FINDRESULTS1|IDG\_VS\_FINDRESULTS1\_GOTO<br /><br /> IDG\_VS\_FINDRESULTS1\_NEXTPREV<br /><br /> IDG\_VS\_FINDRESULTS1\_CLEAR<br /><br /> IDG\_VS\_FINDRESULTS1\_STOPFIND|  
-|Suchergebnisse: 2|IDM\_VS\_TOOL\_FINDRESULTS2|IDG\_VS\_FINDRESULTS2\_GOTO<br /><br /> IDG\_VS\_FINDRESULTS2\_NEXTPREV<br /><br /> IDG\_VS\_FINDRESULTS2\_CLEAR<br /><br /> IDG\_VS\_FINDRESULTS2\_STOPFIND|  
-|Snippet|IDM\_VS\_TOOL\_SNIPPETMENUS|IDG\_VS\_SNIPPET\_REPL<br /><br /> IDG\_VS\_SNIPPET\_REF<br /><br /> IDG\_VS\_SNIPPET\_PROP|  
-|Lesezeichen|IDM\_VS\_TOOL\_BOOKMARKWIND|IDG\_VS\_BWNEWFOLDER<br /><br /> IDG\_VS\_BWNEXTBM<br /><br /> IDG\_VS\_BWNEXTBMF<br /><br /> IDG\_VS\_BWENABLE<br /><br /> IDG\_VS\_BWDELETE|  
-|Aufgabenliste|IDM\_VS\_TOOL\_TASKLIST|IDG\_VS\_TASKLIST\_PROVIDERLIST|  
-|Benutzeraufgaben|IDM\_VS\_TOOL\_USERTASKS|IDG\_VS\_TASKLIST\_PROVIDERLIST<br /><br /> IDG\_VS\_USERTASKS\_EDIT|  
-|Fehlerliste|IDM\_VS\_TOOL\_ERRORLIST|IDG\_VS\_ERRORLIST\_ERRORGROUP<br /><br /> IDG\_VS\_ERRORLIST\_WARNINGGROUP<br /><br /> IDG\_VS\_ERRORLIST\_MESSAGEGROUP|  
-|Aufrufs\-Browser|IDM\_VS\_TOOL\_ CALLBROWSER1. .16|\_ACTIONS IDG\_VS\_TOOLBAR\_ CALLBROWSER1<br /><br /> \_TYPE IDG\_VS\_TOOLBAR\_ CALLBROWSER1<br /><br /> \_CBSETTINGS IDG\_VS\_TOOLBAR\_ CALLBROWSER1|  
-|Haltepunkte|guidVSDebugGroup: IDM\_BREAKPOINTS\_WINDOW\_TOOLBAR|IDG\_BREAKPOINTS\_WINDOW\_NEW<br /><br /> IDG\_BREAKPOINTS\_WINDOW\_DELETE<br /><br /> IDG\_BREAKPOINTS\_WINDOW\_ALL<br /><br /> IDG\_BREAKPOINTS\_WINDOW\_VIEW<br /><br /> IDG\_BREAKPOINTS\_WINDOW\_EDIT<br /><br /> IDG\_BREAKPOINTS\_WINDOW\_COLUMNS|  
-|Disassembly|guidVSDebugGroup: IDM\_DISASM\_WINDOW\_TOOLBAR|IDG\_DISASM\_WINDOW\_TOOLBAR|  
-|1\-4 Arbeitsspeicher|guidVSDebugGroup: IDM\_MEMORY\_WINDOW\_TOOLBAR1… 4|IDG\_MEMORY\_EXPRESSION1..4<br /><br /> IDG\_MEMORY\_ COLUMNS1. .4|  
-|Prozesse|guidVSDebugGroup: IDM\_ATTACHED\_PROCS\_TOOLBAR|IDG\_ATTACHED\_PROCS\_EXECCNTRL IDG\_ATTACHED\_PROCS\_STEPPING<br /><br /> IDG\_ATTACHED\_PROCS\_EXE CCNTRL2<br /><br /> IDG\_ATTACHED\_PROCS\_ATTACH<br /><br /> IDG\_ATTACHED\_PROCS\_COLUMNS|  
+|-----------------|-------------|------------|  
+|Projektmappen-Explorer|IDM_VS_TOOL_PROJWIN|IDG_VS_PROJ_TOOLBAR1... 5|  
+|Server-Explorer|guid_SE_MenuGroup:IDM_SE_TOOLBAR_SERVEREXPLORER|IDG_SE_TOOLBAR_REFRESH|  
+|Eigenschaften|IDM_VS_TOOL_PROPERTIES|IDG_VS_PROPERTIES_SORT<br /><br /> IDG_VS_PROPERTIES_PAGES|  
+|Klassenansicht|IDM_VS_TOOL_CLASSVIEW|IDG_VS_CLASSVIEW_FOLDERS<br /><br /> IDG_VS_CLASSVIEW_SEARCH<br /><br /> IDG_VS_CLASSVIEW_SETTINGS|  
+|Klassenansicht|IDM_VS_TOOL_CLASSVIEW_GO|IDG_VS_CLASSVIEW_SEARCH2|  
+|Objektkatalog|IDM_VS_TOOL_OBJBROWSER|IDG_VS_OBJBROWSER_SUBSETS<br /><br /> IDG_VS_OBJBROWSER_SEARCH<br /><br /> IDG_VS_OBJBROWSER_ADDREFERENCE<br /><br /> IDG_VS_OBJBROWSER_BROWSERSETTINGS|  
+|Objektkatalog|IDM_VS_TOOL_OBJECT_BROWSER_GO|IDG_VS_OBJBROWSER_SEARCH2|  
+|Ausgabe|IDM_VS_TOOL_OUTPUTWINDOW|IDG_VS_OUTPUTWINDOW_SELECT<br /><br /> IDG_VS_OUTPUTWINDOW_GOTO<br /><br /> IDG_VS_OUTPUTWINDOW_NEXTPREV<br /><br /> IDG_VS_OUTPUTWINDOW_CLEAR<br /><br /> IDG_VS_OUTPUTWINDOW_WORDWRAP|  
+|Suchen und Ersetzen|IDM_VS_TOOL_UNIFIEDFIND|IDG_VS_FINDTAB<br /><br /> IDG_VS_REPLACETAB|  
+|Suchergebnisse: 1|IDM_VS_TOOL_FINDRESULTS1|IDG_VS_FINDRESULTS1_GOTO<br /><br /> IDG_VS_FINDRESULTS1_NEXTPREV<br /><br /> IDG_VS_FINDRESULTS1_CLEAR<br /><br /> IDG_VS_FINDRESULTS1_STOPFIND|  
+|Suchen Sie Ergebnisse: 2|IDM_VS_TOOL_FINDRESULTS2|IDG_VS_FINDRESULTS2_GOTO<br /><br /> IDG_VS_FINDRESULTS2_NEXTPREV<br /><br /> IDG_VS_FINDRESULTS2_CLEAR<br /><br /> IDG_VS_FINDRESULTS2_STOPFIND|  
+|Codeausschnittauswahl|IDM_VS_TOOL_SNIPPETMENUS|IDG_VS_SNIPPET_REPL<br /><br /> IDG_VS_SNIPPET_REF<br /><br /> IDG_VS_SNIPPET_PROP|  
+|Lesezeichen|IDM_VS_TOOL_BOOKMARKWIND|IDG_VS_BWNEWFOLDER<br /><br /> IDG_VS_BWNEXTBM<br /><br /> IDG_VS_BWNEXTBMF<br /><br /> IDG_VS_BWENABLE<br /><br /> IDG_VS_BWDELETE|  
+|Aufgabenliste|IDM_VS_TOOL_TASKLIST|IDG_VS_TASKLIST_PROVIDERLIST|  
+|Benutzeraufgaben|IDM_VS_TOOL_USERTASKS|IDG_VS_TASKLIST_PROVIDERLIST<br /><br /> IDG_VS_USERTASKS_EDIT|  
+|Fehlerliste|IDM_VS_TOOL_ERRORLIST|IDG_VS_ERRORLIST_ERRORGROUP<br /><br /> IDG_VS_ERRORLIST_WARNINGGROUP<br /><br /> IDG_VS_ERRORLIST_MESSAGEGROUP|  
+|Aufrufbrowser|IDM_VS_TOOL_CALLBROWSER1... 16|IDG_VS_TOOLBAR_CALLBROWSER1_ACTIONS<br /><br /> IDG_VS_TOOLBAR_CALLBROWSER1_TYPE<br /><br /> IDG_VS_TOOLBAR_CALLBROWSER1_CBSETTINGS|  
+|Haltepunkte|guidVSDebugGroup:IDM_BREAKPOINTS_WINDOW_TOOLBAR|IDG_BREAKPOINTS_WINDOW_NEW<br /><br /> IDG_BREAKPOINTS_WINDOW_DELETE<br /><br /> IDG_BREAKPOINTS_WINDOW_ALL<br /><br /> IDG_BREAKPOINTS_WINDOW_VIEW<br /><br /> IDG_BREAKPOINTS_WINDOW_EDIT<br /><br /> IDG_BREAKPOINTS_WINDOW_COLUMNS|  
+|Disassemblierung|guidVSDebugGroup:IDM_DISASM_WINDOW_TOOLBAR|IDG_DISASM_WINDOW_TOOLBAR|  
+|Speicher 1 bis 4|GuidVSDebugGroup:IDM_MEMORY_WINDOW_TOOLBAR1... 4|IDG_MEMORY_EXPRESSION1... 4<br /><br /> IDG_MEMORY_COLUMNS1... 4|  
+|Prozesse|guidVSDebugGroup:IDM_ATTACHED_PROCS_TOOLBAR|IDG_ATTACHED_PROCS_EXECCNTRL IDG_ATTACHED_PROCS_STEPPING<br /><br /> IDG_ATTACHED_PROCS_EXECCNTRL2<br /><br /> IDG_ATTACHED_PROCS_ATTACH<br /><br /> IDG_ATTACHED_PROCS_COLUMNS|  
   
-## Siehe auch  
- [Hinzufügen eines Controllers im Menü auf einer Symbolleiste](../../extensibility/adding-a-menu-controller-to-a-toolbar.md)   
+## <a name="see-also"></a>Siehe auch  
+ [Eine Symbolleiste hinzugefügt ein Menücontroller](../../extensibility/adding-a-menu-controller-to-a-toolbar.md)   
  [Ein Toolfenster hinzugefügt eine Symbolleiste](../../extensibility/adding-a-toolbar-to-a-tool-window.md)   
- [GUIDs und IDs der Visual Studio\-Menüs](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md)
+ [GUIDs und IDs der Visual Studio-Menüs](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md)

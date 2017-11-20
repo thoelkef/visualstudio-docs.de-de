@@ -1,99 +1,100 @@
 ---
-title: "Gewusst wie: Anpassen eines SharePoint-L&#246;sungspakets"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "VS.SharePointTools.RAD.PackageDesignerAdvanced"
-  - "VS.SharePointTools.RAD.PackageDesigner.Manifest"
-  - "VS.SharePointTools.RAD.PackageDesignerProperties"
-  - "VS.SharePointTools.RAD.PackageDesigner.SwitchView"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "SharePoint-Entwicklung in Visual Studio, Pakete"
+title: "Vorgehensweise: Anpassen eines SharePoint-Lösungspakets | Microsoft Docs"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- VS.SharePointTools.RAD.PackageDesignerAdvanced
+- VS.SharePointTools.RAD.PackageDesigner.Manifest
+- VS.SharePointTools.RAD.PackageDesignerProperties
+- VS.SharePointTools.RAD.PackageDesigner.SwitchView
+dev_langs:
+- VB
+- CSharp
+- VB
+- CSharp
+helpviewer_keywords: SharePoint development in Visual Studio, packages
 ms.assetid: fd365f8c-8a80-4ce8-8e28-c0eb609f12f3
-caps.latest.revision: 20
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 19
+caps.latest.revision: "20"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: d07f03c1aed1c2e85e65bd10a89bd62138d571c7
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Gewusst wie: Anpassen eines SharePoint-L&#246;sungspakets
-  Sie können den Paket\-Designer verwenden, um ein Paket \(.wsp\) zu erstellen und anzupassen.  Sie können z. B. SharePoint\-Projektelemente und \-Funktionen hinzufügen, angeben, ob der Webserver beim Bereitstellen der Lösung zurückgesetzt werden soll, und den Bereitstellungsservertyp festlegen.  
+# <a name="how-to-customize-a-sharepoint-solution-package"></a>Gewusst wie: Anpassen eines SharePoint-Lösungspakets
+  Sie können den Paket-Designer zum Erstellen und Anpassen eines Lösungspakets (.wsp) verwenden. Sie können z. B. SharePoint-Projektelemente und-Funktionen hinzufügen, angeben, wenn der Webserver zurückgesetzt, wenn die Projektmappe bereitgestellt wurde, und den Bereitstellungsservertyp festlegen.  
   
-## Öffnen des Paket\-Designers  
+## <a name="opening-the-package-designer"></a>Öffnen die Paket-Designer  
   
-#### So öffnen Sie den Paket\-Designer  
+#### <a name="to-open-the-package-designer"></a>Öffnen Sie die Paket-Designer  
   
--   Doppelklicken Sie in **Projektmappen\-Explorer** auf **Paket** oder wählen Sie im Kontextmenü für **PaketAnsicht\-Designer** aus.  
+-   In **Projektmappen-Explorer**, doppelklicken Sie auf **Paket**, oder wählen Sie **Sicht-Designer** auf das Kontextmenü für **Paket**.  
   
-## Anzeigen der gepackten Manifestdatei  
- Sie können den Paket\-Designer verwenden, um die gepackte Manifestdatei zu ändern und zu generieren.  Dann können Sie den XML\-Code für diese Datei in Visual Studio anzeigen.  
+## <a name="viewing-the-packaged-manifest-file"></a>Anzeigen der App-Manifest-Datei  
+ Die Paket-Designer können Sie ändern und die App-manifest-Datei zu generieren. Anschließend können Sie den XML-Code für diese Datei in Visual Studio anzeigen.  
   
-#### So zeigen Sie die XML\-Quelldatei an  
+#### <a name="to-view-the-xml-source-file"></a>So zeigen Sie die XML-Quelldatei an  
   
-1.  Wählen Sie im **Paket\-DesignerManifest** aus.  
+1.  In der **Paket-Designer**, wählen Sie **Manifest**.  
   
-#### So zeigen Sie die gepackte Manifestdatei mit dem Projektmappen\-Explorer an  
+#### <a name="to-view-the-packaged-manifest-file-by-using-solution-explorer"></a>So zeigen Sie die gepackte Manifestdatei mit Projektmappen-Explorer  
   
-1.  Wählen Sie im **Projektmappen\-ExplorerAlle Dateien anzeigen** aus.  
+1.  In **Projektmappen-Explorer**, wählen Sie **alle Dateien anzeigen**.  
   
-2.  Erweitern Sie Paket, Erweitern Sie Package.package und öffnen Sie dann die Package.Template.xml\-Datei.  
+2.  Erweitern Sie Paket, erweitern Sie "Package.Package", und öffnen Sie dann die Datei Package.Template.xml.  
   
     > [!NOTE]  
-    >  Wenn Sie die XML\-Datei zum Manifest der Paketvorlage öffnen, werden die Dateien automatisch überprüft, und Sie können die Warnungen ignorieren, die im Fenster Fehlerliste angezeigt werden.  
+    >  Wenn Sie die XML-Manifestdatei für die Paket-Vorlage öffnen, die Dateien automatisch überprüft werden, und können Sie ignorieren, die Warnungen, die im Fenster "Fehlerliste" angezeigt werden.  
   
-## Ändern der Manifestvorlage  
- Sie können den XML\-Code für die gepackte Manifestdatei im Visual Studio\-XML\-Editor oder im Bereich Manifestvorlage ändern.  Alle Änderungen am XML\-Code werden mit der gepackten Manifestdatei für das Paket zusammengeführt.  
+## <a name="changing-the-manifest-template"></a>Ändern der Manifest-Vorlage  
+ Sie können den XML-Code für die gepackte Manifestdatei im XML-Editor von Visual Studio oder im Manifestvorlage ändern. Alle Änderungen an den XML-Code werden in der App-Manifestdatei für das Paket zusammengeführt.  
   
-#### So ändern Sie die Manifestvorlage mit dem XML\-Editor  
+#### <a name="to-change-the-manifest-template-by-using-the-xml-editor"></a>So ändern Sie das manifest Vorlage mithilfe der XML-Editor  
   
-1.  Wählen Sie im **Paket\-Designer** die Registerkarte **Manifest** aus, erweitern Sie den Knoten **Optionen bearbeiten**, und anschließend den Link **In XML\-Editor öffnen** aus.  
+1.  In der **Paket-Designer**, wählen Sie die **Manifest** Registerkarte, erweitern Sie die **Bearbeitungsoptionen** Knoten, und wählen Sie dann die **im XML-Editor geöffnet** Link.  
   
-     Änderungen am XML\-Code werden mit der gepackten Manifestdatei zusammengeführt.  
+     Änderungen an der XML-Code werden in der App-manifest-Datei zusammengeführt.  
   
-#### So ändern Sie die Manifestvorlage im Bereich Manifestvorlage  
+#### <a name="to-change-the-manifest-template-by-using-the-manifest-template-pane"></a>So ändern Sie das manifest Vorlage Manifestvorlage im Bereich ""  
   
-1.  Wählen Sie im **Paket\-Designer** die Registerkarte **Manifest** aus, erweitern Sie den Knoten **Optionen bearbeiten**, und ändern Sie anschließend den XML\-Code, der im Bereich Manifestvorlage wird.  
+1.  In der **Paket-Designer**, wählen Sie die **Manifest** Registerkarte, erweitern Sie die **Bearbeitungsoptionen** Knoten, und ändern Sie das XML, das im Bereich Manifestvorlage angezeigt wird.  
   
-     Änderungen am XML\-Code werden im Bereich **Vorschau des verpackten Manifests** angezeigt.  
+     Änderungen an der XML-Code angezeigt, der **Vorschau der App-Paket-Manifest** Bereich.  
   
-## Überschreiben der gepackten Manifestdatei  
- Sie können den Paket\-Designer deaktivieren und die Datei manifest.xml manuell erstellen.  Wenn Sie dieses Verfahren erstmals ausführen, werden die aktuellen Einstellungen im Paket\-Designer in der XML\-Datei der Paketvorlage gespeichert.  Dann können Sie den XML\-Code ändern oder überschreiben.  
+## <a name="overwriting-the-packaged-manifest-file"></a>Überschreiben die App-Manifest-Datei  
+ Sie können die Paket-Designer deaktivieren und die Datei "Manifest.xml" manuell erstellen. Zum ersten Mal ausführen dieser Prozedur werden die aktuellen Einstellungen im Paket-Designer in der Paket-Vorlage XML-Datei gespeichert. Sie können dann ändern oder den XML-Code überschreiben.  
   
 > [!NOTE]  
->  Wenn Sie SharePoint\-Projektelemente und \- Funktionen in der XML\-Datei hinzufügen oder entfernen, während der Paket\-Designer deaktiviert ist, werden diese Projektelemente und Funktionen nicht verpackt.  
+>  Wenn Sie hinzufügen oder Entfernen von SharePoint-Projektelemente und-Funktionen in der XML-Datei während der Paket-Designer deaktiviert ist, werden nicht diese-Projektelemente und-Funktionen verpackt.  
   
-#### So überschreiben Sie die gepackte Manifestdatei durch Deaktivieren des Designers  
+#### <a name="to-overwrite-packaged-manifest-file-by-disabling-the-designer"></a>Um App-manifest-Datei zu überschreiben, durch Deaktivieren des Designers  
   
-1.  Wählen Sie im **Paket\-Designer** die Registerkarte **Manifest** aus.  
+1.  In der **Paket-Designer**, wählen Sie die **Manifest** Registerkarte.  
   
 2.  .  
   
-3.  Erweitern Sie den Knoten **Optionen bearbeiten**, wählen Sie den Link **Generierten XML\-Code überschreiben und Manifest im XML\-Editor bearbeiten**, und wählen Sie dann die Schaltfläche **Ja** aus.  
+3.  Erweitern Sie die **Bearbeitungsoptionen** Knoten, wählen Sie die **überschreiben generierte XML und bearbeiten Manifest in der XML-Editor** verknüpfen, und wählen Sie dann die **Ja** Schaltfläche.  
   
-     Die Vorlage wird mit der aktuellen gepackten Manifestdatei aktualisiert.  
+     Die Vorlage wird durch die aktuelle App-manifest-Datei aktualisiert.  
   
-## Aktivieren des Paket\-Designers  
- Sie können den Paket\-Designer erneut aktivieren, um die Datei manifest.xml anzupassen.  
+## <a name="enabling-the-package-designer"></a>Aktivieren die Paket-Designer  
+ Sie können die Paket-Designer zum Anpassen der Datei "Manifest.xml" erneut aktivieren.  
   
-#### So aktivieren Sie den Designer erneut  
+#### <a name="to-re-enable-the-designer"></a>Um den Designer erneut zu aktivieren.  
   
-1.  Wählen Sie unter **Paket\-Designer** den Link **Verwerfen Sie Manifestbearbeitungen, und aktivieren Sie den Designer erneut**, und wählen Sie dann die Schaltfläche **Ja** aus.  
+1.  In der **Paket-Designer**, wählen Sie die **manifest Änderungen verwerfen und erneutes Aktivieren der Designer** verknüpfen, und wählen Sie dann die **Ja** Schaltfläche.  
   
-     Die Vorlage wird mit dem ursprünglichen Text aktualisiert, und alle Änderungen am XML\-Code gehen verloren.  
+     Die Vorlage wird mit dem ursprünglichen Text aktualisiert, und alle Änderungen an der XML-Code gehen verloren.  
   
-## Siehe auch  
- [Verpacken und Bereitstellen von SharePoint-Lösungen](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
+## <a name="see-also"></a>Siehe auch  
+ [Verpacken und Bereitstellen von SharePoint-Projektmappen](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
   
   

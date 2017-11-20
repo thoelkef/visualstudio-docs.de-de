@@ -1,61 +1,62 @@
 ---
-title: "IDebugSettingsCallback2::GetEEMetricFile | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "IDebugSettingsCallback2::GetEEMetricFile"
+title: IDebugSettingsCallback2::GetEEMetricFile | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: IDebugSettingsCallback2::GetEEMetricFile
 ms.assetid: 3a0bf9e5-bbd2-4d15-840d-8244732787fc
-caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: bee70cc78ab87d6277445cf3edd0f0bf786c97f2
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugSettingsCallback2::GetEEMetricFile
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Ruft das metrische angegebene Datei des Ausdrucksauswerters der Name oder die Metrik ab.  
+# <a name="idebugsettingscallback2geteemetricfile"></a>IDebugSettingsCallback2::GetEEMetricFile
+Ruft die Metrik Datei Ausdrucksauswertungsfehler Ausdruck erhält den Namen oder die Metrik ab.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetEEMetricFile(  
-   REFGUID guidLang,  
-   REFGUID guidVendor,  
-   LPCWSTR pszMetric,  
-   BSTR*   pbstrValue  
+   REFGUID guidLang,  
+   REFGUID guidVendor,  
+   LPCWSTR pszMetric,  
+   BSTR*   pbstrValue  
 );  
 ```  
   
-```c#  
+```csharp  
 private int GetEEMetricFile(  
-   ref Guid   guidLang,  
-   ref Guid   guidVendor,  
-   string     pszMetric,  
-   out string pbstrValue  
+   ref Guid   guidLang,  
+   ref Guid   guidVendor,  
+   string     pszMetric,  
+   out string pbstrValue  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `guidLang`  
- \[in\]  Eindeutiger Bezeichner der Programmiersprache.  
+ [in] Eindeutiger Bezeichner der Programmiersprache.  
   
  `guidVendor`  
- \[in\]  Eindeutiger Bezeichner des Anbieters.  
+ [in] Eindeutiger Bezeichner des Herstellers.  
   
  `pszMetric`  
- \[in\]  Name der Metriken.  
+ [in] Der Name der Metrik.  
   
  `pbstrValue`  
- \[out\]  Gibt den Inhalt der Datei metrischen als Zeichenfolge zurück.  
+ [out] Gibt den Inhalt der Datei Metrik als Zeichenfolge zurück.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md)

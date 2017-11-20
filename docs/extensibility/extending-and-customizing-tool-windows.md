@@ -1,51 +1,53 @@
 ---
-title: "Erweitern und Anpassen von Toolfenstern | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Benutzeroberflächen essentials"
-  - "Toolfenster, standard"
+title: Erweitern und Anpassen von Toolfenstern | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- user interfaces, essentials
+- tool windows, standard
 ms.assetid: 46b2892e-7b2b-4b3f-83a7-b884f1e114ee
-caps.latest.revision: 20
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 20
+caps.latest.revision: "20"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 6488df3ec567051709f6464d49d891cdd8f995dd
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Erweitern und Anpassen von Toolfenstern
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Visual Studio bietet verschiedene Arten von Windows, z. B. Toolfenster Dokumentfenster und Dialogfeldern. Andere Fenster wie im Eigenschaftenfenster, im Ausgabefenster und der Aufgabenliste sind Typen von Toolfenstern.  
+# <a name="extending-and-customizing-tool-windows"></a>Erweitern und Anpassen von Toolfenstern
+Visual Studio stellt verschiedene Typen von Windows, z. B. Toolfenster Dokumentfenster und Dialogfeldern bereit. Andere Fenster z. B. das Eigenschaftenfenster, Fenster "Ausgabe" und das Fenster "Aufgabenliste" sind die Typen der Toolfenster.  
   
-## Toolfenster  
- Visual Studio\-Toolfenster sind normalerweise schreibgeschützt Windows, die nicht dateibasierte sind. In diesem unterscheiden sich jedoch von Dokumentfenster, die Dateien im schreibgeschützten Modus angezeigt. Die **Toolbox**, **Projektmappen\-Explorer**, **Eigenschaften** Fenster und **Webbrowser** sind Beispiele für Toolfenster.  
+## <a name="tool-windows"></a>Toolfenster  
+ Visual Studio-Toolfenster sind in der Regel schreibgeschützt Fenstern, die nicht dateibasiert sind. Darin unterscheiden sie sich von Dokumentfenstern, in denen die Dateien im Modus mit Lese- und Schreibzugriff angezeigt werden. Die Fenster **Toolbox**, **Projektmappen-Explorer**, **Eigenschaften** und **Webbrowser** sind Beispiele für Toolfenster.  
   
- Um herauszufinden, wie ein einfaches Tool\-Fenster zu erstellen, finden Sie unter [Hinzufügen eines Toolfensters](../extensibility/adding-a-tool-window.md).  
+ Gewusst wie: Erstellen eines einfachen Toolfensters feststellen zu können, finden Sie unter [Hinzufügen eines Toolfensters](../extensibility/adding-a-tool-window.md).  
   
- Um ein Toolfenster in Visual Studio zu registrieren, finden Sie unter [Registrieren ein Toolfenster](../extensibility/registering-a-tool-window.md).  
+ Um ein Toolfenster in Visual Studio zu registrieren, finden Sie unter [registrieren ein Toolfenster](../extensibility/registering-a-tool-window.md).  
   
- Toolfenster Einzel\-Instanz werden in der Standardeinstellung bedeutet, dass nur eine Instanz des Toolfensters kann offen sein zu einem Zeitpunkt. Nachdem eine Einzelinstanz\-Toolfenster geöffnet wird, bleibt es geöffnet, bis die IDE geschlossen wird. Beim Schließen eines Toolfensters Einzel\-Instanz ändert nur die Sichtbarkeit. Sie können auch mit mehreren Instanzen Toolfenster erstellen, dass mehrere Instanzen des Fenster gleichzeitig geöffnet sein können. Weitere Informationen finden Sie unter [Erstellen eines Toolfensters mit mehreren Instanzen](../extensibility/creating-a-multi-instance-tool-window.md).  
+ Toolfenster sind standardmäßig Einzelinstanzen, d. h. nur eine Instanz des Toolfensters kann jeweils geöffnet sein. Nachdem ein Einzelinstanz-Toolfenster geöffnet wurde, bleibt es geöffnet, bis die IDE geschlossen wird. Wenn Sie ein Einzelinstanz-Toolfenster schließen, ändert sich nur seine Sichtbarkeit. Sie können auch Toolfenster mit mehreren Instanzen erstellen, sodass mehrere Instanzen des Fensters gleichzeitig geöffnet sein können. Finden Sie unter [erstellen ein Toolfenster mit mehreren Instanzen](../extensibility/creating-a-multi-instance-tool-window.md) für Weitere Informationen.  
   
- Toolfenster können werden *dynamische*, was bedeutet, dass sie angezeigt werden, wenn ihre verwandten Benutzeroberflächenkontext gilt. Die Verwendung der automatischen Sichtbarkeit kann die Übersichtlichkeit in der IDE aus. Weitere Informationen finden Sie unter [Öffnen ein dynamisches Tool\-Fenster](../extensibility/opening-a-dynamic-tool-window.md).  
+ Toolfenster können werden *dynamische*, was bedeutet, dass sie angezeigt werden, wenn ihr zugehörige Benutzeroberflächenkontext gilt. Die Verwendung der automatischen Sichtbarkeit kann die Übersichtlichkeit hinsichtlich der Fenster in der IDE verbessern. Weitere Informationen finden Sie unter [Öffnen eines Toolfensters dynamische](../extensibility/opening-a-dynamic-tool-window.md).  
   
- Toolfenster können angedockt, Gleitkomma oder im Dokumentrahmen im Registerformat werden. Die Toolfenster, Rahmen wird von der IDE bereitgestellt und wird verwendet, um die Größe, Position, andockzustand und anderen permanenten Eigenschaften steuern. Die Tool\-Fensterbereich zeigt den Inhalt. Die Standardgröße und der Standardposition gelten nur bei im Toolfenster erstmalig geöffnet wird. Danach wird der Fensterzustand Tool beibehalten.  
+ Toolfenster können im Dokumentrahmen angedockt oder unverankert sein bzw. das Registerkartenformat aufweisen. Der Toolfensterrahmen wird von der IDE bereitgestellt und dazu verwendet, um das Format, die Position, den Andockzustand und andere permanente Eigenschaften zu steuern. Der Toolfensterbereich zeigt die Inhalte an. Das Standardformat und die Standardposition gelten nur beim ersten Öffnen des Toolfensters. Anschließend wird der Toolfensterzustand beibehalten.  
   
- Fensterbereiche Tool können Hosten von WPF\-Benutzersteuerelemente und Symbolleisten unterstützen. Sie können außer Kraft setzen die <xref:Microsoft.VisualStudio.Shell.WindowPane.Window%2A> Eigenschaft, um das Handle des gehosteten Steuerelements zurück.  
+ Toolfensterbereiche können WPF-Benutzersteuerelemente hosten und Symbolleisten unterstützen. Sie können außer Kraft setzen die <xref:Microsoft.VisualStudio.Shell.WindowPane.Window%2A> Eigenschaft, um das Handle des gehosteten Steuerelements zurückzugeben.  
   
- Toolfenster können Sie zahlreiche unterschiedliche Features hinzufügen. Sie können z. B. eine Symbolleiste hinzufügen: [Ein Toolfenster hinzugefügt eine Symbolleiste](../extensibility/adding-a-toolbar-to-a-tool-window.md) oder ein Kontextmenü: [Hinzufügen eines Kontextmenüs in einem Toolfenster](../extensibility/adding-a-shortcut-menu-in-a-tool-window.md). Sie können ein Steuerelement für die Suche, die Sie Elemente in das Toolfenster suchen kann hinzufügen: [Hinzufügen von Suchfunktionen zu einem Toolfenster](../extensibility/adding-search-to-a-tool-window.md).  
+ Toolfenster können Sie zahlreiche unterschiedliche Features hinzufügen. Sie können z. B. eine Symbolleiste hinzufügen: [ein Toolfenster eine Symbolleiste hinzugefügt](../extensibility/adding-a-toolbar-to-a-tool-window.md) oder ein Kontextmenü: [Hinzufügen eines Kontextmenüs in einem Toolfenster](../extensibility/adding-a-shortcut-menu-in-a-tool-window.md). Sie können ein Steuerelement für die Suche, die Ihnen ermöglicht, eine Suche in Ihr Toolfenster Elemente hinzufügen: [Suche hinzufügen, um ein Toolfenster](../extensibility/adding-search-to-a-tool-window.md).  
   
- Sie können Fensterereignisse abonnieren: [Abonnieren eines Ereignisses](../extensibility/subscribing-to-an-event.md).  
+ Sie können Ereignisse abonnieren, Tool-Fenster: [Abonnieren eines Ereignisses](../extensibility/subscribing-to-an-event.md).  
   
-## Erweitern Sie vorhandene Toolfenster  
- Sie können Informationen über das Toolfenster hinzufügen, um ein neues **Optionen** Seite und eine neue Einstellung für die **Eigenschaften** Seite, das Schreiben auf die **Aufgabenliste** und **Ausgabe** Windows. Weitere Informationen finden Sie unter [Erweitern Sie die Eigenschaften, die Aufgabenliste, die Ausgabe und die Optionen Windows](../extensibility/extending-the-properties-task-list-output-and-options-windows.md) und [Erweitern Sie die Eigenschaften, die Aufgabenliste, die Ausgabe und die Optionen Windows](../extensibility/extending-the-properties-task-list-output-and-options-windows.md).  
+## <a name="extending-existing-tool-windows"></a>Erweitern von vorhandenen Toolfenstern  
+ Sie können Informationen über das Toolfenster hinzufügen, um ein neues **Optionen** Seiten- und eine neue Einstellung für die **Eigenschaften** Seite, das Schreiben auf die **Aufgabenliste** und **Ausgabe**  Windows. Weitere Informationen finden Sie unter [erweitern die Eigenschaften, die Aufgabenliste, die Ausgabe und die Optionen Windows](../extensibility/extending-the-properties-task-list-output-and-options-windows.md) und [erweitern die Eigenschaften, die Aufgabenliste, die Ausgabe und die Optionen Windows](../extensibility/extending-the-properties-task-list-output-and-options-windows.md).  
   
-## Modale Dialogfelder  
- Visual Studio\-Erweiterung erstellen Sie in modalen Dialogfeldern durch Ableitung von <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow?displayProperty=fullName>, wodurch sie und den Rest der Benutzeroberfläche zu steuern. Weitere Informationen finden Sie unter.[Erstellen und Verwalten von modalen Dialogfeldern](../extensibility/creating-and-managing-modal-dialog-boxes.md).  
+## <a name="modal-dialog-boxes"></a>Modale Dialogfelder  
+ In einer Visual Studio-Erweiterung sollten Sie modale Dialogfelder erstellen, indem Sie daraus ableiten <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow?displayProperty=fullName>, sodass Sie sie und den Rest der Benutzeroberfläche steuern. Weitere Informationen finden Sie unter . [Erstellen und Verwalten von modalen Dialogfeldern](../extensibility/creating-and-managing-modal-dialog-boxes.md).  
   
-## Siehe auch  
- [Erstellen eine Erweiterung mit einem Toolfenster](../extensibility/creating-an-extension-with-a-tool-window.md)
+## <a name="see-also"></a>Siehe auch  
+ [Erstellen einer Erweiterung mit einem Toolfenster](../extensibility/creating-an-extension-with-a-tool-window.md)
