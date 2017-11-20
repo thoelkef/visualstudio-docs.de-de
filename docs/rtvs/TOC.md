@@ -1,10 +1,13 @@
-# [R Tools für Visual Studio](index.md)
+# Übersicht
+## [R Tools für Visual Studio](index.md)
 ## [Arbeitsauslastung von Data Science und analytischen Anwendungen](data-science-workload.md)
+# Schnellstarts
 ## [Installation](installation.md)
+## [Anzeigen der Hilfe](getting-started-help.md)
+# Lernprogramme
 ## [Erste Schritte mit R](getting-started-with-r.md)
-### [Beispiele](getting-started-samples.md)
-### [Anzeigen der Hilfe](getting-started-help.md)
-### [Optionen](options.md)
+# [Beispiele](getting-started-samples.md)
+# Anleitungen
 ## [R-Projekte](projects.md)
 ### [Paket-Manager](package-manager.md)
 ### [Arbeitsbereiche](workspaces.md)
@@ -18,3 +21,5 @@
 ## [Visualisieren von Daten](visualizing-data.md)
 ## [Variablen-Explorer](variable-explorer.md)
 ## [Debuggen](debugging.md)
+# Verweis
+## [Optionen](options.md)

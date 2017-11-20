@@ -1,67 +1,53 @@
 ---
-title: Starten Visual Studio-Erweiterungen entwickeln | Microsoft-Dokumentation
+title: Starten Visual Studio-Erweiterungen entwickeln | Microsoft Docs
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 09/18/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - getting started, Visual Studio integration
 - Visual Studio, integration
 ms.assetid: 8fe5e2ab-a424-4173-9d39-dd082c4d58d0
-caps.latest.revision: 29
+caps.latest.revision: "29"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 8163a0e1230712734936b7548bef1753ee0c1d2a
-ms.openlocfilehash: dc5416fe979ed3e52ef2df77e5b495cb98038dcd
-ms.lasthandoff: 03/07/2017
-
+ms.openlocfilehash: 2d788121e81af48cb972631d0845ad7b4317818b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="starting-to-develop-visual-studio-extensions"></a>Starten Visual Studio-Erweiterungen entwickeln
-Wenn Sie Visual Studio-Erweiterung vor nie geschrieben haben, haben Sie wahrscheinlich einige Fragen. Wir haben einige der häufigsten Probleme aufgeführt. Wenn Sie die Informationen Sie suchen sehen, verwenden Sie die Feedback-Schaltflächen (**war diese Seite hilfreich?** am unteren Bildschirmrand) stellen möchten.  
+# <a name="starting-to-develop-visual-studio-extensions"></a>Entwickeln von Visual Studio-Erweiterungen wird gestartet...
+Wenn Sie eine Visual Studio-Erweiterung, bevor Sie nie geschrieben haben, haben Sie wahrscheinlich einige Fragen. Wir haben einige der häufigsten Probleme aufgeführt. Wenn Sie die Informationen Sie wünschen sehen, verwenden Sie die Feedback-Schaltflächen (**war diese Seite hilfreich?** am unteren Rand des Bildschirms) für die gewünschten um Unterstützung bitten.  
   
-## <a name="what-software-do-i-need-to-develop-visual-studio-extensions"></a>Welche Software brauche ich Visual Studio-Erweiterungen entwickeln?  
- Sie müssen Visual Studio SDK zusätzlich zu Visual Studio installieren, um Visual Studio-Erweiterungen zu entwickeln. Sie können das Visual Studio SDK installieren, als Teil der normalen Installation oder später installieren. Weitere Informationen zum Installieren von Visual Studio SDK finden Sie unter [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
+## <a name="what-software-do-i-need-to-develop-visual-studio-extensions"></a>Welche Software benötige ich zum Entwickeln von Visual Studio-Erweiterungen?  
+ Sie müssen das Visual Studio SDK neben Visual Studio zu installieren, um Visual Studio-Erweiterungen entwickeln. Sie können das Visual Studio SDK installieren, im Rahmen des normalen Setup oder später installieren. Weitere Informationen zum Installieren von Visual Studio SDK finden Sie unter [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
   
-## <a name="what-kinds-of-things-can-i-do-with-visual-studio-extensions"></a>Welche Arten von Elementen kann ich mit Visual Studio-Erweiterungen?  
- Der Himmel einer das Limit, wenn es darum geht, so vor anderen Visual Studio-Erweiterungen. Natürlich müssen die meisten etwas zu tun, mit dem Schreiben von Code, jedoch muss, die nicht der Fall sein. Hier sind einige Beispiele für die Arten von Erweiterungen, die Sie erstellen können:  
+## <a name="what-kinds-of-things-can-i-do-with-visual-studio-extensions"></a>Welche Arten von Aufgaben kann ich mit Visual Studio-Erweiterungen tun?  
+ Wenn es darum geht, so vor anderen Visual Studio-Erweiterungen in der die Sky den Grenzwert werden. Natürlich bei den meisten Erweiterungen haben Ihnen etwas mit Code zu schreiben, braucht jedoch, die die Groß-/Kleinschreibung. Hier sind einige Beispiele für die Arten von Erweiterungen, die Sie erstellen können:  
   
--   Unterstützung für Sprachen, die mit Farben für Syntax, IntelliSense und Unterstützung für Compiler und Debuggen in Visual Studio enthalten sind  
+-   Unterstützung für Sprachen, die nicht mit Syntaxfarben, IntelliSense und den Compiler und Debug-Unterstützung in Visual Studio enthalten sind  
   
--   Produktivitätstools, die den Kern erweitern IDE Erfahrung im Umgang mit zusätzlichen Vorlagen, Code umgestaltet, neue Dialogfelder und Toolfenster  
+-   Produktivitätstools, die den Kern erweitern IDE-Erfahrung mit zusätzlichen Vorlagen, Code umgestaltet, neue Dialogfelder und Toolfenster  
   
--   Domänenspezifische Designern für Szenarios wie Daten Entwurfs- oder Cloud-Unterstützung  
+-   Domänenspezifische-Designern für Szenarien wie die Daten Entwurfs- oder Cloud-Unterstützung  
   
- Beispiele für Erweiterungen, sehen Sie sich die [Visual Studio Gallery](https://visualstudiogallery.msdn.microsoft.com/). Sie können auch sehen Sie sich [Visual Studio Open-Source-Erweiterungen](https://github.com/Microsoft/extendvs/blob/master/CommunityExtensions.md).  
+ Beispiele für Erweiterungen, sehen Sie sich die [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs). Zahlreiche Erweiterungen sind open Source und Marketplace enthält Links zu ihren GitHub-Repository. 
   
-## <a name="which-visual-studio-features-can-i-extend"></a>Die Visual Studio-Funktionen können werden erweitert?  
- Theoretisch kann nahezu jeden Teil von Visual Studio: Menüs, Symbolleisten, Befehle, Windows, Projektmappen, Projekte, Editoren und usw..  
+## <a name="which-visual-studio-features-can-i-extend"></a>Welche Visual Studio-Funktionen können werden erweitert?  
+ Theoretisch können Sie fast jeden Teil von Visual Studio erweitern: Menüs, Symbolleisten, Befehle, Windows, Projektmappen, Projekte, Editoren und usw..  
   
- In der Praxis haben wir die Funktionen, die meisten Benutzer erweitern möchten, sind Befehle, Menüs und Symbolleisten, Windows, IntelliSense und Projekte gefunden. Hier sind Links zu den relevanten Abschnitten:  
+ In der Praxis gefunden wird, dass die Funktionen, die meisten Personen erweitern möchten Befehle, Menüs und Symbolleisten, Windows, IntelliSense und Projekte. Hier sind Links zu den relevanten Abschnitten:  
   
--   [Erweitern von Menüs und Befehlen](../extensibility/extending-menus-and-commands.md): Fügen Sie Ihre eigenen Artikel zu Visual Studio-Menüs und Symbolleisten. Sie können um neue Visual Studio-Funktionen oder eigene externe Hilfsprogramme zu starten. Sie können auch benutzerdefinierte Tastenkombinationen für den Menüelementen angeben.  
+-   [Erweitern von Menüs und Befehle](../extensibility/extending-menus-and-commands.md): Visual Studio-Menüs und Symbolleisten eigene Elemente hinzugefügt. Sie können diese verwenden, um neue Funktionen von Visual Studio oder eine eigene externe Hilfsprogramme zu starten. Sie können auch benutzerdefinierte Tastenkombinationen für den Menüelementen bereitstellen.  
   
--   [Zum Erweitern von und Anpassen von Toolfenstern](../extensibility/extending-and-customizing-tool-windows.md): vorhandene Toolfenster zu erweitern oder eigene Toolfenster erstellen. Z. B. könnten Sie neue Eigenschaften zum Hinzufügen der **Eigenschaften**, oder erstellen Sie ein neues Toolfenster, um zusätzliche Funktionen hinzuzufügen.  
+-   [Zum Erweitern von und Anpassen von Toolfenstern](../extensibility/extending-and-customizing-tool-windows.md): vorhandene Toolfenster erweitern oder eigene Toolfenster erstellen. Sie konnten z. B. neue Eigenschaften hinzufügen der **Eigenschaften**, oder Sie erstellen ein neue Toolfenster, um zusätzliche Funktionen hinzuzufügen.  
   
--   [-Editor, und Language Service Extensions](../extensibility/editor-and-language-service-extensions.md): Fügen Sie Ihre eigenen Anpassungen IntelliSense für Visual Studio-Sprachen bereitgestellt, oder erstellen Sie Unterstützung für neue Programmiersprachen. Sie können neue anweisungsvervollständigungen, Vorschläge und neue QuickInfos erstellen. Mit Glühbirnen Sie können die Umgestaltung Vorschläge hinzufügen und Code behoben, um neue Programmiersprachen zu unterstützen.  
+-   [Editor und Dienst Spracherweiterungen](../extensibility/editor-and-language-service-extensions.md): Fügen Sie eigene Anpassungen IntelliSense für Visual Studio-Sprachen bereitgestellt, oder erstellen Sie Unterstützung für neue Programmiersprachen. Sie können neue anweisungsvervollständigungen, Vorschläge und neue QuickInfos erstellen. Mit Glühbirnen können Sie die Umgestaltung Vorschläge hinzufügen und Code behoben, um neue Programmiersprachen zu unterstützen.  
   
 -   [Erweitern von Projekten](../extensibility/extending-projects.md)  
   
@@ -74,33 +60,33 @@ Wenn Sie Visual Studio-Erweiterung vor nie geschrieben haben, haben Sie wahrsche
 -   [Visual Studio Isolated Shell](../extensibility/visual-studio-isolated-shell.md)  
   
 ##  <a name="BKMK_ProjectTemplate"></a>Welche Projektvorlagen von VSSDK bereitgestellt werden?  
- Die beiden wichtigsten Arten von Erweiterungen sind VSPackages und MEF-Erweiterungen. VSPackage-Erweiterungen werden im Allgemeinen für Erweiterungen verwendet, die Befehle, Toolfenstern und Projekte zu erweitern oder verwenden. MEF-Erweiterungen werden zum Erweitern oder Anpassen der Visual Studio-Editor.  
+ Die zwei Haupttypen von Erweiterungen sind VSPackages und MEF-Erweiterungen. Im Allgemeinen dienen VSPackage-Erweiterungen für Erweiterungen, die verwenden oder Erweitern von Befehlen, Toolfenster und Projekte. MEF-Erweiterungen dienen zum Erweitern oder Anpassen der Visual Studio-Editor.  
   
- Für Visual c# und Visual Basic-Erweiterungen bietet VSSDK eine leere VSIX-Projektvorlage, die Sie zusammen mit den neuen Vorlagen verwenden können, die Menübefehle, Toolfenstern und Editor-Erweiterungen zu erstellen. Sie können diese Vorlage Paket Projektvorlagen, Codeausschnitte und andere Artefakte auch für die Verteilung an andere Benutzer verwenden.  
+ Für Visual c# und Visual Basic-Erweiterungen bietet VSSDK eine leere VSIX-Projektvorlage, die Sie zusammen mit den neuen Vorlagen verwenden können, die Menübefehle, Toolfenster und editorerweiterungen erstellen. Sie können auch diese Vorlage zum Paket-Projektvorlage, Codeausschnitte und andere Artefakte für die Verteilung an andere Benutzer.  
   
- Für C++ bietet der VSPackage-Assistent den Code zum Hinzufügen von Menübefehlen, Toolfenstern und benutzerdefinierte Editoren.  
+ Bei C++ bietet der VSPackage-Assistent den Code, um Menübefehle, Toolfenster und benutzerdefinierte Editoren hinzufügen.  
   
- Die isolierte Shell-Vorlage wird verwendet, eine Erweiterung in einer Version von Visual Studio-Shell zu verpacken, die Sie an Ihre Marke und als eigene verteilen können. Die folgenden Themen zeigen Ihnen, wie mit jeder Art von Erweiterung beginnen:  
+ Die Isolated Shell-Vorlage wird verwendet, um eine Erweiterung in einer Version von Visual Studio-Shell zu verpacken, die Marke und als eigene verteilen können. Die folgenden Themen zeigen Ihnen, wie mit jeder Art von Erweiterung beginnen:  
   
--   Menübefehle: [erstellen eine Erweiterung mit einem Menübefehl](../extensibility/creating-an-extension-with-a-menu-command.md)  
+-   Befehle im Menü: [erstellen eine Erweiterung mit einem Menübefehl](../extensibility/creating-an-extension-with-a-menu-command.md)  
   
 -   Toolfenster: [erstellen eine Erweiterung mit einem Toolfenster](../extensibility/creating-an-extension-with-a-tool-window.md)  
   
--   Editor-Erweiterungen: [erstellen eine Erweiterung mit einer Elementvorlage-Editor](../extensibility/creating-an-extension-with-an-editor-item-template.md)  
+-   Editorerweiterungen: [erstellen eine Erweiterung mit einer Elementvorlage-Editor](../extensibility/creating-an-extension-with-an-editor-item-template.md)  
   
 -   Grundlegende VSPackages: [erstellen eine Erweiterung mit einem VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md)  
   
 -   VSIX-Projektvorlage: [Einstieg in die VSIX-Projektvorlage](../extensibility/getting-started-with-the-vsix-project-template.md)  
   
--   Visual Studio isolated Shell: [Exemplarische Vorgehensweise: Erstellen einer einfachen Anwendung für isolierte Shell](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)  
+-   Visual Studio isolierte Shell: [Exemplarische Vorgehensweise: Erstellen einer grundlegenden isolierten Shell-Anwendung](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)  
   
-## <a name="how-do-i-get-my-extension-to-look-like-visual-studio"></a>Wie erhalte ich meine Erweiterung von Visual Studio aussehen?  
- Hervorragende Tipps zum Entwerfen der Benutzeroberfläche für die Erweiterung im [Visual Studio User Experience Guidelines](../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md).  
+## <a name="how-do-i-get-my-extension-to-look-like-visual-studio"></a>Wie erhalte ich meiner Erweiterung Visual Studio aussehen?  
+ Erhalten Sie hilfreiche Tipps zum Entwerfen der Benutzeroberflächenautomatisierungs für die Erweiterung im [Visual Studio-Umgebung Leitfäden](../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md).  
   
-## <a name="where-can-i-find-examples-of-vssdk-code"></a>Wo finde ich Beispiele für VSSDK Code?  
- Jede der im vorherigen Abschnitt aufgeführten Links haben schrittweise exemplarische Vorgehensweisen, die veranschaulichen bestimmte Features zu implementieren. Sie finden auch open-Source VSSDK Beispiele auf GitHub unter [Visual Studio-Beispiele](https://aka.ms/vs2015sdksamples).  
+## <a name="where-can-i-find-examples-of-vssdk-code"></a>Wo finde ich die Beispiele für VSSDK Code?  
+ Da jedes der im vorherigen Abschnitt aufgeführten Links aufweisen schrittweise beschriebenen exemplarischen Vorgehensweisen, die zeigen, wie bestimmte Features implementiert werden. Sie erhalten auch open-Source VSSDK-Beispiele auf GitHub unter [Visual Studio-Beispiele](https://github.com/Microsoft/VSSDK-Extensibility-Samples).  
   
 ## <a name="how-can-i-distribute-my-extension"></a>Wie kann ich meiner Erweiterung verteilen?  
- Sie können die Erweiterung auf einem anderen Computer installieren oder an Ihre Freunde senden, als eine VSIX-Datei, die Sie installieren, indem Sie darauf doppelklicken. Sie können weitere Informationen zu VSIX-Pakete auf [Versand der Visual Studio-Erweiterungen](../extensibility/shipping-visual-studio-extensions.md).  
+ Sie können die Erweiterung auf einem anderen Computer installieren oder per für Ihre Freunde als eine VSIX-Datei, die Sie installieren, indem Sie darauf doppelklicken. Sie erhalten weitere Informationen zu VSIX-Pakete auf [Versand der Visual Studio-Erweiterungen](../extensibility/shipping-visual-studio-extensions.md).  
   
- Sie können auch die Erweiterung in der Visual Studio Gallery veröffentlichen für eine große Anzahl von Visual Studio-Kunden angezeigt werden. Ein Beispiel für eine Erweiterung für die Galerie Verpacken, finden Sie unter [Exemplarische Vorgehensweise: Veröffentlichen einer Visual Studio-Erweiterung](../extensibility/walkthrough-publishing-a-visual-studio-extension.md). Weitere Informationen, was Sie tun, um im Katalog veröffentlichen müssen, finden Sie unter [Produkte und Erweiterungen für Visual Studio](https://visualstudiogallery.msdn.microsoft.com/).
+ Sie können auch die Erweiterung für Visual Studio Marketplace veröffentlichen, wodurch das für eine große Anzahl von Visual Studio-Kunden sichtbar. Ein Beispiel zum Verpacken einer Erweiterung Marketplace finden Sie unter [Exemplarische Vorgehensweise: Veröffentlichen einer Visual Studio-Erweiterung](../extensibility/walkthrough-publishing-a-visual-studio-extension.md). Weitere Informationen, welche Schritte Sie zum Veröffentlichen in Marketplace ausführen müssen, finden Sie unter [Produkte und -Erweiterungen für Visual Studio](https://docs.microsoft.com/en-us/vsts/integrate/ide/extensions/overview).

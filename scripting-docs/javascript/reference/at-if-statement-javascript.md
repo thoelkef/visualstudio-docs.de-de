@@ -1,82 +1,84 @@
 ---
-title: "@if-Anweisung (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "@if_JavaScriptKeyword"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "@if-Anweisung"
-  - "Bedingungsanweisungen, if"
-  - "ELIF-Anweisung"
-  - "else-Anweisung"
-  - "if-Anweisung, @if"
+title: '@ifAnweisung (JavaScript) | Microsoft Docs'
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: '@if_JavaScriptKeyword'
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- elif statement
+- conditional statements, if
+- if statement, @if
+- else statement
+- '@if statement'
 ms.assetid: ff11b29d-c06a-4276-b11d-db73e2da98ac
-caps.latest.revision: 18
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 18
+caps.latest.revision: "18"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 87cfc157ab16b183ccf687fa221393be4ab74757
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# @if-Anweisung (JavaScript)
+# <a name="if-statement-javascript"></a>@ifAnweisung (JavaScript)
 Führt bedingt eine Gruppe von Anweisungen aus, abhängig vom Wert eines Ausdrucks.  
   
 > [!WARNING]
->  Die bedingte Kompilierung wird im Standardmodus von Internet Explorer 11 und den [!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)]\-Apps nicht unterstützt.  Die bedingte Kompilierung wird im Standardmodus von Internet Explorer 10 und allen früheren Versionen unterstützt.  
+>  Die bedingte Kompilierung wird im Standardmodus von Internet Explorer 11 und den [!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)]-Apps nicht unterstützt. Die bedingte Kompilierung wird im Standardmodus von Internet Explorer 10 und allen früheren Versionen unterstützt.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
   
       @if (  
    condition1  
 )  
-   text1  
+   text1  
 [@elif (  
    condition2  
 )  
-   text2]  
+   text2]  
 [@else  
-   text3]  
+   text3]  
 @end   
 ```  
   
-## Parameter  
- *condition1, condition2*  
- Optional.  Ein Ausdruck, der in einen booleschen Ausdruck konvertiert werden kann.  
+## <a name="parameters"></a>Parameter  
+ *condition1 condition2 den Wert*  
+ Dies ist optional. Ein Ausdruck, der in einen booleschen Ausdruck konvertiert werden kann.  
   
  `text1`  
- Dies ist optional.  Der zu analysierende Text, wenn `condition1` den Wert **true** hat.  
+ Dies ist optional. Text, die analysiert werden, wenn `condition1` ist **"true"**.  
   
  `text2`  
- Dies ist optional.  Der zu analysierende Text, wenn `condition1` den Wert **false** und `condition2` den Wert **true** hat.  
+ Dies ist optional. Text, die analysiert werden, wenn `condition1` ist **"false"** und `condition2` ist **"true"**.  
   
  `text3`  
- Dies ist optional.  Der zu analysierende Text, wenn `condition1` und `condition2` den Wert **false** haben.  
+ Dies ist optional. Text, die analysiert werden, wenn beide `condition1` und `condition2` sind **"false"**.  
   
-## Hinweise  
- Beim Schreiben einer `@if`\-Anweisung müssen Klauseln nicht in getrennten Zeilen eingegeben werden.  Sie können mehrere **@elif**\-Klauseln verwenden.  In diesem Fall müssen alle **@elif**\-Klauseln jedoch vor der **@else**\-Klausel aufgeführt sein.  
+## <a name="remarks"></a>Hinweise  
+ Beim Schreiben einer `@if`-Anweisung müssen Klauseln nicht in getrennten Zeilen eingegeben werden. Sie können mehrere  **@elif**  Klauseln. Allerdings alle  **@elif**  Klauseln müssen ergeben, vor einem  **@else**  Klausel.  
   
- In der Regel legen Sie mit der `@if`\-Anweisung fest, welcher Text unter mehreren Optionen für die Textausgabe verwendet werden soll.  
+ In der Regel legen Sie mit der `@if`-Anweisung fest, welcher Text unter mehreren Optionen für die Textausgabe verwendet werden soll.  
   
- Bedingte Kompilierungsvariablen werden nur selten in Skripts verwendet, die für ASP\- oder ASP.NET\-Seiten oder Befehlszeilenprogramme geschrieben wurden.  Der Grund dafür besteht darin, dass die Funktionen der Compiler mit anderen Methoden bestimmt werden können.  
+ Bedingte Kompilierungsvariablen werden nur selten in Skripts verwendet, die für ASP- oder ASP.NET-Seiten oder Befehlszeilenprogramme geschrieben wurden. Der Grund dafür besteht darin, dass die Funktionen der Compiler mit anderen Methoden bestimmt werden können.  
   
- Fügen Sie beim Schreiben eines Skripts für eine Webseite den Code für die bedingte Kompilierung stets in Kommentaren hinzu.  Dadurch können Hosts, die die bedingte Kompilierung nicht unterstützen, diesen Code ignorieren.  
+ Fügen Sie beim Schreiben eines Skripts für eine Webseite den Code für die bedingte Kompilierung stets in Kommentaren hinzu. Dadurch können Hosts, die die bedingte Kompilierung nicht unterstützen, diesen Code ignorieren.  
   
-## Beispiel  
- Das folgende Beispiel veranschaulicht die Verwendung der Anweisung **@if...@elif…@else...@end**.  
+## <a name="example"></a>Beispiel  
+ Das folgende Beispiel veranschaulicht die Verwendung der  **@if...@elif... @else... @end**  Anweisung.  
   
-```javascript  
+```JavaScript  
 /*@cc_on @*/  
 /*@  
     document.write("JavaScript version: " + @_jscript_version + ".");  
@@ -91,11 +93,11 @@ Führt bedingt eine Gruppe von Anweisungen aus, abhängig vom Wert eines Ausdruc
 @*/  
 ```  
   
-## Anforderungen  
- Wird in allen Versionen von Internet Explorer, jedoch nicht in [!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)]\-Apps unterstützt.  
+## <a name="requirements"></a>Anforderungen  
+ Wird in allen Versionen von Internet Explorer, jedoch nicht in [!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)]-Apps unterstützt.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Bedingte Kompilierung](../../javascript/advanced/conditional-compilation-javascript.md)   
  [Variablen für die bedingte Kompilierung](../../javascript/advanced/conditional-compilation-variables-javascript.md)   
- [@cc\_on\-Anweisung](../../javascript/reference/at-cc-on-statement-javascript.md)   
- [@set\-Anweisung](../../javascript/reference/at-set-statement-javascript.md)
+ [@cc_onAnweisung](../../javascript/reference/at-cc-on-statement-javascript.md)   
+ [@set-Anweisung](../../javascript/reference/at-set-statement-javascript.md)

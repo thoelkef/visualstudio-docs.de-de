@@ -1,55 +1,56 @@
 ---
-title: "Text-Puffer-Ereignisse in der Legacy-API | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Editoren [Visual Studio SDK] legacy - Puffer Ereignisse"
+title: Text-Puffer-Ereignisse in die Legacy-API | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: editors [Visual Studio SDK], legacy - text buffer events
 ms.assetid: 9be49e9f-1864-41c2-8a3c-f66895881341
-caps.latest.revision: 16
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 16
+caps.latest.revision: "16"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 5118fe29463368bcca90e21830e1418d41c18339
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Text-Puffer-Ereignisse in der Legacy-API
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Der Textpuffer Objekt gibt verschiedene Ereignisse aus, die es Ihnen ermöglichen, um unterschiedlichen Situationen zu begegnen.  
+# <a name="text-buffer-events-in-the-legacy-api"></a>Text-Puffer-Ereignisse in die Legacy-API
+Die TextBuffer-Objekt gibt verschiedene Ereignisse, mit die verschiedene Situationen reagieren können.  
   
- Wenn Sie das Legacy APIs verwenden, sollten Sie die folgenden Schnittstellen implementieren, um Benachrichtigungen über Änderungen am Textpuffer zu empfangen.  Setzen Sie die Schnittstellen im Textpuffer mithilfe der `IConnectionPointContainer`\-Schnittstelle im Textpuffer aus, um Benachrichtigungen über Zzeilenwechseln aus dem Puffer zu empfangen.  Weitere Informationen finden Sie unter [Gewusst wie: Registrieren für Ereignisse Puffer mit der Legacy\-API](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md).  Im Fall `IVsTextStreamEvents` oder `IVsTextLinesEvents`\-Schnittstellen werden Änderungen in ein oder zweidimensionalen Koordinaten zurückgegeben werden.  
+ Wenn Sie die legacy-API verwenden, sollten Sie die folgenden Schnittstellen implementieren, um Benachrichtigungen zu Änderungen an den Textpuffer. Bereitstellen von Schnittstellen, mit dem Text-Puffer mithilfe der `IConnectionPointContainer` Schnittstelle im Text-Puffer zum Empfangen von Benachrichtigungen zu Zeile ändert, aus dem Puffer. Weitere Informationen finden Sie unter [Vorgehensweise: Registrieren Sie sich für Text-Puffer-Ereignisse mit der Legacy-API](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md). Im Fall von `IVsTextStreamEvents` oder `IVsTextLinesEvents` Schnittstellen, Änderungen in zurückgegeben werden entweder ein- oder zweidimensionalen Koordinaten, bzw..  
   
-## Simsen Sie Puffer\-Schnittstellen  
- Im Folgenden werden die Schnittstellen, die vom Textpuffer Objekt implementiert sind.  
+## <a name="text-buffer-interfaces"></a>Text-Puffer-Schnittstellen  
+ Es folgen die von der TextBuffer-Objekt implementierten Schnittstellen.  
   
 |Schnittstelle|Beschreibung|  
-|-------------------|------------------|  
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompoundAction>|Aktiviert die Erstellung von zusammengesetzten Aktionen \(das heißt Aktionen, die in einem einzelnen Rückgängig\/Wiederholen\-Gerät gruppiert\).|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData>|Aktiviert die Beibehaltung von Dokumenten von Daten, die von den Textpuffer verwaltet werden.|  
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>|Stellt Basisdienste. Verwendung durch viele Clients.|  
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines>|Stellt Funktionen bereit, Lese\- und Schreibvorgänge anhand der zweidimensionalen Koordinaten.  Erbt von `IVsTextBuffer`.|  
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextScanner>|Erstellt schnellen, Datenstrom\-ausgerichtet, sequenzieller Zugriff auf den Text im Puffer.|  
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream>|Stellt Funktionen bereit, Lese\- und Schreibvorgänge anhand der eindimensionales Koordinaten.  Erbt von `IVsTextBuffer`.|  
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsUserData>|Bietet Zugriff auf einer generischen Auflistung von Eigenschaften.  Die wichtigste Eigenschaft ist der Name des Puffers Moniker oder legt diese fest.  Sie können speichern, Zufallsdaten im Puffer dieser Schnittstelle verfügen, indem Sie ein GUID erstellen und dann als Schlüssel verwenden.|  
-|<xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer>|Unterstützt Verbindungspunkte für Ereignisse.|  
+|---------------|-----------------|  
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompoundAction>|Ermöglicht die Erstellung von zusammengesetzten Aktivitäten (Aktivitäten, die in einer einzelnen Rückgängig/Wiederholen-Einheit gruppiert werden).|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData>|Aktiviert die Persistenz der Dokumentdaten, die von den Textpuffer verwaltet werden.|  
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>|Stellt grundlegende Dienste; von vielen Clients verwendet.|  
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines>|Bietet Lese- / Funktionen, die mit einem zweidimensionalen Koordinaten. Erbt von `IVsTextBuffer`.|  
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextScanner>|Bietet schnelle streamorientiertes, sequenziellen Zugriff auf den Text im Puffer.|  
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream>|Bietet Lese- / Funktionen, die über eindimensionale Koordinaten. Erbt von `IVsTextBuffer`.|  
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsUserData>|Bietet Zugriff auf eine generische Auflistung von Eigenschaften. Die wichtigste Eigenschaft ist der Name oder der Moniker des Puffers. Sie können Ihren eigenen zufälligen Daten in den Puffer mit dieser Schnittstelle speichern, indem eine GUID erstellen und verwenden es als Schlüssel.|  
+|<xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer>|Unterstützt die Verbindungspunkte für Ereignisse.|  
   
-## Text\-Puffer\-Ereignisschnittstellen  
- Im Folgenden werden die Schnittstellen für Text puffer\-Ereignis Ereignisbenachrichtigung.  
+## <a name="text-buffer-event-interfaces"></a>Text-Puffer Ereignisschnittstellen  
+ Im folgenden werden die Schnittstellen für die ereignisbenachrichtigung für Text-Puffer.  
   
 |Schnittstelle|Beschreibung|  
-|-------------------|------------------|  
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferEvents>|Benachrichtigt Clients, wenn ein neuer Sprachdienst mit einem Textpuffer zugeordnet ist.|  
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferDataEvents>|Benachrichtigt Clients, wenn kein Textpuffer initialisiert wird und wenn Änderungen an den Daten im Textpuffer vorgenommen werden.|  
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStreamEvents>|Benachrichtigt Clients über Änderungen am zugrunde liegenden Textpuffer im eindimensionalen Koordinaten.|  
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLinesEvents>|Benachrichtigt Clients über Änderungen am zugrunde liegenden Textpuffer im zweidimensionalen Koordinaten.|  
+|---------------|-----------------|  
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferEvents>|Benachrichtigt Clients, wenn ein neue Sprachdienst mit einem Textpuffer zugewiesen wird.|  
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferDataEvents>|Benachrichtigt Clients, wenn Sie ein Textpuffer initialisiert ist und bei an Daten in den Textpuffer Änderungen.|  
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStreamEvents>|Benachrichtigt Clients über Änderungen an der zugrunde liegenden Textpuffer in eindimensionale Koordinaten an.|  
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLinesEvents>|Benachrichtigt Clients über Änderungen an der zugrunde liegenden Textpuffer in einem zweidimensionalen Koordinaten an.|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsUserDataEvents>|Benachrichtigt Clients über Änderungen an Benutzerdaten.|  
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsPreliminaryTextChangeCommitEvents>|Benachrichtigt Clients über der letzten Commit geste, um das Ereignis auszulösen und stellt den Textbereich geändert.  Die `IVsPreliminaryTextChangeCommitEvents`\-Schnittstelle wird nicht als Antwort auf rückgängig machen oder wiederholen Befehle ausgelöst.  lösen Ereignisse aus, die nur für Puffer Rückgängig einen Manager haben.  `IVsPreliminaryTextChangeCommitEvents` wird vor anderen Ereignissen, wie hübschen Listen ausgelöst, um sich anderen Ereignisse mit Text nicht sicher ändern, bevor die Änderungen übernommen werden.  VSPackage muss entweder die `IVsPreliminaryTextChangeCommitEvents`\-Schnittstelle oder die `IVsFinalTextChangeCommitEvents`\-Schnittstelle, jedoch nicht beides überwacht werden.|  
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsFinalTextChangeCommitEvents>|Benachrichtigt Clients über der letzten Commit geste, um das Ereignis auszulösen und stellt den Textbereich geändert.  Die `IVsFinalTextChangeCommitEvents`\-Schnittstelle wird nicht als Antwort auf rückgängig machen oder wiederholen Befehle ausgelöst.  lösen Ereignisse aus, die nur für Puffer Rückgängig einen Manager haben.  `IVsFinalTextChangeCommitEvents` ist nur für die Verwendung durch Sprachendienste oder andere Objekte bestimmt, die vollständige Kontrolle über bearbeiten.  VSPackage muss entweder die `IVsPreliminaryTextChangeCommitEvents`\-Schnittstelle oder die `IVsFinalTextChangeCommitEvents`\-Schnittstelle, jedoch nicht beides überwacht werden.|  
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsPreliminaryTextChangeCommitEvents>|Benachrichtigt Clients, der dem letzten Commit-Geste zum Auslösen des Ereignisses, und stellt den Bereich des geänderten Texts. Die `IVsPreliminaryTextChangeCommitEvents` Schnittstelle wird nicht als Antwort auf Rückgängig machen bzw. Wiederholen Befehle ausgelöst. Ereignisse ausgelöst werden nur für die Puffer, die einen Rollback-Manager haben. `IVsPreliminaryTextChangeCommitEvents`vor der anderen Ereignisse, z. B. Einrückung, ausgelöst wird, um sicherzustellen, dass die anderen Ereignisse bevor die Änderungen festgeschrieben werden nicht den Text ändern. Das VSPackage muss entweder überwachen die `IVsPreliminaryTextChangeCommitEvents` Schnittstelle oder die `IVsFinalTextChangeCommitEvents` -Schnittstelle, aber nicht beides.|  
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsFinalTextChangeCommitEvents>|Benachrichtigt Clients, der dem letzten Commit-Geste zum Auslösen des Ereignisses, und stellt den Bereich des geänderten Texts. Die `IVsFinalTextChangeCommitEvents` Schnittstelle wird nicht als Antwort auf Rückgängig machen bzw. Wiederholen Befehle ausgelöst. Ereignisse ausgelöst werden nur für die Puffer, die einen Rollback-Manager haben. `IVsFinalTextChangeCommitEvents`Dient zur Verwendung nur durch Sprachdienste oder andere Objekte, die vollständige über bearbeiten Kontrolle. Das VSPackage muss entweder überwachen die `IVsPreliminaryTextChangeCommitEvents` Schnittstelle oder die `IVsFinalTextChangeCommitEvents` -Schnittstelle, aber nicht beides.|  
   
-## Siehe auch  
- [Zugriff auf den Textpuffer mit der Legacy\-API](../extensibility/accessing-the-text-buffer-by-using-the-legacy-api.md)   
- [Gewusst wie: Registrieren für Ereignisse Puffer mit der Legacy\-API](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md)
+## <a name="see-also"></a>Siehe auch  
+ [Zugreifen auf den Textpuffer mithilfe der Legacy-API](../extensibility/accessing-the-text-buffer-by-using-the-legacy-api.md)   
+ [Vorgehensweise: Registrieren Sie sich für Text-Puffer-Ereignisse mit der Legacy-API](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md)

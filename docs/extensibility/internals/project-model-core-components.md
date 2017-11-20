@@ -1,108 +1,110 @@
 ---
-title: "Projekt-Modell-Kernkomponenten | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Projektmodelle, Objekte und Schnittstellen"
-  - "Projektmodelle, Dienste"
+title: Modell-Kernkomponenten Projekt | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- project models, objects and interfaces
+- project models, services
 ms.assetid: b2f572d3-b26d-4846-92d1-84055fac141a
-caps.latest.revision: 17
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 17
+caps.latest.revision: "17"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: c7759a2394f2cda19f875a85a22c4a674fee8964
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Projekt-Modell-Kernkomponenten
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Die folgenden Tabellen erweitert im Projektmodell.  Die vorhandenen kurzen Beschreibungen der Tabellen der Schnittstellen und der Dienste identifiziert im Modell und Schnittstellen und Dienste bestimmten Objekten zugeordnet ist.  Darüber hinaus werden die Tabellen einzeln anderen Schnittstellen aufgeführt, die in der Projekterstellung und Wartung abhängig von den Anforderungen des speziellen Projekttyps sind optional.  
+# <a name="project-model-core-components"></a>Projekt-Modell-Kernkomponenten
+In den folgenden Tabellen, die auf das Projektmodell erweitert werden. In den Tabellen vorhanden, kurze Beschreibung der Schnittstellen und Dienste, die in das Modell und die Schnittstellen und Dienste, mit spezifischen Objekten verknüpft sind. Darüber hinaus enthalten die Tabellen Details anderer Schnittstellen, die im projekterstellung und Wartung je nach den Anforderungen Ihrer bestimmten Projekttyp optional sind.  
   
- Weitere Informationen finden Sie unter [Unterstützung von Tools zum Durchsuchen des Symbols](../../extensibility/internals/supporting-symbol-browsing-tools.md).  
+ Weitere Informationen finden Sie unter [Tools zum Durchsuchen des Symbols unterstützen](../../extensibility/internals/supporting-symbol-browsing-tools.md).  
   
-### Paket \- Objekt  
+### <a name="package-object"></a>Paketobjekt  
   
 |Schnittstelle|Kommentare|  
-|-------------------|----------------|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>|Initialisiert ein VSPackage in der IDE und macht seine Dienste für die IDE verfügbar.|  
+|---------------|--------------|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>|Initialisiert eine VSPackage in der IDE und stellt seine Dienste der IDE zur Verfügung.|  
   
-### Projekt\-Factory Objekt  
+### <a name="project-factory-object"></a>Projekt-Factoryobjekt  
   
 |Schnittstelle|Kommentare|  
-|-------------------|----------------|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory>|Verwaltet das Erstellen neuer Projekte und das Öffnen von vorhandenen Projekten.|  
+|---------------|--------------|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory>|Verwaltet die neue Projekte erstellen und vorhandene Projekte öffnen.|  
   
-### Projektobjekte  
-  
-|Schnittstellen|Kommentare|  
-|--------------------|----------------|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3>|Verwaltet das Hinzufügen und Entfernen von Projektelementen, öffnet Editoren und behält moniker Zuordnung zwischen den einzelnen Dokumenten und `VSITEMID`bei.  Erbt von `IVsProject` und `IVsProject2`.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>|Verwaltet Navigations\- und Anzeigeeigenschaften und stellt Ereignisse bereit.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>|Aktiviert die Ausführung des Befehls, die der von `IOleCommandTarget` für Befehle Ausschneiden und ist ähnlich wie die Umbenennen, gelten nur dann, wenn der Fokus im Projektmappen\-Explorer ausgewählt wird.|  
-|<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>|Fungiert als die primäre Befehlsziel Oberfläche für eine Projekthierarchie.  Es handelt sich um die Standardschnittstelle zum Abfragen von Objekten für den Befehlsstatus oder Zustand und ausgeführten Befehle.  Verfügbar, wenn Sie im Fenster Projekt verwendet werden.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat>|Koordiniert die Dauerhaftigkeit des Projekts zustandes.  In der Regel wird der Zustand gespeichert, kann jedoch als Projektdatei speichern systemen angepasst werden, die nicht dateibasierten sind.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2>|Aktiviert das Projekt, um alle Aspekte der Persistenz für die zugehörigen Projektelemente, entweder als Dateien auf dem Datenträger oder Objekte in anderen Speicher systemen zu verwalten.  Die `IVsPeristHierarchyItem2`\-Schnittstelle wird für Elemente verwendet, die nicht die <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2>\-Schnittstelle implementieren.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2>|Koordiniert Interaktionen mit Quellcodeverwaltung.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFlavorCfgProvider>|Aktiviert Projekte, Konfigurationsinformationen zu verwalten.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2>|Verwaltet Projektkonfiguration Objekte, z. B. Debug\- und Releasekonfigurationen.  Erstellen, Bereitstellen und Debugvorgänge werden durch Projektkonfiguration Objekte koordiniert.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyDeleteHandler>|Wird von Hierarchien, um die Löschung zu steuern \(destruktiv\) oder \(zerstörungsfreie\), Optionen für Hierarchien Elemente zu entfernen.  Rufen Sie Abfragen\-Schnittstelle auf der `IVsHierarchyDeleteHandler`\-Schnittstelle aus der `IVsHierarchy`\-Schnittstelle an.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsGetCfgProvider>|Stellt die Option Implementierung des, des Objekts bereit, das die `IVsCfgProvider2`\-Schnittstelle auf einer anderen COM\-Identität als das Projektobjekt unterstützt, die die `IVsHierarchy`\-Schnittstelle implementiert.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectStartupServices>|Optionale Schnittstelle implementiert, um das Projekt erweiterbar von anderen Entwicklern zu machen.  Die `IVsProjectStartupServices`\-Schnittstelle ermöglicht einem Drittanbieter einem VSPackage, um eine GUID zu registrieren, das Sie in die Projektdatei, sodass jedes Mal, lädt das Projekt laden Sie den Dienst eines Drittanbieters GUID in die Projektdatei und führen den Aufruf `QueryService` für diesen GUID beibehalten.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierWinClipboardHelperEvents>|Wird von Quellspalten hierarchien in einem `UIHierarchy` Fenster, um Vorgänge wie Ausschneiden und Kopieren in die Zwischenablage und Einfügen zu koordinieren.  Verwenden Sie die `AdviseClipboardHelperEvents` Zwischenablage Schnittstelle, um Ereignisse zu registrieren.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyDropDataSource2>|Stellt Informationen über ein gezogenes Element relativ zu dessen Datenquelle während eines Drag & Drop\-Vorgangs in einem Fenster Benutzeroberfläche\-Hierarchien bereit.  Wird von der `IVsHierarchy`\-Schnittstelle.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyDropDataTarget>|Stellt Informationen über ein gezogenes Element relativ zum Ablageziel während eines Drag & Drop\-Vorgangs in einem Fenster Benutzeroberfläche\-Hierarchien bereit.  Wird von der `IVsHierarchy`\-Schnittstelle.|  
-  
-### Konfigurationsobjekt.  
+### <a name="project-objects"></a>Projektobjekte  
   
 |Schnittstellen|Kommentare|  
-|--------------------|----------------|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsCfg>|Stellt Informationen zu einer Konfiguration bereit.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2>|Aktiviert Projekte, Konfigurationsinformationen zu verwalten.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg>|Aktiviert ein Projekt mit Kontrolle des Debuggers ausgeführt werden.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg>|Wird von Bereitstellungsprojekten, die Bereitstellungseigenschaften für andere Projekte Vorgänge ausführen.|  
+|----------------|--------------|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3>|Das Hinzufügen und Entfernen von Projektelementen verwaltet, öffnet Editoren und verwaltet die Zuordnung zwischen den einzelnen dokumentmoniker und die `VSITEMID`. Erbt von `IVsProject` und `IVsProject2`.|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>|Verwaltet Navigations- und Anzeige von Eigenschaften und Ereignisse enthält.|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>|Ermöglicht das befehlsausführung ähnlich dem Konzept `IOleCommandTarget` für Befehle wie z. B. Ausschneide- und umbenennen, die gelten nur, wenn der Fokus im Projektmappen-Explorer ist.|  
+|<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>|Fungiert als die primäre befehlszielschnittstelle für eine Projekthierarchie. Es ist die standard-Schnittstelle zum Abfragen von Objekten für ihre Befehle der Status "oder" State "und" ausgeführt wird. Verfügbar, wenn Sie nicht im Projektfenster Fokus befindet.|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat>|Koordiniert die Persistenz des Projektzustands an. In der Regel des Projektzustands ist als eine Projektdatei gespeichert aber auf Speichersysteme, die nicht dateibasiert sind angepasst werden kann.|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2>|Ermöglicht es das Projekt alle Aspekte der Persistenz für deren Projektelemente, entweder als Dateien auf einem Datenträger oder Objekte in anderen Speichersystemen verwaltet. Die `IVsPeristHierarchyItem2` Schnittstelle wird verwendet, für Elemente, die keine implementieren die <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2> Schnittstelle.|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2>|Koordiniert Interaktionen mit der quellcodeverwaltung an.|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFlavorCfgProvider>|Teammodells werden Projekte, um Konfigurationsinformationen zu verwalten.|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2>|Projekt-Konfigurationsobjekte, z. B. Debug/Releasekonfigurationen wird verwaltet. Erstellen, bereitstellen und Debuggen Vorgänge werden über den Projekt-Konfigurationsobjekte koordiniert.|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyDeleteHandler>|Durch Hierarchien zu löschen (destruktiver) zu steuern oder zu entfernen (nicht destruktiver) Optionen für die Hierarchieelemente implementiert. Rufen Sie die Abfrageschnittstelle für die `IVsHierarchyDeleteHandler` -Schnittstelle aus der `IVsHierarchy` Schnittstelle.|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsGetCfgProvider>|Bietet die Möglichkeit, dass das Objekt, das unterstützt Implementierung der `IVsCfgProvider2` Schnittstelle auf einer anderen COM-Identität als das Projektobjekt, die implementiert die `IVsHierarchy` Schnittstelle.|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectStartupServices>|Eine optionale Schnittstelle implementiert, um das Projekt erweiterbar gemacht von anderen Entwicklern. Die `IVsProjectStartupServices` Schnittstelle ermöglicht eine VSPackage eines Drittanbieters, um eine GUID zu registrieren, die Sie in der Projektdatei beibehalten werden, damit jedes Mal, wenn das Projekt geladen wird, die Drittanbieter-Dienst-GUID in der Projektdatei, und rufen laden `QueryService` für diese GUID.|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierWinClipboardHelperEvents>|Implementiert durch Quellhierarchien in einem `UIHierarchy` Fenster koordinieren Zwischenablagevorgänge wie Ausschneiden, kopieren und einfügen. Verwenden der `AdviseClipboardHelperEvents` Schnittstelle Zwischenablage Ereignisse registrieren.|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyDropDataSource2>|Enthält Informationen über ein gezogenes Element relativ zu dessen Datenquelle während eines Drag & Drop-Vorgangs in einem UI-Fenster "Aufrufhierarchie". Wird aufgerufen, aus der `IVsHierarchy` Schnittstelle.|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyDropDataTarget>|Enthält Informationen über ein gezogenes Element relativ zu dessen Ablageziel während eines Drag & Drop-Vorgangs in einem UI-Fenster "Aufrufhierarchie". Wird aufgerufen, aus der `IVsHierarchy` Schnittstelle.|  
   
-### Konfigurations\-Generator Objekt  
+### <a name="configuration-object"></a>Configuration-Objekt  
   
 |Schnittstellen|Kommentare|  
-|--------------------|----------------|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg>|Verwaltet den Buildvorgang einer Projektkonfiguration.|  
+|----------------|--------------|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsCfg>|Enthält Informationen zu einer Konfiguration.|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2>|Teammodells werden Projekte, um Konfigurationsinformationen zu verwalten.|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg>|Kann ein Projekt unter der Kontrolle des Debuggers ausgeführt werden.|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg>|Implementiert durch Bereitstellungsprojekte, die Bereitstellungsvorgänge für andere Projekte ausführen.|  
   
-### Zusätzliche Projektobjekte  
+### <a name="configuration-builder-object"></a>Configuration-Generator-Objekt  
   
 |Schnittstellen|Kommentare|  
-|--------------------|----------------|  
-|`IDispatch`<br /><br /> <xref:Microsoft.VisualStudio.OLE.Interop.ISpecifyPropertyPages>|Zeigt **Eigenschaften**\-Elementeigenschaften im Fenster angezeigt.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsOutput2><br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsEnumOutputs>|Zeigt Ausgaben für die Bereitstellung.|  
+|----------------|--------------|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg>|Verwaltet eine Projektkonfiguration Erstellungsvorgang.|  
   
- In der folgenden Tabelle werden die kurze Beschreibungen der Dienste dar, die im Projektmodell identifiziert werden.  
+### <a name="additional-project-objects"></a>Zusätzliche Project-Objekte  
   
-### Dienste  
+|Schnittstellen|Kommentare|  
+|----------------|--------------|  
+|`IDispatch`<br /><br /> <xref:Microsoft.VisualStudio.OLE.Interop.ISpecifyPropertyPages>|Zeigt die Elementeigenschaften in den **Eigenschaften** Fenster.|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsOutput2><br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsEnumOutputs>|Zeigt die Ausgaben für die Bereitstellung an.|  
+  
+ Die folgende Tabelle enthält kurze Beschreibungen der Dienste, die in das Modell identifiziert.  
+  
+### <a name="services"></a>Dienste  
   
 |Dienst|Kommentare|  
-|------------|----------------|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.SVsRegisterProjectTypes>|Wird von VSPackages das Projekttypen implementieren, um zu registrieren, dass das Projekt factory mit der IDE vorhanden ist.  VSPackage muss `QueryService` für diesen Dienst aufrufen und die zugehörige Projekt factory registrieren, wenn `IVsPackage::SetSite`\-Methode aufgerufen wird.  Wenn die `SetSite`\-Methode nicht aufgerufen wird, wird das Projekt nicht instanziiert wird.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.SVsSolution>|Bietet Zugriff auf den internen IDE integrierten Konzept der aktuellen Projektmappe enthaltenen Projekte, z. B. die Fähigkeit, neue Projekte erstellt wird, listen erwähnt, Änderungen am Projekt usw.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.SVsSccManager>|Wird von Projekten, die an der Quellcodeverwaltung teilnehmen möchten.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.SVsRunningDocumentTable>|Wartet, bis eine Tabelle aus geöffneten Dokumenten, um festzustellen, ob eines oder mehrere der Projektelemente bereits geöffnet sind.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShellOpenDocument>|Enthält den Schnittstellen und Methoden, die aufgerufen werden, um ein Projektelement mit dem Standardwert editors oder eines bestimmten Editors tatsächlich zu öffnen.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.SVsTrackProjectDocuments>|Erforderlich, um alle Projekte aufgerufen werden soll, wenn sie Hinzufügen, Entfernen oder Umbenennen ihre Elemente.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.SVsFileChangeEx>|Verwaltet Änderungen an einer Datei oder einem Verzeichnis und Clients benachrichtigt, wenn ausgewählte Dateien auf dem Datenträger geändert wurden.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave>|Erforderlich, von allen Projekten und Editoren aufgerufen werden, bevor sie modifizierte Elemente speichern oder sie.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.SVsSolutionBuildManager>|Verwaltet die Reihenfolge der Vorgänge für Build und Bereitstellung Projektkonfigurationen.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.SVsShellDebugger>|Ermöglicht den Zugriff auf Dienste Debugger auf niedriger Ebene, die für die meisten Steuerelemente Debuggen verwendet werden.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection>|Aktiviert VSPackages\-Informationszugang über aktuelle Auswahl und ermöglicht die Kommunikation mit dem **Eigenschaften** Fenster.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>|Stellt grundlegende Benutzeroberfläche\-verknüpfte IDE\-Funktionalität, z. B. die Fähigkeit, Tool\- oder Dokumentfenster zu erstellen oder ein Fehler aufzulisten und zu melden den Benutzer bereit.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.SVsStatusbar>|Ermöglicht den Zugriff auf die Statusleiste der IDE.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsExtensibility3>|Wird verwendet, um das Automatisierungsmodell zu implementieren.  Geben Sie im Projektmodell ein Properties\-Objekt zurück, mit dem Sie eine Instanz dieses Objekts erstellt wird.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.SVsUIHierWinClipboardHelper>|Wird verwendet, um Ereignisse Zwischenablage auf dem Projektobjekt in der Hierarchie zu implementieren.  `SVsUIHierWinClipboardHelper` ordnungsgemäß können Sie Ausschneiden, Kopieren und Einfügen behandeln.|  
+|-------------|--------------|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.SVsRegisterProjectTypes>|Verwendet von VSPackages, die Projekttypen registrieren zu implementieren, dass ihre Project-Factory mit der IDE vorhanden ist. Ihr VSPackage muss Aufrufen `QueryService` für diesen Dienst, und registrieren Sie die Project-Factory beim `IVsPackage::SetSite` Methode wird aufgerufen. Wenn die `SetSite` -Methode nicht aufgerufen wird, das Projekt kann nicht instanziiert werden.|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.SVsSolution>|Bietet Zugriff auf die IDE internen, integrierte Konzept der aktuellen Projektmappe befinden, z. B. das Aufzählen von Projekten, neue Projekte erstellen, berücksichtigen, projektänderungen usw..|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.SVsSccManager>|Wird aufgerufen, Projekte, die in der quellcodeverwaltung teilnehmen möchten.|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.SVsRunningDocumentTable>|Verwaltet eine Tabelle der geöffneten Dokumente zu bestimmen, ob eine oder mehrere der Projektelemente bereits geöffnet sind.|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShellOpenDocument>|Enthält die Schnittstellen und Methoden, die aufgerufen wird, um tatsächlich ein Projektelement mit standard-Editor oder einen bestimmten Editor zu öffnen.|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.SVsTrackProjectDocuments>|Erforderlich, um alle Projekte aufgerufen werden, wenn sie hinzufügen, entfernen oder benennen Sie ihre Elemente.|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.SVsFileChangeEx>|Änderungen an einer Datei oder Verzeichnis verwaltet und benachrichtigt Clients aus, wenn die ausgewählte Dateien auf dem Datenträger geändert wurden.|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave>|Erforderlich, um alle Projekte und Editoren aufgerufen werden, bevor sie Elemente modifizierte oder speichern Sie sie.|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.SVsSolutionBuildManager>|Verwaltet die Reihenfolge der Build- und Bereitstellungsprozess Vorgänge für Projektkonfigurationen.|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.SVsShellDebugger>|Bietet Zugriff auf Low-Level-Debugger-Dienste, die für die meisten debugging-Steuerelemente verwendet.|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection>|Ermöglicht VSPackages den Zugriff auf Informationen zur aktuellen Auswahl und ermöglicht die Kommunikation mit dem **Eigenschaften** Fenster.|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>|Stellt grundlegende Benutzeroberfläche bezogenen IDE-Funktionen, z. B. die Fähigkeit zum Erstellen und Auflisten von Toolfenster oder Dokumentfenster oder um einen Fehlerbericht an den Benutzer bereit.|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.SVsStatusbar>|Bietet Zugriff auf die IDE-Statusleiste.|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsExtensibility3>|Wird verwendet, um das Automatisierungsmodell implementieren. In Ihrem Projektmodell wird nun wieder ein Objekt für Eigenschaften, mit dem Sie erstellt eine Instanz dieses Objekts.|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.SVsUIHierWinClipboardHelper>|Verwendet, um der Zwischenablage Ereignisse auf das Objekt in der Hierarchie implementieren. `SVsUIHierWinClipboardHelper`Sie können ordnungsgemäß Handle Ausschneiden, kopieren und einfügen.|  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>   
- [Prüfliste: Erstellen von neuen Typen](../../extensibility/internals/checklist-creating-new-project-types.md)   
- [Not in Build: Using HierUtil7 Project Classes to Implement a Project Type \(C\+\+\)](http://msdn.microsoft.com/de-de/a5c16a09-94a2-46ef-87b5-35b815e2f346)   
+ [Prüfliste: Erstellen neuen Projekttypen](../../extensibility/internals/checklist-creating-new-project-types.md)   
+ [Nicht im Build: Verwenden von HierUtil7 Projektklassen zum Implementieren von eines Projekttyps (C++)](http://msdn.microsoft.com/en-us/a5c16a09-94a2-46ef-87b5-35b815e2f346)   
  [Unterstützung von Tools zum Durchsuchen des Symbols](../../extensibility/internals/supporting-symbol-browsing-tools.md)   
  [Elemente eines Projektmodells](../../extensibility/internals/elements-of-a-project-model.md)

@@ -365,5 +365,5 @@
 ##### [CvWriteAlert-Funktion](cvwritealert-function.md)
 ##### [CvWriteFlag-Funktion](cvwriteflag-function.md)
 ##### [CvWriteMessage-Funktion](cvwritemessage-function.md)
-### [Befehlszeilenhilfsprogramm für die Parallelitätsschnellansicht (CVCollectionCmd)](concurrency-visualizer-command-line-utility-cvcollectioncmd.md)
-## [Analysieren des Energieverbrauchs in Store-Apps](analyze-energy-use-in-store-apps.md)
+### [Befehlszeilenprogramm für die Nebenläufigkeitsschnellansicht (CVCollectionCmd)](concurrency-visualizer-command-line-utility-cvcollectioncmd.md)
+## [Analysieren des Energieverbrauchs in UWP-Apps](analyze-energy-use-in-store-apps.md)

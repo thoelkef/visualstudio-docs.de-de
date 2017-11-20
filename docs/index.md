@@ -1,14 +1,13 @@
 ---
 layout: HubPage
-hide_bc: true
-title: Visual Studio-Dokumentation
+hide_bc: True
+title: Visual Studio-Dokumentation | Microsoft-Dokumentation
 description: "Erfahren Sie, wie Sie Visual Studio 2017 für die Entwicklung von Anwendungen, Diensten und Tools in der Sprache Ihrer Wahl für Ihre Plattformen und Geräte verwenden können."
+ms.openlocfilehash: f33fce2ca2020827e2013199e596c0e6be2e9793
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 21a413a3e2d17d77fd83d5109587a96f323a0511
-ms.openlocfilehash: bcd55d1b7e1037a4442ce47fe6b96bf865dfbdfc
-ms.contentlocale: de-de
-ms.lasthandoff: 09/06/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -92,7 +91,7 @@ ms.lasthandoff: 09/06/2017
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1 cardScaleImage">
-                                                        <img data-scaleimage="./images/vs_windows-1.svg" src="./images/vs_windows-1.svg" alt="" />
+                                                        <img data-hoverimage="./images/vs_windows-1.svg" src="./images/vs_windows-1.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -241,7 +240,7 @@ ms.lasthandoff: 09/06/2017
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Datenspeicherung und -verarbeitung</h3>
-                                                    <p>Eine vollständige Sammlung von Tools für Datenbankentwickler zum Erstellen von Lösungen für SQL Server, Hadoop und Azure ML.</p>
+                                                    <p>Tools und Frameworks zum Entwickeln und Testen von Datenlösungen mit SQL Server, Azure Data Lake oder Hadoop.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -559,18 +558,37 @@ ms.lasthandoff: 09/06/2017
                                 </a>
                             </li>
                             <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=833080">
+                                <a href="/vsts/#pivot=services&panel=code">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img data-scaleimage="./images/vs_features-6.svg" src="./images/vs_features-6.svg" alt="" />
+                                                        <img data-scaleimage="./images/vs-hub-docs-features-version-control.svg" src="./images/vs-hub-docs-features-version-control.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Zusammenarbeiten</h3>
+                                                    <h3>Quellcodeverwaltung</h3>
                                                     <p>Geben Sie Code mit Versionskontrolltechnologien wie Git und TFVC frei.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/vsts">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img data-scaleimage="./images/vs-hub-docs-features-devops.svg" src="./images/vs-hub-docs-features-devops.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>DevOps</h3>
+                                                    <p>Erstellen und veröffentlichen Sie Ihre Apps kontinuierlich in der Cloud, und implementieren Sie Agile-Praktiken mit VSTS.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -694,7 +712,7 @@ ms.lasthandoff: 09/06/2017
                                             </div>
                                             <div class="cardText">
                                                 <a href="https://go.microsoft.com/fwlink/?linkid=833063">
-                                                    <h3>Visual C++</h3>
+                                                    <h3>C++</h3>
                                                     <p>Eine leistungsfähige und flexible Programmiersprache und Entwicklungsumgebung zum Erstellen von Anwendungen für Windows, Linux, iOS und Android.</p>
                                                 </a>
                                             </div>
@@ -824,4 +842,3 @@ ms.lasthandoff: 09/06/2017
         </ul>
     </div>
 </div>
-

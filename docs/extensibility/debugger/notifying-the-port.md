@@ -1,51 +1,52 @@
 ---
-title: "Benachrichtigen den Port | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Ports, Benachrichtigung"
+title: Benachrichtigen den Port | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: ports, notification
 ms.assetid: f9fce48e-7d4e-4627-a0fb-77b75428146a
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 91bedf387fe86c2bf2fefb34e643e581a37c15bf
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Benachrichtigen den Port
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Nachdem Sie ein Programm gestartet hat, muss der Port benachrichtigt werden wie folgt:  
+# <a name="notifying-the-port"></a>Benachrichtigen den Port
+Nach dem Starten eines Programms, muss der Port, wie folgt darüber informiert werden:  
   
-1.  Wenn ein Programm einen neuen Anschluss Knoten erhält, sendet er ein Programm für Auswahlereignisse Builds zurück in der Debugsitzung.  Das Ereignis fügt ihm eine Schnittstelle, die das Programm darstellt.  
+1.  Wenn ein Port einen neuen Knoten für die Anwendung empfängt, sendet er ein Programm Erstellungsereignis zurück an die Debugsitzung an. Das Ereignis enthält eine Schnittstelle, die Anwendung darstellt.  
   
-2.  Die Debuggen von Sitzungen fragt das Programm für den Bezeichner eines Debugmoduls \(DE\) anfügen kann.  
+2.  Die Debugsitzung fragt das Programm für den Bezeichner des Debugmoduls (DE), die zum Anfügen können.  
   
-3.  Die Debugkonfiguration Sitzung wird überprüft, wenn DE in der Liste zulässigen DES für dieses Programm ist.  Die Debugsitzung ruft diese Liste mit den Einstellungen des aktiven Programms der Lösung ursprünglich an sie übergeben ab, durch das Debuggen Paket.  
+3.  Die Debugsitzung überprüft, um festzustellen, ob die DE in der Liste der zulässigen Datenverschlüsselungsstandard dieses Programm ist. Die Debugsitzung ruft diese Liste ab, aus der Projektmappe aktive programmeinstellungen, die ursprünglich von der debugpaket übergeben.  
   
-     DE muss auf der zulässigen Liste sein, andernfalls wird DE nicht auf das Programm angefügt.  
+     DE muss auf die Liste der zulässigen, da sonst die DE nicht an das Programm angefügt.  
   
- Programmgesteuert, wenn ein Anschluss zuerst einen neuen Knoten Programm empfängt, erstellt er eine [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md)\-Schnittstelle, um das Programm zu repräsentieren.  
+ Wenn ein Port zuerst einen neuen Knoten für die Anwendung empfängt programmgesteuert erstellt ein [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) Schnittstelle, um die Anwendung darzustellen.  
   
 > [!NOTE]
->  Dies darf nicht mit der `IDebugProgram2`\-Schnittstelle verwechselt werden, die später durch das Debugmodul \(DE\) erstellt wird.  
+>  Dies sollte nicht mit verwechselt werden die `IDebugProgram2` Schnittstelle, die später von der Debugging-Modul (DE) erstellt wurden.  
   
- Der Anschlusses sendet ein [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) Programm Builds zurück an das Klickereignis Debuggen die Option Manager der Sitzung \(SDM\) mittels einer Schnittstelle für COM `IConnectionPoint` .  
+ Der Port sendet eine [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) Erstellungsereignis zurück an den Sitzung Debug-Manager (SDM) über einen COM-Programm `IConnectionPoint` Schnittstelle.  
   
 > [!NOTE]
->  Dies darf nicht mit der `IDebugProgramCreateEvent2`\-Schnittstelle verwechselt werden, die später durch DE gesendet wird.  
+>  Dies sollte nicht mit verwechselt werden die `IDebugProgramCreateEvent2` -Schnittstelle, die später von der DE gesendet wird.  
   
- Zusammen mit der Ereignisschnittstelle selbst, sendet der Port, der [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md)[IDebugProcess2](../../extensibility/debugger/reference/idebugprocess2.md)[IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) und Schnittstellen, die den Port, den Prozess und das Programm darstellen.  Das SDM ruft [IDebugProgram2::GetEngineInfo](../../extensibility/debugger/reference/idebugprogram2-getengineinfo.md) auf, um die GUID DEs abzurufen, das das Programm gedebuggt werden kann.  Die GUID wurde ursprünglich aus der [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md)\-Schnittstelle abgerufen.  
+ Zusammen mit der Ereignis-Oberfläche selbst, der Port sendet die [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md), [IDebugProcess2](../../extensibility/debugger/reference/idebugprocess2.md), und [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) Schnittstellen, die den Port darstellen, zu verarbeiten, und Programmieren Sie, bzw.. Ruft die SDM [IDebugProgram2::GetEngineInfo](../../extensibility/debugger/reference/idebugprogram2-getengineinfo.md) um die GUID des DE abzurufen, die das Programm debuggen können. Die GUID abgerufen wurde ursprünglich von der [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) Schnittstelle.  
   
- Die SDM wird überprüft, wenn DE in der Liste zulässigen DES ist.  Das SDM ruft diese Liste mit den Einstellungen des aktiven Programms der Lösung ab, von ihm ursprünglich übergeben das Debuggen Paket.  DE muss auf der zulässigen Liste sein, andernfalls wird sie nicht in das Programm angefügt.  
+ Die SDM überprüft, um festzustellen, ob die DE in der Liste der zulässigen DEs ist. Die SDM ruft diese Liste ab, aus der Projektmappe aktive programmeinstellungen, die ursprünglich von der debugpaket übergeben. DE in der Liste der zulässigen befinden muss, andernfalls wird an das Programm nicht angefügt werden.  
   
- Sobald die Identität bekannt, das DEs SDM bereit ist, es an das Programm anzufügen.  
+ Nachdem die Identität des DE bekannt ist, ist die SDM bereit für die Verbindung an das Programm.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Starten eines Programms](../../extensibility/debugger/launching-a-program.md)   
- [Nach einem starten Anfügen](../../extensibility/debugger/attaching-after-a-launch.md)   
- [Debugging\-Aufgaben](../../extensibility/debugger/debugging-tasks.md)
+ [Nach einem Start Anfügen](../../extensibility/debugger/attaching-after-a-launch.md)   
+ [Debuggingaufgaben](../../extensibility/debugger/debugging-tasks.md)

@@ -1,64 +1,81 @@
 ---
-title: 'Gewusst wie: Suchen vom Themen im Index | Microsoft-Dokumentation'
+title: Verwenden des Visual Studio Help Viewer-Indexes | Microsoft-Dokumentation
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 11/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-help-viewer
+ms.technology: vs-help-viewer
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
-- Index tab [Help Viewer 2.0]
-- Help Viewer 2.0, using the index
-- Help Viewer 2.0, Index tab
-- using the index [Help Viewer 2.0]
-- index filtering [Help Viewer 2.0]
-- Help Viewer 2.0, index filtering
+- Index tab [Help Viewer]
+- Help Viewer, using the index
+- Help Viewer, Index tab
+- using the index [Help Viewer]
+- index filtering [Help Viewer]
+- Help Viewer, index filtering
 ms.assetid: cb071e93-f297-459c-a6fa-8ae0dabc42a4
-caps.latest.revision: 15
+caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
+ms.openlocfilehash: ea90dba4090565143c84d510b5e4f9e998cfb5fc
+ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
 ms.translationtype: HT
-ms.sourcegitcommit: 63aad78bdc7df685ca3a73ec16a9cbc87b78151f
-ms.openlocfilehash: 884530b6c2ebc44f935dd814a39bbf0495764303
-ms.contentlocale: de-de
-ms.lasthandoff: 08/08/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/07/2017
 ---
-# <a name="how-to-find-topics-in-the-index"></a>Gewusst wie: Suchen vom Themen im Index
+# <a name="finding-topics-by-using-the-help-viewer-index"></a>Suchen von Themen mithilfe des Help Viewer-Indexes
 Der Index enthält eine Liste mit Stichwörtern, die Themen in den installierten Inhalten zugeordnet sind. Jedem Thema ist möglicherweise mehr als ein Stichwort zugeordnet, und jedem Stichwort können mehrere Themen zugeordnet sein. Nutzen Sie diesen Index genau so, wie Sie den Index eines Buchs verwenden würden.  
   
-### <a name="to-find-a-topic-by-using-the-index"></a>So suchen Sie ein Thema mithilfe des Indexes  
+## <a name="to-find-a-topic-by-using-the-index"></a>So suchen Sie ein Thema mithilfe des Indexes  
+Führen Sie auf der Registerkarte **Index** eine der folgenden Aufgaben aus:
   
-1.  Führen Sie auf der Registerkarte **Index** eine der folgenden Aufgaben aus:  
+-   Geben Sie das zu suchende Stichwort im Textfeld ein. Geben Sie beispielsweise „Aktualisieren“ ein, um Themen mit Stichwörtern wie „aktualisieren“, „aktualisiert“ und „wird aktualisiert“ zu finden.  
   
-    -   Geben Sie das zu suchende Stichwort im Textfeld ein. Geben Sie beispielsweise „Aktualisieren“ ein, um Themen mit Stichwörtern wie „aktualisieren“, „aktualisiert“ und „wird aktualisiert“ zu finden.  
+    Mithilfe der Filterschaltfläche nahe dem oberen Rand der Registerkarte können Sie entweder alle Einträge anzeigen, die den angegebenen Text enthalten oder nur die Einträge, die mit dem angegebenen Text beginnen.  
   
-         Mithilfe der Filterschaltfläche nahe dem oberen Rand der Registerkarte können Sie entweder alle Einträge anzeigen, die den angegebenen Text enthalten oder nur die Einträge, die mit dem angegebenen Text beginnen.  
+    > [!NOTE]
+    >  Wenn die Filterschaltfläche auf einem dunkleren Hintergrund mit einem Rahmen angezeigt wird, müssen die Einträge den von Ihnen angegebenen Text _enthalten_. Wenn Hintergrund und Rahmen nicht angezeigt werden, müssen die Einträge mit dem angegebenen Text _beginnen_.  
   
-        > [!NOTE]
-        >  Wenn die Filterschaltfläche auf einem dunkleren Hintergrund mit einem Rahmen angezeigt wird, müssen die Einträge den von Ihnen angegebenen Text enthalten. Wenn Hintergrund und Rahmen nicht angezeigt werden, müssen die Einträge mit dem angegebenen Text beginnen.  
+-   Scrollen Sie durch den Index, und wählen Sie ein Stichwort aus.  
   
-    -   Scrollen Sie durch den Index, und wählen Sie ein Stichwort aus.  
+    Wenn das angegebene Stichwort nur einem Thema zugeordnet ist, wird dies angezeigt. Andernfalls wird eine Liste aller Themen angezeigt, die dem betreffenden Stichwort zugeordnet sind.
+
+## <a name="index-search-tips"></a>Indexsuchtipps  
+Das Verwenden des Indexes ist unkompliziert. Allerdings kann das Beherrschen der bestmöglichen Eingabe von Schlüsselwörtern Ihre Indexsuche effektiver machen.  
   
-     Wenn das angegebene Stichwort nur einem Thema zugeordnet ist, wird dies angezeigt. Andernfalls wird eine Liste aller Themen angezeigt, die dem betreffenden Stichwort zugeordnet sind.  
+### <a name="general-guidelines"></a>Allgemeine Richtlinien  
+-   Scrollen Sie durch die Indexeinträge. Nicht alle Themen werden auf die gleiche Weise indiziert, und das Thema, das Ihnen am meisten helfen könnte, könnte sich in der Liste weiter oben oder unten als erwartet befinden.  
   
-## <a name="see-also"></a>Siehe auch  
- [Indexsuchtipps](../ide/index-search-tips.md)
+-   Lassen Sie Artikel wie „ein“ oder „die“ weg, da der Index sie ignoriert.  
+  
+-   Kehren Sie die Reihenfolge der eingegebenen Wörter um, wenn Sie die erwarteten Einträge nicht finden.  
+  
+    Wenn z. B. für „Debuggen von Inlineassemblycode“ keine relevanten Einträge angezeigt werden, versuchen Sie es mit „Assemblycode, inline debuggen“.  
+  
+-   Verwenden Sie Filter mit der Registerkarte **Index**, um die Anzahl der Ergebnisse zu verringern.  
+  
+### <a name="syntax-tips"></a>Tipps zur Syntax  
+Wenn Sie keinen Eintrag zu dem von Ihnen eingegebenen Wort oder Satz finden, versuchen Sie Folgendes:  
+  
+-   Geben Sie die ersten Buchstaben bzw. den Stamm des Worts ein. Durch die Eingabe einer Teilzeichenfolge gelangen Sie zu Themen, die mit Stichwörtern im Singular oder Plural indiziert wurden.  
+  
+    Geben Sie z.B. „Eigenschaft“, um die Suche nach „Eigenschaften“ und „Eigenschaft“ zu starten.  
+  
+-   Geben Sie Partizipformen des Verbs für die Aufgabe ein, die Sie erledigen möchten. Um spezifischere Indexeinträge zu finden, fügen Sie ein Wort an, das genau das beschreibt, was Sie suchen.  
+  
+    Geben Sie zum Beispiel „ausgeführt“ ein, um mehr Einträge zu erhalten, oder „ausgeführte Programme“, um weniger Einträge abzurufen.  
+  
+-   Geben Sie eigenständige Adjektive ein. Um die Ergebnisse zu begrenzen, fügen Sie ein Wort an, das genau das beschreibt, was Sie suchen.  
+  
+    Geben Sie beispielsweise „COM +“ ein, um eine Vielzahl von Einträgen zu erhalten, oder „COM+-Komponenten“, um weniger Einträge abzurufen.  
+  
+-   Geben Sie ein Synonym des Worts oder Verbs ein, das Sie suchen.  
+  
+    Wenn Sie beispielsweise den Begriff „erstellen“ eingegeben haben, versuchen Sie es stattdessen mit „anlegen“. 
+  
+## <a name="see-also"></a>Siehe auch
+[Gewusst wie: Suchen vom Themen im Inhaltsverzeichnis](../ide/how-to-find-topics-in-the-table-of-contents.md)  
+[Gewusst wie: Suchen nach Themen](../ide/how-to-search-for-topics.md)  
+[Microsoft Help Viewer](../ide/microsoft-help-viewer.md)
