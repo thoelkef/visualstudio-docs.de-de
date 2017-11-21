@@ -1,42 +1,43 @@
 ---
-title: "Debuggen von Windows Store-Apps und universellen Windows-Apps | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
+title: Debuggen von UWP und Windows 8.1-apps | Microsoft Docs
+ms.custom: 
+ms.date: 07/18/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
 ms.assetid: dd1723b7-4a43-47aa-9acf-d44afce78154
-caps.latest.revision: 5
-caps.handback.revision: 3
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "5"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 258389c08971089c523e2881a455411ea767801a
+ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/11/2017
 ---
-# Debuggen von Windows Store-Apps und universellen Windows-Apps
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Der Visual Studio\-Debugger bietet vollständige Unterstützung für das Debuggen von Windows Store\- und Windows Universal\-Apps.  Weitere Informationen finden Sie in den folgenden Abschnitten im [Windows Dev Center](http://go.microsoft.com/fwlink/?LinkId=254182).  
+# <a name="debug-universal-windows-apps-uwp"></a>Debuggen von universellen Windows-Apps (UWP)
+Visual Studio-Debugger bietet vollständige Unterstützung für uwp-apps zu debuggen.  
   
-## In diesem Abschnitt  
+Weitere Informationen zum Debuggen von universellen Windows-Apps finden Sie unter [bereitstellen und Debuggen von uwp-apps](/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps).  
+  
+Zum Debuggen von Windows Phone 8-apps finden Sie unter [Debuggen von apps für Windows Phone 8](https://msdn.microsoft.com/en-us/library/windows/apps/ff402572(v=vs.105).aspx).  
+  
+## <a name="in-this-section"></a>In diesem Abschnitt  
   
 |||  
 |-|-|  
-|[Ausführen von Apps aus Visual Studio](../debugger/run-store-apps-from-visual-studio.md)|Sie können Store\-Apps auf einem lokalen Computer, in einem App\-Simulator oder \-Emulator oder auf einem Remotegerät ausführen.|  
-|[Debuggen von Apps in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)|Suchen Sie nach Fehlern in Store\-Apps und beheben Sie diese mithilfe des Visual Studio\-Debuggers.|  
-|[Ausführen von Leistungs\- und Diagnosetools](../Topic/Run%20analysis%20tools%20from%20the%20Performance%20and%20Diagnostic%20page.md)|Führen Sie eines oder mehrere Diagnosetools über die Visual Studio\-Seite „Leistung und Diagnose“ aus.|  
-|[Analysieren der App\-Leistung](../Topic/Analyze%20the%20performance%20of%20Windows%20Store%20apps%20using%20Visual%20Studio%20diagnostic%20tools.md)|Analysieren Sie die CPU\-Auslastung und UI\-Reaktionsfähigkeit in Store\-Apps.|  
-|[JavaScript\-Speicher](../profiling/javascript-memory.md)|Analysieren Sie die Speicherauslastung und suchen Sie nach Speicherverlusten in Store\-Apps mit JavaScript und HTML.|  
-|[Analysieren der Speicherauslastung \(VB, C\#, C\+\+\)](../profiling/memory-usage-without-debugging2.md)|Analysieren Sie die Speicherauslastung und suchen Sie nach Speicherverlusten in Store\-Apps mit C\#, VB und XAML.|  
-|[Analysieren des Energieverbrauchs](../profiling/analyze-energy-use-in-store-apps.md)|Analysieren Sie den Strom\- und Energieverbrauch von Store\-Apps auf Tabletgeräten mit geringem Energieverbrauch, die ganz oder teilweise von ihrem eigenen Akku versorgt werden.|  
-|[Vorabrufen von Inhalt für Windows Store\-Apps](../debugger/prefetch-content-for-windows-store-apps.md)|Analysieren Sie die Auswirkungen der ContentPrefetcher\-Klasse auf Windows Store\-Apps.|  
-|[Erstellen und Ausführen von Komponententests](../test/create-and-run-unit-tests-for-a-store-app-in-visual-studio.md)|Erstellen Sie Komponententests für Store\-Apps in Visual Studio und führen Sie diese aus.|  
-|[Analysieren der Codequalität mit der statischen Codeanalyse](../test/analyze-the-code-quality-of-store-apps-using-visual-studio-static-code-analysis.md)|Ermitteln Sie mithilfe von Visual Studio\-Codeanalysetools Probleme, die beim Debuggen und Testen nur schwer zu erkennen sind.|
+|[Ausführen von apps aus Visual Studio](../debugger/run-store-apps-from-visual-studio.md)|Uwp-apps auf einem lokalen Computer, in einem app-Simulator oder -Emulator oder auf einem Remotegerät ausführen.|  
+|[Debuggen von apps in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)|Suchen und Beheben von Fehlern in Ihren uwp-apps mit Visual Studio-Debugger.|  
+|[Debuggen Sie eine installierte app-Paket](../debugger/debug-installed-app-package.md)|Bereitgestellte apps, lokal und remote zu debuggen.|
+|[Vorabrufen von Inhalt für uwp-apps](../debugger/prefetch-content-for-windows-store-apps.md)|Die Auswirkung der ContentPrefetcher-Klasse auf uwp-apps analysieren.|  
+  
+## <a name="see-also"></a>Siehe auch  
+ [Analysieren der Codequalität mit der statischen Codeanalyse](../test/analyze-the-code-quality-of-store-apps-using-visual-studio-static-code-analysis.md)

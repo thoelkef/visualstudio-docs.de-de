@@ -1,50 +1,51 @@
 ---
-title: "IDebugPendingBreakpoint2::GetBreakpointRequest | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugPendingBreakpoint2::GetBreakpointRequest"
-helpviewer_keywords: 
-  - "IDebugPendingBreakpoint2::GetBreakpointRequest-Methode"
-  - "GetBreakpointRequest-Methode"
+title: IDebugPendingBreakpoint2::GetBreakpointRequest | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugPendingBreakpoint2::GetBreakpointRequest
+helpviewer_keywords:
+- IDebugPendingBreakpoint2::GetBreakpointRequest method
+- GetBreakpointRequest method
 ms.assetid: cb1e36aa-4302-455c-98fb-6638a1ef5c46
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 2e938af7bdf86d703b7301ac88a341f45eefc332
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugPendingBreakpoint2::GetBreakpointRequest
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Ruft den Haltepunkt Anforderungen ab, die verwendet wurde, um den anstehenden Haltepunkt zu erstellen.  
+# <a name="idebugpendingbreakpoint2getbreakpointrequest"></a>IDebugPendingBreakpoint2::GetBreakpointRequest
+Ruft das Haltepunkt-Anforderung, die mit diesem ausstehenden Haltepunkt erstellt wurde.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT GetBreakpointRequest(   
-   IDebugBreakpointRequest2** ppBPRequest  
+```cpp  
+HRESULT GetBreakpointRequest(   
+   IDebugBreakpointRequest2** ppBPRequest  
 );  
 ```  
   
-```c#  
-int GetBreakpointRequest(   
-   out IDebugBreakpointRequest2 ppBPRequest  
+```csharp  
+int GetBreakpointRequest(   
+   out IDebugBreakpointRequest2 ppBPRequest  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `ppBPRequest`  
- \[out\]  Gibt ein Objekt zurück, das die [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md) Anforderung Haltepunkt darstellt, die verwendet wurde, um den anstehenden Haltepunkt zu erstellen.  
+ [out] Gibt eine [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md) Objekt, das das Haltepunkt-Anforderung, die verwendet wurde, zum Erstellen dieser ausstehender Haltepunkt darstellt.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  Gibt `E_BP_DELETED` zurück, wenn der Haltepunkt gelöscht wurde.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben. Gibt `E_BP_DELETED` , wenn der Haltepunkt gelöscht wurde.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)   
  [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md)

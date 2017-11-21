@@ -10,30 +10,15 @@ helpviewer_keywords:
 - layer models, navigating in program code
 - layer models, updating in program code
 ms.assetid: c60edc87-33ee-4964-a954-40069f9febf3
-caps.latest.revision: 20
+caps.latest.revision: "20"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 50da0b90dd1c8924d8772eabd83265ff3827c2c2
+ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: cfe4f389516a3421bdc0d8643790dbb9c7cc2733
-ms.contentlocale: de-de
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="navigate-and-update-layer-models-in-program-code"></a>Navigieren in und Aktualisieren von Ebenenmodellen im Programmcode
 In diesem Thema werden die Elemente und Beziehungen in Ebenenmodellen beschrieben, die Sie mithilfe von Programmcode durchsuchen und aktualisieren können. Weitere Informationen zur Abhängigkeit Diagramme aus der Sicht des Benutzers finden Sie unter [Abhängigkeit Diagrammen: Verweis](../modeling/layer-diagrams-reference.md) und [Abhängigkeit Diagrammen: Richtlinien](../modeling/layer-diagrams-guidelines.md).  
@@ -137,7 +122,7 @@ public void ... (...)
   
  ![Jedes ILayerElement wird durch eine IShape angegeben. ] (../modeling/media/layerapi_shapes.png "LayerApi_Shapes")  
   
- <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation.IShape> und <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation.IDiagram> werden auch zum Anzeigen von UML-Modellen verwendet. Weitere Informationen finden Sie unter [anzeigen ein UML-Modells in Diagrammen](../modeling/display-a-uml-model-on-diagrams.md).  
+ <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation.IShape> und <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation.IDiagram> werden auch zum Anzeigen von UML-Modellen verwendet. 
   
 ## <a name="see-also"></a>Siehe auch  
  [Hinzufügen von Befehlen und Bewegungen zu Abhängigkeit Diagrammen](../modeling/add-commands-and-gestures-to-layer-diagrams.md)   
@@ -145,4 +130,3 @@ public void ... (...)
  [Fügen Sie benutzerdefinierter Eigenschaften zu Abhängigkeit-Diagramme hinzu](../modeling/add-custom-properties-to-layer-diagrams.md)   
  [Abhängigkeit Diagrammen: Referenz](../modeling/layer-diagrams-reference.md)   
  [Abhängigkeitsdiagramme: Richtlinien](../modeling/layer-diagrams-guidelines.md)   
-

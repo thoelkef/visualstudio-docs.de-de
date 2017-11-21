@@ -4,37 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - language services [managed package framework], Autos window
 - Autos window, supporting in language services [managed package framework]
 ms.assetid: 47d40aae-7a3c-41e1-a949-34989924aefb
-caps.latest.revision: 12
+caps.latest.revision: "12"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: c824845d4cbdb58241c088c1cb30259d3c298f72
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: b6e4f4783bd4d968ad7ab4784cdd6bb32ba2392a
-ms.contentlocale: de-de
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="support-for-the-autos-window-in-a-legacy-language-service"></a>Unterstützung für das Fenster "Auto" in einen Legacy-Sprachdienst
 Die **"Auto"** Fenster zeigt Ausdrücke wie z. B. Variablen und Parametern, die im Bereich befinden, wenn das Programm, das gerade gedebuggt wird (entweder aufgrund von einem Haltepunkt oder einer Ausnahme) angehalten wird. Lokale oder globale, Variablen und Parametern, die im lokalen Bereich geändert wurden, können die Ausdrücke enthalten. Die **"Auto"** Fenster kann auch Instanziierungen von einer Klasse, Struktur oder einem anderen Typ enthalten. Elemente, die eine ausdrucksauswertung auswerten kann potenziell angezeigt werden kann die **"Auto"** Fenster.  

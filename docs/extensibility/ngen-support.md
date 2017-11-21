@@ -1,41 +1,26 @@
 ---
-title: "Unterstützung von NGen in VSIX v3 | Microsoft-Dokumentation"
+title: "NGen-Unterstützung in VSIX v3 | Microsoft Docs"
 ms.custom: 
 ms.date: 11/09/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 1472e884-c74e-4c23-9d4a-6d8bdcac043b
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 8163a0e1230712734936b7548bef1753ee0c1d2a
-ms.openlocfilehash: 46b6f4d13b4c1938797dbe6cf6023e3c8c42d1ed
-ms.lasthandoff: 03/07/2017
-
+ms.openlocfilehash: 433ff9555ce4a3e896aca1143ee649217f80dc7f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="ngen-support-in-vsix-v3"></a>Unterstützung von NGen in VSIX v3
+# <a name="ngen-support-in-vsix-v3"></a>NGen-Unterstützung in VSIX v3
 
-Mit Visual Studio 2017 und die neue VSIX v3 (Version 3) Erweiterungsmanifest jetzt Erweiterung können Entwickler-Format "Ngen" ihre Assemblys bei der Installation.
+Mit Visual Studio 2017 und dem neuen v3-VSIX-manifest (Version 3)-Erweiterung jetzt Erweiterung können Entwickler-Format "Ngen" ihre Assemblys bei der Installation.
 
 Im folgenden ist ein Auszug aus MSDN, aus der hervorgeht, welche "Ngen" ist:
 
@@ -43,26 +28,26 @@ Im folgenden ist ein Auszug aus MSDN, aus der hervorgeht, welche "Ngen" ist:
 >
 >aus [Ngen.exe (Native Image Generator)](https://msdn.microsoft.com/en-us/library/6t9t5wcf(v=vs.110).aspx)
 
-Zu "Ngen" eine Assembly muss der VSIX-Datei installiert werden "pro Computer Instanzebene". Dies kann durch Aktivieren des Kontrollkästchens "All Users" im Designer extension.vsixmanifest aktiviert werden:
+In der Reihenfolge nach "Ngen" eine Assembly muss die VSIX installiert sein "pro Computer instanzweise". Dies kann aktiviert werden, indem Sie das Kontrollkästchen "alle Benutzer" im Designer "Extension.vsixmanifest" überprüfen:
 
-![Überprüfen Sie alle Benutzer](~/extensibility/media/check-all-users.png)
+![Überprüfen Sie alle Benutzer](media/check-all-users.png)
 
 ## <a name="how-to-enable-ngen"></a>Gewusst wie: Aktivieren von Ngen
 
-Um Ngen für eine Assembly zu aktivieren, können Sie die **Eigenschaften** in Visual Studio im Fenster.
+Zum Aktivieren von Ngen für eine Assembly können Sie die **Eigenschaften** Fenster in Visual Studio.
 
-Es gibt 4 Eigenschaften, die festgelegt werden können:
+Es sind 4 Eigenschaften, die festgelegt werden können:
 
-1. **NGen** (Boolean) – bei "true" Visual Studio-Installationsprogramm wird "Ngen" die Assembly.
-2. **NGen-Anwendung** (Zeichenfolge) – Ngen bietet die Möglichkeit, die Datei app.config der Anwendung zu verwenden, um die Assemblyabhängigkeiten zu beheben. Dieser Wert sollte auf eine Anwendung, deren "App.config" (in Bezug auf die Visual Studio-Installationsverzeichnis) verwenden möchten, festgelegt werden.
-3. **NGen-Architektur** (Enum) – die Architektur Ihrer Assembly systemintern kompilieren. Die Optionen sind: ein. B "NotSpecified". X86 c. X64 d. Alle
-4. **NGen-Priorität** (ganze Zahl zwischen 1 und 3) – die Ngen-Priorität behandelt [Ngen.exe Prioritätsstufen](https://msdn.microsoft.com/en-us/library/6t9t5wcf(v=vs.110).aspx#Anchor_3).
+1. **NGen** (Boolean) – bei "true", die Visual Studio-Installer wird "Ngen" die Assembly.
+2. **NGen-Anwendung** (Zeichenfolge) – Ngen bietet die Möglichkeit, eine Anwendungsdatei "App.config" zu verwenden, um die Assemblyabhängigkeiten aufzulösen. Dieser Wert sollte auf eine Anwendung, deren "App.config" (in Bezug auf das Visual Studio-Installationsverzeichnis) verwenden möchten, festgelegt werden.
+3. **NGen-Architektur** (Enum) - Architektur, die die Assembly nativ kompilieren. Die Optionen sind: ein. "NotSpecified" b. X86 c. X64 d. Alle
+4. **NGen-Priorität** (ganze Zahl zwischen 1 und 3) – die Ngen-Prioritätsstufe behandelt [Ngen.exe Prioritätsstufen](https://msdn.microsoft.com/en-us/library/6t9t5wcf(v=vs.110).aspx#Anchor_3).
 
-Hier wird erläutert, die **Eigenschaften** Fenster in Aktion:
+Hier bietet eine Übersicht über die **Eigenschaften** Fenster in Aktion:
 
-![NGen in Eigenschaften](~/extensibility/media/ngen-in-properties.png)
+![NGen in Eigenschaften](media/ngen-in-properties.png)
 
-Dies wird in der CSPROJ-Datei für das VSIX-Projekt den Projektverweis Metadaten hinzufügen:
+Dadurch wird der Projektverweis innerhalb des VSIX-Projekts CSPROJ-Datei Metadaten hinzugefügt:
 
 ```xml
  <ProjectReference Include="..\ClassLibrary1\ClassLibrary1.csproj">
@@ -75,8 +60,8 @@ Dies wird in der CSPROJ-Datei für das VSIX-Projekt den Projektverweis Metadaten
 </ProjectReference>
  ```
 
- >**Hinweis:** Sie können auf Wunsch die CSPROJ-Datei direkt bearbeiten.
+ >**Hinweis:** Sie können die CSPROJ-Datei direkt bearbeiten, falls gewünscht.
 
 ## <a name="extra-information"></a>Zusätzliche Informationen
 
-Die Eigenschaft geändert, gelten für mehr als nur Verweise des Projekts. Sie können die Ngen-Metadaten für Elemente festlegen, in dem Projekt auch (mit der gleichen oben beschriebenen Methoden) so lange, wie die Elemente .NET-Assemblys sind.
+Die Eigenschaft-Designers Änderungen gelten für mehr als nur Projektverweise; Sie können die Ngen-Metadaten für Elemente festlegen, in dem Projekt auch (mithilfe derselben Methoden, die oben beschriebenen) so lange, wie die Elemente .NET Assemblys sind.

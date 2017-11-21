@@ -1,70 +1,71 @@
 ---
-title: "Vorgehensweise: Erstellen von XML-Ausschnitten | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: 'Vorgehensweise: Erstellen von XML-Ausschnitte | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: d8556dd7-1382-4af7-ba80-3e873c9416be
-caps.latest.revision: 2
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 2
+caps.latest.revision: "2"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 36fccee0e228e4391e80388284b59f19e1f3a1b9
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/02/2017
 ---
-# Vorgehensweise: Erstellen von XML-Ausschnitten
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Mithilfe des XML\-Editors können neue XML\-Ausschnitte erstellt werden.Der Editor enthält einen XML\-Ausschnitt mit dem Namen "Snippet". Dies ist ein vorformulierter Ausschnitt zum Erstellen neuer XML\-Ausschnitte.  
+# <a name="how-to-create-xml-snippets"></a>Vorgehensweise: Erstellen von XML-Ausschnitten
+Mithilfe des XML-Editors können neue XML-Ausschnitte erstellt werden. Der Editor enthält einen XML-Ausschnitt mit dem Namen "Snippet". Dies ist ein vorformulierter Ausschnitt zum Erstellen neuer XML-Ausschnitte.  
   
-## So erstellen Sie einen neuen XML\-Ausschnitt  
- Zum Erstellen eines neuen XML\-Ausschnitts erstellen Sie eine neue XML\-Datei, und verwenden Sie das Feature **Ausschnitt einfügen**.  
+## <a name="to-create-a-new-xml-snippet"></a>So erstellen Sie einen neuen XML-Ausschnitt  
+ So erstellen einen neuen XML-Code-Ausschnitts erstellen Sie eine neue XML-Datei und Verwenden der **Ausschnitt einfügen** Funktion.  
   
-1.  Klicken Sie im Menü **Datei** auf **Neu**, und klicken Sie anschließend auf **Datei**.  
+1.  Auf der **Datei** Menü klicken Sie auf **neu** , und klicken Sie dann auf **Datei**.  
   
-2.  Klicken Sie auf **XML\-Datei** und danach auf **Öffnen**.  
+2.  Klicken Sie auf **XML-Datei** , und klicken Sie dann auf **öffnen**.  
   
-3.  Klicken Sie mit der rechten Maustaste in den Editorbereich, und wählen Sie **Ausschnitt einfügen** aus.  
+3.  Mit der rechten Maustaste in den Editorbereich, und wählen Sie **Ausschnitt einfügen**.  
   
-4.  Wählen Sie in der Liste **Snippet** aus, und drücken Sie die EINGABETASTE.  
+4.  Wählen Sie **Ausschnitt** aus der Liste aus und drücken Sie die EINGABETASTE.  
   
 5.  Nehmen Sie die gewünschten Änderungen an dem neuen Ausschnitt vor.  
   
-6.  Wählen Sie im Menü **Datei** die Option **XMLFile.xml speichern** aus.  
+6.  Aus der **Datei** Menü die Option **XMLFile.xml speichern**.  
   
-     Das Dialogfeld **Datei speichern unter** wird angezeigt.  
+     Die **Datei speichern unter** Dialogfeld wird angezeigt.  
   
-7.  Geben Sie den Namen für den neuen Ausschnitt an, und wählen Sie im Dropdownfenster **Datei speichern unter** die Option **Ausschnittdateien** aus.  
+7.  Geben Sie den Namen für den neuen Ausschnitt, und wählen Sie **Codeausschnittdateien** aus der **Dateityp** Dropdown-Fenster.  
   
-8.  Ändern Sie mithilfe der Dropdownliste von **Speichern in** den Speicherort der Datei in den Ordner **Eigene Dateien\\Visual Studio 2005\\Codeausschnitte \\XML\\My XML Snippets**, und klicken Sie anschließend auf **Speichern**.  
+8.  Verwenden der **speichern im** Dropdown-Liste den Dateispeicherort auf die Ordner Eigene Dateien\Visual Studio 2005\Codeausschnitte \XML\My XML-Ausschnitte ändern, und drücken dann die **speichern**.  
   
-## Ausschnittbeschreibung  
- In diesem Abschnitt werden einige Schlüsselelemente im vorformulierten Ausschnitt beschrieben.Weitere Informationen zu Schemaelementen, die von XML\-Ausschnitten verwendet werden, finden Sie unter [Schemareferenz für Codeausschnitte](../ide/code-snippets-schema-reference.md).  
+## <a name="snippet-description"></a>Ausschnittbeschreibung  
+ In diesem Abschnitt werden einige Schlüsselelemente im vorformulierten Ausschnitt beschrieben. Weitere Informationen zu Schema-Elemente, die von der XML-Ausschnitte verwendet, finden Sie unter [Schemareferenz für Codeausschnitte](../ide/code-snippets-schema-reference.md).  
   
-### SnippetType\-Element  
+### <a name="snippettype-element"></a>SnippetType-Element  
  Vom Editor werden zwei Ausschnitttypen unterstützt:  
   
-```  
+```xml
 <SnippetTypes>  
   <SnippetType>SurroundsWith</SnippetType>  
   <SnippetType>Expansion</SnippetType>  
 </SnippetTypes>  
 ```  
   
- Der `Expansion`\-Typ bestimmt, ob der Ausschnitt beim Aufrufen des Befehls **Ausschnitt einfügen** angezeigt wird.Der `SurroundsWith`\-Typ bestimmt, ob der Ausschnitt beim Aufrufen des Befehls **Umgeben mit** angezeigt wird.  
+ Die `Expansion` -Typ bestimmt, ob der Ausschnitt angezeigt, beim Aufrufen wird der **Ausschnitt einfügen** Befehl. Die `SurroundsWith` -Typ bestimmt, ob der Ausschnitt angezeigt, beim Aufrufen wird der **umgeben mit** Befehl.  
   
-### Codeelement  
- Das `Code`\-Element definiert den XML\-Text, der beim Aufrufen des Ausschnitts eingefügt wird.  
+### <a name="code-element"></a>Codeelement  
+ Das `Code`-Element definiert den XML-Text, der beim Aufrufen des Ausschnitts eingefügt wird.  
   
 > [!NOTE]
->  Der XML\-Ausschnitttext muss in einem `<![CDATA[...]]>`\-Abschnitt eingeschlossen werden.  
+>  Der XML-Ausschnitttext muss in einem `<![CDATA[...]]>`-Abschnitt eingeschlossen werden.  
   
- Es folgt das `Code`\-Element, das von einem vorformulierten Ausschnitt erstellt wurde.  
+ Es folgt das `Code`-Element, das von einem vorformulierten Ausschnitt erstellt wurde.  
   
-```  
+```xml
 <Code Language="XML">  
   <![CDATA[<test>  
   <name>$name$</name>  
@@ -72,46 +73,46 @@ Mithilfe des XML\-Editors können neue XML\-Ausschnitte erstellt werden.Der Edit
 </Code>  
 ```  
   
- Das `Code`\-Element enthält drei Variablen.  
+ Das `Code`-Element enthält drei Variablen.  
   
--   $name$ ist eine benutzerdefinierte Variable.Sie erstellt ein `name`\-Element mit einem editierbaren Wert, dessen Standardwert "name" ist.Benutzerdefinierte Variablen werden mithilfe des `Literal`\-Elements definiert.  
+-   $name$ ist eine benutzerdefinierte Variable. Sie erstellt ein `name`-Element mit einem editierbaren Wert, dessen Standardwert "name" ist. Benutzerdefinierte Variablen werden mithilfe des `Literal`-Elements definiert.  
   
--   $selected$ ist eine vordefinierte Variable.Sie stellt den Text dar, der im XML\-Editor vor dem Aufrufen des Ausschnitts ausgewählt wurde.Die Positionierung dieser Variablen bestimmt, an welcher Position der ausgewählte Text im Codeausschnitt angezeigt wird, der die Auswahl umgibt.  
+-   $selected$ ist eine vordefinierte Variable. Sie stellt den Text dar, der im XML-Editor vor dem Aufrufen des Ausschnitts ausgewählt wurde. Die Positionierung dieser Variablen bestimmt, an welcher Position der ausgewählte Text im Codeausschnitt angezeigt wird, der die Auswahl umgibt.  
   
--   $end$ ist eine vordefinierte Variable.Wenn der Benutzer die EINGABETASTE drückt, um die Bearbeitung der Codeausschnittfelder zu beenden, bestimmt diese Variable, an welche Position das Caretzeichen \(^\) verschoben wird.  
+-   $end$ ist eine vordefinierte Variable. Wenn der Benutzer die EINGABETASTE drückt, um die Bearbeitung der Codeausschnittfelder zu beenden, bestimmt diese Variable, an welche Position das Caretzeichen (^) verschoben wird.  
   
- Das obige `Code`\-Element fügt den folgenden XML\-Text ein:  
+ Das obige `Code`-Element fügt den folgenden XML-Text ein:  
   
-```  
+```xml
 <test>  
   <name>name</name>  
 </test>  
 ```  
   
- Der Wert des **name**\-Elements wird als editierbarer Bereich gekennzeichnet.  
+ Der Wert des name-Elements wird als editierbarer Bereich gekennzeichnet.  
   
-### Literalelement  
- Mithilfe des `Literal`\-Elements wird der Ersetzungstext angegeben, der nach dem Einfügen in die Datei angepasst werden kann.Literalzeichenfolgen, numerische Werte und einige Variablennamen können beispielsweise als Literale deklariert werden.Sie können in einem XML\-Ausschnitt beliebig viele Literale definieren, und Sie können darauf mehrfach aus dem Ausschnitt verweisen.Es folgt ein Beispiel für ein `Literal`\-Element, das eine $name$\-Variable definiert, deren Standardwert "name" ist.  
+### <a name="literal-element"></a>Literalelement  
+ Mithilfe des `Literal`-Elements wird der Ersetzungstext angegeben, der nach dem Einfügen in die Datei angepasst werden kann. Literalzeichenfolgen, numerische Werte und einige Variablennamen können beispielsweise als Literale deklariert werden. Sie können in einem XML-Ausschnitt beliebig viele Literale definieren, und Sie können darauf mehrfach aus dem Ausschnitt verweisen. Es folgt ein Beispiel für ein `Literal`-Element, das eine $name$-Variable definiert, deren Standardwert "name" ist.  
   
-```  
+```xml
 <Literal>  
   <ID>name</ID>  
   <Default>name</Default>  
 </Literal  
 ```  
   
- Literale können auch auf Funktionen verweisen.Der XML\-Editor weist eine Funktion mit dem Namen **LookupPrefix** auf.Die **LookupPrefix**\-Funktion sucht nach dem angegebenen Namespace\-URI im Speicherort im XML\-Dokument, von dem aus dieser Ausschnitt aufgerufen wurde, und gibt das Namespacepräfix zurück, das für diesen Namespace definiert wurde \(falls zutreffend\), und fügt den Doppelpunkt \(:\) in den Namen ein.Es folgt ein Beispiel für ein `Literal`\-Element, das die **LookupPrefix**\-Funktion verwendet.  
+ Literale können auch auf Funktionen verweisen. Der XML-Editor umfasst eine Funktion namens **LookupPrefix**. Die **LookupPrefix** -Funktion sucht nach dem angegebenen Namespace-URI von der Position im XML-Dokument, dass dieser Ausschnitt aus aufgerufen wird, und gibt das Namespacepräfix, das für diesen Namespace definiert ist, sofern vorhanden, und fügt den Doppelpunkt (:)) In diesem Namen. Im folgenden ist ein Beispiel für eine `Literal` Element, das verwendet die **LookupPrefix** Funktion.  
   
-```  
+```xml
 <Literal Editable="false">  
    <ID>prefix</ID>  
    <Function>LookupPrefix("namespaceURI")</Function>  
 </Literal>  
 ```  
   
- Die $prefix$\-Variable kann anschließend an beliebiger Stelle im XML\-Ausschnitt verwendet werden.  
+ Die $prefix$-Variable kann anschließend an beliebiger Stelle im XML-Ausschnitt verwendet werden.  
   
-## Siehe auch  
- [XML\-Ausschnitte](../xml-tools/xml-snippets.md)   
- [Gewusst wie: Verwenden von XML\-Ausschnitten](../xml-tools/how-to-use-xml-snippets.md)   
- [Gewusst wie: Generieren eines XML\-Ausschnitts aus einem XML\-Schema](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)
+## <a name="see-also"></a>Siehe auch  
+ [XML-Ausschnitte](../xml-tools/xml-snippets.md)   
+ [Vorgehensweise: Verwenden von XML-Ausschnitte](../xml-tools/how-to-use-xml-snippets.md)   
+ [Gewusst wie: Generieren eines XML-Ausschnitts aus einem XML-Schema](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)

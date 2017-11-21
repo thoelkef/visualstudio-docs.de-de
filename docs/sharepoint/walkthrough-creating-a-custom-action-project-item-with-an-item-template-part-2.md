@@ -1,12 +1,10 @@
 ---
-title: 'Walkthrough: Creating a Custom Action Project Item with an Item Template, Part 2 | Microsoft Docs'
+title: 'Exemplarische Vorgehensweise: Erstellen eines Projektelements benutzerdefinierte Aktion mit einer Elementvorlage, Teil 2 | Microsoft Docs'
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -14,92 +12,88 @@ helpviewer_keywords:
 - SharePoint project items, creating template wizards
 - SharePoint development in Visual Studio, defining new project item types
 ms.assetid: 2d8165d3-4af9-4a5e-bdba-8b2a06b1dc8d
-caps.latest.revision: 44
-author: kempb
-ms.author: kempb
+caps.latest.revision: "44"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 1156c1eaab8ce1e73018778ef2b91e6f86806cc7
-ms.contentlocale: de-de
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: b12a52101feebcfac08c7672834d9d7c65d41c55
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2"></a>Walkthrough: Creating a Custom Action Project Item with an Item Template, Part 2
-  After you define a custom type of SharePoint project item and associate it with an item template in Visual Studio, you might also want to provide a wizard for the template. You can use the wizard to collect information from users when they use your template to add a new instance of the project item to a project. The information that you collect can be used to initialize the project item.  
+# <a name="walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2"></a>Exemplarische Vorgehensweise: Erstellen eines Projektelements "Benutzerdefinierte Aktion" mit einer Elementvorlage, Teil 2
+  Nachdem Sie einen benutzerdefinierten Typ des SharePoint-Projektelements definiert und ordnen es mit einer Elementvorlage in Visual Studio, möchten Sie möglicherweise auch einen Assistenten für die Vorlage bereitzustellen. Sie können den Assistenten verwenden, Informationen von Benutzern sammeln, wenn sie Ihre Vorlage verwenden, um eine neue Instanz des Projektelements zu einem Projekt hinzuzufügen. Mit den gesammelten Informationen kann das Projektelement initialisiert werden.  
   
- In this walkthrough, you will add a wizard to the Custom Action project item that is demonstrated in [Walkthrough: Creating a Custom Action Project Item with an Item Template, Part 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md). When a user adds a Custom Action project item to a SharePoint project, the wizard collects information about the custom action (such as its location and the URL to navigate to when an end user chooses it) and adds this information to the Elements.xml file in the new project item.  
+ In dieser exemplarischen Vorgehensweise fügen Sie einen Assistenten, in der die benutzerdefinierte Aktion-Projektelement, die in gezeigt [Exemplarische Vorgehensweise: Erstellen einer Custom Action Project Item mit einer Elementvorlage, Teil 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md). Wenn ein Benutzer einem SharePoint-Projekt ein Projektelement für die benutzerdefinierte Aktion hinzufügt, wird der Assistent sammelt Informationen zu der benutzerdefinierten Aktion (z. B. den Speicherort und die URL, zu der navigiert werden soll, wenn ein Endbenutzer er wählt) und fügt diese Informationen in der Datei "Elements.xml" in der neuen Projektelement.  
   
- This walkthrough demonstrates the following tasks:  
+ Diese exemplarische Vorgehensweise enthält die folgenden Aufgaben:  
   
--   Creating a wizard for a custom SharePoint project item type that is associated with an item template.  
+-   Erstellen einen Assistenten für einen benutzerdefinierten SharePoint-Projektelementtyp, dem eine Elementvorlage zugeordnet ist.  
   
--   Defining a custom wizard UI that resembles the built-in wizards for SharePoint project items in Visual Studio.  
+-   Definieren eine benutzerdefinierte Assistenten-Benutzeroberfläche, die die integrierten Assistenten für SharePoint-Projektelemente in Visual Studio ähnelt.  
   
--   Using replaceable parameters to initialize SharePoint project files with data that you collect in the wizard.  
+-   Initialisieren von SharePoint-Projektdateien mit im Assistenten gesammelten Daten mithilfe von ersetzbaren Parametern  
   
--   Debugging and testing the wizard.  
+-   Debuggen und Testen des Assistenten  
   
 > [!NOTE]  
->  You can download a sample that contains the completed projects, code, and other files for this walkthrough from the following location:  [Project files for SharePoint Tools Extensibility Walkthroughs](http://go.microsoft.com/fwlink/?LinkId=191369).  
+>  Sie können eine Stichprobe, die die abgeschlossene Projekte, Code und andere Dateien in dieser exemplarischen Vorgehensweise von folgendem Speicherort herunterladen: [Projektdateien für Erweiterbarkeit Exemplarische Vorgehensweisen zu SharePoint-Tools](http://go.microsoft.com/fwlink/?LinkId=191369).  
   
-## <a name="prerequisites"></a>Prerequisites  
- To perform this walkthrough, you must first create the CustomActionProjectItem solution by completing [Walkthrough: Creating a Custom Action Project Item with an Item Template, Part 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md).  
+## <a name="prerequisites"></a>Erforderliche Komponenten  
+ Um diese exemplarische Vorgehensweise durchführen zu können, müssen Sie zuerst die Projektmappe CustomActionProjectItem abschließen, indem erstellen [Exemplarische Vorgehensweise: Erstellen einer Custom Action Project Item mit einer Elementvorlage, Teil 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md).  
   
- You also need the following components on the development computer to complete this walkthrough:  
+ Zum Durchführen dieser exemplarischen Vorgehensweise werden auf dem Entwicklungscomputer außerdem die folgenden Komponenten benötigt:  
   
--   Supported editions of Windows, SharePoint, and Visual Studio. For more information, see [Requirements for Developing SharePoint Solutions](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
+-   Unterstützte Editionen von Windows, SharePoint und Visual Studio. Weitere Informationen finden Sie unter [Anforderungen für die Entwicklung von SharePoint-Lösungen](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
   
--   The Visual Studio SDK. This walkthrough uses the **VSIX Project** template in the SDK to create a VSIX package to deploy the project item. For more information, see [Extending the SharePoint Tools in Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
+-   Das Visual Studio SDK. Diese exemplarische Vorgehensweise verwendet die **VSIX-Projekt** Vorlage im SDK, um ein VSIX-Paket zum Bereitstellen des Projektelements zu erstellen. Weitere Informationen finden Sie unter [Erweitern der SharePoint-Tools in Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
   
- Knowledge of the following concepts is helpful, but not required, to complete the walkthrough:  
+ Kenntnisse der folgenden Konzepte sind hilfreich, wenn auch für die Durchführung der exemplarischen Vorgehensweise nicht erforderlich:  
   
--   Wizards for project and item templates in Visual Studio. For more information, see [How to: Use Wizards with Project Templates](../extensibility/how-to-use-wizards-with-project-templates.md) and the <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> interface.  
+-   Assistenten für Projekt- und Elementvorlagen in Visual Studio. Weitere Informationen finden Sie unter [wie: Verwenden von Assistenten mit Projektvorlagen](../extensibility/how-to-use-wizards-with-project-templates.md) und <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> Schnittstelle.  
   
--   Custom actions in SharePoint. For more information, see [Custom Action](http://go.microsoft.com/fwlink/?LinkId=177800).  
+-   Benutzerdefinierte Aktionen in SharePoint. Weitere Informationen finden Sie unter [benutzerdefinierte Aktion](http://go.microsoft.com/fwlink/?LinkId=177800).  
   
-## <a name="creating-the-wizard-project"></a>Creating the Wizard Project  
- To complete this walkthrough, you must add a project to the CustomActionProjectItem solution that you created in [Walkthrough: Creating a Custom Action Project Item with an Item Template, Part 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md). You will implement the <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> interface and define the wizard UI in this project.  
+## <a name="creating-the-wizard-project"></a>Das Assistentenprojekt erstellen  
+ Zum Durchführen dieser exemplarischen Vorgehensweise müssen Sie ein Projekt hinzufügen, um die Projektmappe CustomActionProjectItem, die Sie in erstellt [Exemplarische Vorgehensweise: Erstellen einer Custom Action Project Item mit einer Elementvorlage, Teil 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md). In diesem Projekt implementieren Sie die <xref:Microsoft.VisualStudio.TemplateWizard.IWizard>-Schnittstelle, und Sie definieren die Assistenten-Benutzeroberfläche.  
   
-#### <a name="to-create-the-wizard-project"></a>To create the wizard project  
+#### <a name="to-create-the-wizard-project"></a>So erstellen die Assistenten-Projekt  
   
-1.  In Visual Studio, open the CustomActionProjectItem solution  
+1.  Öffnen Sie in Visual Studio die Projektmappe CustomActionProjectItem  
   
-2.  In **Solution Explorer**, open the shortcut menu for the solution node, choose **Add**, and then choose **New Project**.  
+2.  In **Projektmappen-Explorer**, öffnen Sie das Kontextmenü für den Projektmappenknoten, wählen Sie **hinzufügen**, und wählen Sie dann **neues Projekt**.  
   
-    > [!NOTE]  
-    >  In Visual Basic projects, the solution node appears in **Solution Explorer** only when the **Always show solution** check box is selected in the [NIB: General, Projects and Solutions, Options Dialog Box](http://msdn.microsoft.com/en-us/8f8e37e8-b28d-4b13-bfeb-ea4d3312aeca).  
+3.  In der **neues Projekt** Dialogfeld erweitern Sie die **Visual C#-** oder **Visual Basic** Knoten, und wählen Sie dann die **Windows** Knoten.  
   
-3.  In the **New Project** dialog box, expand the **Visual C#** or **Visual Basic** nodes, and then choose the **Windows** node.  
+4.  Am oberen Rand der **neues Projekt** Dialogfeld Feld, stellen Sie sicher, dass **.NET Framework 4.5** ist in der Liste der Versionen von .NET Framework ausgewählt wurde.  
   
-4.  At the top of the **New Project** dialog box, make sure that **.NET Framework 4.5** is chosen in the list of versions of the .NET Framework.  
+5.  Wählen Sie die **WPF-Benutzersteuerelementbibliothek** -Projektvorlage aus, nennen Sie das Projekt **ItemTemplateWizard**, und wählen Sie dann die **OK** Schaltfläche.  
   
-5.  Choose the **WPF User Control Library** project template, name the project **ItemTemplateWizard**, and then choose the **OK** button.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Fügt der **ItemTemplateWizard** Projekt der Projektmappe.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] adds the **ItemTemplateWizard** project to the solution.  
+6.  Löschen Sie das Element "UserControl1" aus dem Projekt ein.  
   
-6.  Delete the UserControl1 item from the project.  
+## <a name="configuring-the-wizard-project"></a>Konfigurieren die Assistenten-Projekt  
+ Bevor Sie den Assistenten zum Erstellen, müssen Sie ein Windows Presentation Foundation (WPF)-Fenster, eine Codedatei und Assemblyverweise zum Projekt hinzufügen.  
   
-## <a name="configuring-the-wizard-project"></a>Configuring the Wizard Project  
- Before you create the wizard, you must add a Windows Presentation Foundation (WPF) window, a code file, and assembly references to the project.  
+#### <a name="to-configure-the-wizard-project"></a>So konfigurieren Sie ein Assistentenprojekt  
   
-#### <a name="to-configure-the-wizard-project"></a>To configure the wizard project  
+1.  In **Projektmappen-Explorer**, öffnen Sie das Kontextmenü von der **ItemTemplateWizard** Projektknoten, und wählen Sie dann **Eigenschaften**.  
   
-1.  In **Solution Explorer**, open the shortcut menu from the **ItemTemplateWizard** project node, and then choose **Properties**.  
+2.  In der **Projekt-Designer**, stellen Sie sicher, dass das Zielframework auf .NET Framework 4.5 festgelegt ist.  
   
-2.  In the **Project Designer**, make sure that the target framework is set to .NET Framework 4.5.  
+     Für Visual C#-Projekten können Sie diesen Wert festlegen, auf die **Anwendung** Registerkarte. Für Visual Basic-Projekten können Sie diesen Wert festlegen, auf die **Kompilieren** Registerkarte. Weitere Informationen finden Sie unter [Vorgehensweise: .NET Framework-Version als Ziel](../ide/how-to-target-a-version-of-the-dotnet-framework.md).  
   
-     For Visual C# projects, you can set this value on the **Application** tab. For Visual Basic projects, you can set this value on the **Compile** tab. For more information, see [How to: Target a Version of the .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).  
+3.  In der **ItemTemplateWizard** Projekt, fügen Sie eine **Fenster (WPF)** Element zum Projekt, und nennen Sie das Element **WizardWindow**.  
   
-3.  In the **ItemTemplateWizard** project, add a **Window (WPF)** item to the project, and then name the item **WizardWindow**.  
+4.  Fügen Sie zwei Codedateien mit den Namen CustomActionWizard und Zeichenfolgen hinzu.  
   
-4.  Add two code files that are named CustomActionWizard and Strings.  
+5.  Öffnen Sie das Kontextmenü für die **ItemTemplateWizard** Projekt, und wählen Sie dann **Verweis hinzufügen**.  
   
-5.  Open the shortcut menu for the **ItemTemplateWizard** project,  and then choose **Add Reference**.  
+6.  In der **Verweis-Manager - ItemTemplateWizard** Dialogfeld unter die **Assemblys** Knoten, wählen Sie die **Erweiterungen** Knoten.  
   
-6.  In the **Reference Manager - ItemTemplateWizard** dialog box, under the **Assemblies** node, choose the **Extensions** node.  
-  
-7.  Select the check boxes next to the following assemblies, and then choose the **OK** button:  
+7.  Wählen Sie die Kontrollkästchen neben den folgenden Assemblys, und wählen Sie dann die **OK** Schaltfläche:  
   
     -   EnvDTE  
   
@@ -107,107 +101,107 @@ ms.lasthandoff: 08/30/2017
   
     -   Microsoft.VisualStudio.TemplateWizardInterface  
   
-8.  In **Solution Explorer**, in the **References** folder for the ItemTemplateWizard project, choose the **EnvDTE** reference.  
+8.  In **Projektmappen-Explorer**in der **Verweise** Ordner für das Projekt ItemTemplateWizard wählen Sie die **EnvDTE** Verweis.  
+  
+9. In der **Eigenschaften** Fenster, ändern Sie den Wert von der **Interop-Typen einbetten** Eigenschaft **"false"**.  
+  
+## <a name="defining-the-default-location-and-id-strings-for-custom-actions"></a>Definieren den Standardspeicherort und ID-Zeichenfolgen für benutzerdefinierte Aktionen  
+ Jede benutzerdefinierte Aktion verfügt über einen Speicherort und die ID, die im angegebenen der `GroupID` und `Location` Attribute der `CustomAction` Element in der Datei "Elements.xml". In diesem Schritt definieren Sie einige der für diese Attribute im Projekt ItemTemplateWizard gültigen Zeichenfolgen. Beim Durchführen dieser exemplarischen Vorgehensweise werden diese Zeichenfolgen in die Datei "Elements.xml" im Projektelement benutzerdefinierte Aktion geschrieben, wenn Benutzer einen Speicherort und eine ID im Assistenten angeben.  
+  
+ Der Einfachheit halber unterstützt dieses Beispiel nur eine Teilmenge der verfügbaren Standardspeicherorte und IDs. Eine vollständige Liste finden Sie unter [Standardspeicherorte für benutzerdefinierte-Aktion und IDs](http://go.microsoft.com/fwlink/?LinkId=181964).  
+  
+#### <a name="to-define-the-default-location-and-id-strings"></a>Zum Definieren der Standardspeicherort und ID-Zeichenfolgen  
+  
+1.  Öffnen.  
+  
+2.  In der **ItemTemplateWizard** Projekt, ersetzen Sie den Code in der Codedatei Zeichenfolgen durch den folgenden Code.  
+  
+     [!code-csharp[SPExtensibility.ProjectItem.CustomAction#6](../sharepoint/codesnippet/CSharp/customactionprojectitem/itemtemplatewizard/strings.cs#6)]
+     [!code-vb[SPExtensibility.ProjectItem.CustomAction#6](../sharepoint/codesnippet/VisualBasic/customactionprojectitem/itemtemplatewizard/strings.vb#6)]  
+  
+## <a name="creating-the-wizard-ui"></a>Erstellen der Assistenten-Benutzeroberfläche  
+ XAML-Code, um die Definition der Benutzeroberfläche des Assistenten hinzu, und fügen Sie Code zum einige Steuerelemente im Assistenten auf die ID-Zeichenfolgen zu binden. Der erstellte Assistent ähnelt dem integrierten Assistenten für SharePoint-Projekte in Visual Studio.  
+  
+#### <a name="to-create-the-wizard-ui"></a>So erstellen die Assistenten-Benutzeroberfläche  
+  
+1.  In der **ItemTemplateWizard** Projekt, öffnen Sie das Kontextmenü für die **WizardWindow.xaml** , und wählen Sie dann **öffnen** um das Fenster im Designer zu öffnen.  
+  
+2.  Ersetzen Sie in der XAML-Ansicht das aktuelle durch folgendes XAML. Der XAML-Code definiert eine Benutzeroberfläche, die eine Überschrift enthält, die zum Angeben des Verhaltens der benutzerdefinierten Aktion und die Navigationsschaltflächen am unteren Rand des Fensters steuert.  
   
     > [!NOTE]  
-    >  In Visual Basic projects, the **References** folder appears only when the **Always show solution** check box is selected in the [NIB: General, Projects and Solutions, Options Dialog Box](http://msdn.microsoft.com/en-us/8f8e37e8-b28d-4b13-bfeb-ea4d3312aeca).  
-  
-9. In the **Properties** window, change the value of the **Embed Interop Types** property to **False**.  
-  
-## <a name="defining-the-default-location-and-id-strings-for-custom-actions"></a>Defining the Default Location and ID Strings for Custom Actions  
- Every custom action has a location and ID that is specified in the `GroupID` and `Location` attributes of the `CustomAction` element in the Elements.xml file. In this step, you define some of the valid strings for these attributes in the ItemTemplateWizard project. When you complete this walkthrough, these strings are written to the Elements.xml file in the Custom Action project item when users specify a location and an ID in the wizard.  
-  
- For simplicity, this sample supports only a subset of the available default locations and IDs. For a full list, see [Default Custom Action Locations and IDs](http://go.microsoft.com/fwlink/?LinkId=181964).  
-  
-#### <a name="to-define-the-default-location-and-id-strings"></a>To define the default location and ID strings  
-  
-1.  open.  
-  
-2.  In the **ItemTemplateWizard** project, replace the code in the Strings code file with the following code.  
-  
-     [!code-csharp[SPExtensibility.ProjectItem.CustomAction#6](../sharepoint/codesnippet/CSharp/customactionprojectitem/itemtemplatewizard/strings.cs#6)]  [!code-vb[SPExtensibility.ProjectItem.CustomAction#6](../sharepoint/codesnippet/VisualBasic/customactionprojectitem/itemtemplatewizard/strings.vb#6)]  
-  
-## <a name="creating-the-wizard-ui"></a>Creating the Wizard UI  
- Add XAML to define the UI of the wizard, and add some code to bind some of the controls in the wizard to the ID strings. The wizard that you create resembles the built-in wizard for SharePoint projects in Visual Studio.  
-  
-#### <a name="to-create-the-wizard-ui"></a>To create the wizard UI  
-  
-1.  In the **ItemTemplateWizard** project, open the shortcut menu for the **WizardWindow.xaml** file, and then choose **Open** to open the window in the designer.  
-  
-2.  In the XAML view, replace the current XAML with the following XAML. The XAML defines a UI that includes a heading, controls for specifying the behavior of the custom action, and navigation buttons at the bottom of the window.  
-  
-    > [!NOTE]  
-    >  Your project will have some compile errors after you add this code. These errors will go away when you add code in later steps.  
+    >  Nachdem Sie diesen Code hinzufügen, müssen das Projekt einige Kompilierungsfehler. Diese Fehler werden durch Code behoben, den Sie in späteren Schritten hinzufügen.  
   
      [!code-xml[SPExtensibility.ProjectItem.CustomAction#9](../sharepoint/codesnippet/Xaml/customactionprojectitem/itemtemplatewizard/wizardwindow.xaml#9)]  
   
     > [!NOTE]  
-    >  The window that's created in this XAML is derived from the <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow> base class. When you add a custom WPF dialog box to Visual Studio, we recommend that you derive your dialog box from this class to have consistent styling with other dialog boxes in Visual Studio and to avoid issues that might otherwise occur with modal dialog boxes. For more information, see [Creating and Managing Modal Dialog Boxes](/visualstudio/extensibility/creating-and-managing-modal-dialog-boxes).  
+    >  Das Fenster, das dieser XAML erstellte ist stammt aus dem <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow> Basisklasse. Wenn Sie Visual Studio ein benutzerdefiniertes WPF-Dialogfeld hinzufügen, wird empfohlen, dass Sie das Dialogfeld von dieser Klasse, um ein einheitliches Aussehen mit anderen Dialogfeldern in Visual Studio und Probleme zu vermeiden, die andernfalls sollten Sie modale Dialogfelder auftreten abzuleiten. Weitere Informationen finden Sie unter [erstellen und Verwalten von modalen Dialogfeldern](/visualstudio/extensibility/creating-and-managing-modal-dialog-boxes).  
   
-3.  If you're developing a Visual Basic project, remove the `ItemTemplateWizard` namespace from the `WizardWindow` class name in the `x:Class` attribute of the `Window` element. This element is in the first line of the XAML. When you're done, the first line should resemble the following code:  
+3.  Wenn Sie ein Visual Basic-Projekt entwickeln, entfernen Sie die `ItemTemplateWizard` Namespace aus der `WizardWindow` Klassennamen in der `x:Class` Attribut des der `Window` Element. Dieses Element befindet sich in der ersten XAML-Zeile. Wenn Sie fertig sind, sollte die erste Zeile den folgenden Code ähneln:  
   
     ```  
     <Window x:Class="WizardWindow"  
     ```  
   
-4.  In the code-behind file for the WizardWindow.xaml file, replace the current code with the following code.  
+4.  Ersetzen Sie in der CodeBehind-Datei für die Datei "WizardWindow.xaml" den aktuellen Code durch den folgenden Code ein.  
   
-     [!code-vb[SPExtensibility.ProjectItem.CustomAction#7](../sharepoint/codesnippet/VisualBasic/customactionprojectitem/itemtemplatewizard/wizardwindow.xaml.vb#7)]  [!code-csharp[SPExtensibility.ProjectItem.CustomAction#7](../sharepoint/codesnippet/CSharp/customactionprojectitem/itemtemplatewizard/wizardwindow.xaml.cs#7)]  
+     [!code-vb[SPExtensibility.ProjectItem.CustomAction#7](../sharepoint/codesnippet/VisualBasic/customactionprojectitem/itemtemplatewizard/wizardwindow.xaml.vb#7)]
+     [!code-csharp[SPExtensibility.ProjectItem.CustomAction#7](../sharepoint/codesnippet/CSharp/customactionprojectitem/itemtemplatewizard/wizardwindow.xaml.cs#7)]  
   
-## <a name="implementing-the-wizard"></a>Implementing the Wizard  
- Define the functionality of the wizard by implementing the <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> interface.  
+## <a name="implementing-the-wizard"></a>Implementieren des Assistenten  
+ Definieren Sie die Funktionalität des Assistenten durch das Implementieren der <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> Schnittstelle.  
   
-#### <a name="to-implement-the-wizard"></a>To implement the wizard  
+#### <a name="to-implement-the-wizard"></a>So implementieren Sie den Assistenten  
   
-1.  In the **ItemTemplateWizard** project, open the **CustomActionWizard** code file, and then replace the current code in this file with the following code:  
+1.  In der **ItemTemplateWizard** -Projekt, öffnen die **CustomActionWizard** Codedatei, und klicken Sie dann den aktuellen Code in dieser Datei durch den folgenden Code ersetzen:  
   
-     [!code-csharp[SPExtensibility.ProjectItem.CustomAction#8](../sharepoint/codesnippet/CSharp/customactionprojectitem/itemtemplatewizard/customactionwizard.cs#8)]  [!code-vb[SPExtensibility.ProjectItem.CustomAction#8](../sharepoint/codesnippet/VisualBasic/customactionprojectitem/itemtemplatewizard/customactionwizard.vb#8)]  
+     [!code-csharp[SPExtensibility.ProjectItem.CustomAction#8](../sharepoint/codesnippet/CSharp/customactionprojectitem/itemtemplatewizard/customactionwizard.cs#8)]
+     [!code-vb[SPExtensibility.ProjectItem.CustomAction#8](../sharepoint/codesnippet/VisualBasic/customactionprojectitem/itemtemplatewizard/customactionwizard.vb#8)]  
   
 ## <a name="checkpoint"></a>Checkpoint  
- At this point in the walkthrough, all the code for the wizard is now in the project. Build the project to make sure that it compiles without errors.  
+ Ab diesem Punkt in der exemplarischen Vorgehensweise wurde der gesamte für den Assistenten benötigte Code in das Projekt eingefügt. Erstellen Sie das Projekt, um sicherzustellen, dass es ohne Fehler kompiliert wird.  
   
-#### <a name="to-build-your-project"></a>To build your project  
+#### <a name="to-build-your-project"></a>So erstellen Sie das Projekt  
   
-1.  On the menu bar, choose **Build**, **Build Solution**.  
+1.  Wählen Sie in der Menüleiste **Erstellen**, **Projektmappe erstellen**.  
   
-## <a name="associating-the-wizard-with-the-item-template"></a>Associating the Wizard with the Item Template  
- Now that you have implemented the wizard, you must associate it with the **Custom Action** item template by completing three main steps:  
+## <a name="associating-the-wizard-with-the-item-template"></a>Die Elementvorlage Zuordnen des Assistenten  
+ Nun, dass Sie den Assistenten implementiert haben, müssen Sie diese mit Zuordnen der **benutzerdefinierte Aktion** Elementvorlage nach Abschluss von drei Hauptschritte:  
   
-1.  Sign the wizard assembly with a strong name.  
+1.  Signieren der Assistenten-Assembly mit einem starkem Namen  
   
-2.  Get the public key token for the wizard assembly.  
+2.  Abrufen des öffentlichen Schlüsseltokens der Assistenten-Assembly  
   
-3.  Add a reference to the wizard assembly in the .vstemplate file for the **Custom Action** item template.  
+3.  Fügen Sie einen Verweis auf die Assistenten-Assembly in der VSTEMPLATE-Datei für die **benutzerdefinierte Aktion** Elementvorlage.  
   
-#### <a name="to-sign-the-wizard-assembly-with-a-strong-name"></a>To sign the wizard assembly with a strong name  
+#### <a name="to-sign-the-wizard-assembly-with-a-strong-name"></a>So signieren Sie die Assistenten-Assembly mit einem starkem Namen  
   
-1.  In **Solution Explorer**, open the shortcut menu from the **ItemTemplateWizard** project node, and then choose **Properties**.  
+1.  In **Projektmappen-Explorer**, öffnen Sie das Kontextmenü von der **ItemTemplateWizard** Projektknoten, und wählen Sie dann **Eigenschaften**.  
   
-2.  On the **Signing** tab, select the **Sign the assembly** check box.  
+2.  Auf der **Signierung** Registerkarte die **zum Signieren der Assembly** Kontrollkästchen.  
   
-3.  In the **Choose a strong name key file** list, choose **\<New...>**.  
+3.  In der **Schlüsseldatei mit starkem Namen auswählen** wählen  **\<neu... >**.  
   
-4.  In the **Create Strong Name Key** dialog box, enter a name, clear the **Protect my key file with a password** check box, and then choose the **OK** button.  
+4.  In der **Schlüssel für einen starken Namen erstellen** Dialogfeld Geben Sie einen Namen, Deaktivieren der **Schlüsseldatei mit Kennwort schützen** Kontrollkästchen, und wählen Sie dann die **OK** Schaltfläche.  
   
-5.  On the menu bar, choose **Build**, **Build Solution**.  
+5.  Wählen Sie in der Menüleiste **Erstellen**, **Projektmappe erstellen**.  
   
-#### <a name="to-get-the-public-key-token-for-the-wizard-assembly"></a>To get the public key token for the wizard assembly  
+#### <a name="to-get-the-public-key-token-for-the-wizard-assembly"></a>So rufen Sie das öffentliche Schlüsseltoken der Assistenten-Assembly ab  
   
-1.  In a Visual Studio Command Prompt window, run the following command, replacing *PathToWizardAssembly* with the full path to the built ItemTemplateWizard.dll assembly for the ItemTemplateWizard project on your development computer.  
+1.  Führen Sie in einem Fenster Visual Studio-Eingabeaufforderung den folgenden Befehl, und Ersetzen Sie dabei *PathToWizardAssembly* durch den vollständigen Pfad zu der Assembly ItemTemplateWizard.dll für das Projekt ItemTemplateWizard auf die Entwicklung Computer.  
   
     ```  
     sn.exe -T PathToWizardAssembly  
     ```  
   
-     The public key token for the ItemTemplateWizard.dll assembly is written to the Visual Studio Command Prompt window.  
+     Das Token des öffentliche Schlüssels für die Assembly ItemTemplateWizard.dll wird in der Visual Studio-Eingabeaufforderungsfenster geschrieben.  
   
-2.  Keep the Visual Studio Command Prompt window open. You'll need the public key token to complete the next procedure.  
+2.  Lassen Sie das Fenster der Visual Studio-Eingabeaufforderung geöffnet. Sie benötigen das öffentliche Schlüsseltoken für das nächste Verfahren.  
   
-#### <a name="to-add-a-reference-to-the-wizard-assembly-in-the-vstemplate-file"></a>To add a reference to the wizard assembly in the .vstemplate file  
+#### <a name="to-add-a-reference-to-the-wizard-assembly-in-the-vstemplate-file"></a>So fügen Sie einen Verweis auf die Assistenten-Assembly in der VSTEMPLATE-Datei hinzu  
   
-1.  In **Solution Explorer**, expand the **ItemTemplate** project node, and then open the ItemTemplate.vstemplate file.  
+1.  In **Projektmappen-Explorer**, erweitern Sie die **ItemTemplate** Projektknoten, und öffnen Sie dann die Datei ItemTemplate.vstemplate.  
   
-2.  Near the end of the file, add the following `WizardExtension` element between the `</TemplateContent>` and `</VSTemplate>` tags. Replace the *YourToken* value of the `PublicKeyToken` attribute with the public key token that you obtained in the previous procedure.  
+2.  Fügen Sie das folgende `WizardExtension`-Element zwischen dem `</TemplateContent>`-Tag und dem `</VSTemplate>`-Tag am Ende der Datei hinzu. Ersetzen Sie die *YourToken* Wert, der die `PublicKeyToken` Attribut mit dem Token des öffentlichen Schlüssels, die Sie im vorherigen Verfahren abgerufen haben.  
   
     ```  
     <WizardExtension>  
@@ -216,18 +210,18 @@ ms.lasthandoff: 08/30/2017
     </WizardExtension>  
     ```  
   
-     For more information about the `WizardExtension` element, see [WizardExtension Element &#40;Visual Studio Templates&#41;](/visualstudio/extensibility/wizardextension-element-visual-studio-templates).  
+     Weitere Informationen zu den `WizardExtension` Element finden Sie unter [WizardExtension-Element &#40; Visual Studio-Vorlagen &#41; ](/visualstudio/extensibility/wizardextension-element-visual-studio-templates).  
   
-3.  Save and close the file.  
+3.  Speichern und schließen Sie die Datei.  
   
-## <a name="adding-replaceable-parameters-to-the-elementsxml-file-in-the-item-template"></a>Adding Replaceable Parameters to the Elements.xml File in the Item Template  
- Add several replaceable parameters to the Elements.xml file in the ItemTemplate project. These parameters are initialized in the `PopulateReplacementDictionary` method in the `CustomActionWizard` class that you defined earlier. When a user adds a Custom Action project item to a project, Visual Studio automatically replaces these parameters in the Elements.xml file in the new project item with the values that they specified in the wizard.  
+## <a name="adding-replaceable-parameters-to-the-elementsxml-file-in-the-item-template"></a>Hinzufügen von ersetzbaren Parametern zur Datei "Elements.xml" in der Elementvorlage  
+ Fügen Sie der Datei "Elements.xml" im Projekt ItemTemplate mehrere ersetzbare Parameter hinzu. Diese Parameter werden in der `PopulateReplacementDictionary`-Methode in der zuvor definierten `CustomActionWizard`-Klasse initialisiert. Wenn ein Benutzer zu einem Projekt ein Projektelement für die benutzerdefinierte Aktion hinzufügt, ersetzt Visual Studio diese Parameter in der Datei Elements.xml im neuen Projektelement automatisch mit den Werten, die sie im Assistenten angegeben.  
   
- A replaceable parameter is a token that starts and ends with the dollar sign ($) character. In addition to defining your own replaceable parameters, you can use built-in parameters that the SharePoint project system defines and initializes. For more information, see [Replaceable Parameters](../sharepoint/replaceable-parameters.md).  
+ Ein ersetzbarer Parameter ist ein Token, das mit einem Dollarzeichen ($) beginnt und endet. Zusätzlich zum Definieren Ihrer eigenen ersetzbare Parameter, können Sie integrierte Parameter verwenden, die SharePoint-Projektsystem definiert und initialisiert. Weitere Informationen finden Sie unter [ersetzbare Parameter](../sharepoint/replaceable-parameters.md).  
   
-#### <a name="to-add-replaceable-parameters-to-the-elementsxml-file"></a>To add replaceable parameters to the Elements.xml file  
+#### <a name="to-add-replaceable-parameters-to-the-elementsxml-file"></a>So fügen Sie der Datei Elements.xml ersetzbare Parameter hinzu  
   
-1.  In the ItemTemplate project, replace the contents of the Elements.xml file with the following XML.  
+1.  Ersetzen Sie den Inhalt der Datei "Elements.xml" im Projekt ItemTemplate durch folgendes XML.  
   
     ```  
     <?xml version="1.0" encoding="utf-8" ?>  
@@ -243,120 +237,120 @@ ms.lasthandoff: 08/30/2017
     </Elements>  
     ```  
   
-     The new XML changes the values of the `Id`, `GroupId`, `Location`, `Description`, and `Url` attributes to replaceable parameters.  
+     Die folgenden XML-Code ändert die Werte der `Id`, `GroupId`, `Location`, `Description`, und `Url` -Attribute verwenden, um ersetzbare Parameter.  
   
-2.  Save and close the file.  
+2.  Speichern und schließen Sie die Datei.  
   
-## <a name="adding-the-wizard-to-the-vsix-package"></a>Adding the Wizard to the VSIX Package  
- In the source.extension.vsixmanifest file in the VSIX project, add a reference to the wizard project so that it's deployed with the VSIX package that contains the project item.  
+## <a name="adding-the-wizard-to-the-vsix-package"></a>Hinzufügen des Assistenten zum VSIX-Paket  
+ Fügen Sie in der Datei source.extension.vsixmanifest im VSIX-Projekt einen Verweis auf das Assistentenprojekt, sodass er mit dem VSIX-Paket bereitgestellt wird, das das Projektelement enthält.  
   
-#### <a name="to-add-the-wizard-to-the-vsix-package"></a>To add the wizard to the VSIX package  
+#### <a name="to-add-the-wizard-to-the-vsix-package"></a>So fügen Sie den Assistenten dem VSIX-Paket hinzu  
   
-1.  In **Solution Explorer**, open the shortcut menu from the **source.extension.vsixmanifest** file in the CustomActionProjectItem project, and then choose **Open** to open the file in the manifest editor.  
+1.  In **Projektmappen-Explorer**, öffnen Sie das Kontextmenü von der **"Source.Extension.vsixmanifest"** im CustomActionProjectItem-Projekt, und wählen Sie dann **öffnen** öffnen die Datei im manifest-Editor.  
   
-2.  In the manifest editor, choose the **Assets** tab, then choose the **New** button.  
+2.  Wählen Sie im manifest-Editor die **Bestand** Registerkarte aus, und wählen Sie dann die **neu** Schaltfläche.  
   
-     The **Add New Asset** dialog box appears.  
+     Die **neue Anlage hinzufügen** Dialogfeld wird angezeigt.  
   
-3.  In the **Type** list, choose **Microsoft.VisualStudio.Assembly**.  
+3.  In der **Typ** wählen **Microsoft.VisualStudio.Assembly**.  
   
-4.  In the **Source** list, choose **A project in current solution**.  
+4.  In der **Quelle** wählen **ein Projekt in der aktuellen Projektmappe**.  
   
-5.  In the **Project** list, choose **ItemTemplateWizard**, and then choose the **OK** button.  
+5.  In der **Projekt** wählen **ItemTemplateWizard**, und wählen Sie dann die **OK** Schaltfläche.  
   
-6.  On the menu bar, choose **Build**, **Build Solution**, and then make sure that the solution compiles without errors.  
+6.  Wählen Sie in der Menüleiste **erstellen**, **Projektmappe**, und stellen Sie sicher, dass die Lösung ohne Fehler kompiliert wird.  
   
-## <a name="testing-the-wizard"></a>Testing the Wizard  
- You are now ready to test the wizard. First, start to debug the CustomActionProjectItem solution in the experimental instance of Visual Studio. Then test the wizard for the Custom Action project item in a SharePoint project in the experimental instance of Visual Studio. Finally, build and run the SharePoint project to verify that the custom action works as expected.  
+## <a name="testing-the-wizard"></a>Testen des Assistenten  
+ Sie können den Assistenten jetzt testen. Starten Sie die Projektmappe "CustomActionProjectItem" in der experimentellen Instanz von Visual Studio debuggen. Anschließend testen Sie den Assistenten für die benutzerdefinierte Aktion für das Projektelement in einer SharePoint-Projekt in der experimentellen Instanz von Visual Studio. Erstellen und führen Sie zum Schluss das SharePoint-Projekt aus, um sicherzustellen, dass die benutzerdefinierte Aktion ordnungsgemäß funktioniert.  
   
-#### <a name="to-start-to-debug-the-solution"></a>To start to debug the solution  
+#### <a name="to-start-to-debug-the-solution"></a>Starten Sie die Lösung zu debuggen  
   
-1.  Restart Visual Studio with administrative credentials, and then open the CustomActionProjectItem solution.  
+1.  Starten Sie Visual Studio erneut mit Administratoranmeldeinformationen, und öffnen Sie dann die Projektmappe "CustomActionProjectItem".  
   
-2.  In the ItemTemplateWizard project, open the CustomActionWizard code file, and then add a breakpoint to the first line of code in the `RunStarted` method.  
+2.  Klicken Sie im Projekt ItemTemplateWizard CustomActionWizard-Codedatei öffnen, und fügen Sie einen Haltepunkt an der ersten Codezeile in der `RunStarted` Methode.  
   
-3.  On the menu bar, choose **Debug**, **Exceptions**.  
+3.  Wählen Sie in der Menüleiste **Debuggen**, **Ausnahmen**.  
   
-4.  In the **Exceptions** dialog box, make sure that the **Thrown** and **User-unhandled** check boxes for **Common Language Runtime Exceptions** are cleared, and then choose the **OK** button.  
+4.  In der **Ausnahmen** Dialogfeld Feld, stellen Sie sicher, dass die **ausgelöst** und **vom Benutzercode unbehandelt** Kontrollkästchen für **Common Language Runtime-Ausnahmen**deaktiviert sind, und wählen Sie dann die **OK** Schaltfläche.  
   
-5.  Start debugging by choosing the F5 key, or, on the menu bar, choosing **Debug**, **Start Debugging**.  
+5.  Starten Sie durch Auswählen der F5-Taste, oder wählen Sie in der Menüleiste, Auswahl **Debuggen**, **Debuggen**.  
   
-     Visual Studio installs the extension to %UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0Exp\Extensions\Contoso\Custom Action Project Item\1.0 and starts an experimental instance of Visual Studio. You'll test the project item in this instance of Visual Studio.  
+     Visual Studio die Erweiterung %UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0Exp\Extensions\Contoso\Custom Aktion Projekt Item\1.0 und eine experimentelle Instanz von Visual Studio wird gestartet. Sie testen das Projektelement in dieser Instanz von Visual Studio.  
   
-#### <a name="to-test-the-wizard-in-visual-studio"></a>To test the wizard in Visual Studio  
+#### <a name="to-test-the-wizard-in-visual-studio"></a>So testen Sie den Assistenten in Visual Studio  
   
-1.  In the experimental instance of Visual Studio, on the menu bar, choose **File**, **New**, **Project**.  
+1.  Wählen Sie in der experimentellen Instanz von Visual Studio in der Menüleiste **Datei**, **neu**, **Projekt**.  
   
-2.  Expand the **Visual C#** or **Visual Basic** node (depending on the language that your item template supports), expand the **SharePoint** node, and then choose the **2010** node.  
+2.  Erweitern Sie die **Visual C#-** oder **Visual Basic** -Knoten (je nach von der die Elementvorlage unterstützten Sprache), erweitern Sie die **SharePoint** Knoten, und wählen Sie dann die **2010** Knoten.  
   
-3.  In the list of project templates, choose **SharePoint 2010 Project**, name the project **CustomActionWizardTest**, and then choose the **OK** button.  
+3.  Wählen Sie in der Liste der Projektvorlagen **SharePoint 2010-Projekt**, nennen Sie das Projekt **Zeichenfolge CustomActionWizardTest**, und wählen Sie dann die **OK** Schaltfläche.  
   
-4.  In the **SharePoint Customization Wizard**, enter the URL of the site that you want to use for debugging, and then choose the **Finish** button.  
+4.  In der **Assistent zum Anpassen von SharePoint**, geben Sie die URL der Site, die Sie zum Debuggen verwenden möchten, und wählen Sie dann die **Fertig stellen** Schaltfläche.  
   
-5.  In **Solution Explorer**, open the shortcut menu for the project node, choose **Add**, and then choose **New Item**.  
+5.  In **Projektmappen-Explorer**, öffnen Sie das Kontextmenü für den Projektknoten, wählen Sie **hinzufügen**, und wählen Sie dann **neues Element**.  
   
-6.  In the **Add New Item - CustomItemWizardTest** dialog box, expand the **SharePoint** node, and then expand the **2010** node.  
+6.  In der **neues Element hinzufügen - CustomItemWizardTest** Dialogfeld erweitern Sie die **SharePoint** Knoten, und erweitern Sie dann die **2010** Knoten.  
   
-7.  In the list of project items, choose the **Custom Action** item, and then choose the **Add** button.  
+7.  Wählen Sie in der Liste der Projektelemente, die **benutzerdefinierte Aktion** -Element aus, und wählen Sie dann die **hinzufügen** Schaltfläche.  
   
-8.  Verify that the code in the other instance of Visual Studio stops on the breakpoint that you set earlier in the `RunStarted` method.  
+8.  Überprüfen Sie, ob die Codeausführung in der anderen Instanz von Visual Studio an dem Haltepunkt unterbrochen wird, den Sie zuvor in der `RunStarted`-Methode festgelegt haben.  
   
-9. Continue to debug the project by choosing the F5 key or, on the menu bar, choosing **Debug**, **Continue**.  
+9. Fahren Sie mit dem Debuggen des Projekts durch Auswählen der F5-Taste, oder wählen Sie in der Menüleiste **Debuggen**, **Fortfahren**.  
   
-     The SharePoint Customization Wizard appears.  
+     Der Assistent zum Anpassen von SharePoint wird angezeigt.  
   
-10. Under **Location**, choose the **List Edit** option button.  
+10. Klicken Sie unter **Speicherort**, wählen Sie die **Liste bearbeiten** Optionsfeld.  
   
-11. In the **Group ID** list, choose **Communications**.  
+11. In der **Gruppenbezeichner** wählen **Kommunikation**.  
   
-12. In the **Title** box, enter **SharePoint Developer Center**.  
+12. In der **Titel** geben **SharePoint Developer Center**.  
   
-13. In the  **Description** box, enter **Opens the SharePoint Developer Center website**.  
+13. In der **Beschreibung** geben **SharePoint Developer Center-Website geöffnet**.  
   
-14. In the **URL** box, enter **http://msdn.microsoft.com/sharepoint/default.aspx**, and then choose the **Finish** button.  
+14. In der **URL** geben **http://msdn.microsoft.com/sharepoint/default.aspx**, und wählen Sie dann die **Fertig stellen** Schaltfläche.  
   
-     isual Studio adds an item that's named **CustomAction1** to your project and opens the Elements.xml file in the editor. Verify that Elements.xml contains the values that you specified in the wizard.  
+     Isual Studio fügt ein Element mit dem Namen **CustomAction1** zum Projekt und öffnet die Datei "Elements.xml"-Datei im Editor. Vergewissern Sie sich, dass Elements.xml die Werte enthält, die Sie im Assistenten angegeben haben.  
   
-#### <a name="to-test-the-custom-action-in-sharepoint"></a>To test the custom action in SharePoint  
+#### <a name="to-test-the-custom-action-in-sharepoint"></a>So testen Sie die benutzerdefinierte Aktion in SharePoint  
   
-1.  In the experimental instance of Visual Studio, choose the F5 key or, on the menu bar, choose **Debug**, **Start Debugging**.  
+1.  In der experimentellen Instanz von Visual Studio, wählen Sie die F5-Taste, oder wählen Sie auf der Menüleiste **Debuggen**, **Debuggen**.  
   
-     The custom action is packaged and deployed to the SharePoint site specified by the **Site URL** property of the project, and the web browser opens to the default page of this site.  
+     Die benutzerdefinierte Aktion wird verpackt und bereitgestellt werden, auf die SharePoint-Website, die gemäß der **Website-URL** Eigenschaft des Projekts, und der Webbrowser wird die Standardseite dieser Website geöffnet.  
   
     > [!NOTE]  
-    >  If the **Script Debugging Disabled** dialog box appears, choose the **Yes** button.  
+    >  Wenn die **Skriptdebugging deaktiviert** im Dialogfeld angezeigt wird, wählen Sie die **Ja** Schaltfläche.  
   
-2.  In the Lists area of the SharePoint site, choose the **Tasks** link.  
+2.  Wählen Sie in den Bereich der SharePoint-Website, die **Aufgaben** Link.  
   
-     The **Tasks - All Tasks** page appears.  
+     Die **Aufgaben – alle Aufgaben** Seite wird angezeigt.  
   
-3.  On the **List Tools** tab of the ribbon, choose the **List** tab, and then, in the **Settings** group, choose **List Settings**.  
+3.  Auf der **Listentools** Registerkarte des Menübands, wählen Sie die **Liste** Registerkarte, und dann auf die **Einstellungen** Gruppe **Listeneinstellungen**.  
   
-     The **List Settings** page appears.  
+     Die **Listeneinstellungen** Seite wird angezeigt.  
   
-4.  Under the **Communications** heading near the top of the page, choose the **SharePoint Developer Center** link, verify that the browser opens the website http://msdn.microsoft.com/sharepoint/default.aspx, and then close the browser.  
+4.  Unter den **Kommunikation** Überschrift am oberen Rand der Seite ", wählen Sie die **SharePoint Developer Center** verknüpfen möchten, stellen Sie sicher, dass der Browser die Website http://msdn.microsoft.com/sharepoint/ wird geöffnet. "default.aspx", und schließen Sie den Browser.  
   
-## <a name="cleaning-up-the-development-computer"></a>Cleaning up the Development Computer  
- After you finish testing the project item, remove the project item template from the experimental instance of Visual Studio.  
+## <a name="cleaning-up-the-development-computer"></a>Bereinigen des Entwicklungscomputers  
+ Nachdem Sie die Tests des Projektelements abgeschlossen haben, entfernen Sie die Projektelementvorlage aus der experimentellen Instanz von Visual Studio.  
   
-#### <a name="to-clean-up-the-development-computer"></a>To clean up the development computer  
+#### <a name="to-clean-up-the-development-computer"></a>So bereinigen Sie den Entwicklungscomputer  
   
-1.  In the experimental instance of Visual Studio, on the menu bar, choose **Tools**, **Extensions and Updates**.  
+1.  Wählen Sie in der experimentellen Instanz von Visual Studio in der Menüleiste **Tools**, **Erweiterungen und Updates**.  
   
-     The **Extensions and Updates** dialog box opens.  
+     Das Dialogfeld **Erweiterungen und Updates** wird geöffnet.  
   
-2.  In the list of extensions, choose the **Custom Action Project Item** extension, and then choose the **Uninstall** button.  
+2.  Wählen Sie in der Liste der Erweiterungen, die **Custom Action Project Item** Erweiterung, und wählen Sie dann die **Deinstallieren** Schaltfläche.  
   
-3.  In the dialog box that appears, choose the **Yes** button to confirm that you want to uninstall the extension, and then choose the **Restart Now** button to complete the uninstallation.  
+3.  Wählen Sie im angezeigten Dialogfeld die **Ja** , um zu bestätigen, dass Sie verwenden möchten, deinstallieren Sie die Erweiterung aus, und wählen Sie dann die **jetzt neu starten** Schaltfläche, um die Deinstallation abzuschließen.  
   
-4.  Close both instances of Visual Studio (the experimental instance and the instance of Visual Studio in which the CustomActionProjectItem solution is open).  
+4.  Schließen Sie beide Instanzen von Visual Studio (die experimentelle Instanz und die Instanz von Visual Studio in der Projektmappe CustomActionProjectItem geöffnet ist).  
   
-## <a name="see-also"></a>See Also  
- [Walkthrough: Creating a Custom Action Project Item with an Item Template, Part 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)   
- [Defining Custom SharePoint Project Item Types](../sharepoint/defining-custom-sharepoint-project-item-types.md)   
- [Creating Item Templates and Project Templates for SharePoint Project Items](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)   
- [Visual Studio Template Schema Reference](/visualstudio/extensibility/visual-studio-template-schema-reference)   
- [How to: Use Wizards with Project Templates](../extensibility/how-to-use-wizards-with-project-templates.md)   
- [Default Custom Action Locations and IDs](http://go.microsoft.com/fwlink/?LinkId=181964)  
+## <a name="see-also"></a>Siehe auch  
+ [Exemplarische Vorgehensweise: Erstellen eines Projektelements für die benutzerdefinierte Aktion mit einer Elementvorlage, Teil 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)   
+ [Definieren von benutzerdefinierten SharePoint-Projektelementtypen](../sharepoint/defining-custom-sharepoint-project-item-types.md)   
+ [Erstellen von Elementvorlagen und Projektvorlagen für SharePoint-Projektelemente](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)   
+ [Schemareferenz zu Visual Studio-Vorlagen](/visualstudio/extensibility/visual-studio-template-schema-reference)   
+ [Vorgehensweise: Verwenden von Assistenten mit Projektvorlagen](../extensibility/how-to-use-wizards-with-project-templates.md)   
+ [Standardspeicherorte für die benutzerdefinierte Aktion und IDs](http://go.microsoft.com/fwlink/?LinkId=181964)  
   
   

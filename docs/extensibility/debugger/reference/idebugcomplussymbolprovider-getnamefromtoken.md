@@ -1,62 +1,64 @@
 ---
-title: "IDebugComPlusSymbolProvider::GetNameFromToken | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "IDebugComPlusSymbolProvider::GetNameFromToken"
-  - "GetNameFromToken"
+title: IDebugComPlusSymbolProvider::GetNameFromToken | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- IDebugComPlusSymbolProvider::GetNameFromToken
+- GetNameFromToken
 ms.assetid: 6e8cf468-5fd1-4655-93ed-88828d6068b7
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 05f6206e64931a0b47c9d879213f24f9c2b40bf8
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugComPlusSymbolProvider::GetNameFromToken
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Gibt den Namen zurück, der dem angegebenen Scheinangegebenen das Metadatenobjekt zugeordnet ist.  
+# <a name="idebugcomplussymbolprovidergetnamefromtoken"></a>IDebugComPlusSymbolProvider::GetNameFromToken
+Gibt den Namen, die dem angegebenen Token erhält ihr Metadatenobjekt zugeordnet.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetNameFromToken (  
-   IUnknown* pMetadataImport,  
-   DWORD     dwToken,  
-   BSTR*     pbstrName  
+   IUnknown* pMetadataImport,  
+   DWORD     dwToken,  
+   BSTR*     pbstrName  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetNameFromToken (  
-   object     pMetadataImport,  
-   uint       dwToken,  
-   out string pbstrName  
+   object     pMetadataImport,  
+   uint       dwToken,  
+   out string pbstrName  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `pMetadataImport`  
- \[in\]  Objekt, das die Metadateninformationen enthält.  
+ [in] Ein Objekt, das die Metadateninformationen enthält.  
   
  `dwToken`  
- \[in\]  Benannt werden Token.  
+ [in] Token benannt werden.  
   
  `pbstrName`  
- \[out\]  Nennen Sie das das Token entspricht.  
+ [out] Der Name, der das Token entspricht.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Beispiel  
- Im folgenden Beispiel wird veranschaulicht, wie diese Methode für ein **CDebugSymbolProvider\-Objekt** implementiert, das die [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)\-Schnittstelle verfügbar macht.  
+## <a name="example"></a>Beispiel  
+ Das folgende Beispiel veranschaulicht die Implementierung dieser Methode für eine **CDebugSymbolProvider** -Objekt, das macht die [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) Schnittstelle.  
   
-```cpp#  
+```cpp  
 HRESULT CDebugSymbolProvider::GetNameFromToken(  
     IUnknown* pMetadataImport,  
     DWORD dwToken,  
@@ -120,5 +122,5 @@ Error:
 }  
 ```  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

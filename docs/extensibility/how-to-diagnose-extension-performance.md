@@ -4,35 +4,19 @@ ms.custom:
 ms.date: 11/08/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 46b0a1e3-7e69-47c9-9d8d-a1815d6c3896
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: BertanAygun
 ms.author: bertaygu
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 7ff2aeecfbabb055f0fa9740623bc2bd949b11c7
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: b78a02b9d780b9556cbbf42fce04b1da06e22833
-ms.contentlocale: de-de
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="measuring-extension-impact-in-startup"></a>Messen der Erweiterung Auswirkung beim Start
 
@@ -195,4 +179,3 @@ Es ist wichtig, die Anzahl der geladenen Assemblys in einem Paket Initialisierun
 ## <a name="summary"></a>Zusammenfassung
 
 Starten von Visual Studio wurde einer der Bereiche fortlaufend Feedback erhalten wir auf. Unser Ziel wie bereits erwähnt ist für alle Benutzer haben einen konsistente Start auftreten, unabhängig von Komponenten und die Erweiterungen aus, die sie installiert haben, und wir arbeiten mit Besitzern der Erweiterung auf die Umsetzung helfen, dieses Ziel zu erreichen möchten. In den Anweisungen oben sollte hilfreich sein, zum verstehen Erweiterungen wirkt sich auf Start und entweder vermieden das automatische Laden oder asynchron, sodass nur minimal beeinträchtigt, auf die Benutzerproduktivität zu laden.
-

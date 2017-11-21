@@ -4,34 +4,19 @@ ms.custom:
 ms.date: 04/26/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: f410325e-9cf2-4f39-b6d7-b672121c2691
-caps.latest.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Machine Translation
-ms.sourcegitcommit: 9524ecc3cadef58821fba857de8e82e59eea9b43
-ms.openlocfilehash: 1cec02ea12da168f067d750344c58215e90fd993
-ms.contentlocale: de-de
-ms.lasthandoff: 05/04/2017
-
+ms.openlocfilehash: 7856f8fac7e986f3e5383fa91261de39fe815a28
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="images-and-icons-for-visual-studio"></a>Bilder und Symbole für Visual Studio
 ##  <a name="BKMK_ImageUseInVisualStudio"></a>Image-Verwendung in Visual Studio  
@@ -58,7 +43,7 @@ ms.lasthandoff: 05/04/2017
   
 -   **Verdeutlichung:** darauf konzentrieren, die Core-Metapher, die ein Symbol, dessen Bedeutung und wahren bietet.  
   
--   **Vereinfachung:** reduzieren Sie das Symbol auf seiner Bedeutung Core – das Design über mit nur die erforderlichen Elemente und schnörkellos abrufen.  
+-   **Vereinfachung:** reduzieren Sie das Symbol auf seiner Bedeutung Core - Designs über mit nur die erforderlichen Elemente und schnörkellos abrufen.  
   
 -   **Kontext:** berücksichtigen Sie alle Aspekte der Rolle "ein Symbol" während der Entwicklung Konzept der entscheidend ist, bei der Entscheidung, welche Elemente auf das Symbol "Core Metapher bilden.  
   
@@ -66,7 +51,7 @@ ms.lasthandoff: 05/04/2017
   
 -   Verwenden Sie keine Symbole, die UI-Elemente, außer wenn dies angebracht anzugeben. Wählen Sie einen weiteren abstrakte oder symbolischen Ansatz aus, wenn das Element der Benutzeroberfläche weder allgemeine, offensichtlich noch eindeutig ist.  
   
--   Nicht zu viele gemeinsame Elemente wie Dokumente, Ordner, die Lupe dienenden Pfeile aus. Verwenden Sie solche Elemente angezeigt, wenn entscheidend dafür, dass das Symbol "Bedeutung. Beispielsweise herausstellt den nach rechts weisend Vergrößerungsglas nur Suche, durchsuchen und finden.  
+-   Nicht zu viele gemeinsame Elemente wie Dokumente, Ordner, die Lupe dienenden Pfeile aus. Verwenden Sie solche Elemente angezeigt, wenn entscheidend dafür, dass das Symbol "Bedeutung. Beispielsweise herausstellt Lupe nach rechts weisend nur Suche, durchsuchen und finden.  
   
 -   Zwar einige Symbol für veraltet-Elemente, die Verwendung der Perspektive verwalten, erstellen Sie nicht neuer Symbole mit Perspektive, sofern das Element Klarheit, ohne es fehlt.  
   
@@ -122,25 +107,25 @@ ms.lasthandoff: 05/04/2017
 #### <a name="layout"></a>Layout  
  Stack-Elemente, die für standard 16 x 16-Symbole angezeigt:  
   
- ![Layoutstack für 16 x 16-Symbole](../../extensibility/ux-guidelines/media/0404-15_layoutstack.png "0404-15_LayoutStack")<br />Layoutstack für 16x16-Symbole
+ ![Layoutstack für 16 x 16-Symbole](../../extensibility/ux-guidelines/media/0404-15_layoutstack.png "0404 15_LayoutStack")<br />Layoutstack für 16x16-Symbole
   
  Benachrichtigung Statuselemente sind besser als eigenständige Symbole verwendet. Kontexte sind vorhanden, jedoch in denen eine Benachrichtigung auf das Basiselement z. B. mit dem Task abgeschlossen Symbol gestapelt werden sollten:  
   
- ![Eigenständige Benachrichtigungen in Visual Studio](../../extensibility/ux-guidelines/media/0404-16_standalonenotificationicons.png "0404-16_StandaloneNotificationIcons")<br />Eigenständige Benachrichtigungssymbole
+ ![Eigenständige Benachrichtigungen in Visual Studio](../../extensibility/ux-guidelines/media/0404-16_standalonenotificationicons.png "0404 16_StandaloneNotificationIcons")<br />Eigenständige Benachrichtigungssymbole
   
- ![Symbol für abgeschlossene Aufgabe](../../extensibility/ux-guidelines/media/0404-17_taskcomplete.png "0404-17_TaskComplete")<br />Symbol für abgeschlossene Aufgabe
+ ![Symbol für abgeschlossene Aufgabe](../../extensibility/ux-guidelines/media/0404-17_taskcomplete.png "0404 17_TaskComplete")<br />Symbol für abgeschlossene Aufgabe
   
  Projektsymbole sind in der Regel ICO-Dateien, die mehrere Größen enthalten. Die meisten 16 x 16-Symbole werden dieselben Elemente enthalten. Die 32 x 32-Versionen sind weitere Details, einschließlich der Projekttyp, wenn zutreffend.  
   
- ![Projektsymbole in Visual Studio](../../extensibility/ux-guidelines/media/0404-18_iconprojectthreesizes.png "0404-18_IconProjectThreeSizes")<br />VB-Windows-Steuerelementbibliothek-Projekt Symbole, 16 x 16 und 32 x 32 
+ ![Symbole in Visual Studio Project](../../extensibility/ux-guidelines/media/0404-18_iconprojectthreesizes.png "0404 18_IconProjectThreeSizes")<br />VB-Windows-Steuerelementbibliothek-Projekt Symbole, 16 x 16 und 32 x 32 
   
  Zentrieren Sie ein Symbol in deren Rahmen Pixel. Wenn dies nicht möglich ist, richten Sie das Symbol am Anfang und/oder rechts des Frames.  
   
- ![Innerhalb des pixelframes zentriertes Symbol](../../extensibility/ux-guidelines/media/0404-19_iconcentered.png "0404-19_IconCentered")<br />Innerhalb des Pixelframes zentriertes Symbol
+ ![Innerhalb des pixelframes zentriertes Symbol](../../extensibility/ux-guidelines/media/0404-19_iconcentered.png "0404 19_IconCentered")<br />Innerhalb des Pixelframes zentriertes Symbol
   
- ![Symbol "ausgerichtet, die obere rechte Ecke des pixelframes](../../extensibility/ux-guidelines/media/0404-20_icontopright.png "0404-20_IconTopRight")<br />Symbol "oben ausgerichtet rechts des Frames
+ ![Symbol "ausgerichtet, die obere rechte Ecke des pixelframes](../../extensibility/ux-guidelines/media/0404-20_icontopright.png "0404 20_IconTopRight")<br />Symbol "oben ausgerichtet rechts des Frames
   
- ![Ausgerichtetes und zentriertes Symbol orientiert sich am pixelframe oben](../../extensibility/ux-guidelines/media/0404-21_icontopalign.png "0404-21_IconTopAlign")<br />Und zentriertes Symbol am oberen Rand der frame
+ ![Ausgerichtetes und zentriertes Symbol orientiert sich am pixelframe oben](../../extensibility/ux-guidelines/media/0404-21_icontopalign.png "0404 21_IconTopAlign")<br />Und zentriertes Symbol am oberen Rand der frame
   
  Um optimale Ausrichtung und Lastenausgleich zu erzielen, vermeiden Sie sitzt das Symbol Basiselement mit Aktion Symbole aus. Setzen Sie das Symbol im oberen Bereich des grundlegenden Elements nach links. Wenn Sie ein weiteres Element hinzufügen möchten, sollten Sie die Ausrichtung und den Saldo des Symbols.  
   
@@ -161,7 +146,7 @@ ms.lasthandoff: 05/04/2017
 |||  
 |-|-|  
 |**Richtig negativ-positivem-Verhältnis**|**Falsch Negative-positivem-Verhältnis**|  
-|![Beheben Sie optische Gewichtung für Symbole &#40; 1 &#41;](../../extensibility/ux-guidelines/media/0404-26_visualweightcorrect1.png "0404-26_VisualWeightCorrect1")<br /><br /> ![Beheben Sie optische Gewichtung für Symbole &#40; 2 &#41;](../../extensibility/ux-guidelines/media/0404-27_visualweightcorrect2.png "0404-27_VisualWeightCorrect2")<br /><br /> ![Beheben Sie optische Gewichtung für Symbole &#40; 3 &#41;](../../extensibility/ux-guidelines/media/0404-28_visualweightcorrect3.png "0404-28_VisualWeightCorrect3")|![Falsche optische Gewichtung für Symbole](../../extensibility/ux-guidelines/media/0404-29_visualweightincorrect.png "0404 29_VisualWeightIncorrect")|  
+|![Beheben Sie optische Gewichtung für Symbole &#40; 1 &#41; ] (../../extensibility/ux-guidelines/media/0404-26_visualweightcorrect1.png "0404 26_VisualWeightCorrect1")<br /><br /> ![Beheben Sie optische Gewichtung für Symbole &#40; 2 &#41; ] (../../extensibility/ux-guidelines/media/0404-27_visualweightcorrect2.png "0404 27_VisualWeightCorrect2")<br /><br /> ![Beheben Sie optische Gewichtung für Symbole &#40; 3 &#41; ] (../../extensibility/ux-guidelines/media/0404-28_visualweightcorrect3.png "0404 28_VisualWeightCorrect3")|![Falsche optische Gewichtung für Symbole](../../extensibility/ux-guidelines/media/0404-29_visualweightincorrect.png "0404 29_VisualWeightIncorrect")|  
   
  Verwenden Sie einfache, vergleichbare Formen und Komplementärfarbe Winkel, um Ihre Elemente erstellen möchten, ohne Einbußen bei der Element-Integrität. Verwenden Sie möglichst 45° oder 90-Grad-Winkel.  
   
@@ -170,9 +155,9 @@ ms.lasthandoff: 05/04/2017
 #### <a name="perspective"></a>Perspektive  
  Lassen Sie das Symbol löschen und verständlich. Verwenden Sie die Sicht und eine Lichtquelle nur bei Bedarf. Obwohl mit Perspektive auf Symbolelementen vermieden werden sollte, sind einige Elemente nicht erkennbar, ohne ihn. In solchen Fällen kommuniziert eine gestalteten Perspektive Klarheit des Elements.  
   
- ![3-Punkt-Perspektive](../../extensibility/ux-guidelines/media/0404-31_3pointperspective.png "0404-31_3PointPerspective")<br />3-Punkt-Perspektive
+ ![3-Punkt-Perspektive](../../extensibility/ux-guidelines/media/0404-31_3pointperspective.png "0404 31_3PointPerspective")<br />3-Punkt-Perspektive
   
- ![1-Punkt-Perspektive](../../extensibility/ux-guidelines/media/0404-32_1pointperspective.png "0404-32_1PointPerspective")<br />1-Punkt-Perspektive
+ ![1-Punkt-Perspektive](../../extensibility/ux-guidelines/media/0404-32_1pointperspective.png "0404 32_1PointPerspective")<br />1-Punkt-Perspektive
   
  Die meisten Elemente zugängliche werden sollte oder rechts angeschrägt:  
   
@@ -195,31 +180,31 @@ ms.lasthandoff: 05/04/2017
 #### <a name="icon-types"></a>Symbol "-Typen  
  **Shell- und Befehlsleiste** Symbolen bestehen aus nicht mehr als drei der folgenden Elemente: eine Basis, einen Modifizierer, die eine Aktion oder einen Status.  
   
- ![Beispiele für Shell- und befehlsleistensymbole](../../extensibility/ux-guidelines/media/0404-38_shellicons.png "0404-38_ShellIcons")<br />Beispiele für Shell- und befehlsleistensymbole
+ ![Beispiele für Shell- und befehlsleistensymbole](../../extensibility/ux-guidelines/media/0404-38_shellicons.png "0404 38_ShellIcons")<br />Beispiele für Shell- und befehlsleistensymbole
   
  **Symbolleiste für Fenster-Befehl** Symbolen bestehen aus nicht mehr als drei der folgenden Elemente: eine Basis, einen Modifizierer, die eine Aktion oder einen Status.  
   
- ![Beispiele für Tool Fenster/befehlsleistensymbole](../../extensibility/ux-guidelines/media/0404-39_toolwindowcommandbaricons.png "0404-39_ToolWindowCommandBarIcons")<br />Beispiele für Tool Fenster/befehlsleistensymbole
+ ![Beispiele für Toolfenster Befehlsleisten Symbole](../../extensibility/ux-guidelines/media/0404-39_toolwindowcommandbaricons.png "0404 39_ToolWindowCommandBarIcons")<br />Beispiele für Tool Fenster/befehlsleistensymbole
   
  **Struktur anzeigen Disambiguator** Symbolen bestehen aus nicht mehr als drei der folgenden Elemente: eine Basis, einen Modifizierer, die eine Aktion oder einen Status.  
   
- ![Beispiele für die Struktur anzeigen Disambiguator-Symbole](../../extensibility/ux-guidelines/media/0404-40_treeviewicons.png "0404-40_TreeViewIcons")<br />Beispiele für die Struktur anzeigen Disambiguator-Symbole
+ ![Beispiele für die Struktur anzeigen Disambiguator Symbole](../../extensibility/ux-guidelines/media/0404-40_treeviewicons.png "0404 40_TreeViewIcons")<br />Beispiele für die Struktur anzeigen Disambiguator-Symbole
   
  **Zustandsbasierte Wert Taxonomie** Symbole vorhanden, in der folgenden Zustände: aktiv, deaktiviert aktiv und inaktiv deaktiviert.  
   
- ![Beispiele für die Symbole für statusbasierte Taxonomie](../../extensibility/ux-guidelines/media/0404-41_statebasedtaxonomy.png "0404-41_StateBasedTaxonomy")<br />Beispiele für die Symbole für statusbasierte Taxonomie
+ ![Beispiele für die Symbole für statusbasierte Taxonomie](../../extensibility/ux-guidelines/media/0404-41_statebasedtaxonomy.png "0404 41_StateBasedTaxonomy")<br />Beispiele für die Symbole für statusbasierte Taxonomie
   
  **IntelliSense** Symbolen bestehen aus nicht mehr als drei der folgenden Elemente: eine Basis, einen Modifizierer und einen Status.  
   
- ![Beispiele für IntelliSense-Symbole](../../extensibility/ux-guidelines/media/0404-42_intellisenseicons.png "0404-42_IntelliSenseIcons")<br />Beispiele für IntelliSense-Symbole
+ ![Beispiele für IntelliSense-Symbole](../../extensibility/ux-guidelines/media/0404-42_intellisenseicons.png "0404 42_IntelliSenseIcons")<br />Beispiele für IntelliSense-Symbole
   
  **Kleine (16 x 16)-Projekt** Symbole sollte nicht mehr als zwei Elemente verfügen: eine einzige Basis und einen Modifizierer.  
   
- ![Beispiele für kleine (16 x 16)-Projekt Symbole](../../extensibility/ux-guidelines/media/0404-43_16x16project1.png "0404-43_16x16Project1") ![Projektsymbol, 16 x 16 &#40; 2 &#41;](../../extensibility/ux-guidelines/media/0404-44_16x16project2.png "0404-44_16x16Project2") ![Projektsymbol, 16 x 16 &#40; 3 &#41;](../../extensibility/ux-guidelines/media/0404-45_16x16project3.png "0404-45_16x16Project3")<br />Beispiele für kleine (16 x 16)-Projektsymbole
+ ![Beispiele für kleine (16 x 16)-Projekt Symbole](../../extensibility/ux-guidelines/media/0404-43_16x16project1.png "0404 43_16x16Project1") ![Projektsymbol, 16 x 16 &#40; 2 &#41;] (../../extensibility/ux-guidelines/media/0404-44_16x16project2.png "0404 44_16x16Project2") ![Projektsymbol, 16 x 16 &#40; 3 &#41;] (../../extensibility/ux-guidelines/media/0404-45_16x16project3.png "0404 45_16x16Project3")<br />Beispiele für kleine (16 x 16)-Projektsymbole
   
  **Groß (32 x 32) Projekt** Symbolen bestehen aus nicht mehr als vier der folgenden Elemente: eine Basis, ein bis zwei Modifizierer und eine Sprache, die Überlagerung.  
   
- ![Beispiele für große Projektsymbole (32 x 32)](../../extensibility/ux-guidelines/media/0404-46_32x32project.png "0404-46_32x32Project")<br />Beispiele für große Projektsymbole (32 x 32)
+ ![Beispiele für große (32 x 32)-Projekt Symbole](../../extensibility/ux-guidelines/media/0404-46_32x32project.png "0404 46_32x32Project")<br />Beispiele für große Projektsymbole (32 x 32)
   
 ### <a name="production-details"></a>Produktionsdetails  
  Alle neuen Elemente der Benutzeroberfläche mithilfe von Windows Presentation Foundation (WPF) erstellt werden sollen, und alle neuen Symbole für WPF muss im 32-Bit-PNG-Format. Das 24-Bit-PNG ist ein legacy-Format, die Transparenz nicht unterstützt und ist daher für die Symbole nicht empfohlen.  
@@ -255,7 +240,7 @@ ms.lasthandoff: 05/04/2017
   
 -   Verfügen Sie über mindestens einen 1 Pixel-Abstand zwischen Elementen für 16 x 16 und 24 x 24 Symbole. Verwenden Sie für 32 x 32-Symbole 2 Pixel Abstand zwischen Elementen sowie zwischen den Modifizierer und Basiselement.  
   
- ![Elementabstand für Symbole Größe 16 x 16, 24 x 24 und 32 x 32](../../extensibility/ux-guidelines/media/0404-47_elementspacing.png "0404-47_ElementSpacing")<br />Elementabstand für Symbole Größe 16 x 16, 24 x 24 und 32 x 32
+ ![Element Abstand für Symbole 16 x 16, 24 x 24 und 32 x 32 Größe](../../extensibility/ux-guidelines/media/0404-47_elementspacing.png "0404 47_ElementSpacing")<br />Elementabstand für Symbole Größe 16 x 16, 24 x 24 und 32 x 32
   
 #### <a name="color-and-accessibility"></a>Farbe und Barrierefreiheit  
  Visual Studio-Compliance-Richtlinien erfordern, dass alle Symbole in das Produkt die Anforderungen zur Barrierefreiheit für Farbe und Kontrast übergeben. Dies erfolgt über die Umkehrung Symbol, und beim Entwerfen, sollten Sie bedenken, dass sie programmgesteuert im Produkt umgekehrt werden.  
@@ -281,7 +266,7 @@ ms.lasthandoff: 05/04/2017
 #### <a name="color-inversion-for-dark-themes"></a>Farbumkehrung für dunkle Designs  
  Damit auch Symbole mit der richtigen Kontrast in der Visual Studio Design "dunkel" angezeigt werden, wird eine Umkehrung programmgesteuert angewendet. Die Farben in diesem Handbuch haben, damit sie ordnungsgemäß umkehren teilweise ausgewählt. Einschränken der Verwendung von Farben zu dieser Palette, oder Sie erhalten zu unvorhersehbaren Ergebnissen führt auf, wenn die Umkehrung angewendet wird.  
   
- ![Beispiele von Symbolen, die deren Farben umgekehrt wurden](../../extensibility/ux-guidelines/media/0405-01_darkthemeinversion.png "0405-01_DarkThemeInversion")<br />Beispiele von Symbolen, die deren Farben umgekehrt wurden
+ ![Beispiele von Symbolen, die deren Farben umgekehrt wurden](../../extensibility/ux-guidelines/media/0405-01_darkthemeinversion.png "0405 01_DarkThemeInversion")<br />Beispiele von Symbolen, die deren Farben umgekehrt wurden
   
 ### <a name="base-palette"></a>Basispalette  
  Alle standard-Symbole enthalten drei grundlegende Farben. Symbolen enthalten keine Farbverläufe oder Schlagschatten mit ein oder zwei Ausnahmen für 3D-Tool-Symbole.  
@@ -311,32 +296,32 @@ ms.lasthandoff: 05/04/2017
   
 |||||  
 |-|-|-|-|  
-|![Symbol "ausführen"](../../extensibility/ux-guidelines/media/0405-03_actionmodifierrun.png "0405-03_ActionModifierRun")<br />Run|![Symbol "Abfrage" ausführen](../../extensibility/ux-guidelines/media/0405-04_executequery.png "0405-04_ExecuteQuery")<br />Führen Sie Abfrage|![Symbol für alle Schritte wiedergeben](../../extensibility/ux-guidelines/media/0405-05_playallsteps.png "0405-05_PlayAllSteps")<br />Alle Schritte wiedergeben|![Steuerelementsymbol "hinzufügen"](../../extensibility/ux-guidelines/media/0405-06_addcontrol.png "0405-06_AddControl")<br />Steuerelement hinzufügen|  
+|![Symbol "ausführen"](../../extensibility/ux-guidelines/media/0405-03_actionmodifierrun.png "0405 03_ActionModifierRun")<br />Run|![Symbol "Abfrage" ausführen](../../extensibility/ux-guidelines/media/0405-04_executequery.png "0405 04_ExecuteQuery")<br />Führen Sie Abfrage|![Symbol für alle Schritte wiedergeben](../../extensibility/ux-guidelines/media/0405-05_playallsteps.png "0405 05_PlayAllSteps")<br />Alle Schritte wiedergeben|![Steuerelementsymbol "hinzufügen"](../../extensibility/ux-guidelines/media/0405-06_addcontrol.png "0405 06_AddControl")<br />Fügen Sie Steuerelement hinzu|  
   
  Rot wird für negative Aktionsmodifizierer wie ","Beenden"Delete" verwendet "Abbrechen" und "Schließen".  
   
 |||||  
 |-|-|-|-|  
-|![Symbol "Beziehung" löschen](../../extensibility/ux-guidelines/media/0405-07_deleterelationship.png "0405-07_DeleteRelationship")<br />Beziehung löschen|![Symbol "Spalte" löschen](../../extensibility/ux-guidelines/media/0405-08_deletecolumn.png "0405-08_DeleteColumn")<br />Spalte löschen|![Symbol "Abfrage" Beenden](../../extensibility/ux-guidelines/media/0405-09_stopquery.png "0405-09_StopQuery")<br />Abfrage beenden|![Symbol "Verbindung offline"](../../extensibility/ux-guidelines/media/0405-10_connectionoffline.png "0405-10_ConnectionOffline")<br />Verbindung Offline|  
+|![Symbol "Beziehung" Löschen](../../extensibility/ux-guidelines/media/0405-07_deleterelationship.png "0405 07_DeleteRelationship")<br />Beziehung löschen|![Symbol "Spalte" Löschen](../../extensibility/ux-guidelines/media/0405-08_deletecolumn.png "0405 08_DeleteColumn")<br />Spalte löschen|![Symbol "Abfrage" Stop](../../extensibility/ux-guidelines/media/0405-09_stopquery.png "0405 09_StopQuery")<br />Abfrage beenden|![Symbol "Verbindung offline"](../../extensibility/ux-guidelines/media/0405-10_connectionoffline.png "0405 10_ConnectionOffline")<br />Verbindung Offline|  
   
  Blau ist neutral Aktion angewendet, dargestellt als Pfeile, z. B. ","Weiter","Previous", öffnen Sie" am häufigsten Modifizierer "Importieren" und "Exportieren".  
   
 |||||  
 |-|-|-|-|  
-|![Gehe zu Feld (Symbol)](../../extensibility/ux-guidelines/media/0405-11_gotofield.png "0405-11_GoToField")<br />Gehe zu Feld|![In einem Batch verarbeitet Kontrollkästchen &#45; im Symbol "](../../extensibility/ux-guidelines/media/0405-12_batchedcheckin.png "0405-12_BatchedCheckIn")<br />Im Batch Einchecken|![Symbol "Adress-Editor"](../../extensibility/ux-guidelines/media/0405-13_addresseditor.png "0405-13_AddressEditor")<br />Adress-Editor|![Symbol "Zuordnung-Editor"](../../extensibility/ux-guidelines/media/0405-14_associationeditor.png "0405-14_AssociationEditor")<br />Zuordnungs-Editor|  
+|![Klicken Sie auf das Symbol "Feld"](../../extensibility/ux-guidelines/media/0405-11_gotofield.png "0405 11_GoToField")<br />Gehe zu Feld|![In einem Batch verarbeitet Kontrollkästchen &#45; im Symbol](../../extensibility/ux-guidelines/media/0405-12_batchedcheckin.png "0405 12_BatchedCheckIn")<br />Im Batch Einchecken|![Symbol "Adress-Editor"](../../extensibility/ux-guidelines/media/0405-13_addresseditor.png "0405 13_AddressEditor")<br />Adress-Editor|![Symbol "Zuordnung-Editor"](../../extensibility/ux-guidelines/media/0405-14_associationeditor.png "0405 14_AssociationEditor")<br />Zuordnungs-Editor|  
   
  Dunkel Gold dient in erster Linie für den Modifizierer "Neu".  
   
 |||||  
 |-|-|-|-|  
-|![Symbol "Neues Projekt"](../../extensibility/ux-guidelines/media/0405-15_newproject.png "0405-15_NewProject")<br />Neues Projekt|![Symbol "Neues Diagramm" erstellen](../../extensibility/ux-guidelines/media/0405-16_createnewgraph.png "0405-16_CreateNewGraph")<br />Erstellen eines neuen Diagramms|![Symbol "Neues Unit Test"](../../extensibility/ux-guidelines/media/0405-17_newunittest.png "0405-17_NewUnitTest")<br />Neuen Komponententests|![Symbol "Neues Element"](../../extensibility/ux-guidelines/media/0405-18_newlistitem.png "0405-18_NewListItem")<br />Neues Listenelement|  
+|![Symbol "Neues Projekt"](../../extensibility/ux-guidelines/media/0405-15_newproject.png "0405 15_NewProject")<br />Neues Projekt|![Symbol "Neues Diagramm" erstellen](../../extensibility/ux-guidelines/media/0405-16_createnewgraph.png "0405 16_CreateNewGraph")<br />Erstellen eines neuen Diagramms|![Symbol "Neues Unit Test"](../../extensibility/ux-guidelines/media/0405-17_newunittest.png "0405 17_NewUnitTest")<br />Neuen Komponententests|![Symbol "Neues Element"](../../extensibility/ux-guidelines/media/0405-18_newlistitem.png "0405 18_NewListItem")<br />Neues Listenelement|  
   
 #### <a name="special-cases"></a>Sonderfälle  
  In besonderen Fällen möglicherweise ein farbigen Aktion Modifizierer unabhängig als eigenständige Symbol verwendet werden. Die Farbe für das Symbol "gibt die Aktionen, denen das Symbol zugeordnet ist. Diese Verwendung ist beschränkt auf eine kleine Teilmenge von Symbolen, einschließlich:  
   
 ||||||  
 |-|-|-|-|-|  
-|![Symbol "ausführen"](../../extensibility/ux-guidelines/media/0405-03_actionmodifierrun.png "0405-03_ActionModifierRun")<br />Run|![Symbol "Beenden"](../../extensibility/ux-guidelines/media/0405-19_stop.png "0405-19_Stop")<br />Stop|![Symbol "löschen"](../../extensibility/ux-guidelines/media/0405-20_delete.png "0405-20_Delete")<br />Löschen|![Symbol "Speichern"](../../extensibility/ux-guidelines/media/0405-21_save.png "0405-21_Save")<br />Save|![Symbol "zurück" navigieren](../../extensibility/ux-guidelines/media/0405-22_navigateback.png "0405-22_NavigateBack")<br />Rückwärts navigieren|  
+|![Symbol "ausführen"](../../extensibility/ux-guidelines/media/0405-03_actionmodifierrun.png "0405 03_ActionModifierRun")<br />Run|![Symbol "Beenden"](../../extensibility/ux-guidelines/media/0405-19_stop.png "0405 19_Stop")<br />Stop|![Symbol "löschen"](../../extensibility/ux-guidelines/media/0405-20_delete.png "0405 20_Delete")<br />Löschen|![Symbol "Speichern"](../../extensibility/ux-guidelines/media/0405-21_save.png "0405 21_Save")<br />Speichern|![Symbol "zurück" navigieren](../../extensibility/ux-guidelines/media/0405-22_navigateback.png "0405 22_NavigateBack")<br />Rückwärts navigieren|  
   
 ### <a name="code-hierarchy-palette"></a>Code-Hierarchie-palette  
   
@@ -365,8 +350,8 @@ ms.lasthandoff: 05/04/2017
   
 |||||||  
 |-|-|-|-|-|-|  
-|![Visual Basic-Symbol](../../extensibility/ux-guidelines/media/0405-25_vb.png "0405-25_VB")<br />VB|![C &#35; Symbol "](../../extensibility/ux-guidelines/media/0405-26_csharp.png "0405-26_CSharp")<br />C#|![C# 43; &#43; Symbol "](../../extensibility/ux-guidelines/media/0405-27_cplusplus.png "0405-27_CPlusPlus")<br />C++|![F &#35; Symbol "](../../extensibility/ux-guidelines/media/0405-28_fsharp.png "0405-28_FSharp")<br />F#|![Symbol "JavaScript"](../../extensibility/ux-guidelines/media/0405-29_javascript.png "0405-29_JavaScript")<br />JavaScript|![Python-Symbol](../../extensibility/ux-guidelines/media/0405-30_python.png "0405-30_Python")<br />Python|  
-|![Symbol "HTML"](../../extensibility/ux-guidelines/media/0405-31_html.png "0405-31_HTML")<br />HTML|![Symbol für WPF](../../extensibility/ux-guidelines/media/0405-32_wpf.png "0405-32_WPF")<br />WPF|![ASP-Symbol](../../extensibility/ux-guidelines/media/0405-33_asp.png "0405-33_ASP")<br />ASP|![CSS-Symbol](../../extensibility/ux-guidelines/media/0405-34_css.png "0405-34_CSS")<br />CSS|![TypeScript-Symbol](../../extensibility/ux-guidelines/media/0405-35_typescript.png "0405-35_TypeScript")<br />TypeScript||  
+|![Visual Basic-Symbol](../../extensibility/ux-guidelines/media/0405-25_vb.png "0405 25_VB")<br />VB|![C &#35; Symbol "](../../extensibility/ux-guidelines/media/0405-26_csharp.png "0405 26_CSharp")<br />C#|![C# 43; &#43; Symbol "](../../extensibility/ux-guidelines/media/0405-27_cplusplus.png "0405 27_CPlusPlus")<br />C++|![F &#35; Symbol "](../../extensibility/ux-guidelines/media/0405-28_fsharp.png "0405 28_FSharp")<br />F#|![Symbol "JavaScript"](../../extensibility/ux-guidelines/media/0405-29_javascript.png "0405 29_JavaScript")<br />JavaScript|![Python-Symbol](../../extensibility/ux-guidelines/media/0405-30_python.png "0405 30_Python")<br />Python|  
+|![Symbol "HTML"](../../extensibility/ux-guidelines/media/0405-31_html.png "0405 31_HTML")<br />HTML|![Symbol "WPF"](../../extensibility/ux-guidelines/media/0405-32_wpf.png "0405 32_WPF")<br />WPF|![Symbol "ASP"](../../extensibility/ux-guidelines/media/0405-33_asp.png "0405 33_ASP")<br />ASP|![Symbol "CSS"](../../extensibility/ux-guidelines/media/0405-34_css.png "0405 34_CSS")<br />CSS|![TypeScript-Symbol](../../extensibility/ux-guidelines/media/0405-35_typescript.png "0405 35_TypeScript")<br />TypeScript||  
   
 #### <a name="intellisense"></a>IntelliSense  
  IntelliSense-Symbole verwenden, eine exklusive Farbpalette. Diese Farben werden verwendet, damit Benutzer schnell zwischen den verschiedenen Elementen in der Liste der IntelliSense-Popup zu unterscheiden.  
@@ -383,8 +368,8 @@ ms.lasthandoff: 05/04/2017
   
 ||||||  
 |-|-|-|-|-|  
-|![Symbol für IntelliSense-Klasse](../../extensibility/ux-guidelines/media/0405-36_intellisenseclass.png "0405-36_IntelliSenseClass")<br />Klasse|![Symbol für IntelliSense-privates Ereignis](../../extensibility/ux-guidelines/media/0405-37_intellisenseprivateevent.png "0405-37_IntelliSensePrivateEvent")<br />Privates Ereignis|![Symbol für IntelliSense-Delegat](../../extensibility/ux-guidelines/media/0405-38_intellisensedelegate.png "0405-38_IntelliSenseDelegate")<br />delegate|![Symbol "Friend" der IntelliSense-Methode](../../extensibility/ux-guidelines/media/0405-39_intellisensemethodfriend.png "0405-39_IntelliSenseMethodFriend")<br />Methode "Friend"|![Symbol "Feld"](../../extensibility/ux-guidelines/media/0405-40_field.png "0405-40_Field")<br />Feld|  
-|![Symbol für IntelliSense geschützten Enum-Element](../../extensibility/ux-guidelines/media/0405-41_intellisenseprotectedenumitem.png "0405-41_IntelliSenseProtectedEnumItem")<br />Geschützte Enum-Element|![Symbol für IntelliSense-Objekt](../../extensibility/ux-guidelines/media/0405-42_intellisenseobject.png "0405-42_IntelliSenseObject")<br />Objekt|![Symbol für IntelliSense-Vorlage](../../extensibility/ux-guidelines/media/0405-43_intellisensetemplate.png "0405-43_IntelliSenseTemplate")<br />Vorlage|![Symbol "Verknüpfung" der IntelliSense-Ausnahme](../../extensibility/ux-guidelines/media/0405-44_intellisenseexceptionshortcut.png "0405-44_IntelliSenseExceptionShortcut")<br />Ausnahme-Verknüpfung||  
+|![Symbol "Klasse" IntelliSense](../../extensibility/ux-guidelines/media/0405-36_intellisenseclass.png "0405 36_IntelliSenseClass")<br />Klasse|![Symbol für IntelliSense-privates Ereignis](../../extensibility/ux-guidelines/media/0405-37_intellisenseprivateevent.png "0405 37_IntelliSensePrivateEvent")<br />Privates Ereignis|![Symbol für IntelliSense-Delegat](../../extensibility/ux-guidelines/media/0405-38_intellisensedelegate.png "0405 38_IntelliSenseDelegate")<br />Delegate|![Symbol "Friend" der IntelliSense-Methode](../../extensibility/ux-guidelines/media/0405-39_intellisensemethodfriend.png "0405 39_IntelliSenseMethodFriend")<br />Methode "Friend"|![Symbol "Feld"](../../extensibility/ux-guidelines/media/0405-40_field.png "0405 40_Field")<br />Feld|  
+|![IntelliSense geschützt Symbol "Enumeration"](../../extensibility/ux-guidelines/media/0405-41_intellisenseprotectedenumitem.png "0405 41_IntelliSenseProtectedEnumItem")<br />Geschützte Enum-Element|![Symbol für IntelliSense-Objekt](../../extensibility/ux-guidelines/media/0405-42_intellisenseobject.png "0405 42_IntelliSenseObject")<br />Objekt|![Symbol für IntelliSense-Vorlage](../../extensibility/ux-guidelines/media/0405-43_intellisensetemplate.png "0405 43_IntelliSenseTemplate")<br />Vorlage|![Symbol "Verknüpfung" der IntelliSense-Ausnahme](../../extensibility/ux-guidelines/media/0405-44_intellisenseexceptionshortcut.png "0405 44_IntelliSenseExceptionShortcut")<br />Ausnahme-Verknüpfung||  
   
 ### <a name="notifications"></a>Benachrichtigungen  
  Benachrichtigungen in Visual Studio werden verwendet, um Status anzugeben. Die Benachrichtigung Palette verwendet die folgenden vier Farben sowie Schwarz oder weiß Vordergrund AutoAusfüllen-Optionen, um Benachrichtigungen mit den folgenden Statusebenen definieren.  
@@ -402,7 +387,7 @@ ms.lasthandoff: 05/04/2017
   
 |||||  
 |-|-|-|-|  
-|![Warnsymbol](../../extensibility/ux-guidelines/media/0405-45_alert.png "0405-45_Alert")<br />Warnung|![Symbol "tabellenwarnung"](../../extensibility/ux-guidelines/media/0405-48_warning.png "0405-48_Warning")<br />Warnung|![Symbol "abgeschlossen"](../../extensibility/ux-guidelines/media/0405-46_complete.png "0405-46_Complete")<br />Abgeschlossen|![Symbol "Beenden"](../../extensibility/ux-guidelines/media/0405-47_stop.png "0405-47_Stop")<br />Stop|  
+|![Symbol "Warnung"](../../extensibility/ux-guidelines/media/0405-45_alert.png "0405 45_Alert")<br />Warnung|![Symbol "tabellenwarnung"](../../extensibility/ux-guidelines/media/0405-48_warning.png "0405 48_Warning")<br />Warnung|![Symbol für abgeschlossene](../../extensibility/ux-guidelines/media/0405-46_complete.png "0405 46_Complete")<br />Abgeschlossen|![Symbol "Beenden"](../../extensibility/ux-guidelines/media/0405-47_stop.png "0405 47_Stop")<br />Stop|  
   
 ### <a name="visual-studio-online"></a>Visual Studio Online  
  Im Allgemeinen besteht aus Visual Studio Online-Funktionen in einem Browser gehostet. Die Farbe in verschiedenen Umgebungen variiert, der Stil bleibt jedoch gleich.  
@@ -432,16 +417,16 @@ ms.lasthandoff: 05/04/2017
   
 |TFS Online||||  
 |----------------|-|-|-|  
-|![Symbol für TFS Online-team](../../extensibility/ux-guidelines/media/0405-49_tfsonlineteam.png "0405-49_TFSOnlineTeam")<br />Online-Team|![Symbol für TFS-Informationen](../../extensibility/ux-guidelines/media/0405-50_tfsinformation.png "0405-50_TFSInformation")<br />Information|![Symbol für TFS-Verlauf](../../extensibility/ux-guidelines/media/0405-51_tfshistory.png "0405-51_TFSHistory")<br />Versionsgeschichte|![Symbol für TFS-Verzweigung](../../extensibility/ux-guidelines/media/0405-52_tfsbranch.png "0405-52_TFSBranch")<br />Verzweigung|  
+|![Symbol für TFS Online-Team](../../extensibility/ux-guidelines/media/0405-49_tfsonlineteam.png "0405 49_TFSOnlineTeam")<br />Online-Team|![Symbol für TFS-Informationen](../../extensibility/ux-guidelines/media/0405-50_tfsinformation.png "0405 50_TFSInformation")<br />Information|![Symbol für TFS-Verlauf](../../extensibility/ux-guidelines/media/0405-51_tfshistory.png "0405 51_TFSHistory")<br />Versionsgeschichte|![Symbol für TFS-Verzweigung](../../extensibility/ux-guidelines/media/0405-52_tfsbranch.png "0405 52_TFSBranch")<br />Verzweigung|  
   
 |Napa||||  
 |----------|-|-|-|  
-|![Symbol für Napa-Inhalt](../../extensibility/ux-guidelines/media/0405-53_napacontent.png "0405-53_NapaContent")<br />Inhalt|![Napa Office-Symbol "e-Mail"](../../extensibility/ux-guidelines/media/0405-54_napaofficemail.png "0405-54_NapaOfficeMail")<br />Office-Mail|![Symbol für Napa SharePoint](../../extensibility/ux-guidelines/media/0405-55_napasharepoint.png "0405-55_NapaSharePoint")<br />SharePoint|![Symbol für Napa-Aufgabenbereich](../../extensibility/ux-guidelines/media/0405-56_napataskpane.png "0405-56_NapaTaskPane")<br />Aufgabenbereich|  
+|![Symbol für Napa-Inhalt](../../extensibility/ux-guidelines/media/0405-53_napacontent.png "0405 53_NapaContent")<br />Inhalt|![Symbol für Napa Office Mail](../../extensibility/ux-guidelines/media/0405-54_napaofficemail.png "0405 54_NapaOfficeMail")<br />Office-Mail|![Symbol für Napa SharePoint](../../extensibility/ux-guidelines/media/0405-55_napasharepoint.png "0405 55_NapaSharePoint")<br />SharePoint|![Symbol für Napa-Aufgabenbereich](../../extensibility/ux-guidelines/media/0405-56_napataskpane.png "0405 56_NapaTaskPane")<br />Aufgabenbereich|  
   
 |Monaco||||  
 |------------|-|-|-|  
-|![Symbol für Monaco-Dateien](../../extensibility/ux-guidelines/media/0405-57_monacofiles.png "0405-57_MonacoFiles")<br />Dateien|![Symbol für Monaco Git](../../extensibility/ux-guidelines/media/0405-58_monacogit.png "0405-58_MonacoGit")<br />Git|![Symbol für Monaco-suchen](../../extensibility/ux-guidelines/media/0405-59_monacosearch.png "0405-59_MonacoSearch")<br />Suche|![Symbol für Monaco-text](../../extensibility/ux-guidelines/media/0405-60_monacotext.png "0405-60_MonacoText")<br />Text|  
+|![Symbol für Monaco-Dateien](../../extensibility/ux-guidelines/media/0405-57_monacofiles.png "0405 57_MonacoFiles")<br />Dateien|![Symbol für Monaco Git](../../extensibility/ux-guidelines/media/0405-58_monacogit.png "0405 58_MonacoGit")<br />Git|![Symbol "Suche" Monaco](../../extensibility/ux-guidelines/media/0405-59_monacosearch.png "0405 59_MonacoSearch")<br />Suchen|![Symbol für Monaco-Text](../../extensibility/ux-guidelines/media/0405-60_monacotext.png "0405 60_MonacoText")<br />Text|  
   
 |F12|||  
 |---------|-|-|  
-|![Symbol für F12-pretty-code](../../extensibility/ux-guidelines/media/0405-61_f12prettycode.png "0405-61_F12PrettyCode")<br />Pretty-Code|![Symbol für F12-Warnung](../../extensibility/ux-guidelines/media/0405-62_f12warning.png "0405-62_F12Warning")<br />Warnung|![Symbol für F12-Emulation](../../extensibility/ux-guidelines/media/0405-63_f12emulate.png "0405-63_F12Emulate")<br />Emulieren|
+|![Symbol "F12-pretty-Code"](../../extensibility/ux-guidelines/media/0405-61_f12prettycode.png "0405 61_F12PrettyCode")<br />Pretty-Code|![Symbol für F12-Warnung](../../extensibility/ux-guidelines/media/0405-62_f12warning.png "0405 62_F12Warning")<br />Warnung|![Symbol für F12-Emulation](../../extensibility/ux-guidelines/media/0405-63_f12emulate.png "0405 63_F12Emulate")<br />Emulieren|

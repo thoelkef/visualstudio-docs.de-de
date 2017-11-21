@@ -1,69 +1,69 @@
 ---
-title: "IDebugFunctionObject::CreateObject | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugFunctionObject::CreateObject"
-helpviewer_keywords: 
-  - "IDebugFunctionObject::CreateObject-Methode"
+title: IDebugFunctionObject::CreateObject | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugFunctionObject::CreateObject
+helpviewer_keywords: IDebugFunctionObject::CreateObject method
 ms.assetid: c4c99dd5-609a-4e7c-8f29-eb728f57e995
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 9ba06089624a585688f481719b2ce51397653cd1
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugFunctionObject::CreateObject
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Erstellt ein Objekt unter Verwendung eines Konstruktors.  
+# <a name="idebugfunctionobjectcreateobject"></a>IDebugFunctionObject::CreateObject
+Erstellt ein Objekt mit einem Konstruktor.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT CreateObject(   
-   IDebugFunctionObject* pConstructor,  
-   DWORD                 dwArgs,  
-   IDebugObject*         pArgs[],  
-   IDebugObject**        ppObject  
+```cpp  
+HRESULT CreateObject(   
+   IDebugFunctionObject* pConstructor,  
+   DWORD                 dwArgs,  
+   IDebugObject*         pArgs[],  
+   IDebugObject**        ppObject  
 );  
 ```  
   
-```c#  
+```csharp  
 int CreateObject(  
-   IDebugFunctionObject pConstructor,   
-   uint                 dwArgs,   
-   IDebugObject[]       pArgs,   
-   out IDebugObject     ppObject  
+   IDebugFunctionObject pConstructor,   
+   uint                 dwArgs,   
+   IDebugObject[]       pArgs,   
+   out IDebugObject     ppObject  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `pConstructor`  
- \[in\]  Ein [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)\-Objekt, das den Konstruktor des zu erstellenden Objekts darstellt.  
+ [in] Ein [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) Objekt, das den Konstruktor des zu erstellenden Objekts darstellt.  
   
  `dwArgs`  
- \[in\]  Die Anzahl von Parametern im`pArg` Array.  Stellt die Anzahl von Parametern dar, die an den Konstruktor übergeben werden.  
+ [in] Die Anzahl von Parametern in der `pArg` Array. Gibt die Anzahl von Parametern, die an den Konstruktor übergeben.  
   
  `pArg`  
- \[in\]  Ein Array [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)\-Objekten, die die Parameter darstellen, die an den Konstruktor übergeben.  
+ [in] Ein Array von [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) Objekte an den Konstruktor übergeben, das die Parameter darstellt.  
   
  `ppObject`  
- \[out\]  Gibt `IDebugObject` zurück, das das neu erstellte Objekt darstellt.  
+ [out] Gibt ein `IDebugObject` , das das neu erstellte Objekt darstellt.  
   
-## Rückgabewert  
- Bei Erfolg gibt S\_OK zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt S_OK zurück. Andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Hinweise  
- Rufen Sie diese Methode auf, um ein Objekt zu erstellen, das eine Instanz einer Klasse darstellt \(oder anderen komplexen Typs, der einen Konstruktor erfordert, dass ein Parameter der Funktion ist, die von der [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)\-Schnittstelle dargestellt wird.  
+## <a name="remarks"></a>Hinweise  
+ Rufen Sie diese Methode, um ein Objekt zu erstellen, die eine Instanz einer Klasse (oder andere komplexer Typ, der einen Konstruktor erfordert) darstellt, einen Parameter an die Funktion der dargestellt wird, indem Sie die [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) Schnittstelle.  
   
- Wenn der Objektparameter keinen Konstruktor erfordert, rufen Sie die [CreateObjectNoConstructor](../../../extensibility/debugger/reference/idebugfunctionobject-createobjectnoconstructor.md)\-Methode auf.  
+ Wenn der Objektparameter nicht über einen Konstruktor erfordert, rufen Sie die [CreateObjectNoConstructor](../../../extensibility/debugger/reference/idebugfunctionobject-createobjectnoconstructor.md) Methode.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)   
  [CreateObjectNoConstructor](../../../extensibility/debugger/reference/idebugfunctionobject-createobjectnoconstructor.md)

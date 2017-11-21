@@ -1,52 +1,52 @@
 ---
-title: "IDebugBinder3::GetTypeArgumentCount | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugBinder3::GetTypeArgumentCount"
-helpviewer_keywords: 
-  - "IDebugBinder3::GetTypeArgumentCount-Methode"
+title: IDebugBinder3::GetTypeArgumentCount | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugBinder3::GetTypeArgumentCount
+helpviewer_keywords: IDebugBinder3::GetTypeArgumentCount method
 ms.assetid: caf68de6-6f7c-4efd-b803-121347a5032e
-caps.latest.revision: 7
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: b6db87ba6ebb2dbe9e6bcd70ffc691e3c3857c1a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugBinder3::GetTypeArgumentCount
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Diese Methode gibt die Anzahl der Argumenttypen zurück, die diesem Objekt zugeordnet sind.  
+# <a name="idebugbinder3gettypeargumentcount"></a>IDebugBinder3::GetTypeArgumentCount
+Diese Methode gibt die Anzahl von Argumenttypen, die diesem Objekt zugeordnet.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```cpp  
-HRESULT GetTypeArgumentCount(  
-   UINT* uCount  
+HRESULT GetTypeArgumentCount(  
+   UINT* uCount  
 );  
 ```  
   
-```c#  
-int GetTypeArgumentCount(  
-   out uint uCount  
+```csharp  
+int GetTypeArgumentCount(  
+   out uint uCount  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `uCount`  
- \[out\]  Anzahl von Argumenttypen, die mit diesem Objekt.  
+ [out] Die Anzahl von Argumenttypen, die diesem Objekt zugeordnet.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Hinweise  
- Der Wert, der von dieser Methode zurückgegeben wird, kann verwendet werden, um ein Array zur Verwendung mit der [GetTypeArguments](../../../extensibility/debugger/reference/idebugbinder3-gettypearguments.md)\-Methode zuzuordnen.  
+## <a name="remarks"></a>Hinweise  
+ Von dieser Methode zurückgegebene Wert kann verwendet werden, reservieren Sie ein Array zur Verwendung mit der [GetTypeArguments](../../../extensibility/debugger/reference/idebugbinder3-gettypearguments.md) Methode.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)   
  [GetTypeArguments](../../../extensibility/debugger/reference/idebugbinder3-gettypearguments.md)

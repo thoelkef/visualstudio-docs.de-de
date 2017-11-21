@@ -1,51 +1,53 @@
 ---
-title: "&#220;bersicht &#252;ber Information Rights Management und Erweiterungen durch verwalteten Code"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "Dokumente [Office-Entwicklung in Visual Studio], Eingeschränkte Berechtigungen"
-  - "Information Rights Management [Office-Entwicklung in Visual Studio]"
-  - "IRM [Office-Entwicklung in Visual Studio]"
-  - "Office-Dokumente [Office-Entwicklung in Visual Studio], Eingeschränkte Berechtigungen"
-  - "Rechteverwaltung [Office-Entwicklung in Visual Studio]"
-  - "Arbeitsmappen [Office-Entwicklung in Visual Studio], Eingeschränkte Berechtigungen"
+title: "Information Rights Management und Erweiterungen – Übersicht für verwalteten Code | Microsoft Docs"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- Information Rights Management [Office development in Visual Studio]
+- workbooks [Office development in Visual Studio], restricted permissions
+- IRM [Office development in Visual Studio]
+- documents [Office development in Visual Studio], restricted permissions
+- rights management [Office development in Visual Studio]
+- Office documents [Office development in Visual Studio, restricted permissions
 ms.assetid: 9728f5fe-9122-48e7-b0a3-9f5e0a16164f
-caps.latest.revision: 21
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 20
+caps.latest.revision: "21"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: ff6c79d6bed7ec1b5a459f64c0e57c8c35ab4e1e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# &#220;bersicht &#252;ber Information Rights Management und Erweiterungen durch verwalteten Code
-  Microsoft Office Word und Microsoft Office Excel bieten ein neues Feature: Information Rights Management \(IRM\). Damit können Sie verhindern, dass Unbefugte vertrauliche Informationen anzeigen oder ändern.  Informationen zur Funktionsweise von Information Rights Management finden Sie in der Hilfe der jeweiligen Anwendung.  
+# <a name="information-rights-management-and-managed-code-extensions-overview"></a>Übersicht über Information Rights Management und Erweiterungen durch verwalteten Code
+  Microsoft Office Word und Microsoft Office Excel bieten Information Rights Management (IRM), ein Feature, mit denen Sie verhindern, dass nicht autorisierte Benutzer nicht anzeigen oder ändern vertraulichen Informationen kann. Weitere Informationen zur Funktionsweise von Information Rights Management finden Sie Hilfe in der jeweiligen Anwendung.  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
-## Ausführen von Code im Hintergrund von Dokumenten mit eingeschränkten Berechtigungen  
- Wenn Ihre Projektmappe ein Dokument oder eine Arbeitsmappe enthält, das bzw. die IRM verwendet, ermöglichen Word und Excel keine Ausführung von Code.  Wenn Sie der Autor des Dokuments sind oder über Vollzugriff verfügen, können Sie die Standardeinstellung so ändern, dass die Projektmappe funktioniert.  Weitere Informationen finden Sie unter [Gewusst wie: Zulassen der Ausführung von Code im Hintergrund von Dokumenten mit eingeschränkten Berechtigungen](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md).  
+## <a name="running-code-behind-documents-with-restricted-permissions"></a>Ausführen von Code Hintergrund von Dokumenten mit eingeschränkten Berechtigungen  
+ Wenn die Projektmappe enthält ein Dokument oder eine Arbeitsmappe, die IRM standardmäßig verwendet, erlauben Word und Excel keine Ausführung von Code. Wenn Sie dem Autor des Dokuments sind oder über Vollzugriff verfügen, können Sie die Standardeinstellung ändern, sodass die Projektmappe funktioniert. Weitere Informationen finden Sie unter [Vorgehensweise: Zulassen von Code im Hintergrund von Dokumenten mit eingeschränkten Berechtigungen](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md).  
   
- IRM verhindert, dass im Dokument zwischengespeicherte Daten mithilfe von <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.ServerDocument> abgerufen oder bearbeitet werden.  
+ Verhindert die Verwendung von IRM <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.ServerDocument> abrufen oder bearbeiten die im Dokument zwischengespeicherten Daten.  
   
-## Einschränken von Berechtigungen für Dokumente mit Erweiterungen durch verwalteten Code durch Endbenutzer  
- Jeder Benutzer mit Vollzugriff auf das Dokument oder die Arbeitsmappe in der Projektmappe kann mithilfe von IRM Berechtigungen einschränken.  Wenn beispielsweise ein Endbenutzer aus der Buchhaltung eine Lösung verwendet, mit der ein Arbeitsblatt automatisch mit Daten aus einer Datenbank gefüllt wird, wird dieser Benutzer u. U. den Schreibzugriff auf Mitarbeiter seiner Abteilung beschränken und den anderen nur Lesezugriff gewähren möchten.  Wenn der Benutzer die eingeschränkten Berechtigungen hinzufügt, kann in der Standardeinstellung der Code im Hintergrund des Arbeitsblattes nicht ausgeführt werden, weshalb es nicht mit Daten gefüllt werden kann.  
+## <a name="end-users-restricting-permissions-to-documents-that-use-managed-code-extensions"></a>Endbenutzer können Einschränken von Berechtigungen für Dokumente, die Erweiterungen durch verwalteten Code verwenden.  
+ Jeder Benutzer mit Vollzugriff auf das Dokument oder die Arbeitsmappe in der Projektmappe kann IRM verwenden, um Berechtigungen einzuschränken. Z. B. wenn ein Endbenutzer in der Buchhaltung eine Lösung, die ein Arbeitsblatt mit Daten aus einer Datenbank automatisch aufgefüllt verwendet, sollten dieser Benutzer Zugriff nur an Personen in sein eigenes Abteilung ändern und anderen Lesezugriff zulassen. Wenn der Benutzer die eingeschränkten Berechtigungen hinzufügt, wird standardmäßig der Code-behind das Arbeitsblatt kann nicht ausgeführt, und wird nicht im Arbeitsblatt mit Daten aufgefüllt.  
   
- Zur Behebung des Problems muss eine Person mit Vollzugriff auf das Dokument oder die Arbeitsmappe die standardmäßigen Berechtigungseinstellungen so ändern, dass der Programmzugriff auf das Objektmodell zulässig ist.  Weitere Informationen finden Sie unter [Gewusst wie: Zulassen der Ausführung von Code im Hintergrund von Dokumenten mit eingeschränkten Berechtigungen](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md).  
+ Um das Problem zu beheben, muss ein Benutzer mit Vollzugriff auf das Dokument oder die Arbeitsmappe auf die Standardeinstellungen für die Berechtigung für den programmgesteuerten Zugriff auf das Objektmodell ändern. Weitere Informationen finden Sie unter [Vorgehensweise: Zulassen von Code im Hintergrund von Dokumenten mit eingeschränkten Berechtigungen](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md).  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Dokumentschutz in Projektmappen auf Dokumentebene](../vsto/document-protection-in-document-level-solutions.md)   
  [Kennwortschutz für Office-Dokumente](../vsto/password-protection-on-office-documents.md)   
  [Sichern von Office-Projektmappen](../vsto/securing-office-solutions.md)   
- [Bereitstellen einer Office-Projektmappe](../vsto/deploying-an-office-solution.md)   
- [Entwerfen und Erstellen von Office-Lösungen](../vsto/designing-and-creating-office-solutions.md)  
+ [Bereitstellen einer Office-Lösung](../vsto/deploying-an-office-solution.md)   
+ [Entwerfen und Erstellen von Office-Projektmappen](../vsto/designing-and-creating-office-solutions.md)  
   
   

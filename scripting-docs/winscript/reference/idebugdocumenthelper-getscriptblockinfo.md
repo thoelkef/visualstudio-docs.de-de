@@ -1,27 +1,30 @@
 ---
-title: "IDebugDocumentHelper::GetScriptBlockInfo | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IDebugDocumentHelper::GetScriptBlockInfo | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IDebugDocumentHelper.GetScriptBlockInfo
 apilocation: pdm.dll
-helpviewer_keywords: 
-  - "IDebugDocumentHelper::GetScriptBlockInfo"
+helpviewer_keywords: IDebugDocumentHelper::GetScriptBlockInfo
 ms.assetid: 332d7540-bbbe-4747-95ec-e47384d4f4e6
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: d7e8dc63b8419424ed3fa01f67d3e77f0bc2b57f
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# IDebugDocumentHelper::GetScriptBlockInfo
-Ruft den Bereich von Zeichen und von Skriptmodul entsprechend einem Skriptblock ab.  
+# <a name="idebugdocumenthelpergetscriptblockinfo"></a>IDebugDocumentHelper::GetScriptBlockInfo
+Ruft den Bereich von Zeichen und dem Skriptmodul entspricht ein Skriptblock ab.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 HRESULT GetScriptBlockInfo(  
@@ -32,28 +35,28 @@ HRESULT GetScriptBlockInfo(
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `dwSourceContext`  
- \[in\] Der Quellkontext für den Skriptblock.  
+ [in] Der Quellkontext für den Skriptblock.  
   
  `ppasd`  
- \[out\] Das Skriptmodul für diesen Skriptblock.  
+ [out] Das Skriptmodul für dieses Skriptblocks.  
   
  `piCharPos`  
- \[out\] Speicherort Start des Skriptblocks.  
+ [out] Speicherort der Beginn des Skriptblocks.  
   
  `cChars`  
- \[out\] Anzahl von Zeichen im Skriptblock.  
+ [out] Anzahl der Zeichen im Skriptblock.  
   
-## Rückgabewert  
- Die Methode gibt ein `HRESULT` zurück.  Zu den möglichen Werten zählen, aber nicht zu, die in der folgenden Tabelle beschränkt.  
+## <a name="return-value"></a>Rückgabewert  
+ Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
   
-|Wert|Description|  
-|----------|-----------------|  
+|Wert|Beschreibung|  
+|-----------|-----------------|  
 |`S_OK`|Die Methode war erfolgreich.|  
   
-## Hinweise  
- Diese Methode ruft den Zeichenbereich und von Skriptmodul entsprechend einem Skriptblock ab.  
+## <a name="remarks"></a>Hinweise  
+ Diese Methode ruft den Bereich von Zeichen und dem Skriptmodul entspricht ein Skriptblock ab.  
   
-## Siehe auch  
- [IDebugDocumentHelper\-Schnittstelle](../../winscript/reference/idebugdocumenthelper-interface.md)
+## <a name="see-also"></a>Siehe auch  
+ [IDebugDocumentHelper-Schnittstelle](../../winscript/reference/idebugdocumenthelper-interface.md)

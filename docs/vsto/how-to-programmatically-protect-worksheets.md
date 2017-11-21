@@ -1,12 +1,10 @@
 ---
-title: 'How to: Programmatically Protect Worksheets | Microsoft Docs'
+title: "Vorgehensweise: Programmgesteuertes Schützen von Arbeitsblättern | Microsoft Docs"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -18,66 +16,67 @@ helpviewer_keywords:
 - document protection, adding to worksheets
 - worksheets, protecting
 ms.assetid: 50bde1ff-918a-42ca-ba1b-f22139f8717a
-caps.latest.revision: 47
-author: kempb
-ms.author: kempb
+caps.latest.revision: "47"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 511ee619b9a74906d6f7d356486de0dcc1da0d32
-ms.contentlocale: de-de
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: 283f10b5f68ec277e194a7ddce986a5bca08aa94
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="how-to-programmatically-protect-worksheets"></a>How to: Programmatically Protect Worksheets
-  The protection feature in Microsoft Office Excel helps prevent users and code from modifying objects in a worksheet. By default, all cells are locked after you turn on protection.  
+# <a name="how-to-programmatically-protect-worksheets"></a>Gewusst wie: Programmgesteuertes Schützen von Arbeitsblättern
+  Die Schutzfunktion in Microsoft Office Excel verhindert, dass Objekte in einem Arbeitsblatt durch Benutzer und Code geändert werden. Standardmäßig werden alle Zellen gesperrt, nachdem der Schutz aktiviert wurde.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
- In document-level customizations, you can protect worksheets by using the Excel designer. You can also protect a worksheet programmatically at run time in any project type.  
+ In Anpassungen auf Dokumentebene können Sie Arbeitsblätter mit dem Excel-Designer schützen. Sie können ein Arbeitsblatt in einem beliebigen Projekttyp auch zur Laufzeit programmgesteuert schützen.  
   
 > [!NOTE]  
->  You cannot add Windows Forms controls to areas of a worksheet that are protected.  
+>  Geschützten Bereichen eines Arbeitsblatts können keine Windows Forms-Steuerelemente hinzugefügt werden.  
   
-## <a name="using-the-designer"></a>Using the Designer  
+## <a name="using-the-designer"></a>Mithilfe des Designers  
   
-#### <a name="to-protect-a-worksheet-in-the-designer"></a>To protect a worksheet in the designer  
+#### <a name="to-protect-a-worksheet-in-the-designer"></a>So schützen Sie ein Arbeitsblatt im Designer  
   
-1.  In the **Changes** group of the **Review** tab, click **Protect Sheet**.  
+1.  In der **Änderungen** Gruppe der **Überprüfung** auf **Blatt schützen**.  
   
-     The **Protect Sheet** dialog box appears. You can set a password and optionally specify certain actions that users are allowed to perform with the worksheet, such as format cells or insert rows.  
+     Die **Blatt schützen** Dialogfeld wird angezeigt. Sie können ein Kennwort festlegen und optional bestimmte Aktionen angeben, die Benutzer in einem Arbeitsblatt ausführen dürfen, z. B. Zellen formatieren oder Zeilen einfügen.  
   
- You can also allow users to edit specific ranges in protected worksheets.  
+ Sie können Benutzern auch die Bearbeitung bestimmter Bereiche in geschützten Arbeitsblättern erlauben.  
   
-#### <a name="to-allow-editing-in-specific-ranges"></a>To allow editing in specific ranges  
+#### <a name="to-allow-editing-in-specific-ranges"></a>So lassen Sie die Bearbeitung bestimmter Bereiche zu  
   
-1.  In the **Changes** group of the **Review** tab, click **Allow Users to Edit Ranges**.  
+1.  In der **Änderungen** Gruppe der **Überprüfung** auf **Benutzerberechtigungen zum Bearbeiten von Bereichen**.  
   
-     The **Allow Users to Edit Ranges** dialog box appears. You can specify ranges that are unlocked using a password, and users who can edit ranges without a password.  
+     Die **Benutzerberechtigungen zum Bearbeiten von Bereichen** Dialogfeld wird angezeigt. Sie können Bereiche angeben, die mithilfe eines Kennworts entsperrt werden, und Benutzer, die Bereiche ohne Kennwort bearbeiten können.  
   
-## <a name="using-code-at-run-time"></a>Using Code at Run Time  
- The following code sets the password (using the variable getPasswordFromUser, which contains a password obtained from the user) and allows only sorting.  
+## <a name="using-code-at-run-time"></a>Mithilfe von Code zur Laufzeit  
+ Mit dem folgenden Code wird das Kennwort (unter Verwendung der getPasswordFromUser-Variablen, die ein vom Benutzer angegebenes Kennwort enthält) festgelegt und nur das Sortieren zugelassen.  
   
-#### <a name="to-protect-a-worksheet-by-using-code-in-a-document-level-customization"></a>To protect a worksheet by using code in a document-level customization  
+#### <a name="to-protect-a-worksheet-by-using-code-in-a-document-level-customization"></a>So schützen Sie ein Arbeitsblatt mithilfe von Code in einer Anpassung auf Dokumentebene  
   
-1.  Call the <xref:Microsoft.Office.Tools.Excel.Worksheet.Protect%2A> method of the worksheet. This example assumes that you are working with a worksheet named `Sheet1`.  
+1.  Rufen Sie die <xref:Microsoft.Office.Tools.Excel.Worksheet.Protect%2A>-Methode des Arbeitsblatts auf. In diesem Beispiel wird davon ausgegangen, dass Sie mit einem Arbeitsblatt namens `Sheet1`arbeiten.  
   
-     [!code-csharp[Trin_VstcoreExcelAutomation#27](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#27)]  [!code-vb[Trin_VstcoreExcelAutomation#27](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#27)]  
+     [!code-csharp[Trin_VstcoreExcelAutomation#27](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#27)]
+     [!code-vb[Trin_VstcoreExcelAutomation#27](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#27)]  
   
-#### <a name="to-protect-a-worksheet-by-using-code-in-a-vsto-add-in"></a>To protect a worksheet by using code in a VSTO Add-in  
+#### <a name="to-protect-a-worksheet-by-using-code-in-a-vsto-add-in"></a>So schützen Sie ein Arbeitsblatt mithilfe von Code in einen VSTO-Add-In  
   
-1.  Call the <xref:Microsoft.Office.Interop.Excel._Worksheet.Protect%2A> method of the active worksheet.  
+1.  Rufen Sie die <xref:Microsoft.Office.Interop.Excel._Worksheet.Protect%2A>-Methode des aktiven Arbeitsblatts auf.  
   
-     [!code-csharp[Trin_VstcoreExcelAutomationAddIn#17](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#17)]  [!code-vb[Trin_VstcoreExcelAutomationAddIn#17](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#17)]  
+     [!code-csharp[Trin_VstcoreExcelAutomationAddIn#17](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#17)]
+     [!code-vb[Trin_VstcoreExcelAutomationAddIn#17](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#17)]  
   
-## <a name="see-also"></a>See Also  
- [Working with Worksheets](../vsto/working-with-worksheets.md)   
- [How to: Programmatically Remove Protection from Worksheets](../vsto/how-to-programmatically-remove-protection-from-worksheets.md)   
- [How to: Programmatically Protect Workbooks](../vsto/how-to-programmatically-protect-workbooks.md)   
- [How to: Programmatically Hide Worksheets](../vsto/how-to-programmatically-hide-worksheets.md)   
+## <a name="see-also"></a>Siehe auch  
+ [Arbeiten mit Arbeitsblättern](../vsto/working-with-worksheets.md)   
+ [Vorgehensweise: Programmgesteuertes Aufheben des Schutzes von Arbeitsblättern](../vsto/how-to-programmatically-remove-protection-from-worksheets.md)   
+ [Vorgehensweise: Programmgesteuertes Schützen von Arbeitsmappen](../vsto/how-to-programmatically-protect-workbooks.md)   
+ [Vorgehensweise: Programmgesteuertes Ausblenden von Arbeitsblättern](../vsto/how-to-programmatically-hide-worksheets.md)   
  [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md)   
- [Worksheet Host Item](../vsto/worksheet-host-item.md)   
- [Global Access to Objects in Office Projects](../vsto/global-access-to-objects-in-office-projects.md)   
- [Optional Parameters in Office Solutions](../vsto/optional-parameters-in-office-solutions.md)  
+ [Arbeitsblatt-Hostelements](../vsto/worksheet-host-item.md)   
+ [Globaler Zugriff auf Objekte in Office-Projekten](../vsto/global-access-to-objects-in-office-projects.md)   
+ [Optionale Parameter in Office-Projektmappen](../vsto/optional-parameters-in-office-solutions.md)  
   
   

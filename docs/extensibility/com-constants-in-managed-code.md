@@ -1,32 +1,33 @@
 ---
-title: "Com-Konstanten in verwaltetem Code | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "verwaltete VSPackages, COM-Konstanten und Makros"
+title: COM-Konstanten in verwaltetem Code | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: managed VSPackages, COM constants and macros
 ms.assetid: b6663608-b049-44b0-a75b-080fdc5faafc
-caps.latest.revision: 16
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 16
+caps.latest.revision: "16"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 1cd6e70cc58f27dd0beb08d615abcdb52884f3f4
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Com-Konstanten in verwaltetem Code
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Managed Package Framework \(MPF\) macht einige standard\-COM\-Konstanten für verwalteten Code verfügbar. Diese Konstanten werden für den Verweis aufgeführt.  
+# <a name="com-constants-in-managed-code"></a>COM-Konstanten in verwaltetem Code
+Das Managed Package Framework (MPF) stellt einige standard-COM-Konstanten, die an verwalteten Code zur Verfügung. Diese Konstanten werden für den Verweis aufgeführt.  
   
-## Boolesche HRESULT\-Werte  
+## <a name="boolean-hresult-values"></a>Boolesche HRESULT-Werte  
  <xref:Microsoft.VisualStudio.VSConstants.S_FALSE>  
   
  <xref:Microsoft.VisualStudio.VSConstants.S_OK>  
   
-## HRESULT\-Werte  
+## <a name="hresult-values"></a>HRESULT-Werte  
  <xref:Microsoft.VisualStudio.VSConstants.E_ABORT>  
   
  <xref:Microsoft.VisualStudio.VSConstants.E_ACCESSDENIED>  
@@ -51,7 +52,7 @@ Managed Package Framework \(MPF\) macht einige standard\-COM\-Konstanten für ve
   
  <xref:Microsoft.VisualStudio.VSConstants.UNDO_E_CLIENTABORT>  
   
-## OLE\-Fehler  
+## <a name="ole-errors"></a>OLE-Fehler  
  <xref:Microsoft.VisualStudio.VSConstants.OLE_E_ADVF>  
   
  <xref:Microsoft.VisualStudio.VSConstants.OLE_E_ADVISENOTSUPPORTED>  
@@ -90,7 +91,7 @@ Managed Package Framework \(MPF\) macht einige standard\-COM\-Konstanten für ve
   
  <xref:Microsoft.VisualStudio.VSConstants.OLE_E_WRONGCOMPOBJ>  
   
-## OLE\-Dispatch\-Fehler  
+## <a name="ole-dispatch-errors"></a>OLE-Dispatch-Fehler  
  <xref:Microsoft.VisualStudio.VSConstants.DISP_E_ARRAYISLOCKED>  
   
  <xref:Microsoft.VisualStudio.VSConstants.DISP_E_BADCALLEE>  
@@ -127,5 +128,5 @@ Managed Package Framework \(MPF\) macht einige standard\-COM\-Konstanten für ve
   
  <xref:Microsoft.VisualStudio.VSConstants.DISP_E_UNKNOWNNAME>  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Fehlerbehandlung und Rückgabewerte](../extensibility/error-handling-and-return-values.md)

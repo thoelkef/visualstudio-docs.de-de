@@ -1,24 +1,25 @@
 ---
-title: "Web Project Essentials | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Webprojekte essentials"
+title: Web-Projekt Essentials | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: web projects, essentials
 ms.assetid: ca2f4e43-322c-4431-8680-52da846940bc
-caps.latest.revision: 15
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 15
+caps.latest.revision: "15"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 1b5cec31349b2db94536f3d67ca137885f757263
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Web Project Essentials
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
+# <a name="web-project-essentials"></a>Web Project Essentials
 Webprojekte erstellen Webanwendungen. Sie können ein Webprojekt verwenden, um eine Webanwendung zu erstellen, die verfügt der intelligenten Webseiten. Eine intelligente Webseite wurde serverseitigen Code, der die Webseite bedarfsgesteuert gerendert wird.  
   
  Mit herkömmlichen Programmiersprachen wie [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] oder [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)], können Sie intelligente Webseiten zum Erfassen und Verarbeiten von Informationen von einem Benutzer, in einer Datenbank zu speichern und usw. erstellen.  
@@ -33,7 +34,7 @@ Webprojekte erstellen Webanwendungen. Sie können ein Webprojekt verwenden, um e
   
     -   Ein Webanwendungsprojekt (WAP) erzeugt eine einzelne ausführbare Datei, die den Code für alle intelligenten Webseiten als auch alle Dateien im Ordner "App_Code" kombiniert.  
   
--   Die Projektmappendatei für ein Webprojekt ist separat von der Website selbst gespeichert. Standardmäßig befinden sich Projektmappendateien am \Documents and Settings\\*Ihr Konto*\My Dokumente\\*\< Visual Studio ### >*\Projects\\*YourWebSite*.  
+-   Die Projektmappendatei für ein Webprojekt ist separat von der Website selbst gespeichert. Standardmäßig befinden sich Projektmappendateien am \Documents and Settings\\*Ihr Konto*\My Dokumente\\*\<Visual Studio ### >*\Projects\\ *YourWebSite*.  
   
     > [!NOTE]
     >  Wenn Sie die Projektmappendatei mit der Website beibehalten möchten, verschieben Sie sie nur vorhanden, und öffnen Sie es erneut.  
@@ -44,11 +45,11 @@ Webprojekte erstellen Webanwendungen. Sie können ein Webprojekt verwenden, um e
   
 -   Globale Eigenschaften automatisch zu einem Webprojekt hinzufügen erstellt eine Speicherdatei im Projektmappenordner Web Project.  
   
--   Eine intelligente Webseite kann eine serverseitige Programmiersprache zugeordnet werden, mithilfe der Seitendirektive oder \< script Runat = "Server"> Tag.  
+-   Eine intelligente Webseite kann eine serverseitige Programmiersprache zugeordnet werden, mithilfe der Seitendirektive oder \<Skript Runat = "Server" > Tag.  
   
 -   Darüber hinaus können Webseiten eine beliebige Anzahl von clientseitigen Skripts Blöcke in jeder Skriptsprache geschrieben haben.  
   
--   Ein Website-Projektsystem ist durch Hinzufügen von Projekt- und Elementvorlagen und Registrierung für Azure implementiert die [!INCLUDE[vwprvw](../../extensibility/internals/includes/vwprvw_md.md)] Projekt.  
+-   Ein Website-Projektsystem wird durch Hinzufügen von Projekt- und Elementvorlagen und Registrierung für Azure implementiert die [!INCLUDE[vwprvw](../../extensibility/internals/includes/vwprvw_md.md)] Projekt.  
   
 -   Ein WAP-System wird als ein Projektuntertyp, der so genannte eine Projektkonfiguration implementiert. Die [!INCLUDE[vwprvw](../../extensibility/internals/includes/vwprvw_md.md)] Projekt ist flavored, von der WAP-Untertyp, der WAP-System zu erstellen. Weitere Informationen zum Projekt Untertypen, finden Sie unter [Projekt Untertypen](../../extensibility/internals/project-subtypes.md).  
   

@@ -1,39 +1,41 @@
 ---
-title: "Speichern von Daten in Projektdateien | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "in Projektdateien Speichern von Daten [Visual Studio]"
-  - "Projektdateien"
-  - "Project-Dateien speichern von Daten"
+title: Speichern von Daten in Projektdateien | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- data [Visual Studio], saving in project files
+- project files
+- project files, saving data
 ms.assetid: a3d4b15b-a91e-41ba-b235-e62632d11bc5
-caps.latest.revision: 28
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 28
+caps.latest.revision: "28"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 5a494b32a252a87c6863eaa6335aa1cd6b300db5
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Speichern von Daten in Projektdateien
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Ein Projekt kann untertyp Untertyp spezifisch Daten in der Projektdatei speichern und abrufen.  Das verwaltete Paketframework \(MPF\) stellt zwei Schnittstellen, um diese Aufgabe auszuführen:  
+# <a name="saving-data-in-project-files"></a>Speichern von Daten in Projektdateien
+Ein Projektuntertyp kann speichern und Abrufen von untertypspezifischen Daten in der Projektdatei. Das Managed Package Framework (MPF) stellt zwei Schnittstellen, um diese Aufgabe:  
   
--   Die <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage>\-Schnittstelle kann für den Zugriff auf eigenschaftswerten vom **MSBuild**\-Abschnitt der Projektdatei.  Die Methoden, die von <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage> bereitgestellt werden, können von jedem Benutzer aufgerufen werden, wenn die Nutzerbedarfe Build zu laden oder verknüpfte Daten zu speichern.  
+-   Die <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage> Schnittstelle ermöglicht Zugriff Eigenschaftswerte aus der **MSBuild** Abschnitt der Projektdatei. Die bereitgestellten Methoden <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage> kann von jedem Benutzer aufgerufen werden, sobald der Benutzer Anforderungen zum Laden und speichern verknüpfte Daten erstellen.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> wird verwendet, um Nicht Build verknüpfte Daten in der Freiform XML beizubehalten.  Die Methoden, die von <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> bereitgestellt werden, werden durch [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] immer dann aufgerufen, wenn [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Nicht Build verknüpfte Daten in der Projektdatei beibehalten muss.  
+-   Die <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> wird verwendet, um nicht Build verknüpfte Daten in Freiform-XML beibehalten werden. Die bereitgestellten Methoden <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> werden vom aufgerufen [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] immer [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Build nicht verknüpfte Daten in der Projektdatei beibehalten muss.  
   
- Weitere Informationen zum Erstellen eines Builds und Nicht Build verknüpfte Daten finden Sie unter [Beibehalten von Daten in der MSBuild\-Projektdatei](../extensibility/internals/persisting-data-in-the-msbuild-project-file.md)beibehält.  
+ Weitere Informationen zum Build und Build nicht verknüpften Daten persistent zu speichern, finden Sie unter [beibehalten von Daten in der MSBuild-Projektdatei](../extensibility/internals/persisting-data-in-the-msbuild-project-file.md).  
   
-## Build Speichern und Abrufen von verknüpften Daten  
+## <a name="saving-and-retrieving-build-related-data"></a>Speichern und Abrufen von Build-bezogene Daten  
   
-#### So erstellen Sie einen Build zu speichern verknüpfte Daten in der Projektdatei  
+#### <a name="to-save-a-build-related-data-in-the-project-file"></a>Um einen Build speichern-bezogene Daten in der Projektdatei  
   
--   Rufen Sie die <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetPropertyValue%2A>\-Methode auf, um einen vollständigen Pfad der Projektdatei zu speichern.  
+-   Rufen Sie die <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetPropertyValue%2A> Methode, um einen vollständigen Pfad der Projektdatei zu speichern.  
   
     ```  
     private SpecializedProject project;  
@@ -46,9 +48,9 @@ Ein Projekt kann untertyp Untertyp spezifisch Daten in der Projektdatei speicher
         (uint)_PersistStorageType.PST_PROJECT_FILE, newFullPath));  
     ```  
   
-#### Um verknüpfte Daten abzurufen Erstellung von der Projektdatei  
+#### <a name="to-retrieve-build-related-data-from-the-project-file"></a>Zum Abrufen von Build-bezogene Daten aus der Projektdatei  
   
--   Rufen Sie die <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.GetPropertyValue%2A>\-Methode auf, um einen vollständigen Pfad der Projektdatei abzurufen.  
+-   Rufen Sie die <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.GetPropertyValue%2A> Methode, um einen vollständigen Pfad der Projektdatei abzurufen.  
   
     ```  
     private SpecializedProject project;  
@@ -61,11 +63,11 @@ Ein Projekt kann untertyp Untertyp spezifisch Daten in der Projektdatei speicher
         (uint)_PersistStorageType.PST_PROJECT_FILE, out fullPath));  
     ```  
   
-## Nicht Build Speichern und Abrufen von verknüpften Daten  
+## <a name="saving-and-retrieving-non-build-related-data"></a>Speichern und Abrufen von nicht-Build verknüpfte Daten  
   
-#### Um verknüpfte Daten zu Builds nicht in der Projektdatei speichern  
+#### <a name="to-save-non-build-related-data-in-the-project-file"></a>Zum Speichern von nicht-Build-bezogene Daten in der Projektdatei  
   
-1.  Implementieren Sie die <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.IsFragmentDirty%2A>\-Methode, um zu bestimmen, ob ein XML\-Fragment geändert wurde, seit es zuletzt in die aktuelle Datei gespeichert wurden.  
+1.  Implementieren der <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.IsFragmentDirty%2A> Methode, um zu bestimmen, ob ein XML-Fragment geändert wurde, seit dem letzten in die aktuelle Datei gespeichert.  
   
     ```  
     public int IsFragmentDirty(uint storage, out int pfDirty)  
@@ -95,7 +97,7 @@ Ein Projekt kann untertyp Untertyp spezifisch Daten in der Projektdatei speicher
     }  
     ```  
   
-2.  Implementieren Sie die <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Save%2A>\-Methode, um XML\-Daten in der Projektdatei zu speichern.  
+2.  Implementieren der <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Save%2A> Methode, um die XML-Daten in der Projektdatei zu speichern.  
   
     ```  
     public int Save(ref Guid guidFlavor, uint storage, out string pbstrXMLFragment, int fClearDirty)  
@@ -144,9 +146,9 @@ Ein Projekt kann untertyp Untertyp spezifisch Daten in der Projektdatei speicher
     }  
     ```  
   
-#### So führen Sie Builds Nicht verknüpfte Daten in der Projektdatei ab  
+#### <a name="to-retrieve-non-build-related-data-in-the-project-file"></a>Zum Abrufen von nicht-Build-bezogene Daten in der Projektdatei  
   
-1.  Implementieren Sie die <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.InitNew%2A>\-Methode, um Eigenschaften für das Projekt Erstellung\-unabhängige und andere Daten zu initialisieren.  Diese Methode wird aufgerufen, wenn keine XML\-Konfigurations von Daten gibt, die in der Projektdatei vorhanden sind.  
+1.  Implementieren der <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.InitNew%2A> Methode, um die Projekteigenschaften für die Erweiterung und andere Daten unabhängig von Build zu initialisieren. Diese Methode wird aufgerufen, wenn es keine XML-Konfigurationsdaten, die in der Projektdatei vorhanden ist.  
   
     ```  
     public int InitNew(ref Guid guidFlavor, uint storage)  
@@ -162,7 +164,7 @@ Ein Projekt kann untertyp Untertyp spezifisch Daten in der Projektdatei speicher
         return VSConstants.S_OK;  
     ```  
   
-2.  Implementieren Sie die <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Load%2A>\-Methode, um XML\-Daten aus der Projektdatei zu laden.  
+2.  Implementieren der <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Load%2A> -Methode zum Laden von XML-Daten aus der Projektdatei.  
   
     ```  
     public int Load(ref Guid guidFlavor, uint storage, string pszXMLFragment)  
@@ -207,7 +209,7 @@ Ein Projekt kann untertyp Untertyp spezifisch Daten in der Projektdatei speicher
     ```  
   
 > [!NOTE]
->  Alle Codebeispiele in diesem Thema bereitgestellt werden, sind Teil eines umfangreicheren Beispiels, [VSSDK\-Beispiele](../misc/vssdk-samples.md).  
+>  Alle in diesem Thema bereitgestellten Codebeispiele sind Teil eines umfangreicheren Beispiels in [VSSDK-Beispiele](http://aka.ms/vs2015sdksamples).  
   
-## Siehe auch  
- [Beibehalten von Daten in der MSBuild\-Projektdatei](../extensibility/internals/persisting-data-in-the-msbuild-project-file.md)
+## <a name="see-also"></a>Siehe auch  
+ [Beibehalten von Daten in der MSBuild-Projektdatei](../extensibility/internals/persisting-data-in-the-msbuild-project-file.md)

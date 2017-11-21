@@ -1,60 +1,64 @@
 ---
-title: "Bitmapelement | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "VSCT XML-Schemaelemente, Bitmaps"
-  - "Bitmaps-Element (VSCT-XML-Schema)"
+title: Bitmap-Element | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- VSCT XML schema elements, Bitmaps
+- Bitmaps element (VSCT XML schema)
 ms.assetid: edcd7891-f4e7-416d-809d-5e2eed9f17e4
-caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 223342709dbe97fe38fb7a495ce482ae70e1c807
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Bitmapelement
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Definiert eine Bitmap. Die Bitmap wird von einer Ressource oder aus einer Datei geladen.  
+# <a name="bitmap-element"></a>Bitmapelement
+Definiert eine Bitmap an. Die Bitmap wird aus einer Ressource oder aus einer Datei geladen.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 <Bitmap guid="guidImages" href="images\MyImage.bmp" usedList="bmp1, bmp2, bmp3" />  
 ```  
   
-## Attribute und Elemente  
+## <a name="attributes-and-elements"></a>Attribute und Elemente  
  In den folgenden Abschnitten werden Attribute sowie untergeordnete und übergeordnete Elemente beschrieben.  
   
-### Attribute  
+### <a name="attributes"></a>Attribute  
   
 |Attribut|Beschreibung|  
-|--------------|------------------|  
-|GUID|Erforderlich. Die GUID der GUID\-ID\-Befehls\-ID.<br /><br /> Das Guid\-Attribut für eine Bitmap ist nicht mit jedem VSPackage oder anderen Befehlsgruppe verknüpft.  Sie sollten für die bitmapdefinition eindeutig sein und sollte nicht für andere Zwecke verwendet werden.|  
-|resID|ID der GUID\-ID\-Befehls\-ID. Die ResID oder das Href\-Attribut ist erforderlich.<br /><br /> Die ResID\-Attribut ist ein Integer\-Ressourcen\-ID, die die Bitmap Streifen bestimmt, der während der Befehlstabelle Zusammenführen geladen werden soll.  Wenn die Befehlstabelle geladen wird, werden die Bitmaps angegeben, indem die Ressourcen\-ID aus der Ressource des gleichen Moduls geladen.|  
-|"usedlist"|Erforderlich, wenn das Attribut ResID vorhanden ist. Wählt die verfügbaren Images in der Bitmap Streifen.|  
-|href|Der Pfad für die Bitmap. Die ResID oder das Href\-Attribut ist erforderlich.<br /><br /> Die Include\-Pfad wird für die angegebene Bilddatei, durchsucht, die in der resultierenden Binärdatei eingebettet ist.  Während der Befehl Tabelle verbinden wird das Bild kopiert, und ist keine zusätzliche Ressourcensuche oder Laden erforderlich.  Wenn das Attribut "usedlist" nicht vorhanden ist, sind alle Abbilder in die Bereichsstreifen verfügbar. **Note:**  Bilder können in verschiedenen Formaten angegeben werden, die BMP\-, PNG\- und GIF enthalten.  Frühere Versionen des Compilers unterstützten nicht Bitmaps mit 32\-Bit, die Alphainformationen für teilweise Transparenz. Die problemumgehung für diese Versionen ist das PNG\-Format verwenden.|  
-|Bedingung|Optional. Siehe [Bedingten Attribute](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|---------------|-----------------|  
+|guid|Erforderlich. GUID des Bezeichners GUID-ID-Befehl.<br /><br /> Das Guid-Attribut für eine Bitmap ist nicht verknüpft mit jeder VSPackage oder andere Befehlsgruppe.  Es sollte eindeutig sein, um die bitmapdefinition und sollte nicht für andere Zwecke verwendet werden.|  
+|resID|ID des Bezeichners GUID-ID-Befehl. Die ResID oder Href-Attribut ist erforderlich.<br /><br /> Das ResID-Attribut ist ein Integer-Ressourcen-ID, die die Bitmap-Menüleiste bestimmt, die beim Zusammenführen von Befehlstabelle geladen werden soll.  Wenn die Befehlstabelle geladen wird, wird die Bitmaps, angegeben durch die Ressourcen-ID aus der Ressource des gleichen Moduls geladen werden.|  
+|usedList|Erforderlich, wenn das Attribut ResID vorhanden ist. Wählt verfügbaren Images auf den Bitmap-Streifen.|  
+|href|Der Pfad für die Bitmap. Die ResID oder Href-Attribut ist erforderlich.<br /><br /> Die Include-Pfad wird für die angegebene Abbilddatei durchsucht, die in die resultierende Binärdatei eingebettet ist.  Während der Befehl Tabelle Zusammenführen wird das Bild kopiert, und zusätzliche Ressourcensuche oder Load sind nicht erforderlich.  Wenn das UsedList-Attribut nicht vorhanden ist, stehen alle Bilder auf den Streifen. **Hinweis:** Bilder können in einem von mehreren Formaten, die z. bmp, PNG und GIF b. bereitgestellt werden.  Frühere Versionen des Compilers hat keine 32-Bit-Bitmapbilder unterstützt, die für die partielle Transparenz Alphainformationen hatte. Die problemumgehung für diese Versionen ist das PNG-Format verwendet.|  
+|Bedingung|Dies ist optional. Finden Sie unter [bedingte Attribute](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
-### Untergeordnete Elemente  
- Keine.  
+### <a name="child-elements"></a>Untergeordnete Elemente  
+ Keine  
   
-### Übergeordnete Elemente  
+### <a name="parent-elements"></a>Übergeordnete Elemente  
   
 |Element|Beschreibung|  
-|-------------|------------------|  
-|[Bitmaps\-Element](../extensibility/bitmaps-element.md)|Gruppen\-Bitmap\-Elemente.|  
+|-------------|-----------------|  
+|[Bitmaps-Element](../extensibility/bitmaps-element.md)|Gruppiert die Elemente mithilfe einer Bitmap.|  
   
-## Beispiel  
+## <a name="example"></a>Beispiel  
   
 ```  
-<Bitmap guid="guidWidgetIcons" href="WidgetToolbarIcons_32.bmp" /> <Bitmap guid="guidWidgetIcons2" resID="IDBMP_WIDGETICONS" usedList="1, 2, 3, 4"/>  
+<Bitmap guid="guidWidgetIcons" href="WidgetToolbarIcons_32.bmp" />  
+<Bitmap guid="guidWidgetIcons2" resID="IDBMP_WIDGETICONS"  
+  usedList="1, 2, 3, 4"/>  
 ```  
   
-## Siehe auch  
- [Visual Studio\-Befehl\-Tabelle \(. VSCT\) Dateien](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+## <a name="see-also"></a>Siehe auch  
+ [VSCT-Dateien (Visual Studio Command Table)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

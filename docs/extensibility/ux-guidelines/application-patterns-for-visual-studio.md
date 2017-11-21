@@ -4,40 +4,25 @@ ms.custom:
 ms.date: 04/26/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 8ed68602-4e28-46fe-b39f-f41979b308a2
-caps.latest.revision: 7
+caps.latest.revision: "7"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Machine Translation
-ms.sourcegitcommit: 9524ecc3cadef58821fba857de8e82e59eea9b43
-ms.openlocfilehash: 7c2612cb537a6f3197cf9f99a0dc11981dfc73e1
-ms.contentlocale: de-de
-ms.lasthandoff: 05/04/2017
-
+ms.openlocfilehash: 0fad2e8d63b0005addab20756501d18fe872b4c3
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="application-patterns-for-visual-studio"></a>Anwendungsmuster für Visual Studio
 ##  <a name="BKMK_WindowInteractions"></a>Fenster Interaktionen  
   
 ### <a name="overview"></a>Übersicht  
-In Visual Studio verwendet die beiden im Hauptfenster-Typen sind Dokument-Editoren und Toolfenster. Seltene hingegen möglich sind große nicht modale Dialogfelder. Obwohl es sich alle in der Shell nicht modalen handelt, sind ihre Muster grundlegend. Dieser Abschnitt behandelt den Unterschied zwischen Dokumentfenster und Toolfenster nicht modale Dialogfelder. Modales Dialogfeld Muster finden Sie [Dialoge](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_Dialogs).  
+In Visual Studio verwendet die beiden im Hauptfenster-Typen sind Dokument-Editoren und Toolfenster. Seltene, aber möglich, sind große nicht modale Dialogfelder. Obwohl es sich alle in der Shell nicht modalen handelt, sind ihre Muster grundlegend. Dieser Abschnitt behandelt den Unterschied zwischen Dokumentfenster und Toolfenster nicht modale Dialogfelder. Modales Dialogfeld Muster finden Sie [Dialoge](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_Dialogs).  
   
 ### <a name="comparing-window-usage-patterns"></a>Vergleichen von Verwendungsmustern Fenster  
 **Dokumentieren von Windows** werden fast immer angezeigt, innerhalb des Dokuments ebenfalls. Dies ermöglicht dem Dokument-Editor eine "center Phase" ergänzende Toolfenster um anordnen.  
@@ -82,22 +67,22 @@ Visual Studio-Toolfenster haben unterschiedliche Zustände, von die einige Benut
   
 -   **Automatisch ausgeblendete** Toolfenster gelöst werden. Das Fenster kann ausgeblendet, lassen eine Registerkarte (mit den Namen im Toolfenster und dessen Symbol ") am Rand des Dokumentbereichs schieben. Das Toolfenster wird Wenn ein Benutzer über die Registerkarte bewegt wird.  
   
--   **Automatisch sichtbar** Toolfenster automatisch angezeigt, wenn Sie einen anderen Teil der Benutzeroberfläche, z. B. einem Editor gestartet oder den Fokus erhält.  
+-   **Automatisch sichtbar** Toolfenster automatisch angezeigt, wenn eine andere Teil der Benutzeroberfläche, z. B. einem Editor gestartet oder den Fokus erhält.  
   
 -   **Gleitkommawert** Toolfenster außerhalb der IDE zeigen. Dies ist hilfreich für Konfigurationen mit mehreren Monitoren.  
   
 -   **Dokumentfenster im Registerformat** Toolfenster können auch innerhalb des Dokuments angedockt werden. Dies ist hilfreich für große Toolfenster, z. B. Objektkatalog, die weitere Immobilien als Andocken an den Rändern des Frames zulässt.  
   
-![Status für Toolfenster in Visual Studio](../../extensibility/ux-guidelines/media/0702-01_toolwindowstates.png "0702-01_ToolWindowStates")<br />Status für Toolfenster in Visual Studio
+![In Visual Studio Zuständen des Toolfensters](../../extensibility/ux-guidelines/media/0702-01_toolwindowstates.png "0702 01_ToolWindowStates")<br />Status für Toolfenster in Visual Studio
   
 #### <a name="single-instance-and-multi-instance"></a>Einzelinstanz- und mit mehreren Instanzen  
 Toolfenster sind in einer Instanz oder mit mehreren Instanzen. Einige Einzelinstanz-Toolfenster ggf. das aktive Fenster, zugeordnet, während nicht möglicherweise Toolfenster mit mehreren Instanzen. Toolfenster mit mehreren Instanzen reagieren auf die **Fenster &gt; neues Fenster** Befehl durch Erstellen einer neuen Instanz des Fensters. Die folgende Abbildung zeigt ein Toolfenster, die den neuen Fenster-Befehl aktivieren, wenn eine Instanz des Fensters aktiv ist:  
   
-![Toolfenster, die der Befehl "Neues Fenster" aktivieren, wenn eine Instanz des Fensters aktiv ist.](../../extensibility/ux-guidelines/media/0702-02_toolwindowenablingcommand.png "0702-02_ToolWindowEnablingCommand")<br />Toolfenster, die der Befehl "Neues Fenster" aktivieren, wenn eine Instanz des Fensters aktiv ist.  
+![Das Toolfenster "Aktivieren der Befehl"Neues Fenster", wenn eine Instanz des Fensters ist aktiv](../../extensibility/ux-guidelines/media/0702-02_toolwindowenablingcommand.png "0702 02_ToolWindowEnablingCommand")<br />Toolfenster, die der Befehl "Neues Fenster" aktivieren, wenn eine Instanz des Fensters aktiv ist.  
   
 Einzelinstanz-Toolfenster können ausgeblendet oder angezeigt werden, während mit mehreren Instanzen Toolfenster geschlossen ausgeblendet als auch können werden. Alle Toolfenster können angedockt, Registerkarte verknüpft, Gleitkomma oder als ein Multiple Document Interface (MDI) untergeordnetes Fenster (vergleichbar mit einem Dokumentfenster) festgelegt werden. Alle Toolfenster reagieren soll auf die entsprechenden Fenster Management-Befehle im Menü "Fenster":  
   
-![Management-Befehle in der Visual Studio-Fenster im Menü "Fenster"](../../extensibility/ux-guidelines/media/0702-03_windowmanagementcontrols.png "0702-03_WindowManagementControls")<br />Management-Befehle in der Visual Studio-Fenster im Menü "Fenster"
+![Management-Befehle in der Visual Studio-Fenster im Menü "Fenster"](../../extensibility/ux-guidelines/media/0702-03_windowmanagementcontrols.png "0702 03_WindowManagementControls")<br />Management-Befehle in der Visual Studio-Fenster im Menü "Fenster"
   
 #### <a name="document-specific-tool-windows"></a>Dokumentspezifische Toolfenster  
 Einige Toolfenster dienen als basierend auf einem angegebenen Typ des Dokuments ändern. Diese Fenster aktualisiert kontinuierlich und um Funktionalität, die für das aktive Fenster in der IDE zu entsprechen.  
@@ -144,7 +129,7 @@ Beispiele für Toolfenster navigierbar Liste sind im Projektmappen-Explorer und 
 | Toolfenster | Funktion | 
 | --- | --- | 
 | Werkzeugkasten | Das Toolfenster verwendet, um Elemente zu speichern, die auf der Entwurfsoberflächen Bereitstellen einer konsistenten Ziehquelle für alle Designer gelöscht werden. |
-| Startseite | Der Benutzer im Portal zu Visual Studio mit Zugriff auf Datenfeeds von Informationen für Entwickler, Visual Studio-Hilfe und zuletzt geöffnete Projekte. Benutzer können auch benutzerdefinierte Startseiten erstellen, durch Kopieren der Datei "StartPage.xaml" aus der "Common7\IDE\StartPages\" Visual Studio Verzeichnis für Programmdateien in die StartPages-Ordner im Verzeichnis für Visual Studio-Dokumente, und klicken Sie dann entweder durch das manuelle Bearbeiten des XAML-Codes oder in Visual Studio oder einem anderen Codeeditor öffnen. | 
+| Startseite | Der Benutzer im Portal zu Visual Studio mit Zugriff auf Datenfeeds von Informationen für Entwickler, Visual Studio-Hilfe und zuletzt geöffnete Projekte. Benutzer können auch benutzerdefinierte Startseiten erstellen, durch Kopieren der Datei "StartPage.xaml" aus der "Common7\IDE\StartPages\" Verzeichnis für Programmdateien in den Ordner StartPages in Visual Studio Visual Studio dokumentiert, Directory, und klicken Sie dann entweder Bearbeiten des XAML-Codes von Hand oder Sie sie in Visual Studio oder einem anderen Codeeditor öffnen. | 
 
 **Debugger-Toolfenster**
 | Toolfenster | Funktion | 
@@ -158,7 +143,7 @@ Beispiele für Toolfenster navigierbar Liste sind im Projektmappen-Explorer und 
 | Dokumente ||  
 | Aufrufliste ||  
 | Locals ||  
-| Überwachungselemente ||  
+| Überwachungen ||  
 | Disassemblierung ||  
 | Register ||  
 | Threads ||  
@@ -184,7 +169,7 @@ Dokument bearbeiten, ist eine konsistente benutzerumgebung erforderlich. Damit w
   
 -   Durch Doppelklicken auf ein Dokument im Projektmappen-Explorer sollten dieselbe Aktion wie ausführen **öffnen**.  
   
--   Wenn mehr als einer der Redakteure auf einen Dokumenttyp verwendet werden kann, sollte der Benutzer kann außer Kraft gesetzt oder zurückgesetzt die Standardaktion für ein bestimmtes Dokument mit werden die **Öffnen mit** (Dialogfeld), indem Sie mit der rechten Maustaste auf die Datei und auswählen **Öffnen mit** aus dem Kontextmenü.  
+-   Wenn mehr als einer der Redakteure auf einen Dokumenttyp verwendet werden kann, sollte der Benutzer kann außer Kraft gesetzt oder zurückgesetzt die Standardaktion für ein bestimmtes Dokument mit werden die **Öffnen mit** (Dialogfeld), indem Sie mit der rechten Maustaste auf die Datei und auswählen **öffnen Mit** aus dem Kontextmenü.  
   
 -   Erstellen Sie einen Assistenten in einem Dokument nicht gut.  
   
@@ -325,12 +310,12 @@ Betrachten Sie die Unterschiede zwischen diesen grundlegenden Typen von Dialogfe
   
 -   [Dialogfelder in den Ebenen](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_LayeredDialogs) werden verwendet, um die optimale Nutzung von Bildschirmfläche zu stellen, wenn ein einzelnes Stück UI mehrere Gruppen von Steuerelementen umfasst. Im Dialogfeld Gruppierungen sind "über Registerkarten-Steuerelemente, Steuerelemente für die Seitennavigation oder Schaltflächen in den Ebenen", damit der Benutzer die Gruppierung auf einem bestimmten Moment sehen kann.  
   
--   [Assistenten](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_Wizards) eignen sich für das Umleiten von des Benutzers über eine logische Sequenz von Schritten, die auf den Abschluss einer Aufgabe. In sequenziellen Panels, manchmal Einführung in anderen Workflows ("Verzweigung") eine Auswahl in der vorherigen Seite abhängig sind eine Reihe von Optionen angeboten.  
+-   [Assistenten](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_Wizards) eignen sich für das Umleiten von des Benutzers über eine logische Sequenz von Schritten, die auf den Abschluss einer Aufgabe. In sequenziellen Bereiche, in einigen Fällen Einführung in anderen Workflows ("Verzweigung") eine Auswahl in der vorherigen Seite abhängig sind eine Reihe von Optionen angeboten.  
   
 ####  <a name="BKMK_SimpleDialogs"></a>Einfache Dialogfelder  
 Ein einfaches Dialogfeld ist eine Präsentation von Steuerelementen in einem einzelnen modale Fenster. In dieser Präsentation kann Variationen des komplexen Steuerelementmuster, z. B. einer Feldauswahl enthalten. Führen Sie für einfache Dialoge das Standardlayout allgemeine als auch bestimmten Layout für komplexe Steuerelement Gruppierungen erforderlich sind.
   
-![> erstellen Schlüssel mit starkem Namen wird ein Beispiel für ein einfaches Dialogfeld in Visual Studio.](../../extensibility/ux-guidelines/media/0704-01_createstrongnamekey.png "0704-01_CreateStrongNameKey")<br />Erstellen Schlüssel mit starkem Namen wird ein Beispiel für ein einfaches Dialogfeld in Visual Studio.
+![> erstellen Schlüssel mit starkem Namen wird ein Beispiel für ein einfaches Dialogfeld in Visual Studio. ] (../../extensibility/ux-guidelines/media/0704-01_createstrongnamekey.png "0704 Artikelnr 01_CreateStrongNameKey")<br />Erstellen Schlüssel mit starkem Namen wird ein Beispiel für ein einfaches Dialogfeld in Visual Studio.
   
 ####  <a name="BKMK_LayeredDialogs"></a>Mehrschicht-Dialogfelder  
 Überlappende Dialoge enthalten Registerkarten, Dashboards und eingebettete Strukturen. Sie werden verwendet, um die Immobilien zu maximieren, wenn es mehrere Gruppen von Steuerelementen, die in ein einzelnes Stück UI angeboten werden. Die Gruppierungen sind überlagernd, damit der Benutzer die Gruppierung auf einem beliebigen Zeitpunkt sehen kann.  
@@ -339,7 +324,7 @@ Im einfachsten Fall ist der Mechanismus für den Wechsel zwischen Gruppierungen 
   
 Die **Tools &gt; Optionen** Dialog ist ein Beispiel für ein Dialogfeld mit Ebenen mit einer eingebetteten Struktur:  
   
-![Extras > Optionen ist ein Beispiel für ein Dialogfeld mit Ebenen in Visual Studio.](../../extensibility/ux-guidelines/media/0704-02_toolsoptions.png "0704-02_ToolsOptions")<br />Extras > Optionen ist ein Beispiel für ein Dialogfeld mit Ebenen in Visual Studio.
+![Extras > Optionen ist ein Beispiel für ein Dialogfeld mit Ebenen in Visual Studio. ] (../../extensibility/ux-guidelines/media/0704-02_toolsoptions.png "0704 Artikelnr 02_ToolsOptions")<br />Extras > Optionen ist ein Beispiel für ein Dialogfeld mit Ebenen in Visual Studio.
   
 ####  <a name="BKMK_Wizards"></a>Assistenten  
 Assistenten eignen sich für das Umleiten von des Benutzers über eine logische Sequenz von Schritten bei der Durchführung einer Aufgabe. Eine Reihe von Optionen werden in sequenziellen Bereiche angeboten, und der Benutzer muss bei jedem Schritt vor dem Fortfahren auf die nächste folgen. Sobald genügend Standardwerte verfügbar sind, werden die **Fertig stellen** Schaltfläche ist aktiviert.  
@@ -366,7 +351,7 @@ Es gibt zwei Empfehlungen für die in der Größe veränderbaren Dialogfelder:
   
 1.  Eine Mindestgröße für den Dialog definiert ist, die für das Steuerelement zu optimieren, wird ohne Clipping festlegen und anpassen, um sinnvolle Lokalisierung Wachstum.  
   
-2.  Dass die Benutzer skaliert Größe Sitzung erhalten bleibt. Z. B. wenn der Benutzer ein Dialogfeld zu 150 % skaliert werden, wird dann einem nachfolgenden Start des Dialogs 150 % angezeigt.  
+2.  Dass die Benutzer skaliert Größe Sitzung erhalten bleibt. Z. B. wenn der Benutzer ein Dialogfeld zu 150 % skaliert werden, werden dann einer nachfolgenden Start des Dialogs 150 % angezeigt.  
   
 #### <a name="position"></a>Position  
 Dialoge müssen in der IDE beim ersten Start zentriert angezeigt werden. Die letzte Position von Dialogen nicht veränderbare Größen muss nicht beibehalten werden, damit sie auf nachfolgende Aufrufe zentriert angezeigt werden. 
@@ -395,12 +380,12 @@ Mit vorhandenen steuerelementkonfigurationen, die in Visual Studio dasselbe Ziel
   
 -   Hilfe-Schaltflächen in der Titelleiste sind veraltet. Fügen Sie sie nicht Sie neue Dialogfelder. Wenn sie vorhanden sind, sollten sie ein Hilfethema starten, die grundsätzlich relevant für die Aufgabe ist.  
   
- ![Spezifikationen der Richtlinie für Titelleisten in Visual Studio-Dialogfelder](../../extensibility/ux-guidelines/media/0704-03_titlebarspecs.png "0704-03_TitleBarSpecs")<br />Spezifikationen der Richtlinie für Titelleisten in Visual Studio-Dialogfelder
+ ![Spezifikationen der Richtlinie für Titelleisten in Visual Studio-Dialogfeldern](../../extensibility/ux-guidelines/media/0704-03_titlebarspecs.png "0704 Artikelnr 03_TitleBarSpecs")<br />Spezifikationen der Richtlinie für Titelleisten in Visual Studio-Dialogfelder
   
 #### <a name="control-buttons"></a>Steuerelementschaltflächen  
 Im allgemeinen **OK**, **"Abbrechen"**, und **Hilfe** Schaltflächen in der unteren rechten Ecke des Dialogfelds horizontal angeordnet werden soll. Der alternative vertikale Stapel ist zulässig, wenn ein Dialogfeld mehrere andere Schaltflächen im unteren Bereich des Dialogfelds verfügt, die visual Verwechslungen mit den Steuerelementschaltflächen darstellen würde.  
   
-![Akzeptable Konfigurationen für Steuerelementschaltflächen in Visual Studio-Dialogfelder](../../extensibility/ux-guidelines/media/0704-04_controlbuttonconfig.png "0704-04_ControlButtonConfig")<br />Akzeptable Konfigurationen für Steuerelementschaltflächen in Visual Studio-Dialogfelder
+![Akzeptable Konfigurationen für Steuerelementschaltflächen in Visual Studio-Dialogfeldern](../../extensibility/ux-guidelines/media/0704-04_controlbuttonconfig.png "0704 Artikelnr 04_ControlButtonConfig")<br />Akzeptable Konfigurationen für Steuerelementschaltflächen in Visual Studio-Dialogfelder
   
 Das Dialogfeld "muss eine Standardschaltfläche für das Steuerelement enthalten. Um zu bestimmen, den bewährte Befehl als Standard verwenden, wählen Sie aus den folgenden Optionen (entsprechend der Rangfolge aufgelistet):  
   
@@ -415,7 +400,7 @@ Verwenden Sie keine Zugriffstasten für **OK**, **"Abbrechen"**, oder **Hilfe** 
   
 | Schaltflächenname | Tastenkombination |  
 | --- | --- |  
-| OK | EINGABETASTE |  
+| OK | Eingabe |  
 | Abbrechen | Esc |  
 | Hilfe | F1 |  
   
@@ -437,7 +422,7 @@ Es gibt vor- und Nachteile der verschiedenen Methoden überlagern Benutzeroberfl
 | Mechanismus wechseln | Vorteile und die richtige Verwendung | Nachteile und nicht ordnungsgemäße Verwendung |  
 | --- | --- | --- |  
 | Registersteuerelement | Dialogfelder in Verwandte Gruppen logisch zu gruppieren<br /><br />Für weniger als fünf (oder die Anzahl der Registerkarten, die in einer Zeile entsprechen, über das Dialogfeld ") hilfreich Seiten von verwandten Steuerelementen im Dialogfeld"<br /><br />Registerkartenbezeichnungen müssen kurz sein: ein oder zwei Wörter, die schnell den Inhalt<br /><br />Eine allgemeine System Dialogfeld Stil<br /><br />Beispiel: **-Datei-Explorer &gt; Elementeigenschaften** | Beschreibende kurze Bezeichnungen vornehmen kann schwierig sein<br /><br />In der Regel Skalierung keine nach fünf Registerkarten in einem Dialogfeld<br /><br />Ungeeignete haben zu viele Registerkarten für eine Zeile (verwenden Sie eine alternative Strukturlayout Technik)<br /><br />Nicht erweiterbare |  
-| Seitenleistennavigation | Einfache switching Gerät, das weitere Kategorien als Registerkarten aufnehmen kann<br /><br />Flache Liste der Kategorien (ohne Hierarchie)<br /><br />Erweiterbare<br /><br />Beispiel: **anpassen... &gt; Hinzufügen (Befehl)** | Nicht für eine gute Verwendung für horizontalen Bereich, wenn weniger als drei Gruppen vorhanden sind<br /><br />Task möglicherweise besser geeignet, um eine Dropdownliste |  
+| Seitenleistennavigation | Einfache switching Gerät, das weitere Kategorien als Registerkarten aufnehmen kann<br /><br />Flache Liste der Kategorien (ohne Hierarchie)<br /><br />Erweiterbare<br /><br />Beispiel: **anpassen... &gt;Hinzufügen (Befehl)** | Nicht für eine gute Verwendung für horizontalen Bereich, wenn weniger als drei Gruppen vorhanden sind<br /><br />Task möglicherweise besser geeignet, um eine Dropdownliste |  
 | Struktursteuerelement | Ermöglicht unbegrenzte Kategorien<br /><br />Ermöglicht die Gruppierung und/oder die Hierarchie der Kategorien<br /><br />Erweiterbare<br /><br />Beispiel: **Tools &gt; Optionen** | Stark geschachtelte Hierarchien, so kann eine übermäßige horizontalen Bildlauf<br /><br />Visual Studio verfügt über eine Overabundance von Strukturansichten |  
 | Assistent | Unterstützt Sie bei Abschluss der Aufgabe von spaltenänderungsattributen des Benutzers über aufgabenbasierte, aufeinander folgende Schritte aus: der Assistent stellt eine übergeordnete Aufgabe und die einzelnen Bereiche darstellen, Unteraufgaben erforderlich, um die gesamte Aufgabe<br /><br />Ist nützlich, wenn die Aufgabe über Ui, mehrere als wenn der Benutzer andernfalls müssten verwenden Sie mehrere Editoren und Toolfenstern zum Abschließen der Aufgabe<br /><br />Ist nützlich, wenn der Task Verzweigung erfordert<br /><br />Ist nützlich, wenn die Aufgabe Abhängigkeiten zwischen den Schritten enthält<br /><br />Ist nützlich, wenn mehrere ähnliche Aufgaben mit einer Entscheidung Verzweigung in einem Dialogfeld zum Reduzieren der Anzahl der verschiedenen ähnliche Dialogfelder angezeigt werden kann | Ungeeignet für jede Aufgabe, die einen sequenziellen Workflow keine erforderlich<br /><br />Benutzer können überschwemmt und von einem Assistenten mit zu viele Schritte verwechselt werden.<br /><br />Assistenten haben grundsätzlich Bildschirmfläche beschränkt. |  
   
@@ -446,7 +431,7 @@ Fluren und Dashboards sind Dialogfelder oder Bereiche, die als starten verweist 
   
 Alternativ können Sie eine Benutzeroberfläche, die alle verfügbaren Funktionen in einer einzelnen Auflistung bietet, anstatt die weniger übliche-Funktionalität in voneinander entfernten Standorten aus Umgestaltung einfach ein Dashboard ist.  
   
-![Hallway-Konzept zum Verfügbarmachen von weitere Benutzeroberfläche in Outlook](../../extensibility/ux-guidelines/media/0704-08_hallway.png "0704-08_Hallway")<br />Hallway-Konzept zum Verfügbarmachen von weitere Benutzeroberfläche in Outlook
+![Hallway-Konzept zum Verfügbarmachen von weitere Benutzeroberfläche in Outlook](../../extensibility/ux-guidelines/media/0704-08_hallway.png "0704 Artikelnr 08_Hallway")<br />Hallway-Konzept zum Verfügbarmachen von weitere Benutzeroberfläche in Outlook
   
 ##### <a name="adaptive-ui"></a>Adaptive UI  
 Ein- oder Ausblenden der Benutzeroberfläche basierend auf Nutzung oder eine Self-gemeldeten benutzererfahrung ist eine weitere Möglichkeit zur Darstellung der benötigten Benutzeroberfläche und gleichzeitig andere Teile von. Dies wird in Visual Studio, nicht empfohlen, die Algorithmen für die Entscheidung, wann ein- oder Ausblenden der Benutzeroberfläche können kompliziert sein, und die Regeln werden immer in der falschen für einige Satz von Fällen.  
@@ -475,7 +460,7 @@ Projekte sollten auch konsistent interaktionsmodelle für verwalten:
 -   Drag & Drop-Vorgänge  
   
 ### <a name="drag-and-drop-interaction-model"></a>Drag & Drop-Interaktionsmodell  
-Projekte klassifizieren selbst als verweisbasierten (nur Verweise auf Projektelemente im Speicher beibehalten werden können), in der Regel Directory-basierte (können nur Projektelemente physisch persistent gespeichert innerhalb der Hierarchie eines Projekts), oder gemischt (verweisen oder physischen Elemente beibehalten werden können). Die IDE hat alle drei Typen von Projekten gleichzeitig innerhalb der **Projektmappen-Explorer**.  
+Projekte klassifizieren selbst als verweisbasierten (nur Verweise auf Projektelemente im Speicher beibehalten werden können), in der Regel Directory-basierte (können nur Projektelemente physisch persistent gespeichert innerhalb der Hierarchie eines Projekts), oder gemischt (können Verweise beibehalten werden. oder physischen Elemente). Die IDE hat alle drei Typen von Projekten gleichzeitig innerhalb der **Projektmappen-Explorer**.  
   
 Aus Sicht der Drag & Drop die folgenden Merkmale treffen sollten, für jeden Typ von Projekt innerhalb der **Projektmappen-Explorer**:  
   
@@ -499,13 +484,13 @@ Nicht alle Drag-and-Drop-Vorgänge sind für Kombinationen von Verweis, Verzeich
   
 Es ist ebenfalls irreführend, die vorgeben, ein Kopiervorgangs zwischen diesen Typen von Projekten zu ermöglichen, da das Zielprojekt verweisbasierten keine unabhängige Kopie des Quellelements herstellen soll. Auf ähnliche Weise sollten STRG + UMSCHALT ziehen, um ein Verzeichnis basierende Zielprojekt nicht zulässig, weil ein Verzeichnis-basiertes Projekt Verweise beibehalten werden kann. In Fällen, in denen die Drag-and-Drop-Vorgang nicht unterstützt wird, sollte die IDE unterbinden, die Dropdownliste und anzeigen dem Benutzer nicht ablegen-Cursor (im Zeiger in der folgenden Tabelle gezeigt).  
   
-Um Drag & Drop-Verhalten ordnungsgemäß zu implementieren, muss das Quellprojekt des Ziehvorgangs sind ihrem Wesen in das Zielprojekt kommunizieren können. (Beispielsweise ist es Verweis oder Directory-basierte?) Diese Informationen wird durch das Zwischenablageformat angegeben, die von der Quelle bereitgestellt werden. Als Quelle eines Drag & (oder Kopieren der Zwischenablagevorgang) sollte ein Projekt bieten entweder `CF_VSREFPROJECTITEMS` oder `CF_VSSTGPROJECTITEMS` , je nachdem, ob das Projekt Verweis oder Directory-basierten. Beide Formate haben den gleichen Dateninhalt, also ähnelt der Windows `CF_HDROP` formatieren mit dem Unterschied, dass Listen von Zeichenfolgen, anstatt Sie Dateinamen, Double - sind`NULL` beendet Sie die Liste der `Projref` Zeichenfolgen (wie vom zurückgegeben `IVsSolution::GetProjrefOfItem` oder `::GetProjrefOfProject` je nach Bedarf).  
+Um Drag & Drop-Verhalten ordnungsgemäß zu implementieren, muss das Quellprojekt des Ziehvorgangs sind ihrem Wesen in das Zielprojekt kommunizieren können. (Beispielsweise ist es Verweis oder Directory-basierte?) Diese Informationen wird durch das Zwischenablageformat angegeben, die von der Quelle bereitgestellt werden. Als Quelle eines Drag & (oder Kopieren der Zwischenablagevorgang) sollte ein Projekt bieten entweder `CF_VSREFPROJECTITEMS` oder `CF_VSSTGPROJECTITEMS` , je nachdem, ob das Projekt Verweis oder Directory-basierten. Beide Formate haben den gleichen Dateninhalt, also ähnelt der Windows `CF_HDROP` formatieren mit dem Unterschied, dass Listen von Zeichenfolgen, anstatt Sie Dateinamen, Double - sind`NULL` beendet Sie die Liste der `Projref` Zeichenfolgen (wie vom zurückgegeben`IVsSolution::GetProjrefOfItem`oder `::GetProjrefOfProject` je nach Bedarf).  
   
-Als Ziel einer Drop (oder Einfügevorgangs Zwischenablage), sollte ein Projekt akzeptieren sowohl `CF_VSREFPROJECTITEMS` und `CF_VSSTGPROJECTITEMS`, obwohl die genaue Behandlung des Drag & Drop-Vorgangs je nach Art des Projekts Ziel und das Quellprojekt variiert. Das Quellprojekt deklariert die Art von, ob er bietet `CF_VSREFPROJECTITEMS` oder `CF_VSSTGPROJECTITEMS`. Das Ziel der Dropdownliste einen eigenen Art versteht und daher verfügt über genügend Informationen, um im Vergleich zu Entscheidungen zu treffen, ob ein verschieben, kopieren oder Link ausgeführt werden soll. Der Benutzer werden auch geändert, welche Drag & Drop-Vorgang durch Drücken der STRG, UMSCHALTTASTE oder sowohl STRG und Umschalttaste ausgeführt werden soll. Es ist wichtig für das Ablageziel um ordnungsgemäß anzugeben, welcher Vorgang im Voraus darüber erfolgen soll die `DragEnter` und `DragOver` Methoden. Die **Projektmappen-Explorer** automatisch weiß, ob das Quellprojekt und das Zielprojekt desselben Projekts sind.  
+Als Ziel einer Drop (oder Einfügevorgangs Zwischenablage), sollte ein Projekt akzeptieren sowohl `CF_VSREFPROJECTITEMS` und `CF_VSSTGPROJECTITEMS`, obwohl die genaue Behandlung des Drag & Drop-Vorgangs je nach Art des Projekts Ziel und das Quellprojekt variiert. Das Quellprojekt deklariert sind ihrem Wesen nach, ob er bietet `CF_VSREFPROJECTITEMS` oder `CF_VSSTGPROJECTITEMS`. Das Ziel der Dropdownliste einen eigenen Art versteht und daher verfügt über genügend Informationen, um im Vergleich zu Entscheidungen zu treffen, ob ein verschieben, kopieren oder Link ausgeführt werden soll. Der Benutzer werden auch geändert, welche Drag & Drop-Vorgang durch Drücken der STRG, UMSCHALTTASTE oder sowohl STRG und Umschalttaste ausgeführt werden soll. Es ist wichtig für das Ablageziel um ordnungsgemäß anzugeben, welcher Vorgang im Voraus darüber erfolgen soll die `DragEnter` und `DragOver` Methoden. Die **Projektmappen-Explorer** automatisch weiß, ob das Quellprojekt und das Zielprojekt desselben Projekts sind.  
   
 Projektelemente über Instanzen von Visual Studio (z. B. von einer Instanz von devenv.exe zu einem anderen) ziehen wird ausdrücklich nicht unterstützt. Die **Projektmappen-Explorer** auch direkt wird deaktiviert.  
   
-Der Benutzer muss immer bestimmen die Auswirkungen eines Drag-and-Drop-Vorgangs durch Auswählen eines Elements, ziehen es an den Zielspeicherort und beobachten, welche der folgenden Mauszeiger angezeigt wird, bevor das Element verworfen werden können:  
+Der Benutzer sollte immer sein können, um zu bestimmen, die Auswirkungen eines Drag-and-Drop-Vorgangs durch Auswählen eines Elements, ziehen es an den Zielspeicherort und beobachten, welche der folgenden Mauszeiger angezeigt wird, bevor das Element gelöscht wird:  
   
 | Mauszeiger | Befehl | Beschreibung |  
 | :---: | --- | --- |  
@@ -514,7 +499,7 @@ Der Benutzer muss immer bestimmen die Auswirkungen eines Drag-and-Drop-Vorgangs 
 | ![Maus "Symbol"verschieben""](../../extensibility/ux-guidelines/media/0706-03_mousemove.png "0706 03_MouseMove") | Verschieben | Elemente werden an den Zielspeicherort verschoben werden. |  
 | ![Symbol für "Verweis hinzufügen" Maus](../../extensibility/ux-guidelines/media/0706-04_mouseaddref.png "0706 04_MouseAddRef") | Verweis hinzufügen | Ein Verweis auf das ausgewählte Element wird an den Zielspeicherort hinzugefügt werden. |
 
-#### <a name="reference-based-projects"></a>Verweisbasierten Projekten  
+#### <a name="reference-based-projects"></a>verweisbasierten Projekten  
  In der folgenden Tabelle werden die Drag & Drop (sowie Ausschneiden/Kopieren/Einfügen) Vorgänge, die ausgeführt werden, sollten basierend auf der Art des Elements und der Modifizierer Quellschlüssel gedrückt für Ziel verwiesen-basierte Projekte zusammengefasst:  
   
 | Modifizierer | Kategorie | Das Quellelement: Referenzlink / | Das Quellelement: physischen Element bzw. die Datei-Systems (`CF_HDROP`) |  
@@ -617,7 +602,7 @@ Ein anderes Problem zu berücksichtigen ist, wie Verschiebevorgänge für Elemen
   
 1.  Wenn der Editor/Designer Öffnen keine nicht gespeicherten Änderungen verfügt, sollte das Editor-Designer-Fenster im Hintergrund geschlossen werden.  
   
-2.  Wenn der Editor/Designer Öffnen nicht gespeicherte Änderungen verfügt, sollte die Quelle des Ziehvorgangs warten, für den Löschvorgang, und fordern Sie den Benutzer nicht gespeicherte Änderungen in die offenen Dokumente zu speichern, vor dem Schließen des Fensters mit der eine Meldung ähnlich der folgenden:  
+2.  Wenn der Editor/Designer öffnen gehen nicht gespeicherte Änderungen verfügt, soll klicken Sie dann die Quelle des Ziehvorgangs warten im Dropdownmenü auftreten, und fordern Sie die Benutzer, die offenen Dokumente vor dem Schließen des Fensters mit der eine Meldung ähnlich der folgenden nicht gespeicherte Änderungen speichern :  
   
     ```  
     ==========================================================   

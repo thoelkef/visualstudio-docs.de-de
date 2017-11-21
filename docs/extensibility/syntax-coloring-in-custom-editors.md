@@ -1,62 +1,63 @@
 ---
-title: "Syntaxfarben in benutzerdefinierten Editoren | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Editoren [Visual Studio SDK] benutzerdefinierte - Farben für Syntax"
+title: Syntaxfarben in benutzerdefinierten Editoren | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: editors [Visual Studio SDK], custom - syntax coloring
 ms.assetid: 74900b9a-baef-432a-8231-4568fb5e19ad
-caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 8c7a63c077207fdc85f3ad8b57119e1c7d1ca30b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Syntaxfarben in benutzerdefinierten Editoren
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Editoren der Visual Studio\-Umgebung SDK, einschließlich den Kern des Editors, verwenden Sprachendienste, um bestimmte syntaktische Elemente zu identifizieren und sie mit den angegebenen Farben für eine Ansicht eines bestimmten Dokuments angezeigt wird.  
+# <a name="syntax-coloring-in-custom-editors"></a>Syntaxfarben in benutzerdefinierten Editoren
+Visual Studio-Umgebung SDK-Editoren, darunter auch die Core-Editor mithilfe Sprachdienste bestimmte syntaktische Elemente zu identifizieren und mit angegebenen Farben für ein bestimmtes Dokument-Ansicht anzeigen.  
   
-## Farbauftrag\-Anforderungen  
- Alle Editoren, die eine farbige Darstellung des Sprachdiensts müssen implementiert werden:  
+## <a name="colorization-requirements"></a>Farbliche Kennzeichnung von Anforderungen  
+ Alle Editoren implementieren einen Sprachdienst Colorizer müssen:  
   
-1.  Verwenden Sie ein Objekt, das <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> implementiert, um den Text getönt werden soll, und ein Objekt zu verwalten, das <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> implementiert, um eine Ansicht des Texts Dokumente bereitzustellen.  
+1.  Verwenden Sie ein Objekt, durch <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> zum Verwalten der Text, der farbig hervorgehoben werden und ein Objekt, durch <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> eine Dokumentenansicht des Texts angeben.  
   
-2.  Rufen Sie eine Schnittstelle zu einem bestimmten Sprachdienst, indem sie den VSPackages Dienstanbieter abfragt, der das identifizierende GUID des Sprachdiensts verwendet.  
+2.  Eine Schnittstelle für einen bestimmten Sprachdienst durch Abfragen der VSPackage-Dienstanbieter mit den Sprachen Dienst identifizierende GUID zu erhalten.  
   
-3.  Rufen Sie die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer.SetLanguageServiceID%2A>\-Methode des Objekts auf, das <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>implementiert.  Diese Methode ordnet den Sprachdienst mit der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> Implementierung zu VSPackages, der verwendet wird, um den Text zu verwalten, der getönt werden soll.  
+3.  Rufen Sie die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer.SetLanguageServiceID%2A> Methode das Objekt, durch <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>. Diese Methode ordnet der Sprachdienst mit der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> Implementierung, die das VSPackage verwendet, um den Text zu verwalten, die farbig hervorgehoben werden.  
   
-## Kern\-Editor\-Verwendung einer farbigen Darstellung des Sprachdiensts  
- Wenn ein Sprachdienst mit einem farbigen Darstellung von einer Instanz des zentralen editors abgerufen wird, wird die Analyse und das Rendern von Text durch eine farbige Darstellung des Sprachdiensts automatisch auf, ohne weitere Komponenten auf dem Intervention erforderlich ist.  
+## <a name="core-editor-usage-of-a-language-services-colorizer"></a>Core-Editor einen Sprachdienst Colorizer Verwendung  
+ Wenn ein Sprachdienst mit einem Colorizer von einer Instanz von den Core-Editor, für die Analyse und das rendering von Text durch einen Sprachdienst Colorizer abgerufen wird, erfolgt automatisch ohne weiteren Eingriff Ihrerseits.  
   
  Die IDE transparent:  
   
--   Ruft die farbige Darstellung bei Bedarf auf, um Text zu analysieren und zu analysieren, wie sie in der Implementierung von <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>hinzugefügt oder geändert wird.  
+-   Ruft die Colorizer nach Bedarf, zu analysieren und Analysieren von Text, da sie hinzugefügt oder werden, in der Implementierung der geändert <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>.  
   
--   Stellt sicher, dass die Anzeige, die von der Ansicht Dokumente aus der bereitgestellten <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> Implementierung unter Verwendung der angegebenen Informationen aktualisiert und neu gezeichnet wird, die von der farbige Darstellung zurückgegeben werden.  
+-   Stellt sicher, dass die Anzeige von die Dokumentansicht gebotenen bereitgestellten der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> Implementierung aktualisiert und neu gezeichnet, anhand der Informationen, die von der Colorizer zurückgegeben wird.  
   
-## Nichtkern\- Editor\-Verwendung einer farbigen Darstellung des Sprachdiensts  
- Editor Nichtkern\- Instanzen können einen Syntax farbauftrag auch mithilfe des Sprachdiensts für sie müssen jedoch explizit abrufen und die farbige Darstellung des Diensts zu übernehmen und ihr Dokument neu zu zeichnen verweist.  
+## <a name="non-core-editor-usage-of-a-language-services-colorizer"></a>Nicht-Core-Editor Verwendung einen Sprachdienst Colorizer  
+ Nicht-Core Editorinstanzen können auch einen Sprachdienst Syntax farbliche Kennzeichnung Dienst, jedoch müssen explizit abgerufen werden und der Dienst Colorizer anwenden und ihre Dokumentansichten selbst neu gezeichnet werden.  
   
- So fügen Sie dazu erfordert einen Nichtkern\- Editor:  
+ Zu diesem Zweck benötigen Sie einen nicht-Core-Editor, um Folgendes:  
   
-1.  Ruft ein Objekt mit farbigen Darstellung des Sprachdiensts \(das `T:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer` und <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer2>implementiert\).  VSPackage geschieht, indem die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetColorizer%2A>\-Methode für die Schnittstelle des Sprachdiensts aufruft.  
+1.  Rufen Sie einen Sprachdienst Colorizer Objekt (implementiert `T:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer` und <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer2>). Das VSPackage wird dies durch Aufrufen der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetColorizer%2A> Methode auf der Sprachdienst-Schnittstelle.  
   
-2.  Rufen Sie die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A>\-Methode auf, um anzufordern, dass ein bestimmter Textabschnitt darfarbig gestellt wird.  
+2.  Rufen Sie die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> Methode, um anzufordern, dass eine bestimmte Textabschnitts farbig hervorgehoben werden.  
   
-     Die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A>\-Methode gibt ein Array von Werten, einen für jeden Buchstaben im Textabschnitt zurück, der getönt werden soll.  Er gibt außerdem den Textabschnitt als ein bestimmter Typ färbbares Element, z. B. einen Kommentar ein Schlüsselwort oder einen Datentyp.  
+     Die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> Methode gibt ein Array von Werten, eine für jedes Buchstabens im Text erstreckt farbig hervorgehoben wird. Außerdem ermittelt es des Textabschnitts als eine bestimmte Art von färbbare Element, z. B. einen Kommentar, Schlüsselwort oder Datentyp.  
   
-3.  Verwenden Sie die Farbauftrag Informationen, die von <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> zurückgegeben werden, um seinen Text anzuzeigen und neu zu zeichnen.  
+3.  Verwenden Sie die farbliche Kennzeichnung Informationen zurückgegebenes <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> , zu zeichnen und der Anzeigetext.  
   
 > [!NOTE]
->  Neben der Verwendung einer farbigen Darstellung des Sprachdiensts, kann ein VSPackage die Möglichkeit, allgemeine Visual Studio\-Umgebung SDK TEXT farbton Mechanismus verwenden.  Weitere Informationen zu diesem Verfahren finden Sie unter [Verwenden von Schriftarten und Farben](../extensibility/using-fonts-and-colors.md).  
+>  Zusätzlich zur Verwendung des Sprachdiensts Colorizer, können eine VSPackage den Mechanismus zur allgemeinen Visual Studio-Umgebung SDK Text TAB-TASTE verwenden. Weitere Informationen zu diesem Mechanismus finden Sie unter [Verwenden von Schriftarten und Farben](../extensibility/using-fonts-and-colors.md).  
   
-## Siehe auch  
- [Syntaxfarben in eine Legacy\-Sprachdienst](../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)   
- [Implementieren von Farben für Syntax](../extensibility/internals/implementing-syntax-coloring.md)   
- [Gewusst wie: Verwenden von integrierten Färbbare Elemente](../extensibility/internals/how-to-use-built-in-colorable-items.md)   
- [Benutzerdefinierte Färbbare Elemente](../extensibility/internals/custom-colorable-items.md)
+## <a name="see-also"></a>Siehe auch  
+ [Syntaxfarben in einen Legacy-Sprachdienst](../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)   
+ [Implementieren die Farben für Syntax](../extensibility/internals/implementing-syntax-coloring.md)   
+ [Vorgehensweise: Verwenden von integrierten Färbbare Elemente](../extensibility/internals/how-to-use-built-in-colorable-items.md)   
+ [Benutzerdefinierte einfärbbare Elemente](../extensibility/internals/custom-colorable-items.md)

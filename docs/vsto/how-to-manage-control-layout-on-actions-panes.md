@@ -1,12 +1,10 @@
 ---
-title: 'How to: Manage Control Layout on Actions Panes | Microsoft Docs'
+title: 'Vorgehensweise: Verwalten des Steuerelementlayouts in Aktionsbereichen | Microsoft Docs'
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -17,63 +15,65 @@ helpviewer_keywords:
 - controls [Office development in Visual Studio], layout on actions panes
 - smart documents [Office development in Visual Studio], control layout
 ms.assetid: 857550d0-b9c0-4d2f-a947-dd955bcf2823
-caps.latest.revision: 59
-author: kempb
-ms.author: kempb
+caps.latest.revision: "59"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 62e24a207184c63d950c07934bee5ca98609aaaf
-ms.contentlocale: de-de
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: dbc6f8876236d1a056874500aea4878f9643f91b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="how-to-manage-control-layout-on-actions-panes"></a>How to: Manage Control Layout on Actions Panes
-  An actions pane is docked to the right of a document or worksheet by default; however, it can be docked to the left, top, or bottom. If you are using multiple user controls, you can write code to properly stack the user controls on the actions pane. For more information, see [Actions Pane Overview](../vsto/actions-pane-overview.md).  
+# <a name="how-to-manage-control-layout-on-actions-panes"></a>Gewusst wie: Verwalten des Steuerelementlayouts in Aktionsbereichen
+  Ein Aktionsbereich ist standardmäßig rechts neben einem Dokument oder Arbeitsblatt angedockt; Es kann jedoch nach links, oben oder unten angedockt werden. Wenn Sie mehrere Benutzersteuerelemente verwenden, können Sie Code aus, um die Benutzersteuerelemente im Aktionsbereich richtig gestapelt schreiben. Weitere Informationen finden Sie unter [Actions Pane Overview](../vsto/actions-pane-overview.md).  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
- The stack order of the controls depends on whether the actions pane is docked vertically or horizontally.  
+ Die Stapelreihenfolge der Steuerelemente, hängt davon ab, ob der Aktionsbereich vertikal oder horizontal angedockt ist.  
   
 > [!NOTE]  
->  If the user resizes the actions pane at run time, you can set the controls to resize with the actions pane. You can use the <xref:System.Windows.Forms.Control.Anchor%2A> property of a Windows Forms control to anchor controls to the actions pane. For more information, see [How to: Anchor Controls on Windows Forms](/dotnet/framework/winforms/controls/how-to-anchor-controls-on-windows-forms).  
+>  Wenn der Benutzer zur Laufzeit die Größe der Aktionsbereich ändern, können Sie die Steuerelemente mit dem Aktionsbereich Ändern der Größe festlegen. Sie können die <xref:System.Windows.Forms.Control.Anchor%2A>-Eigenschaft eines Windows Forms-Steuerelements verwenden, um Steuerelemente im Aktionsbereich zu verankern. Weitere Informationen finden Sie unter [wie: Verankern von Steuerelementen in Windows Forms](/dotnet/framework/winforms/controls/how-to-anchor-controls-on-windows-forms).  
   
 > [!NOTE]  
->  Your computer might show different names or locations for some of the Visual Studio user interface elements in the following instructions. The Visual Studio edition that you have and the settings that you use determine these elements. For more information, see [Personalize the Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md).  
+>  Auf Ihrem Computer werden möglicherweise andere Namen oder Speicherorte für die Benutzeroberflächenelemente von Visual Studio angezeigt als die in den folgenden Anweisungen aufgeführten. Diese Elemente sind von der jeweiligen Visual Studio-Version und den verwendeten Einstellungen abhängig. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../ide/personalizing-the-visual-studio-ide.md).  
   
-### <a name="to-set-the-stack-order-of-the-actions-pane-controls"></a>To set the stack order of the actions pane controls  
+### <a name="to-set-the-stack-order-of-the-actions-pane-controls"></a>Festzulegende die Stapelreihenfolge der Aktionsbereich-Steuerelementen  
   
-1.  Open a document-level project for Microsoft Office Word that includes an actions pane with multiple user controls or nested actions pane controls. For more information, see [How to: Add an Actions Pane to Word Documents or Excel Workbooks](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md).  
+1.  Öffnen Sie ein Projekt auf Dokumentebene für Microsoft Office Word, die einen Aktionsbereich mehrere Benutzersteuerelemente oder geschachtelte Aktionsbereich-Steuerelementen enthält. Weitere Informationen finden Sie unter [wie: Hinzufügen eines Aktionsbereichs zu Word-Dokumenten oder Excel-Arbeitsmappen](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md).  
   
-2.  Right-click **ThisDocument.cs** or **ThisDocument.vb** in **Solution Explorer** and then click **View Code**.  
+2.  Mit der rechten Maustaste **ThisDocument.cs** oder **ThisDocument.vb** in **Projektmappen-Explorer** , und klicken Sie dann auf **Code anzeigen**.  
   
-3.  In the <xref:Microsoft.Office.Tools.ActionsPane.OrientationChanged> event handler of the actions pane, check if the orientation of the actions pane is horizontal.  
+3.  In der <xref:Microsoft.Office.Tools.ActionsPane.OrientationChanged> -Ereignishandler des Aktionsbereichs, überprüfen Sie, ob der Aktionsbereich horizontal ausgerichtet ist.  
   
-     [!code-csharp[Trin_VstcoreActionsPaneWord#30](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#30)]  [!code-vb[Trin_VstcoreActionsPaneWord#30](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#30)]  
+     [!code-csharp[Trin_VstcoreActionsPaneWord#30](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#30)]
+     [!code-vb[Trin_VstcoreActionsPaneWord#30](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#30)]  
   
-4.  If the orientation is horizontal, stack the action pane controls from the left; otherwise, stack them from the top.  
+4.  Bei horizontal ausgerichtet ist, stapeln Sie die Aktionsbereich-Steuerelemente aus der linken Seite. andernfalls, stapeln sie von der obersten Position.  
   
-     [!code-csharp[Trin_VstcoreActionsPaneWord#31](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#31)]  [!code-vb[Trin_VstcoreActionsPaneWord#31](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#31)]  
+     [!code-csharp[Trin_VstcoreActionsPaneWord#31](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#31)]
+     [!code-vb[Trin_VstcoreActionsPaneWord#31](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#31)]  
   
-5.  In C#, you must add an event handler for the `ActionsPane` to the <xref:Microsoft.Office.Tools.Word.Document.Startup> event handler. For information about creating event handlers, see [How to: Create Event Handlers in Office Projects](../vsto/how-to-create-event-handlers-in-office-projects.md).  
+5.  In c# müssen Sie einen Ereignishandler für Hinzufügen der `ActionsPane` auf die <xref:Microsoft.Office.Tools.Word.Document.Startup> -Ereignishandler. Informationen zum Erstellen von Ereignishandlern finden Sie unter [Vorgehensweise: Erstellen von Ereignishandlern in Office-Projekten](../vsto/how-to-create-event-handlers-in-office-projects.md).  
   
      [!code-csharp[Trin_VstcoreActionsPaneWord#32](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#32)]  
   
-6.  Run the project and verify that the actions pane controls are stacked left to right when the actions pane is docked at the top of the document, and the controls are stacked from top to bottom when the actions pane is docked at the right side of the document.  
+6.  Führen Sie das Projekt, und stellen Sie sicher, dass der Aktionsbereich-Steuerelementen von links nach rechts gestapelt sind, wenn der Aktionsbereich am oberen Rand des Dokuments angedockt ist und die Steuerelemente werden von oben nach unten gestapelt, wenn im Aktionsbereich auf der rechten Seite des Dokuments angedockt ist.  
   
-## <a name="example"></a>Example  
- [!code-csharp[Trin_VstcoreActionsPaneWord#29](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#29)] [!code-vb[Trin_VstcoreActionsPaneWord#29](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#29)]  
+## <a name="example"></a>Beispiel  
+ [!code-csharp[Trin_VstcoreActionsPaneWord#29](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#29)]
+ [!code-vb[Trin_VstcoreActionsPaneWord#29](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#29)]  
   
-## <a name="compiling-the-code"></a>Compiling the Code  
- This example requires:  
+## <a name="compiling-the-code"></a>Kompilieren des Codes  
+ Für dieses Beispiel benötigen Sie Folgendes:  
   
--   A Word document-level project with an actions pane that contains multiple user controls or nested actions pane controls.  
+-   Ein Projekt auf Dokumentebene Word mit einem Aktionsbereich, der mehrere Benutzersteuerelemente enthält oder geschachtelte Aktionsbereich steuert.  
   
-## <a name="see-also"></a>See Also  
- [Actions Pane Overview](../vsto/actions-pane-overview.md)   
- [How to: Add an Actions Pane to Word Documents or Excel Workbooks](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)   
- [How to: Add an Actions Pane to Word Documents or Excel Workbooks](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)   
- [Walkthrough: Inserting Text into a Document from an Actions Pane](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)   
- [Walkthrough: Inserting Text into a Document from an Actions Pane](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)  
+## <a name="see-also"></a>Siehe auch  
+ [Aktionsbereichsübersicht](../vsto/actions-pane-overview.md)   
+ [Vorgehensweise: Hinzufügen eines Aktionsbereichs zu Word-Dokumenten oder Excel-Arbeitsmappen](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)   
+ [Vorgehensweise: Hinzufügen eines Aktionsbereichs zu Word-Dokumenten oder Excel-Arbeitsmappen](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)   
+ [Exemplarische Vorgehensweise: Einfügen von Text in ein Dokument aus einem Aktionsbereich](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)   
+ [Exemplarische Vorgehensweise: Einfügen von Text in ein Dokument aus einem Aktionsbereich](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)  
   
   

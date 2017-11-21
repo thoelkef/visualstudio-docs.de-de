@@ -1,27 +1,30 @@
 ---
-title: "IActiveScriptSite::GetItemInfo | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IActiveScriptSite::GetItemInfo | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IActiveScriptSite.GetItemInfo
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "IActiveScriptSite_GetItemInfo"
+helpviewer_keywords: IActiveScriptSite_GetItemInfo
 ms.assetid: f859ed3b-02c1-4924-99f8-5f5bf1bf8405
-caps.latest.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: ccb898c14571d1f1fd1fcae7cb0b9a6d322f2754
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# IActiveScriptSite::GetItemInfo
-Ermöglicht dem Skriptmodul, erhält Informationen über ein Element, das der [IActiveScript::AddNamedItem](../../winscript/reference/iactivescript-addnameditem.md)\-Methode hinzugefügt wird.  
+# <a name="iactivescriptsitegetiteminfo"></a>IActiveScriptSite::GetItemInfo
+Ermöglicht das Skriptmodul zum Abrufen von Informationen zu einem Element hinzugefügt, mit der [IActiveScript::AddNamedItem](../../winscript/reference/iactivescript-addnameditem.md) Methode.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 HRESULT GetItemInfo(  
@@ -32,36 +35,36 @@ HRESULT GetItemInfo(
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `pstrName`  
- \[in\] Der Name mit dem Element zugeordnet, wie in der [IActiveScript::AddNamedItem](../../winscript/reference/iactivescript-addnameditem.md)\-Methode angegeben.  
+ [in] Das Element, entsprechend den Angaben in zugeordnete Name der [IActiveScript::AddNamedItem](../../winscript/reference/iactivescript-addnameditem.md) Methode.  
   
  `dwReturnMask`  
- \[in\] Ein Bitmaskenangeben, welche Informationen zum Element zurückgegeben werden sollen.  Das Skriptmodul sollte die Mindestmenge von Informationen anfordern möglich, da einige der Rückgabeparameter \(beispielsweise, `ITypeInfo`\) beträchtliche Zeit müssen können zu laden oder zu generieren.  Kann eine Kombination der folgenden Werte:  
+ [in] Eine Bitmaske, die angeben, welche Informationen über das Element zurückgegeben werden soll. Das Skriptmodul sollte mindestens ein Videospeicher von Informationen möglich anfordern, da einige der Rückgabeparameter (z. B. `ITypeInfo`) dauert sehr viel Zeit zum Laden oder zu generieren. Eine Kombination der folgenden Werte ist möglich:  
   
 |Wert|Bedeutung|  
-|----------|---------------|  
-|SCRIPTINFO\_IUNKNOWN|Gibt die `IUnknown`\-Schnittstelle für dieses Element zurück.|  
-|SCRIPTINFO\_ITYPEINFO|Gibt die `ITypeInfo`\-Schnittstelle für dieses Element zurück.|  
+|-----------|-------------|  
+|SCRIPTINFO_IUNKNOWN|Gibt die `IUnknown` Schnittstelle für dieses Element.|  
+|SCRIPTINFO_ITYPEINFO|Gibt die `ITypeInfo` Schnittstelle für dieses Element.|  
   
  `ppunkItem`  
- \[out\] Zugeordnete Adresse einer Variablen, die einen Zeiger auf die `IUnknown`\-Schnittstelle empfängt, mit dem angegebenen Element zu.  Das Skriptmodul kann die `IUnknown::QueryInterface`\-Methode verwenden, erhält die `IDispatch`\-Schnittstelle für das Element.  Dieser Parameter empfängt NULL, wenn `dwReturnMask` nicht den SCRIPTINFO\_IUNKNOWN\-Wert einschließt.  Außerdem empfängt er NULL, wenn kein Objekt vorhanden ist, das mit dem Elementnamen zugeordnet wird, Dieser Mechanismus wird verwendet, um eine einfache Klasse erstellt, als das genannte Element mit dem SCRIPTITEM\_CODEONLY\-Flag hinzugefügt wurde, das in der [IActiveScript::AddNamedItem](../../winscript/reference/iactivescript-addnameditem.md)\-Methode festgelegt wurde.  
+ [out] Adresse einer Variablen, die einen Zeiger auf empfängt die `IUnknown` Schnittstelle, die dem angegebenen Element zugeordnet sind. Das Skriptmodul können die `IUnknown::QueryInterface` Methode zum Abrufen der `IDispatch` Schnittstelle für das Element. Dieser Parameter NULL empfängt, wenn `dwReturnMask` schließt nicht den SCRIPTINFO_IUNKNOWN-Wert. Darüber hinaus erhält sie NULL, wenn kein Objekt, das den Namen des Elements zugeordnet ist; Dieser Mechanismus wird verwendet, um eine einfache Klasse zu erstellen, wenn das benannte Element, mit dem SCRIPTITEM_CODEONLY-Flag festgelegt hinzugefügt wurde, der [IActiveScript::AddNamedItem](../../winscript/reference/iactivescript-addnameditem.md) Methode.  
   
  `ppTypeInfo`  
- \[out\] Zugeordnete Adresse einer Variablen, die einen Zeiger auf die `ITypeInfo`\-Schnittstelle empfängt, mit dem Element zu.  Dieser Parameter empfängt NULL, wenn `dwReturnMask` nicht den SCRIPTINFO\_ITYPEINFO\-Wert enthält oder wenn Typinformationen für dieses Element nicht verfügbar sind.  Wenn Typinformationen nicht verfügbar sind, kann das Objekt keine Ereignisse generiert, und Namensbindung muss mit der `IDispatch::GetIDsOfNames`\-Methode realisiert werden.  Beachten Sie, dass die abgerufene `ITypeInfo`\-Schnittstelle die Co\-Klasse des Elements \(TKIND\_COCLASS\) beschreibt da das Objekt möglicherweise mehrere Schnittstellen und Ereignisschnittstellen unterstützt.  Wenn das Element die `IProvideMultipleTypeInfo`\-Schnittstelle unterstützt, ist die abgerufene `ITypeInfo`\-Schnittstelle genauso, die der Index null `ITypeInfo`, der mithilfe der `IProvideMultipleTypeInfo::GetInfoOfIndex`\-Methode abgerufen würde.  
+ [out] Adresse einer Variablen, die einen Zeiger auf empfängt die `ITypeInfo` Schnittstelle, die dem Element zugeordnet. Dieser Parameter NULL empfängt, wenn `dwReturnMask` schließt nicht den Wert SCRIPTINFO_ITYPEINFO oder ob Typinformationen nicht verfügbar für dieses Element ist. Wenn Typinformationen nicht verfügbar ist, das Objekt kann nicht Ereignissen der Datenquelle und namensbindung muss realisiert werden, mit der `IDispatch::GetIDsOfNames` Methode. Beachten Sie, dass die `ITypeInfo` Schnittstelle abgerufen beschreibt die Element-Co-Klasse (TKIND_COCLASS), da das Objekt mehrere Schnittstellen und Ereignisschnittstellen unterstützen kann. Wenn das Element unterstützt die `IProvideMultipleTypeInfo` -Schnittstelle, die `ITypeInfo` Schnittstelle abgerufen ist identisch mit dem Index 0 (null) `ITypeInfo` , würde mit abgerufen werden die `IProvideMultipleTypeInfo::GetInfoOfIndex` Methode.  
   
-## Rückgabewert  
- Gibt eine der folgenden Werte:  
+## <a name="return-value"></a>Rückgabewert  
+ Gibt einen der folgenden Werte zurück:  
   
 |Rückgabewert|Bedeutung|  
-|------------------|---------------|  
+|------------------|-------------|  
 |`S_OK`|Erfolgreich.|  
 |`E_INVALIDARG`|Ein Argument war ungültig.|  
-|`E_POINTER`|Ein ungültiger Zeiger wurde angegeben.|  
-|`TYPE_E_ELEMENTNOTFOUND`|Ein Element des angegebenen Namens wurde nicht gefunden.|  
+|`E_POINTER`|Es wurde ein ungültiger Zeiger angegeben.|  
+|`TYPE_E_ELEMENTNOTFOUND`|Ein Element mit dem angegebenen Namen wurde nicht gefunden.|  
   
-## Hinweise  
- Diese Methode ruft nur die Informationen ab, die von den `dwReturnMask`\-Parameter angegeben werden; Dies verbessert die Leistung.  Wenn beispielsweise eine `ITypeInfo`\-Schnittstelle nicht für ein Element erforderlich ist, wird es nicht einfach in `dwReturnMask` angegeben.  
+## <a name="remarks"></a>Hinweise  
+ Diese Methode ruft nur die Informationen, die vom angegebenen ab der `dwReturnMask` Parameter; Dies verbessert die Leistung. Z. B. wenn ein `ITypeInfo` Schnittstelle nicht für ein Element erforderlich ist, einfach nicht angegeben ist im `dwReturnMask`.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)

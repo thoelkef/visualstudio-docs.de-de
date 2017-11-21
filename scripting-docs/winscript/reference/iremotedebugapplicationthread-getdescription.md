@@ -1,27 +1,30 @@
 ---
-title: "IRemoteDebugApplicationThread::GetDescription | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IRemoteDebugApplicationThread::GetDescription | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IRemoteDebugApplicationThread.GetDescription
 apilocation: pdm.dll
-helpviewer_keywords: 
-  - "IRemoteDebugApplicationThread::GetDescription"
+helpviewer_keywords: IRemoteDebugApplicationThread::GetDescription
 ms.assetid: 69842e9e-7c1c-4841-a6b2-31505fe85738
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 74d3f59648a5a6aa0f510e98b33c3c26b1f9db56
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# IRemoteDebugApplicationThread::GetDescription
-Ruft die Beschreibung und den Zustand dieses Threads ab.  
+# <a name="iremotedebugapplicationthreadgetdescription"></a>IRemoteDebugApplicationThread::GetDescription
+Ruft die Beschreibung und den Status dieses Threads.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 HRESULT GetDescription(  
@@ -30,22 +33,22 @@ HRESULT GetDescription(
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `pbstrDescription`  
- \[out\] Die Beschreibung des Threads.  
+ [out] Die Beschreibung dieses Threads.  
   
  `pbstrState`  
- \[out\] Die Beschreibung des Threadzustandes.  
+ [out] Die Beschreibung des Threadstatus.  
   
-## Rückgabewert  
- Die Methode gibt ein `HRESULT` zurück.  Zu den möglichen Werten zählen, aber nicht zu, die in der folgenden Tabelle beschränkt.  
+## <a name="return-value"></a>Rückgabewert  
+ Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
   
-|Wert|Description|  
-|----------|-----------------|  
+|Wert|Beschreibung|  
+|-----------|-----------------|  
 |`S_OK`|Die Methode war erfolgreich.|  
   
-## Hinweise  
- Diese Methode ruft die Beschreibung und den Zustand dieses Threads ab.  
+## <a name="remarks"></a>Hinweise  
+ Diese Methode ruft die Beschreibung und den Status dieses Threads ab.  
   
-## Siehe auch  
- [IRemoteDebugApplicationThread\-Schnittstelle](../../winscript/reference/iremotedebugapplicationthread-interface.md)
+## <a name="see-also"></a>Siehe auch  
+ [IRemoteDebugApplicationThread-Schnittstelle](../../winscript/reference/iremotedebugapplicationthread-interface.md)

@@ -1,81 +1,141 @@
 ---
-title: "Die Eigenschaft eines Projektelements beibehalten | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Eigenschaften, die einem Projektelement hinzufügen"
-  - "Projektelemente, Hinzufügen von Eigenschaften"
+title: Die Eigenschaft eines Projektelements beibehalten | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- properties, adding to a project item
+- project items, adding properties
 ms.assetid: d7a0f2b0-d427-4d49-9536-54edfb37c0f3
-caps.latest.revision: 7
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 61a477fa760a2ef9026b06facc8bc592706c5dd3
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Die Eigenschaft eines Projektelements beibehalten
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Kann eine Eigenschaft beibehalten werden sollen, die Sie ein Projektelement, z. B. der Autor einer Quelldatei hinzufügen. Dazu können Sie die Eigenschaft in der Projektdatei gespeichert.  
+# <a name="persisting-the-property-of-a-project-item"></a>Die Eigenschaft eines Projektelements beibehalten
+Möglicherweise möchten eine Eigenschaft persistent zu speichern, die Sie ein Projektelement, z. B. der Autor einer Quelldatei hinzufügen. Dazu können Sie die Eigenschaft in der Projektdatei gespeichert.  
   
- Der erste Schritt eine Eigenschaft in einer Projektdatei beibehalten wird, zum Abrufen der Hierarchie des Projekts als eine <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> Schnittstelle. Sie erhalten diese Schnittstelle durch Automatisierung oder mithilfe von <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection>. Nachdem Sie die Schnittstelle erhalten haben, können Sie es verwenden, um zu bestimmen, welche Projektelement derzeit ausgewählt ist. Nachdem Sie die Projekt\-ID haben, können Sie <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetItemAttribute%2A> zum Hinzufügen der Eigenschaft.  
+ Der erste Schritt beim Beibehalten einer Eigenschaft in einer Projektdatei wird zum Abrufen der Hierarchie des Projekts als eine <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> Schnittstelle. Sie können diese Schnittstelle abrufen, mithilfe der Automatisierung oder mithilfe von <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection>. Nachdem Sie die Schnittstelle erhalten haben, können Sie es verwenden, um zu bestimmen, welche Projektelement derzeit ausgewählt ist. Nachdem Sie die Project-Element-ID haben, können Sie <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetItemAttribute%2A> die Eigenschaft hinzufügen.  
   
  In den folgenden Verfahren, die Sie beibehalten der Eigenschaft VsPkg.cs `Author` mit dem Wert `Tom` in der Projektdatei.  
   
-### Zum Abrufen der Projekthierarchie das DTE\-Objekt  
+### <a name="to-obtain-the-project-hierarchy-with-the-dte-object"></a>Zum Abrufen der Projekthierarchie mit dem DTE-Objekt  
   
-1.  Fügen Sie den folgenden Code, um das VSPackage:  
+1.  Fügen Sie den folgenden Code, um Ihr VSPackage:  
   
-    ```c#  
-    EnvDTE.DTE dte = (EnvDTE.DTE)Package.GetGlobalService(typeof(EnvDTE.DTE)); EnvDTE.Project project = dte.Solution.Projects.Item(1); string uniqueName = project.UniqueName; IVsSolution solution = (IVsSolution)Package.GetGlobalService(typeof(SVsSolution)); IVsHierarchy hierarchy; solution.GetProjectOfUniqueName(uniqueName, out hierarchy);  
+    ```csharp  
+    EnvDTE.DTE dte = (EnvDTE.DTE)Package.GetGlobalService(typeof(EnvDTE.DTE));  
+    EnvDTE.Project project = dte.Solution.Projects.Item(1);  
+  
+    string uniqueName = project.UniqueName;  
+    IVsSolution solution = (IVsSolution)Package.GetGlobalService(typeof(SVsSolution));  
+    IVsHierarchy hierarchy;  
+    solution.GetProjectOfUniqueName(uniqueName, out hierarchy);  
     ```  
   
-### Die Projekt\-Item\-Eigenschaft mit dem DTE\-Objekt beibehalten werden.  
+### <a name="to-persist-the-project-item-property-with-the-dte-object"></a>Um den Projekt-Elementeigenschaft mit dem DTE-Objekt persistent zu speichern.  
   
-1.  Fügen Sie den folgenden Code, um den Code in der Methode in der vorherigen Prozedur gegeben:  
+1.  Fügen Sie den folgenden Code an den Code in der Methode in der vorherigen Prozedur zugewiesen:  
   
-    ```c#  
-    IVsBuildPropertyStorage buildPropertyStorage = hierarchy as IVsBuildPropertyStorage; if (buildPropertyStorage != null) { uint itemId; string fullPath = (string)project.ProjectItems.Item( "VsPkg.cs").Properties.Item("FullPath").Value; hierarchy.ParseCanonicalName(fullPath, out itemId); buildPropertyStorage.SetItemAttribute(itemId, "Author", "Tom"); }  
+    ```csharp  
+    IVsBuildPropertyStorage buildPropertyStorage =   
+        hierarchy as IVsBuildPropertyStorage;  
+    if (buildPropertyStorage != null)  
+    {  
+        uint itemId;  
+        string fullPath = (string)project.ProjectItems.Item(  
+            "VsPkg.cs").Properties.Item("FullPath").Value;  
+        hierarchy.ParseCanonicalName(fullPath, out itemId);  
+        buildPropertyStorage.SetItemAttribute(itemId, "Author", "Tom");  
+    }  
     ```  
   
-### Zum Abrufen der Projekthierarchie mit IVsMonitorSelection  
+### <a name="to-obtain-the-project-hierarchy-using-ivsmonitorselection"></a>Zum Abrufen der Projekthierarchie IVsMonitorSelection verwenden  
   
-1.  Fügen Sie den folgenden Code, um das VSPackage:  
+1.  Fügen Sie den folgenden Code, um Ihr VSPackage:  
   
-    ```c#  
-    IVsHierarchy hierarchy = null; IntPtr hierarchyPtr = IntPtr.Zero; IntPtr selectionContainer = IntPtr.Zero; uint itemid; // Retrieve shell interface in order to get current selection IVsMonitorSelection monitorSelection =     Package.GetGlobalService(typeof(SVsShellMonitorSelection)) as     IVsMonitorSelection; if (monitorSelection == null) throw new InvalidOperationException(); try { // Get the current project hierarchy, project item, and selection container for the current selection // If the selection spans multiple hierachies, hierarchyPtr is Zero IVsMultiItemSelect multiItemSelect = null; ErrorHandler.ThrowOnFailure( monitorSelection.GetCurrentSelection( out hierarchyPtr, out itemid, out multiItemSelect, out selectionContainer)); // We only care if there is only one node selected in the tree if (!(itemid == VSConstants.VSITEMID_NIL || hierarchyPtr == IntPtr.Zero || multiItemSelect != null || itemid == VSConstants.VSITEMID_SELECTION)) { hierarchy = Marshal.GetObjectForIUnknown(hierarchyPtr) as IVsHierarchy; } } finally { if (hierarchyPtr != IntPtr.Zero) Marshal.Release(hierarchyPtr); if (selectionContainer != IntPtr.Zero) Marshal.Release(selectionContainer); }  
+    ```csharp  
+    IVsHierarchy hierarchy = null;  
+    IntPtr hierarchyPtr = IntPtr.Zero;  
+    IntPtr selectionContainer = IntPtr.Zero;  
+    uint itemid;  
+  
+    // Retrieve shell interface in order to get current selection  
+    IVsMonitorSelection monitorSelection =     Package.GetGlobalService(typeof(SVsShellMonitorSelection)) as     IVsMonitorSelection;  
+    if (monitorSelection == null)  
+        throw new InvalidOperationException();  
+  
+    try  
+    {  
+        // Get the current project hierarchy, project item, and selection container for the current selection  
+        // If the selection spans multiple hierachies, hierarchyPtr is Zero  
+        IVsMultiItemSelect multiItemSelect = null;  
+        ErrorHandler.ThrowOnFailure(  
+            monitorSelection.GetCurrentSelection(  
+                out hierarchyPtr, out itemid,   
+                out multiItemSelect, out selectionContainer));  
+  
+        // We only care if there is only one node selected in the tree  
+        if (!(itemid == VSConstants.VSITEMID_NIL ||   
+            hierarchyPtr == IntPtr.Zero ||  
+            multiItemSelect != null ||  
+            itemid == VSConstants.VSITEMID_SELECTION))  
+        {  
+            hierarchy = Marshal.GetObjectForIUnknown(hierarchyPtr)  
+                as IVsHierarchy;  
+        }  
+    }  
+    finally  
+    {  
+        if (hierarchyPtr != IntPtr.Zero)  
+            Marshal.Release(hierarchyPtr);  
+        if (selectionContainer != IntPtr.Zero)  
+            Marshal.Release(selectionContainer);  
+    }  
     ```  
   
 2.  
   
-### Item\-Eigenschaft der ausgewählten Projekt beibehalten werden, erhält die Projekthierarchie  
+### <a name="to-persist-the-selected-project-item-property-given-the-project-hierarchy"></a>Das ausgewählte Projektelementeigenschaft persistent die Projekthierarchie angegeben  
   
-1.  Fügen Sie den folgenden Code, um den Code in der Methode in der vorherigen Prozedur gegeben:  
+1.  Fügen Sie den folgenden Code an den Code in der Methode in der vorherigen Prozedur zugewiesen:  
   
     ```  
-    IVsBuildPropertyStorage buildPropertyStorage = hierarchy as IVsBuildPropertyStorage; if (buildPropertyStorage != null) { buildPropertyStorage.SetItemAttribute(itemId, "Author", "Tom"); }  
+    IVsBuildPropertyStorage buildPropertyStorage =   
+        hierarchy as IVsBuildPropertyStorage;  
+    if (buildPropertyStorage != null)  
+    {  
+        buildPropertyStorage.SetItemAttribute(itemId, "Author", "Tom");  
+    }  
     ```  
   
-### Um sicherzustellen, dass die Eigenschaft gespeichert wird  
+### <a name="to-verify-that-the-property-is-persisted"></a>Um sicherzustellen, dass die Eigenschaft beibehalten wird  
   
-1.  Starten Sie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] und öffnen oder erstellen Sie eine Lösung.  
+1.  Starten Sie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] und öffnen oder erstellen Sie eine Projektmappe.  
   
-2.  Wählen Sie das Projekt VsPkg.cs im Element **Projektmappen\-Explorer**.  
+2.  Wählen Sie das Projekt VsPkg.cs im Element **Projektmappen-Explorer**.  
   
-3.  Verwenden Sie einen Haltepunkt oder andernfalls zu bestimmen Sie, dass das VSPackage geladen wird und dass SetItemAttribute ausgeführt wird.  
+3.  Verwenden Sie einen Haltepunkt oder anderweitig zu bestimmen Sie, dass Ihr VSPackage geladen wird und dass SetItemAttribute ausgeführt wird.  
   
     > [!NOTE]
-    >  Automatisches Laden eines VSPackages in dem Benutzeroberflächenkontext können <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT_SolutionExists>. Weitere Informationen finden Sie unter [Laden von VSPackages](../extensibility/loading-vspackages.md).  
+    >  Können Sie Autoload ein VSPackage in der Benutzeroberflächenkontext <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT_SolutionExists>. Weitere Informationen finden Sie unter [Laden von VSPackages](../extensibility/loading-vspackages.md).  
   
-4.  Schließen [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] und öffnen Sie die Datei in Editor. Das Tag \< Author \> mit dem Wert Tom, sollte wie folgt angezeigt werden:  
+4.  Schließen [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] , und öffnen Sie die Projektdatei im Editor. Daraufhin sollte die \<Autor >-Tag mit dem Wert Tom, wie folgt:  
   
     ```  
-    <Compile Include="VsPkg.cs"> <Author>Tom</Author> </Compile>  
+    <Compile Include="VsPkg.cs">  
+        <Author>Tom</Author>  
+    </Compile>  
     ```  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Benutzerdefinierte Tools](../extensibility/internals/custom-tools.md)

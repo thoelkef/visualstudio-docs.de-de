@@ -1,25 +1,27 @@
 ---
-title: "Tool-Fenster-Anzeigekonfiguration | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Toolfenster, konfigurieren"
-  - "Toolfenster, Darstellung"
+title: Tool Anzeigekonfiguration Fenster | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- tool windows, configuring
+- tool windows, appearance
 ms.assetid: 502a4926-bb83-473e-94e2-8e833c5f8b53
-caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: c7ab5cef6fb45d60be8be8d1db6b160079633ed4
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Tool-Fenster-Anzeigekonfiguration
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="tool-window-display-configuration"></a>Tool-Fenster-Anzeigekonfiguration
 Wenn eine VSPackage ein Toolfenster, die Standardposition, Größe, andockstil und andere Informationen zur Sichtbarkeit registriert, wird in optionale Werte angegeben. Weitere Informationen zum Tool Fenster Registrierung, finden Sie unter [Toolfenster in der Registrierung](../extensibility/tool-windows-in-the-registry.md)  
   
 ## <a name="window-display-information"></a>Anzeigeinformationen für Fenster  
@@ -41,7 +43,7 @@ HKEY_LOCAL_MACHINE\
 |Name|REG_SZ|"Kurze Name goes here"|Ein kurzer Name, der das Toolfenster beschreibt. Nur für den Verweis in der Registrierung verwendet.|  
 |Float|REG_SZ|"X1, Y1, X2, Y2"|Vier durch Trennzeichen getrennte Werte. X1, Y1, ist die Koordinate der oberen linken Ecke des Toolfensters. X2, Y2, ist die Koordinate der unteren rechten Ecke. Alle Werte sind in Bildschirmkoordinaten.|  
 |Stil|REG_SZ|"MDI"<br /><br /> "Float"<br /><br /> "Verknüpft"<br /><br /> "Im Registerkartenformat"<br /><br /> "AlwaysFloat"|Ein Schlüsselwort, das Angeben der ursprüngliche Zustand des Toolfensters anzeigen<br /><br /> "MDI" = mit MDI-Fensters angedockt.<br /><br /> "Float" = Gleitkommawert.<br /><br /> "Verknüpft" = verknüpft, die mit einem anderen Fenster (angegeben in der Eintrag im Fenster).<br /><br /> "Im Registerformat" = zusammen mit einem anderen Toolfenster.<br /><br /> "AlwaysFloat" = kann nicht angedockt werden kann.<br /><br /> Weitere Informationen finden Sie unter folgenden Abschnitt "Kommentare".|  
-|Fenster|REG_SZ|*\< GUID>*|Die GUID eines Fensters, das Toolfenster verknüpft oder im Registerformat werden kann. Die GUID kann eine eigene Fenster oder ein Fenster in gehören die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE.|  
+|Fenster|REG_SZ|*\<GUID >*|Die GUID eines Fensters, das Toolfenster verknüpft oder im Registerformat werden kann. Die GUID kann eine eigene Fenster oder ein Fenster in gehören die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE.|  
 |Ausrichtung|REG_SZ|"Links"<br /><br /> "Right"<br /><br /> "Top"<br /><br /> "Unten"|Finden Sie im Abschnitt Kommentare.|  
 |DontForceCreate|REG_DWORD|0 oder 1|Wenn dieser Eintrag vorhanden ist, und der Wert nicht 0 (null ist), wird das Fenster geladen, aber nicht sofort angezeigt.|  
   
@@ -88,7 +90,7 @@ HKEY_LOCAL_MACHINE\
 |Name|Typ|Daten|Beschreibung|  
 |----------|----------|----------|-----------------|  
 |(Standard)|REG_SZ|Keine|Leer sein.|  
-|*\< GUID>*|REG_DWORD oder REG_SZ|0 oder eine beschreibende Zeichenfolge.|Dies ist optional. Der Eintrag Name muss die GUID eines Befehls, die Sichtbarkeit erfordern. Der Wert enthält nur eine informative Zeichenfolge. Der Wert in der Regel ist eine `reg_dword` auf 0 festgelegt.|  
+|*\<GUID >*|REG_DWORD oder REG_SZ|0 oder eine beschreibende Zeichenfolge.|Dies ist optional. Der Eintrag Name muss die GUID eines Befehls, die Sichtbarkeit erfordern. Der Wert enthält nur eine informative Zeichenfolge. Der Wert in der Regel ist eine `reg_dword` auf 0 festgelegt.|  
   
 ### <a name="example"></a>Beispiel  
   
@@ -108,4 +110,4 @@ HKEY_LOCAL_MACHINE\
 ```  
   
 ## <a name="see-also"></a>Siehe auch  
- [Grundlegendes zu VSPackages](../misc/vspackage-essentials.md)
+ [VSPackages](../extensibility/internals/vspackages.md)

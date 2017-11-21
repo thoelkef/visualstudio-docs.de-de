@@ -1,52 +1,52 @@
 ---
-title: "IDebugArrayField::GetElementType | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugArrayField::GetElementType"
-helpviewer_keywords: 
-  - "IDebugArrayField::GetElementType-Methode"
+title: IDebugArrayField::GetElementType | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugArrayField::GetElementType
+helpviewer_keywords: IDebugArrayField::GetElementType method
 ms.assetid: c46bf625-0a48-4cbb-8f1f-286356f2c065
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: a2286f201e358a190510fdff634b01f7ec9a64d9
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugArrayField::GetElementType
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
+# <a name="idebugarrayfieldgetelementtype"></a>IDebugArrayField::GetElementType
 Ruft den Typ des Elements im Array ab.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT GetElementType(   
-   IDebugField** ppType  
+```cpp  
+HRESULT GetElementType(   
+   IDebugField** ppType  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetElementType(  
-   out IDebugField ppType  
+   out IDebugField ppType  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `ppType`  
- \[out\]  Gibt ein [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)\-Objekt zurück, das den Typ des Elements beschreibt.  
+ [out] Gibt eine [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) -Objekt, das den Typ des Elements beschreibt.  
   
-## Rückgabewert  
- Bei Erfolg gibt S\_OK zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt S_OK zurück. Andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Hinweise  
- Das [IDebugArrayField](../../../extensibility/debugger/reference/idebugarrayfield.md)\-Objekt wird davon ausgegangen, dass alle Elemente des Arrays vom gleichen Typ aufweisen.  
+## <a name="remarks"></a>Hinweise  
+ Die [IDebugArrayField](../../../extensibility/debugger/reference/idebugarrayfield.md) Objekt geht davon aus, dass alle Elemente des Arrays desselben Typs sind.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDebugArrayField](../../../extensibility/debugger/reference/idebugarrayfield.md)   
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

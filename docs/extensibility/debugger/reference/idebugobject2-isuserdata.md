@@ -1,51 +1,51 @@
 ---
-title: "IDebugObject2::IsUserData | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugObject2::IsUserData"
-helpviewer_keywords: 
-  - "IDebugObject2::IsUserData-Methode"
+title: IDebugObject2::IsUserData | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugObject2::IsUserData
+helpviewer_keywords: IDebugObject2::IsUserData method
 ms.assetid: 6ffa0d0e-f742-496d-acc7-db74c248bc45
-caps.latest.revision: 7
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: ac758e7e8ce4d288b347b1207883642c920059bb
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugObject2::IsUserData
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Bestimmt, ob das Objekt Benutzerdaten darstellt.  
+# <a name="idebugobject2isuserdata"></a>IDebugObject2::IsUserData
+Bestimmt, ob das Objekt auf Benutzerdaten darstellt.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```cpp  
-HRESULT IsUserData(  
-   BOOL* pfUser  
+HRESULT IsUserData(  
+   BOOL* pfUser  
 );  
 ```  
   
-```c#  
-int IsUserData(  
-   out int pfUser  
+```csharp  
+int IsUserData(  
+   out int pfUser  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `pfUser`  
- \[out\]  Gibt Wert ungleich 0 \(null\) zurück \(`TRUE`\), wenn das Objekt Benutzerdaten darstellt. \(null\)`FALSE`.  
+ [out] Gibt einen Wert ungleich Null (`TRUE`) 0 (null), wenn das Objekt auf Benutzerdaten; darstellt (`FALSE`), wenn dies nicht der Fall.  
   
-## Rückgabewert  
- Bei Erfolg gibt S\_OK zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt S_OK zurück. Andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Hinweise  
- Benutzerdaten ist jedes Objekt, das Teil eines Moduls befindet, das als JustMyCode festgelegt ist \(eine vom Benutzer konfiguriert werden, die ein Modul sichtbar und daher als Benutzercode markiert\) in einer Stapelüberwachung.  
+## <a name="remarks"></a>Hinweise  
+ Benutzerdaten ist jedes Objekt, das Bestandteil eines Moduls, das als JustMyCode (eine konfigurierbare Option, die ein Modul als Benutzercode und daher in eine stapelüberwachung sichtbar markiert) festgelegt ist.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)

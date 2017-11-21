@@ -1,44 +1,46 @@
 ---
-title: "Verwenden die Text-Manager zum &#220;berwachen von globaler Einstellungen | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Editoren [Visual Studio SDK] legacy - Überwachen von globalen Einstellungen"
-  - "Editoren [Visual Studio SDK] legacy - Text-manager"
+title: "Verwenden die Text-Manager zum Überwachen von globaler Einstellungen | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- editors [Visual Studio SDK], legacy - monitor global settings
+- editors [Visual Studio SDK], legacy - text manager
 ms.assetid: 023e7671-cf65-419c-9bc1-3c4ee92aa436
-caps.latest.revision: 14
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 14
+caps.latest.revision: "14"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: f9687e4f0be16fb42f13c6f9dd20a2cb39be50cd
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Verwenden die Text-Manager zum &#220;berwachen von globaler Einstellungen
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Wenn Sie einen Kern des Editors implementieren, müssen Sie die Änderungen überwachen, die den globalen Einstellungen vorgenommen werden, da diese Änderungen möglicherweise die Instanz des Editors auswirken.  Sie können die Änderungen verfolgen, indem Sie Ereignisse überwachen, auf die vom Text Manager ausgelöst werden.  Wenn Sie z. B. angeben, speichert eine globale Einstellung für die Darstellung oder des Verhaltens einer Komponente im Kern des Editors, z. B. seinen Dokumenten, der das angegebene Channeldatenobjekt Manager Text wird und diese Informationen für alle betroffenen Clients.  
+# <a name="using-the-text-manager-to-monitor-global-settings"></a>Verwenden die Text-Manager zum Überwachen von globaler Einstellungen
+Wenn Sie einen Editor Core implementieren, müssen Sie die Änderungen an globalen Einstellungen sind überwachen, da diese Änderungen auf Ihre Instanz des Editors auswirken können. Sie können die Änderungen durch Überwachen von Ereignissen, die ausgelöst wird, durch den TextManager nachverfolgen. Beispielsweise, wenn Sie eine globale Einstellung für die Darstellung oder Verhalten einer Komponente in die Core-Editor, z. B. seine dokumentdatenobjekt angeben Text-Manager speichert diese Informationen und wird für alle betroffenen Clients kommuniziert.  
   
-## Text\-Manager\-Funktionen  
- Der Text Manager löst Ereignisse für einige Einstellungen, z. B. folgendermaßen aus:  
+## <a name="text-manager-functions"></a>Text-Manager-Funktionen  
+ Der Text-Manager löst Ereignisse für eine Reihe von Einstellungen, einschließlich der folgenden:  
   
--   Ob ein Puffer der Quellcodeverwaltung unterliegt  
+-   Gibt an, ob ein Puffer Quellcodeverwaltungssystem ist  
   
--   Wie Sie für Benachrichtigungen bei Änderungen zum Registrieren  
+-   Gewusst wie: für Datei änderungsbenachrichtungen  
   
--   So wird nachverfolgt werden, das Puffern mit bestimmten Ansichten zugeordnet sind  
+-   Gewusst wie: Nachverfolgen von welche Ansichten bestimmte Puffer zugeordnet sind.  
   
--   Text farbauftrag settings  
+-   Voreinstellungen für die farbliche Kennzeichnung von Text  
   
--   Registerkarte Einstellungen für Leerzeichen  
+-   Registerkarte im Vergleich zu Speicherplatz-Voreinstellungen  
   
- Einstellungen, die für eine bestimmte Sprache eindeutig sind, werden nicht aus Text Manager verwaltet.  Diese Einstellungen müssen für jeden Sprachdienst verwaltet werden.  
+ Voreinstellungen, die für eine bestimmte Sprache eindeutig sind, werden nicht vom TextManager verwaltet. Diese Einstellungen müssen von jeder Sprachdienst verwaltet werden.  
   
- Ereignisbenachrichtigungen für den Text <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManagerEvents> Manager wird von der Schnittstelle bereitgestellt.  Implementieren Sie diese Schnittstelle auf dem Client, dem Objekt zum Behandeln von Ereignissen den Text Manager ausgelöst hat.  Sie registrieren für diese Ereignisse, indem Sie die Schnittstelle im Text <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer> Manager verwenden.  
+ Ereignisbenachrichtigung für den TextManager wird bereitgestellt, indem die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManagerEvents> Schnittstelle. Implementieren Sie diese Schnittstelle auf Ihrem Client Objekt zum Behandeln von Ereignissen ausgelöst, die Text-Manager. Sie registrieren für diese Ereignisse mithilfe der <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer> Schnittstelle für den TextManager.  
   
-## Siehe auch  
- [In der Core\-Editor](../extensibility/inside-the-core-editor.md)   
- [Editor Features](http://msdn.microsoft.com/de-de/bdac940d-1f14-4019-a01f-fd0bb3dc7198)
+## <a name="see-also"></a>Siehe auch  
+ [In der Core-Editor](../extensibility/inside-the-core-editor.md)   
+ [Editor-Funktionen](http://msdn.microsoft.com/en-us/bdac940d-1f14-4019-a01f-fd0bb3dc7198)

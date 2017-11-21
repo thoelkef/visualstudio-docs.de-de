@@ -1,88 +1,90 @@
 ---
-title: "Testbereich 1: F&#252;gen Sie zu &#246;ffnen hinzu, From Source Control | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Datenquellen-Steuerelement [Visual Studio SDK], hinzufügen und Öffnen von Projektmappen"
-  - "Source Control-Plug-ins hinzufügen und Öffnen von Projektmappen"
+title: "Testbereich 1: Hinzufügen zu öffnen, aus der Quellcodeverwaltung | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- source control [Visual Studio SDK], adding and opening solutions
+- source control plug-ins, adding and opening solutions
 ms.assetid: 5b3b5b08-5e9b-41be-ac72-c63957faed22
-caps.latest.revision: 20
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 20
+caps.latest.revision: "20"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 959387176e079d76263a2a5c499b5a0723fd7ad7
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Testbereich 1: F&#252;gen Sie und &#214;ffnen von Datenquellen-Steuerelement hinzu
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Dieses plug\-in Quellkontrollserver testen Bereich erläutert das Platzieren von Projektmappen oder Projekten unter quellcodeverwaltung und Abrufen von Verbindungszeichenfolgen aus Datenquellen\-Steuerelement.  
+# <a name="test-area-1-add-toopen-from-source-control"></a>Testbereich 1: Fügen Sie hinzu, / Open-aus der Quellcodeverwaltung
+Dieses Plug-in-Quelle-Steuerelement testen Bereich deckt Projektmappen oder Projekten unter quellcodeverwaltung platzieren und aus der quellcodeverwaltung abrufen.  
   
-## Befehl Menüzugriff  
- Die folgenden [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrated Development\-Umgebung im Menüpfade in den Testfällen verwendet werden:  
+## <a name="command-menu-access"></a>Menüzugriff Befehl  
+ Die folgenden [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrated Development-Umgebung im Menüpfade in den Testfällen verwendet werden:  
   
--   Für [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)], Öffnen von Datenquellen\-Steuerelement: **Datei**, **Öffnen**, **Projekt**\/**Lösung**; Suchen in der [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)] Speicherort.  
+-   Für [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)]aus der quellcodeverwaltung öffnen: **Datei**, **öffnen**, **Projekt**/**Lösung**; Suchen in der [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)] Speicherort.  
   
--   Öffnen Sie für andere Source Control\-Plug\-ins über Datenquellen\-Steuerelement: **Datei**, **Source Control**, **from Source Control öffnen**.  
+-   Öffnen Sie für andere Datenquellen-Steuerelement-Plug-ins, aus der quellcodeverwaltung: **Datei**, **Quellcodeverwaltung**, **aus Quellcodeverwaltung öffnen**.  
   
--   Zur Versionskontrolle hinzufügen: **Datei**, **Source Control**, **Projektmappe hinzufügen, um Quellcodeverwaltungsdatei**, **Source Control**, **Ausgewählte Projekte zur Quellcodeverwaltung hinzufügen**.  
+-   Zur quellcodeverwaltung hinzufügen: **Datei**, **Quellcodeverwaltung**, **Projektmappe hinzufügen, zu der Quellcodeverwaltungsdatei**, **Quellcodeverwaltung**, **hinzufügen Ausgewählte Projekte zur Quellcodeverwaltung**.  
   
--   Kontextmenü \(Projektmappe\), **Projektmappe zur Versionskontrolle hinzufügen**.  
+-   Kontextmenü (Projektmappe), **Projektmappe zur Quellcodeverwaltung hinzufügen**.  
   
--   Hinzufügen von Datenquellen\-Steuerelement: **Datei**, **Quellcodeverwaltung**, **Add Project from Source Control**.  
+-   Hinzufügen von Datenquellen-Steuerelements: **Datei**, **Quellcodeverwaltung**, **Projekt hinzufügen, aus der Quellcodeverwaltung**.  
   
--   Für [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)], Hinzufügen von Quelle Steuerelement steht auch in **Datei**, **Hinzufügen**, **Vorhandenes Projekt**; Suchen in der [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)] Speicherort.  
+-   Für [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)], Hinzufügen von Quelle Steuerelement steht auch auf **Datei**, **hinzufügen**, **vorhandenes Projekt**; Suchen in der [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)] Speicherort.  
   
     > [!NOTE]
-    >  Ein Pfad für eine lokale Datei oder eine lokale IIS \(Webserver\) kann in diesem Test verwendet werden.  
+    >  Ein Pfad für eine lokale Datei oder eine lokale IIS (Webserver) kann in diesem Test verwendet werden.  
   
-## Es wird erwartet  
+## <a name="expected-behavior"></a>Erwartetes Verhalten  
   
--   Für jeden unterstützten Projekttyp sollte ein Benutzer in der Lage "Hinzufügen" und "Öffnen" Datenquellen\-Steuerelement.  
+-   Für jeden unterstützten Projekttyps muss ein Benutzer kann "Hinzufügen" und "Geöffnet von" Quellcodeverwaltung.  
   
--   Wenn ein Projekt für die Datenquellen\-Steuerelement, ein entsprechendes hinzugefügt wird \<*Projektname*\> .vspscc\-Datei \(Projekt\-Hint\-Datei\) erstellt. Es enthält Ausschluss Datei Liste und Verbindung. Diese Datei kann nicht gelöscht werden, da sie speziell für das Projekt enthält.  
+-   Wenn ein Projekt zur Quellcodeverwaltung, ein entsprechendes hinzugefügt wird \< *Projektname*> .vspscc-Datei (Projekt Hint-Datei) erstellt wird. Es enthält Ausschluss Datei Liste und Verbindung. Diese Datei kann nicht gelöscht werden, da sie speziell für das Projekt enthält.  
   
--   Wenn eine Projektmappe zur Versionskontrolle, ein entsprechendes hinzugefügt wird \<*SolutionName*\> .vssscc \(Dreifach\-S\)\-Datei wird erstellt. Die Textdatei enthält Verbindungsinformationen und eine Datei Ausschlussliste, ähnlich wie die Projektdatei Hinweis. Diese Datei ist temporär und nur in der Quellcode\-Verwaltungsdatenbank vorhanden.  
+-   Wenn eine Projektmappe zur quellcodeverwaltung, ein entsprechendes hinzugefügt wird \< *SolutionName*> .vssscc (Triple S)-Datei wird erstellt. Die Textdatei enthält Verbindungsinformationen und eine Datei Ausschlussliste, ähnlich wie das Projekt Hint-Datei. Diese Datei ist temporär und nur in der Quellcode-Verwaltungsdatenbank vorhanden ist.  
   
--   Beim Öffnen einer Projektmappe aus Datenquellen\-Steuerelement, ein \<*SolutionName*\> .vsscc \(double\-S\)\-Datei, die nur in der Quellcode\-Verwaltungsdatenbank vorhanden ist lokal in einer temporären Datei erstellt. Diese Datei enthält den Pfad zur Projektmappendatei im Projektmappenordner für die Verbindung. Diese Datei ist vorübergehend, und die lokale Kopie wird gelöscht, wenn der Vorgang "Aus Quellcodeverwaltung öffnen" abgeschlossen wurde.  
+-   Wenn eine Projektmappe, aus der quellcodeverwaltung geöffnet ist eine \< *SolutionName*> .vsscc (double-S)-Datei, die nur in der Quellcode-Verwaltungsdatenbank, vorhanden ist, wird lokal in einer temporären Datei erstellt. Diese Datei enthält den Pfad im Projektmappenordner für die Verbindung zur Projektmappendatei. Diese Datei ist temporär, und die lokale Kopie wird gelöscht, wenn der Vorgang "Aus Quellcodeverwaltung öffnen" abgeschlossen wurde.  
   
--   Nachdem ein Projekt für das Datenquellen\-Steuerelement hinzugefügt wird, können Sie alle Datenquellen\-Steuerelement\-Aktionen auf \(Auschecken, Get usw.\) ausführen.  
+-   Nachdem ein Projekt der quellcodeverwaltung hinzugefügt wurde, können Sie alle Datenquellen-Steuerelement-Aktionen (Auschecken, Get, usw.) ausführen.  
   
-## Testfälle  
- Im folgenden sind bestimmte Testfälle für das Hinzufügen und Öffnen von Datenquellen\-Steuerelement Testbereich.  
+## <a name="test-cases"></a>Testfälle  
+ Im folgenden sind bestimmte Testfälle für das Hinzufügen zu / von Testbereich Quellcodeverwaltung öffnen.  
   
-### Case\-1a: Projektmappe zur Versionskontrolle hinzufügen  
- Dieser Testfall konzentriert sich auf Lösungen zur Versionskontrolle hinzufügen.  
-  
-|Aktion|Testschritte|Erwartete Ergebnisse überprüfen|  
-|------------|------------------|-------------------------------------|  
-|Fügen Sie Lösung mit einer Client\-Projekt zur Versionskontrolle hinzu|1.  Erstellen Sie ein Clientprojekt.<br />2.  Fügen Sie die Projektmappe zur Versionskontrolle \(**Datei**, **Quellcodeverwaltung**, **Projektmappe zur Versionskontrolle hinzufügen**\).|Datenquellen\-Steuerelement wurde der Projektmappe oder eines Projekts hinzugefügt.|  
-|Hinzufügen von Projektmappen, die mit einem Dateisystem oder lokalen IIS\-Webprojekt an Datenquellen\-Steuerelement|1.  Ein Dateisystem oder lokalen IIS\-Webprojekt zu erstellen \(Schaltfläche "Durchsuchen" zum Verweisen auf den Projektspeicherort; Verwenden des Pfads bestimmt, welche Art von Web\-Projekt erstellt wird\).<br />2.  Fügen Sie die Projektmappe zur Versionskontrolle \(**Datei**, **Quellcodeverwaltung**, **Projektmappe zur Versionskontrolle hinzufügen**\).|Datenquellen\-Steuerelement wurde der Projektmappe oder eines Projekts hinzugefügt.|  
-|Fügen Sie die Projektmappe mit einem Remote\-Website Webprojekt an Datenquellen\-Steuerelement|1.  Erstellen Sie ein Webprojekt für Remote\-Website.<br />2.  Fügen Sie die Projektmappe zur Versionskontrolle \(**Datei**, **Quellcodeverwaltung**, **Projektmappe zur Versionskontrolle hinzufügen**\).<br />3.  Klicken Sie auf **OK** im Dialogfeld "Warnung" FrontPage\-Zugriff.|Datenquellen\-Steuerelement wurde der Projektmappe hinzugefügt.<br /><br /> Remote\-Websiteprojekt ist nicht in einem Quellcodeverwaltungsprojekt. \(Remote\-Website\-Projekten müssen von ihrem eigenen IIS\-Server gesteuert werden.\)|  
-|Fügen Sie eine einzelne Projektmappe mit Source Control **Ausgewählte Projekte zur Quellcodeverwaltung hinzufügen**.|1.  Erstellen Sie eine einzelne Projektmappe.<br />2.  Nur Projektmappe zur Versionskontrolle als Auswahl hinzufügen \(**Datei**, **Quellcodeverwaltung**, **Ausgewählte Projekte zur Quellcodeverwaltung hinzufügen**\). Wenn dieser Schritt erfolgreich ausgeführt wurde, Weiter mit nächstem Schritt.<br />3.  Hinzufügen des Projekts zur Versionskontrolle als Auswahl \(**Datei**, **Quellcodeverwaltung**, **Ausgewählte Projekte zur Quellcodeverwaltung hinzufügen**\).<br />4.  Klicken Sie auf **Ja** am gleichen Speicherort des Projekts hinzu.<br />5.  Klicken Sie auf **Auschecken** in **Auschecken zum Bearbeiten** \(Dialogfeld\).|`Result from Step 2:`<br /><br /> Das Projekt und alle Dateien innerhalb des Projekts einen aktivierten, Source Control Indikator und eine QuickInfo "nicht unter quellcodeverwaltung".<br /><br /> `Result from Step 5:`<br /><br /> Projekt\-und Projektmappendatei befinden sich in demselben Ordner im Datenquellen\-Steuerelement.|  
-|Brechen Sie das Hinzufügen einer Projektmappe zur Versionskontrolle|1.  Erstellen Sie eine einzelne Projektmappe.<br />2.  Versucht, das Projekt und Projektmappe zur Versionskontrolle hinzufügen. Wenn dieser Schritt erfolgreich ausgeführt wurde, Weiter mit nächstem Schritt.<br />3.  Abbrechen Sie, nachdem Sie sich im Quellcode\-Verwaltungssystem befinden.|`Result from Step 2:`<br /><br /> Das Dialogfeld Satz Projekt Speicherort Datenquellen\-Steuerelement wird nur einmal angezeigt.<br /><br /> `Result from Step 3:`<br /><br /> Projekt hinzufügen wurde abgebrochen, Projekt\/Projektmappe befindet sich nicht unter dem Datenquellen\-Steuerelement und alle hinzufügen Source Control Menüs weiterhin verfügbar.|  
-  
-### Fall 1 b. Projektmappe öffnen von Datenquellen\-Steuerelement  
- Dieser Testfall konzentriert sich auf das Öffnen von Projektmappen aus Datenquellen\-Steuerelement.  
+### <a name="case-1a-add-solution-to-source-control"></a>Case-1a: Hinzufügen von Projektmappen zur Quellcodeverwaltung  
+ Dieser Testfall konzentriert sich auf das Hinzufügen von Projektmappen zur quellcodeverwaltung.  
   
 |Aktion|Testschritte|Erwartete Ergebnisse überprüfen|  
-|------------|------------------|-------------------------------------|  
-|Öffnen Sie eine Projektmappe, die ein Clientprojekt aus Datenquellen\-Steuerelement enthält.|1.  Erstellen Sie ein Clientprojekt.<br />2.  Fügen Sie der Projektmappe zur Versionskontrolle hinzu.<br />3.  Schließen Sie die Projektmappe.<br />4.  Öffnen Sie die Projektmappe aus Datenquellen\-Steuerelement an eine neue Position.|Projektmappe oder eines Projekts aus Datenquellen\-Steuerelement geöffnet.|  
-|Öffnen Sie eine Projektmappe mit einem lokalen oder IIS\-Webprojekt aus Datenquellen\-Steuerelement|1.  Erstellen Sie einen lokalen oder IIS\-Webprojekt.<br />2.  Fügen Sie der Projektmappe zur Versionskontrolle hinzu.<br />3.  Schließen Sie die Projektmappe.<br />4.  Öffnen Sie die Projektmappe aus Datenquellen\-Steuerelement an eine neue Position.|Projektmappe oder eines Projekts aus Datenquellen\-Steuerelement geöffnet.|  
-|Öffnen Sie eine Projektmappe mit einem Remote\-Website Webprojekt aus Datenquellen\-Steuerelement|1.  Erstellen Sie ein Webprojekt für Remote\-Website.<br />2.  Fügen Sie der Projektmappe zur Versionskontrolle hinzu. Wenn dieser Schritt erfolgreich ausgeführt wurde, Weiter mit nächstem Schritt.<br />3.  Schließen Sie die Projektmappe.<br />4.  Öffnen Sie die Projektmappe aus Datenquellen\-Steuerelement an eine neue Position.|`Result from Step 2:`<br /><br /> Website\-Remotewebsite ist nicht in einem Quellcodeverwaltungsprojekt.<br /><br /> `Result from Step 4:`<br /><br /> Die Lösung von Datenquellen\-Steuerelement geöffnet.<br /><br /> Remote\-Websiteprojekt wird geladen, aber es ist nicht in einem Quellcodeverwaltungsprojekt.|  
+|------------|----------------|--------------------------------|  
+|Fügen Sie Lösung mit einem Clientprojekt zur quellcodeverwaltung hinzu|1.  Erstellen Sie ein Clientprojekt.<br />2.  Fügen Sie die Projektmappe zur quellcodeverwaltung (**Datei**, **Quellcodeverwaltung**, **Projektmappe zur Quellcodeverwaltung hinzufügen**).|Projektmappe/Projekt wurde zur quellcodeverwaltung hinzugefügt.|  
+|Fügen Sie Lösung mit einem Dateisystem oder einem lokalen IIS-Web-Projekt zur quellcodeverwaltung hinzu|1.  Ein Dateisystem oder dem lokalen IIS-Webprojekt zu erstellen (Schaltfläche "Durchsuchen" zum Verweisen auf den Projektspeicherort; Verwenden des Pfads bestimmt, welche Art von Webprojekt erstellt wird).<br />2.  Fügen Sie die Projektmappe zur quellcodeverwaltung (**Datei**, **Quellcodeverwaltung**, **Projektmappe zur Quellcodeverwaltung hinzufügen**).|Projektmappe/Projekt wurde zur quellcodeverwaltung hinzugefügt.|  
+|Fügen Sie Lösung mit einem Remotewebzugriff-Website-Projekt zur quellcodeverwaltung hinzu|1.  Erstellen Sie ein Projekt für die Remotewebzugriff-Website.<br />2.  Fügen Sie die Projektmappe zur quellcodeverwaltung (**Datei**, **Quellcodeverwaltung**, **Projektmappe zur Quellcodeverwaltung hinzufügen**).<br />3.  Klicken Sie auf **OK** im Dialogfeld "Warnung" FrontPage-Zugriff.|Lösung wurde zur quellcodeverwaltung hinzugefügt.<br /><br /> Remote-Websiteprojekt liegt nicht unter quellcodeverwaltung. (Remotestandort Projekte müssen auf ihre eigenen IIS-Server kontrolliert werden.)|  
+|Fügen Sie eine einzelne Projektmappe mit Source Control **ausgewählte Projekte zur Quellcodeverwaltung hinzufügen**.|1.  Erstellen Sie eine einzelne Projektmappe.<br />2.  Hinzufügen von nur Projektmappe zur quellcodeverwaltung als Auswahl (**Datei**, **Quellcodeverwaltung**, **ausgewählte Projekte zur Quellcodeverwaltung hinzufügen**). Wenn dieser Schritt erfolgreich ausgeführt wurde, Weiter mit nächsten Schritt fort.<br />3.  Add-Projekt zur quellcodeverwaltung als Auswahl (**Datei**, **Quellcodeverwaltung**, **ausgewählte Projekte zur Quellcodeverwaltung hinzufügen**).<br />4.  Klicken Sie auf **Ja** am gleichen Speicherort des Projekts hinzu.<br />5.  Klicken Sie auf **Auschecken** in **Auschecken zum Bearbeiten** (Dialogfeld).|`Result from Step 2:`<br /><br /> Das Projekt und alle Dateien innerhalb des Projekts out Source Control Indikator ein aktiviert haben, und "nicht in der quellcodeverwaltung" in einer QuickInfo angezeigt.<br /><br /> `Result from Step 5:`<br /><br /> Projekt- und Projektmappendateien-Datei werden im selben Ordner im Datenquellen-Steuerelements.|  
+|"Abbrechen", die beim Hinzufügen einer Projektmappe zur quellcodeverwaltung|1.  Erstellen Sie eine einzelne Projektmappe.<br />2.  Beim Hinzufügen von Projekt- und Projektmappendateien zur quellcodeverwaltung. Wenn dieser Schritt erfolgreich ausgeführt wurde, Weiter mit nächsten Schritt fort.<br />3.  Brechen Sie ab, nachdem Sie sich im Quellcodeverwaltungssystem befinden.|`Result from Step 2:`<br /><br /> Der Satz Projekt Source Control Dialogfeld "Standort" wird nur einmal angezeigt.<br /><br /> `Result from Step 3:`<br /><br /> Projekt hinzufügen wurde abgebrochen, Projekt/Projektmappe ist nicht in der quellcodeverwaltung und alle hinzufügen Source Control Menüs weiterhin verfügbar.|  
   
-### Fall 1c: Hinzufügen von Projektmappen aus Datenquellen\-Steuerelement  
- Dieser Testfall konzentriert sich auf das Hinzufügen von Projektmappen aus Datenquellen\-Steuerelement.  
+### <a name="case-1b-open-solution-from-source-control"></a>Groß-/Kleinschreibung 1 b. Geöffnete Projektmappe aus der Quellcodeverwaltung  
+ Dieser Testfall konzentriert sich auf Lösungen aus der quellcodeverwaltung öffnen.  
   
 |Aktion|Testschritte|Erwartete Ergebnisse überprüfen|  
-|------------|------------------|-------------------------------------|  
-|Leere Projektmappe hinzufügen – eine einzelne Projektmappe|1.  Erstellen Sie eine einzelne Projektmappe.<br />2.  Fügen Sie der Projektmappe zur Versionskontrolle hinzu.<br />3.  Schließen Sie die Projektmappe.<br />4.  Erstellen Sie eine zweite leere Projektmappe.<br />5.  Fügen Sie die zuvor kontrollierte Lösung aus Datenquellen\-Steuerelement \(**Datei**, **Source Control**, **Add Project from Source Control**\).|Das hinzugefügte Projekt wird im **Projektmappen\-Explorer** und eingecheckt wird.|  
-|Lösung mit einzelnen Projekt hinzufügen – Projekt|1.  Erstellen Sie eine Lösung mit einem einzelnen Projekt.<br />2.  Fügen Sie der Projektmappe zur Versionskontrolle hinzu.<br />3.  Schließen Sie die Projektmappe.<br />4.  Erstellen Sie eine zweite leere Projektmappe.<br />5.  Fügen Sie die zuvor kontrollierte Lösung aus Datenquellen\-Steuerelement \(**Datei**, **Source Control**, **Add Project from Source Control**\).|Das hinzugefügte Projekt wird im **Projektmappen\-Explorer** und eingecheckt wird.|  
-|Zu Projektmappe hinzufügen – Projektmappe durch Auswahl zur Versionskontrolle hinzugefügt|1.  Erstellen einer Projektmappe ein Projekt.<br />2.  Fügen Sie nur Projektmappe zur Versionskontrolle hinzu, wie Auswahl. Wenn dieser Schritt erfolgreich ausgeführt wurde, Weiter mit nächstem Schritt.<br />3.  Schließen Sie die Projektmappe.<br />4.  Erstellen Sie eine neue Projektmappe.<br />5.  Fügen Sie die zuvor kontrollierte Lösung aus Datenquellen\-Steuerelement \(**Datei**, **Source Control**, **Add Project from Source Control**\).|`Result from Step 2:`<br /><br /> Projekt ist nicht in einem Quellcodeverwaltungsprojekt.<br /><br /> `Result from Step 5:`<br /><br /> Wäre die erste Lösung Projektmappenelemente, können sie aus Datenquellen\-Steuerelement, hinzugefügt werden, damit sie nicht angezeigt werden.<br /><br /> Projekt aus erste Lösung wird als nicht verfügbar angezeigt.|  
+|------------|----------------|--------------------------------|  
+|Öffnen Sie eine Projektmappe enthält ein Clientprojekt aus der quellcodeverwaltung|1.  Erstellen Sie ein Clientprojekt.<br />2.  Fügen Sie der Projektmappe zur quellcodeverwaltung hinzu.<br />3.  Schließen Sie die Projektmappe.<br />4.  Öffnen Sie die Projektmappe aus der quellcodeverwaltung an einem neuen Speicherort.|Projektmappe/Projekt aus der quellcodeverwaltung geöffnet.|  
+|Öffnen Sie eine Projektmappe mit einer lokalen oder IIS-Webprojekt aus der quellcodeverwaltung|1.  Erstellen Sie eine lokale oder eine IIS-Webprojekt.<br />2.  Fügen Sie der Projektmappe zur quellcodeverwaltung hinzu.<br />3.  Schließen Sie die Projektmappe.<br />4.  Öffnen Sie die Projektmappe aus der quellcodeverwaltung an einem neuen Speicherort.|Projektmappe/Projekt aus der quellcodeverwaltung geöffnet.|  
+|Öffnen Sie eine Projektmappe mit einem Remotewebzugriff-Website-Projekt aus der quellcodeverwaltung|1.  Erstellen Sie ein Projekt für die Remotewebzugriff-Website.<br />2.  Fügen Sie der Projektmappe zur quellcodeverwaltung hinzu. Wenn dieser Schritt erfolgreich ausgeführt wurde, Weiter mit nächsten Schritt fort.<br />3.  Schließen Sie die Projektmappe.<br />4.  Öffnen Sie die Projektmappe aus der quellcodeverwaltung an einem neuen Speicherort.|`Result from Step 2:`<br /><br /> Remotewebzugriff-Website ist nicht in der quellcodeverwaltung.<br /><br /> `Result from Step 4:`<br /><br /> Die Lösung aus der quellcodeverwaltung geöffnet.<br /><br /> Remote-Websiteprojekt wird geladen, aber es ist nicht in der quellcodeverwaltung.|  
   
-## Siehe auch  
- [Test\-Handbuch für Source Control\-Plug\-ins](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)
+### <a name="case-1c-add-solution-from-source-control"></a>Fall 1c: Hinzufügen von Projektmappen aus der Quellcodeverwaltung  
+ Dieser Testfall konzentriert sich auf das Hinzufügen von Projektmappen aus der quellcodeverwaltung.  
+  
+|Aktion|Testschritte|Erwartete Ergebnisse überprüfen|  
+|------------|----------------|--------------------------------|  
+|Leere Projektmappe hinzugefügt – eine einzelne Projektmappe|1.  Erstellen Sie eine einzelne Projektmappe.<br />2.  Fügen Sie der Projektmappe zur quellcodeverwaltung hinzu.<br />3.  Schließen Sie die Projektmappe.<br />4.  Erstellen Sie eine zweite leere Projektmappe.<br />5.  Fügen Sie die zuvor kontrollierten Lösung aus der quellcodeverwaltung hinzu (**Datei**, **Quellcodeverwaltung**, **Projekt hinzufügen, aus der Quellcodeverwaltung**).|Das hinzugefügte Projekt wird im **Projektmappen-Explorer** und aktiviert ist.|  
+|Lösung mit einzelnen Projekt hinzufügen – einzelnes Projekt|1.  Erstellen Sie eine Projektmappe mit einem einzelnen Projekt.<br />2.  Fügen Sie der Projektmappe zur quellcodeverwaltung hinzu.<br />3.  Schließen Sie die Projektmappe.<br />4.  Erstellen Sie eine zweite leere Projektmappe.<br />5.  Fügen Sie die zuvor kontrollierten Lösung aus der quellcodeverwaltung hinzu (**Datei**, **Quellcodeverwaltung**, **Projekt hinzufügen, aus der Quellcodeverwaltung**).|Das hinzugefügte Projekt wird im **Projektmappen-Explorer** und aktiviert ist.|  
+|Zu Projektmappe hinzufügen – Projektmappe zur quellcodeverwaltung durch Auswahl hinzugefügt|1.  Erstellen Sie eine Projektmappe mit einem Projekt ein.<br />2.  Fügen Sie nur Projektmappen zur quellcodeverwaltung hinzu, als Auswahl. Wenn dieser Schritt erfolgreich ausgeführt wurde, Weiter mit nächsten Schritt fort.<br />3.  Schließen Sie die Projektmappe.<br />4.  Erstellen Sie eine neue Projektmappe.<br />5.  Fügen Sie die zuvor kontrollierten Lösung aus der quellcodeverwaltung hinzu (**Datei**, **Quellcodeverwaltung**, **Projekt hinzufügen, aus der Quellcodeverwaltung**).|`Result from Step 2:`<br /><br /> Projekt kann nicht in der quellcodeverwaltung.<br /><br /> `Result from Step 5:`<br /><br /> Wenn für die erste Lösung Projektmappenelemente wurde, können sie aus der quellcodeverwaltung hinzugefügt werden, damit sie nicht angezeigt werden.<br /><br /> Projekt aus der ersten Lösung wird als nicht verfügbar angezeigt.|  
+  
+## <a name="see-also"></a>Siehe auch  
+ [Testleitfaden für Quellcodeverwaltungs-Plug-Ins](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

@@ -1,56 +1,53 @@
 ---
-title: "Gewusst wie: Verwenden von systemeigenen Laufzeitpr&#252;fungen | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "c.runtime.errorchecks"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "JScript"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "/O (Compileroption), /RTC-Option"
-  - "/RTC-Compileroption [C++], /O (Compileroption)"
-  - "Arrays [Visual Basic], Debuggen"
-  - "Debugger, Systemeigene Laufzeitüberprüfungen"
-  - "Debugger, Laufzeitfehler"
-  - "Debuggen von Arrays"
-  - "Systemeigene Laufzeitüberprüfungen"
-  - "O (Compileroption), /RTC-Option"
-  - "Optimierte Buildoption"
-  - "RTC-Compileroption, /O (Compileroption)"
-  - "Laufzeitüberprüfungen"
-  - "Laufzeitüberprüfungen, Systemeigen"
-  - "Laufzeitfehler, Debuggen"
-  - "Laufzeitfehler, Fehlerüberprüfung"
-  - "runtime_checks-Pragma"
-  - "Stapelzeiger"
-  - "Stapelzeiger, Beschädigung"
-  - "Stapel, Zeigerbeschädigung"
-  - "Variablen [Debugger], Abfangen von Abhängigkeiten von nicht initialisierten lokalen Variablen"
-  - "Variablen [Debugger], Verlust von Daten"
+title: "Vorgehensweise: Verwenden von systemeigenen Laufzeitfehlerüberprüfungen | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: c.runtime.errorchecks
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+- JScript
+helpviewer_keywords:
+- /RTC compiler option [C++], /O compiler option
+- run-time checks, native
+- stack, pointer corruption
+- stack pointers, corruption
+- /O compiler option, /RTC option
+- run-time errors, error checks
+- O compiler option, /RTC option
+- debugger, runtime errors
+- variables [debugger], loss of data
+- runtime_checks pragma
+- variables [debugger], catching dependencies on uninitialized local variables
+- run-time errors, debugging
+- debugger, native run-time checks
+- optimized build option
+- RTC compiler option, /O compiler option
+- native run-time checks
+- run-time checks
+- debugging arrays
+- stack pointers
+- arrays [Visual Studio], debugging
 ms.assetid: dc7b2f1e-5ff6-42e0-89b3-dc9dead83ee1
-caps.latest.revision: 19
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 19
+caps.latest.revision: "19"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: f6dd581882231b64af03d34f53c3a5a67fa921e3
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Gewusst wie: Verwenden von systemeigenen Laufzeitpr&#252;fungen
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-In Visual C\+\+ können Sie mit systemeigenen [runtime\_checks](/visual-cpp/preprocessor/runtime-checks) häufige Laufzeitfehler abfangen. Beispiele:  
+# <a name="how-to-use-native-run-time-checks"></a>Gewusst wie: Verwenden von systemeigenen Laufzeitprüfungen
+In Visual C++ können Sie mit systemeigenen [runtime_checks](/cpp/preprocessor/runtime-checks) häufige Laufzeitfehler abfangen. Beispiele:  
   
 -   Beschädigung des Stapelzeigers  
   
@@ -62,7 +59,7 @@ In Visual C\+\+ können Sie mit systemeigenen [runtime\_checks](/visual-cpp/pre
   
 -   Datenverlust nach einer Zuordnung zu einer kürzeren Variablen  
   
- Wenn Sie **\/RTC** mit einem optimierten \(**\/O**\) Build verwenden, wird ein Compilerfehler ausgelöst. Wenn Sie in einem optimierten Build ein `runtime_checks`\-Pragma verwenden, hat das Pragma keine Auswirkungen.  
+ Wenn Sie **/RTC** mit einem optimierten (**/O**) Build verwenden, wird ein Compilerfehler ausgelöst. Wenn Sie in einem optimierten Build ein `runtime_checks` -Pragma verwenden, hat das Pragma keine Auswirkungen.  
   
  Wenn Sie ein Programm mit aktivierten Laufzeitüberprüfungen debuggen, wird das Programm beim Auftreten eines Laufzeitfehlers standardmäßig unterbrochen und wechselt in den Debugger. Sie können dieses Standardverhalten für jede Laufzeitüberprüfung ändern. Weitere Informationen finden Sie unter [Verwalten von Ausnahmen mit dem Debugger](../debugger/managing-exceptions-with-the-debugger.md).  
   
@@ -70,19 +67,20 @@ In Visual C\+\+ können Sie mit systemeigenen [runtime\_checks](/visual-cpp/pre
   
  Weitere Themen in diesem Abschnitt enthalten Informationen zu folgenden Vorgängen:  
   
--   [Anpassen von Laufzeitüberprüfungen mit der C\-Laufzeitbibliothek](../debugger/native-run-time-checks-customization.md)  
+-   [Anpassen von Laufzeitüberprüfungen mit der C-Laufzeitbibliothek](../debugger/native-run-time-checks-customization.md)  
   
--   [Verwenden von Laufzeitüberprüfungen ohne die C\-Laufzeitbibliothek](../debugger/using-run-time-checks-without-the-c-run-time-library.md)  
+-   [Verwenden von Laufzeitüberprüfungen ohne die C-Laufzeitbibliothek](../debugger/using-run-time-checks-without-the-c-run-time-library.md)  
   
-### So aktivieren Sie systemeigene Laufzeitfehlerüberprüfungen in einem Debugbuild  
+### <a name="to-enable-native-run-time-checks-in-a-debug-build"></a>So aktivieren Sie systemeigene Laufzeitfehlerüberprüfungen in einem Debugbuild  
   
--   Verwenden Sie die Option **\/RTC**, und stellen Sie eine Verknüpfung zu der Debugversion einer C\-Laufzeitbibliothek \(z. B. \/MDd\) her.  
+-   Verwenden Sie die Option **/RTC** , und stellen Sie eine Verknüpfung zu der Debugversion einer C-Laufzeitbibliothek (z. B. /MDd) her.  
   
-### So ändern Sie das Verhalten von systemeigenen Laufzeitfehlerüberprüfungen  
+### <a name="to-modify-native-run-time-check-behavior"></a>So ändern Sie das Verhalten von systemeigenen Laufzeitfehlerüberprüfungen  
   
--   Verwenden Sie das `runtime_checks`\-Pragma.  
+-   Verwenden Sie das `runtime_checks` -Pragma.  
   
-## Siehe auch  
- [Debuggen in Visual Studio](../debugger/debugging-in-visual-studio.md)   
- [runtime\_checks](/visual-cpp/preprocessor/runtime-checks)   
- [Laufzeitfehlerüberprüfung](/visual-cpp/c-runtime-library/run-time-error-checking)
+## <a name="see-also"></a>Siehe auch  
+ [Debuggen in Visual Studio](../debugger/index.md)  
+ [Debugger – Featuretour](../debugger/debugger-feature-tour.md)   
+ [runtime_checks](/cpp/preprocessor/runtime-checks)   
+ [Laufzeitfehlerüberprüfung](/cpp/c-runtime-library/run-time-error-checking)

@@ -1,33 +1,38 @@
 ---
-title: "ProjectItem-Element (Visual Studio-Elementvorlagen) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "http://schemas.microsoft.com/developer/vstemplate/2005#ProjectItem"
-helpviewer_keywords: 
-  - "<ProjectItem>-Element [Visual Studio-Projektelementvorlagen]"
-  - "ProjectItem-Element [Visual Studio-Projektelementvorlagen]"
+title: ProjectItem-Element (Visual Studio-Elementvorlagen) | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: http://schemas.microsoft.com/developer/vstemplate/2005#ProjectItem
+helpviewer_keywords:
+- <ProjectItem> element [Visual Studio item templates]
+- ProjectItem element [Visual Studio item templates]
 ms.assetid: 9ed94112-0c38-49df-b728-0dd2d0d1eb47
-caps.latest.revision: 13
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 035e698b0b8f34cbbefc665cc96f38a87a812e2d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# ProjectItem-Element (Visual Studio-Elementvorlagen)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Gibt eine Datei an, die in der Elementvorlage enthalten ist.  
+# <a name="projectitem-element-visual-studio-item-templates"></a>ProjectItem-Element (Visual Studio-Elementvorlagen)
+Gibt eine Datei, die in der Elementvorlage enthalten ist.  
   
 > [!NOTE]
->  Je nachdem, ob die Vorlage für ein Projekt oder ein Element entwickelt wurde, akzeptiert das `ProjectItem`\-Element verschiedene Attribute.  In diesem Thema wird das `ProjectItem`\-Element für Elementvorlagen erläutert.  Eine Erläuterung des `ProjectItem`\-Elements für Projektvorlagen finden Sie unter [ProjectItem\-Element \(Visual Studio\-Projektvorlagen\)](../extensibility/projectitem-element-visual-studio-project-templates.md).  
+>  Die `ProjectItem` -Element akzeptiert verschiedene Attribute, je nachdem, ob die Vorlage für ein Projekt oder ein Element. In diesem Thema wird erläutert, die `ProjectItem` -Element für Element. Eine Erläuterung der `ProjectItem` -Element für Projektvorlagen, finden Sie unter [ProjectItem-Element (Visual Studio-Projektvorlagen)](../extensibility/projectitem-element-visual-studio-project-templates.md).  
   
-## Syntax  
+ \<VSTemplate >  
+ \<TemplateContent >  
+ \<ProjectItem >  
+  
+## <a name="syntax"></a>Syntax  
   
 ```  
 <ProjectItem  
@@ -40,46 +45,46 @@ Gibt eine Datei an, die in der Elementvorlage enthalten ist.
 </ProjectItem>  
 ```  
   
-## Attribute und Elemente  
- In den folgenden Abschnitten werden Attribute, untergeordnete Elemente und übergeordnete Elemente beschrieben.  
+## <a name="attributes-and-elements"></a>Attribute und Elemente  
+ In den folgenden Abschnitten werden attribute-Elemente sowie untergeordnete und übergeordnete Elemente beschrieben.  
   
-### Attribute  
+### <a name="attributes"></a>Attribute  
   
-|Attribut|Description|  
-|--------------|-----------------|  
-|`SubType`|Optionales Attribut.<br /><br /> Gibt den Untertyp eines Elements in einer Elementvorlage mit mehreren Dateien an.  Durch diesen Wert wird der Editor angegeben, mit dem [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] das Element öffnet.|  
-|`CustomTool`|Optionales Attribut.<br /><br /> Legt das CustomTool für das Element in der Projektdatei fest.|  
-|`ItemType`|Optionales Attribut.<br /><br /> Legt den ItemType für das Element in der Projektdatei fest.|  
-|`ReplaceParameters`|Optionales Attribut.<br /><br /> Ein boolescher Wert, durch den angegeben wird, ob das Element über Parameterwerte verfügt, die ersetzt werden müssen, wenn ein Projekt von der Vorlage erstellt wird.  Der Standardwert lautet `false`.|  
-|`TargetFileName`|Optionales Attribut.<br /><br /> Gibt den Namen des Elements an, das von der Vorlage erstellt wird.  Dieses Attribut ist hilfreich, wenn ein Elementname mittels Parameterersetzung erstellt werden soll.|  
+|Attribut|Beschreibung|  
+|---------------|-----------------|  
+|`SubType`|Optionales Attribut.<br /><br /> Gibt den Untertyp eines Elements in einer Elementvorlage mit mehreren Dateien an. Dieser Wert wird verwendet, um den Editor zu bestimmen, die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] verwendet, um das Element zu öffnen.|  
+|`CustomTool`|Optionales Attribut.<br /><br /> Legt die CustomTool für das Element in der Projektdatei an.|  
+|`ItemType`|Optionales Attribut.<br /><br /> Legt den ItemType für das Element in der Projektdatei an.|  
+|`ReplaceParameters`|Optionales Attribut.<br /><br /> Ein boolescher Wert, der angibt, ob das Element Parameterwerte verfügt, die ersetzt werden muss, wenn ein Projekt aus der Vorlage erstellt wird. Der Standardwert ist `false`sein.|  
+|`TargetFileName`|Optionales Attribut.<br /><br /> Gibt den Namen des Elements, das aus der Vorlage erstellt wird. Dieses Attribut ist nützlich für die Verwendung von parameterersetzung Name eines Elements zu erstellen.|  
   
-### Untergeordnete Elemente  
- Keine.  
+### <a name="child-elements"></a>Untergeordnete Elemente  
+ Keine  
   
-### Übergeordnete Elemente  
+### <a name="parent-elements"></a>Übergeordnete Elemente  
   
-|Element|Description|  
+|Element|Beschreibung|  
 |-------------|-----------------|  
-|[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|Gibt den Inhalt der Vorlage an.|  
+|[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|Gibt den Inhalt der Vorlage.|  
   
-## Textwert  
+## <a name="text-value"></a>Textwert  
  Ein Textwert ist erforderlich.  
   
- `string` mit dem Namen einer Datei, die in der ZIP\-Datei der Vorlage enthalten ist.  
+ Ein `string` , die den Namen einer Datei in der ZIP-Vorlagendatei darstellt.  
   
-## Hinweise  
- `ProjectItem` ist ein optionales untergeordnetes Element von `TemplateContent`.  
+## <a name="remarks"></a>Hinweise  
+ `ProjectItem`ist ein optionales untergeordnetes Element des `TemplateContent`.  
   
- Das `TargetFileName`\-Attribut kann zum Umbenennen von Dateien mit Parametern verwendet werden.  Wenn die Datei `MyFile.vb` im Stammverzeichnis der ZIP\-Datei der Vorlage vorhanden ist, sie jedoch nach dem Dateinamen benannt werden soll, der vom Benutzer im Dialogfeld **Neues Element hinzufügen** eingegeben wurde, würden Sie beispielsweise folgenden XML\-Code verwenden:  
+ Die `TargetFileName` Attribut kann zum Umbenennen von Dateien mit Parametern verwendet werden. Z. B. wenn die Datei `MyFile.vb` vorhanden ist im Stammverzeichnis der ZIP-Datei für Prozessvorlagen, aber Sie möchten die Datei benannt wird auf der Grundlage von Dateiname, die vom Benutzer in der **neues Element hinzufügen** (Dialogfeld), verwenden Sie das folgende XML:  
   
 ```  
 <ProjectItem TargetFileName="$fileinputname$.vb">MyFile.vb</ProjectItem>  
 ```  
   
- Wenn ein Element auf der Grundlage dieser Vorlage erstellt wird, entspricht der Dateiname dem Namen, den der Benutzer im Dialogfeld **Neues Element hinzufügen** eingegeben hat.  Dies ist hilfreich, wenn Elementvorlagen mit mehreren Dateien erstellt werden.  Weitere Informationen finden Sie unter [Gewusst wie: Erstellen von Elementvorlagen mit mehreren Dateien](../ide/how-to-create-multi-file-item-templates.md) und [Vorlagenparameter](../ide/template-parameters.md).  
+ Wenn ein Element aus dieser Vorlage erstellt wird, wird der Dateiname basierend auf den Namen der Benutzer eingegeben wird, in der **neues Element hinzufügen** (Dialogfeld). Dies ist hilfreich beim Erstellen von Elementvorlagen mit mehreren Dateien. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen von mehreren Dateien Elementvorlagen](../ide/how-to-create-multi-file-item-templates.md) und [Vorlagenparameter](../ide/template-parameters.md).  
   
-## Beispiel  
- Im folgenden Beispiel werden die Metadaten für die Standardelementvorlage einer Klasse in [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] veranschaulicht.  
+## <a name="example"></a>Beispiel  
+ Das folgende Beispiel veranschaulicht die Metadaten für die standard-Elementvorlage für eine [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] Klasse.  
   
 ```  
 <VSTemplate Type="Item" Version="3.0.0"  
@@ -97,8 +102,8 @@ Gibt eine Datei an, die in der Elementvorlage enthalten ist.
 </VSTemplate>  
 ```  
   
-## Siehe auch  
- [Schemareferenz zu Visual Studio\-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)   
- [Erstellen von benutzerdefinierten Projekt\- und Elementvorlagen](../ide/creating-project-and-item-templates.md)   
- [Gewusst wie: Erstellen von Elementvorlagen mit mehreren Dateien](../ide/how-to-create-multi-file-item-templates.md)   
+## <a name="see-also"></a>Siehe auch  
+ [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)   
+ [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)   
+ [Vorgehensweise: Erstellen von Elementvorlagen mit mehreren Dateien](../ide/how-to-create-multi-file-item-templates.md)   
  [Vorlagenparameter](../ide/template-parameters.md)

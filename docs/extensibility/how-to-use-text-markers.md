@@ -1,60 +1,61 @@
 ---
-title: "Gewusst wie: Verwenden von Text-Marker | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "legacy - Text-Marken mit Editoren [Visual Studio SDK]"
+title: 'Vorgehensweise: Verwenden von Text Marker | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: editors [Visual Studio SDK], legacy - using text markers
 ms.assetid: 76eed51c-eecb-4579-823e-13df2f0526b9
-caps.latest.revision: 13
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 1070a88f1bae27b9ff10fedbf6a383ec30c1ed0e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Gewusst wie: Verwenden von Text-Marker
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Textmarkierungen können angewendet werden, um ein <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>\-Objekt zu bearbeiten.  
+# <a name="how-to-use-text-markers"></a>Vorgehensweise: Verwenden von Text-Marker
+Text-Marker können angewendet werden, um Sie bearbeiten ein <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> Objekt.  
   
-## Arbeitsschritte  
+## <a name="procedures"></a>Verfahren  
   
-#### So wenden Textmarkierungen  
+#### <a name="to-apply-text-markers"></a>Text-Marker anwenden  
   
-1.  Rufen Sie eine Instanz der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager>\-Klasse.  
+1.  Rufen Sie eine Instanz von der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager> Klasse.  
   
     > [!NOTE]
-    >  Der Kern des Editors wird automatisch Standardwert textmarkierungen jedem Dokument, dass er bearbeitet, und es sollte nicht notwendig sein Standardwert textmarkierungen explizit zu übernehmen.  
+    >  Der Editor Core gilt automatisch Standardtext Marker für jedes Dokument, das bearbeitet wird, und es sollte nicht erforderlich sein, explizites übernehmen von standard-Text-Marker.  
   
-2.  Ruft eine Markierung des ID des Markers, den Sie interessiert sind, indem Sie die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager.GetRegisteredMarkerTypeID%2A>\-Methode mit `GUID` der Textmarkierung aufrufen Sie bearbeiten möchten.  
+2.  Erhalten Sie eine Marker-Typ-ID des Markers, durch Aufrufen interessiert sind der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager.GetRegisteredMarkerTypeID%2A> Methode mit der `GUID` des Markers Text Sie arbeiten möchten.  
   
     > [!NOTE]
-    >  Verwenden Sie keine `GUID` VSPackages oder des Diensts, der die Textmarkierung bereitstellt.  
+    >  Verwenden Sie nicht die `GUID` des VSPackage oder der Dienst, den Text Marker bereitstellt.  
   
-3.  Verwenden Sie den Marker, die ID, den Typ anhand der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager.GetRegisteredMarkerTypeID%2A>\-Methode als Parameter aufgerufen hat, um die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines.CreateLineMarker%2A>\-Methode oder die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream.CreateStreamMarker%2A>\-Methode aufrufen, um eine Textmarkierung zu einem angegebenen Textbereich anzuwenden.  
+3.  Verwenden die Marker-Typ-ID abgerufen wird, durch Aufrufen der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager.GetRegisteredMarkerTypeID%2A> Methode als Parameter aufrufen, die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines.CreateLineMarker%2A> Methode oder die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream.CreateStreamMarker%2A> Methode, um einen Text-Marker in einer bestimmten Region des Texts anzuwenden.  
   
-#### So fügen Sie Funktionen hinzu Textmarkierungen  
+#### <a name="to-add-features-to-text-markers"></a>Text-Marker Funktionen hinzufügen  
   
-1.  Es ist möglicherweise wünschenswert, zusätzliche Features einer Textmarkierung, z. B. QuickInfos, einem besonderen Kontextmenü oder Handler für besondere Umstände hinzuzufügen.  So erstellen Sie so vorgehen:  
+1.  Es möglicherweise wünschenswert, ein Marker Text z. B. QuickInfos, eine spezielle Kontextmenü oder der Handler bei besonderen Umständen zusätzliche Funktionen hinzugefügt. Dazu:  
   
-2.  Erstellen Sie ein Objekt, das die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient>\-Schnittstelle implementiert.  
+2.  Erstellen Sie ein Objekt, durch die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> Schnittstelle.  
   
-3.  Wenn zusätzliche Funktionen erwünscht ist, implementieren Sie <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClientEx>und die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClientAdvanced>\-Schnittstellen auf demselben Objekt, das die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient>\-Schnittstelle implementiert.  
+3.  Implementieren Sie ggf. zusätzliche Funktionen der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClientEx>, und die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClientAdvanced> Schnittstellen für das gleiche Objekt, das implementiert die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> Schnittstelle.  
   
-4.  Führen Sie die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient>\-Schnittstelle, die Sie erstellen, um Aufruf der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines.CreateLineMarker%2A>\-Methode oder die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream.CreateStreamMarker%2A>\-Methode, die verwendet werden, um die Textmarkierung zu einem angegebenen Textbereich anzuwenden.  
+4.  Übergeben der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> Schnittstelle, die Sie, die dem Aufruf Erstellen der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines.CreateLineMarker%2A> Methode oder die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream.CreateStreamMarker%2A> Methode verwendet, um den Marker für Text in einer bestimmten Region des Texts anzuwenden.  
   
-5.  Wenn die Unterstützung von einem Bereich Textmarkierungs Kontextmenü hinzugefügt wird, ist es notwendig, das Menü zu erstellen.  
+5.  Beim Hinzufügen von kontextunterstützung-Menü zu einer Markierung Textbereich ist es erforderlich, klicken Sie im Menü erstellen.  
   
-     Weitere Informationen zum Erstellen eines Kontextmenüs finden Sie unter [Kontextmenüs](../extensibility/context-menus.md)erstellt.  
+     Weitere Informationen zum Erstellen einer Kontext Menü finden Sie unter [Kontextmenüs](../extensibility/context-menus.md).  
   
-6.  Die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Umgebung ruft die Methoden der angegebenen Schnittstellen, wie der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient.GetTipText%2A>\-Methode oder die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient.ExecMarkerCommand%2A>\-Methode bei Bedarf an.  
+6.  Die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Umgebung Aufrufe der Methoden der bereitgestellten Schnittstellen, z. B. die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient.GetTipText%2A> -Methode oder die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient.ExecMarkerCommand%2A> Methode nach Bedarf.  
   
-## Siehe auch  
- [Verwenden von Text Marker mit der Legacy\-API](../extensibility/using-text-markers-with-the-legacy-api.md)   
- [Gewusst wie: Hinzufügen von Standard\-Text\-Marker](../extensibility/how-to-add-standard-text-markers.md)   
- [Gewusst wie: Erstellen von benutzerdefinierten Text Marken](../extensibility/how-to-create-custom-text-markers.md)   
- [Gewusst wie: Implementieren von Fehler Marker](../extensibility/how-to-implement-error-markers.md)
+## <a name="see-also"></a>Siehe auch  
+ [Verwenden von Text Marker mit der Legacy-API](../extensibility/using-text-markers-with-the-legacy-api.md)   
+ [Vorgehensweise: Hinzufügen von Standard-Text-Marker](../extensibility/how-to-add-standard-text-markers.md)   
+ [Vorgehensweise: Erstellen von benutzerdefinierten Text-Marker](../extensibility/how-to-create-custom-text-markers.md)   
+ [Vorgehensweise: Implementieren von Fehler Marker](../extensibility/how-to-implement-error-markers.md)

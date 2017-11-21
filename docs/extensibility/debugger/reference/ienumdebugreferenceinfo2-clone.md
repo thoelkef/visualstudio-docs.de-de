@@ -1,51 +1,51 @@
 ---
-title: "IEnumDebugReferenceInfo2::Clone | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IEnumDebugReferenceInfo2::Clone"
-helpviewer_keywords: 
-  - "IEnumDebugReferenceInfo2::Clone"
+title: IEnumDebugReferenceInfo2::Clone | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IEnumDebugReferenceInfo2::Clone
+helpviewer_keywords: IEnumDebugReferenceInfo2::Clone
 ms.assetid: 49c5a301-a33a-428f-b83b-e734c71af4ef
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 5b10d24c504bb11fc185aad939c23109013905fa
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IEnumDebugReferenceInfo2::Clone
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Gibt eine Kopie der aktuellen Enumeration z. B. ein separates Objekt zurück.  
+# <a name="ienumdebugreferenceinfo2clone"></a>IEnumDebugReferenceInfo2::Clone
+Gibt eine Kopie der aktuellen Enumeration als separates Objekt zurück.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT Clone(  
-   IEnumDebugReferenceInfo2** ppEnum  
+   IEnumDebugReferenceInfo2** ppEnum  
 );  
 ```  
   
-```c#  
+```csharp  
 int Clone(  
-   out IEnumDebugReferenceInfo2 ppEnum  
+   out IEnumDebugReferenceInfo2 ppEnum  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `ppEnum`  
- \[out\]  Gibt eine Kopie dieser Enumeration z. B. ein separates Objekt zurück.  
+ [out] Gibt eine Kopie dieser Enumeration als separates Objekt zurück.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Hinweise  
- Die Kopie der Enumeration verfügt über denselben Status wie das Original, wenn diese Methode aufgerufen wird.  Allerdings sind die Kopie und die Bedingungen der Vorlage und können separat individuell geändert werden.  
+## <a name="remarks"></a>Hinweise  
+ Die Kopie der Enumeration enthält denselben Status an wie die ursprüngliche, zu dem Zeitpunkt, die diese Methode aufgerufen wird. Allerdings wird der Kopie und den ursprünglichen Zustand getrennt sind und können einzeln geändert werden.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IEnumDebugReferenceInfo2](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2.md)

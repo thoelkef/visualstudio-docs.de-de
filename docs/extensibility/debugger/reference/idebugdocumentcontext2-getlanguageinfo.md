@@ -1,58 +1,58 @@
 ---
-title: "IDebugDocumentContext2::GetLanguageInfo | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugDocumentContext2::GetLanguageInfo"
-helpviewer_keywords: 
-  - "IDebugDocumentContext2::GetLanguageInfo"
+title: IDebugDocumentContext2::GetLanguageInfo | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugDocumentContext2::GetLanguageInfo
+helpviewer_keywords: IDebugDocumentContext2::GetLanguageInfo
 ms.assetid: 6a212ee5-414c-4eb5-ab11-19db1786943d
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 67e685bbe6920ddc4ebca32242c34caa6c585b9b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugDocumentContext2::GetLanguageInfo
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Ruft die Sprache ab, die diesem Dokumentenkontext zugeordnet ist.  
+# <a name="idebugdocumentcontext2getlanguageinfo"></a>IDebugDocumentContext2::GetLanguageInfo
+Ruft die diesem Dokumentenkontext zugeordnete Sprache ab.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT GetLanguageInfo(   
-   BSTR* pbstrLanguage,  
-   GUID* pguidLanguage  
+```cpp  
+HRESULT GetLanguageInfo(   
+   BSTR* pbstrLanguage,  
+   GUID* pguidLanguage  
 );  
 ```  
   
-```c#  
-int GetLanguageInfo(   
-   out string pbstrLanguage,  
-   out Guid   pguidLanguage  
+```csharp  
+int GetLanguageInfo(   
+   out string pbstrLanguage,  
+   out Guid   pguidLanguage  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `pbstrLanguage`  
- \[out\]  Gibt den Namen der Sprache zurück, das den Dokumentenkontext diesem Code implementiert werden.  
+ [out] Der Name der Sprache, die den Code in diesem Dokumentenkontext zurückgegeben.  
   
  `pguidLanguage`  
- \[out\]  Gibt die GUID der Sprache zurück, das den Dokumentenkontext diesem Code implementiert werden.  Beispielsweise `guidVBScriptLang` oder `guidCPPLang`.  Dieses GUID ist nicht auf Sprachen beschränkt, die von [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]angegeben werden.  
+ [out] Gibt die GUID der Sprache, die den Code in diesem Dokumentenkontext zurück. Beispielsweise `guidVBScriptLang` oder `guidCPPLang`. Diese GUID ist nicht beschränkt auf die Sprachen, die vom [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)].  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Beispiel  
- Im folgenden Beispiel wird veranschaulicht, wie diese Methode für ein einfaches `CDebugContext`\-Objekt implementiert, das die [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)\-Schnittstelle verfügbar macht.  
+## <a name="example"></a>Beispiel  
+ Im folgende Beispiel wird gezeigt, wie diese Methode für eine einfache implementiert `CDebugContext` -Objekt, das macht die [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) Schnittstelle.  
   
-```cpp#  
+```cpp  
 HRESULT CDebugContext::GetLanguageInfo(BSTR* pbstrLanguage, GUID* pguidLanguage)    
 {    
    HRESULT hr;    
@@ -81,5 +81,5 @@ HRESULT CDebugContext::GetLanguageInfo(BSTR* pbstrLanguage, GUID* pguidLanguage)
 }    
 ```  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)

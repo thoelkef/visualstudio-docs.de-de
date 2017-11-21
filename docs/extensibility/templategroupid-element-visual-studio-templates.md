@@ -1,72 +1,77 @@
 ---
-title: "TemplateGroupID-Element (Visual Studio-Vorlagen) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "http://schemas.microsoft.com/developer/vstemplate/2005#TemplateGroupID"
-helpviewer_keywords: 
-  - "<TemplateGroupID>-Element [Visual Studio-Vorlagen]"
-  - "TemplateGroupID-Element [Visual Studio-Vorlagen]"
+title: TemplateGroupID-Element (Visual Studio-Vorlagen) | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: http://schemas.microsoft.com/developer/vstemplate/2005#TemplateGroupID
+helpviewer_keywords:
+- TemplateGroupID element [Visual Studio Templates]
+- <TemplateGroupID> element [Visual Studio Templates]
 ms.assetid: bce7b49a-90bc-4691-aff3-a87e209f6d83
-caps.latest.revision: 18
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 18
+caps.latest.revision: "18"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: e8f68b3a64fab519e31876d120f223961c10fffc
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# TemplateGroupID-Element (Visual Studio-Vorlagen)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Gibt an, in welcher Art von Projekt eine Elementvorlage angezeigt wird.  Dieses Element ist von Bedeutung, wenn [ShowByDefault \(Visual Studio\-Vorlagen\)](../extensibility/showbydefault-visual-studio-templates.md) auf `false` festgelegt ist.  Wenn [ShowByDefault \(Visual Studio\-Vorlagen\)](../extensibility/showbydefault-visual-studio-templates.md) auf `true` festgelegt ist, ist eine Elementvorlage in allen Projekttypen verfügbar.  
+# <a name="templategroupid-element-visual-studio-templates"></a>TemplateGroupID-Element (Visual Studio-Vorlagen)
+Gibt an, in welcher Art von Projekt eine Elementvorlage angezeigt wird. Dieses Element ist wichtig, wenn [ShowByDefault (Visual Studio-Vorlagen)](../extensibility/showbydefault-visual-studio-templates.md) festgelegt ist, um `false`. Wenn [ShowByDefault (Visual Studio-Vorlagen)](../extensibility/showbydefault-visual-studio-templates.md) festgelegt ist, um `true`, und klicken Sie dann eine Elementvorlage in allen Projekttypen verfügbar ist.  
   
-## Syntax  
+ \<VSTemplate >  
+ \<TemplateData >  
+ \<TemplateGroupID >  
+  
+## <a name="syntax"></a>Syntax  
   
 ```  
 <TemplateGroupID> ... </TemplateGroupID>  
 ```  
   
-## Attribute und Elemente  
+## <a name="attributes-and-elements"></a>Attribute und Elemente  
  In den folgenden Abschnitten werden Attribute sowie untergeordnete und übergeordnete Elemente beschrieben.  
   
-### Attribute  
+### <a name="attributes"></a>Attribute  
+ Keine.  
+  
+### <a name="child-elements"></a>Untergeordnete Elemente  
  Keine  
   
-### Untergeordnete Elemente  
- Keine  
-  
-### Übergeordnete Elemente  
+### <a name="parent-elements"></a>Übergeordnete Elemente  
   
 |Element|Beschreibung|  
-|-------------|------------------|  
+|-------------|-----------------|  
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Kategorisiert die Vorlage und definiert, wie diese in den Dialogfeldern **Neues Projekt** oder **Neues Element hinzufügen** angezeigt wird.|  
   
-## Textwert  
+## <a name="text-value"></a>Textwert  
  Ein Textwert ist erforderlich.  
   
  Der Text gibt einen Bezeichner für eine Kategorie von Elementvorlagen an.  
   
-## Hinweise  
+## <a name="remarks"></a>Hinweise  
  `TemplateGroupID` ist ein Element.  
   
- Der Wert des `TemplateGroupID`\-Elements dient zusammen mit der Projektsystemregistrierung \(HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\VisualStudio\\*\< Versionsnummer \>*\\Projects\\\) der Filterung von Vorlagen, die im Dialogfeld **Neues Element hinzufügen** angezeigt werden.  
+ Der Wert, der die `TemplateGroupID` Element dient zusammen mit der projektsystemregistrierung (HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<Versionsnummer >*\Projects\\) Filterung von Vorlagen, die in der **neues Element hinzufügen** (Dialogfeld).  
   
-|Visual C\+\+\-Wert|Bedeutung|  
-|------------------------|---------------|  
-|VC\-systemeigen|Für systemeigene Projekte verwendet.  Auch die Standardeinstellung, wenn ein Projekttyp nicht bestimmt werden kann.|  
-|VC\-verwaltet|Für verwaltete Projekte \(\/clr\) verwendet.|  
-|VC\-Windows|Für alle Projekte verwendet, die auf die Windows\-Plattform abzielen \(systemeigen\/verwaltet\/Speicher\).|  
-|WinRT\-systemeigen\-UAP|Für Windows 10\-Speicherprojekte verwendet.|  
-|CodeSharing\-systemeigen|Für freigegebene Elementprojekte verwendet.|  
-|WinRT\-systemeigen\-6.3|Für Windows 8.1\-Speicherprojekte verwendet.|  
-|WinRT\-systemeigen\-Phone\-6.3|Für Windows Phone 8.1\-Projekte verwendet.|  
-|WinRT\-systemeigen|Für Windows 8.0\-Speicherprojekte verwendet.|  
-|VC\-Android|Für Android\-Projekte verwendet.|  
+|Visual C++-Wert|Bedeutung|  
+|------------------------|-------------|  
+|VC-systemeigen|Für systemeigene Projekte verwendet. Auch die Standardeinstellung, wenn ein Projekttyp nicht bestimmt werden kann.|  
+|VC-verwaltet|Für verwaltete Projekte (/clr) verwendet.|  
+|VC-Windows|Für alle Projekte verwendet, die auf die Windows-Plattform abzielen (systemeigen/verwaltet/Speicher).|  
+|WinRT-systemeigen-UAP|Für Windows 10-Store-Projekte verwendet.|  
+|CodeSharing-systemeigen|Für freigegebene Elementprojekte verwendet.|  
+|WinRT-systemeigen-6.3|Für Windows 8.1-Store-Projekte verwendet.|  
+|WinRT-systemeigen-Phone-6.3|Für Windows Phone 8.1-Projekte verwendet.|  
+|WinRT-systemeigen|Für Windows 8.0-Store-Projekte verwendet.|  
+|VC-Android|Für Android-Projekte verwendet.|  
   
-## Siehe auch  
- [Schemareferenz zu Visual Studio\-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)   
- [Erstellen von benutzerdefinierten Projekt\- und Elementvorlagen](../ide/creating-project-and-item-templates.md)
+## <a name="see-also"></a>Siehe auch  
+ [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)   
+ [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)

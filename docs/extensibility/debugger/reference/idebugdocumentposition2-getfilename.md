@@ -1,51 +1,51 @@
 ---
-title: "IDebugDocumentPosition2::GetFileName | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugDocumentPosition2::GetFileName"
-helpviewer_keywords: 
-  - "IDebugDocumentPosition2::GetFileName"
+title: IDebugDocumentPosition2::GetFileName | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugDocumentPosition2::GetFileName
+helpviewer_keywords: IDebugDocumentPosition2::GetFileName
 ms.assetid: d713635e-088f-465b-b26d-00ac971c9e86
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 24ac47f6af78a3e2c5a3d77d63f930d7b7396a2a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugDocumentPosition2::GetFileName
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Ruft den Dateinamen der Quelldatei ab, die die Position enthält.  
+# <a name="idebugdocumentposition2getfilename"></a>IDebugDocumentPosition2::GetFileName
+Ruft den Dateinamen der Quelldatei, die die Dokumentposition enthält.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT GetFileName(   
-   BSTR* pbstrFileName  
+```cpp  
+HRESULT GetFileName(   
+   BSTR* pbstrFileName  
 );  
 ```  
   
-```c#  
-int GetFileName(   
-   out string pbstrFileName  
+```csharp  
+int GetFileName(   
+   out string pbstrFileName  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `pbstrFileName`  
- \[out\]  Gibt den Dateinamen der Quelldatei zurück.  
+ [out] Gibt den Dateinamen der Quelldatei zurück.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Hinweise  
- Eine Quelldatei nicht immer verfügt möglicherweise über einen Dateinamen \(die Quelldatei auf dem Datenträger nicht vorhanden sein \(z\).  
+## <a name="remarks"></a>Hinweise  
+ Eine Quelldatei möglicherweise nicht immer ist ein Dateiname (die Quelldatei kann nicht auf dem Laufwerk, z. B. vorhanden).  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md)

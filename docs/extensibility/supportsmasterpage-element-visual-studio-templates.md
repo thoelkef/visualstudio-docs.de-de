@@ -1,62 +1,67 @@
 ---
-title: "SupportsMasterPage-Element (Visual Studio-Vorlagen) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "http://schemas.microsoft.com/developer/vstemplate/2005#SupportsMasterPage"
-helpviewer_keywords: 
-  - "<SupportsMasterPage>-Element [Visual Studio-Vorlagen]"
-  - "SupportsMasterPage-Element [Visual Studio-Vorlagen]"
+title: SupportsMasterPage-Element (Visual Studio-Vorlagen) | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: http://schemas.microsoft.com/developer/vstemplate/2005#SupportsMasterPage
+helpviewer_keywords:
+- <SupportsMasterPage> element [Visual Studio Templates]
+- SupportsMasterPage element [Visual Studio Templates]
 ms.assetid: ce877a6a-9bba-4fd9-92fb-0a8dfec9e75b
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 6fe7edc9bcfe7df774c49afb2543170472d042aa
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# SupportsMasterPage-Element (Visual Studio-Vorlagen)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Gibt an, ob das Kontrollkästchen **Masterseite auswählen** im Dialogfeld **Neues Element hinzufügen** aktiviert ist.  
+# <a name="supportsmasterpage-element-visual-studio-templates"></a>SupportsMasterPage-Element (Visual Studio-Vorlagen)
+Gibt an, ob das der **Masterseite auswählen** Kontrollkästchen aktiviert ist, auf die **neues Element hinzufügen** (Dialogfeld).  
   
-## Syntax  
+ \<VSTemplate >  
+ \<TemplateData >  
+ \<SupportsMasterPage >  
+  
+## <a name="syntax"></a>Syntax  
   
 ```  
 <SupportsMasterPage> true/false </SupportsMasterPage>  
 ```  
   
-## Attribute und Elemente  
- In den folgenden Abschnitten werden Attribute, untergeordnete Elemente und übergeordnete Elemente beschrieben.  
+## <a name="attributes-and-elements"></a>Attribute und Elemente  
+ In den folgenden Abschnitten werden attribute-Elemente sowie untergeordnete und übergeordnete Elemente beschrieben.  
   
-### Attribute  
+### <a name="attributes"></a>Attribute  
  Keine.  
   
-### Untergeordnete Elemente  
- Keine.  
+### <a name="child-elements"></a>Untergeordnete Elemente  
+ Keine  
   
-### Übergeordnete Elemente  
+### <a name="parent-elements"></a>Übergeordnete Elemente  
   
-|Element|Description|  
+|Element|Beschreibung|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Gibt die Daten zur Kategorisierung der Vorlage an und definiert, wie diese in den Dialogfeldern **Neues Projekt** oder **Neues Element** angezeigt wird.|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Gibt an, die kategorisiert die Vorlage und definiert, wie er im angezeigt der **neues Projekt** oder **neues Element** (Dialogfeld).|  
   
-## Textwert  
+## <a name="text-value"></a>Textwert  
  Ein Textwert ist erforderlich.  
   
- Der Text muss `true` oder `false` lauten. Dadurch wird angegeben, ob das Kontrollkästchen **Masterseite auswählen** im Dialogfeld **Neues Element hinzufügen** aktiviert ist oder nicht.  
+ Der Text muss entweder `true` oder `false`gibt an, fest, ob die **Masterseite auswählen** Kontrollkästchen aktiviert ist, auf die **neues Element hinzufügen** (Dialogfeld).  
   
-## Hinweise  
- `SupportsMasterPage` ist ein optionales Element.  Der Standardwert ist `false`.  
+## <a name="remarks"></a>Hinweise  
+ `SupportsMasterPage` ist ein optionales Element. Der Standardwert ist `false`.  
   
- Das `SupportsMasterPage`\-Element ist nur für Webelementvorlagen verfügbar.  
+ Die `SupportsMasterPage` Element ist nur für Elementvorlagen Web verfügbar.  
   
-## Beispiel  
- Im folgenden Beispiel werden die Metadaten für ein Webprojekt veranschaulicht, das Unterstützung für eine Masterseite bietet.  
+## <a name="example"></a>Beispiel  
+ Das folgende Beispiel veranschaulicht die Metadaten für ein Webprojekt, die Unterstützung für eine Gestaltungsvorlage enthält.  
   
 ```  
 <VSTemplate Version="3.0.0" Type="Project"  
@@ -80,6 +85,6 @@ Gibt an, ob das Kontrollkästchen **Masterseite auswählen** im Dialogfeld **Neu
 </VSTemplate>  
 ```  
   
-## Siehe auch  
- [Schemareferenz zu Visual Studio\-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)   
- [Erstellen von benutzerdefinierten Projekt\- und Elementvorlagen](../ide/creating-project-and-item-templates.md)
+## <a name="see-also"></a>Siehe auch  
+ [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)   
+ [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)

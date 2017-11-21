@@ -4,34 +4,19 @@ ms.custom:
 ms.date: 04/26/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: c3c3df69-83b4-4fd0-b5b1-e18c33f39376
-caps.latest.revision: 5
+caps.latest.revision: "5"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Machine Translation
-ms.sourcegitcommit: 9524ecc3cadef58821fba857de8e82e59eea9b43
-ms.openlocfilehash: c55c135034f5b3b2dd09ccf94e22e56e8f04797e
-ms.contentlocale: de-de
-ms.lasthandoff: 05/04/2017
-
+ms.openlocfilehash: 5a252e22cda234f6a45bee084522b2add2bafada
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Schriftarten und Formatierungen für Visual Studio
 ##  <a name="BKMK_TheEnvironmentFont"></a>Die Umgebungsschriftart verwendet  
@@ -41,7 +26,7 @@ ms.lasthandoff: 05/04/2017
   
 -   **Text-Editor** -Elementen, die im Code und andere-Oberfläche textbasierten Editoren im Text-Editor angepasst werden können, auf der Seite **Tools > Optionen**.  
   
--   **Bestimmte Sammlungen** – Designerfenstern, die Anpassung ihrer Elemente der Benutzeroberfläche, Schriftarten, die spezifisch für ihren Entwurf kann ausgesetzt bieten Oberfläche in ihre eigenen Seite "Einstellungen" in **Tools > Optionen**.  
+-   **Bestimmte Sammlungen** -Designer-Fenster, in denen bieten Anpassung ihrer Elemente der Benutzeroberfläche, Schriftarten, die spezifisch für ihren Entwurf kann ausgesetzt Oberfläche in ihre eigenen Seite "Einstellungen" in **Tools > Optionen**.  
   
 ### <a name="editor-font-customization-and-resizing"></a>Editor-Schriftart-Anpassung und Ändern der Größe  
  Benutzer werden häufig vergrößern oder Verkleinern der Größe und/oder die Farbe des Texts im Editor entsprechend ihre Voreinstellung, unabhängig von der allgemeinen-Benutzeroberfläche. Da die Umgebungsschriftart für Elemente, die innerhalb oder als Teil einer-Editor-Designer angezeigt werden verwendet wird, ist es wichtig, um das erwartete Verhalten beachten, wenn einer dieser Klassifizierungen Schriftart geändert wird.  
@@ -96,7 +81,7 @@ window.ShowModal()
   
  `ShowModal`Gibt einen booleschen Wert an? (NULL-Werte zulässt, Boolean) mit der `DialogResult`, die bei Bedarf verwendet werden können. Der Rückgabewert ist true, wenn das Dialogfeld geschlossen wurde, mit **OK**.  
   
- Wenn Sie einige WPF UI, das ein Dialogfeld ist und gehostet wird in eine eigene anzeigen müssen `HwndSource`, z. B. ein Popupfenster oder ein untergeordnetes Fenster WPF, der eine Win32/WinForms übergeordnete Fenster, müssen Sie festlegen der `FontFamily` und `FontSize` für das Stammelement des WPF-Elements. (Die Shell legt die Eigenschaften fest, auf das Hauptfenster, aber wird nicht nach geerbt werden eine `HWND`). Die Shell stellt Ressourcen, die an die die Eigenschaften können, wie folgt gebunden werden:  
+ Wenn Sie einige WPF UI, das ein Dialogfeld ist und gehostet wird in eine eigene anzeigen müssen `HwndSource`, z. B. ein Popupfenster oder ein untergeordnetes Fenster WPF, der eine Win32/WinForms übergeordnete Fenster, müssen Sie festlegen der `FontFamily` und `FontSize` für das Stammelement des WPF-e Element. (Die Shell legt die Eigenschaften fest, auf das Hauptfenster, aber wird nicht nach geerbt werden eine `HWND`). Die Shell stellt Ressourcen, die an die die Eigenschaften können, wie folgt gebunden werden:  
   
 ```  
 <Setter property="FontFamily" Value="{DynamicResource VsFont.EnvironmentFontFamily}" />  
@@ -300,11 +285,11 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 ### <a name="testing-the-environment-font"></a>Testen der Umgebungsschriftart  
  Um sicherzustellen, dass die Benutzeroberfläche der Umgebungsschriftart verwendet und die größeneinstellungen respektiert, öffnen Sie **Extras > Optionen > Umgebung > Schriftarten und Farben** , und wählen Sie unter "Umgebungsschriftart" der "Einstellungen anzeigen für:" Dropdown-Menü.  
   
- ![Schriftarten und Farben Einstellungen in den Tools &gt; Dialogfeld "Optionen"](../../extensibility/ux-guidelines/media/0201-a_optionsfonts.png "0201-a_OptionsFonts")<br />Schriftarten und Farben Einstellungen in den Tools &gt; Dialogfeld "Optionen"
+ ![Schriftarten und Farben Einstellungen in den Tools &gt; Dialogfeld "Optionen"](../../extensibility/ux-guidelines/media/0201-a_optionsfonts.png "0201 A_OptionsFonts")<br />Schriftarten und Farben Einstellungen in den Tools &gt; Dialogfeld "Optionen"
   
  Legen Sie etwas ganz anderes als die Standardzeit. Um es offensichtlich, die Benutzeroberfläche nicht aktualisiert wird, wählen Sie eine Schriftart mit Serifen (z. B. "Times New Roman") und legen Sie sehr groß. Anschließend testen Sie die Benutzeroberfläche, um sicherzustellen, dass die Umgebung berücksichtigt. Hier ist ein Beispiel mit dem Dialogfeld "Lizenz":  
   
- ![Beispiel für die UI-Text, der berücksichtigen nicht die Umgebungsschriftart verwendet](../../extensibility/ux-guidelines/media/0201-b_wrongfontdialog.png "0201-b_WrongFontDialog")<br />Beispiel für die UI-Text, der berücksichtigen nicht die Umgebungsschriftart verwendet
+ ![Beispiel für die UI-Text, der berücksichtigen nicht die Umgebungsschriftart](../../extensibility/ux-guidelines/media/0201-b_wrongfontdialog.png "0201 B_WrongFontDialog")<br />Beispiel für die UI-Text, der berücksichtigen nicht die Umgebungsschriftart verwendet
   
  In diesem Fall werden "Benutzerinformationen" und "Produktinformationen" die Schriftart nicht ressourcenbezogene. In einigen Fällen möglicherweise einen expliziten Entwurfsoption allerdings möglich einen Fehler, wenn die explizite Schriftart nicht als Teil von den Spezifikationen (rote Linie) angegeben wird.  
   
@@ -431,43 +416,43 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
   
 |||  
 |-|-|  
-|**Syntax:**<br /><br /> -Größere Überschrift in der Signatur-Dialogfelder<br />-Main Berichtskopf<br /><br /> **Führen Sie aus:**<br /><br /> -Satz Groß-/Kleinschreibung verwendet<br />-Lightweight immer verwenden<br /><br /> **Tue nicht:**<br /><br /> -Verwendung für die Benutzeroberfläche als Signatur Benutzeroberfläche, z. B. die Startseite<br />-Fett, kursiv oder fett kursiv<br />-Verwendung für den Textkörper<br />– Verwenden Sie im Toolfenster|**Wird als:** 28 pt Segoe UI Light<br /><br /> **Bildbeispiel:**<br /><br /> ![Beispiel für Umgebungsschriftart 310 % &#43; Überschrift](../../extensibility/ux-guidelines/media/0202-a_ef310.png "0202-a_EF310")|  
+|**Syntax:**<br /><br /> -Größere Überschrift in der Signatur-Dialogfelder<br />-Main Berichtskopf<br /><br /> **Führen Sie aus:**<br /><br /> -Satz Groß-/Kleinschreibung verwendet<br />-Lightweight immer verwenden<br /><br /> **Tue nicht:**<br /><br /> -Verwendung für die Benutzeroberfläche als Signatur Benutzeroberfläche, z. B. die Startseite<br />-Fett, kursiv oder fett kursiv<br />-Verwendung für den Textkörper<br />– Verwenden Sie im Toolfenster|**Wird als:** 28 pt Segoe UI Light<br /><br /> **Bildbeispiel:**<br /><br /> ![Beispiel für Umgebungsschriftart 310 % &#43; Überschrift](../../extensibility/ux-guidelines/media/0202-a_ef310.png "0202 a_EF310")|  
   
 #### <a name="200-environment-font--semilight"></a>Umgebungsschriftart 200 % + halb dünne Darstellung  
   
 |||  
 |-|-|  
-|**Syntax:**<br /><br /> -Aufgliederung<br />-Titel in kleinen und mittleren Dialogfelder<br /><br /> **Führen Sie aus:**<br /><br /> -Satz Groß-/Kleinschreibung verwendet<br />-Verwenden Sie immer Gewichtung halb dünne Darstellung<br /><br /> **Tue nicht:**<br /><br /> -Fett, kursiv oder fett kursiv<br />-Verwendung für den Textkörper<br />– Verwenden Sie im Toolfenster|**Wird als:** 18 pt Segoe UI Semillight<br /><br /> **Bildbeispiel:**<br /><br /> ![Beispiel für Umgebungsschriftart 200 % &#43; Halb dünne Darstellung](../../extensibility/ux-guidelines/media/0202-b_ef200.png "0202-b_EF200")|  
+|**Syntax:**<br /><br /> -Aufgliederung<br />-Titel in kleinen und mittleren Dialogfelder<br /><br /> **Führen Sie aus:**<br /><br /> -Satz Groß-/Kleinschreibung verwendet<br />-Verwenden Sie immer Gewichtung halb dünne Darstellung<br /><br /> **Tue nicht:**<br /><br /> -Fett, kursiv oder fett kursiv<br />-Verwendung für den Textkörper<br />– Verwenden Sie im Toolfenster|**Wird als:** 18 pt Segoe UI Semillight<br /><br /> **Bildbeispiel:**<br /><br /> ![Beispiel für Umgebungsschriftart 200 % &#43; Semilight](../../extensibility/ux-guidelines/media/0202-b_ef200.png "0202 b_EF200")|  
   
 #### <a name="155-environment-font"></a>Umgebungsschriftart mit 155 %  
   
 |||  
 |-|-|  
-|**Syntax:**<br /><br /> -Section-Überschriften in Dokument gut UI<br />-Berichte<br /><br /> **:** Satz Groß-/Kleinschreibung<br /><br /> **Tue nicht:**<br /><br /> -Fett, kursiv oder fett kursiv<br />-Verwendung für den Textkörper<br />– Verwenden Sie in Visual Studio-Standardsteuerelementen<br />– Verwenden Sie im Toolfenster|**Wird als:** 14 pt Segoe UI<br /><br /> **Bildbeispiel:**<br /><br /> ![Beispiel für Umgebungsschriftart mit 155 %, Überschrift](../../extensibility/ux-guidelines/media/0202-c_ef155.png "0202-c_EF155")|  
+|**Syntax:**<br /><br /> -Section-Überschriften in Dokument gut UI<br />-Berichte<br /><br /> **:** Satz Groß-/Kleinschreibung<br /><br /> **Tue nicht:**<br /><br /> -Fett, kursiv oder fett kursiv<br />-Verwendung für den Textkörper<br />– Verwenden Sie in Visual Studio-Standardsteuerelementen<br />– Verwenden Sie im Toolfenster|**Wird als:** 14 pt Segoe UI<br /><br /> **Bildbeispiel:**<br /><br /> ![Beispiel für Umgebungsschriftart mit 155 %, Überschrift](../../extensibility/ux-guidelines/media/0202-c_ef155.png "0202 c_EF155")|  
   
 #### <a name="133-environment-font"></a>Umgebungsschriftart mit 133 %  
   
 |||  
 |-|-|  
-|**Syntax:**<br /><br /> -Kleinere Aufgliederung in Dialogfeldern Signatur<br />-Im Dokument kleinere Aufgliederung gut UI<br /><br /> **:** Satz Groß-/Kleinschreibung<br /><br /> **Tue nicht:**<br /><br /> -Fett, kursiv oder fett kursiv<br />-Verwendung für den Textkörper<br />– Verwenden Sie in Visual Studio-Standardsteuerelementen<br />– Verwenden Sie im Toolfenster|**Wird als:** 12 pt Segoe UI<br /><br /> **Bildbeispiel:**<br /><br /> ![Beispiel für Umgebungsschriftart mit 133 %, Überschrift](../../extensibility/ux-guidelines/media/0202-d_ef133.png "0202-d_EF133")|  
+|**Syntax:**<br /><br /> -Kleinere Aufgliederung in Dialogfeldern Signatur<br />-Im Dokument kleinere Aufgliederung gut UI<br /><br /> **:** Satz Groß-/Kleinschreibung<br /><br /> **Tue nicht:**<br /><br /> -Fett, kursiv oder fett kursiv<br />-Verwendung für den Textkörper<br />– Verwenden Sie in Visual Studio-Standardsteuerelementen<br />– Verwenden Sie im Toolfenster|**Wird als:** 12 pt Segoe UI<br /><br /> **Bildbeispiel:**<br /><br /> ![Beispiel für Umgebungsschriftart mit 133 %, Überschrift](../../extensibility/ux-guidelines/media/0202-d_ef133.png "0202 d_EF133")|  
   
 #### <a name="122-environment-font"></a>Umgebungsschriftart mit 122 %  
   
 |||  
 |-|-|  
-|**Syntax:**<br /><br /> -Section-Überschriften in Signatur-Dialogfelder<br />-Obersten Knoten in der Strukturansicht<br />-Navigation vertikaler Tabulator<br /><br /> **:** Satz Groß-/Kleinschreibung<br /><br /> **Tue nicht:**<br /><br /> -Fett, kursiv oder fett kursiv<br />-Verwendung für den Textkörper<br />– Verwenden Sie in Visual Studio-Standardsteuerelementen<br />– Verwenden Sie im Toolfenster|**Wird als:** 11 pt Segoe UI<br /><br /> **Bildbeispiel:**<br /><br /> ![Beispiel für Umgebungsschriftart mit 122 %, Überschrift](../../extensibility/ux-guidelines/media/0202-e_ef122.png "0202-e_EF122")|  
+|**Syntax:**<br /><br /> -Section-Überschriften in Signatur-Dialogfelder<br />-Obersten Knoten in der Strukturansicht<br />-Navigation vertikaler Tabulator<br /><br /> **:** Satz Groß-/Kleinschreibung<br /><br /> **Tue nicht:**<br /><br /> -Fett, kursiv oder fett kursiv<br />-Verwendung für den Textkörper<br />– Verwenden Sie in Visual Studio-Standardsteuerelementen<br />– Verwenden Sie im Toolfenster|**Wird als:** 11 pt Segoe UI<br /><br /> **Bildbeispiel:**<br /><br /> ![Beispiel für Umgebungsschriftart mit 122 %, Überschrift](../../extensibility/ux-guidelines/media/0202-e_ef122.png "0202 e_EF122")|  
   
 #### <a name="environment-font--bold"></a>Umgebungsschriftart + fett  
   
 |||  
 |-|-|  
-|**Syntax:**<br /><br /> -"Bezeichnungen" und untergeordnete in Dialogfeldern Signatur<br />-"Bezeichnungen" und untergeordnete in Berichten<br />-"Bezeichnungen" Unterüberschriften im Dokument außerdem UI<br /><br /> **Führen Sie aus:**<br /><br /> -Satz Groß-/Kleinschreibung verwendet<br />– Verwenden Sie die fett formatierten Gewichtung<br /><br /> **Tue nicht:**<br /><br /> -Auswahl kursiver oder fett kursiv<br />-Verwendung für den Textkörper<br />– Verwenden Sie in Visual Studio-Standardsteuerelementen<br />– Verwenden Sie im Toolfenster|**Wird als:** Fett 9 pt Segoe UI<br /><br /> **Bildbeispiel:**<br /><br /> ![Beispiel für Umgebungsschriftart &#43; Überschrift in fettformatierung](../../extensibility/ux-guidelines/media/0202-f_efb.png "0202-f_EFB")|  
+|**Syntax:**<br /><br /> -"Bezeichnungen" und untergeordnete in Dialogfeldern Signatur<br />-"Bezeichnungen" und untergeordnete in Berichten<br />-"Bezeichnungen" Unterüberschriften im Dokument außerdem UI<br /><br /> **Führen Sie aus:**<br /><br /> -Satz Groß-/Kleinschreibung verwendet<br />– Verwenden Sie die fett formatierten Gewichtung<br /><br /> **Tue nicht:**<br /><br /> -Auswahl kursiver oder fett kursiv<br />-Verwendung für den Textkörper<br />– Verwenden Sie in Visual Studio-Standardsteuerelementen<br />– Verwenden Sie im Toolfenster|**Wird als:** Fett 9 pt Segoe UI<br /><br /> **Bildbeispiel:**<br /><br /> ![Beispiel für Umgebungsschriftart &#43; Überschrift in fettformatierung](../../extensibility/ux-guidelines/media/0202-f_efb.png "0202 F_EFB")|  
   
 #### <a name="environment-font"></a>Umgebungsschriftart  
   
 |||  
 |-|-|  
-|**Syntax:** gesamten anderen Text<br /><br /> **:** Satz Groß-/Kleinschreibung<br /><br /> **Keine:** kursiv oder kursiv|**Wird als:** 9 pt Segoe UI<br /><br /> **Bildbeispiel:**<br /><br /> ![Beispiel für Umgebungsschriftart](../../extensibility/ux-guidelines/media/0202-g_ef.png "0202-g_EF")|  
+|**Syntax:** gesamten anderen Text<br /><br /> **:** Satz Groß-/Kleinschreibung<br /><br /> **Keine:** kursiv oder kursiv|**Wird als:** 9 pt Segoe UI<br /><br /> **Bildbeispiel:**<br /><br /> ![Beispiel für Umgebungsschriftart](../../extensibility/ux-guidelines/media/0202-g_ef.png "0202 G_EF")|  
   
 ### <a name="padding-and-spacing"></a>Abstand  
  Überschriften Speicherplatz darum geben die entsprechenden Betonung benötigt wird. Dieser Speicherplatz variiert je nach Größe und was in der Nähe der Überschrift, z. B. eine horizontale Linie oder einer Zeile des Texts in der Umgebungsschriftart ist.  

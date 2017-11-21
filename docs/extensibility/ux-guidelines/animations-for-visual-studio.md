@@ -4,34 +4,19 @@ ms.custom:
 ms.date: 04/26/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 446773a9-e6f7-4c0c-8dbc-9e303bf32eb1
-caps.latest.revision: 2
+caps.latest.revision: "2"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Machine Translation
-ms.sourcegitcommit: 9524ecc3cadef58821fba857de8e82e59eea9b43
-ms.openlocfilehash: b36b5e35758ad10109328d6f001e043ad7dcbe15
-ms.contentlocale: de-de
-ms.lasthandoff: 05/04/2017
-
+ms.openlocfilehash: 6a554a52fc5ef42f81d1531dbe63bf320e1cd72e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="animations-for-visual-studio"></a>Animationen für Visual Studio
 ## <a name="animation-fundamentals"></a>Animation-Grundlagen  
@@ -156,7 +141,7 @@ Veranschaulichen Sie komplexe und Variable Informationen an:
   
 ##### <a name="sequence"></a>Sequenz  
   
--   Diashow-Sequenz  
+-   Diaschau-Sequenz  
   
 -   Kippen über Bilder  
   
@@ -175,7 +160,7 @@ In der Regel desto das letzte verschieben Element auf dem Bildschirm des Benutze
   
 ##### <a name="alert"></a>Warnung  
   
--   Der Benutzer gewarnt werden, erhalten Sie Aufmerksamkeit, Fortschritt anzeigen  
+-   Der Benutzer gewarnt werden, erhalten Sie Aufmerksamkeit, Status anzeigen  
   
 -   Zeigen Sie, dass etwas ordnungsgemäß oder nicht ordnungsgemäß ausgeführt wird oder zeigen ausgeführt werden oder auf Änderungen des Status an  
   
@@ -228,12 +213,12 @@ Animationen in Visual Studio eine bestimmte Funktion nicht Benutzerproduktivitä
   
 Diese Abbildung zeigt die animationsstile empfohlen für Visual Studio. Keine Animation oder geringfügige Animationen wie ein- / ausblenden, werden die am häufigsten verwendet. Begrenzten Anwendung der Bewegungsanimationen wie Erweiterung und Verkleinerung vorhanden ist, ändern und Drehung X- und Y zu positionieren. 
   
-![Empfohlene animationsstile für Visual Studio](../../extensibility/ux-guidelines/media/1202-a_vsanimstyles.png "1202-a_VSAnimStyles")<br />Empfohlene Animationsstile für Visual Studio
+![Empfohlene animationsstile für Visual Studio](../../extensibility/ux-guidelines/media/1202-a_vsanimstyles.png "1202 A_VSAnimStyles")<br />Empfohlene Animationsstile für Visual Studio
   
 #### <a name="appear-and-disappear"></a>Angezeigt werden und nicht mehr vorhanden  
 Mit diesem Muster wechselt ein Element aus sichtbar außerhalb-des-Ansicht und ohne eine Animation Übergang zurück.  
   
-![Angezeigt werden und nicht mehr Animation angezeigt.](../../extensibility/ux-guidelines/media/1202-b_appearanddisappear.png "1202-b_AppearAndDisappear")<br />Angezeigt werden und nicht mehr Animation angezeigt.  
+![Angezeigt und ausgeblendet Animation](../../extensibility/ux-guidelines/media/1202-b_appearanddisappear.png "1202 B_AppearAndDisappear")<br />Angezeigt werden und nicht mehr Animation angezeigt.  
   
 ##### <a name="correct-usage"></a>Richtige Verwendung  
 Neue UI-Elemente müssen, die sofort werden ein- bzw. ausgeblendet, damit der Benutzer weder abgelenkt noch verdeckt wird. Darüber hinaus möglicherweise langsam verschieben Animationen als Leistung ziehen, die auftreten, in dem Format angezeigt und ausgeblendet wird nicht wahrgenommen werden.  
@@ -254,7 +239,7 @@ Die Wartezeit ist in der Regel 0 (null) Sekunden.
 #### <a name="fade-in-and-fade-out"></a>Auf- und Ausblenden der videoüberlagerung benötigt  
 Mit diesem Muster wird ein Element der Benutzeroberfläche aus nicht sichtbar (0 % Deckkraft) geht sichtbar (100 % Deckkraft) oder umgekehrt.  
   
-![Auf- und Ausblenden der videoüberlagerung benötigt animation](../../extensibility/ux-guidelines/media/1202-c_fadeinfadeout.png "1202-c_FadeInFadeOut")<br />Auf- und Ausblenden der videoüberlagerung benötigt animation  
+![Auf- und Ausblenden der videoüberlagerung benötigt Animation](../../extensibility/ux-guidelines/media/1202-c_fadeinfadeout.png "1202 C_FadeInFadeOut")<br />Auf- und Ausblenden der videoüberlagerung benötigt animation  
   
 ##### <a name="correct-usage"></a>Richtige Verwendung  
 Dies ist die am häufigsten UI Animation empfohlen. Es ist eine geringfügige Auswirkung, die zu überwachende ohne Unterbrechung Datenfluss hinzufügt. In einigen Fällen kann der Benutzer nicht einmal bewusst ergibt sich eine Animation eine problemlose Wesen und Benutzeroberflächen-System fließen.  
@@ -280,7 +265,7 @@ Dies ist die am häufigsten UI Animation empfohlen. Es ist eine geringfügige Au
 #### <a name="color-blend-from-a-to-b"></a>Farbe Blend von A zu B  
 Mit diesem Muster ändert ein Element der Benutzeroberfläche von Farbe ein Farbe B.  
   
-![Blend-Animation Farbe](../../extensibility/ux-guidelines/media/1202-d_colorblend.png "1202-d_ColorBlend")<br />Blend-Animation Farbe  
+![Farbüberblendung](../../extensibility/ux-guidelines/media/1202-d_colorblend.png "1202 D_ColorBlend")<br />Blend-Animation Farbe  
   
 ##### <a name="correct-usage"></a>Richtige Verwendung  
 Wie eine animierte Übergang, wenn ein Element der Benutzeroberfläche in eine andere Farbe aus einem Kontext oder der Status ändert.  
@@ -304,7 +289,7 @@ Wie eine animierte Übergang, wenn ein Element der Benutzeroberfläche in eine a
 #### <a name="expand-and-contract"></a>Erweiterung und Verkleinerung  
 Mit diesem Muster wird ein Benutzeroberflächenelement erweitert, X, Y oder beide Richtungen.  
   
-![Erweiterung und Verkleinerung animation](../../extensibility/ux-guidelines/media/1202-e_expandcontract.png "1202-e_ExpandContract")<br />Erweiterung und Verkleinerung animation  
+![Erweiterung und Verkleinerung Animation](../../extensibility/ux-guidelines/media/1202-e_expandcontract.png "1202 E_ExpandContract")<br />Erweiterung und Verkleinerung animation  
   
 ##### <a name="correct-usage"></a>Richtige Verwendung  
 Wie eine animierte Übergang, wenn ein Element der Benutzeroberfläche aus einem Kontext in eine andere Größe ändert.  
@@ -328,7 +313,7 @@ Wie eine animierte Übergang, wenn ein Element der Benutzeroberfläche aus einem
 #### <a name="x-y-position-change"></a>X-Y-position ändern  
 Mit diesem Muster ändert ein Benutzeroberflächenelement seine X- oder Y-Position oder beides.  
   
-![X-Y-Position ändern animation](../../extensibility/ux-guidelines/media/1202-f_xypositionchange.png "1202-f_XYPositionChange")<br />X-Y-Position ändern animation  
+![X-Y-Position ändern Animation](../../extensibility/ux-guidelines/media/1202-f_xypositionchange.png "1202 F_XYPositionChange")<br />X-Y-Position ändern animation  
   
 ##### <a name="correct-usage"></a>Richtige Verwendung  
 Wie eine animierte Übergang, wenn ein Element der Benutzeroberfläche in eine andere Position aus einem Kontext ändert.  
@@ -351,7 +336,7 @@ Registerkarte neu anordnen
 #### <a name="rotate"></a>Drehen  
 Mit diesem Muster die dreht des Benutzeroberflächenelements aus.  
   
-![Benutzeroberflächenautomatisierungs-Element Drehungsanimation](../../extensibility/ux-guidelines/media/1202-g_rotate.png "1202-g_Rotate")<br />Benutzeroberflächenautomatisierungs-Element Drehungsanimation  
+![Benutzeroberflächenautomatisierungs-Element Drehungsanimation](../../extensibility/ux-guidelines/media/1202-g_rotate.png "1202 G_Rotate")<br />Benutzeroberflächenautomatisierungs-Element Drehungsanimation  
   
 ##### <a name="correct-usage"></a>Richtige Verwendung  
 Nur für die Statusanzeige unbestimmt Spinvorgänge.  
@@ -370,56 +355,56 @@ Unbestimmt Statusanzeige (Spinvorgänge)
 ### <a name="common-shell-ui-actions-and-recommended-animations"></a>Allgemeine Shell-UI-Aktionen und empfohlene Animationen  
   
 #### <a name="tab-open"></a>Registerkarte öffnen  
-![Animation "Registerkarte öffnen"](../../extensibility/ux-guidelines/media/1202-h_tabopen.png "1202-h_TabOpen")<br />Animation "Registerkarte öffnen"  
+![Registerkarte öffnen Animation](../../extensibility/ux-guidelines/media/1202-h_tabopen.png "1202 H_TabOpen")<br />Animation "Registerkarte öffnen"  
     
 -   Art: angezeigt werden  
   
 -   Dauer: 0 (null) Sekunden  
 
 #### <a name="tab-close"></a>Schließen Sie die Registerkarte "  
-![Animation "Registerkarte schließen"](../../extensibility/ux-guidelines/media/1202-i_tabclose.png "1202-i_TabClose")<br />Animation "Registerkarte schließen"  
+![Registerkarte schließen Animation](../../extensibility/ux-guidelines/media/1202-i_tabclose.png "1202 I_TabClose")<br />Animation "Registerkarte schließen"  
   
 -   Format: X-Position ändern  
   
 -   Dauer: 200 Millisekunden  
   
 #### <a name="tab-reorder"></a>Registerkarte neu anordnen  
-![Animation "Registerkarte neu anordnen" in Visual Studio](../../extensibility/ux-guidelines/media/1202-j_tabreorder.png "1202-j_TabReorder")<br />Animation "Registerkarte-neu anordnen"
+![Registerkarte neu anordnen Animation in Visual Studio](../../extensibility/ux-guidelines/media/1202-j_tabreorder.png "1202 J_TabReorder")<br />Animation "Registerkarte-neu anordnen"
 
 -   Format: X-Position ändern  
   
 -   Dauer: 200 Millisekunden  
     
 #### <a name="close-floating-document"></a>Schließen unverankertes Dokument  
-![Schließen unverankertes Dokument animation](../../extensibility/ux-guidelines/media/1202-k_closefloatingdocument.png "1202-k_CloseFloatingDocument")<br />Schließen unverankertes Dokument animation  
+![Gleitkommawert Dokument Animation schließen](../../extensibility/ux-guidelines/media/1202-k_closefloatingdocument.png "1202 K_CloseFloatingDocument")<br />Schließen unverankertes Dokument animation  
    
 -   Art: angezeigt werden  
   
 -   Dauer: 200 Millisekunden   
  
 #### <a name="window-state-transition"></a>Fenster Zustandsübergang  
-![Übergang von Fensteranimation-Status](../../extensibility/ux-guidelines/media/1202-l_windowstatetransition.png "1202-l_WindowStateTransition")<br />Übergang von Fensteranimation-Status  
+![Fenster Status Übergangsanimationen](../../extensibility/ux-guidelines/media/1202-l_windowstatetransition.png "1202 L_WindowStateTransition")<br />Übergang von Fensteranimation-Status  
     
 -   Format: zur Wahrung der Konsistenz mit anderen Windows können Sie das aktuelle Betriebssystem das Dokument schließen Animation definieren.  
   
 -   Dauer: 200 Millisekunden  
   
 #### <a name="menu-open"></a>Menü öffnen  
-![Animation "Menü öffnen"](../../extensibility/ux-guidelines/media/1202-m_menuopen.png "1202-m_MenuOpen")<br />Animation "Menü öffnen"  
+![Animation "Menü öffnen"](../../extensibility/ux-guidelines/media/1202-m_menuopen.png "1202 M_MenuOpen")<br />Animation "Menü öffnen"  
     
 -   Art: Hereingleiten  
   
 -   Dauer: 200 Millisekunden  
   
 #### <a name="menu-close"></a>Menü schließen  
-![Animation "Menü schließen"](../../extensibility/ux-guidelines/media/1202-n_menuclose.png "1202-n_MenuClose")<br />Animation "Menü schließen"  
+![Schließen Menüanimation](../../extensibility/ux-guidelines/media/1202-n_menuclose.png "1202 N_MenuClose")<br />Animation "Menü schließen"  
     
 -   Art: Ausblenden der videoüberlagerung benötigt  
   
 -   Dauer: 200 Millisekunden  
   
 #### <a name="auto-hide-tool-window-reveal"></a>Automatisch im Hintergrund Tool Fenster anzeigen  
-![Automatisch im Hintergrund Tool anzeigen Fensteranimation](../../extensibility/ux-guidelines/media/1202-o_autohidetoolwindowreveal.png "1202-o_AutoHideToolWindowReveal")<br />Automatisch im Hintergrund Tool anzeigen Fensteranimation  
+![Automatisch im Hintergrund Tool anzeigen Fensteranimation](../../extensibility/ux-guidelines/media/1202-o_autohidetoolwindowreveal.png "1202 O_AutoHideToolWindowReveal")<br />Automatisch im Hintergrund Tool anzeigen Fensteranimation  
 
 -   Art: angezeigt werden  
   

@@ -1,73 +1,72 @@
 ---
-title: "IDiaSymbol::findChildrenExByAddr | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSymbol::findChildrenExByAddr"
+title: IDiaSymbol::findChildrenExByAddr | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSymbol::findChildrenExByAddr
 ms.assetid: c1e7885d-2d15-4529-9ac2-32dd22efe31c
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: a8f5dbd7a6ad06ba10690e92042c9722eca5c99e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSymbol::findChildrenExByAddr
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Ruft die untergeordneten Elemente des Symbols ab, die an einer angegebenen Adresse gültig sind.  
+# <a name="idiasymbolfindchildrenexbyaddr"></a>IDiaSymbol::findChildrenExByAddr
+Ruft die untergeordneten Elemente des Symbols, die an einer bestimmten Adresse gültig sind.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT findChildrenExByAddr (   
-   enum SymTagEnum   symtag,  
-   LPCOLESTR         name,  
-   DWORD             compareFlags,  
-   DWORD             address,  
-   IDiaEnumSymbols** ppResult  
+```C++  
+HRESULT findChildrenExByAddr (   
+   enum SymTagEnum   symtag,  
+   LPCOLESTR         name,  
+   DWORD             compareFlags,  
+   DWORD             address,  
+   IDiaEnumSymbols** ppResult  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `symtag`  
- \[in\]  Gibt die Symbol Tags der abzurufenden untergeordneten Elemente an, wie in [SymTagEnum\-Enumeration](../../debugger/debug-interface-access/symtagenum.md)definiert.  Auf `SymTagNull` , sodass alle untergeordneten Elemente abgerufen werden können.  
+ [in] Gibt die symboltags der untergeordneten Elemente abgerufen werden soll, gemäß der [SymTagEnum-Enumeration](../../debugger/debug-interface-access/symtagenum.md). Legen Sie auf `SymTagNull` für alle untergeordneten Elemente abgerufen werden sollen.  
   
  `name`  
- \[in\]  Gibt den Namen der untergeordneten Elemente an, die abgerufen werden sollen.  Auf `NULL` , sodass alle untergeordneten Elemente abgerufen werden können.  
+ [in] Gibt den Namen der untergeordneten Elemente abgerufen werden sollen. Legen Sie auf `NULL` für alle untergeordneten Elemente abgerufen werden sollen.  
   
  `compareFlags`  
- \[in\]  Gibt die Vergleichsoptionen an angewendet werden, um Übereinstimmungen zu benennen.  Werte aus der [NameSearchOptions Enumeration](../../debugger/debug-interface-access/namesearchoptions.md)\-Enumeration können allein oder in Kombination verwendet werden.  
+ [in] Gibt die Vergleichsoptionen, die auf die namensübereinstimmung angewendet werden. Werte aus der [NameSearchOptions-Enumeration](../../debugger/debug-interface-access/namesearchoptions.md) Enumeration kann allein oder in Kombination verwendet werden.  
   
  `address`  
- \[in\]  Die Adresse des Symbols.  
+ [in] Die Adresse des Symbols.  
   
  `ppResult`  
- \[out\]  Gibt ein [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)\-Objekt zurück, das eine Liste der untergeordneten abgerufenen Symbole enthält.  
+ [out] Gibt eine [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md) -Objekt, das eine Liste der untergeordneten Symbole enthält abgerufen.  
   
-## Rückgabewert  
- Gibt `S_OK` , wenn mindestens ein untergeordnetes Element des Symbols gefunden wurde, oder `S_FALSE` zurück, wenn keine untergeordneten Elemente gefunden wurden. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Gibt `S_OK` Wenn mindestens ein untergeordnetes Element des Symbols gefunden wurde, gibt `S_FALSE` Wenn keine untergeordneten Elemente nicht gefunden wurden; andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Hinweise  
- Die lokalen Symbole, die Informationen über den Bereich Live zurückgegebene Zu sind.  
+## <a name="remarks"></a>Hinweise  
+ Die lokalen Symbole, die zurückgegeben werden einschließen live Bereichsinformationen  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  Header: Dia2.h  
   
  Bibliothek: diaguids.lib  
   
- DLLs: msdia100.dll  
+ DLL: msdia100.dll  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [SymTagEnum\-Enumeration](../../debugger/debug-interface-access/symtagenum.md)   
+ [SymTagEnum-Enumeration](../../debugger/debug-interface-access/symtagenum.md)   
  [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)   
- [IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)   
- [NameSearchOptions Enumeration](../../debugger/debug-interface-access/namesearchoptions.md)
+ [Idiasession:: Findchildren](../../debugger/debug-interface-access/idiasession-findchildren.md)   
+ [NameSearchOptions-Enumeration](../../debugger/debug-interface-access/namesearchoptions.md)

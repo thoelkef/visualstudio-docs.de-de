@@ -1,65 +1,67 @@
 ---
-title: "Befehle, Men&#252;s und Symbolleisten | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Menüs [Visual Studio SDK] Befehle"
-  - "Befehle [Visual Studio]"
-  - "Symbolleisten [Visual Studio] Befehle"
+title: "Befehle, Menüs und Symbolleisten | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- menus [Visual Studio SDK], commands
+- commands [Visual Studio]
+- toolbars [Visual Studio], commands
 ms.assetid: 07b4ed90-dbbd-40df-b6c9-8395fd6f2ab6
-caps.latest.revision: 60
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 60
+caps.latest.revision: "60"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 8ba153c6ec1d9944e889919d1d49817dcd97c9a4
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Befehle, Men&#252;s und Symbolleisten
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Menüs und Symbolleisten werden den Benutzern Zugriff auf die Befehle der VSPackage. Befehle sind Funktionen, die Aufgaben, z. B. ein Dokument zu drucken, eine Sicht aktualisieren oder Erstellen einer neuen Datei. Menüs und Symbolleisten stellen eine bequeme Methode grafisch auf Ihre Befehle Benutzern angezeigt werden. In der Regel sind verwandte Befehle zusammen im gleichen Menü oder Symbolleiste gruppiert.  
+# <a name="commands-menus-and-toolbars"></a>Befehle, Menüs und Symbolleisten
+Menüs und Symbolleisten sind, dass Benutzer Befehle im VSPackage zugreifen. Befehle sind Funktionen, mit denen Aufgaben wie das Drucken eines Dokuments, das Aktualisieren einer Ansicht oder das Erstellen einer neuen Datei ausgeführt werden können. Menüs und Symbolleisten stellen eine praktische Methode für die grafische Darstellung von Befehlen für Benutzer dar. In der Regel sind verwandte Befehle zusammen im gleichen Menü oder auf derselben Symbolleiste gruppiert.  
   
--   Menüs werden in der Regel als Wort Zeichenfolgen in einer Zeile am Anfang der integrierten Entwicklungsumgebung \(IDE\) oder ein Toolfenster gruppiert angezeigt. Menüs auch können als Ergebnis eines Ereignisses mit der rechten Maustaste angezeigt werden und werden als Kontextmenüs in diesem Kontext bezeichnet. Beim Klicken auf Erweitern Menüs, um eine oder mehrere Befehle anzuzeigen. Befehle, wenn geklickt haben, können Aufgaben ausführen oder starten Sie Untermenüs, die zusätzliche Befehle enthalten. Einige bekannte Menünamen werden Datei, bearbeiten, anzeigen und Fenster. Weitere Informationen finden Sie unter [Erweitern von Menüs und Befehlen](../../extensibility/extending-menus-and-commands.md).  
+-   Menüs werden in der Regel als aus einem Wort bestehende Zeichenfolgen in einer Zeile im oberen Bereich der integrierten Entwicklungsumgebung (Integrated Development Environment, IDE) oder oben in einem Toolfenster gruppiert angezeigt. Menüs können auch durch Klicken mit der rechten Maustaste angezeigt werden. In diesem Kontext werden sie als Kontextmenüs bezeichnet. Beim Klicken auf ein Menü wird das Menü erweitert, sodass mindestens ein Befehl angezeigt wird. Wenn Sie auf Befehle klicken, können Aufgaben ausgeführt oder Untermenüs, die zusätzliche Befehle enthaltenen, geöffnet werden. Einige bekannte Menünamen sind "Datei", "Bearbeiten", "Ansicht" und "Fenster". Weitere Informationen finden Sie unter [Erweitern von Menüs und Befehlen](../../extensibility/extending-menus-and-commands.md).  
   
--   Symbolleisten sind in der Regel Zeilen von Schaltflächen und andere Steuerelemente, z. B. Kombinationsfelder, Listenfelder, Textfelder und Menücontroller. Es werden alle Steuerelemente der Symbolleiste Befehle zugeordnet. Wenn Sie eine Symbolleisten\-Schaltfläche klicken, wird der Befehl aktiviert. Symbolleisten\-Schaltflächen weisen normalerweise Symbole, die die zugrunde liegenden Befehle, wie z. B. einen Drucker, einen Druckbefehl vorgeschlagen. In einem Dropdown\-Listenfeld\-Steuerelement wird jedes Element in der Liste einen anderen Befehl zugeordnet. Ein Menü\-Controller ist eine Mischung aus, in dem eine Seite des Steuerelements eine Symbolleisten\-Schaltfläche und die andere Seite wird ein Pfeil nach unten, der zusätzliche Befehle, die beim Klicken auf angezeigt. Weitere Informationen finden Sie unter [Hinzufügen eines Controllers im Menü auf einer Symbolleiste](../../extensibility/adding-a-menu-controller-to-a-toolbar.md).  
+-   Symbolleisten sind in der Regel Zeilen, in denen Schaltflächen und andere Steuerelemente wie Kombinationsfelder, Listenfelder, Textfelder und Menüsteuerelemente angezeigt werden. Allen Symbolleisten-Steuerelementen sind Befehle zugeordnet. Wenn Sie auf eine Symbolleistenschaltfläche klicken, wird der zugeordnete Befehl aktiviert. Symbolleistenschaltflächen weisen normalerweise Symbole auf, die die zugrunde liegenden Befehle veranschaulichen. Ein Beispiel hierfür ist ein Drucker für den Befehl "Drucken". Bei Dropdownlisten-Steuerelementen ist jedes Element in der Liste einem anderen Befehl zugeordnet. Ein Menüsteuerelement ist eine Mischform, bei der eine Seite des Steuerelements eine Symbolleistenschaltfläche und die andere Seite ein Dropdownpfeil ist. Wenn Sie auf den Dropdownpfeil klicken, werden zusätzliche Befehle angezeigt. Weitere Informationen finden Sie unter [einer Symbolleiste ein Menücontroller hinzugefügt](../../extensibility/adding-a-menu-controller-to-a-toolbar.md).  
   
--   Wenn Sie einen Befehl erstellen, müssen Sie auch einen Ereignishandler für ihn erstellen. Der Ereignishandler stellt fest, wenn der Befehl sichtbar oder aktiviert ist, ist, können Sie den Text zu ändern, und stellt sicher, dass der Befehl antwortet \("Routen"\), wenn aktiviert. In den meisten Fällen verarbeitet die IDE\-Befehle mit den <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> Schnittstelle. Befehle im [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Route hierarchisch der innersten Befehlskontext, basierend auf der lokalen Auswahl, bis der äußersten Kontexts angegeben, basierend auf der globalen Auswahl ab. Befehle, die dem Hauptmenü hinzugefügt, stehen sofort für Skripting. Weitere Informationen finden Sie unter [MenuCommand\- und OleMenuCommand\-Objekte](../../misc/menucommands-vs-olemenucommands.md) und [Auswahl Kontextobjekte](../../extensibility/internals/selection-context-objects.md).  
+-   Wenn Sie einen Befehl erstellen, müssen Sie auch einen Ereignishandler für diesen Befehl erstellen. Der Ereignishandler bestimmt, wann der Befehl angezeigt oder aktiviert wird, ermöglicht Ihnen, den zugehörigen Text zu ändern, und stellt sicher, dass der Befehl entsprechend "reagiert", wenn er aktiviert wird. In den meisten Fällen verarbeitet die IDE Befehle mit der <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> Schnittstelle. Befehle in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Route hierarchisch, beginnend mit dem innersten Befehlskontext, basierend auf der lokalen Auswahl, und es wird bis zum äußersten Kontext, basierend auf der globalen Auswahl. Befehle, die dem Hauptmenü hinzugefügt werden, sind sofort für die Skripterstellung verfügbar. Weitere Informationen finden Sie unter [MenuCommand-und. OleMenuCommands](../../extensibility/menucommands-vs-olemenucommands.md) und [Auswahl Kontextobjekte](../../extensibility/internals/selection-context-objects.md).  
   
- Um neue Menüs und Symbolleisten zu definieren, müssen Sie sie in einer Visual Studio\-Befehl\-Tabelle \(VSCT\) Datei beschreiben. Der Visual Studio\-Paketvorlage erstellt diese Datei, sowie die erforderlichen Elemente zur Unterstützung, beliebige Befehle, Symbolleisten und Editoren, die Sie in der Vorlage ausgewählt. Alternativ Sie können Schreiben eigener VSCT\-Datei mit dem XML\-Schema hier: [VSCT XML\-Schemareferenz](../../extensibility/vsct-xml-schema-reference.md).  
+ Wenn Sie neue Menüs und Symbolleisten definieren möchten, müssen Sie diese in einer VSCT-Datei (Visual Studio Command Table) beschreiben. Diese Datei wird von der Visual Studio-Paketvorlage zusammen mit den erforderlichen Elementen zur Unterstützung der von Ihnen in der Vorlage ausgewählten Befehle, Symbolleisten und Editoren erstellt. Alternativ Sie können schreiben eigene VSCT-Datei mit den hier beschriebenen Xml-Schema: [VSCT-XML-Schemareferenz](../../extensibility/vsct-xml-schema-reference.md).  
   
- Weitere Informationen zum Arbeiten mit VSCT\-Dateien finden Sie unter [Visual Studio\-Befehl\-Tabelle \(. VSCT\) Dateien](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).  
+ Weitere Informationen zum Arbeiten mit VSCT-Dateien finden Sie unter [Visual Studio-Befehlstabelle (. VSCT)-Dateien](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).  
   
- Die Themen in diesem Abschnitt wird erläutert, wie Befehle, Menüs und Symbolleisten in VSPackages funktionieren.  
+ Die Themen in diesem Abschnitt erläutern die Funktionsweise von Befehlen, Menüs und Symbolleisten in VSPackages.  
   
-## In diesem Abschnitt  
- [Wie VSPackages Benutzeroberflächenelemente hinzufügen](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)  
- Eine detaillierte Beschreibung der Tabelle Befehlsformat\-Spezifikation.  
+## <a name="in-this-section"></a>In diesem Abschnitt  
+ [Hinzufügen von Benutzeroberflächenelementen mit VSPackages](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)  
+ Eine ausführliche Beschreibung der Tabelle Befehlsformat-Spezifikation.  
   
- [Visual Studio\-Befehl\-Tabelle \(. VSCT\) Dateien](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)  
- Beschreibt eine XML\-basierte Syntax und die Compiler für Befehlstabellen.  
+ [VSCT-Dateien (Visual Studio Command Table)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)  
+ Beschreibt eine XML-basierte Syntax und -Compiler für Befehlstabellen.  
   
- [Standardbefehl, Gruppen\- und Platzierung der Symbolleiste](../../extensibility/internals/default-command-group-and-toolbar-placement.md)  
- Beschreibt vordefinierten Befehle, Gruppen, Menüs und Symbolleisten.  
+ [Standardplatzierung von Befehlen, Gruppen und Symbolleisten](../../extensibility/internals/default-command-group-and-toolbar-placement.md)  
+ Beschreibt, vordefinierten Befehle, Gruppen, Menüs und Symbolleisten.  
   
- [IDE\-definierte Befehle, Menüs und Gruppen](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)  
- Gibt an, die vordefinierte Menüs, Befehle und Befehlsgruppen zur Verwendung durch die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE.  
+ [IDE-definierte Befehle, Menüs und Gruppen](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)  
+ Gibt an, die vordefinierte Menüs, Befehle und Befehlsgruppen verfügbar für die Verwendung durch die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE.  
   
- [Befehl Design](../../extensibility/internals/command-design.md)  
+ [Befehlsentwurf](../../extensibility/internals/command-design.md)  
  Erläutert, wie Befehle zu entwerfen.  
   
- [Optimieren der Menü\- und Symbolleistenbefehle](../../extensibility/internals/optimizing-menu-and-toolbar-commands.md)  
- Enthält Richtlinien für Befehle.  
+ [Optimieren von Menü- und Symbolleistenbefehlen](../../extensibility/internals/optimizing-menu-and-toolbar-commands.md)  
+ Bietet Richtlinien für Befehle.  
   
- [Befehle stellen zur Verfügung](../../extensibility/internals/making-commands-available.md)  
+ [Verfügbarmachen von Befehlen](../../extensibility/internals/making-commands-available.md)  
  Erläutert, wie Visual Studio Befehle zur Verfügung stellen.  
   
- [Befehle und Menüs, die mithilfe von Interop\-Assemblys](../../extensibility/internals/commands-and-menus-that-use-interop-assemblies.md)  
- Erläutert die Befehle zu implementieren, die Interop\-Assemblys verwenden.  
+ [Befehle und Menüs, die Interop-Assemblys verwenden](../../extensibility/internals/commands-and-menus-that-use-interop-assemblies.md)  
+ Erläutert, wie Befehle implementiert, die Interop-Assemblys verwenden.  
   
-## Verwandte Abschnitte  
+## <a name="related-sections"></a>Verwandte Abschnitte  
  [Befehlsrouting in VSPackages](../../extensibility/internals/command-routing-in-vspackages.md)  
  Erläutert das Befehlsrouting in VSPackages.

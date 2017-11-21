@@ -1,27 +1,30 @@
 ---
-title: "IDebugDocumentHelper::SetShortName | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IDebugDocumentHelper::SetShortName | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IDebugDocumentHelper.SetShortName
 apilocation: pdm.dll
-helpviewer_keywords: 
-  - "IDebugDocumentHelper::SetShortName"
+helpviewer_keywords: IDebugDocumentHelper::SetShortName
 ms.assetid: 811a444b-0ea4-4374-9d4c-4f7713bdd1ff
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 69674b5639c7d59a4551192177d9ebdafd27ac99
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# IDebugDocumentHelper::SetShortName
-Legt den Kurznamen für das Dokument fest.  
+# <a name="idebugdocumenthelpersetshortname"></a>IDebugDocumentHelper::SetShortName
+Legt den kurzen Namen für das Dokument.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 HRESULT SetShortName(  
@@ -29,19 +32,19 @@ HRESULT SetShortName(
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `pszShortName`  
- \[in\] auf NULL endende Zeichenfolge, die den kurzen Namen des Dokuments enthält.  
+ [in] Eine auf Null endende Zeichenfolge, die den kurzen Namen des Dokuments enthält.  
   
-## Rückgabewert  
- Die Methode gibt ein `HRESULT` zurück.  Zu den möglichen Werten zählen, aber nicht zu, die in der folgenden Tabelle beschränkt.  
+## <a name="return-value"></a>Rückgabewert  
+ Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
   
-|Wert|Description|  
-|----------|-----------------|  
+|Wert|Beschreibung|  
+|-----------|-----------------|  
 |`S_OK`|Die Methode war erfolgreich.|  
   
-## Hinweise  
- Diese Methode legt einen neuen Kurznamen für das Dokument fest.  
+## <a name="remarks"></a>Hinweise  
+ Diese Methode legt einen neuen kurze Namen für das Dokument fest.  
   
-## Siehe auch  
- [IDebugDocumentHelper\-Schnittstelle](../../winscript/reference/idebugdocumenthelper-interface.md)
+## <a name="see-also"></a>Siehe auch  
+ [IDebugDocumentHelper-Schnittstelle](../../winscript/reference/idebugdocumenthelper-interface.md)

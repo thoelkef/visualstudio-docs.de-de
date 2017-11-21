@@ -1,62 +1,62 @@
 ---
-title: "IDebugEngine3::SetJustMyCodeState | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugEngine3::SetJustMyCodeState"
-helpviewer_keywords: 
-  - "IDebugEngine3::SetJustMyCodeState"
+title: IDebugEngine3::SetJustMyCodeState | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugEngine3::SetJustMyCodeState
+helpviewer_keywords: IDebugEngine3::SetJustMyCodeState
 ms.assetid: 8ec17fbf-df93-424a-b2ed-fd1e5ee51256
-caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 3a411287a369ca5b2beab70a9be7e4dcc2e4947d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugEngine3::SetJustMyCodeState
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Diese Methode gibt das Debugmodul zu den JustMyCode\-Zustandsinformationen.  
+# <a name="idebugengine3setjustmycodestate"></a>IDebugEngine3::SetJustMyCodeState
+Diese Methode weist die Debugging-Modul zu den JustMyCode-Status-Informationen.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```cpp  
-HRESULT SetJustMyCodeState(  
-   BOOL           fUpdate,  
-   DWORD          dwModules,  
-   JMC_CODE_SPEC* rgJMCSpec  
+HRESULT SetJustMyCodeState(  
+   BOOL           fUpdate,  
+   DWORD          dwModules,  
+   JMC_CODE_SPEC* rgJMCSpec  
 );  
 ```  
   
-```c#  
+```csharp  
 int SetJustMyCodeState(  
-   int             fUpdate,   
-   uint            dwModules,   
-   JMC_CODE_SPEC[] rgJMCSpec  
+   int             fUpdate,   
+   uint            dwModules,   
+   JMC_CODE_SPEC[] rgJMCSpec  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `fUpdate`  
- \[in\]  Ein Wert ungleich 0 \(`TRUE`\), um den aktuellen Informationen zu aktualisieren,`FALSE`\(null\), um alle Daten zurückzusetzen und Kleinschreibung erfolgen soll \(der gesamte Inhalt bereits festgelegt\).  
+ [in] Ungleich Null (`TRUE`) um aktuelle Informationen zu aktualisieren, NULL (`FALSE`) alle Informationen (ignorieren alle zuvor festgelegten) zurücksetzen.  
   
  `dwModules`  
- \[in\]  Anzahl von Informationen in `rgJMCSpec.`strukturen  
+ [in] Anzahl der Informationsstrukturen in`rgJMCSpec.`  
   
  `rgJMCSpec`  
- \[in\]  Array von Strukturen [JMC\_CODE\_SPEC](../../../extensibility/debugger/reference/jmc-code-spec.md) zu verwenden.  
+ [in] Array von [JMC_CODE_SPEC](../../../extensibility/debugger/reference/jmc-code-spec.md) Strukturen zu verwenden.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. Gibt andernfalls Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird Fehlercode zurückgegeben.  
   
-## Hinweise  
- JustMyCode ist das Konzept des Debuggens nur von Code, der einem Benutzer und dem Ignorieren zwischen allen Code wie System gehört, das Code\-gleichmäßig ist, wenn Quellcode für den Systemcode verfügbar ist.  
+## <a name="remarks"></a>Hinweise  
+ JustMyCode ist das Konzept des Debuggen von Code, der ein Benutzer angehört, und wird ignoriert, alle temporären Code z. B. Systemcode – selbst wenn der Quellcode für diesen Systemcode verfügbar ist.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDebugEngine3](../../../extensibility/debugger/reference/idebugengine3.md)   
- [JMC\_CODE\_SPEC](../../../extensibility/debugger/reference/jmc-code-spec.md)
+ [JMC_CODE_SPEC](../../../extensibility/debugger/reference/jmc-code-spec.md)

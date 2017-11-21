@@ -1,27 +1,30 @@
 ---
-title: "IDebugApplicationThread::SynchronousCallIntoThread | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IDebugApplicationThread::SynchronousCallIntoThread | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IDebugApplicationThread.SynchronousCallIntoThread
 apilocation: pdm.dll
-helpviewer_keywords: 
-  - "IDebugApplicationThread::SynchronousCallIntoThread"
+helpviewer_keywords: IDebugApplicationThread::SynchronousCallIntoThread
 ms.assetid: 8a91157f-dade-418a-ad02-5607ce12c95c
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: fdeb57380975f19424f8b7da783846b5aae976ed
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# IDebugApplicationThread::SynchronousCallIntoThread
-Stellt einen Mechanismus für den Aufrufer um Code im Anwendungsthread bereit.  
+# <a name="idebugapplicationthreadsynchronouscallintothread"></a>IDebugApplicationThread::SynchronousCallIntoThread
+Bietet einen Mechanismus für den Aufrufer Code im Thread Anwendung auszuführen.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 HRESULT SynchronousCallIntoThread(  
@@ -32,29 +35,29 @@ HRESULT SynchronousCallIntoThread(
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `pstcb`  
- \[in\] Das Objekt an den Aufruf.  
+ [in] Das Objekt aufrufen.  
   
  `dwParam1`  
- \[in\] Erster Parameter, zu `IDebugThreadCall::ThreadCallHandler` der Methode zu übergeben.  
+ [in] Erster Parameter an übergeben der `IDebugThreadCall::ThreadCallHandler` Methode.  
   
  `dwParam2`  
- \[in\] zweiten Parameter, zu `IDebugThreadCall::ThreadCallHandler` der Methode zu übergeben.  
+ [in] Zweiten Parameter, der zum Übergeben der `IDebugThreadCall::ThreadCallHandler` Methode.  
   
  `dwParam3`  
- \[in\] Dritter Parameter, zu `IDebugThreadCall::ThreadCallHandler` der Methode zu übergeben.  
+ [in] Dritte Parameter für die Übergabe an die `IDebugThreadCall::ThreadCallHandler` Methode.  
   
-## Rückgabewert  
- Die Methode gibt ein `HRESULT` zurück.  Zu den möglichen Werten zählen, aber nicht zu, die in der folgenden Tabelle beschränkt.  
+## <a name="return-value"></a>Rückgabewert  
+ Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
   
-|Wert|Description|  
-|----------|-----------------|  
+|Wert|Beschreibung|  
+|-----------|-----------------|  
 |`S_OK`|Die Methode war erfolgreich.|  
   
-## Hinweise  
- Diese Methode stellt einen Mechanismus für den Aufrufer um Code im Debuggerthread bereit.  Sprachmodule und Hosts verwenden diese Methode normalerweise, um Freethreadobjekte auf ihre Singlethreadanwendung Implementierungen zu implementieren.  
+## <a name="remarks"></a>Hinweise  
+ Diese Methode bietet einen Mechanismus für den Aufrufer, Code im Debuggerthread auszuführen. Sprache-Module und Hosts in der Regel wird diese Methode zum Implementieren von Freethread-Objekten über ihre einzelnen Threads Implementierungen verwenden.  
   
-## Siehe auch  
- [IDebugApplicationThread\-Schnittstelle](../../winscript/reference/idebugapplicationthread-interface.md)   
- [IDebugThreadCall\-Schnittstelle](../../winscript/reference/idebugthreadcall-interface.md)
+## <a name="see-also"></a>Siehe auch  
+ [IDebugApplicationThread-Schnittstelle](../../winscript/reference/idebugapplicationthread-interface.md)   
+ [IDebugThreadCall-Schnittstelle](../../winscript/reference/idebugthreadcall-interface.md)

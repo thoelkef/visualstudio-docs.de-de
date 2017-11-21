@@ -1,59 +1,59 @@
 ---
-title: "IEnumDebugReferenceInfo2::Next | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IEnumDebugReferenceInfo2::Next"
-helpviewer_keywords: 
-  - "IEnumDebugReferenceInfo2::Next"
+title: IEnumDebugReferenceInfo2::Next | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IEnumDebugReferenceInfo2::Next
+helpviewer_keywords: IEnumDebugReferenceInfo2::Next
 ms.assetid: 70b31a57-1701-4757-9e7e-63ec60a71b3c
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 08726689f2bdf9c0411e2637d4dc5a08e82d79dd
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IEnumDebugReferenceInfo2::Next
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Gibt die nächste Gruppe von Elementen aus der Enumeration zurück.  
+# <a name="ienumdebugreferenceinfo2next"></a>IEnumDebugReferenceInfo2::Next
+Gibt den nächsten Satz von Elementen aus der Enumeration zurück.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT Next(  
-   ULONG                   celt,  
-   DEBUG_REFERENCE_INFO ** rgelt,  
-   ULONG*                  pceltFetched  
+   ULONG                   celt,  
+   DEBUG_REFERENCE_INFO ** rgelt,  
+   ULONG*                  pceltFetched  
 );  
 ```  
   
-```c#  
+```csharp  
 int Next(  
-   uint                   celt,  
-   DEBUG_REFERENCE_INFO[] rgelt,  
-   ref uint               pceltFetched  
+   uint                   celt,  
+   DEBUG_REFERENCE_INFO[] rgelt,  
+   ref uint               pceltFetched  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `celt`  
- \[in\]  Die Anzahl der abzurufenden Elemente.  Gibt die maximale Größe des `rgelt` Arrays an.  
+ [in] Die Anzahl der abzurufenden Elemente. Außerdem gibt die maximale Größe von der `rgelt` Array.  
   
  `rgelt`  
- \[in, out\]  Array von Elementen, [DEBUG\_REFERENCE\_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) ausgefüllt werden soll.  
+ [in, out] Array von [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) Elemente ausgefüllt werden.  
   
  `pceltFetched`  
- \[out\]  Gibt die Anzahl der Elemente zurück, die sich tatsächlich in `rgelt`zurückgegeben werden.  
+ [out] Gibt die Anzahl der Elemente, die tatsächlich im zurückgegebenen `rgelt`.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück.  Gibt `S_FALSE` zurück, wenn kleiner als die angeforderte Anzahl von Elementen zurückgegeben werden konnte. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`. Gibt `S_FALSE` Wenn weniger als die angeforderte Anzahl von Elementen zurückgegeben werden konnte; andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IEnumDebugReferenceInfo2](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2.md)   
- [DEBUG\_REFERENCE\_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)
+ [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)

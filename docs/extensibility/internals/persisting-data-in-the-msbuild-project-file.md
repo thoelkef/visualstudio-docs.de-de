@@ -1,71 +1,72 @@
 ---
-title: "Beibehalten von Daten in der MSBuild-Projektdatei | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Beibehalten von Daten in Projektdateien."
+title: Beibehalten von Daten in der MSBuild-Projektdatei | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: project files, persisting data in
 ms.assetid: 6a920cb7-453d-4ffd-af1c-6f3084bd03f7
-caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 5d41a4776362f450d5d55552b049c3bba1bc781b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Beibehalten von Daten in der MSBuild-Projektdatei
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Ein Projekt untertyp muss möglicherweise Untertyp spezifisch Daten in die Projektdatei für die spätere Verwendung beibehalten.  Ein Projekt untertyp Dauerhaftigkeit Projektdatei verwendet, um die folgenden Bedingungen erfüllen:  
+# <a name="persisting-data-in-the-msbuild-project-file"></a>Beibehalten von Daten in der MSBuild-Projektdatei
+Ein Projektuntertyp möglicherweise untertypspezifischen Daten in der Projektdatei zur späteren Verwendung beizubehalten. Ein Projektuntertyp verwendet projektdauerhaftigkeit-Datei, um die folgenden Anforderungen erfüllen:  
   
-1.  Behalten Sie die Daten, die als Teil der Erstellung des Projekts verwendet werden.  \(Weitere Informationen dazu finden Sie unter Microsoft Build Engine\). [MSBuild](http://msdn.microsoft.com/de-de/7c49aba1-ee6c-47d8-9de1-6f29a906e20b) Buildbezogene Informationen können folgende Möglichkeiten:  
+1.  Beibehalten von Daten, die als Teil der Erstellung des Projekts verwendet. (Weitere Informationen zu Microsoft Build Engine, finden Sie unter [MSBuild](../../msbuild/msbuild.md).) Buildbezogene Informationen kann entweder:  
   
-    1.  konfigurationsunabhängige Daten.  Das bedeutet, Daten in MSBuild\-Elementen mit Leerzeichen oder fehlenden Bedingungen.  
+    1.  Unabhängige Konfiguration Daten. D. h. in MSBuild-Elemente mit leeren oder fehlenden Bedingungen gespeicherten Daten.  
   
-    2.  Anlagenabhängige Daten.  Das bedeutet, Daten in MSBuild\-Elementen, die für eine bestimmte Projektkonfiguration bedungen werden.  Beispiele:  
+    2.  Die konfigurationsabhängigen Daten. D. h. in MSBuild-Elemente, die für einen bestimmten Projektkonfiguration abhängig davon sind gespeicherten Daten. Zum Beispiel:  
   
         ```  
         <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">  
         ```  
   
-2.  Beibehalten von Daten bei, das Erstellen nicht relevant ist.  Diese Daten können in der Freiform XML ausgedrückt werden, die nicht mit einem XML\-Schema überprüft wird.  
+2.  Beibehalten von Daten, die für das Erstellen nicht relevant ist. Diese Daten können im Freiform-XML-Format ausgedrückt werden, die nicht für ein XML-Schema überprüft wird.  
   
-    1.  konfigurationsunabhängige Daten.  
+    1.  Unabhängige Konfiguration Daten.  
   
-    2.  Anlagenabhängige Daten.  
+    2.  Die konfigurationsabhängigen Daten.  
   
-## Buildbezogene Informationen beibehalten  
- Dauerhaftigkeit von den Daten, die zum Erstellen eines Projekts nützlich sind, wird von MSBuild verarbeitet.  Das MSBuild\-System wartet eine Mastertabelle aus buildbezogenen Informationen.  Projekt untertypen sind zum Aufrufen dieser Daten zuständig, um Eigenschaftswerte abzurufen und festzulegen.  Projekt untertypen können die buildbezogene Datentabelle auch erweitern, indem sie die zusätzlichen beibehalten werden sollen und Eigenschaften hinzufügen, entfernen, deshalb werden diese Eigenschaften nicht beibehalten.  
+## <a name="persisting-build-related-information"></a>Buildbezogene Informationen beibehalten  
+ Dauerhaftigkeit der Daten nützlich zur Erstellung eines Projekts erfolgt über MSBuild. Das MSBuild-System verwaltet eine Mastertabelle mit buildbezogene Informationen. Projekt Untertypen sind verantwortlich für den Zugriff auf diese Daten zum Abrufen und Festlegen von Eigenschaftswerten. Projekt Untertypen ergänzen können auch buildbezogene Datentabelle durch Hinzufügen von zusätzlichen Eigenschaften, die beibehalten werden und Eigenschaften zu entfernen, damit sie nicht persistent gespeichert werden.  
   
- Um die MSBuild\-Bezugspunkte zu ändern, besteht ein Projekt untertyp zum Abrufen des MSBuild\-Eigenschaft Objekts vom Projektsystem der Basis <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage>verantwortlich.  <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage> ist eine Schnittstelle, die im zentralen Projektsystem und aggregierenden Projekt für Abfragen untertyp implementiert, indem es `QueryInterface`ausführt.  
+ Um die MSBuild-Daten zu ändern, ist ein Projektuntertyp verantwortlich zum Abrufen von MSBuild-Property-Objekt aus der Basisprojektsystem über <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage>. <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage>ist eine für taskklassen implementierte Schnittstelle Projektsystem Core und aggregieren Projekt Untertyp Abfragen dafür Treiberdienst `QueryInterface`.  
   
- Im folgenden Verfahren werden die Schritte zum Entfernen einer Eigenschaft mit <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage>.  
+ Das folgende Verfahren erläutert die Schritte zum Entfernen einer Eigenschaft mit <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage>.  
   
-#### So entfernen Sie eine Eigenschaft aus einer MSBuild\-Projektdatei  
+#### <a name="to-remove-a-property-from-an-msbuild-project-file"></a>So entfernen Sie eine Eigenschaft aus einer MSBuild-Projektdatei  
   
-1.  Rufen Sie `QueryInterface` auf <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage> des Projekts untertyps an.  
+1.  Rufen Sie `QueryInterface` auf <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage> der Untertyp des Projekts.  
   
-2.  Aufrufs <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.RemoveProperty%2A> mit `pszPropName` festgelegt auf die Eigenschaft, die Sie entfernen möchten.  
+2.  Rufen Sie <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.RemoveProperty%2A> mit `pszPropName` Festlegen der Eigenschaft, die Sie entfernen möchten.  
   
-### Nicht\-Erstellung weitere Informationen beibehalten  
- Beibehaltung von Daten in den Projektdateien, die nicht der Fall ist, um zu erstellen, wird von <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment>behandelt.  
+### <a name="persisting-non-build-related-information"></a>Beibehalten von nicht-Build-Informationen  
+ Dauerhaftigkeit der Daten in Projektdateien, die keine Rolle spielt erstellen erfolgt über <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment>.  
   
- Sie können <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> auf dem primären `project subtype aggregator`\-Objekt, das `project subtype project configuration`\-Objekt oder beiden implementieren.  
+ Sie implementieren können <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> auf der Hauptseite `project subtype aggregator` -Objekt, das `project subtype project configuration` Objekt oder beides.  
   
- Die folgenden Punkte werden die wichtigsten Konzepte bezüglich der Beibehaltung von anderen Build nicht.  
+ Die folgenden Punkte beschreiben die wichtigsten Konzepte hinsichtlich der Persistenz verwandter Informationen nicht erstellen.  
   
--   Die grundlegenden Aufrufe Projekt auf dem primären Objekt vom Aggregator untertyps Projekt \(d. h. die äußerste Projekt untertyp\), um für unabhängige Daten der Konfiguration zu laden und zu speichern und rufen untertyp\-Projektkonfigurations Projekt auf Objekte an, die anlagenabhängige Daten zu laden und zu speichern.  
+-   Das Basisprojekt aufruft, für das Hauptprojekt Untertyp (d. h. die äußerste Projektuntertyp) Aggregator Objekt zu laden und Speichern von Konfigurationsdaten unabhängig, und er ruft für das Projekt Untertyp Projekt Konfigurationsobjekte zum Laden und speichern abhängig von der Konfiguration Daten.  
   
--   Das niedrige Projekt ruft die Methoden von <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> mehrmals für jede Ebene der Projekt untertyp aggregation an und führt die GUID für jede Ebene.  
+-   Das Basisprojekt Ruft die Methoden der <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> mehrere für jede Ebene der Projekt-Untertyp Aggregation dreimal auf und übergibt die GUID für jede Ebene.  
   
--   Das niedrige Projekt wird oder empfängt ein XML\-Fragment, das einem bestimmten Projekt zugeordnet wird untertyp und verwendet diesen Mechanismus als Methode für die Verwaltung der Zustand zwischen den Ebenen Aggregations.  
+-   Die Basisprojekt übergibt oder empfängt XML-Fragment, das für ein bestimmtes Projektuntertyp dediziert ist und dieser Mechanismus als eine Möglichkeit, Beibehaltung des Status zwischen den Aggregationsebenen verwendet.  
   
--   Das niedrige Projekt ruft die äußersten des Projekts <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment>Implementierung des Untertyps an, die in eine GUID.  Wenn die GUID des äußersten Projekt untertyp gehört, behandelt der Aufruf selbst. Andernfalls delegiert er den Aufruf eines inneren Projekt untertyp usw., bis der Projekt untertyp, dass die GUID entspricht, vorhanden ist.  
+-   Das Basisprojekt ruft des äußersten Projekt Untertyps <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment>Implementierung, die in eine GUID übergeben. Wenn die GUID zu den Projektuntertyp äußersten gehört, behandelt den Aufruf selbst; Andernfalls wird der Aufruf delegiert, eine innere Projektuntertyp usw., bis der Projektuntertyp, dem die GUID entspricht gefunden wird.  
   
--   Ein Projekt untertyp kann das XML\-Fragment auch ändern, bevor oder nachdem er den Aufruf eines inneren Projekt untertyp delegiert.  Das folgende Beispiel einen Auszug aus einer Projektdatei, in der ein Name einer Datei, die die Eigenschaften enthält, die einem Projekt untertyp übergeben wird, gelten zu diesem Projekt untertyp anzeigt.  
+-   Ein Projektuntertyp kann auch das XML-Fragment ändern, vor oder nach dem Aufruf von einem inneren Projektuntertyp delegiert. Das folgende Beispiel zeigt einen Auszug aus einer Projektdatei, bei dem ein Name einer Datei, die einen Projektuntertyp spezifischen Eigenschaften enthält in diesem Projektuntertyp übergeben wird.  
   
     ```  
     <ProjectExtensions>  
@@ -77,5 +78,5 @@ Ein Projekt untertyp muss möglicherweise Untertyp spezifisch Daten in die Proje
       </ProjectExtensions>  
     ```  
   
-## Siehe auch  
- [Projekt\-Untertypen](../../extensibility/internals/project-subtypes.md)
+## <a name="see-also"></a>Siehe auch  
+ [Projektuntertypen](../../extensibility/internals/project-subtypes.md)

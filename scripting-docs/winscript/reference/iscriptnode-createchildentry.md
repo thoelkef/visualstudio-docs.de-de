@@ -1,27 +1,30 @@
 ---
-title: "IScriptNode::CreateChildEntry | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: 'IScriptNode:: CreateChildEntry | Microsoft Docs'
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IScriptNode. CreateChildEntry
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "IScriptNode::CreateChildEntry"
+helpviewer_keywords: IScriptNode::CreateChildEntry
 ms.assetid: b9682505-4457-40e9-8691-235843637506
-caps.latest.revision: 17
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 17
+caps.latest.revision: "17"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 8fcc010efe8fcf30a8f467dd94befff54bc5fac5
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# IScriptNode::CreateChildEntry
-Fügt eine untergeordnete Instanz von `IScriptEntry` hinzu.  
+# <a name="iscriptnode-createchildentry"></a>IScriptNode::CreateChildEntry
+Fügt eine untergeordnete Instanz `IScriptEntry`.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 HRESULT CreateChildEntry(  
@@ -32,41 +35,41 @@ HRESULT CreateChildEntry(
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `isn`  
- \[in\] Der Index des untergeordneten Elements im übergeordneten.  
+ [in] Der Index des untergeordneten Elements in der übergeordneten Tabelle.  
   
  `dwCookie`  
- \[in\] Ein Anwendung festgelegten Wert verwendet, um den untergeordneten Eintrag mit dem Hostobjekt zuzuordnen.  
+ [in] Ein Wert für die anwendungsdefinierte verwendet, das Hostobjekt, das die untergeordneten Eintrag zugeordnet werden soll.  
   
  `pszDelimiter`  
- \[in\] Die Adresse des Ende\-von\-SkriptBlock Trennzeichens.  Zur Analyse verwendet der Host in der Regel ein Trennzeichen \(wie zwei einfache Anführungszeichen\), um das Ende des Skriptblocks zu erkennen.  
+ [in] Die Adresse des Trennzeichens zum Ende der Skriptblock. Für die Analyse verwendet der Host in der Regel ein Trennzeichen (z. B. zwei einfache Anführungszeichen), um das Ende des Skriptblocks zu erkennen.  
   
- Das Trennzeichen ermöglicht das Skripterstellungsmodul, um Vorverarbeitung bereitzustellen.  Beispielsweise hat das Modul möglicherweise ein einfaches Anführungszeichen durch zwei einfache Anführungszeichen zur Verwendung als Trennzeichen.  Das Modul bestimmt, wie das Trennzeichen verwendet wird.  
+ Das Trennzeichen kann das Skript, das Modul zum Bereitstellen der vorverarbeitung erstellen. Beispielsweise kann das Modul ein einfaches Anführungszeichen durch zwei einfache Anführungszeichen zur Verwendung als Trennzeichen ersetzen. Das Modul bestimmt, wie das Trennzeichen verwendet wird.  
   
- Legen Sie den auf NULL, wenn ein Trennzeichen nicht das Ende des Skriptblocks markiert.  
+ Auf NULL festgelegt, wenn ein Trennzeichen nicht das Ende des Skriptblocks markieren.  
   
  `ppse`  
- \[out\] Die Adresse einer Variablen, die einen Zeiger auf die `IScriptEntry`\-Schnittstelle der untergeordneten Instanz empfängt.  
+ [out] Die Adresse einer Variablen, die einen Zeiger auf empfängt die `IScriptEntry` Schnittstelle der untergeordneten Instanz.  
   
- Für `IScriptNode`\-Objekte, die eine Webseite darstellen, gibt dieses Parameters eine `IScriptEntry`\-Instanz, die einen Skriptblock angibt.  
+ Für `IScriptNode` Objekte, die eine Webseite darstellen, gibt dieser Parameter eine `IScriptEntry` Instanz, die einen Skriptblock angibt.  
   
- Für `IScriptEntry`\-Objekte, die einen Skriptblock darstellen, gibt dieses Parameters eine Instanz `IScriptEntry`, die ein Funktionsobjekt angibt.  
+ Für `IScriptEntry` Objekte, die einen Skriptblock darstellen, gibt dieser Parameter eine `IScriptEntry` Instanz, der ein Funktionsobjekt angibt.  
   
- Für `IScriptEntry`\-Objekte, die ein Funktionsobjekt darstellen, schlägt diese Methode aus.  
+ Für `IScriptEntry` Objekte, die eine Funktion darstellen-Objekt, diese Methode ein Fehler auftritt.  
   
- Für `IScriptScriptlet`\-Objekte schlägt diese Methode aus.  
+ Für `IScriptScriptlet` Objekte aufweist, diese Methode ein Fehler auftritt.  
   
-## Rückgabewert  
- Ein `HRESULT`.  Zu den möglichen Werten zählen, aber nicht zu, die in der folgenden Tabelle beschränkt.  
+## <a name="return-value"></a>Rückgabewert  
+ Eine `HRESULT`. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
   
-|Wert|Description|  
-|----------|-----------------|  
+|Wert|Beschreibung|  
+|-----------|-----------------|  
 |`S_OK`|Die Methode war erfolgreich.|  
   
-## Hinweise  
- Die `IScriptNode`\-Schnittstelle stellt eine Webseite oder seine Elemente dar.  Die `IScriptEntry`\-Schnittstelle \(die von `IScriptNode` abgeleitet ist\), stellt entweder einen Skriptblock oder ein Funktionsobjekt dar.  Die `IScriptScriptlet`\-Schnittstelle \(die von `IScriptEntry` abgeleitet ist\), wird ein Ereignishandler dar.  
+## <a name="remarks"></a>Hinweise  
+ Die `IScriptNode` Schnittstelle darstellt, einer Webseite oder seiner Elemente. Die `IScriptEntry` Schnittstelle (abgeleitet von `IScriptNode`) entweder ein Skriptblock oder ein Funktionsobjekt darstellt. Die `IScriptScriptlet` Schnittstelle (abgeleitet von `IScriptEntry`) stellt einen Ereignishandler dar.  
   
-## Siehe auch  
- [IScriptNode\-Schnittstelle](../../winscript/reference/iscriptnode-interface.md)   
- [IScriptEntry\-Schnittstelle](../../winscript/reference/iscriptentry-interface.md)
+## <a name="see-also"></a>Siehe auch  
+ [IScriptNode-Schnittstelle](../../winscript/reference/iscriptnode-interface.md)   
+ [IScriptEntry-Schnittstelle](../../winscript/reference/iscriptentry-interface.md)

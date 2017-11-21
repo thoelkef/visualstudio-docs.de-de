@@ -1,55 +1,56 @@
 ---
-title: "Gewusst wie: Auswerten eines XPath-Ausdrucks | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: 'Vorgehensweise: Auswerten eines XPath-Ausdrucks | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 159ba4ef-75e4-4ac8-80dc-e064e0bec345
-caps.latest.revision: 2
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 2
+caps.latest.revision: "2"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: d549afb96465590a21e516f649d860f23f4056f3
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Gewusst wie: Auswerten eines XPath-Ausdrucks
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Sie können XPath\-Ausdrücke mit dem Dialogfeld **Schnellüberwachung** auswerten.Der XPath\-Ausdruck muss gemäß der W3C\-Empfehlung für XPath 1.0 gültig sein.Der aktuelle XSLT\-Kontext, d. h. der `self::node()`\-Knoten im **Lokalfenster**, stellt den Auswertungskontext für den XPath\-Ausdruck bereit.  
+# <a name="how-to-evaluate-an-xpath-expression"></a>Gewusst wie: Auswerten eines XPath-Ausdrucks
+Sie können XPath-Ausdrücken mit Auswerten der **Schnellüberwachung** (Dialogfeld). Der XPath-Ausdruck muss gemäß der W3C-Empfehlung für XPath 1.0 gültig sein. Der aktuelle XSLT-Kontext – d. h. die `self::node()` Knoten in der **"lokal"** Fenster – stellt den Auswertungskontext für den XPath-Ausdruck bereit.  
   
- In der folgenden Liste wird beschrieben, welche Funktionen beim Auswerten eines XPath\-Ausdrucks unterstützt werden:  
+ In der folgenden Liste wird beschrieben, welche Funktionen beim Auswerten eines XPath-Ausdrucks unterstützt werden:  
   
--   Integrierte XPath\-Funktionen werden unterstützt.  
+-   Integrierte XPath-Funktionen werden unterstützt.  
   
--   Integrierte XSLT\-Funktionen werden nicht unterstützt.  
+-   Integrierte XSLT-Funktionen werden nicht unterstützt.  
   
 -   Benutzerdefinierte Funktionen werden nicht unterstützt.  
   
 > [!NOTE]
->  In der folgenden Prozedur werden die Dateien **belowAvg.xsl** und **books.xml** aus dem Thema [Exemplarische Vorgehensweise: Debuggen eines XSLT\-Stylesheets](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md) verwendet.  
+>  Im folgenden Verfahren wird die belowAvg.xsl und books.xml Dateien aus dem [Exemplarische Vorgehensweise: Debuggen von XSLT-Stylesheets](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md) Thema.  
   
-### So werten Sie einen XPath\-Ausdruck aus  
+### <a name="to-evaluate-an-xpath-expression"></a>So werten Sie einen XPath-Ausdruck aus  
   
-1.  Fügen Sie einen Haltepunkt am `xsl:if`\-Starttag ein.  
+1.  Fügen Sie einen Haltepunkt am `xsl:if`-Starttag ein.  
   
-2.  Klicken Sie auf der Symbolleiste des XML\-Editors auf die Schaltfläche **XSL debuggen**.  
+2.  Klicken Sie auf die **XSLT Debuggen** Schaltfläche auf der Symbolleiste des XML-Editors.  
   
-     Der Debugger wird gestartet und am `xsl:if`\-Tag unterbrochen.  
+     Der Debugger wird gestartet und am `xsl:if`-Tag unterbrochen.  
   
-3.  Klicken Sie mit der rechten Maustaste, und wählen Sie die Option **Schnellüberwachung** aus.  
+3.  Mit der rechten Maustaste, und wählen Sie **Schnellüberwachung**.  
   
-     Das Dialogfeld **Schnellüberwachung** wird angezeigt.  
+     Die **Schnellüberwachung** Dialogfeld wird angezeigt.  
   
-4.  Geben Sie im Dialogfeld **Schnellüberwachung** im Feld **Ausdruck** den Ausdruck `./price/text()` ein, und klicken Sie auf **Neu auswerten**.  
+4.  Geben Sie `./price/text()` in der **Ausdruck** Feld der **Schnellüberwachung** (Dialogfeld), und klicken Sie auf **neu auswerten**.  
   
-     Der Preis des aktuellen **book**\-Knotens wird im Feld **Wert** angezeigt.  
+     Der Preis des aktuellen Knotens Buch wird angezeigt, der **Wert** Feld.  
   
-5.  Ändern Sie den XPath\-Ausdruck in `./price/text() < $bookAverage`, und klicken Sie auf **Neu auswerten**.  
+5.  Ändern Sie die XPath-Ausdruck zur `./price/text() < $bookAverage` , und klicken Sie auf **neu auswerten**.  
   
-     Im Feld **Wert** wird angezeigt, dass der XPath\-Ausdruck als `true` ausgewertet wird.  
+     Die **Wert** Feld zeigt, dass der XPath-Ausdruck ergibt `true`.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Debuggen von XSLT](../xml-tools/debugging-xslt.md)

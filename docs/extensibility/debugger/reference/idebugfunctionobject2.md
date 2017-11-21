@@ -1,57 +1,58 @@
 ---
-title: "IDebugFunctionObject2 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "IDebugFunctionObject2-Schnittstelle"
+title: IDebugFunctionObject2 | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: IDebugFunctionObject2 interface
 ms.assetid: 56b2fdff-146d-4138-a34c-59a9c65a3ddd
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 4c0a13fead810ffc546488da22ba468e3ea4f323
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugFunctionObject2
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
+# <a name="idebugfunctionobject2"></a>IDebugFunctionObject2
 > [!IMPORTANT]
->  In Visual Studio 2015 ist diese Art der Implementierung von ausdrucksauswertungen veraltet. Informationen über das Implementieren von CLR\-ausdrucksauswertungen finden Sie unter [CLR\-Ausdrucksauswertungen](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) und [Managed Expression Evaluator Sample](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+>  In Visual Studio 2015 wird diese Möglichkeit zum Implementieren von ausdruckauswertung veraltet. Informationen zu CLR-ausdrucksauswertungen implementieren, finden Sie unter [CLR-Ausdrucksauswertungen](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) und [Managed Expression Evaluator Sample](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
  Stellt eine Funktion dar und verbessert die [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) Schnittstelle.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 IDebugFunctionObject2 : IUnknown  
 ```  
   
-## Hinweise für Implementierer  
- Eine Auswertung eines Ausdrucks \(EE\) implementiert diese Schnittstelle, um eine Funktion dar.  
+## <a name="notes-for-implementers"></a>Hinweise für Implementierer  
+ Eine ausdrucksauswertung (EE) implementiert diese Schnittstelle, um eine Funktion darstellen.  
   
-## Hinweise für Aufrufer  
- Methoden dieser Schnittstelle verzögern der **IDebugFunctionObject** auf folgende Weise:  
+## <a name="notes-for-callers"></a>Hinweise für Aufrufer  
+ Methoden dieser Schnittstelle ableiten, die von **IDebugFunctionObject** auf folgende Weise:  
   
 -   Die **IDebugEvaluate** Methode nimmt Flags.  
   
--   Die **CreateObject** Methode nimmt Flags und ein Timeout.  
+-   Die **CreateObject** -Methode akzeptiert Flags und ein Timeout.  
   
--   Die **CreateStringObjectWithLength** Methode nimmt eine Länge.  
+-   Die **CreateStringObjectWithLength** Methode akzeptiert eine Länge.  
   
-## Methoden  
- Diese Schnittstelle implementiert die folgenden Methoden:  
+## <a name="methods"></a>Methoden  
+ Diese Schnittstelle implementiert, die folgenden Methoden:  
   
 |Methode|Beschreibung|  
-|-------------|------------------|  
-|[CreateObject](../../../extensibility/debugger/reference/idebugfunctionobject2-createobject.md)|Erstellt ein Objekt, das einen bestimmte Auswertung Flageinstellungen und einen Timeoutwert Konstruktor verwendet.|  
-|[CreateStringObjectWithLength](../../../extensibility/debugger/reference/idebugfunctionobject2-createstringobjectwithlength.md)|Erstellt ein String\-Objekt, das die angegebene Länge aufweist.|  
-|[Bewerten](../../../extensibility/debugger/reference/idebugfunctionobject2-evaluate.md)|Ruft die Funktion und der resultierende Wert als Objekt zurückgegeben.|  
+|------------|-----------------|  
+|[CreateObject](../../../extensibility/debugger/reference/idebugfunctionobject2-createobject.md)|Erstellt ein Objekt, das einen Konstruktor angegebenen Flageinstellungen Auswertung und einen Timeoutwert verwendet.|  
+|[CreateStringObjectWithLength](../../../extensibility/debugger/reference/idebugfunctionobject2-createstringobjectwithlength.md)|Erstellt ein String-Objekt, das die angegebene Länge aufweist.|  
+|[Auswerten](../../../extensibility/debugger/reference/idebugfunctionobject2-evaluate.md)|Ruft die Funktion und gibt den resultierenden Wert als ein Objekt zurück.|  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  Header: Ee.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  

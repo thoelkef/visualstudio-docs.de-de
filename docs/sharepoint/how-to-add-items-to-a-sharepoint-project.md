@@ -1,57 +1,58 @@
 ---
-title: "Gewusst wie: Hinzuf&#252;gen von Elementen zu einem SharePoint-Projekt"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "SharePoint-Entwicklung in Visual Studio, Hinzufügen von Elementen"
+title: "Vorgehensweise: Hinzufügen von Elementen zu einer SharePoint-Projekt | Microsoft Docs"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- VB
+- CSharp
+helpviewer_keywords: SharePoint development in Visual Studio, adding items
 ms.assetid: 25a76408-6061-4cd3-b210-100f1c644df7
-caps.latest.revision: 14
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 14
+caps.latest.revision: "14"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: a7995b6768ae188484c15a3b1d3157df116ca481
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Gewusst wie: Hinzuf&#252;gen von Elementen zu einem SharePoint-Projekt
-  SharePoint\-Lösungen enthalten ein oder mehrere Projekte, von denen jedes mehrere SharePoint\-Projektelemente enthält.  Nachdem Sie eine SharePoint\-Lösung öffnen oder erstellen, können Sie entweder die diesen Projekten neue oder vorhandene Elemente hinzufügen.  Beispielsweise stammen neue Workflowprojekte mit ein Standardformular, default.aspx ", aber Sie können dieses Formular durch ein neues oder ein anderes Formular ersetzen, oder fügen Sie ein anderes ASPX\-Formular hinzu.  
+# <a name="how-to-add-items-to-a-sharepoint-project"></a>Gewusst wie: Hinzufügen von Elementen zu einem SharePoint-Projekt
+  SharePoint-Lösungen enthalten ein oder mehrere Projekte, von die jeder mehrere SharePoint-Projektelemente enthält. Nach dem Öffnen oder erstellen eine SharePoint-Lösung können Sie neue oder vorhandene Elemente auf diese Projekte hinzufügen. Z. B. neue Workflowprojekte, die mit einem Standardformular mit dem Namen "default.aspx" enthalten, aber Sie können ein neues oder anderes Formular dieses Formular ersetzt oder eine andere ASPX-Formular hinzufügen.  
   
-### So fügen Sie einer SharePoint\-Lösung ein neues Projektelement hinzu  
+### <a name="to-add-a-new-project-item-to-a-sharepoint-solution"></a>Auf einer SharePoint-Lösung ein neues Projektelement hinzufügen  
   
-1.  Öffnen oder erstellen Sie in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] eine SharePoint\-Lösung.  
+1.  In [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]öffnen oder erstellen Sie eine SharePoint-Lösung.  
   
-2.  Wählen Sie im **Projektmappen\-Explorer** den Knoten des Projekts.  
+2.  In **Projektmappen-Explorer**, wählen Sie den Projektknoten aus.  
   
-3.  Wählen Sie in der Menüleiste **Neues Element hinzufügen**, **Projekt**, um das Dialogfeld **Neues Element hinzufügen** anzuzeigen.  
+3.  Wählen Sie in der Menüleiste **Projekt**, **neues Element hinzufügen** zum Anzeigen der **neues Element hinzufügen** (Dialogfeld).  
   
-4.  In der Liste **Installierte Vorlagen** erweitern Sie den Knoten **SharePoint** , und wählen Sie den Knoten **2010** aus.  
+4.  In der **installierte Vorlagen** aus, erweitern Sie die **SharePoint** Knoten, und wählen Sie dann die **2010** Knoten.  
   
-5.  In der Liste der Projektelementvorlagen, wählen Sie eine Vorlage aus.  
+5.  Wählen Sie in der Liste der Projektvorlagen für Element eine Vorlage aus.  
   
-6.  Im Textfeld **Name** geben Sie einen Namen ein, und wählen Sie dann die Schaltfläche **OK** aus.  
+6.  In der **Namen** Textfeld, geben Sie einen Namen, und wählen Sie dann die **OK** Schaltfläche.  
   
-### So fügen Sie einer SharePoint\-Lösung ein vorhandenes Projektelement hinzu  
+### <a name="to-add-an-existing-project-item-to-a-sharepoint-solution"></a>Eine SharePoint-Lösung vorhandenes Projekt hinzu  
   
-1.  Öffnen oder erstellen Sie in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] eine SharePoint\-Lösung.  
+1.  In [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]öffnen oder erstellen Sie eine SharePoint-Lösung.  
   
-2.  Wählen Sie im **Projektmappen\-Explorer** den Knoten des Projekts.  
+2.  In **Projektmappen-Explorer**, wählen Sie den Projektknoten aus.  
   
-3.  Wählen Sie in der Menüleiste **Vorhandenes Element hinzufügen**, **Projekt**, um das Dialogfeld **Vorhandenes Element hinzufügen** anzuzeigen.  
+3.  Wählen Sie in der Menüleiste **Projekt**, **vorhandenes Element hinzufügen** zum Anzeigen der **vorhandenes Element hinzufügen** (Dialogfeld).  
   
-4.  Navigieren Sie zu dem Ordner, der das Element, das Sie hinzufügen möchten, wählen Sie es auswählen und dann die Schaltfläche **Hinzufügen** enthält.  
+4.  Navigieren Sie zu dem Ordner, der das Element, die Sie verwenden möchten enthält, hinzufügen, wählen es, und wählen Sie dann die **hinzufügen** Schaltfläche.  
   
-## Siehe auch  
- [Vorlagen für SharePoint-Projekte und Projektelemente](../sharepoint/sharepoint-project-and-project-item-templates.md)   
- [Developing SharePoint Solutions](../sharepoint/developing-sharepoint-solutions.md)  
+## <a name="see-also"></a>Siehe auch  
+ [SharePoint-Projekte und Projektelementvorlagen](../sharepoint/sharepoint-project-and-project-item-templates.md)   
+ [Entwickeln von SharePoint-Projektmappen](../sharepoint/developing-sharepoint-solutions.md)  
   
   
