@@ -1,0 +1,29 @@
+- name: Visual Studio-Tools für KI
+  href: index.yml
+  items:
+    - name: Übersicht
+      items:
+        - name: Informationen zu Visual Studio-Tools für KI
+          href: about-ai-tools.md
+    - name: Installation
+      href: installation.md
+    - name: Schnellstarts
+      items:
+        - name: Tensorflow + Python
+          href: tensorflow-local.md
+    - name: Lernprogramme
+      items:
+        - name: TensorFlow + Azure Deep Learning VM
+          href: tensorflow-vm.md
+    - name: Anleitungen
+      items:
+        - name: Erstellt ein neues Projekt
+          href: create-project.md
+        - name: Trainieren Ihres Modells
+          href: train-model.md
+    - name: Proben
+      items:
+        - name: GitHub
+          href: 'https://github.com/Microsoft/samples-for-ai'
+        - name: Machine Learning-Katalog
+          href: 'https://gallery.cortanaintelligence.com/projects'

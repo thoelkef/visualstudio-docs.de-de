@@ -22,6 +22,8 @@
 ##### [SmartOffice4TFS + ModernRequirements4TFS](vs-modernreq.md)
 ##### [Microsoft Azure mit nutzungsbasierter Zahlung](vs-azure-payg.md) 
 #### Lernen
+##### [DataCamp](vs-datacamp.md)
+##### [LinkedIn Learning](vs-linkedin-learning.md)
 ##### [Opsgility](vs-opsgility.md)
 ##### [Pluralsight](vs-pluralsight.md)
 ##### [Xamarin University-Schulung](vs-xamarin.md)
