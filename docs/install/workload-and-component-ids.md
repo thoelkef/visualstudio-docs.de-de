@@ -5,7 +5,7 @@ keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.date: 08/14/2017
+ms.date: 10/09/2017
 ms.topic: article
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -16,14 +16,12 @@ ms.technology:
 - vs-ide-install
 - vs-ide-sdk
 ms.assetid: 34e19ef1-abfb-44fd-aad2-33c5d7874482
+ms.openlocfilehash: d1f296e7a718913d3db8ba86b90260d8e20ce82c
+ms.sourcegitcommit: 2c7f48ad6073a81fa927568793633f26cc1f0b15
 ms.translationtype: HT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: fb076a7d696d4600181577180f2609892c52e49b
-ms.contentlocale: de-de
-ms.lasthandoff: 09/06/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/17/2017
 ---
-
 # <a name="visual-studio-2017-workload-and-component-ids"></a>Arbeitsauslastungs- und Komponenten-IDs von Visual Studio 2017
 Klicken Sie auf die Namen der Editionen in der folgenden Tabelle, um die Workload- und Komponenten-IDs anzuzeigen, die Sie benötigen, um Visual Studio über die Befehlszeile zu installieren oder um sie als Abhängigkeit in einem VSIX-Manifest anzugeben.
 
@@ -33,6 +31,7 @@ Klicken Sie auf die Namen der Editionen in der folgenden Tabelle, um die Workloa
 | [Visual&nbsp;Studio Professional&nbsp;2017](workload-component-id-vs-professional.md) | Microsoft.VisualStudio.Product.Professional | Professionelle Entwicklertools und -dienste für kleine Teams. |
 | [Visual&nbsp;Studio Community&nbsp;2017](workload-component-id-vs-community.md) | Microsoft.VisualStudio.Product.Community | Kostenlose, mit allen Funktionen ausgestattete IDE für Studenten, Open Source und einzelne Entwickler |
 | [Visual&nbsp;Studio Team&nbsp;Explorer&nbsp;2017](workload-component-id-vs-team-explorer.md) | Microsoft.VisualStudio.Product.TeamExplorer | Interaktion mit Team Foundation Server und Visual Studio Team Services ohne ein Visual Studio-Toolset für Entwickler |
+| [Visual Studio Desktop Express 2017](workload-component-id-vs-express.md) | Microsoft.VisualStudio.Workload.WDExpress | Erstellen Sie native und verwaltete Anwendungen wie WPF, WinForms und Win32 mit syntaxfähiger Codebearbeitung, Quellcodeverwaltung und Arbeitselementverwaltung. Bietet Unterstützung für C#, Visual Basic und Visual C++. |
 | [Visual&nbsp;Studio Build&nbsp;Tools&nbsp;2017](workload-component-id-vs-build-tools.md) | Microsoft.VisualStudio.Product.BuildTools | Die Visual Studio-Buildtools ermöglichen das Erstellen nativer und verwalteter auf MSBuild basierenden Anwendungen, ohne dass die Visual Studio IDE erforderlich ist. Möglich ist auch die Installation der Visual C++-Compiler und -Bibliotheken, von ATL, MFC und der C++/CLI-Unterstützung. |
 | [Visual&nbsp;Studio Test&nbsp;Agent&nbsp;2017](workload-component-id-vs-test-agent.md)  | Microsoft.VisualStudio.Product.TestAgent | Unterstützt die Remoteausführung von automatisierten Tests und Auslastungstests. |
 | [Visual&nbsp;Studio Test&nbsp;Controller 2017 ](workload-component-id-vs-test-controller.md) | Microsoft.VisualStudio.Product.TestController | Verteilt automatisierte Tests auf mehrere Computer. |
@@ -41,9 +40,10 @@ Klicken Sie auf die Namen der Editionen in der folgenden Tabelle, um die Workloa
 
 Weitere Informationen zur Verwendung dieser Listen finden Sie auf den Seiten [Verwenden von Befehlszeilenparametern zum Installieren von Visual Studio 2017 RC](use-command-line-parameters-to-install-visual-studio.md) und [Vorgehensweise: Migrieren von Erweiterungsprojekten zu Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md).
 
+## <a name="get-support"></a>Support aufrufen
+Manchmal kann etwas schiefgehen. Wenn die Installation von Visual Studio fehlschlägt, lesen Sie den Artikel [Problembehandlung bei der Visual Studio 2017-Installation und Upgradefehlern](troubleshooting-installation-issues.md), um Hilfe bei der Problemlösung zu erhalten. Sie können uns außerdem über das Tool [Ein Problem melden](../ide/how-to-report-a-problem-with-visual-studio-2017.md) in der Visual Studio-IDE Probleme mit Produkten melden oder uns über [UserVoice](https://visualstudio.uservoice.com/forums/121579) einen Vorschlag mitteilen. Sie können Probleme mit Produkten im Portal [Visual Studio Developer Community](https://developercommunity.visualstudio.com/) im Blick behalten, Fragen stellen und Antworten finden. Über die [Visual Studio-Unterhaltung in der Gitter-Community](https://gitter.im/Microsoft/VisualStudio) können Sie auch Kontakt zu uns oder anderen Visual Studio-Entwicklern aufnehmen ([GitHub](https://github.com/)-Konto erforderlich).
+
 ## <a name="see-also"></a>Siehe auch
 * [Administratorhandbuch für Visual Studio 2017](visual-studio-administrator-guide.md)
 * [Erstellen einer Offlineinstallation von Visual Studio 2017](create-an-offline-installation-of-visual-studio.md)
 * [Beispiele für Befehlszeilenparameter für die Installation von Visual Studio 2017](command-line-parameter-examples.md)
-* [Melden eines Problems mit Visual Studio 2017](../ide/how-to-report-a-problem-with-visual-studio-2017.md)
-

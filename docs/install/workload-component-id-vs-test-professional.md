@@ -5,39 +5,21 @@ keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.date: 08/30/2017
+ms.date: 10/09/2017
 ms.topic: article
 helpviewer_keywords:
 - workload ID, Visual Studio
 - component ID, Visual Studio
 - install Visual Studio, administrator guide
 ms.service: 
-ms.technology:
-- vs-ide-install
+ms.technology: vs-ide-install
 ms.assetid: 70c03438-8434-4921-ada0-c172519af431
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
+ms.openlocfilehash: 82375aa5b08b3890aa2c615f9d44877ca7fb3a22
+ms.sourcegitcommit: 2c7f48ad6073a81fa927568793633f26cc1f0b15
 ms.translationtype: HT
-ms.sourcegitcommit: 96018963278cd1d53b226473baade41da1e98111
-ms.openlocfilehash: 1c9caeb8caf334a29ae3bdb2375301da2e93b4a1
-ms.contentlocale: de-de
-ms.lasthandoff: 09/06/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/17/2017
 ---
-
 # <a name="visual-studio-test-professional-2017-component-directory"></a>Visual Studio Test Professional 2017-Komponentenverzeichnis
 
 In den Tabellen auf dieser Seite sind die IDs aufgeführt, die Sie verwenden können, um Visual Studio über die Befehlszeile zu installieren. Beachten Sie, dass weitere Komponenten hinzugefügt werden, wenn wir Updates für Visual Studio veröffentlichen.
@@ -71,6 +53,8 @@ Komponenten-ID | Name | Version
 --- | --- | ---
 n/v | nicht verfügbar | n/v
 
+## <a name="get-support"></a>Support aufrufen
+Manchmal kann etwas schiefgehen. Wenn die Installation von Visual Studio fehlschlägt, lesen Sie den Artikel [Problembehandlung bei der Visual Studio 2017-Installation und Upgradefehlern](troubleshooting-installation-issues.md), um Hilfe bei der Problemlösung zu erhalten. Sie können uns außerdem über das Tool [Ein Problem melden](../ide/how-to-report-a-problem-with-visual-studio-2017.md) in der Visual Studio-IDE Probleme mit Produkten melden oder uns über [UserVoice](https://visualstudio.uservoice.com/forums/121579) einen Vorschlag mitteilen. Sie können Probleme mit Produkten im Portal [Visual Studio Developer Community](https://developercommunity.visualstudio.com/) im Blick behalten, Fragen stellen und Antworten finden. Über die [Visual Studio-Unterhaltung in der Gitter-Community](https://gitter.im/Microsoft/VisualStudio) können Sie auch Kontakt zu uns oder anderen Visual Studio-Entwicklern aufnehmen ([GitHub](https://github.com/)-Konto erforderlich).
 
 ## <a name="see-also"></a>Siehe auch
 
@@ -79,4 +63,3 @@ n/v | nicht verfügbar | n/v
 * [Verwenden von Befehlszeilenparametern zum Installieren von Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
   * [Beispiele für Befehlszeilenparameter](command-line-parameter-examples.md)
 * [Erstellen einer Offlineinstallation von Visual Studio](create-an-offline-installation-of-visual-studio.md)
-
