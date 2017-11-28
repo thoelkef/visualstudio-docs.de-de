@@ -12,11 +12,11 @@ caps.latest.revision: "1"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 71facc3515bf90d378b19242bb804ce825131b4e
-ms.sourcegitcommit: 2c7f48ad6073a81fa927568793633f26cc1f0b15
+ms.openlocfilehash: 02f91441c493d65e8abcdc80bd85b01f2bd423bf
+ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>Debuggen von live ASP.NET Azure-apps, die mit dem Momentaufnahme-Debugger
 
@@ -29,7 +29,7 @@ Momentaufnahmesammlung steht für die folgenden Web-apps in Azure App Service au
 - ASP.NET-Anwendungen unter .NET Framework 4.6.1 oder höher.
 - ASP.NET Core-Anwendungen, die auf .NET Core 2.0 oder höher auf Windows ausgeführt wird.
 
-Darüber hinaus ist der Momentaufnahme-Debugger nur für Visual Studio 2017 Enterprise Version 15.5 oder höher verfügbar. 
+Darüber hinaus wird der Momentaufnahme-Debugger nur für Visual Studio 2017 Enterprise Version 15.5 oder höher und Basic "oder" höher App Service-Plänen verfügbar. 
 
 ## <a name="start-the-snapshot-debugger"></a>Starten Sie den Momentaufnahme-Debugger
 

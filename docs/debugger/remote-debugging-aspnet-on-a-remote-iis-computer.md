@@ -6,17 +6,17 @@ ms.reviewer:
 ms.suite: 
 ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
-ms.topic: hero-article
+ms.topic: article
 ms.assetid: 573a3fc5-6901-41f1-bc87-557aa45d8858
 caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 883a9ad8660204462d5aaa852ab87c5420af4382
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: abbbb1adf829361c5916f91ade5cb1a549444b72
+ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio-2017"></a>Remotedebuggen von ASP.NET Core auf einem Remote-IIS-Computer in Visual Studio 2017
 Um eine ASP.NET-Anwendung debuggen, die in IIS bereitgestellt wurde, installieren Sie und führen Sie der Remotetools auf dem Computer aus, auf denen Sie Ihre app bereitgestellt haben, und fügen Sie an der ausgeführten app aus Visual Studio.
@@ -26,7 +26,7 @@ Um eine ASP.NET-Anwendung debuggen, die in IIS bereitgestellt wurde, installiere
 Dieses Handbuch erläutert das Einrichten einer Visual Studio 2017 ASP.NET Core, für IIS bereitstellen und Konfigurieren von Visual Studio remote Debugger anfügen. Zum Remotedebuggen ASP.NET 4.5.2 finden Sie unter [Remote Debuggen von ASP.NET auf einem Computer mit IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md). Sie können auch bereitstellen und Debuggen von IIS mithilfe von Azure. Weitere Informationen finden Sie unter [Remote Debuggen unter Azure](../debugger/remote-debugging-azure.md).
 
 Diese Prozeduren haben auf diese Serverkonfigurationen getestet:
-* Windows Server 2012 R2 und IIS 10
+* Windows Server 2012 R2 und IIS 8.5
 * WindowsServer 2016 und IIS 10
 
 ## <a name="requirements"></a>Anforderungen

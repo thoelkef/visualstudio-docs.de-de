@@ -12,11 +12,11 @@ caps.latest.revision: "1"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5e111159029710684a1a49be2859f6ac5699a70a
-ms.sourcegitcommit: 2c7f48ad6073a81fa927568793633f26cc1f0b15
+ms.openlocfilehash: 307e32587a7aac6e2595f35488ad057995c04f4b
+ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Problembehandlung und bekannte Probleme für die Momentaufnahme Debuggen in Visual Studio
 
@@ -30,8 +30,7 @@ Wenn Sie ein Warnsymbol angezeigt ![Snappoint Warnsymbol](../debugger/media/snap
 
 Gehen Sie wie folgt vor:
 
-1. Stellen Sie sicher, dass Sie die gleiche Version des Quellcodes verfügen, die zum Erstellen und Bereitstellen Ihrer app verwendet wurde.
-1. Stellen Sie sicher, dass Sie für Ihre Bereitstellung die korrekten Symbole geladen sind. Zeigen Sie dazu an der **Module** Fenster while Debugging Momentaufnahme und überprüfen Sie, ob die Spalte "Symbol" zeigt eine PDB-Datei für das Modul, das Sie Debuggen geladen werden. Beachten Sie, dass der Momentaufnahme-Debugger versucht automatisch herunterzuladen und die Symbole für Ihre Bereitstellung verwenden.
+1. Stellen Sie sicher, dass Sie die gleiche Version des Quellcodes verfügen, die zum Erstellen und Bereitstellen Ihrer app.isua1 verwendet wurde. Stellen Sie sicher, dass Sie für Ihre Bereitstellung die korrekten Symbole geladen sind. Zeigen Sie dazu an der **Module** Fenster while Debugging Momentaufnahme und überprüfen Sie, ob die Spalte "Symbol" zeigt eine PDB-Datei für das Modul, das Sie Debuggen geladen werden. Beachten Sie, dass der Momentaufnahme-Debugger versucht automatisch herunterzuladen und die Symbole für Ihre Bereitstellung verwenden.
 
 ## <a name="issue-symbols-do-not-load-when-i-open-a-snapshot"></a>Problem: Symbole werden nicht geladen werden, wenn ich eine Momentaufnahme öffnen
 
@@ -70,9 +69,10 @@ Gehen Sie wie folgt vor:
 - Roslyn-IL-Optimierungen sind nicht vollständig in ASP.NET Core-Projekten unterstützt. Bei einigen Projekten ASP.NET Core ist es möglicherweise nicht möglich, finden einige Variablen oder einige Variablen in bedingten Anweisungen verwenden. 
 - Spezielle Variablen, wie z. B. *$FUNCTION* oder *$CALLER*, kann nicht in bedingten Anweisungen oder Logpoints für ASP.NET Core Projekte ausgewertet werden.
 - Momentaufnahme-Debuggen funktioniert nicht auf App-Dienste, die über [lokales Cashing](https://docs.microsoft.com/en-us/azure/app-service/app-service-local-cache) eingeschaltet.
+- Debuggen-API-Apps Momentaufnahme wird derzeit nicht unterstützt.
 
 ## <a name="see-also"></a>Siehe auch
 
 [Debuggen in Visual Studio](../debugger/index.md)  
 [Debuggen von Livedaten ASP.NET-apps, die mit dem Momentaufnahme-Debugger](../debugger/debug-live-azure-applications.md)  
-[Häufig gestellte Fragen zum Debuggen von Snapshots](../debugger/debug-live-azure-apps-faq.md)  
+[Häufig gestellte Fragen zum Debuggen von Momentaufnahmen](../debugger/debug-live-azure-apps-faq.md)  
