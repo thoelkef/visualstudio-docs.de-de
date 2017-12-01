@@ -17,10 +17,26 @@
           href: tensorflow-vm.md
     - name: Anleitungen
       items:
-        - name: Erstellt ein neues Projekt
-          href: create-project.md
+        - name: Erstellen eines Projekts
+          items:
+            - name: Erstellen eines Projekts aus dem Beispielkatalog
+              href: create-project-gallery.md
+            - name: Erstellen eines Projekts aus vorhandenem Code
+              href: create-project-existing.md
+            - name: Erstellen eines Projekts aus einer Vorlage
+              href: create-project.md
+            - name: Erstellen eines Projekts aus einem GitHub-Repository
+              href: create-project-repo.md
         - name: Trainieren Ihres Modells
           href: train-model.md
+        - name: Anzeigen von Auftragsdetails
+          href: job-details.md
+        - name: Überwachen der GPU-Auslastung
+          href: monitor-gpu.md
+        - name: Überwachen von TensorBoard
+          href: monitor-tensorboard.md
+        - name: Verwalten des Speichers
+          href: manage-storage.md
     - name: Proben
       items:
         - name: GitHub
