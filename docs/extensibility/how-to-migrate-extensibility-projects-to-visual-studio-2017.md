@@ -12,11 +12,11 @@ caps.latest.revision: "1"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 89591535b232317abf395c237fdc267c847ca699
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: bb00d2c338ac1ef9e2be6d77d68ebfe2a246d807
+ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 11/29/2017
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>Vorgehensweise: Migrieren Sie zu Visual Studio 2017 Erweiterungsprojekte
 
@@ -102,11 +102,6 @@ Anstatt die manifest-XML direkt zu bearbeiten, können Sie die neue **Voraussetz
   ![Roslyn erforderliche Komponente hinzufügen](media/add-roslyn-prerequisite.png)
 
 * Press **OK**.
-
-## <a name="if-migrating-from-preview-4-or-preview-5"></a>Bei der Migration von Preview 4 oder 5 Preview
-
-* Ersetzen Sie `SetupDependencies` mit `Prerequisites` und verschiebt die Elemente, die von der `Installer` Element. `Prerequisites`jetzt befindet sich direkt in die `PackageManifest` Element.
-* [Optional] Entfernen Sie die `GenerateVsixV3` Element. (Dies wurde in der Vorschau 5 nur erforderlich.) Die `GenerateVsixV3` Element werden in Versionen überschreiten Preview 5 ignoriert.
 
 ## <a name="update-debug-settings-for-project"></a>Aktualisieren Sie Debug-Einstellungen für project
 
@@ -197,3 +192,15 @@ Beispiele:
 
 * Wenn Sie eine Debuggererweiterung haben und wissen, dass das Projekt einen Verweis auf VSDebugEng.dll und VSDebug.dll verfügt, klicken Sie auf die Schaltfläche "Filter" in der **Binärdateien / Dateinamen** Header.  Suchen Sie nach "VSDebugEng.dll", und klicken Sie auf OK.  Klicken Sie anschließend auf die Schaltfläche "Filter" in der **Binärdateien / Dateinamen** Header erneut und suchen Sie nach "VSDebug.dll".  Aktivieren Sie das Kontrollkästchen "Aktuelle Auswahl filtern hinzufügen", und wählen Sie OK.  Jetzt Durchsehen der **Komponentenname** eine Komponente zu suchen, die am häufigsten im Zusammenhang mit Ihrem Erweiterungstyp. In diesem Beispiel würden gewählten der Just-In-Time-debugger und die Vsixmanifest hinzugefügt.
 * Wenn Sie wissen, dass Ihr Projekt Debugger Elemente behandelt, können Sie suchen, auf "Debugger" in das Suchfeld Filter um festzustellen, welche Komponenten Debugger im Namen enthalten.
+
+## <a name="specifying-a-visual-studio-2017-release"></a>Angeben einer Version von Visual Studio 2017
+
+Wenn die Erweiterung eine bestimmte Version von Visual Studio 2017 erforderlich sind, z. B. Sie davon abhängig ist ein Feature in 15.3 veröffentlicht, müssen Sie die Nummer des Builds in Ihrem VSIX angeben **InstallationTarget**. Version 15.3 hat beispielsweise eine Buildnummer von "15.0.26730.3". Sehen Sie die Zuordnung von Versionen, die zum Erstellen von Zahlen [hier](../install/visual-studio-build-numbers-and-release-dates.md). Verwenden die Versionsnummer "15.3" ist nicht funktionsfähig.
+
+Wenn die Erweiterung 15.3 erfordert oder höher, Sie deklarieren die **InstallationTarget Version** als [15.0.26730.3, 16.0):
+
+```xml
+<Installation>
+  <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[15.0.26730.3, 16.0)" />
+</Installation>
+```

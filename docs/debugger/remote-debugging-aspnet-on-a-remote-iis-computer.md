@@ -12,11 +12,11 @@ caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: abbbb1adf829361c5916f91ade5cb1a549444b72
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.openlocfilehash: b73dc5b153813811a0d2b839e69200a7e5f5a1e9
+ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 11/29/2017
 ---
 # <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio-2017"></a>Remotedebuggen von ASP.NET Core auf einem Remote-IIS-Computer in Visual Studio 2017
 Um eine ASP.NET-Anwendung debuggen, die in IIS bereitgestellt wurde, installieren Sie und führen Sie der Remotetools auf dem Computer aus, auf denen Sie Ihre app bereitgestellt haben, und fügen Sie an der ausgeführten app aus Visual Studio.
@@ -26,7 +26,7 @@ Um eine ASP.NET-Anwendung debuggen, die in IIS bereitgestellt wurde, installiere
 Dieses Handbuch erläutert das Einrichten einer Visual Studio 2017 ASP.NET Core, für IIS bereitstellen und Konfigurieren von Visual Studio remote Debugger anfügen. Zum Remotedebuggen ASP.NET 4.5.2 finden Sie unter [Remote Debuggen von ASP.NET auf einem Computer mit IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md). Sie können auch bereitstellen und Debuggen von IIS mithilfe von Azure. Weitere Informationen finden Sie unter [Remote Debuggen unter Azure](../debugger/remote-debugging-azure.md).
 
 Diese Prozeduren haben auf diese Serverkonfigurationen getestet:
-* Windows Server 2012 R2 und IIS 8.5
+* Windows Server 2012 R2 und IIS 8
 * WindowsServer 2016 und IIS 10
 
 ## <a name="requirements"></a>Anforderungen
@@ -35,7 +35,7 @@ Debuggen zwischen zwei Computern über einen Proxy verbunden wird nicht unterst�
 
 ## <a name="create-the-aspnet-core-application-on-the-visual-studio-2017-computer"></a>Erstellen Sie die ASP.NET Core-Anwendung auf dem Computer Visual Studio 2017 
 
-1. Erstellen einer neuen ASP.NET Core-Anwendung. (**Datei > Neu > Projekt**, und wählen Sie dann **Visual c# > Web > ASP.NET-Webanwendung für Core (.NET Core)** .
+1. Erstellen einer neuen ASP.NET Core-Anwendung. (**Datei > Neu > Projekt**, und wählen Sie dann **Visual c# > Web > ASP.NET-Webanwendung für Core (.NET Core)**).
 
     In der **ASP.NET Core** -Vorlagenabschnitt wählen **Webanwendung**.
 
@@ -58,13 +58,13 @@ Je nach Ihren Sicherheitseinstellungen kann es Speicherzeit Sie Ihren Browser di
 - 0download.microsoft.com
 - VisualStudio
 
-Wenn Sie Internet Explorer verwenden, können Sie den vertrauenswürdigen Sites hinzufügen, navigieren Sie zu **Internetoptionen > Sicherheit > Vertrauenswürdige Sites > Sites**. Diese Schritte sind für andere Browser unterschiedlich.
+Wenn Sie Internet Explorer verwenden, können Sie den vertrauenswürdigen Sites hinzufügen, navigieren Sie zu **Internetoptionen > Sicherheit > Vertrauenswürdige Sites > Sites**. Diese Schritte sind für andere Browser unterschiedlich. (Wenn Sie eine ältere Version des Remotedebuggers von my.visualstudio.com herunterladen müssen, sind einige zusätzliche vertrauenswürdige Websites erforderlich, sich anzumelden.)
 
 Wenn Sie die Software heruntergeladen haben, erhalten Sie möglicherweise Anforderungen an die Berechtigung zum Laden von verschiedenen Website-Skripts und Ressourcen gewähren. In den meisten Fällen sind die folgenden zusätzlichen Ressourcen beim Installieren der Clientsoftware nicht erforderlich.
 
 ## <a name="install-aspnet-core-on-windows-server"></a>Installieren Sie ASP.NET Core unter WindowsServer
 
-1. Installieren der [.NET Core Windows Server-Hosting](https://go.microsoft.com/fwlink/?linkid=844461) Paket auf dem Hostsystem. Das Paket wird installiert, die .NET Core-Laufzeit, .NET Core-Bibliothek und ASP.NET Core-Modul.
+1. Installieren der [.NET Core Windows Server-Hosting](https://aka.ms/dotnetcore-2-windowshosting) Paket auf dem Hostsystem. Das Paket wird installiert, die .NET Core-Laufzeit, .NET Core-Bibliothek und ASP.NET Core-Modul. Weitere ausführlichen Anweisungen finden Sie in [in IIS veröffentlichen](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration).
 
     > [!NOTE]
     > Wenn das System nicht über eine Internetverbindung verfügt, erhalten und installieren Sie die  *[Microsoft Visual C++ 2015 Redistributable](https://www.microsoft.com/download/details.aspx?id=53840)*  vor der Installation von .NET Core Windows Server-Hosting-Paket.
@@ -139,7 +139,6 @@ Informationen zu den Remotedebugger als Dienst ausführen, finden Sie unter [den
 
 5. Aktivieren Sie  **Prozesse aller Benutzer anzeigen**.
 6. Geben Sie den ersten Buchstaben des Namens eines Prozesses, schnell zu finden **dotnet.exe** (für ASP.NET Core).
-    >Hinweis: Der vorherige Name des Prozesses wurde für eine app ASP.NET Core dnx.exe.
 
     ![RemoteDBG_AttachToProcess](../debugger/media/remotedbg_attachtoprocess_aspnetcore.png "RemoteDBG_AttachToProcess")
 
@@ -148,6 +147,7 @@ Informationen zu den Remotedebugger als Dienst ausführen, finden Sie unter [den
 8. Öffnen Sie die Website des Remotecomputers. Navigieren Sie in einem Browser auf **http://\<Remotecomputername >**.
     
     Es sollte die ASP.NET-Webseite angezeigt werden.
+
 9. Klicken Sie in der laufenden Anwendung ASP.NET auf den Link, um die **zu** Seite.
 
     Der Haltepunkt sollte in Visual Studio erreicht werden.
@@ -157,7 +157,7 @@ Informationen zu den Remotedebugger als Dienst ausführen, finden Sie unter [den
 In den meisten Installationen werden die erforderlichen Ports durch die Installation von ASP.NET und den Remotedebugger geöffnet. Allerdings müssen Sie möglicherweise stellen Sie sicher, dass die Ports geöffnet sind.
 
 > [!NOTE]
-> Auf einem virtuellen Azure-Computer müssen Sie Ports durch Öffnen der [Netzwerksicherheitsgruppe](https://docs.microsoft.com/en-us/azure/virtual-machines/virtual-machines-windows-hero-role#open-port-80). 
+> Auf einem virtuellen Azure-Computer müssen Sie Ports durch Öffnen der [Netzwerksicherheitsgruppe](/azure/virtual-machines/virtual-machines-windows-hero-role#open-port-80). 
 
 Erforderliche Ports:
 

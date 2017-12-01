@@ -12,11 +12,11 @@ caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fc7ad92e708666baf1ab0429c041ca9b7d2e0f95
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.openlocfilehash: 2e8da202cf8ae5680bede1ec4b2f2c8984624e4e
+ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 11/29/2017
 ---
 # <a name="view-snapshots-using-intellitrace-step-back"></a>Anzeigen von Momentaufnahmen mithilfe von IntelliTrace-Schritt-zurück
 IntelliTrace-Schritt-Back erstellt eine Momentaufnahme Ihrer Anwendung bei jeder Haltepunkt und der Debugger automatisch bei Schritt-Ereignis. Die erfassten Momentaufnahmen können Sie zurückkehren zum vorherigen Haltepunkte oder Schritte und den Status der Anwendung anzeigen, wie dies in der Vergangenheit war. IntelliTrace Schritt Back kann sparen Sie Zeit, wenn Sie möchten, finden in den vorherigen Anwendungszustand aber nicht angezeigt werden sollen, Debuggen neu starten, oder erstellen Sie die gewünschte app-Status erneut.
@@ -38,7 +38,7 @@ Aus Gründen der Leistung werden Momentaufnahmen nicht implementiert, wenn Sie s
 
 ## <a name="navigate-and-view-snapshots"></a>Navigieren und Anzeigen von Momentaufnahmen
 
-Sie können Navigieren zwischen Ereignissen bei der Verwendung der **Schritt rückwärts** und **Schritt vorwärts** Schaltflächen in der Debug-Symbolleiste. Diese Schaltflächen navigieren, die Ereignisse, die in der **Ereignisse** Registerkarte der **Fenster "Diagnosetools"**. Verlaufsbezogenes debugging für das ausgewählte Ereignis ausführen in Einzelschritten vorwärts oder rückwärts auf ein Ereignis automatisch aktiviert werden.
+Sie können Navigieren zwischen Ereignissen bei der Verwendung der **Schritt zurück (Alt + [)** und **Schritt vorwärts (Alt +])** Schaltflächen in der Debug-Symbolleiste. Diese Schaltflächen navigieren, die Ereignisse, die in der **Ereignisse** Registerkarte der **Fenster "Diagnosetools"**. Verlaufsbezogenes debugging für das ausgewählte Ereignis ausführen in Einzelschritten vorwärts oder rückwärts auf ein Ereignis automatisch aktiviert werden.
 
 ![Schritt rückwärts und Vorwärts-Schaltflächen](../debugger/media/intellitrace-step-back-icons-description.png "Schritt rückwärts und Schritt vorwärts-Schaltflächen")
 

@@ -12,11 +12,11 @@ caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a279b1eddf80a78ad20d137c288e6ee49c1993b9
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.openlocfilehash: ed7ae018725e4ba2da5239609d90276d007827aa
+ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 11/29/2017
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>Remotedebuggen von ASP.NET auf einem Remote-IIS-Computer
 Um eine ASP.NET-Anwendung debuggen, die in IIS bereitgestellt wurde, installieren Sie und führen Sie der Remotetools auf dem Computer aus, auf denen Sie Ihre app bereitgestellt haben, und fügen Sie an der ausgeführten app aus Visual Studio.
@@ -26,7 +26,7 @@ Um eine ASP.NET-Anwendung debuggen, die in IIS bereitgestellt wurde, installiere
 Dieses Handbuch erläutert das Einrichten eine Visual Studio 2017 ASP.NET MVC 4.5.2-Anwendung, für IIS bereitstellen und Konfigurieren von Visual Studio remote Debugger anfügen. Zum Remotedebuggen ASP.NET Core finden Sie unter [Remote Debuggen ASP.NET Core auf einem Computer mit IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md). Sie können auch bereitstellen und Debuggen von IIS mithilfe von Azure. Weitere Informationen finden Sie unter [Remote Debuggen unter Azure](../debugger/remote-debugging-azure.md).
 
 Diese Prozeduren haben auf diese Serverkonfigurationen getestet:
-* Windows Server 2012 R2 und IIS 8.5 (für Windows Server 2008 R2 Server die Schritte sind verschiedene)
+* Windows Server 2012 R2 und IIS 8 (für Windows Server 2008 R2 Server die Schritte sind verschiedene)
 
 ## <a name="requirements"></a>Anforderungen
 
@@ -54,7 +54,7 @@ Je nach Ihren Sicherheitseinstellungen kann es Speicherzeit Sie Ihren Browser di
 - 0download.microsoft.com
 - VisualStudio
 
-Wenn Sie Internet Explorer verwenden, können Sie den vertrauenswürdigen Sites hinzufügen, navigieren Sie zu **Internetoptionen > Sicherheit > Vertrauenswürdige Sites > Sites**. Diese Schritte sind für andere Browser unterschiedlich.
+Wenn Sie Internet Explorer verwenden, können Sie den vertrauenswürdigen Sites hinzufügen, navigieren Sie zu **Internetoptionen > Sicherheit > Vertrauenswürdige Sites > Sites**. Diese Schritte sind für andere Browser unterschiedlich. (Wenn Sie eine ältere Version des Remotedebuggers von my.visualstudio.com herunterladen müssen, sind einige zusätzliche vertrauenswürdige Websites erforderlich, sich anzumelden.)
 
 Wenn Sie die Software heruntergeladen haben, erhalten Sie möglicherweise Anforderungen an die Berechtigung zum Laden von verschiedenen Website-Skripts und Ressourcen gewähren. In den meisten Fällen sind die folgenden zusätzlichen Ressourcen beim Installieren der Clientsoftware nicht erforderlich.
 

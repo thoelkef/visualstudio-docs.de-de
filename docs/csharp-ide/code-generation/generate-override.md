@@ -11,18 +11,19 @@ ms.assetid: b3c8cfc4-7c1f-4606-970e-3f7651604bab
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d2972cfe2ea4481ab8f5eab6284277615d1d64a8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: f7193722e7ec1bee7c63e2495ed2d07155cc663b
+ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 11/29/2017
 ---
 # <a name="generate-an-override-in-c"></a>Generieren Sie eine Außerkraftsetzung in c# #
-**Was:** können Sie den Code für eine jede Methode überschrieben werden kann direkt von einer Basisklasse generieren. 
 
-**Wann:** eine Methode der Basisklasse überschreiben und die Signatur automatisch generiert werden sollen.  
+**Was:** können Sie sofort den Code für jede Methode überschrieben werden kann von einer Basisklasse generieren.
 
-**Grund:** Sie konnte die Signatur der Methode selbst schreiben, aber diese Funktion die Signatur automatisch generiert. 
+**Wann:** eine Methode der Basisklasse überschreiben und die Signatur automatisch generiert werden sollen.
+
+**Grund:** Sie konnte die Signatur der Methode selbst schreiben, aber diese Funktion die Signatur automatisch generiert.
 
 **Vorgehensweise:**
 
@@ -34,11 +35,12 @@ ms.lasthandoff: 10/31/2017
 
    >[!TIP]
    >* Verwenden Sie das Symbol "Eigenschaft" ![Eigenschaftssymbol](media/override_property.png) zum Anzeigen oder Ausblenden von Eigenschaften in der Liste.
-   >* Verwenden Sie das Symbol "Methode" ![Eigenschaftssymbol](media/override_method.png) zum Anzeigen oder Ausblenden von Methoden in der Liste.
+   >* Verwenden Sie das Symbol "Methode" ![Methodensymbol](media/override_method.png) zum Anzeigen oder Ausblenden von Methoden in der Liste.
 
 1. Die ausgewählte Methode oder Eigenschaft wird auf die Klasse als eine Außerkraftsetzung, die implementiert werden können hinzugefügt werden.
 
    ![Überschreiben Sie Ergebnis](media/override_result.png)
 
-## <a name="see-also"></a>Siehe auch  
-[Codegenerierung (C#)](../code-generation-csharp.md)  
+## <a name="see-also"></a>Siehe auch
+
+[Codegenerierung (C#)](../code-generation-csharp.md)
