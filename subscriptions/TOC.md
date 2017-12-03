@@ -10,7 +10,7 @@
 ### [Verwenden von Product Keys](product-keys.md)
 ### Gewusst wie: Aktivieren von Leistungen
 #### Tools
-##### [Visual Studio Enterprise](vs-ide-benefit.md) 
+##### [Visual Studio-IDE](vs-ide-benefit.md) 
 ##### [Visual Studio Team Services](vs-vsts.md)
 ##### [Microsoft Azure](vs-azure.md) 
 ##### [Parasoft](vs-parasoft.md)
@@ -33,7 +33,7 @@
 ##### [Technischer Support](vs-tech-support.md)
 
 ## Administratoren
-### [Rollen und Zuständigkeiten von Administratoren](admin-responsibilities.md)
+### [Administrator (Übersicht)](admin-responsibilities.md)
 ### [Zugreifen auf das Administratorportal](access-admin-portal.md)
 ### [Verwenden des Administratorportals](using-admin-portal.md)
 ### [Zuweisen eines Abonnements](assign-license.md)
