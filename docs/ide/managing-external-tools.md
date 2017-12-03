@@ -1,96 +1,55 @@
 ---
 title: Verwalten externer Tools | Microsoft-Dokumentation
 ms.custom: 
-ms.date: 02/17/2017
+ms.date: 11/20/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords: vs.externaltools
-helpviewer_keywords:
-- Create GUID tool
-- RC (Resource Compiler)
-- ReBase tool
-- Windows NT Message Compiler
-- Windows NT C++ Symbol Undecorator
-- tstcon32.exe
-- Type Library Generator
-- Windows NT Image Binder
-- tools [Visual Studio], external
-- RowsetViewer tool
-- utilities, external tools
-- Local Test Manager
-- OLE DB Rowset Viewer
-- Midlc (IDL Compiler)
-- ATL Trace Tool
-- Odbcte32w.exe
-- IDL Compiler
-- HCW (Help Workshop)
-- Message Compiler [Visual Studio]
-- UUID Generator
-- MIDL, external tools
-- ErrLook tool
-- MAKEHM tool
-- Error lookup tool
-- OLEVIEW (Object Viewer)
-- Uuidgen.exe
-- WebDbg tool
-- OLE/COM Object Viewer
-- LTM (Local Test Manager)
-- ATLTraceTool.exe
-- Bind tool
-- Vsvars32.bat
-- external tools [Visual Studio]
-- ODBC Test
-- Windows NT Image Rebaser
-- undname.exe
-- Vcspawn.exe
-- ActiveX Control Test Container
-- mc (Message Compiler)
-- GUIDGEN tool
-- Odbcte32.exe
-- DisableMsg tool
-- MkTypLib tool
-- Help Workshop
-- Resource Compiler
-ms.assetid: f382fd40-a98f-4934-8c9a-5aeae881acde
-caps.latest.revision: "38"
+helpviewer_keywords: external tools [Visual Studio]
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9829887a28ec2e672999732e38604f3d9d6fea9a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 65cd18ea74ced278d53841cb8204f7cc4d163dc3
+ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="manage-external-tools"></a>Verwalten externer Tools
-Sie können externe Tools aus Visual Studio mithilfe des **Extras**-Menüs aufrufen. Einige Standardtools sind im Menü **Extras** verfügbar, Sie können jedoch andere eigene ausführbare Dateien hinzufügen.  
+
+Sie können externe Tools aus Visual Studio mithilfe des **Extras**-Menüs aufrufen. Einige Standardtools sind im Menü **Extras** verfügbar. Sie können das Menü jedoch auch anpassen, indem Sie andere ausführbare Dateien (eigene Dateien) hinzufügen.
 
 ## <a name="tools-available-on-the-visual-studio-tools-menu"></a>Im Menü „Extras“ von Visual Studio verfügbare Tools
- Das Menü **Extras** enthält mehrere integrierte Befehle, z.B.:
 
-*  **Erweiterungen und Updates** für die [Verwaltung von Visual Studio-Erweiterungen](finding-and-using-visual-studio-extensions.md)
-*  **Codeausschnitt-Manager...** zum [Organisieren von Codeausschnitten](code-snippets.md#code-snippet-manager)
-*  **PreEmptive-Schutz: Dotfuscator** zum Starten von [Dotfuscator Community Edition (CE)](dotfuscator/index.md), sofern [installiert](dotfuscator/install.md).
-*  **Anpassen...** zum [Anpassen von Menüs und Symbolleisten](how-to-customize-menus-and-toolbars-in-visual-studio.md)
-*  **Optionen...** zum [Festlegen einer Vielzahl verschiedener Optionen für die Visual Studio-IDE und andere Tools](reference/options-dialog-box-visual-studio.md)
+Das Menü **Extras** enthält mehrere integrierte Befehle, z.B.:
 
-## <a name="add-new-tools-to-the-tools-menu"></a>Neue Tools zum Menü „Extras“ hinzufügen 
- So können im Menü **Extras** ein externes Tool hinzufügen. Öffnen Sie das Dialogfeld **Externe Tools...**, und klicken Sie auf **Hinzufügen**. Geben Sie dann die Informationen ein. Beispielsweise führt der folgende Eintrag dazu, dass Windows Explorer in dem Verzeichnis der Datei geöffnet wird, das Sie zurzeit in Visual Studio geöffnet haben:  
-  
-1.  Titel: *Dateispeicherort öffnen*
-  
-2.  Befehl: `explorer.exe`  
-  
-3.  Argumente: `/root, "$(ItemDir)"`  
-  
- Im Folgenden finden Sie eine Liste der Argumente, die verwendet werden können, wenn Sie ein externes Tool definieren.
-  
-> [!NOTE]
->  In der IDE-Statusleiste werden die Variablen "Aktuelle Zeile" und "Aktuelle Spalte" angezeigt, um die Position der Einfügemarke im aktiven Code-Editor anzuzeigen. Die Variable "Aktueller Text" gibt den an dieser Stelle ausgewählten Text oder Code zurück.  
-  
+* **Erweiterungen und Updates** für die [Verwaltung von Visual Studio-Erweiterungen](finding-and-using-visual-studio-extensions.md)
+* **Codeausschnitt-Manager...** zum [Organisieren von Codeausschnitten](code-snippets.md#code-snippet-manager)
+* **PreEmptive-Schutz: Dotfuscator** zum Starten von [Dotfuscator Community Edition (CE)](dotfuscator/index.md), sofern [installiert](dotfuscator/install.md).
+* **Anpassen...** zum [Anpassen von Menüs und Symbolleisten](how-to-customize-menus-and-toolbars-in-visual-studio.md)
+* **Optionen...** zum [Festlegen einer Vielzahl verschiedener Optionen für die Visual Studio-IDE und andere Tools](reference/options-dialog-box-visual-studio.md)
+
+## <a name="add-new-tools-to-the-tools-menu"></a>Neue Tools zum Menü „Extras“ hinzufügen
+
+Sie können ein externes Tool hinzufügen, das im Menü **Extras** angezeigt wird.
+
+1. Öffnen Sie das Dialogfeld **Externe Tools**, indem Sie **Extras** > **Externe Tools...**  auswählen.
+
+1. Klicken Sie auf **Hinzufügen**, und geben Sie dann die Informationen ein. Beispielsweise führt der folgende Eintrag dazu, dass Windows Explorer in dem Verzeichnis der Datei geöffnet wird, das Sie zurzeit in Visual Studio geöffnet haben:
+
+   * Titel: `Open File Location`
+
+   * Befehl: `explorer.exe`
+
+   * Argumente: `/root, "$(ItemDir)"`
+
+   ![Dialogfeld „Externe Tools“](media/external-tools-dialog.png)
+
+Im Folgenden finden Sie eine Liste der Argumente, die verwendet werden können, wenn Sie ein externes Tool definieren:
+
 |Name|Argument|Beschreibung|  
 |----------|--------------|-----------------|  
 |Elementpfad|$(ItemPath)|Der vollständige Dateiname der aktuellen Datei (Laufwerk + Pfad + Dateiname).|  
@@ -104,11 +63,15 @@ Sie können externe Tools aus Visual Studio mithilfe des **Extras**-Menüs aufru
 |Target Directory|$(TargetDir)|Das Verzeichnis des zu erstellenden Elements.|  
 |Target Name|$(TargetName)|Der Dateiname des zu erstellenden Elements.|  
 |Zielerweiterung|$(TargetExt)|Die Dateinamenerweiterung zu erstellenden Elements.|  
-|Binäres Verzeichnis|$(BinDir)|Der endgültige Position der Binärdatei, die erstellt wird (als Laufwerk + Pfad definiert). Beispiel: **\\...\Eigene Dateien\ Visual Studio-\<Version >\\<ProjectName\>\bin\debug**|  
+|Binäres Verzeichnis|$(BinDir)|Der endgültige Position der Binärdatei, die erstellt wird (als Laufwerk + Pfad definiert).|  
 |Projektverzeichnis|$(ProjDir)|Das Verzeichnisses des aktuellen Projekts (Laufwerk + Pfad).|  
 |Projektdateiname|$(ProjFileName)|Der Dateiname des aktuellen Projekts (Laufwerk + Pfad + Dateiname).|  
 |Projektmappenverzeichnis|$(SolutionDir)|Das Verzeichnisses der aktuellen Projektmappe (Laufwerk + Pfad).|  
-|Projektmappen-Dateiname|$(SolutionFileName)|Der Dateiname der aktuellen Projektmappe (Laufwerk + Pfad + Dateiname).|  
+|Projektmappen-Dateiname|$(SolutionFileName)|Der Dateiname der aktuellen Projektmappe (Laufwerk + Pfad + Dateiname).|
 
-## <a name="see-also"></a>Siehe auch  
- [C/C++-Buildtools](/cpp/build/reference/c-cpp-build-tools)
+> [!NOTE]
+> In der IDE-Statusleiste werden die Variablen "Aktuelle Zeile" und "Aktuelle Spalte" angezeigt, um die Position der Einfügemarke im aktiven Code-Editor anzuzeigen. Die Variable "Aktueller Text" gibt den an dieser Stelle ausgewählten Text oder Code zurück.
+
+## <a name="see-also"></a>Siehe auch
+
+[C/C++-Buildtools](/cpp/build/reference/c-cpp-build-tools)

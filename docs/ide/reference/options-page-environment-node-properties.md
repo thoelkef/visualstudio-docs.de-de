@@ -15,11 +15,11 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ae50f2d537836501ec4c9c29e50d86aa3e325661
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 076b48d5526c0cefffb5f18daed9aaaebb031aad
+ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="options-page-environment-node-properties"></a>Optionsseite, Eigenschaften des Knotens "Umgebung"
 In diesem Dokument werden die Seiten (oder Eigenschaftenauflistungen) beschrieben, die der Kategorie **Umgebung**, `DTE.Properties("Environment", <Property Page>)`, des Dialogfelds **Optionen** zugeordnet sind. Den Titel für jeden Unterabschnitt bildet der Aufruf zum Zugriff auf die Properties-Auflistung, und die Tabelle in jedem Unterabschnitt führt die Eigenschaften in der Auflistung auf.  
@@ -71,7 +71,7 @@ In diesem Dokument werden die Seiten (oder Eigenschaftenauflistungen) beschriebe
 |Eigenschaftenelementname|Wert|Beschreibung|  
 |------------------------|-----------|-----------------|  
 |EnableAdminExtensions|Get/Set (boolesch)|Lädt Erweiterungen pro Benutzer, wenn Visual Studio mit Administratoranmeldeinformationen ausgeführt wird. Visual Studio muss neu gestartet werden, nachdem dieser Wert geändert wurde.|  
-|EnableOnline|Get/Set (boolesch)|Ermöglicht den Zugriff auf die Erweiterungen in der Visual Studio Gallery.|  
+|EnableOnline|Get/Set (boolesch)|Ermöglicht den Zugriff auf die Erweiterungen in Visual Studio Marketplace.|  
 |AutomaticallyCheckForUpdates|Get/Set (boolesch)|Sucht automatisch nach Updates für installierte Erweiterungen.|  
   
 ## <a name="find-and-replace"></a>Suchen und Ersetzen  
