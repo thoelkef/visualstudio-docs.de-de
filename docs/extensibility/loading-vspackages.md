@@ -15,11 +15,11 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 94db8d3bb95e254a3fa528a424048162916fce99
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 29022d14311e71b7ee33f5339f8e450c47d1ce5c
+ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="loading-vspackages"></a>Laden von VSPackages
 VSPackages sind in Visual Studio nur geladen, wenn ihre Funktionalität erforderlich ist. Beispielsweise wird eine VSPackage geladen, wenn Visual Studio verwendet, ein Projekt Vorinstallations- oder ein Dienst, den das VSPackage implementiert. Dieses Feature heißt verzögertes Laden, die nach Möglichkeit zur Verbesserung der Leistung verwendet wird.  
@@ -72,61 +72,7 @@ VSPackages sind in Visual Studio nur geladen, wenn ihre Funktionalität erforder
   
      Bei der Initialisierung des VSPackages wird erzwungen `PackageToBeLoaded` geladen.  
   
-     Force laden sollte nicht für die VSPackage-Kommunikation verwendet werden. Verwendung [verwenden und Bereitstellen von Diensten](../extensibility/using-and-providing-services.md) stattdessen.  
-  
-## <a name="using-a-custom-attribute-to-register-a-vspackage"></a>Verwenden eine VSPackage Registrieren eines benutzerdefinierten Attributs  
- In bestimmten Fällen müssen Sie möglicherweise ein neues Registrierungsattribut für die Erweiterung zu erstellen. Sie können Registrierungsattribute verwenden, um neuen Registrierungsschlüssel hinzuzufügen oder um neue Werte zu vorhandenen Schlüssel hinzuzufügen. Das neue Attribut ableiten muss <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute>, und es muss die <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute.Register%2A> und <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute.Unregister%2A> Methoden.  
-  
-## <a name="creating-a-registry-key"></a>Erstellen eines Registrierungsschlüssels  
- Im folgenden Code wird das benutzerdefinierte Attribut erstellt eine **benutzerdefinierte** Unterschlüssel unter dem Schlüssel für das VSPackage, der registriert wird.  
-  
-```csharp  
-public override void Register(RegistrationAttribute.RegistrationContext context)  
-{  
-    Key packageKey = null;  
-    try  
-    {   
-        packageKey = context.CreateKey(@"Packages\{" + context.ComponentType.GUID + @"}\Custom");  
-        packageKey.SetValue("NewCustom", 1);  
-    }  
-    finally  
-    {  
-        if (packageKey != null)  
-            packageKey.Close();  
-    }  
-}  
-  
-public override void Unregister(RegistrationContext context)  
-{  
-    context.RemoveKey(@"Packages\" + context.ComponentType.GUID + @"}\Custom");  
-}  
-  
-```  
-  
-## <a name="creating-a-new-value-under-an-existing-registry-key"></a>Erstellen einen neuen Wert in einen vorhandenen Registrierungsschlüssel  
- Sie können benutzerdefinierte Werte für einen vorhandenen Schlüssel hinzufügen. Der folgende Code zeigt, wie ein VSPackage-Registrierungsschlüssel einen neuen Wert hinzu.  
-  
-```csharp  
-public override void Register(RegistrationAttribute.RegistrationContext context)  
-{  
-    Key packageKey = null;  
-    try  
-    {   
-        packageKey = context.CreateKey(@"Packages\{" + context.ComponentType.GUID + "}");  
-        packageKey.SetValue("NewCustom", 1);  
-    }  
-    finally  
-    {  
-        if (packageKey != null)  
-            packageKey.Close();  
-                }  
-}  
-  
-public override void Unregister(RegistrationContext context)  
-{  
-    context.RemoveValue(@"Packages\" + context.ComponentType.GUID, "NewCustom");  
-}  
-```  
+     Force laden sollte nicht für die VSPackage-Kommunikation verwendet werden. Verwendung [verwenden und Bereitstellen von Diensten](../extensibility/using-and-providing-services.md) stattdessen.
   
 ## <a name="see-also"></a>Siehe auch  
  [VSPackages](../extensibility/internals/vspackages.md)
