@@ -18,11 +18,11 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f912a0aa6588895fb99da83396e2e5caf976e223
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.openlocfilehash: fee3419b6e041983fb3aa77cace5bb02e48e1b9a
+ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 11/15/2017
 ---
 # <a name="projects-and-solutions-options-dialog-box"></a>Projekte und Projektmappen, Dialogfeld "Optionen"
 Legt das [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]-Verhalten im Zusammenhang mit Projekten und Projektmappen fest. Wählen Sie zum Zugriff auf diese Optionen **Extras > Optionen** aus, erweitern Sie **Projekte und Projektmappen**, und klicken Sie auf **Allgemein**.
@@ -32,15 +32,7 @@ Die Standardpfade für Projekt- und Vorlagenordner werden über die Registerkart
 > [!NOTE]
 >  Die in einem Dialogfeld verfügbaren Optionen sowie die Namen und Positionen der angezeigten Menübefehle können sich je nach den persönlichen aktiven Einstellungen oder der verwendeten Version von den in der Hilfe beschriebenen Optionen unterscheiden. Diese Hilfeseite wurde unter Berücksichtigung der Option **Allgemeine Entwicklungseinstellungen** verfasst. Klicken Sie im Menü **Tools** auf Einstellungen **Importieren und Exportieren**, um die Einstellungen anzuzeigen oder zu ändern. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../../ide/personalizing-the-visual-studio-ide.md).  
   
-## <a name="general-tab-options"></a>Allgemeine Registerkartenoptionen  
- 
-**Lightweight-Ladevorgang für Projektmappen**: Reduziert die erforderliche Zeit und den benötigten Arbeitsspeicher beim Laden von Projektmappen in der IDE. Großen Projektmappen, die viele C#-, VB- oder C++-Projekte enthalten, verfügen wahrscheinlich eine deutlich verbesserte Leistung, wenn der Lightweight-Ladevorgang für Projektmappen aktiviert wird.
-
-- **Visual Studio wählen lassen, was für meine Projektmappe am besten geeignet ist**: Visual Studio bestimmt automatisch, ob der Lightweight-Ladevorgang für Projektmappen basierend auf den Merkmalen der Projektmappe angewendet wird.
-- **Aktiviert**: Wendet immer den Lightweight-Ladevorgang für Projektmappen an, wenn Projektmappen geladen werden.
-- **Deaktiviert**: Wendet nie „Lightweight-Lösung laden“ an.
-
-Weitere Informationen finden Sie unter [Optimieren der Startzeit von Visual Studio](../optimize-visual-studio-startup-time.md#speed_up_solution_load).
+## <a name="general-tab-options"></a>Allgemeine Registerkartenoptionen
 
 **Fehlerliste bei Buildfertigstellung mit Fehlern immer anzeigen**  
 Öffnet das Fenster **Fehlerliste** nachdem der Build fertig gestellt ist nur dann, wenn ein Projekt nicht erstellt werden konnte. Hier werden während des Buildvorgangs aufgetretene Fehler angezeigt. Wenn diese Option deaktiviert ist, treten die Fehler weiterhin auf, aber das Fenster wird nicht geöffnet, wenn der Build abgeschlossen ist. Diese Option ist standardmäßig aktiviert.  
