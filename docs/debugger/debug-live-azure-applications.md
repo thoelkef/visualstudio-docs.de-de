@@ -1,6 +1,6 @@
 ---
 title: "Debuggen von apps für live ASP.NET Azure - Visual Studio | Microsoft Docs"
-ms.date: 11/13/2017
+ms.date: 12/06/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-debug
@@ -12,11 +12,11 @@ caps.latest.revision: "1"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 02f91441c493d65e8abcdc80bd85b01f2bd423bf
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.openlocfilehash: 04f3f90f6b3ee8aac2ddf1907569043c9d4b56ea
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>Debuggen von live ASP.NET Azure-apps, die mit dem Momentaufnahme-Debugger
 
@@ -33,7 +33,7 @@ Darüber hinaus wird der Momentaufnahme-Debugger nur für Visual Studio 2017 Ent
 
 ## <a name="start-the-snapshot-debugger"></a>Starten Sie den Momentaufnahme-Debugger
 
-1. Installieren der [Visual Studio Enterprise 15.5 Preview](https://www.visualstudio.com/en-us/news/releasenotes/vs2017-preview-relnotes) oder höher. Wenn Sie von einer früheren Visual Studio-2017 Vorschau aktualisieren, führen Sie den Installer für Visual Studio, und überprüfen Sie die Snapshot-Debugger-Komponente in der arbeitsauslastung für ASP.NET und Entwicklung.
+1. Installieren Sie [Visual Studio 2017 Enterprise Version 15.5](https://www.visualstudio.com/downloads/) oder höher. Wenn Sie von einer vorherigen Installation von Visual Studio 2017 aktualisieren, führen Sie den Installer für Visual Studio, und überprüfen Sie die Snapshot-Debugger-Komponente in der arbeitsauslastung für ASP.NET und Entwicklung.
 
 2. Öffnen Sie das Projekt, Momentaufnahme debuggen möchten. 
 

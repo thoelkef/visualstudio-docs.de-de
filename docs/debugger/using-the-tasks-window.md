@@ -19,11 +19,11 @@ caps.latest.revision: "20"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4eab796f0a3c6a7148c94e780439a727ee6fe450
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.openlocfilehash: b0b1d4f79be83f69989064ed7699df43b6930040
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="using-the-tasks-window"></a>Verwenden des Fensters "Aufgaben"
 Die **Aufgaben** Fenster ähnelt der **Threads** Fenster, mit dem Unterschied, dass die It Informationen zu zeigt <xref:System.Threading.Tasks.Task?displayProperty=fullName>, [Task_handle](/cpp/parallel/concrt/reference/task-group-class.md), oder [WinJS.Promise ](http://msdn.microsoft.com/library/windows/apps/br211867.aspx) Objekte anstelle von jedem Thread. Wie Threads stellen auch Aufgaben asynchrone Vorgänge dar, die gleichzeitig ausgeführt werden können. Es dürfen jedoch mehrere Aufgaben im selben Thread ausgeführt werden. 
@@ -32,7 +32,7 @@ Die **Aufgaben** Fenster ähnelt der **Threads** Fenster, mit dem Unterschied, d
   
  In systemeigenem Code können Sie die **Aufgaben** Fenster bei der Arbeit mit [Aufgabengruppen](/cpp/parallel/concrt/task-parallelism-concurrency-runtime), [parallele Algorithmen](/cpp/parallel/concrt/parallel-algorithms), [asynchrone Agents](/cpp/parallel/concrt/asynchronous-agents), und [einfache Aufgaben](/cpp/parallel/concrt/task-scheduler-concurrency-runtime). Weitere Informationen zu Aufgaben in systemeigenem Code finden Sie unter [Concurrency Runtime](/cpp/parallel/concrt/concurrency-runtime).  
   
- In JavaScript können Sie das Fenster „Aufgaben“ verwenden, wenn Sie mit dem „promise .then“-Code arbeiten. Finden Sie unter [asynchrone Programmierung in JavaScript (uwp-apps)](http://msdn.microsoft.com/library/windows/apps/hh700330.aspx) für Weitere Informationen.   
+ In JavaScript können Sie das Fenster "Aufgaben" verwenden, bei der Arbeit mit Zusage `.then` Code. Finden Sie unter [asynchrone Programmierung in JavaScript (uwp-apps)](http://msdn.microsoft.com/library/windows/apps/hh700330.aspx) für Weitere Informationen.   
   
  Sie können die **Aufgaben** Fenster, wenn Sie im Debugger unterbrochen. Sie können darauf zugreifen, auf die **Debuggen** durch Klicken auf **Windows** und dann auf **Aufgaben**. Die folgende Abbildung zeigt die **Aufgaben** Fenster im Standardmodus.  
   
@@ -68,7 +68,7 @@ Die **Aufgaben** Fenster ähnelt der **Threads** Fenster, mit dem Unterschied, d
  ![Ansicht "Kontextmenü" im Fenster "Aufgaben"](../debugger/media/parallel_tasks_contextmenu.png "Parallel_Tasks_ContextMenu")  
   
 ## <a name="sorting-tasks"></a>Sortieren von Aufgaben  
- Wenn Sie Aufgaben nach Spaltenkriterien sortieren möchten, klicken Sie auf den Spaltenheader. Beispielsweise, indem Sie auf die **ID** Spaltenüberschrift können Sie die Aufgaben nach Aufgaben-ID sortieren: 1,2,3,4,5 usw.. Klicken Sie erneut auf den Spaltenheader, um die Sortierreihenfolge umzukehren. Die aktuelle Sortierspalte und die Sortierreihenfolge werden durch einen Pfeil in der Spalte angegeben.  
+ Wenn Sie Aufgaben nach Spaltenkriterien sortieren möchten, klicken Sie auf den Spaltenheader. Beispielsweise, indem Sie auf die **ID** Spaltenüberschrift können Sie die Aufgaben nach Aufgaben-ID sortieren: 1,2,3,4,5 usw. Klicken Sie erneut auf den Spaltenheader, um die Sortierreihenfolge umzukehren. Die aktuelle Sortierspalte und die Sortierreihenfolge werden durch einen Pfeil in der Spalte angegeben.  
   
 ## <a name="grouping-tasks"></a>Gruppieren von Aufgaben  
  Sie können Aufgaben nach jeder Spalte in der Listenansicht gruppieren. Beispielsweise, indem Sie mit der rechten Maustaste die **Status** Spaltenüberschrift, und klicken Sie dann auf **Gruppieren nach Status**, können Sie alle Aufgaben, die denselben Status aufweisen, gruppieren. So können Sie z. B. schnell wartende Aufgaben anzeigen lassen, damit Sie untersuchen können, aus welchen Gründen diese blockiert sind. Sie können auch Gruppen reduzieren, die während der Debugsitzung nicht von Interesse sind. Auf die gleiche Weise können Sie nach den anderen Spalten gruppieren. Eine Gruppe kann gekennzeichnet bzw. die Kennzeichnung einer Gruppe kann aufgehoben werden, indem Sie auf die Schaltfläche neben dem Gruppenheader klicken. Die folgende Abbildung zeigt die **Aufgaben** Fenster im gruppierten Modus.  

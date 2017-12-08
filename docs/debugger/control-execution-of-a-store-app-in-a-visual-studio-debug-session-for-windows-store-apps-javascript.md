@@ -17,11 +17,11 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 31353d1063bc6d4f29eaa0fcde308ce3c34fc218
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.openlocfilehash: 60b9465677ce033f8b285ce21e2b8332bf88a73a
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="control-execution-of-a-uwp-app-in-a-visual-studio-debug-session-javascript"></a>Steuern der Ausführung einer uwp-app in einer Visual Studio-Debugsitzung (JavaScript)
 In diesem Schnellstart wird veranschaulicht, wie Sie im Visual Studio-Debugger navigieren und den Programmstatus in einer Sitzung anzeigen.  
@@ -69,7 +69,7 @@ In diesem Schnellstart wird veranschaulicht, wie Sie im Visual Studio-Debugger n
   
 2.  **Öffnen Sie die „default.js“-Quelldatei.** Öffnen Sie im Projektmappen-Explorer den Knoten **js** , und wählen Sie `default.js`.  
   
-3.  **Ersetzen Sie den Seiteninhalt durch den Beispielcode.** Löschen Sie den gesamten Inhalt aus der Datei `default.js` . Folgen Sie diesem Link: [Debugger navigation sample code (JavaScript)](../debugger/debugger-navigation-sample-code-javascript.md), und kopieren Sie anschließend den im Abschnitt JavaScript aufgelisteten Code in die Zwischenablage. (Wählen Sie **wieder** im Browser oder im Help Viewer zu dieser schnellstartseite zurückzukehren.) Fügen Sie den Code im Visual Studio-Editor in die jetzt leere Datei `default.js` ein. Wählen Sie **STRG+S** , um die Datei zu speichern.  
+3.  **Ersetzen Sie den Seiteninhalt durch den Beispielcode.** Löschen Sie den gesamten Inhalt aus der Datei `default.js` . Folgen Sie diesem Link: [Debugger-Navigation-Beispielcode (JavaScript)](https://github.com/MicrosoftDocs/visualstudio-docs/raw/master/docs/debugger/samples/debugger-navigation-sample-code-javascript.js), und kopieren Sie den Code weiter in der JavaScript-Abschnitt in die Zwischenablage. (Wählen Sie **wieder** im Browser oder im Help Viewer zu dieser schnellstartseite zurückzukehren.) Fügen Sie den Code im Visual Studio-Editor in die jetzt leere Datei `default.js` ein. Wählen Sie **STRG+S** , um die Datei zu speichern.  
   
  Sie können nun den Beispielen in diesem Thema folgen.  
   

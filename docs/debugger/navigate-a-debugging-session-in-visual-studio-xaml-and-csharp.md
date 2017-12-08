@@ -17,11 +17,11 @@ caps.latest.revision: "18"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8c7679aff620b415a8b3c7f7b226d808d0f3f492
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.openlocfilehash: 0c69ff648e2a1ac8c60746f1e7879e80c2063c2a
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="navigate-a-debugging-session-in-visual-studio-xaml-and-c"></a>Navigieren in einer Debugsitzung in Visual Studio (Xaml und C#)
 Mit diesem Schnellstart wird veranschaulicht, wie in Debugsitzungen in Visual Studio navigiert und wie der Programmzustand einer Sitzung angezeigt und geändert wird.  
@@ -52,7 +52,7 @@ Mit diesem Schnellstart wird veranschaulicht, wie in Debugsitzungen in Visual St
   
  **Öffnen Sie die Quelldatei "MainPage.xaml.cs".** Klicken Sie mit der rechten Maustaste an einer beliebigen Stelle im XAML-Editor, und wählen Sie **Code anzeigen**aus. Die Code-Behind-Datei "MainPage.xaml.cs" wird angezeigt. Beachten Sie, dass in der Datei nur eine Methode, der `MainPage()` -Konstruktor, aufgeführt wird.  
   
- **Ersetzen Sie den MainPage-Konstruktor durch den Beispielcode.** Löschen Sie die MainPage()-Methode. Folgen Sie diesem Link: [Debugger-Navigation-Beispielcode (Xaml und c#)](../debugger/debugger-navigation-sample-code-xaml-and-csharp.md), und kopieren Sie den Code in C#-Abschnitt in die Zwischenablage aufgelistet. (Wählen Sie **wieder** im Browser oder im Help Viewer zu dieser schnellstartseite zurückzukehren.) Fügen Sie im Visual Studio-Editor den Code im `partial class MainPage`-Block ein. Wählen Sie STRG + S, um die Datei zu speichern.  
+ **Ersetzen Sie den MainPage-Konstruktor durch den Beispielcode.** Löschen Sie die MainPage()-Methode. Folgen Sie diesem Link: [Debugger-Navigation-Beispielcode (Xaml und c#)](https://github.com/MicrosoftDocs/visualstudio-docs/raw/master/docs/debugger/samples/debugger-navigation-sample-code-xaml-and-csharp.cs), und kopieren Sie den Code in C#-Abschnitt in die Zwischenablage aufgelistet. (Wählen Sie **wieder** im Browser oder im Help Viewer zu dieser schnellstartseite zurückzukehren.) Fügen Sie im Visual Studio-Editor den Code im `partial class MainPage`-Block ein. Wählen Sie STRG + S, um die Datei zu speichern.  
   
  Sie können nun den Beispielen in diesem Thema folgen.  
   
