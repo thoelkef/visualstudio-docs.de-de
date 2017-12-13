@@ -1,23 +1,27 @@
 ---
-title: "JsProjectionEnqueueCallback Typedef | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: JsProjectionEnqueueCallback-TypeDef| Microsoft-Dokumentation
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 ms.assetid: 19c1cefb-a7be-4196-b780-9fe6adf35ba5
-caps.latest.revision: 4
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 4
+caps.latest.revision: "4"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: bda4a3a80edac38ab2c3885c2256cdf9d03eb8c1
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# JsProjectionEnqueueCallback Typedef
+# <a name="jsprojectionenqueuecallback-typedef"></a>JsProjectionEnqueueCallback Typedef
 Der Rückruf der Anwendung, der von JsRT aufgerufen wird, wenn eine projizierte API in einem anderen als dem ursprünglichen Thread abgeschlossen wird.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 typedef void (CALLBACK *JsProjectionEnqueueCallback)(  
@@ -27,7 +31,7 @@ typedef void (CALLBACK *JsProjectionEnqueueCallback)(
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `jsCallback`  
  Der Rückruf, der für den ursprünglichen Thread aufgerufen wird.  
   
@@ -35,15 +39,15 @@ typedef void (CALLBACK *JsProjectionEnqueueCallback)(
  Der Anwendungskontext.  
   
  `callbackState`  
- Der JsRT\-Kontext, der an `jsCallback` übergeben werden muss.  
+ Der JsRT-Kontext, der an `jsCallback`übergeben werden muss.  
   
-## Hinweise  
+## <a name="remarks"></a>Hinweise  
  Erfordert den Aufruf von JsSetProjectionEnqueueCallback, um Rückrufe empfangen zu können.  
   
- Diese API wird nur im Edge\-Modus unterstützt.  
+ Diese API wird nur im Edge-Modus unterstützt.  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  jsrt.h  
   
-## Siehe auch  
- [Verweis \(JavaScript\-Laufzeit\)](../chakra-hosting/reference-javascript-runtime.md)
+## <a name="see-also"></a>Siehe auch  
+ [Referenz (JavaScript-Laufzeit)](../chakra-hosting/reference-javascript-runtime.md)

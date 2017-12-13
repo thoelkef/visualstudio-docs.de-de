@@ -1,57 +1,58 @@
 ---
-title: "GC (VSPerfCmd) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: GC (VSPerfCmd) | Microsoft-Dokumentation
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 7c81e88b-a748-4cf5-a7a1-3429608e1b54
-caps.latest.revision: 12
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: da671dcac0e60c0d20754d73f9b23a9fe2de54d5
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# GC (VSPerfCmd)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Durch die **GC**\-Option wird die Sammlung von Daten zur .NET Framework\-Speicherbelegung und zur Objektlebensdauer aktiviert.  Die **GC**\-Option kann nur bei der Samplingprofilerstellungsmethode und nur der **Launch**\-Option verwendet werden.  
+# <a name="gc-vsperfcmd"></a>GC (VSPerfCmd)
+Die Option **GC** aktiviert das Erfassen von Daten zur Speicherbelegung durch .NET-Framework und zur Objektlebensdauer. Die Option **GC** kann nur gemeinsam mit der Sampling-Profilerstellungsmethode und der Option **Launch** (Start) verwendet werden.  
   
- Wenn Sie die **GC**\-Option verwenden, ist der VSPerfClrEnv\-**\/sampleon**\-Befehl nicht erforderlich.  
+ Wenn Sie die Option **GC** verwenden, ist der VSPerfClrEnv-Befehl **/sampleon** nicht erforderlich.  
   
- Wenn keine Parameter angegeben werden, oder wenn der **Allocation**\-Parameter angegeben wird, werden nur .NET Framework\-Speicherbelegungsdaten erfasst.  Wenn der **Lifetime**\-Parameter angegeben wird, werden sowohl Daten für die .NET Framework\-Speicherbelegung als auch für die .NET Framework\-Objektlebensdauer gesammelt.  
+ Wenn keine Parameter angegeben sind, oder wenn der Parameter **Speicherbelegung** angegeben ist, werden nur Daten zur Speicherbelegung durch .NET-Framework erfasst. Wenn der Parameter **Lebensdauer** angegeben ist, werden sowohl Daten zur Speicherbelegung durch .NET-Framework als auch zur Objektlebensdauer erfasst.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 VSPerfCmd.exe /Launch:AppName /GC[:{Allocation|Lifetime}] [Options]  
 ```  
   
-#### Parameter  
- **Allocation**  
- Standard  Erfasst .NET Framework\-Speicherbelegungsdaten.  
+#### <a name="parameters"></a>Parameter  
+ **Speicherbelegung**  
+ Standard. Erfasst Daten zur Speicherbelegung durch .NET-Framework.  
   
- **Lifetime**  
- Erfasst sowohl .NET\-Speicherbelegungsinformationen als auch Daten zur .NET Framework\-Objektlebensdauer.  
+ **Lebensdauer**  
+ Erfasst sowohl Daten zur Speicherbelegung durch .NET-Framework als auch zur Lebensdauer von .NET Framework-Objekten.  
   
-## Erforderliche Optionen  
- Die **GC**\-Option kann nur in Verbindung mit der **Launch**\-Option verwendet werden.  
+## <a name="required-options"></a>Erforderliche Optionen  
+ Die Option **GC** kann nur mit der Option **Launch** (Start) verwendet werden.  
   
- **Launch:** `AppName`  
+ **Starten:** `AppName`  
  Startet die angegebene Anwendung und beginnt die Profilerstellung mit der Samplingmethode.  
   
-## Beispiel  
- Im folgenden Beispiel wird eine Anwendung gestartet, und es werden .NET Framework\-Speicherbelegungsdaten erfasst.  
+## <a name="example"></a>Beispiel  
+ Mithilfe des folgenden Beispiels wird eine Anwendung gestartet und Daten zur Speicherbelegung durch .NET-Framework erfasst.  
   
 ```  
 VSPerfCmd.exe /Launch:TestApp.exe /gc  
 ```  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [Profilerstellung für eigenständige Anwendungen](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [Profilerstellung für ASP.NET\-Webanwendungen](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [Profilerstellungsdienste](../profiling/command-line-profiling-of-services.md)
+ [Profilerstellung für ASP.NET-Webanwendungen](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [Erstellen von Dienstprofilen](../profiling/command-line-profiling-of-services.md)

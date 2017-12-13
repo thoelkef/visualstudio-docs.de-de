@@ -1,33 +1,31 @@
 ---
 title: "Webprojektvorlage für Python in Visual Studio | Microsoft-Dokumentation"
 ms.custom: 
-ms.date: 7/13/2017
-ms.prod: visual-studio-dev15
+ms.date: 07/13/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-python
+ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 401e7725-8be5-4e67-862c-bf0690a529e3
-caps.latest.revision: 11
+caps.latest.revision: "11"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: 2a21c43e039d9a1109f1870516e9b3d4ea3c644b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
-ms.openlocfilehash: e46dd1012d220015b1840c0c50332dbe45e43a1e
-ms.contentlocale: de-de
-ms.lasthandoff: 07/18/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="python-web-project-templates"></a>Python-Webprojektvorlagen
 
-Python in Visual Studio unterstützt das Entwickeln von Webprojekten in Frameworks wie Bottle, Django und Flask mit Projektvorlagen und einem Debugstartprogramm, das so konfiguriert werden kann, dass es mehrere Frameworks behandelt kann. Visual Studio enthält jedoch nicht die Frameworks selbst. Diese müssen Sie getrennt installieren, indem Sie mit der rechten Maustaste auf das Projekt klicken und **Python > Framework installieren/aktualisieren** wählen.
+Python in Visual Studio unterstützt das Entwickeln von Webprojekten in Bottle-, Flask- und Django-Frameworks mit Projektvorlagen und einem Debugstartprogramm, das so konfiguriert werden kann, dass es mehrere Frameworks behandeln kann. Sie können auch die generische Vorlage „Webprojekt“ für andere Frameworks wie z.B Pyramid verwenden.
 
-Jede Vorlage (zugänglich über **Datei > Neu > Projekt**) startet einen Webserver mit einem zufällig ausgewählten lokalen Port, öffnet Ihren Standardbrowser beim Debuggen und ermöglicht eine direkte Veröffentlichung in [Microsoft Azure](http://www.azure.com). Vorlagen werden für Bottle, Flask und Django bereitgestellt und können Sie die generische Vorlage „Webprojekt“ für andere Frameworks wie Pyramid nutzen.
+Diese Frameworks sind nicht in Visual Studio enthalten. Sie müssen Frameworks separat installieren, indem Sie mit der rechten Maustaste auf das Projekt klicken und **Python > Framework installieren/aktualisieren** auswählen.
+
+Wenn ein Projekt, das mithilfe einer Vorlage (zugänglich über **Datei > Neu > Projekt**) erstellt wurde, ausgeführt wird, wird ein Webserver mit einem zufällig ausgewählten lokalen Port gestartet, Ihr Standardbrowser beim Debuggen geöffnet, und die direkte Veröffentlichung in Microsoft Azure wird ermöglicht.
 
 ![Neue Webprojektvorlagen](media/template-web-new-project.png)
 
@@ -41,13 +39,9 @@ Wählen Sie bei der Bereitstellung in Microsoft Azure App Service eine Version v
 
 In Microsoft Azure Cloud Services *wird* die `requirements.txt`-Datei hingegen unterstützt. Weitere Details finden Sie unter [Azure Cloud Services-Projekte](template-azure-cloud-service.md).
 
-Eine Einführung in Python-Webprojekte finden Sie in diesem Video: [Getting Started with PTVS, Part 6: Web sites](https://youtu.be/FJx5mutt1uk?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff) (youtube.com, 3 Minuten, 10 Sekunden).
-
-> [!VIDEO https://www.youtube.com/embed/FJx5mutt1uk]
-
 ## <a name="debugging"></a>Debuggen
 
-Wenn ein Webprojekt zum Debuggen gestartet wird, startet Visual Studio den Webserver lokal und öffnet Ihren Standardbrowser mit dieser Adresse und diesem Port. Um zusätzliche Optionen anzugeben, klicken Sie mit der rechten Maustaste auf das Projekt, wählen Sie **Eigenschaften**, und wählen Sie die Registerkarte **Webstartprogramm**:
+Wenn ein Webprojekt zum Debuggen gestartet wird, startet Visual Studio den Webserver lokal und öffnet Ihren Standardbrowser mit dieser Adresse und diesem Port. Um zusätzliche Optionen anzugeben, klicken Sie mit der rechten Maustaste auf das Projekt, wählen Sie **Eigenschaften** aus, und wählen Sie dann die Registerkarte **Webstartprogramm** aus:
 
   ![Eigenschaften des Webstartprogramms für die generische Webvorlage](media/template-web-launcher-properties.png)
 
@@ -178,4 +172,3 @@ Wenn Sie Ihrem Projekt die `web.config`-Debuggingvorlage hinzufügen und das Rem
 Mit dem Befehl **In Microsoft Azure Cloud Services-Projekt konvertieren** (Abbildung unten) wird Ihrer Projektmappe ein Cloud Services-Projekt hinzugefügt. Dieses Projekt umfasst die Bereitstellungseinstellungen und die Konfiguration für die zu verwendenden virtuellen Computer und Dienste. Verwenden Sie den Befehl **Veröffentlichen** im Cloudprojekt zur Bereitstellung in Cloud Services. Mit dem Befehl **Veröffentlichen** im Python-Projekt erfolgt die Bereitstellung weiterhin auf Websites. Weitere Details finden Sie unter [Azure Cloud Services-Projekte](template-azure-cloud-service.md).
 
 ![Befehl „In Microsoft Azure Cloud Services-Projekt konvertieren“](media/template-web-convert-menu.png)
-

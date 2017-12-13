@@ -1,75 +1,75 @@
 ---
-title: "Befehl &quot;Neue Datei&quot; | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "file.newfile"
-helpviewer_keywords: 
-  - "File.NewFile-Befehl"
-  - "Neue Datei (Befehl)"
+title: "Befehl „Neue Datei“ | Microsoft-Dokumentation"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: file.newfile
+helpviewer_keywords:
+- File.NewFile command
+- New File command
 ms.assetid: 767868d6-a525-425b-a43b-2198f636ab6b
-caps.latest.revision: 12
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 9f3b469466080403122484a7b6259c099765edd7
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Befehl &quot;Neue Datei&quot;
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Erstellt eine neue Datei und öffnet diese.  Die Datei wird im Ordner **Verschiedene Dateien** angezeigt.  
+# <a name="new-file-command"></a>Befehl "Neue Datei"
+Erstellt eine neue Datei und öffnet sie. Die Datei wird unter „Sonstige Dateien“ (Ordner) angezeigt.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 File.NewFile [filename] [/t:templatename] [/editor:editorname]  
 ```  
   
-## Argumente  
+## <a name="arguments"></a>Argumente  
  `filename`  
- Optional.  Der Name der Datei.  Wenn kein Name angegeben wird, wird ein Standardname verwendet.  Wenn kein Vorlagenname angegeben ist, wird eine Textdatei erstellt.  
+ Dies ist optional. Der Name der Datei. Wenn kein Name angegeben wird, wird ein Standardname bereitgestellt. Wenn kein Vorlagenname aufgeführt ist, wird eine Textdatei erstellt.  
   
-## Schalter  
- \/t:`templatename`  
- Optional.  Gibt den Typ der zu erstellenden Datei an.  
+## <a name="switches"></a>Schalter  
+ /t:`templatename`  
+ Dies ist optional. Gibt den Typ der zu erstellenden Datei an.  
   
- \/t: Die Argumentsyntax`templatename` die im New File Dialog Box gefunden werden.  Geben Sie den Kategorienamen gefolgt von einem umgekehrten Schrägstrich \(`\`\) und dem Vorlagennamen ein, und schließen Sie die gesamte Zeichenfolge in Anführungszeichen ein.  
+ Die Argumentsyntax /t:`templatename` gibt die im Dialogfeld „Neue Datei“ gefundenen Informationen wieder. Geben Sie den Namen der Kategorie gefolgt von einem umgekehrten Schrägstrich (`\`) und den Vorlagennamen ein. Setzen Sie außerdem die komplette Zeichenfolge in Anführungszeichen.  
   
- Um z. B. eine neue [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]\-Quelldatei zu erstellen, geben Sie für das Argument \/t:`templatename` Folgendes ein:  
+ Um z.B. eine neue [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]-Quelldatei zu erstellen, müssen Sie für das Argument /t:`templatename` Folgendes eingeben:  
   
 ```  
 /t:"Visual C++\C++ File (.cpp)"  
 ```  
   
- Im Beispiel oben wird angegeben, dass die C\+\+\-Dateivorlage sich im Dialogfeld **Neue Datei** unter der Kategorie Visual C\+\+ befindet.  
+ Dieses Beispiel zeigt, dass sich die C++-Dateivorlage unter der Kategorie Visual C++ im Dialogfeld **Neue Datei** befindet.  
   
- \/e:`editorname`  
- Optional.  Name des Editors, in dem die Datei geöffnet wird.  Wenn zwar das Argument, aber kein Editorname angegeben wurde, wird das Dialogfeld **Öffnen mit** angezeigt.  
+ /e:`editorname`  
+ Dies ist optional. Der Name des Editors, in dem die Datei geöffnet wird. Wenn zwar das Argument, aber kein Editorname angegeben wurde, wird das Dialogfeld **Öffnen mit** angezeigt.  
   
- \/e: Die Argumentsyntax`editorname` der Editor verwendet, während sie im Dialogfeld Öffnen mit angezeigt, wobei der Name in Anführungszeichen eingeschlossen.  
+ Die Argumentsyntax /e:`editorname` verwendet die Editornamen wie im Dialogfeld „Öffnen mit“ angezeigt, wobei der Name in Anführungszeichen eingeschlossen ist.  
   
- Um eine Datei im Quellcode\-Editor zu öffnen, geben Sie für das Argument \/e:`editorname` beispielsweise Folgendes ein:  
+ Geben Sie zum Öffnen einer Datei im Quellcode-Editor für das Argument /e:`editorname` beispielsweise Folgendes ein:  
   
 ```  
 /e:"Source Code (text) Editor"  
 ```  
   
-## Beispiel  
- Durch dieses Beispiel wird die neue Webseite "test1.htm" erstellt und im Quellcode\-Editor geöffnet.  
+## <a name="example"></a>Beispiel  
+ Durch dieses Beispiel wird eine neue Webseite namens „test1.htm“ erstellt und im Quellcode-Editor geöffnet.  
   
 ```  
 >File.NewFile test1 /t:"General\HTML Page" /e:"Source Code (text) Editor"  
 ```  
   
-## Siehe auch  
- [Visual Studio\-Befehle](../../ide/reference/visual-studio-commands.md)   
+## <a name="see-also"></a>Siehe auch  
+ [Visual Studio-Befehle](../../ide/reference/visual-studio-commands.md)   
  [Befehlsfenster](../../ide/reference/command-window.md)   
  [Direktfenster](../../ide/reference/immediate-window.md)   
- [Such\/Befehlsfeld](../../ide/find-command-box.md)   
- [Visual Studio\-Befehlsaliase](../../ide/reference/visual-studio-command-aliases.md)
+ [Such-/Befehlsfeld](../../ide/find-command-box.md)   
+ [Visual Studio-Befehlsaliase](../../ide/reference/visual-studio-command-aliases.md)

@@ -1,39 +1,39 @@
 ---
-title: "MSBuild Inline Tasks | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "MSBuild, tasks"
+title: MSBuild-Inlineaufgaben | Microsoft-Dokumentation
+ms.custom: 
+ms.date: 09/21/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: MSBuild, tasks
 ms.assetid: e72e6506-4a11-4edf-ae8d-cfb5a3b9d8a0
-caps.latest.revision: 20
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 20
+caps.latest.revision: "20"
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.openlocfilehash: ef4376d8d7600b1072e2afa5df2cf474a8b3ab32
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# MSBuild Inline Tasks
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-MSBuild\-Aufgaben werden in der Regel durch Kompilieren einer Klasse erstellt, die die <xref:Microsoft.Build.Framework.ITask>\-Schnittstelle implementiert.  Weitere Informationen finden Sie unter [Tasks](../msbuild/msbuild-tasks.md).  
+# <a name="msbuild-inline-tasks"></a>MSBuild-Inlineaufgaben
+MSBuild-Aufgaben werden in der Regel durch Kompilieren einer Klasse erstellt, die die <xref:Microsoft.Build.Framework.ITask>-Schnittstelle implementiert. Weitere Informationen finden Sie unter [Tasks](../msbuild/msbuild-tasks.md) (MSBuild-Aufgaben).  
   
- Ab .NET Framework Version 4 können Sie Aufgaben inline in der Projektdatei erstellen.  Zum Hosten der Aufgabe müssen Sie keine separate Assembly erstellen.  Dies vereinfacht das Nachverfolgen von Quellcode und das Bereitstellen der Aufgabe.  Der Quellcode ist im Skript integriert.  
+ Ab .NET Framework Version 4 können Sie Aufgaben inline in der Projektdatei erstellen. Zum Hosten der Aufgabe müssen Sie keine separate Assembly erstellen. Dies vereinfacht das Nachverfolgen von Quellcode und das Bereitstellen der Aufgabe. Der Quellcode ist im Skript integriert.  
   
-## Struktur von Inlineaufgaben  
- Inlineaufgaben sind in [UsingTask](../msbuild/usingtask-element-msbuild.md)\-Elementen enthalten.  Die Inlineaufgabe und das `UsingTask`\-Element, in dem sie enthalten ist, befinden sich in der Regel in einer TARGETS\-Datei und werden bei Bedarf in andere Projektdateien importiert.  Im Folgenden finden Sie eine einfache Inlineaufgabe.  Beachten Sie, dass mit dieser Aufgabe keine Aktionen ausgeführt werden.  
+## <a name="the-structure-of-an-inline-task"></a>Struktur von Inlineaufgaben  
+ Inlineaufgaben sind in [UsingTask](../msbuild/usingtask-element-msbuild.md)-Elementen enthalten. Die Inlineaufgabe und das `UsingTask`-Element, in dem sie enthalten ist, befinden sich in der Regel in einer TARGETS-Datei und werden bei Bedarf in andere Projektdateien importiert. Im Folgenden finden Sie eine einfache Inlineaufgabe. Beachten Sie, dass mit dieser Aufgabe keine Aktionen ausgeführt werden.  
   
-```  
-<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
+```xml  
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
   <!-- This simple inline task does nothing. -->  
   <UsingTask  
     TaskName="DoNothing"  
     TaskFactory="CodeTaskFactory"  
-    AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.v12.0.dll" >  
+    AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.Core.dll" >  
     <ParameterGroup />  
     <Task>  
       <Reference Include="" />  
@@ -45,59 +45,59 @@ MSBuild\-Aufgaben werden in der Regel durch Kompilieren einer Klasse erstellt, d
 </Project>  
 ```  
   
- Das `UsingTask`\-Element im Beispiel besitzt drei Attribute, die die Aufgabe und die Inlineaufgabenfactory beschreiben, die diese kompiliert.  
+ Das `UsingTask`-Element im Beispiel besitzt drei Attribute, die die Aufgabe und die Inlineaufgabenfactory beschreiben, die diese kompiliert.  
   
--   Die Aufgabe wird nach dem `TaskName`\-Attribut benannt, in diesem Fall `DoNothing`.  
+-   Die Aufgabe wird nach dem `TaskName`-Attribut benannt, in diesem Fall `DoNothing`.  
   
--   Nach dem `TaskFactory`\-Attribut wird die Klasse benannt, die die Inlineaufgabenfactory implementiert.  
+-   Nach dem `TaskFactory`-Attribut wird die Klasse benannt, die die Inlineaufgabenfactory implementiert.  
   
--   Über das `AssemblyFile`\-Attribut wird der Speicherort der Inlineaufgabenfactory angegeben.  Sie können auch mit dem `AssemblyName`\-Attribut den vollqualifizierten Namen der Inlineaufgabenfactory\-Klasse angeben, die sich in der Regel im globalen Assemblycache \(Global Assembly Cache, GAC\) befindet.  
+-   Über das `AssemblyFile`-Attribut wird der Speicherort der Inlineaufgabenfactory angegeben. Sie können auch mit dem `AssemblyName`-Attribut den vollqualifizierten Namen der Inlineaufgabenfactory-Klasse angeben, die sich in der Regel im globalen Assemblycache (Global Assembly Cache, GAC) befindet.  
   
- Die verbleibenden Elemente der `DoNothing`\-Aufgabe sind leer und werden bereitgestellt, um die Reihenfolge und Struktur einer Inlineaufgabe zu veranschaulichen.  Ein robusteres Beispiel wird weiter unten in diesem Thema präsentiert.  
+ Die verbleibenden Elemente der `DoNothing`-Aufgabe sind leer und werden bereitgestellt, um die Reihenfolge und Struktur einer Inlineaufgabe zu veranschaulichen. Ein robusteres Beispiel wird weiter unten in diesem Thema präsentiert.  
   
--   Das `ParameterGroup`\-Element ist optional.  Bei Angabe werden die Parameter für die Aufgabe deklariert.  Weitere Informationen zu Eingabe\- und Ausgabeparametern finden Sie weiter unten in diesem Thema unter "Eingabe\- und Ausgabeparameter".  
+-   Das `ParameterGroup`-Element ist optional. Bei Angabe werden die Parameter für die Aufgabe deklariert. Weitere Informationen zu Eingabe- und Ausgabeparametern finden Sie weiter unten in diesem Thema unter "Eingabe- und Ausgabeparameter".  
   
--   Das `Task`\-Element beschreibt und enthält den Quellcode der Aufgabe.  
+-   Das `Task`-Element beschreibt und enthält den Quellcode der Aufgabe.  
   
--   Das `Reference`\-Element stellt Verweise auf die im Code verwendeten .NET\-Assemblys bereit.  Dies entspricht dem Hinzufügen eines Verweises auf ein Projekt in Visual Studio.  Das `Include`\-Attribut gibt den Pfad der Assembly an, auf die verwiesen wird.  
+-   Das `Reference`-Element stellt Verweise auf die im Code verwendeten .NET-Assemblys bereit. Dies entspricht dem Hinzufügen eines Verweises auf ein Projekt in Visual Studio. Das `Include`-Attribut gibt den Pfad der Assembly an, auf die verwiesen wird.  
   
--   Das `Using`\-Element führt die Namespaces auf, auf die Sie zugreifen möchten.  Dies ähnelt der `Using`\-Anweisung in Visual C\#.  Das `Namespace`\-Attribut gibt den zu einschließenden Namespace an.  
+-   Das `Using`-Element führt die Namespaces auf, auf die Sie zugreifen möchten. Dies ähnelt der `Using`-Anweisung in Visual C#. Das `Namespace`-Attribut gibt den zu einschließenden Namespace an.  
   
- Das `Reference`\-Element und das `Using`\-Element sind sprachunabhängig.  Inlineaufgaben können jeder unterstützten .NET CodeDom\-Sprache geschrieben werden, z. B. Visual Basic oder Visual C\#.  
-  
-> [!NOTE]
->  Elemente im `Task`\-Element sind für die Aufgabenfactory spezifisch, in diesem Fall die Codeaufgabenfactory.  
-  
-### Codeelement  
- Als letztes untergeordnetes Element wird im `Task`\-Element das `Code`\-Element angegeben.  Das `Code`\-Element enthält oder sucht den Code, den Sie zu einer Aufgabe kompilieren möchten.  Welche Elemente Sie im `Code`\-Element einfügen, ist davon abhängig, wie Sie die Aufgabe erstellen möchten.  
-  
- Das `Language`\-Attribut gibt die Sprache an, in die der Code geschrieben ist.  Zulässige Werte sind `cs` für C\#, `vb` für Visual Basic.  
-  
- Das `Type`\-Attribut gibt den Typ von Code im `Code`\-Element an.  
-  
--   Wenn der Wert von `Type` auf `Class` festgelegt ist, enthält das `Code`\-Element Code für eine Klasse, die von der <xref:Microsoft.Build.Framework.ITask>\-Schnittstelle abgeleitet wird.  
-  
--   Wenn der Wert von `Type` auf `Method` festgelegt ist, wird im Code eine Überschreibung der `Execute`\-Methode der <xref:Microsoft.Build.Framework.ITask>\-Schnittstelle definiert.  
-  
--   Wenn der Wert von `Type` auf `Fragment` festgelegt ist, wird im Code der Inhalt der `Execute`\-Methode, nicht jedoch die Signatur oder die `return`\-Anweisung definiert.  
-  
- Der Code selbst befindet sich in der Regel zwischen einem `<![CDATA[`\-Marker und einem `]]>`\-Marker.  Da sich der Code in einem CDATA\-Abschnitt befindet, müssen Sie reservierte Zeichen, z. B. "\<" oder "\>", nicht mit Escapezeichen versehen.  
-  
- Sie können den Speicherort einer Datei mit dem Code für die Aufgabe auch über das `Source`\-Attribut des `Code`\-Elements angeben.  Der Code in der Quelldatei muss den vom `Type`\-Attribut angegebenen Typ aufweisen.  Bei vorhandenem `Source`\-Attribut ist der Standardwert von `Type` `Class`.  Wenn `Source` nicht vorhanden ist, lautet der Standardwert `Fragment`.  
+ Das `Reference`-Element und das `Using`-Element sind sprachunabhängig. Inlineaufgaben können jeder unterstützten .NET CodeDom-Sprache geschrieben werden, z. B. Visual Basic oder Visual C#.  
   
 > [!NOTE]
->  Bei der Definition der Aufgabenklasse in der Quelldatei muss der Klassenname mit dem `TaskName`\-Attribut des entsprechenden [UsingTask](../msbuild/usingtask-element-msbuild.md)\-Elements übereinstimmen.  
+>  Elemente im `Task`-Element sind für die Aufgabenfactory spezifisch, in diesem Fall die Codeaufgabenfactory.  
   
-## Hello World  
- Im Folgenden finden Sie eine robustere Inlineaufgabe.  Mit der HelloWorld\-Aufgabe wird "Hello, world\!" auf dem Standardgerät für die Fehlerprotokollierung angezeigt, in der Regel in der Systemkonsole oder im **Ausgabefenster** von Visual Studio.  Das `Reference`\-Element im Beispiel wurde nur zur Veranschaulichung eingefügt.  
+### <a name="code-element"></a>Codeelement  
+ Als letztes untergeordnetes Element wird im `Task`-Element das `Code`-Element angegeben. Das `Code`-Element enthält oder sucht den Code, den Sie zu einer Aufgabe kompilieren möchten. Welche Elemente Sie im `Code`-Element einfügen, ist davon abhängig, wie Sie die Aufgabe erstellen möchten.  
   
-```  
-<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
+ Das `Language`-Attribut gibt die Sprache an, in die der Code geschrieben ist. Zulässige Werte sind `cs` für C# und `vb` für Visual Basic.  
+  
+ Das `Type`-Attribut gibt den Typ von Code im `Code`-Element an.  
+  
+-   Wenn der Wert von `Type` auf `Class` festgelegt ist, enthält das `Code`-Element Code für eine Klasse, die von der <xref:Microsoft.Build.Framework.ITask>-Schnittstelle abgeleitet wird.  
+  
+-   Wenn der Wert von `Type` auf `Method` festgelegt ist, wird im Code die `Execute`-Methode der <xref:Microsoft.Build.Framework.ITask>-Schnittstelle überschrieben.  
+  
+-   Wenn der Wert von `Type` auf `Fragment` festgelegt ist, wird im Code der Inhalt der `Execute`-Methode, nicht jedoch die Signatur oder die `return`-Anweisung definiert.  
+  
+ Der Code selbst befindet sich in der Regel zwischen einem `<![CDATA[`-Marker und einem `]]>`-Marker. Da sich der Code in einem CDATA-Abschnitt befindet, müssen Sie reservierte Zeichen, z.B. „\<“ oder „>“, nicht mit Escapezeichen versehen.  
+  
+ Sie können den Speicherort einer Datei mit dem Code für die Aufgabe auch über das `Source`-Attribut des `Code`-Elements angeben. Der Code in der Quelldatei muss den vom `Type`-Attribut angegebenen Typ aufweisen. Bei vorhandenem `Source`-Attribut ist der Standardwert von `Type` `Class`. Wenn `Source` nicht vorhanden ist, lautet der Standardwert `Fragment`.  
+  
+> [!NOTE]
+>  Bei der Definition der Aufgabenklasse in der Quelldatei muss der Klassenname mit dem `TaskName`-Attribut des entsprechenden [UsingTask](../msbuild/usingtask-element-msbuild.md)-Elements übereinstimmen.  
+  
+## <a name="hello-world"></a>Hello World  
+ Im Folgenden finden Sie eine robustere Inlineaufgabe. Die HalloWelt-Aufgabe gibt „Hallo, Welt!“ auf dem Standardgerät für die Fehlerprotokollierung aus. In der Regel handelt es sich dabei um die Systemkonsole oder das Fenster **Ausgabe** in Visual Studio. Das `Reference`-Element im Beispiel wurde nur zur Veranschaulichung eingefügt.  
+  
+```xml  
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
   <!-- This simple inline task displays "Hello, world!" -->  
   <UsingTask  
     TaskName="HelloWorld"  
     TaskFactory="CodeTaskFactory"  
-    AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.v4.0.dll" >  
+    AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.Core.dll" >  
     <ParameterGroup />  
     <Task>  
       <Reference Include="System.Xml.dll"/>  
@@ -116,8 +116,8 @@ Log.LogError("Hello, world!");
   
  Sie können die Aufgabe HelloWorld in der Datei HelloWorld.targets speichern und anschließend wie folgt in einem Projekt aufrufen.  
   
-```  
-<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
+```xml  
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
   <Import Project="HelloWorld.targets" />  
   <Target Name="Hello">  
     <HelloWorld />  
@@ -125,10 +125,10 @@ Log.LogError("Hello, world!");
 </Project>  
 ```  
   
-## Eingabe\- und Ausgabeparameter  
- Inlineaufgabenparameter bilden untergeordnete Elemente eines `ParameterGroup`\-Elements.  Jeder Parameter akzeptiert den Namen des Elements, das von ihm definiert wird.  Im folgenden Code wird der Parameter `Text` definiert.  
+## <a name="input-and-output-parameters"></a>Eingabe- und Ausgabeparameter  
+ Inlineaufgabenparameter bilden untergeordnete Elemente eines `ParameterGroup`-Elements. Jeder Parameter akzeptiert den Namen des Elements, das von ihm definiert wird. Im folgenden Code wird der Parameter `Text` definiert.  
   
-```  
+```xml  
 <ParameterGroup>  
     <Text />  
 </ParameterGroup>  
@@ -136,15 +136,15 @@ Log.LogError("Hello, world!");
   
  Parameter können ein oder mehrere Attribute besitzen:  
   
--   `Required` ist ein optionales Attribut, das standardmäßig den Wert `false` besitzt.  Beim Wert `true` ist der Parameter erforderlich und muss vor dem Aufrufen der Aufgabe einen Wert erhalten.  
+-   `Required` ist ein optionales Attribut, das standardmäßig den Wert `false` besitzt. Bei `true` ist der Parameter erforderlich und muss vor dem Aufrufen der Aufgabe einen Wert erhalten.  
   
--   `ParameterType` ist ein optionales Attribut, das standardmäßig den Wert `System.String` besitzt.  Es kann auf jeden vollqualifizierten Typ festgelegt werden, bei dem es sich um ein Element oder einen Wert handelt und mit System.Convert.ChangeType in und aus einer Zeichenfolge konvertiert werden kann. \(Anders gesagt kann jeder Typ an eine und von einer externen Aufgabe übergeben werden.\)  
+-   `ParameterType` ist ein optionales Attribut, das standardmäßig den Wert `System.String` besitzt. Es kann auf jeden vollqualifizierten Typ festgelegt werden, bei dem es sich um ein Element oder einen Wert handelt und mit System.Convert.ChangeType in und aus einer Zeichenfolge konvertiert werden kann. (Anders gesagt kann jeder Typ an eine und von einer externen Aufgabe übergeben werden.)  
   
--   `Output` ist ein optionales Attribut, das standardmäßig den Wert `false` besitzt.  Bei Wert `true` muss dem Parameter vor der Rückgabe von der Execute\-Methode ein Wert zugewiesen werden.  
+-   `Output` ist ein optionales Attribut, das standardmäßig den Wert `false` besitzt. Bei `true` muss dem Parameter ein Wert zugewiesen werden, bevor die Execute-Methode die Rückgabe ausführt.  
   
  Beispiel:  
   
-```  
+```xml  
 <ParameterGroup>  
     <Expression Required="true" />  
       <Files ParameterType="Microsoft.Build.Framework.ITaskItem[]" Required="true" />  
@@ -160,15 +160,15 @@ Log.LogError("Hello, world!");
   
 -   `Tally` ist ein Ausgabeparameter vom Typ System.Int32.  
   
- Wenn das `Code`\-Element das `Type`\-Attribut von `Fragment` oder `Method` aufweist, werden für jeden Parameter automatisch Eigenschaften erstellt.  Andernfalls müssen Eigenschaften explizit im Aufgabenquellcode deklariert werden und exakt mit den zugehörigen Parameterdefinitionen übereinstimmen.  
+ Wenn das `Code`-Element das `Type`-Attribut `Fragment` oder `Method` aufweist, werden für jeden Parameter automatisch Eigenschaften erstellt. Andernfalls müssen Eigenschaften explizit im Aufgabenquellcode deklariert werden und exakt mit den zugehörigen Parameterdefinitionen übereinstimmen.  
   
-## Beispiel  
+## <a name="example"></a>Beispiel  
  Mit der folgenden Inlineaufgabe wird jedes Vorkommen eines Tokens in der angegebenen Datei durch den angegebenen Wert ersetzt.  
   
-```  
-<Project xmlns='http://schemas.microsoft.com/developer/msbuild/2003' ToolsVersion="12.0">  
+```xml  
+<Project xmlns='http://schemas.microsoft.com/developer/msbuild/2003' ToolsVersion="15.0">  
   
-  <UsingTask TaskName="TokenReplace" TaskFactory="CodeTaskFactory" AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.v12.0.dll">  
+  <UsingTask TaskName="TokenReplace" TaskFactory="CodeTaskFactory" AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.Core.dll">  
     <ParameterGroup>  
       <Path ParameterType="System.String" Required="true" />  
       <Token ParameterType="System.String" Required="true" />  
@@ -190,6 +190,6 @@ File.WriteAllText(Path, content);
 </Project>  
 ```  
   
-## Siehe auch  
- [Tasks](../msbuild/msbuild-tasks.md)   
- [Walkthrough: Creating an Inline Task](../msbuild/walkthrough-creating-an-inline-task.md)
+## <a name="see-also"></a>Siehe auch  
+ [Tasks (Aufgaben)](../msbuild/msbuild-tasks.md)   
+ [Exemplarische Vorgehensweise: Erstellen einer Inlineaufgabe](../msbuild/walkthrough-creating-an-inline-task.md)

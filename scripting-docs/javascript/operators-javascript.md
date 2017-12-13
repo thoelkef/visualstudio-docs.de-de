@@ -1,99 +1,101 @@
 ---
-title: "Operatoren (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "JavaScript, Operatoren"
+title: Operatoren (JavaScript) | Microsoft-Dokumentation
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords: JavaScript, operators
 ms.assetid: b8602b69-aba9-46e8-86e1-cb533ad41410
-caps.latest.revision: 13
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: c9d0a098418399dba19b77a12c057a3fba334e31
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# Operatoren (JavaScript)
-[!INCLUDE[javascript](../javascript/includes/javascript-md.md)] verfügt über eine umfassende Auswahl von arithmetischen Operatoren. Neben einigen nicht kategorisierbaren Operatoren sind dies u. a. arithmetische, logische, bitweise und Zuweisungsoperatoren.  Weitere Erläuterungen und Beispiele finden Sie in den Themen zu bestimmten Operatoren.  
+# <a name="operators-javascript"></a>Operatoren (JavaScript)
+[!INCLUDE[javascript](../javascript/includes/javascript-md.md)] verfügt über ein breites Spektrum an Operatoren. Dazu gehören arithmetische, logische und bitweise Operatoren, der Zuweisungsoperator sowie weitere Operatoren. Erklärungen und Beispiele finden Sie in den jeweiligen Themen zu bestimmen Operatoren.  
   
-## Arithmetische Operatoren  
-  
-|Beschreibung|Symbol|  
-|------------------|------------|  
-|[Unäre Negation](../javascript/reference/subtraction-operator-decrement-javascript.md)|\-|  
-|[Increment](../javascript/reference/increment-and-decrement-operators-javascript.md)|\+\+|  
-|[Decrement](../javascript/reference/increment-and-decrement-operators-javascript.md)|\-\-|  
-|[Multiplikation](../javascript/reference/multiplication-operator-decrement-javascript.md)|\*|  
-|[Division](../javascript/reference/division-operator-decrement-javascript.md)|\/|  
-|[Modulo](../javascript/reference/modulus-operator-decrementjavascript.md)|%|  
-|[Addition](../javascript/reference/addition-operator-decrement-javascript.md)|\+|  
-|[Subtraktion](../javascript/reference/subtraction-operator-decrement-javascript.md)|\-|  
-  
-## Logische Operatoren  
+## <a name="computational-operators"></a>Rechenoperatoren  
   
 |Beschreibung|Symbol|  
-|------------------|------------|  
-|[Logisches NOT](../javascript/reference/logical-not-operator-decrement-exclpt-javascript.md)|\!|  
+|-----------------|------------|  
+|[Unäre Negation](../javascript/reference/subtraction-operator-decrement-javascript.md)|-|  
+|[Inkrement](../javascript/reference/increment-and-decrement-operators-javascript.md)|++|  
+|[Dekrement](../javascript/reference/increment-and-decrement-operators-javascript.md)|--|  
+|[Multiplikation](../javascript/reference/multiplication-operator-decrement-javascript.md)|*|  
+|[Division](../javascript/reference/division-operator-decrement-javascript.md)|/|  
+|[Arithmetischer Modulo](../javascript/reference/modulus-operator-decrementjavascript.md)|%|  
+|[Addition](../javascript/reference/addition-operator-decrement-javascript.md)|+|  
+|[Subtraktion](../javascript/reference/subtraction-operator-decrement-javascript.md)|-|  
+  
+## <a name="logical-operators"></a>Logische Operatoren  
+  
+|Beschreibung|Symbol|  
+|-----------------|------------|  
+|[logisches NOT](../javascript/reference/logical-not-operator-decrement-exclpt-javascript.md)|!|  
 |[Kleiner als](../javascript/reference/comparison-operators-javascript.md)|\<|  
-|[Größer als](../javascript/reference/comparison-operators-javascript.md)|\>|  
-|[Kleiner oder gleich](../javascript/reference/comparison-operators-javascript.md)|\<\=|  
-|[Größer oder gleich](../javascript/reference/comparison-operators-javascript.md)|\>\=|  
-|[Gleichheit](../javascript/reference/comparison-operators-javascript.md)|\=\=|  
-|[Ungleichheit](../javascript/reference/comparison-operators-javascript.md)|\!\=|  
+|[Größer als](../javascript/reference/comparison-operators-javascript.md)|>|  
+|[Kleiner gleich](../javascript/reference/comparison-operators-javascript.md)|\<=|  
+|[Größer gleich](../javascript/reference/comparison-operators-javascript.md)|>=|  
+|[Gleichheit](../javascript/reference/comparison-operators-javascript.md)|==|  
+|[Ungleichheit](../javascript/reference/comparison-operators-javascript.md)|!=|  
 |[Logisches AND](../javascript/reference/logical-and-operator-decrement-javascript.md)|&&|  
-|[Logisches OR](../javascript/reference/logical-or-operator-decrement-javascript.md)|&#124;&#124;|  
-|[Bedingt \(ternär\)](../javascript/reference/conditional-ternary-operator-decrement-javascript.md)|?:|  
+|[Logisches OR](../javascript/reference/logical-or-operator-decrement-javascript.md)||||  
+|[Bedingt (ternär)](../javascript/reference/conditional-ternary-operator-decrement-javascript.md)|?:|  
 |[Komma](../javascript/reference/comma-operator-decrement-javascript.md)|,|  
-|[Strikte Gleichheit](../javascript/reference/comparison-operators-javascript.md)|\=\=\=|  
-|[Strikte Ungleichheit](../javascript/reference/comparison-operators-javascript.md)|\!\=\=|  
+|[Strikte Gleichheit](../javascript/reference/comparison-operators-javascript.md)|===|  
+|[Strikte Ungleichheit](../javascript/reference/comparison-operators-javascript.md)|!==|  
   
-## Bitweise Operatoren  
+## <a name="bitwise-operators"></a>Bitweise Operatoren  
   
 |Beschreibung|Symbol|  
-|------------------|------------|  
+|-----------------|------------|  
 |[Bitweises NOT](../javascript/reference/bitwise-not-operator-decrement-tilde-javascript.md)|~|  
-|[Bitweises Linksschieben](../javascript/reference/bitwise-left-shift-operator-decrement-javascript.md)|\<\<|  
-|[Bitweises Rechtsschieben](../javascript/reference/bitwise-right-shift-operator-decrement-javascript.md)|\>\>|  
-|[Rechtsschieben ohne Vorzeichen](../javascript/reference/unsigned-right-shift-operator-decrement-javascript.md)|\>\>\>|  
+|[Bitweise Linksverschiebung](../javascript/reference/bitwise-left-shift-operator-decrement-javascript.md)|<\<|  
+|[Bitweise Rechtsverschiebung](../javascript/reference/bitwise-right-shift-operator-decrement-javascript.md)|>>|  
+|[Vorzeichenlose Rechtsverschiebung](../javascript/reference/unsigned-right-shift-operator-decrement-javascript.md)|>>>|  
 |[Bitweises AND](../javascript/reference/bitwise-and-operator-decrement-javascript.md)|&|  
 |[Bitweises XOR](../javascript/reference/bitwise-xor-operator-decrement-hat-javascript.md)|^|  
 |[Bitweises OR](../javascript/reference/bitwise-or-operator-decrement-javascript.md)|&#124;|  
   
-## Zuweisungsoperatoren  
+## <a name="assignment-operators"></a>Zuweisungsoperatoren  
   
 |Beschreibung|Symbol|  
-|------------------|------------|  
-|[Zuweisung](../javascript/reference/assignment-operator-decrement-equal-javascript.md)|\=|  
-|[Verbundzuweisung](../javascript/reference/compound-assignment-operators-javascript.md)|*OP*\= \(wie \+\= und &\=\)|  
+|-----------------|------------|  
+|[Zuweisung](../javascript/reference/assignment-operator-decrement-equal-javascript.md)|=|  
+|[Verbundzuweisung](../javascript/reference/compound-assignment-operators-javascript.md)|*OP*= (wie += und &=)|  
   
-## Verschiedene Operatoren  
+## <a name="miscellaneous-operators"></a>Verschiedene Operatoren  
   
 |Beschreibung|Symbol|  
-|------------------|------------|  
-|[delete](../javascript/reference/delete-operator-decrementjavascript.md)|delete|  
+|-----------------|------------|  
+|[delete](../javascript/reference/delete-operator-decrementjavascript.md)|Löschen|  
 |[typeof](../javascript/reference/typeof-operator-decrementjavascript.md)|typeof|  
 |[void](../javascript/reference/void-operator-decrementjavascript.md)|void|  
 |[instanceof](../javascript/reference/instanceof-operator-decrementjavascript.md)|instanceof|  
-|[new](../javascript/reference/new-operator-decrementjavascript.md)|new|  
-|[in](../javascript/reference/in-operator-decrementjavascript.md)|in|  
+|[new](../javascript/reference/new-operator-decrementjavascript.md)|neu|  
+|[in](../javascript/reference/in-operator-decrementjavascript.md)|Zoll|  
   
-## Gleichheit und strikte Gleichheit \(Identität\)  
- Der Unterschied zwischen \=\= \(Gleich\) und \(\=\=\= strikte Gleichheit\) ist, dass der Gleichheitsoperator Werte verschiedener Typen umwandelt, bevor er auf Gleichheit überprüft.  Beispielsweise ergibt der Vergleich der Zeichenfolge "1" mit der Zahl 1 das Ergebnis "true".  Der strikte Gleichheitsoperator hingegen wandelt Werte unterschiedlichen Typs nicht um, und daher ergibt der Vergleich der Zeichenfolge "1" mit der Zahl 1 hier nicht "true".  
+## <a name="equality-and-strict-equality"></a>Gleichheit und strikte Gleichheit  
+ Der Unterschied zwischen == (Gleichheit) und === (strikte Gleichheit) besteht darin, dass der Gleichheitsoperator Werte unterschiedlicher Typen umwandelt, bevor die Gleichheit überprüft wird. Wenn z.B. die Zeichenfolge "1" mit der Zahl 1 verglichen wird, dann wird TRUE zurückgegeben. Der strikte Gleichheitsoperator wandelt keine Werte in unterschiedliche Typen um, also ist die Zeichenfolge "1" nicht mit der Zahl 1 gleichwertig.  
   
- Primitive Zeichenfolgen, Zahlen und boolesche Werte werden auf der Grundlage ihres Werts verglichen.  Wenn sie denselben Wert haben, sind sie gleich.  Objekte \(einschließlich der Objekte vom Typ `Array`, `Function`, `String`, **Number**, `Boolean`, **Error**, `Date` und `RegExp`\) werden anhand eines Verweises verglichen.  Selbst wenn zwei Objektvariablen dieser Typen den gleichen Wert haben, sind sie nur dann gleich, wenn sie auf exakt dasselbe Objekt verweisen.  
+ Primitive Zeichenfolgen, Zahlen und boolesche Werte werden nach Wert verglichen. Wenn sie über denselben Wert verfügen, sind sie gleich. Objekte (einschließlich der Objekte`Array`, `Function`, `String`, **Number**, `Boolean`, **Error**, `Date` und `RegExp`) werden nach Verweis verglichen. Auch wenn zwei Variablen dieser Typen über denselben Wert verfügen, sind sie nur gleich, wenn sie auf dasselbe Objekt verweisen.  
   
- Beispiel:  
+ Zum Beispiel:  
   
-```javascript  
+```JavaScript  
 // Two strings with the same value.  
 var string1 = "Hello";  
 var string2 = "Hello";  

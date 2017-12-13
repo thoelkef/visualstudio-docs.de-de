@@ -1,47 +1,48 @@
 ---
-title: "WaitStart | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: WaitStart | Microsoft-Dokumentation
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 6c737177-2dfb-4150-963e-a49ac9aaa591
-caps.latest.revision: 5
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 5
+caps.latest.revision: "5"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 7ee49ea6e9aecbd3f2a71a20f512e6d482a85d53
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# WaitStart
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Die WaitStart\-Option bewirkt, dass der Start\-Unterbefehl "VSPerfCmd.exe" nur zurückgegeben wird, wenn der Profiler initialisiert wurde oder wenn die angegebene Anzahl von Sekunden verstrichen ist.  Standardmäßig wird der Startbefehl sofort beendet.  Wenn der Startunterbefehl zurückgegeben wird, ohne den Profiler zu initialisieren, wird ein Fehler zurückgegeben.  Wenn die Anzahl der Sekunden nicht angegeben wird, wartet der Startbefehl unbegrenzt.  
+# <a name="waitstart"></a>WaitStart
+Die Option „WaitStart“ hat zur Folge, dass der Unterbefehl „VSPerfCmd.exe“ für den Start nur einen Wert zurückgibt, wenn der Profiler initialisiert wurde oder die angegebene Anzahl von Sekunden überschritten wurde. Standardmäßig gibt der Startbefehl sofort einen Wert zurück. Wenn der Unterbefehl für den Start einen Wert zurückgibt, ohne einen Profiler zu initialisieren, wird ein Fehler zurückgegeben. Wenn die Zeit nicht in Sekunden vorgegeben ist, wird der Startbefehl auf unbestimmte Zeit ausgesetzt.  
   
- Die WaitStart\-Option ist in Batchdateien nützlich, um sicherzustellen, dass der Profiler initialisiert wurde.  
+ Die Option „WaitStart“ ist nützlich für Batchdateien, um sicherzustellen, dass der Profiler initialisiert wurde.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 VSPerfCmd.exe /Start:Method /Output:FileName[Options] /StartWait[:Seconds]  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `Seconds`  
- Die Anzahl der Sekunden, die vor der Rückkehr vom Start\-Unterbefehl gewartet wird.  
+ Die Zeit in Sekunden, die gewartet werden, bis der Unterbefehl für den Start einen Wert zurückgibt.  
   
-## Erforderliche Optionen  
- Die WaitStart\-Option kann nur mit dem Start\-Unterbefehl verwendet werden.  
+## <a name="required-options"></a>Erforderliche Optionen  
+ Die Option „WaitStart“ kann nur mit dem Unterbefehl für den Start verwendet werden.  
   
- **Output:** `filename`  
+ **Ausgabe:**`filename`  
  Gibt den Ausgabedateinamen an.  
   
-## Hinweise  
+## <a name="remarks"></a>Hinweise  
   
-## Beispiel  
- In diesem Batchdateibeispiel wartet der Startbefehl 5 Sekunden lang auf die Initialisierung durch den Profiler.  
+## <a name="example"></a>Beispiel  
+ In diesem Beispiel für eine Batchdatei wartet der Startbefehl fünf Sekunden darauf, dass der Profiler initialisiert wird.  
   
 ```  
 VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp /WaitStart:5  

@@ -1,52 +1,53 @@
 ---
-title: "Exemplarische Vorgehensweise: &#39;LinqToXmlDataBinding&#39;-Beispiel | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: 'Exemplarische Vorgehensweise: LinqToXmlDataBinding-Beispiel | Microsoft-Dokumentation'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-designers
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: aedf42e8-896c-48fa-88df-7f7c9536aa69
-caps.latest.revision: 2
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 2
+caps.latest.revision: "2"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 08a27820e1fc3f2677bc64dac85a657a6d1db1b0
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Exemplarische Vorgehensweise: &#39;LinqToXmlDataBinding&#39;-Beispiel
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-In dieser exemplarischen Vorgehensweise wird das **LinqToXmlDataBinding**\-Beispiel beschrieben, und es werden einige wichtige Aspekte seiner beiden primären Quelldateien **L2DBForm.xaml** und **L2DBForm.xaml.cs** erläutert.  
+# <a name="walkthrough-linqtoxmldatabinding-example"></a>Exemplarische Vorgehensweise: LinqToXmlDataBinding-Beispiel
+In dieser exemplarischen Vorgehensweise wird das <legacyBold>LinqToXmlDataBinding</legacyBold>-Beispiel beschrieben, und es werden einige wichtige Aspekte seiner beiden primären Quelldateien <legacyBold>L2DBForm.xaml</legacyBold> und <legacyBold>L2DBForm.xaml.cs</legacyBold> erläutert.  
   
-## Vorbereitungsmaßnahmen  
- Bevor Sie sich diese exemplarische Vorgehensweise durchlesen, empfehlen wir dringend, das unter [Vorgehensweise: Erstellen und Ausführen des 'LinqToXmlDataBinding'\-Beispiels](../designers/how-to-build-and-run-the-linqtoxmldatabinding-example.md) beschriebene **LinqToXmlDataBinding**\-Programm zu kompilieren und auszuführen.  
+## <a name="prerequisites"></a>Erforderliche Komponenten  
+ Bevor Sie sich diese exemplarische Vorgehensweise durchlesen, wird dringend empfohlen, das LinqToXmlDataBinding-Programm, wie in [Vorgehensweise: Erstellen und Ausführen des LinqToXmlDataBinding-Beispiels](../designers/how-to-build-and-run-the-linqtoxmldatabinding-example.md) beschrieben, zu erstellen und auszuführen.  
   
-## Hinweise  
- Das **LinqToXmlDataBinding**\-Programm ist eine WPF\-Anwendung \(Windows Presentation Foundation\), die aus C\#\- und XAML\-Quelldateien besteht.Es enthält ein eingebettetes XML\-Dokument, das eine Liste von Büchern definiert. Das Programm versetzt den Benutzer in die Lage, diese Einträge anzuzeigen, hinzuzufügen, zu löschen und zu bearbeiten.Das Programm setzt sich aus den folgenden beiden primären Quelldateien zusammen:  
+## <a name="remarks"></a>Hinweise  
+ Das <legacyBold>LinqToXmlDataBinding</legacyBold>-Programm ist eine WPF-Anwendung (Windows Presentation Foundation), die aus C#- und XAML-Quelldateien besteht. Es enthält ein eingebettetes XML-Dokument, das eine Liste von Büchern definiert. Das Programm versetzt den Benutzer in die Lage, diese Einträge anzuzeigen, hinzuzufügen, zu löschen und zu bearbeiten. Das Programm setzt sich aus den folgenden beiden primären Quelldateien zusammen:  
   
--   **L2DBForm.xaml** enthält den XAML\-Deklarationscode für die Benutzeroberfläche des Hauptfensters.Außerdem enthält die Datei den Abschnitt **Window.Resources**, in dem ein Datenanbieter und ein eingebettetes XML\-Dokument für die Bücherlisten definiert sind.  
+-   <legacyBold>L2DBForm.xaml</legacyBold> enthält den XAML-Deklarationscode für die Benutzeroberfläche des Hauptfensters. Außerdem enthält die Datei den Abschnitt <legacyBold>Window.Resources</legacyBold>, in dem ein Datenanbieter und ein eingebettetes XML-Dokument für die Bücherlisten definiert sind.  
   
--   **L2DBForm.xaml.cs** enthält die Initialisierungs\- und Ereignishandlingmethoden, die der Benutzeroberfläche zugeordnet sind.  
+-   <legacyBold>L2DBForm.xaml.cs</legacyBold> enthält die Initialisierungs- und Ereignishandlingmethoden, die der Benutzeroberfläche zugeordnet sind.  
   
  Das Hauptfenster ist in die folgenden vier vertikalen Benutzeroberflächenabschnitte unterteilt:  
   
--   **XML**: Zeigt die unformatierte XML\-Quelle der eingebetteten Bücherliste an.  
+-   **XML**: Zeigt die unformatierte XML-Quelle der eingebetteten Bücherliste an.  
   
--   **Book List**: Zeigt die Bucheinträge als Standardtext an und versetzt den Benutzer in die Lage, einzelne Einträge auszuwählen und zu löschen.  
+-   **Book List** (Bücherliste): Zeigt die Bucheinträge als Standardtext an, und versetzt den Benutzer in die Lage, einzelne Einträge auszuwählen und zu löschen.  
   
--   **Edit Selected Book**: Ermöglicht es dem Benutzer, die dem aktuell ausgewählten Bucheintrag zugeordneten Werte zu bearbeiten.  
+-   **Edit Selected Book** (Ausgewähltes Buch bearbeiten): Ermöglicht es dem Benutzer, die dem aktuell ausgewählten Bucheintrag zugeordneten Werte zu bearbeiten.  
   
--   **Add New Book**: Ermöglicht das Erstellen eines neuen Bucheintrags anhand der vom Benutzer eingegebenen Werte.  
+-   **Add New Book** (Neues Buch hinzufügen): Ermöglicht das Erstellen eines neuen Bucheintrags anhand der vom Benutzer eingegebenen Werte.  
   
-## Inhalt dieses Abschnitts  
+## <a name="in-this-section"></a>In diesem Abschnitt  
   
 |Thema|Beschreibung|  
-|-----------|------------------|  
-|[L2DBForm.xaml\-Quellcode](../designers/l2dbform-xaml-source-code.md)|Enthält den Inhalt und die Beschreibung des XAML\-Codes in der Datei **L2DBForm.xaml**.|  
-|[Quellcode in der Datei 'L2DBForm.xaml.cs'](../designers/l2dbform-xaml-cs-source-code.md)|Enthält den Inhalt und die Beschreibung des C\#\-Quellcodes in der Datei **L2DBForm.xaml.cs**.|  
+|-----------|-----------------|  
+|[L2DBForm.xaml-Quellcode](../designers/l2dbform-xaml-source-code.md)|Enthält den Inhalt und die Beschreibung des XAML-Codes in der Datei <legacyBold>L2DBForm.xaml</legacyBold>.|  
+|[L2DBForm.xaml.cs Source Code](../designers/l2dbform-xaml-cs-source-code.md)|Enthält den Inhalt und die Beschreibung des C#-Quellcodes in der Datei <legacyBold>L2DBForm.xaml.cs</legacyBold>.|  
   
-## Siehe auch  
- [Beispiel für die WPF\-Datenbindung mit LINQ to XML](../designers/wpf-data-binding-using-linq-to-xml-example.md)   
- [Vorgehensweise: Erstellen und Ausführen des 'LinqToXmlDataBinding'\-Beispiels](../designers/how-to-build-and-run-the-linqtoxmldatabinding-example.md)
+## <a name="see-also"></a>Siehe auch  
+ [Beispiel für die WPF-Datenbindung mit LINQ to XML](../designers/wpf-data-binding-using-linq-to-xml-example.md)   
+ [Gewusst wie: Erstellen und Ausführen des LinqToXmlDataBinding-Beispiels](../designers/how-to-build-and-run-the-linqtoxmldatabinding-example.md)

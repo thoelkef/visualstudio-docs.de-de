@@ -1,57 +1,57 @@
 ---
-title: "Befehl &quot;Projekt &#246;ffnen&quot; | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "file.openproject"
-helpviewer_keywords: 
-  - "File.OpenProject-Befehl"
-  - "op-Befehl"
-  - "Projekt öffnen (Befehl)"
+title: "Befehl „Projekt öffnen“ | Microsoft-Dokumentation"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: file.openproject
+helpviewer_keywords:
+- op command
+- File.OpenProject command
+- Open Project command
 ms.assetid: baa85f86-041b-49f4-9ced-0c397dc180e1
-caps.latest.revision: 11
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: a3b0916874fbd4c16dfe2232a6a5865743d0c388
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Befehl &quot;Projekt &#246;ffnen&quot;
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
+# <a name="open-project-command"></a>Befehl "Projekt öffnen"
 Öffnet ein vorhandenes Projekt.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 File.OpenProject filename  
 ```  
   
-## Argumente  
+## <a name="arguments"></a>Argumente  
  `filename`  
- Erforderlich.  Der vollständige Pfad und Dateiname des zu öffnenden Projekts.  
+ Erforderlich. Der vollständige Pfad und Dateiname der Projektdatei, die Sie öffnen wollen.  
   
- Die Syntax des `filename`\-Arguments erfordert, dass Pfade, die Leerzeichen enthalten, in Anführungszeichen eingeschlossen werden.  
+ Die Syntax für das Argument `filename` erfordert, dass Pfade, die Leerzeichen enthalten, in Anführungszeichen gesetzt werden.  
   
-## Hinweise  
- Die automatische Vervollständigung versucht, den richtigen Pfad und Dateinamen während der Eingabe zu ermitteln.  
+## <a name="remarks"></a>Hinweise  
+ Bei der automatischen Vervollständigung wird während der Eingabe versucht, den richtigen Pfad und Dateinamen zu finden.  
   
- Dieser Befehl ist nicht verfügbar, während er debuggt.  
+ Dieser Befehl ist während des Debuggens nicht verfügbar.  
   
-## Beispiel  
- In diesem Beispiel wird das [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]\-Projekt "Test1" geöffnet.  
+## <a name="example"></a>Beispiel  
+ In diesem Beispiel wird das [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]-Projekt, Test1, geöffnet.  
   
 ```  
 >File.OpenProject "C:\My Projects\Test1\Test1.vbproj"  
 ```  
   
-## Siehe auch  
- [Visual Studio\-Befehle](../../ide/reference/visual-studio-commands.md)   
+## <a name="see-also"></a>Siehe auch  
+ [Visual Studio-Befehle](../../ide/reference/visual-studio-commands.md)   
  [Befehlsfenster](../../ide/reference/command-window.md)   
- [Such\/Befehlsfeld](../../ide/find-command-box.md)   
- [Visual Studio\-Befehlsaliase](../../ide/reference/visual-studio-command-aliases.md)
+ [Such-/Befehlsfeld](../../ide/find-command-box.md)   
+ [Visual Studio-Befehlsaliase](../../ide/reference/visual-studio-command-aliases.md)

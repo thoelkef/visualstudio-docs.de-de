@@ -1,57 +1,56 @@
 ---
-title: "Such/Befehlsfeld | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.findcommandbox"
-helpviewer_keywords: 
-  - "Suchen (Feld)"
+title: "Feld „Suchen/Befehl“ | Microsoft-Dokumentation"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vs.findcommandbox
+helpviewer_keywords: Find/Command box
 ms.assetid: c81736dd-7a26-4e11-95c8-c2a2e56d7a41
-caps.latest.revision: 17
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 17
+caps.latest.revision: "17"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: c8bf4de0ff0dfb240f668ba3f6915268ee89e594
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Such/Befehlsfeld
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Sie können nach Text suchen und Visual Studio\-Befehle vom **Such\-\/Befehlsfeld** ausführen.  Das Feld **Suchen\/Befehl** ist als Symbolleisten\-Steuerelement weiterhin verfügbar, jedoch nicht mehr standardmäßig sichtbar.  Sie können das Feld **Suchen\/Befehl** anzeigen, indem Sie auf der Symbolleiste **Standard** die Option **Schaltflächen hinzufügen oder entfernen** und dann **Suchen** auswählen.  
+# <a name="findcommand-box"></a>Suchen (Feld)
+Über das Feld **Find/Command** (Suchen/Befehl) können Sie nach Text suchen und Visual Studio-Befehle ausführen. Das Feld **Find/Command** (Suchen/Befehl) ist weiterhin als Steuerelement für die Symbolleiste verfügbar, wird standardmäßig aber nicht mehr angezeigt. Sie können das Feld **Find/Command** (Suchen/Befehl) einblenden, indem Sie in der Symbolleiste**Standard** auf **Schaltflächen hinzufügen oder entfernen** klicken und anschließend auf **Suchen** klicken.  
   
- Um einen [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]\-Befehl auszuführen, leiten Sie ihn mit einem Größer\-als\-Zeichen \(\>\) ein.  
+ Um einen [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Befehl auszuführen, leiten Sie ihn mit einem Größer-als-Zeichen (>) ein.  
   
- Das **Such\-\/Befehlsfeld** behält die letzten 20 Einträge bei, und zeigt diese in einer Dropdownliste an.  Mithilfe der Pfeiltasten kann in der Liste navigiert werden.  
+ Das Feld **Suchen/Befehl** speichert die letzten 20 Eingaben und zeigt sie in einer Dropdownliste an. Mithilfe der Pfeiltasten kann in der Liste navigiert werden.  
   
- ![Such&#47;Befehlsfeld](~/ide/media/findcommandbox.png "FindCommandBox")  
-Such\-\/Befehlsfeld  
+ ![Feld „Suchen/Befehl“](../ide/media/findcommandbox.png "FindCommandFeld")  
+Suchen (Feld)  
   
-## Nach Text suchen  
- Wenn Sie Text im **Such\-\/Befehlsfeld** angeben und dann die EINGABETASTE drücken, durchsucht Visual Studio standardmäßig das aktuelle Dokument oder das Toolfenster unter Anwendung der Optionen, die im Dialogfeld **In Dateien suchen** festgelegt wurden.  Weitere Informationen finden Sie unter [Suchen und Ersetzen von Text](../ide/finding-and-replacing-text.md).  
+## <a name="searching-for-text"></a>Nach Text suchen  
+ Wenn Sie Text im Feld **Suchen/Befehl** angeben und dann die EINGABETASTE drücken, durchsucht Visual Studio standardmäßig das aktuelle Dokument oder Toolfenster mithilfe der Optionen, die im Dialogfeld **In Dateien suchen** festgelegt wurden. Weitere Informationen finden Sie unter [Suchen und Ersetzen von Text](../ide/finding-and-replacing-text.md).  
   
-## Eingeben von Befehlen  
- Um das **Such\-\/Befehlsfeld** zum Ausgeben eines einzelnen [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]\-Befehls oder \-Alias anstatt zur Textsuche zu verwenden, geben Sie den gewünschten [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]\-Befehl mit einem vorangestellten Größer\-als\-Zeichen \(\>\) ein.  Beispiel:  
+## <a name="entering-commands"></a>Eingeben von Befehlen  
+ Um über das Feld **Suchen/Befehl** einen einzelnen [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Befehl oder Alias auszugeben, anstatt nach Text zu suchen, geben Sie den gewünschten [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Befehl mit einem vorangestellten Größer-als-Zeichen (>) ein. Zum Beispiel:  
   
 ```  
 >File.NewFile c:\temp\MyFile /t:"General\Text File"  
 ```  
   
- Darüber hinaus können Sie auch das Befehlsfenster zum Eingeben und Ausführen von einzelnen oder mehreren Befehlen verwenden.  Einige Befehle oder Aliase können eigenständig eingegeben und ausgeführt werden, für andere erfordert die Syntax die Angabe von Argumenten.  Eine Liste mit Befehlen, die über Argumente verfügen, finden Sie unter [Visual Studio\-Befehle](../ide/reference/visual-studio-commands.md).  
+ Darüber hinaus können Sie auch das Befehlsfenster zum Eingeben und Ausführen von einzelnen oder mehreren Befehlen verwenden. Einige Befehle oder Aliase können eigenständig eingegeben und ausgeführt werden, für andere erfordert die Syntax die Angabe von Argumenten. Eine Liste mit Befehlen, die über Argumente verfügen, finden Sie unter [Visual Studio-Befehle](../ide/reference/visual-studio-commands.md).  
   
-## Escapezeichen  
- Ein Caretzeichen \(^\) in einer Befehlszeile bedeutet, dass das unmittelbar darauf folgende Zeichen literal und nicht als Steuerzeichen interpretiert wird.  Dies ermöglicht das Einbetten von geraden Anführungszeichen \("\), Leerzeichen, vorangestellten Schrägstrichen, Caretzeichen oder beliebigen anderen Literalzeichen in einen Parameter\- oder Schalterwert, mit Ausnahme von Schalternamen.  Beispiel:  
+## <a name="escape-characters"></a>Escapezeichen  
+ Ein Caretzeichen (^) in einer Befehlszeile bedeutet, dass das unmittelbar darauf folgende Zeichen literal und nicht als Steuerzeichen interpretiert wird. Dies ermöglicht das Einbetten von geraden Anführungszeichen ("), Leerzeichen, vorangestellten Schrägstrichen, Caretzeichen oder beliebigen anderen Literalzeichen in einen Parameter- oder Schalterwert, mit Ausnahme von Schalternamen. Beispiel:  
   
 ```  
 >Edit.Find ^^t /regex  
 ```  
   
- Die Funktionsweise des Caretzeichens ist unabhängig davon, ob es in Anführungszeichen eingeschlossen ist oder nicht.  Wenn ein Caretzeichen das letzte Zeichen in einer Zeile ist, wird es ignoriert.  
+ Die Funktionsweise des Caretzeichens ist unabhängig davon, ob es in Anführungszeichen eingeschlossen ist oder nicht. Wenn ein Caretzeichen das letzte Zeichen in einer Zeile ist, wird es ignoriert.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Befehlsfenster](../ide/reference/command-window.md)   
  [Suchen und Ersetzen von Text](../ide/finding-and-replacing-text.md)

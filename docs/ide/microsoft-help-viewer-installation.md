@@ -1,27 +1,55 @@
 ---
-title: "Installieren von Microsoft Help Viewer | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Help Viewer 2.0, Installieren"
-  - "Help Viewer installieren [Help Viewer 2.0]"
+title: Installieren der Visual Studio-Offlinehilfe| Microsoft-Dokumentation
+ms.custom: 
+ms.date: 11/01/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-help-viewer
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- installing the Help Viewer
+- Help Viewer, installing
 ms.assetid: 51e72eac-d5d7-45e6-8899-04935499d1a6
-caps.latest.revision: 14
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 14
+caps.latest.revision: "14"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: c3a7716f7f2f20504e854fe91afa0b315d856fef
+ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/07/2017
 ---
-# Installieren von Microsoft Help Viewer
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+# <a name="microsoft-help-viewer-installation"></a>Installieren von Microsoft Help Viewer
+Es gibt mehrere Produkte, die Hilfeinhalt in Microsoft Help Viewer anzeigen können. Dazu zählen auch Visual Studio und SQL Server.
 
-Verschiedene Produkte zeigen im Microsoft Help Viewer Hilfeinformationen an.  Die Installationsanweisungen richten sich danach, auf welchem Produkt der Help Viewer installiert ist.  
-  
-## Suche nach Setupinformationen  
- Spezifische Informationen zu Ihrem Produkt finden Sie in der Infodatei.
+Help Viewer ist eine optionale Installationskomponente von Visual Studio. Um diese Komponente über den Visual Studio-Installer zu installieren, führen Sie die folgenden Schritte durch:
+
+1. Öffnen Sie den **Visual Studio-Installer** über das Startmenü. Wenn Sie Visual Studio bereits geöffnet haben, klicken Sie auf **Extras** > **Tools und Features abrufen...**, um den Visual Studio-Installer zu öffnen.
+
+2. Klicken Sie auf die Registerkarte **Einzelne Komponenten** und anschließend unter **Codetools** auf **Help Viewer**.
+
+   ![Komponente Help Viewer im Visual Studio Installer](media/help_viewer_vs_installer.png)
+
+3. Klicken Sie auf die Schaltfläche **Bearbeiten**, um die Installation von Microsoft Help Viewer zu starten.
+
+Zudem können Sie Microsoft Help Viewer ganz leicht über das Feld **Schnellstart** installieren:
+
+1. Geben Sie **help viewer** in das Feld **Schnellstart** in der Titelleiste von Visual Studio ein.
+
+   ![Feld „Schnellstart“](media/help_viewer_quick_launch.png)
+
+2. Wählen Sie das Ergebnis **Help Viewer (Einzelne Komponente)** aus.
+
+3. Klicken Sie im angezeigten Dialogfeld auf die Schaltfläche **Installieren**.
+
+   ![Schaltfläche „Installieren“](media/help_viewer_install.png)
+
+|         |         |
+|---------|---------|
+|  ![Kamerasymbol für video](../install/media/video-icon.png "Video ansehen")  |  [Sehen Sie sich ein Video an](https://mva.microsoft.com/en-us/training-courses/getting-started-with-visual-studio-2017-17798?l=ZMfaVID6D_7411787171), in dem gezeigt wird, wie Sie mithilfe von Visual Studio-Installer Microsoft Help Viewer installieren. |
+
+## <a name="see-also"></a>Siehe auch
+[Microsoft Help Viewer](../ide/microsoft-help-viewer.md)  
+[Help Viewer und Offlineinhalt für SQL Server](/sql/sql-server/sql-server-help-installation)

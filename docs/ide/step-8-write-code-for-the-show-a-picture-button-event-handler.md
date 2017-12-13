@@ -4,35 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 07f4ec00-cda4-42f4-98bb-37edc7167de7
-caps.latest.revision: 24
-author: kempb
-ms.author: kempb
+caps.latest.revision: "24"
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 7e062ca977a85416d2e0bf0b7c2cef46b8f93cce
-ms.contentlocale: de-de
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: aab9138f4dc47395764607c3783df76b8708212b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>Schritt 8: Schreiben von Code für den Ereignishandler der Schaltfläche "Bild anzeigen"
 In diesem Schritt wird gezeigt, wie Code geschrieben wird, damit die Schaltfläche **Bild anzeigen** wie folgt funktioniert:  
@@ -43,7 +27,7 @@ In diesem Schritt wird gezeigt, wie Code geschrieben wird, damit die Schaltfläc
   
  Die IDE stellt ein leistungsstarkes Tool namens IntelliSense bereit, das Sie beim Schreiben von Code unterstützt. Wenn Sie Code eingeben, öffnet die IDE ein Feld mit Vervollständigungsvorschlägen für teilweise eingegebene Wörter. Die IDE versucht zu bestimmen, was Sie als Nächstes machen möchten, und springt automatisch zum zuletzt in der Liste auswählten Element. Sie können mithilfe der NACH-OBEN- oder NACH-UNTEN-TASTE in der Liste navigieren oder die Eingabe von Buchstaben fortsetzen, um die Optionen einzugrenzen. Wenn Sie die gewünschte Auswahl sehen, verwenden Sie die TAB-TASTE, um sie auszuwählen. Sie können die Vorschläge aber auch ignorieren, wenn sie nicht benötigt werden.  
   
- ![Link zum Video](~/data-tools/media/playvideo.gif "Video wiedergeben")Eine Videoversion dieses Themas finden Sie im Video 4 zum [Tutorial 1: Erstellen eines Bildanzeigeprogramms in Visual Basic](http://go.microsoft.com/fwlink/?LinkId=205215) oder im Video 4 zum [Tutorial 1: Erstellen eines Bildanzeigeprogramms in C# – Video 4](http://go.microsoft.com/fwlink/?LinkId=205203). Diese Videos verwenden eine frühere Version von Visual Studio, sodass Menübefehle und andere Benutzeroberflächenelemente geringfügig abweichen können. Allerdings funktionieren die Konzepte und Prozeduren in der aktuellen Version von Visual Studio auf ähnliche Weise.  
+ ![Link zum Video](../data-tools/media/playvideo.gif "Video wiedergeben")Eine Videoversion dieses Themas finden Sie im Video 4 zum [Tutorial 1: Erstellen eines Bildanzeigeprogramms in Visual Basic](http://go.microsoft.com/fwlink/?LinkId=205215) oder im Video 4 zum [Tutorial 1: Erstellen eines Bildanzeigeprogramms in C# – Video 4](http://go.microsoft.com/fwlink/?LinkId=205203). Diese Videos verwenden eine frühere Version von Visual Studio, sodass Menübefehle und andere Benutzeroberflächenelemente geringfügig abweichen können. Allerdings funktionieren die Konzepte und Prozeduren in der aktuellen Version von Visual Studio auf ähnliche Weise.  
   
 ### <a name="to-write-code-for-the-show-a-picture-button-event-handler"></a>So schreiben Sie Code für den Ereignishandler der Schaltfläche "Bild anzeigen"  
   
@@ -51,12 +35,12 @@ In diesem Schritt wird gezeigt, wie Code geschrieben wird, damit die Schaltfläc
   
 2.  Geben Sie in der leeren Zeile zwischen den beiden geschweiften Klammern { } ein `i` ein. (Geben Sie in Visual Basic in der leeren Zeile zwischen Private Sub… und End Sub ein „i“ ein.) Ein **IntelliSense**-Fenster wird geöffnet, so wie im folgenden Bild gezeigt.  
   
-     ![IntelliSense mit Visual C&#35;-Code](../ide/media/express_ifintellisense.png "Express_IfIntellisense")  
+     ![IntelliSense mit Visual C#-Code](../ide/media/express_ifintellisense.png "Express_IfIntellisense")  
 IntelliSense mit Visual C#-Code  
   
 3.  Im **IntelliSense**-Fenster sollte das Wort **if** markiert sein. (Ist dies nicht der Fall, geben Sie den Kleinbuchstaben `f` ein, dann wird das Wort markiert.) Beachten Sie, dass ein kleines *QuickInfo*-Feld neben dem **IntelliSense**-Fenster mit der Beschreibung **Codeausschnitt für if-Anweisung** angezeigt wird. (In Visual Basic zeigt die QuickInfo auch an, dass es sich um einen Codeausschnitt handelt, aber mit einem etwas anderen Wortlaut.) Wenn Sie diesen Ausschnitt verwenden möchten, drücken Sie die TAB-TASTE, um **if** in den Code einzufügen. Drücken Sie dann erneut die TAB-TASTE, um den Codeausschnitt für die **if**-Anweisung zu verwenden. (Wenn Sie eine andere Stelle ausgewählt haben und das **IntelliSense**-Fenster nicht mehr angezeigt wird, verwenden Sie die RÜCKTASTE, um das **i** zu löschen. Geben Sie den Buchstaben „i“ erneut ein, um das **IntelliSense**-Fenster wieder zu öffnen.)  
   
-     ![Visual C&#35;-Code](~/ide/media/express_highlighttrue.png "Express_HighlightTrue")  
+     ![Visual C#-Code](../ide/media/express_highlighttrue.png "Express_HighlightTrue")  
 Visual C#-Code  
   
 4.  Als Nächstes verwenden Sie IntelliSense, um weiteren Code einzugeben, mit dem das Dialogfeld **Datei öffnen** geöffnet wird. Wenn der Benutzer die Schaltfläche **OK** auswählt, lädt PictureBox die Datei, die der Benutzer ausgewählt hat. Die folgenden Schritte zeigen, wie der Code eingegeben wird. Obwohl dies zahlreiche Schritte umfasst, sind nur einige Tastaturanschläge erforderlich:  
@@ -72,13 +56,13 @@ Visual C#-Code
         > [!NOTE]
         >  Im **IntelliSense**-Fenster werden sowohl Eigenschaften als auch Methoden angezeigt. Um zu bestimmen, was angezeigt wird, betrachten Sie das Symbol auf der linken Seite jedes Elements im Fenster **IntelliSense**. Neben jeder Methode wird ein Bild eines Blocks und neben jeder Eigenschaft ein Schraubenschlüssel (oder Maulschlüssel) angezeigt. Zudem wird neben jedem Ereignis ein Blitzsymbol angezeigt. Diese Symbole sehen wie folgt aus.  
   
-         ![Methodensymbol](~/ide/media/express_iconmethod.png "Express_IconMethod")  
+         ![Symbol „Methode“](../ide/media/express_iconmethod.png "Express_IconMethod")  
 Methodensymbol  
   
-         ![Eigenschaftssymbol](~/ide/media/express_iconproperty.png "Express_IconProperty")  
+         ![Symbol „Eigenschaft“](../ide/media/express_iconproperty.png "Express_IconProperty")  
 Eigenschaftssymbol  
   
-         ![Ereignissymbol](~/ide/media/express_iconevent.png "Express_IconEvent")  
+         ![Symbol „Ereignis“](../ide/media/express_iconevent.png "Express_IconEvent")  
 Ereignissymbol  
   
     4.  Beginnen Sie mit der Eingabe von `ShowDialog` (die Großschreibung ist in IntelliSense nicht relevant). Die `ShowDialog()`-Methode zeigt das Dialogfeld **Datei öffnen** an. Drücken Sie die TAB-TASTE, nachdem **ShowDialog** im Fenster hervorgehoben wurde. Sie können „ShowDialog“ auch markieren und F1 auswählen, um dazu Hilfe abzurufen.  
@@ -112,7 +96,8 @@ Ereignissymbol
   
     9. Fügen Sie jetzt eine weitere Codezeile hinzu. Sie können die Codezeile eingeben (oder kopieren und einfügen), aber erwägen Sie, die Codezeile mithilfe von IntelliSense hinzuzufügen. Je vertrauter Sie mit IntelliSense sind, desto schneller können Sie einen eigenen Code schreiben. Die fertige `showButton_Click()`-Methode sieht wie folgt aus: (Wählen Sie die Registerkarte **VB** aus, um die Visual Basic-Version des Codes anzuzeigen.)  
   
-         [!code-cs[VbExpressTutorial1Step8#1](../ide/codesnippet/CSharp/step-8-write-code-for-the-show-a-picture-button-event-handler_1.cs)]   [!code-vb[VbExpressTutorial1Step8#1](../ide/codesnippet/VisualBasic/step-8-write-code-for-the-show-a-picture-button-event-handler_1.vb)]  
+         [!code-csharp[VbExpressTutorial1Step8#1](../ide/codesnippet/CSharp/step-8-write-code-for-the-show-a-picture-button-event-handler_1.cs)]
+         [!code-vb[VbExpressTutorial1Step8#1](../ide/codesnippet/VisualBasic/step-8-write-code-for-the-show-a-picture-button-event-handler_1.vb)]  
   
 ### <a name="to-continue-or-review"></a>So fahren Sie fort oder überprüfen die Angaben  
   

@@ -4,38 +4,20 @@ ms.custom: H1HackMay2017
 ms.date: 05/18/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- debugger
+helpviewer_keywords: debugger
 ms.assetid: d2ee0301-ea78-43d8-851a-71b7b2043d73
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
+ms.openlocfilehash: 9e2422774a9bf588b77aeaff81f8529906b68549
+ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
 ms.translationtype: HT
-ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
-ms.openlocfilehash: b4f4e312fb7717edfe950cf6977279a1bd67a458
-ms.contentlocale: de-de
-ms.lasthandoff: 09/06/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/11/2017
 ---
 # <a name="profiling-feature-tour"></a>Tour zur Profilerstellungsfunktion
 
@@ -114,7 +96,7 @@ Im Fenster können Sie mehrere Profilerstellungstools in einigen Szenarios ausw�
 
 ## <a name="analyze-resource-consumption-xaml"></a>Analysieren des Ressourcenverbrauchs (XAML)
 
-In XAML-Apps, z.B. Windows Desktop WPF-Apps und Windows Store-Apps, können Sie mit dem Tool „Anwendungszeitachse“ den Ressourcenverbrauch analysieren. Sie können analysieren, wie viel Zeit Ihre Anwendung zum Vorbereiten von Benutzeroberflächenframes (Layout und Render), von Netzwerk- und Datenträgeranforderungen sowie in Szenarios wie Starten von Anwendungen, Laden von Seiten und Ändern von Fenstergrößen benötigt. Wählen Sie die **Anwendungszeitachse** im Leistungsprofiler aus und anschließend **Starten**, um das Tool zu verwenden. Navigieren Sie in Ihrer App zum Szenario mit einem vermuteten Ressourcenverbrauch-Problem, und wählen Sie anschließend **Auflistung beenden** zum Generieren des Berichts aus.
+In XAML-Apps, z.B. Windows Desktop WPF-Apps und UWP-Apps, können Sie mit der Anwendungszeitachse den Ressourcenverbrauch analysieren. Sie können analysieren, wie viel Zeit Ihre Anwendung zum Vorbereiten von Benutzeroberflächenframes (Layout und Render), von Netzwerk- und Datenträgeranforderungen sowie in Szenarios wie Starten von Anwendungen, Laden von Seiten und Ändern von Fenstergrößen benötigt. Wählen Sie die **Anwendungszeitachse** im Leistungsprofiler aus und anschließend **Starten**, um das Tool zu verwenden. Navigieren Sie in Ihrer App zum Szenario mit einem vermuteten Ressourcenverbrauch-Problem, und wählen Sie anschließend **Auflistung beenden** zum Generieren des Berichts aus.
 
 Geringe Framerates im Diagramm **Visueller Durchsatz** entsprechen möglicherweise visuellen Problemen, die Sie beim Ausführen der App sehen. Auf ähnliche Weise können hohe Zahlen des Diagramms **Auslastung des UI-Thread** Problemen mit der Reaktionsfähigkeit der Benutzeroberfläche entsprechen. Im Bericht können Sie den Zeitraum mit einem vermuteten Leistungsproblem auswählen, und anschließend die detaillierten UI-Threadaktivitäten in der Zeitachsendetailansicht (unten) überprüfen.
 

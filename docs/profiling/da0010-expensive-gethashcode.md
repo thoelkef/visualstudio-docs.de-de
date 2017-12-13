@@ -1,41 +1,42 @@
 ---
-title: "DA0010: Speicherintensive GetHashCode-Funktionen | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.performance.rules.DAExpensiveGetHashCode"
-  - "vs.performance.DA0010"
-  - "vs.performance.rules.DA0010"
-  - "vs.performance.10"
+title: 'DA0010: Speicherintensive GetHashCode-Funktionen | Microsoft-Dokumentation'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- vs.performance.rules.DAExpensiveGetHashCode
+- vs.performance.DA0010
+- vs.performance.rules.DA0010
+- vs.performance.10
 ms.assetid: 3987e21a-5b4f-45e4-8a33-6b3f0a472c08
-caps.latest.revision: 11
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 9209d5f02d543cba3dd0dcec8f5492e2f64b9cef
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# DA0010: Speicherintensive GetHashCode-Funktionen
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="da0010-expensive-gethashcode"></a>DA0010: Speicherintensive GetHashCode-Funktionen
 |||  
 |-|-|  
-|Regel\-ID|DA0010|  
-|Kategorie \(Category\)|.NET Framework\-Verwendung|  
-|Profilerstellungsmethoden|Sampling<br /><br /> .NET\-Arbeitsspeicher|  
-|Meldung|GetHashCode\-Funktionen dürfen nicht speicherintensiv sein und keinen Speicher belegen.  Reduzieren Sie, sofern möglich, die Komplexität der Hashcodefunktionen.|  
-|Meldungstyp|Warnung|  
+|Regel-ID|DA0010|  
+|Kategorie|.NET Framework-Verwendung|  
+|Profilerstellungsmethoden|Sampling<br /><br /> .NET-Arbeitsspeicher|  
+|Meldung|GetHashCode-Funktionen dürfen nicht speicherintensiv sein und keinen Speicher belegen. Reduzieren Sie daher, wenn möglich, die Komplexität der Hashcodefunktionen.|  
+|Nachrichtentyp|Warnung|  
   
-## Ursache  
- Aufrufe der GetHashCode\-Methode des Typs machen einen großen Teil der Profilerstellungsdaten aus, oder von der Methode wird Arbeitsspeicher belegt.  
+## <a name="cause"></a>Ursache  
+ Aufrufe der GetHashCode-Methode des Typs machen einen großen Teil der Profilerstellungsdaten aus, oder die Methode belegt Arbeitsspeicher.  
   
-## Regelbeschreibung  
- Hashverfahren ist eine Technik zum schnellen Suchen eines bestimmten Elements in einer großen Auflistung.  Da Hashtabellen sehr groß sein können und sehr hohe Zugriffsraten unterstützen müssen, sollten Hashtabellen äußerst effizient sein.  Eine Folge dieser Anforderung ist, dass GetHashCode\-Methoden in .NET Framework keinen Speicher belegen sollten.  Das Zuordnen von Arbeitsspeicher erhöht die Last für den Garbage Collector und macht die Methode verfügbar für potenzielle Verzögerungen, wenn es notwendig wird, eine Garbage Collection als Ergebnis der Zuordnungsanforderung auszuführen.  
+## <a name="rule-description"></a>Regelbeschreibung  
+ Hashing ist eine Technik, mit deren Hilfe Sie ein bestimmtes Element in einer Auflistung mit vielen Elementen schnell finden können. Da Hashtabellen sehr groß sein können und hohe Zugriffsraten unterstützen müssen, sollten sie auch effizient konzipiert sein. Folglich sollten GetHashCode-Methoden in .NET Framework keinen Speicherplatz belegen. Wenn Speicherplatz belegt wird, wird die Belastung des Garbage Collectors größer, wodurch die Methode unter Umständen nur mit einer Verzögerung ausgeführt werden kann, wenn es nötig sein sollte, die Garbage Collection aufgrund der Reservierungsanforderung auszuführen.  
   
-## Behandeln von Verstößen  
+## <a name="how-to-fix-violations"></a>Behandeln von Verstößen  
  Verringern Sie die Komplexität der Methode.

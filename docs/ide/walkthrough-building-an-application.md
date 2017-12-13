@@ -1,41 +1,25 @@
 ---
 title: 'Exemplarische Vorgehensweise: Erstellen einer Anwendung | Microsoft-Dokumentation'
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 09/25/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 4842955d-8959-4e4e-98b8-2358360179b3
-caps.latest.revision: 8
-author: kempb
-ms.author: kempb
+caps.latest.revision: "8"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 3d32d11a430227800cb3ed53831a9565eb6adeb3
-ms.openlocfilehash: dc4bcdcc11e357979641268ae77a8e39f8408f7a
-ms.contentlocale: de-de
-ms.lasthandoff: 05/30/2017
-
+ms.openlocfilehash: a06bd1eb1ced8305425a9e3698e66f0d19438463
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="walkthrough-building-an-application"></a>Exemplarische Vorgehensweise: Erstellen einer Anwendung
-Indem Sie diese exemplarische Vorgehensweise abschließen, werden Sie mit einigen der bei der Erstellung von Anwendungen mit Visual Studio konfigurierbaren Optionen vertrauter. Sie führen unter anderem die folgenden Aufgaben für eine Beispielanwendung aus: Erstellen einer benutzerdefinierten Buildkonfiguration, Ausblenden bestimmter Warnmeldungen und Verbessern der Buildausgabeinformationen.  
+Wenn Sie diese exemplarische Vorgehensweise durchführen, werden Sie mit einigen der bei der Erstellung von Anwendungen mit Visual Studio konfigurierbaren Optionen vertrauter. Sie führen die folgenden Aufgaben für eine Beispielanwendung aus: Erstellen einer benutzerdefinierten Buildkonfiguration, Ausblenden bestimmter Warnmeldungen und Verbessern der Buildausgabeinformationen.  
   
  Dieses Thema enthält folgende Abschnitte:  
   
@@ -52,43 +36,7 @@ Indem Sie diese exemplarische Vorgehensweise abschließen, werden Sie mit einige
  [Erstellen eines Releasebuilds](../ide/walkthrough-building-an-application.md#BKMK_releasebuild)  
   
 ##  <a name="BKMK_installapp"></a> Installieren der Beispielanwendung  
- Verwenden Sie das Dialogfeld **Erweiterungen und Updates**, um das Beispiel [Introduction to Building WPF Applications](http://code.msdn.microsoft.com/Introduction-to-Building-b8d16419?SRC=VSIDE) (Einführung in das Erstellen von WPF-Anwendungen) im Beispielkatalog auf der Microsoft-Website zu suchen und zu installieren. Der Beispielkatalog bietet eine Vielzahl von Beispielsprojekten und -code, die bzw. den Sie beim Erstellen und Entwickeln von Anwendungen herunterladen und überprüfen können.  
-  
-#### <a name="to-install-the-sample-application"></a>So Installieren Sie die Beispielanwendung  
-  
-1.  Wählen Sie auf der Menüleiste **Tools**, **Erweiterungen und Updates** aus.  
-  
-2.  Wählen Sie die Kategorie **Online** und dann die Kategorie **Beispielgalerie** aus.  
-  
-3.  Geben Sie zum Suchen des Beispiels `Introduction` in das Suchfeld ein.  
-  
-     ![Dialogfeld „Erweiterungen und Updates“](../ide/media/buildwalk_extensionsdialogsampledownload.png "BuildWalk_ExtensionsDialogSampleDownload")  
-  
-4.  Wählen Sie in der Ergebnisliste entweder **Einführung in das Erstellen von WPF-Anwendungen (Visual C#)** oder **Einführung in das Erstellen von WPF-Anwendungen (Visual Basic)** aus.  
-  
-5.  Klicken Sie auf die Schaltfläche **Herunterladen**, und wählen Sie dann die Schaltfläche **Schließen** aus.  
-  
- Das Beispiel für die Einführung zum Erstellen von WPF-Anwendungen wird im Dialogfeld **Neues Projekt** angezeigt.  
-  
-#### <a name="to-create-a-solution-for-the-sample-application"></a>So erstellen Sie eine Projektmappe für die Beispielanwendung  
-  
-1.  Öffnen Sie das Dialogfeld **Neues Projekt**.  
-  
-     ![Wählen Sie in der Menüleiste „Datei“, „Neu“, „Projekt“ aus](../ide/media/exploreide-filenewproject.png "ExploreIDE-FileNewProject")  
-  
-2.  Wählen Sie in der Kategorie **Installiert** die Kategorie **Beispiele** aus, um das Beispiel für die Einführung zum Erstellen von WPF-Anwendungen anzuzeigen.  
-  
-3.  Geben Sie der Projektmappe bei Visual C# den Namen `IntroWPFcsharp`.  
-  
-     ![Dialogfeld „Neues Projekt“, installierte Beispiele](../ide/media/buildwalk_newprojectdlgintrotowpfsample.png "BuildWalk_NewProjectdlgIntrotoWPFsample")  
-  
-     ODER  
-  
-     Geben Sie der Projektmappe bei Visual Basic den Namen `IntroWPFvb`.  
-  
-     ![Dialogfeld „Neues Projekt“, Visual Basic-Beispiel](../ide/media/buildwalk_newprojectdlgintrotowpfsamplevb.png "BuildWalk_NewProjectdlgIntrotoWPFsampleVB")  
-  
-4.  Klicken Sie auf die Schaltfläche **OK** .  
+Laden Sie das Beispiel [Introduction to Building WPF Applications (Einführung in das Erstellen von WPF-Anwendungen)](https://code.msdn.microsoft.com/Introduction-to-Building-b8d16419) herunter. Entscheiden Sie sich zwischen C# und Visual Basic. Wenn der Download der ZIP-Datei abgeschlossen ist, extrahieren Sie diese, und öffnen Sie die Datei **ExpenseItIntro.sln** mit Visual Studio.  
   
 ##  <a name="BKMK_CreateBuildConfig"></a> Erstellen einer benutzerdefinierten Buildkonfiguration  
  Wenn Sie eine Projektmappe erstellen, werden Debug- und Releasebuildkonfigurationen und ihre Standardplattformziele für die Projektmappe automatisch definiert. Sie können diese Konfigurationen dann anpassen oder eigene Konfigurationen erstellen. Buildkonfigurationen geben den Buildtyp an. Buildplattformen geben das Betriebssystem an, auf das eine Anwendung für diese Konfiguration ausgerichtet ist. Weitere Informationen finden Sie unter [Grundlagen der Buildkonfiguration](../ide/understanding-build-configurations.md), [Grundlagen zu Buildplattformen](../ide/understanding-build-platforms.md) und [Debug and Release Project Configurations (Debug- und Releaseprojektkonfigurationen)](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e).  
@@ -101,15 +49,15 @@ Indem Sie diese exemplarische Vorgehensweise abschließen, werden Sie mit einige
   
      ![Menü „Build“, Konfigurations-Manager-Befehl](../ide/media/buildwalk_configurationmanagerdialogbox.png "BuildWalk_ConfigurationManagerDialogBox")  
   
-2.  Wählen Sie in der Liste **Konfiguration der aktuellen Projektmappe** den Eintrag **Neu** aus.  
+2.  Wählen Sie in der Liste **Konfiguration der aktuellen Projektmappe** den Eintrag **\<Neu…\>** aus.  
   
 3.  Geben Sie im Dialogfeld **Neue Projektmappenkonfiguration** den Namen `Test` für die neue Konfiguration ein, kopieren Sie die Einstellungen aus der vorhandenen Debugkonfiguration, und wählen Sie dann die Schaltfläche **OK** aus.  
   
      ![Dialogfeld „Neue Projektmappenkonfiguration“](../ide/media/buildwalk_newsolutionconfigdlgbox.png "BuildWalk_NewSolutionConfigDlgBox")  
   
-4.  Wählen Sie in der Liste **Aktive Projektmappenplattform** den Eintrag **Neu** aus.  
+4.  Wählen Sie in der Liste **Aktive Projektmappenplattform** den Eintrag **\<Neu…\>** aus.  
   
-5.  Wählen Sie im Dialogfeld **Neue Projektmappenplattform** die Option **x64** aus, und kopieren Sie keine der Einstellungen von der x86-Plattform.  
+5.  Wählen Sie im Dialogfeld **Neue Projektmappenplattform** die Option **x64** aus, und kopieren Sie keine der Einstellungen der x86-Plattform.  
   
      ![Dialogfeld „Neue Projektmappenplattform“](../ide/media/buildwalk_newsolutionplatform.png "BuildWalk_NewSolutionPlatform")  
   
@@ -119,9 +67,11 @@ Indem Sie diese exemplarische Vorgehensweise abschließen, werden Sie mit einige
   
  ![Konfigurations-Manager mit Testkonfiguration](../ide/media/buildwalk_configmanagertestconfig.png "BuildWalk_ConfigManagerTestconfig")  
   
- Sie können die aktive Projektmappenkonfiguration schnell überprüfen oder ändern, indem Sie die Liste **Projektmappenkonfigurationen** auf der Symbolleiste **Standard** verwenden.  
+7. Klicken Sie auf **Schließen**.  
+
+Sie können die aktive Projektmappenkonfiguration schnell überprüfen oder ändern, indem Sie die Liste **Projektmappenkonfigurationen** auf der Symbolleiste **Standard** verwenden.  
   
- ![Standardsymbolleiste der Projektmappenkonfiguration](../ide/media/buildwalk_standardtoolbarsolutioncongfig.png "BuildWalk_StandardToolbarSolutionCongfig")  
+![Standardsymbolleiste der Projektmappenkonfiguration](../ide/media/buildwalk_standardtoolbarsolutioncongfig.png "BuildWalk_StandardToolbarSolutionCongfig")  
   
 ##  <a name="BKMK_building"></a> Erstellen der Anwendung  
  Danach erstellen Sie die Projektmappe mit der benutzerdefinierten Buildkonfiguration.  
@@ -130,8 +80,21 @@ Indem Sie diese exemplarische Vorgehensweise abschließen, werden Sie mit einige
   
 -   Wählen Sie in der Menüleiste **Erstellen**, **Projektmappe erstellen**.  
   
- Im Fenster **Ausgabe** wird das Ergebnis des Builds angezeigt. Der Build ist erfolgreich, doch wurden einige Warnmeldungen erzeugt.  
+    Im Fenster **Ausgabe** wird das Ergebnis des Builds angezeigt. Der Buildvorgang war erfolgreich.  
   
+##  <a name="BKMK_hidewarning"></a> Ausblenden von Compilerwarnungen  
+Als Nächstes wird Code eingeführt, der eine Warnung auslöst und vom Compiler generiert werden soll.  
+
+1. Öffnen Sie die Datei **ExpenseReportPage.xaml.cs** im C#-Projekt. Fügen Sie folgenden Code in die **ExpenseReportPage**-Methode ein: `int i;`.  
+
+    ODER
+
+    Öffnen Sie im Visual Basic-Projekt die Datei **ExpenseReportPage.xaml.vb**. Fügen Sie im benutzerdefinierten Konstruktor **Public Sub New** den folgenden Code hinzu: `Dim i`.  
+
+2. Erstellen Sie die Projektmappe.  
+
+Im Fenster **Ausgabe** wird das Ergebnis des Builds angezeigt. Der Build wurde erfolgreich abgeschlossen, aber es wurden Warnungen ausgelöst:  
+
  Abbildung 1: Visual Basic-Warnungen  
   
  ![Ausgabefenster Visual Basic](../ide/media/buildwalk_vbbuildoutputwnd.png "BuildWalk_VBBuildOutputWnd")  
@@ -140,9 +103,8 @@ Indem Sie diese exemplarische Vorgehensweise abschließen, werden Sie mit einige
   
  ![Ausgabefenster Visual C&#35;](../ide/media/buildwalk_csharpbuildoutputwnd.png "BuildWalk_CsharpBuildOutputWnd")  
   
-##  <a name="BKMK_hidewarning"></a> Ausblenden von Compilerwarnungen  
- Sie können bestimmte Warnungen während eines Builds vorübergehend ausblenden, anstatt sie die Buildausgabe durcheinanderbringen zu lassen.  
-  
+Sie können bestimmte Warnungen während eines Builds vorübergehend ausblenden, anstatt sie die Buildausgabe durcheinanderbringen zu lassen.  
+
 #### <a name="to-hide-a-specific-visual-c-warning"></a>So blenden Sie eine bestimmte Visual C#-Warnung aus  
   
 1.  Wählen Sie im **Projektmappen-Explorer** den Projektknoten der obersten Ebene aus.  
@@ -151,7 +113,7 @@ Indem Sie diese exemplarische Vorgehensweise abschließen, werden Sie mit einige
   
      Der **Projekt-Designer** wird geöffnet.  
   
-3.  Wählen Sie die Seite **Erstellen**, und geben Sie im Feld **Warnungen unterdrücken** die Warnungsnummer `1762` an.  
+3.  Klicken Sie auf die Seite **Erstellen**, und geben Sie im Feld **Warnungen unterdrücken** die Warnungsnummer **0168** an.  
   
      ![Seite „Erstellen“, Projekt-Designer](../ide/media/buildwalk_csharpsupresswarnings.png "BuildWalk_CsharpSupressWarnings")  
   
@@ -205,7 +167,7 @@ Indem Sie diese exemplarische Vorgehensweise abschließen, werden Sie mit einige
   
 5.  Erstellen Sie die Projektmappe, und überprüfen Sie dann die Informationen im Fenster **Ausgabe**.  
   
-     Die Buildinformationen umfassen die Uhrzeit, zu der der Build gestartet ist (am Anfang), Reihenfolge, in der die Dateien verarbeitet wurden, und die zum Abschließen des Prozesses erforderliche Zeit (am Ende). Diese Informationen umfassen auch die von Visual Studio beim Build ausgeführt Compeliersyntax.  
+     Die Buildinformationen umfassen die Uhrzeit, zu der der Build gestartet wurde (am Anfang), und die Reihenfolge, in der die Dateien verarbeitet wurden. Diese Informationen umfassen auch die von Visual Studio beim Build ausgeführt Compeliersyntax.  
   
      Im Visual C#-Build führt die [/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn)-Option z.B. den von Ihnen zuvor in diesem Thema angegebenen Warnungscode 1762 zusammen mit drei weiteren Warnungen auf.  
   
@@ -214,7 +176,7 @@ Indem Sie diese exemplarische Vorgehensweise abschließen, werden Sie mit einige
     > [!TIP]
     >  Sie können den Inhalt des Fensters **Ausgabe** durchsuchen, wenn Sie das Dialogfeld **Suchen** mithilfe der Tastenkombination STRG+F anzeigen.  
   
- Weitere Informationen finden Sie unter [Vorgehensweise: Anzeigen, Speichern und Konfigurieren von Buildprotokolldateien](../ide/how-to-view-save-and-configure-build-log-files.md).  
+Weitere Informationen finden Sie unter [Vorgehensweise: Anzeigen, Speichern und Konfigurieren von Buildprotokolldateien](../ide/how-to-view-save-and-configure-build-log-files.md).  
   
 ##  <a name="BKMK_releasebuild"></a> Erstellen eines Releasebuilds  
  Sie können eine Version der Beispielanwendung erstellen, die für das Versenden optimiert wird. Beim Releasebuild geben Sie an, dass die ausführbare Datei auf eine Netzwerkfreigabe kopiert wird, bevor der Build gestartet wird.  
@@ -263,16 +225,17 @@ Indem Sie diese exemplarische Vorgehensweise abschließen, werden Sie mit einige
     > [!IMPORTANT]
     >  Möglicherweise wird ein Meldungsfeld angezeigt, in dem davor gewarnt wird, dass die von Ihnen angegebene Netzwerkfreigabe eventuell kein vertrauenswürdiger Speicherort ist. Wenn Sie dem angegebenen Speicherort vertrauen, wählen Sie im Meldungsfeld die Schaltfläche **OK** aus.  
   
-6.  Erstellen Sie die Anwendung.  
+6.  Legen Sie auf der **Symbolleiste „Standard“** die Projektmappenkonfiguration auf **Release** und die Projektmappenplattformen auf **x86** fest.  
+
+7.  Erstellen Sie die Anwendung.  
   
      ![Befehl „Projektmappe erstellen“ im Menü „Erstellen“](../ide/media/exploreide-buildsolution.png "ExploreIDE-BuildSolution")  
   
  Die ausführbare Datei wird auf den von Ihnen angegebenen Netzwerkpfad kopiert. Der Pfad ist \\\myserver\builds\\*Dateiname*.exe.  
   
- Herzlichen Glückwunsch: Sie haben diese exemplarische Vorgehensweise erfolgreich abgeschlossen.  
+Herzlichen Glückwunsch: Sie haben diese exemplarische Vorgehensweise erfolgreich abgeschlossen.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Exemplarische Vorgehensweise: Erstellen eines Projekts (C++)](/cpp/ide/walkthrough-building-a-project-cpp)   
  [ASP.NET Web Application Project Precompilation Overview (Übersicht über die Vorkompilierung von ASP.NET-Webanwendungsprojekten)](http://msdn.microsoft.com/en-us/b940abbd-178d-4570-b441-52914fa7b887)   
  [Exemplarische Vorgehensweise: Verwenden von MSBuild](../msbuild/walkthrough-using-msbuild.md)
-

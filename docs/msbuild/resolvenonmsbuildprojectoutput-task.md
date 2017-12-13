@@ -1,46 +1,47 @@
 ---
-title: "ResolveNonMSBuildProjectOutput Task | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "MSBuild, ResolveNonMSBuildProjectOutput task"
-  - "ResolveNonMSBuildProjectOutput task [MSBuild]"
+title: ResolveNonMSBuildProjectOutput-Aufgabe | Microsoft-Dokumentation
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- C++
+- jsharp
+helpviewer_keywords:
+- MSBuild, ResolveNonMSBuildProjectOutput task
+- ResolveNonMSBuildProjectOutput task [MSBuild]
 ms.assetid: a0b8fcec-8c8d-4867-85ac-5304c5108e5e
-caps.latest.revision: 4
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 4
+caps.latest.revision: "4"
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.openlocfilehash: 82928797c912aac24d41d63d865e575ea90c013e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# ResolveNonMSBuildProjectOutput Task
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Bestimmt die Ausgabedateien für Projektverweise, die keine MSBuild\-Projektverweise sind.  
+# <a name="resolvenonmsbuildprojectoutput-task"></a>ResolveNonMSBuildProjectOutput-Aufgabe
+Bestimmt die Ausgabedateien für Nicht-MSBuild-Projektverweise  
   
-## Parameter  
- In der folgenden Tabelle werden die Parameter der `ResolveNonMSBuildProjectOutput`\-Aufgabe beschrieben.  
+## <a name="parameters"></a>Parameter  
+ In der folgenden Tabelle werden die Parameter der `ResolveNonMSBuildProjectOutput` -Aufgabe beschrieben.  
   
 |Parameter|Beschreibung|  
-|---------------|------------------|  
-|`PreresolvedProjectOutputs`|Optionaler `String`\-Parameter.<br /><br /> Gibt eine XML\-Zeichenfolge an, die aufgelöste Projektausgaben enthält.|  
-|`ProjectReferences`|Erforderlicher <xref:Microsoft.Build.Framework.ITaskItem>`[]` \-Parameter.<br /><br /> Gibt die Projektverweise an.|  
-|`ResolvedOutputPaths`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]`\-Ausgabeparameter.<br /><br /> Enthält die Liste der aufgelösten Verweispfade \(und behält die ursprünglichen Projektverweisattribute\).|  
-|`UnresolvedProjectReferences`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]`\-Ausgabeparameter.<br /><br /> Enthält die Liste der Projektverweiselemente, die nicht mit der Liste von vorab aufgelösten Ausgaben aufgelöst werden konnten.<br /><br /> Da Visual Studio nur nicht MSBuild\-spezifische Projekte vorab auflöst, bedeutet dies, dass Projektverweise in dieser Liste im MSBuild\-Format sind.|  
+|---------------|-----------------|  
+|`PreresolvedProjectOutputs`|Optionaler `String` -Parameter.<br /><br /> Gibt eine XML-Zeichenfolge an, die aufgelöste Projektausgaben enthält|  
+|`ProjectReferences`|Erforderlicher <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter.<br /><br /> Gibt die Projektverweise an|  
+|`ResolvedOutputPaths`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]` -Ausgabeparameter.<br /><br /> Enthält eine Liste der aufgelösten Verweispfade und behält die ursprünglichen Projektverweisattribute bei|  
+|`UnresolvedProjectReferences`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]` -Ausgabeparameter.<br /><br /> Enthält die Liste der Projektverweiselemente, die nicht mithilfe der Liste vorab aufgelöster Ausgaben aufgelöst werden konnten<br /><br /> Da Visual Studio nur Nicht-MSBuild-Projekte vorab auflöst, weisen Projektverweise in dieser Liste das MSBuild-Format auf.|  
   
-## Hinweise  
- Zusätzlich zu den Parametern, die in der Tabelle aufgeführt sind, erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Tasks.TaskExtension>\-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.Task>\-Klasse erbt.  Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  
+## <a name="remarks"></a>Hinweise  
+ Zusätzlich zu den in der Tabelle aufgeführten Parametern erbt dieser Task Parameter von der <xref:Microsoft.Build.Tasks.TaskExtension>-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.Task>-Klasse erbt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  
   
-## Siehe auch  
- [Tasks](../msbuild/msbuild-tasks.md)   
- [Task Reference](../msbuild/msbuild-task-reference.md)
+## <a name="see-also"></a>Siehe auch  
+ [Tasks (Aufgaben)](../msbuild/msbuild-tasks.md)   
+ [Task Reference](../msbuild/msbuild-task-reference.md) (MSBuild-Aufgabenreferenz)

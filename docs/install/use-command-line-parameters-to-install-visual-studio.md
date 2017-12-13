@@ -1,11 +1,10 @@
 ---
 title: Verwenden von Befehlszeilenparametern zum Installieren von Visual Studio | Microsoft-Dokumentation
 ms.custom: 
-ms.date: 08/14/2017
+ms.date: 09/22/2017
 ms.reviewer: tims
 ms.suite: 
-ms.technology:
-- vs-ide-install
+ms.technology: vs-ide-install
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -16,12 +15,11 @@ ms.assetid: 480f3cb4-d873-434e-a8bf-82cff7401cf2
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
+ms.openlocfilehash: ac513a2273177125b52628d12dfdbc499cf77bf1
+ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
 ms.translationtype: HT
-ms.sourcegitcommit: f23906933add1f4706d8786b2950fb3b5d2e6781
-ms.openlocfilehash: 12db04604356a9b6a8b565b7bfaf9db2eab199c1
-ms.contentlocale: de-de
-ms.lasthandoff: 08/14/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/11/2017
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>Verwenden von Befehlszeilenparametern zum Installieren von Visual Studio 2017
 Wenn Sie Visual Studio 2017 von einer Befehlszeile aus installieren, können Sie die verschiedene Befehlszeilenparameter verwenden, um die Installation zu steuern und anzupassen. Über die Befehlszeile können Sie die folgenden Aktionen durchführen:
@@ -87,15 +85,15 @@ Die Befehlszeilenoptionen werden in Verbindung mit dem Setup-Bootstrapper verwen
 | **Erweiterte Installationsoptionen** | **Beschreibung** |
 | ----------------------- | --------------- |
 | `--channelId <id>` | **Optional**: Die ID des Kanals für die Instanz, die installiert wird. Diese Option ist für den Befehl „install“ erforderlich und kann für andere Befehle ignoriert werden, wenn `--installPath` angegeben ist. |
-| `--channelUri <uri>` | **Optional**: Der URI des Kanalmanifests. Kann für den Befehl „install“ verwendet werden und wird für andere Befehle ignoriert. |
-| `--installChannelUri <uri>` | **Optional**: Der URI des Kanalmanifests, der für die Installation verwendet werden soll. Der mit `--channelUri` festgelegte URI (der angegeben werden muss, wenn `--installChannelUri` angegeben ist) dient zum Ermitteln von Updates. Werden keine Updates gewünscht, muss `--channelUri` ohne Argument angegeben werden. Kann für den Befehl „install“ verwendet werden und wird für andere Befehle ignoriert. |
+| `--channelUri <uri>` | **Optional**: Der URI des Kanalmanifests. Wenn Sie keine Updates wünschen, kann `--channelUri` auf eine nicht vorhandene Datei zeigen. (Z.B. –channelUri C:\doesntExist.chman) Kann für den Befehl „install“ verwendet werden und wird für andere Befehle ignoriert. |
+| `--installChannelUri <uri>` | **Optional**: Der URI des Kanalmanifests, der für die Installation verwendet werden soll. Der mit `--channelUri` festgelegte URI (der angegeben werden muss, wenn `--installChannelUri` angegeben ist) dient zum Ermitteln von Updates. Kann für den Befehl „install“ verwendet werden und wird für andere Befehle ignoriert. |
 | `--installCatalogUri <uri>` | **Optional**: Der URI des Katalogmanifests, der für die Installation verwendet werden soll. Wird diese Option angegeben, versucht der Kanal-Manager, das Katalogmanifest von diesem URI herunterzuladen, bevor der URI im Installationskanalmanifest verwendet wird. Dieser Parameter wird zur Unterstützung der Offlineinstallation verwendet, wobei der Layoutcache mit dem bereits heruntergeladenen Produktkatalog erstellt wird. Kann für den Befehl „install“ verwendet werden und wird für andere Befehle ignoriert. |
 | `--productId <id>` | **Optional**: Die ID des Produkts für die Instanz, die installiert wird. Diese ist bei normalen Installationsbedingungen bereits ausgefüllt. |
 | `--wait` | **Optional**: Der Prozess wartet, bis die Installation abgeschlossen ist, bevor er einen Exitcode zurückgibt. Dies ist nützlich beim Automatisieren von Installationen, bei denen auf das Beenden von „install“ gewartet werden muss, um den Rückgabecode von „install“ zu verwenden. |
 | `--locale <language-locale>` | **Optional**: Ändert die Anzeigesprache der Benutzeroberfläche für den Installer selbst. Die Einstellung wird beibehalten. Weitere Informationen finden Sie im Abschnitt [Liste der Gebietsschemas](#list-of-language-locales) dieser Seite.|
 | `--cache` | **Neu in 15.2 (optional)**: Falls vorhanden, werden Pakete nach ihrer Installation für nachfolgende Reparaturen gespeichert. Dies überschreibt die globale Richtlinieneinstellung für nachfolgende Installationen, Reparaturen und Änderungen. Die Standardrichtlinie sieht das Zwischenspeichern von Paketen im Cache vor. Dies wird für den Deinstallationsbefehl ignoriert. Unter [Deaktivieren oder Verschieben des Paketcaches](disable-or-move-the-package-cache.md) finden Sie weitere Informationen. |
 | `--nocache` | **Neu in 15.2 (optional)**: Falls vorhanden, werden Pakete nach ihrer Installation oder Reparatur gelöscht. Sie werden nur bei Bedarf erneut heruntergeladen und nach ihrer Verwendung wieder gelöscht. Dies überschreibt die globale Richtlinieneinstellung für nachfolgende Installationen, Reparaturen und Änderungen. Die Standardrichtlinie sieht das Zwischenspeichern von Paketen im Cache vor. Dies wird für den Deinstallationsbefehl ignoriert. Unter [Deaktivieren oder Verschieben des Paketcaches](disable-or-move-the-package-cache.md) finden Sie weitere Informationen. |
-| `--noUpdateInstaller` | **Neu in 15.2, optional**: Falls vorhanden, hindert den Installer daran, sich selbst zu aktualisieren, wenn „quiet“ angegeben ist. Der Befehl wird für den Installer einen Fehler auslösen, und der Installer gibt einen Exitcode ungleich 0 (null) zurück, falls „noUpdateInstaller“ mit „quiet“ angegeben wird, wenn ein Installerupdate erforderlich ist. | 
+| `--noUpdateInstaller` | **Neu in 15.2, optional**: Falls vorhanden, hindert den Installer daran, sich selbst zu aktualisieren, wenn „quiet“ angegeben ist. Der Befehl wird für den Installer einen Fehler auslösen, und der Installer gibt einen Exitcode ungleich 0 (null) zurück, falls „noUpdateInstaller“ mit „quiet“ angegeben wird, wenn ein Installerupdate erforderlich ist. |
 | `--noWeb` | **Neu in Version 15.3 (optional)**: Das Setup lädt jetzt jeden Inhalt herunter, der aus dem Internet installiert wird.  Jeder Inhalt, der installiert wird, muss in einem Offlinelayout verfügbar sein.  Wenn dem Layout Inhalt fehlt, schlägt die Einrichtung fehl.  Weitere Informationen finden Sie unter [Deploying from a network installation (Bereitstellung aus einer Netzwerkinstallation)](create-a-network-installation-of-visual-studio.md). |
 
 ## <a name="list-of-workload-ids-and-component-ids"></a>Liste der Arbeitsauslastungs-IDs und Komponenten-IDs
@@ -133,11 +131,12 @@ Je nach Ergebnis des Vorgangs wird die Umgebungsvariable `%ERRORLEVEL%` auf eine
 
 Jeder Vorgang generiert mehrere Protokolldateien im `%TEMP%`-Verzeichnis, die den Status der Installation angeben. Sortieren Sie die Ordner nach Datum, und suchen Sie Dateien für jeweils den Bootstrapper, die Installer-App und das Setupmodul, die mit `dd_bootstrapper`, `dd_client` und `dd_setup` beginnen.
 
+## <a name="get-support"></a>Support aufrufen
+Manchmal kann etwas schiefgehen. Wenn die Installation von Visual Studio fehlschlägt, lesen Sie den Artikel [Problembehandlung bei der Visual Studio 2017-Installation und Upgradefehlern](troubleshooting-installation-issues.md), um Hilfe bei der Problemlösung zu erhalten. Sie können uns außerdem über das Tool [Ein Problem melden](../ide/how-to-report-a-problem-with-visual-studio-2017.md) in der Visual Studio-IDE oder über [UserVoice](https://visualstudio.uservoice.com/forums/121579) Probleme und Vorschläge mitteilen. Sie können Probleme mit Produkten im Portal [Visual Studio Developer Community](https://developercommunity.visualstudio.com/) im Blick behalten, Fragen stellen und Antworten finden. Über die [Visual Studio-Unterhaltung in der Gitter-Community](https://gitter.im/Microsoft/VisualStudio) können Sie Kontakt zu uns oder anderen Visual Studio-Entwicklern aufnehmen ([GitHub](https://github.com/)-Konto erforderlich).
+
 ## <a name="see-also"></a>Siehe auch
 
  * [Installieren von Visual Studio 2017](install-visual-studio.md)
  * [Erstellen einer Offlineinstallation von Visual Studio 2017](create-an-offline-installation-of-visual-studio.md)
  * [Beispiele für Befehlszeilenparameter für die Installation von Visual Studio 2017](command-line-parameter-examples.md)
  * [Automatisieren der Visual Studio-Installation mit einer Antwortdatei](automated-installation-with-response-file.md)
- * [Melden eines Problems mit Visual Studio 2017](../ide/how-to-report-a-problem-with-visual-studio-2017.md)
-

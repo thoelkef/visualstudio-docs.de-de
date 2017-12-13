@@ -1,27 +1,29 @@
 ---
-title: "JsParseSerializedScript-Funktion | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
-f1_keywords: 
-  - "jsrt/JsParseSerializedScript"
-helpviewer_keywords: 
-  - "JsParseSerializedScript-Funktion"
+title: JsParseSerializedScript-Funktion | Microsoft-Dokumentation
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
+f1_keywords: jsrt/JsParseSerializedScript
+helpviewer_keywords: JsParseSerializedScript function
 ms.assetid: 40d0c7c4-fd5b-46ed-9e65-38c2db2fc859
-caps.latest.revision: 13
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 7eb18c8537d7bdfe69969293b66a5909ba7c3fa1
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# JsParseSerializedScript-Funktion
+# <a name="jsparseserializedscript-function"></a>JsParseSerializedScript-Funktion
 Analysiert ein serialisiertes Skript und gibt eine Funktion zurück, die das Skript darstellt.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 STDAPI_(JsErrorCode) JsParseSerializedScript(  
@@ -33,7 +35,7 @@ STDAPI_(JsErrorCode) JsParseSerializedScript(
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `script`  
  Das zu analysierende Skript.  
   
@@ -49,16 +51,16 @@ STDAPI_(JsErrorCode) JsParseSerializedScript(
  `result`  
  Eine Funktion, die den Skriptcode darstellt.  
   
-## Rückgabewert  
- Der Code `JsNoError`, wenn der Vorgang erfolgreich war, andernfalls ein Fehlercode.  
+## <a name="return-value"></a>Rückgabewert  
+ Der Code `JsNoError` , wenn der Vorgang erfolgreich war, andernfalls ein Fehlercode.  
   
-## Hinweise  
- Erfordert einen Active Script\-Kontext.  
+## <a name="remarks"></a>Hinweise  
+ Erfordert einen Active Script-Kontext.  
   
  Der Puffer wird vom Skriptmodul nicht im Arbeitsspeicher beibehalten, daher muss er durch Ihren Code so lange erhalten bleiben, wie er möglicherweise zum Ausführen von Skripts verwendet wird.  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  **Header:** jsrt.h  
   
-## Siehe auch  
- [Verweis \(JavaScript\-Laufzeit\)](../chakra-hosting/reference-javascript-runtime.md)
+## <a name="see-also"></a>Siehe auch  
+ [Referenz (JavaScript-Laufzeit)](../chakra-hosting/reference-javascript-runtime.md)

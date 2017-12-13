@@ -1,44 +1,44 @@
 ---
-title: "VB-Standard, Projekte, Dialogfeld &quot;Optionen&quot; | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "VS.ToolsOptionsPages.Projects.VBDefaults"
-helpviewer_keywords: 
-  - "Option Explicit-Anweisung, Festlegen in der IDE"
-  - "Option Compare-Anweisung, Festlegen in der IDE"
-  - "Option Strict-Anweisung, Festlegen in der IDE"
+title: "Visual Basic: Standardeinstellungen, Projekte, Dialogfeld „Optionen“ | Microsoft-Dokumentation"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: VS.ToolsOptionsPages.Projects.VBDefaults
+helpviewer_keywords:
+- Option Explicit statement, setting in the IDE
+- Option Compare statement, setting in the IDE
+- Option Strict statement, setting in the IDE
 ms.assetid: 2465cd9d-18b6-4c4a-b1ea-86dbab23fc79
-caps.latest.revision: 19
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 19
+caps.latest.revision: "19"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 7765323944508eb0d739703bcb78dcf2cdfe08c2
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# VB-Standard, Projekte, Dialogfeld &quot;Optionen&quot;
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Gibt die Standardeinstellungen für Visual Basic\-Projektoptionen an.  Bei der Erstellung eines neues Projekts werden die angegebenen `Option`\-Anweisungen im Code\-Editor zum Projektheader hinzugefügt.  Diese Optionen gelten für alle Visual Basic\-Projekte.  
+# <a name="visual-basic-defaults-projects-options-dialog-box"></a>VB-Standard, Projekte, Dialogfeld "Optionen"
+Legt die Standardeinstellungen für Visual Basic-Projekteinstellungen fest. Beim Erstellen eines neuen Projekts werden die angegebenen Optionsanweisungen dem Projektheader im Code-Editor hinzugefügt. Die Optionen werden für alle Visual Basic-Projekte verwendet.  
   
- Klicken Sie zum Öffnen dieses Dialogfelds im Menü **Extras** auf **Optionen**, erweitern Sie den Ordner **Projekte und Projektmappen**, und klicken Sie auf **VB\-Standard**.  
+ Klicken Sie zum Zugriff auf dieses Dialogfeld im Menü **Extras** auf **Optionen**, erweitern Sie den Ordner **Projekte und Projektmappen**, und klicken Sie auf **VB-Standard**.  
   
  **Option Explicit**  
- Legt den Compilerstandard so fest, dass explizite Deklarationen von Variablen erforderlich sind.  Standardmäßig ist **Option Explicit** auf **On** festgelegt.  Weitere Informationen finden Sie unter [\/optionexplicit](/dotnet/visual-basic/reference/command-line-compiler/optionexplicit).  
+ Legt als Compilerstandardeinstellung fest, dass explizite Deklarationen von Variablen erforderlich sind. Standardmäßig wird für **Option Explicit** der Wert **On** festgelegt. Weitere Informationen finden Sie unter [/optionexplicit](/dotnet/visual-basic/reference/command-line-compiler/optionexplicit).  
   
- **"Option Strict"**  
- Legt den Compilerstandard so fest, dass explizite Eingrenzungskonvertierungen erforderlich sind und späte Bindung nicht zulässig ist.  Standardmäßig ist **Option Strict** auf **Off** festgelegt.  Weitere Informationen finden Sie unter [\/optionstrict](/dotnet/visual-basic/reference/command-line-compiler/optionstrict).  
+ **Option Strict**  
+ Legt als Compilerstandardeinstellung fest, dass explizite einschränkende Konvertierungen erforderlich sind und eine späte Bindung nicht zulässig ist. Standardmäßig wird für **Option Strict** der Wert **Off** festgelegt. Weitere Informationen finden Sie unter [/optionstrict](/dotnet/visual-basic/reference/command-line-compiler/optionstrict).  
   
  **Option Compare**  
- Legt den Compilerstandard für Zeichenfolgenvergleiche fest: binär \(Berücksichtigung von Groß\- und Kleinschreibung\) oder Text \(ohne Berücksichtigung von Groß\- und Kleinschreibung\). Standardmäßig ist **Option Compare** auf **Binary** festgelegt.  Weitere Informationen finden Sie unter [\/optioncompare](/dotnet/visual-basic/reference/command-line-compiler/optioncompare).  
+ Legt als Compilerstandardeinstellung für Vergleiche von Zeichenfolgen entweder „binary“ (Groß- und Kleinschreibung wird beachtet) oder „text“ (Groß- und Kleinschreibung wird nicht beachtet) fest. Standardmäßig wird für **Option Compare** der Wert **binary** festgelegt. Weitere Informationen finden Sie unter [/optioncompare](/dotnet/visual-basic/reference/command-line-compiler/optioncompare).  
   
  **Option Infer**  
- Legt den Compilerstandard für lokalen Typrückschluss fest.  Standardmäßig ist **Option Infer** für neu erstellte Projekte auf **On** und für migrierte, in früheren Versionen von Visual Basic erstellte Projekte auf **Off** eingestellt.  Weitere Informationen finden Sie unter [\/optioninfer](/dotnet/visual-basic/reference/command-line-compiler/optioninfer).  
+ Legt die Compilerstandardeinstellung für den lokalen Typrückschluss fest. Standardmäßig wird für **Option Infer** der Wert **On** für neu erstellte Projekte und **Off** für migrierte Projekte verwendet, die in früheren Versionen von Visual Basic erstellt wurden. Weitere Informationen finden Sie unter [/optioninfer](/dotnet/visual-basic/reference/command-line-compiler/optioninfer).  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Projektmappen und Projekte](../../ide/solutions-and-projects-in-visual-studio.md)

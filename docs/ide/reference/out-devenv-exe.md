@@ -1,61 +1,61 @@
 ---
-title: "/Out (devenv.exe) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "/out (Devenv-Schalter)"
-  - "Builds [Visual Studio], Fehler"
-  - "Builds [Visual Studio], Protokolle"
-  - "Devenv, /out-Schalter"
-  - "Fehlerprotokolle [Visual Studio]"
-  - "Fehlerprotokolle [Visual Studio], Fehler beim Erstellen über die Befehlszeile"
-  - "Fehler [Visual Studio], Builds"
-  - "out (Devenv-Schalter)"
-  - "Ausgabedateien, Buildfehler"
+title: "-Out („devenv.exe“) | Microsoft-Dokumentation"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- errors [Visual Studio], builds
+- Devenv, /out switch
+- builds [Visual Studio], logs
+- error logs [Visual Studio], command-line build errors
+- error logs [Visual Studio]
+- /out Devenv switch
+- out Devenv switch
+- builds [Visual Studio], errors
+- output files, build errors
 ms.assetid: 9002d8c2-36d4-451c-b489-8f01932f31f7
-caps.latest.revision: 11
-caps.handback.revision: 11
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
+caps.latest.revision: "11"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 52e3714249ceabd79a490a084fe44d4d1a69fcf4
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# /Out (devenv.exe)
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Legt eine Datei zum Speichern und für die Anzeige von Fehlern fest, die beim Ausführen, Erstellen, Neuerstellen oder Bereitstellen einer Projektmappe ausgegeben werden.  
+# <a name="out-devenvexe"></a>/Out (devenv.exe)
+Gibt eine Datei an, die Fehler speichern und anzeigen soll, wenn Sie eine Projektmappe ausführen, erstellen, erneut erstellen oder bereitstellen.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 devenv /out FileName  
 ```  
   
-## Argumente  
+## <a name="arguments"></a>Argumente  
  `FileName`  
- Erforderlich.  Der Pfad und der Name der Datei, der bzw. die Fehler beim Erstellen einer ausführbaren Datei aufnimmt.  
+ Erforderlich. Der Pfad und der Name der Datei, die beim Erstellen einer ausführbaren Datei Fehler empfangen soll.  
   
-## Hinweise  
- Wenn der Name einer nicht vorhandenen Datei angegeben wird, wird die entsprechende Datei automatisch erstellt.  Wenn die Datei bereits vorhanden ist, werden die Ergebnisse an den vorhandenen Inhalt der Datei angefügt.  
+## <a name="remarks"></a>Hinweise  
+ Wenn ein nicht vorhandener Dateiname angegeben wird, wird die Datei automatisch erstellt. Wenn die Datei bereits vorhanden ist, werden die Ergebnisse an die vorhandenen Inhalte der Datei angefügt.  
   
- Während eines Befehlszeilenbuilds aufgetretene Fehler werden im **Befehlsfenster** und in der Ansicht Projektmappen\-Generator des **Ausgabefensters** angezeigt.  Diese Option ist nützlich, wenn Sie unbeaufsichtigte Builds erstellen und die Ergebnisse anzeigen können müssen.  
+ Buildfehler in der Befehlszeile werden im **Befehlsfenster** und der Solution Builder-Ansicht des **Ausgabefensters** angezeigt. Diese Option erweist sich als nützlich, wenn Sie unbeaufsichtigte Builds ausführen und die Ergebnisse benötigen.  
   
-## Beispiel  
- In diesem Beispiel wird `MySolution` ausgeführt und Fehler in die Datei `MyErrorLog.txt` geschrieben.  
+## <a name="example"></a>Beispiel  
+ In diesem Beispiel wird `MySolution` ausgeführt, und es werden Fehler in die `MyErrorLog.txt`-Datei geschrieben.  
   
 ```  
 devenv /run "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln" /out "C:\MyErrorLog.txt"  
 ```  
   
-## Siehe auch  
- [Devenv\-Befehlszeilenschalter](../../ide/reference/devenv-command-line-switches.md)   
- [\/Run](../../ide/reference/run-devenv-exe.md)   
- [\/Build](../../ide/reference/build-devenv-exe.md)   
- [\/Rebuild](../../ide/reference/rebuild-devenv-exe.md)   
- [\/Deploy](../../ide/reference/deploy-devenv-exe.md)
+## <a name="see-also"></a>Siehe auch  
+ [Devenv-Befehlszeilenschalter](../../ide/reference/devenv-command-line-switches.md)   
+ [/Run („devenv.exe“)](../../ide/reference/run-devenv-exe.md)   
+ [/Build („devenv.exe“)](../../ide/reference/build-devenv-exe.md)   
+ [/Rebuild („devenv.exe“)](../../ide/reference/rebuild-devenv-exe.md)   
+ [/Deploy (devenv.exe)](../../ide/reference/deploy-devenv-exe.md)

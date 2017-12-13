@@ -1,36 +1,36 @@
 ---
-title: "Starting a Build from within the IDE | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "build"
+title: Erstellen eines Builds von der IDE aus | Microsoft-Dokumentation
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: build
 ms.assetid: 936317aa-63b7-4eb0-b9db-b260a0306196
-caps.latest.revision: 5
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 5
+caps.latest.revision: "5"
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.openlocfilehash: 081bcfd01d8c28959bf0dd4d038e91895e9c3983
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Starting a Build from within the IDE
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Benutzerdefinierte Projektsysteme müssen Builds mithilfe von <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildManagerAccessor> starten.  In diesem Thema werden die Gründe hierfür beschrieben. Zudem wird die Prozedur erläutert.  
+# <a name="starting-a-build-from-within-the-ide"></a>Erstellen eines Builds von der IDE aus
+Benutzerdefinierte Projektsysteme müssen Builds mithilfe von <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildManagerAccessor> starten. In diesem Thema werden die Gründe hierfür beschrieben. Zudem wird die Prozedur erläutert.  
   
-## Parallele Builds und Threads  
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] erlaubt parallele Builds, sodass für den Zugriff auf allgemeine Ressourcen eine Vermittlung erforderlich ist.  Projektsysteme können Builds asynchron ausführen, diese Systeme dürfen jedoch keine Buildfunktionen innerhalb von Rückrufen aufrufen, die für den Build\-Manager bereitgestellt werden.  
+## <a name="parallel-builds-and-threads"></a>Parallele Builds und Threads  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] erlaubt parallele Builds, sodass für den Zugriff auf allgemeine Ressourcen eine Vermittlung erforderlich ist. Projektsysteme können Builds asynchron ausführen, diese Systeme dürfen jedoch keine Buildfunktionen innerhalb von Rückrufen aufrufen, die für den Build-Manager bereitgestellt werden.  
   
- Wenn das Projektsystem Umgebungsvariablen ändert, muss es die Knotenaffinität \(NodeAffinity\) des Builds auf OutOfProc festlegen.  Dies bedeutet, dass Sie keine Hostobjekte verwenden können, da sie den prozessinternen Knoten benötigen.  
+ Wenn das Projektsystem Umgebungsvariablen ändert, muss es die Knotenaffinität (NodeAffinity) des Builds auf OutOfProc festlegen. Dies bedeutet, dass Sie keine Hostobjekte verwenden können, da sie den prozessinternen Knoten benötigen.  
   
-## Verwenden von IVSBuildManagerAccessor  
+## <a name="using-ivsbuildmanageraccessor"></a>Verwenden von IVSBuildManagerAccessor  
  Im Code unten wird eine Methode veranschaulicht, mit der ein Projektsystem einen Build starten kann:  
   
-```  
+```csharp
   
 public bool Build(Project project, bool isDesignTimeBuild)  
 {  

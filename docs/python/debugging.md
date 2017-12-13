@@ -1,35 +1,31 @@
 ---
 title: Debuggen von Python in Visual Studio | Microsoft-Dokumentation
 ms.custom: 
-ms.date: 7/13/2017
-ms.prod: visual-studio-dev15
+ms.date: 07/13/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-python
+ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 2192dc77-b5da-4332-b753-fa20f03f81e0
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: 7a6aac76bc3830dd6c003c9834b242c6d79f7821
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
-ms.openlocfilehash: 92fd0f30dfbb09f0eca8d2c9bc98d7904d81353c
-ms.contentlocale: de-de
-ms.lasthandoff: 07/18/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="debugging-your-python-code"></a>Debuggen Ihres Python-Codes
 
 Visual Studio bietet umfangreiche Debugfunktionen für Python, u.a. Folgende: Anfügen an ausgeführte Prozesse, Auswerten von Ausdrücken in den Überwachungs- und Direktfenstern, Untersuchen lokaler Variablen, Haltepunkte, Anweisungsausführung in Einzelschritten, Prozedurschritten oder bis Rücksprung, Festlegen der nächsten Anweisung und viele weitere. 
 
-Eine Übersicht über das Debuggen erhalten Sie in diesem Video: [Getting Started with PTVS, Part 4: Debugging](https://youtu.be/bO7wpzgy74A?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff) (youtube.com, 3 Minuten, 30 Sekunden).
+Einen Überblick über das Debuggen finden Sie unter [Debugging Python (Debuggen von Python)](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=Ep5dp5LWE_3805918567) (Microsoft Virtual Academy, 3 Min. 32 Sek.).
 
-> [!VIDEO https://www.youtube.com/embed/bO7wpzgy74A]
+> [!VIDEO https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Debugging-Python-Ep5dp5LWE_3805918567]
 
 In diesem Thema:
 
@@ -44,13 +40,15 @@ Weitere Informationen finden Sie auch in den folgenden szenariospezifischen Them
 - [Python/C++ – Debuggen im gemischten Modus](debugging-mixed-mode.md)
 - [Symbole für das Debuggen im gemischten Modus](debugging-symbols-for-mixed-mode.md)
 
-<a name="debugging-without-a-project"</a>
+<a name="debugging-without-a-project"></a>
+
 > [!Tip]
-> Python in Visual Studio unterstützt das Debuggen ohne ein Projekt. Wenn eine eigenständige Python-Datei geöffnet ist, klicken Sie mit der rechten Maustaste in den Editor, und wählen Sie **Mit Debuggen starten** aus. Visual Studio startet das Skript mit der globalen Umgebung (siehe [Python-Umgebungen](python-environments.md)) und ohne Argumente. Danach verfügen Sie über vollständige Debuggingunterstützung.
+> Python in Visual Studio unterstützt das Debuggen ohne ein Projekt. Wenn eine eigenständige Python-Datei geöffnet ist, klicken Sie mit der rechten Maustaste in den Editor, und wählen Sie **Mit Debugging starten** aus. Visual Studio startet das Skript mit der globalen Standard-Umgebung (siehe [Python-Umgebungen](python-environments.md)) und ohne Argumente. Danach verfügen Sie über vollständige Debuggingunterstützung.
 >
 > Erstellen Sie ein Projekt für den Code, was mit der Projektvorlage [From Existing Python Code (Aus bestehendem Python-Code)](python-projects.md#creating-a-project-from-existing-files) ganz einfach erledigt ist, um die Umgebung und die Argumente zu steuern.
 
-<a name="debugging-with-a-project"</a>
+<a name="debugging-with-a-project"></a>
+
 ## <a name="basic-debugging"></a>Debuggen – Grundlagen
 
 Der grundlegende Debugworkflow umfasst das Festlegen von Haltepunkten, die Einzelschrittausführung des Codes, das Untersuchen von Code und das Behandeln von Ausnahmen, wie in den folgenden Abschnitten beschrieben. Vollständige Informationen zum Visual Studio-Debugger finden Sie unter [Debuggen in Visual Studio](../debugger/debugging-in-visual-studio.md).

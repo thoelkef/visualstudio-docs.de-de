@@ -4,35 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: f1502b51-d6db-4894-9fbf-4a5723e4bb1a
-caps.latest.revision: 8
+caps.latest.revision: "8"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: d6550f2aa1aab249eda569ff84ddf4dcf488aa18
-ms.contentlocale: de-de
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: 2e3e99bfad1ebf33f23c3b38189568935d0cedee
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/02/2017
 ---
 # <a name="upgrade-visual-studio-2010-unit-test-projects"></a>Upgrade der Komponententestprojekte von Visual Studio 2010
 Zu [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] gehört die Testprojektkompatibilität mit Testprojekten von [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] SP1. So können beispielsweise mit [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] SP1 erstellte Testprojekte ohne Upgrade mit [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] geöffnet werden. Somit ist es möglich, dass Teammitglieder sowohl mit [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] SP1 als auch mit [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] an ein und demselben Testprojekt arbeiten. Weitere Informationen finden Sie unter [Upgrading tests from Visual Studio 2010 (Aktualisieren von Tests von Visual Studio 2010)](http://msdn.microsoft.com/en-us/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52).  
@@ -43,14 +26,14 @@ Zu [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] gehört
 >  Vorhandene Komponententests in [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] SP1-Testprojekten können problemlos in [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] SP1 und [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] verwendet werden. Beim Öffnen eines Visual Studio 2010-Testprojekts mit Ihren Komponententests in [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] oder umgekehrt werden an den Testprojektdateien keine Änderungen vorgenommen.  
   
 > [!CAUTION]
->  C++/CLI-Projekte, die das 11.0-Toolset nutzen, d.h. in Visual Studio 2012 erstellte Projekte, können in Visual Studio 2010 nicht geöffnet werden. Diese Einschränkung gilt für alle C++/CLI-Projekte, nicht nur für C++/CLI-Komponententestprojekte.  
+>  C++/CLI-Projekte, die das 11.0-Toolset nutzen, d.h. in Visual Studio 2012 erstellte Projekte, können in Visual Studio 2010 und höher nicht geöffnet werden. Diese Einschränkung gilt für alle C++/CLI-Projekte, nicht nur für C++/CLI-Komponententestprojekte.  
   
 > [!NOTE]
 >  Die neuen Komponententests können mit dem Befehl vstest.console.exe über die Befehlszeile ausgeführt werden. Weitere Informationen zur Verwendung des Befehls vstest.console.exe finden Sie unter [VSTest.Console.exe command-line options (Befehlszeilenoptionen für VSTest.Console.exe )](/devops-test-docs/test/vstest-console-exe-command-line-options). Alternativ können Sie den Befehl mit dem Hilfe-Schalter ausführen: **vstest.console.exe /?**. Ihre vorhandenen Komponententests können Sie weiterhin mit dem Befehl MStest.exe ausführen. Weitere Informationen finden Sie unter [Run automated tests from the command line using MSTest (Ausführen von automatisierten Tests über die Befehlszeile mithilfe von MSTest)](/devops-test-docs/test/run-automated-tests-from-the-command-line-using-mstest) und [Befehlszeilenoptionen für MSTest.exe](/devops-test-docs/test/mstest-exe-command-line-options).  
   
  Eine weitere wichtige Änderung stellt der neue Test-Explorer dar. Einige Testfenster, wie etwa das Testansichtsfenster, die Sie von früheren Versionen von Visual Studio kennen, sind in [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] nicht mehr enthalten. Mit dem Test-Explorer können Entwickler und Teams die Komponententests besser in ihre Verfahren für die Softwareentwicklung integrieren. Weitere Informationen finden Sie unter [Run unit tests with Test Explorer (Ausführen von Komponententests mit dem Test-Explorer)](../test/run-unit-tests-with-test-explorer.md).  
   
-## <a name="compatibility-issues-between-visual-studio-2010-sp1-and-visual-studio-2012"></a>Kompatibilitätsprobleme mit Visual Studio 2010 SP1 und Visual Studio 2012  
+## <a name="compatibility-issues-between-visual-studio-2010-sp1-and-visual-studio-2012-or-later"></a>Kompatibilitätsprobleme mit Visual Studio 2010 SP1 und Visual Studio 2012 und höher  
  Folgende Punkte sollten Sie bei der Migration von Komponententests zwischen Visual Studio 2010 SP1 und [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] beachten:  
   
 |Komponententestfunktionen|Problem|Lösung|  
@@ -65,4 +48,3 @@ Zu [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] gehört
  [Unit Test Your Code (Komponententest für Code)](../test/unit-test-your-code.md)   
  [Upgrading Tests from Earlier Versions of Visual Studio (Upgrade der Tests von früheren Visual Studio-Versionen)](http://msdn.microsoft.com/en-us/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52)   
  [Upgrade der Tests der programmierten UI von Visual Studio 2010](../test/upgrading-coded-ui-tests-from-visual-studio-2010.md)
-

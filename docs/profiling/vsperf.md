@@ -1,73 +1,74 @@
 ---
-title: "VSPerf | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: VSPerf | Microsoft-Dokumentation
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: b5854e62-279e-4850-bfeb-0c6ef82f4805
-caps.latest.revision: 6
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 6
+caps.latest.revision: "6"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 8bd2365752e31ce463610b75fee3884271841b3c
+ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/11/2017
 ---
-# VSPerf
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Verwenden Sie das Befehlszeilentool **VsPerf**:  
+# <a name="vsperf"></a>VSPerf
+Verwenden Sie das Befehlszeilentool **VsPerf** für Folgendes:  
   
-1.  Erstellen Sie Windows Store\-Apps aus der Befehlszeile ein Profil, wenn Visual Studio nicht auf dem Gerät installiert ist.  
+1.  Erstellen Sie von der Befehlszeile aus Profile für UWP-Apps, wenn Visual Studio nicht auf dem Gerät installiert ist.  
   
-2.  Erstellen Sie Windows 8\-Desktopanwendungen und Windows Server 2012\-Anwendungen mithilfe der Samplingmethode ein Profil.  
+2.  Erstellen Sie Profile für Windows 8-Desktopanwendungen und Windows Server 2012-Anwendungen mithilfe der Sampling-Profilerstellungsmethode.  
   
- Weitere Informationen über die Profilerstellungsoptionen, finden Sie unter [Profilerstellung für Windows 8\- und Windows Server 2012\-Anwendungen](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
+ Weitere Informationen zu Ihren Profilerstellungsoptionen finden Sie unter [Profilerstellung für Windows 8- und Windows Server 2012-Anwendungen](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
 ##  <a name="BKMK_In_this_topic"></a> In diesem Thema  
- In diesem Thema werden die Optionen, die Sie mit dem `vsperf.exe` \- Befehlszeilentool verwenden können.  Dieses Thema enthält folgende Abschnitte:  
+ Dieses Thema beschreibt die Optionen, die Sie mit dem Befehlszeilentool `vsperf.exe` verwenden können. Dieses Thema enthält folgende Abschnitte:  
   
- [Nur Windows Store-Apps](#BKMK_windows_store_apps_only)  
+ [Nur UWP-Apps](#BKMK_windows_store_apps_only)  
   
- [Windows 8-Desktopanwendungen und nur Windows Server 2012-Anwendungen](#BKMK_Windows_8_classic_applications_and_Windows_Server_2012_applications_only)  
+ [Nur Windows 8-Desktopanwendungen und Windows Server 2012-Anwendungen](#BKMK_Windows_8_classic_applications_and_Windows_Server_2012_applications_only)  
   
  [Alle Anwendungen](#BKMK_All_applications)  
   
-##  <a name="BKMK_windows_store_apps_only"></a> Nur Windows Store\-Apps  
- Diese Optionen gelten nur für Windows Store\-Apps zu.  
+##  <a name="BKMK_windows_store_apps_only"></a> Nur UWP-Apps  
+ Diese Optionen gelten nur für UWP-Apps.  
   
 |||  
 |-|-|  
-|**\/app:{AppName}**|Startet den Profiler und die Wartung die angegebene App, gestartetes von Startmenü zu sein.<br /><br /> Ausführung `vsperf /listapps`, das App Namens und des PackageFullName installierter Apps anzuzeigen.|  
-|**\/package:{PackageFullName}**|Startet den Profiler und die Wartung die angegebene App, gestartetes von Startmenü zu sein.<br /><br /> Ausführung `vsperf /listapps`, das App Namens und des PackageFullName installierter Apps anzuzeigen.|  
-|**\/js**|Erforderlich für die Profilerstellung von JavaScript\-Apps.<br /><br /> Sammeln von Leistungsdaten von JavaScript\-Apps.<br /><br /> Verwenden Sie nur mit \/package oder \/attach.|  
-|**\/noclr**|Optional.  Sammeln Sie nicht CLR\-Daten.<br /><br /> Verwenden Sie nur mit \/package oder \/attach.<br /><br /> Optimierung, keine verwalteten Symbole wird für.|  
-|**\/listapps**|Liste installierte App Namen und PackageFullNames.|  
+|**/app:{AppName}**|Startet den Profiler und wartet darauf, dass die angegebene App vom Startmenü aus gestartet wird.<br /><br /> Führen Sie `vsperf /listapps` aus, um den App-Namen und PackageFullName der installierten Apps anzuzeigen.|  
+|**/package:{PackageFullName}**|Startet den Profiler und wartet darauf, dass die angegebene App vom Startmenü aus gestartet wird.<br /><br /> Führen Sie `vsperf /listapps` aus, um den App-Namen und PackageFullName der installierten Apps anzuzeigen.|  
+|**/js**|Erforderlich für die Profilerstellung von JavaScript-Apps.<br /><br /> Es werden Leistungsdaten von JavaScript-Apps gesammelt.<br /><br /> Nur mit „/package“ oder „/attach“ verwenden.|  
+|**/noclr**|Optional. Es werden keine CLR-Daten gesammelt.<br /><br /> Nur mit „/package“ oder „/attach“ verwenden.<br /><br /> Optimierung, es werden keine verwalteten Symbole aufgelöst.|  
+|**/listapps**|Listet Namen installierter Apps und PackageFullNames auf.|  
   
-##  <a name="BKMK_Windows_8_classic_applications_and_Windows_Server_2012_applications_only"></a> Windows 8\-Desktopanwendungen und nur Windows Server 2012\-Anwendungen  
- Diese Optionen funktionieren nicht auf Windows Store\-Apps.  
+##  <a name="BKMK_Windows_8_classic_applications_and_Windows_Server_2012_applications_only"></a> Nur Windows 8-Desktopanwendungen und Windows Server 2012-Anwendungen  
+ Diese Optionen funktionieren nicht mit UWP-Apps.  
   
 |||  
 |-|-|  
-|**\/launch:{Executable}**|Startet und startet, die angegebene ausführbare Datei ein Profil erstellen.|  
-|**\/args:{ExecutableArguments}**|Legt Befehlszeilenargumente an, um das Ziel **\/launch** zu übergeben.|  
-|**\/console**|Führt das **\/launch** ein neues Ziel in Befehlsfenster aus.|  
+|**/launch:{Executable}**|Startet und beginnt die Profilerstellung für die angegebene ausführbare Datei.|  
+|**/args:{ExecutableArguments}**|Gibt Befehlszeilenargumente an, um das **/launch**-Ziel zu erreichen.|  
+|**/console**|Führt das **/launch**-Ziel in einem neuen Befehlsfenster aus.|  
   
 ##  <a name="BKMK_All_applications"></a> Alle Anwendungen  
- Dadurch gelten Option beliebige Windows 8 oder Windows Server 2012\-Anwendung zu.  
+ Diese Option gilt für jede Windows 8- oder Windows Server 2012-Anwendung.  
   
 |||  
 |-|-|  
-|**\/attach:{PID&#124;ProcessName}\[,PID&#124;ProcessName\]...**|Sammelt Daten aus angegebenen Prozesse.<br /><br /> Verwenden Sie Task\-Manager, um die Prozess\-ID \(PID\) anzuzeigen und verarbeiten Sie Namen von ausgeführten App.|  
-|**\/file:{ReportName}**|Optional.  Gibt Ausgabedatei an \(überschreiben vorhandene Datei\).<br /><br /> Verwenden Sie nur mit \/package oder \/attach.|  
-|**\/pause**|PAUSE\-Datensammlung.|  
-|**\/resume**|Zusammenfassungsdatensammlung.|  
-|**\/stop**|Beenden Sie die Datensammlung und beenden Sie Zielprozesse.|  
-|**\/detach**|Beenden Sie die Datensammlung, aber lassen Sie Zielprozesse fortfahren, um ausgeführt zu werden.|  
-|**\/status**|Zeigen Sie Profilerstatus an.|  
+|**/attach:{PID&#124;ProcessName}[,PID&#124;ProcessName]...**|Sammelt Daten aus den angegebenen Prozessen.<br /><br /> Verwenden Sie Task-Manager, um die Prozess-ID (PID) anzuzeigen und Namen von ausgeführten Apps zu verarbeiten.|  
+|**/file:{ReportName}**|Optional. Gibt die Ausgabedatei an (überschreibt die vorhandene Datei).<br /><br /> Nur mit „/package“ oder „/attach“ verwenden.|  
+|**/pause**|Hält die Datensammlung an.|  
+|**/resume**|Führt die Datensammlung fort.|  
+|**/stop**|Beendet die Datensammlung und die Zielprozesse.|  
+|**/detach**|Beendet die Datensammlung, erlaubt jedoch die weitere Ausführung von Zielprozessen.|  
+|**/status**|Zeit den Profiler-Status an.|  
   
-## Siehe auch  
- [Profilerstellung für Windows 8\- und Windows Server 2012\-Anwendungen](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)   
+## <a name="see-also"></a>Siehe auch  
+ [Profilerstellung für Windows 8- und Windows Server 2012-Anwendungen](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)   
  [Profilerstellung mithilfe der Befehlszeile](../profiling/using-the-profiling-tools-from-the-command-line.md)

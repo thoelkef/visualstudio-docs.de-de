@@ -1,41 +1,43 @@
 ---
-title: "JavaScript-Grundlagen | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "JavaScript, Grundlagen"
+title: JavaScript-Grundlagen | Microsoft-Dokumentation
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords: JavaScript, fundamentals
 ms.assetid: 0441e1e5-34e4-4d32-b188-f7fc35613478
-caps.latest.revision: 27
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 27
+caps.latest.revision: "27"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 01eb433680881975adc3ca05d6ce7a9ed9222bca
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# JavaScript-Grundlagen
+# <a name="javascript-fundamentals"></a>JavaScript-Grundlagen
 [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] ist eine interpretierte, objektbasierte Skriptsprache.  
   
- Die [!INCLUDE[javascript](../javascript/includes/javascript-md.md)]\-Sprache verwendet eine ähnliche Syntax wie C und unterstützt strukturierte Konstrukte, wie `if...else`, `for` und `do...while`.  Geschweifte Klammern \({}\) werden verwendet, um Anweisungsblöcke abzugrenzen.  Die Sprache unterstützt verschiedene Datentypen, einschließlich `String`, `Number`, `Boolean`, `Object` und `Array`.  Sie enthält Unterstützung für verbesserte Datumsfunktionen, trigonometrische Funktionen und reguläre Ausdrücke.  
+ Die [!INCLUDE[javascript](../javascript/includes/javascript-md.md)]-Sprache verwendet eine ähnliche Syntax wie C und unterstützt strukturierte Konstrukte, wie `if...else`, `for` und `do...while`. Geschweifte Klammern ({}) werden verwendet, um Anweisungsblöcke abzugrenzen. Die Sprache unterstützt verschiedene Datentypen, einschließlich `String`, `Number`, `Boolean`, `Object` und `Array`. Sie enthält Unterstützung für verbesserte Datumsfunktionen, trigonometrische Funktionen und reguläre Ausdrücke.  
   
- [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] verwendet Prototypen anstelle von Klassen.  Sie können ein Objekt definieren, indem Sie eine Konstruktorfunktion erstellen.  
+ [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] verwendet Prototypen anstelle von Klassen. Sie können ein Objekt definieren, indem Sie eine Konstruktorfunktion erstellen.  
   
- [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] ist eine schwach typisierte Sprache, d. h., Sie deklarieren die Datentypen von Variablen nicht explizit.  In vielen Fällen führt [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] Konvertierungen automatisch aus, wenn sie benötigt werden.  Wenn Sie beispielsweise eine Zahl zu einem Element hinzufügen, das aus Text \(einer Zeichenfolge\) besteht, wird die Zahl in Text konvertiert.  
+ [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] ist eine schwach typisierte Sprache, d. h., Sie deklarieren die Datentypen von Variablen nicht explizit. In vielen Fällen führt [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] Konvertierungen automatisch aus, wenn sie benötigt werden. Wenn Sie beispielsweise eine Zahl zu einem Element hinzufügen, das aus Text (einer Zeichenfolge) besteht, wird die Zahl in Text konvertiert.  
   
-## In diesem Abschnitt  
- [Schreiben von JavaScript\-Code](../javascript/writing-javascript-code.md)  
- Erläutert die Organisation von Elementen innerhalb des [!INCLUDE[javascript](../javascript/includes/javascript-md.md)]\-Codes.  
+## <a name="in-this-section"></a>In diesem Abschnitt  
+ [Schreiben von JavaScript-Code](../javascript/writing-javascript-code.md)  
+ Erläutert die Organisation von Elementen innerhalb des [!INCLUDE[javascript](../javascript/includes/javascript-md.md)]-Codes.  
   
- [JavaScript\-Variablen](../javascript/variables-javascript.md)  
+ [JavaScript-Variablen](../javascript/variables-javascript.md)  
  Erklärt das Konzept von Variablen in [!INCLUDE[javascript](../javascript/includes/javascript-md.md)].  
   
  [Datentypen](../javascript/data-types-javascript.md)  
@@ -62,18 +64,18 @@ caps.handback.revision: 27
  [Erstellen eigener Objekte](../javascript/creating-objects-javascript.md)  
  Erläutert, wie ein Objekt durch Definieren einer Konstruktorfunktion erstellt wird.  
   
- [Datum\- und Uhrzeitberechnungen](../javascript/calculating-dates-and-times-javascript.md)  
- Beschreibt die Ausführung allgemeiner Kalender\- und Uhrzeitaufgaben, z. B. das Bearbeiten und Vergleichen von Datumsangaben und das Berechnen der verstrichenen Zeit.  
+ [Datum- und Uhrzeitberechnungen](../javascript/calculating-dates-and-times-javascript.md)  
+ Beschreibt die Ausführung allgemeiner Kalender- und Uhrzeitaufgaben, z. B. das Bearbeiten und Vergleichen von Datumsangaben und das Berechnen der verstrichenen Zeit.  
   
- [Datum\- und Uhrzeitzeichenfolgen](../javascript/date-and-time-strings-javascript.md)  
- Erläutert, wie Datums\- und Uhrzeitzeichenfolgen formatiert werden.  
+ [Datum- und Uhrzeitzeichenfolgen](../javascript/date-and-time-strings-javascript.md)  
+ Erläutert, wie Datums- und Uhrzeitzeichenfolgen formatiert werden.  
   
  [Anzeigen von Text auf einer Webseite](../javascript/displaying-text-in-a-webpage-javascript.md)  
  Beschreibt verschiedene Möglichkeiten zum Anzeigen von Text.  
   
-## Verwandte Abschnitte  
+## <a name="related-sections"></a>Verwandte Abschnitte  
  [Erweitertes JavaScript](../javascript/advanced/advanced-javascript.md)  
- Erklärt erweiterte [!INCLUDE[javascript](../javascript/includes/javascript-md.md)]\-Funktionen, wie Rekursion, Arrays, Problembehandlung usw.  
+ Erklärt erweiterte [!INCLUDE[javascript](../javascript/includes/javascript-md.md)]-Funktionen, wie Rekursion, Arrays, Problembehandlung usw.  
   
- [JavaScript\-Sprachverweis](../javascript/reference/javascript-reference.md)  
+ [JavaScript-Sprachreferenz](../javascript/reference/javascript-reference.md)  
  Beschreibt die Elemente, die die Sprache von [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] bilden.

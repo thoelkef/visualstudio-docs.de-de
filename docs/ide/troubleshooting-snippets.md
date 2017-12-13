@@ -1,42 +1,43 @@
 ---
-title: "Problembehandlung bei Codeausschnitten | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "IntelliSense-Codeausschnitte, Problembehandlung"
-  - "Problembehandlung (IntelliSense-Codeausschnitte)"
-  - "Problembehandlung in Visual Basic, IntelliSense-Codeausschnitte"
+title: Problembehandlung bei Codeausschnitten | Microsoft-Dokumentation
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- IntelliSense Code Snippets, troubleshooting
+- troubleshooting IntelliSense Code Snippets
+- troubleshooting Visual Basic, IntelliSense Code Snippets
 ms.assetid: 7b6dd40e-2f78-4b50-8e68-41fac1bcb81e
-caps.latest.revision: 17
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 17
+caps.latest.revision: "17"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 80e5ba76a54b584e5eed74f507f1fb3b81e7f89e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Problembehandlung bei Codeausschnitten
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Für Probleme mit IntelliSense\-Codeausschnitten gibt es in der Regel zwei Ursachen: eine beschädigte Ausschnittdatei oder fehlerhafter Inhalt in der Ausschnittdatei.  
+# <a name="troubleshooting-snippets"></a>Problembehandlung bei Codeausschnitten
+Probleme bei IntelliSense-Codeausschnitten sind häufig auf eine beschädigte Ausschnittsdatei oder auf fehlerhafte Inhalte in der Datei zurückzuführen.  
   
-## Allgemeine Probleme  
+## <a name="common-problems"></a>Häufige Probleme  
   
-### Der Ausschnitt kann nicht gezogener Explorer in eine Visual Studio\-Quelldatei von Datei sein  
+### <a name="the-snippet-cannot-be-dragged-from-file-explorer-to-a-visual-studio-source-file"></a>Der Codeausschnitt lässt sich nicht vom Explorer in eine Visual Studio-Quelldatei ziehen  
   
--   Der XML\-Code in der Ausschnittdatei ist möglicherweise beschädigt.  Der **XML\-Editor** in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] kann nach Problemen in der XML\-Struktur suchen.  
+-   Der XML-Code in der Ausschnittsdatei ist möglicherweise fehlerhaft. Probleme mit der XML-Struktur können mithilfe des **XML-Editors** in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ermittelt werden.  
   
--   Die Ausschnittdatei entspricht eventuell nicht dem Ausschnittschema.  Der **XML\-Editor** in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] kann nach Problemen in der XML\-Struktur suchen.  
+-   Die Ausschnittsdatei entspricht nicht dem Ausschnittsschema. Probleme mit der XML-Struktur können mithilfe des **XML-Editors** in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ermittelt werden.  
   
-### Der Code enthält Compilerfehler, die nicht hervorgehoben werden  
+### <a name="the-code-has-compiler-errors-that-are-not-highlighted"></a>Im Code befinden sich Compilerfehler, die nicht hervorgehoben werden  
   
--   Möglicherweise fehlt ein Projektverweis.  Lesen Sie die Dokumentation zum Codeausschnitt.  Wenn der Verweis auf dem Computer nicht gefunden wird, müssen Sie ihn installieren.  Durch Einfügen eines Ausschnitts sollten auch alle benötigten Verweise zu dem Projekt hinzugefügt werden.  Wenn der Ausschnitt die Verweisinformationen nicht enthält, wird dies dem Ausschnittersteller unter Umständen als Fehler mitgeteilt.  
+-   Möglicherweise ist ein Projektverweis nicht vorhanden. Lesen Sie die Dokumentation zu dem Codeausschnitt. Wenn der Verweis nicht auf dem Computer gefunden wird, müssen Sie diesen installieren. Durch das Einfügen eines Codeausschnitts sollten dem Projekt alle erforderlichen Verweise hinzugefügt werden. Wenn die Verweisinformationen nicht im Codeausschnitt vorhanden sind, kann dieser Fehler dem Ausschnittsersteller gemeldet werden.  
   
--   Eine Variable ist eventuell nicht definiert.  Nicht definierte Variablen in einem Ausschnitt sollten hervorgehoben werden.  Andernfalls wird dem Ausschnittersteller möglicherweise ein Fehler gemeldet.  
+-   Eine Variable wurde möglicherweise nicht definiert. Nicht definierte Variablen in einem Ausschnitt sollten hervorgehoben werden. Wenn dies nicht der Fall ist, kann dieser Fehler dem Ausschnittsersteller gemeldet werden.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Codeausschnitte](../ide/code-snippets.md)

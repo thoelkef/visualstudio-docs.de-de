@@ -1,27 +1,29 @@
 ---
-title: "JsEquals-Funktion | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
-f1_keywords: 
-  - "jsrt/JsEquals"
-helpviewer_keywords: 
-  - "JsEquals-Funktion"
+title: JsEquals-Funktion | Microsoft-Dokumentation
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
+f1_keywords: jsrt/JsEquals
+helpviewer_keywords: JsEquals function
 ms.assetid: 8377a7b6-12ff-43e4-8cc8-5a5a198a168b
-caps.latest.revision: 12
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 4bb0a40cf74021fbad081745ef27c79a6a4b2b78
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# JsEquals-Funktion
-Vergleicht zwei JavaScript\-Werte hinsichtlich ihrer Gleichheit.  
+# <a name="jsequals-function"></a>JsEquals-Funktion
+Vergleicht zwei JavaScript-Werte hinsichtlich ihrer Gleichheit.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 STDAPI_(JsErrorCode) JsEquals(  
@@ -31,7 +33,7 @@ STDAPI_(JsErrorCode) JsEquals(
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `object1`  
  Das erste zu vergleichende Objekt.  
   
@@ -41,16 +43,16 @@ STDAPI_(JsErrorCode) JsEquals(
  `result`  
  Gibt an, ob die Werte gleich sind.  
   
-## Rückgabewert  
- Der Code `JsNoError`, wenn der Vorgang erfolgreich war, andernfalls ein Fehlercode.  
+## <a name="return-value"></a>Rückgabewert  
+ Der Code `JsNoError` , wenn der Vorgang erfolgreich war, andernfalls ein Fehlercode.  
   
-## Hinweise  
+## <a name="remarks"></a>Hinweise  
  Diese Funktion entspricht dem Operator `==` in JavaScript.  
   
- Erfordert einen Active Script\-Kontext.  
+ Erfordert einen Active Script-Kontext.  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  **Header:** jsrt.h  
   
-## Siehe auch  
- [Verweis \(JavaScript\-Laufzeit\)](../chakra-hosting/reference-javascript-runtime.md)
+## <a name="see-also"></a>Siehe auch  
+ [Referenz (JavaScript-Laufzeit)](../chakra-hosting/reference-javascript-runtime.md)

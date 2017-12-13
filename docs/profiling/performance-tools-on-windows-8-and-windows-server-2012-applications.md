@@ -4,45 +4,28 @@ ms.custom:
 ms.date: 06/19/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: a704215d-d252-4087-921b-ac81ebe2a9c9
-caps.latest.revision: 15
+caps.latest.revision: "15"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: baf12bba10dfba15f10d75fd1f7a4cdc4000e441
-ms.openlocfilehash: a5d885f8604bdb52907adae4f231b41e0881017f
-ms.contentlocale: de-de
-ms.lasthandoff: 06/21/2017
-
+ms.openlocfilehash: b6e71a7cc3200de9570ee0545bbc60e59943a693
+ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/11/2017
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Leistungstools für Windows 8- und Windows Server 2012-Anwendungen
-Verbesserte Sicherheitsfunktionen ab Windows 8 und Windows Server 2012 erforderten tiefgreifende Änderungen bei der Datenerfassung der Visual Studio-Leistungstools auf diesen Plattformen. Außerdem benötigen Windows Store-Apps neue Erfassungsmethoden. In diesem Thema werden die Änderungen für die Leistungstools auf Windows 8- und Windows Server 2012-Plattformen beschrieben.
+Verbesserte Sicherheitsfunktionen ab Windows 8 und Windows Server 2012 erforderten tiefgreifende Änderungen bei der Datenerfassung der Visual Studio-Leistungstools auf diesen Plattformen. Außerdem benötigen UWP-Apps neue Erfassungsmethoden. In diesem Thema werden die Änderungen für die Leistungstools auf Windows 8- und Windows Server 2012-Plattformen beschrieben.
   
 > [!NOTE]
 >  Leistungstools für andere unterstützte Versionen von Windows (Windows 7, Windows Server 2008 R2) haben sich nicht geändert.
   
 ##  <a name="BKMK_In_this_topic"></a> In diesem Thema  
- [Sammeln von Daten für Windows Store-Apps in Visual Studio-IDE](#BKMK_Profiling_Windows_Store_apps_from_the_Visual_Studio_IDE)  
+ [Erfassen von Daten für UWP-Apps in der Visual Studio-IDE](#BKMK_Profiling_Windows_Store_apps_from_the_Visual_Studio_IDE)  
   
  [Sammeln von Daten aus der Visual Studio-IDE für Apps, die auf dem Windows 8-Desktop oder unter Windows Server 2012 ausgeführt werden](#BKMK_Profiling_apps_running_on_the_Windows_8_desktop_or_on_Windows_Server_2012_from_the_Visual_Studio_IDE)  
   
@@ -52,10 +35,10 @@ Verbesserte Sicherheitsfunktionen ab Windows 8 und Windows Server 2012 erfordert
   
  [Sammeln von Ebeneninteraktionsdaten (TIP-Daten)](#BKMK_Collecting_tier_interaction__TIP__data)  
   
-##  <a name="BKMK_Profiling_Windows_Store_apps_from_the_Visual_Studio_IDE"></a> Sammeln von Daten für Windows Store-Apps in Visual Studio-IDE  
- Wenn Sie das Profil für eine Windows Store-App erstellen, die in JavaScript und HTML 5 geschrieben ist, erfassen Sie Instrumentationsdaten für den JavaScript-Code. Wenn Sie das Profil für eine Windows Store-App oder -Komponente erstellen, die in Visual C++, Visual C# oder Visual Basic geschrieben ist, erfassen Sie Samplingdaten für den systemeigenen und verwalteten Code. Sie können das Profil für die App lokal oder auf einem Remotecomputer erstellen.  
+##  <a name="BKMK_Profiling_Windows_Store_apps_from_the_Visual_Studio_IDE"></a> Erfassen von Daten für UWP-Apps in der Visual Studio-IDE  
+ Wenn Sie das Profil für eine UWP-App erstellen, die in JavaScript und HTML 5 geschrieben ist, erfassen Sie Instrumentationsdaten für den JavaScript-Code. Wenn Sie das Profil für eine UWP-App oder -Komponente erstellen, die in Visual C++, Visual C# oder Visual Basic geschrieben ist, erfassen Sie Samplingdaten für den nativen und verwalteten Code. Sie können das Profil für die App lokal oder auf einem Remotecomputer erstellen.  
   
- Diese Funktionen und Optionen für die Profilerstellung werden nicht unterstützt, wenn Profile für Windows Store-Apps erstellt werden:  
+ Diese Funktionen und Optionen für die Profilerstellung werden nicht unterstützt, wenn Profile für UWP-Apps erstellt werden:  
   
 -   Die Profilerstellung von JavaScript-Apps mit der Samplingmethode.  
   
@@ -71,23 +54,23 @@ Verbesserte Sicherheitsfunktionen ab Windows 8 und Windows Server 2012 erfordert
   
 -   Instrumentationsoptionen, z. B. das Sammeln von Leistungs- und Fensterindikatordaten oder das Angeben zusätzlicher Befehlszeilenoptionen.  
   
- Weitere Informationen zur Profilerstellung für Windows Store-Apps finden Sie in den folgenden Themen:  
+ Weitere Informationen zur Profilerstellung für UWP-Apps finden Sie in den folgenden Artikeln:  
   
- [Ausführen von Windows Store-Apps auf einem lokalen Computer](../debugger/run-windows-store-apps-on-the-local-machine.md)  
+ [Run UWP apps on the local machine (Ausführen von UWP-Apps auf einem lokalen Computer)](../debugger/run-windows-store-apps-on-the-local-machine.md)  
   
- [Ausführen von Windows Store-Apps auf einem Remotecomputer](../debugger/run-windows-store-apps-on-a-remote-machine.md)  
+ [Run UWP apps on a remote machine (Ausführen von UWP-Apps auf einem Remotecomputer)](../debugger/run-windows-store-apps-on-a-remote-machine.md)  
   
  [Profilerstellungstools](profiling-tools.md)  
   
 -   [JavaScript-Speicher](../profiling/javascript-memory.md)
   
--   [Profilerstellung für Visual C++-, Visual C#- und Visual Basic-Code in Windows Store-Apps auf einem lokalen Computer](http://msdn.microsoft.com/en-us/2d0c939e-0bac-48c5-b727-46f6c6113060)  
+-   [Profilerstellung für Visual C++-, Visual C#- und Visual Basic-Code in UWP-Apps auf einem lokalen Computer](http://msdn.microsoft.com/en-us/2d0c939e-0bac-48c5-b727-46f6c6113060)  
   
--   [Erstellen eines Profils von Visual C++-, Visual C#- und Visual Basic-Code in Windows Store-Apps auf einem Remotegerät](http://msdn.microsoft.com/en-us/b932a2be-11b0-40fd-b996-75c6b6a79d22)  
+-   [Erstellen eines Profils von Visual C++-, Visual C#- und Visual Basic-Code in UWP-Apps auf einem Remotegerät](http://msdn.microsoft.com/en-us/b932a2be-11b0-40fd-b996-75c6b6a79d22)  
   
--   [Analysieren von Leistungsdaten für Visual C++-, Visual C#- und Visual Basic-Code in Windows Store-Apps](http://msdn.microsoft.com/en-us/5de4a413-d924-425f-afc4-e1ecfb0fca18)  
+-   [Analysieren von Leistungsdaten für Visual C++-, Visual C#- und Visual Basic-Code in UWP-Apps](http://msdn.microsoft.com/en-us/5de4a413-d924-425f-afc4-e1ecfb0fca18)  
   
- [In diesem Thema](#BKMK_In_this_topic)  
+ [Inhalt](#BKMK_In_this_topic)  
   
 ##  <a name="BKMK_Profiling_apps_running_on_the_Windows_8_desktop_or_on_Windows_Server_2012_from_the_Visual_Studio_IDE"></a> Sammeln von Daten aus der Visual Studio-IDE für Apps, die auf dem Windows 8-Desktop oder unter Windows Server 2012 ausgeführt werden  
  Die Profilerstellung mithilfe der Instrumentationsmethode hat sich unter Windows 8 nicht geändert.  
@@ -106,7 +89,7 @@ Verbesserte Sicherheitsfunktionen ab Windows 8 und Windows Server 2012 erfordert
   
 |Toolname|Beschreibung|  
 |---------------|-----------------|  
-|[VSPerf](../profiling/vsperf.md)|Sammelt Profilerstellungsdaten von Windows Store-Apps und Beispielprofilerstellungsdaten von Windows 8-Desktopanwendungen und Windows Server 2012-Anwendungen.|  
+|[VSPerf](../profiling/vsperf.md)|Erfasst Profilerstellungsdaten von UWP-Apps und Beispielprofilerstellungsdaten von Windows 8-Desktopanwendungen und Windows Server 2012-Anwendungen.|  
 |[VSPerfCmd](../profiling/vsperfcmd.md)|Sammelt Instrumentations-, Parallelitäts- und Ebeneninteraktionsprofilerstellungsdaten von Apps, die unter Windows 8-Desktop oder Windows Server 2012 ausgeführt werden. Sammelt alle Arten von Profilerstellungsdaten von früheren Versionen von Windows.|  
   
  Beide Tools werden mit Visual Studio zur Verwendung auf dem lokalen Computer installiert.  
@@ -139,7 +122,7 @@ Verbesserte Sicherheitsfunktionen ab Windows 8 und Windows Server 2012 erfordert
   
 1.  Um Ebeneninteraktionsdaten von Apps zu sammeln, die unter Windows 8 Desktop oder Windows Server 2012 ausgeführt werden, müssen Sie die Instrumentationsmethode verwenden.  
   
-2.  Sie können Ebeneninteraktionsdaten nicht für Windows Store-Apps sammeln.  
+2.  Sie können Ebeneninteraktionsdaten nicht für UWP-Apps erfassen.  
   
 3.  Sie können Ebeneninteraktionsdaten in alle Profilerstellungsmethoden einer anderen unterstützten Version von Windows einschließen.  
   

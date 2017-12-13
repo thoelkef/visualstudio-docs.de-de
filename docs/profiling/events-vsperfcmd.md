@@ -1,50 +1,51 @@
 ---
-title: "Events (VSPerfCmd) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: Events (VSPerfCmd) | Microsoft-Dokumentation
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: eb139327-4783-4f2a-874c-efad377a7be4
-caps.latest.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 84f1d515722203f15b1b667df6fb7fdf72fe4fb4
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Events (VSPerfCmd)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Die **Events**\-Option von VSPerfCmd.exe steuert die ETW\-Protokollierung \(Ereignisablaufverfolgung für Windows\).  ETW\-Daten werden in einer ETL\-Datei gespeichert, die von der Profiler\-Datendatei getrennt ist.  Die Daten können mithilfe des Befehls [VSPerfReport](../profiling/vsperfreport.md) \/summary:etw in einem Bericht angezeigt werden.  
+# <a name="events-vsperfcmd"></a>Events (VSPerfCmd)
+Die VSPerfCmd.exe-Option **Events** steuert die Protokollierung der Ereignisablaufverfolgung für Windows (ETW). ETW-Daten werden in einer ETL-Datei gespeichert, die von der Profiler-Datendatei getrennt ist. Die Daten können in einem Bericht mithilfe des Befehls „[VSPerfReport ](../profiling/vsperfreport.md) /summary: etw“ angezeigt werden.  
   
- Die **Events**\-Option kann jederzeit aufgerufen werden, bevor der VSPerfCmd\-Befehl **Shutdown** zum Beenden der Profilerstellung aufgerufen wird.  
+ Die Option **Events** kann jederzeit aufgerufen werden, bevor der VSPerfCmd-Befehl **Shutdown** zum Beenden der Profilerstellung aufgerufen wird.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 VSPerfCmd.exe /events {On|Off} {Guid|ProviderName} [,Flags[,Level]  
 ```  
   
-#### Parameter  
- **On**&#124;**Off**  
- Startet oder beendet das Sammeln von Ereignisdaten.  
+#### <a name="parameters"></a>Parameter  
+ **On**|**Off**  
+ Startet oder beendet die Sammlung von Ereignisdaten  
   
  `Guid`  
- Die GUID des Anbietersteuerelements.  
+ Die GUID des Anbietersteuerelements  
   
  `ProviderName`  
- Der Name des Anbieters, der bei WMI \(Windows\-Verwaltungsinstrumentation\) registriert ist.  
+ Der Name des Anbieters, der bei der Windows-Verwaltungsinstrumentation (Windows Management Instrumentation, WMI) registriert ist  
   
  `Flags`  
- Ein hexadezimaler Flagwert mit vorangestelltem "0x", der vom Ereignisanbieter definiert wurde.  
+ Ein mit „0x“ präfigierter Wert eines hexadezimal Flags, der vom Ereignisanbieter definiert wird  
   
  `Level`  
- Gibt die Menge der gesammelten Daten an.  `Level` wird vom Ereignisanbieter definiert.  
+ Gibt die Menge der gesammelten Daten an. `Level` wird vom Ereignisanbieter definiert.  
   
- Die **Events**\-Option fasst die folgenden Kernelschlüsselwörter als Anbieternamen auf:  
+ Die Option **Events** versteht die folgenden Kernelschlüsselwörter als Anbieternamen:  
   
  **Process**  
  Prozessereignisse  
@@ -53,42 +54,42 @@ VSPerfCmd.exe /events {On|Off} {Guid|ProviderName} [,Flags[,Level]
  Threadereignisse  
   
  **Image**  
- Abbildlade\- und Abbildentladereignisse  
+ Lade- und Entladeereignisse für Bilder  
   
  **Disk**  
- Datenträger\-E\/A\-Ereignisse  
+ E/A-Datenträgerereignisse  
   
- **File**  
- Datei\-E\/A\-Ereignisse  
+ **Datei**  
+ E/A-Dateiereignisse  
   
  **Hardfault**  
- Hardwareseitenfehler  
+ Harte Seitenfehler  
   
  **Pagefault**  
- Softwareseitenfehler  
+ Weiche Seitenfehler  
   
  **Network**  
  Netzwerkereignisse  
   
  **Registry**  
- Registrierungszugriffsereignisse  
+ Ereignisse beim Zugriff auf die Registrierung  
   
- Beachten Sie, dass der Kernelanbieter nur aktiviert werden kann.  Er kann erst deaktiviert und die zugehörigen Flags können erst bearbeitet werden, wenn der Monitor heruntergefahren ist.  
+ Beachten Sie, dass der Kernelanbieter nur aktiviert werden kann. Er kann weder deaktiviert werden, noch können Flags geändert werden, bis der Monitor heruntergefahren wurde.  
   
-## Hinweise  
+## <a name="remarks"></a>Hinweise  
   
 > [!NOTE]
->  Wenn CLR\-ETW\-Ereignisse aktiviert sind, werden zusätzliche Startdaten auch im Ablaufverfolgungsansichtsbericht erfasst.  Verwenden Sie den folgenden Befehl, um Startereignisse von der Anzeige im Bericht auszuschließen:  
+>  Wenn CLR-ETW-Ereignisse aktiviert sind, werden im Bericht in der Ablaufverfolgungsansicht auch zusätzliche Startdaten gesammelt. Mit dem folgenden Befehl vermeiden Sie, dass Startereignisse im Bericht angezeigt werden:  
   
 ```  
 C:\<path>VSPerfCmd -events on, \".NET Common Language Runtime\", 0x7fffffff, 5  
 ```  
   
 > [!IMPORTANT]
->  Wenn Sie die Startereignisse nicht ausschließen, da diese Ereignisse nicht in der MOF\-Datei \(Managed Object Format\) angezeigt werden, werden sie im Bericht als GUIDs angezeigt.  Weitere Informationen finden Sie auf der folgenden Seite: [Beispiel\-ManagedObject Format \(MOF\)\- Datei](http://go.microsoft.com/fwlink/?linkid=37118).  
+>  Wenn Sie Startereignisse nicht ausschließen, werden sie als GUIDs im Bericht angezeigt, weil sie nicht in der MOF-Datei (Managed Object Format) aufgeführt werden. Weitere Informationen finden Sie auf dieser Microsoft-Website: [Sample Managed Object Format (MOF) File (Managed Object Format-Beispieldatei (MOF))](http://go.microsoft.com/fwlink/?linkid=37118).  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [Profilerstellung für eigenständige Anwendungen](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [Profilerstellung für ASP.NET\-Webanwendungen](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [Profilerstellungsdienste](../profiling/command-line-profiling-of-services.md)
+ [Profilerstellung für ASP.NET-Webanwendungen](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [Erstellen von Dienstprofilen](../profiling/command-line-profiling-of-services.md)

@@ -1,62 +1,63 @@
 ---
-title: "WinCounter | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: WinCounter | Microsoft-Dokumentation
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: ff319ffc-f249-4c3f-9eb2-06e392e3ae80
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 5f7fd3846f98149afd7c00924464da2459deb715
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# WinCounter
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Die **WinCounter**\-Option gibt einen Leistungsindikator für Windows oder für Anwendungen an, der während der Profilausführung zu festgelegten Intervallen erfasst werden soll.  Leistungsindikatoren für Windows und Anwendungen werden in der Profilerstellungs\-Datendatei als Markierungen aufgeführt.  Sie können mehrere Leistungsindikatoren angeben, die in separaten Optionen erfasst werden sollen.  
+# <a name="wincounter"></a>WinCounter
+Über die Option **WinCounter** wird ein Leistungsindikator für Windows oder die Anwendung angegeben, um bei der Profilerstellung festgelegte Intervalle zu erfassen. Leistungsindikatoren für Windows und die Anwendung werden als Markierungen in den Profilerstellungs-Datendateien aufgeführt. Sie können mehrere Leistungsindikatoren angeben, die in separaten Optionen erfasst werden sollen.  
   
- Standardmäßig werden Leistungsindikatoren alle 500 Millisekunden erfasst.  Verwenden Sie die **AutoMark**\-Option, um ein anderes Auflistungsintervall anzugeben.  
+ Standardmäßig werden Leistungsindikatoren alle 500 ms erfasst. Verwenden Sie die Option **AutoMark**, um ein anderes Intervall für die Erfassung festzulegen.  
   
- Es wird nur eine **AutoMark**\-Option verwendet.  Wenn mehrere **AutoMark**\-Optionen angegeben werden, wird die zuletzt angegebene verwendet.  
+ Es wird nur die Option **AutoMark** verwendet. Wenn mehrere Optionen **AutoMark** angegeben sind, wird nur die letzte verwendet.  
   
- Die **WinCounter**\-Option kann nur in Verbindung mit der **Start**\-Option verwendet werden.  
+ Die Option **WinCounter** kann nur mit der Option **Start** verwendet werden.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 VSPerfCmd.exe /Start:Method /Wincounter:Path [/WinCounter:Path] [AutoMark:Milliseconds] [Options]  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `Path`  
- Der Windows\-Leistungsindikator im PDH\-Format für Indikatorpfade.  
+ Der Windows-Leistungsindikator im PDH-Indikatorpfadformat.  
   
-## Erforderliche Optionen  
- Die **WinCounter**\-Option kann nur in Verbindung mit der **Start**\-Option verwendet werden.  
+## <a name="required-options"></a>Erforderliche Optionen  
+ Die Option **WinCounter** kann nur mit der Option **Start** verwendet werden.  
   
  **Start:** `Method`  
- Die **Start**\-Option initialisiert den Profiler mit der angegebenen Profilerstellungsmethode.  
+ Die Option **Start** initialisiert den Profiler mit der angegebenen Profilerstellungsmethode.  
   
-## Exklusive Optionen  
- Die **AutoMark**\-Option kann nur in Verbindung mit der **WinCounter**\-Option verwendet werden.  
+## <a name="exclusive-options"></a>Ausschließliche Optionen  
+ Die Option **AutoMark** kann nur mit der Option **WinCounter** verwendet werden.  
   
  **AutoMark:** `Milliseconds`  
- Gibt die Anzahl von Millisekunden zwischen Ereignissen bei der Sammlung von Windows\-Leistungsindikatordaten an.  
+ Gibt die Zeit in Millisekunden zwischen Datenerfassungen mit einem Windows-Leistungsindikator an.  
   
-## Beispiel  
- Im folgenden Beispiel werden zwei Windows\-Leistungsindikatoren angegeben, die zu einem Intervall von 1000 Millisekunden erfasst werden sollen.  
+## <a name="example"></a>Beispiel  
+ Im folgenden Beispiel werden zwei Windows-Leistungsindikatoren angeben, die in einem Intervall von 1000 ms erfasst werden.  
   
 ```  
 VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp /WinCounter:"\Processor(0)\% Processor Time" /WinCounter:"\System\Context Switches/sec" /AutoMark:1000  
 ```  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [Profilerstellung für eigenständige Anwendungen](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [Profilerstellung für ASP.NET\-Webanwendungen](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [Profilerstellungsdienste](../profiling/command-line-profiling-of-services.md)
+ [Profilerstellung für ASP.NET-Webanwendungen](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [Erstellen von Dienstprofilen](../profiling/command-line-profiling-of-services.md)

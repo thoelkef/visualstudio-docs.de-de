@@ -1,66 +1,66 @@
 ---
-title: "Befehl &quot;Datei &#246;ffnen&quot; | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "file.openfile"
-helpviewer_keywords: 
-  - "File.OpenFile-Befehl"
-  - "of-Befehl"
-  - "Datei öffnen (Befehl)"
+title: "Befehl „Datei öffnen“ | Microsoft-Dokumentation"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: file.openfile
+helpviewer_keywords:
+- Open File command
+- File.OpenFile command
+- of command
 ms.assetid: a51a83fc-e3c6-4fa2-8882-8b7b6c0a6406
-caps.latest.revision: 12
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: f7b1576ce7c34e953c45d7b303190a00d77e86cc
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Befehl &quot;Datei &#246;ffnen&quot;
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
+# <a name="open-file-command"></a>Befehl "Datei öffnen"
 Öffnet eine vorhandene Datei und ermöglicht die Angabe eines Editors.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 File.OpenFile filename [/e:editorname]  
 ```  
   
-## Argumente  
+## <a name="arguments"></a>Argumente  
  `filename`  
- Erforderlich.  Der vollständige oder teilweise Pfad und Dateiname der zu öffnenden Datei.  Pfade, die Leerzeichen enthalten, müssen in Anführungszeichen eingeschlossen sein.  
+ Erforderlich. Der vollständige oder partielle Pfad und Dateiname der zu öffnenden Datei. Pfade, die Leerzeichen enthalten, müssen in Anführungszeichen eingeschlossen werden.  
   
-## Schalter  
- \/e:`editorname`  
- Optional.  Name des Editors, in dem die Datei geöffnet wird.  Wenn zwar das Argument, aber kein Editorname angegeben wurde, wird das Dialogfeld **Öffnen mit** angezeigt.  
+## <a name="switches"></a>Schalter  
+ /e:`editorname`  
+ Dies ist optional. Der Name des Editors, in dem die Datei geöffnet wird. Wenn zwar das Argument, aber kein Editorname angegeben wurde, wird das Dialogfeld **Öffnen mit** angezeigt.  
   
- \/e: Die Argumentsyntax`editorname` der Editor verwendet, während sie im Dialogfeld Öffnen mit angezeigt, wobei der Name in Anführungszeichen eingeschlossen.  
+ Die Argumentsyntax /e:`editorname` verwendet die Editornamen wie im Dialogfeld „Öffnen mit“ angezeigt, wobei der Name in Anführungszeichen eingeschlossen ist.  
   
- Um eine Datei im Quellcode\-Editor zu öffnen, geben Sie für das Argument \/e:`editorname` beispielsweise Folgendes ein:  
+ Geben Sie zum Öffnen einer Datei im Quellcode-Editor für das Argument /e:`editorname` beispielsweise Folgendes ein:  
   
 ```  
 /e:"Source Code (text) Editor"  
 ```  
   
-## Hinweise  
- Beim Eingeben eines Pfades versucht die automatische Vervollständigung, den korrekten Pfad und Dateinamen zu finden.  
+## <a name="remarks"></a>Hinweise  
+ Bei der automatischen Vervollständigung wird während der Eingabe eines Pfads versucht, den richtigen Pfad und Dateinamen zu finden.  
   
-## Beispiel  
- In diesem Beispiel wird die Stildatei "Test1.css" im Quellcode\-Editor geöffnet.  
+## <a name="example"></a>Beispiel  
+ In diesem Beispiel wird die Stildatei „Test1.css“ im Quellcode-Editor geöffnet.  
   
 ```  
 >File.OpenFile "C:\My Projects\project1\Test1.css" /e:"Source Code (text) Editor"  
 ```  
   
-## Siehe auch  
- [Visual Studio\-Befehle](../../ide/reference/visual-studio-commands.md)   
+## <a name="see-also"></a>Siehe auch  
+ [Visual Studio-Befehle](../../ide/reference/visual-studio-commands.md)   
  [Befehlsfenster](../../ide/reference/command-window.md)   
  [Direktfenster](../../ide/reference/immediate-window.md)   
- [Such\/Befehlsfeld](../../ide/find-command-box.md)   
- [Visual Studio\-Befehlsaliase](../../ide/reference/visual-studio-command-aliases.md)
+ [Such-/Befehlsfeld](../../ide/find-command-box.md)   
+ [Visual Studio-Befehlsaliase](../../ide/reference/visual-studio-command-aliases.md)

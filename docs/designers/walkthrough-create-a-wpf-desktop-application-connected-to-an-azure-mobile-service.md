@@ -1,30 +1,32 @@
 ---
+redirect_url: /azure/app-service-mobile/app-service-mobile-windows-store-dotnet-get-started
 title: 'Exemplarische Vorgehensweise: Erstellen einer WPF-Desktopanwendung, die mit einem Azure Mobile Service verbunden ist | Microsoft-Dokumentation'
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 10/10/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-designers
+ms.technology: vs-ide-designers
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 8d42620f-553b-4b04-a38b-f6b306d73a50
-caps.latest.revision: 7
+caps.latest.revision: "7"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
+dev_langs:
+- csharp
+- vb
+ms.openlocfilehash: 8bf11425439387a13db2bb77f0ce798bef076461
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: ea1e787c1d509123a650cf2bd20e5fa8bffd5b4e
-ms.openlocfilehash: d21c7fcc7c22c3a260d79856c66bb15d5166c444
-ms.contentlocale: de-de
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service"></a>Exemplarische Vorgehensweise: Erstellen einer WPF-Desktopanwendung, die mit einem Azure Mobile Service verbunden ist
 Mit Windows Presentation Foundation (WPF) können Sie schnell eine moderne Desktopanwendung erstellen, die zum Speichern und Bereitstellen von Daten eines Azure Mobile Service verwendet.  
   
-##  <a name="Requirements"></a> Erforderliche Komponenten  
- Für diese exemplarische Vorgehensweise wird Folgendes benötigt:  
+## <a name="prerequisites"></a>Erforderliche Komponenten  
+Für diese exemplarische Vorgehensweise wird Folgendes benötigt:  
   
 -   Visual Studio 2017 oder eine beliebige Version, die die WPF-Entwicklung unterstützt.  
   
@@ -41,19 +43,19 @@ Mit Windows Presentation Foundation (WPF) können Sie schnell eine moderne Deskt
   
 1.  Wählen Sie in der Menüleiste **Datei**, **Neu**, **Projekt**aus.  
   
-2.  Erweitern Sie im Dialogfeld **Neues Projekt** den Knoten **Visual C#** oder **Visual Basic** , und wählen Sie den Knoten **Windows** aus. Erweitern Sie dann den Knoten **Windows** , und wählen Sie den Knoten **Klassischer Desktop** aus.  
+2.  Erweitern Sie im Dialogfeld **Neues Projekt** den Knoten **Visual C#** oder **Visual Basic**, und wählen Sie den Knoten **Klassischer Windows-Desktop** aus.  
   
-3.  Wählen Sie in der Vorlagenliste die Vorlage **WPF-Anwendung** aus.  
+3.  Wählen Sie in der Vorlagenliste die Vorlage **WPF-App (.NET Framework)** aus.  
   
 4.  Erweitern Sie im Dialogfeld **Name**  `WPFQuickStart`ein, und wählen Sie dann die Schaltfläche **OK** aus.  
   
-     Das Projekt wird erstellt, und die Projektdateien werden dem **Projektmappen-Explorer**hinzugefügt. Zudem wird der Designer für das Standardanwendungsfenster namens **MainWindow.xaml** angezeigt.  
+     Das Projekt wird erstellt, und die Projektdateien werden zum **Projektmappen-Explorer** hinzugefügt. Der Designer für das Standardanwendungsfenster namens **MainWindow.xaml** wird angezeigt.  
   
 #### <a name="to-add-a-reference-to-the-windows-azure-mobile-services-sdk"></a>So fügen Sie dem Windows Azure Mobile Services SDK einen Verweis hinzu  
   
-1.  Öffnen Sie im **Projektmappen-Explorer**das Kontextmenü für den Knoten **Verweise** , und wählen Sie **NuGet-Pakete verwalten**aus.  
+1.  Öffnen Sie im **Projektmappen-Explorer**das Kontextmenü für den Knoten **Verweise**, und wählen Sie **NuGet-Pakete verwalten...** aus.  
   
-2.  Erweitern Sie im Dialogfeld **NuGet-Paket-Manager**das Feld **Suche** aus, und geben Sie `mobileservices`anmelden.  
+2.  Wählen Sie im **NuGet-Paket-Manager** im oberen Bereich **Durchsuchen** aus, und geben Sie `mobileservices` in das Suchfeld ein.  
   
 3.  Wählen Sie im linken Bereich **WindowsAzure.MobileServices**aus, und wählen Sie dann im rechten Bereich die Schaltfläche **Installieren** aus.  
   
@@ -68,7 +70,7 @@ Mit Windows Presentation Foundation (WPF) können Sie schnell eine moderne Deskt
     >  Wenn Sie die Lizenzbedingungen nicht akzeptieren, wählen Sie die Schaltfläche **Ich stimme nicht zu** aus. In diesem Fall können Sie die exemplarische Vorgehensweise nicht fortsetzen.  
   
 ## <a name="create-the-user-interface"></a>Erstellen der Benutzeroberfläche  
- Im nächsten Schritt erstellen Sie die Benutzeroberfläche für die Anwendung. Zunächst erstellen Sie ein wiederverwendbares Benutzersteuerelement, das ein nebeneinander angeordnetes, in zwei Bereiche unterteiltes Standardbereichslayout anzeigt. Dann fügen Sie das Benutzersteuerelement dem Hauptanwendungsfenster hinzu, und fügen Sie Steuerelemente zum Eingeben und Anzeigen von Daten hinzu. Anschließend schreiben Sie Code, um die Interaktion mit dem Mobile Service-Backend zu definieren.  
+Im nächsten Schritt erstellen Sie die Benutzeroberfläche für die Anwendung. Zunächst erstellen Sie ein wiederverwendbares Benutzersteuerelement, das ein nebeneinander angeordnetes, in zwei Bereiche unterteiltes Standardbereichslayout anzeigt. Dann fügen Sie das Benutzersteuerelement dem Hauptanwendungsfenster hinzu, und fügen Sie Steuerelemente zum Eingeben und Anzeigen von Daten hinzu. Anschließend schreiben Sie Code, um die Interaktion mit dem Mobile Service-Backend zu definieren.  
   
 #### <a name="to-add-a-user-control"></a>So fügen Sie ein Benutzersteuerelement hinzu  
   
@@ -85,17 +87,17 @@ Mit Windows Presentation Foundation (WPF) können Sie schnell eine moderne Deskt
 5.  Wählen Sie im unteren Bereich des Designers die Tags `<Grid>` und `</Grid>` aus, und ersetzen Sie sie durch folgenden XAML-Code:  
   
     ```xaml  
-    <Grid VerticalAlignment="Top">  
-            <StackPanel Orientation="Horizontal">  
-                <Border BorderThickness="0,0,1,0" BorderBrush="DarkGray" Margin="0,10" MinWidth="70">  
-                    <TextBlock Text="{Binding Number}" FontSize="45" Foreground="DarkGray" Margin="20,0"/>  
-                </Border>  
-                <StackPanel>  
-                    <TextBlock Text="{Binding Title}" Margin="10,10,0,0" FontSize="16" FontWeight="Bold" />  
-                    <TextBlock Text="{Binding Description}" Margin="10,0,0,0" TextWrapping="Wrap" MaxWidth="500" />  
-                </StackPanel>  
-            </StackPanel>  
-        </Grid>  
+    <Grid VerticalAlignment="Top">
+        <StackPanel Orientation="Horizontal">
+            <Border BorderThickness="0,0,1,0" BorderBrush="DarkGray" Margin="0,10" MinWidth="70">
+                <TextBlock Text="{Binding Number}" FontSize="45" Foreground="DarkGray" Margin="20,0"/>
+            </Border>
+            <StackPanel>
+                <TextBlock Text="{Binding Title}" Margin="10,10,0,0" FontSize="16" FontWeight="Bold" />
+                <TextBlock Text="{Binding Description}" Margin="10,0,0,0" TextWrapping="Wrap" MaxWidth="500" />
+            </StackPanel>
+        </StackPanel>
+    </Grid>  
     ```  
   
      Dieser XAML-Code erstellt ein wiederverwendbares Layout mit Platzhaltern für Felder für Zahlen, Titel und Beschreibungen. Zur Laufzeit können die Platzhalter durch Text ersetzt werden, wie in der folgenden Abbildung dargestellt.  
@@ -104,7 +106,7 @@ Mit Windows Presentation Foundation (WPF) können Sie schnell eine moderne Deskt
   
 6.  Erweitern Sie in **Projektmappen-Explorer**den Knoten **QuickStartTask.xaml** , und öffnen Sie die Datei **QuickStartTask.xaml.cs** oder **QuickStartTask.xaml.vb** .  
   
-7.  Ersetzen Sie im Code-Editor den `namespace WPFQuickStart.Common` -Namespace (C#) oder die `Public Class QuickStartTask` Methode (VB) durch folgenden Code:  
+7.  Ersetzen Sie im Code-Editor den `namespace WPFQuickStart.Common`-Namespace (C#) oder die `Public Class QuickStartTask`-Klasse (VB) durch folgenden Code:  
   
     ```csharp  
     namespace WPFQuickStart.Common  
@@ -225,62 +227,52 @@ Mit Windows Presentation Foundation (WPF) können Sie schnell eine moderne Deskt
 5.  Wählen Sie die Tags `<Grid>` und `</Grid>` aus, und ersetzen Sie sie durch folgenden XAML-Code:  
   
     ```xaml  
-    <Grid>  
-  
-            <Grid Margin="50,50,10,10">  
-                <Grid.ColumnDefinitions>  
-                    <ColumnDefinition Width="*" />  
-                    <ColumnDefinition Width="*" />  
-                </Grid.ColumnDefinitions>  
-                <Grid.RowDefinitions>  
-                    <RowDefinition Height="Auto" />  
-                    <RowDefinition Height="*" />  
-                </Grid.RowDefinitions>  
-  
-                <Grid Grid.Row="0" Grid.ColumnSpan="2" Margin="0,0,0,20">  
-                    <StackPanel>  
-                        <TextBlock Foreground="#0094ff" FontFamily="Segoe UI Light" Margin="0,0,0,6">MICROSOFT AZURE MOBILE SERVICES</TextBlock>  
-                        <TextBlock Foreground="Gray" FontFamily="Segoe UI Light" FontSize="45" ><Run Text="My Todo List"/></TextBlock>  
-                    </StackPanel>  
-                </Grid>  
-  
-                <Grid Grid.Row="1">  
-                    <StackPanel>  
-  
-                        <local:QuickStartTask Number="1" Title="Insert a TodoItem" Description="Enter some text below and click Save to insert a new todo item into the list." />  
-  
-                        <StackPanel Orientation="Horizontal" Margin="72,0,0,0">  
-                            <TextBox x:Name="TodoInput" Margin="5" MinWidth="300"/>  
-                            <Button x:Name="ButtonSave" Click="ButtonSave_Click" Content="Save"/>  
-                        </StackPanel>  
-  
-                    </StackPanel>  
-                </Grid>  
-  
-                <Grid Grid.Row="1" Grid.Column="1">  
-                    <Grid.RowDefinitions>  
-                        <RowDefinition Height="Auto" />  
-                        <RowDefinition />  
-                    </Grid.RowDefinitions>  
-                    <StackPanel>  
-                        <local:QuickStartTask Number="2" Title="Query and Update Data" Description="Click the Refresh button to load the unfinished TodoItems from the Azure Mobile Service. Select the checkbox to mark a ToDo item as complete and update the list." />  
-                        <Button Margin="72,0,0,0" Name="ButtonRefresh" Click="ButtonRefresh_Click">Refresh</Button>  
-                    </StackPanel>  
-  
-                    <ListView Name="ListItems" Margin="62,10,0,0" Grid.Row="1">  
-                        <ListView.ItemTemplate>  
-                            <DataTemplate>  
-                                <StackPanel Orientation="Horizontal">  
-                                    <CheckBox Name="CheckBoxComplete" IsChecked="{Binding Complete, Mode=TwoWay}" Checked="CheckBoxComplete_Checked" Content="{Binding Text}" Margin="10,5" VerticalAlignment="Center"/>  
-                                </StackPanel>  
-                            </DataTemplate>  
-                        </ListView.ItemTemplate>  
-                    </ListView>  
-  
-                </Grid>  
-  
-            </Grid>  
-        </Grid>  
+    <Grid>
+        <Grid Margin="50,50,10,10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0" Grid.ColumnSpan="2" Margin="0,0,0,20">
+                <StackPanel>
+                    <TextBlock Foreground="#0094ff" FontFamily="Segoe UI Light" Margin="0,0,0,6">MICROSOFT AZURE MOBILE SERVICES</TextBlock>
+                    <TextBlock Foreground="Gray" FontFamily="Segoe UI Light" FontSize="45" ><Run Text="My Todo List"/></TextBlock>
+                </StackPanel>
+            </Grid>
+            <Grid Grid.Row="1">
+                <StackPanel>
+                    <local:QuickStartTask Number="1" Title="Insert a TodoItem" Description="Enter some text below and click Save to insert a new todo item into the list." />
+                    <StackPanel Orientation="Horizontal" Margin="72,0,0,0">
+                        <TextBox x:Name="TodoInput" Margin="5" MinWidth="300"/>
+                        <Button x:Name="ButtonSave" Click="ButtonSave_Click" Content="Save"/>
+                    </StackPanel>
+                </StackPanel>
+            </Grid>
+            <Grid Grid.Row="1" Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <StackPanel>
+                    <local:QuickStartTask Number="2" Title="Query and Update Data" Description="Click the Refresh button to load the unfinished TodoItems from the Azure Mobile Service. Select the checkbox to mark a ToDo item as complete and update the list." />
+                    <Button Margin="72,0,0,0" Name="ButtonRefresh" Click="ButtonRefresh_Click">Refresh</Button>
+                </StackPanel>
+                <ListView Name="ListItems" Margin="62,10,0,0" Grid.Row="1">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal">
+                                <CheckBox Name="CheckBoxComplete" IsChecked="{Binding Complete, Mode=TwoWay}" Checked="CheckBoxComplete_Checked" Content="{Binding Text}" Margin="10,5" VerticalAlignment="Center"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </Grid>
+        </Grid>
+    </Grid>  
     ```  
   
      Beachten Sie, dass die Änderungen im Entwurfsfenster wiedergegeben werden. Auch in diesem Fall hätten Sie die Benutzeroberfläche durch Hinzufügen von Steuerelementen aus dem Fenster **Toolbox** und Festlegen der Eigenschaften im Fenster **Eigenschaften** definieren können. Alle Aufgaben, die Sie im Designer ausführen, können im XAML-Code und umgekehrt ausgeführt werden.  
@@ -486,7 +478,7 @@ Mit Windows Presentation Foundation (WPF) können Sie schnell eine moderne Deskt
     > [!NOTE]
     >  Möglicherweise müssen Sie den numerischen Teil der URL zu ändern. Microsoft Azure erfordert eine eindeutige URL für jeden mobilen Service.  
   
-     Dadurch wird die URL für den Service auf *https://wpfquickstart01.azure-mobile.net/*festgelegt.  
+    Dadurch wird die URL für den Service auf *https://wpfquickstart01.azure-mobile.net/*festgelegt.  
   
 4.  Wählen Sie in der Liste **DATENBANK** eine Datenbankoption aus. Da es sich dabei um eine Anwendung handelt, die nur selten verwendet wird, können Sie die Option **Create a free 20MB SQL database** (Eine kostenlose 20-MB-SQL-Datenbank erstellen) bzw. die bereits in Ihrem Abonnement enthaltene kostenlose Datenbank auswählen.  
   
@@ -549,7 +541,7 @@ Mit Windows Presentation Foundation (WPF) können Sie schnell eine moderne Deskt
   
 #### <a name="to-run-the-application"></a>So führen Sie die Anwendung aus  
   
-1.  Wählen Sie auf der Menüleiste **Debuggen**, **Debugging starten** aus (oder drücken Sie F5).  
+1.  Wählen Sie auf der Menüleiste **Debuggen**, **Debugging starten** aus (oder drücken Sie **F5**).  
   
 2.  Erweitern Sie im Dialogfeld **TodoItem einfügen**  `Do something`ein, und wählen Sie dann die Schaltfläche **Speichern** aus.  
   

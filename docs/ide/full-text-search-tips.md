@@ -1,53 +1,22 @@
 ---
-title: Tipps zur Volltextsuche | Microsoft-Dokumentation
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- hv_search
-helpviewer_keywords:
-- Help Viewer 2.0, full-text search tips
-- full-text search tips [Help Viewer 2.0]
-ms.assetid: bcaad23d-2ca7-4bec-8b54-b884bc34e70b
-caps.latest.revision: 13
-author: kempb
-ms.author: kempb
-manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: b03bbfbe9f96931ad9b64dd8542529ee258f0392
-ms.contentlocale: de-de
-ms.lasthandoff: 05/13/2017
-
+redirect_url: /visualstudio/ide/how-to-search-for-topics
+ms.openlocfilehash: a66c168ca81b22c32fc05afddd01266950791d1e
+ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/07/2017
 ---
-# <a name="full-text-search-tips"></a>Tipps zur Volltextsuche
-Eins der besonders nützlichen Verfahren zum Finden von Informationen in der Hilfe ist das Ausführen einer Volltextsuche. Um Ihre Ergebnisse einzugrenzen und anzupassen, müssen Sie verstehen, welchen Einfluss Syntax auf Ihre Abfrage hat. Dieses Thema stellt Tipps, Vorgehensweisen und detaillierte Syntaxinformationen vor, mit denen Sie bessere Abfragen erstellen können.  
-  
-## <a name="full-text-search-tips"></a>Tipps zur Volltextsuche  
- Sie können zielgerichtetere Suchen erstellen, die nur die für Sie interessanten Themen zurückgeben, wenn Sie wissen, wie die Hilfe die Formatierung interpretiert, die Sie in Abfragen verwenden. Zu diesen Formaten zählen Sonderzeichen, reservierte Wörter und Filter.  
+title: "Tipps für die Volltextsuche | Microsoft-Dokumentation" ms.custom: "" ms.date: "4.11.2016" ms.reviewer: "" ms.suite: "" ms.technology: 
+  - "vs-help-viewer" ms.tgt_pltfrm: "" ms.topic: "Artikel" f1_keywords: 
+  - "hv_search" helpviewer_keywords: 
+  - "Help Viewer, Tipps für die Volltextsuche"
+  - "tipps für die volltextsuche [Help Viewer]" ms.assetid: bcaad23d-2ca7-4bec-8b54-b884bc34e70b caps.latest.revision: 13 author: "gewarren" ms.author: "gewarren" manager: ghogen
+---
+# <a name="full-text-search-tips"></a>Tipps für die Volltextsuche
+Eins der besonders nützlichen Verfahren zum Finden von Informationen in der Hilfe ist das Ausführen einer Volltextsuche. Sie können zielgerichtetere Suchen durchführen, die nur die für Sie interessanten Themen zurückgeben, wenn Sie wissen, wie die Syntax die Abfrage beeinflusst. Die Syntax enthält Sonderzeichen, reservierte Wörter und Filter. Dieses Thema stellt Tipps, Vorgehensweisen und detaillierte Syntaxinformationen vor, mit denen Sie bessere Abfragen erstellen können.
   
 ### <a name="general-guidelines"></a>Allgemeine Richtlinien  
- Die folgende Tabelle enthält einige einfache Regeln und Richtlinien für das Entwickeln von Suchabfragen in der Hilfe.  
+Die folgende Tabelle enthält einige einfache Regeln und Richtlinien für das Entwickeln von Suchabfragen in der Hilfe.  
   
 |Syntax|Beschreibung|  
 |------------|-----------------|  
@@ -59,11 +28,11 @@ Eins der besonders nützlichen Verfahren zum Finden von Informationen in der Hil
  Wenn Sie eine Suchzeichenfolge angeben, die mehrere Wörter umfasst, wie etwa „Wort1 Wort2“, ist diese Zeichenfolge äquivalent zu der Eingabe „Wort1 UND Wort2“, die nur Themen zurückgibt, die alle einzelnen Wörter in der Suchzeichenfolge enthalten.  
   
 > [!IMPORTANT]
->  1.  Die Suche nach Ausdrücken wird nicht unterstützt. Wenn Sie in einer Suchzeichenfolge mehr als ein Wort angeben, enthalten die zurückgegebenen Themen alle angegebenen Wörter, aber nicht unbedingt genau den Ausdruck, den Sie angegeben haben.  
-> 2.  Verwenden Sie logische Operatoren, um die Beziehung zwischen den Wörtern in Ihrem Suchausdruck anzugeben. Sie können logische Operatoren, wie etwa UND, ODER, NICHT und NAH eingeben, um Ihre Suche weiter einzugrenzen. Wenn Sie beispielsweise nach „Deklarieren NAH Vereinigungsmenge“ suchen, enthalten die Suchergebnisse Themen, die die Wörter „Deklarieren“ und „Vereinigungsmenge“ durch nicht mehr als ein paar Wörter getrennt enthalten. Weitere Informationen finden Sie unter [Logische Operatoren in Suchausdrücken](../ide/logical-operators-in-search-expressions.md).  
+> - Die Suche nach Ausdrücken wird nicht unterstützt. Wenn Sie in einer Suchzeichenfolge mehr als ein Wort angeben, enthalten die zurückgegebenen Themen alle angegebenen Wörter, aber nicht unbedingt genau den Ausdruck, den Sie angegeben haben.  
+> - Verwenden Sie logische Operatoren, um die Beziehung zwischen den Wörtern in Ihrem Suchausdruck anzugeben. Sie können logische Operatoren, wie etwa UND, ODER, NICHT und NAH eingeben, um Ihre Suche weiter einzugrenzen. Wenn Sie beispielsweise nach „Deklarieren NAH Vereinigungsmenge“ suchen, enthalten die Suchergebnisse Themen, die die Wörter „Deklarieren“ und „Vereinigungsmenge“ durch nicht mehr als ein paar Wörter getrennt enthalten. Weitere Informationen finden Sie unter [Logische Operatoren in Suchausdrücken](../ide/logical-operators-in-search-expressions.md).  
   
 ### <a name="filters"></a>Filter  
- Sie können die Suchergebnisse weiter eingrenzen, indem Sie erweiterte Suchoperatoren verwenden. Die Hilfe enthält drei Kategorien, die Sie zum Filtern von Ergebnissen einer Volltextsuche verwenden können: Titel, Code und Schlüsselwort. Weitere Informationen finden sie unter [Erweiterte Suchoperatoren in Suchausdrücken](../ide/advanced-search-operators-in-search-expressions.md).  
+ Sie können die Suchergebnisse weiter eingrenzen, indem Sie erweiterte Suchoperatoren verwenden. Die Hilfe enthält drei Kategorien, die Sie zum Filtern von Ergebnissen einer Volltextsuche verwenden können: Titel, Code und Schlüsselwort.
   
 ### <a name="ranking-of-search-results"></a>Rangfolge von Suchergebnissen  
  Der Suchalgorithmus wendet bestimmte Kriterien an, um einen höheren oder niedrigeren Rang von Suchergebnissen in der Ergebnisliste auszuweisen. Allgemein:  
@@ -77,6 +46,6 @@ Eins der besonders nützlichen Verfahren zum Finden von Informationen in der Hil
 ### <a name="words-ignored-in-searches-stop-words"></a>Bei der Suche ignorierte Wörter (Stoppwörter)  
  Häufig auftretende Wörter oder Ziffern, die manchmal als Stoppwörter bezeichnet werden, werden bei der Volltextsuche automatisch ignoriert. Wenn Sie beispielsweise nach dem Ausdruck „übergeben durch“ suchen, zeigen die Suchergebnisse Themen an, die das Wort „übergeben“ enthalten, ignorieren aber das Wort „durch“.  
   
-## <a name="see-also"></a>Siehe auch  
- [Suchen nach Informationen](../ide/locate-information.md)   
- [Logische Operatoren in Suchausdrücken](../ide/logical-operators-in-search-expressions.md)
+## <a name="see-also"></a>Siehe auch
+[Suchen nach Informationen](../ide/locate-information.md)   
+[Logische Operatoren in Suchausdrücken](../ide/logical-operators-in-search-expressions.md)

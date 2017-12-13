@@ -1,26 +1,27 @@
 ---
-title: "Leistungsregeln f&#252;r Speicher und Auslagerung | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: "Leistungsregeln für Speicher und Auslagerung | Microsoft-Dokumentation"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: f37972b2-efe4-4a1c-a5d1-a246ccd76817
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 15b9963d10a2a51d34ef3a426ac7a2aba17c2430
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Leistungsregeln f&#252;r Speicher und Auslagerung
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Leistungsregeln in den Kategorien für Arbeitsspeicher und Paging beziehen sich auf Pagingaktivitäten in einer Profilerstellungsausführung, die die Anwendungsleistung und die Reaktionsfähigkeit beeinträchtigen können.  
+# <a name="memory-and-paging-performance-rules"></a>Leistungsregeln für Speicher und Auslagerung
+Die Leistungsregeln in der Speicher- und Auslagerungskategorie identifiziert die Auslagerungsaktivität in einer Profilerstellung, die Anwendungsleistung und -reaktionsfähigkeit beeinträchtigen kann.  
   
 |||  
 |-|-|  
-|[DA0014: Äußerst hohes Maß an Paging von aktivem Speicher auf den Datenträger](../profiling/da0014-extremely-high-rates-of-paging-active-memory-to-disk.md)|Während der gesamten Profilerstellungsausführung ist eine äußerst hohe Pagingrate für aktiven Arbeitsspeicher auf die und von der Festplatte aufgetreten.  Pagingraten dieses Ausmaßes beeinträchtigen meist die Anwendungsleistung und die Reaktionsfähigkeit.  Verringern Sie ggf. die Speicherbelegungen, indem Sie die Algorithmen überarbeiten.  Zudem müssen möglicherweise auch die Speicheranforderungen der Anwendung berücksichtigt werden.  Führen Sie die Profilerstellung ggf. auf einem Computer mit mehr Arbeitsspeicher aus.  Diese Regel wird ausgelöst, wenn die Pagingaktivitäten den oberen Schwellenwert der Regel D0017 überschreiten.|  
-|[DA0017: Hohes Maß an Paging von aktivem Speicher auf den Datenträger](../profiling/da0017-high-rates-of-paging-active-memory-to-disk.md)|Während der gesamten Profilerstellungsausführung ist eine relativ hohe Pagingrate für aktiven Arbeitsspeicher auf die und von der Festplatte aufgetreten.  Pagingraten dieses Ausmaßes beeinträchtigen meist die Anwendungsleistung und die Reaktionsfähigkeit.  Verringern Sie ggf. die Speicherbelegungen, indem Sie die Algorithmen überarbeiten.  Zudem müssen möglicherweise auch die Speicheranforderungen der Anwendung berücksichtigt werden.  Führen Sie die Profilerstellung ggf. auf einem Computer mit mehr Arbeitsspeicher aus.|
+|[DA0014: Äußerst hohes Maß an Paging von aktivem Speicher auf den Datenträger](../profiling/da0014-extremely-high-rates-of-paging-active-memory-to-disk.md)|Im Verlauf der Profilerstellung ist ein hohes Maß an Auslagerung von aktivem Speicher auf und vom Datenträger aufgetreten. Solch hohe Auslagerungsraten wirken sich in der Regel negativ auf Leistung und Reaktionszeit der Anwendung aus. Verringern Sie ggf. die Speicherbelegungen, indem Sie die Algorithmen überarbeiten. Sie müssen möglicherweise auch die Speicheranforderungen der Anwendung berücksichtigen. Versuchen Sie, die Profilerstellung erneut auf einem Computer auszuführen, der über mehr Arbeitsspeicher verfügt. Diese Regel wird ausgelöst, wenn die Auslagerungsaktivität den oberen Schwellenwert der Regel DA0017 überschreitet.|  
+|[DA0017: Hohes Maß an Paging von aktivem Speicher auf den Datenträger](../profiling/da0017-high-rates-of-paging-active-memory-to-disk.md)|Im Verlauf der Profilerstellung ist ein relativ hohes Maß an Auslagerung von aktivem Speicher auf den und von dem Datenträger aufgetreten. Solch hohe Auslagerungsraten wirken sich in der Regel negativ auf Leistung und Reaktionszeit der Anwendung aus. Verringern Sie ggf. die Speicherbelegungen, indem Sie die Algorithmen überarbeiten. Sie müssen möglicherweise auch die Speicheranforderungen der Anwendung berücksichtigen. Versuchen Sie, die Profilerstellung erneut auf einem Computer auszuführen, der über mehr Arbeitsspeicher verfügt.|

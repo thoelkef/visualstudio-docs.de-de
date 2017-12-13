@@ -4,35 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: ab573755-6370-48aa-853d-a7321c424c79
-caps.latest.revision: 7
+caps.latest.revision: "7"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 9044821c2bfee0dba8ffa91f3d91afd565b8d957
-ms.openlocfilehash: ea1b537b7c787ab59fba872116857301371eb0de
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 1db182507eb351bd36d7d4d517e19b9902f595ad
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="net-framework-usage-performance-rules"></a>Leistungsregeln für die .NET Framework-Verwendung
 Leistungsregeln in der Kategorie .NET Framework-Verwendung identifizieren bestimmte Methoden, die optimiert werden können, sowie allgemeinere Verwendungsschemas, z.B. die Garbage Collection und Sperrkonflikte, die auf Leistungsprobleme überprüft werden können.  
@@ -45,8 +29,8 @@ Leistungsregeln in der Kategorie .NET Framework-Verwendung identifizieren bestim
 |[DA0007: Verwenden Sie keine Ausnahmen für die Ablaufsteuerung](../profiling/da0007-avoid-using-exceptions-for-control-flow.md)|In den Profilerstellungsdaten wurde eine Vielzahl von .NET Framework-Ausnahmehandlern aufgerufen. Verwenden Sie ggf. eine andere Kontrollflusslogik, um die Anzahl der ausgelösten Ausnahmen zu verringern.|  
 |[DA0010: Speicherintensive GetHashCode-Funktionen](../profiling/da0010-expensive-gethashcode.md)|Aufrufe der `GetHashCode`-Methode des Typs machen einen großen Teil der Profilerstellungsdaten aus, oder die `GetHashCode`-Methode belegt Arbeitsspeicher. Verringern Sie die Komplexität der Methode.|  
 |[DA0011: Speicherintensive CompareTo-Funktionen](../profiling/da0011-expensive-compareto.md)|Die `CompareTo`-Methode des Typs ist aufwändig, oder die Methode belegt Arbeitsspeicher. Verringern Sie die Komplexität der `CompareTo`-Methode.|  
-|[DA0012: Starke Reflektion](../profiling/da0012-significant-amount-of-reflection.md)|Aufrufe von <xref:System.Reflection?displayProperty=fullName>-Methoden, z.B. <xref:System.Reflection.IReflect.InvokeMember%2A> und <xref:System.Reflection.IReflect.GetMember%2A>, oder von Type-Methoden, z.B. <xref:System.Type.InvokeMember%2A>, machen einen großen Teil der Profilerstellungsdaten aus. Ersetzen Sie diese Methoden nach Möglichkeit durch eine frühe Bindung an Methoden abhängiger Assemblys.|  
-|[DA0013: Umfangreiche Verwendung von String.Split oder String.Substring](../profiling/da0013-high-usage-of-string-split-or-string-substring.md)|Aufrufe der <xref:System.String.Split%2A?displayProperty=fullName>-Methode oder der <xref:System.String.Substring%2A>-Methode machen einen großen Teil der Profilerstellungsdaten aus. Verwenden Sie stattdessen ggf. <xref:System.String.IndexOf%2A> oder <xref:System.String.IndexOfAny%2A>, wenn Sie das Vorhandensein einer Teilzeichenfolge in einer Zeichenfolge überprüfen möchten.|  
+|[DA0012: Starke Reflektion](../profiling/da0012-significant-amount-of-reflection.md)|Aufrufe der <xref:System.Reflection?displayProperty=fullName>-Methode, z.B. <xref:System.Reflection.IReflect.InvokeMember%2A> und <xref:System.Reflection.IReflect.GetMember%2A> oder der Typmethoden (beispielsweise <xref:System.Type.InvokeMember%2A>) machen einen großen Teil der Profilerstellungsdaten aus. Ersetzen Sie diese Methoden nach Möglichkeit durch eine frühe Bindung an Methoden abhängiger Assemblys.|  
+|[DA0013: Umfangreiche Verwendung von String.Split oder String.Substring](../profiling/da0013-high-usage-of-string-split-or-string-substring.md)|Aufrufe der <xref:System.String.Split%2A?displayProperty=fullName>- oder <xref:System.String.Substring%2A>-Methode machen einen großen Teil der Profilerstellungsdaten aus. Erwägen Sie, <xref:System.String.IndexOf%2A> oder <xref:System.String.IndexOfAny%2A> zu verwenden, wenn Sie prüfen, ob eine Teilzeichenfolge in einer Zeichenfolge vorhanden ist.|  
 |[DA0018: 32-Bit-Anwendung wird an den vom Prozess verwalteten Speicherlimits ausgeführt](../profiling/da0018-32-bit-application-running-at-process-managed-memory-limits.md)|Die bei der Profilerstellung erfassten Systemdaten deuten darauf hin, dass sich die .NET Framework-Arbeitsspeicherheaps der maximalen Größe angenähert haben, die verwaltete Heaps in einem 32-Bit-Prozess erreichen können. Wiederholen Sie die Profilerstellung mit der Methode zur .NET-Speicherprofilerstellung, und optimieren Sie die Verwendung verwalteter Ressourcen durch die Anwendung.|  
 |[DA0021: Hohes Maß an Garbage Collections der Generation 1](../profiling/da0021-high-rate-of-gen-1-garbage-collections.md)|Bei der Garbage Collection der Generation 1 wird eine relativ hohe Anzahl von .NET-Speicherobjekten freigegeben. Wenn zu viele kurzlebige Objekte die Garbage Collection der Generation 0 überleben, kann schnell ein unverhältnismäßig hoher Aufwand für die Speicherverwaltung entstehen.|  
 |[DA0022: Hohes Maß an Garbage Collections der Generation 2](../profiling/da0022-high-rate-of-gen-2-garbage-collections.md)|Bei der Garbage Collection der Generation 2 wird eine hohe Anzahl von .NET-Speicherobjekten freigegeben. Wenn zu viele kurzlebige Objekte die Garbage Collection der Generation 1 überleben, kann schnell ein unverhältnismäßig hoher Aufwand für die Speicherverwaltung entstehen. Diese Regel wird ausgelöst, wenn die Rate von Sperrkonflikten den oberen Schwellenwert der Regel DA0005 überschreitet.|  

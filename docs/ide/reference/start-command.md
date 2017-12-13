@@ -1,52 +1,52 @@
 ---
-title: "Befehl &quot;Start&quot; | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "debug.start"
-helpviewer_keywords: 
-  - "Debug.Start-Befehl"
-  - "Start (Befehl)"
+title: "Befehl „Start“ | Microsoft-Dokumentation"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: debug.start
+helpviewer_keywords:
+- Start command
+- Debug.Start command
 ms.assetid: dc4e4aa2-b0ab-4e00-92db-6dc3058ddc21
-caps.latest.revision: 13
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: f83fbf1427951057f2154e032fb58b178c8b39fc
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Befehl &quot;Start&quot;
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Startet das Debuggen des Startprojekts.  
+# <a name="start-command"></a>Befehl "Start"
+Startet das Debuggen des Startup-Projekts.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 Debug.Start [address]  
 ```  
   
-## Argumente  
+## <a name="arguments"></a>Argumente  
  `address`  
- Optional.  Adresse, an der die Ausführung des Programms unterbrochen wird, ähnlich einem Haltepunkt in Quellcode.  Dieses Argument ist nur im Debugmodus gültig.  
+ Dies ist optional. Die Adresse, an der das Programm die Ausführung anhält, ähnlich wie ein Breakpoint im Quellcode. Dieses Argument ist nur im Debugmodus gültig.  
   
-## Hinweise  
- Der **Start**\-Befehl führt bei der Ausführung einen RunToCursor\-Vorgang bis zur angegebenen Adresse aus.  
+## <a name="remarks"></a>Hinweise  
+ Der Befehl **Start** führt bei der Ausführung einen RunToCursor-Vorgang auf die angegebene Adresse aus.  
   
-## Beispiel  
- In diesem Beispiel wird der Debugger gestartet, wobei alle dabei auftretenden Ausnahmen ignoriert werden.  
+## <a name="example"></a>Beispiel  
+ In diesem Beispiel wird der Debugger gestartet und ignoriert alle auftretenden Ausnahmen.  
   
 ```  
 >Debug.Start  
 ```  
   
-## Siehe auch  
- [Visual Studio\-Befehle](../../ide/reference/visual-studio-commands.md)   
+## <a name="see-also"></a>Siehe auch  
+ [Visual Studio-Befehle](../../ide/reference/visual-studio-commands.md)   
  [Befehlsfenster](../../ide/reference/command-window.md)   
- [Such\/Befehlsfeld](../../ide/find-command-box.md)   
- [Visual Studio\-Befehlsaliase](../../ide/reference/visual-studio-command-aliases.md)
+ [Such-/Befehlsfeld](../../ide/find-command-box.md)   
+ [Visual Studio-Befehlsaliase](../../ide/reference/visual-studio-command-aliases.md)

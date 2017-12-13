@@ -1,47 +1,31 @@
 ---
-title: Protokollierung in einer Umgebung mit mehreren Prozessoren | Microsoft Docs
+title: Protokollierung in einer Multiprozessorumgebung | Microsoft-Dokumentation
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - MSBuild, multi-processor logging
 - MSBuild, logging
 ms.assetid: dd4dae65-ed04-4883-b48d-59bcb891c4dc
-caps.latest.revision: 9
+caps.latest.revision: "9"
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 437809decb9e7cc96faa1b582fe466e83f2a33fb
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: e78d6c35fa294d2f1a39c91af5e278e9e4519d2d
-ms.contentlocale: de-de
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="logging-in-a-multi-processor-environment"></a>Protokollierung in einer Multiprozessorumgebung
-Die Fähigkeit von MSBuild 3.5, mehrere Prozessoren zu verwenden, kann die Dauer der Projekterstellung deutlich verringern, jedoch auch die Komplexität der Protokollierung erhöhen. In einer Umgebung mit nur einem Prozessor kann die Protokollierung eingehende Ereignisse, Meldungen, Warnungen und Fehler auf vorhersehbare, geordnete Weise verarbeiten. In einer Umgebung mit mehreren Prozessoren können jedoch Ereignisse aus verschiedenen Quellen gleichzeitig und ungeordnet eintreffen. MSBuild bietet eine neue multi-Protokollierung und ermöglicht die Erstellung benutzerdefinierter "weiterleitungsprotokollierungen".  
+Die Fähigkeit von MSBuild 3.5, mehrere Prozessoren zu verwenden, kann die Dauer der Projekterstellung deutlich verringern, jedoch auch die Komplexität der Protokollierung erhöhen. In einer Umgebung mit nur einem Prozessor kann die Protokollierung eingehende Ereignisse, Meldungen, Warnungen und Fehler auf vorhersehbare, geordnete Weise verarbeiten. In einer Umgebung mit mehreren Prozessoren können jedoch Ereignisse aus verschiedenen Quellen gleichzeitig und ungeordnet eintreffen. MSBuild bietet eine neue mehrprozessorfähige Protokollierung und ermöglicht die Erstellung benutzerdefinierter „weiterleitender Protokollierungen“.  
   
 ## <a name="logging-multiple-processor-builds"></a>Protokollierung von Multiprozessorbuilds  
- Wenn Sie ein oder mehrere Projekte in einer Umgebung mit mehreren Prozessoren oder mehreren Prozessorkernen erstellen, werden die MSBuild-Buildereignisse für alle Projekte gleichzeitig erzeugt. Die Protokollierung erhält eine Unmenge von Ereignisdaten gleichzeitig und ungeordnet. Die Protokollierung überlasten Sie können und Builderstellungsdauer, falschen Protokollierungsausgaben oder sogar einem beschädigten Build führen. Um diese Probleme zu beheben, kann die MSBuild-Protokollierung außer der Reihe Ereignisse verarbeiten und Ereignisse ihren Quellen zuordnen.  
+ Wenn Sie ein oder mehrere Projekte in einer Umgebung mit mehreren Prozessoren oder mehreren Prozessorkernen erstellen, werden die MSBuild-Buildereignisse für alle Projekte gleichzeitig erzeugt. Angenommen, die Protokollierung empfängt eine große Menge von Ereignisdaten gleichzeitig oder ohne bestimmte Reihenfolge. Dies kann die Protokollierung überlasten und zu einer erhöhten Buildzeit, falschen Protokollierungsausgaben oder sogar einem beschädigten Build führen. Um dieses Problem zu beheben, kann die MSBuild-Protokollierung ungeordnete Ereignisse verarbeiten und Ereignisse ihren Quellen zuordnen.  
   
  Sie können die Protokollierungseffizienz noch erhöhen, indem Sie eine benutzerdefinierte Weiterleitungsprotokollierung erstellen. Eine benutzerdefinierte Weiterleitungsprotokollierung funktioniert wie ein Filter, der Ihnen vor der Builderstellung ermöglicht, die zu überwachenden Ereignisse auszuwählen. Durch die Verwendung einer benutzerdefinierten Weiterleitungsprotokollierung wird vermieden, dass die Protokollierung durch nicht benötigte Ereignisse überlastet, die Protokolle mit überflüssigen Daten gefüllt oder die Builderstellung verlangsamt wird.  
   
@@ -76,7 +60,7 @@ public interface IForwardingLogger: INodeLogger
   
  Um Ereignisse in einer Weiterleitungsprotokollierung weiterzuleiten, rufen Sie die <xref:Microsoft.Build.Framework.IEventRedirector.ForwardEvent%2A>-Methode der <xref:Microsoft.Build.Framework.IEventRedirector>-Schnittstelle auf. Übergeben Sie entsprechende <xref:Microsoft.Build.Framework.BuildEventArgs> oder eine Ableitung als Parameter.  
   
- Weitere Informationen finden Sie unter [Weiterleitung Protokollierungen erstellen](../msbuild/creating-forwarding-loggers.md).  
+ Weitere Informationen finden Sie unter [Erstellen von Weiterleitungsprotokollierungen](../msbuild/creating-forwarding-loggers.md).  
   
 ### <a name="attaching-a-distributed-logger"></a>Anfügen einer verteilten Protokollierung  
  Verwenden Sie zum Anfügen einer verteilten Protokollierung in einem Befehlszeilenbuild den `/distributedlogger`-Schalter (abgekürzt `/dl`). Das Format zum Angeben der Namen von Protokollierungstypen und -klassen ist mit denen für den `/logger`-Schalter identisch, mit der Ausnahme, dass eine verteilte Protokollierung aus zwei Protokollierungsklassen besteht: eine Weiterleitungsprotokollierung und eine zentrale Protokollierung. Nachfolgend ist ein Beispiel für eine verteilte Protokollierung aufgeführt:  

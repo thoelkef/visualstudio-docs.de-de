@@ -4,36 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-acquisition
+ms.technology: vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: f44e50be-a5f5-4d77-9cff-dd52374c3f74
-caps.latest.revision: 16
+caps.latest.revision: "16"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 79222e6c9cf609e617bd3cfd49d31be4f9c7c30e
-ms.contentlocale: de-de
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: 55e0802f58be0a1ad3a060fce257554b36c01a52
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>Schritt 1: Erstellen eines Projekts und Hinzufügen von Bezeichnungen zum Formular
 Wie in den ersten Schritten zur Entwicklung dieses Quiz erstellen Sie das Projekt und fügen einem Formular Bezeichnungen, eine Schaltfläche und weitere Steuerelemente hinzu. Außerdem legen Sie Eigenschaften für jedes Steuerelement fest, das Sie hinzufügen. Das Projekt enthält das Formular, die Steuerelemente und (später im Lernprogramm) den Code. Das Quiz wird mit der Schaltfläche gestartet, die Bezeichnungen stellen die Quizaufgaben dar und die anderen Steuerelemente zeigen die Quizantworten und die Zeit an, die bis zum Abschluss des Quiz verbleibt.  
@@ -85,7 +68,7 @@ Wie in den ersten Schritten zur Entwicklung dieses Quiz erstellen Sie das Projek
   
      Sie können einige Schriftarteigenschaften ändern, wie im folgenden Bild gezeigt.  
   
-     ![Eigenschaftenfenster mit Schriftgrad](../ide/media/express_setfontsize.png "Express_setFontSize")  
+     ![Eigenschaftenfenster mit Schriftgrad](../ide/media/express_setfontsize.png "Express_SchriftgrößeFestlegen")  
 Eigenschaftenfenster mit Schriftgrad  
   
 8.  Fügen Sie ein weiteres **Label**-Steuerelement aus der Toolbox hinzu, und legen Sie dessen Schriftgröße auf **15,75** fest.  
@@ -134,7 +117,7 @@ Eigenschaftenfenster mit Schriftgrad
   
      Sie haben die erste Zeile erstellt, wie im folgenden Bild dargestellt.  
   
-     ![Erste Zeile des Mathequiz](../ide/media/express_firstrow.png "Express_firstRow")  
+     ![Erste Zeile des Mathequiz](../ide/media/express_firstrow.png "Express_ersteZeile")  
 Erste Zeile des Mathequiz  
   
 ### <a name="to-add-controls-for-the-subtraction-multiplication-and-division-problems"></a>So fügen Sie weitere Steuerelemente für die Subtraktion-, Multiplikations- und Divisionsaufgaben hinzu  
@@ -185,7 +168,7 @@ Erste Zeile des Mathequiz
   
      Das fertige Formular sollte der folgenden Abbildung ähneln.  
   
-     ![Anfängliches Mathequizformular](../ide/media/express_formlaidout.png "Express_FormLaidOut")  
+     ![Anfängliches Formular für Mathequiz](../ide/media/express_formlaidout.png "Express_Formular")  
 Anfängliches Mathequizformular  
   
 8.  Um sicherzustellen, dass die Eigenschaft **TabIndex** wie erwartet funktioniert, speichern das Programm, und führen Sie es durch Auswählen der F5-TASTE oder der Optionen **Debuggen**, **Debuggen starten** in der Menüleiste aus, und wählen Sie dann die TAB-TASTE einige Male aus.  

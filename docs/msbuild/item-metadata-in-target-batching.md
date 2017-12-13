@@ -1,35 +1,36 @@
 ---
-title: "Item Metadata in Target Batching | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "batching [MSBuild]"
-  - "MSBuild, target batching"
-  - "target batching [MSBuild]"
+title: Elementmetadaten bei der Batchverarbeitung von Zielen | Microsoft-Dokumentation
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- batching [MSBuild]
+- MSBuild, target batching
+- target batching [MSBuild]
 ms.assetid: f3cc4186-6a4c-4161-bbe5-1ec638b4925b
-caps.latest.revision: 6
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 6
+caps.latest.revision: "6"
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.openlocfilehash: d24400bc3889d5f7fbe691d3e75b7fd7ad155e01
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Item Metadata in Target Batching
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ist in der Lage, Abhängigkeitsanalysen für die Eingaben und Ausgaben eines Buildziels auszuführen.  Wenn feststeht, dass die Eingaben oder die Ausgaben des Ziels aktuell sind, wird das Ziel übersprungen, und der Build wird fortgesetzt.  `Target`\-Elemente geben die Elemente, die während der Abhängigkeitsanalyse überprüft werden sollen, mit dem `Inputs`\-Attribut und dem `Outputs`\-Attribut an.  
+# <a name="item-metadata-in-target-batching"></a>Elementmetadaten bei der Batchverarbeitung von Zielen
+[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] kann eine Abhängigkeitsanalyse für die Ein- und Ausgaben eines Buildziels durchführen. Wenn ermittelt wird, dass die Ein- oder Ausgaben des Ziels auf dem neuesten Stand sind, wird das Ziel übersprungen, und der Build wird fortgesetzt. `Target`-Elemente verwenden die `Inputs`- und `Outputs`-Attribute, um die Elemente festzulegen, die bei der Abhängigkeitsanalyse überprüft werden.  
   
- Wenn ein Ziel eine Aufgabe enthält, die Elemente im Batchmodus als Eingaben oder Ausgaben verwendet, sollte das `Target`\-Element des Ziels die Batchverarbeitung in seinem `Inputs`\-Attribut oder `Outputs`\-Attribut verwenden, damit Batches mit Elementen, die bereits auf dem neuesten Stand sind, von [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] übersprungen werden können.  
+ Wenn ein Ziel eine Aufgabe enthält, die Batchelemente als Eingaben oder Ausgaben verwendet, sollte in den `Inputs`- oder `Outputs`-Attributen des `Target`-Zielelements die Batchverarbeitung genutzt werden, sodass [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Batchelemente übersprungen werden, die bereits auf dem neuesten Stand sind.  
   
-## Batchverarbeitung von Zielen  
- Das folgende Beispiel enthält eine Elementliste mit dem Namen `Res`, die auf der Grundlage der `Culture`\-Elementmetadaten in zwei Batches unterteilt ist.  Jeder dieser Batches wird an die `AL`\-Aufgabe übergeben, die eine Ausgabeassembly für jeden Batch erstellt.  Wenn das `Outputs`\-Attribut des `Target`\-Elements im Batchmodus verarbeitet wird, kann [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] vor dem Ausführen des Ziels für jeden einzelnen Batch feststellen, ob er aktuell ist.  Wenn keine Batchverarbeitung für Ziele verwendet wird, würde die Aufgabe bei jedem Ausführen des Ziels beide Elementbatches ausführen.  
+## <a name="batching-targets"></a>Batchverarbeitung von Zielen  
+ Das folgende Beispiel enthält die Elementliste `Res`, die mithilfe der `Culture`-Elementmetadaten in zwei Batches aufgeteilt wird. Jeder Batch wird der `AL`-Aufgabe übergeben, die jeweils eine Ausgabeassembly erstellt. Durch die Batchverarbeitung von `Outputs`-Attributen des `Target`-Elements kann [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] vor dem Ausführen des Ziels ermitteln, ob jeder Batch aktuell ist. Ohne die Batchverarbeitung von Zielen würden beide Elementbatches immer dann von der Aufgabe ausgeführt werden, wenn das Ziel ausgeführt wird.  
   
-```  
+```xml  
 <Project  
     xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
   
@@ -67,8 +68,8 @@ caps.handback.revision: 6
 </Project>  
 ```  
   
-## Siehe auch  
- [How to: Build Incrementally](../msbuild/how-to-build-incrementally.md)   
- [Batching](../msbuild/msbuild-batching.md)   
- [Target\-Element \(MSBuild\)](../msbuild/target-element-msbuild.md)   
- [Item Metadata in Task Batching](../msbuild/item-metadata-in-task-batching.md)
+## <a name="see-also"></a>Siehe auch  
+ [Vorgehensweise: Inkrementelles Erstellen](../msbuild/how-to-build-incrementally.md)   
+ [Batching (Batchverarbeitung)](../msbuild/msbuild-batching.md)   
+ [Target-Element (MSBuild)](../msbuild/target-element-msbuild.md)   
+ [Elementmetadaten bei der Batchverarbeitung von Aufgaben](../msbuild/item-metadata-in-task-batching.md)

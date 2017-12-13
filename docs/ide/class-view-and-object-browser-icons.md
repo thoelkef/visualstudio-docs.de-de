@@ -1,64 +1,65 @@
 ---
-title: "Symbole in der Klassenansicht und im Objektbrowser | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Symbole, im Objektkatalog"
-  - "Signalsymbole"
-  - "Klassenansicht (Tool), Symbole"
-  - "Grafische Symbole"
-  - "IntelliSense, Symbole"
-  - "Symbole, IntelliSense"
-  - "Symbole, Symbole im Objektkatalog"
-  - "Objektkatalog, Symbole in der Klassenansicht"
+title: Symbole in der Klassenansicht und im Objektkatalog | Microsoft-Dokumentation
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- icons, in Object Browser
+- signal icons
+- Class View tool, symbols
+- graphic symbols
+- IntelliSense, icons
+- icons, IntelliSense
+- symbols, Object Browser icons
+- Object Browser, icons in Class View
 ms.assetid: 58cc3f44-c296-4a88-a008-09d28598d9c0
-caps.latest.revision: 20
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 20
+caps.latest.revision: "20"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 6b6fad74a71e457759bc6b35ecb4679c3f26011e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Symbole in der Klassenansicht und im Objektbrowser
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Die **Klassenansicht** und der **Objektkatalog** enthalten eine Reihe von Symbolen, die Codeentitäten darstellen, z. B. Namespaces, Klassen, Funktionen oder Variablen.  In der folgenden Tabelle werden die Symbole verdeutlicht und beschrieben.  
+# <a name="class-view-and-object-browser-icons"></a>Symbole in der Klassenansicht und im Objektbrowser
+Die **Klassenansicht** und der **Objektkatalog** zeigen Symbole an, die Codeentitäten darstellen, z.B. Namespaces, Klassen, Funktionen und Variablen. In der folgenden Tabelle werden die Symbole dargestellt und beschrieben.  
   
 |Symbol|Beschreibung|Symbol|Beschreibung|  
-|------------|------------------|------------|------------------|  
-|![Symbol "Namespace"](~/ide/media/vxnamespace_icon.gif "vxNamespace\_Icon")|Namespace|![Symbol "Deklaration"](~/ide/media/vxmethod_icon.gif "vxMethod\_Icon")|Methode oder Funktion|  
-|![Symbol "Klasse"](~/ide/media/vxclass_icon.gif "vxClass\_Icon")|Klasse|![Symbol "Operator"](~/ide/media/vxoperator_icon.gif "vxOperator\_Icon")|Operator|  
-|![Schnittstellensymbol "Lollipop"](~/ide/media/vxinterface_icon.gif "vxInterface\_Icon")|Schnittstelle|![Symbol "Eigenschaften"](~/ide/media/vxproperty_icon.gif "vxProperty\_Icon")|Eigenschaft|  
-|![Symbol "Struktur"](~/ide/media/vxstruct_icon.gif "vxStruct\_Icon")|Struktur|![Symbol "Feld"](~/ide/media/vxfield_icon.gif "vxField\_Icon")|Feld oder Variable|  
-|![Symbol "Union"](~/ide/media/vxunion_icon.gif "vxUnion\_Icon")|Union|![Symbol "Ereignis"](~/ide/media/vxevent_icon.gif "vxEvent\_Icon")|Ereignis|  
-|![Symbol "Enumeration"](~/ide/media/vxenum_icon.gif "vxEnum\_Icon")|Enum|![Symbol "Konstante"](~/ide/media/vxconstant_icon.gif "vxConstant\_Icon")|Konstante|  
-|![Symbol "Typdefinition"](~/ide/media/vxtypedef_icon.gif "vxTypeDef\_Icon")|TypeDef|![Symbol "Element enumerieren"](~/ide/media/vxenumitem_icon.gif "vxEnumItem\_Icon")|Enumerationselement|  
-|![Symbol "Visual Studio&#45;Modul"](~/ide/media/vxmodule_icon.gif "vxModule\_Icon")|Modul|![Symbol "Zuordnungselement"](~/ide/media/vxmapitem_icon.gif "vxMapItem\_Icon")|Zuordnungselement|  
-|![Symbol "Erweiterungsmethode"](~/ide/media/extensionmethod.gif "ExtensionMethod")|Erweiterungsmethode|![Symbol "Deklaration"](~/ide/media/vxmethod_icon.gif "vxMethod\_Icon")|Externe Deklaration|  
-|![Symbol "Delegat"](~/ide/media/vxdelegate_icon.gif "vxDelegate\_Icon")|Delegat|![Fehlersymbol für Klassenansicht und Objektkatalog](~/ide/media/erroricon.gif "ErrorIcon")|Fehler|  
-|![Symbol "Ausnahme"](~/ide/media/vxexception_icon.gif "vxException\_Icon")|Ausnahme|![Symbol "Vorlage"](~/ide/media/vxtemplate_icon.gif "vxTemplate\_Icon")|Vorlage|  
-|![Symbol "Zuordnung"](~/ide/media/vxmap_icon.gif "vxMap\_Icon")|Zuordnung|![Symbol "Fehler &#45; Ausrufezeichen"](~/ide/media/vxerror_icon.gif "vxError\_Icon")|Unbekannt|  
-|![Symbol "Typweiterleitung"](~/ide/media/ob_type_forward.gif "ob\_type\_forward")|Typweiterleitung|||  
+|----------|-----------------|----------|-----------------|  
+|![Symbol „Namespace“](../ide/media/vxnamespace_icon.gif "vxNamespace_Icon")|Namespace|![Symbol „Deklaration“](../ide/media/vxmethod_icon.gif "vxMethod_Icon")|Methode oder Funktion|  
+|![Symbol „Klasse“](../ide/media/vxclass_icon.gif "vxClass_Icon")|Klasse|![Symbol „Operator“](../ide/media/vxoperator_icon.gif "vxOperator_Icon")|Operator|  
+|![Symbol „Lollipopschnittstelle“](../ide/media/vxinterface_icon.gif "vxInterface_Icon")|Schnittstelle|![Symbol „Eigenschaften“](../ide/media/vxproperty_icon.gif "vxProperty_Icon")|Eigenschaft|  
+|![Symbol „Struktur“](../ide/media/vxstruct_icon.gif "vxStruct_Icon")|Struktur|![Symbol „Feld“](../ide/media/vxfield_icon.gif "vxField_Icon")|Feld oder Variable|  
+|![Symbol „Union“](../ide/media/vxunion_icon.gif "vxUnion_Icon")|Union|![Symbol „Ereignis“](../ide/media/vxevent_icon.gif "vxEvent_Icon")|Ereignis|  
+|![Symbol „Enumeration“](../ide/media/vxenum_icon.gif "vxEnum_Icon")|Enum|![Symbol „Konstante“](../ide/media/vxconstant_icon.gif "vxConstant_Icon")|Konstante|  
+|![Symbol „Typdefinition“](../ide/media/vxtypedef_icon.gif "vxTypeDef_Icon")|TypeDef|![Symbol „Element auflisten“](../ide/media/vxenumitem_icon.gif "vxEnumItem_Icon")|Enum-Element|  
+|![Symbol „Visual Studio-Modul“](../ide/media/vxmodule_icon.gif "vxModule_Icon")|Modul|![Symbol „Zuordnungselement“](../ide/media/vxmapitem_icon.gif "vxMapItem_Icon")|Zuordnungselement|  
+|![Symbol „Erweiterungsmethode“](../ide/media/extensionmethod.gif "ExtensionMethod")|Erweiterungsmethode|![Symbol „Deklaration“](../ide/media/vxmethod_icon.gif "vxMethod_Icon")|Externe Deklaration|  
+|![Symbol „Delegat“](../ide/media/vxdelegate_icon.gif "vxDelegate_Icon")|Delegate|![Fehlersymbol für Klassenansicht und Objektkatalog](../ide/media/erroricon.gif "ErrorIcon")|Fehler|  
+|![Symbol „Ausnahme“](../ide/media/vxexception_icon.gif "vxException_Icon")|Ausnahme|![Symbol „Vorlage“](../ide/media/vxtemplate_icon.gif "vxTemplate_Icon")|Vorlage|  
+|![Symbol „Zuordnung“](../ide/media/vxmap_icon.gif "vxMap_Icon")|Zuordnung|![Symbol „Fehler – Ausrufezeichen“](../ide/media/vxerror_icon.gif "vxError_Icon")|Unbekannt|  
+|![Symbol „Typweiterleitung“](../ide/media/ob_type_forward.gif "ob_type_forward")|Typweiterleitung|||  
   
-## Signalsymbole  
- Die folgenden Signalsymbole gelten für alle vorgenannten Symbole und zeigen die Möglichkeit zum Zugriff auf diese an.  
+## <a name="signal-icons"></a>Signalsymbole  
+ Die folgenden Signalsymbole gelten für alle zuvor erwähnten Symbole und geben deren Barrierefreiheit an.  
   
 > [!NOTE]
->  Wenn das Projekt in einer Quellcodeverwaltungs\-Datenbank enthalten ist, können zusätzliche Signalsymbole angezeigt werden, die den Quellcodeverwaltungsstatus angeben, beispielsweise eingecheckt oder ausgecheckt.  
+>  Wenn Ihr Projekt in einer Quellcodeverwaltungs-Datenbank enthalten ist, werden möglicherweise zusätzliche Signalsymbole angezeigt, um den Quellcodestatus anzugeben, z.B. eingecheckt oder ausgecheckt.  
   
 |Symbol|Beschreibung|  
-|------------|------------------|  
-|\<Kein Signalsymbol\>|Public.  Der Zugriff ist von jeder Position innerhalb dieser Komponente und von jeder Komponente, die darauf verweist, möglich.|  
-|![Symbol "Signal geschützt"](~/ide/media/vxsignal_icon_key.gif "vxSignal\_Icon\_Key")|Protected.  Der Zugriff ist von der enthaltenden Klasse oder dem enthaltenden Typ oder von abgeleiteten Klassen oder Typen möglich.|  
-|![Symbol "Signal privat"](~/ide/media/vxsignal_icon_lock.gif "vxSignal\_Icon\_Lock")|Private.  Der Zugriff ist nur innerhalb der enthaltenden Klasse oder des enthaltenden Typs möglich.|  
-|![Symbol "Signal versiegelt"](~/ide/media/vxsignal_icon_envelope.gif "vxSignal\_Icon\_Envelope")|Versiegelt.|  
-|![Symbol "Signal Friend&#47;Intern"](~/ide/media/vxsignal_icon_diamond.gif "vxSignal\_Icon\_Diamond")|Freund\/intern.  Der Zugriff ist nur über das Projekt möglich.|  
-|![Signalsymbol "Pfeil"](~/ide/media/vxsignal_icon_arrow.gif "vxSignal\_Icon\_Arrow")|Shortcut.  Eine Verknüpfung zum Objekt.|  
+|----------|-----------------|  
+|\<Kein Signalsymbol>|Öffentlich. Der komponenteninterne Zugriff ist möglich. Außerdem können andere Komponenten, die auf die Komponente verweisen, auf diese zugreifen.|  
+|![Signalsymbol „Geschützt“](../ide/media/vxsignal_icon_key.gif "vxSignal_Icon_Key")|Geschützt. Der Zugriff ist innerhalb der enthaltenen Klasse oder dem enthaltenen Typ möglich. Außerdem haben Klassen oder Typen Zugriff, die von der enthaltenen Klasse oder dem enthaltenen Typ abgeleitet sind.|  
+|![Signalsymbol „Privat“](../ide/media/vxsignal_icon_lock.gif "vxSignal_Icon_Lock")|Privat. Der Zugriff ist nur in der enthaltenden Klasse oder dem Typ möglich.|  
+|![Signalsymbol „Versiegelt“](../ide/media/vxsignal_icon_envelope.gif "vxSignal_Icon_Envelope")|Versiegelt.|  
+|![Signalsymbol „Friend/Intern“](../ide/media/vxsignal_icon_diamond.gif "vxSignal_Icon_Diamond")|Friend/Intern. Der Zugriff ist nur über das Projekt möglich.|  
+|![Signalsymbol „Pfeil“](../ide/media/vxsignal_icon_arrow.gif "vxSignal_Icon_Arrow")|Verknüpfung. Eine Verknüpfung mit dem Objekt.|  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Anzeigen der Codestruktur](../ide/viewing-the-structure-of-code.md)

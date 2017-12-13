@@ -1,79 +1,80 @@
 ---
-title: "CommentMarkProfile | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "CommentMarkProfile"
-  - "CommentMarkProfileA"
+title: CommentMarkProfile | Microsoft-Dokumentation
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- CommentMarkProfile
+- CommentMarkProfileA
 ms.assetid: 33ccff45-c33a-4672-b41f-5b317b848cd1
-caps.latest.revision: 11
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 0cb46497c8e00cedeb4056571d8fa1d19eb26c0c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# CommentMarkProfile
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Die `CommentMarkProfile`\-Funktion fügt eine numerische Markierung und eine Textzeichenfolge in die VSP\-Datei ein.  Damit die Markierung und der Kommentar eingefügt werden, muss die Profilerstellung für den Thread, der die `CommentMarkProfile`\-Funktion enthält, auf ON festgelegt sein.  
+# <a name="commentmarkprofile"></a>CommentMarkProfile
+Die `CommentMarkProfile`-Funktion fügt der VSP-Datei eine numerische Markierung und eine Textzeichenfolge hinzu. Damit die Markierung und der Kommentar eingefügt werden, muss die Profilerstellung für den Thread, der die `CommentMarkProfile`-Funktion enthält, auf ON festgelegt sein.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkProfile(  
-                                   long lMarker,   
-                                   LPCTSTR szComment);  
+                                   long lMarker,   
+                                   LPCTSTR szComment);  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `lMarker`  
   
- Numerische Markierung, die eingefügt werden soll.  Diese muss größer oder gleich 0 \(null\) sein.  
+ Die numerische Markierung, die eingefügt werden soll. Die Markierung muss größer oder gleich 0 (null) sein.  
   
  `szComment`  
   
- Zeiger auf die Textzeichenfolge, die eingefügt werden soll.  Die Zeichenfolge muss einschließlich des NULL\-Abschlusszeichens weniger als 256 Zeichen umfassen.  
+ Der Zeiger auf die einzufügende Textzeichenfolge. Die Zeichenfolge muss einschließlich des NULL-Abschlusszeichens weniger als 256 Zeichen enthalten.  
   
-## Eigenschaftswert\/Rückgabewert  
- Die Funktion gibt mit der **PROFILE\_COMMAND\_STATUS**\-Enumeration Erfolg oder Fehler an.  Folgende Rückgabewerte sind möglich:  
+## <a name="property-valuereturn-value"></a>Eigenschaftswert/Rückgabewert  
+ Die Funktion gibt mithilfe der **PROFILE_COMMAND_STATUS**-Enumeration einen Erfolg oder Fehler an. Einer der folgenden Werte kann zurückgegeben werden:  
   
-|Enumerator|**Beschreibung**|  
-|----------------|----------------------|  
-|MARK\_ERROR\_MARKER\_RESERVED|Der Parameter ist kleiner oder gleich 0.  Diese Werte sind reserviert.  Die Markierung und der Kommentar werden nicht aufgezeichnet.|  
-|MARK\_ERROR\_MODE\_NEVER|Der Profilerstellungsmodus wurde beim Aufrufen der Funktion auf NEVER festgelegt.  Die Markierung und der Kommentar werden nicht aufgezeichnet.|  
-|MARK\_ERROR\_MODE\_OFF|Der Profilerstellungsmodus wurde beim Aufrufen der Funktion auf OFF festgelegt.  Die Markierung und der Kommentar werden nicht aufgezeichnet.|  
-|MARK\_ERROR\_NO\_SUPPORT|In diesem Kontext werden keine Markierungen unterstützt.  Die Markierung und der Kommentar werden nicht aufgezeichnet.|  
-|MARK\_ERROR\_OUTOFMEMORY|Es war kein Arbeitsspeicher zum Aufzeichnen des Ereignisses verfügbar.  Die Markierung und der Kommentar werden nicht aufgezeichnet.|  
-|MARK\_TEXTTOOLONG|Die Zeichenfolge überschreitet die maximale Länge von 256 Zeichen.  Die Kommentarzeichenfolge wird abgeschnitten, und die Markierung und der Kommentar werden aufgezeichnet.|  
-|MARK\_OK|Bei Erfolg wird MARK\_OK zurückgegeben.|  
+|Enumerator|Beschreibung|  
+|----------------|-----------------|  
+|MARK_ERROR_MARKER_RESERVED|Der Parameter ist kleiner oder gleich 0 (null). Diese Werte sind reserviert. Die Markierung und der Kommentar werden nicht aufgezeichnet.|  
+|MARK_ERROR_MODE_NEVER|Der Profilerstellungsmodus wurde beim Aufruf der Funktion auf NEVER festgelegt. Die Markierung und der Kommentar werden nicht aufgezeichnet.|  
+|MARK_ERROR_MODE_OFF|Der Profilerstellungsmodus wurde beim Aufruf der Funktion auf OFF festgelegt. Die Markierung und der Kommentar werden nicht aufgezeichnet.|  
+|MARK_ERROR_NO_SUPPORT|In diesem Kontext werden keine Markierungen unterstützt. Die Markierung und der Kommentar werden nicht aufgezeichnet.|  
+|MARK_ERROR_OUTOFMEMORY|Der Arbeitsspeicher war nicht verfügbar, um das Ereignis aufzuzeichnen. Die Markierung und der Kommentar werden nicht aufgezeichnet.|  
+|MARK_TEXTTOOLONG|Die Zeichenfolge überschreitet die maximale Länge von 256 Zeichen. Die Kommentarzeichenfolge wurde abgeschnitten, und die Markierung und der Kommentar werden aufgezeichnet.|  
+|MARK_OK|Bei Erfolg wird MARK_OK zurückgegeben.|  
   
-## Hinweise  
- Der Profilerstellungszustand des Threads, der die Funktion zum Markieren von Profilen enthält, muss ON lauten, wenn Markierungen und Kommentare mit dem Mark\-Befehl von VSInstr oder mit Funktionen \(CommentMarkAtProfile, CommentMarkProfile oder MarkProfile\) eingefügt werden.  
+## <a name="remarks"></a>Hinweise  
+ Der Profilerstellungsstatus für den Thread, der die Funktion „Mark profile“ („Profil markieren“) enthält, muss auf ON festgelegt sein, wenn Markierungen und Kommentare über den Mark-Befehl „VSInstr“ oder über Funktionen („CommentMarkAtProfile“, „CommentMarkProfile“, oder „MarkProfile“) eingefügt werden.  
   
- Profilmarkierungen weisen einen globalen Gültigkeitsbereich auf.  So kann beispielsweise eine Profilmarkierung, die in einem Thread eingefügt wurde, verwendet werden, um den Anfang oder das Ende eines Datensegments in einem beliebigen Thread in der VSP\-Datei zu markieren.  
+ Profilmarkierungen sind im Bereich global. Wenn beispielsweise eine Profilmarkierung in einen Thread eingefügt wird, kann diese verwendet werden, um den Anfang oder das Ende eines Datensegments in jedem Thread der VSP-Datei zu markieren.  
   
 > [!IMPORTANT]
->  Die CommentMarkProfile\-Methode kann nur mit der Instrumentation verwendet werden.  
+>  CommentMarkProfile-Methoden können nur mit der Instrumentierung verwendet werden.  
   
-## .NET Framework-Entsprechung  
+## <a name="net-framework-equivalent"></a>Entsprechung in .NET Framework  
  Microsoft.VisualStudio.Profiler.dll  
   
-## Informationen zur Funktion  
+## <a name="function-information"></a>Funktionsinformationen  
   
 |||  
 |-|-|  
-|**Header**|VSPerf.h aufnehmen|  
-|**Bibliothek**|VSPerf.lib verwenden|  
-|**Unicode**|Implementiert als `CommentMarkProfileW` \(Unicode\) und `CommentMarkProfileA` \(ANSI\).|  
+|**Header**|Enthält VSPerf.h|  
+|**Bibliothek**|Verwendet VSPerf.lib|  
+|**Unicode**|Als `CommentMarkProfileW` (Unicode) und `CommentMarkProfileA` (ANSI) implementiert.|  
   
-## Beispiel  
- Der folgende Code veranschaulicht den Aufruf der CommentMarkProfile\-Funktion.  Im Beispiel werden die Verwendung der Win32\-Zeichenfolgenmakros und die Compilereinstellungen für Unicode vorausgesetzt, um zu bestimmen, ob der Code die [!INCLUDE[vcpransi](../profiling/includes/vcpransi_md.md)]\-Funktion aufruft.  
+## <a name="example"></a>Beispiel  
+ Der folgende Code stellt den Funktionsaufruf „CommentMarkProfile“ dar. In diesem Beispiel wird vorausgesetzt, dass die Win32-Zeichenfolgenmakros und Unicode-Compilereinstellungen verwendet werden, um zu bestimmen, ob der Code den Funktionsaufruf [!INCLUDE[vcpransi](../profiling/includes/vcpransi_md.md)] abruft.  
   
 ```  
 void ExerciseCommentMarkProfile()  
@@ -111,5 +112,5 @@ void ExerciseCommentMarkProfile()
 }  
 ```  
   
-## Siehe auch  
- [Referenz zu Profiler\-APIs in Visual Studio \(systemeigen\)](../profiling/visual-studio-profiler-api-reference-native.md)
+## <a name="see-also"></a>Siehe auch  
+ [Referenz zu Profiler-APIs in Visual Studio (systemeigen)](../profiling/visual-studio-profiler-api-reference-native.md)

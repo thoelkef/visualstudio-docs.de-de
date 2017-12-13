@@ -1,53 +1,54 @@
 ---
-title: "Shader-Designer-Knoten | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: Shader-Designer-Knoten | Microsoft-Dokumentation
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-designers
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: f5192fbd-c78f-40a8-a4d4-443209610268
-caps.latest.revision: 6
-author: "BrianPeek"
-ms.author: "brpeek"
-manager: "ghogen"
-caps.handback.revision: 6
+caps.latest.revision: "6"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 2393d254ee2864291a0a3ae5bbed6e78d80d3863
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Shader-Designer-Knoten
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Die Artikel in diesem Abschnitt der Dokumentation enthalten Informationen zu den verschiedenen Knoten von Shader\-Designer, mit denen Sie Grafikeffekte erstellen können.  
+# <a name="shader-designer-nodes"></a>Shader-Designer-Knoten
+Die Artikel in diesem Dokumentationsabschnitt enthalten Informationen zu verschiedenen Shader-Designer-Knoten, die Sie zum Erstellen von grafischen Effekten verwenden können.  
   
-## Knoten und Knotentypen  
- Der Shader\-Designer stellt visuelle Effekte als Diagramm dar.  Diese Diagramme werden von den Knoten erstellt, die speziell ausgewählt und auf präzise Weise miteinander verbunden werden, um den beabsichtigten Effekt zu erzielen.  Jeder Knoten stellt entweder eine Information oder eine mathematische Funktion dar. Die Verbindungen zwischen den Knoten geben an, wie die Informationen durch das Diagramm fließen, um das Ergebnis zu erzeugen.  Der Shader\-Designer stellt sechs verschiedene Knotentypen bereit – Filter, Texturknoten, Parameter, Konstanten, Hilfsprogramm\-Knoten und Mathematikknoten. Zu jedem Typ gehören mehrere einzelne Knoten.  Diese Knoten und Knotentypen werden in den anderen Artikeln in diesem Abschnitt beschrieben – siehe die Links am Ende dieses Dokuments.  
+## <a name="nodes-and-node-types"></a>Knoten und Knotentypen  
+ Der Shader-Designer stellt visuelle Effekte als Diagramm dar. Diese Diagramme werden aus Knoten erstellt, die speziell ausgewählt werden und so miteinander verbunden sind, dass der gewünschte Effekt erreicht wird. Jeder Knoten stellt entweder eine Information oder eine mathematische Funktion dar. Außerdem stellen die Verbindungen dieser Knoten miteinander dar, wie die Informationen durch das Diagramm fließen, um ein Ergebnis zu erzielen. Der Shader-Designer stellt sechs verschiedene Knotentypen (Filter, Texturknoten, Parameter, Konstanten, Hilfsprogrammknoten und Berechnungsknoten) und einige individuelle Knoten bereit, die zu jedem Typ gehören. Diese Knoten und Knotentypen werden in anderen Artikeln beschrieben, die zu diesem Bereich gehören (vgl. die Links am Ende dieses Dokuments).  
   
-## Knotenstruktur  
- Alle Knoten bestehen aus einer Kombination gemeinsamer Elemente.  Jeder Knoten verfügt über mindestens ein Ausgabeterminal auf der rechten Seite \(außer dem abschließenden Farbknoten, der die Ausgabe des Shaders darstellt\).  Knoten, die Berechnungen oder Texturbeispiele darstellen, verfügen links über Eingabeterminals. Knoten, die Informationen darstellen, verfügen über keine Eingabeterminals.  Ausgabeterminals werden mit Eingabeterminals verbunden, um Informationen von einem Knoten zum anderen zu übergeben.  
+## <a name="node-structure"></a>Knotenstruktur  
+ Alle Knoten bestehen aus einer Kombination aus gemeinsamen Elementen. Jeder Knoten verfügt auf der rechten Seite über mindestens ein Ausgabeterminal (außer Farbknoten, die die Ausgabe des Shaders darstellen). Knoten, die Berechnungs- oder Textursampler darstellen, verfügen auf der linken Seite über Eingabeterminals. Knoten, die Informationen darstellen, haben hingegen keine Eingabeterminals. Ausgabeterminals sind mit den Eingabeterminals verbunden, damit sie Informationen von einem Knoten an einen anderen verschieben können.  
   
-### Erweiterung von Eingaben  
- Da der Shader\-Designer HLSL\-Quellcode generieren muss, damit der Effekt in einem Spiel oder in einer App verwendet werden kann, unterliegen die Knoten des Shader\-Designers den Regeln der Typerweiterung, die HLSL verwendet.  Da Grafikhardware hauptsächlich auf Gleitkommawerten operiert, ist eine Typerweiterung zwischen verschiedenen Typen, z. B. aus `int` in `float` oder aus `float` in `double` eher selten.  Da die Grafikhardware denselben Vorgang für mehrere Informationen sofort anwendet, kann stattdessen eine andere Art von Erweiterung stattfinden, bei der die kürzere einer Reihe von Eingaben verlängert wird, um der Größe der längsten Eingabe zu entsprechen.  Wie sie verlängert wird, hängt vom Typ der Eingabe und auch vom Vorgang selbst ab:  
+### <a name="promotion-of-inputs"></a>Heraufstufung von Eingaben  
+ Da der Shader-Designer letztendlich HLSL-Quellcode generieren muss, damit der Effekt in einem Spiel oder einer App verwendet werden kann, sind Shader-Designerknoten Teil der Regeln zur Typerweiterung, die HLSL verwendet. Da die Grafikhardware hauptsächlich mit Gleitkommawerten arbeitet, ist die Typerweiterung zwischen verschiedenen Typen (z.B. von `int` auf `float` oder von `float` auf `double`) eher ungewöhnlich. Da Grafikhardware den gleichen Vorgang auf mehrere Informationspakete gleichzeitig anwendet, findet eine andere Art der Heraufstufung statt, bei der kürzere Eingabewerte erweitert werden, um sie an die längsten Eingabewerte anzugleichen. Auf welche Weise die Eingabe verlängert wird hängt von deren Typ und dem Vorgang an sich ab:  
   
--   **Wenn der kleinere Typ ein Skalarwert ist, dann gilt Folgendes:**  
+-   **Wenn der kleinere Typ ein Skalarwert ist, dann:**  
   
-     Der Wert des Skalars wird in einen Vektor repliziert, der gleich groß wie die größere Eingabe ist.  Beispielsweise wird die skalare Eingabe 5,0 zum Vektor \(5,0, 5,0, 5,0\), wenn die größte Eingabe des Vorgangs ein Vektor aus drei Elementen ist, und zwar unabhängig von der Art des Vorgangs.  
+     Ist der Wert des Skalars in einen Vektor repliziert, der die gleiche Größe hat wie die größere Eingabe. Beispielsweise wird die Skalareingabe 5,0 zum Vektor (5,0, 5,0, 5,0), wenn die längste Eingabe des Vorgangs ein Drei-Elemente-Vektor ist, unabhängig davon, um welchen Vorgang es sich handelt.  
   
--   **Wenn der kleinere Typ ein Vektor ist und der Vorgang multiplikativ \(\*,\/, % usw.\) ist, dann gilt Folgendes:**  
+-   **Wenn es sich bei dem kleineren Typ um einen Vektor handelt und der Vorgang multiplikativ ist (\*, /, %, etc.), dann:**  
   
-     Der Wert des Vektors wird in die führenden Elemente eines Vektors kopiert, der gleich groß wie größere Eingabe ist, und die nachfolgenden Elemente werden auf 1,0 festgelegt.  Beispielsweise wird die Vektoreingabe \(5,0, 5,0\) zum Vektor \(5,0, 5,0, 1,0, 1,0\), wenn sie mit einem Vektor aus vier Elementen multipliziert wird.  Dadurch werden das dritte und vierte Elemente der Ausgabe beibehalten, da die multiplikative Identität, also 1,0, verwendet wird.  
+     Wird der Wert des Vektors in die führenden Elemente eines Vektors kopiert, der der Größe der größeren Eingabe entspricht, und die nachstehenden Elemente sind auf 1,0 festgelegt. Beispielsweise wird die Vektoreingabe (5,0, 5,0) zum Vektor (5,0, 5,0, 1,0, 1,0), wenn er von einem Vier-Elemente-Vektor multipliziert werden soll. Dabei bleiben jeweils die dritten und vierten Elemente der Ausgabe erhalten, indem das neutrale Element der Multiplikation 1,0 verwendet wird.  
   
--   **Wenn der kleinere Typ ein Vektor ist, und der Vorgang additiver Natur \(\+, \- usw.\) ist, dann gilt Folgendes:**  
+-   **Wenn es sich bei dem kleineren Typ um einen Vektor handelt und der Vorgang additiv ist (+, –, etc.), dann:**  
   
-     Der Wert des Vektors wird in die führenden Elemente eines Vektors kopiert, der gleich groß wie größere Eingabe ist, und die nachfolgenden Elemente werden auf 0,0 festgelegt.  Beispielsweise wird die Vektoreingabe \(5,0, 5,0\) zum Vektor \(5,0, 5,0, 0,0, 0,0\), wenn sie zu einem Vektor mit vier Elementen addiert wird.  Dadurch werden das dritte und vierte Elemente der Ausgabe beibehalten, da die additive Identität, also 0,0, verwendet wird.  
+     Der Wert des Vektors wird in die führenden Elemente eines Vektors kopiert, der der Größe der größeren Eingabe entspricht, und die nachstehenden Elemente sind auf 0,0 festgelegt. Beispielsweise wird die Vektoreingabe (5,0, 5,0) zum Vektor (5,0, 5,0, 0,0, 0,0), wenn er von einem Vier-Elemente-Vektor multipliziert werden soll. Dabei bleiben jeweils die dritten und vierten Elemente der Ausgabe erhalten, indem die additive Identität 0,0 verwendet wird.  
   
-## Verwandte Themen  
+## <a name="related-topics"></a>Verwandte Themen  
   
-|Titel|**Beschreibung**|  
-|-----------|----------------------|  
-|[Konstante Knoten](../designers/constant-nodes.md)|Beschreibt Knoten, die Sie verwenden können, um Literalwerte und interpolierte Vertex\-Zustandsinformationen in den Shader\-Berechnungen darzustellen.  Da der Vertex\-Zustand interpoliert wird – und deshalb für jedes Pixel unterschiedlich ist –, erhält jede Pixel\-Shader\-Instanz eine andere Version der Konstante.|  
-|[Parameterknoten](../designers/parameter-nodes.md)|Beschreibt Knoten, die Sie verwenden können, um Kameraposition, Materialeigenschaften, Beleuchtungsparameter, Zeit und andere Informationen zum App\-Zustand in Shader\-Berechnungen darzustellen.|  
-|[Texturknoten](../designers/texture-nodes.md)|Beschreibt die Knoten, die Sie verwenden können, um verschiedene Texturtypen und Geometrien zu berechnen und Texturkoordinaten auf herkömmliche Weise zu erstellen oder umzuwandeln.|  
-|[Berechnungsknoten](../designers/math-nodes.md)|Beschreibt die Knoten, die Sie verwenden können, um algebraische, logische, trigonometrische und andere mathematische Operationen durchzuführen, die präzise auf die HLSL\-Anweisungen abgestimmt sind.|  
-|[Hilfsprogrammknoten](../designers/utility-nodes.md)|Beschreibt die Knoten, die Sie verwenden können, um allgemeine Beleuchtungsberechnungen und andere allgemeine Vorgänge auszuführen, die nicht präzise auf die HLSL\-Anweisungen abgestimmt sind.|  
-|[Filtern von Knoten](../designers/filter-nodes.md)|Beschreibt die Knoten, die Sie verwenden können, um eine Textur\- und Farbfilterung durchzuführen.|
+|Titel|Beschreibung|  
+|-----------|-----------------|  
+|[Konstante Knoten](../designers/constant-nodes.md)|Beschreibt Knoten, die Sie verwenden können, um Literalwerte und interpolierte Informationen zu Vertexzuständen in Shader-Berechnungen darzustellen. Vertexzustände werden interpoliert und unterscheiden sich daher in jedem Pixel: Jede Pixel-Shader-Instanz empfängt eine andere Version der Konstanten.|  
+|[Parameterknoten](../designers/parameter-nodes.md)|Beschreibt Knoten, die Sie zur Darstellung der Kameraposition, Materialeigenschaften, Lichtparameter, Zeit und andere Informationen zum App-Status in Shader-Berechnungen verwenden können.|  
+|[Texturknoten](../designers/texture-nodes.md)|Beschreibt die Knoten, die Sie verwenden können, um verschiedene Texturtypen und Geometrien abzufragen und Texturkoordinaten auf gewöhnliche Weise zu erzeugen oder zu transformieren.|  
+|[Berechnungsknoten](../designers/math-nodes.md)|Beschreibt die Knoten, die Sie verwenden können, um algebraische, logische, trigonometrische und andere mathematische Vorgänge durchzuführen, die den HLSL-Anweisungen direkt zugeordnet werden.|  
+|[Hilfsprogrammknoten](../designers/utility-nodes.md)|Beschreibt die Knoten, die Sie verwenden können, um allgemeine Lichtberechnungen und andere allgemeine Vorgänge durchzuführen, die den HLSL-Anweisungen direkt zugeordnet werden.|  
+|[Filtern von Knoten](../designers/filter-nodes.md)|Beschreibt die Knoten, die Sie verwenden können, um die Textur- und Farbfilterung durchzuführen.|

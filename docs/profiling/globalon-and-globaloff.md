@@ -1,72 +1,73 @@
 ---
-title: "GlobalOn und GlobalOff | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: GlobalOn und GlobalOff | Microsoft-Dokumentation
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 24b0ed68-d19e-473e-9af3-252c11d82bcf
-caps.latest.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 26a85326dec53adce4ac9c5b1bdedaca1e38beec
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# GlobalOn und GlobalOff
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Mit den Optionen **GlobalOff** und **GlobalOn** von "VSPerfCmd.exe" wird die Profilerstellung für alle Prozesse und Threads in einer Profilerstellungssitzung über die Befehlszeile angehalten und wieder fortgeführt.  
+# <a name="globalon-and-globaloff"></a>GlobalOn und GlobalOff
+Die VSPerfCmd.exe-Optionen **GlobalOff** und **GlobalOn** halten die Profilerstellung für alle Prozesse und Threads in einer Profilerstellungssitzung auf einer Befehlszeile an bzw. setzen sie fort.  
   
- Sie können **GlobalOn** und **GlobalOff** als einzige Optionen in einer VSPerfCmd.exe\-Befehlszeile angeben oder sie in Befehlszeilen aufnehmen, die auch die Optionen **Start**, **Launch** oder **Attach** enthalten.  
+ Sie können **GlobalOff** und **GlobalOn** als die einzigen Optionen einer VSPerfCmd.exe-Befehlszeile angeben, oder Sie können sie in Befehlszeilen einschließen, die auch die Optionen **Start**, **Launch** (Starten) oder **Attach** (Anfügen) enthalten.  
   
  **GlobalOn** und **GlobalOff** können auch mit den Optionen **ProcessOn**, **ProcessOff**, **ThreadOn** und **ThreadOff** kombiniert werden.  
   
- Die Optionen **GlobalOn** und **GlobalOff** interagieren mit den Optionen **ProcessOn** und **ProcessOff**, mit denen die Datensammlung für einen angegebenen Prozess gesteuert wird, und mit den Optionen **ThreadOn** und **ThreadOff**, mit denen die Datensammlung für einen angegebenen Thread gesteuert wird.  
+ Die Optionen **GlobalOn** und **GlobalOff** interagieren mit den Optionen **ProcessOn** und **ProcessOff**, die die Datensammlung für einen angegebenen Prozess steuern, sowie mit den Optionen **ThreadOn** und **ThreadOff**, die die Datensammlung für einen angegebenen Thread steuern.  
   
- Die Optionen **GlobalOff** und **GlobalOn** wirken sich auch auf die globale Start\/Stop\-Anzahl aus, die von den API\-Funktionen des Profilers bearbeitet wird.  
+ Die Optionen **GlobalOff** und **GlobalOn** beeinflussen auch die globale Start/Stop-Anzahl, die von den API-Funktionen des Profilers manipuliert wird.  
   
--   **GlobalOff** legt die globale Start\/Stop\-Anzahl sofort auf "0" fest und hält daher die Profilerstellung an.  
+-   **GlobalOff** legt die globale Start/Stop-Anzahl sofort auf 0 fest und hält die Profilerstellung daher an.  
   
--   **GlobalOn** legt die globale Start\/Stop\-Anzahl sofort auf "1" fest und nimmt die Profilerstellung daher wieder auf.  
+-   **GlobalOn** legt die globale Start/Stop-Anzahl sofort auf 1 fest und setzt die Profilerstellung daher fort.  
   
  Weitere Informationen finden Sie unter [APIs für Profilerstellungstools](../profiling/profiling-tools-apis.md).  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 VSPerfCmd.exe /{GlobalOff|GlobalOn}  
   
 VSPerfCmd.exe /Start:Method /{GlobalOff|GlobalOn} [Options]  
   
-VSPerfCmd.exe {Launch:AppName|Attach:PID} /{GlobalOff|GlobalOn} [Options]  
+VSPerfCmd.exe {Launch:AppName|Attach:PID} /{GlobalOff|GlobalOn}[Options]  
 ```  
   
-#### Parameter  
- Kein  
+#### <a name="parameters"></a>Parameter  
+ Keine  
   
-## Gültige Optionen  
- **GlobalOn** und **GlobalOff** können in Befehlszeilen angegeben werden, die auch die folgenden Optionen enthalten.  
+## <a name="valid-options"></a>Gültige Optionen  
+ **GlobalOn** und **GlobalOff** können in Befehlszeilen angegeben werden, die auch die folgenden Optionen enthalten:  
   
  **Start:** `Method`  
- Initialisiert die Befehlszeilen\-Profilersitzung und legt die angegebene Profilerstellungsmethode fest.  
+ Initialisiert die Befehlszeilen-Profilersitzung und legt die angegebene Profilerstellungsmethode fest  
   
- **Launch:** `AppName`  
+ **Starten:** `AppName`  
  Startet die angegebene Anwendung und beginnt die Profilerstellung mit der Samplingmethode.  
   
  **Attach:** `PID`  
- Startet die Profilerstellung für den angegebenen Prozess.  
+ Startet die Profilerstellung für den angegebenen Prozess  
   
- {**ProcessOff**&#124;**ProcessOn**}**:**`PID`  
- Hält die Profilerstellung für den angegebenen Prozess an oder startet sie.  
+ {**ProcessOff**|**ProcessOn**}**:**`PID`  
+ Beendet oder startet die Profilerstellung für den angegebenen Prozess  
   
- {**ThreadOff**&#124;**ThreadOn**}**:**`TID`  
- Hält die Profilerstellung für den angegebenen Prozess an oder startet sie \(nur Instrumentationsmethode\).  
+ {**ThreadOff**|**ThreadOn**}**:**`TID`  
+ Beendet oder startet die Profilerstellung für den angegebenen Prozess (nur Instrumentierungsmethode)  
   
-## Beispiel  
- In diesem Beispiel werden die **GlobalOff**\-Option und die **GlobalOn**\-Option verwendet, um das Sammeln von Profilerstellungsdaten für das Starten und Herunterfahren der Anwendung zu verhindern.  
+## <a name="example"></a>Beispiel  
+ In diesem Beispiel werden die Optionen **GlobalOff** und **GlobalOn** verwendet, um die Sammlung von Profilerstellungsdaten für das Starten und Herunterfahren der Anwendung zu vermeiden.  
   
 ```  
 ; Initialize the profiler with profiling stopped.  
@@ -83,8 +84,8 @@ VSPerfCmd /Shutdown
   
 ```  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [Profilerstellung für eigenständige Anwendungen](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [Profilerstellung für ASP.NET\-Webanwendungen](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [Profilerstellungsdienste](../profiling/command-line-profiling-of-services.md)
+ [Profilerstellung für ASP.NET-Webanwendungen](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [Erstellen von Dienstprofilen](../profiling/command-line-profiling-of-services.md)

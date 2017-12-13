@@ -1,61 +1,62 @@
 ---
-title: "Gewusst wie: Verwalten von Editorfenstern | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Code-Editor, Fensterverwaltung"
-  - "Editorfenster"
-  - "Editoren, Fensterverwaltung"
-  - "Fenster, Verwalten von Editorfenstern"
+title: 'Vorgehensweise: Verwalten von Editorfenstern | Microsoft-Dokumentation'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- editor windows
+- windows, managing editor windows
+- editors, windows management
+- Code Editor, windows management
 ms.assetid: 340143d4-8a71-490d-823e-162b276f4c6d
-caps.latest.revision: 13
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: ad433ea0b1627d3e3ddcd80640f21a519d0264de
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Gewusst wie: Verwalten von Editorfenstern
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Sie können an mehreren Speicherorten gleichzeitig an Code arbeiten.  Teilen Sie hierzu ein Editorfenster entsprechend auf, oder öffnen Sie mehrere Instanzen von Editorfenstern.  
+# <a name="how-to-manage-editor-windows"></a>Gewusst wie: Verwalten von Editorfenstern
+Sie können an mehreren Speicherorten gleichzeitig an Code arbeiten. Hierzu teilen Sie ein Editorfenster oder öffnen mehrere Instanzen von Editorfenstern.  
   
 > [!NOTE]
->  Das Öffnen mehrerer Instanzen wird nicht von allen Editorfenstern unterstützt.  
+>  Nicht alle Editorfenster unterstützen mehrere Instanzen.  
   
-## Aufteilen eines Editorfensters  
- Eine Instanz eines Editorfensters kann zur einfacheren Bearbeitung in zwei separate Ansichten aufgeteilt werden.  
+## <a name="splitting-an-editor-window"></a>Teilen eines Editorfensters  
+ Eine Instanz eines Editorfensters kann für die einfachere Bearbeitung in zwei separate Ansichten geteilt werden.  
   
-#### So teilen Sie einen Bereich  
+#### <a name="to-split-a-pane"></a>So teilen Sie einen Bereich  
   
-1.  Klicken Sie auf das Editorfenster, damit es den Fokus erhält.  
+1.  Klicken Sie in das Editorfenster, um dort den Fokus zu setzen.  
   
 2.  Wählen Sie im Menü **Fenster** die Option **Teilen** aus.  
   
-     Der Bearbeitungsbereich wird in zwei durch eine Leiste getrennte Bereiche geteilt.  Sie können in diesen Bereichen unabhängig voneinander einen Bildlauf durchführen und gleichzeitig unterschiedliche Teile des aktiven Dokuments bearbeiten.  Alle in einem Bereich vorgenommenen Änderungen werden in den anderen Bereich übernommen.  
+     Der Bearbeitungsbereich ist in zwei Bereiche aufgeteilt, die durch eine Teilerleiste getrennt sind. Sie können in jedem Bereich unabhängig scrollen, um verschiedene Teile des aktiven Dokuments gleichzeitig anzuzeigen und zu bearbeiten. Alle Änderungen, die in einem Bereich vorgenommen werden, spiegeln sich auch im anderen wider.  
   
     > [!TIP]
-    >  Um einen Bereich größer als den anderen zu machen, ziehen Sie die Trennleiste nach oben oder unten.  
+    >  Um unterschiedliche Größen für zwei Bereiche festzulegen, ziehen Sie die Teilerleiste nach oben oder unten.  
   
-#### So kehren Sie in die Ansicht mit nur einem Bereich zurück  
+#### <a name="to-return-to-single-pane-view"></a>So kehren Sie in die Anzeige mit nur einem Bereich zurück  
   
 -   Wählen Sie im Menü **Fenster** die Option **Teilung aufheben** aus.  
   
-## Erstellen neuer Fenster  
- Sie können auch mehrere Instanzen eines Editorfensters erstellen.  Mit dieser Funktion können Sie lange Dokumente in mehreren Instanzen eines Editors öffnen, sodass unterschiedliche Abschnitte gleichzeitig in separaten, maximierten Editorfenstern angezeigt und bearbeitet werden können.  
+## <a name="creating-new-windows"></a>Erstellen neuer Fenster  
+ Sie können auch mehrere Instanzen eines Editorfensters erstellen. Mithilfe dieser Funktion können Sie ein langes und ausführliches Dokument in mehr als einer Instanz eines Editors öffnen. So können Sie unterschiedliche Abschnitte gleichzeitig in separaten Editorfenstern im Vollbild anzeigen und bearbeiten.  
   
-#### So erstellen Sie ein neues Fenster  
+#### <a name="to-create-a-new-window"></a>So erstellen Sie ein neues Fenster  
   
 -   Klicken Sie im Menü **Fenster** auf **Neues Fenster**.  
   
-     Eine neue Instanz des Editors in Registerform hinzugefügt wird.  
+     Es wird eine neue Instanz des Editors im Registerkartenformat hinzugefügt.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Anpassen des Editors](../ide/customizing-the-editor.md)   
  [Schreiben von Code](../ide/writing-code-in-the-code-and-text-editor.md)   
  [Anpassen von Fensterlayouts](../ide/customizing-window-layouts-in-visual-studio.md)

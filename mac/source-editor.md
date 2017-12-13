@@ -1,19 +1,17 @@
 ---
-title: Quellcode-Editor
+title: Quellcode-Editor | Microsoft-Dokumentation
 description: "Verwendung des Quellcode-Editors in Visual Studio für Mac"
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: A018A314-C1C4-4F36-BCB6-2D434208FCFE
+ms.openlocfilehash: f52e60c0ade8cebc78b3408b4ef81ef85fcd767b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
-ms.openlocfilehash: aa7635cd2593b871128c0588110f0bfdad5a82ec
-ms.contentlocale: de-de
-ms.lasthandoff: 08/11/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="source-editor"></a>Quellcode-Editor
 
 Ein zuverlässiger Quellcode-Editor ist entscheidend für kurzen und effizienten Code. Visual Studio für Mac bietet einen anspruchsvollen Quellcode-Editor, der das Herzstück der IDE darstellt. Der Quellcode-Editor stellt nicht nur die erwarteten Funktionen bereit, sondern auch solche, die Sie für reibungslose Arbeitsabläufe benötigen: von den Grundlagen wie der Syntaxhervorhebung, über Codeausschnitte und der Codefaltung, bis hin zu den Vorteilen der Roslyn-Compilerintegration wie eine voll funktionale IntelliSense-Codevervollständigung.
@@ -84,7 +82,6 @@ Wenn diese Option aktiviert ist, kann ein Entwickler den Mauszeiger auf jedem Sy
 Die Farbe der Hervorhebung ist auch hilfreich, wenn angegeben werden soll, dass etwas zugewiesen oder darauf verwiesen wird. Wenn etwas zugewiesen wird, wird es in Rot hervorgehoben. Wenn darauf verwiesen wird, ist die Hervorhebung blau:
 
 ![](media/source-editor-image7.png)
-
 
 
 

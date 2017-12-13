@@ -1,63 +1,63 @@
 ---
-title: "/Run (devenv.exe) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "/r (Devenv-Schalter)"
-  - "/run (Devenv-Schalter)"
-  - "Anwendungen [Visual Studio], Ausführen"
-  - "Devenv, /run-Schalter"
-  - "r (Devenv-Schalter)"
-  - "run (Devenv-Schalter)"
+title: "/Run („devenv.exe“) | Microsoft-Dokumentation"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- /run Devenv
+- run Devenv switch
+- applications [Visual Studio], running
+- /r Devenv switch
+- Devenv, /run switch
+- r Devenv switch (/r)
 ms.assetid: b1f22f9d-39a5-4918-8a2a-4b5c1e872665
-caps.latest.revision: 10
-caps.handback.revision: 10
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
+caps.latest.revision: "10"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 5be97e75ac7dc29a6dd0244293259bcd17591233
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# /Run (devenv.exe)
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Kompiliert das angegebene Projekt oder die angegebene Projektmappe und führt es bzw. sie aus.  
+# <a name="run-devenvexe"></a>/Run (devenv.exe)
+Kompiliert das angegebene Projekt oder die angegebene Projektmappe und führt sie aus.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 devenv {/run|/r} {SolutionName|ProjectName}  
 ```  
   
-## Argumente  
+## <a name="arguments"></a>Argumente  
  `SolutionName`  
- Erforderlich.  Der vollständige Pfad und Name einer Projektmappendatei.  
+ Erforderlich. Der vollständige Pfad und Name einer Projektmappendatei  
   
  `ProjectName`  
- Erforderlich.  Der vollständige Pfad und Name einer Projektdatei.  
+ Erforderlich. Der vollständige Pfad und Name einer Projektdatei  
   
-## Hinweise  
- Kompiliert das angegebene Projekt oder die angegebene Projektmappe und führt dieses\/diese anschließend aus, entsprechend den für die aktuelle Projektmappenkonfiguration festgelegten Einstellungen.  Dieser Schalter startet die integrierte Entwicklungsumgebung \(IDE\) und lässt sie aktiviert, nachdem die Ausführung des Projekts oder der Projektmappe beendet ist.  
+## <a name="remarks"></a>Hinweise  
+ Kompiliert das angegebene Projekt oder die angegebene Projektmappe entsprechend den Einstellungen, die für die aktive Projektmappenkonfiguration angegeben wurde, und führt sie aus. Dieser Schalter startet die integrierte Entwicklungsumgebung (Integrated Development Environment, IDE) und lässt sie aktiviert, nachdem die Ausführung des Projekts oder der Projektmappe beendet wurde.  
   
--   Zeichenfolgen, die Leerzeichen enthalten, müssen in doppelte Anführungszeichen eingeschlossen werden.  
+-   Schließen Sie Zeichenfolgen, die Leerzeichen enthalten, in doppelte Anführungszeichen ein.  
   
--   Übersichtsinformationen, einschließlich Fehler, können im **Befehlsfenster** oder in einer mit dem Schalter `/out` angegebenen Protokolldatei angezeigt werden.  
+-   Zusammenfassende Informationen inklusive Fehlermeldungen können im Fenster **Befehl** oder durch den `/out`-Schalter in einer Protokolldatei angezeigt werden.  
   
-## Beispiel  
- In diesem Beispiel wird die Projektmappe `MySolution` unter Verwendung der aktiven Bereitstellungskonfiguration ausgeführt.  
+## <a name="example"></a>Beispiel  
+ In diesem Beispiel wird die Projektmappe `MySolution` mithilfe der aktiven Bereitstellungskonfiguration ausgeführt.  
   
 ```  
 devenv /run "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln"  
 ```  
   
-## Siehe auch  
- [Devenv\-Befehlszeilenschalter](../../ide/reference/devenv-command-line-switches.md)   
- [\/Runexit](../../ide/reference/runexit-devenv-exe.md)   
- [\/Build](../../ide/reference/build-devenv-exe.md)   
- [\/Rebuild](../../ide/reference/rebuild-devenv-exe.md)   
- [\/Out](../../ide/reference/out-devenv-exe.md)
+## <a name="see-also"></a>Siehe auch  
+ [Devenv-Befehlszeilenschalter](../../ide/reference/devenv-command-line-switches.md)   
+ [/Runexit („devenv.exe“)](../../ide/reference/runexit-devenv-exe.md)   
+ [/Build („devenv.exe“)](../../ide/reference/build-devenv-exe.md)   
+ [/Rebuild („devenv.exe“)](../../ide/reference/rebuild-devenv-exe.md)   
+ [/Out (devenv.exe)](../../ide/reference/out-devenv-exe.md)

@@ -4,12 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- http://schemas.microsoft.com/developer/msbuild/2003#Csc
+f1_keywords: http://schemas.microsoft.com/developer/msbuild/2003#Csc
 dev_langs:
 - VB
 - CSharp
@@ -19,35 +17,21 @@ helpviewer_keywords:
 - Csc task [MSBuild]
 - MSBuild, Csc task
 ms.assetid: d8c19b36-f5ca-484b-afa6-8ff3b90e103a
-caps.latest.revision: 26
+caps.latest.revision: "26"
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 79460291e91f0659df0a4241e17616e55187a0e2
-ms.openlocfilehash: 9057a6bd209d4761c147577888dffa2933bbf4c8
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 0e36e4c9e01d7ee8f12a59f2fd72ee4ef6b83e9a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="csc-task"></a>Csc-Aufgabe
 Umschließt CSC.exe und erzeugt ausführbare Dateien (EXE-Dateien), Dynamic Link Libraries (DLL-Dateien) und Codemodule (NETMODULE-Dateien). Weitere Informationen zu CSC.exe finden Sie unter [C# Compiler Options (C#-Compileroptionen)](/dotnet/csharp/language-reference/compiler-options/index).  
   
 ## <a name="parameters"></a>Parameter  
- In der folgenden Tabelle werden die Parameter der `Csc`-Aufgabe beschrieben.  
+ In der folgenden Tabelle werden die Parameter der `Csc` -Aufgabe beschrieben.  
   
 |Parameter|Beschreibung|  
 |---------------|-----------------|  
@@ -70,7 +54,7 @@ Umschließt CSC.exe und erzeugt ausführbare Dateien (EXE-Dateien), Dynamic Link
 |`KeyContainer`|Optionaler `String` -Parameter.<br /><br /> Gibt den Namen des kryptografischen Schlüsselcontainers an. Weitere Informationen finden Sie unter [/keycontainer (C# Compiler Options)](/dotnet/csharp/language-reference/compiler-options/keycontainer-compiler-option).|  
 |`KeyFile`|Optionaler `String` -Parameter.<br /><br /> Gibt den Dateinamen mit dem kryptografischen Schlüssel an. Weitere Informationen finden Sie unter [/keyfile (C# Compiler Options)](/dotnet/csharp/language-reference/compiler-options/keyfile-compiler-option).|  
 |`LangVersion`|Optionaler `String` -Parameter.<br /><br /> Gibt die Version der zu verwendenden Sprache an. Weitere Informationen finden Sie unter [/langversion (C# Compiler Options)](/dotnet/csharp/language-reference/compiler-options/langversion-compiler-option).|  
-|`LinkResources`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter<br /><br /> Erstellt einen Link zu einer [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]-Ressource in der Ausgabedatei. Die Ressourcendatei wird nicht in der Ausgabedatei platziert.<br /><br /> Elemente, die an diesen Parameter übergeben werden, können optionale Metadateneinträge mit dem Namen `LogicalName` und `Access` enthalten. `LogicalName` entspricht dem `identifier`-Parameter des `/linkresource`-Switches, und `Access` entspricht dem `accessibility-modifier`-Parameter. Weitere Informationen finden Sie unter [/linkresource (C# Compiler Options)](/dotnet/csharp/language-reference/compiler-options/linkresource-compiler-option).|  
+|`LinkResources`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]` -Parameter.<br /><br /> Erstellt einen Link zu einer [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]-Ressource in der Ausgabedatei. Die Ressourcendatei wird nicht in der Ausgabedatei platziert.<br /><br /> Elemente, die an diesen Parameter übergeben werden, können optionale Metadateneinträge mit dem Namen `LogicalName` und `Access` enthalten. `LogicalName` entspricht dem `identifier`-Parameter des `/linkresource`-Switches, und `Access` entspricht dem `accessibility-modifier`-Parameter. Weitere Informationen finden Sie unter [/linkresource (C# Compiler Options)](/dotnet/csharp/language-reference/compiler-options/linkresource-compiler-option).|  
 |`MainEntryPoint`|Optionaler `String` -Parameter.<br /><br /> Gibt den Speicherort der `Main`-Methode an. Weitere Informationen hierzu finden Sie unter [/main (C# Compiler Options)](/dotnet/csharp/language-reference/compiler-options/main-compiler-option).|  
 |`ModuleAssemblyName`|Optionaler `String` -Parameter.<br /><br /> Gibt den Namen der Assembly an, zu der dieses Modul gehört.|  
 |`NoConfig`|Optionaler `Boolean` -Parameter.<br /><br /> Wenn der Wert `true` ist, wird der Compiler angewiesen, nicht mit der Datei „Vbc.rsp“ zu kompilieren. Weitere Informationen finden Sie unter [/noconfig (C# Compiler Options)](/dotnet/csharp/language-reference/compiler-options/noconfig-compiler-option).|  
@@ -81,10 +65,10 @@ Umschließt CSC.exe und erzeugt ausführbare Dateien (EXE-Dateien), Dynamic Link
 |`OutputAssembly`|Optionaler `String`-Ausgabeparameter.<br /><br /> Gibt den Namen der Ausgabedatei an. Weitere Informationen finden Sie unter [/out (C# Compiler Options)](/dotnet/csharp/language-reference/compiler-options/out-compiler-option).|  
 |`PdbFile`|Optionaler `String` -Parameter.<br /><br /> Gibt den Dateinamen der Debuginformationen an. Der Standardname ist der Ausgabedateiname mit einer .pdb-Erweiterung.|  
 |`Platform`|Optionaler `String` -Parameter.<br /><br /> Gibt die Prozessorplattform an, die das Ziel der Ausgabedatei darstellen soll. Dieser Parameter kann den Wert `x86`, `x64` oder `anycpu` haben. Der Standardwert ist `anycpu`. Weitere Informationen finden Sie unter [/platform (C# Compiler Options)](/dotnet/csharp/language-reference/compiler-options/platform-compiler-option).|  
-|`References`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter<br /><br /> Bewirkt, dass die Aufgabe öffentliche Typinformationen aus den angegebenen Elementen in das aktuelle Projekt importiert. Weitere Informationen finden Sie unter [/reference (C# Compiler Options)](/dotnet/csharp/language-reference/compiler-options/reference-compiler-option).<br /><br /> Sie können einen [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]-Verweisalias in einer [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Datei angeben, indem Sie die Metadaten `Aliases` zum ursprünglichen „Verweis“-Element hinzufügen. Angenommen, Sie möchten den Alias „LS1“ in der folgenden CSC-Befehlszeile festlegen:<br /><br /> `csc /r:LS1=MyCodeLibrary.dll /r:LS2=MyCodeLibrary2.dll *.cs`<br /><br /> In diesem Fall verwenden Sie:<br /><br /> `<Reference Include="MyCodeLibrary"> <Aliases>LS1</Aliases> </Reference>`|  
-|`Resources`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter<br /><br /> Fügt eine [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]-Ressource in die Ausgabedatei ein.<br /><br /> Elemente, die an diesen Parameter übergeben werden, können optionale Metadateneinträge mit dem Namen `LogicalName` und `Access` enthalten. `LogicalName`entspricht dem `identifier`-Parameter des `/resource`-Switches, und `Access` entspricht dem `accessibility-modifier`-Parameter. Weitere Informationen finden Sie unter [/resource (C# Compiler Options)](/dotnet/csharp/language-reference/compiler-options/resource-compiler-option).|  
+|`References`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]` -Parameter.<br /><br /> Bewirkt, dass die Aufgabe öffentliche Typinformationen aus den angegebenen Elementen in das aktuelle Projekt importiert. Weitere Informationen finden Sie unter [/reference (C# Compiler Options)](/dotnet/csharp/language-reference/compiler-options/reference-compiler-option).<br /><br /> Sie können einen [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]-Verweisalias in einer [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Datei angeben, indem Sie die Metadaten `Aliases` zum ursprünglichen „Verweis“-Element hinzufügen. Angenommen, Sie möchten den Alias „LS1“ in der folgenden CSC-Befehlszeile festlegen:<br /><br /> `csc /r:LS1=MyCodeLibrary.dll /r:LS2=MyCodeLibrary2.dll *.cs`<br /><br /> In diesem Fall verwenden Sie:<br /><br /> `<Reference Include="MyCodeLibrary"> <Aliases>LS1</Aliases> </Reference>`|  
+|`Resources`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]` -Parameter.<br /><br /> Fügt eine [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]-Ressource in die Ausgabedatei ein.<br /><br /> Elemente, die an diesen Parameter übergeben werden, können optionale Metadateneinträge mit dem Namen `LogicalName` und `Access` enthalten. `LogicalName`entspricht dem `identifier`-Parameter des `/resource`-Switches, und `Access` entspricht dem `accessibility-modifier`-Parameter. Weitere Informationen finden Sie unter [/resource (C# Compiler Options)](/dotnet/csharp/language-reference/compiler-options/resource-compiler-option).|  
 |`ResponseFiles`|Optionaler `String` -Parameter.<br /><br /> Gibt die Antwortdatei an, die Befehle für den die Aufgabe enthalten. Weitere Informationen finden Sie unter [@ (C# Compiler Options)](/dotnet/csharp/language-reference/compiler-options/response-file-compiler-option) (@ [C#-Compileroptionen]).|  
-|`Sources`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter<br /><br /> Gibt mindestens eine [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]-Quelldatei an.|  
+|`Sources`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]` -Parameter.<br /><br /> Gibt mindestens eine [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]-Quelldatei an.|  
 |`TargetType`|Optionaler `String` -Parameter.<br /><br /> Gibt das Dateiformat der Ausgabedatei an. Dieser Parameter kann unterschiedliche Werte aufweisen: `library` erstellt eine Codebibliothek, `exe` erstellt eine Konsolenanwendung, `module` erstellt ein Modul, und `winexe` erstellt ein Windows-Programm. Der Standardwert ist `library`. Weitere Informationen finden Sie unter [/target (C# Compiler Options)](/dotnet/csharp/language-reference/compiler-options/target-compiler-option).|  
 |`TreatWarningsAsErrors`|Optionaler `Boolean` -Parameter.<br /><br /> Wenn der Wert `true` ist, werden alle Warnungen als Fehler behandelt. Weitere Informationen finden Sie unter [/warnaserror (C# Compiler Options)](/dotnet/csharp/language-reference/compiler-options/warnaserror-compiler-option).|  
 |`UseHostCompilerIfAvailable`|Optionaler `Boolean` -Parameter.<br /><br /> Weist die Aufgabe an, das prozessinterne Compilerobjekt (falls verfügbar) zu verwenden. Wird nur von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] verwendet.|  
@@ -97,7 +81,7 @@ Umschließt CSC.exe und erzeugt ausführbare Dateien (EXE-Dateien), Dynamic Link
 |`Win32Resource`|Optionaler `String` -Parameter.<br /><br /> Fügt eine Win32-Ressource (RES-Datei) in die Ausgabedatei ein. Weitere Informationen finden Sie unter [/win32res (C# Compiler Options)](/dotnet/csharp/language-reference/compiler-options/win32res-compiler-option).|  
   
 ## <a name="remarks"></a>Hinweise  
- Neben den oben genannten Parametern erbt diese Aufgabe Parameter von der `Microsoft.Build.Tasks.ManagedCompiler`-Klasse, die diese von der <xref:Microsoft.Build.Tasks.ToolTaskExtension>-Klasse erbt, die diese wiederum von der <xref:Microsoft.Build.Utilities.ToolTask>-Klasse erbt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [ToolTaskExtension-Basisklasse](../msbuild/tooltaskextension-base-class.md).  
+ Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der `Microsoft.Build.Tasks.ManagedCompiler`-Klasse, die selbst von der <xref:Microsoft.Build.Tasks.ToolTaskExtension>-Klasse erbt, welche wiederum von der <xref:Microsoft.Build.Utilities.ToolTask>-Klasse erbt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [ToolTaskExtension-Basisklasse](../msbuild/tooltaskextension-base-class.md).  
   
 ## <a name="example"></a>Beispiel  
  Im folgenden Beispiel wird die `Csc`-Aufgabe verwendet, um eine ausführbare Datei aus den Quelldateien in der `Compile`-Elementauflistung zu kompilieren.  

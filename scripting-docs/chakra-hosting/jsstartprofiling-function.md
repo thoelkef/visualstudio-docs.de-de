@@ -1,27 +1,29 @@
 ---
-title: "JsStartProfiling-Funktion | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
-f1_keywords: 
-  - "jsrt/JsStartProfiling"
-helpviewer_keywords: 
-  - "JsStartProfiling-Funktion"
+title: JsStartProfiling-Funktion | Microsoft-Dokumentation
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
+f1_keywords: jsrt/JsStartProfiling
+helpviewer_keywords: JsStartProfiling function
 ms.assetid: 638da395-42dd-4fc5-b581-819e647e887d
-caps.latest.revision: 13
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 964e9f26de9cb5000884089da0b404b8d22fdd8d
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# JsStartProfiling-Funktion
+# <a name="jsstartprofiling-function"></a>JsStartProfiling-Funktion
 Beginnt die Profilerstellung im aktuellen Kontext.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 STDAPI_(JsErrorCode) JsStartProfiling(  
@@ -31,7 +33,7 @@ STDAPI_(JsErrorCode) JsStartProfiling(
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `callback`  
  Der zu verwendende Profilerstellungsrückruf.  
   
@@ -41,16 +43,16 @@ STDAPI_(JsErrorCode) JsStartProfiling(
  `context`  
  Ein Kontext, der an den Profilerstellungsrückruf übergeben werden soll.  
   
-## Rückgabewert  
- Der Code `JsNoError`, wenn der Vorgang erfolgreich war, andernfalls ein Fehlercode.  
+## <a name="return-value"></a>Rückgabewert  
+ Der Code `JsNoError` , wenn der Vorgang erfolgreich war, andernfalls ein Fehlercode.  
   
-## Hinweise  
- Erfordert einen Active Script\-Kontext.  
+## <a name="remarks"></a>Hinweise  
+ Erfordert einen Active Script-Kontext.  
   
- Diese API wird in Desktop\-Apps unterstützt, aber nicht in Store\-Apps.  
+ Diese API wird in Desktop-Apps unterstützt, aber nicht in Store-Apps.  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  **Header:** jsrt.h  
   
-## Siehe auch  
- [Verweis \(JavaScript\-Laufzeit\)](../chakra-hosting/reference-javascript-runtime.md)
+## <a name="see-also"></a>Siehe auch  
+ [Referenz (JavaScript-Laufzeit)](../chakra-hosting/reference-javascript-runtime.md)

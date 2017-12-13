@@ -1,69 +1,68 @@
 ---
-title: "Aufrufhierarchie | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "VS.CallHierarchy"
-helpviewer_keywords: 
-  - "Aufrufhierarchie"
+title: Aufrufhierarchie | Microsoft-Dokumentation
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: VS.CallHierarchy
+helpviewer_keywords: Call Hierarchy
 ms.assetid: c55bda01-d7de-4823-8f9a-1bcc37dbb74a
-caps.latest.revision: 40
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 40
+caps.latest.revision: "40"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 065806ec223273bbacba6da7702f21bc25510983
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/02/2017
 ---
-# Aufrufhierarchie
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Die Aufrufhierarchie ermöglicht es Ihnen, den Code zu navigieren, indem Sie alle Aufrufe von und zu ausgewählten Methoden, Eigenschaften oder Konstruktoren anzeigt.  Dies erleichtert das Verständnis des Codeflusses und die Einschätzung der Auswirkungen von Änderungen am Code.  Sie können mehrere Ebenen von Codes untersuchen, um komplexe Ketten von Methodenaufrufen und zusätzlichen Einstiegspunkten für den Code anzuzeigen. Auf diese Weise können Sie alle möglichen Ausführungspfade untersuchen.  
+# <a name="call-hierarchy"></a>Aufrufhierarchie
+Mithilfe der Aufrufhierarchie können Sie in Ihrem Code navigieren, indem Sie alle Aufrufe von und aus einer ausgewählten Methode, Eigenschaft oder einem Konstruktor anzeigen. Dadurch können Sie besser verstehen, wie Code fließt und die Auswirkungen von Codeänderungen auswerten. Sie können mehrere Codeebenen überprüfen, um komplexe Verkettungen von Methodenaufrufen und zusätzlichen Einstiegspunkten in den Code zu sehen. Dadurch können Sie nach sämtlichen möglichen Ausführungspfaden suchen.  
   
- Die Aufrufhierarchie ist, anders als die vom Debugger angezeigte Aufrufliste, zur Entwurfszeit verfügbar.  
+ Die Aufrufhierarchie ist im Gegensatz zur Aufrufliste, die vom Debugger angezeigt wird, zur Entwurfszeit verfügbar.  
   
-## Verwenden der Aufrufhierarchie  
- Um das Fenster **Aufrufhierarchie** anzuzeigen, klicken Sie mit der rechten Maustaste auf den Namen eines Methoden\-, Eigenschafts\- oder Konstruktoraufrufs und klicken dann auf **Aufrufhierarchie anzeigen**.  
+## <a name="using-call-hierarchy"></a>Verwenden der Aufrufhierarchie  
+ Klicken Sie mit der rechten Maustaste auf Methode, Eigenschaft oder Konstruktoraufruf, damit das Fenster **Aufrufhierarchie** angezeigt wird, und klicken Sie anschließend auf **Aufrufhierarchie anzeigen**.  
   
- Der Membername wird in einem Strukturansichtsbereich im Fenster **Aufrufhierarchie** angezeigt.  Wenn Sie den Memberknoten erweitern, werden die untergeordneten Knoten **Aufrufe an** *Membername* und **Aufrufe von** *Membername* angezeigt.  Die folgende Abbildung zeigt diese Knoten im Fenster **Aufrufhierarchie**.  
+ Der Membername erscheint in einem Strukturansichtsbereich im Fenster **Aufrufhierarchie**. Wenn Sie den Memberknoten erweitern, werden die Unterknoten **Calls To** *Membername* (eingehende Aufrufe) und **Calls From** *Membername* (ausgehende Aufrufe) angezeigt. In der folgenden Abbildung werden diese Knoten im Fenster **Aufrufhierarchie** angezeigt.  
   
  ![Aufrufhierarchie mit einem geöffneten Knoten](../../ide/reference/media/onenode.png "OneNode")  
-Fenster "Aufrufhierarchie"  
+Fenster „Aufrufhierarchie“  
   
--   Wenn Sie den Knoten **Aufrufe an** erweitern, werden alle Member angezeigt, die den ausgewählten Member aufrufen.  
+-   Wenn Sie den **Calls To**-Knoten erweitern, werden alle Members angezeigt, die den ausgewählten Member aufrufen.  
   
--   Wenn Sie den Knoten **Aufrufe von** erweitern, werden alle Member angezeigt, die von dem ausgewählten Member aufgerufen werden.  
+-   Wenn Sie den **Calls From**-Knoten erweitern, werden alle Members angezeigt, die den ausgewählten Member aufrufen.  
   
- Sie können dann jeden dieser Member in untergeordneten Knoten für die Knoten **Aufrufe an** und **Aufrufe von** erweitern.  So können Sie im Stapel der Aufrufer navigieren, wie in der folgenden Abbildung gezeigt.  
+Anschließend können Sie sämtliche dieser Unterknotenmembers auf **Calls To**- und **Calls From**-Knoten erweitern. Dadurch können Sie, wie in der folgenden Abbildung dargestellt, in den Aufruferstapel navigieren.  
   
- ![Aufrufhierarchie &#45; Mehrere Knoten geöffnet](../../ide/media/multiplenodes.png "MultipleNodes")  
-Fenster "Aufrufhierarchie"  
+![Aufrufhierarchie: Mehrere Knoten geöffnet](../../ide/media/multiplenodes.png "MultipleNodes")  
+Fenster „Aufrufhierarchie“  
   
- Für Member, die als virtuell oder als abstrakt definiert sind, wird der Knoten **Überschreibt \<Methodenname\>** angezeigt.  Für Schnittstellenmember wird ein **Implementiert \<Methodenname\>**\-Knoten angezeigt.  Diese erweiterbaren Knoten werden auf derselben Ebene wie die Knoten **Aufrufe an** und **Aufrufe von** angezeigt.  
+Für Members, die als virtuell oder abstrakt definiert sind, wird ein **Overrides method name**-Knoten (Knoten zur Außerkraftsetzung des Methodennamens) angezeigt. Für Schnittstellenmember wird ein Knoten zum **Implementieren des Methodennamens** angezeigt. Diese erweiterbaren Knoten erscheinen auf derselben Ebene wie **Calls To**- und **Calls From**-Knoten.  
   
- Das Feld **Suchbereich** auf der Symbolleiste enthält Optionen für **Meine Projektmappe**, **Aktuelles Projekt** und **Aktuelles Dokument**.  
+Das Feld **Suchbereich** in der Symbolleiste enthält verschiedene Auswahlmöglichkeiten für **My Solution** („Meine Projektmappe“), **Aktuelles Projekt** und **Aktuelles Dokument**.  
   
- Wenn Sie im Strukturansichtsbereich **Aufrufhierarchie** einen untergeordneten Member auswählen, geschieht Folgendes:  
+Wenn Sie im Strukturansichtsbereich **Aufrufhierarchie** einen untergeordneten Member auswählen:  
   
--   Im Detailbereich **Aufrufhierarchie** werden alle Codezeilen angezeigt, in denen dieser untergeordnete Member vom übergeordneten Member aufgerufen wird.  
+-   Im Detailbereich **Aufrufhierarchie** werden alle Codezeilen angezeigt, in denen dieser untergeordnete Member von dem übergeordneten Member aufgerufen wird.  
   
--   **Codedefinitionsfenster**, wenn geöffnet, wird der Code für den ausgewählten Member an.  Dieses Fenster ist in C\# und C\+\+ verfügbar.  Weitere Informationen über dieses Fenster finden Sie unter [Anzeigen der Codestruktur](../../ide/viewing-the-structure-of-code.md).  
+-   Wenn das **Codedefinitionsfenster** geöffnet ist, zeigt es den Code für den ausgewählten Member an. Dieses Fenster ist in C# und C++ verfügbar. Weitere Informationen zu diesem Fenster finden Sie unter [Anzeigen der Codestruktur](../../ide/viewing-the-structure-of-code.md).  
   
 > [!NOTE]
->  Die Aufrufhierarchie findet keine Methodengruppenverweise, die Stellen enthalten, an denen eine Methode als Ereignishandler hinzugefügt oder einem Delegaten zugewiesen wird.  Um alle Verweise auf eine Methode zu finden, können Sie den Befehl **Alle Verweise suchen** verwenden.  
+>  Die Aufrufhierarchie findet keine Methodengruppenverweise, die Stellen enthalten, an denen eine Methode als Ereignishandler hinzugefügt oder einem Delegaten zugewiesen wird. Verwenden Sie den Befehl **Alle Verweise suchen**, um alle Verweise auf eine Methode zu suchen.  
   
-## Kontextmenüelemente  
- In der folgenden Tabelle sind verschiedene Kontextmenüoptionen beschrieben, die verfügbar sind, wenn Sie im Strukturansichtsbereich mit der rechten Maustaste auf einen Knoten klicken.  
+## <a name="shortcut-menu-items"></a>Kontextmenüelemente  
+ In der folgenden Tabelle werden einige Kontextmenüoptionen beschrieben, auf die Sie zugreifen können, wenn Sie mit der rechten Maustaste auf einen Knoten im Strukturansichtsbereich klicken.  
   
 |Kontextmenüelement|Beschreibung|  
-|------------------------|------------------|  
-|**Als neuen Stamm hinzufügen**|Damit wird der ausgewählte Knoten dem Strukturansichtsbereich als neuer Stammknoten hinzugefügt.  Dies ermöglicht es Ihnen, die Aufmerksamkeit auf eine bestimmte Teilstruktur zu richten.|  
-|**Stamm entfernen**|Entfernt den ausgewählten Stammknoten aus dem Strukturansichtsbereich.  Diese Option ist nur bei einem Stammknoten verfügbar.<br /><br /> Den ausgewählten Stammknoten können Sie auch über die Symbolleistenschaltfläche **Stamm entfernen** entfernen.|  
-|**Gehe zu Definition**|Damit wird der Befehl Gehe zu Definition im ausgewählten Knoten ausgeführt.  Sie werden dann zur ursprünglichen Definition für einen Memberaufruf oder eine Variablendefinition geführt.<br /><br /> Sie können auf den ausgewählten Knoten doppelklicken oder den Knoten auswählen und F12 drücken, um den Befehl "Gehe zu Definition" auszuführen.|  
-|**Alle Verweise suchen**|Damit wird der Befehl Alle Verweise suchen im ausgewählten Knoten ausgeführt.  Es werden alle Codezeilen im Projekt gesucht, die auf eine Klasse oder einen Member verweisen.<br /><br /> Sie können auch UMSCHALT\+F12 drücken, um den Befehl Alle Verweise suchen im ausgewählten Knoten auszuführen.|  
-|**Kopieren**|Damit wird der Inhalt des ausgewählten Knotens kopiert \(aber nicht dessen untergeordnete Knoten\).|  
-|**Aktualisieren**|Damit wird der ausgewählte Knoten reduziert. Beim erneuten Erweitern werden die aktuellen Informationen angezeigt.|
+|-----------------------|-----------------|  
+|**Als neuen Stamm hinzufügen**|Fügt dem Strukturansichtsbereich den ausgewählten Knoten als neuen Stammknoten hinzu. Dadurch können Sie sich auf eine bestimmte Unterstruktur konzentrieren.|  
+|**Stamm entfernen**|Entfernt den ausgewählten Stammknoten aus dem Strukturansichtsbereich. Diese Option ist nur in einem Stammknoten verfügbar.<br /><br /> Sie können außerdem die Symbolleistenschaltfläche **Stamm entfernen** verwenden, um den ausgewählten Stammknoten zu entfernen.|  
+|**Gehe zu Definition**|Führt den Befehl „Gehe zu Definition“ für den ausgewählten Knoten aus. Dadurch wird zu der ursprünglichen Definition für einen Memberaufruf oder eine Variablendefinition navigiert.<br /><br /> Sie können auch auf den ausgewählten Knoten doppelklicken, oder drücken Sie für den ausgewählten Knoten auf F12, um den Befehl „Gehe zu Definition“ auszuführen.|  
+|**Alle Verweise suchen**|Führt den Befehl „Alle Verweise suchen“ für den ausgewählten Knoten aus. So finden Sie alle Codezeilen in Ihrem Projekt, die auf eine Klasse oder einen Member verweisen.<br /><br /> Sie können auch auf UMSCHALT+F12 drücken, um den Befehl „Alle Verweise suchen“ für den ausgewählten Knoten auszuführen.|  
+|**Kopieren**|Kopiert die Inhalte des ausgewählten Knotens (aber nicht dessen Unterknoten).|  
+|**Aktualisieren**|Reduziert die ausgewählten Knoten, sodass bei der erneuten Erweiterung aktuelle Informationen angezeigt werden.|

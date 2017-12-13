@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -13,39 +12,22 @@ dev_langs:
 - VB
 - FSharp
 - C++
-helpviewer_keywords:
-- memory leaks, JavaScript example
+helpviewer_keywords: memory leaks, JavaScript example
 ms.assetid: f595412f-776b-49a2-8433-ea0062c6904d
-caps.latest.revision: 31
+caps.latest.revision: "31"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 7e848a57962636a8ca346e809f3dadad675a7963
-ms.contentlocale: de-de
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 1f31221f52e9e944dcfc82c98d18e2cf5ec263bf
+ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/11/2017
 ---
 # <a name="walkthrough-find-a-memory-leak-javascript"></a>Exemplarische Vorgehensweise: Suchen eines Speicherverlusts (JavaScript)
-![Gilt für Windows und Windows Phone](~/debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
+![Gilt für Windows und Windows Phone](../debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
   
- Diese exemplarische Vorgehensweise führt Sie durch den Prozess zum Identifizieren und Beheben eines einfachen Arbeitsspeicherproblems mithilfe der JavaScript-Speicheranalyse. Die JavaScript-Speicheranalyse ist in Visual Studio für Windows Store-Apps verfügbar, die für Windows mit JavaScript erstellt wurden. In diesem Szenario erstellen Sie eine App, die fehlerhafterweise DOM-Elemente im Speicher behält, anstatt Elemente mit derselben Geschwindigkeit zu löschen, mit der sie erstellt werden.  
+ Diese exemplarische Vorgehensweise führt Sie durch den Prozess zum Identifizieren und Beheben eines einfachen Arbeitsspeicherproblems mithilfe der JavaScript-Speicheranalyse. Die JavaScript-Speicheranalyse ist in Visual Studio für UWP-Apps verfügbar, die für Windows mit JavaScript erstellt wurden. In diesem Szenario erstellen Sie eine App, die fehlerhafterweise DOM-Elemente im Speicher behält, anstatt Elemente mit derselben Geschwindigkeit zu löschen, mit der sie erstellt werden.  
   
  Obwohl die Ursache für den Speicherverlust in dieser App sehr spezifisch ist, demonstrieren die hier gezeigten Schritte einen Workflow, der normalerweise wirkungsvoll die Objekte isoliert, die den Speicherverlust verursachen.  
   
@@ -154,13 +136,13 @@ ms.lasthandoff: 02/22/2017
 1.  Wählen Sie auf der Symbolleiste **Debuggen** in der Liste **Debuggen starten** das Debugziel für das aktualisierte Projekt aus, entweder die Windows Phone-Emulatoren oder den **Simulator**.  
   
     > [!TIP]
-    >  Für eine Windows Store-App können Sie in dieser Liste auch **Lokaler Computer** oder **Remotecomputer** auswählen. Allerdings liegt der Vorteil des Emulators oder Simulators darin, dass Sie ihn neben Visual Studio platzieren und problemlos zwischen der laufenden App und der JavaScript-Speicheranalyse wechseln können. Weitere Informationen finden Sie unter [Ausführen von Apps aus Visual Studio](../debugger/run-store-apps-from-visual-studio.md) und [Ausführen von Windows Store-Apps auf einem Remotecomputer](../debugger/run-windows-store-apps-on-a-remote-machine.md).  
+    >  Sie können für eine UWP-App in dieser Liste auch **Lokaler Computer** oder **Remotecomputer** auswählen. 
   
 2.  Klicken Sie im Menü **Debuggen** auf **Leistungsprofiler…**.  
   
 3.  Wählen Sie unter **Verfügbare Tools**die Option **JavaScript-Memory**aus, und wählen Sie dann **Starten**.  
   
-     In diesem Lernprogramm fügen Sie die Speicheranalyse an das Startprojekt an. Informationen zu anderen Optionen, wie dem Anfügen des Arbeitsspeicheranalyzers an eine installierte App, finden Sie unter [JavaScript-Speicher](../profiling/javascript-memory.md).  
+     In diesem Lernprogramm fügen Sie die Speicheranalyse an das Startprojekt an. Informationen zu anderen Optionen, wie das Anfügen des Arbeitsspeicheranalyzers an eine installierte App, finden Sie unter [JavaScript-Memory](../profiling/javascript-memory.md)aus.  
   
      Bei Start des Arbeitsspeicheranalyzers, wird möglicherweise eine Benutzerkontensteuerung die Berechtigung zum Ausführen der Datei "VsEtwCollector.exe" abfragen. Klicken Sie auf **Ja**.  
   
@@ -175,7 +157,7 @@ ms.lasthandoff: 02/22/2017
   
      Die JavaScript-Speicheranalyse zeigt Informationen auf einer neuen Registerkarte in Visual Studio an.  
   
-     Das Arbeitsspeicherdiagramm in dieser Zusammenfassungsansicht veranschaulicht die Prozessspeicherauslastung im Zeitverlauf. Die Ansicht bietet auch Befehle wie **Heap-Momentaufnahme erstellen**. Eine Momentaufnahme stellt ausführliche Informationen zur Speicherauslastung zu einem bestimmten Zeitpunkt bereit. Weitere Informationen finden Sie unter [JavaScript-Speicher](../profiling/javascript-memory.md).  
+     Das Arbeitsspeicherdiagramm in dieser Zusammenfassungsansicht veranschaulicht die Prozessspeicherauslastung im Zeitverlauf. Die Ansicht bietet auch Befehle wie **Heap-Momentaufnahme erstellen**. Eine Momentaufnahme stellt ausführliche Informationen zur Speicherauslastung zu einem bestimmten Zeitpunkt bereit. Weitere Informationen finden Sie unter [JavaScript-Memory](../profiling/javascript-memory.md)aus.  
   
 6.  Wählen Sie **Heap-Momentaufnahme erstellen**aus.  
   
@@ -228,7 +210,7 @@ ms.lasthandoff: 02/22/2017
   
 15. Öffnen Sie das HTMLDivElement-Objekt oben in der Objektstruktur wie hier gezeigt.  
   
-     ![Andere Ansicht der Objektanzahl auf dem Heap](~/profiling/media/js_mem_app_typesdiff.png "JS_Mem_App_TypesDiff")  
+     ![Andere Ansicht der Objektanzahl auf dem Heap](../profiling/media/js_mem_app_typesdiff.png "JS_Mem_App_TypesDiff")  
   
      Diese Ansicht zeigt nützliche Informationen zum Speicherverlust, wie beispielsweise Folgende:  
   
@@ -243,7 +225,7 @@ ms.lasthandoff: 02/22/2017
   
 ##  <a name="FixingMemory"></a> Korrigieren des Arbeitsspeicherproblems  
   
-1.  Unter Verwendung von Daten, die der Profiler erkannt hat, untersuchen Sie den Code, durch den DOM-Elemente mit der ID "item" entfernt werden. Dies tritt in der `initialize()`-Funktion auf.  
+1.  Unter Verwendung von Daten, die der Profiler erkannt hat, untersuchen Sie den Code, durch den DOM-Elemente mit der ID "item" entfernt werden. Dies tritt in der `initialize()` -Funktion auf.  
   
     ```javascript  
     function initialize() {  
@@ -254,7 +236,7 @@ ms.lasthandoff: 02/22/2017
     }  
     ```  
   
-     Möglicherweise funktioniert `elem.removeNode(true)` nicht ordnungsgemäß. Sie untersuchen, wie der Code das DOM-Element zwischenspeichert, und finden ein Problem: Der Verweis auf das zwischengespeicherte Element wird nicht aktualisiert.  
+     Möglicherweise funktioniert`elem.removeNode(true)` nicht ordnungsgemäß. Sie untersuchen, wie der Code das DOM-Element zwischenspeichert, und finden ein Problem: Der Verweis auf das zwischengespeicherte Element wird nicht aktualisiert.  
   
 2.  Fügen Sie in default.js die folgende Codezeile zur Lastfunktion hinzu, unmittelbar bevor `appendChild`aufgerufen wird:  
   

@@ -1,28 +1,28 @@
 ---
-title: "ResumeProfile | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "ResumeProfile"
+title: ResumeProfile | Microsoft-Dokumentation
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: ResumeProfile
 ms.assetid: 876f145b-ec07-4240-ade6-4f6e44baadce
-caps.latest.revision: 10
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: bb0f988ce0d1b266fd930909f6e5d6462929e8f5
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# ResumeProfile
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Die `ResumeProfile`\-Methode dekrementiert den Suspend\/Resume\-Zähler für die angegebene Profilebene.  
+# <a name="resumeprofile"></a>ResumeProfile
+Die `ResumeProfile`-Methode verringert den Suspend/Resume-Zähler für die angegebene Profilerstellungsebene.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 PROFILE_COMMAND_STATUS PROFILERAPI ResumeProfile(  
@@ -30,49 +30,49 @@ PROFILE_COMMAND_STATUS PROFILERAPI ResumeProfile(
                        unsigned int dwId);  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `Level`  
   
- Gibt die Profilebene an, auf der Leistungsdaten erfasst werden können.  Mithilfe der folgenden **PROFILE\_CONTROL\_LEVEL**\-Enumeratoren kann eine der drei Ebenen für die Erfassung von Leistungsdaten angegeben werden:  
+ Gibt die Profilebene an, auf die die Sammlung von Leistungsdaten angewendet werden kann. Die folgenden **PROFILE_CONTROL_LEVEL**-Enumeratoren können verwendet werden, um eine der drei Ebenen anzugeben, auf die die Sammlung der Leistungsdaten angewendet werden kann:  
   
-|Enumerator|**Beschreibung**|  
-|----------------|----------------------|  
-|PROFILE\_GLOBALLEVEL|Die Festlegung auf die globale Ebene wirkt sich auf alle Prozesse und Threads der Profilerstellung aus.|  
-|PROFILE\_PROCESSLEVEL|Die Festlegung auf die Prozessebene wirkt sich auf alle Threads aus, die Teil des angegebenen Prozesses sind.|  
-|PROFILE\_THREADLEVEL|Die Festlegung auf die Threadprofilerstellungs\-Ebene wirkt sich auf den angegebenen Thread aus.|  
+|Enumerator|Beschreibung|  
+|----------------|-----------------|  
+|PROFILE_GLOBALLEVEL|Die Einstellung globaler Ebene wirkt sich auf alle Prozesse und Threads bei der Profilerstellung aus.|  
+|PROFILE_PROCESSLEVEL|Die Einstellung auf die Prozessebene wirkt sich auf alle Threads aus, die Teil des angegebenen Prozesses sind.|  
+|PROFILE_THREADLEVEL|Die Einstellung auf Threadebene der Profilerstellung wirkt sich auf den angegebenen Thread aus.|  
   
  `dwId`  
   
- Der vom System generierte Prozess\- oder Threadbezeichner.  
+ Der Prozess- oder Threadbezeichner, der vom System generiert wird.  
   
-## Eigenschaftswert\/Rückgabewert  
- Die Funktion gibt mit der **PROFILE\_COMMAND\_STATUS**\-Enumeration Erfolg oder Fehler an.  Folgende Rückgabewerte sind möglich:  
+## <a name="property-valuereturn-value"></a>Eigenschaftswert/Rückgabewert  
+ Die Funktion gibt mithilfe der **PROFILE_COMMAND_STATUS**-Enumeration einen Erfolg oder Fehler an. Einer der folgenden Werte kann zurückgegeben werden:  
   
-|Enumerator|**Beschreibung**|  
-|----------------|----------------------|  
-|PROFILE\_ERROR\_ID\_NOEXIST|Die Profilelement\-ID ist nicht vorhanden.|  
-|PROFILE\_ERROR\_LEVEL\_NOEXIST|Die angegebene Profilebene ist nicht vorhanden.|  
-|PROFILE\_ERROR\_MODE\_NEVER|Der Profilerstellungsmodus wurde beim Aufrufen der Funktion auf NEVER festgelegt.|  
-|PROFILE\_ERROR\_NOT\_YET\_IMPLEMENTED|Der Funktionsaufruf für die Profilerstellung, die Profilebene oder die Kombination von Aufruf und Ebene ist noch nicht implementiert.|  
-|PROFILE\_OK|Der Aufruf wurde erfolgreich ausgeführt.|  
+|Enumerator|Beschreibung|  
+|----------------|-----------------|  
+|PROFILE_ERROR_ID_NOEXIST|Die Profilerstellungselement-ID ist nicht vorhanden.|  
+|PROFILE_ERROR_LEVEL_NOEXIST|Die angegebene Profilerstellungsebene ist nicht vorhanden.|  
+|PROFILE_ERROR_MODE_NEVER|Der Profilerstellungsmodus wurde beim Aufruf der Funktion auf NEVER festgelegt.|  
+|PROFILE_ERROR_NOT_YET_IMPLEMENTED|Der Funktionsaufruf der Profilerstellung, die Profilerstellungsebene oder eine Kombination aus dem Aufruf und der Ebene sind noch nicht implementiert.|  
+|PROFILE_OK|Der Aufruf war erfolgreich.|  
   
-## Hinweise  
- Der Anfangswert des Suspend\/Resume\-Indikators ist 0.  Jeder Aufruf von SuspendProfile fügt der Suspend\/Resume\-Anzahl 1 hinzu; jeder Aufruf von ResumeProfile subtrahiert 1.  
+## <a name="remarks"></a>Hinweise  
+ Der Anfangswert des Suspend/Resume-Zählers ist 0. Jeder Aufruf von SuspendProfile addiert 1 zur der Suspend/Resume-Anzahl. Für jeden Aufruf von ResumeProfile wird 1 subtrahiert.  
   
- Wenn die Suspend\/Resume\-Anzahl größer als 0 \(null\) ist, lautet der Suspend\/Resume\-Zustand für die Ebene OFF.  Ist die Anzahl kleiner oder gleich 0 \(null\), lautet der Suspend\/Resume\-Zustand ON.  
+ Wenn die Suspend/Resume-Anzahl größer als 0 ist, ist der Suspend/Resume-Status für die Ebene OFF. Wenn die Anzahl kleiner oder gleich 0 ist, ist der Status von Suspend/Resume ON.  
   
- Wenn sowohl der Start\/Stop\-Zustand als auch der Suspend\/Resume\-Zustand ON lautet, ist auch der Profilerstellungszustand für die Ebene auf ON festgelegt.  Wenn ein Profil für einen Thread erstellt werden soll, muss der Zustand des Threads sowohl auf der globalen Ebene als auch auf der Prozessebene und der Threadebene ON lauten.  
+ Wenn sowohl der Status von Start/Stop als auch der von Suspend/Resume auf ON festgelegt ist, ist auch der Profilerstellungsstatus der Ebene auf ON festgelegt. Damit das Profil eines Threads erstellt werden kann, muss der Status des Threads sowohl auf globaler, Prozess- und Threadebene ON sein.  
   
-## .NET Framework-Entsprechung  
+## <a name="net-framework-equivalent"></a>Entsprechung in .NET Framework  
  Microsoft.VisualStudio.Profiler.dll  
   
-## Informationen zur Funktion  
- Header: In VSPerf.h deklariert  
+## <a name="function-information"></a>Funktionsinformationen  
+ Header: in VSPerf.h deklariert  
   
  Importbibliothek: VSPerf.lib  
   
-## Beispiel  
- Das folgende Beispiel veranschaulicht die ResumeProfile\-Funktion.  Im Beispiel wird davon ausgegangen, dass ein Aufruf der SuspendProfile\-Methode für denselben durch [PROFILE\_CURRENTID](../profiling/profile-currentid.md) identifizierten Prozess oder Thread erfolgt ist.  
+## <a name="example"></a>Beispiel  
+ Das folgende Beispiel veranschaulicht die ResumeProfile-Funktion. Im Beispiel wird davon ausgegangen, dass ein Aufruf der SuspendProfile-Methode für den selben Thread oder Prozess ausgeführt wurde, der durch [PROFILE_CURRENTID](../profiling/profile-currentid.md) identifiziert wurde.  
   
 ```  
 void ExerciseResumeProfile()  
@@ -104,5 +104,5 @@ void ExerciseResumeProfile()
 }  
 ```  
   
-## Siehe auch  
- [Referenz zu Profiler\-APIs in Visual Studio \(systemeigen\)](../profiling/visual-studio-profiler-api-reference-native.md)
+## <a name="see-also"></a>Siehe auch  
+ [Referenz zu Profiler-APIs in Visual Studio (systemeigen)](../profiling/visual-studio-profiler-api-reference-native.md)

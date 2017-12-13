@@ -1,42 +1,42 @@
 ---
-title: "DA0002: VSPerfCorProf.dll fehlt | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.performance.DA0002"
-  - "vs.performance.2"
-  - "vs.performance.rules.DAVsPerfCorProfMissing"
-  - "vs.performance.rules.DA0002"
+title: "DA0002: „VSPerfCorProf.dll“ fehlt | Microsoft-Dokumentation"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- vs.performance.DA0002
+- vs.performance.2
+- vs.performance.rules.DAVsPerfCorProfMissing
+- vs.performance.rules.DA0002
 ms.assetid: 76e614b3-ad7e-4b92-b7be-88dc1329be1d
-caps.latest.revision: 14
-caps.handback.revision: 14
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "14"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: ef44ad836e2e202940cef8db39c10b4abf29cfdf
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# DA0002: VSPerfCorProf.dll fehlt
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="da0002-vsperfcorprofdll-is-missing"></a>DA0002: VSPerfCorProf.dll fehlt
 |||  
 |-|-|  
-|Regel\-ID|DA0002|  
-|Kategorie \(Category\)|Verwendung der Profilerstellungstools|  
-|Profilerstellungsmethoden|Profilerstellung mit den Befehlszeilentools VSPerfCmd und VSPerfASPNETCmd|  
-|Meldung|Es scheint, als wurde die Datei aufgelistet, ohne die Umgebungsvariablen mit "VSPerfCLREnv.cmd" ordnungsgemäß festzulegen.  Symbole für verwaltete Binärdateien können möglicherweise nicht aufgelöst werden.|  
+|Regel-ID|DA0002|  
+|Kategorie|Verwendung der Profilerstellungstools|  
+|Profilerstellungsmethoden|Profilerstellung mithilfe der Befehlszeilentools VSPerfCmd und VSPerfASPNETCmd|  
+|Meldung|Anscheinend wurden bei der Dateierfassung die Umgebungsvariablen mit „VSPerfCLREnv.cmd“ nicht korrekt eingerichtet. Die Symbole für verwaltete Binärdateien können möglicherweise nicht aufgelöst werden.|  
 |Regeltyp|Information|  
   
-## Ursache  
- "VSPerfCorProf.dll" wurde während der Profilerstellung nicht gefunden.  Diese Warnung wird ausgegeben, wenn für die Auflistung der Profilerdaten Befehlszeilentools ohne das Tool "VSPerfCLREnv.cmd" verwendet werden, das zum Initialisieren der erforderlichen Umgebungsvariablen dient.  Die Warnung kann auch ausgelöst werden, wenn ein anderer Profiler ausgeführt wird, wenn die Profilerstellungstools gestartet werden.  
+## <a name="cause"></a>Ursache  
+ Der Profiler konnte „VSPerfCorProf.dll“ während der Profilerstellung nicht finden. Diese Warnung tritt auf, wenn Befehlszeilentools für die Erfassung von Profilerdaten nicht zusammen mit dem Tool „VSPerfCLREnv.cmd“ verwendet werden, um die nötigen Umgebungsvariablen zu initialisieren. Die Warnung kann auch ausgelöst werden, wenn ein anderer Profiler beim Start der Profilerstellungstools ausgeführt wird.  
   
-## Regelbeschreibung  
- Bestimmte Umgebungsvariablen müssen vor einer Profilerstellungsausführung festgelegt werden, damit der Profiler die Symbole in .NET Framework\-Binärdateien auflöst.  In der Warnung wird vorgeschlagen, dass das Tool "VSPerfCLREnv.cmd" nicht ausgeführt wurde, bevor die Profilerstellungsdaten erfasst wurden.  Symbole für verwaltete Binärdateien werden möglicherweise nicht aufgelöst.  Weitere Informationen zum Verwenden der Profilerstellungstools von der Befehlszeile aus finden Sie unter [Profilerstellung mithilfe der Befehlszeile](../profiling/using-the-profiling-tools-from-the-command-line.md).  
+## <a name="rule-description"></a>Regelbeschreibung  
+ Vor der Profilerstellung müssen bestimmte Umgebungsvariablen festgelegt werden, damit der Profiler die Symbole in .NET Framework-Binärdateien auflösen kann. In der Warnung wird darauf hingewiesen, dass das Tool „VSPerfCLREnv.cmd“ nicht vor der Erfassung der Profilerstellungsdaten ausgeführt wurde. Die Symbole für verwaltete Binärdateien können möglicherweise nicht aufgelöst werden. Weitere Informationen finden Sie unter [Verwenden der Profilerstellungstools über die Befehlszeile](../profiling/using-the-profiling-tools-from-the-command-line.md).  
   
-## Behandeln von Verstößen  
- Wenn Sie die Profilerstellung für verwaltete Anwendungen mit den Befehlszeilentools in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]\-Profilerstellungstools ausführen, führen Sie das Befehlszeilentool [VSPerfCLREnv](../profiling/vsperfclrenv.md) aus, bevor Sie die Datenerfassung starten.
+## <a name="how-to-fix-violations"></a>Behandeln von Verstößen  
+ Wenn Sie für verwaltete Anwendungen mithilfe der Befehlszeilentools in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Profilerstellungstools Profile erstellen, führen Sie das Befehlszeilentool [VSPerfCLREnv](../profiling/vsperfclrenv.md) aus, bevor Sie mit dem Erfassen von Daten beginnen.

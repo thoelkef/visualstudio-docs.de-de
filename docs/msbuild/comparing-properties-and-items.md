@@ -4,37 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- msbuild, msbuild properties
+helpviewer_keywords: msbuild, msbuild properties
 ms.assetid: b9da45ae-d6a6-4399-8628-397deed31486
-caps.latest.revision: 16
+caps.latest.revision: "16"
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 79460291e91f0659df0a4241e17616e55187a0e2
-ms.openlocfilehash: cf04644c98062ffb2aee5b4b826f8426070c3d60
-ms.contentlocale: de-de
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: f1a0f6df56cebe769ec514abea49ade0083c512e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="comparing-properties-and-items"></a>Vergleich von Eigenschaften und Elementen
 Sowohl MSBuild-Eigenschaften als auch MSBuild-Elemente werden verwendet, um Informationen an Aufgaben zu übergeben, Bedingungen auszuwerten und Werte zu speichern, auf die in der gesamten Projektdatei verwiesen werden kann.  
@@ -93,7 +76,7 @@ Sowohl MSBuild-Eigenschaften als auch MSBuild-Elemente werden verwendet, um Info
   
  Eigenschaften werden als Attribute an Aufgaben übergeben. Innerhalb der Aufgabe wird eine MSBuild-Eigenschaft durch einen Eigenschaftentyp dargestellt, dessen Wert in und aus einer Zeichenfolge konvertiert werden kann. Die unterstützten Eigenschaftentypen umfassen `bool`, `char`, `DateTime`, `Decimal`, `Double`, `int`, `string` und alle Typen, die <xref:System.Convert.ChangeType%2A> verarbeiten kann.  
   
- Elemente werden als <xref:Microsoft.Build.Framework.ITaskItem>-Objekte an Aufgaben übergeben. Innerhalb der Aufgabe stellt <xref:Microsoft.Build.Framework.ITaskItem.ItemSpec%2A> den Wert des Elements dar, und <xref:Microsoft.Build.Framework.ITaskItem.GetMetadata%2A> ruft seine Metadaten ab.  
+ Elemente werden als <xref:Microsoft.Build.Framework.ITaskItem>-Objekte an Aufgaben übergeben. In der Aufgabe stellt <xref:Microsoft.Build.Framework.ITaskItem.ItemSpec%2A> den Wert des Elements dar, und <xref:Microsoft.Build.Framework.ITaskItem.GetMetadata%2A> ruft dessen Metadaten ab.  
   
  Die Elementliste eines Elementtyps kann als Array von `ITaskItem`-Objekten übergeben werden. Ab .NET Framework 3.5 können Elemente mithilfe des `Remove`-Attributs aus einer Elementliste in einem Ziel entfernt werden. Da Elemente aus einer Elementliste entfernt werden können, kann ein Elementtyp über 0 (null) Elemente verfügen. Wenn eine Elementliste an eine Aufgabe übergeben wird, muss der Code in der Aufgabe diese Möglichkeit überprüfen.  
   

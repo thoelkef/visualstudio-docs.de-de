@@ -1,62 +1,63 @@
 ---
-title: "ThreadOn und ThreadOff | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: ThreadOn und ThreadOff | Microsoft-Dokumentation
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 5cd5a695-0a14-484a-8952-ed47e13d8e92
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 0cce0fcdf74c79dd78656b7dc4de49821549ee80
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# ThreadOn und ThreadOff
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Der VSPerfCmd.exe **ThreadOff**\-Unterbefehl und **ThreadOn**\-Unterbefehl sind nur in Befehlszeilenprofilerstellungssitzungen verfügbar, die die Instrumentationsmethode verwenden.  **ThreadOff** und **ThreadOn** halten die Profilerstellung für den angegebenen Thread an und setzen sie fort.  **ThreadOff** beendet die Profilerstellung des Threads, und **ThreadOn** startet die Profilerstellung des Threads.  
+# <a name="threadon-and-threadoff"></a>ThreadOn und ThreadOff
+Die VSPerfCmd.exe-Unterbefehle **ThreadOff** und **ThreadOn** sind nur in Befehlszeilensitzungen zur Profilerstellung verfügbar, in denen die Instrumentierungmethode verwendet wird. **ThreadOff** und **ThreadOn** halten die Profilerstellung für den angegebenen Thread an oder setzen diese fort. **ThreadOff** hält die Profilerstellung für den Thread an, und **ThreadOn** setzt diese fort.  
   
- In den meisten Fällen geben Sie **ThreadOn** oder **ThreadOff** als einzige Option in einer VSPerfCmd.exe\-Befehlszeile an. Sie können jedoch auch mit den Unterbefehlen **GlobalOn**, **GlobalOff**, **ProcessOn** und **ProcessOff** kombiniert werden.  
+ In den meisten Fällen geben Sie **ThreadOn** oder **ThreadOff** als einzige Option in einer VSPerfCmd.exe-Befehlszeile an. Sie können aber auch mit den Unterbefehlen **GlobalOn**, **GlobalOff**, **ProcessOn** und **ProcessOff** kombiniert werden.  
   
- Der **ThreadOn**\-Unterbefehl und der **ThreadOff**\-Unterbefehl interagieren mit dem **GlobalOn**\-Unterbefehl und dem **GlobalOff**\-Unterbefehl, mit denen die Datensammlung für alle Prozesse in einer Profilerstellungssitzung über eine Befehlszeile gesteuert wird, und dem **ProcessOn**\-Unterbefehl sowie dem **ProcessOff**\-Unterbefehl, mit denen die Datensammlung für einen angegebenen Prozess gesteuert wird.  
+ Die Unterbefehle **ThreadOn** und **ThreadOff** interagieren mit den Unterbefehlen **GlobalOn** und **GlobalOff**, die die Datensammlung für alle Prozesse in einer Befehlszeilen-Profilerstellungssitzung steuern. Sie interagieren außerdem mit den Unterbefehlen **ProcessOn** und **ProcessOff**, die die Datensammlung für einen angegebenen Thread steuern.  
   
- Die Unterbefehle **ThreadOff** und **ThreadOn** wirken sich auch auf die Start\/Stop\-Anzahl von Threads aus, die von den API\-Funktionen des Profilers bearbeitet wird.  
+ Die Unterbefehle **ThreadOff** und **ThreadOn** haben außerdem Auswirkungen auf die Start/Stop-Zähler von Threads, die von den Profiler-API-Funktionen bearbeitet wird.  
   
--   **ThreadOff** legt die Start\/Stop\-Anzahl von Threads sofort auf "0" fest und hält daher die Profilerstellung an.  
+-   **ThreadOff** legt die globale Start/Stop-Zähler der Threads sofort auf 0 (null) fest und hält die Profilerstellung daher an.  
   
--   **ThreadOn** legt die globale Start\/Stop\-Anzahl von Threads sofort auf "1" fest und nimmt die Profilerstellung daher wieder auf.  
+-   **ThreadOn** legt die globale Start/Stop-Zähler sofort auf 1 fest und setzt die Profilerstellung daher fort.  
   
  Weitere Informationen finden Sie unter [APIs für Profilerstellungstools](../profiling/profiling-tools-apis.md).  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 VSPerfCmd.exe /{ThreadOff|ThreadOn}:TID [Options]  
   
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `TID`  
- Der ganzzahlige Bezeichner des Threads zum Starten oder Anhalten.  
+ Der ganzzahlige Bezeichner des Threads zum Starten oder Beenden.  
   
-## Gültige Optionen  
+## <a name="valid-options"></a>Gültige Optionen  
  **ThreadOn** und **ThreadOff** können in Befehlszeilen angegeben werden, die auch die folgenden Unterbefehle enthalten.  
   
  **Start:** `Method`  
- Initialisiert die Befehlszeilen\-Profilersitzung und legt die angegebene Profilerstellungsmethode fest.  
+ Initialisiert die Profilerstellungssitzung in der Befehlszeile und legt die angegebene Profilerstellungsmethode fest  
   
- **GlobalOff**&#124;**GlobalOn**  
- Hält die Profilerstellung für alle Prozesse in einer Profilerstellungssitzung über die Befehlszeile an oder startet sie.  
+ **GlobalOff**|**GlobalOn**  
+ Beendet oder startet die Profilerstellung für alle Prozesse in einer Befehlszeilen-Profilerstellungssitzung  
   
- {**ProcessOff**&#124;**ProcessOn**}**:**`TID`  
- Hält die Profilerstellung für den angegebenen Prozess an oder startet sie.  
+ {**ProcessOff**|**ProcessOn**}**:**`TID`  
+ Beendet oder startet die Profilerstellung für den angegebenen Prozess  
   
-## Beispiel  
- In diesem Beispiel wird der **ThreadOff**\-Unterbefehl verwendet, um das Sammeln von Profilerstellungsdaten anzuhalten, sodass nur Anwendungsstartdaten gesammelt werden.  
+## <a name="example"></a>Beispiel  
+ In diesem Beispiel wird der Unterbefehl **ThreadOff** verwendet, um das Erfassen der Profilerstellungsdaten anzuhalten, damit nur Daten zum Starten von Anwendungen erfasst werden.  
   
 ```  
 ; Initialize the profiler.  
@@ -70,8 +71,8 @@ VSPerfCmd /Shutdown
   
 ```  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [Profilerstellung für eigenständige Anwendungen](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [Profilerstellung für ASP.NET\-Webanwendungen](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [Profilerstellungsdienste](../profiling/command-line-profiling-of-services.md)
+ [Profilerstellung für ASP.NET-Webanwendungen](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [Erstellen von Dienstprofilen](../profiling/command-line-profiling-of-services.md)

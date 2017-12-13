@@ -1,38 +1,39 @@
 ---
-title: "&#39;Attribute&#39; (dynamische &#39;XElement&#39;-Eigenschaft) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: Attribute (dynamische XElement-Eigenschaft) | Microsoft-Dokumentation
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-designers
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 8440fc7d-b3b4-4726-8ec8-492e6af79642
-caps.latest.revision: 2
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 2
+caps.latest.revision: "2"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 0fd01945c2a33f3929f59e66a02a1d08a39c3cc7
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# &#39;Attribute&#39; (dynamische &#39;XElement&#39;-Eigenschaft)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="attribute-xelement-dynamic-property"></a>Attribute (dynamische XElement-Eigenschaft)
 Sucht nach einem Indexer, der zum Abrufen der Attributinstanz verwendet wird, die dem angegebenen erweiterten Namen entspricht.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 elem.Attribute[{namespaceName}attribName]  
 ```  
   
-## Eigenschaftswert\/Rückgabewert  
- Indexer des Typs `XAttribute Item(String expandedName)`.Dieser Indexer nimmt den erweiterten Namen des angegebenen Attributs und gibt das zugehörige <xref:System.Xml.Linq.XAttribute> zurück. Wenn kein Attribut mit dem angegebenen Namen existiert, wird `null` zurückgegeben.  
+## <a name="property-valuereturn-value"></a>Eigenschaftswert/Rückgabewert  
+ Indexer des Typs `XAttribute Item(String expandedName)`. Dieser Indexer nimmt den erweiterten Namen des angegebenen Attributs und gibt das zugehörige <xref:System.Xml.Linq.XAttribute> zurück. Wenn kein Attribut mit dem angegebenen Namen existiert, wird `null` zurückgegeben.  
   
-## Hinweise  
- Diese Eigenschaft entspricht der <xref:System.Xml.Linq.XElement.Attribute%2A>\-Methode der <xref:System.Xml.Linq.XElement?displayProperty=fullName>\-Klasse.  
+## <a name="remarks"></a>Hinweise  
+ Diese Eigenschaft ist identisch mit der <xref:System.Xml.Linq.XElement.Attribute%2A>-Methode der <xref:System.Xml.Linq.XElement?displayProperty=fullName>-Klasse.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  <xref:System.Xml.Linq.XElement.Attribute%2A?displayProperty=fullName>   
- [Dynamische Eigenschaften der 'XElement'\-Klasse](../designers/xelement-class-dynamic-properties.md)   
+ [Dynamische Eigenschaften der XElement-Klasse](../designers/xelement-class-dynamic-properties.md)   
  [Wert](../designers/value-xattribute-dynamic-property.md)

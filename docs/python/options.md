@@ -1,11 +1,10 @@
 ---
 title: "Optionen für Python in Visual Studio | Microsoft-Dokumentation"
 ms.custom: 
-ms.date: 7/13/2017
+ms.date: 07/13/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-python
+ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
@@ -14,19 +13,18 @@ f1_keywords:
 - VS.ToolsOptionsPages.Python_Tools
 - VS.ToolsOptionsPages.Python_Tools.General
 - VS.ToolsOptionsPages.Python_Tools.Debugging
+- VS.ToolsOptionsPages.Python_Tools.Diagnostics
 - VS.ToolsOptionsPages.Python_Tools.Interactive_Windows
 - VS.ToolsOptionsPages.Text_Editor.Python.Advanced
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: 24293c3362249f2afcbcbb4b0266a478eaa1c9ab
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
 ms.translationtype: HT
-ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
-ms.openlocfilehash: a71d076e85e1e7ae070014e83186c0011ca9e58f
-ms.contentlocale: de-de
-ms.lasthandoff: 07/18/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/02/2017
 ---
-
 # <a name="options-for-python-in-visual-studio"></a>Optionen für Python in Visual Studio
 
 Um Python-Optionen anzuzeigen, verwenden Sie den Menübefehl **Extras > Optionen**, achten Sie darauf, dass **Alle Einstellungen anzeigen** ausgewählt ist, und navigieren Sie dann zu **Python Tools**:
@@ -39,6 +37,7 @@ Die spezifischen Optionen werden in den folgenden Abschnitten beschrieben:
 
 - [Allgemeine Optionen](#general-options)
 - [Debugoptionen](#debugging-options)
+- [Diagnoseoptionen](#diagnostics-options)
 - [Optionen für das interaktive Fenster](#interactive-windows-options)
 - [Erweiterte Optionen des Python-Editors](#advanced-python-editor-options)
 
@@ -70,6 +69,17 @@ Die spezifischen Optionen werden in den folgenden Abschnitten beschrieben:
 | Debuggen der Python-Standardbibliothek aktivieren | Aus | Mit dieser Option ist es möglich, den Quellcode der Standardbibliothek beim Debuggen schrittweise auszuführen. Dadurch dauert das Starten des Debuggers allerdings länger.|
 
 ![Dialogfeld „Python-Optionen“, Registerkarte „Debuggen“](media/options-debugging.png)
+
+
+## <a name="diagnostics-options"></a>Diagnoseoptionen
+
+| Option | Standard | Beschreibung |
+| --- | --- | --- |
+| Einbeziehen von Analyseprotokollen | Ein | Enthält ausführliche Protokolle zur Analyse von installierten Python-Umgebungen beim Speichern von Diagnosen in Dateien oder beim Kopieren dieser in die Zwischenablage mithilfe von Schaltflächen. Die Option kann die Größe der generierten Datei deutlich erhöhen, ist aber häufig für das Diagnostizieren von Problemen bei IntelliSense erforderlich. |
+| Diagnose in Datei speichern (Schaltfläche) | n/v | Erfordert einen Dateinamen und speichert das Protokoll anschließend in einer Textdatei |
+| Diagnose in Zwischenablage kopieren (Schaltfläche) | n/v | Nimmt das gesamte Protokoll in die Zwischenablage auf. Dieser Vorgang kann je nach Größe des Protokolls einige Zeit in Anspruch nehmen. |
+
+![Dialogfeld „Optionen“ von Python, Registerkarte „Diagnose“](media/options-diagnostics.png)
 
 ## <a name="interactive-windows-options"></a>Optionen für das interaktive Fenster
 

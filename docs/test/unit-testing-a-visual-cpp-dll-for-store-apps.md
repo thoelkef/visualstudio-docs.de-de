@@ -1,40 +1,24 @@
 ---
-title: "Unittests bei einer Visual C++-DLL für Store-Apps | Microsoft-Dokumentation"
+title: "Komponententests für eine Visual C++-DLL für UWP-Apps | Microsoft-Dokumentation"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 24afc90a-8774-4699-ab01-6602a7e6feb2
-caps.latest.revision: 13
+caps.latest.revision: "13"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5ab78b6b8eaa8156ed2c8a807b1d8a80e75afa84
-ms.openlocfilehash: 571ea6daab6ea9cbfb30976514e163b5dcbe398d
-ms.lasthandoff: 04/04/2017
-
+ms.openlocfilehash: a900c779401277e4b8694e75f69203fee82d73f0
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/02/2017
 ---
-# <a name="unit-testing-a-visual-c-dll-for-store-apps"></a>Unittests bei einer Visual C++-DLL für Store-Apps
-Dieses Thema beschreibt eine Möglichkeit zum Erstellen von Komponententests für eine C++-DLL für Windows Store-Apps. Die RooterLib-DLL implementiert eine Funktion zum näherungsweisen Berechnen der Quadratwurzel einer vorgegebenen Zahl, und zwar auf eine Weise, die entfernt an Grenzwertberechnungen in der Analysis erinnert. Die DLL kann dann in eine Windows Store-App eingeschlossen werden, die Benutzern Spaß an der Mathematik vermittelt.  
+# <a name="unit-testing-a-visual-c-dll-for-uwp-apps"></a>Komponententests für eine Visual C++-DLL für UWP-Apps
+In diesem Thema wird eine Möglichkeit zum Erstellen von Komponententests für eine C++-DLL für UWP-Apps beschrieben. Die RooterLib-DLL implementiert eine Funktion zum Berechnen der geschätzten Quadratwurzel einer vorgegebenen Zahl, und zwar auf eine Weise, die entfernt an Grenzwertberechnungen in der Analysis erinnert. Die DLL kann dann in eine UWP-App eingeschlossen werden, die Benutzern Spaß an der Mathematik vermittelt.  
   
  In diesem Thema wird gezeigt, wie Komponententests als erster Schritt in der Entwicklung verwendet werden. Bei dieser Vorgehensweise schreiben Sie zuerst eine Testmethode, die ein bestimmtes Verhalten in Ihrem Testsystem überprüft. Anschließend schreiben Sie den Code, der im Test erfolgreich ist. Durch das Ändern der Reihenfolge bei den folgenden Prozeduren, können Sie diese Strategie umkehren und zuerst den zu testenden Code und anschließend die Komponententests schreiben.  
   
@@ -61,7 +45,7 @@ Dieses Thema beschreibt eine Möglichkeit zum Erstellen von Komponententests fü
   
 1.  Wählen Sie im Menü **Datei** die Option **Neu** aus, und klicken Sie dann auf **Neues Projekt**.  
   
-2.  Erweitern Sie im Dialogfeld „Neues Projekt“ den Eintrag **Installiert**, erweitern Sie **Visual C++**, und wählen Sie **Windows Store** aus. Wählen Sie dann **Komponententestbibliothek (Windows Store-Apps)** aus der Liste der Projektvorlagen aus.  
+2.  Erweitern Sie im Dialogfeld „Neues Projekt“ den Eintrag **Installiert**, erweitern Sie **Visual C++**, und klicken Sie auf **Windows Universal**. Klicken Sie dann in der Liste der Projektvorlagen auf **Komponententestbibliothek (Universal Windows)**.  
   
      ![C&#43;&#43;-Komponententestbibliothek erstellen](../test/media/ute_cpp_windows_unittestlib_create.png "UTE_Cpp_windows_UnitTestLib_Create")  
   
@@ -108,7 +92,7 @@ Dieses Thema beschreibt eine Möglichkeit zum Erstellen von Komponententests fü
   
      ![RooterLib-Projekt erstellen](../test/media/ute_cpp_windows_rooterlib_create.png "UTE_Cpp_windows_RooterLib_Create")  
   
-2.  Wählen Sie im Dialogfeld **Neues Projekt hinzufügen** die Option **DLL (Windows Store-Apps)** aus.  
+2.  Klicken Sie im Dialogfeld **Neues Projekt hinzufügen** auf die Option **DLL (UWP-Apps)**.  
   
 3.  Fügen Sie der **RooterLib.h**-Datei den folgenden Code hinzu:  
   
@@ -364,4 +348,3 @@ Dieses Thema beschreibt eine Möglichkeit zum Erstellen von Komponententests fü
     >  Mit einem stabilen Satz guter Komponententests haben Sie mehr Gewissheit, dass Sie beim Ändern des Codes keine Fehler eingeführt haben.  
     >   
     >  Halten Sie Umgestaltungen getrennt von anderen Änderungen.
-

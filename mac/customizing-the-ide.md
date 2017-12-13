@@ -1,20 +1,18 @@
 ---
-title: Anpassen der IDE
+title: Anpassen der IDE | Microsoft-Dokumentation
 description: "Visual Studio für Mac kann auf viele verschiedene Arten angepasst werden, sodass Benutzer Apps in einer Umgebung entwickeln können, die ihren Bedürfnissen nach Effizienz und Ästhetik gerecht wird. Dieses Thema erläutert die verschiedenen Arten, auf die Visual Studio für Mac an Ihre Bedürfnisse angepasst werden kann."
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: F7C2A28C-0759-4E0D-A28E-B72D5AB73DB6
+ms.openlocfilehash: f0192b63c76fe4c3fe51c0f5aa6700e072fb80d4
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
-ms.openlocfilehash: 514f758718105db366363cd1c9e69163a9872dc7
-ms.contentlocale: de-de
-ms.lasthandoff: 08/11/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-
-#<a name="customizing-the-ide"></a>Anpassen der IDE
+# <a name="customizing-the-ide"></a>Anpassen der IDE
 
 Visual Studio für Mac kann auf viele verschiedene Arten angepasst werden, sodass Benutzer Apps in einer Umgebung entwickeln können, die ihren Bedürfnissen nach Effizienz und Ästhetik gerecht wird. Dieses Thema erläutert die verschiedenen Arten, auf die Visual Studio für Mac an Ihre Bedürfnisse angepasst werden kann.
 
@@ -131,4 +129,3 @@ Die Registerkarten des Editors können aus dem Dokumentbereich gezogen werden, u
  ![Zwei parallele Spalten mit zusätzlichen Registerkarten](media/customizing-the-ide-sbs2.png)
 
 Klicken Sie auf **View > Editor Columns > 1 column** (Ansicht > Editor-Spalten > 1 Spalte), um zu einem einzigen geöffneten Editor zurückzukehren.
-

@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -24,33 +23,17 @@ helpviewer_keywords:
 - Options dialog box, Web settings
 - Internet Explorer, setting options
 ms.assetid: 586db4eb-032d-4cb5-93a6-a7c14de1ae49
-caps.latest.revision: 17
-author: kempb
-ms.author: kempb
+caps.latest.revision: "17"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
-ms.openlocfilehash: e2852ef4eb48247a97fe513efc7cdecb89ec619a
-ms.contentlocale: de-de
-ms.lasthandoff: 05/24/2017
-
+ms.openlocfilehash: 2b91f59e6fd7dbf688f8d1cab8d95e9329c879b6
+ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/07/2017
 ---
-# Webbrowser, Umgebung, Dialogfeld "Optionen"
-<a id="web-browser-environment-options-dialog-box" class="xliff"></a>
+# <a name="web-browser-environment-options-dialog-box"></a>Webbrowser, Umgebung, Dialogfeld "Optionen"
 Legt Optionen sowohl für den internen Webbrowser als auch für Internet Explorer fest. Klicken Sie zum Öffnen dieses Dialogfelds im Menü **Extras** auf **Optionen**, erweitern Sie den Ordner **Umgebung**, und klicken Sie dann auf **Webbrowser**.  
   
 > [!NOTE]
@@ -59,29 +42,28 @@ Legt Optionen sowohl für den internen Webbrowser als auch für Internet Explore
 > [!IMPORTANT]
 >  Durch Öffnen bestimmter Webdateien oder -komponenten kann auf Ihrem Computer Code ausgeführt werden.  
   
- Startseite  
+## <a name="home-page"></a>Startseite
  Legt die Seite fest, die beim Öffnen des IDE-Webbrowsers angezeigt wird.  
   
- Suchseite  
+## <a name="search-page"></a>Suchseite
  Hier können Sie eine Suchseite für den internen Webbrowser festlegen. Diese Adresse kann sich von der Suchseite unterscheiden, die von Internet Explorer-Instanzen verwendet wird, die außerhalb der integrierten Entwicklungsumgebung (IDE) gestartet wurden.  
   
- Quelltext anzeigen in  
+## <a name="view-source-in"></a>Quelltext anzeigen in
  Legt den Editor fest, der zum Öffnen einer Website verwendet wird, wenn Sie den Befehl **Quelltext anzeigen** auf der im internen Webbrowser angezeigten Seite wählen.  
   
--   **Quellcode-Editor** Wählen Sie diese Option zum Anzeigen von Quellcode im [Code- und Text-Editor](../../ide/writing-code-in-the-code-and-text-editor.md) aus.  
+-   **Quellcode-Editor** Wählen Sie diese Option zum Anzeigen von Quellcode im [Editor](../../ide/writing-code-in-the-code-and-text-editor.md) aus.  
   
 -   **HTML-Editor** Wählen Sie diese Option zum Anzeigen von Quellcode im [HTML-Designer](http://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477) aus. Verwenden Sie diese Option, wenn Sie die Website in einer von zwei Ansichten bearbeiten möchten: In der Entwurfsansicht oder in der Standardtext-Quellansicht.  
   
 -   **Externer Editor** Wählen Sie diese Option zum Anzeigen von Quellcode in einem anderen Editor aus. Geben Sie den Pfad eines beliebigen Editors an, z.B. Notepad.exe.  
   
- Internet Explorer-Optionen  
- Klicken Sie hier, um im Dialogfeld **Interneteigenschaften** Optionen für Internet Explorer zu ändern. Änderungen, die in diesem Dialogfeld vorgenommen werden, wirken sich sowohl auf den internen Webbrowser als auch auf die Internet Explorer-Instanzen aus, die außerhalb der Visual Studio-IDE (z.B. über das Startmenü) gestartet wurden.  
+## <a name="internet-explorer-options"></a>Internet Explorer-Optionen  
+Klicken Sie hier, um im Dialogfeld **Interneteigenschaften** Optionen für Internet Explorer zu ändern. Änderungen, die in diesem Dialogfeld vorgenommen werden, wirken sich sowohl auf den internen Webbrowser als auch auf die Internet Explorer-Instanzen aus, die außerhalb der Visual Studio-IDE (z.B. über das Startmenü) gestartet wurden.  
   
 > [!NOTE]
->  Verwenden Sie das Dialogfeld „Browserauswahl“, um den internen Webbrowser von Visual Studio, der eine Version von Internet Explorer ist,durch einen anderen, externen Webbrowser zu ersetzen.  
+>  Im Dialogfeld **Browse with** (Durchsuchen mit) können Sie den internen Webbrowser von Visual Studio durch einen Browser Ihrer Wahl ersetzen. Für das Öffnen des Dialogfelds „“ haben Sie zwei Optionen: Klicken Sie entweder mit der rechten Maustaste auf z.B. eine HTML-Datei in Ihrem Projekt, oder öffnen Sie deren Kontextmenü.
   
-## Siehe auch
-<a id="see-also" class="xliff"></a>  
+## <a name="see-also"></a>Siehe auch  
  [Dialogfeld „Umgebungsoptionen“](../../ide/reference/environment-options-dialog-box.md)   
  [Allgemein, Umgebung, Dialogfeld „Optionen“](../../ide/reference/general-environment-options-dialog-box.md)   
  [HTML-Designer](http://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477)

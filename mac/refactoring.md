@@ -1,19 +1,17 @@
 ---
-title: Umgestaltung
+title: "Umgestalten von Code in Visual Studio für Mac | Microsoft-Dokumentation"
 description: "Das Neuorganisieren von Code in Visual Studio für Mac wird durch die Verwendung der Quellanalyse vereinfacht."
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: C7782BF3-016F-4B41-8A81-85FC540A1A8F
+ms.openlocfilehash: ba92cd9a0e9ca28d132116f65fd41758bce1a1f0
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
-ms.openlocfilehash: 4133b35d7bafd37a44150c6af0d730562a639874
-ms.contentlocale: de-de
-ms.lasthandoff: 08/11/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="refactoring"></a>Umgestaltung
 
 Das Umgestalten von Code ist eine Möglichkeit, vorhandenen Code neu anzuordnen, neu zu strukturieren und zu verdeutlichen, wobei weiterhin sichergestellt wird, dass das Gesamtverhalten des Codes nicht verändert wird.
@@ -109,5 +107,4 @@ Sie können alle Ergebnisse der Quellanalyse jeder Datei zu jeder Zeit anzeigen 
 Wenn Sie auf den Kreis oben klicken, können Sie jeden einzelnen Vorschlag durchlaufen lassen, wobei die schwerwiegendsten Probleme zuerst angezeigt werden. Wenn Sie auf ein einzelnes Ergebnis oder eine einzelne Zeile zeigen, wird das Problem angezeigt, das durch Kontextaktionen behoben werden kann:
 
  ![Quellanalyseelement](media/refactoring-image5.png)
-
 

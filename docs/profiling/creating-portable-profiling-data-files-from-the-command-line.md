@@ -1,46 +1,47 @@
 ---
-title: "Erstellen portabler Profilerstellungsdatendateien &#252;ber die Befehlszeile | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: "Erstellen portierbarer Profilerstellungsdatendateien über die Befehlszeile | Microsoft-Dokumentation"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 2ceb63a7-b835-4988-b756-2afc3fcc4808
-caps.latest.revision: 6
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 6
+caps.latest.revision: "6"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: f222856d16033cba5ae089c19081efeefe744aa5
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Erstellen portabler Profilerstellungsdatendateien &#252;ber die Befehlszeile
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Um die Freigabe der Profilerstellungsdaten zu vereinfachen, können Sie die Symbole für eine Profilerstellung mit dem Befehlszeilentool [VSPerfReport](../profiling/vsperfreport.md) in die VSP\-Datei einbetten.  
+# <a name="creating-portable-profiling-data-files-from-the-command-line"></a>Erstellen portabler Profilerstellungsdatendateien über die Befehlszeile
+Um die Freigabe von Profilerstellungsdaten zu vereinfachen, können Sie das Befehlszeilentool [VSPerfReport](../profiling/vsperfreport.md) verwenden, um Symbole für eine Profilerstellungsausführung in die VSP-Datei einzubetten.  
   
- Sie können auch eine bereits analysierte Profilerstellungs\-Datendatei \(.vsps\) erstellen, die kleiner ist und schneller in der IDE geladen wird.  
+ Sie können auch eine bereits analysierte Profilerstellungsdatendatei (.vsps) erstellen, die kleiner ist und schneller in der IDE geladen wird.  
   
 > [!NOTE]
->  Stellen Sie sicher, dass die Symboldateien \(.pdb\) **VSPerfReport** zur Verfügung stehen.  Weitere Informationen finden Sie unter [Gewusst wie: Angeben von Symboldateispeicherorten über die Befehlszeile](../profiling/how-to-specify-symbol-file-locations-from-the-command-line.md).  
+>  Stellen Sie sicher, dass die Symboldateien (.pdb) von **VSPerfReport** verwendet werden können. Weitere Informationen finden Sie unter [Vorgehensweise: Angeben von Symboldateispeicherorten über die Befehlszeile](../profiling/how-to-specify-symbol-file-locations-from-the-command-line.md).  
 >   
->  Informationen zum Pfad zu **VSReport** finden Sie unter [Angeben des Pfads zu Tools für die Befehlszeile](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
+>  Weitere Informationen zur Pfadangabe für **VSReport** finden Sie unter [Angeben des Pfads zu Befehlszeilentools](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
 >   
->  Die Profilerstellungsdaten in einer VSPS\-Datei können nicht gefiltert werden.  
+>  Die Profilerstellungsdaten in einer VSPS-Datei können nicht gefiltert werden.  
   
-### So betten Sie die Symbole für eine Profilerstellung in eine Profilerstellungs\-Datendatei \(.vsp\) ein  
+### <a name="to-embed-the-symbols-for-a-profiling-run-into-a-profiling-data-vsp-file"></a>Einbetten von Symbolen in die Profilerstellungsdatendatei (.vsp) für die Profilerstellungsausführung  
   
--   Geben Sie an einer Eingabeaufforderung den folgenden Befehl ein:  
+-   Geben Sie im Eingabeaufforderungsfenster folgenden Befehl ein:  
   
-     \<Datei\> **\/PackSymbols** Pfad **VSPerfReport \<**\>VSP  
+     \<Pfad> **VSPerfReport \<**VSP-Datei> **/PackSymbols**  
   
-     Standardmäßig erhält die VSPS\-Datei den Basisnamen der VSP\-Datei.  Mit der **Output**\-Option können Sie einen alternativen Namen angeben.  
+     Standardmäßig ist der Name der Basisname der VSPS-Datei. Sie können mit der Option **Output** allerdings einen alternativen Namen angeben.  
   
-### So erstellen Sie eine zusammenfassende Profilerstellungs\-Datendatei  
+### <a name="to-create-a-summary-profiling-data-file"></a>Erstellen einer zusammenfassenden Profilerstellungsdatendatei  
   
--   Geben Sie an einer Eingabeaufforderung den folgenden Befehl ein:  
+-   Geben Sie im Eingabeaufforderungsfenster folgenden Befehl ein:  
   
-     \<Datei\> **\/SummaryFile** \[**\/Output:**\<\]**VSPerfReport \<** VSP Dateiname \>Pfad\>  
+     \<Pfad> **VSPerfReport \<**VSP-Datei> **/SummaryFile** [**/Output:**\<Dateiname>]  
   
-     Standardmäßig erhält die VSPS\-Datei den Basisnamen der VSP\-Datei.  Mit der **Output**\-Option können Sie einen alternativen Namen angeben.
+     Standardmäßig ist der Name der Basisname der VSPS-Datei. Sie können mit der Option **Output** allerdings einen alternativen Namen angeben.

@@ -1,91 +1,91 @@
 ---
-title: "Befehl &quot;Arbeitsspeicher auflisten&quot; | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "debug.listmemory"
-helpviewer_keywords: 
-  - "Debug.ListMemory-Befehl"
-  - "Arbeitsspeicher auflisten (Befehl)"
-  - "ListMemory-Befehl"
+title: "Befehl „Arbeitsspeicher auflisten“ | Microsoft-Dokumentation"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: debug.listmemory
+helpviewer_keywords:
+- Debug.ListMemory command
+- ListMemory command
+- list memory command
 ms.assetid: a84de361-a6a6-4f6d-96aa-a0d4a424371e
-caps.latest.revision: 11
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: ae04c23a986107125edc9be149d6317a05c5b58a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Befehl &quot;Arbeitsspeicher auflisten&quot;
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
+# <a name="list-memory-command"></a>Befehl "Arbeitsspeicher auflisten"
 Zeigt den Inhalt des angegebenen Speicherbereichs an.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 Debug.ListMemory [/ANSI|Unicode] [/Count:number] [/Format:formattype]  
 [/Hex|Signed|Unsigned] [expression]  
 ```  
   
-## Argumente  
+## <a name="arguments"></a>Argumente  
  `expression`  
- Optional.  Die Speicheradresse, an der die Anzeige des Arbeitsspeichers beginnen soll.  
+ Dies ist optional. Die Speicheradresse, ab der die Anzeige des Arbeitsspeicher begonnen werden soll  
   
-## Schalter  
- \/ANSI&#124;Unicode  
- Optional.  Zeigt den Arbeitsspeicher in Form von Zeichen an, die den Bytes des Arbeitsspeichers, entweder ANSI oder Unicode, entsprechen.  
+## <a name="switches"></a>Schalter  
+ /ANSI|Unicode  
+ Dies ist optional. Zeigen Sie den Arbeitsspeicher als Zeichen an, die den Bytes im Arbeitsspeicher entsprechen, entweder als ANSI- oder Unicode-Zeichen.  
   
- \/Count:`number`  
- Optional.  Bestimmt, wie viele Bytes des Arbeitsspeichers, beginnend mit `expression`, angezeigt werden sollen.  
+ /Count:`number`  
+ Dies ist optional. Bestimmt, wie viele Byte Arbeitsspeicher angezeigt werden, beginnend bei `expression`.  
   
- \/Format:`formattype`  
- Optional.  Formattyp für das Anzeigen von Arbeitsspeicherinformationen im Fenster **Arbeitsspeicher**; kann die Werte OneByte, TwoBytes, FourBytes, EightBytes, Float \(32\-bit\) oder Double \(64\-bit\) annehmen.  Wenn OneByte verwendet wird, steht `/Unicode` nicht zur Verfügung.  
+ /Format:`formattype`  
+ Dies ist optional. Formattypen für das Anzeigen von Speicherinformationen im Fenster **Arbeitsspeicher**; entweder OneByte, TwoBytes, FourBytes, EightBytes, Float (32-Bit), oder Double (64-Bit). Wenn OneByte verwendet wird, ist `/Unicode` nicht verfügbar.  
   
- \/Hex&#124;Signed&#124;Unsigned  
- Optional.  Gibt das Format für die Anzeige von Zahlen an: mit Vorzeichen, ohne Vorzeichen oder hexadezimal.  
+ /Hex|Signed|Unsigned  
+ Dies ist optional. Gibt das Format zum Anzeigen von Zahlen an: mit Vorzeichen, ohne Vorzeichen oder hexadezimal.  
   
-## Hinweise  
- Anstatt einen **Debug.ListMemory**\-Befehl mit allen Schaltern vollständig auszuschreiben, können Sie ihn auch über vordefinierte Aliase aufrufen, die über bestimmte, auf spezifische Werte voreingestellte Schalter verfügen.  Anstelle der folgenden Eingabe:  
+## <a name="remarks"></a>Hinweise  
+ Anstatt einen kompletten **Debug.ListMemory**-Befehl mit allen Schaltern zu schreiben, können Sie den Befehl mithilfe vordefinierter Aliase aufrufen, bei denen bestimmte Schalter auf angegebene Werte voreingestellt werden. Anstatt z.B. Folgendes einzugeben:  
   
 ```  
 >Debug.ListMemory /Format:float /Count:30 /Unicode  
 ```  
   
- können Sie Folgendes schreiben:  
+ Können Sie Folgendes schreiben:  
   
 ```  
 >df /Count:30 /Unicode  
 ```  
   
- Liste der verfügbaren Aliase für den **Debug.ListMemory**\-Befehl:  
+ Hier finden Sie eine Liste vorhandener Aliase für den **Debug.ListMemory**-Befehl:  
   
 |Alias|Befehl und Schalter|  
-|-----------|-------------------------|  
+|-----------|--------------------------|  
 |**d**|Debug.ListMemory|  
-|**da**|Debug.ListMemory \/Ansi|  
-|**db**|Debug.ListMemory \/Format:OneByte|  
-|**dc**|Debug.ListMemory \/Format:FourBytes \/Ansi|  
-|**dd**|Debug.ListMemory \/Format:FourBytes|  
-|**df**|Debug.ListMemory\/Format:Float|  
-|**dq**|Debug.ListMemory \/Format:EightBytes|  
-|**du**|Debug.ListMemory \/Unicode|  
+|**da**|Debug.ListMemory /Ansi|  
+|**db**|Debug.ListMemory /Format:OneByte|  
+|**dc**|Debug.ListMemory /Format:FourBytes /Ansi|  
+|**dd**|Debug.ListMemory /Format:FourBytes|  
+|**df**|Debug.ListMemory /Format:Float|  
+|**dq**|Debug.ListMemory /Format:EightBytes|  
+|**du**|Debug.ListMemory /Unicode|  
   
-## Beispiel  
+## <a name="example"></a>Beispiel  
   
 ```  
 >Debug.ListMemory /Format:float /Count:30 /Unicode  
 ```  
   
-## Siehe auch  
- [Befehl "Aufrufliste auflisten"](../../ide/reference/list-call-stack-command.md)   
- [Befehl "Threads auflisten"](../../ide/reference/list-threads-command.md)   
- [Visual Studio\-Befehle](../../ide/reference/visual-studio-commands.md)   
+## <a name="see-also"></a>Siehe auch  
+ [Befehl „Aufrufliste auflisten“](../../ide/reference/list-call-stack-command.md)   
+ [Befehl „Threads auflisten“](../../ide/reference/list-threads-command.md)   
+ [Visual Studio-Befehle](../../ide/reference/visual-studio-commands.md)   
  [Befehlsfenster](../../ide/reference/command-window.md)   
- [Such\/Befehlsfeld](../../ide/find-command-box.md)   
- [Visual Studio\-Befehlsaliase](../../ide/reference/visual-studio-command-aliases.md)
+ [Such-/Befehlsfeld](../../ide/find-command-box.md)   
+ [Visual Studio-Befehlsaliase](../../ide/reference/visual-studio-command-aliases.md)

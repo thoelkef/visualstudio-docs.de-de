@@ -1,56 +1,57 @@
 ---
-title: "Designing Classes and Types (Class Designer) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "types [Visual Studio], designing"
-  - "classes [Visual Studio], designing"
+title: Entwerfen von Klassen und Typen (Klassen-Designer) | Microsoft-Dokumentation
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- types [Visual Studio], designing
+- classes [Visual Studio], designing
 ms.assetid: 381481a2-87f4-475b-a780-18e85c8af350
-caps.latest.revision: 21
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 21
+caps.latest.revision: "21"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 07bae865601183446308a37f7c91255392fee342
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Designing Classes and Types (Class Designer)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Im **Klassen\-Designer** können Sie Klassen und Typen nicht nur darstellen, sondern auch entwerfen.  In den folgenden Themen wird die entsprechende Vorgehensweise erläutert.  
+# <a name="designing-classes-and-types-class-designer"></a>Entwerfen von Klassen und Typen (Klassen-Designer)
+Mit **Klassen-Designer** können Sie nicht nur Klassen und Typen darstellen, sondern Sie können diese auch entwerfen. In den folgenden Themen wird die Vorgehensweise beschrieben.  
   
 > [!NOTE]
->  Überprüfen Sie beim Arbeiten mit dem Klassen\-Designer den ausgegebenen Code, bevor er ausgeführt wird, um sicherzustellen, dass der Code für Ihren Sicherheitskontext geeignet ist.  
+>  Wenn Sie mit Klassen-Designer arbeiten, sollten Sie den ausgegebenen Code vor der Ausführung immer überprüfen, um sicherzustellen, dass der Code für Ihren Sicherheitskontext geeignet ist.  
   
-## In diesem Abschnitt  
- [How to: Create Types by using Class Designer](../ide/how-to-create-types-by-using-class-designer.md)  
+## <a name="in-this-section"></a>In diesem Abschnitt  
+ [Gewusst wie: Erstellen von Typen mit dem Klassen-Designer](../ide/how-to-create-types-by-using-class-designer.md)  
   
- Beschreibt, wie mithilfe des Klassendiagramms ein Typ erstellt wird.  
+ Beschreibt die Verwendung des Klassendiagramms zum Erstellen eines Typs.  
   
- [How to: Create Inheritance Between Types \(Class Designer\)](../ide/how-to-create-inheritance-between-types-class-designer.md)  
+ [Gewusst wie: Erstellen der Vererbung zwischen Typen (Klassen-Designer)](../ide/how-to-create-inheritance-between-types-class-designer.md)  
   
- Erklärt, wie eine Vererbungsbeziehung zwischen Typen definiert wird.  
+ Beschreibt, wie eine Vererbungsbeziehung zwischen Typen definiert wird.  
   
- [How to: Create Associations Between Types \(Class Designer\)](../ide/how-to-create-associations-between-types-class-designer.md)  
+ [Gewusst wie: Erstellen von Zuordnungen zwischen Typen (Klassen-Designer)](../ide/how-to-create-associations-between-types-class-designer.md)  
   
- Beschreibt, wie Assoziationen im Klassendiagramm definiert werden.  
+ Beschreibt, wie Zuordnungen im Klassendiagramm definiert werden.  
   
- [How to: Visualize a Collection Association \(Class Designer\)](../ide/how-to-visualize-a-collection-association-class-designer.md)  
+ [Gewusst wie: Darstellen einer Auflistungszuordnung (Klassen-Designer)](../ide/how-to-visualize-a-collection-association-class-designer.md)  
   
- Erklärt, wie im Klassen\-Designer eine Auflistungsassoziation definiert wird.  
+ Erläutert das Definieren einer Auflistungszuordnung in Klassen-Designer.  
   
- [Creating and Configuring Type Members \(Class Designer\)](../ide/creating-and-configuring-type-members-class-designer.md)  
+ [Erstellen und Konfigurieren von Typmembern (Klassen-Designer)](../ide/creating-and-configuring-type-members-class-designer.md)  
   
- Stellt Informationen und Links zu Themen zum Erstellen und Konfigurieren von Typmembern mit dem Klassen\-Designer bereit.  
+ Enthält Informationen und Links zu Themen zum Erstellen und Konfigurieren von Typmembern mit Klassen-Designer.  
   
-## Verwandte Abschnitte  
- [Viewing Types and Relationships \(Class Designer\)](../ide/viewing-types-and-relationships-class-designer.md)  
+## <a name="related-sections"></a>Verwandte Abschnitte  
+ [Anzeigen von Typen und Beziehungen (Klassen-Designer)](../ide/viewing-types-and-relationships-class-designer.md)  
   
- [Refactoring Classes and Types \(Class Designer\)](../ide/refactoring-classes-and-types-class-designer.md)  
+ [Refactoring von Klassen und Typen (Klassen-Designer)](../ide/refactoring-classes-and-types-class-designer.md)  
   
-## Siehe auch  
- [Working with Class Diagrams \(Class Designer\)](../ide/working-with-class-diagrams-class-designer.md)
+## <a name="see-also"></a>Siehe auch  
+ [Arbeiten mit Klassendiagrammen (Klassen-Designer)](../ide/working-with-class-diagrams-class-designer.md)

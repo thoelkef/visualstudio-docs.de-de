@@ -1,35 +1,36 @@
 ---
-title: "Arbeiten mit 3D-Modellen | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: Arbeiten mit 3D-Modellen | Microsoft-Dokumentation
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-designers
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: fa035091-1354-4d1c-be44-4fb83860466f
-caps.latest.revision: 8
-author: "BrianPeek"
-ms.author: "brpeek"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: a910c3f43dc0cb49e6b7f6f70355c6c195df7a82
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Arbeiten mit 3D-Modellen
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Zum Erstellen von 3D\-Modellen können Sie den Modell\-Editor von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] verwenden.  Sie können die Modelle in einem DirectX\-basierten Spiel oder in einer DirectX\-basierten App verwenden.  
+# <a name="working-with-3-d-models"></a>Arbeiten mit 3D-Modellen
+Mit dem Modell-Editor in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] können Sie 3D-Modelle erstellen. Diese Modelle finden in Ihren DirectX-basierten Spielen oder Apps Verwendung.  
   
-## 3D\-Modelle  
- 3D\-Modelle legen die Form von Objekten während einer 3D\-Szene fest.  Modelle können einfache alleinstehende Objekte, komplexe Objekte, die aus den Hierarchien einfacher Objekte gebildet werden, oder sogar ganze 3D\-Szenen sein.  Ein 3D\-Objekt besteht aus Punkten im 3D\-Raum \(bezeichnet als *Vertices*\), Indizes, die Dreiecke, Zeilen oder andere Primitive definieren, die sich aus diesen Punkten zusammensetzen, sowie Attribute, die auf einzelne Vertices oder Primitive angewendet werden können \(z. B. Oberflächennormale\).  Außerdem können bestimmte Informationen auf einzelne Objekte angewendet werden, z. B., welche Shader und Texturen dem Objekt seine einzigartige Darstellung verleihen.  
+## <a name="3-d-models"></a>3D-Modelle  
+ 3D-Modelle definieren die Form der Objekte für dreidimensionale Szenen. Modelle können einfache, einzelne oder komplexe Objekte sein, die aus Hierarchien einfacher Objekte oder aus ganzen 3D-Szenen gebildet werden. Ein 3D-Objekt setzt sich aus Folgendem zusammen: 1. aus Punkten im dreidimensionalen Raum (sogenannten *Scheitelpunkten*), 2. aus Indizes, die Dreiecke, Linien oder andere ebenfalls aus Scheitelpunkten bestehende Primitive definieren, und 3. aus Attributen, die sich auf einzelne Scheitelpunkte oder primitive Objekte anwenden lassen, z.B. Oberflächennormale. Darüber hinaus können einige Informationen nur für einzelne Objekte gelten, z.B. welche Shader und Texturen einem Objekt seine einzigartige Erscheinung verleihen.  
   
- Der Modell\-Editor ist das einzige Tool, das Sie brauchen, um einfache 3D\-Modelle zu erstellen und mit Materialeigenschaften, Texturen und Pixel\-Shadern zu vervollständigen, die Sie dann in Ihrem Spiel oder Ihrer App verwenden können.  Sie können auch Platzhaltermodelle für die Prototyperstellung und Tests erstellen, bevor Sie Künstler beauftragen, die Modelle fertig zu stellen.  
+ Der Modell-Editor (mit Materialeigenschaften, Texturen und Pixelshadern) ist das einzige Tool, das Sie für die Erstellung grundlegender 3D-Modelle für Ihr Spiel oder Ihre App benötigen. Alternativ können Sie Platzhaltermodelle erstellen, die als Prototypen getestet werden können, bevor Künstler den Modellen den letzten Schliff geben.  
   
- Sie haben auch die Möglichkeit, vorhandene 3D\-Modelle, die mit einem Tool mit vollem Funktionsumfang erstellt wurden, mit dem Modell\-Editor anzuzeigen und zu ändern, sofern Sie Probleme in den Grafikobjekten feststellen.  
+ Mit dem Modell-Editor können Sie auch 3D-Modelle anzeigen, die mithilfe aller Funktionen und Tools erstellt wurden, und sie ändern, wenn Sie Probleme damit haben.  
   
-## Verwandte Themen  
+## <a name="related-topics"></a>Verwandte Themen  
   
-|Titel|**Beschreibung**|  
-|-----------|----------------------|  
-|[Modell\-Editor](../designers/model-editor.md)|Beschreibt, wie der Modell\-Editor für die Arbeit mit 3D\-Modellen verwendet wird.|  
-|[Beispiele für den Modell\-Editor](../designers/model-editor-examples.md)|Enthält Links zu Themen, die beschreiben, wie Sie den Modell\-Editor für allgemeine 3D\-Modellierungsaufgaben verwenden.|
+|Titel|Beschreibung|  
+|-----------|-----------------|  
+|[Modell-Editor](../designers/model-editor.md)|In diesem Artikel wird beschrieben, wie sich der Modell-Editor für die Arbeit mit 3D-Modellen einsetzen lässt|  
+|[Beispiele für den Modell-Editor](../designers/model-editor-examples.md)|Enthält Links zu Themen, in denen erklärt wird, wie häufige Vorgänge bei 3D-Modellerstellung mit dem Modell-Editor ausgeführt werden können|

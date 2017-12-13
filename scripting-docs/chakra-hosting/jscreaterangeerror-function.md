@@ -1,27 +1,29 @@
 ---
-title: "JsCreateRangeError-Funktion | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
-f1_keywords: 
-  - "jsrt/JsCreateRangeError"
-helpviewer_keywords: 
-  - "JsCreateRangeError-Funktion"
+title: JsCreateRangeError-Funktion | Microsoft-Dokumentation
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
+f1_keywords: jsrt/JsCreateRangeError
+helpviewer_keywords: JsCreateRangeError function
 ms.assetid: 0ab05de7-57af-4cfd-9aa5-0a69a893cc97
-caps.latest.revision: 12
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: a91dc60fdc5bccdf18f9877c541e36956c49927e
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# JsCreateRangeError-Funktion
-Erstellt ein neues JavaScript\-RangeError\-Fehlerobjekt.  
+# <a name="jscreaterangeerror-function"></a>JsCreateRangeError-Funktion
+Erstellt ein neues JavaScript-RangeError-Fehlerobjekt.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 STDAPI_(JsErrorCode) JsCreateRangeError(  
@@ -30,21 +32,21 @@ STDAPI_(JsErrorCode) JsCreateRangeError(
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `message`  
  Meldung für das Fehlerobjekt.  
   
  `error`  
  Das neue Fehlerobjekt.  
   
-## Rückgabewert  
- Der Code `JsNoError`, wenn der Vorgang erfolgreich war, andernfalls ein Fehlercode.  
+## <a name="return-value"></a>Rückgabewert  
+ Der Code `JsNoError` , wenn der Vorgang erfolgreich war, andernfalls ein Fehlercode.  
   
-## Hinweise  
- Erfordert einen Active Script\-Kontext.  
+## <a name="remarks"></a>Hinweise  
+ Erfordert einen Active Script-Kontext.  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  **Header:** jsrt.h  
   
-## Siehe auch  
- [Verweis \(JavaScript\-Laufzeit\)](../chakra-hosting/reference-javascript-runtime.md)
+## <a name="see-also"></a>Siehe auch  
+ [Referenz (JavaScript-Laufzeit)](../chakra-hosting/reference-javascript-runtime.md)

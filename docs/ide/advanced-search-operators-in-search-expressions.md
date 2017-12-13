@@ -1,71 +1,41 @@
 ---
-title: "Erweiterte Suchoperatoren in Suchausdrücken | Microsoft-Dokumentation"
-ms.custom: 
-ms.date: 06/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- Help Viewer 2.0, searching for keywords
-- Help Viewer 2.0, searching code
-- Help Viewer 2.0, searching code by programming language
-- Help Viewer 2.0, searching titles
-- searching code [Help Viewer 2.0]
-- searching titles [Help Viewer 2.0]
-ms.assetid: 0cdc1746-8481-45ec-9c53-d0d89cdcbd5e
-caps.latest.revision: 9
-author: kempb
-ms.author: kempb
-manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 07ff2413503209d6ade252ac89dbfbe2589e7e85
-ms.openlocfilehash: 7ad9c78134c337445a3e9180ad27234b7bcb07cc
-ms.contentlocale: de-de
-ms.lasthandoff: 06/02/2017
-
+redirect_url: /visualstudio/ide/logical-operators-in-search-expressions
+ms.openlocfilehash: fe896af873197c95a4b226396e0b6333fdc40cfa
+ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/07/2017
+---
+Title: "Erweiterte Suchoperationen in Suchausdrücken | Microsoft-Dokumentation" ms.custom: "" ms.date: "2.6.2017" ms.reviewer: "" ms.suite: "" ms.technology: 
+  - "vs-help-viewer" ms.tgt_pltfrm: "" ms.topic: "Artikel" helpviewer_keywords: 
+  - „Help Viewer, Schlüsselwortsuche“
+  - „Help Viewer, Codesuche“
+  - „Help Viewer, Suchcode nach Programmiersprache“
+  - „Help Viewer, Titelsuche“
+  - „Codesuche [Help Viewer]“
+  - „Titelsuche [Help Viewer]“ ms.assetid: 0cdc1746-8481-45ec-9c53-d0d89cdcbd5e caps.latest.revision: 9 author: "gewarren" ms.author: "gewarren" manager: ghogen
 ---
 # <a name="advanced-search-operators-in-search-expressions"></a>Erweiterte Suchoperatoren in Suchausdrücken
-Mithilfe von erweiterten Suchoperatoren in Help Viewer können Sie Ihre Suche nach Inhalten eingrenzen, indem Sie aus einfachen Suchausdrücken komplexere erstellen. Wie die folgende Tabelle zeigt, schränken diese Operatoren den Kontext ein, in dem eine Abfrage ausgeführt wird.  
-
-> [!WARNING]
->  Sie müssen erweiterte Suchoperatoren mit einem abschließenden Doppelpunkt eingeben. Es dürfen sich keine Leerzeichen zwischen dem Suchoperator und dem Doppelpunkt befinden, damit die Suchmaschine diesen erkennen kann.  
+Mit erweiterten Suchoperatoren im Help Viewer können Sie Ihre Suche nach Inhalt optimieren, indem Sie festlegen, in welchem Bereich des Themas nach dem Suchbegriff gesucht werden soll. In der folgenden Tabelle werden die vier verfügbaren erweiterten Suchoperatoren veranschaulicht.
 
 |Suchen nach|Verwendung|Beispiel|Ergebnis|  
 |-------------------|---------|-------------|------------|  
 |Eine Benennung im Titel des Themas|title:|title:binaryreader|Themen, die „Binaryreader“ im Titel enthalten.|  
 |Eine Benennung in einem Codebeispiel|code:|code:readdouble|Themen, die „readdouble“ in einem Codebeispiel enthalten.|  
-|Eine Benennung in einem Beispiel einer spezifischen Programmiersprache|code:vb:|code:vb:string|Themen, die „string“ in einem Visual Basic-Beispiel enthalten.|  
+|Eine Benennung in einem Beispiel einer spezifischen Programmiersprache|code:vb:|code:vb:string|Themen, die „string“ in einem Visual Basic-Codebeispiel enthalten.|  
 |Ein Thema, das einem bestimmten Index-Schlüsselwort zugeordnet ist|Schlüsselwort:|Schlüsselwort: readbyte|Themen, die dem Index-Schlüsselwort „readbyte“ zugeordnet sind.|  
 
- Sie können den Operator code: verwenden, um Inhalt zu einer beliebigen Programmiersprache zu suchen. Es werden allerdings nur Ergebnisse für Inhalt zurückgegeben, der mit einer spezifischen Programmiersprache markiert ist. Die folgende Tabelle enthält die Programmiersprachen, die dieser Operator unterstützt:  
+> [!WARNING]
+>  Sie müssen erweiterte Suchoperatoren mit einem abschließenden Doppelpunkt eingeben. Es dürfen sich keine Leerzeichen zwischen dem Suchoperator und dem Doppelpunkt befinden, damit die Suchmaschine diesen erkennen kann.    
 
-|Programmiersprache|Verwendung|  
-|--------------------------|---------|  
-|Visual Basic|code:vb<br /><br /> oder<br /><br /> code:visualbasic|  
-|C#|code:c#<br /><br /> oder<br /><br /> code:csharp|  
-|C++|code:cpp<br /><br /> oder<br /><br /> code:c++<br /><br /> oder<br /><br /> code:cplusplus|  
-|F#|code:f#<br /><br /> oder<br /><br /> code:fsharp|  
-|JavaScript|code:javascript<br /><br /> oder<br /><br /> code:js|  
-|XAML|code:xaml|  
+## <a name="programming-languages-for-code-examples"></a>Programmiersprachen für Codebeispiele
+Sie können den Codeoperator verwenden, um Inhalt zu einer beliebigen Programmiersprache zu suchen. Es werden allerdings nur Ergebnisse für Inhalt zurückgegeben, der mit einer spezifischen Programmiersprachenbezeichnung markiert ist. Verwenden Sie einen der folgenden Programmiersprachenwerte, um Beispiele für eine bestimmte Programmiersprache zurückzugeben:  
 
-## <a name="see-also"></a>Siehe auch  
- [Logische Operatoren in Suchausdrücken](../ide/logical-operators-in-search-expressions.md)   
- [Tipps zur Volltextsuche](../ide/full-text-search-tips.md)
-
+|Programmiersprache|Suchoperatorsyntax|  
+|--------------------|---------|  
+|Visual Basic|code:vb<br/>code:visualbasic|  
+|C#|code:c#<br/>code:csharp|  
+|C++|code:cpp<br/>code:c++<br/>code:cplusplus|  
+|F#|code:f#<br/>code:fsharp|  
+|JavaScript|code:javascript<br/>code:js|  
+|XAML|code:xaml|

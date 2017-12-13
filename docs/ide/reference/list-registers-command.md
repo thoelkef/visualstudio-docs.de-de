@@ -1,32 +1,32 @@
 ---
-title: "Befehl &quot;Registrierungen auflisten&quot; | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "debug.listregisters"
-helpviewer_keywords: 
-  - "Debug.ListRegisters-Befehl"
-  - "Registrierungen auflisten (Befehl)"
-  - "ListRegisters-Befehl"
+title: "Befehl „Register auflisten“ | Microsoft-Dokumentation"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: debug.listregisters
+helpviewer_keywords:
+- list registers command
+- Debug.ListRegisters command
+- ListRegisters command
 ms.assetid: 19a9d789-f6c9-46b3-b1f6-4934fc33e055
-caps.latest.revision: 7
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 83f4830b79c4492337abb6052b1b2803b34b5a9b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Befehl &quot;Registrierungen auflisten&quot;
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Zeigt den Wert der ausgewählten Registrierungen an und bietet die Möglichkeit, die Liste der anzuzeigenden Registrierungen zu ändern.  
+# <a name="list-registers-command"></a>Befehl "Registrierungen auflisten"
+Zeigt den Wert des ausgewählten Registers an und ermöglicht es Ihnen, die Liste der anzuzeigenden Register zu ändern  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 Debug.ListRegisters [/Display [{register|registerGroup}...]] [/List]  
@@ -34,36 +34,36 @@ Debug.ListRegisters [/Display [{register|registerGroup}...]] [/List]
 [/Unwatch [{register|registerGroup}...]]  
 ```  
   
-## Schalter  
- \/Display \[{`register`&#124;`registerGroup`}...\]  
- Zeigt die Werte von `register` oder `registerGroup` an.  Wenn `register` oder `registerGroup` nicht angegeben ist, wird die Standardliste mit Registrierungen angezeigt.  Wenn kein Schalter angegeben wird, ist das Verhalten identisch.  Beispiele:  
+## <a name="switches"></a>Schalter  
+ /Display [{`register`|`registerGroup`}...]  
+ Zeigt die Werte des angegebenen `register` oder `registerGroup` an. Wenn weder `register` noch `registerGroup` angegeben ist, wird die Standardregisterliste angezeigt. Wenn kein Schalter angegeben ist, ist das Verhalten identisch. Zum Beispiel:  
   
  `Debug.ListRegisters /Display eax`  
   
- der folgenden Syntax:  
+ für die folgende Syntax:  
   
  `Debug.ListRegisters eax`  
   
- \/List  
- Zeigt alle Registrierungsgruppen in der Liste an.  
+ /List  
+ Zeigt alle Registergruppen in der Liste an  
   
- \/Watch \[{`register`&#124;`registerGroup`}...\]  
- Fügt der Liste einen oder mehrere `register`\-Werte oder `registerGroup`\-Werte hinzu.  
+ /Watch [{`register`|`registerGroup`}...]  
+ Fügt der Liste einen oder mehrere `register`- oder `registerGroup`-Werte hinzu  
   
- \/Unwatch \[{`register`&#124;`registerGroup`}...\]  
- Entfernt einen oder mehrere `register`\-Werte oder `registerGroup`\-Werte aus der Liste.  
+ /Unwatch [{`register`|`registerGroup`}...]  
+ Entfernt einen oder mehrere `register`- oder `registerGroup`-Werte aus der Liste  
   
-## Hinweise  
+## <a name="remarks"></a>Hinweise  
  Der Alias `r` kann anstelle von `Debug.ListRegisters` verwendet werden.  
   
-## Beispiel  
- In diesem Beispiel wird der `Debug.ListRegisters`\-Alias `r` verwendet, um die Werte der Registrierungsgruppe `Flags` anzuzeigen.  
+## <a name="example"></a>Beispiel  
+ In diesem Beispiel wird das `Debug.ListRegisters`-Alias `r` verwendet, um die Werte der Registergruppe `Flags` anzuzeigen.  
   
 ```  
 r /Display Flags  
 ```  
   
-## Siehe auch  
- [Visual Studio\-Befehle](../../ide/reference/visual-studio-commands.md)   
- [Grundlagen des Debuggens: Fenster "Register"](../../debugger/debugging-basics-registers-window.md)   
+## <a name="see-also"></a>Siehe auch  
+ [Visual Studio-Befehle](../../ide/reference/visual-studio-commands.md)   
+ [Grundlagen des Debuggens: Fenster „Register“](../../debugger/debugging-basics-registers-window.md)   
  [Gewusst wie: Verwenden des Fensters "Register"](../../debugger/how-to-use-the-registers-window.md)

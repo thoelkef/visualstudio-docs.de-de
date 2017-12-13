@@ -1,52 +1,52 @@
 ---
-title: "GetAssemblyIdentity Task | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "http://schemas.microsoft.com/developer/msbuild/2003#GetAssemblyIdentity"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "MSBuild, GetAssemblyIdentity task"
-  - "GetAssemblyIdentity task [MSBuild]"
+title: GetAssemblyIdentity-Aufgabe | Microsoft-Dokumentation
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: http://schemas.microsoft.com/developer/msbuild/2003#GetAssemblyIdentity
+dev_langs:
+- VB
+- CSharp
+- C++
+- jsharp
+helpviewer_keywords:
+- MSBuild, GetAssemblyIdentity task
+- GetAssemblyIdentity task [MSBuild]
 ms.assetid: a977e072-37ad-4941-84a6-32a4483be55d
-caps.latest.revision: 8
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.openlocfilehash: 2a3d23ccfac56472fbec3f144f9d7809b1bacbf9
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# GetAssemblyIdentity Task
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Ruft die Assemblyidentitäten aus den angegebenen Dateien ab und gibt die Identitätsinformationen aus.  
+# <a name="getassemblyidentity-task"></a>GetAssemblyIdentity-Aufgabe
+Ruft die Assemblyidentitäten aus den angegebenen Dateien ab und gibt die Identitätsinformation aus  
   
-## Aufgabenparameter  
- In der folgenden Tabelle werden die Parameter der `GetAssemblyIdentity`\-Aufgabe beschrieben.  
+## <a name="task-parameters"></a>Aufgabenparameter  
+ In der folgenden Tabelle werden die Parameter der `GetAssemblyIdentity`-Aufgabe beschrieben.  
   
 |Parameter|Beschreibung|  
-|---------------|------------------|  
-|`Assemblies`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]`\-Ausgabeparameter.<br /><br /> Enthält die abgerufenen Assemblyidentitäten.|  
-|`AssemblyFiles`|Erforderlicher <xref:Microsoft.Build.Framework.ITaskItem>`[]`\-Parameter.<br /><br /> Gibt die Dateien an, aus denen Identitäten abgerufen werden sollen.|  
+|---------------|-----------------|  
+|`Assemblies`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]` -Ausgabeparameter.<br /><br /> Enthält die abgerufenen Assemblyidentitäten|  
+|`AssemblyFiles`|Erforderlicher <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter.<br /><br /> Gibt die Dateien an, aus denen Identitäten abgerufen werden sollen|  
   
-## Hinweise  
- Die vom `Assemblies`\-Parameter ausgegebenen Elemente enthalten Elementmetadateneinträge mit den Namen `Version`, `PublicKeyToken` und `Culture`.  
+## <a name="remarks"></a>Hinweise  
+ Die Elementausgabe des `Assemblies`-Parameters enthält Metadaten-Datensätze namens `Version`, `PublicKeyToken` und `Culture`.  
   
- Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Tasks.TaskExtension>\-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.Task>\-Klasse erbt.  Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  
+ Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Tasks.TaskExtension>-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.Task>-Klasse erbt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  
   
-## Beispiel  
- Im folgenden Beispiel wird die Identität aus den im `MyAssemblies`\-Element angegebenen Dateien abgerufen. Die abgerufenen Identitätsinformationen werden im `MyAssemblyIdentities`\-Element ausgegeben.  
+## <a name="example"></a>Beispiel  
+ Im folgenden Beispiel wird die Identität der im `MyAssemblies`-Element angegebenen Dateien abgerufen und im `MyAssemblyIdentities`-Element ausgegeben.  
   
-```  
+```xml  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
   
     <ItemGroup>  
@@ -64,6 +64,6 @@ Ruft die Assemblyidentitäten aus den angegebenen Dateien ab und gibt die Identi
 </Project>  
 ```  
   
-## Siehe auch  
- [Tasks](../msbuild/msbuild-tasks.md)   
- [Task Reference](../msbuild/msbuild-task-reference.md)
+## <a name="see-also"></a>Siehe auch  
+ [Tasks (Aufgaben)](../msbuild/msbuild-tasks.md)   
+ [Task Reference](../msbuild/msbuild-task-reference.md) (MSBuild-Aufgabenreferenz)

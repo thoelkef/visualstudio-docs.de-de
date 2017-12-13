@@ -4,8 +4,7 @@ ms.custom: H1Hack27Feb2017
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -23,34 +22,18 @@ helpviewer_keywords:
 - analyzing memory, JavaScript
 - memory analyzer, JavaScript
 ms.assetid: 78f8532b-7b4e-4b50-b8b7-68ca0926dd4e
-caps.latest.revision: 49
+caps.latest.revision: "49"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 24250d68042f77a653fe9ef36c743dd4f32ee57c
-ms.contentlocale: de-de
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: e52bef93735efc1ec5e43230ba46c7aa90cb67bc
+ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/11/2017
 ---
 # <a name="analyze-javascript-memory-usage-in-uwp-apps"></a>Analysieren von JavaScript-Speicherauslastung in UWP-Apps
-Die JavaScript-Speicheranalyse ist in Visual Studio verfügbar und soll Ihnen dabei helfen, die Speicherauslastung zu verstehen und Speicherverluste in Windows Store-Apps zu finden, die mit JavaScript für Windows erstellt wurden. Zu den unterstützten Apps zählen Apps für universelle Windows-Apps.
+Die JavaScript-Speicheranalyse ist in Visual Studio verfügbar und soll Ihnen dabei helfen, die Speicherauslastung zu verstehen und Speicherverluste in UWP-Apps zu finden, die mit JavaScript für Windows erstellt wurden. Zu den unterstützten Apps zählen Apps für universelle Windows-Apps.
   
  Der JavaScript-Arbeitsspeicheranalyse bietet folgende Möglichkeiten:  
   
@@ -85,15 +68,15 @@ Die JavaScript-Speicheranalyse ist in Visual Studio verfügbar und soll Ihnen da
  [Tipps zum Identifizieren von Arbeitsspeicherproblemen](#Tips)  
   
 ##  <a name="Run"></a> Ausführen der JavaScript-Speicheranalyse  
- Sie können die Speicheranalyse verwenden, wenn Sie über eine funktionierende Windows Store-App verfügen, die in Visual Studio geöffnet oder auf einem Computer installiert ist, auf dem [!INCLUDE[win8](../debugger/includes/win8_md.md)] oder höher ausgeführt wird.  
+ Sie können die Speicheranalyse verwenden, wenn Sie über eine funktionierende UWP-App verfügen, die in Visual Studio geöffnet oder auf einem Computer installiert ist, auf dem [!INCLUDE[win8](../debugger/includes/win8_md.md)] oder höher ausgeführt wird.  
   
 #### <a name="to-run-the-memory-analyzer"></a>So führen Sie die Speicheranalyse aus  
   
 1.  Öffnen Sie Visual Studio.  
   
-2.  Wenn Sie die App aus Visual Studio heraus ausführen, wählen Sie auf der Symbolleiste **Standard** in der Liste **Debugging starten** ein Debugziel für Ihr Projekt aus, entweder einen Windows Phone-Emulator oder für eine Windows Store-App **Lokaler Computer**, **Simulator**oder **Remotecomputer**.  
+2.  Wenn Sie die App aus Visual Studio heraus ausführen, klicken Sie auf der Symbolleiste **Standard** in der Liste **Debugging starten** auf ein Debugziel für Ihr Projekt: entweder einen Windows Phone-Emulator oder **Lokaler Computer**, **Simulator** oder **Remotecomputer** für eine UWP-App.  
   
-     Weitere Informationen über diese Optionen finden Sie unter [Ausführen von Apps aus Visual Studio](../debugger/run-store-apps-from-visual-studio.md).  
+     Weitere Informationen über diese Optionen finden Sie unter [Run apps from Visual Studio](../debugger/run-store-apps-from-visual-studio.md).  
   
 3.  Wählen Sie im Menü **Debuggen**, **Leistungsprofiler...** aus.  
   
@@ -105,11 +88,11 @@ Die JavaScript-Speicheranalyse ist in Visual Studio verfügbar und soll Ihnen da
   
     -   **Startprojekt**. Analysiert das aktuelle Startprojekt. Wenn Sie die Anwendung auf einem Remotecomputer ausführen, müssen Sie diese Option aktivieren. Dies ist die Standardauswahl.  
   
-    -   **Ausgeführte App**. Ermöglicht die Auswahl einer Windows Store-App aus einer Liste laufender Apps. Diese Option können Sie nicht verwenden, wenn Sie die App auf einem Remotecomputer ausführen.  
+    -   **Ausgeführte App**. Ermöglicht die Auswahl einer UWP-App aus einer Liste ausgeführter Apps. Diese Option können Sie nicht verwenden, wenn Sie die App auf einem Remotecomputer ausführen.  
   
          Verwenden Sie diese Option zum Analysieren der Speicherauslastung von auf Ihrem Computer ausgeführten Apps, wenn Sie keinen Zugriff auf den Quellcode haben.  
   
-    -   **Installierte App**. Ermöglicht die Auswahl einer installierten Windows Store-App zur Analyse. Diese Option können Sie nicht verwenden, wenn Sie die App auf einem Remotecomputer ausführen.  
+    -   **Installierte App**. Ermöglicht die Auswahl einer installierten UWP-App, die analysiert werden soll. Diese Option können Sie nicht verwenden, wenn Sie die App auf einem Remotecomputer ausführen.  
   
          Verwenden Sie diese Option zum Analysieren der Speicherauslastung von auf Ihrem Computer installierten Apps, wenn Sie keinen Zugriff auf den Quellcode haben. Diese Option kann auch nützlich sein, um die Speicherauslastung einer App außerhalb der eigenen App-Entwicklung zu analysieren.  
   
@@ -308,7 +291,7 @@ Die JavaScript-Speicheranalyse ist in Visual Studio verfügbar und soll Ihnen da
   
 -   **Alle Objekte in Momentaufnahme #\<Zahl>**. Bei dieser Filtereinstellung werden keine Objekte im Heap herausgefiltert.  
   
- Zum Anzeigen von Objektverweisen, die nicht dem aktuellen **Geltungsbereich**-Filter entsprechen, wählen Sie in der rechten oberen Ecke des Bereichs die Option **Nicht übereinstimmende Verweise anzeigen** in der Einstellungsliste ![Settings drop&#45;down list in memory analyzer](~/profiling/media/js_mem_settings.png "JS_Mem_Settings") aus. Wenn Sie diese Einstellung aktivieren, werden nicht übereinstimmende Verweise mit grauem Text dargestellt.  
+ Zum Anzeigen von Objektverweisen, die nicht dem aktuellen **Geltungsbereich**-Filter entsprechen, wählen Sie in der rechten oberen Ecke des Bereichs die Option **Nicht übereinstimmende Verweise anzeigen** in der Einstellungsliste ![Settings drop&#45;down list in memory analyzer](../profiling/media/js_mem_settings.png "JS_Mem_Settings") aus. Wenn Sie diese Einstellung aktivieren, werden nicht übereinstimmende Verweise mit grauem Text dargestellt.  
   
 > [!TIP]
 >  Es wird empfohlen, dass Sie die Schritte unter [Isolate a memory leak](#Isolate) befolgen und dann anhand der übrigen Objekte, die mit dem **Bereichsfilter** herausgefiltert wurden, die Objekte ermitteln, die für den Speicherverlust verantwortlich sind.  
@@ -316,7 +299,7 @@ Die JavaScript-Speicheranalyse ist in Visual Studio verfügbar und soll Ihnen da
 ##  <a name="FoldObjects"></a> Anzeigen von Objekten nach Dominator  
  In den Ansichten "Typen" und "Dominatoren" können Sie auswählen, ob Objekte in ihre Dominatoren gefaltet angezeigt werden (dies ist die Standardansicht auf der Registerkarte "Dominatoren"). Wenn diese Ansicht ausgewählt ist, werden Dominatoren nur in der Ansicht der obersten Ebene von Objekten angezeigt. (Objekte, die untergeordnete Elemente von nicht globalen Objekten sind, werden in der Ansicht der obersten Ebene ausgeblendet.) Bei einigen Apps kann dies klären, welche Objekte einen Speicherverlust verursachen, indem Störungen in den Daten reduziert werden.  
   
- Um die Anzeige von Objekten nach Dominator umzuschalten, wählen Sie die Schaltfläche **Objekte nach Dominator reduzieren** . ![Falten von Objekten in ihren Dominatoren](~/profiling/media/js_mem_fold_objects.png "JS_Mem_Fold_Objects")  
+ Um die Anzeige von Objekten nach Dominator umzuschalten, wählen Sie die Schaltfläche **Objekte nach Dominator reduzieren** . ![Falten von Objekten in ihren Dominatoren](../profiling/media/js_mem_fold_objects.png "JS_Mem_Fold_Objects")  
   
  Weitere Informationen zu Dominatoren finden Sie unter [Anzeigen von Momentaufnahmedetails](#SnapshotDetails).  
   
@@ -334,7 +317,7 @@ Die JavaScript-Speicheranalyse ist in Visual Studio verfügbar und soll Ihnen da
 > [!NOTE]
 >  Zirkelverweise werden mit einem Sternchen (*) und einer Informations-QuickInfo angezeigt und können nicht erweitert werden. Andernfalls würden sie Sie am Durchlaufen der Verweisstruktur und an der Bestimmung von Objekten hindern, die Arbeitsspeicher einnehmen.  
   
- Wenn Sie zusätzliche Hilfe bei der Identifizierung der entsprechenden Objekte benötigen, wählen Sie in der Einstellungsliste ![Settings drop&#45;down list in memory analyzer](~/profiling/media/js_mem_settings.png "JS_Mem_Settings") in der rechten oberen Ecke des oberen Bereichs die Option **Objekt-IDs anzeigen** aus. Durch diese Option werden Objekt-IDs neben den Objektnamen in der Liste **Bezeichner** angezeigt (die IDs werden in allen Ansichten, nicht nur in der Objektverweisliste, angezeigt). Objekte mit der gleichen ID sind freigegebene Verweise.  
+ Wenn Sie zusätzliche Hilfe bei der Identifizierung der entsprechenden Objekte benötigen, wählen Sie in der Einstellungsliste ![Settings drop&#45;down list in memory analyzer](../profiling/media/js_mem_settings.png "JS_Mem_Settings") in der rechten oberen Ecke des oberen Bereichs die Option **Objekt-IDs anzeigen** aus. Durch diese Option werden Objekt-IDs neben den Objektnamen in der Liste **Bezeichner** angezeigt (die IDs werden in allen Ansichten, nicht nur in der Objektverweisliste, angezeigt). Objekte mit der gleichen ID sind freigegebene Verweise.  
   
  Die folgende Abbildung zeigt die Objektverweisliste für ein ausgewähltes Element mit den angezeigten IDs an.  
   
@@ -343,7 +326,7 @@ Die JavaScript-Speicheranalyse ist in Visual Studio verfügbar und soll Ihnen da
 ##  <a name="BuiltInValues"></a> Anzeigen integrierter Objekte  
  Standardmäßig werden in den Ansichten "Dominatoren" und "Typen" nur die Objekte angezeigt, die in der App erstellt werden. Damit werden nicht benötigte Informationen herausgefiltert und auf die App bezogene Probleme isoliert. Manchmal ist es aber hilfreich, alle Objekte anzuzeigen, die von der JavaScript-Laufzeit für die App generiert werden.  
   
- Zum Anzeigen dieser Objekte wählen Sie in der Einstellungsliste ![Settings drop&#45;down list in memory analyzer](~/profiling/media/js_mem_settings.png "JS_Mem_Settings") in der rechten oberen Ecke des Bereichs die Option **Integrierte anzeigen** aus.  
+ Zum Anzeigen dieser Objekte wählen Sie in der Einstellungsliste ![Settings drop&#45;down list in memory analyzer](../profiling/media/js_mem_settings.png "JS_Mem_Settings") in der rechten oberen Ecke des Bereichs die Option **Integrierte anzeigen** aus.  
   
 ##  <a name="Save"></a> Speichern von Diagnosesitzungsdateien  
  Momentaufnahmen-Zusammenfassungen zu Diagnosezwecken sowie die zugeordneten Detailansichten werden als .diagsessions-Dateien gespeichert. Der**Projektmappen-Explorer** zeigt vorherige Diagnosesitzungen im Ordner "Diagnosesitzungen" an. Im **Projektmappen-Explorer**können Sie vorherige Sitzungen öffnen oder Dateien entfernen bzw. umbenennen.  
@@ -407,7 +390,7 @@ if (performance && performance.mark) {
   
 -   Sehen Sie sich den letzten Teil [dieses Video](http://channel9.msdn.com/Events/Build/2013/3-316) von der Build 2013-Konferenz über die JavaScript-Speicheranalyse an.  
   
--   Lesen Sie [Verwalten des Arbeitsspeichers in Windows Store-Apps](http://msdn.microsoft.com/magazine/jj651575.aspx).  
+-   Lesen Sie sich [Managing memory in UWP apps (Verwalten von Speicher in UWP-Apps)](http://msdn.microsoft.com/magazine/jj651575.aspx) durch.  
   
 -   Erwägen Sie, vorübergehend Code zu ändern, um Probleme zu isolieren. Auf diese Weise können Sie z. B. folgende Vorgänge durchführen:  
   

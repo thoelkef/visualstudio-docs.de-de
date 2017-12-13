@@ -1,64 +1,50 @@
 ---
-title: "Indexsuchtipps | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "hv_index"
-helpviewer_keywords: 
-  - "Help Viewer 2.0, Indexsuchtipps"
-  - "Indexsuchtipps [Help Viewer 2.0]"
-ms.assetid: f9ffa8e9-3ece-419d-a465-f9c2c21fd4ba
-caps.latest.revision: 6
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 6
+redirect_url: /visualstudio/ide/how-to-find-topics-in-the-index
+ms.openlocfilehash: cd82fd88987f74af1c2949ff8c352da3a0ea1c00
+ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/07/2017
 ---
-# Indexsuchtipps
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Sie können Informationen im Index suchen, indem Sie Schlüsselwörter eingeben.  In diesem Thema werden hilfreiche Methoden zum Durchsuchen der Hilfe mithilfe des Index vorgestellt.  
+title: "Tipps für die Inhaltsverzeichnissuche | Microsoft-Dokumentation" ms.custom: "" ms.date: "4.11.2016" ms.reviewer: "" ms.suite: "" ms.technology: 
+  - "vs-help-viewer" ms.tgt_pltfrm: "" ms.topic: "Artikel" f1_keywords: 
+  - "hv_index" helpviewer_keywords: 
+  - "inhaltsverzeichnissuchtips [Help Viewer]"
+  - "Help Viewer, Inhaltsverzeichnissuchtipps" ms.assetid: f9ffa8e9-3ece-419d-a465-f9c2c21fd4ba caps.latest.revision: 6 author: "gewarren" ms.author: "gewarren" manager: ghogen
+---
+# <a name="index-search-tips"></a>Inhaltsverzeichnissuchtipps
+Sie können Informationen im Inhaltsverzeichnis finden, indem Sie nach Schlüsselwörtern suchen. In diesem Thema werden nützliche Methoden zum Durchsuchen der Hilfe über das Inhaltsverzeichnis vorgestellt.  
   
-## Indexsuchtipps  
- Die Verwendung des Index ist ein einfacher Vorgang. Wenn Sie aber wissen, wie Sie Schlüsselwörter am besten eingeben, wird die Indexsuche produktiver.  
+## <a name="index-search-tips"></a>Inhaltsverzeichnissuchtipps  
+Das Verwenden des Indexes ist unkompliziert. Allerdings kann das Beherrschen der bestmöglichen Eingabe von Schlüsselwörtern Ihre Indexsuche effektiver machen.  
   
-### Allgemeine Richtlinien  
+### <a name="general-guidelines"></a>Allgemeine Richtlinien  
   
--   Führen Sie einen Bildlauf durch die Indexeinträge durch.  Nicht alle Themen werden auf die gleiche Weise indiziert, und das eine, das Ihnen helfen könnte, ist möglicherweise entgegen Ihrer Erwartung weiter oben oder unten in der Liste.  
+-   Scrollen Sie durch die Indexeinträge. Nicht alle Themen werden auf die gleiche Weise indiziert, und das Thema, das Ihnen am meisten helfen könnte, könnte sich in der Liste weiter oben oder unten als erwartet befinden.  
   
--   Verzichten Sie auf Artikel wie "ein\/eine\/eines" oder "der\/die\/das", da der Index sie ignoriert.  
+-   Lassen Sie Artikel wie „ein“ oder „die“ weg, da der Index sie ignoriert.  
   
--   Kehren Sie die Wörter um, die Sie eingeben, wenn Sie nicht die erwarteten Einträge finden.  
+-   Kehren Sie die Reihenfolge der eingegebenen Wörter um, wenn Sie die erwarteten Einträge nicht finden.  
   
-     Wenn beispielsweise durch Eingabe von "Debuggen von Inline\-Assemblycode" keine relevanten Einträge angezeigt werden, geben Sie versuchsweise "Assemblycode, Inline\-Debuggen" ein.  
+     Wenn z. B. für „Debuggen von Inlineassemblycode“ keine relevanten Einträge angezeigt werden, versuchen Sie es mit „Assemblycode, inline debuggen“.  
   
--   Verwenden Sie Filter mithilfe der Registerkarte **Index**, um die Anzahl von Ergebnissen zu verringern.  
+-   Verwenden Sie Filter mit der Registerkarte **Index**, um die Anzahl der Ergebnisse zu verringern.  
   
-### Syntaxtipps  
- Wenn Sie keinen Eintrag für die von Ihnen eingegebenen Wörter oder Ausdrücke finden, versuchen Sie Folgendes:  
+### <a name="syntax-tips"></a>Tipps zur Syntax  
+Wenn Sie keinen Eintrag zu dem von Ihnen eingegebenen Wort oder Satz finden, versuchen Sie Folgendes:  
   
--   Geben Sie die ersten Buchstaben oder den Stamm des Worts ein.  Durch Eingabe einer partiellen Zeichenfolge können Sie zu Themen gelangen, die mit Schlüsselwörtern indiziert wurden, welche im Singular oder Plural stehen.  
+-   Geben Sie die ersten Buchstaben bzw. den Stamm des Worts ein. Durch die Eingabe einer Teilzeichenfolge gelangen Sie zu Themen, die mit Stichwörtern im Singular oder Plural indiziert wurden.  
   
-     Geben Sie beispielsweise "Eigensch" ein, um nach "Eigenschaften" und "Eigenschaft" zu suchen.  
+     Geben Sie z.B. „Eigenschaft“, um die Suche nach „Eigenschaften“ und „Eigenschaft“ zu starten.  
   
--   Geben Sie die Infinitivform des Verbs für die Aufgabe ein, die Sie durchführen möchten.  Um spezifischere Indexeinträge zu suchen, fügen Sie ein Wort hinzu, welches genau das beschreibt, was Sie suchen.  
+-   Geben Sie Partizipformen des Verbs für die Aufgabe ein, die Sie erledigen möchten. Um spezifischere Indexeinträge zu finden, fügen Sie ein Wort an, das genau das beschreibt, was Sie suchen.  
   
-     Geben Sie beispielsweise "Ausführen" ein, um eine höhere Anzahl von Einträgen abzurufen. Geben Sie "Ausführen von Programmen" ein, wenn Sie weniger Einträge abrufen möchten.  
+     Geben Sie zum Beispiel „ausgeführt“ ein, um mehr Einträge zu erhalten, oder „ausgeführte Programme“, um weniger Einträge abzurufen.  
   
--   Geben Sie einzelne Adjektive ein.  Um die Ergebnisse einzugrenzen, fügen Sie ein Wort hinzu, welches genau das beschreibt, was Sie suchen.  
+-   Geben Sie eigenständige Adjektive ein. Um die Ergebnisse zu begrenzen, fügen Sie ein Wort an, das genau das beschreibt, was Sie suchen.  
   
-     Geben Sie beispielsweise "COM\+" ein, um eine hohe Anzahl von Einträgen abzurufen. Geben Sie "COM\+ Komponenten" ein, wenn Sie weniger Einträge abrufen möchten.  
+     Geben Sie beispielsweise „COM +“ ein, um eine Vielzahl von Einträgen zu erhalten, oder „COM+-Komponenten“, um weniger Einträge abzurufen.  
   
--   Geben Sie ein Synonym des Worts oder Verbs ein, nach dem Sie suchen.  
+-   Geben Sie ein Synonym des Worts oder Verbs ein, das Sie suchen.  
   
-     Wenn Sie beispielsweise die Infinitivform "Erstellen" eingegeben haben, probieren Sie es stattdessen mit "Erstellung".  
-  
-## Siehe auch  
- [Tipps zur Volltextsuche](../ide/full-text-search-tips.md)   
- [Suchen nach Informationen](../ide/locate-information.md)
+     Wenn Sie beispielsweise den Begriff „Erstellung“ eingegeben haben, versuchen Sie es stattdessen mit „erstellen“.  

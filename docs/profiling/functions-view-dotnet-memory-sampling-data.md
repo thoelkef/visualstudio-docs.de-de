@@ -1,48 +1,47 @@
 ---
-title: "Funktionsansicht - .NET-Speichersamplingdaten im Profiler | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Funktionsansicht"
+title: 'Funktionsansicht: .NET-Speichersamplingdaten | Microsoft-Dokumentation'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: Functions view
 ms.assetid: 5d9c6302-2ffd-430e-9535-13ce795f9f7c
-caps.latest.revision: 9
-caps.handback.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: bd6473f0b0ca09369ff81d028ea80dc3f55bfb66
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Funktionsansicht - .NET-Speichersamplingdaten im Profiler
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-In der Funktionsansicht für Profilerstellungsdaten zur .NET\-Speicherbelegung, die mit der Samplingmethode gesammelt wurden, werden die Funktionen aufgeführt, die während der Profilerstellung Speicher belegt haben. Außerdem wird die Größe und Anzahl der Zuordnungen angegeben.  
+# <a name="functions-view---net-memory-sampling-data"></a>Funktionsansicht: .NET-Speichersamplingdaten
+In der Funktionsansicht der Profilerstellungsdaten für die .NET-Speicherbelegung, die mithilfe der Samplingmethode erfasst wurden, werden sowohl die Funktionen angezeigt, die während der Profilerstellungsausführung Arbeitsspeicher belegt haben, als auch die Größe und die Anzahl der Speicherbelegungen.  
   
-|Spalte|**Beschreibung**|  
-|------------|----------------------|  
-|**Prozess\-ID**|Die Prozess\-ID \(PID\) der Profilerstellung.|  
+|Spalte|Beschreibung|  
+|------------|-----------------|  
+|**Prozess-ID**|Die Prozess-ID (PID) der Profilerstellung.|  
 |**Prozessname**|Der Prozessname.|  
 |**Modulname**|Der Name des Moduls, das die Funktion enthält.|  
 |**Modulpfad**|Der Pfad des Moduls, das die Funktion enthält.|  
 |**Quelldatei**|Die Quelldatei, die die Definition der Funktion enthält.|  
-|**Function Name**|Der vollqualifizierte Name der Funktion.|  
+|**Funktionsname**|Der vollqualifizierte Name der Funktion.|  
 |**Funktionszeilennummer**|Die Zeilennummer des Anfangs dieser Funktion in der Quelldatei.|  
-|**Function Address**|Die Adresse der Funktion.|  
-|**Inclusive Allocations**|Die Gesamtzahl der Objekte, die in dieser Funktion und den zugehörigen untergeordneten Funktionen zugeordnet wurden.|  
-|**Inklusive Zuordnungen in %**|Der Prozentsatz aller Objekte, die während der Profilerstellung zugeordnet wurden und inklusive Belegungen dieser Funktion waren.|  
-|**Exclusive Allocations**|Die Anzahl der Objekte, die während der direkten Ausführung der Funktion auf der obersten Ebene der Aufrufliste erstellt wurden.  Diese Zahl schließt keine in untergeordneten Funktionen erstellten Objekte ein.|  
-|**Exklusive Zuordnungen in %**|Der Prozentsatz aller Objekte, die während der Profilerstellung zugeordnet wurden und exklusive Belegungen dieser Funktion waren.|  
-|**Inklusive Bytes**|Die Anzahl der Bytes im Speicher, die von dieser Funktion und seinen untergeordneten Funktionen belegt wurden.|  
-|**Inklusive Bytes in %**|Der Prozentsatz aller Bytes des Arbeitsspeichers, die während der Profilerstellung belegt wurden und inklusive Bytes dieser Funktion waren.|  
-|**Exklusive Bytes**|Die Anzahl der Bytes im Speicher, die von dieser Funktion, jedoch nicht von den zugehörigen untergeordneten Funktionen belegt wurden.|  
-|**Exklusive Bytes in %**|Der Prozentsatz aller Bytes des Arbeitsspeichers, die während der Profilerstellung belegt wurden und exklusive Bytes dieser Funktion waren.|  
+|**Funktionsadresse**|Die Adresse der Funktion.|  
+|**Inklusive Speicherbelegungen**|Die Gesamtanzahl der Objekte, die in dieser Funktion und ihren untergeordneten Funktionen Speicher belegt haben.|  
+|**Inklusive Speicherbelegungen in %**|Der Prozentsatz aller Objekte, die während der Profilerstellung Speicher belegt haben und inklusive Belegungen dieser Funktion waren.|  
+|**Exklusive Zuordnungen**|Die Anzahl der Objekte, die während der Ausführung der Funktion am Anfang der Aufrufliste erstellt wurden. Diese Zahl schließt nicht die Objekte mit ein, die in untergeordneten Funktionen erstellt wurden.|  
+|**Exklusive Zuordnungen %**|Der Prozentsatz aller Objekte, die während der Profilerstellung Speicher belegt haben und exklusive Belegungen dieser Funktion waren.|  
+|**Inklusive Bytes in %**|Die Anzahl der Bytes im Arbeitsspeicher, die von dieser Funktion und ihren untergeordneten Funktionen belegt wurden.|  
+|**Inklusive Bytes in %**|Der Prozentsatz aller Bytes im Arbeitsspeicher, die während der Profilerstellung belegt wurden und inklusive Bytes dieser Funktion waren.|  
+|**Exklusive Bytes**|Die Anzahl der Bytes im Arbeitsspeicher, die von dieser Funktion, nicht jedoch von ihren untergeordneten Funktionen belegt wurden.|  
+|**Exklusive Bytes %**|Der Prozentsatz aller Bytes im Arbeitsspeicher, die während der Profilerstellung belegt wurden und exklusive Belegungen dieser Funktion waren.|  
   
-## Siehe auch  
- [Funktionsansicht \- Instrumentation](../profiling/functions-view-dotnet-memory-instrumentation-data.md)   
+## <a name="see-also"></a>Siehe auch  
+ [Funktionsansicht - Instrumentierung](../profiling/functions-view-dotnet-memory-instrumentation-data.md)   
  [Funktionsansicht](../profiling/functions-view-sampling-data.md)   
  [Funktionsansicht](../profiling/functions-view-instrumentation-data.md)

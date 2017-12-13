@@ -1,9 +1,8 @@
 ---
 title: "Live Unit Testing – häufig gestellte Fragen | Microsoft-Dokumentation"
-ms.date: 2017-08-15
+ms.date: 2017-10-03
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -12,47 +11,54 @@ helpviewer_keywords:
 ms.assetid: 61baf3bb-646f-4c5a-b7c0-a6bdff68f21c
 author: rpetrusha
 ms.author: ronpet
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: de3ddc4288f2e14f0657f6bfb0ff3ee49ff7b5c9
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: c6a2c3b313aca87a77f7ad5b12a3d99c82c042b2
-ms.contentlocale: de-de
-ms.lasthandoff: 09/06/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="live-unit-testing-frequently-asked-questions"></a>Live Unit Testing – häufig gestellte Fragen
 
-## <a name="whats-new-in-live-unit-testing-for-visual-studio-2017-version-153"></a>Was gibt es Neues beim Live Unit Testing für Visual Studio 2017 Version 15.3? 
+## <a name="live-unit-testing-is-improved-and-enhanced-regularly-how-can-i-find-information-about-the-latest-new-features-and-enhancements"></a>Live Unit Testing wird regelmäßig verbessert und erweitert. Wie finde ich Informationen zu den neuesten Features und Verbesserungen?
 
 **Antwort:**
 
-- Die Unterstützung für Verbesserungen am .NET Core/.NET-Standard und der Leistung sind die zwei bedeutenden Verbesserungen. Wie Sie merken werden, ist die Leistung nach dem ersten vollständigen Build und der ersten Testausführung unter Live Unit Testing erheblich schneller. Sie werden auch bei den nachfolgenden Starts von Live Unit Testing in der gleichen Projektmappe deutliche Leistungsverbesserungen wahrnehmen. Es werden nun von Live Unit Testing generierte Daten aufbewahrt und so oft wie möglich für Aktualitätsprüfungen wiederverwendet. Neben diesen wichtigen Ergänzungen enthält Live Unit Testing die folgenden Verbesserungen: 
+Weitere Informationen zu neuen Features und Verbesserungen für Live Unit Testing ab Visual Studio 2017 Version 15.3 finden Sie unter [What‘s New in Live Unit Testing (Neuerungen in Live Unit Testing)](live-unit-testing-whats-new.md).
 
-  - Testmethoden werden jetzt mithilfe eines Becherglassymbols von regulären Methoden unterschieden. Ein leeres Becherglas bedeutet, dass der jeweilige Test nicht in Live Unit Testing enthalten ist. 
 
-  - Wenn Sie im UI-Popupfenster eines Abdeckungssymbols für Live Unit Testing auf eine Testmethode klicken, haben Sie die Möglichkeit, den Test direkt in diesem Ausführungskontext im UI-Fenster zu debuggen, ohne den Code-Editor verlassen zu müssen. Dies ist äußerst praktisch, insbesondere wenn Sie einen fehlgeschlagenen Test prüfen.  
+## <a name="what-test-frameworks-does-live-unit-testing-support-and-what-are-the-minimum-supported-versions"></a>Welche Testframeworks werden von Live Unit Testing unterstützt und welche sind die unterstützten Mindestversionen?  
 
-  - Mehrere zusätzliche konfigurierbare Optionen wurden „Extras/Optionen/Live Unit Testing/Allgemein“ hinzugefügt. Sie können für den für die Live Unit Testing verwendeten Arbeitsspeicher eine Obergrenze festlegen. Außerdem lässt sich der Dateipfad für persistente Live Unit Testing-Daten für die geöffnete Lösung angeben. 
+**Antwort:**
 
-  - Mehrere zusätzliche Menüelemente wurden unter dem Menübalken von „Test/Live Unit Testing“ hinzugefügt. **Bereinigt zurücksetzen** löscht die persistenten Daten und generiert sie neu. **Option** navigiert zu „Extras/Optionen/Live Unit Testing/Allgemein“.
-  
-  - Sie können nun die folgenden Attribute verwenden, um im Quellcode anzugeben, dass Sie bestimmte Testmethoden aus Live Unit Testing ausschließen möchten:
-    - Für xUnit: `[Trait("Category", "SkipWhenLiveUnitTesting")]`
-    - Für NUnit: `[Category("SkipWhenLiveUnitTesting")]`
-    - Für MSTest: `[TestCategory("SkipWhenLiveUnitTesting")]`
+Live Unit Testing kann mit den drei gängigen Frameworks für Komponententests verwendet werden, die in der folgenden Tabelle aufgeführt sind. Die unterstützte Mindestversion der Adapter und Frameworks ist ebenfalls in der Tabelle aufgeführt. Die Frameworks für Komponententests sind auf „NuGet.org“ verfügbar.
+ 
+<table> 
+<tr>
+   <th>Testframework</th>
+   <th>Mindestversion des Visual Studio-Adapters</th>
+   <th>Mindestversion des Frameworks</th>
+</tr>
+<tr>
+   <td>xUnit.net</td>
+   <td> xunit.runner.visualstudio, Version 2.2.0-beta3-build1187</td>
+   <td>xUnit 1.9.2</td> 
+</tr>
+<tr>
+   <td>NUnit</td>
+   <td>NUnit3TestAdapter, Version 3.5.1</td>  
+   <td>NUnit, Version 3.5.0</td>
+</tr>
+<tr>
+   <td>MSTest</td>
+   <td>MSTest.TestAdapter 1.1.4-preview</td>
+   <td>MSTest.TestFramework 1.0.5-preview</td>
+</tr>
+</table>
+
+Wenn Sie ältere auf MSTest-basierenden Testprojekte haben, die sich auf `Microsoft.VisualStudio.QualityTools.UnitTestFramework` beziehen, und Sie nicht auf die neueren MSTest-NuGet-Pakete umsteigen möchten, sollten Sie auf Visual Studio 2017 Version 15.4 upgraden. 
+
+In einigen Fällen müssen Sie explizit die NuGet-Pakete wiederherstellen, auf die die Projekte in der Projektmappe verweisen, damit Live Unit Testing funktioniert. Hierzu können Sie entweder die Projektmappe explizit erstellen (wählen Sie im obersten Visual Studio-Menü **Erstellen** und dann **Projektmappe neu erstellen** aus) oder Pakete in der Projektmappe wiederherstellen (klicken Sie mit der rechten Maustaste auf die Projektmappe, und wählen Sie **NuGet-Pakete wiederherstellen** aus), bevor Sie Living Unit Testing aktivieren. 
+
 
 ## <a name="does-live-unit-testing-work-with-net-core"></a>Kann Live Unit Testing mit .NET Core verwendet werden?  
 
@@ -262,4 +268,3 @@ Sie haben mehrere Möglichkeiten, um ausführlichere Protokolle zu sammeln:
 
 [Live-Komponententests](live-unit-testing.md)
  
-

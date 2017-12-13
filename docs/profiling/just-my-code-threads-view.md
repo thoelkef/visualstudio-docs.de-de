@@ -1,33 +1,32 @@
 ---
-title: "Nur mein Code (Threadansicht) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.cv.threads.jmc"
-helpviewer_keywords: 
-  - "Nebenläufigkeitsschnellansicht, Nur mein Code (Threadansicht)"
+title: Nur eigenen Code (Threadansicht) | Microsoft-Dokumentation
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vs.cv.threads.jmc
+helpviewer_keywords: Concurrency Visualizer, Just My Code (Threads View)
 ms.assetid: a9ac8a2c-9d99-4207-8ed4-e87f033f440d
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: c9cc9eea737f11c8ec28e33414f40a981848e123
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Nur mein Code (Threadansicht)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Wenn Sie diese Option aktivieren, filtern Sie die Aufrufliste so, dass nur Ihr Code sowie eine Ebene aufgerufener Funktionen angezeigt werden.  
+# <a name="just-my-code-threads-view"></a>Nur mein Code (Threadansicht)
+Mit dieser Option filtern Sie die Aufrufliste nach Ihrem Code sowie der Ebene der aufgerufenen Funktionen.  
   
- Durch Aktivierung dieser Option können Sie die Komplexität der Aufrufliste erheblich reduzieren und möglicherweise auch die Diagnose eines bestimmten Problems vereinfachen.  
+ Durch Aktivieren dieser Option können Sie die Komplexität der Aufrufliste erheblich reduzieren, und es wird möglicherweise einfacher, ein bestimmtes Problem zu diagnostizieren.  
   
- In manchen Fällen wird bei Aktivierung dieser Option der blockierende Aufruf herausgefiltert.  Wenn Sie für diese Feststellung vollständige Details zur Aufrufliste benötigen, deaktivieren Sie diese Option, um die vollständige Aufrufliste verfügbar zu machen.  
+ In einigen Fällen kann durch diese Option auch der blockierende Aufruf herausgefiltert werden. Wenn Sie für diese Entscheidung die vollständigen Details zur Aufrufliste benötigen, löschen Sie diese Option, um die vollständige Aufrufliste verfügbar zu machen.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Threadansicht](../profiling/threads-view-parallel-performance.md)   
  [Prozentsatz der Rauschunterdrückung](../profiling/noise-reduction-percentage.md)

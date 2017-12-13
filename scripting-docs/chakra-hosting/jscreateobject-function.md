@@ -1,27 +1,29 @@
 ---
-title: "JsCreateObject-Funktion | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
-f1_keywords: 
-  - "jsrt/JsCreateObject"
-helpviewer_keywords: 
-  - "JsCreateObject-Funktion"
+title: JsCreateObject-Funktion | Microsoft-Dokumentation
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
+f1_keywords: jsrt/JsCreateObject
+helpviewer_keywords: JsCreateObject function
 ms.assetid: 6c1d01a4-9254-443e-b974-6f0b0c861ca2
-caps.latest.revision: 12
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 3fd52048bb50a6f7ae98059dd2ba75d6cbae15cb
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# JsCreateObject-Funktion
+# <a name="jscreateobject-function"></a>JsCreateObject-Funktion
 Erstellt ein neues Objekt.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 STDAPI_(JsErrorCode) JsCreateObject(  
@@ -29,18 +31,18 @@ STDAPI_(JsErrorCode) JsCreateObject(
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `object`  
  Das neue Objekt.  
   
-## Rückgabewert  
- Der Code `JsNoError`, wenn der Vorgang erfolgreich war, andernfalls ein Fehlercode.  
+## <a name="return-value"></a>Rückgabewert  
+ Der Code `JsNoError` , wenn der Vorgang erfolgreich war, andernfalls ein Fehlercode.  
   
-## Hinweise  
- Erfordert einen Active Script\-Kontext.  
+## <a name="remarks"></a>Hinweise  
+ Erfordert einen Active Script-Kontext.  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  **Header:** jsrt.h  
   
-## Siehe auch  
- [Verweis \(JavaScript\-Laufzeit\)](../chakra-hosting/reference-javascript-runtime.md)
+## <a name="see-also"></a>Siehe auch  
+ [Referenz (JavaScript-Laufzeit)](../chakra-hosting/reference-javascript-runtime.md)

@@ -1,62 +1,63 @@
 ---
-title: "Gewusst wie: Verwenden von umschlie&#223;enden Codeausschnitten | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Ausschnitte [C#], Verwenden von Umschließen mit"
-  - "Umschließen mit Ausschnitten"
+title: "Vorgehensweise: Verwenden von umschließenden Codeausschnitten | Microsoft-Dokumentation"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- Surround-with snippets
+- snippets [C#], using Surround With
 ms.assetid: 23e5288e-7897-417a-9ded-cf60dfc889ee
-caps.latest.revision: 18
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 18
+caps.latest.revision: "18"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 775cafd5f8fc5bb2908447d7f34b13e0377d6711
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Gewusst wie: Verwenden von umschlie&#223;enden Codeausschnitten
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-In den folgenden Verfahren wird die Verwendung von umschließenden Codeausschnitten beschrieben.  Umschließende Codeausschnitte können auf drei verschiedene Weisen aufgerufen werden: über eine Tastenkombination, über das Menü Bearbeiten und über das Kontextmenü.  
+# <a name="how-to-use-surround-with-code-snippets"></a>Gewusst wie: Verwenden von umschließenden Codeausschnitten
+In den folgenden Vorgehensweisen wird beschrieben, wie Sie umschließende Codeausschnitte verwenden. Umschließende Codeausschnitte sind auf drei verschiedene Arten verfügbar: über Tastenkombinationen, über das Menü „Bearbeiten“ und über das Kontextmenü.  
   
-### So greifen Sie über eine Tastenkombination auf umschließende Codeausschnitte zu  
+### <a name="to-use-surround-with-code-snippets-through-keyboard-shortcut"></a>So verwenden Sie umschließende Codeabschnitte mit Tastenkombinationen  
   
-1.  Öffnen Sie in der integrierten Entwicklungsumgebung \(IDE\) von Visual Studio die Datei, die bearbeitet werden soll.  
+1.  Öffnen Sie in der Visual Studio-IDE die Datei, die Sie bearbeiten möchten.  
   
-2.  Wählen Sie im Code\-Editor den Text aus, der eingeschlossen werden soll.  
+2.  Wählen Sie im Code-Editor den zu umschließenden Text aus.  
   
-3.  Drücken Sie STRG\+K, STRG\+S.  
+3.  Geben Sie STRG+K, STRG+S ein.  
   
-4.  Wählen Sie den Codeausschnitt mit der Maus aus der Codeausschnittliste aus, oder geben Sie den Namen des Codeausschnitts ein, und drücken Sie die TAB\- oder EINGABETASTE.  
+4.  Wählen Sie mit der Maus einen Codeausschnitt aus der Liste der Codeausschnitte aus, oder geben Sie den Namen des Ausschnitts ein, und drücken Sie die TAB- oder die EINGABETASTE.  
   
-### So greifen Sie über das Menü Bearbeiten auf umschließende Codeausschnitte zu  
+### <a name="to-use-surround-with-code-snippets-through-the-edit-menu"></a>So verwenden Sie umschließende Codeabschnitte über das Menü „Bearbeiten“  
   
-1.  Öffnen Sie in der integrierten Entwicklungsumgebung \(IDE\) von Visual Studio die Datei, die bearbeitet werden soll.  
+1.  Öffnen Sie in der Visual Studio-IDE die Datei, die Sie bearbeiten möchten.  
   
-2.  Wählen Sie im Code\-Editor den Text aus, der eingeschlossen werden soll.  
+2.  Wählen Sie im Code-Editor den zu umschließenden Text aus.  
   
-3.  Wählen Sie im Menü **Bearbeiten** die Option **IntelliSense** und dann den Befehl **Umschließen mit** aus.  
+3.  Klicken Sie im Menü **Bearbeiten** auf **IntelliSense** und dann auf **Umgeben mit**.  
   
-4.  Wählen Sie den Codeausschnitt im Codeausschnitteinfüger aus, und drücken Sie dann die TAB\- oder EINGABETASTE.  
+4.  Wählen Sie den Codeausschnitt im Codeausschnitteinfüger aus, und drücken Sie dann die TAB- oder die EINGABETASTE.  
   
-     Alternativ können Sie den Namen des Codeausschnitts eingeben und dann die TAB\- oder EINGABETASTE drücken.  
+     Alternativ können Sie den Namen des Codeausschnitts eingeben und dann die TAB- oder die EINGABETASTE drücken.  
   
-### So greifen Sie über das Kontextmenü auf umschließende Codeausschnitte zu  
+### <a name="to-use-surround-with-code-snippets-through-the-context-menu"></a>So verwenden Sie umschließende Codeabschnitte über das Kontextmenü  
   
-1.  Öffnen Sie in der integrierten Entwicklungsumgebung \(IDE\) von Visual Studio die Datei, die bearbeitet werden soll.  
+1.  Öffnen Sie in der Visual Studio-IDE die Datei, die Sie bearbeiten möchten.  
   
-2.  Wählen Sie im Code\-Editor den Text aus, der eingeschlossen werden soll.  
+2.  Wählen Sie im Code-Editor den zu umschließenden Text aus.  
   
-3.  Klicken Sie mit der rechten Maustaste auf den markierten Text, und wählen Sie dann im Kontextmenü den Befehl **Umschließen mit** aus.  
+3.  Klicken Sie mit der rechten Maustaste auf den ausgewählten Text, und klicken Sie anschließend auf den Befehl **Umschließen mit** im Kontextmenü.  
   
-4.  Wählen Sie den Codeausschnitt im Codeausschnitteinfüger aus, und drücken Sie dann die TAB\- oder EINGABETASTE.  
+4.  Wählen Sie den Codeausschnitt im Codeausschnitteinfüger aus, und drücken Sie dann die TAB- oder die EINGABETASTE.  
   
-     Alternativ können Sie den Namen des Codeausschnitts eingeben und dann die TAB\- oder EINGABETASTE drücken.  
+     Alternativ können Sie den Namen des Codeausschnitts eingeben und dann die TAB- oder die EINGABETASTE drücken.  
   
-## Siehe auch  
- [Visual C\#\-Codeausschnitte](../ide/visual-csharp-code-snippets.md)   
+## <a name="see-also"></a>Siehe auch  
+ [Visual C#-Codeausschnitte](../ide/visual-csharp-code-snippets.md)   
  [Codeausschnittauswahl](../ide/reference/code-snippet-picker.md)

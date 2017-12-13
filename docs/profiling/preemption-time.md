@@ -1,36 +1,35 @@
 ---
-title: "Zeit f&#252;r die vorzeitige Entfernung | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.cv.threads.timeline.preemption"
-helpviewer_keywords: 
-  - "Parallelitätsschnellansicht, Zeit für die vorzeitige Entfernung"
+title: "Zeit für die vorzeitige Entfernung | Microsoft-Dokumentation"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vs.cv.threads.timeline.preemption
+helpviewer_keywords: Concurrency Visualizer, Preemption Time
 ms.assetid: 6b78f91e-a006-440c-83fb-e7368040951d
-caps.latest.revision: 6
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 6
+caps.latest.revision: "6"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 447229fd3eeb0ded2b8d6ec56716c4ec95c36661
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Zeit f&#252;r die vorzeitige Entfernung
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Diese Segmente in der Zeitachse sind der Blockierungszeit zugeordnet, die als vorzeitige Entfernung kategorisiert ist.  Diese Kategorie bedeutet, dass ein Thread aus einem der folgenden Gründe beendet wird:  
+# <a name="preemption-time"></a>Zeit für die vorzeitige Entfernung
+Diese Segmente in der Zeitachse werden der Blockierungszeit zugeordnet, die als Speicherverwaltungszeit kategorisiert ist. Diese Kategorie impliziert, dass ein Thread aus einem der folgenden Gründe deaktiviert wird:  
   
--   Der Scheduler hat ihn durch einen Thread mit höherer Priorität ersetzt.  
+-   Der Planer hat ihn durch einen Thread mit höherer Priorität ersetzt  
   
--   Das Ausführungsquantum des Threads ist abgelaufen, und andere Threads waren für die Ausführung bereit.  
+-   Das Ausführungsquantum des Threads ist abgelaufen, und andere Threads konnten ausgeführt werden  
   
- Während dieser Zeit wurde ein Thread von einem Kernelwartevorgang blockiert. Der Grund hierfür war, dass die Parallelitätsschnellansicht als vorzeitige Entfernung zählt.  Segmente mit vorzeitiger Entfernung starten, wenn ein Thread aus einem logischen Kern geschoben wird, und enden, wenn dieser Thread die Ausführung fortsetzt.  
+ Gleichzeitig wurde ein Thread aufgrund einer Kernelwarteursache blockiert, die die Parallelitätsschnellansicht als vorzeitige Entfernung erfasst. Die vorzeitige Entfernung der Segmente beginnt, wenn ein Thread aus einem logischen Kern übertragen wird, und endet, wenn der Thread mit der Ausführung fortfährt.  
   
- Die QuickInfo für ein vorzeitig entferntes Segment zeigt den Namen des Prozesses oder Threads an, der die vorzeitige Entfernung verursacht hat.  Dies bedeutet nicht jedoch, dass der übernehmende Prozess oder Thread während des Zeitraums mit der vorzeitigen Entfernung ausgeführt wurde.  
+ Die QuickInfo für ein vorzeitig entferntes Segment zeigt den Namen des Prozesses oder Threads an, durch die die vorzeitige Entfernung ausgelöst wurde. Dies impliziert allerdings nicht, dass der Prozess oder der Thread, der den Vorgang übernommen hat, auch wirklich während der vorzeitigen Entfernung ausgeführt wurde.  
   
-## Siehe auch  
- [Threadansicht](../profiling/threads-view-parallel-performance.md)
+## <a name="see-also"></a>Siehe auch  
+ [Threads View (Threadansicht)](../profiling/threads-view-parallel-performance.md)

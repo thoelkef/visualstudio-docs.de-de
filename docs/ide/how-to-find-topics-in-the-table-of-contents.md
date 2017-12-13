@@ -1,58 +1,59 @@
 ---
-title: "Gewusst wie: Suchen nach Themen im Inhaltsverzeichnis | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "hv_contents"
-helpviewer_keywords: 
-  - "Inhaltsregisterkarte [Help Viewer 2.0]"
-  - "Help Viewer 2.0, Inhaltsregisterkarte"
-  - "Help Viewer 2.0, Inhaltsverzeichnis filtern"
-  - "Inhaltsverzeichnis filtern [Help Viewer 2.0]"
+title: Verwenden des Inhaltsverzeichnisses von Visual Studio Help Viewer | Microsoft-Dokumentation
+ms.custom: 
+ms.date: 11/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-help-viewer
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: hv_contents
+helpviewer_keywords:
+- Help Viewer, table of contents filtering
+- Help Viewer, Contents tab
+- Contents tab [Help Viewer]
+- table of contents filtering [Help Viewer]
 ms.assetid: 8b98464d-2b05-4710-ad68-5647e78c6b7b
-caps.latest.revision: 12
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: b0ec26ec3305cf56f5b03312816737ed7131f4d2
+ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/07/2017
 ---
-# Gewusst wie: Suchen nach Themen im Inhaltsverzeichnis
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Auf der Registerkarte **Inhalt** können Sie das Inhaltsverzeichnis verwenden, um Informationen zu suchen.  Das Inhaltsverzeichnis ist eine erweiterbare Liste, die alle Themen in den installierten Büchern enthält.  Informationen zur Navigation durch das Inhaltsverzeichnis mithilfe von Tastenkombinationen finden Sie unter [Tastenkombinationen \(Help Viewer\)](../ide/shortcut-keys-help-viewer.md).  
+# <a name="how-to-find-topics-in-the-table-of-contents"></a>Vorgehensweise: Suchen nach Themen im Inhaltsverzeichnis
+Auf der Registerkarte **Inhalt** können Sie das Inhaltsverzeichnis verwenden, um Informationen zu suchen. Das Inhaltsverzeichnis ist eine erweiterbare Liste, die alle Themen in den installierten Büchern enthält. Informationen zur Navigation durch das Inhaltsverzeichnis mithilfe von Tastenkombinationen finden Sie unter [Tastenkombinationen (Help Viewer)](../ide/shortcut-keys-help-viewer.md).  
   
 > [!IMPORTANT]
 >  Der Themenbereich, der im Inhaltsverzeichnis verfügbar ist, ist vom ausgewählten Filter abhängig.  
   
-## Filtern des Inhaltsverzeichnisses  
- Sie können das Inhaltsverzeichnis filtern, um den Themenbereich einzugrenzen, der auf der Registerkarte **Inhalt** angezeigt wird.  Titel werden nur in der Liste angezeigt, wenn sie den Stamm des angegebenen Begriffs enthalten.  Wenn Sie beispielsweise "Problembehandlung" als Filter angeben, werden nur Titel angezeigt, die "Problem" oder "Problembehandlung" enthalten.  Knoten, deren Namen nicht den Begriff enthalten, werden zu einem einzelnen Knoten mit Auslassungszeichen \(...\) reduziert.  
+## <a name="filter-the-toc"></a>Filtern des Inhaltsverzeichnisses  
+Sie können das Inhaltsverzeichnis filtern, um den Themenbereich einzugrenzen, der auf der Registerkarte **Inhalt** angezeigt wird. Titel werden nur in der Liste angezeigt, wenn sie den Stamm des angegebenen Begriffs enthalten. Wenn Sie beispielsweise "Problembehandlung" als Filter angeben, werden nur Titel angezeigt, die "Problem" oder "Problembehandlung" enthalten. Knoten, deren Namen nicht den Begriff enthalten, werden zu einem einzelnen Knoten mit Auslassungszeichen (...) reduziert.  
   
-#### So filtern Sie Inhaltsverzeichnisse  
+#### <a name="to-filter-the-toc"></a>So filtern Sie Inhaltsverzeichnisse  
   
-1.  Wählen Sie die Registerkarte **Inhalt** aus.  
+1.  Klicken Sie auf die Registerkarte **Inhalt**.  
   
-2.  Geben Sie im Textfeld **Inhalte filtern** einen Ausdruck ein.  
+2.  Geben Sie im Textfeld **Inhalte filtern** einen Begriff ein.  
   
 > [!NOTE]
->  Wenn die Ausführung des Filters viel Zeit in Anspruch nimmt, können Sie die Ergebnisse möglicherweise schneller anzeigen, indem Sie den erweiterten Suchoperator `title:` verwenden.  
+>  Wenn die Ausführung des Filters viel Zeit in Anspruch nimmt, versuchen Sie es mit dem erweiterten Suchoperator `title:`, wodurch Ergebnisse möglicherweise schneller angezeigt werden.  
   
-## Synchronisieren von Themen mit dem Inhaltsverzeichnis  
- Wenn Sie ein Thema mithilfe der Index\- oder Volltextsuchfunktionen geöffnet haben, können Sie bestimmen, wo dieses Thema im Inhaltsverzeichnis angezeigt wird, indem Sie das Inhaltsverzeichnis mit dem Themenfenster synchronisieren.  
+## <a name="synchronize-a-topic-with-the-toc"></a>Synchronisieren von Themen mit dem Inhaltsverzeichnis  
+Wenn Sie ein Thema mithilfe der Index- oder Volltextsuchfunktionen geöffnet haben, können Sie bestimmen, wo dieses Thema im Inhaltsverzeichnis angezeigt wird, indem Sie das Inhaltsverzeichnis mit dem Themenfenster synchronisieren.
   
-#### So synchronisieren Sie das Inhaltsverzeichnis mit dem Themenfenster  
+#### <a name="to-synchronize-the-toc-with-the-topic-window"></a>So synchronisieren Sie das Inhaltsverzeichnis mit dem Themenfenster  
   
 1.  Zeigen Sie ein Thema an.  
   
-2.  Klicken Sie auf der Symbolleiste auf die Schaltfläche **Thema in Inhalten anzeigen**, oder drücken Sie                                                            STRG\+S                                                           .  
+2.  Klicken Sie auf der Symbolleiste auf die Schaltfläche **Thema in Inhalten anzeigen**, oder drücken Sie **STRG+S**.  
   
      Die Registerkarte **Inhalt** wird geöffnet und zeigt den Speicherort des Themas im Inhaltsverzeichnis an.  
   
-## Siehe auch  
- [Suchen nach Informationen](../ide/locate-information.md)   
- [Microsoft Help Viewer](../ide/microsoft-help-viewer.md)
+## <a name="see-also"></a>Siehe auch
+[Vorgehensweise: Suchen von Themen im Index](../ide/how-to-find-topics-in-the-index.md)  
+[Vorgehensweise: Suchen nach Themen](../ide/how-to-search-for-topics.md)  
+[Microsoft Help Viewer](../ide/microsoft-help-viewer.md)

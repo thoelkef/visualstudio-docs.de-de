@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -14,30 +13,15 @@ helpviewer_keywords:
 - performance, analyzing
 - profiling applications, walkthroughs
 ms.assetid: 36f6f123-0c14-4763-99c3-bd60ecb95b87
-caps.latest.revision: 53
+caps.latest.revision: "53"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
-ms.openlocfilehash: a20a64818982484a56ba7dc82af890c729da40e4
-ms.lasthandoff: 04/05/2017
-
+ms.openlocfilehash: d52f6bfe745cf7e8684094cf9244b6eedcba13a9
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="walkthrough-identifying-performance-problems"></a>Exemplarische Vorgehensweise: Identifizieren von Leistungsproblemen
 In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie ein Profil einer Anwendung erstellt wird, um Leistungsprobleme zu erkennen.  
@@ -105,9 +89,9 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie ein Profil ein
   
 2.  Die Ansicht **Funktionsdetails** enthält zwei Fenster. Das Fenster "Kostenverteilung" enthält eine grafische Darstellung der ausgeführten Aufgaben der Funktion, eine Darstellung der Aufgaben, die von den aufgerufenen Funktionen ausgeführt wurden, sowie eine Darstellung des Beitrags von Funktionen, von denen die Funktion aufgerufen wurde, zur Anzahl der gesampelten Instanzen. Durch Klicken auf einen Funktionsnamen können Sie die Funktion ändern, die sich im Fokus der Ansicht befindet. So können Sie beispielsweise auf "PeopleNS.People.GetPeople" klicken, um die Funktion "GetPeople" auszuwählen.  
   
-     Das Fenster **Funktionscodeansicht** enthält den Quellcode für die Funktion (sofern verfügbar). Darüber hinaus werden die speicherintensivsten Zeilen in der ausgewählten Funktion hervorgehoben. Ist „GetNames“ ausgewählt, ist zu sehen, dass von dieser Funktion eine Zeichenfolge aus den Anwendungsressourcen gelesen wird und die einzelnen Zeilen in der Zeichenfolge anschließend mithilfe von <xref:System.IO.StringReader> einer <xref:System.Collections.ArrayList> hinzugefügt werden. Diese Funktion kann offenbar nicht optimiert werden.  
+     Das Fenster **Funktionscodeansicht** enthält den Quellcode für die Funktion (sofern verfügbar). Darüber hinaus werden die speicherintensivsten Zeilen in der ausgewählten Funktion hervorgehoben. Ist "GetNames" ausgewählt, ist zu sehen, dass von dieser Funktion eine Zeichenfolge aus den Anwendungsressourcen gelesen wird und die einzelnen Zeilen in der Zeichenfolge anschließend mithilfe von <xref:System.IO.StringReader> einer <xref:System.Collections.ArrayList> hinzugefügt werden. Diese Funktion kann offenbar nicht optimiert werden.  
   
-3.  Da es sich bei "PeopleNS.People.GetPeople" um den einzigen Aufrufer von "GetNames" handelt, klicken Sie im Fenster "Kostenverteilung" auf "GetPeople", um den Code zu untersuchen. Von dieser Methode wird eine <xref:System.Collections.ArrayList> mit „PersonInformationNS.PersonInformation“-Objekten aus den Namen der Personen und Unternehmen zurückgegeben, die von „GetNames“ erstellt wurden. "GetNames" wird jedoch bei jeder Erstellung des PersonInformation-Objekts zweimal aufgerufen. Wie Sie sehen, lässt sich die Methode auf einfache Weise optimieren, indem die Listen lediglich einmal beim Start der Methode erstellt und während der PersonInformation-Erstellungsschleife indiziert werden.  
+3.  Da es sich bei "PeopleNS.People.GetPeople" um den einzigen Aufrufer von "GetNames" handelt, klicken Sie im Fenster "Kostenverteilung" auf "GetPeople", um den Code zu untersuchen. Von dieser Methode wird eine <xref:System.Collections.ArrayList> mit PersonInformationNS.PersonInformation-Objekten aus den Namen der Personen und Unternehmen zurückgegeben, die von "GetNames" erstellt wurden. "GetNames" wird jedoch bei jeder Erstellung des PersonInformation-Objekts zweimal aufgerufen. Wie Sie sehen, lässt sich die Methode auf einfache Weise optimieren, indem die Listen lediglich einmal beim Start der Methode erstellt und während der PersonInformation-Erstellungsschleife indiziert werden.  
   
 4.  Im Code der Beispielanwendung ist eine alternative Version von "GetPeople" enthalten. Fügen Sie den Buildeigenschaften ein Symbol für die bedingte Kompilierung hinzu, um die optimierte Funktion aufzurufen. Klicken Sie im Fenster „Projektmappen-Explorer“ mit der rechten Maustaste auf das Projekt „People“, und klicken Sie anschließend auf **Eigenschaften**. Klicken Sie im Menü der Eigenschaftenseite auf **Erstellen**, und geben Sie anschließend im Textfeld „Conditional compilation symbol“ (Symbol für bedingte Kompilierung) den Text **OPTIMIZED_GETPEOPLE** ein. Im nächsten Build wird die ursprüngliche Methode durch die optimierte Version von "GetPeople" ersetzt.  
   
@@ -152,13 +136,13 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie ein Profil ein
   
 1.  Das Zeitachsendiagramm der Ansicht **Zusammenfassung** des Berichts enthält die CPU-Auslastung des Programms während der Profilerstellung. Bei dem Exportvorgang der Daten muss es sich um die große Spitze oder den Ausschlag rechts im Diagramm handeln. Die Leistungssitzung kann gefiltert werden, um nur die Daten anzuzeigen und zu analysieren, die im Rahmen des Exportvorgangs erfasst wurden. Klicken Sie im Diagramm auf eine Position links des Punkts, an dem der Exportvorgang der Daten beginnt. Klicken Sie auf eine Position rechts des Vorgangs. Klicken Sie anschließend rechts neben der Zeitachse in der Liste mit den Links auf **Nach Auswahl filtern**.  
   
-     In der Struktur **Langsamster Pfad** wird ersichtlich, dass die Methode <xref:System.String.Concat%2A>, die von der Methode „PeopleTrax.Form1.ExportData“ aufgerufen wird, sehr zeitaufwändig ist. Da sich **System.String.Concat** auch am Anfang der Liste **Funktionen mit den meisten einzelnen Aufgaben** befindet, stellt eine Verringerung der für die Funktion aufgewendeten Zeit mit großer Wahrscheinlichkeit eine Optimierung dar.  
+     In der Struktur **Langsamster Pfad** wird ersichtlich, dass die <xref:System.String.Concat%2A>-Methode, die von der PeopleTrax.Form1.ExportData-Methode aufgerufen wird, sehr zeitaufwändig ist. Da sich **System.String.Concat** auch am Anfang der Liste **Funktionen mit den meisten einzelnen Aufgaben** befindet, stellt eine Verringerung der für die Funktion aufgewendeten Zeit mit großer Wahrscheinlichkeit eine Optimierung dar.  
   
 2.  Doppelklicken Sie in einer der Zusammenfassungstabellen auf **System.String.Concat**, um in der Ansicht „Funktionsdetails“ weitere Informationen anzuzeigen.  
   
 3.  Wie Sie sehen, ist "PeopleTrax.Form1.ExportData" die einzige Methode, von der "Concat" aufgerufen wird. Klicken Sie in der Liste **Aufrufende Funktionen** auf **PeopleTrax.Form1.ExportData**, um die Methode als Ziel der Ansicht „Funktionsdetails“ auszuwählen.  
   
-4.  Untersuchen Sie die Methode im Fenster "Funktionscodeansicht". Beachten Sie, dass es keine literalen Aufrufe von **System.String.Concat** gibt. Stattdessen wird mehrmals der Operand „+=“ verwendet, der vom Compiler durch Aufrufe von **System.String.Concat** ersetzt wird. Änderungen an einer Zeichenfolge in .NET Framework führen dazu, dass eine neue Zeichenfolge zuordnet wird. .NET Framework enthält eine Klasse <xref:System.Text.StringBuilder>, die für die Zeichenfolgenverkettung optimiert ist.  
+4.  Untersuchen Sie die Methode im Fenster "Funktionscodeansicht". Beachten Sie, dass es keine literalen Aufrufe von **System.String.Concat** gibt. Stattdessen wird mehrmals der Operand „+=“ verwendet, der vom Compiler durch Aufrufe von **System.String.Concat** ersetzt wird. Änderungen an einer Zeichenfolge in .NET Framework führen dazu, dass eine neue Zeichenfolge zuordnet wird. .NET Framework enthält eine <xref:System.Text.StringBuilder>-Klasse, die für die Zeichenfolgenverkettung optimiert ist.  
   
 5.  Um diesen Problembereich durch optimierten Code zu ersetzen, fügen Sie dem Projekt PeopleTrax OPTIMIZED_EXPORTDATA als Symbol für die bedingte Kompilierung hinzu.  
   

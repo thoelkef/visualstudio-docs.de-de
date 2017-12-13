@@ -1,0 +1,120 @@
+---
+title: "R Tools für Visual Studio | Microsoft-Dokumentation"
+ms.custom: 
+ms.date: 11/13/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-r
+ms.devlang: r
+ms.tgt_pltfrm: 
+ms.topic: article
+ms.assetid: e656ac64-915a-40bb-8196-93d33250ef98
+caps.latest.revision: "1"
+author: kraigb
+ms.author: kraigb
+manager: ghogen
+ms.openlocfilehash: 79420e09f7ca0b01ce97fc19a063a8b15431b544
+ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/15/2017
+---
+# <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
+
+## <a name="visual-studio-support"></a>Visual Studio-Unterstützung
+
+**F. Funktioniert RTVS unter OS X oder Linux?**
+
+A. RTVS baut zurzeit auf Visual Studio, einer reinen Windows-Implementierung, auf. Microsoft überprüft aktuell die Unterstützung für Visual Studio Code und Visual Studio für Mac. Weiter Informationen finden Sie unter [RTVS issue #1295 (RTVS-Problem Nr. 1295)](https://github.com/Microsoft/RTVS/issues/1295).
+
+**F. Funktioniert RTVS mit Visual Studio Express-Editionen?**
+
+A. Nein.
+
+**F. Kann ich Visual Studio-Erweiterungen mit RTVS verwenden?**
+
+A. Unbedingt. Die folgenden Erweiterungen beispielsweise sind bei Benutzern sehr beliebt, die mit R arbeiten.
+
+- [VsVim für Vim-Schlüsselbindungen](https://marketplace.visualstudio.com/items?itemName=JaredParMSFT.VsVim)
+- [GitHub](https://marketplace.visualstudio.com/items?itemName=GitHub.GitHubExtensionforVisualStudio)
+- [Markdown-Editor mit Livevorschau](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.MarkdownEditor)
+
+Noch mehr Erweiterungen finden Sie im [Visual Studio Marketplace](https://marketplace.visualstudio.com/).
+
+**F. Bedeutet die Tatsache, dass RTVS in Visual Studio integriert ist, dass R problemlos mit C#, C++ und anderen Microsoft-Sprachen eingesetzt werden kann?**
+
+A. Nein. RTVS ist ein Tool für die Entwicklung von R-Code und verwendet die standardmäßigen nativen R-Interpreter. Zurzeit wird die Interoperabilität zwischen R und anderen Sprachen nicht unterstützt.
+
+**F. Funktioniert RTVS mit einem nicht englischen Gebietsschema?**
+
+A. Release 1.0 von RTVS ist nur auf Englisch verfügbar. Release 1.1 wird in die gleichen Sprachen lokalisiert wie Visual Studio selbst. Verwenden Sie in der Zwischenzeit das [Visual Studio 2015-Sprachpaket für Englisch](https://www.microsoft.com/download/details.aspx?id=48157), oder führen Sie in Visual Studio 2017 das Installationsprogramm aus und wählen auf der Registerkarte **Sprachpakete** Englisch aus.
+
+![Internationale Einstellungen für Visual Studio 2017](media/FAQ-international-settings.png)
+
+**F. Ich finde meine aktuellen Visual Studio-Einstellungen super, möchte aber auch die neuen Data Science-Einstellungen ausprobieren. Wie gehe ich vor?**
+
+A. Speichern Sie Ihre aktuellen Visual Studio-Einstellungen mithilfe von **Tools > Einstellungen importieren und exportieren...**, und wechseln Sie dann zu den Data Science-Einstellungen. Um die gespeicherten Einstellungen wiederherzustellen, verwenden Sie erneut den Befehl **Einstellungen importieren und exportieren...**.
+
+**F. Kann ich mein Visual Studio-Projekt auf einer Netzwerkfreigabe speichern?**
+
+A. Nein, Visual Studio unterstützt nicht das Laden von Projekten aus einer Netzwerkfreigabe.
+
+## <a name="r-interpretersintegration"></a>R-Interpreter/-Integration
+
+**F. Mit welchen R-Interpretern arbeitet RTVS?**
+
+A. [CRAN R](https://cran.r-project.org/), [Microsoft R Client und Microsoft Machine Learning Server](/machine-learning-server/)
+
+**F. Wo kann ich diese Interpreter herunterladen?**
+
+A. Informationen hierzu finden Sie unter [Installation](installation.md).
+
+**F: Was ist Microsoft R Server?**
+
+A. R Server ist der ehemalige Name von [Microsoft Machine Learning Server](/machine-learning-server/what-is-machine-learning-server).
+
+**F. Funktioniert RTVS mit 32-Bit-Editionen von R?**
+
+A. Nein. RTVS unterstützt nur 64-Bit-Editionen von R, die auf 64-Bit-Editionen von Windows ausgeführt werden.
+
+**F. Funktioniert RTVS mit meinem System für die Quellcodeverwaltung?**
+
+A. Ja, Sie können jedes Quellcodeverwaltungssystem verwenden, das in Visual Studio integriert ist.
+
+**F. Wie lauten die empfohlenen `.gitignore`-Einstellungen für ein RTVS-Projekt?**
+
+A. GitHub verwaltet ein Masterrepository mit empfohlenen `.gitignore`-Dateien. Dieses finden Sie hier: [R .gitignore](https://github.com/github/gitignore/blob/master/R.gitignore).
+
+## <a name="remote-services"></a>Remotedienste
+
+F. **Was sind Remotedienste in Visual Studio?**
+
+A. Mit den R-Remotediensten für Visual Studio können Sie Windows- oder Linux-Computer einrichten und dann über RTVS eine Verbindung zu ihnen herstellen. Weitere Informationen finden Sie unter [Einrichten von Remotearbeitsbereichen](workspaces-remote-setup.md).
+
+F. **Kann RTVS eine Verbindung zu Microsoft R Server herstellen?**
+
+A. Nein, da es sich bei Microsoft R Server um eine andere Technologie handelt, die einen anderen Mechanismus als den für RTVS erforderlichen bereitstellt.
+
+F. **Kann RTVS eine Verbindung zu einer VM herstellen, die mithilfe des Images einer Data Science-VM in Azure erstellt wurde?**
+
+A. Ja. Das Image der Data Science-VM ist in Remote R Services für Visual Studio vorinstalliert.
+
+**F: Kann RTVS eine Verbindung zu einem Remotecomputer herstellen, auf dem R installiert ist?**
+
+Um R-Code auf einem Remotecomputer auszuführen, müssen Dienste auf Anforderungen lauschen und dabei Code empfangen und Ergebnisse an den Clientcomputer zurücksenden. Dafür sind die R-Remotedienste für Visual Studio verantwortlich. Weitere Informationen finden Sie unter [Einrichten von Remotearbeitsbereichen](workspaces-remote-setup.md).
+
+F. **Was ist eine Remotesitzung?**
+
+A. Informationen dazu finden Sie im Artikel [Execute on remote server (Ausführen auf einem Remoteserver)](/machine-learning-server/r/how-to-execute-code-remotely) in der Machine Learning Server-Dokumentation.
+
+## <a name="rtvs-development-and-features"></a>RTVS-Entwicklung und -Funktionen
+
+**F. Ich vermisse ein bestimmtes Feature, das in RStudio vorhanden ist!**
+
+A. RStudio ist eine fantastische, ausgereifte IDE für R, die bereits seit vielen Jahren weiterentwickelt wird. Wir versuchen, alle wichtigen Funktionen, die Sie für eine erfolgreiche Entwicklung benötigen, in RTVS bereitzustellen. Unterstützen Sie uns dabei, RTVS weiterzuentwickeln, und machen Sie bei der [RTVS-Umfrage](https://www.surveymonkey.com/r/RTVS1) mit. Außerdem können Sie Probleme auf [GitHub](https://github.com/Microsoft/RTVS/issues/) melden.
+
+**F. Kann ich zu RTVS beitragen?**
+
+A. Auf jeden Fall! Der Quellcode befindet sich auf [GitHub](https://github.com/microsoft/RTVS). Unter „Issues“ können Sie Bugs melden und bereits vorhandene Dateien kommentieren.
+
+Wir freuen uns auch, wenn Sie zur Dokumentation beitragen&mdash;wählen Sie einfach den Befehl **Edit** (Bearbeiten) rechts oben auf jeder Seite in GitHub. Kommentare zu den Dokumenten sind ebenfalls gern gesehen – diese können Sie unten auf jeder Seite einfügen.

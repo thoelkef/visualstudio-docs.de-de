@@ -1,51 +1,51 @@
 ---
-title: "/DebugExe (devenv.exe) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "/DebugExe [devenv.exe]"
-  - "DebugExe-Schalter"
-  - "Devenv, /DebugExe-Schalter"
+title: "/DebugExe („devenv.exe“) | Microsoft-Dokumentation"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- Devenv, /DebugExe switch
+- DebugExe switch
+- /DebugExe [devenv.exe]
 ms.assetid: cd700006-1648-418f-924b-4b1e5c1412ab
-caps.latest.revision: 4
-caps.handback.revision: 4
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
+caps.latest.revision: "4"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 00677826cceab6a54c0fb2216ac6c6284a65631f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# /DebugExe (devenv.exe)
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Öffnet die angegebene ausführbare Datei, die gedebuggt werden soll.  
+# <a name="debugexe-devenvexe"></a>/DebugExe (devenv.exe)
+Öffnet die angegebene ausführbare Datei, die debuggt werden soll.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 Devenv /debugexe ExecutableFile  
 ```  
   
-## Argumente  
+## <a name="arguments"></a>Argumente  
  `ExecutableFile`  
- Erforderlich.  Der Pfad und Dateiname einer EXE\-Datei.  
+ Erforderlich. Der Pfad und Dateiname einer EXE-Datei.  
   
- Wenn die EXE\-Datei nicht gefunden wird oder nicht vorhanden ist, wird keine Warnung bzw. Fehlermeldung angezeigt, und [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] wird ordnungsgemäß gestartet.  
+ Wenn die EXE-Datei nicht gefunden wurde oder nicht vorhanden ist, wird keine Warnung oder Fehlermeldung angezeigt und [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] startet normal.  
   
-## Hinweise  
- Alle Zeichenfolgen, die dem `ExecutableFile`\-Parameter folgen, werden als Argumente an diese Datei übergeben.  
+## <a name="remarks"></a>Hinweise  
+ Alle Zeichenfolgen, die dem `ExecutableFile`-Parameter folgen, werden dieser Datei als Argumente übergeben.  
   
-## Beispiel  
+## <a name="example"></a>Beispiel  
  Im folgenden Beispiel wird die Datei `MyApplication.exe` zum Debuggen geöffnet.  
   
 ```  
 Devenv.exe /debugexe MyApplication.exe  
 ```  
   
-## Siehe auch  
- [Devenv\-Befehlszeilenschalter](../../ide/reference/devenv-command-line-switches.md)
+## <a name="see-also"></a>Siehe auch  
+ [Devenv-Befehlszeilenschalter](../../ide/reference/devenv-command-line-switches.md)

@@ -1,70 +1,71 @@
 ---
-title: "Exemplarische Vorgehensweise: Profilerstellung &#252;ber die Befehlszeile mit Instrumentation | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Profilerstellungstools, exemplarische Vorgehensweisen"
-  - "Leistungstools, exemplarische Vorgehensweisen"
-  - "Leistungstools, Befehlszeilentools"
+title: "Exemplarische Vorgehensweise: Profilerstellung über die Befehlszeile mit Instrumentierung | Microsoft-Dokumentation"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- profiling tools, walkthroughs
+- performance tools, walkthroughs
+- performance tools, command-line tools
 ms.assetid: 1c6f1586-3d6a-431f-bedf-c54088e280ba
-caps.latest.revision: 15
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 15
+caps.latest.revision: "15"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 54c91b8238b21f214edda0941c0c91fd4bdda8e4
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Exemplarische Vorgehensweise: Profilerstellung &#252;ber die Befehlszeile mit Instrumentation
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-In dieser exemplarischen Vorgehensweise wird das Erstellen eines Profils für eine eigenständige [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]\-Anwendung beschrieben, um mithilfe der Instrumentationsmethode der Profilerstellungstools ausführliche Daten zur Zeitsteuerung sowie zur Aufrufanzahl zu sammeln.  Im Verlauf dieser exemplarischen Vorgehensweise führen Sie folgende Aufgaben aus:  
+# <a name="walkthrough-command-line-profiling-using-instrumentation"></a>Exemplarische Vorgehensweise: Profilerstellung über die Befehlszeile mit Instrumentierung
+Diese exemplarische Vorgehensweise führt Sie durch die Profilerstellung einer eigenständigen [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]-Anwendung zum Sammeln ausführlicher Daten zur Zeitsteuerung und Aufrufanzahl mithilfe der Instrumentierungsmethode der Profilerstellungstools. Im Verlauf dieser exemplarischen Vorgehensweise führen Sie folgende Aufgaben aus:  
   
--   Erstellen instrumentierter Binärdateien mithilfe des Befehlszeilentools [VSInstr](../profiling/vsinstr.md)  
+-   Verwenden des Befehlszeilentools [VSInstr](../profiling/vsinstr.md) zum Erstellen instrumentierter Binärdateien  
   
--   Festlegen der Umgebungsvariablen zum Sammeln von .NET\-Profilerstellungsdaten mithilfe des Tools [VSPerfCLREnv](../profiling/vsperfclrenv.md)  
+-   Verwenden des Tools [VSPerfCLREnv](../profiling/vsperfclrenv.md) zum Festlegen der Umgebungsvariablen zum Sammeln von .NET-Profilerstellungsdaten  
   
--   Sammeln von Profilerstellungsdaten mithilfe des Tools [VSPerfCmd](../profiling/vsperfcmd.md)  
+-   Verwenden des Tools [VSPerfCmd](../profiling/vsperfcmd.md) zum Sammeln von Profilerstellungsdaten  
   
--   Generieren dateibasierter Berichte der Profilerstellungsdaten mithilfe des Tools [VSPerfReport](../profiling/vsperfreport.md)  
+-   Verwenden des Tools [VSPerfReport](../profiling/vsperfreport.md) zum Erstellen dateibasierter Berichte der Profilerstellungsdaten  
   
-## Vorbereitungsmaßnahmen  
+## <a name="prerequisites"></a>Erforderliche Komponenten  
   
 -   [!INCLUDE[vsprvsts](../code-quality/includes/vsprvsts_md.md)]  
   
--   Grundlegende Kenntnisse über C\#  
+-   Fortgeschrittene C#-Kenntnisse  
   
--   Grundlegende Kenntnisse über die Arbeit mit Befehlszeilentools  
+-   Grundlegende Kenntnisse der Arbeit mit Befehlszeilentools  
   
--   Eine Kopie von [PeopleTrax\-Beispiel](../profiling/peopletrax-sample-profiling-tools.md)  
+-   Eine Kopie von [PeopleTrax-Beispiel](../profiling/peopletrax-sample-profiling-tools.md)  
   
--   Um mit den durch die Profilerstellung bereitgestellten Informationen arbeiten zu können, sollten Symbolinformationen für das Debuggen verfügbar sein.  Weitere Informationen finden Sie unter [Gewusst wie: Verweisen auf Windows\-Symbolinformationen](../profiling/how-to-reference-windows-symbol-information.md).  
+-   Um mit den durch die Profilerstellung bereitgestellten Informationen arbeiten zu können, sollten Symbolinformationen für das Debuggen verfügbar sein. Weitere Informationen finden Sie unter [Vorgehensweise: Verweisen auf Windows-Symbolinformationen](../profiling/how-to-reference-windows-symbol-information.md).  
   
-## Profilerstellung über die Befehlszeile mit der Instrumentationsmethode  
- Die Instrumentation ist eine Methode der Profilerstellung, bei der speziell erstellte Versionen der Binärdateien, für die eine Profilerstellung durchgeführt wurde, Testfunktionen enthalten, die beim Aufrufen und beim Verlassen von Funktionen in einem instrumentierten Modul Zeitinformationen erfassen.  Da diese Methode der Profilerstellung stärker als das Sampling eingreift, verursacht sie einen größeren Verwaltungsaufwand.  Instrumentierte Binärdateien sind zudem größer als Binärdateien für eine Debug\- oder Releaseversion und nicht für die Bereitstellung vorgesehen.  
+## <a name="command-line-profiling-using-the-instrumentation-method"></a>Profilerstellung über die Befehlszeile mithilfe der Instrumentierungsmethode  
+ Bei der Instrumentierung handelt es sich um eine Profilerstellungsmethode, bei der speziell erstellte Versionen der Binärdateien, für die das Profil erstellt wird, Testfunktionen erhalten, die Zeitsteuerungsdaten zum Funktionseinstieg und -ende in einem instrumentierten Modul sammeln. Da diese Profilerstellungsmethode invasiver als das Sampling ist, fällt der Mehraufwand höher aus. Instrumentierte Binärdateien sind zudem größer als Binärdateien für eine Debug- oder Releaseversion und nicht für die Bereitstellung vorgesehen.  
   
 > [!NOTE]
->  Senden Sie keine instrumentierten Binärdateien an die Kunden.  Instrumentierte Binärdateien können verschiedene Risiken bergen.  Die Binärdateien enthalten Informationen, mit denen die Anwendung leichter zurückentwickelt werden kann, sowie Sicherheitsrisiken.  
+>  Senden Sie keine instrumentierten Binärdateien an Ihre Kunden. Instrumentierte Binärdateien können verschiedene Risiken bergen. Die Binärdateien enthalten Informationen, die das Reverse Engineering sowie Sicherheitsrisiken für Ihre Anwendung erleichtern.  
   
-#### So erstellen Sie mithilfe der Instrumentationsmethode ein Profil für die Anwendung "PeopleTrax"  
+#### <a name="to-profile-the-peopletrax-application-by-using-the-instrumentation-method"></a>So führen Sie eine Profilerstellung einer PeopleTrax-Anwendung mithilfe der Instrumentierungsmethode durch  
   
-1.  Installieren Sie die Beispielanwendung "PeopleTrax", und erstellen Sie die Releaseversion.  
+1.  Installieren Sie die Beispielanwendung „PeopleTrax“, und erstellen Sie die Releaseversion.  
   
-2.  Öffnen Sie ein Eingabeaufforderungsfenster, und fügen Sie der lokalen Path\-Umgebungsvariablen das Verzeichnis **Profilerstellungstools** hinzu.  
+2.  Öffnen Sie ein Eingabeaufforderungsfenster, und fügen Sie der lokalen PATH-Umgebungsvariablen das Verzeichnis **Profilerstellungstools** hinzu.  
   
-3.  Legen Sie das Arbeitsverzeichnis auf das Verzeichnis fest, das die Binärdateien für "PeopleTrax" enthält.  
+3.  Legen Sie das Arbeitsverzeichnis auf das Verzeichnis fest, das die Binärdateien für „PeopleTrax“ enthält.  
   
-4.  Erstellen Sie ein Verzeichnis für die dateibasierten Berichte.  Geben Sie folgenden Befehl ein:  
+4.  Erstellen Sie ein Verzeichnis, das die dateibasierten Berichte enthält. Geben Sie folgenden Befehl ein:  
   
     ```  
     md Reports  
     ```  
   
-5.  Verwenden Sie das Befehlszeilentool "VSInstr", um die Binärdateien in der Anwendung zu instrumentieren.  Geben Sie die folgenden Befehle in separate Befehlszeilen ein:  
+5.  Verwenden Sie die VSInstr-Befehlszeilentools zum Instrumentieren der Binärdateien in der Anwendung. Geben Sie folgende Befehle in getrennte Befehlszeilen ein:  
   
     ```  
     VSInstr PeopleTrax.exe  
@@ -74,7 +75,7 @@ In dieser exemplarischen Vorgehensweise wird das Erstellen eines Profils für ei
     VSInstr Operation.dll  
     ```  
   
-     **Hinweis** VSInstr speichert standardmäßig eine nicht instrumentierte Sicherungskopie der ursprünglichen Datei.  Der Name der Sicherungsdatei hat die Erweiterung .orig.  Die ursprüngliche Version von "MyApp.exe" wird beispielsweise als "MyApp.exe.orig" gespeichert.  
+     **Hinweis** VSInstr speichert standardmäßig eine nicht instrumentierte Sicherung der ursprünglichen Datei. Der Dateiname der Sicherung hat die Erweiterung „.orig“. Die ursprüngliche Version von „MyApp.exe“ würde beispielsweise als „MyApp.exe.orig“ gespeichert werden.  
   
 6.  Geben Sie den folgenden Befehl ein, um die entsprechenden Umgebungsvariablen festzulegen:  
   
@@ -88,21 +89,21 @@ In dieser exemplarischen Vorgehensweise wird das Erstellen eines Profils für ei
     VsPerfCmd /start:trace /output:Reports\Report.vsp  
     ```  
   
-8.  Führen Sie zum Erfassen von Daten die instrumentierte Version von "PeopleTrax.exe" aus, nachdem Sie den Profiler im Ablaufverfolgungsmodus gestartet haben.  
+8.  Nachdem der Profiler im Nachverfolgungsmodus gestartet wurde, führen Sie die instrumentierte Version des PeopleTrax.exe-Prozesses zum Sammeln von Daten aus.  
   
      Das Anwendungsfenster für **PeopleTrax** wird angezeigt.  
   
-9. Klicken Sie auf **Personen abrufen**.  
+9. Klicken Sie auf **Get People** (Personen abrufen).  
   
      Im Datenblatt PeopleTrax werden Daten angezeigt.  
   
 10. Klicken Sie auf **Daten exportieren**.  
   
-     In Editor wird eine neue Datei angezeigt, die eine Liste der Personen aus der Anwendung **PeopleTrax** enthält.  
+     In Editor wird eine neue Datei angezeigt, die eine Liste von Personen aus **PeopleTrax** enthält.  
   
 11. Schließen Sie Editor, und schließen Sie dann die Anwendung **PeopleTrax**.  
   
-12. Schließen Sie den Profiler.  Geben Sie folgenden Befehl ein:  
+12. Schließen Sie den Profiler. Geben Sie folgenden Befehl ein:  
   
     ```  
     VSPerfCmd /shutdown  
@@ -114,15 +115,15 @@ In dieser exemplarischen Vorgehensweise wird das Erstellen eines Profils für ei
     VSPerfCLREnv /off  
     ```  
   
-14. Generieren Sie mithilfe des Tools "VSPerfReport" Berichtsdateien mit durch Trennzeichen getrennten Werten \(CSV\-Datei\).  Geben Sie Folgendes ein:  
+14. Verwenden Sie das Tool VSPerfReport, um durch Trennzeichen getrennte (.csv) Berichtsdateien zu erstellen. Typ:  
   
     ```  
     VSPerfReport Reports\Report.vsp /output:Reports /summary:all  
     ```  
   
-     Sie können die generierten Berichte in einem Tabellenkalkulationsprogramm oder die Profilerstellungsdaten mithilfe der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]\-IDE in der Datei "Report.vsp" analysieren.  Weitere Informationen finden Sie unter [Analysieren der durch Profilerstellungstools erstellten Daten](../profiling/analyzing-performance-tools-data.md).  
+     Sie können die erstellten Berichte in einem Tabellenkalkulationsprogramm analysieren, oder Sie können die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-IDE verwenden, um die Profilerstellungsdaten in der Datei „Report.vsp“ zu analysieren. Weitere Informationen finden Sie unter [Analysieren der durch Profilerstellungstools erstellten Daten](../profiling/analyzing-performance-tools-data.md).  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Übersicht über Leistungssitzungen](../profiling/performance-session-overview.md)   
  [Profilerstellung mithilfe der Befehlszeile](../profiling/using-the-profiling-tools-from-the-command-line.md)   
  [VSPerfCmd](../profiling/vsperfcmd.md)   

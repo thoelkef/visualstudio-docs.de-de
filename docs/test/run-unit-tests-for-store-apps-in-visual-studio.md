@@ -1,38 +1,23 @@
 ---
-title: "Ausführen von Komponententests für Store-Apps in Visual Studio | Microsoft-Dokumentation"
+title: "Ausführen von Komponententests für UWP-Apps in Visual Studio | Microsoft-Dokumentation"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 5a6f5b32-bfce-4a63-81e9-02d54c592539
-caps.latest.revision: 12
+caps.latest.revision: "12"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5ab78b6b8eaa8156ed2c8a807b1d8a80e75afa84
-ms.openlocfilehash: ab3b6e63d78148553c449032913b2e04a054ecf3
-ms.lasthandoff: 04/04/2017
-
+ms.openlocfilehash: cdb13478a7e403be916d7773dab6315429508e9c
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/02/2017
 ---
-# <a name="run-unit-tests-for-store-apps-in-visual-studio"></a>Ausführen von Komponententests für Store-Apps in Visual Studio
+# <a name="run-unit-tests-for-uwp-apps-in-visual-studio"></a>Ausführen von Komponententests für UWP-Apps in Visual Studio
 In diesem Thema wird beschrieben, wie Sie Komponententests mithilfe des Test-Explorers in Microsoft Visual Studio ausführen.  
   
 > [!NOTE]
@@ -65,7 +50,7 @@ In diesem Thema wird beschrieben, wie Sie Komponententests mithilfe des Test-Exp
  [Debuggen von Komponententests](#BKMK_Debugging_unit_tests)  
   
 ##  <a name="BKMK_Unit_test_frameworks_and_test_projects"></a> Komponententestframeworks und Testprojekte  
- Visual Studio Express für Windows Store-Apps schließt die Microsoft-Unittest-Frameworks für verwalteten und nativen C++-Code ein. Im Test-Explorer können Tests aus mehreren Testprojekten in einer Projektmappe und aus Testklassen ausgeführt werden, die Teil der Produktionscodeprojekte sind. Testprojekte können sich aus jeder beliebigen Kombination von Visual C++- oder Visual C#- und Visual Basic-Komponententest-Frameworks zusammensetzen. Wenn der zu testende Code für .NET Framework geschrieben wird, kann das Testprojekt in jeder .NET Framework-Sprache geschrieben sein, unabhängig von der Sprache des Zielcodes. Systemeigene C/C++-Codeprojekte müssen mithilfe eines Komponententest-Frameworks für C++ getestet werden.  
+ Visual Studio Express für UWP-Apps schließt die Microsoft-Komponententest-Frameworks für verwalteten und nativen C++-Code ein. Im Test-Explorer können Tests aus mehreren Testprojekten in einer Projektmappe und aus Testklassen ausgeführt werden, die Teil der Produktionscodeprojekte sind. Testprojekte können sich aus jeder beliebigen Kombination von Visual C++- oder Visual C#- und Visual Basic-Komponententest-Frameworks zusammensetzen. Wenn der zu testende Code für .NET Framework geschrieben wird, kann das Testprojekt in jeder .NET Framework-Sprache geschrieben sein, unabhängig von der Sprache des Zielcodes. Systemeigene C/C++-Codeprojekte müssen mithilfe eines Komponententest-Frameworks für C++ getestet werden.  
   
 ##  <a name="BKMK_Running_tests_in_Test_Explorer"></a> Ausführen von Tests im Test-Explorer  
  Wenn Sie das Testprojekt erstellen, werden die Tests im Test-Explorer angezeigt. Falls der Test-Explorer nicht geöffnet ist, wählen Sie im Visual Studio-Menü nacheinander **Test** , **Fenster**und dann **Test-Explorer**aus.  
@@ -119,7 +104,7 @@ In diesem Thema wird beschrieben, wie Sie Komponententests mithilfe des Test-Exp
   
 |||  
 |-|-|  
-|![Gruppenschaltfläche „Test-Explorer“](~/test/media/ute_groupby_btn.png "UTE_GroupBy_btn")|Um die Tests nach der Dauer ihrer Ausführung zu gruppieren, öffnen Sie die Liste **Gruppieren nach** und wählen **Dauer** aus. Wählen Sie **Testergebnis** aus, um zur ursprünglichen Gruppierung zu wechseln.|  
+|![Gruppenschaltfläche „Test-Explorer“](../test/media/ute_groupby_btn.png "UTE_GroupBy_btn")|Um die Tests nach der Dauer ihrer Ausführung zu gruppieren, öffnen Sie die Liste **Gruppieren nach** und wählen **Dauer** aus. Wählen Sie **Testergebnis** aus, um zur ursprünglichen Gruppierung zu wechseln.|  
   
 ###  <a name="BKMK_Searching_and_filtering_the_test_list"></a> Suchen und Filtern der Testliste  
  Wenn Sie über viele Tests verfügen, können Sie im Test-Explorer-Suchfeld eine Eingabe vornehmen, um die Liste entsprechend der angegebenen Zeichenfolge zu filtern. Sie können den Filter auf bestimmte Typen von Zeichenfolgen einschränken, indem Sie vor der Eingabe der Suchzeichenfolge in der Filterliste eine Auswahl vornehmen.  
@@ -137,4 +122,3 @@ In diesem Thema wird beschrieben, wie Sie Komponententests mithilfe des Test-Exp
 2.  Wählen Sie im Test-Explorer die Testmethoden aus, und wählen Sie dann im Kontextmenü **Ausgewählte Tests debuggen** aus.  
   
  Weitere Informationen zum Debugger finden Sie unter [Debugging in Visual Studio](../debugger/debugging-in-visual-studio.md).
-

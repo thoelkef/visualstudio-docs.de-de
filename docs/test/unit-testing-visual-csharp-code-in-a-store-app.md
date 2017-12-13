@@ -1,47 +1,31 @@
 ---
-title: Komponententest von Visual C#-Code in einer Store-App | Microsoft-Dokumentation
+title: Komponententests von Visual C#-Code in einer UWP-App | Microsoft-Dokumentation
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 23cb0d82-0451-464e-98ea-fa66e7010ead
-caps.latest.revision: 19
+caps.latest.revision: "19"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 39b3ce6765d1f4ec342d9a6e5b156eaee01f0faf
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
 ms.translationtype: HT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 768dd5253edac137c50ced5bf524bcc1fdd7f6da
-ms.contentlocale: de-de
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/02/2017
 ---
-# <a name="unit-testing-visual-c-code-in-a-store-app"></a>Unittests von Visual C#-Code in einer Store-App
-Dieses Thema beschreibt eine Möglichkeit zum Erstellen von Komponententests für eine Visual C#-Klasse in einer Windows Store-App. Die Klasse "Rooter" implementiert eine Funktion zum näherungsweisen Berechnen der Quadratwurzel einer vorgegebenen Zahl, und zwar in einer Weise, die entfernt an Grenzwertberechnungen in der Analysis erinnert. Von der Mathematik-App kann diese Funktion dann verwendet werden, um Benutzern zu zeigen, wie interessant und unterhaltsam Mathematik sein kann.  
+# <a name="unit-testing-visual-c-code-in-a-uwp-app"></a>Komponententests von Visual C#-Code in einer UWP-App
+In diesem Thema wird eine Möglichkeit zum Erstellen von Komponententests für eine Visual C#-Klasse in einer UWP-App beschrieben. Die Klasse "Rooter" implementiert eine Funktion zum näherungsweisen Berechnen der Quadratwurzel einer vorgegebenen Zahl, und zwar in einer Weise, die entfernt an Grenzwertberechnungen in der Analysis erinnert. Von der Mathematik-App kann diese Funktion dann verwendet werden, um Benutzern zu zeigen, wie interessant und unterhaltsam Mathematik sein kann.  
   
  In diesem Thema wird gezeigt, wie Komponententests als erster Schritt in der Entwicklung verwendet werden. Bei dieser Vorgehensweise schreiben Sie zuerst eine Testmethode, die ein bestimmtes Verhalten in Ihrem Testsystem überprüft. Anschließend schreiben Sie den Code, der im Test erfolgreich ist. Durch das Ändern der Reihenfolge bei den folgenden Prozeduren, können Sie diese Strategie umkehren und zuerst den zu testenden Code und anschließend die Komponententests schreiben.  
   
  In diesem Thema werden auch eine einzelne Visual Studio-Projektmappe und separate Projekte für die zu testenden Komponententests und DLLs erstellt. Sie können die Komponententests auch direkt in das DLL-Projekt einfügen, oder Sie können separate Lösungen für die Komponententests und die DLL erstellen.  
   
 > [!NOTE]
->  Visual Studio-Community, Enterprise und Professional stellen zusätzliche Funktionen für Komponententests bereit.  
+>  Visual Studio Community, Enterprise und Professional stellen zusätzliche Funktionen für Komponententests bereit.  
 >   
 >  -   Sie können ein beliebiges Drittanbieter- und Open Source-Framework für Komponententest verwenden, mit dem ein Add-On-Adapter für den Microsoft-Test-Explorer erstellt wurde. Sie können auch Codeabdeckungsinformationen für die Tests analysieren und anzeigen.  
 > -   Führen Sie Ihre Tests nach jedem Build aus.  
@@ -68,13 +52,13 @@ Dieses Thema beschreibt eine Möglichkeit zum Erstellen von Komponententests fü
   
 1.  Wählen Sie im Menü **Datei** die Option **Neu** aus, und klicken Sie dann auf **Neues Projekt**.  
   
-2.  Erweitern Sie im Dialogfeld **Neues Projekt** den Eintrag **Installiert**, erweitern Sie **Visual C#**, und wählen Sie **Windows Store** aus. Wählen Sie dann in der Liste der Projektvorlagen **Leere App** aus.  
+2.  Erweitern Sie im Dialogfeld **Neues Projekt** den Eintrag **Installiert**, erweitern Sie **Visual C#**, und wählen Sie **Windows Universal** aus. Wählen Sie dann in der Liste der Projektvorlagen **Leere App** aus.  
   
 3.  Nennen Sie das Projekt `Maths`, und stellen Sie sicher, dass **Projektmappenverzeichnis erstellen** ausgewählt ist.  
   
 4.  Wählen Sie im Projektmappen-Explorer den Projektmappenname aus. Wählen Sie anschließend aus dem Kontextmenü **Hinzufügen** und dann **Neues Projekt** aus.  
   
-5.  Erweitern Sie im Dialogfeld **Neues Projekt** den Eintrag **Installiert**, erweitern Sie **Visual C#**, und wählen Sie **Windows Store** aus. Wählen Sie dann **Komponententestbibliothek (Windows Store-Apps)** aus der Liste der Projektvorlagen aus.  
+5.  Erweitern Sie im Dialogfeld **Neues Projekt** den Eintrag **Installiert**, erweitern Sie **Visual C#**, und wählen Sie **Windows Universal** aus. Klicken Sie dann in der Liste der Projektvorlagen auf **Komponententestbibliothek (Universal Windows)**.  
   
      ![Erstellen Sie das Komponententestprojekt](../test/media/ute_cs_windows_createunittestproject.png "UTE_Cs_windows_CreateUnitTestProject")  
   
@@ -381,4 +365,3 @@ Dieses Thema beschreibt eine Möglichkeit zum Erstellen von Komponententests fü
   
 > [!NOTE]
 >  Wenn Sie eine Hilfsmethode zu einer Testklasse hinzufügen, dürfen Sie nicht das `[TestMethod]`-Attribut zur Methode hinzufügen. Die auszuführende Methode wird vom Test-Explorer nicht registriert.
-

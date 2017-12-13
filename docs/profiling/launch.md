@@ -1,90 +1,91 @@
 ---
-title: "Starten | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: Launch | Microsoft-Dokumentation
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: f81bde5c-3394-4b79-a315-c2f6491689b3
-caps.latest.revision: 13
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 95bec41931dbde49b3de4c6ff5250df494646392
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Starten
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Die **Launch**\-Option startet den Profiler mithilfe der Samplingmethode. Darüber hinaus startet sie auch die angegebene Anwendung.  
+# <a name="launch"></a>Starten
+Die Option **Launch** startet den Profiler mit der Beispielmethode sowie die angegebene Anwendung.  
   
- Um die **Launch**\-Option verwenden zu können, müssen Sie die **Sample**\-Methode in der **Start**\-Option angeben.  
+ Um **Launch** zu verwenden, müssen Sie die Methode **Sample** in der Option **Start** angeben.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 VSPerfCmd.exe /Launch:AppName [Options]  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `AppName`  
- Der Name der Anwendung, die gestartet werden soll.  Vollständige Pfade und Teilpfade vom aktuellen Verzeichnis werden unterstützt.  
+ Der Name der zu startenden Anwendung. Es werden sowohl vollständige als auch partielle Pfade aus dem aktuellen Verzeichnis unterstützt.  
   
-## Gültige Optionen  
- Die folgenden VSPerfCmd\-Optionen können in Verbindung mit der **Launch**\-Option in einer einzelnen Befehlszeile kombiniert werden.  
+## <a name="valid-options"></a>Gültige Optionen  
+ Die folgenden VSPerfCmd-Optionen können mit der Option **Launch** in derselben Befehlszeile kombiniert werden.  
   
  **Start:** `Method`  
- Initialisiert die Befehlszeilen\-Profilersitzung und legt die angegebene Profilerstellungsmethode fest.  
+ Initialisiert die Befehlszeilen-Profilersitzung und legt die angegebene Profilerstellungsmethode fest  
   
- **GlobalOn**und**GlobalOff**  
- Damit wird die Profilerstellung fortgesetzt \(**GlobalOn**\) oder angehalten \(**GlobalOff**\), die Profilerstellungssitzung wird jedoch nicht beendet.  
+ **GlobalOn** und **GlobalOff**  
+ Setzt die Profilerstellung fort (**GlobalOn**) oder unterbricht sie (**GlobalOff**), die Profilerstellungssitzung jedoch nicht  
   
  **ProcessOn:** `PID` und **ProcessOff**:`PID`  
- Damit wird die Profilerstellung für den angegebenen Prozess fortgesetzt \(**ProcessOn**\) oder angehalten \(**ProcessOff**\).  
+ Setzt die Profilerstellung für den angegebenen Prozess fort (**ProcessOn**) oder unterbricht sie (**ProcessOff**)  
   
  **TargetCLR**  
- Gibt die Version der .NET Framework\-CLR \(Common Language Runtime\) an, für die ein Profil erstellt werden soll, wenn in einer Profilerstellungssitzung mehr als eine Version geladen wurde.  Standardmäßig wird die zuerst geladene Version für die Profilerstellung verwendet.  
+ Gibt die Version der .NET Framework-CLR (Common Language Runtime) für die Profilerstellung an, wenn mehr als eine Version in einer Profilerstellungssitzung geladen wird. Standardmäßig wird ein Profil für die zuerst geladene Version erstellt.  
   
-## Exklusive Optionen  
- Die folgenden Optionen können nur in Verbindung mit der **Launch**\-Option verwendet werden.  
+## <a name="exclusive-options"></a>Ausschließliche Optionen  
+ Die folgende Option kann nur mit der Option **Launch** (Start) verwendet werden.  
   
- **Console**  
- Startet die angegebene Befehlszeilenanwendung in einem neuen Fenster.  
+ **Konsole**  
+ Startet die angegebene Befehlszeilen-Anwendung in einem neuen Fenster  
   
  **Args:** `ArgList`  
- Gibt die Liste der an die Anwendung zu übergebenden Argumente an.  
+ Gibt eine Liste von Argumenten an, die an die Anwendung übergeben werden sollen  
   
  **LineOff**  
- Deaktiviert der Auflistung von Profilerstellungsdaten auf Zeilenebene.  
+ Deaktiviert das Erfassen von Profilerstellungsdaten auf Zeilenebene.  
   
-## Samplingoptionen  
- In der **Launch**\-Befehlszeile kann eine der folgenden Samplingintervalloptionen angegeben werden.  Das Standardsamplingintervall beträgt 10.000.000 Prozessortaktzyklen.  
+## <a name="sampling-options"></a>Samplingoptionen  
+ Eine der folgenden Optionen für Samplingintervalle kann in der **Launch**-Befehlszeile angegeben werden. Das Standardsamplingintervall sind 10.000.000 Prozessortaktzyklen.  
   
- **Timer**\[**:**`Cycles`\]**PF**\[**:**`Events`\]**Sys**\[**:**`Events`\]**Counter**\[**:**`Name`,`Reload`,`FriendlyName`\]**GC**\[:**allocation**&#124;**lifetime**\]  
- Gibt die Anzahl und den Typ des Samplingintervalls an.  
+ **Timer**[**:**`Cycles`]**PF**[**:**`Events`]**Sys**[**:**`Events`]**Counter**[**:**`Name`,`Reload`,`FriendlyName`]**GC**[:**allocation**|**lifetime**]  
+ Gibt die Anzahl und den Typ des Samplingintervalls an  
   
--   **Timer** \- Führt alle `Cycles` nicht angehaltene Prozessortaktzyklen ein Sampling durch.  Wenn `Cycles` nicht angegeben ist, werden 10.000.000 Zyklen verwendet.  
+-   **Timer**: Sampelt alle nicht angehaltenen `Cycles`-Prozessortaktzyklen. Wenn `Cycles` nicht angegeben ist, wird ein Intervall von 10.000.000 festgelegt.  
   
--   **PF** \- Führt alle `Events` Seitenfehler ein Sampling durch.  Wenn `Events` nicht angegeben ist, werden 10 Seitenfehler verwendet.  
+-   **PF**: Sampelt alle `Events`-Seitenfehler. Wenn `Events` nicht angegeben ist, geschieht dies bei jedem 10. Seitenfehler.  
   
--   **Sys** \- Führt alle `Events` Aufrufe des Betriebssystems ein Sampling durch.  Wenn `Events` nicht angegeben ist, werden 10 Systemaufrufe verwendet.  
+-   **Sys**: Sampelt `Events`-Aufrufe des Betriebssystems. Wenn `Events` nicht angegeben ist, wird jeder 10. Systemaufruf untersucht.  
   
--   **Counter** \- Führt alle `Reload` CPU\-Leistungsindikatoren, die mit `Name` angegeben sind, ein Sampling durch.  Optional kann `FriendlyName` eine Zeichenfolge angeben, die  in Profilerberichten als Spaltenüberschrift verwendet werden soll.  
+-   **Counter**: Sampelt alle `Reload`-Zahlen der von `Name` angegebenen CPU-Leistungsindikatoren. `FriendlyName` kann optional eine Zeichenfolge angeben, die als Spaltenüberschrift in Profilerberichten verwendet wird.  
   
--   **GC** \- Sammelt .NET\-Arbeitsspeicherdaten.  Standardmäßig \(**allocation**\) werden Daten bei jeder Speicherbelegung gesammelt.  Wenn der **lifetime**\-Parameter angegeben wird, werden Daten auch bei jedem Garbage Collection\-Ereignis erfasst.  
+-   **GC**: Sammelt .NET-Speicherdaten. Wenn der Parameter **Allocation** angegeben wird (Standard), werden Daten bei jedem Speicherbelegungsereignis gesammelt. Wenn jedoch der **Lifetime**-Parameter angegeben wird, werden die Daten auch bei jedem Garbage Collection-Ereignis gesammelt.  
   
-## Beispiel  
- In diesem Beispiel wird die Verwendung der **Launch**\-Option zum Starten einer Anwendung veranschaulicht.  
+## <a name="example"></a>Beispiel  
+ In diesem Beispiel wird das Verwenden von **Launch** zum Starten einer Anwendung veranschaulicht.  
   
 ```  
 VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp  
 VSPerfCmd.exe /Launch:TestApp.exe  
 ```  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [Profilerstellung für eigenständige Anwendungen](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [Profilerstellung für ASP.NET\-Webanwendungen](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [Profilerstellungsdienste](../profiling/command-line-profiling-of-services.md)
+ [Profilerstellung für ASP.NET-Webanwendungen](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [Erstellen von Dienstprofilen](../profiling/command-line-profiling-of-services.md)

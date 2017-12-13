@@ -1,25 +1,24 @@
 ---
-title: "Prozentsatz der Rauschunterdr&#252;ckung | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.cv.threads.filter"
-helpviewer_keywords: 
-  - "Parallelitätsschnellansicht, Prozentsatz der Rauschunterdrückung"
+title: "Prozentsatz der Rauschunterdrückung | Microsoft-Dokumentation"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vs.cv.threads.filter
+helpviewer_keywords: Concurrency Visualizer, Noise Reduction Percentage
 ms.assetid: 1c10cd4c-2fdd-48c9-b562-a334b3b2df6c
-caps.latest.revision: 6
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 6
+caps.latest.revision: "6"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 6c5fe0e705441311a7d5bdade0e794729ae8f1d6
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Prozentsatz der Rauschunterdr&#252;ckung
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Standardmäßig beträgt der prozentuale Wert für die Rauschunterdrückungseinstellung 2.  Nur Einträge mit einem Prozentsatz der inklusiven Zeit, der größer oder gleich dieser Einstellung ist, werden in der Aufrufstruktur angezeigt.  Durch Ändern der Einstellung können Sie die Anzahl von Einträgen steuern, die in der Aufrufstruktur angezeigt werden.  Wenn Sie zum Beispiel den Wert in 10 ändern, werden nur Aufrufstruktureinträge mit einer inklusiven Zeit größer oder gleich 10 % angezeigt.  Wenn Sie den Wert der Einstellung vergrößern, können Sie sich auf Einträge konzentrieren, die größere Auswirkungen auf die Leistung des Prozesses haben.
+# <a name="noise-reduction-percentage"></a>Prozentsatz der Rauschunterdrückung
+Standardmäßig ist der Wert der Einstellung für den Prozentsatz der Rauschunterdrückung auf 2 festgelegt. In der Aufrufstruktur werden nur Einträge angezeigt, für die der Prozentsatz der inklusiven Zeit größer oder gleich dieser Einstellung ist. Indem Sie diese Einstellung ändern, können Sie die Anzahl der Einträge, die in der Aufrufstruktur angezeigt werden, festlegen. Wenn der Wert z.B. in 10 geändert wird, werden nur Einträge in der Aufrufstruktur angezeigt, deren inklusive Zeit größer oder gleich 10 % sind. Indem Sie den Wert der Einstellung erhöhen, können Sie den Fokus auf Einträge legen, die einen größeren Einfluss auf die Leistung Ihres Prozesses haben.

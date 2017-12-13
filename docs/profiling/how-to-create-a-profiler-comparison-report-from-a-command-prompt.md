@@ -1,37 +1,38 @@
 ---
-title: "Gewusst wie: Erstellen eines Profiler-Vergleichsberichts &#252;ber eine Eingabeaufforderung | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: "Vorgehensweise: Erstellen eines Profilervergleichsberichts über eine Eingabeaufforderung | Microsoft-Dokumentation"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 00548d16-eb5b-46f7-8a65-862f98a43831
-caps.latest.revision: 10
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 0fe95412c11da05d409954762f40c46745b98940
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Gewusst wie: Erstellen eines Profiler-Vergleichsberichts &#252;ber eine Eingabeaufforderung
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Sie können einen Bericht der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]\-Profilerstellungstools generieren, in dem die Leistungsdaten von zwei Profilerstellungs\-Datendateien \(VSP\- oder VSPS\-Dateien\) miteinander verglichen werden.  In dem Bericht werden die Unterschiede, Leistungsregressionen und Verbesserungen angezeigt, die zwischen beiden Profilerstellungssitzungen aufgetreten sind.  Die Werte im Bericht stellen das Delta bzw. die Abweichung von der Baseline der ersten Datei dar, die Sie angeben.  Zur Berechnung des Deltas wird der Unterschied zwischen dem alten Wert \(Baselinewert\) und dem Ergebniswert aus der neuen Analyse ermittelt.  Vergleiche der Profilerdaten können auf den Funktionen im Code, den Modulen in der Anwendung, Zeilen, Anweisungszeigern \(IPs\) und Typen basieren.  
+# <a name="how-to-create-a-profiler-comparison-report-from-a-command-prompt"></a>Gewusst wie: Erstellen eines Profiler-Vergleichsberichts über eine Eingabeaufforderung
+Sie können einen Bericht zu Profilerstellungstools von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] erzeugen, der die Leistungsdaten von zwei Profilerstellungsdatendateien (VSP oder VSPS) miteinander vergleicht. Der Bericht zeigt die Unterschiede, Leistungsabnahmen und -verbesserungen, die beim Vergleich von zwei Profilerstellungssitzungen aufgefallen sind. Die Werte im Bericht stehen für das Delta, oder die Abweichungen, von den Grundwerten der ersten Datei, die Sie angegeben haben. Zur Berechnung des Deltas wird der Unterschied zwischen dem alten Wert, welcher der Grundwert ist, und dem Ergebniswert aus der neuen Analyse ermittelt. Vergleiche der Profilerdaten können auf den Funktionen im Code, den Modulen in der Anwendung, Zeilen, Anweisungszeigern (IPs) und Typen basieren.  
   
- Geben Sie die folgende Befehlszeile ein, um die Bezeichner der Vergleichskategorien und der Felder aufzuführen:  
+ Um die Bezeichner der Vergleichskategorien und -felder aufzulisten, geben Sie die folgende Befehlszeile ein:  
   
- **VSPerfReport \/querydifftables**  *VspFileName1* *VspFileName2*  
+ **VSPerfReport /querydifftables** *VspDateiName1* *VspDateiName2*  
   
- Verwenden Sie die folgende Syntax, um den Vergleichsbericht zu erstellen:  
+ Verwenden Sie folgende Syntax zum Erstellen des Vergleichsberichts:  
   
- **VSPerfReport \/diff**  `VspFileName1` *VspFileName2* \[**\/**`Options`\]  
+ **VSPerfReport /diff** `VspFileName1` *VspDateiName2* [**/**`Options`]  
   
- Sie können der **VSPerfReport \/diff** \-Befehlszeile Optionen aus der folgenden Tabelle hinzufügen.  
+ Sie können Optionen aus der folgenden Tabelle in der Befehlszeile **VSPerfReport /diff** einfügen.  
   
-|Option|**Beschreibung**|  
-|------------|----------------------|  
-|**DiffThreshold:**\[*Value*\]|Ignoriert die Differenz, wenn sie unter diesem in Prozent angegebenen Schwellenwert liegt.  Neue Daten mit Werten, die unter diesem Schwellenwert liegen, werden ebenfalls nicht angezeigt.|  
-|**DiffTable:** *TableName*|Verwendet diese Tabelle, um Dateien miteinander zu vergleichen.  Standardmäßig wird die Funktionstabelle verwendet.  Geben Sie den Bezeichner an, der in **VSPerfReport \/querydifftables** aufgeführt ist.|  
-|**DiffColumn:** *ColumnName*|Verwendet diese Spalte, um Werte miteinander zu vergleichen.  Standardmäßig wird die Spalte mit dem prozentualen Wert der exklusiven Samplings verwendet.  Geben Sie den Bezeichner an, der in **VSPerfReport \/querydifftables** aufgeführt ist.|
+|Option|Beschreibung|  
+|------------|-----------------|  
+|**DiffThreshold:**[*Wert*]|Ignorieren der Differenz, wenn Sie sich unterhalb dieses prozentualen Schwellenwerts befindet. Neue Daten mit Werten unterhalb dieses Schwellenwerts werden nicht angezeigt.|  
+|**DiffTable:** *Tabellenname*|Vergleichen Sie die Dateien anhand dieser Tabelle. Standardmäßig wird die Funktionstabelle verwendet. Geben Sie den Bezeichner an, der in **VSPerfReport /querydifftables** aufgelistet ist.|  
+|**DiffColumn:** *Spaltenname*|Verwenden Sie diese Spalte, um Werte zu vergleichen. Standardmäßig wird die exklusive Beispielprozentsatzspalte verwendet. Geben Sie den Bezeichner an, der in **VSPerfReport /querydifftables** aufgelistet ist.|

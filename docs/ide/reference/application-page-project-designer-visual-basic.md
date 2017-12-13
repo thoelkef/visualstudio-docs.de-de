@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,38 +14,22 @@ helpviewer_keywords:
 - Project Designer, Application page
 - Application page in Project Designer
 ms.assetid: 8cec9fea-cd92-47ff-88dd-7c928f0b4a74
-caps.latest.revision: 64
-author: kempb
-ms.author: kempb
+caps.latest.revision: "64"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 6fbf89668d47d55d1d77a1d7f11765567fc73405
-ms.openlocfilehash: 4be8a1f36d81e2cb36d9daab9817f04d18ecb94a
-ms.contentlocale: de-de
-ms.lasthandoff: 05/26/2017
-
+ms.openlocfilehash: b5483245e7f2ae341d08618485a4f49e91eb8fa9
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/02/2017
 ---
 # <a name="application-page-project-designer-visual-basic"></a>Application Page, Project Designer (Visual Basic)
 Legen Sie auf der Seite **Anwendung** des Projekt-Designers die Anwendungseinstellungen und -eigenschaften eines Projekts fest.  
   
- Um auf die Seite **Anwendung** zuzugreifen, wählen Sie im **Projektmappen-Explorer** einen Projektknoten (nicht den Knoten **Projektmappen** aus. Wählen Sie dann in der Menüleiste die Option **Projekt** und dann **Eigenschaften** aus. Wenn der Projekt-Designer angezeigt wird, klicken Sie auf die Registerkarte **Anwendung**.  
+Um auf die Seite **Anwendung** zuzugreifen, wählen Sie im **Projektmappen-Explorer** einen Projektknoten (nicht den Knoten **Projektmappen** aus. Wählen Sie dann in der Menüleiste die Option **Projekt** und dann **Eigenschaften** aus. Wenn der Projekt-Designer angezeigt wird, klicken Sie auf die Registerkarte **Anwendung**.  
   
- [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]  
+[!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]  
   
 ## <a name="general-application-settings"></a>Allgemeine Anwendungseinstellungen  
  Mit den folgenden Optionen können Sie allgemeine Einstellungen für eine Anwendung konfigurieren.  
@@ -79,7 +62,7 @@ Legen Sie auf der Seite **Anwendung** des Projekt-Designers die Anwendungseinste
  Weitere Informationen finden Sie unter [Gewusst wie: Bestimmte .NET Framework-Version als Ziel](../../ide/how-to-target-a-version-of-the-dotnet-framework.md) und [Übersicht über die Ausrichtung auf mehrere Zielversionen in Visual Studio](../../ide/visual-studio-multi-targeting-overview.md).  
   
  **Anwendungstyp**  
- Gibt den Typ der zu erstellenden Anwendung an. Für [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)]-App können Sie **Windows Store-App**, **Klassenbibliothek** oder **WinMD-Datei** angeben. Für die meisten anderen Anwendungstypen können Sie **Windows-Anwendung**, **Konsolenanwendung**, **Klassenbibliothek**, **Windows-Dienst** oder **Websteuerelementbibliothek** angeben.  
+ Gibt den Typ der zu erstellenden Anwendung an. Für Windows 8.x-Apps können Sie **Windows Store-App**, **Klassenbibliothek** oder **WinMD-Datei** angeben. Für die meisten anderen Anwendungstypen können Sie **Windows-Anwendung**, **Konsolenanwendung**, **Klassenbibliothek**, **Windows-Dienst** oder **Websteuerelementbibliothek** angeben.  
   
  Für ein Webanwendungsprojekt müssen Sie **-Klassenbibliothek** angeben.  
   
@@ -176,5 +159,4 @@ Legen Sie auf der Seite **Anwendung** des Projekt-Designers die Anwendungseinste
  Das Objekt <xref:System.Windows.Application> löst Ereignisse aus, wenn bestimmte Anwendungszustandsänderungen stattfinden (z.B. beim Starten oder Herunterfahren der Anwendung). Eine vollständige Liste der Ereignisse, die diese Klasse verfügbar macht, finden Sie unter <xref:System.Windows.Application>. Diese Ereignisse werden im Benutzercodeabschnitt der partiellen `Application`-Klasse verarbeitet.  
   
 ## <a name="see-also"></a>Siehe auch  
-[Verwalten von Anwendungseigenschaften](../../ide/application-properties.md)
- [Schreiben von Code in Office-Projektmappen](/office-dev/office-dev/writing-code-in-office-solutions)
+[Verwalten von Anwendungseigenschaften](../../ide/application-properties.md) [Schreiben von Code in Office-Projektmappen](/office-dev/office-dev/writing-code-in-office-solutions)

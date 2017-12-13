@@ -4,8 +4,7 @@ description: '{{PLATZHALTER}}'
 ms.date: 08/14/2017
 ms.reviewer: tims
 ms.suite: 
-ms.technology:
-- vs-ide-install
+ms.technology: vs-ide-install
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -13,14 +12,13 @@ helpviewer_keywords:
 - '{{PLACEHOLDER}}'
 ms.assetid: 35C7AB05-07D5-4B38-BCAC-AB88444E7368
 author: timsneath
-ms.author: tims
+ms.author: tglee
 manager: ghogen
+ms.openlocfilehash: 72e217f8543b6b150cc0587c36fac692e150179d
+ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
 ms.translationtype: HT
-ms.sourcegitcommit: f23906933add1f4706d8786b2950fb3b5d2e6781
-ms.openlocfilehash: 7267b279a94094eb58fe51edd1ad36cd8967c711
-ms.contentlocale: de-de
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/11/2017
 ---
 # <a name="control-updates-to-network-based-visual-studio-deployments"></a>Steuern von Updates für netzwerkbasierte Visual Studio-Bereitstellungen
 
@@ -76,16 +74,18 @@ Sie können die Benachrichtigungen deaktivieren, wenn Sie nicht möchten, dass B
 Da Visual Studio 2017 [Registrierungseinträge in einer privaten Registrierung speichert](tools-for-managing-visual-studio-instances.md#editing-the-registry-for-a-visual-studio-instance), lässt sich die Registrierung nicht auf die übliche Weise direkt bearbeiten. Visual Studio bietet jedoch das Hilfsprogramm `vsregedit.exe`, mit dessen Hilfe Sie die Visual Studio-Einstellungen ändern können. Sie können Benachrichtigungen mit folgendem Befehl deaktivieren:
 
 ```cmd
-vsregedit.exe set "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise" HKCU ExtensionManager AutomaticallyCheckForUpdates2Override dword 0 
+vsregedit.exe set "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise" HKCU ExtensionManager AutomaticallyCheckForUpdates2Override dword 0
 ```
 (Achten Sie darauf, dass Sie das Verzeichnis ersetzen, damit es der installierten Instanz entspricht, die Sie bearbeiten möchten.)
 
 > [!TIP]
 > Mithilfe von [vswhere.exe](tools-for-managing-visual-studio-instances.md#detecting-existing-visual-studio-instances) können Sie eine bestimmte Instanz von Visual Studio auf einer Clientarbeitsstation finden.
 
+## <a name="get-support"></a>Support aufrufen
+Manchmal kann etwas schiefgehen. Wenn die Installation von Visual Studio fehlschlägt, lesen Sie den Artikel [Problembehandlung bei der Visual Studio 2017-Installation und Upgradefehlern](troubleshooting-installation-issues.md), um Hilfe bei der Problemlösung zu erhalten. Sie können uns außerdem über das Tool [Ein Problem melden](../ide/how-to-report-a-problem-with-visual-studio-2017.md) in der Visual Studio-IDE oder über [UserVoice](https://visualstudio.uservoice.com/forums/121579) Probleme und Vorschläge mitteilen. Sie können Probleme mit Produkten im Portal [Visual Studio Developer Community](https://developercommunity.visualstudio.com/) im Blick behalten, Fragen stellen und Antworten finden. Über die [Visual Studio-Unterhaltung in der Gitter-Community](https://gitter.im/Microsoft/VisualStudio) können Sie Kontakt zu uns oder anderen Visual Studio-Entwicklern aufnehmen ([GitHub](https://github.com/)-Konto erforderlich).
+
 ## <a name="see-also"></a>Siehe auch
 * [Installieren von Visual Studio](install-visual-studio.md)
 * [Administratorhandbuch für Visual Studio 2017 RC](visual-studio-administrator-guide.md)
 * [Verwenden von Befehlszeilenparametern zum Installieren von Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
 * [Tools zum Verwalten von Visual Studio-Instanzen](tools-for-managing-visual-studio-instances.md)
-

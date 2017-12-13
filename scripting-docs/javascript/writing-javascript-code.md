@@ -1,53 +1,55 @@
 ---
-title: "Schreiben von JavaScript-Code | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.htmldesigner.html"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "Code, JavaScript-Syntax"
-  - "Kommentare, JavaScript-Code"
-  - "JavaScript-Code"
+title: Schreiben von JavaScript-Code | Microsoft-Dokumentation
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vs.htmldesigner.html
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- code, JavaScript syntax
+- comments, JavaScript code
+- JavaScript code
 ms.assetid: dde28266-0d0f-4460-a819-f931cf0911ad
-caps.latest.revision: 19
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 19
+caps.latest.revision: "19"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: e50bc25f818724b59d9adda51f97d76ae14de2b4
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# Schreiben von JavaScript-Code
-Wie viele andere Programmiersprachen ist [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] in Anweisungen, Blöcke, die aus verknüpften Sätzen von Anweisungen bestehen, und Kommentare gegliedert.  Innerhalb einer Anweisung können Sie Variablen, Zeichenfolgen, Zahlen und Ausdrücke verwenden.  
+# <a name="writing-javascript-code"></a>Schreiben von JavaScript-Code
+Wie jede andere Programmiersprache auch ist [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] in Anweisungen, Blocks, die aus verschiedenen miteinander verknüpften Anweisungen bestehen, und Kommentare unterteilt. In einer Anweisung können Sie Variablen, Zeichenfolgen, Nummern und Ausdrücke verwenden.  
   
-## Anweisungen  
- Ein [!INCLUDE[javascript](../javascript/includes/javascript-md.md)]\-Programm ist eine Auflistung von Anweisungen.  [!INCLUDE[javascript](../javascript/includes/javascript-md.md)]\-Anweisungen kombinieren Ausdrücke so, dass eine vollständige Aufgabe ausgeführt wird.  
+## <a name="statements"></a>Anweisungen  
+ Ein [!INCLUDE[javascript](../javascript/includes/javascript-md.md)]-Programm ist eine Auflistung von Anweisungen. [!INCLUDE[javascript](../javascript/includes/javascript-md.md)]-Anweisungen kombinieren Ausdrücke so miteinander, dass sie eine vollständige Aufgabe ausführen können.  
   
- Eine Anweisung besteht aus einem oder mehreren Ausdrücken, Schlüsselwörtern oder Operatoren \(Symbolen\).  In der Regel wird eine Anweisung in eine einzelne Zeile geschrieben, sie kann sich jedoch auch über zwei oder mehr Zeilen erstrecken.  Außerdem ist es möglich, in eine Zeile zwei oder mehr Anweisungen zu schreiben. Dazu werden sie durch Semikolons getrennt.  Im Allgemeinen beginnt mit jeder neuen Zeile eine neue Anweisung.  Es empfiehlt sich, die Anweisungen explizit zu beenden.  Dies geschieht mit dem Semikolon \(;\), dem [!INCLUDE[javascript](../javascript/includes/javascript-md.md)]\-Endezeichen für Anweisungen.  
+ Eine Anweisung besteht aus mindestens einem Ausdruck, Schlüsselwort oder Operator (Symbole). In der Regel werden Anweisungen in nur eine Zeile geschrieben, obwohl sie auch länger sein können. Zudem können auch mehrere Anweisungen in dieselbe Zeile geschrieben werden, wenn man sie durch Semikolons voneinander abtrennt. Für gewöhnlich beginnt jede neue Zeile mit einer neuen Anweisung. Sie sollten Ihre Anweisungen explizit beenden. Dies funktioniert mithilfe eines Semikolons („;“). Dieses Zeichen gilt als Abschlusszeichen für [!INCLUDE[javascript](../javascript/includes/javascript-md.md)]-Anweisungen.  
   
- Im Folgenden finden Sie zwei Beispiele für [!INCLUDE[javascript](../javascript/includes/javascript-md.md)]\-Anweisungen.  Die Sätze nach den \/\/\-Zeichen sind *Kommentare*, die erläuternde Hinweise im Programm sind.  
+ Im Folgenden werden zwei Beispiele für [!INCLUDE[javascript](../javascript/includes/javascript-md.md)]-Anweisungen genannt. Die Sätze nach den //-Zeichen sind *Kommentare*, d.h. erläuternde Hinweise in dem Programm.  
   
-```javascript  
+```JavaScript  
 var aBird = "Robin"; // Assign the text "Robin" to the variable aBird.  
 var today = new Date(); // Assign today's date to the variable today.  
 ```  
   
- Eine von geschweiften Klammern \({}\) eingeschlossene Gruppe von [!INCLUDE[javascript](../javascript/includes/javascript-md.md)]\-Anweisungen wird als *Block* bezeichnet.  In einem Block gruppierte Anweisungen können im Allgemeinen als eine einzige Anweisung behandelt werden.  Das bedeutet, dass Sie Blöcke an den meisten Stellen verwenden können, an denen [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] eine einzelne Anweisung erwartet.  Zu den wichtigen Ausnahmen gehören die Header von **for**\-Schleifen und `while`\-Schleifen.  Beachten Sie, dass die einzelnen Anweisungen innerhalb eines Blocks mit einem Semikolon beendet werden, der Block selbst jedoch nicht.  
+ Eine Gruppe von [!INCLUDE[javascript](../javascript/includes/javascript-md.md)]-Anweisungen, die von geschweiften Klammern ({}) eingeschlossen wird, wird als *Block* bezeichnet. Anweisungen, die in einen Block gruppiert werden, können in der Regel als eine Anweisung behandelt werden. Das bedeutet, dass Sie an den meisten Stellen, an denen [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] nur eine Anweisung erwartet, einen Block verwenden können. Die Header von **For**- und `while`-Schleifen stellen eine wichtige Ausnahme dar. Beachten Sie, dass zwar einzelne Anweisungen in einem Block mit Semikolons enden, der Block an sich jedoch nicht.  
   
- Blöcke werden im Allgemeinen in Funktionen und Bedingungen verwendet.  Beachten Sie, dass in [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] ein Block im Unterschied zu C\+\+ und einigen anderen Sprachen nicht als neuer Bereich gilt; nur Funktionen erstellen einen neuen Gültigkeitsbereich.  
+ Blöcke werden in der Regel in Funktionen und Bedingungen verwendet. Beachten Sie, dass [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] im Gegensatz zu C++ und anderen Sprachen einen Block nicht als neuen Bereich anerkennt. Nur Funktionen können einen neuen Bereich erstellen.  
   
- Im folgenden Beispiel enthält die `else`\-Klausel einen Block aus zwei Anweisungen, die von geschweiften Klammern eingeschlossen sind.  Der Block wird als einzelne Anweisung behandelt.  Auch die Funktion selbst besteht aus einem Block von Anweisungen, die von geschweiften Klammern eingeschlossen sind.  Die Anweisungen unterhalb der Funktion liegen außerhalb des Blocks und können daher nicht Bestandteil der Funktionsdefinition sein.  
+ Im folgenden Beispiel enthält die `else`-Klausel einen Block mit zwei Anweisungen, der von geschweiften Klammern umgeben ist. Der Block wird als eine einzige Anweisung behandelt. Außerdem besteht die Funktion aus einem Block mit Anweisungen, der von geschweiften Klammern umgeben ist. Die Anweisungen unter der Funktion gehören nicht zu dem Block. Aus diesem Grund sind sie auch kein Bestandteil der Funktionsdefinition.  
   
-```javascript  
+```JavaScript  
 function inchestometers(inches)  
    {  
    if (inches < 0)  
@@ -64,16 +66,16 @@ var meters = inchestometers(inches);
 document.write("the value in meters is " + meters);  
 ```  
   
-## Kommentare  
- Ein einzeiliger [!INCLUDE[javascript](../javascript/includes/javascript-md.md)]\-Kommentar beginnt mit zwei Schrägstrichen \(\/\/\).  Hier folgt ein Beispiel für einen einzeiligen Kommentar.  
+## <a name="comments"></a>Kommentare  
+ Ein einzeiliger [!INCLUDE[javascript](../javascript/includes/javascript-md.md)]-Kommentar beginnt mit zwei Schrägstrichen („//“). Im Folgenden wird ein Beispiel mit einem einzeiligen Kommentar dargestellt.  
   
-```javascript  
+```JavaScript  
 var aGoodIdea = "Comment your code thoroughly."; // This is a single-line comment.  
 ```  
   
- Ein mehrzeiliger [!INCLUDE[javascript](../javascript/includes/javascript-md.md)]\-Kommentar beginnt mit einem Schrägstrich und einem Sternchen \(\/\*\) und endet mit der umgekehrten Kombination \(\*\/\).  
+ Ein mehrzeiliger [!INCLUDE[javascript](../javascript/includes/javascript-md.md)]-Kommentar beginnt mit einem Schrägstrich und einem Sternchen („/*“) und endet mit den gleichen Zeichen in der umgekehrten Reihenfolge („\*/“).  
   
-```javascript  
+```JavaScript  
 /*  
 This is a multiline comment that explains the preceding code statement.  
   
@@ -86,40 +88,40 @@ of the literal.
 ```  
   
 > [!NOTE]
->  Wenn Sie versuchen, einen mehrzeiligen Kommentar in einen anderen einzubetten, interpretiert [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] den daraus resultierenden mehrzeiligen Kommentar nicht wie erwartet.  Die Kombination aus Sternchen und Schrägstrich \(\*\/\), die das Ende des eingebetteten mehrzeiligen Kommentars markiert, wird als das Ende des gesamten mehrzeiligen Kommentars interpretiert.  Dies bedeutet, dass der Text, der dem eingebetteten mehrzeiligen Kommentar folgt, nicht auskommentiert wird; stattdessen wird er als [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] Code interpretiert, und es werden Syntaxfehler generiert.  
+>  Wenn Sie versuchen, einen mehrzeiligen Kommentar in einen anderen einzubetten, interpretiert [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] den daraus entstandenen mehrzeiligen Kommentar auf nicht erwartete Weise. Die Zeichenfolge „*/“, die das Ende des eingebetteten mehrzeiligen Kommentars darstellt, wird als Ende des gesamten mehrzeiligen Kommentars interpretiert. Das bedeutet, dass der Text, der dem eingebetteten mehrzeiligen Kommentar folgt, nicht auskommentiert wird. Stattdessen wird er als [!INCLUDE[javascript](../javascript/includes/javascript-md.md)]-Code interpretiert, und generiert Syntaxfehler.  
   
- Es wird empfohlen, alle Kommentare als Blöcke aus einzeiligen Kommentaren zu schreiben.  Auf diese Weise können Sie später große Codesegmente durch einen mehrzeiligen Kommentar auskommentieren.  
+ Es wird empfohlen, alle Kommentare als Blöcke mit einzeiligen Kommentaren zu schreiben. So können größere Codesegmente später mit einem mehrzeiligen Kommentar auskommentiert werden.  
   
-```javascript  
+```JavaScript  
 // This is another multiline comment, written as a series of single-line comments.  
 // After the statement is executed, you can refer to the content of the   
 // aGoodIdea variable by using its name.  
 var extendedIdea = aGoodIdea + " You never know when you'll have to figure out what it does.";  
 ```  
   
-## Zuweisungen und Gleichheit  
- Das Gleichheitszeichen \(\=\) dient in [!INCLUDE[javascript](../javascript/includes/javascript-md.md)]\-Anweisungen dazu, Werte Variablen zuzuweisen: Es ist der Zuweisungsoperator.  Der linke Operand des Operators \= ist stets ein Lvalue.  Beispiele für Lvalues sind:  
+## <a name="assignments-and-equality"></a>Zuweisungen und Gleichheit  
+ Das Gleichheitszeichen („=“) wird in [!INCLUDE[javascript](../javascript/includes/javascript-md.md)]-Anweisungen verwendet, um Variablen Werte zuzuweisen. Daher gilt es als Zuweisungsoperator. Der linke Operand des =-Operators ist immer ein Lvalue. Beispiele für Lvalues:  
   
--   Variablen,  
+-   Variablen  
   
--   Arrayelemente,  
+-   Arrayelemente  
   
--   Objekteigenschaften.  
+-   Objekteigenschaften  
   
- Der rechte Operand des Operators \= ist stets ein Rvalue.  Rvalues können ein willkürlicher Wert eines beliebigen Typs sein, beispielsweise der Wert eines Ausdrucks.  Hier folgt ein Beispiel für eine [!INCLUDE[javascript](../javascript/includes/javascript-md.md)]\-Zuweisungsanweisung.  
+ Der rechte Operand des =-Operators ist immer der R-Wert. R-Werte können beliebige Werte beliebiger Typen sein, einschließlich des Werts eines Ausdrucks. Im Folgenden wird eine [!INCLUDE[javascript](../javascript/includes/javascript-md.md)]-Zuweisungsanweisung dargestellt.  
   
-```javascript  
+```JavaScript  
 var anInteger = 3;  
 ```  
   
- Der [!INCLUDE[javascript](../javascript/includes/javascript-md.md)]\-Compiler interpretiert diese Anweisung wie folgt: "Der Variablen **anInteger** den Wert 3 zuweisen" oder "**anInteger** nimmt den Wert 3 an".  
+ Der [!INCLUDE[javascript](../javascript/includes/javascript-md.md)]-Compiler interpretiert diese Anweisung wie folgt: „Wert 3 der **anInteger**-Variable zuordnen“ oder „**anInteger** nimmt den Wert 3 an“.  
   
- Es ist sehr wichtig, dass Ihnen die Unterschiede zwischen dem Operator \= \(Zuweisung\) und dem Operator \=\= \(Gleichheit\) klar sind.  Wenn Sie zwei Werte vergleichen möchten, um festzustellen, ob sie gleich sind, verwenden Sie zwei Gleichheitszeichen \(\=\=\).  Dies wird unter [Steuern des Programmablaufs](../javascript/controlling-program-flow-javascript.md) ausführlich erläutert.  
+ Stellen Sie sicher, dass Ihnen der Unterschied zwischen dem =-Operator (Zuweisung) und dem ==-Operator (Gleichheit) deutlich ist. Wenn Sie zwei Werte miteinander vergleichen wollen, um herauszufinden, ob sie gleich sind, verwenden Sie zwei Gleichheitszeichen („==“). Dieser Vorgang wird detailliert unter [Steuerung des Programmablaufs](../javascript/controlling-program-flow-javascript.md) erläutert.  
   
-## Ausdrücke  
- Ein [!INCLUDE[javascript](../javascript/includes/javascript-md.md)]\-Ausdruckswert kann jeden beliebigen gültigen [!INCLUDE[javascript](../javascript/includes/javascript-md.md)]\-Typ haben: eine Zahl, eine Zeichenfolge, ein Objekt usw.  Die einfachsten Ausdrücke sind Literale.  Hier sind einige Beispiele für [!INCLUDE[javascript](../javascript/includes/javascript-md.md)]\-Literalausdrücke.  
+## <a name="expressions"></a>Ausdrücke  
+ Jeder gültige [!INCLUDE[javascript](../javascript/includes/javascript-md.md)]-Typ (eine Nummer, eine Zeichenfolge, ein Objekt, etc.) kann ein [!INCLUDE[javascript](../javascript/includes/javascript-md.md)]-Ausdruckswert sein. Literale sind die einfachsten Ausdrücke. Im Folgenden werden Beispiele für literale [!INCLUDE[javascript](../javascript/includes/javascript-md.md)]-Ausdrücke dargestellt.  
   
-```javascript  
+```JavaScript  
 3.9                       // numeric literal  
 "Hello!"                  // string literal  
 false                     // boolean literal  
@@ -129,11 +131,11 @@ null                      // literal null value
 function(x){return x*x;}  // function literal  
 ```  
   
- Kompliziertere Ausdrücke können Variablen, Funktionsaufrufe und andere Ausdrücke enthalten.  Mithilfe von Operatoren können Sie Ausdrücke kombinieren und komplexe Ausdrücke erstellen.  Beispiele für Operatoren sind: `+` \(Addition\), `-` \(Subtraktion\), `*` \(Multiplikation\) und `/` \(Division\).  
+ Kompliziertere Ausdrücke können Variablen, Funktionsaufrufe und andere Ausdrücke enthalten. Sie können Ausdrücke mithilfe von Operatoren miteinander kombinieren, um komplexe Ausdrücke zu erstellen. Operatoren sind z.B. `+` (Addition), `-` (Subtraktion), `*` (Multiplikation) und `/` (Division).  
   
- Hier sind einige Beispiele für komplexe [!INCLUDE[javascript](../javascript/includes/javascript-md.md)]\-Ausdrücke.  
+ Im Folgenden sind einige Beispiele für komplexe [!INCLUDE[javascript](../javascript/includes/javascript-md.md)]-Ausdrücke dargestellt.  
   
-```javascript  
+```JavaScript  
 var anExpression = 3 * (4 / 5) + 6;  
 var aSecondExpression = Math.PI * radius * radius;  
 var aThirdExpression = aSecondExpression + "%" + anExpression;  

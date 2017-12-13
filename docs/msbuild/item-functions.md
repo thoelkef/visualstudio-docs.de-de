@@ -1,35 +1,35 @@
 ---
-title: "Item Functions | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "msbuild, Item functions"
+title: Elementfunktionen | Microsoft-Dokumentation
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: msbuild, Item functions
 ms.assetid: 5e6df3cc-2db8-4cbd-8fdd-3ffd03ac0876
-caps.latest.revision: 28
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 28
+caps.latest.revision: "28"
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.openlocfilehash: 8503de5c90544e06fa7119482f67726655a4ffed
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Item Functions
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Ab MSBuild 4.0 kann Code in Aufgaben und Zielen Elementfunktionen aufrufen, um Informationen über die Elemente im Projekt abzurufen.  Diese Funktionen vereinfachen das Abrufen von Distinct\(\)\-Elementen, und mit ihnen erfolgt der Abruf schneller als beim Durchlaufen der Elemente.  
+# <a name="item-functions"></a>Elementfunktionen
+Ab MSBuild 4.0 kann Code in Tasks und Zielen Elementfunktionen aufrufen, um Informationen zu den Elementen des Projekts zu erhalten. Diese Funktionen vereinfachen das Abrufen von Distinct()-Elementen, und mit ihnen erfolgt der Abruf schneller als beim Durchlaufen der Elemente.  
   
-## Zeichenfolgen\-Element\-Funktionen  
- Sie können Zeichenfolgenmethoden und Eigenschaften in .NET Framework verwenden, um jeden Elementwert an auszuführen.  Für <xref:System.String>\-Methoden geben Sie den Methodennamen an.  Für <xref:System.String>\-Eigenschaften geben Sie den Eigenschaftennamen nach "get\_" an.  
+## <a name="string-item-functions"></a>Zeichenfolgenelementfunktionen  
+ Sie können Zeichenfolgenmethoden und -eigenschaften in .NET Framework für jeden Elementwert verwenden. Geben Sie für <xref:System.String>-Methoden den Methodennamen an. Geben Sie für <xref:System.String>-Eigenschaften den Eigenschaftennamen hinter „get_“ an.  
   
- Bei Elementen, die mehrere Zeichenfolgen, die Zeichenfolgenmethode oder die Eigenschaftausführungen auf jeder Zeichenfolge enthalten.  
+ Für Elemente mit mehreren Zeichenfolgen wird die Zeichenfolgenmethode oder -eigenschaft für jede Zeichenfolge ausgeführt.  
   
- Das folgende Beispiel zeigt, wie diese String Elementfunktionen verwendet.  
+ Das folgende Beispiel veranschaulicht die Verwendung dieser Zeichenfolgenelementfunktionen.  
   
-```  
+```xml  
 <ItemGroup>  
     <theItem Include="andromeda;tadpole;cartwheel" />  
 </ItemGroup>  
@@ -50,25 +50,25 @@ Ab MSBuild 4.0 kann Code in Aufgaben und Zielen Elementfunktionen aufrufen, um I
   -->  
 ```  
   
-## Systeminterne Element\-Funktionen  
- In der folgenden Tabelle werden die systeminternen Funktionen aufgeführt, die für Elemente verfügbar sind.  
+## <a name="intrinsic-item-functions"></a>Systeminterne Elementfunktionen  
+ In der unten stehenden Tabelle werden die systeminternen Funktionen aufgelistet, die für Elemente zur Verfügung stehen.  
   
-|Funktion|Beispiel|Description|  
-|--------------|--------------|-----------------|  
-|`Count`|`@(MyItem->Count())`|Gibt die Anzahl der Elemente zurück.|  
-|`DirectoryName`|`@(MyItem->DirectoryName())`|Gibt die Entsprechung von `Path.DirectoryName` für jedes Element zurück.|  
-|`Distinct`|`@(MyItem->Distinct())`|Gibt Elemente zurück, die `Include` unterschiedliche Werte aufweisen.  Metadaten werden ignoriert.  Beim Vergleich wird die Groß\- und Kleinschreibung nicht berücksichtigt.|  
-|`DistinctWithCase`|`@(MyItem->DistinctWithCase())`|Gibt Elemente zurück, die `itemspec` unterschiedliche Werte aufweisen.  Metadaten werden ignoriert.  Beim Vergleich wird die Groß\- und Kleinschreibung berücksichtigt.|  
-|`Reverse`|`@(MyItem->Reverse())`|Gibt die in umgekehrter Reihenfolge zurück.|  
-|`AnyHaveMetadataValue`|`@(MyItem->AnyHaveMetadataValue("MetadataName", "MetadataValue"))`|Gibt `boolean` zurück, um anzugeben, ob jedes Element den angegebenen Metadaten und den Wert hat.  Beim Vergleich wird die Groß\- und Kleinschreibung nicht berücksichtigt.|  
-|`ClearMetadata`|`@(MyItem->ClearMetadata())`|Gibt Elemente mit gelöschten Metadaten zurück.  Nur `itemspec` wird beibehalten.|  
-|`HasMetadata`|`@(MyItem->HasMetadataValue("MetadataName")`|Gibt Elemente zurück, die den angegebenen Metadatennamen haben.  Beim Vergleich wird die Groß\- und Kleinschreibung nicht berücksichtigt.|  
-|`Metadata`|`@(MyItem->Metadata("MetadataName"))`|Gibt die Werte der Metadaten zurück, die den Metadaten verfügen.|  
-|`WithMetadataValue`|`@(MyItem->WithMetadataValue("MetadataName", "MetadataValue")`|Gibt Elemente zurück, die den angegebenen Metadaten und den Wert haben.  Beim Vergleich wird die Groß\- und Kleinschreibung nicht berücksichtigt.|  
+|Funktion|Beispiel|Beschreibung|  
+|--------------|-------------|-----------------|  
+|`Count`|`@(MyItem->Count())`|Gibt die Anzahl der Elemente zurück|  
+|`DirectoryName`|`@(MyItem->DirectoryName())`|Gibt das entsprechende `Path.DirectoryName`-Objekt für jedes Element zurück|  
+|`Distinct`|`@(MyItem->Distinct())`|Gibt Elemente zurück, die eindeutige `Include`-Werte aufweisen Metadaten werden ignoriert. Beim Vergleich wird die Groß- und Kleinschreibung nicht berücksichtigt.|  
+|`DistinctWithCase`|`@(MyItem->DistinctWithCase())`|Gibt Elemente zurück, die eindeutige `itemspec`-Werte aufweisen Metadaten werden ignoriert. Beim Vergleich wird die Groß- und Kleinschreibung berücksichtigt.|  
+|`Reverse`|`@(MyItem->Reverse())`|Gibt die Elemente in umgekehrter Reihenfolge zurück|  
+|`AnyHaveMetadataValue`|`@(MyItem->AnyHaveMetadataValue("MetadataName", "MetadataValue"))`|Gibt einen `boolean`-Wert zurück, der angibt, ob ein Element einen angegebenen Metadatennamen und -wert aufweist. Beim Vergleich wird die Groß- und Kleinschreibung nicht berücksichtigt.|  
+|`ClearMetadata`|`@(MyItem->ClearMetadata())`|Gibt Elemente mit gelöschten Metadaten zurück. Nur das `itemspec`-Objekt wird beibehalten.|  
+|`HasMetadata`|`@(MyItem->HasMetadataValue("MetadataName"))`|Gibt Elemente zurück, die den angegebenen Metadatennamen aufweisen Beim Vergleich wird die Groß- und Kleinschreibung nicht berücksichtigt.|  
+|`Metadata`|`@(MyItem->Metadata("MetadataName"))`|Gibt die Werte der Metadaten zurück, die den Metadatennamen aufweisen|  
+|`WithMetadataValue`|`@(MyItem->WithMetadataValue("MetadataName", "MetadataValue"))`|Gibt Elemente zurück, die den angegebenen Metadatennamen und -wert aufweisen. Beim Vergleich wird die Groß- und Kleinschreibung nicht berücksichtigt.|  
   
- Im folgenden Beispiel wird gezeigt, wie systeminternes Element funktioniert verwendet.  
+ In folgendem Beispiel wird veranschaulicht, wie Sie systeminterne Elementfunktionen verwenden können.  
   
-```  
+```xml  
 <ItemGroup>  
     <TheItem Include="first">  
         <Plant>geranium</Plant>  
@@ -101,5 +101,5 @@ Ab MSBuild 4.0 kann Code in Aufgaben und Zielen Elementfunktionen aufrufen, um I
   -->  
 ```  
   
-## Siehe auch  
- [Items](../msbuild/msbuild-items.md)
+## <a name="see-also"></a>Siehe auch  
+ [Items](../msbuild/msbuild-items.md) (MSBuild-Elemente)

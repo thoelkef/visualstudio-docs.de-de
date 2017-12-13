@@ -4,8 +4,7 @@ ms.custom: H1Hack27Feb2017
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -14,37 +13,21 @@ dev_langs:
 - FSharp
 - C++
 helpviewer_keywords:
-- performance, JavaScript [Windows Store apps]
-- performance tools, JavaScript [Windows Store apps]
+- performance, JavaScript [UWP apps]
+- performance tools, JavaScript [UWP apps]
 - UI Responsiveness Profiler [JavaScript]
 - profiler, UI responsiveness [JavaScript]
-- profiler, JavaScript [Windows Store apps]
+- profiler, JavaScript [UWP apps]
 ms.assetid: da13070a-ba40-47dd-a846-ad72eed70d0b
-caps.latest.revision: 47
+caps.latest.revision: "47"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 90fed413835f118e59bc32f0b94cb62a40baaca1
-ms.contentlocale: de-de
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: bee8bdc56586f1c79ff10d8d2b70e30801f54254
+ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/11/2017
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>Analysieren der HTML-UI-Reaktionsfähigkeit in UWP-Apps
 In diesem Thema wird das Isolieren von Leistungsproblemen in Ihren Apps mithilfe des Benutzeroberflächen-Reaktionsfähigkeits-Profilers beschrieben, einem Leistungstool für universelle Windows-Apps.  
@@ -58,7 +41,7 @@ In diesem Thema wird das Isolieren von Leistungsproblemen in Ihren Apps mithilfe
 -   Visuelle Updates, die seltener sind als erwartet. Dies tritt auf, wenn der UI-Thread ausgelastet ist, damit eine angemessene Framerate beibehalten wird. Frames könnten z. B. abgelegt werden, wenn der UI-Thread ausgelastet ist. Einige von UI-Threads unabhängige Aufgaben können auch die Häufigkeit von visuellen Updates einschränken, z. B. Netzwerkanforderungen, Decodierung von Images und Paint-Ereignisse. (Nicht alle Paint-Ereignisse werden im UI-Thread ausgeführt).  
   
 ##  <a name="RunningProfiler"></a> Ausführen des Tools für die Reaktionsfähigkeit der HTML-Benutzeroberfläche  
- Sie können das Tool für die Reaktionsfähigkeit der HTML-Benutzeroberfläche verwenden, wenn Sie eine funktionierende universelle Windows-App oder Windows Store-App in Visual Studio geöffnet oder auf einem Computer installiert haben, auf dem Windows 8 oder höher ausgeführt wird.  
+ Sie können das Tool für die Reaktionsfähigkeit der HTML-Benutzeroberfläche verwenden, wenn Sie eine funktionierende UWP-App oder Windows 8.1-App in Visual Studio geöffnet oder auf einem Computer installiert haben, auf dem Windows 8 oder höher ausgeführt wird.  
   
 1.  Wenn Sie die App aus Visual Studio heraus ausführen, wählen Sie auf der Symbolleiste **Standard** in der Dropdownliste **Debugging starten** ein Bereitstellungsziel aus, z. B. einen der Windows Phone-Emulatoren, **Lokaler Computer**, **Simulator**oder **Remotecomputer**.  
   
@@ -72,7 +55,7 @@ In diesem Thema wird das Isolieren von Leistungsproblemen in Ihren Apps mithilfe
   
     -   **Startprojekt**. Wählen Sie diese Option aus, um das aktuelle Startprojekt zu analysieren. Wenn Sie die Anwendung auf einem Remotecomputer oder -gerät ausführen, müssen Sie diese Einstellung verwenden, die der Standardwert ist.  
   
-    -   **Ausgeführte App**. Wählen Sie diese Option aus, um eine Windows Store-App aus einer Liste von ausgeführten Apps auszuwählen. Diese Option können Sie nicht verwenden, wenn Sie die App auf einem Remotecomputer oder -gerät ausführen.  
+    -   **Ausgeführte App**. Wählen Sie diese Option aus, um eine UWP-App aus einer Liste von ausgeführten Apps auszuwählen. Diese Option können Sie nicht verwenden, wenn Sie die App auf einem Remotecomputer oder -gerät ausführen.  
   
          Sie können diese Option zum Analysieren der Leistung von Apps verwenden, die auf Ihrem Computer ausgeführt werden, wenn Sie keinen Zugriff auf den Quellcode haben.  
   
@@ -317,7 +300,7 @@ if (performance.mark && performance.measure) {
 ###  <a name="GroupFrames"></a> Ereignisse nach Frame gruppieren  
  Sie können Ereignisse, die in der Zeitachsendetailansicht angezeigt werden, in einzelnen Frames gruppieren. Diese Frameereignisse sind toolgenerierte Ereignisse und stellen Ereigniscontainer der obersten Ebene für alle Aufgaben des UI-Threads dar, die zwischen Paint-Ereignissen auftreten. Um diese Ansicht zu aktivieren, wählen Sie **Ereignisse der obersten Ebene nach Frames gruppieren**aus.  
   
- ![Ereignisse der obersten Ebene nach Frames gruppieren](~/profiling/media/js_htmlvizprofiler_frame_grouping_button.png "JS_HTMLVizProfiler_Frame_Grouping_Button")  
+ ![Ereignisse der obersten Ebene nach Frames gruppieren](../profiling/media/js_htmlvizprofiler_frame_grouping_button.png "JS_HTMLVizProfiler_Frame_Grouping_Button")  
   
  Wenn sie die Ereignisse nach Frame gruppieren, stellen die Ereignisse der obersten Ebene in der Zeitachsendetailansicht jeweilig ein Frame dar.  
   
@@ -375,7 +358,7 @@ if (performance.mark && performance.measure) {
   
 -   Sehen Sie sich [dieses Video](http://channel9.msdn.com/Events/Build/2013/3-316) von der Build 2013-Konferenz über den Benutzeroberflächen-Reaktionsfähigkeits-Profiler an.  
   
--   Lesen Sie die Leistungstipps für die Windows Store-Apps, die mit JavaScript für Windows erstellt wurden. Weitere Informationen finden Sie unter [Bewährte Methoden zur Leistungsverbesserung von Windows Store-Apps mit JavaScript](http://msdn.microsoft.com/library/windows/apps/hh465194.aspx).  
+-   Lesen Sie die Leistungstipps für UWP-Apps, die mit JavaScript für Windows erstellt wurden. Weitere Informationen finden Sie unter [Bewährte Methoden zur Leistungsverbesserung von UWP-Apps mit JavaScript](http://msdn.microsoft.com/library/windows/apps/hh465194.aspx).  
   
 -   Informationen zum Ausführungsmodell von Singlethreadcode und der entsprechenden Leistung finden Sie unter [Ausführen von Code](http://msdn.microsoft.com/library/windows/apps/hh781217.aspx).  
   

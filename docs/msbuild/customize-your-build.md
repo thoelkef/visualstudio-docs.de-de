@@ -4,38 +4,22 @@ ms.custom:
 ms.date: 06/14/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - MSBuild, transforms
 - transforms [MSBuild]
 ms.assetid: d0bceb3b-14fb-455c-805a-63acefa4b3ed
-caps.latest.revision: 13
+caps.latest.revision: "13"
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 3fb5627d2cc92c36e9dcf34f4b94796b6620321f
-ms.openlocfilehash: 86f7fef0365a47e8ea88bc3fc46cb0016efd4628
-ms.contentlocale: de-de
-ms.lasthandoff: 06/15/2017
-
+ms.openlocfilehash: 9392776d44602ee81358e31708d331e09d0d7a70
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="customize-your-build"></a>Anpassen Ihres Builds
 Wenn Sie in Versionen von MSBuild vor Version 15 eine neue benutzerdefinierte Eigenschaft für Projekte in Ihrer Projektmappe bereitstellen wollten, mussten Sie jeder Projektdatei in der Projektmappe manuell einen Verweis auf diese Eigenschaft hinzufügen. Alternativ dazu konnten Sie unter anderem die Eigenschaft in einer PROPS-Datei definieren und diese dann explizit in jedes Projekt der Projektmappe importieren.
@@ -76,7 +60,39 @@ Der Speicherort der Projektmappendatei ist für „Directory.Build.props“ ohne
 
 „Directory.Build.targets“ wird aus „Microsoft.Common.targets“ importiert, nachdem TARGETS-Dateien aus NuGet-Paketen importiert wurden. Deshalb kann es zum Überschreiben der meisten in der Buildlogik definierten Eigenschaften und Ziele verwendet werden, aber in einigen Fällen kann es erforderlich sein, nach dem abschließenden Import Anpassungen in der Projektdatei vorzunehmen.
 
+## <a name="use-case-multi-level-merging"></a>Anwendungsfall: Zusammenführen mehrerer Ebenen
+
+Für diesen Anwendungsfall wird beispielhaft davon ausgegangen, dass Sie die folgende Standard-Projektmappenstruktur verwenden:
+
+````
+\
+  MySolution.sln
+  Directory.Build.props     (1)
+  \src
+    Directory.Build.props   (2-src)
+    \Project1
+    \Project2
+  \test
+    Directory.Build.props   (2-test)
+    \Project1Tests
+    \Project2Tests
+````
+
+Je nach Ziel ist es sinnvoll, gemeinsame Eigenschaften für alle Projekte `(1)`, für `src`-Projekte `(2-src)` und für `test`-Projekte `(2-test)` festzulegen.
+
+Damit MSBuild die „inneren“ Dateien (`2-src` und `2-test`) mit der „äußeren“ Datei (`1`) korrekt zusammenführen kann, müssen Sie berücksichtigen, dass MSBuild nach der ersten gefundenen `Directory.Build.props`-Datei den Suchvorgang abbricht. Zum Fortsetzen des Suchvorgangs und Zusammenführen mit der äußeren Datei ist es erforderlich, den folgenden Code in beide inneren Dateien einzufügen:
+
+`<Import Project="$([MSBuild]::GetPathOfFileAbove('Directory.Build.props', '$(MSBuildThisFileDirectory)../'))" />`
+
+Der allgemeine Ansatz von MSBuild lässt sich folgendermaßen zusammenfassen:
+
+- MSBuild sucht die erste `Directory.Build.props`-Datei, die in der Projektmappenstruktur oberhalb der aktuellen Datei gefunden wird, führt diese mit den Standardeinstellungen zusammen und beendet anschließend den Suchvorgang.
+- Wenn mehrere Ebenen gefunden und zusammengeführt werden sollen, importieren Sie wie oben gezeigt mit [`<Import...>`](http://docs.microsoft.com/en-us/visualstudio/msbuild/property-functions#msbuild-getpathoffileabove) die äußere Datei aus der inneren.
+- Wenn die äußere Datei nicht ebenfalls Dateien importiert, die sich in der Projektstruktur oberhalb der äußeren Datei befinden, wird der Suchvorgang an dieser Stelle beendet.
+- Verwenden Sie zum Konfigurieren des Such- und Zusammenführungsprozesses `$(DirectoryBuildPropsPath)` und `$(ImportDirectoryBuildProps)`.
+
+Der gesamte Vorgang lässt sich besonders einfach in einem Satz zusammenfassen: MSBuild beendet den Suchvorgang, sobald eine `Directory.Build.props`-Datei gefunden wurde, durch die keine weiteren Dateien importiert werden.
+
 ## <a name="see-also"></a>Siehe auch  
  [MSBuild Concepts](../msbuild/msbuild-concepts.md)  (MSBuild-Grundlagen)  
  [MSBuild-Referenz](../msbuild/msbuild-reference.md)   
-

@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 06/21/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -17,39 +16,24 @@ f1_keywords:
 - javascript.project.property.debugging.machinename
 - javascript.project.property.debugging.allowlocalnetworkloopback
 ms.assetid: a05ab01f-3d5d-4675-a845-eab51807d3a3
-caps.latest.revision: 17
+caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d2f4eba36e9069a35cf279ccf1c78f72a51d77a1
-ms.openlocfilehash: 5d69e9d8d81ed36bb5933c42f3d8e9a499cd0b9d
-ms.contentlocale: de-de
-ms.lasthandoff: 06/23/2017
-
+ms.openlocfilehash: 1540667f1ed5356587837e83d30307901de4d15c
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/02/2017
 ---
 # <a name="property-pages-javascript"></a>Eigenschaftenseiten, JavaScript
 Die **Eigenschaftenseiten** bieten Zugriff auf die Projekteinstellungen. Sie können die Seiten, die in den **Eigenschaftenseiten** angezeigt werden, zum Ändern der Projekteigenschaften verwenden.  
 
- Um auf die Projekteigenschaften zuzugreifen, wählen Sie im **Projektmappen-Explorer** einen Projektknoten aus. Klicken Sie im Menü **Projekt** auf **Eigenschaften**.  
+Um auf die Projekteigenschaften zuzugreifen, wählen Sie im **Projektmappen-Explorer** einen Projektknoten aus. Klicken Sie im Menü **Projekt** auf **Eigenschaften**.  
 
- [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]  
+[!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]  
 
- Die folgenden Seiten und Optionen werden auf den **Eigenschaftenseiten** angezeigt.  
+Die folgenden Seiten und Optionen werden auf den **Eigenschaftenseiten** angezeigt.  
 
 ## <a name="configuration-and-platform-page"></a>Konfiguration und Plattformseite  
  Verwenden Sie die folgenden Optionen zum Auswählen der anzuzeigenden bzw. zu ändernden Konfiguration und Plattform.  
@@ -64,7 +48,7 @@ Die **Eigenschaftenseiten** bieten Zugriff auf die Projekteinstellungen. Sie kö
  Verwenden Sie die folgenden Optionen, um die allgemeinen Eigenschaften des Projekts festzulegen.  
 
 > [!NOTE]
->  Einige Optionen sind nur für Windows Store-Apps verfügbar.  
+>  Einige Optionen sind nur für UWP-Apps verfügbar.  
 
  **Ausgabepfad**  
  Legt den Speicherort der Ausgabedateien für die Konfiguration des Projekts fest. Der Pfad ist relativ. Wenn Sie einen absoluten Pfad eingeben, wird der absolute Pfad im Projekt gespeichert. Der Standardpfad ist "bin\Debug".  
@@ -78,7 +62,7 @@ Die **Eigenschaftenseiten** bieten Zugriff auf die Projekteinstellungen. Sie kö
  Verwenden Sie die folgenden Optionen, um die Eigenschaften für das Debugverhalten im Projekt festzulegen.  
 
 > [!NOTE]
->  Einige Optionen sind nur für Windows Store-Apps verfügbar.  
+>  Einige Optionen sind nur für UWP-Apps verfügbar.  
 
  **Zu startender Debugger**  
  Gibt den Standardhost für den Debugger an.  
@@ -89,18 +73,17 @@ Die **Eigenschaftenseiten** bieten Zugriff auf die Projekteinstellungen. Sie kö
 
 -   Klicken Sie auf **Remotecomputer**, um die Anwendung auf einem Remotecomputer zu starten. Weitere Informationen zum Remotedebuggen finden Sie unter [Ausführen von Windows Store-Apps auf einem Remotecomputer](http://go.microsoft.com/fwlink/?LinkId=234914).  
 
- **Anwendung starten**  
- Gibt an, ob die Anwendung gestartet wird, wenn Sie F5 drücken oder auf **Debuggen**, **Debuggen starten** klicken. Klicken Sie auf **Ja**, um die Anwendung zu starten. Klicken Sie ansonsten auf **Nein**. Wenn Sie auf **Nein** klicken, können Sie bei Verwendung einer anderen Methode zum Starten der Anwendung diese immer noch debuggen.  
+**Anwendung starten**  
+Gibt an, ob die Anwendung gestartet wird, wenn Sie F5 drücken oder auf **Debuggen**, **Debuggen starten** klicken. Klicken Sie auf **Ja**, um die Anwendung zu starten. Klicken Sie ansonsten auf **Nein**. Wenn Sie auf **Nein** klicken, können Sie bei Verwendung einer anderen Methode zum Starten der Anwendung diese immer noch debuggen.  
 
- **Debuggertyp**  
- Gibt die zu debuggenden Codetypen an. Klicken Sie auf **Nur Skript**, um JavaScript-Code zu debuggen. Klicken Sie auf **Nur verwaltet**, um Code zu debuggen, der von der Common Language Runtime verwaltet wird. Klicken Sie auf **Nur nativ**, um C++-Code zu debuggen. Klicken Sie auf **Nativ mit Skript**, um C++ und JavaScript zu debuggen. Klicken Sie auf **Gemischt (verwaltet und nativ)** aus, um sowohl verwalteten als auch C++-Code zu debuggen.  
+**Debuggertyp**  
+Gibt die zu debuggenden Codetypen an. Klicken Sie auf **Nur Skript**, um JavaScript-Code zu debuggen. Klicken Sie auf **Nur verwaltet**, um Code zu debuggen, der von der Common Language Runtime verwaltet wird. Klicken Sie auf **Nur nativ**, um C++-Code zu debuggen. Klicken Sie auf **Nativ mit Skript**, um C++ und JavaScript zu debuggen. Klicken Sie auf **Gemischt (verwaltet und nativ)** aus, um sowohl verwalteten als auch C++-Code zu debuggen.  
 
- **Lokales Netzwerkloopback zulassen**  
- Gibt an, ob Zugriff auf die IP-Loopbackadresse für App-Tests zulässig ist. Klicken Sie auf **Ja**, um die Verwendung der Loopbackadresse zuzulassen, wenn sich die Client-App auf dem gleichen Computer befindet, auf dem die Serveranwendung ausgeführt wird. Klicken Sie ansonsten auf **Nein**. Diese Eigenschaft ist nur verfügbar, wenn die Eigenschaft **Zu startender Debugger** auf **Remotecomputer** festgelegt ist.  
+**Lokales Netzwerkloopback zulassen**  
+Gibt an, ob Zugriff auf die IP-Loopbackadresse für App-Tests zulässig ist. Klicken Sie auf **Ja**, um die Verwendung der Loopbackadresse zuzulassen, wenn sich die Client-App auf dem gleichen Computer befindet, auf dem die Serveranwendung ausgeführt wird. Klicken Sie ansonsten auf **Nein**. Diese Eigenschaft ist nur verfügbar, wenn die Eigenschaft **Zu startender Debugger** auf **Remotecomputer** festgelegt ist.  
 
- **Computername**  
- Gibt den Namen des Remotecomputers an, auf dem der Debugger gehostet wird. Diese Eigenschaft ist nur verfügbar, wenn **Zu startender Debugger** auf **Remotecomputer** festgelegt ist.  
+**Computername**  
+Gibt den Namen des Remotecomputers an, auf dem der Debugger gehostet wird. Diese Eigenschaft ist nur verfügbar, wenn **Zu startender Debugger** auf **Remotecomputer** festgelegt ist.  
 
- **Authentifizierung erforderlich**  
- Gibt an, ob für den Remotecomputer eine Authentifizierung erforderlich ist. Diese Eigenschaft ist nur verfügbar, wenn **Zu startender Debugger** auf **Remotecomputer** festgelegt ist.
-
+**Authentifizierung erforderlich**  
+Gibt an, ob für den Remotecomputer eine Authentifizierung erforderlich ist. Diese Eigenschaft ist nur verfügbar, wenn **Zu startender Debugger** auf **Remotecomputer** festgelegt ist.

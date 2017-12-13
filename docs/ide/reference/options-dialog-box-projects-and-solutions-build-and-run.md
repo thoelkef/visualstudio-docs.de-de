@@ -1,11 +1,10 @@
 ---
 title: "Dialogfeld \" Optionen\", Projekte und Projektmappen, Erstellen und Ausführen | Microsoft-Dokumentation"
 ms.custom: 
-ms.date: 7/14/2017
+ms.date: 07/14/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -16,18 +15,16 @@ helpviewer_keywords:
 - run actions
 - debugger, run options
 ms.assetid: c884976e-c0df-4c6d-8e3a-856ea2bd547c
-caps.latest.revision: 20
+caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
+ms.openlocfilehash: e15880551e2a896bca473d463b253ec15dda7b36
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
 ms.translationtype: HT
-ms.sourcegitcommit: e48ebcafaca37505dbcc92bce682d0c6169004e1
-ms.openlocfilehash: 8e5165b4b17195e5f9172dd25962c9486a7aeeeb
-ms.contentlocale: de-de
-ms.lasthandoff: 07/26/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/02/2017
 ---
-
 # <a name="options-dialog-box--projects-and-solutions-build-and-run"></a>Optionen (Dialogfeld), Projekte und Projektmappen, Erstellen und Ausführen
 
 In diesem Dialogfeld können Sie die maximale Anzahl von Visual C++- oder Visual C#-Projekten, die gleichzeitig erstellt werden können, bestimmte standardmäßige Buildverhaltensweisen und einige Protokolleinstellungen angeben. Wählen Sie zum Zugriff auf diese Optionen **Extras > Optionen** aus, erweitern Sie **Projekte und Projektmappen**, und wählen Sie **Erstellen und Ausführen** aus.
@@ -60,6 +57,6 @@ Bestimmt, wie viele Informationen im Fenster **Ausgabe** für den Build angezeig
 Bestimmt, wie viele Informationen in die Buildprotokolldatei geschrieben werden, die sich unter „\\...\\*ProjectName*\Debug\\*ProjectName*.log.  
 
 ## <a name="see-also"></a>Siehe auch  
--[Kompilieren und Erstellen](../../ide/compiling-and-building-in-visual-studio.md)
-- [Optionen (Dialogfeld), Projekte und Projektmappen](projects-and-solutions-options-dialog-box.md)
-- [Dialogfeld "Optionen", Projekte und Projektmappen, Webprojekte](options-dialog-box-projects-and-solutions-web-projects.md)
+[Kompilieren und Erstellen](../../ide/compiling-and-building-in-visual-studio.md)  
+[Optionen (Dialogfeld), Projekte und Projektmappen](projects-and-solutions-options-dialog-box.md)  
+[Dialogfeld „Optionen“, Projekte und Projektmappen, Webprojekte](options-dialog-box-projects-and-solutions-web-projects.md)

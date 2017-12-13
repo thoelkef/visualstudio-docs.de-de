@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -14,30 +13,15 @@ helpviewer_keywords:
 - code snippets [Visual Studio], schema reference
 - IntelliSense Code Snippets, XML Schema
 ms.assetid: 58a60621-725f-4763-93b7-62ea5424ef88
-caps.latest.revision: 17
-author: kempb
-ms.author: kempb
+caps.latest.revision: "17"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 18627c9f14e82bef85ff433eea14d99653f78e68
-ms.contentlocale: de-de
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: 14e043feae7a201ff5b31ee17aa790fe6f338341
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="code-snippets-schema-reference"></a>Schemareferenz für Codeausschnitte
 IntelliSense-Codeausschnitte sind vorab erstellte Codeelemente, die mithilfe von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] direkt in eine Anwendung eingefügt werden können. Solche Codeausschnitte erhöhen die Produktivität, da sie Zeit bei der Eingabe von wiederholtem Code oder bei der Suche nach Beispielen einsparen. Mithilfe des XML-Schemas für IntelliSense-Codeausschnitte können Sie eigene Codeausschnitte oder XML-Codeausschnitte erstellen und den bereits in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] enthaltenen Codeausschnitten hinzufügen.  
@@ -58,10 +42,7 @@ IntelliSense-Codeausschnitte sind vorab erstellte Codeelemente, die mithilfe von
 |[Header-Element](../ide/code-snippets-schema-reference.md#header)|[Reference-Element](../ide/code-snippets-schema-reference.md#reference)||  
   
 ##  <a name="assembly"></a>Assembly-Element  
- Gibt den Namen der Assembly an, auf die vom Codeausschnitt verwiesen wird.  
-  
-> [!NOTE]
->  Das `Assembly`-Element wird nur in Visual Basic-Codeausschnitten unterstützt.  
+ Gibt den Namen der Assembly an, auf die vom Codeausschnitt verwiesen wird.
   
  Der Textwert des **Assembly**-Elements entspricht entweder dem benutzerfreundlichen Textnamen der Assembly, beispielsweise `System.dll`, oder ihrem starken Namen, beispielsweise `System,Version=1.0.0.1,Culture=neutral,PublicKeyToken=9b35aa323c18d4fb1`.  
   
@@ -83,8 +64,7 @@ IntelliSense-Codeausschnitte sind vorab erstellte Codeelemente, die mithilfe von
 ```xml  
 <Author>  
    Code Snippet Author  
-</Author>  
-  
+</Author>    
 ```  
   
 |Parent-Element|Beschreibung|  
@@ -93,36 +73,39 @@ IntelliSense-Codeausschnitte sind vorab erstellte Codeelemente, die mithilfe von
   
  Ein Textwert ist erforderlich. Dieser Text gibt den Autor des Codeausschnitts an.  
   
-##  <a name="code"></a> Code-Element  
- Stellt einen Container für kurze Codeblöcke bereit.  
+## <a name="a-namecode--code-element"></a><a name="code" /> Codeelement  
+Stellt einen Container für kurze Codeblöcke bereit.  
   
- Zwei reservierte Wörter sind zur Verwendung im Text des `Code`-Elements verfügbar: `$end$` und `$selected$`. `$end$` markiert die Position, an die der Cursor zu setzen ist, nachdem der Codeausschnitt eingefügt wurde. `$selected$` stellt Text dar, der im Dokument ausgewählt wurde, das in den Ausschnitt eingefügt werden soll, wenn dieser aufgerufen wird. Betrachten wir beispielsweise einen Ausschnitt, der Folgendes enthält:  
+### <a name="keywords"></a>Schlüsselwörter
+Zwei reservierte Wörter sind zur Verwendung im Text des `Code`-Elements verfügbar: `$end$` und `$selected$`. `$end$` markiert die Position, an die der Cursor zu setzen ist, nachdem der Codeausschnitt eingefügt wurde. `$selected$` stellt Text dar, der im Dokument ausgewählt wurde, das in den Ausschnitt eingefügt werden soll, wenn dieser aufgerufen wird. Betrachten wir beispielsweise einen Ausschnitt, der Folgendes enthält:  
   
-```xml  
+```  
 $selected$ is a great color.  
 ```  
   
- Wenn das Wort "Blue" aktiviert ist, wenn der Benutzer die Vorlage aufruft, ist das Ergebnis:  
+Wenn das Wort "Blue" aktiviert ist, wenn der Benutzer die Vorlage aufruft, ist das Ergebnis:  
   
-```xml  
+```  
 Blue is a great color.  
 ```  
   
- Sie können entweder `$end$` oder `$selected$` nicht mehr als einmal in einem Codeausschnitt verwenden. Andernfalls wird nur die zweite Instanz erkannt. Betrachten wir einen Ausschnitt, der Folgendes enthält:  
+Sie können entweder `$end$` oder `$selected$` nicht mehr als einmal in einem Codeausschnitt verwenden. Andernfalls wird nur die zweite Instanz erkannt. Betrachten wir einen Ausschnitt, der Folgendes enthält:  
   
 ```  
 $selected$ is a great color. I love $selected$.  
 ```  
   
- Wenn das Wort "Blue" aktiviert ist, ist das Ergebnis:  
+Wenn das Wort "Blue" aktiviert ist, ist das Ergebnis:  
   
 ```  
-is a great color. I love Blue.  
+ is a great color. I love Blue.  
 ```  
   
- Der ursprüngliche Speicherplatz wird angezeigt, weil ein zwischen Leerzeichen `$selected$` und `is`vorhanden ist.  
+Der ursprüngliche Speicherplatz wird angezeigt, weil ein zwischen Leerzeichen `$selected$` und `is`vorhanden ist.  
   
- Alle anderen `$`-Schlüsselwörter werden dynamisch im `<Literal>`-Tag und im `<Object>`-Tag definiert.  
+Alle anderen `$`-Schlüsselwörter werden dynamisch im `<Literal>`-Tag und im `<Object>`-Tag definiert.  
+
+Es folgt die Struktur des Codeelements:
   
 ```xml  
 <Code Language="Language"  
@@ -130,37 +113,41 @@ is a great color. I love Blue.
     Delimiter="Delimiter">  
     Code to insert  
 </Code>  
-```  
-  
-|Attribut|Beschreibung|  
-|---------------|-----------------|  
-|`Delimiter`|Optionales Attribut. Gibt das Trennzeichen an, das zum Beschreiben von Literalen und Objekten im Code verwendet wird. Standardmäßig ist `$` das Trennzeichen.|  
-|`Kind`|Optionales Attribut. Gibt die Art des Codes an, den der Ausschnitt enthält, sowie die Position, an der ein Codeausschnitt eingefügt werden muss, damit der Code kompiliert wird. Die verfügbaren Werte lauten `method body`, `method decl`, `type decl`, `file` und `any`.|  
-|`Language`|Erforderliches Attribut. Gibt die Programmiersprache des Codeausschnitts an.|  
-  
-|Kind-Attributwert|Beschreibung|  
-|--------------------------|-----------------|  
-|`method body`|Gibt an, dass der Codeausschnitt einen Methodenrumpf darstellt und daher innerhalb einer Methodendeklaration eingefügt werden muss.|  
-|`method decl`|Gibt an, dass der Codeausschnitt eine Methode ist und daher innerhalb eine Klasse oder eines Moduls eingefügt werden muss.|  
-|`type decl`|Gibt an, dass der Codeausschnitt ein Typ ist und daher innerhalb eine Klasse, eines Modul oder eines Namespace eingefügt werden muss.|  
-|`file`|Gibt an, dass der Ausschnitt eine vollständige Codedatei ist. Diese Codeausschnitte können eigenständig in eine Codedatei oder einen Namespace eingefügt werden.|  
-|`any`|Gibt an, dass der Ausschnitt überall eingefügt werden kann. Dieses Tag wird für kontextunabhängige Codeausschnitte verwendet, beispielsweise Kommentare.|  
-  
-|Language-Attributwert|Beschreibung|  
-|------------------------------|-----------------|  
-|`VB`|Bezeichnet einen Visual Basic-Codeausschnitt.|  
-|`CSharp`|Bezeichnet einen C#-Codeausschnitt.|  
-|`CPP`|Bezeichnet einen C++-Codeausschnitt.|  
-|`XML`|Bezeichnet einen XML-Codeausschnitt.|  
-|`JavaScript`|Bezeichnet einen JavaScript-Codeausschnitt.|  
-|`SQL`|Bezeichnet einen SQL-Codeausschnitt.|  
-|`HTML`|Bezeichnet einen HTML-Codeausschnitt.|  
-  
+```
+
+Ein Textwert ist erforderlich. Dieser Text gibt den Code, der verwendet werden kann, wenn dieser Codeausschnitt in eine Codedatei eingefügt wird, zusammen mit den Literalen und Objekten an.  
+
+### <a name="attributes"></a>Attribute
+Für dieses Codeelement sind drei Attribute verfügbar:
+
+- **Sprache** - _erforderlich:_ ein Attribut, das die Sprache des Codeausschnitts angibt. Der Wert kann in folgenden Formen vorliegen:
+
+   |Wert|Beschreibung|  
+   |-----|-----------|  
+   |`VB`|Bezeichnet einen Visual Basic-Codeausschnitt.|  
+   |`CSharp`|Bezeichnet einen C#-Codeausschnitt.|  
+   |`CPP`|Bezeichnet einen C++-Codeausschnitt.|  
+   |`XML`|Bezeichnet einen XML-Codeausschnitt.|  
+   |`JavaScript`|Bezeichnet einen JavaScript-Codeausschnitt.|  
+   |`SQL`|Bezeichnet einen SQL-Codeausschnitt.|  
+   |`HTML`|Bezeichnet einen HTML-Codeausschnitt.|
+ 
+- **Art** - _optional:_ Gibt die Art des Codes an, den der Ausschnitt enthält, sowie die Position, an der ein Codeausschnitt eingefügt werden muss, damit der Code kompiliert wird. Der Wert kann in folgenden Formen vorliegen:
+
+   |Wert|Beschreibung|  
+   |-----|-----------|  
+   |`method body`|Gibt an, dass der Codeausschnitt einen Methodenrumpf darstellt und daher innerhalb einer Methodendeklaration eingefügt werden muss.|  
+   |`method decl`|Gibt an, dass der Codeausschnitt eine Methode ist und daher innerhalb eine Klasse oder eines Moduls eingefügt werden muss.|  
+   |`type decl`|Gibt an, dass der Codeausschnitt ein Typ ist und daher innerhalb eine Klasse, eines Modul oder eines Namespace eingefügt werden muss.|  
+   |`file`|Gibt an, dass der Ausschnitt eine vollständige Codedatei ist. Diese Codeausschnitte können eigenständig in eine Codedatei oder einen Namespace eingefügt werden.|  
+   |`any`|Gibt an, dass der Ausschnitt überall eingefügt werden kann. Dieses Tag wird für kontextunabhängige Codeausschnitte verwendet, beispielsweise Kommentare.|
+
+- **Trennzeichen** - _optional:_ Gibt das Trennzeichen an, mit dem Literale und Objekte im Code beschreiben werden. Standardmäßig ist `$` das Trennzeichen.
+
+### <a name="parent-element"></a>Übergeordnetes Element
 |Parent-Element|Beschreibung|  
 |--------------------|-----------------|  
-|[Snippet-Element](../ide/code-snippets-schema-reference.md#snippet)|Enthält die Verweise, Importe, Deklarationen und den Code für den Codeausschnitt.|  
-  
- Ein Textwert ist erforderlich. Dieser Text bezeichnet den Code zusammen mit den Literalen und Objekten an, die verwendet werden können, wenn dieser Codeausschnitt in ein Projekt eingefügt wird.  
+|[Snippet-Element](../ide/code-snippets-schema-reference.md#snippet)|Enthält die Verweise, Importe, Deklarationen und den Code für den Codeausschnitt.|
   
 ##  <a name="codesnippet"></a> CodeSnippet-Element  
  Ermöglicht die Angabe einer Überschrift und mehrerer IntelliSense-Codeausschnitte, die Sie in Visual Studio Codedateien einfügen können.  
@@ -170,7 +157,6 @@ is a great color. I love Blue.
     <Header>... </Header>  
     <Snippet>... </Snippet>  
 </CodeSnippet>  
-  
 ```  
   
 |Attribut|Beschreibung|  
@@ -193,7 +179,6 @@ is a great color. I love Blue.
 <CodeSnippets>  
     <CodeSnippet>... </CodeSnippet>  
 </CodeSnippets>  
-  
 ```  
   
 |Untergeordnetes Element|Beschreibung|  
@@ -208,7 +193,6 @@ is a great color. I love Blue.
     <Literal>... </Literal>  
     <Object>... </Object>  
 </Declarations>  
-  
 ```  
   
 |Untergeordnetes Element|Beschreibung|  
@@ -227,7 +211,6 @@ is a great color. I love Blue.
 <Default>  
     Default value  
 </Default>  
-  
 ```  
   
 |Parent-Element|Beschreibung|  
@@ -284,7 +267,6 @@ is a great color. I love Blue.
     <Keywords>... </Keywords>  
     <Shortcut>... </Shortcut>  
 </Header>  
-  
 ```  
   
 |Untergeordnetes Element|Beschreibung|  
@@ -311,7 +293,6 @@ is a great color. I love Blue.
 <HelpUrl>  
     www.microsoft.com  
 </HelpUrl>  
-  
 ```  
   
 |Parent-Element|Beschreibung|  
@@ -327,7 +308,6 @@ is a great color. I love Blue.
 <ID>  
     Unique Identifier  
 </ID>  
-  
 ```  
   
 |Parent-Element|Beschreibung|  
@@ -347,7 +327,6 @@ is a great color. I love Blue.
 <Import>  
     <Namespace>... </Namespace>  
 </Import>  
-  
 ```  
   
 |Untergeordnetes Element|Beschreibung|  
@@ -488,10 +467,7 @@ is a great color. I love Blue.
 |[Declarations-Element](../ide/code-snippets-schema-reference.md#declarations)|Enthält die Literale und Objekte eines Codeausschnitts, die Sie bearbeiten können.|  
   
 ##  <a name="reference"></a> Reference-Element  
- Bezeichnet Informationen über die für den Codeausschnitt erforderlichen Assemblyverweise.  
-  
-> [!NOTE]
->  Das `Reference`-Element wird nur für Visual Basic-Projekte unterstützt.  
+ Bezeichnet Informationen über die für den Codeausschnitt erforderlichen Assemblyverweise. 
   
 ```xml  
 <Reference>  
@@ -511,9 +487,6 @@ is a great color. I love Blue.
   
 ##  <a name="references"></a> References-Element  
  Gruppiert einzelne `Reference`-Elemente.  
-  
-> [!NOTE]
->  Das `References`-Element wird nur für Visual Basic-Projekte unterstützt.  
   
 ```xml  
 <References>  
@@ -556,8 +529,7 @@ is a great color. I love Blue.
     <Imports>... </Imports>  
     <Declarations>... </Declarations>  
     <Code>... </Code>  
-</Snippet>  
-  
+</Snippet>    
 ```  
   
 |Untergeordnetes Element|Beschreibung|  

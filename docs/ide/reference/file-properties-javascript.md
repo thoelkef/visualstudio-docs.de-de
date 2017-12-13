@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 06/21/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -26,30 +25,15 @@ f1_keywords:
 - javascript.project.property.reference.resolvedpath
 - javascript.project.property.reference.version
 ms.assetid: 085913b8-a97b-45f7-85fa-bbb0902f3ee9
-caps.latest.revision: 7
+caps.latest.revision: "7"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d2f4eba36e9069a35cf279ccf1c78f72a51d77a1
-ms.openlocfilehash: 6c2b3c577685fcb09cd9e9c7eeee955b75e76e27
-ms.contentlocale: de-de
-ms.lasthandoff: 06/23/2017
-
+ms.openlocfilehash: f732a23631de181524382914e954ad50a7f0385d
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/02/2017
 ---
 # <a name="file-properties-javascript"></a>Dateieigenschaften, JavaScript
 Sie können Dateieigenschaften verwenden, um anzugeben, welche Aktionen das Projektsystem für die Dateien ausführen soll. Sie können Dateieigenschaften z.B. festlegen, um anzugeben, ob eine Datei als Ressourcendatei zum Paket hinzugefügt werden soll.  
@@ -73,7 +57,7 @@ Sie können Dateieigenschaften verwenden, um anzugeben, welche Aktionen das Proj
 
 -   **Ressource**: Die Datei ist nicht im Paketmanifest enthalten. Stattdessen wird der Inhalt der Datei in der Indexdatei der Paketressource (Package Resource Index, PRI) indiziert, die in das Paketmanifest aufgenommen wird. Sie wird normalerweise für Ressourcendateien verwendet.  
 
- Der Standardwert für **Paketaktion** richtet sich nach der Erweiterung der Datei, die Sie der Projektmappe hinzufügen.  
+Der Standardwert für **Paketaktion** richtet sich nach der Erweiterung der Datei, die Sie der Projektmappe hinzufügen.  
 
 ### <a name="file-name-property"></a>Eigenschaft „Dateiname“  
  Zeigt den Dateinamen als schreibgeschützten Wert an. Um die Datei umzubenennen,müssen Sie im Projektmappen-Explorer mit der rechten Maustaste auf die Datei klicken, und **Umbenennen** auswählen.  
@@ -82,7 +66,7 @@ Sie können Dateieigenschaften verwenden, um anzugeben, welche Aktionen das Proj
  Zeigt den vollständigen Pfad als schreibgeschützten Wert an. Ziehen Sie den Pfad der Datei zum Ändern der Datei per Drag & Drop in den Projektmappen-Explorer.  
 
 ## <a name="reference-file-properties"></a>Eigenschaft „Verweisdatei“  
- Dieser Abschnitt beschreibt die Eigenschaften, die Dateien gemeinsam haben, auf die aus [!INCLUDE[win8_app_js](../../ide/reference/includes/win8_app_js_md.md)] verwiesen wird. Wenn Sie im Projektmappen-Explorer einen Verweis auswählen, z.B. eine WINMD-Datei, einen SDK-Verweis, einen Interprojektverweis oder einen Assemblyverweis, werden möglicherweise andere Eigenschaften entsprechend des Dateityps im Eigenschaftenfenster angezeigt.  
+ Dieser Abschnitt beschreibt die Eigenschaften, die Dateien gemeinsam haben, auf die von einer UWP-App verwiesen wird, die mit JavaScript erstellt wurde. Wenn Sie im Projektmappen-Explorer einen Verweis auswählen, z.B. eine WINMD-Datei, einen SDK-Verweis, einen Interprojektverweis oder einen Assemblyverweis, werden möglicherweise andere Eigenschaften entsprechend des Dateityps im Eigenschaftenfenster angezeigt.  
 
 ### <a name="culture"></a>Kultur  
  Zeigt die Sprache an, die dem Verweis zugeordnet ist.  
@@ -113,4 +97,3 @@ Sie können Dateieigenschaften verwenden, um anzugeben, welche Aktionen das Proj
 
 ## <a name="see-also"></a>Siehe auch  
  [Verwalten von Projekt- und Projektmappeneigenschaften](../../ide/managing-project-and-solution-properties.md)
-

@@ -1,30 +1,33 @@
 ---
-title: "Objekte und Arrays (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "Arrays [JavaScript]"
-  - "Arrays [JavaScript], Objekte"
+title: Objekte und Arrays (JavaScript) | Microsoft-Dokumentation
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- arrays [JavaScript]
+- arrays [JavaScript], objects
 ms.assetid: f5106284-1240-4f47-8c3b-5a45e227e5e1
-caps.latest.revision: 15
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 15
+caps.latest.revision: "15"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 6776701ba108ae0ecefc2331c2b12272e0c1be19
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# Objekte und Arrays (JavaScript)
-[!INCLUDE[javascript](../javascript/includes/javascript-md.md)]\-Objekte sind Auflistungen von Eigenschaften und Methoden.  Eine Methode ist eine Funktion, die ein Member eines Objekts ist.  Eine Eigenschaft ist ein Wert oder ein Satz von Werten \(in Form eines Arrays oder eines Objekts\), der Member eines Objekts ist.  [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] unterstützt vier Arten von Objekten:  
+# <a name="objects-and-arrays-javascript"></a>Objekte und Arrays (JavaScript)
+[!INCLUDE[javascript](../javascript/includes/javascript-md.md)]-Objekte sind Auflistungen von Eigenschaften und Methoden. Eine Methode ist eine Funktion, die ein Member eines Objekts ist. Eine Eigenschaft ist ein Wert oder ein Satz von Werten (in Form eines Arrays oder eines Objekts), der Member eines Objekts ist. [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] unterstützt vier Arten von Objekten:  
   
 -   Systeminterne Objekte, wie z. B. `Array` und `String`.  
   
@@ -32,12 +35,12 @@ caps.handback.revision: 15
   
 -   Hostobjekte, wie z. B. `window` und `document`.  
   
--   ActiveX\-Objekte.  
+-   ActiveX-Objekte.  
   
-## Expando\-Eigenschaften und \-Methoden  
- Alle Objekte in [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] unterstützen "expando"\-Eigenschaften\- und Methoden, die zur Laufzeit hinzugefügt und entfernt werden können.  Diese Eigenschaften und Methoden können beliebige Namen haben und von Zahlen identifiziert werden.  Wenn der Name der Eigenschaft oder der Methode ein einfacher Bezeichner ist, kann er mit einem Punkt nach dem Objektnamen geschrieben werden, z. B. wie `myObj.name`, `myObj.age` und `myObj.getAge` im folgenden Code:  
+## <a name="expando-properties-and-methods"></a>Expando-Eigenschaften und -Methoden  
+ Alle Objekte in [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] unterstützen "expando"-Eigenschaften- und Methoden, die zur Laufzeit hinzugefügt und entfernt werden können. Diese Eigenschaften und Methoden können beliebige Namen haben und von Zahlen identifiziert werden. Wenn der Name der Eigenschaft oder der Methode ein einfacher Bezeichner ist, kann er mit einem Punkt nach dem Objektnamen geschrieben werden, z. B. wie `myObj.name`, `myObj.age` und `myObj.getAge` im folgenden Code:  
   
-```javascript  
+```JavaScript  
 var myObj = new Object();  
 myObj.name = "Fred";  
 myObj.age = 42;  
@@ -60,9 +63,9 @@ document.write(myObj.getAge());
   
 ```  
   
- Wenn der Name der Eigenschaft oder der Methode kein einfacher Bezeichner ist oder beim Erstellen des Skripts nicht bekannt ist, können Sie einen beliebigen Ausdruck in eckigen Klammern verwenden, um die Eigenschaft zu indizieren.  In [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] werden die Namen aller expando\-Eigenschaften in Zeichenfolgen konvertiert, bevor sie zum Objekt hinzugefügt werden.  
+ Wenn der Name der Eigenschaft oder der Methode kein einfacher Bezeichner ist oder beim Erstellen des Skripts nicht bekannt ist, können Sie einen beliebigen Ausdruck in eckigen Klammern verwenden, um die Eigenschaft zu indizieren. In [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] werden die Namen aller expando-Eigenschaften in Zeichenfolgen konvertiert, bevor sie zum Objekt hinzugefügt werden.  
   
-```javascript  
+```JavaScript  
 var myObj = new Object();  
   
 // Add two expando properties that cannot be written in the  
@@ -78,12 +81,12 @@ myObj[100] = "100";
   
  Informationen zum Erstellen eines Objekts anhand einer Definition finden Sie unter [Erstellen von Objekten](../javascript/creating-objects-javascript.md).  
   
-## Arrays als Objekte  
- In [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] werden Objekte und Arrays fast identisch behandelt, da Arrays lediglich eine spezielle Art von Objekten sind.  Sowohl Objekte als auch Arrays können Eigenschaften und Methoden besitzen.  
+## <a name="arrays-as-objects"></a>Arrays als Objekte  
+ In [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] werden Objekte und Arrays fast identisch behandelt, da Arrays lediglich eine spezielle Art von Objekten sind. Sowohl Objekte als auch Arrays können Eigenschaften und Methoden besitzen.  
   
- Arrays haben eine `length`\-Eigenschaft, Objekte hingegen nicht.  Wenn Sie einem Element eines Arrays einen Wert zuweisen, dessen Index größer als seine Länge \(beispielsweise, `myArray[100] = "hello"`\) ist, wird die `length`\-Eigenschaft automatisch auf die neue Länge erhöht.  Dementsprechend werden alle Elemente, deren Index sich außerhalb der Länge des Arrays befinden, gelöscht, wenn Sie die `length`\-Eigenschaft eines Arrays verringern.  
+ Arrays haben eine `length`-Eigenschaft, Objekte hingegen nicht. Wenn Sie einem Element eines Arrays einen Wert zuweisen, dessen Index größer als seine Länge (beispielsweise, `myArray[100] = "hello"`) ist, wird die `length`-Eigenschaft automatisch auf die neue Länge erhöht. Dementsprechend werden alle Elemente, deren Index sich außerhalb der Länge des Arrays befinden, gelöscht, wenn Sie die `length`-Eigenschaft eines Arrays verringern.  
   
-```javascript  
+```JavaScript  
 // An array with three elements  
 var myArray = new Array(3);  
   
@@ -108,9 +111,9 @@ document.write("new length is : " + myArray.length);
   
 ```  
   
- Arrays enthalten Methoden, um Member zu durchlaufen und zu bearbeiten.  Das folgende Beispiel zeigt, wie die Eigenschaften von Objekten, die in einem Array gespeichert sind, abgerufen werden.  
+ Arrays enthalten Methoden, um Member zu durchlaufen und zu bearbeiten. Das folgende Beispiel zeigt, wie die Eigenschaften von Objekten, die in einem Array gespeichert sind, abgerufen werden.  
   
-```javascript  
+```JavaScript  
 var myArray = new Array(3);  
   
 // Add some data  
@@ -128,10 +131,10 @@ myArray.forEach(function (item) {
 // 2003  
 ```  
   
-## Mehrdimensionale Arrays  
- [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] unterstützt nicht direkt mehrdimensionale Arrays, aber Sie können das Verhalten von mehrdimensionalen Arrays abrufen, indem Sie Arrays in den Elementen eines anderen Arrays speichern. \(Sie können jede Art von Daten innerhalb der Arrayelemente speichern, einschließlich andere Arrays.\) Mit dem folgenden Code wird z. B. eine Multiplikationstabelle für die Zahlen bis 5 erstellt.  
+## <a name="multi-dimensional-arrays"></a>Mehrdimensionale Arrays  
+ [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] unterstützt nicht direkt mehrdimensionale Arrays, aber Sie können das Verhalten von mehrdimensionalen Arrays abrufen, indem Sie Arrays in den Elementen eines anderen Arrays speichern. (Sie können jede Art von Daten innerhalb der Arrayelemente speichern, einschließlich andere Arrays.) Mit dem folgenden Code wird z. B. eine Multiplikationstabelle für die Zahlen bis 5 erstellt.  
   
-```javascript  
+```JavaScript  
 // The size of the table.  
 var iMaxNum = 5;  
 // Loop counters.  

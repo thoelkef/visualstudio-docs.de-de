@@ -1,40 +1,40 @@
 ---
-title: "Funktionsansicht | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.performance.view.functions"
-helpviewer_keywords: 
-  - "Funktionsansicht"
-  - "Leistungsberichte, Funktionsansicht"
-  - "Berichte für Profilerstellungstools, Funktionsansicht"
-  - "Profilerstellungstools, Funktionsansicht"
+title: Funktionsansicht | Microsoft-Dokumentation
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vs.performance.view.functions
+helpviewer_keywords:
+- performance reports, functions view
+- Functions view
+- profiling tools reports, Functions view
+- profiling tools, Functions view
 ms.assetid: 513c6174-071d-48a4-9e25-04debbb63e5c
-caps.latest.revision: 27
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 27
+caps.latest.revision: "27"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: ea1a3e42e5ce634073e9abaf7d89dda9df51c315
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Funktionsansicht
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-In der Funktionsansicht werden die während der Profilerstellung aufgerufenen Funktionen aufgeführt.  
+# <a name="functions-view"></a>Funktionsansicht
+In der Funktionsansicht werden die Funktionen aufgelistet, die während der Profilerstellung aufgerufen wurden.  
   
- Standardmäßig werden Funktionen nach Namen aufgeführt.  Um Funktionen nach Modul anzuzeigen, klicken Sie mit der rechten Maustaste in das Fenster Funktionsansicht und wählen **In Modulansicht anzeigen**.  Dadurch wird die Modulansicht angezeigt.  
+ Funktionen werden in der Regel nach Namen aufgeführt. Um Funktionen nach Modulen zu sortieren, klicken Sie mit der rechten Maustaste in das Fenster „Funktionsansicht“, und klicken Sie anschließend auf **In Modulansicht anzeigen**. So wird in die Modulansicht gewechselt.  
   
- Um Spalten hinzuzufügen oder zu entfernen, klicken Sie mit der rechten Maustaste in das Berichtsfenster, und wählen Sie dann **Spalten hinzufügen\/entfernen** aus.  Sie können die Daten auch durch Klicken auf einen Spaltennamen sortieren.  Weitere Informationen finden Sie unter [Gewusst wie: Anpassen von Spalten in Berichtsansichten](../profiling/how-to-customize-report-view-columns.md).  
+ Um Spalten hinzuzufügen oder zu entfernen, klicken Sie mit der rechten Maustaste in das Berichtsfenster, und klicken Sie dann auf **Spalten hinzufügen/entfernen**. Zusätzlich können Sie die Daten durch Klicken auf einen Spaltennamen sortieren. Weitere Informationen finden Sie unter [Vorgehensweise: Anpassen von Spalten in der Berichtsansicht der Profilerstellungstools](../profiling/how-to-customize-report-view-columns.md).  
   
- Welche Spalten in der Funktionsansicht verfügbar sind, ist abhängig von der Profilerstellungsmethode, die \(Sampling oder Instrumentation\) zum Sammeln der Daten verwendet wurde, und davon, ob .NET\-Arbeitsspeicherdaten in der Profilerstellungsausführung gesammelt wurden.  
+ Welche Spalten in der Funktionsansicht verfügbar sind, ist abhängig von der Profilerstellungsmethode (Sampling oder Instrumentierung), die zum Sammeln der Daten verwendet wurde, und davon, ob in der Profilerstellungsausführung .NET-Arbeitsspeicherdaten gesammelt wurden.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Funktionsansicht](../profiling/functions-view-sampling-data.md)   
  [Funktionsansicht](../profiling/functions-view-instrumentation-data.md)   
- [Funktionsansicht \- Instrumentation](../profiling/functions-view-dotnet-memory-instrumentation-data.md)   
- [Funktionsansicht \- Sampling](../profiling/functions-view-dotnet-memory-sampling-data.md)
+ [Funktionsansicht - Instrumentierung](../profiling/functions-view-dotnet-memory-instrumentation-data.md)   
+ [Functions View – Sampling (Funktionsansicht – Sampling)](../profiling/functions-view-dotnet-memory-sampling-data.md)

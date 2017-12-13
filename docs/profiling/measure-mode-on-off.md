@@ -1,32 +1,31 @@
 ---
-title: "Messmodus aktivieren/deaktivieren | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.cv.threads.tools.measure"
-helpviewer_keywords: 
-  - "Parallelitätsschnellansicht, Messmodus aktivieren/deaktivieren"
+title: Messmodus aktivieren/deaktivieren | Microsoft-Dokumentation
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vs.cv.threads.tools.measure
+helpviewer_keywords: Concurrency Visualizer, Measure Mode On/Off
 ms.assetid: fbd99736-9ea8-47d2-af51-7e3a4e9c29c1
-caps.latest.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 1e1be9c268826c64d775d56904dfdb1f3cd1bc14
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Messmodus aktivieren/deaktivieren
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Mit diesem Tool können Sie eine Zeitspanne in der Zeitachse genau messen.  Klicken Sie zum Aktivieren des Messmodus auf die Messschaltfläche \(mit einem Linealsymbol\), und ziehen Sie dann in der Zeitachse.  Beim Ziehen wird der Bereich unter dem Zeiger gelb hervorgehoben, und die gemessene Zeit wird rechts von der Schaltfläche auf der Symbolleiste angezeigt.  Dieser Wert wird während des Ziehens dynamisch berechnet, sodass Sie sofort sehen können, wie lange ein bestimmtes Ereignis dauert.  Wenn Sie die Maustaste loslassen, bleibt der Zeitwert sichtbar.  
+# <a name="measure-mode-onoff"></a>Messmodus aktivieren/deaktivieren
+Mithilfe dieses Tools können Sie die Dauer eines Zeitraums auf der Zeitachse genau messen. Klicken Sie auf die Schaltfläche „Messen“ (auf das Lineal), und bewegen Sie den Mauszeiger auf der Zeitachse, um den Messmodus zu aktivieren. Beachten Sie bei diesem Vorgang, dass der Bereich unterhalb des Zeigers in gelb hervorgehoben ist und die gemessene Zeit in der Symbolleiste im Bereich rechts neben der Schaltfläche angezeigt wird. Dieser Wert wird dynamisch berechnet, während Sie den Zeiger auf der Zeitachse bewegen, damit Sie unmittelbar sehen können, wie viel Zeit ein bestimmtes Ereignis in Anspruch nimmt. Wenn Sie die Maustaste loslassen, bleibt der Zeitwert weiterhin sichtbar.  
   
- Sie können den Messprozess wiederholen, es wird jedoch nur die letzte Messung angezeigt.  Klicken Sie erneut auf die Messschaltfläche, um den Messmodus zu deaktivieren.  
+ Sie können den Messvorgang zwar wiederholen, allerdings wird immer nur der neuste Messwert angezeigt. Klicken Sie erneut auf die Schaltfläche „Messen“, um den Messmodus zu deaktivieren.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Verwalten von Kanälen](../profiling/manage-channels.md)   
- [Zoomsteuerelement \(Threadansicht\)](../profiling/zoom-control-threads-view.md)   
- [Threadansicht](../profiling/threads-view-parallel-performance.md)
+ [Zoomsteuerelement (Threadansicht)](../profiling/zoom-control-threads-view.md)   
+ [Threads View (Threadansicht)](../profiling/threads-view-parallel-performance.md)

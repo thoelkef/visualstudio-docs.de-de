@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -28,30 +27,15 @@ helpviewer_keywords:
 - class view
 - object browser
 ms.assetid: e6064f58-5ad9-4f05-8c3f-12e994b6583f
-caps.latest.revision: 28
+caps.latest.revision: "28"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: cf7325de6a4d5ee4cac1b48a7da33202034fde0c
-ms.contentlocale: de-de
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: f85bcde09d6748aa781ceefd85ccbf138245aca6
+ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="viewing-the-structure-of-code"></a>Anzeigen der Codestruktur
 Sie können die Objekte und Member in Visual Studio-Projekten sowie die Objekte und Member in .NET Framework-Komponenten, COM-Komponenten, Dynamic Link Librarys (DLL) und Typbibliotheken (TLB) überprüfen.  
@@ -131,7 +115,7 @@ Sie können die Objekte und Member in Visual Studio-Projekten sowie die Objekte 
   
  Sie können das Fenster **Aufrufhierarchie** anzeigen, indem Sie eine Methode (oder Eigenschaft oder einen Konstruktor) und dann im Kontextmenü **Aufrufhierarchie anzeigen** auswählen. Die Anzeige sollte in etwa der folgenden Abbildung entsprechen.  
   
- ![Aufrufhierarchie – Mehrere Knoten geöffnet](../ide/media/multiplenodes.png "MultipleNodes")  
+ ![Aufrufhierarchie: Mehrere Knoten geöffnet](../ide/media/multiplenodes.png "MultipleNodes")  
 Fenster „Aufrufhierarchie“  
   
  Mithilfe der Dropdownliste auf der Symbolleiste können Sie den Bereich der Hierarchie angeben: die Projektmappe, das aktuelle Projekt oder das aktuelle Dokument.  
@@ -164,7 +148,7 @@ Fenster „Aufrufhierarchie“
   
 -   Ein benutzerdefinierter Satz von Komponenten  
   
- Benutzerdefinierte Komponenten können ausführbare Dateien von verwaltetem Code, Bibliotheksassemblys, Typbibliotheken und OCX-Dateien einbeziehen. Es ist nicht möglich, benutzerdefinierte C++-Komponenten hinzufügen. Benutzerdefinierte Einstellungen werden im Visual Studio-Benutzeranwendungsverzeichnis „%APPDATA%\Roaming\Microsoft\VisualStudio\11.0\ObjBrowEX.dat“ gespeichert.  
+ Benutzerdefinierte Komponenten können ausführbare Dateien von verwaltetem Code, Bibliotheksassemblys, Typbibliotheken und OCX-Dateien einbeziehen. Es ist nicht möglich, benutzerdefinierte C++-Komponenten hinzufügen. Benutzerdefinierte Einstellungen werden im Visual Studio-Benutzeranwendungsverzeichnis „%APPDATA%\Microsoft\VisualStudio\15.0\ObjBrowEX.dat“ gespeichert.  
   
  Im linken Bereich des **Objektkatalogs** werden physische Container wie .NET Framework- und COM-Komponenten angezeigt. Sie können die Containerknoten erweitern, um die darin enthaltenen Namespaces anzuzeigen, und dann die Namespaces erweitern, um die darin enthaltenen Typen anzuzeigen. Wenn Sie einen Typ auswählen, werden seine Member (z. B. Eigenschaften und Methoden) im rechten Bereich aufgeführt. Im unteren rechten Bereich werden ausführliche Informationen zum ausgewählten Objekt angezeigt.  
   

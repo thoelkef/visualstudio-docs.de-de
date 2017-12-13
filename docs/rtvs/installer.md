@@ -13,11 +13,11 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 2f971942d9ca913f030ab703253492acb9155424
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 39f21b73389285ab3114950bee8d84ad2837e206
+ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 11/15/2017
 ---
 # <a name="welcome-to-r-tools-for-visual-studio"></a>Willkommen bei R Tools für Visual Studio
 
@@ -37,6 +37,6 @@ Danke, dass Sie R Tools für Visual Studio (RTVS) installiert haben! Probieren S
 
 RTVS unterstützt CRAN R- sowie Microsoft R-Verteilungen, einschließlich der R-Version, die mit SQL Server 2016 geliefert wird. Weitere Informationen zu den unterschiedlichen Microsoft R-Verteilungen erhalten Sie unter den folgenden Links:
 
-* [Microsoft R Open](https://mran.microsoft.com/download/)
-* [Microsoft R Client](https://msdn.microsoft.com/microsoft-r/r-client-get-started)
-* [Microsoft R Server](https://www.microsoft.com/server-cloud/products/r-server/)
+- [Microsoft R Open](https://mran.microsoft.com/download/)
+- [Microsoft R Client](/machine-learning-server/r-client/what-is-microsoft-r-client)
+- [Microsoft Machine Learning Server (vorher R Server)](/machine-learning-server/)

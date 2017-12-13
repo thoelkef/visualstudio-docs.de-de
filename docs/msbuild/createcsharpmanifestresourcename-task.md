@@ -1,49 +1,50 @@
 ---
-title: "CreateCSharpManifestResourceName Task | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "MSBuild, CreateCSharpManifestResourceName task"
-  - "CreateCSharpManifestResourceName task [MSBuild]"
+title: CreateCSharpManifestResourceName-Aufgabe | Microsoft-Dokumentation
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- C++
+- jsharp
+helpviewer_keywords:
+- MSBuild, CreateCSharpManifestResourceName task
+- CreateCSharpManifestResourceName task [MSBuild]
 ms.assetid: 2ace88c1-d757-40a7-8158-c1d3f5ff0511
-caps.latest.revision: 8
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.openlocfilehash: 9d18d7809357c8f4fa7bce796e7f05981a0f8c99
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# CreateCSharpManifestResourceName Task
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Erstellt einen Manifestnamen im [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]\-Format auf der Grundlage eines bestimmten RESX\-Dateinamens oder einer anderen Ressource.  
+# <a name="createcsharpmanifestresourcename-task"></a>CreateCSharpManifestResourceName-Aufgabe
+Erstellt einen Manifestnamen im [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]-Stil aus einem angegebenen RESX-Dateinamen oder aus einer anderen Ressource  
   
-## Parameter  
- In der folgenden Tabelle werden die Parameter der [CreateCSharpManifestResourceName Task](../msbuild/createcsharpmanifestresourcename-task.md) beschrieben.  
+## <a name="parameters"></a>Parameter  
+ Die folgende Tabelle beschreibt die Parameter der Aufgabe [CreateCSharpManifestResourceName](../msbuild/createcsharpmanifestresourcename-task.md).  
   
 |Parameter|Beschreibung|  
-|---------------|------------------|  
-|`ManifestResourceNames`|Schreibgeschützter <xref:Microsoft.Build.Framework.ITaskItem>`[]`\-Ausgabeparameter.<br /><br /> Die resultierenden Manifestnamen.|  
-|`ResourceFiles`|Erforderlicher `String`\-Parameter.<br /><br /> Der Name der Ressourcendatei, aus der der [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]\-Manifestname erstellt werden soll.|  
-|`RootNamespace`|Optionaler `String`\-Parameter.<br /><br /> Der Stammnamespace der Ressourcendatei, der normalerweise aus der Projektdatei übernommen wird.  Dieser kann `null` lauten.|  
-|`PrependCultureAsDirectory`|Optionaler `Boolean`\-Parameter.<br /><br /> Bei `true` wird der Kulturname unmittelbar vor dem Manifestressourcennamen als Verzeichnisname hinzugefügt.  Der Standardwert lautet `true`.|  
-|`ResourceFilesWithManifestResourceNames`|Optionaler schreibgeschützter `String`\-Ausgabeparameter.<br /><br /> Gibt den Namen der Ressourcendatei zurück, die jetzt den Manifestressourcennamen enthält.|  
+|---------------|-----------------|  
+|`ManifestResourceNames`|Schreibgeschützter <xref:Microsoft.Build.Framework.ITaskItem>-`[]`-Ausgabeparameter<br /><br /> Die resultierenden Manifestnamen|  
+|`ResourceFiles`|Erforderlicher `String` -Parameter.<br /><br /> Der Name der Ressourcendatei, von der der [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]-Manifestname erstellt werden soll.|  
+|`RootNamespace`|Optionaler `String` -Parameter.<br /><br /> Der Stammnamespace der Ressourcendatei, der normalerweise aus der Projektdatei übernommen wird. Kann `null` sein.|  
+|`PrependCultureAsDirectory`|Optionaler `Boolean` -Parameter.<br /><br /> Wenn der Wert `true` ist, wird der Name der Kultur als Verzeichnisname unmittelbar vor dem Manifestressourcennamen hinzugefügt. Der Standardwert ist `true`sein.|  
+|`ResourceFilesWithManifestResourceNames`|Optionaler schreibgeschützter `String`-Ausgabeparameter<br /><br /> Gibt den Namen der Ressourcendatei zurück, die jetzt den Manifestressourcennamen enthält|  
   
-## Hinweise  
- Durch die [CreateVisualBasicManifestResourceName Task](../msbuild/createvisualbasicmanifestresourcename-task.md) wird der entsprechende Manifestressourcenname ermittelt, der einer bestimmten RESX\- oder anderen Ressourcendatei zugewiesen werden soll.  Durch die Aufgabe wird einer Ressourcendatei ein logischer Name zur Verfügung gestellt, der dann in Metadatenform an einen Ausgabeparameter angefügt wird.  
+## <a name="remarks"></a>Hinweise  
+ Die Aufgabe [CreateVisualBasicManifestResourceName](../msbuild/createvisualbasicmanifestresourcename-task.md) bestimmt den richtigen Manifestressourcennamen, der einer bestimmten RESX- oder einer anderen Ressourcendatei zugewiesen werden soll. Die Aufgabe stellt einen logischen Namen für eine Ressourcendatei bereit und fügt sie dann an einen Ausgabeparameter als Metadatenelement an.  
   
- Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Tasks.TaskExtension>\-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.Task>\-Klasse erbt.  Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  
+ Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Tasks.TaskExtension>-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.Task>-Klasse erbt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  
   
-## Siehe auch  
- [Tasks](../msbuild/msbuild-tasks.md)   
- [Task Reference](../msbuild/msbuild-task-reference.md)
+## <a name="see-also"></a>Siehe auch  
+ [Tasks (Aufgaben)](../msbuild/msbuild-tasks.md)   
+ [Task Reference](../msbuild/msbuild-task-reference.md) (MSBuild-Aufgabenreferenz)

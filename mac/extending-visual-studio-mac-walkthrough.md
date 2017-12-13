@@ -1,19 +1,17 @@
 ---
-title: "Exemplarische Vorgehensweise: Erweitern von Visual Studio für Mac"
+title: "Exemplarische Vorgehensweise: Erweitern von Visual Studio für Mac | Microsoft-Dokumentation"
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.technology: vs-ide-sdk
 ms.assetid: 7D00512B-9688-4D8D-87A7-F04F207E3D02
+ms.openlocfilehash: 30571e0f83d2b54fdb5346030cc7cc4430901797
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
-ms.openlocfilehash: 7d267051abbf0341b3842b24906e10e0906a0a72
-ms.contentlocale: de-de
-ms.lasthandoff: 08/11/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="extending-visual-studio-for-mac-walkthrough"></a>Exemplarische Vorgehensweise: Erweitern von Visual Studio für Mac
 
 In diesem Thema lernen Sie, wie Sie ein [einfaches Erweiterungspaket](https://github.com/mjh4/AddIns/tree/master/DateInserter) erstellen. Das Erweiterungspaket erstellt einen neuen Befehl im Menü "Bearbeiten" von Visual Studio für Mac, mit dem der Benutzer das aktuelle Datum und die aktuelle Zeit in ein offenes Textdokument einfügen kann.
@@ -137,4 +135,3 @@ Dieses Beispiel verwendet den Add-In-Maker. Der Add-In-Maker erstellt eine neue 
 15.   Führen Sie zum Schluss das Erweiterungspaket aus, um es zu testen. Klicken Sie in der neuen Instanz von Visual Studio für Mac auf **Bearbeiten > Datum einfügen**. Das aktuelle Datum und die aktuelle Uhrzeit werden an der Einfügemarke eingefügt, wie im unten stehenden Screenshot veranschaulicht:
 
   ![Screenshot vom Einfügen des Datums](media/extending-visual-studio-mac-addin12.png)
-

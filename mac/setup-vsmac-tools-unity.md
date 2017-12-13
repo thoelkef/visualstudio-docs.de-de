@@ -1,16 +1,15 @@
 ---
-title: "Setup von Visual Studio für Mac-Tools für Unity"
+title: "Einrichten von Visual Studio für Mac-Tools für Unity | Microsoft-Dokumentation"
 author: dantogno
 ms.author: v-davian
 ms.date: 07/17/2017
 ms.topic: article
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
+ms.openlocfilehash: 97620ef9c556705cc358d19a956bddb6dca6a3db
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
-ms.openlocfilehash: c2290b1165b8d2688b280684e1251b929d002594
-ms.contentlocale: de-de
-ms.lasthandoff: 08/11/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="setup-visual-studio-for-mac-tools-for-unity"></a>Setup von Visual Studio für Mac-Tools für Unity
 
@@ -64,4 +63,3 @@ Visual Studio muss als externer Skript-Editor in Unity festgelegt werden:
   ![Auswählen von „Öffnen“](media/setup-vsmac-tools-unity-image6.png)
 
 5.  Sobald Visual Studio in der Liste des **externen Skript-Editors** ausgewählt wurde, schließen Sie das Dialogfeld „Einstellungen“, um den Konfigurationsprozess abzuschließen.
-

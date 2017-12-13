@@ -2,11 +2,10 @@
 title: "Ändern von Visual Studio 2017 | Microsoft-Dokumentation"
 description: "Erfahren Sie Schritt für Schritt, wie Sie Visual Studio ändern."
 ms.custom: H1Hack27Feb2017
-ms.date: 04/06/2017
+ms.date: 11/08/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-install
+ms.technology: vs-ide-install
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -18,12 +17,11 @@ ms.assetid: 3399ea7b-a291-4a9e-80a1-b861a21afa1d
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
+ms.openlocfilehash: d35d3e5b58ad9aed66bd85f445f03b28a931a725
+ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
 ms.translationtype: HT
-ms.sourcegitcommit: 89f86a5935ad283ef5c0e29ea2db0ae22cf603a8
-ms.openlocfilehash: 3899b139066dddf0b39acaabe2874e0a7d9ad3d3
-ms.contentlocale: de-de
-ms.lasthandoff: 08/07/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/11/2017
 ---
 # <a name="modify-visual-studio-2017-by-adding-or-removing-workloads-and-components"></a>Ändern von Visual Studio 2017 durch Hinzufügen oder Entfernen von Arbeitsauslastungen und Komponenten
 Wir haben nicht nur das Personalisieren von Visual Studio entsprechend Ihren Aufgaben erleichtert, sondern haben es außerdem für Sie einfacher gemacht, Visual Studio anzupassen. Sie müssen dafür nicht mehr die Systemsteuerung durchsuchen: Starten Sie einfach den neuen Visual Studio-Installer und nehmen die gewünschten Änderungen vor.
@@ -32,6 +30,9 @@ Gehen Sie folgendermaßen vor:
 
 ## <a name="modify-workloads"></a>Ändern von Arbeitsauslastungen  
  Arbeitsauslastungen enthalten die Features, die Sie für die verwendete Programmiersprache oder Plattform benötigen. Verwenden Sie Arbeitsauslastungen, um Visual Studio so zu ändern, dass die Arbeit, die Sie ausführen möchten zum gewünschten Zeitpunkt unterstützt werden.  
+
+>[!IMPORTANT]
+>Zum Installieren, Aktualisieren und Anpassen von Visual Studio müssen Sie sich mit einem Konto anmelden, das über Administratorberechtigungen verfügt. Weitere Informationen finden Sie unter [Benutzerberechtigungen und Visual Studio](../ide/user-permissions-and-visual-studio.md).
 
 1.  Suchen Sie den Visual Studio-Installer auf Ihrem Computer.  
 
@@ -59,11 +60,10 @@ Gehen Sie folgendermaßen vor:
 Wenn Sie das praktische Arbeitsauslastungsfeature zum Anpassen Ihrer Visual Studio-Installation nicht verwenden möchten, wählen Sie im Visual Studio-Installer die Option **Einzelne Komponenten** und dann die gewünschten Komponenten aus, und folgen Sie den Anweisungen.  
 
 ## <a name="get-support"></a>Support aufrufen
-Manchmal kann etwas schiefgehen. Wenn die Installation von Visual Studio fehlschlägt, lesen Sie den Artikel [Problembehandlung bei der Visual Studio 2017-Installation und Upgradefehlern](troubleshooting-installation-issues.md), um Hilfe bei der Problemlösung zu erhalten.
+Manchmal kann etwas schiefgehen. Wenn die Installation von Visual Studio fehlschlägt, lesen Sie den Artikel [Problembehandlung bei der Visual Studio 2017-Installation und Upgradefehlern](troubleshooting-installation-issues.md), um Hilfe bei der Problemlösung zu erhalten. Sie können uns außerdem über das Tool [Ein Problem melden](../ide/how-to-report-a-problem-with-visual-studio-2017.md) in der Visual Studio-IDE oder über [UserVoice](https://visualstudio.uservoice.com/forums/121579) Probleme und Vorschläge mitteilen. Sie können Probleme mit Produkten im Portal [Visual Studio Developer Community](https://developercommunity.visualstudio.com/) im Blick behalten, Fragen stellen und Antworten finden. Über die [Visual Studio-Unterhaltung in der Gitter-Community](https://gitter.im/Microsoft/VisualStudio) können Sie Kontakt zu uns oder anderen Visual Studio-Entwicklern aufnehmen ([GitHub](https://github.com/)-Konto erforderlich).
 
-## <a name="see-also"></a>Siehe auch  
-* [Installieren von Visual Studio 2017](https://go.microsoft.com/fwlink/?linkid=833223)
-* [Aktualisieren von Visual Studio](update-visual-studio.md)
+## <a name="see-also"></a>Siehe auch
+* [Installieren von Visual Studio 2017](install-visual-studio.md)
+* [Aktualisieren von Visual Studio 2017](update-visual-studio.md)
 * [Deinstallieren von Visual Studio 2017](uninstall-visual-studio.md)
 * [Melden eines Problems mit Visual Studio 2017](../ide/how-to-report-a-problem-with-visual-studio-2017.md)
-

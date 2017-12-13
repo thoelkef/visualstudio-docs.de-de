@@ -1,62 +1,63 @@
 ---
-title: "Ansichten f&#252;r Ressourcenkonfliktdaten | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Parallelitätsmethode zur Profilerstellung (Ansichten)"
-  - "Profilerstellungstools, Parallelitätsmethode zur Profilerstellung (Ansicht)"
+title: "Ansichten für Ressourcenkonfliktdaten | Microsoft-Dokumentation"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- profilng tools,concurrency profiling method view
+- concurrency profiling method views
 ms.assetid: be79ec41-f1dd-4984-993f-5c2962355a32
-caps.latest.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: a0006505bb1c1825c79a7ba1b04d1323c8ca1608
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Ansichten f&#252;r Ressourcenkonfliktdaten
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Dieser Abschnitt enthält Referenzinformationen für die Ansichten und Berichte von Profilerdatendateien, die Threadkonflikt\-Profilerstellungsdaten enthalten.  
+# <a name="resource-contention-data-views"></a>Ansichten für Ressourcenkonfliktdaten
+Dieser Abschnitt enthält Referenzinformationen zu den Ansichten und Berichten von Profilerdatendateien, die Profilerstellungsdaten für Threadkonflikte enthalten.  
   
-## In diesem Abschnitt  
- [Summary View \- Profiler Contention Data](../profiling/resource-contention-data-views.md)  
- Zeigt eine grafische Zeitachse der Profilerstellungsdaten an und führt die Funktionen und die Ressourcen auf, die Teil der blockierenden Ereignisse waren.  
+## <a name="in-this-section"></a>In diesem Abschnitt  
+ [Zusammenfassungsansicht – Profilerkonfliktdaten](../profiling/resource-contention-data-views.md)  
+ Zeigt eine grafische Zeitachse für Profilerstellungsdaten an und listet die Funktionen und Ressourcen auf, die bei den meisten blockierenden Ereignissen beteiligt waren.  
   
  [Aufrufstrukturansicht](../profiling/call-tree-view-contention-data.md)  
- Zeigt eine hierarchische Struktur an, die die Ausführungspfade und Ressourcenkonfliktdaten von Funktionen in der Profilerstellungsausführung darstellt.  
+ Zeigt eine hierarchische Struktur an, die die Ausführungspfade und Ressourcenkonfliktdaten von Funktionen während der Profilerstellung darstellt.  
   
  [Modulansicht](../profiling/modules-view-contention-data.md)  
- Organisiert Thread\- und Ressourcenkonfliktdaten nach Modul und führt die Funktionen, Quellcodezeilen und Anweisungen auf, die ausgeführt wurden, als blockierende Ereignisse aufgetreten sind.  
+ Organisiert die Thread- und Ressourcenkonfliktdaten nach Modul und listet die Funktionen, Quellcodezeilen und Anweisungen auf, die ausgeführt wurden, als blockierende Ereignisse auftraten.  
   
- [Aufrufer\-\/Aufgerufener\-Ansicht](../profiling/caller-callee-view-contention-data.md)  
- Führt Thread\- und Ressourcenkonfliktdaten für eine ausgewählte Funktion und die Funktionen auf, die die ausgewählte Funktion aufgerufen haben und von dieser aufgerufen wurden.  
+ [Aufrufer-/Aufgerufener-Ansicht – Profiler-Konfliktdaten](../profiling/caller-callee-view-contention-data.md)  
+ Zeigt Thread- und Ressourcenkonfliktdaten für eine ausgewählte Funktion und für die Funktionen an, die die ausgewählte Funktion aufgerufen haben und von dieser aufgerufen wurden.  
   
  [Ressourcendetailansicht](../profiling/resource-details-view-contention-data.md)  
- Zeigt eine grafische Zeitachse der blockierenden Ereignisse für jede Konfliktressource an und führt die Aufrufliste für die blockierenden Ereignisse auf.  
+ Zeigt eine grafische Zeitachse für blockierende Ereignisse jeder Konfliktressource und die Aufrufliste für blockierende Ereignisse an.  
   
  [Threaddetailansicht](../profiling/thread-details-view-contention-data.md)  
- Zeigt eine grafische Zeitachse der blockierenden Ereignisse für jeden Thread an und führt die Aufrufliste für die blockierenden Ereignisse auf.  
+ Zeigt eine grafische Zeitachse für blockierende Ereignisse jedes Threads und die Aufrufliste für blockierende Ereignisse an.  
   
  [Funktionsansicht](../profiling/functions-view-contention-data.md)  
- Führt Thread\- und Ressourcenkonfliktdaten nach Funktion auf.  
+ Listet Thread- und Ressourcenkonfliktdaten nach Funktion auf.  
   
  [Ressourcenkonfliktansicht](../profiling/resource-contentions-view-contention-data.md)  
- Führt Ressourcenkonfliktdaten nach blockierter Ressource auf.  
+ Listet Ressourcenkonfliktdaten nach blockierter Ressource auf.  
   
  [Zeilenansicht](../profiling/lines-view-contention-data.md)  
- Führt Ressourcenkonfliktdaten nach Quellcodezeile auf.  
+ Listet Ressourcenkonfliktdaten nach Quellcodezeile auf.  
   
  [Anweisungszeigeransicht](../profiling/instruction-pointers-ips-view-contention-data.md)  
- Führt Ressourcenkonflikte nach Anweisung auf.  
+ Listet Ressourcenkonflikte nach Anweisung auf.  
   
  [Prozessansicht](../profiling/process-view-contention-data.md)  
- Führt Ressourcenkonflikte nach Prozess und Thread auf.  
+ Listet Ressourcenkonflikte nach Prozess und Thread auf.  
   
-## Verweis  
+## <a name="reference"></a>Verweis  
  [Funktionsdetailansicht](../profiling/function-details-view.md)  
  Zeigt ein grafisches Diagramm der Beziehung zwischen einer ausgewählten Funktion und den Funktionen an, die die ausgewählte Funktion aufgerufen haben und von dieser aufgerufen wurden.

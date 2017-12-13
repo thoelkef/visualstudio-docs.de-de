@@ -1,66 +1,67 @@
 ---
-title: "How to: Clean a Build | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Exec task [MSBuild]"
-  - "MSBuild, cleaning a build"
-  - "directories [.NET Framework], for output items"
-  - "output, removing items"
+title: 'Vorgehensweise: Bereinigen eines Builds | Microsoft-Dokumentation'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- Exec task [MSBuild]
+- MSBuild, cleaning a build
+- directories [.NET Framework], for output items
+- output, removing items
 ms.assetid: 999ba473-b0c4-45c7-930a-63ea7a510509
-caps.latest.revision: 13
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.openlocfilehash: 2b935e0d09bb80347ee17c796f83846cef02a39f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# How to: Clean a Build
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Wenn Sie einen Build bereinigen, werden alle Zwischen\- und Ausgabedateien gelöscht, sodass nur die Projekt\- und Komponentendateien übrig bleiben.  Anschließend können aus den Projekt\- und Komponentendateien neue Instanzen der Zwischen\- und Ausgabedateien erstellt werden.  Die mit [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] bereitgestellte Bibliothek allgemeiner Aufgaben umfasst eine [Exec](../msbuild/exec-task.md)\-Aufgabe, mit der Sie Systembefehle ausführen können.  Weitere Informationen zur Aufgabenbibliothek finden Sie unter [Task Reference](../msbuild/msbuild-task-reference.md).  
+# <a name="how-to-clean-a-build"></a>Gewusst wie: Bereinigen eines Builds
+Wenn Sie einen Build bereinigen, werden alle Zwischen- und Ausgabedateien gelöscht, wodurch nur die Projekt- und Komponentendateien verbleiben. Aus den Projekt- und Komponentendateien können neue Instanzen der Zwischen- und Ausgabedateien erstellt werden. Die Bibliothek mit allgemeinen Aufgaben, die mit [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] bereitgestellt wird, enthält eine [Exec](../msbuild/exec-task.md)-Aufgabe, die Sie für das Ausführen von Systembefehlen verwenden können. Weitere Informationen zur Aufgabenbibliothek finden Sie unter [Task Reference (Aufgabenverweis)](../msbuild/msbuild-task-reference.md).  
   
-## Erstellen eines Verzeichnisses für Ausgabeelemente  
- Die während der Projektkompilierung erstellte EXE\-Datei wird standardmäßig im selben Verzeichnis wie die Projekt\- und Quelldateien abgelegt.  Ausgabeelemente werden jedoch normalerweise in einem separaten Verzeichnis erstellt.  
+## <a name="creating-a-directory-for-output-items"></a>Erstellen eines Verzeichnisses für Ausgabeelemente  
+ Standardmäßig wird die erstellte EXE-Datei beim Kompilieren eines Projekts im selben Verzeichnis wie das Projekt und die Quelldateien platziert. Die Ausgabeelemente werden jedoch üblicherweise in einem separaten Verzeichnis erstellt.  
   
-#### So erstellen Sie ein Verzeichnis für Ausgabeelemente  
+#### <a name="to-create-a-directory-for-output-items"></a>Erstellen eines Verzeichnisses für Ausgabeelemente  
   
-1.  Verwenden Sie das `Property`\-Element, um den Speicherort und den Namen des Verzeichnisses zu definieren.  Erstellen Sie beispielsweise das Verzeichnis `BuiltApp` in dem Verzeichnis, das die Projekt\- und Quelldateien enthält:  
+1.  Verwenden Sie das `Property`-Element, um den Speicherort und den Namen des Verzeichnisses zu definieren. Erstellen Sie beispielsweise ein Verzeichnis namens `BuiltApp` in dem Verzeichnis, das das Projekt und die Quelldateien enthält:  
   
      `<builtdir>BuiltApp</builtdir>`  
   
-2.  Falls das Verzeichnis nicht vorhanden ist, verwenden Sie die [MakeDir](../msbuild/makedir-task.md)\-Aufgabe, um es zu erstellen.  Beispiele:  
+2.  Verwenden Sie die [MakeDir](../msbuild/makedir-task.md)-Aufgabe, um das Verzeichnis zu erstellen, wenn dieses noch nicht vorhanden ist. Zum Beispiel:  
   
      `<MakeDir Directories = "$(builtdir)"`  
   
      `Condition = "!Exists('$(builtdir)')" />`  
   
-## Entfernen der Ausgabeelemente  
- Bevor Sie neue Instanzen von Zwischen\- und Ausgabedateien erstellen, möchten Sie möglicherweise alle vorherigen Instanzen dieser Dateien löschen.  Verwenden Sie die [RemoveDir](../msbuild/removedir-task.md)\-Aufgabe, um ein Verzeichnis sowie alle darin enthaltenen Dateien und Verzeichnisse von einem Datenträger zu löschen.  
+## <a name="removing-the-output-items"></a>Entfernen der Ausgabeelemente  
+ Bevor Sie neue Instanzen der Zwischen- und Ausgabedateien erstellen, sollten Sie alle vorherigen Instanzen der Zwischen- und Ausgabedateien löschen. Verwenden Sie die [RemoveDir](../msbuild/removedir-task.md)-Aufgabe, um ein Verzeichnis und alle enthaltenen Dateien und Verzeichnisse vom Datenträger zu löschen.  
   
-#### So entfernen Sie ein Verzeichnis und alle im Verzeichnis enthaltenen Dateien  
+#### <a name="to-remove-a-directory-and-all-files-contained-in-the-directory"></a>Entfernen eines Verzeichnisses und aller enthaltenen Dateien  
   
--   Verwenden Sie die `RemoveDir`\-Aufgabe, um das Verzeichnis zu entfernen.  Beispiele:  
+-   Verwenden Sie die `RemoveDir`-Aufgabe, um das Verzeichnis zu entfernen. Zum Beispiel:  
   
      `<RemoveDir Directories="$(builtdir)" />`  
   
-## Beispiel  
- Das folgende Codebeispielprojekt enthält das neue Ziel `Clean`, das die `RemoveDir`\-Aufgabe verwendet, um ein Verzeichnis mit allen enthaltenen Dateien und Verzeichnissen zu löschen.  Darüber hinaus wird vom Ziel `Compile` in diesem Beispiel ein separates Verzeichnis für die Ausgabeelemente erstellt, die beim Bereinigen des Builds gelöscht werden.  
+## <a name="example"></a>Beispiel  
+ Das folgende Codebeispielprojekt enthält ein neues Ziel, `Clean`, das die `RemoveDir`-Aufgabe verwendet, um ein Verzeichnis und alle enthaltenen Dateien und Verzeichnisse zu löschen. In diesem Beispiel erstellt `Compile` ebenfalls ein separates Verzeichnis für die Ausgabeelemente, die gelöscht werden, wenn der Build bereinigt wird.  
   
- `Compile` ist als Standardziel definiert und wird deshalb automatisch verwendet, es sei denn, Sie geben ein bzw. mehrere andere Ziele an.  Mit dem Befehlszeilenschalter **\/target** können Sie ein anderes Ziel angeben.  Beispiele:  
+ `Compile` wird als Standardziel definiert und wird darum automatisch verwendet, wenn Sie kein anderes Ziel bzw. keine anderen Ziele angeben. Verwenden Sie den Befehlszeilenschalter **/target**, um ein anderes Ziel anzugeben. Zum Beispiel:  
   
  `msbuild <file name>.proj /target:Clean`  
   
- Der Schalter **\/target** kann in der Kurzform **\/t** sowie zum Festlegen mehrerer Ziele verwendet werden.  Um beispielsweise das Ziel `Clean` und dann das Ziel `Compile` zu verwenden, geben Sie Folgendes ein.  
+ Der Schalter **/target** kann auf **/t** verkürzt werden und mehrere Ziele angeben. Geben Sie beispielsweise Folgendes ein, um das Ziel `Clean` und dann das Ziel `Compile` zu verwenden:  
   
  `msbuild <file name>.proj /t:Clean;Compile`  
   
-```  
+```xml  
 <Project DefaultTargets = "Compile"  
     xmlns="http://schemas.microsoft.com/developer/msbuild/2003" >  
   
@@ -100,9 +101,9 @@ Wenn Sie einen Build bereinigen, werden alle Zwischen\- und Ausgabedateien gelö
 </Project>  
 ```  
   
-## Siehe auch  
- [Exec Task](../msbuild/exec-task.md)   
- [MakeDir Task](../msbuild/makedir-task.md)   
- [RemoveDir Task](../msbuild/removedir-task.md)   
- [Csc Task](../msbuild/csc-task.md)   
- [Targets](../msbuild/msbuild-targets.md)
+## <a name="see-also"></a>Siehe auch  
+ [Exec Task (Exec-Aufgabe)](../msbuild/exec-task.md)   
+ [MakeDir Task (MakeDir-Aufgabe)](../msbuild/makedir-task.md)   
+ [RemoveDir Task (RemoveDir-Aufgabe)](../msbuild/removedir-task.md)   
+ [Csc-Aufgabe](../msbuild/csc-task.md)   
+ [Targets](../msbuild/msbuild-targets.md) (MSBuild-Ziele)

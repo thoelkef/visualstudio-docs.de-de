@@ -1,27 +1,24 @@
 ---
 title: Formatieren von Python-Code in Visual Studio | Microsoft-Dokumentation
 ms.custom: 
-ms.date: 7/12/2017
+ms.date: 07/12/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-python
+ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 3d0f1631-360b-45d4-a0cb-01c3c10d25f2
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: 8d693278eb9d60d690e797d4e14163495239cd31
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
-ms.openlocfilehash: 9d04c52a595014d06b38205913e3eb1cdd264019
-ms.contentlocale: de-de
-ms.lasthandoff: 07/18/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="formatting-python-code"></a>Formatieren von Python-Code
 
 Mit Visual Studio können Sie Code schnell neu formatieren, um die vorkonfigurierten Formatierungsoptionen zu erfüllen.

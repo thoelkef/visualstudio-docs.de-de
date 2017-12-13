@@ -1,56 +1,57 @@
 ---
-title: "Detach | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: Trennen | Microsoft-Dokumentation
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: d9d1b52c-7f28-467d-b1e0-512afc4e46c9
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 97d48bdcfe663fe5434622775add890166663276
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Detach
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Die VSPerfCmd.exe\-Option **Detach** trennt den Profiler vom angegebenen Prozess oder von allen Prozessen, wenn keine angegeben sind.  Die Profilerstellung muss mit der Samplingmethode initialisiert worden sein.  
+# <a name="detach"></a>Trennen
+Die VSPerfCmd.exe-Option **Detach** (Trennen) trennt die Verbindung zwischen dem Profiler und den angegebenen Prozessen oder allen Prozessen, falls keine angegeben sind. Die Profilerstellung muss über die Samplingmethode initialisiert worden sein.  
   
- Eine Profilerstellung, die mit der **Launch**\-Option oder der **Attach**\-Optionen gestartet wurde, kann mit **Detach** getrennt werden.  Der Profiler kann mit den folgenden **Attach**\-Befehlen erneut angefügt werden.  
+ Die Profilerstellung, die entweder mit der Option **Launch** (Starten) oder **Attach** (Anfügen) gestartet wurde, kann nun mit **Detach** getrennt werden. Der Profiler kann mithilfe nachfolgender **Attach**-Befehle erneut angefügt werden.  
   
- Mit **Detach** wird die Profilerstellungs\-Datendatei nicht geschlossen.  Verwenden Sie die **Shutdown**\-Option, um die Profilerstellung zu beenden und die Datendatei zu schließen.  
+ **Detach** schließt die Datendatei der Profilerstellung nicht. Verwenden Sie die Option **Shutdown**, um die Profilerstellung zu beenden und die Datendatei zu schließen.  
   
 > [!NOTE]
->  Wenn die **Start**\-Option mit der **Crosssession**\-Option angegeben wurde, müssen alle Aufrufe von **VSPerfCmd \/Attach** oder **VSPerfCmd \/Detach** auch **Crosssession** angeben.  
+>  Wenn die Option **CrossSession** für die Option **Start** angegeben wurde, müssen alle Aufrufe von **VSPerfCmd /Attach** oder **VSPerfCmd /Detach** auch **CrossSession** angeben.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 VSPerfCmd.exe /Detach[:PIDs|ProcessNames]  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `PIDs|ProcessNames`  
- `PID` \- Der numerische Systembezeichner eines oder mehrerer Prozesse.  
+ `PID`: der numerische Systembezeichner von einem oder mehreren Prozessen  
   
- `ProcessNames` \- der Name des Prozesses.  Wenn mehrere Instanzen des genannten Prozesses ausgeführt werden, sind die Ergebnisse unvorhersehbar.  
+ `ProcessNames`: der Prozessname Wenn mehrere Instanzen des benannten Prozesses ausgeführt werden, sind die Ergebnisse unvorhersehbar.  
   
- Trennen Sie mehrere Prozesse per Komma voneinander ab.  
+ Trennt mehrere Prozesse mit Komma voneinander ab.  
   
- Wenn kein Prozess angegeben wird, wird der Profiler von allen profilierten Prozessen getrennt.  
+ Wenn kein Prozess angegeben ist, wird der Profiler von allen Prozessen, für die ein Profil erstellt wird, getrennt.  
   
-## Gültige Optionen  
- Die folgenden **VSPerfCmd**\-Optionen können mit der **Attach**\-Option in einer einzelnen Befehlszeile kombiniert werden.  
+## <a name="valid-options"></a>Gültige Optionen  
+ Die folgenden **VSPerfCmd**-Optionen können mit der Option **Attach** in derselben Befehlszeile kombiniert werden.  
   
- **Crosssession**  
- Aktiviert Profilerstellungsanwendungen in anderen Sitzungen als in der Anmeldesitzung.  Erforderlich, wenn die **Start**\-Option mit der **Crosssession**\-Option angegeben wurde.  
+ **CrossSession**  
+ Aktiviert die Profilerstellung für Anwendungen in Sitzungen, die keine Anmeldesitzungen sind. Diese Option ist erforderlich, wenn die Option **Start** mit der Option **CrossSession** angegeben wurde.  
   
-## Beispiel  
- In diesem Beispiel hält der **Detach**\-Befehl die Profilerstellung an, und der **Shutdown**\-Befehl schließt die Profilerdatendatei.  
+## <a name="example"></a>Beispiel  
+ In diesem Fall hält der Befehl **Detach** die Profilerstellung an, und der Befehl **Shutdown** schließt die Profilerdatendatei.  
   
 ```  
 VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp  
@@ -60,8 +61,8 @@ VSPerfCmd.exe /Detach
 VSPerfCmd.exe /Shutdown  
 ```  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [Profilerstellung für eigenständige Anwendungen](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [Profilerstellung für ASP.NET\-Webanwendungen](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [Profilerstellungsdienste](../profiling/command-line-profiling-of-services.md)
+ [Profilerstellung für ASP.NET-Webanwendungen](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [Erstellen von Dienstprofilen](../profiling/command-line-profiling-of-services.md)

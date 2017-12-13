@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -16,30 +15,15 @@ helpviewer_keywords:
 - world-ready applications
 - international applications [Visual Studio]
 ms.assetid: 4d9815ae-3e80-4b4d-933d-f8309aee18d5
-caps.latest.revision: 18
+caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 3d32d11a430227800cb3ed53831a9565eb6adeb3
-ms.openlocfilehash: 409becfa400b7275da07fd8ac0035660f8b941eb
-ms.contentlocale: de-de
-ms.lasthandoff: 05/30/2017
-
+ms.openlocfilehash: f6e32c592894b5d44a2d257d183c11da01c90456
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="globalizing-and-localizing-applications"></a>Globalisieren und Lokalisieren von Anwendungen
 Wenn Sie vorhaben, ein Programm international zu vertreiben, müssen Sie in der Entwicklungs- und Entwurfsphase einige Dinge berücksichtigen. Selbst wenn Sie derzeit keine internationale Anwendung planen, können Sie mit geringem Aufwand dafür sorgen, dass Sie später sehr viel Arbeit sparen, sollten Sie Ihre Meinung doch noch ändern. Dank der in [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] verfügbaren Dienste ist es sehr einfach, mit der verwalteten Entwicklung in Visual Studio eine einzelne Anwendung zu entwickeln, die für verschiedene Gebietsschemas geeignet ist.  
@@ -57,11 +41,11 @@ Wenn Sie vorhaben, ein Programm international zu vertreiben, müssen Sie in der 
  Enthält Links zu Seiten, die Informationen zum Erstellen von Anwendungen enthalten, die mehrere Kulturen unterstützen.  
   
 ## <a name="related-sections"></a>Verwandte Abschnitte  
- [Globalisieren Ihrer App (HTML)](http://go.microsoft.com/fwlink/?LinkId=258266)  
- Enthält Vorgehensweisen und Richtlinien, die Ihnen bei der Globalisierung und Lokalisierung der mit JavaScript und HTML erstellten [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]-App helfen.  
+ [Globalisierung Ihrer App (HTML)](http://go.microsoft.com/fwlink/?LinkId=258266)  
+ Enthält Vorgehensweisen und Richtlinien, mit denen Sie Ihre in HTML erstellte Windows 8.1-App globalisieren und lokalisieren können.  
   
- [Globalisieren Ihrer App (XAML)](http://go.microsoft.com/fwlink/?LinkId=258267)  
- Enthält Vorgehensweisen und Richtlinien, die Ihnen bei der Globalisierung und Lokalisierung der mit XAML und Visual C#, Visual Basic oder Visual C++ erstellten [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]-App helfen.  
+ [Globalisierung Ihrer App (XAML)](http://go.microsoft.com/fwlink/?LinkId=258267)  
+ Enthält Vorgehensweisen und Richtlinien, mit denen Sie Ihre in XAML erstellte Windows 8.1-App globalisieren und lokalisieren können.  
   
  [Empfehlungen für die Entwicklung weltweit einsatzfähiger Anwendungen](http://msdn.microsoft.com/Library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c)  
  Enthält Hintergrundinformationen zur Programmierung für den internationalen Markt.  

@@ -1,46 +1,29 @@
 ---
-title: Testen von Apps von Windows UWP- und 8.1-Store-Apps mit Tests der programmierten UI | Microsoft-Dokumentation
+title: Testen von Windows UWP-Apps mit Tests der programmierten UI | Microsoft-Dokumentation
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: c8d9c15e-ce3c-401a-86ec-c5c124a239d8
-caps.latest.revision: 23
+caps.latest.revision: "23"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
+ms.openlocfilehash: 9680f9886e4aeaefe8c476b7e9fff46fb3e24182
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
 ms.translationtype: HT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 2a9dc338ce3d08ac61ecc77da8df96d9261b7e62
-ms.contentlocale: de-de
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/02/2017
 ---
-# <a name="test-windows-uwp-and-81-store-apps-with-coded-ui-tests"></a>Testen von Apps von Windows UWP- und 8.1-Store-Apps mit Tests der programmierten UI
+# <a name="test-windows-uwp-apps-with-coded-ui-tests"></a>Testen von Windows UWP-Apps mit Tests der programmierten UI
 
-Verwenden Sie diese exemplarischen Vorgehensweise zum Erstellen von UI-Tests für UWP- und XAML-basierte Store 8.1-Apps. 
+Verwenden Sie diese exemplarische Vorgehensweise zum Erstellen von UI-Tests für UWP- und XAML-basierte Windows 8.1-Apps. 
   
-## <a name="create-a-simple-windows-store-app"></a>Erstellen einer einfachen Windows Store-App  
+## <a name="create-a-simple-uwp-app"></a>Erstellen einer einfachen UWP-App  
   
-1.  Wenn Sie Tests der programmierten UI für eine XAML-basierte Windows Store-App ausführen möchten, müssen Sie [eine eindeutige Automatisierungseigenschaft zur Kennzeichnung der einzelnen Steuerelemente festlegen](../test/set-a-unique-automation-property-for-windows-store-controls-for-testing.md).  
+1.  Wenn Sie Tests der programmierten UI für eine XAML-basierte UWP-App ausführen möchten, müssen Sie [eine eindeutige Automatisierungseigenschaft zur Kennzeichnung der einzelnen Steuerelemente festlegen](../test/set-a-unique-automation-property-for-windows-store-controls-for-testing.md).  
   
      Zeigen Sie im Menü **Tools** auf **Optionen** , und wählen Sie dann nacheinander **Text-Editor**, **XAML**und **Verschiedenes**aus.  
   
@@ -48,13 +31,13 @@ Verwenden Sie diese exemplarischen Vorgehensweise zum Erstellen von UI-Tests fü
   
      ![Sonstige XAML-Optionen](../test/media/cuit_windowsstoreapp_b.png "CUIT_WindowsStoreApp_B")  
   
-2.  Erstellen Sie mit einer Visual C#- oder Visual Basic-Vorlage ein neues Projekt für eine leere XAML-basierte Windows Store-App.  
+2.  Erstellen Sie mit einer Visual C#- oder Visual Basic-Vorlage ein neues Projekt für eine leere XAML-basierte UWP-App.  
   
-     ![Leere Windows Store-App erstellen &#40;XAML&#41;](../test/media/cuit_windowsstoreapp_newproject_blankstoreapp.png "CUIT_WindowsStoreApp_NewProject_BlankStoreApp")  
+     ![App erstellen (XAML)](../test/media/cuit_windowsstoreapp_newproject_blankstoreapp.png "CUIT_WindowsStoreApp_NewProject_BlankStoreApp")  
   
 3.  Öffnen Sie im Projektmappen-Explorer die Datei "MainPage.xaml". Ziehen Sie aus der Toolbox ein Schaltflächen- und ein Textfeldsteuerelement auf die Entwurfsoberfläche.  
   
-     ![Windows Store-App entwerfen](../test/media/cuit_windowsstoreapp_design.png "CUIT_WindowsStoreApp_Design")  
+     ![UWP-App entwerfen](../test/media/cuit_windowsstoreapp_design.png "CUIT_WindowsStoreApp_Design")  
   
 4.  Doppelklicken Sie auf das Schaltflächensteuerelement, und fügen Sie dann den folgenden Code hinzu:  
   
@@ -76,15 +59,15 @@ Verwenden Sie diese exemplarischen Vorgehensweise zum Erstellen von UI-Tests fü
     End Class  
     ```  
   
-5.  Drücken Sie F5, um die Windows Store-App auszuführen.  
+5.  Drücken Sie F5, um die UWP-App auszuführen.  
   
-## <a name="create-and-run-a-coded-ui-test-for-the-windows-store-app"></a>Erstellen und Ausführen eines Tests der programmierten UI für die Windows Store-App  
+## <a name="create-and-run-a-coded-ui-test-for-the-uwp-app"></a>Erstellen und Ausführen eines Tests der programmierten UI für UWP-Apps  
 
 [Wie kann ich Tests der programmierten UI für Apps der universellen Windows-Plattform (UWP) erstellen?](#uwpapps)
   
-1.  Erstellen Sie einen neues Projekt mit einem Test der programmierten UI in der Windows Store-App.  
+1.  Erstellen Sie ein neues Testprojekt der programmierten UI für die UWP-App.  
   
-     ![Neues Testprojekt für programmierte UI erstellen &#40;Windows Store-Apps&#41](../test/media/cuit_windowsstore_newproject.png "CUIT_WindowsStore_NewProject")  
+     ![Neues Testprojekt für programmierte UI erstellen (UWP-Apps)](../test/media/cuit_windowsstore_newproject.png "CUIT_WindowsStore_NewProject")  
   
 2.  Wählen Sie mithilfe des Fadenkreuztools aus, dass Sie die UI-Zuordnung bearbeiten möchten.  
   
@@ -94,7 +77,7 @@ Verwenden Sie diese exemplarischen Vorgehensweise zum Erstellen von UI-Tests fü
   
      ![AutomationId in die Zwischenablage kopieren](../test/media/cuit_windows_store_tileautomationid.png "CUIT_Windows_Store_TileAutomationID")  
   
-4.  Wählen Sie in der ausgeführten Windows Store-App mit dem Fadenkreuztool das Schaltflächen- und das Textfeldsteuerelement aus. Wählen Sie nach dem Hinzufügen jedes Steuerelements auf der Symbolleiste des Test-Generators für programmierte UI die Schaltfläche **Steuerelement zu UI-Steuerelementzuordnung hinzufügen** aus.  
+4.  Wählen Sie in der ausgeführten UWP-App mit dem Fadenkreuztool das Schaltflächen- und das Textfeldsteuerelement aus. Wählen Sie nach dem Hinzufügen jedes Steuerelements auf der Symbolleiste des Test-Generators für programmierte UI die Schaltfläche **Steuerelement zu UI-Steuerelementzuordnung hinzufügen** aus.  
   
      ![UI-Zuordnung ein Steuerelement hinzufügen](../test/media/cuit_windowsstoreapp_uimap.png "CUIT_WindowsStoreApp_UIMap")  
   
@@ -230,7 +213,7 @@ Verwenden Sie diese exemplarischen Vorgehensweise zum Erstellen von UI-Tests fü
   
 11. Öffnen Sie im Projektmappen-Explorer die Datei "CodedUITest1.cs" oder "CodedUITest1.vb". Nun können Sie der CodedUTTestMethod1-Methode Code für die zum Ausführen des Tests erforderlichen Aktionen hinzufügen, indem Sie die der UIMap hinzugefügten Steuerelemente verwenden:  
   
-    1.  Starten Sie die Windows Store-App mithilfe der Automation ID-Eigenschaft, die Sie zuvor in Zwischenablage kopiert haben:  
+    1.  Starten Sie die UWP-App mithilfe der Automation ID-Eigenschaft, die Sie zuvor in die Zwischenablage kopiert haben:  
   
         ```csharp  
         XamlWindow.Launch("8ebca7c4-effe-4c86-9998-068daccee452_cyrqexqw8cc7c!App")  
@@ -302,7 +285,7 @@ Verwenden Sie diese exemplarischen Vorgehensweise zum Erstellen von UI-Tests fü
   
      ![Tests der programmierten UI vom Test-Explorer ausführen](../test/media/cuit_windowsstoreapp_runtest.png "CUIT_WindowsStoreApp_RunTest")  
   
-     Die Windows Store-App wird gestartet, die Aktion für das Tippen auf die Schaltfläche wird abgeschlossen, und die Text-Eigenschaft des Textfelds wird mithilfe der Assert-Methode mit einem Wert versehen und überprüft.  
+     Die UWP-App wird gestartet, die Aktion für das Tippen auf die Schaltfläche wird abgeschlossen, und die Text-Eigenschaft des Textfelds wird mithilfe der Assert-Methode mit einem Wert versehen und überprüft.  
   
      ![Test der programmierten UI wird ausgeführt](../test/media/cuit_windowsstoreapp_running.png "CUIT_WindowsStoreApp_Running")  
   
@@ -314,13 +297,13 @@ Verwenden Sie diese exemplarischen Vorgehensweise zum Erstellen von UI-Tests fü
   
 #### <a name="q-why-dont-i-see-the-option-to-record-my-coded-ui-test-in-the-generate-code-for-a-coded-ui-test-dialog"></a>F: Warum wird im Dialogfeld „Test der programmierten UI“ unter „Code generieren“ nicht die Option zum Aufzeichnen des Tests der programmierten UI angezeigt?**  
   
-**A**: Die Option zum Aufzeichnen wird für Windows Store-Apps nicht unterstützt.  
+**A:** Die Option zum Aufzeichnen wird für UWP-Apps nicht unterstützt.  
   
-#### <a name="q-can-i-create-a-coded-ui-test-for-my-windows-store-apps-based-on-winjs"></a>F: Kann ich einen Test der programmierten UI für Windows Store-Apps auf Grundlage von WinJS erstellen?**  
+#### <a name="q-can-i-create-a-coded-ui-test-for-my-uwp-apps-based-on-winjs"></a>F: Kann ich einen Test der programmierten UI für UWP-Apps auf Grundlage von WinJS erstellen?  
 
 **A**: Nein, nur XAML-basierte Apps werden unterstützt.  
   
-#### <a name="q-can-i-create-coded-ui-tests-for-my-windows-store-apps-on-a-system-that-is-not-running-windows-81-or-windows-10"></a>F: Kann ich auf einem System, in dem Windows 8.1 oder Windows 10 nicht ausgeführt wird, Tests der programmierten UI für meine Windows Store-Apps erstellen?**  
+#### <a name="q-can-i-create-coded-ui-tests-for-my-uwp-apps-on-a-system-that-is-not-running-windows-81-or-windows-10"></a>F: Kann ich auf einem System, auf dem Windows 8.1 oder Windows 10 nicht ausgeführt wird, Tests der programmierten UI für UWP-Apps erstellen?  
   
 **A**: Nein. Die Projektvorlagen für Tests der programmierten UI stehen nur unter Windows 8.1 und Windows 10 zur Verfügung. Um Automatisierung für Apps der universellen Windows-Plattform (UWP) zu erstellen, benötigen Sie Windows 10.  
 
@@ -329,7 +312,7 @@ Verwenden Sie diese exemplarischen Vorgehensweise zum Erstellen von UI-Tests fü
   
 **A**: Verwenden Sie abhängig von der Plattform, auf der Sie die UWP-App testen, eine der folgenden Möglichkeiten zum Erstellen von Tests der programmierten UI:  
   
-- Eine UWP-App auf einem lokalen Computer wird als eine Store-App ausgeführt. Um dies zu testen, müssen Sie die Vorlage **Testprojekt für programmierte UI (Windows)** verwenden. Sie finden diese Vorlage beim Erstellen eines neuen Projekts unter dem Knoten **Windows**, **Universal** . Sie können auch unter dem Knoten **Windows**, **Windows 8**, **Windows** danach suchen.  
+- Eine UWP-App auf einem lokalen Computer wird als UWP-App ausgeführt. Um dies zu testen, müssen Sie die Vorlage **Testprojekt für programmierte UI (Windows)** verwenden. Sie finden diese Vorlage beim Erstellen eines neuen Projekts unter dem Knoten **Windows**, **Universal** . Sie können auch unter dem Knoten **Windows**, **Windows 8**, **Windows** danach suchen.  
   
 - Eine UWP-App auf einem mobilen Gerät oder Emulator wird als eine Phone-App ausgeführt. Um dies zu testen, müssen Sie die Vorlage **Testprojekt für programmierte UI (Windows Phone)** verwenden. Sie finden diese Vorlage beim Erstellen eines neuen Projekts unter dem Knoten **Windows**, **Universal** . Sie können auch unter dem Knoten **Windows**, **Windows 8**, **Windows Phone** danach suchen.  
   
@@ -341,5 +324,4 @@ Nachdem Sie das Projekt erstellt haben, wird ein Test auf die gleiche Weise wie 
   
 ## <a name="see-also"></a>Siehe auch  
  [Verwenden von Benutzeroberflächenautomatisierung zum Testen des Codes](../test/use-ui-automation-to-test-your-code.md)   
- [Festlegen einer eindeutigen Automatisierungseigenschaft für Windows Store-Steuerelemente für Tests](../test/set-a-unique-automation-property-for-windows-store-controls-for-testing.md)
-
+ [Festlegen einer eindeutigen Automatisierungseigenschaft für UWP-Steuerelemente für Tests](../test/set-a-unique-automation-property-for-windows-store-controls-for-testing.md)

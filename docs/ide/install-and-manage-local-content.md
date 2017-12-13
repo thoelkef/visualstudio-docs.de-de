@@ -1,61 +1,44 @@
 ---
-title: Installieren und Verwalten von lokalen Inhalten | Microsoft-Dokumentation
+title: Installieren von lokaler Visual Studio-Dokumentation | Microsoft-Dokumentation
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-help-viewer
+ms.technology: vs-help-viewer
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- hv_manage
+f1_keywords: hv_manage
 helpviewer_keywords:
-- changing content installation source [Help Viewer 2.0]
-- updating local content [Help Viewer 2.0]
-- Help Viewer 2.0, content installation source
-- Help Viewer 2.0, updating local content
-- Help Viewer 2.0, changing content installation source
-- installing local content [Help Viewer 2.0]
-- content installation source [Help Viewer 2.0]
-- downloading content [Help Viewer 2.0]
-- removing local content [Help Viewer 2.0]
-- Help Viewer 2.0, removing local content
-- Help Viewer 2.0, installing local content
-- Help Viewer 2.0, downloading content
+- changing content installation source [Help Viewer]
+- updating local content [Help Viewer]
+- Help Viewer, content installation source
+- Help Viewer, updating local content
+- Help Viewer, changing content installation source
+- installing local content [Help Viewer]
+- content installation source [Help Viewer]
+- downloading content [Help Viewer]
+- removing local content [Help Viewer]
+- Help Viewer, removing local content
+- Help Viewer, installing local content
+- Help Viewer, downloading content
 ms.assetid: efd9df4c-2e69-4c50-992c-9678a8d8cf19
-caps.latest.revision: 25
+caps.latest.revision: "25"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: b016ce5c67f1aa7242d7af3f3fb1142b61145f63
-ms.contentlocale: de-de
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: 3bd498004568bab80565782e11b46691a7d0ef1f
+ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="install-and-manage-local-content"></a>Installieren und Verwalten von lokalen Inhalten
-Durch Verwendung des Microsoft Help Viewer können Sie den Hilfeinhalt, der auf dem Computer installiert ist, hinzufügen, entfernen, aktualisieren oder verschieben, um ihn an die Softwareanforderungen anzupassen.  
+Durch Verwendung von Microsoft Help Viewer können Sie den Hilfeinhalt, der auf dem Computer installiert ist, hinzufügen, entfernen, aktualisieren oder verschieben, um ihn an die Softwareanforderungen anzupassen.  
   
- Um Inhalt auf dem lokalen Computer zu verwalten, müssen Sie sich mit einem Konto anmelden, das über Administratorberechtigungen verfügt. Außerdem können Sie möglicherweise keine lokalen Inhalte verwalten, wenn Sie in einer Unternehmensumgebung arbeiten, da diese Entscheidungen möglicherweise von Systemadministratoren für Ihre Organisation getroffen werden. Weitere Informationen finden Sie im [Help Viewer-Administratorhandbuch](../ide/help-viewer-administrator-guide.md).  
+Sie müssen sich mit einem Konto anmelden, das über Administratorberechtigungen verfügt, um Inhalt auf dem lokalen Computer zu verwalten. Außerdem können Sie möglicherweise keine lokalen Inhalte verwalten, wenn Sie in einer Unternehmensumgebung arbeiten, da diese Entscheidungen möglicherweise von Systemadministratoren für Ihre Organisation getroffen werden. Weitere Informationen finden Sie im [Help Viewer-Administratorhandbuch](../ide/help-viewer-administrator-guide.md).  
   
 ## <a name="changing-the-content-installation-source"></a>Ändern der Installationsquelle für Inhalte  
- Standardmäßig installiert der Help Viewer Inhalte, indem er einen Microsoft-Onlinedienst als Quelle verwendet. Sie sollten die Inhaltsquelle im Allgemeinen nicht ändern, es sei denn, Sie arbeiten in einer Unternehmensumgebung, für die ein Systemadministrator bereits Inhalte an einem anderen Speicherort installiert hat.  
+Standardmäßig installiert der Help Viewer Inhalte, indem er einen Microsoft-Onlinedienst als Quelle verwendet. Sie sollten die Inhaltsquelle im Allgemeinen nicht ändern, es sei denn, Sie arbeiten in einer Unternehmensumgebung, für die ein Systemadministrator bereits Inhalte an einem anderen Speicherort installiert hat.  
   
 #### <a name="to-change-the-content-installation-source"></a>So ändern Sie die Inhaltsinstallationsquelle  
   
@@ -73,12 +56,13 @@ Durch Verwendung des Microsoft Help Viewer können Sie den Hilfeinhalt, der auf 
     -   Wählen Sie in der Liste den zuletzt verwendeten Eintrag aus.  
   
 ## <a name="download-and-install-content-locally"></a>Herunterladen und lokales Installieren von Inhalten  
- Sie können Themen ohne eine Internetverbindung anzeigen, wenn Sie die Inhalte auf dem lokalen Computer herunterladen und installieren.  
+Sie können Themen ohne eine Internetverbindung anzeigen lassen, wenn Sie die Inhalte auf dem lokalen Computer herunterladen und installieren.  
   
 > [!IMPORTANT]
->  Zum Installieren von Inhalt müssen Sie sich mit einem Konto anmelden, das über Administratorberechtigungen verfügt.  
+> Zum Installieren von Inhalt müssen Sie sich mit einem Konto anmelden, das über Administratorberechtigungen verfügt.  
   
- Wenn die Visual Studio IDE auf eine andere Sprache als Englisch eingestellt ist, können Sie englische Inhalte, lokalisierte Inhalte oder beides installieren. Es werden jedoch keine Inhalte angezeigt, wenn Sie nur die englische Version installieren und im Dialogfeld **Viewer-Optionen** das Kontrollkästchen **Englische Inhalte in alle Navigationsregisterkarten und F1-Anforderungen einbeziehen** deaktivieren.  
+> [!NOTE]
+> Wenn die Visual Studio IDE auf eine andere Sprache als Englisch eingestellt ist, können Sie englische Inhalte, lokalisierte Inhalte oder beides installieren. Es werden jedoch keine Inhalte angezeigt, wenn Sie nur die englische Version installieren und im Dialogfeld **Viewer-Optionen** das Feld **Englische Inhalte in alle Navigationsregisterkarten und F1-Anforderungen einbeziehen** deaktivieren.  
   
 #### <a name="to-download-and-install-content"></a>So laden Sie den Inhalt herunter und installieren diesen  
   
@@ -93,12 +77,13 @@ Durch Verwendung des Microsoft Help Viewer können Sie den Hilfeinhalt, der auf 
      Das Buch oder die Bücher, die Sie angegeben haben, werden mit allen Updates für Bücher installiert, die bereits auf dem Computer vorhanden sind. Installationszeiten schwanken, Sie können jedoch den Status auf der Statusleiste anzeigen.  
   
 ## <a name="removing-local-content"></a>Entfernen der lokalen Inhalte  
- Sie können Speicherplatz sparen, indem Sie unerwünschten Inhalt vom Computer entfernen.  
+Sie können Speicherplatz sparen, indem Sie unerwünschten Inhalt vom Computer entfernen.  
   
 > [!IMPORTANT]
->  Um Inhalte entfernen zu können, müssen Sie über Administratorberechtigungen verfügen.  
+> Um Inhalte entfernen zu können, müssen Sie über Administratorberechtigungen verfügen.  
   
- Es wird kein Inhalt angezeigt, wenn die Sprache von Visual Studio IDE nicht auf Englisch festgelegt ist, Sie lokalisierte Inhalte entfernen und das Kontrollkästchen **Englische Inhalte in alle Navigationsregisterkarten und F1-Anforderungen einbeziehen** im Dialogfeld **Viewer-Optionen** deaktiviert ist.  
+> [!NOTE]
+> Es wird kein Inhalt angezeigt, wenn die Sprache der Visual Studio-IDE nicht auf Englisch festgelegt ist, Sie lokalisierte Inhalte entfernen und das Feld **Englische Inhalte in alle Navigationsregisterkarten und F1-Anforderungen einbeziehen** im Dialogfeld **Viewer-Optionen** deaktiviert ist.  
   
 #### <a name="to-remove-content"></a>So entfernen Sie Inhalte  
   
@@ -141,4 +126,4 @@ Durch Verwendung des Microsoft Help Viewer können Sie den Hilfeinhalt, der auf 
 3.  Klicken Sie auf die Schaltfläche **Schließen**, wenn die Inhalte verschoben wurden.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Microsoft Help Viewer](../ide/microsoft-help-viewer.md)
+[Microsoft Help Viewer](../ide/microsoft-help-viewer.md)

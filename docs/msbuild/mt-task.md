@@ -1,76 +1,77 @@
 ---
-title: "MT Task | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "VC.Project.VCManifestTool.ResourceOutputFileName"
-  - "VC.Project.VCManifestTool.SuppressDependencyElement"
-  - "VC.Project.VCManifestTool.ManifestFromManagedAssembly"
-  - "VC.Project.VCManifestTool.GenerateCategoryTags"
-  - "VC.Project.VCManifestTool.EnableDPIAwareness"
-  - "vc.task.mt"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-  - "C++"
-helpviewer_keywords: 
-  - "MSBUILD (Visual C++), MT task"
-  - "MT task (MSBuild (Visual C++))"
+title: MT-Aufgabe | Microsoft-Dokumentation
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- VC.Project.VCManifestTool.ResourceOutputFileName
+- VC.Project.VCManifestTool.SuppressDependencyElement
+- VC.Project.VCManifestTool.ManifestFromManagedAssembly
+- VC.Project.VCManifestTool.GenerateCategoryTags
+- VC.Project.VCManifestTool.EnableDPIAwareness
+- vc.task.mt
+dev_langs:
+- VB
+- CSharp
+- C++
+- jsharp
+- C++
+helpviewer_keywords:
+- MSBUILD (Visual C++), MT task
+- MT task (MSBuild (Visual C++))
 ms.assetid: bb94913c-1042-4968-9f08-b394518e899f
-caps.latest.revision: 6
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 6
+caps.latest.revision: "6"
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.openlocfilehash: 2b0c421ca3d1e56c22cab7ff066d17d59914961c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# MT Task
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Umschließt das Microsoft Manifest\-Tool \("mt.exe"\).  Weitere Informationen finden Sie unter "Mt.exe" auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)\-Website.  
+# <a name="mt-task"></a>MT-Aufgabe
+Umschließt das Microsoft-Manifesttool, „Mt.exe“. Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter „Mt.exe“.  
   
-## Parameter  
- In der folgenden Tabelle werden die Parameter der **MT**\-Aufgabe beschrieben.  Die meisten Aufgabenparameter und einige Sätze von Parametern entsprechen einer Befehlszeilenoption.  
+## <a name="parameters"></a>Parameter  
+ In der folgenden Tabelle werden die Parameter der **MT**-Aufgabe beschrieben. Die meisten Aufgabenparameter und einige Parametersätze entsprechen einer Befehlszeilenoption.  
   
 > [!NOTE]
->  Die mt.exe\-Dokumentation verwendet einen Bindestrich \(**\-**\) als Präfix für Befehlszeilenoptionen, doch in diesem Thema wird ein Schrägstrich verwendet \(**\/**\).  Beide Präfixe sind akzeptabel.  
+>  In der „Mt.exe“-Dokumentation wird als Präfix für Befehlszeilenoptionen ein Bindestrich (**-**) verwendet, in diesem Artikel jedoch ein Schrägstrich (**/**). Beide Präfixe sind zulässig.  
   
 |Parameter|Beschreibung|  
-|---------------|------------------|  
-|**AdditionalManifestFiles**|Optionaler **String\[\]**\-Parameter.<br /><br /> Gibt den Namen einer oder mehrerer Manifestdateien an.<br /><br /> Weitere Informationen finden Sie in der Option **\/manifest** in "Mt.exe" auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)\-Website.|  
-|**AdditionalOptions**|Optionaler **String**\-Parameter.<br /><br /> Eine Liste von Befehlszeilenoptionen.  Beispiel: "*\/option1 \/option2 \/option\#*".  Verwenden Sie diesen Parameter, um Befehlszeilenoptionen anzugeben, die nicht von einem beliebigen anderen **MT**\-Aufgabenparameter dargestellt werden.<br /><br /> Weitere Informationen finden Sie unter "Mt.exe" auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)\-Website.|  
-|**AssemblyIdentity**|Optionaler **String**\-Parameter.<br /><br /> Gibt die Attributwerte des **assemblyIdentity**\-Elements des Manifests an.  Geben Sie eine durch Trennzeichen getrennte Liste an, wobei die erste Komponente der Wert des `name`\-Attributs ist, dem mindestens ein Name\-Wert\-Paar diese Form aufweist: *\<attribute name\>\=\<attribute\_value\>*.<br /><br /> Weitere Informationen finden Sie in der Option **\/identity** in "Mt.exe" auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)\-Website.|  
-|**ComponentFileName**|Optionaler **String**\-Parameter.<br /><br /> Gibt den Namen der Dynamic Link Library an, die aus den RGS\- oder TLB\-Dateien erstellt werden soll.  Dieser Parameter ist erforderlich, wenn Sie den **RegistrarScriptFile**\-MT\-Aufgabenparameter oder den **TypeLibraryFile**\-MT\-Aufgabenparameter angeben.<br /><br /> Weitere Informationen finden Sie in der Option **\/dll** in "Mt.exe" auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)\-Website.|  
-|**DependencyInformationFile**|Optionaler **String**\-Parameter.<br /><br /> Legt die Abhängigkeitsinformationsdatei fest, die von Visual Studio verwendet wird, um Buildabhängigkeitsinformationen für das Manifesttool nachzuverfolgen.|  
-|**EmbedManifest**|Optionaler `Boolean`\-Parameter.<br /><br /> Wenn `true`, wird die Manifestdatei in die Assembly eingebettet.  Wenn `false`, wird eine eigenständige Manifestdatei erstellt.|  
-|**EnableDPIAwareness**|Optionaler `Boolean`\-Parameter.<br /><br /> Wenn `true`, werden die Manifestinformationen ergänzt, die die Anwendung als DPI\-bewusst markieren.  Die Erstellung einer DPI\-kompatiblen Anwendung sorgt für eine einheitliche benutzerfreundliche Benutzeroberfläche in vielen verschiedenen Anzeigeeinstellungen mit hoher DPI\-Zahl.<br /><br /> Weitere Informationen finden Sie unter "High DPI" auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)\-Website.|  
-|**GenerateCatalogFiles**|Optionaler `Boolean`\-Parameter.<br /><br /> Wenn `true`, werden Katalogdefinitionsdateien \(.cdf\) generiert.<br /><br /> Weitere Informationen finden Sie in der Option **\/makecdfs** in "Mt.exe" auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)\-Website.|  
-|**GenerateCategoryTags**|Optionaler `Boolean`\-Parameter.<br /><br /> Wenn `true`, werden Kategorietags generiert.  Ist dieser Parameter `true`, muss auch der **ManifestFromManagedAssemblyMT**\-Aufgabenparameter angegeben werden.<br /><br /> Weitere Informationen finden Sie in der Option **\/category** in "Mt.exe" auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)\-Website.|  
-|**InputResourceManifests**|Optionaler **String**\-Parameter.<br /><br /> Geben Sie das Manifest einer Ressource vom RT\_MANIFEST\-Typ ein, der den angegebenen Bezeichner hat.  Geben Sie eine Ressource in dieser Form an, *\<file\>\[***;***\[***\#***\]\<resource\_id\>\]*, wobei der `resource_id`\-Parameter eine nicht\-negative 16\-Bit\-Zahl ist.<br /><br /> Wenn kein `resource_id`\-Element angegeben ist, wird der CREATEPROCESS\_MANIFEST\_RESOURCE\-Standardwert \(1\) verwendet.<br /><br /> Weitere Informationen finden Sie in der Option **\/inputresource** in "Mt.exe" auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)\-Website.|  
-|**ManifestFromManagedAssembly**|Optionaler **String**\-Parameter.<br /><br /> Generieren Sie ein Manifest anhand der angegebenen verwalteten Assembly.<br /><br /> Weitere Informationen finden Sie in der Option **\/managedassemblyname** in "Mt.exe" auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)\-Website.|  
-|**ManifestToIgnore**|Optionaler **String**\-Parameter.<br /><br /> \(Wird nicht verwendet.\)|  
-|**OutputManifestFile**|Optionaler **String**\-Parameter.<br /><br /> Gibt den Namen des Ausgabemanifests an.  Wenn dieser Parameter weggelassen wird, und nur ein Manifest darauf angewendet wird, wird dieses Manifest an Ort und Stelle geändert.<br /><br /> Weitere Informationen finden Sie in der Option **\/out** in "Mt.exe" auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)\-Website.|  
-|**OutputResourceManifests**|Optionaler **String**\-Parameter.<br /><br /> Geben Sie das Manifest an eine Ressource des RT\_MANIFEST\-Typs aus, der den angegebenen Bezeichner hat.  Die Ressource weist diese Form auf: *\<file\>\[***;***\[***\#***\]\<resource\_id\>\]*, wobei der `resource_id`\-Parameter eine nicht\-negative 16\-Bit\-Zahl ist.<br /><br /> Wenn kein `resource_id`\-Element angegeben ist, wird der CREATEPROCESS\_MANIFEST\_RESOURCE\-Standardwert \(1\) verwendet.<br /><br /> Weitere Informationen finden Sie in der Option **\/outputresource** in "Mt.exe" auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)\-Website.|  
-|**RegistrarScriptFile**|Optionaler **String**\-Parameter.<br /><br /> Gibt den Namen der Registrierungsskriptdatei \(.rgs\) an, die für die registrierungsfreie COM\-Manifest\-Unterstützung verwendet werden soll.<br /><br /> Weitere Informationen finden Sie in der Option **\/rgs** in "Mt.exe" auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)\-Website.|  
-|**ReplacementsFile**|Optionaler **String**\-Parameter.<br /><br /> Gibt die Datei an, die Werte für die ersetzbaren Zeichenfolgen in der Registrierungsstellenskriptdatei \(.rgs\) enthält.<br /><br /> Weitere Informationen finden Sie in der Option **\/replacements** in "Mt.exe" auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)\-Website.|  
-|**ResourceOutputFileName**|Optionaler **String**\-Parameter.<br /><br /> Gibt die Ressourcenausgabedatei an, die zur Einbettung des Manifests in die Projektausgabe verwendet wird.|  
-|**Sources**|Optionaler `ITaskItem[]`\-Parameter.<br /><br /> Gibt eine Liste von Manifestquelldateien an, die durch Leerzeichen getrennt sind.<br /><br /> Weitere Informationen finden Sie in der Option **\/manifest** in "Mt.exe" auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)\-Website.|  
-|**SuppressDependencyElement**|Optionaler `Boolean`\-Parameter.<br /><br /> Wenn `true`, wird ein Manifest ohne Abhängigkeitselemente generiert.  Ist dieser Parameter `true`, geben Sie auch den **ManifestFromManagedAssemblyMT**\-Aufgabenparameter an.<br /><br /> Weitere Informationen finden Sie in der Option **\/nodependency** in "Mt.exe" auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)\-Website.|  
-|**SuppressStartupBanner**|Optionaler `Boolean`\-Parameter.<br /><br /> Bei `true` wird die Anzeige der Urheberrechts\- und Versionsnummernmeldung verhindert, wenn die Aufgabe startet.<br /><br /> Weitere Informationen finden Sie in der Option **\/nologo** in "Mt.exe" auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)\-Website.|  
-|**TrackerLogDirectory**|Optionaler `String`\-Parameter.<br /><br /> Gibt das Zwischenverzeichnis an, in dem Nachverfolgungsprotokolle für diese Aufgabe gespeichert werden.|  
-|**TypeLibraryFile**|Optionaler **String**\-Parameter.<br /><br /> Gibt den Namen der Typbibliotheksdatei \(.tlb\) an.  Ist dieser Parameter angegeben, geben Sie auch den **ComponentFileName MT**\-Aufgabenparameter an.<br /><br /> Weitere Informationen finden Sie in der Option **\/tlb** in "Mt.exe" auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)\-Website.|  
-|**UpdateFileHashes**|Optionaler `Boolean`\-Parameter.<br /><br /> Wenn `true`, wird der Hash\-Wert der Dateien im Pfad berechnet, der durch den **UpdateFileHashesSearchPathMT**\-Aufgabenparameter angegeben wird, und anschließend der Wert des **hash**\-Attributs des **file**\-Elements des Manifests mit dem berechneten Wert aktualisiert.<br /><br /> Weitere Informationen finden Sie in der Option **\/hashupdate** in "Mt.exe" auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)\-Website.  Sehen Sie sich auch den **UpdateFileHashesSearchPath**\-Parameter in dieser Tabelle an.|  
-|**UpdateFileHashesSearchPath**|Optionaler `String`\-Parameter.<br /><br /> Gibt den Suchpfad an, der verwendet werden soll, wenn die Dateihashs aktualisiert werden.  Verwenden Sie diesen Parameter mit dem **UpdateFileHashes MT**\-Aufgabenparameter.<br /><br /> Weitere Informationen erhalten Sie unter dem **UpdateFileHashes**\-Parameter in dieser Tabelle.|  
-|**VerboseOutput**|Optionaler `Boolean`\-Parameter.<br /><br /> Wenn `true`, werden ausführliche Debuginformationen angezeigt.<br /><br /> Weitere Informationen finden Sie in der Option **\/verbose** in "Mt.exe" auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)\-Website.|  
+|---------------|-----------------|  
+|**AdditionalManifestFiles**|Optionaler **String[]**-Parameter.<br /><br /> Gibt den Namen von mindestens einer Manifestdatei an.<br /><br /> Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter der „Mt.exe“-Option **/manifest**.|  
+|**AdditionalOptions**|Optionaler **String**-Parameter.<br /><br /> Eine Liste von Befehlszeilenoptionen. Beispiel: „*/option1 /option2 /option#*“. Verwenden Sie diesen Parameter, um Befehlszeilenoptionen anzugeben, die nicht durch einen anderen **MT**-Aufgabenparameter dargestellt werden.<br /><br /> Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter „Mt.exe“.|  
+|**AssemblyIdentity**|Optionaler **String**-Parameter.<br /><br /> Gibt die Attributwerte des **assemblyIdentity**-Elements des Manifests an. Definieren Sie eine durch Trennzeichen getrennte Liste, in der zuerst der Wert des `name`-Attributs erscheint und anschließend mindestens ein Name/Wert-Paar des Formats *\<attribute name>=<attribute_value>*.<br /><br /> Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter der „Mt.exe“-Option **/identity**.|  
+|**ComponentFileName**|Optionaler **String**-Parameter.<br /><br /> Gibt den Namen der Dynamic Link Library an, die Sie aus den RGS- oder TLB-Dateien erstellen möchten. Dieser Parameter ist erforderlich, wenn Sie die **RegistrarScriptFile**- oder **TypeLibraryFile**-MT-Aufgabenparameter angeben.<br /><br /> Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter der „Mt.exe“-Option **/dll**.|  
+|**DependencyInformationFile**|Optionaler **String**-Parameter.<br /><br /> Gibt die Abhängigkeitsinformationen-Datei an, die von Visual Studio verwendet wird, um Informationen zur Build-Abhängigkeit für das Manifesttool zu verwalten.|  
+|**EmbedManifest**|Optionaler `Boolean` -Parameter.<br /><br /> Wenn `true`, wird die Manifestdatei in die Assembly eingebettet. Wenn `false`, wird eine eigenständige Manifestdatei erstellt.|  
+|**EnableDPIAwareness**|Optionaler `Boolean` -Parameter.<br /><br /> Wenn `true`, werden die Manifestinformationen erweitert, die die Anwendung als „mit DPI kompatibel“ markieren. Wenn eine Anwendung so geschrieben wird, dass sie mit DPI kompatibel ist, sieht ihre Benutzeroberfläche bei verschiedensten High-DPI-Anzeigeeinstellungen ansprechend aus.<br /><br /> Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter „High-DPI“.|  
+|**GenerateCatalogFiles**|Optionaler `Boolean` -Parameter.<br /><br /> Wenn `true`, werden Dateien zur Katalogdefinition (.cdf) generiert.<br /><br /> Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter der „Mt.exe“-Option **/makecdfs**.|  
+|**GenerateCategoryTags**|Optionaler `Boolean` -Parameter.<br /><br /> Wenn `true`, wird bewirkt, dass Kategorietags generiert werden. Wenn dieser Parameter `true` ist, muss der **ManifestFromManagedAssemblyMT**-Aufgabenparameter ebenfalls angegeben werden.<br /><br /> Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter der „Mt.exe“-Option **/category**.|  
+|**InputResourceManifests**|Optionaler **String**-Parameter.<br /><br /> Geben Sie das Manifest aus einer Ressource vom Typ RT_MANIFEST ein, die über den angegebenen Bezeichner verfügt. Geben Sie eine Ressource im Format *\<file>[***;***[***#***]<resource_id>]* ein, bei der der optionale `resource_id`-Parameter eine positive 16-Bit-Zahl ist.<br /><br /> Wenn keine `resource_id` angegeben wird, wird der CREATEPROCESS_MANIFEST_RESOURCE-Standardwert (1) verwendet.<br /><br /> Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter der „Mt.exe“-Option **/inputresource**.|  
+|**ManifestFromManagedAssembly**|Optionaler **String**-Parameter.<br /><br /> Generiert ein Manifest aus der angegebenen verwalteten Assembly.<br /><br /> Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter der „Mt.exe“-Option **/managedassemblyname**.|  
+|**ManifestToIgnore**|Optionaler **String**-Parameter.<br /><br /> (Nicht verwendet.)|  
+|**OutputManifestFile**|Optionaler **String**-Parameter.<br /><br /> Gibt den Namen des Ausgabemanifests an. Wenn dieser Parameter nicht angegeben wird und gerade nur an einem Manifest gearbeitet wird, wird dieses stattdessen geändert.<br /><br /> Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter der „Mt.exe“-Option **/out**.|  
+|**OutputResourceManifests**|Optionaler **String**-Parameter.<br /><br /> Geben Sie das Manifest an eine Ressource vom Typ RT_MANIFEST aus, die über den angegebenen Bezeichner verfügt. Die Ressource besitzt das Format *\<dati>[***;***[***#***]<ressourcen_id>]*, wobei der optionale `resource_id`-Parameter eine positive 16-Bit-Zahl ist.<br /><br /> Wenn keine `resource_id` angegeben wird, wird der CREATEPROCESS_MANIFEST_RESOURCE-Standardwert (1) verwendet.<br /><br /> Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter der „Mt.exe“-Option **/outputresource**.|  
+|**RegistrarScriptFile**|Optionaler **String**-Parameter.<br /><br /> Gibt den Namen der Registrierungsskriptdatei (.rgs) zum Verwenden bei der COM-Manifest-Unterstützung ohne Registrierung an.<br /><br /> Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter der „Mt.exe“-Option **/rgs**.|  
+|**ReplacementsFile**|Optionaler **String**-Parameter.<br /><br /> Gibt die Datei an, die Werte für die ersetzbaren Zeichenfolgen in der Registrierungsskriptdatei (.rgs) enthält.<br /><br /> Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter der „Mt.exe“-Option **/replacements**.|  
+|**ResourceOutputFileName**|Optionaler **String**-Parameter.<br /><br /> Gibt die Ausgaberessourcen-Datei an, die verwendet wird, um das Manifest in die Projektausgabe einzubetten.|  
+|**Sources**|Optionaler `ITaskItem[]` -Parameter.<br /><br /> Definiert eine Liste von durch Leerräume getrennten Manifestquelldateien.<br /><br /> Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter der „Mt.exe“-Option **/manifest**.|  
+|**SuppressDependencyElement**|Optionaler `Boolean` -Parameter.<br /><br /> Wenn `true`, wird ein Manifest ohne Abhängigkeitselemente generiert. Wenn dieser Parameter `true` ist, müssen Sie auch den **ManifestFromManagedAssemblyMT**-Aufgabenparameter angeben.<br /><br /> Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter der „Mt.exe“-Option **/nodependency**.|  
+|**SuppressStartupBanner**|Optionaler `Boolean` -Parameter.<br /><br /> Bei `true` wird die Anzeige der Copyright- und Versionsnummernmeldung bei Aufgabenstart verhindert.<br /><br /> Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter der „Mt.exe“-Option **/nologo**.|  
+|**TrackerLogDirectory**|Optionaler `String` -Parameter.<br /><br /> Gibt das Zwischenverzeichnis an, in dem die Nachverfolgungsprotokolle für diese Aufgabe gespeichert sind.|  
+|**TypeLibraryFile**|Optionaler **String**-Parameter.<br /><br /> Gibt den Namen der Typbibliotheksdatei (.tlb) an. Wenn Sie diesen Parameter angeben, müssen Sie ebenfalls den **ComponentFileNameMT**-Aufgabenparameter angeben.<br /><br /> Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter der „Mt.exe“-Option **/tlb**.|  
+|**UpdateFileHashes**|Optionaler `Boolean` -Parameter.<br /><br /> Wenn `true`, wird der Hashwert der Dateien an dem Pfad berechnet, der vom **UpdateFileHashesSearchPathMT**-Aufgabenparameter angegeben wird. Anschließend wird beim Manifest der Wert des **hash**-Attributs des **file**-Elements mithilfe des berechneten Werts aktualisiert.<br /><br /> Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter der „Mt.exe“-Option **/hashupdate**. Siehe auch den Parameter **UpdateFileHashesSearchPath** in dieser Tabelle|  
+|**UpdateFileHashesSearchPath**|Optionaler `String` -Parameter.<br /><br /> Gibt den Suchpfad an, der verwendet werden soll, wenn die Dateihashwerte aktualisiert werden. Verwenden Sie diesen Parameter mit dem **UpdateFileHashesMT**-Aufgabenparameter.<br /><br /> Weitere Informationen finden Sie unter dem **UpdateFileHashes**-Parameter in dieser Tabelle.|  
+|**VerboseOutput**|Optionaler `Boolean` -Parameter.<br /><br /> Wenn `true`, werden ausführliche Debuginformationen angezeigt.<br /><br /> Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter der „Mt.exe“-Option **/verbose**.|  
   
-## Hinweise  
+## <a name="remarks"></a>Hinweise  
   
-## Siehe auch  
- [Task Reference](../msbuild/msbuild-task-reference.md)
+## <a name="see-also"></a>Siehe auch  
+ [Aufgabenreferenz](../msbuild/msbuild-task-reference.md)

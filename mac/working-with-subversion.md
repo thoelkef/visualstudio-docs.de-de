@@ -1,19 +1,17 @@
 ---
-title: Arbeiten mit Subversion
+title: Arbeiten mit Subversion | Microsoft-Dokumentation
 description: "Verwenden Subversion in Visual Studio für Mac"
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: 2400ED9C-6236-4C0A-A3AB-9D7CBE1F0CF4
+ms.openlocfilehash: 026e3625b4ee2d6582ce5539e5cab68c945f09c0
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
-ms.openlocfilehash: 70cf7a411141c5a59e275cb455ddcf91863c4f8b
-ms.contentlocale: de-de
-ms.lasthandoff: 08/11/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="working-with-subversion"></a>Arbeiten mit Subversion
 
 Wie zuvor in diesem Artikel erwähnt, ist Subversion zentralisiertes Versionskontrollsystem, mit dem Sie eine einzelnen Masterkopie zentraler Daten auschecken können. Im Gegensatz zu Git wird beim Auschecken eines Subversion-Repositorys nicht das gesamte Repository geklont, sondern es wird nur eine Momentaufnahme gemacht.
@@ -58,4 +56,3 @@ Um eine Datei für ein Remoterepository zu committen, klicken Sie auf „Commit.
 ![Committen einer Datei](media/version-control-svnCommit.png)
 
 Damit werden die Änderungen an das Repository gesendet, in dem die neue Revision mit allen Änderungen erstellt wird.
-

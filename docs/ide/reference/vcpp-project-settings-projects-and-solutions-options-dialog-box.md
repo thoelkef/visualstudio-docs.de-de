@@ -4,12 +4,10 @@ ms.custom:
 ms.date: 08/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- VS.ToolsOptionsPages.Projects.VCBuild
+f1_keywords: VS.ToolsOptionsPages.Projects.VCBuild
 helpviewer_keywords:
 - builds [Visual Studio], logs
 - build process [C++]
@@ -19,31 +17,15 @@ helpviewer_keywords:
 - extensions, files built by C or C++ compiler
 - BuildLog.htm
 ms.assetid: 56420efd-6a95-464e-b890-e2b38c48d66a
-caps.latest.revision: 15
+caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
+ms.openlocfilehash: b0ccfd3d526cee44a30c8d4c33030f2eb2a585e5
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
 ms.translationtype: HT
-ms.sourcegitcommit: ea1e787c1d509123a650cf2bd20e5fa8bffd5b4e
-ms.openlocfilehash: 2581fdecd9a26c8d4500f83b9abd0e1f967e2ee6
-ms.contentlocale: de-de
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/02/2017
 ---
 # <a name="vc-project-settings-projects-and-solutions-options-dialog-box"></a>VC++-Projekteinstellungen, Projekte und Projektmappen, Dialogfeld "Optionen"
 In diesem Dialogfeld können Sie [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]-Build- und Projekteinstellungen definieren, die für die Protokollierung, die Leistung sowie unterstützende Dateitypen relevant sind.  
@@ -53,7 +35,6 @@ In diesem Dialogfeld können Sie [!INCLUDE[vcprvc](../../code-quality/includes/v
 1.  Klicken Sie im Menü **Extras** auf **Optionen**.  
   
 2.  Wählen Sie **Projekte und Projektmappen** aus, und wählen Sie dann **VC++-Projekteinstellungen** aus.  
-  
  
 ## <a name="build-logging"></a>Buildprotokollierung  
  **Ja**  
@@ -95,17 +76,13 @@ In diesem Dialogfeld können Sie [!INCLUDE[vcprvc](../../code-quality/includes/v
  **Alle Dateien anzeigen**  
   Konfiguriert den **Projektmappen-Explorer** so, dass Dateien im Projekt und Dateien auf dem Datenträger im Projektordner angezeigt werden.  
 
-
 ## <a name="enable-project-caching"></a>Aktivieren der Projektzwischenspeicherung
-**Ja** Ermöglicht das Zwischenspeichern von Projektdaten in Visual Studio, damit die zwischengespeicherten Daten beim nächsten Öffnen des Projekts abrufen werden können, und Sie sie nicht erneut aus den Projektdateien berechnen müssen. Durch zwischengespeicherte Daten kann die Projektladezeit deutlich verringert werden.   
+**Ja**  
+Ermöglicht das Zwischenspeichern von Projektdaten in Visual Studio, damit die zwischengespeicherten Daten beim nächsten Öffnen des Projekts abrufen werden können und Sie sie nicht erneut aus den Projektdateien berechnen müssen. Durch zwischengespeicherte Daten kann die Projektladezeit deutlich verringert werden.   
 
-**Nein** Verwenden Sie keine zwischengespeicherten Projektdaten. Analysieren Sie die Projektdateien jedes Mal, wenn das Projekt geladen wird.
+**No**  
+Kein Verwenden von zwischengespeicherten Projektdaten. Analysieren Sie die Projektdateien jedes Mal, wenn das Projekt geladen wird.
 
-
-  
-
-  
-#
 ## <a name="see-also"></a>Siehe auch  
  [Erstellen von C/C++-Programmen](/cpp/build/building-c-cpp-programs)   
  [Referenz zur C/C++-Erstellung](/cpp/build/reference/c-cpp-building-reference)

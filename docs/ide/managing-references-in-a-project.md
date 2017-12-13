@@ -1,11 +1,10 @@
 ---
 title: Verwalten von Verweisen in einem Projekt | Microsoft-Dokumentation
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 10/26/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -23,43 +22,28 @@ helpviewer_keywords:
 - COM components, referencing
 - objects [Visual Studio], referencing
 ms.assetid: 05d1c51b-44f3-4973-8a11-6c919b08ad62
-caps.latest.revision: 54
-author: kempb
-ms.author: kempb
+caps.latest.revision: "54"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 06cdfb076120ffd7459a16b56c659bb86942cd7f
-ms.openlocfilehash: 890e181643d2cc5d4861d64ffd9052e0400126d0
-ms.lasthandoff: 03/31/2017
-
+ms.openlocfilehash: 4145dda187e726096e2137d2a5fdc0455b6131e2
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="managing-references-in-a-project"></a>Verwalten von Verweisen in einem Projekt
 Bevor Sie Code schreiben können, der sich auf eine externe Komponente oder einen verbundenen Dienst bezieht, müssen Sie zunächst einen Verweis auf diese Komponente im Projekt einrichten. Ein Verweis ist im Prinzip ein Eintrag in einer Projektdatei, der Informationen beinhaltet, die von Visual Studio zum Auffinden der Komponente oder des Diensts benötigt.  
 
  Um einen Verweis hinzuzufügen, klicken Sie im Projektmappen-Explorer mit der rechten Maustaste auf den Knoten „Verweise“, und klicken Sie dann auf **Verweis hinzufügen**. Weitere Informationen finden Sie unter [Vorgehensweise: Hinzufügen und Entfernen von Verweisen mit dem Verweis-Manager](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md).  
 
- ![Hinzufügen eines Verweises in Visual C&#43;&#43;](~/ide/media/vs2015_cpp_add_reference.png "vs2015_cpp_add_reference")  
+ ![Hinzufügen eines Verweises in Visual C&#43;&#43;](../ide/media/vs2015_cpp_add_reference.png "vs2015_cpp_add_reference")  
 
- Sie können einen Verweis auf die folgenden Komponenten-/Diensttypen erstellen:  
-
--   Verweise auf Windows Store-App  
+ Sie können einen Verweis auf die folgenden Komponenten- und Diensttypen herstellen:    
 
 -   .NET Framework-Klassenbibliotheken oder -Assemblys  
+
+-   UWP-Apps
 
 -   COM-Komponenten  
 
@@ -67,24 +51,24 @@ Bevor Sie Code schreiben können, der sich auf eine externe Komponente oder eine
 
 -   XML-Webdienste  
 
-## <a name="windows-store-app-references"></a>Verweise auf Windows Store-App  
+## <a name="uwp-app-references"></a>UWP-Appverweise  
 
 ### <a name="project-references"></a>Projektverweise  
- Projekte der universellen Windows-Plattform (UWP), die auf Windows 10 ausgerichtet sind, können in der Projektmappe Verweise auf andere UWP-Projekte oder auf Windows Store-Projekte bzw. auf Binärdateien für [!INCLUDE[win81](../debugger/includes/win81_md.md)] erstellen. Voraussetzung hierfür ist, dass diese Projekte keine APIs verwenden, die in Windows 10 nicht mehr verwendet werden. Weitere Informationen finden Sie unter [Move from Windows Runtime 8 to UWP](https://docs.microsoft.com/en-us/windows/uwp/porting/w8x-to-uwp-root)(Von Windows-Laufzeit zu UWP) (möglicherweise in englischer Sprache).  
+ Projekte von Universellen Windows-Plattform (UWP), können Verweise auf andere UWP-Projekte in der Projektmappe oder auf Windows 8.1-Projekte oder Binärdateien erstellen. Die Voraussetzung hierfür ist, dass diese Projekte keine APIs verwenden, die in Windows 10 nicht mehr unterstützt werden. Weitere Informationen finden Sie unter [Move from Windows Runtime 8 to UWP](https://docs.microsoft.com/en-us/windows/uwp/porting/w8x-to-uwp-root)(Von Windows-Laufzeit zu UWP) (möglicherweise in englischer Sprache).  
 
- Informationen zur Neuausrichtung der [!INCLUDE[win81](../debugger/includes/win81_md.md)]-Projekte auf Windows 10 finden Sie unter [Übertragung, Migration und Upgrade der Visual Studio-Projekte](../porting/port-migrate-and-upgrade-visual-studio-projects.md).  
+ Informationen zur Neuausrichtung der Windows 8.1-Projekte auf Windows 10 finden Sie unter [Übertragung, Migration und Upgrade der Visual Studio-Projekte](../porting/port-migrate-and-upgrade-visual-studio-projects.md).  
 
 ### <a name="extension-sdk-references"></a>Verweise auf das Erweiterungs-SDK  
- Visual Basic-, C#-, C++- und JavaScript-Windows Store-Projekte, die auf UWP (Universal Windows Platform) abzielen, können auf Erweiterungs-SDKs verweisen, die auf [!INCLUDE[win81](../debugger/includes/win81_md.md)] ausgerichtet sind, sofern diese Erweiterungs-SDKs keine APIs verwenden, die in Windows 10 als veraltet gelten. Überprüfen Sie die Website des Anbieters des Erweiterungs-SDKs, um festzustellen, ob Windows Store-Projekte, die auf UWP abzielen, auf das SKD verweisen können.  
+ Visual Basic-, C#-, C++- und JavaScript-Universal Windows Platform-Apps (UWP) können auf Erweiterungs-SDKs verweisen, die auf [!INCLUDE[win81](../debugger/includes/win81_md.md)] ausgerichtet sind, sofern diese Erweiterungs-SDKs keine APIs verwenden, die für Windows 10 nicht mehr unterstützt werden. Überprüfen Sie die Website des Anbieters des Erweiterungs-SDKs, um festzustellen, ob Microsoft Store-Projekte, die auf UWP ausgerichtet sind, auf das SKD verweisen können.  
 
  Wenn Sie feststellen, dass das Erweiterungs-SDK, auf das von Ihrer Anwendung verwiesen wird, nicht unterstützt wird, müssen Sie folgende Schritte ausführen:  
 
-1.  Schauen Sie sich den Namen des Projekts an, das den Fehler verursacht. Die Plattform, auf die Ihr Projekt abzielt, steht in Klammern neben dem Projektnamen. Beispielsweise bedeutet **MyProjectName (Windows 8.1)**, dass das Projekt **MyProjectName** auf die Plattformversion [!INCLUDE[win81](../debugger/includes/win81_md.md)]abzielt.  
+1.  Schauen Sie sich den Namen des Projekts an, das den Fehler verursacht. Die Plattform, auf die Ihr Projekt abzielt, steht in Klammern neben dem Projektnamen. Beispielsweise bedeutet **MyProjectName (Windows 8.1)** , dass das Projekt **MyProjectName** auf die Plattformversion [!INCLUDE[win81](../debugger/includes/win81_md.md)]abzielt.  
 
 2.  Wechseln Sie zur Website des Anbieters des nicht unterstützten Erweiterungs-SDKs, und installieren Sie die Version des Erweiterungs-SDKs mit Abhängigkeiten, die mit der Version der Plattform kompatibel sind, auf die Ihr Projekt abzielt.  
 
     > [!NOTE]
-    >  Eine Möglichkeit, um herauszufinden, ob das zuvor installierte Erweiterungs-SDK Abhängigkeiten von anderen Erweiterungs-SDKs aufweist, besteht darin, Visual Studio neu zu starten. Erstellen Sie dann ein neues C#-Windows Store-Projekt, klicken Sie mit der rechten Maustaste auf das Projekt, und wählen Sie **Verweis hinzufügen**, wechseln Sie zur Registerkarte **Windows** , wechseln Sie zur Unterregisterkarte **Erweiterungen** , wählen Sie das Erweiterungs-SDK aus, und schauen Sie sich den rechten Bereich des **Verweis-Managers**an. Wenn Abhängigkeiten bestehen, werden sie dort aufgeführt.  
+    >  Eine Möglichkeit, um herauszufinden, ob das zuvor installierte Erweiterungs-SDK Abhängigkeiten von anderen Erweiterungs-SDKs aufweist, besteht darin, Visual Studio neu zu starten. Erstellen Sie dann ein neues C#-UWP-App-Projekt, klicken Sie mit der rechten Maustaste darauf, und wählen Sie **Verweis hinzufügen** aus. Wechseln Sie zur Registerkarte **Windows**, gehen Sie auf die Unterregisterkarte **Erweiterungen**, klicken Sie auf das Erweiterungs-SDK, und sehen Sie sich den rechten Bereich des **Verweis-Managers** an. Wenn Abhängigkeiten bestehen, werden sie dort aufgeführt.  
 
     > [!IMPORTANT]
     >  Wenn Ihr Projekt auf Windows 10 ausgerichtet ist und das im vorherigen Schritt installierte Erweiterungs-SDK von Microsoft Visual C++ Runtime Package abhängt, lautet die Version von Microsoft Visual C++ Runtime Package, die mit Windows 10 kompatibel ist, v14.0 und wird mit Visual Studio installiert.  
@@ -93,7 +77,7 @@ Bevor Sie Code schreiben können, der sich auf eine externe Komponente oder eine
 
 4.  Starten Sie Visual Studio neu, und öffnen Sie Ihre App.  
 
-5.  Klicken Sie im Projekt, das den Fehler verursacht hat, mit der rechten Maustaste auf den Knoten **Verweise** , und wählen Sie **Verweis hinzufügen**  
+5.  Klicken Sie im Projekt, das den Fehler verursacht hat, mit der rechten Maustaste auf den Knoten **Verweise** und anschließend auf **Verweis hinzufügen**.  
 
 6.  Klicken Sie auf die Registerkarte **Fenster** und anschließend auf die Unterregisterkarte **Erweiterungen** . Deaktivieren Sie dann die Kontrollkästchen für die alten Erweiterungs-SDKs, und aktivieren Sie die Kontrollkästchen für die neuen Erweiterungs-SDKs. Klicken Sie auf **OK**.  
 
@@ -112,12 +96,12 @@ Bevor Sie Code schreiben können, der sich auf eine externe Komponente oder eine
 ## <a name="references-to-shared-components-at-run-time"></a>Verweise auf freigegebene Komponenten zur Laufzeit  
  Zur Laufzeit müssen sich Komponenten entweder im Ausgabepfad des Projekts oder im Globalen Assemblycache (GAC) befinden. Wenn das Projekt einen Verweis auf ein Objekt enthält, der sich nicht an einem dieser Orte befindet, müssen Sie den Verweis beim Erstellen des Projekts in den Ausgabepfad des Projekts kopieren. Die <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> -Eigenschaft gibt an, ob diese Kopie erstellt werden muss. Wenn der Wert **True**lautet, wird der Verweis beim Erstellen des Projekts in das Projektverzeichnis kopiert. Wenn der Wert **False**ist, wird der Verweis nicht kopiert.  
 
- Wenn Sie eine Anwendung bereitstellen, die einen Verweis auf eine im GAC registrierte benutzerdefinierte Komponente enthält, wird die Komponente unabhängig von der <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A>-Einstellung nicht mit der Anwendung bereitgestellt. In früheren Versionen von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] konnten Sie die <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A>-Eigenschaft für einen Verweis festlegen, um sicherzustellen, dass die Assembly bereitgestellt wird. Jetzt müssen Sie die Assembly manuell dem Ordner \Bin hinzufügen. Dadurch wird der gesamte benutzerdefinierte Code einer Prüfung unterzogen, und das Risiko der Veröffentlichung von unbekanntem benutzerdefinierten Code wird vermindert.  
+ Wenn Sie eine Anwendung bereitstellen, die einen Verweis auf eine im GAC registrierte benutzerdefinierte Komponente enthält, wird die Komponente unabhängig von der <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> -Einstellung nicht mit der Anwendung bereitgestellt. In früheren Versionen von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]konnten Sie die <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> -Eigenschaft für einen Verweis festlegen, um sicherzustellen, dass die Assembly bereitgestellt wird. Jetzt müssen Sie die Assembly manuell dem Ordner \Bin hinzufügen. Dadurch wird der gesamte benutzerdefinierte Code einer Prüfung unterzogen, und das Risiko der Veröffentlichung von unbekanntem benutzerdefinierten Code wird vermindert.  
 
- Wenn sich die Assembly oder Komponente im globalen Assemblycache befindet oder eine Framework-Komponente ist, wird die <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A>-Eigenschaft standardmäßig auf **FALSE** festgelegt. Andernfalls wird der Wert auf **True**festgelegt. Verweise zwischen Projekten werden immer auf **True**festgelegt.  
+ Wenn sich die Assembly bzw. Komponente im globalen Assemblycache befindet oder eine .NET Framework-Komponente ist, wird die <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> -Eigenschaft standardmäßig auf **False** festgelegt. Andernfalls wird der Wert auf **True**festgelegt. Verweise zwischen Projekten werden immer auf **True**festgelegt.  
 
 ## <a name="referencing-a-project-or-assembly-that-targets-a-different-version-of-the-net-framework"></a>Verweisen auf ein Projekt oder eine Assembly, die auf eine andere Version von .NET Framework abzielt  
- Sie können Anwendungen erstellen, die auf Projekte oder Assemblys verweisen, die auf eine andere Version von .NET Framework abzielen. Sie können z. B. eine Anwendung erstellen, die auf [!INCLUDE[net_client_v40_long](../deployment/includes/net_client_v40_long_md.md)] abzielt, das auf eine Assembly verweist, die wiederum auf [!INCLUDE[dnprdnext](../ide/includes/dnprdnext_md.md)] abzielt. Wenn Sie ein Projekt erstellen, das auf eine frühere Version von [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] abzielt, können Sie keinen Verweis in diesem Projekt auf ein Projekt oder eine Assembly festlegen, die auf [!INCLUDE[net_client_v40_long](../deployment/includes/net_client_v40_long_md.md)] oder .NET Framework Version 4 abzielt.  
+ Sie können Anwendungen erstellen, die auf Projekte oder Assemblys verweisen, die auf eine andere Version von .NET Framework abzielen. Sie können z. B. eine Anwendung erstellen, die auf [!INCLUDE[net_client_v40_long](../deployment/includes/net_client_v40_long_md.md)] abzielt, das auf eine Assembly verweist, die wiederum auf [!INCLUDE[dnprdnext](../ide/includes/dnprdnext_md.md)]abzielt. Wenn Sie ein Projekt erstellen, das auf eine frühere Version von [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] abzielt, können Sie keinen Verweis in diesem Projekt auf ein Projekt oder eine Assembly festlegen, die auf [!INCLUDE[net_client_v40_long](../deployment/includes/net_client_v40_long_md.md)] oder .NET Framework Version 4 abzielt.  
 
  Weitere Informationen finden Sie unter [Festlegen einer bestimmten .NET-Framework-Zielversion](../ide/targeting-a-specific-dotnet-framework-version.md).  
 
@@ -135,4 +119,3 @@ Bevor Sie Code schreiben können, der sich auf eine externe Komponente oder eine
 ## <a name="see-also"></a>Siehe auch  
  [Problembehandlung bei fehlerhaften Verweisen](../ide/troubleshooting-broken-references.md)   
  [Gewusst wie: Hinzufügen und Entfernen von Verweisen mit dem Verweis-Manager](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md)
-

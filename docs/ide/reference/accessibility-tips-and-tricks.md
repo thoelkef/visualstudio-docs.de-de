@@ -1,37 +1,44 @@
 ---
-title: Tipps und Tricks zu Barrierefreiheit | Microsoft-Dokumentation
+title: "Tipps und Tricks zur Barrierefreiheit für Visual Studio | Microsoft-Dokumentation"
 ms.custom: 
-ms.date: 08/22/2017
+ms.date: 09/15/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- accessibility [Visual Studio]
+helpviewer_keywords: accessibility [Visual Studio]
 ms.assetid: 6b491d88-f79e-4686-8841-857624bdcfda
-caps.latest.revision: 22
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
+ms.openlocfilehash: a4ac0c709f2b7f9dfded7c6781dda9831e457fa5
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 17defdd0b96ec1c3273fc6b845af844b031a4a17
-ms.openlocfilehash: 906e8c70df502245001f87795cab9f5efe808c83
-ms.contentlocale: de-de
-ms.lasthandoff: 09/06/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="accessibility-tips-and-tricks"></a>Tipps und Tricks zu Barrierefreiheit
+# <a name="accessibility-tips-and-tricks-for-visual-studio"></a>Tipps und Tricks zur Barrierefreiheit für Visual Studio
 > [!TIP]
 > Weitere Informationen zu aktuellen Barrierefreiheitupdates finden Sie im Blogbeitrag [Accessibility improvements in Visual Studio 2017 version 15.3](https://blogs.msdn.microsoft.com/visualstudio/2017/08/14/accessibility-improvements-in-visual-studio-2017-version-15-3/) (Verbesserungen der Barrierefreiheit in Visual Studio 2017 [Version 15.3]).
 
-Visual Studio enthält integrierte Barrierefreiheitsfeatures, sodass Sie problemlos über die Tastatur arbeiten und Bildschirmsprachausgaben sowie andere technische Hilfsmittel verwenden können. Dieses Thema enthält einige Vorschläge zum Optimieren von Visual Studio für Barrierefreiheit sowie nützliche Tastenkombinationen. Tastenkombinationen erlauben Ihnen, Aufgaben in Visual Studio mithilfe der Tastatur auszuführen.
+Visual Studio verfügt über integrierte Barrierefreiheitsfunktionen, die mit Sprachausgaben und anderen Hilfstechnologien kompatibel sind. In diesem Thema werden allgemeine Tastenkombinationen aufgeführt, die Sie verwenden können, um Aufgaben nur über die Tastatur auszuführen. Außerdem werden Informationen darüber bereitgestellt, wie Sie die Designs mit hohem Kontrast zum Verbessern der Sichtbarkeit verwenden. Außerdem erfahren Sie, wie Anmerkungen verwendet werden, um nützliche Informationen über Ihren Code anzuzeigen. Sie erhalten ebenfalls Informationen darüber, wie Sie Sounds für Build- und Breakpointereignisse festlegen.
 
 ## <a name="save-your-ide-settings"></a>Speichern Ihrer IDE-Einstellungen  
  Sie können Ihre IDE-Umgebung anpassen, indem Sie Fensterlayout, Tastaturzuordnungsschema und andere Einstellungen speichern. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../../ide/personalizing-the-visual-studio-ide.md).  
 
-## <a name="accessing-toolbars"></a>Zugreifen auf Symbolleisten
+## <a name="modify-your-ide-for-high-contrast-viewing"></a>Ändern Ihrer IDE für die Ansicht mit hohem Kontrast
+Einige Personen haben Schwierigkeiten damit, manche Farben zu erkennen. Wenn Sie beim Schreiben von Code einen höheren Kontrast wünschen, aber nicht die üblichen Themen für hohen Kontrast verwenden möchten, bieten wir nun das Design „Blau (zusätzlicher Kontrast)“ an.
+
+  ![Vergleich der Designs „Blau“ und „Blau (zusätzlicher Kontrast)“](media/blue-extra-contrast-theme.png "Beachten Sie den Unterschied zwischen den Designs „Blau“ und „Blau (zusätzlicher Kontrast)“")
+
+## <a name="use-annotations-to-reveal-useful-information-about-your-code"></a>Verwenden von Anmerkungen, um nützliche Informationen über Ihren Code anzuzeigen
+
+Der Visual Studio-Editor enthält viele Randsteuerelemente für den Text, die Sie über Charakteristiken und Funktionen an bestimmten Punkten einer Codezeile informieren, z.B. Glühbirnen, Wellenlinien für Fehler und Warnungen, Lesezeichen usw. Sie können den Befehlssatz „Zeilenanmerkungen anzeigen“ verwenden, um diese Randsteuerelemente zu ermitteln und zwischen diesen zu navigieren.
+
+  ![Verwenden des Befehlssatzes „Zeilenanmerkungen anzeigen“](media/show-line-annotations-command-set.png "Zeigt, wie der Befehlssatz „Zeilenanmerkungen anzeigen“ festgelegt wird")
+
+## <a name="access-toolbars-by-using-shortcut-key-combinations"></a>Zugreifen auf Symbolleisten mithilfe von Tastenkombinationen
 Die Visual Studio-IDE verfügt genau wie viele andere Toolfenster über Symbolleisten. Die folgenden Tastenkombinationen helfen Ihnen, auf diese zuzugreifen.
 
 |Funktion|Beschreibung|Tastenkombination|  
@@ -40,7 +47,7 @@ Die Visual Studio-IDE verfügt genau wie viele andere Toolfenster über Symbolle
 |Symbolleisten des Toolfensters|Verschieben Sie den Fokus zu den Symbolleisten in einem Toolfenster. <br> <br> **HINWEIS:** Dies funktioniert für die meisten Toolfenster, jedoch nur, wenn sich der Fokus in einem Toolfenster befindet. Sie müssen außerdem die UMSCHALTTASTE vor der ALT-TASTE drücken. In einigen Toolfenstern wie Team Explorer müssen Sie die UMSCHALTTASTE einen Moment gedrückt halten, bevor Sie die ALT-TASTE drücken.|**UMSCHALT** + **ALT**|
 |Symbolleisten|Wechseln Sie zum ersten Element in der nächsten Symbolleiste (wenn eine Symbolleiste über Fokus verfügt).|**STRG** + **TAB**|
 
-## <a name="other-useful-shortcut-key-combinations"></a>Andere häufig verwendete Tastenkombinationen  
+### <a name="other-useful-shortcut-key-combinations"></a>Andere häufig verwendete Tastenkombinationen  
 Zu diesen Tastenkombinationen gehören:
 
 |Funktion|Beschreibung|Tastenkombination|  
@@ -56,10 +63,38 @@ Zu diesen Tastenkombinationen gehören:
 > [!NOTE]
 >  Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen.  
 
+
+## <a name="use-the-sound-applet-to-set-build-and-breakpoint-cues"></a>Verwenden des Sound-Applets, um Hinweise für Builds und Breakpoints festzulegen
+Sie können das Sound-Applet in Windows verwenden, um Visual Studio-Programmereignissen einen Sound zuzuweisen. Insbesondere können Sie folgenden Programmereignissen Sounds zuweisen:
+
+ * Haltepunkt erreicht
+ * Buildvorgang abgebrochen
+ * Fehler beim Buildvorgang
+ * Buildvorgang erfolgreich
+
+Gehen Sie folgendermaßen vor:
+
+1. Geben Sie auf einem Computer mit Windows 10 **Systemsounds ändern** in das Feld **Suche** ein.
+
+  ![Suchfeld in Windows 10](media/type-here-to-search.png "Eingeben von „Sounds“ in das Suchfeld auf einem Computer mit Windows 10")
+
+  (Falls Sie Cortana aktiviert haben, können Sie alternativ „Hey Cortana“ und anschließend „Systemsounds ändern“ sagen.)
+
+2. Doppelklicken Sie auf **Systemsounds ändern**.
+
+  ![Suchergebnisse in Windows 10](media/change-system-sounds.png "Doppelklicken auf „Systemsounds ändern“ in den Suchergebnissen")
+
+3. Klicken Sie im Dialogfeld **Sound** auf die Registerkarte **Sounds**. <br><br>
+ Scrollen Sie dann in **Programmereignisse** zu **Microsoft Visual Studio**, und wählen Sie die Sounds aus, die Sie auf die gewünschten Ereignisse anwenden möchten.
+
+  ![Registerkarte „Sounds“ des Sound-Applets in Windows 10](media/sound-applet.png "Doppelklicken auf „Systemsounds ändern“ in den Suchergebnissen")
+
+4. Klicken Sie auf **OK**.
+
+
+
 ## <a name="see-also"></a>Siehe auch  
- [Barrierefreiheitsfeatures in Visual Studio](../../ide/reference/accessibility-features-of-visual-studio.md)
-
- [Gewusst wie: Anpassen von Menüs und Symbolleisten in Visual Studio](../../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)
-
- [Personalisieren der Visual Studio-IDE](../../ide/personalizing-the-visual-studio-ide.md)
-
+* [Barrierefreiheitsfeatures in Visual Studio](../../ide/reference/accessibility-features-of-visual-studio.md)
+  * [Gewusst wie: Anpassen von Menüs und Symbolleisten in Visual Studio](../../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)
+* [Personalisieren der Visual Studio-IDE](../../ide/personalizing-the-visual-studio-ide.md)
+* [Microsoft Accessibility (Microsoft-Barrierefreiheit)](https://www.microsoft.com/Accessibility)

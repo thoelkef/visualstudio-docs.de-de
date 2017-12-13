@@ -1,55 +1,55 @@
 ---
-title: "/LCID (devenv.exe) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "/l (Devenv-Schalter)"
-  - "/lcid (Devenv-Schalter)"
-  - "Devenv, /LCID-Schalter"
-  - "Standardsprache"
-  - "LCID (Devenv-Schalter)"
-  - "Gebietsschema-IDs"
-  - "Gebietsschema-IDs, Einstellung für IDE"
+title: "/LCID („devenv.exe“) | Microsoft-Dokumentation"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- language default
+- locale IDs, setting for IDE
+- Devenv, /LCID switch
+- locale IDs
+- /l Devenv switch
+- LCID devenv switch
+- /lcid Devenv switch
 ms.assetid: 3a3f4e70-ea66-4351-9d62-acb1dec30e8e
-caps.latest.revision: 12
-caps.handback.revision: 12
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
+caps.latest.revision: "12"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: aa33b329002991c5629f3d48361c6f4fa3c694e0
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# /LCID (devenv.exe)
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Legt die Standardsprache fest, die in der integrierten Entwicklungsumgebung \(IDE\) für Text, Währung und andere Werte verwendet wird.  
+# <a name="lcid-devenvexe"></a>/LCID (devenv.exe)
+Legt die Standardsprache für Text, Währungen und andere Werte in der integrierten Entwicklungsumgebung (Integrated Development Environment, IDE) fest.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 devenv {/LCID|/l} LocaleID  
 ```  
   
-## Argumente  
+## <a name="arguments"></a>Argumente  
  `LocaleID`  
- Erforderlich.  Die LCID \(Lokale ID\) der angegebenen Sprache.  
+ Erforderlich. Die LCID (Gebietsschema-ID) der Sprache, die Sie angeben  
   
-## Hinweise  
- Die IDE wird geöffnet und die standardmäßige natürliche Sprache für die Umgebung geladen.  Diese Änderung bleibt über die Sitzung hinaus erhalten und wird im Dialogfeld **Optionen** unter **Umgebung** im Bereich **Internationale Einstellungen** in der IDE angezeigt.  
+## <a name="remarks"></a>Hinweise  
+ Lädt die IDE und legt die natürliche Standardsprache für die Umgebung fest. Diese Änderung wird zwischen den Sitzungen beibehalten und wird im Bereich **Internationale Einstellungen** der Optionen **Umgebung** im Dialogfeld **Optionen** in der IDE angezeigt.  
   
- Wenn die angegebene Sprache auf dem System des Benutzers nicht verfügbar ist, wird der \/LCID\-Schalter ignoriert.  
+ Wenn die angegebene Sprache im System des Benutzers nicht vorhanden ist, wird der /LCID-Schalter ignoriert.  
   
- In der folgenden Tabelle werden die LCIDs der von [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] unterstützten Sprachen aufgelistet.  
+ In der folgenden Tabelle sind die LCIDs der von [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] unterstützten Sprachen aufgeführt.  
   
 |Sprache|LCID|  
-|-------------|----------|  
-|Chinesisch \(vereinfacht\)|2052|  
-|Chinesisch \(traditionell\)|1028|  
+|--------------|----------|  
+|Chinesisch (vereinfacht)|2052|  
+|Chinesisch (traditionell)|1028|  
 |Englisch|1033|  
 |Französisch|1036|  
 |Deutsch|1031|  
@@ -58,14 +58,14 @@ devenv {/LCID|/l} LocaleID
 |Koreanisch|1042|  
 |Spanisch|3082|  
   
-## Beispiel  
+## <a name="example"></a>Beispiel  
  In diesem Beispiel wird die IDE mit englischen Ressourcenzeichenfolgen geladen.  
   
 ```  
 devenv /LCID 1033  
 ```  
   
-## Siehe auch  
- [Devenv\-Befehlszeilenschalter](../../ide/reference/devenv-command-line-switches.md)   
- [Internationale Einstellungen, Umgebung, Dialogfeld "Optionen"](../../ide/reference/international-settings-environment-options-dialog-box.md)   
+## <a name="see-also"></a>Siehe auch  
+ [Devenv-Befehlszeilenschalter](../../ide/reference/devenv-command-line-switches.md)   
+ [Internationale Einstellungen, Umgebung, Dialogfeld „Optionen“](../../ide/reference/international-settings-environment-options-dialog-box.md)   
  [Anpassen von Fensterlayouts](../../ide/customizing-window-layouts-in-visual-studio.md)

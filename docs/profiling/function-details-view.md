@@ -1,115 +1,115 @@
 ---
-title: "Funktionsdetailansicht | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.performance.view.functiondetails"
-helpviewer_keywords: 
-  - "Funktionsdetailansicht"
-  - "Profilerstellungstools, Funktionsdetailansicht"
+title: Funktionsdetailansicht | Microsoft-Dokumentation
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vs.performance.view.functiondetails
+helpviewer_keywords:
+- Function Details view
+- Profiling Tools, Function Details view
 ms.assetid: 8806954f-cf28-48d5-81b2-d722ceaf7d27
-caps.latest.revision: 14
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 14
+caps.latest.revision: "14"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: ff4c94b079d58cab51ec0539e17ada8696ebca89
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Funktionsdetailansicht
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Im Fenster **Funktionsdetailansicht** werden die folgenden Informationen angezeigt:  
+# <a name="function-details-view"></a>Funktionsdetailansicht
+Im Fenster **Funktionsdetailansicht** werden folgende Informationen angezeigt:  
   
--   Das Balkendiagramm **Kostenverteilung** stellt die Beziehungen zwischen einer von Ihnen ausgewählten Funktion und den aufrufenden Funktionen dar, die die ausgewählte Funktion ausgeführt haben, sowie zwischen der ausgewählten Funktion und den Funktionen, die davon aufgerufen wurden.  
+-   Im Balkendiagramm **Kostenverteilung** werden die Beziehungen zwischen einer von Ihnen ausgewählten Funktion und den aufrufenden Funktionen dargestellt, die die ausgewählte Funktion ausgeführt haben. Zudem wird die Beziehung zwischen der ausgewählten Funktion und den von dieser Funktion aufgerufenen Funktionen angezeigt.  
   
--   Die Tabelle **Funktionsleistungsdetails**, in der zusammenfassende Profilerstellungsdaten für die angegebene Funktion angezeigt werden.  
+-   Die Tabelle **Funktionsleistungsdetails**, in der die Zusammenfassungsdaten zur Profilerstellung für die von Ihnen angegebene Funktion angezeigt werden.  
   
--   Das Fenster **Funktionscodeansicht**, das den Funktionscode anzeigt, wenn der Code verfügbar ist.  
+-   Das Fenster **Funktionscodeansicht**, in dem der Funktionscode angezeigt wird, wenn der Code verfügbar ist.  
   
- Das Fenster **Funktionscodeansicht** ist ein separater Bereich.  Standardmäßig werden die zwei Bereiche horizontal geteilt, und das Fenster **Funktionscodeansicht** wird am unteren Rand des Frames positioniert.  
+ Das Fenster **Funktionscodeansicht** ist ein getrennter Bereich. Die zwei Bereiche sind standardmäßig horizontal geteilt, und das Fenster **Funktionscodeansicht** befindet sich am unteren Rand des Frames.  
   
--   Um die beiden Bereiche vertikal zu teilen, klicken Sie auf der Symbolleiste auf **Bildschirm vertikal teilen**.  
+-   Klicken Sie in der Symbolleiste auf **Bildschirm vertikal teilen**, um die zwei Bereiche vertikal zu teilen.  
   
--   Um die relative Größe der Bereiche zu ändern, klicken Sie auf den schattierten Rand zwischen den Frames, und ziehen Sie den Rahmen an eine andere Stelle.  
+-   Klicken Sie auf den schattierten Rahmen zwischen den Frames, und ziehen Sie den Rahmen an eine andere Position, um die relative Größe der Bereiche zu ändern.  
   
-## Balkendiagramm für die Kostenverteilung  
+## <a name="cost-distribution-bar-chart"></a>Balkendiagramm zur Kostenverteilung  
   
-### Leistungsmetriken  
- In der Dropdownliste **Leistungsmetrik** können Sie angeben, welche Werte in der Ansicht angezeigt werden.  Die verfügbaren Werte sind von der Profilerstellungsmethode abhängig, die in der Profilerstellungs\-Datendatei verwendet wurde.  Die Namen in Klammern sind die Namen der Zeilen in der Tabelle **Funktionsleistungsdetails**.  
+### <a name="performance-metrics"></a>Leistungsmetriken  
+ Sie können in der Dropdownliste **Leistungsmetriken** angeben, welche Werte in der Ansicht angezeigt werden. Welche Werte verfügbar sind, hängt von der Profilerstellungsmethode ab, die in der Profilerstellungs-Datendatei verwendet wurde. Bei den Namen in Klammern handelt es sich um die Namen der Zeilen in der Tabelle **Funktionsleistungsdetails**.  
   
-### Bar Chart  
- **Aufrufen von Funktionen**  
+### <a name="bar-chart"></a>Balkendiagramm  
+ **Aufrufende Funktionen**  
   
- Die Leiste **Aufrufende Funktionen** zeigt die Funktionen an, die die ausgewählte Funktion aufgerufen haben.  Die Größe des Blocks, der die aufrufende Funktion enthält, steht im Verhältnis zu dem Anteil der aufrufenden Funktion vom Gesamtwert der Leistungsmetrik für die ausgewählte Funktion.  
+ In der Leiste **Aufrufende Funktionen** werden die Funktionen angezeigt, die die ausgewählte Funktion aufgerufen haben. Die Größe des Blocks mit der aufrufenden Funktion ist relativ zum Beitrag der aufrufenden Funktion zum Gesamtwert der Leistungsmetrik für die ausgewählte Funktion.  
   
- Sie können auf den Namen einer aufrufenden Funktion, um sie in der Ansicht auszuwählen.  
+ Sie können auf den Namen einer aufrufenden Funktion klicken, um sie in der Funktionsdetailansicht auszuwählen.  
   
--   Wenn zu viele aufrufende Funktionen zum Aufführen vorhanden sind, werden Funktionen mit dem geringsten Anteil in dem Block **Andere** gesammelt.  Klicken Sie auf **Andere**, um alle aufrufenden und aufgerufenen Funktionen der ausgewählten Funktion im Fenster mit der Ansicht **Aufrufer\/Aufgerufener** anzuzeigen.  Weitere Informationen finden Sie unter [Aufrufer\-\/Aufgerufener\-Ansicht](../profiling/caller-callee-view.md).  
+-   Wenn zu viele aufrufende Funktionen zum Auflisten vorhanden sind, werden Funktionen mit den kleinsten Beiträgen im Block **Andere** erfasst. Klicken Sie auf **Andere**, um alle aufrufenden und aufgerufenen Funktionen der ausgewählten Funktion im Fenster **Aufrufer-/Aufgerufener-Ansicht** anzuzeigen. Weitere Informationen finden Sie unter [Aufrufer-/Aufgerufener-Ansicht](../profiling/caller-callee-view.md).  
   
--   Wenn keine aufrufenden Funktionen vorhanden sind oder die Funktion die Einstiegsfunktion eines Threads oder Prozesses ist, wird der Block **Anfang des Stapels** angezeigt.  
+-   Wenn keine aufrufenden Funktionen vorhanden sind oder es sich bei der Funktion um die Eingabefunktion eines Threads oder Prozesses handelt, wird der Block **Anfang des Stapels** angezeigt.  
   
  **Ausgewählte Funktion**  
   
- Auf der Leiste der ausgewählten Funktion werden die Anteile von aufgerufenen Funktionen und von Code in der ausgewählten Funktion im Verhältnis zur gesamten Leistungsmetrik der ausgewählten Funktion angezeigt.  Die Größe des Blocks, der eine aufgerufene Funktion oder den Funktionsrumpf enthält, steht im Verhältnis zu dem Anteil des Gesamtwerts der Leistungsmetrik für die ausgewählte Funktion.  
+ In der Leiste „Ausgewählte Funktion“ werden die Beiträge der aufgerufenen Funktionen und des Codes in der ausgewählten Funktion zur gesamten Leistungsmetrik der ausgewählten Funktion angezeigt. Die Größe des Blocks mit der aufgerufenen Funktion oder dem Funktionsrumpf ist relativ zum Beitrag zum Gesamtwert der Leistungsmetrik für die ausgewählte Funktion.  
   
- Sie können auf den Namen einer aufgerufenen Funktion, um sie in der Ansicht auszuwählen.  
+ Sie können auf den Namen einer aufgerufenen Funktion klicken, um sie in der Funktionsdetailansicht auszuwählen.  
   
--   Der Wert **Gesamt** ist die Leistungsmetrik für die ausgewählte Funktion.  
+-   Der **Gesamtwert** ist die Leistungsmetrik der ausgewählten Funktion.  
   
--   Der Block **Funktionsrumpf** stellt den Betrag der Gesamtwerts der Leistungsmetrik dar, die in der direkten Ausführung des Codes im Funktionsrumpf aufgetreten ist.  
+-   Im Block **Funktionsrumpf** wird der Gesamtwert der Leistungsmetrik angezeigt, der bei der direkten Ausführung des Codes im Funktionsrumpf aufgetreten ist.  
   
--   Funktionen, die von der ausgewählten Funktion aufgerufen werden, sind in Blöcken aufgeführt.  Die Größe des ausgewählten Funktionsblocks stellt den Betrag der gesamten Leistungsmetrik für die ausgewählte Funktion dar, die in der aufgerufenen Funktion aufgetreten ist.  
+-   Funktionen, die von der ausgewählten Funktion aufgerufen werden, werden in Blöcken aufgeführt. Die Größe des Blocks „Ausgewählte Funktionen“ stellt den Betrag der gesamten Leistungsmetrik für die ausgewählte Funktion dar, die in der aufgerufenen Funktion aufgetreten ist.  
   
--   Wenn zu viele aufrufende Funktionen zum Aufführen vorhanden sind, werden Funktionen mit dem geringsten Anteil in dem Block **Andere** gesammelt.  Klicken Sie auf **Andere**, um alle aufrufenden und aufgerufenen Funktionen der ausgewählten Funktion im Fenster mit der Ansicht **Aufrufer\/Aufgerufener** anzuzeigen.  Weitere Informationen finden Sie unter [Aufrufer\-\/Aufgerufener\-Ansicht](../profiling/caller-callee-view.md).  
+-   Wenn zu viele aufrufende Funktionen zum Auflisten vorhanden sind, werden Funktionen mit den kleinsten Beiträgen im Block **Andere** erfasst. Klicken Sie auf **Andere**, um alle aufrufenden und aufgerufenen Funktionen der ausgewählten Funktion im Fenster **Aufrufer-/Aufgerufener-Ansicht** anzuzeigen. Weitere Informationen finden Sie unter [Aufrufer-/Aufgerufener-Ansicht](../profiling/caller-callee-view.md).  
   
 -   Wenn keine aufgerufenen Funktionen vorhanden sind, wird der Block **Ende des Stapels** angezeigt.  
   
-## Funktionsleistungsdetails  
- Die Tabelle mit den Funktionsleistungsdetails enthält Zusammenfassungsdaten für die Leistungsmetrik der ausgewählten Funktion.  Sowohl der Wert als auch der Prozentsatz werden angezeigt.  Sie geben die Profilerstellungsdaten an, die in dem Diagramm und der Detailstabelle in der Liste **Leistungsmetrik** angezeigt werden.  
+## <a name="function-performance-details"></a>Funktionsleistungsdetails  
+ Die Tabelle „Funktionsleistungsdetails“ enthält Zusammenfassungsdaten zu den Leistungsmetriken der ausgewählten Funktion. Sowohl der Wert als auch der Prozentsatz werden angezeigt. In der Liste **Leistungsmetriken** können Sie die Profilerstellungsdaten eingeben, die im Diagramm und in der Detailtabelle angezeigt werden.  
   
-|Spalte|**Beschreibung**|  
-|------------|----------------------|  
-|**Exclusive**|-   Der Betrag der Leistungsmetrik, die bei der Ausführung des Funktionsrumpfs aufgetreten ist.|  
-|**In Aufrufen**|-   Der Betrag der Leistungsmetrik, die in Funktionen aufgetreten ist, die von der ausgewählten Funktion aufgerufen wurden.|  
-|**Inklusive insgesamt**|-   Der Gesamtbetrag des Werts **Exklusiv** und des Werts **In Aufrufen**.|  
+|Spalte|Beschreibung|  
+|------------|-----------------|  
+|**Exklusiv**|– Der Betrag der Leistungsmetrik, die bei der Ausführung des Funktionsrumpfs aufgetreten ist.|  
+|**In Aufrufen**|– Der Betrag der Leistungsmetrik, die in Funktionen aufgetreten ist, die von der ausgewählten Funktion aufgerufen wurden.|  
+|**Inklusive insgesamt**|– Der Gesamtbetrag der Werte **Exklusiv** und **In Aufrufen**.|  
   
-## Funktionscodeansicht  
- Im Fenster **Funktionscodeansicht** wird eine Liste des verfügbaren Quellcodes angezeigt.  Neben den Quellcodezeilen, die anderen Funktionen aufrufen, enthält eine schattierte Spalte die Leistungsmetrikwerte für die aufgerufene Funktion.  Um den Quellcode zu bearbeiten, klicken Sie auf den Link zu der Quellcodedatei.  
+## <a name="function-code-view"></a>Funktionscodeansicht  
+ Im Fenster **Funktionscodeansicht** wird eine Liste des Quellcodes angezeigt, wenn diese verfügbar ist. Neben den Quellcodepositionen, die andere Funktionen aufrufen, enthält eine schattierte Spalte die Leistungsmetrikwerte der aufgerufenen Funktion. Klicken Sie zur Bearbeitung des Quellcodes auf den Link zur Quellcodedatei.  
   
-## Werte im Balkendiagramm für die Kostenverteilung  
+## <a name="cost-distribution-bar-chart-values"></a>Werte des Balkendiagramms zur Kostenverteilung  
   
-### Sampling  
- In der folgenden Tabelle werden die Werte in der Leistungsmetrikliste für die Profilerstellungsdaten erläutert, die mit der Samplingmethode erfasst wurden.  
-  
-|||  
-|-|-|  
-|**Inklusive Samplings \(Aufgelistete Samplings\)**|-   Bei einer aufrufenden Funktion die Anzahl von Samplings, die gesammelt wurden, als die ausgewählte Funktion von dieser aufrufenden Funktion aufgerufen wurde.<br />-   Beim Funktionsrumpf die Anzahl von Samples, die gesammelt wurden, als die ausgewählte Funktion ihren eigenen Code ausführte.<br />-   Bei einer aufgerufenen Funktion die Anzahl von Samplings, die gesammelt wurden, als die aufgerufene Funktion aufgrund eines Aufrufs von der ausgewählten Funktion aufgerufen wurde.|  
-  
-### Instrumentation  
- In der folgenden Tabelle werden die Werte in der Leistungsmetrikliste für die Profilerstellungsdaten erläutert, die mit der Instrumentationsmethode erfasst wurden.  
+### <a name="sampling"></a>Sampling  
+ In der folgenden Tabelle werden die Werte in der Liste „Leistungsmetriken“ für Profilerstellungsdaten erläutert, die mit der Samplingmethode erfasst wurden.  
   
 |||  
 |-|-|  
-|**Verstrichene inklusive Zeit \(Verstrichene Zeit\)**|Die verstrichene Zeit umfasst die Zeit für Aufrufe des Betriebssystems, z. B. Kontextwechsel und Eingabe\-\/Ausgabeoperationen.<br /><br /> -   Bei einer aufrufenden Funktion die verstrichene Zeit für die Ausführung der Instanzen der ausgewählten Funktion, die von der Funktion aufgerufen wurden.  Umfasst auch die Zeit für Funktionen, die von der ausgewählten Funktion aufgerufen wurden.<br />-   Beim **Funktionsrumpf** die Gesamtmenge der verstrichenen Zeit für die Ausführung des Codes der ausgewählten Funktion.  Die Zeit für aufgerufene Funktionen ist nicht eingeschlossen.<br />-   Bei einer aufgerufenen Funktion die verstrichene Zeit für die Ausführung der Instanzen der Funktion, die von der ausgewählten Funktion aufgerufen wurden.  Die Gesamtzeit umfasst die Zeit für Funktionen, die von der Funktion aufgerufen wurden.  Umfasst auch die Zeit für Funktionen, die von der ausgewählten Funktion aufgerufen wurden.|  
-|**Inklusive Anwendungszeit \(Anwendungszeit\)**|Die Anwendungszeit umfasst nicht die Zeit für Aufrufe des Betriebssystems, z. B. Kontextwechsel und Eingabe\-\/Ausgabeoperationen.<br /><br /> -   Bei einer aufrufenden Funktion die Anwendungszeit für die Ausführung der Instanzen der ausgewählten Funktion, die von der Funktion aufgerufen wurden.  Umfasst auch die Zeit für Funktionen, die von der ausgewählten Funktion aufgerufen wurden.<br />-   Beim **Funktionsrumpf** die Gesamtmenge der Anwendungszeit für die Ausführung des Codes der ausgewählten Funktion.  Die Zeit für aufgerufene Funktionen ist nicht eingeschlossen.<br />-   Bei einer aufgerufenen Funktion die Anwendungszeit für die Ausführung der Instanzen der Funktion, die von der ausgewählten Funktion aufgerufen wurden.  Die Gesamtzeit umfasst die Zeit für Funktionen, die von der Funktion aufgerufen wurden.|  
+|**Inklusive Samplings (Aufgelistete Samplings)**|– Bei einer aufrufenden Funktion die Anzahl der Samplings, die erfasst wurden, als die ausgewählte Funktion mit dieser aufrufenden Funktion aufgerufen wurde.<br />– Beim Funktionsrumpf die Anzahl der Samplings, die erfasst wurden, als die ausgewählte Funktion einen eigenen Code ausgeführt hat.<br />– Bei einer aufgerufenen Funktion die Anzahl der Samplings, die erfasst wurden, als die aufgerufene Funktion wegen eines Aufrufs der ausgewählten Funktion ausgeführt wurde.|  
   
-### .NET\-Arbeitsspeicher  
- In der folgenden Tabelle werden die Werte in der Leistungsmetrikliste für die Profilerstellungsdaten erläutert, die mit der Methode zur .NET\-Arbeitsspeicherprofilerstellung erfasst wurden.  
-  
-|||  
-|-|-|  
-|**Inklusive Zuordnungen \(Zuordnungen\)**|-   Bei einer aufrufenden Funktion die Anzahl von Objekten, die von den Instanzen der ausgewählten Funktion zugeordnet wurden, die von dieser Funktion aufgerufen wurden.  Diese Zahl umfasst auch Objekte, die von Funktionen zugeordnet wurden, die von der aufgerufenen Funktionen aufgerufen wurden.<br />-   Beim **Funktionsrumpf** die Anzahl von Objekten, die durch die ausgewählte Funktion zugeordnet wurden, als diese ihren eigenen Code ausführte.  In Funktionen zugeordnete Objekte, die von der ausgewählten Funktion aufgerufen wurden, sind nicht eingeschlossen.<br />-   Bei einer aufgerufenen Funktion die Anzahl von Objekten, die von den Instanzen der Funktion zugeordnet wurden, die von der ausgewählten Funktion aufgerufen wurden.  Diese Zahl umfasst auch Objekte, die von Funktionen zugeordnet wurden, die von der Funktion aufgerufen wurden.|  
-|**Inklusive Bytes \(Bytes\)**|-   Bei einer aufrufenden Funktion die Anzahl von Bytes, die von den Instanzen der ausgewählten Funktion zugeordnet wurden, die von dieser Funktion aufgerufen wurden.  Diese Zahl umfasst auch Bytes, die von Funktionen zugeordnet wurden, die von der ausgewählten Funktion aufgerufen wurden.<br />-   Beim **Funktionsrumpf** die Gesamtzahl von Bytes, die durch die ausgewählte Funktion zugeordnet wurden, als diese ihren eigenen Code ausführte.  In Funktionen zugeordnete Bytes, die von der ausgewählten Funktion aufgerufen wurden, sind nicht eingeschlossen.<br />-   Bei einer aufgerufenen Funktion die Anzahl von Bytes, die von den Instanzen der Funktion zugeordnet wurden, die von der ausgewählten Funktion aufgerufen wurden.  Diese Zahl umfasst auch Bytes, die von Funktionen zugeordnet wurden, die von der Funktion aufgerufen wurden.|  
-  
-### Parallelität  
- In der folgenden Tabelle werden die Werte in der Leistungsmetrikliste für die Profilerstellungsdaten erläutert, die mit der Parallelitätsmethode erfasst wurden.  
+### <a name="instrumentation"></a>Instrumentierung  
+ In der folgenden Tabelle werden die Werte in der Liste „Leistungsmetriken“ für Profilerstellungsdaten erläutert, die mit der Instrumentierungsmethode erfasst wurden.  
   
 |||  
 |-|-|  
-|**Inklusive Konflikte \(Konflikte\)**|-   Bei einer aufrufenden Funktion die Anzahl von Ressourcenkonfliktereignissen, die in den Instanzen der ausgewählten Funktion aufgetreten sind, die von der Funktion aufgerufen wurden.  Diese Zahl schließt Konfliktereignisse in Funktionen ein, die von der ausgewählten Funktion aufgerufen wurden.<br />-   Beim **Funktionsrumpf** die Gesamtzahl von Konfliktereignissen, die aufgetreten sind, als die Funktion eigenen Code ausführte.  Konflikte, die in Funktionen auftreten, die von der ausgewählten Funktion aufgerufen wurden, sind nicht eingeschlossen.<br />-   Bei einer aufgerufenen Funktion die Anzahl von Konfliktereignissen, die in den Instanzen der Funktion aufgetreten sind, die von der ausgewählten Funktion aufgerufen wurden.  Diese Zahl schließt Konfliktereignisse ein, die in Funktionen aufgetreten sind, die von der ausgewählten Funktion aufgerufen wurden.|  
-|**Inklusive blockierte Zeit \(Blockierte Zeit\)**|-   Bei einer aufrufenden Funktion die Zeit für Ressourcenkonfliktereignisse für die Instanzen der ausgewählten Funktion, die von der Funktion aufgerufen wurden.  Die Zeit umfasst die blockierte Zeit in Funktionen, die von der ausgewählten Funktion aufgerufen wurden.<br />-   Beim **Funktionsrumpf** die Gesamtzeit für Konfliktereignisse, die aufgetreten sind, als die Funktion eigenen Code ausführte.  Konflikte in Funktionen, die von der ausgewählten Funktion aufgerufen wurden, sind nicht eingeschlossen.<br />-   Bei einer aufgerufenen Funktion die Zeit für Ressourcenkonfliktereignisse für die Instanzen der Funktion, die von der ausgewählten Funktion aufgerufen wurden.  Die Zeit umfasst die blockierte Zeit in Funktionen, die von der Funktion aufgerufen wurden.|
+|**Verstrichene inklusive Zeit (verstrichene Zeit)**|Die verstrichene Zeit umfasst die Zeit für Aufrufe des Betriebssystems, z.B. Kontextwechsel und Eingabe-/Ausgabeoperationen.<br /><br /> – Bei einer **Aufrufenden Funktion** die Zeit, die beim Ausführen der über die Funktion aufgerufenen zugehörigen Instanzen verstrichen ist. Dies umfasst die Zeit für Funktionen, die von der ausgewählten Funktion aufgerufen wurden.<br />– Beim **Funktionsrumpf** die Gesamtzeit, die beim Ausführen des Codes der ausgewählten Funktion verstrichen ist. Dies umfasst nicht die Zeit für aufgerufene Funktionen.<br />– Bei einer aufgerufenen Funktion die Zeit für die Ausführung der über die ausgewählte Funktion aufgerufenen zugehörigen Instanzen der Funktion. Die Summe umfasst die Zeit, die für von der Funktion aufgerufene Funktionen aufgewendet wurde. Dies umfasst die Zeit für Funktionen, die von der ausgewählten Funktion aufgerufen wurden.|  
+|**Inklusive Anwendungszeit (Anwendungszeit)**|Die Anwendungszeit umfasst nicht die Zeit für Aufrufe des Betriebssystems, z.B. Kontextwechsel und Eingabe-/Ausgabeoperationen.<br /><br /> – Bei einer **aufrufenden Funktion** die Anwendungszeit für die Ausführung der Instanzen der ausgewählten Funktion, die von der Funktion aufgerufen wurden. Dies umfasst die Zeit für Funktionen, die von der ausgewählten Funktion aufgerufen wurden.<br />– Beim **Funktionsrumpf** die gesamte Anwendungszeit für die Ausführung des Codes der ausgewählten Funktion. Dies umfasst nicht die Zeit für aufgerufene Funktionen.<br />– Bei einer aufgerufenen Funktion die Anwendungszeit für die Ausführung der über die ausgewählte Funktion aufgerufenen Instanzen der Funktion. Die Summe umfasst die Zeit, die für von der Funktion aufgerufene Funktionen aufgewendet wurde.|  
+  
+### <a name="net-memory"></a>.NET-Arbeitsspeicher  
+ In der folgenden Tabelle werden die Werte in der Liste „Leistungsmetriken“ für Profilerstellungsdaten erläutert, die mit der .NET-Profilerstellungsmethode erfasst wurden.  
+  
+|||  
+|-|-|  
+|**Inklusive Zuordnungen (Zuordnungen)**|– Bei einer **aufrufenden Funktion** die Anzahl von Objekten, die von den Instanzen der ausgewählten Funktion zugeordnet wurden, die von der Funktion aufgerufen wurden. Die Zahl umfasst Objekte, die von den von der ausgewählten Funktion aufgerufenen Funktionen zugeordnet wurden.<br />– Beim **Funktionsrumpf** die Anzahl von Objekten, die von der ausgewählten Funktion zugeordnet wurden, als diese ihren eigenen Code ausgeführt hat. In Funktionen zugeordnete Objekte, die von der ausgewählten Funktion aufgerufen wurden, sind nicht enthalten.<br />– Bei einer aufgerufenen Funktion die Anzahl von Objekten, die von den Instanzen der Funktion zugeordnet wurden, die von der ausgewählten Funktion aufgerufen wurden. Die Zahl umfasst Objekte, die von den von der Funktion aufgerufenen Funktionen zugeordnet wurden.|  
+|**Inklusive Bytes (Bytes)**|– Bei einer **aufrufenden Funktion** die Anzahl von Bytes, die von den Instanzen der ausgewählten Funktion zugeordnet wurden, die von der Funktion aufgerufen wurden. Die Zahl umfasst Bytes, die in von der ausgewählten Funktion aufgerufenen Funktionen zugeordnet wurden.<br />– Beim **Funktionsrumpf** die Gesamtzahl von Objekten, die von der ausgewählten Funktion zugeordnet wurden, als diese ihren eigenen Code ausgeführt hat. In Funktionen zugeordnete Bytes, die von der ausgewählten Funktion aufgerufen wurden, sind nicht enthalten.<br />– Bei einer aufgerufenen Funktion die Anzahl von Bytes, die von den Instanzen der Funktion zugeordnet wurden, die von der ausgewählten Funktion aufgerufen wurden. Die Zahl umfasst Bytes, die in von der Funktion aufgerufenen Funktionen zugeordnet wurden.|  
+  
+### <a name="concurrency"></a>Parallelität  
+ In der folgenden Tabelle werden die Werte in der Liste „Leistungsmetriken“ für Profilerstellungsdaten erläutert, die mit der Parallelitätsmethode erfasst wurden.  
+  
+|||  
+|-|-|  
+|**Inklusive Konflikte (Konflikte)**|– Bei einer **aufrufenden Funktion** die Anzahl von Ressourcenkonfliktereignissen, die in den Instanzen der ausgewählten Funktion aufgetreten sind, die von der Funktion aufgerufen wurden. Die Zahl umfasst Konfliktereignisse in Funktionen, die in von der ausgewählten Funktion aufgerufen wurden.<br />– Beim **Funktionsrumpf** die Gesamtzahl der Konfliktereignisse, die aufgetreten sind, als die Funktion ihren eigenen Code ausgeführt hat. Dies umfasst nicht die Konflikte, die von der ausgewählten Funktion aufgerufen wurden.<br />– Bei einer aufgerufenen Funktion die Anzahl von Ressourcenkonfliktereignissen, die in den Instanzen der ausgewählten Funktion aufgetreten sind, die von der Funktion aufgerufen wurden. Die Zahl umfasst Konfliktereignisse, die in von der Funktion aufgerufenen Funktionen aufgetreten sind.|  
+|**Inklusive blockierte Zeit (Blockierte Zeit)**|– Bei einer aufrufenden Funktion die Zeit für Ressourcenkonfliktereignisse für die Instanzen der ausgewählten Funktion, die von der Funktion aufgerufen wurden. Die Zeit umfasst die blockierte Zeit in Funktionen, die die ausgewählte Funktion aufgerufen hat.<br />– Beim **Funktionsrumpf** die Gesamtzeit für Konfliktereignisse, die aufgetreten sind, als die Funktion ihren eigenen Code ausgeführt hat. Dies umfasst nicht die Konflikte, die in Funktionen auftreten, die von der ausgewählten Funktion aufgerufen wurden.<br />– Bei einer aufgerufenen Funktion die Zeit für Ressourcenkonfliktereignisse für die Instanzen der Funktion, die von der ausgewählten Funktion aufgerufen wurden. Die Zeit umfasst die blockierte Zeit in Funktionen, die die Funktion aufgerufen hat.|

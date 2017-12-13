@@ -4,12 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- VS.CommandWindow
+f1_keywords: VS.CommandWindow
 helpviewer_keywords:
 - IDE, Command window
 - Mark mode in Command window
@@ -17,30 +15,15 @@ helpviewer_keywords:
 - Command mode in Command window
 - IDE Command window
 ms.assetid: 48711628-1909-4713-a73e-d7b714c77f8a
-caps.latest.revision: 20
-author: kempb
-ms.author: kempb
+caps.latest.revision: "20"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 5aedd2d660c1a3225cf1d2023864b099c0f080c3
-ms.contentlocale: de-de
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: 112264b0bbe5e752a7f56004e767f26b527a6f6a
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/02/2017
 ---
 # <a name="command-window"></a>Befehlsfenster
 Das Fenster **Befehl** wird verwendet, um Befehle oder Aliase direkt in der integrierten Entwicklungsumgebung (IDE) von [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] auszuführen. Sie können sowohl Menübefehle als auch Befehle ausführen, die in keinem Menü angezeigt werden. Wählen Sie zum Anzeigen des Fensters **Befehl** im Menü **Ansicht** den Befehl **Weitere Fenster** aus, und klicken Sie dann auf **Befehlsfenster**.  
@@ -86,21 +69,9 @@ Das Fenster **Befehl** wird verwendet, um Befehle oder Aliase direkt in der inte
 ## <a name="the-equals--sign"></a>Gleichheitszeichen (=)  
  Abhängig vom Fenster, das zur Eingabe des `EvaluateStatement`-Befehls verwendet wird, wird ein Gleichheitszeichen (=) als Vergleichsoperator oder als Zuweisungsoperator interpretiert.  
   
- Im Fenster **Befehl** wird ein Gleichheitszeichen (=) als Vergleichsoperator interpretiert. Sie können keine Zuweisungsoperatoren im Fenster **Befehl** verwenden. Wenn die Werte der Variablen `varA` und `varB` beispielsweise unterschiedlich sind, gibt der Befehl  
+ Im Fenster **Befehl** wird ein Gleichheitszeichen (=) als Vergleichsoperator interpretiert. Sie können keine Zuweisungsoperatoren im Fenster **Befehl** verwenden. Wenn die Werte der Variablen `varA` und `varB` beispielsweise unterschiedlich sind, gibt der Befehl `>Debug.EvaluateStatement(varA=varB)` den Wert `False` zurück.  
   
-```  
->Debug.EvaluateStatement(varA=varB)  
-```  
-  
- den Wert `False` zurück.  
-  
- Im Fenster **Direkt** wird ein Gleichheitszeichen (=) dagegen als Zuweisungsoperator interpretiert. Daher wird mit dem Befehl  
-  
-```  
->Debug.EvaluateStatement(varA=varB)  
-```  
-  
- der Variablen `varA` der Wert von Variable `varB` zugewiesen.  
+ Im Fenster **Direkt** wird ein Gleichheitszeichen (=) dagegen als Zuweisungsoperator interpretiert. Der Befehl `>Debug.EvaluateStatement(varA=varB)` weist beispielsweise der Variablen `varA` den Wert der Variablen `varB` zu.  
   
 ## <a name="parameters-switches-and-values"></a>Parameter, Schalter und Werte  
  Einige [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]-Befehle verfügen über erforderliche und optionale Argumente, Schalter und Werte. Für die Verwendung dieser Befehle gelten bestimmte Regeln. Im folgenden Beispiel wird ein umfangreicher Befehl gezeigt, um die Terminologie zu verdeutlichen.  
@@ -122,11 +93,11 @@ Edit.ReplaceInFiles /case /pattern:regex var[1-3]+ oldpar
     > [!NOTE]
     >  Jeder Befehl, Parameter, Schalter oder Wert, der Leerzeichen enthält, muss in doppelte Anführungszeichen eingeschlossen werden.  
   
- Die Position von Schaltern und Parametern kann im Allgemeinen frei auf der Befehlszeile kombiniert werden, mit Ausnahme des [Shell](../../ide/reference/shell-command.md)-Befehls, für den eine bestimmte Reihenfolge der Schalter und Parameter erforderlich ist.  
+Die Position von Schaltern und Parametern kann im Allgemeinen frei auf der Befehlszeile kombiniert werden, mit Ausnahme des [Shell](../../ide/reference/shell-command.md)-Befehls, für den eine bestimmte Reihenfolge der Schalter und Parameter erforderlich ist.  
   
- Nahezu jeder von einem Befehl unterstützte Schalter verfügt über zwei Formen: eine kurze Form, bestehend aus einem Buchstaben, und eine lange Form. Mehrere Schalter in kurzer Form können zu einer Gruppe zusammengefasst werden. Beispielsweise kann `/p /g /m` alternativ auch als `/pgm` ausgedrückt werden.  
+Nahezu jeder von einem Befehl unterstützte Schalter verfügt über zwei Formen: eine kurze Form, bestehend aus einem Buchstaben, und eine lange Form. Mehrere Schalter in kurzer Form können zu einer Gruppe zusammengefasst werden. Beispielsweise kann `/p /g /m` alternativ auch als `/pgm` ausgedrückt werden.  
   
- Wenn Schalter in Kurzform zu einer Gruppe zusammengefasst und mit einem Wert versehen werden, bezieht sich dieser Wert auf jeden der Schalter. Beispielsweise ist `/pgm:123` gleichbedeutend mit `/p:123 /g:123 /m:123`. Es tritt ein Fehler auf, wenn einer der Schalter in der Gruppe keinen Wert annimmt.  
+Wenn Schalter in Kurzform zu einer Gruppe zusammengefasst und mit einem Wert versehen werden, bezieht sich dieser Wert auf jeden der Schalter. Beispielsweise ist `/pgm:123` gleichbedeutend mit `/p:123 /g:123 /m:123`. Es tritt ein Fehler auf, wenn einer der Schalter in der Gruppe keinen Wert annimmt.  
   
 ## <a name="escape-characters"></a>Escapezeichen  
  Ein Caretzeichen (^) in einer Befehlszeile bedeutet, dass das unmittelbar darauf folgende Zeichen literal und nicht als Steuerzeichen interpretiert wird. Dies ermöglicht das Einbetten von geraden Anführungszeichen ("), Leerzeichen, vorangestellten Schrägstrichen, Caretzeichen oder beliebigen anderen Literalzeichen in einen Parameter- oder Schalterwert, mit Ausnahme von Schalternamen. Beispiel:  
@@ -134,7 +105,7 @@ Edit.ReplaceInFiles /case /pattern:regex var[1-3]+ oldpar
 ```  
 >Edit.Find ^^t /regex  
 ```  
-  
+
  Die Funktionsweise des Caretzeichens ist unabhängig davon, ob es in Anführungszeichen eingeschlossen ist oder nicht. Wenn ein Caretzeichen das letzte Zeichen in einer Zeile ist, wird es ignoriert. Im hier gezeigten Beispiel wird die Suche nach dem Muster "^t" veranschaulicht.  
   
 ## <a name="use-quotes-for-path-names-with-spaces"></a>Verwenden von Anführungszeichen für Pfadnamen mit Leerzeichen  

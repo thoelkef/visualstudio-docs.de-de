@@ -1,23 +1,12 @@
 ---
-title: "Ausführen von Komponententests für vorhandene C++-Anwendungen mit dem Test-Explorer | Microsoft-Dokumentation"
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: 
-ms.topic: article
-ms.assetid: 7d08de69-c32e-4f0b-89aa-75347b15fb82
-caps.latest.revision: "11"
-ms.author: douge
-manager: douge
-ms.openlocfilehash: 665e16720466faff5dd52635066198e36d58d117
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+redirect_url: /visualstudio/test/how-to-use-microsoft-test-framework-for-cpp
+ms.openlocfilehash: 7ab917a55d9a2d00a8d4635e2de45cd43cbe02f2
+ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 11/15/2017
 ---
-# <a name="unit-testing-existing-c-applications-with-test-explorer"></a>Ausführen von Unittests für vorhandene C++-Anwendungen mit dem Test-Explorer
+# <a name="how-to-use-the-microsoft-unit-testing-framework-for-c"></a>Verwenden des Microsoft-Komponententest-Frameworks für C++
 Es wird empfohlen, vor der Änderung einer vorhandenen Anwendung zu überprüfen, ob sie gut mit Komponententests abgedeckt ist. So können Sie sichergehen, dass durch die Änderungen keine Fehler eingeführt werden. Wenn die Anwendung noch nicht über Komponententests verfügt, können Sie diese hinzufügen, indem Sie die in diesem Thema beschriebenen Methoden verwenden. In diesem Thema wird beschrieben, wie Sie Komponententests für vorhandenen Visual C++-Code hinzufügen. Zunächst entscheiden Sie, wie Sie Ihren Code testen möchten. Dann fahren Sie mit dem Erstellen, Schreiben und Ausführen der Tests fort.  
   
 ## <a name="deciding-how-to-test-your-code"></a>Entscheiden, wie der Code getestet werden soll  
@@ -29,7 +18,7 @@ Es wird empfohlen, vor der Änderung einer vorhandenen Anwendung zu überprüfen
   
  Es gibt mehrere Methoden, Produktcode zu testen. Dies hängt davon ab, ob die Schnittstellen verfügbar gemacht werden, die Sie testen möchten. Wählen Sie eine der folgenden Methoden aus:  
   
- **Bei den Komponententests werden nur Funktionen verwendet, die vom zu testenden Code exportiert werden:**  
+ **Bei den Komponententests werden nur Funktionen aufgerufen, die aus zu testendem Code exportiert werden:**  
  Fügen Sie ein separates Testprojekt hinzu. Fügen Sie im Testprojekt einen Verweis auf das zu testende Projekt hinzu.  
   
  Rufen Sie die Prozedur [So verweisen Sie auf exportierte Funktionen aus dem Testprojekt](#projectRef) auf.  
@@ -46,7 +35,7 @@ Es wird empfohlen, vor der Änderung einer vorhandenen Anwendung zu überprüfen
   
  Wechseln Sie zum Verfahren [So ändern Sie den zu testenden Code in eine statische Bibliothek](#staticLink).  
   
- **Die Komponententests müssen private Funktionen und Daten verwenden, und der Code muss als Dynamic Link Library (DLL) erstellt werden:**  
+ **Die Komponententests müssen private Funktionen und Daten von Membern verwenden, und der Code muss als Dynamic Link Library (DLL) erstellt werden:**  
  Fügen Sie Komponententests im gleichen Projekt wie den Produktcode hinzu.  
   
  Wechseln Sie zum Verfahren [So fügen Sie Komponententests im gleichen Projekt hinzu](#sameProject).  
@@ -65,9 +54,9 @@ Es wird empfohlen, vor der Änderung einer vorhandenen Anwendung zu überprüfen
   
  Fahren Sie mit der Prozedur [So verknüpfen Sie die Tests mit den Objekt- oder Bibliotheksdateien](#objectRef) fort.  
   
-###  <a name="projectRef"></a> So verweisen Sie vom Testprojekt auf exportierte Funktionen  
+###  <a name="projectRef"></a> So verweisen Sie auf exportierte DLL-Funktionen aus dem Testprojekt  
   
--   Wenn ein zu testendes Projekt die Funktionen, die Sie testen möchten, exportiert, können Sie vom Testprojekt einen Verweis auf das Codeprojekt hinzufügen.  
+-   Wenn es sich bei einem zu testenden Projekt um eine DLL handelt, die Funktionen exportiert, die Sie testen möchten, können Sie einen Verweis vom Testprojekt auf das Codeprojekt hinzufügen.  
   
     1.  Erstellen Sie ein C++-Testprojekt.  
   
@@ -162,8 +151,11 @@ Es wird empfohlen, vor der Änderung einer vorhandenen Anwendung zu überprüfen
   
 ## <a name="run-the-tests"></a>Tests ausführen  
   
-1.  Wählen Sie im Menü **Ansicht** die Optionen **Weitere Fenster**, **Test-Explorer**aus.  
+1.  Klicken Sie im Menü **Test** auf **Fenster** und dann auf **Test-Explorer**.  
+2. Wenn Ihre Tests nicht im Fenster angezeigt werden, erstellen Sie das Testprojekt, indem Sie mit der rechten Maustaste auf dessen Knoten im **Projektmappen-Explorer** klicken und **Erstellen** oder **Neu erstellen** auswählen.
   
-2.  Wählen Sie im Test-Explorer **Alle ausführen**aus.  
+2.  Klicken Sie im Test-Explorer auf **Alle Ausführen**, oder wählen Sie die Tests aus, die Sie ausführen möchten. Klicken Sie für weitere Optionen, einschließlich des Ausführens im Debugmodus mit aktivierten Breakpoints, mit der rechten Maustaste auf einen Test.
   
- Weitere Informationen finden Sie unter [Testgesteuerte Entwicklung mit dem Test-Explorer](../test/quick-start-test-driven-development-with-test-explorer.md).
+## <a name="see-also"></a>Siehe auch
+[Schnellstart: Testgesteuerte Entwicklung mit dem Test-Explorer](../test/quick-start-test-driven-development-with-test-explorer.md)
+

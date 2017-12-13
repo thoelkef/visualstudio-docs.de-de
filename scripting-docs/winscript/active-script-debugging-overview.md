@@ -1,292 +1,295 @@
 ---
-title: "Debuggen mit Active Script - &#220;bersicht | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Debuggen mit Active Script - Übersicht"
+title: "Übersicht über das Debuggen mit Active Script | Microsoft Docs"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: Active Script Debugging overview
 ms.assetid: ce4ec768-d017-4dfa-a7e3-cced3a29e679
-caps.latest.revision: 11
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 1d9aebdc3f8fa4df0f4386609e632e1a8611c87f
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# Debuggen mit Active Script - &#220;bersicht
-Die Active Script\-Debugschnittstellen ermöglichen sprachunabhängiges, hostneutrales Debuggen und unterstützen eine Vielzahl der Entwicklungsumgebung.  
+# <a name="active-script-debugging-overview"></a>Debuggen mit Active Script - Übersicht
+Die Schnittstellen zum Debuggen mit Active Script ermöglichen ein sprachneutrales, hostneutrales Debuggen und unterstützen eine Vielzahl von Entwicklungsumgebungen.  
   
- ![Script Host&#45;Prozess](../winscript/media/scp56activdbgarchgif.png "Scp56ActivDbgArchgif")  
+ ![Script Host-Prozess](../winscript/media/scp56activdbgarchgif.gif "Scp56ActivDbgArchgif")  
 Abbildung 1  
   
- Eine sprachneutrale Debugumgebung kann jede Programmiersprache oder Mischung von Programmiersprachen, ohne bestimmtes Kenntnisse der keiner dieser Sprachen verfügen unterstützen.  Die Debugumgebung unterstützt auch das sprachübergreifende schrittweise Ausführung und die Haltepunkte.  \(Diese Übersicht konzentriert sich hauptsächlich auf Stützskriptsprachen, wie VBScript und [!INCLUDE[javascript](../javascript/includes/javascript-md.md)].\)  
+ Eine sprachneutrale Debugumgebung kann alle Programmiersprachen oder eine Kombination aus Programmiersprachen unterstützen, ohne dass bestimmte Kenntnisse einer dieser Sprachen erforderlich sind. Zudem unterstützt die Debugumgebung sprachübergreifendes Stepping sowie sprachübergreifende Haltepunkte. (Hauptschwerpunkt dieser Übersicht ist die Unterstützung von Skriptsprachen, wie z.B. VBScript und [!INCLUDE[javascript](../javascript/includes/javascript-md.md)].)  
   
- Ein hostneutraler Debugger kann mit jedem Active Scripting\-Host, wie Internet Explorer oder einem benutzerdefinierten Host automatisch verwendet werden.  Die Hoststeuerelemente, was der Debugger dem Benutzer, der Struktur der Dokumentstruktur dem Inhalt und der Syntaxfarbe der Debug\- Dokumente darstellt.  Dies ermöglicht dem debuggten im Kontext des Dokuments angezeigt werden, Quellcode.  Beispielsweise kann ein Skript in Internet Explorer einer HTML\-Seite anzeigen.  
+ Ein hostneutraler Debugger kann automatisch mit einem beliebigen Active Scripting-Host verwendet werden, z.B. Internet Explorer oder einem benutzerdefinierten Host. Der Host steuert, was dem Benutzer vom Debugger angezeigt wird: angefangen bei der Struktur des Dokuments bis hin zu den Inhalten und Syntaxfarben der Debugdokumente. Dadurch kann der debuggte Quellcode im Kontext des Hostdokuments angezeigt werden. Internet Explorer kann beispielsweise ein Skript auf einer HTML-Seite anzeigen.  
   
- In den folgenden Unterabschnitten werden, jede Schlüsselkomponente im aktiven Debuggen und die zugeordneten Schnittstellen erläutert.  jedoch bevor sie weiter fortfahren, verschlüsseln mehrere aktive Debuggingskonzepte muss definiert werden:  
+ In den folgenden Unterabschnitten werden die einzelnen Schlüsselkomponenten in Active Debugging und die zugehörigen Schnittstellen erläutert. Bevor Sie fortfahren, müssen jedoch einige Active Debugging-Schlüsselkonzepte definiert werden:  
   
  Hostanwendung  
- Die Anwendung, die die Skriptmodule hostet und einen Satz von \- Objekten skriptfähigen bereitstellt \(oder "Objektmodell"\).  
+ Die Anwendung, die die Skriptmodule hostet und eine skriptfähige Reihe von Objekten (oder „Objektmodellen“) bereitstellt.  
   
  Sprachmodul  
- Eine Komponente, die Analyse, Ausführung und Debuggingsabstraktionen für eine bestimmte Sprache bereitstellt.  
+ Eine Komponente, die Analyse-, Ausführungs- und Debugabstraktionen für eine bestimmte Sprache bereitstellt.  
   
- Debugger IDE  
- Die Anwendung, die das Debuggen von Benutzeroberfläche vom Kommunizieren mit der Hostanwendung und den Sprachmodulen bereitstellt.  
+ Debugger-IDE  
+ Die Anwendung, die die Debugging-Benutzeroberfläche durch die Kommunikation mit der Hostanwendung und Sprachmodulen bereitstellt.  
   
- Debuggen Manager des Computers  
- Eine Komponente, die eine Registrierung von debugfähigen Anwendungsprozessen beibehält.  
+ Computerbasierter Debug-Manager  
+ Eine Komponente, die eine Registrierung von debugfähigen Anwendungsprozessen verwaltet.  
   
- Debuggen Manager des Prozesses  
- Eine Komponente, die die Struktur von debugfähigen Dokumenten für eine bestimmte Anwendung verwaltete, erfasst die aktiven Threads, u. a.  
+ Prozessbasierter Debug-Manager  
+ Eine Komponente, die die Struktur von debugfähigen Dokumenten für eine bestimmte Anwendung verwaltet, die ausgeführten Threads nachverfolgt usw.  
   
- Dokumentenkontext  
- Ein Dokumentenkontext ist eine Abstraktion, die einen bestimmten Bereich im Quellcode des Dokuments darstellt.  
+ Dokumentkontext  
+ Ein Dokumentenkontext ist eine Abstraktion, die einen bestimmten Bereich im Quellcode eines Hostdokuments darstellt.  
   
  Codekontext  
- Ein Codekontext stellt einen bestimmten Speicherort im ausgeführten Code eines Sprachmoduls dar \("virtueller Anweisungszeiger".\)  
+ Ein Codekontext stellt eine bestimmte Position im ausgeführten Code eines Sprachmoduls dar (einen „virtuellen Anweisungszeiger“) dar.  
   
  Ausdruckskontext  
- Ein bestimmter Kontext \(beispielsweise ein Stapelrahmen\), in dem Ausdrücke möglicherweise durch ein Sprachmodul ausgewertet werden.  
+ Ein bestimmter Kontext (z.B. ein Stapelrahmen), in dem Ausdrücke von einem Sprachmodul ausgewertet werden können.  
   
- Objektdurchsuchen  
- Eine strukturierte, sprach\- Darstellung eines Namens des Objekts, ein Typ, ein Wert und Unterobjekte, geeignet für das Implementieren eines "Überwachungsfensters" Benutzeroberfläche.  
+ Objektkatalog  
+ Eine strukturierte, sprachunabhängige Darstellung von Name, Typ, Wert und Unterobjekten eines Objekts, die für die Implementierung einer „Überwachungsfenster“-Benutzeroberfläche geeignet ist.  
   
- Im Folgenden finden Sie eine Übersicht der einzelnen aktiven Debuggingsschlüsselkomponenten und \-c$entsprechens, die zugeordneten Schnittstellen, gefolgt von den Details dieser Schnittstellen.  
+ Es folgt eine Übersicht über alle Active Debugging-Schlüsselkomponenten und entsprechenden, zugeordneten Schnittstellen, gefolgt von den Details zu diesen Schnittstellen.  
   
-## Sprachmodul  
- Das Sprachmodul stellt die bereit:  
+## <a name="language-engine"></a>Sprachmodul  
+ Das Sprachmodul bietet:  
   
--   Sprachenanalyse und \-ausführung.  
+-   Sprachanalyse und -ausführung.  
   
--   Debugunterstützung \(Haltepunkte usw.\).  
+-   Debugunterstützung (Haltepunkte usw.).  
   
 -   Ausdrucksauswertung.  
   
--   Syntaxfarbe.  
+-   Syntaxfarben.  
   
--   Objektdurchsuchen.  
+-   Objektkatalog.  
   
--   Stapelenumeration und \-Analyse.  
+-   Stapelenumeration und -analyse.  
   
- Im Folgenden sind die Schnittstellen, die ein Skriptmodul unterstützen muss, um das Debuggen, Ausdrucksauswertung und das Objektdurchsuchen bereitzustellen.  Diese Schnittstellen werden von der Hostanwendung, zwischen dem Dokumentenkontext und den Codekontexten des Moduls, und durch den Debugger Benutzeroberfläche zuzuordnen Ausdrucksauswertung, Stapelenumeration und das Objektdurchsuchen auch Zweck verwendet.  
+ Im Folgenden werden die Schnittstellen aufgeführt, die ein Skriptmodul für die Bereitstellung von Debuggen, Ausdrucksauswertung und Objektkatalog benötigt. Die Hostanwendung verwendet diese Schnittstellen für die Zuordnung zwischen dem zugehörigen Dokumentkontext und den Codekontexten des Moduls. Die Debugger-Benutzeroberfläche verwendet sie für die Ausdrucksauswertung, die Stapelenumeration und den Objektkatalog.  
   
- [IActiveScriptDebug\-Schnittstelle](../winscript/reference/iactivescriptdebug-interface.md)  
- Stellt Syntaxfarben\- und Codekontextenumeration bereit.  
+ [IActiveScriptDebug-Schnittstelle](../winscript/reference/iactivescriptdebug-interface.md)  
+ Stellt Syntaxfarben und Codekontextenumeration bereit.  
   
- [IActiveScriptErrorDebug\-Schnittstelle](../winscript/reference/iactivescripterrordebug-interface.md)  
- EINGABETASTEdokumentenkontexte und \-Stapelrahmen für Fehler.  
+ [IActiveScriptErrorDebug-Schnittstelle](../winscript/reference/iactivescripterrordebug-interface.md)  
+ Gibt Dokumentkontexte und Stapelrahmen für Fehler zurück.  
   
- [IActiveScriptSiteDebug\-Schnittstelle](../winscript/reference/iactivescriptsitedebug-interface.md)  
- Host zur Verfügung gestellter Link von Skriptmodul zu Debugger.  
+ [IActiveScriptSiteDebug-Schnittstelle](../winscript/reference/iactivescriptsitedebug-interface.md)  
+ Vom Host über das Skriptmodul für den Debugger bereitgestellter Link.  
   
- [IDebugCodeContext\-Schnittstelle](../winscript/reference/idebugcodecontext-interface.md)  
- Stellt einen virtuellen "Anweisungszeiger" in einem Thread bereit.  
+ [IDebugCodeContext-Schnittstelle](../winscript/reference/idebugcodecontext-interface.md)  
+ Stellt in einem Thread einen virtuellen „Anweisungszeiger“ bereit.  
   
- [IEnumDebugCodeContexts\-Schnittstelle](../winscript/reference/ienumdebugcodecontexts-interface.md)  
- Listet die Codekontexte auf, die einem Dokumentenkontext entsprechen.  
+ [IEnumDebugCodeContexts-Schnittstelle](../winscript/reference/ienumdebugcodecontexts-interface.md)  
+ Führt die Codekontexte auf, die einem Dokumentenkontext entsprechen.  
   
- [IDebugStackFrame\-Schnittstelle](../winscript/reference/idebugstackframe-interface.md)  
+ [IDebugStackFrame-Schnittstelle](../winscript/reference/idebugstackframe-interface.md)  
  Stellt einen logischen Stapelrahmen im Threadstapel dar.  
   
- [IDebugExpressionContext\-Schnittstelle](../winscript/reference/idebugexpressioncontext-interface.md)  
+ [IDebugExpressionContext-Schnittstelle](../winscript/reference/idebugexpressioncontext-interface.md)  
  Stellt Kontext bereit, in dem Ausdrücke ausgewertet werden können.  
   
- [IDebugStackFrameSniffer\-Schnittstelle](../winscript/reference/idebugstackframesniffer-interface.md)  
- Bietet eine Möglichkeit, logische Stapelrahmen aufzulisten.  
+ [IDebugStackFrameSniffer-Schnittstelle](../winscript/reference/idebugstackframesniffer-interface.md)  
+ Bietet eine Möglichkeit zum Aufführen logischer Stapelrahmen.  
   
- [IDebugExpression\-Schnittstelle](../winscript/reference/idebugexpression-interface.md)  
+ [IDebugExpression-Schnittstelle](../winscript/reference/idebugexpression-interface.md)  
  Stellt einen asynchron ausgewerteten Ausdruck dar.  
   
- [IDebugSyncOperation\-Schnittstelle](../winscript/reference/idebugsyncoperation-interface.md)  
- Ermöglicht einem Skriptmodul, eine Operation zu extrahieren, der ausgeführt werden muss, während er in einer bestimmten geschachtelt ist, blockierte Thread.  
+ [IDebugSyncOperation-Schnittstelle](../winscript/reference/idebugsyncoperation-interface.md)  
+ Ermöglicht einem Skriptmodul die Abstraktion eines Vorgangs, der ausgeführt werden muss, während er in einen bestimmten blockierten Thread eingebettet ist.  
   
- [IDebugAsyncOperation\-Schnittstelle](../winscript/reference/idebugasyncoperation-interface.md)  
+ [IDebugAsyncOperation-Schnittstelle](../winscript/reference/idebugasyncoperation-interface.md)  
  Bietet asynchronen Zugriff auf einen synchronen Debugvorgang.  
   
- [IDebugAsyncOperationCallBack\-Schnittstelle](../winscript/reference/idebugasyncoperationcallback-interface.md)  
- Stellt die Statusereignisse bereit, die den Status einer `IDebugAsyncOperation`\-Schnittstellenauswertung verknüpft sind.  
+ [IDebugAsyncOperationCallBack-Schnittstelle](../winscript/reference/idebugasyncoperationcallback-interface.md)  
+ Stellt Statusereignisse im Zusammenhang mit der Bearbeitung einer `IDebugAsyncOperation`-Schnittstellenauswertung bereit.  
   
- [IEnumDebugExpressionContexts\-Schnittstelle](../winscript/reference/ienumdebugexpressioncontexts-interface.md)  
- Listet eine Auflistung `IDebugExpressionContexts`\-Objekte auf.  
+ [IEnumDebugExpressionContexts-Schnittstelle](../winscript/reference/ienumdebugexpressioncontexts-interface.md)  
+ Zählt eine Sammlung von `IDebugExpressionContexts`-Objekten auf.  
   
- [IProvideExpressionContexts\-Schnittstelle](../winscript/reference/iprovideexpressioncontexts-interface.md)  
- Stellt eine Methode bereit, die Ausdruckskontexte aufzulisten, die von einer bestimmten Komponente bezeichnet werden.  
+ [IProvideExpressionContexts-Schnittstelle](../winscript/reference/iprovideexpressioncontexts-interface.md)  
+ Bietet eine Möglichkeit zum Aufzählen von Ausdruckskontexten, die von einer bestimmten Komponente bekannt sind.  
   
- [IDebugFormatter\-Schnittstelle](../winscript/reference/idebugformatter-interface.md)  
- Ermöglicht einer Sprache oder ein IDE, um die Konvertierung zwischen VARIANTEN Werten oder VARTYPE\-Typen und Zeichenfolgen anzupassen.  
+ [IDebugFormatter-Schnittstelle](../winscript/reference/idebugformatter-interface.md)  
+ Ermöglicht, dass eine Sprache oder IDE den Wechsel zwischen VARIANT-Werten oder VARTYPE-Typen und -Zeichenfolgen anpasst.  
   
- [IDebugStackFrameSnifferEx\-Schnittstelle](../winscript/reference/idebugstackframesnifferex-interface.md)  
- Listet die logischen Stapelrahmen für das PDM auf.  
+ [IDebugStackFrameSnifferEx-Schnittstelle](../winscript/reference/idebugstackframesnifferex-interface.md)  
+ Zählt die logischen Stapelrahmen für das PDM auf.  
   
-## Host  
+## <a name="hosts"></a>Hosts  
  Der Host:  
   
 -   Hostet die Sprachmodule.  
   
--   Stellt ein Objektmodell bereit \(Satz von Objekten, die erstellt werden können\).  
+-   Stellt ein Objektmodell (eine Reihe von Objekten, für die Skripts erstellt werden können) bereit.  
   
--   Definiert eine Struktur von Dokumenten, die gedebuggt werden können und deren Inhalt.  
+-   Definiert eine debugfähige Dokumentstruktur und die zugehörigen Inhalte.  
   
--   Organisiert Skripts in virtuelle Anwendungen.  
+-   Organisiert Skripts in virtuellen Anwendungen.  
   
- Es gibt zwei Arten von Hosts:  
+ Es gibt zwei Hosttypen:  
   
--   Ein stummer Host unterstützt nur die grundlegenden Active Scripting\-Schnittstellen.  Sie verfügt über kein Steuerelement über Elementstruktur oder Organisationen; Dies wird vollständig durch die Skripts bestimmt, die den \- Sprachmodulen bereitgestellt werden.  
+-   Ein Dumbhost unterstützt nur die Active Scripting-Hauptschnittstellen. Er hat keine Kontrolle über die Dokumentstruktur oder Organisationen; dies wird komplett von den in den Sprachmodulen bereitgestellten Skripts bestimmt.  
   
--   Ein Smarthost unterstützt einen umfangreicheren Satz von Schnittstellen, der zulässig, um die Dokumentstruktur, den Dokumentinhalt beziehen und die Syntaxfarbe zu definieren.  Es gibt eine Reihe von Hilfeschnittstellen beschrieben, im folgenden Unterabschnitt, die es Ihnen erleichtern, damit ein Host ein Smarthost ist.  
+-   Ein Smarthost unterstützt eine größere Reihe von Schnittstellen. Dies ermöglicht die Definition von Dokumentstruktur, Dokumentinhalten und Syntaxfarben. Es gibt eine Reihe von Hilfsschnittstellen, durch die es für einen Host viel einfacher ist, ein Smarthost zu sein. Auf diese Hilfsschnittstellen wird im nächsten Unterabschnitt eingegangen.  
   
-### Smarthost\-Hilfe\-Schnittstellen  
- Die `IDebugDocumentHelper`\-Methoden stellen einen groß vereinfachten Satz von Schnittstellen, die ein Host verwenden kann, um die Vorteile des SmartHostings zu erhalten, ohne die volle Komplexität \(und Leistungsfähigkeit\) der vollständigen Hostschnittstellen zu behandeln.  
+### <a name="smart-host-helper-interfaces"></a>Smarthost-Hilfsschnittstellen  
+ Die `IDebugDocumentHelper`-Methoden stellen deutlich vereinfachte Schnittstellen bereit, durch deren Verwendung ein Host die Vorteile von Smarthosting nutzen kann, ohne mit der vollständigen Komplexität (und Stärke) der vollständigen Hostschnittstellen umgehen zu müssen.  
   
- Ein Host ist nicht erforderlich, diese Schnittstellen zu verwenden, benötigen.  Unter Verwendung dieser Schnittstellen kann mehrere, schwierigere Schnittstellen zu implementieren oder zu verwenden.  
+ Für die Verwendung dieser Schnittstellen ist selbstverständlich kein Host erforderlich. Durch die Verwendung dieser Schnittstellen kann jedoch vermieden werden, dass eine Reihe von noch komplizierteren Schnittstellen implementiert oder verwendet wird.  
   
- [IDebugDocumentHelper\-Schnittstelle](../winscript/reference/idebugdocumenthelper-interface.md)  
- Wird von PDM und stellt die Implementierungen für viele Schnittstellen bereit, die für intelligente Hosting erforderlich sind.  
+ [IDebugDocumentHelper-Schnittstelle](../winscript/reference/idebugdocumenthelper-interface.md)  
+ Wird vom PDM implementiert und stellt Implementierungen für viele Schnittstellen bereit, die für das Smarthosting erforderlich sind.  
   
- [IDebugDocumentHost\-Schnittstelle](../winscript/reference/idebugdocumenthost-interface.md)  
- Implementiert \(optional\) durch den Host, um hostspezifische Funktionen, wie Syntaxfarbe, dem Debugger verfügbar zu machen.  
+ [IDebugDocumentHost-Schnittstelle](../winscript/reference/idebugdocumenthost-interface.md)  
+ Wird (optional) vom Host implementiert, um für den Debugger hostspezifische Funktionen verfügbar zu machen, wie z.B. Syntaxfarben.  
   
- Weitere Informationen finden Sie unter [Implementieren von Smart Host\-Hilfsprogrammschnittstellen](../winscript/implementing-smart-host-helper-interfaces.md).  
+ Weitere Informationen finden Sie unter [Implementing Smart Host Helper Interfaces](../winscript/implementing-smart-host-helper-interfaces.md) (Implementieren von Smarthost-Hilfsschnittstellen).  
   
-### Vollständige Smarthost\-Schnittstellen  
- Es folgt der gesamte Satz von Schnittstellen, die ein Smarthost implementieren oder verwenden muss, wenn er nicht die Hilfeschnittstellen verwendet.  
+### <a name="full-smart-host-interfaces"></a>Vollständige Smarthost-Schnittstellen  
+ Nachfolgend finden Sie alle Schnittstellen, die ein Smarthost implementieren oder verwenden muss, wenn er die Hilfsschnittstellen nicht verwendet.  
   
- Schnittstellen implementiert vom Host:  
+ Vom Host implementierte Schnittstellen:  
   
- [IDebugDocumentInfo\-Schnittstelle](../winscript/reference/idebugdocumentinfo-interface.md)  
- Enthält Informationen zu einem Dokument bereit, das möglicherweise instanziiert wird.  
+ [IDebugDocumentInfo-Schnittstelle](../winscript/reference/idebugdocumentinfo-interface.md)  
+ Stellt Informationen zu einem Dokument bereit, das möglicherweise instanziiert wird.  
   
- [IDebugDocumentProvider\-Schnittstelle](../winscript/reference/idebugdocumentprovider-interface.md)  
- Stellt eine Möglichkeit für ein Dokument bei Bedarf instanziieren bereit.  
+ [IDebugDocumentProvider-Schnittstelle](../winscript/reference/idebugdocumentprovider-interface.md)  
+ Bietet die Möglichkeit zum Instanziieren eines Dokuments nach Bedarf.  
   
- [IDebugDocument\-Schnittstelle](../winscript/reference/idebugdocument-interface.md)  
- Alle Basisschnittstelle für Dokumente debuggen.  
+ [IDebugDocument-Schnittstelle](../winscript/reference/idebugdocument-interface.md)  
+ Die Basisschnittstelle für alle Debugdokumente.  
   
- [IDebugDocumentText\-Schnittstelle](../winscript/reference/idebugdocumenttext-interface.md)  
- Bietet Zugriff auf einer nur für Text Debug\- Version des Dokuments.  
+ [IDebugDocumentText-Schnittstelle](../winscript/reference/idebugdocumenttext-interface.md)  
+ Bietet Zugriff auf eine reine Textversion des Debugdokuments.  
   
- [IDebugDocumentTextAuthor\-Schnittstelle](../winscript/reference/idebugdocumenttextauthor-interface.md)  
- Ermöglicht das Bearbeiten der nur für Text Debug\- Version des Dokuments.  
+ [IDebugDocumentTextAuthor-Schnittstelle](../winscript/reference/idebugdocumenttextauthor-interface.md)  
+ Ermöglicht die Bearbeitung der reinen Textversion des Debugdokuments.  
   
- [IDebugDocumentContext\-Schnittstelle](../winscript/reference/idebugdocumentcontext-interface.md)  
- Stellt eine abstrakte Darstellung eines Teils des Dokuments bereit, das gedebuggt wird.  
+ [IDebugDocumentContext-Schnittstelle](../winscript/reference/idebugdocumentcontext-interface.md)  
+ Stellt eine abstrakte Darstellung eines Teils des Debugdokuments dar.  
   
- Schnittstellen implementiert wird PDM im Namen des Hosts:  
+ Für den Host vom PDM implementierte Schnittstellen:  
   
- [IDebugApplicationNode\-Schnittstelle](../winscript/reference/idebugapplicationnode-interface.md)  
- Erweitert die Funktionen der `IDebugDocumentProvider`\-Schnittstelle durch Bereitstellen eines Kontexts innerhalb einer Projektstruktur.  
+ [IDebugApplicationNode-Schnittstelle](../winscript/reference/idebugapplicationnode-interface.md)  
+ Erweitert die Funktionalität der `IDebugDocumentProvider`-Schnittstelle durch die Bereitstellung eines Kontexts innerhalb einer Projektstruktur.  
   
-## Debugger IDE  
- Die IDE ist ein sprachneutrales debuggendes Benutzeroberfläche.  Es stellt die bereit:  
+## <a name="debugger-ide"></a>Debugger-IDE  
+ Die IDE ist eine sprachunabhängige Debugging-Benutzeroberfläche. Sie stellt Folgendes bereit:  
   
--   Dokumentanzeigen\/Editoren.  
+-   Dokumentviewer/-editoren.  
   
 -   Haltepunktverwaltung.  
   
--   Ausdrucksauswertung und Überwachungsfenster.  
+-   Fenster für die Ausdrucksauswertung und Überwachungen.  
   
--   Stapelrahmendurchsuchen.  
+-   Stapelrahmen-Browsing.  
   
--   \-\/Klassendurchsuchen.  
+-   Objekt-/Klassenbrowsing.  
   
--   Durchsuchen der virtuellen Anwendungsstruktur.  
+-   Browsing der virtuellen Anwendungsstruktur.  
   
- Schnittstellen implementiert vom Debugger:  
+ Alle vom Debugger implementierten Schnittstellen:  
   
- [IApplicationDebugger\-Schnittstelle](../winscript/reference/iapplicationdebugger-interface.md)  
- Die primäre Schnittstelle verfügbar gemacht aus einer Sitzung des Debuggers IDE.  
+ [IApplicationDebugger-Schnittstelle](../winscript/reference/iapplicationdebugger-interface.md)  
+ Die primäre Schnittstelle, die von einer Debugger-IDE-Sitzung verfügbar gemacht wird.  
   
- [IApplicationDebuggerUI\-Schnittstelle](../winscript/reference/iapplicationdebuggerui-interface.md)  
- Gibt eine externe Komponente mehr Kontrolle über die Benutzeroberfläche des Debuggers.  
+ [IApplicationDebuggerUI-Schnittstelle](../winscript/reference/iapplicationdebuggerui-interface.md)  
+ Gibt einer externen Komponente mehr Kontrolle über die Benutzeroberfläche des Debuggers.  
   
- [IDebugExpressionCallBack\-Schnittstelle](../winscript/reference/idebugexpressioncallback-interface.md)  
- Stellt Statusereignisse für `IDebugExpression` Auswertungsstatus bereit.  
+ [IDebugExpressionCallBack-Schnittstelle](../winscript/reference/idebugexpressioncallback-interface.md)  
+ Stellt Statusereignisse für den Auswertungsfortschritt der `IDebugExpression`-Schnittstelle bereit.  
   
- [IDebugDocumentTextEvents\-Schnittstelle](../winscript/reference/idebugdocumenttextevents-interface.md)  
- Stellt die Ereignisse bereit, die Änderungen am zugeordneten Textdokument angeben.  
+ [IDebugDocumentTextEvents-Schnittstelle](../winscript/reference/idebugdocumenttextevents-interface.md)  
+ Stellt Ereignisse bereit, die auf Änderungen am zugehörigen Textdokument hinweisen.  
   
- [IDebugApplicationNodeEvents\-Schnittstelle](../winscript/reference/idebugapplicationnodeevents-interface.md)  
- Stellt die Ereignisschnittstelle für die `IDebugApplicationNode`\-Schnittstelle bereit.  
+ [IDebugApplicationNodeEvents-Schnittstelle](../winscript/reference/idebugapplicationnodeevents-interface.md)  
+ Stellt die Ereignisschnittstelle für die `IDebugApplicationNode`-Schnittstelle bereit.  
   
-### Machine Manager Debug  
- Der Computername Debug\- Manager stellt den Anschlusspunkt zwischen virtuellen Anwendungen und Debuggern vom Führen und vom Auflisten einer Liste der aktiven virtuellen Anwendungen bereit.  
+### <a name="machine-debug-manager"></a>Computerbasierter Debug-Manager  
+ Der computerbasierte Debug-Manager stellt den Einbindungspunkt zwischen virtuellen Anwendungen und Debuggern bereit, indem eine Liste der aktiven virtuellen Anwendungen verwaltet und aufgezählt wird.  
   
- [IDebugSessionProvider\-Schnittstelle](../winscript/reference/idebugsessionprovider-interface.md)  
- Richtet eine Debugsitzung für eine laufende Anwendung ein.  
+ [IDebugSessionProvider-Schnittstelle](../winscript/reference/idebugsessionprovider-interface.md)  
+ Richtet eine Debugsitzung für eine ausgeführte Anwendung ein.  
   
- [IMachineDebugManager\-Schnittstelle](../winscript/reference/imachinedebugmanager-interface.md)  
- Die primäre Schnittstelle zum Computer Debug\- Manager.  
+ [IMachineDebugManager-Schnittstelle](../winscript/reference/imachinedebugmanager-interface.md)  
+ Die primäre Schnittstelle für den computerbasierten Debug-Manager.  
   
- [IMachineDebugManagerCookie\-Schnittstelle](../winscript/reference/imachinedebugmanagercookie-interface.md)  
- Wie die `IMachineDebugManager`\-Schnittstelle, jedoch auf diese Schnittstelle unterstützt Debug\- Cookies.  
+ [IMachineDebugManagerCookie-Schnittstelle](../winscript/reference/imachinedebugmanagercookie-interface.md)  
+ Diese Schnittstelle ähnelt der `IMachineDebugManager`-Schnittstelle, unterstützt jedoch Debug-Cookies.  
   
- [IMachineDebugManagerEvents\-Schnittstelle](../winscript/reference/imachinedebugmanagerevents-interface.md)  
- Signaländerungen in der Liste der laufenden Anwendung, die von ausgeführt wird, bearbeiten Debug\- Manager Computer.  
+ [IMachineDebugManagerEvents-Schnittstelle](../winscript/reference/imachinedebugmanagerevents-interface.md)  
+ Signaländerungen in der ausgeführten Anwendungsliste, die vom computerbasierten Debug-Manager verwaltet werden.  
   
- [IEnumRemoteDebugApplications\-Schnittstelle](../winscript/reference/ienumremotedebugapplications-interface.md)  
- Listet die ausgeführten Anwendungen auf einem Computer auf.  
+ [IEnumRemoteDebugApplications-Schnittstelle](../winscript/reference/ienumremotedebugapplications-interface.md)  
+ Zählt die ausgeführten Anwendungen auf einem Computer auf.  
   
-### Prozessdebug\-Manager  
- Das PDM bewirkt Folgendes:  
+### <a name="process-debug-manager"></a>Prozessbasierter Debug-Manager  
+ Der PDM führt folgende Aufgaben durch:  
   
--   Synchronisiert das Debuggen mehrerer Sprachmodulen.  
+-   Er synchronisiert das Debuggen mehrerer Sprachmodule.  
   
--   Verwendet eine Struktur von debugfähigen Dokumenten bei.  
+-   Er verwaltet eine Struktur mit debugfähigen Dokumenten.  
   
--   Führt Stapelrahmen zusammen.  
+-   Er führt Stapelrahmen zusammen.  
   
--   Koordinatenhaltepunkte und Springen über Sprachmodule.  
+-   Er koordiniert sprachmodulübergreifend Haltepunkte und Stepping.  
   
--   Titelthreads.  
+-   Er verfolgt Threads.  
   
--   Verwendet einen Debuggerthread für asynchrone Verarbeitung bei.  
+-   Er verwaltet einen Debugthread für die asynchrone Verarbeitung.  
   
--   Verständigt sich mit dem Computer Debug\- Manager und dem Debugger IDE.  
+-   Er kommuniziert mit dem computerbasierten Debug-Manager und der Debugger-IDE.  
   
- Im Folgenden werden die Schnittstellen, die von bereitgestellt werden, verarbeiten Debug\- Manager.  
+ Im Folgenden werden die vom prozessbasierten Debug-Manager bereitgestellten Schnittstellen aufgeführt.  
   
- [IProcessDebugManager\-Schnittstelle](../winscript/reference/iprocessdebugmanager-interface.md)  
- Primäre Schnittstelle Debug ProzessManager.  Diese Schnittstelle kann eine virtuelle Anwendung von einem Prozess erstellen, hinzufügen oder entfernen.  
+ [IProcessDebugManager-Schnittstelle](../winscript/reference/iprocessdebugmanager-interface.md)  
+ Die primäre Schnittstelle für den prozessbasierten Debug-Manager. Diese Schnittstelle kann eine virtuelle Anwendung aus einem Prozess erstellen, hinzufügen oder entfernen.  
   
- [IRemoteDebugApplication\-Schnittstelle](../winscript/reference/iremotedebugapplication-interface.md)  
- Stellt eine laufende Anwendung dar.  
+ [IRemoteDebugApplication-Schnittstelle](../winscript/reference/iremotedebugapplication-interface.md)  
+ Stellt eine ausgeführte Anwendung dar.  
   
- [IDebugApplication\-Schnittstelle](../winscript/reference/idebugapplication-interface.md)  
- Macht nicht remotefähig Debugmethoden für Sprachmodule und Hosts verfügbar.  
+ [IDebugApplication-Schnittstelle](../winscript/reference/idebugapplication-interface.md)  
+ Macht nicht remotefähige Debugmethoden für die Verwendung durch Sprachmodule und Hosts verfügbar.  
   
- [IRemoteDebugApplicationThread\-Schnittstelle](../winscript/reference/iremotedebugapplicationthread-interface.md)  
+ [IRemoteDebugApplicationThread-Schnittstelle](../winscript/reference/iremotedebugapplicationthread-interface.md)  
  Stellt einen Ausführungsthread innerhalb einer bestimmten Anwendung dar.  
   
- [IDebugApplicationThread\-Schnittstelle](../winscript/reference/idebugapplicationthread-interface.md)  
- Ermöglicht Sprachmodule und Hosts, die Threadsynchronisierung bereitzustellen und Threadbesonderen, DEBUGZustandsinformationen beizubehalten.  
+ [IDebugApplicationThread-Schnittstelle](../winscript/reference/idebugapplicationthread-interface.md)  
+ Ermöglicht Sprachmodulen und Hosts, eine Threadsynchronisierung zu bieten und threadspezifische Informationen im Debugstatus zu verwalten.  
   
- [IEnumRemoteDebugApplicationThreads\-Schnittstelle](../winscript/reference/ienumremotedebugapplicationthreads-interface.md)  
- Listet die aktiven Threads in einer Anwendung.  
+ [IEnumRemoteDebugApplicationThreads-Schnittstelle](../winscript/reference/ienumremotedebugapplicationthreads-interface.md)  
+ Zählt die ausgeführten Threads in einer Anwendung auf.  
   
- [IDebugThreadCall\-Schnittstelle](../winscript/reference/idebugthreadcall-interface.md)  
- Dispatches gemarshallte Aufrufe.  
+ [IDebugThreadCall-Schnittstelle](../winscript/reference/idebugthreadcall-interface.md)  
+ Sendet gemarshallte Aufrufe.  
   
- [IDebugApplicationNode\-Schnittstelle](../winscript/reference/idebugapplicationnode-interface.md)  
- Verwendet eine Position für ein Dokument in der Hierarchie beibehalten.  
+ [IDebugApplicationNode-Schnittstelle](../winscript/reference/idebugapplicationnode-interface.md)  
+ Verwaltet eine Position für ein Dokument in der Hierarchie.  
   
- [IEnumDebugApplicationNodes\-Schnittstelle](../winscript/reference/ienumdebugapplicationnodes-interface.md)  
- Listet untergeordnete Knoten eines Knotens auf, der mit einer Anwendung zugeordnet ist.  
+ [IEnumDebugApplicationNodes-Schnittstelle](../winscript/reference/ienumdebugapplicationnodes-interface.md)  
+ Zählt die untergeordneten Knoten eines Knotens auf, der einer Anwendung zugeordnet ist.  
   
- [IEnumDebugStackFrames\-Schnittstelle](../winscript/reference/ienumdebugstackframes-interface.md)  
- Listet die Stapelrahmen entsprechend einem Thread auf, zusammengeführt von Modulen.  
+ [IEnumDebugStackFrames-Schnittstelle](../winscript/reference/ienumdebugstackframes-interface.md)  
+ Zählt die einem Thread entsprechenden Stapelrahmen auf, die durch die Module zusammengeführt wurden.  
   
- [IDebugCookie\-Schnittstelle](../winscript/reference/idebugcookie-interface.md)  
- Ermöglicht das Debuggen in den Skriptdebuggern festgelegt werden Cookie.  
+ [IDebugCookie-Schnittstelle](../winscript/reference/idebugcookie-interface.md)  
+ Ermöglicht eine Festlegung des Debug-Cookies in Skriptdebuggern.  
   
- [IDebugHelper\-Schnittstelle](../winscript/reference/idebughelper-interface.md)  
- Dient als Factory für Objektkataloge und einfache Verbindungspunkte für Skriptmodule.  
+ [IDebugHelper-Schnittstelle](../winscript/reference/idebughelper-interface.md)  
+ Dient als Factory für Objektkataloge und einfacher Verbindungspunkt für Skriptmodule.  
   
- [ISimpleConnectionPoint\-Schnittstelle](../winscript/reference/isimpleconnectionpoint-interface.md)  
- Stellt eine einfache Möglichkeit zum Beschreiben und Auflisten der Ereignisse bereit, die auf einem bestimmten Verbindungspunkt, für Skriptmodule ausgelöst werden.  
+ [ISimpleConnectionPoint-Schnittstelle](../winscript/reference/isimpleconnectionpoint-interface.md)  
+ Bietet eine einfache Möglichkeit zum Beschreiben und Aufzählen der Ereignisse, die an einem bestimmten Verbindungspunkt für Skriptmodule ausgelöst werden.  
   
-## Siehe auch  
- [Active Script\-Debuggerschnittstellen](../winscript/reference/active-script-debugger-interfaces.md)
+## <a name="see-also"></a>Siehe auch  
+ [Active Script-Debuggerschnittstellen](../winscript/reference/active-script-debugger-interfaces.md)

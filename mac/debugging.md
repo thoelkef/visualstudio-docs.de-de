@@ -1,5 +1,5 @@
 ---
-title: Debuggen mit Xamarin
+title: Debuggen mit Xamarin | Microsoft-Dokumentation
 description: "Das Debuggen ist ein üblicher und notwendiger Teil des Programmierens. Da Visual Studio für Mac eine ausgereifte IDE ist, enthält es eine Reihe von Features, die das Debuggen vereinfachen. Dieser Artikel erläutert vom sicheren Debuggen bis hin zur Datenvisualisierung, wie das volle Potenzial des Debuggens in Visual Studio für Mac genutzt werden kann."
 author: asb3993
 ms.author: amburns
@@ -7,15 +7,12 @@ ms.date: 04/14/2017
 ms.topic: article
 ms.technology: vs-ide-debug
 ms.assetid: BB7A084D-9AC2-48B5-8076-6C8518796BBA
+ms.openlocfilehash: 6d85c318b60e065be86d242bf3199b3716c59ada
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
-ms.openlocfilehash: d416c0967daa3354e09660e3b618e0cc6f3b49f7
-ms.contentlocale: de-de
-ms.lasthandoff: 08/11/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-
-
 # <a name="debugging-with-xamarin"></a>Debuggen mit Xamarin
 
 
@@ -103,4 +100,3 @@ Da dieses Feature während des Debuggens mehr Arbeitsspeicher benötigt, ist es 
 Navigieren Sie zu **Visual Studio for Mac > Preferences > Debugger** (Visual Studio für Mac > Einstellungen > Debugger), um dieses Feature zu aktivieren und versichern Sie sich, dass die Option „**Debug project code only; do not step into framework code.**“ („Nur Projektcode debuggen, keinen Einzelschritt in Frameworkcode ausführen.“) wie unten dargestellt **nicht ausgewählt** ist.
 
  ![Option „Keinen Einzelschritt in Frameworkcode ausführen“](media/debugging-image8.png)
-

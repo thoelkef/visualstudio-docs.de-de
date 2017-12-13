@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -13,29 +12,14 @@ helpviewer_keywords:
 - unit tests, verifying code with
 - testing code, automated tests
 ms.assetid: c191de3e-3f3b-471e-b828-29ec24e80e2c
-caps.latest.revision: 62
+caps.latest.revision: "62"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 6fbf89668d47d55d1d77a1d7f11765567fc73405
-ms.openlocfilehash: 2e777b966cd332871533434728a6a565c51a5336
-ms.contentlocale: de-de
-ms.lasthandoff: 05/26/2017
-
+ms.openlocfilehash: e6e0b55e86130f316c09583d4a52e1ad3dc22608
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/02/2017
 ---
 # <a name="unit-test-your-code"></a>Komponententest für Code
 Mit Komponententests können Entwickler und Tester die Methoden der Klassen in [!INCLUDE[csharp_current_short](../misc/includes/csharp_current_short_md.md)]-, [!INCLUDE[vb_current_short](../debugger/includes/vb_current_short_md.md)]- und [!INCLUDE[cpp_current_short](../misc/includes/cpp_current_short_md.md)]-Projekten schnell auf logische Fehler überprüfen.  
@@ -89,7 +73,7 @@ Mit Komponententests können Entwickler und Tester die Methoden der Klassen in [
 ## <a name="external-resources"></a>Externe Ressourcen  
   
 ### <a name="videos"></a>Videos  
- [Channel 9: Unit testing your Windows Store apps built using XAML (Durchführen von Komponententests für Ihre mit XAML erstellten Windows Store-Apps)](http://go.microsoft.com/fwlink/?LinkId=226285)  
+ [Channel 9: Unit testing your UWP apps built using XAML (Channel 9: Durchführen von Komponententests für Ihre mit XAML erstellten UWP-Apps)](http://go.microsoft.com/fwlink/?LinkId=226285)  
   
 ### <a name="forums"></a>Foren  
  [Visual Studio-Komponententest](http://go.microsoft.com/fwlink/?LinkId=224477)  
@@ -103,4 +87,3 @@ Mit Komponententests können Entwickler und Tester die Methoden der Klassen in [
 ## <a name="see-also"></a>Siehe auch  
  [Improve Code Quality (Verbessern der Codequalität)](/visualstudio/test/improve-code-quality)   
  [Testen der Anwendung](/devops-test-docs/test/test-apps-early-and-often)
-

@@ -4,36 +4,19 @@ ms.custom:
 ms.date: 05/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- unit testing, create unit tests
+helpviewer_keywords: unit testing, create unit tests
 ms.assetid: 9DE41406-8D39-427E-99D9-987E99103B73
-caps.latest.revision: 56
+caps.latest.revision: "56"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: c559290c8e88c8b4e37feabc7014188fad15434d
-ms.openlocfilehash: b36882588281fc95ff4814c148cd428d09196fa1
-ms.contentlocale: de-de
-ms.lasthandoff: 06/08/2017
-
+ms.openlocfilehash: 8ca7133aa2cb4f02e3a8761d38fb22fcc2ce6122
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/02/2017
 ---
 # <a name="developer-testing-tools-scenarios-and-capabilities"></a>Testtools, -szenarios und -funktionen für Entwickler
 
@@ -68,7 +51,7 @@ Mit IntelliTest wird der Aufwand zum Erstellen und Verwalten von Unittests für 
 
 Testen Sie Ihre Benutzeroberfläche mit branchenführenden oder von der Community als gut befundenen UI-Tests.
 Tests für programmierte UI bieten die Möglichkeit, vollautomatisierte Tests zu erstellen, um die Funktionalität und das Verhalten der Benutzeroberfläche Ihrer Anwendung zu überprüfen.
-Sie können Benutzeroberflächentests für eine Vielzahl von Technologien automatisieren, so z.B. für XAML-basierte Windows Store-Apps, Browser-Apps und SharePoint-Apps.
+Sie können Benutzeroberflächentests für eine Vielzahl von Technologien automatisieren, so z.B. für XAML-basierte UWP-Apps, Browser-Apps und SharePoint-Apps.
 
 Egal, ob Sie sich für branchenführende Tests für programmierte UI oder für generische, browserbasierte UI-Tests mit Selenium entscheiden: Visual Studio stellt Ihnen alle Tools, die Sie benötigen. 
 
@@ -76,7 +59,7 @@ Egal, ob Sie sich für branchenführende Tests für programmierte UI oder für g
 
 * [Verwenden von Benutzeroberflächenautomatisierung zum Testen des Codes](use-ui-automation-to-test-your-code.md)
 * [Erstellen, Bearbeiten und Verwalten von Tests der programmierten UI](walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
-* [Testen von Windows Store-Apps mit Tests der programmierten UI](test-windows-store-8-1-apps-with-coded-ui-tests.md)
+* [Testen von UWP-Apps mit Tests der programmierten UI](test-windows-store-8-1-apps-with-coded-ui-tests.md)
 * [Testen von Windows Phone-Apps mit Tests der programmierten UI](test-windows-phone-8-1-apps-with-coded-ui-tests.md)
 * [Testen von SharePoint-Anwendungen mit Tests der programmierten UI](testing-sharepoint-2010-applications-with-coded-ui-tests.md)
 * [Introduction to Creating Coded UI Tests with Visual Studio Enterprise (Einführung in die Erstellung programmierter UI-Tests mit Visual Studio Enterprise)](http://download.microsoft.com/download/6/2/B/62B60ECE-B9DC-4E8A-A97C-EA261BFB935E/Docs/Introduction%20to%20Coded%20UI%20Tests%20with%20Visual%20Studio%20Enterprise%202015.docx)
@@ -118,4 +101,3 @@ Visual Studio kann auch erweitert werden und ermöglicht Kompontenentestadapter 
 * [Beschleunigen der Ausführung von Unittest in Team Foundation Server](http://blogs.msdn.com/b/visualstudioalm/archive/2015/07/30/speeding-up-test-execution-in-tfs.aspx)
 * [Parallele und kontextsensitive Ausführung von Unittests](https://blogs.msdn.microsoft.com/visualstudioalm/2016/02/08/parallel-and-context-sensitive-test-execution-with-visual-studio-2015-update-1/)
 * [Unittest, Code Coverage und Codeklonanalyse mit Visual Studio (Lab)](http://download.microsoft.com/download/6/2/B/62B60ECE-B9DC-4E8A-A97C-EA261BFB935E/Docs/Unit%20Testing,%20Code%20Coverage%20and%20Code%20Clone%20Analysis%20with%20Visual%20Studio%202015.docx)
-

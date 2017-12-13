@@ -1,31 +1,31 @@
 ---
-title: "Befehl &quot;In Dateien suchen&quot; | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "edit.findinfiles"
-helpviewer_keywords: 
-  - "Edit.FindInFiles-Befehl"
-  - "In Dateien suchen (Befehl)"
+title: "Befehl „In Dateien suchen“ | Microsoft-Dokumentation"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: edit.findinfiles
+helpviewer_keywords:
+- Edit.FindInFiles command
+- find in files command
 ms.assetid: 2fc78bfe-b339-4599-97f9-4cafd8a194d9
-caps.latest.revision: 11
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: bc4b1d49b80dd449201db003b3a4ad6e54a18a1f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Befehl &quot;In Dateien suchen&quot;
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Durchsucht Dateien unter Verwendung einer Teilmenge der auf der Registerkarte **In Dateien suchen** im Fenster **Suchen und Ersetzen** verfügbaren Optionen.  
+# <a name="find-in-files-command"></a>Befehl "In Dateien suchen"
+Durchsucht Dateien mithilfe einer Teilmenge der Optionen, die im Fenster **Suchen und Ersetzen** auf der Registerkarte **In Dateien suchen** verfügbar sind.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 Edit.FindinFiles findwhat [/case] [/ext:extensions]  
@@ -33,61 +33,61 @@ Edit.FindinFiles findwhat [/case] [/ext:extensions]
 [/text2] [/wild|/regex] [/word]  
 ```  
   
-## Argumente  
+## <a name="arguments"></a>Argumente  
  `findwhat`  
- Erforderlich.  Der Text für die Übereinstimmung.  
+ Erforderlich. Der Text, für den eine Übereinstimmung ermittelt werden soll.  
   
-## Schalter  
- **\/case** oder **\/c**  
- Optional.  Übereinstimmungen werden nur gefunden, wenn die Groß\- und Kleinbuchstaben den Angaben im `findwhat`\-Argument exakt entsprechen.  
+## <a name="switches"></a>Schalter  
+ /case oder /c  
+ Dies ist optional. Übereinstimmungen treten nur auf, wenn die groß und klein geschriebenen Zeichen den im `findwhat`-Argument angegebenen Zeichen entsprechen.  
   
- \/ext: `extensions`  
- Optional.  Gibt die Dateierweiterungen der zu durchsuchenden Dateien an.  Wenn keine Angabe vorgenommen wird, wird die vorherige Erweiterung verwendet, wenn zuvor eine eingegeben wurde.  
+ /ext: `extensions`  
+ Dies ist optional. Legt die Dateierweiterungen für die zu suchenden Dateien fest. Wenn keine Erweiterung festgelegt wird und zuvor bereits eine Erweiterung angegeben wurde, wird diese verwendet.  
   
- \/lookin: `searchpath`  
- Optional.  Das zu durchsuchende Verzeichnis.  Wenn der Pfad Leerzeichen enthält, schließen Sie den gesamten Pfad in Anführungszeichen ein.  
+ /lookin: `searchpath`  
+ Dies ist optional. Das zu durchsuchende Verzeichnis. Wenn der Pfad Leerzeichen enthält, schließen Sie ihn vollständig in Anführungszeichen ein.  
   
- **\/names** oder **\/n**  
- Optional.  Zeigt eine Liste der Dateinamen an, die Übereinstimmungen aufweisen.  
+ /names oder /n  
+ Dies ist optional. Zeigt eine Liste mit Dateinamen an, die Übereinstimmungen enthalten.  
   
- **\/options** oder **\/t**  
- Optional.  Zeigt eine Liste der aktuellen Einstellungen für Suchoptionen an, ohne eine Suche zu starten.  
+ /options oder /t  
+ Dies ist optional. Zeigt eine Liste der aktuellen Optionseinstellungen für die Suche an und führt keine Suche aus.  
   
- **\/regex** oder **\/r**  
- Optional.  Verwendet vordefinierte Sonderzeichen im `findwhat`\-Argument als Notationen, die Textmuster anstelle von literalen Zeichen darstellen.  Eine vollständige Liste der für reguläre Ausdrücke gültigen Zeichen finden Sie unter [Reguläre Ausdrücke](../../ide/using-regular-expressions-in-visual-studio.md).  
+ /regex oder /r  
+ Dies ist optional. Verwendet vordefinierte Sonderzeichen im `findwhat`-Argument als Notationen, die Textmuster anstelle von Literalzeichen darstellen. Eine vollständige Liste von Zeichen für reguläre Ausdrücke finden Sie unter [Reguläre Ausdrücke](../../ide/using-regular-expressions-in-visual-studio.md).  
   
- **\/reset** oder **\/e**  
- Optional.  Setzt die Suchoptionen auf ihre Standardeinstellungen zurück und führt keinen Suchlauf aus.  
+ /reset oder /e  
+ Dies ist optional. Legt die Suchoptionen wieder auf die Standardeinstellungen fest und führt keine Suche aus.  
   
- \/stop  
- Optional.  Hält den aktuellen Suchvorgang an, wenn ein solcher durchgeführt wird.  Die Suche ignoriert alle anderen Argumente, wenn `/stop` angegeben wurde.  Beispielsweise muss die folgende Eingabe vorgenommen werden, um die aktuelle Suche anzuhalten:  
+ /stop  
+ Dies ist optional. Hält den aktuellen Suchvorgang an, wenn ein solcher ausgeführt wird. Bei der Suche werden alle anderen Argumente ignoriert, wenn `/stop` angegeben wurde. Geben Sie Folgendes ein, um z.B. die aktuelle Suche anzuhalten:  
   
 ```  
 >Edit.FindinFiles /stop  
 ```  
   
- **\/sub** oder **\/s**  
- Optional.  Durchsucht die Unterordner des im \/lookin:`searchpath`\-Argument angegebenen Verzeichnisses.  
+ /sub oder /s  
+ Dies ist optional. Durchsucht die Unterordner im Verzeichnis, das im Argument /lookin:`searchpath` angegeben wurde.  
   
- **\/text2** oder **\/2**  
- Optional.  Zeigt die Ergebnisse der Suche im Fenster **Ergebnisse suchen: 2** an.  
+ /text2 oder /2  
+ Dies ist optional. Zeigt die Ergebnisse der Suche im Fenster „Suchergebnisse: 2“ an.  
   
- **\/wild** oder **\/l**  
- Optional.  Verwendet vordefinierte Sonderzeichen im `findwhat`\-Argument als Notationen, um ein Zeichen oder eine Zeichenfolge darzustellen.  
+ /wild oder /l  
+ Dies ist optional. Verwendet vordefinierte Sonderzeichen im `findwhat`-Argument als Notationen, um ein Zeichen oder eine Abfolge von Zeichen darzustellen.  
   
- **\/word** oder **\/w**  
- Optional.  Sucht nur nach ganzen Wörtern.  
+ /word oder /w  
+ Dies ist optional. Sucht nur nach ganzen Wörtern.  
   
-## Beispiel  
- In diesem Beispiel wird in allen CLS\-Dateien, die sich im Ordner My Visual Studio Projects befinden, nach btnCancel gesucht, und die Übereinstimmungsoptionen werden im Fenster **Ergebnisse suchen: 2** angezeigt.  
+## <a name="example"></a>Beispiel  
+ Im folgenden Beispiel wird nach „btnCancel“ in allen CLS-Dateien gesucht, die sich im Ordner „My Visual Studio Projects“ (Meine Visual Studio-Projekte) befinden. Die Ergebnisse werden im Fenster „Suchergebnisse: 2“ angezeigt.  
   
 ```  
 >Edit.FindinFiles btnCancel /lookin:"c:/My Visual Studio Projects" /ext:*.cls /text2  
 ```  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Suchen in Dateien](../../ide/find-in-files.md)   
  [Befehlsfenster](../../ide/reference/command-window.md)   
- [Such\/Befehlsfeld](../../ide/find-command-box.md)   
- [Visual Studio\-Befehle](../../ide/reference/visual-studio-commands.md)   
- [Visual Studio\-Befehlsaliase](../../ide/reference/visual-studio-command-aliases.md)
+ [Such-/Befehlsfeld](../../ide/find-command-box.md)   
+ [Visual Studio-Befehle](../../ide/reference/visual-studio-commands.md)   
+ [Visual Studio-Befehlsaliase](../../ide/reference/visual-studio-command-aliases.md)

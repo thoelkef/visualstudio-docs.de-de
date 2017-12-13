@@ -1,39 +1,40 @@
 ---
-title: "Gewusst wie: Erstellen in einem allgemeinen Ausgabeverzeichnis | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Builds [Visual Studio], Gemeinsames Verzeichnis"
-  - "Gemeinsames Verzeichnis"
-  - "Ausgabeverzeichnis"
+title: 'Vorgehensweise: Erstellen in einem allgemeinen Ausgabeverzeichnis | Microsoft-Dokumentation'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- output directory
+- builds [Visual Studio], common directory
+- common directory
 ms.assetid: 1fcc2c48-07cb-4c4f-9556-36945e7dfc4e
-caps.latest.revision: 7
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 0082f69e0c35bb84a15a8dd4798e7a17b6a3dd7c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Gewusst wie: Erstellen in einem allgemeinen Ausgabeverzeichnis
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-In [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] wird jedes Projekt standardmäßig in einer Lösung erstellt, die sich in einem eigenen Ordner innerhalb der Lösung befindet.  Sie können die Buildausgabepfade der Projekte ändern, um zu erzwingen, dass alle Ausgaben im selben Ordner abgelegt werden.  
+# <a name="how-to-build-to-a-common-output-directory"></a>Gewusst wie: Erstellen in einem allgemeinen Ausgabeverzeichnis
+Standardmäßig erstellt [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] jedes Projekt in einer Projektmappe in einem eigenen Ordner in der Projektmappe. Sie können die Buildausgabepfade Ihrer Projekte so ändern, dass alle Ausgaben im selben Ordner abgelegt werden.  
   
-### So fügen Sie alle Projektmappenausgaben in ein gemeinsames Verzeichnis ein  
+### <a name="to-place-all-solution-outputs-in-a-common-directory"></a>So legen Sie alle Ausgaben in einem gemeinsamen Verzeichnis ab  
   
-1.  Klicken Sie in der Projektmappe auf ein Projekt.  
+1.  Klicken Sie auf ein Projekt in der Projektmappe.  
   
 2.  Klicken Sie im Menü **Projekt** auf **Eigenschaften**.  
   
-3.  Klicken Sie je nach Projekttyp entweder auf die Registerkarte **Kompilieren** oder **Erstellen**, und legen Sie den **Ausgabepfad** zu einem Ordner fest, der für alle in der Projektmappe enthaltenen Projekte verwendet werden soll.  
+3.  Klicken Sie je nach Art des Projekts auf die Registerkarte **Kompilieren** oder **Erstellen**, und legen Sie den **Ausgabepfad** für alle Projekte in der Projektmappe auf denselben Ordner fest.  
   
-4.  Wiederholen Sie die Schritte 1\-3 für alle Projekte in der Projektmappe.  
+4.  Wiederholen Sie die Schritte 1 bis 3 für alle Projekte in der Projektmappe.  
   
-## Siehe auch  
- [Anwendungen in Visual Studio erstellen](../ide/compiling-and-building-in-visual-studio.md)   
+## <a name="see-also"></a>Siehe auch  
+ [Kompilieren und Erstellen](../ide/compiling-and-building-in-visual-studio.md)   
  [Gewusst wie: Ändern des Buildausgabeverzeichnisses](../ide/how-to-change-the-build-output-directory.md)

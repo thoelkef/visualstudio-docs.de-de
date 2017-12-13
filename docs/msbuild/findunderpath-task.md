@@ -1,53 +1,53 @@
 ---
-title: "FindUnderPath Task | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "http://schemas.microsoft.com/developer/msbuild/2003#FindUnderPath"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "MSBuild, FindUnderPath task"
-  - "FindUnderPath task [MSBuild]"
+title: FindUnderPath-Aufgabe | Microsoft-Dokumentation
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: http://schemas.microsoft.com/developer/msbuild/2003#FindUnderPath
+dev_langs:
+- VB
+- CSharp
+- C++
+- jsharp
+helpviewer_keywords:
+- MSBuild, FindUnderPath task
+- FindUnderPath task [MSBuild]
 ms.assetid: 3c6d58b0-36e8-47aa-bfca-b73dd2045d91
-caps.latest.revision: 9
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.openlocfilehash: fcb43188414df57bd3c41286ca7e3d3caa8718d5
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# FindUnderPath Task
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Ermittelt, welche Elemente in der angegebenen Elementauflistung Pfade in dem angegebenen Ordner oder diesem untergeordnete Pfade aufweisen.  
+# <a name="findunderpath-task"></a>FindUnderPath-Aufgabe
+Bestimmt, welche Elemente in der angegebenen Elementauflistung über Pfade im oder unter dem angegebenen Ordner verfügen  
   
-## Parameter  
- In der folgenden Tabelle werden die Parameter der `FindUnderPath`\-Aufgabe beschrieben.  
+## <a name="parameters"></a>Parameter  
+ In der folgenden Tabelle werden die Parameter der `FindUnderPath` -Aufgabe beschrieben.  
   
 |Parameter|Beschreibung|  
-|---------------|------------------|  
-|`Files`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]`\-Parameter.<br /><br /> Gibt die Dateien an, deren Pfade mit dem vom `Path`\-Parameter angegebenen Pfad verglichen werden sollen.|  
-|`InPath`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]`\-Ausgabeparameter.<br /><br /> Enthält die Elemente, die im angegebenen Pfad gefunden wurden.|  
-|`OutOfPath`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]`\-Ausgabeparameter.<br /><br /> Enthält die Elemente, die im angegebenen Pfad nicht gefunden wurden.|  
-|`Path`|Erforderlicher <xref:Microsoft.Build.Framework.ITaskItem>\-Parameter.<br /><br /> Gibt den Ordnerpfad an, auf den verwiesen werden soll.|  
-|`UpdateToAbsolutePaths`|Optionaler `Boolean`\-Parameter.<br /><br /> Bei true werden die Pfade der Ausgabeelemente in absolute Pfade geändert.|  
+|---------------|-----------------|  
+|`Files`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]` -Parameter.<br /><br /> Gibt die Dateien an, deren Pfade mit dem von der `Path`-Eigenschaft angegebenen Parameter verglichen werden sollen|  
+|`InPath`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]` -Ausgabeparameter.<br /><br /> Enthält die Elemente, die unter dem angegebenen Pfad gefunden wurden|  
+|`OutOfPath`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]` -Ausgabeparameter.<br /><br /> Enthält die Elemente, die unter dem angegebenen Pfad nicht gefunden wurden|  
+|`Path`|Erforderlicher <xref:Microsoft.Build.Framework.ITaskItem> -Parameter.<br /><br /> Gibt den Ordnerpfad an, der als Verweis verwendet werden soll|  
+|`UpdateToAbsolutePaths`|Optionaler `Boolean` -Parameter.<br /><br /> Wenn TRUE, werden die Pfade der Ausgabeelemente als absolute Pfade aktualisiert.|  
   
-## Hinweise  
- Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Tasks.TaskExtension>\-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.Task>\-Klasse erbt.  Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  
+## <a name="remarks"></a>Hinweise  
+ Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Tasks.TaskExtension>-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.Task>-Klasse erbt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  
   
-## Beispiel  
- Im folgenden Beispiel wird mithilfe der `FindUnderPath`\-Aufgabe ermittelt, ob die im `MyFiles`\-Element enthaltenen Dateien Pfade aufweisen, die dem von der `SearchPath`\-Eigenschaft angegebenen Pfad untergeordnet sind.  Nachdem Abschluss der Aufgabe enthält das `FilesNotFoundInPath`\-Element die Datei `File1.txt` und das `FilesFoundInPath`\-Element die Datei `File2.txt`.  
+## <a name="example"></a>Beispiel  
+ Im folgenden Beispiel wird die `FindUnderPath`-Aufgabe verwendet um zu bestimmen, ob die im `MyFiles`-Element enthaltenen Dateien über Pfade verfügen, die unter dem Pfad existieren, der von der `SearchPath`-Eigenschaft angegeben wird. Nach Abschluss der Aufgabe enthält das Element `FilesNotFoundInPath` die Datei `File1.txt`. Das Element `FilesFoundInPath` enthält die Datei `File2.txt`.  
   
-```  
+```xml  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
     <ItemGroup>  
         <MyFiles Include="C:\File1.txt" />  
@@ -74,7 +74,7 @@ Ermittelt, welche Elemente in der angegebenen Elementauflistung Pfade in dem ang
 </Project>  
 ```  
   
-## Siehe auch  
- [Task Reference](../msbuild/msbuild-task-reference.md)   
- [Tasks](../msbuild/msbuild-tasks.md)   
- [MSBuild Concepts](../msbuild/msbuild-concepts.md)
+## <a name="see-also"></a>Siehe auch  
+ [Task Reference](../msbuild/msbuild-task-reference.md)  (MSBuild-Aufgabenreferenz)  
+ [Tasks (Aufgaben)](../msbuild/msbuild-tasks.md)   
+ [MSBuild-Grundlagen](../msbuild/msbuild-concepts.md)

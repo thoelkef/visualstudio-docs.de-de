@@ -1,19 +1,17 @@
 ---
-title: Anpassen des Buildsystems
+title: Anpassen des Buildsystems | Microsoft-Dokumentation
 description: 
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: 6958B102-8527-4B40-BC65-3505DB63F9D3
+ms.openlocfilehash: 2d17a952c58e5ef7e593ee7aeb1980e09a376800
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
-ms.openlocfilehash: c261dbc285da6f488e6a328c997e2a9563c1c73a
-ms.contentlocale: de-de
-ms.lasthandoff: 08/11/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="customizing-the-build-system"></a>Anpassen des Buildsystems
 
 MSBuild ist ein von Microsoft entwickeltes Buildmodul, mit dem hauptsächlich .NET-Anwendungen erstellt werden können. Das Mono-Framework hat zudem seine eigene Implementierung des Buildmoduls von Microsoft mit dem Namen **xbuild**. xbuild wurde allerdings auslaufen gelassen, um auf allen Betriebssystemen Platz für MSBuild zu machen.
@@ -105,8 +103,7 @@ Durch den untenstehenden Codeabschnitt werde die iOS-Startbildschirme erstellt. 
 
 Schauen Sie sich die folgenden Ressourcen an, um mehr über MSBuild zu erfahren:
 
-* [MSDN – Übersicht](https://msdn.microsoft.com/en-us/library/dd393574.aspx)
-* [MSDN – Konzepte](https://msdn.microsoft.com/en-us/library/dd637714.aspx)
-
+* [MSDN – Übersicht](https://msdn.microsoft.com/library/dd393574.aspx)
+* [MSDN – Konzepte](https://msdn.microsoft.com/library/dd637714.aspx)
 
 

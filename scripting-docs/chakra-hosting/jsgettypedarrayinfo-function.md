@@ -1,22 +1,26 @@
 ---
-title: "JsGetTypedArrayInfo-Funktion | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: JsGetTypedArrayInfo-Funktion | Microsoft-Dokumentation
+ms.custom: 
+ms.date: 01/18/2017
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 992bc4e9-3d06-4ad2-8b6b-88a437360f81
-caps.latest.revision: 3
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 3
+caps.latest.revision: "3"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 44897f3960b09a110c1f1dd288f08bd5b9edc7ed
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# JsGetTypedArrayInfo-Funktion
+# <a name="jsgettypedarrayinfo-function"></a>JsGetTypedArrayInfo-Funktion
 Ruft häufig verwendete Eigenschaften eines typisierten Arrays ab.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 STDAPI_(JsErrorCode) JsGetTypedArrayInfo(  
@@ -29,7 +33,7 @@ STDAPI_(JsErrorCode) JsGetTypedArrayInfo(
   
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `typedArray`  
  Die Instanz des typisierten Arrays.  
   
@@ -37,22 +41,22 @@ STDAPI_(JsErrorCode) JsGetTypedArrayInfo(
  Der Typ des Arrays.  
   
  `arrayBuffer`  
- Der `ArrayBuffer`\-Speicherbereich des Arrays.  
+ Der `ArrayBuffer` -Speicherbereich des Arrays.  
   
  `byteOffset`  
- Der Offset in Bytes ab dem Anfang des Arraypuffers \(arrayBuffer\), auf den das Array verweist.  
+ Der Offset in Bytes ab dem Anfang des Arraypuffers (arrayBuffer), auf den das Array verweist.  
   
  `byteLength`  
  Die Anzahl der Bytes im Array.  
   
-## Rückgabewert  
- Der Code `JsNoError`, wenn der Vorgang erfolgreich war, andernfalls ein Fehlercode.  
+## <a name="return-value"></a>Rückgabewert  
+ Der Code `JsNoError` , wenn der Vorgang erfolgreich war, andernfalls ein Fehlercode.  
   
-## Hinweise  
- Erfordert einen Active Script\-Kontext.  
+## <a name="remarks"></a>Hinweise  
+ Erfordert einen Active Script-Kontext.  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  **Header:** jsrt.h  
   
-## Siehe auch  
- [Verweis \(JavaScript\-Laufzeit\)](../chakra-hosting/reference-javascript-runtime.md)
+## <a name="see-also"></a>Siehe auch  
+ [Referenz (JavaScript-Laufzeit)](../chakra-hosting/reference-javascript-runtime.md)

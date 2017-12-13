@@ -1,131 +1,87 @@
 ---
-title: Gehe zu | Microsoft-Dokumentation
+title: Suchen von Code mithilfe von Gehe-zu-Befehlen | Microsoft-Dokumentation
 ms.custom: 
-ms.date: 11/16/2016
+ms.date: 09/26/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 509b2107-23d1-4fb3-987f-ab99ef45b72e
+helpviewer_keywords:
+- code editor, go to
+- code editor, go to line
+- go to line
+- go to
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 3b812629bf0f655f39c35a56eb1b3ca9113303a6
-ms.openlocfilehash: 8bf6d49b21d128d15f5312fb230d4a8e7a8195af
-ms.contentlocale: de-de
-ms.lasthandoff: 03/01/2017
-
+ms.openlocfilehash: 15b222eaa3e03a44f99f64e86f9c88d125e41f98
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
+# <a name="find-code-using-go-to-commands"></a>Suchen von Code mithilfe von Gehe zu-Befehlen  
+Die **Gehe zu**-Befehle von Visual Studio führen eine zielgerichtete Suche in Ihrem Code aus, damit Sie angegebene Elemente schneller finden. Sie können über eine einfache und einheitliche Oberfläche zu einer bestimmten Zeile, einem bestimmten Typ, einem bestimmten Symbol oder einer bestimmten Datei gehen. Dieses Funktion ist in Visual Studio 2017 und höher vorhanden.  
 
-# <a name="go-to"></a>Gehe zu
-Es bieten sich viele Möglichkeiten zur komfortablen Navigation im Code innerhalb der Visual Studio IDE, sowohl mit der Tastatur als auch mit der Maus.
+### <a name="how-to-use-it"></a>Verwendungsweise  
 
-<!-- VERSIONLESS -->
-## <a name="go-to-all"></a>Gehe zu allen
-Dieses Funktion ist in Visual Studio 2017 und höher vorhanden.  Dies ermöglicht es Ihnen durch Ihren Code zu navigieren, um die bestimmten Bits zu finden, nach denen Sie suchen.  Sie können auf einer einfachen, einheitlichen Oberfläche nach einer bestimmten Zeile, einem Typ, einem Symbol, einer Datei und mehr suchen.
+Eingabe        | Funktion 
+------------ | ---
+**Tastatur** | Drücken Sie **STRG+T** oder **STRG+,**.     
+**Maus**    | Klicken Sie auf **Bearbeiten** > **Gehe zu** > **Go To All** (Gehe zu allen).  
 
-### <a name="how-to-use"></a>Verwendung
-* **Tastatur**
-  * Drücken Sie **STRG+,** oder **STRG+T**.  (Beachten Sie, dass Ihre Tastenkombination je nach dem gewählten Profil möglicherweise abweicht.)
-* **Maus**
-  * Wählen Sie **Bearbeiten > Gehe zu > Gehe zu allen** aus.
-
-Standardmäßig wird dadurch oben rechts in Ihrer IDE ein kleines Fenster angezeigt.
+Dadurch wird oben rechts in Ihrem Code-Editor ein kleines Fenster angezeigt.  
 
 ![Gehe zu allen](media/gotoall.png)
 
-An diesem Punkt bieten sich verschiedene Wege an:
-* Geben Sie Text für die Suche ohne Präfix mithilfe der [Filtersymbole](#filtered-searches) ein, die unter dem Textfeld ausgewählt sind.
-* Geben Sie ein [Präfix](#filtered-searches) ein, gefolgt von dem zu suchenden Text.
-* Geben Sie ein Fragezeichen (?) ein, um weitere Hilfe anzufordern.
-  ![Gehe zu allen – Hilfe](media/gotoall_help.png)
+Während der Eingabe in das Textfeld werden die Ergebnisse in einer Dropdownliste unterhalb des Textfelds angezeigt. Um zu einem Element zu wechseln, wählen Sie es in der Liste aus.    
 
-### <a name="filtered-searches"></a>Gefilterte Suchvorgänge
-Um Ihre Suche auf einen bestimmten Typ einzugrenzen, können Sie entweder während der Eingabe ein Präfix oder die Schaltfläche unterhalb des Suchfensters verwenden, wie unten dargestellt.
+![Fenster „Navigieren zu“](../ide/media/vside_navigatetowindow.png "Fenster „Navigieren zu“")  
+
+Sie können auch ein Fragezeichen (?) eingeben, um weitere Hilfe anzufordern.  
+
+  ![Gehe zu allen: Hilfe](media/gotoall_help.png)
+
+### <a name="filtered-searches"></a>Gefilterte Suchvorgänge  
+Standardmäßig wird das angegebene Element in allen Projektmappenelementen gesucht. Sie können jedoch die Codesuche auf bestimmte Elementtypen einschränken, indem Sie den Suchbegriffen bestimmte Zeichen voranstellen. Sie können auch schnell Suchfilter ändern, indem Sie Schaltflächen auf der Symbolleiste des Dialogfelds „Gehe zu“ auswählen. Schaltflächen zum Ändern der Typfilter befinden sich auf der linken Seite, und die Schaltflächen zum Ändern des Suchbereichs auf der rechten.  
+
+![Go to members (Elemente von „Gehe zu“)](../ide/media/vside_navigation_toolbar.png)
+
+#### <a name="filter-to-a-specific-type-of-code-element"></a>Filtern eines bestimmten Codeelementtyps  
+Um Ihre Suche auf einen bestimmten Typ von Codeelement einzugrenzen, können Sie entweder ein Präfix in das Suchfeld eingeben oder eines der fünf Filtersymbole auswählen:  
 
 Präfix | Symbol | Verknüpfung | Beschreibung
 :----: | ---- | -------- | ---
-#      | ![Zeichensymbol](media/gotoall_symbolicon.png) | STRG+1, STRG+S | Suchen von übereinstimmenden Symbolen
-f      | ![Dateisymbol](media/gotoall_fileicon.png)     | STRG+1, STRG+F | Übereinstimmende Dateinamen suchen
-m      | ![Membersymbol](media/gotoall_membericon.png) | STRG+1, STRG+M | Übereinstimmende Elemente suchen
-t      | ![Typsymbol](media/gotoall_typeicon.png)     | STRG+1, STRG+T | Übereinstimmende Typen suchen
-:      | ![Zeilensymbol](media/gotoall_lineicon.png)     | Strg+G         | Zu der eingegebenen Zeilennummer gehen
+\#      | ![Zeichensymbol](media/gotoall_symbolicon.png) | STRG+1, STRG+S | Zum angegebenen Symbol wechseln
+f      | ![Dateisymbol](media/gotoall_fileicon.png)     | STRG+1, STRG+F | Zur angegebenen Datei wechseln
+m      | ![Membersymbol](media/gotoall_membericon.png) | STRG+1, STRG+M | Zum angegebenen Member wechseln
+t      | ![Typsymbol](media/gotoall_typeicon.png)     | STRG+1, STRG+T | Zum angegebenen Typ wechseln
+:      | ![Zeilensymbol](media/gotoall_lineicon.png)     | STRG+G         | Zur angegebenen Zeilennummer wechseln
 
-### <a name="search-locations"></a>Speicherorte für die Suche
-Um die Suche auf bestimmte Speicherorte einzugrenzen, verwenden Sie die zwei Dokumentsymbole.
+#### <a name="filter-to-a-specific-location"></a>Filtern an einem bestimmten Speicherort    
+Um die Suche auf bestimmte Speicherorte einzugrenzen, wählen Sie eines der zwei Dokumentsymbole aus:  
 
 Symbol | Beschreibung
 ---- | ---
 ![Aktuelles Dokument](media/gotoall_currentdocument.png) | Nur im aktuellen Dokument suchen
-![Externe Dokumente](media/gotoall_external.png) | In externen Dokumenten suchen, zusätzlich zu den unter Projekt/Projektmappe gespeicherten
+![Externe Dokumente](media/gotoall_external.png) | In externen Dokumenten suchen, zusätzlich zu den unter Projekt/Projektmappe gespeicherten  
 
-### <a name="settings"></a>Einstellungen
-Klicken auf das Zahnradsymbol ![Zahnradsymbol](media/gotoall_gear.png) unten rechts ermöglicht Ihnen, die Funktionsweise diese Features zu ändern.
+### <a name="camel-casing"></a>Camel-Case-Schreibweise  
+Wenn Sie die [Camel-Case-Schreibweise](https://en.wikipedia.org/wiki/Camel_case) in Ihrem Code verwenden, können Sie Codeelemente schneller finden, indem Sie nur die Großbuchstaben des Codeelementnamens eingeben. Wenn Ihr Code beispielsweise über einen Typ namens `CredentialViewModel` verfügt, können Sie die Suche eingrenzen, indem Sie den Typfilter („t“) auswählen und anschließend nur die Großbuchstaben des Namens (`CVM`) in das „Gehe zu“-Dialogfeld eingeben. Diese Funktion ist nützlich, wenn der Code lange Namen aufweist.  
+
+![Fenster „Navigieren zu“ - Suchvorgänge mit Großbuchstaben](../ide/media/vside_capitalsearch.png)
+
+### <a name="settings"></a>Einstellungen  
+Über das Zahnradsymbol ![Zahnradsymbol](media/gotoall_gear.png) können Sie die Funktionsweise dieser Funktion ändern:  
 
 Einstellung | Beschreibung
 ------- | ---
 Vorschauregisterkarte verwenden | Das ausgewählte Element sofort auf der Vorschauregisterkarte der IDE anzeigen
 Details anzeigen    | Zeigt Projekt-, Datei-, Zeilen- und Zusammenfassungsinformationen aus Dokumentationskommentaren im Fenster an
-Fenster zentrieren   | Das Fenster in die Mitte der IDE verschieben, statt an die Standardposition oben rechts
-<!-- END VERSIONLESS -->
+Fenster zentrieren   | Verschieben Sie dieses Fenster in die Mitte des Code-Editors, statt an die Standardposition.   
 
-## <a name="go-to-definition"></a>Gehe zu Definition
-Zur Quelle eines Typs navigieren und das Ergebnis auf einer neuen Registerkarte öffnen:
-
-Eingabe        | Funktion 
------------- | ---
-**Tastatur** | Platzieren Sie den Textcursor an einer beliebigen Position innerhalb des Typnamens, und drücken Sie **F12**
-**Maus**    | Klicken Sie mit der rechten Maustaste auf den Typnamen, und wählen Sie **Gehe zu Definition** aus
-
-## <a name="peek-definition"></a>Peek-Definition
-Vorschau der Definition eines Typs in einem Popupfenster statt auf einer neuen Registerkarte:
-
-Eingabe        | Funktion 
------------- | ---
-**Tastatur** | Platzieren Sie den Textcursor an einer beliebigen Position innerhalb des Typnamens, und drücken Sie **ALT+F12**
-**Maus**    | Klicken Sie mit der rechten Maustaste auf den Typnamen, und wählen Sie **Definition einsehen** aus
-
-Wenn Sie im Popupfenster eine andere Definition einsehen möchten, können Sie einen Brotkrumenpfad beginnen, in dem Sie mithilfe der Kreise und Pfeile navigieren können, die oberhalb des Popups angezeigt werden.  Weitere Informationen finden Sie unter [Gewusst wie: Anzeigen und Bearbeiten von Code mithilfe von „Definition einsehen“ (Alt+F12)](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md).
-
-## <a name="go-to-implementation"></a>Gehe zu Implementierung
-Navigieren von einer Basisklasse oder einem Typ zu deren bzw. seinen Implementierungen.  Wenn mehrere Implementierungen vorhanden sind, sind sie im Fenster **Ergebnisse der Symbolsuche** aufgelistet:
-
-Eingabe        | Funktion 
------------- | ---
-**Tastatur** | Platzieren Sie den Textcursor an einer beliebigen Position innerhalb des Typnamens, und drücken Sie **STRG+F12**
-**Maus**    | Klicken Sie mit der rechten Maustaste auf den Typnamen, und wählen Sie **Gehe zu Implementierung** aus
-
-## <a name="find-all-references"></a>Alle Verweise suchen
-Alle Orte finden, an denen eine Methode/Eigenschaft/Variable verwendet wird.  Sie können dies verwenden, um auf toten Code zu prüfen und mögliche Nebenwirkungen eines umfangreichen Refactorings zu überprüfen.  Drücken Sie **F8**, um zwischen den Ergebnissen zu wechseln.
-
-Eingabe        | Funktion 
------------- | ---
-**Tastatur** | Platzieren Sie den Textcursor an einer beliebigen Position innerhalb des Typnamens, und drücken Sie **STRG+K, R**
-**Maus**    | Klicken Sie mit der rechten Maustaste auf den Typnamen, und wählen Sie **Alle Verweise suchen** aus
-
-## <a name="navigating-results"></a>Navigieren in den Ergebnissen
-Mithilfe der Navigationsfunktionen von Visual Studio können Sie im Stapel vorwärts und rückwärts suchen:
-
-Eingabe        | Funktion 
------------- | ---
-**STRG+-**          | Rückwärts durch den Stapel navigieren
-**STRG+UMSCHALT+-**    | Vorwärts durch den Stapel navigieren
-
-Sie können außerdem die Menüelemente **Ansicht > Rückwärts navigieren** und **Ansicht > Vorwärts navigieren** verwenden.
+## <a name="see-also"></a>Siehe auch  
+[Navigieren im Code](../ide/navigating-code.md)  
+[Go To Definition and Peek Definition („Gehe zu Definition“ und „Definition einsehen“)](../ide/go-to-and-peek-definition.md)  

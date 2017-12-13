@@ -1,27 +1,24 @@
 ---
 title: "Arbeitsbereiche in R Tools für Visual Studio | Microsoft-Dokumentation"
 ms.custom: 
-ms.date: 6/30/2017
+ms.date: 06/30/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-r
+ms.technology: devlang-r
 ms.devlang: r
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: d610279c-d6c3-4084-939a-bf042f64d4dd
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: 559f5832be6d4fa87be39941401f2222e075b7a7
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 712cc780388acc5e373f71d51fc8f1f42adb5bed
-ms.openlocfilehash: 4764fb9fc6b0cd2e6160540fdec3f33370d81128
-ms.contentlocale: de-de
-ms.lasthandoff: 07/12/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="controlling-where-r-code-runs-with-workspaces"></a>Steuern, wo R-Code mit Arbeitsbereichen ausgeführt wird
 
 Mit einem Arbeitsbereich in R Tools für Visual Studio (RTVS) lässt sich konfigurieren, wo eine R-Sitzung ausgeführt wird (lokal oder auf Remotecomputern). Das Ziel ist, Ihnen in beiden Fällen die Arbeit auf einer vergleichbaren Benutzeroberfläche zu ermöglichen, sodass Sie leistungsfähigere cloudbasierte Computer nutzen können.
@@ -37,6 +34,7 @@ In diesem Thema:
 - [Speichern und Zurücksetzen eines Arbeitsbereichs](#saving-and-resetting-a-workspace)
 - [Lokale Arbeitsbereiche](#local-workspaces)
 - [Remotearbeitsbereiche](#remote-workspaces)
+- [Anmeldung bei einem Remotearbeitsbereich](#remote-workspace-logon)
 - [Wechseln zwischen Arbeitsbereichen](#switching-between-workspaces)
 - [Verzeichnisse auf lokalen und Remotecomputern](#directories-on-local-and-remote-computers)
 - [Kopieren von Projektdateien in einen Remotearbeitsbereich](#copying-project-files-to-remote-workspaces)
@@ -75,6 +73,17 @@ Remotearbeitsbereiche werden nicht automatisch von Visual Studio erkannt. Deshal
 > [!Note]
 > Remotearbeitsbereiche befinden sich in der Vorschau. Wir arbeiten für ein künftiges Release an einer besseren Implementierung des Problems bei der Dateisynchronisierung und freuen uns über Ihre Ideen und Ihr Feedback.
 
+## <a name="remote-workspace-logon"></a>Anmeldung bei einem Remotearbeitsbereich
+
+Sie benötigen einen Benutzernamen und ein Kennwort, um sich im Remotearbeitsbereich anzumelden.
+
+### <a name="logon-to-windows-workspace"></a>Melden Sie sich im Windows-Arbeitsbereich an
+
+Wenn Ihr Remotecomputer für die Verwendung Ihres Domänenkontos eingerichtet ist, können Sie Ihre Domänenanmeldung verwenden, um Zugriff auf einen Remotearbeitsbereich zu erhalten. Wenn das nicht der Fall ist, müssen Sie das `machine-name\username`-Format für die Anmeldung über ein Computerkonto auf dem Remotecomputer verwenden.
+
+### <a name="logon-to-linux-workspace"></a>Anmeldung bei einem Linux-Arbeitsbereich
+
+Verwenden Sie das `<<unix>>\username`-Format, um sich bei einem Linux-Konto anzumelden. Wenn Sie zum Beispiel ein Konto mit dem Namen `ruser` besitzen, müssen Sie den Benutzernamen als `<<unix>>\ruser` eingeben.
 
 ## <a name="switching-between-workspaces"></a>Wechseln zwischen Arbeitsbereichen
 
@@ -139,4 +148,3 @@ Hier bestimmt die Eigenschaft **Transfer files on run** (Dateien bei der Ausfüh
 ## <a name="copying-files-from-a-remote-workspace"></a>Kopieren von Dateien aus einem Remotearbeitsbereich
 
 Wenn Ihr R-Skript auf dem Server Dateien generiert, können Sie diese Dateien mithilfe der `rtvs::fetch_file`-Funktion zurück auf den Client kopieren. Diese Funktion akzeptiert mindestens den Remotepfad zur Datei, die Sie auf den Computer kopieren möchten, und optional den Pfad auf Ihrem Computer. Wenn Sie keinen Pfad angeben, wird die Datei in den `%userprofile%\Downloads`-Ordner kopiert.
-

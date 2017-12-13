@@ -1,87 +1,87 @@
 ---
-title: "Befehl &quot;Suchen&quot; | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "edit.find"
-helpviewer_keywords: 
-  - "Edit.Find-Befehl"
-  - "Suchen (Befehl)"
+title: "Befehl „Suchen“ | Microsoft-Dokumentation"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: edit.find
+helpviewer_keywords:
+- Find command
+- Edit.Find command
 ms.assetid: f0c705dc-2b97-423d-abbf-5584d4827208
-caps.latest.revision: 12
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 93ec728b6e7ab3a197382bbd66cb34906d248747
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Befehl &quot;Suchen&quot;
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Durchsucht Dateien und verwendet dazu eine Teilmenge der Optionen auf der Registerkarte **In Dateien suchenSuchen und Ersetzen** Fensters verfügbar sind.  
+# <a name="find-command"></a>Befehl "Suchen"
+Durchsucht Dateien mit einem Teil der Optionen, die auf der Registerkarte **In Dateien suchen** im Fenster **Suchen und Ersetzen** verfügbar sind.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 Edit.Find findwhat [/case] [/doc | /proc | /open | /sel]   
 [/markall] [/options] [/reset] [/up] [/wild | /regex] [/word]  
 ```  
   
-## Argumente  
+## <a name="arguments"></a>Argumente  
  `findwhat`  
- Erforderlich.  Der Text für die Übereinstimmung.  
+ Erforderlich. Der Text, für den eine Übereinstimmung ermittelt werden soll.  
   
-## Schalter  
- **\/case** oder **\/c**  
- Optional.  Übereinstimmungen werden nur gefunden, wenn die Groß\- und Kleinbuchstaben den Angaben im `findwhat`\-Argument exakt entsprechen.  
+## <a name="switches"></a>Schalter  
+ /case oder /c  
+ Dies ist optional. Übereinstimmungen treten nur auf, wenn die groß und klein geschriebenen Zeichen den im `findwhat`-Argument angegebenen Zeichen entsprechen.  
   
- **\/doc** oder **\/d**  
- Optional.  Durchsucht nur das aktuelle Dokument.  Geben Sie nur einen der verfügbaren Suchbereiche an: `/doc`, `/proc`, `/open` oder `/sel`.  
+ /doc oder/d  
+ Dies ist optional. Sucht nur im aktuellen Dokument. Geben Sie nur einen der verfügbaren Suchbereiche an (`/doc`, `/proc`, `/open` oder `/sel`).  
   
- **\/markall** oder **\/m**  
- Optional.  Platziert eine Grafik in jeder Zeile, die eine Suchübereinstimmung mit dem aktuellen Dokument aufweist.  
+ /markall oder /m  
+ Dies ist optional. Platziert einen Graphen in jeder Zeile, die eine Suchübereinstimmung im aktuellen Dokument enthält.  
   
- **\/open** oder **\/o**  
- Optional.  Durchsucht alle geöffneten Dokumente wie ein einzelnes Dokument.  Geben Sie nur einen der verfügbaren Suchbereiche an: `/doc`, `/proc`, `/open` oder `/sel`.  
+ /open oder /o  
+ Dies ist optional. Sucht in allen geöffneten Dokumenten, als wären sie ein einziges Dokument. Geben Sie nur einen der verfügbaren Suchbereiche an (`/doc`, `/proc`, `/open` oder `/sel`).  
   
- **\/options** oder **\/t**  
- Optional.  Zeigt eine Liste der aktuellen Einstellungen für Suchoptionen an, ohne eine Suche zu starten.  
+ /options oder /t  
+ Dies ist optional. Zeigt eine Liste der aktuellen Optionseinstellungen für die Suche an und führt keine Suche aus.  
   
- **\/proc** oder **\/p**  
- Optional.  Durchsucht nur die aktuelle Prozedur.  Geben Sie nur einen der verfügbaren Suchbereiche an: `/doc`, `/proc`, `/open` oder `/sel`.  
+ /proc oder /p  
+ Dies ist optional. Sucht nur in der aktuellen Prozedur. Geben Sie nur einen der verfügbaren Suchbereiche an (`/doc`, `/proc`, `/open` oder `/sel`).  
   
- **\/reset** oder **\/e**  
- Optional.  Setzt die Suchoptionen auf ihre Standardeinstellungen zurück und führt keinen Suchlauf aus.  
+ /reset oder /e  
+ Dies ist optional. Legt die Suchoptionen wieder auf die Standardeinstellungen fest und führt keine Suche aus.  
   
- **\/sel** oder **\/s**  
- Optional.  Durchsucht nur die aktuelle Auswahl.  Geben Sie nur einen der verfügbaren Suchbereiche an: `/doc`, `/proc`, `/open` oder `/sel`.  
+ /sel oder /s  
+ Dies ist optional. Sucht nur in der aktuellen Auswahl. Geben Sie nur einen der verfügbaren Suchbereiche an (`/doc`, `/proc`, `/open` oder `/sel`).  
   
- **\/up** oder **\/u**  
- Optional.  Sucht von der aktuellen Position in der Datei aufwärts bis zum Anfang der Datei.  Standardmäßig beginnen Suchläufe an der aktuellen Position in der Datei, und es erfolgt eine Suche bis zum Ende der Datei.  
+ /up oder /u  
+ Dies ist optional. Sucht von der aktuellen Position in der Datei bis zum Anfang der Datei. Standardmäßig beginnt die Suche bei der aktuellen Position in der Datei und wird bis zum Ende der Datei ausgeführt.  
   
- **\/regex** oder **\/r**  
- Optional.  Verwendet vordefinierte Sonderzeichen im `findwhat`\-Argument als Notationen, die Textmuster anstelle von literalen Zeichen darstellen.  Eine vollständige Liste der für reguläre Ausdrücke gültigen Zeichen finden Sie unter [Reguläre Ausdrücke](../../ide/using-regular-expressions-in-visual-studio.md).  
+ /regex oder /r  
+ Dies ist optional. Verwendet vordefinierte Sonderzeichen im `findwhat`-Argument als Notationen, die Textmuster und keine Literalzeichen darstellen. Eine vollständige Liste von Zeichen für reguläre Ausdrücke finden Sie unter [Reguläre Ausdrücke](../../ide/using-regular-expressions-in-visual-studio.md).  
   
- **\/wild** oder **\/l**  
- Optional.  Verwendet vordefinierte Sonderzeichen im `findwhat`\-Argument als Notationen, um ein Zeichen oder eine Zeichenfolge darzustellen.  
+ /wild oder /l  
+ Dies ist optional. Verwendet vordefinierte Sonderzeichen im `findwhat`-Argument als Notationen, um ein Zeichen oder eine Abfolge von Zeichen darzustellen.  
   
- **\/word** oder **\/w**  
- Optional.  Sucht nur nach ganzen Wörtern.  
+ /word oder /w  
+ Dies ist optional. Sucht nur nach ganzen Wörtern  
   
-## Beispiel  
- In diesem Beispiel wird in dem momentan im Code markierten Bereich eine Suche nach dem Wort **somestring** unter Berücksichtigung der Groß\-\/Kleinschreibung durchgeführt.  
+## <a name="example"></a>Beispiel  
+ In diesem Beispiel wird eine Suche mit Berücksichtigung der Groß- und Kleinschreibung nach dem Wort „Somestring“ im aktuell ausgewählten Codeabschnitt ausgeführt.  
   
 ```  
 >Edit.Find somestring /sel /case  
 ```  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Befehlsfenster](../../ide/reference/command-window.md)   
- [Such\/Befehlsfeld](../../ide/find-command-box.md)   
- [Visual Studio\-Befehle](../../ide/reference/visual-studio-commands.md)   
- [Visual Studio\-Befehlsaliase](../../ide/reference/visual-studio-command-aliases.md)
+ [Such-/Befehlsfeld](../../ide/find-command-box.md)   
+ [Visual Studio-Befehle](../../ide/reference/visual-studio-commands.md)   
+ [Visual Studio-Befehlsaliase](../../ide/reference/visual-studio-command-aliases.md)

@@ -1,46 +1,46 @@
 ---
-title: "Seite &quot;My-Erweiterungen&quot;, Projekt-Designer (Visual Basic) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vb.ProjectPropertiesMyExtensions"
-helpviewer_keywords: 
-  - "Projekt-Designer, Seite „My-Erweiterungen“"
-  - "My-Erweiterungen-Seite im Projekt-Designer"
+title: "Seite „My-Erweiterungen“, Projekt-Designer (Visual Basic) | Microsoft-Dokumentation"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vb.ProjectPropertiesMyExtensions
+helpviewer_keywords:
+- Project Designer, My Extensions page
+- My Extensions page in Project Designer
 ms.assetid: 2f08494e-84c1-444b-872b-900fbbcf0364
-caps.latest.revision: 6
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 6
+caps.latest.revision: "6"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: b95a691f3246fd3745ce90bffa7967bd5ad52d31
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Seite &quot;My-Erweiterungen&quot;, Projekt-Designer (Visual Basic)
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Verwenden Sie die Seite **My\-Erweiterungen** im **Projekt\-Designer**, um `My`\-Namespaceerweiterungen im Projekt zu verwalten.  Über `My`\-Namespaceerweiterungen können Sie den `My`\-Namespace anpassen, indem Sie eigene benutzerdefinierte Member hinzufügen.  Informationen über das Erstellen benutzerdefinierter `My`\-Namespaceerweiterungen finden Sie unter [Extending the My Namespace in Visual Basic](/dotnet/visual-basic/developing-apps/customizing-extending-my/extending-the-my-namespace).  
+# <a name="my-extensions-page-project-designer-visual-basic"></a>Seite "My-Erweiterungen", Projekt-Designer (Visual Basic)
+Verwenden Sie die Seite **My-Erweiterungen** des **Projekt-Designers**, um `My`-Namespaceerweiterungen in Ihrem Projekt zu verwalten. Mithilfe von `My`-Namespaceerweiterungen können Sie den `My`-Namespace so anpassen, dass Ihre eigenen benutzerdefinierten Member hinzugefügt werden. Informationen zum Erstellen der benutzerdefinierten `My`-Namespaceerweiterungen finden Sie unter [Erweitern des My-Namespaces in Visual Basic](/dotnet/visual-basic/developing-apps/customizing-extending-my/extending-the-my-namespace).  
   
- Um auf die Seite **My\-Erweiterungen** zuzugreifen, doppelklicken Sie für den Projektknoten im **Projektmappen\-Explorer** auf **Mein Projekt**.  Sobald der **Projekt\-Designer** angezeigt wird, klicken Sie auf die Registerkarte **My\-Erweiterungen**.  
+ Um auf die Seite **My-Erweiterungen** zuzugreifen, doppelklicken Sie für Ihren Projektknoten im **Projektmappen-Explorer** auf **Mein Projekt**. Sobald der **Projekt-Designer** angezeigt wird, klicken Sie auf die Registerkarte **My-Erweiterungen**.  
   
-## UIElement-Liste  
- Die folgenden Optionen ermöglichen es Ihnen, `My`\-Namespaceerweiterungen im Projekt hinzuzufügen oder zu entfernen.  Eine `My`\-Namespaceerweiterung muss erst als Visual Studio\-Elementvorlage installiert werden, damit sie hinzugefügt werden kann.  Informationen über die Veröffentlichung und Installation von `My`\-Namespaceerweiterungen finden Sie unter [Packaging and Deploying Custom My Extensions](/dotnet/visual-basic/developing-apps/customizing-extending-my/packaging-and-deploying-custom-my-extensions).  
+## <a name="uielement-list"></a>UIElement-Liste  
+ Mithilfe der folgenden Optionen können Sie die `My`-Namespaceerweiterungen Ihrem Projekt hinzufügen oder aus diesem entfernen. Eine `My`-Namespaceerweiterung muss zunächst als Visual Studio-Elementvorlage installiert werden, damit sie verfügbar ist und hinzugefügt werden kann. Informationen zur Veröffentlichung und Installation von `My`-Namespaceerweiterungen finden Sie unter [Packen und Bereitstellen von benutzerdefinierten My-Erweiterungen](/dotnet/visual-basic/developing-apps/customizing-extending-my/packaging-and-deploying-custom-my-extensions).  
   
- **My\-Namespaceerweiterungen**  
- Diese Liste enthält alle im Projekt installierten `My`\-Namespaceerweiterungen.  
+ **My-Namespaceerweiterungen**  
+ In dieser Liste sind alle in dem Projekt installierten `My`-Namespaceerweiterungen aufgelistet.  
   
  **Erweiterung hinzufügen**  
- Klicken Sie auf diese Schaltfläche, um dem Projekt eine installierte `My`\-Namespaceerweiterung hinzuzufügen.  Eine Liste aller möglichen `My`\-Namespaceerweiterungen wird angezeigt.  Wählen Sie die `My`\-Namespaceerweiterung, die Sie dem Projekt hinzufügen möchten, und klicken Sie zum Hinzufügen auf **OK**.  
+ Klicken Sie auf diese Schaltfläche, um Ihrem Projekt eine installierte `My`-Namespaceerweiterung hinzuzufügen. Es wird eine Liste aller möglichen `My`-Namespaceerweiterungen angezeigt. Wählen Sie die `My`-Namespaceerweiterung aus, die Sie Ihrem Projekt hinzufügen möchten, und klicken Sie auf **OK**, um sie hinzuzufügen.  
   
  **Erweiterung entfernen**  
- Wählen Sie aus der Liste **My\-Namespaceerweiterungen** einen oder mehrere Verweise aus, und klicken Sie dann auf diese Schaltfläche, um die `My`\-Namespaceerweiterung aus dem Projekt zu entfernen.  
+ Wählen Sie mindestens einen Verweis in der Liste **My-Namespaceerweiterungen** aus, und klicken Sie dann auf diese Schaltfläche, um die `My`-Namespaceerweiterung aus dem Projekt zu entfernen.  
   
-## Siehe auch  
- [Extending the My Namespace in Visual Basic](/dotnet/visual-basic/developing-apps/customizing-extending-my/extending-the-my-namespace)   
- [Packaging and Deploying Custom My Extensions](/dotnet/visual-basic/developing-apps/customizing-extending-my/packaging-and-deploying-custom-my-extensions)   
- [Extending the Visual Basic Application Model](/dotnet/visual-basic/developing-apps/customizing-extending-my/extending-the-visual-basic-application-model)   
- [Customizing Which Objects are Available in My](/dotnet/visual-basic/developing-apps/customizing-extending-my/customizing-which-objects-are-available-in-my)
+## <a name="see-also"></a>Siehe auch  
+ [Erweitern des My-Namespaces in Visual Basic](/dotnet/visual-basic/developing-apps/customizing-extending-my/extending-the-my-namespace)   
+ [Packen und Bereitstellen von benutzerdefinierten My-Erweiterungen](/dotnet/visual-basic/developing-apps/customizing-extending-my/packaging-and-deploying-custom-my-extensions)   
+ [Erweitern des Visual Basic-Anwendungsmodells](/dotnet/visual-basic/developing-apps/customizing-extending-my/extending-the-visual-basic-application-model)   
+ [Anpassen der verfügbaren Objekte in „My“](/dotnet/visual-basic/developing-apps/customizing-extending-my/customizing-which-objects-are-available-in-my)

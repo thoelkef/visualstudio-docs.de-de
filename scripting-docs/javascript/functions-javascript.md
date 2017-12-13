@@ -1,49 +1,51 @@
 ---
-title: "Funktionen (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "systeminterne JavaScript-Funktionen"
+title: Funktionen (JavaScript) | Microsoft-Dokumentation
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords: intrinsic JavaScript functions
 ms.assetid: e2a72b5a-3edd-43d8-95e8-91721b38c1c1
-caps.latest.revision: 24
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 24
+caps.latest.revision: "24"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: fd5626af6417b5f0010545874bd15c86b30a303a
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# Funktionen (JavaScript)
-[!INCLUDE[javascript](../javascript/includes/javascript-md.md)]\-Funktionen führen Aktionen aus; sie können auch Werte zurückgeben.  Manchmal handelt es sich dabei um Ergebnisse von Berechnungen oder Vergleichen.  Funktionen werden auch als „globale Methoden“ bezeichnet.  
+# <a name="functions-javascript"></a>Funktionen (JavaScript)
+[!INCLUDE[javascript](../javascript/includes/javascript-md.md)]-Funktionen führen Aktionen aus; sie können auch Werte zurückgeben. Manchmal handelt es sich dabei um Ergebnisse von Berechnungen oder Vergleichen. Funktionen werden auch als „globale Methoden“ bezeichnet.  
   
- Funktionen vereinen mehrere Vorgänge unter einem einzigen Namen.  Auf diese Weise können Sie den Code optimieren.  Sie können einen Satz Anweisungen schreiben, ihn benennen und dann den gesamten Anweisungssatz ausführen, indem Sie ihn aufrufen und alle erforderlichen Daten an ihn übergeben.  
+ Funktionen vereinen mehrere Vorgänge unter einem einzigen Namen. Auf diese Weise können Sie den Code optimieren. Sie können einen Satz Anweisungen schreiben, ihn benennen und dann den gesamten Anweisungssatz ausführen, indem Sie ihn aufrufen und alle erforderlichen Daten an ihn übergeben.  
   
- Sie übergeben Informationen an eine Funktion, indem Sie die Informationen nach dem Namen der Funktion in Klammern einschließen.  An eine Funktion übergebene Informationen werden als Argumente oder Parameter bezeichnet.  Manche Funktionen akzeptieren überhaupt keine Argumente, während andere ein oder mehrere Argumente verwenden können.  Bei einigen Funktionen hängt die Anzahl der Argumente davon ab, wie Sie die Funktion verwenden.  
+ Sie übergeben Informationen an eine Funktion, indem Sie die Informationen nach dem Namen der Funktion in Klammern einschließen. An eine Funktion übergebene Informationen werden als Argumente oder Parameter bezeichnet. Manche Funktionen akzeptieren überhaupt keine Argumente, während andere ein oder mehrere Argumente verwenden können. Bei einigen Funktionen hängt die Anzahl der Argumente davon ab, wie Sie die Funktion verwenden.  
   
  [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] unterstützt zwei Arten von Funktionen: in die Sprache integrierte und vom Benutzer erstellte Funktionen.  
   
-## Integrierte Funktionen  
- Die [!INCLUDE[javascript](../javascript/includes/javascript-md.md)]\-Sprache enthält mehrere integrierte Funktionen.  Mit einigen dieser Funktionen können Sie Ausdrücke und Sonderzeichen verarbeiten, während andere Zeichenfolgen in numerische Werte konvertieren.  
+## <a name="built-in-functions"></a>Integrierte Funktionen  
+ Die [!INCLUDE[javascript](../javascript/includes/javascript-md.md)]-Sprache enthält mehrere integrierte Funktionen. Mit einigen dieser Funktionen können Sie Ausdrücke und Sonderzeichen verarbeiten, während andere Zeichenfolgen in numerische Werte konvertieren.  
   
- Informationen zu diesen integrierten Funktionen finden Sie unter [JavaScript\-Methoden](../javascript/reference/javascript-methods.md)  
+ Informationen zu diesen integrierten Funktionen finden Sie unter [JavaScript-Methoden](../javascript/reference/javascript-methods.md).  
   
-## Erstellen eigener Funktionen  
- Sie können eigene Funktionen erstellen und dort einsetzen, wo Sie sie benötigen.  Eine Funktionsdefinition besteht aus einer Funktionsanweisung und einem Block von [!INCLUDE[javascript](../javascript/includes/javascript-md.md)]\-Anweisungen.  
+## <a name="creating-your-own-functions"></a>Erstellen eigener Funktionen  
+ Sie können eigene Funktionen erstellen und dort einsetzen, wo Sie sie benötigen. Eine Funktionsdefinition besteht aus einer Funktionsanweisung und einem Block von [!INCLUDE[javascript](../javascript/includes/javascript-md.md)]-Anweisungen.  
   
- Die **checkTriplet**\-Funktion im folgenden Beispiel verwendet als Argumente die Seitenlängen eines Dreiecks.  Mit diesen Informationen berechnet die Funktion, ob es sich um ein rechtwinkliges Dreieck handelt. Dazu wird geprüft, ob die drei Zahlen den Satz des Pythagoras erfüllen \(das Quadrat der Länge der Hypotenuse eines rechtwinkligen Dreiecks ist gleich der Summe der Quadrate der beiden anderen Seiten\).  Die checkTriplet\-Funktion ruft eine von zwei weiteren Funktionen auf, um diesen Test durchzuführen.  
+ Die **checkTriplet**-Funktion im folgenden Beispiel verwendet als Argumente die Seitenlängen eines Dreiecks. Mit diesen Informationen berechnet die Funktion, ob es sich um ein rechtwinkliges Dreieck handelt. Dazu wird geprüft, ob die drei Zahlen den Satz des Pythagoras erfüllen (das Quadrat der Länge der Hypotenuse eines rechtwinkligen Dreiecks ist gleich der Summe der Quadrate der beiden anderen Seiten). Die checkTriplet-Funktion ruft eine von zwei weiteren Funktionen auf, um diesen Test durchzuführen.  
   
- Beachten Sie die Verwendung einer sehr kleinen Zahl \(„epsilon“\) als Testvariable in der Gleitkommaversion des Tests.  Wenn die Werte keine ganzen Zahlen sind, ist es aufgrund der bei Gleitkommaberechnungen auftretenden Ungenauigkeiten und Rundungsfehler nicht ratsam, direkt zu testen, ob die drei Zahlen den Satz des Pythagoras erfüllen.  Da ein direkter Test ein genaueres Ergebnis liefert, wird mit dem Code im folgenden Beispiel zunächst festgestellt, ob der direkte Test geeignet ist, dann wird der Test ggf. ausgeführt.  
+ Beachten Sie die Verwendung einer sehr kleinen Zahl („epsilon“) als Testvariable in der Gleitkommaversion des Tests. Wenn die Werte keine ganzen Zahlen sind, ist es aufgrund der bei Gleitkommaberechnungen auftretenden Ungenauigkeiten und Rundungsfehler nicht ratsam, direkt zu testen, ob die drei Zahlen den Satz des Pythagoras erfüllen. Da ein direkter Test ein genaueres Ergebnis liefert, wird mit dem Code im folgenden Beispiel zunächst festgestellt, ob der direkte Test geeignet ist, dann wird der Test ggf. ausgeführt.  
   
-```javascript  
+```JavaScript  
 var epsilon = 0.00000000001; // Some very small number to test against.  
   
 // The test function for integers.  
@@ -119,23 +121,23 @@ var result = checkTriplet(sideA, sideB, sideC);
 ```  
   
 <a name="Arrow"></a>   
-## Pfeilfunktionen  
- Die Pfeilfunktionssyntax `=>` stellt eine Kurzmethode zur Angabe einer anonymen Funktion dar.  Die Pfeilfunktionssyntax sieht folgendermaßen aus.  
+## <a name="arrow-functions"></a>Pfeilfunktionen  
+ Die Pfeilfunktionssyntax `=>` stellt eine Kurzmethode zur Angabe einer anonymen Funktion dar. Die Pfeilfunktionssyntax sieht folgendermaßen aus.  
   
-```javascript  
+```JavaScript  
 ([arg] [, arg]) => {  
     statements  
 }  
 ```  
   
- Werte auf der linken Seite des Pfeils, die in Klammern eingeschlossen sein können, geben die an die Funktion übergebenen Argumente an.  Für ein einzelnes Funktionsargument sind keine Klammern erforderlich.  Klammern sind erforderlich, wenn keine Argumente übergeben werden.  Die Funktionsdefinition auf der rechten Seite des Pfeils kann entweder ein Ausdruck sein, z. B. `v + 1`, oder ein Block von Anweisungen, die in geschweifte Klammern \({}\) eingeschlossen sind.  
+ Werte auf der linken Seite des Pfeils, die in Klammern eingeschlossen sein können, geben die an die Funktion übergebenen Argumente an. Für ein einzelnes Funktionsargument sind keine Klammern erforderlich. Klammern sind erforderlich, wenn keine Argumente übergeben werden. Die Funktionsdefinition auf der rechten Seite des Pfeils kann entweder ein Ausdruck sein, z. B. `v + 1`, oder ein Block von Anweisungen, die in geschweifte Klammern ({}) eingeschlossen sind.  
   
 > [!IMPORTANT]
 >  Die Pfeilfunktionssyntax wird nur in [!INCLUDE[jsv12text](../javascript/includes/jsv12text-md.md)] unterstützt.  
   
- Der `new`\-Operator kann für eine Pfeilfunktion nicht verwendet werden.  
+ Der `new`-Operator kann für eine Pfeilfunktion nicht verwendet werden.  
   
- Die folgenden Codebeispiele veranschaulichen die Verwendung der Pfeilfunktion mit Ausdrücken als Funktionsdefinitionen.  Im ersten Beispiel wird „v“ als Argument an den Ausdruck übergeben.  Im zweiten Beispiel werden „v“ und „i“ als Argumente an den Ausdruck übergeben.  
+ Die folgenden Codebeispiele veranschaulichen die Verwendung der Pfeilfunktion mit Ausdrücken als Funktionsdefinitionen. Im ersten Beispiel wird „v“ als Argument an den Ausdruck übergeben. Im zweiten Beispiel werden „v“ und „i“ als Argumente an den Ausdruck übergeben.  
   
 ```  
 var evens = [2, 4, 6, 8];  
@@ -163,7 +165,7 @@ console.log(nums);
   
  Das folgende Codebeispiel veranschaulicht die Verwendung der Pfeilfunktion mit einem Anweisungsblock.  
   
-```javascript  
+```JavaScript  
 var fives = new Array();  
   
 // Statement block, re-using nums array from previous example.  
@@ -180,11 +182,11 @@ console.log(fives);
 // [object Array] [5]  
 ```  
   
- Im Gegensatz zu Standardfunktionen verwenden Pfeilfunktionen das gleiche lexikalische `this`\-Objekt wie der umgebende Code, wodurch die Notwendigkeit von Problemumgehungen wie z. B. `var self = this;` entfallen kann.  
+ Im Gegensatz zu Standardfunktionen verwenden Pfeilfunktionen das gleiche lexikalische `this`-Objekt wie der umgebende Code, wodurch die Notwendigkeit von Problemumgehungen wie z. B. `var self = this;` entfallen kann.  
   
- Das folgende Beispiel zeigt, dass der Wert des `this`\-Objekts innerhalb der Pfeilfunktion identisch mit dem Wert im umgebenden Code ist \(er verweist immer noch auf die `bob`\-Variable\).  
+ Das folgende Beispiel zeigt, dass der Wert des `this`-Objekts innerhalb der Pfeilfunktion identisch mit dem Wert im umgebenden Code ist (er verweist immer noch auf die `bob`-Variable).  
   
-```javascript  
+```JavaScript  
 var bob = {  
   _name: "Bob",  
   _friends: ["Pete", "Joe", "Larry"],  
@@ -200,18 +202,18 @@ var bob = {
 // Bob knows Larry  
 ```  
   
- Pfeilfunktionen verwenden auch das gleiche lexikalische `arguments`\-Objekt wie der umgebende Code \(ebenso wie das `this`\-Objekt\).  
+ Pfeilfunktionen verwenden auch das gleiche lexikalische `arguments`-Objekt wie der umgebende Code (ebenso wie das `this`-Objekt).  
   
 <a name="Default"></a>   
-## Standardparameter  
- Sie können einen Standardwert für einen Parameter in einer Funktion angeben, indem Sie ihm einen Anfangswert zuweisen.  Der Standardwert kann ein konstanter Wert oder ein Ausdruck sein.  
+## <a name="default-parameters"></a>Standardparameter  
+ Sie können einen Standardwert für einen Parameter in einer Funktion angeben, indem Sie ihm einen Anfangswert zuweisen. Der Standardwert kann ein konstanter Wert oder ein Ausdruck sein.  
   
 > [!IMPORTANT]
 >  Standardparameter werden nur in [!INCLUDE[jsv12textExp](../javascript/includes/jsv12textexp-md.md)] unterstützt.  
   
- Im folgenden Beispiel hat „y“ den Standardwert 10 und „z“ den Standardwert 20.  Die Funktion verwendet 10 als Wert von „y“, es sei denn, die aufrufende Funktion übergibt einen eindeutigen \(oder nicht definierten\) Wert als zweites Argument.  Die Funktion verwendet 20 als Wert von „z“, es sei denn, die aufrufende Funktion übergibt einen eindeutigen \(oder nicht definierten\) Wert als drittes Argument.  
+ Im folgenden Beispiel hat „y“ den Standardwert 10 und „z“ den Standardwert 20. Die Funktion verwendet 10 als Wert von „y“, es sei denn, die aufrufende Funktion übergibt einen eindeutigen (oder nicht definierten) Wert als zweites Argument. Die Funktion verwendet 20 als Wert von „z“, es sei denn, die aufrufende Funktion übergibt einen eindeutigen (oder nicht definierten) Wert als drittes Argument.  
   
-```javascript  
+```JavaScript  
 var val = 20;  
   
 function f(x, y=10, z=val) {  
@@ -229,21 +231,21 @@ console.log(f(3, 3, 3));
 ```  
   
 <a name="Rest"></a>   
-## Rest\-Parameter  
- Rest\-Parameter werden durch den Spread\-Operator \(                       ``  \) angegeben, und ermöglichen es, aufeinander folgende Argumente in einem Funktionsaufruf in ein Array umzuwandeln.  
+## <a name="rest-parameters"></a>Rest-Parameter  
+ Mit Rest-Parametern, die durch den Spread-Operator () angegeben werden, können Sie aufeinanderfolgende Argumente in einem Funktionsaufruf in einen Array umwandeln.  
   
- Rest\-Parameter machen das `arguments`\-Objekt überflüssig.  Rest\-Parameter unterscheiden sich in mehrerer Hinsicht vom `arguments`\-Objekt, z. B.:  
+ Rest-Parameter machen das `arguments`-Objekt überflüssig. Rest-Parameter unterscheiden sich in mehrerer Hinsicht vom `arguments`-Objekt, z. B.:  
   
--   Ein Rest\-Parameter ist eine tatsächliche Arrayinstanz und unterstützt deshalb Vorgänge, die für ein Array ausgeführt werden können.  
+-   Ein Rest-Parameter ist eine tatsächliche Arrayinstanz und unterstützt deshalb Vorgänge, die für ein Array ausgeführt werden können.  
   
--   Ein Rest\-Parameter enthält nur die aufeinander folgenden Argumente, die nicht als separate \(benannte\) Argumente übergeben werden \(im Gegensatz dazu enthält das `arguments`\-Objekt alle Argumente, die an die Funktion übergeben werden\).  
+-   Ein Rest-Parameter enthält nur die aufeinander folgenden Argumente, die nicht als separate (benannte) Argumente übergeben werden (im Gegensatz dazu enthält das `arguments`-Objekt alle Argumente, die an die Funktion übergeben werden).  
   
 > [!IMPORTANT]
->  Rest\-Parameter und der Spread\-Operator werden nur in [!INCLUDE[jsv12text](../javascript/includes/jsv12text-md.md)] unterstützt.  
+>  Rest-Parameter und der Spread-Operator werden nur in [!INCLUDE[jsv12text](../javascript/includes/jsv12text-md.md)] unterstützt.  
   
- Im folgenden Codebeispiel werden „hello“ und „true“ als Arraywerte übergeben und im y\-Parameter gespeichert.  Der Rest\-Parameter muss der letzte Parameter der Funktion sein.  
+ Im folgenden Codebeispiel werden „hello“ und „true“ als Arraywerte übergeben und im y-Parameter gespeichert. Der Rest-Parameter muss der letzte Parameter der Funktion sein.  
   
-```javascript  
+```JavaScript  
 function f(x, ...y) {  
   // y is an array.  
   return x * y.length;  
@@ -256,7 +258,7 @@ console.log(f(3, "hello", true));
   
 ```  
   
- Weitere Verwendungsmöglichkeiten des Spread\-Operators werden unter [Spread\-Operator](../javascript/reference/spread-operator-decrement-dot-dot-dot-javascript.md) erläutert.  
+ Weitere Verwendungsmöglichkeiten des Spread-Operators werden unter [Spread-Operator](../javascript/reference/spread-operator-decrement-dot-dot-dot-javascript.md) erläutert.  
   
-## Siehe auch  
- [JavaScript\-Sprachreferenz](../javascript/javascript-language-reference.md)
+## <a name="see-also"></a>Siehe auch  
+ [JavaScript-Sprachreferenz](../javascript/javascript-language-reference.md)

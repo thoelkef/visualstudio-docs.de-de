@@ -1,19 +1,17 @@
 ---
-title: "Visual Studio für Mac: Überblick"
+title: "Visual Studio für Mac – Überblick | Microsoft-Dokumentation"
 description: "Visual Studio für Mac bietet eine integrierte Entwicklungsumgebung zum Erstellen von .NET-Anwendungen unter macOS. Dazu gehören ASP.NET Core-Websites und Xamarin-Projekte für iOS, Android, Mac und Xamarin.Forms."
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
+ms.openlocfilehash: 0f8f3ba04d4e5a8949bc57cb8cf61d470690d786
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
-ms.openlocfilehash: 04f7ec6474aafedeccdbbf704486c431a4258f61
-ms.contentlocale: de-de
-ms.lasthandoff: 08/11/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="visual-studio-for-mac-tour"></a>Visual Studio für Mac: Überblick
 
 Visual Studio für Mac entwickelt die für mobile Geräte konzipierte IDE von Xamarin, Xamarin Studio, zu einer Mobile-First-, Cloud-First-Entwicklungsumgebung auf dem Mac weiter. Mit diesem auf Entwickler ausgerichteten Tool können Sie die Leistung von .NET nutzen, um Anwendungen für alle Plattformen zu erstellen, die Ihr Benutzer benötigt.

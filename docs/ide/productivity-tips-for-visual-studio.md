@@ -4,35 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: ccc5e543-7dcf-465c-97dd-e133e869800c
-caps.latest.revision: 28
-author: kempb
-ms.author: kempb
+caps.latest.revision: "28"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
-ms.openlocfilehash: cc0ac8b3418c725579b25712e14c373028fca339
-ms.contentlocale: de-de
-ms.lasthandoff: 05/24/2017
-
+ms.openlocfilehash: f4778bde9903ce3e264f0209c147eedc227b7d8d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Produktivitätstipps für Visual Studio
 Wenn Sie diese Tipps befolgen, können Sie den Code in Visual Studio schneller und effizienter schreiben und debuggen sowie in diesem navigieren. Weitere Informationen zu häufig verwendeten Tastenkombinationen finden Sie unter [Tipps und Tricks](../ide/tips-and-tricks-for-visual-studio.md). Eine detailliertere Liste finden Sie unter [Finden und Anpassen von Tastenkombinationen](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md) und [Standardtastenkombinationen](../ide/default-keyboard-shortcuts-in-visual-studio.md).  
@@ -91,23 +75,11 @@ Wenn Sie diese Tipps befolgen, können Sie den Code in Visual Studio schneller u
   
      Zum Einfügen eines Ausschnittes wählen Sie in der Menüleiste **Bearbeiten**, **IntelliSense**, **Ausschnitt einfügen** aus, oder öffnen Sie das Kontextmenü in einer Datei, und wählen Sie **Ausschnitt einfügen** aus. Weitere Informationen finden Sie unter [Codeausschnitte](../ide/code-snippets.md).  
   
--   **Inline-Behebung von Codefehlern**. Smarttags werden als blaue oder rote Felder unter einer Codezeile angezeigt. Sie können Smarttag-Optionen anzeigen, indem Sie auf eines der Felder zeigen oder indem Sie den Cursor in der Codezeile platzieren und STRG+ auswählen. (Punkt)-Schlüssel.  
-  
-     In blauen Feldern werden Möglichkeiten vorgeschlagen, Fehler im Code zu korrigieren.  
-  
-     Abbildung 1: Fehler-Smarttags  
-  
-     ![Fehler-Smarttag-Vorschläge](../ide/media/productivity_bluesmarttags.png "Productivity_BlueSmartTags")  
-  
-     In roten Feldern werden Möglichkeiten vorgeschlagen, den Code umzugestalten.  
-  
-     Abbildung 2: Umgestaltungs-Smarttags  
-  
-     ![Refactoring-Smarttag-Vorschläge](../ide/media/productivity_redsmarttags.png "Productivity_RedSmartTags")  
-  
+-   **Inline-Behebung von Codefehlern**. Mit schnellen Aktionen können Sie ganz leicht Code mit einer einzelnen Aktion umgestalten, generieren oder anderweitig ändern. Diese können mithilfe des Glühbirnensymbols ![Kleines Glühbirnensymbol](media/vs2015_lightbulbsmall.png "VS2017_KleineGlühbirne") oder durch Drücken von **ALT+EINGABETASTE** oder **STRG+.** angewendet werden, wenn sich Ihr Cursor in der entsprechenden Codezeile befindet. Weitere Informationen finden Sie unter [Schnelle Aktionen](quick-actions.md).  
+
 -   **Anzeigen und Bearbeiten der Definition eines Codeelements**. Sie können das Modul schnell anzeigen und bearbeiten, in dem ein Codeelement, wie ein Member, eine Variable oder eine lokale Variable, definiert ist.  
   
-     Um eine Definition in einem Popupfenster zu öffnen, markieren Sie das Element und wählen Sie dann die Tasten ALT+F12 aus, oder öffnen Sie das Kontextmenü für das Element, und wählen Sie dann **Definition einsehen** aus. Um eine Definition in einem separaten Codefenster zu öffnen, öffnen Sie das Kontextmenü für das Codeelement, und wählen Sie dann **Gehe zu Definition** aus.  
+     Um eine Definition in einem Popupfenster zu öffnen, markieren Sie das Element, und drücken Sie dann die Tasten **ALT+F12**, oder öffnen Sie das Kontextmenü für das Element, und klicken Sie dann auf **Definition einsehen**. Um eine Definition in einem separaten Codefenster zu öffnen, öffnen Sie das Kontextmenü für das Codeelement, und wählen Sie dann **Gehe zu Definition** aus.  
   
 ##  <a name="BKMK_Navigating"></a>Navigieren innerhalb des Codes  
  Sie können verschiedene Methoden verwenden, um bestimmte Positionen im Code schneller zu finden und dorthin zu wechseln.  

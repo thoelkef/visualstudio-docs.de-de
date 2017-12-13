@@ -1,49 +1,32 @@
 ---
-title: "Exemplarische Vorgehensweise: Erstellen und Ausführen von Komponententests für Windows Store-Apps | Microsoft-Dokumentation"
+title: "Exemplarische Vorgehensweise: Erstellen und Ausführen von Komponententests für UWP-Apps | Microsoft-Dokumentation"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - unit tests, creating
 - unit tests
-- unit tests, Windows Store apps
+- unit tests, UWP apps
 - unit tests, running
 ms.assetid: dd3e8a6a-b366-433e-a409-b9a9b89da89a
-caps.latest.revision: 21
+caps.latest.revision: "21"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 11ae1d653bc34ccb9c8fd8834d134b7212bc4f9a
-ms.contentlocale: de-de
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: 32cab11dd909fc8b60134ebff0d5f37c0b14dcd6
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/02/2017
 ---
-# <a name="walkthrough-creating-and-running-unit-tests-for-windows-store-apps"></a>Exemplarische Vorgehensweise: Erstellen und Ausführen von Komponententests für Windows Store-Apps
+# <a name="walkthrough-creating-and-running-unit-tests-for-uwp-apps"></a>Exemplarische Vorgehensweise: Erstellen und Ausführen von Komponententests für UWP-Apps
 Visual Studio bietet Unterstützung für Komponententests verwalteter [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] -Anwendungen und enthält Komponententest-Bibliotheksvorlagen für Visual C#, Visual Basic und Visual C++.  
   
 > [!TIP]
->  Weitere Informationen zum Entwickeln von [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] -Apps finden Sie unter [Erste Schritte mit Windows Store-Apps](http://go.microsoft.com/fwlink/?LinkID=241410).  
+>  Weitere Informationen zum Entwickeln von [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]-Apps finden Sie unter [Erste Schritte mit UWP-Apps](http://go.microsoft.com/fwlink/?LinkID=241410).  
   
  Visual Studio stellt die folgende Funktionalität für Unittests bereit:  
   
@@ -62,13 +45,13 @@ Visual Studio bietet Unterstützung für Komponententests verwalteter [!INCLUDE[
   
 ##  <a name="CreateAndRunUnitTestWin8Tailored_Create"></a> Erstellen eines Komponententestprojekts  
   
-#### <a name="to-create-a-unit-test-project-for-a-windows-store-app"></a>Erstellen eines Komponententestprojekts für eine Windows Store-App  
+#### <a name="to-create-a-unit-test-project-for-a-uwp-app"></a>Erstellen eines Komponententestprojekts für eine UWP-App  
   
 1.  Wählen Sie im Menü **Datei** die Option **Neues Projekt**aus.  
   
      Daraufhin wird das Dialogfeld "Neues Projekt" angezeigt.  
   
-2.  Wählen Sie unter Vorlagen die Programmiersprache aus, in der Sie den Komponententest erstellen möchten, und wählen Sie dann die zugeordnete [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] -Komponententestbibliothek aus. Wählen Sie beispielsweise **Visual C#** aus, und wählen Sie **Windows Store**aus und wählen dann **Komponententestbibliothek (Windows Store-Apps)**aus.  
+2.  Wählen Sie unter Vorlagen die Programmiersprache aus, in der Sie den Komponententest erstellen möchten, und wählen Sie dann die zugeordnete [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] -Komponententestbibliothek aus. Wählen Sie beispielsweise **Visual C#** aus, und wählen Sie dann **Windows Universal** gefolgt von **Komponententestbibliothek (Universal Windows)** aus.  
   
     > [!NOTE]
     >  Visual Studio enthält Komponententest-Bibliotheksvorlagen für Visual C#, Visual Basic und Visual C++.  
@@ -90,7 +73,7 @@ Visual Studio bietet Unterstützung für Komponententests verwalteter [!INCLUDE[
 ##  <a name="CreateAndRunUnitTestWin8Tailored_Manifest"></a> Bearbeiten des Manifests für das Komponententestprojekt  
  Möglicherweise müssen Sie das Manifest für das Komponententestprojekt bearbeiten, um die erforderlichen Funktionen für die Ausführung der App bereitzustellen.  
   
-#### <a name="to-edit-the-unit-test-projects-windows-store-application-manifest-file"></a>So bearbeiten Sie die Manifestdatei der Windows Store-App für das Komponententestprojekt  
+#### <a name="to-edit-the-unit-test-projects-uwp-application-manifest-file"></a>Bearbeiten der UWP-Anwendungsmanifestdatei für das Komponententestprojekt  
   
 1.  Klicken Sie im Projektmappen-Explorer im neuen [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] -Komponententestprojekt mit der rechten Maustaste auf die Datei Package.appxmanifest und wählen Sie **Öffnen**aus.  
   
@@ -109,7 +92,7 @@ Visual Studio bietet Unterstützung für Komponententests verwalteter [!INCLUDE[
   
 ##  <a name="CreateAndRunUnitTestWin8Tailored_Code"></a> Codieren des Komponententests  
   
-#### <a name="to-code-the-unit-test-for-a-windows-store-app"></a>Schreiben von Code für den Komponententest einer Windows Store-App  
+#### <a name="to-code-the-unit-test-for-a-uwp-app"></a>Schreiben von Code für den Komponententest einer UWP-App  
   
 1.  Bearbeiten Sie im Code-Editor den Komponententest und fügen Sie die Bestätigungs- und Logikanforderungen für den Test hinzu.  
   
@@ -147,7 +130,7 @@ Visual Studio bietet Unterstützung für Komponententests verwalteter [!INCLUDE[
     >   
     >  Außerdem können Sie die Optionen **Ausgewählte Tests debuggen**, **Test öffnen**und **Eigenschaften** auswählen.  
     >   
-    >  ![Komponententest-Explorer &#45; Komponententest-Kontextmenü](~/test/media/unit_test_win8_unittestexplorer_contextmenu.png "Unit_Test_Win8_UnitTestExplorer_ContextMenu")  
+    >  ![Komponententest-Explorer &#45; Komponententest-Kontextmenü](../test/media/unit_test_win8_unittestexplorer_contextmenu.png "Unit_Test_Win8_UnitTestExplorer_ContextMenu")  
   
      Der Komponententest läuft. Nach Abschluss zeigt der Komponententest-Explorer den Teststatus und die verstrichene Zeit an und stellt einen Link zur Quelle bereit.  
   
@@ -156,7 +139,7 @@ Visual Studio bietet Unterstützung für Komponententests verwalteter [!INCLUDE[
 ## <a name="external-resources"></a>Externe Ressourcen  
   
 ### <a name="videos"></a>Videos  
- [Channel 9: Unit testing your Windows Store apps built using XAML (Durchführen von Komponententests für Ihre mit XAML erstellten Windows Store-Apps)](http://go.microsoft.com/fwlink/?LinkId=226285)  
+ [Channel 9: Unit testing your UWP apps built using XAML (Channel 9: Durchführen von Komponententests für Ihre mit XAML erstellten UWP-Apps)](http://go.microsoft.com/fwlink/?LinkId=226285)  
   
 ### <a name="forums"></a>Foren  
  [Visual Studio-Komponententest](http://go.microsoft.com/fwlink/?LinkId=224477)  
@@ -165,6 +148,5 @@ Visual Studio bietet Unterstützung für Komponententests verwalteter [!INCLUDE[
  [MSDN Library - Creating and Running Unit Tests for Existing Code (Visual Studio 2010) (MSDN Library – Erstellen und Ausführen von Komponententests für vorhandenen Code (Visual Studio 2010))](http://go.microsoft.com/fwlink/?LinkID=223683)  
   
 ## <a name="see-also"></a>Siehe auch  
- [Testen von Store-Apps mit Visual Studio](../test/testing-store-apps-with-visual-studio.md)   
- [Erstellen und Testen einer Windows Store-App mithilfe von Team Foundation Build](http://msdn.microsoft.com/Library/d0ca17bb-deae-4f3d-a18d-1a99bebceaa9)
-
+ [Testen von UWP-Apps mit Visual Studio](../test/testing-store-apps-with-visual-studio.md)   
+ [Erstellen und Testen einer UWP-App mithilfe von Team Foundation Build](http://msdn.microsoft.com/Library/d0ca17bb-deae-4f3d-a18d-1a99bebceaa9)

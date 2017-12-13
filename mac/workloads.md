@@ -1,18 +1,16 @@
 ---
-title: "Visual Studio für Mac-Workloads"
+title: "Visual Studio für Mac-Workloads | Microsoft-Dokumentation"
 author: asb3993
 ms.author: amburns
 ms.date: 08/03/2017
 ms.topic: article
 ms.assetid: DDC39599-8C5D-4CB9-8DA5-229E085384CA
+ms.openlocfilehash: 1281934b04ac064237246a851018fdfdcd71f665
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 17defdd0b96ec1c3273fc6b845af844b031a4a17
-ms.openlocfilehash: 8870c8fa0a521ed5ac6e31aa0465f1dbe8578f63
-ms.contentlocale: de-de
-ms.lasthandoff: 09/06/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="visual-studio-for-mac-workloads"></a>Visual Studio für Mac-Workloads
 
 Visual Studio für Mac enthält für folgende Programme vorinstallierte Workloads:
@@ -31,7 +29,7 @@ Informationen zur Verwendung von Xamarin in Visual Studio für Mac finden Sie im
 
 ## <a name="net-core-applications"></a>.NET Core-Anwendungen
 
-Weitere Informationen finden Sie zur Verwendung von .NET Core finden Sie in der [Dokumentation](https://docs.microsoft.com/en-us/dotnet/core/).
+Weitere Informationen finden Sie zur Verwendung von .NET Core finden Sie in der [Dokumentation](https://docs.microsoft.com/dotnet/core/).
 
 ## <a name="aspnet-core-web-applications"></a>ASP.NET Core-Webanwendungen
 
@@ -40,4 +38,3 @@ Informationen zum Einstieg in ASP.NET Core in Visual Studio für Mac finden Sie 
 ## <a name="cross-platform-unity-game-development"></a>Plattformübergreifende Spieleentwicklung mit Unity
 
 Um Spiele mit Unity zu erstellen, sehen Sie sich sie [Setupseite](~/setup-vsmac-tools-unity.md) und die [Anleitung zur Verwendung der Unity-Tools](~/using-vsmac-tools-unity.md) an, oder werfen Sie einen Blick auf das [praktische Lab](https://github.com/Microsoft/vs4mac-labs/tree/master/Unity/Getting-Started) zu Unity.
-

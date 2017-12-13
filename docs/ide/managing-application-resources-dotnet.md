@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -22,42 +21,30 @@ helpviewer_keywords:
 - application resources [Visual Studio]
 - Project Designer, Resources page
 ms.assetid: f2582734-8ada-4baa-8a7c-e2ef943ddf7e
-caps.latest.revision: 20
-author: kempb
-ms.author: kempb
+caps.latest.revision: "20"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 3d32d11a430227800cb3ed53831a9565eb6adeb3
-ms.openlocfilehash: 5cb2e044f5c55881adade6d3022fc453360a2e9c
-ms.contentlocale: de-de
-ms.lasthandoff: 05/30/2017
-
+ms.openlocfilehash: b599a919911fcc5d2833cfe69b75f7b32cced858
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Verwalten von Anwendungsressourcen (.NET)
-<a id="managing-application-resources-net" class="xliff"></a>
+# <a name="managing-application-resources-net"></a>Verwalten von Anwendungsressourcen (.NET)
 Ressourcendateien sind Dateien, die Teil einer Anwendung sind, jedoch noch nicht kompiliert sind, beispielsweise Symboldateien oder Audiodateien. Da diese Dateien nicht Teil des Kompilierungsprozesses sind, können Sie sie ändern, ohne Ihre Binärdateien neu zu kompilieren. Wenn Sie beabsichtigen, die Anwendung zu lokalisieren, verwenden Sie beim Lokalisieren Ressourcendateien für alle Zeichenfolgen und anderen Ressourcen, die geändert werden müssen.  
   
- Weitere Informationen zu Ressourcen in .NET-Desktopanwendungen finden Sie unter [Ressourcen in Desktopanwendungen](/dotnet/framework/resources/index). Weitere Informationen zu Ressourcen in C++-Desktop-Apps finden Sie unter [Working with Resource Files](/cpp/windows/working-with-resource-files).  
+Weitere Informationen zu Ressourcen in .NET-Desktop-Apps finden Sie unter [Resources in Desktop Apps](/dotnet/framework/resources/index). Weitere Informationen zu Ressourcen in C++-Desktop-Apps finden Sie unter [Working with Resource Files](/cpp/windows/working-with-resource-files).  
   
- Windows Store-Apps verwendet ein anderes Ressourcenmodell von Desktop-Apps. Weitere Informationen zu Ressourcen in Windows Store-Apps finden Sie auf der Windows Developer Center-Website unter [Definieren von App-Ressourcen](https://msdn.microsoft.com/en-us/library/windows/apps/hh465228.aspx) .  
+UWP-Anwendungen verwenden ein anderes Ressourcenmodell als Desktop-Apps. Informationen über Ressourcen in Windows 8.x-Anwendungen finden Sie unter [Definieren von App-Ressourcen (HTML)](https://msdn.microsoft.com/en-us/library/windows/apps/hh465228.aspx).  
   
-## Arbeiten mit Ressourcen
-<a id="working-with-resources" class="xliff"></a>  
- Öffnen Sie in einem Projekt mit verwaltetem Code das Projekteigenschaftenfenster (klicken Sie mit der rechten Maustaste auf den Projektknoten im **Projektmappen-Explorer** , und wählen Sie **Eigenschaften**aus, geben Sie **Projekteigenschaften** im Fenster **Schnellstart** ein, oder drücken Sie innerhalb des Fensters **Projektmappen-Explorer** ALT+EINGABE). Wählen Sie die Registerkarte **Ressourcen** aus. Sie können eine RESX-Datei hinzufügen, wenn das Projekt noch keine enthält, verschiedene Arten von Ressourcen hinzufügen und löschen und vorhandene Ressourcen ändern.  
+## <a name="working-with-resources"></a>Arbeiten mit Ressourcen  
+Öffnen Sie das Projekteigenschaftenfenster in einem Projekt mit verwaltetem Code. Sie können das Eigenschaftenfenster öffnen, indem Sie Folgendes durchführen:
+
+- Klicken Sie mit der rechten Maustaste auf den Projektknoten im **Projektmappen-Explorer** und dann auf **Eigenschaften**.
+- Geben Sie **Projekteigenschaften** im **Schnellstart**-Fenster ein.
+- Drücken Sie **ALT+EINGABETASTE** im **Projektmappen-Explorer**-Fenster.
+
+Wählen Sie die Registerkarte **Ressourcen** aus. Sie können eine RESX-Datei hinzufügen, wenn das Projekt noch keine enthält, verschiedene Arten von Ressourcen hinzufügen und löschen und vorhandene Ressourcen ändern.  
   
- Informationen zum Arbeiten mit Ressourcen in C++-Projekten finden Sie unter [Gewusst wie: Erstellen einer Ressource](/cpp/windows/how-to-create-a-resource).
+Informationen zur Bearbeitung von Ressourcen in C++-Projekten finden Sie unter [How to: Create a Resource](/cpp/windows/how-to-create-a-resource).

@@ -1,28 +1,24 @@
 ---
 title: Bearbeiten von Python-Code in Visual Studio | Microsoft-Dokumentation
 ms.custom: 
-ms.date: 7/10/2017
-ms.prod: visual-studio-dev15
+ms.date: 07/10/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-python
+ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 03effe56-d6f6-461d-9005-e43c15bf537c
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: 134442008dccbeac12dd328ed3b01c2b3a1a2e8c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
-ms.openlocfilehash: d16b8fcae5b7d1a14c8f6068dfd7103115cba291
-ms.contentlocale: de-de
-ms.lasthandoff: 07/18/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="editing-python-code"></a>Bearbeiten von Python-Code
 
 Entwickler verbringen einen Großteil Ihrer Zeit im Code-Editor, weshalb [die Python-Unterstützung in Visual Studio](installation.md) Funktionen bietet, die Ihre Produktivität erhöhen. Zu den Funktionen gehören die Syntaxhervorhebung von IntelliSense, die automatische Vervollständigung, Signaturhilfe, Methodenüberschreibungen, die Suche und die Navigation. 
@@ -35,11 +31,11 @@ In diesem Thema:
 
 Eine allgemeine Dokumentation zur Codebearbeitung in Visual Studio finden Sie unter [Schreiben von Code im Code- und Text-Editor](../ide/writing-code-in-the-code-and-text-editor.md). Lesen Sie auch den Artikel [Gliederung in Visual Studio](../ide/outlining.md) mit Informationen dazu, wie Sie Code ein- und ausblenden, um sich auf bestimmte Abschnitte Ihres Codes zu konzentrieren. Die Python-Unterstützung umfasst den Visual Studio-Objektkatalog (**Ansicht > Weitere Fenster > Objektkatalog** oder STRG+W, J), um die in den einzelnen Modulen definierten Klassen und die in diesen Klassen definierten Funktionen zu überprüfen. 
 
-Der Editor ist darüber hinaus auch im interaktiven Fenster in Visual Studio integriert, sodass der Austausch von Code zwischen den beiden sehr leicht ist. Weitere Informationen finden Sie unter [Getting Started - Using the interactive REPL window])(getting-started.md#using-the-interactive-repl-window) (Erste Schritte mit dem interaktiven REPL-Fenster) und [Using the interactive window - Send code to interactive command (Verwenden des interaktiven Fensters: Senden von Code an einen interaktiven Befehl)](interactive-repl.md#send-code-to-interactive-command).
+Der Editor ist darüber hinaus auch im interaktiven Fenster in Visual Studio integriert, sodass der Austausch von Code zwischen den beiden sehr leicht ist. Weitere Informationen finden Sie unter [Tutorial Step 3: Using the interactive REPL window (Tutorial Schritt 3: Verwenden des interaktiven REPL-Fensters)](vs-tutorial-01-03.md) und [Using the interactive window - Send code to interactive command (Verwenden des interaktiven Fensters: Befehl „An Interactive senden“)](interactive-repl.md#send-code-to-interactive-command).
 
-Eine Einführung in die Bearbeitung von Python-Code finden Sie im Video [Getting Started with Python in Visual Studio, Part 3: Editing (Erste Schritte mit Python in Visual Studio, Teil 3: Bearbeiten)](https://youtu.be/uZGZNEyyeKs?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff) (youtube.com, 3 Minuten 48 Sekunden):
+Eine Einführung in die Bearbeitung von Python-Code finden Sie unter [Editing Python-Code (Bearbeiten von Python-Code)](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=r2iQH5LWE_4605918567) (Microsoft Virtual Academy, 2 Min. 30 Sek.):
 
-> [!VIDEO https://www.youtube.com/embed/uZGZNEyyeKs]
+> [!VIDEO https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Editing-Python-Code-r2iQH5LWE_4605918567]
 
 ## <a name="intellisense"></a>IntelliSense
 
@@ -123,8 +119,7 @@ Sie können die verfügbaren Codeausschnitte im Codeausschnitt-Manager (**Tools 
 
 ![Codeausschnitt-Manager](media/code-editing-code-snippets-manager.png)
 
-Informationen zum Erstellen eigener Codeausschnitte finden Sie unter [Exemplarische Vorgehensweise: Erstellen eines Codeausschnitts](../ide/walkthrough-creating-a-code-snippet.md).
-Codeausschnitte können angepasst werden, indem Sie [einen Codeausschnitt erstellen](https://msdn.microsoft.com/library/ms165394.aspx) und importieren. 
+Informationen zum Erstellen eigener Codeausschnitte finden Sie unter [Exemplarische Vorgehensweise: Erstellen eines Codeausschnitts](../ide/walkthrough-creating-a-code-snippet.md). 
 
 Wenn Sie einen Codeausschnitt geschrieben haben, den Sie gerne für andere Benutzer freigeben möchten, posten Sie ihn in einem Gist, und [informieren Sie uns darüber](https://github.com/Microsoft/PTVS/issues). Möglicherweise verwenden wir den Codeausschnitt in einer zukünftigen Version von Visual Studio.
 

@@ -1,31 +1,32 @@
 ---
-title: "VSPerfReport | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Befehlszeile, Tools"
-  - "Befehlszeilentools, VSPerfReport-Tool"
-  - "Instrumentierung, VSPerfReport-Tool"
-  - "Leistungstools, VSPerfReport-Tool"
-  - "Profilerstellungstools, VSPerfReport"
-  - "VSPerfReport-Tool"
+title: VSPerfReport | Microsoft-Dokumentation
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- command-line tools, VSPerfReporttool
+- performance tools, VSPerfReport tool
+- profiling tools,VSPerfReport
+- VSPerfReport tool
+- command line, tools
+- instrumentation, VSPerfReporttool
 ms.assetid: dbfd8d91-4430-4b82-81b9-97ac61412a6c
-caps.latest.revision: 32
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 32
+caps.latest.revision: "32"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 7fceff125460ad5dc9896226458b1c7dddb077a2
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# VSPerfReport
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Mit dem Befehlszeilentool VSPerfReport können Sie unter Verwendung von Profilerstellungsdatendateien der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]\-Profilerstellungstools Berichte erstellen.  Das Standardberichtsformat entspricht einer .csv\-Datei.  
+# <a name="vsperfreport"></a>VSPerfReport
+Das VSPerfReport-Befehlszeilentool wird zum Erstellen von Berichten mithilfe von Profilerstellungs-Datendateien aus [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Profilerstellungstools verwendet. Das Standardberichtsformat ist .csv.  
   
  VSPerfReport verwendet die folgende Syntax:  
   
@@ -33,63 +34,63 @@ Mit dem Befehlszeilentool VSPerfReport können Sie unter Verwendung von Profiler
 VSPerfReport [/U] vspfilename [/options]  
 ```  
   
- Beachten Sie, dass `filename` eine gültige .vsp\- oder .vsps\-Datei sein muss.  
+ Bitte beachten Sie, dass es sich bei `filename` um eine gültige VSP- oder VSPS-Datei handeln muss.  
   
- Das Befehlszeilentool VSPerfReport wird auch zum Vergleichen von VSP\- oder VSPS\-Dateien verwendet.  Um einen Unterschiedsbericht \("diff"\) zu generieren, verwenden Sie die folgende Syntax:  
+ Das VSPerfReport-Befehlszeilentool wird ebenfalls verwendet, um VSP- oder VSPS-Dateien miteinander zu vergleichen. Verwenden Sie die folgende Syntax, um einen Unterschiedebericht („Diff“) zu generieren:  
   
 ```  
 VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]  
 ```  
   
- `vspfilename1 and vspfilename2` müssen gültige .vsp\- oder .vsps\-Dateien sein.  
+ Es muss sich bei `vspfilename1 and vspfilename2` um gültige VSP- oder VSPS-Dateien handeln.  
   
-## Symboldateien  
- Um Symbolinformationen, wie z. B. Funktionsnamen und Zeilennummern, anzuzeigen, benötigt VSPerfReport Zugriff auf die Symboldateien \(.PDB\) der profilierten Komponenten und auf die Windows\-Symboldateien.  Weitere Informationen finden Sie unter [Gewusst wie: Angeben von Symboldateispeicherorten über die Befehlszeile](../profiling/how-to-specify-symbol-file-locations-from-the-command-line.md).  
+## <a name="symbol-files"></a>Symboldateien  
+ Das VSPerfReport-Befehlszeilentool benötigt Zugriff auf die Symboldateien (.pdb) der profilierten Komponenten und die Windows-Systemdateien, um Symbolinformationen wie Funktionsnamen und Zeilennummern anzuzeigen. Weitere Informationen finden Sie unter [Vorgehensweise: Angeben von Symboldateispeicherorten über die Befehlszeile](../profiling/how-to-specify-symbol-file-locations-from-the-command-line.md).  
   
-## Allgemeine Berichtsoptionen  
- In der folgenden Tabelle werden die allgemeinen Optionen der Berichtsformatierung sowie die Optionen für die Auswahl der Daten beschrieben, auf deren Grundlage ein Bericht erstellt wird.  
+## <a name="general-report-options"></a>Allgemeine Berichtsoptionen  
+ In der folgenden Tabelle werden die allgemeinen Optionen zur Berichtsformatierung beschrieben sowie die Optionen, die die Daten auswählen, die gemeldet werden sollen.  
   
-|Optionen|**Beschreibung**|  
-|--------------|----------------------|  
-|**U**|Berichtsausgabe und umgeleitete Konsolenausgabe werden als Unicode geschrieben.  Muss die erste angegebene Option sein.|  
-|**Summary:**\[*types*\]|Erstellt mindestens einen Berichtstyp.<br /><br /> -   `All` – Alle Berichtstypen werden generiert.<br />-   `CallerCallee` – Über\- und untergeordnete Beziehungen zwischen Funktionen.<br />-   `Function` – Aufgerufene Funktionen.<br />-   `CallTree` – Hierarchie der aufgerufenen Funktionen.<br />-   `Counter` – Alle Markierungen zusammen mit Windows\-Leistungsindikatorwerten.<br />-   `Ip` – Profilierte Anweisungen.<br />-   `Life` – Lebensdauer belegter Objekte \(verfügbar, sofern Speicherbelegungsdaten gesammelt wurden\).<br />-   `Line` – Profildaten zu Quellcodezeilen.<br />-   `Header` – Bericht enthält Dateiheaderinformationen.<br />-   `Mark` – Alle Markierungen.<br />-   `Module` – Profilierte Module.<br />-   `Process` – Profilierte Prozesse.<br />-   `Thread` – Profilierte Threads.<br />-   `Type` – Belegte Typen.<br />-   `Contention` – Ressourcenkonflikte.<br />-   `RuleWarnings` – Leistungsregelprobleme<br />-   `ETW` – Alle während der Profilerstellungsausführung erfassten Ereignisse der Ereignisablaufverfolgung für Windows \(ETW\).  Die ETL\-Datendatei muss an ihrem ursprünglichen Speicherort oder in dem Verzeichnis abgelegt sein, das die VSP\- oder VSPS\-Datei enthält.|  
-|**Xml**|Ausgabe des Berichts im XML\-Format.|  
-|**CallTrace**|Erstellt eine Liste mit Werten für den Eintritt in bzw. das Verlassen von Funktionen, ETW\-Ereignissen und Markierungen.|  
-|**ClearPackedSymbols**|Entfernt zuvor eingebettete Symbole aus einer Profilerdatendatei.  Führen Sie diesen Befehl aus, bevor Sie PackSymbols erneut ausführen.|  
-|**SymbolPath:** `path`|Gibt einen oder mehr Suchpfade oder Symbolserver an, die Symbole für die Profilerdatendatei enthalten.|  
-|**DebugSymPath**|Listet die Speicherorte, in denen nach Symbolen gesucht wird, und Hinweise zu gefundenen Symbole auf.  Diese Option ist hilfreich, um Symbolauflösungsprobleme zu beheben.|  
-|**PackSymbols**|Speichert Symbole in der Profilerstellungs\-Datendatei \(.vsp\), damit Symboldateien \(.pdb\) für die Analyse nicht erforderlich sind.|  
-|**Output:** *path* &#124;*filename*|Gibt einen alternativen Speicherort für die generierten Berichtdateien an.  Standardmäßig werden Berichte im aktuellen Verzeichnis erstellt.|  
-|**SummaryFile**|Analysiert und speichert die analysierten Informationen in einer .vsps\-Zusammenfassungsdatei.|  
-|**PrintMarks**|Zeigt die Namen und Timestamps für alle Markierungen in der angegebenen Berichtsdatei an.|  
-|**?**|Zeigt Informationen zur Verwendung an.|  
-|**NoLogo**|Blendet Versionsinformationen aus, wenn der Bericht ausgeführt wird.|  
-|**UserRulesDirectory**|Gibt das Verzeichnis an, das benutzerdefinierte Leistungsregeln enthält \[Noch nicht implementiert\].|  
+|Optionen|Beschreibung|  
+|-------------|-----------------|  
+|**U**|Die Berichtsausgabe und die umgeleitete Konsolenausgabe werden als Unicode geschrieben. Es muss sich um die erste angegebene Option handeln.|  
+|**Summary:**[*types*]|Erstellt mindestens einen Berichtstyp<br /><br /> -   `All` – alle Berichtstypen werden generiert<br />-   `CallerCallee` – über- und untergeordnete Beziehungen zwischen Funktionen<br />-   `Function` – aufgerufene Funktionen<br />-   `CallTree` – Hierarchien der aufgerufenen Funktionen<br />-   `Counter` – alle Markierungen und Windows-Leistungsindikatorwerte<br />-   `Ip` – Anweisungen mit Profilen<br />-   `Life` – Lebensdauer von zugeordneten Objekten (verfügbar, wenn Speicherbelegungsdaten erfasst wurden)<br />-   `Line` – Profildaten von Quellcodezeilen<br />-   `Header` – der Bericht enthält Dateiheaderinformationen<br />-   `Mark` – alle Markierungen<br />-   `Module` – Module mit Profilen<br />-   `Process` – Prozesse mit Profilen<br />-   `Thread` – Threads mit Profilen<br />-   `Type` – zugeordnete Typen<br />-   `Contention` – Ressourcenkonflikte<br />-   `RuleWarnings` – Probleme mit Leistungsregeln<br />-   `ETW` – alle während der Profilerstellungsausführung erfassten Ereignisse der Ereignisablaufverfolgung für Windows (ETW). Die ETL-Datendatei muss sich am ursprünglichen Standort oder in dem Verzeichnis mit der VSP- oder VSPS-Datei befinden.|  
+|**XML**|Ausgabebericht im XML-Format|  
+|**CallTrace**|Erstellt eine Liste mit Funktionseinträgen und beendet ETW-Ereignisse und Markierungen|  
+|**ClearPackedSymbols**|Entfernt zuvor eingebettete Symbole aus einer Profilerdatendatei. Führen Sie diesen Befehl aus, bevor Sie PackSymbols ein zweites Mal ausführen.|  
+|**SymbolPath:** `path`|Gibt mindestens einen Suchpfad oder Symbolserver an, die Symbole für die Profilerdatendatei enthalten.|  
+|**DebugSymPath**|Listet die Speicherorte auf, die nach den Symbolen durchsucht werden, und gibt an, ob diese gefunden werden. Diese Option ist nützlich für das Beheben von Problemen mit der Symbolauflösung.|  
+|**PackSymbols**|Speichert Symbole in der Profilerdatendatei (.vsp.), damit keine Symboldateien (.pdb) für die Analyse benötigt werden|  
+|**Ausgabe:** *Pfad*|*Dateiname*|Gibt einen alternativen Speicherort für die generierten Berichtsdateien an. Standardmäßig werden Berichte im aktuellen Verzeichnis erstellt.|  
+|**SummaryFile**|Analysieren und speichern Sie die analysierten Informationen in einer VSPS-Zusammenfassungsdatei|  
+|**PrintMarks**|Zeigt die Namen und Zeitstempel sämtlicher Markierungen in einer Berichtsdatei an.|  
+|**?**|Zeigt Nutzungsinformationen an.|  
+|**NoLogo**|Blendet die Versionsinformationen aus, während der Bericht ausgeführt wird.|  
+|**UserRulesDirectory**|Gibt ein Verzeichnis an, das benutzerdefinierte Leistungsregeln enthält (noch nicht implementiert).|  
   
-## Filteroptionen  
- In der folgenden Tabelle werden die Optionen zum Filtern der verfügbaren Daten beschrieben.  
+## <a name="filter-options"></a>Filteroptionen  
+ In der folgenden Tabelle werden Optionen beschrieben, über die Sie verfügbare Daten filtern können.  
   
-|Optionen|**Beschreibung**|  
-|--------------|----------------------|  
-|**JustMyCode**\[**:**\[`caller`\]\[,`callee`\]\]|Nur Funktionsaufrufe durch Benutzeranwendungen zeigen; Systemaufrufe ausblenden.<br /><br /> -   Keine Parameter – Alle Systemfunktionen ausblenden.<br />-   `caller` – Eine Ebene von Systemfunktionen anzeigen, die Anwendungsfunktionen aufrufen.<br />-   `callee` – Eine Ebene von Systemfunktionen anzeigen, die von Benutzeranwendungsfunktionen aufgerufen werden.|  
-|**StartTime:**\[*value*\]|Zeigt nur nach einem Wert \(in Millisekunden\) erfasste Daten an.|  
-|**EndTime:**\[*value*\]|Zeigt nur vor einem Wert \(in Millisekunden\) erfasste Daten an.|  
-|**FilterFile:** `VSPFFile`|Gibt den Speicherort einer Filterdatei an, die im Visual Studio\-Fenster Leistungsbericht generiert wurde.|  
-|**MsFilter:**\[*starttime,duration*\]|Nur Daten ab `starttime` und für die Dauer von `duration` \(in Millisekunden\) anzeigen.|  
-|**Process:**\[*pid*\]|Zeigt nur Daten zum angegebenen Prozess an.|  
-|**Thread:**\[*threadid*\]|Zeigt nur Daten zum angegebenen Thread an.|  
-|**Thread:**\[*threadid,processid*\]|Zeigt nur Daten zum angegebenen Thread an, der mit dem angegebenen Prozess verknüpft ist.|  
+|Optionen|Beschreibung|  
+|-------------|-----------------|  
+|**JustMyCode**[**:**[`caller`][,`callee`]]|Zeigt nur Funktionsaufrufe der Benutzeranwendung an und blendet Systemaufrufe aus<br /><br /> – Keine Parameter: blendet alle Systemfunktionen aus<br />-   `caller` – zeigt eine Ebene von Systemfunktionen an, die Anwendungsfunktionen aufrufen<br />-   `callee` – zeigt eine Ebene von Systemfunktionen an, die von Benutzeranwendungsfunktionen aufgerufen werden|  
+|**StartTime:**[*Wert*]|Zeigt nur Daten an, die nach dem Wert erfasst werden (in Millisekunden)|  
+|**EndTime:**[*Wert*]|Zeigt nur Daten an, die vor dem Wert erfasst werden (in Millisekunden)|  
+|**FilterFile:** `VSPFFile`|Gibt den Speicherort einer Filterdatei an, die aus dem Visual Studio-Fenster „Leistungsbericht“ generiert wurde|  
+|**MsFilter:**[*Startzeit,Dauer*]|Zeigt nur Daten ab `starttime` an, bis zur Länge von `duration` (in Millisekunden)|  
+|**Process:**[*PID*]|Zeigt nur Daten aus dem angegebenen Prozess an|  
+|**Thread:**[*Thread-ID*]|Zeigt nur Daten aus dem angegebenen Thread an|  
+|**Thread:**[*Thread-ID,Prozess-ID*]|Zeigt nur Daten aus dem angegebenen Thread an, der dem angegebenen Prozess zugeordnet ist|  
   
-## Optionen für Unterschiedsberichte  
+## <a name="difference-report-options"></a>Optionen für Unterschiedeberichte  
  In der folgenden Tabelle werden die Optionen zum Vergleichen von Berichtsdateien beschrieben.  
   
-|Optionen|**Beschreibung**|  
-|--------------|----------------------|  
-|**Diff**  `vspfile1 vspfile2`|Vergleicht zwei Berichtsdateien \(.vsp oder .vsps\).  Zusammenfassungsoptionen werden mit der diff\-Option ignoriert.|  
-|**Diff:**\[*value*\]|Unterschiede zwischen zwei Werten, die unter diesem Schwellenwert liegen, werden ignoriert.  Außerdem werden auch keine neuen Daten mit Werten unter diesem Schwellenwert angezeigt.|  
-|**DiffTable:**\[*tablename*\]|Verwendet diese bestimmte Tabelle, um Dateien zu vergleichen.  Standardmäßig wird die Funktionstabelle verwendet.|  
-|**DiffColumn:**\[*columnname*\]|Verwendet diese bestimmte Spalte, um Werte zu vergleichen.  Standardmäßig wird die Spalte mit dem prozentualen Wert der exklusiven Samplings verwendet.|  
+|Optionen|Beschreibung|  
+|-------------|-----------------|  
+|**Diff** `vspfile1 vspfile2`|Vergleicht zwei Berichtsdateien (VSP- oder VSPS-Dateien). Optionen zur Zusammenfassung werden bei der Verwendung der „Diff“-Option ignoriert.|  
+|**Diff:**[*Wert*]|Bei Werten, die unter diesem Schwellenwert liegen, wird der Unterschied zwischen zwei Werten ignoriert. Außerdem werden keine neuen Daten mit Werten angezeigt, die unter diesem Schwellenwert legen.|  
+|**DiffTable:**[*Tabellenname*]|Verwendet die angegebene Tabelle zum Vergleichen von Dateien. Standardmäßig wird die Funktionstabelle verwendet.|  
+|**DiffColumn:**[*Spaltenname*]|Verwendet diese angegebene Spalte zum Vergleichen von Werten. Standardmäßig handelt es sich dabei um die Spalte mit dem prozentualen Anteil exklusiver Stichproben.|  
 |**QueryDiffTables**|Listet die gültigen Tabellen und Spalten für die beiden bereitgestellten Berichtsdateien auf.|  
   
-## Siehe auch  
- [Berichtsansichten für Profilerstellungstools](../profiling/performance-report-views.md)
+## <a name="see-also"></a>Siehe auch  
+ [Performance Report Views (Leistungsberichtansichten)](../profiling/performance-report-views.md)

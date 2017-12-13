@@ -1,40 +1,41 @@
 ---
-title: "Codeausschnittfunktionen | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Codeausschnitte [Visual Studio], Funktionen"
-  - "IntelliSense-Codeausschnitte, Funktionen"
-  - "Ausschnitte [Visual Studio], Funktionen"
+title: Codeausschnittfunktionen | Microsoft-Dokumentation
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- code snippets [Visual Studio], functions
+- snippets [Visual Studio], functions
+- IntelliSense code snippets, functions
 ms.assetid: c0a2bf21-8fa5-4457-9281-f599beb53e7d
-caps.latest.revision: 11
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 0628e118ecf0d22591ff1f88208e2cc5396a6bc4
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Codeausschnittfunktionen
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Drei Funktionen stehen für die Verwendung mit [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]\-Codeausschnitten zur Verfügung.  Funktionen werden im [Function](http://msdn.microsoft.com/de-de/572c5549-5821-4e15-8ecd-0fa86c1c65df)\-Element des Codeausschnitts angegeben.  Informationen zum Erstellen von Codeausschnitten finden Sie unter [Codeausschnitte](../ide/code-snippets.md).  
+# <a name="code-snippet-functions"></a>Codeausschnittfunktionen
+Es stehen drei Funktionen zur Verfügung, die mit [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]-Codeausschnitten verwendet werden können. Funktionen werden im Element [Function](http://msdn.microsoft.com/en-us/572c5549-5821-4e15-8ecd-0fa86c1c65df) (Funktion) des Codeausschnitts angegeben. Informationen zum Erstellen von Codeausschnitten finden Sie unter [Codeausschnitte](../ide/code-snippets.md).  
   
-## Funktionen  
- In der folgenden Tabelle werden die zur Verwendung mit dem `Function`\-Element in Codeausschnitten verfügbaren Funktionen beschrieben.  
+## <a name="functions"></a>Funktionen  
+ In der folgenden Tabelle werden die verfügbaren Funktionen für die Verwendung mit dem `Function`-Element in Codeausschnitten beschrieben.  
   
 |Funktion|Beschreibung|Sprache|  
-|--------------|------------------|-------------|  
-|`GenerateSwitchCases(` `EnumerationLiteral` `)`|Generiert eine switch\-Anweisung und eine Gruppe von case\-Anweisungen für die Member der durch den `EnumerationLiteral`\-Parameter angegebenen Enumeration.  Der `EnumerationLiteral`\-Parameter muss entweder ein Verweis auf ein Enumerationsliteral oder ein Enumerationstyp sein.|[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]|  
+|--------------|-----------------|--------------|  
+|`GenerateSwitchCases(` `EnumerationLiteral` `)`|Es werden eine switch-Anweisung sowie mehrere case-Anweisungen für die vom `EnumerationLiteral`-Parameter angegebenen Member der Enumeration generiert. Der `EnumerationLiteral`-Parameter muss entweder ein Verweis auf ein Enumerationsliteral oder auf einen Enumerationstyp sein.|[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]|  
 |`ClassName()`|Gibt den Namen der Klasse zurück, die den eingefügten Ausschnitt enthält.|[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]|  
-|`SimpleTypeName(` `TypeName` `)`|Reduziert den *TypeName*\-Parameter im Kontext, in dem der Ausschnitt aufgerufen wurde, auf seine einfachste Form.|[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]|  
+|`SimpleTypeName(` `TypeName` `)`|Reduziert den *TypeName*-Parameter auf seine einfachste Form im Kontext, in dem der Ausschnitt aufgerufen wurde.|[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]|  
   
-## Beispiel  
- Im folgenden Beispiel wird die Verwendung der `GenerateSwitchCases`\-Funktion veranschaulicht.  Wenn dieser Ausschnitt eingefügt und eine Enumeration in das `$switch_on$`\-Literal eingegeben wird, generiert das `$cases$`\-Literal eine `case`\-Anweisung für jeden Wert in der Enumeration.  
+## <a name="example"></a>Beispiel  
+ Im folgenden Beispiel wird die Verwendung der `GenerateSwitchCases`-Funktion veranschaulicht. Wenn dieser Ausschnitt eingefügt wird und eine Enumeration in das `$switch_on$`-Literal eingefügt wird, generiert das `$cases$`-Literal eine `case`-Anweisung für jeden Wert in der Enumeration.  
   
 ```  
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">  
@@ -74,8 +75,8 @@ Drei Funktionen stehen für die Verwendung mit [!INCLUDE[csprcs](../data-tools/i
 </CodeSnippets>  
 ```  
   
-## Beispiel  
- Im folgenden Beispiel wird die Verwendung der `ClassName`\-Funktion veranschaulicht.  Wenn dieser Ausschnitt eingefügt wird, wird das `$classname$`\-Literal an dieser Stelle in der Codedatei durch den Namen der einschließenden Klasse ersetzt.  
+## <a name="example"></a>Beispiel  
+ Im folgenden Beispiel wird die Verwendung der `ClassName`-Funktion veranschaulicht. Wenn dieser Ausschnitt eingefügt wird, wird das `$classname$`-Literal mit dem Namen der einschließenden Klasse an diesem Speicherort in der Codedatei ersetzt.  
   
 ```  
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">  
@@ -120,8 +121,8 @@ Drei Funktionen stehen für die Verwendung mit [!INCLUDE[csprcs](../data-tools/i
 </CodeSnippets>  
 ```  
   
-## Beispiel  
- Dieses Beispiel veranschaulicht die Verwendung der `SimpleTypeName`\-Funktion.  Wenn dieser Ausschnitt in eine Codedatei eingefügt wird, wird das `$SystemConsole$`\-Literal in dem Kontext, in dem der Ausschnitt aufgerufen wurde, durch die einfachste Form des <xref:System.Console>\-Typs ersetzt.  
+## <a name="example"></a>Beispiel  
+ In diesem Beispiel wird die Verwendung der `SimpleTypeName`-Funktion veranschaulicht. Wenn dieser Codeausschnitt in eine Codedatei eingefügt wird, wir das `$SystemConsole$`-Literal mit der einfachsten Form des Typs <xref:System.Console> im Kontext ersetzt, in dem der Ausschnitt aufgerufen wurde.  
   
 ```  
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">  
@@ -152,6 +153,6 @@ Drei Funktionen stehen für die Verwendung mit [!INCLUDE[csprcs](../data-tools/i
 </CodeSnippets>  
 ```  
   
-## Siehe auch  
- [Function Element \(Intellisense Code Snippets\)](http://msdn.microsoft.com/de-de/572c5549-5821-4e15-8ecd-0fa86c1c65df)   
+## <a name="see-also"></a>Siehe auch  
+ [Function-Element (IntelliSense-Codeausschnitte)](http://msdn.microsoft.com/en-us/572c5549-5821-4e15-8ecd-0fa86c1c65df)   
  [Schemareferenz für Codeausschnitte](../ide/code-snippets-schema-reference.md)

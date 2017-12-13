@@ -1,23 +1,27 @@
 ---
-title: "JsGetArrayBufferStorage-Funktion | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: JsGetArrayBufferStorage-Funktion | Microsoft-Dokumentation
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 ms.assetid: 712ae298-36a9-47ef-b089-e51835c056bc
-caps.latest.revision: 2
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 2
+caps.latest.revision: "2"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: a667325eb4d1d9540751a52232e5e06b3004b8b5
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# JsGetArrayBufferStorage-Funktion
+# <a name="jsgetarraybufferstorage-function"></a>JsGetArrayBufferStorage-Funktion
 Ruft den zugrunde liegenden Speicher ab, der von einem `ArrayBuffer` verwendet wird.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 JsErrorCode STDAPI_ JsGetArrayBufferStorage(  
@@ -27,26 +31,26 @@ JsErrorCode STDAPI_ JsGetArrayBufferStorage(
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `arrayBuffer`  
- Die ArrayBuffer\-Instanz.  
+ Die ArrayBuffer-Instanz.  
   
  `buffer`  
- Der Puffer von ArrayBuffer.  Die Lebensdauer des zurückgegebenen Puffers ist identisch mit der Lebensdauer des `ArrayBuffer`.  Der Pufferzeiger zählt nicht als Verweis auf das `ArrayBuffer` zum Zweck der Garbage Collection.  
+ Der Puffer von ArrayBuffer. Die Lebensdauer des zurückgegebenen Puffers ist identisch mit der Lebensdauer des `ArrayBuffer`. Der Pufferzeiger zählt nicht als Verweis auf das `ArrayBuffer` zum Zweck der Garbage Collection.  
   
  `bufferLength`  
  Die Anzahl von Bytes im Puffer.  
   
-## Rückgabewert  
- Der Code `JsNoError`, wenn der Vorgang erfolgreich war, andernfalls ein Fehlercode.  
+## <a name="return-value"></a>Rückgabewert  
+ Der Code `JsNoError` , wenn der Vorgang erfolgreich war, andernfalls ein Fehlercode.  
   
-## Hinweise  
- Erfordert einen Active Script\-Kontext.  
+## <a name="remarks"></a>Hinweise  
+ Erfordert einen Active Script-Kontext.  
   
- Diese API wird nur im Edge\-Modus unterstützt.  
+ Diese API wird nur im Edge-Modus unterstützt.  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  **Header:** jsrt.h  
   
-## Siehe auch  
- [Verweis \(JavaScript\-Laufzeit\)](../chakra-hosting/reference-javascript-runtime.md)
+## <a name="see-also"></a>Siehe auch  
+ [Referenz (JavaScript-Laufzeit)](../chakra-hosting/reference-javascript-runtime.md)

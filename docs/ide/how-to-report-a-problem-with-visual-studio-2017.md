@@ -1,44 +1,32 @@
 ---
 title: Melden eines Problems mit Visual Studio 2017 | Microsoft-Dokumentation
 ms.custom: 
-ms.date: 03/07/2017
+ms.date: 11/07/2017
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: bee01179-cde5-4419-9095-190ee0ba5902
-caps.latest.revision: 4
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-robots: noindex,nofollow
-ms.technology:
-- vs-acquisition
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 8163a0e1230712734936b7548bef1753ee0c1d2a
-ms.openlocfilehash: 2220a1c2def8fd831f3adba1f3b02e03efe47fe9
-ms.contentlocale: de-de
-ms.lasthandoff: 03/07/2017
-
+ms.technology: vs-acquisition
+ms.openlocfilehash: aec5948ed985b6ff2abde47a48198cf1a67c4337
+ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/09/2017
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2017"></a>Melden eines Problems mit Visual Studio 2017
-Wenn ein Problem mit Visual Studio auftritt, möchten wir davon erfahren, damit wir das Problem diagnostizieren und beheben können.  Mithilfe des Tools **Problem melden** können Sie detaillierte Informationen zum Problem erfassen und mit wenigen Mausklicks an Microsoft senden.  
-
- Microsoft respektiert Ihre Privatsphäre. Weitere Informationen dazu, wie wir Daten behandeln, die Sie uns senden, finden Sie unter [Microsoft Visual Studio-Produktfamilie – Datenschutzbestimmungen](https://www.visualstudio.com/en-us/dn948229).  
-
-## <a name="open-the-report-a-problem-tool"></a>Öffnen Sie das Tool „Problem melden“  
- Klicken Sie auf das Benutzerfeedbacksymbol neben **Schnellstart** in der Titelleiste, oder klicken Sie auf **Hilfe &#124; Feedback senden &#124; Problem melden**.  
-
- ![Menüelement „Problem melden“](../ide/media/report-a-problem-menu-item.png "Menüelement „Problem melden“")  
+Wenn ein Problem mit Visual Studio auftritt, möchten wir dies erfahren. So melden Sie das Problem, damit wir eine Diagnose durchführen und uns um die Behebung kümmern können.  
 
 ## <a name="sign-in-to-visual-studio"></a>Anmelden bei Visual Studio
- Melden Sie sich bei Visual Studio an, sofern Sie dies noch nicht getan haben, bevor Sie von einem Problem berichten. Auf diese Weise können Sie nicht nur von einem Problem berichten, mit dem Sie konfrontiert sind, sondern auch einen Kommentar zu diesem oder einem anderen Probleme abgeben, dessen Veröffentlichung Sie lesen.
+Melden Sie sich bei Visual Studio an, sofern Sie dies noch nicht getan haben, bevor Sie ein Problem melden. So können Sie ein Problem melden und dafür abstimmen oder es kommentieren. Darüber hinaus können Sie auch für jedes andere Problem abstimmen oder es kommentieren.
 
-  1. Klicken Sie auf der linken Seite des Tools auf **Anmelden**, wie im folgenden Screenshot gezeigt.
-  2. Befolgen Sie die Anweisungen auf dem Bildschirm für die Anmeldung.
+1.  Klicken Sie auf der rechten Seite des Tools wie im folgenden Screenshot gezeigt auf **Anmelden**.
+2.  Befolgen Sie die Anweisungen auf dem Bildschirm für die Anmeldung.
 
-  ![Anmelden zum Berichten eines Problems](../ide/media/vs2017-report-a-problem-sign-in.png "Anmelden zum Berichten eines Problems")
-
+ ![Anmelden zum Berichten eines Problems](../ide/media/sign-in-new-ux.png "Anmelden zum Berichten eines Problems")  
 
 ## <a name="search-and-vote-for-similar-problems"></a>Ähnliche Probleme suchen und für sie abstimmen  
 ###  <a name="search_and_vote"></a>  
@@ -46,16 +34,15 @@ Wenn ein Problem mit Visual Studio auftritt, möchten wir davon erfahren, damit 
 1.  Suchen Sie nach Ihrem Problem, und finden Sie heraus, ob andere es bereits gemeldet haben.
 2.  Wenn es bereits gemeldet wurde, stimmen Sie dafür, um uns zu informieren.  
 
-  ![VS15-FeedbackTool-SearchForSimilarReportedProblems](../ide/media/vs2017-report-a-problem-search-and-vote.png "Ähnliche Probleme suchen und für sie abstimmen")
-
+  ![Nach ähnlichen Problemen suchen und dafür abstimmen](../ide/media/search-and-vote.png "Search and vote for similar problems")
 
 ## <a name="report-a-new-problem"></a>Neues Problem melden
 ###  <a name="report_new_problem"></a>
-1.  Klicken Sie unten links im Visual Studio-Tool **Problem melden** auf die Schaltfläche „**+**“.  
-2.  Geben Sie einen aussagekräftigen Titel für das Problem an, der uns die Weiterleitung an das richtige Visual Studio-Team erleichtert.  
-3.  Geben Sie zusätzliche Details und, wenn möglich, die Schritte zum Reproduzieren des Problems an.  
+1.  Wenn Sie nichts Passendes finden, klicken Sie auf **Neues Problem melden** am unteren Rand des Bildschirms.
+2.  Geben Sie einen aussagekräftigen Titel für das Problem an, der uns die Weiterleitung an das richtige Visual Studio-Team erleichtert.
+3.  Geben Sie zusätzliche Details und, wenn möglich, die Schritte zum Reproduzieren des Problems an.
 
-  ![VS15-FeedbackTool-ReportANewProblem](../ide/media/feedbacktool-reportanewproblem.jpg "Neues Problem melden")
+  ![Neues Problem melden](../ide/media/report-new-problem.png "Report a new Problem")
 
 ## <a name="provide-a-screenshot-and-attachments-optional"></a>Stellen Sie einen Screenshot und Anlagen bereit (optional)
 ###  <a name="provide_screenshots"></a>
@@ -64,16 +51,16 @@ Wenn ein Problem mit Visual Studio auftritt, möchten wir davon erfahren, damit 
 ## <a name="provide-a-trace-and-heap-dump-optional"></a>Stellen Sie Ablaufverfolgungsdaten und Heapspeicherabbilder bereit (optional)  
 ###  <a name="provide_a_trace_and_heap_dump"></a>  
 
-Ablaufverfolgungs- und Heapspeicherabbild-Dateien sind sehr nützlich für die Diagnose von Problemen.   Wir schätzen es sehr, wenn Sie das Tool **Problem melden** verwenden, um die Schritte zum Reproduzieren des Problems zu erfassen und die Daten an Microsoft zu senden.  Und so gehen Sie dabei vor.
+Ablaufverfolgungs- und Heap-Abbilddateien sind nützlich für die Diagnose von Problemen. Verwenden Sie gerne das Tool **Problem melden**, um die Schritte zum Reproduzieren des Problems zu erfassen und die Daten an Microsoft zu senden.  Und so gehen Sie dabei vor.
 
 1.  Klicken Sie auf die Registerkarte **Aufzeichnen**.
 2.  Klicken Sie auf **Aufzeichnung starten**. Erteilen Sie die Berechtigung zum Ausführen des Tools.
+
+  ![„Aufzeichnung starten“ klicken zum Erzeugen einer Ablaufverfolgungs- und Heap-Abbilddatei](../ide/media/record-dialog-box.png "Erzeugen einer Ablaufverfolgungs- und Heap-Abbilddatei")
+
 3.  Wenn das Tool **Problemaufzeichnung** angezeigt wird, führen Sie die Schritte zum Reproduzieren des Problems aus.
-4.  Wenn Sie fertig sind, klicken Sie im unverankerten Fenster auf die Schaltfläche **Aufzeichnung beenden**.
-5.  Warten Sie einige Minuten, bis Visual Studio die aufgezeichneten Informationen erfasst und gepackt hat.  Wenn dies geschehen ist, wird ein Dialogfeld angezeigt, das so ähnlich wie das hier abgebildete aussieht.   
-
-  ![VS15-FeedbackTool-AddAttachments-TraceAndHeapDumpFiles](../ide/media/feedbacktool-addattachments-traceandheapdumpfiles.jpg "Ablaufverfolgungs- und Speicherabbilddateien bereitstellen")
-
+4.  Wenn Sie fertig sind, klicken Sie auf **Aufzeichnung beenden**.
+5.  Warten Sie einige Minuten, bis Visual Studio die aufgezeichneten Informationen erfasst und gepackt hat.
 
 ## <a name="submit-the-report"></a>Senden Sie den Bericht  
 ###  <a name="submit_the_report"></a>  
@@ -81,4 +68,3 @@ Ablaufverfolgungs- und Heapspeicherabbild-Dateien sind sehr nützlich für die D
 
 ## <a name="see-also"></a>Siehe auch  
  [Sprechen Sie mit uns](../ide/talk-to-us.md)
-

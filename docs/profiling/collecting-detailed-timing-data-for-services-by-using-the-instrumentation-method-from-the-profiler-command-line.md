@@ -1,50 +1,50 @@
 ---
-title: "Sammeln ausf&#252;hrlicher Zeitsteuerungsdaten f&#252;r Dienste &#252;ber die Befehlszeile mit der Profiler-Instrumentationsmethode | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: "Sammeln ausführlicher Zeitsteuerungsdaten für Dienste über die Befehlszeile mit der Profiler-Instrumentierungsmethode | Microsoft-Dokumentation"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 6116e1df-ed3e-4b0d-ac7f-22f7d7ac00ea
-caps.latest.revision: 12
-caps.handback.revision: 12
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "12"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 3431b18898227f9732a461d406f7a007164feff4
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Sammeln ausf&#252;hrlicher Zeitsteuerungsdaten f&#252;r Dienste &#252;ber die Befehlszeile mit der Profiler-Instrumentationsmethode
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-In diesem Abschnitt werden die Prozeduren und Optionen zum Sammeln ausführlicher Leistungsdaten für Windows\-Dienste mithilfe der Instrumentationsmethode über die Befehlszeile beschrieben.  
+# <a name="collecting-detailed-timing-data-for-services-by-using-the-instrumentation-method-from-the-profiler-command-line"></a>Sammeln ausführlicher Zeitsteuerungsdaten für Dienste über die Befehlszeile mit der Profiler-Instrumentierungsmethode
+In diesem Abschnitt werden die Prozeduren und die Optionen zum Sammeln ausführlicher Leistungsdaten für Windows-Dienste unter Verwendung der Instrumentationsmethode über die Befehlszeile beschrieben.  
   
-## Allgemeine Aufgaben  
+## <a name="common-tasks"></a>Allgemeine Aufgaben  
   
 |Aufgabe|Verwandter Inhalt|  
-|-------------|-----------------------|  
-|**Profilerstellung für einen .NET\-Dienst**|-   [Gewusst wie: Instrumentieren eines .NET\-Diensts und Sammeln ausführlicher Zeitsteuerungsdaten](../profiling/how-to-instrument-a-dotnet-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line.md)|  
-|**Hinzufügen von Ebeneninteraktionsdaten**|-   [Erfassen von Ebeneninteraktionsdaten](../profiling/adding-tier-interaction-data-from-the-command-line.md)|  
-|**Profilerstellung für einen C\/C\+\+\-Dienst**|-   [Gewusst wie: Instrumentieren eines systemeigenen Diensts und Sammeln ausführlicher Zeitsteuerungsdaten](../profiling/how-to-instrument-a-native-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line.md)|  
+|----------|---------------------|  
+|**Profil für einen .NET-Dienst**|-   [Vorgehensweise: Instrumentieren eines .NET-Diensts und Sammeln ausführlicher Zeitsteuerungsdaten](../profiling/how-to-instrument-a-dotnet-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line.md)|  
+|**Hinzufügen von Ebeneninteraktionsdaten**|-   [Hinzufügen von Ebeneninteraktionsdaten über die Befehlszeile](../profiling/adding-tier-interaction-data-from-the-command-line.md)|  
+|**Profil eines C/C++-Diensts**|-   [Vorgehensweise: Instrumentieren eines nativen Diensts und Sammeln ausführlicher Zeitsteuerungsdaten](../profiling/how-to-instrument-a-native-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line.md)|  
   
-## Verwandte Aufgaben  
+## <a name="related-tasks"></a>Verwandte Aufgaben  
   
-### Profilerstellung für Windows\-Dienste  
+### <a name="profiling-windows-services"></a>Profilerstellung für Windows-Dienste  
   
 |Aufgabe|Verwandter Inhalt|  
-|-------------|-----------------------|  
+|----------|---------------------|  
 |**Profilerstellung mit der Samplingmethode**|-   [Sammeln von Anwendungsstatistiken durch Sampling](../profiling/collecting-application-statistics-for-services-by-using-the-profiler-sampling-method.md)|  
-|**Profilerstellung für .NET\-Speicherbelegung und Garbage Collection**|-   [Sammeln von .NET\-Arbeitsspeicherdaten](../profiling/collecting-memory-data-from-dotnet-framework-services-by-using-the-profiler-command-line.md)|  
+|**Profilerstellung der .NET-Speicherbelegung und Garbage Collection**|-   [Sammeln von Speicherdaten für .NET Framework-Dienste über die Profiler-Befehlszeile](../profiling/collecting-memory-data-from-dotnet-framework-services-by-using-the-profiler-command-line.md)|  
 |**Profilerstellung für Ressourcenkonflikte und Threadaktivität**|-   [Sammeln von Parallelitätsdaten](../profiling/collecting-concurrency-data-for-a-service-by-using-the-profiler-command-line.md)|  
   
-### Profilerstellung mithilfe der Instrumentationsmethode  
+### <a name="profiling-by-using-the-instrumentation-method"></a>Profilerstellung mithilfe der Instrumentierungsmethode  
   
 |Aufgabe|Verwandter Inhalt|  
-|-------------|-----------------------|  
-|**Profilerstellung für eigenständige \(Client\-\)Anwendungen**|-   [Sammeln ausführlicher Zeitsteuerungsdaten mithilfe der Instrumentation](../profiling/collecting-detailed-timing-data-for-a-stand-alone-application-by-using-the-profiler-command-line.md)|  
-|**Profilerstellung für ASP.NET\-Webanwendungen**|-   [Sammeln ausführlicher Zeitsteuerungsdaten mithilfe der Instrumentation](../profiling/collecting-detailed-timing-data-for-an-aspnet-web-application-using-the-profiler-instrumentation-method-from-the-command-line.md)|  
+|----------|---------------------|  
+|**Profilerstellung für eigenständige (Client-)Anwendungen**|-   [Sammeln ausführlicher Zeitsteuerungsdaten für eine ASP.NET-Webanwendung über die Befehlszeile mit der Profiler-Instrumentationsmethode](../profiling/collecting-detailed-timing-data-for-a-stand-alone-application-by-using-the-profiler-command-line.md)|  
+|**Profilerstellung für ASP.NET-Webanwendungen**|-   [Sammeln ausführlicher Zeitsteuerungsdaten mithilfe der Instrumentation](../profiling/collecting-detailed-timing-data-for-an-aspnet-web-application-using-the-profiler-instrumentation-method-from-the-command-line.md)|  
   
-### Analysieren von Ansichten und Berichten mit Instrumentationsdaten  
- [Instrumentationsmethoden\-Datenansichten](../profiling/instrumentation-method-data-views.md)
+### <a name="analyzing-instrumentation-data-views-and-reports"></a>Analysieren von Instrumentationsdatenansichten und -berichten  
+ [Instrumentierungsmethoden-Datenansichten](../profiling/instrumentation-method-data-views.md)

@@ -1,19 +1,17 @@
 ---
-title: "Einrichten eines Git-Repository in Visual Studio für Mac"
-description: "Verwenden von Git und Subversion in Visual Studio für Mac."
+title: "Einrichten eines Git-Repository in Visual Studio für Mac | Microsoft-Dokumentation"
+description: "Verwenden von Git und Subversion in Visual Studio für Mac"
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: E992FA1D-B2AD-4A28-ADC6-47E4FC471060
+ms.openlocfilehash: 2f6c06ff640007f28cfaed6512fdedc5dcb16e65
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
-ms.openlocfilehash: 9f25eda17648ba7eb3c264660ee0eb3b8eee166c
-ms.contentlocale: de-de
-ms.lasthandoff: 08/11/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="setting-up-a-git-repository"></a>Einrichten eines Git-Repository
 
 Bei Git handelt es sich um ein verteiltes Versionskontrollsystem, mit dem die Mitglieder eines Teams gleichzeitig an den gleichen Dokumenten arbeiten können. Dies bedeutet, dass es einen einzelnen Server mit allen Dateien gibt. Wenn aber ein Repository aus dieser zentralen Quelle ausgecheckt wird, wird das gesamte Repository auf Ihrem Computer lokal geklont.
@@ -81,9 +79,30 @@ Führen sie die folgenden Schritte aus, um ein Git-Repository einzurichten:
 
 ## <a name="publishing-a-new-project"></a>Veröffentlichen eines neuen Projekts
 
-Das Dialogfeld „Neues Projekt“ kann verwendet werden, um ein neues Projekt mithilfe von Git zu veröffentlichen. Um dies zu aktivieren, aktivieren Sie das Kontrollkästchen **Git-Versionskontrolle verwenden.** , wie im folgenden Screenshot dargestellt. Dadurch wird Ihr Repository initialisiert, außerdem wird eine optionale .GITIGNORE-Datei hinzugefügt:
+Das Dialogfeld „Neues Projekt“ kann verwendet werden, um ein neues Projekt mithilfe von Git zu veröffentlichen. Um dies zu aktivieren, aktivieren Sie das Kontrollkästchen **Git-Versionskontrolle verwenden.** , wie im folgenden Screenshot dargestellt. Dadurch wird Ihr Repository initialisiert, außerdem wird eine optionale GITIGNORE-Datei hinzugefügt:
 
 ![Übertragen von Änderungen mit einem Push an ein Remoterepository](media/version-control-git12.png)
+
+## <a name="checkout-an-existing-repository"></a>Check-Out eines vorhandenen Repositorys
+
+Es ist sehr wahrscheinlich, dass Sie mit einem GitHub-Repository arbeiten müssen, dass nur auf dem Remote- und nicht auf dem lokalen Computer vorhanden ist. Mit Visual Studio für Mac können Sie dieses Repository schnell auschecken. Führen Sie die unten stehenden Schritte durch, um das Repository auf Ihrem Computer zu klonen:
+
+1. Klicken Sie in der Menüleiste auf **Versionskontrolle > Check-Out**:
+
+2. Die Registerkarte **Connect to Repository** (Mit Repository verbinden) wird geöffnet:
+
+    ![Registerkarte „Mit Repository verbinden“ mit ausgefüllten Angaben](media/version-control-git13.png)
+
+3. Klicken Sie auf der GitHub-Seite des Remoterepositorys auf **Clone or Download** (Klonen oder Herunterladen), und kopieren die dort angegebene URL:
+
+    ![angegebene GitHub-URL](media/version-control-git14.png)
+
+4. Ersetzen Sie den Text im Eingabefeld **URL** auf der Registerkarte **Mit Repository verbinden**. Dadurch wird ein Großteil der anderen Felder auf dieser Registerkarte wie auf dem Bild in Schritt 2 ausgefüllt.
+
+5. Geben Sie das Verzeichnis ein, in das das Repository geklont werden soll, und klicken Sie auf **Check-Out**.
+
+> [!NOTE]
+Möglicherweise treten Probleme auf, wenn das Repository größer als 4 GB ist.
 
 ## <a name="troubleshooting"></a>Problembehandlung
 
@@ -91,8 +110,8 @@ Wenn Sie Probleme beim Initialisieren Ihres Projekts mit einem leeren Remoterepo
 
 - Navigieren Sie zu Ihrem Projektmappenordner.
 - Drücken Sie `Command + Shift + . `, um ausgeblendete Dateien und Ordner anzuzeigen.
-- Wenn ein `.git`-Ordner vorhanden ist, löschen Sie diesen.
-- Wenn eine `gitignore`-Datei vorhanden ist, löschen Sie diese.
+- Wenn ein **.git**-Ordner vorhanden ist, löschen Sie diesen.
+- Wenn eine **GITIGNORE**-Datei vorhanden ist, löschen Sie diese.
 - Drücken Sie `Command + Shift + . `, um die Dateien und Ordner auszublenden.
 - Öffnen Sie Ihre Projektmappe in Visual Studio für Mac.
 - Klicken Sie auf den Knoten „Projektmappe“ im Projektmappenpad.

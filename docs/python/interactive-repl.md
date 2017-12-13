@@ -1,27 +1,24 @@
 ---
 title: Python Interactive REPL in Visual Studio | Microsoft-Dokumentation
 ms.custom: 
-ms.date: 7/13/2017
+ms.date: 07/13/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-python
+ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 642dc47e-c265-44ea-a77d-3db14170a36f
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: 0e524208684afa38916af858e6ec3a8adb1f5932
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
-ms.openlocfilehash: 69943d19c0eec4702285d255ce0c26defde79b1c
-ms.contentlocale: de-de
-ms.lasthandoff: 07/18/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="working-with-the-python-interactive-window"></a>Arbeiten mit dem interaktiven Python-Fenster
 
 Visual Studio bietet ein interaktives „Lesen-Auswerten-Ausgeben-Schleife“-Fenster (Read Eval Print Loop, REPL) für Ihre Python-Umgebungen, das eine Verbesserung ist gegenüber dem REPL, das Sie mit der Eingabe von `python.exe` in der Befehlszeile erhalten. Im interaktiven Fenster (geöffnet mit den Befehlen **Ansicht > Weitere Fenster > &lt;Umgebung&gt; interaktive** Menübefehle) können Sie beliebigen Python-Code eingeben und sofortige Ergebnisse anzeigen lassen. Diese Art der Codierung unterstützt Sie beim Lernen und Experimentieren mit APIs und Bibliotheken und beim interaktiven Entwickeln von funktionierendem Code, den Sie in Ihre Projekte einfügen können.
@@ -39,9 +36,9 @@ Visual Studio stellt eine Reihe von Python-REPL-Modi zur Auswahl:
 
 Dieses Thema beschreibt den **Standard**- und **Debug**-REPL-Modus. Ausführliche Informationen zu den IPython-Modi finden Sie unter [Using Python in the Interactive Window](interactive-repl-ipython.md) (Verwenden von Python im interaktiven Fenster).
 
-Eine detaillierte exemplarische Vorgehensweise mit Beispielen, einschließlich der Interaktionen mit dem Editor wie z.B. STRG+EINGABETASTE, finden Sie unter [Getting started - Using the interactive REPL window (Erste Schritte: Verwenden des interaktiven REPL-Fensters)](getting-started.md#using-the-interactive-repl-window). Eine Video-Einführung finden Sie unter [Getting Started with Python in Visual Studio, Part 5: Interactive REPL](https://youtu.be/yc2CROtTsC0?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff) (Erste Schritte mit Python in Visual Studio, Teil 5: interaktives REPL) (youtube.com, 2 Min. 51 Sek.).
+Eine detaillierte exemplarische Vorgehensweise mit Beispielen, einschließlich der Interaktionen mit dem Editor wie z.B. STRG+EINGABETASTE, finden Sie unter [Tutorial Step 3: Using the interactive REPL window (Tutorial Schritt 3: Verwenden des interaktiven REPL-Fensters)](vs-tutorial-01-03.md). Eine Video-Einführung finden Sie unter [Python Interactive Window (Interaktives Python-Fenster)](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=gJYKY5LWE_4605918567) (Microsoft Virtual Academy, 2 Min. 22 Sek.).
 
-> [!VIDEO https://www.youtube.com/embed/yc2CROtTsC0]
+> [!VIDEO https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Python-Interactive-Window-gJYKY5LWE_4605918567]
 
 ## <a name="opening-an-interactive-window"></a>Öffnen eines interaktiven Fensters
 
@@ -131,4 +128,3 @@ Visual Studio erkennt auch Codezellen, die mit Kommentaren wie `# In[1]:` beginn
 Das interaktive Fenster enthält IntelliSense auf der Basis von Liveobjekten, im Gegensatz zum Code-Editor, in dem IntelliSense nur auf der Quellcodeanalyse basiert. Diese Vorschläge im interaktiven Fenster sind korrekter, insbesondere bei dynamisch generiertem Code. Der Nachteil besteht darin, dass Funktionen mit Nebenwirkungen (z.B. Protokollierungsmeldungen) Ihre Entwicklungserfahrung beeinträchtigen können.
 
 Wenn dieses Verhalten ein Problem darstellt, ändern Sie die Einstellungen unter **Tools > Optionen > Python-Tools > Interaktive Fenster** in der Gruppe **Vervollständigungsmodus**, wie unter [Options - Interactive Windows options (Optionen: Optionen zu interaktiven Fenstern)](options.md#interactive-windows-options) beschrieben.
-

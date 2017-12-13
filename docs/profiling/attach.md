@@ -1,82 +1,83 @@
 ---
-title: "Attach | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: Attach | Microsoft-Dokumentation
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 79614283-6733-4592-a53a-d428052271ad
-caps.latest.revision: 12
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: cbba99fd39bff8364e7853cd8d0f73f0e567e1d4
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Attach
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Die **Attach**\-Option von "VSPerfCmd.exe" startet die Samplingprofilerstellung des laufenden Prozesses, der von der Prozess\-ID \(PID\) angegeben wurde.  
+# <a name="attach"></a>Anfügen
+Die VSPerfCmd.exe-Option **Attach** beginnt die Samplingprofilerstellung für den laufenden Prozess, der von der Prozess-ID (PID) angegeben wird.  
   
- Um die **Attach**\-Option verwenden zu können, müssen Sie die **Sample**\-Methode in der Start\-Option angeben.  
+ Um **Attach** zu verwenden, müssen Sie die Methode **Sample** in der Option „Start“ angeben.  
   
 > [!NOTE]
->  Wenn die **Start**\-Option mit der **Crosssession**\-Option angegeben wurde, müssen alle Aufrufe von **VSPerfCmd \/Attach** oder **VSPerfCmd \/Detach** auch **Crosssession** angeben.  
+>  Wenn die Option **CrossSession** für die Option **Start** angegeben wurde, müssen alle Aufrufe von **VSPerfCmd /Attach** oder **VSPerfCmd /Detach** auch **CrossSession** angeben.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 VSPerfCmd.exe /Attach:ProcessID [Options]  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `ProcessID`  
- Die Prozess\-ID \(PID\) des laufenden Prozesses.  Die PID eines laufenden Prozesses ist auf der Registerkarte "Prozesse" des Windows Task\-Managers aufgeführt.  
+ Die Prozess-ID (PID) des laufenden Prozesses. Die PID eines laufenden Prozesses wird auf der Registerkarte „Prozesse“ des Windows Task-Managers aufgeführt.  
   
-## Gültige Optionen  
- Die folgenden **VSPerfCmd**\-Optionen können mit der **Attach**\-Option in einer einzelnen Befehlszeile kombiniert werden.  
+## <a name="valid-options"></a>Gültige Optionen  
+ Die folgenden **VSPerfCmd**-Optionen können mit der Option **Attach** in derselben Befehlszeile kombiniert werden.  
   
  **Crosssession**  
- Aktiviert Profilerstellungsanwendungen in anderen Sitzungen als in der Anmeldesitzung.  Erforderlich, wenn die **Start**\-Option mit der **Crosssession**\-Option angegeben wurde.  
+ Aktiviert die Profilerstellung für Anwendungen in Sitzungen, die keine Anmeldesitzungen sind. Diese Option ist erforderlich, wenn die Option **Start** mit der Option **CrossSession** angegeben wurde.  
   
  **Start:** `Method`  
- Initialisiert die Befehlszeilen\-Profilersitzung und legt die angegebene Profilerstellungsmethode fest.  
+ Initialisiert die Befehlszeilen-Profilersitzung und legt die angegebene Profilerstellungsmethode fest  
   
  **TargetCLR**  
- Gibt die Version der .NET Framework\-CLR \(Common Language Runtime\) an, für die ein Profil erstellt werden soll, wenn in einer Profilerstellungssitzung mehr als eine Version geladen wurde.  Standardmäßig wird die zuerst geladene Version für die Profilerstellung verwendet.  
+ Gibt die Version der .NET Framework-CLR (Common Language Runtime) für die Profilerstellung an, wenn mehr als eine Version in einer Profilerstellungssitzung geladen wird. Standardmäßig wird für die zuerst geladene Version ein Profil erstellt.  
   
  **GlobalOn GlobalOff**  
- Damit wird die Profilerstellung fortgesetzt \(**GlobalOn**\) oder angehalten \(**GlobalOff**\), die Profilerstellungssitzung wird jedoch nicht beendet.  
+ Setzt die Profilerstellung fort (**GlobalOn**) oder unterbricht sie (**GlobalOff**), aber nicht die Profilerstellungssitzung  
   
  **ProcessOn:** `PID` **ProcessOff:** `PID`  
- Damit wird die Profilerstellung für den angegebenen Prozess fortgesetzt \(**ProcessOn**\) oder angehalten \(**ProcessOff**\).  
+ Setzt die Profilerstellung für den angegebenen Prozess fort (**ProcessOn**) oder unterbricht sie (**ProcessOff**)  
   
-## Intervalloptionen  
- In der Attach\-Befehlszeile kann eine der folgenden Samplingintervalloptionen angegeben werden.  Das Standardsamplingintervall beträgt 10.000.000 Prozessortaktzyklen.  
+## <a name="interval-options"></a>Intervalloptionen  
+ Eine der folgenden Optionen für Samplingintervalle kann in der Attach-Befehlszeile angegeben werden. Das Standardsamplingintervall sind 10.000.000 Prozessortaktzyklen.  
   
- **Timer**\[**:**`Cycles`\]**PF**\[**:**`Events`\]**Sys**\[**:**Events\]**Counter**\[**:**`Name`,`Reload`,`FriendlyName`\]  
- Gibt die Anzahl und den Typ des Samplingintervalls an.  
+ **Timer**[**:**`Cycles`]**PF**[**:**`Events`]**Sys**[**:**Events]**Counter**[**:**`Name`,`Reload`,`FriendlyName`]  
+ Gibt die Anzahl und den Typ des Samplingintervalls an  
   
--   **Timer** \- Führt alle `Cycles` Prozessortaktzyklen ein Sampling durch.  Wenn `Cycles` nicht angegeben ist, werden 10.000.000 Zyklen verwendet.  
+-   **Timer**: Sampelt alle `Cycles`-Prozessortaktzyklen. Wenn `Cycles` nicht angegeben ist, wird ein Intervall von 10.000.000 verwendet.  
   
--   **PF** \- Führt alle `Events` Seitenfehler ein Sampling durch.  Wenn `Events` nicht angegeben ist, werden 10 Seitenfehler verwendet.  
+-   **PF**: Sampelt alle `Events`-Seitenfehler. Wenn `Events` nicht angegeben ist, geschieht dies bei jedem 10. Seitenfehler.  
   
--   **Sys** \- Führt alle `Events` Aufrufe des Betriebssystems ein Sampling durch.  Wenn `Events` nicht angegeben ist, werden 10 Systemaufrufe verwendet.  
+-   **Sys**: Sampelt `Events`-Aufrufe des Betriebssystems. Wenn `Events` nicht angegeben ist, wird jeder 10. Systemaufruf untersucht.  
   
--   **Counter** \- Führt alle `Reload` CPU\-Leistungsindikatoren, die mit `Name` angegeben sind, ein Sampling durch.  Optional kann `FriendlyName` eine Zeichenfolge angeben, die  in Profilerberichten als Spaltenüberschrift verwendet werden soll.  
+-   **Counter**: Sampelt alle `Reload`-Zahlen der von `Name` angegebenen CPU-Leistungsindikatoren. `FriendlyName` kann optional eine Zeichenfolge angeben, die als Spaltenüberschrift in Profilerberichten verwendet wird.  
   
-## Beispiel  
- In diesem Beispiel wird das Anfügen einer Anwendung an eine laufende Instanz mit der Prozess\-ID 12345 veranschaulicht.  
+## <a name="example"></a>Beispiel  
+ In diesem Beispiel wird veranschaulicht, wie eine ausgeführte Instanz einer Anwendung mit der Prozess-ID 12345 angefügt wird.  
   
 ```  
 VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp  
 VSPerfCmd.exe /Attach:12345  
 ```  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [Profilerstellung für eigenständige Anwendungen](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [Profilerstellung für ASP.NET\-Webanwendungen](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [Profilerstellungsdienste](../profiling/command-line-profiling-of-services.md)
+ [Profilerstellung für ASP.NET-Webanwendungen](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [Erstellen von Dienstprofilen](../profiling/command-line-profiling-of-services.md)

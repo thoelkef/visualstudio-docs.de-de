@@ -1,39 +1,39 @@
 ---
-title: "MSBuild Targets | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "MSBuild, targets"
+title: MSBuild-Ziele | Microsoft-Dokumentation
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: MSBuild, targets
 ms.assetid: 8060b4d2-e4a9-48cf-a437-852649ceb417
-caps.latest.revision: 26
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 26
+caps.latest.revision: "26"
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.openlocfilehash: 29c9397ea886024c894b977f05ec83f8d7c70f60
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# MSBuild Targets
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Ziele fassen Aufgaben in einer bestimmten Reihenfolge zusammen und ermöglichen das Unterteilen des Buildprozesses in kleinere Einheiten.  Zur Vorbereitung des Builds kann ein Ziel beispielsweise alle Dateien im Ausgabeverzeichnis löschen, während ein anderes Ziel die Eingaben für das Projekt kompiliert und sie im leeren Verzeichnis ablegt.  Weitere Informationen zu Aufgaben finden Sie unter [Tasks](../msbuild/msbuild-tasks.md).  
+# <a name="msbuild-targets"></a>MSBuild-Ziele
+Durch Ziele werden Aufgaben in einer bestimmten Reihenfolge gruppiert, und der Buildprozess kann in kleinere Einheiten aufgeteilt werden. Ein Ziel kann beispielsweise alle Dateien im Ausgabeverzeichnis zur Vorbereitung auf den Build löschen, während ein anderes die Eingaben für das Projekt kompiliert und diese in einem leeren Verzeichnis platziert. Weitere Informationen zu Aufgaben finden Sie unter [Aufgaben](../msbuild/msbuild-tasks.md).  
   
-## Deklarieren von Zielen in der Projektdatei  
- Ziele werden in einer Projektdatei mit dem [Target](../msbuild/target-element-msbuild.md)\-Element deklariert.  Durch den folgenden XML\-Code wird beispielsweise ein Ziel mit dem Namen Construct erstellt, durch das anschießend die Csc\-Aufgabe mit der Compile\-Elementtyp aufgerufen wird.  
+## <a name="declaring-targets-in-the-project-file"></a>Deklarieren von Zielen in der Projektdatei  
+ Ziele werden in der Projektdatei mithilfe des [Target](../msbuild/target-element-msbuild.md)-Elements deklariert. Die folgende XML erstellt beispielsweise ein Ziel namens „Construct“, das dann die Csc-Aufgabe mit dem Elementtyp „Compile“ aufruft.  
   
-```  
+```xml  
 <Target Name="Construct">  
     <Csc Sources="@(Compile)" />  
 </Target>  
 ```  
   
- Wie MSBuild\-Eigenschaften können Ziele neu definiert werden.  Beispiel:  
+ Ziele können genau wie MSBuild-Eigenschaften neu definiert werden. Beispiel:  
   
-```  
+```xml  
 <Target Name="AfterBuild" >  
     <Message Text="First occurrence" />  
 </Target>  
@@ -42,10 +42,10 @@ Ziele fassen Aufgaben in einer bestimmten Reihenfolge zusammen und ermöglichen 
 </Target>  
 ```  
   
- Wenn AfterBuild ausgeführt wird, zeigt es nur "Second occurence" an.  
+ Wenn AfterBuild ausgeführt wird, wird nur „Second occurrence“ (Zweites Vorkommen) angezeigt.  
   
-## Buildreihenfolge für Ziele  
- Wenn die Eingabe für ein Ziel von der Ausgabe eines anderen Ziels abhängt, müssen die Ziele geordnet werden.  Die Reihenfolge, in der die Ziele ausgeführt werden, kann auf unterschiedliche Weise angegeben werden.  
+## <a name="target-build-order"></a>Buildreihenfolge für Ziele  
+ Ziele müssen geordnet werden, wenn die Eingabe für ein Ziel von der Ausgabe eines anderen Ziels abhängt. Es gibt mehrere Möglichkeiten, um die Reihenfolge anzugeben, in der die Ziele ausgeführt werden.  
   
 -   Ursprüngliche Ziele  
   
@@ -53,18 +53,18 @@ Ziele fassen Aufgaben in einer bestimmten Reihenfolge zusammen und ermöglichen 
   
 -   Erstes Ziel  
   
--   Abhängigkeiten der Ziele  
+-   Zielabhängigkeiten  
   
--   `BeforeTargets` und `AfterTargets` \(MSBuild 4.0\)  
+-   `BeforeTargets` und `AfterTargets` (MSBuild 4.0)  
   
- In keinem Fall wird ein Ziel während eines Builds zweimal ausgeführt, auch dann nicht, wenn ein nachfolgendes Ziel im Build von diesem abhängt.  Sobald ein Ziel ausgeführt wird, ist sein Beitrag zum Build abgeschlossen.  
+ Ein Ziel wird während eines einzelnen Builds nie zweimal ausgeführt, auch wenn ein nachfolgendes Ziel im Build von diesem abhängt. Sobald ein Ziel ausgeführt wird, ist sein Beitrag zum Build abgeschlossen.  
   
- Ausführliche Informationen zur Buildreihenfolge für Ziele finden Sie unter [Buildreihenfolge für Ziele](../msbuild/target-build-order.md).  
+ Ausführlichere Informationen zur Buildreihenfolge für Ziele finden Sie unter [Buildreihenfolge für Ziele](../msbuild/target-build-order.md).  
   
-## Batchverarbeitung von Zielen  
- Ein Zielelement verfügt möglicherweise über ein `Outputs`\-Attribut, das Metadaten im Format %\(Metadaten\) angibt.  In diesem Fall führt MSBuild das Ziel einmal für jeden eindeutigen Metadatenwert aus und fasst Elemente mit diesem Metadatenwert in einer Batchverarbeitung zusammen.  Beispiel:  
+## <a name="target-batching"></a>Zielbatchverarbeitung  
+ Ein Zielelement kann ein `Outputs`-Attribut enthalten, das Metadaten im Format %(Metadaten) angibt. Wenn dies der Fall ist, führt MSBuild das Ziel einmal für jeden eindeutigen Metadatenwert aus und gruppiert die Elemente, die diesen Metadatenwert aufweisen. Beispiel:  
   
-```  
+```xml  
 <ItemGroup>  
     <Reference Include="System.Core">  
       <RequiredTargetFramework>3.5</RequiredTargetFramework>  
@@ -83,21 +83,20 @@ Ziele fassen Aufgaben in einer bestimmten Reihenfolge zusammen und ermöglichen 
 </Target>  
 ```  
   
- Fügt die Verweiselemente nach ihren RequiredTargetFramework\-Metadaten zu einem Stapel zusammen.  Die Ausgabe der Ziele sieht wie folgt aus:  
+ Die Verweiselemente werden nach ihren RequiredTargetFramework-Metadaten gruppiert. Die Ausgabe des Ziels sieht folgendermaßen aus:  
   
 ```  
 Reference: 3.5;3.5  
 Reference: 4.0  
-  
 ```  
   
- Zielbatchverarbeitung wird selten bei tatsächlichen Builds verwendet.  Aufgabenbatchverarbeitung ist eher die Regel.  Weitere Informationen finden Sie unter [Batching](../msbuild/msbuild-batching.md).  
+ Die Zielbatchverarbeitung wird in tatsächlichen Builds selten verwendet. Die Aufgabenbatchverarbeitung wird häufiger verwendet. Weitere Informationen finden Sie unter [MSBuild Batching (Batchverarbeitung)](../msbuild/msbuild-batching.md).  
   
-## Inkrementelle Builds  
- Inkrementelle Builds sind Buildvorgänge, die so optimiert werden, dass Ziele mit Ausgabedateien, die hinsichtlich der zugehörigen Eingabedateien aktuell sind, nicht ausgeführt werden.  Zielelemente können sowohl über ein `Inputs`\-Attribut, das die Elemente angibt, die das Ziel als Eingabe erwartet, sowie ein `Outputs`\-Attribut verfügen, das die Elemente angibt, die es als Ausgabe erzeugt.  
+## <a name="incremental-builds"></a>Inkrementelle Builds  
+ Inkrementelle Builds sind Buildvorgänge, die so optimiert werden, dass Ziele mit Ausgabedateien, die hinsichtlich der zugehörigen Eingabedateien aktuell sind, nicht ausgeführt werden. Ein Zielelement kann über das `Inputs`- und das `Outputs`-Attribut verfügen, die angeben, welche Elemente das Ziel als Eingabe erwartet und welche es als Ausgabe erzeugt.  
   
- Wenn alle Ausgabeelemente aktuell sind, überspringt MSBuild das Ziel, wodurch die Buildgeschwindigkeit bedeutend verbessert wird.  Dies wird als inkrementeller Build des Ziels bezeichnet.  Wenn nur einige Dateien aktuell sind, führt MSBuild das Ziel aus, überspringt jedoch die aktuellen Elemente.  Dies wird als partieller inkrementeller Build des Ziels bezeichnet.  Weitere Informationen finden Sie unter [Incremental Builds](../msbuild/incremental-builds.md).  
+ Wenn alle Ausgabeelemente aktuell sind, überspringt MSBuild das Ziel, wodurch die Buildgeschwindigkeit deutlich verbessert wird. Dies wird als inkrementeller Build des Ziels bezeichnet. Wenn nur einige Dateien aktuell sind, führt MSBuild das Ziel ohne die aktuellen Elemente aus. Dies wird als partiell inkrementeller Build des Ziels bezeichnet. Weitere Informationen finden Sie unter [Incremental Builds](../msbuild/incremental-builds.md) (Inkrementelle Builds).  
   
-## Siehe auch  
- [MSBuild Concepts](../msbuild/msbuild-concepts.md)   
- [How to: Use the Same Target in Multiple Project Files](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)
+## <a name="see-also"></a>Siehe auch  
+ [MSBuild Concepts](../msbuild/msbuild-concepts.md)  (MSBuild-Grundlagen)  
+ [Gewusst wie: Verwenden eines Ziels in mehreren Projektdateien](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)

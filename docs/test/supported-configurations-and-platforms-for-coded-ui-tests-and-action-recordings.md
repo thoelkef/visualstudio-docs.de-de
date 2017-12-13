@@ -4,37 +4,19 @@ ms.custom:
 ms.date: 2015-10-04
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- coded UI tests
+helpviewer_keywords: coded UI tests
 ms.assetid: 544742b5-4ec1-4d51-b941-72b2f6ff17bc
-caps.latest.revision: 106
+caps.latest.revision: "106"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: cbc542a413b63b4da4a4d8699c06b313ff32f86c
-ms.contentlocale: de-de
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: de0ce914e61f6fd3dc3eb227496b09e77c37be57
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/02/2017
 ---
 # <a name="supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings"></a>Unterstützte Konfigurationen und Plattformen für Tests der programmierten UI und Aktionsaufzeichnungen
 Die unterstützten Konfigurationen und Plattformen für Tests der codierten UI für Visual Studio Enterprise werden in der folgenden Tabelle aufgeführt. Diese Konfigurationen gelten auch für Aktionsaufzeichnungen, die mit [!INCLUDE[MTRlong](../test/includes/mtrlong_md.md)]erstellt wurden.  
@@ -56,14 +38,14 @@ Die unterstützten Konfigurationen und Plattformen für Tests der codierten UI f
 |.NET|.NET 2.0, 3.0, 3.5, 4 und 4.5. **Hinweis:** [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] und Visual Studio setzen .NET 4 voraus. Mit den aufgeführten .NET-Versionen entwickelte Anwendungen werden jedoch unterstützt.|  
   
 > [!NOTE]
-> Die *Benutzeroberflächensynchronisierung* ist eine Funktion, bei der die Wiedergabe in die Nachrichtenwarteschlange jedes Steuerelements überprüft wird. Wenn ein Steuerelement nicht auf das Ereignis reagierte, das an es gesendet wurde, wird das Ereignis erneut gesendet.  
+>  Die*Benutzeroberflächensynchronisierung* ist eine Funktion, bei der die Wiedergabe in die Nachrichtenwarteschlange jedes Steuerelements überprüft wird. Wenn ein Steuerelement nicht auf das Ereignis reagierte, das an es gesendet wurde, wird das Ereignis erneut gesendet.  
   
 ## <a name="platform-support"></a>Plattformunterstützung  
   
 |Plattform|Grad der Unterstützung|  
 |--------------|----------------------|  
 |Windows Phone-Apps|Nur auf WinRT-XAML basierende Phone-Apps werden unterstützt.|  
-|Windows Store-Apps|Nur XAML-basierte Store-Apps werden unterstützt.|  
+|UWP-Apps|Es werden nur XAML-basierte UWP-Apps unterstützt.|  
 |Universelle Windows-Apps|Nur XAML-basierte universelle Windows-Apps für Phone und Desktop werden unterstützt.|  
 |Kante|In Visual Studio 2015 Update 2 und höher durch Verwendung der [Erweiterung für browserübergreifende Tests der programmierten UI](https://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d)|  
 |Internet Explorer 8<br /><br /> Internet Explorer 9<br /><br /> Internet Explorer 10 **Wichtig:** Internet Explorer 10 wird nur auf dem Desktop unterstützt. <br /><br /> Internet Explorer 11 **Wichtig:** Internet Explorer 11 wird nur auf dem Desktop unterstützt.|Vollständige Unterstützung<br /><br /> -   **Unterstützung für HTML5 in Internet Explorer 9 und Internet Explorer 10:** Tests der codierten UI unterstützen Aufzeichnung, Wiedergabe und Überprüfung der HTML5-Steuerelemente: Audio, Video, ProgressBar und Schieberegler. Weitere Informationen finden Sie unter [Verwenden von HTML5-Steuerelementen in Tests der programmierten UI](../test/using-html5-controls-in-coded-ui-tests.md). **Warnung:** Wenn Sie einen Test der programmierten UI in Internet Explorer 10 erstellen, wird dieser mit Internet Explorer 9 oder Internet Explorer 8 möglicherweise nicht ausgeführt. Der Grund hierfür ist, dass Internet Explorer 10 HTML5-Steuerelemente wie Audio, Video, ProgressBar und Schieberegler enthält. Diese HTML5-Steuerelemente werden von Internet Explorer 9 oder Internet Explorer 8 nicht erkannt. Entsprechend kann der Test der codierten UI unter Verwendung von Internet Explorer 9 einige HTML5-Steuerelemente enthalten, die auch nicht von Internet Explorer 8 erkannt werden.<br />-   **Unterstützung für die Rechtschreibprüfung von Internet Explorer 10:** Internet Explorer 10 enthält Rechtschreibprüfungsfunktionen für alle Textfelder. Dadurch können Sie aus einer Liste vorgeschlagener Korrekturen wählen. Der Test der codierten UI ignoriert Benutzeraktionen wie das Auswählen eines alternativen Rechtschreibvorschlags. Nur der endgültige in das Textfeld eingegebene Text wird aufgezeichnet.<br />     Die folgenden Aktionen werden beim Test der codierten UI aufgezeichnet, bei denen das Steuerelement zur Rechtschreibprüfung verwendet wird: "Zum Wörterbuch hinzufügen", "Kopieren", "Alle auswählen" und "Ignorieren".<br />-   **Unterstützung für Internet Explorer (64-Bit) unter Windows 8:** Zuvor wurden 64-Bit-Versionen von Internet Explorer für Aufzeichnung und Wiedergabe nicht unterstützt. Mit [!INCLUDE[win8](../debugger/includes/win8_md.md)] und [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] können Tests der codierten UI für 64-Bit-Versionen von Internet Explorer ausgeführt werden. **Warnung:** Die 64-Bit-Unterstützung für Internet Explorer gilt nur unter [!INCLUDE[win8](../debugger/includes/win8_md.md)] oder höher.<br />-   **Unterstützung für angeheftete Sites in Internet Explorer 9:** In Internet Explorer 9 wurden angeheftete Sites eingeführt. Mit angehefteten Websites können Sie Ihre Lieblingssites direkt über die Windows-Taskleiste aufrufen, ohne Internet Explorer zuerst öffnen zu müssen. Tests der codierten UI können nun absichtbewusste Aktionen für angeheftete Sites generieren. Weitere Informationen über angeheftete Sites finden Sie unter [Angeheftete Sites](http://go.microsoft.com/fwlink/?LinkId=220037).<br />-   **Unterstützung für semantische Tags in Internet Explorer 9:** Mit Internet Explorer 9 wurden die folgenden semantischen Tags eingeführt: section, nav, article, aside, hgroup, header, footer, figure, figcaption und mark. Tests der codierten UI ignorieren all diese semantischen Tags während der Aufzeichnung. Sie können mit dem Test-Generator für codierte UI Assertionen für diese Tags hinzufügen. Mit der Navigationssteuerung im Test-Generator für codierte UI können Sie zu all diesen Elementen navigieren und die zugehörigen Eigenschaften anzeigen.<br />-   **Nahtlose Behandlung von Leerzeichen zwischen Versionen von Internet Explorer:** Bei der Behandlung von Leerzeichen gibt es Unterschiede zwischen Internet Explorer 8, Internet Explorer 9 und Internet Explorer 10. Der Test der codierten UI behandelt diese Unterschiede nahtlos. Daher wird ein Test der codierten UI, der in Internet Explorer 8 erstellt wurde, beispielsweise problemlos in Internet Explorer 9 und Internet Explorer 10 wiedergegeben.<br />-   **Der Infobereich von Internet Explorer wird nun mit dem festgelegten Attribut „Bei Fehler fortsetzen“ aufgezeichnet:** Alle Aktionen im Infobereich von Internet Explorer werden nun mit dem festgelegten Attribut „Bei Fehler fortsetzen“ aufgezeichnet. Wenn der Infobereich während der Wiedergabe nicht angezeigt wird, werden die Aktionen darin ignoriert, und der Test der codierten UI wird mit der nächsten Aktion fortgesetzt.|  
@@ -90,4 +72,3 @@ Die unterstützten Konfigurationen und Plattformen für Tests der codierten UI f
 ## <a name="see-also"></a>Siehe auch  
  [Verwenden von Benutzeroberflächenautomatisierung zum Testen des Codes](../test/use-ui-automation-to-test-your-code.md)   
  [Gewusst wie: Generieren eines Tests der codierten UI aus einer vorhandenen Aktionsaufzeichnung](/devops-test-docs/test/generating-a-coded-ui-test-from-an-existing-action-recording)
-

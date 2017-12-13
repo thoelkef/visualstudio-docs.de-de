@@ -1,57 +1,57 @@
 ---
-title: "Sammeln von Anwendungsstatistiken f&#252;r eigenst&#228;ndige Anwendungen &#252;ber die Profiler-Befehlszeile | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Sampling-Profilerstellungsmethode"
-  - "Profilerstellungstools, Samplingmethode"
+title: "Sammeln von Anwendungsstatistiken für eigenständige Anwendungen über die Profiler-Befehlszeile | Microsoft-Dokumentation"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- sampling profiling method
+- profilng tools,sampling method
 ms.assetid: be2dbdd0-fc88-45f9-a1d5-bcb4f64e17ad
-caps.latest.revision: 19
-caps.handback.revision: 19
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "19"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 75f9596666bdb2fca45cfda4bc3c43c1611a33e5
+ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/11/2017
 ---
-# Sammeln von Anwendungsstatistiken f&#252;r eigenst&#228;ndige Anwendungen &#252;ber die Profiler-Befehlszeile
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-In diesem Abschnitt werden die Prozeduren und Optionen zum Sammeln von Leistungsstatistik für eine Clientanwendung \(eigenständig\) mit der Samplingmethode über die Befehlszeile beschrieben.  
+# <a name="collecting-application-statistics-for-stand-alone-applications-by-using-the-profiler-command-line"></a>Sammeln von Anwendungsstatistiken für eigenständige Anwendungen über die Profiler-Befehlszeile
+In diesem Abschnitt werden die Prozeduren und Optionen zum Sammeln von Leistungsstatistiken für eine Clientanwendung (eigenständig) mit der Samplingmethode über die Befehlszeile beschrieben.  
   
 > [!NOTE]
->  Verbesserte Sicherheitsfeatures in Windows 8 und Windows Server 2012 erforderten tiefgreifende Änderungen bei der Datenerfassung des Visual Studio\-Profilers auf diesen Plattformen.  Außerdem benötigen Windows Store\-Apps neue Erfassungsmethoden.  Siehe [Profilerstellung für Windows 8\- und Windows Server 2012\-Anwendungen](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
+>  Verbesserte Sicherheitsfeatures in Windows 8 und Windows Server 2012 erforderten tiefgreifende Änderungen bei der Datenerfassung des Visual Studio-Profilers auf diesen Plattformen. Außerdem benötigen UWP-Apps neue Erfassungsmethoden. Siehe [Leistungstools für Windows 8- und Windows Server 2012-Anwendungen](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
-## Allgemeine Aufgaben  
-  
-|Aufgabe|Verwandter Inhalt|  
-|-------------|-----------------------|  
-|**Starten einer Anwendung mit der Profilerstellung**|-   [Gewusst wie: Starten einer eigenständigen Anwendung und Sammeln von Anwendungsstatistiken](../profiling/how-to-launch-a-stand-alone-application-with-the-profiler-and-collect-application-statistics-by-using-the-command-line.md)|  
-|**Fügen Sie den Profiler an eine aktive .NET Framework\-Anwendung an**|-   [Gewusst wie: Anfügen des Profilers an eine .NET Framework\-Webanwendung und Sammeln von Anwendungsstatistiken](../profiling/how-to-attach-the-profiler-to-a-dotnet-framework-stand-alone-application-and-collect-application-statistics-by-using-the-command-line.md)|  
-|**Anfügen des Profilers an eine ausgeführte C\/C\+\+\-Anwendung**|-   [Gewusst wie: Anfügen des Profilers an eine systemeigene Anwendung und Sammeln von Anwendungsstatistiken](../profiling/how-to-attach-the-profiler-to-a-native-stand-alone-application-and-collect-application-statistics-by-using-the-command-line.md)|  
-|**Hinzufügen von Ebeneninteraktionsdaten**|-   [Erfassen von Ebeneninteraktionsdaten](../profiling/adding-tier-interaction-data-from-the-command-line.md)|  
-  
-## Verwandte Aufgaben  
-  
-### Profilerstellung für eigenständige Anwendungen  
+## <a name="common-tasks"></a>Allgemeine Aufgaben  
   
 |Aufgabe|Verwandter Inhalt|  
-|-------------|-----------------------|  
-|**Instrumentieren einer Anwendung**|-   [Sammeln ausführlicher Zeitsteuerungsdaten mithilfe der Instrumentation](../profiling/collecting-detailed-timing-data-for-a-stand-alone-application-by-using-the-profiler-command-line.md)|  
-|**Sammeln von .NET\-Speicherbelegung und Garbage Collection\-Daten**|-   [Sammeln von .NET Framework\-Arbeitsspeicherdaten](../profiling/collecting-dotnet-framework-memory-data-for-stand-alone-applications-by-using-the-profiler-command-line.md)|  
-|**Erfassen von Ressourcenkonflikt\- und Threadausführungsdaten**|-   [Sammeln von Parallelitätsdaten](../profiling/collecting-concurrency-data-for-stand-alone-applications-by-using-the-profiler-command-line.md)|  
+|----------|---------------------|  
+|**Starten einer Anwendung mit der Profilerstellung**|-   [Vorgehensweise: Starten einer eigenständigen Anwendung mit dem Profiler und Sammeln von Anwendungsstatistiken über die Befehlszeile](../profiling/how-to-launch-a-stand-alone-application-with-the-profiler-and-collect-application-statistics-by-using-the-command-line.md)|  
+|**Anfügen des Profilers an eine aktive .NET Framework-Anwendung**|-   [Vorgehensweise: Anfügen des Profilers an eine eigenständige .NET Framework-Anwendung und Sammeln von Anwendungsdaten über die Befehlszeile](../profiling/how-to-attach-the-profiler-to-a-dotnet-framework-stand-alone-application-and-collect-application-statistics-by-using-the-command-line.md)|  
+|**Anfügen des Profilers an eine aktive C/C++-Anwendung**|-   [Vorgehensweise: Anfügen des Profilers an eine native, eigenständige .NET Framework-Anwendung und Sammeln von Anwendungsdaten über die Befehlszeile](../profiling/how-to-attach-the-profiler-to-a-native-stand-alone-application-and-collect-application-statistics-by-using-the-command-line.md)|  
+|**Hinzufügen von Ebeneninteraktionsdaten**|-   [Hinzufügen von Ebeneninteraktionsdaten über die Befehlszeile](../profiling/adding-tier-interaction-data-from-the-command-line.md)|  
   
-### Profilerstellung mithilfe der Samplingmethode  
+## <a name="related-tasks"></a>Verwandte Aufgaben  
+  
+### <a name="profiling-stand-alone-applications"></a>Profilerstellung für eigenständige Anwendungen  
   
 |Aufgabe|Verwandter Inhalt|  
-|-------------|-----------------------|  
-|**Profilerstellung für ASP.NET\-Webanwendungen**|-   [Sammeln von Anwendungsstatistiken durch Sampling](../profiling/collecting-application-statistics-for-aspnet-web-applications-using-the-profiler-sampling-method-from-the-command-line.md)|  
-|**Profilerstellung für Dienste**|-   [Sammeln von Anwendungsstatistiken durch Sampling](../profiling/collecting-application-statistics-for-services-by-using-the-profiler-sampling-method.md).  Beschreibt, wie Leistungsstatistik mit der Samplingmethode von Windows\-Diensten gesammelt wird.|  
+|----------|---------------------|  
+|**Instrumentieren einer Anwendung**|-   [Sammeln ausführlicher Zeitsteuerungsdaten für eine eigenständige Anwendung über die Profiler-Befehlszeile](../profiling/collecting-detailed-timing-data-for-a-stand-alone-application-by-using-the-profiler-command-line.md)|  
+|**Sammeln von .NET-Speicherbelegungs- und Garbage Collection-Daten**|-   [Sammeln von .NET Framework-Speicherdaten für eigenständige Anwendungen über die Profiler-Befehlszeile](../profiling/collecting-dotnet-framework-memory-data-for-stand-alone-applications-by-using-the-profiler-command-line.md)|  
+|**Erfassen von Ressourcenkonflikt- und Threadausführungsdaten**|-   [Sammeln paralleler Daten für eigenständige Anwendungen über die Profiler-Befehlszeile](../profiling/collecting-concurrency-data-for-stand-alone-applications-by-using-the-profiler-command-line.md)|  
   
-### Analysieren von Ansichten und Berichten für Samplingdaten  
- [Datenansichten der Samplingmethode](../profiling/profiler-sampling-method-data-views.md)
+### <a name="profiling-by-using-the-sampling-method"></a>Profilerstellung mithilfe der Samplingmethode  
+  
+|Aufgabe|Verwandter Inhalt|  
+|----------|---------------------|  
+|**Profilerstellung für ASP.NET-Webanwendungen**|-   [Sammeln von Anwendungsstatistiken für ASP.NET-Webanwendungen über die Befehlszeile mit der Profiler-Samplingmethode](../profiling/collecting-application-statistics-for-aspnet-web-applications-using-the-profiler-sampling-method-from-the-command-line.md)|  
+|**Profilerstellung für Dienste**|-   [Sammeln von Anwendungsstatistiken für Dienste mithilfe der Profiler-Samplingmethode](../profiling/collecting-application-statistics-for-services-by-using-the-profiler-sampling-method.md) Beschreibt das Sammeln von Leistungsstatistiken mit der Samplingmethode von Windows-Diensten.|  
+  
+### <a name="analyzing-sampling-data-views-and-reports"></a>Analysieren von Ansichten und Berichten für Samplingdaten  
+ [Datenansichten der Profiler-Samplingmethode](../profiling/profiler-sampling-method-data-views.md)

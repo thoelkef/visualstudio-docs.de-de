@@ -1,79 +1,80 @@
 ---
-title: "Status | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: Status | Microsoft-Dokumentation
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: ba656fa4-ef9d-4d8c-a3b6-739c3b5d23ae
-caps.latest.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: debc70294bf0b513f22ed1cc06b9f0790da7b778
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Status
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Die **Status**\-Option von VSPerfCmd.exe zeigt Informationen zum Status des Profilers und allen Prozessen an, die zurzeit profiliert werden.  
+# <a name="status"></a>Status
+Die VSPerfCmd.exe-Option **Status** zeigt Informationen über den Status des Profilers und aller Prozesse, für die gerade ein Profil erstellt wird.  
   
- Außer der **Status**\-Option dürfen keine anderen Optionen in der Befehlszeile angegeben werden.  Der Profiler muss mit der **Start**\-Option von VSPerfCmd.exe initialisiert werden, bevor ein Status angezeigt werden kann.  
+ Die Option **Status** darf als einzige Option in der Befehlszeile angegeben werden. Der Profiler muss mit der VSPerfCmd.exe-Option **Start** initialisiert werden, bevor ein Status angezeigt werden kann.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 VSPerfCmd.exe /Status  
 ```  
   
-#### Parameter  
- Kein  
+#### <a name="parameters"></a>Parameter  
+ Keine  
   
-## Hinweise  
- Die **Status**\-Option zeigt die folgenden Zustandsinformationen für den Profiler an.  
+## <a name="remarks"></a>Hinweise  
+ Die Option **Status** zeigt die folgenden Statusinformationen für den Profiler an.  
   
- **Output File Name**  
- Der Pfad und Dateiname der aktuellen Profilerdatendatei.  
+ **Name der Ausgabedatei**  
+ Der Pfad und der Name der aktuellen Profiler-Datendatei  
   
- **Collection Mode**  
+ **Sammlungsmodus**  
  SAMPLE oder TRACE  
   
- **Maximum Processes**  
- Die maximale Anzahl von Prozessen, die gleichzeitig profiliert werden können, und die Anzahl von gerade aktiven Prozessen.  
+ **Maximale Anzahl von Prozessen**  
+ Die maximale Anzahl von Prozessen, für die gleichzeitig ein Profil erstellt werden kann und die maximale Anzahl der derzeit aktiven Prozesse  
   
- **Maximum Threads**  
- Die maximale Anzahl der Threads, die gleichzeitig profiliert werden können.  
+ **Maximale Anzahl von Threads**  
+ Die maximale Anzahl von Threads, für die gleichzeitig ein Profil erstellt werden kann  
   
- **Number of Buffers**  
- Die Anzahl von Speicherpuffern, die für das Schreiben von Profilerstellungsdaten vorgesehen sind.  
+ **Anzahl der Puffer**  
+ Die Anzahl der Speicherpuffer, die Profilerstellungsdaten schreiben  
   
- **Size of Buffers**  
- Die Größe eines Speicherpuffers in Byte.  
+ **Puffergröße**  
+ Die Größe eines Speicherpuffers in Bytes  
   
- Die **Status**\-Option zeigt die folgenden Zustandsinformationen für jeden Prozess an, der gerade profiliert wird.  
+ Die Option **Status** zeigt die folgenden Statusinformationen für jeden Prozess an, für den gerade ein Profil erstellt wird.  
   
  **Process**  
- Der Name des profilierten Prozesses.  
+ Der Name des Prozesses, für den ein Profil erstellt wurde  
   
- **Process ID**  
- Der Systembezeichner des Prozesses.  
+ **Prozess-ID**  
+ Der Systembezeichner des Prozesses  
   
- **Num Threads**  
- Die Anzahl der gleichzeitig ausgeführten Threads.  
+ **Anzahl der Threads**  
+ Die Anzahl der Threads, die momentan ausgeführt werden  
   
- **Start\/Stop Count**  
- Die primäre interne Profileranzahl zum Steuern der Datenauflistung für diesen Prozess.  Die Anzahl muss gleich eins sein, damit Daten erfasst werden.  Die Start\/Stop\-Anzahl kann durch die Profiler\-APIs und die VSPerfCmd\-Optionen **GlobalOn**, **GlobalOff**, **ProcessOn**, **ProcessOff**, **ThreadOn** und **ThreadOff** geändert werden.  
+ **Start/Stop-Zähler**  
+ Der primäre Profilerzähler zum Steuern der Datensammlung für diesen Prozess. Der Zähler muss eins sein, damit Daten gesammelt werden. Die Start/Stop-Zähler kann von den Profiler-APIs und den VSPerfCmd-Optionen **GlobalOn**, **GlobalOff**, **ProcessOn**, **ProcessOff**, **ThreadOn** und **ThreadOff** bearbeitet werden.  
   
- **Suspend\/Resume Count**  
- Die sekundäre interne Profileranzahl zum Steuern der Datenauflistung für diesen Prozess.  Die Anzahl muss kleiner oder gleich 0 \(null\) sein, damit Daten erfasst werden.  Die **Suspend\/Resume**\-Anzahl kann nur von den Profiler\-APIs bearbeitet werden.  
+ **Suspend/Resume-Zähler**  
+ Der sekundäre interne Profilerzähler zum Steuern der Datensammlung für diesen Prozess. Sie muss kleiner als oder gleich 0 (null) sein, um Daten zu sammeln. Der **Suspend/Resume-Zähler** kann nur von den Profiler-APIs bearbeitet werden.  
   
- **Users with access rights to monitor**  
- Führt die Namen der Benutzer auf, die Zugriff auf den Profiler haben.  Zusätzlichen Benutzern kann Zugriff über die **Admin**\-Option von VSPerfCmd.exe gewährt werden.  
+ **Benutzer mit Zugriffsrechten für die Überwachung**  
+ Listet die Namen der Benutzer mit Zugriff auf den Profiler auf. Zusätzlichen Benutzern kann mithilfe der VSPerfCmd.exe-Option **Admin** Zugriff gewährt werden.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [Profilerstellung für eigenständige Anwendungen](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [Profilerstellung für ASP.NET\-Webanwendungen](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [Profilerstellungsdienste](../profiling/command-line-profiling-of-services.md)
+ [Profilerstellung für ASP.NET-Webanwendungen](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [Erstellen von Dienstprofilen](../profiling/command-line-profiling-of-services.md)

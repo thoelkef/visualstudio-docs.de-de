@@ -1,46 +1,47 @@
 ---
-title: "Neutrale Ressourcensprachen f&#252;r die Lokalisierung | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Kultur, Suchen von Ressourcen"
-  - "Globalisierung [Visual Studio], Ressourcen"
-  - "Lokalisierung [Visual Studio], Ressourcen"
-  - "Neutrale Ressourcen"
-  - "NeutralResourcesLanguageAttribute-Klasse"
-  - "Ressourcen [Visual Studio], Fallbacksystem"
+title: "Neutrale Ressourcensprachen für die Lokalisierung | Microsoft-Dokumentation"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- localization [Visual Studio], resources
+- NeutralResourcesLanguageAttribute class
+- globalization [Visual Studio], resources
+- resources [Visual Studio], fallback system
+- culture, locating resources
+- neutral resources
 ms.assetid: ef064995-3b84-4698-a708-9689b7723533
-caps.latest.revision: 8
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 89e6e1f0814165781f92049537b4ae8748246b48
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Neutrale Ressourcensprachen f&#252;r die Lokalisierung
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Die <xref:System.Resources.NeutralResourcesLanguageAttribute>\-Klasse gibt die Kultur der in der Hauptassembly enthaltenen Ressourcen an.  Dieses Attribut zielt auf eine Leistungssteigerung ab, denn die Suche nach in der Hauptassembly enthaltenen Ressourcen durch das <xref:System.Resources.ResourceManager>\-Objekt wird dadurch vermieden.  
+# <a name="neutral-resources-languages-for-localization"></a>Neutrale Ressourcensprachen für die Lokalisierung
+Die Klasse <xref:System.Resources.NeutralResourcesLanguageAttribute> gibt die Kultur der Ressourcen an, die in der Hauptassembly enthalten sind. Mit diesem Attribut wird die Leistung optimiert, sodass das <xref:System.Resources.ResourceManager>-Objekt nicht nach Ressourcen sucht, die in der Hauptassembly enthalten sind.  
   
- Der folgende Code zeigt das Festlegen der neutralen Ressourcensprache.  Der Code kann entweder in ein Buildscript, in die Datei **AssemblyInfo.vb** oder die Datei **AssemblyInfo.cs** eingefügt werden.  
+ Im folgenden Codebeispiel wird veranschaulicht, wie neutrale Sprachressourcen festgelegt werden. Der Code kann in ein Buildskript, die AssemblyInfo.vb-Datei oder die AssemblyInfo.cs-Datei eingefügt werden.  
   
-```vb#  
+```vb  
 ' Set neutral resources language for assembly.  
 <Assembly: NeutralResourcesLanguageAttribute("en")>  
   
 ```  
   
-```c#  
+```csharp  
 // Set neutral resources language for assembly.  
 [assembly: NeutralResourcesLanguageAttribute("en")]  
 ```  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  <xref:System.Resources.ResourceManager>   
  [Einführung in internationale Anwendungen basierend auf .NET Framework](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md)   
  [Hierarchische Organisation der Ressourcen für die Lokalisierung](../ide/hierarchical-organization-of-resources-for-localization.md)   

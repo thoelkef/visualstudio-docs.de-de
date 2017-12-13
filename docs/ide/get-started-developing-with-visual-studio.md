@@ -4,47 +4,29 @@ ms.custom:
 ms.date: 11/16/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-acquisition
+ms.technology: vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- Visual Studio, getting started
+helpviewer_keywords: Visual Studio, getting started
 ms.assetid: 041ef726-f117-4a91-9c18-fef043bf2529
-caps.latest.revision: 65
+caps.latest.revision: "65"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 4b2952b9233c7c4571ad4509cc7c4beda7ee2338
-ms.contentlocale: de-de
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 5ac7781ecb53727572a9d8594f4a65c5e9c6628c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="get-started-developing-with-visual-studio"></a>Get Started Developing with Visual Studio
+# <a name="get-started-developing-with-visual-studio"></a>Erste Schritte mit der Entwicklung mit Visual Studio
 Willkommen bei Visual Studio! Nach dem [Download](http://www.visualstudio.com/community) des Produkts finden Sie auf diesen Seiten Informationen, die Ihnen die ersten Schritte beim Codieren vereinfachen.  
 
 -   **[Erstellen von Web-Apps](https://www.visualstudio.com/features/modern-web-tooling-vs):** Tools zum Erstellen und Bereitstellen moderner Webanwendungen.  
 
      [Tutorial durchlaufen](https://docs.asp.net/en/latest/tutorials/your-first-aspnet-application.html) &#124;                               [Dokumentation durchsuchen](https://docs.asp.net/) &#124;                                   [Video ansehen](http://www.asp.net/vnext)  
 
--   **[Erstellen von plattformübergreifenden mobilen Apps in HTML/Javascript (Apache Cordova)](http://taco.visualstudio.com/en-us/docs/get-started-first-mobile-app/)**:               Apache Cordova ist eine plattformübergreifende Open-Source-Umgebung, die auf HTML/CSS/Javascript basiert.  Ihr Javascript-Code wird in einem Wrapper für                eine bestimmte Plattform ausgeführt. So haben Sie Zugriff auf alle Hardwarefunktionen des Geräts. Entwickeln Sie Apps für Apple Store, Android Store und Windows Store.  
+-   **[Erstellen von plattformübergreifenden mobilen Apps in HTML/Javascript (Apache Cordova)](http://taco.visualstudio.com/en-us/docs/get-started-first-mobile-app/)**:               Apache Cordova ist eine plattformübergreifende Open-Source-Umgebung, die auf HTML/CSS/Javascript basiert. Ihr Javascript-Code wird in einem Wrapper für eine bestimmte Plattform ausgeführt. So haben Sie Zugriff auf alle Hardwarefunktionen des Geräts. Entwickeln Sie Apps für Apple Store, Android Store und Microsoft Store.  
 
      [Beispiel laden](https://github.com/Microsoft/cordova-samples/tree/master/todo-angularjs) &#124;   [Tutorial durchlaufen](http://taco.visualstudio.com/en-us/docs/get-started-first-mobile-app/) &#124;                               [Dokumentation durchsuchen](http://taco.visualstudio.com/en-us/docs/get-started-vs-tools-apache-cordova/) &#124;                                [Video ansehen](https://channel9.msdn.com/Blogs/Seth-Juarez/Getting-Started-with-Apache-Cordova-in-Visual-Studio)  
 
@@ -85,4 +67,3 @@ Willkommen bei Visual Studio! Nach dem [Download](http://www.visualstudio.com/co
 |[Erste Schritte mit Visual C# und Visual Basic](../ide/getting-started-with-visual-csharp-and-visual-basic.md)|[Schreiben von JavaScript-Code](https://msdn.microsoft.com/library/cte3c772.aspx)|  
 |[Visual C++ für plattformübergreifende Mobile-Entwicklung](../cross-platform/visual-cpp-for-cross-platform-mobile-development.md)|[Einführung in die funktionale Programmierung mit F#](http://msdn.microsoft.com/library/vstudio/dd233147.aspx)|  
 |[Erste Schritte mit C++](../ide/getting-started-with-cpp-in-visual-studio.md)|[Erste Schritte beim Debuggen in Visual Studio](../ide/getting-started-with-debugging-in-visual-studio.md)|
-

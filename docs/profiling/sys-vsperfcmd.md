@@ -1,75 +1,76 @@
 ---
-title: "Sys (VSPerfCmd) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: Sys (VSPerfCmd) | Microsoft-Dokumentation
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 294a6f9e-b49f-4c83-b322-5ac5411b66fb
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 4c733e9ce91ede2e8944616c5db1a727349854b1
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Sys (VSPerfCmd)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Die **Sys**\-Option von "VSPerfCmd.exe" legt das Profilerstellungsereignis, für das ein Sampling ausgeführt wird, auf Systemaufrufereignisse \(Funktionsaufrufe von der profilierten Anwendung an das Betriebssystem\) fest und bestimmt optional eine andere Standardeinstellung als "10" für die Anzahl der Systemaufrufe in einem Samplingintervall.  
+# <a name="sys-vsperfcmd"></a>Sys (VSPerfCmd)
+Die „VSPerfCmd.exe“-Option **Sys** legt das Profilerstellungereignis fest, für das ein Sampling für Aufrufereignisse (Funktionsaufrufe des Betriebssystems der Anwendung mit einem Profil) durchgeführt werden soll, und ändert optional die Anzahl der Systemaufrufe (standardmäßig 10) in einem Samplingintervall.  
   
- **Sys** kann nur in einer Befehlszeile verwendet werden, die auch die **Launch**\-Option oder die **Attach**\-Option enthält.  
+ **Sys** kann nur in einer Befehlszeile verwendet werden, die auch die Optionen **Launch** (Starten) und **Attach** (Anfügen) enthält.  
   
- Standardmäßig wird das Samplingereignis des Profilers auf Prozessortaktzyklen und das Samplingintervall auf 10.000.000 festgelegt.  Mit den Optionen **Timer**, **PF**, **Sys** und **Counter** können Sie das Samplingereignis und das Samplingintervall festlegen.  Die **GC**\-Option erfasst bei jedem Belegungs\- und Garbage Collection\-Ereignis .NET\-Arbeitsspeicherdaten.  In einer Befehlszeile kann nur eine dieser Optionen angegeben werden.  
+ Standardmäßig ist das Profiler-Samplingereignis auf Prozessortaktzyklen eingestellt und das Samplingintervall beträgt 10.000.000. Die Optionen **Timer**, **PF**, **Sys** und **Counter** ermöglichen es Ihnen, das Samplingereignis und das Samplingintervall festzulegen. Die Option **GC** sammelt die .NET-Speicherdaten bei jedem Zuordnungs- und Garbage Collection-Ereignis. In einer Befehlszeile kann nur eine dieser Optionen angegeben werden.  
   
- Das Samplingereignis und das Samplingintervall können nur in der ersten Befehlszeile mit einer **Launch**\-Option oder einer **Attach**\-Option festgelegt werden.  
+ Das Samplingereignis und -intervall können nur in der ersten Befehlszeile festgelegt werden, die die Option **Launch** (Starten) oder **Attach** (Anfügen) enthält.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 VSPerfCmd.exe {/Launch:AppName|Attach:PID} /Sys[:Events] [Options]  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `Events`  
- Ein ganzzahliger Wert, der die Anzahl von Systemaufrufereignissen in einem Samplingintervall angibt.  Wenn `Events` nicht angegeben ist, wird das Intervall standardmäßig auf 10 festgelegt.  
+ Ein ganzzahliger Wert, der die Anzahl der Systemaufrufe in einem Samplingintervall angibt. Wenn `Events` nicht festgelegt wurde, wird das Intervall auf 10 festgelegt.  
   
-## Erforderliche Optionen  
- Die **Sys**\-Option erfordert eine der folgenden Optionen.  
+## <a name="required-options"></a>Erforderliche Optionen  
+ Für **Sys** ist eine der folgenden Optionen erforderlich.  
   
- **Launch:** `AppName`  
- Startet den Profiler und die mit `AppName` angegebene Anwendung.  
+ **Starten:** `AppName`  
+ Startet den Profiler und die von `AppName` festgelegten Anwendungen.  
   
  **Attach:** `PID`  
- Fügt den Profiler an den Prozess an, der von `PID` angegeben wurde.  
+ Fügt den Profiler an den von `PID` angegebenen Prozess an.  
   
-## Ungültige Optionen  
- Die folgenden Optionen können nicht in der gleichen Befehlszeile wie **Sys** angegeben werden.  
+## <a name="invalid-options"></a>Ungültige Optionen  
+ Die folgenden Optionen können nicht in derselben Befehlszeile wie **Sys** festgelegt werden.  
   
- **PF**\[**:**`Events`\]  
- Legt das Samplingereignis auf Seitenfehler fest und das Samplingintervall optional auf `Events`.  Standard\-PF ist 10.  
+ **PF**[**:**`Events`]  
+ Legt die Seitenstandards für das Samplingereignis fest und optional das Samplingintervall auf `Events`. Das standardmäßige PF-Intervall beträgt 10.  
   
- **Timer**\[**:**`Cycles`\]  
- Legt das Samplingereignis auf Prozessortaktzyklen und das Samplingintervall optional auf `Cycles` fest.  Standard\-Zeitgeberintervall ist 10.000.000.  
+ **Timer**[**:**`Cycles`]  
+ Legt das Samplingereignis auf die Prozessortaktzyklen und das Samplingintervall optional auf `Cycles` fest. Das Timer-Standardintervall beträgt 10.000.000.  
   
- **Counter:** `Name`\[`,Reload`\[`,FriendlyName`\]\]  
- Legt das Samplingereignis auf den mit `Name` angegebenen CPU\-Leistungsindikator und das Samplingintervall auf `Reload` fest.  
+ **Counter:** `Name`[`,Reload`[`,FriendlyName`]]  
+ Legt das Samplingereignis auf den von `Name` festgelegten CPU-Leistungsindikator fest und das Samplingintervall auf `Reload`.  
   
- **GC**\[**:**{**Allocation**&#124;**Lifetime**}\]  
- Sammelt .NET\-Arbeitsspeicherdaten.  Standardmäßig \(**Allocation**\) werden Daten bei jeder Speicherbelegung gesammelt.  Wenn der **Lifetime**\-Parameter angegeben wird, werden Daten auch bei jedem Garbage Collection\-Ereignis erfasst.  
+ **GC**[**:**{**Allocation**|**Lifetime**}]  
+ Sammelt .NET-Speicherdaten. Wenn der Parameter **Allocation** angegeben wird (Standard), werden Daten bei jedem Speicherbelegungsereignis gesammelt. Wenn jedoch der **Lifetime**-Parameter angegeben wird, werden die Daten auch bei jedem Garbage Collection-Ereignis gesammelt.  
   
-## Beispiel  
- In diesem Beispiel wird veranschaulicht, wie das Profiler\-Samplingereignis auf Systemaufrufe festgelegt wird und als Samplingintervall 20 Aufrufe pro Sampling angegeben werden.  
+## <a name="example"></a>Beispiel  
+ Im folgenden Beispiel wird dargestellt, wie das Profilersamplingereignis auf Symstemaufrufe und das Samplingintervall auf 20 Aufrufe pro Beispiel festgelegt wird.  
   
 ```  
 VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp  
 VSPerfCmd.exe /Launch:TestApp.exe /Sys:20  
 ```  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [Profilerstellung für eigenständige Anwendungen](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [Profilerstellung für ASP.NET\-Webanwendungen](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [Profilerstellungsdienste](../profiling/command-line-profiling-of-services.md)
+ [Profilerstellung für ASP.NET-Webanwendungen](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [Erstellen von Dienstprofilen](../profiling/command-line-profiling-of-services.md)

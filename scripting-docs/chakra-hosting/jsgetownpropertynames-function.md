@@ -1,27 +1,29 @@
 ---
-title: "JsGetOwnPropertyNames-Funktion | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
-f1_keywords: 
-  - "jsrt/JsGetOwnPropertyNames"
-helpviewer_keywords: 
-  - "JsGetOwnPropertyNames-Funktion"
+title: JsGetOwnPropertyNames-Funktion | Microsoft-Dokumentation
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
+f1_keywords: jsrt/JsGetOwnPropertyNames
+helpviewer_keywords: JsGetOwnPropertyNames function
 ms.assetid: 0c17ea06-b17f-4ea3-ad04-1259a4d1b6de
-caps.latest.revision: 12
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: f4efd4133fb2636afdacba205f7be1ba7980a36c
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# JsGetOwnPropertyNames-Funktion
+# <a name="jsgetownpropertynames-function"></a>JsGetOwnPropertyNames-Funktion
 Ruft die Liste aller Eigenschaften für das Objekt ab.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 STDAPI_(JsErrorCode) JsGetOwnPropertyNames(  
@@ -30,21 +32,21 @@ STDAPI_(JsErrorCode) JsGetOwnPropertyNames(
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `object`  
  Das Objekt, aus dem die Eigenschaftsnamen abgerufen werden sollen.  
   
  `propertyNames`  
  Ein Array von Eigenschaftsnamen.  
   
-## Rückgabewert  
- Der Code `JsNoError`, wenn der Vorgang erfolgreich war, andernfalls ein Fehlercode.  
+## <a name="return-value"></a>Rückgabewert  
+ Der Code `JsNoError` , wenn der Vorgang erfolgreich war, andernfalls ein Fehlercode.  
   
-## Hinweise  
- Erfordert einen Active Script\-Kontext.  
+## <a name="remarks"></a>Hinweise  
+ Erfordert einen Active Script-Kontext.  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  **Header:** jsrt.h  
   
-## Siehe auch  
- [Verweis \(JavaScript\-Laufzeit\)](../chakra-hosting/reference-javascript-runtime.md)
+## <a name="see-also"></a>Siehe auch  
+ [Referenz (JavaScript-Laufzeit)](../chakra-hosting/reference-javascript-runtime.md)
