@@ -8,16 +8,15 @@ ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 1ce09377-9073-404c-9339-fa871a4b0841
 caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 8ba37a922c24a02d7586b9c95f57ad27a7152736
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 3ea3afdaa6a7a29bc85c46b6eff0f15c5c91c046
+ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="quickstart-clone-a-repository-of-python-code-in-visual-studio"></a>Schnellstart: Klonen eines Repositorys in Python-Code in Visual Studio
 
@@ -29,7 +28,7 @@ Sobald Sie [die Python-Unterstützung für Visual Studio 2017 installiert haben]
 
 3. Klicken Sie auf **Ansicht > Team Explorer…**, um das Fenster **Team Explorer** zu öffnen. Von dort können Sie eine Verbindung zu GitHub oder Visual Studio Team Services herstellen oder ein Repository klonen.
 
-    ![Das Team Explorer-Fenster zeigt Visual Studio Team Services, GitHub und das Klonen eines Repositorys an.](media/team-explorer.png)
+    ![Das Team Explorer-Fenster zeigt Visual Studio Team Services, GitHub und das Klonen eines Repositorys.](media/team-explorer.png)
 
 4. Geben Sie im URL-Feld unter **Lokale Git-Repositorys** `https://github.com/gregmalcolm/python_koans` ein, geben Sie einen Ordner für die geklonten Dateien an, und klicken Sie auf **Klonen**.
 

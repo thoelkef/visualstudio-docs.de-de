@@ -12,11 +12,11 @@ ms.assetid: 9DE41406-8D39-427E-99D9-987E99103B73
 caps.latest.revision: "56"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 8ca7133aa2cb4f02e3a8761d38fb22fcc2ce6122
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.openlocfilehash: feb31e2a5c4abf0013ee4d3ec0a20c7f3cfdff2a
+ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 11/15/2017
 ---
 # <a name="developer-testing-tools-scenarios-and-capabilities"></a>Testtools, -szenarios und -funktionen für Entwickler
 
@@ -88,7 +88,7 @@ Der Test-Explorer hilft Entwicklern beim Erstellen, Verwalten und Ausnutzen von 
 
 * [Erste Schritte mit Unittests](unit-test-your-code.md)
 * [Ausführen von Komponententests mit dem Test-Explorer](run-unit-tests-with-test-explorer.md)
-* [Schreiben von Unittests für C/C++](writing-unit-tests-for-c-cpp-with-the-microsoft-unit-testing-framework-for-cpp.md)
+* [Schreiben von Komponententests für C/C++](writing-unit-tests-for-c-cpp.md)
 * [Installieren von Frameworks für Komponententests von Drittanbietern](install-third-party-unit-test-frameworks.md)
 
 Visual Studio kann auch erweitert werden und ermöglicht Kompontenentestadapter von Drittanbietern wie NUnit und xUnit.net. Zusätzlich arbeitet die Codeklonfunktion Hand in Hand mit dem Bereitstellen hochwertiger Software. Mit ihr können Sie Blöcke von semantisch ähnlichem Code identifizieren, die Kandidaten für gängige Fehlerbehebungen und Refactoring sein können.

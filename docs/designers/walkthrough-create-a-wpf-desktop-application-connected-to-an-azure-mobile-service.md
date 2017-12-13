@@ -16,11 +16,11 @@ manager: ghogen
 dev_langs:
 - csharp
 - vb
-ms.openlocfilehash: 8bf11425439387a13db2bb77f0ce798bef076461
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 28f06905820d890f2f13c3c7e77fd57fb75fe4b6
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service"></a>Exemplarische Vorgehensweise: Erstellen einer WPF-Desktopanwendung, die mit einem Azure Mobile Service verbunden ist
 Mit Windows Presentation Foundation (WPF) können Sie schnell eine moderne Desktopanwendung erstellen, die zum Speichern und Bereitstellen von Daten eines Azure Mobile Service verwendet.  
@@ -556,7 +556,7 @@ Im nächsten Schritt erstellen Sie die Benutzeroberfläche für die Anwendung. Z
      Dadurch wird die **UpdateCheckedTodoItem** -Methode aufgerufen, die das Element von der Liste und aus der Datenbank entfernt.  
   
 ## <a name="next-steps"></a>Nächste Schritte  
- Sie haben ein recht einfaches Beispiel einer WPF-Desktopanwendung mit einem Azure-Backend ausgeführt. Echte Anwendungen sind natürlich viel komplexer, aber für diese gelten einige grundlegende Konzepte. Weitere Informationen finden Sie unter [WPF in .NET Framework](https://msdn.microsoft.com/en-us/library/ms754130\(v=vs.100\).aspx).  
+ Sie haben ein recht einfaches Beispiel einer WPF-Desktopanwendung mit einem Azure-Backend ausgeführt. Echte Anwendungen sind natürlich viel komplexer, aber für diese gelten einige grundlegende Konzepte. Weitere Informationen finden Sie unter [WPF in .NET Framework](https://msdn.microsoft.com/en-us/library/ms754130).  
   
  Sie können eine Benutzeroberfläche viel ansprechender gestalten, indem Sie dieser Farben, Formen, Grafiken und Animationen hinzufügen. Weitere Informationen finden Sie unter [Erstellen einer Benutzeroberfläche mit dem XAML-Designer in Visual Studio](creating-a-ui-by-using-xaml-designer-in-visual-studio.md) und [Erstellen einer Benutzeroberfläche mit Blend für Visual Studio](creating-a-ui-by-using-blend-for-visual-studio.md). Einen Vergleich der Tools finden Sie unter [Designing XAML in Visual Studio and Blend for Visual Studio (Entwerfen von XAML-Code in Visual Studio und Blend für Visual Studio)](../designers/designing-xaml-in-visual-studio.md).  
 

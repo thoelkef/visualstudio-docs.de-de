@@ -13,11 +13,11 @@ caps.latest.revision: "65"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 5ac7781ecb53727572a9d8594f4a65c5e9c6628c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 9d35ce547e216f632f56cf8bf445b115290486cc
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="get-started-developing-with-visual-studio"></a>Erste Schritte mit der Entwicklung mit Visual Studio
 Willkommen bei Visual Studio! Nach dem [Download](http://www.visualstudio.com/community) des Produkts finden Sie auf diesen Seiten Informationen, die Ihnen die ersten Schritte beim Codieren vereinfachen.  
@@ -32,11 +32,11 @@ Willkommen bei Visual Studio! Nach dem [Download](http://www.visualstudio.com/co
 
 -   **[Erstellen von plattformübergreifenden mobilen Apps in C# oder Visual Basic (Xamarin)](../cross-platform/visual-studio-and-xamarin.md)** : Finden Sie den Einstieg in Visual Studio und Tools für Xamarin, um mobile Apps zu erstellen, die von einer gemeinsamen Codebasis aus auf der Android-, der iOS- und der universellen Windows-Plattform ausgeführt werden können.  
 
-     Beispiel laden: [Tasky Portable-](http://developer.xamarin.com/samples/mobile/TaskyPortable/) (native Benutzeroberfläche) oder  [Xamarin Forms Todo-Beispiel](https://github.com/xamarin/xamarin-forms-samples/tree/master/Todo) (Xamarin.Forms gemeinsame Benutzeroberfläche) &#124;   [Tutorial durchlaufen](https://msdn.microsoft.com/library/dn879698.aspx) &#124;                             [Dokumentation durchsuchen](https://msdn.microsoft.com/en-us/library/mt299001.aspx) &#124;                                  [Video ansehen](https://channel9.msdn.com/Series/Cross-Platform-Development-with-Xamarin--Visual-Studio/01)  
+     Beispiel laden: [Tasky Portable-](http://developer.xamarin.com/samples/mobile/TaskyPortable/) (native Benutzeroberfläche) oder  [Xamarin Forms Todo-Beispiel](https://github.com/xamarin/xamarin-forms-samples/tree/master/Todo) (Xamarin.Forms gemeinsame Benutzeroberfläche) &#124;   [Tutorial durchlaufen](../cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md) &#124;                             [Dokumentation durchsuchen](../cross-platform/visual-studio-and-xamarin.md) &#124;                                  [Video ansehen](https://channel9.msdn.com/Series/Cross-Platform-Development-with-Xamarin--Visual-Studio/01)  
 
 -   **[Erstellen von plattformübergreifenden Apps und Bibliotheken in C++](https://www.visualstudio.com/explore/cplusplus-mdd-vs.aspx)** Hier finden Sie den Einstieg in das Erstellen von C++-Apps und -Bibliotheken für die Android-, die iOS- und die universelle Windows-Plattform.  
 
-     [Beispiel laden](https://code.msdn.microsoft.com/MoreTeaPots-Android-a9bd8549) &#124;   [Tutorial durchlaufen](https://msdn.microsoft.com/en-us/library/dn707595.aspx) &#124;                               [Dokumentation durchsuchen](https://msdn.microsoft.com/en-us/library/dn707591.aspx) &#124;                                [Video ansehen](https://channel9.msdn.com/Series/ConnectOn-Demand/239)  
+     [Beispiel laden](https://code.msdn.microsoft.com/MoreTeaPots-Android-a9bd8549) &#124;   [Tutorial durchlaufen](../cross-platform/create-an-android-native-activity-app.md) &#124;                               [Dokumentation durchsuchen](../cross-platform/visual-cpp-for-cross-platform-mobile-development.md) &#124;                                [Video ansehen](https://channel9.msdn.com/Series/ConnectOn-Demand/239)  
 
 -   **[Erstellen von Spielen mit DirectX](https://msdn.microsoft.com/en-us/library/windows/desktop/ee663274.aspx)**: Erstellen Sie mit DirectX Spiele für die universelle Windows-Plattform.  
 
@@ -44,7 +44,7 @@ Willkommen bei Visual Studio! Nach dem [Download](http://www.visualstudio.com/co
 
 -   **[Erstellen von Spielen mit Unity](../cross-platform/visual-studio-tools-for-unity.md)**: Erstellen Sie plattformübergreifende Spiele mit dem Unity-Framework.  
 
-     [Beispiel laden](http://unity3d.com/learn/resources/downloads) &#124;                     [Tutorial durchlaufen](http://unity3d.com/learn/tutorials/projects/roll-ball-tutorial) &#124;                               [Dokumentation durchsuchen](https://msdn.microsoft.com/en-us/library/dn940019.aspx) &#124;     [Video ansehen](https://www.youtube.com/playlist?list=PLReL099Y5nRfseAg0k1SJOlpqdcsDs8Em)  
+     [Beispiel laden](http://unity3d.com/learn/resources/downloads) &#124;                     [Tutorial durchlaufen](http://unity3d.com/learn/tutorials/projects/roll-ball-tutorial) &#124;                               [Dokumentation durchsuchen](../cross-platform/visual-studio-tools-for-unity.md) &#124;     [Video ansehen](https://www.youtube.com/playlist?list=PLReL099Y5nRfseAg0k1SJOlpqdcsDs8Em)  
 
 -   **[Erstellen von Apps für die universelle Windows-Plattform](https://dev.windows.com/en-us/windows-apps)** : Erstellen Sie Apps für die universelle Windows-Plattform (XBox, PCs, Tablets, Windows Phone, Surface Hub und Internet der Dinge).  
 
@@ -52,7 +52,7 @@ Willkommen bei Visual Studio! Nach dem [Download](http://www.visualstudio.com/co
 
 -   **[Erstellen von Desktopanwendungen](https://dev.windows.com/en-us/desktop)** : Erstellen Sie herkömmliche Desktopanwendungen für Windows-PCs.  
 
-     [Beispiel laden](https://github.com/microsoft/windows-classic-samples) &#124;                     [Tutorial durchlaufen](https://msdn.microsoft.com/en-us/library/dd492171.aspx) &#124;                               [Dokumentation durchsuchen](https://dev.windows.com/en-us/desktop)  
+     [Beispiel laden](https://github.com/microsoft/windows-classic-samples) &#124;                     [Tutorial durchlaufen](getting-started-with-visual-csharp-and-visual-basic.md) &#124;                               [Dokumentation durchsuchen](https://dev.windows.com/en-us/desktop)  
 
 -   **[Erstellen von Office-Anwendungen](https://msdn.microsoft.com/en-us/library/fp161347.aspx)** : Erstellen Sie Office-Anwendungen zum Erweitern und Anpassen von Word, Excel, Outlook und Powerpoint mit Office 365-Diensten.  
 

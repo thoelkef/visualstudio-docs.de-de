@@ -8,16 +8,15 @@ ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 33b93cb7-d826-4206-894a-fcfab32e7e76
 caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: e37421ea74b1bfa2d8dc5dbb53eb5a981f7e62ca
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.openlocfilehash: d98688251cb7ea2d1336da0b0afc47a2b86fc03d
+ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="install-python-support-in-visual-studio"></a>Installieren der Python-Unterstützung für Visual Studio
 
@@ -47,8 +46,8 @@ ms.lasthandoff: 11/07/2017
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Erstellen einer Umgebung für einen vorhandenen Python-Interpreter.](python-environments.md#creating-an-environment-for-an-existing-interpreter)
+- [Erstellen einer Umgebung für einen vorhandenen Python-Interpreter](python-environments.md#creating-an-environment-for-an-existing-interpreter)
 - [Installieren der Python-Unterstützung für Visual Studio 2015 und früher](installation.md)
-- [Installationsspeicherorte.](installation.md#install-locations)
+- [Installationsspeicherorte](installation.md#install-locations)
 
 <iframe src="" height="0" width="0" frameborder="0" name="frameTarget" />

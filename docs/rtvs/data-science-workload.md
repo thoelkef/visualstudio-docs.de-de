@@ -1,7 +1,7 @@
 ---
 title: Workload von Data Science und analytischen Anwendungen in Visual Studio | Microsoft-Dokumentation
 ms.custom: 
-ms.date: 9/5/2017
+ms.date: 09/05/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -10,16 +10,15 @@ ms.technology:
 - devlang-fsharp
 ms.tgt_pltfrm: 
 ms.topic: landing-page
-ms.assetid: 018069f3-6d1a-4143-a851-d86d2ff5fbfc
 caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 976bd73c7740e474e4fa7ea3e4cf89f880c7900c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 5e7738d03fa0c9b8b460fe1b2fb4bc17076fa3b5
+ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/04/2017
 ---
 # <a name="data-science-and-analytical-applications-workload"></a>Workload von Data Science und analytischen Anwendungen
 
@@ -42,17 +41,16 @@ Durch die Workload werden standardmäßig folgende Optionen installiert, die Sie
 
 - F#-Sprachunterstützung
 - Python:
-    - Unterstützung der Sprache Python
-    - Webunterstützung für Python
-    - [64-Bit-Anaconda3](https://www.continuum.io) (eine Python-Distribution, die umfangreiche Data Science-Bibliotheken sowie einen Python-Interpreter enthält)
-    - Unterstützung von Cookiecutter-Vorlagen
+  - Unterstützung der Sprache Python
+  - Webunterstützung für Python
+  - [64-Bit-Anaconda3](https://www.continuum.io) (eine Python-Distribution, die umfangreiche Data Science-Bibliotheken sowie einen Python-Interpreter enthält)
+  - Unterstützung von Cookiecutter-Vorlagen
 - R:
-    - Unterstützung der Sprache R    
-    - [Microsoft R Client](https://msdn.microsoft.com/microsoft-r/r-client-get-started) (der vollständig kompatible, durch die Community unterstützter R-Interpreter mit ScaleR-Bibliotheken für schnellere Berechnung auf einzelnen Knoten oder Clustern von Microsoft). Sie können auch eine beliebige R-Sprache aus [CRAN](https://cran.r-project.org/) verwenden.)
-    - Laufzeitunterstützung für R-Entwicklungstools
+  - Unterstützung der Sprache R
+  - [Microsoft R Client](/machine-learning-server/r-client/what-is-microsoft-r-client) (der vollständig kompatible, durch die Community unterstützter R-Interpreter mit ScaleR-Bibliotheken für schnellere Berechnung auf einzelnen Knoten oder Clustern von Microsoft). Sie können auch eine beliebige R-Sprache aus [CRAN](https://cran.r-project.org/) verwenden.)
+  - Laufzeitunterstützung für R-Entwicklungstools
 
-> [!Note]
-> Obwohl F# in verschiedenen Workloads enthalten ist und Python seine eigene Workload mitbringt, ist „Data Science und analytische Anwendungen“ derzeit die einzige Workload, die R einschließt. Unabhängig von der Workload können die drei R-Komponenten aber auch im Installer auf der Registerkarte **Einzelne Komponenten** ausgewählt werden. Wählen Sie die Optionen **Entwicklungsaktivitäten > R-Sprachunterstützung**, **Entwicklungsaktivitäten > Microsoft R Client** und **Compiler, Buildtools und Runtimes > Runtimeunterstützung für R-Entwicklungstools**.
+Obwohl F# in verschiedenen Workloads enthalten ist und Python seine eigene Workload mitbringt, ist „Data Science und analytische Anwendungen“ derzeit die einzige Workload, die R einschließt. Unabhängig von der Workload können die drei R-Komponenten aber auch im Installer auf der Registerkarte **Einzelne Komponenten** ausgewählt werden. Wählen Sie die Optionen **Entwicklungsaktivitäten > R-Sprachunterstützung**, **Entwicklungsaktivitäten > Microsoft R Client** und **Compiler, Buildtools und Runtimes > Runtimeunterstützung für R-Entwicklungstools**.
 
 ## <a name="sql-server-integration"></a>Integration von SQL Server
 
@@ -73,7 +71,6 @@ Wenn Sie Ihren Code an dem Ort ausführen, an dem sich bereits Ihre Daten befind
 Sie sollten auch die Workload **Datenspeicherung und -verarbeitung** mit der Option **SQL Server Data Tools** installieren, um die Integration von SQL Server bestmöglich nutzen zu können. Diese Option ermöglicht SQL-IntelliSense, Syntaxhervorhebung und Bereitstellung.
 
 ![Workload von Datenspeicherung und -verarbeitung](media/data-storage-workload.png) &nbsp;&nbsp; &nbsp;&nbsp; ![Workloadoptionen von Datenspeicherung und -verarbeitung](media/data-storage-workload-options.png)
-
 
 Weitere Informationen finden Sie unter: 
 

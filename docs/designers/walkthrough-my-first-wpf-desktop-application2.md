@@ -15,11 +15,11 @@ manager: ghogen
 dev_langs:
 - csharp
 - vb
-ms.openlocfilehash: 75a333c7e5948e13db0c0c91b41128914e23222b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: fb4da07f2ee8d4c30717209ee07221285a8275ee
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="walkthrough-my-first-wpf-desktop-application"></a>Exemplarische Vorgehensweise: Meine erste WPF-Desktopanwendung
 Diese exemplarische Vorgehensweise enthält eine Einführung in die Windows Presentation Foundation (WPF)-Entwicklung. Sie erstellen eine Basisanwendung mit Elementen, die für die meisten WPF-Desktopanwendung verwendet werden: XAML-Markup, CodeBehind, Anwendungsdefinitionen, Steuerelemente, Layout, Datenbindung und Stile.  
@@ -851,40 +851,40 @@ In diesem Abschnitt erstellen Sie die Anwendungsstruktur, die das Projekt und ei
 ##  <a name="Best_Practices"></a> Bewährte Methoden  
  Dieses Beispiel veranschaulicht die Grundlagen von WPF und folgt daher nicht bewährten Methoden für die Anwendungsentwicklung. Ausführlichere Informationen zu bewährten Methoden für die Anwendungsentwicklung mit WPF und .NET Framework finden Sie ggf. unter den folgenden Themen:  
   
--   Barrierefreiheit – [Bewährte Methoden für Eingabehilfen](https://msdn.microsoft.com/en-us/library/aa350483\(v=vs.100\).aspx)  
+-   Barrierefreiheit – [Bewährte Methoden für Eingabehilfen](/dotnet/framework/ui-automation/accessibility-best-practices)  
   
--   Sicherheit – [Sicherheit (WPF)](https://msdn.microsoft.com/en-us/library/aa970906\(v=vs.100\).aspx)  
+-   Sicherheit – [Sicherheit (WPF)](/dotnet/framework/wpf/security-wpf)  
   
--   Lokalisierung – [Übersicht über WPF-Globalisierung und -Lokalisierung](https://msdn.microsoft.com/en-us/library/ms788718\(v=vs.100\).aspx)  
+-   Lokalisierung – [Übersicht über WPF-Globalisierung und -Lokalisierung](/dotnet/framework/wpf/advanced/wpf-globalization-and-localization-overview)  
   
--   Leistung – [Optimieren der WPF-Anwendungsleistung](https://msdn.microsoft.com/en-us/library/aa970683\(v=vs.100\).aspx)  
+-   Leistung – [Optimieren der WPF-Anwendungsleistung](/dotnet/framework/wpf/advanced/optimizing-wpf-application-performance)  
   
 ##  <a name="Whats_Next"></a> Weitere Informationen  
  Sie haben jetzt eine Reihe von Techniken zum Erstellen von Desktopanwendungen mithilfe von WPF kennengelernt. Sie verfügen nun über grundlegende Kenntnisse der Bausteine, die eine datengebundene WPF-Anwendung ausmachen. Dieses Thema erhebt keinen Anspruch auf Vollständigkeit, soll aber eine Vorstellung einiger Möglichkeiten vermitteln, die Sie neben den in diesem Thema vorgestellten Techniken selbst entdecken können.  
   
  Weitere Informationen über die WPF-Architektur und -Programmiermodelle finden Sie in den folgenden Themen:  
   
--   [WPF-Architektur](https://msdn.microsoft.com/en-us/library/ms750441\(v=vs.100\).aspx)  
+-   [WPF-Architektur](/dotnet/framework/wpf/advanced/wpf-architecture)  
   
--   [Übersicht über XAML](https://msdn.microsoft.com/en-us/library/ms752059\(v=vs.100\).aspx)  
+-   [Übersicht über XAML](/dotnet/framework/wpf/advanced/xaml-overview-wpf)  
   
--   [Übersicht über Abhängigkeitseigenschaften](https://msdn.microsoft.com/en-us/library/ms752914\(v=vs.100\).aspx)  
+-   [Übersicht über Abhängigkeitseigenschaften](/dotnet/framework/wpf/advanced/dependency-properties-overview)  
   
--   [Layoutsystem](https://msdn.microsoft.com/en-us/library/ms745058\(v=vs.100\).aspx)  
+-   [Layoutsystem](/dotnet/framework/wpf/advanced/layout)  
   
--   [Stile und Vorlagen](https://msdn.microsoft.com/en-us/library/bb613570\(v=vs.100\).aspx)  
+-   [Stile und Vorlagen](/dotnet/framework/wpf/controls/styles-and-templates)  
   
  Weitere Informationen zum Erstellen von Anwendungen finden Sie in den folgenden Themen:  
   
--   [Übersicht über die Anwendungsentwicklung](https://msdn.microsoft.com/en-us/library/bb613549\(v=vs.100\).aspx)  
+-   [Übersicht über die Anwendungsentwicklung](/dotnet/framework/wpf/app-development/index)  
   
--   [Übersicht zu Steuerelementen](https://msdn.microsoft.com/en-us/library/bb613551\(v=vs.100\).aspx)  
+-   [Übersicht zu Steuerelementen](/dotnet/framework/wpf/controls/index)  
   
--   [Übersicht zur Datenbindung](https://msdn.microsoft.com/en-us/library/ms752347\(v=vs.100\).aspx)  
+-   [Übersicht zur Datenbindung](/dotnet/framework/wpf/data/data-binding-overview)  
   
--   [Übersicht zu WPF-Grafiken, -Animationen und -Medien](https://msdn.microsoft.com/en-us/library/ms742562\(v=vs.100\).aspx)  
+-   [Übersicht zu WPF-Grafiken, -Animationen und -Medien](https://msdn.microsoft.com/en-us/library/ms742562)  
   
--   [Dokumente in WPF](https://msdn.microsoft.com/en-us/library/ms748388\(v=vs.100\).aspx)  
+-   [Dokumente in WPF](/dotnet/framework/wpf/advanced/documents-in-wpf)  
   
 ## <a name="see-also"></a>Siehe auch  
 [Erstellen von modernen Desktopanwendungen mit Windows Presentation Foundation](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)
