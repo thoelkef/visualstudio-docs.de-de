@@ -3,11 +3,11 @@ layout: LandingPage
 title: Debuggen von Apps in Visual Studio | Microsoft-Dokumentation
 description: "Erfahren Sie, wie Sie Visual Studio 2017 für das Debuggen von Anwendungen, Diensten und Tools in der Sprache Ihrer Wahl für Ihre Plattformen und Geräte verwenden können."
 ms.technology: vs-ide-debug
-ms.openlocfilehash: d00ef04d3d8f73b607c91f33f9af53429666ba5f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 5a526302d11b259c87317ee14c660b0d6fef5541
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="debugging-in-visual-studio"></a>Debuggen in Visual Studio
 
@@ -21,7 +21,7 @@ Mit dem Visual Studio-Debugger können Sie das Laufzeitverhalten eines Programms
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/en-us/media/common/i_road-map.svg" alt="">
+                            <img src="/media/common/i_road-map.svg" alt="">
                         </div>
                     </div>
                     <div class="cardText">
@@ -39,7 +39,7 @@ Mit dem Visual Studio-Debugger können Sie das Laufzeitverhalten eines Programms
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/en-us/media/common/i_debug.svg" alt="">
+                            <img src="/media/common/i_debug.svg" alt="">
                         </div>
                     </div>
                     <div class="cardText">
@@ -57,7 +57,7 @@ Mit dem Visual Studio-Debugger können Sie das Laufzeitverhalten eines Programms
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/en-us/media/common/i_debug.svg" alt="">
+                            <img src="/media/common/i_debug.svg" alt="">
                         </div>
                     </div>
                     <div class="cardText">
@@ -75,7 +75,7 @@ Mit dem Visual Studio-Debugger können Sie das Laufzeitverhalten eines Programms
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/en-us/media/common/i_video.svg" alt="">
+                            <img src="/media/common/i_video.svg" alt="">
                         </div>
                     </div>
                     <div class="cardText">
@@ -93,7 +93,7 @@ Mit dem Visual Studio-Debugger können Sie das Laufzeitverhalten eines Programms
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/en-us/media/common/i_learn-about.svg" alt="">
+                            <img src="/media/common/i_learn-about.svg" alt="">
                         </div>
                     </div>
                     <div class="cardText">
@@ -111,7 +111,7 @@ Mit dem Visual Studio-Debugger können Sie das Laufzeitverhalten eines Programms
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/en-us/media/common/i_get-started.svg" alt="">
+                            <img src="/media/common/i_get-started.svg" alt="">
                         </div>
                     </div>
                     <div class="cardText">
@@ -129,7 +129,7 @@ Mit dem Visual Studio-Debugger können Sie das Laufzeitverhalten eines Programms
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/en-us/media/common/i_learn-about.svg" alt="">
+                            <img src="/media/common/i_learn-about.svg" alt="">
                         </div>
                     </div>
                     <div class="cardText">
@@ -147,7 +147,7 @@ Mit dem Visual Studio-Debugger können Sie das Laufzeitverhalten eines Programms
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/en-us/media/common/i_debug.svg" alt="">
+                            <img src="/media/common/i_debug.svg" alt="">
                         </div>
                     </div>
                     <div class="cardText">
@@ -165,7 +165,7 @@ Mit dem Visual Studio-Debugger können Sie das Laufzeitverhalten eines Programms
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/en-us/media/common/i_whats-new.svg" alt="">
+                            <img src="/media/common/i_whats-new.svg" alt="">
                         </div>
                     </div>
                     <div class="cardText">
