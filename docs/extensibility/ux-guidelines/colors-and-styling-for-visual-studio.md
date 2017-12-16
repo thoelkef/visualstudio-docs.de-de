@@ -12,11 +12,11 @@ caps.latest.revision: "4"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ff1f5d9c7c28c63e2f1f1c0783f1032888e3c645
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: b6d287e7e85ef908f9504f8e1f66e0c221042553
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Farben und Styling für Visual Studio
 ## <a name="using-color-in-visual-studio"></a>Mithilfe von Farben in Visual Studio  
@@ -55,7 +55,7 @@ Visual Studio bietet drei verschiedene Farbschemas, statusleisteneinstellungen: 
   
 Benutzer werden aufgefordert, ein Design auswählen, während der ersten Verwendung von Visual Studio und Designs später zu wechseln, indem Sie möchten, können **Tools &gt; Optionen &gt; Umgebung &gt; allgemeine** und wählen Sie ein neues Design aus das Dropdownmenü "Farbschema" aus.  
   
-Benutzer können auch die Systemsteuerung verwenden, um ihre gesamten Systeme in einer von mehreren Designs mit hohem Kontrast zu wechseln. Wenn ein Benutzer ein Design "hoher Kontrast" auswählt, wirkt sich auf klicken Sie dann die Farbauswahl Design Visual Studio nicht mehr Farben in Visual Studio jedoch Designänderungen für gespeichert werden, wenn der Benutzer den Modus für hohe Kontraste beendet wird.. Weitere Informationen zum Modus für hohe Kontraste finden Sie unter [auswählen kontrastreiche Farben](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_ChoosingHighContrastColors).
+Benutzer können auch die Systemsteuerung verwenden, um ihre gesamten Systeme in einer von mehreren Designs mit hohem Kontrast zu wechseln. Wenn ein Benutzer ein Design "hoher Kontrast" auswählt, wirkt sich auf klicken Sie dann die Farbauswahl Design Visual Studio nicht mehr Farben in Visual Studio jedoch Designänderungen für gespeichert werden, wenn der Benutzer den Modus für hohe Kontraste beendet wird. Weitere Informationen zum Modus für hohe Kontraste finden Sie unter [auswählen kontrastreiche Farben](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_ChoosingHighContrastColors).
   
 ### <a name="the-vscolor-service"></a>Der Dienst VSColor  
 Visual Studio bietet einen Umgebung Farbe-Dienst bekannt, wie der VSColor-Dienst, der Sie die Farbwerte, die von Elementen der Benutzeroberfläche an einen benannten Eintrag Farbwerte für jedes Visual Studio-Designs mit binden kann. Dadurch wird sichergestellt, dass Ihre Farben automatisch geändert werden, entsprechend den aktuellen Benutzer ausgewählten Designs oder System Modus für hohe Kontraste. Verwenden des Diensts bedeutet, dass die Implementierung aller Farbe Design-bezogene Änderungen an einem Ort verarbeitet wird, und bei Verwendung von gemeinsam verwendeten Farben aus dem Dienst Ihre Benutzeroberfläche automatisch neue Designs in zukünftigen Versionen von Visual Studio wider.  
@@ -320,7 +320,7 @@ In einigen Fällen möchten Sie den Endbenutzern die Benutzeroberfläche wie anp
 ### <a name="building-a-vspackage-for-your-customizable-colors"></a>Erstellen eine VSPackage für die anpassbare Farben  
 Eine VSPackage kann steuern, Schriftarten und Farben durch benutzerdefinierte Kategorien und Einblenden von Elementen auf der Eigenschaftenseite Schriftarten und Farben. VSPackages müssen implementieren, wenn Sie diesen Mechanismus verwenden, die [IVsFontAndColorDefaultsProvider](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivsfontandcolordefaultsprovider.aspx) Schnittstelle und die zugehörigen Schnittstellen.  
   
-Im Prinzip kann diesen Mechanismus verwendet werden, so ändern Sie alle vorhandenen Anzeigeelementen und die Kategorien, die sie enthalten. Allerdings sollten sie nicht verwendet werden, die Text-Editor-Kategorie oder ihre Anzeigeelemente zu ändern. Weitere Informationen zu den Text-Editor-Kategorie, finden Sie unter [Schriftart und Farbe (Übersicht)](https://msdn.microsoft.com/en-us/library/bb165065.aspx).  
+Im Prinzip kann diesen Mechanismus verwendet werden, so ändern Sie alle vorhandenen Anzeigeelementen und die Kategorien, die sie enthalten. Allerdings sollten sie nicht verwendet werden, die Text-Editor-Kategorie oder ihre Anzeigeelemente zu ändern. Weitere Informationen zu den Text-Editor-Kategorie, finden Sie unter [Schriftart und Farbe (Übersicht)](../font-and-color-overview.md).  
   
 Zum Implementieren benutzerdefinierter Kategorien oder Elemente anzeigen, müssen eine VSPackage ein:  
   
@@ -397,7 +397,7 @@ Zu diesem Zweck müssen eine VSPackage ein:
   
  **OR**  
   
--   **Abrufen die IDE Änderungen**. Dies kann erfolgen über die vom System implementierte [IVsFontAndColorStorage](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.aspx) Schnittstelle. Obwohl in erster Linie für die Unterstützung von Persistenz, die [GetItem](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.getitem.aspx) Methode Informationen erhalten Sie Schriftart und Farbe für Elemente anzeigen. Weitere Informationen zu Schriftart und Farbe Einstellungen finden Sie im MSDN-Artikel [Zugriff auf gespeicherte Schriftart und Farbe Einstellungen](https://msdn.microsoft.com/en-us/library/bb166382.aspx).  
+-   **Abrufen die IDE Änderungen**. Dies kann erfolgen über die vom System implementierte [IVsFontAndColorStorage](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.aspx) Schnittstelle. Obwohl in erster Linie für die Unterstützung von Persistenz, die [GetItem](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.getitem.aspx) Methode Informationen erhalten Sie Schriftart und Farbe für Elemente anzeigen. Weitere Informationen zu Schriftart und Farbe Einstellungen finden Sie im MSDN-Artikel [Zugriff auf gespeicherte Schriftart und Farbe Einstellungen](../accessing-stored-font-and-color-settings.md).  
   
 > **Hinweis:** verwenden, um sicherzustellen, dass die der Abfrageergebnisse richtig sind, die [IVsFontAndColorCacheManager](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivsfontandcolorcachemanager.aspx) Schnittstelle, um zu bestimmen, ob ein Cache leeren und Update benötigt werden, vor dem Aufrufen der Abrufmethoden, der die [ IVsFontAndColorStorage](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.aspx) Schnittstelle.
   

@@ -22,11 +22,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 191206e9cc16271e64abbeaba87d86ac0108924b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: d2b0ea1999c9742c04d1bb118d9a036ff2bed5ea
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="commit-in-process-edits-on-data-bound-controls-before-saving-data"></a>Commit in Bearbeitungen von datengebundenen Steuerelementen vor dem Speichern
 Wenn Sie Werte in datengebundene Steuerelemente zu bearbeiten, müssen Benutzer navigieren, aus dem aktuellen Datensatz, um den aktualisierten Wert für den zugrunde liegenden Datenquelle zu übernehmen, die das Steuerelement gebunden ist. Beim Ziehen von Elementen aus der [Datenquellenfenster](add-new-data-sources.md) auf ein Formular, das erste Element, das Sie löschen generiert den Code in der **speichern** click-Ereignis von der <xref:System.Windows.Forms.BindingNavigator>. Dieser Code Ruft die <xref:System.Windows.Forms.BindingSource.EndEdit%2A> Methode der <xref:System.Windows.Forms.BindingSource>. Aus diesem Grund wird der Aufruf von der <xref:System.Windows.Forms.BindingSource.EndEdit%2A> -Methode wird nur für die erste generiert <xref:System.Windows.Forms.BindingSource> , die dem Formular hinzugefügt wird.  
@@ -38,7 +38,7 @@ Wenn Sie Werte in datengebundene Steuerelemente zu bearbeiten, müssen Benutzer 
 > [!NOTE]
 >  Der Designer fügt die `BindingSource.EndEdit` Code nur für das erste Element auf einem Formular abgelegte. Aus diesem Grund müssen Sie eine Codezeile zum Aufrufen Hinzufügen der <xref:System.Windows.Forms.BindingSource.EndEdit%2A> Methode für die einzelnen <xref:System.Windows.Forms.BindingSource> auf dem Formular. Sie können manuell hinzufügen, eine Codezeile zum Aufrufen der <xref:System.Windows.Forms.BindingSource.EndEdit%2A> Methode für die einzelnen <xref:System.Windows.Forms.BindingSource>. Sie können auch hinzufügen die `EndEditOnAllBindingSources` Methode, um das Formular, und rufen sie vor dem Ausführen eines Speichervorgangs.  
   
- Der folgende code verwendet eine [LINQ (Language-Integrated Query)](http://msdn.microsoft.com/Library/a73c4aec-5d15-4e98-b962-1274021ea93d) Abfrage durchlaufen alle <xref:System.Windows.Forms.BindingSource> Komponenten, und rufen die <xref:System.Windows.Forms.BindingSource.EndEdit%2A> Methode für die einzelnen <xref:System.Windows.Forms.BindingSource> in einem Formular.  
+ Der folgende code verwendet eine [LINQ (Language-Integrated Query)](/dotnet/csharp/linq/) Abfrage durchlaufen alle <xref:System.Windows.Forms.BindingSource> Komponenten, und rufen die <xref:System.Windows.Forms.BindingSource.EndEdit%2A> Methode für die einzelnen <xref:System.Windows.Forms.BindingSource> in einem Formular.  
   
 ## <a name="to-call-endedit-for-all-bindingsource-components-on-a-form"></a>Aufrufen von EndEdit für alle BindingSource-Komponenten auf einem Formular  
   

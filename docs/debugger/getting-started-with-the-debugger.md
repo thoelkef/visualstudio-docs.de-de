@@ -1,7 +1,7 @@
 ---
-title: Erste Schritte mit dem Debugger | Microsoft Docs
+title: Weitere Informationen zum Debuggen mit Visual Studio | Microsoft Docs
 ms.custom: H1HackMay2017
-ms.date: 05/18/2017
+ms.date: 10/11/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-debug
@@ -13,13 +13,13 @@ caps.latest.revision: "1"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0f6bcc75341297ad20d66514c92f92513ef44d2f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 645546f373582bb0a81d7ab23df1a467b27f8e47
+ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/15/2017
 ---
-# <a name="get-started-with-the-visual-studio-debugger"></a>Erste Schritte mit Visual Studio-debugger
+# <a name="learn-to-debug-using-visual-studio"></a>Weitere Informationen Sie zum Debuggen mit Visual Studio
 
 Dieses Thema enthält die Funktionen von Visual Studio-Debugger in eine schrittweise exemplarische Vorgehensweise. Wenn Sie einen Überblick über die Funktionen des Debuggers auf höherer Ebene möchten, finden Sie unter [Debugger Feature Tour](../debugger/debugger-feature-tour.md).
 
@@ -138,19 +138,81 @@ Meistens wir Tastenkombinationen verwenden, die hier ist eine gute Möglichkeit,
 
      ![Einzelschritt in die Updatemethode Ergebnis](../debugger/media/dbg-tour-update-method.png "Schritt in Update-Methode")
 
-    Hier finden wir weitere Code, der die interessanten; die app nur noch alle *.jpg-Dateien in einem bestimmten Verzeichnis befinden, und erstellen dann ein Foto-Objekt für jede Datei. Dieser Code erhalten Sie eine gute Gelegenheit handelt, überprüfen den app-Zustand (Variablen) mit dem Debugger starten.
+    Hier finden wir weitere Code, der die interessanten; die app nur noch alle *.jpg-Dateien in einem bestimmten Verzeichnis befinden, und erstellen dann ein Foto-Objekt für jede Datei. Dieser Code erhalten Sie eine gute Gelegenheit handelt, überprüfen den app-Zustand (Variablen) mit dem Debugger starten. Wir werden, die in den nächsten Abschnitten dieses Lernprogramm durchführen.
 
     Funktionen, die Ihnen ermöglichen, überprüfen Sie die Variablen sind eine der nützlichsten Funktionen des Debuggers, und es gibt verschiedene Möglichkeiten zu diesem Zweck. Häufig, wenn Sie versuchen, ein Problem debuggen können, versuchen Sie, herauszufinden, ob Variablen die Werte, die sie zu einem bestimmten Zeitpunkt verfügen voraussichtlich gespeichert sind.
 
+## <a name="examine-the-call-stack"></a>Die Aufrufliste überprüfen
+
+- Bei angehaltener in der `Update` -Methode, klicken Sie auf die **Aufrufliste** Fenster, das standardmäßig in der unteren rechten Bereich geöffnet ist.
+
+     ![Die Aufrufliste überprüfen](../debugger/media/dbg-tour-call-stack.png "ExamineCallStack")
+
+    Die **Aufrufliste** Fenster zeigt die Reihenfolge, in der Funktionen und Methoden werden aufgerufen. Die oberste Zeile zeigt die aktuelle Funktion (die `Update` Methode in der app Tour). Die zweite Zeile zeigt, dass `Update` aufgerufen wurde, aus der `Path.set` -Eigenschaft, und So weiter.
+
+    >  [!NOTE]
+    > Die **Aufrufliste** Fenster ähnelt der Debug-Perspektive in einigen IDEs wie Eclipse.
+
+    Die Aufrufliste ist eine gute Möglichkeit, untersuchen und Verstehen der Ausführungsfluss einer app.
+
+    Doppelklicken Sie auf eine Codezeile wechseln betrachten, Quellcode und ändert, die auch den aktuellen Bereich, der vom Debugger geprüft wird. Den Debugger weitergeführt diese Aktion nicht.
+
+    Sie können auch Kontextmenüs aus der **Aufrufliste** Fenster aus, um andere Aufgaben ausführen. Sie können z. B. Legen Sie Haltepunkte in der angegebenen Funktionen, kann den Debugger mit **Ausführen bis Cursor**, und wechseln Sie Quellcode zu untersuchen. Weitere Informationen finden Sie unter [Vorgehensweise: Untersuchen der Aufrufliste](../debugger/how-to-use-the-call-stack-window.md).
+
+## <a name="step-out"></a>Ausführen bis Rücksprung
+
+Angenommen, Sie haben überprüft die `Update` Methode in Data.cs, und Sie möchten, aus der Funktion erhalten bleibt jedoch im Debugger. Hierzu können Sie mithilfe der **Ausführen bis Rücksprung** Befehl.
+
+1. Drücken Sie UMSCHALT + F11 (oder **Debuggen > Ausführen bis Rücksprung**).
+
+     Dieser Befehl setzt die app-Ausführung (und den Debugger setzt) bis die aktuelle Funktion zurückgibt.
+
+     Sie muss in der `Update` Methodenaufruf in Data.cs.
+
+2. Drücken Sie UMSCHALT + F11 erneut und der Debugger wechselt der Aufrufliste zurück an den `OnApplicationStartup` -Ereignishandler.
+
+## <a name="run-to-cursor"></a>Ausführen bis Cursor
+
+1. Wählen Sie die **Beenden des Debuggens** rote Schaltfläche ![Beenden des Debuggens](../debugger/media/dbg-tour-stop-debugging.png "Beenden des Debuggens") oder UMSCHALT + F5.
+
+2. In der `Update` Methode in Data.cs, Maustaste die `Add` -Methodenaufruf, und wählen Sie **Ausführen bis Cursor**. Dieser Befehl startet das Debuggen und legt einen temporären Haltepunkt in der aktuellen Zeile des Codes.
+
+     ![Verwenden Sie das Ausführen bis Cursor Feature](../debugger/media/dbg-tour-run-to-cursor.png "Ausführen bis Cursor")
+
+    Sie sollten angehalten werden, an dem Haltepunkt in `MainWindow` (da dies der erste Haltepunkt ist festgelegt werden).
+
+3. Drücken Sie F5, um zum Wechseln der `Add` Methode, die Sie ausgewählt haben, in denen **Ausführen bis Cursor**.
+
+    Dieser Befehl ist nützlich, wenn Sie Code bearbeiten und schnell einen temporären Haltepunkt festlegen und den Debugger starten möchten.
+
+## <a name="change-the-execution-flow"></a>Ändern des Ausführungsflusses
+
+1. Mit dem Debugger angehalten werden soll, auf die `Add` -Methodenaufruf, verwenden Sie die Maus auf den gelben Pfeil (der Ausführungszeiger) auf der linken Seite und den gelben Pfeil, um eine Zeile nach oben verschieben der `foreach` Schleife.
+
+     ![Verschieben der Ausführungszeiger](../debugger/media/dbg-tour-move-the-execution-pointer.gif "der Ausführungszeiger verschieben")
+
+    Durch eine Änderung der Ausführungsfluss, können Sie Aktionen wie Ausführungspfade für anderen Code zu testen, oder führen Sie Code erneut aus, ohne den Debugger neu gestartet.
+
+2. Jetzt, drücken Sie F5.
+
+    Sie sehen, dass die Bilder, die im Fenster der Anwendung hinzugefügt. Da Sie im Code erneut ausführen, werden die `foreach` Schleife, einige Images wurden zweimal hinzugefügt!
+    
+    > [!WARNING]
+    > Häufig müssen Sie mit dieser Funktion vorsichtig sein, und Sie eine Warnung in der QuickInfo angezeigt. Andere Warnungen, möglicherweise zu angezeigt werden. Verschieben den Zeiger kann nicht die Anwendung in einem früheren app-Status wiederhergestellt.
+
 ## <a name="inspect-variables-with-data-tips"></a>Überprüfung von Variablen mit Datentipps
 
-1. Auf den Debugger Anhalten der `Add` -Methodenaufruf, zeigen Sie auf die `Add` -Methodenaufruf, und klicken Sie auf die **ausführen, klicken Sie auf** Schaltfläche ![ausführen, klicken Sie auf](../debugger/media/dbg-tour-run-to-click.png "RunToClick").
+1. Data.cs in die Foto-Viewer-Demo-app Öffnen der rechten Maustaste auf die `private void Update` Funktionsdeklaration, und wählen Sie **Ausführen bis Cursor** (beendet die app zuerst, wenn er bereits ausgeführt wird).
 
-2. Jetzt, zeigen Sie auf das Objekt "Datei" (`f`), und Sie sehen, dass der Standardwert der Eigenschaft, die Dateinamen `market 031.jpg`.
+    Dadurch wird die app mit dem angefügten Debugger angehalten. Dadurch können wir den Status zu überprüfen.
+
+2. Zeigen Sie auf die `Add` -Methodenaufruf, und klicken Sie auf die **ausführen, klicken Sie auf** Schaltfläche ![ausführen, klicken Sie auf](../debugger/media/dbg-tour-run-to-click.png "RunToClick").
+
+3. Jetzt, zeigen Sie auf das Objekt "Datei" (`f`), und Sie sehen, dass der Standardwert der Eigenschaft, die Dateinamen `market 031.jpg`.
 
      ![Anzeigen von einem Datentipp](../debugger/media/dbg-tour-data-tips.gif "einem Datentipp anzeigen")
 
-3. Erweitern Sie das Objekt, um alle Eigenschaften, wie etwa die `FullPath` Eigenschaft.
+4. Erweitern Sie das Objekt, um alle Eigenschaften, wie etwa die `FullPath` Eigenschaft.
 
     Häufig beim Debuggen, möchten Sie eine schnelle Möglichkeit zum Überprüfen der Eigenschaftswerte für Objekte, und die Datentipps sind eine gute Möglichkeit zu diesem Zweck.
 
@@ -192,66 +254,6 @@ Meistens wir Tastenkombinationen verwenden, die hier ist eine gute Möglichkeit,
 
     Weitere Informationen finden Sie unter [legen Sie eine Überwachung mit der überwachen "und" Schnellüberwachung Windows](../debugger/watch-and-quickwatch-windows.md)
 
-## <a name="examine-the-call-stack"></a>Die Aufrufliste überprüfen
-
-1. Klicken Sie auf die **Aufrufliste** Fenster, das standardmäßig in der unteren rechten Bereich geöffnet ist.
-
-     ![Die Aufrufliste überprüfen](../debugger/media/dbg-tour-call-stack.png "ExamineCallStack")
-
-    Die **Aufrufliste** Fenster zeigt die Reihenfolge, in der Funktionen und Methoden werden aufgerufen. Die oberste Zeile zeigt die aktuelle Funktion (die `Update` Methode in der app Tour). Die zweite Zeile zeigt, dass `Update` aufgerufen wurde, aus der `Path.set` -Eigenschaft, und So weiter.
-
-    >  [!NOTE]
-    > Die **Aufrufliste** Fenster ähnelt der Debug-Perspektive in einigen IDEs wie Eclipse.
-
-    Die Aufrufliste ist eine gute Möglichkeit, untersuchen und Verstehen der Ausführungsfluss einer app.
-
-    Doppelklicken Sie auf eine Codezeile wechseln betrachten, Quellcode und ändert, die auch den aktuellen Bereich, der vom Debugger geprüft wird. Den Debugger weitergeführt diese Aktion nicht.
-
-    Sie können auch Kontextmenüs aus der **Aufrufliste** Fenster aus, um andere Aufgaben ausführen. Sie können z. B. Legen Sie Haltepunkte in der angegebenen Funktionen, kann den Debugger mit **Ausführen bis Cursor**, und wechseln Sie Quellcode zu untersuchen. Weitere Informationen finden Sie unter [Vorgehensweise: Untersuchen der Aufrufliste](../debugger/how-to-use-the-call-stack-window.md).
-
-## <a name="change-the-execution-flow"></a>Ändern des Ausführungsflusses
-
-1. Mit dem Debugger angehalten werden soll, auf die `Add` -Methodenaufruf, verwenden Sie die Maus auf den gelben Pfeil (der Ausführungszeiger) auf der linken Seite und den gelben Pfeil, um eine Zeile nach oben verschieben der `foreach` Schleife.
-
-     ![Verschieben der Ausführungszeiger](../debugger/media/dbg-tour-move-the-execution-pointer.gif "der Ausführungszeiger verschieben")
-
-    Durch eine Änderung der Ausführungsfluss, können Sie Aktionen wie Ausführungspfade für anderen Code zu testen, oder führen Sie Code erneut aus, ohne den Debugger neu gestartet.
-
-2. Jetzt, drücken Sie F5.
-
-    Sie sehen, dass die Bilder, die im Fenster der Anwendung hinzugefügt. Da Sie im Code erneut ausführen, werden die `foreach` Schleife, einige Images wurden zweimal hinzugefügt!
-    
-    > [!WARNING]
-    > Häufig müssen Sie mit dieser Funktion vorsichtig sein, und Sie eine Warnung in der QuickInfo angezeigt. Andere Warnungen, möglicherweise zu angezeigt werden. Verschieben den Zeiger kann nicht die Anwendung in einem früheren app-Status wiederhergestellt.
-
-## <a name="run-to-cursor"></a>Ausführen bis Cursor
-
-1. Wählen Sie die **Beenden des Debuggens** rote Schaltfläche ![Beenden des Debuggens](../debugger/media/dbg-tour-stop-debugging.png "Beenden des Debuggens") oder UMSCHALT + F5.
-
-2. In der `Update` -Methode, mit der rechten Maustaste die `Add` -Methodenaufruf, und wählen Sie **Ausführen bis Cursor**. Dieser Befehl startet das Debuggen und legt einen temporären Haltepunkt in der aktuellen Zeile des Codes.
-
-     ![Verwenden Sie das Ausführen bis Cursor Feature](../debugger/media/dbg-tour-run-to-cursor.png "Ausführen bis Cursor")
-
-    Sie sollten angehalten werden, an dem Haltepunkt in `MainWindow` (da der erste Haltepunkt ist.
-
-3. Drücken Sie F5, um zum Wechseln der `Add` Methode, die Sie ausgewählt haben, in denen **Ausführen bis Cursor**.
-
-    Dieser Befehl ist nützlich, wenn Sie Code bearbeiten und schnell einen temporären Haltepunkt festlegen und den Debugger starten möchten.
-
-## <a name="step-out"></a>Ausführen bis Rücksprung
-
-Angenommen, Sie haben überprüft die `Update` Methode in Data.cs, und Sie möchten, aus der Funktion erhalten bleibt jedoch im Debugger. Hierzu können Sie mithilfe der **Ausführen bis Rücksprung** Befehl.
-
-1. Drücken Sie UMSCHALT + F11 (oder **Debuggen > Ausführen bis Rücksprung**).
-
-     Dieser Befehl setzt die app-Ausführung (und den Debugger setzt) bis die aktuelle Funktion zurückgibt.
-
-     Sie muss in der `Update` Methodenaufruf in Data.cs.
-
-2. Drücken Sie UMSCHALT + F11 erneut und der Debugger wechselt der Aufrufliste zurück an den `OnApplicationStartup` -Ereignishandler.
-
-3. Drücken Sie F5, um den Vorgang fortzusetzen.
-
 ## <a name="examine-an-exception"></a>Eine Ausnahme zu untersuchen
 
 1. In der ausgeführten app-Fenster, löschen Sie den Text in der **Pfad** Eingabefeld und wählen Sie die **Änderung** Schaltfläche.
@@ -283,6 +285,7 @@ Weitere Informationen zu den Funktionen des Debuggers finden Sie unter [Debugger
 <iframe style="position: absolute;top: 0;left: 0;right: 0;bottom: 0;" width="100%" height="100%" src="https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugger-Feature-tour-of-Visual-studio-2017-sqwiwLD6D_1111787171" frameborder="0" allowfullscreen></iframe>
 </div>
 
-## <a name="see-also"></a>Siehe auch  
- [Debuggen in Visual Studio](../debugger/index.md)  
- [Debugger – Featuretour](../debugger/debugger-feature-tour.md)
+## <a name="see-also"></a>Siehe auch
+
+[Debuggen in Visual Studio](../debugger/index.md)  
+[Debugger – Featuretour](../debugger/debugger-feature-tour.md)

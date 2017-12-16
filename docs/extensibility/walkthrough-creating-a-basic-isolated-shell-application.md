@@ -17,11 +17,11 @@ caps.latest.revision: "54"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c4df0d9f772d92ac7f1f106b9befc0a8a2f89a22
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: e3f8eaa704dca0b939665e900e74fc3cb5120307
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="walkthrough-creating-a-basic-isolated-shell-application"></a>Exemplarische Vorgehensweise: Erstellen einer grundlegenden Isolated Shell-Anwendung
 Diese exemplarische Vorgehensweise zeigt, wie eine isolierte Shell-Lösung erstellen, Anpassen des Toolfensters Info und ein Setupprogramm erstellen, die die isolierte Shell installiert.  
@@ -78,7 +78,7 @@ Diese exemplarische Vorgehensweise zeigt, wie eine isolierte Shell-Lösung erste
   
 3.  Erstellen Sie die Lösung und beginnen Sie mit dem Debuggen.  
   
-4.  In **Ansicht / Weitere Fenster**, klicken Sie auf **Webbrowser**. Die **Webbrowser** Fenster zeigt die Startseite "Microsoft Corporation".  
+4.  In **Ansicht > Weitere Fenster**, klicken Sie auf **Webbrowser**. Die **Webbrowser** Fenster zeigt die Startseite "Microsoft Corporation".  
   
 ## <a name="removing-the-print-command"></a>Entfernen den Befehl Print  
  Die VSCT-Datei in einem isolierten Shell-UI-Projekt besteht aus einem Satz von Deklarationen des Formulars `<Define name=No_` *Element*`>`, wobei *Element* ist der standardmäßige Visual Studio-Menüs und Befehle.  
@@ -101,7 +101,7 @@ Diese exemplarische Vorgehensweise zeigt, wie eine isolierte Shell-Lösung erste
   
 4.  Dadurch wird der Druckbefehl entfernt.  
   
-5.  Starten Sie das Debuggen von isolierten Shell-Anwendung. Überprüfen Sie, ob die **Datei / drucken** Befehl ist nicht mehr vorhanden.  
+5.  Starten Sie das Debuggen von isolierten Shell-Anwendung. Überprüfen Sie, ob die **Datei > Drucken** Befehl ist nicht mehr vorhanden.  
   
 ## <a name="removing-features-from-the-isolated-shell"></a>Entfernen von Funktionen aus der isolierte Shell  
  Sie können einige der Pakete entfernen, die mit Visual Studio geladen werden, durch Bearbeiten der .pkgundef-Datei aus, wenn Sie nicht über diese Funktionen in der benutzerdefinierten isolierten shellanwendung möchten. Sie können das Paket in einem der Unterschlüssel des Registrierungsschlüssels für $RootKey$ \Packages angeben.  
@@ -147,7 +147,7 @@ Diese exemplarische Vorgehensweise zeigt, wie eine isolierte Shell-Lösung erste
     [assembly: AssemblyDescription("The description of Fabrikam Music editor.")]  
     ```  
   
-4.  Mit dem Debuggen beginnen, und öffnen Sie in der isolierten Shell-Anwendung, die **Hilfe / ca.** Feld. Die geänderten Zeichenfolgen sollte angezeigt werden. Der Titel, der die Hilfe/Informationsfeld ist identisch mit der `AssemblyTitle` Wert in der Datei "AssemblyInfo.cs".  
+4.  Mit dem Debuggen beginnen, und öffnen Sie in der isolierten Shell-Anwendung, die **Hilfe > zu** Feld. Die geänderten Zeichenfolgen sollte angezeigt werden. Der Titel, der die Hilfe/Informationsfeld ist identisch mit der `AssemblyTitle` Wert in der Datei "AssemblyInfo.cs".  
   
 5.  Die Eigenschaften der **Hilfe/zu** Box selbst sind in der Datei MyVSShellStub.AboutBoxPackage\AboutBox.xaml gefunden. Um die Breite der Hilfe/Informationsfeld zu ändern, wechseln Sie zu der `AboutDialogStyle` blockieren, und legen Sie die `Width` Eigenschaft auf 200:  
   

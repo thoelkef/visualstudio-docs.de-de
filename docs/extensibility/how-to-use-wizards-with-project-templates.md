@@ -18,11 +18,11 @@ caps.latest.revision: "23"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ecbf4b95689d760a58e00a65671c13c4c0807b51
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 81cacbcc3f7573b9386fb2816650d8c96508b613
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="how-to-use-wizards-with-project-templates"></a>Gewusst wie: Verwenden von Assistenten mit Projektvorlagen
 Visual Studio stellt die <xref:Microsoft.VisualStudio.TemplateWizard.IWizard>-Schnittstelle bereit, die, falls sie implementiert ist, das Ausführen von benutzerdefiniertem Code beim Erstellen eines Projekts aus einer Vorlage ermöglicht.  
@@ -34,12 +34,12 @@ Visual Studio stellt die <xref:Microsoft.VisualStudio.TemplateWizard.IWizard>-Sc
 ## <a name="creating-a-project-template-project-with-a-vsix-project"></a>Erstellen ein Projektvorlagenprojekt mit einem VSIX-Projekt  
  Sie starten mit dem Projekt Vorlage Projekt, das Teil der Visual Studio SDK ist eine benutzerdefinierte Vorlage erstellen. In diesem Verfahren verwenden wir ein C#-Projekt-Vorlagenprojekt, aber es gibt auch eine Visual Basic-Projektvorlagenprojekt. Dann fügen Sie ein VSIX-Projekt der Projektmappe, die das Projektvorlagenprojekt enthält.  
   
-1.  Erstellen Sie ein C#-Projekt-Vorlagenprojekt (in Visual Studio **Datei / neu / Projekt / Visual c# / Erweiterbarkeit / C#-Projektvorlage**). Nennen Sie sie **MyProjectTemplate**.  
+1.  Erstellen Sie ein C#-Projekt-Vorlagenprojekt (in Visual Studio **Datei > Neu > Projekt > Visual c# > Erweiterbarkeit > C#-Projektvorlage**). Nennen Sie sie **MyProjectTemplate**.  
   
     > [!NOTE]
     >  Möglicherweise werden Sie aufgefordert, die Visual Studio SDK installieren. Weitere Informationen finden Sie unter [Installieren von Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
-2.  Ein neues VSIX-Projekt hinzufügen (**Datei / neu / Project / Visual c# / Erweiterbarkeit / VSIX-Projekt**) in der gleichen Lösung wie das Projektvorlagenprojekt (in der **Projektmappen-Explorer**, wählen Sie den Projektmappenknoten, mit der rechten Maustaste, und wählen **hinzufügen / neues Projekt**). Nennen Sie sie **MyProjectWizard.**  
+2.  Ein neues VSIX-Projekt hinzufügen (**Datei > Neu > Projekt > Visual c# > Erweiterbarkeit > VSIX-Projekt**) in der gleichen Lösung wie das Projektvorlagenprojekt (in der **Projektmappen-Explorer**, wählen die Knoten "Projektmappe", mit der rechten Maustaste und wählen Sie **hinzufügen > Neues Projekt**). Nennen Sie sie **MyProjectWizard.**  
   
 3.  Legen Sie das VSIX-Projekt als Startprojekt. In der **Projektmappen-Explorer**, wählen Sie die VSIX-Projektknoten, mit der rechten Maustaste, und wählen **als Startprojekt festlegen**.  
   
@@ -51,14 +51,14 @@ Visual Studio stellt die <xref:Microsoft.VisualStudio.TemplateWizard.IWizard>-Sc
   
 7.  Erstellen Sie die Lösung und beginnen Sie mit dem Debuggen. Eine zweite Instanz von Visual Studio wird geöffnet. (Dies kann einige Minuten dauern.)  
   
-8.  Versuchen Sie in der zweiten Instanz von Visual Studio um ein neues Projekt mit Ihrer neuen Vorlage zu erstellen. (**Datei / neu / Projekt / Visual C#-/ "meinProjekt" Vorlage**). Das neue Projekt sollte angezeigt werden, mit einer Klasse mit dem Namen **Class1**. Sie haben jetzt eine benutzerdefinierte Projektvorlage erstellt! Beenden des Debuggens jetzt.  
+8.  Versuchen Sie in der zweiten Instanz von Visual Studio um ein neues Projekt mit Ihrer neuen Vorlage zu erstellen. (**Datei > Neu > Projekt > c# > "meinProjekt" Vorlage**). Das neue Projekt sollte angezeigt werden, mit einer Klasse mit dem Namen **Class1**. Sie haben jetzt eine benutzerdefinierte Projektvorlage erstellt! Beenden des Debuggens jetzt.  
   
 ## <a name="creating-a-custom-template-wizard"></a>Erstellen eines benutzerdefinierten Vorlagen-Assistenten  
  In diesem Thema wird das Erstellen eines benutzerdefinierten Vorlagen-Assistenten veranschaulicht, der vor dem Erstellen des Projekts ein Windows Form öffnet. Das Formular ermöglicht Benutzern, ein benutzerdefinierten Parameterwerts hinzuzufügen, das auf den Quellcode, während der projekterstellung hinzugefügt wird.  
   
 1.  Richten Sie das VSIX-Projekt aus, um die ihm ermöglichen, eine Assembly zu erstellen.  
   
-2.  In der **Projektmappen-Explorer**, wählen Sie den VSIX-Projekt-Knoten. Unten im Projektmappen-Explorer sehen Sie die **Eigenschaften** Fenster. Wenn Sie nicht der Fall ist, wählen Sie **Ansicht / Fenster "Eigenschaften"**, oder drücken Sie **F4**. Wählen Sie im Fenster Eigenschaften die folgenden Felder mit `true`:  
+2.  In der **Projektmappen-Explorer**, wählen Sie den VSIX-Projekt-Knoten. Unten im Projektmappen-Explorer sehen Sie die **Eigenschaften** Fenster. Wenn Sie nicht der Fall ist, wählen Sie **Ansicht > Fenster "Eigenschaften"**, oder drücken Sie **F4**. Wählen Sie im Fenster Eigenschaften die folgenden Felder mit `true`:  
   
     -   **IncludeAssemblyInVSIXContainer**  
   
@@ -295,7 +295,7 @@ namespace $safeprojectname$
   
 1.  Die Projektmappe neu erstellen und mit dem Debuggen beginnen. Eine zweite Instanz von Visual Studio sollte angezeigt werden.  
   
-2.  Erstellen Sie ein neues MyProjectTemplate-Projekt. (**Datei / neu / Projekt / Visual C#-/ MyProjectTemplate**)  
+2.  Erstellen Sie ein neues MyProjectTemplate-Projekt. (**Datei > Neu > Projekt > c# > MyProjectTemplate**)  
   
 3.  In der **neues Projekt** (Dialogfeld), suchen Sie die Vorlage, geben Sie einen Namen und klicken Sie auf **OK**.  
   

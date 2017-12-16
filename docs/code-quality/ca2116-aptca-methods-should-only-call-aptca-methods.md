@@ -18,11 +18,11 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 92c6a91cffc3ce388a3dfb9000b9f432672018f4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 5c1b61e8895258a4f27d3803bf7fb5e4e2a0fba3
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="ca2116-aptca-methods-should-only-call-aptca-methods"></a>CA2116: APTCA-Methoden sollten nur APTCA-Methoden aufrufen
 |||  
@@ -49,7 +49,7 @@ ms.lasthandoff: 10/31/2017
  Eine teilweise vertrauenswürdige Aufrufer `X` Methode aufrufen `M1`, was `M1` Aufrufen `M2`. Da `M2` verfügt nicht über das APTCA-Attribut der unmittelbare Aufrufer (`M1`) erfüllen muss einen Linkaufruf für volle Vertrauenswürdigkeit; `M1` ist voll vertrauenswürdig und erfüllt daher diese Überprüfung. Das Sicherheitsrisiko, da `X` nicht Teil des Linkaufrufs schützt `M2` von nicht vertrauenswürdigen Aufrufern. Methoden mit dem APTCA-Attribut müssen daher keine Methoden aufrufen, die nicht mit das Attribut verfügen.  
   
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen  
- Wenn das APTCA-Attribut erforderlich ist, verwenden Sie eine Anforderung an um die Methode zu schützen, die voll vertrauenswürdige Assembly aufruft. Die genauen Berechtigungen, die Sie bei Bedarf von der durch die Methode verfügbar gemachten Funktionalität abhängig ist. Wenn es möglich ist, schützen Sie die Methode mit einer Anforderung für volle Vertrauenswürdigkeit, um sicherzustellen, dass die zugrunde liegenden Funktionalität nicht für teilweise vertrauenswürdige Aufrufer verfügbar gemacht wird. Wenn dies nicht möglich ist, wählen Sie einen Satz von Berechtigungen, der effektiv die verfügbar gemachten Funktionalität schützt. Weitere Informationen zu Anforderungen, finden Sie unter [Forderungen](http://msdn.microsoft.com/en-us/e5283e28-2366-4519-b27d-ef5c1ddc1f48).  
+ Wenn das APTCA-Attribut erforderlich ist, verwenden Sie eine Anforderung an um die Methode zu schützen, die voll vertrauenswürdige Assembly aufruft. Die genauen Berechtigungen, die Sie bei Bedarf von der durch die Methode verfügbar gemachten Funktionalität abhängig ist. Wenn es möglich ist, schützen Sie die Methode mit einer Anforderung für volle Vertrauenswürdigkeit, um sicherzustellen, dass die zugrunde liegenden Funktionalität nicht für teilweise vertrauenswürdige Aufrufer verfügbar gemacht wird. Wenn dies nicht möglich ist, wählen Sie einen Satz von Berechtigungen, der effektiv die verfügbar gemachten Funktionalität schützt.  
   
 ## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?  
  Um eine Warnung dieser Regel sicher zu unterdrücken, müssen Sie sicherstellen, die Funktionalität verfügbar gemacht, durch die Methode nicht direkt oder indirekt zulässig, Aufrufern Zugriff auf vertrauliche Informationen, Vorgänge oder Ressourcen, die einen destruktiven Weise verwendet werden können.  
@@ -78,8 +78,6 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="see-also"></a>Siehe auch  
  [Schreiben von sicherem Richtlinien](/dotnet/standard/security/secure-coding-guidelines)   
- [.NET Frameworkassemblys von teilweise vertrauenswürdigem Code aufgerufen werden kann](http://msdn.microsoft.com/en-us/a417fcd4-d3ca-4884-a308-3a1a080eac8d)   
  [Verwenden von Bibliotheken aus teilweise vertrauenswürdigem Code](/dotnet/framework/misc/using-libraries-from-partially-trusted-code)   
- [Forderungen](http://msdn.microsoft.com/en-us/e5283e28-2366-4519-b27d-ef5c1ddc1f48)   
  [Verknüpfungsaufrufe](/dotnet/framework/misc/link-demands)   
  [Daten und Modellierung](/dotnet/framework/data/index)

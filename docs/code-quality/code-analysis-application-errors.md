@@ -17,11 +17,11 @@ caps.latest.revision: "23"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: af00c9eb270604a9d918f237c50930da7a2b8cdd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: f89420d19696c0be26a2fb0a9b9b405574325797
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="code-analysis-application-errors"></a>Anwendungsfehler bei der Codeanalyse
 Dieser Abschnitt ist eine Referenz zu Fehlermeldungen, die von verwaltetem Code Analysis-Tool generiert werden. Um Hilfe zu einer bestimmten Fehlermeldung zu erhalten, geben Sie die Fehlernummer in der **gesucht** Feld im Index.  
@@ -59,8 +59,6 @@ Dieser Abschnitt ist eine Referenz zu Fehlermeldungen, die von verwaltetem Code 
 |[FxCopCmd-Fehler](fxcopcmd-errors.md)|Fehler bei der Analyse der verwalteten Code.|  
   
 ## <a name="related-sections"></a>Verwandte Abschnitte  
- [Richtlinien für das Schreiben von sicherem Code](http://msdn.microsoft.com/en-us/9892fd19-45cd-44b6-9fa8-10f1b5cb6ea4)  
-
  [Code Analysis Policy Errors](../code-quality/code-analysis-policy-errors.md)  
   
  [Analysieren der Qualität von verwaltetem Code](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)  

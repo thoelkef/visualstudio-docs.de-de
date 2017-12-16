@@ -11,11 +11,11 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c71d76e3b085260043f6f07de8b352ab74c3930f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 1bcf34f730411589624075bde4ace0b5457e07a7
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="how-to-provide-an-asynchronous-visual-studio-service"></a>Vorgehensweise: Bereitstellen einen asynchronen Visual Studio-Dienst
 Wenn Sie einen Dienst zu erhalten, ohne den Benutzeroberflächenthread zu blockieren möchten, sollten Sie asynchrone-Dienst erstellen und Laden Sie das Paket in einem Hintergrundthread auf. Zu diesem Zweck können Sie eine <xref:Microsoft.VisualStudio.Shell.AsyncPackage> anstelle eines <xref:Microsoft.VisualStudio.Shell.Package>, und fügen Sie den Dienst mit speziellen asynchronen Methoden für das asynchrone Paket hinzu.  
@@ -24,9 +24,9 @@ Wenn Sie einen Dienst zu erhalten, ohne den Benutzeroberflächenthread zu blocki
   
 ## <a name="implementing-an-asynchronous-service"></a>Implementieren eines asynchronen Dienstes  
   
-1.  Erstellen Sie ein VSIX-Projekt (**Datei / neu / Projekt / Visual C#-/ Extensiblity / VSIX-Projekt**). Nennen Sie das Projekt **TestAsync**.  
+1.  Erstellen Sie ein VSIX-Projekt (**Datei > Neu > Projekt > c# > Extensiblity > VSIX-Projekt**). Nennen Sie das Projekt **TestAsync**.  
   
-2.  Fügen Sie dem Projekt ein VSPackage hinzu. Wählen Sie den Projektknoten in der **Projektmappen-Explorer** , und klicken Sie auf **hinzufügen / neues Element / Visual C#-Elemente / Erweiterbarkeit / Visual Studio-Paket**. Nennen Sie diese Datei **TestAsyncPackage.cs**.  
+2.  Fügen Sie dem Projekt ein VSPackage hinzu. Wählen Sie den Projektknoten in der **Projektmappen-Explorer** , und klicken Sie auf **hinzufügen > Neues Element > Visual C#-Elemente > Erweiterbarkeit > Visual Studio-Paket**. Nennen Sie diese Datei **TestAsyncPackage.cs**.  
   
 3.  In TestAsyncPackage.cs ändern Sie das Paket von AsyncPackage statt Paket erben:  
   

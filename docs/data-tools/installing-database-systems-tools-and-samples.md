@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 17bdaffa8fdbb6ddff9d7fe5590db021997aa01f
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.openlocfilehash: 2b3a551f19e3410b5f56ebe994676666cdc3d4e1
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="compatible-database-systems-for-visual-studio"></a>Kompatiblen Datenbanksystemen für Visual Studio
 
@@ -30,7 +30,7 @@ Ein Datenbanksystem von .NET-Anwendungen zugegriffen werden kann und in Fenstern
 
 Bei Verwendung von Azure-Speicher-APIs installieren Sie die Azure-Speicher-Emulatoren auf dem lokalen Computer während der Entwicklung, um Gebühren zu vermeiden, bis Sie zur Bereitstellung bis hin zur Produktion bereit sind. Weitere Informationen finden Sie unter [Verwenden des Azure-Speicheremulators für Entwicklung und Tests](https://azure.microsoft.com/en-us/documentation/articles/storage-use-emulator/).
 
-Die folgende Liste enthält einige der gängigeren Datenbanksystemen, die verwendet werden können, in Visual Studio-Projekten. Die Liste ist nicht vollständig. Eine Liste der Drittanbieter, die Daten ADO.NET-Datenanbieter bieten, die umfassende Integration in Visual Studio-Tools zu ermöglichen, finden Sie unter [ADO.NET-Datenanbietern](https://msdn.microsoft.com/en-us/library/dd363565.aspx).
+Die folgende Liste enthält einige der gängigeren Datenbanksystemen, die verwendet werden können, in Visual Studio-Projekten. Die Liste ist nicht vollständig. Eine Liste der Drittanbieter, die Daten ADO.NET-Datenanbieter bieten, die umfassende Integration in Visual Studio-Tools zu ermöglichen, finden Sie unter [ADO.NET-Datenanbietern](/dotnet/framework/data/adonet/data-providers).
 
 ## <a name="microsoft-sql-server"></a>Microsoft SQL Server
 

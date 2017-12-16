@@ -12,11 +12,11 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e99505c0d3c4ee59f6e07a5b38d5d95533ab879f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: b3081537b1704fd461a458798d646bf7eeb65f0a
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="creating-custom-project-and-item-templates"></a>Erstellen von benutzerdefinierten Projekt- und Elementvorlagen
 Das Visual Studio SDK enthält Projektvorlagen, die eine benutzerdefinierte Vorlage und eine benutzerdefinierte Elementvorlage erstellen. Diese Vorlagen enthalten einige allgemeine parameterersetzungen und als Zip-Dateien erstellen. Sie werden nicht automatisch bereitgestellt, und sie sind nicht verfügbar in der experimentellen Instanz. Sie müssen die ZIP-Datei kopieren Datei auf den Speicherort  
@@ -79,7 +79,7 @@ Das Visual Studio SDK enthält Projektvorlagen, die eine benutzerdefinierte Vorl
   
 4.  Erstellen Sie die Projektmappe, und drücken Sie F5. Die experimentelle Instanz angezeigt wird.  
   
-5.  Für ein Projektvorlagenprojekt Daraufhin sollte die Projektvorlage aufgeführt, die der **neues Projekt** Dialogfeld (**Datei / neu / Projekt**) in den Visual c# oder Visual Basic-Knoten. Für ein Elementvorlagenprojekt sehen Sie die Elementvorlage aufgeführt, klicken Sie im Dialogfeld "Neues Element hinzufügen" (in der **Projektmappen-Explorer**, wählen Sie den Projektknoten, und klicken Sie auf **hinzufügen / neues Element**).  
+5.  Für ein Projektvorlagenprojekt Daraufhin sollte die Projektvorlage aufgeführt, die der **neues Projekt** Dialogfeld (**Datei > Neu > Projekt**) in den Visual c# oder Visual Basic-Knoten. Für ein Elementvorlagenprojekt sehen Sie die Elementvorlage aufgeführt, klicken Sie im Dialogfeld "Neues Element hinzufügen" (in der **Projektmappen-Explorer**, wählen Sie den Projektknoten, und klicken Sie auf **hinzufügen / neues Element**).  
   
 ## <a name="see-also"></a>Siehe auch  
  [Referenz zu Visual Studio-Vorlagen](../ide/visual-studio-template-reference.md)

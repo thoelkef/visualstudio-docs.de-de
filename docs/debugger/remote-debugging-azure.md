@@ -12,11 +12,11 @@ caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c0527d33e47ce42449f2ae2bb75ee3e342b04c2b
-ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
+ms.openlocfilehash: 4e42513e431fd81a85d54a3e9784ebaa6cd26eb2
+ms.sourcegitcommit: 38097344f3ff74ba7b03bcfa45910015ca6bc2be
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 12/11/2017
 ---
 # <a name="remote-debug-aspnet-core-on-iis-and-azure-in-visual-studio-2017"></a>Remotedebuggen ASP.NET Core unter IIS und Azure in Visual Studio 2017
 Sie können eine ASP.NET-Webanwendung auf einem Windows Server-Computer mit IIS bereitstellen und für das Remotedebuggen einrichten. Dieses Handbuch erläutert das Einrichten und konfigurieren eine Visual Studio 2017 ASP.NET Core-app, auf IIS mithilfe von Azure bereitgestellt und von Visual Studio remote Debugger anfügen.
@@ -47,11 +47,11 @@ Debuggen zwischen zwei Computern über einen Proxy verbunden wird nicht unterst�
 
 ## <a name="create-the-aspnet-core-application-on-the-visual-studio-2017-computer"></a>Erstellen Sie die ASP.NET Core-Anwendung auf dem Computer Visual Studio 2017 
 
-1. Erstellen einer neuen ASP.NET Core-Anwendung. (Wählen Sie **Datei > Neu > Projekt**, und wählen Sie dann **Visual c# > Web > ASP.NET-Webanwendung für Core (.NET Core)**).
+1. Erstellen einer neuen ASP.NET Core-Anwendung. (Wählen Sie **Datei > Neu > Projekt**, und wählen Sie dann **Visual c# > Web > ASP.NET Core Web Application**).
 
     In der **ASP.NET Core** -Vorlagenabschnitt wählen **Webanwendung**.
 
-2. Stellen Sie sicher, dass **Docker-Unterstützung aktivieren** ist **nicht** ausgewählten und **Authentifizierung** festgelegt ist, um **keine Authentifizierung**.
+2. Stellen Sie sicher, dass **ASP.NET Core 2.0** ausgewählt ist, **Docker-Unterstützung aktivieren** ist **nicht** ausgewählten und **Authentifizierung** auf festgelegt ist **Keine Authentifizierung**.
 
 3. Nennen Sie das Projekt **MyASPApp** , und klicken Sie auf **OK** um die neue Projektmappe zu erstellen.
 

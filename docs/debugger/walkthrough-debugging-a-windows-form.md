@@ -26,11 +26,11 @@ caps.latest.revision: "28"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a21450dda35addae55019545d67ab7f1e4ebe99a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 02db9a01286e65f371ab4d8388102a3db4c5602e
+ms.sourcegitcommit: 1e08318a8a684b21609af7a5e48b56abcc3239e6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/13/2017
 ---
 # <a name="walkthrough-debugging-a-windows-form"></a>Exemplarische Vorgehensweise: Debuggen eines Windows Forms
 Ein Windows Form ist eine der am häufigsten vorkommenden verwalteten Anwendungen. Ein solches Formular erstellt eine Windows-Standardanwendung. Sie können diese exemplarische Vorgehensweise mit Visual Basic, C# oder C++ ausführen.  
@@ -126,7 +126,7 @@ Ein Windows Form ist eine der am häufigsten vorkommenden verwalteten Anwendung
   
 4.  Auf der **Debuggen** Menü wählen **Windows**, klicken Sie dann **Überwachen**, und klicken Sie auf **Überwachen 1**.  
   
-5.  In der **Überwachen 1** Fenster, klicken Sie auf eine leere Zeile. In der **Namen** Geben Sie die Spalte `textBox1.Text` (Wenn Sie Visual Basic, Visual C#- oder j# verwenden) oder `textBox1->Text` (Wenn Sie C++ verwenden), drücken Sie dann die EINGABETASTE.  
+5.  In der **Überwachen 1** Fenster, klicken Sie auf eine leere Zeile. In der **Namen** Geben Sie die Spalte `textBox1.Text` (Wenn Sie Visual Basic oder Visual c# verwenden) oder `textBox1->Text` (Wenn Sie C++ verwenden), drücken Sie dann die EINGABETASTE.  
   
      Die **Überwachen 1** Fenster zeigt den Wert dieser Variablen in Anführungszeichen:  
   

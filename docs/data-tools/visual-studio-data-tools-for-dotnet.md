@@ -12,14 +12,14 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 6b48b16d33c62c2d0ca96eb1d55ce22682458029
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.openlocfilehash: bc63c636d58bcde7aefeb7d35939008387bb6808
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="visual-studio-data-tools-for-net"></a>Visual Studio-Tools mit Daten für .NET
-Visual Studio und .NET Framework geben zusammen eine umfangreiche API und toolunterstützung ist für das Herstellen einer Verbindung mit Datenbanken und Modellieren von Daten im Arbeitsspeicher zum Anzeigen der Daten in der Benutzeroberfläche. .NET Framework-Klassen, die Datenzugriffs-Funktionalität bereitstellen, werden als bezeichnet [ADO.NET](https://msdn.microsoft.com/library/e80y5yhx.aspx). ADO.NET, zusammen mit den Daten in Visual Studio-Tools wurde ursprünglich entworfen, in erster Linie zum Unterstützen von relationalen Datenbanken und XML. Heutzutage bieten viele NoSQL-Datenbankhersteller oder Drittanbieter, ADO.NET-Anbietern.  
+Visual Studio und .NET Framework geben zusammen eine umfangreiche API und toolunterstützung ist für das Herstellen einer Verbindung mit Datenbanken und Modellieren von Daten im Arbeitsspeicher zum Anzeigen der Daten in der Benutzeroberfläche. .NET Framework-Klassen, die Datenzugriffs-Funktionalität bereitstellen, werden als bezeichnet [ADO.NET](/dotnet/framework/data/adonet/index). ADO.NET, zusammen mit den Daten in Visual Studio-Tools wurde ursprünglich entworfen, in erster Linie zum Unterstützen von relationalen Datenbanken und XML. Heutzutage bieten viele NoSQL-Datenbankhersteller oder Drittanbieter, ADO.NET-Anbietern.  
   
 [.NET Core](https://www.dotnetfoundation.org/netcore) ADO.NET, mit Ausnahme von Datasets und verwandte Typen unterstützt. Wenn Sie .NET Core als Ziel dient, erfordern eine ORM (Objektrelationales Mapping)-Ebene verwenden [Entity Framework Core](https://docs.microsoft.com/ef/core/).  
   
@@ -39,7 +39,7 @@ Der typische Arbeitsablauf umfasst dies:
   
 5.  Hinzufügen von benutzerdefiniertem Code für Elemente, wie Geschäftsregeln, Suche und Überprüfen von Daten oder benutzerdefinierte Funktionen nutzen, die die zugrunde liegenden Datenbank verfügbar macht.  
   
-Überspringen Sie Schritt 3 und Programmieren Sie eine Anwendung .NET Befehle direkt an eine Datenbank, sondern mithilfe eines Modells. In diesem Fall finden Sie hier die relevante Dokumentation: [ADO.NET](https://msdn.microsoft.com/library/e80y5yhx.aspx). Beachten Sie, dass Sie weiterhin verwenden können die Datenquellen-Konfigurations-Assistenten und Designer Datenbindungsfunktionen Code zu generieren, wenn Sie Ihre eigenen Objekte im Arbeitsspeicher und dann binden Sie-Benutzeroberflächen-Steuerelemente mit diesen Objekten aufzufüllen.
+Überspringen Sie Schritt 3 und Programmieren Sie eine Anwendung .NET Befehle direkt an eine Datenbank, sondern mithilfe eines Modells. In diesem Fall finden Sie hier die relevante Dokumentation: [ADO.NET](/dotnet/framework/data/adonet/index). Beachten Sie, dass Sie weiterhin verwenden können die Datenquellen-Konfigurations-Assistenten und Designer Datenbindungsfunktionen Code zu generieren, wenn Sie Ihre eigenen Objekte im Arbeitsspeicher und dann binden Sie-Benutzeroberflächen-Steuerelemente mit diesen Objekten aufzufüllen.
   
 ## <a name="see-also"></a>Siehe auch
 [Zugreifen auf Daten in Visual Studio](../data-tools/accessing-data-in-visual-studio.md)

@@ -23,11 +23,11 @@ caps.latest.revision: "14"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 62a8be3b1a1c98a330efeb26d9a84e74f2334423
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 4b383deae8262f9fb53cf4494ef8ce8d65f5ce02
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="allocation-hooks-and-c-run-time-memory-allocations"></a>Reservierungshooks und Speicherreservierungen von C-Laufzeitbibliotheken
 Eine äußerst wichtige Einschränkung für Reservierungshookfunktionen besteht darin, dass `_CRT_BLOCK`-Blöcke (die von C-Laufzeitbibliotheken intern vorgenommenen Speicherbelegungen) ignoriert werden müssen, falls Aufrufe an C-Bibliotheksfunktionen gesendet werden, durch die interner Speicher belegt wird. Die `_CRT_BLOCK`-Blöcke können ignoriert werden, wenn Sie am Anfang der Reservierungshookfunktion z. B. folgenden Code einfügen:  
@@ -42,5 +42,4 @@ if ( nBlockUse == _CRT_BLOCK )
  Wenn Sie die Quelldateien der Laufzeitbibliothek untersuchen, sehen Sie, dass die standardmäßige Reservierungshookfunktion, **CrtDefaultAllocHook** (welche gibt einfach **"true"**), befindet sich in einer separaten Datei selbst, DBGHOOK. C. Wenn Sie möchten die Hookfunktion aufgerufen werden, dies gilt auch für die Zuweisung vorgenommen, durch den Laufzeit-Startcode, die vor der Anwendungsverzeichnis ausgeführt wird **main** -Funktion können Sie durch ein eigenes, statt diese Funktion standardmäßig ersetzen mit [_CrtSetAllocHook](/cpp/c-runtime-library/reference/crtsetallochook).  
   
 ## <a name="see-also"></a>Siehe auch  
- [Schreiben von Hookfunktionen Debuggen](../debugger/debug-hook-function-writing.md)   
- [crt_dbg2-Beispiel](http://msdn.microsoft.com/en-us/21e1346a-6a17-4f57-b275-c76813089167)
+ [Schreiben von Hookfunktionen zum Debuggen](../debugger/debug-hook-function-writing.md)   

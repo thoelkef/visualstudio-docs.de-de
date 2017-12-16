@@ -12,11 +12,11 @@ caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b73dc5b153813811a0d2b839e69200a7e5f5a1e9
-ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
+ms.openlocfilehash: 2f1fbc41976afc6a906757fa5946b82abdd8bd02
+ms.sourcegitcommit: 38097344f3ff74ba7b03bcfa45910015ca6bc2be
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 12/11/2017
 ---
 # <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio-2017"></a>Remotedebuggen von ASP.NET Core auf einem Remote-IIS-Computer in Visual Studio 2017
 Um eine ASP.NET-Anwendung debuggen, die in IIS bereitgestellt wurde, installieren Sie und führen Sie der Remotetools auf dem Computer aus, auf denen Sie Ihre app bereitgestellt haben, und fügen Sie an der ausgeführten app aus Visual Studio.
@@ -35,11 +35,11 @@ Debuggen zwischen zwei Computern über einen Proxy verbunden wird nicht unterst�
 
 ## <a name="create-the-aspnet-core-application-on-the-visual-studio-2017-computer"></a>Erstellen Sie die ASP.NET Core-Anwendung auf dem Computer Visual Studio 2017 
 
-1. Erstellen einer neuen ASP.NET Core-Anwendung. (**Datei > Neu > Projekt**, und wählen Sie dann **Visual c# > Web > ASP.NET-Webanwendung für Core (.NET Core)**).
+1. Erstellen einer neuen ASP.NET Core-Anwendung. (**Datei > Neu > Projekt**, und wählen Sie dann **Visual c# > Web > ASP.NET Core Web Application**).
 
     In der **ASP.NET Core** -Vorlagenabschnitt wählen **Webanwendung**.
 
-2. Stellen Sie sicher, dass **Docker-Unterstützung aktivieren** ist **nicht** ausgewählten und **Authentifizierung** festgelegt ist, um **keine Authentifizierung**.
+2. Stellen Sie sicher, dass **ASP.NET Core 2.0** ausgewählt ist, **Docker-Unterstützung aktivieren** ist **nicht** ausgewählten und **Authentifizierung** auf festgelegt ist **Keine Authentifizierung**.
 
 3. Nennen Sie das Projekt **MyASPApp** , und klicken Sie auf **OK** um die neue Projektmappe zu erstellen.
 

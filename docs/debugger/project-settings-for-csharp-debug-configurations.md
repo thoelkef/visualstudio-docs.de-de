@@ -14,23 +14,21 @@ dev_langs:
 - C++
 helpviewer_keywords:
 - debug configurations, C#
-- debugging [J#], debugger settings
 - project settings [Visual Studio], debug configurations
 - debug builds, project settings
 - projects [Visual Studio], debug configurations
 - project configurations, debug
 - debugging [C#], debugger settings
-- debug configurations, J#
 ms.assetid: e30ca810-66e9-4d6e-9cf6-9f285cd0b100
 caps.latest.revision: "22"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4310b9e84986ef50f735f0e7ddf6813d9c6fd60d
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.openlocfilehash: d588f43271b127c675a6ec2fdf9e55ef388eadf2
+ms.sourcegitcommit: 1e08318a8a684b21609af7a5e48b56abcc3239e6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/13/2017
 ---
 # <a name="project-settings-for--c-debug-configurations"></a>Projekteinstellungen für C#-Debugkonfigurationen
 Sie können die projekteinstellungen für eine C#-Debugkonfiguration im Ändern der **Eigenschaftenseiten** Fenster entsprechend der Anleitung unter [Debug- und Releasekonfigurationen](../debugger/how-to-set-debug-and-release-configurations.md). Die folgenden Tabellen zeigen, wo die debuggerspezifischen Einstellungen im Suchen der **Eigenschaftenseiten** Fenster.  
@@ -46,8 +44,8 @@ Sie können die projekteinstellungen für eine C#-Debugkonfiguration im Ändern 
 |**Startaktion**|Anhand dieser Gruppe von Steuerungen wird festgelegt, welche Aktion bei Auswahl von Starten im Menü Debuggen erfolgt.<br /><br /> -   **Starten Sie Projekt** ist die Standardeinstellung und das Startprojekt zum Debuggen gestartet. Weitere Informationen finden Sie unter [auswählen des Startprojekts](http://msdn.microsoft.com/en-us/222e3f32-a6fe-4941-bf37-6b2a921129fd).<br />-   **Externes Programm starten** ermöglicht es Ihnen zu starten, Anfügen an ein Programm, das nicht Teil einer [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Projekt. Weitere Informationen finden Sie unter [Anfügen an ein aktives Programm](http://msdn.microsoft.com/en-us/636d0a52-4bfd-48d2-89ad-d7b9ca4dc4f4).<br />-   **Browser mit folgender URL starten** ermöglicht es Ihnen, eine Webanwendung Debuggen.|  
 |**Befehlszeilenargumente**|Legt Befehlszeilenargumente für das Programm fest, das gedebuggt werden soll. Der Befehlsname entspricht dem unter Externes Programm starten angegebenen Programmnamen. Wenn für Startaktion die Option Start-URL ausgewählt ist, können keine Befehlszeilenargumente festgelegt werden.|  
 |**Arbeitsverzeichnis**|Gibt das Arbeitsverzeichnis des Programms an, das gerade gedebuggt wird. Das Arbeitsverzeichnis in [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] ist das Verzeichnis, aus dem die Anwendung gestartet wird. Standardmäßig ist dies das Verzeichnis \bin\debug.|  
-|**Remoten Computer verwenden**|Der Name eines Remotecomputers, auf dem die Anwendung wird ausgeführt, für Debugzwecke oder ein [Msvsmon-Servernamen](../debugger/remote-debugging.md). Der Speicherort der EXE-Datei auf dem Remotecomputer wird durch die Eigenschaft Ausgabepfad festgelegt, die sich im Ordner Konfigurationseigenschaften in der Kategorie Erstellen befindet. Bei diesem Speicherort muss es sich um ein freigegebenes Verzeichnis auf dem Remotecomputer handeln.|
-|**Debuggen von nicht verwaltetem Code aktivieren**|Bietet die Möglichkeit, Aufrufe von systemeigenem (nicht verwaltetem) Win32-Code von einer verwalteten Anwendung aus zu debuggen.|  
+|**Remotecomputer verwenden**|Der Name eines Remotecomputers, auf dem die Anwendung wird ausgeführt, für Debugzwecke oder ein [Msvsmon-Servernamen](../debugger/remote-debugging.md). Der Speicherort der EXE-Datei auf dem Remotecomputer wird durch die Eigenschaft Ausgabepfad festgelegt, die sich im Ordner Konfigurationseigenschaften in der Kategorie Erstellen befindet. Bei diesem Speicherort muss es sich um ein freigegebenes Verzeichnis auf dem Remotecomputer handeln.|
+|**Nicht verwaltetes Codedebuggen aktivieren**|Bietet die Möglichkeit, Aufrufe von systemeigenem (nicht verwaltetem) Win32-Code von einer verwalteten Anwendung aus zu debuggen.|  
 |**SQL Server-Debuggen aktivieren**|Ermöglicht das Debuggen von SQL Server-Datenbankobjekten.|  
   
 ##  <a name="BKMK_Build_tab"></a>Registerkarte "erstellen"  

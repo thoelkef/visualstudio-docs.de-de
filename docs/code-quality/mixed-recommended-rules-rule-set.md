@@ -12,11 +12,11 @@ caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9602b5af2506daebe88aac8459ea9da9c9a6ae08
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 44bc05bc6ba27dffdc267ad2cad1e15bc9b0a61a
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="mixed-recommended-rules-rule-set"></a>Regelsatz für gemischte empfohlene Mindestregeln
 Die Microsoft gemischte empfohlene Regeln konzentrieren sich auf die häufigsten und kritischsten Probleme in C++-Projekten, die die Common Language Runtime, einschließlich potenzieller Sicherheitslücken, Anwendungsabstürze und anderen wichtigen Logik- und Designfehlern unterstützen. Der Regelsatz sollte in allen benutzerdefinierten Regelsätzen enthalten sein, die Sie für Ihre C++-Projekte mit Common Language Runtime-Unterstützung erstellen. Dieser Regelsatz ist für die Konfiguration mit Visual Studio Professional Edition und höher vorgesehen.  
@@ -116,7 +116,6 @@ Die Microsoft gemischte empfohlene Regeln konzentrieren sich auf die häufigsten
 |[C6504](../code-quality/c6504.md)|NULL auf Nichtzeiger|  
 |[C6505](../code-quality/c6505.md)|MustCheck für "void"|  
 |[C6506](../code-quality/c6506.md)|Puffergröße auf Nichtzeiger oder Array|  
-|[C6507](http://msdn.microsoft.com/en-us/18f88cd1-d035-4403-a6a4-12dd0affcf21)|NULL-Konflikt bei 0 Dereferenzierung|  
 |[C6508](../code-quality/c6508.md)|Schreibzugriff auf Konstante|  
 |[C6509](../code-quality/c6509.md)|Rückgabe wurde für Vorbedingung verwendet|  
 |[C6510](../code-quality/c6510.md)|NULL für Nichtzeiger abgebrochen|  
@@ -127,12 +126,8 @@ Die Microsoft gemischte empfohlene Regeln konzentrieren sich auf die häufigsten
 |[C6516](../code-quality/c6516.md)|Keine Eigenschaften für Attribut|  
 |[C6517](../code-quality/c6517.md)|Zulässige Größe für nicht lesbaren Puffer|  
 |[C6518](../code-quality/c6518.md)|Schreibbare Größe für Puffer, der nicht geschrieben werden kann|  
-|[C6519](http://msdn.microsoft.com/en-us/2b6326b0-0539-4d26-8fb1-720114933232)|Ungültige Anmerkung: Wert für die Eigenschaft "NeedsRelease" muss "Ja" oder "Nein" sein|  
-|[C6521](http://msdn.microsoft.com/en-us/e98d0ae3-6f13-47b2-9a15-15d4055af9ef)|Ungültige Größenzeichenfolgendereferenzierung|  
 |[C6522](../code-quality/c6522.md)|Ungültiger Größenzeichenfolgentyp|  
-|[C6523](http://msdn.microsoft.com/en-us/11397a31-b224-46b0-afb7-d49ca576a3bb)|Ungültiger Größenzeichenfolgenparameter|  
 |[C6525](../code-quality/c6525.md)|Ungültiger Größenzeichenfolgenstandort|  
-|[C6526](http://msdn.microsoft.com/en-us/59c590c7-0098-4166-a1ac-87f324596002)|Ungültiger Größenzeichenfolgen-Puffertyp|  
 |[C6527](../code-quality/c6527.md)|Ungültige Anmerkung: Die 'NeedsRelease'-Eigenschaft kann nicht für Werte des void-Typs verwendet werden.|  
 |[C6530](../code-quality/c6530.md)|Unbekannter Formatzeichenfolgenstil|  
 |[C6540](../code-quality/c6540.md)|Bei Verwendung von Attributanmerkungen für diese Funktion werden alle vorhandenen, zugehörigen __declspec-Anmerkungen ungültig|  
@@ -221,8 +216,7 @@ Die Microsoft gemischte empfohlene Regeln konzentrieren sich auf die häufigsten
 |[C28253](../code-quality/c28253.md)|Inkonsistente Anmerkung für die Funktion: der Parameter weist andere Anmerkungen für diese Instanz auf.|  
 |[C28254](../code-quality/c28254.md)|dynamic_cast<>() wird in Anmerkungen nicht unterstützt.|  
 |[C28262](../code-quality/c28262.md)|Ein Syntaxfehler in der Anmerkung wurde in der Funktion für Anmerkung gefunden|  
-|[C28263](../code-quality/c28263.md)|Ein Syntaxfehler in einer bedingten Anmerkung wurde gefunden für systeminterne Anmerkung|  
-|[C28264](http://msdn.microsoft.com/en-us/bf6ea983-a06e-4752-a042-747a7dbf338c)|Ergebnislistenwerte müssen Konstanten sein.|  
+|[C28263](../code-quality/c28263.md)|Ein Syntaxfehler in einer bedingten Anmerkung wurde gefunden für systeminterne Anmerkung| 
 |[C28267](../code-quality/c28267.md)|Ein Syntaxfehler in den Anmerkungen wurde in Anmerkung in der Funktion gefunden.|  
 |[C28272](../code-quality/c28272.md)|Die Anmerkung für Funktion, Parameter, beim Untersuchen von ist inkonsistent mit der Funktionsdeklaration.|  
 |[C28273](../code-quality/c28273.md)|Für Funktion sind die Hinweise inkonsistent mit der Funktionsdeklaration.|  

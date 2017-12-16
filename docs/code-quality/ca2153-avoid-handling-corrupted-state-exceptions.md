@@ -12,11 +12,11 @@ caps.latest.revision: "5"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: eabddaea271eb07873fc50bd4824a5108514444c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 679b5c78330bb8be151a1b9f89625c8f2178456d
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="ca2153-avoid-handling-corrupted-state-exceptions"></a>CA2153: Verhindern, dass Ausnahmen bei Beschädigungen verarbeitet werden
 |||  
@@ -30,7 +30,7 @@ ms.lasthandoff: 10/31/2017
  [Ausnahmen bei Beschädigungen (Corrupted State Exceptions, CSE)](https://msdn.microsoft.com/en-us/magazine/dd419661.aspx) weisen auf eine Speicherbeschädigung innerhalb des Prozesses hin. Diese abzufangen, statt einen Absturz des Prozesses zuzulassen, führt zu Sicherheitsrisiken, falls ein Angreifer einen Exploit in den beschädigten Speicherbereich einschleusen kann.  
   
 ## <a name="rule-description"></a>Regelbeschreibung  
- CSE gibt an, dass der Zustand eines Prozesses beschädigt wurde und nicht vom System abgefangen wurde. Im Szenario, das sich auf einen beschädigten Zustand bezieht, wird die Ausnahme von einem allgemeinen Handler nur abgefangen, wenn Sie die Methode mit dem richtigen `HandleProcessCorruptedStateExceptions` -Attribut markieren. Von der [Common Language Runtime (CLR)](https://msdn.microsoft.com/en-us/library/8bs2ecf4.aspx) werden standardmäßig keine Catch-Handler für CSEs aufgerufen.  
+ CSE gibt an, dass der Zustand eines Prozesses beschädigt wurde und nicht vom System abgefangen wurde. Im Szenario, das sich auf einen beschädigten Zustand bezieht, wird die Ausnahme von einem allgemeinen Handler nur abgefangen, wenn Sie die Methode mit dem richtigen `HandleProcessCorruptedStateExceptions` -Attribut markieren. Wird standardmäßig die [Common Language Runtime (CLR)](/dotnet/standard/clr) wird kein Catch-Handler für CSEs aufgerufen.  
   
  Die sicherste Option besteht darin, den Prozess abstürzen zu lassen, ohne diese Ausnahmetypen abzufangen, da selbst das Protokollieren von Code Angreifer in die Lage versetzen kann, Schwachstellen durch Speicherbeschädigungen auszunutzen.  
   

@@ -13,11 +13,11 @@ caps.latest.revision: "22"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d0adc9f69f1b0e873d2e1f38c9317070dc0d6a08
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 3c37f4dc215027752da9c16fbdfba44b4e10c41c
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="how-to-provide-a-service"></a>Vorgehensweise: Bereitstellen ein Diensts
 Eine VSPackage kann Dienste bereitstellen, die anderen VSPackages verwenden können. Um einen Dienst zu gewährleisten, muss eine VSPackage registrieren den Dienst mit Visual Studio und fügen Sie den Dienst hinzu.  
@@ -31,9 +31,9 @@ Eine VSPackage kann Dienste bereitstellen, die anderen VSPackages verwenden kön
   
 #### <a name="implementing-a-service"></a>Implementieren eines Diensts  
   
-1.  Erstellen Sie ein VSIX-Projekt (**Datei / neu / Projekt / Visual C#-/ Extensiblity / VSIX-Projekt**).  
+1.  Erstellen Sie ein VSIX-Projekt (**Datei > Neu > Projekt > c# > Extensiblity > VSIX-Projekt**).  
   
-2.  Fügen Sie dem Projekt ein VSPackage hinzu. Wählen Sie den Projektknoten in der **Projektmappen-Explorer** , und klicken Sie auf **hinzufügen / neues Element / Visual C#-Elemente / Erweiterbarkeit / Visual Studio-Paket**.  
+2.  Fügen Sie dem Projekt ein VSPackage hinzu. Wählen Sie den Projektknoten in der **Projektmappen-Explorer** , und klicken Sie auf **hinzufügen > Neues Element > Visual C#-Elemente > Erweiterbarkeit > Visual Studio-Paket**.  
   
 3.  Um einen Dienst zu implementieren, müssen Sie drei Arten erstellen:  
   
@@ -109,7 +109,7 @@ Eine VSPackage kann Dienste bereitstellen, die anderen VSPackages verwenden kön
   
 2.  Implementieren Sie die Rückrufmethode, die sollten erstellen und Zurückgeben des Diensts oder null, wenn sie nicht erstellt werden kann.  
   
-    ```  
+    ```csharp  
     private object CreateService(IServiceContainer container, Type serviceType)  
     {  
         if (typeof(SMyService) == serviceType)  

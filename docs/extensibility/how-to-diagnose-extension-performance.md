@@ -12,11 +12,11 @@ caps.latest.revision: "1"
 author: BertanAygun
 ms.author: bertaygu
 manager: ghogen
-ms.openlocfilehash: 7ff2aeecfbabb055f0fa9740623bc2bd949b11c7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: c2d8b27937be4580da8ff33c5b3c1d57654b4c89
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="measuring-extension-impact-in-startup"></a>Messen der Erweiterung Auswirkung beim Start
 
@@ -48,7 +48,7 @@ Wir haben mehrere beginnend mit Visual Studio 2015, um Hilfe beim Entfernen von 
 
 Weitere Informationen zu diesen Funktionen finden Sie in den folgenden Dokumenten:
 
-[Regel-basierte Benutzeroberfläche Kontexten](how-to-use-rule-based-ui-context-for-visual-studio-extensions.md): eine umfangreichere regelbasiert-Modul erstellte Bedingungsausdruck UI Kontexten ermöglichen es Ihnen, benutzerdefinierte Kontexte basierend auf Projekttypen, Typen und Funktionen zu erstellen. Dieser benutzerdefinierte Kontexte können ein Paket während der spezifische Szenarien wie etwa der Anwesenheit eines Projekts mit einer bestimmten Funktion anstelle von Start laden verwendet werden. erlauben oder die [Befehl Sichtbarkeit mit einem benutzerdefinierten Kontext](https://msdn.microsoft.com/en-us/library/bb166512.aspx) basierend auf Projektfunktionen oder anderen verfügbaren Begriffe somit Dadurch entfällt die Notwendigkeit ein Paket zu laden, wenn einen Befehl Status Abfrage Handler registriert.
+[Regel-basierte Benutzeroberfläche Kontexten](how-to-use-rule-based-ui-context-for-visual-studio-extensions.md): eine umfangreichere regelbasiert-Modul erstellte Bedingungsausdruck UI Kontexten ermöglichen es Ihnen, benutzerdefinierte Kontexte basierend auf Projekttypen, Typen und Funktionen zu erstellen. Dieser benutzerdefinierte Kontexte können ein Paket während der spezifische Szenarien wie etwa der Anwesenheit eines Projekts mit einer bestimmten Funktion anstelle von Start laden verwendet werden. erlauben oder die [Befehl Sichtbarkeit mit einem benutzerdefinierten Kontext](visibilityconstraints-element.md) basierend auf Projektfunktionen oder anderen verfügbaren Begriffe somit Dadurch entfällt die Notwendigkeit ein Paket zu laden, wenn einen Befehl Status Abfrage Handler registriert.
 
 [Unterstützung für asynchrone Paket](how-to-use-asyncpackage-to-load-vspackages-in-the-background.md): die neue AsyncPackage Basisklasse in Visual Studio 2015 mit der Visual Studio-Pakete werden im Hintergrund geladen asynchron, wenn das Laden des Pakets durch ein automatisches Laden-Attribut oder eine asynchrone Abfrage angefordert wurde . Diese Hintergrund laden kann die IDE reaktionsfähig bleiben, während die Erweiterung im Hintergrund initialisiert wird und kritische Szenarien wie starten und die Projektmappe laden wäre nicht beeinträchtigt werden.
 

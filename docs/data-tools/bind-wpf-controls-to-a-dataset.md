@@ -19,11 +19,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: d7609215f7145ae05d978ba10d556782c886ee3b
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.openlocfilehash: 96d5407672ff94749731f9d00088b27e8c4da036
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>Binden von WPF-Steuerelementen zu einem dataset
 In dieser exemplarischen Vorgehensweise erstellen Sie eine WPF-Anwendung, die datengebundene Steuerelemente enthält. Die Steuerelemente sind an Produktdatensätze gebunden, die in einem Dataset gekapselt sind. Sie fügen außerdem Schaltflächen hinzu, mit denen es möglich ist, Produkte zu durchsuchen und Änderungen an Produktdatensätzen zu speichern.  
@@ -50,8 +50,6 @@ Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgend
 Vorkenntnisse der folgenden Konzepte sind ebenfalls hilfreich, wenn auch für die Durchführung der exemplarischen Vorgehensweise nicht erforderlich:  
   
 -   DataSets und TableAdapters. Weitere Informationen finden Sie unter [Dataset-Tools in Visual Studio](../data-tools/dataset-tools-in-visual-studio.md) und [TableAdapter](../data-tools/create-and-configure-tableadapters.md).  
-  
--   Arbeiten mit dem WPF-Designer. Weitere Informationen finden Sie unter [WPF und Silverlight-Designer (Übersicht)](http://msdn.microsoft.com/en-us/570b7a5c-0c86-4326-a371-c9b63378fc62).  
   
 -   WPF-Datenbindung. Weitere Informationen finden Sie unter [Übersicht über Datenbindung](/dotnet/framework/wpf/data/data-binding-overview).  
   
@@ -257,5 +255,4 @@ Hinzufügen von Code, der ermöglicht Benutzern das Speichern von Änderungen an
 ## <a name="see-also"></a>Siehe auch
 [Binden von WPF-Steuerelementen an Daten in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)   
 [Datasettools in Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)   
-[WPF und Silverlight-Designer (Übersicht)](http://msdn.microsoft.com/en-us/570b7a5c-0c86-4326-a371-c9b63378fc62)   
 [Übersicht zur Datenbindung](/dotnet/framework/wpf/data/data-binding-overview)

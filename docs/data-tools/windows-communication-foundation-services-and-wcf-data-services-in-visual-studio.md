@@ -39,11 +39,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 39c9ac7b1cbed8c64ee3b87fde4c990f998157a4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: b73e2cf93cf0f557db072586b7aa67ab730fad4f
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Windows Communication Foundation-Dienste und WCF Data Services in Visual Studio
 Visual Studio enthält Tools zum Arbeiten mit der Windows Communication Foundation (WCF) und [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)], Microsoft-Technologien zum Erstellen von verteilten Anwendungen. Dieses Thema enthält eine Einführung in die Dienste aus einer [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Perspektive. Die vollständige Dokumentation finden Sie unter [WCF Data Services 4.5](/dotnet/framework/data/wcf/index).  
@@ -243,7 +243,6 @@ Um dieses Problem zu vermeiden, werden die Typen in referenzierten Assemblys sta
 ||[Gewusst wie: Hinzufügen, Aktualisieren oder Entfernen eines WCF-Datendienstverweises](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md)|Erläutert, wie zum Verweisen auf und verwenden Sie [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].|  
 |[Problembehandlung bei Dienstverweisen](../data-tools/troubleshooting-service-references.md)|Zeigt Dienstverweise sowie ihre Verwendung zu verhindern, dass einige häufige Fehler, die auftreten können.|  
 |[Debuggen von WCF-Diensten](../debugger/debugging-wcf-services.md)|Beschreibt allgemeine Debugprobleme und Techniken, die beim Debuggen von WCF-Dienste auftreten können.|  
-|[Übersicht über den Windows Communication Foundation-Authentifizierung](http://msdn.microsoft.com/Library/6e121a28-89e8-4974-88a8-70aaa6a7d52b)|Beschreibt, wie WCF verwenden, um einen Rollendienst für eine Website bereitzustellen.|  
 |[Exemplarische Vorgehensweise: Erstellen einer N-Tier-Datenanwendung](../data-tools/walkthrough-creating-an-n-tier-data-application.md)|Liefert eine Schritt-für-Schritt-Anleitung für das Erstellen eines typisierten Datasets und das Aufteilen des Codes für TableAdapter und Dataset in mehrere Projekte.|  
 |[Dienstverweis konfigurieren (Dialogfeld)](../data-tools/configure-service-reference-dialog-box.md)|Beschreibt die Elemente der Benutzeroberfläche von der **Dienstverweis konfigurieren** (Dialogfeld).|  
   

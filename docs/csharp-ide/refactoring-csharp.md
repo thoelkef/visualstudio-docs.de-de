@@ -1,5 +1,5 @@
 ---
-title: Visual Studio-Funktionen (c#) Umgestaltung | Microsoft Docs
+title: C#-Umgestaltung von Funktionen in Visual Studio | Microsoft Docs
 ms.custom: 
 ms.date: 02/27/2017
 ms.reviewer: 
@@ -16,15 +16,17 @@ helpviewer_keywords: refactoring [C#]
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a03a5a8d7b8456f6c03646304dce0a85703bf1cc
-ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
+ms.openlocfilehash: a26fed472f0f1765f7a6ae447127ffce75061c1f
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 12/14/2017
 ---
-# <a name="refactoring-features-for-c"></a>Funktionen für C#-Umgestaltung #
+# <a name="refactoring-features-in-c"></a>Umgestaltung von Funktionen in c# #
 
-Refactoring ist der Prozess des Codes verbessern, nachdem es geschrieben wurde. Umgestaltung ändert die interne Struktur des Codes, ohne dessen Verhalten zu ändern. Die folgenden Umgestaltung Funktionen sind in Visual Studio für c# verfügbar:
+Umgestaltung versteht man die interne Struktur des Codes ändern, ohne dessen Verhalten zu ändern. Umgestaltung wird häufig verwendet, um Code besser lesbar, verwaltbare und zuverlässig ist.
+
+Die folgenden Umgestaltung Funktionen sind in Visual Studio für c# verfügbar:
 
 * [Methodensignatur ändern](refactoring/change-method-signature.md)
 * [Konvertieren einer Get-Methode in eine Eigenschaft/Konvertieren einer Eigenschaft in eine Get-Methode](refactoring/convert-get-method-to-property.md)
@@ -40,4 +42,6 @@ Refactoring ist der Prozess des Codes verbessern, nachdem es geschrieben wurde. 
 
 ## <a name="see-also"></a>Siehe auch
 
-[Verwenden der Visual Studio-Entwicklungsumgebung für C#](using-the-visual-studio-development-environment-for-csharp.md)  
+[Refactoring, Code-Generierung und schnelle Aktionen in Visual Studio](../ide/refactoring-code-generation-quick-actions.md)  
+[Umgestaltung in Visual Basic](../vb-ide/refactoring-vb.md)  
+[Verwenden der Visual Studio-Entwicklungsumgebung für C#](using-the-visual-studio-development-environment-for-csharp.md)

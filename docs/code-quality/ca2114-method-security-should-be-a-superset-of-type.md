@@ -18,11 +18,11 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d9784ae650a411ef4fe5086ae8bf756147fd2365
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: ac633134b5b8037eb9e45131128b0ee0cf2887ab
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="ca2114-method-security-should-be-a-superset-of-type"></a>CA2114: Methodensicherheit sollte Superset des Typs sein
 |||  
@@ -33,7 +33,7 @@ ms.lasthandoff: 10/31/2017
 |Unterbrechende Änderung|Breaking|  
   
 ## <a name="cause"></a>Ursache  
- Ein Typ verfügt, deklarativen Sicherheit und einer der Methoden für die gleiche Sicherheitsaktion deklarativen Sicherheit hat die Sicherheitsaktion ist nicht [Verknüpfungsaufrufe](/dotnet/framework/misc/link-demands) oder [Vererbungsanforderungen](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9), und die Berechtigungen Dieses Kontrollkästchen aktiviert, durch den Typ sind keine Teilmenge der Berechtigungen, die von der Methode überprüft.  
+ Ein Typ verfügt, deklarativen Sicherheit und einer der Methoden für die gleiche Sicherheitsaktion deklarativen Sicherheit hat die Sicherheitsaktion ist nicht [Verknüpfungsaufrufe](/dotnet/framework/misc/link-demands), und die Berechtigungen vom Typ überprüft nicht sind eine Teilmenge der Berechtigungen durch die Methode überprüft.  
   
 ## <a name="rule-description"></a>Regelbeschreibung  
  Eine Methode sollte nicht sowohl auf einer Methodenebene als auch Typebene deklarative Sicherheit für die gleiche Aktion aufweisen. Zwei Überprüfungen sind nicht kombiniert werden. nur die Methodenebene Anforderung angewendet wird. Wenn Berechtigungen anfordert, ein Typ ermöglicht z. B. `X`, und eine seiner Methoden fordert die Berechtigung `Y`, Code verfügt nicht über die Berechtigung verfügen über `X` zur Ausführung der Methode.  
@@ -63,6 +63,5 @@ ms.lasthandoff: 10/31/2017
 **[Keine Leseberechtigung (von Methode gefordert)] Persönliche Informationen konnte nicht zugegriffen werden: Fehler bei der Anforderung.**   
 ## <a name="see-also"></a>Siehe auch  
  [Schreiben von sicherem Richtlinien](/dotnet/standard/security/secure-coding-guidelines)   
- [Vererbungsanforderungen](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9)   
  [Verknüpfungsaufrufe](/dotnet/framework/misc/link-demands)   
  [Daten und Modellierung](/dotnet/framework/data/index)

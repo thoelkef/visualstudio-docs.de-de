@@ -12,14 +12,14 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 31e42bfcaf8904932d4ea864a608c943f638428c
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.openlocfilehash: 3da920f2beae4a611bdf773b7ff9abf562e5eb95
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="one-or-more-selected-items-contain-a-data-type-that-is-not-supported-by-the-designer"></a>Mindestens eines der ausgewählten Elemente enthält einen Datentyp, der nicht vom Designer unterstützt wird.
-Eine oder mehrere Elemente aus gezogen **Server-Explorer**/**Datenbank-Explorer** auf die [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] enthält einen Datentyp, der von nicht unterstützt wird die [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] (z. B. [Benutzerdefinierte CLR-Typen](http://msdn.microsoft.com/Library/9f70e0b0-3a0d-4eb1-b914-07a5d0c167c2)).  
+Eine oder mehrere Elemente aus gezogen **Server-Explorer**/**Datenbank-Explorer** auf die [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] enthält einen Datentyp, der von nicht unterstützt wird die [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] beispielsweise [Benutzerdefinierte CLR-Typen](/dotnet/framework/data/adonet/sql/clr-user-defined-types).  
   
 ### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
   
@@ -28,5 +28,5 @@ Eine oder mehrere Elemente aus gezogen **Server-Explorer**/**Datenbank-Explorer*
 2.  Ziehen Sie die Ansicht von **Server-Explorer**/**Datenbank-Explorer** in den Designer.  
   
 ## <a name="see-also"></a>Siehe auch
-[O/R-Designer-Nachrichten](../data-tools/o-r-designer-messages.md)  
+[O/R-Designer-Meldungen](../data-tools/o-r-designer-messages.md)  
 [LINQ to SQL-tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

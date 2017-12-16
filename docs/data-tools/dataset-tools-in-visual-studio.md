@@ -50,11 +50,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 6a7e5741b11263ef3c3730ddaa69e566cd7c2e24
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 0a589cf48f53636bcd3892c7c4c991e0fb516bf3
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="dataset-tools-in-visual-studio"></a>DataSet-Tools in Visual Studio
 > [!NOTE]
@@ -83,7 +83,7 @@ ms.lasthandoff: 10/31/2017
   
     -   [Rückspeichern von Daten in der Datenbank](../data-tools/save-data-back-to-the-database.md)  
   
--   Fragen Sie ab, und suchen Sie die Daten im Dataset. Weitere Informationen finden Sie unter [Abfragedatasets](../data-tools/query-datasets.md). [!INCLUDE[linq_dataset](../data-tools/includes/linq_dataset_md.md)]ermöglicht [LINQ (Language-Integrated Query)](http://msdn.microsoft.com/Library/a73c4aec-5d15-4e98-b962-1274021ea93d) über Daten in einem <xref:System.Data.DataSet> Objekt. Weitere Informationen finden Sie unter [LINQ to DataSet](/dotnet/framework/data/adonet/linq-to-dataset).  
+-   Fragen Sie ab, und suchen Sie die Daten im Dataset. Weitere Informationen finden Sie unter [Abfragedatasets](../data-tools/query-datasets.md). [!INCLUDE[linq_dataset](../data-tools/includes/linq_dataset_md.md)]ermöglicht [LINQ (Language-Integrated Query)](/dotnet/csharp/linq/) über Daten in einem <xref:System.Data.DataSet> Objekt. Weitere Informationen finden Sie unter [LINQ to DataSet](/dotnet/framework/data/adonet/linq-to-dataset).  
   
 -   Verwenden der **Datenquellen** Fenster Benutzeroberflächen-Steuerelemente an das Dataset oder die einzelnen Spalten gebunden, und um anzugeben, welche Spalten Benutzer bearbeitet werden. Weitere Informationen finden Sie unter [Binden von Steuerelementen an Daten in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md).  
   

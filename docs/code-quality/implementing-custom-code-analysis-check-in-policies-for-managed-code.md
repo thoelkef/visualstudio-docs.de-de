@@ -16,11 +16,11 @@ caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5c2853d06bf7dcf2ffd894ee3ae1a90e78e61c6d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 3d8747ddb78c257ae0ba38d24fb2c5cc529f67b9
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="implementing-custom-code-analysis-check-in-policies-for-managed-code"></a>Implementieren von benutzerdefinierten Eincheckrichtlinien für die Codeanalyse für verwalteten Code
 Die Codeanalyse in der Eincheckrichtlinie für einen Satz von Regeln gibt, die Mitglieder eines Teamprojekts für den Quellcode ausführen müssen, bevor er in die Versionskontrolle eingecheckt wird. Microsoft bietet eine Reihe von *-Regelsätze* dieser Gruppe Codeanalyse Regeln in Funktionsbereiche. *Benutzerdefinierte Eincheckrichtlinie Regelsätze* Geben Sie einen Satz von Codeanalyseregeln, die für ein Teamprojekt spezifisch sind. Ein Regelsatz wird in eine RULESET-Datei gespeichert.  
@@ -35,7 +35,7 @@ Die Codeanalyse in der Eincheckrichtlinie für einen Satz von Regeln gibt, die M
  Zum Erstellen eines benutzerdefinierten Regelsatzes für ein Teamprojekt erstellen Sie zunächst einen besonderen Ordner für die Eincheckrichtlinie Regelsatz in **Quellcodeverwaltungs-Explorer**. Klicken Sie dann die Regelsatzdatei erstellen und die Datei zur Versionskontrolle hinzufügen. Geben Sie schließlich den Regelsatz als die Eincheckvorgangs Codeanalyserichtlinie für das Teamprojekt an.  
   
 > [!NOTE]
->  Um einen Ordner in einem Teamprojekt zu erstellen, müssen Sie zuerst die Teamprojektstamm an einen Speicherort auf dem lokalen Computer zuordnen. Weitere Informationen finden Sie unter [erstellen und Verwenden von Arbeitsbereichen (alte)](http://msdn.microsoft.com/en-us/db4d5692-179a-44fe-ad31-0c1c900c9cb2).  
+>  Um einen Ordner in einem Teamprojekt zu erstellen, müssen Sie zuerst die Teamprojektstamm an einen Speicherort auf dem lokalen Computer zuordnen.  
   
 #### <a name="to-create-the-version-control-folder-for-the-check-in-policy-rule-set"></a>So erstellen Ordner für den Regelsatz in der Eincheckrichtlinie für die Versionskontrolle  
   
@@ -61,7 +61,7 @@ Die Codeanalyse in der Eincheckrichtlinie für einen Satz von Regeln gibt, die M
   
 1.  In **Quellcodeverwaltungs-Explorer**mit der rechten Maustaste auf den neuen Ordner, und klicken Sie dann auf **Elemente hinzufügen, um den Ordner**.  
   
-     Weitere Informationen finden Sie unter [verwenden der Versionskontrolle](http://msdn.microsoft.com/Library/33267cee-fe5f-4aa3-b2cd-6d22ceace314).  
+     Weitere Informationen finden Sie unter [Git und der VSTS](/vsts/git/overview).  
   
 2.  Klicken Sie auf den Regelsatz-Datei, die Sie erstellt haben, und klicken Sie dann auf **Fertig stellen**.  
   

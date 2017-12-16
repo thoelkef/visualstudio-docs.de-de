@@ -23,11 +23,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 85062fe6ea82a73fbc2d64e1d1ce9136d16831cf
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.openlocfilehash: 2274ac9bcfd3ba7c87364f5c4c79cd155844fe73
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="work-with-datasets-in-n-tier-applications"></a>Arbeiten Sie mit Datasets in n-Tier-Anwendungen
 *N-Tier-datenanwendungen* sind datenorientierte Anwendungen, die in mehrere logische Ebenen aufgeteilt sind (oder *Ebenen*). Anders ausgedrückt: Eine N-Tier-Datenanwendung ist eine Anwendung, die in mehrere Projekte unterteilt ist mit der Datenzugriffsebene, Geschäftslogikebene und der Präsentationsebene jeweils als eigenes Projekt. Weitere Informationen finden Sie unter [Übersicht über N-Tier Applications](../data-tools/n-tier-data-applications-overview.md).  
@@ -51,4 +51,4 @@ N-Tier-Unterstützung in typisierten Datasets ermöglicht die iterative Entwickl
 [Datasettools in Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)  
 [Zugreifen auf Daten in Visual Studio](../data-tools/accessing-data-in-visual-studio.md)  
 [Erstellen und Konfigurieren von TableAdapters](../data-tools/create-and-configure-tableadapters.md)  
-[N-schichtige und Remoteanwendungen mit LINQ to SQL](http://msdn.microsoft.com/Library/854a1cdd-53cb-45f5-83ca-63962a9b3598)
+[N-schichtige Anwendungen und Remoteanwendungen mit LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/n-tier-and-remote-applications-with-linq-to-sql)

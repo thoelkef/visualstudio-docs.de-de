@@ -18,11 +18,11 @@ caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: fb802e0d97d265c01540ca10ffe8d0dcf9b273cf
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: edd0bd14a75dfd58ca043bfaa663e2cfb2660e75
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="ca2107-review-deny-and-permit-only-usage"></a>CA2107: Verwendung von Deny und PermitOnly überprüfen
 |||  
@@ -36,7 +36,7 @@ ms.lasthandoff: 10/31/2017
  Eine Methode enthält eine sicherheitsüberprüfung, die angibt, die Sicherheitsaktion PermitOnly "oder" verweigern.  
   
 ## <a name="rule-description"></a>Regelbeschreibung  
- Die [verwenden die PermitOnly-Methode](http://msdn.microsoft.com/en-us/8c7bdb7f-882f-45b7-908c-6cbaa1767649) und <xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName> Sicherheitsaktionen sollten nur von Entwicklern mit sehr guten Kenntnissen verwendet werden der [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] Sicherheit. Code, in dem diese Sicherheitsaktionen verwendet werden, sollte einer Sicherheitsüberprüfung unterzogen werden.  
+ Die <xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName> Sicherheitsaktion sollte verwendet werden, nur von Entwicklern mit sehr guten Kenntnissen der [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] Sicherheit. Code, in dem diese Sicherheitsaktionen verwendet werden, sollte einer Sicherheitsüberprüfung unterzogen werden.  
   
  Verweigern ändert das Standardverhalten des den Stackwalk, der als Antwort auf eine sicherheitsforderung auftritt. Sie können Berechtigungen angeben, die für die Dauer der Deny-Methode, unabhängig von den tatsächlichen Berechtigungen der Aufrufer in der Aufrufliste nicht erteilt werden müssen. Wenn der Stackwalk erkennt eine Methode, die durch Verweigern gesichert ist, und der Stackwalk schlägt, wenn die geforderte Berechtigung in den verweigerten Berechtigungen enthalten ist fehl. Die PermitOnly ändert auch das Standardverhalten des Stackwalks. Es kann nur die Berechtigungen anzugeben, die gewährt werden können, unabhängig von den Berechtigungen des Aufrufers. Wenn der Stackwalk erkennt eine Methode, die durch PermitOnly gesichert ist und der Stackwalk schlägt, wenn die geforderte Berechtigung nicht mit den Berechtigungen enthalten ist, die durch die PermitOnly angegeben sind fehl.  
   
@@ -81,6 +81,5 @@ ms.lasthandoff: 10/31/2017
  <xref:System.Security.CodeAccessPermission.Assert%2A?displayProperty=fullName>   
  <xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName>   
  <xref:System.Security.IStackWalk.PermitOnly%2A?displayProperty=fullName>   
- [Schreiben von sicherem Richtlinien](/dotnet/standard/security/secure-coding-guidelines)   
- [Überschreiben von Sicherheitsüberprüfungen](http://msdn.microsoft.com/en-us/4acdeff5-fc05-41bf-8505-7387cdbfca28)   
- [Verwenden die PermitOnly-Methode](http://msdn.microsoft.com/en-us/8c7bdb7f-882f-45b7-908c-6cbaa1767649)
+ [Richtlinien für das Schreiben von sicherem Code](/dotnet/standard/security/secure-coding-guidelines)   
+

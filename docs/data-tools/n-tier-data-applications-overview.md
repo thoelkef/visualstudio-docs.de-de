@@ -17,11 +17,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 3949d49f763c2513e86c2cd3f1b20c20fb858ecc
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.openlocfilehash: 0fb26eddd3a7bf6af9a2888b6fbc8efa79e33bf5
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="n-tier-data-applications-overview"></a>Übersicht über N-Tier-Datenanwendungen
 *N-Tier-* -datenanwendungen sind datenanwendungen, die in mehrere voneinander *Ebenen*. Sie werden auch "verteilte Anwendungen" oder "Anwendungen mit mehreren Ebenen" genannt, da die Verarbeitung auf voneinander unabhängige, auf Client und Server verteilte Ebenen aufgeteilt wird. Beim Entwickeln einer Anwendung, die auf Daten zugreift, sollten die verschiedenen Ebenen, aus denen die Anwendung besteht, klar getrennt sein.  
@@ -34,7 +34,7 @@ Visual Studio enthält zahlreiche Funktionen, die Entwicklern das Erstellen von 
   
 -   Die [LINQ to SQL-Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) enthält Einstellungen, um die Klassen DataContext und Daten in separaten Namespaces zu generieren. Dies ermöglicht eine logische Trennung von Datenzugriffs- und Datenentitätsebenen.  
   
--   [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index) bietet die <xref:System.Data.Linq.Table%601.Attach%2A> Methode, die Sie für das Zusammenführen der DataContext aus unterschiedlichen Ebenen in einer Anwendung ermöglicht. Weitere Informationen finden Sie unter [N-schichtige und Remoteanwendungen mit LINQ to SQL](http://msdn.microsoft.com/Library/854a1cdd-53cb-45f5-83ca-63962a9b3598).  
+-   [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index) bietet die <xref:System.Data.Linq.Table%601.Attach%2A> Methode, die Sie für das Zusammenführen der DataContext aus unterschiedlichen Ebenen in einer Anwendung ermöglicht. Weitere Informationen finden Sie unter [N-schichtige und Remoteanwendungen mit LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/n-tier-and-remote-applications-with-linq-to-sql).  
   
 ## <a name="presentation-tier"></a>Präsentationsebene  
 Die *Präsentationsebene* ist die Ebene, in dem Benutzer, die mit einer Anwendung interagieren. Sie enthält oft auch zusätzliche Anwendungslogik. Zu den typischen Komponenten einer Präsentationsebene gehören:  
@@ -82,7 +82,7 @@ In den folgenden Themen finden Sie Informationen über die Arbeit mit N-Tier-Anw
   
 [Exemplarische Vorgehensweise: Erstellen einer N-Tier-Datenanwendung](../data-tools/walkthrough-creating-an-n-tier-data-application.md)  
 
-[N-schichtige und Remoteanwendungen mit LINQ to SQL](http://msdn.microsoft.com/Library/854a1cdd-53cb-45f5-83ca-63962a9b3598)  
+[N-schichtige Anwendungen und Remoteanwendungen mit LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/n-tier-and-remote-applications-with-linq-to-sql)  
   
 ## <a name="see-also"></a>Siehe auch
 [Exemplarische Vorgehensweise: Erstellen einer N-Tier-Datenanwendung](../data-tools/walkthrough-creating-an-n-tier-data-application.md)   

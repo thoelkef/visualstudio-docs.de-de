@@ -18,11 +18,11 @@ caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5619de2512e18cbe9d7dbfb3d992886ae23a25bf
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 977f721ed45343e247f8639accc0fa5dc83263c6
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="ca2117-aptca-types-should-only-extend-aptca-base-types"></a>CA2117: APTCA-Typen sollten nur APTCA-Basistypen erweitern
 |||  
@@ -36,7 +36,7 @@ ms.lasthandoff: 10/31/2017
  Ein öffentlicher oder geschützter Typ in einer Assembly mit dem <xref:System.Security.AllowPartiallyTrustedCallersAttribute?displayProperty=fullName> -Attribut erbt von einem Typ in einer Assembly, die das Attribut nicht deklariert.  
   
 ## <a name="rule-description"></a>Regelbeschreibung  
- Standardmäßig werden öffentliche oder geschützte Typen in Assemblys mit starken Namen implizit durch geschützt ein [Vererbungsanforderungen](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9) für volle Vertrauenswürdigkeit. Assemblys mit starken Namen gekennzeichnet, mit dem <xref:System.Security.AllowPartiallyTrustedCallersAttribute> -Attribut (APTCA) verfügen nicht über diesen Schutz. Das Attribut wird die vererbungsanforderung deaktiviert. Auf diese Weise verfügbar gemachte deklarierte Typen in der Assembly vererbbar von Typen, die keine volle Vertrauenswürdigkeit haben.  
+ Standardmäßig werden öffentliche oder geschützte Typen in Assemblys mit starken Namen implizit durch geschützt ein <xref:System.Security.Permissions.SecurityAction.InheritanceDemand> für volle Vertrauenswürdigkeit. Assemblys mit starken Namen gekennzeichnet, mit dem <xref:System.Security.AllowPartiallyTrustedCallersAttribute> -Attribut (APTCA) verfügen nicht über diesen Schutz. Das Attribut wird die vererbungsanforderung deaktiviert. Auf diese Weise verfügbar gemachte deklarierte Typen in der Assembly vererbbar von Typen, die keine volle Vertrauenswürdigkeit haben.  
   
  Wenn das APTCA-Attribut in einer voll vertrauenswürdigen Assembly vorhanden ist, und eine in der Assembly von einem Typ erbt, der keine teilweise vertrauenswürdigen Aufrufer zulässt, kann diese Sicherheitslücke ausgenutzt. Wenn zwei Typen `T1` und `T2` die folgenden Bedingungen erfüllen, können böswillige Aufrufer mithilfe des Typs `T1` die vererbungsanforderung implizite volle Vertrauenswürdigkeit umgangen werden, die schützt `T2`:  
   
@@ -85,6 +85,4 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="see-also"></a>Siehe auch  
  [Schreiben von sicherem Richtlinien](/dotnet/standard/security/secure-coding-guidelines)   
- [.NET Frameworkassemblys von teilweise vertrauenswürdigem Code aufgerufen werden kann](http://msdn.microsoft.com/en-us/a417fcd4-d3ca-4884-a308-3a1a080eac8d)   
  [Verwenden von Bibliotheken aus teilweise vertrauenswürdigem Code](/dotnet/framework/misc/using-libraries-from-partially-trusted-code)   
- [Vererbungsanforderungen](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9)

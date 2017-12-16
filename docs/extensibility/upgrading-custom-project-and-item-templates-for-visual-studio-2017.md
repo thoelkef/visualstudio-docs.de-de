@@ -12,11 +12,11 @@ caps.latest.revision: "3"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 76437dff5aa59e4864216318e64a07245c15c68d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: bdd1238eee39b902adf581092a90f7d84c1b0a98
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="upgrading-custom-project-and-item-templates-for-visual-studio-2017"></a>Aktualisieren von benutzerdefinierten Projekt- und Elementvorlagen für Visual Studio-2017
 Ab Visual Studio 2017, ist Visual Studio Ändern der Methode erkannten Projekt- und Elementvorlagen, die durch eine VSIX oder eine MSI-Datei installiert wurden. Wenn Sie Erweiterungen besitzen, die Verwenden von benutzerdefinierten Projekt- oder Elementvorlagen, müssen Sie Ihre Erweiterungen zu aktualisieren. In diesem Thema wird erläutert, was Sie tun müssen.  
@@ -26,7 +26,7 @@ Ab Visual Studio 2017, ist Visual Studio Ändern der Methode erkannten Projekt- 
  Wenn Sie eine Projekt- oder Elementvorlage als Teil einer VSIX-Erweiterung erstellen möchten, finden Sie unter [Erstellen von benutzerdefinierten Projekt- und Elementvorlagen](../extensibility/creating-custom-project-and-item-templates.md).  
   
 ## <a name="template-scanning"></a>Vorlage Scannen  
- Zuvor **Devenv/Setup** oder **Devenv/installvstemplates** überprüft den lokalen Datenträger zum Suchen von Projekt- und Elementvorlagen. Ab Preview 4, Scan erfolgt nur für den Speicherort der Benutzerebene (**%USERPROFILE%\Documents\\< Visual Studio-Version\>\My Exported Templates\\**), die für verwendet wird Vorlagen, die generiert werden, indem Sie die **Datei / Exportieren von Vorlagen** Befehl.  
+ Zuvor **Devenv/Setup** oder **Devenv/installvstemplates** überprüft den lokalen Datenträger zum Suchen von Projekt- und Elementvorlagen. Ab Preview 4, Scan erfolgt nur für den Speicherort der Benutzerebene (**%USERPROFILE%\Documents\\< Visual Studio-Version\>\My Exported Templates\\**), die für verwendet wird Vorlagen, die generiert werden, indem Sie die **Datei > Exportieren von Vorlagen** Befehl.  
   
  Für andere Speicherorte (Nichtbenutzercode) müssen Sie eine manifest(.vstman)-Datei einschließen, die den Speicherort und andere Merkmale der Vorlage angibt. Die Datei .vstman zusammen mit der Vorlagen zum VSTEMPLATE-Datei generiert wurde. Bei der Installation der Erweiterungs mithilfe einer VSIX können Sie dies durch das erneute Kompilieren der Erweiterungs in Visual Studio 2017 zu erreichen. Aber wenn Sie eine MSI-Datei verwenden, müssen Sie die Änderungen manuell vornehmen. Eine Übersicht darüber, was Sie tun können, um diese Änderungen vornehmen müssen, finden Sie unter **Upgrades für Erweiterungen installiert mit ein. MSI-Datei** weiter unten in diesem Thema.  
   

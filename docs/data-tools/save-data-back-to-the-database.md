@@ -24,11 +24,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 2c309bd30fb364c36b9e98640a02eb3cf2611aef
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.openlocfilehash: f5d50dff4b71402184e0c1127242c1ddb0b1827f
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="save-data-back-to-the-database"></a>Speichern von Daten in der Datenbank
 Das Dataset ist ein in-Memory-Kopie der Daten. Wenn Sie diese Daten ändern, ist es empfiehlt sich, diese Änderungen in der Datenbank zu speichern. Sie dazu auf eine der drei Arten:  
@@ -50,7 +50,7 @@ Wenn Sie mit TableAdapters vertraut sind, können Sie direkt auf einen der folge
 |[Hierarchische Aktualisierung](../data-tools/hierarchical-update.md)|Gewusst wie: Ausführen von Updates aus einem Dataset mit zwei oder mehr verknüpfte Tabellen|  
 |[Behandeln einer Parallelitätsausnahme](../data-tools/handle-a-concurrency-exception.md)|Gewusst wie: Behandeln von Ausnahmen, wenn zwei Benutzer versuchen, dieselben Daten in einer Datenbank zur gleichen Zeit zu ändern.|  
 |[Vorgehensweise: Speichern von Daten mithilfe von Transaktionen](../data-tools/save-data-by-using-a-transaction.md)|Gewusst wie: Speichern von Daten in einer Transaktion, die mithilfe von System.Transactions-Namespace und ein Objekt von "TransactionScope"|  
-|[Exemplarische Vorgehensweise: Speichern von Daten in einer Transaktion](../data-tools/save-data-in-a-transaction.md)|Exemplarische Vorgehensweise, die eine Windows Forms-Anwendung zum Speichern von Daten in einer Datenbank innerhalb einer Transaktion veranschaulichen erstellt|  
+|[Exemplarische Vorgehensweise: Speichern von Daten im Rahmen einer Transaktion](../data-tools/save-data-in-a-transaction.md)|Exemplarische Vorgehensweise, die eine Windows Forms-Anwendung zum Speichern von Daten in einer Datenbank innerhalb einer Transaktion veranschaulichen erstellt|  
 |[Speichern von Daten in einer Datenbank (mehrere Tabellen)](../data-tools/save-data-to-a-database-multiple-tables.md)|Zum Bearbeiten von Datensätzen und Speichern von Änderungen in mehreren Tabellen in der Datenbank|  
 |[Gewusst wie: Speichern von Daten aus einem Objekt in einer Datenbank](../data-tools/save-data-from-an-object-to-a-database.md)|Wie Daten aus einem Objekt zu übergeben, die nicht in ein Dataset mit einer Datenbank mithilfe einer TableAdapter-DbDirect-Methode|  
 |[Speichern von Daten mit den TableAdapter-DBDirect-Methoden](../data-tools/save-data-with-the-tableadapter-dbdirect-methods.md)|Gewusst wie: Verwenden der TableAdapter SQL-Abfragen direkt an die Datenbank zu senden|  
@@ -217,7 +217,7 @@ In der folgenden Tabelle wird basierend auf dem Objekt, für das die Methode auf
 -   Im Back-End der Datenschicht. Daten werden an die Datenquelle, z. B. die Datenbank, gesendet, und die Datenbank kann diese Daten annehmen oder ablehnen. Bei Verwendung einer Datenbank, die hochentwickelte Datenüberprüfungsmechanismen besitzt und Fehlerinformationen bereitstellt, ist dieser Ansatz durchaus überlegenswert, da Daten unabhängig von ihrer Herkunft überprüft werden können. Dieser Ansatz kann jedoch nicht berücksichtigen anwendungsspezifische überprüfungsanforderungen zu erfüllen. Darüber hinaus kann die Datenquelle aus, überprüfen Sie die Daten führen, dass zahlreiche wiederholte Zugriffe auf die Datenquelle, je nachdem, wie die Auflösung der vom Back-End ausgelösten Validierungsfehler von der Anwendung behandelt.  
   
     > [!IMPORTANT]
-    >  Wenn Sie Datenbefehle mit einer <xref:System.Data.SqlClient.SqlCommand.CommandType%2A> Eigenschaft, um festgelegt wird <xref:System.Data.CommandType.Text>, sorgfältig prüfen von Informationen, die von einem Client gesendet wird, vor der Übergabe an die Datenbank. Böswillige Benutzer könnten versuchen, veränderte oder zusätzliche SQL-Anweisungen zu senden (einzufügen), um unautorisierten Zugriff zu erhalten oder die Datenbank zu beschädigen. Bevor Sie Benutzereingaben an eine Datenbank übertragen, immer Stellen Sie sicher, dass die Informationen gültig sind. Es wird empfohlen, parametrisierte Abfragen oder gespeicherte Prozeduren, die nach Möglichkeit immer zu verwenden. Weitere Informationen finden Sie unter [Übersicht über Skriptangriffe](http://msdn.microsoft.com/Library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+    >  Wenn Sie Datenbefehle mit einer <xref:System.Data.SqlClient.SqlCommand.CommandType%2A> Eigenschaft, um festgelegt wird <xref:System.Data.CommandType.Text>, sorgfältig prüfen von Informationen, die von einem Client gesendet wird, vor der Übergabe an die Datenbank. Böswillige Benutzer könnten versuchen, veränderte oder zusätzliche SQL-Anweisungen zu senden (einzufügen), um unautorisierten Zugriff zu erhalten oder die Datenbank zu beschädigen. Bevor Sie Benutzereingaben an eine Datenbank übertragen, immer Stellen Sie sicher, dass die Informationen gültig sind. Es wird empfohlen, parametrisierte Abfragen oder gespeicherte Prozeduren, die nach Möglichkeit immer zu verwenden.  
   
 ## <a name="transmitting-updates-to-the-data-source"></a>Senden von Updates mit der Datenquelle  
 Nachdem ein Dataset geändert wurde, können Sie die Änderungen an eine Datenquelle übertragen. In den meisten Fällen rufen Sie dazu die `Update`-Methode eines TableAdapter (oder Datenadapters) auf. Die Methode führt einen Schleifendurchlauf durch jeden Datensatz in einer Datentabelle bestimmt, welche Art von Update erforderlich ist (aktualisieren, einfügen oder löschen), sofern vorhanden, und führt dann den entsprechenden Befehl.  
@@ -258,7 +258,7 @@ Nachdem ein Dataset geändert wurde, können Sie die Änderungen an eine Datenqu
   
  Die <xref:System.Data.SqlClient.SqlParameter.SourceColumn%2A?displayProperty=fullName>-Eigenschaft der einzelnen Parameter zeigt auf eine Spalte in der Datentabelle. Beispiel: Die `SourceColumn`-Eigenschaft für den `au_id`-Parameter und den `Original_au_id`-Parameter wird auf die Spalte in der Datentabelle festgelegt, die die Autor-ID enthält. Wenn des Adapters `Update` Methode ausgeführt wird, liest der Autor-ID-Spalte, aus dem Datensatz, der aktualisiert wird und die Werte in die Anweisung eingetragen.  
   
- In einer UPDATE-Anweisung müssen Sie sowohl die neuen Werte (diejenigen, die der Datensatz geschrieben wird) als auch die alten Werte (so, dass der Datensatz in der Datenbank gefunden werden kann) angeben. Daher verfügt jeder Wert über zwei Parameter: einen für die SET-Klausel und einen anderen für die WHERE-Klausel. Beide Parameter Lesen von Daten aus dem Datensatz, der aktualisiert wird, aber erhalten sie unterschiedliche Versionen des Spaltenwerts auf Grundlage des Parameters [SqlParameter.SourceVersion-Eigenschaft](https://msdn.microsoft.com/en-us/library/system.data.sqlclient.sqlparameter.sourceversion.aspx). Für den Parameter der SET-Klausel wird die aktuelle Version und für den Parameter der WHERE-Klausel die ursprüngliche Version abgerufen.  
+ In einer UPDATE-Anweisung müssen Sie sowohl die neuen Werte (diejenigen, die der Datensatz geschrieben wird) als auch die alten Werte (so, dass der Datensatz in der Datenbank gefunden werden kann) angeben. Daher verfügt jeder Wert über zwei Parameter: einen für die SET-Klausel und einen anderen für die WHERE-Klausel. Beide Parameter Lesen von Daten aus dem Datensatz, der aktualisiert wird, aber erhalten sie unterschiedliche Versionen des Spaltenwerts auf Grundlage des Parameters <xref:System.Data.SqlClient.SqlParameter.SourceVersion> Eigenschaft. Für den Parameter der SET-Klausel wird die aktuelle Version und für den Parameter der WHERE-Klausel die ursprüngliche Version abgerufen.  
   
 > [!NOTE]
 >  Sie können auch selbst Werte für die `Parameters`-Auflistung im Code festlegen. Dies erfolgt in der Regel in einem Ereignishandler für das <xref:System.Data.DataTable.RowChanging>-Ereignis des Datenadapters.  

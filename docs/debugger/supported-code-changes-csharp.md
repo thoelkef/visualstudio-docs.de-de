@@ -20,11 +20,11 @@ caps.latest.revision: "27"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9a0a7d55b19455e22836d4750c0842a47816ee86
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.openlocfilehash: 7930ab4b425eeba0896828e5db36ab874166d3bf
+ms.sourcegitcommit: 38097344f3ff74ba7b03bcfa45910015ca6bc2be
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/11/2017
 ---
 # <a name="supported-code-changes-c-and-visual-basic"></a>Unterstützte codeänderungen (C#- und Visual Basic)
 Die Funktion "Bearbeiten und Fortfahren" behandelt die meisten Arten von Codeänderungen in Methodentexten. Die meisten Änderungen außerhalb von Methodentexten sowie einige Änderungen in Methodentexten können jedoch während des Debuggens nicht übernommen werden. Wenn Sie diese nicht unterstützten Änderungen übernehmen möchten, müssen Sie das Debuggen beenden und mit einer neuen Version des Codes erneut starten.
@@ -98,8 +98,6 @@ Nicht unterstützte apps und Plattformen gehören ASP.NET 5, Silverlight 5, Wind
 -   SQL-Debuggen.  
   
 -   Debuggen eines Dr.Watson-Dumps.  
-  
--   Bearbeiten von Code nach einem Ausnahmefehler, wenn die "**Aufrufliste für Ausnahmefehler entladen**" nicht ausgewählt ist.  
   
 -   Debuggen einer eingebetteten Laufzeitanwendung.  
   

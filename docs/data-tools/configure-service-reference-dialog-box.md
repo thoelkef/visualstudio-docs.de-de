@@ -17,11 +17,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 26e74c43e79012adc6b241390cd463a35c9f58c1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 0826d241cc1f3741a35e635bc27dff1d69ad86af
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="configure-service-reference-dialog-box"></a>Dienstverweis konfigurieren (Dialogfeld)
 Die **Dienstverweis konfigurieren** Dialogfeld können Sie so konfigurieren Sie das Verhalten des [!INCLUDE[vsindigo](../data-tools/includes/vsindigo_md.md)] Dienste.  
@@ -62,7 +62,7 @@ Die **Dienstverweis konfigurieren** Dialogfeld können Sie so konfigurieren Sie 
  Bestimmt, ob WCF-Dienstmethoden synchron (standardmäßig) oder asynchron aufgerufen werden.  
   
  **Aufgabenbasierte Vorgänge generieren**  
- Beim Schreiben von asynchronem Code können Sie mit dieser Option von der in .Net 4 eingeführten Task Parallel Library (TPL) profitieren. Finden Sie unter [Task Parallel Library (TPL)](http://msdn.microsoft.com/library/dd460717.aspx).  
+ Beim Schreiben von asynchronem Code können Sie mit dieser Option von der in .Net 4 eingeführten Task Parallel Library (TPL) profitieren. Finden Sie unter [Task Parallel Library (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl).  
   
  **Meldungsverträge immer generieren**  
  Bestimmt, ob Meldungsvertragstypen für einen WCF-Client generiert werden. Weitere Informationen zu Nachrichtenverträgen finden Sie unter [Verwendung von Nachrichtenverträgen](/dotnet/framework/wcf/feature-details/using-message-contracts).  
