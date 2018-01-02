@@ -5,15 +5,15 @@ Ms.author: jaunger
 Manager: evelynp
 Ms.date: 10/3/2017
 Ms.topic: Get-Started-Article
-Description: "Erfahren Sie, welche Visual Studio-Abonnements Sie erwerben können."
+Description: Explore your purchasing options for Visual Studio subscriptions
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: c751048084e7f5e6ae65aee5b5fa52cff84c4439
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: d78531fd3635c010f83a4ebe3c446c8c4c33e943
+ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/01/2017
 ---
 #   <a name="how-to-buy-a-subscription"></a>So erwerben Sie ein Abonnement
 Es gibt drei Möglichkeiten, Visual Studio-Abonnements zu erwerben.  
@@ -21,15 +21,15 @@ Es gibt drei Möglichkeiten, Visual Studio-Abonnements zu erwerben.
 - Standardabonnements können über den Microsoft Store erworben werden. 
 - Organisationen können Volumenlizenz-Abonnements von Softwarehändlern erwerben.  
 
-## <a name="buying-cloud-subscriptions-through-the-visual-studio-marketplace"></a>Cloud-Abonnements über Visual Studio Marketplace erwerben
+## <a name="buying-cloud-subscriptions-through-the-visual-studio-marketplace"></a>Erwerben von Cloud-Abonnements über Visual Studio Marketplace
 Sie können Visual Studio Professional- und Visual Studio Enterprise-[Abonnements](https://www.visualstudio.com/subscriptions/) über [Visual Studio Marketplace](https://marketplace.visualstudio.com) kaufen. Erfahren Sie mehr über die Vorteile dieser Abonnements, [vergleichen Sie die Features](https://www.visualstudio.com/vs/compare/) der IDE, und erfahren Sie [die Abonnementpreise](https://www.visualstudio.com/vs/pricing/).
 
 ### <a name="before-you-start"></a>Vor der Installation
 
 *   Sie benötigen ein [Azure-Abonnement](https://azure.microsoft.com/en-us/pricing/purchase-options/), damit Ihnen Ihre Käufe in Rechnung gestellt werden können. Sie können sich vor dem ersten Kauf oder während des ersten Kaufs in Visual Studio Marketplace [registrieren](https://account.windowsazure.com/Subscriptions).
-Erfahren Sie, welche [Azure-Abonnements](https://docs.microsoft.com/en-us/vsts/marketplace/marketplace-billing-qa) Sie für Visual Studio Marketplace-Käufe nutzen können. 
+[Erfahren Sie](https://docs.microsoft.com/en-us/vsts/marketplace/marketplace-billing-qa), welche Azure-Abonnements Sie für Visual Studio Marketplace-Käufe nutzen können. 
 
-*   Falls Sie für Ihre Organisation Käufe tätigen und in dieser Identitäten mithilfe von Azure Active Directory (Azure AD) verwaltet werden, müssen Sie ein [„persönliches“ Microsoft-Konto](https://www.microsoft.com/account) oder ein [„Geschäfts-, Schul- oder Unikonto“](https://azure.microsoft.com/en-us/documentation/articles/sign-up-organization/) anlegen, um sich für ein Azure-Abonnement zu registrieren und Käufe im Visual Studio Marketplace tätigen zu können.
+*   Falls Sie für Ihre Organisation Käufe tätigen und in dieser Identitäten mithilfe von Azure Active Directory (Azure AD) verwaltet werden, müssen Sie ein persönliches [Microsoft-Konto](https://www.microsoft.com/account) oder ein [Geschäfts-, Schul- oder Unikonto](https://azure.microsoft.com/en-us/documentation/articles/sign-up-organization/) anlegen, um sich für ein Azure-Abonnement zu registrieren und Käufe im Visual Studio Marketplace tätigen zu können.
 
 ### <a name="buy-subscriptions"></a>Abonnements kaufen
 
@@ -66,7 +66,7 @@ Wenn Sie noch kein Abonnement besitzen, können Sie sich für eines registrieren
 <a name="manage-subscriptions"></a>
 ###  <a name="manage-purchased-visual-studio-subscriptions-as-administrator"></a>Erworbene Visual Studio-Abonnements als Administrator verwalten
 
-Sie können diese Abonnements als Administrator ändern oder kündigen, indem Sie in das [Portal zur Verwaltung von Visual Studio-Abonnements](https://manage.visualstudio.com/cloud) wechseln und sich mit der zum Kauf der Abonnements genutzten Identität anmelden, um alle über Visual Studio Marketplace gekauften Visual Studio-Abonnements einschließlich Benutzerzuweisungen anzuzeigen.
+Sie können diese Abonnements als Administrator ändern oder kündigen, indem Sie in das [Portal](https://manage.visualstudio.com/cloud) zur Verwaltung von Visual Studio-Abonnements wechseln und sich mit der zum Kauf der Abonnements genutzten Identität anmelden, um alle über Visual Studio Marketplace gekauften Visual Studio-Abonnements einschließlich Benutzerzuweisungen anzuzeigen.
 
 *   So ändern Sie die Anzahl der erworbenen Abonnements:
 
@@ -76,11 +76,11 @@ Sie können diese Abonnements als Administrator ändern oder kündigen, indem Si
 
 ### <a name="view-visual-studio-subscriptions-assigned-to-you"></a>Ihnen zugewiesene Visual Studio-Abonnements anzeigen
 
-Wechseln Sie in das Portal für Visual Studio-Abonnements (```https://my.visualstudio.com```), um die Ihnen zugewiesene Visual Studio-Abonnements und Ihre Abonnementvorteile anzuzeigen.
+Wechseln Sie in das Portal für Visual Studio-Abonnements ([https://my.visualstudio.com](https://my.visualstudio.com)), um die Ihnen zugewiesenen Visual Studio-Abonnements und Abonnementvorteile anzuzeigen.
 
-<img alt="Visual Studio subscriptions portal, Subscriptions" src="_img/buy-vs-subscriptions/view-assigned-subscription-list-subscriptions-portal.png" style="border: 1px solid #CCCCCC" />
+   <img alt="Visual Studio subscriptions portal, Subscriptions" src="_img/buy-vs-subscriptions/view-assigned-subscription-list-subscriptions-portal.png" style="border: 1px solid #CCCCCC" />
 
-<img alt="Visual Studio subscriptions portal, Benefits" src="_img/buy-vs-subscriptions/view-subscription-benefits-subscriptions-portal.png" style="border: 1px solid #CCCCCC" />
+   <img alt="Visual Studio subscriptions portal, Benefits" src="_img/buy-vs-subscriptions/view-subscription-benefits-subscriptions-portal.png" style="border: 1px solid #CCCCCC" />
 
 ### <a name="marketplace-and-billing-qa"></a>Fragen und Antworten zu Marketplace und zur Abrechnung
 
@@ -89,23 +89,23 @@ Sehen Sie sich die [Fragen und Antworten zu Marketplace und zur Abrechnung](/vst
 ## <a name="buying-standard-subscriptions-through-the-microsoft-store"></a>Standardabonnements über den Microsoft Store erwerben
 Visual Studio-Standardabonnements sind über den Microsoft Store verfügbar.  So erwerben oder erneuern Sie ein Abonnement:
 
-1. Stellen Sie eine Verbindung mit dem [Microsoft Store](https://www.microsoft.com) her.
+1. Stellen Sie eine Verbindung mit dem [Microsoft Store](https://www.microsoft.com/store) her.
 2. Klicken Sie auf die Registerkarte **Software**.
 3. Wählen Sie **Professional software** (Professionelle Software) aus.
 
-<img alt="Software Menu" src="_img/buy-vs-subscriptions/professional-software.png" style="border: 1px solid #CCCCCC" />
+    <img alt="Software Menu" src="_img/buy-vs-subscriptions/professional-software.png" style="border: 1px solid #CCCCCC" />
 
 4. Wählen Sie in der Liste **Shop categories** (Produktkategorien) **Visual Studio** aus.
 
-<img alt="Categories List" src="_img/buy-vs-subscriptions/shop-categories.png" style="border: 1px solid #CCCCCC" />
+    <img alt="Categories List" src="_img/buy-vs-subscriptions/shop-categories.png" style="border: 1px solid #CCCCCC" />
 
 5. Wählen Sie in der Liste **Shop Visual Studio** (Visual Studio kaufen) das Abonnement aus, das Sie kaufen möchten. (Im Lieferumfang von Visual Studio Professional 2017 ist eine eigenständige Lizenz für die integrierte Entwicklungsumgebung (IDE) enthalten, jedoch kein Abonnement.)
 
-<img alt="Visual Studio Products" src="_img/buy-vs-subscriptions/shop-visual-studio.png" style="border: 1px solid #CCCCCC" />
+    <img alt="Visual Studio Products" src="_img/buy-vs-subscriptions/shop-visual-studio.png" style="border: 1px solid #CCCCCC" />
 
 6. Auf der Seite mit der Produktbeschreibung können Sie entweder Ihr Abonnement verlängern oder ein neues erwerben.  Wählen Sie den gewünschten Abonnementtyp aus, und fügen Sie ihn zu Ihrem Einkaufswagen hinzu. 
 
-<img alt="Visual Studio Enterprise options" src="_img/buy-vs-subscriptions/enterprise-options.png" style="border: 1px solid #CCCCCC" />
+    <img alt="Visual Studio Enterprise options" src="_img/buy-vs-subscriptions/enterprise-options.png" style="border: 1px solid #CCCCCC" />
 
 7. Klicken Sie im Einkaufswagen auf die Schaltfläche **Auftragsabschluss**, um zur Seite **Review and place order** (Bestellung prüfen und abschicken) zu gelangen.  (Möglicherweise müssen Sie sich bei Ihrem Microsoft-Konto anmelden, um den Vorgang fortzusetzen.) 
 
@@ -138,5 +138,5 @@ So aktivieren Sie Ihr Abonnement:
 
 
 Organisationen, die von den Vorteilen mehrerer Abonnements profitieren möchten, können diese über verschiedene VL-Programme (Volume License) erwerben.  Volumenlizenzen sind über autorisierte Microsoft Partner erhältlich.  
-Erfahren Sie, wie Sie einen [Volumenlizenzvertrag erwerben](https://www.microsoft.com/Licensing/how-to-buy/how-to-buy.aspx) können. Sehen Sie sich die [Fragen und Antworten zu Marketplace und zur Abrechnung](/vsts/marketplace/marketplace-billing-qa) an, um Antworten auf mehrere häufig gestellte Fragen rund um Visual Studio Marketplace und die Abrechnung in Azure zu erhalten. 
+Erfahren Sie, wie Sie über einen [Volumenlizenzvertrag](https://www.microsoft.com/Licensing/how-to-buy/how-to-buy.aspx) Käufe tätigen können. Sehen Sie sich die [Fragen und Antworten zu Marketplace und zur Abrechnung](/vsts/marketplace/marketplace-billing-qa) an, um Antworten auf mehrere häufig gestellte Fragen rund um Visual Studio Marketplace und die Abrechnung in Azure zu erhalten. 
 

@@ -16,34 +16,32 @@ f1_keywords:
 helpviewer_keywords:
 - regular expressions [Visual Studio]
 - regular expressions
-- Visual Studio, regular expressions
-ms.assetid: 718a617d-0e05-47e1-a218-9746971527f4
-caps.latest.revision: "53"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c01023649879c34838cbca3172aec6b5a053f4bd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 577c6a7b76bcecb3c3f5fc7889d75b5fd3ff1ce0
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="using-regular-expressions-in-visual-studio"></a>Verwenden von regulären Ausdrücken in Visual Studio
-[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] verwendet reguläre Ausdrücke in .NET Framework zum Suchen und Ersetzen von Text. Weitere Informationen zu regulären Ausdrücken von .NET finden Sie unter [Reguläre Ausdrücke von .NET Framework](/dotnet/standard/base-types/regular-expressions).  
-  
- Vor Visual Studio 2012 verwendete Visual Studio benutzerdefinierte Syntax für reguläre Ausdrücke in den Fenstern "Suchen" und "Ersetzen". Unter [Visual Studio Regular Expression Conversions (Visual Studio-Konvertierungen mit regulären Ausdrücken)](https://msdn.microsoft.com/en-us/library/2k3te2cs\(v=vs.110\).aspx) finden Sie eine Erklärung, wie einige der häufiger verwendeten benutzerdefinierten regulären Ausdruckssymbole in die Versionen von .NET konvertiert werden.  
-  
+
+[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] verwendet reguläre Ausdrücke in .NET Framework zum Suchen und Ersetzen von Text. Weitere Informationen zu regulären Ausdrücken von .NET finden Sie unter [Reguläre Ausdrücke von .NET Framework](/dotnet/standard/base-types/regular-expressions).
+
 > [!TIP]
->  In Windows-Betriebssystemen enden die meisten Zeilen auf „\r\n“ (ein Wagenrücklaufzeichen gefolgt von einer neuen Zeile). Diese Zeichen sind nicht sichtbar, aber im Editor vorhanden und werden an den .NET-Dienst regulärer Ausdrücke übergeben.  
+> In Windows-Betriebssystemen enden die meisten Zeilen auf „\r\n“ (ein Wagenrücklaufzeichen gefolgt von einer neuen Zeile). Diese Zeichen sind nicht sichtbar, aber im Editor vorhanden und werden an den .NET-Dienst regulärer Ausdrücke übergeben.
+
+## <a name="replacement-patterns"></a>Ersetzungsmuster
+
+Weitere Informationen zu regulären Ausdrücken, die in Ersetzungsmustern verwendet werden, finden Sie unter [Ersetzungen in regulären Ausdrücken](/dotnet/standard/base-types/substitutions-in-regular-expressions). Um eine nummerierte Erfassungsgruppe zu verwenden, lautet die Syntax zum Festlegen der nummerierten Gruppe `$1` und zum Festlegen der betreffenden Gruppe `(x)`. In der folgenden Zeichenfolge findet der gruppierte reguläre Ausdruck `(\d)([a-z])` beispielsweise vier Übereinstimmungen: **1a 2b 3c 4d**. Die Ersetzungszeichenfolge `z$1` konvertiert diese Zeichenfolge in **z1 z2 z3 z4**.
   
-> [!TIP]
->  Weitere Informationen zu regulären Ausdrücken, die in Ersetzungsmustern verwendet werden, finden Sie unter [Ersetzungen in regulären Ausdrücken](/dotnet/standard/base-types/substitutions-in-regular-expressions). Um eine nummerierte Erfassungsgruppe zu verwenden, lautet die Syntax zum Festlegen der nummerierten Gruppe `$1` und zum Festlegen der betreffenden Gruppe `(x)`. In der folgenden Zeichenfolge findet der gruppierte reguläre Ausdruck `(\d)([a-z])` beispielsweise vier Übereinstimmungen: **1a 2b 3c 4d**. Die Ersetzungszeichenfolge `z$1` konvertiert diese Zeichenfolge in **z1 z2 z3 z4**.  
-  
-## <a name="regular-expressions-in-visual-studio"></a>Reguläre Ausdrücke in Visual Studio  
- Hier einige Beispiele  
-  
-|Zweck|Ausdruck|Beispiel|  
-|-------------|----------------|-------------|  
+## <a name="regular-expression-examples"></a>Beispiele für reguläre Ausdrücke
+
+Hier einige Beispiele:
+
+|Zweck|Ausdruck|Beispiel|
+|-------------|----------------|-------------|
 |Übereinstimmung mit beliebigem Zeichen (mit Ausnahme des Zeilenumbruchs)|.|`a.o` findet „aro“ in „around“ und „abo“ in „about“, jedoch nicht „acro“ in „across“.|  
 |Übereinstimmung mit keinem oder mehreren Vorkommen des vorhergehenden Ausdrucks (wobei die Übereinstimmung möglichst viele Zeichen umfasst).|*|`a*r` findet „r“ in „rack“, „ar“ in „ark“ und „aar“ in „aardvark“.|  
 |Keine oder häufigere Übereinstimmung mit beliebigem Zeichen (Platzhalter *)|.*|c.*e findet „cke“ in „racket“, „comme“ in „comment“ und „code“ in „code“|  
@@ -72,6 +70,7 @@ ms.lasthandoff: 10/31/2017
 |Übereinstimmung mit einer Zeichenfolge in Anführungszeichen|((\\".+?\\")&#124;('.+?'))|Übereinstimmung mit einer beliebigen Zeichenfolge in einfachen oder doppelten Anführungszeichen|  
 |Übereinstimmung mit einer Hexadezimalzahl|\b0[xX]([0-9a-fA-F]\)\b|Findet "0xc67f", jedoch nicht "0xc67fc67f".|  
 |Übereinstimmung mit ganzen Zahlen und Dezimalzahlen|\b[0-9]*\\.\*[0-9]+\b|Findet "1.333".|  
-  
-## <a name="see-also"></a>Siehe auch  
- [Suchen und Ersetzen von Text](../ide/finding-and-replacing-text.md)
+
+## <a name="see-also"></a>Siehe auch
+
+[Suchen und Ersetzen von Text](../ide/finding-and-replacing-text.md)

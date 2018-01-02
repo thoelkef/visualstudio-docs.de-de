@@ -11,49 +11,51 @@ ms.assetid:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3bc7db7b6a1d3e1d39b5fb3b128c28da37a9538b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 94348821e44b5ed07e3df5e4859796342919a833
+ms.sourcegitcommit: cc288456329aefca1fdaa7ce74751ce195985c14
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 11/17/2017
 ---
-# <a name="whitelisting-urls-in-a-private-network"></a>Erstellen von URL-Whitelists in einem privaten Netzwerk    
-Wenn Sie Visual Studio in einem privaten Netzwerk verwenden, in dem eine Sicherheitsappliance wie z.B. eine Firewall genutzt wird, kann Visual Studio möglicherweise keine Verbindung mit einigen Netzwerkressourcen herstellen. Zu diesen Ressourcen zählen Visual Studio Team Services (VSTS) für die Anmeldung und Lizenzierung, NuGet und Azure-Dienste. Wenn Visual Studio keine Verbindung mit einer dieser Ressourcen herstellen kann, wird die folgende Fehlermeldung angezeigt:  
+# <a name="whitelisting-urls-in-a-private-network"></a>Erstellen von URL-Whitelists in einem privaten Netzwerk
 
-  **The underlying connection was closed: An unexpected error occurred on send** (Die zugrunde liegende Verbindung wurde geschlossen: Beim Senden ist ein unerwarteter Fehler aufgetreten.)  
+Wenn Sie Visual Studio in einem privaten Netzwerk verwenden, in dem eine Sicherheitsappliance wie z.B. eine Firewall genutzt wird, kann Visual Studio möglicherweise keine Verbindung mit einigen Netzwerkressourcen herstellen. Zu diesen Ressourcen zählen Visual Studio Team Services (VSTS) für die Anmeldung und Lizenzierung, NuGet und Azure-Dienste. Wenn Visual Studio keine Verbindung mit einer dieser Ressourcen herstellen kann, wird die folgende Fehlermeldung angezeigt:
+
+  **The underlying connection was closed: An unexpected error occurred on send** (Die zugrunde liegende Verbindung wurde geschlossen: Beim Senden ist ein unerwarteter Fehler aufgetreten.)
 
 Visual Studio verwendet das Protokoll Transport Layer Security (TLS) 1.2 für die Verbindung mit Netzwerkressourcen. Sicherheitsappliances blockieren in einigen privaten Netzwerken bestimmte Serververbindungen, wenn Visual Studio TLS 1.2 verwendet. Um den Fehler zu beheben, lassen Sie Verbindungen mit den folgenden URLs zu:
 
-- https://management.core.windows.net  
+- https://management.core.windows.net
 
-- https://app.vssps.visualstudio.com  
+- https://app.vssps.visualstudio.com
 
-- https://login.microsoftonline.com  
+- https://login.microsoftonline.com
 
-- https://login.live.com  
+- https://login.live.com
 
-- https://go.microsoft.com  
+- https://go.microsoft.com
 
-- https://graph.windows.net  
+- https://graph.windows.net
 
-- https://app.vsspsext.visualstudio.com  
+- https://app.vsspsext.visualstudio.com
 
-- *.azurewebsites.net (für Azure-Verbindungen)  
+- *.azurewebsites.net (für Azure-Verbindungen)
 
-- *.nuget.org (für NuGet-Verbindungen)  
+- *.nuget.org (für NuGet-Verbindungen)
 
-- *.visualstudio.com  
+- *.visualstudio.com
 
-- cdn.vsassets.io (Hosting von CDN-Inhalten (Content Delivery Network))  
+- cdn.vsassets.io (Hosting von CDN-Inhalten (Content Delivery Network))
 
-- *.gallerycdn.vsassets.io (Hosting von VSTS-Erweiterungen)  
+- *.gallerycdn.vsassets.io (Hosting von VSTS-Erweiterungen)
 
 - static2.sharepointonline.com (Hosting von Ressourcen wie beispielsweise Schriftarten, die Visual Studio im Zusammenhang mit dem Office Fabric UI-Kit verwendet)
 
 > [!NOTE]
->  URLs von privaten NuGet-Servern sind in der oben aufgeführten Liste möglicherweise nicht enthalten. Sie können überprüfen, welche NuGet-Server Sie verwenden, indem Sie „%APPData%\Nuget\NuGet.Config“ öffnen.  
+> URLs von privaten NuGet-Servern sind in der oben aufgeführten Liste möglicherweise nicht enthalten. Sie können überprüfen, welche NuGet-Server Sie verwenden, indem Sie „%APPData%\Nuget\NuGet.Config“ öffnen.
 
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Siehe auch
+
 [Fehler: Proxyautorisierung erforderlich](../ide/reference/proxy-authorization-required.md)  
-[Vernetzte Umgebung](../ide/connected-environment.md)  
-[Installieren von Visual Studio hinter einer Firewall oder einem Proxyserver](../install/install-visual-studio-behind-a-firewall-or-proxy-server.md)  
+[Internet resources used by Visual Studio (Von Visual Studio verwendete Internetressourcen)](../ide/connected-environment.md)  
+[Installieren von Visual Studio hinter einer Firewall oder einem Proxyserver](../install/install-visual-studio-behind-a-firewall-or-proxy-server.md)

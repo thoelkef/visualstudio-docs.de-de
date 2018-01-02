@@ -10,15 +10,15 @@ ms.topic: quickstart
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 096b5651f9d8133712d9296f09178fc9c8bc6086
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.openlocfilehash: 7f10ee7dc03ffe0f80b6ee3d7ff47f5fcd6a1624
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Schnellstart: Ein erster Blick auf die Visual Studio-IDE
 
-In dieser 5- bis 10-minütigen Einführung in die integrierte Entwicklungsumgebung (IDE) von Visual Studio unternehmen wir eine Tour durch einige der Fenster, Menüs und andere Funktionen der Benutzeroberfläche.
+In dieser fünf- bis zehnminütigen Einführung in die integrierte Entwicklungsumgebung (IDE) von Visual Studio unternehmen wir eine Tour durch einige der Fenster, Menüs und andere Funktionen der Benutzeroberfläche.
 
 ## <a name="start-page"></a>Startseite
 
@@ -28,7 +28,7 @@ Das erste, was Sie nach dem Start von Visual Studio sehen, ist wahrscheinlich di
 
 Wenn Sie die Startseite schließen und dann erneut anzeigen möchten, können Sie sie im Menü **Datei** erneut öffnen.
 
-![Menü „Datei“](media/quickstart-IDE-file-menu-large.png)
+![Datei (Menü)](media/quickstart-IDE-file-menu-large.png)
 
 Um die IDE weiter zu untersuchen, erstellen wir ein neues Projekt.
 
@@ -94,8 +94,10 @@ Wir haben uns nur einige der Features der Visual Studio-IDE angesehen, um uns mi
 
 - Lesen Sie den Abschnitt „Allgemeine Elemente der Benutzeroberfläche“ der VS-Dokumentation, der sich ausführlicher mit Fenstern wie [Fehlerliste](../ide/reference/error-list-window.md), [Ausgabefenster](../ide/reference/output-window.md), [Eigenschaftenfenster](../ide/reference/properties-window.md) und [Dialogfeld „Optionen“](../ide/reference/options-dialog-box-visual-studio.md) befasst.
 
-- Unternehmen Sie eine ausführlichere Tour durch die IDE, und versuchen Sie sich sogar im Debuggen in [Übersicht über die Visual Studio-IDE](../ide/visual-studio-ide.md).
+- Erfahren Sie mehr über die IDE, und versuchen Sie sich im Debuggen unter [Übersicht über die Visual Studio-IDE](../ide/visual-studio-ide.md).
 
 ## <a name="see-also"></a>Siehe auch
 
-[Schnellstart: Personalisieren der IDE](../ide/personalizing-the-visual-studio-ide.md)
+[Schnellstart: Personalisieren der IDE](../ide/personalizing-the-visual-studio-ide.md)  
+[Schnellstart: Codieren im Editor](../ide/quickstart-editor.md)  
+[Schnellstart: Projekte und Projektmappen](../ide/quickstart-projects-solutions.md)  

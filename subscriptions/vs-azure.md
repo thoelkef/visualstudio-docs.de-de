@@ -5,25 +5,25 @@ Ms.author: jaunger
 Manager: evelynp
 Ms.date: 10/3/2017
 Ms.topic: Get-Started-Article
-Description: Erfahren Sie, wie Sie den Azure-Vorteil, der in Ihrem Visual Studio-Abonnement beinhaltet ist, aktivieren.
+Description: Learn how to activate the Azure benefit included in your Visual Studio subscription.
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 0ed03e61e9f62535e80ad5891c314f26121cfd7d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 32cb58f86a3664764f645f133a42d298e72dedbc
+ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="using-microsoft-azure-in-visual-studio-subscriptions"></a>Verwenden von Microsoft Azure in Visual Studio-Abonnements
 Als Abonnent von Visual Studio können Sie Microsoft Azure kostenlos verwenden.  Mit Ihrer [monatlichen Azure-Gutschrift](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/) ist Azure Ihre persönliche Sandbox zum Entwickeln und Testen.  Sie können virtuelle Computer, Clouddienste und andere Azure-Ressourcen bereitstellen.  Die Höhe der Gutschrift hängt von der Abonnementstufe ab. 
 
 Führen Sie die Aktivierung in der Kategorie **Tools** (Extras) auf der Seite „Vorteile“ im [Abonnenten-Portal](https://my.visualstudio.com/benefits) durch: 
 
-1.  Klicken Sie auf den Link „Aktivieren“ am unteren Rand der Kachel „Vorteil“.   
+1.  Klicken Sie auf den Link **Aktivieren** im unteren Bereich der Kachel „Vorteil“.   
 ![Azure-Kachel](_img\vs-azure\vs-azure-tile.png)
 
-2.  Geben Sie die erforderlichen Informationen zum Erstellen Ihres Azure-Abonnements ein: ![Azure-Registrierung](_img\vs-azure\vs-azure-sign-up-cropped.png).
+2.  Füllen Sie die erforderlichen Informationen aus, um Ihr Azure-Abonnement zu erstellen. Aktivieren Sie dann das Kontrollkästchen, um die Geschäftsbedingungen zu akzeptieren, und klicken Sie dann auf **Registrieren** > ![Azure Sign-up](_img\vs-azure\vs-azure-sign-up-cropped.png) (Azure-Registrierung).
 
  
 3.  Wenn Ihr Konto verwendet werden kann, können Sie sich für einen Azure-Supportplan entscheiden, der separat erworben werden kann, oder erste Schritte mit Ihrem Azure-Abonnement durchführen.  

@@ -1,12 +1,10 @@
 ---
 title: "Neuerungen in Visual Studio 2017 | Microsoft-Dokumentation"
 ms.custom: 
-ms.date: 11/06/2017
+ms.date: 12/04/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
-- vs-acquisition
+ms.technology: vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords: VS.StartPage.WhatsNew
@@ -17,14 +15,14 @@ ms.assetid: 7307e180-ba28-4774-8a43-cbb980085a71
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 1e616fb0c223a30152b9cd18e6ea53e989690f9b
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.openlocfilehash: dc865fe81a51ff3ae2ca497b8982292ffda18372
+ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/04/2017
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Neuerungen in Visual Studio 2017
-#### <a name="updated-for-the-154-release"></a>Für Release 15.4 aktualisiert
+#### <a name="updated-for-the-155-releasehttpswwwvisualstudiocomnewsreleasenotesvs2017-relnotes"></a>In [Release 15.5](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes) aktualisiert
 Möchten Sie von einer vorherigen Version von Visual Studio aktualisieren? Visual Studio 2017 bietet Ihnen Folgendes: beispiellose Produktivität für alle Entwickler, Apps und Plattformen. Verwenden Sie Visual Studio 2017 zum Entwickeln von Apps für Android, iOS, Windows, Linux, das Web und die Cloud. Schnelles Codieren, einfaches Debuggen und einfache Diagnose, häufige Tests und zuverlässige Releases. Sie können Visual Studio auch durch Erstellen eigener Erweiterungen erweitern und anpassen. Verwenden Sie die Versionskontrolle, agile Prozesse, und steigern Sie die Effizienz bei der Zusammenarbeit mit diesem Release!
 
 Dies ist eine allgemeine Zusammenfassung aller Änderungen, die seit der vorherigen Version, Visual Studio 2015, vorgenommen wurden:
@@ -32,19 +30,21 @@ Dies ist eine allgemeine Zusammenfassung aller Änderungen, die seit der vorheri
 * **Neu definierte Grundlagen**. Mit der neuen Setupfunktionalität können Sie generell schneller installieren und das, was Sie wünschen, dann installieren, wenn Sie es benötigen. Es spielt es keine Rolle, ob Sie große Projektmappen und Projekte laden möchten, oder mit Codeordnern bzw. auch nur einer einzelnen Codedatei arbeiten, Visual Studio startet schneller. Außerdem behalten Sie mit Visual Studio stets den Überblick, was besonders wichtig ist für Teams, die sich auf DevOps konzentrieren.
 * **Leistung und Produktivität**. Wir haben uns auf neue, moderne Bereitstellungsfunktionen für Mobilgeräte sowie Cloud- und Desktopcomputer konzentriert. Wir haben außerdem die allgemeine Erfahrung beim Erwerb, für die Leistung und die allgemeine Entwicklerproduktivität verbessert. Visual Studio startet schneller, reagiert besser und benötigt weniger Arbeitsspeicher als je zuvor.
 * **Cloud-App-Entwicklung mit Azure**. Eine integrierte Sammlung von Azure-Tools, die Ihnen das einfache Entwickeln von primär auf die Cloud ausgelegten Apps in Microsoft Azure ermöglichen. Visual Studio vereinfacht das Konfigurieren, Erstellen, Debuggen, Packen und Bereitstellen von Apps und Diensten in Azure.
+* **Windows App-Entwicklung**. Verwenden Sie die UWP-Vorlagen in Visual Studio 2017, um ein einzelnes Projekt für alle Windows 10-Geräte zu erstellen: PC, Tablet, Smartphone, Xbox, HoloLens, Surface Hub usw. Erstellen Sie dann ein App-Paket, und übermitteln Sie dieses von Visual Studio aus an Microsoft Store, um Ihre App für Kunden bereitzustellen.
 * **Entwicklung mobiler Apps**. Sie können in Visual Studio 2017 mit Xamarin schnell Neuerungen einführen und Ergebnisse erzielen, denn dies vereinheitlicht Ihre mobilen Multi-Plattform-Anforderungen durch Verwendung einer einzigen Kerncodebasis und eines einzigen Satzes von Fertigkeiten. Werden Sie mobil mit Ihren vorhandenen Teams, Technologieinvestitionen und C#-Code, sodass Sie marktgerechte Produkte vor Ablauf des Terminplans und mit Unterschreitung des Budgets bereitstellen können. Beschleunigen Sie jeden Schritt des mobilen Lebenszyklus, um erstklassige Benutzeroberflächen zu bieten oder ein Portfolio von Produktivitäts-Apps, mit denen Ihre Mitarbeiter effektiver arbeiten können.
 * **Plattformübergreifende Entwicklung** Übermitteln Sie Software problemlos an alle Zielplattform. Weiten Sie DevOps-Prozesse mithilfe von Redgate Data Tools auf SQL Server aus, und automatisieren Sie die sichere Datenbankbereitstellung aus Visual Studio. Verwenden Sie alternativ .NET Core, um Apps und Bibliotheken zu schreiben, die unverändert unter Windows, Linux und macOS ausgeführt werden. (**Neu in 15.3:** Parallele Unterstützung für .NET Core 2.0 SDKs)
 * **Spieleentwicklung** Mithilfe der Visual Studio-Tools für Unity (VSTU) können Sie Visual Studio zum Schreiben von Spiel- und Editorskripts in C# verwenden und dann den leistungsfähigen Debugger zum Suchen und Beheben von Fehlern nutzen. Die neueste Version von VSTU umfasst Syntaxfarben für die Shadersprache ShaderLab von Unity, bessere Debugger-Visualisierungen und verbesserte Codegenerierung für den MonoBehavior-Assistenten. Mit VSTU werden außerdem die Unity-Projektdateien, Konsolenmeldungen und die Möglichkeit zum Starten des Spiels in Visual Studio eingebunden, sodass beim Schreiben von Code weniger Zeit zum Umschalten in und aus dem Unity-Editor benötigt wird.
+* **KI-Entwicklung**. Mit Visual Studio-Tools für KI (**neu ab Version 15.5**) können Sie die Produktivitätsfeatures von Visual Studio verwenden, um KI-Innovationen zu beschleunigen. Sie können Deep Learning- bzw. KI-Lösungen erstellen, testen und bereitstellen, die eine nahtlose Integration in Azure Machine Learning für robuste Experimentierfunktionen bieten, z.B. das transparente Übermitteln von Datenvorbereitungen oder Modelltrainingsaufträgen an verschiedene Computeziele. Anbieter für Visual Studio-Tools für KI bieten zusätzlich Unterstützung für benutzerdefinierte Metriken und das Nachverfolgen des Ausführungsverlaufs, wodurch die Reproduzierbarkeit und Überwachung von Data Science ermöglicht wird.
 
 > [!NOTE]
-> Eine vollständige Liste der neuen Features und Funktionen in Visual Studio 2017 finden Sie in den [Anmerkungen zur Version](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes).
+> Eine vollständige Liste der neuen Features und Funktionen in Visual Studio 2017 finden Sie in den [aktuellen Anmerkungen zur Version](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes). Weitere Informationen zu zukünftig angebotenen Features finden Sie in den [Anmerkungen zur Vorschauversion](https://www.visualstudio.com/news/releasenotes/vs2017-preview-relnotes).
 
 Im Anschluss finden Sie ausführlichere Informationen zu einigen der wichtigsten Verbesserungen und neuen Funktionen in Visual Studio 2017.
 
 ## <a name="redefined-fundamentals"></a>Neu definierte Grundlagen
 ### <a name="a-new-setup-experience"></a>Ein neues Setuperlebnis
 
-[Visual Studio 2017 herunterladen](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) oder [Visual Studio-Systemanforderungen überprüfen](https://www.visualstudio.com/en-us/productinfo/vs2017-system-requirements-vs)
+[Visual Studio 2017 herunterladen](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) oder [Visual Studio-Systemanforderungen überprüfen](https://www.visualstudio.com/productinfo/vs2017-system-requirements-vs)
 
  In Visual Studio können Sie jetzt einfacher und schneller nur die Funktionen installieren, die Sie benötigen, wenn Sie sie benötigen. Und es lässt sich auch sauber wieder deinstallieren.
 
@@ -56,10 +56,10 @@ Wählen Sie die benötigten Arbeitsauslastungen, und ändern Sie sie bei Bedarf.
 
 Möchten Sie Ihre Komponenten lieber selbst aussuchen, statt Arbeitsauslastungen zu verwenden? Wählen Sie im Installationsprogramm die Registerkarte **Einzelne Komponenten** aus. Möchten Sie Sprachpakete installieren, ohne zugleich auch die eingestellte Sprache für Windows ändern zu müssen? Wählen Sie die Registerkarte **Sprachpakete** des Installationsprogramms aus.  
 
-Weitere Informationen über die neue Installationsoberfläche, einschließlich Schritt-für-Schritt-Anweisungen, die Sie durch die Installation führen, finden Sie auf unserer Seite [Installieren von Visual Studio](../install/install-visual-studio.md).
+Weitere Informationen zur neuen Installationsoberfläche sowie ausführliche Anweisungen, die Sie durch die Installation führen, finden Sie auf der Seite [Installieren von Visual Studio](../install/install-visual-studio.md).
 
 ### <a name="a-focus-on-accessibility"></a>Konzentration auf Barrierefreiheit
-**In 15.3** haben wir über 1.700 gezielte Fixes vorgenommen, um die Kompatibilität zwischen Visual Studio und den Hilfstechnologien zu verbessern, die viele Kunden verwenden. Es gibt Dutzende von Szenarien, die kompatibler mit Bildschirmsprachausgaben, Designs mit hohem Kontrast und anderen Hilfstechnologien sind als jemals zuvor. Debugger, Editor und Shell haben ebenfalls allesamt erhebliche Verbesserungen erfahren.
+**In Version 15.3** wurden über 1.700 gezielte Fixes vorgenommen, um die Kompatibilität zwischen Visual Studio und den Hilfstechnologien zu verbessern, die viele Kunden verwenden. Es gibt Dutzende von Szenarien, die kompatibler mit Bildschirmsprachausgaben, Designs mit hohem Kontrast und anderen Hilfstechnologien sind als jemals zuvor. Debugger, Editor und Shell haben ebenfalls allesamt erhebliche Verbesserungen erfahren.
 
 Weitere Informationen finden Sie im Blogbeitrag [Accessibility improvements in Visual Studio 2017 version 15.3](https://blogs.msdn.microsoft.com/visualstudio/2017/08/14/accessibility-improvements-in-visual-studio-2017-version-15-3/) (Verbesserungen der Barrierefreiheit in Visual Studio 2017 [Version 15.3]).
 
@@ -71,11 +71,6 @@ Sie auch länger angemeldet bleiben. Visual Studio wird Sie nicht alle 12 Stunde
 
 ### <a name="start-visual-studio-faster"></a>Schnellerer Start von Visual Studio
 Das neue Leistungscenter von Visual Studio kann Ihnen helfen, die IDE-Startzeit zu optimieren. Im Leistungscenter werden alle Erweiterungen und Toolfenster aufgelistet, die den Start der IDE verlangsamen könnten. Sie können es zum Verbessern der Startleistung verwenden, indem Sie festlegen, wann Erweiterungen gestartet werden oder ob bestimmte Toolfenster beim Start geöffnet sein sollen.
-
-### <a name="decrease-solution-load-time"></a>Verringern der Ladedauer von Projektmappen
-Das Arbeiten mit Projektmappen, die eine große Anzahl von Projekten enthalten, bedeutet nicht, dass Sie an allen Dateien oder Projekten zugleich arbeiten müssen. Bearbeiten und Debuggen sind jetzt möglich, ohne auf das Laden jedes einzelnen Projekts durch Visual Studio zu warten. Wenn Sie dies mit verwalteten Projekten ausprobieren möchten, aktivieren Sie unter „Extras“ > „Optionen“ > „Projekte und Projektmappen“ den **Lightweight-Ladevorgang für Projektmappen**.
-
-  ![Dialogfeld „Optionen“ in Visual Studio 2017](../ide/media/vs2017ide-lightweight-solution-load.png "Visual Studio 2017-Dialogfeld „Optionen“ – Lightweight-Ladevorgang für Projektmappen")
 
 ### <a name="faster-on-demand-loading-of-extensions"></a>Schnelleres Laden von Erweiterungen bei Bedarf
 Visual Studio verschiebt seine Erweiterungen (und arbeitet auch mit Erweiterungen von Drittanbietern zusammen), damit sie erst bei Bedarf geladen werden, statt gleich beim IDE-Start. Möchten Sie wissen, welche Erweiterungen sich auf den Start, das Laden von Projektmappen und die Leistung bei der Eingabe auswirken? Sie finden diese Informationen unter „Hilfe“ > „Visual Studio-Leistung verwalten“.
@@ -103,21 +98,15 @@ Wenn Sie den Roaming-Erweiterungs-Manager verwenden, werden Sie drei Symboltypen
 
 Alle Erweiterungen, die Sie bei bestehender Anmeldung herunterladen, werden der Liste mit dem Status **Roaming und Installation erfolgt** hinzugefügt. Sie sind also Teil Ihrer Roamingliste, und daher haben Sie von jedem Computer aus darauf Zugriff.
 
-### <a name="experience-live-architecture-dependency-validation-and-live-unit-testing"></a>Erleben Sie die Echtzeitüberprüfung der Architekturabhängigkeiten und Livekomponententests
-Während Sie den Text in den Text-Editor eingeben, benachrichtigt Sie Visual Studio Sie in Echtzeit über Verletzungen von Architekturabhängigkeitsregeln, und zwar mithilfe von Abhängigkeitsvalidierungsdiagrammen (auch bekannt als Ebenendiagramme).
-
-Fehler werden in der Fehlerliste angezeigt, und Wellenlinien im Text-Editor zeigen den genauen Ort der Regelverletzung an. Es ist nun unwahrscheinlicher, dass Sie unerwünschte Abhängigkeiten einführen.
-
-![Echtzeitüberprüfung der Architektur](../ide/media/vs2017ide-LiveArchitectureDepedendencyValidation.png "Echtzeitüberprüfung der Architekturabhängigkeiten")
-
-#### <a name="live-unit-testing"></a>Livekomponententests
+### <a name="experience-live-unit-testing"></a>Entdecken Sie Live Unit Testing
 In Visual Studio Enterprise 2017 liefern Ihnen Livekomponententests Livekomponententest-Ergebnisse und Codeabdeckung im Editor währende der Codierung. Dies funktioniert mit C#- und Visual Basic-Projekten für .NET Framework und .NET Core und unterstützt Testframeworks von MSTest, xUnit und NUnit.
 
-![Livekomponententests](../ide/media/lut-codewindow.png "Ein Beispiel unseres neuen Livekomponententest-Features in der Enterprise Edition von Visual Studio")
+![Live Unit Testing](../ide/media/lut-codewindow.png "Ein Beispiel für das neue Live Unit Testing-Feature in der Enterprise Edition von Visual Studio")
 
 Weitere Informationen finden Sie unter [Introducing Live Unit Testing (Einführung in Live Unit Testing)](../test/live-unit-testing-intro.md). Eine Liste der neuen Funktionen, die in jedem Release von Visual Studio Enterprise 2017 hinzugefügt werden, finden Sie unter [What's new in Live Unit Testing (Neuerungen in Live Unit Testing)](../test/live-unit-testing-whats-new.md).
 
-#### <a name="set-up-a-cicd-pipeline-to-run-automated-tests-efficiently"></a>Einrichten einer CI/CD-Pipeline zum effizienten Ausführen automatisierter Tests
+#### <a name="setting-up-a-cicd-pipeline"></a>Einrichten einer CI/CD-Pipeline
+#### <a name="automated-testing"></a>Automatisiertes Testen
 Automatisiertes Testen ist ein wesentlicher Bestandteil aller DevOps-Pipelines. Damit können Sie konsistent und zuverlässig testen und Ihre Projektmappe in viel kürzeren Abständen freigeben. CI/CD-Flüsse (Continuous Integration und Continuous Delivery) können Prozesse effektiver gestalten.
 
 Weitere Informationen zu automatisierten Tests finden Sie im Blogbeitrag [CI/CD pipeline for automated tests in DevOps](https://blogs.msdn.microsoft.com/visualstudioalmrangers/2017/04/20/set-up-a-cicd-pipeline-to-run-automated-tests-efficiently/) (CI/CD-Pipeline für automatisierte Tests in DevOps).
@@ -126,8 +115,8 @@ Weitere Informationen zu Neuigkeiten in der DevLabs-Erweiterung [Continuous Deli
 
 ### <a name="visual-studio-ide-enhancements"></a>Verbesserungen der Visual Studio-IDE
 #### <a name="use-new-refactorings"></a>Verwenden neuer Refactorings
-**In Version 15.3** haben wir einige neue Refactorings hinzugefügt, einschließlich:
-*   Mergingkonflikte lösen
+Als Refactoring wird der Prozess bezeichnet, Ihren Code zu verbessern, nachdem dieser geschrieben wurde. Durch Refactoring wird die interne Struktur des Codes geändert, ohne dessen Verhalten zu ändern. Neue Refactorings werden häufig hinzugefügt. Im Folgenden sind einige davon aufgeführt:
+
 *   Hinzufügen von Parametern (aus CallSite)
 *   Generieren von Überschreibungen
 *   Hinzufügen benannter Argumente
@@ -163,14 +152,14 @@ Wir haben die Benutzerfreundlichkeit der Navigation verbessert, sodass Sie mit g
 
 ![Visual Studio 2017 Strukturschnellansicht](../ide/media/vsIDE-StructureVisualizer.png "Strukturschnellansicht in Visual Studio")
 
-Weitere Informationen zu unseren neuen Produktivitätsfeatures finden Sie im Blogbeitrag [Productivity in Visual Studio 2017](https://blogs.msdn.microsoft.com/visualstudio/2016/11/28/productivity-in-visual-studio-2017-rc/) (Produktivität in Visual Studio 2017) von Mark Wilson-Thomas.
+Weitere Informationen zu den neuen Produktivitätsfeatures finden Sie im Blogbeitrag [Productivity in Visual Studio 2017 (Produktivität in Visual Studio 2017)](https://blogs.msdn.microsoft.com/visualstudio/2016/11/28/productivity-in-visual-studio-2017-rc/) von Mark Wilson-Thomas.
 
 ### <a name="visual-c"></a>Visual C++
 Sie werden eine Reihe von Verbesserungen in Visual Studio bemerken, z.B. die Verteilung von C++ Core Guidelines mit Visual Studio, das Update des Compilers durch verbesserte Unterstützung für C++11- und C++-Funktionen und Hinzufügen und Aktualisieren von Funktionalität in den C++-Bibliotheken. Wir haben auch die Leistung der C++-IDE, die Installation von Arbeitsauslastungen und anderes mehr verbessert.
 
 Wir haben ebenfalls mehr als 250 Fehler und gemeldete Probleme mit dem Compiler und den Tools behoben, von denen viele durch Kunden über [Microsoft Connect](https://connect.microsoft.com/VisualStudio "Microsoft Connect") übermittelt wurden.
 
-Eine vollständige Auflistung der Details finden Sie auf der Seite [Neues für Visual C++ in Visual 2017](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio).  
+Ausführliche Angaben finden Sie auf der Seite [Neuerungen bei Visual C++ in Visual Studio 2017](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio).  
 
 ### <a name="debugging-and-diagnostics"></a>Debuggen und Diagnose
 #### <a name="run-to-click"></a>Ausführung bis Klick:
@@ -185,11 +174,56 @@ Die neue Ausnahmen-Hilfe hilft Ihnen, Ihre Ausnahmeinformationen auf einen Blick
 
 Weitere Informationen finden Sie im Blogbeitrag [Using the New Exception Helper in Visual Studio](https://blogs.msdn.microsoft.com/visualstudioalm/2016/03/31/using-the-new-exception-helper-in-visual-studio-15-preview/) (Verwenden der neuen Ausnahmen-Hilfe in Visual Studio).
 
+#### <a name="snapshots-and-intellitrace-step-back"></a>Momentaufnahmen und das IntelliTrace-Feature „Step-back“:
+**Neues in Version 15.5:** Das IntelliTrace-Feature „Step-back“ nimmt automatisch bei jedem Breakpoint und Debuggerschritt eine Momentaufnahme Ihrer Anwendung auf. Durch die erfassten Momentaufnahmen können Sie zu vorherigen Haltepunkten oder Schritten zurückkehren und sich den Zustand der Anwendung so anzeigen lassen, wie er zuvor war. Mit dem IntelliTrace-Feature „Step-back“ können Sie Zeit sparen, wenn Sie den vorherigen Zustand der Anwendung anzeigen oder diesen wiederherstellen, aber das Debuggen nicht erneut starten möchten.
+
+Sie können Momentaufnahmen anzeigen und durch diese navigieren, indem Sie die Schaltflächen **Schritt zurück** und **Schritt vor** in der Debugsymbolleiste verwenden. Mit diesen Schaltflächen können Sie durch die Ereignisse navigieren, die in der Registerkarte **Ereignisse** des Fensters **Diagnosetools** angezeigt werden. Wenn Sie mit „Schritt zurück“ oder „Schritt vor“ zu einem Ereignis navigieren, wird das verlaufsbezogene Debuggen für das ausgewählte Ereignis automatisch aktiviert.
+
+![Das neue Dialogfeld „Ausnahmen-Hilfe“ in Visual Studio](../debugger/media/intellitrace-step-back-icons-description.png  "Schaltfläche „Schritt zurück“ und „Schritt vor“")
+
+Weitere Informationen finden Sie auf der Seite [View snapshots using IntelliTrace step-back (Anzeigen von Momentaufnahmen mithilfe des IntelliTrace-Features „Step-back“)](../debugger/how-to-use-intellitrace-step-back.md).
+
+### <a name="containerization"></a>Containerisierung
+Container bieten eine höhere App-Dichte und niedrigere Bereitstellungskosten sowie eine verbesserte Produktivität und DevOps-Flexibilität.
+
+#### <a name="docker-container-tooling"></a>Tools für Docker-Container
+**Neues in Version 15.5**
+* Visual Studio enthält Tools für Docker-Container, die nun mehrstufige Dockerdateien unterstützen, die das Erstellen von optimierten Containerimages vereinfachen.
+* Wenn Sie ein Projekt mit Docker-Unterstützung öffnen, werden von Visual Studio automatisch die erforderlichen Containerimages im Hintergrund abgerufen, erstellt und ausgeführt. Sie können dieses Verhalten über die Einstellung **Container im Hintergrund automatisch starten** in Visual Studio deaktivieren.
+
 ## <a name="cloud-app-development-with-azure"></a>Cloud-App-Entwicklung mit Azure
 ### <a name="azure-functions-tools"></a>Azure Functions-Tools
 Als Teil der Workload „Azure-Entwicklung“ haben wir Tools eingefügt, mit denen Sie Azure-Funktionen entwickeln, indem Sie vorkompilierte C#-Klassenbibliotheken verwenden. Sie können jetzt auf dem lokalen Entwicklungscomputer erstellen, ausführen und debuggen und anschließend direkt aus Visual Studio in Azure veröffentlichen.
 
 Weitere Informationen finden Sie unter [Azure Functions-Tools für Visual Studio](https://docs.microsoft.com/azure/azure-functions/functions-develop-vs) Seite.
+
+### <a name="debug-live-aspnet-apps-using-snappoints-and-logpoints-in-live-azure-applications"></a>Debuggen von ASP.NET-Live-Apps mithilfe von Andockpunkten und Protokollpunkten in Azure-Live-Apps
+**Neues in Version 15.5:** Der Momentaufnahmedebugger erstellt eine Momentaufnahme Ihrer Apps, die sich in der Produktion befinden, wenn Code ausgeführt wird, der für Sie von Interesse ist. Legen Sie Andockpunkte und Protokollpunkte in Ihrem Code fest, um den Debugger anzuweisen, eine Momentaufnahme zu erstellen. Der Debugger zeigt Fehler ohne Auswirkungen auf den Datenverkehr Ihrer Produktionsanwendung an. Der Momentaufnahmedebugger kann Sie dabei unterstützen, die Zeit zum Beheben von Fehlern, die in Produktionsumgebungen auftreten, erheblich zu reduzieren.
+
+Die Momentaufnahmensammlung ist für folgende Web-Apps verfügbar, die in Azure App Service ausgeführt werden:
+
+* ASP.NET-Apps, die in .NET Framework 4.6.1 oder höher ausgeführt werden.
+* ASP.NET Core-Apps, die in .NET Core 2.0 oder höher unter Windows ausgeführt werden.
+
+Weitere Informationen finden Sie unter [Debug live ASP.NET apps using snappoints and logpoints (Debuggen von ASP.NET-Live-Apps mithilfe von Andockpunkten und Protokollpunkten)](../debugger/debug-live-azure-applications.md).
+
+## <a name="windows-app-development"></a>Windows App-Entwicklung
+### <a name="universal-windows-platform"></a>Universelle Windows-Plattform
+Universelle Windows-Plattform (UWP) ist die App-Plattform für Windows 10. Sie können Apps für UWP mit nur einem API-Satz, einem App-Paket und einem Store entwickeln, um alle Windows 10-Geräte (PC, Tablet, Smartphone, Xbox, HoloLens, Surface Hub usw.) zu erreichen. UWP unterstützt verschiedene Bildschirmgrößen und eine Vielzahl von Interaktionsmodellen, z.B. Fingereingabe, Maus und Tastatur, Gamecontroller oder Stifteingabe. Hinter UWP-Apps steht die Idee, dass Benutzer ihre Funktionen mobil auf allen Geräten verwenden und jeweils das Gerät verwenden möchten, das am praktischsten und produktivsten für die vorliegende Aufgabe ist.
+
+ ![Universelle Windows-Plattform](../cross-platform/media/uwp_coreextensions.png "UWP_CoreExtensions")
+
+Wählen Sie aus C#, Visual Basic, C++ oder JavaScript Ihre bevorzugte Entwicklungssprache aus, um eine UWP-App für Windows 10-Geräte zu erstellen. Visual Studio 2017 stellt für jede Sprache eine Vorlage für UWP-Apps bereit, durch die Sie ein einzelnes Projekt für alle Geräte erstellen können. Wenn Ihre Arbeit abgeschlossen ist, können Sie ein App-Paket erstellen und dieses von Visual Studio aus an Microsoft Store übermitteln, um Ihre App für Kunden mit Windows 10-Geräten bereitzustellen.
+
+**Neues in Version 15.5**<br/>
+Version 15.5 von Visual Studio 2017 bietet eine optimale Unterstützung für das Windows 10 Fall Creators Update SDK (10.0.16299.0). Das Windows 10 Fall Creators Update enthält viele Verbesserungen für UWP-Entwickler. Im Folgenden finden Sie einige der wichtigsten Änderungen: 
+
+* **Unterstützung für .NET Standard 2.0**<br/>
+Zusätzlich zur optimierten App-Entwicklung ist das Windows 10 Fall Creators Update das erste Release von Windows 10, das Unterstützung für .NET Standard 2.0 bietet. [.NET Standard](https://blogs.msdn.microsoft.com/dotnet/2016/09/26/introducing-net-standard/) ist eine Referenzimplementierung der Basisklassenbibliothek, die jede .NET-Plattform implementieren kann. Das Ziel von .NET Standard besteht darin, das Freigeben von Code für .NET-Entwickler für jede .NET-Plattform, mit der sie arbeiten möchten, so einfach wie möglich zu gestalten.
+* **Das Beste aus UWP und Win32** <br/>
+Die Windows 10-Plattform wurde durch die [Desktop-Brücke](https://docs.microsoft.com/windows/uwp/porting/desktop-to-uwp-root) verbessert, um Windows 10 für alle .NET-Entwickler unabhängig davon zu verbessern, ob der derzeitige Fokus auf UWP, WPF, Windows Forms oder Xamarin liegt. Mit dem neuen Projekttyp für das Packen von Apps in Version 15.5 von Visual Studio 2017 können Sie Windows-App-Pakete für Ihre Windows Presentation Foundation- oder Windows Forms-Projekte genau wie für UWP-Projekte erstellen. Nachdem Sie Ihre App gepackt haben, erhalten Sie alle Vorteile von Windows 10 für die App-Entwicklung und können diese über Microsoft Store (bei Verbraucher-Apps) oder Microsoft Store für Unternehmen und Bildungseinrichtungen verteilen. Da gepackte Apps über Zugriff auf die vollständige UWP-API-Oberfläche und auf die Win32-APIs auf dem Desktop verfügen, können Sie Ihre Windows Presentation Foundation- und Windows Forms-Apps nach und nach mit den UWP-APIs und den Windows 10-Features modernisieren. Darüber hinaus können Sie Ihre Win32-Komponenten mit allen Win32-Funktionen in Ihre UWP-Anwendungen integrieren, die auf dem Desktop gekennzeichnet sind. 
+
+Weitere Informationen zu UWP finden Sie auf der Seite [Entwickeln von Apps für die universelle Windows-Plattform (UWP)](https://docs.microsoft.com/visualstudio/cross-platform/develop-apps-for-the-universal-windows-platform-uwp).
 
 ## <a name="mobile-app-development"></a>Entwicklung mobiler Apps
 ### <a name="xamarin"></a>Xamarin
@@ -202,6 +236,18 @@ Weitere Informationen finden Sie unter [Visual Studio und Xamarin](../cross-plat
 
 ![Berechtigungs-Editor für Xamarin](../ide/media/xamarin-entitlements-editor.png "Entitlement editor for Xamarin")
 
+### <a name="visual-studio-tools-for-xamarin"></a>Visual Studio-Tools für Xamarin
+**Neues in 15.4:** Mit Xamarin Live können Entwickler ihre Apps direkt auf iOS-und Android-Geräten kontinuierlich bereitstellen, testen und debuggen. Nachdem Sie Xamarin Live Player heruntergeladen haben (aus dem App Store oder von Google Play), können Sie Ihr Gerät mit Visual Studio verknüpfen. So verändern Sie den Prozess des Erstellens mobiler Apps von Grund auf. Diese Funktion ist jetzt in Visual Studio beinhaltet und kann unter „Extras“ > „Optionen“ > „Xamarin“ > „Sonstiges“ > „Xamarin Live Player aktivieren“ aktiviert werden.
+
+![Animation der Verknüpfung, Bereitstellung und der Livebearbeitungsmodi von Xamarin Live Player](../ide/media/xamarinliveplayer.gif)
+
+### <a name="visual-studio-app-center"></a>Visual Studio App Center
+**Neues in 15.5:** Visual Studio App Center ist nun allgemein für Android, iOS, macOS und Windows-Apps verfügbar und enthält alle erforderlichen Komponenten, um den Lebenszyklus Ihrer Apps zu verwalten, einschließlich automatisierter Builds, des Testens auf echten Geräten in der Cloud, der Verteilung an Betatester und App-Stores sowie des Überwachens der tatsächlichen Nutzung durch Absturz- und Analysedaten. Bei Apps, die in Objective-C, Swift, Java, C#, Xamarin oder React Native geschrieben wurden, werden sämtliche Features unterstützt.
+
+  ![Testumgebung von Visual Studio App Center](../ide/media/app-center-test-env.png)
+
+Weitere Informationen finden Sie im Blogbeitrag [Introducing App Center: Build, Test, Distribute and Monitor Apps in the Cloud (Einführung in App Center: Erstellen, Testen, Verteilen und Überwachen von Apps in der Cloud)](https://blogs.msdn.microsoft.com/vsappcenter/introducing-visual-studio-app-center/).
+
 ## <a name="cross-platform-development"></a>Plattformübergreifende Entwicklung
 ### <a name="redgate-data-tools"></a>Redgate Data Tools
 Um DevOps-Funktionen für die Entwicklung der SQL Server-Datenbank zu erweitern, sind Redgate Data Tools jetzt in Visual Studio verfügbar.
@@ -213,7 +259,7 @@ In Visual Studio 2017 Enterprise sind enthalten:
 In allen Editionen von Visual Studio 2017 ist enthalten:
 - [Redgate SQL Search](http://www.red-gate.com/products/sql-development/sql-search/?utm_source=microsoft&utm_medium=link&utm_campaign=sqlsearch&utm_term=docs-newinvs) steigert Ihre Produktivität, weil Sie schnell nach SQL-Fragmenten und -Objekten in mehreren Datenbanken suchen können.
 
-Weitere Informationen finden Sie in unserem Blogbeitrag [Redgate Data Tools in Visual Studio 2017](https://blogs.msdn.microsoft.com/visualstudio/2017/03/07/redgate-data-tools-in-visual-studio-2017/).
+Weitere Informationen finden Sie im Blogbeitrag [Redgate Data Tools in Visual Studio 2017](https://blogs.msdn.microsoft.com/visualstudio/2017/03/07/redgate-data-tools-in-visual-studio-2017/).
 
 ### <a name="net-core"></a>.NET Core
 .NET Core ist eine allgemeine, modulare, plattformübergreifende Open Source-Implementierung des .NET-Standards und enthält vieler der gleichen APIs wie das .NET Framework.
@@ -232,6 +278,15 @@ Als Teil der Workload „Entwicklung von Spielen für Unity“ haben wir die Too
 
 Weitere Informationen finden Sie unter [Visual Studio Tools für Unity](../cross-platform/visual-studio-tools-for-unity.md).
 
+## <a name="ai-development"></a>KI-Entwicklung
+### <a name="visual-studio-tools-for-ai"></a>Visual Studio-Tools für KI
+**Neues in Version 15.5:** Verwenden Sie die Produktivitätsfeatures von Visual Studio, um KI-Innovationen zu beschleunigen. Verwenden Sie die integrierten Features des Code-Editors wie die Syntaxhervorhebung, IntelliSense und die automatische Textformatierung. Sie können Ihre Deep Learning-Anwendung interaktiv in Ihrer lokalen Umgebung testen, indem Sie das Debuggen in ausführlichen Schritten für lokale Variablen und Modelle verwenden.
+
+  ![Deep Learning-IDE](../ai/media/about/ide.png)
+
+Weitere Informationen finden Sie unter [Visual Studio Tools für KI](../ai/about-ai-tools.md).
+
+
 ## <a name="talk-to-us"></a>Sprechen Sie mit uns  
  Warum sollten Sie dem Visual Studio-Team ein Feedback senden? Weil wir das Feedback unserer Kunden ernst nehmen. Es gibt den Anstoß zu vielen unserer Initiativen.  
 
@@ -244,7 +299,7 @@ Wenn Sie einen Vorschlag zu möglichen Verbesserungen von Visual Studio machen o
  Wenn Sie den Status Ihres Visual Studio-Feedbacks verfolgen möchten, rufen Sie [Verbinden](http://connect.microsoft.com/) auf, und melden Sie den Fehler dort. Nach der Meldung können Sie zu Connect zurückkehren, um den Status zu überprüfen.  
 
 ## <a name="see-also"></a>Siehe auch
-* [Visual Studio 2017 – Anmerkungen zu dieser Version](https://www.visualstudio.com/news/vs2015-vs)
+* [Visual Studio 2017 – Anmerkungen zu dieser Version](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes)
 * [Neues in Visual C++](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio)
 * [Neues in C#](https://docs.microsoft.com/dotnet/csharp/csharp-7)  
 * [Neues für Team Foundation Server](https://www.visualstudio.com/docs/whats-new)

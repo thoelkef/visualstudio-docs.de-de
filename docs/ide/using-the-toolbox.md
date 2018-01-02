@@ -25,29 +25,29 @@ helpviewer_keywords:
 - Visual Studio, toolbox
 - toolbox, tabs
 - toolbox
-ms.assetid: 82e7cb43-4d0b-4e17-b7b0-43f96c22c3c2
-caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f0945c5618e457005c0fba7e229b8e530efe6c74
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 9290f2dbaae27bef7934d8fd619b4ee5355f4ec3
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="using-the-toolbox"></a>Verwenden der Toolbox
-Mithilfe des Werkzeugkastens können Sie Ihrem Projekt Steuerelemente und andere Elemente hinzufügen. Sie können verschiedene Steuerelemente per Drag & Drop auf die Oberfläche des verwendeten Designers verschieben und die Größe und Position der Steuerelemente ändern.  
-  
- Der Werkzeugkasten wird in Verbindung mit Designeransichten angezeigt, wie der Entwurfsansicht einer XAML-Datei. Im Werkzeugkasten werden nur die Steuerelemente angezeigt, die im aktuellen Designer verwendet werden können.  
-  
- Die in Ihrem Projekt verwendete .NET Framework-Version wirkt sich auch auf den Satz von Steuerelementen aus, der im Werkzeugkasten angezeigt wird. Standardmäßig verwenden [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)]-Projekte das .NET Framework 4.5.1. Sie können festlegen, dass Ihr Projekt eine andere Version von .NET Framework verwendet, indem Sie den Projektknoten im **Projektmappen-Explorer** auswählen und anschließend mit **Eigenschaften > Anwendung > Zielframework** durchsuchen.  
-  
-## <a name="managing-the-toolbox-and-its-controls"></a>Verwalten der Toolbox und deren Steuerelemente  
- Standardmäßig wird die Toolbox auf der linken Seite der Visual Studio IDE reduziert dargestellt und wird angezeigt, wenn der Mauszeiger darüber bewegt wird. Sie können die Toolbox anheften (durch Klicken auf das Symbol **Anheften** auf der Toolbox-Symbolleiste), sodass dieser geöffnet bleibt, wenn Sie den Cursor verschieben. Sie können das Toolboxfenster auch abdocken und es an eine beliebige Stelle auf dem Bildschirm ziehen. Sie können den Werkzeugkasten andocken, abdocken und ausblenden, indem Sie mit der rechten Maustaste auf die Werkzeugkasten-Symbolleiste klicken und eine der Optionen auswählen.  
-  
- Mithilfe der folgenden Befehle im Kontextmenü können Sie die Elemente auf einer Toolboxregisterkarte neu anordnen oder benutzerdefinierte Registerkarten und Elemente hinzufügen:  
-  
+
+Mithilfe des Werkzeugkastens können Sie Ihrem Projekt Steuerelemente und andere Elemente hinzufügen. Sie können verschiedene Steuerelemente per Drag & Drop auf die Oberfläche des verwendeten Designers verschieben und die Größe und Position der Steuerelemente ändern.
+
+Der Werkzeugkasten wird in Verbindung mit Designeransichten angezeigt, wie der Entwurfsansicht einer XAML-Datei. Im Werkzeugkasten werden nur die Steuerelemente angezeigt, die im aktuellen Designer verwendet werden können.
+
+Die in Ihrem Projekt verwendete .NET Framework-Version wirkt sich auch auf den Satz von Steuerelementen aus, der im Werkzeugkasten angezeigt wird. Sie können festlegen, dass Ihr Projekt eine andere Version von .NET Framework verwendet, indem Sie den Projektknoten im **Projektmappen-Explorer** auswählen und anschließend mit **Eigenschaften > Anwendung > Zielframework** durchsuchen.
+
+## <a name="managing-the-toolbox-and-its-controls"></a>Verwalten der Toolbox und deren Steuerelemente
+
+Standardmäßig wird die Toolbox auf der linken Seite der Visual Studio IDE reduziert dargestellt und wird angezeigt, wenn der Mauszeiger darüber bewegt wird. Sie können die Toolbox anheften (durch Klicken auf das Symbol **Anheften** auf der Toolbox-Symbolleiste), sodass dieser geöffnet bleibt, wenn Sie den Cursor verschieben. Sie können das Toolboxfenster auch abdocken und es an eine beliebige Stelle auf dem Bildschirm ziehen. Sie können den Werkzeugkasten andocken, abdocken und ausblenden, indem Sie mit der rechten Maustaste auf die Werkzeugkasten-Symbolleiste klicken und eine der Optionen auswählen.
+
+Mithilfe der folgenden Befehle im Kontextmenü können Sie die Elemente auf einer Toolboxregisterkarte neu anordnen oder benutzerdefinierte Registerkarten und Elemente hinzufügen:
+
 -   **Element umbenennen**: benennt das ausgewählte Element um.  
   
 -   **Alle anzeigen**: zeigt alle möglichen Steuerelemente an (nicht nur die für den aktuellen Designer).  
@@ -65,6 +65,11 @@ Mithilfe des Werkzeugkastens können Sie Ihrem Projekt Steuerelemente und andere
 -   **Nach oben**: verschiebt das ausgewählte Element nach oben.  
   
 -   **Nach unten**: verschiebt das ausgewählte Element nach unten.  
-  
-## <a name="creating-and-distributing-custom-toolbox-controls"></a>Erstellen und Verteilen von benutzerdefinierten Toolbox-Steuerelementen  
- Sie können ein benutzerdefiniertes Toolbox-Steuerelement in Visual Basic oder Visual C++ erstellen, und Sie können mit einer Projektvorlage beginnen, die auf [Windows Presentation Foundation](../extensibility/creating-a-wpf-toolbox-control.md) oder [Windows Forms](../extensibility/creating-a-windows-forms-toolbox-control.md) basiert. Sie können Ihr Steuerelement dann an Ihre Teamkollegen verteilen oder es im Internet mithilfe des [Installationsprogramms für Toolbox-Steuerelemente](http://download.microsoft.com/download/8/3/6/836657BD-9CCB-4ED4-B9D2-FB769473B284/TCI_whitepaper.docx) veröffentlichen.
+
+## <a name="creating-and-distributing-custom-toolbox-controls"></a>Erstellen und Verteilen von benutzerdefinierten Toolbox-Steuerelementen
+
+Sie können ein benutzerdefiniertes Toolbox-Steuerelement in Visual Basic oder Visual C++ erstellen, und Sie können mit einer Projektvorlage beginnen, die auf [Windows Presentation Foundation](../extensibility/creating-a-wpf-toolbox-control.md) oder [Windows Forms](../extensibility/creating-a-windows-forms-toolbox-control.md) basiert. Sie können Ihr Steuerelement dann an Ihre Teamkollegen verteilen oder es im Internet mithilfe des [Installationsprogramms für Toolbox-Steuerelemente](http://download.microsoft.com/download/8/3/6/836657BD-9CCB-4ED4-B9D2-FB769473B284/TCI_whitepaper.docx) veröffentlichen.
+
+## <a name="see-also"></a>Siehe auch
+
+[Schreiben von Code im Editor](../ide/writing-code-in-the-code-and-text-editor.md)

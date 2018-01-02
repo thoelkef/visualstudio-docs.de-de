@@ -1,5 +1,5 @@
 ---
-title: Codeformate und schnelle Aktionen | Microsoft-Dokumentation
+title: "Codeformateinstellungen für Visual Studio | Microsoft-Dokumentation"
 ms.custom: 
 ms.date: 03/10/2017
 ms.reviewer: 
@@ -7,28 +7,29 @@ ms.suite:
 ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.devlang: csharp
-ms.assetid: 25bb9d99-aeff-4053-925d-2177f5e79574
 author: gewarren
 ms.author: gewarren
 manager: ghogen
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Code_Style.General
 - VS.ToolsOptionsPages.Text_Editor.Basic.Code_Style.General
-ms.openlocfilehash: d42bb9165748b7282aa42f062b545add62ad1c93
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 24470f4fdb1a75d6ebd2743b2ade72e6195842b4
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/07/2017
 ---
-# <a name="code-styles-and-quick-actions"></a>Codeformate und schnelle Aktionen
-Für Ihre C#- und Visual Basic-Projekte können Sie Codeformateinstellungen vornehmen, indem Sie das Fenster **Tools > Options** (Tools > Optionen) öffnen und anschließend **Text Editor > C# / Basic > Code Style > General** (Text-Editor > C#/Basic > Codeformat > Allgemein) auswählen.  Die Optionen, die in diesem Fenster vorgenommen werden, werden auf den lokalen Computer angewendet.  Jedes Element auf der Liste zeigt eine Vorschau der Einstellung an, wenn es ausgewählt wird, so wie unten abgebildet.
+# <a name="code-style-preferences"></a>Codeformateinstellungen
+
+Codeformateinstellungen können für Ihre C#- und Visual Basic-Projekte festgelegt werden, indem Sie das Dialogfeld **Optionen** im Menü **Extras** öffnen. Klicken Sie auf **Text-Editor** > **C#** oder **Basic** > **Codeformat** > **Allgemein**. Die Optionen, die in diesem Fenster vorgenommen werden, werden auf den lokalen Computer angewendet. Jedes Element auf der Liste zeigt eine Vorschau der Einstellung an, wenn es ausgewählt wird, so wie unten abgebildet.
 
 ![Codeformatoptionen](media/code-style-quick-actions-dialog.png)
 
-Sie können für jedes Element **Preference** (Präferenz) und **Security** (Sicherheit) über die Dropdownfelder jeder Zeile festlegen.  Der Schweregrad kann auf **None** (Keiner), **Suggestion** (Vorschlag), **Warning** (Warnung) oder **Fehler** festgelegt werden, und das Verhalten von Visual Studio wird dementsprechend angepasst.  Wenn Sie [schnelle Aktionen](quick-actions.md) für diese Codeformate verwenden möchten, um automatisch Code in ein bevorzugtes Format umzuschreiben, stellen Sie sicher, dass die Einstellung nicht auf **None** (Keiner) eingestellt ist, damit das Glühbirnensymbol ![Small Light Bulb Icon](media/vs2015_lightbulbsmall.png "VS2017_LightBulbSmall") erscheint, wenn ein nicht bevorzugten Format verwendet wird.  Sie können diese Einstellungen anwenden, indem auf das Glühbirnensymbol klicken oder **STRG+.** drücken, wenn sich Ihr Cursor in der entsprechenden Codezeile befindet.
+Sie können für jedes Element **Preference** (Präferenz) und **Security** (Sicherheit) über die Dropdownfelder jeder Zeile festlegen. Der Schweregrad kann auf **None** (Keiner), **Suggestion** (Vorschlag), **Warning** (Warnung) oder **Fehler** festgelegt werden, und das Verhalten von Visual Studio wird dementsprechend angepasst. Wenn Sie [schnelle Aktionen](quick-actions.md) für diese Codeformate verwenden möchten, um automatisch Code in ein bevorzugtes Format umzuschreiben, stellen Sie sicher, dass die Einstellung nicht auf **None** (Keiner) eingestellt ist, damit das Glühbirnensymbol ![Small Light Bulb Icon](media/vs2015_lightbulbsmall.png "VS2017_LightBulbSmall") erscheint, wenn ein nicht bevorzugten Format verwendet wird. Sie können diese Einstellungen anwenden, indem auf das Glühbirnensymbol klicken oder **STRG+.** drücken, wenn sich Ihr Cursor in der entsprechenden Codezeile befindet.
 
-Codeformateinstellungen für .NET können auch mithilfe einer [EditorConfig](editorconfig-code-style-settings-reference.md)-Datei verwaltet werden.  In diesem Fall sind die Einstellungen, die Sie im Fenster „Optionen“ vorgenommen haben, die Alternativeinstellungen, mit der „EditorConfig“-Datei an erster Stelle.  Sie können diese Datei verwenden, um ein Codierungsformat für Ihr gesamtes Repository oder Ihr gesamtes Team zu erzwingen oder zu konfigurieren.
+Codeformateinstellungen für .NET können auch mithilfe einer [EditorConfig](../ide/editorconfig-code-style-settings-reference.md)-Datei verwaltet werden. In diesem Fall haben die Einstellungen in der EDITORCONFIG-Datei Vorrang gegenüber den im Dialogfeld **Optionen** ausgewählten Optionen. Sie können eine EDITORCONFIG-Datei verwenden, um ein Codierungsformat für Ihr gesamtes Repository oder Ihr gesamtes Projekt zu erzwingen oder zu konfigurieren.
 
 ## <a name="see-also"></a>Siehe auch
-* [Schnelle Aktionen](quick-actions.md)
+
+[Schnelle Aktionen](quick-actions.md)  
+[Einstellungen für die .NET-Codierungskonventionen für EditorConfig](../ide/editorconfig-code-style-settings-reference.md)

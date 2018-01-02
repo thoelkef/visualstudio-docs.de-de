@@ -1,7 +1,7 @@
 ---
-title: "Komponententests für eine Visual C++-DLL für UWP-Apps | Microsoft-Dokumentation"
+title: "Vorgehensweise: Testen einer Visual C++-DLL für UWP-Apps | Microsoft-Dokumentation"
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 11/04/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-general
@@ -9,43 +9,42 @@ ms.tgt_pltfrm:
 ms.topic: article
 ms.assetid: 24afc90a-8774-4699-ab01-6602a7e6feb2
 caps.latest.revision: "13"
-ms.author: douge
-manager: douge
-ms.openlocfilehash: a900c779401277e4b8694e75f69203fee82d73f0
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.author: mblome
+manager: ghogen
+ms.openlocfilehash: 4fc133d96f8306b46e4d820b6f7256db8c471122
+ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 11/15/2017
 ---
-# <a name="unit-testing-a-visual-c-dll-for-uwp-apps"></a>Komponententests für eine Visual C++-DLL für UWP-Apps
-In diesem Thema wird eine Möglichkeit zum Erstellen von Komponententests für eine C++-DLL für UWP-Apps beschrieben. Die RooterLib-DLL implementiert eine Funktion zum Berechnen der geschätzten Quadratwurzel einer vorgegebenen Zahl, und zwar auf eine Weise, die entfernt an Grenzwertberechnungen in der Analysis erinnert. Die DLL kann dann in eine UWP-App eingeschlossen werden, die Benutzern Spaß an der Mathematik vermittelt.  
+# <a name="how-to-test-a-visual-c-dll-for-uwp-apps"></a>Vorgehensweise: Testen einer Visual C++-DLL für UWP-Apps 
+In diesem Artikel wird eine Möglichkeit zum Erstellen von Komponententests für eine C++-DLL für UWP-Apps (Universelle Windows-Plattform) mit dem Microsoft-Testframework für C++ dargestellt. Die RooterLib-DLL implementiert eine Funktion zum annähernden Berechnen der Quadratwurzel einer vorgegebenen Zahl, und zwar in einer Weise, die entfernt an Grenzwertberechnungen in der Analysis erinnert. Die DLL kann dann in eine UWP-App eingeschlossen werden, die Benutzern Spaß an der Mathematik vermittelt.  
   
  In diesem Thema wird gezeigt, wie Komponententests als erster Schritt in der Entwicklung verwendet werden. Bei dieser Vorgehensweise schreiben Sie zuerst eine Testmethode, die ein bestimmtes Verhalten in Ihrem Testsystem überprüft. Anschließend schreiben Sie den Code, der im Test erfolgreich ist. Durch das Ändern der Reihenfolge bei den folgenden Prozeduren, können Sie diese Strategie umkehren und zuerst den zu testenden Code und anschließend die Komponententests schreiben.  
   
  In diesem Thema werden auch eine einzelne Visual Studio-Projektmappe und separate Projekte für die zu testenden Komponententests und DLLs erstellt. Sie können die Komponententests auch direkt in das DLL-Projekt einfügen, oder Sie können separate Lösungen für die Komponententests und die DLL erstellen. Hinweise dazu, welche Struktur verwendet werden soll, erhalten Sie unter [Ausführen von Komponententests für vorhandene C++-Anwendungen mit dem Test-Explorer](../test/unit-testing-existing-cpp-applications-with-test-explorer.md).  
   
-##  <a name="BKMK_In_this_topic"></a> In diesem Thema  
- Dieses Thema führt Sie durch die folgenden Aufgaben:  
+##  <a name="In_this_topic"></a> In diesem Thema  
+
+ [Erstellen der Projektmappe und des Komponententestprojekts](#Create_the_solution_and_the_unit_test_project)  
   
- [Erstellen der Projektmappe und des Komponententestprojekts](#BKMK_Create_the_solution_and_the_unit_test_project)  
+ [Sicherstellen, dass die Tests im Test-Explorer ausgeführt werden](#Verify_that_the_tests_run_in_Test_Explorer)  
   
- [Sicherstellen, dass die Tests im Test-Explorer ausgeführt werden](#BKMK_Verify_that_the_tests_run_in_Test_Explorer)  
+ [Hinzufügen des DLL-Projekts zur Projektmappe](#Add_the_DLL_project_to_the_solution)  
   
- [Hinzufügen des DLL-Projekts zur Projektmappe](#BKMK_Add_the_DLL_project_to_the_solution)  
+ [Sichtbarmachen der DLL-Funktionen für den Testcode](#make_the_dll_functions_visible_to_the_test_code)  
   
- [Verknüpfen des Testprojekts mit dem DLL-Projekt](#BKMK_Couple_the_test_project_to_the_dll_project)  
+ [Tests iterativ steigern und erfolgreich abschließen](#Iteratively_augment_the_tests_and_make_them_pass)  
   
- [Tests iterativ steigern und erfolgreich abschließen](#BKMK_Iteratively_augment_the_tests_and_make_them_pass)  
+ [Debuggen eines fehlgeschlagenen Tests](#Debug_a_failing_test)  
   
- [Debuggen eines fehlgeschlagenen Tests](#BKMK_Debug_a_failing_test)  
+ [Umgestalten des Codes, ohne Tests zu ändern](#Refactor_the_code_without_changing_tests)  
   
- [Umgestalten des Codes, ohne Tests zu ändern](#BKMK_Refactor_the_code_without_changing_tests)  
-  
-##  <a name="BKMK_Create_the_solution_and_the_unit_test_project"></a> Erstellen der Projektmappe und des Komponententestprojekts  
+##  <a name="Create_the_solution_and_the_unit_test_project"></a> Erstellen der Projektmappe und des Komponententestprojekts  
   
 1.  Wählen Sie im Menü **Datei** die Option **Neu** aus, und klicken Sie dann auf **Neues Projekt**.  
   
-2.  Erweitern Sie im Dialogfeld „Neues Projekt“ den Eintrag **Installiert**, erweitern Sie **Visual C++**, und klicken Sie auf **Windows Universal**. Klicken Sie dann in der Liste der Projektvorlagen auf **Komponententestbibliothek (Universal Windows)**.  
+2.  Erweitern Sie im Dialogfeld „Neues Projekt“ zunächst den Eintrag **Installiert** und dann **Visual C++**. Wählen Sie anschließend **UWP** aus. Wählen Sie dann aus der Liste der Projektvorlagen **Unit Test Library (UWP apps)** (Komponententestbibliothek (UWP-Apps)) aus.  
   
      ![C&#43;&#43;-Komponententestbibliothek erstellen](../test/media/ute_cpp_windows_unittestlib_create.png "UTE_Cpp_windows_UnitTestLib_Create")  
   
@@ -67,7 +66,7 @@ In diesem Thema wird eine Möglichkeit zum Erstellen von Komponententests für e
   
          Wenn die Tests ausgeführt werden, wird eine Instanz jeder Testklasse erstellt. Die Testmethoden werden in einer nicht vorgegebenen Reihenfolge aufgerufen. Sie können spezielle Methoden definieren, die vor und nach jedem Modul, jeder Klasse oder Methode aufgerufen werden. Weitere Informationen finden Sie unter [Verwenden von Microsoft.VisualStudio.TestTools.CppUnitTestFramework](../test/using-microsoft-visualstudio-testtools-cppunittestframework.md) in der MSDN Library.  
   
-##  <a name="BKMK_Verify_that_the_tests_run_in_Test_Explorer"></a> Sicherstellen, dass die Tests im Test-Explorer ausgeführt werden  
+##  <a name="Verify_that_the_tests_run_in_Test_Explorer"></a> Sicherstellen, dass die Tests im Test-Explorer ausgeführt werden  
   
 1.  Fügen Sie den Testcode ein:  
   
@@ -86,7 +85,7 @@ In diesem Thema wird eine Möglichkeit zum Erstellen von Komponententests für e
   
      ![Test-Explorer](../test/media/ute_cpp_testexplorer_testmethod1.png "UTE_Cpp_TestExplorer_TestMethod1")  
   
-##  <a name="BKMK_Add_the_DLL_project_to_the_solution"></a> Hinzufügen des DLL-Projekts zur Projektmappe  
+##  <a name="Add_the_DLL_project_to_the_solution"></a> Hinzufügen des DLL-Projekts zur Projektmappe  
   
 1.  Wählen Sie im Projektmappen-Explorer den Projektmappennamen aus. Wählen Sie im Kontextmenü **Hinzufügen** und dann **Neues Projekt hinzufügen** aus.  
   
@@ -146,7 +145,7 @@ In diesem Thema wird eine Möglichkeit zum Erstellen von Komponententests für e
   
     ```  
   
-##  <a name="BKMK_Couple_the_test_project_to_the_dll_project"></a> Verknüpfen des Testprojekts mit dem DLL-Projekt  
+##  <a name="make_the_dll_functions_visible_to_the_test_code"></a> Sichtbarmachen der DLL-Funktionen für den Testcode  
   
 1.  Fügen Sie dem Projekt "RooterLibTests" "RooterLib" hinzu.  
   
@@ -199,7 +198,7 @@ In diesem Thema wird eine Möglichkeit zum Erstellen von Komponententests für e
   
  Sie haben den Test und die Codeprojekte eingerichtet und überprüft, dass Sie Tests ausführen können, die Funktionen im Codeprojekt ausführen. Jetzt können Sie beginnen, echte Tests und Code zu schreiben.  
   
-##  <a name="BKMK_Iteratively_augment_the_tests_and_make_them_pass"></a> Die Tests iterativ steigern und erfolgreich abschließen  
+##  <a name="Iteratively_augment_the_tests_and_make_them_pass"></a> Die Tests iterativ steigern und erfolgreich abschließen  
   
 1.  Fügen Sie einen neuen Test hinzu:  
   
@@ -260,7 +259,7 @@ In diesem Thema wird eine Möglichkeit zum Erstellen von Komponententests für e
 > [!TIP]
 >  Entwickeln Sie Code, indem Sie währenddessen Tests hinzufügen. Stellen Sie sicher, dass alle Tests nach jeder Iteration erfolgreich sind.  
   
-##  <a name="BKMK_Debug_a_failing_test"></a> Einen nicht bestandenen Test debuggen  
+##  <a name="Debug_a_failing_test"></a> Einen nicht bestandenen Test debuggen  
   
 1.  Fügen Sie einen anderen Test zu **unittest1.cpp** hinzu:  
   
@@ -330,7 +329,7 @@ In diesem Thema wird eine Möglichkeit zum Erstellen von Komponententests für e
   
  ![Alle Tests bestanden](../test/media/ute_ult_alltestspass.png "UTE_ULT_AllTestsPass")  
   
-##  <a name="BKMK_Refactor_the_code_without_changing_tests"></a> Umgestalten des Codes, ohne Tests zu ändern  
+##  <a name="Refactor_the_code_without_changing_tests"></a> Umgestalten des Codes, ohne Tests zu ändern  
   
 1.  Vereinfachen Sie die zentrale Berechnung in der `SquareRoot`-Funktion:  
   

@@ -10,11 +10,11 @@ ms.topic: article
 ms.technology: visual studio
 ms.devlang: multiple
 ms.service: multiple
-ms.openlocfilehash: 6dd677f04396e3473f1de054393de66a57681192
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.openlocfilehash: 90fcbd7e07ee4f18682d5cf914794982007088d0
+ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 11/29/2017
 ---
 # <a name="visual-studio-tools-for-ai"></a>Visual Studio-Tools für KI
 
@@ -31,6 +31,8 @@ Verwenden Sie die Produktivitätsfeatures von Visual Studio, um KI-Innovationen 
 Visual Studio-Tools für KI ist in Azure Machine Learning enthalten, um das Durchsuchen eines Katalogs mit Beispielexperimenten mithilfe von CNTK, TensorFlow, MMLSpark usw. zu erleichtern. 
 
 ![Beispiele im Explorer](media\about\gallery.png)
+
+[Erfahren Sie mehr über das Erstellen von Projekten aus dem Beispielkatalog](create-project-gallery.md)
 
 ## <a name="scale-out-deep-learning-model-training-andor-inferencing-to-the-cloud"></a>Skalieren des Deep Learning-Modelltrainings und/oder Auslagern in die Cloud
 Diese Erweiterung vereinfacht das Trainieren von Modellen auf Ihrem lokalen Computer. Sie können auch Aufträge an die Cloud übermitteln, indem Sie die Integration mit Azure Machine Learning verwenden. Sie können Aufträge an verschiedene Computeziele wie Spark-Cluster, virtuelle Azure-GPU-Computer usw. übermitteln.  

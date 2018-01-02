@@ -5,15 +5,15 @@ Ms.author: jaunger
 Manager: evelynp
 Ms.date: 10/3/2017
 Ms.topic: Get-Started-Article
-Description: "Hier erfahren Sie, wie Sie Ihr Visual Studio-Abonnement bestmöglich nutzen."
+Description: Learn how to get the most out of your Visual Studio subscriptions.
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 640dfcd7a337606982b97f6631cb836a2bffb16c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 58dfc6e6cce60e28c15d6b7de80265f6ec37f8f5
+ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="managing-subscriptions"></a>Verwalten von Abonnements
 ## <a name="signing-in-to-the-portal"></a>Anmelden beim Portal
@@ -21,7 +21,7 @@ Willkommen bei Ihrem Visual Studio-Abonnement!  Mit Ihrem Abonnement erhalten Si
 ### <a name="first-time-access"></a>Erstmaliger Zugriff
 Welche Schritte Sie ausführen müssen, um Ihr Abonnement erstmalig zu nutzen, hängt davon ab, wie Sie Ihr Abonnement abgerufen haben.  
 #### <a name="microsoft-store"></a>Microsoft Store
-Wenn Sie über den Microsoft Store ein Visual Studio-Abonnement erworben haben, können die Aktivierungsschritte von der **Bestätigungsseite** aus oder über die **Bestätigungs-E-Mail** der Zahlung initiiert werden.  
+Wenn Sie über Microsoft Store ein Visual Studio-Abonnement erworben haben, können die Aktivierungsschritte von der **Bestätigungsseite** oder **Bestätigungs-E-Mail** der Zahlung aus initiiert werden.  
 1.  Klicken Sie auf der „Bestätigungsseite“ oder in der „Bestätigungs-E-Mail“ auf **Klicken Sie hier, um sich anzumelden**.  Sie werden auf https://my.visualstudio.com/subscriptions/activate umgeleitet.
 2.  Geben Sie die E-Mail-Adresse ein, mit der Sie sich beim Abonnentenportal anmelden, und klicken Sie auf **Fortfahren**.
 3.  Abhängig von der eingegebenen E-Mail-Adresse werden Sie auf die Anmeldeseite des Microsoft-Kontos oder auf die Anmeldeseite Ihres Unternehmens/Ihrer Schule umgeleitet.
@@ -31,25 +31,25 @@ Wenn Sie über den Microsoft Store ein Visual Studio-Abonnement erworben haben, 
 #### <a name="workschool-accounts"></a>Geschäfts-/Schulkonten
 Wenn Ihr Abonnement über Ihre Arbeit/Schule bereitgestellt wurde, haben Sie eine Willkommens-E-Mail erhalten.  
 1.  Rufen Sie das [Abonnentenportal](https://my.visualstudio.com/) auf
-2.  Geben Sie die E-Mail-Adresse ein, die dem neuen Visual Studio-Abonnement zugewiesen wurde. Diese Adresse wird auch im **Begrüßungsbrief** des Abonnenten angegeben. Überprüfen Sie, ob der **Begrüßungsbrief** in einen Junk-E-Mail-Ordner verschoben wurde.
+2.  Geben Sie die E-Mail-Adresse ein, die dem neuen Visual Studio-Abonnement zugewiesen wurde. Diese Adresse wird auch im **Begrüßungsbrief** des Abonnenten angegeben. Überprüfen Sie den Junk-E-Mail-Ordner, wenn Sie die Willkommens-E-Mail nicht empfangen haben.
 3.  Klicken Sie auf **Fortfahren**
-4.  Sie werden auf die Anmeldeseite des Unternehmens umgeleitet.
+4.  Sie werden auf die Anmeldeseite Ihres Unternehmens umgeleitet.
 5.  Geben Sie Ihr Kennwort ein.
 6.  Klicken Sie auf **Anmelden**.
 
 #### <a name="visual-studio-marketplace"></a>Visual Studio Marketplace 
 Wenn Sie bei Visual Studio Marketplace ein Cloudabonnement für einen Monat oder ein Jahr erworben haben, rufen Sie das [Abonnentenportal](https://my.visualstudio.com/) auf, und melden Sie sich mit dem Microsoft-Konto (Microsoft Account, MSA) an, das Sie beim Erwerb des Abonnements angegeben haben.
 #### <a name="using-a-workschool-account-with-a-microsoft-account-msa"></a>Verwenden eines Geschäfts-/Schulkontos mit einem Microsoft-Konto (Microsoft Account, MSA)
-Wenn Ihre Organisation über ein Azure Active Directory verfügt, Sie jedoch kein Azure Active Directory-Konto haben, müssen Sie möglicherweise die **persönlichen** Einstellungen nutzen, die während des Anmeldeprozesses bereitgestellt werden.
+Wenn Ihre Organisation über Azure Active Directory verfügt, Sie jedoch kein Azure Active Directory-Konto besitzen, müssen Sie möglicherweise die **persönlichen** Optionen nutzen, die während des Anmeldeprozesses bereitgestellt werden.
 1.  Rufen Sie das [Abonnentenportal](https://my.visualstudio.com) auf
 2.  Geben Sie die E-Mail-Adresse ein, die dem neuen Visual Studio-Abonnement zugewiesen wurde. Diese Adresse wird auch im **Begrüßungsbrief** des Abonnenten angegeben.  (Überprüfen Sie, ob die Willkommens-E-Mail in den Junk-E-Mail-Ordner verschoben wurde.)
 3.  Klicken Sie auf **Fortfahren**
-4.  Sie werden auf eine **Entscheidungsseite** umgeleitet.   Wählen Sie **Geschäfts- oder Schulkonto** aus, wenn Ihr Abonnement einem **Geschäfts- oder Schulkonto** zugewiesen wurde, das einem AAD-Mandanten (AAD = Azure Active Directory) zugeordnet ist.  Wählen Sie **Persönlich** aus, wenn das Abonnement einer **geschäftlichen** E-Mail-Adresse zugeordnet ist, aber auch in ein **persönliches** Microsoft-Konto (Microsoft Account, MSA) konvertiert wurde.
+4.  Sie werden auf eine **Entscheidungsseite** umgeleitet.   Wählen Sie **Geschäfts- oder Schulkonto** aus, wenn Ihr Abonnement einem **Geschäfts- oder Schulkonto** zugewiesen wurde, das einem AAD-Mandanten (AAD = Azure Active Directory) zugeordnet ist.  Wählen Sie **Persönlich** aus, wenn das Abonnement einer **geschäftlichen** E-Mail-Adresse zugeordnet ist, aber auch in ein **persönliches** Microsoft-Konto konvertiert wurde.
 5.  Geben Sie Ihr Kennwort ein
 6.  Klicken Sie auf **Anmelden** 
 
 ### <a name="managing-multiple-subscriptions"></a>Verwalten mehrerer Abonnements
-„Mein Portal“ vereint alle Visual Studio-Abonnements und Programme in einer einzelnen verbesserten Portaloberfläche.  Sie können beispielsweise über ein Standardabonnement wie Visual Studio Enterprise verfügen, das Sie über die Arbeit nutzen, und über ein Monatsabonnement von Visual Studio Professional oder eine Mitgliedschaft bei Visual Studio Dev Essentials, das bzw. die Sie privat nutzen. 
+Das Visual Studio-Abonnements-Portal vereint alle Visual Studio-Abonnements und -Programme in einer einzelnen verbesserten Portaloberfläche.  Sie können beispielsweise über ein Standardabonnement wie Visual Studio Enterprise verfügen, das Sie über die Arbeit nutzen, und über ein Monatsabonnement von Visual Studio Professional oder eine Mitgliedschaft bei Visual Studio Dev Essentials, das bzw. die Sie privat nutzen. 
 #### <a name="which-subscription-am-i-using"></a>Welches Abonnement nutze ich?
 Auf der Seite „Vorteile“ wird das genutzte Abonnement sichtbar auf dem blauen Banner angezeigt.  Des Weiteren wird es in der oberen rechten Ecke der Seite angezeigt.
 
@@ -64,9 +64,9 @@ Auf der Seite „Vorteile“ wird das genutzte Abonnement sichtbar auf dem blaue
 #### <a name="if-your-subscription-is-not-visible"></a>Wenn Ihr Abonnement nicht sichtbar ist...
 - Ist es möglicherweise abgelaufen.  Nur aktive Abonnements werden im Abonnentenportal angezeigt.
 - Möglicherweise wurde es einer anderen E-Mail-Adresse zugeordnet. Wenn Sie sich beispielsweise mit der E-Mail-Adresse Ihres Unternehmens oder Ihrer Schule für ein Abonnement von Visual Studio Professional anmelden und Ihrem Microsoft-Konto eine Mitgliedschaft bei Visual Studio Dev Essentials zugeordnet ist, wird Ihnen nur das Abonnement zu der E-Mail-Adresse angezeigt, mit der Sie sich beim Abonnentenportal angemeldet haben.  Sie müssen sich abmelden und anschließend mit der anderen E-Mail-Adresse anmelden, um das andere Abonnement anzeigen zu können.
-- Wenn Ihr Unternehmen Abonnements über eine Volumenlizenz erwirbt, hat der Administrator Ihnen möglicherweise kein Abonnement zugewiesen.  
+- Wenn Ihr Unternehmen Abonnements über eine Volumelizenz erwirbt, hat der Administrator Ihnen möglicherweise kein Abonnement zugewiesen, oder Ihr Abonnement wurde einem anderen Benutzer zugewiesen.  
 
-#### <a name="renewing-my-subscriptions"></a>Verlängern meiner Abonnements
+### <a name="renewing-my-subscriptions"></a>Verlängern meiner Abonnements
 **Standardabonnements**
 - Microsoft Store: Wenn Sie Ihr Abonnement im [Microsoft Store](http://www.microsoft.com/store) erworben haben, können Sie es auch dort verlängern. 
 - Volumenlizenz: Wenn Ihr Unternehmen Abonnements über eine Volumenlizenz erwirbt, sollte sich der Administrator für die Verlängerung Ihres Abonnements an einen Händler wenden.
@@ -81,7 +81,7 @@ Auf der Seite „Vorteile“ wird das genutzte Abonnement sichtbar auf dem blaue
 
 **Visual Studio Dev Essentials**: Dev Essentials ist ein kostenloses Programm, die Mitgliedschaften laufen nicht ab.  
 
-#### <a name="transferring-subscriptions"></a>Übertragen von Abonnements
+### <a name="transferring-subscriptions"></a>Übertragen von Abonnements
 Wenn Sie Ihr Abonnement über die Microsoft Volumenlizenzierung erworben haben und es einem anderen Benutzer im Unternehmen zuweisen möchten, muss der Administrator die Übertragung für Sie durchführen. Im Einzelhandel erworbene Abonnements können an einen anderen Benutzer übertragen werden. Wenden Sie sich hierfür an den Kundendienst.  Ergänzende oder nicht zum Weiterverkauf (Not for Resale, NFR) bestimmte Abonnements können nicht übertragen werden. 
 
 
@@ -91,7 +91,7 @@ Wenn Sie Ihr Abonnement über die Microsoft Volumenlizenzierung erworben haben u
 Sie können die Kontaktinformationen und Einstellungen in Ihrem Profil auf einfache Weise ändern.  
 1.  Klicken Sie in der oberen rechten Ecke des Abonnentenportals auf Ihren Namen.
 2.  Klicken Sie auf die Schaltfläche **Profil bearbeiten**.
-3.  Sie können auf der Registerkarte **Info** Namen, E-Mail-Adresse, Land/Region, Profilbild und Kontakteinstellungen ändern.  Sie können auf der Registerkarte „Einstellungen“ Ihre bevorzugte Sprache, Datums- und Uhrzeitmuster, die Zeitzone und das Design der Benutzeroberfläche auswählen.  
+3.  Sie können auf der Registerkarte **Info** Namen, E-Mail-Adresse, Land/Region, Profilbild und Kontakteinstellungen ändern.  Sie können auf der Registerkarte **Einstellungen** Ihre bevorzugte Sprache, Datums- und Uhrzeitmuster, die Zeitzone und das Design der Benutzeroberfläche auswählen.  
 4.  Klicken Sie auf **Speichern**, wenn Sie die Änderungen abgeschlossen haben. 
 5.  Klicken Sie in Ihrem Browser auf die Schaltfläche **Zurück**, um zur Seite „Vorteile“ zurückzukehren. 
 

@@ -8,11 +8,11 @@ ms.technology: vs-ide-general
 ms.date: 11/08/2017
 ms.topic: article
 helpviewer_keywords: editor
-ms.openlocfilehash: 6fe98cea71bb49ea3e705a22cb696184966ea0ed
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.openlocfilehash: 6650faa7ed519c6237b459ac4278b6e90d7a5bc6
+ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="visual-studio-2017-for-net-developers"></a>Visual Studio 2017 für .NET-Entwickler
 
@@ -36,7 +36,7 @@ Sie können mühelos im .NET-Code navigieren, indem Sie mit der Tastenkombinatio
 
 Visual Studio verfügt über Codediagnose in Echtzeit. Durch das Erkennen von Fehlern und potenziell problematischem Code unterstützt Visual Studio Sie dabei, die Qualität Ihres Codes zu verbessern. Sie können schnelle Aktionen (**STRG+.**) verwenden, um erkannte Probleme in Ihrem Dokument, Projekt oder in Ihrer Projektmappe zu beheben. Aktivieren Sie *full-solution analysis* (Vollständige Analyse der Projektmappe), um sämtliche Probleme Ihrer gesamten Projektmappe zu identifizieren, auch wenn die entsprechenden Dateien im Editor gerade nicht geöffnet sind. 
 
-Darüber hinaus können Sie mithilfe von Codevorschlägen bewährte Methoden zum Verwenden von Stubs im Code oder Generieren von Code, zum Umgestalten von Code und zum Übernehmen neuer Sprachfeatures mit der Tastenkombination **STRG+.** erlernen.
+Darüber hinaus können Sie Codevorschläge verwenden, um bewährte Methoden sowie das Verwenden von Stubs, das Generieren und Umgestalten von Code und das Übernehmen neuer Sprachfeatures mit der Tastenkombination **STRG+.** zu erlernen. .
 
 ![Schnellkorrekturen und Refactorings über das Glühbirnenmenü anwenden](../ide/media/VSIDE_Productivity_CodeAnalysis.png "VSIDE_Productivity_CodeAnalysis")  
 
@@ -51,7 +51,7 @@ Sie können Ihre Komponententests auf Basis der Testframeworks MSTest, NUnit und
 [Dokumentation: portable, benutzerdefinierte Editor-Optionen](create-portable-custom-editor-options.md)  
 [Dokumentation: EditorConfig-Codeformateinstellungen für .NET](editorconfig-code-style-settings-reference.md)
 
-Visual Studio ermöglicht das Konfigurieren von Codekonventionen, erkennt Verstöße gegen Programmierstile und ermöglicht über die Tastenkombination **STRG+.** Schnellkorrekturen zum Beheben von Problemen bezüglich des Programmierstils. Mithilfe von *EditorConfig* können Sie die Konventionen Ihres Teams in puncto Formatieren, Benennen und Programmierstil für ein Repository konfigurieren und dort zwingend vorgeben. Ebenso können Sie damit das Überschreiben von Werten auf Projekt- und Dateiebene erlauben. 
+Visual Studio ermöglicht das Konfigurieren von Codierungskonventionen, erkennt Verstöße gegen den Codierungsstil und ermöglicht Schnellkorrekturen zum Beheben von Stilproblemen über die Tastenkombination **STRG+.** . Mithilfe von *EditorConfig* können Sie die Konventionen Ihres Teams in puncto Formatieren, Benennen und Programmierstil für ein Repository konfigurieren und dort zwingend vorgeben. Ebenso können Sie damit das Überschreiben von Werten auf Projekt- und Dateiebene erlauben. 
 
 ![Konfigurieren und Erzwingen von Codierungskonventionen mit EditorConfig](../ide/media/VSIDE_Productivity_CodeStyle.png "VSIDE_Productivity_CodeStyle")  
 
@@ -69,6 +69,8 @@ Wenn Ihr Dienst in Azure ausgeführt wird, verwenden Sie *Momentaufnahmendebuggi
 
 Verwenden Sie Git oder TFVC zum Speichern und Aktualisieren Ihres Codes in Visual Studio. Im Editor können Sie mit Team Explorer lokale Änderungen strukturieren und die Statusleiste verwenden, um ausstehende Commits und Änderungen nachzuverfolgen. Mit der Erweiterung [Continuous Delivery Tools for Visual Studio](https://marketplace.visualstudio.com/items?itemName=VSIDEDevOpsMSFT.ContinuousDeliveryToolsforVisualStudio) können Sie in Visual Studio Continuous Integration und Continuous Delivery einrichten, um den agilen Entwicklungsworkflow einzuführen.
 
+![Quellcodeverwaltung in Visual Studio](../ide/media/VSIDE_Productivity_SourceControl.png "VSIDE_Productivity_SourceControl")
+
 ## <a name="extensibility"></a>Erweiterungen
 [Dokumentation: Erweitern von Visual Studio](../extensibility/index.md)
 
@@ -79,8 +81,10 @@ Visual Studio verfügt über eine umfangreiche Anzahl an Erweiterungen, die Sie 
 ## <a name="popular-extensions--shortcuts"></a>Beliebte Erweiterungen und Tastenkombinationen
 Wenn Sie eine andere IDE oder Kodierungsumgebung gewohnt sind, kann es hilfreich sein, eine der folgenden Erweiterungen zu installieren:
 - [Emacs-Emulation](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.Emacsemulation)
-- [HotKeys für Visual Studio (IntelliJ)](https://marketplace.visualstudio.com/items?itemName=JustinClareburtMSFT.HotKeys2017-KeyboardShortcuts)
+- [HotKeys für Visual Studio (ReSharper/IntelliJ)](https://marketplace.visualstudio.com/items?itemName=JustinClareburtMSFT.HotKeys2017-KeyboardShortcuts)
 - [VSVim](https://marketplace.visualstudio.com/items?itemName=JaredParMSFT.VsVim)
+
+Im Folgenden finden Sie beliebte Tastenkombinationen für Visual Studio. Beachten Sie, dass einige Erweiterungen die Standardtastenzuordnungen von Visual Studio aufheben. Sie müssen die Tastenzuordnungen wiederherstellen, um die im Folgenden aufgeführten Befehle zu verwenden. Navigieren Sie zu **Extras > Einstellungen importieren und exportieren > Alle Einstellungen zurücksetzen**, um die Standardeinstellungen für die Tastenkombinationen in Visual Studio wiederherzustellen.
 
 | Tastenkombination (Alle Profile) | Befehl | Beschreibung |
 |-|-|-| 
@@ -93,6 +97,6 @@ Wenn Sie eine andere IDE oder Kodierungsumgebung gewohnt sind, kann es hilfreich
 | **F5** | Debugging starten | Debugging der Anwendung starten |
 | **STRG+F5** | Ohne Debuggen ausführen | Anwendung lokal ausführen, ohne Debuggen |
 | **STRG+K, D** (Standardprofil) oder **STRG+E, D** (C# Profile) | Dokument formatieren | Bereinigt Formatierungsverstöße in Ihrer Datei anhand Ihrer Einstellungen für Zeilenumbruch, Abstand und Einzug |
-| **STRG+\,E** (Standardprofil) oder **STRG+W, E** (C# Profile) | Fehlerliste anzeigen | Alle Fehler in Ihrem Dokument, Projekt oder Ihrer Projektmappe ansehen |
+| **STRG+\\,E** (Standardprofil) oder **STRG+W, E** (C#-Profil) | Fehlerliste anzeigen | Alle Fehler in Ihrem Dokument, Projekt oder Ihrer Projektmappe ansehen |
 
 

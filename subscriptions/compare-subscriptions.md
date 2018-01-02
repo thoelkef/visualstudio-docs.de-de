@@ -5,15 +5,15 @@ Ms.author: jaunger
 Manager: evelynp
 Ms.date: 10/3/2017
 Ms.topic: Get-Started-Article
-Description: Vergleichen Sie die Funktionen und Vorteile von Visual Studio Standard mit Cloudabonnements.
+Description: Compare features and benefits of Visual Studio standard and cloud subscriptions
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: c231095c7d96c44f35752aa0a1c233599c43b420
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 0f820a0ae85bf4661f2c8a3ce244469b95c9a136
+ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="compare-visual-studio-subscription-options"></a>Vergleichen der Abonnementoptionen für Visual Studio
 
@@ -24,16 +24,16 @@ Egal ob Sie Student oder ein alleine arbeitender Entwickler sind, ob Sie zu eine
 
 **Visual Studio Enterprise:** Egal ob für ein Smartphone, einen Desktop oder die Cloud – Visual Studio erleichtert Ihnen das Erstellen von Software für PCs und Macs. Abonnements umfassen praktisch die gesamte Microsoft Software, Azure-Gutschriften, Pluralsight-Kurse, technischen Support und vieles mehr.
 
-**Visual Studio Professional:** Professionelle Entwicklungstools und -dienste, mit denen sich jede App für jede Plattform entwickeln lässt. Durch dieses Abonnement wird die Zusammenarbeit vereinfacht und die Produktivität erhöht. Dabei macht es keinen Unterschied, ob Sie alleine oder in einem kleinen Team arbeiten.
+**Visual Studio Professional:** Erhalten Sie professionelle Entwicklungstools und -dienste, mit denen sich jede beliebige App für jede Plattform entwickeln lässt. Durch dieses Abonnement wird die Zusammenarbeit vereinfacht und die Produktivität erhöht. Dabei macht es keinen Unterschied, ob Sie alleine oder in einem kleinen Team arbeiten.
 
-**Visual Studio Test Professional:** Fördern Sie die Qualität und Zusammenarbeit während des Entwicklungsprozesses mit umfassenden Testtools und den Vorteilen des Standardabonnements, zu denen Microsoft-Software, monatliche Azure-Gutschriften, fachliche Schulungen, professioneller Support und vieles mehr zählen.
+**Visual Studio Test Professional:** Fördern Sie die Qualität und Zusammenarbeit während des Entwicklungsprozesses mit umfassenden Testtools und den Vorteilen des Standardabonnements, zu denen u.a. Microsoft-Software, monatliche Azure-Gutschriften, fachliche Schulungen und professioneller Support zählen.
 
 **MSDN Platforms:** Umfasst die meisten Ressourcen für den IT-Support und für den Betrieb zuständige Mitarbeiter sowie Nicht-.NET-Entwickler zum anwendungs- und geräteübergreifenden Testen, Bereitstellen und Verwalten von Anwendungen.
 
 **Visual Studio Dev Essentials:** Bietet alle Mittel, die Sie zum Erstellen und Bereitstellen Ihrer App auf jeder beliebigen Plattformen benötigen. Dank hochmoderner Tools, der Leistung der Cloud, Schulungen und Support ist dies unser bislang umfassendstes kostenloses Angebot für Entwickler.  
 
 ## <a name="subscription-types"></a>Abonnementtypen
-**Standardabonnements:** Über Händler, die Microsoft-Volumenlizenzierungsverträge anbieten, oder online über den Microsoft Store erhältlich.  Diese Abonnements enthalten zeitlich unbefristete Lizenzen für Visual Studio. 
+**Standardabonnements:** Über Händler, die Microsoft-Volumenlizenzierungsverträge anbieten, oder online über den Microsoft Store erhältlich.  Standardabonnements enthalten zeitlich unbefristete Lizenzen für Visual Studio. 
 
 **Cloudabonnements:** Über Cloudabonnements haben Sie Zugriff auf Visual Studio, Visual Studio Team Services und andere Abonnementvorteile, ohne langfristige Verträge abschließen zu müssen.  Schließen Sie das Abonnement monatlich oder für ein ganzes Jahr ab. Die Abrechnung erfolgt über Ihr Microsoft Azure-Abonnement. 
 
@@ -45,7 +45,7 @@ Egal ob Sie Student oder ein alleine arbeitender Entwickler sind, ob Sie zu eine
 - [Microsoft Certified Trainer:](https://www.microsoft.com/en-us/learning/mct-certification.aspx) Für die Bereitstellung von exklusivem Zugriff auf Ressourcen, mit denen Sie Ihre Fachkenntnisse und Schulungskompetenzen ausbauen können.
 
 ## <a name="visual-studio-licensing"></a>Visual Studio-Lizenzierung
-Visual Studio-Abonnements (zuvor als MSDN-Abonnements bezeichnet) werden für jeden Benutzer einzeln lizenziert. Der Benutzer kann seine Programme mithilfe der Software auf einer beliebigen Anzahl von Geräten entwerfen, entwickeln, testen oder vorführen. Ein Visual Studio-Abonnement ermöglicht lizenzierten Benutzern auch das Bewerten der Software und das Simulieren von Kundenumgebungen, um Probleme der Programme zu untersuchen.
+Visual Studio-Abonnements werden pro Benutzer lizenziert. Der Benutzer kann seine Programme mithilfe der Software auf einer beliebigen Anzahl von Geräten entwerfen, entwickeln, testen oder vorführen. Ein Visual Studio-Abonnement ermöglicht lizenzierten Benutzern auch das Bewerten der Software und das Simulieren von Kundenumgebungen, um Probleme der Programme zu untersuchen.
 
 Visual Studio-Abonnenten sind auch berechtigt, die abonnierte Software (außer Windows und Windows Server) auf Microsoft Azure Virtual Machines auszuführen, wodurch eine höhere Flexibilität beim Entwickeln und Testen ihrer Anwendungen erzielt werden kann. Die Lizenzierungskosten für Windows Server oder Windows sind im Tarif für Windows Virtual Machine enthalten.
 
@@ -58,7 +58,7 @@ Eine Visual Studio-Abonnementlizenz bietet Benutzern außerdem die Möglichkeit,
 ## <a name="additional-information"></a>Zusätzliche Informationen
 [Download the Visual Studio licensing white paper (Herunterladen des Whitepapers zur Lizenzierung von Visual Studio)](https://www.microsoft.com/downloads/details.aspx?displaylang=en&FamilyID=2b1504e6-0bf1-46da-be0e-85cc792c6b9d)
 
-[Compare subscription options and pricing (Vergleichen von Abonnementoptionen und Preisen)](https://www.visualstudio.com/pricing)
+[Compare subscription options and pricing (Vergleichen von Abonnementoptionen und Preisen)](https://www.visualstudio.com/vs/pricing)
 
 [Compare Visual Studio IDE features (Vergleichen von Visual Studio-IDE-Funktionen)](https://www.visualstudio.com/vs/compare/)
 

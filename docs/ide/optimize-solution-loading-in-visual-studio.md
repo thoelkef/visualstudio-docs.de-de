@@ -1,32 +1,22 @@
 ---
-title: Optimieren des Ladens von Projektmappen in Visual Studio | Microsoft-Dokumentation
-ms.custom: 
-ms.date: 08/31/2017
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- startup time [Visual Studio]
-- optimizing startup time [Visual Studio]
-- speed up start time [Visual Studio]
-ms.assetid: 84989983-84bc-4f81-97a8-2131e3a25138
-caps.latest.revision: "4"
-author: gewarren
-ms.author: gewarren
-manager: ghogen
-f1_keywords: vs.performancecenter
-ms.technology: vs-ide-general
-ms.openlocfilehash: 2102fc026b566c89108f0d74dcf604020653e358
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+redirect_url: /visualstudio/ide/optimize-visual-studio-startup-time/
+ms.openlocfilehash: 6ba351d5b395caaddd12021b09f8792cd19b2905
+ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 11/15/2017
+---
+title: "Optimieren des Ladens von Projektmappen in Visual Studio | Microsoft-Dokumentation" ms.custom: "" ms.date: 08/31/2017 ms.reviewer: "" ms.suite: "" ms.tgt_pltfrm: "" ms.topic: "article" helpviewer_keywords: 
+  - "startup time [Visual Studio]"
+  - "optimizing startup time [Visual Studio]"
+  - "speed up start time [Visual Studio]" ms.assetid: 84989983-84bc-4f81-97a8-2131e3a25138 caps.latest.revision: 4 author: "gewarren" ms.author: "gewarren" manager: ghogen f1_keywords: 
+  - "vs.performancecenter" ms.technology: 
+  - "vs-ide-general"
 ---
 # <a name="optimize-solution-loading-in-visual-studio"></a>Optimieren des Ladens von Projektmappen in Visual Studio
 Viele Projektmappen enthalten eine große Anzahl von Projekten. Dies hat Auswirkungen auf die Zeit, die für das Laden dieser Projektmappen benötigt wird. In Teamumgebungen arbeiten Entwickler jedoch in der Regel an einer anderen Teilmenge dieser Projekte und müssen nicht alle einzelnen Projekte laden.
 
-Visual Studio 2017 unterstützt den **Lightweight-Ladevorgang für Projektmappen**. Wenn der Lightweight-Lademodus für Projektmappen aktiviert ist, lädt Visual Studio 2017 eine kleine Teilmenge von Projekten, statt alle Projekte in eine große Projektmappe zu laden. Die meisten der häufig verwendeten IDE-Features werden im Lightweight-Lademodus für Projektmappen ausgeführt. Dies bietet Ihnen die Möglichkeit zum Erstellen, Suchen und Debuggen in der gesamten Projektmappe. (Das nicht unterstützte Hauptfeature im Lightweight-Lademodus für Projektmappen ist „Bearbeiten und Fortfahren“).
+Visual Studio 2017 unterstützt den **Lightweight-Ladevorgang für Projektmappen**. Wenn der Lightweight-Lademodus für Projektmappen aktiviert ist, lädt Visual Studio 2017 eine kleine Teilmenge von Projekten, statt alle Projekte in eine große Projektmappe zu laden. Die meisten der häufig verwendeten IDE-Features werden im Lightweight-Lademodus für Projektmappen ausgeführt. Dies bietet Ihnen die Möglichkeit zum Erstellen, Suchen und Debuggen in der gesamten Projektmappe. (Das nicht unterstützte Hauptfeature im Lightweight-Lademodus für Projektmappen ist „Bearbeiten und Fortfahren“.)  
 
 > [!NOTE]
 > Dieser Inhalt gilt für Visual Studio 2017 Update 3
@@ -54,16 +44,13 @@ Sie können den Lightweight-Ladevorgang für Projektmappen für alle Projektmapp
 
 ## <a name="how-does-lightweight-solution-load-work-behind-the-scenes"></a>Wie funktioniert der Lightweight-Ladevorgang für Projektmappen im Hintergrund?
 
-Wenn Sie Ihre Projektmappe laden, merkt sich Visual Studio, welche Projekt Sie vorher geöffnet hatten, und lädt nur diese Projekte. Alle anderen Projekte sind im Projektmappen-Explorer sichtbar, werden aber nicht geladen. Sobald Sie ein Projekt erweitern oder mit der rechten Maustaste auf ein Projekt klicken, lädt Visual Studio dieses Projekt automatisch. Für das automatische Laden von Projekten wird in der Regel weniger als eine Sekunde benötigt, es kann jedoch bei einigen Projekten länger dauern.
-Visual Studio aktiviert jedoch IDE-Features wie das Suchen, Debuggen, Erstellen und die Quellcodeverwaltung, die projektmappenübergreifend ausgeführt werden. Sie können beispielsweise eine gesamte Projektmappe durchsuchen, auch wenn nur einige Projekte im Lightweight-Lademodus für Projektmappen geladen werden. 
+Wenn Sie Ihre Projektmappe laden, merkt sich Visual Studio, welche Projekt Sie vorher geöffnet hatten, und lädt nur diese Projekte. Alle anderen Projekte sind im Projektmappen-Explorer sichtbar, werden aber nicht geladen. Sobald Sie ein Projekt erweitern oder mit der rechten Maustaste auf ein Projekt klicken, lädt Visual Studio dieses Projekt automatisch. Für das automatische Laden von Projekten wird in der Regel weniger als eine Sekunde benötigt, es kann jedoch bei einigen Projekten länger dauern. Visual Studio aktiviert jedoch IDE-Features wie das Suchen, Debuggen, Erstellen und die Quellcodeverwaltung, die projektmappenübergreifend ausgeführt werden. Sie können beispielsweise eine gesamte Projektmappe durchsuchen, auch wenn nur einige Projekte im Lightweight-Lademodus für Projektmappen geladen werden. 
 
 Wenn Sie weitere Projekte erweitern, merkt sich Visual Studio die Liste der erweiterten Projekte. Wenn eine Projektmappe erneut geöffnet wird, lädt Visual Studio automatisch Projekte, die Sie zuvor erweitert haben.
 
 ## <a name="visual-studio-prompts-developers-likely-to-see-significant-performance-gains"></a>Visual Studio fordert Entwickler, bei denen deutliche Leistungssteigerungen erzielt werden können, dazu auf, den LSL-Modus auszutesten.
 
 Bei der Visual Studio-Telemetrie profitieren große Projektmappen mit über 30 Projekten erheblich von dem LSL-Modus. Folglich werden Entwickler mit großen Projektmappen dazu aufgefordert, den LSL-Modus auszutesten. Die meisten Entwickler, die die Funktion „Lightweight-Ladevorgang für Projektmappen“ zum ersten Mal austesten, verwenden diese am Ende regelmäßig. 
-
-Die Visual Studio-Nutzungstelemetrie wird zur Verbesserung von Heuristiken ständig überprüft, damit der LSL-Modus Entwicklern angeboten werden kann, die am meisten davon profitieren würden. 
 
 ## <a name="visual-studio-makes-recommendations-to-turn-on-lightweight-solution-load-based-on-heuristics"></a>Visual Studio empfiehlt, die Funktion „Lightweight-Ladevorgang für Projektmappen“ basierend auf Heuristiken zu aktivieren.
 
@@ -131,4 +118,4 @@ Es gibt einige Szenarios, die im Lightweight-Lademodus möglicherweise nicht aus
 Wir freuen uns über Innovationen für Entwickler zur Optimierung der Leistung bei der Ladezeit von Projektmappen. Da es sich hierbei um ein neues Feature handelt, werden wir uns aktiv Kundenfeedback ansehen und bekannte Probleme beheben. Wir freuen uns auf Ihr Feedback! Sie können dem Team für die Optimierung des Ladens von Visual Studio-Projektmappen unter lslsupport@microsoft.com eine E-Mail senden.
 
 ## <a name="see-also"></a>Siehe auch
-[Visual Studio Performance Tips and Tricks (Tipps und Tricks zur Leistungssteigerung für Visual Studio)](../ide/visual-studio-performance-tips-and-tricks.md)
+[Visual Studio Performance Tips and Tricks (Tipps und Tricks zur Leistungssteigerung für Visual Studio)](../ide/visual-studio-performance-tips-and-tricks.md)  

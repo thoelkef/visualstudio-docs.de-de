@@ -11,11 +11,11 @@ author: TerryGLee
 ms.author: tglee
 manager: ghogen
 ms.technology: vs-acquisition
-ms.openlocfilehash: aec5948ed985b6ff2abde47a48198cf1a67c4337
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.openlocfilehash: 283fec9bcaa4f678f30f3a0eb0dda667146b03b9
+ms.sourcegitcommit: 2c7f48ad6073a81fa927568793633f26cc1f0b15
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 11/17/2017
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2017"></a>Melden eines Problems mit Visual Studio 2017
 Wenn ein Problem mit Visual Studio auftritt, möchten wir dies erfahren. So melden Sie das Problem, damit wir eine Diagnose durchführen und uns um die Behebung kümmern können.  
@@ -65,6 +65,12 @@ Ablaufverfolgungs- und Heap-Abbilddateien sind nützlich für die Diagnose von P
 ## <a name="submit-the-report"></a>Senden Sie den Bericht  
 ###  <a name="submit_the_report"></a>  
  Klicken Sie auf die Schaltfläche **Senden**, um den Bericht zusammen mit allen Bildern, Ablaufverfolgungs- und Speicherabbilddateien zu senden. (Wenn die Schaltfläche **Senden** grau dargestellt ist, überprüfen Sie, ob Sie einen Titel und eine Beschreibung für den Bericht eingegeben haben.)  
+
+## <a name="alternate-reporting"></a>Alternative Berichterstellung
+###  <a name="alternate_reporting"></a>  
+ Wenn Sie die Installation von Visual Studio nicht abschließen oder nicht auf das Feedbacktool in Visual Studio zugreifen können, ist das Feedbacktool auch im Visual Studio-Installer verfügbar. Klicken Sie auf das Feedbacksymbol in der oberen rechten Ecke des Visual Studio-Installers, und befolgen Sie anschließend die in diesem Artikel beschriebenen Schritte.
+
+ ![Sie können zur Schaltfläche „Feedback geben“ im Visual Studio-Installer navigieren, um das Feedbacktool zu öffnen](../install/media/report-a-problem.png)
 
 ## <a name="see-also"></a>Siehe auch  
  [Sprechen Sie mit uns](../ide/talk-to-us.md)

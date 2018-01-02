@@ -1,5 +1,5 @@
 ---
-title: "Tipps und Tricks für Visual Studio | Microsoft-Dokumentation"
+title: Tastenkombinationen in Visual Studio | Microsoft-Dokumentation
 ms.custom: 
 ms.date: 06/21/2017
 ms.reviewer: 
@@ -7,21 +7,20 @@ ms.suite:
 ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 20489db9-7441-4f8b-97de-c72070d569b1
-caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 40172defbd56f31de9aedbb4cc422c10d1a68dfd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 8ba4284fa53447a1444040a903c915be4bfdf728
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="tips-and-tricks-for-visual-studio"></a>Tipps und Tricks für Visual Studio
-Sie können in [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)] einfacher navigieren, indem Sie die Tastenkombinationen aus diesem Thema verwenden. Dieses Thema zeigt nur eine Teilmenge der verfügbaren Tastenkombinationen. Eine vollständige Liste finden Sie unter [Standardtastenkombinationen in Visual Studio](../ide/default-keyboard-shortcuts-in-visual-studio.md). Informationen über die Optimierung der Barrierefreiheit von Visual Studio finden Sie unter [Tipps und Tricks zur Barrierefreiheit](../ide/reference/accessibility-tips-and-tricks.md).  
 
-##  <a name="BKMK_WindowMgmt"></a> Fensterverwaltung  
+Sie können in Visual Studio einfacher navigieren, indem Sie die Tastenkombinationen aus diesem Artikel verwenden. Dieses Thema zeigt nur eine Teilmenge der verfügbaren Tastenkombinationen. Eine vollständige Liste finden Sie unter [Standardtastenkombinationen in Visual Studio](../ide/default-keyboard-shortcuts-in-visual-studio.md). Informationen über die Optimierung der Barrierefreiheit von Visual Studio finden Sie unter [Tipps und Tricks zur Barrierefreiheit](../ide/reference/accessibility-tips-and-tricks.md).
+
+##  <a name="BKMK_WindowMgmt"></a> Fensterverwaltung
 
 |||  
 |-|-|  
@@ -32,7 +31,7 @@ Sie können in [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)] ei
 |Anzeigen der Liste der geöffneten Dateien|STRG+ALT+BILD-AB|  
 |Anzeigen aller unverankerten Fenster|Strg+Umschalt+M|  
 
-##  <a name="BKMK_WindowShortcuts"></a> Tastenkombinationen für Fenster  
+##  <a name="BKMK_WindowShortcuts"></a> Tastenkombinationen für Fenster
 
 |||  
 |-|-|  
@@ -42,7 +41,7 @@ Sie können in [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)] ei
 |Starten einer neuen Instanz|WINDOWS-TASTE+UMSCHALT+N|  
 |Wechseln zwischen Fenstern|WINDOWS-TASTE+N|  
 
-##  <a name="BKMK_Search"></a> Suche in Visual Studio  
+##  <a name="BKMK_Search"></a> Suche in Visual Studio
 
 |||  
 |-|-|  
@@ -52,7 +51,7 @@ Sie können in [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)] ei
 |Eingrenzen der Schnellstart-Ergebnisbereiche|– @opt Optionen<br />– @cmdBefehle<br />– @mruZuletzt verwendet<br />– @docGeöffnete Dokumente|  
 |Suchen in den Tooloptionen|STRG+E|  
 
-##  <a name="BKMK_EditorFind"></a> Suchen im Editor  
+##  <a name="BKMK_EditorFind"></a> Suche im Editor
 
 |||  
 |-|-|  
@@ -67,7 +66,7 @@ Sie können in [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)] ei
 |Suchen in Dateien|STRG+UMSCHALT+F|  
 |In Dateien ersetzen|STRG+UMSCHALT+H|  
 
-##  <a name="BKMK_CodeEditor"></a> Code-Editor  
+##  <a name="BKMK_CodeEditor"></a> Code-Editor
 
 |||  
 |-|-|  
@@ -91,7 +90,7 @@ Sie können in [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)] ei
 |Navigieren zwischen mehreren Peek-Ergebnissen|F8 und UMSCHALT+F8|  
 |Zwischen dem Fenster "Code-Editor" und "Peek-Definition" navigieren|UMSCHALT+ESC|  
 
-##  <a name="BKMK_Toolbars"></a> Symbolleisten  
+##  <a name="BKMK_Toolbars"></a> Symbolleisten
 
 |||  
 |-|-|  
@@ -100,7 +99,7 @@ Sie können in [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)] ei
 |Suchen des Textfeld-Befehlsmodus|Eingeben von „>“|  
 |Erstellen eines neuen Alias|>alias NewAlias-Befehl|  
 
-##  <a name="BKMK_Debugging"></a> Debuggen  
+##  <a name="BKMK_Debugging"></a> Debuggen
 
 |||  
 |-|-|  
@@ -119,12 +118,14 @@ Sie können in [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)] ei
 |Löschen des Direktfenster-Puffers|>cls|  
 |Direktfenster-Druckwert|?varname|  
 
-##  <a name="BKMK_ALM"></a> Anwendungslebenszyklus-Verwaltung  
- Siehe dazu [Tastenkombinationen: Visual Studio Online, TFS-Webportal und Team Explorer](http://msdn.microsoft.com/en-us/35ea128b-7565-4ee3-8266-b9f0d32aecf4).  
+##  <a name="BKMK_ALM"></a> Anwendungslebenszyklus-Verwaltung
 
-## <a name="see-also"></a>Siehe auch  
- [Visual Studio-Blog](http://blogs.msdn.com/b/visualstudio)   
- [Visual Studio Tips and Tricks Blog](http://blogs.msdn.com/b/zainnab)  (Tipps und Tricks für Visual Studio)  
- [Visual Studio Toolbox auf Channel 9](http://channel9.msdn.com/Shows/Visual-Studio-Toolbox)   
- [Visual Studio UserVoice](http://visualstudio.uservoice.com/forums/121579-visual-studio)   
- [Visual Studio-Verbindungsfehler](http://connect.microsoft.com/VisualStudio)
+Siehe dazu [Tastenkombinationen: Visual Studio Online, TFS-Webportal und Team Explorer](http://msdn.microsoft.com/en-us/35ea128b-7565-4ee3-8266-b9f0d32aecf4).  
+
+## <a name="see-also"></a>Siehe auch
+
+[Visual Studio-Blog](http://blogs.msdn.com/b/visualstudio)  
+[Blog mit Tipps und Tricks zu Visual Studio](http://blogs.msdn.com/b/zainnab)  
+[Visual Studio Toolbox auf Channel 9](http://channel9.msdn.com/Shows/Visual-Studio-Toolbox)  
+[Visual Studio-UserVoice](http://visualstudio.uservoice.com/forums/121579-visual-studio)  
+[Visual Studio-Verbindungsfehler](http://connect.microsoft.com/VisualStudio)

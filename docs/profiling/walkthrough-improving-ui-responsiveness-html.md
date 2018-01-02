@@ -22,14 +22,14 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cf4747a1e2c0d9d7c20fe0856becb4cd42d1e847
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.openlocfilehash: 8b7e6a534d1a9c3b665b72f0af8257c0915e7a29
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="walkthrough-improving-ui-responsiveness-html"></a>Exemplarische Vorgehensweise: Verbesserung der Reaktionsfähigkeit der Benutzeroberfläche (HTML)
-Diese exemplarische Vorgehensweise führt Sie durch den Prozess zum Identifizieren und Beheben eines Leistungsproblems mithilfe des [Profilers für die HTML-UI-Reaktionsfähigkeit](../profiling/html-ui-responsiveness.md). Der Profiler ist in Visual Studio für universelle Windows-Apps und UWP-Apps verfügbar, die JavaScript verwenden. In diesem Szenario erstellen Sie eine Leistungstest-App, die DOM-Elemente zu häufig aktualisiert, und Sie verwenden den Profiler, um das Problem zu identifizieren und zu beheben.  
+Diese exemplarische Vorgehensweise führt Sie durch den Prozess zum Identifizieren und Beheben eines Leistungsproblems mithilfe des [Profilers für die HTML-UI-Reaktionsfähigkeit](../profiling/html-ui-responsiveness.md). Der Profiler ist in Visual Studio für universelle Windows-Apps verfügbar, die JavaScript verwenden. In diesem Szenario erstellen Sie eine Leistungstest-App, die DOM-Elemente zu häufig aktualisiert, und Sie verwenden den Profiler, um das Problem zu identifizieren und zu beheben.  
   
 ### <a name="creating-and-running-the-performance-test-app"></a>Erstellen und Ausführen der Leistungstest-App  
   

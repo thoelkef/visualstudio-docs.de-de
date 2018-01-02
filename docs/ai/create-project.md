@@ -1,62 +1,27 @@
----
-title: "Erstellen eines Projekts mit KI-Tools für Visual Studio"
-description: Erstellen eines Projekts mithilfe des Beispiels aus dem Azure Machine Learning-Katalog
-keywords: KI, Visual Studio, Azure Machine Learning
-author: lisawong19
-ms.author: liwong
-manager: routlaw
-ms.date: 11/13/2017
-ms.topic: how to article
-ms.technology: visual studio
-ms.devlang: multiple
-ms.service: multiple
-ms.openlocfilehash: 2d8b5f1d06d31eaba9c75e0f0515b2526fc7efdf
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
-ms.translationtype: HT
-ms.contentlocale: de-DE
-ms.lasthandoff: 11/15/2017
----
-## <a name="create-an-ai-project-from-the-azure-machine-learning-gallery-in-visual-studio"></a>Erstellen eines KI-Projekts aus dem Azure Machine Learning-Katalog in Visual Studio
+# <a name="create-an-ai-project-from-a-template-in-visual-studio"></a>Erstellen eines KI-Projekts aus einer Vorlage in Visual Studio
 
-Azure Machine Learning ist in Visual Studio-Tools für KI enthalten. Sie können diesen Dienst verwenden, um Machine Learning-Aufträge an Remotecomputeziele wie virtuelle Azure-Computer, Spark-Cluster usw. zu übermitteln. Weitere Informationen zu [Azure Machine Learning-Experimentieren](https://docs.microsoft.com/azure/machine-learning/preview/experimentation-service-configuration) 
+[Wenn Sie die Visual Studio-Tools für KI installiert haben](installation.md), können Sie aus einer Vielzahl von Vorlagen ganz einfach ein neues KI-Projekt erstellen.
 
-Wenn Sie die [Visual Studio-Tools für KI](installation.md) installiert haben, lässt sich anhand der Anleitungen im Azure Machine Learning-Beispielkatalog ganz einfach ein neues Python-Projekt erstellen.
+1. Starten Sie Visual Studio.
 
-> ! Azure Machine Learning Workbench muss installiert sein. Weitere Informationen zur Installation finden Sie unter [Schnellstart für die Azure Machine Learning-Installation](https://docs.microsoft.com/azure/machine-learning/preview/quickstart-installation). 
+1. Klicken Sie auf **Datei > Neu > Projekt** (STRG+UMSCHALT+N). Suchen Sie im Dialogfeld **Neues Projekt** nach **AI Tools** (KI-Tools), und wählen Sie die gewünschte Vorlage aus. Daraufhin wird eine kurze Beschreibung des Vorlageninhalts angezeigt. 
 
-1. Starten Sie Visual Studio. Öffnen Sie den **Server-Explorer**, indem Sie das Menü **AI Tools** (KI-Tools) öffnen und auf **Cluster auswählen** klicken.  
+    ![Visual Studio 2017-Dialogfeld „Neues Projekt“ mit Python-Vorlage](media\create-project\new-ai-project.png)
 
-    ![Clusterauswahl](media\create-project\select-cluster.png)
+1. Wählen Sie für diesen Schnellstart die Vorlage **TensorFlow-Anwendung** aus, benennen Sie das Projekt (z.B. „MNIST“), wählen Sie einen Speicherort aus, und klicken Sie auf **OK**. 
 
-1. Melden Sie sich bei Ihrem Azure Machine Learning-Abonnement an, indem Sie mit der rechten Maustaste auf den Knoten **Azure Machine Learning** im Server-Explorer und dann auf **Anmeldung** klicken und die Anweisungen befolgen.
+1. Visual Studio erstellt die Projektdatei (eine `.pyproj`-Datei auf einem Datenträger) wie von der Vorlage beschrieben zusammen mit allen anderen Dateien. Mit der Vorlage „TensorFlow-Anwendung“ enthält das Projekt eine leere Datei, die den gleichen Namen wie Ihr Projekt trägt. Diese Datei ist im Visual Studio-Editor standardmäßig geöffnet.
 
-    ![Anmeldung](media\create-project\azureml-login.png)
- 
-2. Klicken Sie auf **AI Tools > Azure Machine Learning Sample Gallery** (KI-Tools > Azure Machine Learning-Beispielkatalog). 
-    
-    ![Beispielkatalog](media\create-project\gallery.png)
+    ![Das resultierende Projekt, wenn die Python-Anwendungsvorlage verwendet wird](media\create-project\new-tensorflowapp.png)
 
-1. Wählen Sie für diesen Schnellstart das Beispiel „**MNIST mit TensorFlow**“ aus, und klicken Sie auf **Installieren**. Stellen Sie Folgendes bereit: 
-2.
- - **Ressourcengruppe:** die Azure-Ressourcengruppe, in der Ihre Metadaten gespeichert werden
- - **Konto:** das Konto für Azure Machine Learning-Experimentieren
- - **Arbeitsbereich:** der Azure Machine Learning-Arbeitsbereich
- - **Projekttyp:** das Machine Learning-Framework Wählen Sie in diesem Fall **TensorFlow** aus.
- - **Zur Projektmappe hinzufügen:** bestimmt, ob Ihre aktuelle Visual Studio-Projektmappe hinzugefügt oder eine neue Projektmappe erstellt und geöffnet werden soll
- - **Projektpfad:** Speicherort des Codes
- - **Projektname:** Geben Sie **TensorFlowMNIST** ein.
-   
+1. Beachten Sie, dass der Code bereits einige Bibliotheken importiert, z.B. TensorFlow, numpy, sys und os. Zusätzlich wird Ihre Anwendung bereits mit einigen Eingabeargumenten gestartet, um das einfache Wechseln des Speicherorts von Eingabetrainingsdaten, Ausgabemodellen und Protokolldateien zu ermöglichen. Diese Parameter sind nützlich, wenn Sie Ihre Aufträge an mehrere Computekontexte (d.h. verschiedene Verzeichnisse in Ihrem lokalen Entwicklungscomputer, die sich in einer Azure-Dateifreigabe befindet) übermitteln. 
 
-    ![Das resultierende Projekt, wenn die Python-Anwendungsvorlage verwendet wird.](media\create-project\new-AzureSampleProject.png)
+1. Ihr Projekt verfügt zudem über einige Eigenschaften, die erstellt wurden, um das Debuggen Ihrer App zu erleichtern, indem Befehlszeilenargumente direkt an diese Eingabeparameter übergeben werden. Klicken Sie mit der **rechten Maustaste** auf Ihr Projekt, und klicken Sie dann auf **Eigenschaften**. 
 
-1. Visual Studio erstellt die Projektdatei (eine `.pyproj`-Datei auf dem Datenträger) zusammen mit anderen Dateien, die im Beispiel definiert sind. Mit der MNIST-Vorlage enthält das Projekt mehrere Dateien.
+    ![Eigenschaften](media\create-project\project-properties.png)
 
-    ![MNIST](media\create-project\azml-mnist.png)
+1. Klicken Sie auf die Registerkarte **Debuggen**, um die automatisch hinzugefügten Skriptargumente anzuzeigen. Sie können bei Bedarf das Verzeichnis ändern, in dem sich Ihre Eingabedaten befinden und in dem die Ausgabedaten gespeichert werden sollen.
 
-1. Übermitteln Sie den Auftrag an Azure Machine Learning. 
+    ![Eigenschaften](media\create-project\/project-properties_1.png)
 
-    ![MNIST](media\create-project\submit-azml.png)
-
-1. Führen Sie diesen in einem Docker-Container oder auf Ihrem lokalen virtuellen Computer aus.
-
-    ![MNIST](media\create-project\azml-local.png)
+1. Drücken Sie „STRG+F5“, oder klicken Sie im Menü auf **Debuggen > Ohne Debuggen starten**, und führen Sie das Programm aus. Die Ergebnisse werden in einem Konsolenfenster angezeigt.

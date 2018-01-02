@@ -12,14 +12,47 @@ caps.latest.revision: "12"
 author: conceptdev
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 3f5569a6f6d5bb51db61292e3ba12b16dbc201b9
-ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
+ms.openlocfilehash: f33a7f43fdd52103fcd041d1f6502b88677eef1e
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="change-log-visual-studio-tools-for-unity"></a>Änderungsprotokoll (Visual Studio-Tools für Unity)
 Visual Studio-Tools für Unity (Änderungsprotokoll)  
+
+## <a name="3502"></a>3.5.0.2
+ Veröffentlichung: 04.12.2017
+
+### <a name="new-features"></a>Neue Funktionen  
+
+-   **Integration:**  
+
+    -   Unity-Projekte werden jetzt automatisch in Visual Studio neu geladen, wenn Sie ein Unity-Skript hinzufügen oder entfernen.
+
+-   **Debugger:**  
+
+    -   Es wurde eine Option hinzugefügt, zum Verwenden des von Xamarin und Visual Studio für Mac gemeinsam genutzten Mono-Debuggers zum Debuggen des Unity-Editors.
+
+    -   Es wurde Unterstützung für portierbare Debugsymboldateien hinzugefügt.
+
+### <a name="bug-fixes"></a>Fehlerkorrekturen  
+
+-   **Integration:**  
+
+    -   Es wurden Probleme bei der Einrichtung von Abhängigkeiten behoben.
+
+    -   Korrigiert: Das API-Hilfemenü in Unity wird nicht angezeigt.
+    
+-   **Projektgenerierung:**  
+
+    -   Korrigiert: Player-Projekterstellung bei der Arbeit an einem UWP-Spiel mit IL2CPP/.NET 4.6 als Back-End.
+    
+    -   Korrigiert: Eine zusätzliche DLL-Erweiterung wird dem Assemblydateinamen fälschlicherweise hinzugefügt.
+    
+    -   Korrigiert: Statt der globalen Kompatibilitätsebene wird eine projektspezifische API-Kompatibilitätsebene verwendet.
+    
+    -   Erzwingen Sie nicht das Unity-Flag „AllowAttachedDebuggingOfEditor“, da der Standard jetzt TRUE ist.
 
 ## <a name="3402"></a>3.4.0.2
  Veröffentlichung: 19.09.2017
@@ -59,7 +92,7 @@ Visual Studio-Tools für Unity (Änderungsprotokoll)
 
 -   **Projektgenerierung:**  
 
-    -   Die Projektmappengenerierung in Unity 5.5 und vorherigen Versionen wurde korrigiert.
+    -   Korrigiert: Die Visual Studio-Projektmappengenerierung in Unity 5.5 und vorherigen Versionen.
 
 ## <a name="3300"></a>3.3.0.0
  Veröffentlichung: 14.08.2017

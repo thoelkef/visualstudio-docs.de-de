@@ -13,11 +13,11 @@ caps.latest.revision: "1"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9e2422774a9bf588b77aeaff81f8529906b68549
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.openlocfilehash: 4899f59362f623f6ecf92927e8a15ed4762fa367
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="profiling-feature-tour"></a>Tour zur Profilerstellungsfunktion
 
@@ -152,7 +152,7 @@ Hier sehen Sie eine Tabelle, in der die verschiedenen Tools aufgelistet sind, di
 |Leistungstool|Windows-Desktop|Windows Universell/Store|ASP.NET/ASP.NET Core|  
 |----------------------|---------------------|------------------------------|-------------|  
 |[Speicherauslastung](../profiling/memory-usage.md)|ja|ja|ja|  
-|[CPU-Auslastung](../profiling/cpu-usage.md)|ja|ja|ja|  
+|[CPU-Auslastung](../profiling/cpu-usage.md)|ja|ja|Ja (Nein für .NET Core bzw. ASP.NET Core)|  
 |[GPU-Nutzung](../debugger/gpu-usage.md)|ja|ja|nein|  
 |[Anwendungszeitachse](../profiling/application-timeline.md)|ja|ja|nein|  
 |[PerfTips](../profiling/perftips.md)|ja|ja für XAML, nicht für HTML|ja|  

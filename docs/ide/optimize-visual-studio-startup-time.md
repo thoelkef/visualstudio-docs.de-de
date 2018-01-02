@@ -1,7 +1,7 @@
 ---
 title: Optimieren der Leistung von Visual Studio | Microsoft-Dokumentation
 ms.custom: 
-ms.date: 10/19/2017
+ms.date: 11/15/2017
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
@@ -17,11 +17,11 @@ ms.author: gewarren
 manager: ghogen
 f1_keywords: vs.performancecenter
 ms.technology: vs-ide-general
-ms.openlocfilehash: d1058ca5762db28f0afc678a9d31cc6f0f3be6bc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 78a2a4dc41b4c6b3154951f6f48b95b3894fc92e
+ms.sourcegitcommit: 15907b980eadeaa646f010cb197cfd188579d0f5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 11/15/2017
 ---
 # <a name="optimize-visual-studio-performance"></a>Optimieren der Leistung von Visual Studio
 Visual Studio wurde dafür entworfen, so schnell und effizient wie möglich zu starten. Das Laden bestimmter Visual Studio-Erweiterungen und -Toolfenster kann die Startzeit jedoch nachteilig beeinflussen. Sie können das Verhalten langsamer Erweiterungen und Toolfenster im Dialogfeld **Visual Studio-Leistung verwalten** steuern. Allgemeiner Tipps zum Verbessern der Leistung finden Sie unter [Visual Studio Performance Tips and Tricks (Tipps und Tricks zur Leistungssteigerung für Visual Studio)](../ide/visual-studio-performance-tips-and-tricks.md).  
@@ -66,17 +66,8 @@ Sie können die Erweiterung jederzeit über den Erweiterungs-Manager oder das Di
 
     ![„Visual Studio-Leistung verwalten“ – Ansicht des Toolfensters](../ide/media/vside_perfdialog_toolwindows.png)
 
-## <a name="speed_up_solution_load"></a>Schnelleres Laden großer Projektmappen in Visual Studio 2017
-
-Mit Visual Studio 2017 wird eine neue Funktion mit der Bezeichnung „Lightweight-Ladevorgang für Projektmappen“ eingeführt, mit der sich die erforderliche Zeit und der benötigte Arbeitsspeicher beim Laden von Projektmappen in der IDE verringern lassen. Wenn Sie mit einer großen Projektmappe arbeiten, die viele C#-, VB- oder C++-Projekte enthält, werden Sie wahrscheinlich eine deutlich verbesserte Leistung feststellen, wenn Sie den Lightweight-Ladevorgang für Projektmappen aktivieren. Ausführliche Informationen zu den Vorteilen, die Ihnen diese Funktion bieten könnte, finden Sie unter [Optimize Solution Loading in Visual Studio](../ide/optimize-solution-loading-in-visual-studio.md) (Optimieren des Ladens von Projektmappen in Visual Studio).
-
-### <a name="enable-or-disable-lightweight-solution-load"></a>Aktivieren oder Deaktivieren der Funktion „Lightweight-Ladevorgang für Projektmappen“
-
-Sie können mit der rechten Maustaste im Projektmappen-Explorer auf den Namen der Projektmappe klicken und **Laden der Lightweight-Lösung aktivieren** wählen. Nach Auswahl der Option müssen Sie die Projektmappe schließen und wieder öffnen, um „Lightweight-Ladevorgang für Projektmappen“ zu aktivieren.
-
-![Projektmappen-Explorer](../ide/media/VSIDE_LSL_Solution_Setting.png)
-
-Wie Sie globale Einstellungen für „Lightweight-Ladevorgang für Projektmappen“ konfigurieren, erfahren Sie unter [Optimize Solution Loading in Visual Studio](../ide/optimize-solution-loading-in-visual-studio.md#global_solution_load_settings) (Optimieren des Ladens von Projektmappen in Visual Studio)
+> [!NOTE]
+> In Visual Studio-Versionen vor Version 15.5 war eine Funktion namens **Lightweight-Ladevorgang für Projektmappen** integriert. Diese Funktion ist in Visual Studio 2017 Version 15.5 und höher nicht mehr enthalten. In Visual Studio Version 15.5 und höher laden große Projektmappen, die verwalteten Code enthalten, auch ohne den Lightweight-Ladevorgang für Projektmappen viel schneller als zuvor.  
 
 ## <a name="see-also"></a>Siehe auch
 [Visual Studio Performance Tips and Tricks (Tipps und Tricks zur Leistungssteigerung für Visual Studio)](../ide/visual-studio-performance-tips-and-tricks.md)

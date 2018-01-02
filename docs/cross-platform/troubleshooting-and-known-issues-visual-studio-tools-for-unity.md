@@ -12,11 +12,11 @@ caps.latest.revision: "5"
 author: conceptdev
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: ede4bd9594e3bb19f081d8a7343f5a0c08003cad
-ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
+ms.openlocfilehash: 338f80724598a3c89dcde3806511427b81bffca4
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>Problembehandlung und bekannte Probleme (Visual Studio-Tools für Unity)
 In diesem Abschnitt finden Sie Lösungen für häufige Probleme mit Visual Studio-Tools für Unity und Beschreibungen bekannter Probleme. Außerdem erfahren Sie, wie Sie Visual Studio-Tools für Unity verbessern können, indem Sie Fehler melden.  
@@ -62,7 +62,8 @@ Wenn Visual Studio keinen Quellspeicherort für einen bestimmten Haltepunkt find
 ### <a name="unable-to-attach"></a>Anfügen nicht möglich.
 -   Versuchen Sie, Ihr Antivirenprogramm kurzzeitig zu deaktivieren, oder erstellen Sie Ausschlussregeln für Visual Studio und Unity.
 -   Versuchen Sie, Ihre Firewall kurzzeitig zu deaktivieren, oder erstellen Sie Regeln, um das TCP/UDP-Netzwerken zwischen Visual Studio und Unity zuzulassen.
--   Wir haben festgestellt, dass Programme wie Team Viewer die Prozesserkennung beeinträchtigen. Sie können versuchen, jegliche zusätzliche Software kurzzeitig zu unterbrechen, um zu prüfen, ob sich dadurch etwas ändert.
+-   Wir haben festgestellt, dass Programme wie Team Viewer die Prozesserkennung beeinträchtigen. Sie können ggf. versuchen, jegliche zusätzliche Software kurzzeitig zu unterbrechen, um zu prüfen, ob sich dadurch etwas ändert.
+-   Benennen Sie die wichtigste ausführbare Komponente nicht um, da VSTU nur „Unity.exe“-Vorgänge überwacht.
 
 ### <a name="unable-to-debug-android-players"></a>Debuggen von Android Players nicht möglich
 Multicast wird für die Erkennung von Players (der von Unity verwendete Standardmechanismus) verwendet. Anschließend wird allerdings eine gewöhnliche TCP-Verbindung verwendet, um den Debugger anzufügen. Die Erkennungsphase stellt für Android-Geräte das größte Problem dar.
