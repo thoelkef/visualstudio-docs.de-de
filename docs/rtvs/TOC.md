@@ -10,7 +10,7 @@
 # Anleitungen
 ## [R-Projekte](projects.md)
 ### [Paket-Manager](package-manager.md)
-### [SQL Server-Integration](sql-server.md)
+### [Integration von SQL Server](sql-server.md)
 ## [Bearbeiten von Code](code-editing.md)
 ### [IntelliSense](code-intellisense.md)
 ### [Linting](code-linting.md)

@@ -1,7 +1,16 @@
-# [Tour zur Profilerstellungsfunktion](profiling-feature-tour.md)
+
+# [Dokumentation zur Profilerstellung](index.md)
+# Übersicht
+## [Tour zur Profilerstellungsfunktion](profiling-feature-tour.md)
+# Schnellstarts
+## [Analysieren der CPU-Auslastung (verwaltet)](quickstart-cpu-usage-managed.md)
+## [Analysieren der CPU-Auslastung (nativ)](quickstart-cpu-usage-native.md)
+## [Analysieren der CPU-Auslastung (ASP.NET)](quickstart-cpu-usage-aspnet.md)
+# Lernprogramme
 ## [Einführung in die Leistungsprofilerstellung](beginners-guide-to-performance-profiling.md)
-## [Neuerungen bei den Profilerstellungstools](what-s-new-in-profiling-tools.md)
+# Konzepte
 ## [Ausführen von Profilerstellungstools mit oder ohne den Debugger](running-profiling-tools-with-or-without-the-debugger.md)
+# Anleitungen
 ## [Analysieren der Speicherauslastung](memory-usage.md)
 ### [Ereignisse für benutzerdefinierte native ETW-Heap](custom-native-etw-heap-events.md)
 ### [Speicherauslastung ohne Debuggen](memory-usage-without-debugging2.md)
@@ -365,5 +374,7 @@
 ##### [CvWriteAlert-Funktion](cvwritealert-function.md)
 ##### [CvWriteFlag-Funktion](cvwriteflag-function.md)
 ##### [CvWriteMessage-Funktion](cvwritemessage-function.md)
-### [Befehlszeilenprogramm für die Nebenläufigkeitsschnellansicht (CVCollectionCmd)](concurrency-visualizer-command-line-utility-cvcollectioncmd.md)
-## [Analysieren des Energieverbrauchs in UWP-Apps](analyze-energy-use-in-store-apps.md)
+### [Befehlszeilenhilfsprogramm für die Parallelitätsschnellansicht (CVCollectionCmd)](concurrency-visualizer-command-line-utility-cvcollectioncmd.md)
+## [Analysieren des Energieverbrauchs in Store-Apps](analyze-energy-use-in-store-apps.md)
+# Ressourcen
+## [Neuerungen bei den Profilerstellungstools](what-s-new-in-profiling-tools.md)

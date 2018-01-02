@@ -1,0 +1,89 @@
+- name: Quellcodeverwaltung
+  href: /visualstudio/version-control/index
+- name: Übersicht
+  items:
+    - name: Informationen zu Git
+      href: /vsts/git/tutorial/gitworkflow?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
+    - name: Auswählen der richtigen Versionskontrolle
+      href: /vsts/tfvc/comparison-git-tfvc?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
+- name: Schnellstarts
+  items:
+    - name: Erstellen eines neuen Git-Repositorys – Web
+      href: /vsts/git/create-new-repo?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
+    - name: Erstellen eines neuen Git-Repositorys – CLI
+      href: /vsts/git/share-your-code-in-git-cmdline?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
+    - name: Freigeben eines Codes in Git
+      href: /vsts/git/share-your-code-in-git-vs-2017?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
+    - name: Importieren eines Repositorys im VSTS-Git-Repository
+      href: /vsts/git/import-git-repository?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
+    - name: Freigeben eines Codes in der TFVC
+      href: /vsts/tfvc/share-your-code-in-tfvc-vs?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
+- name: Lernprogramme
+  items:
+    - name: Git
+      href: /vsts/git/gitquickstart?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
+      items:
+        - name: Erstellen eines neuen Repositorys
+          href: /vsts/git/tutorial/creatingrepo?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
+        - name: Klonen eines vorhandenen Repositorys
+          href: /vsts/git/tutorial/clone?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
+        - name: Speichern von Aufgaben mit Commits
+          href: /vsts/git/tutorial/commits?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
+        - name: Erstellen von Aufgaben in Branches
+          href: /vsts/git/tutorial/branches?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
+        - name: Freigeben eines Codes mithilfe von Push
+          href: /vsts/git/tutorial/pushing?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
+        - name: Aktualisieren eines Codes mit Fetch und Pulls
+          href: /vsts/git/tutorial/pulling?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
+        - name: Überprüfen eines Code mit Pull Requests
+          href: /vsts/git/tutorial/pullrequest?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
+        - name: Anwenden von Änderungen durch einen Rebase
+          href: /vsts/git/tutorial/rebase?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
+        - name: Kopieren von Änderungen durch einen Cherry-Pick
+          href: /vsts/git/tutorial/cherry-pick?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
+        - name: Lösen von Mergekonflikten
+          href: /vsts/git/tutorial/merging?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
+        - name: Änderungen rückgängig machen
+          href: /vsts/git/tutorial/undo?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
+        - name: Dateien ignorieren
+          href: /vsts/git/tutorial/ignore-files?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
+        - name: Überprüfen des Verlaufs
+          href: /vsts/git/tutorial/history?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
+    - name: TFVC
+      items:
+        - name: 'Exemplarische Vorgehensweise: Beheben eines Fehlers und Veranlassen der Codeüberprüfung'
+          href: /vsts/tfvc/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
+        - name: 'Visual Studio: Überprüfen eines Codes'
+          href: /vsts/tfvc/get-code-reviewed-vs?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
+- name: Konzepte
+  items:
+    - name: Verlauf in Git
+      href: /vsts/git/concepts/history?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
+    - name: Vereinfachung des Verlaufs
+      href: /vsts/git/concepts/history-simplification?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
+    - name: Branchorganisation
+      href: /vsts/git/concepts/git-branching-guidance?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
+    - name: Forks
+      href: /vsts/git/concepts/forks?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
+    - name: Authentifizierung
+      href: /vsts/git/auth-overview?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
+    - name: Grundlegendes zu Daten in Git
+      href: /vsts/git/concepts/git-dates?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
+    - name: Grundlegendes zu Namen in Git
+      href: /vsts/git/concepts/git-names?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
+- name: Anleitungen
+  items:
+    - name: Authentifizieren mit SSH
+      href: /vsts/git/use-ssh-keys-to-authenticate?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
+    - name: Authentifizieren mit der Git-Anmeldeinformationsverwaltung
+      href: /vsts/git/set-up-credential-managers?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
+- name: Verweis
+  items:
+    - name: Befehlszeilenreferenz
+      href: /vsts/git/command-prompt?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
+    - name: Häufig gestellte Fragen
+      href: /vsts/git/tutorial/howto?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
+- name: Ressourcen
+  items:
+    - name: Informationen zu Git
+      href: 'https://www.visualstudio.com/learn-git/'
