@@ -14,11 +14,12 @@ ms.assetid: 6e1ae9ec-e9b1-458a-bd96-0eb15e46f1d5
 caps.latest.revision: "22"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 0be707ec592265c75ce6e0c36954010e496ac91c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 2ecea317b60e100b282428d953694238b5c63f21
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="testing-a-large-application-with-multiple-ui-maps"></a>Testing a Large Application with Multiple UI Maps
 In diesem Thema wird besprochen, wie sich Tests der programmierten UI beim Test einer großen Anwendung mithilfe mehrerer UI-Zuordnungen einsetzen lassen.  

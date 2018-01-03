@@ -15,18 +15,19 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8a7bee6cb18fee301dfab5e7c08c58521eac4e84
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 587e76a0108f3636d851b299c30506e0d8d55d9a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="performance-report-view-filter"></a>Filter für die Leistungsberichtansicht
 Das Fenster für den Filter für die Profilerstellungsberichtansicht befindet sich am oberen Rand des Leistungsberichtsfensters. Wenn es nicht angezeigt wird, klicken Sie auf die Schaltfläche **Filter anzeigen**.  
   
  Sie können jede Filterklausel ändern, um Ihre Suchergebnisse zu verfeinern. Die folgenden Spalten sind im Filtergenerator verfügbar.  
   
-|Element filtern|Beschreibung|  
+|Element filtern|description|  
 |-----------------|-----------------|  
 |Und/Oder|Wählen Sie **Und** aus, wenn diese Klausel und die nächste Klausel beide wahr sein müssen, um zu einer Übereinstimmung zu führen. Wählen Sie **Oder** aus, wenn diese Klausel oder die nächste Klausel wahr sein kann, um zu einer Übereinstimmung zu führen.|  
 |Feld|Wählen Sie das zu verwendende Feld in der Filterklausel aus der Liste der Datenfelder aus, die in der aktuellen Berichtsdatei verfügbar sind.|  

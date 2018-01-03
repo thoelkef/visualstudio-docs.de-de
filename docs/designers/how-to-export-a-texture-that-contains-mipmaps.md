@@ -12,11 +12,12 @@ caps.latest.revision: "7"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 04d150c517d4ac0b4f3c47c5e9e4758e24d697c5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ef8f94ae451902c8f7b5e5d2b5f3156d01107589
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-export-a-texture-that-contains-mipmaps"></a>Gewusst wie: Erstellen einer Textur, die Mipmaps enthält
 Mit der Bildinhaltspipeline können Mipmaps aus einem Quellbild als Teil der Buildphase des Projekts generiert werden. Wenn Sie den Bildinhalt jeder MIP-Ebene nicht manuell angeben müssen (wie es bei bestimmten Effekten der Fall ist) stellt das Generieren von Mipmaps zur Buildzeit sicher, dass Mipmapinhalte niemals unsynchronisiert sind und dass die Leistungseinbußen bei der Generierung von Mipmaps zur Laufzeit ausgeschlossen werden.  

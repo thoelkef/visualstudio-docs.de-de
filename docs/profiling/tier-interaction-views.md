@@ -13,11 +13,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bf6f9e8ca68fdd17659c920a9419c12ade2cf935
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 13d84644ad1e934afbb8b9f56455bf3da474c38f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="tier-interaction-views"></a>Ebeneninteraktions-Ansicht
 Die Profilerstellung für Ebeneninteraktion bietet weitere Informationen zu den Ausführungszeiten von Funktionen in Anwendungen mit mehreren Ebenen, die über [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)] mit Datenbanken kommunizieren. Es werden nur Daten für synchrone Funktionsaufrufe gesammelt. Sie können Ebeneninteraktionsdaten in alle Profilerstellungsmethoden einschließen.  
@@ -27,4 +28,4 @@ Die Profilerstellung für Ebeneninteraktion bietet weitere Informationen zu den 
 -   [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)]  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
- [Ansicht „Ebeneninteraktionen“](../profiling/tier-interactions-view.md)
+ [Ansicht "Ebeneninteraktionen"](../profiling/tier-interactions-view.md)

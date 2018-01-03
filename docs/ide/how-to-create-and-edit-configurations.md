@@ -22,11 +22,12 @@ caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: afa939c0b8a033930f5e8e7bcc525d6f33e55f86
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7ca6dfe8132603b06b9bd08655eaff3861e4700d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-and-edit-configurations"></a>Gewusst wie: Erstellen und Bearbeiten von Konfigurationen
 Es können mehrere Buildkonfigurationen für eine Projektmappe erstellt werden. Zum Beispiel können Sie ein Debugbuild konfigurieren, das von den Testern zum Suchen und Beheben von Problemen verwendet werden kann, und Sie können unterschiedliche Builds konfigurieren, die Sie an verschiedene Kunden verteilen können.  

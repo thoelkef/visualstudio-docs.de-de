@@ -18,11 +18,12 @@ caps.latest.revision: "18"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a9a88a82896eeb2d8f124fa7abcfa26dc9b5ab2b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 763e123fcae809e174238ab2f204bec537dbf868
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-manually-create-performance-sessions"></a>Gewusst wie: Manuelles Erstellen von Leistungssitzungen
 Sie können manuell eine Leistungssitzung erstellen. Sie brauchen dafür kein Projekt in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] öffnen. Weitere Informationen finden Sie unter [Konfigurieren von Leistungssitzungen](../profiling/configuring-performance-sessions.md).  
@@ -40,5 +41,5 @@ Sie können manuell eine Leistungssitzung erstellen. Sie brauchen dafür kein Pr
      Es wird eine neue Binärdatei hinzugefügt.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Leistungs-Explorer](../profiling/performance-explorer.md)   
+ [Performance Explorer (Leistungs-Explorer)](../profiling/performance-explorer.md)   
  [Erste Schritte](../profiling/getting-started-with-performance-tools.md)

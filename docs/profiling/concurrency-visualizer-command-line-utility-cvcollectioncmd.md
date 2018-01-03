@@ -13,11 +13,12 @@ caps.latest.revision: "21"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c23bc80fff6bf088d10c788b92a52b1c43fc5db9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 53dd29671e20f19c0ef83d5920581c7038f32c9f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>Befehlszeilenhilfsprogramm für die Parallelitätsschnellansicht (CVCollectionCmd)
 Sie können das Befehlszeilenprogramm Concurrency Visualizer (CVCollectionCmd.exe) verwenden, um die Ablaufverfolgung aus der Befehlszeile zu sammeln und diese in Concurrency Visualizer für Visual Studio anzuzeigen. Die Tools können auf Computern verwendet werden, auf denen Visual Studio nicht installiert ist.  
@@ -40,9 +41,9 @@ Sie können das Befehlszeilenprogramm Concurrency Visualizer (CVCollectionCmd.ex
   
  **CVCollectionCmd**  
   
-|Option|Beschreibung|Parameter|Rückgabewert|  
+|Option|description|Parameter|Rückgabewert|  
 |------------|-----------------|----------------|-------------------|  
-|Abfrage|Gibt zurück, ob sich die Auflistung starten lässt.|Keine|0, wenn die Auflistung startbereit ist.<br /><br /> 1, wenn die Auflistung bereits läuft.<br /><br /> 2, wenn die Auflistung nicht läuft, aber eine oder mehr der erforderlichen [ETW](/dotnet/framework/wcf/samples/etw-tracing)-Sitzungen bereit aktiviert ist.|  
+|Abfrage|Gibt zurück, ob sich die Auflistung starten lässt.|Keiner|0, wenn die Auflistung startbereit ist.<br /><br /> 1, wenn die Auflistung bereits läuft.<br /><br /> 2, wenn die Auflistung nicht läuft, aber eine oder mehr der erforderlichen [ETW](/dotnet/framework/wcf/samples/etw-tracing)-Sitzungen bereit aktiviert ist.|  
 |Starten|Führt den festgelegten Prozess unter Concurrency Visualizer aus.|Der Pfad der ausführbaren Datei.|0, wenn das Ausführen erfolgreich war.<br /><br /> 1, wenn das Ausführen fehlgeschlagen ist, weil die Zielanwendung nicht gestartet werden konnte.<br /><br /> 13, wenn das Ausführen fehlgeschlagen ist, weil CVCollectionCmd keine ausreichenden Berechtigungen für das Schreiben in die festgelegte Ausgabeverzeichnis besitzt.|  
 |Anfügen|Beginnt mit dem Erfassen einer systemweiten Ablaufverfolgung; wird ansonsten an einen Prozess angefügt, sofern ein solcher festgelegt wurde.|Keine|0, wenn Anfügen erfolgreich war.<br /><br /> 1, wenn das Anfügen fehlgeschlagen ist, weil der festgelegte Prozess ungültig oder mehrdeutig ist.<br /><br /> 13, wenn das Anfügen fehlgeschlagen ist, weil CVCollectionCmd nicht ausreichende Berechtigungen für das Schreiben in das festgelegte Ausgabeverzeichnis besitzt.|  
 |Trennen|Auflistung wird angehalten.|Keine|0, wenn Trennen erfolgreich war.<br /><br /> 1, wenn das Trennen fehlgeschlagen ist, weil die Auflistung aktuell nicht ausgeführt wird.<br /><br /> 2, wenn das Trennen fehlgeschlagen ist, weil die Auflistung nicht angehalten werden konnte.|  
@@ -63,7 +64,7 @@ Sie können das Befehlszeilenprogramm Concurrency Visualizer (CVCollectionCmd.ex
 ### <a name="configuration-file-tags"></a>Tags der Konfigurationsdatei  
  Die Konfigurationsdatei ist XML-basiert. Hier sind die gültigen Tags und Werte:  
   
-|Tag|Beschreibung|Werte|  
+|Tag|description|Werte|  
 |---------|-----------------|------------|  
 |Konfigurationen|Grenzt die gesamte Config-Datei ab.|Muss folgende Elemente enthalten:<br /><br /> - MinorVersion<br />- MajorVersion|  
 |MajorVersion|Gibt die Hauptversion der Konfigurationsdatei an.|Muss 1 sein für [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] -Projekte. Wenn nicht 1, dann funktioniert das Dienstprogramm nicht.|  
@@ -75,7 +76,7 @@ Sie können das Befehlszeilenprogramm Concurrency Visualizer (CVCollectionCmd.ex
 |MarkerProvider|Gibt einen einzelnen Markeranbieter an.|Muss folgende Elemente enthalten:<br /><br /> - Ebene<br />- GUID<br />- Name<br /><br /> Kann folgende Elemente enthalten:<br /><br /> - Kategorien<br />- IsEnabled|  
 |Ebene|Legt den Wert für die Bedeutung eines MarkerProviders fest.|- Niedrig<br />- Normal<br />- Hoch<br />- Kritisch<br />- Alles|  
 |GUID|Der Globally Unique Identifier des ETW-Markeranbieters.|Ein GUID.|  
-|Name|Gibt die Beschreibung des Markeranbieters an.|Eine Zeichenfolge.|  
+|name|Gibt die Beschreibung des Markeranbieters an.|Eine Zeichenfolge.|  
 |Kategorien|Gibt die für den Markeranbieter erfassten Kategorien an.|Eine durch Kommas getrennte Zeichenfolge oder eine Reihe von Zahlen.|  
 |IsEnabled|Gibt einen Wert an der festlegt, ob der Markeranbieter für die Auflistung aktiviert ist.|- TRUE<br />- FALSE|  
 |FilterConfig|Gibt die Liste der Konfigurationsoptionen der ETW-Ereignisse an, die aus der Auflistung gefiltert werden.|Kann folgende Elemente enthalten:<br /><br /> - CollectClrEvents<br />- ClrCollectionOptions<br />- CollectSampleEvents<br />- CollectGpuEvents<br />- CollectFileIO|  

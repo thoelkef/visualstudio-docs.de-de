@@ -13,11 +13,12 @@ caps.latest.revision: "11"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 25e635ef74d19cc1f757b9a78ecbeae58fae92cc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 4de13644837c3fd21b38e0be6f4414700eb92414
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="process-view---contention-data"></a>Prozessansicht – Konfliktdaten
 Die Prozessansicht zeigt Konfliktdaten für die Prozesse und Threads, die während der Profilerstellung ausgeführt wurden.  
@@ -26,7 +27,7 @@ Die Prozessansicht zeigt Konfliktdaten für die Prozesse und Threads, die währe
   
  In der nachstehenden Tabelle werden die Werte der Spalten in der Prozessansicht erklärt.  
   
-|Spalte|Beschreibung|  
+|Spalte|description|  
 |------------|-----------------|  
 |**Anfangszeit**|Die Anzahl von Millisekunden oder Prozessorzyklen vom Anfang der Profilerstellung zum Anfang des Prozesses oder Threads.|  
 |**Blockierte Zeit**|Die Gesamtzeit, für die die Ausführung von Funktionen des Prozesses oder Threads blockiert wurden.|  

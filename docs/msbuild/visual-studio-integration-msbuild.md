@@ -22,11 +22,12 @@ caps.latest.revision: "21"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 5aff5914d9b278b206f81abd4f28ce9f4dfa409c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 2458203cdaa23509e35c61eb71a9e9cfa6e214ec
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-integration-msbuild"></a>Integration von Visual Studio (MSBuild)
 Visual Studio enthält [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] , um verwaltete Projekte zu laden und zu erstellen. Da das Projekt über [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ausgeführt wird, können nahezu alle Projekte im Format von [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]erfolgreich verwendet werden, selbst wenn das Projekt über ein anderes Tool erstellt wurde und über einen angepassten Buildprozess verfügt.  
@@ -125,7 +126,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
  Zum Suchen und Starten der Ausgabeassembly sowie zum Anhängen des Debuggers müssen die Eigenschaften [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] , `OutputPath`und `AssemblyName`in `OutputType` ordnungsgemäß definiert sein. Wenn über den Compiler im Buildprozess keine PDB-Datei generiert wurde, kann der Debugger nicht angehängt werden.  
   
 ## <a name="design-time-target-execution"></a>Zielausführung zur Entwurfszeit  
- In[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] wird beim Laden eines Projekts versucht, Ziele mit bestimmten Namen auszuführen. Zu diesen Zielen gehören `Compile`, `ResolveAssemblyReferences`, `ResolveCOMReferences`, `GetFrameworkPaths`und `CopyRunEnvironmentFiles`. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] führt diese Ziele aus, sodass der Compiler zum Bereitstellen von IntelliSense initialisiert, der Debugger initialisiert und die im Projektmappen-Explorer angezeigten Verweise aufgelöst werden können. Wenn die Ziele nicht vorhanden sind, wird das Projekt ordnungsgemäß geladen und erstellt, bei Vorgängen zur Entwurfszeit in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] können jedoch nicht alle Funktionen ausgeführt werden.  
+ In[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] wird beim Laden eines Projekts versucht, Ziele mit bestimmten Namen auszuführen. Zu diesen Zielen gehören `Compile`, `ResolveAssemblyReferences`, `ResolveCOMReferences`, `GetFrameworkPaths` und `CopyRunEnvironmentFiles`. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] führt diese Ziele aus, sodass der Compiler zum Bereitstellen von IntelliSense initialisiert, der Debugger initialisiert und die im Projektmappen-Explorer angezeigten Verweise aufgelöst werden können. Wenn die Ziele nicht vorhanden sind, wird das Projekt ordnungsgemäß geladen und erstellt, bei Vorgängen zur Entwurfszeit in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] können jedoch nicht alle Funktionen ausgeführt werden.  
   
 ##  <a name="BKMK_EditingProjects"></a> Editing Project Files in Visual Studio  
  Wenn Sie ein [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] -Projekt direkt bearbeiten möchten, können Sie die Projektdatei im XML-Editor von Visual Studio von öffnen.  
@@ -153,7 +154,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
  In[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] wird der Inhalt von Projektdateien und von über Projektdateien importierten Dateien zwischengespeichert. Beim Bearbeiten einer geladenen Projektdatei werden Sie in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] automatisch aufgefordert, das Projekt erneut zu laden, sodass Änderungen wirksam werden. Wenn Sie jedoch eine Datei bearbeiten, die über ein geladenes Projekt importiert wurde, wird keine Meldung zum Neuladen angezeigt. Sie müssen das Projekt dann manuell entladen und anschließend neu laden, damit Änderungen wirksam werden.  
   
 ## <a name="output-groups"></a>Ausgabegruppen  
- Mehrere in Microsoft.Common.targets definierte Ziele verfügen über Namen, die auf `OutputGroups` oder `OutputGroupDependencies`enden. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ruft diese Ziele auf, um bestimmte Listen von Projektausgaben abzurufen. Das `SatelliteDllsProjectOutputGroup` -Ziel erstellt beispielsweise eine Liste aller in einem Build erstellten Satellitenassemblys. Diese Ausgabegruppen werden bei Features wie Veröffentlichung, Bereitstellung und Verweisen zwischen Projekten verwendet. Projekte, in denen diese Funktionen nicht definiert sind, werden in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]geladen und erstellt, einige Funktionen werden jedoch möglicherweise nicht ordnungsgemäß ausgeführt.  
+ Mehrere in Microsoft.Common.targets definierte Ziele verfügen über Namen, die auf `OutputGroups` oder `OutputGroupDependencies`enden. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ruft diese Ziele auf, um bestimmte Listen von Projektausgaben abzurufen. Das `SatelliteDllsProjectOutputGroup`-Ziel erstellt beispielsweise eine Liste aller in einem Build erstellten Satellitenassemblys. Diese Ausgabegruppen werden bei Features wie Veröffentlichung, Bereitstellung und Verweisen zwischen Projekten verwendet. Projekte, in denen diese Funktionen nicht definiert sind, werden in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]geladen und erstellt, einige Funktionen werden jedoch möglicherweise nicht ordnungsgemäß ausgeführt.  
   
 ## <a name="reference-resolution"></a>Auflösen von Verweisen  
  Verweisauflösung ist der Prozess, bei dem die in einer Projektdatei gespeicherten Verweiselemente verwendet werden, um tatsächliche Assemblys zu suchen. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] muss die Verweisauflösung initiieren, um ausführliche Eigenschaften für jeden Verweis im **Eigenschaftenfenster** anzuzeigen. In der folgenden Liste werden die drei Verweistypen sowie deren Auflösung beschrieben.  

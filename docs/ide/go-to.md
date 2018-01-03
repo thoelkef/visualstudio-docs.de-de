@@ -16,11 +16,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 15b222eaa3e03a44f99f64e86f9c88d125e41f98
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 9309a143760aab5b59355b4cea6cd214aaa49812
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="find-code-using-go-to-commands"></a>Suchen von Code mithilfe von Gehe zu-Befehlen  
 Die **Gehe zu**-Befehle von Visual Studio führen eine zielgerichtete Suche in Ihrem Code aus, damit Sie angegebene Elemente schneller finden. Sie können über eine einfache und einheitliche Oberfläche zu einer bestimmten Zeile, einem bestimmten Typ, einem bestimmten Symbol oder einer bestimmten Datei gehen. Dieses Funktion ist in Visual Studio 2017 und höher vorhanden.  
@@ -52,7 +53,7 @@ Standardmäßig wird das angegebene Element in allen Projektmappenelementen gesu
 #### <a name="filter-to-a-specific-type-of-code-element"></a>Filtern eines bestimmten Codeelementtyps  
 Um Ihre Suche auf einen bestimmten Typ von Codeelement einzugrenzen, können Sie entweder ein Präfix in das Suchfeld eingeben oder eines der fünf Filtersymbole auswählen:  
 
-Präfix | Symbol | Verknüpfung | Beschreibung
+Präfix | Symbol | Verknüpfung | description
 :----: | ---- | -------- | ---
 \#      | ![Zeichensymbol](media/gotoall_symbolicon.png) | STRG+1, STRG+S | Zum angegebenen Symbol wechseln
 f      | ![Dateisymbol](media/gotoall_fileicon.png)     | STRG+1, STRG+F | Zur angegebenen Datei wechseln
@@ -63,7 +64,7 @@ t      | ![Typsymbol](media/gotoall_typeicon.png)     | STRG+1, STRG+T | Zum ang
 #### <a name="filter-to-a-specific-location"></a>Filtern an einem bestimmten Speicherort    
 Um die Suche auf bestimmte Speicherorte einzugrenzen, wählen Sie eines der zwei Dokumentsymbole aus:  
 
-Symbol | Beschreibung
+Symbol | description
 ---- | ---
 ![Aktuelles Dokument](media/gotoall_currentdocument.png) | Nur im aktuellen Dokument suchen
 ![Externe Dokumente](media/gotoall_external.png) | In externen Dokumenten suchen, zusätzlich zu den unter Projekt/Projektmappe gespeicherten  
@@ -76,7 +77,7 @@ Wenn Sie die [Camel-Case-Schreibweise](https://en.wikipedia.org/wiki/Camel_case)
 ### <a name="settings"></a>Einstellungen  
 Über das Zahnradsymbol ![Zahnradsymbol](media/gotoall_gear.png) können Sie die Funktionsweise dieser Funktion ändern:  
 
-Einstellung | Beschreibung
+Einstellung | description
 ------- | ---
 Vorschauregisterkarte verwenden | Das ausgewählte Element sofort auf der Vorschauregisterkarte der IDE anzeigen
 Details anzeigen    | Zeigt Projekt-, Datei-, Zeilen- und Zusammenfassungsinformationen aus Dokumentationskommentaren im Fenster an

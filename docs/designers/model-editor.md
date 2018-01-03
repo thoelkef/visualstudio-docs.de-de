@@ -15,11 +15,12 @@ caps.latest.revision: "36"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2b7176a0aed65a9595730247d857dc0c263dc0cb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: cc01c0d5a2b4ad53f1384640e06b9637cd7fbe0e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="model-editor"></a>Modell-Editor
 In diesem Dokument wird beschrieben, wie Sie mit dem [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Model-Editor 3D-Modelle anzuzeigen, erstellen und ändern können.  
@@ -68,7 +69,7 @@ In diesem Dokument wird beschrieben, wie Sie mit dem [!INCLUDE[vsprvs](../code-q
   
  In dieser Tabelle werden die Elemente der Symbolleiste **Model Editor Mode** (Modell-Editor-Modus) beschrieben und in der Reihenfolge aufgelistet, in der sie auf der Symbolleiste von links nach rechts angezeigt werden.  
   
-|Element der Symbolleiste|Beschreibung|  
+|Element der Symbolleiste|description|  
 |------------------|-----------------|  
 |**Auswählen**|Ermöglicht, abhängig vom aktiven Auswahlmodus, das Auswählen von Punkten, Rändern, Flächen oder Objekten in der Szene.|  
 |**Schwenken**|Ermöglicht das Bewegen einer 3D-Szene relativ zum Fensterrahmen. Wählen Sie zum Schwenken einen Punkt in der Szene aus und verschieben Sie ihn.<br /><br /> Im **Auswahl**-Modus können Sie den **Schwenken**-Modus durch Gedrückthalten der STRG-TASTE vorübergehend aktivieren.|  
@@ -96,7 +97,7 @@ In diesem Dokument wird beschrieben, wie Sie mit dem [!INCLUDE[vsprvs](../code-q
   
  In der folgenden Tabelle werden die Elemente der Symbolleiste **Model Editor** (Modell-Editor) beschrieben und in der Reihenfolge aufgelistet, in der sie auf der Symbolleiste von oben nach unten angezeigt werden.  
   
-|Element der Symbolleiste|Beschreibung|  
+|Element der Symbolleiste|description|  
 |------------------|-----------------|  
 |**Verschieben**|Verschiebt die Markierung.|  
 |**Scale** (Skalieren)|Ändert die Größe der Auswahl.|  
@@ -113,7 +114,7 @@ In diesem Dokument wird beschrieben, wie Sie mit dem [!INCLUDE[vsprvs](../code-q
   
  In der folgenden Tabelle werden die Hauptsteuerelemente der Ansicht beschrieben.  
   
-|Ansichtsteuerung|Beschreibung|  
+|Ansichtsteuerung|description|  
 |------------------|-----------------|  
 |**Schwenken**|Ermöglicht das Bewegen einer 3D-Szene relativ zum Fensterrahmen. Wählen Sie zum Schwenken einen Punkt in der Szene aus und verschieben Sie ihn.<br /><br /> Im **Auswahl**-Modus können Sie den **Schwenken**-Modus durch Gedrückthalten der STRG-TASTE vorübergehend aktivieren.|  
 |**Zoom**|Ermöglicht das Anzeigen von mehr oder weniger Szenendetails relativ zum Fensterrahmen. Klicken Sie im **Zoom**-Modus auf einen Punkt in der Szene, und verschieben Sie ihn: zum Vergrößern nach rechts oder nach unten, und zum Verkleinern nach links oder nach oben.<br /><br /> Im **Auswählen**-Modus können Sie zum Vergrößern oder Verkleinern das Mausrad verwenden. Halten Sie währenddessen die STRG-TASTE gedrückt.|  
@@ -122,7 +123,7 @@ In diesem Dokument wird beschrieben, wie Sie mit dem [!INCLUDE[vsprvs](../code-q
   
  Die Ansicht wird zwar von der virtuellen Kamera erstellt, ist jedoch auch durch eine Projektion definiert. Die Projektion definiert, wie Formen und Objekte in der Ansicht auf der Entwurfsoberfläche in Pixel übersetzt werden. Sie können auf der Symbolleiste **Model Editor** (Modell-Editor) zwischen der Projektionsoption **Perspektive** oder **Orthografisch** auswählen.  
   
-|Projection|Beschreibung|  
+|Projection|description|  
 |----------------|-----------------|  
 |**Perspektive**|In der perspektivischen Projektion erscheinen weiter vom Blickpunkt entfernte Objekte kleiner und laufen letztendlich in der Entfernung zu einem Punkt zusammen.|  
 |**Orthografisch**|In der ortographischen Projektion erscheinen Objekte unabhängig von ihrer Entfernung zum Blickpunkt gleich Groß. Es wird keine Konvergenz angezeigt. Ist die Projektionsoption **Orthografisch** aktiviert, können Sie den **Orbit**-Modus nicht beliebig zum Positionieren der Ansicht verwenden.|  
@@ -215,7 +216,7 @@ In diesem Dokument wird beschrieben, wie Sie mit dem [!INCLUDE[vsprvs](../code-q
   
  Der Model-Editor stellt folgende Standardmaterialien bereit:  
   
-|Material|Beschreibung|  
+|Material|description|  
 |--------------|-----------------|  
 |Unbeleuchtet|Rendert eine Oberfläche ohne simulierte Beleuchtung.|  
 |Lambert|Rendert eine Oberfläche mit simulierter umgebender und diffuser Beleuchtung.|  
@@ -225,7 +226,7 @@ In diesem Dokument wird beschrieben, wie Sie mit dem [!INCLUDE[vsprvs](../code-q
   
  Um die Reaktion eines bestimmten Objekts auf verschiedenen Lichtquellen in der Szene zu ändern, können Sie die Beleuchtungseigenschaften des Materials unabhängig von anderen Objekten ändern, bei denen das Material verwendet wird. Die folgende Tabelle beschreibt allgemeine Beleuchtungseigenschaften:  
   
-|Beleuchtungseigenschaft|Beschreibung|  
+|Beleuchtungseigenschaft|description|  
 |-----------------------|-----------------|  
 |Umgebend|Beschreibt die Auswirkung von umgebenden Beleuchtung auf die Oberfläche.|  
 |Diffus|Beschreibt die Auswirkung direktionaler Punktlichter auf die Oberfläche.|  
@@ -307,7 +308,7 @@ In diesem Dokument wird beschrieben, wie Sie mit dem [!INCLUDE[vsprvs](../code-q
   
 ## <a name="related-topics"></a>Verwandte Themen  
   
-|Titel|Beschreibung|  
+|Titel|description|  
 |-----------|-----------------|  
 |[Working with 3-D Assets for Games and Apps (Arbeiten mit 3D-Objekten für Spiele und Apps)](../designers/working-with-3-d-assets-for-games-and-apps.md)|Bietet eine Übersicht über die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Tools, die Sie bei der Arbeit mit Grafikressourcen wie Texturen und Bildern, 3D-Modellen und Shadereffekten verwenden können.|  
 |[Bildbearbeitung](../designers/image-editor.md)|Beschreibt, wie der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Bild-Editor für die Arbeit mit Texturen und Bildern verwendet wird.|  

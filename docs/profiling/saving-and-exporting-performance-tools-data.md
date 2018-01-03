@@ -13,11 +13,12 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d348bdc52d53d7ba671b455e10893c578418a892
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 37306636da74637cb950ca1502b94a750a51ccba
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="saving-and-exporting-performance-tools-data"></a>Speichern und Exportieren von Daten aus Leistungstools
 Dieses Thema beschreibt das Speichern und Exportieren von Dateien, die Leistungsdaten enthalten.  
@@ -90,7 +91,7 @@ Dieses Thema beschreibt das Speichern und Exportieren von Dateien, die Leistungs
      Jede Berichtsansicht wird in einer separaten Datei mit dem Namen \<Präfix>_\<Berichtsansichtsname>.\<csv|xml> gespeichert.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Leistungs-Explorer](../profiling/performance-explorer.md)   
+ [Performance Explorer (Leistungs-Explorer)](../profiling/performance-explorer.md)   
  [Analysieren der durch Leistungstools erstellten Daten](../profiling/analyzing-performance-tools-data.md)   
  [Vergleichen von Leistungsdatendateien](../profiling/comparing-performance-data-files.md)   
  [VSPerfReport](../profiling/vsperfreport.md)

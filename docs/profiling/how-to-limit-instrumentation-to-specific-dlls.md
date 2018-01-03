@@ -13,11 +13,12 @@ caps.latest.revision: "19"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 59d24a6cc67429fb6c0231f9487d80abe91de965
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 3ad8aaf7dbf9960a3281add90da685c2942bd179
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-limit-instrumentation-to-specific-dlls"></a>Gewusst wie: Beschränken der Instrumentierung auf bestimmte DLLs
 Mithilfe der Instrumentierungs-Profilerstellungsmethode können Sie die Auflistung von Profilerstellungsdaten auf eine oder mehrere DLLs in einer Anwendung beschränken. Erstellen Sie eine Leistungssitzung, die die DLL-Datei als Ziel enthält, um das Profil von einer oder mehreren DLLs in einer Anwendung zu erstellen. Sie können die DLLS, für die Sie ein Profil erstellen möchten, als Projekt in einer [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Projektmappe oder als unabhängige Binärdateien angeben.  
@@ -38,7 +39,7 @@ Mithilfe der Instrumentierungs-Profilerstellungsmethode können Sie die Auflistu
   
 7.  Wählen Sie aus der Liste **Zielprojekt hinzufügen** das ausführbare Projekt aus, das Sie zum Ausführen der DLL verwenden möchten.  
   
-     Optional. Sie können alle DLL-Projekte hinzufügen, für die Sie ein Profil erstellen möchten.  
+     Dies ist optional. Sie können alle DLL-Projekte hinzufügen, für die Sie ein Profil erstellen möchten.  
   
 8.  Klicken Sie mit der rechten Maustaste auf den Projektnamen, und deaktivieren Sie das Kontrollkästchen **Instrumentieren**, um die Datensammlung für ein zusätzliches Projekt zu verhindern.  
   
@@ -56,7 +57,7 @@ Mithilfe der Instrumentierungs-Profilerstellungsmethode können Sie die Auflistu
   
     -   Geben Sie im **Pfad der ausführbaren Datei** den Pfad und den Namen der ausführbaren Datei (.exe) an, die in der DLL-Datei ausgeführt wird. Sie können auch auf die Schaltfläche mit den Auslassungspunkten (...) klicken, um die Datei im Dialogfeld **Zu startende ausführbare Datei** zu suchen.  
   
-    -   Optional. Geben Sie in **Befehlszeilenargumente** Befehlszeilenargumente an, die an die ausführbare Datei übergeben werden sollen. Geben Sie ggf. in **Arbeitsverzeichnis** das Arbeitsverzeichnis für die Anwendung an.  
+    -   Dies ist optional. Geben Sie in **Befehlszeilenargumente** Befehlszeilenargumente an, die an die ausführbare Datei übergeben werden sollen. Geben Sie ggf. in **Arbeitsverzeichnis** das Arbeitsverzeichnis für die Anwendung an.  
   
     -   Klicken Sie auf **Weiter**.  
   
@@ -64,11 +65,11 @@ Mithilfe der Instrumentierungs-Profilerstellungsmethode können Sie die Auflistu
   
 6.  Klicken Sie auf **Fertig stellen**, um den Assistenten zu beenden und um im Fenster **Leistungs-Explorer** die neue Leistungssitzung anzuzeigen.  
   
-7.  Optional. Klicken Sie mit der rechten Maustaste auf **Ziele** und wählen Sie anschließend **Zielbinärdatei hinzufügen** aus, um weitere DLL-Dateien hinzuzufügen. Wählen Sie die Dateien vom Dialogfeld **Zielbinärdateien hinzufügen** aus.  
+7.  Dies ist optional. Klicken Sie mit der rechten Maustaste auf **Ziele** und wählen Sie anschließend **Zielbinärdatei hinzufügen** aus, um weitere DLL-Dateien hinzuzufügen. Wählen Sie die Dateien vom Dialogfeld **Zielbinärdateien hinzufügen** aus.  
   
     > [!NOTE]
     >  Geben Sie nicht die ausführbare Datei (.exe) an, die die DLLs ausführt.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Steuern der Datenauflistung](../profiling/controlling-data-collection.md)   
+ [Steuern der Datensammlung](../profiling/controlling-data-collection.md)   
  [Vorgehensweise: Beschränken der Instrumentierung auf bestimmte Funktionen](../profiling/how-to-limit-instrumentation-to-specific-functions.md)

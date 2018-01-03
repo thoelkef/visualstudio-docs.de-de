@@ -15,11 +15,12 @@ caps.latest.revision: "9"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: e2ad60b0b0f98cee23de911a8ca7cf2e5d43b364
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 68977ca672aae84cd65ca169c4ca13feda6d7887
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="msbuild-batching"></a>MSBuild-Batchverarbeitung
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] kann Elementlisten basierend auf den Elementmetadaten in verschiedene Kategorien oder Batches unterteilen und ein Ziel oder eine Aufgabe einmal mit jedem Batch ausführen.  
@@ -88,13 +89,13 @@ ms.lasthandoff: 10/31/2017
  Ein weiteres Beispiel für die Zielbatchverarbeitung finden Sie unter [Item Metadata in Target Batching (Elementmetadaten bei der Zielbatchverarbeitung)](../msbuild/item-metadata-in-target-batching.md).  
   
 ## <a name="property-functions-using-metadata"></a>Eigenschaftenfunktionen mit Metadaten  
- Die Batchverarbeitung kann von den Eigenschaftenfunktionen kontrolliert werden, die Metadaten enthalten. Beispiel:  
+ Die Batchverarbeitung kann von den Eigenschaftenfunktionen kontrolliert werden, die Metadaten enthalten. Ein auf ein Objekt angewendeter  
   
  `$([System.IO.Path]::Combine($(RootPath),%(Compile.Identity)))`  
   
  <xref:System.IO.Path.Combine%2A> wird verwendet, um den Stammpfad eines Ordners mit dem Elementpfad einer Kompilierung zu kombinieren.  
   
- Eigenschaftenfunktionen werden möglicherweise nicht innerhalb der Metadatenwerte angezeigt.  Beispiel:  
+ Eigenschaftenfunktionen werden möglicherweise nicht innerhalb der Metadatenwerte angezeigt.  Ein auf ein Objekt angewendeter  
   
  `%(Compile.FullPath.Substring(0,3))`  
   

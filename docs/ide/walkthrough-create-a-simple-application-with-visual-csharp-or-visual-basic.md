@@ -15,36 +15,29 @@ caps.latest.revision: "19"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 44429ccde6dece8ff0b8a0c41fd4cff328d1160f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 3490d9d4f88bbcc104132e35c3f86d3fe75622b5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-create-a-simple-application-with-visual-c-or-visual-basic"></a>Exemplarische Vorgehensweise: Erstellen einer einfachen Anwendung mit Visual C# oder Visual Basic
-Wenn Sie diese exemplarische Vorgehensweise durcharbeiten, werden Sie mit vielen Tools, Dialogfeldern und Designern vertraut, die Sie für die Entwicklung von Anwendungen in Visual Studio verwenden können. Sie erstellen eine einfache „Hallo, Welt“-Anwendung, entwerfen die Benutzeroberfläche, fügen Code hinzu und debuggen Fehler. Gleichzeitig erfahren Sie mehr über das Arbeiten in der integrierten Entwicklungsumgebung (IDE).  
-  
- Dieses Thema enthält folgende Abschnitte:  
-  
- [Konfigurieren der IDE](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md#BKMK_ConfigureIDE)  
-  
- [Erstellen einer einfachen Anwendung](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md#BKMK_CreateApp)  
-  
- [Debuggen und Testen der Anwendung](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md#BKMK_DebugTest)  
+Wenn Sie diese exemplarische Vorgehensweise durcharbeiten, werden Sie mit vielen Tools, Dialogfeldern und Designern vertraut, die Sie für die Entwicklung von Anwendungen in Visual Studio verwenden können. Sie erstellen eine einfache „Hallo, Welt“-Anwendung, entwerfen die Benutzeroberfläche, fügen Code hinzu und debuggen Fehler. Gleichzeitig erfahren Sie mehr über das Arbeiten in der integrierten Entwicklungsumgebung (IDE).
   
 ##  <a name="BKMK_ConfigureIDE"></a> Konfigurieren der IDE  
 Wenn Sie Visual Studio zum ersten Mal starten, werden Sie zur Anmeldung aufgefordert. Dieser Schritt ist für die exemplarische Vorgehensweise nicht unbedingt notwendig. Als Nächstes wird Ihnen möglicherweise ein Dialogfeld angezeigt, in dem Sie aufgefordert werden, Ihre Entwicklungseinstellungen und Farbdesigns festzulegen. Behalten Sie die Standardeinstellungen bei, und klicken Sie auf **Visual Studio starten**.  
 
 ![Dialogfeld „Einstellungen auswählen“](../ide/media/exploreide-settings.png "exploreide-settings")
   
- Wenn sich Visual Studio öffnet, werden Toolfenster, die Menüs, Symbolleisten und der Hauptfensterbereich angezeigt. Mit **Schnellstart**werden Toolfenster auf der linken und rechten Seite des Anwendungsfensters und die Menüleiste und die Standardsymbolleiste oben angedockt. In der Mitte des Anwendungsfensters befindet sich die **Startseite**. Wenn Sie eine Projektmappe oder ein Projekt laden, werden Editoren und Designer dort angezeigt, wo sich die **Startseite** befindet. Wenn Sie eine Anwendung entwickeln, verbringen Sie die meiste Zeit in diesem zentralen Bereich.  
+Wenn sich Visual Studio öffnet, werden Toolfenster, die Menüs, Symbolleisten und der Hauptfensterbereich angezeigt. Mit **Schnellstart**werden Toolfenster auf der linken und rechten Seite des Anwendungsfensters und die Menüleiste und die Standardsymbolleiste oben angedockt. In der Mitte des Anwendungsfensters befindet sich die **Startseite**. Wenn Sie eine Projektmappe oder ein Projekt laden, werden Editoren und Designer dort angezeigt, wo sich die **Startseite** befindet. Wenn Sie eine Anwendung entwickeln, verbringen Sie die meiste Zeit in diesem zentralen Bereich.  
   
- ![IDE mit „Allgemeine Einstellungen“ übernommen](../ide/media/exploreide-idewithgeneralsettings.png "ExploreIDE-IDEwithgeneralsettings")  
+![IDE mit „Allgemeine Einstellungen“ übernommen](../ide/media/exploreide-idewithgeneralsettings.png "ExploreIDE-IDEwithgeneralsettings")  
   
 ##  <a name="BKMK_CreateApp"></a> Erstellen einer einfachen Anwendung  
   
 ### <a name="create-the-project"></a>Erstellen eines Projekts  
- Wenn Sie eine Anwendung in Visual Studio erstellen, erstellen Sie zunächst ein Projekt und eine Projektmappe. In diesem Beispiel erstellen Sie eine Windows Presentation Foundations-Projektmappe (WPF).  
+Wenn Sie eine Anwendung in Visual Studio erstellen, erstellen Sie zunächst ein Projekt und eine Projektmappe. In diesem Beispiel erstellen Sie eine Windows Presentation Foundations-Projektmappe (WPF).  
   
 #### <a name="to-create-the-wpf-project"></a>So erstellen Sie das WPF-Projekt  
   
@@ -56,11 +49,11 @@ Wenn Sie Visual Studio zum ersten Mal starten, werden Sie zur Anmeldung aufgefor
   
      ![Create a C# WPF Project, HelloWPFApp] (Visual C#-WPF-Projekt „HelloWPFApp“ erstellen)(../ide/media/exploreide-newprojectcsharp.png "ExploreIDE-NewProjectcsharp")  
   
- Visual Studio erstellt das „HelloWPFApp“-Projekt und die Projektmappe, woraufhin im **Projektmappen-Explorer** verschiedene Dateien angezeigt werden. Der WPF-Designer zeigt eine Entwurfsansicht und eine XAML-Ansicht der Datei MainWindow.xaml in einer geteilten Ansicht an. Ziehen Sie den Teiler, um mehr oder weniger der jeweiligen Ansichten anzuzeigen.  Sie können auch nur die visuelle Ansicht oder nur die XAML-Ansicht anzeigen. (Weitere Informationen finden Sie unter [Der WPF-Designer für Windows Forms-Entwickler](http://msdn.microsoft.com/47ad0909-e89b-4996-b4ac-874d929f94ca).) Die folgenden Elemente werden in **Projektmappen-Explorer**angezeigt:  
+Visual Studio erstellt das „HelloWPFApp“-Projekt und die Projektmappe, woraufhin im **Projektmappen-Explorer** verschiedene Dateien angezeigt werden. Der WPF-Designer zeigt eine Entwurfsansicht und eine XAML-Ansicht der Datei MainWindow.xaml in einer geteilten Ansicht an. Ziehen Sie den Teiler, um mehr oder weniger der jeweiligen Ansichten anzuzeigen.  Sie können auch nur die visuelle Ansicht oder nur die XAML-Ansicht anzeigen. (Weitere Informationen finden Sie unter [Der WPF-Designer für Windows Forms-Entwickler](http://msdn.microsoft.com/47ad0909-e89b-4996-b4ac-874d929f94ca).) Die folgenden Elemente werden in **Projektmappen-Explorer**angezeigt:  
   
- ![Projektmappen-Explorer mit geladenen HelloWPFApp-Dateien](../ide/media/exploreide-hellowpfappfiles.png "ExploreIDE-HelloWPFAppFiles")  
+![Projektmappen-Explorer mit geladenen HelloWPFApp-Dateien](../ide/media/exploreide-hellowpfappfiles.png "ExploreIDE-HelloWPFAppFiles")  
   
- Nachdem Sie das Projekt erstellt haben, können Sie es anpassen. Im Fenster **Eigenschaften** (Menü **Ansicht** ) können Sie Optionen für Projektelemente, Steuerelemente und andere Elemente in einer Anwendung anzeigen und ändern.  
+Nachdem Sie das Projekt erstellt haben, können Sie es anpassen. Im Fenster **Eigenschaften** (Menü **Ansicht** ) können Sie Optionen für Projektelemente, Steuerelemente und andere Elemente in einer Anwendung anzeigen und ändern.  
   
 #### <a name="to-change-the-name-of-mainwindowxaml"></a>Ändern des Namens der Datei "MainWindow.xaml"  
 Geben Sie „MainWindow“ einen genaueren Namen.  
@@ -73,7 +66,7 @@ Geben Sie „MainWindow“ einen genaueren Namen.
      Im **Projektmappen-Explorer** wird angezeigt, dass der Name der Datei nun „Greetings.xaml“ und der Name der geschachtelten Codedatei nun „Greetings.xaml.vb“ oder „Greetings.xaml.cs“ lautet. Diese Codedatei ist unter dem XAML-Dateiknoten geschachtelt, um deren enge Verbindung miteinander darzustellen.  
   
 ### <a name="design-the-user-interface-ui"></a>Entwerfen der Benutzeroberfläche (UI)  
- Nun fügen wir der Anwendung drei Arten von Steuerelementen hinzu: ein TextBlock-Steuerelement, zwei RadioButton-Steuerelemente und ein Button-Steuerelement.  
+Nun fügen wir der Anwendung drei Arten von Steuerelementen hinzu: ein TextBlock-Steuerelement, zwei RadioButton-Steuerelemente und ein Button-Steuerelement.  
   
 #### <a name="to-add-a-textblock-control"></a>Hinzufügen eines TextBlock-Steuerelements  
   
@@ -85,16 +78,16 @@ Geben Sie „MainWindow“ einen genaueren Namen.
   
 3.  Fügen Sie auf der Entwurfsoberfläche ein TextBlock-Steuerelement hinzu, indem Sie das **TextBlock**-Element auswählen und in das Fenster auf der Entwurfsoberfläche ziehen. Zentrieren Sie das Steuerelement im oberen Bereich des Fensters.  
   
- Das Fenster sollte der folgenden Abbildung entsprechen:  
+Das Fenster sollte der folgenden Abbildung entsprechen:  
   
- ![TextBlock-Steuerelement im Greetings-Formular](../ide/media/exploreide-greetingswithtextblockonly.png "ExploreIDE-GreetingswithTextblockonly")  
+![TextBlock-Steuerelement im Greetings-Formular](../ide/media/exploreide-greetingswithtextblockonly.png "ExploreIDE-GreetingswithTextblockonly")  
   
- Das XAML-Markup sollte in etwa der folgenden Darstellung entsprechen:  
+Das XAML-Markup sollte in etwa der folgenden Darstellung entsprechen:  
   
-     ```xaml  
-     <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" RenderTransformOrigin="4.08,2.312" Margin="237,57,221,238"><Run Text="TextBlock"/><InlineUIContainer><TextBlock TextWrapping="Wrap" Text="TextBlock"/>  
-     ```  
-  
+```xaml  
+<TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" RenderTransformOrigin="4.08,2.312" Margin="237,57,221,238"><Run Text="TextBlock"/><InlineUIContainer><TextBlock TextWrapping="Wrap" Text="TextBlock"/>  
+```  
+
 #### <a name="to-customize-the-text-in-the-text-block"></a>Anpassen des Texts im Textblock  
   
 1.  Suchen Sie in der XAML-Ansicht das Markup für TextBlock, und ändern Sie das Textattribut:  
@@ -158,7 +151,7 @@ Das letzte Benutzeroberflächenelement, das Sie hinzufügen, ist ein [Button](/d
      ![Greetings-Formular mit Steuerelementbezeichnungen](../ide/media/exploreide-greetingswithconrollabels.png "ExploreIDE-Greetingswithconrollabels")  
   
 ### <a name="add-code-to-the-display-button"></a>Hinzufügen von Code zur Anzeigeschaltfläche  
- Wenn die Anwendung ausgeführt wird, wird ein Meldungsfeld angezeigt, nachdem ein Benutzer zunächst ein Optionsfeld aktiviert und anschließend die Schaltfläche **Anzeigen** ausgewählt hat. Ein Meldungsfeld wird für die Begrüßung ("Hello") und ein anderes für die Verabschiedung ("Goodbye") angezeigt. Um dieses Verhalten zu erstellen, fügen Sie Code zum Button_Click-Ereignis in Greetings.xaml.vb oder in Greetings.xaml.cs hinzu.  
+Wenn die Anwendung ausgeführt wird, wird ein Meldungsfeld angezeigt, nachdem ein Benutzer zunächst ein Optionsfeld aktiviert und anschließend die Schaltfläche **Anzeigen** ausgewählt hat. Ein Meldungsfeld wird für die Begrüßung ("Hello") und ein anderes für die Verabschiedung ("Goodbye") angezeigt. Um dieses Verhalten zu erstellen, fügen Sie Code zum Button_Click-Ereignis in Greetings.xaml.vb oder in Greetings.xaml.cs hinzu.  
   
 #### <a name="add-code-to-display-message-boxes"></a>Hinzufügen von Code zu Anzeigenmeldungsfeldern    
 1.  Doppelklicken Sie auf der Entwurfsoberfläche auf die Schaltfläche **Anzeigen** .  
@@ -201,10 +194,10 @@ Das letzte Benutzeroberflächenelement, das Sie hinzufügen, ist ein [Button](/d
 3.  Speichern Sie die Anwendung.  
   
 ##  <a name="BKMK_DebugTest"></a> Debuggen und Testen der Anwendung  
- Als Nächstes debuggen Sie die Anwendung, um nach Fehlern zu suchen und zu testen, ob beide Meldungsfelder ordnungsgemäß angezeigt werden. Die folgenden Anweisungen beschreiben, wie Sie den Debugger erstellen und starten. Lesen Sie jedoch später für weitere Informationen [Erstellen einer WPF-Anwendung (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf) und [Debuggen von WPF](../debugger/debugging-wpf.md).  
+Als Nächstes debuggen Sie die Anwendung, um nach Fehlern zu suchen und zu testen, ob beide Meldungsfelder ordnungsgemäß angezeigt werden. Die folgenden Anweisungen beschreiben, wie Sie den Debugger erstellen und starten. Lesen Sie jedoch später für weitere Informationen [Erstellen einer WPF-Anwendung (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf) und [Debugging WPF](../debugger/debugging-wpf.md) .  
   
 ### <a name="find-and-fix-errors"></a>Suchen und Beheben von Fehlern  
- In diesem Schritt finden Sie den Fehler, den Sie zuvor verursacht haben, indem Sie den Namen der Datei „MainWindow.xaml“ geändert haben.  
+In diesem Schritt finden Sie den Fehler, den Sie zuvor verursacht haben, indem Sie den Namen der Datei „MainWindow.xaml“ geändert haben.  
   
 #### <a name="to-start-debugging-and-find-the-error"></a>Starten des Debugging und Suchen des Fehlers  
   
@@ -218,7 +211,7 @@ Das letzte Benutzeroberflächenelement, das Sie hinzufügen, ist ein [Button](/d
   
      ![Befehl „Debugging beenden“ im Menü „Debuggen“](../ide/media/exploreide-stopdebugging.png "ExploreIDE-StopDebugging")  
   
- Zu Beginn dieser exemplarischen Vorgehensweise wurde „Mainwindow.xaml“ in „Greetings.xaml“ umbenannt. Da der Code jedoch weiterhin auf „Mainwindow.xaml“ als Start-URI für die Anwendung verweist, kann das Projekt nicht gestartet werden.  
+Zu Beginn dieser exemplarischen Vorgehensweise wurde „Mainwindow.xaml“ in „Greetings.xaml“ umbenannt. Da der Code jedoch weiterhin auf „Mainwindow.xaml“ als Start-URI für die Anwendung verweist, kann das Projekt nicht gestartet werden.  
   
 #### <a name="to-specify-greetingsxaml-as-the-startup-uri"></a>Angeben von Greetings.xaml als Start- URI  
   
@@ -284,7 +277,7 @@ Wenn Sie einige Haltepunkte hinzufügen, können Sie den Code während des Debug
   
 Herzlichen Glückwunsch, Sie haben diese exemplarischen Vorgehensweise abgeschlossen! Sie finden die EXE-Datei, die Sie erstellt haben, in Ihrer Projektmappe und im Projektverzeichnis (...\HelloWPFApp\HelloWPFApp\bin\Release\\). Weitere Beispiele zum Durcharbeiten finden Sie unter [Visual Studio Samples](../ide/visual-studio-samples.md).  
   
-## <a name="see-also"></a>Siehe auch  
- [Neues in Visual Studio 2017](../ide/whats-new-in-visual-studio.md)   
- [Get Started Developing with Visual Studio (Erste Schritte bei der Entwicklung mit Visual Studio)](../ide/get-started-developing-with-visual-studio.md)   
- [Produktivitätstipps](../ide/productivity-tips-for-visual-studio.md)
+## <a name="see-also"></a>Siehe auch
+[Neues in Visual Studio 2017](../ide/whats-new-in-visual-studio.md)   
+[Get Started Developing with Visual Studio (Erste Schritte bei der Entwicklung mit Visual Studio)](../ide/get-started-developing-with-visual-studio.md)   
+[Produktivitätstipps](../ide/productivity-tips-for-visual-studio.md)

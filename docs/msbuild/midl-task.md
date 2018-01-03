@@ -30,17 +30,18 @@ caps.latest.revision: "8"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 99c0e5dfa2c2ffdb9aaf79356c83e925290f0db2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 3dc6bcbf4814a05d05aa69a42e8d19f581e78863
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="midl-task"></a>MIDL-Aufgabe
 Umschließt das MIDL (Microsoft Interface Definition Language)-Compilertool („midl.exe“). Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter „MIDL-Befehlszeilenreferenz“.  
   
 ## <a name="parameters"></a>Parameter  
- In der folgenden Tabelle werden die Parameter der **MIDL**-Aufgabe beschrieben. Die meisten Aufgabenparameter und einige andere Parameter entsprechen einer Befehlszeilenoption.  
+ In der folgenden Tabelle werden die Parameter der **MIDL**-Aufgabe beschrieben. Die meisten Aufgabenparameter und einige Parametersätze entsprechen einer Befehlszeilenoption.  
   
 -   **AdditionalIncludeDirectories**  
   
@@ -124,7 +125,7 @@ Umschließt das MIDL (Microsoft Interface Definition Language)-Compilertool („
   
 -   **ErrorCheckAllocations**  
   
-     Optionaler **boolescher**-Parameter.  
+     Optionaler **Boolean**-Parameter.  
   
      Wenn `true`, stellen Sie sicher, das keine Fehler aufgrund von unzureichendem Arbeitsspeicher aufgetreten sind.  
   
@@ -132,7 +133,7 @@ Umschließt das MIDL (Microsoft Interface Definition Language)-Compilertool („
   
 -   **ErrorCheckBounds**  
   
-     Optionaler **boolescher**-Parameter.  
+     Optionaler **Boolean**-Parameter.  
   
      Wenn `true`, dann wird die Größe der konform-variierenden und variierenden Arrays mit der Übertragungslängenspezifikation abgeglichen.  
   
@@ -140,7 +141,7 @@ Umschließt das MIDL (Microsoft Interface Definition Language)-Compilertool („
   
 -   **ErrorCheckEnumRange**  
   
-     Optionaler **boolescher**-Parameter.  
+     Optionaler **Boolean**-Parameter.  
   
      Wenn `true`, wird überprüft, ob sich die Enumerationswerte im zulässigen Bereich befinden.  
   
@@ -148,7 +149,7 @@ Umschließt das MIDL (Microsoft Interface Definition Language)-Compilertool („
   
 -   **ErrorCheckRefPointers**  
   
-     Optionaler **boolescher**-Parameter.  
+     Optionaler **Boolean**-Parameter.  
   
      Wenn `true`, stellen Sie sicher, dass keine NULL-Verweiszeiger an die Client-Stubs übergeben werden.  
   
@@ -156,7 +157,7 @@ Umschließt das MIDL (Microsoft Interface Definition Language)-Compilertool („
   
 -   **ErrorCheckStubData**  
   
-     Optionaler **boolescher**-Parameter.  
+     Optionaler **Boolean**-Parameter.  
   
      Wenn `true`, wird ein Stub generiert, das Unmarshalling-Ausnahmen auf Serverseite erkennt, und überträgt sie zurück an den Client.  
   
@@ -194,7 +195,7 @@ Umschließt das MIDL (Microsoft Interface Definition Language)-Compilertool („
   
 -   **GenerateStublessProxies**  
   
-     Optionaler **boolescher**-Parameter.  
+     Optionaler **Boolean**-Parameter.  
   
      Wenn `true`, werden vollständig interpretierte Stubs mit Proxys ohne Stubs für Objektschnittstellen generiert.  
   
@@ -202,7 +203,7 @@ Umschließt das MIDL (Microsoft Interface Definition Language)-Compilertool („
   
 -   **GenerateTypeLibrary**  
   
-     Optionaler **boolescher**-Parameter.  
+     Optionaler **Boolean**-Parameter.  
   
      Wenn `true`, dann wird keine Typbibliotheksdatei (.tlb) generiert.  
   
@@ -218,7 +219,7 @@ Umschließt das MIDL (Microsoft Interface Definition Language)-Compilertool („
   
 -   **IgnoreStandardIncludePath**  
   
-     Optionaler **boolescher**-Parameter.  
+     Optionaler **Boolean**-Parameter.  
   
      Wenn `true`, dann sucht die MIDL-Aufgabe nur in den angegebenen Verzeichnissen mithilfe des Schalters **AdditonalIncludeDirectories**, und ignoriert das aktuelle Verzeichnis und die durch die Umgebungsvariable „INCLUDE“ angegebenen Verzeichnisse.  
   
@@ -314,7 +315,7 @@ Umschließt das MIDL (Microsoft Interface Definition Language)-Compilertool („
   
 -   **SuppressCompilerWarnings**  
   
-     Optionaler **boolescher**-Parameter.  
+     Optionaler **Boolean**-Parameter.  
   
      Wenn `true`, dann werden Warnmeldungen aus der MIDL-Aufgabe unterdrückt.  
   

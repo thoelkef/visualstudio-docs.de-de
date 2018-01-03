@@ -18,11 +18,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 819ca48da96e2ff48479edfe94ee7378852be5f1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 73829a3283df5d3648212a79b4ad0b0f88d8b02a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="find-and-replace-environment-options-dialog-box"></a>Suchen und Ersetzen, Umgebung, Dialogfeld "Optionen"
 Verwenden Sie diese Seite des Dialogfelds **Optionen**, um die Meldungsfelder und andere Aspekte eines Such- und Ersetzungsvorgangs zu steuern. Sie können über das Menü **Extras** auf dieses Dialogfeld zugreifen, indem Sie auf **Optionen** klicken, **Umgebung** erweitern und anschließend auf **Suchen und Ersetzen** klicken. Wenn diese Seite nicht in der Liste angezeigt wird, aktivieren Sie im Dialogfeld **Optionen** das Kontrollkästchen **Alle Einstellungen anzeigen**.  

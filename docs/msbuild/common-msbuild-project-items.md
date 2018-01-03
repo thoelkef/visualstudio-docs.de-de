@@ -18,11 +18,12 @@ caps.latest.revision: "17"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 82d4687a72cb0f13291aa01ff37b91afbcc254e9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 931ccda0fd42a01c9afe272ef985380bc3276e6a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="common-msbuild-project-items"></a>Gemeinsame MSBuild-Projektelemente
 In [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ist ein Element ein benannter Verweis auf eine oder mehrere Dateien. Elemente enthalten Metadaten wie Dateinamen, Pfade und Versionsnummern. Alle Projekttypen in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] haben mehrere Elemente gemeinsam. Diese Elemente werden in der Datei microsoft.build.commontypes.xsd definiert.  
@@ -33,22 +34,22 @@ In [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
 ### <a name="reference"></a>Verweis  
  Stellt einen Assemblyverweis (verwaltet) im Projekt dar.  
   
-|Elementname|Beschreibung|  
+|Elementname|description|  
 |---------------|-----------------|  
 |HintPath|Optionale Zeichenfolge. Relativer oder absoluter Pfad der Assembly.|  
-|Name|Optionale Zeichenfolge. Der Anzeigename der Assembly, z. B. "System.Windows.Forms".|  
+|name|Optionale Zeichenfolge. Der Anzeigename der Assembly, z. B. "System.Windows.Forms".|  
 |FusionName|Optionale Zeichenfolge. Gibt den einfachen oder starken Fusionsnamen für das Element an.<br /><br /> Wenn dieses Attribut vorhanden ist, führt dies zu Zeiteinsparungen, da die Assemblydatei zum Abrufen des Fusionsnamens nicht geöffnet werden muss.|  
 |SpecificVersion|Optionaler boolescher Wert. Gibt an, ob nur auf die Version im Fusionsnamen verwiesen werden soll.|  
 |Aliase|Optionale Zeichenfolge. Alle Aliase für den Verweis.|  
-|Privat|Optionaler boolescher Wert. Gibt an, ob der Verweis in den Ausgabeordner kopiert werden soll. Dieses Attribut entspricht der Eigenschaft **Lokale Kopie** des Verweises in der Visual Studio-IDE.|  
+|Private|Optionaler boolescher Wert. Gibt an, ob der Verweis in den Ausgabeordner kopiert werden soll. Dieses Attribut entspricht der Eigenschaft **Lokale Kopie** des Verweises in der Visual Studio-IDE.|  
   
 ### <a name="comreference"></a>COMReference  
  Stellt einen COM-Komponentenverweis (nicht verwaltet) im Projekt dar.  
   
-|Elementname|Beschreibung|  
+|Elementname|description|  
 |---------------|-----------------|  
-|Name|Optionale Zeichenfolge. Der Anzeigename der Komponente.|  
-|Guid|Optionale Zeichenfolge. Eine GUID für die Komponente im Format {12345678-1234-1234-1234-1234567891234}.|  
+|name|Optionale Zeichenfolge. Der Anzeigename der Komponente.|  
+|GUID|Optionale Zeichenfolge. Eine GUID für die Komponente im Format {12345678-1234-1234-1234-1234567891234}.|  
 |VersionMajor|Optionale Zeichenfolge. Der Hauptteil der Versionsnummer der Komponente. Beispielsweise "5", wenn die Versionsnummer "5.46" lautet.|  
 |VersionMinor|Optionale Zeichenfolge. Der zweite Teil der Versionsnummer (Nebenversionsnummer) der Komponente. Beispielsweise "46", wenn die Versionsnummer "5.46" lautet.|  
 |LCID|Optionale Zeichenfolge. Die LocaleID (Gebietsschema-ID) für die Komponente.|  
@@ -58,31 +59,31 @@ In [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
 ### <a name="comfilereference"></a>COMFileReference  
  Stellt eine Liste von Typbibliotheken dar, die an das ResolvedComreference-Ziel übertragen werden.  
   
-|Elementname|Beschreibung|  
+|Elementname|description|  
 |---------------|-----------------|  
 |WrapperTool|Optionale Zeichenfolge. Der Name des Wrappertools, das auf die Komponente angewendet wird, z. B. "tlbimp".|  
   
 ### <a name="nativereference"></a>NativeReference  
  Stellt eine systemeigene Manifestdatei oder einen Verweis auf eine solche Datei dar.  
   
-|Elementname|Beschreibung|  
+|Elementname|description|  
 |---------------|-----------------|  
-|Name|Erforderliche Zeichenfolge. Der Basisname der Manifestdatei.|  
+|name|Erforderliche Zeichenfolge. Der Basisname der Manifestdatei.|  
 |HintPath|Erforderliche Zeichenfolge. Der relative Pfad der Manifestdatei.|  
   
 ### <a name="projectreference"></a>ProjectReference  
  Stellt einen Verweis auf ein anderes Projekt dar.  
   
-|Elementname|Beschreibung|  
+|Elementname|description|  
 |---------------|-----------------|  
-|Name|Optionale Zeichenfolge. Der Anzeigename des Verweises.|  
-|Project|Optionale Zeichenfolge. Eine GUID für den Verweis im Format {12345678-1234-1234-1234-1234567891234}.|  
+|name|Optionale Zeichenfolge. Der Anzeigename des Verweises.|  
+|Projekt|Optionale Zeichenfolge. Eine GUID für den Verweis im Format {12345678-1234-1234-1234-1234567891234}.|  
 |Package|Optionale Zeichenfolge. Der Pfad der Projektdatei, auf die verwiesen wird.|  
   
 ### <a name="compile"></a>Compile  
  Stellt die Quelldateien für den Compiler dar.  
   
-|Elementname|Beschreibung|  
+|Elementname|description|  
 |---------------|-----------------|  
 |DependentUpon|Optionale Zeichenfolge. Gibt die Datei an, von der diese Datei abhängt, um ordnungsgemäß zu kompilieren.|  
 |AutoGen|Optionaler boolescher Wert. Gibt an, ob die Datei für das Projekt von der integrierten [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Entwicklungsumgebung (IDE) generiert wurde.|  
@@ -93,7 +94,7 @@ In [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
 ### <a name="embeddedresource"></a>EmbeddedResource  
  Stellt Ressourcen dar, die in die generierte Assembly eingebettet werden.  
   
-|Elementname|Beschreibung|  
+|Elementname|description|  
 |---------------|-----------------|  
 |DependentUpon|Optionale Zeichenfolge. Gibt die Datei an, von der diese Datei abhängt, um ordnungsgemäß zu kompilieren.|  
 |Generator|Erforderliche Zeichenfolge. Der Name eines die oft ausgegebene Befehlszeilen  Datei-Generators, der über diesem Element ausgeführt wird.|  
@@ -107,7 +108,7 @@ In [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
 ### <a name="content"></a>Inhalt  
  Stellt Dateien dar, die zwar nicht in das Projekt kompiliert werden, jedoch möglicherweise mit dem Projekt eingebettet oder veröffentlicht werden.  
   
-|Elementname|Beschreibung|  
+|Elementname|description|  
 |---------------|-----------------|  
 |DependentUpon|Optionale Zeichenfolge. Gibt die Datei an, von der diese Datei abhängt, um ordnungsgemäß zu kompilieren.|  
 |Generator|Erforderliche Zeichenfolge. Der Name eines die oft ausgegebene Befehlszeilen  Datei-Generators, der über diesem Element ausgeführt wird.|  
@@ -119,10 +120,10 @@ In [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
 |Visible|Optionaler boolescher Wert. Gibt an, ob die Datei im **Projektmappen-Explorer** in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] angezeigt wird.|  
 |CopyToOutputDirectory|Optionale Zeichenfolge. Bestimmt, ob die Datei in das Ausgabeverzeichnis kopiert werden soll. Gültige Werte:<br /><br /> 1.  Nie<br />2.  Immer<br />3.  PreserveNewest|  
   
-### <a name="none"></a>Keine  
+### <a name="none"></a>Keiner  
  Stellt Dateien dar, die keine Rolle im Buildprozess haben sollen.  
   
-|Elementname|Beschreibung|  
+|Elementname|description|  
 |---------------|-----------------|  
 |DependentUpon|Optionale Zeichenfolge. Gibt die Datei an, von der diese Datei abhängt, um ordnungsgemäß zu kompilieren.|  
 |Generator|Erforderliche Zeichenfolge. Der Name eines die oft ausgegebene Befehlszeilen  Datei-Generators, der über diesem Element ausgeführt wird.|  

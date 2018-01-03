@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: c01007e3a1fd71af8c5204130a90b448f28c93f1
-ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
+ms.workload: data-science
+ms.openlocfilehash: 9ee06a96eeb0d7fd0cec7c0f2e22159741767e01
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-r-projects-in-visual-studio"></a>Erstellen von R-Projekten in Visual Studio
 
@@ -40,7 +41,7 @@ Die Datei `.Rhistory` zeichnet alle Befehle auf, die Sie im Fenster [R Interakti
 
 Die Datei `rproject.rproj` behält bestimmte R-spezifische Projekteinstellungen bei, die anderweitig nicht von Visual Studio verwaltet werden:
 
-| Eigenschaft | Standard | Beschreibung |
+| Eigenschaft | Standard | description |
 | --- | --- | --- |
 | Version | 1,0 | Die Version von R Tools für Visual Studio, die für die Projekterstellung verwendet wurde |
 | RestoreWorkspace | Standard | Lädt automatisch vorherige Arbeitsbereichsvariablen aus der Datei `.RData` im Projektverzeichnis |
@@ -66,7 +67,7 @@ Wenn Sie einen vorhandenen Ordner mit `.R`-Dateien in einem Projekt verwalten m�
 
 Zum Öffnen der Seiten mit den Projekteigenschaften klicken Sie mit der rechten Maustaste auf das Projekt im **Projektmappen-Explorer** und wählen **Eigenschaften** aus, oder wählen Sie das Menüelement *Projekt > (Projektname) > Eigenschaften* aus. Das geöffnete Fenster zeigt die Projekteigenschaften an:
 
-| Registerkarte | Eigenschaft | Beschreibung |
+| Registerkarte | Eigenschaft | description |
 | --- | --- | --- |
 | Run | Startup file | Der Name der Datei, die mit dem Befehl **Source startup file**, F5, **Debuggen > Debuggen starten** oder **Debuggen > Starten ohne Debugging** ausgeführt wird. Sie können die Startdatei auch im Projekt über einen Rechtsklick auf die Datei und die Option **Als R-Startskript festlegen** festlegen. |
 | | R Interactive beim Ausführen zurücksetzen | Löscht alle Variablen aus dem Arbeitsbereich des interaktiven Fensters, wenn das Projekt ausgeführt wird. So wird sichergestellt, dass keine Inhalte des Arbeitsbereichs aus vorherigen Ausführungen übrig bleiben. |
@@ -81,7 +82,7 @@ Visual Studio-Projekte unterstützen sowohl über das Kontextmenü als auch übe
 
 R Tools für Visual Studio dem Kontextmenü eines R-Projekts eine Reihe eigener Befehle sowie dem Projekt Dateien und Ordner hinzufügt.
 
-| Befehl | Beschreibung |
+| Befehl | description |
 | --- | --- |
 | Arbeitsverzeichnis hier festlegen | Legt das Arbeitsverzeichnis des Fensters von R Interactive auf den Projektordner fest, der auch für jeden Unterordner eines Projekts verwendet werden kann. |
 | Enthaltenden Ordner öffnen | Öffnet den Windows-Explorer am Speicherort der ausgewählten Datei | 
@@ -96,7 +97,7 @@ RTVS umfasst eine Reihe von Vorlagen für bestimmte Dateitypen. Zugriff auf Vorl
 > [!Note]
 > Die Befehle **Hinzufügen > Neues Element...** zeigen auch allgemeine Dateitypen an, die in der Tabelle nicht aufgelistet sind. Mit **Datei > Neu > Datei...** werden diese Typen stattdessen auf der Registerkarte **Allgemein** aufgeführt.
 
-| Dateityp | Beschreibung |
+| Dateityp | description |
 | --- | --- |
 | R-Skript | Eine Textdatei, die dieselben Befehle enthält, die in der R-Befehlszeile eingegeben werden können |
 | R Markdown | Eine Datei mit einem [R Markdown](rmarkdown.md)-Dokument |
@@ -106,7 +107,6 @@ RTVS umfasst eine Reihe von Vorlagen für bestimmte Dateitypen. Zugriff auf Vorl
 | R-Dokumentation (Dataset) | Eine R-Dokumentationsdatei, die viele Felder mit Kommentaren zum Beschreiben eines Datasets enthält |
 | SQL-Abfrage | Eine leere `.sql`-Datei. Informationen finden Sie unter [SQL Server integration (SQL Server-Integration)](sql-server.md). |
 | Gespeicherte Prozeduren mit R | Eine R-Datei mit untergeordneten SQL-Abfragen und einer Vorlagendatei für die untergeordnete gespeicherte Prozedur. Informationen finden Sie unter [SQL Server integration (SQL Server-Integration)](sql-server.md). |
-
 
 ## <a name="use-multiple-project-types-in-visual-studio"></a>Verwenden von verschiedenen Projekttypen in Visual Studio
 

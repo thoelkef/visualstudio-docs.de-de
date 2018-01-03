@@ -22,11 +22,12 @@ caps.latest.revision: "33"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6acfbee87e64e71ae85290ba74f1464af7181228
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ff9927357b23ced05bbee6db354cbe8e82e62b4d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-collect-performance-data-for-a-web-site"></a>Vorgehensweise: Sammeln von Leistungsdaten für eine Website
 Sie können den **Leistungs-Assistenten** zum Sammeln von Leistungsdaten einer [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web-Anwendung verwenden. Sie können ein Profil einer Webanwendung erstellen, die in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]geöffnet ist, oder Sie können ein Profil einer [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] -Website erstellen, die sich auf dem lokalen Computer befindet und nicht in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE geöffnet ist.  

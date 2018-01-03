@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: cb5128bf6412fa0f06c211f06f0d7f87353d52e0
-ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
+ms.workload: data-science
+ms.openlocfilehash: aca1fc0200e57867418c2a4c5ca7a718afdbc469
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugging-r-in-visual-studio"></a>Debuggen von R in Visual Studio
 
@@ -57,12 +58,12 @@ Wenn Sie im Debugger angehalten werden, werden Sie auch bei der Aufforderung des
 
 Der Umgebungsbrowser unterstützt eine Reihe bestimmter Befehle:
 
-| Befehl | Beschreibung | 
+| Befehl | description |
 | --- | --- |
 | n | next: führt die nächste Anweisung in der Codedatei aus (das gleiche wie „step over“) |
-| s | step into: führt die nächste Anweisung in der Codedatei aus, wobei schrittweise ein Funktionsbereich ausgeführt wird, wenn die nächste Anweisung ein Funktionsaufruf ist. | 
+| s | step into: führt die nächste Anweisung in der Codedatei aus, wobei schrittweise ein Funktionsbereich ausgeführt wird, wenn die nächste Anweisung ein Funktionsaufruf ist. |
 | f | finish: führt den Rest des aktuellen Funktionsbereichs aus und wird an den Aufrufer zurückgegeben (genauso wie bei „step out“). |
-| c, cont | continue: führt das Programm bis zum nächsten Haltepunkt aus. | 
+| c, cont | continue: führt das Programm bis zum nächsten Haltepunkt aus. |
 | Q | quits: beendet die Debugsitzung. |
 | wo | show stack: zeigt die Aufrufliste im interaktiven Fenster an. |
 | help | show help: zeigt verfügbare Befehle im interaktiven Fenster an. |

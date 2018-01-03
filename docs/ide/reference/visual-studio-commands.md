@@ -16,18 +16,19 @@ caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 904350641c9db8bfb62522ee13051d69bb529535
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 5b58cec1da21daf67c8a77d53312e92fdbf4dfb0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-commands"></a>Visual Studio-Befehle
 Mit Visual Studio-Befehlen können Sie Befehle über das Fenster **Befehl** , das Fenster **Direkt** oder das Feld **Suchen/Befehl** aufrufen. In jedem Fall wird das Größer-als-Zeichen (`>`) verwendet, um anzugeben, dass ein Befehl folgt und kein Such- oder Debugvorgang.  
   
  Eine vollständige Liste von Befehlen und ihrer Syntax finden Sie im Dialogfeld **Tastatur, Umgebungsoptionen** .  
   
- Das Escapezeichen für Visual Studio-Befehle ist das Caretzeichen (^). Das direkt darauf folgende Zeichen wird also wörtlich interpretiert und nicht als Steuerzeichen. Dies ermöglicht das Einbetten von geraden Anführungszeichen ("), Leerzeichen, vorangestellten Schrägstrichen, Caretzeichen oder beliebigen anderen Literalzeichen in einen Parameter- oder Schalterwert, mit Ausnahme von Schalternamen. Beispiel:  
+ Das Escapezeichen für Visual Studio-Befehle ist das Caretzeichen (^). Das direkt darauf folgende Zeichen wird also wörtlich interpretiert und nicht als Steuerzeichen. Dies ermöglicht das Einbetten von geraden Anführungszeichen ("), Leerzeichen, vorangestellten Schrägstrichen, Caretzeichen oder beliebigen anderen Literalzeichen in einen Parameter- oder Schalterwert, mit Ausnahme von Schalternamen. Ein auf ein Objekt angewendeter  
   
 ```  
 >Edit.Find ^^t /regex  
@@ -41,7 +42,7 @@ Mit Visual Studio-Befehlen können Sie Befehle über das Fenster **Befehl** , da
   
  Die folgenden Befehle verwenden Argumente und/oder Schalter.  
   
-|Befehlsname|Beschreibung|  
+|Befehlsname|description|  
 |------------------|-----------------|  
 |[Vorhandenes Element hinzufügen](../../ide/reference/add-existing-item-command.md)|Fügt der aktuellen Projektmappe eine vorhandene Datei hinzu und öffnet diese.|  
 |[Vorhandenes Projekt hinzufügen](../../ide/reference/add-existing-project-command.md)|Fügt der aktuellen Projektmappe ein vorhandenes Projekt hinzu.|  

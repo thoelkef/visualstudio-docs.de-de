@@ -19,11 +19,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 577c6a7b76bcecb3c3f5fc7889d75b5fd3ff1ce0
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: multiple
+ms.openlocfilehash: 888f8f39b409559ac4d5c219f024a867f71b2263
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-regular-expressions-in-visual-studio"></a>Verwenden von regulären Ausdrücken in Visual Studio
 
@@ -42,7 +43,7 @@ Hier einige Beispiele:
 
 |Zweck|Ausdruck|Beispiel|
 |-------------|----------------|-------------|
-|Übereinstimmung mit beliebigem Zeichen (mit Ausnahme des Zeilenumbruchs)|.|`a.o` findet „aro“ in „around“ und „abo“ in „about“, jedoch nicht „acro“ in „across“.|  
+|Übereinstimmung mit beliebigem Zeichen (mit Ausnahme des Zeilenumbruchs)|sein.|`a.o` findet „aro“ in „around“ und „abo“ in „about“, jedoch nicht „acro“ in „across“.|  
 |Übereinstimmung mit keinem oder mehreren Vorkommen des vorhergehenden Ausdrucks (wobei die Übereinstimmung möglichst viele Zeichen umfasst).|*|`a*r` findet „r“ in „rack“, „ar“ in „ark“ und „aar“ in „aardvark“.|  
 |Keine oder häufigere Übereinstimmung mit beliebigem Zeichen (Platzhalter *)|.*|c.*e findet „cke“ in „racket“, „comme“ in „comment“ und „code“ in „code“|  
 |Übereinstimmung mit einem oder mehreren Vorkommen des vorhergehenden Ausdrucks (wobei die Übereinstimmung möglichst viele Zeichen umfasst).|+|`e.+e` findet „eede“ in „feeder“, jedoch nicht „ee“.|  

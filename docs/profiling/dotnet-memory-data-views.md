@@ -15,11 +15,12 @@ caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c6bbbc764c7b5275082b6261249d48122ea3c836
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8fa1fb6dbaed5ed43f9a7eb3e69b52e91f43bd7c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="net-memory-data-views"></a>.NET-Arbeitsspeicherdatenansichten
 Dieser Abschnitt enthält Referenzinformationen für die Ansichten und die Berichte von Profiler-Datendateien, die Profilerstellungsdaten für den .NET-Arbeitsspeicher enthalten.  
@@ -75,7 +76,7 @@ Dieser Abschnitt enthält Referenzinformationen für die Ansichten und die Beric
  Führt in eine Profilerstellungs-Datendatei eingefügte ETW- und Samplingereignisse auf.  
   
 ## <a name="related-sections"></a>Verwandte Abschnitte  
- [Datenansichten der Samplingmethode](../profiling/profiler-sampling-method-data-views.md)  
+ [Datenansichten der Profiler-Samplingmethode](../profiling/profiler-sampling-method-data-views.md)  
  Referenzinformationen zu den Ansichten und Berichten für Profiler-Datendateien, die mit der Samplingmethode generiert wurden.  
   
  [Instrumentation Method Data Views (Datenansichten der Instrumentationsmethode)](../profiling/instrumentation-method-data-views.md)  

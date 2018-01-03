@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 3d0dd65ec5ca42d54c16c0c57b919f849a7a0e20
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: python
+ms.openlocfilehash: 2acd8aebda03d7d9809563a6c1959c8dd69bf96e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="step-5-installing-packages-in-your-python-environment"></a>Schritt 5: Installieren von Paketen in Ihrer Python-Umgebung
 
@@ -48,23 +49,22 @@ Die Python-Entwicklercommunity hat Tausende von nützlichen Paketen erzeugt, die
 
 1. Erstellen Sie ein Projekt, indem Sie auf **Datei > Neu > Projekt** klicken und die Vorlage „Python-Anwendung“ auswählen. Fügen Sie folgenden Code in die angezeigte Codedatei ein. Dadurch wird eine Kosinuswelle wie in den vorherigen Schritten des Tutorials erstellt, die dieses Mal jedoch grafisch dargestellt wird:
 
-    ```python  
+    ```python
     import numpy as np     # installed with matplotlib
     import matplotlib.pyplot as plt
     from math import radians
 
-    def main():  
+    def main():
         x = np.arange(0, radians(1800), radians(12))
         plt.plot(x, np.cos(x), 'b')
         plt.show()
-                    
+
     main()
-    ```  
+    ```
 
 1. Führen Sie das Programm mit (F5) oder ohne Debugger (STRG+F5) aus, um die Ausgabe anzuzeigen:
 
   ![Ausgabe des matplotlib-Beispiels](media/environments-add-matplotlib3.png)
-
 
 ## <a name="next-steps"></a>Nächste Schritte
 
@@ -72,4 +72,5 @@ Die Python-Entwicklercommunity hat Tausende von nützlichen Paketen erzeugt, die
 > [Working with Git (Arbeiten mit Git)](vs-tutorial-01-06.md)
 
 ### <a name="going-deeper"></a>Vertiefung
+
 - [Python-Umgebungen](python-environments.md)

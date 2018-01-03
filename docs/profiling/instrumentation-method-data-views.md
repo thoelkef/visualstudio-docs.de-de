@@ -15,11 +15,12 @@ caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 595297dbafb35ed8b3bb376ce5ddfee484ac2442
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: caf3c6168e81b7384fbf056f5365614950b24ff2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="instrumentation-method-data-views"></a>Instrumentierungsmethoden-Datenansichten
 Dieser Abschnitt enthält Referenzinformationen zu den Ansichten und Berichten von Profiler-Datendateien, die mit der Instrumentierungsmethode generiert werden.  
@@ -48,7 +49,7 @@ Dieser Abschnitt enthält Referenzinformationen zu den Ansichten und Berichten v
  Listet den Prozessstart, das Prozessende und die Lebensdauer für alle Prozesse auf, für die ein Profil erstellt wurde.  
   
 ## <a name="related-sections"></a>Verwandte Abschnitte  
- [Datenansichten der Samplingmethode](../profiling/profiler-sampling-method-data-views.md)  
+ [Datenansichten der Profiler-Samplingmethode](../profiling/profiler-sampling-method-data-views.md)  
  Referenzinformationen zu den Ansichten und Berichten für Profiler-Datendateien, die mit der Samplingmethode generiert wurden.  
   
  [.NET-Arbeitsspeicherdatenansichten](../profiling/dotnet-memory-data-views.md)  

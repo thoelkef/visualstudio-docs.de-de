@@ -14,19 +14,20 @@ caps.latest.revision: "20"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5ad7ecfb61e1d8ecb7bcb000a659b798eb651461
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: a126ec0329695455013ca8625a8aeb774cf2ad36
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="understanding-performance-collection-methods"></a>Grundlagen zu Leistungserfassungsmethoden
 Von den Profilerstellungstools für Visual Studio werden fünf Methoden zum Sammeln von Leistungsdaten bereitgestellt. In diesem Thema werden die verschiedenen Methoden beschrieben sowie einige Szenarien aufgeführt, in denen die Datensammlung mithilfe einer bestimmten Methode erfolgen kann.  
   
 > [!NOTE]
->  Verbesserte Sicherheitsfeatures in Windows 8 und Windows Server 2012 erforderten tiefgreifende Änderungen bei der Datenerfassung des Visual Studio-Profilers auf diesen Plattformen. Außerdem benötigen UWP-Apps neue Erfassungsmethoden. Siehe [Leistungstools für Windows 8- und Windows Server 2012-Anwendungen](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
+>  Verbesserte Sicherheitsfunktionen in Windows 8 und Windows Server 2012 erforderten tiefgreifende Änderungen bei der Datenerfassung des Visual Studio-Profilers auf diesen Plattformen. Außerdem benötigen UWP-Apps neue Erfassungsmethoden. Siehe [Profilerstellungstools für Windows 8- und Windows Server 2012-Anwendungen](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
-|Methode|Beschreibung|  
+|Methode|description|  
 |------------|-----------------|  
 |[Sampling](#sampling)|Sammelt statistische Daten zu den von einer Anwendung ausgeführten Aufgaben.|  
 |[Instrumentierung](#instrumentation)|Dient zum Sammeln ausführlicher Zeitsteuerungsinformationen zu den einzelnen Funktionsaufrufen.|  
@@ -53,7 +54,7 @@ Von den Profilerstellungstools für Visual Studio werden fünf Methoden zum Samm
   
  [Grundlagen zu Samplingdatenwerten](../profiling/understanding-sampling-data-values.md)  
   
- [Datenansichten der Samplingmethode](../profiling/profiler-sampling-method-data-views.md)  
+ [Datenansichten der Profiler-Samplingmethode](../profiling/profiler-sampling-method-data-views.md)  
   
 ##  <a name="instrumentation"></a> Instrumentierung  
  Bei der Instrumentierungsmethode zur Profilerstellung werden ausführliche Zeitsteuerungsinformationen für die Funktionsaufrufe in der Anwendung gesammelt, für die das Profil erstellt wird. Mögliche Anwendungsbereiche der instrumentierten Profilerstellung:  
@@ -87,13 +88,13 @@ Von den Profilerstellungstools für Visual Studio werden fünf Methoden zum Samm
   
 -   In der Parallelitätsschnellansicht werden grafische Informationen angezeigt, die Sie verwenden können, um Leistungsengpässe, CPU-Unterauslastungen, Threadkonflikte, Threadmigration, Synchronisierungsverzögerungen, Bereiche überlappender E/A und andere Informationen zu suchen. Gegebenenfalls wird die grafische Ausgabe mit Aufruflisten- und Quellcodedaten verknüpft. Die Daten für die Parallelitätsschnellansicht können nur für Befehlszeilen- und Windows-Anwendungen gesammelt werden.  
   
- [Grundlagen zu Ressourcenkonflikt-Datenwerten](../profiling/understanding-resource-contention-data-values.md)  
+ [Grundlagen zu Datenwerten der Ressourcenkonflikten](../profiling/understanding-resource-contention-data-values.md)  
   
  [Sammeln von Parallelitätsdaten zu Threads und Prozessen](../profiling/collecting-thread-and-process-concurrency-data.md)  
   
  [Ansichten für Ressourcenkonfliktdaten](../profiling/resource-contention-data-views.md)  
   
- [Parallelitätsschnellansicht](../profiling/concurrency-visualizer.md)  
+ [Nebenläufigkeitsschnellansicht](../profiling/concurrency-visualizer.md)  
   
 ##  <a name="net_memory"></a> .NET-Arbeitsspeicher  
  Bei der .NET-Speicherbelegungsmethode zur Profilerstellung wird der Prozessor des Computers bei jeder Belegung eines .NET Framework-Objekts in einer Anwendung unterbrochen, für die das Profil erstellt wird. Wenn auch Objektlebensdauerdaten erfasst werden, unterbricht der Profiler den Prozessor nach jeder .NET Framework-Garbage Collection.  

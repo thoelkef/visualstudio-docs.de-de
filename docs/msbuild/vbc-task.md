@@ -21,11 +21,12 @@ caps.latest.revision: "19"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 5fd338079978cec84c93a22d262d25f575d32e4c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 1105701c5c84de200dca674a117d7b464ba9fd62
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="vbc-task"></a>Vbc-Aufgabe
 Umschließt die Datei „vbc.exe“, die ausführbare Dateien (EXE), Dynamic Link Libraries (DLL) oder Codemodule (NETMODULE) produziert. Weitere Informationen zu vbc.exe finden Sie unter [Visual Basic-Befehlszeilencompiler](/dotnet/visual-basic/reference/command-line-compiler/index).  
@@ -33,7 +34,7 @@ Umschließt die Datei „vbc.exe“, die ausführbare Dateien (EXE), Dynamic Lin
 ## <a name="parameters"></a>Parameter  
  In der folgenden Tabelle werden die Parameter der `Vbc` -Aufgabe beschrieben.  
   
-|Parameter|Beschreibung|  
+|Parameter|description|  
 |---------------|-----------------|  
 |`AdditionalLibPaths`|Optionaler `String[]` -Parameter.<br /><br /> Gibt weitere Ordner an, in denen nach im Verweisattribut angegebenen Assemblys gesucht werden soll|  
 |`AddModules`|Optionaler `String[]` -Parameter.<br /><br /> Bewirkt, dass der Compiler dem Projekt, das Sie aktuell kompilieren, sämtliche Typinformationen aus den angegebenen Dateien bereitstellt. Dieser Parameter entspricht dem Schalter [/addmodule](/dotnet/visual-basic/reference/command-line-compiler/addmodule) des Compilers „vbc.exe“.|  
@@ -48,11 +49,11 @@ Umschließt die Datei „vbc.exe“, die ausführbare Dateien (EXE), Dynamic Lin
 |`ErrorReport`|Optionaler `String` -Parameter.<br /><br /> Gibt an, wie interne Compilerfehler von der Aufgabe gemeldet werden sollen. Dieser Parameter kann die folgenden Werte aufweisen:<br /><br /> -   `prompt`<br />-   `send`<br />-   `none`<br /><br /> Wenn `prompt` angegeben ist und ein interner Compilerfehler auftritt, wird der Benutzer gefragt, ob Fehlerdaten an Microsoft gesendet werden sollen.<br /><br /> Wenn `send` angegeben ist und ein interner Compilerfehler auftritt, sendet die Aufgabe Fehlerdaten an Microsoft.<br /><br /> Der Standardwert ist `none`, der Fehler im nur als Textausgabe berichtet.<br /><br /> Dieser Parameter entspricht dem Schalter [/errorreport](/dotnet/visual-basic/reference/command-line-compiler/errorreport) des Compilers „vbc.exe“.|  
 |`FileAlignment`|Optionaler `Int32` -Parameter.<br /><br /> Gibt die Ausrichtung der Abschnitte der Ausgabedatei in Bytes an. Dieser Parameter kann die folgenden Werte aufweisen:<br /><br /> -   `512`<br />-   `1024`<br />-   `2048`<br />-   `4096`<br />-   `8192`<br /><br /> Dieser Parameter entspricht dem Schalter [/filealign](/dotnet/visual-basic/reference/command-line-compiler/filealign) des Compilers „vbc.exe“.|  
 |`GenerateDocumentation`|Optionaler `Boolean` -Parameter.<br /><br /> Wenn der Wert `true` lautet, werden Dokumentationsinformationen generiert und zusammen mit dem Namen der ausführbaren Datei oder der Bibliothek, die von der Aufgabe erstellt wurde, in einer XML-Datei gespeichert. Weitere Informationen finden Sie unter [/doc](/dotnet/visual-basic/reference/command-line-compiler/doc).|  
-|`Imports`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter.<br /><br /> Importiert Namespaces aus den angegebenen Auflistungen. Dieser Parameter entspricht dem Schalter [/imports](/dotnet/visual-basic/reference/command-line-compiler/imports) des Compilers „vbc.exe“.|  
+|`Imports`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter<br /><br /> Importiert Namespaces aus den angegebenen Auflistungen. Dieser Parameter entspricht dem Schalter [/imports](/dotnet/visual-basic/reference/command-line-compiler/imports) des Compilers „vbc.exe“.|  
 |`KeyContainer`|Optionaler `String` -Parameter.<br /><br /> Gibt den Namen des kryptografischen Schlüsselcontainers an. Dieser Parameter entspricht dem Schalter [/keycontainer](/dotnet/visual-basic/reference/command-line-compiler/keycontainer) des Compilers „vbc.exe“.|  
 |`KeyFile`|Optionaler `String` -Parameter.<br /><br /> Gibt den Dateinamen mit dem kryptografischen Schlüssel an. Weitere Informationen finden Sie unter [/keyfile](/dotnet/visual-basic/reference/command-line-compiler/keyfile).|  
 |`LangVersion`|Optionaler <xref:System.String?displayProperty=fullName> -Parameter.<br /><br /> Gibt die Sprachversion (entweder 9 oder 10) an|  
-|`LinkResources`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter.<br /><br /> Erstellt einen Link zu einer .NET Framework-Ressource in der Ausgabedatei. Die Ressourcendatei wird nicht in der Ausgabedatei platziert. Dieser Parameter entspricht dem Schalter [/linkresource](/dotnet/visual-basic/reference/command-line-compiler/linkresource) des Compilers „vbc.exe“.|  
+|`LinkResources`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter<br /><br /> Erstellt einen Link zu einer .NET Framework-Ressource in der Ausgabedatei. Die Ressourcendatei wird nicht in der Ausgabedatei platziert. Dieser Parameter entspricht dem Schalter [/linkresource](/dotnet/visual-basic/reference/command-line-compiler/linkresource) des Compilers „vbc.exe“.|  
 |`MainEntryPoint`|Optionaler `String` -Parameter.<br /><br /> Gibt die Klasse oder das Modul mit dem Speicherort der `Sub Main`-Prozedur an. Dieser Parameter entspricht dem [/main](/dotnet/visual-basic/reference/command-line-compiler/main)-Schalter des Compilers „vbc.exe“.|  
 |`ModuleAssemblyName`|Optionaler `String` -Parameter.<br /><br /> Gibt die Assembly an, zu der dieses Modul gehört.|  
 |`NoConfig`|Optionaler `Boolean` -Parameter.<br /><br /> Gibt an, dass der Compiler die Datei „vbc.rsp“ nicht verwenden soll. Dieser Parameter entspricht dem Schalter [/noconfig](/dotnet/visual-basic/reference/command-line-compiler/noconfig) des Compilers „vbc.exe“.|  
@@ -68,13 +69,13 @@ Umschließt die Datei „vbc.exe“, die ausführbare Dateien (EXE), Dynamic Lin
 |`OptionStrictType`|Optionaler `String` -Parameter.<br /><br /> Gibt an, welche strikte Typsemantik eine Warnung generiert. Derzeit wird nur „custom“ unterstützt. Dieser Parameter entspricht dem Schalter [/optionstrict](/dotnet/visual-basic/reference/command-line-compiler/optionstrict) des Compilers „vbc.exe“.|  
 |`OutputAssembly`|Optionaler `String`-Ausgabeparameter.<br /><br /> Gibt den Namen der Ausgabedatei an. Dieser Parameter entspricht dem Schalter [/out](/dotnet/visual-basic/reference/command-line-compiler/out) des Compilers „vbc.exe“.|  
 |`Platform`|Optionaler `String` -Parameter.<br /><br /> Gibt die Prozessorplattform an, die das Ziel der Ausgabedatei darstellen soll. Dieser Parameter kann den Wert `x86`, `x64`, `Itanium` oder `anycpu` aufweisen. Der Standardwert ist `anycpu`. Dieser Parameter entspricht dem Schalter [/platform](/dotnet/visual-basic/reference/command-line-compiler/platform) des Compilers „vbc.exe“.|  
-|`References`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter.<br /><br /> Bewirkt, dass die Aufgabe öffentliche Typinformationen aus den angegebenen Elementen in das aktuelle Projekt importiert. Dieser Parameter entspricht dem Schalter [/reference](/dotnet/visual-basic/reference/command-line-compiler/reference) des Compilers „vbc.exe“.|  
+|`References`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter<br /><br /> Bewirkt, dass die Aufgabe öffentliche Typinformationen aus den angegebenen Elementen in das aktuelle Projekt importiert. Dieser Parameter entspricht dem Schalter [/reference](/dotnet/visual-basic/reference/command-line-compiler/reference) des Compilers „vbc.exe“.|  
 |`RemoveIntegerChecks`|Optionaler `Boolean` -Parameter.<br /><br /> Wenn der Wert `true` ist, werden die Fehlerüberprüfungen auf Ganzzahlüberlauf deaktiviert. Der Standardwert ist `false`. Dieser Parameter entspricht dem [/removeintchecks](/dotnet/visual-basic/reference/command-line-compiler/removeintchecks) Schalter des Compilers „vbc.exe“.|  
-|`Resources`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter.<br /><br /> Bettet eine .NET Framework-Ressource in die Ausgabedatei ein. Dieser Parameter entspricht dem Schalter [/resource](/dotnet/visual-basic/reference/command-line-compiler/resource) des Compilers „vbc.exe“.|  
-|`ResponseFiles`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter.<br /><br /> Gibt die Antwortdatei an, die Befehle für den die Aufgabe enthalten. Dieser Parameter entspricht der Option [@ (Antwortdatei angeben)](/dotnet/visual-basic/reference/command-line-compiler/specify-response-file) des Compilers „vbc.exe“.|  
+|`Resources`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter<br /><br /> Bettet eine .NET Framework-Ressource in die Ausgabedatei ein. Dieser Parameter entspricht dem Schalter [/resource](/dotnet/visual-basic/reference/command-line-compiler/resource) des Compilers „vbc.exe“.|  
+|`ResponseFiles`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter<br /><br /> Gibt die Antwortdatei an, die Befehle für den die Aufgabe enthalten. Dieser Parameter entspricht der Option [@ (Antwortdatei angeben)](/dotnet/visual-basic/reference/command-line-compiler/specify-response-file) des Compilers „vbc.exe“.|  
 |`RootNamespace`|Optionaler `String` -Parameter.<br /><br /> Gibt den Stammnamespace für alle Typdeklarationen an. Dieser Parameter entspricht dem Schalter [/rootnamespace](/dotnet/visual-basic/reference/command-line-compiler/rootnamespace) des Compilers „vbc.exe“.|  
 |`SdkPath`|Optionaler `String` -Parameter.<br /><br /> Gibt den Speicherort von „mscorlib.dll“ und „microsoft.visualbasic.dll“ an. Dieser Parameter entspricht dem Schalter [/sdkpath](/dotnet/visual-basic/reference/command-line-compiler/sdkpath) des Compilers „vbc.exe“.|  
-|`Sources`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter.<br /><br /> Gibt mindestens eine [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]-Quelldatei an.|  
+|`Sources`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter<br /><br /> Gibt mindestens eine [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]-Quelldatei an.|  
 |`TargetCompactFramework`|Optionaler `Boolean` -Parameter.<br /><br /> Wenn der Wert `true` ist, richtet sich die Aufgabe an das [!INCLUDE[Compact](../extensibility/includes/compact_md.md)]. Dieser Schalter entspricht dem Schalter [/netcf](/dotnet/visual-basic/reference/command-line-compiler/netcf) des Compilers „vbc.exe“.|  
 |`TargetType`|Optionaler `String` -Parameter.<br /><br /> Gibt das Dateiformat der Ausgabedatei an. Dieser Parameter kann unterschiedliche Werte aufweisen: `library` erstellt eine Codebibliothek, `exe` erstellt eine Konsolenanwendung, `module` erstellt ein Modul, und `winexe` erstellt ein Windows-Programm. Der Standardwert ist `library`. Dieser Parameter entspricht dem Schalter [/target](/dotnet/visual-basic/reference/command-line-compiler/target) des Compilers „vbc.exe“.|  
 |`Timeout`|Optionaler `Int32` -Parameter.<br /><br /> Gibt die Zeitdauer in Millisekunden an, nach der die ausführbare Datei der Aufgabe beendet wird. Der Standardwert ist `Int.MaxValue`. Dieser gibt an, dass es kein Zeitlimit gibt.|  
@@ -105,4 +106,4 @@ Umschließt die Datei „vbc.exe“, die ausführbare Dateien (EXE), Dynamic Lin
 ## <a name="see-also"></a>Siehe auch  
  [Visual Basic-Befehlszeilencompiler](/dotnet/visual-basic/reference/command-line-compiler/index)   
  [Tasks (Aufgaben)](../msbuild/msbuild-tasks.md)   
- [Task Reference](../msbuild/msbuild-task-reference.md) (MSBuild-Aufgabenreferenz)
+ [Aufgabenreferenz](../msbuild/msbuild-task-reference.md)

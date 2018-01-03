@@ -21,11 +21,12 @@ caps.latest.revision: "27"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: bb7444c529cc4ba592574ba38566235cb13c4169
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 1dc0d1af8c79fe95ea091ac691519653b59a9648
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="generatedeploymentmanifest-task"></a>GenerateDeploymentManifest-Aufgabe
 Generiert ein [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]-Bereitstellungsmanifest. Ein [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]-Bereitstellungsmanifest beschreibt die Bereitstellung einer Anwendung, indem eine eindeutige Identität für die Bereitstellung definiert wird, Merkmale der Bereitstellung wie Installations- oder Onlinemodus angegeben werden, Einstellungen für Anwendungsupdates und Updatepfade festgelegt werden und das entsprechende [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]-Anwendungsmanifest angegeben wird.  
@@ -33,7 +34,7 @@ Generiert ein [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]-
 ## <a name="parameters"></a>Parameter  
  In der folgenden Tabelle werden die Parameter für die `GenerateDeploymentManifest`-Aufgabe beschrieben.  
   
-|Parameter|Beschreibung|  
+|Parameter|description|  
 |---------------|-----------------|  
 |`AssemblyName`|Optionaler `String` -Parameter.<br /><br /> Gibt das `Name`-Feld der Assemblyidentität für das generierte Manifest an. Wenn dieser Parameter nicht angegeben wird, wird der Name vom `EntryPoint`-Parameter oder `InputManifest`-Parameter abgeleitet. Wenn der Name nicht abgeleitet werden kann, löst die Aufgabe einen Fehler aus.|  
 |`AssemblyVersion`|Optionaler `String` -Parameter.<br /><br /> Gibt das `Version`-Feld der Assemblyidentität für das generierte Manifest an. Wenn dieser Parameter nicht angegeben wird, verwendet die Aufgabe den Wert „1.0.0.0“.|  

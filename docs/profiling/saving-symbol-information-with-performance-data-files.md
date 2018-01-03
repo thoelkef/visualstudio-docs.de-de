@@ -15,11 +15,12 @@ caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 89913922d4c806e591d6a488f35242444d16ceb0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: dd963c269ee5fe18d3f490bf85bab5dcf3afbf9a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="saving-symbol-information-with-performance-data-files"></a>Speichern von symbolischen Informationen mittels Profilerstellungsdatendateien
 Wenn Sie das Integrated Development Environment (IDE) von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] verwenden, um Dateien zu analysieren, und Ihre VSP-Datei auf einen anderen Computer verschieben möchten, müssen Sie die Leistungsprojekteinstellungen festlegen, um Symbol in Ihrer Berichtsdatei zu speichern oder zu *serialisieren*. Dadurch vergrößert sich die Berichtsdatei. Die Serialisierung von Symbolen ist aus zwei Gründen erforderlich:  

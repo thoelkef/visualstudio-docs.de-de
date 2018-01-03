@@ -15,11 +15,12 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e4157b6292a292274a24242fddc46fb1f707247e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7ae9531eb344cf08599f1c69bcc0842f38f10df1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="common-data-views"></a>Allgemeine Datenansichten
 Dieser Abschnitt enthält Referenzinformationen über die Ansichten und Berichte von Profiler-Datendateien, die alle Profilerstellungsmethoden gemeinsam haben.  
@@ -53,10 +54,10 @@ Dieser Abschnitt enthält Referenzinformationen über die Ansichten und Berichte
  Führt in eine Profilerstellungs-Datendatei eingefügte ETW- und Samplingereignisse auf.  
   
 ## <a name="related-sections"></a>Verwandte Abschnitte  
- [Datenansichten der Samplingmethode](../profiling/profiler-sampling-method-data-views.md)  
+ [Datenansichten der Profiler-Samplingmethode](../profiling/profiler-sampling-method-data-views.md)  
  Referenzinformationen zu den Ansichten und Berichten für Profiler-Datendateien, die mit der Samplingmethode generiert wurden.  
   
- [Instrumentierungsmethoden-Datenansichten](../profiling/instrumentation-method-data-views.md)  
+ [Datenansichten der Instrumentierungsmethode](../profiling/instrumentation-method-data-views.md)  
  Referenzinformationen zu den Ansichten und Berichten für Profiler-Datendateien, die mit der Instrumentierungsmethode generiert wurden.  
   
  [.NET-Arbeitsspeicherdatenansichten](../profiling/dotnet-memory-data-views.md)  

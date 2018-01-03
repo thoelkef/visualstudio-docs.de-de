@@ -18,11 +18,12 @@ caps.latest.revision: "49"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 82fada9e9b043511fe94cab6cae99ee9e521f84b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: af5636866e2d91cc5aac5c8054a92961aeb3d042
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="vsperfcmd"></a>VSPerfCmd
 Das Tool **VSPerfCmd.exe** wird zum Starten und Beenden der Sammlung von Leistungsdaten verwendet. Es verwendet die folgende Syntax:  
@@ -33,7 +34,7 @@ VSPerfCmd [/U] [/options]
   
  In den folgenden Tabellen werden die Optionen des Tools **VSPerfCmd.exe** beschrieben:  
   
-|Option|Beschreibung|  
+|Option|description|  
 |------------|-----------------|  
 |**U**|Die umgeleitete Konsolenausgabe wird als Unicode geschrieben. Es muss sich um die erste angegebene Option handeln.|  
 |[Start](../profiling/start.md) **:** `mode`|Startet den Profilerstellungsdienst im angegebenen Modus.|  
@@ -59,7 +60,7 @@ VSPerfCmd [/U] [/options]
 ## <a name="sampling-method-options"></a>Optionen der Samplingmethode  
  Die folgenden Optionen sind nur beim Verwenden der Samplingmethode für die Profilerstellung verfügbar.  
   
-|Option|Beschreibung|  
+|Option|description|  
 |------------|-----------------|  
 |[Launch](../profiling/launch.md) **:** *Executable*|Startet die angegebene Anwendung und beginnt mit der Profilerstellung.|  
 |[Args](../profiling/args.md) **:** *Arguments*|Gibt Befehlszeilenargumente an, die an die Anwendung übergeben werden sollen.|  
@@ -71,7 +72,7 @@ VSPerfCmd [/U] [/options]
 ### <a name="sampling-interval-options"></a>Samplingintervalloptionen  
  Die folgenden Optionen geben den Typ und die Dauer von Samplingintervallen an. Die Standardeinstellung ist **Timer**. Mit der **Counter**-Option können Sie auch einen CPU-Leistungsindikator als Intervall angeben. Diese Optionen können nur mit **Launch** oder dem ersten **Attach** einer Profilerstellungssitzung angegeben werden.  
   
-|Option|Beschreibung|  
+|Option|description|  
 |------------|-----------------|  
 |[PF](../profiling/pf.md)[**:***n*]|Führt ein Sampling bei jedem n-ten Seitenfehler durch (Standard=10).|  
 |[Sys](../profiling/sys-vsperfcmd.md)[**:***n*]|Führt ein Sampling bei jedem n-ten Systemaufruf durch (Standard=10).|  
@@ -82,7 +83,7 @@ VSPerfCmd [/U] [/options]
   
  Administratoroptionen müssen an einer Eingabeaufforderung ausgeführt werden, die mit Administratorrechten ausgeführt wird.  
   
-|Option|Beschreibung|  
+|Option|description|  
 |------------|-----------------|  
 |**Admin:Security** \<**ALLOW|DENY**> *Right*[ *Right*] \<*User*|*Group*>|Gewährt oder verweigert dem angegebenen Benutzer oder der angegebenen Gruppe den Zugriff auf die Profilerstellungsdienste.<br /><br /> `Right` kann Folgendes sein:<br /><br /> CrossSession: Gewährt dem Benutzer Zugriff auf den Dienst für die sitzungsübergreifende Profilerstellung.<br /><br /> SampleProfiling: Gewährt dem Benutzer Zugriff auf den Treiber für die Sampling-Profilerstellung. Wird auch für den Zugriff auf Kernelübergangsinformationen während der Erstellung von Ablaufverfolgungsprofilen verwendet.<br /><br /> FullAccess: Gewährt dem Benutzer Zugriff sowohl auf CrossSession als auch auf SampleProfiling.|  
 |**Admin:Security, List**|Listet den aktuellen Zustand von Profilerstellungsdiensten und Benutzerberechtigungen auf.|  

@@ -24,11 +24,12 @@ caps.latest.revision: "22"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9e83f20106d4165e861c23ade178a86838a41f58
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 53fea09175d9d9653dd4552832cd511ed7900b8e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="profiling-on-hpc-high-performance-computing-clusters"></a>Profilerstellung bei HPC-Clustern
 Sie können ein Profil auf Berechnungsknoten von Microsoft Windows HPC-Clustern mithilfe der Samplingmethode für die [!INCLUDE[vsPreExt](../profiling/includes/vspreext_md.md)]-oder [!INCLUDE[vsUltExt](../profiling/includes/vsultext_md.md)]-Profilerstellungstools erstellen. Weitere Informationen zu HPC finden Sie unter [Windows HPC](http://go.microsoft.com/fwlink/?LinkId=165393) auf der Microsoft-Website.  
@@ -126,7 +127,7 @@ Sie können ein Profil auf Berechnungsknoten von Microsoft Windows HPC-Clustern 
   
 ### <a name="hpc-launch-properties"></a>HPC-Starteigenschaften  
   
-|Eigenschaft|Beschreibung|  
+|Eigenschaft|description|  
 |--------------|-----------------|  
 |**Hauptknoten**|Gibt den Computer an, der sich wie der HPC-Hauptknoten in der Profilerstellung verhält.|  
 |**Anzahl der Prozesse**|Gibt die Anzahl der Instanzen der Anwendung an, die in der Anwendung mit der Profilerstellung ausgeführt werden.|  
@@ -137,7 +138,7 @@ Sie können ein Profil auf Berechnungsknoten von Microsoft Windows HPC-Clustern 
   
 ### <a name="advanced-properties"></a>Erweiterte Eigenschaften  
   
-|Eigenschaft|Beschreibung|  
+|Eigenschaft|description|  
 |--------------|-----------------|  
 |**Projektname**|Der Name des aktuellen [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]-Projekts oder -Lösung.|  
 |**Bereinigen beim Beenden des Profilers**|Wenn TRUE, werden die Binärdateien entfernt, die in das Ausführungsverzeichnis bereitgestellt wurden. Durch das Benutzerprogramm erstellte Dateien und Verzeichnisse werden in diesem Schritt nicht entfernt. Wenn das Ausführungsverzeichnis und das Bereitstellungsverzeichnis von der IDE erstellt wurden, wird die IDE versuchen, diese zu entfernen. Dies geschieht nicht, wenn sie Dateien haben, die nicht von der IDE bereitgestellt wurden.|  

@@ -12,11 +12,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6e187498656f1fd781d26e6b04426621bd2f3c3c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e8a94b52ba8d2fc0ce4208014e40ab3821ecb1e9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="processon-and-processoff"></a>ProcessOn und ProcessOff
 Die Unterbefehle **ProcessOff** und **ProcessOn** von „VSPerfCmd.exe“ halten die Profilerstellung für den angegebenen Prozess in einer Befehlszeilen-Profilerstellungssitzung an bzw. setzen sie fort. **ProcessOff** stoppt die Profilerstellung des Prozesses, und **ProcessOn** startet sie.  
@@ -45,7 +46,7 @@ VSPerfCmd.exe /{ProcessOff|ProcessOn}:PID [Options]
  Der ganzzahlige Bezeichner des Prozesses zum Starten oder Beenden. Prozess-IDs werden auf der Registerkarte „Prozesse“ des Windows Task-Managers aufgeführt.  
   
 ## <a name="required-subcommands"></a>Erforderliche Unterbefehle  
- Keine  
+ Keiner  
   
 ## <a name="valid-subcommands"></a>Gültige Unterbefehle  
  **ProcessOn** und **ProcessOff** können in Befehlszeilen angegeben werden, die auch die folgenden Unterbefehle enthalten:  

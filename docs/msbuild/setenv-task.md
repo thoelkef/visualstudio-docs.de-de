@@ -22,11 +22,12 @@ caps.latest.revision: "6"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 0223d57cf4c16166149b1fc9e8903f563b724d20
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 23b4f8a116287d7bfe524173f9f88040ba5f1100
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="setenv-task"></a>SetEnv-Aufgabe
 Legt den Wert einer bestimmten Umgebungsvariable fest oder löscht ihn.  
@@ -34,7 +35,7 @@ Legt den Wert einer bestimmten Umgebungsvariable fest oder löscht ihn.
 ## <a name="parameters"></a>Parameter  
  In der folgenden Tabelle werden die Parameter der **SetEnv**-Aufgabe beschrieben.  
   
-|Parameter|Beschreibung|  
+|Parameter|description|  
 |---------------|-----------------|  
 |**Name**|Erforderlicher **String**-Parameter.<br /><br /> Der Name einer Umgebungsvariablen.|  
 |**OutputEnvironmentVariable**|Optionaler **String**-Ausgabeparameter.<br /><br /> Enthält den Wert, der der Umgebungsvariablen zugewiesen ist, die durch den Parameter **Name** angegeben wird.|  

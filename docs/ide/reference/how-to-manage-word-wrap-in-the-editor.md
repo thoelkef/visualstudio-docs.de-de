@@ -16,11 +16,12 @@ caps.latest.revision: "8"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 43217eeac5722923daca289113f3f5407ae7c649
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e813e51511b88397f0accc637e85d9e546b48c47
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-manage-word-wrap-in-the-editor"></a>Gewusst wie: Verwalten des Zeilenumbruchs im Editor
 Sie können die Option **Zeilenumbruch** aktivieren und deaktivieren. Wenn diese Option aktiviert ist, wird der Teil einer langen Zeile, der über die aktuelle Breite des Code-Editor-Fensters hinausgeht, auf der nächsten Zeile angezeigt. Wenn diese Option deaktiviert ist, können Sie nach rechts scrollen, um ans Ende von langen Zeilen zu gelangen, z.B. um die Verwendung der Zeilennummerierung zu erleichtern.  
@@ -38,7 +39,7 @@ Sie können die Option **Zeilenumbruch** aktivieren und deaktivieren. Wenn diese
   
 2.  Wählen Sie im Ordner **Text-Editor** im Unterordner **Alle Sprachen** die Option **Allgemein** aus, um diese Option global festzulegen.  
   
-     – oder –  
+     - oder -  
   
      Wählen Sie die Optionen **Allgemein** im Unterordner für die Sprache aus, in der Sie programmieren.  
   

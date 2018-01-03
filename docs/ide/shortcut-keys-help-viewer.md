@@ -15,11 +15,12 @@ caps.latest.revision: "22"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 04d63762eda13bd0b21f6532f1d401cdef638ea6
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: 17f71324031bfdf01b32151288257b97c036056b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="shortcut-keys-help-viewer"></a>Tastenkombinationen (Help Viewer)
 Sie können mit den Tastenkombinationen in der folgenden Tabelle durch den Microsoft Help Viewer navigieren:  
@@ -33,12 +34,12 @@ Sie können mit den Tastenkombinationen in der folgenden Tabelle durch den Micro
 |Symbolleiste|ALT + NACH-RECHTS-TASTE|Nächste Seite anzeigen|  
 |Symbolleiste|ALT + POS1|Startseite von Help Reviewer anzeigen|  
 |Symbolleiste|STRG+ S|Markiert das aktuelle Thema im Inhaltsverzeichnis (auf der Registerkarte „Inhalt“)|  
-|ToolBar|STRG + D|Fügt das aktuelle Thema den **Favoriten** hinzu.|  
-|ToolBar|STRG + F|Zeigt die Suchleiste im Themenbereich an, sodass Sie das aktuelle Thema durchsuchen können.|  
+|Symbolleiste|STRG + D|Fügt das aktuelle Thema den **Favoriten** hinzu.|  
+|Symbolleiste|STRG + F|Zeigt die Suchleiste im Themenbereich an, sodass Sie das aktuelle Thema durchsuchen können.|  
 |Symbolleiste|STRG+P|Druckt die aktuelle Seite|  
 |Symbolleiste|STRG + F2|Zeigt eine Druckvorschau der aktuellen Seite an|  
 |Symbolleiste|STRG + O|Öffnet das Dialogfeld **Viewer-Optionen**|  
-|ToolBar|STRG + UMSCHALT + M|Öffnet die Registerkarte **Inhalt verwalten**|  
+|Symbolleiste|STRG + UMSCHALT + M|Öffnet die Registerkarte **Inhalt verwalten**|  
 |Navigation|ALT + C<br /><br /> -ODER-<br /><br /> STRG + UMSCHALT + C|Öffnet die Registerkarte **Inhalt**.|  
 |Navigation|ALT + I<br /><br /> -ODER-<br /><br /> STRG + UMSCHALT + I|Öffnet die Registerkarte **Index**|  
 |Navigation|ALT + F<br /><br /> -ODER-<br /><br /> STRG + UMSCHALT + F|Öffnet die Registerkarte **Favoriten**|  
@@ -82,7 +83,7 @@ Sie können mit den Tastenkombinationen in der folgenden Tabelle durch den Micro
 |Viewer-Optionen|ALT + H|Ändert den Fokus auf die Liste **Maximale Anzahl von Suchergebnissen**.|  
 |Viewer-Optionen|ALT + E|Aktivieren oder deaktivieren Sie das Kontrollkästchen **Englische Inhalte in alle Navigationsregisterkarten und F1-Anforderungen einbeziehen**, wenn es aktiviert ist.|  
 |Viewer-Optionen|ALT + O|Aktivieren oder deaktivieren Sie das Kontrollkästchen **Online Inhalte abrufen und nach Inhaltsupdates suchen**.|  
-|Find|Eingabe|Ändert den Fokus auf das nächste Element|  
+|Find|EINGABETASTE|Ändert den Fokus auf das nächste Element|  
 |Find|UMSCHALT + ENTER|Ändert den Fokus auf das vorherige Element|  
 |Find|Esc|Verbirgt das Textfeld **Suchen**.|  
 |Statusleiste|ALT + E|Öffnet das Dialogfeld **Fehler**, wenn die Statusleiste anzeigt, dass ein Fehler aufgetreten ist.|  

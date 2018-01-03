@@ -14,11 +14,12 @@ caps.latest.revision: "21"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bdad50eff09e96c5d9c0513be1f571a901278871
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 21b341f8900664c57fa21d33bc138a969a273759
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="threads-view-parallel-performance"></a>Threadansicht (Parallele Leistung)
 Die Threadansicht ist die detaillierteste und funktionsreichste Ansicht in der Parallelitätsschnellansicht. Mithilfe dieser Ansicht können Sie ermitteln, ob die Threads ausgeführt werden oder aufgrund von Synchronisierung, E/A oder aus anderen Gründen blockiert werden.  
@@ -148,4 +149,4 @@ Threadansicht
  In dieser Registerkarte wird unter anderem angezeigt, welche Prozesse und Threads durch den aktuellen Prozess an der Datenträger-E/A beteiligt waren, welche Dateien davon betroffen waren (z.B. DLLs, die geladen wurden) und wie viele Bytes gelesen wurden. Sie können diesen Bericht verwenden, um die Zeit auszuwerten, die während der Ausführung für den Zugriff auf Dateien aufgewendet wird, insbesondere wenn der Prozess E/A-gebunden scheint. Weitere Informationen finden Sie unter [Bericht über Datenträgervorgänge](../profiling/disk-operations-report-threads-view.md).  
   
 ## <a name="see-also"></a>Siehe auch  
- [Parallelitätsschnellansicht](../profiling/concurrency-visualizer.md)
+ [Nebenläufigkeitsschnellansicht](../profiling/concurrency-visualizer.md)

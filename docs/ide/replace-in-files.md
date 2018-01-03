@@ -17,11 +17,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 463caf59bcc11c109ad42cba45b57818fa0960ec
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: multiple
+ms.openlocfilehash: 496cd3c2c6d92e5db591c09bf4d0d5ec645e4c79
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="replace-in-files"></a>In Dateien ersetzen
 
@@ -38,7 +39,7 @@ Rufen Sie die Option **In Dateien ersetzen** im Fenster **Suchen und Ersetzen** 
 
 1. Wählen Sie **In Dateien ersetzen** aus.
 
-   – oder –
+   - oder -
 
 Wählen Sie auf der Symbolleiste **In Dateien ersetzen** aus, wenn das Fenster **Suchen und Ersetzen** bereits geöffnet ist.
 

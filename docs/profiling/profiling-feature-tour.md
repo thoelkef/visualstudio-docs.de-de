@@ -13,11 +13,12 @@ caps.latest.revision: "1"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4899f59362f623f6ecf92927e8a15ed4762fa367
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: multiple
+ms.openlocfilehash: 25e4397ac3f3b2a8191dc9d9850f643e0be3d539
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="profiling-feature-tour"></a>Tour zur Profilerstellungsfunktion
 
@@ -153,14 +154,14 @@ Hier sehen Sie eine Tabelle, in der die verschiedenen Tools aufgelistet sind, di
 |----------------------|---------------------|------------------------------|-------------|  
 |[Speicherauslastung](../profiling/memory-usage.md)|ja|ja|ja|  
 |[CPU-Auslastung](../profiling/cpu-usage.md)|ja|ja|Ja (Nein für .NET Core bzw. ASP.NET Core)|  
-|[GPU-Nutzung](../debugger/gpu-usage.md)|ja|ja|nein|  
-|[Anwendungszeitachse](../profiling/application-timeline.md)|ja|ja|nein|  
+|[GPU-Nutzung](../debugger/gpu-usage.md)|ja|ja|Nein|  
+|[Anwendungszeitachse](../profiling/application-timeline.md)|ja|ja|Nein|  
 |[PerfTips](../profiling/perftips.md)|ja|ja für XAML, nicht für HTML|ja|  
-|[Leistungs-Explorer](../profiling/performance-explorer.md)|ja|nein|Ja (Nein für ASP.NET Core)|  
+|[Leistungs-Explorer](../profiling/performance-explorer.md)|ja|Nein|Ja (Nein für ASP.NET Core)|  
 |[IntelliTrace](../debugger/intellitrace.md)|nur .NET Enterprise|nur .NET Enterprise|nur .NET Enterprise|
-|[Netzwerkverwendung](../profiling/network-usage.md)|nein|ja|nein| 
-|[HTML UI responsiveness](../profiling/html-ui-responsiveness.md)|nein|ja für HTML, nicht für XAML|nein|  
-|[JavaScript-Speicher](../profiling/javascript-memory.md)|nein|ja für HTML, nicht für XAML|nein|  
+|[Netzwerkverwendung](../profiling/network-usage.md)|Nein|ja|Nein| 
+|[HTML UI responsiveness](../profiling/html-ui-responsiveness.md)|Nein|ja für HTML, nicht für XAML|Nein|  
+|[JavaScript-Speicher](../profiling/javascript-memory.md)|Nein|ja für HTML, nicht für XAML|Nein|  
 
 ## <a name="see-also"></a>Siehe auch  
  [Debuggen in Visual Studio](../debugger/debugging-in-visual-studio.md)

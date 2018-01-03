@@ -28,11 +28,12 @@ caps.latest.revision: "23"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 18cf7c7ee9c7f40231482b7c0466929bd0290fb1
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: dotnet
+ms.openlocfilehash: 2032b0b50c9f22396d63b32b1d050eb40ea70a79
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="options-text-editor-c-formatting"></a>Optionen, Text-Editor, C#, Formatierung
 Verwenden Sie das Dialogfeld mit der Eigenschaftenseite **Formatierung**, um Optionen zur Formatierung von Code im Code-Editor festzulegen. Klicken Sie zum Öffnen dieses Dialogfelds im Menü **Extras** auf **Optionen**, erweitern Sie den Ordner **Text-Editor**, erweitern Sie **C#**, und klicken Sie dann auf **Formatierung**.  
@@ -45,7 +46,7 @@ Verwenden Sie das Dialogfeld mit der Eigenschaftenseite **Formatierung**, um Opt
   
 ## <a name="uielement-list"></a>UIElement-Liste  
   
-|Bezeichnung|Beschreibung|  
+|Bezeichnung|description|  
 |-----------|-----------------|  
 |**Abgeschlossene Anweisung automatisch formatieren bei ;**|Bei Auswahl dieser Option werden Anweisungen nach der Fertigstellung entsprechend den für den Code-Editor ausgewählten Formatierungsoptionen formatiert. Deaktivieren Sie dieses Feld, wenn Anweisungen nicht durch den Code-Editor geändert werden sollen.|  
 |**Abgeschlossenen Block automatisch formatieren bei }**|Bei Auswahl dieser Option werden Codeblöcke entsprechend den für den Code-Editor ausgewählten Formatierungsoptionen formatiert, sobald der Codeblock abgeschlossen ist. Deaktivieren Sie dieses Feld, wenn Blöcke nicht durch den Code-Editor geändert werden sollen.|  

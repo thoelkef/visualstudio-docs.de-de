@@ -13,11 +13,12 @@ caps.latest.revision: "32"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 9500cdb26b51d3a91b9565c7ef0353907e9afe7c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: fa0ec9c483244e15e5cc51cb6bdb743c1f586e7c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-using-msbuild"></a>Exemplarische Vorgehensweise: Verwenden von MSBuild
 MSBuild ist die Buildplattform für Microsoft und Visual Studio. In dieser exemplarischen Vorgehensweise machen Sie sich mit den Bausteinen von MSBuild vertraut, zudem wird erläutert, wie Sie MSBuild-Projekte erstellen, bearbeiten und debuggen. Zu folgenden Aspekten erfahren Sie mehr:  
@@ -174,7 +175,7 @@ MSBuild ist die Buildplattform für Microsoft und Visual Studio. In dieser exemp
 </PropertyGroup>  
 ```  
   
- Alle Eigenschaften sind untergeordnete Elemente von PropertyGroup-Elementen. Der Name der Eigenschaft entspricht dem Namen des untergeordneten Elements, und der Wert der Eigenschaft entspricht dem Textelement des untergeordneten Elements. Beispiel:  
+ Alle Eigenschaften sind untergeordnete Elemente von PropertyGroup-Elementen. Der Name der Eigenschaft entspricht dem Namen des untergeordneten Elements, und der Wert der Eigenschaft entspricht dem Textelement des untergeordneten Elements. Ein auf ein Objekt angewendeter  
   
 ```xml  
 <TargetFrameworkVersion>v12.0</TargetFrameworkVersion>  
@@ -229,7 +230,7 @@ $(PropertyName)
 >  Wenn diese Zeilen nicht angezeigt werden, haben Sie wahrscheinlich vergessen, die Projektdatei im Code-Editor zu speichern. Speichern Sie die Datei, und versuchen Sie es erneut.  
   
 ### <a name="conditional-properties"></a>Bedingte Eigenschaften  
- Viele Eigenschaften, z. B. Configuration, werden bedingt definiert, das heißt, im Eigenschaftenelement wird das Condition-Attribut angezeigt. Bedingte Eigenschaften werden nur definiert oder erneut definiert, wenn die Bedingung "true" ergibt. Nicht definierten Eigenschaften wird der Standardwert, eine leere Zeichenfolge, zugewiesen. Beispiel:  
+ Viele Eigenschaften, z. B. Configuration, werden bedingt definiert, das heißt, im Eigenschaftenelement wird das Condition-Attribut angezeigt. Bedingte Eigenschaften werden nur definiert oder erneut definiert, wenn die Bedingung "true" ergibt. Nicht definierten Eigenschaften wird der Standardwert, eine leere Zeichenfolge, zugewiesen. Ein auf ein Objekt angewendeter  
   
 ```xml  
 <Configuration   Condition=" '$(Configuration)' == '' ">Debug</Configuration>  
@@ -296,7 +297,7 @@ $(PropertyName)
 ## <a name="build-items"></a>Buildelemente  
  Als Element wird eine Information, in der Regel ein Dateiname, bezeichnet, die als Eingabe für das Buildsystem verwendet wird. Eine Auflistung von Elementen, die Quelldateien darstellen, kann beispielsweise an die Aufgabe Compile übergeben werden, um sie zu einer Assembly zu kompilieren.  
   
- Alle Elemente sind untergeordnete Elemente von ItemGroup-Elementen. Der Elementname entspricht dem Namen des untergeordneten Elements, und der Elementwert entspricht dem Wert des Include-Attributs für das untergeordnete Element. Die Werte von Elementen mit gleichem Namen werden in Elementtypen dieses Namens erfasst.  Beispiel:  
+ Alle Elemente sind untergeordnete Elemente von ItemGroup-Elementen. Der Elementname entspricht dem Namen des untergeordneten Elements, und der Elementwert entspricht dem Wert des Include-Attributs für das untergeordnete Element. Die Werte von Elementen mit gleichem Namen werden in Elementtypen dieses Namens erfasst.  Ein auf ein Objekt angewendeter  
   
 ```xml  
 <ItemGroup>  
@@ -389,7 +390,7 @@ $(PropertyName)
     ```  
   
 ### <a name="include-exclude-and-wildcards"></a>Include, Exclude und Platzhalter  
- Sie können mit dem Include-Attribut die Platzhalter „*“, „\*\*“ und „?“ verwenden, um einem Elementtyp Elemente hinzuzufügen. Beispiel:  
+ Sie können mit dem Include-Attribut die Platzhalter „*“, „\*\*“ und „?“ verwenden, um einem Elementtyp Elemente hinzuzufügen. Ein auf ein Objekt angewendeter  
   
 ```xml  
 <Photos Include="images\*.jpeg" />  
@@ -403,7 +404,7 @@ $(PropertyName)
   
  alle Dateien mit der Dateierweiterung ".jpeg" im Bilderordner und allen Unterordnern dem Photos-Elementtyp hinzufügt. Weitere Beispiele finden Sie unter [Vorgehensweise: Auswählen von Dateien für den Buildvorgang](../msbuild/how-to-select-the-files-to-build.md).  
   
- Beachten Sie, dass deklarierte Elemente sofort dem jeweiligen Elementtyp hinzugefügt werden. Beispiel:  
+ Beachten Sie, dass deklarierte Elemente sofort dem jeweiligen Elementtyp hinzugefügt werden. Ein auf ein Objekt angewendeter  
   
 ```xml  
 <Photos Include="images\*.jpeg" />  
@@ -416,7 +417,7 @@ $(PropertyName)
 <Photos Include="images\*.jpeg;images\*.gif" />  
 ```  
   
- Mit dem Exclude-Attribut können Sie ein Element aus einem Elementtyp ausschließen. Beispiel:  
+ Mit dem Exclude-Attribut können Sie ein Element aus einem Elementtyp ausschließen. Ein auf ein Objekt angewendeter  
   
 ```xml  
 <Compile Include="*.cs" Exclude="*Designer*">  
@@ -424,7 +425,7 @@ $(PropertyName)
   
  fügt dem Compile-Elementtyp alle Dateien mit der Dateierweiterung ".cs" hinzu, mit Ausnahme von Dateien, deren Namen die Zeichenfolge "Designer" enthalten. Weitere Beispiele finden Sie unter [Vorgehensweise: Ausschließen von Dateien vom Buildvorgang](../msbuild/how-to-exclude-files-from-the-build.md).  
   
- Das Exclude-Attribut wirkt sich nur auf die Elemente aus, die über das Include-Attribut in dem Elementelement hinzugefügt wurden, das beide enthält. Beispiel:  
+ Das Exclude-Attribut wirkt sich nur auf die Elemente aus, die über das Include-Attribut in dem Elementelement hinzugefügt wurden, das beide enthält. Ein auf ein Objekt angewendeter  
   
 ```xml  
 <Compile Include="*.cs" />  

@@ -13,23 +13,24 @@ caps.latest.revision: "13"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 4395f4c82be689b1d573be44948e98711ba066c3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e57abdc78bc5b5844959fe2e3077688ec496df49
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="msbuild-concepts"></a>MSBuild-Grundlagen
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] bietet ein einfaches XML-Schema, mit dem Sie steuern können, wie die Buildplattform Software erstellen soll. Verwenden Sie Eigenschaften, Elemente, Aufgaben und Ziele, um die jeweiligen Komponenten im Build festzulegen und anzugeben, wie sie erstellt werden sollen.  
   
 ## <a name="related-topics"></a>Verwandte Themen  
   
-|Titel|Beschreibung|  
+|Titel|description|  
 |-----------|-----------------|  
 |[MSBuild-Eigenschaften](../msbuild/msbuild-properties.md)|Hierin werden Eigenschaften und Eigenschaftenauflistungen eingeführt. Eigenschaften sind Schlüssel/Wert-Paare, die zur Konfiguration von Builds verwendet werden können.|  
-|[Items](../msbuild/msbuild-items.md) (MSBuild-Elemente)|Hierin werden die allgemeinen Konzepte hinter dem [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Dateiformat sowie das Zusammenwirken der einzelnen Teile beschrieben.|  
+|[Elemente](../msbuild/msbuild-items.md)|Hierin werden die allgemeinen Konzepte hinter dem [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Dateiformat sowie das Zusammenwirken der einzelnen Teile beschrieben.|  
 |[Targets](../msbuild/msbuild-targets.md) (MSBuild-Ziele)|Es wird erläutert, wie Aufgaben in einer bestimmten Reihenfolge gruppiert werden und wie Sie es ermöglichen, dass Abschnitte des Buildprozesses über die Befehlszeile aufgerufen werden.|  
-|[Tasks](../msbuild/msbuild-tasks.md) (MSBuild-Aufgaben)|Hierin wird gezeigt, wie eine Einheit von ausführbarem Code erstellt wird, die von [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] zum Ausführen unteilbarer Buildvorgänge verwendet werden kann.|  
+|[Aufgaben](../msbuild/msbuild-tasks.md)|Hierin wird gezeigt, wie eine Einheit von ausführbarem Code erstellt wird, die von [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] zum Ausführen unteilbarer Buildvorgänge verwendet werden kann.|  
 |[Vergleich von Eigenschaften und Elementen](../msbuild/comparing-properties-and-items.md)|Vergleicht Eigenschaften und Elemente von MSBuild. Sowohl Eigenschaften als auch Elemente werden verwendet, um Informationen an Aufgaben zu übergeben, Bedingungen auszuwerten und Werte zu speichern, auf die in der gesamten Projektdatei verwiesen werden kann.|  
 |[MSBuild-Sonderzeichen](../msbuild/msbuild-special-characters.md)|Beschreibt, wie Sie einige Zeichen, die [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] nur in bestimmten Kontexten verwendet, mit Escapezeichen versehen.|  
 |[Exemplarische Vorgehensweise: Erstellen einer neuen MSBuild-Projektdatei](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)|Hier wird veranschaulicht, wie eine Projektbasisdatei nur mit einem Texteditor inkrementell erstellt wird.|  

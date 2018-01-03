@@ -12,11 +12,12 @@ caps.latest.revision: "5"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f5f010ee5d72723ec0ef4f20b13b895dc9b75f1f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a760336194482485f7b46cd35600fcb102d7113b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="wpf-community-resources"></a>Ressourcen für die WPF-Community
 Microsoft stellt eine Vielzahl von Communityressourcen für Sie bereit, mit denen Sie sich über Windows Presentation Foundation (WPF) informieren, austauschen und Feedback senden können. Zu diesen Ressourcen gehören die von WPF-Teammitgliedern und Communitysprechern veröffentlichten Blogs, Foren und das Microsoft Connect Feedback Center.  
@@ -38,4 +39,4 @@ Microsoft stellt eine Vielzahl von Communityressourcen für Sie bereit, mit dene
  Teilen Sie Ihr Feedback zur WPF-Dokumentation mit, indem Sie auf einer Seite auf die Schaltfläche **War diese Seite hilfreich?** klicken und Ihre Kommentare eingeben. Ihr Feedback wird direkt an das Dokumentationsteam weitergeleitet.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Erstellen von modernen Desktopanwendungen mit Windows Presentation Foundation](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)
+ [Create Modern Desktop Applications with Windows Presentation Foundation (Erstellen von modernen Desktopanwendungen mit Windows Presentation Foundation)](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)

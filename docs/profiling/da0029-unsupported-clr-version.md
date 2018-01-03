@@ -19,11 +19,12 @@ caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dfc7d33396825263a5fd846c62426fa67509e0da
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e11b053b867679f65052af5dea93799e4b356892
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="da0029-unsupported-clr-version"></a>DA0029: Nicht unterstützte CLR-Version
 |||  
@@ -41,4 +42,4 @@ ms.lasthandoff: 10/31/2017
  Diese Warnung tritt auf, da die Profilerstellungstools keine Symbole für den verwalteten Code auflösen können, der in der Anwendung ausgeführt wird. Die Profilerstellungstools können keine verwalteten Codesymbole für Anwendungen auflösen, die [!INCLUDE[net_v11_long](../profiling/includes/net_v11_long_md.md)] ausführen.  
   
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen  
- Keine.
+ Keine

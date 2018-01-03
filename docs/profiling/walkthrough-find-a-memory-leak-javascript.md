@@ -18,11 +18,12 @@ caps.latest.revision: "31"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1f31221f52e9e944dcfc82c98d18e2cf5ec263bf
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: 13d9fd328ffab5c182078e46bbd832cddcba6fd9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-find-a-memory-leak-javascript"></a>Exemplarische Vorgehensweise: Suchen eines Speicherverlusts (JavaScript)
 ![Gilt für Windows und Windows Phone](../debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
@@ -225,7 +226,7 @@ ms.lasthandoff: 11/11/2017
   
 ##  <a name="FixingMemory"></a> Korrigieren des Arbeitsspeicherproblems  
   
-1.  Unter Verwendung von Daten, die der Profiler erkannt hat, untersuchen Sie den Code, durch den DOM-Elemente mit der ID "item" entfernt werden. Dies tritt in der `initialize()` -Funktion auf.  
+1.  Unter Verwendung von Daten, die der Profiler erkannt hat, untersuchen Sie den Code, durch den DOM-Elemente mit der ID "item" entfernt werden. Dies tritt in der `initialize()`-Funktion auf.  
   
     ```javascript  
     function initialize() {  
@@ -286,4 +287,4 @@ ms.lasthandoff: 11/11/2017
      ![Momentaufnahmen mit korrigiertem Arbeitsspeicherverlust](../profiling/media/js_mem_app_fixed_snapshot3.png "JS_Mem_App_Fixed_Snapshot3")  
   
 ## <a name="see-also"></a>Siehe auch  
- [JavaScript-Speicher](../profiling/javascript-memory.md)
+ [JavaScript-Memory](../profiling/javascript-memory.md)

@@ -12,11 +12,14 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: d328897a4d7644e76634ecff3bfbaef4dbd0c3ec
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload:
+- python
+- azure
+ms.openlocfilehash: 5ebbded093da4b3a6bb5b829628de481d43355dd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="managing-python-on-azure-app-service"></a>Verwalten von Python auf Azure App Service
 
@@ -28,7 +31,7 @@ Die benutzerdefinierte Python-Unterstützung auf Azure App Service besteht aus m
 > Obwohl in App Service standardmäßig Python 2.7 und Python 3.4 in Stammordnern auf dem Server installiert sind, können Sie die Pakete in diesen Umgebungen nicht anpassen oder installieren. Außerdem sollten Sie sich nicht darauf verlassen, dass tatsächlich Pakete vorhanden sind. Stattdessen sollten Sie, wie in diesem Artikel beschrieben, Ihr Vertrauen auf eine von Ihnen kontrollierte Websiteerweiterung setzen.
 
 > [!Important]
-> Die hier beschriebenen Prozesse unterliegen Veränderungen und vor allem Verbesserungen. Änderungen werden in dem [Blog „Python Engineering at Microsoft“ („Python-Entwicklung bei Microsoft“)](https://blogs.msdn.microsoft.com/pythonengineering/) angekündigt.
+> Die hier beschriebenen Prozesse unterliegen Veränderungen und vor allem Verbesserungen. Änderungen werden auf dem [Python Engineering at Microsoft-Blog](https://blogs.msdn.microsoft.com/pythonengineering/) angekündigt.
 
 ## <a name="choosing-a-python-version-through-the-azure-portal"></a>Auswählen einer Python-Version über das Azure-Portal
 

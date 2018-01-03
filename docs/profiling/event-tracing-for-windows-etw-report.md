@@ -15,11 +15,12 @@ caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6ae3b43f300ce410f58dd3fc4d849b2fe1bb3c38
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7fb851cbeed74bf34768a930297477f54eacf7f1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="event-tracing-for-windows-etw-report"></a>Bericht der Ereignisablaufverfolgung für Windows (ETW)
 In dem Bericht „Ereignisablaufverfolgung für Windows (ETW)“ werden die ETW-Ereignisse aufgeführt, die in einer Leistungssitzung für [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Profilerstellungstools aufgezeichnet wurden. ETW-Daten werden in einer Binärdatei (.etl) erfasst.  
@@ -33,11 +34,11 @@ In dem Bericht „Ereignisablaufverfolgung für Windows (ETW)“ werden die ETW-
   
 -   Der ETW-Bericht wird über den Befehl **VSReport/Summary:ETW** erstellt. Weitere Informationen finden Sie unter [VSPerfReport](../profiling/vsperfreport.md).  
   
-|Spalte|Beschreibung|  
+|Spalte|description|  
 |------------|-----------------|  
 |**Zeitstempel**|Gibt an, wann das Ereignis aufgetreten ist|  
 |**Prozess-ID**|Gibt den Prozess an, der das Ereignis generiert hat|  
 |**Thread-ID**|Gibt den Thread an, der das Ereignis generiert hat|  
 |**Beschreibung**|Gibt den Ereignisanbieter an|  
-|**Typ**|Gibt den Ereignistyp an|  
+|**Type**|Gibt den Ereignistyp an|  
 |**Eigenschaften**|Eigenschaften des Ereignisses Jedes Ereignis besteht aus einem durch Kommas abgetrennten Name/Wert-Paar in Klammern.|

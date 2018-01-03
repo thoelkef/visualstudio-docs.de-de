@@ -21,11 +21,12 @@ caps.latest.revision: "34"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: ed3af7142d556c52fbed71f03d5cc53eb3025035
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 3e8a444add9d28a79458dabab75b4cf62bf951dc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="target-element-msbuild"></a>Target-Element (MSBuild)
 Enthält eine Reihe von Aufgaben, die [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] sequenziell ausführt.  
@@ -58,7 +59,7 @@ Enthält eine Reihe von Aufgaben, die [!INCLUDE[vstecmsbuild](../extensibility/i
 
 ### <a name="attributes"></a>Attribute  
 
-|Attribut|Beschreibung|  
+|Attribut|description|  
 |---------------|-----------------|  
 |`Name`|Erforderliches Attribut.<br /><br /> Der Name des Ziels.|  
 |`Condition`|Optionales Attribut.<br /><br /> Die auszuwertende Bedingung. Ergibt die Bedingung `false`, führt das Ziel den Hauptteil des Ziels oder alle Ziele nicht aus, die im `DependsOnTargets`-Attribut festgelegt sind. Weitere Informationen zu Bedingungen finden Sie unter [Bedingungen](../msbuild/msbuild-conditions.md).|  
@@ -73,7 +74,7 @@ Enthält eine Reihe von Aufgaben, die [!INCLUDE[vstecmsbuild](../extensibility/i
 
 ### <a name="child-elements"></a>Untergeordnete Elemente  
 
-|Element|Beschreibung|  
+|Element|description|  
 |-------------|-----------------|  
 |[Aufgabe](../msbuild/task-element-msbuild.md)|Erstellt und führt eine Instanz einer [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Aufgabe aus. Ein Ziel kann null oder mehrere Elemente enthalten.|  
 |[PropertyGroup](../msbuild/propertygroup-element-msbuild.md)|Enthält eine Reihe von benutzerdefinierten `Property`-Elementen. Seit .NET Framework 3.5 enthält ein `Target`-Element möglicherweise `PropertyGroup`-Elemente.|  
@@ -82,9 +83,9 @@ Enthält eine Reihe von Aufgaben, die [!INCLUDE[vstecmsbuild](../extensibility/i
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente  
 
-|Element|Beschreibung|  
+|Element|description|  
 |-------------|-----------------|  
-|[Projekt](../msbuild/project-element-msbuild.md)|Erforderliches Stammelement einer [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Projektdatei.|  
+|[Projekt](../msbuild/project-element-msbuild.md)|Erforderliches Stammelement einer [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] -Projektdatei.|  
 
 ## <a name="remarks"></a>Hinweise  
  Das erste auszuführende Ziel wird zur Laufzeit angegeben. Ziele können von anderen Zielen abhängig sein. Ein Ziel für die Bereitstellung beispielsweise ist von einem Ziel für die Kompilierung abhängig. Die [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Modul führt Abhängigkeiten in der Reihenfolge aus, in der sie im `DependsOnTargets`-Attribut erscheinen, d.h. von links nach rechts. Weitere Informationen finden Sie unter [Ziele](../msbuild/msbuild-targets.md).  
@@ -120,4 +121,4 @@ Enthält eine Reihe von Aufgaben, die [!INCLUDE[vstecmsbuild](../extensibility/i
 
 ## <a name="see-also"></a>Siehe auch  
  [Ziele](../msbuild/msbuild-targets.md)   
- [Referenz zum Projektdateischema](../msbuild/msbuild-project-file-schema-reference.md)
+ [Project File Schema Reference](../msbuild/msbuild-project-file-schema-reference.md) (Referenz zum Projektdateischema von MSBuild)

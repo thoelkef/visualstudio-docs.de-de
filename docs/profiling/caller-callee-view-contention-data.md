@@ -13,11 +13,12 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4ea2f63d3e1ee4b4c694fdc025484d85fad9d739
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 47e4f57ffac71d6fb4f1c3e8cd8176c80d9f002a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="caller--callee-view----contention-data"></a>Ansicht der Aufrufer/Aufgerufenen – Konfliktdaten
 In der Ansicht der Aufrufer/Aufgerufenen werden Konfliktinformationen für eine ausgewählte Funktion und deren übergeordnete und untergeordnete Funktionen angezeigt. Die Aufrufer-/Aufgerufener-Ansicht enthält drei Raster.  
@@ -28,9 +29,9 @@ In der Ansicht der Aufrufer/Aufgerufenen werden Konfliktinformationen für eine 
   
  **Funktionen, die von der aktuellen Funktion aufgerufen wurden** wird im unteren Raster angezeigt, und gibt Konfliktinformationen für die aufgerufene Funktion (untergeordnete Funktion) der ausgewählten Funktion an, als die untergeordnete Funktion von der aktuellen Funktion aufgerufen wurde.  
   
-|Spalte|Beschreibung|  
+|Spalte|description|  
 |------------|-----------------|  
-|**Typ**|Der Kontext der Funktion:<br /><br /> -   **0** – die aktuelle Funktion<br />-   **1** – eine Funktion, die die aktuelle Funktion aufruft<br />-   **2** – eine Funktionen, die von der aktuellen Funktion aufgerufen wird<br /><br /> Nur in [VSPerfReport](../profiling/vsperfreport.md)-Befehlszeilenberichten.|  
+|**Type**|Der Kontext der Funktion:<br /><br /> -   **0** – die aktuelle Funktion<br />-   **1** – eine Funktion, die die aktuelle Funktion aufruft<br />-   **2** – eine Funktionen, die von der aktuellen Funktion aufgerufen wird<br /><br /> Nur in [VSPerfReport](../profiling/vsperfreport.md)-Befehlszeilenberichten.|  
 |**Exklusive blockierte Zeit %**|– Bei einer aktuellen Funktion die Zeit, für die die Funktion vom Ausführen von Code im Funktionsrumpf abgehalten wurde. Dies umfasst nicht die blockierte Zeit für Funktionen, die von dieser Funktion aufgerufen wurden.<br />– Bei einer aufrufenden Funktion der Anteil der exklusiven blockierten Zeit der aktuellen Funktion, als diese Funktion die aktuelle Funktion aufgerufen hat.<br />– Bei einer aufgerufenen Funktion die Zeit, während der diese Funktion ihren eigenen Code nicht ausführen konnte, als diese Funktion von der aktuellen Funktion aufgerufen wurde. Dies umfasst nicht die blockierte Zeit für untergeordnete Funktionen, die von dieser aufgerufenen Funktion aufgerufen wurden.|  
 |**Exklusive blockierte Zeit %**|Der Anteil der gesamten blockierten Zeit bei der Profilerstellung, die der exklusiven blockierten Zeit für diese Funktion in diesem Kontext entspricht.|  
 |**Exklusive Konflikte**|– Bei einer aktuellen Funktion die Anzahl der Blockierungen der Ausführung von Code im Funktionsrumpf durch diese Funktion. Dies umfasst nicht die Konflikte, die in Funktionen aufgetreten sind, die von dieser Funktion aufgerufen wurden.<br />– Bei einer aufrufenden Funktion die Anzahl von exklusiven Konflikten der aktuellen Funktion, die aufgetreten sind, als diese Funktion die aktuelle Funktion aufgerufen hat.<br />– Bei einer aufgerufenen Funktion die Anzahl der Blockierungen der Ausführung des Codes dieser Funktion, als diese Funktion von der aktuellen Funktion aufgerufen wurde. Dies umfasst nicht die Konflikte, die in Funktionen auftraten, die von der aufgerufenen Funktion aufgerufen wurden.|  

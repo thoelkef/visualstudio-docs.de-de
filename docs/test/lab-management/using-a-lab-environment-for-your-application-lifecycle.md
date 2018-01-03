@@ -12,11 +12,12 @@ ms.assetid: b435eb39-dc7c-46fa-a91b-6e6dd614f01c
 caps.latest.revision: "56"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 2eb863996b430c8473adb751851777c532fcfc89
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 88068cf7da401388ac7d8e72e665e91ef1b958b1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="use-a-lab-environment-for-your-devops"></a>Verwenden einer Laborumgebung für Ihre DevOps
 
@@ -30,7 +31,7 @@ Eine Lab-Umgebung ist eine Sammlung virtueller und physischer Computer, die Sie 
   
 Im Folgenden finden Sie Beispiele von allgemeinen Lab-Umgebungstypen:  
   
-| Topologie | Beschreibung |  
+| Topologie | description |  
 |---|---|  
 |![Topologie "Nur Server"](../media/topology_backend.png)| Diese Lab-Umgebung weist eine *Servertopologie*auf, die oft verwendet wird, um manuelle Tests auf Serveranwendungen auszuführen. Sie ermöglicht Testern, die eigenen Clientcomputer zu verwenden, um Fehler in der Umgebung zu überprüfen. In einer Back-End-Topologie enthält Ihre Lab-Umgebung nur Server. Wenn Sie diesen Topologietyp verwenden, stellen Sie für gewöhnlich mithilfe eines Clientcomputers, der nicht Bestandteil der Umgebung ist, eine Verbindung zu den Servern in der Lab-Umgebung her.|  
 |![Laborumgebung in der Cloud](../media/topology_cloud.png)| Diese Laborumgebung bietet ähnliche Funktionen wie die _Servertopologie_, aber erfordert keine physischen oder virtuellen Computer, die in einer lokalen Umgebung ausgeführt werden. Dadurch kann die Einrichtungszeit gesenkt sowie die Wartung vereinfacht und die Kosten verringert werden. Das Einrichten mehrere Websites und virtueller Computer sowie das benutzerdefinierte Vernetzen können Sie in einer Cloudumgebung wie Microsoft Azure schnell und einfach durchführen. [Weitere Informationen](#usebandrm)|  
@@ -122,7 +123,7 @@ Standard- und SCVMM-Umgebungen unterstützen viele derselben Funktionen. Es müs
 
 Im Folgenden finden Sie ein paar zusätzliche Konzepte, mit denen Sie vertraut sein sollten, bevor Sie fortfahren:  
   
-|Begriff|Beschreibung|  
+|Begriff|description|  
 |----------|-----------------|  
 |Lab-Center|Der Bereich von Microsoft Test Manager, in dem Sie Lab-Umgebungen erstellen und verwalten können.|  
 |Teamprojekt-Lab|Die Sammlung der eingerichteten Lab-Umgebungen, sodass Sie eine Verbindung damit herstellen und ihre virtuellen Computer ausführen können.|  

@@ -14,11 +14,12 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0e763d37cecb35bee3d6b4ace9d5e4f9bf4e3173
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b5cb6b102025591a6ef00ca594657dca511f5b8c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="resource-contentions-view---contention-data"></a>Ressourcenkonfliktansicht – Konfliktdaten
 Die Ansicht für Ressourcenkonflikte führt Ressourcenkonfliktdaten für die Ressourcen auf, die die Quelle der Konfliktereignisse waren. Ein Konfliktereignis tritt auf, wenn eine Funktion in einem Thread gezwungen wird, auf den Zugriff auf die Ressource zu warten, da eine Funktion in einem anderen Thread exklusiven Zugriff auf die Ressource abgerufen hat. Jede Ressource ist der Stammknoten einer Aufrufstruktur, die Ausführungspfade der Funktion anzeigt, die die Konfliktereignisse geführt haben.  
@@ -40,7 +41,7 @@ Die Ansicht für Ressourcenkonflikte führt Ressourcenkonfliktdaten für die Res
   
 ## <a name="navigating-the-resource-allocation-view"></a>Die Ansicht Ressourcenzuweisung navigieren  
   
-|Spalte|Beschreibung|  
+|Spalte|description|  
 |------------|-----------------|  
 |**Name**|Der Name der Ressource oder der Funktion.|  
 |**Exklusive blockierte Zeit %**|– Für eine Ressource, die gesamte Zeit, in der der Zugriff auf die Ressource blockiert wurde und ein Thread warten musste.<br />– Für eine Funktion, die Zeit, die diese Instanzen der Funktion für den Zugang auf die übergeordnete Ressource blockiert waren, während die Funktion Code im Funktionstext ausführte. Diese umfasst nicht den Zeitaufwand für Funktionen, die von dieser Funktion aufgerufen wurden.|  

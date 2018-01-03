@@ -20,11 +20,12 @@ caps.latest.revision: "4"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 7238e549011d5f80ce2c8f006f56f6bb0f2de58d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 36ec67396f8fc1b677acbbb4c5fd23f63006ecdb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="xmlpeek-task"></a>XmlPeek-Aufgabe
 Gibt die Werte wie von der XPath-Abfrage angegeben aus einer XML-Datei zurück  
@@ -32,7 +33,7 @@ Gibt die Werte wie von der XPath-Abfrage angegeben aus einer XML-Datei zurück
 ## <a name="parameters"></a>Parameter  
  In der folgenden Tabelle werden die Parameter der `XmlPeek` -Aufgabe beschrieben.  
   
-|Parameter|Beschreibung|  
+|Parameter|description|  
 |---------------|-----------------|  
 |`Namespaces`|Optionaler `String` -Parameter.<br /><br /> Gibt die Namespaces für die Präfixe der XPath-Abfrage an|  
 |`Query`|Optionaler `String` -Parameter.<br /><br /> Gibt die XPath-Abfrage an|  
@@ -45,4 +46,4 @@ Gibt die Werte wie von der XPath-Abfrage angegeben aus einer XML-Datei zurück
   
 ## <a name="see-also"></a>Siehe auch  
  [Tasks (Aufgaben)](../msbuild/msbuild-tasks.md)   
- [Task Reference](../msbuild/msbuild-task-reference.md) (MSBuild-Aufgabenreferenz)
+ [Aufgabenreferenz](../msbuild/msbuild-task-reference.md)

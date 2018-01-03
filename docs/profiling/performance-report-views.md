@@ -16,11 +16,12 @@ caps.latest.revision: "24"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e93b23c9bd30ec81088b7ec9a81cda837d6bafd4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 6cb369d239cd480456cd54382cab0befe5c37b9e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="performance-report-views"></a>Leistungsberichtansichten
 Dieser Abschnitt enthält Referenzinformationen zu den Berichten und Ansichten der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Profilerstellungstools. Ansichten von Profilerstellungs-Datendateien werden in der [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]-IDE angezeigt. Berichte werden mithilfe des [VSPerfReport](../profiling/vsperfreport.md)-Befehlszeilentools erstellt.  
@@ -29,7 +30,7 @@ Dieser Abschnitt enthält Referenzinformationen zu den Berichten und Ansichten d
  [Allgemeine Datenansichten](../profiling/common-data-views.md)  
  Referenzinformationen über die Ansichten und Berichte von Profilerstellungs-Datendateien, die alle Profilerstellungsmethoden gemeinsam haben.  
   
- [Datenansichten der Samplingmethode](../profiling/profiler-sampling-method-data-views.md)  
+ [Datenansichten der Profiler-Samplingmethode](../profiling/profiler-sampling-method-data-views.md)  
  Referenzinformationen zu den Ansichten und Berichten für Profilerstellungs-Datendateien, die mit der Samplingmethode generiert wurden.  
   
  [Datenansichten der Instrumentierungsmethoden](../profiling/instrumentation-method-data-views.md)  

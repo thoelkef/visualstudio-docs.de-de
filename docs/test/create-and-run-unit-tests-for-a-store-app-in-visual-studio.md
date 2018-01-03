@@ -12,11 +12,12 @@ ms.assetid: d3de7b31-0262-4373-ba84-e74eda7651e4
 caps.latest.revision: "26"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 5a6a1a314e837b441e2fc563baabf935659adcf8
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: uwp
+ms.openlocfilehash: f5f61b5c2c0fc5f252ed331e58137f970f6705df
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="create-and-run-unit-tests-for-a-uwp-app-in-visual-studio"></a>Erstellen und Ausführen von Komponententests für UWP-Apps in Visual Studio
 Die Komponententesttools von Visual Studio sind darauf ausgelegt, Entwickler und Teams zu unterstützen, die Komponententests in ihre Softwareentwicklungsverfahren einbinden. Mit Komponententests erhalten Entwickler und Tester eine effiziente, leicht verwaltbare Methode für die Suche nach logischen Fehlern in den Methoden von Klassen in Visual C#-, Visual Basic- und Visual C++-Projekten.  

@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 3ea3afdaa6a7a29bc85c46b6eff0f15c5c91c046
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: python
+ms.openlocfilehash: 5ce79d4e8ff2056b5d713eaa781b22359141c9b4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="quickstart-clone-a-repository-of-python-code-in-visual-studio"></a>Schnellstart: Klonen eines Repositorys in Python-Code in Visual Studio
 
@@ -26,11 +27,11 @@ Sobald Sie [die Python-Unterstützung für Visual Studio 2017 installiert haben]
 
 2. Starten Sie Visual Studio.
 
-3. Klicken Sie auf **Ansicht > Team Explorer…**, um das Fenster **Team Explorer** zu öffnen. Von dort können Sie eine Verbindung zu GitHub oder Visual Studio Team Services herstellen oder ein Repository klonen.
+3. Klicken Sie auf **Ansicht > Team Explorer…**, um das Fenster **Team Explorer** zu öffnen. Dort können Sie eine Verbindung mit GitHub oder Visual Studio Team Services herstellen oder ein Repository klonen.
 
-    ![Das Team Explorer-Fenster zeigt Visual Studio Team Services, GitHub und das Klonen eines Repositorys.](media/team-explorer.png)
+    ![Das Team Explorer-Fenster zeigt Visual Studio Team Services, GitHub und das Klonen eines Repositorys](media/team-explorer.png)
 
-4. Geben Sie im URL-Feld unter **Lokale Git-Repositorys** `https://github.com/gregmalcolm/python_koans` ein, geben Sie einen Ordner für die geklonten Dateien an, und klicken Sie auf **Klonen**.
+4. Geben Sie `https://github.com/gregmalcolm/python_koans` im Feld „URL“ unter **Lokale Git-Repositorys** ein. Geben Sie einen Ordner für die geklonten Dateien an, und klicken Sie auf **Klonen**.
 
     > [!Tip]
     > Der Ordner, den Sie in Team Explorer angeben, empfängt die geklonten Dateien. Im Gegensatz zum Befehl `git clone` wird beim Erstellen eines Klons in Team Explorer nicht automatisch ein Unterordner mit dem Namen des Repositorys erstellt.
@@ -43,7 +44,7 @@ Sobald Sie [die Python-Unterstützung für Visual Studio 2017 installiert haben]
 
 7. Klicken Sie im Menü auf **Ansicht > Projektmappen-Explorer**.
 
-8. Erweitern Sie im Projektmappen-Explorer den `python3`-Knoten, klicken Sie mit der rechten Maustaste zunächst auf `contemplate_koans.py` und anschließend auf **Als Startprojekt festlegen**. In diesem Schritt meldet Visual Studio, welche Datei beim Ausführen des Projekts verwendet werden soll.
+8. Erweitern Sie im Projektmappen-Explorer den Knoten `python3`. Klicken Sie mit der rechten Maustaste zunächst auf `contemplate_koans.py`, und klicken Sie anschließend auf **Als Startdatei festlegen**. In diesem Schritt meldet Visual Studio, welche Datei beim Ausführen des Projekts verwendet werden soll.
 
 9. Klicken Sie zunächst im Menü auf **Projekt > Eigenschaften** und anschließend auf die Registerkarte **Allgemein**, und legen Sie das **Arbeitsverzeichnis** auf „Python3“ fest. Dieser Schritt ist notwendig, da Visual Studio standardmäßig den Projektstamm als Arbeitsverzeichnis festlegt, anstatt den Speicherort der Startdatei zu verwenden (`python3\contemplate_koans.py` – dies können Sie auch in den Projekteigenschaften sehen). Der Programmcode sucht im Arbeitsverzeichnis nach einer `koans.txt`-Datei. Sie erhalten also einen Fehler, wenn Sie diesen Wert nicht ändern.
 
@@ -73,7 +74,7 @@ Sobald Sie [die Python-Unterstützung für Visual Studio 2017 installiert haben]
 ## <a name="next-steps"></a>Nächste Schritte
 
 > [!div class="nextstepaction"]
-> [Tutorial: Working with Python in Visual Studio (Tutorial: Arbeiten mit Python in Visual Studio)](vs-tutorial-01-01.md)
+> [Tutorial: Arbeiten mit Python in Visual Studio](vs-tutorial-01-01.md)
 
 ## <a name="see-also"></a>Siehe auch
 

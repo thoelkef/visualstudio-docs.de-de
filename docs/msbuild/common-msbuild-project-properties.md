@@ -22,11 +22,12 @@ caps.latest.revision: "36"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 0ab37b9bf44cdac647a939ed7313a2e40eb88aea
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b78c2c1276f04a53a4f7a01e70a7d98efdba0514
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="common-msbuild-project-properties"></a>Gemeinsame MSBuild-Projekteigenschaften
 In der folgenden Tabelle werden häufig verwendete Eigenschaften aufgelistet, die in den Visual Studio-Projektdateien definiert oder in den TARGETS-Dateien enthalten sind, die von MSBuild bereitgestellt werden.  
@@ -35,7 +36,7 @@ In der folgenden Tabelle werden häufig verwendete Eigenschaften aufgelistet, di
   
 ## <a name="list-of-common-properties-and-parameters"></a>Liste häufig verwendeter Eigenschaften und Parameter  
   
-|Eigenschaften- oder Parametername|Beschreibung|  
+|Eigenschaften- oder Parametername|description|  
 |--------------------------------|-----------------|  
 |AdditionalLibPaths|Gibt weitere Ordner an, in denen Compiler nach Verweisassemblys suchen sollen.|  
 |AddModules|Bewirkt, dass der Compiler dem Projekt, das Sie kompilieren, sämtliche Typinformationen aus den angegebenen Dateien bereitstellt. Diese Eigenschaft entspricht dem `/addModules`-Compilerschalter.|  

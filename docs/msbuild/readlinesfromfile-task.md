@@ -21,11 +21,12 @@ caps.latest.revision: "10"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: d489cc152d0f5652c8e6a787d9539b246d0f5285
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8db8c8414e4ce347ca8dbb59bec0f682911cf777
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="readlinesfromfile-task"></a>ReadLinesFromFile-Aufgabe
 Liest eine Liste von Elementen aus einer Textdatei  
@@ -33,7 +34,7 @@ Liest eine Liste von Elementen aus einer Textdatei
 ## <a name="parameters"></a>Parameter  
  In der folgenden Tabelle werden die Parameter der `ReadLinesFromFile` -Aufgabe beschrieben.  
   
-|Parameter|Beschreibung|  
+|Parameter|description|  
 |---------------|-----------------|  
 |`File`|Erforderlicher <xref:Microsoft.Build.Framework.ITaskItem> -Parameter.<br /><br /> Gibt die zu lesende Datei an. Die Datei muss in jeder Zeile ein Element enthalten.|  
 |`Lines`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]` -Ausgabeparameter.<br /><br /> Enthält die aus der Datei gelesenen Zeilen|  
@@ -66,4 +67,4 @@ Liest eine Liste von Elementen aus einer Textdatei
 ## <a name="see-also"></a>Siehe auch  
  [Task Reference](../msbuild/msbuild-task-reference.md)  (MSBuild-Aufgabenreferenz)  
  [MSBuild Concepts](../msbuild/msbuild-concepts.md)  (MSBuild-Grundlagen)  
- [Tasks](../msbuild/msbuild-tasks.md) (MSBuild-Aufgaben)
+ [Aufgaben](../msbuild/msbuild-tasks.md)

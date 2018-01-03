@@ -21,17 +21,18 @@ caps.latest.revision: "13"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 9add80659ea5c574dbdd56c2c09c9da4a9b646ba
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 036f519529f0226c56b711096abc91e4ebf97d3a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="generatebootstrapper-task"></a>GenerateBootstrapper-Aufgabe
 Bietet eine automatisierte Methode zum Erkennen, Herunterladen und Installieren einer Anwendung sowie ihrer erforderlichen Komponenten. Sie dient als einzelner Installer, der den separaten Installer für alle Komponenten integriert, die zu einer Anwendung gehören.  
   
 ## <a name="task-parameters"></a>Aufgabenparameter  
- In der folgenden Tabelle werden die Parameter der `GenerateBootstrapper`-Aufgabe beschrieben.  
+ In der folgenden Tabelle werden die Parameter der `GenerateBootstrapper` -Aufgabe beschrieben.  
   
 -   `ApplicationFile`  
   
@@ -179,4 +180,4 @@ Bietet eine automatisierte Methode zum Erkennen, Herunterladen und Installieren 
   
 ## <a name="see-also"></a>Siehe auch  
  [Tasks (Aufgaben)](../msbuild/msbuild-tasks.md)   
- [Task Reference](../msbuild/msbuild-task-reference.md) (MSBuild-Aufgabenreferenz)
+ [Aufgabenreferenz](../msbuild/msbuild-task-reference.md)

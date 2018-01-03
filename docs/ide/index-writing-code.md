@@ -6,11 +6,12 @@ ms.topic: landing-page
 title: Schreiben und Verwalten von Code mithilfe der Visual Studio-Dokumentation | Microsoft-Dokumentation
 description: Hier erfahren Sie, wie Sie den Code-Editor und andere Tools in Visual Studio verwenden, um Ihren Code zu schreiben, darin zu navigieren, ihn zu verwalten und zu verbessern.
 ms.technology: vs-ide-general
-ms.openlocfilehash: bc08b4822f411587db76f648e2b3ba508d513fb3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 5bc15e4bde117a474034ab4342dc43bc8db8e00f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="write-and-manage-code-using-visual-studio-documentation"></a>Schreiben und Verwalten von Code mithilfe der Visual Studio-Dokumentation
 

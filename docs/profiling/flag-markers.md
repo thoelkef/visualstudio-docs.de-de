@@ -13,11 +13,12 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 646faaa3c80a01565540bd05850b76286121203a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 79105e43cba14c12cf0f82edd05b57286c012ee5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="flag-markers"></a>Flag-Marker
 Ein Flag-Marker stellt ein Ereignis dar, das zu einem bestimmten Zeitpunkt in einer App aufgetreten ist. Ein Flag kann verschiedene Anwendungsereignisse darstellen. Ein Flag kann z.B. die Planung eines bestimmten Arbeitselements oder eine ausgelöste Ausnahme anzeigen. Runtimes wie die Task Parallel Library können auch Flags generieren.  
@@ -50,4 +51,4 @@ Aggregationsflags nach Wichtigkeit
   
 ## <a name="see-also"></a>Siehe auch  
  [Parallelitätsschnellansichtsmarker](../profiling/concurrency-visualizer-markers.md)   
- [Parallelitätsschnellansichts-SDK](../profiling/concurrency-visualizer-sdk.md)
+ [SDK der Nebenläufigkeitsschnellansicht](../profiling/concurrency-visualizer-sdk.md)

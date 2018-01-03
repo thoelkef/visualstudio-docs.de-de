@@ -14,11 +14,12 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 867e6a8bffd25a25e9c021aa7565e2087a7c4bd9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 6a2ce5cc9d80e7b96318d0e1fcf8aead09652b41
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="cores-view"></a>Kernansicht
 Die Kernansicht zeigt, wie die Ausführung der Threads den logischen Prozessorkernen zugeordnet wurde. Beim Schreiben von Serveranwendungen kann diese Ansicht nützlich sein: Optimieren Sie die Cacheleistung, indem Sie Threadaffinität oder Threadpoolverwaltung einsetzen. Manchmal kann sich auch die Prüfung von Fällen als hilfreich erweisen, in denen die Verwendung von Threadaffinität das Problem kernübergreifender Migration noch verstärkt hat. Die Kernansicht verfügt über zwei Komponenten: ein Diagramm und eine Legende.  
@@ -30,4 +31,4 @@ Die Kernansicht zeigt, wie die Ausführung der Threads den logischen Prozessorke
 ## <a name="see-also"></a>Siehe auch  
  [Nebenläufigkeitsschnellansicht](../profiling/concurrency-visualizer.md)   
  [Auslastungsansicht](../profiling/utilization-view.md)   
- [Threadansicht](../profiling/threads-view-parallel-performance.md)
+ [Threads View (Threadansicht)](../profiling/threads-view-parallel-performance.md)

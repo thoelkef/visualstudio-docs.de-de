@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c3ccc6fcfa8471d767356f1e30d1e5f8b0ed15d0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b815904a7ac2b8a050cd4b907698c43a91d929dc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="l2dbformxaml-source-code"></a>L2DBForm.xaml-Quellcode
 Dieses Thema enthält und beschreibt die XAML-Quelldatei für die in [WPF Data Binding Using LINQ to XML Example](../designers/wpf-data-binding-using-linq-to-xml-example.md)verwendete Datei L2DBForm.xaml.  
@@ -29,7 +30,7 @@ Dieses Thema enthält und beschreibt die XAML-Quelldatei für die in [WPF Data B
  Jeder Abschnitt enthält eine Bezeichnung, mit dem er identifiziert wird. In den ersten beiden Abschnitten wird diese Bezeichnung durch die Verwendung eines <xref:System.Windows.FrameworkElement.LayoutTransform%2A>-Elements um 90° gedreht. Der restliche Teil des Abschnitts enthält für den Zweck des Abschnitts passende Benutzeroberflächenelemente wie Textblöcke, Textfelder, Schaltflächen usw. Mitunter wird zur Ausrichtung dieser untergeordneten Steuerelemente ein untergeordnetes <xref:System.Windows.Controls.StackPanel> -Steuerelement verwendet.  
   
 ## <a name="window-resource-section"></a>Abschnitt "Window.Resources"  
- Das `<Window.Resources>` -Starttag in Zeile 9 gibt den Anfang des Abschnitts &lt;legacyBold&gt;Window.Resources&lt;/legacyBold&gt; an. Der Abschnitt endet mit dem Endtag in Zeile 35.  
+ Das `<Window.Resources>` -Starttag in Zeile 9 gibt den Anfang des Abschnitts &lt;legacyBold&gt;Window.Resources&lt;/legacyBold&gt; an. Der Abschnitt endet mit dem Endtag in Zeile 35.  
   
  Das `<ObjectDataProvider>` -Tag, das sich über die Zeilen 11 bis 25 erstreckt, deklariert einen <xref:System.Windows.Data.ObjectDataProvider>mit dem Namen `LoadedBooks`, der als Quelle ein <xref:System.Xml.Linq.XElement> verwendet. Dieses <xref:System.Xml.Linq.XElement> wird initialisiert, indem ein eingebettetes XML-Dokument (ein `CDATA` -Element) analysiert wird. Beachten Sie, dass Leerraum beim Deklarieren des eingebetteten XML-Dokuments und auch beim Analysieren des Dokuments beibehalten wird. Der Grund: Das <xref:System.Windows.Controls.TextBlock> -Steuerelement, das zum Anzeigen des unformatierten XML verwendet wird, besitzt keine speziellen XML-Formatierungsfunktionen.  
   
@@ -84,7 +85,7 @@ Text="{Binding Path=Attribute[id].Value}"...Text="{Binding Path=Value}"
   
 ## <a name="example"></a>Beispiel  
   
-### <a name="description"></a>Beschreibung  
+### <a name="description"></a>description  
   
 > [!NOTE]
 >  Wir empfehlen, den folgenden Code in einen Code-Editor, z. B. den C#-Quellcode-Editor in Visual Studio, zu kopieren, weil dort die Zeilennummern einfacher zu verfolgen sind.  

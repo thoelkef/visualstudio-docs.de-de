@@ -11,11 +11,12 @@ ms.assetid: 11232a83-73ea-46bd-bc0c-46f74f6e3a42
 caps.latest.revision: "33"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 8b854bcfcb7227a454023f89ce732706b1e545cc
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: a24166bb88737699dc3b853cf7a821649acbc118
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="upgrading-coded-ui-tests-from-visual-studio-2010"></a>Upgrade der Tests der programmierten UI von Visual Studio 2010
 Tests der programmierten UI enthalten Testprojekte, die in [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] SP1 erstellt wurden, werden unbeaufsichtigt repariert, wenn sie in Visual Studio 2012 oder höher geöffnet werden. Wenn Testprojekte in das Quellsteuerelement eingecheckt werden, werden die Projektdateien für diese Reparatur ausgecheckt. Nach der Reparatur können die Tests der programmierten UI enthaltende Testprojekte sowohl in [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] SP1 als auch in [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)]verwendet werden.  

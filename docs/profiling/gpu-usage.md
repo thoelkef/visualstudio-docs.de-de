@@ -12,11 +12,12 @@ caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f2c265fde65ae20012e2846d99b86c71254d5b44
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 3a79d924e8f20079040f29a85854555e214e4281
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="gpu-usage"></a>GPU-Nutzung
 Verwenden Sie das GPU-Nutzungstool im Visual Studio-Leistungs- und Diagnosehub, um die allgemeine Hardwarenutzung Ihrer Direct3D-App besser zu verstehen. Mit dem Tool können Sie feststellen, ob die Leistung Ihrer App CPU- oder GPU-gebunden ist, und Sie erhalten Einblicke in eine effektivere Nutzung der Plattformhardware. GPU-Nutzung unterstützt Apps, die Direct3D 12, Direct3D 11 und Direct3D 10 verwenden. Andere Grafik-APIs, wie z. B. Direct2D oder OpenGL werden nicht unterstützt.  
@@ -97,7 +98,7 @@ Ab Visual Studio 2017 können diese Daten mit [GPUView](/windows-hardware/driver
   
  Nachstehend finden Sie weitere Details:  
   
-|Filtersteuerelement|Beschreibung|  
+|Filtersteuerelement|description|  
 |--------------------|-----------------|  
 |**Process**|Der Name des Prozesses, der Sie interessiert. Alle Prozesse, die GPU während der Diagnosesitzung verwenden, sind in dieser Dropdownliste enthalten. Die dem Prozess in dieser Dropdownliste zugeordnete Farbe entspricht der Farbe der Threadvorgänge auf den Zeitachsen unten.|  
 |**Thread**|Die Thread-ID, die Sie interessiert. In einer Multithread-App können Sie hiermit bestimmte Threads isolieren, die mit dem gewünschten Prozess verknüpft sind. Die im Zusammenhang mit dem ausgewählten Thread stehenden Ereignisse werden auf jeder Zeitachse hervorgehoben.|  
@@ -107,7 +108,7 @@ Ab Visual Studio 2017 können diese Daten mit [GPUView](/windows-hardware/driver
   
  Die Liste der Ereignisse im unteren Bereich des GPU-Nutzungsberichts enthält detaillierte Informationen zu jedem Ereignis.  
   
-|Spalte|Beschreibung|  
+|Spalte|description|  
 |------------|-----------------|  
 |**Ereignisname**|Der Name des Grafikereignisses. Ein Ereignis entspricht in der Regel einem Ereignis auf einer CPU-Threadzeitachse und einem Ereignis auf einer GPU-Zeitachse.<br /><br /> Ereignisnamen weisen möglicherweise keine Attribute auf, wenn die GPU-Nutzung nicht den Namen eines Ereignisses bestimmen konnte. Weitere Informationen finden Sie unter dieser Tabelle.|  
 |**CPU-Start (ns)**|Die Zeit, zu der das Ereignis auf der CPU durch Aufrufen einer Direct3D-API initiiert wurde. Die Zeit wird in Nanosekunden relativ zum Start der Anwendung gemessen.|  

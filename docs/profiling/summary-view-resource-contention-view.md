@@ -13,11 +13,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 99865ecf81fbc7873fef43c51f543f224e281928
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7a6e681c703847c970d79c1523ab12ce89e68d28
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="summary-view---resource-contention-view"></a>Zusammenfassungsansicht – Ansicht für Ressourcenkonflikte
 Die Zusammenfassung zeigt Informationen zu den Ereignissen in der Anwendung an, in der ein Thread oder Prozess angehalten wurde, während er auf den Zugriff auf eine Ressource gewartet hat.  
@@ -32,7 +33,7 @@ Die Zusammenfassung zeigt Informationen zu den Ereignissen in der Anwendung an, 
   
  **Ressourcen mit den meisten Konflikten** umfasst die folgenden Daten für jede Ressource.  
   
-|Spalte|Beschreibung|  
+|Spalte|description|  
 |------------|-----------------|  
 |**Name**|Der Name der Ressource.|  
 |**Konflikte %**|Der Prozentsatz aller Konfliktereignisse in den Profilerstellungsdaten, die Konflikte für die Ressource waren.|  
@@ -42,7 +43,7 @@ Die Zusammenfassung zeigt Informationen zu den Ereignissen in der Anwendung an, 
   
  **Ressourcen mit den meisten Konflikten** umfasst die folgenden Daten für jeden Thread.  
   
-|Spalte|Beschreibung|  
+|Spalte|description|  
 |------------|-----------------|  
 |**ID**|Der Threadbezeichner.|  
 |**Name**|Der Name des Prozesses, der den Thread besitzt.|  

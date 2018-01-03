@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b90a6ed225e358aa47d91cdacec964b5090dedf7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 033d24c2df6e1e483028c6c4ea2d161a9e99a983
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="per-thread-summary-report"></a>Zusammenfassungsbericht pro Thread
 Dieses Balkendiagramm zeigt den Anteil der Zeit, die die einzelnen eingeblendeten Threads in jeder Aktivitätskategorie während des derzeit sichtbaren Zeitraums verbringen. „Ausführung“ bedeutet, dass der Thread ausgeführt wird. Alle anderen Kategorien bedeuten, dass der Thread auf etwas wartet.  
@@ -31,4 +32,4 @@ Dieses Balkendiagramm zeigt den Anteil der Zeit, die die einzelnen eingeblendete
  [Standbyzeit](../profiling/sleep-time.md)   
  [Synchronisierungszeit](../profiling/synchronization-time.md)   
  [Benutzoberflächenverarbeitungszeit](../profiling/ui-processing-time.md)   
- [Threadansicht](../profiling/threads-view-parallel-performance.md)
+ [Threads View (Threadansicht)](../profiling/threads-view-parallel-performance.md)

@@ -34,11 +34,12 @@ caps.latest.revision: "12"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 48cf258dbe267a6e2c2b020ee6613b4dac05b2eb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e7eb9e861898c0874388f9acb4f061a8e902fef1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="link-task"></a>Link-Aufgabe
 Umschließt das Visual C++-Linkertool link.exe. Das Linkertool ist ein Tool, das Objektdateien und Bibliotheken im COFF-Format (Common Object File Format) miteinander verbindet, um eine ausführbare Datei (.exe) oder eine DLL (Dynamic Link Library) zu erstellen. Weitere Informationen finden Sie unter [Linkeroptionen](/cpp/build/reference/linker-options).  
@@ -88,7 +89,7 @@ Umschließt das Visual C++-Linkertool link.exe. Das Linkertool ist ein Tool, das
   
 -   **AllowIsolation**  
   
-     Optionaler **boolescher** Parameter.  
+     Optionaler **Boolean**-Parameter.  
   
      `true` bewirkt, dass das Betriebssystem Manifestsuch- und -ladevorgänge durchführt. `false` gibt an, dass DLLs geladen werden, als ob es kein Manifest gäbe.  
   
@@ -96,7 +97,7 @@ Umschließt das Visual C++-Linkertool link.exe. Das Linkertool ist ein Tool, das
   
 -   **AssemblyDebug**  
   
-     Optionaler **boolescher** Parameter.  
+     Optionaler **Boolean**-Parameter.  
   
      `true` gibt das **DebuggableAttribute**-Attribut mit Debuginformationsnachverfolgung aus und deaktiviert die JIT-Optimierungen. Wenn `false` das **DebuggableAttribute**-Attribut ausgibt, aber Debuginformationsnachverfolgung deaktiviert und JIT-Optimierungen aktiviert.  
   
@@ -126,7 +127,7 @@ Umschließt das Visual C++-Linkertool link.exe. Das Linkertool ist ein Tool, das
   
 -   **BuildingInIDE**  
   
-     Optionaler **boolescher** Parameter.  
+     Optionaler **Boolean**-Parameter.  
   
      Zeigt bei TRUE an, dass MSBuild von der IDE aufgerufen wird. Andernfalls zeigt er an, dass MSBuild von der Befehlszeile aufgerufen wird.  
   
@@ -184,7 +185,7 @@ Umschließt das Visual C++-Linkertool link.exe. Das Linkertool ist ein Tool, das
   
 -   **CLRUnmanagedCodeCheck**  
   
-     Optionaler **boolescher** Parameter.  
+     Optionaler **Boolean**-Parameter.  
   
      Gibt an, ob der Linker **SuppressUnmanagedCodeSecurityAttribute** auf vom Linker generierte PInvoke-Anrufe von verwaltetem Code an nativen DLLs anwendet.  
   
@@ -210,7 +211,7 @@ Umschließt das Visual C++-Linkertool link.exe. Das Linkertool ist ein Tool, das
   
 -   **DataExecutionPrevention**  
   
-     Optionaler **boolescher** Parameter.  
+     Optionaler **Boolean**-Parameter.  
   
      `true` gibt an, dass eine ausführbare Datei mit der Windows-Funktion zur Datenausführungsverhinderung kompatibel ist.  
   
@@ -226,7 +227,7 @@ Umschließt das Visual C++-Linkertool link.exe. Das Linkertool ist ein Tool, das
   
 -   **DelaySign**  
   
-     Optionaler **boolescher** Parameter.  
+     Optionaler **Boolean**-Parameter.  
   
      `true` signiert eine Assembly teilweise. In der Standardeinstellung ist der Wert `false`.  
   
@@ -260,7 +261,7 @@ Umschließt das Visual C++-Linkertool link.exe. Das Linkertool ist ein Tool, das
   
 -   **EnableCOMDATFolding**  
   
-     Optionaler **boolescher** Parameter.  
+     Optionaler **Boolean**-Parameter.  
   
      `true` ermöglicht eine identische COMDAT-Faltung.  
   
@@ -268,7 +269,7 @@ Umschließt das Visual C++-Linkertool link.exe. Das Linkertool ist ein Tool, das
   
 -   **EnableUAC**  
   
-     Optionaler **boolescher** Parameter.  
+     Optionaler **Boolean**-Parameter.  
   
      `true` gibt an, dass Informationen zur Benutzerkontensteuerung (UAC) in das Programmmanifest eingebettet werden.  
   
@@ -284,7 +285,7 @@ Umschließt das Visual C++-Linkertool link.exe. Das Linkertool ist ein Tool, das
   
 -   **FixedBaseAddress**  
   
-     Optionaler **boolescher** Parameter.  
+     Optionaler **Boolean**-Parameter.  
   
      `true` erstellt ein Programm oder eine DLL, das nur an seiner bevorzugten Basisadresse geladen werden kann.  
   
@@ -324,7 +325,7 @@ Umschließt das Visual C++-Linkertool link.exe. Das Linkertool ist ein Tool, das
   
 -   **GenerateDebugInformation**  
   
-     Optionaler **boolescher** Parameter.  
+     Optionaler **Boolean**-Parameter.  
   
      `true` erstellt Debuginformationen für die EXE-Datei oder DLL.  
   
@@ -332,7 +333,7 @@ Umschließt das Visual C++-Linkertool link.exe. Das Linkertool ist ein Tool, das
   
 -   **GenerateManifest**  
   
-     Optionaler **boolescher** Parameter.  
+     Optionaler **Boolean**-Parameter.  
   
      `true` erstellt eine parallele Manifestdatei.  
   
@@ -340,7 +341,7 @@ Umschließt das Visual C++-Linkertool link.exe. Das Linkertool ist ein Tool, das
   
 -   **GenerateMapFile**  
   
-     Optionaler **boolescher** Parameter.  
+     Optionaler **Boolean**-Parameter.  
   
      `true` erstellt eine *Zuordnungsdatei*. Das Suffix der Zuordnungsdatei ist .map.  
   
@@ -364,7 +365,7 @@ Umschließt das Visual C++-Linkertool link.exe. Das Linkertool ist ein Tool, das
   
 -   **IgnoreAllDefaultLibraries**  
   
-     Optionaler **boolescher** Parameter.  
+     Optionaler **Boolean**-Parameter.  
   
      `true` weist den Linker an, mindestens eine Standardbibliothek aus der Liste der Bibliotheken, die durchsucht werden, zu entfernen, wenn externe Verweise aufgelöst werden.  
   
@@ -372,7 +373,7 @@ Umschließt das Visual C++-Linkertool link.exe. Das Linkertool ist ein Tool, das
   
 -   **IgnoreEmbeddedIDL**  
   
-     Optionaler **boolescher** Parameter.  
+     Optionaler **Boolean**-Parameter.  
   
      `true` gibt an, dass IDL-Attribute im Quellcode nicht in einer IDL-Datei verarbeitet werden sollten.  
   
@@ -380,7 +381,7 @@ Umschließt das Visual C++-Linkertool link.exe. Das Linkertool ist ein Tool, das
   
 -   **IgnoreImportLibrary**  
   
-     Optionaler **boolescher** Parameter.  
+     Optionaler **Boolean**-Parameter.  
   
      `true` gibt an, dass die von dieser Konfiguration generierte Importbibliothek nicht in abhängige Projekte importiert werden sollte.  
   
@@ -396,7 +397,7 @@ Umschließt das Visual C++-Linkertool link.exe. Das Linkertool ist ein Tool, das
   
 -   **ImageHasSafeExceptionHandlers**  
   
-     Optionaler **boolescher** Parameter.  
+     Optionaler **Boolean**-Parameter.  
   
      Bei `true` erstellt der Linker nur dann ein Image, wenn auch eine Tabelle mit den sicheren Ausnahmehandlern des Images erstellt werden kann.  
   
@@ -426,7 +427,7 @@ Umschließt das Visual C++-Linkertool link.exe. Das Linkertool ist ein Tool, das
   
 -   **LargeAddressAware**  
   
-     Optionaler **boolescher** Parameter.  
+     Optionaler **Boolean**-Parameter.  
   
      Bei `true` kann die Anwendung Adressen verarbeiten, die größer als 2 GB sind.  
   
@@ -434,7 +435,7 @@ Umschließt das Visual C++-Linkertool link.exe. Das Linkertool ist ein Tool, das
   
 -   **LinkDLL**  
   
-     Optionaler **boolescher** Parameter.  
+     Optionaler **Boolean**-Parameter.  
   
      `true` erstellt eine DLL als Hauptausgabedatei.  
   
@@ -460,7 +461,7 @@ Umschließt das Visual C++-Linkertool link.exe. Das Linkertool ist ein Tool, das
   
 -   **LinkIncremental**  
   
-     Optionaler **boolescher** Parameter.  
+     Optionaler **Boolean**-Parameter.  
   
      `true` aktiviert die inkrementelle Verknüpfung.  
   
@@ -468,7 +469,7 @@ Umschließt das Visual C++-Linkertool link.exe. Das Linkertool ist ein Tool, das
   
 -   **LinkLibraryDependencies**  
   
-     Optionaler **boolescher** Parameter.  
+     Optionaler **Boolean**-Parameter.  
   
      `true` gibt an, dass die Bibliotheksausgaben von Projektabhängigkeiten automatisch eingebunden werden.  
   
@@ -476,7 +477,7 @@ Umschließt das Visual C++-Linkertool link.exe. Das Linkertool ist ein Tool, das
   
 -   **LinkStatus**  
   
-     Optionaler **boolescher** Parameter.  
+     Optionaler **Boolean**-Parameter.  
   
      `true` gibt an, dass der Linker eine Statusanzeige ausgibt, die anzeigt, welcher Prozentsatz des Links abgeschlossen ist.  
   
@@ -490,7 +491,7 @@ Umschließt das Visual C++-Linkertool link.exe. Das Linkertool ist ein Tool, das
   
      Geben Sie einen der folgenden Werte an, von denen jeder einer Befehlszeilenoption entspricht.  
   
-    -   **Standard** - *\<none>*  
+    -   **Default** - *\<none>*  
   
     -   **UseLinkTimeCodeGeneration** - **/LTCG**  
   
@@ -514,7 +515,7 @@ Umschließt das Visual C++-Linkertool link.exe. Das Linkertool ist ein Tool, das
   
 -   **MapExports**  
   
-     Optionaler **boolescher** Parameter.  
+     Optionaler **Boolean**-Parameter.  
   
      `true` weist den Linker an, exportierte Funktionen in eine Zuordnungsdatei einzufügen.  
   
@@ -574,7 +575,7 @@ Umschließt das Visual C++-Linkertool link.exe. Das Linkertool ist ein Tool, das
   
 -   **NoEntryPoint**  
   
-     Optionaler **boolescher** Parameter.  
+     Optionaler **Boolean**-Parameter.  
   
      `true` gibt eine DLL an, die nur als Ressource dient.  
   
@@ -588,7 +589,7 @@ Umschließt das Visual C++-Linkertool link.exe. Das Linkertool ist ein Tool, das
   
 -   **OptimizeReferences**  
   
-     Optionaler **boolescher** Parameter.  
+     Optionaler **Boolean**-Parameter.  
   
      `true` schließt Funktionen und/oder Daten aus, auf die nie verwiesen wird.  
   
@@ -604,19 +605,19 @@ Umschließt das Visual C++-Linkertool link.exe. Das Linkertool ist ein Tool, das
   
 -   **PerUserRedirection**  
   
-     Optionaler **boolescher** Parameter.  
+     Optionaler **Boolean**-Parameter.  
   
      Wenn `true` und Ausgabe registrieren aktiviert ist, erzwingen die Registrierungsschreibvorgänge die Umleitung von **HKEY_CLASSES_ROOT** nach **HKEY_CURRENT_USER**.  
   
 -   **PreprocessOutput**  
   
-     Optionaler `ITaskItem[]`-Parameter.  
+     Optionaler `ITaskItem[]` -Parameter.  
   
      Definiert ein Array von Präprozessor-Ausgabeelementen, die verbraucht und von Aufgaben ausgegeben werden können.  
   
 -   **PreventDllBinding**  
   
-     Optionaler **boolescher** Parameter.  
+     Optionaler **Boolean**-Parameter.  
   
      `true` gibt Bind.exe an, dass das verknüpfte Image nicht gebunden werden soll.  
   
@@ -648,7 +649,7 @@ Umschließt das Visual C++-Linkertool link.exe. Das Linkertool ist ein Tool, das
   
 -   **RandomizedBaseAddress**  
   
-     Optionaler **boolescher** Parameter.  
+     Optionaler **Boolean**-Parameter.  
   
      `true` generiert ein ausführbares Image, für das zur Ladezeit mit der *Address Space Layout Randomization*-Funktion (ASLR) von Windows nach dem Zufallsprinzip ein Rebase-Vorgang ausgeführt werden kann.  
   
@@ -656,7 +657,7 @@ Umschließt das Visual C++-Linkertool link.exe. Das Linkertool ist ein Tool, das
   
 -   **RegisterOutput**  
   
-     Optionaler **boolescher** Parameter.  
+     Optionaler **Boolean**-Parameter.  
   
      `true` registriert die primäre Ausgabe dieses Builds.  
   
@@ -670,7 +671,7 @@ Umschließt das Visual C++-Linkertool link.exe. Das Linkertool ist ein Tool, das
   
 -   **SetChecksum**  
   
-     Optionaler **boolescher** Parameter.  
+     Optionaler **Boolean**-Parameter.  
   
      `true` legt die Prüfsumme im Header einer EXE-Datei fest.  
   
@@ -702,7 +703,7 @@ Umschließt das Visual C++-Linkertool link.exe. Das Linkertool ist ein Tool, das
   
 -   **Sources**  
   
-     Erforderlicher `ITaskItem[]`-Parameter.  
+     Erforderlicher `ITaskItem[]` -Parameter.  
   
      Definiert ein Array von MSBuild-Quelldateielementen, die verbraucht und von Aufgaben ausgegeben werden können.  
   
@@ -770,7 +771,7 @@ Umschließt das Visual C++-Linkertool link.exe. Das Linkertool ist ein Tool, das
   
 -   **SupportNobindOfDelayLoadedDLL**  
   
-     Optionaler **boolescher** Parameter.  
+     Optionaler **Boolean**-Parameter.  
   
      `true` weist den Linker an, keine bindbare Importadresstabelle (IAT) in das endgültige Image einzuschließen.  
   
@@ -778,7 +779,7 @@ Umschließt das Visual C++-Linkertool link.exe. Das Linkertool ist ein Tool, das
   
 -   **SupportUnloadOfDelayLoadedDLL**  
   
-     Optionaler **boolescher** Parameter.  
+     Optionaler **Boolean**-Parameter.  
   
      `true` weist die Hilfsfunktion für das verzögerte Laden an, das explizite Entladen der DLL zu unterstützen.  
   
@@ -794,7 +795,7 @@ Umschließt das Visual C++-Linkertool link.exe. Das Linkertool ist ein Tool, das
   
 -   **SwapRunFromCD**  
   
-     Optionaler **boolescher** Parameter.  
+     Optionaler **Boolean**-Parameter.  
   
      `true` weist das Betriebssystem an, zuerst die Linker-Ausgabe in eine Auslagerungsdatei zu kopieren und dann das Image von dort aus auszuführen.  
   
@@ -802,7 +803,7 @@ Umschließt das Visual C++-Linkertool link.exe. Das Linkertool ist ein Tool, das
   
 -   **SwapRunFromNET**  
   
-     Optionaler **boolescher** Parameter.  
+     Optionaler **Boolean**-Parameter.  
   
      `true` weist das Betriebssystem an, zuerst die Linker-Ausgabe in eine Auslagerungsdatei zu kopieren und dann das Image von dort aus auszuführen.  
   
@@ -844,7 +845,7 @@ Umschließt das Visual C++-Linkertool link.exe. Das Linkertool ist ein Tool, das
   
 -   **TerminalServerAware**  
   
-     Optionaler **boolescher** Parameter.  
+     Optionaler **Boolean**-Parameter.  
   
      `true` setzt ein Flag in das Feld IMAGE_OPTIONAL_HEADER DllCharacteristics im optionalen Header des Programm-Images. Wenn dieses Flag festgelegt ist, wird der Terminalserver keine bestimmten Änderungen an der Anwendung vornehmen.  
   
@@ -858,7 +859,7 @@ Umschließt das Visual C++-Linkertool link.exe. Das Linkertool ist ein Tool, das
   
 -   **TreatLinkerWarningAsErrors**  
   
-     Optionaler **boolescher** Parameter.  
+     Optionaler **Boolean**-Parameter.  
   
      `true` bewirkt, dass keine Ausgabedatei generiert wird, wenn der Linker eine Warnung generiert.  
   
@@ -866,7 +867,7 @@ Umschließt das Visual C++-Linkertool link.exe. Das Linkertool ist ein Tool, das
   
 -   **TurnOffAssemblyGeneration**  
   
-     Optionaler **boolescher** Parameter.  
+     Optionaler **Boolean**-Parameter.  
   
      `true` erstellt ein Image für die aktuelle Ausgabedatei ohne eine .NET Framework-Assembly.  
   
@@ -906,7 +907,7 @@ Umschließt das Visual C++-Linkertool link.exe. Das Linkertool ist ein Tool, das
   
 -   **UACUIAccess**  
   
-     Optionaler **boolescher** Parameter.  
+     Optionaler **Boolean**-Parameter.  
   
      Bei `true` umgeht die Anwendung Sicherheitsebenen für Benutzeroberflächen und steuert die Eingabe in Fenster mit höheren Berechtigungen auf dem Desktop; andernfalls `false`.  
   
@@ -914,7 +915,7 @@ Umschließt das Visual C++-Linkertool link.exe. Das Linkertool ist ein Tool, das
   
 -   **UseLibraryDependencyInputs**  
   
-     Optionaler **boolescher** Parameter.  
+     Optionaler **Boolean**-Parameter.  
   
      Bei `true` werden die Eingaben in das Bibliothekstool eher verwendet als die Bibliotheksdatei selbst, wenn Bibliotheksausgaben von Projektabhängigkeiten verknüpft sind.  
   

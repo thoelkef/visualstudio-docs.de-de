@@ -14,11 +14,12 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 199c33ce94aa1fcb5cffc45570a4425df3dbd720
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 748b547cda2a3c07ed84337d37f2a7e096ee112d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="blocking-time-profile-report"></a>Blockierungszeit-Profilbericht
 Die Profilberichte enthalten aggregierte Blockierungszeitdaten für spezifische Aufruflisten zu den einzelnen Blockierungskategorien (wie „E/A“ oder „Synchronisierung“). Der Bericht zur vorzeitigen Entfernung listet die Prozesse auf, die den aktuellen Prozess vorzeitig entfernt haben, und gibt die Anzahl der Instanzen für die vorzeitige Entfernung an. Um den Blockierungsprofilbericht zu erstellen, sammelt das Tool blockierende API-Aufrufe und stellt sie in einer Struktur von Aufruflisten zusammen. In diesen Berichten angezeigte Daten hängen vom aktuellen Zeitraum, von ausgeblendeten Threads und den beiden folgenden Filtern ab, die angewendet werden können:  
@@ -32,9 +33,9 @@ Die Profilberichte enthalten aggregierte Blockierungszeitdaten für spezifische 
 ## <a name="blocking-time-report-columns"></a>Spalten des Blockierungszeitberichts  
  Die folgende Tabelle zeigt die Spalten für die einzelnen Blockierungszeitberichte.  
   
-|Spaltenname|Beschreibung|  
+|Spaltenname|description|  
 |-----------------|-----------------|  
-|Name|Der Name der Funktion für die einzelnen Ebenen der Aufrufliste.|  
+|name|Der Name der Funktion für die einzelnen Ebenen der Aufrufliste.|  
 |Instanzen|Die Anzahl der Instanzen des blockierenden Aufrufs für den sichtbaren Zeitraum.|  
 |Inklusive Blockierungszeit|Die Gesamtblockierungszeit, die für alle Stapel angefallen ist, für die bis zu dieser Ebene der Aufruflistenstruktur ein Rollup ausgeführt wird. Die inklusive Zahl ist die Summe aus der exklusiven Blockierungszeit für diese Funktion und der exklusiven Blockierungszeit für alle untergeordneten Knoten.|  
 |Exklusive Blockierungszeit|Die aufgewendete Gesamtblockierungszeit, während der sich diese Funktion auf der untersten Ebene der Aufrufliste befand. Ein eindeutiger Eintrag in der Aufrufliste, der eine hohe exklusive Blockierungszeit aufweist, kann eine interessante Funktion sein.|  

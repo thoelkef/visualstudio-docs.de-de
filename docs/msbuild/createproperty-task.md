@@ -21,19 +21,20 @@ caps.latest.revision: "11"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: a585c0c3065d16000737ebfd5c42e3f020c0074a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 9ae7e6d5203ac4f2b6ff58a19d4938180b7a11c3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="createproperty-task"></a>CreateProperty-Aufgabe
 Füllt Eigenschaften mit den übergebenen Werten auf. Dadurch können Werte aus einer Eigenschaft oder Zeichenfolge in eine andere kopiert werden.  
   
 ## <a name="attributes"></a>Attribute  
- In der folgenden Tabelle werden die Parameter der `CreateProperty`-Aufgabe beschrieben.  
+ In der folgenden Tabelle werden die Parameter der `CreateProperty` -Aufgabe beschrieben.  
   
-|Parameter|Beschreibung|  
+|Parameter|description|  
 |---------------|-----------------|  
 |`Value`|Optionaler `String`-Ausgabeparameter.<br /><br /> Gibt den Wert an, der in die neue Eigenschaft kopiert werden soll|  
 |`ValueSetByTask`|Optionaler `String`-Ausgabeparameter.<br /><br /> Enthält denselben Wert wie der `Value`-Parameter. Verwenden Sie diesen Parameter nur, wenn die Ausgabeeigenschaft nicht von [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] festgelegt werden soll, wenn es das umschließende Ziel überspringt, weil die Ausgaben auf dem neuesten Stand sind.|  
@@ -69,5 +70,5 @@ Füllt Eigenschaften mit den übergebenen Werten auf. Dadurch können Werte aus 
  Nach dem Ausführen des Projekts, ist der Wert der `NewFile`-Eigenschaft `Module1.vb`.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Task Reference (Aufgabenreferenz)](../msbuild/msbuild-task-reference.md)   
+ [Task Reference](../msbuild/msbuild-task-reference.md)  (MSBuild-Aufgabenreferenz)  
  [Tasks (Aufgaben)](../msbuild/msbuild-tasks.md)

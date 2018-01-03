@@ -12,11 +12,12 @@ caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7669d8ca915a32496399c526b112e877a8bce57c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: aspnet
+ms.openlocfilehash: 7c4a1e48d5e9bdbf28569656b580608a6c35034a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="profiling-aspnet-load-tests"></a>Profilerstellung für ASP.NET-Auslastungstests
 Sie können Profilerstellungsdaten von automatisierten [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)]-Webtests sammeln, die Sie für ASP.NET-Websiteprojekte ausführen. Sie können Sampling- und Ebeneninteraktionsdaten sammeln. Weitere Informationen finden Sie unter den folgenden Themen:  

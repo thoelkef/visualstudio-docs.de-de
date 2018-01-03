@@ -17,11 +17,12 @@ caps.latest.revision: "23"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f170ac2a1c72f7c9a10b7aecbafeaf95948db817
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: aa11c44250cf220c692091372f4b5354272d89a9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="peopletrax-sample-profiling-tools"></a>PeopleTrax-Beispiel (Profilerstellungstools)
 Die Beispielanwendung „PeopleTrax“ wird für eine Reihe von detaillierten exemplarischen Vorgehensweisen für die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Profilerstellungstools verwendet. Sie können eine ZIP-Datei mit dem PeopleTrax-Anwendungscode aus der [MSDN Code Gallery](http://go.microsoft.com/fwlink/?LinkId=160299) herunterladen.

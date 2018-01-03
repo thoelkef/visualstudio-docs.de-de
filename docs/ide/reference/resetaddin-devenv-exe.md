@@ -16,11 +16,12 @@ caps.latest.revision: "5"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8f54e50e62b7f7f8f6dd1610904b66c82da02380
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 36b003f4890b16a7b69f7f66f8b0ef83a0ade7ac
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="resetaddin-devenvexe"></a>/ResetAddin (devenv.exe)
 Entfernt Befehle und die Befehlsbenutzeroberfläche, die dem angegebenen Add-In zugeordnet sind.  
@@ -33,7 +34,7 @@ Devenv /ResetAddin AddIn
   
 ## <a name="arguments"></a>Argumente  
  `AddIn`  
- Optional. Der Befehlsname des Add-Ins.  
+ Dies ist optional. Der Befehlsname des Add-Ins.  
   
 ## <a name="remarks"></a>Hinweise  
  Standardmäßig entspricht der Befehlsname des Add-Ins *\<AddInSolutionName>*.Connect*.\<AddInSolutionName>* und wird in Connect.cs als `commandName`-Parameter der `Exec`-Methode angezeigt. Sie können den Befehlsnamen auch überprüfen, indem Sie den Namen des Add-Ins im Befehlsfenster von Visual Studio eingeben und die Eingabe von IntelliSense vervollständigen lassen.  

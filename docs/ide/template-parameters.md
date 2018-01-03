@@ -17,11 +17,12 @@ caps.latest.revision: "24"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c9a719e39506e080ce55bad45124e34d79dbbfac
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7218b5bdcc95ed5db7f87c6fb17230895db579cf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="template-parameters"></a>Vorlagenparameter
 Indem Sie Parameter in Ihren Vorlagen verwenden, können Sie die Werte von Schlüsselteilen der Vorlage, wie z. B. Klassennamen und Namespaces, bei Instanziierung die Vorlage ersetzen. Diese Parameter werden durch den Vorlagen-Assistenten ersetzt, der im Hintergrund ausgeführt wird, wenn ein Benutzer in den Dialogfeldern **Neues Projekt** oder **Neues Element hinzufügen** auf **OK** klickt.  
@@ -53,7 +54,7 @@ Indem Sie Parameter in Ihren Vorlagen verwenden, können Sie die Werte von Schl�
 > [!NOTE]
 >  Bei Vorlagenparametern wird die Groß-/Kleinschreibung beachtet.  
   
-|Parameter|Beschreibung|  
+|Parameter|description|  
 |---------------|-----------------|  
 |`clrversion`|Aktuelle Version der Common Language Runtime (CLR).|  
 |`GUID [1-10]`|Eine GUID zum Ersetzen der Projekt-GUID in einer Projektdatei. Sie können bis zu 10 eindeutige GUIDs (z. B. `guid1)`) angeben.|  

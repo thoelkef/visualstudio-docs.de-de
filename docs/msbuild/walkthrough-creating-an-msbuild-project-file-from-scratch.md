@@ -13,11 +13,12 @@ caps.latest.revision: "20"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 740eefc28e0b48d327fb5d0900ab39364633f877
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b8c0f47186b36cea9b203805c3c9c009acb3fb42
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-an-msbuild-project-file-from-scratch"></a>Exemplarische Vorgehensweise: Erstellen einer neuen MSBuild-Projektdatei
 Programmiersprachen für das .NET Framework verwenden MSBuild-Projektdateien zum Beschreiben und Steuern des Anwendungsbuildprozesses. Wenn Sie in Visual Studio eine MSBuild-Projektdatei erstellen, wird der Datei automatisch das entsprechende XML hinzugefügt. Ein Grundverständnis der Organisation des XML und der Änderungsmöglichkeiten zum Steuern eines Builds ist jedoch empfehlenswert.  
@@ -400,7 +401,7 @@ Programmiersprachen für das .NET Framework verwenden MSBuild-Projektdateien zum
   
 ## <a name="example"></a>Beispiel  
   
-### <a name="description"></a>Beschreibung  
+### <a name="description"></a>description  
  Das folgende Beispiel enthält eine Projektdatei, durch die eine [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]-Anwendung kompiliert und eine Meldung mit dem Namen der Ausgabedatei protokolliert wird.  
   
 ### <a name="code"></a>Code  
@@ -440,7 +441,7 @@ Programmiersprachen für das .NET Framework verwenden MSBuild-Projektdateien zum
   
 ## <a name="example"></a>Beispiel  
   
-### <a name="description"></a>Beschreibung  
+### <a name="description"></a>description  
  Das folgende Beispiel enthält eine Projektdatei, durch die eine [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]-Anwendung kompiliert und eine Meldung mit dem Namen der Ausgabedatei protokolliert wird.  
   
 ### <a name="code"></a>Code  

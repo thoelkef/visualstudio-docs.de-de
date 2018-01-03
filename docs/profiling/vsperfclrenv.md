@@ -18,11 +18,12 @@ caps.latest.revision: "18"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 580d3b5f1dab03e34dac7c452da08e00e453a503
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a8f41fdf3a337fb2dea5ccca7131de34743c9096
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="vsperfclrenv"></a>VSPerfCLREnv
 Das VSPerfCLREnv-Tool wird verwendet, um Umgebungsvariablen festzulegen, die für die Profilerstellung einer .NET Framework-Anwendung erforderlich sind. Es verwendet die folgende Syntax:  
@@ -67,7 +68,7 @@ VSPerfCmd /Attach:MyService.exe
   
  Die folgende Tabelle beschreibt VSPerfCLREnv-Optionen für die Instrumentierungsprofilerstellung:  
   
-|Option|Beschreibung|  
+|Option|description|  
 |------------|-----------------|  
 |**TraceOn**|Aktiviert die Profilerstellung mithilfe der Instrumentierungsmethode. Aktiviert nicht die Profilerstellung für die Speicherreservierung oder die Sammlung von Objektlebensdauerdaten.|  
 |**TraceGC**|Aktiviert die Profilerstellung für die Speicherreservierung mithilfe der Instrumentierungsmethode. Aktiviert nicht die Sammlung von Objektlebensdauerdaten.|  
@@ -77,7 +78,7 @@ VSPerfCmd /Attach:MyService.exe
   
  Die folgende Tabelle beschreibt VSPerfCLREnv-Optionen für die Sampling-Profilerstellung:  
   
-|Option|Beschreibung|  
+|Option|description|  
 |------------|-----------------|  
 |**SampleOn**|Aktiviert die Profilerstellung mithilfe der Samplingmethode. Aktiviert nicht die Profilerstellung für die Speicherreservierung oder die Sammlung von Objektlebensdauerdaten.|  
 |**SampleGC**|Aktiviert die Profilerstellung für die Speicherreservierung mithilfe der Samplingmethode. Aktiviert nicht die Sammlung von Objektlebensdauerdaten.|  
@@ -88,7 +89,7 @@ VSPerfCmd /Attach:MyService.exe
   
  Um die Profilerstellung für einen verwalteten Dienst wie die ASP.NET-Webanwendung auszuführen, die vom Betriebssystem anstatt vom Benutzer gestartet wird, verwenden Sie Optionen für die globale Profilerstellung der VSPerfCLREnv-Optionen. Die folgende Tabelle beschreibt die globalen Versionen der VSPerfCLREnv-Optionen. Diese Optionen legen die geeigneten Umgebungsvariablen bei der Registrierung fest.  
   
-|Option|Beschreibung|  
+|Option|description|  
 |------------|-----------------|  
 |**GlobalTraceOn**|Aktiviert die globale Profilerstellung mithilfe der Instrumentierungsmethode. Sammelt keine Speicherreservierungsereignisse oder Objektlebensdauerdaten.|  
 |**GlobalTraceGC**|Aktiviert die globale Profilerstellung für die Speicherreservierung mithilfe der Instrumentierungsmethode. Aktiviert nicht die Sammlung von Objektlebensdauerdaten.|  
@@ -101,7 +102,7 @@ VSPerfCmd /Attach:MyService.exe
   
  Wenn Sie mit der Profilerstellung für die verwaltete Anwendung fertig sind, verwenden Sie eine der folgenden Optionen zum Löschen der Umgebungsvariablen, die von VSPerfCLREnv hinzugefügt wurden. In der folgenden Tabelle wird beschrieben, wie sowohl Standard- als auch globale Umgebungsvariablen gelöscht werden:  
   
-|Option|Beschreibung|  
+|Option|description|  
 |------------|-----------------|  
 |**Off**|Löscht Umgebungsvariablen für die Standard-.NET-Profilerstellung. Verwenden Sie diese Option, wenn die nicht globalen VSPerfClrEnv-Optionen zum Festlegen der Profiler-Umgebungsvariablen verwendet wurden.|  
 |**GlobalOff**|Löscht Umgebungsvariablen für die globale .NET-Profilerstellung. Verwenden Sie diese Option, wenn die Anwendung vom Betriebssystem anstatt vom Profiler gestartet wurde.|  

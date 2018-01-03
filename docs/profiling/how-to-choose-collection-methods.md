@@ -16,11 +16,12 @@ caps.latest.revision: "34"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b94b842566c3f8bf5ad5374acda0ccc9e9b50cbe
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ff646066c4e29c46c7ad3c24322d368fa54da9eb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-choose-collection-methods"></a>Gewusst wie: Auswählen von Sammlungsmethoden
 Die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Profilerstellungstools unterstützen drei Methoden zum Sammeln von Leistungsdaten: Sampling, Instrumentierung und Parallelität. Sie können zum Sammeln von Daten zur .NET-Speicherbelegung und Lebensdauerdaten entweder die Sampling- oder Instrumentierungsmethode verwenden.  
@@ -37,7 +38,7 @@ Die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Profilerstellungst
   
 -   Wählen Sie auf der ersten Seite des Assistenten eine der folgenden Optionen aus:  
   
-|Option|Beschreibung|  
+|Option|description|  
 |------------|-----------------|  
 |**CPU-Sampling**|Sammelt Anwendungsstatistiken, die für die erste Analyse und zum Analysieren von CPU-Auslastungsproblemen nützlich sind.|  
 |**Instrumentation**|Sammelt ausführliche Zeitsteuerungsdaten, die zur gezielten Analyse und zur Analyse von Eingabe/Ausgabe-Leistungsproblemen nützlich sind.|  

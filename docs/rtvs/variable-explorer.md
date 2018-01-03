@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: c56250677e99a11c52ac368037525803394242b3
-ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
+ms.workload: data-science
+ms.openlocfilehash: c75e15def5f9abe98be3f062650c84693716c87e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="variable-explorer"></a>Variablen-Explorer
 
@@ -27,22 +28,22 @@ x <- 42
 y <- 43
 n <- c(1,2,3,5,8,13)
 ```
- 
+
 Das Fenster des Variablen-Explorers wird folgendermaßen angezeigt:
 
 ![Fenster „Variablen-Explorer“ in Visual Studio](media/variable-explorer-window.png)
 
 Wenn Sie einen komplexeren, in der Sitzung definierten R-Datenrahmen haben, können Sie in den Daten navigieren. Nach der Ausführung von `cars <- mtcars` können Sie z.B. in dem Dataset navigieren, indem Sie die anderen Knoten im Variablen-Explorer erweitern:
- 
+
 ![Erweiterte Ansicht des Variablen-Explorers](media/variable-explorer-expanded-results.png)
- 
+
 Klicken Sie zum Löschen von Variablen mit der rechten Maustaste darauf, und wählen Sie **Löschen** aus. Wählen Sie alternativ die Variable aus, und drücken Sie ENTF.
 
 Sie können auch mithilfe der inkrementellen Suche in einem Datenrahmen nach einer Beobachtung suchen. Erweitern Sie zuerst die Knoten im Datenrahmen, die Sie suchen möchten, und geben Sie dann Suchbegriffe in das Suchfeld ein.
 
 ## <a name="details-table-view"></a>Detailansicht (Tabelle)
 
-Da Daten in Tabellen erfasst werden, können Sie alle komplexen Datentypen als separate Tabelle anzeigen, indem Sie das Lupensymbol auswählen oder mit der rechten Maustaste darauf klicken und anschließend **Details anzeigen** auswählen. 
+Da Daten in Tabellen erfasst werden, können Sie alle komplexen Datentypen als separate Tabelle anzeigen, indem Sie das Lupensymbol auswählen oder mit der rechten Maustaste darauf klicken und anschließend **Details anzeigen** auswählen.
 
 ![Tabellenansicht des Variablen-Explorers](media/variable-explorer-table-view.png)
 
@@ -69,7 +70,6 @@ Sie können auch zu einem Funktionsbereich wechseln, wenn Sie an einem Breakpoin
 ![Variablen-Explorer, der einen Datenrahmen während des Debuggens zeigt](media/variable-explorer-as-locals-window.png)
 
 Der Variablen-Explorer ändert automatisch den Funktionsbereich, während der Code im Debugger durchlaufen wird, z.B. beim Anzeigen lokaler Variablen in einer Funktion.
-
 
 ## <a name="importing-data-into-variable-explorer"></a>Importieren von Daten in den Variablen-Explorer
 

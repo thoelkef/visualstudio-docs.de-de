@@ -20,11 +20,12 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 552e08a653c576a0f2e4bc916beaf4749ff490ee
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 48e849df1cb918682176befa25c688fe7b436460
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-command-aliases"></a>Visual Studio Command Aliases
 Aliasse bieten eine Möglichkeit, den zur Ausführung eines Befehls erforderlichen Text im Feld **Find/Command** (Suchen/Befehl) oder im **Befehlsfenster** in verkürzter Form einzugeben. Um das Dialogfeld **Datei öffnen** anzuzeigen, können Sie beispielsweise den vordefinierten Alias `>of` verwenden, anstatt `>File.OpenFile` einzugeben.  
@@ -41,7 +42,7 @@ Aliasse bieten eine Möglichkeit, den zur Ausführung eines Befehls erforderlich
 |[Befehl "Schnellansicht"](../../ide/reference/quick-watch-command.md)|??|Debug.Quickwatch|  
 |Neues Projekt hinzufügen|AddProj|File.AddNewProject|  
 |[Befehl "Alias"](../../ide/reference/alias-command.md)|Alias|Tools.Alias|  
-|Fenster |Autos|Debug.Autos|  
+|Fenster |Auto|Debug.Autos|  
 |"Haltepunkte" (Fenster)|bl|Debug.Breakpoints|  
 |Haltepunkt ein/aus|bp|Debug.ToggleBreakPoint|  
 |Aufruflistenfenster|CallStack|Debug.CallStack|  
@@ -65,7 +66,7 @@ Aliasse bieten eine Möglichkeit, den zur Ausführung eines Befehls erforderlich
 |[Befehl „Arbeitsspeicher auflisten“](../../ide/reference/list-memory-command.md) im Acht-Byte-Format|dq|Debug.ListMemory /Format:EightBytes|  
 |[Befehl „Arbeitsspeicher auflisten“](../../ide/reference/list-memory-command.md) als Unicode|du|Debug.ListMemory /Unicode|  
 |[Befehl "Anweisung auswerten"](../../ide/reference/evaluate-statement-command.md)|eval|Debug.EvaluateStatement|  
-|Beenden|Beenden|File.Exit|  
+|Beenden|Schließen|File.Exit|  
 |Auswahl formatieren|format|Edit.FormatSelection|  
 |Ganzer Bildschirm|FullScreen|View.FullScreen|  
 |[Befehl "Start"](../../ide/reference/start-command.md)|g|Debug.Start|  
@@ -117,7 +118,7 @@ Aliasse bieten eine Möglichkeit, den zur Ausführung eines Befehls erforderlich
 |Untereinander|TileH|Window.TileHorizontally|  
 |Nebeneinander|TileV|Window.TileVertically|  
 |Lesezeichen umschalten|ToggleBook|Edit.ToggleBookmark|  
-|Fenster "Toolbox"|Toolbox|View.Toolbox|  
+|Fenster „Toolbox“|Toolbox|View.Toolbox|  
 |[Befehl "Disassemblierung auflisten"](../../ide/reference/list-disassembly-command.md)|n|Debug.ListDisassembly|  
 |In Großbuchstaben umwandeln|Ucase|Edit.MakeUppercase|  
 |Rückgängig|undo|Edit.Undo|  

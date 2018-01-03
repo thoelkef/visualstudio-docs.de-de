@@ -22,11 +22,12 @@ caps.latest.revision: "24"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 79e8958ca5e2e75ed62da63f52bdac5b0f3b5043
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e0ae1ff71e2fb304849b70222fec7a4ce85c0560
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="generateapplicationmanifest-task"></a>GenerateApplicationManifest-Aufgabe
 Generiert ein [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]-Anwendungsmanifest oder ein systemeigenes Manifest. Ein systemeigenes Manifest beschreibt eine Komponente, indem eine eindeutige Identität für die Komponente definiert wird und alle Assemblys und Dateien, aus denen die Komponente besteht, bezeichnet werden. Ein [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]-Anwendungsmanifest erweitert ein systemeigenes Manifest durch die Angabe des Einstiegspunkts und der Sicherheitsebene der Anwendung.  
@@ -34,22 +35,22 @@ Generiert ein [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]-
 ## <a name="parameters"></a>Parameter  
  In der folgenden Tabelle werden die Parameter für die `GenerateApplicationManifest`-Aufgabe beschrieben.  
   
-|Parameter|Beschreibung|  
+|Parameter|description|  
 |---------------|-----------------|  
 |`AssemblyName`|Optionaler `String` -Parameter.<br /><br /> Gibt das `Name`-Feld der Assemblyidentität für das generierte Manifest an. Wenn dieser Parameter nicht angegeben wird, wird der Name vom `EntryPoint`-Parameter oder `InputManifest`-Parameter abgeleitet. Wenn kein Name erstellt werden kann, löst die Aufgabe einen Fehler aus.|  
 |`AssemblyVersion`|Optionaler `String` -Parameter.<br /><br /> Gibt das `Version`-Feld der Assemblyidentität für das generierte Manifest an. Wenn dieser Parameter nicht angegeben wird, wird der Standardwert "1.0.0.0" verwendet.|  
 |`ClrVersion`|Optionaler `String` -Parameter.<br /><br /> Gibt die für die Anwendung erforderliche Mindestversion der Common Language Runtime (CLR) an. Der Standardwert ist die vom Buildsystem verwendete CLR-Version. Wenn die Aufgabe ein natives Manifest generiert, wird dieser Parameter ignoriert.|  
-|`ConfigFile`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]` -Parameter.<br /><br /> Gibt an, welches Element die Anwendungskonfigurationsdatei enthält. Wenn die Aufgabe ein natives Manifest generiert, wird dieser Parameter ignoriert.|  
-|`Dependencies`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]` -Parameter.<br /><br /> Gibt eine Elementliste an, die die abhängigen Assemblys für das generierte Manifest definiert. Jedes Element wird ggf. anhand von Elementmetadaten näher beschrieben, um zusätzlich den Bereitstellungszustand und den Typ der Abhängigkeit anzugeben. Weitere Informationen finden Sie im Abschnitt "Elementmetadaten" weiter unten.|  
+|`ConfigFile`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter<br /><br /> Gibt an, welches Element die Anwendungskonfigurationsdatei enthält. Wenn die Aufgabe ein natives Manifest generiert, wird dieser Parameter ignoriert.|  
+|`Dependencies`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter<br /><br /> Gibt eine Elementliste an, die die abhängigen Assemblys für das generierte Manifest definiert. Jedes Element wird ggf. anhand von Elementmetadaten näher beschrieben, um zusätzlich den Bereitstellungszustand und den Typ der Abhängigkeit anzugeben. Weitere Informationen finden Sie im Abschnitt "Elementmetadaten" weiter unten.|  
 |`Description`|Optionaler `String` -Parameter.<br /><br /> Gibt die Beschreibung der Anwendung oder Komponente an.|  
-|`EntryPoint`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]` -Parameter.<br /><br /> Gibt ein einzelnes Element an, das den Einstiegspunkt für die generierte Manifestassembly bezeichnet.<br /><br /> Bei einem [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]-Anwendungsmanifest gibt dieser Parameter die Assembly an, die gestartet wird, wenn die Anwendung ausgeführt wird.|  
+|`EntryPoint`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter<br /><br /> Gibt ein einzelnes Element an, das den Einstiegspunkt für die generierte Manifestassembly bezeichnet.<br /><br /> Bei einem [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]-Anwendungsmanifest gibt dieser Parameter die Assembly an, die gestartet wird, wenn die Anwendung ausgeführt wird.|  
 |`ErrorReportUrl`|Optionaler <xref:System.String?displayProperty=fullName> -Parameter.<br /><br /> Gibt die URL der Webseite an, die bei Fehlerberichten während ClickOnce-Installationen in den Dialogfeldern angezeigt wird.|  
-|`FileAssociations`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]` -Parameter.<br /><br /> Gibt eine Liste mit mindestens einem Dateityp an, der dem ClickOnce-Bereitstellungsmanifest zugeordnet ist.<br /><br /> Dateizuordnungen sind nur gültig, wenn als Ziel .NET Framework 3.5 oder höher verwendet wird.|  
-|`Files`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]` -Parameter.<br /><br /> Die Dateien, die in das Manifest eingeschlossen werden sollen. Geben Sie den vollständigen Pfad für jede Datei an.|  
+|`FileAssociations`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter<br /><br /> Gibt eine Liste mit mindestens einem Dateityp an, der dem ClickOnce-Bereitstellungsmanifest zugeordnet ist.<br /><br /> Dateizuordnungen sind nur gültig, wenn als Ziel .NET Framework 3.5 oder höher verwendet wird.|  
+|`Files`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter<br /><br /> Die Dateien, die in das Manifest eingeschlossen werden sollen. Geben Sie den vollständigen Pfad für jede Datei an.|  
 |`HostInBrowser`|Optionaler <xref:System.Boolean> -Parameter.<br /><br /> Bei `true` wird die Anwendung in einem Browser gehostet (wie WPF-Webbrowseranwendungen).|  
-|`IconFile`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]` -Parameter.<br /><br /> Gibt die Anwendungssymboldatei an. Das Anwendungssymbol wird im generierten Anwendungsmanifest ausgedrückt und im Startmenü sowie im Dialogfeld Software verwendet. Erfolgt diese Angabe nicht, wird ein Standardsymbol verwendet. Wenn die Aufgabe ein natives Manifest generiert, wird dieser Parameter ignoriert.|  
+|`IconFile`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter<br /><br /> Gibt die Anwendungssymboldatei an. Das Anwendungssymbol wird im generierten Anwendungsmanifest ausgedrückt und im Startmenü sowie im Dialogfeld Software verwendet. Erfolgt diese Angabe nicht, wird ein Standardsymbol verwendet. Wenn die Aufgabe ein natives Manifest generiert, wird dieser Parameter ignoriert.|  
 |`InputManifest`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem> -Parameter.<br /><br /> Gibt ein Eingabe-XML-Dokument an, das als Basis für den Manifestgenerator dienen soll. Dadurch können strukturierte Daten, z. B. für Anwendungssicherheit oder benutzerdefinierte Manifestdefinitionen, im Ausgabemanifest dargestellt werden. Das Stammelement im XML-Dokument muss ein Assemblyknoten im "asmv1"-Namespace sein.|  
-|`IsolatedComReferences`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]` -Parameter.<br /><br /> Gibt COM-Komponenten an, die im generierten Manifest isoliert werden sollen. Dieser Parameter unterstützt das Isolieren von COM-Komponenten für die Bereitstellung über "COM-Interop ohne Registrierung". Zu diesem Zweck wird automatisch ein Manifest mit standardmäßigen COM-Registrierungsdefinitionen generiert. Die COM-Komponenten müssen jedoch auf dem Buildcomputer registriert werden, damit dies ordnungsgemäß funktioniert.|  
+|`IsolatedComReferences`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter<br /><br /> Gibt COM-Komponenten an, die im generierten Manifest isoliert werden sollen. Dieser Parameter unterstützt das Isolieren von COM-Komponenten für die Bereitstellung über "COM-Interop ohne Registrierung". Zu diesem Zweck wird automatisch ein Manifest mit standardmäßigen COM-Registrierungsdefinitionen generiert. Die COM-Komponenten müssen jedoch auf dem Buildcomputer registriert werden, damit dies ordnungsgemäß funktioniert.|  
 |`ManifestType`|Optionaler `String` -Parameter.<br /><br /> Gibt an, welcher Manifesttyp generiert werden soll. Dieser Parameter kann die folgenden Werte aufweisen:<br /><br /> -   `Native`<br />-   `ClickOnce`<br /><br /> Wird dieser Parameter nicht angegeben, verwendet die Aufgabe standardmäßig `ClickOnce`.|  
 |`MaxTargetPath`|Optionaler `String` -Parameter.<br /><br /> Gibt die maximal zulässige Länge eines Dateipfads in einer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]-Anwendungsbereitstellung an. Wenn dieser Wert angegeben wird, wird die Länge jedes Dateipfads in der Anwendung mit dem Grenzwert verglichen. Alle Elemente, die den Grenzwert übersteigen, lösen eine Buildwarnung aus. Wenn dieser Parameter nicht angegeben wird oder den Wert 0 (null) hat, wird keine Prüfung ausgeführt. Wenn die Aufgabe ein natives Manifest generiert, wird dieser Parameter ignoriert.|  
 |`OSVersion`|Optionaler `String` -Parameter.<br /><br /> Gibt die für die Anwendung mindestens erforderliche Betriebssystemversion an. Der Wert "5.1.2600.0" gibt z. B. an, dass es sich um das Betriebssystem Windows XP handelt. Wenn dieser Parameter nicht angegeben wird, wird der Wert "4.10.0.0" verwendet, der Windows 98 Zweite Ausgabe bezeichnet, also das Betriebssystem, das für .Net Framework mindestens erforderlich ist. Wenn die Aufgabe ein natives Manifest generiert, wird diese Eingabe ignoriert.|  
@@ -75,7 +76,7 @@ Generiert ein [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]-
   
 ## <a name="item-metadata"></a>Elementmetadaten  
   
-|Metadatenname|Beschreibung|  
+|Metadatenname|description|  
 |-------------------|-----------------|  
 |`DependencyType`|Gibt an, ob die Abhängigkeit veröffentlicht und mit der Anwendung installiert wird oder als erforderliche Komponente vorhanden sein muss. Diese Metadaten sind für alle Abhängigkeiten gültig, werden für Dateien jedoch nicht verwendet. Für diese Metadaten sind folgende Werte verfügbar:<br /><br /> -   `Install`<br />-   `Prerequisite`<br /><br /> Der Standardwert lautet "Install".|  
 |`AssemblyType`|Gibt an, ob die Abhängigkeit eine verwaltete oder eine systemeigene Assembly ist. Diese Metadaten sind für alle Abhängigkeiten gültig, werden für Dateien jedoch nicht verwendet. Für diese Metadaten sind folgende Werte verfügbar:<br /><br /> -   `Managed`<br />-   `Native`<br />-   `Unspecified`<br /><br /> Der Standardwert lautet `Unspecified`. Er gibt an, dass der Manifest-Generator den Assemblytyp automatisch bestimmt.|  

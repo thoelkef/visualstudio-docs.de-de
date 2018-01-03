@@ -13,14 +13,15 @@ caps.latest.revision: "20"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: ef4376d8d7600b1072e2afa5df2cf474a8b3ab32
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ea7720cbe005044e2b0eea021a720c79b651f740
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="msbuild-inline-tasks"></a>MSBuild-Inlineaufgaben
-MSBuild-Aufgaben werden in der Regel durch Kompilieren einer Klasse erstellt, die die <xref:Microsoft.Build.Framework.ITask>-Schnittstelle implementiert. Weitere Informationen finden Sie unter [Tasks](../msbuild/msbuild-tasks.md) (MSBuild-Aufgaben).  
+MSBuild-Aufgaben werden in der Regel durch Kompilieren einer Klasse erstellt, die die <xref:Microsoft.Build.Framework.ITask>-Schnittstelle implementiert. Weitere Informationen finden Sie unter [MSBuild-Aufgaben](../msbuild/msbuild-tasks.md).  
   
  Ab .NET Framework Version 4 können Sie Aufgaben inline in der Projektdatei erstellen. Zum Hosten der Aufgabe müssen Sie keine separate Assembly erstellen. Dies vereinfacht das Nachverfolgen von Quellcode und das Bereitstellen der Aufgabe. Der Quellcode ist im Skript integriert.  
   
@@ -142,7 +143,7 @@ Log.LogError("Hello, world!");
   
 -   `Output` ist ein optionales Attribut, das standardmäßig den Wert `false` besitzt. Bei `true` muss dem Parameter ein Wert zugewiesen werden, bevor die Execute-Methode die Rückgabe ausführt.  
   
- Beispiel:  
+ Ein auf ein Objekt angewendeter  
   
 ```xml  
 <ParameterGroup>  

@@ -8,21 +8,16 @@ ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords: Microsoft.VisualStudio.Publish.BaseProvider.Dialog.Bootstrapper
-dev_langs:
-- VB
-- CSharp
-- C++
 helpviewer_keywords: Prerequisites dialog box
-ms.assetid: 53ac863c-77a0-409b-91e5-7a4bd8b8474e
-caps.latest.revision: "75"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 68e326d8045733fc4f491c51405ed51414a92afd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d9e363dcdb8b15b1436da3738d75486b6675e9c8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="prerequisites-dialog-box"></a>Prerequisites Dialog Box
 In diesem Dialogfeld wird angegeben, welche erforderlichen Komponenten installiert werden, wie die Installation ausgeführt wird, und in welcher Reihenfolge die Pakete installiert werden.  
@@ -31,7 +26,7 @@ In diesem Dialogfeld wird angegeben, welche erforderlichen Komponenten installie
   
 ## <a name="uielement-list"></a>UIElement-Liste  
   
-|Element|Beschreibung|  
+|Element|description|  
 |-------------|-----------------|  
 |**Setupprogramm zur Installation erforderlicher Komponenten erstellen**|Dies schließt die erforderlichen Komponenten im Setupprogramm (Setup.exe) der Anwendung ein, die je nach Abhängigkeit vor der Anwendung installiert werden. Diese Option ist standardmäßig ausgewählt. Wenn die Option nicht ausgewählt wurde, wird keine Setup.exe erstellt.|  
 |**Auswählen der für die Installation erforderlichen Komponenten**|Gibt an, ob Komponenten wie z. B. [!INCLUDE[dnprdnshort](../../code-quality/includes/dnprdnshort_md.md)], Crystal Reports, usw. installiert werden.<br /><br /> Indem Sie im Kontrollkästchen neben **SQL Server 2005 Express Edition SP2** ein Häkchen setzen, legen Sie z.B. fest, dass vom Setupprogramm überprüft wird, ob diese Komponente auf dem Zielcomputer installiert ist. Außerdem installiert es die Komponente, wenn diese noch nicht vorhanden ist.<br /><br /> Ausführliche Informationen über die einzelnen erforderlichen Pakete finden Sie in der Tabelle mit Informationen zu den erforderlichen Komponenten weiter unten in diesem Thema.|  
@@ -43,7 +38,7 @@ In diesem Dialogfeld wird angegeben, welche erforderlichen Komponenten installie
 ## <a name="prerequisites-information"></a>Informationen über erforderliche Komponenten  
  Die im Dialogfeld **Erforderliche Komponenten** aufgeführten erforderlichen Komponenten können von den in der folgenden Liste genannten abweichen. Die im Dialogfeld **Erforderliche Komponenten** aufgelisteten Pakete mit erforderlichen Komponenten werden automatisch festgelegt, wenn Sie das Dialogfeld zum ersten Mal öffnen. Wenn im Nachhinein Änderungen am Zielframework des Projekts vorgenommen werden, müssen die erforderlichen Komponenten manuell ausgewählt werden, um dem neuen Zielframework zu entsprechen.  
   
-|Element|Beschreibung|  
+|Element|description|  
 |-------------|-----------------|  
 |**.NET Framework 3.5 SP1**|Mit diesem Paket wird Folgendes installiert:<br /><br /> – .NET Framework-Versionen 2.0, 3.0 und 3.5.<br />– Unterstützung für alle .NET Framework-Versionen auf 32-Bit- und 64-Bit-Betriebssystemen (x86 und x64).<br />– Sprachpakete für jede .NET Framework-Version, die mit dem Paket installiert wird.<br />– Service Packs für .NET Framework 2.0 und 3.0.<br /><br /> .NET Framework 3.0 ist im Lieferumfang von Windows Vista enthalten, und .NET Framework 3.5 ist in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] enthalten. .NET Framework 3.5 ist für alle Visual Basic- und Visual C#-Projekte erforderlich, die explizit für 32-Bit-Betriebssysteme kompiliert werden und für die das Zielframework auf **.NET Framework 3.5** festgelegt ist sowie für alle Visual Basic- und Visual C#-Projekte, die für 64-Bit-Betriebssysteme kompiliert werden. (IA64 wird nicht unterstützt) Beachten Sie, dass Visual Basic-Projekte und Visual C#-Projekte standardmäßig für jede CPU-Architektur kompiliert sind. Weitere Informationen finden Sie unter [Übersicht über die Ausrichtung auf mehrere Zielversionen in Visual Studio](../../ide/visual-studio-multi-targeting-overview.md), [Verteilen von .NET Framework mit Ihrer Anwendung](http://msdn.microsoft.com/en-us/a18d0456-fd89-493e-97f4-756505bfe287) und [Bereitstellen der erforderlichen Komponenten für 64-Bit-Anwendungen](../../deployment/deploying-prerequisites-for-64-bit-applications.md).<br /><br /> Dieses Element ist standardmäßig ausgewählt.|  
 |**.NET Framework 3.5 SP1 Client Profile**|Das .NET Framework Client Profile ist ein Bestandteil von .NET Framework 3.5 SP1, das auf Clientanwendungen ausgerichtet ist. Es bietet eine optimierte Auswahl der Funktionen von Windows Presentation Foundation (WPF), Windows Forms, Windows Communication Foundation (WCF) und ClickOnce-Funktionen. Dadurch werden schnelle Bereitstellungsszenarien für WPF, Windows Forms, WCF und Konsolenanwendungen ermöglicht, für die auf .NET Framework Client Profile ausgerichtet sind. Weitere Informationen finden Sie unter [.NET Framework Client Profile](/dotnet/framework/deployment/client-profile).|  

@@ -28,11 +28,12 @@ caps.latest.revision: "6"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 2b0c421ca3d1e56c22cab7ff066d17d59914961c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 9a2da1c3012b65f71b63b61d2bc0415dbebd8b9e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="mt-task"></a>MT-Aufgabe
 Umschließt das Microsoft-Manifesttool, „Mt.exe“. Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter „Mt.exe“.  
@@ -43,7 +44,7 @@ Umschließt das Microsoft-Manifesttool, „Mt.exe“. Weitere Informationen find
 > [!NOTE]
 >  In der „Mt.exe“-Dokumentation wird als Präfix für Befehlszeilenoptionen ein Bindestrich (**-**) verwendet, in diesem Artikel jedoch ein Schrägstrich (**/**). Beide Präfixe sind zulässig.  
   
-|Parameter|Beschreibung|  
+|Parameter|description|  
 |---------------|-----------------|  
 |**AdditionalManifestFiles**|Optionaler **String[]**-Parameter.<br /><br /> Gibt den Namen von mindestens einer Manifestdatei an.<br /><br /> Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter der „Mt.exe“-Option **/manifest**.|  
 |**AdditionalOptions**|Optionaler **String**-Parameter.<br /><br /> Eine Liste von Befehlszeilenoptionen. Beispiel: „*/option1 /option2 /option#*“. Verwenden Sie diesen Parameter, um Befehlszeilenoptionen anzugeben, die nicht durch einen anderen **MT**-Aufgabenparameter dargestellt werden.<br /><br /> Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter „Mt.exe“.|  

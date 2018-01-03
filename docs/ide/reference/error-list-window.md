@@ -18,11 +18,12 @@ caps.latest.revision: "32"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d332700fc663375c9fab96d86645b5762e77d851
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: 227c23714231c87ba2ecac5fa7f50a632a73b123
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="error-list-window"></a>Fehlerliste (Fenster)
 > [!NOTE]
@@ -69,7 +70,7 @@ Wenn aktuell ein Filter auf das Suchergebnis angewendet ist, wird der Name des F
   
 Die Liste auf der rechten Seite der Symbolleiste gibt an, ob Fehler aus dem Build (beim Buildvorgang aufgetretene Fehler) oder aus IntelliSense (vor dem Build erkannte Fehler), oder beide angezeigt werden sollen.  
   
-## <a name="search"></a>Suche  
+## <a name="search"></a>Suchen  
  Verwenden Sie für die Suche nach bestimmten Fehlern in der Fehlerliste das Textfeld **Fehlerliste durchsuchen** auf der rechten Seite der Symbolleiste **Fehlerliste**. Sie können in jeder sichtbaren Spalte in der Fehlerliste suchen, und die Suchergebnisse werden immer basierend auf der Spalte sortiert, die Sortierpriorität hat, und nicht basierend auf der angewendeten Abfrage oder dem angewendeten Filter. Wenn Sie die **ESC**-TASTE drücken, während sich der Fokus in der **Fehlerliste** befindet, können Sie den Suchbegriff und die gefilterten Suchergebnisse löschen. Sie können auch auf das Symbol **X** auf der rechten Seite des Textfelds klicken, um dieses zu löschen.  
   
 ## <a name="save"></a>Speichern  
@@ -82,7 +83,7 @@ Die Liste auf der rechten Seite der Symbolleiste gibt an, ob Fehler aus dem Buil
  Code  
  Zeigt den Fehlercode an.  
   
- Beschreibung  
+ description  
  Zeigt den Text des Eintrags an.  
   
  Projekt  

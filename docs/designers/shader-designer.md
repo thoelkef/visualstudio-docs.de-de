@@ -15,11 +15,12 @@ caps.latest.revision: "32"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: fb3a7122f561f2c1beaa5674be2220a565586aa4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c8d0f7a2ee52930a74566e0f7b4ddc10747204ce
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="shader-designer"></a>Shader-Designer
 In diesem Dokument wird beschrieben, wie mit dem [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Shader-Designer benutzerdefinierte visuelle Effekte, auch als *Shader* bekannt, erstellt, bearbeitet und exportiert werden können.  
@@ -66,7 +67,7 @@ In diesem Dokument wird beschrieben, wie mit dem [!INCLUDE[vsprvs](../code-quali
   
  In dieser Tabelle werden die Elemente der **Shader-Designer-Modus**-Symbolleiste beschrieben und in der Reihenfolge aufgelistet, in der sie auf der Symbolleiste von links nach rechts angezeigt werden:  
   
-|Element der Symbolleiste|Beschreibung|  
+|Element der Symbolleiste|description|  
 |------------------|-----------------|  
 |**Auswählen**|Ermöglicht die Interaktion mit Knoten und Kanten im Diagramm. In diesem Modus können Sie Knoten auswählen und verschieben oder löschen. Zudem können Sie Kanten einrichten oder unterbrechen.|  
 |**Schwenken**|Ermöglicht das Bewegen eines Shader-Diagramms relativ zum Fensterrahmen. Wählen Sie zum Schwenken einen Punkt auf der Entwurfsoberfläche aus, und verschieben Sie ihn.<br /><br /> Im **Auswahl**-Modus können Sie den **Schwenken**-Modus durch Gedrückthalten der STRG-TASTE vorübergehend aktivieren.|  
@@ -183,8 +184,8 @@ In diesem Dokument wird beschrieben, wie mit dem [!INCLUDE[vsprvs](../code-quali
   
 ## <a name="related-topics"></a>Verwandte Themen  
   
-|Titel|Beschreibung|  
+|Titel|description|  
 |-----------|-----------------|  
-|[Arbeiten mit 3D-Objekten für Spiele und Apps](../designers/working-with-3-d-assets-for-games-and-apps.md)|Bietet eine Übersicht über die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Tools, die Sie bei der Arbeit mit Texturen und Bildern, 3D-Modellen und Shadereffekten verwenden können.|  
+|[Working with 3-D Assets for Games and Apps (Arbeiten mit 3D-Objekten für Spiele und Apps)](../designers/working-with-3-d-assets-for-games-and-apps.md)|Bietet eine Übersicht über die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Tools, die Sie bei der Arbeit mit Texturen und Bildern, 3D-Modellen und Shadereffekten verwenden können.|  
 |[Bildbearbeitung](../designers/image-editor.md)|Beschreibt, wie der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Bild-Editor für die Arbeit mit Texturen und Bildern verwendet wird.|  
 |[Modell-Editor](../designers/model-editor.md)|Beschreibt, wie der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Modell-Editor für die Arbeit mit 3D-Modellen verwendet wird.|

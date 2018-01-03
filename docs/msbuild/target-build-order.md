@@ -13,20 +13,21 @@ caps.latest.revision: "18"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 7fbe62b55fde85127756b9d73be333068bb9aad3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7768d6ba35c2116c658dcd1b7968080932b99543
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="target-build-order"></a>Buildreihenfolge für Ziele
 Ziele müssen geordnet werden, wenn die Eingabe für ein Ziel von der Ausgabe eines anderen Ziels abhängt. Sie können diese Attribute verwenden, um die Reihenfolge anzugeben, in der Ziele ausgeführt werden:  
   
--   `InitialTargets`. Das `Project`-Attribut gibt die Ziele an, die zuerst ausgeführt werden, auch wenn Ziele in der Befehlszeile oder im `DefaultTargets`-Attribut angegeben sind.  
+-   `InitialTargets` Das `Project`-Attribut gibt die Ziele an, die zuerst ausgeführt werden, auch wenn Ziele in der Befehlszeile oder im `DefaultTargets`-Attribut angegeben sind.  
   
--   `DefaultTargets`. Das `Project`-Attribut gibt die Ziele an, die erstellt werden, wenn ein Ziel nicht explizit in der Befehlszeile angegeben wird.  
+-   `DefaultTargets` Das `Project`-Attribut gibt die Ziele an, die erstellt werden, wenn ein Ziel nicht explizit in der Befehlszeile angegeben wird.  
   
--   `DependsOnTargets`. Das `Target`-Attribut gibt Ziele an, die ausgeführt werden müssen, bevor das Ziel ausgeführt werden kann.  
+-   `DependsOnTargets` Das `Target`-Attribut gibt Ziele an, die ausgeführt werden müssen, bevor das Ziel ausgeführt werden kann.  
   
 -   `BeforeTargets` und `AfterTargets`. Diese `Target`-Attribute geben an, dass das Ziel vor oder nach den angegebenen Zielen ausgeführt werden soll (MSBuild 4.0).  
   
@@ -70,7 +71,7 @@ Ziele müssen geordnet werden, wenn die Eingabe für ein Ziel von der Ausgabe ei
  Wenn keine ursprünglichen Ziele, Standardziele oder Befehlszeilenziele vorhanden sind, führt MSBuild das erste Ziel aus, das in der Projektdatei oder einer beliebigen importierten Projektdatei angetroffen wird.  
   
 ## <a name="target-dependencies"></a>Zielabhängigkeiten  
- Ziele können Abhängigkeitsbeziehungen unter Zielen beschreiben. Die `DependsOnTargets`-Attribut gibt an, dass ein Ziel von anderen Zielen abhängig ist. Beispiel:  
+ Ziele können Abhängigkeitsbeziehungen unter Zielen beschreiben. Die `DependsOnTargets`-Attribut gibt an, dass ein Ziel von anderen Zielen abhängig ist. Ein auf ein Objekt angewendeter  
   
 ```xml  
 <Target Name="Serve" DependsOnTargets="Chop;Cook" />  

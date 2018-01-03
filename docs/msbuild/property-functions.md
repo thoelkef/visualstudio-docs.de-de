@@ -13,11 +13,12 @@ caps.latest.revision: "33"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 46df0fc4be6abf639f939b5145765f0ba41b0b8c
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: e77803150d747d05d8f6b0002814010c45244282
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="property-functions"></a>Eigenschaftenfunktionen
 In .NET Framework, Versionen 4 und 4.5, können Eigenschaftenfunktionen zur Auswertung von MSBuild-Skripts verwendet werden. Eigenschaftenfunktionen können immer dann verwendet werden, wenn Eigenschaften vorhanden sind. Im Gegensatz zu Aufgaben können Eigenschaftenfunktionen außerhalb von Zielen verwendet werden, und sie werden ausgewertet, bevor Ziele ausgeführt werden.  
@@ -165,7 +166,7 @@ In .NET Framework, Versionen 4 und 4.5, können Eigenschaftenfunktionen zur Ausw
 
  Nachfolgend finden Sie eine Liste mit MSBuild-Eigenschaftenfunktionen:  
 
-|Funktionssignatur|Beschreibung|  
+|Funktionssignatur|description|  
 |------------------------|-----------------|  
 |double Add(double a, double b)|Addiert zwei double-Werte.|  
 |long Add(long a, long b)|Addiert zwei long-Werte.|  

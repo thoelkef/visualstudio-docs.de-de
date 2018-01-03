@@ -8,11 +8,12 @@ ms.technology: vs-ide-general
 ms.date: 11/08/2017
 ms.topic: article
 helpviewer_keywords: editor
-ms.openlocfilehash: 6650faa7ed519c6237b459ac4278b6e90d7a5bc6
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: dotnet
+ms.openlocfilehash: ed3eacba3611b010c95f650bd24e412d99fdde5d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-2017-for-net-developers"></a>Visual Studio 2017 für .NET-Entwickler
 
@@ -86,7 +87,7 @@ Wenn Sie eine andere IDE oder Kodierungsumgebung gewohnt sind, kann es hilfreich
 
 Im Folgenden finden Sie beliebte Tastenkombinationen für Visual Studio. Beachten Sie, dass einige Erweiterungen die Standardtastenzuordnungen von Visual Studio aufheben. Sie müssen die Tastenzuordnungen wiederherstellen, um die im Folgenden aufgeführten Befehle zu verwenden. Navigieren Sie zu **Extras > Einstellungen importieren und exportieren > Alle Einstellungen zurücksetzen**, um die Standardeinstellungen für die Tastenkombinationen in Visual Studio wiederherzustellen.
 
-| Tastenkombination (Alle Profile) | Befehl | Beschreibung |
+| Tastenkombination (Alle Profile) | Befehl | description |
 |-|-|-| 
 | **STRG+T** | Gehe zu allen | Navigieren zu einer beliebigen Datei-/Typ-/Member-/Symboldeklaration |
 | **F12** (oder **STRG+Klicken**) | Gehe zu Definition | Navigieren zum Ort, an dem ein Symbol definiert ist |

@@ -12,11 +12,12 @@ ms.assetid: 91b167a3-280a-498b-8fc2-f67859a2c64e
 caps.latest.revision: "27"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 3881b015821952b4a2aeaa60d22c66bf47dff9c4
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: multiple
+ms.openlocfilehash: 76cad59931a6c99bfd21fc0d149b86bf8a3b8a71
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Ausführen von Komponententests mit dem Test-Explorer
 Mithilfe des Test-Explorers können Sie Komponententests aus Visual Studio oder Testprojekte von Drittanbietern ausführen, Tests in Kategorien gruppieren, die Testliste filtern sowie Testwiedergabelisten erstellen, speichern und ausführen. Zudem können Sie Tests debuggen und die Leistung und Codeabdeckung von Tests analysieren.  
@@ -127,7 +128,7 @@ Mithilfe des Test-Explorers können Sie Komponententests aus Visual Studio oder 
   
 ### <a name="test-explorer-groups"></a>Test-Explorer-Gruppen  
   
-|Gruppieren|Beschreibung|  
+|Gruppieren|description|  
 |-----------|-----------------|  
 |**Dauer**|Die Tests werden nach Ausführungszeit gruppiert: **Schnell**, **Mittel**und **Langsam**.|  
 |**Ergebnis**|Die Tests werden nach Ausführungsergebnis gruppiert: **Fehlgeschlagene Tests**, **Übersprungene Tests**und **Bestandene Tests**.|  
@@ -143,7 +144,7 @@ Mithilfe des Test-Explorers können Sie Komponententests aus Visual Studio oder 
   
  Im Microsoft-Komponententest-Framework für verwaltete Apps wird ein Merkmalsname/Wert-Paar in einem  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute> -Attribut definiert. Das Testframework weist zudem folgende vordefinierte Merkmale auf:  
   
-|Merkmal|Beschreibung|  
+|Merkmal|description|  
 |-----------|-----------------|  
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.OwnerAttribute>|Die Kategorie "Besitzer" wird vom Komponententest-Framework definiert. Sie müssen einen Zeichenfolgenwert für den Besitzer angeben.|  
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.PriorityAttribute>|Die Kategorie "Priorität" wird vom Komponententest-Framework definiert. Sie müssen einen ganzzahligen Wert für die Priorität angeben.|  
@@ -173,7 +174,7 @@ Mithilfe des Test-Explorers können Sie Komponententests aus Visual Studio oder 
 > [!NOTE]
 >  Bei Suchvorgängen wird die Groß-/Kleinschreibung nicht beachtet, und die angegebene Zeichenfolge kann einem die oft ausgegebene Befehlszeilen  Teil des Kriteriumswerts entsprechen.  
   
-|Qualifizierer|Beschreibung|  
+|Qualifizierer|description|  
 |---------------|-----------------|  
 |**Merkmal**|Durchsucht sowohl die Merkmalskategorie als auch den Wert nach Übereinstimmungen. Die Syntax zum Angeben von Merkmalskategorien und -werten wird durch das Komponententest-Framework festgelegt.|  
 |**Projekt**|Durchsucht die Testprojektnamen nach Übereinstimmungen.|  
@@ -189,7 +190,7 @@ Mithilfe des Test-Explorers können Sie Komponententests aus Visual Studio oder 
 FilterName:"Criteria" -FilterName:"SubsetCriteria"  
 ```  
   
- Beispiel:  
+ Ein auf ein Objekt angewendeter  
   
 ```  
 FullName:"MyClass" - FullName:"PerfTest"  
@@ -260,8 +261,8 @@ FullName:"MyClass" - FullName:"PerfTest"
 ##  <a name="BKMK_External_resources"></a> Externe Ressourcen  
   
 ###  <a name="BKMK_Guidance"></a> Empfehlungen  
- [Tests für fortlaufende Übermittlung mit Visual Studio 2012 – Kapitel 2: Komponententests – Interne Tests](http://go.microsoft.com/fwlink/?LinkID=255188)  
+ [Testing for Continuous Delivery with Visual Studio 2012 - Chapter 2: Unit Testing: Testing the Inside (Tests für fortlaufende Übermittlung mit Visual Studio 2012 – Kapitel 2: Komponententests – Interne Tests)](http://go.microsoft.com/fwlink/?LinkID=255188)  
   
 ## <a name="see-also"></a>Siehe auch  
- [Unit Test Your Code (Komponententest für Code)](../test/unit-test-your-code.md)   
+ [Komponententest Ihres Code](../test/unit-test-your-code.md)   
  [Ausführen eines Komponententest als 64-Bit-Prozess](../test/run-a-unit-test-as-a-64-bit-process.md)

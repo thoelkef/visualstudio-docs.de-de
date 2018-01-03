@@ -15,11 +15,12 @@ ms.assetid: 7307e180-ba28-4774-8a43-cbb980085a71
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: a08f5a15cd83af05c91eb35ad2ad4a2c4c229458
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: multiple
+ms.openlocfilehash: 011c86caae5eaa00577dcc9a5d9c372849eb28f0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Neuerungen in Visual Studio 2017
 #### <a name="updated-for-the-155-releasehttpswwwvisualstudiocomnewsreleasenotesvs2017-relnotes"></a>In [Release 15.5](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes) aktualisiert
@@ -33,7 +34,7 @@ Dies ist eine allgemeine Zusammenfassung aller Änderungen, die seit der vorheri
 * **Windows App-Entwicklung**. Verwenden Sie die UWP-Vorlagen in Visual Studio 2017, um ein einzelnes Projekt für alle Windows 10-Geräte zu erstellen: PC, Tablet, Smartphone, Xbox, HoloLens, Surface Hub usw. Erstellen Sie dann ein App-Paket, und übermitteln Sie dieses von Visual Studio aus an Microsoft Store, um Ihre App für Kunden bereitzustellen.
 * **Entwicklung mobiler Apps**. Sie können in Visual Studio 2017 mit Xamarin schnell Neuerungen einführen und Ergebnisse erzielen, denn dies vereinheitlicht Ihre mobilen Multi-Plattform-Anforderungen durch Verwendung einer einzigen Kerncodebasis und eines einzigen Satzes von Fertigkeiten. Werden Sie mobil mit Ihren vorhandenen Teams, Technologieinvestitionen und C#-Code, sodass Sie marktgerechte Produkte vor Ablauf des Terminplans und mit Unterschreitung des Budgets bereitstellen können. Beschleunigen Sie jeden Schritt des mobilen Lebenszyklus, um erstklassige Benutzeroberflächen zu bieten oder ein Portfolio von Produktivitäts-Apps, mit denen Ihre Mitarbeiter effektiver arbeiten können.
 * **Plattformübergreifende Entwicklung** Übermitteln Sie Software problemlos an alle Zielplattform. Weiten Sie DevOps-Prozesse mithilfe von Redgate Data Tools auf SQL Server aus, und automatisieren Sie die sichere Datenbankbereitstellung aus Visual Studio. Verwenden Sie alternativ .NET Core, um Apps und Bibliotheken zu schreiben, die unverändert unter Windows, Linux und macOS ausgeführt werden. (**Neu in 15.3:** Parallele Unterstützung für .NET Core 2.0 SDKs)
-* **Spieleentwicklung** Mithilfe der Visual Studio-Tools für Unity (VSTU) können Sie Visual Studio zum Schreiben von Spiel- und Editorskripts in C# verwenden und dann den leistungsfähigen Debugger zum Suchen und Beheben von Fehlern nutzen. Die neueste Version von VSTU umfasst Syntaxfarben für die Shadersprache ShaderLab von Unity, bessere Debugger-Visualisierungen und verbesserte Codegenerierung für den MonoBehavior-Assistenten. Mit VSTU werden außerdem die Unity-Projektdateien, Konsolenmeldungen und die Möglichkeit zum Starten des Spiels in Visual Studio eingebunden, sodass beim Schreiben von Code weniger Zeit zum Umschalten in und aus dem Unity-Editor benötigt wird.
+* **Spieleentwicklung** Mithilfe der Visual Studio-Tools für Unity (VSTU) können Sie Visual Studio zum Schreiben von Spiel- und Editorskripts in C# verwenden und dann den leistungsfähigen Debugger zum Suchen und Beheben von Fehlern nutzen. Das neueste Release von VSTU umfasst Syntaxfarben für die Shadersprache ShaderLab von Unity, bessere Debugger-Visualisierungen und verbesserte Codegenerierung für den MonoBehavior-Assistenten. Mit VSTU werden außerdem die Unity-Projektdateien, Konsolenmeldungen und die Möglichkeit zum Starten des Spiels in Visual Studio eingebunden, sodass beim Schreiben von Code weniger Zeit zum Umschalten in und aus dem Unity-Editor benötigt wird.
 * **KI-Entwicklung**. Mit Visual Studio-Tools für KI (**neu ab Version 15.5**) können Sie die Produktivitätsfeatures von Visual Studio verwenden, um KI-Innovationen zu beschleunigen. Sie können Deep Learning- bzw. KI-Lösungen erstellen, testen und bereitstellen, die eine nahtlose Integration in Azure Machine Learning für robuste Experimentierfunktionen bieten, z.B. das transparente Übermitteln von Datenvorbereitungen oder Modelltrainingsaufträgen an verschiedene Computeziele. Anbieter für Visual Studio-Tools für KI bieten zusätzlich Unterstützung für benutzerdefinierte Metriken und das Nachverfolgen des Ausführungsverlaufs, wodurch die Reproduzierbarkeit und Überwachung von Data Science ermöglicht wird.
 
 > [!NOTE]
@@ -301,6 +302,6 @@ Wenn Sie einen Vorschlag zu möglichen Verbesserungen von Visual Studio machen o
 ## <a name="see-also"></a>Siehe auch
 * [Visual Studio 2017 – Anmerkungen zu dieser Version](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes)
 * [Neues in Visual C++](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio)
-* [Neues in C#](https://docs.microsoft.com/dotnet/csharp/csharp-7)  
+* [Neues in C#](/dotnet/csharp/whats-new)  
 * [Neues für Team Foundation Server](https://www.visualstudio.com/docs/whats-new)
 * [Neues in Visual Studio für Mac](https://www.visualstudio.com/vs/visual-studio-mac/)

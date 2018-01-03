@@ -22,11 +22,12 @@ caps.latest.revision: "7"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 16ed7f4207a65915afbf18a496a0152e04e9a8d0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 70f83ba6a48df66f9105d39570e0d5490f818e73
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="vcmessage-task"></a>VCMessage-Aufgabe
 Protokolliert Warn- und Fehlermeldungen während eines Builds  
@@ -37,11 +38,11 @@ Protokolliert Warn- und Fehlermeldungen während eines Builds
 ## <a name="parameters"></a>Parameter  
  In der folgenden Tabelle werden die Parameter der **VCMessage**-Aufgabe beschrieben.  
   
-|Parameter|Beschreibung|  
+|Parameter|description|  
 |---------------|-----------------|  
 |**Argumente**|Optionaler **String**-Parameter.<br /><br /> Eine durch Semikolons getrennte Liste der Nachrichten, die angezeigt werden sollen|  
 |**Code**|Erforderlicher **String**-Parameter.<br /><br /> Eine Fehlernummer, die die Nachricht identifiziert|  
-|**Typ**|Optionaler **String**-Parameter.<br /><br /> Gibt die Art der auszugebenden Meldung an Gibt entweder `"Warning"` an, um eine Warnung auszugeben, oder `"Error"` für eine Fehlermeldung|  
+|**Type**|Optionaler **String**-Parameter.<br /><br /> Gibt die Art der auszugebenden Meldung an Gibt entweder `"Warning"` an, um eine Warnung auszugeben, oder `"Error"` für eine Fehlermeldung|  
   
 ## <a name="see-also"></a>Siehe auch  
  [Aufgabenreferenz](../msbuild/msbuild-task-reference.md)

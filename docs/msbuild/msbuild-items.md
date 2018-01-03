@@ -13,11 +13,12 @@ caps.latest.revision: "35"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: a306f7cda287e41efc0cb59cf5a75c7111d32c39
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: bec7bd5420c16d291db2566e86dd47ba986cca37
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="msbuild-items"></a>MSBuild-Elemente
 MSBuild-Elemente sind Eingaben in das Buildsystem. In der Regel handelt es sich dabei um Dateien. Elemente werden auf Grundlage benutzerdefinierter Elementnamen in Elementtypen gruppiert. Elementtypen sind benannte Listen von Elementen, die als Parameter für Aufgaben verwendet werden können. In den Aufgaben werden die Schritte des Buildprozesses mithilfe der Elementwerte ausgeführt.  
@@ -205,7 +206,7 @@ MSBuild-Elemente sind Eingaben in das Buildsystem. In der Regel handelt es sich 
 </ItemGroup>  
 ```  
   
- Weitere Informationen finden Sie unter [Item Definitions (Elementdefinitionen)](../msbuild/item-definitions.md).  
+ Weitere Informationen finden Sie unter [Item Definitions](../msbuild/item-definitions.md) (Elementdefinitionen).  
   
 ##  <a name="BKMK_AttributesWithinTargets"></a>Attribute für Elemente im ItemGroup-Element eines Ziels  
  Ab .NET Framework 3.5 enthalten `Target`-Elemente möglicherweise [ItemGroup](../msbuild/itemgroup-element-msbuild.md)-Elemente, die Item-Elemente enthalten. Die Attribute in diesem Abschnitt sind gültig, wenn sie für ein Element in einem `ItemGroup` angegeben werden, das ein `Target` ist.  

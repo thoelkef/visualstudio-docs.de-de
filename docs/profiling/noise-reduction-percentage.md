@@ -14,11 +14,12 @@ caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6c5fe0e705441311a7d5bdade0e794729ae8f1d6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: fb490ecd7704ac87c4ac48eba12a9097d0200d27
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="noise-reduction-percentage"></a>Prozentsatz der Rauschunterdrückung
 Standardmäßig ist der Wert der Einstellung für den Prozentsatz der Rauschunterdrückung auf 2 festgelegt. In der Aufrufstruktur werden nur Einträge angezeigt, für die der Prozentsatz der inklusiven Zeit größer oder gleich dieser Einstellung ist. Indem Sie diese Einstellung ändern, können Sie die Anzahl der Einträge, die in der Aufrufstruktur angezeigt werden, festlegen. Wenn der Wert z.B. in 10 geändert wird, werden nur Einträge in der Aufrufstruktur angezeigt, deren inklusive Zeit größer oder gleich 10 % sind. Indem Sie den Wert der Einstellung erhöhen, können Sie den Fokus auf Einträge legen, die einen größeren Einfluss auf die Leistung Ihres Prozesses haben.

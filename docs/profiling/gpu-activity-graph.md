@@ -13,11 +13,12 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 964846b5a2cc06eaf03fa695e4f1c0aeb9efdca4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ed2b2d86300106f432e1202c9061676ed3aacc0b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="gpu-activity-graph"></a>GPU-Aktivitätsdiagramm
 Das GPU-Aktivitätsdiagramm in der Parallelitätsschnellansicht zeigt die Ebene der DirectX-Aktivität auf dem System durch die Anzahl der DirectX-Module an, die mit der Zeit verwendet werden.  Im Diagramm wird nicht angezeigt, welche bestimmte Module verwendet wurden.  Ein Modul wird als „verwendet“ betrachtet, wenn es GPU-Aufgaben verarbeitet.  

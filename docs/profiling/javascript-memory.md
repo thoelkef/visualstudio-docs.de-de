@@ -26,11 +26,12 @@ caps.latest.revision: "49"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e52bef93735efc1ec5e43230ba46c7aa90cb67bc
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: bda996f825c492e323f84ba5444327a49f50aeb1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="analyze-javascript-memory-usage-in-uwp-apps"></a>Analysieren von JavaScript-Speicherauslastung in UWP-Apps
 Die JavaScript-Speicheranalyse ist in Visual Studio verfügbar und soll Ihnen dabei helfen, die Speicherauslastung zu verstehen und Speicherverluste in UWP-Apps zu finden, die mit JavaScript für Windows erstellt wurden. Zu den unterstützten Apps zählen Apps für universelle Windows-Apps.
@@ -380,7 +381,7 @@ if (performance && performance.mark) {
   
 -   Wenn die Ursache eines Arbeitsspeicherproblems schwer zu erkennen ist, verwenden Sie die verschiedenen Ansichten (z. B. Dominatoren und Typen), um nach Gemeinsamkeiten zu suchen. Dies kann insbesondere dazu nützlich sein, ein Objekt (oder einige wenige Objekte) zu identifizieren, die Verweise auf viele andere Objekte in der Ansicht enthalten.  
   
--   Suchen Sie nach Objekten, die versehentlich im Arbeitsspeicher beibehalten werden, nachdem der Benutzer zu einer neuen Seite navigiert ist. Dies ist eine häufige Ursache von Arbeitsspeicherproblemen. Beispiel:  
+-   Suchen Sie nach Objekten, die versehentlich im Arbeitsspeicher beibehalten werden, nachdem der Benutzer zu einer neuen Seite navigiert ist. Dies ist eine häufige Ursache von Arbeitsspeicherproblemen. Zum Beispiel:  
   
     -   Die falsche Verwendung der Funktion [URL.CreateObjectUrl](http://msdn.microsoft.com/library/windows/apps/hh453196.aspx) kann dieses Problem verursachen.  
   

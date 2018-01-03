@@ -11,11 +11,12 @@ ms.assetid: f6337c35-acae-4c5f-b5d9-ac5ff687ef18
 caps.latest.revision: "16"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 64115171c64faf0f62b6530c37fa53c6631ac1d6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 2bbac737c6f5bbb3dbe99b0ceae2eb648bcf4295
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="customizing-code-coverage-analysis"></a>Anpassen der Code Coverage-Analyse
 Standardmäßig analysiert das Code Coverage-Tool von Visual Studio alle Projektmappenassemblys („.exe“ oder „.dl“l), die während der Komponententests geladen werden. Es wird empfohlen, diese Standardeinstellung beizubehalten, da sie meist gut funktioniert. Weitere Informationen finden Sie unter [Using Code Coverage to Determine How Much Code is being Tested (Wie Sie feststellen können, wie viel Code untersucht wird)](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).  
@@ -72,7 +73,7 @@ Standardmäßig analysiert das Code Coverage-Tool von Visual Studio alle Projekt
 >  Die Symbolauflösung kann zeitaufwendig sein, insbesondere wenn sie einen Remotedateispeicherort mit zahlreichen Assemblys verwendet. Daher sollten Sie erwägen, die Remote-PDB-Dateien an denselben lokalen Speicherort wie die Binärdateien (DLL- und EXE-Dateien) zu kopieren.  
   
 ### <a name="excluding-and-including"></a>Ausschließen und Einschließen  
- Sie können angegebene Assemblys von der Codeabdeckungsanalyse ausschließen. Beispiel:  
+ Sie können angegebene Assemblys von der Codeabdeckungsanalyse ausschließen. Zum Beispiel:  
   
 ```minterastlib  
 <ModulePaths>  
@@ -115,7 +116,7 @@ Standardmäßig analysiert das Code Coverage-Tool von Visual Studio alle Projekt
   
  Bei allen Entsprechungen wird die Groß-/Kleinschreibung nicht beachtet.  
   
- Beispiel:  
+ Zum Beispiel:  
   
 ```xml  
 <ModulePaths>  
@@ -153,7 +154,7 @@ Standardmäßig analysiert das Code Coverage-Tool von Visual Studio alle Projekt
   
  **Abgleichen eines Funktionsnamens**  
   
- Der reguläre Ausdruck muss mit dem vollqualifizierten Namen der Funktion, einschließlich Namespace, Klasse, Methodenname und Parameterliste, übereinstimmen. Beispiel:  
+ Der reguläre Ausdruck muss mit dem vollqualifizierten Namen der Funktion, einschließlich Namespace, Klasse, Methodenname und Parameterliste, übereinstimmen. Ein auf ein Objekt angewendeter  
   
 -   C# oder Visual Basic: `Fabrikam.Math.LocalMath.SquareRoot(double)`  
   

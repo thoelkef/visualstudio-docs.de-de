@@ -21,11 +21,12 @@ caps.latest.revision: "11"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 8cfba9d4868f72ba327035c2fe865fd8ffe6344f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 4ebb6579cd4ac4ee96547bbc7d70f471f17e4e53
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sgen-task"></a>SGen-Aufgabe
 Erstellt eine XML-Serialisierungsassembly für Typen in der angegebenen Assembly. Diese Aufgabe umschließt das XML Serializer Generator-Tool (Sgen.exe). Weitere Informationen finden Sie unter [XML Serializer Generator-Tool (Sgen.exe)](/dotnet/framework/serialization/xml-serializer-generator-tool-sgen-exe).  
@@ -33,10 +34,10 @@ Erstellt eine XML-Serialisierungsassembly für Typen in der angegebenen Assembly
 ## <a name="parameters"></a>Parameter  
  In der folgenden Tabelle werden die Parameter der `SGen` -Aufgabe beschrieben.  
   
-|Parameter|Beschreibung|  
+|Parameter|description|  
 |---------------|-----------------|  
-|`BuildAssemblyName`|Erforderlicher `String`-Parameter.<br /><br /> Die Assembly, für die Serialisierungscode generiert werden soll.|  
-|`BuildAssemblyPath`|Erforderlicher `String`-Parameter.<br /><br /> Der Pfad der Assembly, für die Serialisierungscode generiert werden soll.|  
+|`BuildAssemblyName`|Erforderlicher `String` -Parameter.<br /><br /> Die Assembly, für die Serialisierungscode generiert werden soll.|  
+|`BuildAssemblyPath`|Erforderlicher `String` -Parameter.<br /><br /> Der Pfad der Assembly, für die Serialisierungscode generiert werden soll.|  
 |`DelaySign`|Optionaler `Boolean` -Parameter.<br /><br /> Ist der Wert `true`, gibt dies an, dass die Assembly vollständig signiert werden soll. Ist der Wert `false`, gibt dies an, dass Sie nur den öffentlichen Schlüssel in die Assembly platzieren möchten.<br /><br /> Dieser Parameter hat nur dann Auswirkungen, wenn Sie ihn entweder mit dem `KeyFile`- oder `KeyContainer`-Parameter verwenden.|  
 |`KeyContainer`|Optionaler `String` -Parameter.<br /><br /> Gibt einen Container an, der ein Schlüsselpaar enthält. Dieser wird zum Signieren der Assembly verwendet, indem ein öffentlicher Schlüssel in das Assemblymanifest eingefügt wird. Dann wird die endgültige Assembly von der Aufgabe mit dem privaten Schlüssel signiert.|  
 |`KeyFile`|Optionaler `String` -Parameter.<br /><br /> Gibt ein Schlüsselpaar oder einen öffentlichen Schlüssel an, das bzw. der zum Signieren einer Assembly verwendet werden soll. Der Compiler fügt den öffentlichen Schlüssel in das Assemblymanifest ein und signiert anschließend die endgültige Assembly mit dem privaten Schlüssel.|  
@@ -45,11 +46,11 @@ Erstellt eine XML-Serialisierungsassembly für Typen in der angegebenen Assembly
 |`SdkToolsPath`|Optionaler `String` -Parameter.<br /><br /> Legt den Pfad zu den SDK-Tools wie z.B. „resgen.exe“ fest.|  
 |`SerializationAssembly`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]` -Ausgabeparameter.<br /><br /> Enthält die generierte Serialisierungsassembly.|  
 |`SerializationAssemblyName`|Optionaler `String` -Parameter.<br /><br /> Gibt den Namen der generierten Serialisierungsassembly an.|  
-|`ShouldGenerateSerializer`|Erforderlicher `Boolean`-Parameter.<br /><br /> Wenn `true`, sollte die SGen-Aufgabe eine Serialisierungsassembly generieren.|  
-|`Timeout`|Optionaler `Int32`-Parameter.<br /><br /> Gibt die Zeitdauer in Millisekunden an, nach der die ausführbare Datei der Aufgabe beendet wird. Der Standardwert ist `Int.MaxValue`. Dieser gibt an, dass es kein Zeitlimit gibt.|  
+|`ShouldGenerateSerializer`|Erforderlicher `Boolean` -Parameter.<br /><br /> Wenn `true`, sollte die SGen-Aufgabe eine Serialisierungsassembly generieren.|  
+|`Timeout`|Optionaler `Int32` -Parameter.<br /><br /> Gibt die Zeitdauer in Millisekunden an, nach der die ausführbare Datei der Aufgabe beendet wird. Der Standardwert ist `Int.MaxValue`. Dieser gibt an, dass es kein Zeitlimit gibt.|  
 |`ToolPath`|Optionaler `String` -Parameter.<br /><br /> Legt den Speicherort fest, von wo aus die Aufgabe die zugrunde liegende ausführbare Datei (sgen.exe) lädt. Wenn dieser Parameter nicht angegeben ist, verwendet die Aufgabe den SDK-Installationspfad, der der Version des Frameworks entspricht, das [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ausführt.|  
 |`Types`|Optionaler `String[]` -Parameter.<br /><br /> Ruft eine Liste der spezifischen Typen ab, für die Serialisierungscode generiert werden soll, oder legt sie fest. SGen generiert nur für diese Typen Serialisierungscode.|  
-|`UseProxyTypes`|Erforderlicher `Boolean`-Parameter.<br /><br /> Wenn `true`, generiert die SGen-Aufgabe Serialisierungscode ausschließlich für die Proxytypen des XML-Webdiensts.|  
+|`UseProxyTypes`|Erforderlicher `Boolean` -Parameter.<br /><br /> Wenn `true`, generiert die SGen-Aufgabe Serialisierungscode ausschließlich für die Proxytypen des XML-Webdiensts.|  
   
 ## <a name="remarks"></a>Hinweise  
  Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Tasks.ToolTaskExtension>-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.ToolTask>-Klasse erbt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [ToolTaskExtension-Basisklasse](../msbuild/tooltaskextension-base-class.md).  

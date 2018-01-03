@@ -16,11 +16,12 @@ caps.latest.revision: "15"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 54c91b8238b21f214edda0941c0c91fd4bdda8e4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 29a68dc22a348c787d192bebecea91caed7aa0cc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-command-line-profiling-using-instrumentation"></a>Exemplarische Vorgehensweise: Profilerstellung über die Befehlszeile mit Instrumentierung
 Diese exemplarische Vorgehensweise führt Sie durch die Profilerstellung einer eigenständigen [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]-Anwendung zum Sammeln ausführlicher Daten zur Zeitsteuerung und Aufrufanzahl mithilfe der Instrumentierungsmethode der Profilerstellungstools. Im Verlauf dieser exemplarischen Vorgehensweise führen Sie folgende Aufgaben aus:  
@@ -128,4 +129,4 @@ Diese exemplarische Vorgehensweise führt Sie durch die Profilerstellung einer e
  [Profilerstellung mithilfe der Befehlszeile](../profiling/using-the-profiling-tools-from-the-command-line.md)   
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [Grundlagen zu Samplingdatenwerten](../profiling/understanding-sampling-data-values.md)   
- [Berichtsansichten für Profilerstellungstools](../profiling/performance-report-views.md)
+ [Performance Report Views (Leistungsberichtansichten)](../profiling/performance-report-views.md)

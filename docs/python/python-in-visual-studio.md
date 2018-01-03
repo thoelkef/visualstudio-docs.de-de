@@ -12,11 +12,12 @@ caps.latest.revision: "11"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: c88c90fcc150187bd10e3100cd703522f86bc191
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: python
+ms.openlocfilehash: 8cd00fe33cf463227dd09f93047350a96cee3b92
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="working-with-python-in-visual-studio"></a>Arbeiten mit Python in Visual Studio
 
@@ -31,7 +32,7 @@ Einführung:
 - Befolgen Sie das Tutorial [Working with Python in Visual Studio (Arbeiten mit Python in Visual Studio)](vs-tutorial-01-01.md) für ein vollständiges End-to-End-Erlebnis.
 - Nutzen Sie anschließend die folgenden Links, um Python-bezogene Features und die Funktionen von Visual Studio zu erkunden.
 
-| Funktion | Beschreibung | Allgemeine Visual Studio-Dokumentation | 
+| Funktion | description | Allgemeine Visual Studio-Dokumentation | 
 | --- | --- | --- |
 | [Visual Studio-Projektsystem](python-projects.md) | Übernimmt implizit eine Ordnerstruktur des Python-Codes und ermöglicht eine explizite Steuerung, sodass Sie App-Code, Testcode, Webseiten, JavaScript, Buildskripts usw. identifizieren können. | [Projektmappen und Projekte in Visual Studio](../ide/solutions-and-projects-in-visual-studio.md) |
 | [Projektvorlagen](python-projects.md#project-templates) | Erstellt schnell die Projektstruktur für Konsolen-, Internet-, Azure- und Data Science-Projekte und für andere Projekttypen. | [Visual Studio-Vorlagen](../ide/creating-project-and-item-templates.md#visual-studio-templates) |
@@ -41,7 +42,7 @@ Einführung:
 | [Interaktives Fenster](interactive-repl.md) | Bietet eine schnelle REPL-Umgebung für Python mit Funktionen, um problemlos einen Teil des Codes zu markieren und an das interaktive Fenster zu senden. | n/v |
 | [Vollständige Debugfunktionen](debugging.md) | Debugging kann mit und ohne ein Visual Studio-Projekt ausgeführt werden, einschließlich der Möglichkeit zum Debuggen einer vorhandenen ausführbaren Datei, [Python/C++-Debugging im gemischten Modus](debugging-mixed-mode.md), [Remotedebugging](debugging-cross-platform-remote.md) für Windows/Linux/Mac, [Remotedebugging für Azure](debugging-azure-remote.md) und Debugging im interaktiven Fenster. | [Debuggen in Visual Studio](../debugger/debugging-in-visual-studio.md) |
 | [Profilerstellungstools mit umfassender Berichterstellung](profiling.md) | Untersucht, wie Zeit in Ihrer Anwendung aufgewendet wird. Dazu zählt auch die Möglichkeit, die Leistung von verschiedenen Ausführungen der Profilerstellung zu vergleichen. | [Profilerstellungstools](../profiling/profiling-tools.md) (nicht alle Funktionen von Visual Studio-Profilerstellungstools stehen für Python zur Verfügung) |
-| [Tools für Unittests](unit-testing.md) | Sie können Tests im Test-Explorer von Visual Studio ermitteln, ausführen und verwalten und Unittests problemlos debuggen. | [Komponententest für Code](../test/unit-test-your-code.md) |
+| [Tools für Unittests](unit-testing.md) | Sie können Tests im Test-Explorer von Visual Studio ermitteln, ausführen und verwalten und Unittests problemlos debuggen. | [Ausführen von Komponententests für Code](../test/unit-test-your-code.md) |
 
 Die Python-Arbeitsauslastung umfasst auch das [Azure SDK für Python](azure-sdk-for-python.md), das die Nutzung von Azure-Diensten aus Windows-, Mac OS X- und Linux-Anwendungen vereinfacht.
 

@@ -29,11 +29,12 @@ caps.latest.revision: "7"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 6bdca24340f301fc19f3bc8d1e86c97c3b98c5c5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 20548574a15c1ac7867ff7142033e94328a40ddf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="lib-task"></a>LIB-Aufgabe
 Umschließt das 32-Bit-Tool von Microsoft zur Bibliotheksverwaltung ("lib.exe"). Der Bibliothek-Manager erstellt und verwaltet eine Bibliothek mit Objektdateien im Common Object File Format (COFF). Der Bibliothek-Manager kann darüber hinaus Exportdateien und Importbibliotheken erstellen, um auf exportierte Definitionen zu verweisen. Weitere Informationen finden Sie unter [LIB-Referenz](/cpp/build/reference/lib-reference) und [Ausführen von LIB](/cpp/build/reference/running-lib).  
@@ -41,7 +42,7 @@ Umschließt das 32-Bit-Tool von Microsoft zur Bibliotheksverwaltung ("lib.exe").
 ## <a name="parameters"></a>Parameter  
  In der folgenden Tabelle werden die Parameter der **LIB**-Aufgabe beschrieben. Die meisten Aufgabenparameter entsprechen einer Befehlszeilenoption.  
   
-|Parameter|Beschreibung|  
+|Parameter|description|  
 |---------------|-----------------|  
 |**AdditionalDependencies**|Optionaler **String[]**-Parameter.<br /><br /> Gibt zusätzliche Elemente an, die zur Befehlszeile hinzugefügt werden.|  
 |**AdditionalLibraryDirectories**|Optionaler **String[]**-Parameter.<br /><br /> Überschreibt den Bibliothekspfad der Umgebung. Geben Sie einen Verzeichnisnamen an.<br /><br /> Weitere Informationen finden Sie unter [/LIBPATH (Libpath-Pfad hinzufügen)](/cpp/build/reference/libpath-additional-libpath).|  
@@ -52,14 +53,14 @@ Umschließt das 32-Bit-Tool von Microsoft zur Bibliotheksverwaltung ("lib.exe").
 |**ForceSymbolReferences**|Optionaler **String**-Parameter.<br /><br /> Erzwingt, dass lib.exe einen Verweis auf das angegebene Symbol einschließt.<br /><br /> Dieser Parameter entspricht der Option **/INCLUDE:** von lib.exe.|  
 |**IgnoreAllDefaultLibraries**|Optionaler `Boolean` -Parameter.<br /><br /> Bei `true` werden alle Standardbibliotheken aus der Liste der Bibliotheken entfernt, die lib.exe beim Auflösen externer Verweise durchsucht.<br /><br /> Dieser Parameter entspricht der parameterlosen Form der Option **/NODEFAULTLIB** von lib.exe.|  
 |**IgnoreSpecificDefaultLibraries**|Optionaler **String[]**-Parameter.<br /><br /> Entfernt die angegebenen Bibliotheken aus der Liste der Bibliotheken, die lib.exe beim Auflösen externer Verweise durchsucht.<br /><br /> Dieser Parameter entspricht der Option **/NODEFAULTLIB** von lib.exe, die ein `library`-Argument verwendet.|  
-|**LinkLibraryDependencies**|Optionaler `Boolean`-Parameter.<br /><br /> `true` gibt an, dass die Bibliotheksausgaben von Projektabhängigkeiten automatisch eingebunden werden.|  
+|**LinkLibraryDependencies**|Optionaler `Boolean` -Parameter.<br /><br /> `true` gibt an, dass die Bibliotheksausgaben von Projektabhängigkeiten automatisch eingebunden werden.|  
 |**LinkTimeCodeGeneration**|Optionaler `Boolean` -Parameter.<br /><br /> Gibt bei `true` die Link-Zeitcodegenerierung an.<br /><br /> Dieser Parameter entspricht der Option **/LCTG** von lib.exe.|  
 |**MinimumRequiredVersion**|Optionaler **String**-Parameter.<br /><br /> Gibt die mindestens erforderliche Version des Subsystems an. Geben Sie eine durch Kommas getrennte Liste von Dezimalzahlen im Bereich von 0 bis 65535 an.|  
 |**ModuleDefinitionFile**|Optionaler **String**-Parameter.<br /><br /> Gibt den Namen der Moduldefinitionsdatei (DEF) an.<br /><br /> Dieser Parameter entspricht der Option **/DEF** von lib.exe, die ein `filename`-Argument verwendet.|  
 |**Name**|Optionaler **String**-Parameter.<br /><br /> Gibt beim Erstellen einer Importbibliothek den Namen der DLL an, für welche die Importbibliothek erstellt wird.<br /><br /> Dieser Parameter entspricht der Option **/NAME** von lib.exe, die ein `filename`-Argument verwendet.|  
 |**OutputFile**|Optionaler **String**-Parameter.<br /><br /> Überschreibt den Standardnamen und den -speicherort des Programms, das lib.exe erstellt.<br /><br /> Dieser Parameter entspricht der Option **/OUT** von lib.exe, die ein `filename`-Argument verwendet.|  
 |**RemoveObjects**|Optionaler **String[]**-Parameter.<br /><br /> Unterdrückt das angegebene Objekt in der Ausgabebibliothek. Lib.exe erstellt eine Ausgabebibliothek durch Kombinieren aller Objekte (in Objektdateien und Bibliotheken) und anschließendes Löschen aller mithilfe dieser Option angegebenen Objekte.<br /><br /> Dieser Parameter entspricht der Option **/REMOVE** von lib.exe, die ein `membername`-Argument verwendet.|  
-|**Sources**|Erforderlicher `ITaskItem[]`-Parameter.<br /><br /> Gibt eine durch Leerzeichen getrennte Liste der Quelldateien an.|  
+|**Sources**|Erforderlicher `ITaskItem[]` -Parameter.<br /><br /> Gibt eine durch Leerzeichen getrennte Liste der Quelldateien an.|  
 |**SubSystem**|Optionaler **String**-Parameter.<br /><br /> Gibt die Umgebung für die ausführbare Datei an. Die Wahl des Subsystems hat Einfluss auf das Einstiegspunktsymbol bzw. die Einstiegspunktfunktion.<br /><br /> Geben Sie einen der folgenden Werte an, von denen jeder einer Befehlszeilenoption entspricht.<br /><br /> -   **Konsole** - **/SUBSYSTEM:CONSOLE**<br />-   **Windows** - **/SUBSYSTEM:WINDOWS**<br />-   **Nativ** - **/SUBSYSTEM:NATIVE**<br />-   **EFI-Anwendung** - **/SUBSYSTEM:EFI_APPLICATION**<br />-   **EFI-Startdiensttreiber** - **/SUBSYSTEM:EFI_BOOT_SERVICE_DRIVER**<br />-   **EFI ROM** - **/SUBSYSTEM:EFI_ROM**<br />-   **EFI-Laufzeit** - **/SUBSYSTEM:EFI_RUNTIME_DRIVER**<br />-   **WindowsCE** - **/SUBSYSTEM:WINDOWSCE**ReplaceThisText<br />-   **POSIX** - **/SUBSYSTEM:POSIX**<br /><br /> Weitere Informationen finden Sie unter [/SUBSYSTEM (Subsystem angeben)](/cpp/build/reference/subsystem-specify-subsystem).|  
 |**SuppressStartupBanner**|Optionaler **Boolean**-Parameter.<br /><br /> Bei `true` wird die Anzeige der Copyright- und Versionsnummernmeldung bei Aufgabenstart verhindert.<br /><br /> Weitere Informationen finden Sie bei der Option **/NOLOGO** unter [Ausführen von LIB](/cpp/build/reference/running-lib).|  
 |**TargetMachine**|Optionaler **String**-Parameter.<br /><br /> Gibt die Zielplattform für das Programm oder die DLL an.<br /><br /> Geben Sie einen der folgenden Werte an, von denen jeder einer Befehlszeilenoption entspricht.<br /><br /> -   **MachineARM** - **/MACHINE:ARM**<br />-   **MachineEBC** - **/MACHINE:EBC**<br />-   **MachineIA64** - **/MACHINE:IA64**<br />-   **MachineMIPS** - **/MACHINE:MIPS**<br />-   **MachineMIPS16** - **/MACHINE:MIPS16**<br />-   **MachineMIPSFPU** -**/MACHINE:MIPSFPU**<br />-   **MachineMIPSFPU16** - **/MACHINE:MIPSFPU16**<br />-   **MachineSH4** - **/MACHINE:SH4**<br />-   **MachineTHUMB** - **/MACHINE:THUMB**<br />-   **MachineX64** - **/MACHINE:X64**<br />-   **MachineX86** - **/MACHINE:X86**<br /><br /> Weitere Informationen finden Sie unter [/MACHINE (Zielplattform angeben)](/cpp/build/reference/machine-specify-target-platform).|  

@@ -20,11 +20,12 @@ caps.latest.revision: "9"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3e61fb6667c16fd75cef78fbcaa835b97603dbe5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 094f87ca4a56f71cbecfa9b6b1dc9189244c0c57
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-manage-build-configurations-with-visual-basic-developer-settings-applied"></a>Gewusst wie: Verwalten von Buildkonfigurationen mit aktivierten Visual Basic Developer-Einstellungen
 Standardmäßig werden alle Optionen für die Buildkonfiguration ausgeblendet, wenn die [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]-Developer-Einstellungen aktiviert sind. In diesem Thema wird erläutert, wie Sie diese Einstellungen manuell aktivieren.  

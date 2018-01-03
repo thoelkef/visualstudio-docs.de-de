@@ -13,11 +13,12 @@ caps.latest.revision: "28"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 8503de5c90544e06fa7119482f67726655a4ffed
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 6152cfe60a7628ce830cbf589a6808f5ca87fae2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="item-functions"></a>Elementfunktionen
 Ab MSBuild 4.0 kann Code in Tasks und Zielen Elementfunktionen aufrufen, um Informationen zu den Elementen des Projekts zu erhalten. Diese Funktionen vereinfachen das Abrufen von Distinct()-Elementen, und mit ihnen erfolgt der Abruf schneller als beim Durchlaufen der Elemente.  
@@ -53,7 +54,7 @@ Ab MSBuild 4.0 kann Code in Tasks und Zielen Elementfunktionen aufrufen, um Info
 ## <a name="intrinsic-item-functions"></a>Systeminterne Elementfunktionen  
  In der unten stehenden Tabelle werden die systeminternen Funktionen aufgelistet, die für Elemente zur Verfügung stehen.  
   
-|Funktion|Beispiel|Beschreibung|  
+|Funktion|Beispiel|description|  
 |--------------|-------------|-----------------|  
 |`Count`|`@(MyItem->Count())`|Gibt die Anzahl der Elemente zurück|  
 |`DirectoryName`|`@(MyItem->DirectoryName())`|Gibt das entsprechende `Path.DirectoryName`-Objekt für jedes Element zurück|  
@@ -62,7 +63,7 @@ Ab MSBuild 4.0 kann Code in Tasks und Zielen Elementfunktionen aufrufen, um Info
 |`Reverse`|`@(MyItem->Reverse())`|Gibt die Elemente in umgekehrter Reihenfolge zurück|  
 |`AnyHaveMetadataValue`|`@(MyItem->AnyHaveMetadataValue("MetadataName", "MetadataValue"))`|Gibt einen `boolean`-Wert zurück, der angibt, ob ein Element einen angegebenen Metadatennamen und -wert aufweist. Beim Vergleich wird die Groß- und Kleinschreibung nicht berücksichtigt.|  
 |`ClearMetadata`|`@(MyItem->ClearMetadata())`|Gibt Elemente mit gelöschten Metadaten zurück. Nur das `itemspec`-Objekt wird beibehalten.|  
-|`HasMetadata`|`@(MyItem->HasMetadataValue("MetadataName"))`|Gibt Elemente zurück, die den angegebenen Metadatennamen aufweisen Beim Vergleich wird die Groß- und Kleinschreibung nicht berücksichtigt.|  
+|`HasMetadata`|`@(MyItem->HasMetadata("MetadataName"))`|Gibt Elemente zurück, die den angegebenen Metadatennamen aufweisen Beim Vergleich wird die Groß- und Kleinschreibung nicht berücksichtigt.|  
 |`Metadata`|`@(MyItem->Metadata("MetadataName"))`|Gibt die Werte der Metadaten zurück, die den Metadatennamen aufweisen|  
 |`WithMetadataValue`|`@(MyItem->WithMetadataValue("MetadataName", "MetadataValue"))`|Gibt Elemente zurück, die den angegebenen Metadatennamen und -wert aufweisen. Beim Vergleich wird die Groß- und Kleinschreibung nicht berücksichtigt.|  
   
@@ -102,4 +103,4 @@ Ab MSBuild 4.0 kann Code in Tasks und Zielen Elementfunktionen aufrufen, um Info
 ```  
   
 ## <a name="see-also"></a>Siehe auch  
- [Items](../msbuild/msbuild-items.md) (MSBuild-Elemente)
+ [Elemente](../msbuild/msbuild-items.md)

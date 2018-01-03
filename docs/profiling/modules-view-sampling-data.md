@@ -15,21 +15,22 @@ caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0cf17377de9a21f52f15b263be07fcacb6966096
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: 053b1ea5903675f60d59c3574f982f2461e39e4b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="modules-view---sampling-data"></a>Modulansicht – Profiler-Samplingdaten
 In der Modulansicht der Samplingdaten werden die Leistungsdaten, für die in den Profilerstellungsdaten ein Sampling ausgeführt wurde, nach Modulen gruppiert angezeigt. Jedes Modul ist der Stamm einer hierarchischen Struktur. Die Funktionen des Moduls, für die ein Sampling ausgeführt wurde, werden unter dem Modulknoten aufgeführt.  
   
 > [!NOTE]
->  Verbesserte Sicherheitsfeatures in Windows 8 und Windows Server 2012 erforderten tiefgreifende Änderungen bei der Datenerfassung des Visual Studio-Profilers auf diesen Plattformen. Außerdem benötigen UWP-Apps neue Erfassungsmethoden. Siehe [Leistungstools für Windows 8- und Windows Server 2012-Anwendungen](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
+>  Verbesserte Sicherheitsfunktionen in Windows 8 und Windows Server 2012 erforderten tiefgreifende Änderungen bei der Datenerfassung des Visual Studio-Profilers auf diesen Plattformen. Außerdem benötigen UWP-Apps neue Erfassungsmethoden. Siehe [Profilerstellungstools für Windows 8- und Windows Server 2012-Anwendungen](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
  Wenn die Funktion ausgeführt wurde, als Samplings gesammelt wurden, die Funktion sich also ganz oben in der Aufrufliste befunden hat, werden die zum jeweiligen Zeitpunkt ausgeführten Quellzeilen und Anweisungsadressen unter dem Funktionsknoten aufgeführt. Da die Daten für eine Quellzeile oder einen Anweisungszeiger erfasst werden, wenn die Zeile oder die Anweisung ausgeführt wird, sind die inklusiven und exklusiven Werte der Zeilen- und der Anweisungsdaten immer gleich.  
   
-|Spalte|Beschreibung|  
+|Spalte|description|  
 |------------|-----------------|  
 |**Name**|Der Name des Moduls, der Funktion, der Zeilennummer oder der Adresse des Anweisungszeigers.|  
 |**Prozess-ID**|Die Prozess-ID (PID) der Profilerstellung.|  
@@ -41,7 +42,7 @@ In der Modulansicht der Samplingdaten werden die Leistungsdaten, für die in den
 |**Inklusive Samplings**|- Bei einer Funktion die Anzahl der Samplings, in der diese Funktion oder eine von dieser Funktion aufgerufene Funktion ausgeführt wurde (d.h. die Anzahl von Samplings in der Aufrufliste, in denen diese Funktion enthalten war).<br />- Bei einem Modul die Anzahl der Samplings, bei denen mindestens eine Funktion dieses Moduls ausgeführt wurde.<br />- Bei einer Zeile oder einer Anweisung die Anzahl der Samplings, in denen diese Zeile oder Anweisung ausgeführt wurde.|  
 |**Inklusive Samplings in %**|- Bei einer Funktion oder einem Modul der Anteil aller Samplings, die während der Profilerstellung inklusiven Samplings dieser Funktion oder dieses Moduls entsprechen.<br />- Bei einer Zeile oder einer Anweisung der Anteil der Samplings, in denen während der Profilerstellung diese Zeile oder Anweisung ausgeführt wurde.|  
 |**Exklusive Samplings**|- Bei einer Funktion die Anzahl der Samplings in der Aufrufliste, in denen diese Funktion direkt ausgeführt wurde (d.h. in denen sich die Funktion an erster Stelle in der Aufrufliste befand).<br />- Bei einem Modul die Summe der exklusiven Samplings der Funktionen im Modul.<br />- Bei einer Zeile oder einer Anweisung die Anzahl der Samplings, in denen diese Zeile oder Anweisung ausgeführt wurde.|  
-|**Exklusive Samplings in %**|- Bei einer Funktion oder einem Modul der Anteil aller Samplings, die während der Profilerstellung exklusiven Samplings dieser Funktion oder dieses Moduls entsprechen.<br />- Bei einer Zeile oder einer Anweisung der Anteil der Samplings, in denen während der Profilerstellung diese Zeile oder Anweisung ausgeführt wurde.|  
+|**Exklusive Samplings %**|- Bei einer Funktion oder einem Modul der Anteil aller Samplings, die während der Profilerstellung exklusiven Samplings dieser Funktion oder dieses Moduls entsprechen.<br />- Bei einer Zeile oder einer Anweisung der Anteil der Samplings, in denen während der Profilerstellung diese Zeile oder Anweisung ausgeführt wurde.|  
   
 ## <a name="see-also"></a>Siehe auch  
  [Modulansicht - Sampling](../profiling/modules-view-dotnet-memory-sampling-data.md)   

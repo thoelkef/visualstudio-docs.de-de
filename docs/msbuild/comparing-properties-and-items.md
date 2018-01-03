@@ -13,11 +13,12 @@ caps.latest.revision: "16"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: f1a0f6df56cebe769ec514abea49ade0083c512e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 6210f6e96c4e0b1330ee83a3f0f19ae58849dfce
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="comparing-properties-and-items"></a>Vergleich von Eigenschaften und Elementen
 Sowohl MSBuild-Eigenschaften als auch MSBuild-Elemente werden verwendet, um Informationen an Aufgaben zu übergeben, Bedingungen auszuwerten und Werte zu speichern, auf die in der gesamten Projektdatei verwiesen werden kann.  
@@ -42,7 +43,7 @@ Sowohl MSBuild-Eigenschaften als auch MSBuild-Elemente werden verwendet, um Info
 </PropertyGroup>  
 ```  
   
- Die `BuildDependsOn`-Eigenschaft wird normalerweise als Argument eines Ziel-`DependsOnTargets`-Attributs verwendet, wodurch sie effektiv in eine Elementliste konvertiert wird. Diese Eigenschaft kann überschrieben werden, um ein Ziel hinzuzufügen oder die Ausführungsreihenfolge der Ziele zu ändern. Beispiel:  
+ Die `BuildDependsOn`-Eigenschaft wird normalerweise als Argument eines Ziel-`DependsOnTargets`-Attributs verwendet, wodurch sie effektiv in eine Elementliste konvertiert wird. Diese Eigenschaft kann überschrieben werden, um ein Ziel hinzuzufügen oder die Ausführungsreihenfolge der Ziele zu ändern. Ein auf ein Objekt angewendeter  
   
 ```xml  
 <PropertyGroup>  

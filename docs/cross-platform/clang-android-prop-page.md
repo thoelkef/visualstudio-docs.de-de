@@ -44,15 +44,16 @@ f1_keywords:
 - VC.Project.VCClangCompilerTool.ForcedIncludeFiles
 - VC.Project.VCClangCompilerTool.MultiProcessorCompilation
 - vc.project.AdditionalOptionsPage
-ms.openlocfilehash: 876650f14ea5017d80a554ed038ca1bcd5d19cfa
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: xplat-cplusplus
+ms.openlocfilehash: 693ab7a1068ebe841e7e59a79ed015c4f287798a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="clang-project-properties-android-c"></a>Clang-Projekteigenschaften (Android C++)
 
-Eigenschaft | Beschreibung | Auswahlmöglichkeiten
+Eigenschaft | description | Auswahlmöglichkeiten
 --- | ---| ---
 Zusätzliche Includeverzeichnisse | Gibt mindestens ein Verzeichnis an, das dem include-Pfad hinzugefügt werden soll. Verwenden Sie Semikolons als Trennzeichen, wenn mehrere Verzeichnisse vorhanden sind. (-I[path]).
 Debuginformationsformat | Gibt den Typ der Debuginformationen an, die vom Compiler generiert werden. | **Keine**: Generiert keine Debuginformationen, sodass die Kompilierung ggf. schneller erfolgt.<br>**Vollständige Debugging-Informationen(DWARF2)**: Generiert DWARF2-Debuginformationen.<br>**Informationen zur Zeilennummer**: Nur Zeilennummerninformationen generieren.<br>
@@ -75,7 +76,7 @@ Laufzeit-Typeninformation aktivieren | Fügt Code für die Überprüfung der C++
 C-Sprachstandard | Bestimmt den C-Sprachstandard. | **Default**<br>**C89**: C89-Sprachstandard.<br>**C99**: C99-Sprachstandard.<br>**C11**: C11-Sprachstandard.<br>**C99 (GNU-Dialekt)**: C99-Sprachstandard (GNU-Dialekt).<br>**C11 (GNU-Dialekt)**: C11-Sprachstandard (GNU-Dialekt).<br>
 C++-Sprachstandard | Bestimmt den C++-Sprachstandard | **Default**<br>**C++03**: C++03-Sprachstandard.<br>**C++11**: C++11-Sprachstandard.<br>**C++14**: C++14-Sprachstandard.<br>**C++03 (GNU-Dialekt)**: C++03-Sprachstandard (GNU-Dialekt).<br>**C++11 (GNU-Dialekt)**: C++11-Sprachstandard (GNU-Dialekt).<br>**C++14 (GNU-Dialekt)**: C++14-Sprachstandard (GNU-Dialekt).<br>
 Präprozessordefinitionen | Definiert Präprozessorsymbole für Ihre Quelldatei. (-D)
-Präprozessordefinitionen aufheben | Gibt eine oder mehrere Aufhebungen von Präprozessordefinitionen an.  (-U [macro])
+Präprozessordefinitionen aufheben | Gibt mindestens eine aufgehobene Präprozessordefinition an.  (-U [macro])
 Alle Präprozessordefinitionen aufheben | Hebt die Definition aller zuvor definierten Präprozessorwerte auf.  (-undef)
 Includedateien anzeigen | Generiert eine Liste der Includedateien mit Compilerausgabe.  (-H)
 Vorkompilierter Header | Vorkompilierten Header erstellen/verwenden: Ermöglicht die Erstellung oder Verwendung eines vorkompilierten Headers während der Erstellung. | **Verwenden**: Vorkompilierten Header verwenden.<br>**Vorkompilierte Header nicht verwenden**: Vorkompilierten Header nicht verwenden.<br>
@@ -85,4 +86,4 @@ Vorkompilierten Header kompilieren: Optionen | Wählen Sie „Kompilierungssprac
 Kompilieren als | Wählen Sie die Kompilierungssprachenoption für C- und CPP-Dateien aus.  „Standard“ führt die Erkennung basierend auf der .c- oder .cpp-Dateierweiterung aus. (-x c, -x c++) | **Standard**: die Standardeinstellung.<br>**Als C-Code kompilieren**: als C-Code kompilieren.<br>**Als C++-Code kompilieren**: als C++-Code kompilieren.<br>
 Explizite Includedateien | eine oder mehrere explizite Includedateien.     (-include [name])
 Kompilierung mit mehreren Prozessoren | Kompilierung mit mehreren Prozessoren
-Zusätzliche Optionen | Zusätzliche Optionen
+Zusätzliche Optionen | Zusätzliche Optionen.

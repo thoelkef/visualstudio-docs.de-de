@@ -17,11 +17,12 @@ caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7dea60ba0f6a443b8db94611460442bd08a8cf95
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: e17055848d7913547fcbcd563774e8360eea73e3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="memory-usage-without-the-debugger"></a>Speicherauslastung ohne Debuggen
 Sie können das Tool **Speicherverwendung** ohne Debuggen verwenden, um die folgenden Aktionen ausführen:  
@@ -203,7 +204,7 @@ Sie können das Tool **Speicherverwendung** ohne Debuggen verwenden, um die folg
 |**Inklusive Größe (Bytes)**|Die Größe der Objekte in der primären Momentaufnahme einschließlich der Größe der in den Objekten enthaltenen Objekte.|  
   
 ## <a name="see-also"></a>Siehe auch  
- [JavaScript-Speicher](../profiling/javascript-memory.md)  
+ [JavaScript-Memory](../profiling/javascript-memory.md)  
  [Profilerstellung in Visual Studio](../profiling/index.md)  
  [Tour zur Profilerstellungsfunktion](../profiling/profiling-feature-tour.md)  
  [Bewährte Methoden zur Leistungsverbesserung für UWP-Apps mit C++, C# und Visual Basic](http://msdn.microsoft.com/library/windows/apps/hh750313.aspx)   

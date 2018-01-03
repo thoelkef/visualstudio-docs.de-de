@@ -20,11 +20,12 @@ caps.latest.revision: "4"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 85cb6c20f0e330b06f2e2a3999b115bc61111f9d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f01c36ff7e89bbd1919d54896ec70abdcadf5fcf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="updatemanifest-task"></a>UpdateManifest-Aufgabe
 Aktualisiert die ausgewählten Eigenschaften in einem Manifest und führt das Signieren erneut aus.  
@@ -32,7 +33,7 @@ Aktualisiert die ausgewählten Eigenschaften in einem Manifest und führt das Si
 ## <a name="parameters"></a>Parameter  
  In der folgenden Tabelle werden die Parameter der `UpdateManifest` -Aufgabe beschrieben.  
   
-|Parameter|Beschreibung|  
+|Parameter|description|  
 |---------------|-----------------|  
 |`ApplicationManifest`|Erforderlicher <xref:Microsoft.Build.Framework.ITaskItem> -Parameter.<br /><br /> Gibt das Anwendungsmanifest an|  
 |`ApplicationPath`|Erforderlicher `String` -Parameter.<br /><br /> Gibt den Pfad für das Anwendungsmanifest an|  
@@ -44,4 +45,4 @@ Aktualisiert die ausgewählten Eigenschaften in einem Manifest und führt das Si
   
 ## <a name="see-also"></a>Siehe auch  
  [Tasks (Aufgaben)](../msbuild/msbuild-tasks.md)   
- [Task Reference](../msbuild/msbuild-task-reference.md) (MSBuild-Aufgabenreferenz)
+ [Aufgabenreferenz](../msbuild/msbuild-task-reference.md)

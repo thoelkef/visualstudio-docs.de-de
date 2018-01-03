@@ -14,11 +14,12 @@ caps.latest.revision: "3"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9c89bde3c8aed358d64349e185f06b7cdb4ccd0a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 621f4167184d22445a3d083fe2a1c36db529f6f7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="concurrency-namespace-concurrency-visualizer"></a>Concurrency-Namespace (Parallelitätsschnellansicht)
 Der `Concurrency`-Namespace stellt Klassen und Funktionen bereit, die Ihnen den Zugriff auf die Concurrency Runtime ermöglichen, ein Framework zur parallelen Programmierung für C++. Weitere Informationen finden Sie unter [Concurrency Runtime](/cpp/parallel/concrt/concurrency-runtime).  
@@ -29,11 +30,11 @@ Der `Concurrency`-Namespace stellt Klassen und Funktionen bereit, die Ihnen den 
 namespace Concurrency;  
 ```  
   
-## <a name="members"></a>Mitglieder  
+## <a name="members"></a>Member  
   
 ### <a name="namespaces"></a>Namespaces  
   
-|Name|Beschreibung|  
+|name|description|  
 |----------|-----------------|  
 |[diagnostic-Namespace](../profiling/diagnostic-namespace.md)|Der `diagnostics`-Namespace stellt Funktionen zum Ausgeben von Markern für Nebenläufigkeitsschnellansichten bereit.|  
   

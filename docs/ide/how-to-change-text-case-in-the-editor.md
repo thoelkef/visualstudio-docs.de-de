@@ -15,11 +15,12 @@ caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e9cd903153f0802ce622c91693151a02ac5ba824
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: 556ab33582f7c7051eefbd0eed6c72c2c9b3de18
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-change-text-case-in-the-editor"></a>Vorgehensweise: Ändern der Groß-/Kleinschreibung von Text im Editor
 Sie können Menübefehle oder Tastenkombinationen verwenden, um die Groß-/Kleinschreibung von ausgewähltem Text in nur Großbuchstaben oder nur Kleinbuchstaben zu ändern.  
@@ -35,7 +36,7 @@ Sie können Menübefehle oder Tastenkombinationen verwenden, um die Groß-/Klein
   
 3.  Klicken Sie auf **In Großbuchstaben umwandeln**, um Text in Großbuchstaben zu ändern, oder drücken Sie **STRG**+**UMSCHALTTASTE**+**U**.  
   
-    – oder –  
+    - oder -  
   
     Klicken Sie auf **In Kleinbuchstaben umwandeln**, um Text in Kleinbuchstaben zu ändern, oder drücken Sie **STRG**+**U**.  
   

@@ -15,11 +15,12 @@ caps.latest.revision: "14"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1af055de45421ec9958a8663cfaa62c82bd4ae75
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: 81c10d85b9dc88115e7dbc57a03a6da4362fa945
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="caller--callee-view---sampling-data"></a>Aufrufer-/Aufgerufener-Ansicht – Samplingdaten
 In der Aufrufer-/Aufgerufener-Ansicht werden Profilerstellungsinformationen für eine ausgewählte Funktion und ihre übergeordneten und untergeordneten Funktionen angezeigt. Die Aufrufer-/Aufgerufener-Ansicht enthält drei Raster.  
@@ -31,9 +32,9 @@ In der Aufrufer-/Aufgerufener-Ansicht werden Profilerstellungsinformationen für
  **Funktionen, die von der aktuellen Funktion aufgerufen wurden** wird im untersten Raster angezeigt und gibt Profilerstellungsinformationen für die aufgerufenen (untergeordneten) Funktionen der ausgewählten Funktion an, wenn die untergeordnete Funktion von der aktuellen Funktion aufgerufen wurde.  
   
 > [!NOTE]
->  Verbesserte Sicherheitsfeatures in Windows 8 und Windows Server 2012 erforderten tiefgreifende Änderungen bei der Datenerfassung des Visual Studio-Profilers auf diesen Plattformen. Außerdem benötigen UWP-Apps neue Erfassungsmethoden. Siehe [Leistungstools für Windows 8- und Windows Server 2012-Anwendungen](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
+>  Verbesserte Sicherheitsfunktionen in Windows 8 und Windows Server 2012 erforderten tiefgreifende Änderungen bei der Datenerfassung des Visual Studio-Profilers auf diesen Plattformen. Außerdem benötigen UWP-Apps neue Erfassungsmethoden. Siehe [Profilerstellungstools für Windows 8- und Windows Server 2012-Anwendungen](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
-|Spalte|Beschreibung|  
+|Spalte|description|  
 |------------|-----------------|  
 |**Prozess-ID**|Die Prozess-ID (PID) der Profilerstellung.|  
 |**Prozessname**|Der Prozessname.|  
@@ -43,12 +44,12 @@ In der Aufrufer-/Aufgerufener-Ansicht werden Profilerstellungsinformationen für
 |**Funktionsname**|Der vollqualifizierte Name der Funktion.|  
 |**Funktionszeilennummer**|Die Zeilennummer des Anfangs dieser Funktion in der Quelldatei.|  
 |**Funktionsadresse**|Die Adresse der Funktion.|  
-|**Typ**|Der Kontext der Funktion:<br /><br /> -   **0** – die aktuelle Funktion<br />-   **1** – eine Funktion, die die aktuelle Funktion aufruft<br />-   **2** – eine Funktionen, die von der aktuellen Funktion aufgerufen wird|  
+|**Type**|Der Kontext der Funktion:<br /><br /> -   **0** – die aktuelle Funktion<br />-   **1** – eine Funktion, die die aktuelle Funktion aufruft<br />-   **2** – eine Funktionen, die von der aktuellen Funktion aufgerufen wird|  
 |**Name der Stammfunktion**|Der Name der aktuellen Funktion.|  
 |**Inklusive Samplings**|- Bei der aktuellen Funktion die Anzahl von Samplings, die gesammelt wurden, obwohl diese Funktion oder eine ihrer untergeordneten Funktionen ausgeführt wurde.<br />- Bei einer Aufruferfunktion die Anzahl von inklusiven Samplings der aktuellen Funktion, die gesammelt wurden, als diese Funktion die aktuelle Funktion aufgerufen hat.<br />- Bei einer aufgerufenen Funktion die Anzahl von inklusiven Samplings dieser Funktion, die gesammelt wurden, als die aktuelle Funktion diese Funktion aufgerufen hat.|  
 |**Inklusive Samplings in %**|Der Prozentsatz aller Samplings während der Profilerstellung, die inklusive Samplings dieser Funktion waren.|  
 |**Exclusive Samplings**|- Bei der aktuellen Funktion die Anzahl der Samplings während der Profilerstellung, die gesammelt wurden, als diese Funktion direkt ausgeführt wurde (d.h., während sich diese Funktion an erster Stelle der Aufrufliste befunden hat). Samplings, die beim Ausführen von untergeordneten Funktionen dieser Funktion gesammelt wurden, sind nicht in den exklusiven Werten enthalten.<br />- Bei einer Aufruferfunktion die Anzahl von exklusiven Samplings der aktuellen Funktion, die gesammelt wurden, als diese Funktion die aktuelle Funktion aufgerufen hat.<br />- Bei einer aufgerufenen Funktion die Anzahl von exklusiven Samplings dieser Funktion, die gesammelt wurden, als die aktuelle Funktion diese Funktion aufgerufen hat.|  
-|**Exklusive Samplings in %**|Der Prozentsatz aller Samplings während der Profilerstellung, die exklusive Samplings dieser Funktion waren.|  
+|**Exklusive Samplings %**|Der Prozentsatz aller Samplings während der Profilerstellung, die exklusive Samplings dieser Funktion waren.|  
   
 ## <a name="see-also"></a>Siehe auch  
  [Aufrufer-/Aufgerufener-Ansicht – .NET-Speichersamplingdaten im Profiler](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)   

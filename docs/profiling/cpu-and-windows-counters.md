@@ -16,11 +16,12 @@ caps.latest.revision: "28"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 62889012c5640fb0f29eadb6f70e678f941ff286
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: d22300bc675de5074497589af53b304b9a1caa4d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="cpu-and-windows-counters"></a>CPU- und Windows-Indikatoren
 Der Visual Studio-Profiler ermöglicht das Sammeln von Leistungsdaten, die vom Betriebssystem (Windows-Indikatoren) generiert wurden, und Leistungsdaten, die von der Prozessoreinheit (CPU-Indikatoren) generiert wurde.  
@@ -30,7 +31,7 @@ Der Visual Studio-Profiler ermöglicht das Sammeln von Leistungsdaten, die vom B
 -   [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)], [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)], [!INCLUDE[vsPro](../code-quality/includes/vspro_md.md)]  
   
 > [!NOTE]
->  Verbesserte Sicherheitsfeatures in Windows 8 und Windows Server 2012 erforderten tiefgreifende Änderungen bei der Datenerfassung des Visual Studio-Profilers auf diesen Plattformen. Außerdem benötigen UWP-Apps neue Erfassungsmethoden. Siehe [Leistungstools für Windows 8- und Windows Server 2012-Anwendungen](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
+>  Verbesserte Sicherheitsfunktionen in Windows 8 und Windows Server 2012 erforderten tiefgreifende Änderungen bei der Datenerfassung des Visual Studio-Profilers auf diesen Plattformen. Außerdem benötigen UWP-Apps neue Erfassungsmethoden. Siehe [Profilerstellungstools für Windows 8- und Windows Server 2012-Anwendungen](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
 ## <a name="windows-counters"></a>Windows-Indikatoren  
  Windows-Indikatoren sind Teil der Windows-Diagnoseinfrastruktur, die Informationen über die Leistung des Betriebssystems oder einer Anwendung, einen Dienst oder einen Treiber bereitstellt. Windows-Indikatoren hängen von der Konfiguration des aktuellen Computers ab und sind unter Umständen nicht auf anderen Computern verfügbar. Windows-Leistungsindikatoren werden in Profilerstellungsdatendateien als Profilerstellungsmarkierungen gesammelt, die sich zum Filtern von Ansichten und Berichten verwenden lassen.  

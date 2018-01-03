@@ -13,11 +13,12 @@ caps.latest.revision: "24"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0c57284e21e1b276c6191109701f507c5a12f819
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a4b0cc6e7105f91a4192d2c079854c8953736eaf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="working-with-3-d-assets-for-games-and-apps"></a>Arbeiten mit 3D-Objekten für Spiele und Apps
 In diesem Dokument werden die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Tools beschrieben, die Sie verwenden können, um 3D-Modelle, Texturen und Shader für DirectX-basierte Spiele und Apps zu erstellen oder zu ändern.  
@@ -50,7 +51,7 @@ In diesem Dokument werden die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_
   
 ## <a name="related-topics"></a>Verwandte Themen  
   
-|Titel|Beschreibung|  
+|Titel|description|  
 |-----------|-----------------|  
 |[Arbeiten mit Texturen und Bildern](../designers/working-with-textures-and-images.md)|Beschreibt, wie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] verwendet wird, um mit Bildern und Texturen zu arbeiten.|  
 |[Arbeiten mit 3D-Modellen](../designers/working-with-3-d-models.md)|Beschreibt, wie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] verwendet wird, um mit 3D-Modellen zu arbeiten.|  

@@ -14,16 +14,17 @@ caps.latest.revision: "15"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9aac5f9ac8886bef61d700209f77b4b1852fe2bf
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a42e748e45d7db0606d585d774be254a7358d6b0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="tier-interactions-view"></a>Ansicht "Ebeneninteraktionen"
 Die Profilerstellung für die Ebeneninteraktion bietet weitere Informationen zu den Ausführungszeiten in Funktionen von Anwendungen mit mehreren Ebenen, die über [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)] mit Datenbanken kommunizieren. Es werden nur Daten für synchrone Funktionsaufrufe gesammelt.  
   
- **Voraussetzungen**  
+ **Anforderungen**  
   
 -   [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)]  
   
@@ -37,7 +38,7 @@ Die Profilerstellung für die Ebeneninteraktion bietet weitere Informationen zu 
   
 ## <a name="master-pane"></a>Masterbereich  
   
-|Spalte|Beschreibung|  
+|Spalte|description|  
 |------------|-----------------|  
 |**Name**|– Bei einer Zeile der obersten Ebene ist es der Name des profilierten Prozesses oder der Webseite.<br />– Bei einer Datenbankverbindungszeile ist dies der Name des Servers, der die Datenbank hostet.|  
 |**Datenbank**|Der Name der Datenbank (nur Datenbankverbindungszeilen).|  
@@ -49,7 +50,7 @@ Die Profilerstellung für die Ebeneninteraktion bietet weitere Informationen zu 
   
 ## <a name="database-connection-details-pane"></a>Detailbereich für die Datenbankverbindung  
   
-|Spalte|Beschreibung|  
+|Spalte|description|  
 |------------|-----------------|  
 |**Befehlstext**|Die SQL-Abfrage der Anforderung.|  
 |**Abfrageanzahl**|Die Anzahl, wie oft die Abfrage ausgeführt wurde.|  

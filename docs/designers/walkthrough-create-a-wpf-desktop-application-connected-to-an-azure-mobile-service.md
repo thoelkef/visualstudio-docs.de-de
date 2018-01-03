@@ -16,11 +16,12 @@ manager: ghogen
 dev_langs:
 - csharp
 - vb
-ms.openlocfilehash: 28f06905820d890f2f13c3c7e77fd57fb75fe4b6
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: azure
+ms.openlocfilehash: f3fd548234dbd7f02be4abfab77a22d3efd9b34a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service"></a>Exemplarische Vorgehensweise: Erstellen einer WPF-Desktopanwendung, die mit einem Azure Mobile Service verbunden ist
 Mit Windows Presentation Foundation (WPF) können Sie schnell eine moderne Desktopanwendung erstellen, die zum Speichern und Bereitstellen von Daten eines Azure Mobile Service verwendet.  
@@ -564,4 +565,4 @@ Im nächsten Schritt erstellen Sie die Benutzeroberfläche für die Anwendung. Z
   
 ## <a name="see-also"></a>Siehe auch  
  [Exemplarische Vorgehensweise: Meine erste WPF-Desktopanwendung](../designers/walkthrough-my-first-wpf-desktop-application2.md)   
- [Erstellen von modernen Desktopanwendungen mit Windows Presentation Foundation](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)
+ [Create Modern Desktop Applications with Windows Presentation Foundation (Erstellen von modernen Desktopanwendungen mit Windows Presentation Foundation)](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)

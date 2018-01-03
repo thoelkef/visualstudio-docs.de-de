@@ -15,11 +15,12 @@ caps.latest.revision: "45"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8d746d874b7efe18b1bd8dabf15804f1c05b57ca
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: df78a45b5bc5dded132b58cb37b87d4198ad1e7e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="image-editor"></a>Bildbearbeitung
 In diesem Dokument wird beschrieben, wie Sie den [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Bild-Editor verwenden, um Textur- und Bildressourcen anzuzeigen und zu ändern.  
@@ -98,7 +99,7 @@ In diesem Dokument wird beschrieben, wie Sie den [!INCLUDE[vsprvs](../code-quali
   
  In dieser Tabelle werden die Elemente der Symbolleiste des **Bildbearbeitungsmodus** beschrieben und in der Reihenfolge aufgelistet, in der sie auf der Symbolleiste von links nach rechts angezeigt werden.  
   
-|Element der Symbolleiste|Beschreibung|  
+|Element der Symbolleiste|description|  
 |------------------|-----------------|  
 |**Auswählen**|Ermöglicht die Auswahl eines rechteckigen Bereichs eines Bilds. Nachdem Sie einen Bereich ausgewählt haben, können Sie ihn ausschneiden, kopieren, verschieben, skalieren, drehen, spiegeln oder löschen. Wenn eine aktive Auswahl vorhanden ist, haben die Zeichenwerkzeuge nur Auswirkungen auf den ausgewählten Bereich.|  
 |**Unregelmäßige Auswahl**|Ermöglicht die Auswahl eines unregelmäßigen Bereichs eines Bilds. Nachdem Sie einen Bereich ausgewählt haben, können Sie ihn ausschneiden, kopieren, verschieben, skalieren, drehen, spiegeln oder löschen. Wenn eine aktive Auswahl vorhanden ist, haben die Zeichenwerkzeuge nur Auswirkungen auf den ausgewählten Bereich.|  
@@ -122,7 +123,7 @@ In diesem Dokument wird beschrieben, wie Sie den [!INCLUDE[vsprvs](../code-quali
   
  In der folgenden Tabelle werden die Elemente der Symbolleiste des **Bild-Editors** beschrieben und in der Reihenfolge aufgelistet, in der sie auf der Symbolleiste von oben nach unten angezeigt werden.  
   
-|Element der Symbolleiste|Beschreibung|  
+|Element der Symbolleiste|description|  
 |------------------|-----------------|  
 |**Zeichenstift**|Verwendet die aktive Farbauswahl, um einen Aliasstrich zu zeichnen. Sie können Farbe und Stärke des Strichs im Fenster **Eigenschaften** festlegen.|  
 |**Pinsel**|Verwendet die aktive Farbauswahl, um einen Strich mit Antialiasing zu zeichnen. Sie können Farbe und Stärke des Strichs im Fenster **Eigenschaften** festlegen.|  
@@ -141,7 +142,7 @@ In diesem Dokument wird beschrieben, wie Sie den [!INCLUDE[vsprvs](../code-quali
 ### <a name="working-with-transparency"></a>Arbeiten mit Transparenz  
  Einige Bildformate, z. B. DirectDraw Surface (.dds), unterstützen Transparenz. Es gibt mehrere Möglichkeiten, mit Transparenz zu arbeiten. Dies hängt vom Werkzeug ab, das Sie verwenden. Legen Sie im Fenster **Eigenschaften** die Komponente **A** (Alpha) für die Farbauswahl fest, um die Ebene der Transparenz für eine Farbauswahl anzugeben. Im Folgenden wird gezeigt, wie die verschiedenen Werkzeuge die Anwendung von Transparenz steuern:  
   
-|Tool|Beschreibung|  
+|Tool|description|  
 |----------|-----------------|  
 |**Zeichenstift**, **Pinsel**, **Airbrush**, **Linie**, **Rechteck**, **Abgerundetes Rechteck**, **Ellipse**, **Text**|Erweitern Sie zum Verschmelzen der aktiven Farbauswahl mit dem Bild die Eigenschaftengruppe **Kanäle** im Fenster **Eigenschaften**, und aktivieren Sie das Kontrollkästchen **Zeichnen** des **Alphakanals**. Zeichnen Sie dann ganz normal.<br /><br /> Deaktivieren Sie das Kontrollkästchen **Zeichnen** des **Alphakanals**, und zeichnen Sie normal weiter, um mit der aktiven Farbauswahl zu zeichnen und den Alphawert des Bilds unverändert zu lassen.|  
 |**Füllen**|Um die aktive Farbauswahl mit dem Bild zu verschmelzen, wählen Sie einfach den Bereich aus, der gefüllt werden soll.<br /><br /> Um das Bild mit der aktiven Farbauswahl (einschließlich des Werts des Alphakanals) zu überschreiben, halten Sie die UMSCHALTTASTE gedrückt, und wählen Sie dann den zu füllenden Bereich aus.|  
@@ -151,7 +152,7 @@ In diesem Dokument wird beschrieben, wie Sie den [!INCLUDE[vsprvs](../code-quali
   
  In der folgenden Tabelle werden die Bildeigenschaften beschrieben.  
   
-|Eigenschaft|Beschreibung|  
+|Eigenschaft|description|  
 |--------------|-----------------|  
 |Breite|Die Breite des Bilds.|  
 |Höhe|Die Höhe des Bilds.|  
@@ -198,7 +199,7 @@ In diesem Dokument wird beschrieben, wie Sie den [!INCLUDE[vsprvs](../code-quali
   
  Im Folgenden sind die gültigen Kombinationen der Zusatztasten aufgeführt:  
   
-|Ctrl|Shift|Alt|Beschreibung|  
+|Ctrl|Shift|Alt|description|  
 |----------|-----------|---------|-----------------|  
 ||||Ändert die Größe des Inhalts des ausgewählten Bereichs.|  
 ||Shift||Ändert proportional die Größe des Inhalts des ausgewählten Bereichs.|  
@@ -269,7 +270,7 @@ In diesem Dokument wird beschrieben, wie Sie den [!INCLUDE[vsprvs](../code-quali
   
 ## <a name="related-topics"></a>Verwandte Themen  
   
-|Titel|Beschreibung|  
+|Titel|description|  
 |-----------|-----------------|  
 |[Working with 3-D Assets for Games and Apps (Arbeiten mit 3D-Objekten für Spiele und Apps)](../designers/working-with-3-d-assets-for-games-and-apps.md)|Bietet eine Übersicht über die Werkzeuge, die Sie in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] verwenden können, um mit Grafikressourcen wie Texturen und Bildern, 3D-Modellen und Shadereffekten zu arbeiten.|  
 |[Modell-Editor](../designers/model-editor.md)|Beschreibt, wie der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Modell-Editor für die Arbeit mit 3D-Modellen verwendet wird.|  

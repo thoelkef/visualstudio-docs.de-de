@@ -13,11 +13,12 @@ caps.latest.revision: "22"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e93d1f3e49384097cdadf6623dae2415fe63cd18
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7a5994739df03752521b60ac4f415323c6bc4a8f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-starter-kits"></a>Gewusst wie: Erstellen von Starter Kits
 Ein Starter Kit enthält Code für eine vollständige Anwendung und Dokumentation darüber, wie die Anwendung geändert oder erweitert wird. Das Erstellen eines Starter Kits erfolgt fast genauso wie das Erstellen einer normalen Projektvorlage. Der einzige Unterschied besteht darin, dass ein Starter Kit Dokumentationsdateien enthält, die geöffnet werden, wenn ein Projekt basierend auf dem Starter Kit erstellt wird.  
