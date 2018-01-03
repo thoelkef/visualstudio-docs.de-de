@@ -40,11 +40,12 @@ caps.latest.revision: "31"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a2b925e32711e1624a4dfbe74fb5614ee6e0b062
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 72081f6c140c4634918e67098493cb37bb324848
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="finding-and-replacing-text"></a>Finding and Replacing Text
 Die Funktion zum Suchen und Ersetzen von Text lässt sich im Visual Studio Code-Editor und bestimmten textbasierten Ausgabefenstern verwenden, z.B. dem Fenster **Suchergebnisse**. Rufen Sie sie über das Steuerelement **Suchen und Ersetzen** oder über **Suchen/Ersetzen in Dateien** auf. Sie können das Suchen und Ersetzen auch in einigen Designerfenstern, wie dem XAML-Designer, dem Windows Forms-Designer und den Toolfenstern, durchführen.  

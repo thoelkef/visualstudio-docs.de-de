@@ -12,11 +12,12 @@ caps.latest.revision: "8"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c92f7975e3fe45e4f87e67f2c3c54a26a7d8b87a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: bf96f1cdbdf8e3f995d8a1020a655b73d369cf7d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="working-with-shaders"></a>Arbeiten mit Shaders
 Sie können den diagrammbasierten Shader-Designer in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] verwenden, um benutzerdefinierte Shadereffekte zu entwerfen. Diese Shader finden in Ihren DirectX-basierten Spielen oder Apps Verwendung.  
@@ -35,7 +36,7 @@ Sie können den diagrammbasierten Shader-Designer in [!INCLUDE[vsprvs](../code-q
   
 ## <a name="related-topics"></a>Verwandte Themen  
   
-|Titel|Beschreibung|  
+|Titel|description|  
 |-----------|-----------------|  
 |[Shader-Designer](../designers/shader-designer.md)|Beschreibt die Verwendung des [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Shader-Designers zur Arbeit mit Shadern.|  
 |[Shader-Designer-Knoten](../designers/shader-designer-nodes.md)|Beschreibt die Arten von Shader-Designer-Knoten, die Sie verwenden können, um die Grafikeffekte zu erzielen.|  

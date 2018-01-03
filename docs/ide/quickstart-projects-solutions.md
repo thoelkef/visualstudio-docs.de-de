@@ -56,7 +56,7 @@ Fügen Sie nun der Projektmappe Ihr erstes Projekt hinzu. Beginnen Sie mit einem
 
    Das Dialogfeld **Neues Projekt hinzufügen** wird geöffnet.
 
-1. Erweitern Sie im linken Bereich **Visual C#**, und wählen Sie **Klassischer Windows-Desktop** aus. Wählen Sie anschließend im mittleren Bereich **Leeres Projekt (.NET Framework)** aus. Weisen Sie dem Projekt den Namen „QuickDate“ zu, und klicken Sie anchließend auf **OK**.
+1. Erweitern Sie im linken Bereich **Visual C#**, und wählen Sie **Klassischer Windows-Desktop** aus. Wählen Sie anschließend im mittleren Bereich **Leeres Projekt (.NET Framework)** aus. Weisen Sie dem Projekt den Namen „QuickDate“ zu, und klicken Sie anschließend auf **OK**.
 
    Unter der Projektmappe wird im **Projektmappen-Explorer** ein Projekt mit dem Namen „QuickDate“ angezeigt. Zu diesem Zeitpunkt enthält das Projekt nur eine Datei mit dem Namen **App.config**.
 
@@ -69,7 +69,7 @@ Fügen Sie nun der Projektmappe Ihr erstes Projekt hinzu. Beginnen Sie mit einem
 
 Sie haben nun ein leeres Projekt erstellt, dem Sie jetzt eine Codedatei hinzufügen können.
 
-1. Wählen Sie im Kontextmenü (Rechtsklick) von **QuickSolution** im **Projektmappen-Explorer** **Hinzufügen** > **Neues Element...** aus.
+1. Wählen Sie im Kontextmenü (Rechtsklick) von **QuickDate** im **Projektmappen-Explorer** **Hinzufügen** > **Neues Element...** aus.
 
    Das Dialogfeld **Neues Element hinzufügen** wird angezeigt.
 
@@ -165,7 +165,7 @@ Jetzt soll das neue Komponententestprojekt verwendet werden, um die Methode im P
 
 Die Zeile in der C#-Codedatei mit dem <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute>-Attribut verweist auf den Assemblynamen des **QuickTest**-Projekts. Der Assemblyname stimmt nicht immer mit dem Projektnamen überein. Öffnen Sie die Projekteigenschaften, um den Assemblynamen eines Projekts zu suchen.
 
-1. Wählen Sie im **Projektmappen-Explorer** das **QuickTest**-Projekt aus. Wählen Sie im Kkontextmenü (Rechtsklick) **Eigenschaften** aus, oder drücken Sie **ALT**+**EINGABETASTE**.
+1. Wählen Sie im **Projektmappen-Explorer** das **QuickTest**-Projekt aus. Wählen Sie im Kontextmenü (Rechtsklick) **Eigenschaften** aus, oder drücken Sie **ALT**+**EINGABETASTE**.
 
    Die Eigenschaftenseiten für das Projekt werden in der Registerkarte **Anwendung** geöffnet. Beachten Sie, dass der Assemblyname des **QuickTest**-Projekts tatsächlich „QuickTest“ lautet. Falls gewünscht können Sie ihn an dieser Stelle ändern. Wenn Sie das Testprojekt erstellen, ändert sich der Name der entstandenen ausführbaren Datei von **QuickTest.exe** zu einem von Ihnen ausgewählten Namen.
 

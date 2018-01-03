@@ -19,11 +19,12 @@ caps.latest.revision: "8"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9ec355d4798da9a5134396801d744623fffc2da2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ef7469677a9d6eb01514b9117ed4c303ae5346de
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="understanding-build-platforms"></a>Grundlagen zu Buildplattformen
 Sie können verschiedene Versionen von Projektmappen- und Projekteigenschaften speichern, die für verschiedene Zielplattformen gelten. Beispielsweise können Sie eine Debug-Konfiguration für eine x86-Zielplattform und eine Debug-Konfiguration für eine x64-Zielplattform erstellen. Sie können die aktive Plattform schnell wechseln, sodass Sie problemlos mehrere Konfigurationen erstellen können.  

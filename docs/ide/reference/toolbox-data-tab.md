@@ -16,11 +16,12 @@ caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 01dc6663c9242c1a919b47fb242343332cbc9a63
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d622f1b4a71f52103d1d7a3148291dcd2dcf9129
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="toolbox-data-tab"></a>Toolbox, Daten (Registerkarte )
 Zeigt Datenobjekte an, die Sie zu Formularen und Komponenten hinzufügen können. Die Registerkarte **Daten** unter **Toolbox** wird geöffnet, wenn Sie ein Projekt erstellen, mit dem ein Designer verknüpft ist. Die **Toolbox** wird standardmäßig in der integrierten Entwicklungsumgebung von Visual Studio angezeigt. Wenn Sie die **Toolbox** einblenden möchten, klicken Sie im Menü **Ansicht** auf **Toolbox**.  
@@ -31,7 +32,7 @@ Zeigt Datenobjekte an, die Sie zu Formularen und Komponenten hinzufügen können
 ## <a name="ui-element-list"></a>Liste der Elemente der Benutzeroberfläche  
  Um direkt zur .NET Framework-Referenzseite einer Komponente zu wechseln, drücken Sie **F1**, wenn das Element in der **Toolbox** hervorgehoben ist, oder klicken Sie auf das Element in der Komponentenleiste des Designers.  
   
-|Name|Beschreibung|  
+|name|description|  
 |----------|-----------------|  
 |<xref:System.Data.DataSet>|Dem Formular bzw. der Komponente wird eine Instanz eines typisierten oder nicht typisierten DataSets hinzugefügt. Wenn Sie dieses Objekt auf einen Designer ziehen, wird ein Dialogfeld angezeigt, in dem Sie eine vorhandene Klasse für ein typisiertes DataSet auswählen oder angeben können, in der Sie ein neues, leeres, nicht typisiertes DataSet erstellen möchten. **Hinweis:** Das <xref:System.Data.DataSet>-Objekt in der **Toolbox** wird nicht zum Erstellen eines Schemas und einer Klasse für ein neues typisiertes DataSet verwendet. Weitere Informationen finden Sie unter [Erstellen und Konfigurieren von Datasets in Visual Studio](../../data-tools/create-and-configure-datasets-in-visual-studio.md).|  
 |<xref:System.Windows.Forms.DataGridView>|Bietet ein leistungsstarkes und flexibles Instrument zum Anzeigen von Daten in Tabellenform.|  

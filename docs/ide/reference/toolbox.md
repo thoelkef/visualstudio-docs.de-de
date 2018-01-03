@@ -19,11 +19,12 @@ caps.latest.revision: "34"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4e345b573544839aea7601e334545e4ba410d6b7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: dee9f1379dd7cd4c1d134714a35fc91d74f9f128
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="toolbox"></a>Werkzeugkasten
 Die **Toolbox** zeigt Symbole für Steuerelemente und andere Elemente an, die Sie [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]-Projekten hinzufügen können. Zum Öffnen der **Toolbox** klicken Sie im Menü **Ansicht** auf **Toolbox**. Sie können die **Toolbox** andocken und so festlegen, dass sie entweder geöffnet angeheftet oder **Automatisch ausblenden** bleibt.  
@@ -33,7 +34,7 @@ Die **Toolbox** zeigt Symbole für Steuerelemente und andere Elemente an, die Si
  In der **Toolbox** werden nur Elemente angezeigt, die sich für den Dateityp eignen, in dem Sie arbeiten. Sie können eine Suche in der Toolbox durchführen, um die Elemente, die angezeigt werden, zu filtern. Wenn das Projekt ein Steuerelement erfordert, das vom Client Profile nicht unterstützt wird, können Sie durch Bearbeiten der Projekteigenschaften für das Projekt festlegen, dass das gesamte Framework als Ziel festgelegt wird.  
   
 > [!NOTE]
->  Auf Ihrem Computer werden möglicherweise andere Namen oder Speicherorte für die Benutzeroberflächenelemente von Visual Studio angezeigt als die in den folgenden Anweisungen aufgeführten. Diese Elemente sind von der jeweiligen Visual Studio-Version und den verwendeten Einstellungen abhängig. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../../ide/personalizing-the-visual-studio-ide.md).  
+>  Auf Ihrem Computer werden möglicherweise andere Namen oder Speicherorte für die Benutzeroberflächenelemente von Visual Studio angezeigt als die in den folgenden Anweisungen aufgeführten. Diese Elemente sind von der jeweiligen Visual Studio-Version und den verwendeten Einstellungen abhängig. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../../ide/personalizing-the-visual-studio-ide.md).  
   
 ## <a name="help-on-toolbox-tabs"></a>Hilfe zu Toolboxregisterkarten  
  Die folgenden Dokumente enthalten weitere Informationen zu bestimmten **Toolbox**-Registerkarten.  

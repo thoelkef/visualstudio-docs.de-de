@@ -15,11 +15,12 @@ caps.latest.revision: "9"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3378a554a9e576bde011a70916c48597218bb512
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: 09141b10ab9ee39568176fa7252a503bdaa747dd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="logical-and-advanced-operators-in-search-expressions"></a>Logische und erweiterte Operatoren in Suchausdrücken
 Sie können Ihre Suche im Hilfe-Inhalt in Help Viewer mit logischen Operatoren und erweiterte Suchoperatoren optimieren.
@@ -27,7 +28,7 @@ Sie können Ihre Suche im Hilfe-Inhalt in Help Viewer mit logischen Operatoren u
 ## <a name="logical-operators"></a>Logische Operatoren
 Mit logischen Operatoren können Sie angeben, wie viele Suchausdrücke in einer Suchabfrage kombiniert werden sollen. In der folgenden Tabelle werden die logischen Operatoren AND, OR, NOT und NEAR veranschaulicht.
   
-|Suchen nach|Verwendung|Beispiel|Ergebnis|  
+|Suchen nach|Mit|Beispiel|Ergebnis|  
 |-------------------|---------|-------------|------------|  
 |Beide Begriffe im gleichen Artikel|UND|dib UND palette|Themen, die sowohl „Dib“ als auch „Palette“ enthalten.|  
 |Einer der Begriffe in einem Artikel|ODER|Raster ODER Vektor|Themen, die entweder „Raster“ oder „Vektor“ enthalten.|  
@@ -40,7 +41,7 @@ Mit logischen Operatoren können Sie angeben, wie viele Suchausdrücke in einer 
 ## <a name="advanced-operators"></a>Erweiterte Operatoren
 Mit erweiterten Suchoperatoren können Sie Ihre Suche nach Inhalt optimieren, indem Sie festlegen, in welchem Bereich des Artikels nach dem Suchbegriff gesucht werden soll. In der folgenden Tabelle werden die vier verfügbaren erweiterten Suchoperatoren veranschaulicht.
 
-|Suchen nach|Verwendung|Beispiel|Ergebnis|  
+|Suchen nach|Mit|Beispiel|Ergebnis|  
 |-------------------|---------|-------------|------------|  
 |Ein Begriff im Titel des Artikels|title:|title:binaryreader|Themen, die „Binaryreader“ im Titel enthalten.|  
 |Eine Benennung in einem Codebeispiel|code:|code:readdouble|Themen, die „readdouble“ in einem Codebeispiel enthalten.|  

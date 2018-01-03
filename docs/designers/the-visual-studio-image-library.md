@@ -20,11 +20,12 @@ caps.latest.revision: "29"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: fe926dffa1230c5608d84e732740509a7c7e1a4a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7b57de7b2cbc0838920df5f83d6d1e2bd8d733f2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="the-visual-studio-image-library"></a>Visual Studio Bildbibliothek
 Die Visual Studio-Bildbibliothek enthält Anwendungsbilder, die in Microsoft Visual Studio, in Microsoft Windows, im Office-System und in anderer Microsoft-Software angezeigt werden. Mit dieser Sammlung von mehr als 1.000 Bildern können Sie Anwendungen erstellen, die der Microsoft-Software visuell nachempfunden sind.  

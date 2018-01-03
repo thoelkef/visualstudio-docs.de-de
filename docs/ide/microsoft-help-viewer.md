@@ -22,11 +22,12 @@ caps.latest.revision: "25"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d770c1b7d05117243643680898348b71cf0a978d
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: 9902ca6ff157713573eb2f8ccc806bb9f2a0dfc0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="microsoft-help-viewer"></a>Microsoft Help Viewer
 Sie können Inhalte aus verschiedenen Produkten und Technologien mithilfe von Microsoft Help Viewer auf Ihrem lokalen Computer installieren und anzeigen, z.B. Visual Studio, .NET Framework, die Sprachreferenz, SQL Server und die Windows-Entwicklung. Help Viewer bietet Ihnen folgende Möglichkeiten:  
@@ -48,7 +49,7 @@ Sie können Informationen im installierten Inhalt suchen, indem Sie die Navigati
 
 ### <a name="navigation-tabs"></a>Registerkarten für die Navigation
 
-|Registerkarte|Beschreibung|
+|Registerkarte|description|
 |---|-----------|
 |Inhalt|Zeigt die installierten Inhalte hierarchisch an (Inhaltsverzeichnis). Sie können Kriterien festlegen, anhand derer Sie die angezeigten Titel filtern können.|
 |Index|Zeigt eine alphabetische Liste der indizierten Begriffe an. Sie können den Index durchsuchen, Kriterien zum Filtern der Einträge angeben und festlegen, dass Indexeinträge entweder eine bestimmte Textzeichenfolge enthalten oder mit dieser beginnen.|
@@ -65,7 +66,7 @@ In der Inhaltsliste wird angezeigt, welche Bücher Sie installieren können bzw.
 
 **Hinweis:** Die Funktionalität der Registerkarte **Inhalt verwalten** unterscheidet sich möglicherweise, wenn der Help Viewer-Administrator diese Funktionen deaktiviert oder kein Internetzugang verfügbar ist.
 
-### <a name="toolbar-buttons"></a>Schaltflächen auf der Symbolleiste
+### <a name="toolbar-buttons"></a>Schaltflächen der Symbolleiste
 Die Symbolleiste im Help Viewer-Fenster umfasst die folgenden Schaltflächen:  
 
 -   Die Schaltfläche **Thema in Inhalten anzeigen** zeigt den Speicherort des Themas auf der Registerkarte **Inhalt** an.  

@@ -16,11 +16,12 @@ caps.latest.revision: "35"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4df81a0d5f6faee7a272abd13ca6e046681b045d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c076fe18318a9110babdf17d74898f35466d710c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="configuring-warnings-in-visual-basic"></a>Konfigurieren von Warnungen in Visual Basic
 Der [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]-Compiler enthält eine Reihe von Warnungen zu Code, der möglicherweise Laufzeitfehler verursacht. Mithilfe dieser Informationen können Sie saubereren, schnelleren und besseren Code mit weniger Fehlern schreiben. So gibt der Compiler z.B. eine Warnung aus, wenn der Benutzer versucht, einen Member einer nicht zugewiesenen Objektvariablen aufzurufen, eine Funktion ohne Angabe eines Rückgabewerts zu beenden oder einen `Try`-Block auszuführen, der Programmfehler im Code für das Abfangen von Ausnahmen enthält.  
@@ -52,7 +53,7 @@ Der [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]-Compiler enthält 
 ## <a name="examples"></a>Beispiele  
  In dieser Tabelle mit Beispielen für Befehlszeilenargumente wird die Bedeutung der einzelnen Argumente beschrieben.  
   
-|Argument|Beschreibung|  
+|Argument|description|  
 |--------------|-----------------|  
 |`vbc /warnaserror`|Gibt an, dass alle Warnungen als Fehler behandelt werden sollen.|  
 |`vbc /warnaserror:42024`|Gibt an, dass die Warnung 42024 als Fehler behandelt werden soll.|  

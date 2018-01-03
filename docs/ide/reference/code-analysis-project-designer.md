@@ -16,11 +16,12 @@ caps.latest.revision: "9"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3f993e47ea748d8caf90aee0a2ee99cbf78dbede
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8e1fc85dbd4fa5f4a8fe757b279826a81705dfd0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="code-analysis-project-designer"></a>Codeanalyse, Projekt-Designer
 Enthält das Codeanalysetool, das Sie für Ihren Code verwenden können. Das Tool erstellt Berichte zu Informationen zu Ihren Assemblys, wie z.B. Verstöße gegen die Programmier- und Entwurfsregeln, die in den Microsoft .NET Framework-Entwurfsrichtlinien festgelegt sind.  

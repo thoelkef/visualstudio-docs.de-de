@@ -19,11 +19,12 @@ caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ea90dba4090565143c84d510b5e4f9e998cfb5fc
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: 0e6c9df2254108b778eb1478311ddaa386f70d74
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="finding-topics-by-using-the-help-viewer-index"></a>Suchen von Themen mithilfe des Help Viewer-Indexes
 Der Index enthält eine Liste mit Stichwörtern, die Themen in den installierten Inhalten zugeordnet sind. Jedem Thema ist möglicherweise mehr als ein Stichwort zugeordnet, und jedem Stichwort können mehrere Themen zugeordnet sein. Nutzen Sie diesen Index genau so, wie Sie den Index eines Buchs verwenden würden.  
@@ -42,7 +43,7 @@ Führen Sie auf der Registerkarte **Index** eine der folgenden Aufgaben aus:
   
     Wenn das angegebene Stichwort nur einem Thema zugeordnet ist, wird dies angezeigt. Andernfalls wird eine Liste aller Themen angezeigt, die dem betreffenden Stichwort zugeordnet sind.
 
-## <a name="index-search-tips"></a>Indexsuchtipps  
+## <a name="index-search-tips"></a>Inhaltsverzeichnissuchtipps  
 Das Verwenden des Indexes ist unkompliziert. Allerdings kann das Beherrschen der bestmöglichen Eingabe von Schlüsselwörtern Ihre Indexsuche effektiver machen.  
   
 ### <a name="general-guidelines"></a>Allgemeine Richtlinien  
@@ -73,9 +74,9 @@ Wenn Sie keinen Eintrag zu dem von Ihnen eingegebenen Wort oder Satz finden, ver
   
 -   Geben Sie ein Synonym des Worts oder Verbs ein, das Sie suchen.  
   
-    Wenn Sie beispielsweise den Begriff „erstellen“ eingegeben haben, versuchen Sie es stattdessen mit „anlegen“. 
+    Wenn Sie beispielsweise den Begriff „Erstellung“ eingegeben haben, versuchen Sie es stattdessen mit „erstellen“. 
   
 ## <a name="see-also"></a>Siehe auch
-[Gewusst wie: Suchen vom Themen im Inhaltsverzeichnis](../ide/how-to-find-topics-in-the-table-of-contents.md)  
-[Gewusst wie: Suchen nach Themen](../ide/how-to-search-for-topics.md)  
+[Vorgehensweise: Suchen nach Themen im Inhaltsverzeichnis](../ide/how-to-find-topics-in-the-table-of-contents.md)  
+[Vorgehensweise: Suchen nach Themen](../ide/how-to-search-for-topics.md)  
 [Microsoft Help Viewer](../ide/microsoft-help-viewer.md)

@@ -24,11 +24,12 @@ caps.latest.revision: "33"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a22ac991b88dd62c91a9bf08f5397fe80e4ae37d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f06722f4a6192323d92ce6828b25bc57666de8bc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="devenv-command-line-switches"></a>Devenv-Befehlszeilenschalter
 Mit Devenv können Sie von der Befehlszeile aus verschiedene Optionen für die integrierte Entwicklungsumgebung (IDE) festlegen sowie Projekte erstellen, debuggen und bereitstellen. Verwenden Sie diese Schalter, um die IDE von einem Skript oder einer BAT-Datei aus auszuführen, z. B. einem über Nacht ausgeführten Buildskript, oder um die IDE in einer bestimmten Konfiguration zu starten.  
@@ -68,7 +69,7 @@ Mit Devenv können Sie von der Befehlszeile aus verschiedene Optionen für die i
 ## <a name="devenv-switches"></a>Devenv-Schalter  
  Verwenden Sie die folgenden Befehlszeilenschalter, um die IDE anzuzeigen und die beschriebene Aufgabe auszuführen.  
   
-|Befehlszeilenschalter|Beschreibung|  
+|Befehlszeilenschalter|description|  
 |-------------------------|-----------------|  
 |[/Command (devenv.exe)](../../ide/reference/command-devenv-exe.md)|Startet die IDE und führt den angegebenen Befehl aus.|  
 |[/DebugExe (devenv.exe)](../../ide/reference/debugexe-devenv-exe.md)|Lädt eine ausführbare [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]-Datei unter der Kontrolle des Debuggers. Dieser Schalter ist für ausführbare [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]- oder [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]-Dateien nicht verfügbar. Weitere Informationen finden Sie unter [Prozess im Debugger automatisch starten](../../debugger/debug-multiple-processes.md#BKMK_Automatically_start_an_process_in_the_debugger).|  
@@ -85,7 +86,7 @@ Mit Devenv können Sie von der Befehlszeile aus verschiedene Optionen für die i
   
  Verwenden Sie die folgenden Befehlszeilenschalter, um die beschriebene Aufgabe auszuführen. Durch diese Befehlszeilenschalter wird die IDE nicht angezeigt.  
   
-|Befehlszeilenschalter|Beschreibung|  
+|Befehlszeilenschalter|description|  
 |-------------------------|-----------------|  
 |[/? (devenv.exe)](../../ide/reference/q-devenv-exe.md)|Zeigt Hilfe für devenv-Schalter im **Eingabeaufforderungsfenster** an.<br /><br /> **Devenv /?**|  
 |[/Build (devenv.exe)](../../ide/reference/build-devenv-exe.md)|Erstellt die angegebene Projektmappe oder das angegebene Projekt entsprechend der Konfiguration der angegebenen Projektmappe.<br /><br /> **Devenv myproj.csproj /build**|  

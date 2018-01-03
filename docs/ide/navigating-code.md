@@ -21,11 +21,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0c4c7613cca7f9dec7c2db7ceffef1cc542cfa61
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7b81517d8d8e0cc6dd1386525f7a2129ed18851c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="navigating-code"></a>Navigieren im Code  
 Der Editor von Visual Studio bietet zahlreiche Möglichkeiten, im Code zu navigieren. In diesem Artikel werden die verschiedenen Möglichkeiten, wie Sie in Ihrem Code navigieren können, zusammengefasst. Außerdem enthält er Links zu weiteren Abschnitten, die die Einzelthemen noch detaillierter behandeln.  

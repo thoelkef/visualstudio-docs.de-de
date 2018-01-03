@@ -12,11 +12,12 @@ caps.latest.revision: "8"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a910c3f43dc0cb49e6b7f6f70355c6c195df7a82
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 372a1efccbfa211167930710418905d95411760c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="working-with-3-d-models"></a>Arbeiten mit 3D-Modellen
 Mit dem Modell-Editor in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] können Sie 3D-Modelle erstellen. Diese Modelle finden in Ihren DirectX-basierten Spielen oder Apps Verwendung.  
@@ -30,7 +31,7 @@ Mit dem Modell-Editor in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md
   
 ## <a name="related-topics"></a>Verwandte Themen  
   
-|Titel|Beschreibung|  
+|Titel|description|  
 |-----------|-----------------|  
 |[Modell-Editor](../designers/model-editor.md)|In diesem Artikel wird beschrieben, wie sich der Modell-Editor für die Arbeit mit 3D-Modellen einsetzen lässt|  
 |[Beispiele für den Modell-Editor](../designers/model-editor-examples.md)|Enthält Links zu Themen, in denen erklärt wird, wie häufige Vorgänge bei 3D-Modellerstellung mit dem Modell-Editor ausgeführt werden können|

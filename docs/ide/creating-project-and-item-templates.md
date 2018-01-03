@@ -21,11 +21,12 @@ caps.latest.revision: "9"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7d95781c2c5c4370e09c13b382016b015ec1a0d5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 43b45f70e8ac7a6eeadfd3fb216b53540ec9a8b8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-project-and-item-templates"></a>Erstellen von Projekt- und Elementvorlagen
 Projekt- und Elementvorlagen in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] bieten wiederverwendbare Stubs, die Benutzen grundlegenden Code sowie eine grundlegende Struktur vermitteln, die sie beide zu ihren eigenen Zwecken verwenden können.  

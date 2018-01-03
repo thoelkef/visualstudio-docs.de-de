@@ -12,18 +12,19 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1ba611fe5582b65e314046b80fb15751a0152b85
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 5c2583014552cffacaa3e2f9760fd61ead0af605
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="xelement-class-dynamic-properties"></a>Dynamische Eigenschaften der XElement-Klasse
 In diesem Abschnitt werden die dynamischen Eigenschaften der <xref:System.Xml.Linq.XElement?displayProperty=fullName>-Klasse beschrieben.  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
   
-|Thema|Beschreibung|  
+|Thema|description|  
 |-----------|-----------------|  
 |[Attribut](../designers/attribute-xelement-dynamic-property.md)|Sucht nach einem Indexer, der zum Abrufen des Attributs verwendet wird, das einem angegebenen erweiterten Namen entspricht.|  
 |[Element](../designers/element-xelement-dynamic-property.md)|Sucht nach einem Indexer, der zum Abrufen des untergeordneten Elements verwendet wird, das einem angegebenen erweiterten Namen entspricht.|  

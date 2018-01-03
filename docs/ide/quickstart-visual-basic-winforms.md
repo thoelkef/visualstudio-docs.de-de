@@ -95,5 +95,5 @@ Da nun ein Schaltflächen-Steuerelement hinzugefügt wurde, kann jetzt auch ein 
 Damit haben Sie den Schnellstart erfolgreich abgeschlossen. Wir hoffen, dass Sie etwas über Visual Basic und die Visual Studio-IDE gelernt haben. Wenn Sie mehr über diese Themen erfahren möchten, können Sie gerne mit einem Tutorial fortfahren, das Sie im Inhaltsverzeichnis im Abschnitt **Tutorials** finden.  
 
 ## <a name="see-also"></a>Siehe auch   
-* [Quickstart: Create a console app in Visual Studio with Visual Basic (Schnellstart: Erstellen einer Konsolen-App in Visual Studio mit Visual Basic)](quickstart-visual-basic-console.md)
+* [Quickstart: Create a console app in Visual Studio with Visual Basic (Schnellstart: Erstellen einer Konsolen-App in Visual Studio mit Visual Basic)](quickstart-visual-basic-console.md) https://docs.microsoft.com/dotnet/core/tutorials/vb-with-visual-studio
 * [Erfahren Sie mehr über Visual Basic IntelliSense](visual-basic-specific-intellisense.md)  

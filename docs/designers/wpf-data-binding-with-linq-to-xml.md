@@ -12,18 +12,19 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: dddfcf34fcdd06ce63d2d7ec9e661991d880a988
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 3c0d2d3c94def9f0c3dfe9b0bb2083e70bfa871f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="wpf-data-binding-with-linq-to-xml"></a>WPF-Datenbindung mit LINQ to XML
 In diesem Abschnitt erfahren Sie, wie Sie LINQ to XML als Datenquelle für die Datenbindung in WPF-Anwendungen (Windows Presentation Foundation) verwenden können. Dieses Szenario basiert auf speziellen *dynamischen Eigenschaften* des <xref:System.Xml.Linq.XAttribute?displayProperty=fullName> und des <xref:System.Xml.Linq.XElement?displayProperty=fullName>. Diese dynamischen Eigenschaften werden ebenfalls in diesem Abschnitt erläutert.  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
   
-|Thema|Beschreibung|  
+|Thema|description|  
 |-----------|-----------------|  
 |[Übersicht über WPF-Datenbindung mit LINQ to XML](../designers/wpf-data-binding-with-linq-to-xml-overview.md)|Enthält eine Übersicht über die Funktionen zur dynamischen Datenbindung, die vom <xref:System.Xml.Linq>-Namespace bereitgestellt werden, und erläutert, wie diese Funktionen als Datenquelle für Benutzeroberflächenkomponenten in WPF-Anwendungen verwendet werden können.|  
 |[Dynamische Eigenschaften in LINQ to XML](../designers/linq-to-xml-dynamic-properties.md)|Enthält Referenzinformationen zu den dynamischen Eigenschaften, die durch die <xref:System.Xml.Linq.XAttribute>-Klasse und die <xref:System.Xml.Linq.XElement>-Klasse verfügbar gemacht werden.|  

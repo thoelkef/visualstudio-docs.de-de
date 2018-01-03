@@ -1,57 +1,8 @@
 ---
-title: Entwerfen und Anzeigen von Klassen und Typen | Microsoft-Dokumentation
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: vs.classdesigner.diagram
-helpviewer_keywords:
-- Class Designer [Visual Studio]
-- Class Designer, about Class Designer
-- types [Visual Studio], viewing
-- classes [Visual Studio], viewing
-- class designer
-ms.assetid: 40ed2c9d-0ce0-4b95-ad78-5dec2065ccea
-caps.latest.revision: "10"
-author: gewarren
-ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 0354b32a4289dceec58db1fe27bc50ddd44068c4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+redirect_url: /visualstudio/ide/class-designer/designing-and-viewing-classes-and-types
+ms.openlocfilehash: f4f7fe796478e4a41b25b38de8ec3925ef359c50
+ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/15/2017
 ---
-# <a name="designing-and-viewing-classes-and-types"></a>Entwerfen und Anzeigen von Klassen und Typen
-Design, Visualisierung und Umgestaltung von Klassen und anderen Typen in Ihrem Code mit dem Klassen-Designer in Visual Studio. Verwenden Sie Klassendiagramme zum Erstellen und Berarbeiten von Klassen in Ihrem Visual C# .NET, Visual Basic .NET oder C++-Projekt, um Ihre Projektstruktur besser zu verstehen oder den Code umzustrukturieren.  
-  
- Hier finden Sie mehr über die Möglichkeiten mit Klassendiagrammen:  
-  
--   **Entwerfen**: Bearbeiten Sie den Code Ihres Projekts, indem Sie das Klassendiagramm bearbeiten. Neue Elemente hinzufügen und unerwünschte Elemente löschen. Die Änderungen werden im Code wiedergegeben.  
-  
--   **Visualisieren**: Erhalten Sie Einblick in die Struktur des Projekts, indem Sie sich die Klassen in Ihrem Projekt in einem Diagramm ansehen. Passen Sie Ihr Diagramm so an, dass Sie sich auf die Projektdetails konzentrieren können, die Sie am meisten interessieren. Speichern Sie das Diagramm später zu Demonstrations- oder Dokumentationszwecken.  
-  
--   **Umgestalten**: Überschreiben Sie Methoden, benennen Sie Bezeichner um, gestalten Sie Parameter um und implementieren Sie Schnittstellen sowie abstrakte Klassen.  
-  
-## <a name="in-this-section"></a>In diesem Abschnitt  
- [Arbeiten mit Klassen und anderen Typen (Klassen-Designer)](../ide/working-with-classes-and-other-types-class-designer.md)  
-  
- [Arbeiten mit Klassendiagrammen (Klassen-Designer)](../ide/working-with-class-diagrams-class-designer.md)  
-  
- [Entwerfen von Klassen und Typen (Klassen-Designer)](../ide/designing-classes-and-types-class-designer.md)  
-  
- [Anzeigen von Typen und Beziehungen (Klassen-Designer)](../ide/viewing-types-and-relationships-class-designer.md)  
-  
- [Refactoring von Klassen und Typen (Klassen-Designer)](../ide/refactoring-classes-and-types-class-designer.md)  
-  
- [Arbeiten mit Visual C++-Code (Klassen-Designer)](../ide/working-with-visual-cpp-code-class-designer.md)  
-  
- [Zusätzliche Informationen zu Klassen-Designer-Fehlern](../ide/additional-information-about-class-designer-errors.md)  
-  
-## <a name="related-sections"></a>Verwandte Abschnitte  
- [Schreiben von Code](../ide/writing-code-in-the-code-and-text-editor.md)  
-  
- [Projektmappenübergreifendes Zuordnen von Abhängigkeiten](../modeling/map-dependencies-across-your-solutions.md)

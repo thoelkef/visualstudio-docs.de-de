@@ -17,11 +17,12 @@ caps.latest.revision: "6"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 081f57f441da17578735317e2d6f8352cd31d30d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: bd752aca6bc52393da14da58c805d303c57673d4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="list-modules-command"></a>Befehl "Module auflisten"
 Listet die Module für den aktuellen Prozess auf.  
@@ -36,28 +37,28 @@ Debug.ListModules [/Address:yes|no] [/Name:yes|no] [/Order:yes|no]
   
 #### <a name="parameters"></a>Parameter  
  /Address:`yes|no`  
- Dies ist optional. Gibt an, ob die Speicheradressen der Module angezeigt werden sollen. Der Standardwert lautet `yes`.  
+ Dies ist optional. Gibt an, ob die Speicheradressen der Module angezeigt werden sollen. Der Standardwert ist `yes`sein.  
   
  /Name:`yes|no`  
- Dies ist optional. Gibt an, ob die Namen der Module angezeigt werden sollen. Der Standardwert lautet `yes`.  
+ Dies ist optional. Gibt an, ob die Namen der Module angezeigt werden sollen. Der Standardwert ist `yes`sein.  
   
  /Order:`yes|no`  
- Dies ist optional. Gibt an, ob die Reihenfolge der Module angezeigt werden soll. Der Standardwert lautet `no`.  
+ Dies ist optional. Gibt an, ob die Reihenfolge der Module angezeigt werden soll. Der Standardwert ist `no`sein.  
   
  /Path:`yes|no`  
- Dies ist optional. Gibt an, ob die Pfade zu den Modulen angezeigt werden sollen. Der Standardwert lautet `yes`.  
+ Dies ist optional. Gibt an, ob die Pfade zu den Modulen angezeigt werden sollen. Der Standardwert ist `yes`sein.  
   
  /Process:`yes|no`  
- Dies ist optional. Gibt an, ob die Prozesse der Module angezeigt werden sollen. Der Standardwert lautet `no`.  
+ Dies ist optional. Gibt an, ob die Prozesse der Module angezeigt werden sollen. Der Standardwert ist `no`sein.  
   
  /SymbolFile:`yes|no`  
- Dies ist optional. Gibt an, ob die Symboldateien der Module angezeigt werden sollen. Der Standardwert lautet `no`.  
+ Dies ist optional. Gibt an, ob die Symboldateien der Module angezeigt werden sollen. Der Standardwert ist `no`sein.  
   
  /SymbolStatus:`yes|no`  
- Dies ist optional. Gibt an, ob die Symbolstatus der Module angezeigt werden sollen. Der Standardwert lautet `yes`.  
+ Dies ist optional. Gibt an, ob die Symbolstatus der Module angezeigt werden sollen. Der Standardwert ist `yes`sein.  
   
  /Timestamp:`yes|no`  
- Dies ist optional. Gibt an, ob der Zeitstempel der Module angezeigt werden soll. Der Standardwert lautet `no`.  
+ Dies ist optional. Gibt an, ob der Zeitstempel der Module angezeigt werden soll. Der Standardwert ist `no`sein.  
   
  /Version:`yes|no`  
  Dies ist optional. Gibt an, ob die Versionen der Module angezeigt werden sollen. Der Standardwert ist `no`sein.  

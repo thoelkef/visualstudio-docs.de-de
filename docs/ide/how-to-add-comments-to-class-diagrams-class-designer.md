@@ -1,42 +1,8 @@
 ---
-title: "Vorgehensweise: Hinzufügen von Kommentaren zu Klassendiagrammen (Klassen-Designer) | Microsoft-Dokumentation"
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: vs.classdesigner.comment
-helpviewer_keywords:
-- annotations, class diagrams
-- class diagrams, adding comment shapes
-- comment shapes
-ms.assetid: d54005d5-a29d-4c4e-b153-feb6e84dd44f
-caps.latest.revision: "11"
-author: gewarren
-ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: a73092907a5cb08e2624deb4af368194701889ee
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+redirect_url: /visualstudio/ide/class-designer/how-to-add-comments-to-class-diagrams
+ms.openlocfilehash: 0cfa14c26abc6b964fedbe950c3764961d6b472e
+ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/15/2017
 ---
-# <a name="how-to-add-comments-to-class-diagrams-class-designer"></a>Gewusst wie: Hinzufügen von Kommentaren zu Klassendiagrammen (Klassen-Designer)
-Sie können Kommentarformen zum Hinzufügen von Anmerkungen für Klassendiagramme verwenden. Eine Kommentarform verfügt über eine Eigenschaft, **Text**, in die Sie Text eingeben können. Kommentarformen existieren nur auf der Diagrammoberfläche und nicht im Code.  
-  
- Ein Kommentar befindet sich in der Diagrammansicht der Klasse im **Klassen-Designer**; wenn Sie ein zweites Klassendiagramm im selben Projekt öffnen, sind Kommentare, die Sie in der ersten Ansicht erstellt haben, nicht sichtbar. Wenn Sie ein Diagramm löschen, werden auch alle in diesem Diagramm enthaltenen Kommentare gelöscht.  
-  
- Sie können die Größe einer Kommentarform ändern, jedoch nicht andere Aspekte der Darstellung wie Hintergrundfarbe, Schriftart und -größe.  
-  
-### <a name="to-add-a-comment"></a>So fügen Sie ein Kommentar hinzu  
-  
-1.  Ziehen Sie ein Kommentar aus der **Klassen-Designer-Toolbox** in das Klassendiagramm.  
-  
-2.  Klicken Sie in die neue Kommentarform im Diagramm, und geben Sie den gewünschten Text ein.  
-  
-## <a name="see-also"></a>Siehe auch  
- [Arbeiten mit Klassendiagrammen (Klassen-Designer)](../ide/working-with-class-diagrams-class-designer.md)   
- [Arbeiten mit Klassendiagrammen (Klassen-Designer)](../ide/working-with-class-diagrams-class-designer.md)   
- [Gewusst wie: Anpassen von Klassendiagrammen (Klassen-Designer)](../ide/how-to-customize-class-diagrams-class-designer.md)

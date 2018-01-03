@@ -12,11 +12,12 @@ caps.latest.revision: "6"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ec4ec1c06d6c64a344e9e39d01c850b901534af8
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: e93a3ca0c6cf7446b4b943c2e6a19018f1a16c7d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-search-for-topics"></a>Vorgehensweise: Suchen nach Themen
 Mit der Volltextsuche können Sie alle Themen suchen, die ein bestimmtes Wort enthalten. Sie haben außerdem die Möglichkeit, die Suche mithilfe von Platzhalterausdrücken, logischen Operatoren und erweiterten Suchoperatoren einzugrenzen und anzupassen.  
@@ -43,7 +44,7 @@ Sie können zielgerichtetere Suchen durchführen, die nur die für Sie interessa
 ### <a name="general-guidelines"></a>Allgemeine Richtlinien  
 Die folgende Tabelle enthält einige einfache Regeln und Richtlinien für das Entwickeln von Suchabfragen in der Hilfe.  
   
-|Syntax|Beschreibung|  
+|Syntax|description|  
 |------------|-----------------|  
 |Groß-/Kleinschreibung|Groß-/Kleinschreibung wird bei Suchvorgängen nicht beachtet. Entwickeln Sie Ihre Suchkriterien mit Groß-oder Kleinbuchstaben. Beispielsweise werden für „OLE“ und „ole“ die gleichen Ergebnisse zurückgegeben.|  
 |Zeichenkombinationen|Sie können nicht nur nach einzelnen Buchstaben (a–z) oder Ziffern (0–9) suchen. Wenn Sie versuchen, nach bestimmten reservierten Wörtern wie „und“, „von“ und „mit“ zu suchen, werden diese ignoriert. Weitere Informationen finden Sie unter [Bei der Suche ignorierte Wörter (Stoppwörter)](#stopwords) weiter unten in diesem Thema.|  

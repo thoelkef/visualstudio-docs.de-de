@@ -16,11 +16,12 @@ caps.latest.revision: "8"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 92c0e5ea85e4a758258219a5ee489fa7ec9309f0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 99197e9aa5937273b8ea21847cb6aad797464a04
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="go-to-line"></a>Gehe zu Zeile
 Mit diesem Dialogfeld können Sie im aktiven Dokument zu einer bestimmten Zeile wechseln. Um auf dieses Dialogfeld zuzugreifen, öffnen Sie ein Dokument zum Bearbeiten, und klicken Sie dann im Menü **Bearbeiten** auf **Gehe zu**.  

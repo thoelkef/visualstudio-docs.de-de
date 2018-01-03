@@ -11,11 +11,12 @@ caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 14e3d3432a62d54564c92a12a02204ffb5e05889
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.workload: multiple
+ms.openlocfilehash: eea8b4bb93d0e848bd085fd534fcaaa553a15e2d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="adding-references-using-nuget-versus-an-extension-sdk"></a>Hinzufügen von Referenzen mithilfe von NuGet im Vergleich zu einer SDK-Erweiterung
 
@@ -31,20 +32,20 @@ Die folgende Tabelle bieten einen Vergleich zwischen den verweisenden Funktionen
 
 |Funktion|SDK-Unterstützung|SDK-Hinweise|NuGet-Unterstützung|NuGet-Hinweise|
 |-------------|-----------------|---------------|-------------------|-----------------|
-|Bei dieser Vorgehensweise wird auf eine Entität verwiesen. Anschließend sind alle Dateien und Funktionen verfügbar.|Y|Sie fügen ein SDK im Dialogfeld **Verweis-Manager** hinzu. Alle Dateien und Funktionen sind während des Entwicklungsworkflows verfügbar.|Y||
+|Bei dieser Vorgehensweise wird auf eine Entität verwiesen. Anschließend sind alle Dateien und Funktionen verfügbar.|J|Sie fügen ein SDK im Dialogfeld **Verweis-Manager** hinzu. Alle Dateien und Funktionen sind während des Entwicklungsworkflows verfügbar.|J||
 |MSBuild verwendet automatisch Assemblys und Windows-Metadaten-Dateien (.winmd).|J|Verweise im SDK werden automatisch an den Compiler übergeben.|J||
-|MSBuild verwendet automatisch die H- oder LIB-Dateien.|Y|Die *SDKName*.props-Datei teilt Visual Studio mit, wie das Visual C++-Verzeichnis usw. für automatischen H- oder LIB-Dateiverbrauch eingerichtet wird.|N||
-|MSBuild verwendet automatisch JS- oder CSS-Dateien.|Y|Im **Projektmappen-Explorer** können Sie den JavaScript-SDK-Verweisknoten aufklappen, um einzelne JS- oder CSS-Dateien anzuzeigen, und anschließend `<source include/>`-Tags generieren, indem Sie diese Dateien zu den Quelldateien ziehen. Das SDK unterstützt F5 und die automatische Paketeinrichtung.|Y||
-|MSBuild fügt der **Toolbox** automatisch das Steuerelement hinzu.|Y|Die **Toolbox** kann SDKs nutzen und Steuerelemente in den von Ihnen angegebenen Registerkarten anzeigen.|N||
+|MSBuild verwendet automatisch die H- oder LIB-Dateien.|J|Die *SDKName*.props-Datei teilt Visual Studio mit, wie das Visual C++-Verzeichnis usw. für automatischen H- oder LIB-Dateiverbrauch eingerichtet wird.|N||
+|MSBuild verwendet automatisch JS- oder CSS-Dateien.|J|Im **Projektmappen-Explorer** können Sie den JavaScript-SDK-Verweisknoten aufklappen, um einzelne JS- oder CSS-Dateien anzuzeigen, und anschließend `<source include/>`-Tags generieren, indem Sie diese Dateien zu den Quelldateien ziehen. Das SDK unterstützt F5 und die automatische Paketeinrichtung.|J||
+|MSBuild fügt der **Toolbox** automatisch das Steuerelement hinzu.|J|Die **Toolbox** kann SDKs nutzen und Steuerelemente in den von Ihnen angegebenen Registerkarten anzeigen.|N||
 |Die Vorgehensweise unterstützt das Visual Studio-Installationsprogramm für Erweiterungen (VSIX).|J|VSIX verfügt über ein spezielles Manifest und eine Logik zum Erstellen von SDK-Paketen.|J|Das VSIX-Programm kann in ein anderes Setupprogramm eingebettet werden.|
 |Der **Objektkatalog** listet Verweise auf.|Y|Der **Objektkatalog** erhält die Liste der Verweise in SDKs automatisch und listet sie auf.|N||
-|Dateien und Links werden dem Dialogfeld **Verweis-Manager** automatisch hinzugefügt (Hilfelinks usw. werden automatisch aufgefüllt).|Y|Das Dialogfeld **Verweis-Manager** listet SDKs zusammen mit Hilfelinks und der Liste von SDK-Abhängigkeiten automatisch auf.|N|NuGet stellt ein eigenes Dialogfeld **NuGet-Pakete verwalten** bereit.|
+|Dateien und Links werden dem Dialogfeld **Verweis-Manager** automatisch hinzugefügt (Hilfelinks usw. werden automatisch aufgefüllt).|J|Das Dialogfeld **Verweis-Manager** listet SDKs zusammen mit Hilfelinks und der Liste von SDK-Abhängigkeiten automatisch auf.|N|NuGet stellt ein eigenes Dialogfeld **NuGet-Pakete verwalten** bereit.|
 |Der Mechanismus unterstützt mehrere Architekturen.|J|SDKs können mit mehreren Konfigurationen ausgeliefert werden. MSBuild verwendet die entsprechenden Dateien für jede Projektkonfiguration.|N||
 |Der Mechanismus unterstützt mehrere Konfigurationen.|J|SDKs können mit mehreren Konfigurationen ausgeliefert werden. Abhängig von der Projektarchitektur verwendet MSBuild die entsprechenden Dateien für jede Projektarchitektur.|N||
 |Mit dem Mechanismus kann angegeben werden, dass Dateien „nicht kopiert“ werden sollen.|J|Je nachdem, ob Dateien im Verzeichnis \redist oder \designtime abgelegt werden, können Sie steuern, welche Dateien in das Paket der Anwendung, die die Dateien nutzt, kopiert werden sollen.|N|Sie deklarieren, welche Dateien im das Paketmanifest kopiert werden sollen.|
 |Der Inhalt wird in lokalisierten Dateien angezeigt.|J|Lokalisierte XML-Dokumenten werden automatisch in die SDKs integriert, um die Entwurfszeitumgebung zu verbessern.|N||
 |MSBuild unterstützt den gleichzeitigen Verbrauch mehrerer Versionen eines SDKs.|J|Das SDK unterstützt den gleichzeitigen Verbrauch mehrerer Versionen.|N|Dies ist keine Verweiserstellung. Ihr Projekt darf jeweils nicht mehr als eine Version von NuGet-Dateien enthalten.|
-|Der Mechanismus unterstützt die Angabe der anwendbaren Zielframeworks, der Visual Studio-Versionen und der Projekttypen.|Y|Das Dialogfeld **Verweis-Manager** und die **Toolbox** zeigen nur die SDKs an, die für ein Projekt gelten, sodass Benutzer die entsprechenden SDKs leichter auswählen können.|Y (partiell)|Pivot ist das Zielframework. Es erfolgt kein Filtern auf der Benutzeroberfläche. Bei der Installation kann ein Fehler zurückgegeben werden.|
+|Der Mechanismus unterstützt die Angabe der anwendbaren Zielframeworks, der Visual Studio-Versionen und der Projekttypen.|J|Das Dialogfeld **Verweis-Manager** und die **Toolbox** zeigen nur die SDKs an, die für ein Projekt gelten, sodass Benutzer die entsprechenden SDKs leichter auswählen können.|Y (partiell)|Pivot ist das Zielframework. Es erfolgt kein Filtern auf der Benutzeroberfläche. Bei der Installation kann ein Fehler zurückgegeben werden.|
 |Der Mechanismus unterstützt das Festlegen von Registrierungsinformationen für systemeigene WinMDs.|J|Sie können die Korrelation zwischen der WINMD-Datei und der DLL-Datei in SDKManifest.xml angeben.|N||
 |Der Mechanismus unterstützt das Festlegen von Abhängigkeiten von anderen SDKs.|J|Das SDK benachrichtigt den Benutzer nur. Der Benutzer muss die Installation und die Verweiserstellung nach wie vor manuell vornehmen.|J|NuGet überträgt die Daten automatisch. Der Benutzer wird nicht benachrichtigt.|
 |Der Mechanismus ist in [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)]-Konzepten wie Anwendungsmanifest und Framework ID integriert.|J|Das SDK muss Konzepte übergeben, die für [!INCLUDE[win8_appstore_short](../ide/includes/win8_appstore_short_md.md)] spezifisch sind, damit das Verpacken und die F5-Funktion mit SDKs, die im [!INCLUDE[win8_appstore_short](../ide/includes/win8_appstore_short_md.md)] verfügbar sind, ordnungsgemäß funktionieren.|N||
