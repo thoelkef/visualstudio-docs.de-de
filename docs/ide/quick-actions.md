@@ -1,7 +1,7 @@
 ---
 title: Schnelle Aktionen | Microsoft-Dokumentation
 ms.custom: 
-ms.date: 05/08/2017
+ms.date: 11/30/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-general
@@ -13,11 +13,11 @@ manager: ghogen
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 22a6c84608f8955e3a751af4ee2b9fb113645590
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: e9196f3e4bc76e53d50bc480b8e0860186fe778e
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="quick-actions"></a>Schnelle Aktionen
 
@@ -41,7 +41,8 @@ Klicken Sie entweder auf den Pfeil nach unten oder auf den Link zum Anzeigen von
 
 ## <a name="common-quick-actions"></a>Häufige schnelle Aktionen
 
-Dies sind einige der am häufigsten vorkommenden schnellen Aktionen, die sowohl für C#- als auch für Visual Basic-Code gültig sind.
+Dies sind einige der am häufigsten vorkommenden schnellen Aktionen, die sowohl für C#- als auch für Visual Basic-Code gültig sind:
+
 - [Actions that fix errors (Aktionen, die Fehler beheben)](#fix)
 - [Actions that remove unnecessary code (Aktionen, die unnötigen Code entfernen)](#remove)
 - [Actions that add missing code (Aktionen, die fehlenden Code hinzufügen)](#add)
@@ -49,12 +50,13 @@ Dies sind einige der am häufigsten vorkommenden schnellen Aktionen, die sowohl 
 
 ### <a id="fix"></a> Aktionen, die Fehler beheben
 
-#### <a name="correct-misspelled-type"></a>Korrigieren eines falsch geschriebener Typs
+#### <a name="correct-misspelled-symbol-or-keyword"></a>Richtige falsch geschriebenes Symbol oder Schlüsselwort
+
 |  Fehler-ID | Anzuwendende Sprachen |  Unterstützte Version |
 | ------- | -------------------- | ----------------  |
 | CS0103, BC30002 | C# und Visual Basic | Visual Studio 2015 Update 2 |
 
-Wenn Sie aus Versehen einen Typ in Visual Studio falsch schreiben, korrigiert diese schnelle Aktion den Fehler für Sie automatisch.  Sie sehen diese Elemente im Glühbirnenmenü als **„Ändern des‚*Falsch geschriebenen Typ*‘ in ‚*korrekten Typ*‘**.  Zum Beispiel:
+Wenn Sie aus Versehen einen Typ oder ein Schlüsselwort in Visual Studio falsch schreiben, korrigiert diese schnelle Aktion den Fehler für Sie automatisch. Sie sehen diese Elemente im Fehlerbehebungsmenü als **„Ändern des ‚*Falsch geschriebenes Wort*‘ in ‚*Richtiges Wort*‘“**.  Zum Beispiel:
 
 ```csharp
 // Before
@@ -83,6 +85,7 @@ End Function
 ```
 
 #### <a name="resolve-git-merge-conflict"></a>Lösen von Git-Mergekonflikten
+
 |  Fehler-ID | Anzuwendende Sprachen |  Unterstützte Version |
 | ------- | -------------------- | ----------------  |
 | CS8300, BC37284  | C# und Visual Basic | Visual Studio 2017 Version 15.3 |
@@ -90,7 +93,7 @@ End Function
 Diese schnellen Aktionen ermöglichen das Auflösen von Mergekonflikten durch das „Vornehmen einer Änderung“, wodurch der in Konflikt stehende Code und die Marker entfernt werden.  
 
 ```csharp
-// Before     
+// Before
 private void MyMethod()
 {
 <<<<<<< HEAD
@@ -108,7 +111,7 @@ private void MyMethod()
 
 // Take changes from 'HEAD'
 
-// After 
+// After
 private void MyMethod()
 {
     if (true)
@@ -119,11 +122,12 @@ private void MyMethod()
 ```
 
 #### <a name="make-method-synchronous"></a>Methode als synchron deklarieren
+
 |  Fehler-ID | Anzuwendende Sprachen |  Unterstützte Version |
 | ------- | -------------------- | ----------------  |
 | CS1998, BC42356 | C# und Visual Basic | Visual Studio 2015 Update 2 |
 
-Wenn Sie das Schlüsselwort `async`/`Async` für eine Methode verwenden, wird erwartet, dass das Schlüsselwort `await`/`Await` auch irgendwo innerhalb der Methode verwendet wird.  Sollte dies nicht der Fall sein, erscheint eine schnelle Aktion, die es Ihnen ermöglicht, die Methode als synchron zu deklarieren, indem Sie das Schlüsselwort `async`/`Async` entfernen und den Rückgabetyp anpassen.  Verwenden Sie die Option **Make Method Synchronous** (Methode als synchron deklarieren) aus dem Menü für schnelle Aktionen.
+Wenn Sie das Schlüsselwort `async` oder `Async` für eine Methode verwenden, wird erwartet, dass das Schlüsselwort `await` oder `Await` auch an irgendeiner Stelle innerhalb der Methode verwendet wird.  Sollte dies nicht der Fall sein, erscheint eine schnelle Aktion, die es Ihnen ermöglicht, die Methode als synchron zu deklarieren, indem Sie das Schlüsselwort `async` oder `Async` entfernen und den Rückgabetyp ändern. Verwenden Sie die Option **Make Method Synchronous** (Methode als synchron deklarieren) aus dem Menü für schnelle Aktionen.
 
 ```csharp
 // Before
@@ -156,11 +160,12 @@ End Function
 ```
 
 #### <a name="make-method-asynchronous"></a>Methode als asynchron deklarieren
+
 |  Fehler-ID | Anzuwendende Sprachen |  Unterstützte Version |
 | ------- | -------------------- | ----------------  |
 | CS4032, BC37057 | C# und Visual Basic | Visual Studio 2017 |
 
-Wenn Sie das Schlüsselwort `await`/`Await` innerhalb einer Methode verwenden, wird erwartet, dass die Methode selbst mit dem Schlüsselwort `async`/`Async` gekennzeichnet ist.  Sollte dies allerdings nicht der Fall sein, erscheint eine schnelle Aktion, die es Ihnen ermöglicht, die Methode als asynchron zu deklarieren.  Verwenden Sie die Option **Make method/Function asynchronous** (Methode/Funktion als asynchron deklarieren) aus dem Menü für schnelle Aktionen.
+Wenn Sie das Schlüsselwort `await` oder `Await` innerhalb einer Methode verwenden, wird erwartet, dass die Methode selbst mit dem Schlüsselwort `async` oder `Async` gekennzeichnet ist.  Sollte dies allerdings nicht der Fall sein, erscheint eine schnelle Aktion, die es Ihnen ermöglicht, die Methode als asynchron zu deklarieren. Verwenden Sie die Option **Make method/Function asynchronous** (Methode/Funktion als asynchron deklarieren) aus dem Menü für schnelle Aktionen.
 
 ```csharp
 // Before
@@ -203,6 +208,7 @@ End Function
 Die schnelle Aktion **Remove Unnecessary Usings/Imports** (Nicht benötigtes Usings/Imports entfernen) entfernt jede nicht benötigte `using`- und `Import`-Anweisung aus der aktuellen Datei.  Wenn Sie dieses Element auswählen, werden nicht benötigte import-Anweisungen des Namespaces umgehend entfernt.
 
 #### <a name="remove-unnecessary-cast"></a>Nicht benötigte Umwandlung entfernen
+
 |  Diagnose-ID | Anzuwendende Sprachen |  Unterstützte Version |
 | ------- | -------------------- | ----------------  |
 | IDE0004 | C# und Visual Basic | Visual Studio 2015 RTW |
@@ -218,6 +224,7 @@ int number = (int)3;
 // after
 int number = 3;
 ```
+
 ```vb
 ' Before
 Dim number as Integer = CType(3, Integer)
@@ -229,6 +236,7 @@ Dim number as Integer = 3
 ```
 
 #### <a name="remove-unused-variables"></a>Entfernen nicht verwendeter Variablen
+
 |  Diagnose-ID | Anzuwendende Sprachen |  Unterstützte Version |
 | ------- | -------------------- | ----------------  |
 | CS0219, BC42024 | C# und Visual Basic | Visual Studio 2017 Version 15.3 |
@@ -255,13 +263,14 @@ public MyMethod()
 ```
 
 #### <a name="remove-type-from-default-value-expression"></a>Entfernen des Typs aus dem **default**-Wertausdruck
+
 |  Diagnose-ID | Anzuwendende Sprachen |  Unterstützte Version |
 | ------- | -------------------- | ----------------  |
 | IDE0034 | C# 7.1+ | Visual Studio 2017 Version 15.3 |
 
 Diese schnelle Aktion entfernt den Werttyp aus einem default-Wertausdruck und verwendet das [-`default`Literal](/dotnet/csharp/programming-guide/statements-expressions-operators/default-value-expressions#default-literal-and-type-inference), wenn der Compiler den Typ des Ausdrucks ableiten kann.
 
-```csharp 
+```csharp
 // Before
 void DoWork(CancellationToken cancellationToken = default(CancellationToken)) { ... }
 
@@ -275,14 +284,15 @@ void DoWork(CancellationToken cancellationToken = default) { ... }
 ### <a id="add"></a> Aktionen, die fehlenden Code hinzufügen
 
 #### <a name="add-usingsimports-for-types-in-reference-assemblies-nuget-packages-or-other-types-in-your-solution"></a>Usings/Imports für Typen in Verweisassemblys, NuGet-Paketen oder anderen Typen in Ihrer Projektmappe hinzufügen
+
 |  Diagnose-ID | Anzuwendende Sprachen |  Unterstützte Version |
 | ------- | -------------------- | ----------------  |
 | CS0103, BC30451 | C# und Visual Basic| Visual Studio 2015 Update 2 |
 
-Using-Typen in anderen Projekten in Ihrer Projektmappe zeigen die schnelle Aktion automatisch an; allerdings müssen alle anderen auf der Registerkarte **Tools > Options > C#** (Tools > Optionen > C#) oder **Basic > Advanced** (Basic > Erweitert) aktiviert werden:  
+Using-Typen in anderen Projekten in Ihrer Projektmappe zeigen die schnelle Aktion automatisch an; allerdings müssen alle anderen auf der Registerkarte **Tools > Options > C#** (Tools > Optionen > C#) oder **Basic > Advanced** (Basic > Erweitert) aktiviert werden:
 
-* Usings/Imports für Typen in Verweisassemblys vorschlagen
-* Usings/Imports für Typen in NuGet-Paketen vorschlagen
+- Usings/Imports für Typen in Verweisassemblys vorschlagen
+- Usings/Imports für Typen in NuGet-Paketen vorschlagen
 
 Wenn dies aktiviert ist, wird die using/import-Anweisung erstellt, wenn Sie einen Typ in einem Namespace verwenden, der zu diesem Zeitpunkt nicht importiert ist, aber in einer Verweisassembly oder einem NuGet-Paket vorhanden ist.
 
@@ -311,11 +321,14 @@ Debug.WriteLine("Hello")
 ```
 
 #### <a name="add-missing-casesdefault-caseboth"></a>Fügen Sie fehlende Fälle/einen Standardfall/beides hinzu
+
 |  Diagnose-ID | Anzuwendende Sprachen |  Unterstützte Version |
 | ------- | -------------------- | ----------------  |
 | IDE0010 | C# und Visual Basic| Visual Studio 2017 Version 15.3 |
 
-Wenn Sie eine `switch`-Anweisung in C# oder eine `Select Case`-Anweisung in Visual Basic erstellen, können Sie mit einer Codeaktion automatisch fehlende Fallelemente, eine Standardfallanweisung oder beides hinzufügen.  Für eine leere Anweisung, wie die folgende:
+Wenn Sie eine `switch`-Anweisung in C# oder eine `Select Case`-Anweisung in Visual Basic erstellen, können Sie mit einer Codeaktion automatisch fehlende Fallelemente, eine Standardfallanweisung oder beides hinzufügen.
+
+Betrachten Sie die folgende Enumeration und die leere Anweisung `switch` oder `Select Case`:
 
 ```csharp
 enum MyEnum
@@ -349,7 +362,7 @@ Select Case myEnum
 End Select
 ```
 
-Durch die schnelle Aktion **Add Both** (Beides hinzufügen) für das Ausfüllen sowohl fehlender Fälle und als auch eines Standardfalls wird Folgendes erstellt:
+Mithilfe der schnellen Aktion **Beide hinzufügen** werden fehlende Fälle ausgefüllt, und ein Standardfall wird hinzugefügt:
 
 ```csharp
 switch(myEnum)
@@ -364,6 +377,7 @@ switch(myEnum)
         break;
 }
 ```
+
 ```vb
 Select Case myEnum
     Case MyEnum.Item1
@@ -376,6 +390,7 @@ End Select
 ```
 
 #### <a name="add-null-checks-for-parameters"></a>Hinzufügen von Überprüfungen auf NULL für Parameter
+
 | Anzuwendende Sprachen |  Unterstützte Version |
 | -------------------- | ----------------  |
 | C# und Visual Basic| Visual Studio 2017 Version 15.3 |
@@ -409,6 +424,7 @@ class MyClass
 ```
 
 #### <a name="add-argument-name"></a>Hinzufügen des Argumentnamens
+
 | Anzuwendende Sprachen |  Unterstützte Version |
 | -------------------- | ----------------  |
 | C# und Visual Basic| Visual Studio 2017 Version 15.3 |
@@ -424,6 +440,7 @@ var date = new DateTime(year: 1997, month: 7, day: 8);
 ```
 
 #### <a name="add-braces"></a>Hinzufügen von geschweiften Klammern
+
 |  Diagnose-ID | Anzuwendende Sprachen |  Unterstützte Version |
 | ------- | -------------------- | ----------------  |
 | IDE0011 | C# | Visual Studio 2017 RTW |
@@ -438,13 +455,14 @@ if (true)
 // Add braces
 
 // After
-if (true) 
+if (true)
 {
     return "hello,world";
 }
 ```
 
 #### <a name="add-and-order-modifiers"></a>Hinzufügen und Sortieren von Modifizierern
+
 |  Diagnose-ID | Anzuwendende Sprachen |  Unterstützte Version |
 | ------- | -------------------- | ----------------  |
 | IDE0036 | C# und Visual Basic| Visual Studio 2017 Version 15.5 |
@@ -467,6 +485,7 @@ internal enum Color
     Red, White, Blue
 }
 ```
+
 ```csharp
 // Before
 static private int thisFieldIsPublic;
@@ -475,12 +494,12 @@ static private int thisFieldIsPublic;
 
 // After
 private static int thisFieldIsPublic;
-
 ```
 
 ### <a id="transform"></a> Codetransformationen
 
 #### <a name="convert-if-construct-to-switch"></a>Konvertieren von **if**-Konstrukt in **switch**
+
 | Anzuwendende Sprachen |  Unterstützte Version |
 | -------------------- | ----------------  |
 | C# und Visual Basic| Visual Studio 2017 Version 15.3 |
@@ -535,6 +554,7 @@ End Select
 ```
 
 #### <a name="convert-to-interpolated-string"></a>Konvertieren in eine interpolierte Zeichenfolge
+
 | Anzuwendende Sprachen |  Unterstützte Version |
 | -------------------- | ----------------  |
 | C# 6.0+ und Visual Basic 14+ | Visual Studio 2017 RTW |
@@ -552,6 +572,7 @@ string s = string.Format("My string with {0} in the middle", num);
 int num = 3;
 string s = $"My string with {num} in the middle";
 ```
+
 ```vb
 ' Before
 Dim num as Integer = 3
@@ -565,6 +586,7 @@ Dim s As String = $"My string with {num} in the middle"
 ```
 
 #### <a name="use-object-initializers"></a>Verwenden des Objektinitialisierers
+
 | Diagnose-ID | Anzuwendende Sprachen | Unterstützte Version |
 | ------- | -------------------- | ----------------  |
 | IDE0017 | C# und Visual Basic | Visual Studio 2017 RTW |
@@ -581,6 +603,7 @@ c.Age = 21;
 // After
 var c = new Customer() { Age = 21 };
 ```
+
 ```vb
 ' Before
 Dim c = New Customer()
@@ -593,6 +616,7 @@ Dim c = New Customer() With {.Age = 21}
 ```
 
 #### <a name="use-collection-initializers"></a>Verwenden des Auflistungsinitialisierers
+
 | Diagnose-ID | Anzuwendende Sprachen | Unterstützte Version |
 | ------- | -------------------- | ----------------  |
 | IDE0028 | C# und Visual Basic | Visual Studio 2017 RTW |
@@ -611,6 +635,7 @@ list.Add(3);
 // After
 var list = new List<int> { 1, 2, 3 };
 ```
+
 ```vb
 ' Before
 Dim list = New List(Of Integer)
@@ -623,9 +648,10 @@ list.Add(3)
 ' After
 Dim list = New List(Of Integer) From {1, 2, 3}
 
-```  
+```
 
 #### <a name="convert-auto-property-to-full-property"></a>Konvertieren der Auto-Eigenschaft in eine vollständige Eigenschaft
+
 |  Anzuwendende Sprachen |  Unterstützte Version |
 |  -------------------- | ----------------  |
 | C# und Visual Basic | Visual Studio 2017 Version 15.5 |
@@ -642,9 +668,10 @@ private int MyProperty { get; set; }
 private int MyProperty
 {
     get { return _myProperty; }
-    set { _myProperty = value; } 
+    set { _myProperty = value; }
 }
 ```
+
 ```vb
 ' Before
 Public Property Name As String
@@ -662,10 +689,10 @@ Public Property Name As String
         _Name = Value
     End Set
 End Property
-
 ```
 
 #### <a name="convert-block-body-to-expression-bodied-member"></a>Konvertieren des Blocktexts in Ausdruckskörpermembers
+
 |  Diagnose-ID | Anzuwendende Sprachen |  Unterstützte Version |
 | ------- | -------------------- | ----------------  |
 | IDE0021-27 | C# 6.0 und höher | Visual Studio 2017 RTW |
@@ -718,13 +745,14 @@ class MyClass4
 ```
 
 #### <a name="convert-anonymous-function-to-local-function"></a>Konvertieren von anonymen Funktionen in lokale Funktionen
+
 |  Diagnose-ID | Anzuwendende Sprachen |  Unterstützte Version |
 | ------- | -------------------- | ----------------  |
 | IDE0039 | C# 7.0 und höher | Visual Studio 2017 Version 15.5 |
 
 Diese schnelle Aktion konvertiert anonyme Funktionen in lokale Funktionen.
 
-```csharp 
+```csharp
 // Before
 Func<int, int> fibonacci = null;
 fibonacci = (int n) =>
@@ -739,10 +767,10 @@ int fibonacci(int n)
 {
     return n <= 1 ? 1 : fibonacci(n-1) + fibonacci(n-2);
 }
-
 ```
 
 #### <a name="convert-referenceequals-to-is-null"></a>Konvertieren von `ReferenceEquals` in `is null`
+
 |  Diagnose-ID | Anzuwendende Sprachen |  Unterstützte Version |
 | ------- | -------------------- | ----------------  |
 | IDE0041 | C# 7.0 und höher | Visual Studio 2017 Version 15.5 |
@@ -768,6 +796,7 @@ if (value is null)
 ```
 
 #### <a name="introduce-pattern-matching"></a>Einführen des Musterabgleichs
+
 | Diagnose-ID | Anzuwendende Sprachen | Unterstützte Version |
 | ------- | -------------------- | ----------------  |
 | IDE0020 | C# 7.0 und höher | Visual Studio 2017 RTW |
@@ -777,25 +806,26 @@ Diese schnelle Aktion schlägt die Verwendung des [Musterabgleichs](/dotnet/csha
 
 ```csharp
 // Before
-if (o is int) 
+if (o is int)
 {
-    var i = (int)o; 
-    ... 
+    var i = (int)o;
+    ...
 }
 
 // Use pattern matching
 
 // After
-if (o is int i) 
+if (o is int i)
 {
     ...
 }
 
 ```
+
 ```csharp
 // Before
 var s = o as string;
-if (s != null) 
+if (s != null)
 {
     ...
 }
@@ -803,13 +833,14 @@ if (s != null)
 // Use pattern matching
 
 // After
-if (o is string s) 
+if (o is string s)
 {
     ...
 }
 ```
 
 #### <a name="change-base-for-numeric-literals"></a>Ändern der Basis für numerische Literale
+
 | Anzuwendende Sprachen | Unterstützte Version |
 | ------- | -------------------- | ----------------  |
 | C# 7.0 und höher und Visual Basic 14 und höher | Visual Studio 2017 Version 15.3 |
@@ -825,6 +856,7 @@ int countdown = 2097152;
 // After
 int countdown = 0x200000;
 ```
+
 ```vb
 ' Before
 Dim countdown As Integer = 2097152
@@ -836,11 +868,12 @@ Dim countdown As Integer = &H200000
 ```
 
 #### <a name="insert-digit-separators-into-literals"></a>Einfügen von Zifferntrennzeichen in Literale
+
 | Anzuwendende Sprachen | Unterstützte Version |
 | ------- | -------------------- | ----------------  |
 | C# 7.0 und höher und Visual Basic 14 und höher | Visual Studio 2017 Version 15.3 |
 
-Mithilfe dieser schnellen Aktion können Sie Zifferntrennzeichen in Literale einfügen.  
+Mithilfe dieser schnellen Aktion können Sie Zifferntrennzeichen in Literale einfügen.
 
 ```csharp
 // Before
@@ -851,6 +884,7 @@ int countdown = 1000000;
 // After
 int countdown = 1_000_000;
 ```
+
 ```vb
 ' Before
 Dim countdown As Integer = 1000000
@@ -862,6 +896,7 @@ Dim countdown As Integer = 1_000_000
 ```
 
 #### <a name="use-explicit-tuple-names"></a>Verwenden expliziter Tupelnamen
+
 | Diagnose-ID | Anzuwendende Sprachen | Unterstützte Version |
 | ------- | -------------------- | ----------------  |
 | IDE0033 | C# 7.0 und höher und Visual Basic 15 und höher | Visual Studio 2017 RTW |
@@ -879,6 +914,7 @@ var name = customer.Item1;
 (string name, int age) customer = GetCustomer();
 var name = customer.name;
 ```
+
 ```vb
 ' Before
 Dim customer As (name As String, age As Integer) = GetCustomer()
@@ -892,6 +928,7 @@ Dim name = customer.name
 ```
 
 #### <a name="use-inferred-names"></a>Verwenden von abgeleiteten Namen
+
 | Diagnose-ID | Anzuwendende Sprachen | Unterstützte Version |
 | ------- | -------------------- | ----------------  |
 | IDE0037 | C# | Visual Studio 2017 V. 15.5 |
@@ -899,7 +936,7 @@ Dim name = customer.name
 
 Diese schnellen Aktionen weisen darauf hin, wenn der Benutzer abgeleitete Membernamen in anonymen Typen oder die abgeleiteten Tupelelementnamen von C# 7.1 verwenden kann.
 
-```csharp 
+```csharp
 // Before
 var anon = new { age = age, name = name };
 
@@ -908,6 +945,7 @@ var anon = new { age = age, name = name };
 // After
 var anon = new { age, name };
 ```
+
 ```csharp
 // Before
 var tuple = (age: age, name: name);
@@ -916,17 +954,17 @@ var tuple = (age: age, name: name);
 
 // After
 var tuple = (age, name);
-
 ```
 
 #### <a name="deconstruct-tuple-declaration"></a>Dekonstruieren der Tupeldeklaration
+
 | Diagnose-ID | Anzuwendende Sprachen | Unterstützte Version |
 | ------- | -------------------- | ----------------  |
 | IDE0042 | C# 7.0 und höher | Visual Studio 2017 V. 15.5 |
 
 Durch diese schnelle Aktion können Sie Variablendeklarationen von Tupeln dekonstruieren. 
 
-```csharp 
+```csharp
 // Before
 var person = GetPersonTuple();
 Console.WriteLine($"{person.name} {person.age}");
@@ -945,5 +983,6 @@ Console.WriteLine($"{x} {y}");
 ```
 
 ## <a name="see-also"></a>Siehe auch
-* [Codeformate und schnelle Aktionen](code-styles-and-quick-actions.md)  
-* [Schreiben und Refactoring von Code (C++)](/cpp/ide/writing-and-refactoring-code-cpp)
+
+[Codeformate und schnelle Aktionen](code-styles-and-quick-actions.md)  
+[Schreiben und Refactoring von Code (C++)](/cpp/ide/writing-and-refactoring-code-cpp)

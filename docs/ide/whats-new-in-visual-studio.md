@@ -15,11 +15,11 @@ ms.assetid: 7307e180-ba28-4774-8a43-cbb980085a71
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: dc865fe81a51ff3ae2ca497b8982292ffda18372
-ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
+ms.openlocfilehash: a08f5a15cd83af05c91eb35ad2ad4a2c4c229458
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Neuerungen in Visual Studio 2017
 #### <a name="updated-for-the-155-releasehttpswwwvisualstudiocomnewsreleasenotesvs2017-relnotes"></a>In [Release 15.5](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes) aktualisiert
@@ -126,7 +126,7 @@ Als Refactoring wird der Prozess bezeichnet, Ihren Code zu verbessern, nachdem d
 *   Konvertieren von if-to-switch
 *   Nicht verwendete Variablen entfernen
 
-Weitere Informationen finden Sie auf der Seite [Umgestaltung, Codegenerierung und schnelle Aktionen in Visual Studio](refactoring-code-generation-quick-actions.md).  
+Weitere Informationen finden Sie unter [Schnelle Aktionen](../ide/quick-actions.md#common-quick-actions).
 
 #### <a name="interact-with-git"></a>Interaktion mit Git
 Wenn Sie in Visual Studio an einem Projekt arbeiten, können Sie Ihren Code für einen Git-Dienst einrichten, ihn schnell dahin übertragen und dort veröffentlichen. Sie können Ihre Git-Repositorys auch mit Menüklicks auf Schaltflächen in der unteren rechten Ecke der IDE verwalten.

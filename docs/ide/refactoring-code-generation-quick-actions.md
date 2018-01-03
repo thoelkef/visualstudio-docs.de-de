@@ -11,11 +11,11 @@ ms.assetid: fc929a81-b20c-4802-92a7-388fd15aec3c
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1886834f94c18aa7814fe4fab2c780f4884a59a6
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.openlocfilehash: 653d02466e608d8d2c2955da8fec987c50517382
+ms.sourcegitcommit: 1aa9282b1f0bc2795df3264cbd1e331cc44c23f3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/08/2017
 ---
 # <a name="refactoring-code-generation-and-quick-actions-in-visual-studio"></a>Umgestaltung, Codegenerierung und schnelle Aktionen in Visual Studio
 
@@ -29,13 +29,13 @@ Refactoring stellt den Prozess der Codeänderung mit dem Ziel dar, diesen leicht
 
 * [Refactoring (Visual Basic)](../vb-ide/refactoring-vb.md)
 
-* [Schreiben und Umgestalten von Code (C++)](/cpp/ide/writing-and-refactoring-code-cpp)
+* [Schreiben und Refactoring von Code (C++)](/cpp/ide/writing-and-refactoring-code-cpp)
 
-* Refactoring-Support für F# wird in [Visual F# Power Tools](https://marketplace.visualstudio.com/items?itemName=FSharpSoftwareFoundation.VisualFPowerTools) bereitgestellt, eine Visual Studio-Erweiterung von Drittanbietern.
+* Refactoringunterstützung für F# wird in [Visual F# Power Tools](https://marketplace.visualstudio.com/items?itemName=FSharpSoftwareFoundation.VisualFPowerTools)&mdash; bereitgestellt, eine Visual Studio-Erweiterung von Drittanbietern.
 
 ## <a name="code-generation"></a>Codeerzeugung
 
-Visual Studio kann Sie beim Generieren von Teilen des Quellcodes unterstützen, sodass Sie sich auf die eigentliche Arbeit konzentrieren können.  Weitere Informationen finden Sie auf den folgenden Seiten:
+Visual Studio kann Sie beim Generieren von Teilen des Quellcodes unterstützen, sodass Sie sich auf die eigentliche Arbeit konzentrieren können. Weitere Informationen finden Sie auf den folgenden Seiten:
 
 * [Codegenerierung (C#)](../csharp-ide/code-generation-csharp.md)
 
@@ -43,9 +43,10 @@ Visual Studio kann Sie beim Generieren von Teilen des Quellcodes unterstützen, 
 
 ## <a name="quick-actions"></a>Schnelle Aktionen
 
-Mit schnellen Aktionen können Sie ganz leicht Code mit einer einzelnen Aktion umgestalten, generieren oder anderweitig ändern.  Diese können mithilfe des Glühbirnensymbols ![Kleines Glühbirnensymbol](media/vs2015_lightbulbsmall.png "VS2017_KleineGlühbirne") oder durch Drücken von **STRG** + **.** angewendet werden, wenn sich Ihr Cursor in der entsprechenden Codezeile befindet.
+Mit schnellen Aktionen können Sie ganz leicht Code mit einer einzelnen Aktion umgestalten, generieren oder anderweitig ändern. Diese können mithilfe des Glühbirnensymbols ![Kleines Glühbirnensymbol](media/vs2015_lightbulbsmall.png "VS2017_LightBulbSmall") oder durch Drücken der **STRG** + **-TASTE angewendet werden,** wenn sich Ihr Cursor in der entsprechenden Codezeile befindet.
 
 * [Schnelle Aktionen](quick-actions.md)
+
 * [Codeformate und schnelle Aktionen](code-styles-and-quick-actions.md)
 
 ## <a name="see-also"></a>Siehe auch
