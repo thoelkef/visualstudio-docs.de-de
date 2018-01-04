@@ -12,11 +12,12 @@ ms.assetid: 9E0751B3-CE7E-49D4-833E-F1C2709E57C1
 caps.latest.revision: "56"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: bc3574dac776d7cb84dc31a9c6cb4d306409ee5b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: c7372e9ebe8e9ec0e7398c25cd424ef4bf56b8dc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="exploration-bounds"></a>Durchsuchungsbegrenzungen
 
@@ -31,7 +32,7 @@ public partial class FooTest {...}
 
 * **Grenzen der Einschränkungs-Solver**
   * [MaxConstraintSolverTime](#maxconstraintsolvertime): Die Sekundenzahl, die dem [Einschränkungs-Solver](input-generation.md#constraint-solver) zur Verfügung stehen, um die Eingaben zu finden, die dazu führen, dass neue und andere Ausführungspfade befolgt werden
-  * [MaxConstraintSolverMemory](#maxconstraintsolvermemory): Die Größe in Megabyte, die der [verwenden darf](input-generation.md#constraint-solver), um Eingaben zu finden<p />
+  * [MaxConstraintSolverMemory](#maxconstraintsolvermemory): Die Größe in Megabyte, die der [ verwenden darf](input-generation.md#constraint-solver), um Eingaben zu finden<p />
 * **Grenzen des Explorationspfads**
   * [MaxBranches](#maxbranches): Die maximale Anzahl von Verzweigungen, die entlang eines einzelnen Ausführungspfads genommen werden können
   * [MaxCalls](#maxcalls): Die maximale Anzahl von Aufrufen, die während eines einzelnen Ausführungspfads durchgeführt werden können
