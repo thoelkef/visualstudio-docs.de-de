@@ -3,11 +3,11 @@ layout: LandingPage
 title: "Profilerstellung für Ihre Apps mit Visual Studio | Microsoft-Dokumentation"
 description: "Erfahren Sie, wie Sie Visual Studio 2017 für Profilerstellung für die Leistung Ihrer Anwendungen, Dienste und Tools in der Sprache Ihrer Wahl verwenden können."
 ms.technology: vs-ide-debug
-ms.openlocfilehash: e671683cf0ea257bf6170a3c2e41b8d0db503450
-ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
+ms.openlocfilehash: 763740cd5f0f7e6da935dfd92418067f12a204c2
+ms.sourcegitcommit: 8dfdbe6dc01331c811707be2057b65c0b1f67e40
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 12/18/2017
 ---
 # <a name="profiling-in-visual-studio"></a>Profilerstellung in Visual Studio
 
@@ -151,7 +151,7 @@ Profilerstellungs- und Diagnosetools helfen bei der Diagnose von Speicher- und C
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Analysieren des Energieverbrauchs (Store-Apps)</h3>
+                        <h3>Analysieren des Energieverbrauchs (UWP-Apps)</h3>
                     </div>
                 </div>
             </div>
