@@ -12,11 +12,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a38494b21c87e249317b0a55fbdffa95702404cd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 18f527f30afe21678874f3555b539ce9d60bd816
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-custom-code-analysis-rule-sets"></a>Erstellen benutzerdefinierter Codeanalyse-Regelsätze
 Sie können ein Projekt mit verwaltetem Code Codeanalyseregeln zuweisen, durch Angeben eines Regelsatzes, das eine oder mehrere Regeln enthält. Die Microsoft-Standardregelsätze bieten Gruppen von Regeln, die von der Funktion und der Tiefe angeordnet sind. Beispielsweise enthalten die Microsoft grundlegende-Entwurfsrichtlinienregeln und erweiterten Entwurfsrichtlinienregeln der Microsoft Regeln, die auf Fehler bezüglich Verwendbarkeit und wartbarkeit-Probleme mit hinzugefügten Schwerpunkt Benennungsregeln im Regelsatz erweiterte konzentrieren.  

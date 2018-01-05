@@ -12,11 +12,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: d91ff5c65b1d2e43b3e1ee1d1314c252daeeb276
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: 7b18e64c01c8540b3f3188c06eae7286cf5f3647
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="the-connection-property-in-the-application-settings-file-is-missing-or-incorrect"></a>Die Verbindungseigenschaft in der Application Settings-Datei fehlt oder ist fehlerhaft.
 Die Verbindungseigenschaft fehlt in der Datei mit den Anwendungseinstellungen, oder sie ist falsch. Stattdessen wurde die Verbindungszeichenfolge aus der DBML-Datei verwendet.  
@@ -28,5 +29,5 @@ Die Verbindungseigenschaft fehlt in der Datei mit den Anwendungseinstellungen, o
 -   Klicken Sie auf **OK**. Die Verbindungsinformationen, die in der DBML-Datei enthalten sind, werden den Anwendungseinstellungen hinzugefügt.  
   
 ## <a name="see-also"></a>Siehe auch
-[O/R-Designer-Nachrichten](../data-tools/o-r-designer-messages.md)  
+[O/R-Designer-Meldungen](../data-tools/o-r-designer-messages.md)  
 [LINQ to SQL-tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

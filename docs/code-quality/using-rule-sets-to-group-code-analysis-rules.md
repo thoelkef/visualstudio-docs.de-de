@@ -14,11 +14,12 @@ caps.latest.revision: "36"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 44d64b7371f1b27afaa7796dc42d4b7864d20819
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 51b282cb86ca83ecf2ace1e4b12c8444928b15e1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-rule-sets-to-group-code-analysis-rules"></a>Verwenden von Regelsätzen zum Gruppieren von Codeanalyseregeln
 Beim Konfigurieren der Codeanalyse in [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)], [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)], oder [!INCLUDE[vsPro](../code-quality/includes/vspro_md.md)], Sie können auswählen, aus einer Liste von integrierten Microsoft *-Regelsätze*. Ein Regelsatz ist eine logische Gruppierung von Codeanalyseregeln, die gezielte Probleme und bestimmte Bedingungen identifizieren. Beispielsweise können Sie einen Regelsatz, der mit dem Code auf öffentlich verfügbare APIs überprüft anwenden, oder Sie können einen Regelsatz, der nur die empfohlenen Mindestregeln enthält anwenden. Sie können auch einen Regelsatz anwenden, der alle Regeln enthält.  

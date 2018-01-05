@@ -13,11 +13,12 @@ caps.latest.revision: "12"
 ms.author: gewarren
 author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2439b04c921de6e06b98bd1bb5a9fc0af3ea56d1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 48b082f5b00f260d2f8e2519a4551fab23dc1011
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="fxcopcmd-errors"></a>FxCopCmd-Fehler
 Alle schwerwiegenden Fehler berücksichtigt FxCopCmd nicht. Wenn FxCopCmd ausreichende Informationen, um eine partielle Analysen verfügt, führt es aufgetretenen Fehler Analysen und Berichte. Der Fehlercode, der eine 32-Bit-Ganzzahl ist, enthält eine bitweise Kombination von numerischen Werten, die Fehlern entsprechen.  

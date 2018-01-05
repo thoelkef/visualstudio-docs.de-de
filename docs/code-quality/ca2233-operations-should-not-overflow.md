@@ -18,11 +18,12 @@ caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d8b602d83eee4be49f63eef0ee8d2cd3d77f5040
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f5d048476997517a835337b568930367f97c2c92
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca2233-operations-should-not-overflow"></a>CA2233: Vorgänge sollten nicht überlaufen
 |||  
@@ -109,7 +110,7 @@ End Sub
   
 1.  In **Projektmappen-Explorer**mit der rechten Maustaste auf das Projekt, und wählen Sie **Eigenschaften**.  
   
-2.  Wählen Sie die **erstellen** Registerkarte, und klicken Sie auf **erweitert**.  
+2.  Wählen Sie die Registerkarte **Build** aus, und klicken Sie auf **Erweitert**.  
   
 3.  Wählen Sie **arithmetischen Über-/Unterlauf prüfen** , und klicken Sie auf **OK**.  
   

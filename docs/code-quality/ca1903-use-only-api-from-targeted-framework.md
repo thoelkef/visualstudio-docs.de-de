@@ -18,11 +18,12 @@ caps.latest.revision: "8"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7caff553adfd812e671a2d8643b2352d9868ca43
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d20496fae54b0fdf2b0f0d17de0590c325bab0ee
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1903-use-only-api-from-targeted-framework"></a>CA1903: Nur API aus Zielframework verwenden
 |||  
@@ -45,7 +46,7 @@ ms.lasthandoff: 10/31/2017
 |Wenn ist Zielframework|Wird ausgelöst, auf die Verwendungen der Elemente, die in eingeführt|  
 |.NET Framework 2.0|.NET Framework 2.0 SP1, .NET Framework 2.0 SP2|  
 |.NET Framework 3.0|.NET Framework 2.0 SP1, .NET Framework 2.0 SP2, .NET Framework 3.0 SP1, .NET Framework 3.0 SP2|  
-|.NET Framework 3,5|.NET Framework 3.5 SP1|  
+|.NET Framework 3.5|.NET Framework 3.5 SP1|  
 |.NET Framework 4|Nicht zutreffend|  
   
  Um das Zielframework des Projekts ändern möchten, finden Sie unter [für eine bestimmte .NET Framework-Version](../ide/targeting-a-specific-dotnet-framework-version.md).  
@@ -68,4 +69,4 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="see-also"></a>Siehe auch  
  [Portabilitätswarnungen](../code-quality/portability-warnings.md)   
- [Festlegen einer bestimmten .NET-Framework-Zielversion](../ide/targeting-a-specific-dotnet-framework-version.md)
+ [Festlegen einer bestimmten .NET-Framework-Version](../ide/targeting-a-specific-dotnet-framework-version.md)
