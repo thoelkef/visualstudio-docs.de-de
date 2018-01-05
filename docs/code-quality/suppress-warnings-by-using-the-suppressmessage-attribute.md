@@ -22,11 +22,12 @@ caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: dfa752c56d26b16f1fac569ba05cfa44693c77a2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ce246c0ff960c78aed1901618fdc26bff97779d2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="suppress-warnings-by-using-the-suppressmessage-attribute"></a>Unterdrücken von Warnungen mithilfe des SuppressMessage-Attributs
 Es ist häufig nützlich, um anzugeben, dass die Warnung wird als nicht zutreffend Teammitglieder wissen, dass der Code überprüft wurde, und es wurde festgestellt, dass die Warnung unterdrückt werden soll. Unterdrückung im Quellcode (ISS) kann einen Entwickler, um das Attribut zu konzentrieren, das eine Warnung in der Nähe der Stelle unterdrückt wird, die die Warnung generiert. Sie können das ISS-Attribut hinzufügen, direkt in der Quelldatei oder können Sie das Kontextmenü in der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE.  

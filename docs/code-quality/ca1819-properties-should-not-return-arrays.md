@@ -18,11 +18,12 @@ caps.latest.revision: "22"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2bd2aae360789646c78fa6b292b1ad97490fc2da
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: cc11a71b9f6a68db2d795694af0326561b235f8c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1819-properties-should-not-return-arrays"></a>CA1819: Eigenschaften sollten keine Arrays zurückgeben
 |||  
@@ -70,7 +71,7 @@ ms.lasthandoff: 10/31/2017
 ### <a name="description"></a>Beschreibung  
  Im folgenden Beispiel wird der Verstoß korrigiert, durch die zurückzugebende Eigenschaft ändern einer  
   
- <xref:System.Collections.ObjectModel.ReadOnlyCollection%601?displayProperty=fullName>.  
+ <xref:System.Collections.ObjectModel.ReadOnlyCollection%601?displayProperty=fullName>  
   
 ### <a name="code"></a>Code  
  [!code-csharp[FxCop.Performance.PropertyArrayFixedCollection#1](../code-quality/codesnippet/CSharp/ca1819-properties-should-not-return-arrays_3.cs)]

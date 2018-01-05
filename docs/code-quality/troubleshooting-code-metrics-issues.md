@@ -1,5 +1,5 @@
 ---
-title: "Problembehandlung für Codemetrikfehler | Microsoft Docs"
+title: "Problembehandlung für Codemetrikfehler | Microsoft-Dokumentation"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -12,23 +12,24 @@ caps.latest.revision: "4"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4ef318d7c71a5770ea7a78ff078340b4f2dff960
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f31d0f5d236327db483c9698579c8c03129acd64
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="troubleshooting-code-metrics-issues"></a>Problembehandlung für Codemetrikfehler
-Sie können beim Sammeln von Codemetrik einige der folgenden Probleme auftreten:  
+Beim Sammeln von Codemetriken stoßen Sie möglicherweise auf folgende Probleme:  
   
--   [Änderungen in Visual Studio 2010 Code Komplexität Berechnungen](#Changes_in_Visual_Studio_2010_code_complexity_calculations)  
+-   [Änderung in der Berechnung von Codekomplexität in Visual Studio 2010](#Changes_in_Visual_Studio_2010_code_complexity_calculations)  
   
-##  <a name="Changes_in_Visual_Studio_2010_code_complexity_calculations"></a>Änderungen in Visual Studio 2010 Code Komplexität Berechnungen  
- Für die gleiche Funktion berechnet den Code Komplexität Metrik [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] kann von der Berechnung von früheren Versionen von anderen [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] für den folgenden Situationen:  
+##  <a name="Changes_in_Visual_Studio_2010_code_complexity_calculations"></a> Änderung in der Berechnung von Codekomplexität in Visual Studio 2010  
+ Die Codekomplexitätsmetrik, die in [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] berechnet wurde, kann sich in folgenden Szenarios für die gleiche Funktion von der Metrik unterscheiden, die von früheren Versionen von [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] berechnet wurde:  
   
--   Die Funktion enthält ein oder mehrere catch-Blöcke. In früheren Versionen von [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)], Catch-Blöcke nicht in die Berechnung eingeschlossen. In [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)], die Komplexität der einzelnen Catch-Block um die Komplexität der Funktion hinzugefügt wird.  
+-   Die Funktion enthält mindestens einen Catch-Block. In früheren Versionen von [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] waren Catch-Blöcke nicht in der Berechnung enthalten. Bei [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] wird die Komplexität jedes einzelnen Catch-Blocks zu der Komplexität der Funktion hinzugefügt.  
   
--   Die Funktion enthält eine Switch (Select Case in VB)-Anweisung. Compilerfehler Unterschiede zwischen [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] und frühere Versionen können unterschiedlichen MSIL-Code für einige Switch-Anweisungen, die fallen über Fälle enthalten generieren.  
+-   Die Funktion enthält eine switch-Anweisung (Select Case in Visual Basic). Unterschiede der Compiler zwischen [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] und früheren Versionen können bei manchen switch-Anweisungen, die Fall-Through-Fälle beinhalten, unterschiedlichen MSIL-Code generieren.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Messen von Komplexität und Verwaltbarkeit verwalteten Codes](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)

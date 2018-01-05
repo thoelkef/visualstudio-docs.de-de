@@ -18,11 +18,12 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ebcb3325cfefdfeeb95b30477c4b266a70f40eb0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: cplusplus
+ms.openlocfilehash: 8d387cd29b0c17bdb31db495fe42146cf1a886d8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1049-types-that-own-native-resources-should-be-disposable"></a>CA1049: Typen, die systemeigene Ressourcen besitzen, müssen gelöscht werden können
 |||  
@@ -38,7 +39,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="rule-description"></a>Regelbeschreibung  
  Diese Regel setzt voraus, dass <xref:System.IntPtr>, <xref:System.UIntPtr>, und <xref:System.Runtime.InteropServices.HandleRef> Felder Speichern von Zeigern auf nicht verwalteten Ressourcen. Typen, die nicht verwaltete Ressourcen zuordnen müssen implementieren <xref:System.IDisposable> damit Aufrufer diese Ressourcen bei Bedarf freigeben und zur Kürzung der Lebensdauer der Objekte, die die Ressourcen enthalten können.  
   
- Das empfohlene Entwurfsmuster zum Bereinigen von nicht verwalteten Ressourcen ist, geben Sie einen impliziten sowohl ein explizites Mittel zum Freigeben von Ressourcen mithilfe der <xref:System.Object.Finalize%2A?displayProperty=fullName> Methode und die <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> -Methode bzw.. Der Garbage Collector Ruft die <xref:System.Object.Finalize%2A> Methode eines Objekts zu einer unbestimmten Zeit, nachdem das Objekt bestimmt ist, nicht mehr erreichbar ist. Nach dem <xref:System.Object.Finalize%2A> aufgerufen wird, eine zusätzliche Garbagecollection ist erforderlich, um das Objekt frei. Die <xref:System.IDisposable.Dispose%2A> -Methode ermöglicht dem Aufrufer explizit Freigeben von Ressourcen bei Bedarf, früher als die Ressourcen freigegeben werden würden, wenn der Garbage Collector überlassen. Nachdem er die nicht verwalteten Ressourcen bereinigt <xref:System.IDisposable.Dispose%2A> sollten Aufrufen der <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> Methode, um den Garbage Collector mitzuteilen, dass <xref:System.Object.Finalize%2A> muss nicht mehr aufgerufen werden; dadurch entfällt die Notwendigkeit für die zusätzliche Garbagecollection und verkürzt die die Lebensdauer des Objekts.  
+ Das empfohlene Entwurfsmuster zum Bereinigen von nicht verwalteten Ressourcen ist, geben Sie einen impliziten sowohl ein explizites Mittel zum Freigeben von Ressourcen mithilfe der <xref:System.Object.Finalize%2A?displayProperty=fullName> Methode und die <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> -Methode bzw. Der Garbage Collector Ruft die <xref:System.Object.Finalize%2A> Methode eines Objekts zu einer unbestimmten Zeit, nachdem das Objekt bestimmt ist, nicht mehr erreichbar ist. Nach dem <xref:System.Object.Finalize%2A> aufgerufen wird, eine zusätzliche Garbagecollection ist erforderlich, um das Objekt frei. Die <xref:System.IDisposable.Dispose%2A> -Methode ermöglicht dem Aufrufer explizit Freigeben von Ressourcen bei Bedarf, früher als die Ressourcen freigegeben werden würden, wenn der Garbage Collector überlassen. Nachdem er die nicht verwalteten Ressourcen bereinigt <xref:System.IDisposable.Dispose%2A> sollten Aufrufen der <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> Methode, um den Garbage Collector mitzuteilen, dass <xref:System.Object.Finalize%2A> muss nicht mehr aufgerufen werden; dadurch entfällt die Notwendigkeit für die zusätzliche Garbagecollection und verkürzt die die Lebensdauer des Objekts.  
   
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen  
  Um einen Verstoß gegen diese Regel zu beheben, implementieren <xref:System.IDisposable>.  
