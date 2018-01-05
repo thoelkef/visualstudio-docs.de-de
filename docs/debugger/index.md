@@ -3,15 +3,15 @@ layout: LandingPage
 title: Debuggen von Apps in Visual Studio | Microsoft-Dokumentation
 description: "Erfahren Sie, wie Sie Visual Studio 2017 für das Debuggen von Anwendungen, Diensten und Tools in der Sprache Ihrer Wahl für Ihre Plattformen und Geräte verwenden können."
 ms.technology: vs-ide-debug
-ms.openlocfilehash: 5a526302d11b259c87317ee14c660b0d6fef5541
-ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
+ms.openlocfilehash: 87f55a02e4e37d4daa8da0282182f7e3a45a0efa
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="debugging-in-visual-studio"></a>Debuggen in Visual Studio
 
-Mit dem Visual Studio-Debugger können Sie das Laufzeitverhalten eines Programms überwachen und Probleme finden. Der Debugger kann mit allen Visual Studio-Programmiersprachen sowie den zugehörigen Bibliotheken verwendet werden. Mithilfe des Debuggers können Sie die Ausführung des Programms unterbrechen, um den Code zu untersuchen, Variablen im Programm zu untersuchen und zu bearbeiten, Register anzuzeigen, die aus dem Quellcode erstellten Anweisungen zu lesen und den von der Anwendung belegten Speicherplatz anzuzeigen.
+Mit dem Visual Studio-Debugger können Sie das Laufzeitverhalten eines Programms überwachen und Probleme finden. Der Debugger kann mit allen Visual Studio-Programmiersprachen sowie den zugehörigen Bibliotheken verwendet werden. Mithilfe des Debuggers können Sie die Ausführung des Programms unterbrechen, um den Code zu untersuchen, Variablen im Programm zu untersuchen und zu bearbeiten, Register anzuzeigen, die aus dem Quellcode erstellten Anweisungen zu lesen und den von der Anwendung belegten Speicherplatz anzuzeigen.
 
 <ul class="panelContent cardsFTitle">
     <li>
@@ -69,7 +69,7 @@ Mit dem Visual Studio-Debugger können Sie das Laufzeitverhalten eines Programms
         </a>
     </li>
         <li>
-        <a href="https://docs.microsoft.com/en-us/visualstudio/debugger/getting-started-with-the-debugger#video">
+        <a href="https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugger-Feature-tour-of-Visual-studio-2017-sqwiwLD6D_1111787171">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
