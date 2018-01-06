@@ -20,11 +20,12 @@ caps.latest.revision: "34"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 655aea7bed7e61bd37f30240d02a8214b9ff23ca
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 3d0f0a2162c4144c6a9fd67650d467b9828a3add
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-your-first-vsto-add-in-for-powerpoint"></a>Exemplarische Vorgehensweise: Erstellen eines ersten VSTO-Add-Ins für PowerPoint
   Diese exemplarische Vorgehensweise veranschaulicht, wie Sie ein VSTO-Add-In für Microsoft Office PowerPoint erstellen. Die Funktionen, die Sie in dieser Art von Projektmappe erstellen, sind für die Anwendung selbst verfügbar. Dabei spielt es keine Rolle, welche Präsentationen geöffnet sind. Weitere Informationen finden Sie unter [Übersicht über die Entwicklung von Office-Lösungen &#40; VSTO- &#41; ](../vsto/office-solutions-development-overview-vsto.md).  
@@ -73,7 +74,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="writing-code-that-adds-text-to-each-new-slide"></a>Schreiben von Code, der jeder neuen Folie Text hinzufügt  
  Als Nächstes fügen Sie der Codedatei "ThisAddIn" Code hinzu. Der neue Code, verwendet das PowerPoint-Objektmodell, um jeder neuen Folie ein Textfeld hinzuzufügen. Standardmäßig enthält die Codedatei "ThisAddIn" den folgenden generierten Code:  
   
--   Eine Teildefinition der `ThisAddIn`-Klasse. Diese Klasse stellt einen Einstiegspunkt für Ihren Code bereit und ermöglicht den Zugriff auf das Objektmodell von PowerPoint. Weitere Informationen finden Sie unter [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md). Der Rest der `ThisAddIn` -Klasse ist in einer ausgeblendeten Codedatei definiert, die nicht geändert werden darf.  
+-   Eine Teildefinition der `ThisAddIn` -Klasse. Diese Klasse stellt einen Einstiegspunkt für Ihren Code bereit und ermöglicht den Zugriff auf das Objektmodell von PowerPoint. Weitere Informationen finden Sie unter [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md). Der Rest der `ThisAddIn` -Klasse ist in einer ausgeblendeten Codedatei definiert, die nicht geändert werden darf.  
   
 -   Die Ereignishandler `ThisAddIn_Startup` und `ThisAddIn_Shutdown` . Diese Ereignishandler werden aufgerufen, wenn Ihr VSTO-Add-In von PowerPoint geladen und entladen wird. Verwenden Sie diese Ereignishandler zum Initialisieren des VSTO-Add-Ins, wenn es geladen wird, und zum Bereinigen der vom VSTO-Add-In verwendeten Ressourcen, wenn es entladen wird. Weitere Informationen finden Sie unter [Events in Office Projects](../vsto/events-in-office-projects.md).  
   
@@ -94,7 +95,7 @@ ms.lasthandoff: 10/31/2017
   
 -   Das `Application`-Feld der `ThisAddIn`-Klasse. Das `Application`-Feld gibt ein <xref:Microsoft.Office.Interop.PowerPoint.Application>-Objekt zurück, das für die aktuelle Instanz von PowerPoint steht.  
   
--   Der `Sld`-Parameter des Ereignishandlers für das <xref:Microsoft.Office.Interop.PowerPoint.EApplication_Event.PresentationNewSlide>-Ereignis. Der `Sld`-Parameter ist ein <xref:Microsoft.Office.Interop.PowerPoint.Slide>-Objekt, das die neue Folie darstellt. Weitere Informationen finden Sie unter [PowerPoint-Projektmappen](../vsto/powerpoint-solutions.md).  
+-   Der Parameter `Sld` des Ereignishandlers für das <xref:Microsoft.Office.Interop.PowerPoint.EApplication_Event.PresentationNewSlide>-Ereignis. Der `Sld`-Parameter ist ein <xref:Microsoft.Office.Interop.PowerPoint.Slide>-Objekt, das die neue Folie darstellt. Weitere Informationen finden Sie unter [PowerPoint-Projektmappen](../vsto/powerpoint-solutions.md).  
   
 ## <a name="testing-the-project"></a>Testen des Projekts  
  Überprüfen Sie, wenn Sie das Projekt erstellen und ausführen, ob in neuen Folien, die Sie einer Präsentation hinzufügen, das Textfeld angezeigt wird.  

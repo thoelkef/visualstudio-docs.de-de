@@ -11,11 +11,12 @@ ms.assetid: a21fb4fe-134b-40b0-8497-86b842940ca1
 caps.latest.revision: "7"
 ms.author: sdanie
 manager: erikre
-ms.openlocfilehash: 517cbacd0c92d220ca446b8523c3383f8bac0a97
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 7ae55ddf01ae6e9d4a2bee406a51774308cb78cf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="add-parameters-and-add-arguments-dialog-boxes"></a>Dialogfelder Parameter hinzufügen und Argumente hinzufügen
 Die folgende Tabelle beschreibt die Elemente der Benutzeroberfläche (UI) von der **Hinzufügen von Parametern** (Dialogfeld), die verwendet werden, indem die <xref:System.Activities.Statements.InvokeMethod> Designer.  
@@ -23,7 +24,7 @@ Die folgende Tabelle beschreibt die Elemente der Benutzeroberfläche (UI) von de
 |||  
 |-|-|  
 |**Richtung**|Gibt an, ob der Parameter den Datenfluss in die Methode, aus der Methode oder beides darstellt.|  
-|**Typ**|Der Typname des neuen Parameters.|  
+|**Type**|Der Typname des neuen Parameters.|  
 |**Wert**|Ein VB-Ausdruck, der verwendet wird, um dem neuen Parameter einen Standardwert zuzuweisen.|  
   
  Die folgende Tabelle beschreibt die Elemente der Benutzeroberfläche (UI) von der **Argumente hinzufügen** (Dialogfeld), die verwendet werden, indem die <xref:System.Activities.Statements.InvokeDelegate> Designer.  
@@ -32,5 +33,5 @@ Die folgende Tabelle beschreibt die Elemente der Benutzeroberfläche (UI) von de
 |-|-|  
 |**Name**|Der Name des Arguments.|  
 |**Richtung**|Gibt an, ob das Argument den Datenfluss in den Delegaten, aus dem Delegaten oder beides darstellt.|  
-|**Typ**|Der Typname des neuen Arguments.|  
+|**Type**|Der Typname des neuen Arguments.|  
 |**Wert**|Der für diese Instanz des Delegatarguments zu verwendende Wert.|

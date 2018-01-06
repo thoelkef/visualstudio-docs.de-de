@@ -12,11 +12,12 @@ caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a03d9cb39384e60a1b4e2bd1af880f775c2a64ad
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 1c5b1b933f7e4c24b42449cf93e2b4778ec788fc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="start-view"></a>Ausgangsansicht
 Die Ausgangsansicht ist der Ausgangspunkt für die Arbeit mit dem XML-Schema-Designer (XSD). Wenn Sie eine neue XSD-Datei erstellen, sehen Sie zunächst die Ausgangsansicht.  

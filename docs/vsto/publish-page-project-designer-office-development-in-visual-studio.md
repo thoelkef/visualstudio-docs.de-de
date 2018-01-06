@@ -20,11 +20,12 @@ caps.latest.revision: "31"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5ce726d9d86bd57e5cf245010212545f0055c8ef
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 508557ab96747327e090bfa12b118a1a39ad9bbd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="publish-page-project-designer-office-development-in-visual-studio"></a>Veröffentlichungsseite, Projekt-Designer (Office-Entwicklung in Visual Studio)
   Die Seite **Veröffentlichen** des **Projekt-Designers** wird zur Konfiguration von Eigenschaften für die Bereitstellung verwendet.  
@@ -45,7 +46,7 @@ ms.lasthandoff: 10/31/2017
  Standardmäßig wird *http://localhost/Projektname/* als Speicherort für die Veröffentlichung verwendet, wenn IIS installiert ist. Wenn IIS nicht installiert ist, wird das Verzeichnis „publish\“ verwendet.  
   
  **URL des Installationsordners**  
- Optional.  
+ Dies ist optional.  
   
  Die URL des Installationsordners ist das Verzeichnis, über das der Endbenutzer die Anpassung installiert. Hierbei handelt es sich ebenfalls um den Pfad, der von der Projektmappe für die Suche nach Updates verwendet wird. Als Pfad kann derselbe Pfad wie für den Speicherort des Veröffentlichungsordners verwendet werden, aber dies ist nicht unbedingt erforderlich.  
   
@@ -106,7 +107,7 @@ ms.lasthandoff: 10/31/2017
  Legt die Versionsnummer für die Anpassung fest. Wenn die Versionsnummer geändert wird, erfolgt die Veröffentlichung der Anwendung als Update. Für jede Version wird während des Buildprozesses ein neuer Ordner erstellt, um das Überschreiben der zuvor veröffentlichten Version zu verhindern. Jeder Teil der Veröffentlichungsversion (**Hauptversion**, **Nebenversion**, **Build**, **Revision**) kann bis zu fünf Ziffern umfassen.  
   
  **Revisionsnummer automatisch mit jeder Veröffentlichung erhöhen**  
- Optional. Wenn aktiviert (Standardeinstellung), wird der Teil **Revision** der Versionsnummer bei jeder Veröffentlichung der Anpassung um eins erhöht. Dies bewirkt, dass die Anpassung als Update veröffentlicht wird.  
+ Dies ist optional. Wenn aktiviert (Standardeinstellung), wird der Teil **Revision** der Versionsnummer bei jeder Veröffentlichung der Anpassung um eins erhöht. Dies bewirkt, dass die Anpassung als Update veröffentlicht wird.  
   
  **Jetzt veröffentlichen**  
  Veröffentlicht die Anwendung mithilfe der aktuellen Einstellungen. Entspricht der Schaltfläche **Fertig stellen** im **Veröffentlichungs-Assistent**.  

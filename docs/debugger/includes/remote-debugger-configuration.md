@@ -13,11 +13,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: 05a288a2d8dff776d8a5d3faea47b06d101f2ea3
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: cfb41cf6274238fef2de9b74496a33fba110e04f
+ms.sourcegitcommit: fb73b56d45ebc0386cd4de1a706ba9e20c59daf1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 01/03/2018
 ---
 Sie müssen über Administratorberechtigungen auf dem Remotecomputer verfügen.  
   
@@ -43,4 +43,4 @@ Sie müssen über Administratorberechtigungen auf dem Remotecomputer verfügen.
   
  Wenn Sie Debuggen und die Notwendigkeit, die den Remotedebugger beenden abgeschlossen sind, klicken Sie auf **Datei > Beenden** auf das Fenster. Sie können den Neustart aus der **starten** Menü oder über die Befehlszeile:  
   
- **\<Visual Studio-Installationsverzeichnis > \Common7\IDE\Remote Debugger\\< X86, X64 oder Appx\msvsmon.exe**.  
+ **\<Visual Studio-Installationsverzeichnis > \Common7\IDE\Remote Debugger\\< X86, X64 oder Appx > \msvsmon.exe**.  

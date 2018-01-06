@@ -24,11 +24,12 @@ caps.latest.revision: "66"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b6bee3ed6bb88945d880f1fb855cec0f7cb9be27
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: f2727d3c1608db15ab4b46285c0ad6971864978e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="excel-object-model-overview"></a>Excel Object Model Overview
   Zum Entwickeln von Lösungen, die Microsoft Office Excel verwenden, können Sie mit den Objekten des Excel-Objektmodells interagieren. In diesem Thema werden die wichtigsten Objekte vorgestellt:  
@@ -70,7 +71,7 @@ ms.lasthandoff: 10/31/2017
   
  Da die Daten in einem Excel-Dokument sehr strukturiert sind, ist das Objektmodell hierarchisch und unkompliziert. Excel enthält hunderte von Objekten, mit denen Sie interagieren können. Als Einstieg in das Objektmodell empfiehlt es sich jedoch, sich zunächst auf eine sehr kleine Teilmenge der verfügbaren Objekte zu konzentrieren. Dazu gehören die folgenden vier Objekte:  
   
--   Anwendung  
+-   Application  
   
 -   Arbeitsmappe  
   
@@ -80,7 +81,7 @@ ms.lasthandoff: 10/31/2017
   
  Diese vier Objekte und ihre Member decken einen Großteil der Aufgaben ab, die mit Excel erledigt werden können.  
   
-### <a name="application-object"></a>Anwendungsobjekt  
+### <a name="application-object"></a>Application-Objekt  
  Beim <xref:Microsoft.Office.Interop.Excel.Application>-Objekt von Excel handelt es sich um die eigentliche Excel-Anwendung. Das <xref:Microsoft.Office.Interop.Excel.Application>-Objekt stellt zahlreiche Informationen über die ausgeführte Anwendung, die auf diese Instanz angewendeten Optionen und die derzeit darin geöffneten Benutzerobjekte zur Verfügung.  
   
 > [!NOTE]  

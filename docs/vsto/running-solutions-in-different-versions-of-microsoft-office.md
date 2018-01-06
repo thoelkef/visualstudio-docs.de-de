@@ -21,11 +21,12 @@ caps.latest.revision: "61"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 93e365d335f835196576ad9ed10216e904e81f93
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: a52ab5c2f2f5a367681929966175ca4c4cb33b56
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="running-solutions-in-different-versions-of-microsoft-office"></a>Ausführen von Lösungen in unterschiedlichen Versionen von Microsoft Office
     
@@ -35,7 +36,7 @@ ms.lasthandoff: 10/31/2017
 |--------------------------------------------------------|------------------------------------------------------|--------------------------------------------------|-------------------------------------------|  
 |Office 2016 und [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)]|[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder höher|Office 2016<br /><br /> [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)]<br /><br /> [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]<br /><br /> 2007 Microsoft Office System<sup>2</sup>|Visual Studio 2010-Tools für Office-Laufzeit|  
 |[!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]|[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder höher|Office 2016<br /><br /> [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)]<br /><br /> [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]<br /><br /> 2007 Microsoft Office System<sup>2</sup>|Visual Studio 2010-Tools für Office-Laufzeit|  
-|[!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]|.NET Framework 3,5|Office 2016<br /><br /> [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)]<br /><br /> [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]|Visual Studio 2010-Tools für Office-Laufzeit|  
+|[!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]|.NET Framework 3.5|Office 2016<br /><br /> [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)]<br /><br /> [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]|Visual Studio 2010-Tools für Office-Laufzeit|  
 |2007 Microsoft Office System|[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder höher,<br /><br /> oder<br /><br /> .NET Framework 3.5|Office 2016<br /><br /> [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)]<br /><br /> [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]<br /><br /> 2007 Microsoft Office System|Visual Studio 2010-Tools für Office-Laufzeit|  
   
  1. Die für das Projekt festgelegte .NET Framework-Version muss auf Endbenutzercomputern vorhanden sein, um die Projektmappe ausführen zu können. Wenn für das Projekt z. B. .NET Framework 3.5 als Zielversion festgelegt ist, ist .NET Framework 3.5 auf Endbenutzercomputern erforderlich. In diesem Beispiel wird die Projektmappe nicht ausgeführt, wenn nur [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] auf Endbenutzercomputern installiert ist.  
@@ -49,7 +50,7 @@ ms.lasthandoff: 10/31/2017
   
 |Zum Erstellen der Lösung verwendete Edition von Visual Studio|Office-Zielversion der Projektvorlage|Office-Versionen, mit denen die Projektmappe ausgeführt werden kann|Erforderliche Laufzeit auf Endbenutzercomputer|Erforderliche .NET Framework-Version auf dem Endbenutzercomputer|  
 |----------------------------------------------------------|--------------------------------------------------------|--------------------------------------------------|-------------------------------------------|----------------------------------------------------------|  
-|Visual Studio 2008 Professional<br /><br /> oder<br /><br /> Visual Studio Team System 2008|2007 Microsoft Office System|[!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)]und [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] <sup>1</sup><br /><br /> 2007 Microsoft Office System|Visual Studio 2010-Tools für Office-Laufzeit<sup>1</sup><br /><br /> oder<br /><br /> Visual Studio Tools for Microsoft Office System (Version 3.0, Laufzeit)|.NET Framework 3,5|  
+|Visual Studio 2008 Professional<br /><br /> oder<br /><br /> Visual Studio Team System 2008|2007 Microsoft Office System|[!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)]und [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] <sup>1</sup><br /><br /> 2007 Microsoft Office System|Visual Studio 2010-Tools für Office-Laufzeit<sup>1</sup><br /><br /> oder<br /><br /> Visual Studio Tools for Microsoft Office System (Version 3.0, Laufzeit)|.NET Framework 3.5|  
 |Einer der folgenden Editionen von Visual Studio 2005 mit VSTO 2005 SE<sup>2</sup> installiert:<br /><br /> -Visual Studio 2005-Tools für Office<br />-Visual Studio TeamSystem 2005<br />-Visual Studio 2005 Professional|2007 Microsoft Office System|[!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)]und [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] (nur 32-Bit<sup>3</sup>)<br /><br /> 2007 Microsoft Office System|Laufzeit für Visual Studio 2005 Tools for Office Second Runtime|.NET Framework 2.0, .NET Framework 3.0 oder .NET Framework 3.5|  
 |Eine der folgenden Editionen von Visual Studio:<br /><br /> -Visual Studio 2008 Professional<br />-Visual Studio TeamSystem 2008<br />-Visual Studio 2005 Tools for Office (mit oder ohne VSTO 2005 SE<sup>2</sup> installiert)<br />-Visual Studio TeamSystem 2005 (mit oder ohne VSTO 2005 SE<sup>2</sup> installiert)<br />-Visual Studio 2005 Professional mit VSTO 2005 SE<sup>2</sup> installiert|Microsoft Office 2003|[!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)]und [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] (nur 32-Bit<sup>3</sup>)<br /><br /> 2007 Microsoft Office System<br /><br /> Microsoft Office 2003|Laufzeit für Visual Studio 2005 Tools for Office Second Runtime|.NET Framework 2.0, .NET Framework 3.0 oder .NET Framework 3.5|  
   

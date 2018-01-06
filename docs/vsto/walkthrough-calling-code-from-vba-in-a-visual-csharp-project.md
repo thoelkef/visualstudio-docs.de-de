@@ -24,11 +24,12 @@ caps.latest.revision: "38"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5d75076bc811cc94a62f7b737116984a08295961
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: a1e61b3b2055e6a32fa1e179232e7366fe2b3d16
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-calling-code-from-vba-in-a-visual-c-project"></a>Exemplarische Vorgehensweise: Aufrufen von Code von VBA in einem Visual C#-Projekt
   Diese exemplarische Vorgehensweise veranschaulicht, wie eine Methode in einer Anpassung auf Dokumentebene für Microsoft Office Excel aus VBA-Code (Visual Basic for Applications) in der Arbeitsmappe aufgerufen wird. Das Verfahren umfasst drei grundlegende Schritte: Hinzufügen einer Methode zur `Sheet1` -Hostelementklasse, Verfügbarmachen der Methode für VBA-Code und Aufrufen der Methode aus VBA-Code in der Arbeitsmappe.  
@@ -227,7 +228,7 @@ ms.lasthandoff: 10/31/2017
   
 4.  Fügen Sie dem neuen Modul den folgenden Code hinzu.  
   
-     Dieser Code Ruft die `CreateTable` -Methode in der Anpassungsassembly auf. Das Makro greift auf diese Methode zu, indem es die globale `GetManagedClass` -Methode für den Zugriff auf die `Sheet1` -Hostelementklasse verwendet, die Sie für VBA-Code verfügbar gemacht haben. Die `GetManagedClass` -Methode wurde beim Festlegen der **ReferenceAssemblyFromVbaProject** -Eigenschaft weiter oben in dieser exemplarischen Vorgehensweise automatisch generiert.  
+     Dieser Code Ruft die `CreateTable`-Methode in der Anpassungsassembly auf. Das Makro greift auf diese Methode zu, indem es die globale `GetManagedClass` -Methode für den Zugriff auf die `Sheet1` -Hostelementklasse verwendet, die Sie für VBA-Code verfügbar gemacht haben. Die `GetManagedClass` -Methode wurde beim Festlegen der **ReferenceAssemblyFromVbaProject** -Eigenschaft weiter oben in dieser exemplarischen Vorgehensweise automatisch generiert.  
   
     ```  
     Sub CallVSTOMethod()  

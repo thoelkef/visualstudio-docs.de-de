@@ -13,13 +13,13 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: 103cefa8573c8f44efff0b53b0c09a5ec26706e6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: dbc9d727dc412e3d354d806a45c352eef810cd99
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 01/05/2018
 ---
-Diese Schritte zeigen nur eine Standardkonfiguration von IIS. Ausführlichere Informationen oder an einen Windows-Desktop-Computer installieren, finden Sie unter [in IIS veröffentlichen](https://docs.microsoft.com/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration) oder [IIS 8.0 mithilfe von ASP.NET 3.5 und ASP.NET 4.5](https://docs.microsoft.com/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45).
+Diese Schritte zeigen nur eine Standardkonfiguration von IIS. Ausführlichere Informationen oder an einen Windows-Desktop-Computer installieren, finden Sie unter [in IIS veröffentlichen](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration) oder [IIS 8.0 mithilfe von ASP.NET 3.5 und ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45).
 
 Für Windows Server-Betriebssysteme verwenden die **Hinzufügen von Rollen und Features** Assistenten über die **verwalten** Link oder die **Dashboard** link **Server-Manager**. Aktivieren Sie im Schritt **Serverrollen** das Kontrollkästchen für **Webserver (IIS)**.
 

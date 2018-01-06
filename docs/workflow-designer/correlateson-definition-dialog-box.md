@@ -12,11 +12,12 @@ caps.latest.revision: "6"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: babe684c0fd4eeec1a00e4f44868bfc0a67e5f9d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 07e028a3ac5018c8a9866a6aee061d679cff74a9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="correlateson-definition-dialog-box"></a>CorrelatesOn-Definition (Dialogfeld)
 Die **CorrelatesOn** Dialogfeld werden in [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] so bearbeiten Sie die <xref:System.ServiceModel.Activities.Receive.CorrelatesOn%2A> Eigenschaft eine <xref:System.ServiceModel.Activities.Receive> Aktivität. [!INCLUDE[crdefault](../test/includes/crdefault_md.md)]die [Receive](../workflow-designer/receive-activity-designer.md) Thema.  

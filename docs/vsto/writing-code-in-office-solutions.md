@@ -37,11 +37,12 @@ caps.latest.revision: "37"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2147076bd4aa90230d1216af19459efe71209d50
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 5d6a400f5c1ee523e2bb3fd95be215af0e5ba371
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="writing-code-in-office-solutions"></a>Schreiben von Code in Office-Projektmappen
   Einige Aspekte beim Schreiben von Code in Office-Projekten unterscheiden sich von anderen Projekttypen. Viele dieser Unterscheide haben mit der Art zu tun, wie die Office-Objektmodelle im verwalteten Code verfügbar gemacht werden. Andere Unterschiede beziehen sich auf den Entwurf von Office-Projekten.  
@@ -97,7 +98,7 @@ ms.lasthandoff: 10/31/2017
  Die Office-Projektvorlagen in Visual Studio unterstützen nur die Programmiersprachen Visual Basic und Visual C#. Daher sind diese Projektvorlagen nur unter den Knoten **Visual Basic** und **Visual C#** des Dialogfelds **Neues Projekt** in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]verfügbar. Weitere Informationen finden Sie unter [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
 ## <a name="language-choice-and-office-programming"></a>Sprachauswahl und Office-Programmierung  
- Microsoft Office und Visual Basic for Applications (VBA) wurden so entwickelt, dass sie ineinander greifen, um den Workflow der Anwendungsanpassung zu optimieren. Visual Basic hat einige dieser Entwicklungen geerbt. Visual Basic unterstützt z. B. optionale Parameter, d. h. im Vergleich zu Visual C# können Sie beim Aufruf einiger Methoden in den primären Interopassemblys von Microsoft Office weniger Code schreiben.  
+ Microsoft Office und Visual Basic for Applications (VBA) wurden so entwickelt, dass sie ineinander greifen, um den Workflow der Anwendungsanpassung zu optimieren. Visual Basic hat einige dieser Entwicklungen geerbt. Visual Basic unterstützt z. B. optionale Parameter, d. h. im Vergleich zu Visual C# können Sie beim Aufruf einiger Methoden in den primären Interopassemblys von Microsoft Office weniger Code schreiben.  
   
 ## <a name="programming-with-visual-basic-vs-visual-c-in-office-solutions"></a>Programmierung mit Visual Basic und mit Visual C# in Office-Projektmappen  
  Sie können Office-Lösungen entweder mit Visual Basic oder Visual C# erstellen. Da die Microsoft Office-Objektmodelle zur Verwendung mit Microsoft Visual Basic for Applications (VBA) entwickelt wurden, können Visual Basic-Entwickler problemlos mit den von den Microsoft Office-Anwendungen verfügbar gemachten Objekten arbeiten. Visual C#-Entwickler können größtenteils die gleichen Funktionen wie Visual Basic-Entwickler nutzen, aber in einigen Fällen müssen sie zusätzlichen Code verfassen, um die Office-Objektmodelle verwenden zu können. Es gibt auch einige Unterschiede zwischen den grundlegenden Programmierfunktionen für die Office-Entwicklung und in Visual Basic und C# geschriebenem verwalteten Code.  

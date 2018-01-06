@@ -20,11 +20,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 64bac205a64eaf321bb0144d9f81edfa065b9029
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 3d585c6019455fae5305a848ef62c74cfedf6b6e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="working-with-ranges"></a>Arbeiten mit Bereichen
   Die <xref:Microsoft.Office.Tools.Excel.NamedRange>-Klasse und die <xref:Microsoft.Office.Interop.Excel.Range>-Klasse enthalten die Methoden und Eigenschaften, die Sie zum Ausführen von Aufgaben mit Bereichen verwenden.  
@@ -37,7 +38,7 @@ ms.lasthandoff: 10/31/2017
 |Wenden Sie Formate auf Zellen in einer Region an.|[Vorgehensweise: Programmgesteuertes Anwenden von Formaten auf Bereiche in Arbeitsmappen](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)|  
 |Suchen Sie nach Text in Arbeitsblattbereichen.|[Vorgehensweise: Programmgesteuertes Suchen nach Text in Arbeitsblattbereichen](../vsto/how-to-programmatically-search-for-text-in-worksheet-ranges.md)|  
 |Wenden Sie Farben auf Text in einem Zellenbereich an.|[Vorgehensweise: Programmgesteuertes Anwenden von Farben auf Excel-Bereiche](../vsto/how-to-programmatically-apply-color-to-excel-ranges.md)|  
-|Führen Sie Excel-Berechnungen programmgesteuert aus.|[Vorgehensweise: Ausführen von Excel-Berechnungen programmgesteuert](../vsto/how-to-programmatically-run-excel-calculations-programmatically.md)|  
+|Führen Sie Excel-Berechnungen programmgesteuert aus.|[Gewusst wie: Programmgesteuertes Ausführen von Excel-Berechnungen](../vsto/how-to-programmatically-run-excel-calculations-programmatically.md)|  
 |Zeigen Sie eine Zeichenfolge in einer Zelle an.|[Vorgehensweise: Programmgesteuertes Anzeigen einer Zeichenfolge in einer Arbeitsblattzelle](../vsto/how-to-programmatically-display-a-string-in-a-worksheet-cell.md)|  
   
  Weitere Informationen zu Excel-Aufgaben und zum Excel-Objektmodell finden Sie unter [Excel Object Model Overview](../vsto/excel-object-model-overview.md).  

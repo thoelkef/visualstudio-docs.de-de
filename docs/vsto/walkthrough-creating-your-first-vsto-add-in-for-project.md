@@ -20,11 +20,12 @@ caps.latest.revision: "28"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 324d5e07ed2c1515036282abe12336f90225993f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 391bd4bbdfe87f1bc00ac14356c61f988b8bf041
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-your-first-vsto-add-in-for-project"></a>Exemplarische Vorgehensweise: Erstellen des ersten VSTO-Add-Ins für Project
   Diese exemplarische Vorgehensweise veranschaulicht, wie Sie ein VSTO-Add-In für Microsoft Office Project erstellen. Die Features, die Sie in dieser Art von Projektmappe erstellen, sind für die Anwendung selbst verfügbar. Dabei spielt es keine Rolle, welche Projekte geöffnet sind. Weitere Informationen finden Sie unter [Übersicht über die Entwicklung von Office-Lösungen &#40; VSTO- &#41; ](../vsto/office-solutions-development-overview-vsto.md).  
@@ -88,7 +89,7 @@ ms.lasthandoff: 10/31/2017
   
  In diesem Codebeispiel werden die folgenden Objekte verwendet, um das Projekt zu ändern:  
   
--   Das Feld `Application` der `ThisAddIn` -Klasse. Die `Application` Feld gibt ein Microsoft.Office.Interop.MSProject.Application-Objekt, das die aktuelle Instanz von Project darstellt.  
+-   Das `Application` -Feld der `ThisAddIn` -Klasse. Die `Application` Feld gibt ein Microsoft.Office.Interop.MSProject.Application-Objekt, das die aktuelle Instanz von Project darstellt.  
   
 -   Die `pj` Parameter des ereignishandlers für das Ereignis neues Projekt. Die `pj` Parameter ist ein Microsoft.Office.Interop.MSProject.Project-Objekt, das das Projekt darstellt. Weitere Informationen finden Sie unter [Project Solutions](../vsto/project-solutions.md).  
   

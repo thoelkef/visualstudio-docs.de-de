@@ -26,11 +26,12 @@ caps.latest.revision: "88"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 236bd457f478d21ed27d31b0a28871e1102a1547
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: db8c6e3363cf1a67dfef5f3dd606dd65ed6f7a94
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="office-and-sharepoint-development-in-visual-studio"></a>Office- und SharePoint-Entwicklung in Visual Studio
   Sie können Microsoft Office und SharePoint erweitern, indem Sie eine einfache App oder ein Add-In erstellen, die Benutzer im [Office Store](https://store.office.com/) oder einem Unternehmenskatalog herunterladen, oder indem sie eine.NET Framework-basierte Lösung erstellen, die von Benutzern auf einem Computer installiert wird.  
@@ -54,7 +55,7 @@ ms.lasthandoff: 10/31/2017
   
  **Weitere Informationen**  
   
-|An|Siehe|  
+|Beschreibung|Siehe|  
 |--------|---------|  
 |Weitere Informationen zu den Napa Office 365-Entwicklungstools:|[Napa Office 365-Entwicklungstools](https://msdn.microsoft.com/library/dn974046.aspx)|  
   
@@ -69,7 +70,7 @@ ms.lasthandoff: 10/31/2017
   
  **Weitere Informationen**  
   
-|An|Siehe|  
+|Beschreibung|Siehe|  
 |--------|---------|  
 |Erfahren Sie mehr über Office-Add-Ins, und erstellen Sie dann eins.|[Office-Add-Ins](http://msdn.microsoft.com/office/dn448457)|  
 |Vergleichen Sie die verschiedenen Möglichkeiten, mit denen Sie Office erweitern können, und entscheiden Sie, ob Sie eine Anwendung oder ein Office-Add-In verwenden möchten.|[Roadmap für Office-Add-Ins, VSTO und VBA](http://blogs.msdn.com/b/officeapps/archive/2013/06/18/roadmap-for-apps-for-office-vsto-and-vba.aspx)|  
@@ -86,7 +87,7 @@ ms.lasthandoff: 10/31/2017
   
  **Weitere Informationen**  
   
-|An|Siehe|  
+|Beschreibung|Siehe|  
 |--------|---------|  
 |Erfahren Sie mehr über SharePoint-Add-Ins, und erstellen Sie dann eins.|[SharePoint-Add-Ins](https://msdn.microsoft.com/library/office/fp179930.aspx)|  
 |Vergleichen Sie Add-Ins für SharePoint mit herkömmlichen SharePoint-Lösungen.|[SharePoint-Add-Ins im Vergleich mit SharePoint-Lösungen](http://msdn.microsoft.com/library/office/jj163114.aspx)|  
@@ -114,7 +115,7 @@ ms.lasthandoff: 10/31/2017
   
  **Weitere Informationen**  
   
-|An|Siehe|  
+|Beschreibung|Siehe|  
 |--------|---------|  
 |Vergleichen Sie SharePoint-Lösungen und SharePoint-Add-Ins.|[SharePoint-Add-Ins im Vergleich mit SharePoint-Lösungen](http://msdn.microsoft.com/library/office/jj163114.aspx)|  
 |Erstellen Sie eine SharePoint-Lösung.|[Erstellen von SharePoint-Projektmappen](../sharepoint/create-sharepoint-solutions.md)|  

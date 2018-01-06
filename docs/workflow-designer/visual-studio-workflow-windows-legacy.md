@@ -12,11 +12,12 @@ caps.latest.revision: "5"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: a575ab2ede1c537ea4a62b27656946f838ef8b47
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: d367dbbe273f39bef9ebb6161211864d6d430b97
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-workflow-windows-legacy"></a>Visual Studio-Workflowfenster (Vorgängerversion)
 Die von [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] bereitgestellte Vorgängerversion von [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] kann verwendet werden, um auf [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] oder [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)] abzuzielen. Der Legacydesigner ist ein visueller Designer, mit dem Sie einen Workflow erstellen können. Ziehen Sie Aktivitäten aus der **Toolbox** auf die Entwurfsoberfläche, und diese dann dort konfigurieren. Als [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Editor-Fenster nimmt dieses den Bereich des Hauptfensters ein, der von anderen [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Editor-Fenstern verwendet wird. Der Name des Workflows wird in der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Fenstertitelleiste angezeigt.  

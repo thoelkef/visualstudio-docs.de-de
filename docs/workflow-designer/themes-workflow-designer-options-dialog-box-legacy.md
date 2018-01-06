@@ -15,11 +15,12 @@ caps.latest.revision: "6"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: cc1ac7f0c46ccd5f0901668d5b58d0abaf6fd536
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: bd90330c05d8395cf6b5b8dbdfce2c877b570afa
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="themes-workflow-designer-options-dialog-box-legacy"></a>Dialogfeld "Designs, Workflow-Designer, Optionen (Vorgängerversion)
 In diesem Thema wird beschrieben, wie die **Designs, Workflow-Designer, Optionen** Dialogfeld in der Vorgängerversion [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)]. Verwenden Sie die Vorgängerversion von [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)], wenn Sie entweder auf [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] oder [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)] abzielen möchten.  
