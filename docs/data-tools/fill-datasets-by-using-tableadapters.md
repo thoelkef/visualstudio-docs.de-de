@@ -23,11 +23,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: f93a0d11435a060806a89db48b2c9e81efebe3f3
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: e338335263a9c0757bbf6305a42fd092d4f90c04
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>Füllen Sie Datasets, indem Sie mithilfe von TableAdapters
 Ein TableAdapter füllt ein Dataset mit Daten aus der Datenbank, basierend auf eine oder mehrere Abfragen oder gespeicherte Prozeduren, die Sie angeben. TableAdapters können auch ausführen, fügt, Aktualisierungen und löschungen in der Datenbank, um Änderungen persistent zu speichern, die Sie auf das Dataset vornehmen. Sie können auch globale Befehle ausgeben, die nicht mit einer bestimmten Tabelle verbunden sind.  
@@ -128,4 +129,4 @@ Ein TableAdapter füllt ein Dataset mit Daten aus der Datenbank, basierend auf e
 Bei Verwendung von Datenbefehlen mit CommandType-Eigenschaft auf festgelegt <xref:System.Data.CommandType.Text>, sorgfältig prüfen von Informationen, die vor der Übergabe an die Datenbank von einem Client gesendet wird. Böswillige Benutzer könnten versuchen, veränderte oder zusätzliche SQL-Anweisungen zu senden (einzufügen), um unautorisierten Zugriff zu erhalten oder die Datenbank zu beschädigen. Bevor Sie Benutzereingaben an eine Datenbank übertragen, immer Stellen Sie sicher, dass die Informationen gültig sind. Eine bewährte Methode wird immer parametrisierte Abfragen oder gespeicherte Prozeduren möglichst verwenden.  
   
 ## <a name="see-also"></a>Siehe auch
-[DataSet-tools](../data-tools/dataset-tools-in-visual-studio.md)
+[Datasettools](../data-tools/dataset-tools-in-visual-studio.md)

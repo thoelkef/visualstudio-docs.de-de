@@ -12,11 +12,12 @@ ms.assetid: 1e639182-1301-4e28-9c1e-b5df732f3f1b
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9312ad8a96c5829aae21c87e78a0d5f2f0db1b35
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d349222b138a8d5c359d174849faf7641befc482
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="graphics-frame-validation"></a>Grafik-Frame-Überprüfung
 <!-- VERSIONLESS -->
@@ -32,7 +33,7 @@ Ereignis-ID | ID, die auf einen Eintrag im ordnet die [Ereignisliste](graphics-e
 Schweregrad | Beschädigung, Fehler, Warnung, Information oder Nachricht.
 Kategorie | Anwendung definiert ist, verschiedene, Initialisierung, Bereinigung, Kompilierung, State Erstellung, Status festlegen, Status abrufen, Ausführung, Ressource Manipulation, Shader, redundante und nicht verwendete.
 Meldung | Die Meldung, die dem Ereignis zugeordnet wird.
-Ereignis | Das Ereignis, das den Fehler oder die Warnung zugeordnet.
+event | Das Ereignis, das den Fehler oder die Warnung zugeordnet.
 
 ## <a name="see-also"></a>Siehe auch  
 [Grafikdiagnose (Debuggen DirectX-Grafiken)](visual-studio-graphics-diagnostics.md)   

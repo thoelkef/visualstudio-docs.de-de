@@ -12,11 +12,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: c493a7ea448277275072ab71cf013333ccb9b4ea
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
-ms.translationtype: HT
+ms.workload: data-storage
+ms.openlocfilehash: a160cce25814cd2e110f8896ed6752a18b5dd0da
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="linq-to-sql-tools-in-visual-studio"></a>LINQ to SQL-Tools in Visual Studio
 LINQ to SQL ist die erste objektrelationales Mapping-Technologie von Microsoft veröffentlicht wurden. Es funktioniert gut in grundlegende Szenarien und weiterhin in Visual Studio unterstützt werden, aber es ist nicht mehr in der aktiven Entwicklung. Verwenden Sie LINQ to SQL, wenn eine ältere Anwendung zu verwalten, die er bereits verwendet wird, oder in einfachen Anwendungen, die mithilfe von SQL Server und erfordern keine Zuordnung mit mehreren Tabellen. Neue Anwendungen sollten im Allgemeinen das Entity Framework verwenden, wenn eine Ebene objektrelationalen Mapper erforderlich ist.  

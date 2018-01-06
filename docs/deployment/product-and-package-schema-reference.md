@@ -29,11 +29,12 @@ caps.latest.revision: "7"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: ad3f3df67fe2545aadc8da71b89e600895cea780
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 149dd62b38bdcb0863d30f4280b35950361f58cb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="product-and-package-schema-reference"></a>Referenz zum Produkt- und Paketschema
 Ein *Produktdatei* ist eine XML-Manifestdatei, die alle erforderlichen externen Abhängigkeiten beschreibt eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung. Beispiele für externe Abhängigkeiten der [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] und der Microsoft Data Access Components (MDAC). Eine Paketdatei ähnelt einer Produktdatei, aber es wird verwendet, um die Kultur abhängige Komponenten einer Abhängigkeit, wie lokalisierte Assemblys, Lizenzverträge und Dokumentation zu installieren.  
@@ -42,13 +43,13 @@ Ein *Produktdatei* ist eine XML-Manifestdatei, die alle erforderlichen externen 
   
 |Element|Beschreibung|Attribute|  
 |-------------|-----------------|----------------|  
-|[\<Product >-Element](../deployment/product-element-bootstrapper.md)|Erforderliches Element der obersten Ebene für Produktdateien.|Keine|  
+|[\<Product >-Element](../deployment/product-element-bootstrapper.md)|Erforderliches Element der obersten Ebene für Produktdateien.|Keiner|  
 |[\<Package >-Element](../deployment/package-element-bootstrapper.md)|Erforderliches Element der obersten Ebene für Paketdateien.|`Culture`<br /><br /> `Name`<br /><br /> `EULA`|  
-|[\<RelatedProducts >-Element](../deployment/relatedproducts-element-bootstrapper.md)|Optionales Element für Produktdateien. Die anderen Produkte, die dieses Produkt installiert oder hängt davon ab.|Keine|  
-|[\<InstallChecks >-Element](../deployment/installchecks-element-bootstrapper.md)|Erforderliches Element. Listen überprüft die Abhängigkeit, um während der Installation auf dem lokalen Computer auszuführen.|Keine|  
-|[\<Befehle >-Element](../deployment/commands-element-bootstrapper.md)|Erforderliches Element.  Führt eine oder mehrere installationsüberprüfungen wie beschrieben `InstallChecks`, und gibt an, welches Paket so installieren Sie die Überprüfung sollte fehlschlagen.|Keine|  
-|[\<PackageFiles >-Element](../deployment/packagefiles-element-bootstrapper.md)|Erforderliches Element. Führt die Pakete, die durch diese Installation installiert werden können.|Keine|  
-|[\<Zeichenfolgen >-Element](../deployment/strings-element-bootstrapper.md)|Erforderliches Element. Speichert lokalisierte Versionen von Verbindungszeichenfolgen für die Product-Namen und Fehler.|Keine|  
+|[\<RelatedProducts >-Element](../deployment/relatedproducts-element-bootstrapper.md)|Optionales Element für Produktdateien. Die anderen Produkte, die dieses Produkt installiert oder hängt davon ab.|Keiner|  
+|[\<InstallChecks >-Element](../deployment/installchecks-element-bootstrapper.md)|Erforderliches Element. Listen überprüft die Abhängigkeit, um während der Installation auf dem lokalen Computer auszuführen.|Keiner|  
+|[\<Befehle >-Element](../deployment/commands-element-bootstrapper.md)|Erforderliches Element.  Führt eine oder mehrere installationsüberprüfungen wie beschrieben `InstallChecks`, und gibt an, welches Paket so installieren Sie die Überprüfung sollte fehlschlagen.|Keiner|  
+|[\<PackageFiles >-Element](../deployment/packagefiles-element-bootstrapper.md)|Erforderliches Element. Führt die Pakete, die durch diese Installation installiert werden können.|Keiner|  
+|[\<Zeichenfolgen >-Element](../deployment/strings-element-bootstrapper.md)|Erforderliches Element. Speichert lokalisierte Versionen von Verbindungszeichenfolgen für die Product-Namen und Fehler.|Keiner|  
   
 ## <a name="remarks"></a>Hinweise  
  Das Paketschema wird von Setup.exe, einen Stub-Programms generiert, die für das bootstrapping MS Build-Aufgabe, die wenig hartcodierte Logik selbst enthält. Das Schema Laufwerke jeden Aspekt des Installationsprozesses.  

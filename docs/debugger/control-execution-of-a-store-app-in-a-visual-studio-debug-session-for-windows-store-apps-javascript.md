@@ -17,11 +17,12 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 60b9465677ce033f8b285ce21e2b8332bf88a73a
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: uwp
+ms.openlocfilehash: 1e1e30400a630c7a5b01438e521b651f25ab3137
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="control-execution-of-a-uwp-app-in-a-visual-studio-debug-session-javascript"></a>Steuern der Ausführung einer uwp-app in einer Visual Studio-Debugsitzung (JavaScript)
 In diesem Schnellstart wird veranschaulicht, wie Sie im Visual Studio-Debugger navigieren und den Programmstatus in einer Sitzung anzeigen.  
@@ -215,7 +216,7 @@ In diesem Schnellstart wird veranschaulicht, wie Sie im Visual Studio-Debugger n
   
 2.  **Ausführen bis zum Haltepunkt.** Starten Sie die Debugsitzung, indem Sie im Menü **Debuggen** on the **Debuggen starten** aus (Tastatur: **F5**). Der Debugger unterbricht die Ausführung am Haltepunkt. Führen Sie einen Einzelschritt in die Zeile durch.  
   
-3.  **Öffnen Sie das Fenster "Lokal".** Wählen Sie im Dialogfeld **Debuggen starten** auf **Fenster**, und wählen Sie **Lokale**. (Tastatur: Alt+4).  
+3.  **Öffnen Sie das Fenster "Lokal".** On the **Debuggen** auf **Fenster**, und wählen Sie **Lokale**aus. (Tastatur: Alt+4).  
   
 4.  **Überprüfen der lokalen Variablen in der Modulfunktion** Das Fenster "Lokal" zeigt die Variablen der aktuell ausgeführten Funktion (der `module` -Funktion) als Knoten der obersten Ebene der Struktur an. Wenn Sie eine Funktion eingeben, erstellt JavaScript alle Variablen und weist ihnen den Wert `undefined`zu. Bei den in der Funktion definierten Funktionen entspricht der Wert ihrem Text.  
   

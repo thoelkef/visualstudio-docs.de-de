@@ -13,11 +13,12 @@ caps.latest.revision: "3"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2434dac0a4f0e4d9ff1c998f0cd70da4f9c558b0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7e4771de4237bea89836969d2274d622d36e3f89
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiasymbolgetisacceleratorpointertagliverange"></a>IDiaSymbol::get_isAcceleratorPointerTagLiveRange
 Ruft ein Flag, das angibt, ob das Symbol entspricht der *Definition Bereich Symbol* für die Tag-Komponente einer Zeigervariablen im Code für einen C++-AMP-Beschleuniger kompiliert. Die Definition Bereich Symbol ist der Speicherort einer Variablen für einen Textabschnitt Adressen.  

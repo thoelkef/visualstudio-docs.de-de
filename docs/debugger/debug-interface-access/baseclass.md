@@ -17,11 +17,12 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a19dee7c2b31df52a379f6ef2044a862baed7972
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 51768055893ccdc1479a724a44a7b6dbeb24877b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="baseclass"></a>BaseClass
 Jede Basisklasse für einen benutzerdefinierten Typ (UDT)-Symbol wird durch ein untergeordnetes Element mit identifiziert eine `SymTagBaseClass` Tag. Die [idiasymbol:: Get_type](../../debugger/debug-interface-access/idiasymbol-get-type.md) Eigenschaft enthält das Symbol für den zugrunde liegenden UDT, und alle Eigenschaften des zugrunde liegenden UDT stehen als Teil dieser BaseClass-Symbol.  

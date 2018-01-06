@@ -17,11 +17,12 @@ caps.latest.revision: "56"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3e9f72764d8fc87a9605f3bde20b7b2b93f44f39
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 3d4e1be21a7471d318a3429dae60f484227a4f26
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-an-extension-with-a-menu-command"></a>Erstellen eine Erweiterung mit einem Menübefehl
 In dieser exemplarischen Vorgehensweise wird gezeigt, wie eine Erweiterung mit einem Menübefehl zu erstellen, der Editor startet.  
@@ -88,7 +89,7 @@ In dieser exemplarischen Vorgehensweise wird gezeigt, wie eine Erweiterung mit e
   
 4.  Probieren Sie es aus. Wenn Sie Debuggen des Projekts starten, und klicken Sie auf **Extras / aufrufen FirstCommand**, sehen Sie eine Instanz von Editor aufgerufen werden.  
   
-     Können Sie eine Instanz von der <xref:System.Diagnostics.Process> Klasse zum Ausführen von ausführbaren Dateien, nicht nur in Editor. Versuchen Sie es mit calc.exe, z. B..  
+     Können Sie eine Instanz von der <xref:System.Diagnostics.Process> Klasse zum Ausführen von ausführbaren Dateien, nicht nur in Editor. Versuchen Sie es mit calc.exe, z. B.  
   
 ## <a name="cleaning-up-the-experimental-environment"></a>Bereinigen die experimentelle Umgebung  
  Wenn Sie mehrere Erweiterungen entwickeln, oder untersuchen nur Ergebnisse mit verschiedenen Versionen des Codes Erweiterung, die experimentelle Umgebung möglicherweise nicht funktionsfähig mehr, die es sollte, wie. In diesem Fall sollten Sie das Zurücksetzen-Skript ausführen. Es heißt **Zurücksetzen der experimentellen Instanz von Visual Studio 2015**, und es als Teil der Visual Studio-SDK geliefert wird. Dieses Skript entfernt alle Verweise auf die Erweiterungen aus der experimentellen Umgebung aus, damit Sie von Grund auf neu starten können.  

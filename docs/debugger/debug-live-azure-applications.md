@@ -12,22 +12,25 @@ caps.latest.revision: "1"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 04f3f90f6b3ee8aac2ddf1907569043c9d4b56ea
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload:
+- aspnet
+- azure
+ms.openlocfilehash: 32d58ec27d54b1b9c731747b01ad1f59d1d222b7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>Debuggen von live ASP.NET Azure-apps, die mit dem Momentaufnahme-Debugger
 
-Der Debugger Momentaufnahme nimmt eine Momentaufnahme Ihrer Anwendungen in Produktion, bei der Ausführung von Code, der Sie interessiert sind. Um anzuweisen, den Debugger an eine Momentaufnahme zu erstellen, legen Sie Snappoints und Logpoints im Code. Der Debugger können Sie sehen, genau, Einzelheiten ohne Auswirkungen auf Ihre produktionsanwendung Datenverkehr. Der Momentaufnahme-Debugger können Sie die Zeit, um Probleme zu beheben, die in produktionsumgebungen auftreten benötigt, den Nachrichtendurchsatz stark senken.
+Der Debugger Momentaufnahme nimmt eine Momentaufnahme Ihrer Anwendungen in Produktion, bei der Ausführung von Code, der Sie interessiert sind. Legen Sie Andockpunkte und Protokollpunkte in Ihrem Code fest, um den Debugger anzuweisen, eine Momentaufnahme zu erstellen. Der Debugger zeigt Fehler ohne Auswirkungen auf den Datenverkehr Ihrer Produktionsanwendung an. Der Momentaufnahmedebugger kann Sie dabei unterstützen, die Zeit zum Beheben von Fehlern, die in Produktionsumgebungen auftreten, erheblich zu reduzieren.
 
 Snappoints und Logpoints ähneln Haltepunkte. Im Gegensatz zu Haltepunkten Snappoints nicht angehalten, die Anwendung bei Treffer. In der Regel wird die Erstellung einer Momentaufnahme für eine Snappoint 10 bis 20 Millisekunden. 
 
-Momentaufnahmesammlung steht für die folgenden Web-apps in Azure App Service ausgeführt wird:
+Die Momentaufnahmensammlung ist für folgende Web-Apps verfügbar, die in Azure App Service ausgeführt werden:
 
-- ASP.NET-Anwendungen unter .NET Framework 4.6.1 oder höher.
-- ASP.NET Core-Anwendungen, die auf .NET Core 2.0 oder höher auf Windows ausgeführt wird.
+- ASP.NET-Apps, die in .NET Framework 4.6.1 oder höher ausgeführt werden.
+- ASP.NET Core-Apps, die in .NET Core 2.0 oder höher unter Windows ausgeführt werden.
 
 Darüber hinaus wird der Momentaufnahme-Debugger nur für Visual Studio 2017 Enterprise Version 15.5 oder höher und Basic "oder" höher App Service-Plänen verfügbar. 
 

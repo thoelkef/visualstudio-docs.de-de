@@ -17,11 +17,12 @@ caps.latest.revision: "17"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3920bfbd5b1ddbddc3166118ead0c7d0fefff8d8
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: uwp
+ms.openlocfilehash: 8684a1220b871e2c77f8c0229cddd807a6031cd3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debug-uwp-apps-in-visual-studio"></a>Debuggen von uwp-apps in Visual Studio
 Der Visual Studio-Debugger ermöglicht es Ihnen, die Ausführung eines Programms zu steuern und seinen Status zu untersuchen. Sie können den Debugger verwenden, um die Ursache für Fehler in Ihrer uwp-apps zu finden und zu verstehen, wie genau Ihre app funktioniert. Wenn Sie die Ausführung im Debugger anhalten, zeigt Visual Studio die Quelldatei an, die den Ausführungscode enthält, und hebt die Ausführungsanweisung hervor. Sie können sich die Variablenwerte, die Aufrufliste der Ausführungsfunktionen und andere Aspekte Ihres Programmstatus ansehen. Sie können das Programm Anweisung für Anweisung ausführen (schrittweise durchgehen), um zu sehen, wie die Anweisungen die Werte des Programms ändern. Bei in JavaScript geschriebenen Apps können Sie den DOM der Seite untersuchen und bearbeiten.  

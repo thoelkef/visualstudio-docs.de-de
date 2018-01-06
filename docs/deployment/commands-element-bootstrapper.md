@@ -18,11 +18,12 @@ caps.latest.revision: "13"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: ac8580a1b930d4ad18db9eebb275e4eb67d80c62
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 67bbb7cbec1df53a8481acf26273cc371f92bb40
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltcommandsgt-element-bootstrapper"></a>&lt;Befehle&gt; Element (Bootstrapper)
 Die `Commands` Element implementiert Tests, die durch die Elemente beschrieben die `InstallChecks` Element, und welches Paket deklariert die [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Bootstrapper sollten installiert werden, wenn der Test fehlschlägt.  
@@ -72,7 +73,7 @@ Die `Commands` Element implementiert Tests, die durch die Elemente beschrieben d
   
 |Attribut|Beschreibung|  
 |---------------|-----------------|  
-|`Reboot`|Dies ist optional. Bestimmt, ob das System neu starten soll, wenn eines der Pakete ein Neustart-Exitcode zurückgegeben. Die folgende Liste zeigt die gültigen Werte:<br /><br /> `Defer`. Der Neustart wird verzögert, bis zu einem späteren Zeitpunkt.<br /><br /> `Immediate`. Führt einen sofortigen Neustart, wenn eines der Pakete einen Neustart-Exitcode zurückgegeben.<br /><br /> `None`. Bewirkt, dass alle Anforderungen Neustart, ignoriert werden sollen.<br /><br /> Die Standardeinstellung ist `Immediate`.|  
+|`Reboot`|Dies ist optional. Bestimmt, ob das System neu starten soll, wenn eines der Pakete ein Neustart-Exitcode zurückgegeben. Die folgende Liste zeigt die gültigen Werte:<br /><br /> `Defer` Der Neustart wird verzögert, bis zu einem späteren Zeitpunkt.<br /><br /> `Immediate` Führt einen sofortigen Neustart, wenn eines der Pakete einen Neustart-Exitcode zurückgegeben.<br /><br /> `None` Bewirkt, dass alle Anforderungen Neustart, ignoriert werden sollen.<br /><br /> Die Standardeinstellung ist `Immediate`.|  
   
 ## <a name="command"></a>Befehl  
  Das `Command`-Element ist ein untergeordnetes Element des `Commands`-Elements. Ein `Commands` Element haben eine oder mehrere `Command` Elemente. Das Element weist folgende Attribute.  
@@ -123,7 +124,7 @@ Die `Commands` Element implementiert Tests, die durch die Elemente beschrieben d
 |Attribut|Beschreibung|  
 |---------------|-----------------|  
 |`Value`|Erforderlich. Den Exitcodewert, der diese `ExitCode` Element angewendet wird.|  
-|`Result`|Erforderlich. Wie die Installation auf diesen Exitcode reagieren soll. Die folgende Liste zeigt die gültigen Werte:<br /><br /> `Success`. Kennzeichnet das Paket als erfolgreich installiert.<br /><br /> `SuccessReboot`. Kennzeichnet das Paket als erfolgreich installiert, und weist das System neu starten.<br /><br /> `Fail`. Kennzeichnet das Paket aus, als fehlgeschlagen eingestuft.<br /><br /> `FailReboot`. Kennzeichnet das Paket als fehlgeschlagen eingestuft, und weist das System neu starten.|  
+|`Result`|Erforderlich. Wie die Installation auf diesen Exitcode reagieren soll. Die folgende Liste zeigt die gültigen Werte:<br /><br /> `Success` Kennzeichnet das Paket als erfolgreich installiert.<br /><br /> `SuccessReboot` Kennzeichnet das Paket als erfolgreich installiert, und weist das System neu starten.<br /><br /> `Fail` Kennzeichnet das Paket aus, als fehlgeschlagen eingestuft.<br /><br /> `FailReboot` Kennzeichnet das Paket als fehlgeschlagen eingestuft, und weist das System neu starten.|  
 |`String`|Dies ist optional. Der Wert für den Benutzer als Antwort auf diese Exitcode anzuzeigen.|  
 |`FormatMessageFromSystem`|Dies ist optional. Bestimmt, ob die vom System bereitgestellte Fehlermeldung für den Exitcode, oder verwenden Sie den Wert im bereitgestellten `String`. Gültige Werte sind `true`, was bedeutet den Fehler vom System bereitgestellte verwenden und `false`, d. h., die vom bereitgestellten Zeichenfolge verwenden `String`. Die Standardeinstellung ist `false`. Wenn diese Eigenschaft ist `false`, aber `String` ist nicht festgelegt ist, wird der Fehler vom System bereitgestellte verwendet werden.|  
   

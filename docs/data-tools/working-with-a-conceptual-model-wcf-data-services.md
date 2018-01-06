@@ -16,11 +16,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: d9c0fa3846380b58e78b449083eab486954fd8a5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-storage
+ms.openlocfilehash: 86a7a4c253aa9bdd2d311d72f40e8b9374a37ff4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="working-with-a-conceptual-model-wcf-data-services"></a>Arbeiten mit einem konzeptionellen Modell (WCF Data Services)
 Wenn Sie zum Beschreiben der Daten in einer Datenbank ein konzeptionelles Modell verwenden, können Sie Daten über Objekte abfragen, statt zwischen Datenbankschema und Objektmodell zu übersetzen.  
@@ -44,7 +45,7 @@ Wenn Sie zum Beschreiben der Daten in einer Datenbank ein konzeptionelles Modell
   
 |Thema|Beschreibung|  
 |-----------|-----------------|  
-|[Vorgehensweise: hinzufügen, ändern und Löschen von Entitäten](/dotnet/framework/data/wcf/how-to-add-modify-and-delete-entities-wcf-data-services)|Zeigt, wie Entitätsdaten in einem Datendienst erstellt, aktualisiert und gelöscht werden.|  
+|[Vorgehensweise: Hinzufügen, Ändern und Löschen von Entitäten](/dotnet/framework/data/wcf/how-to-add-modify-and-delete-entities-wcf-data-services)|Zeigt, wie Entitätsdaten in einem Datendienst erstellt, aktualisiert und gelöscht werden.|  
 |[Vorgehensweise: Definieren von Entitätsbeziehungen](/dotnet/framework/data/wcf/how-to-define-entity-relationships-wcf-data-services)|Zeigt, wie Beziehungen in einem Datendienst erstellt oder geändert werden.|  
   
 ## <a name="see-also"></a>Siehe auch  

@@ -13,11 +13,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 24d6401cae58b0bede44519900f6d72bd77ab2a9
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: c4dd77680fb529575140dc718a4f1c0a58090029
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>Erstellen einer einfachen datenanwendung mit WPF und Entity Framework 6
 Diese Walkthough zeigt, wie eine grundlegende "Formulare über Daten"-Anwendung in Visual Studio mit SQL Server LocalDB, die Northwind-Datenbank, Entity Framework 6 und Windows Presentation Foundation zu erstellen. Es zeigt, wie Sie einfache Datenbindung mit einer Master / Detail-Ansicht, und sie hat auch eine benutzerdefinierte "binden Navigator" mit den Schaltflächen für "Nächste verschieben", "Vorherige verschieben," "An den Anfang, verschieben" "ans Ende," "Aktualisieren" und "Delete".  
@@ -422,7 +423,7 @@ Diese Handlermethoden der MainWindow-Klasse in "MainWindow.Xaml.cs" hinzufügen.
 [!code-csharp[CommandHandlers#3](../data-tools/codesnippet/CSharp/CreateWPFDataApp/MainWindow.xaml.cs#3)]  
   
 ## <a name="run-the-application"></a>Ausführen der Anwendung
-Drücken Sie zum Starten des Debugvorgangs **F5**. Daraufhin sollte Kunden- und Bestelldaten aufgefüllt, die im Raster, und die Navigationsschaltflächen sollte wie erwartet funktionieren. Klicken Sie auf "Commit", um einen neuen Kunden oder eine Bestellung mit dem Modell hinzufügen, nachdem Sie die Daten eingegeben haben. Klicken Sie auf "Abbrechen", um aus einem neuen Kunden oder neue Bestellformular zurück, ohne die Daten zu speichern. Nehmen Sie Änderungen vor, um vorhandene Kunden und Bestellungen direkt in die Textfelder ein, und diese Änderungen werden automatisch in das Modell geschrieben.  
+Drücken Sie **F5**, um mit dem Debuggen zu beginnen. Daraufhin sollte Kunden- und Bestelldaten aufgefüllt, die im Raster, und die Navigationsschaltflächen sollte wie erwartet funktionieren. Klicken Sie auf "Commit", um einen neuen Kunden oder eine Bestellung mit dem Modell hinzufügen, nachdem Sie die Daten eingegeben haben. Klicken Sie auf "Abbrechen", um aus einem neuen Kunden oder neue Bestellformular zurück, ohne die Daten zu speichern. Nehmen Sie Änderungen vor, um vorhandene Kunden und Bestellungen direkt in die Textfelder ein, und diese Änderungen werden automatisch in das Modell geschrieben.  
   
 ## <a name="see-also"></a>Siehe auch
 [Visual Studio-Datentools für .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)  

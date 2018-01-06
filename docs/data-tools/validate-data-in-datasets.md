@@ -25,11 +25,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 0f328cbaac03680885bdbda97dff7bc9ac3cf2cf
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: b5cc63d5a83c9f1400dd183982fa68864d35fdbf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="validate-data-in-datasets"></a>Überprüfen Sie die Daten in datasets
 Validieren von Daten ist der Prozess der bestätigt, den die Werte, die in Datenobjekte eingegeben werden, die diese Einschränkungen in einer Dataset-Schemas entsprechen. Dieser Vorgang wird bestätigt, dass diese Werte die Regeln eingehalten werden, die für Ihre Anwendung eingerichtet wurden. Es wird empfohlen, überprüfen Sie die Daten vor dem Senden von Updates der zugrunde liegenden Datenbank. Dies reduziert die Fehler als auch die potenzielle Anzahl von Roundtrips zwischen einer Anwendung und der Datenbank.  
@@ -67,7 +68,7 @@ Wenn Ihre Anwendung ein typisiertes Dataset verwendet, können Sie stark typisie
   
 ## <a name="data-update-events"></a>Ereignisse zum Aktualisieren von Daten  
   
-|Ereignis|Beschreibung|  
+|event|Beschreibung|  
 |-----------|-----------------|  
 |<xref:System.Data.DataTable.ColumnChanging>|Der Wert in einer Spalte ist geändert wird. Das Ereignis übergibt die Zeilen und Spalten an, die Sie zusammen mit den vorgeschlagenen neuen Wert.|  
 |<xref:System.Data.DataTable.ColumnChanged>|Der Wert in einer Spalte wurde geändert. Das Ereignis übergibt die Zeilen und Spalten an, die Sie zusammen mit den vorgeschlagenen Wert.|  

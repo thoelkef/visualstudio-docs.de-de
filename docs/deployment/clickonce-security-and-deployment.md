@@ -21,11 +21,12 @@ caps.latest.revision: "32"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 7e56d596c37960ddfa548921da897f08fbfbbf5b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 1923c39669d50303f907974816fbb54297c477c0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="clickonce-security-and-deployment"></a>ClickOnce-Sicherheit und Bereitstellung
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]ist eine bereitstellungstechnologie, mit dem Sie selbstaktualisierung Windows-basierten Anwendungen erstellen, die installiert und mit minimaler Benutzerinteraktion ausgeführt werden können. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]bietet vollständige Unterstützung für das Veröffentlichen und Aktualisieren von Anwendungen mit ClickOnce-Technologie bereitgestellt werden, wenn Sie Ihre Projekte mit Visual Basic und Visual c# entwickelt haben. Informationen zum Bereitstellen von Visual C++-Anwendungen finden Sie unter [ClickOnce-Bereitstellung für Visual C++-Anwendungen](/cpp/ide/clickonce-deployment-for-visual-cpp-applications).  
@@ -54,7 +55,7 @@ ms.lasthandoff: 10/27/2017
  Authenticode-Zertifikate werden verwendet, um die Echtheit des Herausgebers der Anwendung zu überprüfen. Mithilfe von Authenticode für die Bereitstellung einer Anwendung verhindert ClickOnce ein schädliches Programm nahm selbst als sicheres Programm aus einer bekannten und vertrauenswürdigen Quelle stammen. Optional können Zertifikate auch zum Signieren der Anwendung verwendet werden und die Bereitstellungsmanifeste um nachzuweisen, dass die Dateien nicht manipuliert wurden. Weitere Informationen finden Sie unter [ClickOnce und Authenticode](../deployment/clickonce-and-authenticode.md). Zertifikate können auch verwendet werden, zum Konfigurieren von Clientcomputern, um eine Liste der vertrauenswürdigen Herausgeber verfügen. Wenn eine Anwendung von einem vertrauenswürdigen Herausgeber stammen, kann er ohne Eingreifen des Benutzers installiert werden. Weitere Informationen finden Sie unter [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md).  
   
 ### <a name="code-access-security"></a>Codezugriffssicherheit  
- Codezugriffssicherheit wird den Zugriff zu begrenzen, den Code auf geschützte Ressourcen hat. In den meisten Fällen können Sie die Zonen "Internet" oder "Lokales Intranet befinden, die Berechtigungen zu beschränken. Verwenden der **Sicherheit** auf der Seite der **ProjectDesigner** , die für die Anwendung entsprechende Zone anfordert. Sie können auch Debuggen von Anwendungen mit eingeschränkten Berechtigungen für den Endbenutzer zu emulieren. Weitere Informationen finden Sie unter [Codezugriffssicherheit für ClickOnce-Anwendungen](../deployment/code-access-security-for-clickonce-applications.md).  
+ Codezugriffssicherheit wird den Zugriff zu begrenzen, den Code auf geschützte Ressourcen hat. In den meisten Fällen können Sie die Zonen "Internet" oder "Lokales Intranet befinden, die Berechtigungen zu beschränken. Verwenden der **Sicherheit** auf der Seite der **ProjectDesigner** , die für die Anwendung entsprechende Zone anfordert. Sie können auch Debuggen von Anwendungen mit eingeschränkten Berechtigungen für den Endbenutzer zu emulieren. Weitere Informationen finden Sie unter [Code Access Security for ClickOnce Applications (Codezugriffssicherheit für ClickOnce-Anwendungen)](../deployment/code-access-security-for-clickonce-applications.md).  
   
 ### <a name="clickonce-trust-prompt"></a>ClickOnce-Vertrauensaufforderung  
  Wenn die Anwendung mehr Berechtigungen fordert als die Zone zulässt, kann der Endbenutzer aufgefordert werden, um eine Vertrauensstellung Entscheidung zu treffen. Die Endbenutzer können entscheiden, ob ClickOnce-Anwendungen wie z. B. Windows Forms-Anwendungen, Windows Presentation Foundation-Anwendungen, konsolenanwendungen, XAML-Browseranwendungen und Office-Projektmappen vertrauenswürdig ist und ausgeführt werden. Weitere Informationen finden Sie unter [Vorgehensweise: Konfigurieren der ClickOnce-vertrauen Verhalten der Authentifizierungeingabeaufforderung](../deployment/how-to-configure-the-clickonce-trust-prompt-behavior.md).  

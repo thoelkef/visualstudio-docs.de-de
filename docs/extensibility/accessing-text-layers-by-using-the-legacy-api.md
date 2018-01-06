@@ -13,11 +13,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 54a981a57605ccb93062ac0678b1e8b5673c6d1a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 8a5f7a80e8d594f3c9e62ecd2047cc1116948d2c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="accessing-text-layers-by-using-the-legacy-api"></a>Zugreifen auf Textebenen über die Legacy-API
 Eine Ebene kapselt normalerweise einige Aspekte der TextLayout. Eine Ebene "-Funktion-am-a-Time" Blendet z. B. Text, vor und nach einer Funktion, die das Caretzeichen (Texteinfügemarke) enthält.  

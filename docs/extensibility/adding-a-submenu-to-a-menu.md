@@ -17,11 +17,12 @@ caps.latest.revision: "43"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6a77cd9504dffc50fd3a3be021cb4e379378f9ae
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 150252dceaff2d194af8f59d92fdaf39cdae259c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="adding-a-submenu-to-a-menu"></a>Ein Menü hinzugefügt ein Untermenü
 Diese exemplarische Vorgehensweise basiert auf der Demo in [der Visual Studio-Menüleiste ein Menü hinzugefügt](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md) durch Hinzufügen ein Untermenüs zum Veranschaulichen der **TestMenu** Menü.  
@@ -80,7 +81,7 @@ Diese exemplarische Vorgehensweise basiert auf der Demo in [der Visual Studio-Me
     </Button>  
     ```  
   
-6.  Erstellen Sie die Lösung und beginnen Sie mit dem Debuggen. Die experimentelle Instanz sollte angezeigt werden.  
+6.  Erstellen Sie die Projektmappe, und beginnen Sie mit dem Debuggen. Die experimentelle Instanz sollte angezeigt werden.  
   
 7.  Klicken Sie auf **TestMenu** um ein neues Untermenü mit dem Namen finden Sie unter **Untermenü**. Klicken Sie auf **Untermenü** öffnen im Untermenü und Anzeigen eines neuen Befehls **Test Unterbefehl**. Beachten Sie, dass beim Klicken auf **Test Unterbefehl** wird keine Aktion ausgeführt.  
   
