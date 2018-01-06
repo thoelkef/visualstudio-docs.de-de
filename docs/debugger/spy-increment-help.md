@@ -13,11 +13,12 @@ caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e0d7f7ccb9b752af4789b757fb1a3ed2ae5d29e6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 10e50e8afde8bd4d5669ee899a061b708377f28f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="spy-help"></a>Spy++-Hilfe
 Die Dokumentation für das Hilfsprogramm Spy++ enthält zwei Gruppen von allgemeinen Themen auf mithilfe von Spy++ und für das Spy++-Ansichten. Danach folgt von Spy++-Referenz, die weitere Details für jede im Kontextmenü verfügbaren Befehl und das Dialogfeld bereitstellt.  

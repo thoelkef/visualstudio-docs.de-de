@@ -15,11 +15,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3bc985bf9fb55b67b5a332f007abe98c6718fbf2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: aa70e2a6019a97c248e6d4b411dacc222be59a1f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="implementing-a-port-supplier"></a>Implementieren einen Port Lieferanten
 Ein Port gelieferte Ports auf Anforderung an die Sitzung Debug-Manager (SDM). Ein Port Lieferant muss implementiert werden, beim Debuggen von einem nicht-DCOM-Computer oder ein neues Gerät unterstützt werden muss. Beispielsweise könnten Sie zum Debuggen auf einem Mobiltelefon zu gewährleisten, einen Port Lieferanten implementieren, der Ports, die an das Mobiltelefon (z. B. mithilfe von IR- oder eine Zelle Verbindung) verbinden und listet die Prozesse und Programme bereitstellt, die auf dem Telefon ausgeführt.  

@@ -21,11 +21,12 @@ caps.latest.revision: "9"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 41a601febff80b002512a3783d8405dc42e5d766
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: a3a2770933f4a9f600b12a2d601deca855de3a94
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-specify-the-location-where-end-users-will-install-from"></a>Gewusst wie: Angeben des Speicherorts für die Installation durch Endbenutzer
 Beim Veröffentlichen einer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung, der Speicherort, in dem Benutzer zum Herunterladen und Installieren der Anwendung ist nicht unbedingt der Speicherort, in dem Sie zunächst die Anwendung veröffentlichen. Beispielsweise in einigen Organisationen kann ein Entwickler eine Anwendung auf einem Testserver veröffentlichen, und klicken Sie dann die Anwendung auf einem Webserver ein Administrator verschiebt.  
@@ -45,6 +46,6 @@ Beim Veröffentlichen einer [!INCLUDE[ndptecclick](../deployment/includes/ndptec
 3.  Geben Sie im Installations-URL-Feld den Installationsspeicherort an, die über eine vollqualifizierte URL mit dem Format http://www.microsoft.com/ApplicationName oder einen UNC-Pfad im Format \\\Server\ApplicationName.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Vorgehensweise: angeben, auf dem Visual Studio die Dateien kopiert](../deployment/how-to-specify-where-visual-studio-copies-the-files.md)   
+ [Vorgehensweise: Angeben des Speicherorts, an den Visual Studio die Dateien kopiert](../deployment/how-to-specify-where-visual-studio-copies-the-files.md)   
  [Veröffentlichen von ClickOnce-Anwendungen](../deployment/publishing-clickonce-applications.md)   
  [Gewusst wie: Veröffentlichen einer ClickOnce-Anwendung mit dem Webpublishing-Assistenten](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

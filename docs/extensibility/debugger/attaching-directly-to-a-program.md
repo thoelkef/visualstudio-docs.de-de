@@ -13,11 +13,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8818a57d50595b3c40fa45875a1dfe23d34fb369
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c528925e323e4cff5784365e3097cc7f5f414963
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="attaching-directly-to-a-program"></a>Anhängen an ein Programm direkt
 Gehen Sie Benutzer, die zum Debuggen von Programmen in einem Prozess, der bereits in der Regel ausgeführt werden soll:  

@@ -17,11 +17,12 @@ caps.latest.revision: "42"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cf4c5d1e71a4d0e0d8ac74ba02bff29ddc1c7477
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: uwp
+ms.openlocfilehash: d4a64f9463650941fe8d645a1a6b92376277f0b6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="run-uwp-and-windows-81-apps-in-the-simulator"></a>Universelle Windows-Plattform und Windows 8.1-apps im Simulator ausführen
 Visual Studio-Simulator für universelle Windows-Plattform und Windows 8.1-apps ist eine Desktopanwendung, die eine universelle Windows-Plattform oder Windows 8.1-app simuliert. Sie können ausführen, wählen Sie Anwendungen, die physische Bildschirmgröße und-Auflösung, die Sie emulieren möchten. Sie können auch typische Touch- und rotationsereignisse simulieren und Netzwerkverbindungseigenschaften simulieren.
@@ -146,7 +147,7 @@ Visual Studio-Simulator für universelle Windows-Plattform und Windows 8.1-apps 
   
  [Reagieren auf Systemereignisse mit Hintergrundaufgaben](http://msdn.microsoft.com/en-us/f7c86e86-a7ae-4abb-a923-76b03337a80a)  
   
- [Gewusst wie: Auslösen anhalten, fortsetzen und hintergrundereignissen in uwp-apps](http://msdn.microsoft.com/library/windows/apps/hh974425.aspx)  
+ [So können Sie Ereignisse in Windows UWP-Apps auslösen, anhalten, fortsetzen und im Hintergrund ausführen](http://msdn.microsoft.com/library/windows/apps/hh974425.aspx)  
   
 ##  <a name="BKMK_Navigate_the_simulator_with_the_keyboard"></a> Navigieren des Simulators mit der Tastatur  
  Sie können die simulatorsymbolleiste navigieren, durch Drücken von **STRG + ALT + nach-oben-Taste** auf den Fokus vom simulatorfenster auf die Simulator-Symbolleiste zu ändern. Verwenden Sie die **NACH-OBEN-TASTE** und die **NACH-UNTEN-TASTE** , um zwischen den Schaltflächen auf der Symbolleiste zu wechseln.  

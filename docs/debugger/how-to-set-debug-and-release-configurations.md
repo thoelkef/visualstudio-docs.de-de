@@ -34,11 +34,12 @@ caps.latest.revision: "45"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4dc53ebb4a61d6d4740effa7b17b4d0a26d46a68
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: cc63ca48f7c35c382b668d9b7c794a4905b9dac9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-set-debug-and-release-configurations-in-visual-studio"></a>Vorgehensweise: Festlegen von Debug- und Releasekonfigurationen in Visual Studio
 Visual Studio-Projekte verfügen über separate Release- und Debugkonfigurationen für Ihr Programm. Wie die Namen bereits vermuten lassen, erstellen Sie die Debugversion zum Debuggen und die Releaseversion für das endgültige Release, d. h. die Freigabe.  
@@ -47,7 +48,7 @@ Die Debugkonfiguration des Programms wird mit vollständigen symbolischen Debugi
   
 Die Releasekonfiguration des Programms enthält keine symbolischen Debuginformationen und wird vollständig optimiert. Debuggen können in PDB-Dateien generiert werden [abhängig von den Compileroptionen](#BKMK_symbols_release) verwendet werden. PDB-Dateien erstellen kann sehr nützlich sein, wenn Sie später die Releaseversion debuggen müssen.  
   
-Weitere Informationen zu Buildkonfigurationen finden Sie unter [Grundlagen zu Buildkonfigurationen](../ide/understanding-build-configurations.md).  
+Weitere Informationen zu Buildkonfigurationen finden Sie unter [Grundlagen der Buildkonfigurationen](../ide/understanding-build-configurations.md).  
   
 Sie können die Buildkonfiguration aus ändern die **erstellen** im Menü auf der Symbolleiste oder in den Eigenschaftenseiten des Projekts. Die Eigenschaftenseiten des Projekts sind sprachspezifisch. Das folgende Verfahren zeigt, wie die Buildkonfiguration über die Symbolleiste und das Menü geändert wird. Weitere Informationen zum Ändern die Buildkonfiguration in Projekten, die in verschiedenen Sprachen finden Sie unter auch finden Sie im Abschnitt unten.  
   
@@ -116,7 +117,7 @@ Ausführliche Informationen zu projekteinstellungen für die Debugkonfiguratione
  [Angeben von Symbol(PDB)- und Quelldateien im Visua Studio-debugger](../debugger/debugger-settings-and-preparation.md)  
  [Debuggereinstellungen und -vorbereitung](../debugger/debugger-settings-and-preparation.md)   
  [Projekteinstellungen für eine C++-Debugkonfiguration](../debugger/project-settings-for-a-cpp-debug-configuration.md)   
- [Projekteinstellungen für C#-Debugkonfiguration](../debugger/project-settings-for-csharp-debug-configurations.md)   
- [Projekteinstellungen für eine Visual Basic-Debugkonfiguration](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
+ [Project Settings for  C# Debug Configurations (Projekteinstellungen für C#-Debugkonfigurationen)](../debugger/project-settings-for-csharp-debug-configurations.md)   
+ [Project Settings for a Visual Basic Debug Configuration (Projekteinstellungen für eine Visual Basic-Debugkonfiguration)](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
  [Vorgehensweise: Erstellen und Bearbeiten von Konfigurationen](../ide/how-to-create-and-edit-configurations.md)   
  [Debug- und Release-Projektkonfigurationen](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e)

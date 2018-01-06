@@ -19,11 +19,12 @@ caps.latest.revision: "9"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 9b240bcdcc576e7ace85e766b54e5cd70e4e5503
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 02e6a4c0b69bf9e9d6170175b4324ccb226854e2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api"></a>Gewusst wie: Programmgesteuertes Suchen nach Anwendungsupdates mit der API für die ClickOnce-Bereitstellung
 ClickOnce bietet zwei Möglichkeiten, eine Anwendung zu aktualisieren, nachdem er bereitgestellt wird. Bei der ersten Methode können Sie die ClickOnce-Bereitstellung automatisch zur Überprüfung auf Updates in bestimmten Intervallen konfigurieren. In der zweiten Methode schreiben Sie Code, der verwendet die <xref:System.Deployment.Application.ApplicationDeployment> klassenbasierter nach Updates suchen, auf ein Ereignis, z. B. eine Anforderung des Benutzers.  

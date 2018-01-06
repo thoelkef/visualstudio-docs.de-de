@@ -21,11 +21,12 @@ caps.latest.revision: "4"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 19c4c961dd226ada84fe825643af6d1c7eacc925
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: bcd950dab8fe00ecdaec83c64a819b58193b1272
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltstringsgt-element-bootstrapper"></a>&lt;Zeichenfolgen&gt; Element (Bootstrapper)
 Definiert die lokalisierte Zeichenfolgen für Produktnamen, Paketnamen und Installationsfehlermeldungen.  

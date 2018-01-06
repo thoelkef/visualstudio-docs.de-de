@@ -13,11 +13,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 91bedf387fe86c2bf2fefb34e643e581a37c15bf
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 154a5891d9a11dd77c92f3f297a2e905d40f0327
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="notifying-the-port"></a>Benachrichtigen den Port
 Nach dem Starten eines Programms, muss der Port, wie folgt darüber informiert werden:  
@@ -40,7 +41,7 @@ Nach dem Starten eines Programms, muss der Port, wie folgt darüber informiert w
 > [!NOTE]
 >  Dies sollte nicht mit verwechselt werden die `IDebugProgramCreateEvent2` -Schnittstelle, die später von der DE gesendet wird.  
   
- Zusammen mit der Ereignis-Oberfläche selbst, der Port sendet die [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md), [IDebugProcess2](../../extensibility/debugger/reference/idebugprocess2.md), und [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) Schnittstellen, die den Port darstellen, zu verarbeiten, und Programmieren Sie, bzw.. Ruft die SDM [IDebugProgram2::GetEngineInfo](../../extensibility/debugger/reference/idebugprogram2-getengineinfo.md) um die GUID des DE abzurufen, die das Programm debuggen können. Die GUID abgerufen wurde ursprünglich von der [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) Schnittstelle.  
+ Zusammen mit der Ereignis-Oberfläche selbst, der Port sendet die [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md), [IDebugProcess2](../../extensibility/debugger/reference/idebugprocess2.md), und [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) Schnittstellen, die den Port darstellen, zu verarbeiten, und Programmieren Sie, bzw. Ruft die SDM [IDebugProgram2::GetEngineInfo](../../extensibility/debugger/reference/idebugprogram2-getengineinfo.md) um die GUID des DE abzurufen, die das Programm debuggen können. Die GUID abgerufen wurde ursprünglich von der [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) Schnittstelle.  
   
  Die SDM überprüft, um festzustellen, ob die DE in der Liste der zulässigen DEs ist. Die SDM ruft diese Liste ab, aus der Projektmappe aktive programmeinstellungen, die ursprünglich von der debugpaket übergeben. DE in der Liste der zulässigen befinden muss, andernfalls wird an das Programm nicht angefügt werden.  
   

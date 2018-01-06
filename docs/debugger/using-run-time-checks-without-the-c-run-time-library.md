@@ -26,11 +26,12 @@ caps.latest.revision: "15"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fb4cef71a9e9557b5a12a7dfe857d67b22dc69b1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: fc81dd57ca6a91cd748da82c792c2bbeca88bb25
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-run-time-checks-without-the-c-run-time-library"></a>Verwenden von Laufzeitüberprüfungen ohne die C-Laufzeitbibliothek
 Wenn Sie das Programm ohne die C-Laufzeitbibliothek verknüpfen, verwenden **/NODEFAULTLIB**, und laufzeitfehlerüberprüfungen verwenden möchten, müssen Sie mit RunTmChk.lib verknüpfen.  

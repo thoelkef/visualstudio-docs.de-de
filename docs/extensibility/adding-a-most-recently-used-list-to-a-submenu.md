@@ -16,11 +16,12 @@ caps.latest.revision: "46"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d622bd917548666e12eff6d29639f62d3ef4bc1f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 087faaae07c4c240b53830ee238cee4f9065d21f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="adding-a-most-recently-used-list-to-a-submenu"></a>Liste aus, um ein Untermenü verwendet eine vor kurzem hinzufügen
 Diese exemplarische Vorgehensweise basiert auf den Demos in [ein Menü ein Untermenü hinzugefügt](../extensibility/adding-a-submenu-to-a-menu.md), und zeigt, wie eine dynamische Liste ein Untermenü hinzugefügt. Die dynamische Liste bildet die Grundlage für die Erstellung einer Liste der zuletzt verwendeten (MRU).  
@@ -34,7 +35,7 @@ Diese exemplarische Vorgehensweise basiert auf den Demos in [ein Menü ein Unter
  Weitere Informationen über Menüs und VSCT-Dateien finden Sie unter [Befehle, Menüs und Symbolleisten](../extensibility/internals/commands-menus-and-toolbars.md).  
   
 ## <a name="prerequisites"></a>Erforderliche Komponenten  
- Um dieser exemplarischen Vorgehensweise folgen zu können, müssen Sie das Visual Studio SDK installieren. Weitere Informationen finden Sie unter [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
+ Um diese exemplarische Vorgehensweise befolgen zu können, müssen Sie das Visual Studio SDK installieren. Weitere Informationen finden Sie unter [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
   
 ## <a name="creating-an-extension"></a>Erstellen eine Erweiterung  
   

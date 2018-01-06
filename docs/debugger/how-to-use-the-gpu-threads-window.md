@@ -21,11 +21,12 @@ caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 23bb4ee4550f70681152fc14cc66a642597125ad
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b4782a1650034424d2616e47f46e07cec4d01ae5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-use-the-gpu-threads-window"></a>Gewusst wie: Verwenden des Fensters "GPU-Threads"
 Im Fenster "GPU-Threads" können Sie Threads in der debuggten GPU überprüfen und diese bearbeiten. Weitere Informationen zu Anwendungen, die auf dem GPU ausgeführt werden, finden Sie unter [Übersicht über C++ AMP](/cpp/parallel/amp/cpp-amp-overview).  
@@ -64,7 +65,7 @@ Im Fenster "GPU-Threads" können Sie Threads in der debuggten GPU überprüfen u
   
 5.  Legen Sie einen Haltepunkt im GPU-Code fest.  
   
-6.  Wählen Sie in der Menüleiste **Debuggen**, **Debuggen**. Warten Sie, bis die Anwendung den Haltepunkt erreicht hat.  
+6.  Klicken Sie in der Menüleiste auf **Debuggen** und dann auf **Debuggen starten**. Warten Sie, bis die Anwendung den Haltepunkt erreicht hat.  
   
 7.  Eine der Menüleiste auswählen **Debuggen**, **Windows**, **GPU-Threads**.  
   

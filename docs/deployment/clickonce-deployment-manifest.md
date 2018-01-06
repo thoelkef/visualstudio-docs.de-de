@@ -19,11 +19,12 @@ caps.latest.revision: "23"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 4e0734079cc3a54666c7e9b736ec1f3284ad891a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 7cca74c6b0b5f1c118bb1360184558fc383c40c3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="clickonce-deployment-manifest"></a>ClickOnce-Bereitstellungsmanifest
 Ein Bereitstellungsmanifest ist eine XML-Datei, die eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]-Bereitstellung beschreibt, einschließlich der Bestimmung der aktuellen [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]-Anwendungsversion für die Bereitstellung.  
@@ -39,7 +40,7 @@ Ein Bereitstellungsmanifest ist eine XML-Datei, die eine [!INCLUDE[ndptecclick](
 |[\<CompatibleFrameworks >-Element](../deployment/compatibleframeworks-element-clickonce-deployment.md)|Erforderlich. Identifiziert die Versionen von .NET Framework, mit denen diese Anwendung installiert und ausgeführt werden kann.|`SupportUrl`|  
 |[\<Dependency >-Element](../deployment/dependency-element-clickonce-deployment.md)|Erforderlich. Identifiziert die Version der Anwendung, die für die Bereitstellung installiert werden soll, und den Speicherort des Anwendungsmanifests.|`preRequisite`<br /><br /> `visible`<br /><br /> `dependencyType`<br /><br /> `codebase`<br /><br /> `size`|  
 |[\<PublisherIdentity >-Element](../deployment/publisheridentity-element-clickonce-deployment.md)|Für signierte Manifeste erforderlich. Enthält Informationen zum Herausgeber, der dieses Bereitstellungsmanifest signiert hat.|`Name`<br /><br /> `issuerKeyHash`|  
-|[\<Signatur >-Element](../deployment/signature-element-clickonce-deployment.md)|Dies ist optional. Enthält die notwendigen Informationen, um dieses Bereitstellungsmanifest digital zu signieren.|Keine|  
+|[\<Signatur >-Element](../deployment/signature-element-clickonce-deployment.md)|Dies ist optional. Enthält die notwendigen Informationen, um dieses Bereitstellungsmanifest digital zu signieren.|Keiner|  
 |[\<CustomErrorReporting >-Element](../deployment/customerrorreporting-element-clickonce-deployment.md)|Dies ist optional. Gibt einen URI an, der bei einem Fehler angezeigt wird.|URI|  
   
 ## <a name="remarks"></a>Hinweise  

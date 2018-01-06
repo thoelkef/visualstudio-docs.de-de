@@ -15,11 +15,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fa7378493c8df41b70be6fda17b2763f90fd7f04
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 1c05dc0bd15dc5c1959024327396d848cd0b1112
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="implementing-and-registering-a-port-supplier"></a>Implementieren und registrieren einen Port Lieferanten
 Die Rolle eines Lieferanten Port ist zu verfolgen, und geben Sie die Ports, die wiederum Prozesse zu verwalten. Zum Zeitpunkt der erstellt werden muss, ist der Lieferant Port mit CoCreate mit den Port Lieferanten-GUID (die Sitzung Debug-Manager [SDM] Port Lieferanten, die ausgewählten Benutzer oder die Port-Lieferanten, die vom Projektsystem angegeben verwenden) instanziiert. Ruft die SDM dann [CanAddPort](../../extensibility/debugger/reference/idebugportsupplier2-canaddport.md) um festzustellen, ob es sich bei allen Ports hinzugefügt werden können. Wenn Sie ein Port hinzugefügt werden kann, ein neuer Port von Aufrufen angefordert wird [hinzufügen](../../extensibility/debugger/reference/idebugportsupplier2-addport.md) und zur Übergabe an ein [IDebugPortRequest2](../../extensibility/debugger/reference/idebugportrequest2.md) , den Port beschreibt. `AddPort`Gibt einen neuen Port dargestellte zurück ein [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) Schnittstelle.  

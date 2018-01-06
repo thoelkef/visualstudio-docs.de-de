@@ -19,11 +19,12 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e02c91f5e5a55e82633d89aa7209321126271e8e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a11770bc54a7b96aa918b73b34e0028731bf0f9c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="no-source-available"></a>Keine Quelle verfügbar
 Das Projekt enthält keinen Quellcode für den Code, den Sie anzeigen möchten. Die übliche Ursache ist Doppelklicken ein Modul, das nicht Quellcode, in verfügt der **Aufruflistenfenster** oder **Fensters "Threads"**. Sie können das Debuggen fortsetzen, jedoch das Quellcodefenster nicht zum Festlegen von Haltepunkten und zum Durchführen anderer Aktionen an dieser Position verwenden. Wenn Sie einen Haltepunkt festzulegen, verwenden die **Disassemblyfenster** stattdessen.  

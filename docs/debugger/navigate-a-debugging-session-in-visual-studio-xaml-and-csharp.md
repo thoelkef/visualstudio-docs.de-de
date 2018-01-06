@@ -17,11 +17,12 @@ caps.latest.revision: "18"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0c69ff648e2a1ac8c60746f1e7879e80c2063c2a
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: uwp
+ms.openlocfilehash: d5fa005273ada8869da467c9db97e0263f43f555
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="navigate-a-debugging-session-in-visual-studio-xaml-and-c"></a>Navigieren in einer Debugsitzung in Visual Studio (Xaml und C#)
 Mit diesem Schnellstart wird veranschaulicht, wie in Debugsitzungen in Visual Studio navigiert und wie der Programmzustand einer Sitzung angezeigt und geändert wird.  
@@ -63,7 +64,7 @@ Mit diesem Schnellstart wird veranschaulicht, wie in Debugsitzungen in Visual St
   
  Nach dem Abbrechen der App-Ausführung (das auch als Debuggerunterbrechung bezeichnet wird) können Sie steuern, wie der Rest des Programmcodes ausgeführt wird. Sie können zeilenweise fortsetzen, vom Methodenaufruf zur Methode selbst wechseln oder eine aufgerufene Methode in einem einzigen Schritt ausführen. Diese Prozeduren werden als Durchlaufen der App  in Einzelschritten bezeichnet. Sie können zudem die Standardausführung der App fortsetzen und bis zum nächsten festgelegten Haltepunkt oder der Codezeile ausführen, in der sich der Cursor befindet. Sie können die Debugsitzung jederzeit beenden. Der Debugger wurde entworfen, um die erforderlichen Aufräumarbeiten durchzuführen und die Ausführung zu beenden.  
   
-### <a name="example-1"></a>Beispiel 1  
+### <a name="example-1"></a>Beispiel 1  
  In diesem Beispiel legen Sie einen Haltepunkt im MainPage-Konstruktor der Datei "MainPage.xaml.cs" fest, führen einen Einzelschritt in die erste Methode durch, zeigen Variablenwerte an, und beenden anschließend das Debuggen.  
   
  **Festlegen eines Haltepunkts.** Legen Sie im MainPage-Konstruktor einen Haltepunkt in der `methodTrack = "Main Page";` -Anweisung fest. Wählen Sie die Zeile im schattierten Bundsteg des Quellcode-Editors aus (Tastatur: Positionieren Sie den Cursor in der Zeile, und drücken Sie F9).  
@@ -151,7 +152,7 @@ Mit diesem Schnellstart wird veranschaulicht, wie in Debugsitzungen in Visual St
   
  Mitunter ist es schwierig, einen Variablenwert in der Zeile eines Datentipp- oder Variablenfensters anzuzeigen. Der Debugger kann Zeichenfolgen, HTML und XML in einer Text-Schnellansicht anzeigen, die eine formatierte Ansicht des Werts in einem bildlauffähigen Fenster darstellt.  
   
-### <a name="example-3"></a>Beispiel 3  
+### <a name="example-3"></a>Beispiel 3  
  In diesem Beispiel legen Sie einen bedingten Haltepunkt fest, um an einer bestimmten Iteration einer Schleife zu unterbrechen und anschließend bis zum nach der Schleife positionierten Cursor auszuführen. Zudem wird der Wert der Variablen in einer Text-Schnellansicht angezeigt.  
   
  **Aufrufen der Methode "Example3" im MainPage-Konstruktor.** Bearbeiten Sie den MainPage-Konstruktor, und ersetzen Sie die Zeile nach `methodTrack = String.Empty;` durch die Zeile `Example3();`aus.  
@@ -194,7 +195,7 @@ Mit diesem Schnellstart wird veranschaulicht, wie in Debugsitzungen in Visual St
   
  ![Aufrufen von "example4" aus der Demomethode](../debugger/media/dbg_basics_callexample4.png "DBG_Basics_CallExample4")  
   
- **Ausführen bis zur Ausnahme.** Starten Sie die Debugsitzung, indem Sie im Menü **Debuggen starten** die Option **Debuggen** (Tastatur: F5). Drücken Sie erneut F5, um die Ausführung fortzusetzen. Der Debugger unterbricht die Ausführung an der Ausnahme in der "Example4"-Methode und zeigt ein Ausnahmedialogfeld an.  
+ **Ausführen bis zur Ausnahme.** Starten Sie die Debugsitzung, indem Sie im Menü **Debuggen** on the **Debuggen starten** auszuwählen (Tastatur: F5). Drücken Sie erneut F5, um die Ausführung fortzusetzen. Der Debugger unterbricht die Ausführung an der Ausnahme in der "Example4"-Methode und zeigt ein Ausnahmedialogfeld an.  
   
  ![Ausnahmedialogfeld](../debugger/media/dbg_basics_exceptiondlg.png "DBG_Basics_ExceptionDlg")  
   

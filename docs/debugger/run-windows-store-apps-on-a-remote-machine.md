@@ -17,11 +17,12 @@ caps.latest.revision: "43"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8e1b298f8088adf05992f7ebf8b5afbb743ec995
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: uwp
+ms.openlocfilehash: ebae0886db71b0b06f346d6bd174951b1c5d4752
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="run-uwp-apps-on-a-remote-machine"></a>Führen Sie die uwp-apps auf einem Remotecomputer
 ![Gilt nur für Windows](../debugger/media/windows_only_content.png "Windows_only_content")  
@@ -105,5 +106,5 @@ Für Windows 8.1 und Windows 10-PCs, die ein Pre-Ersteller-Update-Version von Wi
  Wählen Sie anschließend im Menü **Debuggen** (Tastatur: F5) die Option **Debuggen starten** aus. Das Projekt wird neu kompiliert, anschließend für das Remotegerät bereitgestellt und darauf gestartet . An Haltepunkten unterbricht der Debugger die Ausführung, und Sie können Ihren Code schrittweise ausführen, ihn überspringen oder verlassen. Wählen Sie **Debuggen beenden** aus, um Ihre Debugsitzung zu beenden, und schließen Sie die Remoteapp. Weitere Informationen finden Sie unter [Debuggen von apps in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md).  
   
 ## <a name="see-also"></a>Siehe auch  
- [Testen von uwp-apps mit Visual Studio](../test/testing-store-apps-with-visual-studio.md)   
+ [Testen von UWP-Apps mit Visual Studio](../test/testing-store-apps-with-visual-studio.md)   
  [Debuggen von apps in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)

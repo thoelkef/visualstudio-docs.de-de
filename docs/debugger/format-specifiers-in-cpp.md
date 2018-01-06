@@ -30,11 +30,12 @@ caps.latest.revision: "40"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0318f5a3cb1cd19c658030d64c4f6ec8bcbf0a9f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: cplusplus
+ms.openlocfilehash: 11be1eb546902e8e37843383fe499274f819883f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>Formatbezeichner in C++ in Visual Studio-debugger
 Sie können das Format ändern, in dem ein Wert im Fenster **Überwachen** mithilfe von Formatbezeichnern angezeigt wird.  
@@ -70,7 +71,7 @@ int main() {
 |T|Ganze Dezimalzahl|0x00000066|102|  
 |o|Oktale ganze Zahl ohne Vorzeichen|0x00000066|000000000146|  
 |w<br /><br /> **h**|Ganze Hexadezimalzahl|102|0xcccccccc|  
-|w<br /><br /> **H**|Ganze Hexadezimalzahl|102|0xcccccccc|  
+|X<br /><br /> **H**|Ganze Hexadezimalzahl|102|0xcccccccc|  
 |c|Einzelnes Zeichen|0x0065, c|101 'e'|  
 |s|const char*-Zeichenfolge|\<Speicherort > "Hello World"|"hello world"|  
 |**sb**|const Char *-Zeichenfolge (ohne Anführungszeichen)|\<Speicherort > "Hello World"|hello world|  
@@ -132,14 +133,14 @@ int main() {
 |Symbol|Format|Ursprünglicher Wert in "Überwachen"|Angezeigter Wert|  
 |------------|------------|--------------------------|---------------------|  
 |**ma**|64 ASCII-Zeichen|0x0012ffac|0x0012ffac .4...0...".0W&.......1W&.0.:W..1...."..1.JO&.1.2.."..1...0y....1|  
-|**m**|16 Bytes im Hexadezimalformat, gefolgt von 16 ASCII-Zeichen|0x0012ffac|0x0012ffac B3 34 CB 00 84 30 94 80 FF 22 8A 30 57 26 00 00 .4...0...".0W&..|  
-|**mb**|16 Bytes im Hexadezimalformat, gefolgt von 16 ASCII-Zeichen|0x0012ffac|0x0012ffac B3 34 CB 00 84 30 94 80 FF 22 8A 30 57 26 00 00 .4...0...".0W&..|  
+|**m**|16 Bytes im Hexadezimalformat, gefolgt von 16 ASCII-Zeichen|0x0012ffac|0x0012ffac B3 34 CB 00 84 30 94 80 FF 22 8A 30 57 26 00 00 .4...0...".0W&amp;.|  
+|**mb**|16 Bytes im Hexadezimalformat, gefolgt von 16 ASCII-Zeichen|0x0012ffac|0x0012ffac B3 34 CB 00 84 30 94 80 FF 22 8A 30 57 26 00 00 .4...0...".0W&amp;.|  
 |**mw**|8 Wörter|0x0012ffac|0x0012ffac 34B3 00CB 3084 8094 22FF 308A 2657 0000|  
 |**md**|4 Doppelwörter|0x0012ffac|0x0012ffac 00CB34B3 80943084 308A22FF 00002657|  
 |**mq**|2 Vierfachwörter|0x0012ffac|0x0012ffac 7ffdf00000000000 5f441a790012fdd4|  
 |**mu**|2-Byte-Zeichen (Unicode)|0x0012ffac|0x0012ffac 8478 77f4 ffff ffff 0000 0000 0000 0000|  
   
-###  <a name="BKMK_Size_specifier_for_pointers_as_arrays_in_interop_debugging_and_C___edit_and_continue"></a> Größenbezeichner für Zeiger als Arrays beim Interop-Debuggen mit C++/CLIt  
+###  <a name="BKMK_Size_specifier_for_pointers_as_arrays_in_interop_debugging_and_C___edit_and_continue"></a>Größenbezeichner für Zeiger als Arrays beim Interop-Debuggen mit c++ / CLI  
  Wenn Sie einen Zeiger für ein Objekt haben, das Sie als Array anzeigen möchten, können Sie eine ganze Zahl verwenden, um die Anzahl von Arrayelementen zu bestimmen:  
   
 |Bezeichner|Format|Ausdruck|Angezeigter Wert|  

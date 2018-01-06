@@ -14,11 +14,12 @@ caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0cc9abe486055d5bb9794021e28b786b9afe9b54
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f98170313b72394b5b295769a77d8770cd1cb0e6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="threads-view"></a>Threadansicht
 Die Threadansicht ist eine flache Liste aller Threads, die auf Ihrem System Windows zugeordnet. Die Thread-ID und Name des Moduls für jeden Thread angezeigt werden. Prozesse sind nicht enthalten, aber Sie können problemlos suchen Sie den Prozess, der einen ausgewählten Thread besitzt.  

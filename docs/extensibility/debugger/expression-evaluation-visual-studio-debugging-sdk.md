@@ -15,11 +15,12 @@ caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c66a6eac74b3d1494a1e98bcb95112c43c4c1bc8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ed0e494cc0efd48ea3c22d9fd881aafec42a984b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="expression-evaluation-visual-studio-debugging-sdk"></a>Auswertung von Ausdrücken (Visual Studio debuggen SDK)
 Während der sich im Unterbrechungsmodus befinden muss die IDE können einfache Ausdrücke mit mehreren Variablen des Programms. Um dies zu erreichen, muss die Debugging-Modul (DE) vorliegen, zu analysieren und Auswerten eines Ausdrucks, das in einem Fenster der IDE eingegeben wurde.  

@@ -20,11 +20,12 @@ caps.latest.revision: "27"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7930ab4b425eeba0896828e5db36ab874166d3bf
-ms.sourcegitcommit: 38097344f3ff74ba7b03bcfa45910015ca6bc2be
+ms.workload: dotnet
+ms.openlocfilehash: 6147390fb8551ea472590525cb36d9dc210b9a84
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="supported-code-changes-c-and-visual-basic"></a>Unterstützte codeänderungen (C#- und Visual Basic)
 Die Funktion "Bearbeiten und Fortfahren" behandelt die meisten Arten von Codeänderungen in Methodentexten. Die meisten Änderungen außerhalb von Methodentexten sowie einige Änderungen in Methodentexten können jedoch während des Debuggens nicht übernommen werden. Wenn Sie diese nicht unterstützten Änderungen übernehmen möchten, müssen Sie das Debuggen beenden und mit einer neuen Version des Codes erneut starten.
@@ -36,7 +37,7 @@ Die folgende Tabelle zeigt die Änderungen, die in c# und Visual Basic-Code wäh
 |Element/Sprachfunktion|Unterstützte Bearbeitungsvorgang|Einschränkungen|
 |-|-|-|
 |Typen|Hinzufügen von Methoden, Felder, Konstruktoren, Et al.|[Ja](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
-|Iteratoren|Hinzufügen oder ändern|Nein|
+|Iterators|Hinzufügen oder ändern|Nein|
 |Async/await-Ausdrücken|Hinzufügen oder ändern|[Ja](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
 |Dynamische Objekte|Hinzufügen oder ändern|Nein|
 |Lambdaausdrücke|Hinzufügen oder ändern|[Ja](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
@@ -78,7 +79,7 @@ Die folgende Tabelle zeigt die Änderungen, die in c# und Visual Basic-Code wäh
 |Try-Catch-finally-Blöcke|Ändern Sie, wenn es sich um eine aktive Anweisung enthält|
 |Using-Anweisungen|Hinzufügen|
 |asynchrone Methoden/lambdas|Ändern Sie eine asynchrone Methode/Lambda in einem Projekt auf .NET Framework 4 abzielt und senken (finden Sie unter [Details](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits))|
-|Iteratoren|Ändern von einem Iterator im ein Projekt .NET Framework 4 ausgerichtet und senken (finden Sie unter [Details](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits))|
+|Iterators|Ändern von einem Iterator im ein Projekt .NET Framework 4 ausgerichtet und senken (finden Sie unter [Details](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits))|
   
 ## <a name="unsafe-code"></a>Unsicherer Code  
  Bei Änderungen an unsicherem Code gibt es dieselben Einschränkungen wie bei Änderungen an sicherem Code, es gibt jedoch eine zusätzliche Einschränkung: „Bearbeiten und Fortfahren“ unterstützt keine Änderungen an unsicherem Code, der in einer Methode vorhanden ist, die den Operator `stackalloc` enthält.  

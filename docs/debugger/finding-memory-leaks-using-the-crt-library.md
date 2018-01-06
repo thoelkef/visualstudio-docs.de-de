@@ -33,11 +33,12 @@ caps.latest.revision: "28"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e3c95f24db0dc158b668f0e324fd5bac066dd4ff
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0e67f3c3b8cc10e6aa3e7c9b996cd1c608d893eb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="finding-memory-leaks-using-the-crt-library"></a>Suchen von Arbeitsspeicherverlusten mit der CRT-Bibliothek
 Arbeitsspeicherverluste (definiert als Fehler beim korrekten Freigeben einer zuvor vorgenommenen Speicherbelegung) zählen zu den heikelsten und am schwierigsten zu erkennenden Fehlern in C/C++-Anwendungen. Ein kleiner Arbeitsspeicherverlust würde möglicherweise zuerst nicht bemerkt werden. Im Laufe der Zeit kann ein fortschreitender Arbeitsspeicherverlust jedoch Symptome verursachen, die von verringerter Leistung bis hin zu einem Absturz reichen, wenn der Anwendung kein Arbeitsspeicher mehr zur Verfügung steht. Schwerwiegender ist hierbei jedoch, dass eine Anwendung mit Arbeitsspeicherverlusten, die den gesamten verfügbaren Arbeitsspeicher aufbraucht, einen Absturz anderer Anwendungen verursachen kann, wodurch das Identifizieren der für den Fehler verantwortlichen Anwendung erschwert wird. Auch scheinbar harmlose Arbeitsspeicherverluste können ein Symptom für andere Probleme sein, die korrigiert werden sollten.  
@@ -257,7 +258,7 @@ if ( _CrtMemDifference( &s3, &s1, &s2) )
   
  `_CrtMemDifference` vergleicht die Speicherzustände `s1` und `s2` und gibt in (`s3`) ein Ergebnis zurück, das die Differenz zwischen `s1` und `s2`darstellt.  
   
- Eine Methode zur Suche nach Arbeitsspeicherverlusten besteht darin, zunächst `_CrtMemCheckpoint` -Aufrufe am Anfang und Ende der Anwendung einzufügen und anschließend mit `_CrtMemDifference` die Ergebnisse zu vergleichen. Wenn `_CrtMemDifference` einen Arbeitsspeicherverlust anzeigt, können Sie weitere `_CrtMemCheckpoint` -Aufrufe hinzufügen, um das Programm anhand einer Binärsuche aufzuteilen, bis Sie die Quelle des Verlusts gefunden haben.  
+ Eine Methode zur Suche nach Arbeitsspeicherverlusten besteht darin, zunächst `_CrtMemCheckpoint`-Aufrufe am Anfang und Ende der Anwendung einzufügen und anschließend mit `_CrtMemDifference` die Ergebnisse zu vergleichen. Wenn `_CrtMemDifference` einen Arbeitsspeicherverlust anzeigt, können Sie weitere `_CrtMemCheckpoint` -Aufrufe hinzufügen, um das Programm anhand einer Binärsuche aufzuteilen, bis Sie die Quelle des Verlusts gefunden haben.  
   
 ## <a name="false-positives"></a>Falsch positive Ergebnisse  
  In manchen Fällen kann `_CrtDumpMemoryLeaks` falsche Angaben zu Speicherverlusten machen. Dies kann bei Verwendung einer Bibliothek vorkommen, die interne Speicherbelegungen nicht als `_CRT_BLOCK`s oder `_CLIENT_BLOCK`s markiert, sondern als _NORMAL_BLOCKs. In diesem Fall kann `_CrtDumpMemoryLeaks` den Unterschied zwischen Benutzerspeicherbelegungen und internen Bibliotheksspeicherbelegungen nicht erkennen. Wenn die globalen Destruktoren für die Bibliotheksspeicherbelegungen nach dem Punkt ausgeführt werden, an dem `_CrtDumpMemoryLeaks`aufgerufen wird, wird jede interne Bibliotheksspeicherbelegung als Arbeitsspeicherverlust angezeigt. In früheren Versionen der Standardvorlagenbibliothek (vor Visual Studio .NET) wurden solche falsch positiven Ergebnisse von `_CrtDumpMemoryLeaks` ausgegeben, in neueren Versionen wurde dies jedoch behoben.  

@@ -13,11 +13,12 @@ caps.latest.revision: "20"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cc520e9d28e8cc02262833d2de4cba088b879dab
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 601fc4eb47e89a4035f14722793169a76d73f520
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="graphics-event-list"></a>Grafikereignisliste
 Verwenden Sie die Grafikereignisliste in der Visual Studio-Grafikanalyse, um die Direct3D-Ereignisse zu untersuchen, die während des Renderings eines Frames Ihres Spiels oder Ihrer App aufgezeichnet wurden.  
@@ -110,7 +111,7 @@ In diesem Fenster können Sie den Verlauf des ausgewählten Elements in der Erei
 
 Spalte|Beschreibung
 ---|---
-**Typ** | Den Typ des Eintrags, in der Regel zeigt *erstellen*, *lesen* und *schreiben*.  
+**Type** | Den Typ des Eintrags, in der Regel zeigt *erstellen*, *lesen* und *schreiben*.  
 **Ansicht** | Zeigt eine Miniaturansicht der Ressource zu diesem Zeitpunkt an.  Doppelklicken Sie auf die Miniaturansicht, um eine Detailansicht der Ressource zu diesem Zeitpunkt zu öffnen.  
 **Event**| Zeigt den Aufruf der Methode, die der aufgetreten ist, das Ereignis generiert hat.  Alle zusätzlicher Verlauf auf einzelne Elemente kann angezeigt werden, indem Sie das Symbol "überwachen" auswählen ![Symbol "überwachen"](media/gfx_watch.png) in der entsprechenden Zeile.  Darüber hinaus ein Element der in blauem Text, wie z. B. gezeichnet wird `m_commandList` im Screenshot oben kann weitere Details ausgewählt werden.
 <!-- /VERSIONLESS -->

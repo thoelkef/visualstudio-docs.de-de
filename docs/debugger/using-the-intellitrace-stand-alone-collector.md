@@ -14,11 +14,12 @@ caps.latest.revision: "105"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 29f87ccebc342e6b5b03d40aab789ff80496a96d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 04b627e1f3188a4e7e938f9446251b5be80b87e6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-the-intellitrace-stand-alone-collector"></a>Verwenden des eigenständigen IntelliTrace-Collectors
 Mit dem **eigenständigen IntelliTrace Collector** können Sie IntelliTrace-Diagnosedaten für Ihre Anwendungen auf Produktionsservern oder anderen Umgebungen erfassen, ohne Visual Studio auf dem Zielcomputer zu installieren oder Änderungen an der Zielsystemumgebung vorzunehmen. Die eigenständige IntelliTrace Collector kann für Web-, SharePoint-, WPF- und Windows Forms-Webanwendungen verwendet werden. Nachdem die Daten gesammelt wurden, kann der Collector mit einem Löschvorgang deinstalliert werden.  
@@ -69,7 +70,7 @@ Mit dem **eigenständigen IntelliTrace Collector** können Sie IntelliTrace-Diag
   
 5.  [Daten von einer Webapp oder SharePoint-Anwendung sammeln](#BKMK_Collect_Data_from_IIS_Application_Pools)  
   
-     - oder -  
+     - oder -   
   
      [Sammeln von Daten aus einer verwalteten Anwendung](#BKMK_Collect_Data_from_Executables)  
   
@@ -190,7 +191,7 @@ Mit dem **eigenständigen IntelliTrace Collector** können Sie IntelliTrace-Diag
   
              `icacls "C:\IntelliTraceLogFiles" /grant "IIS APPPOOL\SharePoint - 80":F`  
   
-         - oder -  
+         - oder -   
   
     -   So legen Sie die Berechtigungen mit dem Windows-Explorer (bzw. dem Datei-Explorer) fest:  
   
@@ -318,7 +319,7 @@ Mit dem **eigenständigen IntelliTrace Collector** können Sie IntelliTrace-Diag
   
     2.  Legen Sie in `<ModuleList>`das `isExclusionList` -Attribut auf `false`fest.  
   
-    3.  Verwenden Sie das `<Name>` -Element, um jedes Modul mit einer der folgenden Informationen anzugeben: Dateiname, Zeichenfolgenwert, um jedes Modul einzuschließen, das diese Zeichenfolge enthält, oder öffentlicher Schlüssel.  
+    3.  Verwenden Sie das `<Name>`-Element, um jedes Modul mit einer der folgenden Informationen anzugeben: Dateiname, Zeichenfolgenwert, um jedes Modul einzuschließen, das diese Zeichenfolge enthält, oder öffentlicher Schlüssel.  
   
      Um beispielsweise nur Daten aus dem Haupt-Webmodul der Fabrikam Fiber-Webanwendung zu sammeln, erstellen Sie eine Liste wie diese:  
   
@@ -367,7 +368,7 @@ Mit dem **eigenständigen IntelliTrace Collector** können Sie IntelliTrace-Diag
   
      Ja. Um Leistungseinbußen zu reduzieren, beschränkt IntelliTrace die Datensammlung auf die Werte primitiver Datentypen, die an Methoden übergeben und von ihnen zurückgegebenen werden, und auf Werte primitiver Datentypen in Feldern von Objekten der obersten Ebene, die an Methoden übergeben und von ihnen zurückgegeben werden.  
   
-     Angenommen, Sie verfügen über eine `AlterEmployee` -Methodensignatur, die eine Ganzzahl- `id` und ein `Employee` -Objekt `oldemployee`akzeptiert:  
+     Angenommen, Sie verfügen über eine `AlterEmployee`-Methodensignatur, die eine Ganzzahl-`id` und ein `Employee`-Objekt `oldemployee` akzeptiert:  
   
      `public Employee AlterEmployee(int id, Employee oldemployee)`  
   

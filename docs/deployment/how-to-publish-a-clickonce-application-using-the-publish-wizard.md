@@ -21,11 +21,12 @@ caps.latest.revision: "25"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: f7921ccebf9872f8a1f8ed79e6ee8da05d04e320
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: d314763f8ff4dc170148cca166e3ecdff051ae24
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-publish-a-clickonce-application-using-the-publish-wizard"></a>Gewusst wie: Veröffentlichen einer ClickOnce-Anwendung mit dem Webpublishing-Assistenten
 Wenn Sie eine ClickOnce-Anwendung für Benutzer bereitstellen möchten, müssen Sie sie auf einer Dateifreigabe oder unter einem Dateipfad, auf einem FTP-Server oder einem Wechselmedium veröffentlichen. Sie können die Anwendung mit dem Webpublishing-Assistenten veröffentlichen; zusätzliche Eigenschaften, die im Zusammenhang mit der Veröffentlichung stehen für die **veröffentlichen** auf der Seite der **Projekt-Designer**. Weitere Informationen finden Sie unter [Veröffentlichen von ClickOnce-Anwendungen](../deployment/publishing-clickonce-applications.md).  
@@ -62,7 +63,7 @@ Wenn Sie eine ClickOnce-Anwendung für Benutzer bereitstellen möchten, müssen 
   
     -   Wenn Sie die Anwendung direkt vom Ort Veröffentlichung ausführen möchten, klicken Sie auf **Nein, diese Anwendung ist nur online verfügbar**. Eine Verknüpfung auf der **starten** Menü wird nicht erstellt werden.  
   
-     Klicken Sie auf **Weiter** um den Vorgang fortzusetzen.  
+     Klicken Sie auf **Weiter**, um fortzufahren.  
   
 6.  Klicken Sie auf **Fertig stellen** veröffentlichen die Anwendung.  
   
@@ -91,7 +92,7 @@ Wenn Sie eine ClickOnce-Anwendung für Benutzer bereitstellen möchten, müssen 
   
     -   Wenn die Anwendung nicht nach Updates sucht, klicken Sie auf **die Anwendung wird nicht nach Updates suchen**.  
   
-     Klicken Sie auf **Weiter** um den Vorgang fortzusetzen.  
+     Klicken Sie auf **Weiter**, um fortzufahren.  
   
 6.  Klicken Sie auf **Fertig stellen** veröffentlichen die Anwendung.  
   

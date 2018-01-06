@@ -19,11 +19,12 @@ caps.latest.revision: "21"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 5474a2101a96576d7043c10cc3fd35fad3756653
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: d22180b0e48a875eaef3ab9e3b8ceac35b1fa6ef
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="accessing-local-and-remote-data-in-clickonce-applications"></a>Zugreifen auf lokale und Remotedaten in einer ClickOnce-Anwendung
 Die meisten Anwendungen nutzen oder generieren Daten. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] bietet Ihnen eine Vielzahl von Optionen zum Lesen und Schreiben von Daten, sowohl lokal als auch remote.  
@@ -106,7 +107,7 @@ Die meisten Anwendungen nutzen oder generieren Daten. [!INCLUDE[ndptecclick](../
  Wenn ein XML-Webdienst über HTTP ausgeführt wird, gelten für den Dienst dieselben Sicherheitsbeschränkungen wie für die <xref:System.Net.WebClient> -Klasse und die <xref:System.Net.HttpWebRequest> -Klasse.  
   
 ### <a name="accessing-a-database-directly"></a>Direktes Zugreifen auf eine Datenbank  
- Mithilfe der Klassen im <xref:System.Data> -Namespace können Sie direkte Verbindungen zu einem Datenbankserver im Netzwerk herstellen, z. B. SQL Server, allerdings sind dabei bestimmte Sicherheitsaspekte zu berücksichtigen. Anders als HTTP-Anforderungen sind Datenbankverbindungsanforderungen in einer teilweise vertrauenswürdigen Umgebung standardmäßig unzulässig. Über die entsprechenden Berechtigungen verfügen Sie standardmäßig nur dann, wenn Sie die [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendung von einer CD-ROM installiert haben. Dadurch erhalten Anwendungen volle Vertrauenswürdigkeit. Um den Zugriff auf eine bestimmte SQL Server-Datenbank zu ermöglichen, muss die Anwendung <xref:System.Data.SqlClient.SqlClientPermission> für diese Datenbank anfordern. Für den Zugriff auf andere Datenbanken als SQL Server muss <xref:System.Data.OleDb.OleDbPermission>angefordert werden.  
+ Mithilfe der Klassen im <xref:System.Data> -Namespace können Sie direkte Verbindungen zu einem Datenbankserver im Netzwerk herstellen, z. B. SQL Server, allerdings sind dabei bestimmte Sicherheitsaspekte zu berücksichtigen. Anders als HTTP-Anforderungen sind Datenbankverbindungsanforderungen in einer teilweise vertrauenswürdigen Umgebung standardmäßig unzulässig. Über die entsprechenden Berechtigungen verfügen Sie standardmäßig nur dann, wenn Sie die [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]-Anwendung von einer CD-ROM installiert haben. Dadurch erhalten Anwendungen volle Vertrauenswürdigkeit. Um den Zugriff auf eine bestimmte SQL Server-Datenbank zu ermöglichen, muss die Anwendung <xref:System.Data.SqlClient.SqlClientPermission> für diese Datenbank anfordern. Für den Zugriff auf andere Datenbanken als SQL Server muss <xref:System.Data.OleDb.OleDbPermission>angefordert werden.  
   
  In den meisten Fällen ist ein direkter Zugriff auf die Datenbank nicht erforderlich, sondern der Zugriff erfolgt über eine in [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] geschriebene Webserveranwendung oder einen XML-Webdienst. Diese Art des Datenbankzugriffs ist häufig die beste Methode, wenn die [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendung über einen Webserver bereitgestellt wird. Sie können auf den als teilweise vertrauenswürdig eingestuften Server zugreifen, ohne dass die Berechtigungen der Anwendung erweitert werden müssen.  
   

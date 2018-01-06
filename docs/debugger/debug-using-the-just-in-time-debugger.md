@@ -15,11 +15,12 @@ caps.latest.revision: "48"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 470e4c728d246570e6f7e38ff3b71772de5b05fd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 4bcdd28247b767321d3d5fed9681082538ba2b12
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>Debuggen Sie mithilfe der Just-in-Time-Debugger in Visual Studio
 Just-in-Time-Debuggen Visual Studio wird automatisch gestartet, wenn eine Ausnahme oder ein Absturz in einer Anwendung ausgeführt wird, die außerhalb von Visual Studio ausgeführt wird. Dadurch können Sie die Anwendung testen, wenn Visual Studio nicht ausgeführt wird, und beginnen mit Visual Studio debuggen, wenn ein Problem auftritt.
@@ -122,7 +123,7 @@ static void Main(string[] args)
 > [!IMPORTANT]
 >  In der Reihenfolge für diese Prozedur in der Sie arbeiten ein [Releasekonfiguration](../debugger/how-to-set-debug-and-release-configurations.md), müssen Sie deaktivieren [nur mein Code](../debugger/just-my-code.md). Klicken Sie in Visual Studio auf **Tools > Optionen**. In der **Optionen** wählen Sie im Dialogfeld **Debuggen**. Entfernen Sie die Überprüfung von **nur meinen Code aktivieren**.  
   
- Erstellen Sie die Projektmappe (Wählen Sie in Visual Studio **erstellen > Projektmappe neu erstellen**). Sie können das Debuggen oder die Releasekonfiguration auswählen (Wählen Sie **Debuggen** für die vollständige Debugvorgänge). Weitere Informationen zu Buildkonfigurationen finden Sie unter [Grundlagen zu Buildkonfigurationen](../ide/understanding-build-configurations.md).  
+ Erstellen Sie die Projektmappe (Wählen Sie in Visual Studio **erstellen > Projektmappe neu erstellen**). Sie können das Debuggen oder die Releasekonfiguration auswählen (Wählen Sie **Debuggen** für die vollständige Debugvorgänge). Weitere Informationen zu Buildkonfigurationen finden Sie unter [Grundlagen der Buildkonfigurationen](../ide/understanding-build-configurations.md).  
   
  Während des Erstellungsprozesses wird eine ausführbare ThrowsNullException.exe erstellt. Sie finden sie unter dem Ordner, in dem Sie das C#-Projekt erstellt haben: **...\ThrowsNullException\ThrowsNullException\bin\Debug** oder **...\ThrowsNullException\ThrowsNullException\bin\Release**.  
   

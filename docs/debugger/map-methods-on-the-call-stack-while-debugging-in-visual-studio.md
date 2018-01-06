@@ -32,11 +32,12 @@ caps.latest.revision: "39"
 author: mikejo5000
 ms.author: mikejo
 manager: douge
-ms.openlocfilehash: ff0f152f92d852846200c96a63927445aa8867b0
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 9d1efeee412d98c62b7dc6aa2c92d2bbab4fab6d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="create-a-visual-map-of-the-call-stack-while-debugging-in-visual-studio-enterprise"></a>Erstellen Sie eine visuelle Karte der Aufrufliste beim Debuggen in Visual Studio Enterprise
 Erstellen Sie eine Code Map, um die Aufrufliste visuell zu verfolgen, während Sie debuggen. Sie können Notizen auf der Zuordnung vermerken, um das Verhalten des Codes zu verfolgen, sodass Sie sich auf das Suchen von Fehlern konzentrieren können.

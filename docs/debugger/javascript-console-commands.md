@@ -21,11 +21,12 @@ caps.latest.revision: "47"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d9808c664e5e3d06558faf8f9b44a6a2bb6e9b83
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: 32aa07920c496249271e6c337952129292a3d2aa
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="javascript-console-commands-in-visual-studio"></a>JavaScript-Konsolenbefehle in Visual Studio
 ![Gilt für Windows und Windows Phone](../debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
@@ -56,14 +57,14 @@ ms.lasthandoff: 11/11/2017
 |`error(message)`|Sendet `message` an das Konsolenfenster. Der Meldungstext ist rot, und ein Fehlersymbol wird vorangestellt.<br /><br /> Objekte, die mit dem Befehl übergeben werden, werden in einen Zeichenfolgenwert konvertiert.|`console.error("error message");`|  
 |`group(title)`|Startet eine Gruppierung für Meldungen, die an das Konsolenfenster gesendet werden, und sendet optionale `title` während eine Gruppenbezeichnung. Gruppen können geschachtelt sein und in einer Strukturansicht im Konsolenfenster angezeigt werden.<br /><br /> In einigen Szenarien, z. B. wenn ein Komponentenmodell verwendet wird, können die group*-Befehle die Ausgabenanzeige im Konsolenfenster vereinfachen.|`console.group("Level 2 Header");` <br /> `console.log("Level 2");` <br /> `console.group();` <br /> `console.log("Level 3");` <br /> `console.warn("More of level 3");` <br /> `console.groupEnd();` <br /> `console.log("Back to level 2");` <br /> `console.groupEnd();` <br /> `console.debug("Back to the outer level");`|  
 |`groupCollapsed(title)`|Startet eine Gruppierung für Meldungen, die an das Konsolenfenster gesendet werden, und sendet optionale `title` während eine Gruppenbezeichnung. Gruppen, die mit `groupCollapsed` gesendet werden, werden standardmäßig in einer reduzierten Ansicht angezeigt. Gruppen können geschachtelt sein und in einer Strukturansicht im Konsolenfenster angezeigt werden.|Die Verwendung ist identisch mit dem `group` -Befehl.<br /><br /> Siehe Beispiel für den `group` -Befehl.|  
-|`groupEnd()`|Beendet die aktuelle Gruppe.<br /><br /> Anforderungen:<br /><br /> Visual Studio 2013|Siehe Beispiel für den `group` -Befehl.|  
+|`groupEnd()`|Beendet die aktuelle Gruppe.<br /><br /> Anforderungen:<br /><br /> Visual Studio 2013|Siehe Beispiel für den `group` -Befehl.|  
 |`info(message)`|Sendet `message` an das Konsolenfenster. Der Meldung wird ein Informationssymbol vorangestellt.|`console.info("info message");`<br /><br /> Weitere Beispiele finden Sie unter [Formatting console.log output](#ConsoleLog) weiter unten in diesem Thema.|  
 |`log(message)`|Sendet `message` an das Konsolenfenster.<br /><br /> Wenn Sie ein Objekt übergeben, sendet der Befehl dieses Objekt an das Konsolenfenster und zeigt es in einer Objektschnellansicht an. Sie können die Schnellansicht verwenden, um Eigenschaften im Konsolenfenster zu überprüfen.|`console.log("logging message");`|  
 |`msIsIndependentlyComposed(element)`|Wird in Web-Apps verwendet. In uwp-apps mit JavaScript unterstützt nicht.|Wird nicht unterstützt.|  
 |`profile(reportName)`|Wird in Web-Apps verwendet. In uwp-apps mit JavaScript unterstützt nicht.|Wird nicht unterstützt.|  
 |`profileEnd()`|Wird in Web-Apps verwendet. In uwp-apps mit JavaScript unterstützt nicht.|Wird nicht unterstützt.|  
 |`select(element)`|Wählt das angegebene HTML- `element` in der [DOM Explorer](../debugger/quickstart-debug-html-and-css.md).|console.select(element);|  
-|`time (name)`|Startet einen Zeitgeber, der durch den optionalen Parameter `name` identifiziert wird. Wenn dieser Befehl mit `console.timeEnd`verwendet wird, wird die Zeit, die zwischen `time` und `timeEnd`verstreicht, berechnet, und das Ergebnis (gemessen in ms) wird mit der Zeichenfolge `name` als Präfix an die Konsole gesendet. Wird verwendet, um Instrumentation von App-Codes zum Messen der Leistung zu aktivieren.|`console.time("app start");  app.start();  console.timeEnd("app start");`|  
+|`time (name)`|Startet einen Zeitgeber, der durch den optionalen Parameter `name` identifiziert wird. Wenn dieser Befehl mit `console.timeEnd`verwendet wird, wird die Zeit, die zwischen `time` und `timeEnd`verstreicht, berechnet, und das Ergebnis (gemessen in ms) wird mit der Zeichenfolge `name` als Präfix an die Konsole gesendet. Wird verwendet, um Instrumentierung von App-Codes zum Messen der Leistung zu aktivieren.|`console.time("app start");  app.start();  console.timeEnd("app start");`|  
 |`timeEnd(name)`|Stoppt einen Zeitgeber, der durch den optionalen Parameter `name` identifiziert wird. Siehe den Konsolenbefehl `time` .|`console.time("app start"); app.start(); console.timeEnd("app start");`|  
 |`trace()`|Sendet eine Stapelverfolgung an das Konsolenfenster. Die Ablaufverfolgung umfasst die vollständige Aufrufliste, z. B. Dateiname, Zeilennummer und Spaltennummer.|`console.trace();`|  
 |`warn(message)`|Sendet `message` an das Konsolenfenster mit vorausgehendem Warnsymbol.<br /><br /> Objekte, die mit dem Befehl übergeben werden, werden in einen Zeichenfolgenwert konvertiert.|`console.warn("warning message");`|  

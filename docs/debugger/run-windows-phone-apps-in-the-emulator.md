@@ -17,11 +17,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d3a5fc067ac65cea13181632c562a635599f0d7e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: fc458bddfe354f43afd15176d0283cad4875234d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="run-windows-phone-81-apps-in-the-emulator"></a>Ausführen von Windows Phone 8.1-apps im emulator
 Der Windows Phone-Emulator stellt eine virtualisierte Umgebung bereit, in der Sie Windows Phone-Apps auf Ihrem Computer ohne ein physisches Gerät debuggen und testen können. Sie können typische Touch- und Rotationsereignisse simulieren und die physische Bildschirmgröße und -auflösung auswählen, die Sie emulieren möchten. Sie können außerdem viele häufig verwendete Funktionen wie Standort, Netzwerk, Benachrichtigungen, Sensoren, den Beschleunigungsmesser und die optionale SD-Karte testen.  
@@ -37,7 +38,7 @@ In Kombination mit Visual Studio stellt der Emulator eine vollständige Umgebung
   
  Wenn Sie eine Windows Phone-App zum ersten Mal im Windows Phone-Emulator ausführen, finden die folgenden Ereignisse statt:  
   
-1.  Der Emulator startet.  
+1.  Der Emulator wird gestartet.  
   
 2.  Der Emulator lädt das Windows Phone-Betriebssystem.  
   
@@ -110,7 +111,7 @@ In Kombination mit Visual Studio stellt der Emulator eine vollständige Umgebung
 ##  <a name="BKMK_toolbar"></a>Konfigurieren des Windows Phone-Emulators über die Symbolleiste des Emulators  
  In dieser Tabelle sind die auf der Symbolleiste des Emulators verfügbaren Konfigurationsschaltflächen sichtbar.  
   
-|Schaltflächen auf der Symbolleiste|Konfigurationsoptionen|  
+|Schaltflächen der Symbolleiste|Konfigurationsoptionen|  
 |---------------------|---------------------------|  
 |![Eingabeoptionen auf Windows Phone-Emulator-Symbolleiste](../debugger/media/wp_emulator_.png "WP_Emulator_")|**Konfigurieren einer Einzel- oder multipunkteingabe**<br /><br /> Wenn Sie die Multipunkteingabe aktivieren, können Sie mit der rechten Maustaste klicken, um die Berührungspunkte zu verschieben, ohne den Bildschirm zu berühren. Dann können Sie mit der linken Maustaste klicken, um beide Berührungspunkte gleichzeitig zu verschieben.|  
 |![Ausrichtung auf Windows Phone-Emulator-Symbolleiste](../debugger/media/wp_emulator_rotation.png "WP_Emulator_rotation")|**Konfigurieren der Ausrichtung des Emulators**<br /><br /> Sie können die Ausrichtung im Windows Phone-Emulator in eine der drei folgenden Ausrichtungen ändern: Hochformat, Querformat links oder Querformat rechts. Die Größe des Emulators wird bei einer Änderung der Ausrichtung nicht geändert.<br /><br /> Klicken Sie zum Ändern der Ausrichtung auf die **nach links drehen** Schaltfläche oder die **nach rechts drehen** Schaltfläche.|  
@@ -148,7 +149,7 @@ In Kombination mit Visual Studio stellt der Emulator eine vollständige Umgebung
   
  In der folgenden Tabelle sind die Tasten auf einer Hardwaretastatur aufgeführt, die Sie zum Emulieren der Tasten und anderer Steuerelemente auf einem Windows Phone verwenden können.  
   
-|Computerhardwaretaste|Windows Phone-Taste|Notizen|  
+|Computerhardwaretaste|Windows Phone-Taste|Hinweise|  
 |---------------------------|-----------------------------------|-----------|  
 |F1|RÜCKTASTE|Langes Drücken funktioniert erwartungsgemäß.|  
 |F2|START|Langes Drücken funktioniert erwartungsgemäß.|  
@@ -162,7 +163,7 @@ In Kombination mit Visual Studio stellt der Emulator eine vollständige Umgebung
 |F10|LEISER||  
 |F11|Nicht zutreffend.||  
 |F12|EIN/AUS|Drücken Sie F12 zweimal, um den Sperrbildschirm zu aktivieren.<br /><br /> Langes Drücken funktioniert erwartungsgemäß.|  
-|ESC|RÜCKTASTE|Langes Drücken funktioniert erwartungsgemäß.|  
+|ESC|ZURÜCK|Langes Drücken funktioniert erwartungsgemäß.|  
 |PAUSE|Tastaturwechsel (gilt nur für den Windows 8/8.1-Emulator).|Gilt nicht für den Windows 10-Emulator.|  
 |BILD-AUF|Aktiviert die Hardwaretastatur (gilt nur für den Windows 8/8.1-Emulator).|Gilt nicht für den Windows 10-Emulator.|  
 |BILD-AB|Deaktiviert die Hardwaretastatur (gilt nur für den Windows 8/8.1-Emulator).|Gilt nicht für den Windows 10-Emulator.|  

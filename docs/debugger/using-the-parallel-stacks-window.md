@@ -19,11 +19,12 @@ caps.latest.revision: "18"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 32870ebf31c88bbc6bdf024c2c4c93ae1869660a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 72c7c38dece8924f48298c0b7b661f564f9b1afc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="view-threads-and-tasks-using-the-parallel-stacks-window"></a>Threads anzeigen und Aufgaben mit dem Fenster "Parallele Stapel"
 Die **parallele Stapel** Fenster ist hilfreich beim Debuggen von Multithreadanwendungen. Die **Threadansicht** werden Aufruflisteninformationen für alle Threads in der Anwendung. Im Fenster können Sie zwischen Threads und Stapelrahmen in diesen Threads navigieren. In verwaltetem Code die **Aufgabenansicht** Aufruflisten von <xref:System.Threading.Tasks.Task?displayProperty=fullName> Objekte. In systemeigenen Code der die **Aufgabenansicht** Aufruflisten von [Aufgabengruppen](/cpp/parallel/concrt/task-parallelism-concurrency-runtime), [parallele Algorithmen](/cpp/parallel/concrt/parallel-algorithms), [asynchrone Agents](/cpp/parallel/concrt/asynchronous-agents), und [einfache Aufgaben](/cpp/parallel/concrt/task-scheduler-concurrency-runtime).  
@@ -39,7 +40,7 @@ Die **parallele Stapel** Fenster ist hilfreich beim Debuggen von Multithreadanwe
 |--------------------|------------------|-----------------|  
 |A|Aufruflistensegment oder -knoten|Enthält eine Reihe von Methoden für einen oder mehrere Threads. Wenn mit dem Knoten keine Pfeillinien verbunden sind, stellt er den gesamten Aufrufpfad für den Thread bzw. die Threads dar.|  
 |B|Blaue Hervorhebung|Gibt den Aufrufpfad des aktuellen Threads an.|  
-|A|Pfeillinien|Diese verbinden Knoten, um den gesamten Aufrufpfad für den Thread bzw. die Threads darzustellen.|  
+|C|Pfeillinien|Diese verbinden Knoten, um den gesamten Aufrufpfad für den Thread bzw. die Threads darzustellen.|  
 |D|QuickInfo zum Knotenheader|Zeigt die ID sowie den benutzerdefinierten Namen der einzelnen Threads an, deren Aufrufpfad diesen Knoten enthält.|  
 |E|Methode|Stellt einen oder mehrere Stapelrahmen in derselben Methode dar.|  
 |F|QuickInfo für die Methode|In der Threadansicht werden alle Threads in einer Tabelle ähnlich wie die **Threads** Fenster. In der Aufgabenansicht werden alle Aufgaben in einer Tabelle ähnlich wie auf die **Aufgaben** Fenster.|  

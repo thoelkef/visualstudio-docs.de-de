@@ -13,11 +13,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c6a9d1d63b4fb15a920f175013af8a05cb38beb8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: a5ce9f82e88c6275000c17d40e2b1e1494683715
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="expression-evaluation-interfaces"></a>Ausdruck Auswertung Schnittstellen
 > [!IMPORTANT]
@@ -36,7 +37,7 @@ ms.lasthandoff: 10/31/2017
   
 -   Visual Studio (VS)  
   
-|Schnittstelle|Implementiert durch|Beschreibung|  
+|Interface|Implementiert durch|Beschreibung|  
 |---------------|--------------------|-----------------|  
 |[IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)|EE|Stellt einen numerische Alias für eine Variable dar.|  
 |[IDebugAlias2](../../../extensibility/debugger/reference/idebugalias2.md)|EE|Stellt einen numerische Alias für eine Variable dar und ermöglicht eine ausdrucksauswertung (EE), um die Anwendungsdomäne für den Alias zu erhalten.|  

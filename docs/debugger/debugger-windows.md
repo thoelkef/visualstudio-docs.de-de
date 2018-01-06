@@ -12,11 +12,12 @@ caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cb35cc5cdc00b5c4225ba4fd2fb8cc2b1214cb49
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 685e7beeea5921b7c555b53aaa0b396f81914cbe
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="learn-about-debugger-windows-in-visual-studio"></a>Erfahren Sie mehr über die Debugger-Fenster in Visual Studio
 Sie können die meisten Debuggerfenster beim Debuggen Ihres Programms öffnen. Zum Anzeigen einer Liste von Debuggerfenstern legen Sie einen Haltepunkt fest, und starten Sie das Debuggen. Wenn der Haltepunkt und die Ausführung beendet erreicht wird, klicken Sie auf **Debuggen > Windows**.  

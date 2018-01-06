@@ -15,11 +15,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 71a53dfcb7ae7cca5b360d2e115c34909ca32f86
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: a6a5c8d9220b0cd2c0dddfee283d222f4efb9ab8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="commandplacement-element"></a>CommandPlacement-Element
 Das Element CommandPlacement kann Schaltflächen, Gruppen und Menüs, die in mehr als eine Gruppe oder einem Menü eingeschlossen werden. Verwenden Sie das CommandPlacement-Element, müssen Sie keinen vollständig diese Elemente neu definieren, um die Darstellung einer Benutzeroberfläche zu ändern.  

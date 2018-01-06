@@ -13,11 +13,12 @@ caps.latest.revision: "24"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e66d0f67e3774b1cbc908bb6b1bd13884a1d3171
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: be102b5eaf39db2fc7495c62c456e35e54ffd0f3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="bitflags-used-by-specific-commands"></a>Bitflags, die von bestimmten Befehlen verwendet
 Das Verhalten einer Reihe von Funktionen in der Quelle Steuerelement-Plug-in-API kann geändert werden, durch einen oder mehrere Bits in einem einzelnen Wert festlegen. Diese Werte werden als Bitflags bezeichnet. Die verschiedenen Bitflags, die von der Quelle Steuerelement-Plug-in-API verwendet werden hier beschrieben gruppiert, die von der Funktion, die sie verwendet.  
@@ -36,7 +37,7 @@ Das Verhalten einer Reihe von Funktionen in der Quelle Steuerelement-Plug-in-API
 |----------|-----------|-----------------|  
 |`SCC_FILETYPE_AUTO`|0 x 00|Die Datenquellen-Steuerelement-Plug-in wird erwartet, automatisch zu erkennen, ob die Datei Text- oder Binärformat.|  
 |`SCC_FILETYPE_TEXT`|0 x 01|Dateityp ist Text.|  
-|`SCC_FILETYPE_BINARY`|0 x 04|Dateityp ist binär. **Hinweis:** `SCC_FILETYPE_TEXT` und `SCC_FILETYPE_BINARY` Flags schließen sich gegenseitig.   Legen Sie genau eine oder keines von beiden.|  
+|`SCC_FILETYPE_BINARY`|0 x 04|Dateityp ist binär. **Hinweis:** `SCC_FILETYPE_TEXT` und `SCC_FILETYPE_BINARY` Flags schließen sich gegenseitig. Legen Sie genau eine oder keines von beiden.|  
 |`SCC_ADD_STORELATEST`|0 x 02|Speichern Sie nur die neueste Version (keine Deltas).|  
   
 ## <a name="diff-flags"></a>Diff-Flags  

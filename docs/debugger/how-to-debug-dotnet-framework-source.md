@@ -18,11 +18,12 @@ caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9da2cd7b8a99d750692a69be406c9c8f82c461d1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 46c030a3c81f4b49fc66a06ee55d797dfe9119dc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-debug-net-framework-source"></a>Gewusst wie: Debuggen einer .NET Framework-Quelle
 Die neueste Version der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] bietet neue Features für [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] Debuggen. So debuggen Sie [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] Quelle, benötigen Sie Zugriff auf Debugsymbole für den Code. Sie müssen auch-Quellcodes aktivieren [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] Quelle.  
@@ -57,7 +58,7 @@ Die neueste Version der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)
   
      Wenn Sie die Symbole nicht sofort herunterladen, werden die Symbole automatisch heruntergeladen, wenn Sie das nächste Mal einen Debugvorgang Ihres Programms starten.  
   
-7.  Klicken Sie auf **OK** schließen die **Optionen** (Dialogfeld).  
+7.  Klicken Sie auf **OK**, um das Dialogfeld **Optionen** zu schließen.  
   
 ### <a name="to-load-framework-symbols-using-the-modules-window"></a>So laden Sie Frameworksymbole mit dem Fenster "Module"  
   

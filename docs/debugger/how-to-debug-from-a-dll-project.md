@@ -22,11 +22,12 @@ caps.latest.revision: "30"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 371c48282b2f775833287046ed9810f0cbc8f69e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f50c41a18f6d018ca717fbfd0cd926da8e6dcf65
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-debug-from-a-dll-project-in-visual-studio"></a>Vorgehensweise: Debuggen von DLL-Projekt in Visual Studio
 Eine Möglichkeit zum Debuggen einer DLL-Projekt wird an die aufrufende Anwendung in den Projekteigenschaften der DLL-Projekts, und dann Sie das Debuggen über das DLL-Projekt selbst starten können. Diese Methode funktioniert, muss die Anwendung die DLL aufrufen und die DLL in den Speicherort, an die Anwendung erwartet, gefunden, werden muss (, andernfalls die Anwendung möglicherweise eine andere Version der DLL zu suchen und zu laden, die stattdessen und es wird nicht die Haltepunkte erreicht). Weitere Methoden zum Debuggen von DLLs finden Sie unter [DLL-Projekte Debuggen](../debugger/debugging-dll-projects.md).
@@ -85,6 +86,6 @@ Die Eigenschaftenseiten in C++ unterscheiden sich im Hinblick auf Layout und Inh
   
 ## <a name="see-also"></a>Siehe auch  
  [Debuggen von DLL-Projekten](../debugger/debugging-dll-projects.md)   
- [Projekteinstellungen für C#-Debugkonfiguration](../debugger/project-settings-for-csharp-debug-configurations.md)   
- [Projekteinstellungen für eine Visual Basic-Debugkonfiguration](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
+ [Project Settings for  C# Debug Configurations (Projekteinstellungen für C#-Debugkonfigurationen)](../debugger/project-settings-for-csharp-debug-configurations.md)   
+ [Project Settings for a Visual Basic Debug Configuration (Projekteinstellungen für eine Visual Basic-Debugkonfiguration)](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
  [Projekteinstellungen für eine C++-Debugkonfiguration](../debugger/project-settings-for-a-cpp-debug-configuration.md)

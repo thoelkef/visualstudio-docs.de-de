@@ -15,11 +15,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2aa9787ad432e402375680c4e27e433236b13249
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: d05f0b8d8fd0190391da831351b65d873eac4efc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="launch-based-attachment"></a>Start-basierte Anlage
 Start-basierte das Anfügen an ein Programm wird automatisch wiederhergestellt. Wenn der Hostprozess für das Programm durch die SDM gestartet wird, folgt Launch-basierte Anlage einen Pfad, der ähnlich dem Konzept der manuellen Methode. Informationen finden Sie unter [Anfügen an das Programm](../../extensibility/debugger/attaching-to-the-program.md).  

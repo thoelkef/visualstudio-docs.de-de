@@ -13,11 +13,12 @@ caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2db510e81231f7802d686b21a977c271a66c5d79
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 70e572b73f8474f77a17989c790f2e7336f9d7a5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debug-engine"></a>Debuggen des Datenbankmoduls
 Ein Debugging-Modul (DE) arbeitet mit den Interpreter oder Betriebssystem, z. B. Ausführung-Steuerelement, Haltepunkte und Ausdruck Auswertung Debugdienste bereit. Die DE ist verantwortlich für das Überwachen des Status eines Programms, das gerade gedebuggt wird. Zu diesem Zweck führen Sie verwendet die DE unabhängig Methoden in der unterstützten Runtime verfügbar sind, ob von der CPU oder über APIs durch die Common Language Runtime bereitgestellt.  

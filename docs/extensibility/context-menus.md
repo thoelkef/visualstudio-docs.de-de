@@ -13,11 +13,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d56be2fecca89d3cfb5a7b12982a0de7f61d457f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 69048a35514ac35556e04ed5266ff58b21b31e0d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="context-menus"></a>Kontextmenüs
 Kontextmenüs werden angezeigt, wenn ein Benutzer in einem aktiven Bereich des Clientbereichs klickt und zu löschen, wenn die rechte Maustaste losgelassen wird.  

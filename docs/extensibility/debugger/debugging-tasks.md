@@ -13,11 +13,12 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c8bd22d71753a8bf86adbe2b437407481388c48d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: d1a6ffff4d3ac0410ca3de7e2cd595119763e88b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugging-tasks"></a>Debugging-Aufgaben
 Um ein Programm debuggen, er gestartet werden muss und ein Debugging-Modul (DE) muss an sie angefügt werden, da andernfalls die DE muss angefügt werden, um eine zuvor gestartete Programm. Nachdem angehängt wird, muss die DE bestimmte Startereignisse generieren. Reaktion versucht das debugpaket in der IDE festgelegten Breakpoints Bindung. Wenn das Programm einen gebundenen Haltepunkt trifft, hält an und wartet auf eine Benutzereingabe.  

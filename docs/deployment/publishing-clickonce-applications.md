@@ -24,11 +24,12 @@ caps.latest.revision: "22"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 35d642256a199c8ee5bf5e67a6a0bfb414b9fccc
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 02b5f2477a18f3432bc255b9bd17a2ac11fbc030
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="publishing-clickonce-applications"></a>Veröffentlichen von ClickOnce-Anwendungen
 Beim ersten Veröffentlichen einer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]-Anwendung können Sie die Veröffentlichungseigenschaften mit dem Webpublishing-Assistenten festlegen. Im Assistenten stehen nur wenige Eigenschaften zur Verfügung. Alle anderen Eigenschaften sind auf die Standardwerte eingestellt.  

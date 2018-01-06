@@ -16,11 +16,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 870469b77eb2f9fcf562602dd651c84fa71020ae
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 24cc20166bad875dcaebbd5492a7fe8317539d47
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="evaluating-expressions"></a>Auswerten von Ausdrücken
 Ausdrücke werden von Zeichenfolgen dar, die von "Auto", Überwachung, Schnellüberwachung oder sofortige Windows übergeben, erstellt. Wenn ein Ausdruck ausgewertet wird, generiert es eine druckbare Zeichenfolge, die den Namen und Typ der Variable "oder" Argument "und" den Wert enthält. Diese Zeichenfolge wird in das entsprechende Fenster der IDE angezeigt.  

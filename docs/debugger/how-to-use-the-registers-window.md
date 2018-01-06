@@ -26,11 +26,12 @@ caps.latest.revision: "37"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1cff6db85b29b4db6006d37fd21e2d9b109b099e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7aa89b6e8d36c3eb47168c8672fb7eea1e3507db
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="view-register-values-and-use-the-registers-window-in-the-visual-studio-debugger"></a>Anzeigen von Werten zu registrieren und Verwenden des Fensters "Register" in der Visual Studio-Debugger
 Das Fenster "Register" ist nur verfügbar, wenn Debuggen auf Adressebene im aktiviert ist die **Optionen** Dialogfeld **Debuggen** Knoten **allgemeine** Kategorie.  
@@ -54,6 +55,6 @@ Das Fenster "Register" ist nur verfügbar, wenn Debuggen auf Adressebene im akti
     >  Registerinformationen sind für Skript- und SQL-Anwendungen nicht verfügbar.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Grundlagen des Debuggens: Fenster "Register"](../debugger/debugging-basics-registers-window.md)   
+ [Grundlagen des Debuggens: Fenster „Register“](../debugger/debugging-basics-registers-window.md)   
  [Anzeigen von Daten im Debugger](../debugger/viewing-data-in-the-debugger.md)   
  [Grundlagen des Debuggens: Fenster "Register"](../debugger/debugging-basics-registers-window.md)

@@ -19,11 +19,12 @@ caps.latest.revision: "7"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 491de73e97bf44ea54d5ccdfb604924ff26c9530
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: c6d0a2c0912b98995bb6d933766a46f4ebc527a4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-file-associations-for-a-clickonce-application"></a>Gewusst wie: Erstellen von Dateizuordnungen für eine ClickOnce-Anwendung
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]Anwendungen können eine oder mehrere Dateinamenerweiterungen zugeordnet werden, so, dass die Anwendung automatisch gestartet wird, wenn der Benutzer eine Datei des Typs geöffnet wird. Hinzufügen von Unterstützung für Dateinamen Erweiterung an eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung ist einfach.  

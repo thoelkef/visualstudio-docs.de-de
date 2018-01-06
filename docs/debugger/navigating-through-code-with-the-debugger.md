@@ -17,11 +17,12 @@ caps.latest.revision: "42"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cda62de6fe72598674b90e4a0ef5dccd8cf2a2af
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 2c45f6cfa37ee8593da08d59071d8244b08feac7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="navigate-code-with-the-visual-studio-debugger"></a>Navigieren Sie im Code mit Visual Studio-Debugger
 Mit den Befehlen und Tastenkombinationen zum Navigieren im Code im Debugger vertraut machen, und treffen, die zum Suchen und beheben Probleme in Ihrer app leichter und schneller. Während Sie den Code im Debugger navigieren, können Sie überprüfen Sie den Status der app oder erfahren Sie mehr über seine Ausführungsfluss.  

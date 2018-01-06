@@ -16,11 +16,12 @@ caps.latest.revision: "23"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0cef54d281555f49806ed59ad1627460a7752954
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 9b3f46a0e4fb87e6064fb3e975cd6b7313270c13
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-a-basic-project-system-part-2"></a>Erstellen eine grundlegende Projektsystem, Teil 2
 Der ersten exemplarischen Vorgehensweise in dieser Serie [erstellen eine grundlegende Projektsystem, Teil 1](../extensibility/creating-a-basic-project-system-part-1.md), zeigt, wie eine grundlegende Projektsystem zu erstellen. In dieser exemplarischen Vorgehensweise baut auf das grundlegende Projektsystem eine Visual Studio-Vorlage, einer Eigenschaftenseite und andere Funktionen. Bevor Sie dieses Objekt starten, müssen Sie die erste exemplarischen Vorgehensweise ausführen.  
@@ -204,7 +205,7 @@ ZipProjects:
  ![](../extensibility/media/simpproj2_myproj.png "SimpProj2_MyProj")  
   
 ## <a name="creating-a-project-type-child-node"></a>Erstellen einen Projekt Typ untergeordneter Knoten  
- Sie können einen Projektknoten-Typ in einen untergeordneten Knoten hinzufügen der **neues Projekt** (Dialogfeld).  Für den Projekttyp SimpleProject haben Sie z. B. untergeordnete Knoten für konsolenanwendungen, Fenster-Anwendungen, Webanwendungen und usw..  
+ Sie können einen Projektknoten-Typ in einen untergeordneten Knoten hinzufügen der **neues Projekt** (Dialogfeld).  Für den Projekttyp SimpleProject haben Sie z. B. untergeordnete Knoten für konsolenanwendungen, Fenster-Anwendungen, Webanwendungen und usw.  
   
  Untergeordnete Knoten werden erstellt, indem Sie die Projektdatei ändern und hinzufügen \<OutputSubPath > untergeordnete Elemente mit dem \<ZipProject > Elemente. Wenn eine Vorlage, die während der Erstellung oder Bereitstellung kopiert wird, wird jeder untergeordnete Knoten einen Unterordner des Projektordners Vorlagen an.  
   
@@ -267,7 +268,7 @@ ZipProjects:
   
 4.  Erweitern Sie die **SimpleProject** Knoten. Die **Konsole** untergeordneter Knoten sollte angezeigt werden. Die **SimpleProject Anwendung** Vorlage wird weiterhin angezeigt, in der **Vorlagen** Bereich.  
   
-5.  . Klicken Sie auf **"Abbrechen"** und Beenden des Debuggens  
+5.  sein. Klicken Sie auf **"Abbrechen"** und Beenden des Debuggens  
   
  ![](../extensibility/media/simpproj2_rollup.png "SimpProj2_Rollup")  
   
@@ -282,7 +283,7 @@ ZipProjects:
   
 -   $safeprojectname$ wird durch den Benutzer in der angegebene Name der **neues Projekt** (Dialogfeld), alle unsicheren Zeichen sowie Leerzeichen entfernt.  
   
- Eine vollständige Liste der Vorlagenparameter, finden Sie unter [Vorlagenparameter](../ide/template-parameters.md).  Wenn Sie eine eigene benutzerdefinierte Vorlagenparameter erstellen möchten, finden Sie unter [NIB: Vorgehensweise: Übergeben von benutzerdefinierten Parametern an Vorlagen](http://msdn.microsoft.com/en-us/5bc2ad11-84c7-4683-a276-e5e00d85d8fb).  
+ Eine vollständige Liste der Vorlagenparameter finden Sie unter [Vorlagenparameter](../ide/template-parameters.md).  Wenn Sie eine eigene benutzerdefinierte Vorlagenparameter erstellen möchten, finden Sie unter [NIB: Vorgehensweise: Übergeben von benutzerdefinierten Parametern an Vorlagen](http://msdn.microsoft.com/en-us/5bc2ad11-84c7-4683-a276-e5e00d85d8fb).  
   
 #### <a name="to-substitute-project-template-parameters"></a>Zum Ersetzen der Projekt-Vorlagenparameter  
   

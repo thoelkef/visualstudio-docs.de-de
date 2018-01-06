@@ -25,11 +25,12 @@ caps.latest.revision: "67"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3672d2448c2b8872605db4a72c06d18c12e18886
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: multiple
+ms.openlocfilehash: f2ad259a116b1679f1e619dc9d281c114fa086cf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="intellitrace-features"></a>IntelliTrace-Funktionen
 Sie können IntelliTrace verwenden, um Ereignisse und Methodenaufrufe Ihrer Anwendung aufzuzeichnen, mit deren Hilfe Sie den Status (Aufruflisten- und lokale Variablenwerte) zu unterschiedlichen Punkten in der Ausführung ermitteln können. Starten Sie das debugging wie gewohnt – IntelliTrace ist standardmäßig aktiviert, und sehen Sie die von IntelliTrace erfassten Informationen in der neuen **Diagnosetools** Fenster unter dem **Ereignisse** Registerkarte. Wählen Sie ein Ereignis aus, und klicken Sie auf **verlaufsbezogenes Debugging aktivieren** um die Aufrufliste und lokal erfasste Informationen für dieses Ereignis anzuzeigen.  

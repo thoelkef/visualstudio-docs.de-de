@@ -13,11 +13,12 @@ caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fe5bd3b149981ca8183e9311185ef5d6ed19e48f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: dc68bf5f8a0e61b80200cd5454b78bcdda78cdfe
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="changing-view-settings-by-using-the-legacy-api"></a>Ändern Einstellungen anzeigen, über die Legacy-API
 Einstellungen für Core-Editor-Funktionen, z. B. Zeilenumbruch, Auswahlrahmen und virtuellen Adressraum können geändert werden, vom Benutzer über die **Optionen** (Dialogfeld). Es ist jedoch auch möglich, zum Ändern der Einstellungen programmgesteuert.  

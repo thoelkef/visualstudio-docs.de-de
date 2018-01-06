@@ -12,11 +12,12 @@ caps.latest.revision: "29"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0f713a1ced59ea1ed0eaf01a3d9630aa96e4c6bf
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0fdc6c58f791c06d5f9287400d00bbfce2564e3b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="overview-of-visual-studio-graphics-diagnostics"></a>Übersicht über Visual Studio-Grafikdiagnose
 Visual Studio *Grafikdiagnose* ist ein Satz von Tools zum Aufzeichnen und anschließenden Analysieren von Rendering- und Leistungsproblemen in Direct3D-apps. Die Grafikdiagnose kann für Apps verwendet werden, die lokal auf Ihrem Windows-PC, in einem Windows-Geräteemulator oder auf einem Remotecomputer oder-gerät ausgeführt werden.  
@@ -38,7 +39,7 @@ Visual Studio *Grafikdiagnose* ist ein Satz von Tools zum Aufzeichnen und anschl
  In [!INCLUDE[win81](../includes/win81_md.md)] führt DirectX 11.2 neue Funktionen ein, u. a. die Unterstützung von Grafikinformationen während der Laufzeit. [!INCLUDE[win81](../includes/win81_md.md)]verwendet die neue laufzeitbasierte Erfassung – genannt *stabile Erfassung*— exklusiv für alle Versionen von DirectX, [!INCLUDE[win81](../includes/win81_md.md)] unterstützt. Die stabile Erfassung unterstützt auch neue Funktionen von Direct3D 11.2.  
   
 ### <a name="limited-direct2d-support"></a>Begrenzte Direct2D-Unterstützung  
- Da Direct2D eine Benutzermodus-API, die auf Grundlage von Direct3D erstellt wurde handelt, können Sie die Grafikdiagnose, um Renderingprobleme in apps Debuggen, die Direct2D verwenden. Es werden jedoch nur die zugrunde liegenden Direct3D-Ereignisse und keine Direct2D-Ereignisse auf höherer Ebene erfasst, sodass Direct2D-Ereignisse nicht in der Grafikereignisliste angezeigt werden. Außerdem ist die Beziehung zwischen Direct2D-Ereignissen und den resultierenden Direct3D-Ereignissen nicht immer nachvollziehbar, daher ist die Verwendung der Grafikdiagnose zum Debuggen von Renderingproblemen in Apps, die Direct2D verwenden, nicht ganz einfach. Sie können die Grafik-Diagnose aber verwenden, um Informationen zu Problemen abzurufen, die in Direct2D-Apps beim Rendern auf unterster Ebene auftreten.  
+ Da Direct2D eine Benutzermodus-API, die auf Grundlage von Direct3D erstellt wurde handelt, können Sie die Grafikdiagnose, um Renderingprobleme in apps Debuggen, die Direct2D verwenden. Es werden jedoch nur die zugrunde liegenden Direct3D-Ereignisse und keine Direct2D-Ereignisse auf höherer Ebene erfasst, sodass Direct2D-Ereignisse nicht in der Grafikereignisliste angezeigt werden. Außerdem ist die Beziehung zwischen Direct2D-Ereignissen und den resultierenden Direct3D-Ereignissen nicht immer nachvollziehbar, daher ist die Verwendung der Grafikdiagnose zum Debuggen von Renderingproblemen in Apps, die Direct2D verwenden, nicht ganz einfach. Sie können die Grafikdiagnose aber verwenden, um Informationen zu Problemen abzurufen, die in Direct2D-Apps beim Rendern auf unterster Ebene auftreten.  
   
 ## <a name="graphics-diagnostics-features-in-visual-studio"></a>Funktionen der Grafikdiagnose in Visual Studio  
  Grafikdiagnose verfügt über eine eigene Benutzeroberfläche - das Fenster "Grafikanalyse" - zum Diagnostizieren von Renderingproblemen, jedoch auch einige Tools zur Visual Studio-Benutzeroberfläche.  

@@ -28,11 +28,12 @@ caps.latest.revision: "10"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 0ca5bb824cbe4e37db241aba956f9f6bf91d18cd
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: d3a9762872f74b39d8cef387703488c01647dbcc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-clickonce-applications-for-others-to-deploy"></a>Erstellen von ClickOnce-Anwendungen für die Bereitstellung durch Dritte
 Nicht alle Entwickler, die ClickOnce-Bereitstellungen erstellen, planen, die Anwendungen selbst bereitstellen. Viele davon Packen ihre Anwendung einfach mithilfe von ClickOnce und leiten dann die Dateien an einen Kunden, z. B. einem großen Unternehmen. Der Kunde wird zum Hosten der Anwendung in einem Netzwerk zuständig. In diesem Artikel werden einige der in solchen Bereitstellungen in Versionen von .NET Framework vor Version 3.5 auftretenden Probleme. Klicken Sie dann beschrieben eine neue Projektmappe bereitgestellt, mit der neuen Funktion für "Anwendungsmanifest für Vertrauensstellungsinformationen verwenden" in .NET Framework 3.5. Schließlich geht mit empfohlenen Vorgehensweisen zum Erstellen von ClickOnce-Bereitstellungen für Kunden, die noch ältere Versionen von .NET Framework verwenden.  

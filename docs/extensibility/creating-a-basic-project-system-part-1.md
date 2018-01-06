@@ -16,11 +16,12 @@ caps.latest.revision: "47"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e61c0d681dac52e85c3854325ee20ada29d74d4c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 1e0c2e41baa6f1c97a272e7c9655f4f837552cac
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-a-basic-project-system-part-1"></a>Erstellen eine grundlegende Projektsystem, Teil 1
 In Visual Studio sind Projekte die Container, mit denen Entwickler Quellcodedateien und anderen Ressourcen zu organisieren. Projekte angezeigt werden als untergeordnete Elemente von Lösungen in der **Projektmappen-Explorer**. Projekte können Sie die zu organisieren, erstellen, Debuggen, und Bereitstellen von Quellcode und Erstellen von Verweisen auf Web-Services, Datenbanken und andere Ressourcen.  

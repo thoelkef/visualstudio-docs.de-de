@@ -13,11 +13,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 79d888e9b50d18b4a9d46a8914381db27f09698d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: a76b14f28bdb74345813931fc334f98090abd93c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="control-of-execution"></a>Steuerung der Ausführung
 Die Debugging-Modul (DE) sendet eines der folgenden Ereignisse in der Regel als letzte Startup-Ereignis:  

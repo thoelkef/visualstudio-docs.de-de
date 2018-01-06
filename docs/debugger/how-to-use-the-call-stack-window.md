@@ -31,11 +31,12 @@ caps.latest.revision: "40"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fdbc4c62b599ac19ff5bf6b6b0eedf862cc1b77d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e10b81ff07b77e2fd6202d2f5fb27392fe8134c2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="view-the-call-stack-and-use-the-call-stack-window-in-the-visual-studio-debugger"></a>Zeigen Sie die Aufrufliste an und verwenden Sie des Fensters Aufrufliste in Visual Studio-debugger
 
@@ -136,7 +137,7 @@ Finden Sie unter [angeben von Symbol(PDB)- und Quelldateien](../debugger/specify
   
 4.  Geben Sie einen Verzeichnispfadnamen zum Symbolspeicherort auf dem Computer ein, den Sie debuggen. Für lokale und remote zu Debuggen ist dies ein Pfad auf dem lokalen Computer.
   
-5.  Klicken Sie auf **OK** schließen die **Optionen** (Dialogfeld).  
+5.  Klicken Sie auf **OK**, um das Dialogfeld **Optionen** zu schließen.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Gemischter Code und fehlende Daten im Fenster "Aufrufliste"](../debugger/mixed-code-and-missing-information-in-the-call-stack-window.md)  

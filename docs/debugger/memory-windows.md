@@ -26,11 +26,12 @@ caps.latest.revision: "32"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a5c6f422e980a585b9cbac3c0b59ad8d981aba93
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 96a4dc22f4f5c96d3dd9d40a565c2656ffe6e283
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="use-the-memory-windows-in-the-visual-studio-debugger"></a>Verwenden Sie das Fenster "Arbeitsspeicher" in Visual Studio-Debugger
 Die **Arbeitsspeicher** Fenster bietet einen Einblick in den belegten Speicherplatz, der von der Anwendung verwendet wird. Die **Überwachen** Fenster **Schnellüberwachung** Dialogfeld **"Auto"** Fenster und **"lokal"** Fenster zeigen Sie den Inhalt von Variablen, die an bestimmten Orten im Arbeitsspeicher gespeichert. Aber die **Arbeitsspeicher** Fenster zeigt das umfangreiche Bild. Diese Ansicht ist besonders angenehm beim Untersuchen von großen Datenmengen (beispielsweise Puffer oder umfangreiche Zeichenfolgen), die in den anderen Fenstern nicht gut dargestellt werden. Allerdings die **Arbeitsspeicher** Fenster ist nicht beschränkt auf das Anzeigen von Daten. Darin wird der gesamte Inhalt des Arbeitsspeichers angezeigt, unabhängig davon, ob es sich dabei um Daten, Code oder um zufällig verteilte Objekte in nicht zugewiesenem Arbeitsspeicher handelt.  
@@ -46,7 +47,7 @@ Die **Arbeitsspeicher** Fenster bietet einen Einblick in den belegten Speicherpl
 2.  In der **Debuggen** Sie im Menü **Windows**. Zeigen Sie dann auf **Arbeitsspeicher** , und klicken Sie dann auf **Arbeitsspeicher 1**, **Arbeitsspeicher 2**, **Arbeitsspeicher 3**, oder **Arbeitsspeicher 4**. (Technisch anspruchsvolle Editionen von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] haben nur einen einzigen **Arbeitsspeicher** Fenster. Wenn Sie eine dieser Editionen verwenden, klicken Sie einfach **Arbeitsspeicher**.)  
   
 ## <a name="paging-in-the-memory-window"></a>Paging im Fenster "Arbeitsspeicher"  
- Die **Arbeitsspeicher** Fenster verfügt über eine vertikale Bildlaufleiste, die eine nicht standardmäßige Funktionsweise besitzt. Der Adressbereich eines modernen Computers ist sehr groß, und eine Suche kann leicht fehlschlagen, wenn Sie das Bildlauffeld der Bildlaufleiste an eine zufällige Position ziehen. Aus diesem Grunde verhält sich das Bildlauffeld, als wäre es beidseitig mit einer Zugfeder verbunden, und verbleibt stets in der Mitte der Bildlaufleiste. In Anwendungen, die in systemeigenem Code geschrieben sind, können Sie einen Bildlauf nach oben oder unten durchführen; die Durchführung eines freien Bildlaufs ist jedoch nicht möglich.  
+ Die **Arbeitsspeicher** Fenster verfügt über eine vertikale Bildlaufleiste, die eine nicht standardmäßige Funktionsweise besitzt. Der Adressbereich eines modernen Computers ist sehr groß, und eine Suche kann leicht fehlschlagen, wenn Sie das Bildlauffeld der Bildlaufleiste an eine zufällige Position ziehen. Aus diesem Grunde verhält sich das Bildlauffeld, als wäre es beidseitig mit einer Zugfeder verbunden, und verbleibt stets in der Mitte der Bildlaufleiste. In Anwendungen, die in nativem Code geschrieben sind, können Sie einen Bildlauf nach oben oder unten durchführen; die Durchführung eines freien Bildlaufs ist jedoch nicht möglich.  
   
  Höhere Speicheradressen werden unten im Fenster angezeigt. Um eine höhere Adresse anzuzeigen, führen Sie einen Bildlauf nach unten anstatt nach oben aus.  
   

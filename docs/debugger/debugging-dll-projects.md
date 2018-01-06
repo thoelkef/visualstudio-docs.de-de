@@ -22,11 +22,12 @@ caps.latest.revision: "38"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 92d888c04827f3df2c9bc5ede33d4dfd9a6742dc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7b43d7c5fb8d66e758a44b86d4918f04599d6147
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugging-dll-projects-from-visual-studio"></a>Debuggen von DLL-Projekten in Visual Studio
 Die folgenden Visual Studio-Vorlagen erstellen DLLs:  
@@ -126,6 +127,6 @@ Weitere Informationen zu projekteinstellungen, finden Sie unter [Eigenschaftense
  [Visual C++-Projekttypen](../debugger/debugging-preparation-visual-cpp-project-types.md)   
  [C#-, F#- und Visual Basic-Projekttypen](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
  [Projekteinstellungen für eine C++-Debugkonfiguration](../debugger/project-settings-for-a-cpp-debug-configuration.md)   
- [Projekteinstellungen für C#-Debugkonfiguration](../debugger/project-settings-for-csharp-debug-configurations.md)   
- [Projekteinstellungen für eine Visual Basic-Debugkonfiguration](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
+ [Project Settings for  C# Debug Configurations (Projekteinstellungen für C#-Debugkonfigurationen)](../debugger/project-settings-for-csharp-debug-configurations.md)   
+ [Project Settings for a Visual Basic Debug Configuration (Projekteinstellungen für eine Visual Basic-Debugkonfiguration)](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
  [Debuggersicherheit](../debugger/debugger-security.md)

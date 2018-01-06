@@ -13,11 +13,12 @@ caps.latest.revision: "2"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c1f308de55d9170b2247114ea96f611dd8e1af9f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0de0874a605325f3f61547a202701eeeeb4d5a24
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="graphics-state"></a>Grafikzustand
 Im Statusfenster der Visual Studio-Grafikdiagnose sehen Sie den Grafikstatus, der zum Zeitpunkt des aktuellen Ereignisses aktiv ist, wie z. B. bei einem Zeichnen-Befehl.  
@@ -52,7 +53,7 @@ Im Statusfenster der Visual Studio-Grafikdiagnose sehen Sie den Grafikstatus, de
   
 |Spalte|Beschreibung|  
 |------------|-----------------|  
-|Name|Der Name des Statuselements. Wenn dieses Element Statusbündel darstellt, kann das Element erweitert werden, um es anzuzeigen.<br /><br /> In der **API Eingabe Statusansicht** und **logischen Statusansicht** angegeben, um die hierarchische Beziehung zwischen den Zuständen an eingerückt werden.<br /><br /> In der **angeheftete Statusansicht** Zustand befindet, vollständig qualifizierte Namen in einer flachen Liste angezeigt werden.|  
+|name|Der Name des Statuselements. Wenn dieses Element Statusbündel darstellt, kann das Element erweitert werden, um es anzuzeigen.<br /><br /> In der **API Eingabe Statusansicht** und **logischen Statusansicht** angegeben, um die hierarchische Beziehung zwischen den Zuständen an eingerückt werden.<br /><br /> In der **angeheftete Statusansicht** Zustand befindet, vollständig qualifizierte Namen in einer flachen Liste angezeigt werden.|  
 |Wert|Der Wert des Statuselements.|  
 |Typ|Der Typ des Statuselements.|  
   

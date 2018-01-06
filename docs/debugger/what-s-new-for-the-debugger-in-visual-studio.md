@@ -22,32 +22,33 @@ caps.latest.revision: "81"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2a08c56ae60822e6d4183e5789c68cbe383b4dd5
-ms.sourcegitcommit: 2c7f48ad6073a81fa927568793633f26cc1f0b15
+ms.workload: multiple
+ms.openlocfilehash: 8df1dcde73496f6ec8c25eb33cb4b6986a721f33
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="whats-new-for-the-debugger-in-includevsdev15miscincludesvsdev15mdmd"></a>Neues im Debugger in[!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
 
 Der Debugger enthält die folgenden neuen Features:
 
-- Neues in 15.5, die **Momentaufnahme Debugger** eine Momentaufnahme Ihrer Anwendungen in Produktion aufgenommen, wenn Code, der Sie interessiert sind, ausgeführt. Um anzuweisen, den Debugger an eine Momentaufnahme zu erstellen, legen Sie Snappoints und Logpoints im Code. Der Debugger können Sie sehen, genau, Einzelheiten ohne Auswirkungen auf Ihre produktionsanwendung Datenverkehr. Der Momentaufnahme-Debugger können Sie die Zeit, um Probleme zu beheben, die in produktionsumgebungen auftreten benötigt, den Nachrichtendurchsatz stark senken.
+- Neues in 15.5, die **Momentaufnahme Debugger** eine Momentaufnahme Ihrer Anwendungen in Produktion aufgenommen, wenn Code, der Sie interessiert sind, ausgeführt. Legen Sie Andockpunkte und Protokollpunkte in Ihrem Code fest, um den Debugger anzuweisen, eine Momentaufnahme zu erstellen. Der Debugger zeigt Fehler ohne Auswirkungen auf den Datenverkehr Ihrer Produktionsanwendung an. Der Momentaufnahmedebugger kann Sie dabei unterstützen, die Zeit zum Beheben von Fehlern, die in Produktionsumgebungen auftreten, erheblich zu reduzieren.
 
-    Momentaufnahmesammlung steht für die folgenden Web-apps in Azure App Service ausgeführt wird:
+    Die Momentaufnahmensammlung ist für folgende Web-Apps verfügbar, die in Azure App Service ausgeführt werden:
 
-    * ASP.NET-Anwendungen unter .NET Framework 4.6.1 oder höher.
-    * ASP.NET Core-Anwendungen, die auf .NET Core 2.0 oder höher auf Windows ausgeführt wird.
+    * ASP.NET-Apps, die in .NET Framework 4.6.1 oder höher ausgeführt werden.
+    * ASP.NET Core-Apps, die in .NET Core 2.0 oder höher unter Windows ausgeführt werden.
 
     Weitere Informationen finden Sie unter [live ASP.NET-apps, die mit der Snapshot-Debugger Debuggen](../debugger/debug-live-azure-applications.md).
 
-- Neu in 15.5 nur in Visual Studio Enterprise **IntelliTrace Schritt hinten** automatisch Schritt Ereignis wird eine Momentaufnahme der Anwendung auf jedem haltepunktereignissen und den Debugger. Die erfassten Momentaufnahmen können Sie zurückkehren zum vorherigen Haltepunkte oder Schritte und den Status der Anwendung anzeigen, wie dies in der Vergangenheit war. IntelliTrace Schritt Back kann sparen Sie Zeit, wenn Sie möchten, finden in den vorherigen Anwendungszustand aber nicht angezeigt werden sollen, Debuggen neu starten, oder erstellen Sie die gewünschte app-Status erneut.
+- Neu in 15.5 nur in Visual Studio Enterprise **IntelliTrace Schritt hinten** automatisch Schritt Ereignis wird eine Momentaufnahme der Anwendung auf jedem haltepunktereignissen und den Debugger. Durch die erfassten Momentaufnahmen können Sie zu vorherigen Haltepunkten oder Schritten zurückkehren und sich den Zustand der Anwendung so anzeigen lassen, wie er zuvor war. Mit dem IntelliTrace-Feature „Step-back“ können Sie Zeit sparen, wenn Sie den vorherigen Zustand der Anwendung anzeigen oder diesen wiederherstellen, aber das Debuggen nicht erneut starten möchten.
 
-    Sie können navigieren und Anzeigen von Momentaufnahmen mithilfe der **Schritt rückwärts** und **Schritt vorwärts** Schaltflächen in der Debug-Symbolleiste. Diese Schaltflächen navigieren, die Ereignisse, die in der **Ereignisse** Registerkarte der **Diagnosetools** Fenster.
+    Sie können Momentaufnahmen anzeigen und durch diese navigieren, indem Sie die Schaltflächen **Schritt zurück** und **Schritt vor** in der Debugsymbolleiste verwenden. Mit diesen Schaltflächen können Sie durch die Ereignisse navigieren, die in der Registerkarte **Ereignisse** des Fensters **Diagnosetools** angezeigt werden.
 
     ![Schrittweise rückwärts und Vorwärts-Schaltflächen](../debugger/media/intellitrace-step-back-icons-description.png  "Schritt rückwärts und Vorwärts-Schaltflächen")
 
-    Weitere Informationen finden Sie unter der [Anzeigen von Momentaufnahmen mithilfe von IntelliTrace Schritt hinten](../debugger/how-to-use-intellitrace-step-back.md) Seite.
+    Weitere Informationen finden Sie auf der Seite [View snapshots using IntelliTrace step-back (Anzeigen von Momentaufnahmen mithilfe des IntelliTrace-Features „Step-back“)](../debugger/how-to-use-intellitrace-step-back.md).
 
 - Die **Ausnahmen-Hilfe** Ausnahmen-Assistent ersetzt und wird in ein nicht modales Dialogfeld, in dem der Fehler aufgetreten ist. Die **Ausnahmen-Hilfe** bietet schnelleren Zugriff auf alle inneren Ausnahmen, die zusätzliche Analyse durch den Debugger (falls vorhanden) und die unmittelbaren Zugriff auf die **Ausnahmeeinstellungen** für die Ausnahme. Ausnahmen-Hilfe kann auch in eine Gleitkommazahl Ansicht gezogen werden, wenn es etwas, die Sie benötigen blockiert wird, finden Sie unter.
 

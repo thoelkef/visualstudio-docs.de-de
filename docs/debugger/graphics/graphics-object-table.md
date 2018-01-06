@@ -16,11 +16,12 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d7449cef9dca41aee61a3f15162252298db04e71
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: eb03ab88ca3d1d50b559cef87bfdf045a0a81319
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="graphics-object-table"></a>Grafikobjekttabelle
 Mit der Grafikobjekttabelle in Visual Studio-Grafikanalyse können Sie die Direct3D-Objekte erkennen, die einen Frame Ihres Spiels oder Ihrer App unterstützen.  
@@ -43,7 +44,7 @@ Mit der Grafikobjekttabelle in Visual Studio-Grafikanalyse können Sie die Direc
 |------------|-----------------|  
 |**Bezeichner**|Die Objekt-ID.|  
 |**Name**|Anwendungsspezifische Informationen, die für das Objekt mit der Direct3D-Funktion `SetPrivateData` festgelegt wurden (normalerweise zur Bereitstellung zusätzlicher Informationen über das Objekt).|  
-|**Typ**|Der Objekttyp.|  
+|**Type**|Der Objekttyp.|  
 |**Aktive**|Zeigt "*" für ein Objekt an, das während des aufgezeichneten Frames auf D3D10Device oder D3D11DeviceContext festgelegt wurde.<br /><br /> Dies entspricht den Objekten, die in grauer Schrift angezeigt werden, stellt aber einen Spalteneintrag bereit, mit dem Sie die Objekttabelle sortieren können.|  
 |**Size**|Die Größe des Objekts in Bytes.|  
 |**Format**|Das Format des Objekts. Beispielsweise das Format eines Texturobjekts oder das Shadermodell eines Shaderobjekts.|  
