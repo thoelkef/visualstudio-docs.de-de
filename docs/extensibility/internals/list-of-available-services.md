@@ -15,11 +15,12 @@ caps.latest.revision: "49"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1f2fca0baa747311b08983d8fc7e30efd02ae4c9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 50016483ea1fa5a04c41e49493eda92b6a270b8c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="list-of-available-services"></a>Liste der verfügbaren Dienste
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]und Visual Studio SDK unterstützen die folgenden Dienste. Einige Pakete bieten eigene Dienste, die hier nicht aufgeführt sind – z. B. Sprachdienste keinen einzigen Dienst GUID haben. Sie müssen den Namen der Sprache verwenden, um die GUID des Sprachdiensts, der in der Registrierung gefunden.  
@@ -28,7 +29,7 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="the-services"></a>Die Dienste  
   
-|Dienst|Schnittstelle|Visual Studio|Visual Studio 2005|Beschreibung|  
+|Dienst|Interface|Visual Studio|Visual Studio 2005|Beschreibung|  
 |-------------|---------------|-------------------|------------------------|-----------------|  
 |<xref:Microsoft.VisualStudio.OLE.Interop.SBindHost>|<xref:Microsoft.VisualStudio.OLE.Interop.IBindHost>|Ja|Ja|VSPackages, die zum Abrufen einer <xref:Microsoft.VisualStudio.OLE.Interop.IBindHost> Schnittstelle aus einem ActiveX-Steuerelement, um asynchrone Datenübertragungen zu ermöglichen.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.SDTE>|<xref:EnvDTE.DTE>|Nein|Ja|Ruft ab, das Erweiterbarkeit DTE (Design Time)-Objekt, das für die Automatisierung verwendet.<br /><br /> C/C++-ID: SID_SDTE|  

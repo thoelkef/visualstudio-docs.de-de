@@ -18,11 +18,12 @@ caps.latest.revision: "26"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7032f3663be7df1a06fa4dc16d4f4473e4666cfc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 09ea283b17a980ff9be1fae54ecc8b24912b70ad
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-configure-inclusion-list-security"></a>Gewusst wie: Konfigurieren der Aufnahmelistensicherheit
   Wenn Sie über Administratorberechtigungen verfügen, können Sie konfigurieren die [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] vertrauenswürdige Eingabeaufforderung steuern, ob Endbenutzer die Möglichkeit, installieren Office-Projektmappen durch das Speichern einer Entscheidung über die Vertrauenswürdigkeit der Aufnahmeliste angegeben werden. Informationen zu Aufnahmelisten finden Sie unter [vertrauen Office-Projektmappen mithilfe von Benutzeraufnahmelisten](../vsto/trusting-office-solutions-by-using-inclusion-lists.md).  
@@ -59,7 +60,7 @@ ms.lasthandoff: 10/31/2017
     |String-Wert-Unterschlüssel|Wert|  
     |-------------------------|-----------|  
     |**Internet**|**AuthenticodeRequired**|  
-    |**UntrustedSites**|**Deaktiviert**|  
+    |**UntrustedSites**|**Disabled** (deaktiviert)|  
     |**MyComputer**|**Aktiviert**|  
     |**LocalIntranet**|**Aktiviert**|  
     |**TrustedSites**|**Aktiviert**|  
@@ -117,7 +118,7 @@ ms.lasthandoff: 10/31/2017
   
     |String-Wert-Unterschlüssel|Wert|  
     |-------------------------|-----------|  
-    |**UntrustedSites**|**Deaktiviert**|  
+    |**UntrustedSites**|**Disabled** (deaktiviert)|  
     |**Internet**|**AuthenticodeRequired**|  
     |**MyComputer**|**AuthenticodeRequired**|  
     |**LocalIntranet**|**AuthenticodeRequired**|  
@@ -174,11 +175,11 @@ ms.lasthandoff: 10/31/2017
   
     |String-Wert-Unterschlüssel|Wert|  
     |-------------------------|-----------|  
-    |**UntrustedSites**|**Deaktiviert**|  
-    |**Internet**|**Deaktiviert**|  
-    |**MyComputer**|**Deaktiviert**|  
-    |**LocalIntranet**|**Deaktiviert**|  
-    |**TrustedSites**|**Deaktiviert**|  
+    |**UntrustedSites**|**Disabled** (deaktiviert)|  
+    |**Internet**|**Disabled** (deaktiviert)|  
+    |**MyComputer**|**Disabled** (deaktiviert)|  
+    |**LocalIntranet**|**Disabled** (deaktiviert)|  
+    |**TrustedSites**|**Disabled** (deaktiviert)|  
   
 #### <a name="to-disable-the-inclusion-list-programmatically"></a>So deaktivieren Sie die Aufnahmeliste programmgesteuert  
   

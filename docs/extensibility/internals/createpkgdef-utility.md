@@ -17,11 +17,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 32e9c8ffa2a9ca2bba889436f37cc4f5c3d188bf
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 47316f6bd47d5d528dc6e36dfe3a4bcb67e00909
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="createpkgdef-utility"></a>CreatePkgDef-Hilfsprogramm
 Eine DLL-Datei für eine Visual Studio-Erweiterung als Parameter akzeptiert, und erstellt eine PKGDEF-Datei, um die DLL-Datei zu begleiten. Die PKGDEF-Datei enthält alle Informationen, die in der systemregistrierung andernfalls geschrieben werden würde, wenn die Erweiterung installiert ist.  

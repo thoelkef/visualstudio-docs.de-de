@@ -13,11 +13,12 @@ caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a93dbdff19d0a0feaafb549b00968e095690fd78
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: f5dd2a98ec84b656dc70a00236775710266c54ba
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="supporting-source-control"></a>Unterstützung von Datenquellen-Steuerelements
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Auschecken von Dateien, Check-ins und andere Quellcodeverwaltungsvorgänge für das Projekt oder die-Editor unterstützt. Als einem Quellcodeverwaltungsclient [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] dient für die Interaktion mit einem Steuerelement-Quellpaket [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)], Archivierung, versionsverwaltung und Steuerung Einrichtungen für eine dynamisch definierte Gruppe von Dateien bietet.  

@@ -15,11 +15,12 @@ caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6488df3ec567051709f6464d49d891cdd8f995dd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 74616bf92b1424b4749354d1f0a7b3232e66a335
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="extending-and-customizing-tool-windows"></a>Erweitern und Anpassen von Toolfenstern
 Visual Studio stellt verschiedene Typen von Windows, z. B. Toolfenster Dokumentfenster und Dialogfeldern bereit. Andere Fenster z. B. das Eigenschaftenfenster, Fenster "Ausgabe" und das Fenster "Aufgabenliste" sind die Typen der Toolfenster.  

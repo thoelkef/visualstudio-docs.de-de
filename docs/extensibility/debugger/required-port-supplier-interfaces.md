@@ -15,11 +15,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 973d191305383967aee1c7379fd203375a71c825
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ab243886341d720045fc2d1fbd7a813b7d81c9e5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="required-port-supplier-interfaces"></a>Erforderliche Port Lieferanten Schnittstellen
 Ein Port Lieferant muss implementieren die [IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md) Schnittstelle.[ IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md)  
@@ -45,7 +46,7 @@ Ein Port Lieferant muss implementieren die [IDebugPortSupplier2](../../extensibi
 ## <a name="port-supplier-operation"></a>Lieferanten Portvorgang  
  Die [IDebugPortEvents2](../../extensibility/debugger/reference/idebugportevents2.md) Senke empfängt Benachrichtigungen beim Verarbeiten und Programme erstellt und an einem Port zerstört werden. Ein Port ist erforderlich, um das Senden [IDebugProcessCreateEvent2](../../extensibility/debugger/reference/idebugprocesscreateevent2.md) bei der Erstellung eines Prozesses und [IDebugProcessDestroyEvent2](../../extensibility/debugger/reference/idebugprocessdestroyevent2.md) Wenn auf dem Port ein Prozesses zerstört wird. Ein Port ist auch erforderlich, um senden [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) Wenn ein Programm erstellt wird und [IDebugProgramDestroyEvent2](../../extensibility/debugger/reference/idebugprogramdestroyevent2.md) Wenn ein Programm in einem Prozess ausgeführt wird, an dem Port zerstört wird.  
   
- Ein Port in der Regel sendet Programm erstellen und zerstören Ereignisse als Antwort auf die [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md) und [RemoveProgramNode](../../extensibility/debugger/reference/idebugportnotify2-removeprogramnode.md) Methoden bzw..  
+ Ein Port in der Regel sendet Programm erstellen und zerstören Ereignisse als Antwort auf die [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md) und [RemoveProgramNode](../../extensibility/debugger/reference/idebugportnotify2-removeprogramnode.md) Methoden bzw.  
   
  Da ein Port starten und beenden Prozesse physischen und logischen Programme kann, müssen diese Schnittstellen auch durch das Debugmodul implementiert werden:  
   

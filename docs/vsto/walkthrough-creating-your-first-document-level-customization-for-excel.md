@@ -19,11 +19,12 @@ caps.latest.revision: "28"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 046f5376891c62278b3756078f82b9e5db3b28d2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 93b9fdad9fc0224c34835457f76140a0df5612b9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-your-first-document-level-customization-for-excel"></a>Exemplarische Vorgehensweise: Erstellen der ersten Anpassung auf Dokumentebene für Excel
   Diese exemplarische Vorgehensweise bietet eine Einführung zum Erstellen einer Anpassung auf Dokumentebene für Microsoft Office Excel. Die Features, die Sie in dieser Art von Projektmappe erstellen, sind nur verfügbar, wenn eine bestimmte Arbeitsmappe geöffnet ist. Sie können eine Anpassung auf Dokumentebene nicht verwenden, um anwendungsweite Änderungen vorzunehmen, z. B., um eine neue Registerkarte des Menübands anzuzeigen, wenn eine Arbeitsmappe geöffnet ist.  
@@ -38,7 +39,7 @@ ms.lasthandoff: 10/31/2017
   
 -   Schreiben von Code, der das Excel-Objektmodell zum Hinzufügen von Text zum angepassten Arbeitsblatt verwendet, wenn dieses geöffnet wird.  
   
--   Erstellen und Ausführen des Projekts, um es zu testen.  
+-   Erstellen Sie das Projekt, und führen Sie es aus, um es zu testen.  
   
 -   Bereinigen des abgeschlossenen Projekts zum Entfernen nicht benötigter Builddateien und Sicherheitseinstellungen vom Entwicklungscomputer.  
   

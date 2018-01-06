@@ -14,11 +14,12 @@ caps.latest.revision: "41"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 1d168695aca3626fa1ba351aef56faf001c5b6ee
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ebd8b73cf28452998f00dbf863e6637f6c9188e5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="generating-files-with-the-texttransform-utility"></a>Generieren von Dateien mit dem Hilfsprogramm "TextTransform"
 TextTransform.exe ist ein Befehlszeilentool, mit denen Sie eine Textvorlage transformieren können. Wenn Sie TextTransform.exe aufrufen, geben Sie den Namen des eine Textvorlagendatei als Argument. TextTransform.exe Ruft das Texttransformationsmodul und verarbeitet die Textvorlage. TextTransform.exe wird normalerweise von Skripts aufgerufen. Allerdings ist es nicht in der Regel erforderlich, da Sie in Visual Studio oder im Buildprozess TextTransformation ausführen können.  
@@ -62,7 +63,7 @@ TextTransform [<options>] <templateName>
 |**-I:** \<Includedirectory >|Ein Verzeichnis, das die Textvorlagen enthalten in der Vorlage angegebenen Text enthält.|  
 |**P -** \<Referencepath >|Eine zu durchsuchende Verzeichnis an in der Textvorlage angegebenen Assemblys oder zur Verwendung der **- R** Option.<br /><br /> Verwenden Sie z. B. zum Einschließen von Assemblys, die für die Visual Studio-API verwendet<br /><br /> `-P "%VSSHELLFOLDER%\Common7\IDE\PublicAssemblies"`|  
 |**-dp** \<ProcessorName >!\< Klassenname >! \<AssemblyName &#124; codeBase >|Der Name, die vollständigen Typnamen und die Assembly mit einem Direktivenprozessor, der zum Verarbeiten von benutzerdefinierter Richtlinien in der Vorlage "Text" verwendet werden kann.|  
-|**– ein** [ProcessorName]! [ DirectiveName]! \<ParameterName >! \<%ParameterValue >|Geben Sie einen Parameterwert für einen Direktivenprozessor. Wenn Sie nur den Parameternamen und den Wert angeben, wird der Parameter für alle Direktivenprozessoren verfügbar sein. Wenn Sie einen Direktivenprozessor angeben, ist der Parameter nur für den angegebenen Prozessor zur Verfügung. Wenn Sie einen Richtlinie Namen angeben, ist der Parameter zur Verfügung, nur, wenn die angegebene Direktive verarbeitet wird.<br /><br /> Verwenden Sie den Zugriff auf die Parameterwerte aus einem Direktivenprozessor oder die Vorlage "Text" <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost.ResolveParameterValue%2A>. In einer Textvorlage enthalten `hostspecific` in der Template-Direktive und rufen Sie die Nachricht auf `this.Host`. Zum Beispiel:<br /><br /> `<#@template language="c#" hostspecific="true"#> [<#= this.Host.ResolveParameterValue("", "", "parameterName") #>]`.<br /><br /> Geben Sie immer die "!" markiert, auch wenn Sie die optionale Prozessor- und Anweisungsnamen weglassen. Zum Beispiel:<br /><br /> `-a !!param!value`|  
+|**– ein** [ProcessorName]! [ DirectiveName]! \<ParameterName >! \<%ParameterValue >|Geben Sie einen Parameterwert für einen Direktivenprozessor. Wenn Sie nur den Parameternamen und den Wert angeben, wird der Parameter für alle Direktivenprozessoren verfügbar sein. Wenn Sie einen Direktivenprozessor angeben, ist der Parameter nur für den angegebenen Prozessor zur Verfügung. Wenn Sie einen Richtlinie Namen angeben, ist der Parameter zur Verfügung, nur, wenn die angegebene Direktive verarbeitet wird.<br /><br /> Verwenden Sie den Zugriff auf die Parameterwerte aus einem Direktivenprozessor oder die Vorlage "Text" <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost.ResolveParameterValue%2A>. In einer Textvorlage enthalten `hostspecific` in der Template-Direktive und rufen Sie die Nachricht auf `this.Host`. Zum Beispiel:<br /><br /> `<#@template language="c#" hostspecific="true"#> [<#= this.Host.ResolveParameterValue("", "", "parameterName") #>]`<br /><br /> Geben Sie immer die "!" markiert, auch wenn Sie die optionale Prozessor- und Anweisungsnamen weglassen. Zum Beispiel:<br /><br /> `-a !!param!value`|  
 |**-h**|Enthält die Hilfe.|  
   
 ## <a name="related-topics"></a>Verwandte Themen  

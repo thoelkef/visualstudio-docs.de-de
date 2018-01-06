@@ -20,11 +20,12 @@ caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 55b1da36fbf982b26f079b0aebbee67bc9d5f203
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 03d7f2eedef03a4995a9f14540351df80bd537f3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="working-with-mail-items"></a>Arbeiten mit E-Mail-Elementen
   Die <xref:Microsoft.Office.Interop.Outlook.MailItem> Klasse enthält die Methoden und Eigenschaften, die Sie verwenden, um die Aufgaben im Zusammenhang mit e-Mail-Nachrichten.  
@@ -32,7 +33,7 @@ ms.lasthandoff: 10/31/2017
 |Aufgabe|Prozedur|  
 |----------|---------------|  
 |Erstellen Sie eine e-Mail-Nachricht.|[Vorgehensweise: Programmgesteuertes Erstellen von E-Mail-Elementen](../vsto/how-to-programmatically-create-an-e-mail-item.md)|  
-|Sendet eine E-Mail-Nachricht.|[Vorgehensweise: Programmgesteuertes Senden von E-Mails](../vsto/how-to-programmatically-send-e-mail-programmatically.md)|  
+|Sendet eine E-Mail-Nachricht.|[Gewusst wie: Programmgesteuertes Senden von E-Mails](../vsto/how-to-programmatically-send-e-mail-programmatically.md)|  
 |Reagieren Sie auf neue e-Mail-Nachrichten mit einer benutzerdefinierten Aktion.|[Vorgehensweise: Programmgesteuertes Ausführen von Aktionen beim Empfang einer E-Mail-Nachricht](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)|  
 |Speichern von Anlagen.|[Vorgehensweise: Programmgesteuertes Speichern von Anlagen von Outlook-E-Mail-Elementen](../vsto/how-to-programmatically-save-attachments-from-outlook-e-mail-items.md)|  
 |Fügen Sie Anlagen hinzu.|[Vorgehensweise: Programmgesteuertes Anfügen von Dateien an Outlook-E-Mail-Elemente](../vsto/how-to-programmatically-attach-files-to-outlook-e-mail-items.md)|  

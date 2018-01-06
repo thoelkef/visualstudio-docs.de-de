@@ -23,11 +23,12 @@ caps.latest.revision: "43"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4293d13ffc5b69c23c0b613a3d9747248d6fa790
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 3df07b6f60d4b870c830fc419b88decbe2f8fde1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="optional-parameters-in-office-solutions"></a>Optionale Parameter in Office-Lösungen
   Viele der Methoden in den Objektmodellen von Microsoft Office-Anwendungen akzeptieren optionale Parameter. Wenn Sie mithilfe von Visual Basic eine Office-Lösung in Visual Studio entwickeln, muss kein Wert für optionale Parameter übergeben werden, da die Standardwerte automatisch für jeden fehlenden Parameter verwendet werden. In den meisten Fällen können Sie optionale Parameter in Visual C#-Projekten auch weggelassen. Nicht jedoch optionale weggelassen **Ref** Parameter von der `ThisDocument` -Klasse im Word-Projekten auf Dokumentebene.  
@@ -74,6 +75,6 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="see-also"></a>Siehe auch  
  [Entwickeln von Office-Projektmappen](../vsto/developing-office-solutions.md)   
- [Schreiben von Code in Office-Projektmappen](../vsto/writing-code-in-office-solutions.md)  
+ [Writing Code in Office Solutions](../vsto/writing-code-in-office-solutions.md)  
   
   

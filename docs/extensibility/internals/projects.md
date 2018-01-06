@@ -18,11 +18,12 @@ caps.latest.revision: "43"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c175d85b55734df841f30d131639c3bfeed40361
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ff9f1a9d22511fe6a4c388d6d84ec1992a185ec5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="projects"></a>Projekte
 In Visual Studio-Projekte sind Container, mit denen Entwickler zum Organisieren von Quellcodedateien und anderen Ressourcen, die in angezeigt werden **Projektmappen-Explorer**. Projekte werden in der Regel Dateien (z. B. eine CSPROJ-Datei für ein C#-Projekt), in denen Verweise auf Quellcodedateien und Ressourcen, wie mithilfe einer Bitmapdateien gespeichert. Projekte können Sie zu organisieren, erstellen, Debuggen und Bereitstellen von Quellcode, Verweise auf Webdienste und Datenbanken und anderen Ressourcen. VSPackages können die Visual Studio-Projektsystem erweitern, in drei verschiedene Arten: *-Projekttypen*, *Projektuntertypen*, und *benutzerdefinierte Tools*.  

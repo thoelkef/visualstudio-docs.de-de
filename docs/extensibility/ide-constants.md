@@ -20,11 +20,12 @@ caps.latest.revision: "23"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 817c95d511ff1b02558010f3046827684b72d4f4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 4a43bc68a87d00dcce90f1a948b64dd786e9b440
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ide-constants"></a>IDE-Konstanten
 Die <xref:Microsoft.VisualStudio.VSConstants> -Klasse enthält Konstanten, die für die integrierte Entwicklungsumgebung (IDE) spezifisch sind und, die zuvor nur in den Headerdateien definiert wurden.  
@@ -80,7 +81,7 @@ Die <xref:Microsoft.VisualStudio.VSConstants> -Klasse enthält Konstanten, die f
 |<xref:Microsoft.VisualStudio.VSConstants.VSITEMID_SELECTION>|Ein [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Element-ID, die darstellt, die aktuell ausgewählte Element oder die Elemente, die den Stamm der Hierarchie enthalten kann.|  
   
 ## <a name="ivsselectionevents"></a>IVsSelectionEvents  
- Beschreibt, welche Komponente von der IDE einfach, im ausgewählt wurde ein <xref:Microsoft.VisualStudio.Shell.Interop.IVsSelectionEvents.OnElementValueChanged%2A> aufrufen, z. B..  
+ Beschreibt, welche Komponente von der IDE einfach, im ausgewählt wurde ein <xref:Microsoft.VisualStudio.Shell.Interop.IVsSelectionEvents.OnElementValueChanged%2A> aufrufen, z. B.  
   
 |Konstante|Wert|  
 |--------------|-----------|  

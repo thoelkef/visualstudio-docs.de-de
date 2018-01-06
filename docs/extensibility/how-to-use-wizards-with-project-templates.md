@@ -18,11 +18,12 @@ caps.latest.revision: "23"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 81cacbcc3f7573b9386fb2816650d8c96508b613
-ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
+ms.workload: vssdk
+ms.openlocfilehash: 6e76a8880e488177f12cfb949ec46e95fd825986
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="how-to-use-wizards-with-project-templates"></a>Gewusst wie: Verwenden von Assistenten mit Projektvorlagen
 Visual Studio stellt die <xref:Microsoft.VisualStudio.TemplateWizard.IWizard>-Schnittstelle bereit, die, falls sie implementiert ist, das Ausführen von benutzerdefiniertem Code beim Erstellen eines Projekts aus einer Vorlage ermöglicht.  
@@ -49,7 +50,7 @@ Visual Studio stellt die <xref:Microsoft.VisualStudio.TemplateWizard.IWizard>-Sc
   
 6.  In der **Bestand** Registerkarte **neu**. In der **neue Anlage hinzufügen** Fenster für das Typfeld **Microsoft.VisualStudio.ProjectTemplate**. In der **Quelle** Feld **ein Projekt in der aktuellen Projektmappe**. In der **Projekt** Feld **MyProjectTemplate**. Klicken Sie dann auf **OK**.  
   
-7.  Erstellen Sie die Lösung und beginnen Sie mit dem Debuggen. Eine zweite Instanz von Visual Studio wird geöffnet. (Dies kann einige Minuten dauern.)  
+7.  Erstellen Sie die Projektmappe, und beginnen Sie mit dem Debuggen. Eine zweite Instanz von Visual Studio wird geöffnet. (Dies kann einige Minuten dauern.)  
   
 8.  Versuchen Sie in der zweiten Instanz von Visual Studio um ein neues Projekt mit Ihrer neuen Vorlage zu erstellen. (**Datei > Neu > Projekt > c# > "meinProjekt" Vorlage**). Das neue Projekt sollte angezeigt werden, mit einer Klasse mit dem Namen **Class1**. Sie haben jetzt eine benutzerdefinierte Projektvorlage erstellt! Beenden des Debuggens jetzt.  
   
@@ -310,6 +311,8 @@ namespace $safeprojectname$
      Beachten Sie, dass `$custommessage$` durch den im Benutzereingabeformular des Assistenten eingegebenen Text ersetzt wurde.  
   
 ## <a name="see-also"></a>Siehe auch  
- <xref:Microsoft.VisualStudio.TemplateWizard.IWizard>   
- [Anpassen von Vorlagen](../ide/customizing-project-and-item-templates.md)   
- [WizardExtension-Element (Visual Studio-Vorlagen)](../extensibility/wizardextension-element-visual-studio-templates.md)
+
+<xref:Microsoft.VisualStudio.TemplateWizard.IWizard>   
+[Anpassen von Vorlagen](../ide/customizing-project-and-item-templates.md)  
+[WizardExtension-Element (Visual Studio-Vorlagen)](../extensibility/wizardextension-element-visual-studio-templates.md)  
+[NuGet-Pakete in Visual Studio-Vorlagen](/nuget/visual-studio-extensibility/visual-studio-templates)

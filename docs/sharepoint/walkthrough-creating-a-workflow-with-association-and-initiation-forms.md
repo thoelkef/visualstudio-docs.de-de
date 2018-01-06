@@ -24,11 +24,12 @@ caps.latest.revision: "38"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: aa95c519ab24ba042b6a1adfa71c64499b18d4c9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: b3178c330d34570d1406a1b63368537bc7f66887
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-workflow-with-association-and-initiation-forms"></a>Exemplarische Vorgehensweise: Erstellen eines Workflows mit Zuordnungs- und Initiierungsformularen
   Diese exemplarische Vorgehensweise veranschaulicht die Erstellung ein grundlegenden sequenziellen Workflows, das die Verwendung von Zuordnungs-und Initiierungsformularen integriert. Hierbei handelt es sich um ASPX-Formulare, die Parameter eines Workflows hinzugefügt werden, wenn es zuerst vom SharePoint-Administrator (Form Zuordnung) zugewiesen ist und der Workflow gestartet wird, vom Benutzer (Initiierung Form) aktivieren.  
@@ -96,7 +97,7 @@ ms.lasthandoff: 10/31/2017
   
      Die **Assistent zum Anpassen von SharePoint** angezeigt wird.  
   
-10. In der **Geben Sie den Workflownamen für das Debuggen** Seite, übernehmen Sie den Standardnamen (**ExpenseReport - Workflow1**). Beibehalten des Standardwerts Workflow Vorlage Typ (**Listenworkflow)**. Wählen Sie die **Weiter** Schaltfläche.  
+10. In der **Geben Sie den Workflownamen für das Debuggen** Seite, übernehmen Sie den Standardnamen (**ExpenseReport - Workflow1**). Beibehalten des Standardwerts Workflow Vorlage Typ (**Listenworkflow)**. Klicken Sie auf **Weiter**.  
   
 11. In der **möchten Sie Visual Studio, um den Workflow in einer Debugsitzung automatisch zuordnen?** Seite, deaktivieren Sie das Kontrollkästchen, die automatisch Ihrer Workflowvorlage zuordnet, wenn diese Option aktiviert ist.  
   

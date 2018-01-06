@@ -13,11 +13,12 @@ caps.latest.revision: "21"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 50db39e9a6b864df8876054b455b169531260a9a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: e4612f5779d6177d58cef7f087ef6e11bbe4ebd9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="inside-the-core-editor"></a>In der Core-Editor
 Die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Core-Editor ist ein Satz von mehreren Komponenten, mit denen Sie ändern und Abfragen von Textinformationen. Wenn Sie die Core-Editor angepasst haben, über die legacy-API, können Sie weiterhin diesen Anpassungen zu verwenden, die Editor Adapter weitergeleitet wird. Es wird jedoch empfohlen, dass Sie Ihre Anpassungen an den neuen Editor API anpassen.  

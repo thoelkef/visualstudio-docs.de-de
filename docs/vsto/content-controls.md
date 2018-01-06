@@ -43,11 +43,12 @@ caps.latest.revision: "65"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5b2950370b35eb8e2f60f15c5de032284c5546f3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 4d50e7c6177152b2cef3709c983334d05b48a812
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="content-controls"></a>Inhaltssteuerelemente
   Inhaltssteuerelemente bieten Ihnen eine Möglichkeit, Dokumente und Vorlagen zu entwerfen, die die folgenden Funktionen aufweisen:  
@@ -98,16 +99,16 @@ ms.lasthandoff: 10/31/2017
 ### <a name="drop-down-list"></a>Dropdownliste  
  Eine Dropdownliste zeigt eine Liste von Elementen an, die Benutzer auswählen können. Im Gegensatz zu einem Kombinationsfeld ermöglicht die Dropdownliste Benutzern nicht das Hinzufügen oder Bearbeiten von Elementen. Weitere Informationen finden Sie unter dem <xref:Microsoft.Office.Tools.Word.DropDownListContentControl>-Typ.  
   
-### <a name="group"></a>Gruppe  
+### <a name="group"></a>Gruppieren  
  Ein Gruppensteuerelement definiert einen geschützten Bereich eines Dokuments, den Benutzer weder bearbeiten noch löschen können. Ein Gruppensteuerelement kann beliebige Dokumentelemente enthalten, z. B. Text, Tabellen, Grafiken und andere Inhaltssteuerelemente. Weitere Informationen finden Sie unter dem <xref:Microsoft.Office.Tools.Word.GroupContentControl>-Typ.  
   
-### <a name="picture"></a>Bild  
+### <a name="picture"></a>Picture  
  Ein Bildsteuerelement zeigt ein Bild an. Sie können das Bild zur Entwurfszeit oder zur Laufzeit angeben, oder Benutzer können auf dieses Steuerelement klicken, um ein Bild auszuwählen, das in das Dokument eingefügt werden soll. Weitere Informationen finden Sie unter dem <xref:Microsoft.Office.Tools.Word.PictureContentControl>-Typ.  
   
 ### <a name="rich-text"></a>Rich-Text  
  Ein Rich-Text-Steuerelement enthält Text oder andere Elemente, z. B. Tabellen, Bilder oder andere Inhaltssteuerelemente. Weitere Informationen finden Sie unter dem <xref:Microsoft.Office.Tools.Word.RichTextContentControl>-Typ.  
   
-### <a name="plain-text"></a>Nur Text  
+### <a name="plain-text"></a>Nur-Text  
  Ein Nur-Text-Steuerelement enthält Text. Ein Nur-Text-Steuerelement kann keine anderen Elemente (z. B. Tabellen, Bilder oder andere Inhaltssteuerelemente) enthalten. Darüber hinaus weist der gesamte Text in einem Nur-Text-Steuerelement die gleiche Formatierung auf. Wenn Sie z. B. ein Wort in einem Satz kursiv formatieren, das sich in einem Nur-Text-Steuerelement befindet, wird der gesamte Text im Steuerelement kursiv formatiert. Weitere Informationen finden Sie unter dem <xref:Microsoft.Office.Tools.Word.PlainTextContentControl>-Typ.  
   
 ### <a name="generic-content-control"></a>Generisches Inhaltssteuerelement  
@@ -167,7 +168,7 @@ ms.lasthandoff: 10/31/2017
 |---------------|-----------------------------|----------------------------------------------------------------|  
 |<xref:System.Boolean><br /><br /> <xref:System.Byte><br /><br /> <xref:System.Char><br /><br /> <xref:System.Double><br /><br /> <xref:System.Enum><br /><br /> <xref:System.Guid><br /><br /> <xref:System.Int16><br /><br /> <xref:System.Int32><br /><br /> <xref:System.Int64><br /><br /> <xref:System.SByte><br /><br /> <xref:System.Single><br /><br /> <xref:System.String><br /><br /> <xref:System.TimeSpan><br /><br /> <xref:System.UInt16><br /><br /> <xref:System.UInt32><br /><br /> <xref:System.UInt64>|<xref:Microsoft.Office.Tools.Word.PlainTextContentControl>|<xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.DatePickerContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.RichTextContentControl>|  
 |<xref:System.DateTime>|<xref:Microsoft.Office.Tools.Word.DatePickerContentControl>|<xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.PlainTextContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.RichTextContentControl>|  
-|<xref:System.Drawing.Image><br /><br /> <xref:System.Byte>-Array|<xref:Microsoft.Office.Tools.Word.PictureContentControl>|Keine|  
+|<xref:System.Drawing.Image><br /><br /> <xref:System.Byte>-Array|<xref:Microsoft.Office.Tools.Word.PictureContentControl>|Keiner|  
   
  In Projekten auf Dokumentebene und VSTO-Add-In-Projekten können Sie ein Inhaltssteuerelement programmgesteuert an eine Datenquelle mithilfe der Methode <xref:System.Windows.Forms.ControlBindingsCollection.Add%2A> der Eigenschaft <xref:System.Windows.Forms.IBindableComponent.DataBindings%2A> des Steuerelements binden. Wenn Sie so vorgehen, übergeben Sie die Zeichenfolge **Text** auf die *PropertyName* Parameter von der <xref:System.Windows.Forms.ControlBindingsCollection.Add%2A> Methode. Die **Text** Eigenschaft ist für die Standard-Datenbindungseigenschaft von Inhaltssteuerelementen.  
   
@@ -208,7 +209,7 @@ plainTextContentControl1.XMLMapping.SetMapping("/Product/Price", String.Empty, n
 ### <a name="data-binding-events-for-content-controls"></a>Datenbindungsereignisse für Inhaltssteuerelemente  
  Alle Inhaltssteuerelemente stellen einen Satz von Ereignissen bereit, die Sie behandeln können, um datenbezogene Aufgaben auszuführen. Sie können z. B. überprüfen, ob der Text in einem Steuerelement bestimmte Kriterien erfüllt, bevor die Datenquelle aktualisiert wird. Die folgende Tabelle listet die Inhaltssteuerelement-Ereignisse auf, die mit der Datenbindung zusammenhängen.  
   
-|Aufgabe|Ereignis|  
+|Aufgabe|event|  
 |----------|-----------|  
 |Ausführen von Code , kurz bevor Word automatisch den Text in einem Inhaltssteuerelement aktualisiert, das an einen benutzerdefinierten XML-Abschnitt gebunden ist.|<xref:Microsoft.Office.Tools.Word.ContentControlBase.ContentUpdating>|  
 |Ausführen von Code, kurz bevor Word automatisch die Daten in einem benutzerdefinierten XML-Abschnitt aktualisiert, der an ein Inhaltssteuerelement gebunden ist (d. h. nachdem sich der Text im Inhaltssteuerelement ändert).|<xref:Microsoft.Office.Tools.Word.ContentControlBase.StoreUpdating>|  

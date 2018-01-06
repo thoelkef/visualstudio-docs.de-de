@@ -19,11 +19,12 @@ caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d083ff3a6c39b0d399b641db7e3a33d4f200e7bc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: b4f455ad27966f5ac3c5dba6c3ac276670f74b26
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltaddingt-element-office-development-in-visual-studio"></a>&lt;AddIn&gt; -Element (Office-Entwicklung in Visual Studio)
   Das `addin` -Element des `vstav3` -Namespace enthält spezifische Informationen zu Microsoft Office VSTO-Add-Ins und Anpassungen auf Dokumentebene, die mit Visual Studio entwickelt wurden.  

@@ -25,11 +25,12 @@ caps.latest.revision: "33"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 30261fea83870b5bdfce11a25969207aad260ee4
-ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
+ms.workload: multiple
+ms.openlocfilehash: e6d4c01043bde59822175b20f36cd576c3a9c3a3
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="deployment-overview-in-visual-studio"></a>Übersicht über die Bereitstellung in Visual Studio
 
@@ -43,7 +44,7 @@ Finden Sie in den Lernprogrammen für-Schritt-Anweisungen.
 
     ![Wählen Sie veröffentlichen](../deployment/media/quickstart-publish.png)
 
-- **Visual C++-Laufzeitbibliotheken**: Sie können die lokale Bereitstellung oder statische Verknüpfung mit Visual C++-Laufzeit bereitstellen. Weitere Informationen finden Sie unter [Bereitstellen von systemeigenen Desktopanwendungen (Visual C++)](/cpp/ide/deploying-native-desktop-applications-visual-cpp.md). 
+- **Visual C++-Laufzeitbibliotheken**: Sie können die lokale Bereitstellung oder statische Verknüpfung mit Visual C++-Laufzeit bereitstellen. Weitere Informationen finden Sie unter [Bereitstellen von systemeigenen Desktopanwendungen (Visual C++)](/cpp/ide/deploying-native-desktop-applications-visual-cpp). 
 
 ### <a name="publish-to-web-or-deploy-to-network-share"></a>Im Web veröffentlichen oder auf einer Netzwerkfreigabe bereitstellen
 
@@ -55,7 +56,7 @@ Finden Sie in den Lernprogrammen für-Schritt-Anweisungen.
 
     Sie können auch ASP.NET-Anwendungen und-Dienste in verschiedene andere Weise bereitstellen. Weitere Informationen finden Sie unter [Bereitstellen von ASP.NET-Webanwendungen und-Dienste](http://www.asp.net/aspnet/overview/deployment).
 
-- **Visual C++-Laufzeitbibliotheken**: Sie können die zentrale Bereitstellung mithilfe von Visual C++-Laufzeit bereitstellen. Weitere Informationen finden Sie unter [Bereitstellen von systemeigenen Desktopanwendungen (Visual C++)](/cpp/ide/deploying-native-desktop-applications-visual-cpp.md). 
+- **Visual C++-Laufzeitbibliotheken**: Sie können die zentrale Bereitstellung mithilfe von Visual C++-Laufzeit bereitstellen. Weitere Informationen finden Sie unter [Bereitstellen von systemeigenen Desktopanwendungen (Visual C++)](/cpp/ide/deploying-native-desktop-applications-visual-cpp). 
 
 - **Windows-Desktop** können Sie eine Windows-Desktopanwendung auf einem Webserver oder eine Dateifreigabe im Netzwerk mithilfe von ClickOnce-Bereitstellung veröffentlichen. Benutzer können die Anwendung mit einem einzelnen Mausklick installieren. Weitere Informationen finden Sie unter [eine desktop-app mit ClickOnce bereitstellen](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) und [eine systemeigene app mit ClickOnce bereitstellen](/cpp/ide/clickonce-deployment-for-visual-cpp-applications).
 
@@ -72,7 +73,7 @@ Finden Sie in den Lernprogrammen für-Schritt-Anweisungen.
     > [!NOTE]
     > Wenn Sie nicht bereits über ein Azure-Konto verfügen, können Sie [registrieren Sie sich hier](https://azure.microsoft.com/free/?ref=microsoft.com&utm_source=microsoft.com&utm_medium=doc&utm_campaign=visualstudio).
 
-- Andere **Azure Services**: finden Sie unter den jeweiligen [Azure-Dienst](https://docs.microsoft.com/azure/#pivot=products) Dokumentation für die verschiedenen Bereitstellungsoptionen, die von Visual Studio unterstützt werden kann.
+- Andere **Azure Services**: finden Sie unter den jeweiligen [Azure-Dienst](/azure/#pivot=products) Dokumentation für die verschiedenen Bereitstellungsoptionen, die von Visual Studio unterstützt werden kann.
 
 ### <a name="publish-to-microsoft-store"></a>Microsoft-Datenspeicher veröffentlichen
 

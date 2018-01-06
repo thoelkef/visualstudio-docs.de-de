@@ -16,11 +16,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 93c9b09b7a9356687707837d818b9a603f8961b4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 98a4184813f424357dcc6fdecf87289351022dc0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugpendingbreakpoint2virtualize"></a>IDebugPendingBreakpoint2::Virtualize
 Schaltet das virtualisierte dieses ausstehender Haltepunkt. Wenn ein ausstehender Haltepunkt virtualisiert ist, versucht das Debugmodul sie jedes Mal, wenn neue Code in die Anwendung lädt binden.  

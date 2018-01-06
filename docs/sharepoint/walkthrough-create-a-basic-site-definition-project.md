@@ -20,11 +20,12 @@ caps.latest.revision: "35"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9bea8fec27b0d53fb1cfe3405d39d271a93f5a8d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: a792ab750decf1a14b589116d886c847b3ddd478
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-create-a-basic-site-definition-project"></a>Exemplarische Vorgehensweise: Erstellen eines einfachen Projekts für eine Websitedefinition
   In dieser exemplarischen Vorgehensweise wird gezeigt, wie eine grundlegenden Websitedefinition erstellt, die ein visuelles Webpart mit einigen Steuerelementen enthält. Aus Gründen der Übersichtlichkeit weist das visuelle Webpart, das Sie erstellen nur wenige Steuerelemente. Allerdings können Sie komplexere Websitedefinitionen für SharePoint erstellen, die weitere Funktionen enthalten.  

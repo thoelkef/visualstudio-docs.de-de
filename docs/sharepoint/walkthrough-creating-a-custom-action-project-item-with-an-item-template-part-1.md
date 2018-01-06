@@ -20,11 +20,12 @@ caps.latest.revision: "152"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ddab05340b898a1a9a1868c7e537e6b53cc013b4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 70a307fe1eb68cb6e1409d0a43178795f0d9421c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1"></a>Exemplarische Vorgehensweise: Erstellen eines Projektelements für die benutzerdefinierte Aktion mit einer Elementvorlage, Teil 1
   Sie können das SharePoint-Projektsystem in Visual Studio erweitern, indem Sie eigene Projektelementtypen erstellen. In dieser exemplarischen Vorgehensweise erstellen Sie ein Projektelement, die auf einem SharePoint-Projekt zum Erstellen einer benutzerdefinierten Aktion auf einer SharePoint-Website hinzugefügt werden können. Die benutzerdefinierte Aktion Fügt ein Menüelement zu dem **Websiteaktionen** Menü der SharePoint-Website.  

@@ -16,11 +16,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 098d8ca0d779b7a7877c47125017dd2cd6880445
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: vssdk
+ms.openlocfilehash: 46b540f1c5ba5b345464948170287d2b354b7a0e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-update-a-visual-studio-extension"></a>Vorgehensweise: Aktualisieren eine Visual Studio-Erweiterung
 Sie können mithilfe eine Visual Studio-Erweiterung auf Ihrem System aktualisieren **Erweiterungen und Updates** die aktualisierte Version zu installieren. Wenn Sie eine aktualisierte Version der Erweiterung erstellen, können Sie es anzugeben, wie aktualisiert, indem Sie die Versionsnummer im VSIX-Manifest erhöht.  

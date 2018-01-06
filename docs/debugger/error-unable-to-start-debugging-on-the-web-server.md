@@ -6,7 +6,7 @@ ms.reviewer:
 ms.suite: 
 ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - vs.debug.error.http
 - vwd.nonadmin.error.
@@ -26,16 +26,16 @@ helpviewer_keywords:
 - errors [debugger], unable to start debugging
 - debugging ASP.NET Web applications, unable to start debugging error
 - remote debugging, errors
-ms.assetid: f62e378a-3a99-4f78-9d97-8bb63a4da181
 caps.latest.revision: "29"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5332933bf1452ca730b5c49716e10f49851fd749
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a7d09deda1aa2b24fba90f9d9d417917c5b284ad
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="error-unable-to-start-debugging-on-the-web-server"></a>Fehler: Das Debuggen kann auf dem Webserver nicht gestartet werden
 
@@ -119,7 +119,7 @@ Nach der Schritte zur Behebung des Problems hier detailliert, und versuchen Sie 
 
 * Überprüfen Sie die Konfiguration des Anwendungspools, korrigieren Sie ihn bei Bedarf, und wiederholen Sie dann.
 
-    Der Anwendungspool kann für eine Version von ASP.NET konfiguriert werden, die Visual Studio-Projekt nicht übereinstimmen. Aktualisieren Sie die Version von ASP.NET im Anwendungspool, und starten Sie ihn neu. Ausführliche Informationen finden Sie unter [IIS 8.0 mithilfe von ASP.NET 3.5 und ASP.NET 4.5](https://docs.microsoft.com/en-us/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45).
+    Der Anwendungspool kann für eine Version von ASP.NET konfiguriert werden, die Visual Studio-Projekt nicht übereinstimmen. Aktualisieren Sie die Version von ASP.NET im Anwendungspool, und starten Sie ihn neu. Ausführliche Informationen finden Sie unter [IIS 8.0 mithilfe von ASP.NET 3.5 und ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45).
 
     Wenn Anmeldeinformationen geändert haben, müssen Sie auch diese in den Anwendungspool oder die Website zu aktualisieren.  In den Anwendungspool und Aktualisieren von Anmeldeinformationen in **Erweiterte Einstellungen > Prozessmodell > Identität**. Aktualisieren Sie für die Website-Anmeldeinformationen in **Grundeinstellungen > Verbinden als...** . Starten Sie den Anwendungspool neu.
     
@@ -129,7 +129,7 @@ Nach der Schritte zur Behebung des Problems hier detailliert, und versuchen Sie 
 
 * Stellen Sie sicher, dass die richtige Version von ASP.NET in IIS installiert ist.
 
-    Nicht übereinstimmende Versionen von ASP.NET auf IIS und in Visual Studio-Projekt können dieses Problem verursachen. Sie müssen möglicherweise die Framework-Version in der Datei "Web.config" festlegen. Verwenden Sie zum Installieren von ASP.NET auf IIS die [Webplattform-Installer (WebPI)](https://www.microsoft.com/web/downloads/platform.aspx). Siehe auch [IIS 8.0 mithilfe von ASP.NET 3.5 und ASP.NET 4.5](https://docs.microsoft.com/en-us/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) oder für ASP.NET Core, [Host unter Windows mit IIS](https://docs.asp.net/en/latest/publishing/iis.html).
+    Nicht übereinstimmende Versionen von ASP.NET auf IIS und in Visual Studio-Projekt können dieses Problem verursachen. Sie müssen möglicherweise die Framework-Version in der Datei "Web.config" festlegen. Verwenden Sie zum Installieren von ASP.NET auf IIS die [Webplattform-Installer (WebPI)](https://www.microsoft.com/web/downloads/platform.aspx). Siehe auch [IIS 8.0 mithilfe von ASP.NET 3.5 und ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) oder für ASP.NET Core, [Host unter Windows mit IIS](https://docs.asp.net/en/latest/publishing/iis.html).
   
 * Beheben Sie Authentifizierungsfehler, wenn Sie nur die IP-Adresse verwenden
 
@@ -155,7 +155,7 @@ Wenn die IIS-Konfiguration nicht das Problem verursacht, probieren Sie diese Sch
 
      Wenn IIS nicht ordnungsgemäß installiert wurde, sollten Fehler angezeigt werden, wenn Sie `http://localhost` in einem Browser eingeben.
      
-     Weitere Informationen zum Bereitstellen von für IIS finden Sie unter [IIS 8.0 mithilfe von ASP.NET 3.5 und ASP.NET 4.5](https://docs.microsoft.com/en-us/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) und für ASP.NET Core, [Host unter Windows mit IIS](https://docs.asp.net/en/latest/publishing/iis.html).
+     Weitere Informationen zum Bereitstellen von für IIS finden Sie unter [IIS 8.0 mithilfe von ASP.NET 3.5 und ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) und für ASP.NET Core, [Host unter Windows mit IIS](https://docs.asp.net/en/latest/publishing/iis.html).
 
 * Erstellen Sie eine einfache ASP.NET-Anwendung auf dem Server (oder verwenden Sie eine grundlegende "Web.config"-Datei).
 

@@ -23,11 +23,12 @@ caps.latest.revision: "82"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-ms.openlocfilehash: c6c5954cdb4979ede5e43d2052801ca399f128fd
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 1e9041c397b121a5919ad370ccb7020c229e9b61
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Überprüfen von Code mit der Abhängigkeit-Diagramme
 
@@ -100,7 +101,7 @@ In dieser Version von Visual Studio Abhängigkeit Überprüfungen in Echtzeit, u
 2.  In **Ebenen-Explorer**, sehen Sie sich die **unterstützt die Validierung** Spalte. Wenn der Wert „false“ ist, wird die Validierung vom Element nicht unterstützt.  
   
 ##  <a name="IncludeReferences"></a>Andere .NET-Assemblys und Projekte zur Validierung einschließen  
- Wenn Sie Elemente in das Dependency-Diagramm ziehen, werden automatisch zu Verweise auf die entsprechenden .NET-Assemblys oder Projekte hinzugefügt der **Ebenenverweise** Ordner im Modellierungsprojekt. Dieser Ordner enthält Verweise auf die Assemblys und Projekte, die bei der Überprüfung analysiert werden. Sie können weitere .NET-Assemblys und Projekte zur Validierung einschließen, ohne Sie sie manuell das Dependency-Diagramm ziehen.  
+ Wenn Sie Elemente in das Dependency-Diagramm ziehen, werden automatisch zu Verweise auf die entsprechenden .NET-Assemblys oder Projekte hinzugefügt der **Ebenenverweise** Ordner im Modellierungsprojekt. Dieser Ordner enthält Verweise auf die Assemblys und Projekte, die bei der Validierung analysiert werden. Sie können weitere .NET-Assemblys und Projekte zur Validierung einschließen, ohne Sie sie manuell das Dependency-Diagramm ziehen.  
   
 1.  In **Projektmappen-Explorer**, mit der rechten Maustaste in des Modellierungsprojekts oder den **Ebenenverweise** Ordner, und klicken Sie dann auf **Verweis hinzufügen**.  
   

@@ -18,11 +18,12 @@ caps.latest.revision: "130"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e3fec17bdde7f559cafa3d12833585ffa0c03ab7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 55d2f0c75925cb3bc95242c72e6734759c611d2e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-configure-a-computer-to-develop-office-solutions"></a>Gewusst wie: Konfigurieren eines Computers zum Entwickeln von Office-Projektmappen
   Um einen Entwicklungscomputer so zu konfigurieren, dass Sie die Microsoft Office Developer Tools in Visual Studio verwenden können, befolgen Sie die Anweisungen in diesem Thema. Sie müssen Administratorrechte auf dem Entwicklungscomputer besitzen, um diese Schritte auszuführen.  

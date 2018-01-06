@@ -23,11 +23,12 @@ caps.latest.revision: "70"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bb94603d3041a30e978fff0ac6fff399648fc027
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 70748440dc325266439ee71569e858eb3d815fc1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="binding-data-to-controls-in-office-solutions"></a>Binden von Daten an Steuerelemente in Office-Projektmappen
   Sie können Windows Forms-Steuerelemente und *Hoststeuerelemente* auf einem Microsoft Office Word-Dokument oder einem Microsoft Office Excel-Arbeitsblatt an eine Datenquelle binden, sodass die Steuerelemente die Daten automatisch anzeigen. Sie können Daten sowohl in Projekten auf Anwendungsebene als auch in Projekten auf Dokumentebene an Steuerelemente binden.  
@@ -53,7 +54,7 @@ ms.lasthandoff: 10/31/2017
  Exemplarische Vorgehensweisen, die einfache Datenbindung veranschaulicht wird, finden Sie unter [Exemplarische Vorgehensweise: einfache Datenbindung in einem Projekt auf Dokumentebene](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md) für ein Projekt auf Dokumentebene und [Exemplarische Vorgehensweise: einfache Datenbindung in einem VSTO-add-in-Projekt ](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md) für ein VSTO-Add-in-Projekt.  
   
 ## <a name="complex-data-binding"></a>komplexe Datenbindung  
- Eine komplexe Datenbindung besteht dann, wenn eine Steuerelementeigenschaft an mindestens zwei Datenelemente (z. B. mehrere Spalten einer Datentabelle) gebunden ist. Das <xref:Microsoft.Office.Tools.Excel.ListObject> -Steuerelement für Excel ist das einzige Hoststeuerelement, das komplexe Datenbindung unterstützt. Zudem unterstützen viele Windows Forms-Steuerelemente komplexe Datenbindung, etwa das <xref:System.Windows.Forms.DataGridView> -Steuerelement.  
+ Eine komplexe Datenbindung besteht dann, wenn eine Steuerelementeigenschaft an mindestens zwei Datenelemente (z. B. mehrere Spalten einer Datentabelle) gebunden ist. Das <xref:Microsoft.Office.Tools.Excel.ListObject> -Steuerelement für Excel ist das einzige Hoststeuerelement, das komplexe Datenbindung unterstützt. Zudem unterstützen viele Windows Forms-Steuerelemente komplexe Datenbindung, etwa das <xref:System.Windows.Forms.DataGridView> -Steuerelement.  
   
  Um komplexe Datenbindung auszuführen zu können, legen Sie die DataSource-Eigenschaft des Steuerelements auf ein Datenquellenobjekt, das von komplexer Datenbindung unterstützt wird. Beispielsweise kann die <xref:Microsoft.Office.Tools.Excel.ListObject.DataSource%2A> -Eigenschaft des <xref:Microsoft.Office.Tools.Excel.ListObject> -Steuerelements an mehrere Spalten einer Datentabelle gebunden werden. Alle Daten in der Datentabelle werden im <xref:Microsoft.Office.Tools.Excel.ListObject> -Steuerelement angezeigt, und wenn sich die Daten in der Datentabelle ändern, ändert sich auch aus <xref:Microsoft.Office.Tools.Excel.ListObject> -Steuerelement. Eine Liste der Datenquellen, die Sie für komplexe Datenbindung verwenden können, finden Sie unter [Data Sources Supported by Windows Forms](/dotnet/framework/winforms/data-sources-supported-by-windows-forms).  
   

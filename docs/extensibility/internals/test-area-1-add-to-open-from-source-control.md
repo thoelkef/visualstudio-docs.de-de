@@ -15,11 +15,12 @@ caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 959387176e079d76263a2a5c499b5a0723fd7ad7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 1891e0242463f3673d22d22e0f9a2d000b01ae60
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="test-area-1-add-toopen-from-source-control"></a>Testbereich 1: Fügen Sie hinzu, / Open-aus der Quellcodeverwaltung
 Dieses Plug-in-Quelle-Steuerelement testen Bereich deckt Projektmappen oder Projekten unter quellcodeverwaltung platzieren und aus der quellcodeverwaltung abrufen.  

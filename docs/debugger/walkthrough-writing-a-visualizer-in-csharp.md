@@ -7,11 +7,7 @@ ms.suite:
 ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs:
-- CSharp
-- VB
-- FSharp
-- C++
+dev_langs: CSharp
 helpviewer_keywords:
 - visualizers, writing
 - walkthroughs [Visual Studio], visualizers
@@ -20,11 +16,12 @@ caps.latest.revision: "33"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fd63f183d42111cfb8381b5fee86debbca6cd04e
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: dotnet
+ms.openlocfilehash: 6e161b3c914d0a87a720f1217b52a571b85f5ff9
+ms.sourcegitcommit: 03a74d29a1e0584ff4808ce6c9e812b51e774905
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 01/02/2018
 ---
 # <a name="walkthrough-writing-a-visualizer-in-c"></a>Exemplarische Vorgehensweise: Schreiben einer Schnellansicht in C# #
 In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie in C# eine einfache Schnellansicht schreiben können. Die in dieser exemplarischen Vorgehensweise erstellte Schnellansicht zeigt den Inhalt einer Zeichenfolge in einem Windows Forms-Meldungsfeld an. Diese einfache Zeichenfolgen-Schnellansicht ist an sich nicht sehr nützlich, doch wird an ihrem Beispiel die grundlegende Vorgehensweise für das Erstellen besser geeigneter Schnellansichten für andere Datentypen gezeigt.  
@@ -69,7 +66,7 @@ Führen Sie die Aufgaben aus, um eine Schnellansicht zu erstellen.
   
 6.  Fügen Sie in DebuggerSide.cs den `using`-Anweisungen die folgende Anweisung hinzu:  
   
-    ```  
+    ```csharp  
     using Microsoft.VisualStudio.DebuggerVisualizers;  
     ```  
   
@@ -79,13 +76,13 @@ Führen Sie die Aufgaben aus, um eine Schnellansicht zu erstellen.
   
 1.  Gehen Sie in DebuggerSide.cs zu folgender Codezeile:  
   
-    ```  
+    ```csharp  
     public class DebuggerSide  
     ```  
   
 2.  Ändern Sie den Code in:  
   
-    ```  
+    ```csharp  
     public class DebuggerSide : DialogDebuggerVisualizer  
     ```  
   
@@ -95,8 +92,8 @@ Führen Sie die Aufgaben aus, um eine Schnellansicht zu erstellen.
   
 -   In `public class DebuggerSide`, fügen Sie die folgenden **Methode:**  
   
-    ```  
-    override protected void Show(IDialogVisualizerService windowService, IVisualizerObjectProvider objectProvider)  
+    ```csharp  
+    protected override void Show(IDialogVisualizerService windowService, IVisualizerObjectProvider objectProvider)  
     {  
     }  
     ```  
@@ -113,7 +110,7 @@ Führen Sie die Aufgaben aus, um eine Schnellansicht zu erstellen.
   
 4.  Fügen Sie in DebuggerSide.cs den `using`-Anweisungen die folgende Anweisung hinzu:  
   
-    ```  
+    ```csharp  
     using System.Windows.Forms;  
     ```  
   
@@ -123,7 +120,7 @@ Führen Sie die Aufgaben aus, um eine Schnellansicht zu erstellen.
   
 1.  Fügen Sie der `Show`-Methode folgende Codezeile hinzu:  
   
-    ```  
+    ```csharp  
     MessageBox.Show(objectProvider.GetObject().ToString());  
     ```  
   
@@ -137,12 +134,12 @@ Führen Sie die Aufgaben aus, um eine Schnellansicht zu erstellen.
   
 1.  Fügen Sie DebuggerSide.cs den folgenden Attributcode hinzu, und zwar nach den `using`-Anweisungen und vor `namespace MyFirstVisualizer`:  
   
-    ```  
+    ```csharp  
     [assembly:System.Diagnostics.DebuggerVisualizer(  
     typeof(MyFirstVisualizer.DebuggerSide),  
     typeof(VisualizerObjectSource),  
-    Target  = typeof(System.String),  
-    Description  = "My First Visualizer")]  
+    Target = typeof(System.String),  
+    Description = "My First Visualizer")]  
     ```  
   
 2.  Auf der **erstellen** Menü wählen **MyFirstVisualizer erstellen**. Das Projekt sollte erfolgreich erstellt werden. Korrigieren Sie alle Buildfehler, bevor Sie fortfahren.  
@@ -153,7 +150,7 @@ Führen Sie die Aufgaben aus, um eine Schnellansicht zu erstellen.
   
 1.  Fügen Sie der `public DebuggerSide`-Klasse folgende Methode hinzu:  
   
-    ```  
+    ```csharp  
     public static void TestShowVisualizer(object objectToVisualize)  
     {  
        VisualizerDevelopmentHost visualizerHost = new VisualizerDevelopmentHost(objectToVisualize, typeof(DebuggerSide));  
@@ -203,13 +200,13 @@ Führen Sie die Aufgaben aus, um eine Schnellansicht zu erstellen.
   
 3.  Fügen Sie in TestConsole.cs den `using`-Anweisungen den folgenden Code hinzu:  
   
-    ```  
+    ```csharp  
     using MyFirstVisualizer;  
     ```  
   
 4.  Fügen Sie der `Main`-Methode den folgenden Code hinzu:  
   
-    ```  
+    ```csharp  
     String myString = "Hello, World";  
     DebuggerSide.TestShowVisualizer(myString);  
     ```  

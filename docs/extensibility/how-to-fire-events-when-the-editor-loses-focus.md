@@ -13,11 +13,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9a566d52dc1aabb9895e2f1f9751fdb37ae016d6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: bb20adf3950e87c37e2ca64bcd78913839f89d01
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-fire-events-when-the-editor-loses-focus"></a>Vorgehensweise: Ereignisse auszulösen, wenn der Editor den Fokus verliert.
 Manchmal ist es erforderlich sind, wenn Sie ein Editor den Fokus auf den Fensterrahmen verliert. Beispielsweise müssen Sie möglicherweise Code aus einem Fenster des Code extrahieren, nachdem der Editor nicht mehr darauf ausgerichtet ist. Das folgende Verfahren beschreibt die Schritte befolgen, um die Benachrichtigung des Editors verlieren des Fokus.  

@@ -15,11 +15,12 @@ caps.latest.revision: "21"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6e7f810ff5ad1654081cd061edbc4360eb988402
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 60365f3722ae4e2c1f8b52dacc3df03840fb3304
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-identify-symbols-in-a-library"></a>Vorgehensweise: Identifizieren Sie Symbole in einer Bibliothek
 Tools zum Durchsuchen des Symbols anzeigen hierarchische Ansichten der Symbole Die Symbole darstellen, Namespaces, Objekte, Klassen, Klassenmembern und anderen Sprachelemente.  
@@ -30,7 +31,7 @@ Tools zum Durchsuchen des Symbols anzeigen hierarchische Ansichten der Symbole D
   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfoNode>  
   
- <xref:Microsoft.VisualStudio.Shell.Interop.IVsEnumNavInfoNodes>.  
+ <xref:Microsoft.VisualStudio.Shell.Interop.IVsEnumNavInfoNodes>  
   
  Der Speicherort des Symbols in der Hierarchie unterscheidet sich ein Symbol. Tools zum Durchsuchen des Symbols auf ein bestimmtes Symbol navigieren können. Die eindeutige, vollqualifizierte Pfad auf das Symbol bestimmt den Speicherort an. Jedes Element im Pfad ist ein Knoten. Der Pfad beginnt mit dem Knoten der obersten Ebene und endet mit bestimmten Symbols. Beispielsweise ist die M1-Methode ist ein Element der C1-Klasse und C1 befindet sich im N1-Namespace der vollständige Pfad der Methode M1 N1. C1. M1. Dieser Pfad enthält drei Knoten: N1, C1 und M1.  
   

@@ -15,11 +15,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 73524ce47dfea2d30e44e51e97bf584a95a86482
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ad7870fcec07db3d4d529b856bc0e2f18006e819
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="intercepting-legacy-language-service-commands"></a>Abfangen von Legacy-Dienst Sprachbefehle
 Mit [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], dass Language Service Intercept Befehle, die andernfalls Textansicht behandelt würden. Dies ist hilfreich für sprachspezifisches Verhalten, die der Textansicht nicht verwaltet. Sie können diese Befehle durch Hinzufügen von mindestens -Befehlsfilter anzuzeigende Text aus der Sprachdienst abfangen.  

@@ -20,11 +20,12 @@ caps.latest.revision: "5"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 3eefde445f5c8aca7199d4316472fe92c3160d00
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 99be4338bcee9ffb5c7cb9cf28f6187128345f85
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-the-legacy-state-machine-workflow-designer"></a>Verwenden des Zustandsautomatworkflow-Designers der Vorgängerversion
 Wenn Sie erstellen ein neues Zustandsautomat-Workflowprojekt in [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] abzielt die [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] oder die [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)], Sie könne beide verwenden die **Konsolenanwendung für Zustandsautomatenworkflows Status** oder die  **Workflowbibliothek Status** legacy-Projektvorlage. Bei Auswahl einer der Zustandsautomatprojektvorlagen wird der Zustandsautomatdesigner als Workflow-Designer-Benutzeroberfläche der Vorgängerversion angezeigt. Informationen zu den Projektvorlagen für legacy-Status-Computer finden Sie unter [Vorgehensweise: Erstellen Zustand Konsolenanwendungen für Zustandsautomatworkflows (Vorgängerversion)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md) und [Vorgehensweise: Erstellen einer Zustandsautomatworkflowbibliothek (Vorgängerversion)](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md).  

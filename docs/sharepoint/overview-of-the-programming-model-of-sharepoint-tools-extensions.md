@@ -19,11 +19,12 @@ caps.latest.revision: "55"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5209ec60734213fbafb7b176d91589527b571c32
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 3b8d869dab81273262d23b7aa905370f530b24c5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="overview-of-the-programming-model-of-sharepoint-tools-extensions"></a>Übersicht über das Programmiermodell von Erweiterungen für SharePoint-Tools
   Wenn Sie eine Erweiterung für die SharePoint-Tools in Visual Studio erstellen, beginnen Sie damit, indem Sie eine oder mehrere Erweiterungsschnittstellen implementieren, die von den SharePoint-Tools verfügbar gemacht werden. In den meisten Fällen verwenden Sie auch andere von den SharePoint-Tools bereitgestellte Typen, um Features in der Erweiterung zu implementieren. Für einige Szenarien können Sie auch Typen in anderen Objektmodellen verwenden, die von Visual Studio und SharePoint bereitgestellt werden. Sie müssen den Zweck der einzelnen Objektmodelle verstehen und wissen, wie diese miteinander kombinieren können zum Erstellen von Erweiterungen für die SharePoint-Tools.  
@@ -33,7 +34,7 @@ ms.lasthandoff: 10/31/2017
   
  Um die SharePoint-Tools zu erweitern, implementieren Sie eine oder mehrere Erweiterungsschnittstellen, die von Visual Studio bereitgestellt werden. Sie müssen auch das <xref:System.ComponentModel.Composition.ExportAttribute> sowie bei Bedarf weitere für die SharePoint-Tools spezifische Attribute auf Ihre Schnittstellenimplementierung anwenden. In der folgenden Tabelle sind die Schnittstellen aufgeführt, die Sie zum Erweitern der SharePoint-Tools implementieren können.  
   
-|Schnittstelle|Beschreibung|  
+|Interface|Beschreibung|  
 |---------------|-----------------|  
 |<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider>|Implementieren Sie diese Schnittstelle, um einen neuen Typ von SharePoint-Projektelement zu definieren. Ein Beispiel finden Sie unter [wie: Definieren Sie einen SharePoint-Projektelementtyp](../sharepoint/how-to-define-a-sharepoint-project-item-type.md).|  
 |<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension>|Implementieren Sie diese Schnittstelle, um einen SharePoint-Projektelementtyp zu erweitern, der in Visual Studio bereits installiert ist. Ein Beispiel finden Sie unter [Vorgehensweise: Erstellen einer SharePoint-Projektelementerweiterung](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md).|  

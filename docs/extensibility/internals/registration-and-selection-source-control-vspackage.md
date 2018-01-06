@@ -15,11 +15,12 @@ caps.latest.revision: "34"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 118f715e71f610d4e9dc2589767f6fb54ab4e814
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: b0f02abe4cad58db27700aee3c29ec8d2dd7a7e2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="registration-and-selection-source-control-vspackage"></a>Registrierung und Auswahl (Source Control VSPackage)
 Ein Datenquellen-Steuerelement, das VSPackage registriert werden, um es zum Verfügbarmachen der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Wenn mehrere Datenquellen-Steuerelements VSPackage registriert ist, kann der Benutzer die VSPackage, um zur richtigen Zeit jeweils Laden auswählen. Finden Sie unter [VSPackages](../../extensibility/internals/vspackages.md) detaillierte Informationen zu VSPackages und zu registrieren.  

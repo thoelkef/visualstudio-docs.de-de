@@ -19,14 +19,15 @@ caps.latest.revision: "20"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b0b1d4f79be83f69989064ed7699df43b6930040
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: multiple
+ms.openlocfilehash: c4ec0178a4767e7e0c5c726816dcd7088e14f17b
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="using-the-tasks-window"></a>Verwenden des Fensters "Aufgaben"
-Die **Aufgaben** Fenster ähnelt der **Threads** Fenster, mit dem Unterschied, dass die It Informationen zu zeigt <xref:System.Threading.Tasks.Task?displayProperty=fullName>, [Task_handle](/cpp/parallel/concrt/reference/task-group-class.md), oder [WinJS.Promise ](http://msdn.microsoft.com/library/windows/apps/br211867.aspx) Objekte anstelle von jedem Thread. Wie Threads stellen auch Aufgaben asynchrone Vorgänge dar, die gleichzeitig ausgeführt werden können. Es dürfen jedoch mehrere Aufgaben im selben Thread ausgeführt werden. 
+Die **Aufgaben** Fenster ähnelt der **Threads** Fenster, mit dem Unterschied, dass die It Informationen zu zeigt <xref:System.Threading.Tasks.Task?displayProperty=fullName>, [Task_handle](/cpp/parallel/concrt/reference/task-group-class), oder [WinJS.Promise ](http://msdn.microsoft.com/library/windows/apps/br211867.aspx) Objekte anstelle von jedem Thread. Wie Threads stellen auch Aufgaben asynchrone Vorgänge dar, die gleichzeitig ausgeführt werden können. Es dürfen jedoch mehrere Aufgaben im selben Thread ausgeführt werden. 
   
  In verwaltetem Code können Sie die **Aufgaben** Fenster bei der Arbeit mit <xref:System.Threading.Tasks.Task?displayProperty=fullName> Objekte oder mit der **"await"** und **Async** Schlüsselwörter (**"await"** und **Async** in Visual Basic). Weitere Informationen zu Aufgaben in verwaltetem Code finden Sie unter [zur parallelen Programmierung](/dotnet/standard/parallel-programming/index).  
   

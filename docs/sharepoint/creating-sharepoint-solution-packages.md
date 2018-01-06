@@ -18,11 +18,12 @@ caps.latest.revision: "25"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f21356c34a94540d20be2bb9fa092bff270f1a70
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: fe7822382443e6c1e9bc1a77eb0cd64844504172
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-sharepoint-solution-packages"></a>Erstellen von SharePoint-Lösungspaketen
   Mithilfe des Paket-Designers können Sie Bereitstellungspakete erstellen und anpassen. Beispielsweise können Sie SharePoint-Projektelemente und -Funktionen hinzufügen, den IIS-Server zurücksetzen, Funktionsaktivierungsbereiche festlegen und Funktionsabhängigkeiten identifizieren. Der Designer generiert außerdem ein Manifest, eine XML-Datei, die jedes Paket beschreibt.  
@@ -39,7 +40,7 @@ ms.lasthandoff: 10/31/2017
   
 |Eigenschaft des Paket-Designers|Beschreibung der Standardeinstellung|  
 |-------------------------------|------------------------------------|  
-|Name|Erforderlich. Der Standardname des Pakets wird festgelegt, um *Projektname*.|  
+|name|Erforderlich. Der Standardname des Pakets wird festgelegt, um *Projektname*.|  
 |Webserver zurücksetzen|Dies ist optional. Legen Sie fest, ob der Webserver neu gestartet werden soll, nachdem die WSP-Datei auf dem SharePoint-Server installiert wurde.|  
 |Bereitstellungsservertyp|Erforderlich. In der Standardeinstellung ist der Bereich auf ApplicationServer festgelegt.<br /><br /> ApplicationServer: Beschreibt einen Server, der Dienste hostet.<br /><br /> WebFrontEnd: Beschreibt einen Server, der Websites hostet.|  
 |Elemente in der Lösung|Alle SharePoint-Projektelemente und -Funktionen, die dem Paket hinzugefügt werden können.|  

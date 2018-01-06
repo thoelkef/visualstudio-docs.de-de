@@ -19,11 +19,12 @@ caps.latest.revision: "82"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 60840f3d47b43ea84bec66ea7957f613d2379901
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 3ca05f93fd4753c8a00eb1a5dee4c4bc9a2f4efc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="code-generation-and-t4-text-templates"></a>Codegenerierung und T4-Textvorlagen
 In [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]besteht eine *T4-Textvorlage* aus einer Mischung von Textblöcken und steuernder Logik, über die eine Textdatei generiert werden kann. Die steuernde Logik wird als Programmcodefragmente in [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] oder [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]geschrieben. In Visual Studio 2015 Update 2 und höher können Sie Funktionen von C# Version 6.0 in T4-template-Direktiven verwenden. Die generierte Datei kann Text beliebiger Art enthalten, z. B. eine Webseite, eine Ressourcendatei oder Programmquellcode in einer beliebigen Sprache.  

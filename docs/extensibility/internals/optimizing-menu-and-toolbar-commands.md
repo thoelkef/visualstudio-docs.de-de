@@ -18,11 +18,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 08502ab2e1161d753323642589ed00b00ed94ad2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: f95675f420284b9d67a6d36ac30b3e71f085e565
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="optimizing-menu-and-toolbar-commands"></a>Optimieren der Menü- und Symbolleiste
 Das Hinzufügen von VSPackages und ihre entsprechenden Befehle zum [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] kann dazu führen, dass ein Rechenzentrum weiter aufzurüsten UI. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]bietet Möglichkeiten zur Unterstützung von UI-Befehl verwirrungen zu vermeiden.  

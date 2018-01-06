@@ -14,11 +14,12 @@ ms.author: gewarren
 manager: ghogen
 f1_keywords: vsl.GenerateFromUsage
 dev_langs: VB
-ms.openlocfilehash: 1524d2899d8c775a20943d2695065bfe36885a25
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a0a900b912c1a15c61dc17164571c1284743581c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="generate-a-class-or-type-in-visual-basic"></a>Generieren Sie eine Klasse oder ein Typ in Visual Basic
 **Was:** können Sie sofort den Code für eine Klasse oder einen Typ zu generieren. 
@@ -61,7 +62,7 @@ ms.lasthandoff: 10/31/2017
    --- | ---
    Zugriff | Legen Sie den Typ haben *Standard*, *intern* oder *öffentlichen* Zugriff.
    Art | Dies kann festgelegt werden, als *Klasse* oder *Struktur*.
-   Name | Dies kann nicht geändert werden und werden der Name, den Sie bereits eingegeben haben.
+   name | Dies kann nicht geändert werden und werden der Name, den Sie bereits eingegeben haben.
    Projekt | Wenn mehrere Projekte in der Projektmappe vorhanden sind, können Sie auswählen, in dem die Klasse/Struktur Gültigkeitsdauer werden soll.
    Dateiname | Sie können eine neue Datei erstellen, oder Sie können den Typ hinzufügen, zu einer vorhandenen Datei.
 

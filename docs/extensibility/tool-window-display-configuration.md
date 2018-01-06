@@ -15,11 +15,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c7ab5cef6fb45d60be8be8d1db6b160079633ed4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 585ea78e0591ad979d09a3e5b208635c3f75f903
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="tool-window-display-configuration"></a>Tool-Fenster-Anzeigekonfiguration
 Wenn eine VSPackage ein Toolfenster, die Standardposition, Größe, andockstil und andere Informationen zur Sichtbarkeit registriert, wird in optionale Werte angegeben. Weitere Informationen zum Tool Fenster Registrierung, finden Sie unter [Toolfenster in der Registrierung](../extensibility/tool-windows-in-the-registry.md)  
@@ -38,9 +39,9 @@ HKEY_LOCAL_MACHINE\
               (Default)       = reg_sz: <Package GUID>Name            = reg_sz: <name of tool window>Float           = reg_sz: <position>Style           = reg_sz: <dock style>Window          = reg_sz: <window GUID>Orientation     = reg_sz: <orientation>DontForceCreate = reg_dword: 0x00000000  
 ```  
   
-|Name|Typ|Daten|Beschreibung|  
+|name|Typ|Daten|Beschreibung|  
 |----------|----------|----------|-----------------|  
-|Name|REG_SZ|"Kurze Name goes here"|Ein kurzer Name, der das Toolfenster beschreibt. Nur für den Verweis in der Registrierung verwendet.|  
+|name|REG_SZ|"Kurze Name goes here"|Ein kurzer Name, der das Toolfenster beschreibt. Nur für den Verweis in der Registrierung verwendet.|  
 |Float|REG_SZ|"X1, Y1, X2, Y2"|Vier durch Trennzeichen getrennte Werte. X1, Y1, ist die Koordinate der oberen linken Ecke des Toolfensters. X2, Y2, ist die Koordinate der unteren rechten Ecke. Alle Werte sind in Bildschirmkoordinaten.|  
 |Stil|REG_SZ|"MDI"<br /><br /> "Float"<br /><br /> "Verknüpft"<br /><br /> "Im Registerkartenformat"<br /><br /> "AlwaysFloat"|Ein Schlüsselwort, das Angeben der ursprüngliche Zustand des Toolfensters anzeigen<br /><br /> "MDI" = mit MDI-Fensters angedockt.<br /><br /> "Float" = Gleitkommawert.<br /><br /> "Verknüpft" = verknüpft, die mit einem anderen Fenster (angegeben in der Eintrag im Fenster).<br /><br /> "Im Registerformat" = zusammen mit einem anderen Toolfenster.<br /><br /> "AlwaysFloat" = kann nicht angedockt werden kann.<br /><br /> Weitere Informationen finden Sie unter folgenden Abschnitt "Kommentare".|  
 |Fenster|REG_SZ|*\<GUID >*|Die GUID eines Fensters, das Toolfenster verknüpft oder im Registerformat werden kann. Die GUID kann eine eigene Fenster oder ein Fenster in gehören die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE.|  
@@ -87,9 +88,9 @@ HKEY_LOCAL_MACHINE\
                 <GUID>    = reg_sz:  
 ```  
   
-|Name|Typ|Daten|Beschreibung|  
+|name|Typ|Daten|Beschreibung|  
 |----------|----------|----------|-----------------|  
-|(Standard)|REG_SZ|Keine|Leer sein.|  
+|(Standard)|REG_SZ|Keiner|Leer sein.|  
 |*\<GUID >*|REG_DWORD oder REG_SZ|0 oder eine beschreibende Zeichenfolge.|Dies ist optional. Der Eintrag Name muss die GUID eines Befehls, die Sichtbarkeit erfordern. Der Wert enthält nur eine informative Zeichenfolge. Der Wert in der Regel ist eine `reg_dword` auf 0 festgelegt.|  
   
 ### <a name="example"></a>Beispiel  

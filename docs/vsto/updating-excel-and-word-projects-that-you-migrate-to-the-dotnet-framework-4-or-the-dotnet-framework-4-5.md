@@ -16,11 +16,12 @@ caps.latest.revision: "25"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7d3783eb2bd87decc0e01bb589b08f3d0c05803e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: ab2fb40485e92ff097e0c39102024528125dfc72
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="updating-excel-and-word-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Aktualisieren von Excel- und Word-Projekten, die zu .NET Framework 4 oder .NET Framework 4.5 migriert werden
   Wenn Sie über ein Excel- oder Word-Projekt verfügen, das eine der folgenden Funktionen verwendet, müssen Sie den Code ändern, wenn das Zielframework in [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder höher geändert wird:  
@@ -136,7 +137,7 @@ Microsoft.Office.Tools.Word.Document vstoDocument =
   
 -   `Chart` *n*: <xref:Microsoft.Office.Tools.Excel.ChartSheet>  
   
- In Projekten, die auf [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder höher ausgerichtet sind, sind die oben unter [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] aufgeführten Typen Schnittstellen und keine Klassen. Generierte Klassen in Projekten, die auf [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder höher ausgerichtet sind, sind von den folgenden neuen Klassen in der [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]abgeleitet:  
+ In Projekten, die auf [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder höher ausgerichtet sind, sind die oben unter [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] aufgeführten Typen Schnittstellen und keine Klassen. Generierte Klassen in Projekten, die auf [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder höher ausgerichtet sind, sind von den folgenden neuen Klassen in der [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] abgeleitet:  
   
 -   `ThisDocument`: <xref:Microsoft.Office.Tools.Word.DocumentBase>  
   
@@ -204,7 +205,7 @@ private void DoSomethingToSheet(Microsoft.Office.Tools.Excel.Worksheet worksheet
   
  In der folgenden Tabelle sind die Ereignisse für Inhaltssteuerelemente in Word und die Delegaten aufgeführt, die in Projekten, die auf [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder höher ausgerichtet sind, mit den Ereignissen verknüpft sind.  
   
-|Ereignis|Delegat für Projekte unter [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] und höher|  
+|event|Delegat für Projekte unter [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] und höher|  
 |-----------|---------------------------------------------------------------------------------------------------|  
 |<xref:Microsoft.Office.Tools.Word.ContentControlBase.Added>|<xref:Microsoft.Office.Tools.Word.ContentControlAddedEventHandler>|  
 |<xref:Microsoft.Office.Tools.Word.ContentControlBase.ContentUpdating>|<xref:Microsoft.Office.Tools.Word.ContentControlContentUpdatingEventHandler>|  

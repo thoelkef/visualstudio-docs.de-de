@@ -15,11 +15,12 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c7b392ac841a50d835186e79a383e404e7fba190
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 74a9ff54d14b6212d0fc484acd2bd25fad18bb87
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="exposing-events-in-the-visual-studio-sdk"></a>Verfügbarmachen von Ereignissen in Visual Studio SDK
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]können Sie mithilfe der Automatisierung Ereignissen der Datenquelle. Es wird empfohlen, dass die Quelle von Ereignissen für Projekte und Projektelemente.  
@@ -55,7 +56,7 @@ ms.lasthandoff: 10/31/2017
   
  "Das Objekt AutomationProjectItemsEvents AutomationProjectItemEvents"="gibt"  
   
-|Name|Typ|Bereich|Beschreibung|  
+|name|Typ|Bereich|Beschreibung|  
 |----------|----------|-----------|-----------------|  
 |Standard (@)|REG_SZ|Nicht verwendete|Nicht verwendet. Sie können das Feld "Daten" Dokumentation verwenden.|  
 |AutomationProjectsEvents|REG_SZ|Name des Ereignisobjekts.|Nur der Schlüsselname ist relevant. Sie können das Feld "Daten" Dokumentation verwenden.<br /><br /> In diesem Beispiel stammen aus dem grundlegenden projektbeispiel.|  

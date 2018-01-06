@@ -14,11 +14,12 @@ caps.latest.revision: "28"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-ms.openlocfilehash: 064d2819a9a7bd3e72539ff7624299e3619f4e94
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 7c3584a8620c4f2d9c0f82efc94bae4dc4c33233
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="model-user-requirements"></a>Modellieren von Benutzeranforderungen
 Visual Studio hilft Ihnen dabei, die Anforderungen der Benutzer zu verstehen, zu besprechen und zu kommunizieren, indem Diagramme über ihre Aktivitäten und die Rolle Ihres System bei der Erreichung ihrer Ziele gezeichnet werden. Ein Anforderungsmodell ist ein Satz dieser Diagramme, von denen sich jedes auf einen anderen Aspekt der Benutzeranforderungen konzentriert. Eine Videodemo finden Sie unter: [Modeling the Business Domain](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-3-Modeling-the-Business-Domain/)(Modellieren der Geschäftsdomäne) .  
@@ -49,7 +50,7 @@ Visual Studio hilft Ihnen dabei, die Anforderungen der Benutzer zu verstehen, zu
 ## <a name="common-tasks"></a>Allgemeine Aufgaben  
  Sie können verschiedene Ansichten der Benutzeranforderungen erstellen.  Jede Ansicht bietet eine bestimmte Art von Informationen.  Wenn Sie diese Ansichten erstellen, empfiehlt es sich, häufig zwischen ihnen zu wechseln. Sie können bei jeder Ansicht starten.  
   
-|Diagramm oder Dokument|Was es in einem Anforderungsmodell beschreibt|Abschnitt|  
+|Diagramm oder Dokument|Was es in einem Anforderungsmodell beschreibt|Bereich|  
 |-------------------------|-----------------------------------------------|-------------|  
 |Konzeptionelles Klassendiagramm|Glossar von Typen, die zum Beschreiben der Anforderungen verwendet werden; die auf der Benutzeroberfläche des Systems sichtbaren Typen.||  
 |Zusätzliche Dokumente oder Arbeitsaufgaben|Kriterien für die Leistung, Sicherheit, Nutzbarkeit und Zuverlässigkeit|[Beschreiben von Servicequalitätsanforderungen](#QoSRequirements)|  

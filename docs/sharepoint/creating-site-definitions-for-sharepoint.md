@@ -20,11 +20,12 @@ caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a4a7c002bd17da5f693955a82ab2e74bf65dc0cd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 98be671e456c75c4be79994c84bf1ed6ae5114de
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-site-definitions-for-sharepoint"></a>Erstellen von Websitedefinitionen für SharePoint
   Die Definition des SharePoint-Projekt in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ermöglicht die Erstellung einer *Websitedefinition*, dem dient als Grundlage für eine neue SharePoint-Website. Diese Definitionen bestimmen nicht nur das Aussehen und Verhalten von der SharePoint-Website jedoch auch den Standardinhalt und Funktionalität. In der Definition können Sie vorkonfigurierte Listen, Inhaltstypen, Ereignisempfänger, Bilder und andere Elemente einfügen. SharePoint schließt einige Websitedefinitionen wie BLOG verwenden, z. B. aus. Wenn Sie einen Standort basierend auf der Definition der BLOG-Website erstellen, enthält den Standort, die Listen, Webparts und andere Elemente, die eine Blogwebsite erfordert.  

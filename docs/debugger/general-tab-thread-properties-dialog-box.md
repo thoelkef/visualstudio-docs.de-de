@@ -6,7 +6,7 @@ ms.reviewer:
 ms.suite: 
 ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 helpviewer_keywords:
 - threading [Visual Studio], thread properties
 - thread properties
@@ -15,18 +15,19 @@ caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a2af344735b88fb7091ec438638c948a7f7f2ca4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d8d53c373c58e31f2a2719df8afa6dd0da9cd3c6
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="general-tab-thread-properties-dialog-box"></a>Registerkarte "Allgemein", Dialogfeld "Threadeigenschaften"
 Verwenden Sie dieses Dialogfeld, um weitere Informationen zu einem bestimmten Thread finden. Um dieses Dialogfeld anzuzeigen, verschieben Sie den Fokus auf ein [Threadansicht](../debugger/threads-view.md) Fenster, oder öffnen Sie [Ansicht "Nachrichten"](../debugger/messages-view.md) und erweitern Sie eine Nachricht. Wählen Sie einen beliebigen Threadknoten in der Struktur aus, und wählen Sie dann **Eigenschaften** aus der **Ansicht** Menü.  
   
  Die **Threadeigenschaften** Dialogfeld enthält einen Bereich der **allgemeine** Registerkarte. Die folgenden Einstellungen sind verfügbar:  
   
-|Eintrag|Beschreibung|  
+|Eingabe|Beschreibung|  
 |-----------|-----------------|  
 |**Modulname**|Der Name des Moduls.|  
 |**Thread-ID**|Die eindeutige ID dieses Threads. Beachten Sie, dass der Thread-IDs wiederverwendet werden. einen Thread identifizieren nur für die Lebensdauer des Threads.|  

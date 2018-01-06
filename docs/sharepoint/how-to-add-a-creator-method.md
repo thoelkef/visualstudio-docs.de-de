@@ -24,11 +24,12 @@ caps.latest.revision: "30"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 354d3f574515fcc9e8417e817363f9bbe7327f06
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 95c98887e50786df4e59010070064eaeb6bafa0f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-add-a-creator-method"></a>Gewusst wie: Hinzufügen einer Creator-Methode
   Eine Creator-Methode fügt neue Daten an die Datenquelle einer Entität. Business Data Connectivity (BDC)-Dienst ruft diese Methode auf, wenn Benutzer die **neues Element** Schaltfläche auf dem Menüband eine Liste, die auf das Modell basiert. Weitere Informationen finden Sie unter [Entwerfen eines Business Data Connectivity-Modells](../sharepoint/designing-a-business-data-connectivity-model.md).  

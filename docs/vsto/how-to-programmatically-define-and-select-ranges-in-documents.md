@@ -21,11 +21,12 @@ caps.latest.revision: "46"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2fcc1b96607c36fdfbc2f9940a7b7984b3b299fa
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 22a894902a36aa12ff0962270391a2311ce40169
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-define-and-select-ranges-in-documents"></a>Gewusst wie: Programmgesteuertes Definieren und Markieren von Bereichen in Dokumenten
   Sie können einen Bereich in einem Microsoft Office Word-Dokument mithilfe eines <xref:Microsoft.Office.Interop.Word.Range>-Objekts definieren. Sie können das gesamte Dokument eine Reihe von Möglichkeiten, z. B. auswählen, mit der <xref:Microsoft.Office.Interop.Word.Range.Select%2A> Methode der <xref:Microsoft.Office.Interop.Word.Range> -Objekts oder mithilfe der Content-Eigenschaft von der <xref:Microsoft.Office.Tools.Word.Document> -Klasse (in einer Anpassung auf Dokumentebene) oder die <xref:Microsoft.Office.Interop.Word.Document> Klasse (in eine VSTO-Add-Ins).  

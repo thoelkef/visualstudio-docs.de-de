@@ -26,11 +26,12 @@ caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8c1e6f76c1c425ce31b518e9c4cb3db4d6280e84
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 622be02def57621f43439f84f84321cb1bac9911
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-add-a-deleter-method"></a>Gewusst wie: Hinzufügen einer Deleter-Methode
   Sie können einen Endbenutzer So löschen Sie einen Datensatz aus einer externen Liste auf einer SharePoint-Website durch Hinzufügen einer *Deleter* Methode, um das Modell. Weitere Informationen finden Sie unter [Entwerfen eines Business Data Connectivity-Modells](../sharepoint/designing-a-business-data-connectivity-model.md).  

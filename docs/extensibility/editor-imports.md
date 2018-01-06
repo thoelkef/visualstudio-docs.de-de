@@ -13,11 +13,12 @@ caps.latest.revision: "19"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 81e0a131ef35202581ffb78a75a6b48239a7d81f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 937bf977090699f5d3bf52414f57f6066dd55a17
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="editor-imports"></a>Imports-Editor
 Sie können eine Reihe von Editor-Dienste, Factorys und Makler, die die Erweiterung verschiedene Arten des Zugriffs auf dem Core-Editor bieten importieren. Sie können z. B. Importieren der <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> mit stellen eine <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigator> für einen bestimmten Inhaltstyp. (Dieser Navigator können Sie verschiedene Arten von Suchvorgängen in einem Textpuffer ausführen.)  
@@ -74,7 +75,7 @@ internal SVsServiceProvider ServiceProvider = null;
 |Importieren|Enthält|  
 |------------|--------------|  
 |<xref:Microsoft.VisualStudio.Utilities.IFileExtensionRegistryService>|Die Beziehung zwischen Dateierweiterungen und <xref:Microsoft.VisualStudio.Utilities.IContentType> Objekte.|  
-|<xref:Microsoft.VisualStudio.Utilities.IContentTypeRegistryService>|Die Auflistung von <xref:Microsoft.VisualStudio.Utilities.IContentType>-Objekten|  
+|<xref:Microsoft.VisualStudio.Utilities.IContentTypeRegistryService>|Die Auflistung von <xref:Microsoft.VisualStudio.Utilities.IContentType>-Objekten.|  
 |<xref:Microsoft.VisualStudio.Editor.IVsFontsAndColorsInformationService>|<xref:Microsoft.VisualStudio.Editor.IVsFontsAndColorsInformation>-Objekte|  
 |<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>|Viele Objekte für die Editor-Adapter:<br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>|  
 |<xref:Microsoft.VisualStudio.Text.IncrementalSearch.IIncrementalSearchFactoryService>|Ein <xref:Microsoft.VisualStudio.Text.IncrementalSearch.IIncrementalSearch> Objekt für einen angegebenen Text an.|  

@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3290e33ac473c6914437f8ef036ec8047f46e063
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ddf48e384b85946d4efcbb62359f24780507dfa4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="modifying-the-isolated-shell-by-using-the-vsct-file"></a>Ändern von Isolated Shell mithilfe der. VSCT-Datei
 Das UI-Projekt für eine Visual Studio isolated Shell-Projekt enthält eine VSCT-Datei, mit dem Sie angeben, welche Anwendungsgruppen und die einzelnen Befehle in der Anwendung verfügbar sind. Im folgenden ist ein Auszug aus einer nicht geänderten VSCT-Datei.  

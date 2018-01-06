@@ -18,11 +18,12 @@ caps.latest.revision: "36"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7aa3ccbeaae231b0abf4885c592addc586ccfb28
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 117daf019b6d8104db19306449bdcd517282d81e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-add-a-custom-sharepoint-node-to-server-explorer"></a>Gewusst wie: Hinzufügen eines benutzerdefinierten SharePoint-Knotens im Server-Explorer
   Sie können benutzerdefinierte Knoten hinzufügen der **SharePoint-Verbindungen** Knoten **Server-Explorer**. Dies ist hilfreich, wenn zusätzliche SharePoint-Komponenten angezeigt, die nicht in angezeigt werden sollen **Server-Explorer** standardmäßig. Weitere Informationen finden Sie unter [Erweitern des SharePoint-Verbindungsknotens im Server-Explorer](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).  
@@ -47,9 +48,9 @@ ms.lasthandoff: 10/31/2017
   
 4.  Fügen Sie der Klasse die folgenden Attribute hinzu:  
   
-    -   <xref:System.ComponentModel.Composition.ExportAttribute>. Mit diesem Attribut können Sie Visual Studio erkennt und lädt die <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeProvider> Implementierung. Übergeben Sie die <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeProvider> Typ an den Attributkonstruktor.  
+    -   <xref:System.ComponentModel.Composition.ExportAttribute> Mit diesem Attribut können Sie Visual Studio erkennt und lädt die <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeProvider> Implementierung. Übergeben Sie die <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeProvider> Typ an den Attributkonstruktor.  
   
-    -   <xref:Microsoft.VisualStudio.SharePoint.Explorer.ExplorerNodeTypeAttribute>. Dieses Attribut gibt den Zeichenfolgenbezeichner für den neuen Knoten an, in der Knotendefinition eines. Es wird empfohlen, dass Sie das Format verwenden *Firmenname*. *Knotenname* um sicherzustellen, dass alle Knoten einen eindeutigen Bezeichner verfügen.  
+    -   <xref:Microsoft.VisualStudio.SharePoint.Explorer.ExplorerNodeTypeAttribute> Dieses Attribut gibt den Zeichenfolgenbezeichner für den neuen Knoten an, in der Knotendefinition eines. Es wird empfohlen, dass Sie das Format verwenden *Firmenname*. *Knotenname* um sicherzustellen, dass alle Knoten einen eindeutigen Bezeichner verfügen.  
   
 5.  In der Implementierung von der <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeProvider.InitializeType%2A> Methode verwenden, Mitglied der *TypeDefinition* Parameter so konfigurieren Sie das Verhalten des neuen Knotens. Dieser Parameter ist ein <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeDefinition> -Objekt, das Zugriff auf die in definierten Ereignisse ermöglicht die <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeEvents> Schnittstelle.  
   

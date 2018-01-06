@@ -15,11 +15,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c7759a2394f2cda19f875a85a22c4a674fee8964
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: d2de7b73238589786c1e8a4ba42389201123c2b1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="project-model-core-components"></a>Projekt-Modell-Kernkomponenten
 In den folgenden Tabellen, die auf das Projektmodell erweitert werden. In den Tabellen vorhanden, kurze Beschreibung der Schnittstellen und Dienste, die in das Modell und die Schnittstellen und Dienste, mit spezifischen Objekten verknüpft sind. Darüber hinaus enthalten die Tabellen Details anderer Schnittstellen, die im projekterstellung und Wartung je nach den Anforderungen Ihrer bestimmten Projekttyp optional sind.  
@@ -28,13 +29,13 @@ In den folgenden Tabellen, die auf das Projektmodell erweitert werden. In den Ta
   
 ### <a name="package-object"></a>Paketobjekt  
   
-|Schnittstelle|Kommentare|  
+|Interface|Kommentare|  
 |---------------|--------------|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>|Initialisiert eine VSPackage in der IDE und stellt seine Dienste der IDE zur Verfügung.|  
   
 ### <a name="project-factory-object"></a>Projekt-Factoryobjekt  
   
-|Schnittstelle|Kommentare|  
+|Interface|Kommentare|  
 |---------------|--------------|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory>|Verwaltet die neue Projekte erstellen und vorhandene Projekte öffnen.|  
   
@@ -87,7 +88,7 @@ In den folgenden Tabellen, die auf das Projektmodell erweitert werden. In den Ta
 |Dienst|Kommentare|  
 |-------------|--------------|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.SVsRegisterProjectTypes>|Verwendet von VSPackages, die Projekttypen registrieren zu implementieren, dass ihre Project-Factory mit der IDE vorhanden ist. Ihr VSPackage muss Aufrufen `QueryService` für diesen Dienst, und registrieren Sie die Project-Factory beim `IVsPackage::SetSite` Methode wird aufgerufen. Wenn die `SetSite` -Methode nicht aufgerufen wird, das Projekt kann nicht instanziiert werden.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.SVsSolution>|Bietet Zugriff auf die IDE internen, integrierte Konzept der aktuellen Projektmappe befinden, z. B. das Aufzählen von Projekten, neue Projekte erstellen, berücksichtigen, projektänderungen usw..|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.SVsSolution>|Bietet Zugriff auf die IDE internen, integrierte Konzept der aktuellen Projektmappe befinden, z. B. das Aufzählen von Projekten, neue Projekte erstellen, berücksichtigen, projektänderungen usw.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.SVsSccManager>|Wird aufgerufen, Projekte, die in der quellcodeverwaltung teilnehmen möchten.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.SVsRunningDocumentTable>|Verwaltet eine Tabelle der geöffneten Dokumente zu bestimmen, ob eine oder mehrere der Projektelemente bereits geöffnet sind.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShellOpenDocument>|Enthält die Schnittstellen und Methoden, die aufgerufen wird, um tatsächlich ein Projektelement mit standard-Editor oder einen bestimmten Editor zu öffnen.|  

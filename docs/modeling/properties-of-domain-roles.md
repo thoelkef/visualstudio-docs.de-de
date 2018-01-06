@@ -11,11 +11,12 @@ caps.latest.revision: "9"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: e85c47133509e3f7bf7c54b8cfa7f2121a26b04b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 9da6a64eafa28ac173e4dd64b38d1e64d9639e34
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="properties-of-domain-roles"></a>Eigenschaften von Domänenrollen
 Die Eigenschaften in der folgenden Tabelle sind die einer Domäne zugewiesen. Informationen zu Funktionen finden Sie unter [Grundlegendes zu Modellen, Klassen und Beziehungen](../modeling/understanding-models-classes-and-relationships.md). Weitere Informationen zum Verwenden dieser Eigenschaften finden Sie unter [anpassen und Erweitern einer domänenspezifischen Sprache](../modeling/customizing-and-extending-a-domain-specific-language.md).  
@@ -29,7 +30,7 @@ Die Eigenschaften in der folgenden Tabelle sind die einer Domäne zugewiesen. In
 |Eigenschaft Getter-Zugriffsmodifizierer|Der Zugriffsmodifizierer für die Getter-Methode für die generierte Eigenschaft (`public`, `internal`, `private`, `protected`, oder `protected internal`).|`public`|  
 |Eigenschaft-Setter-Zugriffsmodifizierer|Der Zugriffsmodifizierer für den Setter für die generierte Eigenschaft (`public`, `internal`, `private`, `protected`, oder `protected internal`).|`public`|  
 |Multiplizität|Die Anzahl der betroffenen Modellelemente die entgegengesetzte Rolle spielen können (`0..1`, `1..1`, `0..*`, oder `1..*`). Wenn die Multiplizität ist `0..*` oder `1..*`, klicken Sie dann die generierte Eigenschaft stellt eine Auflistung dar; die generierte Eigenschaft darstellt, andernfalls ein einzelnes Modell-Element.|Richtet sich nach den Beziehungstyp und, ob dies die Quelle oder Ziel-Rolle in der Beziehung ist.|  
-|Name|Der Name der Rolle "Domäne". Diese Eigenschaft darf kein Leerzeichen enthalten.|Der Name der Domänenklasse für die Rolleninhaber für diese Rolle.|  
+|name|Der Name der Rolle "Domäne". Diese Eigenschaft darf kein Leerzeichen enthalten.|Der Name der Domänenklasse für die Rolleninhaber für diese Rolle.|  
 |Gibt die Kopie weiter|`DoNotPropagateCopy`– Die Rolle "kopiert" Player müssen keine Kopie des Links.<br /><br /> `PropagateCopyToLinkOnly`– Der kopierte Link verweist auf den vorhandenen entgegengesetzten Rolleninhaber.<br /><br /> `PropagateCopyToLinkAndOppositeRolePlayer`– Der kopierte Link verweist auf eine Kopie der entgegengesetzten Rolleninhaber.|`PropagateCopyToLinkAndOppositeRolePlayer`für die Quellrollen von eingebetteten Objekten.<br /><br /> `DoNotPropagateCopy`für andere Rollen.<br /><br /> Weitere Informationen finden Sie unter [Kopierverhalten anpassen](../modeling/customizing-copy-behavior.md)|  
 |Verteilt löschen|`True`So löschen Sie das Element, das dieser Rolle spielt, wenn Sie der entsprechenden Link gelöscht wird.|`True`für das Ziel einer Rolle einbetten.<br /><br /> `False`für andere Rollen.<br /><br /> Weitere Informationen finden Sie unter [anpassen, löschen Sie das Verhalten](../modeling/customizing-deletion-behavior.md).|  
 |Eigenschaftenname|Der Name der Eigenschaft, die in den Code für die Rolleninhaber generiert. Dieser Name darf keine Leerzeichen enthalten.|Der Name der entgegengesetzten Rolle verfügt diese Rolle eine 0 (null): 1- oder eine 1: 1 Multiplizität; andernfalls der pluralized Name der entgegengesetzten Rolle.|  

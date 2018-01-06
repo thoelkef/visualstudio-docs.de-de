@@ -22,11 +22,12 @@ caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 732a270564c40c4ca20952d86abb8618f9a060f3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 0ba481206e24870e0772290beba129d373c30862
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visio-object-model-overview"></a>Übersicht über das Visio-Objektmodell
   Zur Entwicklung von Office-Projektmappen für Microsoft Office Visio können Sie mit dem Visio-Objektmodell interagieren. Dieses Objektmodell besteht aus Klassen und Schnittstellen, die in der primären Interopassembly für Visio bereitgestellt und im Microsoft.Office.Interop.Visio-Namespace definiert sind.  

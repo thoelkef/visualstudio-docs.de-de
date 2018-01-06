@@ -13,11 +13,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 26819cccc4f5359da83684575423f8d0be276497
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 685ad1d619fdf9f04fe1a9cd1122a9e6ed3ba025
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-host-an-editor-in-another-editor"></a>Vorgehensweise: Hosten einen-Editor in einem anderen Editor
 In Visual Studio können Sie einen Editor in einem anderen durch Angabe der hosting-Fensters als ein übergeordnetes Fenster hosten. Zu diesem Zweck legen Sie die Parameter <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID2> und <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID2> auf den untergeordneten Fenster Frame.  
@@ -30,7 +31,7 @@ In Visual Studio können Sie einen Editor in einem anderen durch Angabe der host
   
 2.  Erstellen Sie hosting-Editor mit der <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> oder <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenSpecificEditor%2A> Methode.  
   
-3.  Festlegen der <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID2> und <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID2> Eigenschaften in der Implementierung des Fenster-Frame im gehosteten Editor durch diese Eigenschaften als Parameter übergeben der <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.SetProperty%2A> Methode bzw..  
+3.  Festlegen der <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID2> und <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID2> Eigenschaften in der Implementierung des Fenster-Frame im gehosteten Editor durch diese Eigenschaften als Parameter übergeben der <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.SetProperty%2A> Methode bzw.  
   
      Wenn Sie diesen Parameter abgerufen werden müssen, übergeben Sie diese Eigenschaften auf die <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A> Methode.  
   

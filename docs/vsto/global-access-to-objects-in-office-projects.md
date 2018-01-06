@@ -35,11 +35,12 @@ caps.latest.revision: "55"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c8119ccf0c6715d1c18957fcf8cac92d9872a27e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 12ae527d52e3dad3c60d561ba3bd5fa1171ac48b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="global-access-to-objects-in-office-projects"></a>Globaler Zugriff auf Objekte in Office-Projekten
   Wenn Sie ein Office-Projekt erstellen, generiert Visual Studio im Projekt automatisch eine Klasse mit dem Namen `Globals` . Mit der `Globals` -Klasse können Sie von beliebigem Code im Projekt aus zur Laufzeit auf mehrere verschiedene Projektelemente zugreifen.  
@@ -87,6 +88,6 @@ ms.lasthandoff: 10/31/2017
  [Dokumenthostelement](../vsto/document-host-item.md)   
  [Arbeitsmappenhostelement](../vsto/workbook-host-item.md)   
  [Arbeitsblatt-Hostelements](../vsto/worksheet-host-item.md)   
- [Schreiben von Code in Office-Projektmappen](../vsto/writing-code-in-office-solutions.md)  
+ [Writing Code in Office Solutions](../vsto/writing-code-in-office-solutions.md)  
   
   

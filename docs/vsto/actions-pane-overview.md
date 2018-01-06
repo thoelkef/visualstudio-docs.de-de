@@ -20,11 +20,12 @@ caps.latest.revision: "101"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c9d8bd58c8dabc1114b3516e518992b0f91bc173
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 1b03d391917bb472b8b7c1780942c8259562a633
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="actions-pane-overview"></a>Aktionsbereichsübersicht
   Ein Aktionsbereich ist ein anpassbarer **Dokumentaktionen** Aufgabenbereich, der an ein bestimmtes Microsoft Office Word-Dokument oder Microsoft Office Excel-Arbeitsmappe angefügt ist. Es gehostet wird in den Office-Aufgabenbereich zusammen mit weiteren integrierten Aufgabenbereichen wie dem **XML-Quelle** Aufgabenbereich in Excel oder den **Formatvorlagen und Formatierung** Aufgabenbereich in Word. Sie können Windows Forms-Steuerelemente oder WPF-Steuerelemente verwenden, um die Benutzeroberfläche des Aktionsbereichs zu gestalten.  
@@ -118,7 +119,7 @@ ms.lasthandoff: 10/31/2017
 |FromLeft|Stapelt vom linken Rand des Aktionsbereichs.|  
 |FromRight|Stapelt vom rechten Rand des Aktionsbereichs.|  
 |FromTop|Stapelt von oberen Rand des Aktionsbereichs.|  
-|Keine|Es wurde keine Stapelreihenfolge definiert; die Reihenfolge wird vom Entwickler gesteuert.|  
+|Keiner|Es wurde keine Stapelreihenfolge definiert; die Reihenfolge wird vom Entwickler gesteuert.|  
   
  Im folgenden Code wird die <xref:Microsoft.Office.Tools.ActionsPane.StackOrder%2A>-Eigenschaft festgelegt, um die Benutzersteuerelemente vom oberen Rand des Aktionsbereichs zu stapeln.  
   

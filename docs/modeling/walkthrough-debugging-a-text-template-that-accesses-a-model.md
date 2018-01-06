@@ -11,11 +11,12 @@ caps.latest.revision: "6"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 2943b49571077ac1cab87db5ecc4d0f82390273e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 1a8255180a3a5313f0a1c14b17ba10c885c10abc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>Exemplarische Vorgehensweise: Debuggen einer Textvorlage, die auf ein Modell zugreift
 Beim Ändern oder Hinzufügen von Textvorlagen in einer Projektmappe domänenspezifische Sprache, möglicherweise Fehler angezeigt werden, wenn das Modul die Vorlage auf den Quellcode oder transformiert bei der Kompilierung des generierten Codes. Die folgende exemplarische Vorgehensweise veranschaulicht einige der Dinge, die Sie ausführen können, um das Debuggen einer Textvorlage.  

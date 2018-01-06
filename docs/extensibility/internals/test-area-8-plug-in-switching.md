@@ -15,11 +15,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 03e7bd5728320bb2efd0b90728b6c1a16f5997ba
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 9f6a518d618b3a98ec85cbbe015d3b2c5fc7a710
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="test-area-8-plug-in-switching"></a>Testbereich 8: Plug-in wechseln
 Die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrierten Entwicklungsumgebung (IDE) verfügt über die Benutzeroberfläche (UI) so ändern Sie den Quellcodeverwaltungs-Plug-in. Dieser Testbereich bietet Testfälle für den Prozess der Entnahme das plug-in für die quellcodeverwaltung des Projektmappen verwenden.  

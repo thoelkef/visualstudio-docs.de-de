@@ -18,11 +18,12 @@ caps.latest.revision: "27"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5c1cb9e31384822dddcdd3668bfb3a54bc2782d6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c064a6632741eba69a553be87fb8f829063b266b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="registering-project-and-item-templates"></a>Registrieren von Projekt- und Elementvorlagen
 Projekttypen müssen die Verzeichnisse registrieren, wo ihre Projekt- und Element Vorlagen befinden. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]verwendet die Registrierungsinformationen Ihre Projekttypen zugeordnet, welche anzuzeigende in der **neues Projekt hinzufügen** und **neues Element hinzufügen** Dialogfelder.  
@@ -40,7 +41,7 @@ Projekttypen müssen die Verzeichnisse registrieren, wo ihre Projekt- und Elemen
 "ProjectTemplatesDir"="C:\\MyProduct\\MyProjectTemplates"  
 ```  
   
-|Name|Typ|Beschreibung|  
+|name|Typ|Beschreibung|  
 |----------|----------|-----------------|  
 |@|REG_SZ|Der Standardname der Projekte dieser Art.|  
 |DisplayName|REG_SZ|Ressourcen-ID mit dem Namen aus der Satelliten-DLL abgerufen werden sollen, die unter Pakete registriert werden.|  
@@ -58,7 +59,7 @@ Projekttypen müssen die Verzeichnisse registrieren, wo ihre Projekt- und Elemen
 "SortPriority"=dword:00000064  
 ```  
   
-|Name|Typ|Beschreibung|  
+|name|Typ|Beschreibung|  
 |----------|----------|-----------------|  
 |@|REG_SZ|Ressourcen-ID für Elementvorlagen hinzufügen.|  
 |TemplatesDir|REG_SZ|Pfad der Projektelemente angezeigt, klicken Sie im Dialogfeld für die **neues Element hinzufügen** Assistenten.|  
@@ -85,7 +86,7 @@ Projekttypen müssen die Verzeichnisse registrieren, wo ihre Projekt- und Elemen
 "SortPriority"=dword:00000064  
 ```  
   
-|Name|Typ|Beschreibung|  
+|name|Typ|Beschreibung|  
 |----------|----------|-----------------|  
 |CommonFindFilesFilter|REG_DWORD|Stellt den Filter eine häufig verwendete Filter in der **in Dateien suchen** (Dialogfeld). Häufig verwendete Filter werden in der Filterliste vor Filtern, die nicht markiert als allgemeiner aufgeführt.|  
 |CommonOpenFilesFilter|REG_DWORD|Stellt den Filter eine häufig verwendete Filter in der **Dateiöffnungsmodus** (Dialogfeld). Häufig verwendete Filter werden in der Filterliste vor Filtern, die nicht markiert als allgemeiner aufgeführt.|  

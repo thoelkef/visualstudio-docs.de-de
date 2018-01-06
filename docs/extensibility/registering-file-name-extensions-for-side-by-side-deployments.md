@@ -13,11 +13,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 42c1c573554ee6d92b3967517bdcdf0f3106ce61
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 457f9e5303c71d73467815b581c091dc239c1b63
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="registering-file-name-extensions-for-side-by-side-deployments"></a>Registrieren Dateierweiterungen für Seite-an-Seite-Bereitstellungen
 Für VSPackages, die in einer Seite-an-Seite-Umgebung bereitgestellt werden, müssen Sie die Dateierweiterungen, um die richtige Version der Dateien zuzuordnen registrieren [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Registrierung ermöglicht es Benutzern, öffnen Sie das Projekt und die Projektdateien in die entsprechende Version des Elements, wenn Sie eine versionsspezifische-Dateinamenerweiterung verwenden, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  

@@ -15,11 +15,12 @@ caps.latest.revision: "22"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3b167d85713acfd547083b38437c8b2400f2d739
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ec256103aa9329c752029a7139eb2c5c533ae67b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="getting-started-with-source-control-vspackages"></a>Erste Schritte mit Source Control VSPackages
 Eine VSPackage für die quellcodeverwaltung ist eine erweiterte Alternative zu den Datenquellen-Steuerelement-Plug-in. (Finden Sie unter [ein Datenquellen-Steuerelement-Plug-in erstellen](../../extensibility/internals/creating-a-source-control-plug-in.md) steuern Sie weitere Informationen zu Quelle-Plug-ins.) Eine VSPackage quellcodeverwaltung ermöglicht die vollständige Kontrolle über das Steuerelement Quellmodell, Funktionen und -Benutzeroberfläche (UI) und wird in integriert die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Umgebung wie ein VSPackage.  

@@ -19,11 +19,12 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3e43e4921a32cc84b8384950e88c589b1bbddc31
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 290f5d4b3632d5c3ee40e7171aa4a0ed967004dc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-add-a-property-to-sharepoint-projects"></a>Gewusst wie: Hinzufügen einer Eigenschaft zu SharePoint-Projekten
   Sie können eine projekterweiterung verwenden, zum Hinzufügen einer Eigenschaft zu einem SharePoint-Projekt. Die Eigenschaft wird in der **Eigenschaften** Fenster beim Erstellen des Projekts ausgewählt ist, in **Projektmappen-Explorer**.  

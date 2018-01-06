@@ -11,11 +11,12 @@ caps.latest.revision: "37"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f5813788834a7a5a99c10fe6dafc35a300bac007
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 6f5d31e28c47dbcd4f17f7f1e1bc0ac6a8755d5b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="image-service-and-catalog"></a>Bilddienst und Katalog
 Diese Cookbook enthält Anleitungen und bewährte Methoden für den Dienst für Visual Studio-Abbilder und Image-Katalog eingeführt in Visual Studio 2015 eingeführt.  
@@ -109,7 +110,7 @@ Diese Cookbook enthält Anleitungen und bewährte Methoden für den Dienst für 
 |**Unterelement**|**Definition**|  
 |Importieren|Importiert die Symbole der angegebenen Manifestdatei für die Verwendung in das aktuelle manifest|  
 |GUID|Das Symbol stellt einen GUID dar und GUID Formatierung übereinstimmen|  
-|ID|Das Symbol eine ID dar und muss eine nicht negative ganze Zahl sein|  
+|Id|Das Symbol eine ID dar und muss eine nicht negative ganze Zahl sein|  
 |Zeichenfolge|Das Symbol für eines beliebiger Zeichenfolgenwert|  
   
  Symbole sind Groß-/Kleinschreibung beachtet, und mithilfe der Syntax $(symbol-name) verwiesen wird:  
@@ -150,7 +151,7 @@ Diese Cookbook enthält Anleitungen und bewährte Methoden für den Dienst für 
 |-|-|  
 |**Attribut**|**Definition**|  
 |GUID|[Erforderlich] Der GUID-Teil der Image-moniker|  
-|ID|[Erforderlich] Die ID-Teil der Image-moniker|  
+|Id|[Erforderlich] Die ID-Teil der Image-moniker|  
 |AllowColorInversion|[Optional, Standardwert "true"] Gibt an, ob das Bild die Farben umgekehrt programmgesteuert auf einen dunklen Hintergrund aufweisen kann.|  
   
  **Quelle**  
@@ -190,7 +191,7 @@ Diese Cookbook enthält Anleitungen und bewährte Methoden für den Dienst für 
 |-|-|  
 |**Attribut**|**Definition**|  
 |Typ|[Erforderlich] Der Typ der systemeigene Ressource XAML oder PNG|  
-|ID|[Erforderlich] Der ganzzahlige ID Teil der systemeigene Ressource|  
+|Id|[Erforderlich] Der ganzzahlige ID Teil der systemeigene Ressource|  
   
  **ImageList**  
   
@@ -207,7 +208,7 @@ Diese Cookbook enthält Anleitungen und bewährte Methoden für den Dienst für 
 |-|-|  
 |**Attribut**|**Definition**|  
 |GUID|[Erforderlich] Der GUID-Teil der Image-moniker|  
-|ID|[Erforderlich] Die ID-Teil der Image-moniker|  
+|Id|[Erforderlich] Die ID-Teil der Image-moniker|  
 |Extern|[Optional, Standardwert "false"] Gibt an, ob der Image-Moniker ein Bild in das aktuelle Manifest verweist.|  
   
  Der Moniker für das enthaltene Bild muss nicht in ein Bild in das aktuelle Manifest definierten verweisen. Wenn das eigenständige Bild in der Bildbibliothek gefunden werden kann, wird ein leerer Platzhalter-Image an seiner Stelle verwendet werden.  

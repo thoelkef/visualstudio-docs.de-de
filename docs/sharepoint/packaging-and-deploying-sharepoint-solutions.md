@@ -21,11 +21,12 @@ caps.latest.revision: "34"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 362667d4f07acb7a6c245247b40911be35479b96
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: c584e4951289cd813a0f1d6bcf14920bd9713436
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="packaging-and-deploying-sharepoint-solutions"></a>Verpacken und Bereitstellen von SharePoint-Lösungen
   In der Regel ist eine SharePoint-Lösung mithilfe einer Lösung-Paketdatei (.wsp) auf einer SharePoint-Server bereitgestellt. Sie können Visual Studio verwenden, um die SharePoint-Projektelemente in Funktionen zu organisieren und erstellen Sie ein Paket zum Bereitstellen von SharePoint-Funktionen.  

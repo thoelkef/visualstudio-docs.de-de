@@ -13,11 +13,12 @@ caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0ca793132fcf2f3e5e2a84d5289bcfb20f61d591
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: c908262a0ff74bb8574fd76f788611165934375b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-handle-deployment-conflicts"></a>Gewusst wie: Behandeln von Bereitstellungskonflikten
   Sie können Ihren eigenen Code zum Behandeln von Bereitstellungskonflikten für ein SharePoint-Projektelement bereitstellen. Beispielsweise können Sie bestimmen, ob alle Dateien im aktuellen Projektelement bereits in den Speicherort für die Bereitstellung vorhanden sein, und klicken Sie dann den bereitgestellten Dateien löschen, bevor das aktuelle Projektelement bereitgestellt wird. Weitere Informationen zu Bereitstellungskonflikte, finden Sie unter [Erweitern von SharePoint-Packen und-Bereitstellen](../sharepoint/extending-sharepoint-packaging-and-deployment.md).  

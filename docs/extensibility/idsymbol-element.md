@@ -15,11 +15,12 @@ caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 734d05dd013be9a3d6c4a173a5c7abc7a01ef2d8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 004b40acb50fe85604d0a3cfa9f5626891fa66a4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idsymbol-element"></a>IDSymbol-Element
 Die `IDSymbol` Element enthält die ID der dem GUID: ID-Paar, ein Menü, eine Gruppe oder ein Befehl darstellt. Die GUID stammt aus dem übergeordneten `GuidSymbol` Element. Die `IDSymbol` Element verfügt über eine `name` -Attribut, das einen Anzeigenamen für die ID der in enthalten ist, bietet die `value` Attribut.  

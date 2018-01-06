@@ -20,11 +20,12 @@ caps.latest.revision: "38"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 30ac9c68104423c559ad3bfa8712426b67a4c734
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: aspnet
+ms.openlocfilehash: 9cf9517775b5729507252a259485ad8d6cc276ff
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="aspnet-debugging-system-requirements"></a>ASP.NET-Debugging: Systemanforderungen
 In diesem Thema werden die Software- und Sicherheitsanforderungen für die folgenden [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] -Debugszenarios beschrieben:  
@@ -43,7 +44,7 @@ In diesem Thema werden die Software- und Sicherheitsanforderungen für die folge
  So debuggen Sie die [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Arbeitsprozess (nach einem Anwendungspool gehostet), Sie benötigen die Berechtigung zum Debuggen dieses Prozesses. Standardmäßig [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Anwendungen vor IIS 6.0 ausgeführt wird, als die **ASPNET** Benutzer. In IIS 6.0 und IIS 7.0 die **Netzwerkdienst** Konto ist die Standardeinstellung. Wenn der Arbeitsprozess als **ASPNET**oder als **NETZWERKDIENST**ausgeführt wird, benötigen Sie zum Debuggen Administratorrechte.
 
  > [!IMPORTANT]
- > Ab Windows Server 2008 R2, wir empfehlen die Verwendung von der [ApplicationPoolIdentity](https://docs.microsoft.com/en-us/iis/manage/configuring-security/application-pool-identities) als Identität für jeden Anwendungspool.
+ > Ab Windows Server 2008 R2, wir empfehlen die Verwendung von der [ApplicationPoolIdentity](/iis/manage/configuring-security/application-pool-identities) als Identität für jeden Anwendungspool.
   
  Der Name des [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] -Arbeitsprozesses ist je nach Debugszenario und IIS-Version unterschiedlich. Weitere Informationen finden Sie unter [How to: Find the Name of the ASP.NET Process](../debugger/how-to-find-the-name-of-the-aspnet-process.md).  
   

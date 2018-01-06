@@ -21,11 +21,12 @@ caps.latest.revision: "37"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9048f965ad2f04b4eed8fe3a753f6fddc280dbfa
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: aspnet
+ms.openlocfilehash: e3c6dffbd99dbdd91753ce8d06ab139006692089
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="debug-aspnet-applications-in-visual-studio"></a>Debuggen von ASP.NET-Anwendungen in Visual Studio
 
@@ -124,7 +125,7 @@ Festlegen von Projekteigenschaften für das Debuggen auf einem lokalen Webserver
 
 2. Wenn Sie einen externen (benutzerdefinierten)-Server auswählen, geben Sie die richtige URL in die **Projekt-URL** (oder **Basis-URL**) Feld.
 
-    Der externen Server lokale IIS ist, muss IIS installiert und ordnungsgemäß konfiguriert. Beispielsweise muss die richtige Version von ASP.NET in IIS konfiguriert werden. Weitere Informationen finden Sie unter [IIS 8.0 mithilfe von ASP.NET 3.5 und ASP.NET 4.5](https://docs.microsoft.com/en-us/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45). Wenn Sie die Bereitstellung sowie das Debuggen testen möchten, finden Sie unter [Bereitstellung zum Testen](https://docs.microsoft.com/en-us/aspnet/web-forms/overview/deployment/visual-studio-web-deployment/deploying-to-iis).
+    Der externen Server lokale IIS ist, muss IIS installiert und ordnungsgemäß konfiguriert. Beispielsweise muss die richtige Version von ASP.NET in IIS konfiguriert werden. Weitere Informationen finden Sie unter [IIS 8.0 mithilfe von ASP.NET 3.5 und ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45). Wenn Sie die Bereitstellung sowie das Debuggen testen möchten, finden Sie unter [Bereitstellung zum Testen](/aspnet/web-forms/overview/deployment/visual-studio-web-deployment/deploying-to-iis).
 
     Wenn der Quellserver ist [remote](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md), Sie an den Prozess anhängen stattdessen, und diese projekteinstellungen werden nicht zum Debuggen verwendet.
 
@@ -134,7 +135,7 @@ Für IIS Express müssen Sie nicht den Webserver konfigurieren (überspringen Si
 
 Wenn Sie lokale IIS-Webserver verwenden, gehen Sie folgendermaßen vor.
 
-1. Stellen Sie sicher, dass IIS ordnungsgemäß installiert ist. Weitere Informationen finden Sie unter [IIS 8.0 mithilfe von ASP.NET 3.5 und ASP.NET 4.5](https://docs.microsoft.com/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45).
+1. Stellen Sie sicher, dass IIS ordnungsgemäß installiert ist. Weitere Informationen finden Sie unter [IIS 8.0 mithilfe von ASP.NET 3.5 und ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45).
 
     * Stellen Sie sicher, dass Sie die richtige Version von ASP.NET auf dem Server installieren. Verwenden Sie den Webplattform-Installer (WebPI), um ASP.NET 4.5 installieren (Wählen Sie den Serverknoten in Windows Server 2012 R2, **neue Webplattformkomponenten abrufen** und suchen Sie nach ASP.NET). Um ASP.NET Core installieren möchten, finden Sie unter [in IIS veröffentlichen](https://docs.asp.net/en/latest/publishing/iis.html#iis-configuration).
 
@@ -218,7 +219,7 @@ An Web.config-Dateien vorgenommene Änderungen werden von [!INCLUDE[vstecasp](..
   
 Eine Website kann mehrere virtuelle Verzeichnisse und Unterverzeichnisse enthalten, in denen möglicherweise Web.config-Dateien vorhanden sind. [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Anwendungen erben Einstellungen von Web.config-Dateien auf höheren Ebenen im URL-Pfad. Mithilfe hierarchischer Konfigurationsdateien können Sie die Einstellungen für mehrere [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Anwendungen gleichzeitig ändern, z. B. für alle Anwendungen, die sich in der Hierarchie unterhalb der jeweiligen Konfigurationsdatei befinden. Jedoch wenn `debug` festgelegt ist in einer Datei, die sich in der Hierarchie, überschreibt er die höheren Wert.  
   
-Sie können z. B. angeben `debug="true"` in www.microsoft.com/aaa/Web.config und alle Anwendungen im Ordner aaa und in jedem Unterordner von aaa Einstellung erbt. Wenn also Ihre [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] -Anwendung also unter www.microsoft.com/aaa/bbb, erbt diese Einstellung ebenso wie alle [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Anwendungen in www.microsoft.com/aaa/ccc, www.microsoft.com/aaa/ddd usw.. Die einzige Ausnahme stellen Anwendungen dar, die die Einstellungen mit einer eigenen Web.config-Datei auf einer niedrigeren Ebene überschreiben.  
+Sie können z. B. angeben `debug="true"` in www.microsoft.com/aaa/Web.config und alle Anwendungen im Ordner aaa und in jedem Unterordner von aaa Einstellung erbt. Wenn also Ihre [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] -Anwendung also unter www.microsoft.com/aaa/bbb, erbt diese Einstellung ebenso wie alle [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Anwendungen in www.microsoft.com/aaa/ccc, www.microsoft.com/aaa/ddd usw. Die einzige Ausnahme stellen Anwendungen dar, die die Einstellungen mit einer eigenen Web.config-Datei auf einer niedrigeren Ebene überschreiben.  
   
 > [!IMPORTANT]
 > Erheblich Aktivieren des Debugmodus wirkt sich auf die Leistung Ihrer [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Anwendung. Vergessen Sie nie, den Debugmodus zu deaktivieren, bevor Sie die Releaseversion einer Anwendung bereitstellen oder Leistungsmessungen durchführen.  

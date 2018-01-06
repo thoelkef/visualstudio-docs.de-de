@@ -13,11 +13,12 @@ caps.latest.revision: "19"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0b9f71c83d70dc6daca7a3906b784d6babf8dea7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 7929ead4ced01561adb8c11dcaa56bc97f57884b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="enumerators"></a>Enumeratoren
 Dieser Abschnitt enthält die enumeratordatentypen in der Quelle Steuerelement-Plug-in-API, die die Datenquellen-Steuerelement-Plug-in zu kennen muss.  

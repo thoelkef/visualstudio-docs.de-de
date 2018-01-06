@@ -22,11 +22,12 @@ caps.latest.revision: "43"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7dcbedb2c30758c762af0c301c239dd03fe4b10f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 5c383c95d37894aaa49a4a42d2b9a17b9a193f41
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-protect-workbooks"></a>Gewusst wie: Programmgesteuertes Schützen von Arbeitsmappen
   Sie können eine Microsoft Office Excel-Arbeitsmappe schützen, sodass Benutzer können nicht hinzugefügt oder Löschen von Arbeitsblättern, und heben die Arbeitsmappe auch programmgesteuert. Sie können optional ein Kennwort angeben, gibt an, ob die Struktur (damit die Benutzer können keine Arbeitsblätter verschieben) geschützt werden soll, und gibt an, ob die Arbeitsmappe-Fenster, die geschützt werden sollen.  

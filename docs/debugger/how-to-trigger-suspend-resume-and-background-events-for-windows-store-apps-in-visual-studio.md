@@ -18,18 +18,19 @@ caps.latest.revision: "17"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4380299fd37b456dd3be6da7cf37981ad89b1caf
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: uwp
+ms.openlocfilehash: 70e0ab429f6359e8bb50a83307e9e042e0bfa4b0
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>Gewusst wie: Auslösen anhalten, fortsetzen und hintergrundereignissen während des Debuggens uwp-apps in Visual Studio
 Wenn Sie nicht debuggen, steuert die Windows-PLM ( **Process Lifetime Management** , Prozessverwaltung für Lebensdauer) den Ausführungszustand der App, d. h. das Starten, Anhalten, Fortsetzen und Beenden der App als Reaktion auf Benutzeraktionen und den Gerätezustand. Wenn Sie debuggen, deaktiviert Windows diese Aktivierungsereignisse. In diesem Thema wird beschrieben, wie solche Ereignisse im Debugger ausgelöst werden.  
   
  Außerdem wird in diesem Thema das Debuggen von **Hintergrundaufgaben**beschrieben. Hintergrundaufgaben ermöglichen das Ausführen bestimmte Vorgänge in einem Hintergrundprozess, selbst wenn Ihre App nicht ausgeführt wird. Sie können den Debugger verwenden, um die App in den Debugmodus zu versetzen und die Hintergrundaufgabe anschließend zu debuggen, ohne die Benutzeroberfläche zu starten.  
   
- Weitere Informationen zu Prozesslebensdauer-Verwaltung und im Hintergrund Aufgaben finden Sie unter [wird gestartet, fortsetzen und Multitasking](https://docs.microsoft.com/en-us/windows/uwp/launch-resume/index).  
+ Weitere Informationen zu Prozesslebensdauer-Verwaltung und im Hintergrund Aufgaben finden Sie unter [wird gestartet, fortsetzen und Multitasking](/windows/uwp/launch-resume/index).  
   
 ##  <a name="BKMK_In_this_topic"></a> In diesem Thema  
  [Auslösen von Ereignissen der Prozesslebensdauer-Verwaltung](#BKMK_Trigger_Process_Lifecycle_Management_events)  
@@ -124,7 +125,7 @@ Wenn Sie nicht debuggen, steuert die Windows-PLM ( **Process Lifetime Management
 4.  Wählen Sie das **Diagnose** -Protokoll aus.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Testen von uwp-apps mit Visual Studio](../test/testing-store-apps-with-visual-studio.md)   
+ [Testen von UWP-Apps mit Visual Studio](../test/testing-store-apps-with-visual-studio.md)   
  [Debug apps in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)   
  [Anwendungslebenszyklus](http://msdn.microsoft.com/en-us/53cdc987-c547-49d1-a5a4-fd3f96b2259d)   
  [Starten, fortsetzen und multitasking](http://msdn.microsoft.com/en-us/04307b1b-05af-46a6-b639-3f35e297f71b)

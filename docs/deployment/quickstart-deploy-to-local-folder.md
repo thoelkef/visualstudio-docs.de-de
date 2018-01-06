@@ -13,11 +13,12 @@ caps.latest.revision: "1"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4c8696e7ffb4120bae12538a03b77d62c0d091a7
-ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
+ms.workload: multiple
+ms.openlocfilehash: 3b97ca67c9e8d8a4cfb7d99a6c518c8e49a8c426
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="deploy-a-web-app-or-net-core-app-to-a-local-folder-using-the-visual-studio-publish-tool"></a>Bereitstellen einer Web-app oder .NET Core-app in einen lokalen Ordner mit dem Visual Studio Publish-tool
 
@@ -65,6 +66,6 @@ Stellen Sie die veröffentlichen Dateien in einer beliebigen Weise bereit. Sie k
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-- [Bereitstellen einer .NET Core-Anwendung mit dem Tool veröffentlichen](https://docs.microsoft.com/en-us/dotnet/core/deploying/deploy-with-vs)
-- [Verpacken einer desktop-app für Microsoft Store (Desktop Bridge)](https://docs.microsoft.com/en-us/windows/uwp/porting/desktop-to-uwp-packaging-dot-net)
-- (.NET) [Bereitstellen von .NET Framework und Anwendungen](https://docs.microsoft.com/en-us/dotnet/framework/deployment/)
+- [Bereitstellen einer .NET Core-Anwendung mit dem Tool „Veröffentlichen“](/dotnet/core/deploying/deploy-with-vs)
+- [Packen einer Desktop-App für Microsoft Store (Desktop-Brücke)](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net)
+- (.NET) [Bereitstellen von .NET Framework und Anwendungen](/dotnet/framework/deployment/)

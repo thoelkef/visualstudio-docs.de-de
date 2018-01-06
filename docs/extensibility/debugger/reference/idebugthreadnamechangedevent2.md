@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ec6ca74403c4207f91245c25cb09cd828e2c41e1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 213294333632f274feb62cbbf5b1a380fa1d2d95
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugthreadnamechangedevent2"></a>IDebugThreadNameChangedEvent2
 Diese Schnittstelle wird durch die Debugging-Modul (DE) gesendet, auf der Sitzungs-Manager (SDM), wenn ein Threadnamens im zu debuggenden Programms ändert.  

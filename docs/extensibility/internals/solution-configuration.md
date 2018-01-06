@@ -13,11 +13,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5b9009a4adab2420a796b3011175ef37fac9bfcb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 129f86fae5de5501d72b0cdbe5e261717e60e780
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="solution-configuration"></a>Projektmappenkonfiguration
 Projektmappenkonfigurationen Projektmappenebene Eigenschaften zu speichern. Sie leiten das Verhalten der **starten** (F5) Schlüssel und **erstellen** Befehle. Standardmäßig werden diese Befehle erstellen und die Debug-Konfiguration beginnen. Beide Befehle, die im Kontext einer Projektmappenkonfiguration ausgeführt werden. Dies bedeutet, dass der Benutzer F5 erwarten kann, zu starten und zu erstellen, die alle die aktive Projektmappe über die Einstellungen konfiguriert ist. Die Umgebung ist dafür ausgelegt, optimiert für Lösungen statt Projekte beim Erstellen und ausführen.  

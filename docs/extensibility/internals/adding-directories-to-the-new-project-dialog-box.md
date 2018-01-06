@@ -13,11 +13,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f24fd3c3a0ffb537c63346ef867a2a43481acfa9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 881979b54fb8f8f07a7ffeb2f3648b690fe2bf78
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="adding-directories-to-the-new-project-dialog-box"></a>Hinzufügen von Verzeichnissen auf das neue Projekt (Dialogfeld)
 Bei der Erstellung des neuen Projekttypen werden Sie auch können registrieren ein neues Verzeichnisses in der **neues Projekt** (Dialogfeld), um diese als Vorlagen für die Verwendung anzuzeigen. Im folgenden Codebeispiel wird erläutert, wie ein neues Verzeichnis, auch bekannt als einen Knoten zu registrieren. Im Beispiel werden die Vorlagen, die vom VSPackage CLSID_Package registriert. Als Ergebnis der linken Seite des der **neues Projekt** Dialogfeld bietet den hinzugefügten Knoten mit einem Namen, die von der Ressource Folder_Label_ResID bestimmt. Diese Ressource wird aus der VSPackage-Satelliten-DLL geladen.  

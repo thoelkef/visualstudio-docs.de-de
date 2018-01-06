@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 307e32587a7aac6e2595f35488ad057995c04f4b
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.workload: multiple
+ms.openlocfilehash: d007bdf5d2029e896167a2fd7b32359c661aa7fa
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Problembehandlung und bekannte Probleme für die Momentaufnahme Debuggen in Visual Studio
 
@@ -68,7 +69,7 @@ Gehen Sie wie folgt vor:
 - Momentaufnahme Debuggen mit mehreren Visual Studio-Clients für den gleichen App-Dienst ist derzeit nicht unterstützt.
 - Roslyn-IL-Optimierungen sind nicht vollständig in ASP.NET Core-Projekten unterstützt. Bei einigen Projekten ASP.NET Core ist es möglicherweise nicht möglich, finden einige Variablen oder einige Variablen in bedingten Anweisungen verwenden. 
 - Spezielle Variablen, wie z. B. *$FUNCTION* oder *$CALLER*, kann nicht in bedingten Anweisungen oder Logpoints für ASP.NET Core Projekte ausgewertet werden.
-- Momentaufnahme-Debuggen funktioniert nicht auf App-Dienste, die über [lokales Cashing](https://docs.microsoft.com/en-us/azure/app-service/app-service-local-cache) eingeschaltet.
+- Momentaufnahme-Debuggen funktioniert nicht auf App-Dienste, die über [lokales Cashing](/azure/app-service/app-service-local-cache) eingeschaltet.
 - Debuggen-API-Apps Momentaufnahme wird derzeit nicht unterstützt.
 
 ## <a name="see-also"></a>Siehe auch

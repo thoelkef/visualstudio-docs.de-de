@@ -16,11 +16,12 @@ caps.latest.revision: "41"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f2d8e1f8ad116bd6db12eca288e567a652e502a5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 715d58e205442511db9709a5e57b1b689e008628
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-designing-an-outlook-form-region"></a>Exemplarische Vorgehensweise: Entwerfen eines Outlook-Formularbereichs
   Benutzerdefinierte Formularbereiche erweitern Standard- oder benutzerdefinierte Microsoft Office Outlook-Formulare. In dieser exemplarischen Vorgehensweise entwerfen Sie einen benutzerdefinierten Formularbereich, der als neue Seite im Inspektor-Fenster eines Kontaktelements angezeigt wird. Dieser Formularbereich zeigt eine Zuordnung jeder Adresse an, die für den Kontakt aufgeführt ist, indem die Adressinformationen an die Windows Live Local Search-Website gesendet werden. Informationen zu Formularbereichen finden Sie unter [Erstellen von Outlook-Formularbereichen](../vsto/creating-outlook-form-regions.md).  
@@ -40,7 +41,7 @@ ms.lasthandoff: 10/31/2017
 -   Testen des Outlook-Formularbereichs.  
   
 > [!NOTE]  
->  Auf Ihrem Computer werden möglicherweise andere Namen oder Speicherorte für die Benutzeroberflächenelemente von Visual Studio angezeigt als die in den folgenden Anweisungen aufgeführten. Diese Elemente sind von der jeweiligen Visual Studio-Version und den verwendeten Einstellungen abhängig. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../ide/personalizing-the-visual-studio-ide.md).  
+>  Auf Ihrem Computer werden möglicherweise andere Namen oder Speicherorte für die Benutzeroberflächenelemente von Visual Studio angezeigt als die in den folgenden Anweisungen aufgeführten. Diese Elemente sind von der jeweiligen Visual Studio-Version und den verwendeten Einstellungen abhängig. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../ide/personalizing-the-visual-studio-ide.md).  
   
 ## <a name="prerequisites"></a>Erforderliche Komponenten  
  Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:  

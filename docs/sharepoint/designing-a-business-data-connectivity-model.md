@@ -20,11 +20,12 @@ caps.latest.revision: "41"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0af1b3038fd0cdf4629c1a1acb9e14d0297dc19d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 886522cacff9359b3516b9e09530bfb1c41acfe6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="designing-a-business-data-connectivity-model"></a>Entwerfen eines Business Data Connectivity-Modells
   Entwickeln Sie ein Modell für den Business Data Connectivity (BDC)-Dienst, indem Sie eine Modelldatei Entitäten und Methoden hinzufügen. Eine Entität beschreibt eine Auflistung von Datenfeldern. Eine Entität kann z. B. eine Tabelle in einer Datenbank darstellen. Eine Methode führt eine Aufgabe, z. B. hinzufügen, löschen oder Aktualisieren von Daten, die durch die Entitäten dargestellt. Weitere Informationen finden Sie unter [Integrieren von Geschäftsdaten in SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md).  

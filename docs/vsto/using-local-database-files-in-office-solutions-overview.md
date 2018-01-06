@@ -19,11 +19,12 @@ caps.latest.revision: "30"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5e90143904c8d628e4288e24602907a75ae4bc59
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 9d807c38af14249b265c411de31f6cde03855c60
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-local-database-files-in-office-solutions-overview"></a>Übersicht über die Verwendung lokaler Datenbankdateien in Office-Lösungen
   Sie können eine Datenbankdatei, z. B. einer SQL Server Express (MDF) oder einer Microsoft Office Access (MDB)-Datei, in der Office-Projektmappe einschließen. Dies ermöglicht es den Benutzern zu eine lokale Datenbank in Situationen zu verwalten, in denen Verwendung einer zentralen Datenbank nicht erforderlich ist, z. B. in einer lokalen Inventory-Lösung ist, die auf nur einem einzelnen Computer verwendet wird.  

@@ -13,11 +13,12 @@ caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 88f7d2bf3a3351999175425366cf421c3b5ce0b3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 209006129bcb2cfaaf88233768df1d9597cd09a5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-suppress-file-change-notifications"></a>Vorgehensweise: Dateiänderungsbenachrichtigungen unterdrücken
 Wenn die physische Datei, die den Textpuffer darstellt geändert wurde, wird ein Dialogfeld angezeigt, mit der Meldung **möchten Sie die Änderungen auf die folgenden Elemente zu speichern?** Dies wird als Datei-änderungsbenachrichtigung bezeichnet. Wenn viele Änderungen in der Datei werden möchten, kann jedoch dieses Dialogfeld anzeigen immer wieder schnell lästig werden.  

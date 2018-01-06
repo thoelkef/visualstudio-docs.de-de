@@ -26,11 +26,12 @@ caps.latest.revision: "38"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: babb8456593ba953982390f048960449069ca6fc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 8ecc80a3c26b97b9754f998bd0903471d00cd1d7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-an-external-list-in-sharepoint-by-using-business-data"></a>Exemplarische Vorgehensweise: Erstellen einer externen Liste in SharePoint mithilfe von Geschäftsdaten
   Der Business Data Connectivity (BDC)-Dienst ermöglicht SharePoint, um Geschäftsdaten aus Back-End-serveranwendungen, Webdienste und Datenbanken anzuzeigen.  
@@ -199,7 +200,7 @@ ms.lasthandoff: 10/31/2017
   
 10. Wiederholen Sie Schritt 6, um ein Typdeskriptor für jedes der folgenden Felder zu erstellen.  
   
-    |Name|Typname|  
+    |name|Typname|  
     |----------|---------------|  
     |FirstName|System.String|  
     |LastName|System.String|  
@@ -263,7 +264,7 @@ ms.lasthandoff: 10/31/2017
   
 #### <a name="to-test-the-project"></a>So testen Sie das Projekt  
   
-1.  Wählen Sie die **F5** Schlüssel.  
+1.  Drücken Sie die Taste **F5**.  
   
      Die SharePoint-Website wird geöffnet.  
   

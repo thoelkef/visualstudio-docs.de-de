@@ -30,11 +30,12 @@ caps.latest.revision: "52"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 097a4247ccc7604dd4c39b81e0f733578fc91c89
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 5a655210f3ab8bbcdbae7c06815a05d1ad24b390
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="custom-task-panes"></a>Benutzerdefinierte Aufgabenbereiche
   Aufgabenbereiche sind Bereiche der Benutzeroberfläche, die in einer Microsoft Office-Anwendung normalerweise auf einer Seite eines Fensters angedockt sind. Mit benutzerdefinierten Aufgabenbereichen können Sie einen eigenen Aufgabenbereich erstellen und Benutzern eine vertraute Oberfläche für den Zugriff auf die Features Ihrer Projektmappe zur Verfügung stellen. Die Oberfläche kann beispielsweise Steuerelemente enthalten, die Code zum Ändern von Dokumenten oder zum Anzeigen von Daten aus einer Datenquelle ausführen.  
@@ -118,7 +119,7 @@ ms.lasthandoff: 10/31/2017
   
  In der folgenden Tabelle sind die Ereignisse aufgeführt, die Sie behandeln können, um auf Änderungen von Benutzern am benutzerdefinierten Aufgabenbereich zu reagieren.  
   
-|Aufgabe|Ereignis|  
+|Aufgabe|event|  
 |----------|-----------|  
 |So reagieren Sie, wenn der Benutzer die Position des Aufgabenbereichs ändert|<xref:Microsoft.Office.Tools.CustomTaskPane.DockPositionChanged>|  
 |So reagieren Sie, wenn der Benutzer den Aufgabenbereich ausblendet oder sichtbar macht|<xref:Microsoft.Office.Tools.CustomTaskPane.VisibleChanged>|  

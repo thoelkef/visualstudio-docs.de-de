@@ -13,11 +13,12 @@ caps.latest.revision: "21"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 588badc75a604df65949c99fa16f84ad4e9c9175
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c96250c79ea283117254a96875c3a1f03f4cb30b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="opening-a-dynamic-tool-window"></a>Öffnen eine dynamische Toolfenster
 Toolfenster werden in der Regel über einen Befehl in einem Menü oder eine entsprechende Tastenkombination geöffnet. In einigen Fällen kann jedoch ein Toolfenster erforderlich, das geöffnet wird, wenn eine bestimmte Benutzeroberflächenkontext gilt, und wird geschlossen, wenn der UI-Kontext nicht mehr gilt. Toolfenster, wie diese heißen *dynamische* oder *automatisch sichtbar*.  

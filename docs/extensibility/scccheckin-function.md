@@ -14,11 +14,12 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3742887be40f07f4b64003727333d4d21d08831e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: f95377f79d02952c63b673d50569fac058a8573c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="scccheckin-function"></a>SccCheckin-Funktion
 Diese Funktion überprüft in zuvor ausgecheckten Dateien auf dem Quellcodeverwaltungssystem, speichern die Änderungen und Erstellen einer neuen Version. Diese Funktion wird mit einer Anzahl und ein Array von Namen der Dateien eingecheckt werden aufgerufen.  

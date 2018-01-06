@@ -18,11 +18,12 @@ caps.latest.revision: "24"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: fb181ba7bd408194bec52224496ebef7f343f5d6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: cdcc241031f8dcd2bd79000aeecde5c9d19f593d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-prevent-outlook-from-displaying-a-form-region"></a>Gewusst wie: Verhindern der Anzeige eines Formularbereichs in Outlook
   Es gibt möglicherweise Situationen, in denen Sie nicht über Microsoft Office Outlook einen Formularbereich für ein bestimmtes Element anzeigen möchten. Wenn ein Kontaktelement keine Geschäftsadresse enthält, können Sie z. B. einen Formularbereich verhindern, der in einer Karte angezeigt wird, den Speicherort des Geschäfts anzeigt.  

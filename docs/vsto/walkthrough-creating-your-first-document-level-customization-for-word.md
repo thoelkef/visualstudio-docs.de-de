@@ -19,11 +19,12 @@ caps.latest.revision: "45"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6c7992f36f82d7caf56b09b0f6887eed363b6665
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 6d732f16d6794fbe59dd6f67fa904fcee916ce69
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-your-first-document-level-customization-for-word"></a>Exemplarische Vorgehensweise: Erstellen der ersten Anpassung auf Dokumentebene für Word
   Diese exemplarische Vorgehensweise bietet eine Einführung zum Erstellen einer Anpassung auf Dokumentebene für Microsoft Office Word. Die Features, die Sie in dieser Art von Lösung erstellen, sind nur verfügbar, wenn ein bestimmtes Dokument geöffnet ist. Sie können eine Anpassung auf Dokumentebene nicht verwenden, um anwendungsweite Änderungen (z. B. eine neue Registerkarte des Menübands anzuzeigen, wenn ein Dokument geöffnet ist) vorzunehmen.  
@@ -38,7 +39,7 @@ ms.lasthandoff: 10/31/2017
   
 -   Schreiben von Code, der das Word-Objektmodell zum Hinzufügen von Text zum angepassten Dokument verwendet, wenn dieses geöffnet wird.  
   
--   Erstellen und Ausführen des Projekts, um es zu testen.  
+-   Erstellen Sie das Projekt, und führen Sie es aus, um es zu testen.  
   
 -   Bereinigen des Projekts zum Entfernen nicht benötigter Builddateien und Sicherheitseinstellungen vom Entwicklungscomputer.  
   

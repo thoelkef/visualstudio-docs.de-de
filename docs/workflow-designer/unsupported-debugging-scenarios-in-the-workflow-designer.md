@@ -10,11 +10,12 @@ ms.assetid: 6adbe379-41d0-4681-9cd0-b91f187c3c2c
 caps.latest.revision: "4"
 ms.author: sdanie
 manager: erikre
-ms.openlocfilehash: e442c47611edbc207b3a9ba7c8f10363cd020d10
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 79dfcd15a49b40f1473966e815ddb904c1d7f8f1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="unsupported-debugging-scenarios-in-the-workflow-designer"></a>Im Workflow-Designer nicht unterstützte Debugszenarien
 Im Workflow-Designer in [!INCLUDE[netfx40_short](../workflow-designer/includes/netfx40_short_md.md)] wurden viele neue Funktionen hinzugefügt. Es gibt jedoch nach wie vor einige Debugszenarien, die nicht unterstützt werden. In diesem Dokument werden die vom Workflow-Designer nicht unterstützten Debugszenarien ausführlich beschrieben.  

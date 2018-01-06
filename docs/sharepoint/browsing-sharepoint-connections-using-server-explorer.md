@@ -22,11 +22,12 @@ caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9b8f75dd12e0684edd4260e796540523a2c7d08d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: b16a2ee34ca757e62a26676386566b94c31ebf74
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="browsing-sharepoint-connections-using-server-explorer"></a>Durchsuchen von SharePoint-Verbindungen mit dem Server-Explorer
   Sie können lokale SharePoint-Verbindungen in Durchsuchen **Server-Explorer**. Mithilfe dieser Technik können Sie auf Ihrem System durch die Komponenten einer SharePoint-Website navigieren. SharePoint-Website-Komponenten, z. B. Listendefinitionen und Inhaltstypen, angezeigt werden, in einem Knoten mit dem Namen **SharePoint-Verbindungen** in der Strukturansicht des **Server-Explorer**. Anzuzeigende **Server-Explorer**, wählen Sie in der Menüleiste **Ansicht**, **Server-Explorer**. Zusätzlich zur Anzeige der SharePoint-Website-Komponenten, Sie Entfernen von Elementen, zugehörigen Eigenschaften anzeigen oder Aktualisieren mithilfe von Befehlen im Kontextmenü die Strukturansicht.  

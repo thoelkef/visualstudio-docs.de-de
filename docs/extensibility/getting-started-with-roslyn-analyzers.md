@@ -12,11 +12,12 @@ caps.latest.revision: "6"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 962023733d2d746e0acb584e3dcbdc1a5e369012
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ec424f5e85f5bff9be5b276b3978b25dc3239fe5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="getting-started-with-roslyn-analyzers"></a>Erste Schritte mit Roslyn-Analyzern
 Mit live-projektbasierten Code-Analyzer in Visual Studio können API Autoren domänenspezifische Codeanalyse in ihre NuGet-Pakete enthalten sind.  Da diese Analyzer durch die .NET Compiler Platform (mit dem Codenamen "Roslyn") unterstützt werden, können sie Warnungen in Ihrem Code erzeugen, während der Eingabe, bevor Sie die Zeile (nicht mehr wartet auf den Code zum Ermitteln von Problemen zu erstellen) abgeschlossen haben.  Analysen können auch über die Visual Studio Glühbirne Eingabeaufforderung, um Ihnen das Bereinigen von Code ermöglichen, sofort eine automatische Codekorrektur Oberfläche.  

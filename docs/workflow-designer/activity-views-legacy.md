@@ -15,11 +15,12 @@ caps.latest.revision: "5"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 50f57684db32f601bd4cbf870456da458aa5ce7c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 0a6658bdf0f1df76e585236497ba4ba19525b199
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="activity-views-legacy"></a>Aktivitätsansichten (Vorgängerversion)
 In vielen der Aktivitäten, die von [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] bereitgestellt werden, und aus denen Workflows bestehen, stehen mehrere Entwurfsansichten in der Vorgängerversion von [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] zur Verfügung. Beim Ziehen Sie eines Aktivitätsdesigners aus der **Toolbox** auf die Entwurfsoberfläche, und anschließend die Aktivität ausgewählt wird, wechseln Sie zwischen den verschiedenen Entwurfsansichten mithilfe einer der **Workflow**Menü oder über das Kontextmenü der ausgewählten Aktivität. Und wenn Sie den Mauszeiger auf den Namen einer ausgewählten Aktivität verschieben, wird ein Dropdownsatz mit Registerkarten aufgerufen, mit denen Sie zwischen den verschiedenen Ansichten wechseln können.  

@@ -12,11 +12,12 @@ caps.latest.revision: "18"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: f020dbd8aef022acaafe0561fba11343e9272ff6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 7c7881c20412ab5ffc3f1c4486958f4b5ca68a1c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="deploying-a-custom-directive-processor"></a>Bereitstellen eines benutzerdefinierten Anweisungsprozessors
 Wenn Sie auf einem Computer einen benutzerdefinierten Direktivenprozessor in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] verwenden möchten, müssen Sie ihn anhand einer der in diesem Thema beschriebenen Methoden registrieren.  
@@ -29,22 +30,22 @@ Wenn Sie auf einem Computer einen benutzerdefinierten Direktivenprozessor in [!I
   
 -   Festlegen eines Registrierungsschlüssels. Bei dieser Methode fügen Sie einen Registrierungseintrag für den Direktivenprozessor hinzu.  
   
- Sie müssen nur eine dieser Methoden verwenden, wenn Sie die Textvorlage in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] oder [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] transformieren möchten. Falls Sie in der Anwendung einen benutzerdefinierten Host verwenden, ist dieser für die Suche nach Direktivenprozessoren für die einzelnen Direktiven zuständig.  
+ Sie müssen nur eine dieser Methoden verwenden, wenn Sie die Textvorlage in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] oder [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] transformieren möchten. Falls Sie in der Anwendung einen benutzerdefinierten Host verwenden, ist dieser für die Suche nach Anweisungsprozessoren für die einzelnen Anweisungen zuständig.  
   
 ## <a name="deploying-a-directive-processor-in-a-vsix"></a>Bereitstellen eines Anweisungsprozessors in einer VSIX  
  Sie können einen benutzerdefinierten Direktivenprozessor Hinzufügen einer [Visual Studio-Erweiterung (VSIX)](http://msdn.microsoft.com/en-us/64ff1452-f7d5-42d9-98b8-76f769f76832).  
   
  Stellen Sie sicher, dass die VSIX-Datei die folgenden zwei Elemente enthält:  
   
--   Die Assembly (.dll), die die benutzerdefinierte Direktivenprozessorklasse enthält.  
+-   Die Assembly (.dll), die die benutzerdefinierte Anweisungsprozessorklasse enthält.  
   
--   Eine PKGDEF-Datei, durch die der Direktivenprozessor registriert wird. Der Stammname der Datei muss mit dem Namen der Assembly identisch sein. Die Dateinamen können z. B. "CDP.dll" und "CDP.pkgdef" lauten.  
+-   Eine PKGDEF-Datei, durch die der Anweisungsprozessor registriert wird. Der Stammname der Datei muss mit dem Namen der Assembly identisch sein. Die Dateinamen können z. B. "CDP.dll" und "CDP.pkgdef" lauten.  
   
- Wenn Sie den Inhalt einer VSIX-Datei überprüfen oder ändern möchten, ändern Sie die Dateinamenerweiterung in .zip, und öffnen Sie die Datei dann. Ändern Sie den Dateinamen wieder in .vsix, nachdem Sie den Inhalt bearbeitet haben.  
+ Wenn Sie den Inhalt einer VSIX-Datei überprüfen oder ändern möchten, ändern Sie die Dateierweiterung in .zip, und öffnen Sie die Datei dann. Ändern Sie den Dateinamen wieder in .vsix, nachdem Sie den Inhalt bearbeitet haben.  
   
  Zum Erstellen einer VSIX-Datei stehen mehrere Methoden zur Verfügung. Im folgenden Verfahren wird eine Methode beschrieben.  
   
-#### <a name="to-develop-a-custom-directive-processor-in-a-vsix-project"></a>So entwickeln Sie einen benutzerdefinierten Direktivenprozessor in einem VSIX-Projekt  
+#### <a name="to-develop-a-custom-directive-processor-in-a-vsix-project"></a>So entwickeln Sie einen benutzerdefinierten Anweisungsprozessor in einem VSIX-Projekt  
   
 1.  Erstellen Sie in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ein VSIX-Projekt.  
   
@@ -101,15 +102,15 @@ Wenn Sie auf einem Computer einen benutzerdefinierten Direktivenprozessor in [!I
   
      Dies ist eine öffentliche Klasse, die <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> oder <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor> implementieren muss.  
   
-#### <a name="to-install-the-custom-directive-processor"></a>So installieren Sie den benutzerdefinierten Direktivenprozessor  
+#### <a name="to-install-the-custom-directive-processor"></a>So installieren Sie den benutzerdefinierten Anweisungsprozessor  
   
 1.  Öffnen Sie in Windows-Explorer (Datei-Explor in Windows 8) das Buildverzeichnis (normalerweise "bin\Debug" oder "bin\Release").  
   
-2.  Wenn Sie den Direktivenprozessor auf einem anderen Computer installieren möchten, kopieren Sie die VSIX-Datei auf den anderen Computer.  
+2.  Wenn Sie den Anweisungsprozessor auf einem anderen Computer installieren möchten, kopieren Sie die VSIX-Datei auf den anderen Computer.  
   
 3.  Doppelklicken Sie auf die VSIX-Datei. Der Installer für [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Erweiterungen wird angezeigt.  
   
-4.  Starten Sie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] neu. Sie können jetzt Textvorlagen mit Direktiven ausführen, die auf den benutzerdefinierten Direktivenprozessor verweisen. Jede Anweisung besitzt das folgende Format:  
+4.  Starten Sie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] neu. Sie können jetzt Textvorlagen mit Anweisungen ausführen, die auf den benutzerdefinierten Anweisungsprozessor verweisen. Jede Anweisung besitzt das folgende Format:  
   
      `<#@ CustomDirective Processor="CustomDirectiveProcessorName" parameter1="value1" ... #>`  
   
@@ -128,7 +129,7 @@ Wenn Sie auf einem Computer einen benutzerdefinierten Direktivenprozessor in [!I
   
 -   Wenn die Erweiterung im Erweiterungs-Manager nicht angezeigt, aber das System nicht lässt, es installieren, löschen Sie die Erweiterung von **%localappdata%\Microsoft\VisualStudio\\\*. 0\Extensions\\** .  
   
--   Öffnen Sie die VSIX-Datei, und überprüfen Sie den Inhalt. Ändern Sie die Dateinamenerweiterung in .zip, um die Datei zu öffnen. Vergewissern Sie sich, dass sie die DLL-, PKGDEF- und extension.vsixmanifest-Dateien enthält. Die extension.vsixmanifest-Datei sollte die entsprechende Liste im Knoten "SupportedProducts" und einen Knoten "VsPackage" unter dem Knoten "Inhalt" enthalten:  
+-   Öffnen Sie die VSIX-Datei, und überprüfen Sie den Inhalt. Ändern Sie die Dateierweiterung in .zip, um die Datei zu öffnen. Vergewissern Sie sich, dass sie die DLL-, PKGDEF- und extension.vsixmanifest-Dateien enthält. Die extension.vsixmanifest-Datei sollte die entsprechende Liste im Knoten "SupportedProducts" und einen Knoten "VsPackage" unter dem Knoten "Inhalt" enthalten:  
   
      `<Content>`  
   
@@ -137,7 +138,7 @@ Wenn Sie auf einem Computer einen benutzerdefinierten Direktivenprozessor in [!I
      `</Content>`  
   
 ## <a name="deploying-a-directive-processor-in-a-vspackage"></a>Bereitstellen eines Anweisungsprozessors in einem VSPackage  
- Wenn der Direktivenprozessor Teil eines VSPackage ist, das im GAC installiert wird, können Sie die PKGDEF-Datei vom System generieren lassen.  
+ Wenn der Anweisungsprozessor Teil eines VSPackage ist, das im GAC installiert wird, können Sie die PKGDEF-Datei vom System generieren lassen.  
   
  Fügen Sie das folgende Attribut in der Paketklasse ein:  
   
@@ -150,19 +151,19 @@ Wenn Sie auf einem Computer einen benutzerdefinierten Direktivenprozessor in [!I
   
  Die PKGDEF-Datei wird generiert, wenn Sie das Projekt erstellen. Beim Installieren des VSPackage wird der Direktivenprozessor von der PKGDEF-Datei registriert.  
   
- Überprüfen Sie, ob die PKGDEF-Datei im Buildordner angezeigt wird (normalerweise "bin\Debug" oder "bin\Release"). Falls sie nicht angezeigt wird, öffnen Sie die CSPROJ-Datei in einem Text-Editor, und entfernen Sie den folgenden Knoten: `<GeneratePkgDefFile>false</GeneratePkgDefFile>`  
+ Überprüfen Sie, ob die PKGDEF-Datei im Buildordner angezeigt wird (normalerweise „bin\Debug“ oder „bin\Release“). Falls sie nicht angezeigt wird, öffnen Sie die CSPROJ-Datei in einem Text-Editor, und entfernen Sie den folgenden Knoten: `<GeneratePkgDefFile>false</GeneratePkgDefFile>`  
   
  Weitere Informationen finden Sie unter [VSPackages](../extensibility/internals/vspackages.md).  
   
 ## <a name="setting-a-registry-key"></a>Festlegen eines Registrierungsschlüssels  
- Diese Methode zum Installieren eines benutzerdefinierten Direktivenprozessors wird am seltensten verwendet. Bei dieser Methode ist das Aktivieren und Deaktivieren des Direktivenprozessors komplizierter, und der Direktivenprozessor kann nicht an andere Benutzer verteilt werden.  
+ Diese Methode zum Installieren eines benutzerdefinierten Anweisungsprozessors wird am seltensten verwendet. Bei dieser Methode ist das Aktivieren und Deaktivieren des Anweisungsprozessors komplizierter, und der Anweisungsprozessor kann nicht an andere Benutzer verteilt werden.  
   
 > [!CAUTION]
 >  Durch eine fehlerhafte Bearbeitung der Registrierung kann das System ernsthaft beschädigt werden. Bevor Sie Änderungen an der Registrierung vornehmen, sollten Sie daher unbedingt alle wichtigen Daten auf dem Computer sichern.  
   
 #### <a name="to-register-a-directive-processor-by-setting-a-registry-key"></a>So registrieren Sie einen Anweisungsprozessor durch Festlegen eines Registrierungsschlüssels  
   
-1.  Führen Sie `regedit` aus.  
+1.  Führen Sie aus `regedit`.  
   
 2.  Navigieren Sie in regedit zum folgenden Eintrag:  
   
@@ -184,7 +185,7 @@ Wenn Sie auf einem Computer einen benutzerdefinierten Direktivenprozessor in [!I
   
  Wenn der benutzerdefinierte Direktivenprozessor nicht im GAC ist, sollten die Registrierungsunterschlüssel den Angaben in der folgenden Tabelle entsprechen:  
   
-|Name|Typ|Daten|  
+|name|Typ|Daten|  
 |----------|----------|----------|  
 |(Standard)|REG_SZ|(Wert nicht festgelegt)|  
 |Klasse|REG_SZ|**\<Namespace-Name >. \<Klassenname >**|  
@@ -192,7 +193,7 @@ Wenn Sie auf einem Computer einen benutzerdefinierten Direktivenprozessor in [!I
   
  Wenn die Assembly im GAC ist, sollten die Registrierungsunterschlüssel den Angaben in der folgenden Tabelle entsprechen:  
   
-|Name|Typ|Daten|  
+|name|Typ|Daten|  
 |----------|----------|----------|  
 |(Standard)|REG_SZ|(Wert nicht festgelegt)|  
 |Klasse|REG_SZ|\<**Der vollqualifizierte Klassenname**>|  

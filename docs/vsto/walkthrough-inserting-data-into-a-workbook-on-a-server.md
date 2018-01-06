@@ -21,11 +21,12 @@ caps.latest.revision: "38"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ca768bd681c20826ffbdeeec94706b8b37c129f3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: ea64eaa32d43369ad264c8ddfce49d5a070a311a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-inserting-data-into-a-workbook-on-a-server"></a>Exemplarische Vorgehensweise: Einfügen von Daten in eine Arbeitsmappe auf einem Server
   Diese exemplarische Vorgehensweise veranschaulicht, wie Daten in ein Dataset eingefügt werden, die in einer Microsoft Office Excel-Arbeitsmappe zwischengespeichert ist, ohne Excel zu starten, mit der <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> Klasse.  
@@ -47,7 +48,7 @@ ms.lasthandoff: 10/31/2017
  Obwohl in dieser exemplarischen Vorgehensweise wird davon ausgegangen, dass Sie den Code auf dem Entwicklungscomputer ausgeführt werden, kann der Code in dieser exemplarischen Vorgehensweise veranschaulichten auf einem Server verwendet werden, die über keinen Excel installiert.  
   
 > [!NOTE]  
->  Auf Ihrem Computer werden möglicherweise andere Namen oder Speicherorte für die Benutzeroberflächenelemente von Visual Studio angezeigt als die in den folgenden Anweisungen aufgeführten. Diese Elemente sind von der jeweiligen Visual Studio-Version und den verwendeten Einstellungen abhängig. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../ide/personalizing-the-visual-studio-ide.md).  
+>  Auf Ihrem Computer werden möglicherweise andere Namen oder Speicherorte für die Benutzeroberflächenelemente von Visual Studio angezeigt als die in den folgenden Anweisungen aufgeführten. Diese Elemente sind von der jeweiligen Visual Studio-Version und den verwendeten Einstellungen abhängig. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../ide/personalizing-the-visual-studio-ide.md).  
   
 ## <a name="prerequisites"></a>Erforderliche Komponenten  
  Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:  

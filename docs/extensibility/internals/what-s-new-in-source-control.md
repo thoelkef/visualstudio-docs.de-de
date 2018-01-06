@@ -15,11 +15,12 @@ caps.latest.revision: "27"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 946a3c9fb7d3f0ccd6a90383f6ca22d91c0009a4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 9fc1c5956a4d3c20f8b9abec36d554f3ec56c8c9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="what39s-new-in-source-control"></a>Welche &#39; s in Datenquellen-Steuerelements
 In [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] Sie können eine hochgradig Source Control-Lösung bereitstellen, indem ein Datenquellen-Steuerelement VSPackage implementieren. Dieser Abschnitt beschreibt die Funktionen des Datenquellen-Steuerelements VSPackages und bietet eine Übersicht über die Schritte für die Implementierung.  

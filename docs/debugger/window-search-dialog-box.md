@@ -6,18 +6,19 @@ ms.reviewer:
 ms.suite: 
 ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 helpviewer_keywords: Window Search
 ms.assetid: 9c30390d-dc3c-4c27-ae1a-9d92dc076d2b
 caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: abc4ea7ee1445c0d1846fadb5319f17d98d3afcd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0f3b7b20b6ae96904b88ad97bbf87bf066f941d6
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="window-search-dialog-box"></a>Dialogfeld "Fenstersuche"
 Mithilfe dieses Dialogfelds zu suchen, und wählen Sie den Knoten für ein bestimmtes Fenster in [Fensteransicht](../debugger/windows-view.md). Um dieses Dialogfeld anzuzeigen, den Fokus auf das Windows-Fenster an. Wählen Sie dann **"Fenster Suchen"** aus der **Suche** Menü.  

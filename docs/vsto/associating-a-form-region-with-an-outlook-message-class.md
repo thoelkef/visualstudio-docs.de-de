@@ -19,11 +19,12 @@ caps.latest.revision: "43"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3346b5cf096c523c9eb2c066d87a85e0d57efd94
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: d65b97fa42be6f8c89a2cfd963ce7ad1212b6dc1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="associating-a-form-region-with-an-outlook-message-class"></a>Zuordnen eines Formularbereichs zu einer Outlook-Nachrichtenklasse
   Sie können angeben, welche Elemente von Microsoft Office Outlook einen Formularbereich anzeigen, indem Sie den Formularbereich der Nachrichtenklasse jedes Elements zuordnen. Wenn Sie einen Formularbereich am Ende eine e-Mail-Nachricht anfügen möchten, können Sie den Formularbereich z. B. mit der IPM zuordnen. Beachten Sie die Message-Klasse.  

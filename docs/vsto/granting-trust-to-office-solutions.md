@@ -20,11 +20,12 @@ caps.latest.revision: "37"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: da7f4695bc817a66761c579b4c5af85b59ee041f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 8d4e1e92eab8def99a67b7da531770bb2dd58fc0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="granting-trust-to-office-solutions"></a>Gewähren von Vertrauenswürdigkeit für Office-Projektmappen
   Gewähren von Vertrauenswürdigkeit für Office-Projektmappen bedeutet das Ändern der Sicherheitsrichtlinie des jeder Zielcomputer die Projektmappenassembly, Anwendungsmanifest Bereitstellungsmanifest und Dokument zu vertrauen. Office-Projektmappe können Sie oder der Benutzer Vertrauenswürdigkeit gewährt werden.  

@@ -15,11 +15,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fc66e193b13ac6baf9d6089483a1281c2d6a59ef
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 4f2209ce2a2f6b1263bb52d550ca303f2525047d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="parent-element"></a>Parent-Element
 Das übergeordnete Element eines Felds Schaltfläche oder Kombinationsfeld kann nur eine Gruppe sein. Das übergeordnete Element eines Menüs oder einer Gruppe kann eine beliebige andere Menü bzw. Gruppe sein. In einem [CommandPlacement Element](../extensibility/commandplacement-element.md), dieses Element ist erforderlich; in allen anderen Fällen ist er optional. Wenn dieses Element nicht angegeben ist, das übergeordnete Element des `Group_Undefined:0` wird impliziert werden.  
@@ -41,7 +42,7 @@ Das übergeordnete Element eines Felds Schaltfläche oder Kombinationsfeld kann 
 |ID|Erforderlich. ID der GUID/ID Befehlsbezeichner.|  
   
 ### <a name="child-elements"></a>Untergeordnete Elemente  
- Keine  
+ Keiner  
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente  
   

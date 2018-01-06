@@ -16,11 +16,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 436b5f745dc9b3b8c135ad111e6e708bbd391b4e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ceee0091dc20938f9098985c2609f0a3d239c699
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="references-element-visual-studio-templates"></a>References-Element (Visual Studio-Vorlagen)
 Gruppiert die Assemblyverweise, die von die Vorlage zu Projekten hinzugefügt.  
@@ -43,13 +44,13 @@ Gruppiert die Assemblyverweise, die von die Vorlage zu Projekten hinzugefügt.
  In den folgenden Abschnitten werden attribute-Elemente sowie untergeordnete und übergeordnete Elemente beschrieben.  
   
 ### <a name="attributes"></a>Attribute  
- Keine.  
+ Keine  
   
 ### <a name="child-elements"></a>Untergeordnete Elemente  
   
 |Element|Beschreibung|  
 |-------------|-----------------|  
-|[Referenz](../extensibility/reference-element-visual-studio-templates.md)|Erforderliches Element.<br /><br /> Gibt den Assemblyverweis an, der hinzugefügt wird, wenn das Element einem Projekt hinzugefügt wird. Es muss mindestens ein `Reference` Elemente in einem `References` Element.|  
+|[Verweis](../extensibility/reference-element-visual-studio-templates.md)|Erforderliches Element.<br /><br /> Gibt den Assemblyverweis an, der hinzugefügt wird, wenn das Element einem Projekt hinzugefügt wird. Es muss mindestens ein `Reference` Elemente in einem `References` Element.|  
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente  
   

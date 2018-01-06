@@ -12,11 +12,12 @@ caps.latest.revision: "24"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 7ea11c018f210b804f4ea6542eb7a7817ae1507c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: cebfaa79e2524dcd6ba862ec55467acc9e5cd316
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="responding-to-and-propagating-changes"></a>Reagieren auf und Propagieren von Änderungen
 Wenn ein Element erstellt, gelöscht oder aktualisiert wird, können Sie Code schreiben, die die Änderung auf andere Teile des Modells oder auf externe Ressourcen wie Dateien, Datenbanken oder andere Komponenten weitergibt.  

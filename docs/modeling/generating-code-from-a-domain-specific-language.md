@@ -11,11 +11,12 @@ caps.latest.revision: "13"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 98811cc3e7830dfcbf548bc34c5b3ee268e6f858
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: e9fc83c57b2e1d0bb9768835b3cccc5be36b9295
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="generating-code-from-a-domain-specific-language"></a>Generieren von Code für eine domänenspezifische Sprache
 Microsoft [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] bietet eine effiziente Möglichkeit zum Generieren von Code, Dokumente, Konfigurationsdateien und andere Artefakte aus Daten in Modellen dargestellt. Mit [!INCLUDE[dsl](../modeling/includes/dsl_md.md)], können Sie einen Satz von Klassen, die die Daten darstellen erstellen und können schreiben den Textvorlagen in Klassen, deren Namen und Eigenschaften widerspiegeln, die Daten.  

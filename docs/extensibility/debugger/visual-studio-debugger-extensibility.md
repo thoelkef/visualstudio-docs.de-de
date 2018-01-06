@@ -15,11 +15,12 @@ caps.latest.revision: "32"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b9a14f95fbed47670b3c5b5db19e4e0e6b8ba074
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c5b5943dc8087a22e1bdfb94ae6d0d10335c174a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-debugger-extensibility"></a>Visual Studio-Debugger-Erweiterbarkeit
 Visual Studio enthält einen vollständig interaktiven Quelle Code-Debugger bietet eine leistungsfähige und einfach zu verwendende Tool zum Nachverfolgen von Fehlern im Programm. Der Debugger hat vollständige Unterstützung von Visual Basic, c#, C/C++- und JavaScript. Allerdings bei der [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)], d. h. von der [Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkId=214453), anderen Programmiersprachen können im Debugger mit den gleichen umfangreichen Funktionen unterstützt werden.  

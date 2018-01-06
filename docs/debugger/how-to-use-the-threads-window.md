@@ -20,11 +20,12 @@ caps.latest.revision: "38"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4469f2f70bececca258fe4ea1a98d753f8349f87
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 253798cdde2a40a70496dbe2ed89f9d0a9316640
+ms.sourcegitcommit: 03a74d29a1e0584ff4808ce6c9e812b51e774905
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/02/2018
 ---
 # <a name="walkthrough-debug-a-multithreaded-application-in-visual-studio-using-the-threads-window"></a>Exemplarische Vorgehensweise: Debuggen einer Multithreadanwendung in Visual Studio mithilfe des Fensters Threads
 Visual Studio bietet eine **Threads** und anderen Elementen können Sie das Debuggen von Multithreadanwendungen der Benutzeroberfläche. Dieses Lernprogramm zeigt, wie die **Threads** Fenster und die **Debugspeicherort** Symbolleiste. Weitere Informationen zu anderen Tools, finden Sie unter [erste Schritte zum Debuggen von Multithreadanwendungen](../debugger/get-started-debugging-multithreaded-apps.md). In diesem Lernprogramm dauert nur wenige Minuten, aber vertraut, die Sie mit den Funktionen für das Debuggen von Multithreadanwendungen verwendet werden können.   
@@ -57,7 +58,7 @@ Um dieses Lernprogramm beginnen, benötigen Sie ein Multithreadanwendungsprojekt
   
     ```VB  
     Thread.Sleep(3000)   
-    Console.WriteLine(  
+    Console.WriteLine()
     ```  
   
     ```CSharp  
@@ -253,7 +254,7 @@ Sie können Einfrieren und reaktivieren (anhalten und fortsetzen) Threads zur St
   
 7.  Betrachten Sie die **Threads** Fenster. Das aktuelle Symbol "Thread" wurde geändert.  
   
-8. Der Quellcode-Editor mit der Maustaste eines Threadmarker. Zeigen Sie im Kontextmenü auf **zu Thread wechseln** , und klicken Sie auf einen Threadnamen/eine Thread-ID..  
+8. Der Quellcode-Editor mit der Maustaste eines Threadmarker. Zeigen Sie im Kontextmenü auf **zu Thread wechseln** , und klicken Sie auf einen Threadnamen/eine Thread-ID.  
   
      Sie haben jetzt drei Möglichkeiten kennen gelernt ändern das Symbol für den aktuellen Thread an einen anderen Thread: Verwenden der **Threads** Fenster die **Thread** in Liste der **Debugspeicherort** Symbolleiste und die Threadmarker in der Quellcode-Editors.  
   

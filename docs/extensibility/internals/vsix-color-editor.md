@@ -11,11 +11,12 @@ caps.latest.revision: "5"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7987d2b6d22893e82893755ed76fa5253aeb600c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: aa699e0c6d4d23ec6e5cdc347627a98efb623672
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="vsix-color-editor"></a>VSIX-Farb-Editor
 Das Visual Studio-Erweiterung Farb-Editor-Tool kann erstellen und Bearbeiten von benutzerdefinierten Farben für Visual Studio. Generiert das Tool kann auch designschlüssel-Ressource so, dass die Farben im Code verwendet werden können. Dieses Tool eignet sich zum treffen von Farben für eine Visual Studio-Erweiterung, die Designs unterstützt. Mit diesem Tool kann PKGDEF und XML-Dateien öffnen. Visual Studio-Designs (.vstheme-Dateien) können mit Farben-Editor von Visual Studio Erweiterung verwendet werden, indem Sie die Erweiterung in XML ändern. Darüber hinaus können .vstheme Dateien in eine aktuelle XML-Datei importiert werden.  
@@ -77,7 +78,7 @@ Das Visual Studio-Erweiterung Farb-Editor-Tool kann erstellen und Bearbeiten von
   
 -   Ausgewählt  
   
--   Mit Fokus  
+-   Focused  
   
  Beispiele für einige Tokennamen für Teile des Listenelement-Steuerelements:  
   

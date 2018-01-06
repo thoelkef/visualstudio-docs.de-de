@@ -11,11 +11,12 @@ caps.latest.revision: "14"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 3b462a3f5eb70fd21b907a046b0774f937bb738d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 9f39931fed8d1491610bfafb6fd012439a48c0ba
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>Gewusst wie: Hinzufügen eines Drag & Drop-Handlers
 Sie können Ihrer DSL Handler für Drag & Drop-Ereignisse hinzufügen, sodass die Benutzer Elemente von anderen Diagrammen oder von anderen Teilen von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] auf das Diagramm ziehen können. Sie können auch Handler für Ereignisse wie Doppelklicks hinzufügen. Drag-and-Drop und doppelklicken Sie auf die Handler werden zusammen als bezeichnet *gestenhandlern*.  

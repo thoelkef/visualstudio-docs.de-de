@@ -12,11 +12,12 @@ caps.latest.revision: "24"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 58402e1030516e6f587ec428bd98179ff82ec43a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 17168b43056870dc259965c31902c36450876702
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="properties-of-domain-properties"></a>Eigenschaften von Domäneneigenschaften
 Ein *Eigenschaft "Domain"* ist ein Feature von einem Modellelement, das einen Wert enthalten darf. So kann die Domänenklasse `Person` beispielsweise die Eigenschaften `Name` und `BirthDate` aufweisen. In der DSL-Definition werden die Domäneneigenschaften im Domänenklassenfeld im Diagramm und unter der Domänenklasse im DSL-Explorer aufgelistet. Weitere Informationen finden Sie unter [zum Definieren einer domänenspezifischen Sprache](../modeling/how-to-define-a-domain-specific-language.md).  
@@ -48,7 +49,7 @@ Ein *Eigenschaft "Domain"* ist ein Feature von einem Modellelement, das einen We
 |**Name**|Der Name dieser Domäneneigenschaft. Es muss ein gültiger Bezeichner, z. B. **SongTitle**.|\<keine >|  
 |**Notizen**|Informelle Hinweise, die mit dieser Domäneneigenschaft verknüpft sind.|\<keine >|  
 |**Setter-Zugriffsmodifizierer**|Der Zugriffsmodifizierer für den Setter. Dieser steuert den Umfang, in welchem der Programmcode die Eigenschaft festlegen kann.|`public`|  
-|**Typ**|Der Typ der Eigenschaft. Um die Liste der verfügbaren Typen hinzuzufügen, mit der rechten Maustaste in des Stamm der DSL im DSL-Explorer, und klicken Sie auf **Hinzufügen externer Typ**.|`String`|  
+|**Type**|Der Typ der Eigenschaft. Um die Liste der verfügbaren Typen hinzuzufügen, mit der rechten Maustaste in des Stamm der DSL im DSL-Explorer, und klicken Sie auf **Hinzufügen externer Typ**.|`String`|  
   
 ## <a name="see-also"></a>Siehe auch  
  [Domänenspezifische Sprache Tools Glossar](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)

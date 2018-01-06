@@ -11,11 +11,12 @@ caps.latest.revision: "10"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 9b48a6d079ebe43f3d1e3c97a9272e8ad05b6735
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 6bb99e6ef2c4a898285e4d7dae503aec0fc7d955
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="t4-template-directive"></a>T4-Vorlagenanweisung
 Eine [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] T4-Textvorlage beginnt normalerweise mit einer `template`-Direktive, die angibt, wie die Vorlage verarbeitet werden soll. In einer Textvorlage und allen darin enthaltenen Dateien darf nur eine Vorlagenanweisung vorhanden sein.  
@@ -59,7 +60,7 @@ debug="true"
 ```  
   
  Gültige Werte:  
- `true, false`. "False" ist der Standardwert.  
+ `true, false` "False" ist der Standardwert.  
   
  Wenn das `debug`-Attribut `true` ist, enthält die Zwischencodedatei Informationen, mit denen der Debugger genauer die Position in der Vorlage erkennen kann, an der eine Unterbrechung oder Ausnahme aufgetreten ist.  
   
@@ -74,7 +75,7 @@ hostspecific="true"
 ```  
   
  Gültige Werte:  
- `true, false, trueFromBase`. "False" ist der Standardwert.  
+ `true, false, trueFromBase` "False" ist der Standardwert.  
   
  Wenn Sie den Wert dieses Attributs auf `true` festlegen, wird der von der Textvorlage generierten Klasse eine Eigenschaft mit dem Namen `Host` hinzugefügt. Die Eigenschaft ist ein Verweis auf den Host des Transformationsmoduls und wird als <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost> deklariert. Wenn Sie einen benutzerdefinierten Host definiert haben, können Sie ihn in den benutzerdefinierten Hosttyp umwandeln.  
   

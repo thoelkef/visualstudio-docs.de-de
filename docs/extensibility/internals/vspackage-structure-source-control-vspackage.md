@@ -15,11 +15,12 @@ caps.latest.revision: "26"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4f8422e4333c1f1ccffc928ce9a43e4afa53cc7a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 168aa0f7b93d20afaa30924dc17f05e0cac465bb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="vspackage-structure-source-control-vspackage"></a>VSPackage-Struktur (Quelle Steuerelement VSPackage)
 Das Source Control Paket-SDK bietet Richtlinien zum Erstellen eines VSPackages, ermöglichen eine Quelle Steuerelement Implementierer sein eigenes Quellcodeverwaltungsfunktion mit Integration der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Umgebung. Ein VSPackage ist eine COM-Komponente, die in der Regel bei Bedarf durch geladen wird die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrierten Entwicklungsumgebung (IDE) auf Grundlage der Dienste, die vom Paket in die Registrierungseinträge angekündigt werden. Jedes VSPackage implementieren muss die <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>. Eine VSPackage in der Regel-Diensten nutzt die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE und proffers einige Dienste selbst.  

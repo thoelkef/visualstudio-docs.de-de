@@ -13,11 +13,12 @@ caps.latest.revision: "24"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 367917032b836ce6a7d07cf3eba85db14464a957
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 54ecbe034f4fa7054be2725205a013e5899849e7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="core-interfaces"></a>Core-Schnittstellen
 Die folgenden Schnittstellen sind die Core-Schnittstellen für den Debugger zu erweitern, indem Sie mit der [!INCLUDE[vsipsdk](../../../extensibility/includes/vsipsdk_md.md)].  
@@ -70,7 +71,7 @@ Die folgenden Schnittstellen sind die Core-Schnittstellen für den Debugger zu e
 ##  <a name="Breakpoints"></a>Haltepunkte  
  Diese Schnittstellen beziehen sich auf die Implementierung und die Überwachung von Haltepunkten.  
   
-|Schnittstelle|Implementiert durch|Beschreibung|  
+|Interface|Implementiert durch|Beschreibung|  
 |---------------|--------------------|-----------------|  
 |[IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)|DE|Steht für einen Haltepunkt an einer Speicheradresse gebunden.|  
 |[IDebugBreakpointBoundEvent2](../../../extensibility/debugger/reference/idebugbreakpointboundevent2.md)|DE|Durch die DE gesendet, wenn ein Haltepunkt an einer Speicheradresse gebunden ist.|  
@@ -91,7 +92,7 @@ Die folgenden Schnittstellen sind die Core-Schnittstellen für den Debugger zu e
 ##  <a name="Contexts"></a>Kontexte  
  Diese Schnittstellen darstellen, verschiedene Arten von Kontexten innerhalb des Programms, der debuggt wird.  
   
-|Schnittstelle|Implementiert durch|Beschreibung|  
+|Interface|Implementiert durch|Beschreibung|  
 |---------------|--------------------|-----------------|  
 |[IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)|DE|Stellt die Anfangsposition des Code-Anweisung dar.|  
 |[IDebugCodeContext3](../../../extensibility/debugger/reference/idebugcodecontext3.md)|DE|Erweitert die [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) Schnittstelle, um den Abruf von Modul und die Prozess-Schnittstellen zu aktivieren.|  
@@ -105,7 +106,7 @@ Die folgenden Schnittstellen sind die Core-Schnittstellen für den Debugger zu e
 ##  <a name="CoreServer"></a>Core-Server  
  Diese Schnittstellen darstellen, den Computer, auf dem eine Anwendung gedebuggt wird. Diese werden durch implementiert [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] jedoch in vom Debugmodule aufgerufen werden kann.  
   
-|Schnittstelle|Implementiert durch|Beschreibung|  
+|Interface|Implementiert durch|Beschreibung|  
 |---------------|--------------------|-----------------|  
 |[IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)|VS|Bietet Zugriff auf die Ports und Port Lieferanten sowie Informationen über den Computer.|  
 |[IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)|VS|Stellt eine [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md) unterstützt, die das Remotedebuggen.|  
@@ -113,7 +114,7 @@ Die folgenden Schnittstellen sind die Core-Schnittstellen für den Debugger zu e
 ##  <a name="DebugEngines"></a>Debuggen von Modulen  
  Diese Schnittstellen darstellen Debugmodule und deren zugeordneten Ereignissen an.  
   
-|Schnittstelle|Implementiert durch|Beschreibung|  
+|Interface|Implementiert durch|Beschreibung|  
 |---------------|--------------------|-----------------|  
 |[IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)|DE|Stellt einen benutzerdefinierten Debugmodul dar.|  
 |[IDebugEngine3](../../../extensibility/debugger/reference/idebugengine3.md)|DE|Stellt einen benutzerdefinierten Debugmodul, das Laden von Symbolen, die JustMyCode und Ausnahmen unterstützt.|  
@@ -125,7 +126,7 @@ Die folgenden Schnittstellen sind die Core-Schnittstellen für den Debugger zu e
 ##  <a name="Documents"></a>Dokumente  
  Diese Schnittstellen stellen Dokumente (Quelldateien) und ihre zugehörigen Elemente dar.  
   
-|Schnittstelle|Implementiert durch|Beschreibung|  
+|Interface|Implementiert durch|Beschreibung|  
 |---------------|--------------------|-----------------|  
 |[IDebugActivateDocumentEvent2](../../../extensibility/debugger/reference/idebugactivatedocumentevent2.md)|DE|Vom DE gesendet und fordern ein Dokument geöffnet werden.|  
 |[IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)|DE|Stellt einen Datenstrom von disassemblierten Anweisungen aus einem Dokument dar.|  
@@ -140,7 +141,7 @@ Die folgenden Schnittstellen sind die Core-Schnittstellen für den Debugger zu e
 ##  <a name="Events"></a> Ereignisse  
  Diese Schnittstellen darstellen, alle Ereignisse, die zwischen dem Code und der Sitzungs-Manager (SDM) gesendet werden.  
   
-|Schnittstelle|Implementiert durch|Beschreibung|  
+|Interface|Implementiert durch|Beschreibung|  
 |---------------|--------------------|-----------------|  
 |[IDebugActivateDocumentEvent2](../../../extensibility/debugger/reference/idebugactivatedocumentevent2.md)|DE|Vom DE gesendet und fordern ein Dokument geöffnet werden.|  
 |[IDebugBeforeSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugbeforesymbolsearchevent2.md)|DE|Debugging-Modul (DE) sendet diese Schnittstelle zu dem Sitzung Debug-Manager (SDM), legen Sie den Status Strich Nachricht während des Symbol lädt.|  
@@ -185,7 +186,7 @@ Die folgenden Schnittstellen sind die Core-Schnittstellen für den Debugger zu e
 ##  <a name="Expressions"></a>Ausdrücke  
  Diese Schnittstellen darstellen, Ausdrücke, die in einem bestimmten Kontext ausgewertet werden.  
   
-|Schnittstelle|Implementiert durch|Beschreibung|  
+|Interface|Implementiert durch|Beschreibung|  
 |---------------|--------------------|-----------------|  
 |[IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md)|DE|Stellt einen Ausdruck ausgewertet werden soll. Abgerufenes der [IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md) Schnittstelle.|  
 |[IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md)|DE|Stellt einen Kontext, in dem ein Ausdruck ausgewertet wird. Abgerufenes der [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) Schnittstelle.|  
@@ -194,7 +195,7 @@ Die folgenden Schnittstellen sind die Core-Schnittstellen für den Debugger zu e
 ##  <a name="Memory"></a>Arbeitsspeicher  
  Diese Schnittstellen stellen Sequenzen von Bytes im Speicher dar.  
   
-|Schnittstelle|Implementiert durch|Beschreibung|  
+|Interface|Implementiert durch|Beschreibung|  
 |---------------|--------------------|-----------------|  
 |[IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md)|DE|Stellt eine Folge von Bytes im Arbeitsspeicher, die aus gelesen oder geschrieben werden können.|  
 |[IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)|DE|Stellt einen Speicherort im Arbeitsspeicher, der eine Folge von Bytes dar.|  
@@ -202,7 +203,7 @@ Die folgenden Schnittstellen sind die Core-Schnittstellen für den Debugger zu e
 ##  <a name="Modules"></a> Module  
  Diese Schnittstellen darstellen, ein Modul, das eine ausführbare Datei entspricht oder. DLL-Datei.  
   
-|Schnittstelle|Implementiert durch|Beschreibung|  
+|Interface|Implementiert durch|Beschreibung|  
 |---------------|--------------------|-----------------|  
 |[IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md)|DE|Stellt eine einzelne ausführbare Datei oder DLL dar.|  
 |[IDebugModule3](../../../extensibility/debugger/reference/idebugmodule3.md)|DE|Stellt eine [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md) , die die Symbole unterstützt.|  
@@ -213,7 +214,7 @@ Die folgenden Schnittstellen sind die Core-Schnittstellen für den Debugger zu e
 ##  <a name="Ports"></a>Ports  
  Diese Schnittstellen darstellen, Ports und Port Lieferanten.  
   
-|Schnittstelle|Implementiert durch|Beschreibung|  
+|Interface|Implementiert durch|Beschreibung|  
 |---------------|--------------------|-----------------|  
 |[IDebugDefaultPort2](../../../extensibility/debugger/reference/idebugdefaultport2.md)|VS, PS|Stellt den Standardport auf dem lokalen Computer an.|  
 |[IDebugFirewallConfigurationCallback2](../../../extensibility/debugger/reference/idebugfirewallconfigurationcallback2.md)|VS|Ermöglicht ein Debugmodul DCOM verwendet wird, um Unterstützung bitten, die die [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] UI, um sicherzustellen, dass der Firewall kein Remotedebuggen blockiert wird.|  
@@ -233,7 +234,7 @@ Die folgenden Schnittstellen sind die Core-Schnittstellen für den Debugger zu e
 ##  <a name="Processes"></a>Prozesse  
  Diese Schnittstellen darstellen, automatisiert, eine einzelne ausführbare Datei, die eine oder mehrere Programme enthält.  
   
-|Schnittstelle|Implementiert durch|Beschreibung|  
+|Interface|Implementiert durch|Beschreibung|  
 |---------------|--------------------|-----------------|  
 |[IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)|PS, DE|Entspricht einem Prozess, der auf einem Computer ausgeführt wird.|  
 |[IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)|PS, DE|Entspricht einem Prozess, der aktiv unterstützt debugging (verwendet, um den Schritt zu ersetzen, den Vorgang fortzusetzen, und führen Sie die Methoden für die [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) Schnittstelle).|  
@@ -245,7 +246,7 @@ Die folgenden Schnittstellen sind die Core-Schnittstellen für den Debugger zu e
 ##  <a name="Programs"></a>Programme  
  Diese Schnittstellen darstellen, Programme, die logischen Einheiten der Ausführung, die nicht unbedingt um eine physische ausführbare Datei oder ein Modul entsprechen.  
   
-|Schnittstelle|Implementiert durch|Beschreibung|  
+|Interface|Implementiert durch|Beschreibung|  
 |---------------|--------------------|-----------------|  
 |[IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md)|DE|Stellt eine [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) , muss in Verbindung mit anderen Programmen, die zur gleichen Zeit gedebuggten arbeitet.|  
 |[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)|DEUTSCHLAND, PS|Stellt eine logische Ausführungseinheit dar.|  
@@ -264,7 +265,7 @@ Die folgenden Schnittstellen sind die Core-Schnittstellen für den Debugger zu e
 ##  <a name="Properties"></a> Eigenschaften  
  Diese Schnittstellen stellen Eigenschaften, ein Wert mit einem bestimmten Kontext, in der Regel das Ergebnis der Auswertung von Ausdrücken dar.  
   
-|Schnittstelle|Implementiert durch|Beschreibung|  
+|Interface|Implementiert durch|Beschreibung|  
 |---------------|--------------------|-----------------|  
 |[IDebugCustomViewer](../../../extensibility/debugger/reference/idebugcustomviewer.md)|EE|Stellt eine [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) seinen Wert auf benutzerdefinierte Weise anzeigen kann.|  
 |[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)|DE|Stellt einen Wert, der einen Stapelrahmen, Dokument oder das Ergebnis der Auswertung von Ausdrücken.|  
@@ -278,7 +279,7 @@ Die folgenden Schnittstellen sind die Core-Schnittstellen für den Debugger zu e
 ##  <a name="StackFrames"></a>Stapelrahmen  
  Diese Schnittstellen darstellen, einen Stapelrahmen entspricht, die einen Kontext in der ein Breakpoint oder Ausnahme aufgetreten ist.  
   
-|Schnittstelle|Implementiert durch|Beschreibung|  
+|Interface|Implementiert durch|Beschreibung|  
 |---------------|--------------------|-----------------|  
 |[IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)|DE|Stellt einen Kontext dar, in denen ein Haltepunkt oder eine Ausnahme aufgetreten ist.|  
 |[IDebugStackFrame3](../../../extensibility/debugger/reference/idebugstackframe3.md)|DE|Stellt eine [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) die behandeln können Ausnahmen abgefangen.|  
@@ -288,7 +289,7 @@ Die folgenden Schnittstellen sind die Core-Schnittstellen für den Debugger zu e
 ##  <a name="Threads"></a> Threads  
  Diese Schnittstellen darstellen, Threads und deren zugeordneten Ereignissen.  
   
-|Schnittstelle|Implementiert durch|Beschreibung|  
+|Interface|Implementiert durch|Beschreibung|  
 |---------------|--------------------|-----------------|  
 |[IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)|DE|Stellt einen Ausführungsthread dar.|  
 |[IDebugThreadCreateEvent2](../../../extensibility/debugger/reference/idebugthreadcreateevent2.md)|DE|Durch die DE gesendet, wenn ein Thread erstellt wurde.|  
@@ -299,7 +300,7 @@ Die folgenden Schnittstellen sind die Core-Schnittstellen für den Debugger zu e
 ##  <a name="TypeVisualizers"></a>Typ-Schnellansichten  
  Diese Schnittstellen bieten Unterstützung für die Typ-Schnellansichten. Diese Schnittstellen werden in der Regel von der ausdrucksauswertung implementiert.  
   
-|Schnittstelle|Implementiert durch|Beschreibung|  
+|Interface|Implementiert durch|Beschreibung|  
 |---------------|--------------------|-----------------|  
 |[IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)|EE|Stellt ein Array von Bytes für eine Schnellansicht Typ dargestellt wird.|  
 |[IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)|EE|Stellt Methoden zum Abrufen von Zugriff auf Daten einer Schnellansicht Typ übergeben werden soll.|  

@@ -14,11 +14,12 @@ caps.latest.revision: "74"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: fd49e497844c85482780c925ef94bc2c422cd80a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 0eb95bdd83780aa000ea6e3c696c24e319dcd4fa
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-custom-directive-processor"></a>Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Anweisungsprozessors
 *Direktivenprozessoren* fügen Sie Code, um die *generierten Transformationsklasse*. Beim Aufrufen einer *Richtlinie* aus einem *Textvorlage*, kann der Rest des Codes, den Sie in der Textvorlage schreiben, die, auf die Direktive bereitgestellten Funktion basieren.  
@@ -27,7 +28,7 @@ ms.lasthandoff: 10/27/2017
   
  In dieser exemplarischen Vorgehensweise werden u. a. die folgenden Aufgaben beschrieben:  
   
--   Erstellen eines benutzerdefinierten Direktivenprozessors  
+-   Erstellen eines benutzerdefinierten Anweisungsprozessors  
   
 -   Registrieren des Direktivenprozessors  
   
@@ -40,16 +41,16 @@ ms.lasthandoff: 10/27/2017
   
 -   Visual Studio 2010 SDK  
   
-## <a name="creating-a-custom-directive-processor"></a>Erstellen eines benutzerdefinierten Direktivenprozessors  
- In dieser exemplarischen Vorgehensweise erstellen Sie einen benutzerdefinierten Direktivenprozessor. Sie fügen eine benutzerdefinierte Direktive hinzu, von der eine XML-Datei gelesen, in einer <xref:System.Xml.XmlDocument>-Variable gespeichert und durch eine Eigenschaft verfügbar gemacht wird. Im Abschnitt "Testen des Direktivenprozessors" verwenden Sie diese Eigenschaft in einer Textvorlage, um auf die XML-Datei zuzugreifen.  
+## <a name="creating-a-custom-directive-processor"></a>Erstellen eines benutzerdefinierten Anweisungsprozessors  
+ In dieser exemplarischen Vorgehensweise erstellen Sie einen benutzerdefinierten Direktivenprozessor. Sie fügen eine benutzerdefinierte Direktive hinzu, von der eine XML-Datei gelesen, in einer <xref:System.Xml.XmlDocument>-Variable gespeichert und durch eine Eigenschaft verfügbar gemacht wird. Im Abschnitt "Testen des Anweisungsprozessors" verwenden Sie diese Eigenschaft in einer Textvorlage, um auf die XML-Datei zuzugreifen.  
   
  Der Aufruf der benutzerdefinierten Anweisung sieht folgendermaßen aus:  
   
  `<#@ CoolDirective Processor="CustomDirectiveProcessor" FileName="<Your Path>DocFile.xml" #>`  
   
- Der benutzerdefinierte Anweisungsprozessor fügt die Variable und die Eigenschaft der generierten Transformationsklasse hinzu. In der Direktive, die Sie hier erstellen, wird der vom Modul zur generierten Transformationsklasse hinzugefügte Code mithilfe von <xref:System.CodeDom>-Klassen erstellt. Die <xref:System.CodeDom>-Klassen erstellen abhängig von der im [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]-Parameter der `language`-Direktive angegebenen Sprache Code in Visual C# oder `template`. Die Sprache des Direktivenprozessors und die Sprache der Textvorlage, die auf den Direktivenprozessor zugreift, müssen nicht identisch sein.  
+ Der benutzerdefinierte Anweisungsprozessor fügt die Variable und die Eigenschaft der generierten Transformationsklasse hinzu. In der Direktive, die Sie hier erstellen, wird der vom Modul zur generierten Transformationsklasse hinzugefügte Code mithilfe von <xref:System.CodeDom>-Klassen erstellt. Die <xref:System.CodeDom>-Klassen erstellen abhängig von der im [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]-Parameter der `language`-Direktive angegebenen Sprache Code in Visual C# oder `template`. Die Sprache des Anweisungsprozessors und die Sprache der Textvorlage, die auf den Anweisungsprozessor zugreift, müssen nicht identisch sein.  
   
- Der von der Direktive erstellte Code sieht folgendermaßen aus:  
+ Der von der Anweisung erstellte Code sieht folgendermaßen aus:  
   
 ```csharp  
 private System.Xml.XmlDocument document0Value;  
@@ -80,7 +81,7 @@ Public Overridable ReadOnly Property Document0() As System.Xml.XmlDocument
 End Property  
 ```  
   
-#### <a name="to-create-a-custom-directive-processor"></a>So erstellen Sie einen benutzerdefinierten Direktivenprozessor  
+#### <a name="to-create-a-custom-directive-processor"></a>So erstellen Sie einen benutzerdefinierten Anweisungsprozessor  
   
 1.  Erstellen Sie in Visual Studio ein Visual C#- oder Visual Basic-Klassenbibliothekprojekt mit dem Namen "CustomDP".  
   
@@ -632,7 +633,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\*.0\TextTemplating\DirectiveP
 HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplating\DirectiveProcessors  
 ```  
   
- In diesem Abschnitt fügen Sie der Registrierung unter demselben Pfad einen Schlüssel für den benutzerdefinierten Direktivenprozessor hinzu.  
+ In diesem Abschnitt fügen Sie der Registrierung unter demselben Pfad einen Schlüssel für den benutzerdefinierten Anweisungsprozessor hinzu.  
   
 > [!CAUTION]
 >  Durch eine fehlerhafte Bearbeitung der Registrierung kann das System ernsthaft beschädigt werden. Sichern Sie alle wichtigen Daten auf dem Computer, bevor Sie Änderungen an der Registrierung vornehmen.  
@@ -648,7 +649,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 3.  Fügen Sie einen neuen Schlüssel mit dem Namen "CustomDirectiveProcessor" hinzu.  
   
     > [!NOTE]
-    >  Diesen Namen verwenden Sie im Feld "Prozessor" der benutzerdefinierten Direktiven. Dieser Name muss nicht mit dem Namen der Direktive, dem Namen der Direktivenprozessorklasse oder des Direktivenprozessornamespaces übereinstimmen.  
+    >  Diesen Namen verwenden Sie im Feld "Prozessor" der benutzerdefinierten Direktiven. Dieser Name muss nicht mit dem Namen der Anweisung, dem Namen der Anweisungsprozessorklasse oder des Anweisungsprozessornamespaces übereinstimmen.  
   
 4.  Fügen Sie einen neuen Zeichenfolgenwert mit dem Namen "Class" und dem Wert CustomDP.CustomDirectiveProcessor für den Namen der neuen Zeichenfolge hinzu.  
   
@@ -658,7 +659,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
   
      Folgende Werte müssen für den Registrierungsschlüssel festgelegt werden:  
   
-    |Name|Typ|Daten|  
+    |name|Typ|Daten|  
     |----------|----------|----------|  
     |(Standard)|REG_SZ|(Wert nicht festgelegt)|  
     |Klasse|REG_SZ|CustomDP.CustomDirectiveProcessor|  
@@ -666,16 +667,16 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
   
      Wenn Sie die Assembly im GAC gespeichert haben, sollten die Werte wie folgt aussehen:  
   
-    |Name|Typ|Daten|  
+    |name|Typ|Daten|  
     |----------|----------|----------|  
     |(Standard)|REG_SZ|(Wert nicht festgelegt)|  
     |Klasse|REG_SZ|CustomDP.CustomDirectiveProcessor|  
     |Assembly|REG_SZ|CustomDP.dll|  
   
-6.  Starten Sie Visual Studio neu.  
+6.  Starten Sie Visual Studio neu.  
   
-## <a name="testing-the-directive-processor"></a>Testen des Direktivenprozessors  
- Zum Testen des Direktivenprozessors müssen Sie eine Textvorlage erstellen, in der der Prozessor aufgerufen wird.  
+## <a name="testing-the-directive-processor"></a>Testen des Anweisungsprozessors  
+ Zum Testen des Anweisungsprozessors müssen Sie eine Textvorlage erstellen, in der der Prozessor aufgerufen wird.  
   
  In diesem Beispiel ruft die Textvorlage die Anweisung auf und übergibt im Namen eine XML-Datei, die Dokumentation für eine Klassendatei enthält.
   
@@ -744,7 +745,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
     > [!NOTE]
     >  Stellen Sie sicher, dass die Zeichenfolge ersetzen <`YOUR PATH>` durch den Pfad zu der Datei "DocFile.xml".  
   
-     Die Sprache der Textvorlage muss nicht mit der Sprache des Direktivenprozessors identisch sein.  
+     Die Sprache der Textvorlage muss nicht mit der Sprache des Anweisungsprozessors identisch sein.  
   
     ```csharp  
     <#@ assembly name="System.Xml" #>  
@@ -874,7 +875,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
     ```  
   
 ## <a name="adding-html-to-generated-text"></a>Hinzufügen von HTML zum generierten Text  
- Nachdem Sie den benutzerdefinierten Direktivenprozessor getestet haben, können Sie dem generierten Text HTML hinzufügen.  
+ Nachdem Sie den benutzerdefinierten Anweisungsprozessor getestet haben, können Sie dem generierten Text HTML hinzufügen.  
   
 #### <a name="to-add-html-to-the-generated-text"></a>So fügen Sie dem generierten Text HTML hinzu  
   

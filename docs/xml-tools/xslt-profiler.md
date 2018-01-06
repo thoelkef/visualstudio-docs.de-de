@@ -12,11 +12,12 @@ caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7f4dc0ee25ec338c93a9fd4bfcecb96126477f9d
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: 7523043e6d8f4acdff983de5d95fd9fd55d49504
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="xslt-profiler"></a>XSLT-Profiler
 Der XSLT-Profiler ist ein Leistungsanalyse-Profilertool, das Ihnen hilft, XSLT-Dokumente zu entwickeln und zu debuggen. Der XSLT-Profiler ermöglicht Entwicklern durch das Erstellen von ausführlichen XSLT-Leistungsberichten, leistungsbezogene XSLT-Codeprobleme zu messen und zu bewerten. Der XSLT-Profiler enthält nützliche Hinweise zu XSL- und XSLT-Stylesheetoptimierungen, die für XSLT-basierte Anwendungen wichtig sind, die eine optimale Leistung erfordern.  

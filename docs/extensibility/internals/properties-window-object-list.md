@@ -13,11 +13,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: dad79623bbc721c67c19a37436d2bf5e64b93c59
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: feec1e85287b3a1c24ce3c328227ba0455ae044b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="properties-window-object-list"></a>Liste der Eigenschaften im Fenster Objekt
 In der Objektliste der **Eigenschaften** Fenster ist eine Dropdown-Liste, die Ihnen ermöglicht, ändern Sie die Auswahl auf andere Objekte in mindestens einem ausgewählten Windows verfügbar. Wählen ein anderes Objekt aus, in dieser Liste löst einen Aufruf von <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer.SelectObjects%2A> um der Umgebung zu informieren, dass ein neues Objekt ausgewählt wurde. Die Informationen den **Eigenschaften** Fenster wird geändert, um die neu ausgewählte Objekt zugeordneten Eigenschaften anzuzeigen.  

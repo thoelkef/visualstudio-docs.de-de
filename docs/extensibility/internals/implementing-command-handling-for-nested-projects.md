@@ -13,11 +13,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a71da10ee4473f3fb542e0ce0e03891d60b75d34
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: e4ed9efab34a51bdfaacea1773a33637437b2ced
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="implementing-command-handling-for-nested-projects"></a>Implementieren von Befehlsbehandelung für geschachtelte-Projekte
 Die IDE Befehle, die durchlaufen werden kann übergeben, die <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> und die <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> Schnittstellen auf geschachtelte Projekte oder übergeordnete Projekte filtern oder überschreiben Sie die Befehle können.  
@@ -35,7 +36,7 @@ Die IDE Befehle, die durchlaufen werden kann übergeben, die <xref:Microsoft.Vis
   
     1.  Ruft die IDE die <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> Methode.  
   
-     – oder –  
+     - oder -  
   
     1.  Wenn der Befehl in einem Hierarchiefenster wie einen Menübefehl Kontextmenü im Projektmappen-Explorer, stammt die IDE Ruft die <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A> Methode für das Projekt übergeordnete.  
   

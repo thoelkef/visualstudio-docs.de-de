@@ -18,11 +18,12 @@ caps.latest.revision: "28"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d9c5d24c8a3a2bb81c87b2cc405a6885b8f23374
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: b87756f52cb1506be30014331d63eec5d15beff4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sdk-helpers-for-debugging"></a>SDK-Hilfsprogramme für das Debuggen
 Diese Funktionen und Deklarationen sind globale Hilfsfunktionen zum Implementieren von Debugmodule, ausdruckauswertung und Symbol-Anbieter in C++.  
@@ -54,7 +55,7 @@ HRESULT GetMetric(
 |---------------|-----------------|  
 |pszMachine|[in] Name eines möglicherweise Remotecomputers, deren Registrierung geschrieben werden (`NULL` bedeutet lokalen Computer).|  
 |pszType|[in] Einer der Metriken Typen.|  
-|guidSection|[in] GUID, der einem bestimmten Modul, bei der ausdrucksauswertung, Ausnahme usw.. Dies gibt einen Unterabschnitt unter einen metrischen Typ für ein bestimmtes Element an.|  
+|guidSection|[in] GUID, der einem bestimmten Modul, bei der ausdrucksauswertung, Ausnahme usw. Dies gibt einen Unterabschnitt unter einen metrischen Typ für ein bestimmtes Element an.|  
 |pszMetric|[in] Die Metrik abgerufen werden soll. Dies entspricht einem bestimmten Wertnamen.|  
 |pdwValue|[in] Der Speicherort des Werts aus der Metrik. Es gibt verschiedene Arten von GetMetric, die einen DWORD-Wert (wie in diesem Beispiel), einen BSTR, eine GUID oder ein Array von GUIDs zurückgeben können.|  
 |pszAltRoot|[in] Eine alternative Registrierungsstamm verwenden. Legen Sie auf `NULL` verwenden.|  
@@ -76,7 +77,7 @@ HRESULT SetMetric(
 |Parameter|Beschreibung|  
 |---------------|-----------------|  
 |pszType|[in] Einer der Metriken Typen.|  
-|guidSection|[in] GUID, der einem bestimmten Modul, bei der ausdrucksauswertung, Ausnahme usw.. Dies gibt einen Unterabschnitt unter einen metrischen Typ für ein bestimmtes Element an.|  
+|guidSection|[in] GUID, der einem bestimmten Modul, bei der ausdrucksauswertung, Ausnahme usw. Dies gibt einen Unterabschnitt unter einen metrischen Typ für ein bestimmtes Element an.|  
 |pszMetric|[in] Die Metrik abgerufen werden soll. Dies entspricht einem bestimmten Wertnamen.|  
 |dwValue|[in] Der Speicherort des Werts in der Metrik. Es gibt verschiedene Arten von SetMetric, die einen DWORD-Wert (in diesem Beispiel), einen BSTR, eine GUID oder ein Array von GUIDs speichern können.|  
 |fUserSpecific|[in] "True", wenn die Metrik benutzerspezifische ist und es in die Struktur des Benutzers anstelle der lokalen Struktur geschrieben werden soll.|  
@@ -97,7 +98,7 @@ HRESULT RemoveMetric(
 |Parameter|Beschreibung|  
 |---------------|-----------------|  
 |pszType|[in] Einer der Metriken Typen.|  
-|guidSection|[in] GUID, der einem bestimmten Modul, bei der ausdrucksauswertung, Ausnahme usw.. Dies gibt einen Unterabschnitt unter einen metrischen Typ für ein bestimmtes Element an.|  
+|guidSection|[in] GUID, der einem bestimmten Modul, bei der ausdrucksauswertung, Ausnahme usw. Dies gibt einen Unterabschnitt unter einen metrischen Typ für ein bestimmtes Element an.|  
 |pszMetric|[in] Die Metrik entfernt werden soll. Dies entspricht einem bestimmten Wertnamen.|  
 |pszAltRoot|[in] Eine alternative Registrierungsstamm verwenden. Legen Sie auf `NULL` verwenden.|  
   
@@ -267,7 +268,7 @@ HRESULT EnumMetricSections(
 |*[Registrierungsschlüssel]*|`HKEY_CURRENT_USER` oder `HKEY_LOCAL_MACHINE`.|  
 |*[Version Root]*|Die Version von Visual Studio (z. B. `7.0`, `7.1`, oder `8.0`). Diese Stamm kann jedoch auch geändert werden mithilfe der **/rootsuffix** wechseln Sie zur **devenv.exe**. Für VSIP, this-Modifizierer ist in der Regel **Exp**, deshalb ist der Stamm der Version, z. B. 8.0Exp.|  
 |*[Metrik Root]*|Dies liegt entweder an `AD7Metrics` oder `AD7Metrics(Debug)`, je nachdem, ob die Debugversion von dbgmetric.lib verwendet wird. **Hinweis:** , und zwar unabhängig davon, ob dbgmetric.lib verwendet wird, diese Benennungskonvention befolgen sollten eingehalten werden, wenn Sie Unterschiede zwischen Debug- und haben Versionen, die in der Registrierung berücksichtigt werden müssen.|  
-|*[Metrik Type]*|Der Typ des zu schreibenden Metrik: `Engine`, `ExpressionEvaluator`, `SymbolProvider`usw.. Diese sind alle definiert, wie in dbgmetric.h als `metricTypeXXXX`, wobei `XXXX` ist der Name der spezifischen Typ.|  
+|*[Metrik Type]*|Der Typ des zu schreibenden Metrik: `Engine`, `ExpressionEvaluator`, `SymbolProvider`usw. Diese sind alle definiert, wie in dbgmetric.h als `metricTypeXXXX`, wobei `XXXX` ist der Name der spezifischen Typ.|  
 |*[Metrik]*|Der Name der Eintrag ein Wert zugewiesen werden, um die Metrik festzulegen. Die tatsächliche Organisation der Metriken hängt von der Metrik Typ ab.|  
 |*[Metrikwert]*|Der Wert, der an der Metrik zugewiesen wird. Der Typ, der den Wert (Zeichenfolge, Zahl, usw.) aufweisen sollte hängt die Metrik aus.|  
   

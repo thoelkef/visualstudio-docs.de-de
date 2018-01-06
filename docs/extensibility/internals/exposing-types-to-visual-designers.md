@@ -16,11 +16,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4e79ec644426ed5068f79bb914b1202a800982cd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: a85648a95a6651ff62f50b2361b07feba9a58b47
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="exposing-types-to-visual-designers"></a>Verfügbarmachen von Typen in visuellen Designern
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]muss den Zugriff auf die Klasse und Typdefinition zur Entwurfszeit besitzen, einen visuellen Designer angezeigt. Klassen sind aus einem vordefinierten Satz von Assemblys geladen, die vollständige Abhängigkeit des aktuellen Projekts (Verweise sowie ihre Abhängigkeiten) enthalten. Es kann auch erforderlich sein für visuelle Designer zum Zugriff auf Klassen und Typen, die in von benutzerdefinierte Tools generierten definiert sind.  

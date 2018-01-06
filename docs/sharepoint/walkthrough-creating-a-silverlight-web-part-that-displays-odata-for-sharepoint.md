@@ -16,11 +16,12 @@ caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0a6999a7a390c207c184f26d36e0ca5d64d5fef5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 38b88dac0760c1935961bab662302dd60bc26e4a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-silverlight-web-part-that-displays-odata-for-sharepoint"></a>Exemplarische Vorgehensweise: Erstellen eines Silverlight-Webparts, das OData für SharePoint anzeigt
   SharePoint 2010 macht seine Daten mithilfe von OData. In SharePoint wird die OData-Dienst von RESTful-Dienst ListData.svc implementiert. In dieser exemplarischen Vorgehensweise wird gezeigt, wie einen SharePoint-Webpart erstellt, der eine Silverlight-Anwendung hostet. Die Silverlight-Anwendung zeigt Listen Sie Informationen zu SharePoint-Ankündigung mithilfe von ListData.svc. Weitere Informationen finden Sie unter [SharePoint Foundation-REST-Schnittstelle](http://go.microsoft.com/fwlink/?LinkId=225999) und [Open Data Protocol](http://go.microsoft.com/fwlink/?LinkId=226000).  
@@ -32,7 +33,7 @@ ms.lasthandoff: 10/31/2017
   
 -   Unterstützte Editionen von Microsoft Windows und SharePoint. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)][Anforderungen für die Entwicklung von SharePoint-Lösungen](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
   
--   [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)].  
+-   [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)]  
   
 ##  <a name="creating-a-silverlight-application-and-silverlight-web-part"></a>Erstellen einer Silverlight-Anwendung und die Silverlight-Webpart  
  Erstellen Sie zuerst eine Silverlight-Anwendung in Visual Studio. Die Silverlight-Anwendung ruft Daten aus der Liste der SharePoint-Ankündigungen mithilfe des ListData.svc-Diensts ab.  

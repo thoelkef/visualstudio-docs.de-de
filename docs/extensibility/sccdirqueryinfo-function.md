@@ -14,11 +14,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: aa1bc3624c8d03cfc484aaace906c2660c3a790e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c7a930c0fcdffbc76bba431012d76dd6d13686d0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sccdirqueryinfo-function"></a>SccDirQueryInfo-Funktion
 Diese Funktion überprüft eine Liste der vollständig qualifizierte Verzeichnisse für ihren aktuellen Status an.  

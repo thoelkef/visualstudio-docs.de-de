@@ -26,11 +26,12 @@ caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6a8b61477ae3b588b2aeadf1c9d99618151825f8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 3fc67e84ab9519e41c2c8eb8da29025da510bc6c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions"></a>Gewusst wie: Angeben von lokalisierten Namen, Eigenschaften und Berechtigungen mithilfe einer Ressourcendatei
   Mithilfe einer Ressourcendatei können Sie lokalisierte Namen bereitstellen, definieren Sie Eigenschaften und wenden Berechtigungen Tor-Objekte, die in einem Business Data Connectivity (BDC)-Modell definiert sind. Um diese Informationen anzugeben, fügen Sie eine **Business Data Connectivity-Ressource** Element aus, um ein Projekt mit einem **Business Data Connectivity-Modell** Element. Dann geben Sie Namen, Eigenschaften und Berechtigungen durch Bearbeiten den XML-Code für die Ressourcendatei.  

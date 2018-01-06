@@ -20,11 +20,12 @@ caps.latest.revision: "21"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: f8a60f9c4ca91ff9aac516d21b3a502a2898aff1
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: e2631a81cd907c6946993461f953a0bc1ddbf2ec
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="working-with-the-dsl-definition-diagram"></a>Arbeiten mit dem DSL-Definitionsdiagramm
 Das Diagramm eine [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] Definition ist ein wichtiges Tool für die Definition einer domänenspezifischen Sprache. Sie können Ihrem Domänenmodell Elemente hinzufügen und Beziehungen im Diagramm festlegen. Darüber hinaus können Sie das Layout des Diagramms ändern, um dieses besser lesbar zu machen.  
@@ -64,13 +65,13 @@ Das Diagramm eine [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] Definition ist
 ### <a name="expandcollapse-inheritance-tree"></a>Vererbungsstruktur erweitern/reduzieren  
  Wenn eine Domänenklasse die Basisklasse anderer Klassen für die Domäne ist, können Sie die Vererbungsstruktur ausblenden, indem Sie die Definition der Klasse mit der rechten Maustaste, und klicken Sie dann auf **reduzieren Vererbungsstruktur**. Klicken Sie zum Anzeigen der Vererbungsstruktur mit der rechten Maustaste in der Definition-Element, und klicken Sie dann auf **Vererbungsstruktur erweitern**.  
   
-### <a name="bring-tree-here"></a>Struktur verschieben  
+### <a name="bring-tree-here"></a>Bring Tree Here  
  Sie können das Diagramm konsolidieren, indem Sie mit der rechten Maustaste einer Platzhalter-Domain-Klasse, und klicken Sie dann auf **Struktur hier schalten**. Die Platzhalter-Domänenklasse wird zu einem Definitionselement und zeigt die Vererbungs- und Beziehungsstrukturen an. Das frühere Definitionselement wird zu einem Platzhalterelement, wenn es sich dabei um das Ziel einer Beziehung oder um das untergeordnete Element einer Vererbungsbeziehung handelt. Ansonsten wird es nicht länger angezeigt.  
   
-### <a name="split-tree"></a>Struktur teilen  
+### <a name="split-tree"></a>Split Tree  
  Sie können out vererbungs- oder Beziehungen Strukturen unterbrechen, indem mit der rechten Maustaste der Domänendefinition für die Klasse, die sie anzeigen und dann auf **Teilung Struktur**. Das Definitionselement wird zu einem Platzhalterelement, und die Definitionsdomänenklasse wird nun zusammen mit den entsprechenden Vererbungs- und Beziehungsstrukturen unten in der Partition angezeigt.  
   
-### <a name="show-as-class"></a>Als Klasse anzeigen  
+### <a name="show-as-class"></a>Show As-Klasse  
  Wenn einer domänenbeziehung Beziehungen abgeleitet wurde, oder wenn einbetten oder Verweis Beziehungen mit anderen zwischen Domänen bestehen, Sie die Beziehung als eine Klasse anzeigen können, indem die Beziehung mit der rechten Maustaste, und klicken Sie dann auf **als Klasse anzeigen** . Erscheint die Beziehung mit einer **Domäneneigenschaften** -Fach und die Strukturen Vererbung und Beziehungen angezeigt werden.  
   
 ## <a name="see-also"></a>Siehe auch  

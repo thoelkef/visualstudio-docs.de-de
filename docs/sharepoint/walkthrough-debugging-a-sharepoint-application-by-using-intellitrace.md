@@ -21,16 +21,17 @@ caps.latest.revision: "27"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a020b82dccd1491e0381bee8ff104b944d5cf7b0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 34ee1ca7d62a661f915edba1adc22c18f90256b6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-debugging-a-sharepoint-application-by-using-intellitrace"></a>Exemplarische Vorgehensweise: Debuggen einer SharePoint-Anwendung mithilfe von IntelliTrace
   Mit IntelliTrace können Sie SharePoint-Lösungen einfacher debuggen. Herkömmliche Debugger erstellen lediglich eine aktuelle Momentaufnahme der Lösung. Sie können mithilfe von IntelliTrace jedoch in der Lösung aufgetretene Ereignisse sowie den Kontext, in dem sie aufgetreten sind, überprüfen und zum Code navigieren.  
   
- Diese exemplarische Vorgehensweise veranschaulicht, wie ein SharePoint 2010- oder ein SharePoint 2013-Projekt in Visual Studio Ultimate debuggt wird, indem Sie Microsoft Monitoring Agent verwenden, um IntelliTrace-Daten bereitgestellter Anwendungen zu sammeln. Zum Analysieren dieser Daten muss Visual Studio Ultimate verwendet werden. Dieses Projekt integriert einen Funktionsempfänger, der bei aktivierter Funktion der Liste "Aufgaben" eine Aufgabe und der Liste "Ankündigungen" eine Ankündigung hinzufügt. Wenn die Funktion deaktiviert wird, wird die Aufgabe als abgeschlossen gekennzeichnet, und der Liste "Ankündigungen" wird eine zweite Ankündigung hinzugefügt. Die Prozedur enthält jedoch einen logischen Fehler, der verhindert, dass das Projekt ordnungsgemäß ausgeführt wird. Mit IntelliTrace können Sie den Fehler suchen und korrigieren.  
+ Diese exemplarische Vorgehensweise veranschaulicht, wie ein SharePoint 2010- oder ein SharePoint 2013-Projekt in Visual Studio Ultimate debuggt wird, indem Sie Microsoft Monitoring Agent verwenden, um IntelliTrace-Daten bereitgestellter Anwendungen zu sammeln. Zum Analysieren dieser Daten muss Visual Studio Ultimate verwendet werden. Dieses Projekt integriert einen Funktionsempfänger, der bei aktivierter Funktion der Liste „Aufgaben“ eine Aufgabe und der Liste „Ankündigungen“ eine Ankündigung hinzufügt. Wenn die Funktion deaktiviert wird, wird die Aufgabe als abgeschlossen gekennzeichnet, und der Liste "Ankündigungen" wird eine zweite Ankündigung hinzugefügt. Die Prozedur enthält jedoch einen logischen Fehler, der verhindert, dass das Projekt ordnungsgemäß ausgeführt wird. Mit IntelliTrace können Sie den Fehler suchen und korrigieren.  
   
  **Gilt für:** die Informationen in diesem Thema gelten für SharePoint 2010 und SharePoint 2013-Lösungen, die in Visual Studio erstellt wurden.  
   
@@ -253,7 +254,7 @@ ms.lasthandoff: 10/31/2017
  Wenn dem Funktionsempfänger der Code hinzugefügt wurde und der Datensammler ausgeführt wird, stellen Sie die SharePoint-Lösung bereit. Führen Sie sie aus, um die ordnungsgemäße Funktion zu testen.  
   
 > [!IMPORTANT]  
->  In diesem Beispiel wird ein Fehler im Ereignishandler "FeatureDeactivating" ausgelöst. Im weiteren Verlauf dieser exemplarischen Vorgehensweise suchen Sie diesen Fehler anhand der vom Datensammler erstellten .iTrace-Datei.  
+>  In diesem Beispiel wird ein Fehler im Ereignishandler „FeatureDeactivating“ ausgelöst. Im weiteren Verlauf dieser exemplarischen Vorgehensweise suchen Sie diesen Fehler anhand der vom Datensammler erstellten .iTrace-Datei.  
   
 #### <a name="to-test-the-project"></a>So testen Sie das Projekt  
   

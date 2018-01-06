@@ -22,11 +22,12 @@ caps.latest.revision: "49"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7a8da60aa9d9dc3ab7becb56b3b4c7701494daef
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 07d467d67c78f6779a8be2d21b266f8328e30ff7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-cache-data-for-use-offline-or-on-a-server"></a>Gewusst wie: Zwischenspeichern von Daten zur Offlineverwendung oder zur Verwendung auf einem Server
   Sie können ein Datenelement im Dokument zwischenspeichern markieren, damit er verfügbar ist offline. Dadurch auch möglich, dass die Daten in das Dokument durch anderen Code bearbeitet werden, wenn das Dokument auf einem Server gespeichert wird.  

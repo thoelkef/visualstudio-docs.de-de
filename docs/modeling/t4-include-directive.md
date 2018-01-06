@@ -11,11 +11,12 @@ caps.latest.revision: "6"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 4f46faae63d3fd60715ecd9aec804d03ef6dbc81
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 5d76ca47f0278306c16d6d5b15b964d6118318c5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="t4-include-directive"></a>T4-Include-Anweisung
 In einer Textvorlage in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] können Sie Text aus einer anderen Datei mit einer `<#@include#>`-Direktive einschließen. Sie können `include`-Direktiven an einer beliebigen Stelle in einer Textvorlage platzieren, und zwar vor dem ersten Klassenfunktionsblock `<#+ ... #>`. Die eingeschlossenen Dateien können auch `include`-Direktiven und andere Direktiven enthalten. Dadurch können Sie Vorlagencode und Text mit Codebausteinen zwischen Vorlagen freigeben.  

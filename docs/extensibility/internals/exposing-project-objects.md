@@ -15,11 +15,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f29ca84669f563da5733c8c07b219d498ccf6ded
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 668287dc8b0b5ac9dd37cb450582e3a56fb7f25e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="exposing-project-objects"></a>Verfügbarmachen von Projektobjekten
 Benutzerdefinierte Projekttypen können Automatisierungsobjekte bereitstellen, um den Zugriff auf das Projekt mithilfe der Automatisierungsschnittstellen zu ermöglichen. Jeder Projekttyp wird erwartet, dass den Standard bereitstellt <xref:EnvDTE.Project> Automatisierungsobjekt, das aus erfolgt <xref:EnvDTE.Solution>, enthält eine Auflistung aller Projekte, die in der IDE geöffnet sind. Jedes Element im Projekt zur Verfügung gestellt werden soll eine <xref:EnvDTE.ProjectItem> mit zugegriffene Objekt `Project.ProjectItems`. Zusätzlich zu diesen standard-Automatisierungsobjekte können Projekte projektspezifische Automatisierungsobjekte zu bieten.  

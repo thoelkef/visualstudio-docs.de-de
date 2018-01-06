@@ -13,11 +13,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9750d946a941e86a6c0a6973661f00f8f44cf9b5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: a5d66bf7670d5ba9b6423461bdb5e5482819592f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="application-of-settings-across-multiple-project-connections"></a>Anwendung der Einstellungen über mehrere Project-Verbindungen
 Ein Quellcodeverwaltungs-Plug-in kann mithilfe des Datenquellen-Steuerelement-Plug-in-API 1.2 erstellt einen Batchvorgang mithilfe der gleichen Quelle-Steuerungsvorgang über mehrere Projekte oder mehrere Verbindung Kontexte hinweg ausführen. Batches können zum Entfernen der redundante pro Projekt Dialogfelder von erforderlichen Erfahrungsgrad des Benutzers verwendet werden.  

@@ -16,11 +16,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c24765450d0bf8ffdab479bb28c822602892b595
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: a4ab4bd29c753fc03787fbbadbe106d2d8862b10
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="word-completion-in-a-legacy-language-service"></a>Wortvervollständigung in einen Legacy-Sprachdienst
 Wortvervollständigung füllt die fehlenden Zeichen für eine teilweise typisiertes Wort. Ist nur eine mögliche Abschluss, ist das Wort abgeschlossen, wenn die Beendigung Zeichen eingegeben wird. Wenn die partielle Wort mehr als eine Möglichkeit übereinstimmt, wird eine Liste von möglichen Abschlüssen angezeigt. Ein Abschluss Zeichen kann jedes Zeichen sein, die nicht für Bezeichner verwendet wird.  

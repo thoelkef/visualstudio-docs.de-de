@@ -15,11 +15,12 @@ caps.latest.revision: "24"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 925b504d8cba4813631d4f8ba6f7dbd9750f5eae
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 82555c861a6bf250a818b185de57fc48f143e4f3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="legacy-language-service-interfaces"></a>Legacy-Sprachdienst-Schnittstellen
 Für eine bestimmte Programmiersprache können nur eine Instanz eines Sprachdiensts zu einem Zeitpunkt vorhanden sein. Allerdings kann ein Dienst (einsprachig) mehr als einer der Redakteure dienen.  
@@ -44,7 +45,7 @@ Für eine bestimmte Programmiersprache können nur eine Instanz eines Sprachdien
 ## <a name="additional-language-service-interfaces"></a>Zusätzliche Sprachdienst-Schnittstellen  
  Andere Schnittstellen können mit dem Language-Dienst bereitgestellt werden. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]fordert eine separate Instanz dieser Schnittstellen für jede Instanz des Textpuffers. Aus diesem Grund sollten Sie jede dieser Schnittstellen in sein eigenes Objekt implementieren. Die folgende Tabelle zeigt die Schnittstellen, die eine Instanz pro Instanz des Text-Puffer erforderlich.  
   
-|Schnittstelle|Beschreibung|  
+|Interface|Beschreibung|  
 |---------------|-----------------|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager>|Verwaltet die Code-Fenster Zusatzelemente, z. B. die Dropdown-Leiste. Sie können diese Schnittstelle abrufen, indem Sie mit der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetCodeWindowManager%2A> Methode. Es ist eine <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager> pro Fenster "Code".|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer>|Färbt Programmiersprachen-Schlüsselworten und Trennzeichen. Sie können diese Schnittstelle abrufen, indem Sie mit der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetColorizer%2A> Methode. <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer>Paint Zeitpunkt aufgerufen wird. Vermeiden Sie rechenintensive Aufgaben innerhalb <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> oder konnte die Leistung darunter leiden.|  

@@ -28,11 +28,12 @@ caps.latest.revision: "25"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 569f177f23ce8c1e32441263b219f51d2305ca86
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 3c147fd683db68bed3b66f0eac146b8c98272d77
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="troubleshooting-sharepoint-packaging-and-deployment"></a>Problembehandlung beim SharePoint-Packen und -Bereitstellen
   In diesem Thema werden verschiedene Probleme behandelt, die beim Packen und Bereitstellen von SharePoint-Lösungen auftreten können.  
@@ -55,7 +56,7 @@ ms.lasthandoff: 10/31/2017
 |-----------|-----------------|  
 |Automatisch|Erkennt Konflikte und löst die Konflikte automatisch.|  
 |Eingabeaufforderung|Erkennt Konflikte und meldet sie dem Entwickler vor dem Lösen der Konflikte.|  
-|Keine|Konflikte werden nicht erkannt.|  
+|Keiner|Konflikte werden nicht erkannt.|  
   
 ## <a name="differences-between-f5-deployment"></a>Unterschiede bei der F5-Bereitstellung  
  Wenn Sie das SharePoint-Projekt mithilfe von [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] zum Testen und Debuggen auf dem lokalen SharePoint-Server bereitstellen, werden von [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] einige zusätzliche Schritte ausgeführt.  
@@ -72,7 +73,7 @@ ms.lasthandoff: 10/31/2017
  Wird ein visuelles Webpart unter [!INCLUDE[wiprlhext](../sharepoint/includes/wiprlhext-md.md)], [!INCLUDE[win7](../sharepoint/includes/win7-md.md)] oder [!INCLUDE[winsvr08](../sharepoint/includes/winsvr08-md.md)] im Ordner "Bin" bereitgestellt, dauert es sehr lang, bis die SharePoint-Seite angezeigt wird. Wenn Sie Dateien in einem [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)]-Verzeichnis der obersten Ebene (beispielsweise im Verzeichnis "Bin") ändern, wird die gesamte Webanwendung neu kompiliert. Dies kann dazu führen, dass die SharePoint-Seite mit einer Verzögerung von bis zu 25 Sekunden gerendert wird.  
   
 ### <a name="error-message"></a>Fehlermeldung  
- Keine.  
+ Keine  
   
 ### <a name="resolution"></a>Auflösung  
  Führen Sie die folgenden Schritte aus, um dieses Problem zu umgehen:  

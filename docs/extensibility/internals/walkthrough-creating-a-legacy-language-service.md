@@ -13,17 +13,18 @@ caps.latest.revision: "19"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 256a609dad857097731e4914a11623fe62ad7664
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 660d33dd2d5c46d8020172c1fcf74bfb64b43360
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-legacy-language-service"></a>Exemplarische Vorgehensweise: Erstellen eines Legacy-Sprachdiensts
 Verwenden der verwalteten Package Framework (MPF)-Language-Klassen zum Implementieren Sie eines Sprachdiensts in [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] ist einfach. Sie benötigen eine VSPackage zum Hosten des Sprachdiensts, der Sprachdienst selbst und einen Parser für Ihre Sprache aus.  
   
 ## <a name="prerequisites"></a>Erforderliche Komponenten  
- Um dieser exemplarischen Vorgehensweise folgen zu können, müssen Sie das Visual Studio SDK installieren. Weitere Informationen finden Sie unter [Visual Studio SDK](../../extensibility/visual-studio-sdk.md).  
+ Um diese exemplarische Vorgehensweise befolgen zu können, müssen Sie das Visual Studio SDK installieren. Weitere Informationen finden Sie unter [Visual Studio SDK](../../extensibility/visual-studio-sdk.md).  
   
 ## <a name="locations-for-the-visual-studio-package-project-template"></a>Speicherorte für die VSPackage-Projektvorlage  
  Die Visual Studio-Paket-Projektvorlage finden Sie in die Speicherorte für drei verschiedene Vorlagen in die **neues Projekt** (Dialogfeld):  

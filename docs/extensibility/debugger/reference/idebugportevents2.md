@@ -14,11 +14,12 @@ caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 75e0b83b81c0d0d80b29c6b9ab32826402fcec99
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 0a5782f0a50ac37b45c4b7e3402bcdded96b4683
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugportevents2"></a>IDebugPortEvents2
 Diese Schnittstelle wird einen Listener (in der Regel der Sitzung Debug-Manager [SDM] oder ein Debugging-Modul) von Prozess- und Programm erstellen und Zerstören eines bestimmten Ports benachrichtigt. Diese Informationen können verwendet werden, um eine Echtzeitansicht von der ausgeführten Prozessen und Programmen auf den Port vorhanden.  

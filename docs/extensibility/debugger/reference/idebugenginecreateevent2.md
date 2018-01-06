@@ -14,11 +14,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b98b21e3e3220da2a42609c9344e24867ab11828
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5a49af7e9cec830ae3ecfb94ac07dfba68fe8344
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugenginecreateevent2"></a>IDebugEngineCreateEvent2
 Debugging-Modul (DE) sendet diese Schnittstelle zu der Sitzung Debug-Manager (SDM), wenn eine Instanz des DE erstellt wird.  

@@ -13,11 +13,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7f863377f326dd7bd62381a34c6236d938b11505
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 93eb993877d464f4303e0b49dc7219425c1a5f6a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="modifying-the-isolated-shell-by-using-the-pkgundef-file"></a>Ändern von Isolated Shell mithilfe der. Pkgundef-Datei
 Sie können die Datei .pkgundef zum Ausschließen der Einträge in der Registrierung angegebenen aus einer isolierten shellanwendung ändern. In der Regel kopiert eine Anwendung auf einem Computer gestartet wird zum ersten Mal die Visual Studio-Shell die vorhandenen Visual Studio-Registrierungseinträge in den Stamm-Registrierungsschlüssel für die Anwendung. Dies schließt alle Verweise auf die derzeit installierte VSPackages.  

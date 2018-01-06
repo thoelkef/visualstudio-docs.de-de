@@ -16,11 +16,12 @@ caps.latest.revision: "44"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b12a52101feebcfac08c7672834d9d7c65d41c55
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 96f6e6f27938635628db66f2a6eb58a56cee0d18
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2"></a>Exemplarische Vorgehensweise: Erstellen eines Projektelements "Benutzerdefinierte Aktion" mit einer Elementvorlage, Teil 2
   Nachdem Sie einen benutzerdefinierten Typ des SharePoint-Projektelements definiert und ordnen es mit einer Elementvorlage in Visual Studio, möchten Sie möglicherweise auch einen Assistenten für die Vorlage bereitzustellen. Sie können den Assistenten verwenden, Informationen von Benutzern sammeln, wenn sie Ihre Vorlage verwenden, um eine neue Instanz des Projektelements zu einem Projekt hinzuzufügen. Mit den gesammelten Informationen kann das Projektelement initialisiert werden.  

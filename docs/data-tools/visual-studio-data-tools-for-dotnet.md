@@ -12,16 +12,19 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: bc63c636d58bcde7aefeb7d35939008387bb6808
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload:
+- data-storage
+- dotnet
+ms.openlocfilehash: 6c1558c591c982673015af4eaf4e50bc9a81f7d4
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="visual-studio-data-tools-for-net"></a>Visual Studio-Tools mit Daten für .NET
 Visual Studio und .NET Framework geben zusammen eine umfangreiche API und toolunterstützung ist für das Herstellen einer Verbindung mit Datenbanken und Modellieren von Daten im Arbeitsspeicher zum Anzeigen der Daten in der Benutzeroberfläche. .NET Framework-Klassen, die Datenzugriffs-Funktionalität bereitstellen, werden als bezeichnet [ADO.NET](/dotnet/framework/data/adonet/index). ADO.NET, zusammen mit den Daten in Visual Studio-Tools wurde ursprünglich entworfen, in erster Linie zum Unterstützen von relationalen Datenbanken und XML. Heutzutage bieten viele NoSQL-Datenbankhersteller oder Drittanbieter, ADO.NET-Anbietern.  
   
-[.NET Core](https://www.dotnetfoundation.org/netcore) ADO.NET, mit Ausnahme von Datasets und verwandte Typen unterstützt. Wenn Sie .NET Core als Ziel dient, erfordern eine ORM (Objektrelationales Mapping)-Ebene verwenden [Entity Framework Core](https://docs.microsoft.com/ef/core/).  
+[.NET Core](https://www.dotnetfoundation.org/netcore) ADO.NET, mit Ausnahme von Datasets und verwandte Typen unterstützt. Wenn Sie .NET Core als Ziel dient, erfordern eine ORM (Objektrelationales Mapping)-Ebene verwenden [Entity Framework Core](/ef/core/).  
   
 Das folgende Diagramm zeigt eine vereinfachte Ansicht die grundlegende Architektur:  
   

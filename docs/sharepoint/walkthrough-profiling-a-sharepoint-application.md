@@ -20,11 +20,12 @@ caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0b2785e69bbfd6dff17f73b9840b88ad48454e0b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: a3c152640963da1414c34770fff68645e33098ce
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-profiling-a-sharepoint-application"></a>Exemplarische Vorgehensweise: Profilerstellung für eine SharePoint-Anwendung
   In dieser exemplarischen Vorgehensweise wird die Verwendung von Profilerstellungstools in Visual Studio gezeigt, um die Leistung einer SharePoint-Anwendung zu optimieren. Bei der Beispielanwendung handelt es sich um einen SharePoint-Funktionsereignisempfänger, der eine Leerlaufschleife enthält, welche die Leistung des Funktionsereignisempfängers reduziert. Der Visual Studio-Profiler ermöglicht es Ihnen, Auffinden und beseitigen die teuerste (langsamsten) Bestandteile des Projekts, auch bekannt als die *Langsamster Pfad*.  
@@ -46,7 +47,7 @@ ms.lasthandoff: 10/31/2017
   
 -   Unterstützte Editionen von Microsoft Windows und SharePoint. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)][Anforderungen für die Entwicklung von SharePoint-Lösungen](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
   
--   [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)].  
+-   [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)]  
   
 ## <a name="creating-a-sharepoint-project"></a>Erstellen eines SharePoint-Projekts  
  Erstellen Sie zunächst eine SharePoint-Projekt.  

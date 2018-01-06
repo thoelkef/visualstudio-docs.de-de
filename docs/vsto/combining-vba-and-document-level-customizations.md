@@ -29,11 +29,12 @@ caps.latest.revision: "36"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b7dd65878844e5c903b18c08e6dd5455f3dccb91
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: e8c9a3e0abdf478d6280795cd17b9b9a0bea0a13
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="combining-vba-and-document-level-customizations"></a>Kombinieren von VBA und Anpassungen auf Dokumentebene
   Sie können VBA-Code (Visual Basic for Applications) in einem Dokument verwenden, das Teil einer Dokumentebenenanpassung für Microsoft Office Word oder Microsoft Office Excel ist. Sie können VBA-Code im Dokument über die Anpassungsassembly aufrufen, oder Sie können für Ihr Projekt die Aktivierung des VBA-Codes im Dokument konfigurieren, um Code in der Anpassungsassembly aufzurufen.  
@@ -147,7 +148,7 @@ Sub MyMacro()
 End Sub  
 ```  
   
- Diese Eigenschaft ist ein bequemerer Weg zum Aufrufen der Anpassungsassembly als die direkte Verwendung der `GetManagedClass` -Methode. `CallVSTOAssembly` gibt ein Objekt zurück, das für die Hostelementklasse steht, die Sie für VBA verfügbar gemacht haben. Die Member und Methodenparameter des zurückgegebenen Objekts werden in IntelliSense angezeigt.  
+ Diese Eigenschaft ist ein bequemerer Weg zum Aufrufen der Anpassungsassembly als die direkte Verwendung der `GetManagedClass`-Methode. `CallVSTOAssembly` gibt ein Objekt zurück, das für die Hostelementklasse steht, die Sie für VBA verfügbar gemacht haben. Die Member und Methodenparameter des zurückgegebenen Objekts werden in IntelliSense angezeigt.  
   
  Die `CallVSTOAssembly` -Eigenschaft verfügt über eine Deklaration, die dem folgenden Code ähnelt. In diesem Code wird vorausgesetzt, dass Sie die `Sheet1` -Hostelementklasse in einem Excel-Arbeitsmappenprojekt mit dem Namen `ExcelWorkbook1` für VBA verfügbar gemacht haben.  
   

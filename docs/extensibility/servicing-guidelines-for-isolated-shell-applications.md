@@ -16,11 +16,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7e15d228794fb03441d42c081f11bf75b11fdd45
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 2c5c8bc626f8a6aabe7fbc450067667d301f11c8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="servicing-guidelines-for-isolated-shell-applications"></a>Wartung von Richtlinien für Isolated Shell-Anwendungen
 Wenn Sie eine Visual Studio isolated Shell-Anwendung verteilen, müssen Sie möglicherweise für Ihre Anwendung von Softwareupdates bereitstellen, nach der Installation. Zu diesem Zweck müssen Sie die Anwendung mithilfe einer Microsoft Installer (MSI)-Datei installieren. Diese Art der Installation kann Softwareupdates von Microsoft vom Webdienst verteilt werden bereitgestellt herunterladen und Ihre Kunden ohne Zutun des benutzerdefinierten genutzt.  

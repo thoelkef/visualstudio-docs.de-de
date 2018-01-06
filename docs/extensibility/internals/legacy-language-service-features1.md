@@ -13,11 +13,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cc29529c7ba499cdc7291078774b9f546a3a08ca
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 12acd0690c11e61baedf358dec193e4f6da601e8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="legacy-language-service-features"></a>Legacy-Dienst-Sprachfunktionen
 Mindestens ein verwalteten Package Framework (MPF)-Sprachdienst unterstützen [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Funktionen, z. B. syntaxhervorhebung, IntelliSense und Validierung der Haltepunkt. Jede Funktion kann unabhängig von den anderen implementiert werden, aber alle erfordern einen Parser und einen Scanner mit Ausnahme von syntaxhervorhebung, der nur einen Scanner erforderlich ist.  

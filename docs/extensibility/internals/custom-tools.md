@@ -16,11 +16,12 @@ caps.latest.revision: "21"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7c198065c72f1e6eaa0722de562abe6079f88aa1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 7589c9a2aedf987af79689e8babccb554fbb4ccc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="custom-tools"></a>Benutzerdefinierte Tools
 *Benutzerdefinierte Tools* können Sie ein Element in einem Projekt ein Tool zuordnen, und führen Sie dieses Tool aus, bei jedem Speichern die Datei. Bestimmte benutzerdefinierte Tools, auch bezeichnet als *Einzeldatei Generatoren*, häufig zum Konvertierer implementieren, das Generieren von Code aus Daten und umgekehrt verwendet werden. Z. B. Einzeldatei Generatoren erstellen [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] und [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] Quellcode aus der "Settings" und RESX-Dateien. Die generierten Quellcode stellt stark typisierten Zugriffs auf die Daten in den "Settings" und RESX-Dateien bereit. Die [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] und [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] Projekttypen unterstützen benutzerdefinierte Tools; [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] Projekttypen nicht der Fall. Eigene Projekttypen können auch benutzerdefinierte Tools unterstützen.  

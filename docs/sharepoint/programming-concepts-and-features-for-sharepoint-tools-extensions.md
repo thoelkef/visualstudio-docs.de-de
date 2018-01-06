@@ -16,11 +16,12 @@ caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f6d6f3ae5608d8092fbeb065867ae04db4e04c95
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 7030893cfb108a497ec167586fb90f5e88e61003
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="programming-concepts-and-features-for-sharepoint-tools-extensions"></a>Programmierkonzepte und Funktionen für Erweiterungen für SharePoint-Tools
   Es gibt einige wichtige Programmierkonzepte und Funktionen, die auf die SharePoint-Tools in Visual Studio verknüpft sind. Diese Konzepte und Funktionen spielt eine wichtige Rolle in den meisten SharePoint-Tools-Erweiterungen.  

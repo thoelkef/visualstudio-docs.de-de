@@ -12,11 +12,12 @@ caps.latest.revision: "4"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1f9811440146e1d758158a64fd227ba0a2c2e1e4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: b292593c6a6c426bb184acd67a920b5e76e3a51f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="net-compiler-platform-quotroslynquot-extensibility"></a>.NET Compiler Platform (&quot;Roslyn&quot;) Erweiterbarkeit
 Core Mission von .NET Compiler Platform ("Roslyn") ist die C#- und Visual Basic-Compiler öffne und Tools ermöglichen und Entwicklern zur Freigabe in den Compilern umfassende Informationen zu Programmen haben. Codeanalysetools Verbessern der Codequalität und code-Generatoren, die bei der anwendungskonstruktion Ursachenanalyse. Wie Tools intelligentere erhalten, müssen Zugriff auf mehr und mehr Kenntnisse besitzen nur Compiler Tiefe Code. Anstatt deckend Übersetzer (im Quellcode und Objektcode out) bieten die Roslyn-Compiler-APIs, die Sie für Aufgaben im Zusammenhang mit dem Code in die Tools und Anwendungen verwenden können.  

@@ -13,11 +13,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ab632bc7db06f01c6a88070a065c6939e4dbb91f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 02996f28ca502359d9a2d71cfbf11a913f2bf51e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugfirewallconfigurationcallback2"></a>IDebugFirewallConfigurationCallback2
 Ermöglicht ein Debugmodul DCOM verwendet wird, um Unterstützung bitten, die die [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] UI, um sicherzustellen, dass der Firewall kein Remotedebuggen blockiert wird.  

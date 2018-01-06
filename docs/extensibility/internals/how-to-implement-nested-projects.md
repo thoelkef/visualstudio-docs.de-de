@@ -15,11 +15,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 26456122d8b2cb0e89cfcda929cf68306959a31e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 757668070daacb449a6bc7cbd88ae629fe6487a5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-implement-nested-projects"></a>Vorgehensweise: Implementieren von geschachtelten Projekte
 Bei der Erstellung ein geschachtelten Projekts vorhanden sind eine einige zusätzliche Schritte erforderlich, die implementiert werden müssen. Ein übergeordnetes Projekt werden einige der gleichen Aufgaben, die die Lösung für die geschachtelte (untergeordnete) Projekte hinzugefügt. Übergeordnetes Projekt ist ein Container für Projekte einer Projektmappe ähnelt. Es gibt insbesondere mehrere Ereignisse, die von der Lösung und von den übergeordneten Projekten zum Erstellen der Hierarchie von geschachtelten Projekten potenziert werden müssen. Diese Ereignisse werden in der folgende Vorgang zum Erstellen von geschachtelten Projekten beschrieben.  

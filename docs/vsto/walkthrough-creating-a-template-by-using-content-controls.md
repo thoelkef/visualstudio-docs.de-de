@@ -19,11 +19,12 @@ caps.latest.revision: "46"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7edb589551f888427be6abcbb8f86c2e86b4349c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 8508f12d0e0bbf6dbabc0c12f8e5feb8d7d11d1b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-template-by-using-content-controls"></a>Exemplarische Vorgehensweise: Erstellen einer Vorlage mithilfe von Inhaltssteuerelementen
   Diese exemplarische Vorgehensweise veranschaulicht, wie eine Anpassung auf Dokumentebene erstellt wird, die Inhaltssteuerelemente zum Erstellen strukturierter und wiederverwendbarer Inhalte in einer Microsoft Office Word-Vorlage verwendet.  

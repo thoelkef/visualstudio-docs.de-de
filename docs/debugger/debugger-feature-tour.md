@@ -13,11 +13,12 @@ caps.latest.revision: "1"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b7edb1428d3dedbbe6341427e28964559d9750b1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 91b7ff9ea0b5caae46715894016469fadecaa098
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="feature-tour-of-the-visual-studio-debugger"></a>Feature Überblick über die Visual Studio-Debugger
 
@@ -192,6 +193,26 @@ Ausnahmen-Hilfe ist eine großartige Funktion, die Sie beim Debuggen von Fehlern
 > Ausnahmen-Hilfe ersetzt der Ausnahmen-Assistent in [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
 
 Erweitern Sie die **Ausnahmeeinstellungen** Knoten, um weitere Optionen zum Behandeln dieser Ausnahmetyp, aber Sie müssen nicht ändert nichts für diesen Überblick!
+
+## <a name="debug-live-aspnet-apps-in-azure-app-service"></a>Debuggen von Livedaten ASP.NET-apps in Azure App Service
+
+die **Momentaufnahme Debugger** eine Momentaufnahme Ihrer Anwendungen in Produktion aufgenommen, wenn Code, der Sie interessiert sind, ausgeführt. Legen Sie Andockpunkte und Protokollpunkte in Ihrem Code fest, um den Debugger anzuweisen, eine Momentaufnahme zu erstellen. Der Debugger zeigt Fehler ohne Auswirkungen auf den Datenverkehr Ihrer Produktionsanwendung an. Der Momentaufnahmedebugger kann Sie dabei unterstützen, die Zeit zum Beheben von Fehlern, die in Produktionsumgebungen auftreten, erheblich zu reduzieren.
+
+![Starten des Debuggers Momentaufnahme](../debugger/media/snapshot-launch.png "Starten des Debuggers Momentaufnahme")
+
+Momentaufnahme-Auflistung ist verfügbar für ASP.NET-Anwendungen in Azure App Service ausgeführt. ASP.NET-Anwendungen müssen ausgeführt werden, auf .NET Framework 4.6.1 oder höher, und ASP.NET Core-Anwendungen müssen auf .NET Core 2.0 oder höher auf Windows ausgeführt werden.
+
+Weitere Informationen finden Sie unter [live ASP.NET-apps, die mit der Snapshot-Debugger Debuggen](../debugger/debug-live-azure-applications.md).
+
+## <a name="view-snapshots-with-intellitrace-step-back-visual-studio-enterprise"></a>Anzeigen von Momentaufnahmen mit IntelliTrace Schritt hinten (Visual Studio Enterprise)
+
+**IntelliTrace Schritt hinten** automatisch Schritt Ereignis wird eine Momentaufnahme der Anwendung auf jedem haltepunktereignissen und den Debugger. Durch die erfassten Momentaufnahmen können Sie zu vorherigen Haltepunkten oder Schritten zurückkehren und sich den Zustand der Anwendung so anzeigen lassen, wie er zuvor war. Mit dem IntelliTrace-Feature „Step-back“ können Sie Zeit sparen, wenn Sie den vorherigen Zustand der Anwendung anzeigen oder diesen wiederherstellen, aber das Debuggen nicht erneut starten möchten.
+
+Sie können Momentaufnahmen anzeigen und durch diese navigieren, indem Sie die Schaltflächen **Schritt zurück** und **Schritt vor** in der Debugsymbolleiste verwenden. Mit diesen Schaltflächen können Sie durch die Ereignisse navigieren, die in der Registerkarte **Ereignisse** des Fensters **Diagnosetools** angezeigt werden.
+
+![Schrittweise rückwärts und Vorwärts-Schaltflächen](../debugger/media/intellitrace-step-back-icons-description.png  "Schritt rückwärts und Vorwärts-Schaltflächen")  
+
+Weitere Informationen finden Sie auf der Seite [View snapshots using IntelliTrace step-back (Anzeigen von Momentaufnahmen mithilfe des IntelliTrace-Features „Step-back“)](../debugger/how-to-use-intellitrace-step-back.md).
 
 ## <a name="more-features-to-look-at"></a>Weitere Features ansehen
 

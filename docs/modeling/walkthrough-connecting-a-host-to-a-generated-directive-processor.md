@@ -14,11 +14,12 @@ caps.latest.revision: "47"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 07b1e70775638d88e67280f2f914412ef4271a48
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 26903dad4c1218d0d9ba389322351eb629f6f31a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-connecting-a-host-to-a-generated-directive-processor"></a>Exemplarische Vorgehensweise: Verbinden eines Hosts mit einem generierten Direktivenprozessor
 Sie können einen eigenen Host schreiben, der Textvorlagen verarbeitet. Ein einfacher benutzerdefinierter Host wird veranschaulicht, [Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Textvorlagenhosts](../modeling/walkthrough-creating-a-custom-text-template-host.md). Erweitern Sie die diesem Host zum Hinzufügen von Funktionen, z. B. das Generieren von mehreren Ausgabedateien.  
@@ -37,7 +38,7 @@ Sie können einen eigenen Host schreiben, der Textvorlagen verarbeitet. Ein einf
 -   Testen des benutzerdefinierten Hosts mit der generierten Direktivenprozessor.  
   
 ## <a name="prerequisites"></a>Erforderliche Komponenten  
- Zum Definieren einer DSL müssen folgende Komponenten installiert sein:  
+ Zur Definition einer DSL müssen folgende Komponenten installiert sein:  
   
 |||  
 |-|-|  

@@ -22,11 +22,12 @@ caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 80f9770fe0e6a0294ec43e450acc75f55b8ddbe2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: ed085a38b77f7c323451e8209902bece3747ddb1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="replaceable-parameters"></a>Ersetzbare Parameter
   Ersetzbare Parameter oder *Token*, können in Projektdateien verwendet werden, um Werte für SharePoint-Projektmappenelemente bereitzustellen, deren tatsächliche Werte zur Entwurfszeit nicht bekannt sind. Sie sind Funktion ähnelt dem Standard [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] vorlagentoken. Weitere Informationen finden Sie unter [Vorlagenparameter](/visualstudio/ide/template-parameters).  
@@ -55,7 +56,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="tokens-list"></a>Tokenliste  
  Die folgende Tabelle enthält die verfügbaren Token.  
   
-|Name|Beschreibung|  
+|name|Beschreibung|  
 |----------|-----------------|  
 |$SharePoint.Project.FileName$|Der Name der enthaltenden Projektdatei, z. B. "NewProj.csproj".|  
 |$SharePoint.Project.FileNameWithoutExtension$|Der Name der enthaltenden Projektdatei ohne die Dateinamenerweiterung. Zum Beispiel: "NewProj".|  

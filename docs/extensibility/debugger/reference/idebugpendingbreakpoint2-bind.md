@@ -16,11 +16,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: de0efa5d070943f9cdface4f9864f2d95660c0ea
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 4c9cca2395ce058d453f084d4e735d7c6325f264
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugpendingbreakpoint2bind"></a>IDebugPendingBreakpoint2::Bind
 Diese ausstehenden Haltepunkts an eine oder mehrere Codepositionen gebunden.  
@@ -43,7 +44,7 @@ int Bind();
 ## <a name="remarks"></a>Hinweise  
  Wenn diese Methode aufgerufen wird, sollten eine Debugging-Modul (DE) versuchen, ausstehenden Haltepunkts an alle Codepositionen gebunden, die mit übereinstimmen.  
   
- Nach dem Beenden dieser Methode muss des Aufrufers Ereignisse, die angibt, dass der ausstehende Haltepunkt gebunden wurde oder fehlerhaft. vor dem vorausgesetzt ist, die Aufrufe zu warten, bis die [EnumBoundBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md) oder [EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md)-Methoden Auflisten aller Haltepunkte gebunden oder Fehler, bzw..  
+ Nach dem Beenden dieser Methode muss des Aufrufers Ereignisse, die angibt, dass der ausstehende Haltepunkt gebunden wurde oder fehlerhaft. vor dem vorausgesetzt ist, die Aufrufe zu warten, bis die [EnumBoundBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md) oder [EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md)-Methoden Auflisten aller Haltepunkte gebunden oder Fehler, bzw.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)   

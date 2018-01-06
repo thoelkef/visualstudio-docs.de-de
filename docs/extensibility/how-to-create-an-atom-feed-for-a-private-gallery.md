@@ -15,14 +15,15 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b41cb3012b937ac5448b129657064cca68a5d725
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: b54181205c98445fef393993d683085cc3afbcba
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-an-atom-feed-for-a-private-gallery"></a>Vorgehensweise: erstellen ein Atom-Feed für einen privaten Katalog
-Sie erstellen eine Atom (RSS-Feeds) in einem Intranetspeicherort, die Erweiterungen enthält, und fügen den Feed auf **Erweiterungen und Updates** als privater Katalog. Weitere Informationen finden Sie unter [Private Kataloge](../extensibility/private-galleries.md).  
+Sie erstellen eine Atom (RSS-Feeds) in einem Intranetspeicherort, die Erweiterungen enthält, und fügen den Feed auf **Erweiterungen und Updates** als privater Katalog. Weitere Informationen finden Sie unter [Private Galleries](../extensibility/private-galleries.md).  
   
 ## <a name="creating-an-atom-feed"></a>Erstellen einen Atom-Feed  
  Um einen Atom-feed als privater Katalog zu erstellen, erfassen Sie zuerst Ihre Erweiterungen (VSIX-Dateien) in einen Ordner. Sie können diese in Unterordnern organisieren, wenn Sie möchten. Sie benötigen außerdem die folgenden Ressourcen:  

@@ -13,11 +13,12 @@ caps.latest.revision: "25"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 016e609acb7ad837580b4cabb6055169ac7357c2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ec87a48e61ee69e01032c3b702ae21d6944eee92
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2015"></a>Vorgehensweise: Migrieren von Erweiterungsprojekte für Visual Studio 2015
 Hier wird erklärt, wie die Erweiterung zu aktualisieren.  
@@ -45,7 +46,7 @@ Hier wird erklärt, wie die Erweiterung zu aktualisieren.
   
 2.  Entfernen Sie die Verweisassemblys VS-SDK aus dem Projekt, indem Sie sie auswählen, mit der rechten Maustaste und **entfernen**.  
   
-3.  Fügen Sie die NuGet-Versionen von VS-SDK-Verweisassemblys hinzu.  In der die **Projektmappen-Explorer Verweise** geöffneten Knoten die **NuGet-Pakete verwalten...**  Dialogfeld.  Wenn Sie weitere Informationen zu diesem Dialogfeld erfahren möchten, finden Sie unter [Paket-Manager-UI](http://docs.microsoft.com/NuGet/Tools/Package-Manager-UI). Die Verweisassemblys VS-SDK sind auf veröffentlichte [nuget.org](http://www.nuget.org) von [VisualStudioExtensibility](http://www.nuget.org/profiles/VisualStudioExtensibility).  
+3.  Fügen Sie die NuGet-Versionen von VS-SDK-Verweisassemblys hinzu.  In der die **Projektmappen-Explorer Verweise** geöffneten Knoten die **NuGet-Pakete verwalten...**  Dialogfeld.  Wenn Sie weitere Informationen zu diesem Dialogfeld erfahren möchten, finden Sie unter [Paket-Manager-UI](/NuGet/Tools/Package-Manager-UI). Die Verweisassemblys VS-SDK sind auf veröffentlichte [nuget.org](http://www.nuget.org) von [VisualStudioExtensibility](http://www.nuget.org/profiles/VisualStudioExtensibility).  
   
 4.  Mit **nuget.org** als Ihre **Paketquelle**, suchen Sie nach den Namen des NuGet-Paket die entspricht der gewünschten Verweisassembly (z. B.: Microsoft.VisualStudio.Shell.14.0) und installieren Sie es in Ihrer Projekt.  NuGet kann mehrere Verweisassemblys hinzufügen, um die ursprüngliche Assembly Abhängigkeiten zu erfüllen.  
   

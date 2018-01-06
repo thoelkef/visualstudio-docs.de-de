@@ -25,11 +25,12 @@ caps.latest.revision: "28"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cd90fbaf4e8f16d1975cbc540bedf2c1e26c018c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 6e8af98ecf48c01a7c81afad54398afdfdc8456b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="office-development-samples-and-walkthroughs"></a>Beispiele und exemplarische Vorgehensweisen für die Programmierung mit Office
   Dieser Abschnitt erläutert anhand von Beispielanwendungen, Beispielcode und schrittweise beschriebenen exemplarischen Vorgehensweisen die Syntax, die Struktur und die Verfahren, die Sie zum Erstellen von Microsoft Office-Projektmappen benötigen.  

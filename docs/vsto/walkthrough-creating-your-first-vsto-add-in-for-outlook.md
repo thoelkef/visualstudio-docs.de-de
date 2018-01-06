@@ -20,11 +20,12 @@ caps.latest.revision: "28"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 514e6e0f52867b586135050d555508caec8cb6e6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: a5fb633d58485ab605cbfed1d3bddeb7b70e100f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-your-first-vsto-add-in-for-outlook"></a>Exemplarische Vorgehensweise: Erstellen des ersten VSTO-Add-Ins für Outlook
   Diese exemplarische Vorgehensweise veranschaulicht die Erstellung eines VSTO-Add-Ins für Microsoft Office Outlook. Die in dieser Art von Projektmappe erstellten Features sind für die Anwendung selbst verfügbar. Dabei spielt es keine Rolle, welches Outlook-Element geöffnet sind. Weitere Informationen finden Sie unter [Übersicht über die Entwicklung von Office-Lösungen &#40; VSTO- &#41; ](../vsto/office-solutions-development-overview-vsto.md).  
@@ -79,7 +80,7 @@ ms.lasthandoff: 10/31/2017
   
 #### <a name="to-add-text-to-the-subject-and-body-of-each-new-mail-message"></a>So fügen Sie der Betreffzeile und dem Textkörper jeder neuen E-Mail Text hinzu  
   
-1.  Deklarieren Sie in der ThisAddIn-Codedatei ein Feld namens `inspectors` in der `ThisAddIn` -Klasse. Das `inspectors` -Feld behält einen Verweis auf die Auflistung von Inspektor-Fenstern in der aktuellen Outlook-Instanz. Dieser Verweis verhindert, dass der Garbage Collector den Speicher freigibt, der den Ereignishandler für das <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> -Ereignis enthält.  
+1.  Deklarieren Sie in der ThisAddIn-Codedatei ein Feld namens `inspectors` in der `ThisAddIn` -Klasse. Das`inspectors`-Feld behält einen Verweis auf die Auflistung von Inspektor-Fenstern in der aktuellen Outlook-Instanz. Dieser Verweis verhindert, dass der Garbage Collector den Speicher freigibt, der den Ereignishandler für das <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> -Ereignis enthält.  
   
      [!code-vb[Trin_OutlookAddInTutorial#1](../vsto/codesnippet/VisualBasic/Trin_OutlookAddInTutorial/ThisAddIn.vb#1)]
      [!code-csharp[Trin_OutlookAddInTutorial#1](../vsto/codesnippet/CSharp/Trin_OutlookAddInTutorial/ThisAddIn.cs#1)]  

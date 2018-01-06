@@ -17,11 +17,12 @@ caps.latest.revision: "35"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 55ba59a5a29181dfa3cdd70427720293582a648d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 3c3201c032d0cae645460e614b6d4138297e4a93
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="managing-vspackages"></a>Verwalten von VSPackages
 In den meisten Fällen müssen Sie nicht zum Verwalten von VSPackages, da die Projekt- und Elementvorlagen registrieren, und Laden Sie das Paket automatisch Sorge. In einigen Fällen müssen Sie jedoch ein wenig mehr erfahren, um das Paket zu verwalten.  

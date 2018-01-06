@@ -16,11 +16,12 @@ caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7dd55b39f3a35e8ee8f3f16cc5a64e61cb824177
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: debfb63201652f5a9d3348e3bcd591c5efe66e33
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="additional-resources-for-developing-office-solutions"></a>Zusätzliche Ressourcen für das Entwickeln von Office-Lösungen
   Die Microsoft Office-Entwicklertools in Visual Studio stellen nur eine von vielen Methoden zum Erweitern von Office-Anwendungen dar. Office-Anwendungen verfügen auch über einige integrierte Features, z. B. Open XML-Formate, die nicht von den Office-Entwicklertools in Visual Studio oder in dieser Dokumentation behandelt werden.  

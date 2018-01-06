@@ -16,11 +16,12 @@ caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6d418e757a93d77b0034bbdb8287b0e81a5a3860
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 895bb4f7bde787a135699e4197622037413a1869
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="merging-xml-in-feature-and-package-manifests"></a>Zusammenführen von XML in Funktions- und Paketmanifesten
   Funktionen und Pakete werden durch definiert [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] Manifestdateien. Diese App Manifeste sind eine Kombination von Designern und benutzerdefinierte generierte Daten [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] in der Manifestdatei Vorlage vom Benutzer eingegeben. Zum Zeitpunkt der Verpackung [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] führt die benutzerdefinierten [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] -Anweisungen mit der vom Designer bereitgestellten [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] bilden die gepackte [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] Manifestdatei. Ähnliche Elemente mit den Ausnahmen, die weiter unten in der Merge-Ausnahmen werden zusammengeführt, um zu vermeiden [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] Validierungsfehler, nachdem Sie die Dateien in SharePoint bereitstellen, stellen das Manifest Dateien kleiner und effizienter.  
@@ -54,8 +55,8 @@ ms.lasthandoff: 10/31/2017
 |ElementFile|Speicherort|  
 |ElementManifests/ElementManifest|Speicherort|  
 |Properties-Eigenschaft|Key|  
-|CustomUpgradeAction|Name|  
-|CustomUpgradeActionParameter|Name|  
+|CustomUpgradeAction|name|  
+|CustomUpgradeActionParameter|name|  
   
 > [!NOTE]  
 >  Da die einzige Möglichkeit zum Ändern der CustomUpgradeAction-Element in der benutzerdefinierten ist [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] -Editor, die Auswirkungen der Zusammenführung nicht von ist zu niedrig.  

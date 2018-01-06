@@ -13,11 +13,12 @@ helpviewer_keywords:
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 111e53ad9beec3a5f5ef013b996a541ea0fa1e72
-ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
+ms.workload: vssdk
+ms.openlocfilehash: 9b38601953fd5b1c80e5eeffd75c2fdc2608fc73
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="supporting-editorconfig-for-your-language-service"></a>Unterstützung von EditorConfig für Ihre-Sprachdienst
 
@@ -27,11 +28,11 @@ In den meisten Fällen ist bei der Implementierung eines Visual Studio-Sprachdie
 
 Folgendes sind die Änderungen, die erforderlich sind, zum Aktualisieren eines Sprachdiensts zur Unterstützung von EditorConfig-Dateien durch einen globalen ersetzen _sprachspezifische_ -Option mit einer _kontextabhängige_ Option:
 
-## <a name="indent-style"></a>Ziehen Sie ein Format
+## <a name="indent-style"></a>Einzugsgröße
 
 Sprachspezifische-Optionen | Kontextabhängige Optionen
 -------|--------
-Microsoft.VisualStudio.TextManager.Interop.LANGPREFERENCES.fInsertTabs<br/>Microsoft.VisualStudio.Package.LanguagePreferences.InsertTabs|! textBufferOptions.GetOptionValue(DefaultOptions.ConvertTabsToSpacesOptionId)<br/>! textView.Options.GetOptionValue(DefaultOptions.ConvertTabsToSpacesOptionId)
+Microsoft.VisualStudio.TextManager.Interop.LANGPREFERENCES.fInsertTabs<br/>Microsoft.VisualStudio.Package.LanguagePreferences.InsertTabs|!textBufferOptions.GetOptionValue(DefaultOptions.ConvertTabsToSpacesOptionId)<br/>!textView.Options.GetOptionValue(DefaultOptions.ConvertTabsToSpacesOptionId)
 
 ## <a name="indent-size"></a>Einzugsgröße
 

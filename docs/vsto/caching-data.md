@@ -19,11 +19,12 @@ caps.latest.revision: "36"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0d5f044f1f1d0f36918939a67d9d2e5bb1899929
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 616dea48ba9689bd90a01dab64c8855bdf774adf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="caching-data"></a>Zwischenspeichern von Daten
   Datenobjekte in einer Anpassung auf Dokumentebene können zwischengespeichert werden, sodass die Daten offline oder ohne Öffnen des Microsoft Office Word oder Microsoft Office Excel zugegriffen werden können. Zum Zwischenspeichern eines Objekts muss das Objekt einen Datentyp aufweisen, der bestimmte Anforderungen erfüllt. Viele allgemeine Datentypen in .NET Framework erfüllen diese Anforderungen, einschließlich <xref:System.String>, <xref:System.Data.DataSet>, und <xref:System.Data.DataTable>.  

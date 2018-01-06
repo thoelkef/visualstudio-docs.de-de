@@ -14,11 +14,12 @@ caps.latest.revision: "5"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: dc005e282e7581aa2af5cba7da3a23040bf9d8b1
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: ba4078a903c1e30b968928e13c8d160c898bbf0d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="systemactivities-tab-choose-toolbox-items-dialog-box"></a>System.Activities (Registerkarte), Toolboxelemente auswählen (Dialogfeld)
 Diese Registerkarte die **Toolboxelemente auswählen** Dialogfeld zeigt eine Liste von [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] Aktivitäten, Vorlagen und Elemente, die Ihnen zur Verfügung. Um diese Liste anzuzeigen, wählen Sie **Toolboxelemente auswählen** aus der **Tools** Menü oder über das Kontextmenü der **Toolbox** auswählen und **Elemente auswählen**zum Anzeigen der **Toolboxelemente** (Dialogfeld), und wählen Sie dann seine **System.Activities** Registerkarte. Voreingestellt enthält die Liste Workflowaktivitäten aus den Assemblys System.Activities, System.ServiceModel.Activities und System.Activities.Core.Presentation; allerdings nur die vom System bereitgestellten Aktivitäten und Aktivitäten durch andere Assemblys, die angezeigt wird, im hinzugefügten der **Toolbox** sind standardmäßig aktiviert. Kürzlich hinzugefügte Aktivitäten werden automatisch markiert und werden in der **Toolbox** beim Klicken auf **OK** auf das Dialogfeld. Diese Elemente auch angezeigt, der **Toolbox** in einer neuen Kategorie, die dem Namespace entspricht, in dem die Aktivität/Element/Vorlage befindet.  

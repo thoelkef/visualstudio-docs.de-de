@@ -20,11 +20,12 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8ab25807ffaf62773b6c02f22c548fb5e5c769ff
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: d3717d3bee3665705ce39307b640e02a931cd75f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="verifying-and-debugging-sharepoint-code"></a>Überprüfen und Debuggen von SharePoint-Code
   Mit IntelliTrace und Unittests können Sie die SharePoint-Lösungen leichter debuggen und sicherstellen, dass jede Methode in ihnen ordnungsgemäß funktioniert. Sie können diese Funktionen für SharePoint-Projekte in [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)] verwenden, indem Sie die gleichen Prozeduren wie für andere Typen von Projekten ausführen.  
@@ -37,7 +38,7 @@ ms.lasthandoff: 10/31/2017
  Sie können Visual Studio-Ereignisse in IntelliTrace abrufen, indem Sie die Auswahl der **F5** Schlüssel. Um für SharePoint spezifische Ereignisse abzurufen, müssen Sie jedoch IntelliTrace-Daten in SharePoint-Lösungen sammeln, indem Sie Microsoft Monitoring Agent verwenden. Dieses Tool sammelt IntelliTrace-Daten und erstellt ITRACE-Dateien für Anwendungen, die außerhalb von Visual Studio bereitgestellt werden. Weitere Informationen finden Sie unter [IntelliTrace-Features](/visualstudio/debugger/intellitrace-features) und [verwenden die eigenständige IntelliTrace Collector](/visualstudio/debugger/using-the-intellitrace-stand-alone-collector).  
   
 ## <a name="unit-testing"></a>Unittests  
- Sie können Fehler im Code leichter finden, indem Sie Komponententests ausführen, bei denen Sie Testcode in Testmethoden schreiben und ausführen. Diese Methoden enthalten leere Variablen und eine Assert-Anweisung, die Sie verwenden können, um die Logik und die Funktionalität des Projekts auf Grundlage des SharePoint-Objektmodells zu überprüfen. Weitere Informationen finden Sie unter [Komponententests des Codes](/visualstudio/test/unit-test-your-code).  
+ Sie können Fehler im Code leichter finden, indem Sie Unittests ausführen, bei denen Sie Testcode in Testmethoden schreiben und ausführen. Diese Methoden enthalten leere Variablen und eine Assert-Anweisung, die Sie verwenden können, um die Logik und die Funktionalität des Projekts auf Grundlage des SharePoint-Objektmodells zu überprüfen. Weitere Informationen finden Sie unter [Komponententests des Codes](/visualstudio/test/unit-test-your-code).  
   
 ### <a name="support-for-microsoft-fakes-framework"></a>Unterstützung für Microsoft Fakes-Framework  
  SharePoint-Projekte unterstützen Microsoft Fakes, ein Isolationsframework, in dem Sie delegatbasierte Test-Stubs und -Shims in Anwendungen erstellen können, die auf .NET Framework basieren. Mithilfe des Fakes Framework können Sie Platzhalterimplementierungen in Ihren Komponententests erstellen, verwalten und einfügen. Diese Stubs und Shims isolieren die Komponententests von der Umgebung. Sie können Stubs erstellen, um Code zu testen, der Schnittstellen oder nicht versiegelte Klassen mit überschreibbaren Methoden verwendet. Sie können Shims erstellen, um hartcodierte Aufrufe von versiegelten Klassen mit statischen oder nicht überschreibbaren Methoden zu einer alternativen Shim-Implementierung umzuleiten. Sie können auch Delegate mit Stub-Typen und Shim-Typen verwenden, um das Verhalten einzelner Stub-Member dynamisch anzupassen. Weitere Informationen finden Sie unter [Isolieren von Code unter Test mithilfe von Microsoft Fakes](/visualstudio/test/isolating-code-under-test-with-microsoft-fakes).  

@@ -12,11 +12,12 @@ caps.latest.revision: "21"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 503f171b2af5e06fd3c890caf07525ba880d0658
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: e974c768f9bf73b92cb974875654846a267bb893
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="properties-of-connectors"></a>Eigenschaften von Konnektoren
 Verbinder repräsentieren domänenbeziehungen in einem generierten Designer.  
@@ -29,8 +30,8 @@ Verbinder repräsentieren domänenbeziehungen in einem generierten Designer.
 |--------------|-----------------|-------------|  
 |Farbe|Die Farbe der diesen Connector.|Schwarz|  
 |Strichformat|Das Strichformat für die Zeile für diesen Connector (durchgezogen, Bindestrich, Punkt, DashDot, Strich oder Benutzerdefiniert).|Basis|  
-|Source-End-Stil|Die Quelle End Formatvorlage für diesen Connector (HollowArrow, EmptyArrow, FilledArrow, EmptyDiamond, FilledDiamond oder keine).|Keine|  
-|Ziel-End-Stil|Der Ziel-End-Stil für diesen Connector (HollowArrow, EmptyArrow, FilledArrow, EmptyDiamond, FilledDiamond oder keine).|Keine|  
+|Source-End-Stil|Die Quelle End Formatvorlage für diesen Connector (HollowArrow, EmptyArrow, FilledArrow, EmptyDiamond, FilledDiamond oder keine).|Keiner|  
+|Ziel-End-Stil|Der Ziel-End-Stil für diesen Connector (HollowArrow, EmptyArrow, FilledArrow, EmptyDiamond, FilledDiamond oder keine).|Keiner|  
 |Textfarbe|Die Farbe, die für Text Decorator-Elementen verwendet wird, die mit diesem Connector verknüpft sind.|Schwarz|  
 |Stärke|Die Stärke der Linie für diesen Connector, gemessen in Zoll.|0.03125|  
 |Zugriffsmodifizierer|Die Zugriffsebene der Klasse (`public` oder `internal`).|Public|  
@@ -39,7 +40,7 @@ Verbinder repräsentieren domänenbeziehungen in einem generierten Designer.
 |Verfügt über benutzerdefinierte-Konstruktor|Wenn `True`, ein benutzerdefinierter Konstruktor im Quellcode bereitgestellt werden. Weitere Informationen finden Sie unter [überschreiben und erweitern die generierte Klassen](../modeling/overriding-and-extending-the-generated-classes.md).|False|  
 |Inheritance Modifier|Beschreibt die Art der Vererbung von der Quellklasse für Code, der vom Connector generiert wird (`none`, `abstract` oder `sealed`).|Keine|  
 |Basis-Connector|Die Basisklasse dieses Connectors.|(keine)|  
-|Name|Der Name dieses Connectors.|Aktuelle name|  
+|name|Der Name dieses Connectors.|Aktuelle name|  
 |Namespace|Der Namespace, der dieser Verbindung zugeordnet ist.|Aktuellen namespace|  
 |QuickInfo-Typ|Wie die QuickInfo definiert ist (fest, Variable oder keine). Wenn behoben, den Wert der `Fixed Tooltip Text` Eigenschaft wird als QuickInfo verwendet wird und wenn die Variable ist, klicken Sie dann die QuickInfo definiert ist in benutzerdefiniertem Code.|\<keine >|  
 |Hinweise|Informelle Hinweise, die mit diesem Connector verknüpft sind.|\<keine >|  

@@ -12,11 +12,12 @@ caps.latest.revision: "20"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 011be65e453de8f9d8010b74670b4efdf7905d06
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: ded95e267195f07a003b13ccc2fb2549373e811b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="properties-of-domain-relationships"></a>Eigenschaften von Domänenbeziehungen
 Die Eigenschaften in der folgenden Tabelle sind die zwischen einer Domäne zugeordnet. Informationen zu domänenbeziehungen finden Sie unter [Grundlegendes zu Modellen, Klassen und Beziehungen](../modeling/understanding-models-classes-and-relationships.md). Weitere Informationen zum Verwenden dieser Eigenschaften finden Sie unter [anpassen und Erweitern einer domänenspezifischen Sprache](../modeling/customizing-and-extending-a-domain-specific-language.md).  
@@ -31,7 +32,7 @@ Die Eigenschaften in der folgenden Tabelle sind die zwischen einer Domäne zugeo
 |Duplikate zulässt|Wenn `True`, doppelte Links von der domänenbeziehung zwischen denselben zwei Elementen erstellt werden kann.|`False`|  
 |Basis-Beziehungen|Wenn die domänenbeziehung abgeleitet ist, die grundlegende Beziehung der domänenbeziehung.|\<keine >|  
 |Einbetten von ist|Wenn `True`, die zwischen der Domäne ist ein Einbetten von Beziehung. Wenn `False`, die Beziehung ist eine verweisbeziehung.|\<Beide >|  
-|Name|Der Name der domänenbeziehung.|Aktuelle name|  
+|name|Der Name der domänenbeziehung.|Aktuelle name|  
 |Namespace|Der Namespace, der die domänenbeziehung zugeordnet ist.|Aktuellen namespace|  
 |Hinweise|Informelle Hinweise, die mit der domänenbeziehung verknüpft sind.|\<keine >|  
 |Beschreibung|Die Beschreibung, die wird verwendet, um Code zu dokumentieren und in der Benutzeroberfläche des Designers generierten verwendet.|\<keine >|  

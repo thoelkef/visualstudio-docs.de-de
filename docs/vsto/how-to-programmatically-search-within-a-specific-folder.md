@@ -16,11 +16,12 @@ caps.latest.revision: "30"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 97776e667333d00ecbd10feeb12620b16f2d3ac9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 6397f6e90423640697aa57d7fdf2a1c85303d0f9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-search-within-a-specific-folder"></a>Gewusst wie: Programmgesteuerte Suche in einem bestimmten Ordner
   Dieses Codebeispiel verwendet die `Find` und `FindNext` Methoden zum Suchen nach Text in der Betreffzeile der e-Mail-Nachrichten, die in der **Posteingang**. Diese Methode verwendet eine Zeichenfolge um zu suchende Buchstaben T als die ersten Buchstaben des der `Subject` Text.  

@@ -21,11 +21,12 @@ caps.latest.revision: "41"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 46b7219aa43be0ce3ae5e9ca6bc1e11c9e4dc25a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: be7cc1dfcaf367fe890b32e4ba4523800936b819
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-insert-text-into-word-documents"></a>Gewusst wie: Programmgesteuertes Einfügen von Text in Word-Dokumente
   Es gibt drei Hauptmethoden zum Einfügen von Text in Microsoft Office Word-Dokumente:  

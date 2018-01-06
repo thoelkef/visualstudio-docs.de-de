@@ -25,11 +25,12 @@ caps.latest.revision: "42"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: baeb44b4804f74aad4b2850eb0bbd4ad539b33e1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 21017bc63f028bdbd65d27b0df0cba2e31d407ae
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="workbook-host-item"></a>Arbeitsmappenhostelement
   Das <xref:Microsoft.Office.Tools.Excel.Workbook> -Hostelement ist ein Typ, der den <xref:Microsoft.Office.Interop.Excel.Workbook> -Typ aus der primären Interopassembly für Excel erweitert. Das <xref:Microsoft.Office.Tools.Excel.Workbook> -Hostelement stellt die gleichen Eigenschaften, Methoden und Ereignisse wie ein <xref:Microsoft.Office.Interop.Excel.Workbook> -Objekt bereit, bietet jedoch auch zusätzliche Funktionen.  
@@ -48,7 +49,7 @@ ms.lasthandoff: 10/31/2017
 ### <a name="limitations-of-the-workbook-host-item-in-document-level-projects"></a>Einschränkungen des Arbeitsmappen-Hostelements in Projekten auf Dokumentebene  
  Ein Projekt auf Dokumentebene kann nur ein <xref:Microsoft.Office.Tools.Excel.Workbook> -Hostelement (die `ThisWorkbook` -Klasse) enthalten. Sie können dem Projekt zur Entwurfszeit keine neuen <xref:Microsoft.Office.Tools.Excel.Workbook> -Hostelemente hinzufügen, und Sie können zur Laufzeit von einer Anpassung auf Dokumentebene keine neuen <xref:Microsoft.Office.Tools.Excel.Workbook> -Hostelemente erstellen.  
   
- Wenn Sie zur Laufzeit eine neue Excel-Arbeitsmappe erstellen, hat sie den Typ <xref:Microsoft.Office.Interop.Excel.Workbook>. Da es kein Hostelement ist, kann es keine Hoststeuerelemente bzw. Windows Forms-Steuerelemente enthalten. Weitere Informationen zum Erstellen von Arbeitsmappen zur Laufzeit finden Sie unter [wie: Programmgesteuertes Erstellen neuer Arbeitsmappen](../vsto/how-to-programmatically-create-new-workbooks.md).  
+ Wenn Sie zur Laufzeit eine neue Excel-Arbeitsmappe erstellen, hat sie den Typ <xref:Microsoft.Office.Interop.Excel.Workbook>. Da das Arbeitsblatt kein Hostelement ist, kann es keine Hoststeuerelemente bzw. Windows Forms-Steuerelemente enthalten. Weitere Informationen zum Erstellen von Arbeitsmappen zur Laufzeit finden Sie unter [wie: Programmgesteuertes Erstellen neuer Arbeitsmappen](../vsto/how-to-programmatically-create-new-workbooks.md).  
   
  Das <xref:Microsoft.Office.Tools.Excel.Workbook> Hostelement dient nicht als Container für Hoststeuerelemente. Daher können Sie der Arbeitsmappe keine sichtbaren Steuerelemente hinzufügen. Sie können jedoch Komponenten wie <xref:System.Data.DataSet>hinzufügen, sodass die Komponenten von allen Arbeitsblättern gemeinsam genutzt werden können. In einem Projekt auf Dokumentebene befinden sich die für die Arbeitsmappe verfügbare Komponenten auf den Registerkarten **Komponente** , **Daten** und **Alle Windows Forms** der **Toolbox**.  
   

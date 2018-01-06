@@ -21,11 +21,12 @@ caps.latest.revision: "59"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b788a66eb95db5e46464048e134ab803d273d1ce
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: c96744b433f4ad481e500420ffeab8caad3772c1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook"></a>Exemplarische Vorgehensweise: Anzeigen von benutzerdefinierten Aufgabenbereichen in E-Mails in Outlook
   Diese exemplarische Vorgehensweise veranschaulicht, wie eine eindeutige Instanz eines benutzerdefinierten Aufgabenbereichs in jeder erstellten oder geöffneten E-Mail angezeigt wird. Benutzer können den benutzerdefinierten Aufgabenbereich über eine Schaltfläche auf dem Menüband jeder E-Mail anzeigen oder ausblenden.  

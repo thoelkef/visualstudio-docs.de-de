@@ -18,11 +18,12 @@ caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 98dd11e74053bde9ad1ec2e23f4f663dfa7d1e1d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 063586b6a4a839b8500ea3ef1729331bf82338ad
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-extend-a-sharepoint-node-in-server-explorer"></a>Gewusst wie: Erweitern eines SharePoint-Knotens im Server-Explorer
   Sie können die Knoten erweitern die **SharePoint-Verbindungen** Knoten **Server-Explorer**. Dies ist hilfreich, wenn Sie neue untergeordnete Knoten, Kontextmenüeinträge oder Eigenschaften auf einen vorhandenen Knoten hinzufügen möchten. Weitere Informationen finden Sie unter [Erweitern des SharePoint-Verbindungsknotens im Server-Explorer](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).  

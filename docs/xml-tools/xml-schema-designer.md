@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1a0868c898b9713bec07939a2e0404eb17d988ae
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 37d01c39479918b95203a7dacdba17c1ff9d1ec9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="xml-schema-designer"></a>XML-Schema-Designer
 Der XML-Schema-Designer (XSD-Designer) ist ein grafisches Tool, mit dem Sie ein Schemaset auf unterschiedlichen Abstraktionsebenen visualisieren können. Der XSD-Designer besteht aus den folgenden Hauptkomponenten:  

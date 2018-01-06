@@ -13,11 +13,12 @@ caps.latest.revision: "25"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: d76ed4d14e7333678fcf927dfa1b2f21d8573be5
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 416c7f399ce8ce23eceee4ccf8891dd657d5836a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="overview-of-the-domain-specific-language-tools-user-interface"></a>Übersicht über die Benutzeroberfläche für domänenspezifische Sprachtools
 Beim ersten Öffnen einer Projektmappe domänenspezifische Sprachtools (DSL Tools) in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], die Benutzeroberfläche die folgenden Abbildung ähneln.  

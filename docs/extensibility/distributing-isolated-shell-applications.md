@@ -13,18 +13,19 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a40d2b8c108d7180ffc68ac2eee6811d49b21c08
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 250f1d7769f6035e015eeb7247c439b27f913b78
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="distributing-isolated-shell-applications"></a>Verteilen von Isolated Shell-Anwendungen
 Sie müssen Visual Studio und Visual Studio SDK installieren, um eine isolierte Shell-Anwendung zu erstellen. Um die Anwendung mit den Computern anderer Benutzer oder Kunden zu verteilen, müssen Sie besonderes verteilbares Paket für die isolierte Shell einschließen.  
   
 ## <a name="prerequisites-for-distributing-isolated-shell-applications"></a>Voraussetzungen für das Verteilen von Isolated Shell-Anwendungen  
   
-|Name|Beschreibung|  
+|name|Beschreibung|  
 |----------|-----------------|  
 |Visual Studio SDK|Das SDK benötigen Sie zum Entwickeln und Testen von Erweiterungen [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Das SDK können auch eine eigene Instanz des Visual Studio isolated Shell erstellen.<br /><br /> Visual Studio ist eine Voraussetzung für das SDK.|  
 |Microsoft Visual Studio isolierte Shell Redistributable|Das verteilbare Paket, dass Sie im Setup-Programm enthalten, bei der Erstellung einer Umgebung Tools im Visual Studio isolierte Shell. Das verteilbare Paket von isolierte Shell schließt .NET Framework 4.5.|  

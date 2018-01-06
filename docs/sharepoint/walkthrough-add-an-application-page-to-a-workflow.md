@@ -20,11 +20,12 @@ caps.latest.revision: "28"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bab156bdd1589aaac10a619409b44e50558b9c15
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 67ee77197493cbba0161a3ee53a0617a58b62522
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-add-an-application-page-to-a-workflow"></a>Exemplarische Vorgehensweise: Hinzufügen einer Anwendungsseite zu einem Workflow
   Diese exemplarische Vorgehensweise veranschaulicht, wie Sie eine Anwendungsseite hinzugefügt wird, die einem Workflowprojekt aus einem Workflow abgeleitete Daten angezeigt. Es baut auf das Projekt in diesem Thema beschriebenen [Exemplarische Vorgehensweise: Erstellen eines Workflows mit Zuordnungs- und Initiierungsformularen](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).  
@@ -135,7 +136,7 @@ ms.lasthandoff: 10/31/2017
     using Microsoft.SharePoint.Navigation;  
     ```  
   
-3.  Fügen Sie der `Page_Load`-Methode folgenden Code hinzu:  
+3.  Fügen Sie der `Page_Load`-Methode den folgenden Code hinzu:  
   
     ```vb  
     Try  

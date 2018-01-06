@@ -14,11 +14,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 20abad6a195d8493be8849588b86035d03fdc654
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 73f5c55b39d855eb084206ef27e2254d50377b86
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sccget-function"></a>SccGet-Funktion
 Diese Funktion ruft eine Kopie von einer oder mehreren Dateien für das Anzeigen von und zu kompilieren, aber nicht zum Bearbeiten. In den meisten Systemen werden die Dateien als schreibgeschützt gekennzeichnet.  

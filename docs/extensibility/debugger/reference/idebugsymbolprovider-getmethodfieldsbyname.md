@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1d0c4e5240e06165cb6b20a813d3e0c5dc453122
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 4c3938f25a6b71bc436692b4f56c4b3c9663a9c0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugsymbolprovidergetmethodfieldsbyname"></a>IDebugSymbolProvider::GetMethodFieldsByName
 Diese Methode ruft das Feld, das einen Namen für vollständig qualifizierte Methode darstellt.  
@@ -55,7 +56,7 @@ int GetMethodFieldsByName(
  Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
 ## <a name="remarks"></a>Hinweise  
- Eine Methode kann mehrere Felder zugeordnet werden, wenn dieser überlastet ist, z. B..  
+ Eine Methode kann mehrere Felder zugeordnet werden, wenn dieser überlastet ist, z. B.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)   

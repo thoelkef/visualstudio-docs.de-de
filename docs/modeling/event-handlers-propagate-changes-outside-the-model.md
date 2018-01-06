@@ -14,11 +14,12 @@ caps.latest.revision: "18"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 29c8594b80c55eb000d70f05d35bbf28becb6e26
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: b1ef5efcce853f55ad518f1cdba35d2363f5504e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>Ereignishandler propagieren Änderungen außerhalb des Modells
 In Visualization and Modeling SDK, definieren Sie Store-Ereignishandler, um die Weitergabe von Änderungen auf Ressourcen außerhalb des Informationsspeichers, z. B. keine Store-Variablen, Dateien, im anderen Speicher oder anderen Modellen [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Erweiterungen. Store-Ereignishandler werden nach dem Ende der Transaktion ausgeführt, in denen die auslösende Ereignis aufgetreten ist. Sie werden auch in einem Vorgang rückgängig gemacht bzw. wiederholt ausgeführt werden. Aus diesem Grund sind im Gegensatz zum Speicher-Regeln Speicherereignisse besten zum Aktualisieren von Werten, die sich außerhalb des Informationsspeichers befinden. Im Gegensatz zu .NET Ereignisse, Ereignishandler Store Lauschen auf eine Klasse registriert sind: Sie müssen nicht für jede Instanz einen separaten Handler registriert werden soll. Weitere Informationen zur Wahl zwischen verschiedenen Methoden zum Behandeln der Änderungen, finden Sie unter [Weitergeben von Änderungen und reagieren auf](../modeling/responding-to-and-propagating-changes.md).  

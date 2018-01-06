@@ -13,11 +13,12 @@ caps.latest.revision: "32"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8066ac52076afd9c0f8cb697ca51327188c9c216
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 60cfb35e2c3acbe3b52f460b040dd5c220e6b045
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-using-a-shortcut-key-with-an-editor-extension"></a>Exemplarische Vorgehensweise: Verwenden einer Tastenkombination mit der Erweiterung-Editor
 Sie können in der Editor-Erweiterung auf Tastenkombinationen reagieren. Die folgende exemplarische Vorgehensweise veranschaulicht das Hinzufügen einer Ansicht Randsteuerelement einer Text-Ansicht mit einer Tastenkombination. Diese exemplarische Vorgehensweise basiert auf der Viewport Randsteuerelement-Editor-Vorlage, und können Sie mithilfe der Randsteuerelement hinzufügen das Zeichen + enthält.  

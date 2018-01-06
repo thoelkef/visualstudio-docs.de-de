@@ -16,11 +16,12 @@ caps.latest.revision: "64"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-ms.openlocfilehash: 2e98b690fb8ba87dabb7fd8aa76a9aa44c613a38
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: c0a13a32347b7150818fc80b82d0c03dc3fc4f69
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="create-dependency-diagrams-from-your-code"></a>Erstellen von Diagrammen Abhängigkeit aus Ihrem code
 Um das Softwaresystem auf hoher Ebene, die logische Architektur zu visualisieren, erstellen Sie eine *Abhängigkeit Diagramm* in Visual Studio. Um sicherzustellen, dass Ihr Code anhand dieses Aufbaus konsistent bleibt, Überprüfen von Code mit einem Diagramm Abhängigkeit. Sie können die Abhängigkeit Diagramme für Visual c# .NET- und Visual Basic-Projekte erstellen. Welche Versionen von Visual Studio dieses Feature unterstützen, finden Sie unter [versionsunterstützung für Architektur- und Modellierungstools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)  
@@ -89,8 +90,8 @@ Um das Softwaresystem auf hoher Ebene, die logische Architektur zu visualisieren
 |Erstellen einer einzelnen Ebene für alle ausgewählten Artefakte|Ziehen Sie alle Artefakte in das Diagramm Abhängigkeit zur gleichen Zeit.<br /><br /> Im Diagramm wird eine Ebene angezeigt und mit allen Artefakten verknüpft.|  
 |Erstellen einer Ebene für jedes ausgewählte Artefakt|Halten Sie die **UMSCHALT** gedrückt, während alle Elemente in das Diagramm Abhängigkeit zur gleichen Zeit ziehen. **Hinweis:** bei Verwendung der **UMSCHALT** Taste, um einen Bereich von Elementen auswählen, lassen Sie die Taste nach dem Auswählen der Artefakte los. Halten Sie sie anschließend erneut gedrückt, wenn Sie die Artefakte in das Diagramm ziehen. <br /><br /> Im Diagramm wird für jedes Artefakt eine Ebene angezeigt und mit den einzelnen Artefakten verknüpft.|  
 |Hinzufügen eines Artefakts zu einer Ebene|Ziehen Sie das Artefakt auf die Ebene.|  
-|Erstellen einer neuen, nicht verknüpften Ebene|In der **Toolbox**, erweitern Sie die **Abhängigkeit Diagramm** Abschnitt, und ziehen Sie dann eine **Ebene** in das Diagramm Abhängigkeit.<br /><br /> Doppelklicken Sie zum Erstellen mehrerer Ebenen auf das Tool. Wenn Sie fertig sind, wählen Sie die **Zeiger** Tool oder drücken Sie die **ESC** Schlüssel.<br /><br /> - oder -<br /><br /> Öffnen Sie das Kontextmenü für das Diagramm Abhängigkeit, wählen Sie **hinzufügen**, und wählen Sie dann **Ebene**.|  
-|Erstellen geschachtelter Ebenen|Ziehen Sie eine vorhandene Ebene auf eine andere Ebene.<br /><br /> - oder -<br /><br /> Öffnen Sie das Kontextmenü für eine Ebene, wählen Sie **hinzufügen**, und wählen Sie dann **Ebene**.|  
+|Erstellen einer neuen, nicht verknüpften Ebene|In der **Toolbox**, erweitern Sie die **Abhängigkeit Diagramm** Abschnitt, und ziehen Sie dann eine **Ebene** in das Diagramm Abhängigkeit.<br /><br /> Doppelklicken Sie zum Erstellen mehrerer Ebenen auf das Tool. Wenn Sie fertig sind, wählen Sie die **Zeiger** Tool oder drücken Sie die **ESC** Schlüssel.<br /><br /> - oder -<br /><br /> Öffnen Sie das Kontextmenü für das Diagramm Abhängigkeit, wählen Sie **hinzufügen**, und wählen Sie dann **Ebene**.|  
+|Erstellen geschachtelter Ebenen|Ziehen Sie eine vorhandene Ebene auf eine andere Ebene.<br /><br /> - oder -<br /><br /> Öffnen Sie das Kontextmenü für eine Ebene, wählen Sie **hinzufügen**, und wählen Sie dann **Ebene**.|  
 |Erstellen einer neuen Ebene, die mehrere vorhandene Ebenen enthält|Wählen Sie die Ebenen, öffnen Sie das Kontextmenü für die Auswahl, und wählen Sie dann **Gruppe**.|  
 |Ändern der Farbe einer Ebene|Legen Sie dessen **Farbe** Eigenschaft, um die gewünschte Farbe fest.|  
 |Angeben, dass einer Ebene zugeordnete Artefakte nicht zu den angegebenen Namespaces gehören dürfen|Geben Sie die Namespaces in der Ebene **Unzulässige Namespaces** Eigenschaft. Verwenden Sie ein Semikolon (**;**) trennen Sie die Namespaces.|  
@@ -116,7 +117,7 @@ Um das Softwaresystem auf hoher Ebene, die logische Architektur zu visualisieren
 |**Aktion**|**Im Ebenen-Explorer**|  
 |------------|---------------------------|  
 |Löschen des Links zwischen der Ebene und einem Artefakt|Öffnen Sie das Kontextmenü für den Artefaktlink, und wählen Sie dann **löschen**.|  
-|Verschieben des Links von einer Ebene auf eine andere Ebene|Ziehen Sie den Artefaktlink auf eine Ebene im Diagramm.<br /><br /> - oder -<br /><br /> 1.  Öffnen Sie das Kontextmenü für den Artefaktlink, und wählen Sie dann **Ausschneiden**.<br />2.  Im Diagramm Abhängigkeit, öffnen Sie das Kontextmenü für die Ebene, und wählen Sie dann **einfügen**.|  
+|Verschieben des Links von einer Ebene auf eine andere Ebene|Ziehen Sie den Artefaktlink auf eine Ebene im Diagramm.<br /><br /> - oder -<br /><br /> 1.  Öffnen Sie das Kontextmenü für den Artefaktlink, und wählen Sie dann **Ausschneiden**.<br />2.  Im Diagramm Abhängigkeit, öffnen Sie das Kontextmenü für die Ebene, und wählen Sie dann **einfügen**.|  
 |Kopieren des Links von einer Ebene auf eine andere Ebene|1.  Öffnen Sie das Kontextmenü für den Artefaktlink, und wählen Sie dann **Kopie**.<br />2.  Im Diagramm Abhängigkeit, öffnen Sie das Kontextmenü für die Ebene, und wählen Sie dann **einfügen**.|  
 |Erstellen einer neuen Ebene aus einem vorhandenen Artefaktlink|Ziehen Sie den Artefaktlink in einen leeren Bereich des Diagramms.|  
 |Stellen Sie sicher, dass ein verknüpftes Artefakt die Validierung anhand des Diagramms für die Abhängigkeitseigenschaft unterstützt wird.|Betrachten Sie die **unterstützt die Validierung** Spalte nach dem Artefaktlink.|  

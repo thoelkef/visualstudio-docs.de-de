@@ -15,11 +15,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f91f6c3668b7cc1ce881dd0b98d1bd5dddebf530
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 0edfe84e26a9331b8c40ec24b00387768bdbba82
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="configuration-options-overview"></a>Optionen (Übersicht)
 Projekten [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] unterstützen mehrere Konfigurationen, die von einer debuggten, ausführen und/oder bereitgestellten erstellt werden können. Eine Konfiguration handelt es sich um einen Buildtyp mit einer benannten Menge von Eigenschaften, in der Regel Compilerschalter und Dateispeicherorte beschrieben. Neue Projektmappen enthalten standardmäßig zwei Konfigurationen, Debug und Release. Diese Konfigurationen können angewendet werden, deren Standardeinstellungen verwenden oder geändert, um Ihren jeweiligen Lösung und/oder Projekt Anforderungen. Einige Pakete können auf zwei Arten erstellt werden: als ActiveX-Editor oder als eine direkte-Komponente. Projekte müssen nicht mehrere Konfigurationen jedoch unterstützen. Wenn nur eine Konfiguration verfügbar ist, wird die Konfiguration aller Projektmappenkonfigurationen zugeordnet.  
@@ -34,7 +35,7 @@ Projekten [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] unterstü
   
 |Konfigurationsname|Plattform – Win32|Plattform – Win64|  
 |------------------------|----------------------|----------------------|  
-|Debuggen|\<Debug-Win32-Einstellungen >|\<Debuggen von Win64-Einstellungen >|  
+|Debug|\<Debug-Win32-Einstellungen >|\<Debuggen von Win64-Einstellungen >|  
 |Release|\<Freigeben von Win32-Einstellungen >|\<Freigeben von Win64-Einstellungen >|  
 |MyConfig|Nicht zutreffend|\<MyConfig Win64-Einstellungen >|  
   

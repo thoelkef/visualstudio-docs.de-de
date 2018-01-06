@@ -16,11 +16,12 @@ caps.latest.revision: "40"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0145982781ca3e21229a7af46090ed2addcaccde
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 18f1b473de12b53f3e1a7829d1f1c3b49862aef2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="deploying-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Bereitstellen von Erweiterungen für die SharePoint-Tools in Visual Studio
   Erstellen Sie zum Bereitstellen einer SharePoint-Tools-Erweiterungs ein [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Erweiterungspaket (VSIX), die enthält die Erweiterungsassembly und alle anderen Dateien, die Sie mit der Erweiterung verteilen möchten. Ein VSIX-Paket ist eine komprimierte Datei, die den Standard (Open Packaging Conventions, OPC) folgt. VSIX-Pakete haben die VSIX-Erweiterung.  

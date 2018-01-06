@@ -24,11 +24,12 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b8186110b04e3ff56b3c6b0cad03890f3233c03d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 2339ee60e66bca7578c2d5d1e89c7bb649b15b03
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="localizing-sharepoint-solutions"></a>Lokalisieren von SharePoint-Lösungen
   Die Vorbereitung von Anwendungen für eine weltweite Verwendung wird als Lokalisierung bezeichnet. Bei der Lokalisierung werden die Ressourcen für einen bestimmten Kulturkreis übersetzt. Weitere Informationen finden Sie unter [Globalizing und Lokalisieren von Anwendungen](/visualstudio/ide/globalizing-and-localizing-applications). Dieses Thema bietet eine Übersicht über die Lokalisierung einer SharePoint-Lösung.  
@@ -129,7 +130,7 @@ HttpContext.GetGlobalResourceObject("<Resource File Name>", "<String ID>")
  Weitere Informationen finden Sie unter [Vorgehensweise: Lokalisieren von Code](../sharepoint/how-to-localize-code.md).  
   
 #### <a name="web-part-code-localization"></a>Lokalisieren von Webpartcode  
- Webparts enthalten eine benutzerdefinierte Funktion des Eigenschaften-Editors mit Codeattributen, von denen hartcodierte Zeichenfolgen wie "WebDisplayName", "Category" oder "WebDescription" verwendet werden. Erstellen Sie eine separate, von der Klasse des Attributs abgeleitete Klasse, um die Zeichenfolgenwerte für diese Attribute zu ersetzen. Legen Sie in diesen Klassen die Eigenschaft des Attributs fest. Die Attributeigenschaft hängt von der Basisklasse ab. So lautet beispielsweise die WebDisplayName-Attributeigenschaft "DisplayNameValue", und die WebDescription-Attributeigenschaft lautet "DescriptionValue".  
+ Webparts enthalten eine benutzerdefinierte Funktion des Eigenschaften-Editors mit Codeattributen, von denen hartcodierte Zeichenfolgen wie „WebDisplayName“, „Category“ oder „WebDescription“ verwendet werden. Erstellen Sie eine separate, von der Klasse des Attributs abgeleitete Klasse, um die Zeichenfolgenwerte für diese Attribute zu ersetzen. Legen Sie in diesen Klassen die Eigenschaft des Attributs fest. Die Attributeigenschaft hängt von der Basisklasse ab. So lautet beispielsweise die WebDisplayName-Attributeigenschaft "DisplayNameValue", und die WebDescription-Attributeigenschaft lautet "DescriptionValue".  
   
  Verweisen Sie in der abgeleiteten Klasse auf die Zeichenfolgen-ID aus der Ressourcendatei sowie auf das ResourceManager-Objekt, um den lokalisierten Wert für die Zeichenfolgen-ID abzurufen. Geben Sie diesen Wert an das Eigenschaften-Editor-Attribut zurück.  
   

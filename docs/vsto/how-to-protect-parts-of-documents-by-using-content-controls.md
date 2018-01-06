@@ -23,11 +23,12 @@ caps.latest.revision: "28"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bf53de6bb247ecb0cf3195310e84c0be548eb717
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 894379e107865e4a4d187c963a88fe23b6eec6d1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-protect-parts-of-documents-by-using-content-controls"></a>Gewusst wie: Schützen von Teilen von Dokumenten mithilfe von Inhaltssteuerelementen
   Wenn Sie einen Teil eines Dokuments schützen, verhindern Sie, dass Benutzer Inhalte in diesem Teil des Dokuments ändern oder löschen. Es gibt mehrere Möglichkeiten, Teile eines Microsoft Office Word-Dokuments mithilfe von Inhaltssteuerelementen zu schützen.  

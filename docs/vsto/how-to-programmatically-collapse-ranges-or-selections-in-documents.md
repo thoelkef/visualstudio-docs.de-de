@@ -21,11 +21,12 @@ caps.latest.revision: "42"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 89430ca1b20df29bbd29af4ef41ceb7a9182564e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: c69fa3a13c251c31aff6ca54ccc0a553e293347a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-collapse-ranges-or-selections-in-documents"></a>Gewusst wie: Programmgesteuertes Reduzieren von Bereichen oder Markierungen in Dokumenten
   Wenn Sie mit einem <xref:Microsoft.Office.Interop.Word.Range> - oder <xref:Microsoft.Office.Interop.Word.Selection> -Objekt arbeiten, möchten Sie die Auswahl vor dem Einfügen von Text möglicherweise auf eine Einfügemarke setzen, um das Überschreiben vorhandenen Texts zu vermeiden. Sowohl die <xref:Microsoft.Office.Interop.Word.Range> und <xref:Microsoft.Office.Interop.Word.Selection> Objekte verfügen über eine Collapse-Methode, welche nutzt die <xref:Microsoft.Office.Interop.Word.WdCollapseDirection> Enumerationswerte:  

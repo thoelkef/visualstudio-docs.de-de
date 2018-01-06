@@ -15,11 +15,12 @@ caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3d436ef99907556c93f48c55bea315ae66e6218e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: a9ec7071a1e4ca78bb116c577cdcc77f9798c050
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="test-area-2-get-from-source-control"></a>Testbereich 2: Abrufen von Datenquellen-Steuerelements
 Dieser Testbereich werden die Testfälle zum Abrufen von Elementen aus dem Versionsspeicher über den Befehl Get behandelt. Diese Testfälle können sowohl lokale Pipes und Webprojekte angewendet werden.  

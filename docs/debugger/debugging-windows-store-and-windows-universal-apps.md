@@ -17,11 +17,12 @@ caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 258389c08971089c523e2881a455411ea767801a
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: 3bc498bf0a2a0293421ba680eab608cff4a85437
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="debug-universal-windows-apps-uwp"></a>Debuggen von universellen Windows-Apps (UWP)
 Visual Studio-Debugger bietet vollständige Unterstützung für uwp-apps zu debuggen.  
@@ -30,13 +31,11 @@ Weitere Informationen zum Debuggen von universellen Windows-Apps finden Sie unte
   
 Zum Debuggen von Windows Phone 8-apps finden Sie unter [Debuggen von apps für Windows Phone 8](https://msdn.microsoft.com/en-us/library/windows/apps/ff402572(v=vs.105).aspx).  
   
-## <a name="in-this-section"></a>In diesem Abschnitt  
-  
 |||  
 |-|-|  
 |[Ausführen von apps aus Visual Studio](../debugger/run-store-apps-from-visual-studio.md)|Uwp-apps auf einem lokalen Computer, in einem app-Simulator oder -Emulator oder auf einem Remotegerät ausführen.|  
 |[Debuggen von apps in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)|Suchen und Beheben von Fehlern in Ihren uwp-apps mit Visual Studio-Debugger.|  
-|[Debuggen Sie eine installierte app-Paket](../debugger/debug-installed-app-package.md)|Bereitgestellte apps, lokal und remote zu debuggen.|
+|[Debuggen eines installierten App-Pakets](../debugger/debug-installed-app-package.md)|Bereitgestellte apps, lokal und remote zu debuggen.|
 |[Vorabrufen von Inhalt für uwp-apps](../debugger/prefetch-content-for-windows-store-apps.md)|Die Auswirkung der ContentPrefetcher-Klasse auf uwp-apps analysieren.|  
   
 ## <a name="see-also"></a>Siehe auch  

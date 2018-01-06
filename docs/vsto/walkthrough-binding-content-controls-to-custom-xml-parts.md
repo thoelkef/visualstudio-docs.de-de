@@ -22,11 +22,12 @@ caps.latest.revision: "51"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 252bbce784e412282f6092afdc53905faeb947d0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 69073c8c737d8c4d8ee36bfc44fec9c5ea8075c6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-binding-content-controls-to-custom-xml-parts"></a>Exemplarische Vorgehensweise: Binden von Inhaltssteuerelementen an benutzerdefinierte XML-Abschnitte
   Diese exemplarische Vorgehensweise veranschaulicht, wie Sie Inhaltssteuerelemente in einer Anpassung auf Dokumentebene für Word an XML-Daten binden, die in dem Dokument gespeichert sind.  
@@ -253,7 +254,7 @@ ms.lasthandoff: 10/31/2017
   
 #### <a name="to-bind-the-content-controls-to-elements-in-the-custom-xml-part"></a>So binden Sie die Inhaltssteuerelemente an Elemente im benutzerdefinierten XML-Abschnitt  
   
-1.  Fügen Sie der `ThisDocument`-Klasse die folgende Methode hinzu. Mit dieser Methode wird jedes Inhaltssteuerelement an ein Element im benutzerdefinierten XML-Abschnitt gebunden und die Anzeige des Datumsformats für das <xref:Microsoft.Office.Tools.Word.DatePickerContentControl> festgelegt.  
+1.  Fügen Sie der `ThisDocument` -Klasse die folgende Methode hinzu. Mit dieser Methode wird jedes Inhaltssteuerelement an ein Element im benutzerdefinierten XML-Abschnitt gebunden und die Anzeige des Datumsformats für das <xref:Microsoft.Office.Tools.Word.DatePickerContentControl> festgelegt.  
   
      [!code-csharp[Trin_ContentControlXmlPartWalkthrough#5](../vsto/codesnippet/CSharp/EmployeeControls/ThisDocument.cs#5)]
      [!code-vb[Trin_ContentControlXmlPartWalkthrough#5](../vsto/codesnippet/VisualBasic/EmployeeControls/ThisDocument.vb#5)]  

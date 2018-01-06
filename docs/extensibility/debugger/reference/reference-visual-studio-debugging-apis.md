@@ -16,11 +16,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 492b86581f567aa6bcca7f782e588ca82f1878f3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 30b81a0926ebb984aab852b53c081742ea44f391
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="reference-visual-studio-debugging-apis"></a>Referenz (Visual Studio-Debug-APIs)
 Die Visual Studio Debugging-SDK-Verweise werden das grundlegende Modell für die Laufzeit-Architektur und die Funktionen des Debuggers und zugehörigen Komponenten. Die Dokumentation Annahmen aus so wenig wie möglich über die Komponenten und Schnittstellen, die, außer das Verhalten beschrieben, die sie über die Schnittstellen definiert.  

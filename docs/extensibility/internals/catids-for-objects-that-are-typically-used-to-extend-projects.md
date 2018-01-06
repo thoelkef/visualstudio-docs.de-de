@@ -16,18 +16,19 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 568f5b98cd652e872e7bcc7d63e85de7f134546d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 98349042fe66748ed4eb72a1604893e3f4e67d80
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="catids-for-objects-that-are-typically-used-to-extend-projects"></a>CATIDs für Objekte, die in der Regel verwendet werden, um Projekte zu erweitern.
 Die folgende Tabelle enthält CATIDs, mit denen erweitern `Project` und `ProjectItem` Automatisierung von Objekten für die [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)], [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)], und [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] Projekte. Diese CATIDs werden in VSLangProj.olb definiert.  
   
 ## <a name="listing-of-catids"></a>Eine Liste der CATIDs  
   
-|Name|GUID|  
+|name|GUID|  
 |----------|----------|  
 |<xref:VSLangProj.PrjCATID.prjCATIDProject>|{610D4614-D0D5-11D2-8599-006097C68E81}|  
 |<xref:VSLangProj.PrjCATID.prjCATIDProjectItem>|{610D4615-D0D5-11D2-8599-006097C68E81}|  
@@ -35,7 +36,7 @@ Die folgende Tabelle enthält CATIDs, mit denen erweitern `Project` und `Project
 ## <a name="visual-basic-catids"></a>Visual Basic-CATIDs  
  Die folgende Tabelle enthält CATIDs, mit denen erweitern [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] Durchsuchen von Objekten. Sie sind alle in VSLangProj.olb definiert.  
   
-|Name|GUID|  
+|name|GUID|  
 |----------|----------|  
 |<xref:VSLangProj.PrjBrowseObjectCATID.prjCATIDVBProjectBrowseObject>|{E0FDC879-C32A-4751-A3D3-0B3824BD575F}|  
 |<xref:VSLangProj.PrjBrowseObjectCATID.prjCATIDVBProjectConfigBrowseObject>|{67F8DD11-14EB-489b-87F0-F01C52AF3870}|  
@@ -46,7 +47,7 @@ Die folgende Tabelle enthält CATIDs, mit denen erweitern `Project` und `Project
 ## <a name="visual-c-catids"></a>Visual C#-CATIDs  
  Die folgenden CATIDs dienen zum Erweitern [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] Durchsuchen von Objekten. Sie sind alle in VSLangProj.olb definiert.  
   
-|Name|GUID|  
+|name|GUID|  
 |----------|----------|  
 |<xref:VSLangProj.PrjBrowseObjectCATID.prjCATIDCSharpProjectBrowseObject>|{4EF9F003-DE95-4d60-96B0-212979F2A857}|  
 |<xref:VSLangProj.PrjBrowseObjectCATID.prjCATIDCSharpProjectConfigBrowseObject>|{A12CE10A-227F-4963-ADB6-3A43388513CA}|  
@@ -57,7 +58,7 @@ Die folgende Tabelle enthält CATIDs, mit denen erweitern `Project` und `Project
 ## <a name="c-catids"></a>C++-CATIDs  
  Die folgenden [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] -Projektsystem CATIDs nicht verfügbar, in Typbibliotheken im gemacht sind [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .NET 2003 und in Ihrem Code eingefügt werden, wenn Sie diese Projektobjekte erweitern möchten. Diese CATIDs in Typbibliotheken in höheren Releases von eingeschlossen [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
   
-|Name|GUID|  
+|name|GUID|  
 |----------|----------|  
 |`CVCProjectNode`|{EE8299CB-19B6-4f20-ABEA-E1FD9A33B683}|  
 |`CVCFolderNode`|{EE8299CA-19B6-4f20-ABEA-E1FD9A33B683}|  
@@ -73,7 +74,7 @@ const LPOLESTR CVCFileNode::s_wszCATID = L"{EE8299C9-19B6-4f20-ABEA-E1FD9A33B683
   
  Die folgenden [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] -Projektsystem CATIDs ebenfalls nicht verfügbar, in die Typbibliotheken im gemacht sind [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .NET 2003 und in Ihrem Code eingefügt werden, wenn Sie diese Projektobjekte erweitern möchten. Diese CATIDs stehen nur in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .NET 2003 und ist nicht verfügbar in höheren Releases von [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
   
-|Name|GUID|  
+|name|GUID|  
 |----------|----------|  
 |`CVCAssemblyReferenceNode` **:**|{FE8299C9-19B6-4f20-ABEA-E1FD9A33B683}|  
 |`CVCProjectReferenceNode`|{593DCFCE-20A7-48e4-ACA1-49ADE9049887}|  

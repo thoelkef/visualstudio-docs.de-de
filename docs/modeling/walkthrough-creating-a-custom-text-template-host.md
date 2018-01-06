@@ -14,11 +14,12 @@ caps.latest.revision: "51"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 40e8529dd439060172ead1ae2f68ac3052345eb4
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 2edee4658c952816fc961254aee2c3cccfbe7c4d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-custom-text-template-host"></a>Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Textvorlagenhosts
 Ein *Textvorlage**Host* bietet eine Umgebung, die es ermöglicht die *Textvorlagen-Transformationsmodul* ausgeführt. Der Host ist für die Verwaltung der Interaktion des Moduls mit dem Dateisystem zuständig. Das Modul oder *Direktivenprozessor* , die benötigt einer Datei oder eine Assembly kann eine Ressource vom Host anfordern. Der Host kann dann Verzeichnisse und den globalen Assemblycache nach der angeforderten Ressource durchsuchen. Weitere Informationen finden Sie unter [der Textvorlagen-Transformationsprozess](../modeling/the-text-template-transformation-process.md).  

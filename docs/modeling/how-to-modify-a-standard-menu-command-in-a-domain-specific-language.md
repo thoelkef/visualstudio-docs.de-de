@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 6e5d17a1a84eb71252956e921522e6eebfd67925
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: f79852eae4b7dfae7345dbf6033a0e1cc0444250
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>Gewusst wie: Ändern eines Standardmenübefehls in einer domänenspezifischen Sprache
 Sie können das Verhalten einiger Standardbefehle ändern, die automatisch im DSL definiert sind. Sie können z. B. ändern **Ausschneiden** , damit sie vertraulichen Informationen werden ausgeschlossen. Hierzu überschreiben Sie Methoden in einer festgelegten Klasse des Befehls. Diese Klassen sind in der CommandSet.cs-Datei im DslPackage-Projekt definiert und von <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet> abgeleitet.  
@@ -135,7 +136,7 @@ protected override void ProcessOnMenuDeleteCommand()
 ### <a name="writing-the-code-of-the-methods"></a>Schreiben des Methodencodes  
  Die folgenden Fragmente sind innerhalb dieser Methoden oft hilfreich:  
   
--   `this.CurrentSelection`. Die Form, die der Benutzer mit der rechten Maustaste angeklickt hat, ist immer in dieser Liste mit Formen und Konnektoren enthalten. Wenn der Benutzer auf einen leeren Bereich des Diagramms klickt, ist das Diagramm das einzige Mitglied der Liste.  
+-   `this.CurrentSelection` Die Form, die der Benutzer mit der rechten Maustaste angeklickt hat, ist immer in dieser Liste mit Formen und Konnektoren enthalten. Wenn der Benutzer auf einen leeren Teil des Diagramms klickt, ist das Diagramm als einziges Teil der Liste.  
   
 -   `this.IsDiagramSelected()` - `true`Wenn der Benutzer einen leeren Bereich des Diagramms geklickt hat.  
   

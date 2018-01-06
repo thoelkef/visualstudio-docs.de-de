@@ -13,11 +13,12 @@ caps.latest.revision: "21"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2e590d6fff715aae33ee757460f2b0ba3df31e6e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5f7b7440ff2f42eba1d138872071d4e51d2402c1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="getting-started-with-language-service-and-editor-extensions"></a>Erste Schritte mit Sprachdienst und -Editor-Erweiterungen
 Editorerweiterungen können Sie den Dienst neue Sprachfunktionen wie gliedern, Klammer, IntelliSense und Glühbirnen einer beliebigen Programmiersprache oder andere Inhaltstypen hinzufügen. Sie können auch das Aussehen und Verhalten von Visual Studio-Editor, z. B. Text Farbgebung, Ränder, Zusatzelemente und andere visuelle Elemente anpassen. Sie können auch einen eigenen Typ des Inhalts definieren und geben Sie das Aussehen und Verhalten des Text-Ansichten, in denen Ihre Inhalte angezeigt wird.  
@@ -75,7 +76,7 @@ Editorerweiterungen können Sie den Dienst neue Sprachfunktionen wie gliedern, K
 ## <a name="managing-extensions"></a>Verwalten von Erweiterungen  
  Erweiterungen für Visual Studio in aufgelisteten **Erweiterungen und Updates** (auf der **Tools** Menü). Wenn Sie eine Erweiterung in der experimentellen Instanz testen, wird es im aufgeführt **Erweiterungen und Updates** in der experimentellen Instanz jedoch nicht in der Entwicklungsinstanz aufgeführt.  
   
- Weitere Informationen finden Sie unter [suchen und Verwenden von Visual Studio-Erweiterungen](../ide/finding-and-using-visual-studio-extensions.md).  
+ Weitere Informationen finden Sie unter [Suchen und Verwenden von Visual Studio-Erweiterungen](../ide/finding-and-using-visual-studio-extensions.md).  
   
 ## <a name="using-templates-to-create-editor-extensions"></a>Verwenden von Vorlagen zum Erstellen von Editor-Erweiterungen  
  Editorvorlagen können MEF-Erweiterungen erstellen, die Klassifizierer, Zusatzelemente und Ränder anpassen. Es sind Vorlagen für c# und Visual Basic-Projekte. Weitere Informationen finden Sie unter [erstellen eine Erweiterung mit einer Elementvorlage Editor](../extensibility/creating-an-extension-with-an-editor-item-template.md).  

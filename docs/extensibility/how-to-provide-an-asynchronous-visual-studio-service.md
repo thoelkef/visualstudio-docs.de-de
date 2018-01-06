@@ -11,11 +11,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1bcf34f730411589624075bde4ace0b5457e07a7
-ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
+ms.workload: vssdk
+ms.openlocfilehash: c13a899e5c678040d6ffe5b1996fd3ee96e9cc09
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-provide-an-asynchronous-visual-studio-service"></a>Vorgehensweise: Bereitstellen einen asynchronen Visual Studio-Dienst
 Wenn Sie einen Dienst zu erhalten, ohne den Benutzeroberflächenthread zu blockieren möchten, sollten Sie asynchrone-Dienst erstellen und Laden Sie das Paket in einem Hintergrundthread auf. Zu diesem Zweck können Sie eine <xref:Microsoft.VisualStudio.Shell.AsyncPackage> anstelle eines <xref:Microsoft.VisualStudio.Shell.Package>, und fügen Sie den Dienst mit speziellen asynchronen Methoden für das asynchrone Paket hinzu.  
@@ -222,7 +223,7 @@ public sealed class TestAsyncPackage : AsyncPackage
   
     ```  
   
-8.  Erstellen Sie die Lösung und beginnen Sie mit dem Debuggen. Wenn die experimentelle Instanz von Visual Studio angezeigt wird, wechseln Sie zu der **Tools** Menü- und suchen Sie nach der **TestAsyncCommand Aufrufen** Menüelement. Wenn Sie darauf klicken, schreibt der TextWriterService zu der Datei, die Sie angegeben haben. (Sie müssen eine Projektmappe öffnen zu ladenden Pakets Aufrufen des Befehls auch verursacht werden.)  
+8.  Erstellen Sie die Projektmappe, und beginnen Sie mit dem Debuggen. Wenn die experimentelle Instanz von Visual Studio angezeigt wird, wechseln Sie zu der **Tools** Menü- und suchen Sie nach der **TestAsyncCommand Aufrufen** Menüelement. Wenn Sie darauf klicken, schreibt der TextWriterService zu der Datei, die Sie angegeben haben. (Sie müssen eine Projektmappe öffnen zu ladenden Pakets Aufrufen des Befehls auch verursacht werden.)  
   
 ## <a name="see-also"></a>Siehe auch  
  [Verwenden und Bereitstellen von Diensten](../extensibility/using-and-providing-services.md)

@@ -6,18 +6,19 @@ ms.reviewer:
 ms.suite: 
 ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 helpviewer_keywords: Process Search
 ms.assetid: 518e8153-eec2-4db9-a6f7-416ec11d8e09
 caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9bd048bc80ce9747ca6bced7611827e23fa521ab
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a50dfd2eab4077b8a81c1671a9cdad1ca2878020
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="process-search-dialog-box"></a>Dialogfeld "Prozesssuche"
 Mithilfe dieses Dialogfelds zu suchen, und wählen Sie den Knoten für einen bestimmten Prozess in [Prozessansicht](../debugger/processes-view.md). Um dieses Dialogfeld anzuzeigen, verschieben Sie den Fokus auf ein **Prozesse** Fenster "anzeigen". Wählen Sie dann **Prozess suchen** aus der **Suche** Menü.  

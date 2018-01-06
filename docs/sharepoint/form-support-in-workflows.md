@@ -18,11 +18,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e2c63af83c6ca8249e87d60f23043c0639c7fd43
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 0da90955a590881a02117213246e580339dbe596
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="form-support-in-workflows"></a>Unterstütung von Formularen in Workflows
   In einem Workflow können vier Typen von Formularen verwendet werden: Zuordnung, Initiierung, Aufgabe und Änderung. Diese Formulartypen können auf eine ASPX-Formular oder ein InfoPath-Formular basieren. Das Maß an Unterstützung, die [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] enthält die sich auf eine bestimmte Form von mehreren Faktoren ab, abhängig ist die in den folgenden Tabellen beschrieben werden. Weitere Informationen zum Formular Workflowtypen finden Sie unter [Workflow Forms Overview](http://go.microsoft.com/fwlink/?LinkId=185228) auf der MSDN-Website.  

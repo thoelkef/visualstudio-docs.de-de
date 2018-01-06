@@ -14,11 +14,12 @@ caps.latest.revision: "22"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 39d3871fcfbd3702e2ad198f2061be41dc51ac18
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 5989a2c03c5a6e3f829c0183c797204e3311f5d2
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="function-debug-interface-access-sdk"></a>Funktion (Debug Interface Access SDK)
 Jede Funktion wird durch identifiziert eine `SymTagFunction` Symbol.  
@@ -46,7 +47,7 @@ Jede Funktion wird durch identifiziert eine `SymTagFunction` Symbol.
 |[IDiaSymbol::get_hasSetJump](../../debugger/debug-interface-access/idiasymbol-get-hassetjump.md)|`BOOL`|`TRUE`Wenn die Funktion enthält einen [Setjmp](/cpp/c-runtime-library/reference/setjmp) aufrufen (nur in DIA-SDK 8.0 oder höher).|  
 |[IDiaSymbol::get_interruptReturn](../../debugger/debug-interface-access/idiasymbol-get-interruptreturn.md)|`BOOL`|`TRUE`Wenn die Funktion eine Rückgabe von Interrupt (nur in DIA-SDK 8.0 oder höher).|  
 |[IDiaSymbol::get_intro](../../debugger/debug-interface-access/idiasymbol-get-intro.md)|`BOOL`|`TRUE`Wenn eine Funktion Intro virtuellen ist.|  
-|[IDiaSymbol::get_InlSpec](../../debugger/debug-interface-access/idiasymbol-get-inlspec.md)|`BOOL`|`TRUE`Wenn die Funktion mit einem der markiert wurde die [Inline __inline, \__forceinline](/cpp/cpp/inline-functions-cpp.md) Attribute.|  
+|[IDiaSymbol::get_InlSpec](../../debugger/debug-interface-access/idiasymbol-get-inlspec.md)|`BOOL`|`TRUE`Wenn die Funktion mit einem der markiert wurde die [Inline __inline, \__forceinline](/cpp/cpp/inline-functions-cpp) Attribute.|  
 |[IDiaSymbol::get_isNaked](../../debugger/debug-interface-access/idiasymbol-get-isnaked.md)|`BOOL`|`TRUE`Wenn die Funktion mit gekennzeichnet ist die [naked](/cpp/cpp/naked-cpp) Attribut (nur in DIA-SDK 8.0 oder höher).|  
 |[IDiaSymbol::get_isStatic](../../debugger/debug-interface-access/idiasymbol-get-isstatic.md)|`BOOL`|`TRUE`Wenn die Funktion statisch (nur in DIA-SDK 8.0 oder höher) ist.|  
 |[IDiaSymbol::get_length](../../debugger/debug-interface-access/idiasymbol-get-length.md)|`ULONGLONG`|Anzahl der Bytes der Funktionscode, ab Position.|  

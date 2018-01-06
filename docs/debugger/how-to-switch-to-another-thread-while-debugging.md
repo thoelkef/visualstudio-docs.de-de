@@ -18,17 +18,18 @@ caps.latest.revision: "26"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 14432de4519ed49292810af5f96399bbf87e43cd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0710bad95484ada62faa042edabf5b76ac459558
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="how-to-switch-to-another-thread-while-debugging-in-visual-studio"></a>Vorgehensweise: Wechseln Sie zu einem anderen Thread während des Debuggens in Visual Studio
 Beim Debuggen einer Multithreadanwendung können Sie eine von mehreren Methoden verwenden, um als den Thread zu wechseln, die Sie an einen anderen Thread gearbeitet haben.
 
 > [!NOTE]
-> Wenn Sie die Reihenfolge steuern, in denen Threads ausführen, möchten, müssen Sie [Einfrieren und Reaktivieren von Threads](/debugger/get-started-debugging-multithreaded-apps.md).
+> Wenn Sie die Reihenfolge steuern, in denen Threads ausführen, möchten, müssen Sie [Einfrieren und Reaktivieren von Threads](../debugger/get-started-debugging-multithreaded-apps.md).
 
 Bei der Überprüfung der Threads im Code-Editor und die anderen Multithread-debugging-Fenster, gibt der gelbe Pfeil des aktuellen Threads an. Ein grüner Pfeil in Form einer Welle gibt an, dass ein nicht-aktuellen Thread der aktuelle Kontext des Debuggers verfügt.
   

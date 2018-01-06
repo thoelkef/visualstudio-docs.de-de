@@ -12,21 +12,26 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b3081537b1704fd461a458798d646bf7eeb65f0a
-ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
+ms.workload: vssdk
+ms.openlocfilehash: 3677dd4ad6177f4085c907d1fceaaf37978bf769
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="creating-custom-project-and-item-templates"></a>Erstellen von benutzerdefinierten Projekt- und Elementvorlagen
-Das Visual Studio SDK enthält Projektvorlagen, die eine benutzerdefinierte Vorlage und eine benutzerdefinierte Elementvorlage erstellen. Diese Vorlagen enthalten einige allgemeine parameterersetzungen und als Zip-Dateien erstellen. Sie werden nicht automatisch bereitgestellt, und sie sind nicht verfügbar in der experimentellen Instanz. Sie müssen die ZIP-Datei kopieren Datei auf den Speicherort  
+
+Das Visual Studio SDK enthält Projektvorlagen, die eine benutzerdefinierte Vorlage und eine benutzerdefinierte Elementvorlage erstellen. Diese Vorlagen enthalten einige allgemeine parameterersetzungen und als Zip-Dateien erstellen. Sie werden nicht automatisch bereitgestellt, und sie sind nicht verfügbar in der experimentellen Instanz. Sie müssen die generierte Zip-Datei in Benutzerverzeichnis für Vorlagen kopieren.
   
- Die Vorlage erstellen Vorlagen können Sie die Vorlagen in größeren Erweiterungen enthalten. Dadurch können Sie die Versionskontrolle auf die Quelldateien zu implementieren, und erstellen eine Gruppe von Vorlagenprojekten in ein VSIX-Paket.  
+Die Vorlage erstellen Vorlagen können Sie die Vorlagen in größeren Erweiterungen enthalten. Dadurch können Sie die Versionskontrolle auf die Quelldateien zu implementieren, und erstellen eine Gruppe von Vorlagenprojekten in ein VSIX-Paket.  
   
- Für Szenarien mit Basisvorlage erstellen, sollten Sie verwenden die **Exportvorlage** -Assistenten, der in eine komprimierte Datei ausgegeben. Weitere Informationen zum Erstellen einer grundlegenden Vorlage finden Sie unter [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md).  
-  
- Ab Visual Studio 2017, Überprüfung von benutzerdefinierten Projekt- und Elementvorlagen nicht mehr erfolgt. Stattdessen muss die Erweiterung vorlagenmanifestdateien bereitstellen, die den Installationsspeicherort dieser Vorlagen zu beschreiben. Visual Studio-2017 können Sie um die VSIX-Erweiterungen zu aktualisieren. Wenn Sie die Erweiterung mithilfe einer MSI-Datei bereitstellen, müssen Sie die vorlagenmanifestdateien manuell generieren. Weitere Informationen finden Sie unter [Aktualisieren von benutzerdefinierten Projekt- und Elementvorlagen für Visual Studio-2017](../extensibility/upgrading-custom-project-and-item-templates-for-visual-studio-2017.md). Die Vorlage Manifestschema finden Sie im [Visual Studio Manifest Schemareferenz](../extensibility/visual-studio-template-manifest-schema-reference.md).  
-  
+Sie können auch eine Vorlage zum Installieren von NuGet-Pakete konfigurieren. Weitere Informationen finden Sie unter [NuGet-Pakete in Visual Studio-Vorlagen](/nuget/visual-studio-extensibility/visual-studio-templates).
+
+Für Szenarien mit Basisvorlage erstellen, sollten Sie verwenden die **Exportvorlage** -Assistenten, der in eine komprimierte Datei ausgegeben. Weitere Informationen zum Erstellen einer grundlegenden Vorlage finden Sie unter [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md).  
+
+> [!NOTE]
+> Ab Visual Studio 2017, Überprüfung von benutzerdefinierten Projekt- und Elementvorlagen nicht mehr erfolgt. Stattdessen muss die Erweiterung vorlagenmanifestdateien bereitstellen, die den Installationsspeicherort dieser Vorlagen zu beschreiben. Visual Studio-2017 können Sie um die VSIX-Erweiterungen zu aktualisieren. Wenn Sie die Erweiterung mithilfe einer MSI-Datei bereitstellen, müssen Sie die vorlagenmanifestdateien manuell generieren. Weitere Informationen finden Sie unter [Aktualisieren von benutzerdefinierten Projekt- und Elementvorlagen für Visual Studio-2017](../extensibility/upgrading-custom-project-and-item-templates-for-visual-studio-2017.md). Die Vorlage Manifestschema finden Sie im [Visual Studio Manifest Schemareferenz](../extensibility/visual-studio-template-manifest-schema-reference.md).
+
 ## <a name="creating-a-project-template"></a>Erstellen einer Projektvorlage  
   
 1.  Erstellen eines Projekts-Projektvorlage. Sie finden die Projektvorlage in der **neues Projekt** Dialogfeld in Visual Basic oder Visual C#- **Erweiterbarkeit** Ordner.  
@@ -81,5 +86,7 @@ Das Visual Studio SDK enthält Projektvorlagen, die eine benutzerdefinierte Vorl
   
 5.  Für ein Projektvorlagenprojekt Daraufhin sollte die Projektvorlage aufgeführt, die der **neues Projekt** Dialogfeld (**Datei > Neu > Projekt**) in den Visual c# oder Visual Basic-Knoten. Für ein Elementvorlagenprojekt sehen Sie die Elementvorlage aufgeführt, klicken Sie im Dialogfeld "Neues Element hinzufügen" (in der **Projektmappen-Explorer**, wählen Sie den Projektknoten, und klicken Sie auf **hinzufügen / neues Element**).  
   
-## <a name="see-also"></a>Siehe auch  
- [Referenz zu Visual Studio-Vorlagen](../ide/visual-studio-template-reference.md)
+## <a name="see-also"></a>Siehe auch
+
+[Visual Studio-vorlagenreferenz](../ide/visual-studio-template-reference.md)  
+[NuGet-Pakete in Visual Studio-Vorlagen](/nuget/visual-studio-extensibility/visual-studio-templates)

@@ -31,16 +31,17 @@ caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5f12b3af8f49270cc914e47a37077265794bf0be
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 84379f4847bb708bf8089ac32e261b459e87e1a1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="providing-packaging-and-deployment-information-in-project-items"></a>Bereitstellen von Pack- und Bereitstellungsinformationen in Projektelementen
   Alle SharePoint-Projektelemente im [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] verfügen über Eigenschaften, die Sie verwenden können, um zusätzliche Daten bereitzustellen, wenn das Projekt für SharePoint bereitgestellt wird. Dort stehen die folgenden Eigenschaften zur Auswahl:  
   
--   Funktionseigenschaften  
+-   Featureeigenschaften  
   
 -   Feature-Empfänger  
   

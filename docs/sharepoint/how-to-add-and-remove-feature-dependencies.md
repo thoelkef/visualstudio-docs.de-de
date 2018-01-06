@@ -21,11 +21,12 @@ caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d758c5d4f410881989492f64dd7a7e5b8dc73804
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 41fbe935bb6bde5a57e6277ffcf5e357cc53a391
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-add-and-remove-feature-dependencies"></a>Gewusst wie: Hinzufügen und Entfernen von Funktionsabhängigkeiten
   Die SharePoint-Funktion kann auf andere Funktionen für Funktionen oder Daten abhängen. In diesen Fällen können Sie diese andere Funktionen als Abhängigkeiten für Ihre Funktion markieren. Auf diese Weise wird sichergestellt, dass die SharePoint-Server, dass die abhängigen Funktionen aktiviert sind, bevor die Funktion aktiviert ist.  

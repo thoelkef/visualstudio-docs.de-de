@@ -16,11 +16,12 @@ caps.latest.revision: "5"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0650bfdb7961728fed34147c05f6333d8255e373
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: b452d28b1fc8173435b4de993561b59a680b0fed
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-run-code-when-a-sharepoint-project-is-deployed-or-retracted"></a>Gewusst wie: Ausführen von Code beim Bereitstellen oder Zurückziehen eines SharePoint-Projekts
   Wenn Sie zusätzliche Aufgaben ausführen, wenn ein SharePoint-Projekt bereitstellen oder zurückziehen möchten, können Sie Ereignisse behandeln, die von Visual Studio ausgelöst werden. Weitere Informationen finden Sie unter [Erweitern von SharePoint-Packen und-Bereitstellen](../sharepoint/extending-sharepoint-packaging-and-deployment.md).  

@@ -13,11 +13,12 @@ caps.latest.revision: "5"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 2733464db0ab6047af7c47fb8278d7126b41fe6c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: dotnet
+ms.openlocfilehash: 441ec5380e6b722b96fee731388b652a86a6828b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="browse-and-select-a-net-type-dialog-box-legacy"></a>Dialogfeld '.NET-Typ suchen und auswählen' (Vorgängerversion)
 In diesem Thema wird beschrieben, wie die **durchsuchen, und wählen Sie einen .NET-Typ** Dialogfeld in der Vorgängerversion [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)]. Verwenden Sie die Vorgängerversion von [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)], wenn Sie entweder auf [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] oder [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)] abzielen möchten.  
@@ -29,7 +30,7 @@ In diesem Thema wird beschrieben, wie die **durchsuchen, und wählen Sie einen .
 |Benutzeroberflächenelement|Beschreibung|  
 |----------------|-----------------|  
 |**Typname:**|Der Name des aktuell ausgewählten Typs.|  
-|**Typ**|Der linke Bereich enthält eine Strukturansicht der Assemblys, auf die verwiesen wird. Im rechten Bereich werden die Typen angezeigt, die für die Auswahl aus der im linken Bereich ausgewählten Assembly, auf die verwiesen wird, zur Verfügung stehen.|  
+|**Type**|Der linke Bereich enthält eine Strukturansicht der Assemblys, auf die verwiesen wird. Im rechten Bereich werden die Typen angezeigt, die für die Auswahl aus der im linken Bereich ausgewählten Assembly, auf die verwiesen wird, zur Verfügung stehen.|  
   
 ## <a name="see-also"></a>Siehe auch  
  [Verwenden des Aktivitätsdesigners der Vorgängerversion](../workflow-designer/using-the-legacy-activity-designer.md)

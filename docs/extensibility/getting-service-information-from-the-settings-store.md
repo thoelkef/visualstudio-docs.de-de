@@ -12,11 +12,12 @@ caps.latest.revision: "4"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a8508f0d017ba94981f5f54c7a8b63c7528ac6e9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: fdb7e95a4a4379dfbab3e56cc21e9515bb23ec0d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="getting-service-information-from-the-settings-store"></a>Die Informationen abrufen aus dem Einstellungen Store
 Alle verfügbaren Dienste suchen oder um zu bestimmen, ob ein bestimmter Dienst installiert ist, können Sie den Store Einstellungen verwenden. Sie müssen den Typ der Dienstklasse kennen.  

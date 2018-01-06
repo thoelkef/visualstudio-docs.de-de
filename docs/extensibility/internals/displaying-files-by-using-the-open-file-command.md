@@ -16,11 +16,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f2cbcb6e6239552ae32c817601634587a2fe3a41
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 75d714399f851aa479f398064e576790c793fffa
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="displaying-files-by-using-the-open-file-command"></a>Anzeigen von Dateien mit dem Befehl Open File
 Die folgenden Schritte beschreiben, wie die IDE behandelt die **Dateiöffnungsmodus** Befehl, der verfügbar ist die **Datei** im Menü [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Die Schritte werden auch beschrieben, wie Projekte auf Aufrufe reagieren soll, die von diesem Befehl stammen.  
@@ -52,7 +53,7 @@ Die folgenden Schritte beschreiben, wie die IDE behandelt die **Dateiöffnungsmo
   
 4.  Sobald die IDE stellt fest, welches Projekt die Datei geöffnet wird, ruft der <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.OpenItem%2A> Methode auf dieses Projekt.  
   
-5.  Das Projekt hat die Möglichkeit, die Datei mit einem projektspezifischen oder standard-Editor zu öffnen. Weitere Informationen finden Sie unter [Vorgehensweise: Öffnen projektspezifische Editoren](../../extensibility/how-to-open-project-specific-editors.md) und [wie: Standard-öffnen-Editoren](../../extensibility/how-to-open-standard-editors.md)bzw..  
+5.  Das Projekt hat die Möglichkeit, die Datei mit einem projektspezifischen oder standard-Editor zu öffnen. Weitere Informationen finden Sie unter [Vorgehensweise: Öffnen projektspezifische Editoren](../../extensibility/how-to-open-project-specific-editors.md) und [wie: Standard-öffnen-Editoren](../../extensibility/how-to-open-standard-editors.md)bzw.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Anzeigen von Dateien mit Öffnen mit (Befehl)](../../extensibility/internals/displaying-files-by-using-the-open-with-command.md)   

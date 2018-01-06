@@ -14,11 +14,12 @@ caps.latest.revision: "33"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 55b3a2cbaf98eeacb78f55bea23d638cd4a1ab6d
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: office
+ms.openlocfilehash: 8985b3bb6e20b24b86174286104158c8830de971
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="development-best-practices-for-com-vsto-and-vba--add-ins-in-office"></a>Entwicklung von bewährten Methoden für COM, VSTO und VBA-add-ins in Office
   Wenn Sie COM, VSTO oder VBA-add-ins für Office entwickeln, führen Sie die Entwicklung bewährten Methoden in diesem Artikel beschrieben.   Dies hilft sicherzustellen:
@@ -27,13 +28,13 @@ ms.lasthandoff: 11/11/2017
 -  Reduzierter Komplexität von Add-in-Bereitstellung für Ihre Benutzer und IT-Administratoren.
 -  Unbeabsichtigte Installation oder zur Laufzeit Fehler des add-Ins werden nicht ausgeführt.
 
->: Hinweis Die [Desktop Bridge](https://docs.microsoft.com/en-us/windows/uwp/porting/desktop-to-uwp-root) Vorbereitung auf den COM-VSTO oder VBA-add-in für Windows Store wird nicht unterstützt. COM, VSTO und VBA-add-ins kann nicht in den Windows Store oder im Office Store verteilt werden. 
+>: Hinweis Die [Desktop Bridge](/windows/uwp/porting/desktop-to-uwp-root) Vorbereitung auf den COM-VSTO oder VBA-add-in für Windows Store wird nicht unterstützt. COM, VSTO und VBA-add-ins kann nicht in den Windows Store oder im Office Store verteilt werden. 
   
 ## <a name="do-not-check-for-office-during-installation"></a>Aktivieren Sie nicht für Office während der installation  
  Wird nicht empfohlen, müssen das Add-in erkennt, ob es sich bei Office während des Installationsvorgangs-Add-in installiert ist. Wenn Office nicht installiert ist, können Sie das Add-In installieren, und der Benutzer wird in der Lage, darauf zugreifen, nachdem Office installiert ist. 
   
 ## <a name="use-embedded-interop-types-nopia"></a>Verwenden Sie eingebettete Interop-Typen (NoPIA)  
-Wenn Ihre Lösung verwendet .NET 4.0 oder höher verwenden eingebettete Interop-Typen (NoPIA) anstelle von abhängig von der Office Primary Interop Assemblys (PIA) redistributable. Mit Typ einbetten reduziert die Installationsgröße der Projektmappe und zukünftige Kompatibilität sichergestellt. Office 2010 ist die letzte Version von Office, die die verteilbare PIA geliefert. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Einbetten von Typinformationen aus Microsoft Office-Assemblys](https://msdn.microsoft.com/en-us/library/ee317478.aspx) und [Typäquivalenz und eingebettete Interop-Typen](https://docs.microsoft.com/en-us/dotnet/framework/interop/type-equivalence-and-embedded-interop-types). 
+Wenn Ihre Lösung verwendet .NET 4.0 oder höher verwenden eingebettete Interop-Typen (NoPIA) anstelle von abhängig von der Office Primary Interop Assemblys (PIA) redistributable. Mit Typ einbetten reduziert die Installationsgröße der Projektmappe und zukünftige Kompatibilität sichergestellt. Office 2010 ist die letzte Version von Office, die die verteilbare PIA geliefert. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Einbetten von Typinformationen aus Microsoft Office-Assemblys](https://msdn.microsoft.com/en-us/library/ee317478.aspx) und [Typäquivalenz und eingebettete Interop-Typen](/windows/uwp/porting/desktop-to-uwp-root).
 
 Wenn Ihre Lösung eine frühere Version von .NET verwendet, wird empfohlen, dass Sie die Projektmappe zur Verwendung von .NET 4.0 oder höher aktualisieren. Mithilfe von .NET 4.0 oder höher reduziert die Common Language Runtime-Komponenten auf neueren Versionen von Windows.
   
@@ -66,4 +67,4 @@ Um Informationen zur Unterstützung für Office-Client-Anwendungen (z. B. Word o
 >Wichtig: Microsoft verwaltet eine Liste der unterstützten-add-ins für Berichte zur hardwarebereitschaft und ISV-Kontaktinformationen. Um das Add-in aufgeführten zu erhalten, finden Sie unter [https://aka.ms/readyforwindows](https://aka.ms/readyforwindows).
 
 ## <a name="use-process-monitor-to-help-debug-installation-or-loading-issues"></a>Verwenden von Monitor "Prozess", um Installations- oder laden die Probleme Debuggen
-Wenn Ihr Add-in Kompatibilitätsprobleme während der Installation oder Load verfügt, beispielsweise kann sie Probleme mit der Datei oder ein Registrierungsschlüsselwert Zugriff verknüpft sein. Verwendung [Prozessmonitor](https://docs.microsoft.com/en-us/sysinternals/downloads/procmon) oder eine ähnliche Debugtool, sich anzumelden, und vergleichen das Verhalten für eine arbeitsumgebung, um das Problem zu identifizieren. 
+Wenn Ihr Add-in Kompatibilitätsprobleme während der Installation oder Load verfügt, beispielsweise kann sie Probleme mit der Datei oder ein Registrierungsschlüsselwert Zugriff verknüpft sein. Verwendung [Prozessmonitor](/sysinternals/downloads/procmon) oder eine ähnliche Debugtool, sich anzumelden, und vergleichen das Verhalten für eine arbeitsumgebung, um das Problem zu identifizieren.

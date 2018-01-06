@@ -15,11 +15,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9c4b91633c94b899157cef5418be0ac8a4d784f1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 9cc1e668f1d78bc6a1db66b6fd4dfebf77b0f6ff
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-debugger-glossary"></a>Glossar für Visual Studio-Debugger
 Im folgenden werden die Begriffe, die in der [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] Debugging-SDK.  
@@ -40,7 +41,7 @@ Im folgenden werden die Begriffe, die in der [!INCLUDE[vsprvs](../../../code-qua
  Debugging-Modul (DE)  
  Eine Komponente, die ermöglicht das Debuggen von einer Laufzeit-Architektur. Ein Debugmodul funktioniert in Verbindung mit dem Betriebssystem oder Interpreter und stellt z. B. Ausführung-Steuerelement, Haltepunkte und Ausdruck Auswertung Debugdienste bereit.  
   
- Dokumentenkontext  
+ Dokumentkontext  
  Stellt eine Abstraktion einer Position in einer Datei-Quelldokument bekannt, dass die Debugging-Modul bereit. Die meisten Sprachen ist ein Dokumentenkontext einer Position in einer Quelldatei. Für traditionelle Sprachen, für die die Quelldatei Text möglicherweise nicht möglicherweise ein Dokumentenkontext durch auch auf andere Weise dargestellt werden. Siehe auch *dokumentieren Position*.  
   
  Dokumentposition  

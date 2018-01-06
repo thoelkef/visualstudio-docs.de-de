@@ -13,11 +13,12 @@ caps.latest.revision: "32"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 70d16c90ad8ef4837ad9d131e46ed2027dd6c543
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 126bee146d1f53233db3c14672f80da4c0d60e9e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="project-subtypes-design"></a>Projekt Untertypen Entwurf
 Projekt Untertypen können VSPackages, Projekte, die basierend auf der Microsoft Build Engine (MSBuild) zu erweitern. Die Verwendung von Aggregation können Sie die Wiederverwendung des Großteil der verwalteten Core Projektsystem implementiert der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] noch immer noch das Verhalten für ein bestimmtes Szenario anpassen.  
@@ -80,7 +81,7 @@ Projekt-Untertyp Automatisierungsextender.
 ## <a name="supporting-interfaces"></a>Unterstützung von Schnittstellen  
  Das Basisprojekt delegiert Aufrufe zur Unterstützung von Schnittstellen hinzugefügt, indem ein Projektuntertyp, um verschiedene Aspekte des seine Implementierung zu erweitern. Dies schließt die Erweiterung von Projekt-Konfigurationsobjekte und verschiedene Eigenschaft Modellbrowser-Objekte. Diese Schnittstellen werden abgerufen, indem Aufrufen `QueryInterface` auf `punkOuter` (ein Zeiger auf die `IUnknown`) von der äußersten Projekt Untertyp Aggregator.  
   
-|Schnittstelle|Projektuntertyp|  
+|Interface|Projektuntertyp|  
 |---------------|---------------------|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFlavorCfg>|Ermöglicht den Untertyp des Projekts auf:<br /><br /> -Geben Sie eine Implementierung von <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg>.<br />-Steuern Sie den Start des Debuggers können Sie den Untertyp des Projekts eine eigene Implementierung der <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg>.<br />-Deaktivieren Sie die ausdrucksauswertung zur Entwurfszeit durch entsprechend behandeln die `DBGLAUNCH_DesignTimeExprEval` in seiner Implementierung von Groß-/Kleinschreibung <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg.QueryDebugLaunch%2A>.|  
 |<xref:EnvDTE80.IInternalExtenderProvider>|Ermöglicht den Untertyp des Projekts auf:<br /><br /> – Erweitern der <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID> des Projekts hinzufügen oder Entfernen von unabhängigen Konfigurationseigenschaften des Projekts.<br />-Erweitern Sie das Automation-Projektobjekt (<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID>) des Projekts.<br /><br /> Eigenschaftswerte, die oben genannten stammen aus <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2> Enumeration.|  

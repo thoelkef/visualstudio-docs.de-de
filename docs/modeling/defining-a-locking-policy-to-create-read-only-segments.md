@@ -11,11 +11,12 @@ caps.latest.revision: "12"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 0ac8ba75920c4b3b8964d473258c162c256139ca
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 93e4393a7b6731a10a00dc309353dba5870c269f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>Definieren einer Sperrrichtlinie zum Erstellen von schreibgeschützten Segmenten
 Die Unveränderlichkeit-API, der die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Visualization and Modeling SDK ermöglicht ein Programm, um die Sperre Teils oder aller eine domänenspezifische Sprache (DSL)-Modell, damit sie gelesen aber nicht geändert werden kann. Diese schreibgeschützte Option kann verwendet werden, z. B., damit ein Benutzer kann Kollegen dazu ein, mit einer Anmerkung versehen, und überprüfen einen DSL-Modell bitten, jedoch kann verhindern, dass sie die ursprüngliche ändern.  
@@ -80,7 +81,7 @@ partition.SetLocks(Locks.Delete);
   
 |Wert|D. h. wenn `IsLocked(Value)` ist "true"|  
 |-----------|------------------------------------------|  
-|Keine|Keine Einschränkung.|  
+|Keiner|Keine Einschränkung.|  
 |Eigenschaft|Domäneneigenschaften Elemente können nicht geändert werden. Dies gilt nicht für Eigenschaften, die von der Rolle einer Domäne-Klasse in einer Beziehung generiert werden.|  
 |Hinzufügen|Neue Elemente und Verknüpfungen können in einer Partition können nicht erstellt werden oder gespeichert.<br /><br /> Gilt nicht für `ModelElement`.|  
 |Verschieben|Element kann nicht zwischen Partitionen verschoben werden, wenn `element.IsLocked(Move)` ist "true", oder wenn `targetPartition.IsLocked(Move)` ist "true".|  

@@ -15,11 +15,12 @@ caps.latest.revision: "21"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b2217b77116ea561c32e96fcb7b92b520e680025
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c52a71ebb521f84f96bead09502389f6b395e90c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="deploying-custom-start-pages"></a>Bereitstellen von benutzerdefinierten Startseiten
 Sie können benutzerdefinierte Startseiten mithilfe des VSIX-Bereitstellung oder durch Kopieren der Dateien auf die korrekten Speicherorte auf dem Zielcomputer bereitstellen.  

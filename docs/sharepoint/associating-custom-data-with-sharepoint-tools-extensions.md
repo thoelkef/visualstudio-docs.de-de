@@ -21,11 +21,12 @@ caps.latest.revision: "27"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3a37551f56159aaa3cda03edb6ec964a79d56da9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 24525e553fabfd05972cbe2ee59fa1260d3b855b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="associating-custom-data-with-sharepoint-tools-extensions"></a>Zuordnen von benutzerdefinierten Daten zu SharePoint-Tools-Erweiterungen
   Sie können benutzerdefinierte Daten an bestimmte Objekte in der SharePoint-Tools-Erweiterungen hinzufügen. Dies ist hilfreich, wenn Daten in einem Teil der Erweiterung, die Sie später aus anderem Code in der Erweiterung zugreifen möchten. Anstatt zu implementieren eine benutzerdefinierte Methode zum Speichern und den Zugriff auf Daten, können die Daten mit einem Objekt in der Erweiterung zuordnen und klicken Sie dann die Daten aus dem gleichen Objekt später abrufen.  
@@ -74,9 +75,9 @@ ms.lasthandoff: 10/31/2017
   
  Um benutzerdefinierte Daten aus einem Objekt in einer SharePoint-Tools-Erweiterung abzurufen, rufen die <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> Eigenschaft des Objekts und verwenden Sie dann eine der folgenden Methoden:  
   
--   <xref:Microsoft.VisualStudio.SharePoint.IAnnotationDictionary.TryGetValue%2A>. Diese Methode gibt **"true"** Wenn das Objekt vorhanden ist, oder **"false"** ist nicht vorhanden. Sie können diese Methode verwenden, beim Abrufen von Instanzen von Werttypen oder Referenztypen.  
+-   <xref:Microsoft.VisualStudio.SharePoint.IAnnotationDictionary.TryGetValue%2A> Diese Methode gibt **"true"** Wenn das Objekt vorhanden ist, oder **"false"** ist nicht vorhanden. Sie können diese Methode verwenden, beim Abrufen von Instanzen von Werttypen oder Referenztypen.  
   
--   <xref:Microsoft.VisualStudio.SharePoint.IAnnotationDictionary.GetValue%2A>. Diese Methode gibt die Daten-Objekt, wenn er beendet wird, oder **null** ist nicht vorhanden. Sie können diese Methode verwenden, nur für das Abrufen von Instanzen von Verweistypen.  
+-   <xref:Microsoft.VisualStudio.SharePoint.IAnnotationDictionary.GetValue%2A> Diese Methode gibt die Daten-Objekt, wenn er beendet wird, oder **null** ist nicht vorhanden. Sie können diese Methode verwenden, nur für das Abrufen von Instanzen von Verweistypen.  
   
  Im folgenden Codebeispiel wird bestimmt, ob ein bestimmtes Datenobjekt bereits ein Projektelement zugeordnet ist. Wenn das Datenobjekt nicht bereits das Projektelement zugeordnet, wird der Code das Objekt, das fügt die <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> Eigenschaft des Projektelements. Dieses Beispiel im Kontext eines umfangreicheren Beispiels finden Sie unter [wie: Hinzufügen einer Eigenschaft zu einem benutzerdefinierten SharePoint-Projektelementtyp](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md).  
   

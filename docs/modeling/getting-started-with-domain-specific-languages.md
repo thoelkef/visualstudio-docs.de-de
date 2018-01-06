@@ -11,11 +11,12 @@ caps.latest.revision: "16"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 4dd9df4832e08d33a8209181e47a38101a5658f9
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 5703410772945a95ed0efea95a665b2a106e0ce7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="getting-started-with-domain-specific-languages"></a>Erste Schritte mit domänenspezifischen Sprachen
 In diesem Thema wird erläutert, die grundlegenden Konzepte in definieren und verwenden eine domänenspezifische Sprache (DSL) mit den Modellierungs-SDK für Visual Studio erstellt wird.  
@@ -40,7 +41,7 @@ In diesem Thema wird erläutert, die grundlegenden Konzepte in definieren und ve
  Der Rest des in dieser Übersicht wird eine exemplarische Vorgehensweise, die die grundlegenden Operationen des Erstellens und Verwendens einer domänenspezifischen Sprache führt [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
 ## <a name="prerequisites"></a>Erforderliche Komponenten  
- Zum Definieren einer DSL müssen folgende Komponenten installiert sein:  
+ Zur Definition einer DSL müssen folgende Komponenten installiert sein:  
   
 |||  
 |-|-|  

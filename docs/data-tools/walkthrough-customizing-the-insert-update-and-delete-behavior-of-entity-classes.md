@@ -15,11 +15,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 2727f17665d845029fcf32dbcd12dd7603dad519
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: data-storage
+ms.openlocfilehash: e4edcc21986ae0fd033228971697057932e63670
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="walkthrough-customizing-the-insert-update-and-delete-behavior-of-entity-classes"></a>Exemplarische Vorgehensweise: Anpassen der Insert, update und delete Verhalten von Entitätsklassen
 Die [LINQ to SQL-Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) bietet eine visuelle Entwurfsoberfläche zum Erstellen und Bearbeiten von [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] Klassen (Entität), die auf Objekte in einer Datenbank basieren. Mithilfe von [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index), können Sie LINQ-Technologie für den Zugriff auf SQL-Datenbanken. Weitere Informationen finden Sie unter [LINQ (Language-Integrated Query, sprachintegrierte Abfrage)](/dotnet/csharp/linq/).  
@@ -264,7 +265,7 @@ Je nach den Anforderungen Ihrer Anwendung sollten Sie nach dem Erstellen von [!I
   
 -   Implementieren der Parallelitätsprüfung während der Durchführung von Updates. Informationen finden Sie unter [vollständige Parallelität: Übersicht über](/dotnet/framework/data/adonet/sql/linq/optimistic-concurrency-overview).  
   
--   Hinzufügen von LINQ-Abfragen, um Daten zu filtern. Informationen finden Sie unter [Einführung in LINQ-Abfragen (c#)](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries.md).  
+-   Hinzufügen von LINQ-Abfragen, um Daten zu filtern. Informationen finden Sie unter [Einführung in LINQ-Abfragen (c#)](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries).  
   
 ## <a name="see-also"></a>Siehe auch
 [LINQ to SQL-Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)     

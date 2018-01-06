@@ -16,11 +16,12 @@ caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e8a9f1ac258f6501aedb2fd89ce21514d785b25f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 240518544f906e68ad443adf55fef20ef2bac879
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="projectitem-element"></a>ProjectItem-Element
   Stellt ein SharePoint-Projektelement dar. Dies ist das erforderliche Stammelement der SPDATA-Datei.  
@@ -54,7 +55,7 @@ ms.lasthandoff: 10/31/2017
 |**FeatureReceiverAssembly**|Optionale **xs: String** Attribut.<br /><br /> Gibt den vollqualifizierten Namen einer Assembly, die einen Funktionsempfänger für diese SharePoint-Projektelements definiert. Weitere Informationen zum Feature Empfänger finden Sie unter [Bereitstellen von Pack- und Bereitstellungsinformationen in Projektelementen](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md). Weitere Informationen zu vollqualifizierten Assemblynamen finden Sie unter [Assemblynamen](/dotnet/framework/app-domains/assembly-names).|  
 |**SupportedTrustLevels**|Optionale **xs: String** Attribut.<br /><br /> Gibt die Vertrauensebenen, die diese SharePoint-Projektelement unterstützt. Dieser Wert kann eine der folgenden Zeichenfolgen: Sandkasten, FullTrust oder alle. Der Wert All Sandkasten und FullTrust gibt.<br /><br /> In einem benutzerdefinierten SharePoint-Projektelementtyp, der Wert dieses Attributs entspricht dem Wert, den Sie zum Zuweisen der <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition.SupportedTrustLevels%2A> Eigenschaft in der Implementierung von der <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider.InitializeType%2A> Methode. Wenn Sie einen anderen Wert für dieses Attribut angeben, überschreibt Visual Studio den Wert so, dass die gleiche Vertrauensebene angegeben wird, die Sie, in angeben der <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition.SupportedTrustLevels%2A> Eigenschaft.|  
 |**SupportedDeploymentScopes**|Optionale **xs: String** Attribut.<br /><br /> Gibt die Bereitstellungsbereiche, die diese SharePoint-Projektelement unterstützt. Dieser Wert ist eine durch Trennzeichen getrennte Zeichenfolge, die besteht aus einem oder mehreren der folgenden Zeichenfolgen: Farm, Website, Web, WebApplication oder Paket. Z. B. "Web Site".<br /><br /> In einem benutzerdefinierten SharePoint-Projektelementtyp, der Wert dieses Attributs entspricht dem Wert, den Sie zum Zuweisen der <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition.SupportedDeploymentScopes%2A> Eigenschaft in der Implementierung von der <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider.InitializeType%2A> Methode. Wenn Sie einen anderen Wert für dieses Attribut angeben, überschreibt Visual Studio den Wert so, dass die gleiche Vertrauensebene angegeben wird, die Sie, in angeben der <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition.SupportedDeploymentScopes%2A> Eigenschaft.|  
-|**Typ**|Erforderliche **xs: String** Attribut.<br /><br /> Der Bezeichner für die SharePoint-Projektelement. In einem benutzerdefinierten SharePoint-Projektelementtyp der Bezeichner ist die Zeichenfolge, die Sie zum Übergeben der <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute>. Weitere Informationen finden Sie unter [wie: Definieren Sie einen SharePoint-Projektelementtyp](../sharepoint/how-to-define-a-sharepoint-project-item-type.md).<br /><br /> Eine Liste der Bezeichner für den integrierten SharePoint-Projektelemente, die mit Visual Studio enthalten, finden Sie unter [Erweitern von SharePoint-Projektelemente](../sharepoint/extending-sharepoint-project-items.md).|  
+|**Type**|Erforderliche **xs: String** Attribut.<br /><br /> Der Bezeichner für die SharePoint-Projektelement. In einem benutzerdefinierten SharePoint-Projektelementtyp der Bezeichner ist die Zeichenfolge, die Sie zum Übergeben der <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute>. Weitere Informationen finden Sie unter [wie: Definieren Sie einen SharePoint-Projektelementtyp](../sharepoint/how-to-define-a-sharepoint-project-item-type.md).<br /><br /> Eine Liste der Bezeichner für den integrierten SharePoint-Projektelemente, die mit Visual Studio enthalten, finden Sie unter [Erweitern von SharePoint-Projektelemente](../sharepoint/extending-sharepoint-project-items.md).|  
   
 ### <a name="child-elements"></a>Untergeordnete Elemente  
   

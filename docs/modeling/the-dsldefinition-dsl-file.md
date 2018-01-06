@@ -12,11 +12,12 @@ caps.latest.revision: "22"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: e20d37d0e1162b49ca0fc92f92056b3541698454
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 3e1f9bc81c0d13acd1fb9ac1a22f33262e4644f8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="the-dsldefinitiondsl-file"></a>Die Datei DslDefinition.dsl
 Dieses Thema beschreibt die Struktur der Datei DslDefinition.dsl im Dsl-Projekt eine [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] Lösung, die definiert eine *einer domänenspezifischen Sprache*. Die Datei DslDefinition.dsl beschreibt die Klassen und Beziehungen für eine domänenspezifische Sprache, zusammen mit dem Diagramm, die Formen, die Connectors, die Serialisierungsformat und **Toolbox** der domänenspezifische Sprache und die zugehörige Bearbeitungstools. In einer Projektmappe für eine domänenspezifischen Sprache wird der Code, der diese Tools definiert, entsprechend den Informationen in der Datei "DslDefinition.dsl" generiert.  
@@ -197,7 +198,7 @@ Dieses Thema beschreibt die Struktur der Datei DslDefinition.dsl im Dsl-Projekt 
   
 -   **IsElementName**. Wird dieses Attribut auf "true" festgelegt, wird sein Wert automatisch auf einen eindeutigen Wert eingestellt, wenn eine Instanz der übergeordneten Klasse erstellt wird. Dieses Attribut kann nur für eine Eigenschaft in jeder Klasse, die vom Typ Zeichenfolge sein muss, auf "true" festgelegt werden. Im Komponentendiagramm-Beispiel ist `Name` der `NamedElement`-Eigenschaft in `IsElementName` auf "true" festgelegt. Wenn ein Benutzer ein `Component`-Element (das von `NamedElement` erbt) erstellt, wird der Name automatisch auf einen Wert wie "Component6" initialisiert.  
   
--   `DefaultValue`. Wenn Sie dieses Attribut angegeben haben, wird der festgelegte Wert diesem Attribut für neue Instanzen dieser Klasse zugewiesen. Wenn `IsElementName` festgelegt wird, gibt das DefaultValue-Attribut den ersten Teil der neuen Zeichenfolge an.  
+-   `DefaultValue` Wenn Sie dieses Attribut angegeben haben, wird der festgelegte Wert diesem Attribut für neue Instanzen dieser Klasse zugewiesen. Wenn `IsElementName` festgelegt wird, gibt das DefaultValue-Attribut den ersten Teil der neuen Zeichenfolge an.  
   
 -   **Kategorie** ist der Header die Eigenschaft unter dem in erscheint der **Eigenschaften** Fenster.  
   

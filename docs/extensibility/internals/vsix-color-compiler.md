@@ -11,11 +11,12 @@ caps.latest.revision: "6"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b7ff76cd40f80f6855de72795b08e70fb87ed0f6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 8cdf8fd3d32678cc80d215d77e34cd7987d7bd29
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="vsix-color-compiler"></a>Die Farbe Compiler VSIX
 Das Visual Studio-Erweiterung Farbe Compiler-Tool ist eine Konsolenanwendung, die eine XML-Datei, die Farben für vorhandene Visual Studio-Designs darstellt akzeptiert und wandelt es eine PKGDEF-Datei, damit diese Farben in Visual Studio verwendet werden können. Da es Unterschiede zwischen XML-Dateien einfach ist, eignet sich dieses Tool zum Verwalten von benutzerdefinierten Farben in der quellcodeverwaltung. Es kann auch in Buildumgebungen eingebunden werden soll, sodass die Ausgabe des Builds eine gültige PKGDEF-Datei ist.  
@@ -55,7 +56,7 @@ Das Visual Studio-Erweiterung Farbe Compiler-Tool ist eine Konsolenanwendung, di
 |||  
 |-|-|  
 |**Attribut**|**Definition**|  
-|Name|[Erforderlich] Der Name des Designs|  
+|name|[Erforderlich] Der Name des Designs|  
 |GUID|[Erforderlich] Das Design-GUID (müssen mit GUID Formatierung)|  
   
  Wenn Sie benutzerdefinierte Farben für Visual Studio zu erstellen, müssen diese Farben für die folgenden Designs definiert werden. Wenn keine Farben für ein bestimmtes Design vorhanden sind, versucht Visual Studio die fehlenden Farben aus das Design "hell" geladen.  
@@ -81,7 +82,7 @@ Das Visual Studio-Erweiterung Farbe Compiler-Tool ist eine Konsolenanwendung, di
 |||  
 |-|-|  
 |**Attribut**|**Definition**|  
-|Name|[Erforderlich] Der Name der Kategorie|  
+|name|[Erforderlich] Der Name der Kategorie|  
 |GUID|[Erforderlich] Die Kategorie-GUID (müssen mit GUID Formatierung)|  
   
  **Farbe**  
@@ -98,7 +99,7 @@ Das Visual Studio-Erweiterung Farbe Compiler-Tool ist eine Konsolenanwendung, di
 |||  
 |-|-|  
 |**Attribut**|**Definition**|  
-|Name|[Erforderlich] Der Name der Farbe|  
+|name|[Erforderlich] Der Name der Farbe|  
   
  **Hintergrund und/oder Vordergrund**  
   

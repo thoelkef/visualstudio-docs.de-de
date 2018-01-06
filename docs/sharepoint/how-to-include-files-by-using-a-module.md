@@ -20,11 +20,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 848fc50b8886cc736c5a7a856beec238c084d879
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 3dca463352d5e698b74ecc6bda2a1579e3290513
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-include-files-by-using-a-module"></a>Gewusst wie: Einschließen von Dateien mithilfe eines Moduls
   *Module* (nicht zu verwechseln mit [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] Module) sind Container, mit denen Sie z. B. Gestaltungsvorlagen ASPX-Dateien, Textdateien oder Bilder in SharePoint bereitstellen können.  
@@ -59,7 +60,7 @@ ms.lasthandoff: 10/31/2017
   
      Wenn Sie eine Datei zum Projekt hinzufügen, wird ein entsprechender Eintrag automatisch an das Modul "Elements.xml"-Datei hinzugefügt. Wenn das Projekt bereitgestellt wird, werden die Dateien auf SharePoint-Server, relativ zum Stammverzeichnis des Projekts, das durch angegeben wird kopiert die **Datei** des Elements **Url** Attribut, z. B. `Url="Module1/New Folder/SomeFile.doc`. Wenn Sie den Bereitstellungsspeicherort für eine Datei ändern möchten, entweder verschieben Sie sie in einen anderen Ordner im **Projektmappen-Explorer** oder ändern dessen **Url** Einstellung.  
   
-8.  Für alle Dateien, die in einer Dokumentbibliothek angezeigt werden sollen, fügen die `Type="GhostableInLibrary"` -Attributs auf ihren Eintrag in der Datei "Elements.xml". Beispiel:  
+8.  Für alle Dateien, die in einer Dokumentbibliothek angezeigt werden sollen, fügen die `Type="GhostableInLibrary"` -Attributs auf ihren Eintrag in der Datei "Elements.xml". Ein auf ein Objekt angewendeter  
   
     ```  
     <File Path="Module1\Some Folder\SomePage.aspx" Url="Module1/Some Folder/SomePage.aspx" Type="GhostableInLibrary" />  

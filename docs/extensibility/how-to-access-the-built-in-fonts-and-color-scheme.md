@@ -16,11 +16,12 @@ caps.latest.revision: "23"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ae5c64d0272b998d27a9eb5753c04ae764c3af8f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c5d8af96857fa3e3c02ce8ea29711eaffbb532e9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-access-the-built-in-fonts-and-color-scheme"></a>Vorgehensweise: Zugriff auf die integrierten Schriftarten und Farbschemas
 Die integrierte Entwicklungsumgebung (IDE) von Visual Studio verfügt über ein Schema von Schriftarten und Farben, das im Editor-Fenster zugeordnet ist. Sie erreichen dieses Schema über die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> Schnittstelle.  
@@ -58,11 +59,11 @@ Die integrierte Entwicklungsumgebung (IDE) von Visual Studio verfügt über ein 
   
 2.  Füllen Sie die Registrierung, um die vordefinierten Schriftarten und Farbschemas mit vier Werten verwenden:  
   
-    |Name|Typ|Daten|Beschreibung|  
+    |name|Typ|Daten|Beschreibung|  
     |----------|----------|----------|-----------------|  
     |Kategorie|REG_SZ|GUID|Eine beliebige GUID, die eine Kategorie identifiziert, die die vordefinierten Schriftarten und Farbschemas enthält.|  
     |Package|REG_SZ|GUID|{F5E7E71D-1401-11D1-883B-0000F87579D2}<br /><br /> Diese GUID wird von allen VSPackages verwendet, die die Standardkonfigurationen für Schriftart und Farbe zu verwenden.|  
-    |"NameID"|REG_DWORD|ID|Die Ressourcen-ID, der einen lokalisierbaren Kategorienamen im VSPackage.|  
+    |"NameID"|REG_DWORD|Id|Die Ressourcen-ID, der einen lokalisierbaren Kategorienamen im VSPackage.|  
     |ToolWindowPackage|REG_SZ|GUID|Die GUID der VSPackage-Implementierung der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> Schnittstelle.|  
   
 3.  

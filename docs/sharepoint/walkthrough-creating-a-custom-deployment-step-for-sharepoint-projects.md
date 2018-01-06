@@ -18,11 +18,12 @@ caps.latest.revision: "63"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b7375071522ea59c9c00a5fa94277a3817438d25
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 1a2659e1c6ebf7bee8320f10549c2a8914010648
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects"></a>Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Bereitstellungsschritts für SharePoint-Projekte
   Wenn Sie ein SharePoint-Projekt bereitstellen, führt Visual Studio eine Reihe von Schritten zur Bereitstellung in einer bestimmten Reihenfolge. Visual Studio enthält viele integrierte Bereitstellungsschritte, aber Sie können auch eigene erstellen.  

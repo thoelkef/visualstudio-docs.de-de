@@ -20,11 +20,12 @@ caps.latest.revision: "60"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1033f33835dfdeefbb4791e356ca50a577b789ab
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 05a0f2a997791564a8358287ff1d632c3ff7bffe
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1"></a>Exemplarische Vorgehensweise: Erstellen eines Projektelements "Websitespalte" mit einer Projektvorlage, Teil 1
   SharePoint-Projekte sind Container für SharePoint-Projektelemente. Sie können das SharePoint-Projektsystem in Visual Studio erweitern, indem Sie eigene SharePoint-Projektelementtypen erstellen und diese dann einer Projektvorlage zuordnen. In dieser exemplarischen Vorgehensweise definieren Sie einen Projektelementtyp zum Erstellen einer Websitespalte. Anschließend erstellen Sie eine Projektvorlage, mit der ein neues Projekt erstellt werden kann, das ein Projektelement einer Websitespalte enthält.  
@@ -302,7 +303,7 @@ ms.lasthandoff: 10/31/2017
   
 2.  Speichern und schließen Sie die Datei.  
   
-#### <a name="to-edit-the-feature1feature-file"></a>So bearbeiten Sie die Datei Feature1.feature  
+#### <a name="to-edit-the-feature1feature-file"></a>So bearbeiten Sie die Datei „Feature1.feature“  
   
 1.  Ersetzen Sie im SiteColumnProjectTemplate-Projekt den Inhalt der Feature1.feature-Datei durch das folgende XML.  
   
@@ -723,7 +724,7 @@ ms.lasthandoff: 10/31/2017
     > [!NOTE]  
     >  Die **Website-URL** -Eigenschaft ist standardmäßig leer, da die Projektvorlage für Websitespalten bietet einen Assistenten zum Erfassen dieses Werts, wenn das Projekt erstellt wird. Wie Sie einen Assistenten hinzufügen, die diesen Wert vom Entwickler abgefragt und anschließend im neuen Projekt konfiguriert diese Eigenschaft finden Sie unter [Exemplarische Vorgehensweise: Erstellen von Projektelement einer Websitespalte mit einer Projektvorlage, Teil 2](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md).  
   
-3.  Wählen Sie die **F5** Schlüssel.  
+3.  Drücken Sie die Taste **F5**.  
   
      Die Websitespalte wird verpackt und auf der SharePoint-Website, die im angegebenen bereitgestellt der **Website-URL** -Eigenschaft des Projekts. Im Webbrowser wird die Standardseite dieser Website geöffnet.  
   

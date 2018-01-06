@@ -12,14 +12,15 @@ caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c05905e8ffeec3aa699aac9dfa46c4b017b86be5
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: multiple
+ms.openlocfilehash: 9ee45132e4acf45bccffd3e05808defd3c7ced6d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="view-snapshots-using-intellitrace-step-back"></a>Anzeigen von Momentaufnahmen mithilfe von IntelliTrace-Schritt-zurück
-IntelliTrace-Schritt-Back erstellt eine Momentaufnahme Ihrer Anwendung bei jeder Haltepunkt und der Debugger automatisch bei Schritt-Ereignis. Die erfassten Momentaufnahmen können Sie zurückkehren zum vorherigen Haltepunkte oder Schritte und den Status der Anwendung anzeigen, wie dies in der Vergangenheit war. IntelliTrace Schritt Back kann sparen Sie Zeit, wenn Sie möchten, finden in den vorherigen Anwendungszustand aber nicht angezeigt werden sollen, Debuggen neu starten, oder erstellen Sie die gewünschte app-Status erneut.
+IntelliTrace-Schritt-Back erstellt eine Momentaufnahme Ihrer Anwendung bei jeder Haltepunkt und der Debugger automatisch bei Schritt-Ereignis. Durch die erfassten Momentaufnahmen können Sie zu vorherigen Haltepunkten oder Schritten zurückkehren und sich den Zustand der Anwendung so anzeigen lassen, wie er zuvor war. Mit dem IntelliTrace-Feature „Step-back“ können Sie Zeit sparen, wenn Sie den vorherigen Zustand der Anwendung anzeigen oder diesen wiederherstellen, aber das Debuggen nicht erneut starten möchten.
 
 IntelliTrace-Schritt-wieder wird ab Visual Studio Enterprise 2017 Version 15.5 und höher verfügbar und erfordert Anniversary-Update für Windows 10 oder höher. Das Feature ist derzeit für das Debuggen von ASP.NET, WinForms, WPF, verwaltete Konsolen-apps und verwalteten Klassenbibliotheken unterstützt. Debuggen von ASP.NET Core, .NET Core oder uwp-Anwendungen ist derzeit nicht unterstützt. 
   
@@ -38,7 +39,7 @@ Aus Gründen der Leistung werden Momentaufnahmen nicht implementiert, wenn Sie s
 
 ## <a name="navigate-and-view-snapshots"></a>Navigieren und Anzeigen von Momentaufnahmen
 
-Sie können Navigieren zwischen Ereignissen bei der Verwendung der **Schritt zurück (Alt + [)** und **Schritt vorwärts (Alt +])** Schaltflächen in der Debug-Symbolleiste. Diese Schaltflächen navigieren, die Ereignisse, die in der **Ereignisse** Registerkarte der **Fenster "Diagnosetools"**. Verlaufsbezogenes debugging für das ausgewählte Ereignis ausführen in Einzelschritten vorwärts oder rückwärts auf ein Ereignis automatisch aktiviert werden.
+Sie können Navigieren zwischen Ereignissen bei der Verwendung der **Schritt zurück (Alt + [)** und **Schritt vorwärts (Alt +])** Schaltflächen in der Debug-Symbolleiste. Diese Schaltflächen navigieren, die Ereignisse, die in der **Ereignisse** Registerkarte der **Fenster "Diagnosetools"**. Wenn Sie mit „Schritt zurück“ oder „Schritt vor“ zu einem Ereignis navigieren, wird das verlaufsbezogene Debuggen für das ausgewählte Ereignis automatisch aktiviert.
 
 ![Schritt rückwärts und Vorwärts-Schaltflächen](../debugger/media/intellitrace-step-back-icons-description.png "Schritt rückwärts und Schritt vorwärts-Schaltflächen")
 
@@ -85,7 +86,7 @@ Die Auswirkung auf die gesamtleistung der schrittweisen Ausführung hängt von d
         1. Installieren Sie das Toolset VC++ 2015.3 v140 für Desktop (x86, x64) aus dem Visual Studio-Installer.
         2. Erstellen Sie die Zielanwendung.
         3. Über die Befehlszeile verwenden Sie das Tool Editbin Festlegen der `Largeaddressaware` der ausführbaren Zieldatei zu kennzeichnen. Beispielsweise können mit diesem Befehl (nach dem Aktualisieren des Pfads): "C:\Program Files (x86) \Microsoft Visual Studio\Preview\Enterprise\VC\Tools\MSVC\14.12.25718\bin\Hostx86\x86\editbin.exe" LARGEADDRESSAWARE "C:\Path\To\Application\app.exe".
-        4. Drücken Sie zum Starten des Debugvorgangs **F5**. Jetzt sind Momentaufnahmen Debuggersprung und Haltepunkte generiert.
+        4. Drücken Sie **F5**, um mit dem Debuggen zu beginnen. Jetzt sind Momentaufnahmen Debuggersprung und Haltepunkte generiert.
 
         > [!Note]
         > Die `Largeaddressaware` Flag muss festgelegt werden jedes Mal, die die ausführbare Datei mit Änderungen neu erstellt wird.

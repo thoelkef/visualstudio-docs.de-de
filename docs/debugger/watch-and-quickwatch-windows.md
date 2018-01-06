@@ -20,11 +20,12 @@ caps.latest.revision: "45"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8792c9ed175d2ced5d9c10cc19b2d222f4d839a8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 086d7b103095f6cbc9d90c962fd0ad31af964f54
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="set-a-watch-on-variables-using-the-watch-and-quickwatch-windows-in-visual-studio"></a>Legen Sie eine Überwachung auf Variablen mithilfe der überwachen "und" Schnellüberwachung Fenstern in Visual Studio
 Während des Debuggens, können Sie die **Überwachen** (**Debuggen > Windows > Überwachen > überwachen (1, 2, 3, 4)**) und **Schnellüberwachung** (mit der rechten Maustaste auf die Variable /  **Debuggen > Schnellüberwachung**) Windows, Variablen und Ausdrücke zu beobachten.  Der Unterschied besteht darin, dass im Fenster **Überwachen** mehrere Variablen angezeigt werden können, im Fenster **Schnellüberwachung** hingegen jeweils nur eine Variable.
@@ -232,7 +233,7 @@ public class Program
 ## <a name="dynamic-view-and-the-watch-window"></a>Dynamische Ansicht und das Fenster "überwachen"  
  Einige Skriptsprachen (z. B. JavaScript oder Python) verwenden eine dynamische oder [Ente eingeben](https://en.wikipedia.org/wiki/Duck_typing), und .NET-Sprachen (in Version 4.0 und höher) unterstützen Objekte, die in schwer beobachtet die normalen Debugfenstern sind, da sie möglicherweise Laufzeiteigenschaften und Methoden, die nicht angezeigt werden können.  
   
- Wenn das Fenster "überwachen" zeigt ein Objekt erstellt, die von einem Typ, der implementiert die [IDynamicMetaObjectProvider-Schnittstelle](https://docs.microsoft.com/en-us/dotnet/api/system.dynamic.idynamicmetaobjectprovider?view=netframework-4.7), der Debugger Fügt eine spezielle **dynamische Ansicht** Knoten, um die **"Auto"**  anzuzeigen. Der Knoten zeigt die dynamischen Member des dynamischen Objekts an, ermöglicht jedoch keine Bearbeitung der Memberwerte.  
+ Wenn das Fenster "überwachen" zeigt ein Objekt erstellt, die von einem Typ, der implementiert die [IDynamicMetaObjectProvider-Schnittstelle](/dotnet/api/system.dynamic.idynamicmetaobjectprovider?view=netframework-4.7), der Debugger Fügt eine spezielle **dynamische Ansicht** Knoten, um die **"Auto"**  anzuzeigen. Der Knoten zeigt die dynamischen Member des dynamischen Objekts an, ermöglicht jedoch keine Bearbeitung der Memberwerte.  
   
  Wenn Sie in einer **dynamischen Ansicht** mit der rechten Maustaste auf ein untergeordnetes Element klicken und **Überwachung hinzufügen**auswählen, fügt der Debugger eine neuen Überwachungsvariable ein, die ein Objekt in ein dynamisches Objekt umwandelt. Mit anderen Worten: **object Name** wird zu (**(dynamic)object).Name**.  
   

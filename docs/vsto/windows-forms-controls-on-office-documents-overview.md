@@ -32,11 +32,12 @@ caps.latest.revision: "76"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b8d086aec822d0e2e9ecc80834703cc5481f9eef
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 106b61c18b9124a72c1b149dcab04e30be5f25f2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="windows-forms-controls-on-office-documents-overview"></a>Übersicht über Windows Forms-Steuerelemente in Office-Dokumenten
   Windows Forms-Steuerelemente sind Objekte, mit denen Benutzer arbeiten können, um Daten einzugeben oder zu ändern. In Projekten auf Dokumentebene für Microsoft Office Excel und Microsoft Office Word können Sie dem Dokument oder der Arbeitsmappe in Ihrem Projekt zur Entwurfszeit Windows Forms-Steuerelemente hinzufügen, Sie können diese Steuerelemente aber auch zur Laufzeit programmgesteuert hinzufügen. Sie können diese Steuerelemente jedem geöffneten Dokument oder Arbeitsblatt zur Laufzeit über ein VSTO-Add-In für Excel oder Word programmgesteuert hinzufügen.  

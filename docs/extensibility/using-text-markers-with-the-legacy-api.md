@@ -13,11 +13,12 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 64f4d7f7e4a71c1d304bfa5045175fd613bcb539
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 98c889bc1bc128a941f726348781a633799475de
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-text-markers-with-the-legacy-api"></a>Verwenden von Text Marker mit der Legacy-API
 Ein Marker Text ist, einen unverankerten Textbereich in einem Puffer, der die Anzeige beeinträchtigen können und das Verhalten eines Bereichs des Texts. Marker sind Haltepunkte, Lesezeichen, wellenförmige Unterstreichung und nur-Lese Regionen. Text-Marker sind im Grunde Syntaxfarben unterscheiden. Syntaxfarben ist eine schnelle Möglichkeit, die Sprachsyntax kommunizieren, die dem Textbereich zugeordnet ist. Syntaxfarben wird in der Regel angefordert, wenn Windows den Bildschirm aktualisiert, wenn die Geschwindigkeit wichtig ist. Syntaxfarben ändert nur die Farbe des Texts. Text-Marker können viele andere Texteigenschaften ändern. Text-Marker "float" und besonderes Verhalten angewendet werden können und Farbgebung.  

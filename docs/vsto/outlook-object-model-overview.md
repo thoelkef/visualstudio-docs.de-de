@@ -22,11 +22,12 @@ caps.latest.revision: "59"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0e8102cf760020b5584458ebd77052684a1b4af2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: cffce10e443b2605e29d800cb271c4a96dc70359
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="outlook-object-model-overview"></a>Übersicht über das Outlook-Objektmodell
   Zum Entwickeln von VSTO-Add-Ins für Microsoft Office Outlook können Sie mit den Objekten interagieren, die vom Outlook-Objektmodell bereitgestellt werden. Das Outlook-Objektmodell stellt Klassen und Schnittstellen bereit, die Elemente der Benutzeroberfläche darstellen. Das <xref:Microsoft.Office.Interop.Outlook.Application> -Objekt stellt beispielsweise die gesamte Anwendung, das <xref:Microsoft.Office.Interop.Outlook.MAPIFolder> -Objekt einen Ordner mit E-Mails oder anderen Elementen und das <xref:Microsoft.Office.Interop.Outlook.MailItem> -Objekt eine E-Mail dar.  
@@ -95,7 +96,7 @@ ms.lasthandoff: 10/31/2017
 ### <a name="mapifolder-object"></a>MAPIFolder-Objekt  
  Das <xref:Microsoft.Office.Interop.Outlook.MAPIFolder> -Objekt stellt einen Ordner dar, der E-Mails, Kontakte, Aufgaben und andere Elemente enthält. Outlook stellt 16 <xref:Microsoft.Office.Interop.Outlook.MAPIFolder> -Standardobjekte bereit.  
   
- Die <xref:Microsoft.Office.Interop.Outlook.MAPIFolder> -Standardobjekte werden durch die Werte der <xref:Microsoft.Office.Interop.Outlook.OlDefaultFolders> -Enumeration definiert. Beispiel:  
+ Die <xref:Microsoft.Office.Interop.Outlook.MAPIFolder> -Standardobjekte werden durch die Werte der <xref:Microsoft.Office.Interop.Outlook.OlDefaultFolders> -Enumeration definiert. Ein auf ein Objekt angewendeter  
   
  Microsoft.Office.Interop.Outlook.OlDefaultFolders.olFolderInbox entspricht der **Posteingang** im Outlook-Ordner.  
   

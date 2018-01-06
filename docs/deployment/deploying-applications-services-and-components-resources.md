@@ -25,11 +25,12 @@ caps.latest.revision: "33"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 38ead66ffcc92d37b62b3ccb2833cebcba8732b4
-ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
+ms.workload: multiple
+ms.openlocfilehash: cbb1f96a7432b90cae725d88c1fcbc8a990494d4
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="deploying-applications-services-and-components"></a>Bereitstellen von Anwendungen, Diensten und Komponenten
 
@@ -44,13 +45,13 @@ Eine Erläuterung der Optionen aus, um ein praktisches Beispiel Setup für eine 
   
 | Bereitstellungsszenario | Unterstützender Inhalt |
 | --- | --- |  
-| **In der Cloud veröffentlichen:** können Sie Anwendungen, Dienste und Daten verfügbar machen von an einer beliebigen Stelle mithilfe von Visual Studio sie auf Microsoft Azure bereitgestellt.|[Veröffentlichen von Anwendungen in Microsoft Azure](https://docs.microsoft.com/en-us/azure/#pivot=products) |
+| **In der Cloud veröffentlichen:** können Sie Anwendungen, Dienste und Daten verfügbar machen von an einer beliebigen Stelle mithilfe von Visual Studio sie auf Microsoft Azure bereitgestellt.|[Veröffentlichen von Anwendungen in Microsoft Azure](/azure/#pivot=products) |
 | **Veröffentlichen eine uwp-app:** Sie leicht erstellen, senden und verkaufen Ihre apps von Microsoft Store für Kunden auf der ganzen Welt. |[Veröffentlichen von Windows-apps](https://developer.microsoft.com/store/publish-apps) |
 | **Bereitstellen einer ASP.NET-Anwendung oder einen Dienst:** Bereitstellen von ASP.NET-Anwendungen und-Dienste auf unterschiedliche Weise vielfältige.|[Bereitstellen von ASP.NET-Webanwendungen und-Dienste](http://www.asp.net/aspnet/overview/deployment) |
 | **Veröffentlichen Sie ein Add-In für Office:** können Sie ein Add-In für Office in Visual Studio veröffentlichen. | [Bereitstellen Sie und veröffentlichen Sie des Office-add-Ins](https://dev.office.com/docs/add-ins/publish/publish) |
-| **Bereitstellen ein WCF- oder OData-Diensts:** andere Anwendungen können WCF RIA-Dienste, die Sie auf einem Webserver bereitstellen. | [Entwickeln und Bereitstellen von WCF Data Services](https://docs.microsoft.com/dotnet/framework/data/wcf/developing-and-deploying-wcf-data-services) |
+| **Bereitstellen ein WCF- oder OData-Diensts:** andere Anwendungen können WCF RIA-Dienste, die Sie auf einem Webserver bereitstellen. | [Entwickeln und Bereitstellen von WCF Data Services](/dotnet/framework/data/wcf/developing-and-deploying-wcf-data-services) |
 | **Bereitstellen einer Desktopanwendung:** mithilfe von ClickOnce-Bereitstellung können Sie eine Desktopanwendung auf einem Webserver oder in einer Netzwerkdateifreigabe veröffentlichen. Benutzer können die Anwendung mit einem einzelnen Mausklick installieren. | [ClickOnce-Sicherheit und Bereitstellung](../deployment/clickonce-security-and-deployment.md) |
-| **Bereitstellen eine Visual C++-Anwendung:** können Sie die Visual C++-Laufzeit mit einer Anwendung mithilfe von zentrale Bereitstellung, lokale Bereitstellung oder statische Verknüpfung bereitstellen. | [Bereitstellen von nativen Desktopanwendungen (Visual C++)](/cpp/ide/deploying-native-desktop-applications-visual-cpp.md) |
+| **Bereitstellen eine Visual C++-Anwendung:** können Sie die Visual C++-Laufzeit mit einer Anwendung mithilfe von zentrale Bereitstellung, lokale Bereitstellung oder statische Verknüpfung bereitstellen. | [Bereitstellen von nativen Desktopanwendungen (Visual C++)](/cpp/ide/deploying-native-desktop-applications-visual-cpp) |
 | **Erstellen Sie ein Installationsprogramm:** ein MSI-basierte WiX-Installer kann erstellt werden, mithilfe der [WiX-Toolset 2017 Erweiterung für Visual Studio](https://marketplace.visualstudio.com/items?itemName=RobMensching.WixToolsetVisualStudio2017Extension). Beachten Sie die InstallShield Limited Edition nicht mehr in Visual Studio enthalten ist. Erkundigen Sie sich [Flexera Software](http://learn.flexerasoftware.com/content/IS-EVAL-InstallShield-Limited-Edition-Visual-Studio) über die Verfügbarkeit für Visual Studio-2017. |
 | **Bereitstellen einer Anwendung zu Testzwecken:** Sie können anspruchsvollere Entwicklung und Tests durch Bereitstellen von Anwendungen in virtuellen Umgebungen aktivieren.|[Testen in einer Lab-Umgebung](../test/lab-management/using-a-lab-environment-for-your-application-lifecycle.md) | 
 | **Installieren der erforderlichen Komponenten:** erforderliche Komponenten für desktopanwendungen installieren, indem Sie konfigurieren ein generisches Installationsprogramm, das als Bootstrapper bezeichnet wird.|[Vorbedingungen für die Anwendungsbereitstellung](../deployment/application-deployment-prerequisites.md) |

@@ -13,11 +13,12 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d4315a55b74d938576572b0630f5dca553643a24
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 183dc4ad9d7ea1a2f6855be050ad8459a3f801ac
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="simplified-embedding"></a>Einbetten von vereinfacht
 Vereinfachte Einbetten in einem Editor aktiviert ist, wenn seine dokumentansichtsobjekts übergeordnet ist (d. h. ein untergeordnetes Element des vorgenommen) [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], und die <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane> Schnittstelle wird implementiert, um die Befehle "Fenster" zu behandeln. Vereinfachte Einbetten von Editoren können keine aktive Steuerelemente hosten. Beim Erstellen eines Editors mit vereinfachten einbetten verwendeten Objekte sind in der folgenden Abbildung gezeigt.  
@@ -30,7 +31,7 @@ Vereinfachte Einbetten in einem Editor aktiviert ist, wenn seine dokumentansicht
   
  Alle Schnittstellen implementiert, um das Erstellen eines Editors mit vereinfachten einbetten enthalten sind, der `CYourEditorDocument` Objekt. Jedoch zur Unterstützung von mehreren Ansichten der Dokumentdaten unterteilt werden die Schnittstellen auf separaten Daten und Ansicht-Objekte in der folgenden Tabelle aufgeführt.  
   
-|Schnittstelle|Speicherort der-Schnittstelle|Verwendung|  
+|Interface|Speicherort der-Schnittstelle|Mit|  
 |---------------|---------------------------|---------|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane>|Ansicht|Stellt die Verbindung mit dem übergeordneten Fenster.|  
 |<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>|Ansicht|Befehle behandelt.|  

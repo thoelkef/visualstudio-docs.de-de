@@ -23,14 +23,15 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0effe0190d54d05d706127a8e5fada66af1c7ab6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 58e2d02b32a17cf23e95639077c26b6b41dae00f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="profiling-the-performance-of-sharepoint-applications"></a>Profilerstellung für die Leistung von SharePoint-Anwendungen
-  Wenn die SharePoint-Anwendungen langsam oder ineffizient ausgeführt werden, können Sie die Profilerstellungsfunktionen in Visual Studio verwenden, um problematischen Code und andere Elemente zu identifizieren. Mithilfe der Auslastungstestfunktion können Sie ermitteln, wie eine SharePoint-Anwendung unter Belastung ausgeführt wird, beispielweise wenn viele Benutzer gleichzeitig auf die Anwendung zugreifen. Durch Ausführung von Webleistungstests können Sie messen, wie die Anwendung im Web ausgeführt wird. Anhand von Tests der codierten UI können Sie überprüfen, ob die ganze SharePoint-Anwendung, einschließlich der Benutzeroberfläche, ordnungsgemäß funktioniert. Mithilfe dieser Tests können Sie Leistungsprobleme identifizieren, bevor Sie die Anwendung bereitstellen.  
+  Wenn die SharePoint-Anwendungen langsam oder ineffizient ausgeführt werden, können Sie die Profilerstellungsfunktionen in Visual Studio verwenden, um problematischen Code und andere Elemente zu identifizieren. Mithilfe der Auslastungstestfunktion können Sie ermitteln, wie eine SharePoint-Anwendung unter Belastung ausgeführt wird, beispielweise wenn viele Benutzer gleichzeitig auf die Anwendung zugreifen. Durch Ausführung von Webleistungstests können Sie messen, wie die Anwendung im Web ausgeführt wird. Anhand von Tests der programmierten UI können Sie überprüfen, ob die ganze SharePoint-Anwendung, einschließlich der Benutzeroberfläche, ordnungsgemäß funktioniert. Mithilfe dieser Tests können Sie Leistungsprobleme identifizieren, bevor Sie die Anwendung bereitstellen.  
   
 ## <a name="profiling-tools-overview"></a>Übersicht über Profilerstellungstools  
  Profilerstellung bezieht sich auf die Beobachtung und Erfassung des Leistungsverhaltens der Anwendung während sie ausgeführt wird. Durch die Profilerstellung für die Anwendung können Sie Probleme wie Engpässe, ineffizienten Code und Speicherbelegungsprobleme erkennen, die dazu führen, dass Anwendungen langsamer ausgeführt werden oder zu viel Arbeitsspeicher verwenden. Beispielsweise können Sie anhand der Profilerstellung Hotspots in Ihrem Code ermitteln, die Segmente des Codes sind, die häufig aufgerufen werden und die Gesamtleistung der Anwendung verlangsamen können. Nachdem Sie Hotspots identifiziert haben, können Sie sie häufig optimieren oder entfernen.  
@@ -45,7 +46,7 @@ ms.lasthandoff: 10/31/2017
  Nachdem Sie eine Leistungssitzung eingerichtet haben, wird die Sitzungskonfiguration gespeichert, wird der Server so konfiguriert, dass Profilerstellungsdaten bereitgestellt werden, und wird die Anwendung ausgeführt. Während Sie die Anwendung verwenden, werden Leistungsdaten in eine Protokolldatei geschrieben. Leistungssitzungen werden im aufgeführt **Leistungs-Explorer** unter der **Ziele** Ordner. Nachdem eine leistungssitzung beendet wurde, der Bericht wird angezeigt, der **Berichte** Ordner **Leistungs-Explorer**. Um den Bericht anzuzeigen, öffnen Sie es in **Leistungs-Explorer**. Zum Anzeigen oder konfigurieren Sie die Eigenschaften einer leistungssitzung, öffnen Sie das Kontextmenü im **Leistungs-Explorer**, und wählen Sie dann **Eigenschaften**. Weitere Informationen zu bestimmten Eigenschaften einer leistungssitzung finden Sie unter [Konfigurieren von Leistungssitzungen für Profilerstellungstools](http://go.microsoft.com/fwlink/?LinkId=224694). Informationen zum Interpretieren der Ergebnisse einer leistungssitzung finden Sie unter [Analyse der Profilerstellungsdaten für Tools](http://go.microsoft.com/fwlink/?LinkId=224704).  
   
 ## <a name="stress-testing"></a>Belastungstest  
- Sie können die Belastungsleistung der Anwendung analysieren, indem Sie Auslastungstests und Webleistungstests in Visual Studio Ultimate erstellen. Wenn Sie einen Auslastungstest in Visual Studio erstellen, geben Sie eine Kombination von Faktoren, ein so genanntes Szenario, an, gegen das die Anwendung getestet werden soll. Diese Faktoren enthalten Auslastungsmuster, Testmischungsmodell, Testmischung, Netzwerkmischung und Browsermischung. Auslastungstestszenarien können sowohl Komponententests als auch Webleistungstests enthalten.  
+ Sie können die Belastungsleistung der Anwendung analysieren, indem Sie Auslastungstests und Webleistungstests in Visual Studio Ultimate erstellen. Wenn Sie einen Auslastungstest in Visual Studio erstellen, geben Sie eine Kombination von Faktoren, ein so genanntes Szenario, an, gegen das die Anwendung getestet werden soll. Diese Faktoren enthalten Auslastungsmuster, Testmischungsmodell, Testmischung, Netzwerkmischung und Browsermix. Auslastungstestszenarien können sowohl Komponententests als auch Webleistungstests enthalten.  
   
  Abbildung 1: Beispiel für Auslastungstestergebnisse  
   

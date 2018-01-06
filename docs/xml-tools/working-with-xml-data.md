@@ -12,11 +12,12 @@ caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: fa74884edc5f0dea16d95fc5f177323da1fab6ab
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: 3cf5c9d448d7e637344ee3dd5741871f5c177fdb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="working-with-xml-data"></a>Arbeiten mit XML-Daten
 XML und XML-Technologien spielen beim Verarbeiten von Daten in [!INCLUDE[msCoName](../xml-tools/includes/msconame_md.md)] Visual Studio eine große Rolle. Visual Studio enthält Tools und Funktionen, die das Arbeiten mit XML, XSLT und XML-Schemas vereinfachen.  

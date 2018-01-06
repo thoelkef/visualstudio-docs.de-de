@@ -20,11 +20,12 @@ caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 787cebc77d0ca3d06fd88be8ab6f42c6bae3ee38
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: bbb14818cebb35f703ec6f5ade084d96ac383d6a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="guids-and-ids-of-visual-studio-toolbars"></a>GUIDs und IDs der Visual Studio-Symbolleisten
 Dieses Thema listet die GUID und ID-Werte der Symbolleisten, die in der integrierten Entwicklungsumgebung (IDE) von Visual Studio enthalten sind, und der Gruppen enthalten. Diese Werte werden in der VSCT-Dateien definiert, die als Teil der Visual Studio-SDK installiert sind. Weitere Informationen finden Sie unter [IDE-Defined Befehle, Menüs und Gruppen](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).  
@@ -41,18 +42,18 @@ Dieses Thema listet die GUID und ID-Werte der Symbolleisten, die in der integrie
   
  Nur Gruppen können direkt von Symbolleisten abgeleitet werden. Legen Sie zum Hinzufügen einer Gruppe seinem übergeordneten Element, auf die GUID und die ID der Symbolleiste. Um eine Symbolleiste eine Schaltfläche hinzuzufügen, legen Sie das übergeordnete Element zu einer Gruppe auf der Symbolleiste.  
   
-|Symbolleiste|ID|  
+|Symbolleiste|Id|  
 |-------------|--------|  
 |Standard|IDM_VS_TOOL_STANDARD|  
 |Build|IDM_VS_TOOL_BUILD|  
 |Text-Editor|IDM_VS_TOOL_TEXTEDITOR|  
-|Debuggen|guidVSDebugGroup:IDM_DEBUG_TOOLBAR|  
+|Debug|guidVSDebugGroup:IDM_DEBUG_TOOLBAR|  
 |Debugspeicherort|guidVSDebugGroup:IDM_DEBUG_CONTEXT_TOOLBAR|  
   
 ### <a name="special-toolbars"></a>Spezielle Symbolleisten  
  Diese Symbolleisten von Visual Studio-IDE definiert sind, dienen aber spezielle Funktionen und Hosten Befehlsgruppen nicht.  
   
-|Symbolleiste|ID|  
+|Symbolleiste|Id|  
 |-------------|--------|  
 |Befehl hinzufügen|IDM_VS_TOOL_ADDCOMMAND|  
 |Nicht definiert|IDM_VS_TOOL_UNDEFINED|  
@@ -64,7 +65,7 @@ Dieses Thema listet die GUID und ID-Werte der Symbolleisten, die in der integrie
   
 ### <a name="standard-toolbar-groups"></a>Standardsymbolleiste Gruppen  
   
-|Name|ID|  
+|name|Id|  
 |----------|--------|  
 |Speichern/Öffnen|IDG_VS_TOOLSB_SAVEOPEN|  
 |Ausschneiden/Kopieren|IDG_VS_TOOLSB_CUTCOPY|  
@@ -78,14 +79,14 @@ Dieses Thema listet die GUID und ID-Werte der Symbolleisten, die in der integrie
   
 ### <a name="build-toolbar-groups"></a>Symbolleistengruppen erstellen  
   
-|Name|ID|  
+|name|Id|  
 |----------|--------|  
 |Build-Leiste|IDG_VS_BUILDBAR|  
 |Abbrechen|IDG_VS_BUILD_CANCEL|  
   
 ### <a name="text-editor-toolbar-groups"></a>Text-Editor-Symbolleiste Gruppen  
   
-|Name|ID|  
+|name|Id|  
 |----------|--------|  
 |Abschluss|IDM_VS_TOOL_TEXTEDITOR|  
 |Indent|IDG_VS_EDITTOOLBAR_INDENT|  
@@ -94,7 +95,7 @@ Dieses Thema listet die GUID und ID-Werte der Symbolleisten, die in der integrie
   
 ### <a name="debug-toolbar-groups"></a>Debug-Symbolleistengruppen  
   
-|Name|ID|  
+|name|Id|  
 |----------|--------|  
 |Ausführung|IDM_DEBUG_TOOLBAR|  
 |Schrittweises Ausführen|IDG_DEBUG_TOOLBAR_STEPPING|  
@@ -103,7 +104,7 @@ Dieses Thema listet die GUID und ID-Werte der Symbolleisten, die in der integrie
   
 ### <a name="debug-location-toolbar-groups"></a>Debuggen Sie die Symbolleistengruppen Speicherort  
   
-|Name|ID|  
+|name|Id|  
 |----------|--------|  
 |Debugspeicherort|IDG_DEBUG_CONTEXT_TOOLBAR|  
   

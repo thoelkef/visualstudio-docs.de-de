@@ -17,11 +17,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ffc6ecc620f57f0cc1e4dd8baf02f1bd1b17d53b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 3a5e31eb2acb50d9803bedd77e48d0821cbaea61
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="feedback-to-the-user"></a>Feedback an den Benutzer
 In der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrierten Entwicklungsumgebung (IDE) visuelles Feedback hinsichtlich verfügbare Funktionalität auf der aktuellen Auswahl und globalen Auswahlkontext des Benutzers basiert. In der folgenden Tabelle sind die Funktionen aufgeführt, die in verschiedenen Auswahl Kontexten verfügbar ist.  

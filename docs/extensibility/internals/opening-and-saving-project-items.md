@@ -16,11 +16,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a30589591a7cef60ecfb19945366f8fcf539da02
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: a270811cc13d4b0e9af027ec2b4b5d2032582a3e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="opening-and-saving-project-items"></a>Öffnen und Speichern von Projektelementen
 Wenn Sie einen neuen Projekttyp hinzufügen, müssen Sie das Öffnen und Speichern von Dateien in Projekten verwalten die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrierten Entwicklungsumgebung (IDE). Die folgenden Themen behandeln die verschiedenen Ansätze zum Öffnen und Speichern von Dateien.  

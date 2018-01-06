@@ -16,11 +16,12 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 692884d31e55921489aad0fbbea32ca1c094c6c3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 8e0fa4a65960d0324a4be19db61648be48b08349
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="quick-info-in-a-legacy-language-service"></a>QuickInfo auf einen Legacy-Sprachdienst
 IntelliSense-QuickInfo zeigt Informationen über einen Bezeichner in der Quelle, wenn der Benutzer die Einfügemarke im Bezeichner positioniert und wählt **Quick Info** aus der **IntelliSense** Menü oder hält die Maus der Cursor über einen Bezeichner. Dadurch wird eine QuickInfo mit Informationen über die Bezeichner angezeigt werden. Diese Informationen besteht in der Regel des Typs ab. Wenn Sie das Debugmodul aktiv ist, kann diese Informationen den aktuellen Wert enthalten. Debugging-Modul liefert Ausdruckswerte, während der Sprachdienst nur Bezeichner behandelt.  

@@ -13,11 +13,12 @@ caps.latest.revision: "25"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: fcd30a30bdae896be5aceb9dc685a5fb762ee4af
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 4c1a259be5b9c8f572339279734b60ac2afd93ad
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="properties-of-diagrams"></a>Eigenschaften von Diagrammen
 Sie können Eigenschaften festlegen, die angeben, wie Diagramme in der generierten-Designer angezeigt werden. Sie können z. B. eine Standardfarbe für Text in das Diagramm angeben.  
@@ -34,9 +35,9 @@ Sie können Eigenschaften festlegen, die angeben, wie Diagramme in der generiert
 |Benutzerdefinierte Attribute|Verwendet den generierten Codeklasse Attribute hinzu.|\<keine >|  
 |Doppelter generiert abgeleitet|Wenn `True`, eine Basisklasse und eine partielle Klasse (zur Unterstützung von Anpassung außer Kraft) generiert werden. Weitere Informationen finden Sie unter [überschreiben und erweitern die generierte Klassen](../modeling/overriding-and-extending-the-generated-classes.md).|False|  
 |Verfügt über benutzerdefinierte-Konstruktor|Wenn `True`, ein benutzerdefinierter Konstruktor im Quellcode bereitgestellt werden. Weitere Informationen finden Sie unter [überschreiben und erweitern die generierte Klassen](../modeling/overriding-and-extending-the-generated-classes.md)...|False|  
-|Inheritance Modifier|Beschreibt die Art der Vererbung von der Quellklasse für Code, der aus dem Diagramm generiert wird (`none`, `abstract` oder `sealed`).|Keine|  
+|Inheritance Modifier|Beschreibt die Art der Vererbung von der Quellklasse für Code, der aus dem Diagramm generiert wird (`none`, `abstract` oder `sealed`).|Keiner|  
 |Basis-Diagramm|Die Basisklasse von diesem Diagramm.|(keine)|  
-|Name|Der Name des in diesem Diagramm.|Aktuelle name|  
+|name|Der Name des in diesem Diagramm.|Aktuelle name|  
 |Namespace|Der Namespace, der in diesem Diagramm zugeordnet ist.|Aktuellen namespace|  
 |Klasse dargestellt wird|Der Stamm-Domäne-Klasse, die in diesem Diagramm darstellt.|Aktuelle Stammklasse ggf.|  
 |Hinweise|Informelle Hinweise, die mit diesem Element zugeordnet sind.|\<keine >|  

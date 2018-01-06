@@ -13,11 +13,12 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ed0ffd44e248cb1f420cb7be308a46c914fffee2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: dd7b6a48b00e8bef62ff801519fc35cdc163902d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="source-control-integration-overview"></a>Übersicht über die Integration von Datenquellen-Steuerelement
 In diesem Abschnitt werden die zwei Möglichkeiten zur Integration in Visual Studio-quellcodeverwaltung verglichen; ein Quellcodeverwaltungs-Plug-in und eines VSPackage, das eine Source Control-Lösung bietet und die neuen Funktionen der quellcodeverwaltung hervorgehoben. Visual Studio ermöglicht Manueller Wechsel zwischen den Datenquellen-Steuerelements VSPackages und Datenquellen-Steuerelement-Plug-ins als auch automatische Lösung basierenden Wechsel.  

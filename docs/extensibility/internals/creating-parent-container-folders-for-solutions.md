@@ -15,11 +15,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6ea901fe4e380fd867db1c63e44bc1cb6e144feb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: b2aa63a0c55ad196edf6c209475a816c0c3c027c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-parent-container-folders-for-solutions"></a>Erstellen von übergeordneten Container und Ordner für Projektmappen
 In der Quelle Steuerelement-Plug-in-API Version 1.2 kann Benutzer ein einziger Stammknoten Quelle Steuerelement Ziel für alle Web-Projekte innerhalb der Projektmappe angeben. Diese einzelstamm wird eine Super Unified Stamm (SUR) bezeichnet.  

@@ -22,11 +22,12 @@ caps.latest.revision: "54"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 38508a664ff94628dfd3fd5ec00eacb32fbb1187
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: c4f8d987b8079230591d4bfdbe51c6d640cbf265
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="calling-code-in-vsto-add-ins-from-other-office-solutions"></a>Aufrufen von Code in VSTO-Add-Ins aus anderen Office-Projektmappen
   Sie können ein Objekt in Ihrem VSTO-Add-In für andere Projektmappen, einschließlich anderer Microsoft Office-Projektmappen, verfügbar machen. Dies ist hilfreich, wenn Ihr VSTO-Add-In einen Dienst bereitstellt, der durch andere Projektmappen verwendet werden soll. Wenn Sie beispielsweise über ein VSTO-Add-In für Microsoft Office Excel verfügen, das Berechnungen in Bezug auf finanzielle Daten von einem Webdienst vornimmt, können andere Projektmappen diese Berechnungen ausführen, indem sie ein VSTO-Add-In für Excel zur Laufzeit aufrufen.  
@@ -128,7 +129,7 @@ End Sub
 ```  
   
 ### <a name="accessing-objects-from-non-vba-solutions"></a>Zugreifen auf Objekte über Nicht-VBA-Lösungen  
- In einer Nicht-VBA-Lösung müssen Sie den <xref:Microsoft.Office.Core.COMAddIn.Object%2A> -Eigenschaftswert zur Schnittstelle umwandeln, die er implementiert. Anschließend können Sie die verfügbar gemachten Methoden auf dem Schnittstellenobjekt aufrufen. Das folgende Codebeispiel veranschaulicht, wie die `ImportData` -Methode von einem anderen VSTO-Add-In aufgerufen wird, das mit den Office Developer Tools in Visual Studio erstellt wurde.  
+ In einer Nicht-VBA-Lösung müssen Sie den <xref:Microsoft.Office.Core.COMAddIn.Object%2A> -Eigenschaftswert zur Schnittstelle umwandeln, die er implementiert. Anschließend können Sie die verfügbar gemachten Methoden auf dem Schnittstellenobjekt aufrufen. Das folgende Codebeispiel veranschaulicht, wie die `ImportData`-Methode von einem anderen VSTO-Add-In aufgerufen wird, das mit den Office Developer Tools in Visual Studio erstellt wurde.  
   
 ```vb  
 Dim addIn As Office.COMAddIn = Globals.ThisAddIn.Application.COMAddIns.Item("ExcelImportData")  

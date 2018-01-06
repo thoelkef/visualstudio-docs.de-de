@@ -26,11 +26,12 @@ caps.latest.revision: "54"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d6007dee14f89f875c66009f048b47579e97028b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 59dafe640428059b4c6772f79a23d5f0ccceaac7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>Exemplarische Vorgehensweise: Erstellen einer Websitespalte, eines Inhaltstyps und einer Liste für SharePoint
   Die folgenden Verfahren veranschaulichen, wie Sie benutzerdefinierte Websitespalten in SharePoint erstellen – oder *Felder*– sowie einen Inhaltstyp, der die Websitespalten verwendet. Es wird gezeigt, wie eine Liste zu erstellen, die den neuen Inhaltstyp verwendet, werden.  

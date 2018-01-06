@@ -18,11 +18,12 @@ caps.latest.revision: "38"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 99380078b2fc49bcc5e1efb7a36ac7f28028a0d7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: ec4ca6100b3b0587e7e4dba5a56ceca4e5d5534c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="extending-the-sharepoint-project-system"></a>Erweitern des SharePoint-Projektsystems
   Sie können SharePoint-Lösungen erstellen, indem Sie mit der eine Reihe von Projektvorlagen und Elementvorlagen in Visual Studio. Diese Vorlagen erfüllen viele Entwicklungsszenarien, aber Sie möglicherweise heraus, dass einige Fälle, in denen diese Funktionalität nicht bereitstellen, die Sie benötigen. In diesen Fällen können Sie die SharePoint-Projektsystem erweitern.  

@@ -6,7 +6,7 @@ ms.reviewer:
 ms.suite: 
 ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords: vs.debug.remote.projnotconfigured
 dev_langs:
 - CSharp
@@ -14,16 +14,16 @@ dev_langs:
 - FSharp
 - C++
 helpviewer_keywords: debugger, Web application errors
-ms.assetid: 875ba87f-c372-4126-8fe3-e33931cf26c0
 caps.latest.revision: "22"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e0538693a815cf9749b3cd9df007486de1af3637
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 6f1e206cc9327ef933f52f35960f628170e02c38
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="error-the-web-server-is-not-configured-correctly"></a>Fehler: Der Webserver ist nicht richtig konfiguriert.
 
@@ -45,9 +45,9 @@ Um dieses Problem zu beheben, gehen Sie wie folgt vor:
 
 4. (IIS) Stellen Sie sicher, dass die richtige Version von ASP.NET auf dem Server installiert ist.
 
-    Nicht übereinstimmende Versionen von ASP.NET auf IIS und in Visual Studio-Projekt können dieses Problem verursachen. Sie müssen möglicherweise die Framework-Version in der Datei "Web.config" festlegen. Verwenden Sie zum Installieren von ASP.NET auf IIS die [Webplattform-Installer (WebPI)](https://www.microsoft.com/web/downloads/platform.aspx). Siehe auch [IIS 8.0 mithilfe von ASP.NET 3.5 und ASP.NET 4.5](https://docs.microsoft.com/en-us/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) oder für ASP.NET Core, [Host unter Windows mit IIS](https://docs.asp.net/en/latest/publishing/iis.html).
+    Nicht übereinstimmende Versionen von ASP.NET auf IIS und in Visual Studio-Projekt können dieses Problem verursachen. Sie müssen möglicherweise die Framework-Version in der Datei "Web.config" festlegen. Verwenden Sie zum Installieren von ASP.NET auf IIS die [Webplattform-Installer (WebPI)](https://www.microsoft.com/web/downloads/platform.aspx). Siehe auch [IIS 8.0 mithilfe von ASP.NET 3.5 und ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) oder für ASP.NET Core, [Host unter Windows mit IIS](https://docs.asp.net/en/latest/publishing/iis.html).
   
-4. Wenn die `maxConnection` Begrenzung in IIS ist zu niedrig ist, und Sie haben zu viele Verbindungen, müssen Sie möglicherweise [erhöhen Sie das Verbindungslimit](https://docs.microsoft.com/en-us/iis/configuration/system.applicationhost/sites/sitedefaults/limits).
+4. Wenn die `maxConnection` Begrenzung in IIS ist zu niedrig ist, und Sie haben zu viele Verbindungen, müssen Sie möglicherweise [erhöhen Sie das Verbindungslimit](/iis/configuration/system.applicationhost/sites/sitedefaults/limits).
   
 ## <a name="see-also"></a>Siehe auch  
  [Remotedebuggen von ASP.NET auf einem Remote-IIS-Computer](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)   

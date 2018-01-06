@@ -11,11 +11,12 @@ caps.latest.revision: "4"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 458fc4b2f96480c1f41efd8b80050fd0911b3e85
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: a9d475a535d40af9a254a3f82839a8b733c2343d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="t4-assembly-directive"></a>T4-Assemblyanweisung
 In einer [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Entwurfszeittextvorlage wird mit der `assembly`-Direktive eine Assembly geladen, damit im Vorlagencode die Typen der Vorlage verwendet werden können. Der Effekt ist mit dem Hinzufügen eines Assemblyverweises in einem [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Projekt vergleichbar.  
@@ -55,7 +56,7 @@ In einer [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Entwurfszeitt
   
 -   `WindowsBase.dll`  
   
- Wenn Sie eine benutzerdefinierte Anweisung verwenden, lädt der Anweisungsprozessor möglicherweise zusätzliche Assemblys. Wenn Sie z. B. Vorlagen für eine domänenspezifische Sprache (DSL) schreiben, müssen Sie keine Assemblydirektiven für die folgenden Assemblys schreiben:  
+ Wenn Sie eine benutzerdefinierte Anweisung verwenden, lädt der Anweisungsprozessor möglicherweise zusätzliche Assemblys. Wenn Sie z. B. Vorlagen für eine domänenspezifische Sprache (DSL) schreiben, müssen Sie keine Assemblyanweisungen für die folgenden Assemblys schreiben:  
   
 -   `Microsoft.VisualStudio.Modeling.Sdk.1*.dll`  
   

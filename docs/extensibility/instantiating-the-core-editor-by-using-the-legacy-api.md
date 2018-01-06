@@ -13,11 +13,12 @@ caps.latest.revision: "29"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a82f420203b88bb94531401d061493621f3eba93
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: e508bda0b22c798246b0f6abf4dfb03c41a92d6d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="instantiating-the-core-editor-by-using-the-legacy-api"></a>Instanziieren den Core-Editor mithilfe der Legacy-API
 Der Editor ist verantwortlich für die Textbearbeitung Funktionen, z. B. einfügen, löschen, kopieren und einfügen. Sie kombiniert diese Funktionen, mit denen von Sprache-Diensten, z. B. Farben für Text, Einzug und IntelliSense-Anweisungsvervollständigung bereitgestellt werden.  

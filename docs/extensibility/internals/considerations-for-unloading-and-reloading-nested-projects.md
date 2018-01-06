@@ -15,11 +15,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cf34a3fe708a6ecab200262224da395b9fa37ecb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: fd45ebf8be2732cded5c84f18338f104b76840cf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="considerations-for-unloading-and-reloading-nested-projects"></a>Überlegungen zum Entladen und erneutes Laden geschachtelten Projekte
 Wenn Sie geschachtelte Projekttypen implementieren, müssen Sie zusätzliche Schritte ausführen, wenn entladen und laden die Projekte. Sie müssen ordnungsgemäß auslösen, um Listener zur Lösung Ereignisse korrekt zu benachrichtigen, die `OnBeforeUnloadProject` und `OnAfterLoadProject` Ereignisse.  

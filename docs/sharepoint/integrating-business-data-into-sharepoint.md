@@ -26,11 +26,12 @@ caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ece3128c2d6850a1d1dd22d0328a4ee2c46da2b1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 4cacdbb314130fa45b5aa3820abbbffbcbc6c0bf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="integrating-business-data-into-sharepoint"></a>Integrieren von Geschäftsdaten in SharePoint
   Sie können die Geschäftsdaten in SharePoint integrieren. Geschäftsdaten können von Back-End-serveranwendungen stammen, z. B. [!INCLUDE[TLA#tla_sqlsvr](../sharepoint/includes/tlasharptla-sqlsvr-md.md)], Siebel und SAP, oder einen Webdienst. Benutzer können anzeigen, hinzufügen, aktualisieren oder Löschen von Geschäftsdaten mithilfe von externen Listen oder Geschäftsdaten-Webparts in SharePoint.  Benutzer können auch diese Daten in einer Microsoft Office-Anwendung wie Microsoft Outlook offline zugreifen. Weitere Informationen finden Sie unter [, können Sie externe Daten anzeigen](http://go.microsoft.com/fwlink/?LinkId=169295).  

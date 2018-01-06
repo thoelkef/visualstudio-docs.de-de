@@ -21,11 +21,12 @@ caps.latest.revision: "70"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cf214f2ffc55cf0846373fcaa226253f276e3d69
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: a0c8d44c32c03f98a0d2621eff3899ded101b7d3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-changing-document-formatting-using-checkbox-controls"></a>Exemplarische Vorgehensweise: Ändern der Dokumentformatierung mit CheckBox-Steuerelementen
   In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie Windows Forms-Steuerelemente in einer Anpassung auf Dokumentebene für Microsoft Office Word verwenden, um textformatierung zu ändern.  

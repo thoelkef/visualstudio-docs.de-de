@@ -13,11 +13,12 @@ caps.latest.revision: "21"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d4bd487bd3f5a6978af9f79eb9e0a00866b5df52
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: df782cd974adcd589824e8a47cd0249842bd8d48
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="document-lock-holder-management"></a>Inhaber von Dokumentverwaltung-Sperre
 Ausgeführt Dokument Tabelle (RDT) verwaltet die Anzahl der geöffneten Dokumente und Sperren bearbeiten, die sie besitzen. Sie können eine Bearbeiten-Sperre für ein Dokument in der RDT platzieren, wenn es programmgesteuert im Hintergrund ohne dass der Benutzer sehen ein geöffnetes Dokument in einem Dokumentfenster bearbeitet wird. Diese Funktionalität wird häufig von Entwicklern verwendet, die mehrere Dateien über eine grafische Benutzeroberfläche zu ändern.  

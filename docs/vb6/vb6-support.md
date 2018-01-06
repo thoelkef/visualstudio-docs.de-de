@@ -10,11 +10,12 @@ helpviewer_keywords:
 ms.assetid: ffc5ba4d-44d7-4ef7-a3f6-38a8738bf127
 author: paulyuk
 ms.author: paulyuk
-ms.openlocfilehash: bdfe33cac19d488bc7763f3c61c518093d8afffa
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: paulyuk
+ms.openlocfilehash: a8977aad735a115089685ed0032b3d358d8b89c8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="support-statement-for-visual-basic-60-on-windows"></a>Supportinformationen Sie für Visual Basic 6.0 unter Windows
 
@@ -97,7 +98,7 @@ Seit der Erstveröffentlichung von diese Aussage zur Unterstützung wurde das Be
 
 Die Laufzeit VB6 ausgeliefert und wird für die Lebensdauer des Betriebssystems in Windows 10 unterstützt. Visual Basic 6.0-runtimedateien weiterhin nur 32-Bit-sein und müssen alle Komponenten in Prozessen 32-Bit-Anwendung gehostet werden. Entwickler können sichereres Story Unterstützung für Windows 10 wird die gleiche wie für Windows 8.1.
 
-## <a name="windows-server-2008"></a>Windows Server 2008
+## <a name="windows-server-2008"></a>Windows Server 2008
 
 Seit der Erstveröffentlichung von diese Aussage zur Unterstützung wurde das Betriebssystem Windows Server 2008 freigegeben. Dieses Dokument wurde aktualisiert, um Microsoft Support für VB6 unter Windows Server 2008 zu verdeutlichen.
 

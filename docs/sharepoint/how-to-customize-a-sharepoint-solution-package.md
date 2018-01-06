@@ -23,11 +23,12 @@ caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d07f03c1aed1c2e85e65bd10a89bd62138d571c7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 5351165320dd0ff2d8c130c64adeff7be45de6fb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-customize-a-sharepoint-solution-package"></a>Gewusst wie: Anpassen eines SharePoint-Lösungspakets
   Sie können den Paket-Designer zum Erstellen und Anpassen eines Lösungspakets (.wsp) verwenden. Sie können z. B. SharePoint-Projektelemente und-Funktionen hinzufügen, angeben, wenn der Webserver zurückgesetzt, wenn die Projektmappe bereitgestellt wurde, und den Bereitstellungsservertyp festlegen.  
@@ -79,7 +80,7 @@ ms.lasthandoff: 10/31/2017
   
 1.  In der **Paket-Designer**, wählen Sie die **Manifest** Registerkarte.  
   
-2.  .  
+2.  sein.  
   
 3.  Erweitern Sie die **Bearbeitungsoptionen** Knoten, wählen Sie die **überschreiben generierte XML und bearbeiten Manifest in der XML-Editor** verknüpfen, und wählen Sie dann die **Ja** Schaltfläche.  
   

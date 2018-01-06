@@ -16,11 +16,12 @@ caps.latest.revision: "75"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 655a1b6f3d57ac15fc7a50a603b2a12791251c9d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 1ca5b96157ee6077d4e904d21ba2a95c4f059e02
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ribbon-object-model-overview"></a>Multifunktionsleisten-Objektmodellübersicht
   Die [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] stellt ein stark typisiertes Objektmodell, das Sie zum Abrufen und Festlegen der Eigenschaften von Menübandsteuerelementen zur Laufzeit verwenden können. Beispielsweise können neue Menüsteuerelemente dynamisch ausgefüllt oder Steuerelemente kontextbezogen angezeigt und ausgeblendet werden. Zudem besteht die Möglichkeit, einem Menüband Registerkarten, Gruppen und Steuerelemente hinzuzufügen. Dies muss jedoch vor dem Laden des Menübands durch die Office-Anwendung erfolgen. Informationen finden Sie unter [Festlegen von Eigenschaften, die schreibgeschützt](#SettingReadOnlyProperties).  
@@ -37,7 +38,7 @@ ms.lasthandoff: 10/31/2017
 ##  <a name="RibbonEvents"></a>Menübandereignisse  
  Die **Menüband** Klasse enthält die folgenden drei Ereignisse:  
   
-|Ereignis|Beschreibung|  
+|event|Beschreibung|  
 |-----------|-----------------|  
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonBase.Load>|Wird ausgelöst, wenn die Menübandanpassung von der Office-Anwendung geladen wird. Der <xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.Load>-Ereignishandler wird automatisch der Menüband-Codedatei hinzugefügt. Führen Sie beim Laden des Menübands mithilfe dieses Ereignishandlers benutzerdefinierten Code aus.|  
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonBase.LoadImage>|Ermöglicht beim Laden des Menübands die Zwischenspeicherung von Images in der Menübandanpassung. Eine leichte Leistungsverbesserung wird erzielt, wenn zum Zwischenspeichern der Menüband-Images in diesem Ereignishandler Code geschrieben wird. Weitere Informationen finden Sie unter <xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.LoadImage>.|  
@@ -171,7 +172,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="ribbon-control-events"></a>Menüband-Steuerelementereignisse  
  Jede Steuerelementklasse beinhaltet mindestens ein Ereignis. In der folgenden Tabelle werden diese Ereignisse beschrieben.  
   
-|Ereignis|Beschreibung|  
+|event|Beschreibung|  
 |-----------|-----------------|  
 |Klicken|Tritt beim Klicken auf ein Steuerelement auf.|  
 |TextChanged|Tritt beim Ändern des Texts in einem Bearbeitungs- oder Kombinationsfeld auf.|  

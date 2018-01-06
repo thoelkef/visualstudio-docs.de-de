@@ -21,11 +21,12 @@ caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e9f12b8944d9174ca885e90b92c8e3a0d0b83215
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: bd659a1df9782c4e16dd2664a27a87e858e54ef2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-mark-controls-as-safe-controls"></a>Gewusst wie: Markieren von Steuerelementen als sichere Steuerelemente
   Aus Sicherheitsgründen unterscheidet SharePoint zwischen Web-Steuerelemente, die gegen Script-Injection geschützt sind und Web-Steuerelemente, die nicht aus. Steuerelemente, geschützt oder *sichere Steuerelemente*, von nicht vertrauenswürdigen Benutzern zugegriffen werden kann. Sie können Steuerelemente als sicher in der Einträge für sicheres Steuerelement-Eigenschaft des SharePoint-Projektelements oder im kennzeichnen die **Paket-Designer** beim Hinzufügen einer Assemblys für das Paket. Weitere Informationen finden Sie unter  

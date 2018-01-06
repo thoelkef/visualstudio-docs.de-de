@@ -25,11 +25,12 @@ caps.latest.revision: "40"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 39d773ac7a4c3fa8541af30143a3d3031377b5b7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 7b0808c62b5538e7b4ae50b7992c9b65750169f6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="customizing-ui-features-by-using-extensibility-interfaces"></a>Anpassen von Features der Benutzeroberfläche mithilfe von Erweiterungsschnittstellen
   Die Office-Entwicklungstools in Visual Studio umfassen Klassen und Designer, mit denen viele Implementierungsdetails behandelt werden können, wenn Sie sie zum Erstellen von benutzerdefinierten Aufgabenbereichen, Menübandanpassungen und Outlook-Formularbereichen in einem VSTO-Add-In verwenden. Sie können jedoch zudem die *Erweiterbarkeitsschnittstelle* manuell für jede Funktion implementieren, wenn Sie über besondere Anforderungen verfügen.  
@@ -64,7 +65,7 @@ ms.lasthandoff: 10/31/2017
   
 -   Die `TaskPaneHelper` -Klasse implementiert <xref:Microsoft.Office.Core.ICustomTaskPaneConsumer> zum Erstellen und Anzeigen eines benutzerdefinierten Aufgabenbereichs.  
   
--   Die `TaskPaneUI` -Klasse stellt die Benutzeroberfläche des Aufgabenbereichs bereit. Die Attribute für die `TaskPaneUI` -Klasse machen die Klasse sichtbar für COM, wodurch Microsoft Office-Anwendungen die Klasse erkennen können. In diesem Beispiel ist die Benutzeroberfläche ein leeres <xref:System.Windows.Forms.UserControl>. Sie können jedoch Steuerelemente hinzufügen, indem Sie den Code ändern.  
+-   Die `TaskPaneUI`-Klasse stellt die Benutzeroberfläche des Aufgabenbereichs bereit. Die Attribute für die `TaskPaneUI` -Klasse machen die Klasse sichtbar für COM, wodurch Microsoft Office-Anwendungen die Klasse erkennen können. In diesem Beispiel ist die Benutzeroberfläche ein leeres <xref:System.Windows.Forms.UserControl>. Sie können jedoch Steuerelemente hinzufügen, indem Sie den Code ändern.  
   
     > [!NOTE]  
     >  Damit die `TaskPaneUI` -Klasse für COM verfügbar ist, müssen Sie zudem die Eigenschaft **Für COM-Interop registrieren** für das Projekt festlegen.  

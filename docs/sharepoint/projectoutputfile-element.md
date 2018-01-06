@@ -16,11 +16,12 @@ caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a397648dd81ead8134777c8b36982fa6b65b687b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: edcaf6e858c2ebf6d8068fba4f9a179904ea0a72
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="projectoutputfile-element"></a>ProjectOutputFile-Element
   Stellt die Ausgabe von einem separaten Projekt mit dem Projektelement eingeschlossen werden soll, wenn er für SharePoint bereitgestellt wird.  
@@ -47,7 +48,7 @@ ms.lasthandoff: 10/31/2017
 |**ProjectId**|Erforderliche **xs: String** Attribut.<br /><br /> Die GUID des abhängigen Projekts, das die Ausgabe verfügt, die Sie einschließen möchten. Dies entspricht der **ProjectGuid** Element in der abhängigen Projektdatei.|  
 |**ProjectPath**|Erforderliche **xs: String** Attribut.<br /><br /> Der relative Pfad, einschließlich des Dateinamens Projekt des abhängigen Projekts, das die Ausgabe verfügt, die Sie einschließen möchten. Dieser Pfad ist relativ zum Stammordner der SharePoint-Projekt, das die SharePoint-Projektelement enthält.|  
 |**Target**|Optionale **xs: String** Attribut.<br /><br /> Der Pfad, in dem die Ausgabe des abhängigen Projekts ist, auf dem SharePoint-Server, relativ zum Stammordner Bereitstellung bereitgestellt werden. Stammordner der Bereitstellung richtet sich nach den Bereitstellungstyp, der gemäß der **Typ** Attribut.<br /><br /> Weitere Informationen finden Sie die Beschreibungen für die **Bereitstellungspfad** und **Bereitstellungsstamm-** Eigenschaften von SharePoint-Projektelemente in [Entwickeln von SharePoint-Lösungen](../sharepoint/developing-sharepoint-solutions.md).|  
-|**Typ**|Erforderliche **xs: String** Attribut.<br /><br /> Die Art der Bereitstellung für die Ausgabe des abhängigen Projekts verwendet werden soll. Weitere Informationen zu den möglichen Werten finden Sie in der Beschreibung für die **Bereitstellungstyp** Eigenschaft der SharePoint-Projektelemente im [Entwickeln von SharePoint-Lösungen](../sharepoint/developing-sharepoint-solutions.md).|  
+|**Type**|Erforderliche **xs: String** Attribut.<br /><br /> Die Art der Bereitstellung für die Ausgabe des abhängigen Projekts verwendet werden soll. Weitere Informationen zu den möglichen Werten finden Sie in der Beschreibung für die **Bereitstellungstyp** Eigenschaft der SharePoint-Projektelemente im [Entwickeln von SharePoint-Lösungen](../sharepoint/developing-sharepoint-solutions.md).|  
   
 ### <a name="child-elements"></a>Untergeordnete Elemente  
  Keine  

@@ -13,11 +13,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b05ff310a2e0c478b6f9be766f27731ca9f8f9ca
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: d161b078e4001ea7f02311bbcefe4c7f1eb6b7b5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="supported-event-types"></a>Unterstützte Ereignistypen
 Debuggen von Visual Studio unterstützt derzeit die folgenden Ereignistypen:  
@@ -55,7 +56,7 @@ Debuggen von Visual Studio unterstützt derzeit die folgenden Ereignistypen:
 > [!NOTE]
 >  Die [IDebugEngine2](../../extensibility/debugger/reference/idebugengine2.md) Schnittstelle ist für alle Ereignisse erforderlich.  
   
-|Ereignis|IDebugProgram2|IDebugThread2|Beenden von Ereignissen|  
+|event|IDebugProgram2|IDebugThread2|Beenden von Ereignissen|  
 |-----------|--------------------|-------------------|---------------------|  
 |[IDebugActivateDocumentEvent2](../../extensibility/debugger/reference/idebugactivatedocumentevent2.md)|Zulässig, jedoch nicht erforderlich.|Zulässig, jedoch nicht erforderlich.|Nein|  
 |[IDebugBreakEvent2](../../extensibility/debugger/reference/idebugbreakevent2.md)|Erforderlich|Erforderlich|Ja|  

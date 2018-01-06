@@ -18,11 +18,12 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: de361711234404e8b83e28aa1875b3549039bce0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 447fa8749958a3fa2b65a6ef7eb878b906170e6a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-import-a-master-page-or-theme"></a>Gewusst wie: Erstellen einer Masterseite oder eines Designs
   Sie können Seiten auf der SharePoint-Website ein einheitliches Erscheinungsbild verleihen durch Erstellen und Verwenden von Masterseiten und Designs. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]nicht für diese Elemente stellen Vorlagen bereit, aber Sie können sie in SharePoint Designer erstellen und dann importieren Sie sie in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Weitere Informationen finden Sie unter [Baustein: Seiten und Benutzeroberfläche](http://go.microsoft.com/fwlink/?LinkID=182095) auf der Microsoft-Website.  

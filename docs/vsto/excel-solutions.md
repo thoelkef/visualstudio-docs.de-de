@@ -31,11 +31,12 @@ caps.latest.revision: "34"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 46f484bc9dc597bc43ea4e7e2474d5b7efcb1f3c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: f12823ecb3fdc8d90d9f7c3651c6e04e6b0f6635
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="excel-solutions"></a>Excel-Projektmappen
   Visual Studio stellt Projektvorlagen bereit, die Sie verwenden können, um Anpassungen auf Dokumentebene und VSTO-Add-Ins für Microsoft Office Excel zu erstellen. Mit diesen Projektmappen können Sie Excel automatisieren, Excel-Features erweitern und die Excel-Benutzeroberfläche anpassen. Weitere Informationen zu den Unterschieden zwischen Anpassungen auf Dokumentebene und VSTO-Add-ins finden Sie unter [Übersicht über die Entwicklung von Office-Lösungen &#40; VSTO- &#41; ](../vsto/office-solutions-development-overview-vsto.md).  
@@ -123,7 +124,7 @@ ms.lasthandoff: 10/31/2017
 |[Exemplarische Vorgehensweise: Erstellen der ersten Anpassung auf Dokumentebene für Excel](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)|Veranschaulicht, wie Sie eine Standardanpassung auf Dokumentebene für Excel erstellen.|  
 |[Exemplarische Vorgehensweise: Erstellen des ersten VSTO-Add-Ins für Excel](../vsto/walkthrough-creating-your-first-vsto-add-in-for-excel.md)|Veranschaulicht die Erstellung eines grundlegenden VSTO-Add-Ins für Excel.|  
 |[Exemplarische Vorgehensweise: Hinzufügen von Steuerelementen zu einem Arbeitsblatt zur Laufzeit in einem VSTO-Add-In-Projekt](../vsto/walkthrough-adding-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project.md)|Veranschaulicht, wie Sie einem Arbeitsblatt zur Laufzeit mithilfe eines VSTO-Add-Ins eine Windows Forms-Schaltfläche, ein <xref:Microsoft.Office.Tools.Excel.NamedRange>und ein <xref:Microsoft.Office.Tools.Excel.ListObject> hinzufügen können.|
-|[Grundlegendes zu Mitverfasser und Add-Ins](./understanding-coauthoring-and-addins.md)|Beschreibt die Korrekturen, die Sie möglicherweise auf Ihre Lösungen stellen, um Mitverfasser Rechnung zu tragen.|  
+|[Grundlegendes zu Mitverfassern und Add-Ins](./understanding-coauthoring-and-addins.md)|Beschreibt die Korrekturen, die Sie möglicherweise auf Ihre Lösungen stellen, um Mitverfasser Rechnung zu tragen.|  
 |[Excel 2010 unter Office-Entwicklung](http://go.microsoft.com/fwlink/?LinkId=199011)|Enthält Links zu Artikeln und Referenzdokumentation zur Entwicklung von Excel-Projektmappen. Diese sind nicht spezifisch für die Office-Entwicklung mit Visual Studio.|  
   
   

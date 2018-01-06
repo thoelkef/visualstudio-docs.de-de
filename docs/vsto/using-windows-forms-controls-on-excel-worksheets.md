@@ -19,11 +19,12 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7bbd9c19698a9c81b5af29d27bba91b8aa36dcd2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 3d80158853ec042b98f7e40feda70520af55ed32
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-windows-forms-controls-on-excel-worksheets"></a>Verwenden von Windows Forms-Steuerelementen in Excel-Arbeitsblättern
   Sie können Windows Forms-Steuerelemente Ihre Microsoft Office Excel-Arbeitsmappen auf die gleiche Weise hinzufügen, dass Sie in Windows Forms-Steuerelemente hinzufügen. Allgemeine Informationen zum Arbeiten mit Steuerelementen in Dokumenten finden Sie unter [Windows Forms-Steuerelemente in Office-Dokumente (Übersicht)](../vsto/windows-forms-controls-on-office-documents-overview.md).  

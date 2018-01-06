@@ -19,11 +19,12 @@ caps.latest.revision: "42"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: fa3ecb6be4ba458c7a703e77e56c6ba51490887d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 5454aa06d4256c6c5e9ee1a8aa9573377ce9abdb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="troubleshooting-sharepoint-solutions"></a>Problembehandlung bei SharePoint-Lösungen
   Die folgenden Probleme oder Warnungen können auftreten, wenn SharePoint-Lösungen mithilfe des [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]-Debuggers debuggt werden. Weitere Informationen finden Sie unter [Debuggen von SharePoint 2007-Workflow-Projektmappen](http://msdn.microsoft.com/en-us/3a5392f3-66f3-48be-956e-02de23fa6247).
@@ -101,7 +102,7 @@ ms.lasthandoff: 10/31/2017
  Nach dem Erstellen und einer Sitedefinition Bereitstellen mit einer nicht englischen Version von [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] (d. h. eine Version mit einem anderen Gebietsschema [!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)] als 1033), wird die **SharePoint-Anpassungen** Registerkarte nicht angezeigt, in der **Vorlagenauswahl** Feld und die neue Websitevorlage wird nicht angezeigt, der **neue SharePoint-Website** Seite.  
   
 ### <a name="error-message"></a>Fehlermeldung  
- Keine.  
+ Keine  
   
 ### <a name="resolution"></a>Auflösung  
  Dieses Problem tritt aufgrund eines falschen Werts in der **Pfad** -Eigenschaft für die Konfigurationsdatei der Webtemp-Websitedefinition (beispielsweise "webtemp_SiteDefinitionProject1.Xml. In der **Pfad** -Eigenschaft für die Webtemp-Datei befindet sich unter dem **Bereitstellungsspeicherort**, ändern "1033" zur entsprechenden Gebietsschema- [!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)]. Z. B. zum Verwenden einer japanischen Gebietsschema ändern Sie den Wert auf 1041. Weitere Informationen finden Sie unter [von Microsoft zugewiesene Gebietsschema-IDs](http://go.microsoft.com/fwlink/?LinkID=165561) auf der MSDN-Website.  
@@ -141,7 +142,7 @@ ms.lasthandoff: 10/31/2017
  Wenn Sie ein Ereignisempfängerprojekt erstellen und Sie bestimmte Webereignisse auswählen, z. B. "eine Website wird gelöscht", tritt das Ereignis nie ein.  
   
 ### <a name="error-message"></a>Fehlermeldung  
- Keine.  
+ Keine  
   
 ### <a name="resolution"></a>Auflösung  
  Dieses Problem tritt auf, da der Funktionsbereich "Site" sein muss, um Ereignisse auf Websiteebene zu behandeln, der Standardfunktionsbereich für Ereignisempfängerprojekte ist jedoch "Internet". Die betroffenen Webereignisse sind:  
@@ -217,7 +218,7 @@ ms.lasthandoff: 10/31/2017
  Fehler beim Erstellen: Fehler im Bereitstellungsschritt "Funktionen aktivieren": die Datei Template\Features\\[*Projekt importieren**Feature**Namen*] \Files\Lists \\[*alte**Listennamen*] \Schema.xml ist nicht vorhanden.  
   
 ### <a name="resolution"></a>Auflösung  
- Wenn Sie eine Listeninstanz importieren, wird der Datei "Elements.xml" der Listeninstanz ein Attribut namens "CustomSchema" hinzugefügt. Die Datei "Elements.xml" schließt den Pfad einer benutzerdefinierten Datei "schema.xml" für die Listeninstanz ein. Wenn Sie die Listeninstanz in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] umbenennen, ändert sich der Bereitstellungspfad für die benutzerdefinierte Datei "schema.xml", der Pfadwert des CustomSchema-Attributs wird jedoch nicht aktualisiert. Als Ergebnis kann die Listeninstanz die Datei "schema.xml" im alten Pfad, der vom CustomSchema-Attribut angegeben wird, nicht finden, wenn die Funktion aktiviert wird.  
+ Wenn Sie eine Listeninstanz importieren, wird der Datei "Elements.xml" der Listeninstanz ein Attribut namens "CustomSchema" hinzugefügt. Die Datei "Elements.xml" schließt den Pfad einer benutzerdefinierten Datei "schema.xml" für die Listeninstanz ein. Wenn Sie die Listeninstanz in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] umbenennen, ändert sich der Bereitstellungspfad für die benutzerdefinierte Datei "schema.xml", der Pfadwert des CustomSchema-Attributs wird jedoch nicht aktualisiert. Als Ergebnis kann die Listeninstanz die Datei „schema.xml“ im alten Pfad, der vom CustomSchema-Attribut angegeben wird, nicht finden, wenn die Funktion aktiviert wird.  
   
  Um dieses Problem zu beheben, aktualisieren Sie den Pfad des Bereitstellungsspeicherorts der Datei "schema.xml" im CustomSchema-Attribut.  
   
@@ -265,7 +266,7 @@ ms.lasthandoff: 10/31/2017
  Wenn Sie eine SharePoint-Lösung exportieren, die Projektmappe in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] importieren und dann wieder auf der gleichen Website bereitstellen, von der sie exportiert wurde, wird die ursprüngliche SharePoint-Lösung ersetzt. Dieses Problem tritt nicht auf, wenn Sie die Projektmappe auf einem Server bereitstellen, auf dem die ursprüngliche Projektmappe nicht aktiviert ist.  
   
 ### <a name="error-message"></a>Fehlermeldung  
- Keine.  
+ Keine  
   
 ### <a name="resolution"></a>Auflösung  
  Um zu verhindern, dass eine Projektmappe auf der Website überschreiben wird, von der sie exportiert wurde, ändern Sie die GUIDS der SolutionID und der Funktions-IDs aller importierten Funktionen im [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]-Projekt.  

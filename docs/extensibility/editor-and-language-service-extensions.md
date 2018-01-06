@@ -13,11 +13,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0e5ad07694604c7b61c922cd097809fa037e0501
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 59de764dfcb976dfac303f44a67340e117ae5e06
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="editor-and-language-service-extensions"></a>Editor und Spracherweiterungen-Dienst
 Sie können die meisten Funktionen von Visual Studio Code-Editor erweitern. Der Editor basiert auf Windows Presentation Foundation (WPF) und in verwaltetem Code geschrieben wird. Obwohl dieses Design aus der entwirft in früheren Versionen von Visual Studio im Detail variiert, stellt er größtenteils die gleichen Funktionen bereit. Um den Editor zu erweitern, verwenden Sie die Managed Extensibility Framework (MEF).  
