@@ -13,11 +13,12 @@ caps.latest.revision: "8"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 39d9697c7d6a216c08e34eb19287d22a76d67a55
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 19d8761abea6934c59673c332ea09e8a0b4e6997
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>Gewusst wie: Erzwingen von wartbarem Code mit einer Eincheckrichtlinie für die Codeanalyse
 Entwickler können das Tool Codemetrik zum Messen von Komplexität und verwaltbarkeit des Codes verwenden, aber sie können keine Codemetrik aufrufen, als Teil einer in der Eincheckrichtlinie. Allerdings kann ein Team Codeanalyseregeln aktiviert, die überprüfen Sie die Kompatibilität des Codes mit Codemetrik-Standards und erzwingen Sie diese Regeln über Eincheckrichtlinien. Weitere Informationen zu Metriken für Code finden Sie unter der [Codemetrikwerte](../code-quality/code-metrics-values.md).  

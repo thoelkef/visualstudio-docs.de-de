@@ -26,11 +26,12 @@ caps.latest.revision: "34"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ae3149350bac7aca92ffbc8b308c75357c3edba4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 329e7fae6a2a8682c23417f88e59700b7caffd53
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="create-custom-views-of-managed-objects"></a>Erstellen Sie benutzerdefinierter Ansichten von verwalteten Objekten
 Sie können die Art anpassen, wie Datentypen von Visual Studio in Debuggervariablenfenstern angezeigt werden.  
@@ -44,7 +45,7 @@ Sie können die Art anpassen, wie Datentypen von Visual Studio in Debuggervaria
  Sie können eine Schnellansicht schreiben, um einen beliebigen verwalteten Datentyp anzuzeigen. Weitere Informationen finden Sie unter [wie: Schreiben einer Schnellansicht](../debugger/how-to-write-a-visualizer.md).  
   
 ## <a name="native-code"></a>nativer Code  
- Für systemeigenen Code können Sie der Datei autoexp.dat benutzerdefinierte Datentyperweiterungen hinzufügen. Diese Datei befindet sich im Verzeichnis Programme\Microsoft Visual Studio 11.0\Common7\Packages\Debugger. Anweisungen zum Schreiben von Regeln für die Datei `autoexp` befinden sich in der Datei selbst.  
+ Für nativen Code können Sie der Datei autoexp.dat benutzerdefinierte Datentyperweiterungen hinzufügen. Diese Datei befindet sich im Verzeichnis Programme\Microsoft Visual Studio 11.0\Common7\Packages\Debugger. Anweisungen zum Schreiben von Regeln für die Datei `autoexp` befinden sich in der Datei selbst.  
   
 > [!CAUTION]
 >  Die Struktur dieser Datei und die Syntax der autoexp-Regeln können in den verschiedenen Versionen von Visual Studio unterschiedlich sein.  

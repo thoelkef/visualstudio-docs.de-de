@@ -12,11 +12,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 956f6ab5180475bf0abb03e4353fe0343f876ae1
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: abd7ba49b3a9bb449f4f323deee588c3942d37a4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="the-selected-connection-uses-an-unsupported-database-provider"></a>Die ausgewählte Verbindung nutzt einen nicht unterstützten Anbieter.
 Diese Meldung wird angezeigt, wenn Sie Elemente ziehen, die nicht die .NET Framework-Datenanbieter für SQL Server aus verwenden **Server-Explorer**/**Datenbank-Explorer** auf die [LINQ to SQL Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md).  
@@ -29,5 +30,5 @@ Diese Meldung wird angezeigt, wenn Sie Elemente ziehen, die nicht die .NET Frame
   
 ## <a name="see-also"></a>Siehe auch
 <xref:System.Data.SqlClient>  
-[O/R-Designer-Nachrichten](../data-tools/o-r-designer-messages.md)  
+[O/R-Designer-Meldungen](../data-tools/o-r-designer-messages.md)  
 [LINQ to SQL-tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

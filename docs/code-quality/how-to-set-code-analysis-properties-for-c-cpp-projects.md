@@ -22,11 +22,12 @@ caps.latest.revision: "17"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: b2ad22eccb561bf58ee845d58268620aad778a20
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: cplusplus
+ms.openlocfilehash: 629bc4dc36ade84f6a6e55518775f0d11165da7c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-set-code-analysis-properties-for-cc-projects"></a>Gewusst wie: Festlegen von Codeanalyseeigenschaften für C/C++-Projekte
 Sie können konfigurieren, welche Regeln das Codeanalysetool verwendet wird, um den Code in den einzelnen Konfigurationen Ihres Projekts analysieren. Darüber hinaus können Sie die Codeanalyse unterdrücken von Warnungen zu Code, die generiert wurde, und dem Projekt hinzugefügt, von einem Drittanbieter-Tool weiterleiten.  

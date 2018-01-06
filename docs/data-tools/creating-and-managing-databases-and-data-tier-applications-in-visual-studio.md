@@ -17,11 +17,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 7f538c51bd5f15f91dfae0d13a9dae8cf4f8afb1
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: 8e599e1d309ab254c2b2d5a3a490c0cd912b8823
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="database-projects-and-data-tier-applications-in-visual-studio"></a>Datenbankprojekte als auch Data-Tier-Anwendungen in Visual Studio  
 Können Sie zum Erstellen neuer Datenbanken Datenbankprojekte neue datenebenenanwendungen (DACs), und vorhandene Datenbanken und datenebenenanwendungen zu aktualisieren. Sowohl für Datenbankprojekte als auch für DAC-Projekte ermöglichen es Ihnen Version Control und Projekt containerverwaltungstechniken auf Ihren entwicklungsvorhaben Datenbank im großen und ganzen genauso angewendet wird, diese Techniken auf verwaltetem oder systemeigenem Code angewendet werden. Helfen Sie dem Entwicklungsteam Verwalten von Änderungen an Datenbanken und Datenbankserver durch Erstellen einer *DAC-Projekt*, *Datenbankprojekt*, oder ein *Serverprojekt* und zu deren unter Versionskontrolle. Mitglieder Ihres Teams können dann Auschecken von Dateien zu machen, erstellen und Testen Sie die Änderungen in einer *isolierten Entwicklungsumgebung*, oder Sandkasten, bevor Sie das Team freigeben. Um die Qualität des Codes sicherzustellen, Ihr Team kann abgeschlossen und alle Änderungen für eine bestimmte Version der Datenbank in einer Stagingumgebung testen, bevor Sie die Änderungen in die Produktion bereitstellen.  

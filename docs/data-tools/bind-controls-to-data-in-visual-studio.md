@@ -17,11 +17,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 9361380aa53b8f6070f4ff9d956620c5344eec7e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-storage
+ms.openlocfilehash: d6a1ab26dc402d039a5e858896ec25668be8df9e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="bind-controls-to-data-in-visual-studio"></a>Binden von Steuerelementen an Daten in Visual Studio
 Sie können Daten für Benutzer der Anwendung anzeigen, indem Sie Daten an Steuerelemente binden. Sie können diese datengebundenen Steuerelemente erstellen, durch Ziehen von Elementen aus der **Datenquellen** auf einer Entwurfsoberfläche oder Steuerelemente auf einer Entwurfsoberfläche in Visual Studio.  
@@ -37,7 +38,7 @@ Sie können Daten für Benutzer der Anwendung anzeigen, indem Sie Daten an Steue
 |Entity Data Model|Ja<sup>1</sup>|Ja|Ja|  
 |LINQ to SQL-Klassen|Nicht<sup>2</sup>|Nicht<sup>2</sup>|Nicht<sup>2</sup>|  
 |Dienste (einschließlich [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)], WCF-Dienste und Web Services)|Ja|Ja|Ja|  
-|Objekt|Ja|Ja|Ja|  
+|Object|Ja|Ja|Ja|  
 |SharePoint|Ja|Ja|Ja|  
   
  1. Generieren Sie das Modell mit der **Entity Data Model** Assistenten, klicken Sie dann diese Objekte in den Designer ziehen.  

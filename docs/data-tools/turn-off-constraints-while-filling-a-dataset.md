@@ -24,11 +24,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 29b24794c74f2bd042845384d72a3716506d5e2d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-storage
+ms.openlocfilehash: 88c8687511dd600802cc7c6ecdc12f0827fd7f6f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="turn-off-constraints-while-filling-a-dataset"></a>Deaktivieren von Einschränkungen beim Auffüllen von Datasets
 Wenn ein Dataset Einschränkungen (z. B. foreign Key-Einschränkungen) enthält, können sie Fehler im Zusammenhang Sequenznummern für das Dataset ausgeführten Vorgänge auslösen. Z. B. im Zusammenhang mit untergeordnete Datensätze vor dem Laden übergeordnete Datensätze können eine Einschränkung verletzt und verursacht einen Fehler. Sobald Sie einen untergeordneten Datensatz laden, wird die Einschränkung für den zugehörigen übergeordneten Datensatz überprüft, und löst einen Fehler aus.  

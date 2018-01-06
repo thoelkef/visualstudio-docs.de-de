@@ -15,11 +15,12 @@ caps.latest.revision: "40"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 28f572ff80888f9d207c9ade9042414127abb154
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 054cf016dba69561591ad6bc8b18029272e85d8f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-configuring-and-using-a-custom-rule-set"></a>Exemplarische Vorgehensweise: Konfigurieren und Verwenden eines benutzerdefinierten Regelsatzes
 In dieser exemplarischen Vorgehensweise wird gezeigt, wie mit Codeanalysetools, die konfiguriert wurden, um einen angepassten *Regelsatz* auf eine Klassenbibliothek. Sie können einen Regelsatz auswählen, der bezieht sich auf den Projekttyp, den Sie für die Projektmappe angegeben haben, oder Sie können auswählen, dass alternative Regelsätzen erfüllt eine bestimmte Anforderung z. B. Scans Legacycode für Probleme, die auf eine nicht unterbrechende Weise behoben werden können. In beiden Fällen können die Regelsätze auch angepasst werden, um sie an Ihre projektanforderungen eine Feinabstimmung durchzuführen.  
@@ -40,7 +41,7 @@ In dieser exemplarischen Vorgehensweise wird gezeigt, wie mit Codeanalysetools, 
   
 ## <a name="prerequisites"></a>Erforderliche Komponenten  
   
--   [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)], [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)] oder [!INCLUDE[vsPro](../code-quality/includes/vspro_md.md)]  
+-   [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)], [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)]oder [!INCLUDE[vsPro](../code-quality/includes/vspro_md.md)]  
   
 ## <a name="using-rule-sets-with-code-analysis"></a>Verwenden die Regel legt fest, mit der Codeanalyse  
  Erstellen Sie zunächst eine einfache Klassenbibliothek.  

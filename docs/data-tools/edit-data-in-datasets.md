@@ -18,11 +18,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: bc42474ff9cb4762b43463e5e0929f11d58ad7d0
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: afb484c1d3bfdd705c5a28f150e4631048ead49d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="edit-data-in-datasets"></a>Bearbeiten von Daten in datasets
 Ähnlich wie die Daten in einer Tabelle in einer Datenbank zu bearbeiten, bearbeiten Sie die Daten in Datentabellen. Der Prozess kann enthalten, einfügen, aktualisieren und Löschen von Datensätzen in der Tabelle. In einem datengebundenen Formular können Sie angeben, welche Felder Benutzer bearbeitet werden. In diesen Fällen behandelt die Infrastruktur für die Datenbindung alle der änderungsnachverfolgung, damit die Änderungen später wieder in die Datenbank gesendet werden können. Wenn Sie programmgesteuert Bearbeitungen, um Daten vornehmen und die Änderungen zurück an die Datenbank gesendet werden sollen, müssen Sie verwenden, die Objekte und Methoden, die die änderungsnachverfolgung für Sie übernimmt.  

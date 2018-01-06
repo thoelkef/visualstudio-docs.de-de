@@ -21,11 +21,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: f8d1d25c2aaa66658df53dbaea366c196e8e7f6b
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: 303caa59af4cbcbafa9ec14fb6ffb3559d6b1bab
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-save-data-in-a-transaction"></a>Exemplarische Vorgehensweise: Speichern von Daten in einer Transaktion
 Diese exemplarische Vorgehensweise veranschaulicht, wie zum Speichern von Daten in einer Transaktion mithilfe der <xref:System.Transactions> Namespace. In dieser exemplarischen Vorgehensweise erstellen Sie eine Windows Forms-Anwendung. Verwenden Sie den Konfigurations-Assistenten so erstellen ein Dataset für zwei Tabellen in der Northwind-Beispieldatenbank. Sie fügen datengebundene Steuerelemente auf einem Windows Form, und ändern Sie den Code für die BindingNavigators speichern Schaltfläche zum Aktualisieren der Datenbank innerhalb einer "TransactionScope".  

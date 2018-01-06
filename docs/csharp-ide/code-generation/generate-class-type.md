@@ -14,11 +14,12 @@ ms.author: gewarren
 manager: ghogen
 f1_keywords: vsl.GenerateFromUsage
 dev_langs: csharp
-ms.openlocfilehash: b6825be5447718e47f7145b0b3b16ec6d0ee076c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: c72b9e898bd150e0d4ec1cc6a7a91d1eb7e6b7a8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="generate-a-class-or-type-in-c"></a>Generieren Sie eine Klasse oder ein Typ in c# #
 **Was:** können Sie sofort den Code für eine Klasse oder einen Typ zu generieren. 
@@ -61,7 +62,7 @@ ms.lasthandoff: 10/31/2017
    --- | ---
    Zugriff | Legen Sie den Typ haben *Standard*, *intern* oder *öffentlichen* Zugriff.
    Art | Dies kann festgelegt werden, als *Klasse* oder *Struktur*.
-   Name | Dies kann nicht geändert werden und werden der Name, den Sie bereits eingegeben haben.
+   name | Dies kann nicht geändert werden und werden der Name, den Sie bereits eingegeben haben.
    Projekt | Wenn mehrere Projekte in der Projektmappe vorhanden sind, können Sie auswählen, in dem die Klasse/Struktur Gültigkeitsdauer werden soll.
    Dateiname | Sie können eine neue Datei erstellen, oder Sie können den Typ hinzufügen, zu einer vorhandenen Datei.
 

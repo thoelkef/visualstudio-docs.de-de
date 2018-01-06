@@ -15,11 +15,12 @@ caps.latest.revision: "40"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f35833df8e84a4e4caba8fd46f8daea8dd5119a1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 92babbf3c7a5863d178463b69525bdb722bf28ad
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="in-source-suppression-overview"></a>Übersicht über die Unterdrückung im Quellcode
 Unterdrückung im Quellcode ist die Fähigkeit, unterdrückt oder ignoriert Verletzungen der Codeanalyse in verwaltetem Code durch Hinzufügen der **SuppressMessage** -Attribut auf die Codesegmente, die dazu führen, die Verstöße dass. Die **SuppressMessage** -Attribut ist ein conditional-Attribut das in der IL-Metadaten einer Assembly mit verwaltetem Code enthalten ist, nur dann, wenn zum Zeitpunkt der Kompilierung die CODE_ANALYSIS-Kompilierungssymbol definiert ist.  
@@ -79,11 +80,11 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
 ## <a name="suppressmessage-usage"></a>SuppressMessage-Verwendung  
  Codeanalysewarnungen unterdrückt werden, auf der Ebene, der eine Instanz von der **SuppressMessage** Attribut angewendet wird. Das Zweck dieses werden eng gekoppelt die Unterdrückungsinformationen an den Code, in dem die Verletzung auftritt.  
   
- Das allgemeine Format Unterdrückung umfasst die Regelkategorie und Regelbezeichner enthält eine optionale lesbare Darstellung des Regelnamens. Beispiel:  
+ Das allgemeine Format Unterdrückung umfasst die Regelkategorie und Regelbezeichner enthält eine optionale lesbare Darstellung des Regelnamens. Ein auf ein Objekt angewendeter  
   
  `[SuppressMessage("Microsoft.Design", "CA1039:ListsAreStrongTyped")]`  
   
- Treten strict aus Leistungsgründen für die Unterdrückung im Quellcode Metadaten zu minimieren, kann der Regelnamen selbst außer acht gelassen werden. Die Regelkategorie und die zugehörige Regel-ID bilden zusammen hinreichend eindeutigen Regelbezeichner. Beispiel:  
+ Treten strict aus Leistungsgründen für die Unterdrückung im Quellcode Metadaten zu minimieren, kann der Regelnamen selbst außer acht gelassen werden. Die Regelkategorie und die zugehörige Regel-ID bilden zusammen hinreichend eindeutigen Regelbezeichner. Ein auf ein Objekt angewendeter  
   
  `[SuppressMessage("Microsoft.Design", "CA1039")]`  
   

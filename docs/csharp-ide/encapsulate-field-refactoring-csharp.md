@@ -17,11 +17,12 @@ caps.latest.revision: "26"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7bd9e255b35ffb843c15d5ffa9c1547891bf437d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: d587edebcea443e0bfff52004b128c70923470d4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="encapsulate-field-refactoring-c"></a>Refactoring „Feld kapseln“ (C#)
 Die **Feld kapseln** (refactoringvorgang) ermöglicht es Ihnen, schnell eine Eigenschaft aus einem vorhandenen Feld erstellen, und den Code dann nahtlos mit Verweisen auf die neue Eigenschaft zu aktualisieren.  
@@ -104,5 +105,5 @@ Die **Feld kapseln** (refactoringvorgang) ermöglicht es Ihnen, schnell eine Eig
  Der durch diesen Umgestaltungsvorgang generierte Code wird durch das Codeausschnittsfeature des Vorgangs „Feld kapseln“ modelliert. Codeausschnitte können geändert werden. Weitere Informationen finden Sie unter [Codeausschnitte](../ide/visual-csharp-code-snippets.md).  
   
 ## <a name="see-also"></a>Siehe auch  
- [Umgestaltung (c#)](refactoring-csharp.md)   
+ [Refactoring (C#)](refactoring-csharp.md)   
  [Visual C#-Codeausschnitte](../ide/visual-csharp-code-snippets.md)

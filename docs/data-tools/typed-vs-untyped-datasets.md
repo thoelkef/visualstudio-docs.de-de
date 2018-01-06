@@ -15,11 +15,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 8fda7a1663a8aa9ccbf1f89f2a3b05d74b0a2316
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: af42a48a311cadba9fc22a487d03492f92ba6469
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="typed-vs-untyped-datasets"></a>Typisierte im Vergleich zu nicht typisierten datasets
 Ein typisiertes Dataset ist ein Dataset, das zuerst von der Basisklasse abgeleitet wird <xref:System.Data.DataSet> Klasse, und klicken Sie dann mithilfe von Informationen aus der **Dataset-Designer**, die in einer XSD-Datei zum Generieren einer neuen gespeichert wird stark typisierten Dataset-Klasse. Informationen aus dem Schema (Tabellen, Spalten usw.) generiert und in diese neue Datasetklasse als einen Satz von Eigenschaften und Objekte erster Klasse kompiliert. Da ein typisiertes Dataset von der Basisklasse erbt <xref:System.Data.DataSet> -Klasse, übernimmt die typisierte Klasse die Funktionalität der <xref:System.Data.DataSet> Klasse und kann mit Methoden, die eine Instanz von verwendet werden eine <xref:System.Data.DataSet> Klasse als Parameter.  
@@ -44,4 +45,4 @@ Ein typisiertes Dataset ist ein Dataset, das zuerst von der Basisklasse abgeleit
  Allgemeiner gesagt ist bestehen häufig, wenn Sie ein Dataset dynamisch erstellt können, ohne ein Schema verfügbar. In diesem Fall wird das Dataset einfach eine praktische Struktur, in der Sie Informationen stets, so lange die Daten in einer relationalen Weise dargestellt werden können. Zur gleichen Zeit können Sie das Dataset-Funktionen, z. B. die Möglichkeit, die Informationen für die Übergabe an einen anderen Prozess oder eine XML-Datei schreiben serialisieren nutzen.
 
 ## <a name="see-also"></a>Siehe auch
-[DataSet-tools](../data-tools/dataset-tools-in-visual-studio.md)
+[Datasettools](../data-tools/dataset-tools-in-visual-studio.md)

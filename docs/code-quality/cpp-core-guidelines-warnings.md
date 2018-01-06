@@ -11,11 +11,12 @@ author: mblome
 ms.author: mblome
 manager: ghogen
 ms.technology: vs-ide-code-analysis
-ms.openlocfilehash: 65f4e7ed865a3a620d58b45580914d6e0b589660
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: cplusplus
+ms.openlocfilehash: d03330ce8213e7df56ec9f8df73458b3819180ca
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>Verwenden die Spielsteine C++-Core-Richtlinien
 Die C++-Core-Richtlinien sind eine portable Satz von Richtlinien, Regeln und bewährte Methoden zum Schreiben von Code in C++, die von C++-Experten und Designern erstellt. Visual Studio unterstützt derzeit eine Teilmenge dieser Regeln als Teil seiner Codeanalysetools für C++. Die zentrale Richtlinie Prüfer werden standardmäßig in Visual Studio 2017 installiert und sind [als NuGet-Paket für Visual Studio 2015 verfügbar](#vs2015_corecheck).
@@ -62,7 +63,7 @@ int main()
   
 -   C26485 ist Regel Bounds.3: keine Decay Array in einen Zeiger.  
   
--   C26481 ist Regel Bounds.1: Verwenden Sie keine Zeigerarithmetik. Verwenden Sie stattdessen `span` .  
+-   C26481 ist Regel Bounds.1: Verwenden Sie keine Zeigerarithmetik. Verwenden Sie stattdessen `span`.  
   
  Wenn die C++ Core überprüfen Code Analysis-Rulesets sind installiert und aktiviert, wenn Sie diesen Code kompilieren, die ersten beiden Warnungen ausgegeben werden, aber das dritte unterdrückt wird. Hier ist die Buildausgabe aus den folgenden Code ein:  
   

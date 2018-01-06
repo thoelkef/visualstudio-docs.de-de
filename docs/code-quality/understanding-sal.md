@@ -12,11 +12,12 @@ caps.latest.revision: "18"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: d1c6ac08b47bd5ad5e6dd84bbf78496c421a21a6
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: multiple
+ms.openlocfilehash: 196bfdbeeda00199861ea2f676553f024fcaf98f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="understanding-sal"></a>Einführung in SAL
 Die Microsoft Source Code Annotation Language (SAL) bietet eine Reihe von Anmerkungen, die Sie verwenden können, um beschreiben, wie eine Funktion verwendet, die zugehörigen Parameter, die Annahmen, die über diese vereinfacht und die Garantien, die sie nach dem Abschluss vereinfacht. Die Anmerkungen werden in der Headerdatei definiert `<sal.h>`. Visual Studio-Codeanalyse für C++ verwendet SAL-Anmerkungen, um die Analyse der Funktionen ändern. Weitere Informationen zu SAL 2.0 für die Entwicklung von Windows-Treiber, finden Sie unter [SAL 2.0 Anmerkungen für Windows-Treiber](http://go.microsoft.com/fwlink/?LinkId=250979).  
@@ -107,7 +108,7 @@ wchar_t * wmemcpy(
 ## <a name="sal-examples"></a>Beispiele zu SAL  
  In diesem Abschnitt sind Codebeispiele für die grundlegende SAL-Anmerkungen aufgeführt.  
   
-### <a name="using-the-visual-studio-code-analysis-tool-to-find-defects"></a>Suchen von Fehlern mit den Visual Studio-Codeanalysetools  
+### <a name="using-the-visual-studio-code-analysis-tool-to-find-defects"></a>Suchen von Fehlern mit den Visual Studio Codeanalysetools  
  In den Beispielen wird der Codeanalyse von Visual Studio-Tools zusammen mit SAL-Anmerkungen verwendet, um Codefehler zu suchen. Im folgenden wird erläutert, wie ein.  
   
 ##### <a name="to-use-visual-studio-code-analysis-tools-and-sal"></a>So verwenden Sie Visual Studio-Codeanalysetools und SAL  

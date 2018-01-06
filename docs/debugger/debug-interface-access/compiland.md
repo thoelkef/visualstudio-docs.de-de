@@ -16,11 +16,12 @@ caps.latest.revision: "17"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a93cc4b98d46989aedfb212a54e6a5df5692ad59
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0f11216e437488a918a439166afb9000193e565a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="compiland"></a>Compiland
 Es ist eine `SymTagCompiland` symbol für jede Kompiliereinheit zur .exe-Datei verknüpft. Compiland Informationen Symbole mit aufgeteilt wird eine `SymTagCompiland` Tags, das abgerufen werden kann, ohne zusätzliche Kompiliereinheit Symbole laden und Symbole mit einer `SymTagCompilandDetails` Tag, die erfordern möglicherweise zusätzliche Symbole laden.  

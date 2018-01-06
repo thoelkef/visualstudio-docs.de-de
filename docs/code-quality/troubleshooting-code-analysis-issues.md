@@ -1,5 +1,5 @@
 ---
-title: "Problembehandlung für Codeanalysefehler | Microsoft Docs"
+title: "Problembehandlung für Codeanalysefehler | Microsoft-Dokumentation"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -12,25 +12,26 @@ caps.latest.revision: "5"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6e552570eb48b9210b366ebbfe157fe656ab3fe0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a0773c429ad8e738e0de280b4fe2abbf2fa6e5c3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="troubleshooting-code-analysis-issues"></a>Problembehandlung für Codeanalysefehler
-Dieses Thema enthält Informationen zur Problembehandlung für die folgenden Visual Studio-Codeanalysefehler.  
+Dieses Thema enthält Problembehandlungsinformationen für die folgenden Visual Studio-Codeanalyseprobleme.  
   
--   [Änderungen in einem Visual Studio 2010 Regel Satz nicht widergespiegelt, die in früheren Versionen von Visual Studio](#ChildRuleSetChangesInPreviousVersions)  
+-   [Änderungen in einem Visual Studio 2010-Regelsatz werden nicht in vorherigen Versionen von Visual Studio dargestellt](#ChildRuleSetChangesInPreviousVersions)  
   
-##  <a name="ChildRuleSetChangesInPreviousVersions"></a>Änderungen in einem Visual Studio 2010 Regel Satz nicht widergespiegelt, die in früheren Versionen von Visual Studio  
- Beim Erstellen eines Regelsatzes [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] , einen untergeordneten Regelsatz enthält, wird eine Änderung an den untergeordneten Regelsatz in Codeanalysen bei Computern mit einer früheren Version von Visual Studio nicht angewendet werden. Um dieses Problem zu beheben, müssen Sie eine neue Version des Regelsatzes übergeordneten erzwingen, die dem Regelsatz ist, der den untergeordneten Regelsatz enthält.  
+##  <a name="ChildRuleSetChangesInPreviousVersions"></a>Änderungen in einem Visual Studio 2010-Regelsatz werden nicht in vorherigen Versionen von Visual Studio dargestellt  
+ Wenn Sie einen Regelsatz, der einen untergeordneten Regelsatz enthält, in [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] erstellen, werden Änderungen an dem untergeordneten Regelsatz möglicherweise nicht in der Codeanalyse von älteren Visual Studio-Versionen angewendet. Um dieses Problem zu beheben müssen Sie den übergeordneten Regelsatz, der den untergeordneten Regelsatz enthält, erneut generieren.  
   
-1.  Öffnen Sie die übergeordnete Regel festgelegt [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)].  
+1.  Öffnen Sie den übergeordneten Regelsatz in [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)].  
   
-2.  Nehmen Sie eine Änderung vor, z. B. hinzufügen oder Löschen einer Regel, und speichern Sie den Regelsatz.  
+2.  Nehmen Sie eine Änderung vor, indem Sie beispielsweise eine Regel hinzufügen oder entfernen, und speichern Sie den Regelsatz anschließend.  
   
-3.  Öffnen Sie den Regelsatz erneut, die Änderung rückgängig zu machen und speichern Sie dann den Regelsatz erneut.  
+3.  Öffnen Sie den Regelsatz erneut, machen die Änderung rückgängig, und speichern Sie den Regelsatz.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Analysieren der Anwendungsqualität](../code-quality/analyzing-application-quality-by-using-code-analysis-tools.md)   

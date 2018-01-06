@@ -12,11 +12,12 @@ caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 44bc05bc6ba27dffdc267ad2cad1e15bc9b0a61a
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: multiple
+ms.openlocfilehash: 44c01069539ef5b67a9f208bc89786dfd0ac40a8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="mixed-recommended-rules-rule-set"></a>Regelsatz für gemischte empfohlene Mindestregeln
 Die Microsoft gemischte empfohlene Regeln konzentrieren sich auf die häufigsten und kritischsten Probleme in C++-Projekten, die die Common Language Runtime, einschließlich potenzieller Sicherheitslücken, Anwendungsabstürze und anderen wichtigen Logik- und Designfehlern unterstützen. Der Regelsatz sollte in allen benutzerdefinierten Regelsätzen enthalten sein, die Sie für Ihre C++-Projekte mit Common Language Runtime-Unterstützung erstellen. Dieser Regelsatz ist für die Konfiguration mit Visual Studio Professional Edition und höher vorgesehen.  

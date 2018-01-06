@@ -17,11 +17,12 @@ caps.latest.revision: "18"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a74896ade430b56adbed603a0459b05778c8470c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 637758d8d66095ddf1d986c6abf638fc7e1ab548
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="block"></a>Block
 Jeder Codeblock wird anhand einer `SymTagBlock` Symbol. Block-Symbole werden verwendet, um geschachtelte Bereiche innerhalb von Funktionen zu identifizieren.  

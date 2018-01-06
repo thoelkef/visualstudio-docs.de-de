@@ -20,11 +20,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 9f410fdfea8a241b10cbab621dbd781d3648a080
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-storage
+ms.openlocfilehash: 64031303545f293d9274158eeb1527ba26676751
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="bind-objects-in-visual-studio"></a>Binden von Objekten in Visual Studio
 Visual Studio bietet zur Entwurfszeit Tools zum Arbeiten mit benutzerdefinierten Objekten als Datenquelle in der Anwendung. Wenn Sie Daten aus einer Datenbank in einem Objekt zu speichern, die Sie an der UI-Steuerelemente binden möchten, ist die empfohlene Vorgehensweise Entity Framework verwendet, um die Klasse oder Klassen zu generieren. Entity Framework-generiert automatisch alle der änderungsnachverfolgung Standardcode, was bedeutet, dass alle Änderungen an den lokalen Objekten automatisch in die Datenbank beibehalten werden, wenn Sie für das Objekt DbSet AcceptChanges aufrufen. Weitere Informationen finden Sie unter [Dokumentation zu Entity Framework](https://ef.readthedocs.org/en/latest/).  

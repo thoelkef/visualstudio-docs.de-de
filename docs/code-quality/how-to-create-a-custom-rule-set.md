@@ -14,11 +14,12 @@ caps.latest.revision: "24"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7e9cba33565af81a76d043a3fc3f63eef831e1ce
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 36b5e9e0a3ca0a994547679ba71e545b4235b6c5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-a-custom-rule-set"></a>Gewusst wie: Erstellen eines benutzerdefinierten Regelsatzes
 In [!INCLUDE[vsUltShort](../code-quality/includes/vsultshort_md.md)], [!INCLUDE[vsPreShort](../code-quality/includes/vspreshort_md.md)], und [!INCLUDE[vsPro](../code-quality/includes/vspro_md.md)], können Sie erstellen und ändern Sie eine benutzerdefinierte *Regelsatz* um bestimmte projektanforderungen mit der Codeanalyse zu erfüllen. Zum Erstellen eines benutzerdefinierten Regelsatzes öffnen Sie einen oder mehrere Standardregelsätze im Regelsatz-Editor. Anschließend können Sie bestimmte Regeln hinzufügen oder entfernen sowie Sie die Aktion ändern, die ausgeführt wird, wenn von der Codeanalyse ein Verstoß gegen eine Regel festgestellt wurde.  

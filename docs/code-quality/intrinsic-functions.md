@@ -19,11 +19,12 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: be65ae9177591b015cd8b29b3dbdc262b66a30ab
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: multiple
+ms.openlocfilehash: c25c76ba43c983a6029c8d50e183ccf839ef08bd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="intrinsic-functions"></a>Systeminterne Funktionen
 Ein Ausdruck in SAL kann ein C/C++-Ausdruck sein, vorausgesetzt, dass es sich um einen Ausdruck handelt, die keine nachteiligen Auswirkungen haben – z. B. ++,--, und Funktionsaufrufe, die alle haben Nebenwirkungen in diesem Kontext.  SAL bietet allerdings einige funktionsähnliche-Objekte und einige reservierte Symbole, die in SAL-Ausdrücken verwendet werden können. Diese werden als bezeichnet *systeminterne Funktionen*.  
@@ -37,7 +38,7 @@ Ein Ausdruck in SAL kann ein C/C++-Ausdruck sein, vorausgesetzt, dass es sich um
 |`_Inexpressible_(expr)`|Eine Situation, in dem die Größe eines Puffers zu komplex ist für darstellen, indem Sie mithilfe eines Ausdrucks Anmerkung, ausdrückt – z. B. wenn er berechnet wird, durch das Scannen von ein Eingabedataset, und klicken Sie dann gezählt ausgewählte Elemente.|  
 |`_Nullterm_length_(param)`|`param`ist die Anzahl der Elemente im Puffer bis zur, aber nicht einschließlich ein null-Abschlusszeichen. Es kann auf alle Puffer des Typs von nicht-aggregierbare, nicht als "void" angewendet werden.|  
 |`_Old_(expr)`|Bei der Auswertung in Vorbedingung, `_Old_` gibt den Eingabewert `expr`.  Wenn sie in der nachbedingung ausgewertet wird, wird der Wert `expr` wie in Vorbedingung ausgewertet worden wären.|  
-|`_Param_(n)`|Die `n`-ten Parameter für eine Funktion, beginnend mit 1 bis `n`, und `n` eine literale ganzzahlige Konstante ist. Wenn der Parameter benannt wird, ist diese Anmerkung für den Zugriff auf den Parameter anhand des Namens identisch. **Hinweis:** `n` bezieht sich möglicherweise auf die Positionsparameter, die durch eine Ellipse definiert, oder verwendet werden können in Funktionsprototypen, in dem Namen nicht verwendet werden.  |  
+|`_Param_(n)`|Die `n`-ten Parameter für eine Funktion, beginnend mit 1 bis `n`, und `n` eine literale ganzzahlige Konstante ist. Wenn der Parameter benannt wird, ist diese Anmerkung für den Zugriff auf den Parameter anhand des Namens identisch. **Hinweis:** `n` bezieht sich möglicherweise auf die Positionsparameter, die durch eine Ellipse definiert, oder verwendet werden können in Funktionsprototypen, in dem Namen nicht verwendet werden.|  
 |`return`|Die C/C++-reserviertes Schlüsselwort `return` können in einem SAL-Ausdruck verwendet werden, um den Rückgabewert einer Funktion anzugeben.  Der Wert ist nur im Post-Status verfügbar. Es ist ein Syntaxfehler zu dessen Verwendung in den Zustand vor.|  
   
 ## <a name="string-specific"></a>Spezifisches für Zeichenfolgen  

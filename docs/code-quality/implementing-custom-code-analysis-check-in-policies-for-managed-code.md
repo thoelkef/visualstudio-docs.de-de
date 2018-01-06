@@ -16,11 +16,12 @@ caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3d8747ddb78c257ae0ba38d24fb2c5cc529f67b9
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: dotnet
+ms.openlocfilehash: 1c940c10c85901e5da7425c33f4bdbd726be7627
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="implementing-custom-code-analysis-check-in-policies-for-managed-code"></a>Implementieren von benutzerdefinierten Eincheckrichtlinien für die Codeanalyse für verwalteten Code
 Die Codeanalyse in der Eincheckrichtlinie für einen Satz von Regeln gibt, die Mitglieder eines Teamprojekts für den Quellcode ausführen müssen, bevor er in die Versionskontrolle eingecheckt wird. Microsoft bietet eine Reihe von *-Regelsätze* dieser Gruppe Codeanalyse Regeln in Funktionsbereiche. *Benutzerdefinierte Eincheckrichtlinie Regelsätze* Geben Sie einen Satz von Codeanalyseregeln, die für ein Teamprojekt spezifisch sind. Ein Regelsatz wird in eine RULESET-Datei gespeichert.  

@@ -15,11 +15,12 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 33080a55043f9c88fa8e44a71a863e3a62ab3a1b
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: cplusplus
+ms.openlocfilehash: 5fe47a5e0bb2eb8c2002c8a516ef10aa81aa0e58
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="quick-start-code-analysis-for-cc"></a>Schnellstart: Codeanalyse für C/C++
 Sie können die Qualität Ihrer Anwendung verbessern, indem Codeanalysen für C oder C++-Code regelmäßig ausgeführt werden. Damit können Sie allgemeine Probleme, Verstöße gegen guten Programmierstil oder Fehler, die nur schwer durch Tests ermittelt werden, finden. Codeanalysewarnungen unterscheiden sich von Compilerfehler und -Warnungen, da die Codeanalyse nach bestimmten Codeschemata sucht, die gültig sind, jedoch weiterhin für Sie oder andere Personen, die den Code verwenden, Probleme verursachen können.  

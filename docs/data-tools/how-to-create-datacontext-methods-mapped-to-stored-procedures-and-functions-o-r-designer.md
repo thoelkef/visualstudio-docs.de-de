@@ -12,11 +12,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 18bf9785ddd62bf7924ebb3eb71b27cd822e3af4
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: data-storage
+ms.openlocfilehash: a56bacfd2d726e2ec7bedf69f6c79ce347e3556e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-or-designer"></a>Vorgehensweise: Erstellen von DataContext-Methoden zugeordnet werden, um gespeicherte Prozeduren und Funktionen (O/R-Designer)
 Gespeicherte Prozeduren und Funktionen können hinzugefügt werden die [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] als <xref:System.Data.Linq.DataContext> Methoden. Aufrufen der Methode und übergeben der erforderlichen Parameter führt die gespeicherte Prozedur oder Funktion für die Datenbank und gibt die Daten im Rückgabetyp von den <xref:System.Data.Linq.DataContext> Methode. Ausführliche Informationen zu <xref:System.Data.Linq.DataContext> Methoden, finden Sie unter [DataContext-Methoden (O/R-Designer)](../data-tools/datacontext-methods-o-r-designer.md).  

@@ -12,11 +12,12 @@ caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 07704e589ae56b04dc28ceb465afad7812a29111
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: multiple
+ms.openlocfilehash: f7728a293c1d93ab95a73d829bcdb37f5c09cc59
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="native-recommended-rules-rule-set"></a>Regelsatz für systemeigene empfohlene Regeln
 Die systemeigene empfohlene Regeln Zielen auf die kritischsten und häufigsten Probleme im nativen Code ab, einschließlich potenzieller Sicherheitslücken und Anwendungsabstürzen.  Der Regelsatz sollte in allen benutzerdefinierten Regelsätzen enthalten sein, die Sie für Ihre eigenen Projekte erstellen.  Dieser Regelsatz ist für die Verwendung mit Visual Studio Professional Edition und höher vorgesehen.  

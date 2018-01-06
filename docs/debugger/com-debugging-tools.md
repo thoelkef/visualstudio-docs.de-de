@@ -24,11 +24,12 @@ caps.latest.revision: "18"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 795f911e9020c4bec6e6bfe9d103666d007d0711
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e6ddf648f28139c4805c6d417e3f353d494c48bb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="com-debugging-tools"></a>COM-Debugtools
 In diesem Thema finden Sie eine Liste der Tools, mit denen Sie COM-Programme testen und untersuchen können.  

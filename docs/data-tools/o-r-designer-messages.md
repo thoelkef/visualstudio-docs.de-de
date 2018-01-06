@@ -12,11 +12,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 11d7c7b510f2714af13d84614daba8d2a10bf099
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-storage
+ms.openlocfilehash: 0c3e399e7c1885f8c288bc05c49ac0a020fc7470
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="or-designer-messages"></a>O/R-Designermeldungen
 In diesem Thema werden die Meldungen aufgelistet, die beim Arbeiten mit dem O/R-Designer angezeigt werden.  

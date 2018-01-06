@@ -20,11 +20,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 78322512fdc59b4ba661bca0d40d1532ac4c98e2
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: 4b403d3bbe2e42ee74af7a2f7babe8b2700dd0d4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="create-lookup-tables-in-wpf-applications"></a>Erstellen von Nachschlagetabellen in WPF-Anwendungen
 Der Begriff *Nachschlagetabelle* (bezeichnet einen *Suche Bindung*) beschreibt ein Steuerelement, das Informationen aus einer Datentabelle, die anhand des Werts eines Fremdschlüsselfelds in einer anderen Tabelle anzeigt. Sie können eine Nachschlagetabelle erstellen, indem Sie den Hauptknoten der übergeordneten Tabelle ziehen oder Objekt in der **Datenquellen** auf ein Steuerelement, das bereits an eine Spalte oder Eigenschaft in einer verknüpften untergeordneten Tabelle gebunden ist.  

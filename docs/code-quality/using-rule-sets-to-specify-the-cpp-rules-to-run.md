@@ -12,11 +12,12 @@ caps.latest.revision: "5"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 5ad51388ae1580ada61442798b46048ad71ece64
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: cplusplus
+ms.openlocfilehash: f78a3f48ce6e8d08134694bc03c80f9c2e9b3363
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-rule-sets-to-specify-the-c-rules-to-run"></a>Verwenden von Regelsätzen zum Festlegen von C++-Regeln für die Ausführung
 In [!INCLUDE[vsPreShort](../code-quality/includes/vspreshort_md.md)] und [!INCLUDE[vsUltShort](../code-quality/includes/vsultshort_md.md)], können Sie erstellen und ändern Sie eine benutzerdefinierte *Regelsatz* um bestimmte projektanforderungen mit der Codeanalyse zu erfüllen. Zum Erstellen eines benutzerdefinierten Regelsatzes für C++ festgelegt, muss ein C/C++-Projekt in Visual Studio-IDE geöffnet werden. Sie öffnen Sie einen standard-Regelsatz im Regelsatz-Editor und dann hinzufügen oder entfernen bestimmte Regeln und optional die Aktion, die bei der Codeanalyse feststellt, dass es sich bei einem Verstoß gegen eine Regel ändern.  
