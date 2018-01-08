@@ -12,17 +12,18 @@ caps.latest.revision: "27"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 185e513f1d9733c071ecacb65f67f2530e43cdc3
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 0d0114692af0c470a3f2aab181219394a54571d6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="supported-visual-studio-editions-for-visualization-amp-modeling-sdk"></a>Visual Studio-Editionen für die Visualisierung unterstützt &amp; Modellierungs-SDKS
 Im folgenden sind Listen von Visual Studio-Editionen, die mit unterstützt werden [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] in der Konfiguration und Bereitstellung-Umgebungen. Weitere Informationen zu diesen Editionen finden Sie im Microsoft [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] [Developer Center](http://go.microsoft.com/fwlink/?LinkId=75628).  
   
 ## <a name="authoring-edition"></a>Erstellungsedition  
- Zum Definieren einer DSL müssen folgende Komponenten installiert sein:  
+ Zur Definition einer DSL müssen folgende Komponenten installiert sein:  
   
 |||  
 |-|-|  

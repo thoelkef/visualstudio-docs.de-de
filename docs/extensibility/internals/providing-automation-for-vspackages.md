@@ -15,11 +15,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4d81a96b7eea9f19352ae8a1deeeeb73ba5dc089
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 63912603a888f3d2c45b8b08a7aba93af0694ab8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="providing-automation-for-vspackages"></a>Bereitstellen von Automation für VSPackages
 Es gibt zwei Hauptmethoden, um Automatisierung Ihrer VSPackages bereitzustellen: durch die Implementierung des VSPackage-Objekten und durch die Implementierung von Automation standard-Objekte. Im Allgemeinen werden diese zusammen verwendet, um das Automatisierungsmodell der Umgebung zu erweitern.  

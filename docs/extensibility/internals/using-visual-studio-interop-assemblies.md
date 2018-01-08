@@ -16,11 +16,12 @@ caps.latest.revision: "33"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 298caf0b1c65ecb3612b927859b4d7d01720fc27
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 98d579755190eaf51448ef2b1b855c087bcad358
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-visual-studio-interop-assemblies"></a>Mithilfe von Visual Studio-Interopassemblys
 Visual Studio-Interopassemblys können verwaltete Anwendungen auf die COM-Schnittstellen, die Visual Studio-Erweiterbarkeit bereitstellen. Es gibt einige Unterschiede zwischen COM-Schnittstellen, die gerade und die Interop-Versionen. Beispielsweise HRESULTs sind in der Regel als Int-Werte dargestellt und müssen auf die gleiche Weise wie Ausnahmen behandelt werden und Parameter (insbesondere out-Parameter) unterschiedlich behandelt.  

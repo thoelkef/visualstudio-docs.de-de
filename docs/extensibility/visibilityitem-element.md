@@ -15,11 +15,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: db041f839e9b7e8ad3268175829ecfee9380e736
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 627e5abad07ef0566d23f010ea120df33173fb0e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visibilityitem-element"></a>VisibilityItem-Element
 Die `VisibilityItem` Element bestimmt die statische Sichtbarkeit der Befehle und Symbolleisten. Jeder Eintrag identifiziert, einen Befehl oder im Menü und auch einen verknüpften Befehl UI-Kontext. Visual Studio erkennt die Befehle, Menüs und Symbolleisten und ihre Sichtbarkeit, ohne das Laden der VSPackages, die sie definieren. Die IDE verwendet die <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A> Methode, um zu bestimmen, ob ein Befehl Benutzeroberflächenkontext aktiv ist.  
@@ -52,7 +53,7 @@ Die `VisibilityItem` Element bestimmt die statische Sichtbarkeit der Befehle und
 |Bedingung|Dies ist optional. Finden Sie unter [bedingte Attribute](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Untergeordnete Elemente  
- Keine  
+ Keiner  
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente  
   

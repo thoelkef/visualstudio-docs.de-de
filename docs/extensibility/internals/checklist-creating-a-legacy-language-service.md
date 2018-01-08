@@ -15,11 +15,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5c06d246f7467e19969075537f321061463d1755
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: b09176efca3a8839d5e6a741a1e161ff61cdc7ca
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="checklist-creating-a-legacy-language-service"></a>Prüfliste: Erstellen eines Legacy-Sprachdiensts
 Die folgende Checkliste werden zusammengefasst, die grundlegenden Schritte, die Sie ergreifen müssen, damit erstellen Sie einen Sprachdienst für die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Core-Editor. Integrieren Sie Ihre Sprache Service in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], müssen Sie eine Debug-ausdrucksauswertung erstellen. Weitere Informationen finden Sie unter [schreiben eine CLR-Ausdrucksauswertung](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md) in der [Visual Studio-Debugger-Erweiterbarkeits](../../extensibility/debugger/visual-studio-debugger-extensibility.md).  

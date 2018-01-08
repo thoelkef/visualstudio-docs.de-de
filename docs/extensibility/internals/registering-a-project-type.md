@@ -16,11 +16,12 @@ caps.latest.revision: "21"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3a60ac9de727e8542df7455ee331737403f6bef3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: f60cf3fc8b4db7d33523e4583ab3da4f4596b1af
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="registering-a-project-type"></a>Registrieren einen Projekttyp
 Wenn Sie einen neuen Projekttyp erstellen, müssen Sie die Registrierungseinträge, die es ermöglichen erstellen [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] erkannt werden und Arbeiten mit Ihrem Project-Typs. Diese Registrierungseinträge wird normalerweise mithilfe einer Registrierung-Skriptdatei (.rgs) erstellen.  
@@ -50,7 +51,7 @@ Wenn Sie einen neuen Projekttyp erstellen, müssen Sie die Registrierungseinträ
    @="devenv.exe \"%1\""  
 ```  
   
-|Name|Typ|Daten|Beschreibung|  
+|name|Typ|Daten|Beschreibung|  
 |----------|----------|----------|-----------------|  
 |`@`|REG_SZ|`FigPrjFile`|Name und Beschreibung des Projekts geben Sie Dateien, die die Erweiterung .figp aufweisen.|  
 |`Content Type`|REG_SZ|`Text/plain`|Der Inhaltstyp für die Projektdateien.|  
@@ -82,7 +83,7 @@ Wenn Sie einen neuen Projekttyp erstellen, müssen Sie die Registrierungseinträ
    "FigProjectItemsEvents"="Returns the FigProjectItemsEvents Object"  
 ```  
   
-|Name|Typ|Daten|Beschreibung|  
+|name|Typ|Daten|Beschreibung|  
 |----------|----------|----------|-----------------|  
 |`@`(Standard)|REG_SZ|`FigPrj Project VSPackage`|Lokalisierbare Name dieses registriert VSPackage (Projekttyp).|  
 |`InprocServer32`|REG_SZ|`%MODULE%`|Pfad der DLL-Projekttyp. Die IDE diese DLL lädt und übergibt die CLSID VSPackage zu `DllGetClassObject` abzurufenden <xref:Microsoft.VisualStudio.OLE.Interop.IClassFactory> zum Erstellen der <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage> Objekt.|  
@@ -133,7 +134,7 @@ Wenn Sie einen neuen Projekttyp erstellen, müssen Sie die Registrierungseinträ
    "SortPriority"=dword:00000064  
 ```  
   
-|Name|Typ|Daten|Beschreibung|  
+|name|Typ|Daten|Beschreibung|  
 |----------|----------|----------|-----------------|  
 |`@`|REG_SZ|`FigPrj Project`|Der Standardname der Projekte dieses Typs.|  
 |`DisplayName`|REG_SZ|`#%IDS_PROJECT_TYPE%`|Ressourcen-ID mit dem Namen aus der Satelliten-DLL abgerufen werden sollen, die unter Pakete registriert werden.|  
@@ -173,7 +174,7 @@ Wenn Sie einen neuen Projekttyp erstellen, müssen Sie die Registrierungseinträ
    "NewProjectDialogOnly"=dword:00000000  
 ```  
   
-|Name|Typ|Daten|Beschreibung|  
+|name|Typ|Daten|Beschreibung|  
 |----------|----------|----------|-----------------|  
 |`@`|REG_SZ|`#%IDS_NEWPROJ_ TEMPLATES_ENTRY%`|Ressourcen-ID für die neue Projektvorlagen.|  
 |`TemplatesDir`|REG_SZ|`%TEMPLATE_PATH%\FigPrjProjects`|Der Standardpfad für die registrierten Projekttyp-Projekte.|  
@@ -194,9 +195,9 @@ Wenn Sie einen neuen Projekttyp erstellen, müssen Sie die Registrierungseinträ
    "SortPriority"=dword:00000064  
 ```  
   
-|Name|Typ|Daten|Beschreibung|  
+|name|Typ|Daten|Beschreibung|  
 |----------|----------|----------|-----------------|  
-|`@`|REG_SZ|Keine|Der Standardwert, der angibt, dass die folgenden Einträge für die sonstigen Dateien Projekte Einträge sind.|  
+|`@`|REG_SZ|Keiner|Der Standardwert, der angibt, dass die folgenden Einträge für die sonstigen Dateien Projekte Einträge sind.|  
 |`@`|REG_SZ|`#%IDS_ADDITEM_TEMPLATES_ENTRY%`|Ressourcen-ID-Wert für die Vorlagendateien neue Elemente hinzufügen.|  
 |`TemplatesDir`|REG_SZ|`%TEMPLATE_PATH%\FigPrjProjectItems`|Standardpfad der Elemente, die in angezeigt werden, wird die **neues Element hinzufügen** (Dialogfeld).|  
 |`SortPriority`|REG_DWORD|`100 (vcprx64)`|Sortierreihenfolge für die Anzeige in der Strukturknoten der richtet die **neues Element hinzufügen** (Dialogfeld).|  
@@ -223,7 +224,7 @@ Wenn Sie einen neuen Projekttyp erstellen, müssen Sie die Registrierungseinträ
   
  Das letzte Feld gibt die Versionsnummer für die Ressource CTMENU. Sie können das Menü erneut zusammenführen, durch die Änderung der Versionsnummer.  
   
-|Name|Typ|Daten|Beschreibung|  
+|name|Typ|Daten|Beschreibung|  
 |----------|----------|----------|-----------------|  
 |"% CLSID_Package"|REG_SZ|`,1000,1`|Die Ressource, die Informationen abzurufen.|  
   
@@ -237,7 +238,7 @@ Wenn Sie einen neuen Projekttyp erstellen, müssen Sie die Registrierungseinträ
    "NewProjectDialogOnly"=dword:00000000  
 ```  
   
-|Name|Typ|Daten|Beschreibung|  
+|name|Typ|Daten|Beschreibung|  
 |----------|----------|----------|-----------------|  
 |`@`|REG_SZ|`#%IDS_NEWPROJ_TEMPLATES_ENTRY%`|Ressourcen-ID-Wert für die Abbildungen Projekt neue Projektvorlagen.|  
 |`TemplatesDir`|REG_SZ|`%TEMPLATE_PATH%\FigPrjProjects`|Der Standardpfad des Verzeichnisses neue Projekte. Elemente in diesem Verzeichnis angezeigt werden die **Assistent für neue Projekte** (Dialogfeld).|  
@@ -252,7 +253,7 @@ Wenn Sie einen neuen Projekttyp erstellen, müssen Sie die Registrierungseinträ
    "UseInterface"=dword:00000001  
 ```  
   
-|Name|Typ|Daten|Beschreibung|  
+|name|Typ|Daten|Beschreibung|  
 |----------|----------|----------|-----------------|  
 |`Package`|REG_SZ|`%CLSID_Package%`|Klassen Sie-ID des registrierten VSPackage.|  
 |`UseInterface`|REG_DWORD|`1`|1 gibt an, dass die Benutzeroberfläche für die Interaktion mit diesem Projekt verwendet werden. 0 gibt an, dass keine Benutzeroberfläche vorhanden ist.|  

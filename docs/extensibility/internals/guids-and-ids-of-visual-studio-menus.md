@@ -19,11 +19,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1cf196a227e5cb92cae48dd1eeceace25ffc0295
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 69ad8f62931b628582c73a3e370a86611795caa6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="guids-and-ids-of-visual-studio-menus"></a>GUIDs und IDs der Visual Studio-Menüs
 Dieses Thema listet die GUID und ID-Werte, die Menüs und Gruppen in der Visual Studio-Menüleiste. Diese Werte werden in der VSCT-Dateien definiert, die als Teil der Visual Studio-SDK installiert sind. Weitere Informationen finden Sie unter [IDE-Defined Befehle, Menüs und Gruppen](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).  
@@ -35,7 +36,7 @@ Dieses Thema listet die GUID und ID-Werte, die Menüs und Gruppen in der Visual 
 ## <a name="groups-on-the-visual-studio-menu-bar"></a>Gruppen in der Visual Studio-Menüleiste  
  Um ein Menü auf der Menüleiste hinzuzufügen, legen Sie eine dieser Gruppen wie das übergeordnete Objekt.  
   
-|Gruppieren|ID|  
+|Gruppieren|Id|  
 |-----------|--------|  
 |Datei/Bearbeitungsansicht|IDG_VS_MM_FILEEDITVIEW|  
 |Umgestaltung|IDG_VS_MM_REFACTORING:|  
@@ -49,7 +50,7 @@ Dieses Thema listet die GUID und ID-Werte, die Menüs und Gruppen in der Visual 
 ## <a name="menus-on-the-visual-studio-menu-bar"></a>Menüs in der Visual Studio-Menüleiste  
  Zum Hinzufügen einer Gruppe zu einem vorhandenen Visual Studio-Menü, legen Sie eine der folgenden Menüs wie das übergeordnete Objekt. Untermenüs sind in dieser Liste nicht enthalten.  
   
-|Menü|ID|  
+|Menü|Id|  
 |----------|--------|  
 |Datei|IDM_VS_MENU_FILE|  
 |Bearbeiten|IDM_VS_MENU_EDIT|  
@@ -69,7 +70,7 @@ Dieses Thema listet die GUID und ID-Werte, die Menüs und Gruppen in der Visual 
   
 ### <a name="file-menu-groups"></a>Menügruppen Datei  
   
-|Gruppieren|ID|  
+|Gruppieren|Id|  
 |-----------|--------|  
 |Neue/öffnen|IDG_VS_FILE_FILE|  
 |Hinzufügen|IDG_VS_FILE_ADD|  
@@ -85,7 +86,7 @@ Dieses Thema listet die GUID und ID-Werte, die Menüs und Gruppen in der Visual 
   
 ### <a name="edit-menu-groups"></a>Menügruppen bearbeiten  
   
-|Gruppieren|ID|  
+|Gruppieren|Id|  
 |-----------|--------|  
 |Rückgängig/Wiederholen|IDG_VS_EDIT_UNDOREDO|  
 |Ausschneiden/Kopieren/Einfügen|IDG_VS_EDIT_CUTCOPY|  
@@ -98,14 +99,14 @@ Dieses Thema listet die GUID und ID-Werte, die Menüs und Gruppen in der Visual 
   
 ### <a name="refactor-menu-groups"></a>Menügruppen Umgestalten  
   
-|Gruppieren|ID|  
+|Gruppieren|Id|  
 |-----------|--------|  
 |Allgemein|IDG_REFACTORING_COMMON|  
 |Erweitert|IDG_REFACTORING_ADVANCED|  
   
 ### <a name="view-menu-groups"></a>Menügruppen anzeigen  
   
-|Gruppieren|ID|  
+|Gruppieren|Id|  
 |-----------|--------|  
 |Formularcode|IDG_VS_VIEW_FORMCODE|  
 |Browser|IDG_VS_VIEW_BROWSER|  
@@ -126,7 +127,7 @@ Dieses Thema listet die GUID und ID-Werte, die Menüs und Gruppen in der Visual 
   
 ### <a name="project-menu-groups"></a>Menügruppen Projekt  
   
-|Gruppieren|ID|  
+|Gruppieren|Id|  
 |-----------|--------|  
 |Sonstige hinzufügen|IDG_VS_PROJ_MISCADD|  
 |Hinzufügen|IDG_VS_PROJ_ADD|  
@@ -138,7 +139,7 @@ Dieses Thema listet die GUID und ID-Werte, die Menüs und Gruppen in der Visual 
   
 ### <a name="build-menu-groups"></a>Menügruppen erstellen  
   
-|Gruppieren|ID|  
+|Gruppieren|Id|  
 |-----------|--------|  
 |Lösung|IDG_VS_BUILD_SOLUTION|  
 |Auswahl|IDG_VS_BUILD_SELECTION|  
@@ -148,7 +149,7 @@ Dieses Thema listet die GUID und ID-Werte, die Menüs und Gruppen in der Visual 
   
 ### <a name="tools-menu-groups"></a>Menügruppen Tools  
   
-|Gruppieren|ID|  
+|Gruppieren|Id|  
 |-----------|--------|  
 |Befehlszeile|IDG_VS_TOOLS_CMDLINE|  
 |Codeausschnitte|IDG_VS_TOOLS_SNIPPETS|  
@@ -160,7 +161,7 @@ Dieses Thema listet die GUID und ID-Werte, die Menüs und Gruppen in der Visual 
   
 ### <a name="window-menu-groups"></a>Menügruppen Fenster  
   
-|Gruppieren|ID|  
+|Gruppieren|Id|  
 |-----------|--------|  
 |Neu|IDG_VS_WINDOW_NEW|  
 |Andocken/Close|IDG_VS_DOCKCLOSE|  
@@ -171,7 +172,7 @@ Dieses Thema listet die GUID und ID-Werte, die Menüs und Gruppen in der Visual 
   
 ### <a name="help-menu-groups"></a>Menügruppen-Hilfe  
   
-|Gruppieren|ID|  
+|Gruppieren|Id|  
 |-----------|--------|  
 |Proben|IDG_VS_HELP_SAMPLES|  
 |Unterstützung|IDG_VS_HELP_SUPPORT|  

@@ -13,11 +13,12 @@ caps.latest.revision: "46"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b83fe23b830594ac81b489b8f43095c24b29dd7a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5a7f9426297ef28bdf4b829bd6697543f5aab55f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-using-a-shell-command-with-an-editor-extension"></a>Exemplarische Vorgehensweise: Verwenden eines Shell-Befehls mit der Erweiterung-Editor
 Aus einem VSPackage können Sie Funktionen, z. B. Menübefehlen in den Editor hinzufügen. In dieser exemplarischen Vorgehensweise wird gezeigt, wie eine Textansicht im Editor ein Randsteuerelement hinzugefügt, durch den Aufruf eines Menübefehls.  
@@ -713,7 +714,7 @@ Aus einem VSPackage können Sie Funktionen, z. B. Menübefehlen in den Editor hi
   
 ## <a name="building-and-testing-the-code"></a>Erstellen und Testen des Codes  
   
-1.  Erstellen Sie die Lösung und beginnen Sie mit dem Debuggen. Die experimentelle Instanz sollte angezeigt werden.  
+1.  Erstellen Sie die Projektmappe, und beginnen Sie mit dem Debuggen. Die experimentelle Instanz sollte angezeigt werden.  
   
 2.  Erstellen einer Textdatei Geben Sie etwas Text ein, und wählen Sie ihn.  
   

@@ -13,11 +13,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f9647f1f399b0d6516fe6475e6245c6834a0ea2b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 9b27aa56cdcf48ded56f9a43e40a1e65f3491536
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="source-control-runtime-details"></a>Details zur Datenquelle Steuerelement-Laufzeit
 Ein Projekt wird zur quellcodeverwaltung hinzugefügt, wenn der Benutzer eine Datei im Projekt zur quellcodeverwaltung oder durch eine-Automatisierungscontrollers, wie z. B. einen Assistenten hinzufügt. Ein Projekt ist nicht für sich selbst angeben, dass sie sich unter quellcodeverwaltung befindet; Datenquellen-Steuerelement unterstützt, aber müssen, manuell hinzugefügt werden.  

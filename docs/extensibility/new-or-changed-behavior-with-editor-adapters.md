@@ -13,11 +13,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3f69bbed7c335afb6b570de34cbef70470abd373
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c24b8c5520befcc204b59609b116d9d16ee26281
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="new-or-changed-behavior-with-editor-adapters"></a>Neue oder geänderte Verhalten mit Editor-Adaptern
 Wenn aktualisiert werden soll, Code, die auf früheren Versionen von Visual Studio Core Editor geschrieben wurde, und Sie die Editor-Adapter (oder Shims) statt der neuen API verwenden möchten, sollten Sie beachten Sie die folgenden Unterschiede im Verhalten der Editor Adapter sein. in Bezug auf den vorherigen Core-Editor.  
@@ -131,7 +132,7 @@ Wenn aktualisiert werden soll, Code, die auf früheren Versionen von Visual Stud
 ## <a name="unimplemented-methods"></a>Nicht implementierte Methode  
  Einige Methoden wurden nicht auf den Text-Puffer-Adapter, Text anzeigen und Text Ebene Adapter implementiert.  
   
-|Schnittstelle|Nicht implementiert.|  
+|Interface|Nicht implementiert.|  
 |---------------|---------------------|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>|`Reload(false)`ist nicht implementiert.|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator>|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator.EnumSpans%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator.SetBufferMappingModes%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator.SetSpanMappings%2A>|  

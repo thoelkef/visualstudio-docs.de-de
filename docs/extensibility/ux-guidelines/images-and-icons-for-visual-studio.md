@@ -12,11 +12,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7856f8fac7e986f3e5383fa91261de39fe815a28
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 164a450ca346fe2bd7b267d951ce522d27f14160
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="images-and-icons-for-visual-studio"></a>Bilder und Symbole für Visual Studio
 ##  <a name="BKMK_ImageUseInVisualStudio"></a>Image-Verwendung in Visual Studio  
@@ -260,7 +261,7 @@ ms.lasthandoff: 10/31/2017
   
 -   Um Elemente in IntelliSense zu unterscheiden.  
   
-### <a name="accessibility"></a>Barrierefreiheit  
+### <a name="accessibility"></a>Zugriff  
  Visual Studio-Compliance-Richtlinien erfordern, dass alle Symbole in der Product-Durchlauf der Anforderungen zur Barrierefreiheit für Farbe und Kontrast überprüft. Farben in der Palette visuellen Sprache getestet wurden und die folgenden Anforderungen erfüllen.  
   
 #### <a name="color-inversion-for-dark-themes"></a>Farbumkehrung für dunkle Designs  
@@ -271,7 +272,7 @@ ms.lasthandoff: 10/31/2017
 ### <a name="base-palette"></a>Basispalette  
  Alle standard-Symbole enthalten drei grundlegende Farben. Symbolen enthalten keine Farbverläufe oder Schlagschatten mit ein oder zwei Ausnahmen für 3D-Tool-Symbole.  
   
-|Verwendung|Name|Wert (Design "hell")|Farbfeld|Beispiel|  
+|Verwendung|name|Wert (Design "hell")|Farbfeld|Beispiel|  
 |-----------|----------|---------------------------|------------|-------------|  
 |Hintergrund/dunkel|VS-BG|424242 / 66,66,66|![Farbfeld 424242](../../extensibility/ux-guidelines/media/0405_424242.png "0405_424242")|![Beispiel für basispalette](../../extensibility/ux-guidelines/media/0405-02_basepaletteexample.png "0405 02_BasePaletteExample")|  
 |Vordergrund-/leichte|VS FG|F0EFF1 / 240,239,241|![Muster F0EFF1](../../extensibility/ux-guidelines/media/0405_f0eff1.png "0405_F0EFF1")||  
@@ -284,7 +285,7 @@ ms.lasthandoff: 10/31/2017
 #### <a name="action-modifiers"></a>Aktionsmodifizierer  
  Die folgenden vier Farben geben die Typen von Aktionen, die erforderliche Aktionsmodifizierer:  
   
-|Verwendung|Name|Wert (alle Designs)|Farbfeld|  
+|Verwendung|name|Wert (alle Designs)|Farbfeld|  
 |-----------|----------|--------------------------|------------|  
 |Positiv|VS Aktion Grün|388A34 / 56,138,52|![Muster 388A34](../../extensibility/ux-guidelines/media/0405_388a34.png "0405_388A34")|  
 |Negativ|VS Aktion Rot|A1260D / 161,38,13|![Muster A1260D](../../extensibility/ux-guidelines/media/0405_a1260d.png "0405_A1260D")|  
@@ -327,14 +328,14 @@ ms.lasthandoff: 10/31/2017
   
 #### <a name="folder"></a>Ordner  
   
-|Verwendung|Name|Wert (alle Designs)|Farbfeld|Beispiel|  
+|Verwendung|name|Wert (alle Designs)|Farbfeld|Beispiel|  
 |-----------|----------|--------------------------|------------|-------------|  
 |Ordner|Ordner|DCB67A / 220,182,122|![Muster DCB67A](../../extensibility/ux-guidelines/media/0405_dcb67a.png "0405_DCB67A")|![Symbol "ordnerfarbe" Ordner](../../extensibility/ux-guidelines/media/0405-23_foldercolor.png "0405 23_FolderColor")|  
   
 #### <a name="visual-studio-languages"></a>Visual Studio-Sprachen  
  Jedes allgemeine Sprachen oder Plattformen in Visual Studio verfügbaren verfügt über eine zugeordnete Farbe. Diese Farben werden verwendet, auf das Symbol "Basis" oder auf Language-Modifizierer, die in der rechten oberen Ecke der zusammengesetzten Symbole angezeigt werden.  
   
-|Verwendung|Name|Wert (alle Designs)|Farbfeld|  
+|Verwendung|name|Wert (alle Designs)|Farbfeld|  
 |-----------|----------|--------------------------|------------|  
 |ASP, HTML, WPF|ASP HTML WPF Blau|0095D 7 / 0,149,215|![Muster 0095d7](../../extensibility/ux-guidelines/media/0405_0096d7.png "0405_0096D7")|  
 |C++|CPP Violett|9B4F96 / 155,79,150|![Muster 9B4F96](../../extensibility/ux-guidelines/media/0405_9b4f96.png "0405_9B4F96")|  
@@ -356,25 +357,25 @@ ms.lasthandoff: 10/31/2017
 #### <a name="intellisense"></a>IntelliSense  
  IntelliSense-Symbole verwenden, eine exklusive Farbpalette. Diese Farben werden verwendet, damit Benutzer schnell zwischen den verschiedenen Elementen in der Liste der IntelliSense-Popup zu unterscheiden.  
   
-|Verwendung|Name|Wert (alle Designs)|Farbfeld|  
+|Verwendung|name|Wert (alle Designs)|Farbfeld|  
 |-----------|----------|--------------------------|------------|  
 |Event-Klasse|VS Aktion Orange|C27D1A / 194,125,26|![Muster C27D1A](../../extensibility/ux-guidelines/media/0405_c27d1a.png "0405_C27D1A")|  
 |Erweiterungsmethode, Delegaten Modul-Methode|VS Aktion Violett|652D 90 / 101,45,144|![Muster 652d90](../../extensibility/ux-guidelines/media/0405_652d90.png "0405_652D90")|  
 |Feld, Enum-Element, Makros, Struktur, Union Werttyp ist, Operator, Schnittstelle|VS Aktion Blau|00539C / 0,83,156|![Muster 00539C](../../extensibility/ux-guidelines/media/0405_00539c.png "0405_00539C")|  
-|Objekt|VS Aktion Grün|388A34 / 56,138,52|![Muster 388A34](../../extensibility/ux-guidelines/media/0405_388a34.png "0405_388A34")|  
+|Object|VS Aktion Grün|388A34 / 56,138,52|![Muster 388A34](../../extensibility/ux-guidelines/media/0405_388a34.png "0405_388A34")|  
 |Konstanten, Typdefinition Ausnahme, Enum-Element, Karten, Zuordnungselement, Namespace, Vorlage|Hintergrund (VS BG)|424242 / 66,66,66|![Farbfeld 424242](../../extensibility/ux-guidelines/media/0405_424242.png "0405_424242")|  
   
 ##### <a name="examples-of-intellisense-icons"></a>Beispiele für IntelliSense-Symbole  
   
 ||||||  
 |-|-|-|-|-|  
-|![Symbol "Klasse" IntelliSense](../../extensibility/ux-guidelines/media/0405-36_intellisenseclass.png "0405 36_IntelliSenseClass")<br />Klasse|![Symbol für IntelliSense-privates Ereignis](../../extensibility/ux-guidelines/media/0405-37_intellisenseprivateevent.png "0405 37_IntelliSensePrivateEvent")<br />Privates Ereignis|![Symbol für IntelliSense-Delegat](../../extensibility/ux-guidelines/media/0405-38_intellisensedelegate.png "0405 38_IntelliSenseDelegate")<br />Delegate|![Symbol "Friend" der IntelliSense-Methode](../../extensibility/ux-guidelines/media/0405-39_intellisensemethodfriend.png "0405 39_IntelliSenseMethodFriend")<br />Methode "Friend"|![Symbol "Feld"](../../extensibility/ux-guidelines/media/0405-40_field.png "0405 40_Field")<br />Feld|  
-|![IntelliSense geschützt Symbol "Enumeration"](../../extensibility/ux-guidelines/media/0405-41_intellisenseprotectedenumitem.png "0405 41_IntelliSenseProtectedEnumItem")<br />Geschützte Enum-Element|![Symbol für IntelliSense-Objekt](../../extensibility/ux-guidelines/media/0405-42_intellisenseobject.png "0405 42_IntelliSenseObject")<br />Objekt|![Symbol für IntelliSense-Vorlage](../../extensibility/ux-guidelines/media/0405-43_intellisensetemplate.png "0405 43_IntelliSenseTemplate")<br />Vorlage|![Symbol "Verknüpfung" der IntelliSense-Ausnahme](../../extensibility/ux-guidelines/media/0405-44_intellisenseexceptionshortcut.png "0405 44_IntelliSenseExceptionShortcut")<br />Ausnahme-Verknüpfung||  
+|![Symbol "Klasse" IntelliSense](../../extensibility/ux-guidelines/media/0405-36_intellisenseclass.png "0405 36_IntelliSenseClass")<br />Klasse|![Symbol für IntelliSense-privates Ereignis](../../extensibility/ux-guidelines/media/0405-37_intellisenseprivateevent.png "0405 37_IntelliSensePrivateEvent")<br />Privates Ereignis|![Symbol für IntelliSense-Delegat](../../extensibility/ux-guidelines/media/0405-38_intellisensedelegate.png "0405 38_IntelliSenseDelegate")<br />delegate|![Symbol "Friend" der IntelliSense-Methode](../../extensibility/ux-guidelines/media/0405-39_intellisensemethodfriend.png "0405 39_IntelliSenseMethodFriend")<br />Methode "Friend"|![Symbol "Feld"](../../extensibility/ux-guidelines/media/0405-40_field.png "0405 40_Field")<br />Feld|  
+|![IntelliSense geschützt Symbol "Enumeration"](../../extensibility/ux-guidelines/media/0405-41_intellisenseprotectedenumitem.png "0405 41_IntelliSenseProtectedEnumItem")<br />Geschützte Enum-Element|![Symbol für IntelliSense-Objekt](../../extensibility/ux-guidelines/media/0405-42_intellisenseobject.png "0405 42_IntelliSenseObject")<br />Object|![Symbol für IntelliSense-Vorlage](../../extensibility/ux-guidelines/media/0405-43_intellisensetemplate.png "0405 43_IntelliSenseTemplate")<br />Vorlage|![Symbol "Verknüpfung" der IntelliSense-Ausnahme](../../extensibility/ux-guidelines/media/0405-44_intellisenseexceptionshortcut.png "0405 44_IntelliSenseExceptionShortcut")<br />Ausnahme-Verknüpfung||  
   
 ### <a name="notifications"></a>Benachrichtigungen  
  Benachrichtigungen in Visual Studio werden verwendet, um Status anzugeben. Die Benachrichtigung Palette verwendet die folgenden vier Farben sowie Schwarz oder weiß Vordergrund AutoAusfüllen-Optionen, um Benachrichtigungen mit den folgenden Statusebenen definieren.  
   
-|Verwendung|Name|Wert (alle Designs)|Farbfeld|  
+|Verwendung|name|Wert (alle Designs)|Farbfeld|  
 |-----------|----------|--------------------------|------------|  
 |Status: neutrale|Benachrichtigung Blau (VS-Blau)|1BA1E2 / 27,161,226|![Muster 1BA1E2](../../extensibility/ux-guidelines/media/0405_1ba1e2.png "0405_1BA1E2")|  
 |Status: positive|Benachrichtigung Grün (VS Grün)|339933 / 51,153,51|![Farbfeld 339933](../../extensibility/ux-guidelines/media/0405_339933.png "0405_339933")|  
@@ -392,7 +393,7 @@ ms.lasthandoff: 10/31/2017
 ### <a name="visual-studio-online"></a>Visual Studio Online  
  Im Allgemeinen besteht aus Visual Studio Online-Funktionen in einem Browser gehostet. Die Farbe in verschiedenen Umgebungen variiert, der Stil bleibt jedoch gleich.  
   
-|Gruppieren|Verwendung|Name|Wert (alle Designs)|Farbfeld|  
+|Gruppieren|Verwendung|name|Wert (alle Designs)|Farbfeld|  
 |-----------|-----------|----------|--------------------------|------------|  
 |TFS|Hintergrund|TFSO BG|656565/ 101, 101, 101|![Farbfeld 656565](../../extensibility/ux-guidelines/media/0405_656565.png "0405_656565")|  
 |TFS|Gliederung|TFSO OUT|FFFFFF / 255, 255, 255|![Muster FFFFFF](../../extensibility/ux-guidelines/media/0405_ffffff.png "0405_FFFFFF")|  

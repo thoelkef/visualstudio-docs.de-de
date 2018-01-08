@@ -17,11 +17,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 307344a9027e629f08350b77adf99d22d0c127a4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: e46c18f424130a29085aaccad19328c9f86682f6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="selection-and-currency-in-the-ide"></a>Auswahl und Währung, in der IDE
 Die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrierten Entwicklungsumgebung (IDE) verwaltet Informationen zu Benutzer ausgewählte Objekte derzeit mit der Auswahl *Kontext*. Bei Auswahlkontext können VSPackages Teil in Währung nachverfolgen auf zwei Arten verwendet werden:  
@@ -56,7 +57,7 @@ Die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrierten En
   
  Die am häufigsten verwendete Projekttyp Fenster wird im Projektmappen-Explorer, die steuert, die IDE. Ein Projekttyp Fenster nachverfolgt, die globalen Hierarchie und Element-ID des Kontexts globalen Auswahl, und das Fenster benötigt die Auswahl des Benutzers zum Bestimmen der aktuellen Hierarchie. Für Windows Projekttyp, stellt die Umgebung global Service <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection>, bis die VSPackages können die aktuellen Werte für geöffneten Elemente überwachen. Eigenschaft, die in der Umgebung durchsuchen wird von diesem globalen Dienst gesteuert.  
   
- Rahmenfenster, verwenden die DocObject andererseits, innerhalb des Rahmenfensters SelectionContext-Wert (der Hierarchie/ItemID/SelectionContainer Trio) mithilfe von Push übertragen. . Rahmenfenster Nutzung des Diensts <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> für diesen Zweck. DocObject kann nur die Werte für den Auswahlcontainer push verlassen die lokalen Werte für die Hierarchie und Element-ID unverändert, wenn für MDI-untergeordneten Dokumente typisch ist.  
+ Rahmenfenster, verwenden die DocObject andererseits, innerhalb des Rahmenfensters SelectionContext-Wert (der Hierarchie/ItemID/SelectionContainer Trio) mithilfe von Push übertragen. sein. Rahmenfenster Nutzung des Diensts <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> für diesen Zweck. DocObject kann nur die Werte für den Auswahlcontainer push verlassen die lokalen Werte für die Hierarchie und Element-ID unverändert, wenn für MDI-untergeordneten Dokumente typisch ist.  
   
 ### <a name="events-and-currency"></a>Ereignisse und Währung  
  Zwei Typen von Ereignissen auftreten, die die Umgebung Konzept Währung beeinflussen:  

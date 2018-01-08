@@ -15,11 +15,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cde0a7c34fe81c86d9f500bb1800006e5291ee92
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: cbf4e9f2ccbe895db79115949818345c62245f71
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="optional-comparison-of-local-project-folder-to-source-control-store"></a>Optionale Vergleich der lokalen Projektordner auf den Speicher der Quellcodeverwaltung
 Steuern Sie in der Quelle-Plug-in-API 1.2, die der Vergleich zwischen dem lokalen Projektordner und Datenquellen-Steuerelements erreicht wird, indem Sie mit den Funktionen [SccDirQueryInfo](../../extensibility/sccdirqueryinfo-function.md) und [SccDirDiff](../../extensibility/sccdirdiff-function.md).  

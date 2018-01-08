@@ -13,11 +13,12 @@ caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: afc15ea50921b1feca34a8b305c5028979a0d1ca
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: dc652f9eb4428e1d4d7297ed8b588c7f81a07b2d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="model-of-a-legacy-language-service"></a>Modell von einem Legacy-Sprachdienst
 Ein Sprachdienst definiert die Elemente und Funktionen für eine bestimmte Sprache und verwendet, um den Editor durch spezifische Informationen zum jeweiligen Sprache bereitzustellen. Beispielsweise muss der Editor die Elemente und die Schlüsselwörter der Sprache kennen, um Farben für Syntax zu unterstützen.  
@@ -42,7 +43,7 @@ Grundlegende Service Sprachmodell
   
  Die folgende Tabelle enthält eine Übersicht über die Objekte im Modell.  
   
-|Komponente|Objekt|Funktion|  
+|Komponente|Object|Funktion|  
 |---------------|------------|--------------|  
 |Textpuffer|<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>|Eine Unicode-Lese-Schreib-Textdatenstrom. Es ist möglich, für den Text auf andere Codierungen verwenden.|  
 |Codefenster|<xref:Microsoft.VisualStudio.TextManager.Interop.VsCodeWindow>|Ein Dokumentfenster, das eine oder mehrere Textansichten enthält. Wenn [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] wird im Modus Multiple Document Interface (MDI), ist das Codefenster untergeordnetes MDI-Fenster.|  

@@ -13,11 +13,12 @@ caps.latest.revision: "27"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c4a7d122f19e21eebbe5bd598272fb7cb9f52b27
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c3dde61c10d0a8c9fc5578b02cc713f648409cbf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-displaying-matching-braces"></a>Exemplarische Vorgehensweise: Anzeigen von Klammern
 Sie können die Sprache basierende Funktionen wie z. B. die Zuordnung von geschweiften Klammern durch definieren die geschweiften Klammern, die übereinstimmen soll, und klicken Sie dann hinzugefügt Marker Texttag die übereinstimmenden geschweiften Klammern wird das Caretzeichen auf einem der Klammern implementieren. Sie können geschweifte Klammern im Kontext einer Sprache definieren können Sie definieren Sie eine eigene Erweiterung und Inhalt Dateityp von Name und die Tags auf nur diesen Typ gelten oder Sie können die Tags anwenden, um einen vorhandenen Inhaltstyp (z. B. "Text"). Die folgende exemplarische Vorgehensweise veranschaulicht die Zuordnung von geschweiften Klammern Tags aus, um den Inhaltstyp "Text" angewendet.  

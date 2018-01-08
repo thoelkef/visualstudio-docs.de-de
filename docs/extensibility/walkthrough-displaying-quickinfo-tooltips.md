@@ -13,11 +13,12 @@ caps.latest.revision: "27"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 303ce6608ee17b99995d871c5da1536a08fef335
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 9cd3e9d5e10e6946b4cae8ce02a5a39511e4baaf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-displaying-quickinfo-tooltips"></a>Exemplarische Vorgehensweise: Anzeigen von QuickInfos
 QuickInfo ist eine IntelliSense-Funktion, die Methodensignaturen anzeigt und Beschreibungen, wenn ein Benutzer den Mauszeiger über einen Methodennamen. Sie können die Sprache basierende Funktionen wie z. B. QuickInfo implementieren, indem definieren die Bezeichner für die Sie QuickInfo-Beschreibungen bereitstellen möchten, und klicken Sie dann Erstellen einer QuickInfo in dem den Inhalt angezeigt. Sie können die QuickInfo im Kontext eines Diensts Sprache definieren können Sie definieren Sie eine eigene Erweiterung und Inhalt Dateityp von Name und der QuickInfo für nur dieses Typs angezeigt oder können Sie die QuickInfo anzeigen, für einen vorhandenen Inhaltstyp (z. B. "Text"). Diese exemplarischen Vorgehensweise beim Anzeigen von QuickInfo für den Inhaltstyp "Text".  

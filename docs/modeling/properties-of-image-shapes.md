@@ -15,11 +15,12 @@ caps.latest.revision: "25"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 88ae1fb937f5f86aa767a2de8d1978ea160f6d15
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 72e64d9a0e254ce34cea76eca8617dee71573dd9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="properties-of-image-shapes"></a>Eigenschaften von Bildformen
 Image-Formen können Sie angeben, wie Domänenklassen in einem generierten Designer angezeigt werden. Definieren Sie eine Form "Image", durch Festlegen der `Image` Eigenschaft der Klasse, die ein vordefiniertes Image-Datei. Die folgenden Formate werden unterstützt:  
@@ -59,7 +60,7 @@ Image-Formen können Sie angeben, wie Domänenklassen in einem generierten Desig
 |Verfügt über benutzerdefinierte-Konstruktor|Wenn `True`, ein benutzerdefinierter Konstruktor im Quellcode bereitgestellt werden. Weitere Informationen finden Sie unter [überschreiben und erweitern die generierte Klassen](../modeling/overriding-and-extending-the-generated-classes.md).|False|  
 |Inheritance Modifier|Beschreibt die Art der Vererbung von der Quellklasse für Code, der von der Form "Image" generiert wird (`none`, `abstract` oder `sealed`).|Keine|  
 |Basis-Image-Form|Die Basisklasse dieser Form.|(keine)|  
-|Name|Der Name dieser Form.|Aktuelle name|  
+|name|Der Name dieser Form.|Aktuelle name|  
 |Namespace|Der Namespace, der diese Form zugeordnet ist.|Aktuellen namespace|  
 |QuickInfo-Typ|Die Stelle, an die QuickInfo definiert ist (fest, Variable oder keine). Wenn behoben, den Wert der `Fixed Tooltip Text` Eigenschaft wird als QuickInfo verwendet wird und wenn die Variable ist, klicken Sie dann die QuickInfo definiert ist in benutzerdefiniertem Code.|Keine|  
 |Hinweise|Informelle Hinweise, die mit dieser Form verknüpft sind.|\<keine >|  

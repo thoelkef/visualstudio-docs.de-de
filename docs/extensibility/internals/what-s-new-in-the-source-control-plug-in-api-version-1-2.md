@@ -15,11 +15,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ce5ecc4cead8ba8c5673f5ba15f8dda78a90e6be
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 7f9272f034e8f8679fe832ecd628e64ab64af515
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="what39s-new-in-the-source-control-plug-in-api-version-12"></a>Welche &#39; s in Source Control-Plug-in-API-Version 1.2
 In diesem Abschnitt werden die erweiterten Code Quellcodeverwaltungsfunktion in der Quelle Steuerelement-Plug-in-API Version 1.2 hervorgehoben. Im folgenden werden die neuen Funktionen in Version 1.2 aufgeführt:  

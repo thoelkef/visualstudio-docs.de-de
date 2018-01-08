@@ -13,11 +13,12 @@ caps.latest.revision: "21"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 6a645957ce06f77fe9cfb9d3bc3475a21a4213d6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 3cc8f57b0615be6255425e396f0fc4ea3e763810
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="properties-of-port-shapes"></a>Eigenschaften von Anschlussformen
 Sie können Formen vom Typ Port verwenden, Domänenklassen in der generierten Designer dargestellt.  
@@ -42,7 +43,7 @@ Sie können Formen vom Typ Port verwenden, Domänenklassen in der generierten De
 |Verfügt über benutzerdefinierte-Konstruktor|Wenn `True`, ein benutzerdefinierter Konstruktor im Quellcode bereitgestellt werden. Weitere Informationen finden Sie unter [überschreiben und erweitern die generierte Klassen](../modeling/overriding-and-extending-the-generated-classes.md).|False|  
 |Inheritance Modifier|Beschreibt die Art der Vererbung der Source Code-Klasse, die vom Port generiert wird (`none`, `abstract` oder `sealed`).|Keine|  
 |Basis-Port|Die Basisklasse dieser Form.|(keine)|  
-|Name|Der Name dieser Form.|Aktuelle name|  
+|name|Der Name dieser Form.|Aktuelle name|  
 |Namespace|Der Namespace, der diese Form zugeordnet ist.|Aktuellen namespace|  
 |Tool Tipp-Typ|Wie die QuickInfo definiert ist (fest, Variable oder keine). Wenn behoben, den Wert der `Fixed Tooltip Text` Eigenschaft wird als QuickInfo verwendet wird und wenn die Variable ist, klicken Sie dann die QuickInfo definiert ist in benutzerdefiniertem Code.|Keine|  
 |Hinweise|Informelle Hinweise, die mit dieser Form verknüpft sind.|\<keine >|  

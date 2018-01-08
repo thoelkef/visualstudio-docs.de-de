@@ -12,11 +12,12 @@ caps.latest.revision: "4"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b6d287e7e85ef908f9504f8e1f66e0c221042553
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: vssdk
+ms.openlocfilehash: 40e795238e46885707cfd6eff715a27a5f53f85c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Farben und Styling für Visual Studio
 ## <a name="using-color-in-visual-studio"></a>Mithilfe von Farben in Visual Studio  
@@ -337,7 +338,7 @@ Erstellen Sie eine besondere Art von Kategorie-Registrierungseintrags unter `[HK
   
 Füllen Sie die Registrierung mit zwei Werten:  
 
-| Name | Typ | Daten | Beschreibung |
+| name | Typ | Daten | Beschreibung |
 | --- | --- | --- | --- |
 | Kategorie | REG_SZ | GUID | Eine GUID erstellt, um die Kategorie zu identifizieren. |
 | Package | REG_SZ | GUID | Die GUID des VSPackage-Diensts, der die Kategorie unterstützt. |
@@ -349,7 +350,7 @@ Erstellen Sie eine besondere Art von Kategorie-Registrierungseintrags unter `[HK
   
 Füllen Sie die Registrierung mit zwei Werten:
 
-| Name | Typ | Daten | Beschreibung |
+| name | Typ | Daten | Beschreibung |
 |--- | --- | --- | --- |
 | Kategorie | REG_SZ | GUID | Eine GUID erstellt, um die Kategorie zu identifizieren. |
 | Package | REG_SZ | GUID | Die GUID des VSPackage-Diensts, der die Kategorie unterstützt. |

@@ -15,11 +15,12 @@ caps.latest.revision: "29"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2d788121e81af48cb972631d0845ad7b4317818b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 7bc03568465efa022981ade059b0de68019a5978
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="starting-to-develop-visual-studio-extensions"></a>Entwickeln von Visual Studio-Erweiterungen wird gestartet...
 Wenn Sie eine Visual Studio-Erweiterung, bevor Sie nie geschrieben haben, haben Sie wahrscheinlich einige Fragen. Wir haben einige der häufigsten Probleme aufgeführt. Wenn Sie die Informationen Sie wünschen sehen, verwenden Sie die Feedback-Schaltflächen (**war diese Seite hilfreich?** am unteren Rand des Bildschirms) für die gewünschten um Unterstützung bitten.  
@@ -39,7 +40,7 @@ Wenn Sie eine Visual Studio-Erweiterung, bevor Sie nie geschrieben haben, haben 
  Beispiele für Erweiterungen, sehen Sie sich die [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs). Zahlreiche Erweiterungen sind open Source und Marketplace enthält Links zu ihren GitHub-Repository. 
   
 ## <a name="which-visual-studio-features-can-i-extend"></a>Welche Visual Studio-Funktionen können werden erweitert?  
- Theoretisch können Sie fast jeden Teil von Visual Studio erweitern: Menüs, Symbolleisten, Befehle, Windows, Projektmappen, Projekte, Editoren und usw..  
+ Theoretisch können Sie fast jeden Teil von Visual Studio erweitern: Menüs, Symbolleisten, Befehle, Windows, Projektmappen, Projekte, Editoren und usw.  
   
  In der Praxis gefunden wird, dass die Funktionen, die meisten Personen erweitern möchten Befehle, Menüs und Symbolleisten, Windows, IntelliSense und Projekte. Hier sind Links zu den relevanten Abschnitten:  
   
@@ -89,4 +90,4 @@ Wenn Sie eine Visual Studio-Erweiterung, bevor Sie nie geschrieben haben, haben 
 ## <a name="how-can-i-distribute-my-extension"></a>Wie kann ich meiner Erweiterung verteilen?  
  Sie können die Erweiterung auf einem anderen Computer installieren oder per für Ihre Freunde als eine VSIX-Datei, die Sie installieren, indem Sie darauf doppelklicken. Sie erhalten weitere Informationen zu VSIX-Pakete auf [Versand der Visual Studio-Erweiterungen](../extensibility/shipping-visual-studio-extensions.md).  
   
- Sie können auch die Erweiterung für Visual Studio Marketplace veröffentlichen, wodurch das für eine große Anzahl von Visual Studio-Kunden sichtbar. Ein Beispiel zum Verpacken einer Erweiterung Marketplace finden Sie unter [Exemplarische Vorgehensweise: Veröffentlichen einer Visual Studio-Erweiterung](../extensibility/walkthrough-publishing-a-visual-studio-extension.md). Weitere Informationen, welche Schritte Sie zum Veröffentlichen in Marketplace ausführen müssen, finden Sie unter [Produkte und -Erweiterungen für Visual Studio](https://docs.microsoft.com/en-us/vsts/integrate/ide/extensions/overview).
+ Sie können auch die Erweiterung für Visual Studio Marketplace veröffentlichen, wodurch das für eine große Anzahl von Visual Studio-Kunden sichtbar. Ein Beispiel zum Verpacken einer Erweiterung Marketplace finden Sie unter [Exemplarische Vorgehensweise: Veröffentlichen einer Visual Studio-Erweiterung](../extensibility/walkthrough-publishing-a-visual-studio-extension.md). Weitere Informationen, welche Schritte Sie zum Veröffentlichen in Marketplace ausführen müssen, finden Sie unter [Produkte und -Erweiterungen für Visual Studio](/vsts/integrate/ide/extensions/overview).

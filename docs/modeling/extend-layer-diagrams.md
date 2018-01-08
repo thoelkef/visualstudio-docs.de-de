@@ -15,11 +15,12 @@ caps.latest.revision: "39"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-ms.openlocfilehash: 2b661d894a471a3734a54806a89381d06fd3bd2d
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: 477c51d4172f893e4506eff1b2a11b626993b327
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="extend-dependency-diagrams"></a>Erweitern Sie die Abhängigkeit-Diagramme
 Sie können Code zum Erstellen und die Abhängigkeit Diagramme werden aktualisiert, und überprüfen Sie die Struktur Ihres Programmcodes mit Abhängigkeit Diagramme in Visual Studio schreiben. Sie können Befehle hinzufügen, die im Kontextmenü der Diagramme angezeigt werden, Drag & Drop-Gesten anpassen und über Textvorlagen auf das Ebenenmodell zugreifen. Sie können diese Erweiterung in einer Visual Studio Integration Extension (VSIX) verpacken und sie an andere Visual Studio-Benutzer verteilen.  

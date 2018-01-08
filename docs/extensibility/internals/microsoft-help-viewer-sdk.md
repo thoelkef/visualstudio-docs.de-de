@@ -12,11 +12,12 @@ caps.latest.revision: "33"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c4c676c28b955fac29db5a961f3b566600bcf318
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: vssdk
+ms.openlocfilehash: 7c15956bc861f9eb20267dc97446cf5ea49cae31
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Microsoft Help Viewer SDK
 Dieser Artikel enthält die folgenden Aufgaben für Visual Studio Help Viewer Integratoren:  
@@ -44,7 +45,7 @@ Ordnungsgemäß in der Hilfe-Viewer gerendert werden, muss der Inhalt für unfor
   
 Ein Thema enthält in der Regel zwei Abschnitte:  
   
--   Metadaten (Siehe Content Metadatenverweis): Daten zum Thema, z. B. das Thema eindeutige ID, die Schlüsselwort-Wert, der Thema TOC-ID, übergeordneten Knoten-ID usw..  
+-   Metadaten (Siehe Content Metadatenverweis): Daten zum Thema, z. B. das Thema eindeutige ID, die Schlüsselwort-Wert, der Thema TOC-ID, übergeordneten Knoten-ID usw.  
   
 -   Text-Inhalt: W3C grundlegende 1.1 XHTML einhalten inklusive unterstützt Inhalt Verhaltensweisen (reduzierbaren Bereich, Codeausschnitt, usw. Eine vollständige Liste wird unten gezeigt).  
   
@@ -93,7 +94,7 @@ Erstellen Sie ein neues XHTML-Dokument mit dem Namen ContosoTopic4.htm, und schl
   
 ```  
   
-Als Nächstes fügen Sie Daten zum definieren, wie im Thema (Selbstprofil Marke oder nicht), dargestellt werden soll wie zu diesem Thema für F1 verweisen, in dem in diesem Thema im Inhaltsverzeichnis, dessen ID (für Verknüpfungsverweis durch andere Themen) vorhanden ist, usw..  Finden Sie unter "Inhaltsmetadaten" der nachfolgenden Tabelle eine vollständige Liste der unterstützten Metadaten.  
+Als Nächstes fügen Sie Daten zum definieren, wie im Thema (Selbstprofil Marke oder nicht), dargestellt werden soll wie zu diesem Thema für F1 verweisen, in dem in diesem Thema im Inhaltsverzeichnis, dessen ID (für Verknüpfungsverweis durch andere Themen) vorhanden ist, usw.  Finden Sie unter "Inhaltsmetadaten" der nachfolgenden Tabelle eine vollständige Liste der unterstützten Metadaten.  
   
 -   In diesem Fall werden wir unser eigenes branding-Paket eine Variante des Visual Studio Help Viewer Brandingpakets verwenden.  
   

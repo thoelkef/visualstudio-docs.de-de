@@ -22,11 +22,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d82bc012b2be9736b83fc07f7d0a83d354dda002
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 6c13d27f8c79f1bc638741d8877ac95a0dff4885
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="differences-between-sandboxed-and-farm-solutions"></a>Unterschiede zwischen Sandkasten- und Farmlösungen
   Beim Kompilieren einer SharePoint-Lösung bereitgestellt wird, auf dem SharePoint-Server und ein Debugger angehängt, um es zu debuggen. Der Prozess zum Debuggen der Projektmappe verwendet, hängt von der Einstellung der Eigenschaft Sandkastenlösung: sandkastenlösung oder farmlösung.  

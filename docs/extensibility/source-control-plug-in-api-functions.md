@@ -13,11 +13,12 @@ caps.latest.revision: "19"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1085312849ce33518654e044a795d6aa4b735e07
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: beaab13c76b3d50f97662e66c1f72dc83161e96d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="source-control-plug-in-api-functions"></a>Quellcodeverwaltungsfunktionen-Plug-in-API
 Die Datenquellen-Steuerelement-Plug-in-API bietet die folgenden Funktionen, die von der quellcodeverwaltung-Plug-in in Übereinstimmung mit dieser API implementiert werden müssen. Die Signaturen für jede Funktion und die Semantik von der Bitflags zugeordnet ist und andere Parameter werden in dieser Referenz im Detail beschrieben.  

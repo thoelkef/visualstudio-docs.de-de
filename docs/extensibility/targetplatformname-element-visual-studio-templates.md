@@ -12,11 +12,12 @@ caps.latest.revision: "5"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e6e1f1fb9dde053c91993b158486eae8527dc11f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 10aa5bca7a71294c7dbe297e9e4befb5da485bb7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="targetplatformname-element-visual-studio-templates"></a>TargetPlatformName-Element (Visual Studio-Vorlagen)
 Gibt die Plattform an, auf die die Projektvorlage abzielt. Mit diesem Element wird angegeben, dass eine Projektvorlage zum Erstellen von [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] -Apps verwendet wird.  
@@ -33,7 +34,7 @@ Gibt die Plattform an, auf die die Projektvorlage abzielt. Mit diesem Element wi
  In den folgenden Abschnitten werden Attribute sowie untergeordnete und übergeordnete Elemente beschrieben.  
   
 ### <a name="attributes"></a>Attribute  
- Keine.  
+ Keine  
   
 ### <a name="child-elements"></a>Untergeordnete Elemente  
   

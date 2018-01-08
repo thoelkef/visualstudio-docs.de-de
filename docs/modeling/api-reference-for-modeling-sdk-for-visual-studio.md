@@ -11,11 +11,12 @@ caps.latest.revision: "8"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 1acbeb95ed7fa59fd64feefe050debc0ce9b6461
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: c5dace5862354c26a22b65b3f471163e50738c7c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="api-reference-for-modeling-sdk-for-visual-studio"></a>API-Referenz für Modellierungs-SDK für Visual Studio
 Die Visual Studio Visualization and Modeling SDK bietet die Plattform, auf denen Ihre Standardtools für domänenspezifische Sprachen (DSL) erstellt werden.  

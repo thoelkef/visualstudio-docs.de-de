@@ -12,11 +12,12 @@ caps.latest.revision: "6"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0d16ed0f58929a6559812261c3443b3561375205
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 0721d0080ec135a8e969cc420dfbb51e81ac4454
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="notifications-and-progress-for-visual-studio"></a>Benachrichtigungen und Fortschritt für Visual Studio
 ##  <a name="BKMK_NotificationSystems"></a>Benachrichtigungssystemen  
@@ -41,7 +42,7 @@ ms.lasthandoff: 10/31/2017
 ### <a name="choosing-the-right-method"></a>Auswählen der richtigen Methode  
  Verwenden Sie diese Tabelle, die Sie bei der Wahl der richtigen Methode zum Benachrichtigen des Benutzers Ihrer Nachricht unterstützen.  
   
-|Methode|Verwendung|Verwenden Sie keine|  
+|Methode|Mit|Verwenden Sie keine|  
 |------------|---------|----------------|  
 |[Modale Meldung Fehlerdialogfelder](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_ModalErrorMessageDialogs)|Wird verwendet, wenn eine Antwort des Benutzers, bevor Sie fortfahren erforderlich ist.|Verwenden Sie nicht beim besteht keine Notwendigkeit, blockieren den Benutzer und deren Ablauf unterbrochen. Vermeiden Sie modale Dialogfelder verwenden, wenn es möglich ist, die Meldung in eine andere, weniger intrusiv Weise angezeigt werden.|  
 |[IDE-Statusleiste](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_IDEStatusBar)|Wird verwendet, wenn ambient Textinformationen hinsichtlich des Status eines Prozesses vorhanden ist.|Verwenden Sie nicht allein. Am besten verwendet in Verbindung mit einem anderen Feedbackmechanismus.|  

@@ -13,11 +13,12 @@ ms.suite:
 ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 manager: ghogen
-ms.openlocfilehash: be4b63e767463b7b801ab5ed98d8482e94aacd1d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: v-brickg
+ms.openlocfilehash: 001e9db65209f8ae60cd070d5d68b9f72ef62672
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="color-value-reference-for-visual-studio"></a>Farbwertverweis für Visual Studio
 Dieses Thema ist ein Verweis zum Erstellen von neuen farbtoken. Wenn Sie die neue Benutzeroberfläche erstellen, können Sie ähnliche Farben aus vorhandenen Benutzeroberfläche verwenden, die Farben für jedes Haupt-Design und den Namen des Farbe für dieses Element für Designs mit hohem Kontrast auswählen. 
@@ -98,7 +99,7 @@ Wenn Sie dieses Referenzhandbuch zu verwenden, beachten Sie:
 | Vordergrund: gezeigt wird | ![#FF1E1E1E Farbfeld](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E Farbfeld")<br />`#FF1E1E1E` | ![#FFF1F1F1 Farbfeld](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 Farbfeld")<br />`#FFF1F1F1` | ![#FF1E1E1E Farbfeld](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E Farbfeld")<br />`#FF1E1E1E` | ![HighlightText Farbfeld](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText-Muster")<br />`HighlightText` |
 | Hintergrund | ![#FFEEEEF2 Farbfeld](../../extensibility/ux-guidelines/media/EEEEF2.png "#FFEEEEF2 Farbfeld")<br />`#FFEEEEF2` | ![#FF292929 Farbfeld](../../extensibility/ux-guidelines/media/292929.png "#FF292929 Farbfeld")<br />`#FF292929` | ![#FFEEEEF2 Farbfeld](../../extensibility/ux-guidelines/media/EEEEF2.png "#FFEEEEF2 Farbfeld")<br />`#FFEEEEF2` | ![Steuerelement Farbfeld](../../extensibility/ux-guidelines/media/HCControl.png "Steuerelement Farbfeld")<br />`Control` |
 | Hintergrund: gezeigt wird | ![#FFC9DEF5 Farbfeld](../../extensibility/ux-guidelines/media/C9DEF5.png "#FFC9DEF5 Farbfeld")<br />`#FFC9DEF5` | ![#FF3E3E40 Farbfeld](../../extensibility/ux-guidelines/media/3E3E40.png "#FF3E3E40 Farbfeld")<br />`#FF3E3E40` | ![#FFFFFCF4 Farbfeld](../../extensibility/ux-guidelines/media/FFFCF4.png "#FFFFFCF4 Farbfeld")<br />`#FFFFFCF4` | ![Markieren Sie Farbfeld](../../extensibility/ux-guidelines/media/HCHighlight.png "Hervorhebung Farbfeld")<br />`Highlight` |
-| Rahmen | Keine | Keine | Keine | Keine |
+| Rahmen | Keiner | Keine | Keine | Keiner |
 | Rahmen: Wenn darauf gezeigt wird | ![#FFC9DEF5 Farbfeld](../../extensibility/ux-guidelines/media/C9DEF5.png "#FFC9DEF5 Farbfeld")<br />`#FFC9DEF5` | ![#FF3E3E40 Farbfeld](../../extensibility/ux-guidelines/media/3E3E40.png "#FF3E3E40 Farbfeld")<br />`#FF3E3E40` | ![#FFE5C365 Farbfeld](../../extensibility/ux-guidelines/media/E5C365.png "## FFE5C365 Farbfeld")<br />`#FFE5C365` | ![WindowFrame Farbfeld](../../extensibility/ux-guidelines/media/HCWindowFrame.png "WindowFrame-Muster")<br />`WindowFrame` |
 
 ### <a name="category-group"></a>Gruppe "Category"
@@ -201,7 +202,7 @@ Wenn Sie dieses Referenzhandbuch zu verwenden, beachten Sie:
 > [!NOTE]
 > **Hoher Kontrast Muster werden nur zu Vergleichszwecken angezeigt.** Verwenden Sie den Namen des System-Farbe für hohen Kontrast-Benutzeroberfläche, und verwenden Sie eine Pipette oder dem Farbwähler nicht auf diese Muster. Hoher Kontrast Muster in diesem Thema reflektieren das Design "hoher Kontrast #1" in Windows. Die Farben werden in anderen Designs mit hohem Kontrast anders aussehen.
 
-### <a name="body"></a>Body
+### <a name="body"></a>Text
 
 | | Helles Design | Dunkles Design | Design "Blau" | Hoher Kontrast | 
 | --- | :---: | :---: | :---: | :---: |
@@ -226,7 +227,7 @@ Wenn Sie dieses Referenzhandbuch zu verwenden, beachten Sie:
 > [!NOTE]
 > **Hoher Kontrast Muster werden nur zu Vergleichszwecken angezeigt.** Verwenden Sie den Namen des System-Farbe für hohen Kontrast-Benutzeroberfläche, und verwenden Sie eine Pipette oder dem Farbwähler nicht auf diese Muster. Hoher Kontrast Muster in diesem Thema reflektieren das Design "hoher Kontrast #1" in Windows. Die Farben werden in anderen Designs mit hohem Kontrast anders aussehen.
 
-### <a name="body"></a>Body
+### <a name="body"></a>Text
 
 | | Helles Design | Dunkles Design | Design "Blau" | Hoher Kontrast | 
 | --- | :---: | :---: | :---: | :---: |
@@ -255,7 +256,7 @@ Wenn Sie dieses Referenzhandbuch zu verwenden, beachten Sie:
 > [!NOTE]
 > **Hoher Kontrast Muster werden nur zu Vergleichszwecken angezeigt.** Verwenden Sie den Namen des System-Farbe für hohen Kontrast-Benutzeroberfläche, und verwenden Sie eine Pipette oder dem Farbwähler nicht auf diese Muster. Hoher Kontrast Muster in diesem Thema reflektieren das Design "hoher Kontrast #1" in Windows. Die Farben werden in anderen Designs mit hohem Kontrast anders aussehen.
 
-### <a name="body"></a>Body
+### <a name="body"></a>Text
 
 | | Helles Design | Dunkles Design | Design "Blau" | Hoher Kontrast | 
 | --- | :---: | :---: | :---: | :---: |
@@ -375,7 +376,7 @@ Wenn Sie dieses Referenzhandbuch zu verwenden, beachten Sie:
 | Hintergrund | ![#007ACC Farbfeld](../../extensibility/ux-guidelines/media/007ACC.png "#007ACC Farbfeld")<br />`#007ACC` | ![#007ACCswatch](../../extensibility/ux-guidelines/media/007ACC.png "#007ACC Farbfeld")<br />`#007ACC` | ![#007ACC Farbfeld](../../extensibility/ux-guidelines/media/007ACC.png "#007ACC Farbfeld")<br />`#007ACC` | ![Markieren Sie Farbfeld](../../extensibility/ux-guidelines/media/HCHighlight.png "Hervorhebung Farbfeld")<br />`Highlight` |
 | Rahmen | ![#007ACC Farbfeld](../../extensibility/ux-guidelines/media/007ACC.png "#007ACC Farbfeld")<br />`#007ACC` | ![#007ACCswatch](../../extensibility/ux-guidelines/media/007ACC.png "#007ACC Farbfeld")<br />`#007ACC` | ![#007ACC Farbfeld](../../extensibility/ux-guidelines/media/007ACC.png "#007ACC Farbfeld")<br />`#007ACC` | ![HighlightText Farbfeld](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText-Muster")<br />`HighlightText` |
 
-### <a name="focused"></a>Mit Fokus
+### <a name="focused"></a>Focused
 
 | | Helles Design | Dunkles Design | Design "Blau" | Hoher Kontrast | 
 | --- | :---: | :---: | :---: | :---: |
@@ -429,7 +430,7 @@ Wenn Sie dieses Referenzhandbuch zu verwenden, beachten Sie:
 | Text | ![#1E1E1E Farbfeld](../../extensibility/ux-guidelines/media/1E1E1E.png "#1E1E1E Farbfeld")<br />`#1E1E1E` | ![#F1F1F1 Farbfeld](../../extensibility/ux-guidelines/media/F1F1F1.png "#F1F1F1 Farbfeld")<br />`#F1F1F1` | ![#1E1E1E Farbfeld](../../extensibility/ux-guidelines/media/1E1E1E.png "#1E1E1E Farbfeld")<br />`#1E1E1E` | ![HighlightText Farbfeld](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText-Muster")<br />`HighlightText` |
 | Glyphe | ![#FFFFFF Farbfeld](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFF Farbfeld")<br />`#FFFFFF` | ![#F1F1F1 Farbfeld](../../extensibility/ux-guidelines/media/F1F1F1.png "#F1F1F1 Farbfeld")<br />`#F1F1F1` | ![#1E1E1E Farbfeld](../../extensibility/ux-guidelines/media/1E1E1E.png "#1E1E1E Farbfeld")<br />`#1E1E1E` | ![HighlightText Farbfeld](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText-Muster")<br />`HighlightText` |
 
-### <a name="focused"></a>Mit Fokus
+### <a name="focused"></a>Focused
 
 | | Helles Design | Dunkles Design | Design "Blau" | Hoher Kontrast | 
 | --- | :---: | :---: | :---: | :---: |
@@ -493,7 +494,7 @@ Wenn Sie dieses Referenzhandbuch zu verwenden, beachten Sie:
 | Glyphe | ![# FFFFFFswatch](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFF Farbfeld")<br />`#FFFFFF` | ![#FFFFFF Farbfeld](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFF Farbfeld")<br />`#FFFFFF` | ![#000000 Farbfeld](../../extensibility/ux-guidelines/media/000000.png "#000000 Farbfeld")<br />`#000000` | ![HighlightText Farbfeld](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText-Muster")<br />`HighlightText` |
 | Glyphenhintergrund | ![#007ACC Farbfeld](../../extensibility/ux-guidelines/media/007ACC.png "#007ACC Farbfeld")<br />`#007ACC` | ![#007ACC Farbfeld](../../extensibility/ux-guidelines/media/007ACC.png "#007ACC Farbfeld")<br />`#007ACC` | ![#E5C365 Farbfeld](../../extensibility/ux-guidelines/media/E5C365.png "#E5C365 Farbfeld")<br />`#E5C365` | ![Markieren Sie Farbfeld](../../extensibility/ux-guidelines/media/HCHighlight.png "Hervorhebung Farbfeld")<br />`Highlight` |
 
-#### <a name="focused"></a>Mit Fokus
+#### <a name="focused"></a>Focused
 
 | | Helles Design | Dunkles Design | Design "Blau" | Hoher Kontrast | 
 | --- | :---: | :---: | :---: | :---: |
@@ -536,7 +537,7 @@ Wenn Sie dieses Referenzhandbuch zu verwenden, beachten Sie:
 | Rahmen | ![#CCCEDB Farbfeld](../../extensibility/ux-guidelines/media/CCCEDB.png "#CCCEDB-Muster")<br />`#CCCEDB` |![#3F3F46 Farbfeld](../../extensibility/ux-guidelines/media/3F3F46.png "#3F3F46 Farbfeld")<br />`#3F3F46` | ![#FDF4BF Farbfeld](../../extensibility/ux-guidelines/media/FDF4BF.png "#FDF4BF Farbfeld")<br />`#FDF4BF` | ![HighlightText Farbfeld](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText-Muster")<br />`HighlightText` |
 | Text |![#1E1E1E Farbfeld](../../extensibility/ux-guidelines/media/1E1E1E.png "#1E1E1E Farbfeld")<br />`#1E1E1E` | ![#FFFFFF Farbfeld](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFF Farbfeld")<br />`#FFFFFF` | ![#000000 Farbfeld](../../extensibility/ux-guidelines/media/000000.png "#000000 Farbfeld")<br />`#000000` | ![HighlightText Farbfeld](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText-Muster")<br />`HighlightText` |
 
-#### <a name="focused"></a>Mit Fokus
+#### <a name="focused"></a>Focused
 
 | | Helles Design | Dunkles Design | Design "Blau" | Hoher Kontrast | 
 | --- | :---: | :---: | :---: | :---: |

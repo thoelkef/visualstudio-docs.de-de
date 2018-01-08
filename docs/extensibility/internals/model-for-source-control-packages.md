@@ -13,11 +13,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a8dacc0a3dfc230085c7575960238711d16d1ef8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 1960b5fe7b7c507b5b3275315ea6ae1715c27f76
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="model-for-source-control-packages"></a>Modell für die Quellpakete-Steuerelement
 Die folgenden Modell stellt ein Beispiel für ein Steuerelement Source-Implementierung. Im Modell sehen Sie die Schnittstellen, die Sie implementieren müssen, und die Umgebung-Dienste, die Sie aufrufen müssen. Wie alle Dienste rufen Sie tatsächlich auf die Methoden der einer bestimmten Schnittstelle, die Sie über den Dienst zu erhalten. Die Namen der Klassen werden identifiziert, damit sie einfacher sehen, wie Datenquellen-Steuerelements durchgeführt wird.  
@@ -28,7 +29,7 @@ Beispiel-Quellcodeverwaltungsprojekt
 ## <a name="interfaces"></a>Schnittstellen  
  Sie können für Ihre neue Projekttypen in Visual Studio mit der Liste der Schnittstellen, die in der folgenden Tabelle aufgeführten Datenquellen-Steuerelements implementieren.  
   
-|Schnittstelle|Verwendung|  
+|Interface|Mit|  
 |---------------|---------|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>|Wird von Projekten und Editoren, bevor Sie sie speichern oder ändern ("dirty")-Dateien. Diese Schnittstelle erfolgt mithilfe der <xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave> Dienst.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>|Aufgerufen von Projekten, zum Anfordern von Berechtigungen zum Hinzufügen, entfernen Sie oder Umbenennen Sie einer Datei oder eines Verzeichnisses. Diese Schnittstelle wird auch aufgerufen, Projekte zu informieren, dass die Umgebung, wenn ein genehmigten hinzufügen, entfernen oder Umbenennen von Aktion abgeschlossen ist. Wird darauf mit der <xref:Microsoft.VisualStudio.Shell.Interop.SVsTrackProjectDocuments> Dienst.|  

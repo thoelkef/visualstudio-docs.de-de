@@ -12,11 +12,12 @@ caps.latest.revision: "21"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: e9bed31caa63a12677e7b9798e6cf72524500c21
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: e38000dea9c20f8458fd0f899d43ea8f7c9eb7db
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="properties-of-domain-classes"></a>Eigenschaften von Domänenklassen
 Domänenklassen haben die Eigenschaften in der folgenden Tabelle. Informationen zu Domänenklassen finden Sie unter [Grundlegendes zu Modellen, Klassen und Beziehungen](../modeling/understanding-models-classes-and-relationships.md). Weitere Informationen zum Verwenden dieser Eigenschaften finden Sie unter [anpassen und Erweitern einer domänenspezifischen Sprache](../modeling/customizing-and-extending-a-domain-specific-language.md).  
@@ -29,7 +30,7 @@ Domänenklassen haben die Eigenschaften in der folgenden Tabelle. Informationen 
 |Verfügt über benutzerdefinierte-Konstruktor|Wenn `True`, ein benutzerdefinierter Konstruktor im Quellcode bereitgestellt werden. Weitere Informationen finden Sie unter [überschreiben und erweitern die generierte Klassen](../modeling/overriding-and-extending-the-generated-classes.md).|`False`|  
 |Inheritance Modifier|Beschreibt die Art der Vererbung von der Quellklasse für Code, der von der Domänenklasse generiert wird (`none`, `abstract` oder `sealed`).|`none`|  
 |Basisklasse|Wenn diese Domänenklasse abgeleitet ist, den Namen der Basisklasse.|\<keine >|  
-|Name|Der Name dieser Domäne-Klasse.|Aktuelle name|  
+|name|Der Name dieser Domäne-Klasse.|Aktuelle name|  
 |Namespace|Der Namespace dieser Domäne-Klasse.|Aktuellen namespace|  
 |Hinweise|Informelle Hinweise, die mit dieser Domänenklasse verknüpft sind.|\<keine >|  
 |Beschreibung|Die Beschreibung, die verwendet wird, um die Benutzeroberfläche des Designers generierten zu dokumentieren.|\<keine >|  

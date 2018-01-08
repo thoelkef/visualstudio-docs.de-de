@@ -17,11 +17,12 @@ caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: eaf35854aede65b605b4578ca9ee71375ad7a479
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 0d7af3ab109c922a8182a93db6852a331229ceca
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="vsix-manifest-designer"></a>VSIX-Manifest-Designer
 Ändert eine VSIX-Paket-manifest-Datei, die das Installationsverhalten für eine Visual Studio-Erweiterung legt fest.  

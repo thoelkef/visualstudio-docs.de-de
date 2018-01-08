@@ -13,11 +13,12 @@ caps.latest.revision: "30"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f503d9e8b0ef125fdb72ea60a9928f308b900993
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 15dd5f0121fca86a38631bf775ec25d4428632e1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-outlining"></a>Exemplarische Vorgehensweise: Gliedern
 Sie können die Sprache basierende Funktionen wie das Gliedern von definieren die Arten von Textbereiche, die Sie erweitern oder reduzieren möchten implementieren. Sie können Bereiche im Kontext eines Diensts Sprache definieren können Sie definieren Sie eine eigene Erweiterung und Inhalt Dateityp von Name und die Region-Definition auf nur diesen Typ gelten oder Sie können die Definitionen für die Region anwenden, um einen vorhandenen Inhaltstyp (z. B. "Text"). Diese exemplarische Vorgehensweise zeigt, wie definieren und Gliederungsbereiche anzeigen.  

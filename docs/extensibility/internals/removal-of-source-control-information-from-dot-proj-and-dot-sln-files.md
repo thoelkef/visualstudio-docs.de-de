@@ -13,11 +13,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 73ea933a7e9efc08347ea107b089101f1e5d5459
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 4131e3d5139911c6a1bb9b44d8d8acaefa6cb632
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="removal-of-source-control-information-from-proj-and-sln-files"></a>Entfernen von Informationen über die Quelle aus. Proj und. Sln-Dateien
 In Version 1.2 von der Quelle Steuerelement-Plug-in-API SCC werden Informationen in einem MSSCCPRJ gespeichert. SCC-Datei. Der Vorteil der MSSCCPRJ. SCC-Datei ist, dass die SCC-Informationen ist nicht im Quellmodell - gesteuert, wie es in ".proj" und die SLN-Dateien ist.  

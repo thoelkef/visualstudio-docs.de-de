@@ -15,11 +15,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f7dc04752b034f666dfcb1d72b500f2c12f54fba
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 91707d75ca71ae7e035322c8a9c25ab6e4befe43
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="new-project-generation-under-the-hood-part-two"></a>Neue Projektgenerierung: Hinter den Kulissen Teil 2
 In [neue Projekterstellung: Details, Teil 1](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) wurde erläutert, wie die **neues Projekt** Dialogfeld Feld wird aufgefüllt. Angenommen, Sie haben ausgewählt, eine **Visual C#-Windows-Anwendung**, ausgefüllten der **Namen** und **Speicherort** Textfelder, und klicken auf OK.  
@@ -64,7 +65,7 @@ namespace Simple
 }  
 ```  
   
- Eine vollständige Liste der Vorlagenparameter, finden Sie unter [Vorlagenparameter](../../ide/template-parameters.md).  
+ Eine vollständige Liste der Vorlagenparameter finden Sie unter [Vorlagenparameter](../../ide/template-parameters.md).  
   
 ## <a name="a-look-inside-a-vstemplate-file"></a>Ein Einblick in ein. VSTemplate-Datei  
  Eine einfache VSTEMPLATE-Datei hat dieses format  

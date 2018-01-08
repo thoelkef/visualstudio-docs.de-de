@@ -13,11 +13,12 @@ caps.latest.revision: "22"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6c90f7cec454cc6562e2cd20e2da64cfe86e243f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: f20e5d251d8d6ef31289fb1b9ee8b9420ff9146a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="single-and-multi-tab-views"></a>Ansichten für einzelne und Registerkarte "Multi"
 Erstellen eines Editors kann verschiedene Arten von Ansichten. Ein Beispiel ist ein Code-Editor-Fenster, ein weiterer Vorteil ist ein Forms-Designer.  

@@ -15,11 +15,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b61478b482ed10aba61ea9ce412dc0fe0725b0bd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 90a21ba6aafa0c5d06565c66531e2a6779aa419f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="mssccprjscc-file"></a>MSSCCPRJ. SCC-Datei
 Wenn Visual Studio-Projektmappen oder Projekten unter quellcodeverwaltung mithilfe der IDE platziert wird, empfängt die IDE zwei sind wichtige Informationen aus dem Quellsteuerelement-Plug-in Form von Zeichenfolgen. Diese Zeichenfolgen, die "AuxPath" und "Projektname", sind für die IDE nicht transparent, aber sie werden vom plug-in verwendet, um die Projektmappe oder das Projekt in der Versionskontrolle zu suchen. Die IDE in der Regel ruft diese Zeichenfolgen erstmalig durch Aufrufen der [SccGetProjPath](../extensibility/sccgetprojpath-function.md), und es dann speichert sie in der Projektmappe bzw. im Projekt-Datei für zukünftige Aufrufe der [SccOpenProject](../extensibility/sccopenproject-function.md). Wenn in den Dateien Projektmappen- und Projektdateien eingebettet wird, werden die Zeichenfolgen "AuxPath" und "Projektname" nicht automatisch aktualisiert, wenn ein Benutzer, Zweige verzweigt, oder Projektmappen- und Projektdateien Dateien kopiert, die in der Versionskontrolle sind. Um sicherzustellen, dass die Projektmappen- und Projektdateien Dateien am richtigen Speicherort in der Versionskontrolle verweisen, müssen Benutzer die Zeichenfolgen manuell aktualisieren. Da die Zeichenfolgen nicht transparent sein sollen, ist es nicht immer klar werden wie sie aktualisiert werden sollen.  

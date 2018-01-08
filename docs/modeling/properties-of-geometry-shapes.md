@@ -13,11 +13,12 @@ caps.latest.revision: "21"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 54e600e5d626828824d5a2584e1ff4f7fdc09810
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 6e91bc1189bbc10954e99441ac2309dce707690a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="properties-of-geometry-shapes"></a>Eigenschaften geometrischer Formen
 Geometry-Formen können Sie angeben, wie Instanzen von Domänenklassen in einer domänenspezifischen Sprache angezeigt werden. Weitere Informationen finden Sie unter [zum Definieren einer domänenspezifischen Sprache](../modeling/how-to-define-a-domain-specific-language.md). Weitere Informationen zum Verwenden dieser Eigenschaften finden Sie unter [anpassen und Erweitern einer domänenspezifischen Sprache](../modeling/customizing-and-extending-a-domain-specific-language.md).  
@@ -40,9 +41,9 @@ Geometry-Formen können Sie angeben, wie Instanzen von Domänenklassen in einer 
 |Verfügt über benutzerdefinierte-Konstruktor|Wenn `True`, ein benutzerdefinierter Konstruktor im Quellcode bereitgestellt werden. Weitere Informationen finden Sie unter [überschreiben und erweitern die generierte Klassen](../modeling/overriding-and-extending-the-generated-classes.md).|False|  
 |Inheritance Modifier|Beschreibt die Art der Vererbung von der Quellklasse für Code, der von der Form generiert wird (`none`, `abstract` oder `sealed`).|Keine|  
 |Basis Geometrieform|Die Basisklasse dieser Form.|(keine)|  
-|Name|Der Name dieser Form.|Aktuelle name|  
+|name|Der Name dieser Form.|Aktuelle name|  
 |Namespace|Der Namespace, der diese Form zugeordnet ist.|Aktuellen namespace|  
-|QuickInfo-Typ|Wie die QuickInfo definiert ist (fest, Variable oder keine). Wenn behoben, den Wert der `Fixed Tooltip Text` Eigenschaft wird als QuickInfo verwendet wird und wenn die Variable ist, klicken Sie dann die QuickInfo definiert ist in benutzerdefiniertem Code.|Keine|  
+|QuickInfo-Typ|Wie die QuickInfo definiert ist (fest, Variable oder keine). Wenn behoben, den Wert der `Fixed Tooltip Text` Eigenschaft wird als QuickInfo verwendet wird und wenn die Variable ist, klicken Sie dann die QuickInfo definiert ist in benutzerdefiniertem Code.|Keiner|  
 |Hinweise|Informelle Hinweise, die mit diesem Element zugeordnet sind.|\<keine >|  
 |Anfängliche Höhe|Die Anfangshöhe dieser Form, in Zoll.|1|  
 |Anfängliche Breite|Anfängliche Breite dieser Form, in Zoll.|1.5|  

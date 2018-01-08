@@ -12,11 +12,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b8b1fa4647cd5b145d19e2264381b186394be814
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 1008e1c81c6d99bc9fa0615263cf023a56101435
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="what39s-new-in-the-visual-studio-2015-sdk"></a>Was &#39; s in der Visual Studio 2015 SDK
 Das Visual Studio SDK hat die folgenden neuen und aktualisierten Features für Visual Studio 2015 und Visual Studio 2015, aktualisiert Visual Studio 2017.  
@@ -53,7 +54,7 @@ Das Visual Studio SDK hat die folgenden neuen und aktualisierten Features für V
  Die VSPackage-Assistenten für C++ unterstützt Menübefehle, Toolfenster und benutzerdefinierte Editoren. Suchen sie in der **neues Projekt** Dialogfeld in **Visual C++ / Erweiterbarkeit**.  
   
 ## <a name="vs-sdk-reference-assemblies-via-nuget"></a>VS-SDK-Verweisassemblys über NuGet  
- Für erhöhte Portabilität und Freigabe von Erweiterungsprojekte können Sie die NuGet-Versionen die Verweisassemblys VS-SDK.  Diese Seiten sind verfügbar, auf [nuget.org](http://www.nuget.org) von veröffentlichten [VisualStudioExtensibility](http://www.nuget.org/profiles/VisualStudioExtensibility) und leicht zu Ihrem Projekt oder einer Projektmappe mithilfe von Visual Studio hinzugefügt werden **verweist auf / Verwalten von NuGet Pakete** Dialogfeld. Sie können einzelne Verweise auf bestimmte Erweiterbarkeit Assemblys hinzugefügt oder das VS-SDK verweist auf die Assemblys, die gleichzeitig mit dem VS-SDK [Meta-Paket](http://www.nuget.org/packages/VSSDK_Reference_Assemblies). Weitere Informationen zu NuGet finden Sie unter der [NuGet-Dokumentation](http://docs.microsoft.com/NuGet) und [Paket-Manager-UI](http://docs.microsoft.com/NuGet/Tools/Package-Manager-UI) Themen.  
+ Für erhöhte Portabilität und Freigabe von Erweiterungsprojekte können Sie die NuGet-Versionen die Verweisassemblys VS-SDK.  Diese Seiten sind verfügbar, auf [nuget.org](http://www.nuget.org) von veröffentlichten [VisualStudioExtensibility](http://www.nuget.org/profiles/VisualStudioExtensibility) und leicht zu Ihrem Projekt oder einer Projektmappe mithilfe von Visual Studio hinzugefügt werden **verweist auf / Verwalten von NuGet Pakete** Dialogfeld. Sie können einzelne Verweise auf bestimmte Erweiterbarkeit Assemblys hinzugefügt oder das VS-SDK verweist auf die Assemblys, die gleichzeitig mit dem VS-SDK [Meta-Paket](http://www.nuget.org/packages/VSSDK_Reference_Assemblies). Weitere Informationen zu NuGet finden Sie unter der [NuGet-Dokumentation](/NuGet) und [Paket-Manager-UI](/NuGet/Tools/Package-Manager-UI) Themen.  
   
  Wenn Sie die NuGet-Versionen die Verweisassemblys VS-SDK verwenden, muss ein anderer Benutzer das VS-SDK, um zu öffnen und erstellen Sie das Projekt zu installieren.  Die NuGet-Verweisassemblys und VS-SDK-Buildtools werden automatisch auf ihrem Computer für dieses Projekt installiert.  
   

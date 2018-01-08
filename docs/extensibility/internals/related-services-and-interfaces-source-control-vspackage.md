@@ -15,11 +15,12 @@ caps.latest.revision: "26"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d652db21fb98cbb0f06c2ac5ceec0f8f239beff6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 7d19c7e2560fafbf54257bf4c46303874bfc717b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="related-services-and-interfaces-source-control-vspackage"></a>Verknüpfte Dienste und Schnittstellen (Source Control VSPackage)
 Dieser Abschnitt enthält alle in der Quelle zu steuern, VSPackage-Schnittstellen in den [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]. Die Datenquellen-Steuerelements VSPackage implementiert einige dieser Schnittstellen und andere um Quellcodeverwaltungsaufgaben zu erreichen.  
@@ -39,7 +40,7 @@ Dieser Abschnitt enthält alle in der Quelle zu steuern, VSPackage-Schnittstelle
   
 -   Optional: die Entität kann diese Schnittstelle, um einen größeren Funktionsumfang bieten implementieren.  
   
-|Schnittstelle|Zweck|Implementiert durch|Implementieren?|  
+|Interface|Zweck|Implementiert durch|Implementieren?|  
 |---------------|-------------|--------------------|----------------|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>|Editoren rufen Sie diese Schnittstelle vor dem ändern oder eine Datei speichern. Die Datenquellen-Steuerelements VSPackage kann die Datei auschecken oder verweigern den Vorgang aus, schlägt das Auschecken rückgängig.|Datenquellen-Steuerelements VSPackage|Empfohlen|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>|Diese Schnittstelle bietet grundlegende Quellcodeverwaltungsfunktion für Projekte, wie z. B. registrieren und Aufheben der Registrierung für Projekte mit der quellcodeverwaltung und Bereitstellen von Unterstützung für grundlegende Source Control Symbole.|Datenquellen-Steuerelements VSPackage|Erforderlich|  

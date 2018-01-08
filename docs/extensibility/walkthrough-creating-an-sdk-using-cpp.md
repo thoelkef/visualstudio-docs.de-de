@@ -12,11 +12,12 @@ caps.latest.revision: "32"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bc30e3236f81f558f3794bb459f6da3edbdaa63d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 065d5b16e99ce7c1356f710ab2a6cc42bbd6cde4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-an-sdk-using-c"></a>Exemplarische Vorgehensweise: Erstellen einer SDKS mit C++
 In dieser exemplarischen Vorgehensweise wird gezeigt, wie eine systemeigene C++ Mathematikbibliothek SDK Paket das SDK als Visual Studio Extension (VSIX) zu erstellen und verwenden dieses dann zum Erstellen einer app. Die exemplarische Vorgehensweise ist in Schritte unterteilt:  
@@ -28,7 +29,7 @@ In dieser exemplarischen Vorgehensweise wird gezeigt, wie eine systemeigene C++ 
 -   [Eine Beispiel-app erstellen, die die Class-Bibliothek verwendet](../extensibility/walkthrough-creating-an-sdk-using-cpp.md#createSample)  
   
 ## <a name="prerequisites"></a>Erforderliche Komponenten  
- Um dieser exemplarischen Vorgehensweise folgen zu können, müssen Sie das Visual Studio SDK installieren. Weitere Informationen finden Sie unter [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
+ Um diese exemplarische Vorgehensweise befolgen zu können, müssen Sie das Visual Studio SDK installieren. Weitere Informationen finden Sie unter [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
   
 ##  <a name="createClassLibrary"></a>So erstellen den einheitlichen und Windows-Runtime-Bibliotheken  
   

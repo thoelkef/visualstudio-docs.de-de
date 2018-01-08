@@ -13,14 +13,15 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7dbfdffa02a4bca9f145a2f20e3d2af31b8bcd97
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 91201eb42d711a09caadad3ef6bf663b23d6c099
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="web-projects"></a>Webprojekte
-Ein Web-Projektsystem ist ein Projektsystem, das Webprojekte erstellt. Webprojekte erstellen wiederum Webanwendungen. Sie können eine Webseite mithilfe von herkömmlichen Programmiersprachen, z. B. Programmieren [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] oder [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)], zu erfassen und Verarbeiten von Informationen von einem Benutzer, in einer Datenbank zu speichern und usw.. Webseiten mit zugeordneten Codes werden als intelligente Webseiten bezeichnet.  
+Ein Web-Projektsystem ist ein Projektsystem, das Webprojekte erstellt. Webprojekte erstellen wiederum Webanwendungen. Sie können eine Webseite mithilfe von herkömmlichen Programmiersprachen, z. B. Programmieren [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] oder [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)], zu erfassen und Verarbeiten von Informationen von einem Benutzer, in einer Datenbank zu speichern und usw. Webseiten mit zugeordneten Codes werden als intelligente Webseiten bezeichnet.  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
  [Essentials](../../extensibility/internals/web-project-essentials.md)  

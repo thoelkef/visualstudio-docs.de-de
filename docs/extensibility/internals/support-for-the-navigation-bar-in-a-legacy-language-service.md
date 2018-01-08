@@ -15,11 +15,12 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 935ea7d9fde2872c952f79afaa95058e9f18d0a7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5e2d7ddfd4904923cbdea415fa5a0d2086cc071f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="support-for-the-navigation-bar-in-a-legacy-language-service"></a>Unterstützung für die Navigationsleiste in einen Legacy-Sprachdienst
 Die Navigationsleiste am oberen Rand der Editor-Ansicht zeigt die Typen und Member in der Datei an. Typen in der linken Dropdownliste angezeigt werden, und Elemente werden in der rechten Dropdownliste angezeigt. Wenn der Benutzer einen Typ auswählt, wird das Caretzeichen auf der ersten Zeile des Typs platziert. Wenn der Benutzer ein Element auswählt, wird das Caretzeichen auf der Definition des Elements eingefügt. Die Dropdown-Felder werden entsprechend die aktuelle Position des Caretzeichens aktualisiert.  

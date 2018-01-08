@@ -13,11 +13,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ea5169b3d74a77bbb079dab5b310a3b7ebbbeff0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 4f05a0b41a46adfee827f9cc1a36ab7bdd44cd0a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="source-control-plug-ins"></a>Datenquellen-Steuerelement-Plug-ins
 Der Referenzabschnitt Source Control-Plug-in SDK enthält die vollständige Benutzeroberfläche-Spezifikation, mit dem Quellcode-Verwaltungssysteme mit integriert werden kann [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Gibt an, die Syntax und Semantik der verschiedenen Funktionen und Daten, die die Datenquellen-Steuerelements, das plug-in implementieren muss, für die Kommunikation mit dem [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] integrierten Entwicklungsumgebung (IDE).  

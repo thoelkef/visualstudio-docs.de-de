@@ -13,11 +13,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 72460f39cf63346106c2ccd81dc9ab16f8af78b9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 51735bf0f46e5a1ead6f989a8e75745ebc8e6e35
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="template-policy-and-the-properties-window"></a>Die Richtlinie und des Eigenschaftenfensters
 Wenn ein Projekt in einem Enterprise-Vorlagen-Projekt enthalten ist, kann diese Enterprise-Vorlagenprojekt Richtlinie erzwingen. Die Richtlinie wird ein einschränkenden System, das zum Festlegen der Standardwerte für Eigenschaften, Eigenschaften ausblenden, Hinzufügen von Eigenschaften und usw. verwendet werden kann.  

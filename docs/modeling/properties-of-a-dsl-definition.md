@@ -12,11 +12,12 @@ caps.latest.revision: "13"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 7a8fc0474f624785a47a4ba9f970b5a1ca54dd9c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 289c95ebbbd294050b1e5c7cc95656e7ab5eadc0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="properties-of-a-dsl-definition"></a>Eigenschaften einer DSL-Definition
 DslDefinition Eigenschaften definieren *einer domänenspezifischen Sprache* Definitionseigenschaften z. B. versionsnummerierung. DslDefinition Eigenschaften werden in der **Eigenschaften** Fenster, wenn Sie auf einen offenen Bereich des Diagramms in die *einer domänenspezifischen Sprachdesigner*.  
@@ -30,7 +31,7 @@ DslDefinition Eigenschaften definieren *einer domänenspezifischen Sprache* Defi
 |Zugriffsmodifizierer|Bestimmt, ob der Zugriffsmodifizierer für die Domänenklasse öffentliche oder eine interne ist.|public|  
 |Benutzerdefinierte Attribute|Benutzerdefinierte definiert die Attribute für die Domänenklasse.<br /><br /> **Hinweis** verwenden Sie die Schaltfläche zum Durchsuchen, um ein Attribut hinzuzufügen.|\<keine >|  
 |Firmenname|Der Name des aktuellen Unternehmensnamens in der systemregistrierung.|Aktuelle Firmenname|  
-|Name|Der Name dieser Domäne-Klasse.|Aktuelle name|  
+|name|Der Name dieser Domäne-Klasse.|Aktuelle name|  
 |Namespace|Der Namespace zugeordnet ist diese Domänenklasse.|Aktuellen namespace|  
 |Paket-Guid|Die Guid für die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Paket für diese DSL generiert.|\<keine >|  
 |Paket-Namespace|Der Namespace für die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Paket für diese DSL generiert.|\<keine >|  

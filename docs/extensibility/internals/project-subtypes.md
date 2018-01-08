@@ -15,11 +15,12 @@ caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 84d2700e1dfb5d66fb2df6376db9e0ce5352ad4e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 21d7f013989607f7f5416a57829bc9b2b29b61d2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="project-subtypes"></a>Projekt Untertypen
 Projekt Untertypen ermöglichen das Anpassen oder das Verhalten der Projektsysteme des flavor [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Anpassungen umfassen das Speichern von zusätzlicher Daten in der Projektdatei, hinzufügen oder Filtern von Elementen in der **neues Element hinzufügen** (Dialogfeld), die steuern, wie Assemblys gedebuggt und bereitgestellt, und erweitern das Projekt **Eigenschaft Seiten** (Dialogfeld). VSPackages implementieren Projekt Untertypen mit COM Aggregation.  

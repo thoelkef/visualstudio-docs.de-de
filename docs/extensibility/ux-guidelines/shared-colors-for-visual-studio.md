@@ -12,11 +12,12 @@ caps.latest.revision: "5"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ccc530a741aaefd7e1faf1bd5f8974e27d9c7fb5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 45bbff985a45ba4d04945ec95587c4c6c9cc448c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="shared-colors-for-visual-studio"></a>Konsistente Farben für Visual Studio
 Wenn Sie beim Entwerfen Benutzeroberfläche mit gängigen Visual Studio-Shell-Elementen, Sie möchten oder Ihr Benutzeroberflächenelement konsistent mit ähnlichen Features sein soll, verwenden Sie Tokennamen Paketdefinitionsdateien, um Farben auszuwählen und zuzuweisen. Dadurch wird sichergestellt, dass Ihre Benutzeroberfläche mit der gesamten Visual Studio-Umgebung konsistent ist und automatisch angepasst wird, wenn Designs hinzugefügt oder aktualisiert werden.  
@@ -302,7 +303,7 @@ Spaltenheader setzen sich aus Hintergrund, Rahmen, Titeltext und einer optionale
 | --- | --- |
 | Hintergrund | Transparent |
 | Vordergrund (Text) | `Environment.CommandBarTextActive` |
-| Rahmen | Keine |
+| Rahmen | Keiner |
 
 **Liste der Elemente anzeigen: Zustand "aktiv"**
 
@@ -310,7 +311,7 @@ Spaltenheader setzen sich aus Hintergrund, Rahmen, Titeltext und einer optionale
 | --- | --- |
 | Hintergrund | `TreeView.SelectedItemActive` |
 | Vordergrund (Text) | `TreeView.SelectedItemActiveText` |
-| Rahmen | Keine |
+| Rahmen | Keiner |
 
 **Liste der Elemente anzeigen: inaktiver Zustand**
 
@@ -318,7 +319,7 @@ Spaltenheader setzen sich aus Hintergrund, Rahmen, Titeltext und einer optionale
 | --- | --- |
 | Hintergrund | `TreeView.SelectedItemInactive` |
 | Vordergrund (Text) | `TreeView.SelectedItemInactiveText` |
-| Rahmen | Keine |  
+| Rahmen | Keiner |  
 
 ### <a name="ui-text"></a>Der Benutzeroberflächentext
 
@@ -682,7 +683,7 @@ Ein Suchfeld kann einen von mehreren Zuständen aufweisen, von denen sich einige
 | --- | --- |
 | Hintergrund | `SearchControl.Selection` |
 | Vordergrund (Text) | `SearchControl.FocusedBackground` |
-| Rahmen | Keine |
+| Rahmen | Keiner |
 | Trennzeichen | `SearchControl.FocusedDropDownSeparator` |
 
 **Eingabefeld für deaktivierte suchen**
@@ -702,7 +703,7 @@ Ein Suchfeld kann einen von mehreren Zuständen aufweisen, von denen sich einige
 
 | Element | Tokenname: Category.color |
 | --- | --- |
-| Hintergrund | Keine |
+| Hintergrund | Keiner |
 | Vordergrund (Glyphe "Suchen") | `SearchControl.SearchGlyph` |
 | Vordergrund (Glyphe "Beenden") | `SearchControl.StopGlyph` |
 | Vordergrund (Glyphe "Löschen") | `SearchControl.ClearGlyph` |
@@ -736,9 +737,9 @@ Ein Suchfeld kann einen von mehreren Zuständen aufweisen, von denen sich einige
 
 | Element | Tokenname: Category.color |
 | --- | --- |
-| Hintergrund | Keine |
+| Hintergrund | Keiner |
 | Vordergrund (Glyphe) | `SearchControl.ActionButtonDisabledGlyph` |
-| Rahmen | Keine |
+| Rahmen | Keiner |
 
 **Dropdownschaltfläche mit Fokus suchen**
 
@@ -776,7 +777,7 @@ Ein Suchfeld kann einen von mehreren Zuständen aufweisen, von denen sich einige
 
 | Element | Tokenname: Category.color |
 | --- | --- |  
-| Hintergrund | Keine |
+| Hintergrund | Keiner |
 | Vordergrund (Glyphe) | `SearchControl.DisabledDownButtonGlyph` |
 | Rahmen | Keiner |
 
@@ -876,7 +877,7 @@ Mehrere Toolfenster, einschließlich Projektmappen-Explorer, Server-Explorer und
 | Hintergrund | `TreeView.Background` |
 | Vordergrund (Text) | `TreeView.Background` |
 | Vordergrund (Glyphe) | `TreeView.Glyph` |
-| Rahmen | Keine |
+| Rahmen | Keiner |
 
 **Strukturelement-Ansicht: Zeigen Sie mit Status**
 
@@ -887,7 +888,7 @@ Mehrere Toolfenster, einschließlich Projektmappen-Explorer, Server-Explorer und
 | Hintergrund | `TreeView.Background` |  
 | Vordergrund (Text) | `TreeView.Background` |
 | Vordergrund (Glyphe) | `TreeView.GlyphMouseOver` |
-| Rahmen | Keine |
+| Rahmen | Keiner |
 
 **Strukturelement-Ansicht: Ziehen Sie einen failoverstatus**
 
@@ -898,7 +899,7 @@ Mehrere Toolfenster, einschließlich Projektmappen-Explorer, Server-Explorer und
 | Hintergrund | `TreeView.DragOverItem` |
 | Vordergrund (Text) | `TreeView.DragOverItem` |
 | Vordergrund (Glyphe) | `TreeView.DragOverItemGlyph` |
-| Rahmen | Keine |
+| Rahmen | Keiner |
 
 **Strukturelement-Ansicht: ausgewählt, mit Fokus Zustand**
 
@@ -920,7 +921,7 @@ Mehrere Toolfenster, einschließlich Projektmappen-Explorer, Server-Explorer und
 | Hintergrund | `TreeView.SelectedItemInactive` |
 | Vordergrund (Text) | `TreeView.SelectedItemInactive` |
 | Vordergrund (Glyphe) | `TreeView.SelectedItemInactiveGlyph` |
-| Rahmen | Keine |
+| Rahmen | Keiner |
 
 **Strukturelement-Ansicht: gezeigt, ausgewählt und mit Fokus Zustand**
 
@@ -942,7 +943,7 @@ Mehrere Toolfenster, einschließlich Projektmappen-Explorer, Server-Explorer und
 | Hintergrund | `TreeView.SelectedItemInactive` |
 | Vordergrund (Text) | `TreeView.SelectedItemInactive` |
 | Vordergrund (Glyphe) | `TreeView.SelectedItemActiveGlyphMouseOver` |
-| Rahmen | Keine |
+| Rahmen | Keiner |
 
 ## <a name="shell-appearance"></a>Shell-Darstellung
 
@@ -1011,7 +1012,7 @@ Der Manifest-Designer dient dazu, die Bearbeitung der Manifestdatei in Windows 8
 | Element | Tokenname: Category.color |
 | --- | --- |
 | Hintergrund | `ManifestDesigner.TabActive` |
-| Rahmen | Keine |
+| Rahmen | Keiner |
 
 **Beschreibung der ausgewählten Bereich der Manifest-Designers: Standardstatus**
 
@@ -1068,10 +1069,10 @@ Menütitel bestehen aus einem Hintergrund, einem Rahmen und dem Titeltext sowie 
 
 | Element | Tokenname: Category.color |
 | --- | --- |
-| Hintergrund | Keine |
+| Hintergrund | Keiner |
 | Vordergrund (Text) | `Environment.CommandBarTextActive` |
 | Vordergrund (Glyphe) | `Environment.CommandBarMenuGlyph` |
-| Rahmen | Keine |
+| Rahmen | Keiner |
 
 **Menütitel: Zeigen Sie mit Status**  
 
@@ -1108,7 +1109,7 @@ Menütitel bestehen aus einem Hintergrund, einem Rahmen und dem Titeltext sowie 
 | Hintergrund | Keiner |
 | Vordergrund (Text) | `Environment.CommandBarTextInactive` |
 | Vordergrund (Glyphe) | `Environment.CommandBarTextInactive` |
-| Rahmen | Keine |
+| Rahmen | Keiner |
 
 #### <a name="menu-items"></a>Menüelemente
 Ein einzelnes Menüelement besteht aus dem Menütext und optional einem Symbol, einem Kontrollkästchen oder einer Untermenü-Glyphe. Hintergrund- und Textfarbe ändern sich, wenn Sie darauf zeigen. Dieses Farbtoken ist eine Kombination aus Hintergrund-/Vordergrundfarbe.  
@@ -1410,7 +1411,7 @@ Eine Befehlsleistengruppe besteht aus einer Gruppe verwandter Befehlsleisten-Ste
 
 | Element | Tokenname: Category.color |
 | --- | --- |
-| Hintergrund | Keine |
+| Hintergrund | Keiner |
 | Vordergrund (Glyphe) | `Environment.ComboBoxDisabledGlyph` |
 
 ####  <a name="BKMK_CommandDropDown"></a>Befehlsleiste Dropdowns
@@ -1442,7 +1443,7 @@ Eine Befehlsleistengruppe besteht aus einer Gruppe verwandter Befehlsleisten-Ste
 
 | Element | Tokenname: Category.color |
 | --- | --- |
-| Hintergrund | Keine |
+| Hintergrund | Keiner |
 | Vordergrund (Glyphe) | `Environment.DropDownGlyph` |
 
 **Befehlsleiste Dropdown-Liste: Standardstatus**
@@ -1523,7 +1524,7 @@ Eine Befehlsleistengruppe besteht aus einer Gruppe verwandter Befehlsleisten-Ste
 
 | Element | Tokenname: Category.color |
 | --- | --- |
-| Hintergrund | N/V |
+| Hintergrund | Nicht zutreffend |
 | Vordergrund (Glyphe) | `Environment.DropDownDisabledGlyph` |
 
 #### <a name="command-bar-split-buttons"></a>Befehlsleiste unterteilte Schaltflächen
@@ -1916,7 +1917,7 @@ Visual Studio unterstützt Tags, mit deren Hilfe ein Benutzer suchbare Schlüsse
 
 | Element | Tokenname: Category.color |
 | --- | --- |  
-| Hintergrund | N/V |
+| Hintergrund | Nicht zutreffend |
 | Vordergrund (Glyphe) | `Tag.TagHoverGlyph` |
 
 **Schließen (&times;) tag Glyphe: Zeigen Sie mit Status**
@@ -1945,7 +1946,7 @@ Visual Studio unterstützt Tags, mit deren Hilfe ein Benutzer suchbare Schlüsse
 
 | Element | Tokenname: Category.color |
 | --- | --- |
-| Hintergrund | N/V |
+| Hintergrund | Nicht zutreffend |
 | Vordergrund (Glyphe) | `Tag.TagSelectedGlyph` |
 
 **Ausgewählte Tag mit schließen (&times;) Glyphe: Zeigen Sie mit Status**  
@@ -2033,7 +2034,7 @@ Die Toolbox ist eine der am häufigsten verwendeten allgemeinen Toolfenster in V
 | --- | --- |
 | Hintergrund | `Environment.ToolboxContent`<br />(Rubriken) |
 | Hintergrund | `Environment.ToolWindowBackground`<br />(Einzelne Elemente oder das gesamte Fenster, wenn keine Steuerelemente verfügbar sind) |
-| Rahmen | Keine |
+| Rahmen | Keiner |
 | Vordergrund (Glyphe) | `Environment.ToolboxContent` |
 | Vordergrund (Text) | `Environment.ToolboxContent` |
 
@@ -2044,7 +2045,7 @@ Die Toolbox ist eine der am häufigsten verwendeten allgemeinen Toolfenster in V
 | Element | Tokenname: Category.color |
 | --- | --- |
 | Hintergrund | `Environment.ToolboxContentMouseOver`<br />(Nur einzelne Elemente) |
-| Rahmen | Keine |
+| Rahmen | Keiner |
 | Vordergrund (Text) | `Environment.ToolboxContentMouseOver`<br />(Nur einzelne Elemente) |
 
 **Toolbox Knoten ausgewählt: mit Fokus Zustand**
@@ -2069,7 +2070,7 @@ Die Toolbox ist eine der am häufigsten verwendeten allgemeinen Toolfenster in V
 | Element | Tokenname: Category.color |
 | --- | --- |
 | Hintergrund | `TreeView.SelectedItemInactive`<br />Von [Strukturansicht](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView) Kategorie |
-| Rahmen | Keine |
+| Rahmen | Keiner |
 | Vordergrund (Glyphe) | `TreeView.SelectedItemInactive`<br />Von [Strukturansicht](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView) Kategorie |
 | Vordergrund (Text) | `TreeView.SelectedItemInactive`<br />Von [Strukturansicht](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView) Kategorie |
 
@@ -2118,7 +2119,7 @@ Der Rahmen der Titelleiste wird nicht echter Rahmen, es ist eine starke Linie am
 
 | Element | Tokenname: Category.color |
 | --- | --- |
-| Hintergrund | N/V |
+| Hintergrund | Nicht zutreffend |
 | Vordergrund (Glyphe) | `Environment.ToolWindowButtonActiveGlyph` |
 | Rahmen | Nicht zutreffend |
 
@@ -2128,7 +2129,7 @@ Der Rahmen der Titelleiste wird nicht echter Rahmen, es ist eine starke Linie am
 
 | Element | Tokenname: Category.color |
 | --- | --- |
-| Hintergrund | N/V |
+| Hintergrund | Nicht zutreffend |
 | Vordergrund (Glyphe) | `Environment.ToolWindowButtonInactiveGlyph` |
 | Rahmen | Nicht zutreffend |
 

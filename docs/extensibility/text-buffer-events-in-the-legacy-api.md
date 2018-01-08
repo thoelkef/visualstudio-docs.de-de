@@ -13,21 +13,22 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5118fe29463368bcca90e21830e1418d41c18339
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 7e7847cdca2065cadd6adaf0d4b3e6ea10444725
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="text-buffer-events-in-the-legacy-api"></a>Text-Puffer-Ereignisse in die Legacy-API
 Die TextBuffer-Objekt gibt verschiedene Ereignisse, mit die verschiedene Situationen reagieren können.  
   
- Wenn Sie die legacy-API verwenden, sollten Sie die folgenden Schnittstellen implementieren, um Benachrichtigungen zu Änderungen an den Textpuffer. Bereitstellen von Schnittstellen, mit dem Text-Puffer mithilfe der `IConnectionPointContainer` Schnittstelle im Text-Puffer zum Empfangen von Benachrichtigungen zu Zeile ändert, aus dem Puffer. Weitere Informationen finden Sie unter [Vorgehensweise: Registrieren Sie sich für Text-Puffer-Ereignisse mit der Legacy-API](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md). Im Fall von `IVsTextStreamEvents` oder `IVsTextLinesEvents` Schnittstellen, Änderungen in zurückgegeben werden entweder ein- oder zweidimensionalen Koordinaten, bzw..  
+ Wenn Sie die legacy-API verwenden, sollten Sie die folgenden Schnittstellen implementieren, um Benachrichtigungen zu Änderungen an den Textpuffer. Bereitstellen von Schnittstellen, mit dem Text-Puffer mithilfe der `IConnectionPointContainer` Schnittstelle im Text-Puffer zum Empfangen von Benachrichtigungen zu Zeile ändert, aus dem Puffer. Weitere Informationen finden Sie unter [Vorgehensweise: Registrieren Sie sich für Text-Puffer-Ereignisse mit der Legacy-API](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md). Im Fall von `IVsTextStreamEvents` oder `IVsTextLinesEvents` Schnittstellen, Änderungen in zurückgegeben werden entweder ein- oder zweidimensionalen Koordinaten, bzw.  
   
 ## <a name="text-buffer-interfaces"></a>Text-Puffer-Schnittstellen  
  Es folgen die von der TextBuffer-Objekt implementierten Schnittstellen.  
   
-|Schnittstelle|Beschreibung|  
+|Interface|Beschreibung|  
 |---------------|-----------------|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompoundAction>|Ermöglicht die Erstellung von zusammengesetzten Aktivitäten (Aktivitäten, die in einer einzelnen Rückgängig/Wiederholen-Einheit gruppiert werden).|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData>|Aktiviert die Persistenz der Dokumentdaten, die von den Textpuffer verwaltet werden.|  
@@ -41,7 +42,7 @@ Die TextBuffer-Objekt gibt verschiedene Ereignisse, mit die verschiedene Situati
 ## <a name="text-buffer-event-interfaces"></a>Text-Puffer Ereignisschnittstellen  
  Im folgenden werden die Schnittstellen für die ereignisbenachrichtigung für Text-Puffer.  
   
-|Schnittstelle|Beschreibung|  
+|Interface|Beschreibung|  
 |---------------|-----------------|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferEvents>|Benachrichtigt Clients, wenn ein neue Sprachdienst mit einem Textpuffer zugewiesen wird.|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferDataEvents>|Benachrichtigt Clients, wenn Sie ein Textpuffer initialisiert ist und bei an Daten in den Textpuffer Änderungen.|  

@@ -16,11 +16,12 @@ caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5d5d251c414c955480d3a7e4289935d913fa470c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5c05bbabc77de22edc71fb05a5962138a78d11a9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="implementing-syntax-coloring"></a>Implementieren die Farben für Syntax
 Wenn der Sprachdienst syntaxhervorhebung bereitstellt, wird der Parser konvertiert eine Textzeile in ein Array von Elementen färbbare und Tokentypen entspricht diese färbbare Elemente zurückgegeben. Der Parser sollte Tokentypen zurückgeben, die auf eine Liste von färbbare Elemente gehören. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Zeigt jede färbbare Element im Codefenster nach den Attributen, die das Colorizer-Objekt dem entsprechenden Tokentyp zugewiesen.  

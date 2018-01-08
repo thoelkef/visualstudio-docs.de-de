@@ -16,11 +16,12 @@ caps.latest.revision: "22"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 9dfcba23b9c8df3bbd62a0ef4dd0c4d98f578514
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 32d2fa502a5eca166ccca9fbc87ceb632d7617ed
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>Laufzeittextgenerierung mithilfe von T4-Textvorlagen
 Sie können Zeichenfolgen, die in Ihrer Anwendung zur Laufzeit generieren, mit [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Laufzeit-Textvorlagen. Der Computer, auf dem die Anwendung führt, keine haben [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Common Language Runtime-Vorlagen sind manchmal "vorverarbeitete Textvorlagen" bezeichnet, da zum Zeitpunkt der Kompilierung, die Vorlage Code generiert, die zur Laufzeit ausgeführt wird.  

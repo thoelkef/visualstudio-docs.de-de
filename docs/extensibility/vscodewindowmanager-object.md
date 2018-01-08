@@ -16,18 +16,19 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0c7b8c394be33f9319710673bc0738c9daad378b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 40e2f497bcb7bccd82853aa8f5043b1babb72bd7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="vscodewindowmanager-object"></a>VSCodeWindowManager-Objekt
 Der Sprachdienst den Fenster-Manager implementiert und ist zuständig für das Verwalten von randsteuerelementen (z. B. die Dropdownliste Strich). Weitere Informationen finden Sie unter [Codefenster über die Legacy-API anpassen](../extensibility/customizing-code-windows-by-using-the-legacy-api.md).  
   
  Die folgende Tabelle enthält die Schnittstellen der `VSCodeWindowManager` Objekt.  
   
-|Schnittstelle|Beschreibung|  
+|Interface|Beschreibung|  
 |---------------|-----------------|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager>|Ermöglicht das Zusatzelemente (z. B. Dropdownlisten), hinzugefügt oder aus einem Fenster des Code entfernt werden.|  
   

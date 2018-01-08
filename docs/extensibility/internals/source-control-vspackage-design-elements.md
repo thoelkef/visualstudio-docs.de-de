@@ -13,11 +13,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c78e6a8a93a89d39434552694b5d969698bea45e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 234346aba360d70d3bbc673067d2634a5112d0f6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="source-control-vspackage-design-elements"></a>Source Control VSPackage Entwurfselemente
 Die Themen in diesem Abschnitt beschreiben die Struktur der quellcodeverwaltung, VSPackage, für die enge Integration implementieren muss. Zudem werden die Schnittstellen aufgelistet und können Dienste, die die Quelle VSPackage steuern, implementieren und die Schnittstellen und Dienste können von anderen Datenquellen-Steuerelements VSPackage [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Komponenten zur Unterstützung der seine Quelle zu steuern, Modell- und Funktionalität.  

@@ -16,11 +16,12 @@ caps.latest.revision: "28"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0089e5a8bf85ba352788767c821d95f41ca60eec
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 6102a5bb6298cd6403285e3d36842424b0be3412
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="support-for-code-snippets-in-a-legacy-language-service"></a>Unterstützung für Codeausschnitte in einen Legacy-Sprachdienst
 Ein Codeausschnitt ist ein Teil des Codes, der in die Quelldatei eingefügt wird. Des Codeausschnitts selbst finden Sie eine XML-basierte Vorlage mit einem Satz von Feldern. Diese Felder werden hervorgehoben, nachdem der Codeausschnitt eingefügt und kann haben unterschiedliche Werte je nach Zusammenhang, in der der Codeausschnitt eingefügt wird. Sofort, nachdem der Codeausschnitt eingefügt wird, kann der Sprachdienst den Ausschnitt formatieren.  

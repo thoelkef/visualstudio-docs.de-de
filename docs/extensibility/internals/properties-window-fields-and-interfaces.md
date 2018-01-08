@@ -13,11 +13,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a4dd37d33230be758bd5a5adf6f5e10d5a978800
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 1f238cceb189723e3ec10fbf8db4abbd9675ae21
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="properties-window-fields-and-interfaces"></a>Felder für die Anwendungseigenschaften Fenster und Schnittstellen
 Das Modell für die Auswahl, um zu bestimmen, welche Informationen angezeigt werden, in der **Eigenschaften** Fenster basiert darauf, dass das Fenster, in der IDE den Fokus besitzt. Jedes Fenster und das Objekt in das ausgewählte Fenster kann ihre Auswahl Context-Objekt an den Kontext der globalen Auswahl abgelegt haben. Die Umgebung aktualisiert den globalen Auswahlkontext mit Werten aus einem Fensterrahmen, wenn das Fenster den Fokus besitzt. Wenn der Fokus geändert wird, gilt dies auch die Auswahlkontext.  

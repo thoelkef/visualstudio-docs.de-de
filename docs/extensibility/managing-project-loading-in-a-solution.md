@@ -13,11 +13,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b28db42e17e95ea7c354f5ba4d7b0c231c2d2fe5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: a2be2c75704646bab50f89377d960d44f6fa14f1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="managing-project-loading-in-a-solution"></a>Verwalten von Projekt laden in einer Projektmappe
 Visual Studio-Projektmappen können eine große Anzahl von Projekten enthalten. Das Standardverhalten für Visual Studio wird beim Laden aller Projekte in einer Projektmappe zum Zeitpunkt der Projektmappe geöffnet ist und nicht auf ermöglicht dem Benutzer die Projekte zugreifen, bis alle von ihnen geladen wurden. Wenn die während des Ladevorgangs Projekt mehr als zwei Minuten dauert, wird eine Statusanzeige angezeigt, die Anzahl der geladenen Projekte und die Gesamtzahl der Projekte. Der Benutzer kann Projekte entladen, während in einer Projektmappe mit mehreren Projekten arbeiten, aber diese Prozedur umfasst einige Nachteile: die entladen Projekte werden nicht als Teil eines Befehls für die Projektmappe neu erstellen erstellt, und IntelliSense Beschreibungen von Typen und Member von "geschlossen" Projekte werden nicht angezeigt.  
@@ -114,4 +115,4 @@ pSLMgrSupport.SetProjectLoadPriority(guidProjectID, (uint)_VSProjectLoadPriority
 -   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution4.EnsureProjectsAreLoaded%2A>: das Aufrufen dieser Methode erzwingt, dass das Projekt im `guidProjectID` geladen, bevor die Methode zurückgegeben.  
   
 > [!NOTE]
->  . Standardmäßig nur die Projekte, die der Anforderung haben laden und Hintergrund laden Prioritäten werden geladen, aber wenn die <xref:Microsoft.VisualStudio.Shell.Interop.__VSBSLFLAGS> Flag wird an die Methode übergeben, werden alle Projekte außer diejenigen, die markiert sind, um explizit laden geladen.
+>  sein. Standardmäßig nur die Projekte, die der Anforderung haben laden und Hintergrund laden Prioritäten werden geladen, aber wenn die <xref:Microsoft.VisualStudio.Shell.Interop.__VSBSLFLAGS> Flag wird an die Methode übergeben, werden alle Projekte außer diejenigen, die markiert sind, um explizit laden geladen.

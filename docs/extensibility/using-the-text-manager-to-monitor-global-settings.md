@@ -15,11 +15,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f9687e4f0be16fb42f13c6f9dd20a2cb39be50cd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 00716142e7f91d01fbc81c5d25b378065cb44f92
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-the-text-manager-to-monitor-global-settings"></a>Verwenden die Text-Manager zum Überwachen von globaler Einstellungen
 Wenn Sie einen Editor Core implementieren, müssen Sie die Änderungen an globalen Einstellungen sind überwachen, da diese Änderungen auf Ihre Instanz des Editors auswirken können. Sie können die Änderungen durch Überwachen von Ereignissen, die ausgelöst wird, durch den TextManager nachverfolgen. Beispielsweise, wenn Sie eine globale Einstellung für die Darstellung oder Verhalten einer Komponente in die Core-Editor, z. B. seine dokumentdatenobjekt angeben Text-Manager speichert diese Informationen und wird für alle betroffenen Clients kommuniziert.  

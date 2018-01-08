@@ -13,11 +13,12 @@ caps.latest.revision: "33"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c30ed08cc4c62b033f86dfd71e2276bd8be8fbad
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 7e62f1f3cac8f279dedbc79f283b908119d66ff2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="language-service-and-editor-extension-points"></a>Sprachdienst und Erweiterungspunkten-Editor
 Der Editor stellt Erweiterungspunkte, die Sie als Managed Extensibility Framework (MEF) Komponenten, z. B. die meisten Language Service-Funktionen erweitern können. Dies sind die haupterweiterung Punkt Kategorien:  

@@ -12,11 +12,12 @@ caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0fad2e8d63b0005addab20756501d18fe872b4c3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 139b51fbf0ede7ea439d2308a0d03afe7ba617ec
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="application-patterns-for-visual-studio"></a>Anwendungsmuster für Visual Studio
 ##  <a name="BKMK_WindowInteractions"></a>Fenster Interaktionen  
@@ -139,7 +140,7 @@ Beispiele für Toolfenster navigierbar Liste sind im Projektmappen-Explorer und 
 | Ausgabe | Wenn Sie Text Ereignisse oder Status deklariert haben, kann das Fenster "Ausgabe" verwendet werden. |  
 | Arbeitsspeicher ||  
 | Haltepunkte ||  
-| Wird ausgeführt ||  
+| Running ||  
 | Dokumente ||  
 | Aufrufliste ||  
 | Locals ||  
@@ -400,7 +401,7 @@ Verwenden Sie keine Zugriffstasten für **OK**, **"Abbrechen"**, oder **Hilfe** 
   
 | Schaltflächenname | Tastenkombination |  
 | --- | --- |  
-| OK | Eingabe |  
+| OK | EINGABETASTE |  
 | Abbrechen | Esc |  
 | Hilfe | F1 |  
   

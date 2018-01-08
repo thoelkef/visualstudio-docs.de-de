@@ -16,11 +16,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ed049293c50fc59c7f6541a3b4a4cc58c6bd5a7b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 060823a04127480ef8de387200425a34c6ef1178
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="upgrading-projects"></a>Aktualisieren von Projekten
 Ändert eine Version der in das Projektmodell [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zur nächsten erfordern, dass Projekte und Projektmappen aktualisiert werden, sodass sie auf die neuere Version ausgeführt werden können. Die [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] stellt Schnittstellen, die zum Implementieren von upgradeunterstützung in Ihren eigenen Projekten verwendet werden können.  
@@ -50,7 +51,7 @@ ms.lasthandoff: 10/31/2017
 >  Die <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject%2A> Methode bietet keine SVsUpgradeLogger-Dienst. Dieser Dienst abgerufen werden kann, durch den Aufruf <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A>.  
   
 ## <a name="best-practices"></a>Bewährte Methoden  
- Verwenden der <xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave> Dienst zum Überprüfen, ob Sie können vor der Bearbeitung eine Datei bearbeiten, und vor dem Speichern speichern können. Dies hilft Ihrer Sicherung aus, und aktualisieren Implementierungen behandeln, Projektdateien in der quellcodeverwaltung, Dateien mit unzureichenden Berechtigungen usw..  
+ Verwenden der <xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave> Dienst zum Überprüfen, ob Sie können vor der Bearbeitung eine Datei bearbeiten, und vor dem Speichern speichern können. Dies hilft Ihrer Sicherung aus, und aktualisieren Implementierungen behandeln, Projektdateien in der quellcodeverwaltung, Dateien mit unzureichenden Berechtigungen usw.  
   
  Verwenden der <xref:Microsoft.VisualStudio.Shell.Interop.SVsUpgradeLogger> service in allen Phasen der Sicherung und aktualisieren, um Informationen zu den Erfolg oder Misserfolg des Upgradevorgangs bereitzustellen.  
   

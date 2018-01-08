@@ -17,17 +17,18 @@ caps.latest.revision: "54"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e3f8eaa704dca0b939665e900e74fc3cb5120307
-ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
+ms.workload: vssdk
+ms.openlocfilehash: 28a555f2ab6e907a54cfb88d57ee09f5f47771ab
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-basic-isolated-shell-application"></a>Exemplarische Vorgehensweise: Erstellen einer grundlegenden Isolated Shell-Anwendung
 Diese exemplarische Vorgehensweise zeigt, wie eine isolierte Shell-Lösung erstellen, Anpassen des Toolfensters Info und ein Setupprogramm erstellen, die die isolierte Shell installiert.  
   
 ## <a name="prerequisites"></a>Erforderliche Komponenten  
- Um dieser exemplarischen Vorgehensweise folgen zu können, müssen Sie das Visual Studio SDK installieren. Weitere Informationen finden Sie unter [Visual Studio SDK](../extensibility/visual-studio-sdk.md). Um die isolierte Shell bereitstellen zu können, müssen Sie auch das Visual Studio Shell (isoliert) Redistributable Package verwenden.  
+ Um diese exemplarische Vorgehensweise befolgen zu können, müssen Sie das Visual Studio SDK installieren. Weitere Informationen finden Sie unter [Visual Studio SDK](../extensibility/visual-studio-sdk.md). Um die isolierte Shell bereitstellen zu können, müssen Sie auch das Visual Studio Shell (isoliert) Redistributable Package verwenden.  
   
 ## <a name="creating-an-isolated-shell-solution"></a>Erstellen einer isolierten Shell-Lösung  
  In diesem Abschnitt wird gezeigt, wie die Visual Studio Shell Isolated Projektvorlage zum Erstellen einer isolierten Shell-Lösung verwenden. Die Lösung enthält die folgenden Projekte:  
@@ -65,7 +66,7 @@ Diese exemplarische Vorgehensweise zeigt, wie eine isolierte Shell-Lösung erste
   
 3.  Um das Symbol "Anwendung" zu ändern, kopieren Sie ein anderes Symbol in das Verzeichnis \MyVSShellStub\MyVSShellStub\MyVSShellStub\. Benennen Sie die vorhandene ApplicationIcon.ico-Datei in ApplicationIcon1.ico. Benennen Sie die neue Datei in ApplicationIcon.ico.  
   
-4.  Erstellen Sie die Lösung und beginnen Sie mit dem Debuggen. Isolierte Shell wird die IDE angezeigt. Die Titelleiste wurde das neue Symbol neben den Wörtern **Fabrikam Musik Editor**.  
+4.  Erstellen Sie die Projektmappe, und beginnen Sie mit dem Debuggen. Isolierte Shell wird die IDE angezeigt. Die Titelleiste wurde das neue Symbol neben den Wörtern **Fabrikam Musik Editor**.  
   
 ## <a name="customizing-the-default-web-browser-home-page"></a>Anpassen der standardmäßig Web-Browser-Startseite  
  In diesem Abschnitt wird gezeigt, wie die Standardstartseite der Ändern der **Webbrowser** Fenster durch Ändern der Paketdefinitionsdatei.  
@@ -76,7 +77,7 @@ Diese exemplarische Vorgehensweise zeigt, wie eine isolierte Shell-Lösung erste
   
 2.  Das MyVSShellStub-Projekt neu.  
   
-3.  Erstellen Sie die Lösung und beginnen Sie mit dem Debuggen.  
+3.  Erstellen Sie die Projektmappe, und beginnen Sie mit dem Debuggen.  
   
 4.  In **Ansicht > Weitere Fenster**, klicken Sie auf **Webbrowser**. Die **Webbrowser** Fenster zeigt die Startseite "Microsoft Corporation".  
   

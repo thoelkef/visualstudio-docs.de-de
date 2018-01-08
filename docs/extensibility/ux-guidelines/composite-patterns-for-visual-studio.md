@@ -12,11 +12,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f6ce0fccf3a957edfdf732ce3ea462bef26c5a0c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: a751bcc54fe53f9c9582dab71e2f393e885d1480
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="composite-patterns-for-visual-studio"></a>Zusammengesetzte Muster für Visual Studio
 Zusammengesetzte Muster kombinieren Interaktion und Entwurf Elemente in unterschiedlichen Konfigurationen. Die wichtigsten zusammengesetzte Muster in Visual Studio im Hinblick auf Konsistenz gehören:  
@@ -351,7 +352,7 @@ Zusammengesetzte Muster kombinieren Interaktion und Entwurf Elemente in untersch
 |Strg + Alt + Minuszeichen ()|Verringert den Zoomfaktor durch eine Ebene.|  
 |Strg + Alt + Pluszeichen|Erhöht den Zoomfaktor durch eine Ebene.|  
 |UMSCHALT oder STRG|Fügt das Objekt der Auswahlgruppe hinzu. STRG können Sie Objekte einzeln aus der Auswahlgruppe zu entfernen.|  
-|Eingabe|Führt den Standardbefehl für das Objekt (in der Regel öffnen oder zu bearbeiten).|  
+|EINGABETASTE|Führt den Standardbefehl für das Objekt (in der Regel öffnen oder zu bearbeiten).|  
 |F2|Aktiviert die direkte Bearbeitung für das Objekt.|  
 |Pfeiltasten|Verschiebt die ausgewählten Objekte in der die Richtung der Pfeiltaste gedrückt, in kleinen Schritten (z. B. 1 Pixel zu einem Zeitpunkt)|  
 |STRG + Pfeiltasten|Verschiebt die ausgewählten Objekte in der die Richtung der Pfeiltaste gedrückt, in größeren Schritten (z. B. 10 Pixel zu einem Zeitpunkt)|  
@@ -438,7 +439,7 @@ Zusammengesetzte Muster kombinieren Interaktion und Entwurf Elemente in untersch
   
  Auswahl der in Listen möglicherweise zusammenhängenden, zusammenhanglos, oder der Region. Wenn mehrere Auswahlmöglichkeiten zulässig festgelegt ist, zusammenhängend sind und nicht zusammenhängenden Auswahl sollte immer unterstützt werden, und bei der Unterstützung für die Auswahl der Region (Feld) ist optional. Region-Auswahl werden durch Ziehen in den Leerraum des Textkörpers Liste initiiert.  
   
-|Objekt|Auswahl|  
+|Object|Auswahl|  
 |------------|---------------|  
 |Liste|zusammenhängenden|Immer unterstützt (wenn die Mehrfachauswahl zulässig sind).|  
 |Liste|Zusammenhanglose|Immer unterstützt (wenn die Mehrfachauswahl zulässig sind).|  
@@ -479,7 +480,7 @@ Zusammengesetzte Muster kombinieren Interaktion und Entwurf Elemente in untersch
 ### <a name="overview"></a>Übersicht  
  Obwohl jede Softwarekomponente in Visual Studio in der Regel für einen eigenen Status und Persistenz zuständig ist, speichert Visual Studio-Einstellungen in einigen Fällen wie z. B. mit Fenstergrößen und Positionen. In der folgenden Tabelle ist eine Kombination von Einstellungen, die automatisch gespeichert und Einstellungen, die erfordern, dass einen explizite Benutzer auszuführende Aktion programmiert.  
   
-|Objekt|Was speichern|Beim Speichern|Speicherort|  
+|Object|Was speichern|Beim Speichern|Speicherort|  
 |------------|------------------|------------------|-------------------|  
 |Auswählbare Objekt (z. B. eine Codezeile)|Einen Haltepunkt in einer Zeile des Codes<br /><br /> Eine Benutzer-Verknüpfung, die die Zeile des Codes zugeordnet|Wenn das Projekt gespeichert ist|Die **Benutzeroptionen (.suo)** Datei für das Projekt|  
 |Dialogfeld|Der Speicherort des Dialogs, wenn es verschoben wurde, hatte<br /><br /> Die Ansicht, die der Benutzer in das Dialogfeld "zuletzt verwendet|Wenn das Dialogfeld geschlossen wird<br /><br /> Wenn das Ende der Visual Studio-Sitzung|Im Arbeitsspeicher<br /><br /> Registrierung in **HKEY_Current_User**|  

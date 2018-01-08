@@ -17,11 +17,12 @@ caps.latest.revision: "56"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fbf9ab21b494bfc8b26251a8bdb79c16f81dc05d
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: vssdk
+ms.openlocfilehash: bf8c558d01538d477aee3670b3c119d72a83878d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-sdk"></a>Visual Studio SDK
 Das Visual Studio SDK können Sie die Visual Studio-Features erweitern oder neue Funktionen in Visual Studio integrieren. Sie können Ihre Erweiterungen an andere Benutzer als auch für Visual Studio Marketplace verteilen. Im Folgenden werden einige Möglichkeiten für die Erweiterung von Visual Studio vorgestellt:  
@@ -56,7 +57,7 @@ Das Visual Studio SDK können Sie die Visual Studio-Features erweitern oder neue
  Nutzen Sie die [Bilddienst und Katalog](../extensibility/image-service-and-catalog.md) für große Bild Verwaltungs- und Unterstützung für hohen dpi-WERTEN und Designs.  
   
 ## <a name="finding-and-installing-existing-visual-studio-extensions"></a>Suchen und Installieren von vorhandenen Visual Studio-Erweiterungen  
- Finden Sie in Visual Studio-Erweiterungen der **Erweiterungen und Updates** -Dialogfeld auf die **Tools** Menü. Weitere Informationen finden Sie unter [suchen und Verwenden von Visual Studio-Erweiterungen](../ide/finding-and-using-visual-studio-extensions.md). Sie erhalten auch Erweiterungen in der [Visual Studio Marketplace](https://marketplace.visualstudio.com/)  
+ Finden Sie in Visual Studio-Erweiterungen der **Erweiterungen und Updates** -Dialogfeld auf die **Tools** Menü. Weitere Informationen finden Sie unter [Suchen und Verwenden von Visual Studio-Erweiterungen](../ide/finding-and-using-visual-studio-extensions.md). Sie erhalten auch Erweiterungen in der [Visual Studio Marketplace](https://marketplace.visualstudio.com/)  
   
 ## <a name="visual-studio-sdk-reference"></a>Visual Studio SDK-Referenz  
  Sie finden die Visual Studio-SDK-API-Referenz unter [Visual Studio SDK-Referenz](../extensibility/visual-studio-sdk-reference.md).  

@@ -19,11 +19,12 @@ caps.latest.revision: "21"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 86c8cce3abf16d7236acdd5ec468b06fdb46f997
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 9fb212d7908d32bc9d9d14d7e8f4786089bc5f89
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="lptextoutproc"></a>LPTEXTOUTPROC
 Wenn der Benutzer eine Quelle-Steuerungsvorgang aus innerhalb der integrierten Entwicklungsumgebung (IDE) ausgeführt wird, sollten die Datenquellen-Steuerelements, das Plug-in-Fehler oder Status-Nachrichten, die im Zusammenhang mit dem Betrieb zu vermitteln. Das plug-in kann einen eigenen Meldungsfelder für diesen Zweck angezeigt. Allerdings können für weitere nahtlose Integration, das plug-in Zeichenfolgen an der IDE übergeben, die klicken Sie dann auf die systemeigene Weise zum Anzeigen von Statusinformationen werden angezeigt. Der Mechanismus dafür ist die `LPTEXTOUTPROC` -Funktionszeiger. Die IDE implementiert diese Funktion (im folgenden ausführlicher beschrieben) für die Anzeige von Fehler- und statusmeldungen.  

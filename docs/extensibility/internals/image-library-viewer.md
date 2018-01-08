@@ -11,11 +11,12 @@ caps.latest.revision: "6"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3da2368d8d30ba54dd6b4ae6a36aba6e75ea2967
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: b699233d0b0ddf14079240da3bd831a172641fba
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="image-library-viewer"></a>Bildbibliotheks-Viewer
 Das Visual Studio Bildbibliotheks-Viewer-Tool laden und bildmanifesten, sodass der Benutzer sie auf die gleiche Weise zu bearbeiten, wie Visual Studio würden zu suchen. Der Benutzer kann im Hintergrund, Größe, DPI, hoher Kontrast und andere Einstellungen ändern. Das Tool auch zeigt für jede bildmanifest von ladeinformationen und Quellinformationen für jedes Bild in das bildmanifest angezeigt. Dieses Tool ist nützlich für:  
@@ -75,7 +76,7 @@ Das Visual Studio Bildbibliotheks-Viewer-Tool laden und bildmanifesten, sodass d
 |**Unterelement**|**Definition**|  
 |Importieren|Importiert die Symbole der angegebenen Manifestdatei für die Verwendung in das aktuelle Manifest an.|  
 |GUID|Das Symbol stellt einen GUID dar und GUID Formatierung übereinstimmen.|  
-|ID|Das Symbol eine ID dar und muss eine nicht negative ganze Zahl sein.|  
+|Id|Das Symbol eine ID dar und muss eine nicht negative ganze Zahl sein.|  
 |Zeichenfolge|Das Symbol für eines beliebigen Zeichenfolgenwert.|  
   
  Symbole sind Groß-/Kleinschreibung beachtet, und mithilfe der Syntax $(symbol-name) verwiesen wird:  
@@ -116,7 +117,7 @@ Das Visual Studio Bildbibliotheks-Viewer-Tool laden und bildmanifesten, sodass d
 |-|-|  
 |**Attribut**|**Definition**|  
 |GUID|[Erforderlich] Der GUID-Teil der Image-moniker|  
-|ID|[Erforderlich] Die ID-Teil der Image-moniker|  
+|Id|[Erforderlich] Die ID-Teil der Image-moniker|  
 |AllowColorInversion|[Optional, Standardwert "true"] Gibt an, ob das Bild die Farben umgekehrt programmgesteuert auf einen dunklen Hintergrund aufweisen kann.|  
   
  **Quelle**  
@@ -155,7 +156,7 @@ Das Visual Studio Bildbibliotheks-Viewer-Tool laden und bildmanifesten, sodass d
 |-|-|  
 |**Attribut**|**Definition**|  
 |Typ|[Erforderlich] Der Typ der systemeigene Ressource XAML oder PNG|  
-|ID|[Erforderlich] Der ganzzahlige ID Teil der systemeigene Ressource|  
+|Id|[Erforderlich] Der ganzzahlige ID Teil der systemeigene Ressource|  
   
  **ImageList**  
   
@@ -172,7 +173,7 @@ Das Visual Studio Bildbibliotheks-Viewer-Tool laden und bildmanifesten, sodass d
 |-|-|  
 |**Attribut**|**Definition**|  
 |GUID|[Erforderlich] Der GUID-Teil der Image-moniker|  
-|ID|[Erforderlich] Die ID-Teil der Image-moniker|  
+|Id|[Erforderlich] Die ID-Teil der Image-moniker|  
 |Extern|[Optional, Standardwert "false"] Gibt an, ob der Image-Moniker ein Bild in das aktuelle Manifest verweist.|  
   
  Der Moniker für das enthaltene Bild muss nicht in ein Bild in das aktuelle Manifest definierten verweisen. Wenn das eigenständige Bild in der Bildbibliothek gefunden werden kann, wird ein leerer Platzhalter-Image an seiner Stelle verwendet werden.  

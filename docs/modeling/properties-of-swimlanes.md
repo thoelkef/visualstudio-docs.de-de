@@ -13,11 +13,12 @@ caps.latest.revision: "24"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 1b8eacf8fdd74fc9fe0703dc50beb46a2442e939
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: f43af2ef4a3a13952fb04c594db336afcb97afbd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="properties-of-swimlanes"></a>Eigenschaften von Verantwortlichkeitsbereichen
 Sie können ein Diagramm Verantwortlichkeitsbereiche hinzufügen. Verantwortlichkeitsbereiche werden ein Diagramm in vertikale oder horizontale Bereiche unterteilt. Sie können andere Formen innerhalb Verantwortlichkeitsbereiche anzuzeigende definieren. Weitere Informationen finden Sie unter [zum Definieren einer domänenspezifischen Sprache](../modeling/how-to-define-a-domain-specific-language.md). Weitere Informationen zum Verwenden dieser Eigenschaften finden Sie unter [anpassen und Erweitern einer domänenspezifischen Sprache](../modeling/customizing-and-extending-a-domain-specific-language.md).  
@@ -38,7 +39,7 @@ Sie können ein Diagramm Verantwortlichkeitsbereiche hinzufügen. Verantwortlich
 |Verfügt über benutzerdefinierte-Konstruktor|Wenn `True`, ein benutzerdefinierter Konstruktor im Quellcode bereitgestellt werden. Weitere Informationen finden Sie unter [überschreiben und erweitern die generierte Klassen](../modeling/overriding-and-extending-the-generated-classes.md).|False|  
 |Inheritance Modifier|Beschreibt die Art der Vererbung der Source-Code-Klasse, die aus dem Verantwortlichkeitsbereich generiert wird (`none`, `abstract` oder `sealed`).|Keine|  
 |Basis Verantwortlichkeitsbereich|Die Basisklasse von diesem Verantwortlichkeitsbereich.|(keine)|  
-|Name|Der Name der dieser Verantwortlichkeitsbereich.|Aktuelle name|  
+|name|Der Name der dieser Verantwortlichkeitsbereich.|Aktuelle name|  
 |Namespace|Der Namespace, der diese Verantwortlichkeitsbereich zugeordnet ist.|Aktuellen namespace|  
 |QuickInfo-Typ|Wie die QuickInfo definiert ist (`fixed`, `variable`, oder `none`). Wenn `fixed`, klicken Sie dann den Wert von der `Fixed Tooltip Text` Eigenschaft verwendet wird, wenn `variable`, und klicken Sie dann die QuickInfo in benutzerdefiniertem Code definiert ist.|\<keine >|  
 |Hinweise|Informelle Hinweise, die diese Verantwortlichkeitsbereich zugeordnet sind.|\<keine >|  

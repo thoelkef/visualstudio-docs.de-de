@@ -13,11 +13,12 @@ caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5a16698863e92e5bbae4e888502788dd76b04f56
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: f7058d097ab3eb6faeb8acf96b98ae6346887361
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="adding-items-to-the-add-new-item-dialog-boxes"></a>Hinzufügen von Elementen, die zum Hinzufügen neuer Elemente Dialogfelder
 Der Prozess zum Hinzufügen von Elementen der **neues Element hinzufügen** Dialogfeld beginnt mit dem Registrierungsschlüssel. Wie in der folgenden Registrierungseinträge gezeigt, wird der Abschnitt AddItemTemplates enthält, den Pfad und den Namen des Verzeichnisses in der Elemente im zur Verfügung gestellt der **neues Element hinzufügen** Dialogfeld abgelegt werden.  
@@ -37,7 +38,7 @@ Der Prozess zum Hinzufügen von Elementen der **neues Element hinzufügen** Dial
   
  "SortPriority" = Dword:00000064  
   
-|Name|Typ|Daten (aus RGS-Datei)|Beschreibung|  
+|name|Typ|Daten (aus RGS-Datei)|Beschreibung|  
 |----------|----------|-----------------------------|-----------------|  
 |@ (Standard)|REG_SZ|#% IDS_ADDITEM_TEMPLATES_ENTRY %|Ressourcen-ID für **Element hinzufügen** Vorlagen.|  
 |Val-TemplatesDir|REG_SZ|%TEMPLATE_PATH%\ SomeProjectItems|Pfad der Projektelemente angezeigt, die im Dialogfeld für die **neues Element hinzufügen** Assistenten.|  

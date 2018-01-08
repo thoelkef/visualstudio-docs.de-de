@@ -15,11 +15,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2b3974c9103a385badc56fda759ee95ef3a40a93
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 06375b45e21e0b83c62f2509d666b786479ff2b4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="usedcommand-element"></a>UsedCommand-Element
 Ermöglicht eine VSPackage, um einen Befehl zuzugreifen, der in eine andere VSCT-Datei definiert ist. Angenommen, Ihr VSPackage standardmäßiger **Kopie** Befehl, der definiert wird die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Shell, Sie können den Befehl zu einem Menü oder einer Symbolleiste ohne hinzufügen erneut zu implementieren.  
@@ -45,7 +46,7 @@ Ermöglicht eine VSPackage, um einen Befehl zuzugreifen, der in eine andere VSCT
   
 |Element|Beschreibung|  
 |-------------|-----------------|  
-|Keine||  
+|Keiner||  
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente  
   
