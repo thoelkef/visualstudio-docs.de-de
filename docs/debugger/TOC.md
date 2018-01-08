@@ -7,6 +7,8 @@
 ## [Debuggen einer ASP.NET-App](quickstart-debug-aspnet.md)
 # Lernprogramme
 ## [Lernen Sie das Debuggen mit Visual Studio](getting-started-with-the-debugger.md)
+## [Debuggen einer aktiven Azure-App](debug-live-azure-applications.md)
+## [Debuggen von ASP.NET in IIS oder IIS Express](how-to-enable-debugging-for-aspnet-applications.md)
 ## [Remotedebuggen eines C#-Projekts](remote-debugging-csharp.md)
 ## [Remotedebuggen eines C++-Projekts](remote-debugging-cpp.md)
 ## [Remotedebuggen von ASP.NET Core auf einem Computer mit IIS](remote-debugging-aspnet-on-a-remote-iis-computer.md)
@@ -61,7 +63,6 @@
 ### [Debuggen mit dem Just-In-Time-Debugger von Visual Studio](debug-using-the-just-in-time-debugger.md)
 #### [Gewusst wie: Reagieren auf den Just-In-Time-Debugger](just-in-time-debugging-in-visual-studio.md)
 ## Konfigurieren des Debuggens
-### [Debuggen von Benutzercode](just-my-code.md)
 ### [Verwalten von Ausnahmen mit dem Debugger](managing-exceptions-with-the-debugger.md)
 #### [Fortfahren mit der Ausführung nach einer Ausnahme](continuing-execution-after-an-exception.md)
 #### [Gewusst wie: Untersuchen von Systemcode nach einer Ausnahme](how-to-examine-system-code-after-an-exception.md)
@@ -70,6 +71,7 @@
 ##### [Gewusst wie: Schreiben einer Berichtsfunktion für Laufzeitfehler](how-to-write-a-run-time-error-reporting-function.md)
 ##### [Verwenden von Laufzeitüberprüfungen ohne die C-Laufzeitbibliothek](using-run-time-checks-without-the-c-run-time-library.md)
 ### [Angeben von Symbol- (PDB-) und Quelldateien im Visual Studio Debugger](specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
+### [Debuggen von Benutzercode](just-my-code.md)
 ### [Debuggereinstellungen und -vorbereitung](debugger-settings-and-preparation.md)
 #### [Debuggerprojekteinstellungen](debugger-project-settings.md)
 ##### [Gewusst wie: Angeben von Debuggereinstellungen](how-to-specify-debugger-settings.md)
