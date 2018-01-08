@@ -20,11 +20,12 @@ caps.latest.revision: "31"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: af681832a8c298427c13060d858b57b99654953a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 151648a6c12e2c28d912be3b75c51b438ae5ee13
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-event-handlers-in-office-projects"></a>Gewusst wie: Erstellen von Ereignishandlern in Office-Projekten
   Es gibt mehrere Möglichkeiten, Ereignishandler in Visual Basic und c# zu erstellen. In der Entwurfsansicht können Sie die Ereignishandler für Steuerelemente erstellen, indem Sie auf das Steuerelement doppelklicken oder verwenden Sie den Ereignisbereich "von der **Eigenschaften** Fenster Handler für jedes Ereignis auf das Steuerelement zu erstellen. Jedoch, wenn Sie in der Codeansicht sind, nicht empfiehlt, wechseln Sie zur Entwurfsansicht, um einen Ereignishandler zu erstellen.  

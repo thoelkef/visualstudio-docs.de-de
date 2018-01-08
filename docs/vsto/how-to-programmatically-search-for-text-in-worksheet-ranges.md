@@ -19,11 +19,12 @@ caps.latest.revision: "48"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 031894a3307a40af981ad974898ae819ba68d24a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 7968fe71fffb736a6e86319339f3cc7823480403
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-search-for-text-in-worksheet-ranges"></a>Gewusst wie: Programmgesteuertes Suchen nach Text in Arbeitsblattbereichen
   Die <xref:Microsoft.Office.Interop.Excel.Range.Find%2A> Methode der <xref:Microsoft.Office.Interop.Excel.Range> Objekt können Sie nach Text innerhalb des Bereichs zu suchen. Dieser Text kann die Fehlerzeichenfolgen, die in einer Arbeitsblattzelle wie auch sein `#NULL!` oder `#VALUE!`. Weitere Informationen zu Fehlerzeichenfolgen, finden Sie unter [Zellenfehlerwerte](http://msdn.microsoft.com/library/office/ff839168.aspx).  

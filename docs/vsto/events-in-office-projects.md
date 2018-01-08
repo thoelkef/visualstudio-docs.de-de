@@ -37,11 +37,12 @@ caps.latest.revision: "51"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 48670b03444a8701dc3c23fe591a962e01f51f31
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 87d1fe708d4090fc6d2dd9509a04d13e7a21e079
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="events-in-office-projects"></a>Ereignisse in Office-Projekten
   Jede Office-Projektvorlage generiert automatisch mehrere Ereignishandler. Die Ereignishandler für Anpassungen auf Dokumentebene unterscheiden sich geringfügig von Ereignishandlern für VSTO-Add-Ins.  
@@ -139,7 +140,7 @@ ms.lasthandoff: 10/31/2017
   
  Code im `ThisAddIn_Startup` -Ereignishandler ist der erste Benutzercode, der ausgeführt wird, es sei denn, Ihr VSTO-Add-In setzt die <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> -Methode außer Kraft. In diesem Fall wird der `ThisAddIn_Startup` -Ereignishandler nach <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A>aufgerufen.  
   
- Fügen Sie Code in nicht die `ThisAdd-In_Startup` Ereignishandler, wenn der Code ein geöffnetes Dokument erforderlich ist. Fügen Sie den Code stattdessen einem Ereignis hinzu, das von der Office-Anwendung ausgelöst wird, wenn ein Benutzer ein Dokument erstellt oder öffnet. Weitere Informationen finden Sie unter [Accessing a Document When the Office Application Starts](../vsto/programming-vsto-add-ins.md#AccessingDocuments).  
+ Fügen Sie Code in nicht die `ThisAdd-In_Startup` Ereignishandler, wenn der Code ein geöffnetes Dokument erforderlich ist. Fügen Sie stattdessen diesen Code einem Ereignis hinzu, welches durch die Office-Anwendung ausgelöst wird, wenn vom Benutzer ein Dokument erstellt oder geöffnet wird. Weitere Informationen finden Sie unter [Accessing a Document When the Office Application Starts](../vsto/programming-vsto-add-ins.md#AccessingDocuments).  
   
  Weitere Informationen zur Startsequenz von VSTO-Add-ins finden Sie unter [Architektur von VSTO-Add-ins](../vsto/architecture-of-vsto-add-ins.md).  
   

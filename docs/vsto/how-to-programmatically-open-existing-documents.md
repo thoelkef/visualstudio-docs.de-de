@@ -18,11 +18,12 @@ caps.latest.revision: "44"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 528245e33f3157bf42f70b3918ee9f8fc9539f9a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 991a282cb3fc8a34f3434c9cdb0a9be214c9e3bf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-open-existing-documents"></a>Gewusst wie: Programmgesteuertes Öffnen vorhandener Dokumente
   Die <xref:Microsoft.Office.Interop.Word.Documents.Open%2A> Methode öffnet den vorhandene Microsoft Office Word-Dokument, das durch einen vollqualifizierten Pfad und Dateiname angegeben. Diese Methode gibt ein <xref:Microsoft.Office.Interop.Word.Document> , die das geöffnete Dokument darstellt.  
