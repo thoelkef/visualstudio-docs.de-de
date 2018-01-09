@@ -20,7 +20,7 @@
 ### [Django-Webprojektvorlage](template-django.md)
 ### [Vorlage für Azure-Clouddienste](template-azure-cloud-service.md)
 ## [Azure SDK für Python](azure-sdk-for-python.md)
-# Gewusst wie
+# Anleitungen
 ## [Bearbeiten von Code](code-editing.md)
 ### [Formatieren von Code](code-formatting.md)
 ### [Refactoringcode](code-refactoring.md)
