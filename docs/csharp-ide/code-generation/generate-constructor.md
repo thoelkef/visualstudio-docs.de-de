@@ -12,11 +12,11 @@ author: kuhlenh
 ms.author: kaseyu
 manager: ghogen
 ms.workload: dotnet
-ms.openlocfilehash: 9ffa85d768939522935199edde6d0f19b3f2b7a2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: dd5e1012c37660917d77e2643922d8a90a8e2ffe
+ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="generate-a-constructor-in-c"></a>Generieren Sie einen Konstruktor in c# #
 **Was:** können Sie sofort den Code für einen neuen Konstruktor für eine Klasse zu generieren. 
@@ -93,7 +93,7 @@ ms.lasthandoff: 12/22/2017
 
    ![Konstruktorergebnis generieren](media/constructor_result.png)
 
-## <a id="selection"></a>Fügen Sie Parameter an vorhandenen Konstruktor hinzu.
+## <a id="addparameter"></a>Fügen Sie Parameter an vorhandenen Konstruktor hinzu.
 1. Fügen Sie einen Parameter, um eine vorhandene Objektinstanziierung.
 
 1. Platzieren Sie den Cursor in der Zeile, in dem es eine rote Wellenlinie, der angibt, Sie verwendet haben, einen Konstruktor, der noch nicht vorhanden ist.

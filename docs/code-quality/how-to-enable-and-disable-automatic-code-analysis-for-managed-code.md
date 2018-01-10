@@ -13,14 +13,14 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: dotnet
-ms.openlocfilehash: 198047196ba6f58c69736ef67352267845047b52
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 2c6dc55e2acee733538121bf5aac51b935e2d86d
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="how-to-enable-and-disable-automatic-code-analysis-for-managed-code"></a>Gewusst wie: Aktivieren und Deaktivieren der automatischen Codeanalyse für verwalteten Code
-Sie können die Codeanalyse ausgeführt vor jedem Build für ein Projekt mit verwaltetem Code konfigurieren. Verschiedene Code Analysis-Eigenschaften können Sie festlegen, für die einzelnen [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] Konfiguration.  
+Sie können die Codeanalyse ausgeführt nach jedem Buildvorgang, der ein Projekt mit verwaltetem Code konfigurieren. Verschiedene Code Analysis-Eigenschaften können Sie festlegen, für die einzelnen [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] Konfiguration.  
   
 ### <a name="to-enable-or-disable-automatic-code-analysis"></a>So aktivieren oder Deaktivieren der automatischen Codeanalyse  
   

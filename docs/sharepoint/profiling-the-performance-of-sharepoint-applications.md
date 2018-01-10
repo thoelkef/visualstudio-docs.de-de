@@ -24,11 +24,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 58e2d02b32a17cf23e95639077c26b6b41dae00f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 70c058f6c930b9eb58cf0518d3418ccedcf083b4
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="profiling-the-performance-of-sharepoint-applications"></a>Profilerstellung für die Leistung von SharePoint-Anwendungen
   Wenn die SharePoint-Anwendungen langsam oder ineffizient ausgeführt werden, können Sie die Profilerstellungsfunktionen in Visual Studio verwenden, um problematischen Code und andere Elemente zu identifizieren. Mithilfe der Auslastungstestfunktion können Sie ermitteln, wie eine SharePoint-Anwendung unter Belastung ausgeführt wird, beispielweise wenn viele Benutzer gleichzeitig auf die Anwendung zugreifen. Durch Ausführung von Webleistungstests können Sie messen, wie die Anwendung im Web ausgeführt wird. Anhand von Tests der programmierten UI können Sie überprüfen, ob die ganze SharePoint-Anwendung, einschließlich der Benutzeroberfläche, ordnungsgemäß funktioniert. Mithilfe dieser Tests können Sie Leistungsprobleme identifizieren, bevor Sie die Anwendung bereitstellen.  
@@ -66,9 +66,7 @@ ms.lasthandoff: 12/22/2017
 |[Komponententest für Code](/visualstudio/test/unit-test-your-code)|Beschreibt, wie logische Fehler in Ihrem Code anhand von Komponententests gesucht werden.|  
 |[Testen von SharePoint 2010-Anwendungen mit Tests der programmierten UI](/visualstudio/test/testing-sharepoint-2010-applications-with-coded-ui-tests)|Beschreibt, wie die Benutzeroberfläche Ihrer SharePoint-Anwendungen getestet wird.|  
   
-## <a name="see-also"></a>Siehe auch  
- [Erstellen und Debuggen von SharePoint-Lösungen](../sharepoint/building-and-debugging-sharepoint-solutions.md)   
- [Testen der Anwendung](/devops-test-docs/test/test-apps-early-and-often)   
- [Verbessern der Codequalität](/visualstudio/test/improve-code-quality)  
-  
-  
+## <a name="see-also"></a>Siehe auch
+
+[Erstellen und Debuggen von SharePoint-Projektmappen](../sharepoint/building-and-debugging-sharepoint-solutions.md)  
+[Verbessern der Codequalität](/visualstudio/test/improve-code-quality)
