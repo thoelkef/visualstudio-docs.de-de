@@ -22,11 +22,11 @@ author: kempb
 ms.author: kempb
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 3004f90f05a41ef0d2557236643af18b9be89d38
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: ef2517b05b58ac2a672a5eba04ca6f1dc48a27f3
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="generateresource-task"></a>GenerateResource-Aufgabe
 Konvertiert zwischen TXT- und RESX-Dateien (im XML-basierten Ressourcenformat) und binären RESOURCES-Dateien der Common Language Runtime, die in eine ausführbare Laufzeitbinärdatei eingebettet oder in Satellitenassemblys kompiliert werden können. Diese Aufgabe dient normalerweise zum Konvertieren von TXT- oder RESX-Dateien in RESOURCES-Dateien. Die `GenerateResource`-Aufgabe ist funktional identisch mit [resgen.exe](/dotnet/framework/tools/resgen-exe-resource-file-generator).  
@@ -42,7 +42,7 @@ Konvertiert zwischen TXT- und RESX-Dateien (im XML-basierten Ressourcenformat) u
 |`ExecuteAsTool`|Optionaler `Boolean` -Parameter.<br /><br /> Wenn `true`, werden „tlbimp.exe“ und „aximp.exe“ von dem entsprechenden Zielframework aus prozessextern ausgeführt, um die erforderlichen Wrapperassemblys zu generieren. Dieser Parameter ermöglicht die Festlegung von Zielversionen von `ResolveComReferences`.|  
 |`FilesWritten`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]` -Ausgabeparameter.<br /><br /> Enthält die Namen aller auf den Datenträger geschriebenen Dateien. Dies schließt ggf. auch die Cachedatei ein. Dieser Parameter ist hilfreich für Implementierungen des Bereinigens.|  
 |`MinimalRebuildFromTracking`|Optionaler `Boolean` -Parameter.<br /><br /> Ruft einen Schalter ab, der angibt, ob ein nachverfolgter inkrementeller Build verwendet wird, oder legt ihn fest. Wenn `true`, wird der inkrementelle Build aktiviert; andernfalls wird eine erneute Erstellung erzwungen.|  
-|`NeverLockTypeAssemblies`|Optionaler `Boolean` -Parameter.<br /><br /> Dient zum Abrufen oder Festlegen eines booleschen Werts, der angibt, ob eine neue [AppDomain](https://docs.microsoft.com/dotnet/api/system.appdomain) zum Auswerten der Ressourcendateien (RESX) erstellt werden soll (true) oder ob eine neue [AppDomain](https://docs.microsoft.com/dotnet/api/system.appdomain) nur erstellt werden soll, wenn die Ressourcendateien auf die Assembly eines Benutzers verweisen (false).|  
+|`NeverLockTypeAssemblies`|Optionaler `Boolean` -Parameter.<br /><br /> Dient zum Abrufen oder Festlegen eines booleschen Werts, der angibt, ob eine neue [AppDomain](/dotnet/api/system.appdomain) zum Auswerten der Ressourcendateien (RESX) erstellt werden soll (true) oder ob eine neue [AppDomain](/dotnet/api/system.appdomain) nur erstellt werden soll, wenn die Ressourcendateien auf die Assembly eines Benutzers verweisen (false).|  
 |`OutputResources`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]` -Ausgabeparameter.<br /><br /> Gibt den Namen der generierten Dateien an, z.B. der RESOURCES-Dateien. Wenn Sie keinen Namen angeben, wird der Name der entsprechenden Eingabedatei verwendet, und die erstellte RESOURCES-Datei wird in dem Verzeichnis gespeichert, das die Eingabedatei enthält.|  
 |`PublicClass`|Optionaler `Boolean` -Parameter.<br /><br /> Wenn `true`, wird eine stark typisierte Ressourcenklasse als öffentliche Klasse erstellt.|  
 |`References`|Optionaler `String[]` -Parameter.<br /><br /> Verweise, aus denen Typen in RESX-Dateien geladen werden. Datenelemente der RESX-Datei können möglicherweise vom Typ .NET sein. Wenn die RESX-Datei gelesen wird, muss dies aufgelöst werden. In der Regel wird dies mit Typladungsregeln erfolgreich aufgelöst. Wenn Sie in `References` Assemblys angeben, haben diese Vorrang.<br /><br /> Dieser Parameter ist für stark typisierte Ressourcen nicht erforderlich.|  

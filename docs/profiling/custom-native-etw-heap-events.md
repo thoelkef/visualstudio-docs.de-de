@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: ghogen
 dev_langs: C++
 ms.workload: cplusplus
-ms.openlocfilehash: 360efc2b185e6485b2bb08d5d8d0b09a128099d0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 7d55fdb061b9cb2fcd0497b7dde8e5c4255cf5e3
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="custom-native-etw-heap-events"></a>Ereignisse für benutzerdefinierte native ETW-Heap
 
-Visual Studio enthält eine Vielzahl von [profiling and diagnostic tools (Profilerstellungs- und Diagnosetools)](https://docs.microsoft.com/en-us/visualstudio/profiling/profiling-tools), einschließlich einer nativen Speicherprofilerstellung.  Dieser Profiler hängt sich an [ETW-Ereignisse](/windows-hardware/drivers/devtest/event-tracing-for-windows--etw-) vom Heap-Anbieter, und bietet eine Analyse, wie Speicher zugeordnet und verwendet wird.  Dieses Tool kann standardmäßig nur aus dem standardmäßigen Windows-Heap vorgenommene Zuordnungen analysieren. Zuordnungen außerhalb dieses nativen Heap werden nicht angezeigt.
+Visual Studio enthält eine Vielzahl von [profiling and diagnostic tools (Profilerstellungs- und Diagnosetools)](../profiling/profiling-tools.md), einschließlich einer nativen Speicherprofilerstellung.  Dieser Profiler hängt sich an [ETW-Ereignisse](/windows-hardware/drivers/devtest/event-tracing-for-windows--etw-) vom Heap-Anbieter, und bietet eine Analyse, wie Speicher zugeordnet und verwendet wird.  Dieses Tool kann standardmäßig nur aus dem standardmäßigen Windows-Heap vorgenommene Zuordnungen analysieren. Zuordnungen außerhalb dieses nativen Heap werden nicht angezeigt.
 
 Es gibt viele Fälle, in denen Sie Ihren eigenen benutzerdefinierten Heap verwenden und den Zuordnungsaufwand aus dem Standard-Heap vermeiden möchten.  Beispielsweise können Sie [VirtualAlloc](https://msdn.microsoft.com/library/windows/desktop/aa366887(v=vs.85).aspx) verwenden, um eine große Menge an Speicher am Anfang der App oder des Spiels zuzuordnen, und anschließend Ihre eigenen Blöcke in dieser Liste zu verwalten.  In diesem Szenario würde das Speicherprofilerstellungstool nur diese anfänglichen Zuordnung und nicht die benutzerdefinierte Verwaltung innerhalb des Speicherblocks finden.  Jedoch können Sie mithilfe des benutzerdefinierten nativen Heap-ETW-Anbieters dafür sorgen,dass das Tool alle Zuordnungen kennt, die Sie außerhalb des Standard-Heaps vornehmen.
 
@@ -48,7 +48,7 @@ Foo* pFoo2 = (Foo*)mPool.allocate();
 Foo* pFoo3 = (Foo*)mPool.allocate();
 ```
 
-Eine Momentaufnahme aus dem [Speicherauslastungstool](https://docs.microsoft.com/en-us/visualstudio/profiling/memory-usage) ohne benutzerdefinierte Heap-Nachverfolgung würde nur einfach die einzelne 8.192 Byte-Zuordnung und keine der benutzerdefinierten Zuordnungen, die vom Pool vorgenommen wurden, anzeigen:
+Eine Momentaufnahme aus dem [Speicherauslastungstool](../profiling/memory-usage.md) ohne benutzerdefinierte Heap-Nachverfolgung würde nur einfach die einzelne 8.192 Byte-Zuordnung und keine der benutzerdefinierten Zuordnungen, die vom Pool vorgenommen wurden, anzeigen:
 
 ![Windows-Heap-Zuordnung](media/heap-example-windows-heap.png)
 
@@ -139,7 +139,7 @@ Diese Bibliothek kann problemlos in C und C++ verwendet werden.
    ```
 
 ## <a name="tracking-memory-usage"></a>Nachverfolgung der Speicherauslastung
-Mit diesen Aufrufen kann Ihr benutzerdefinierter Heapverbrauch jetzt mithilfe des Standard-**Speicherauslastungs**-Tools in Visual Studio nachverfolgt werden.  Weitere Informationen zur Verwendung dieses Tools finden Sie unter der [Speicherauslastungs](https://docs.microsoft.com/en-us/visualstudio/profiling/memory-usage)-Dokumentation. Stellen Sie sicher, dass Sie die Heap-Profilerstellung mit Momentaufnahmen aktiviert haben, andernfalls wird Ihr benutzerdefinierter Heapverbrauch nicht angezeigt. 
+Mit diesen Aufrufen kann Ihr benutzerdefinierter Heapverbrauch jetzt mithilfe des Standard-**Speicherauslastungs**-Tools in Visual Studio nachverfolgt werden.  Weitere Informationen zur Verwendung dieses Tools finden Sie unter der [Speicherauslastungs](../profiling/memory-usage.md)-Dokumentation. Stellen Sie sicher, dass Sie die Heap-Profilerstellung mit Momentaufnahmen aktiviert haben, andernfalls wird Ihr benutzerdefinierter Heapverbrauch nicht angezeigt. 
 
 ![Aktivieren der Heap-Profilerstellung](media/heap-enable-heap.png)
 
@@ -153,11 +153,11 @@ Das Standardheap *NT-Heap* sieht genauso aus wie vorher, außer dass das `CHeapT
 
 ![NT-Heap mit Tracker](media/heap-example-windows-heap.png)
 
-Wie bei dem standardmäßigen Windows-Heap, können Sie dieses Tool auch verwenden, um Momentaufnahmen zu vergleichen und um nach Verlusten und Beschädigung in Ihrem benutzerdefinierten Heap zu suchen, das in der Hauptdokumentation [Speicherauslastung](https://docs.microsoft.com/en-us/visualstudio/profiling/memory-usage) beschrieben wird.
+Wie bei dem standardmäßigen Windows-Heap, können Sie dieses Tool auch verwenden, um Momentaufnahmen zu vergleichen und um nach Verlusten und Beschädigung in Ihrem benutzerdefinierten Heap zu suchen, das in der Hauptdokumentation [Speicherauslastung](../profiling/memory-usage.md) beschrieben wird.
 
 > [!TIP]
 > Visual Studio enthält auch ein **Speicherauslastungs**tool im **Leistungsprofilerstellungs**-Toolset, das in der Menüoption **Debuggen > Leistungsprofilerstellung** oder über die Tastenkombination **Alt+F2** aktiviert wird.  Diese Funktion enthält keine Heap-Nachverfolgung und wird Ihren benutzerdefinierten Heap nicht wie hier beschrieben anzeigen.  Nur das **Diagnosetools**-Fenster, das im Menü **Debuggen > Windows > Diagnosetools anzeigen** oder mit der Tastenkombination **STRG+Alt+F2** aktiviert werden kann, enthält diese Funktion.
 
 ## <a name="see-also"></a>Siehe auch
-[Profilerstellungstools](https://docs.microsoft.com/en-us/visualstudio/profiling/profiling-tools)  
-[Speicherauslastung](https://docs.microsoft.com/en-us/visualstudio/profiling/memory-usage)
+[Profilerstellungstools](../profiling/profiling-tools.md)  
+[Speicherauslastung](../profiling/memory-usage.md)

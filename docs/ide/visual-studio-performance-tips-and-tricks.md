@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 519bb7b70737e4c3e2d6e80f19a056b4cd385980
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: b703fd45732e3fd083a5c95b68647f67dce57b3a
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Tipps und Tricks für die Leistung von Visual Studio
 
@@ -71,7 +71,7 @@ Wenn Sie in der Regel während des Debuggens von Sitzungen über nicht ausreiche
 
     Um die Diagnosetools zu deaktivieren, starten Sie eine Debugsitzung, wählen Sie **Extras > Optionen > Diagnosetools beim Debuggen aktivieren** aus, und deaktivieren Sie die Option.
 
-    Weitere Informationen finden Sie unter [Profilerstellungstools](https://docs.microsoft.com/en-us/visualstudio/profiling/profiling-tools).
+    Weitere Informationen finden Sie unter [Profilerstellungstools](../profiling/profiling-tools.md).
 
 ## <a name="disable-tools-and-extensions"></a>Deaktivieren von Tools und Erweiterungen
 Einige Tools oder Erweiterungen müssen möglicherweise ausgeschaltet werden, um die Leistung zu verbessern.

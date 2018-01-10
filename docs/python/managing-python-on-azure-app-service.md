@@ -15,11 +15,11 @@ manager: ghogen
 ms.workload:
 - python
 - azure
-ms.openlocfilehash: 5ebbded093da4b3a6bb5b829628de481d43355dd
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 50a2da5a92276b5ace29bdc2b0a35eaae516a3c9
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="managing-python-on-azure-app-service"></a>Verwalten von Python auf Azure App Service
 
@@ -47,20 +47,19 @@ Die benutzerdefinierte Python-Unterstützung auf Azure App Service besteht aus m
 1. Klicken Sie auf die Erweiterung, akzeptieren Sie die rechtlichen Bedingungen, und klicken Sie anschließend auf **OK**.
 1. Im Portal wird eine Benachrichtigung angezeigt, nachdem die Installation abgeschlossen wurde.
 
-
 ## <a name="choosing-a-python-version-through-the-azure-resource-manager"></a>Auswählen einer Python-Version über den Azure Resource Manager
 
 Wenn Sie App Service mit einer Azure Resource Manager-Vorlage bereitstellen, fügen Sie die Websiteerweiterung als Ressource hinzu. Die Erweiterung wird als geschachtelte Ressource mit dem Typ `siteextensions` und dem Namen aus [siteextensions.net](https://www.siteextensions.net/packages?q=Tags%3A%22python%22) angezeigt.
 
 Nach dem Hinzufügen eines Verweises auf `python361x64` (Python 3.6.1 x64), sieht Ihre Vorlage in etwa wie folgt aus (einige Eigenschaften werden ausgelassen):
 
-```
+```json
 "resources": [
   {
     "apiVersion": "2015-08-01",
     "name": "[parameters('siteName')]",
     "type": "Microsoft.Web/sites",
-    
+
     // ...
 
     "resources": [
@@ -99,8 +98,8 @@ Klicken Sie auf **Erweiterungen** auf der Seite „App Service“, und wählen S
 Wenn beim Anzeigen des Pfads zu einer Erweiterung Probleme auftreten, können Sie diesen manuell über die Konsole finden:
 
 1. Klicken Sie auf der Seite „App Service“ auf **Entwicklungstools > Konsole**.
-2. Geben Sie entweder den Befehl `ls ../home` oder den Befehl `dir ..\home` ein, um die Erweiterungsordner auf der obersten Ebene zu sehen, z.B. `Python361x64`.
-3. Geben Sie einen Befehl wie `ls ../home/python361x64` oder `dir ..\home\python361x64` ein, um zu bestätigen, dass er `python.exe` und andere Interpreterdateien enthält.
+1. Geben Sie entweder den Befehl `ls ../home` oder den Befehl `dir ..\home` ein, um die Erweiterungsordner auf der obersten Ebene zu sehen, z.B. `Python361x64`.
+1. Geben Sie einen Befehl wie `ls ../home/python361x64` oder `dir ..\home\python361x64` ein, um zu bestätigen, dass er `python.exe` und andere Interpreterdateien enthält.
 
 ### <a name="configuring-the-fastcgi-handler"></a>Konfigurieren des FastCGI-Handlers
 
@@ -126,6 +125,7 @@ FastCGI ist eine Schnittstelle, die auf der Anforderungsebene funktioniert. IIS 
 ```
 
 Die an dieser Stelle definierten `<appSettings>` sind für Ihre Anwendung als Umgebungsvariablen verfügbar:
+
 - Der Wert für `PYTHONPATH` kann frei erweitert werden, muss jedoch den Stamm Ihrer App enthalten.
 - `WSGI_HANDLER` muss auf eine durch Ihre App importierbare WSGI-Anwendung verweisen.
 - `WSGI_LOG` ist optional, wird jedoch zum Debuggen Ihrer App empfohlen. 
@@ -172,33 +172,32 @@ Verwenden Sie eine der folgenden Methoden, um Pakete direkt in der Serverumgebun
 | Bündeln mit einer App | Installieren Sie Pakete direkt in Ihrem Projekt, und stellen Sie sie für App Service als Teil Ihrer App bereit. Je nachdem, wie viele Abhängigkeiten Sie haben und wie oft Sie diese aktualisieren, kann diese Methode möglicherweise die einfachste Möglichkeit darstellen, eine funktionierende Bereitstellung zum Laufen zu bringen. Achten Sie darauf, dass Bibliotheken mit der Version von Python auf dem Server übereinstimmen müssen, andernfalls werden nach der Bereitstellung ungewöhnliche Fehler angezeigt. Da die Versionen von Python in den App Service-Websiteerweiterungen jedoch identisch mit denen sind, die auf „Python.org“ freigegeben wurden, können Sie problemlos eine kompatible Version für die lokale Entwicklung erhalten. |
 | Virtuelle Umgebungen | Wird nicht unterstützt. Verwenden Sie stattdessen die Bündelung, und legen Sie die `PYTHONPATH`-Umgebungsvariable fest, sodass sie auf den Speicherort der Pakete verweist. |
 
-
 ### <a name="azure-app-service-kudu-console"></a>Kudu-Konsole für Azure App Service
 
 Die [Kudu-Konsole](https://github.com/projectkudu/kudu/wiki/Kudu-console) ermöglicht Ihnen den direkten Befehlszeilenzugriff mit erhöhten Rechten auf den App Services-Server und dessen Dateisystem. Dies ist ein wichtiges Tool zum Debuggen und ermöglicht CLI-Vorgänge wie das Installieren von Paketen.
 
 1. Öffnen Sie Kudu über die Seite „App Service“ im Azure-Portal, indem Sie auf **Entwicklunsgtools > Erweiterte Tools** klicken und dann **Go** (Los) auswählen. Über diese Aktion navigieren Sie zu einer URL, die der Basis-URL für App Service entspricht, allerdings wird `.scm` angefügt. Wenn Ihre Basis-URL `https://vspython-test.azurewebsites.net/` ist, dann ist Kudu auf `https://vspython-test.scm.azurewebsites.net/` (dort können Sie ein Lesezeichen hinzufügen):
 
-    ![Die Kudu-Konsole für Azure App Service](media/python-on-azure-console01.png)    
+    ![Die Kudu-Konsole für Azure App Service](media/python-on-azure-console01.png)
 
-2. Wählen Sie **Debug-Konsole > CMD** aus, um die Konsole zu öffnen, in der Sie zu Ihrer Python-Installation navigieren können und sehen, welche Bibliotheken bereits vorhanden sind.
+1. Wählen Sie **Debug-Konsole > CMD** aus, um die Konsole zu öffnen, in der Sie zu Ihrer Python-Installation navigieren können und sehen, welche Bibliotheken bereits vorhanden sind.
 
-3. Um ein einzelnes Paket zu installieren:
+1. Um ein einzelnes Paket zu installieren:
 
     a. Navigieren Sie zum Ordner der Python-Installation, in dem Sie das Paket installieren möchten, wie z.B. `d:\home\python361x64`.
-     
+
     b. Verwenden Sie `python.exe -m pip install <package_name>`, um ein Paket zu installieren.
-    
+
     ![Beispiel für die Installation von Bottle über die Kudu-Konsole für Azure App Service](media/python-on-azure-console02.png)
-    
-4. Wenn Sie für Ihre App eine `requirements.txt`-Datei auf dem Server bereitgestellt haben, installieren Sie diese Anforderungen wie folgt:
+
+1. Wenn Sie für Ihre App eine `requirements.txt`-Datei auf dem Server bereitgestellt haben, installieren Sie diese Anforderungen wie folgt:
 
     a. Navigieren Sie zum Ordner der Python-Installation, in dem Sie das Paket installieren möchten, wie z.B. `d:\home\python361x64`.
-    
+
     b. Führen Sie den `python.exe -m pip install --upgrade -r d:\home\site\wwwroot\requirements.txt`-Befehl aus.
-    
+
     Die Verwendung `requirements.txt` wird empfohlen, da es damit einfach ist, ihren genauen Paketsatz sowohl lokal als auch auf dem Server zu reproduzieren. Denken Sie daran, die Konsole erneut aufzurufen, nachdem Sie Änderungen an der `requirements.txt`-Datei bereitgestellt haben, und führen Sie den Befehl erneut aus.
-    
+
 > [!Note]
 > Es gibt keinen C-Compiler auf Ihrem App Service, daher müssen Sie das Rad für alle Pakete mit nativen Erweiterungsmodulen installieren. Viele gängige Pakete stellen ihre eigenen Räder zur Verfügung. Sollte dies nicht der Fall sein, verwenden Sie `pip wheel <package_name>` auf dem lokalen Entwicklungscomputer und laden Sie das Rad auf Ihre Website hoch. Ein Beispiel finden Sie unter [Verwalten von erforderlichen Paketen](python-environments.md#managing-required-packages)
 
@@ -213,7 +212,6 @@ Anstatt die Kudu-Konsole über das Azure-Portal zu verwenden, können Sie Befehl
 }
 ```
 
-Informationen zu Befehlen und Authentifizierung finden Sie in der [Kudu-Dokumentation](https://github.com/projectkudu/kudu/wiki/REST-API). 
+Informationen zu Befehlen und Authentifizierung finden Sie in der [Kudu-Dokumentation](https://github.com/projectkudu/kudu/wiki/REST-API).
 
-Über den Befehl `az webapp deployment list-publishing-profiles`, den Sie über die Azure CLI ausführen, werden außerdem Anmeldeinformationen angezeigt (vgl. [az webapp deployment (Bereitstellung der Azure Web-App](https://docs.microsoft.com/cli/azure/webapp/deployment#list-publishing-profiles))). Eine Hilfsbibliothek zum Bereitstellen von Kudu-Befehlen ist auch auf [GitHub](https://github.com/lmazuel/azure-webapp-publish/blob/master/azure_webapp_publish/kudu.py#L42) verfügbar.
-
+Über den Befehl `az webapp deployment list-publishing-profiles`, den Sie über die Azure CLI ausführen, werden außerdem Anmeldeinformationen angezeigt (vgl. [az webapp deployment (Bereitstellung der Azure Web-App](/cli/azure/webapp/deployment?view=azure-cli-latest#az_webapp_deployment_list_publishing_profiles))). Eine Hilfsbibliothek zum Bereitstellen von Kudu-Befehlen ist auch auf [GitHub](https://github.com/lmazuel/azure-webapp-publish/blob/master/azure_webapp_publish/kudu.py#L42) verfügbar.

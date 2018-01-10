@@ -13,11 +13,11 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload: python
-ms.openlocfilehash: 5eab9ef6f3030e8a71547babd9dd9cc279813eee
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 33a6c3b57ae47e25eeaeb22c245e77c8a810d9a2
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="using-ipython-in-the-interactive-window"></a>Verwenden von IPython im interaktiven Fenster
 
@@ -32,7 +32,7 @@ Für diese exemplarische Vorgehensweise muss die [Anaconda](https://www.continuu
 
 1. Sehen sie sich die Registerkarte **Packages** (Pakete) (oder **pip**) an und stellen Sie sicher, dass `IPython` und `matplotlib` aufgeführt sind. Wenn dies nicht der Fall ist, installieren Sie sie hier.
 
-1. Wählen Sie die Registerkarte **Overview** (Übersicht) und klicken Sie auf **Use IPython interactive mode** (Interaktiven IPython-Modus verwenden). (In Visual Studio 2015 klicken Sie auf **Configure interactive options** (Interaktive Optionen konfigurieren), um den Dialog **Optionen** zu öffnen, setzen den **Interactive Mode** (Interaktiven Modus) auf IPython, und klicken dann auf **OK**).    
+1. Wählen Sie die Registerkarte **Overview** (Übersicht) und klicken Sie auf **Use IPython interactive mode** (Interaktiven IPython-Modus verwenden). (In Visual Studio 2015 klicken Sie auf **Configure interactive options** (Interaktive Optionen konfigurieren), um den Dialog **Optionen** zu öffnen, setzen den **Interactive Mode** (Interaktiven Modus) auf IPython, und klicken dann auf **OK**).
 
 1. Wählen Sie **Open interactive window** (Interaktives Fenster öffnen), um das interaktive Fenster im IPython-Modus aufzurufen. Sie müssen das Fenster eventuell zurücksetzen, wenn Sie gerade den interaktiven Modus geändert haben. Gegebenenfalls müssen Sie die EINGABETASTE drücken, wenn lediglich eine >>>-Eingabeaufforderung angezeigt wird.
 
@@ -76,11 +76,11 @@ Für diese exemplarische Vorgehensweise muss die [Anaconda](https://www.continuu
     ![Senden von Code aus dem Editor an das interaktive Fenster](media/ipython-repl-05.png)
 
 1. Um die Diagramme außerhalb des interaktiven Fensters anzuzeigen, führen Sie den Code stattdessen mit dem Befehl **Debuggen > Starten ohne Debugging** aus.
-    
+
 IPython verfügt über viele weitere nützliche Features, wie z.B. Escapevorgang zur Shell des Betriebssystems, Variablenersetzung, Ausgabenerfassung usw. Weitere Informationen finden Sie in der [IPython documentation (IPython Dokumentation)](http://ipython.org/documentation.html).
 
 ## <a name="related-topics"></a>Verwandte Themen
 
 - Wenn Sie Jupyter einfach und ohne Installation verwenden möchten, testen Sie den [Azure Notebooks hosted service (gehosteten Azure-Dienst für Notebooks)](https://notebooks.azure.com/), um Ihre Notebooks zu verwalten und mit anderen zu teilen.
 
-- Sie können Jupyter (ehemals IPython) auch auf Ihrem eigenen virtuellen Computer (Windows oder Linux) auf Azure ausführen. Weitere Informationen finden Sie unter [Creating an Azure VM. installing Jupyter, and running Jupyter Notebook on Azure (Erstellen einer Azure-VM, Installieren von Jupyter und Ausführen von Jupyter-Notebook in Azure)](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-linux-jupyter-notebook).
+- Sie können Jupyter (ehemals IPython) auch auf Ihrem eigenen virtuellen Computer (Windows oder Linux) auf Azure ausführen. Weitere Informationen finden Sie unter [Creating an Azure VM. installing Jupyter, and running Jupyter Notebook on Azure (Erstellen einer Azure-VM, Installieren von Jupyter und Ausführen von Jupyter-Notebook in Azure)](/azure/virtual-machines/virtual-machines-linux-jupyter-notebook).

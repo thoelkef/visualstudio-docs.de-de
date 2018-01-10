@@ -11,16 +11,15 @@ helpviewer_keywords:
 - Visual Studio, unit tests
 - unit tests, verifying code with
 - testing code, automated tests
-ms.assetid: c191de3e-3f3b-471e-b828-29ec24e80e2c
-caps.latest.revision: "62"
-ms.author: douge
-manager: douge
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: a60e3236769cbaf35a9b232629834a8b8d52a852
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: gewarren
+ms.openlocfilehash: a70433a811ad8cf45bb44b12c2971c90c8f82ff2
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="unit-test-your-code"></a>Komponententest für Code
 Mit Komponententests können Entwickler und Tester die Methoden der Klassen in [!INCLUDE[csharp_current_short](../misc/includes/csharp_current_short_md.md)]-, [!INCLUDE[vb_current_short](../debugger/includes/vb_current_short_md.md)]- und [!INCLUDE[cpp_current_short](../misc/includes/cpp_current_short_md.md)]-Projekten schnell auf logische Fehler überprüfen.  
@@ -55,15 +54,6 @@ Mit Komponententests können Entwickler und Tester die Methoden der Klassen in [
 |**Erweitern Sie den Komponententesttyp:** Sie können den Tests Funktionen hinzufügen, die im Komponententest-Framework möglicherweise nicht enthalten sind. Sie können z. B. eine Testeigenschaft hinzufügen, die angibt, ob ein Test als normaler Benutzer ausgeführt werden soll. Sie können das Framework auch erweitern, indem Sie einer Methode Zeilenattribute hinzufügen und die Daten in dieser Zeile im Test verwenden.|Beispielcode zum Erweitern des Komponententestframeworks finden Sie auf der [Microsoft-Website](http://go.microsoft.com/fwlink/?LinkId=185591).|  
 |**Festlegen von Testoptionen:** Sie können beispielsweise angeben, an welchem Ort die Testergebnisse gespeichert werden.|[Konfigurieren von Komponententests mithilfe einer .runsettings-Datei](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)|  
   
-## <a name="related-tasks"></a>Verwandte Aufgaben  
- [Prüfen von Testergebnissen in Microsoft Test Manager](http://msdn.microsoft.com/en-us/9fb3e429-78df-4fe2-89ed-0ad1db0738f4)  
-  
- Beschreibt Testergebnisse und verschiedene Arten, mit diesen zu arbeiten, darunter das Anzeigen, Speichern und Löschen dieser Ergebnisse.  
-  
- [Ausführen von Systemtests mit Microsoft Visual Studio](/devops-test-docs/test/running-automated-tests-using-microsoft-visual-studio)  
-  
- Enthält Links zu Informationen zum Ausführen automatisierter Tests mithilfe von Visual Studio anstelle von [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)].  
-  
 ## <a name="reference"></a>Verweis  
  <xref:Microsoft.VisualStudio.TestTools.UnitTesting>  
  Beschreibt den UnitTesting-Namespace, der Attribute, Ausnahmen, Asserts und andere Klassen bereitstellt, die Komponententests unterstützen.  
@@ -85,6 +75,6 @@ Mit Komponententests können Entwickler und Tester die Methoden der Klassen in [
 ### <a name="reference"></a>Verweis  
  [Inhaltsverzeichnis für Komponententests](http://go.microsoft.com/fwlink/?LinkID=254719)  
   
-## <a name="see-also"></a>Siehe auch  
- [Improve Code Quality (Verbessern der Codequalität)](/visualstudio/test/improve-code-quality)   
- [Testen der Anwendung](/devops-test-docs/test/test-apps-early-and-often)
+## <a name="see-also"></a>Siehe auch
+
+[Verbessern der Codequalität](/visualstudio/test/improve-code-quality)

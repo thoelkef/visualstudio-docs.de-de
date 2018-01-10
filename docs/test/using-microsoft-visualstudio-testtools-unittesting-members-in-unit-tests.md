@@ -7,16 +7,15 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 0fa335fd-e442-448f-913f-25a19df90a93
-caps.latest.revision: "6"
-ms.author: douge
-manager: douge
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 9468b796a601956941fb8d913e6ae6198afbfa59
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: gewarren
+ms.openlocfilehash: 251843d3e5a32ddedfe4f9081bd52330a457fe24
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="using-microsoftvisualstudiotesttoolsunittesting-members-in-unit-tests"></a>Verwenden von Microsoft.VisualStudio.TestTools.UnitTesting-Membern in Komponententests
 Das Framework für Komponententests unterstützt Komponententests in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Verwenden Sie zum Programmieren von Komponententests die Klassen und Member im Namespace <Microsoft.VisualStudio.TestPlatform.UnitTestFramework>. Diese können Sie verwenden, wenn Sie den Komponententest von Grund auf neu geschrieben haben oder einen Komponententest optimieren, der aus dem getesteten Code generiert wurde.  

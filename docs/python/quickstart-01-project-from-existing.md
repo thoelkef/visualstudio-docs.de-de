@@ -1,7 +1,7 @@
 ---
 title: 'Schnellstart: Erstellen eines Python-Projekts aus vorhandenem Code in Visual Studio | Microsoft-Dokumentation'
 ms.custom: 
-ms.date: 09/25/2017
+ms.date: 01/08/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: devlang-python
@@ -13,22 +13,22 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload: python
-ms.openlocfilehash: 5f8f5b3baa26bf9c17b016c2a480443af3990256
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 6e26a67c8333b343fa00e25540933223b92172dd
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="quickstart-create-a-python-project-from-existing-code"></a>Schnellstart: Erstellen eines Python-Projekts aus vorhandenem Code
 
-Sobald Sie [Python-Unterstützung für Visual Studio 2017 installiert](installation.md) haben, ist es einfach vorhandenen Python-Code in ein Visual Studio Projekt zu importieren. 
+Sobald Sie [Python-Unterstützung für Visual Studio 2017 installiert](installation.md) haben, ist es einfach vorhandenen Python-Code in ein Visual Studio Projekt zu importieren.
 
 > [!Important]
 > Der hier beschriebene Prozess verschiebt oder kopiert die ursprünglichen Quelldateien nicht. Wenn Sie mit einer Kopie arbeiten möchten, erstellen Sie zunächst eine Kopie des Ordners.
 
 [!INCLUDE[project-from-existing](includes/project-from-existing.md)]
 
-8. Falls gewünscht, führen Sie das Programm durch Drücken von STRG+F5 oder Auswählen von **Debuggen > Starten ohne Debuggen** aus. 
+8. Falls gewünscht, führen Sie das Programm durch Drücken von STRG+F5 oder Auswählen von **Debuggen > Starten ohne Debuggen** aus.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

@@ -30,11 +30,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 2d1d3c327101e535c037dba30ed19af3dcf7faaa
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 78b59ff3d8d6c54465ce29334c1dbe041b7a71be
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>Entwickeln von Code in Visual Studio ohne Projekte oder Projektmappen  
 In Visual Studio 2017 können Sie Code von Directory-basierten Projekten nahezu jeder Art öffnen, ohne dass eine Projektmappen- oder Projektdatei erforderlich ist. Dies bedeutet: Sie finden z.B. ein Codeprojekt auf Git, klonen es, öffnen es dann direkt in Visual Studio und beginnen mit der Entwicklung, ohne eine Projektmappe oder ein Projekt erstellen zu müssen.  
@@ -172,7 +172,7 @@ In diesem Verfahren fügen wir zwei benutzerdefinierte Buildaufgaben hinzu, die 
 
   ![Benutzerdefinierte Buildaufgabe, Befehl](./media/VSIDE_Code_Tasks_CustTask1.png)
 
-1. Fügen Sie „tasks.vs.json“ die folgenden Buildaufgaben hinzu. In diesem Beispiel werden zwei Aufgaben hinzugefügt: eine namens „makefile-build“, die den nMake-Befehl verwendet, um das Projekt zu erstellen, die andere mit der Bezeichnung „makefile-clean“ ruft den nMake-Befehl mit dem Argument „clean“ auf. Diese Aufgaben sollten innerhalb des vorhandenen Arrays „tasks“ hinzugefügt werden. (Beachten Sie, dass dies nur Beispielbuildaufgaben sind. Damit sie tatsächlich funktionieren, muss die Arbeitsauslastung, die [nNake](https://docs.microsoft.com/en-us/cpp/build/nmake-reference) enthält, auf Ihrem System installiert sein.)  
+1. Fügen Sie „tasks.vs.json“ die folgenden Buildaufgaben hinzu. In diesem Beispiel werden zwei Aufgaben hinzugefügt: eine namens „makefile-build“, die den nMake-Befehl verwendet, um das Projekt zu erstellen, die andere mit der Bezeichnung „makefile-clean“ ruft den nMake-Befehl mit dem Argument „clean“ auf. Diese Aufgaben sollten innerhalb des vorhandenen Arrays „tasks“ hinzugefügt werden. (Beachten Sie, dass dies nur Beispielbuildaufgaben sind. Damit sie tatsächlich funktionieren, muss die Arbeitsauslastung, die [nNake](/cpp/build/nmake-reference) enthält, auf Ihrem System installiert sein.)
 
   ```xml
   {
