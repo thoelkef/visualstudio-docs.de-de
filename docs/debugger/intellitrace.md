@@ -25,11 +25,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: bb0018e97cdbacc5e16e9591a0d480d509e1a9f5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 7a6a1a17768c1f52bec0f98ed9f9f86754856419
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="intellitrace"></a>IntelliTrace
 Durch die Verwendung von IntelliTrace zum Erfassen und Nachverfolgen Ihres Codeausführungsverlaufs können Sie beim Debuggen Ihrer Anwendung Zeit sparen. Sie können leicht Fehler finden, da mit IntelliTrace Folgendes möglich ist:  
@@ -47,7 +47,7 @@ Durch die Verwendung von IntelliTrace zum Erfassen und Nachverfolgen Ihres Codea
 |||  
 |-|-|  
 |**Debuggen Sie meine Anwendung mit IntelliTrace:**<br /><br /> -Vergangene Ereignisse auflisten.<br />-Zeigt Aufrufinformationen mit vergangenen Ereignissen.<br />-Speichern Sie IntelliTrace-Sitzung.<br />-Die von IntelliTrace erfassten Daten zu steuern.|-   [Exemplarische Vorgehensweise: Verwenden von IntelliTrace](../debugger/walkthrough-using-intellitrace.md)<br />- [IntelliTrace-Funktionen](../debugger/intellitrace-features.md)<br />-   [Verlaufsbezogenes Debugging](../debugger/historical-debugging.md)<br />-   [Anzeigen von Momentaufnahmen mithilfe von IntelliTrace-Schritt-zurück](../debugger/how-to-use-intellitrace-step-back.md)|  
-|**Sammeln von IntelliTrace-Daten während einer testsitzung im Test-Manager**|-   [Sammeln Sie weiterer Diagnosedaten in manuellen tests](/devops-test-docs/test/collect-more-diagnostic-data-in-manual-tests)|  
+|**Sammeln von IntelliTrace-Daten während einer testsitzung im Test-Manager**|-   [Sammeln Sie weiterer Diagnosedaten in manuellen tests](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests)|  
 |**Sammeln von IntelliTrace-Daten bereitgestellter Anwendungen**|-   [Verwenden die eigenständige IntelliTrace collector](../debugger/using-the-intellitrace-stand-alone-collector.md)|  
 |**Debuggen von einer IntelliTrace-Protokolldatei (ITRACE-Datei) aus.**|-   [Verwenden gespeicherte IntelliTrace-Daten](../debugger/using-saved-intellitrace-data.md)|  
   
@@ -89,7 +89,7 @@ Durch die Verwendung von IntelliTrace zum Erfassen und Nachverfolgen Ihres Codea
   
 -   Die Anwendung stürzt auf einem Testcomputer ab, wird jedoch auf einem Entwicklungscomputer erfolgreich ausgeführt.  
   
-     Sie können IntelliTrace-Daten vom Microsoft Test Manager sammeln, die Daten in einer ITRACE-Datei speichern und diese Datei später einem Team Foundation Server-Arbeitselement für die Untersuchung hinzufügen. Finden Sie unter [erfassen weiterer Diagnosedaten in manuellen Tests](/devops-test-docs/test/collect-more-diagnostic-data-in-manual-tests) und [Verwenden gespeicherter IntelliTrace-Daten](../debugger/using-saved-intellitrace-data.md).  
+     Sie können IntelliTrace-Daten vom Microsoft Test Manager sammeln, die Daten in einer ITRACE-Datei speichern und diese Datei später einem Team Foundation Server-Arbeitselement für die Untersuchung hinzufügen. Finden Sie unter [erfassen weiterer Diagnosedaten in manuellen Tests](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests) und [Verwenden gespeicherter IntelliTrace-Daten](../debugger/using-saved-intellitrace-data.md).  
   
 -   Ein Fehler oder ein Absturz geschieht in einer bereitgestellten Anwendung.  
   
@@ -180,8 +180,6 @@ Durch die Verwendung von IntelliTrace zum Erfassen und Nachverfolgen Ihres Codea
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
  [IntelliTrace-Funktionen](../debugger/intellitrace-features.md)  
-  
- [Einschließen von diagnostischen Ablaufverfolgungsdaten mit Fehlern, die schwer zu reproduzieren sind](/devops-test-docs/test_notintoc/including-diagnostic-trace-data-with-bugs-that-are-difficult-to-reproduce)  
   
  [Diagnostizieren von Problemen nach der Bereitstellung](../debugger/diagnose-problems-after-deployment.md)  
   

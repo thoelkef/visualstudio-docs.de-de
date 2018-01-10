@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 05962d6806631bdfa9b873038ec85cdf9969d55c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 376719363bd97970bdfa333d9aab0e57a8484c73
+ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="how-to-create-xml-snippets"></a>Vorgehensweise: Erstellen von XML-Ausschnitten
 Mithilfe des XML-Editors können neue XML-Ausschnitte erstellt werden. Der Editor enthält einen XML-Ausschnitt mit dem Namen "Snippet". Dies ist ein vorformulierter Ausschnitt zum Erstellen neuer XML-Ausschnitte.  
@@ -54,7 +54,7 @@ Mithilfe des XML-Editors können neue XML-Ausschnitte erstellt werden. Der Edito
   <SnippetType>SurroundsWith</SnippetType>  
   <SnippetType>Expansion</SnippetType>  
 </SnippetTypes>  
-```  
+```
   
  Die `Expansion` -Typ bestimmt, ob der Ausschnitt angezeigt, beim Aufrufen wird der **Ausschnitt einfügen** Befehl. Die `SurroundsWith` -Typ bestimmt, ob der Ausschnitt angezeigt, beim Aufrufen wird der **umgeben mit** Befehl.  
   
@@ -72,7 +72,7 @@ Mithilfe des XML-Editors können neue XML-Ausschnitte erstellt werden. Der Edito
   <name>$name$</name>  
   $selected$ $end$</test>]]>  
 </Code>  
-```  
+```
   
  Das `Code`-Element enthält drei Variablen.  
   
@@ -88,7 +88,7 @@ Mithilfe des XML-Editors können neue XML-Ausschnitte erstellt werden. Der Edito
 <test>  
   <name>name</name>  
 </test>  
-```  
+```
   
  Der Wert des name-Elements wird als editierbarer Bereich gekennzeichnet.  
   
@@ -100,7 +100,7 @@ Mithilfe des XML-Editors können neue XML-Ausschnitte erstellt werden. Der Edito
   <ID>name</ID>  
   <Default>name</Default>  
 </Literal  
-```  
+```
   
  Literale können auch auf Funktionen verweisen. Der XML-Editor umfasst eine Funktion namens **LookupPrefix**. Die **LookupPrefix** -Funktion sucht nach dem angegebenen Namespace-URI von der Position im XML-Dokument, dass dieser Ausschnitt aus aufgerufen wird, und gibt das Namespacepräfix, das für diesen Namespace definiert ist, sofern vorhanden, und fügt den Doppelpunkt (:)) In diesem Namen. Im folgenden ist ein Beispiel für eine `Literal` Element, das verwendet die **LookupPrefix** Funktion.  
   
@@ -109,7 +109,7 @@ Mithilfe des XML-Editors können neue XML-Ausschnitte erstellt werden. Der Edito
    <ID>prefix</ID>  
    <Function>LookupPrefix("namespaceURI")</Function>  
 </Literal>  
-```  
+```
   
  Die $prefix$-Variable kann anschließend an beliebiger Stelle im XML-Ausschnitt verwendet werden.  
   

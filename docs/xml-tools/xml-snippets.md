@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 88ccba516a0bce6e3413bf14d38d32baf68d8274
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 9a419d738943f780ddb6077978242ac08ff91d36
+ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="xml-snippets"></a>XML-Ausschnitte
 Der XML-Editor bietet eine Funktion *XML-Ausschnitte*, mit dem Sie schneller XML-Dateien erstellen. Sie können XML-Ausschnitte wiederverwenden, indem Sie diese in die Dateien einfügen. XML-Dateien können auch auf der Grundlage eines XSD-Schemas (XML Schema Definition Language) erstellt werden.  
@@ -37,7 +37,7 @@ Der XML-Editor bietet eine Funktion *XML-Ausschnitte*, mit dem Sie schneller XML
     </xs:sequence>  
   </xs:complexType>  
 </xs:element>  
-```  
+```
   
  Es gibt zwei Möglichkeiten zum Einfügen von Ausschnitten. Die **Ausschnitt einfügen** Befehl fügt den XML-Ausschnitt an der Cursorposition eingefügt. Die **Umschließen mit** Befehl dient als Wrapper für die XML-Ausschnitt des markierten Texts. Beide Befehle sind entweder verfügbar aus den **IntelliSense** Untermenü unter der **bearbeiten** im Menü oder aus dem Editor-Kontextmenü.  
   

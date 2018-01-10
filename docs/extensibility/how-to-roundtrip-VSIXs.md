@@ -13,11 +13,11 @@ author: willbrown
 ms.author: willbrown
 manager: justinclareburt
 ms.workload: willbrown
-ms.openlocfilehash: e6ce654e158fbfbdaa3692d37f638e72085f8c4c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: b51673daa7a8c3526ad7de7f7cfdeac6a91d3b4b
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="how-to-make-extensions-compatible-with-visual-studio-2017-and-visual-studio-2015"></a>Vorgehensweise: Erweiterungen mit Visual Studio 2017 und Visual Studio 2015 kompatibel zu machen
 
@@ -169,7 +169,7 @@ Es wird dringend empfohlen, einen Verweis auf eine geänderte csproj geöffnet i
 Zum Beispiel:
 
 ```xml
-<Import Project="packages\Microsoft.VSSDK.BuildTools.15.0.26201… Condition="'$(VisualStudioVersion)' != '14.0' And Exists(…/>
+<Import Project="packages\Microsoft.VSSDK.BuildTools.15.0.26201…" Condition="'$(VisualStudioVersion)' != '14.0' And Exists(…" />
 ```
 
 * Zusätzliche bedingte Anweisungen zum Hinzufügen der `<import>` Tags, die eine Microsoft.VisualStudio.Sdk.BuildTasks.14.0 haben.  Zu diesem Zweck einfügen `'$(VisualStudioVersion)' == '14.0' And` an den Anfang der bedingungsanweisung. Diese Anweisungen werden in der Kopf- und Fußzeile der Csproj-Datei angezeigt.
@@ -177,7 +177,7 @@ Zum Beispiel:
 Zum Beispiel:
 
 ```xml
-<Import Project="packages\ Microsoft.VisualStudio.Sdk.BuildTasks.14.0.14.0… Condition="'$(VisualStudioVersion)' == '14.0' And Exists(…/>
+<Import Project="packages\Microsoft.VisualStudio.Sdk.BuildTasks.14.0.14.0…" Condition="'$(VisualStudioVersion)' == '14.0' And Exists(…" />
 ```
 
 * Zusätzliche bedingte Anweisungen zum Hinzufügen der `<Error>` Tags, die einen Verweis Microsoft.VSSDK.BuildTools verfügen.  Zu diesem Zweck einfügen `'$(VisualStudioVersion)' != '14.0' And` an den Anfang der bedingungsanweisung. Diese Anweisungen werden in der Fußzeile der Csproj-Datei angezeigt.
@@ -185,7 +185,7 @@ Zum Beispiel:
 Zum Beispiel:
 
 ```xml
-<Error Condition="'$(VisualStudioVersion)' != '14.0' And Exists('packages\Microsoft.VSSDK.BuildTools.15.0.26201…/>
+<Error Condition="'$(VisualStudioVersion)' != '14.0' And Exists('packages\Microsoft.VSSDK.BuildTools.15.0.26201…" />
 ```
 
 * Zusätzliche bedingte Anweisungen zum Hinzufügen der `<Error>` Tags, die eine Microsoft.VisualStudio.Sdk.BuildTasks.14.0 haben.  Zu diesem Zweck einfügen `'$(VisualStudioVersion)' == '14.0' And` an den Anfang der bedingungsanweisung. Diese Anweisungen werden in der Fußzeile der Csproj-Datei angezeigt.
@@ -193,7 +193,7 @@ Zum Beispiel:
 Zum Beispiel:
 
 ```xml
-<Error Condition="'$(VisualStudioVersion)' == '14.0' And Exists('packages\ Microsoft.VisualStudio.Sdk.BuildTasks.14.0.14.0…/>
+<Error Condition="'$(VisualStudioVersion)' == '14.0' And Exists('packages\Microsoft.VisualStudio.Sdk.BuildTasks.14.0.14.0…" />
 ```
 
 * Speichern Sie die Csproj-Datei, und schließen Sie es.
