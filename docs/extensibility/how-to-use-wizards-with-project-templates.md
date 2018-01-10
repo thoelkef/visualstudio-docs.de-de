@@ -19,11 +19,11 @@ author: gregvanl
 ms.author: gregvanl
 manager: ghogen
 ms.workload: vssdk
-ms.openlocfilehash: 6e76a8880e488177f12cfb949ec46e95fd825986
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: 8eef98d11f98e3db8216c69dcfacf478c676a837
+ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="how-to-use-wizards-with-project-templates"></a>Gewusst wie: Verwenden von Assistenten mit Projektvorlagen
 Visual Studio stellt die <xref:Microsoft.VisualStudio.TemplateWizard.IWizard>-Schnittstelle bereit, die, falls sie implementiert ist, das Ausführen von benutzerdefiniertem Code beim Erstellen eines Projekts aus einer Vorlage ermöglicht.  
@@ -198,6 +198,7 @@ Visual Studio stellt die <xref:Microsoft.VisualStudio.TemplateWizard.IWizard>-Sc
             private void button1_Click(object sender, EventArgs e)  
             {  
                 customMessage = textBox1.Text;  
+                this.Close();
             }  
         }  
     ```  
@@ -231,13 +232,13 @@ Visual Studio stellt die <xref:Microsoft.VisualStudio.TemplateWizard.IWizard>-Sc
   
 10. Extrahieren Sie den öffentlichen Schlüssel aus der Datei "Key.snk". Geben Sie im Befehlsfenster  
   
-     **\<Speicherort von "sn.exe" > \sn.exe - p "Key.snk" outfile.key.**  
+     **\<Speicherort von "sn.exe" > \sn.exe -p "Key.snk" outfile.key.**  
   
      Vergessen Sie nicht den Pfad von "sn.exe" mit Anführungszeichen umschließen, wenn Leerzeichen im Verzeichnisnamen vorliegen.  
   
 11. Abrufen des öffentlichen Schlüsseltokens aus der Outfile:  
   
-     **\<Speicherort von "sn.exe" > \sn.exe - t outfile.key.**  
+     **\<Speicherort von "sn.exe" > \sn.exe -t outfile.key.**  
   
      Vergessen Sie nicht erneut, die Anführungszeichen. Eine Zeile in der Ausgabe wie folgt sollte angezeigt werden.  
   
