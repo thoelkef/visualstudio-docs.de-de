@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 50f2577436eeb102424a968416f43e58cb0febd1
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: python
+ms.openlocfilehash: 60e6daf25d4ce9c43f07495e9efa89ec215ec16b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="refactoring-python-code"></a>Umgestalten von Python-Code
 
@@ -28,6 +29,7 @@ Visual Studio bietet verschiedene Befehle zum automatischen Transformieren und B
 - [Nicht verwendete Importe entfernen](#remove-imports): Entfernt nicht verwendete Importe.
 
 <a name="rename-variable"</a>
+
 ## <a name="rename"></a>Umbenennen
 
 1. Klicken Sie mit der rechten Maustaste auf den Bezeichner, den Sie umbenennen möchten, und wählen Sie **Umbenennen** aus. Alternativ dazu platzieren Sie den Textcursor in diesem Bezeichner und wählen den Menübefehl (F2) **Bearbeiten > Umgestalten > Umbenennen...** aus.

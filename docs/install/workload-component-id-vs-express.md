@@ -5,7 +5,7 @@ keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.date: 10/09/2017
+ms.date: 12/01/2017
 ms.topic: article
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -14,11 +14,12 @@ helpviewer_keywords:
 ms.service: 
 ms.technology: vs-acquisition
 ms.assetid: a3c0cc76-e3ce-435c-a1af-a6318b5a4dbe
-ms.openlocfilehash: e3f2a67b37d4e6ef6ad7b5e1a946847f63d12903
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.workload: multiple
+ms.openlocfilehash: a628d2af0ccfaf66c936b391a977a0869139c98b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-desktop-express-2017-workload-and-component-ids"></a>Arbeitsauslastungs- und Komponenten-IDs in Visual Studio Desktop Express 2017
 
@@ -42,12 +43,12 @@ Weitere Informationen zur Verwendung dieser IDs finden Sie auf der Seite [Verwen
 
 ### <a name="components-included-by-this-workload"></a>Komponenten in dieser Arbeitsauslastung
 
-Komponenten-ID | Name | Version | Abhängigkeitstyp
+Komponenten-ID | name | Version | Abhängigkeitstyp
 --- | --- | --- | ---
-Microsoft.Component.ClickOnce | ClickOnce-Veröffentlichung | 15.0.26919.1 | Erforderlich
-Microsoft.Component.HelpViewer | Help Viewer | 15.0.26711.1 | Erforderlich
-Microsoft.Component.MSBuild | MSBuild | 15.0.26208.0 | Erforderlich
-Microsoft.Component.VC.Runtime.OSSupport | Visual C++ Runtime für UWP | 15.0.26621.2 | Erforderlich
+Microsoft.Component.ClickOnce | ClickOnce-Veröffentlichung | 15.0.27019.1 | Erforderlich
+Microsoft.Component.HelpViewer | Help Viewer | 15.0.27005.2 | Erforderlich
+Microsoft.Component.MSBuild | MSBuild | 15.0.27019.1 | Erforderlich
+Microsoft.Component.VC.Runtime.OSSupport | Visual C++ Runtime für UWP | 15.0.27019.1 | Erforderlich
 Microsoft.Net.Component.4.5.1.TargetingPack | Paket zur Festlegung von Zielversionen von .NET Framework 4.5.1 | 15.0.26621.2 | Erforderlich
 Microsoft.Net.Component.4.5.2.TargetingPack | Paket zur Festlegung von Zielversionen von .NET Framework 4.5.2 | 15.0.26621.2 | Erforderlich
 Microsoft.Net.Component.4.5.TargetingPack | Paket zur Festlegung von Zielversionen von .NET Framework 4.5 | 15.0.26621.2 | Erforderlich
@@ -55,14 +56,14 @@ Microsoft.Net.Component.4.6.1.SDK | .NET Framework 4.6.1 SDK | 15.0.26621.2 | Er
 Microsoft.Net.Component.4.6.1.TargetingPack | Paket zur Festlegung von Zielversionen von .NET Framework 4.6.1 | 15.0.26621.2 | Erforderlich
 Microsoft.Net.Component.4.6.TargetingPack | Paket zur Festlegung von Zielversionen von .NET Framework 4.6 | 15.0.26621.2 | Erforderlich
 Microsoft.Net.Component.4.TargetingPack | Paket zur Festlegung von Zielversionen von .NET Framework 4 | 15.0.26621.2 | Erforderlich
-Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET Framework 4.6.1-Entwicklungstools | 15.0.26606.0 | Erforderlich
+Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET Framework 4.6.1-Entwicklungstools | 15.0.27005.2 | Erforderlich
 Microsoft.Net.ComponentGroup.TargetingPacks.Common | Entwicklungstools für .NET Framework 4 – 4.6 | 15.0.26606.0 | Erforderlich
-Microsoft.VisualStudio.Component.Common.Azure.Tools | Tools für Konnektivität und Veröffentlichung | 1.10.50614.2 | Erforderlich
+Microsoft.VisualStudio.Component.Common.Azure.Tools | Tools für Konnektivität und Veröffentlichung | 1.10.50912.1 | Erforderlich
 Microsoft.VisualStudio.Component.CoreEditor | Visual Studio-Kern-Editor | 15.0.26606.0 | Erforderlich
 Microsoft.VisualStudio.Component.EntityFramework | Entity Framework 6-Tools | 15.0.26208.0 | Erforderlich
-Microsoft.VisualStudio.Component.NuGet | NuGet-Paket-Manager | 15.0.26621.2 | Erforderlich
-Microsoft.VisualStudio.Component.Roslyn.Compiler | C#- und Visual Basic-Roslyn-Compiler | 15.0.26208.0 | Erforderlich
-Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# und Visual Basic | 15.0.26711.1 | Erforderlich
+Microsoft.VisualStudio.Component.NuGet | NuGet-Paket-Manager | 15.0.27128.1 | Erforderlich
+Microsoft.VisualStudio.Component.Roslyn.Compiler | C#- und Visual Basic-Roslyn-Compiler | 15.0.27019.1 | Erforderlich
+Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# und Visual Basic | 15.0.27019.1 | Erforderlich
 Microsoft.VisualStudio.Component.SQL.ADAL | SQL ADAL-Runtime | 15.0.26606.0 | Erforderlich
 Microsoft.VisualStudio.Component.SQL.CLR | CLR-Datentypen für SQL Server | 15.0.26208.0 | Erforderlich
 Microsoft.VisualStudio.Component.SQL.CMDUtils | SQL Server-Befehlszeilenprogramme | 15.0.26208.0 | Erforderlich
@@ -72,23 +73,23 @@ Microsoft.VisualStudio.Component.SQL.NCLI | SQL Server Native Client | 15.0.2620
 Microsoft.VisualStudio.Component.SQL.SSDT | SQL Server-Datentools | 15.0.26906.1 | Erforderlich
 Microsoft.VisualStudio.Component.Static.Analysis.Tools | Statische Analysetools | 15.0.26208.0 | Erforderlich
 Microsoft.VisualStudio.Component.TextTemplating | Textvorlagentransformation | 15.0.26208.0 | Erforderlich
-Microsoft.VisualStudio.Component.VC.CLI.Support | C++-/CLI-Unterstützung | 15.0.26823.1 | Erforderlich
-Microsoft.VisualStudio.Component.VC.Tools.ARM | Visual Studio C++-Compiler und -Bibliotheken für ARM | 15.0.26906.1 | Erforderlich
-Microsoft.VisualStudio.Component.VC.Tools.ARM64 | Visual C++-Compiler und -Bibliotheken für ARM64 | 15.0.26906.1 | Erforderlich
+Microsoft.VisualStudio.Component.VC.CLI.Support | C++-/CLI-Unterstützung | 15.0.27019.1 | Erforderlich
+Microsoft.VisualStudio.Component.VC.Tools.ARM | Visual Studio C++-Compiler und -Bibliotheken für ARM | 15.0.27019.1 | Erforderlich
+Microsoft.VisualStudio.Component.VC.Tools.ARM64 | Visual C++-Compiler und -Bibliotheken für ARM64 | 15.0.27019.1 | Erforderlich
 Microsoft.VisualStudio.Component.VisualStudioData | Datenquellen und Dienstverweise | 15.0.26208.0 | Erforderlich
 Microsoft.VisualStudio.Component.Windows10SDK.14393 | Windows 10 SDK (10.0.14393.0) | 15.0.26208.0 | Erforderlich
-Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop | Windows 10 SDK (10.0.16299.0) für Desktop C++ [x86 und x64] | 15.0.27004.2002 | Erforderlich
-Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop.arm | Windows 10 SDK (10.0.16299.0) für Desktop C++ [ARM und ARM64] | 15.0.27004.2002 | Erforderlich
-Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP | Windows 10 SDK (10.0.16299.0) für UWP: C#, VB, JS | 15.0.27004.2002 | Erforderlich
-Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP.Native | Windows 10 SDK (10.0.16299.0) für UWP: C++ | 15.0.27004.2002 | Erforderlich
+Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop | Windows 10 SDK (10.0.16299.0) für Desktop C++ [x86 und x64] | 15.0.27128.1 | Erforderlich
+Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop.arm | Windows 10 SDK (10.0.16299.0) für Desktop C++ [ARM und ARM64] | 15.0.27128.1 | Erforderlich
+Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP | Windows 10 SDK (10.0.16299.0) für UWP: C#, VB, JS | 15.0.27128.1 | Erforderlich
+Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP.Native | Windows 10 SDK (10.0.16299.0) für UWP: C++ | 15.0.27128.1 | Erforderlich
 
 ## <a name="unaffiliated-components"></a>Nicht zugeordnete Komponenten
 
 Dies sind Komponenten, die in keiner Arbeitsauslastung enthalten sind, jedoch als einzelne Komponenten ausgewählt werden können.
 
-Komponenten-ID | Name | Version
+Komponenten-ID | name | Version
 --- | --- | ---
-n/v | nicht verfügbar | n/v
+n/v | n/v | n/v
 
 ## <a name="get-support"></a>Support aufrufen
 Manchmal kann etwas schiefgehen. Wenn bei der Installation von Visual Studio ein Fehler auftritt, lesen Sie den Artikel [Problembehandlung bei Visual Studio 2017-Installations- und -Upgradefehlern](troubleshooting-installation-issues.md). Wenn keiner der Schritte zur Problembehandlung hilfreich ist, können Sie uns per Livechat kontaktieren, um Hilfe bei der Installation zu erhalten (nur in englischer Sprache). Einzelheiten finden Sie auf der [Visual Studio-Supportseite](https://www.visualstudio.com/vs/support/#talktous).
@@ -97,7 +98,7 @@ Hier sind einige weitere Supportoptionen:
 * Sie können uns über Produktprobleme mit dem Tool [Problem melden](../ide/how-to-report-a-problem-with-visual-studio-2017.md) informieren, das sowohl im Visual Studio-Installer als auch in der Visual Studio-IDE angezeigt wird.
 * Sie können uns einen Produktvorschlag unter [UserVoice](https://visualstudio.uservoice.com/forums/121579) mitteilen.
 * Sie können Probleme mit Produkten im Portal [Visual Studio Developer Community](https://developercommunity.visualstudio.com/) im Blick behalten, Fragen stellen und Antworten finden.
-* Über die [Visual Studio-Unterhaltung in der Gitter-Community](https://gitter.im/Microsoft/VisualStudio) können Sie auch Kontakt zu uns oder anderen Visual Studio-Entwicklern aufnehmen.  (Diese Option erfordert ein [GitHub](https://github.com/)-Konto).
+* Über die [Visual Studio-Unterhaltung in der Gitter-Community](https://gitter.im/Microsoft/VisualStudio) können Sie auch Kontakt zu uns oder zu anderen Visual Studio-Entwicklern aufnehmen.  (Diese Option erfordert ein [GitHub](https://github.com/)-Konto.)
 
 ## <a name="see-also"></a>Siehe auch
 

@@ -22,18 +22,19 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8b7e6a534d1a9c3b665b72f0af8257c0915e7a29
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: multiple
+ms.openlocfilehash: 2c44751b9a4eb60ddc6124311bd75592777d4cb9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-improving-ui-responsiveness-html"></a>Exemplarische Vorgehensweise: Verbesserung der Reaktionsfähigkeit der Benutzeroberfläche (HTML)
 Diese exemplarische Vorgehensweise führt Sie durch den Prozess zum Identifizieren und Beheben eines Leistungsproblems mithilfe des [Profilers für die HTML-UI-Reaktionsfähigkeit](../profiling/html-ui-responsiveness.md). Der Profiler ist in Visual Studio für universelle Windows-Apps verfügbar, die JavaScript verwenden. In diesem Szenario erstellen Sie eine Leistungstest-App, die DOM-Elemente zu häufig aktualisiert, und Sie verwenden den Profiler, um das Problem zu identifizieren und zu beheben.  
   
 ### <a name="creating-and-running-the-performance-test-app"></a>Erstellen und Ausführen der Leistungstest-App  
   
-1.  Erstellen Sie in Visual Studio ein neues JavaScript-Projekt für Windows (universell). Wählen Sie **Datei > Neu > Projekt** aus. Wählen Sie im linken Bereich **JavaScript** und anschließend **Windows**, **Windows 10** und dann entweder **Universell** oder **Windows Phone** aus.  
+1.  Erstellen Sie in Visual Studio ein neues JavaScript-Projekt für Windows (universell). Klicken Sie auf **Datei > Neu > Projekt**. Wählen Sie im linken Bereich **JavaScript** und anschließend **Windows**, **Windows 10** und dann entweder **Universell** oder **Windows Phone** aus.  
   
 2.  > [!IMPORTANT]
     >  Die in diesem Thema gezeigten Ergebnisse der Diagnose werden für Windows 8-Apps angezeigt.  

@@ -12,13 +12,14 @@ caps.latest.revision: "13"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: e4e09e0957ab9aa412d8bd8fc1ea2494c9fb5553
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f5625ae1e666e6e59873d030e6732ef3ef3e6a35
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
-# <a name="tutorial-3-create-a-matching-game"></a>Lernprogramm 3: Erstellen eines Vergleichsspiels
+# <a name="tutorial-3-create-a-matching-game"></a>Tutorial 3: Erstellen eines Memory-Spiels
 In diesem Lernprogramm erstellen Sie ein Vergleichsspiel, bei dem Spieler ausgeblendete Symbolpaare finden müssen. Sie lernen Folgendes:  
   
 -   Speichern von Objekten (beispielsweise Symbole) in einem `List`-Objekt  
@@ -29,7 +30,7 @@ In diesem Lernprogramm erstellen Sie ein Vergleichsspiel, bei dem Spieler ausgeb
   
 -   Erstellen eines Ereignishandlers für mehrere Objekte zum Reagieren auf Ereignisse  
   
--   Erstellen eines Zeitgebers, der nach dem Start und Ablauf einer bestimmten Zeit genau ein Ereignis auslöst  
+-   Erstellen eines Timers, der nach dem Start und Ablauf einer bestimmten Zeit genau ein Ereignis auslöst  
   
  Am Ende dieses Lernprogramms sieht Ihr Code so aus wie in der folgenden Abbildung.  
   
@@ -45,7 +46,7 @@ Spiel, das Sie in diesem Lernprogramm erstellen
   
 ## <a name="related-topics"></a>Verwandte Themen  
   
-|Titel|Beschreibung|  
+|Titel|description|  
 |-----------|-----------------|  
 |[Schritt 1: Erstellen eines Projekts und Hinzufügen einer Tabelle zum Formular](../ide/step-1-create-a-project-and-add-a-table-to-your-form.md)|Erstellen Sie zuerst das Projekt, und fügen Sie ein `TableLayoutPanel`-Steuerelement hinzu, um die Steuerelemente richtig auszurichten.|  
 |[Schritt 2: Hinzufügen eines zufällig ausgewählten Objekts und einer Liste von Symbolen](../ide/step-2-add-a-random-object-and-a-list-of-icons.md)|Fügen Sie ein `Random`-Objekt und ein `List`-Objekt hinzu, um eine Liste mit Symbolen zu erstellen.|  

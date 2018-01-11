@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 90f22c2f7626b09f230c497c54c8a37511ea1b0b
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: python
+ms.openlocfilehash: 5e8c34c777abf9f7932d05396cb03e612bfd8eea
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="step-4-running-code-in-the-debugger"></a>Schritt 4: Ausführen von Code im Debugger
 
@@ -26,34 +27,34 @@ Zusätzlich zum Verwalten von Projekten, das mit seinen umfassenden Bearbeitungs
 
 1. Ersetzen Sie den Code in der Datei `PythonApplication1.py` durch den folgenden Code. Durch diese Codevariation wird `make_dot_string` erweitert, damit Sie die zugehörigen separaten Schritte im Debugger untersuchen können. Zudem wird die `for`-Schleife in einer `main`-Funktion platziert und explizit durch den Aufruf dieser Funktion ausgeführt:
 
-    ```python  
-    import sys  
-    from math import sin, cos, radians    
-    
+    ```python
+    import sys
+    from math import sin, cos, radians
+
     # Create a string with spaces proportional to a cosine of x in degrees
     def make_dot_string(x):
         rad = radians(x)                             # cos works with radians
         numspaces = int(20 * cos(radians(x)) + 20)   # scale to 0-40 spaces
         str = ' ' * numspaces + 'o'                  # place 'o' after the spaces
         return str
-    
-    def main():  
-        for i in range(0, 1800, 12):
-            s = make_dot_string(i)  
-            print(s)  
-            
-    main()
-    ```  
 
-1. Überprüfen Sie, ob der Code ordnungsgemäß funktioniert, indem Sie F5 drücken oder den Menübefehl **Debuggen > Debuggen starten** wählen. Durch diesen Befehl wird der Code im Debugger ausgeführt. Da Sie jedoch keine Maßnahmen ergriffen haben, um das Programm während seiner Ausführung anzuhalten, werden nur Wellenmuster für ein paar Iterationen ausgegeben. Drücken einer Taste im Ausgabefenster.
+    def main():
+        for i in range(0, 1800, 12):
+            s = make_dot_string(i)
+            print(s)
+
+    main()
+    ```
+
+1. Überprüfen Sie, ob der Code ordnungsgemäß funktioniert, indem Sie F5 drücken oder den Menübefehl **Debuggen > Debuggen starten** wählen. Durch diesen Befehl wird der Code im Debugger ausgeführt. Da Sie jedoch keine Maßnahmen ergriffen haben, um das Programm während seiner Ausführung anzuhalten, werden nur Wellenmuster für ein paar Iterationen ausgegeben. Drücken Sie eine beliebige Taste, um das Ausgabefenster zu schließen.
 
     > [!Tip]
     > Damit das Ausgabefenster automatisch geschlossen wird, wenn das Programm abgeschlossen ist, ersetzen Sie den `main()`-Aufruf durch den folgenden Code:
     >
-    > ```python    
-    > if __name__ == "__main__":  
-    >     sys.exit(int(main() or 0))      
-    > ```    
+    > ```python
+    > if __name__ == "__main__":
+    >     sys.exit(int(main() or 0))
+    > ```
 
 1. Legen Sie in der `for`-Anweisung einen Haltepunkt fest, indem Sie auf den grauen Rand dieser Zeile klicken oder das Caretzeichen in dieser Zeile platzieren und den Befehl **Debuggen > Haltepunkt ein/aus** (F9) ausführen. Auf dem grauen Rand erscheint ein roter Punkt, der den Haltepunkt kennzeichnet (siehe Pfeil unten):
 
@@ -78,7 +79,7 @@ Zusätzlich zum Verwalten von Projekten, das mit seinen umfassenden Bearbeitungs
     - **Rücksprung** (Umschalt+F11): Führt den Rest der aktuellen Funktion aus und wird im aufrufenden Code angehalten.
 
 1. Überspringen Sie die `for`-Anweisung mithilfe der Schaltfläche **Überspringen**. *Stepping* bedeutet, dass der Debugger die aktuelle Codezeile einschließlich sämtlicher Funktionsaufrufe ausführt und anschließend sofort angehalten wird. Beachten Sie, wie die Variable `i` jetzt in den Fenstern **Lokal** und **Auto** definiert ist.
- 
+
 1. Überspringen Sie die nächste Codezeile, in der `make_dot_string` aufgerufen wird und die angehalten wird. „Überspringen“ bedeutet hier insbesondere, dass der Debugger die gesamte Variable `make_dot_string` ausführt und bei der Rückgabe angehalten wird. Der Debugger wird nicht innerhalb dieser Funktion beendet, es sei denn, in dieser Funktion ist ein separater Haltepunkt vorhanden.
 
 1. Überspringen Sie den Code mehrmals, und beobachten Sie, wie sich die Werte im Fenster **Lokal** oder **Auto** ändern.
@@ -86,20 +87,20 @@ Zusätzlich zum Verwalten von Projekten, das mit seinen umfassenden Bearbeitungs
 1. Doppelklicken Sie im Fenster **Lokal** oder **Auto** in die Spalte **Wert** der `i`- oder `s`-Variablen, um den Wert zu bearbeiten. Drücken Sie die Eingabetaste, oder klicken Sie außerhalb dieses Werts, damit alle Änderungen übernommen werden.
 
 1. Fahren Sie mithilfe von **Schrittweise ausführen** mit der ausführlichen Ausführung des Codes fort. „Schrittweise ausführen“ bedeutet, dass der Debugger zu einem beliebigen Funktionsaufruf wechselt, zu dem ihm Debuginformationen vorliegen, z.B. `make_dot_string`. Wenn Sie sich in `make_dot_string` befinden, können Sie die zugehörigen lokalen Variablen untersuchen und den zugehörigen Code gezielt durchlaufen.
- 
+
 1. Fahren Sie mit der ausführlichen Ausführung fort, und beachten Sie, dass bei Erreichen des Endes von `make_dot_string` der nächste Schritt an die `for`-Schleife mit dem neuen Rückgabewert in der `s`-Variable zurückgegeben wird. Beachten Sie bei der ausführlichen Ausführung der `print`-Anweisung, dass „Schrittweise ausführen“ bei `print` nicht zu dieser Funktion wechselt. Grund hierfür ist, dass `print` nicht in Python geschrieben wurde, sondern es sich vielmehr um nativen Code in der Python-Laufzeit handelt.
 
 1. Fahren Sie mit der Verwendung von „Schrittweise ausführen“ fort, bis Sie sich erneut in `make_dot_string` befinden. Verwenden Sie anschließend **Rücksprung**, und achten Sie darauf, dass Sie zur `for`-Schleife zurückkehren. Über die Schaltfläche „Rücksprung“ führt der Debugger den Rest der Funktion aus und wird anschließend automatisch im aufrufenden Code angehalten. Dies ist sehr hilfreich, wenn Sie einen Abschnitt einer langen Funktion schrittweise ausgeführt haben, die Sie debuggen möchten, den Rest jedoch nicht schrittweise ausführen möchten und im aufrufenden Code keinen expliziten Haltepunkt festlegen möchten.
 
 1. Über die Schaltfläche **Fortfahren** (F5) können Sie die Ausführung des Programms fortsetzen, bis der nächste Haltepunkt erreicht ist. Da Sie in der `for`-Schleife einen Haltepunkt festgelegt haben, kommt es bei der nächsten Iteration zum Halt.
 
-1. Die ausführliche Ausführung von Hunderten von Iterationen einer Schleife kann mühsam sein. Daher können Sie in Visual Studio eine *Bedingung* zu einem Haltepunkt hinzufügen. Der Debugger hält das Programm nur dann am Haltepunkt an, wenn die Bedingung erfüllt ist. So können Sie beispielsweise in der `for`-Anweisung eine Bedingung mit dem Haltepunkt verwenden, damit das Programm nur dann angehalten wird, wenn der Wert von `i` 1600 überschritten wird. Klicken Sie zum Festlegen einer Bedingung mit der rechten Maustaste auf den roten Punkt, der den Haltepunkt markiert, und wählen Sie **Bedingungen...** aus. (Alt+F9, C). Geben Sie im Popupmenü **Haltepunkteinstellungen**, das angezeigt wird, `i > 1600` als Ausdruck ein, und wählen Sie **Schließen** aus. Drücken Sie zum Fortfahren auf F5, und beobachten Sie, ob das Programm vor dem nächsten Haltepunkt viele Iterationen ausführt. 
+1. Die ausführliche Ausführung von Hunderten von Iterationen einer Schleife kann mühsam sein. Daher können Sie in Visual Studio eine *Bedingung* zu einem Haltepunkt hinzufügen. Der Debugger hält das Programm nur dann am Haltepunkt an, wenn die Bedingung erfüllt ist. So können Sie beispielsweise in der `for`-Anweisung eine Bedingung mit dem Haltepunkt verwenden, damit das Programm nur dann angehalten wird, wenn der Wert von `i` 1600 überschritten wird. Klicken Sie zum Festlegen einer Bedingung mit der rechten Maustaste auf den roten Punkt, der den Haltepunkt markiert, und wählen Sie **Bedingungen...** aus. (Alt+F9, C). Geben Sie im Popupmenü **Haltepunkteinstellungen**, das angezeigt wird, `i > 1600` als Ausdruck ein, und wählen Sie **Schließen** aus. Drücken Sie zum Fortfahren auf F5, und beobachten Sie, ob das Programm vor dem nächsten Haltepunkt viele Iterationen ausführt.
 
     ![Festlegen einer Haltepunktbedingung](media/vs-getting-started-python-21-debugging4.png)
 
 1. Wenn Sie das Programm bis zum Ende ausführen möchten, deaktivieren Sie den Haltepunkt, indem Sie einen Rechtsklick durchführen und **Haltepunkt deaktivieren** (Strg+F9) auswählen. Wählen Sie anschließend **Weiter** aus (oder drücken Sie F5), um das Programm auszuführen. Wenn das Programm beendet wird, beendet Visual Studio die zugehörige Debugsitzung und versetzt sie wieder in den Bearbeitungsmodus. Beachten Sie, dass Sie den Haltepunkt auch löschen können, indem Sie auf den zugehörigen Punkt klicken. Dadurch werden jedoch auch sämtliche von Ihnen festgelegten Bedingungen gelöscht.
 
-> [!Tip]    
+> [!Tip]
 > In einigen Situationen, z.B. bei Auftreten eines Fehlers beim Starten des Python-Interpreters, erscheint das Fenster „Ausgabe“ möglicherweise nur kurz und wird anschließend automatisch geschlossen, ohne dass Sie die Möglichkeit haben, Fehlermeldungen anzuzeigen. Klicken Sie in einem solchen Fall mit der rechten Maustaste im Projektmappen-Explorer auf das Projekt, wählen Sie **Eigenschaften** und die Registerkarte **Debuggen** aus, und fügen Sie anschließend `-i` zum Feld **Interpreterargumente** hinzu. Durch dieses Argument wird der Interpreter nach Abschluss des Programms in den interaktiven Modus versetzt. Das Fenster bleibt dabei offen, bis Sie Strg+Z+Eingabe zum Beenden drücken.
 
 ## <a name="next-steps"></a>Nächste Schritte
@@ -108,5 +109,6 @@ Zusätzlich zum Verwalten von Projekten, das mit seinen umfassenden Bearbeitungs
 > [Installieren von Paketen in Ihrer Python-Umgebung](vs-tutorial-01-05.md)
 
 ### <a name="going-deeper"></a>Vertiefung
+
 - [Debuggen](debugging.md).
 - Die vollständige Dokumentation zu Debugfeatures von Visual Studio finden Sie unter [Debugging in Visual Studio](../debugger/debugging-in-visual-studio.md).

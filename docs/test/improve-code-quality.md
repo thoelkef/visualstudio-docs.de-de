@@ -1,5 +1,5 @@
 ---
-title: "Verbessern der Codequalität | Microsoft-Dokumentation"
+title: Visual Studio-Testtools | Microsoft-Dokumentation
 ms.custom: na
 ms.date: 02/17/2017
 ms.reviewer: na
@@ -8,50 +8,40 @@ ms.technology: vs-devops-test
 ms.tgt_pltfrm: na
 ms.topic: article
 helpviewer_keywords:
-- Visual Studio ALM
-- team-based development
-ms.assetid: 73baa961-c21f-43fe-bb92-3f59ae9b5945
-caps.latest.revision: "39"
+- testing tools [Visual Studio]
+- unit tests [Visual Studio]
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 93847beaef971f9370d59a8c5c8ac9f3a59a0967
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f3b7bb9139b1c63bca4c9cf9fbd61e21de6ed043
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
-# <a name="improve-code-quality"></a>Verbessern der Codequalität
-Was ist Codequalität? Korrektheit, Wartbarkeit und sogar Eleganz spielen beim Erstellen von gutem Code eine Rolle. Unabhängig davon, wie Sie Codequalität definieren, können die Visual Studio-Testtools Sie und Ihr Team dabei unterstützen, einen hohen Standard für hervorragenden Code einzuhalten.  
-  
- **Anforderungen**  
-  
--   Einige der Tools und Funktionen, die in diesem Abschnitt beschrieben werden, sind nur in bestimmten Editionen von Visual Studio verfügbar – sie sind nicht generell in Visual Studio verfügbar. In der Dokumentation für diese Tools und Funktionen werden die bestimmten Editionsanforderungen aufgeführt.  
-  
-## <a name="in-this-section"></a>In diesem Abschnitt  
- In der folgenden Tabelle finden Sie die Beschreibungen häufiger Aufgaben und Links zu weiteren Informationen zur erfolgreichen Ausführung dieser Aufgaben.  
-  
-|||  
-|-|-|  
-|[Komponententest für Code](../test/unit-test-your-code.md)|Test-Explorer vereinfacht die Integration von Komponententests in die Entwicklungspraxis. Sie können entweder das Microsoft-Komponententest-Framework oder ein Drittanbieter- oder Open-Source-Framework verwenden.|  
-|[Live Unit Testing mit Visual Studio 2017](../test/live-unit-testing.md)|Live Unit Testing führt automatisch Komponententests im Hintergrund aus und stellt Codeabdeckung und Testergebnisse im Code-Editor von Visual Studio grafisch dar.|  
-|[Analysieren der Anwendungsqualität](../code-quality/analyzing-application-quality-by-using-code-analysis-tools.md)|Analysetools für statischen Code finden Entwurfs-, Nutzungs-, Wartbarkeits- und Formatprobleme in C++ und verwaltetem Code. Viele dieser Probleme können zu Fehlern führen, die in der Standardtestumgebung nur schwer zu reproduzieren sind.|  
-|[Messen von Komplexität und Verwaltbarkeit verwalteten Codes](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)|Bei der Codemetrik handelt es sich um eine Reihe von Softwaremaßstäben, die Entwicklern einen besseren Einblick in den von ihnen entwickelten Code bieten. Die Metrik umfasst einen Wartbarkeitsindex für Funktionen und Klassen, die zyklomatische Komplexität von Funktionen, die Vererbungstiefe von Klassen und die Anzahl der Kopplungen von Klassen.|  
-  
-## <a name="related-scenarios"></a>Ähnliche Szenarien  
- [DevOps-Übersicht für Team Services und TFS](https://www.visualstudio.com/docs/devops-alm-overview)  
- Wenn Sie mit Visual Studio Team Foundation und Visual Studio Team Services nicht vertraut sind, erfahren Sie mehr zu deren Verwendung in einer Teamentwicklungsumgebung, um die Produktivität zu steigern und Risiken zu minimieren, die mit der Anwendungsentwicklung einhergehen.  
-  
- [Analysieren und Modellieren der Architektur](../modeling/analyze-and-model-your-architecture.md)  
- Sie können [!INCLUDE[vsPreExt](../test/includes/vspreext_md.md)] verwenden, um die Herausforderungen und die Komplexität der Softwareentwicklung zu verwalten. Mit [!INCLUDE[vsPreShort](../test/includes/vspreshort_md.md)] können Sie die Anwendung visuell modellieren, sowohl im aktuellen Zustand als auch im gewünschten, künftigen Zustand. Sie können Diagramme erstellen und verwalten, die Ihnen bei der Visualisierung der logischen Modelle der Anwendung helfen und gleichzeitig eine Zuordnung zu den physischen Modellen herstellen. Dadurch sind Sie in der Lage, die im Entwurf befindliche Software zu ändern, zu überprüfen und zu analysieren.  
-  
- [Testen der Anwendung](https://www.visualstudio.com/docs/test/overview)  
- Verwenden Sie [!INCLUDE[vsPreShort](../test/includes/vspreshort_md.md)] und [!INCLUDE[vsUltShort](../test/includes/vsultshort_md.md)], um Ihre Produktivität für den gesamten Testlebenszyklus zu steigern. Mit [!INCLUDE[vsPreShort](../test/includes/vspreshort_md.md)] oder [!INCLUDE[vsUltShort](../test/includes/vsultshort_md.md)] planen Sie den Testaufwand. Sie können sowohl manuelle als auch automatisierte Tests erstellen, verwalten, bearbeiten und ausführen. Außerdem können Sie den Testfortschritt anhand Ihres Plans überprüfen.  
-  
- [Schützen der Anwendung mit PreEmptive Protection – Dotfuscator](../ide/dotfuscator/index.md)  
- Verwenden Sie die kostenlose Dotfuscator Community Edition (CE), um Geschäftsgeheimnisse und sonstiges geistiges Eigentum zu sichern, Piraterie und Fälschungen zu reduzieren und Schutz vor Manipulationen und nicht autorisiertem Debuggen zu bieten.  Dotfuscator schützt und sichert kompilierte Assemblys ohne zusätzliche Programmierung und sogar ohne Zugriff auf den Quellcode.
-  
- [Erstellen der Anwendung](https://www.visualstudio.com/docs/build/overview)  
- Sie können [!INCLUDE[esprbuild](../test/includes/esprbuild_md.md)] verwenden, um automatisierte Builds für den Code zu erstellen und zu verwalten. [!INCLUDE[esprbuild](../test/includes/esprbuild_md.md)] ermöglicht das Erstellen von Ablageservern zum Bereitstellen von Builds. Außerdem können Sie Buildtrends analysieren.  
-  
- [Nachverfolgen von Arbeit mit Visual Studio Online oder Team Foundation Server](https://www.visualstudio.com/docs/work/overview)  
- Mithilfe von [!INCLUDE[vstsTfsLong](../test/includes/vststfslong_md.md)] können Sie Projekte planen und nachverfolgen, unabhängig davon, ob Sie den agilen Prozess, den formalen Prozess oder eine Variation dieser Prozesse verwenden. Indem Sie Ihre Projekte planen, den Status im Hinblick auf den Plan nachverfolgen und notwendige Anpassungen vornehmen, können Sie Risiken minimieren, unerfreuliche Überraschungen vermeiden und die Kosten der Projekte verwalten.
+# <a name="testing-tools-in-visual-studio"></a>Testtools in Visual Studio
+
+Die Visual Studio-Testtools können Sie und Ihr Team dabei unterstützen, hochwertigen Code zu entwickeln und diesen Standard einzuhalten.
+
+> [!NOTE]
+> Komponententests sind in allen Editionen von Visual Studio verfügbar. Andere Testtools wie Live Unit Testing, IntelliTest und Tests der programmierten UI sind nur in Visual Studio Enterprise verfügbar. Weitere Informationen zu den Editionen finden Sie unter [Visual Studio 2017-IDEs im Vergleich](https://www.visualstudio.com/vs/compare/).
+
+## <a name="in-this-section"></a>In diesem Abschnitt
+
+|||
+|-|-|
+|[Komponententest für Code](../test/unit-test-your-code.md)|Test-Explorer vereinfacht die Integration von Komponententests in die Entwicklungspraxis. Sie können entweder das Microsoft-Komponententest-Framework oder ein Drittanbieter- oder Open-Source-Framework verwenden.|
+|[IntelliTest](../test/generate-unit-tests-for-your-code-with-intellitest.md)|IntelliTest generiert automatisch Komponententests und Testdaten für verwalteten Code.|
+|[Code Coverage](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)|Die Code Coverage ermittelt, wie groß der Anteil des Projektcodes ist, der in codierten Tests wie Komponententests tatsächlich getestet wird.|
+|[Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)|Mit Microsoft Fakes isolieren Sie den zu testenden Code, indem Sie andere Teile der Anwendung durch Stubs oder Shims ersetzen.|
+|[Live-Komponententests](../test/live-unit-testing.md)|Live Unit Testing führt automatisch Komponententests im Hintergrund aus und stellt Codeabdeckung und Testergebnisse im Code-Editor von Visual Studio grafisch dar.|
+|[Benutzeroberflächenautomatisierung](../test/use-ui-automation-to-test-your-code.md)|Die Anwendung wird mit Tests der programmierten UI über die Benutzeroberfläche gesteuert.|
+|[Lab Management](../test/lab-management/using-a-lab-environment-for-your-application-lifecycle.md)|Eine Lab-Umgebung ist eine Sammlung virtueller und physischer Computer, die Sie verwenden können, um Anwendungen zu entwickeln und zu testen.|
+
+## <a name="related-scenarios"></a>Ähnliche Szenarios
+
+* [Exploratory & Manual Testing (VSTS) (Explorative und manuelle Tests (VSTS))](/vsts/manual-test/)
+* [Load Testing (VSTS) (Auslastungstest (VSTS))](/vsts/load-test/index)
+* [Continuous Testing (VSTS) (Fortlaufende Tests (VSTS))](/vsts/build-release/test/index)
+* [DevOps overview for Team Services and TFS (VSTS) (DevOps-Übersicht für Team Services und TFS (VSTS))](/vsts/user-guide/devops-alm-overview)
+* [Codeanalysetools](../code-quality/analyzing-application-quality-by-using-code-analysis-tools.md)

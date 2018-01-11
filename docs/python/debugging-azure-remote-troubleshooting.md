@@ -12,13 +12,16 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 6dc28135245cae755189174b18000b5c06537b6d
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload:
+- python
+- azure
+ms.openlocfilehash: 4d64338d619cbff77333e6518569d5e3b8376e36
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
-# <a name="remote-debugging-troubleshooter-for-python-and-azure"></a>Problembehandlung für das Remotedebuggen für Python und Azure
+# <a name="remote-debugging-rroubleshooter-for-python-and-azure"></a>Problembehandlung für das Remotedebuggen für Python und Azure
 
 Beim Anfügen an eine [Azure App Service for remote debugging (Azure App Service-Instanz für das Remotedebuggen)](debugging-azure-remote.md) kann in Visual Studio aus folgenden Gründen ein Fehler auftreten:
 

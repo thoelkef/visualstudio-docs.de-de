@@ -12,11 +12,12 @@ caps.latest.revision: "11"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 44065522229a1661efc41e79905d9650f7949ac3
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: python
+ms.openlocfilehash: b9762a3ce0a448fdf2b9e2d2b6127e7565187f70
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="python-projects"></a>Python-Projekte
 
@@ -56,7 +57,7 @@ Jedem Python-Projekt ist eine im Projektmappen-Explorer fett angezeigte Startdat
 > [!Tip]
 > Wenn Sie die ausgewählte Datei aus einem Projekt entfernen und keine neue auswählen, wird beim Versuch, Ihr Projekt auszuführen, ein Python-Ausgabefenster angezeigt, dass aber daraufhin sofort wieder verschwindet. Wenn dieses Verhalten auftritt, überprüfen Sie, ob Sie eine zugewiesene Startdatei haben. Damit das Ausgabefenster in Fällen wie diesem geöffnet bleibt, klicken Sie mit der rechten Maustaste auf Ihr Projekt, wählen Sie **Eigenschaften** und dann die Registerkarte **Debuggen** aus, fügen Sie anschließend `-i` zum Feld **Interpreterargumente** hinzu. Durch dieses Argument wird der Interpreter nach Abschluss des Programms in den interaktiven Modus versetzt, und das Fenster bleibt dabei offen, bis Sie STRG + Z, EINGABETASTE zum Beenden drücken.
 
-Ein neues Projekt ist immer der standardmäßigen globalen Python-Umgebung zugeordnet. Um das Projekt einer anderen Umgebung zuzuordnen (einschließlich virtueller Umgebungen), klicken Sie mit der rechten Maustaste auf den **Python-Umgebungen**-Knoten im Projekt, wählen Sie **Python-Umgebungen hinzufügen/entfernen**, und wählen Sie die gewünschten Umgebungen. Um die aktive Umgebung zu ändern, klicken Sie mit der rechten Maustaste auf die gewünschte Umgebung, und wählen Sie **Umgebung aktivieren**, wie unten dargestellt. Nähere Informationen finden Sie unter [Python-Umgebungen](python-environments.md#project-specific-environments).
+Ein neues Projekt ist immer der standardmäßigen globalen Python-Umgebung zugeordnet. Um das Projekt einer anderen Umgebung zuzuordnen (einschließlich virtueller Umgebungen), klicken Sie mit der rechten Maustaste auf den **Python-Umgebungen**-Knoten im Projekt, wählen Sie **Python-Umgebungen hinzufügen/entfernen**, und wählen Sie die gewünschten Umgebungen. Um die aktive Umgebung zu ändern, klicken Sie mit der rechten Maustaste auf die gewünschte Umgebung, und wählen Sie **Umgebung aktivieren**, wie unten dargestellt. Weitere Informationen finden Sie unter [Python-Umgebungen](python-environments.md#project-specific-environments).
 
 ![Aktivieren einer Umgebung für ein Python-Projekt](media/projects-activate-environment.png)
 
@@ -69,18 +70,18 @@ Visual Studio bietet Ihnen eine Reihe von Methoden zum Einrichten eines Python-P
 
 Die folgende Tabelle fasst die in Visual Studio 2017 verfügbaren Vorlagen zusammen (nicht alle Vorlagen stehen in allen früheren Versionen zur Verfügung):
 
-| Vorlage | Beschreibung | 
+| Vorlage | description | 
 | --- | --- |
 | [Aus vorhandenem Python-Code](#creating-a-project-from-existing-files) | Erstellt ein Visual Studio-Projekt aus vorhandenem Python-Code in einer Ordnerstruktur.  |
 | Python-Anwendung | Eine grundlegende Projektstruktur für eine neue Python-Anwendung mit einer einzelnen, leeren Quelldatei. Standardmäßig wird das Projekt im Konsoleninterpreter der globalen Standardumgebung ausgeführt, die Sie durch [Zuweisen einer anderen Umgebung](python-environments.md#project-specific-environments) ändern können. |
-| [Azure-Clouddienst](template-azure-cloud-service.md) | Ein in Python geschriebenes Projekt für einen Azure-Clouddienst. |
+| [Azure-Cloud-Dienst](template-azure-cloud-service.md) | Ein in Python geschriebenes Projekt für einen Azure-Clouddienst |
 | [Webprojekte](template-web.md) | Auf verschiedenen Frameworks einschließlich Bottle, Django, Flask und Flask/Jade basierende Projekte für Webserver. |
 | IronPython-Anwendung | Ähnlich wie die Python-Anwendungsvorlage, verwendet aber IronPython durch standardmäßige Aktivierung .von NET-Interop und Debuggen im gemischten Modus mit .NET-Sprachen. |
 | IronPython-WPF-Anwendung | Eine Projektstruktur mit IronPython mit Windows Presentation Foundation-XAML-Dateien für die Benutzeroberfläche der Anwendung. Visual Studio bietet einen XAML-Benutzeroberflächen-Designer, CodeBehind kann in Python geschrieben werden, und die Anwendung wird ohne Anzeige einer Konsole ausgeführt. |
 | IronPython-Silverlight-Webseite | Ein IronPython-Projekt, das in einem Browser mit Silverlight ausgeführt wird. Der Python-Code für die Anwendung ist auf der Webseite als Skript enthalten. Ein Codebaustein-Skript-Tag übernimmt JavaScript-Code, der die Ausführung von IronPython in Silverlight initialisiert, von wo aus der Python-Code mit dem DOM kommunizieren kann. |
 | IronPython-Windows Forms-Anwendung | Eine Projektstruktur mit IronPython, wo die Benutzeroberfläche mithilfe von Windows Forms-Code erstellt wird. Die Anwendung wird ohne Anzeige einer Konsole ausgeführt. |
 | Hintergrundanwendung (IoT) | Unterstützt die Bereitstellung von Python-Projekten zur Ausführung als Hintergrunddienste auf Geräten. Unter [Windows 10 IoT Core](https://dev.windows.com/en-us/iot) erhalten Sie weitere Informationen. |
-| Python-Erweiterungsmodul | Diese Vorlage wird unter Visual C++ angezeigt, wenn Sie die **nativen Python-Entwicklungstools** mit der Python-Arbeitsauslastung in Visual Studio 2017 installiert haben (weitere Informationen finden Sie unter [Installation](installation.md)). Sie stellt die grundlegende Struktur für eine C++-Erweiterungs-DLL bereit, ganz ähnlich der, die unter [Erstellen einer C++-Erweiterung für Python](cpp-and-python.md) beschrieben ist. |
+| Python-Erweiterungsmodul | Diese Vorlage wird unter Visual C++ angezeigt, wenn Sie die **nativen Python-Entwicklungstools** mit der Python-Arbeitsauslastung in Visual Studio 2017 installiert haben (weitere Informationen finden Sie unter [Installation](installation.md)). Sie stellt die grundlegende Struktur für eine C++-Erweiterungs-DLL bereit, ganz ähnlich der, die unter [Erstellen einer C++-Erweiterung für Python](cpp-and-python.md) beschrieben wird. |
 
 <a name="create-project-from-existing-files"</a>
 
@@ -144,6 +145,6 @@ Da Verweise in IronPython nicht verfügbar sind, bis ein Aufruf von `clr.AddRefe
 
 ### <a name="webpi-projects"></a>WebPI-Projekte
 
-Sie können WebPI-Produkteinträgen Verweise für die Bereitstellung im Microsoft Azure Cloud-Dienst hinzufügen, wo Sie zusätzliche Komponenten über den WebPI-Feed installieren können. Standardmäßig ist der angezeigte Feed Python-spezifisch und enthält Django, CPython und andere Kernkomponenten. Sie können auch Ihre eigenen Feeds auswählen, wie unten dargestellt. Beim Veröffentlichen in Microsoft Azure installiert eine Setupaufgabe alle Produkte, auf die verwiesen wird.
+Sie können WebPI-Produkteinträgen Verweise für die Bereitstellung in Microsoft Azure Cloud Services hinzufügen, wo Sie zusätzliche Komponenten über den WebPI-Feed installieren können. Standardmäßig ist der angezeigte Feed Python-spezifisch und enthält Django, CPython und andere Kernkomponenten. Sie können auch Ihre eigenen Feeds auswählen, wie unten dargestellt. Beim Veröffentlichen in Microsoft Azure installiert eine Setupaufgabe alle Produkte, auf die verwiesen wird.
 
 ![WebPI-Verweise](media/projects-webPI-components.png)

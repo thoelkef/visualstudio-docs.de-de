@@ -12,11 +12,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0133ced82f35a8daefeb3dcaaacd4822f5cad345
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0d01e7c8ef95270cde9c1054cc286b62bbe95c46
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="modify-the-style-of-objects-in-blend"></a>Ändern des Stils von Objekten in Blend
 Die einfachste Möglichkeit zum Anpassen eines Objekts ist das Festlegen von Eigenschaften im Bereich **Eigenschaften**.  
@@ -88,7 +89,7 @@ Die einfachste Möglichkeit zum Anpassen eines Objekts ist das Festlegen von Eig
 > [!NOTE]
 >  Sie können keine Stile oder Vorlagen für jede Art von Steuerelement erstellen. Wenn ein Steuerelement diese nicht unterstützt, wird die Breadcrumb-Schaltfläche nicht oberhalb der Zeichenfläche angezeigt.  
 >   
->  Um zum Bearbeitungsbereich des Hauptdokuments zurückzukehren, klicken Sie auf **Bereich zurücksetzen auf** ![](../designers/media/55844eb3-ed98-4f20-aa66-a6f5b23eeb2b.png "55844eb3-ed98-4f20-aa66-a6f5b23eeb2b").  
+>  Um zum Bearbeitungsbereich des Hauptdokuments zurückzukehren, klicken Sie auf **Return scope to** (Bereich zurücksetzen auf) ![](../designers/media/55844eb3-ed98-4f20-aa66-a6f5b23eeb2b.png "55844eb3-ed98-4f20-aa66-a6f5b23eeb2b").  
 >   
 >  ![](../designers/media/4a5612e1-7a28-4587-b870-0fe7112ec2ad.png "4a5612e1-7a28-4587-b870-0fe7112ec2ad")  
   
@@ -102,7 +103,7 @@ Die einfachste Möglichkeit zum Anpassen eines Objekts ist das Festlegen von Eig
  ![](../designers/media/dc12debc-7711-47d9-84ce-10322a384397.png "dc12debc-7711-47d9-84ce-10322a384397")  
   
 ### <a name="restore-the-default-style-or-template-of-a-control"></a>Wiederherstellen des Standardstils oder der Vorlage eines Steuerelements  
- Wählen Sie das Steuerelement aus, und suchen Sie im Bereich [Eigenschaften](http://msdn.microsoft.com/en-us/135a5a5e-ec6d-4f38-8827-60e284cd5f57) die Eigenschaft **Stil** oder **Vorlage**. Klicken Sie auf **Erweiterte Optionen** ![](../designers/media/12e06962-5d8a-480d-a837-e06b84c545bb.png "12e06962-5d8a-480d-a837-e06b84c545bb") und dann auf **Zurücksetzen** im Kontextmenü.  
+ Wählen Sie das Steuerelement aus, und suchen Sie im Bereich [Eigenschaften](http://msdn.microsoft.com/en-us/135a5a5e-ec6d-4f38-8827-60e284cd5f57) die Eigenschaft **Stil** oder **Vorlage**. Klicken Sie auf **Erweiterte Optionen** ![](../designers/media/12e06962-5d8a-480d-a837-e06b84c545bb.png "12e06962-5d8a-480d-a837-e06b84c545bb") und dann im Kontextmenü auf **Zurücksetzen**.  
   
 ##  <a name="Visual"></a> Visuelle Zustände: Ändern des Erscheinungsbilds eines Steuerelements basierend auf dessen Status  
  Steuerelemente können über unterschiedliche visuelle Darstellungen basierend auf Benutzerinteraktionen verfügen. Beispielsweise kann eine Schaltfläche grün werden, wenn ein Benutzer darauf klickt, oder Sie könnten eine Animation ausführen. Sie verkürzen oder verlängern die Zeit zwischen visuellen Zustände mithilfe von Übergängen.  

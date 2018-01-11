@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 18cd58899819e49943e009da898705cfa328ffb5
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: python
+ms.openlocfilehash: cdbbebc65eb004c11b4c36b78bd8e0089db3234e
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="step-3-using-the-interactive-repl-window"></a>Schritt 3: Verwenden des interaktiven REPL-Fensters
 
@@ -31,7 +32,7 @@ In Visual Studio bietet das *interaktive Fenster* für Python eine komfortable �
     ![Größe des interaktiven Python-Fensters durch Ziehen ändern](media/vs-getting-started-python-11-interactive1b.png)
 
     > [!Tip]
-    > Sie können die Größe aller Fenster in Visual Studio durch Verschieben der aneinander grenzenden Trennlinien verändern. Sie können auch Fenster aus dem Visual Studio-Rahmen herausziehen und sie dann innerhalb des Rahmens nach Ihren Wünschen anordnen. Ausführliche Informationen finden Sie unter <a href="https://docs.microsoft.com/visualstudio/ide/customizing-window-layouts-in-visual-studio" target="_blank">Anpassen der Fensterlayouts</a>.
+    > Sie können die Größe aller Fenster in Visual Studio durch Verschieben der aneinander grenzenden Trennlinien verändern. Sie können auch Fenster aus dem Visual Studio-Rahmen herausziehen und sie dann innerhalb des Rahmens nach Ihren Wünschen anordnen. Ausführliche Informationen finden Sie unter [Anpassen der Fensterlayouts](../ide/customizing-window-layouts-in-visual-studio.md).
 
 1. Geben Sie einige Anweisungen wie `print("Hello, Visual Studio")` und Ausdrücke wie `123/456` ein, um sofortige Ergebnisse anzuzeigen:
 
@@ -47,7 +48,7 @@ In Visual Studio bietet das *interaktive Fenster* für Python eine komfortable �
 
     ```python
     # Create a string with spaces proportional to a cosine of x in degrees
-    def make_dot_string(x):  
+    def make_dot_string(x):
         return ' ' * int(20 * cos(radians(x)) + 20) + 'o'
     ```
 
@@ -62,8 +63,8 @@ In Visual Studio bietet das *interaktive Fenster* für Python eine komfortable �
 
     ```python
     for i in range(360):
-        s = make_dot_string(i)  
-        print(s) 
+        s = make_dot_string(i)
+        print(s)
     ```
 
     ![Einfügen von mehrere Codezeilen mit „An Interactive senden“](media/vs-getting-started-python-15-interactive5.png)
@@ -82,14 +83,13 @@ In Visual Studio bietet das *interaktive Fenster* für Python eine komfortable �
 
     ```python
     for i in range(0, 1800, 12):
-        s = make_dot_string(i)  
-        print(s) 
+        s = make_dot_string(i)
+        print(s)
     ```
 
     Wenn Sie den exakten Inhalt des interaktiven Fensters kopieren möchten, einschließlich der Eingabeaufforderungen und Ausgaben, verwenden Sie einfach den Standardbefehl **Kopieren**.
 
 1. Gerade haben Sie somit die schnelle REPL-Umgebung des interaktiven Fensters verwendet, um die Details für einen kleinen Abschnitt im Code zu erarbeiten. Danach haben Sie diesen Code bequem zur Quelldatei des Projekts hinzugefügt. Wenn Sie nun den Code mit STRG+F5 (oder **Debuggen > Ohne Debugging starten**) erneut ausführen, werden Ihnen die gewünschten exakten Ergebnisse angezeigt.
-
 
 ## <a name="next-steps"></a>Nächste Schritte
 
@@ -98,5 +98,5 @@ In Visual Studio bietet das *interaktive Fenster* für Python eine komfortable �
 
 ### <a name="going-deeper"></a>Vertiefung
 
-- [Working with the Python Interactive Window](interactive-repl.md) (Arbeiten mit dem interaktiven Python-Fenster)
+- [Verwendung des interaktiven Fensters](interactive-repl.md)
 - [Verwenden von IPython REPL](interactive-repl-ipython.md)

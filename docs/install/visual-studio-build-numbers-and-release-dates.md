@@ -5,22 +5,39 @@ keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.date: 10/18/2017
+ms.date: 12/18/2017
 ms.topic: article
 helpviewer_keywords: 
 ms.technology: vs-acquisition
 ms.service: 
-ms.openlocfilehash: fff709bc75a4d9f9747c0fc47d5961fb2b00ec1c
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.workload: multiple
+ms.openlocfilehash: 945b11869145d07c9defa8586876d02eccf098f7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-2017-build-numbers-and-release-dates"></a>Visual Studio 2017-Buildnummern und -Veröffentlichungstermine
 In der folgenden Tabelle werden die bisherigen Buildnummern und Veröffentlichungstermine für Visual Studio 2017 aufgeführt.
 
 | **Version**| **Kanal** | **Veröffentlichungsdatum** | **Buildversion** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.5.2 | Release | 12/14/2017 | 15.5.27130.2010 |
+| 15.6.0 Vorschauversion 1.1 | Vorschau | 12/14/2017 | 15.6.27205.2004 |
+| 15.5.1 | Release | 12/7/2017 | 15.5.27130.2003 |
+| 15.6.0 Vorschauversion 1.0 | Vorschau | 12/7/2017 | 15.6.27205.0 |
+| 15.0.7 | Release | 12/6/2017 | 15.0.26228.18 |
+| 15.5 | Release | 12/4/2017 | 15.5.27130.0 |
+| 15.5.0 Vorschauversion 5.0 | Vorschau | 11/30/2017 | 15.5.27128.1 |
+| 15.4.5 | Release | 11/27/2017 | 15.4.27004.2010 |
+| 15.5.0 Vorschauversion 4.0 | Vorschau | 11/14/2017 | 15.5.27110.0 |
+| 15.4.4 | Release | 11/14/2017 | 15.4.27004.2009 |
+| 15.0.6 | Release | 11/14/2017 | 15.0.26228.17 |
+| 15.4.3 | Release | 11/8/2017 | 15.4.27004.2008 |
+| 15.5.0 Vorschauversion 3.0 | Vorschau | 11/6/2017 | 15.5.27102.0 |
+| 15.4.2 | Release | 10/31/2017 | 15.4.27004.2006 |
+| 15.5.0 Vorschauversion 2.0 | Vorschau | 10/23/2017 | 15.5.27019.1 |
+| 15.4.1 | Release | 10/19/2017 | 15.4.27004.2005 |
 | 15.5 Vorschauversion 1 | Vorschau | 11.10.2017 | 15.0.27009.1 |
 | 15.4 | Release | 9.10.2017 | 15.0.27004.20002 |
 | 15.4 Vorschauversion 6 | Vorschau | 9.10.2017| 15.0.27004.20002 |
@@ -37,7 +54,7 @@ In der folgenden Tabelle werden die bisherigen Buildnummern und Veröffentlichun
 | 15.3.1 | Release | 18.8.2017 | 15.0.26730.08 |
 | 15.3.1 Vorschauversion 1 | Vorschau | 18.8.2017 | 15.0.26730.08 |
 | 15.3.1  | Release | 18.8.2017 | 15.0.26730.08 |
-| 15.4 Vorschauversion 1 | Vorschau | 22.8.2017 | n/v |
+| 15.4 Vorschauversion 1 | Vorschau | 24.8.2017 | 15.4.26823.1 |
 | 15.3 | Release | 14.8.2017 | 15.0.26730.3 |
 | 15.3 Vorschauversion 7.1 | Vorschau | 11.8.2017 | 15.0.26730.3 |
 | 15.3 Vorschauversion 7 | Vorschau | 1.8.2017 | 15.0.26730.0 |
@@ -79,7 +96,7 @@ Hier sind einige weitere Supportoptionen:
 * Sie können uns über Produktprobleme mit dem Tool [Problem melden](../ide/how-to-report-a-problem-with-visual-studio-2017.md) informieren, das sowohl im Visual Studio-Installer als auch in der Visual Studio-IDE angezeigt wird.
 * Sie können uns einen Produktvorschlag unter [UserVoice](https://visualstudio.uservoice.com/forums/121579) mitteilen.
 * Sie können Probleme mit Produkten im Portal [Visual Studio Developer Community](https://developercommunity.visualstudio.com/) im Blick behalten, Fragen stellen und Antworten finden.
-* Über die [Visual Studio-Unterhaltung in der Gitter-Community](https://gitter.im/Microsoft/VisualStudio) können Sie auch Kontakt zu uns oder anderen Visual Studio-Entwicklern aufnehmen.  (Diese Option erfordert ein [GitHub](https://github.com/)-Konto).
+* Über die [Visual Studio-Unterhaltung in der Gitter-Community](https://gitter.im/Microsoft/VisualStudio) können Sie auch Kontakt zu uns oder zu anderen Visual Studio-Entwicklern aufnehmen.  (Diese Option erfordert ein [GitHub](https://github.com/)-Konto.)
 
 ## <a name="see-also"></a>Siehe auch
 * [Administratorhandbuch für Visual Studio 2017](visual-studio-administrator-guide.md)

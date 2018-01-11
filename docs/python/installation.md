@@ -12,11 +12,12 @@ caps.latest.revision: "11"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 066612a132bf6a092771afd5fc4a876d4b3be425
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: python
+ms.openlocfilehash: cd1ce1ce47705e5e8b63fb3ef7cc36c401503886
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="installing-python-support-in-visual-studio-on-windows"></a>Installieren von Python-Unterstützung für Visual Studio auf Windows
 
@@ -59,19 +60,18 @@ Um die Python-Unterstützung nach den Installationsschritten schnell zu testen, 
 
     ![Optionen zur Python-Entwicklung im Visual Studio-Installationsprogramm](media/installation-python-options.png)
 
-    | Option | Beschreibung | 
+    | Option | description | 
     | --- | --- |
     | Python-Verteilungen | Wählen Sie eine beliebige Kombination aus den 32-Bit- und 64-Bit-Varianten der Python 2-, Python 3-, Anaconda2- und Anaconda3-Verteilungen aus, mit denen Sie arbeiten möchten. Jede enthält den Interpreter, die Runtime und die Bibliotheken der Verteilung. Bei Anaconda handelt es sich um eine offene Data Science-Plattform, die eine große Auswahl an Paketen enthält. (Sie können jederzeit zum Visual Studio-Installer zurückkehren, um Verteilungen hinzuzufügen oder zu entfernen.) |
     | Unterstützung von Cookiecutter-Vorlagen | Installiert die grafische Benutzeroberfläche von Cookiecutter, um Vorlagen zu ermitteln, Vorlageoptionen einzugeben und Projekte und Dateien zu erstellen. Weitere Informationen finden Sie unter [Verwenden der Cookiecutter-Erweiterung](cookiecutter.md). |
     | Webunterstützung für Python | Installiert Tools für die Webentwicklung einschließlich der Bearbeitungsunterstützung für HTML, CSS und JavaScript sowie Vorlagen für Projekte, die Bottle-, Flask- und Django-Frameworks verwenden. Weitere Informationen finden Sie unter [Python-Webprojektvorlagen](template-web.md). |
     | Python IoT-Unterstützung | Unterstützt die Windows IoT Core-Entwicklung mithilfe von Python. |
     | Native Python-Entwicklungstools | Installiert den C++-Compiler und andere erforderliche Komponenten, um native Erweiterungen für Python zu entwickeln. Weitere Informationen finden Sie unter [Erstellen einer C++-Erweiterung für Python](cpp-and-python.md). |
-    | Azure Cloud Services-Kerntools | Bietet zusätzliche Unterstützung für Azure Cloud Services-Entwickler in Python. Weitere Informationen finden Sie unter [Azure Cloud Services-Projekte für Python](template-azure-cloud-service.md). |
+    | Azure Cloud Services-Kerntools | Bietet zusätzliche Unterstützung für Azure Cloud Services-Entwickler in Python. Weitere Informationen finden Sie unter [Projekte für Azure-Clouddienste für Python](template-azure-cloud-service.md). |
 
 1. Nach der Installation bietet der Installer Optionen für das Ändern, Starten, Reparieren oder Deinstallieren von Visual Studio. Die Schaltfläche **Ändern** ändert sich zu **Update**, wenn Updates für die installierten Komponenten von Visual Studio verfügbar sind. (Die Option „Ändern“ ist dann im Dropdownmenü verfügbar.) Sie können Visual Studio und den Installer ebenfalls über das Windows-Startmenü starten, indem Sie nach „Visual Studio“ suchen.
 
     ![Starten, Ändern oder Deinstallieren von Visual Studio über den Installer](media/installation-vs-launch.png)
-
 
 > [!VIDEO https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Installing-Visual-Studio-Python-Support-go1id3LWE_1705918567]
 

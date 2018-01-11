@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 99859fc5b9e48078b037f6d68ad3d3847658a1d0
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: python
+ms.openlocfilehash: 7f74c03d081084356682630d234d6db81e64b4bf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="editing-python-code"></a>Bearbeiten von Python-Code
 
@@ -32,7 +33,7 @@ Eine allgemeine Dokumentation zur Codebearbeitung in Visual Studio finden Sie un
 
 Der Editor ist darüber hinaus auch im interaktiven Fenster in Visual Studio integriert, sodass der Austausch von Code zwischen den beiden sehr leicht ist. Weitere Informationen finden Sie unter [Tutorial Step 3: Using the interactive REPL window (Tutorial Schritt 3: Verwenden des interaktiven REPL-Fensters)](vs-tutorial-01-03.md) und [Using the interactive window - Send code to interactive command (Verwenden des interaktiven Fensters: Befehl „An Interactive senden“)](interactive-repl.md#send-code-to-interactive-command).
 
-Eine Einführung in die Bearbeitung von Python-Code finden Sie unter [Editing Python-Code (Bearbeiten von Python-Code)](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=r2iQH5LWE_4605918567) (Microsoft Virtual Academy, 2 Min. 30 Sek.):
+Eine Einführung in die Bearbeitung von Python-Code finden Sie unter [Bearbeiten von Python-Code](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=r2iQH5LWE_4605918567) (Microsoft Virtual Academy, 2:30 min):
 
 > [!VIDEO https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Editing-Python-Code-r2iQH5LWE_4605918567]
 

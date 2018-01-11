@@ -1,5 +1,5 @@
 ---
-title: "Django-Webprojektvorlage für Python in Visual Studio | Microsoft-Dokumentation"
+title: "Vorlage „Django-Webprojekt“ für Python in Visual Studio | Microsoft-Dokumentation"
 ms.custom: 
 ms.date: 07/13/2017
 ms.reviewer: 
@@ -12,15 +12,16 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 29d11f04fb1fc7b0942a98b47dd5638c0572c23b
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: python
+ms.openlocfilehash: 6dda33b14a96d7d866413ea26dc267f9aa8b772c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
-# <a name="django-web-project-template"></a>Django-Webprojektvorlage
+# <a name="django-web-project-template"></a>Vorlage „Django-Webprojekt“
 
-[Django](https://www.djangoproject.com/) ist ein allgemeines Python-Framework für die schnelle, sichere und skalierbare Webentwicklung. Die Python-Unterstützung in Visual Studio enthält eine Projektvorlage zum Einrichten der Struktur einer Django-basierten Webanwendung. Um die Vorlage in Visual Studio zu verwenden, wählen Sie **Datei > Neu > Projekt**, suchen Sie nach „Django“, und wählen Sie die Vorlage „Django-Webprojekt“ aus. Das resultierende Projekt umfasst Codebausteine sowie eine SQLite-Standarddatenbank. Die Vorlage „Leeres Django-Webprojekt“ ist ähnlich, enthält jedoch nicht die Datenbank.
+[Django](https://www.djangoproject.com/) ist ein allgemeines Python-Framework für die schnelle, sichere und skalierbare Webentwicklung. Die Python-Unterstützung in Visual Studio enthält eine Projektvorlage zum Einrichten der Struktur einer Django-basierten Webanwendung. Um die Vorlage in Visual Studio zu verwenden, wählen Sie **Datei > Neu > Projekt**, suchen Sie nach „Django“, und wählen Sie die Vorlage **Django-Webprojekt** aus. Das resultierende Projekt umfasst Codebausteine sowie eine SQLite-Standarddatenbank. Die Vorlage **Leeres Django-Webprojekt** ist ähnlich, enthält jedoch nicht die Datenbank.
 
 Visual Studio bietet vollständiges IntelliSense für Django-Projekte:
 
@@ -38,13 +39,11 @@ Visual Studio bietet vollständiges IntelliSense für Django-Projekte:
 
     ![JavaScript IntelliSense](media/template-django-intellisense-js.png)
 
-
 Visual Studio bietet außerdem vollständige [Debugunterstützung](debugging.md) für Django-Projekte: 
 
 ![Haltepunkte](media/template-django-debugging.png)
 
 Es ist typisch für Django-Projekte, über ihre `manage.py`-Datei verwaltet zu werden. Visual Studio folgt dieser Annahme. Wenn Sie diese Datei nicht mehr als Einstiegspunkt verwenden, zerstören Sie die Projektdatei. In diesem Fall müssen Sie [das Projekt aus vorhandenen Dateien neu erstellen](python-projects.md#creating-a-project-from-existing-files), ohne es als ein Django-Projekt zu kennzeichnen.
-
 
 ## <a name="django-management-console"></a>Django-Verwaltungskonsole
 

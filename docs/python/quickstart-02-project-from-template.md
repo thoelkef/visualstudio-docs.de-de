@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 745e6abe6aa9e1637d7ab79c0f76fb8874e8f6af
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: python
+ms.openlocfilehash: ee329df0bda8869215969941024deba6d94743fe
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="quickstart-create-a-python-project-from-a-template-in-visual-studio"></a>Schnellstart: Erstellen eines Python-Projekts aus einer Vorlage in Visual Studio
 
@@ -84,7 +85,7 @@ Wenn Sie die [Python-Unterstützung in Visual Studio 2017 installiert haben](ins
 ## <a name="next-steps"></a>Nächste Schritte
 
 > [!div class="nextstepaction"]
-> [Tutorial: Working with Python in Visual Studio (Tutorial: Arbeiten mit Python in Visual Studio)](vs-tutorial-01-01.md)
+> [Tutorial: Arbeiten mit Python in Visual Studio](vs-tutorial-01-01.md)
 
 ## <a name="see-also"></a>Siehe auch
 

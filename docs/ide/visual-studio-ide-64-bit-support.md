@@ -16,35 +16,25 @@ caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 191c70b205969def7e5645b3c0fdbb52adf0f049
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 12b3bed69f8a73a9f50dfce2aae47354dec042e4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-ide-64-bit-support"></a>Visual Studio-IDE-64-Bit-Unterstützung
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ermöglicht es Ihnen, die Anwendungen für unterschiedliche Zielplattformen einzurichten, einschließlich 64-Bit-Plattformen. Weitere Informationen zur Unterstützung von 64-Bit-Plattformen in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] finden Sie unter [64-Bit-Anwendungen](http://msdn.microsoft.com/Library/fd4026bc-2c3d-4b27-86dc-ec5e96018181).  
   
 ## <a name="deploying-a-64-bit-application"></a>Bereitstellen einer 64-Bit-Anwendung  
- In den folgenden Themen wird die Bereitstellung von 64-Bit-Anwendungen erläutert.  
-  
--   [Bereitstellen der erforderlichen Komponenten für 64-Bit-Anwendungen](../deployment/deploying-prerequisites-for-64-bit-applications.md)  
-  
--   [How to: Create a Windows Installer for a 64-bit Platform (Vorgehensweise: Erstellen eines Windows Installers für eine 64-Bit-Plattform)](http://msdn.microsoft.com/en-us/232bfc64-f99a-4cc6-9806-ba70bb9a09ff)  
+Unter [Bereitstellen der erforderlichen Komponenten für 64-Bit-Anwendungen](../deployment/deploying-prerequisites-for-64-bit-applications.md) sind die weiterverteilbaren Komponenten aufgeführt, die Sie für die Installation einer 64-Bit-Anwendung verwenden können.  
   
 ## <a name="configuring-projects-as-64-bit-applications"></a>Konfigurieren von Projekten als 64-Bit-Anwendungen  
- In den folgenden Themen wird das Konfigurieren von Projekten für die Erstellung von 64-Bit-Anwendungen erläutert.  
-  
--   [Gewusst wie: Konfigurieren von Projekten für Zielplattformen](../ide/how-to-configure-projects-to-target-platforms.md)  
+Unter [Vorgehensweise: Konfigurieren von Projekten für Zielplattformen](../ide/how-to-configure-projects-to-target-platforms.md) wird erläutert, wie Projekte als 64-Bit-Anwendungen konfiguriert werden können.  
   
 ## <a name="debugging-a-64-bit-application"></a>Debuggen einer 64-Bit-Anwendung  
  Bearbeiten und Fortfahren funktioniert nicht, wenn [!INCLUDE[vsprvslong](../code-quality/includes/vsprvslong_md.md)] auf einem 64-Bit-Windows-Betriebssystem ausgeführt wird. In den folgenden Themen wird das Debuggen von 64-Bit-Anwendungen erläutert.  
   
--   [How to: Debug on 64-bit Platforms (Vorgehensweise: Debuggen auf einer 64-Bit-Plattform)](http://msdn.microsoft.com/en-us/27495e23-a624-46fb-996f-043d0a816dd5)  
-  
 -   [Debuggen von 64-Bit-Anwendungen](../debugger/debug-64-bit-applications.md)  
   
 -   [Speichern von Dumpdateien](../debugger/using-dump-files.md)  
-  
-## <a name="see-also"></a>Siehe auch  
- [Gewusst wie: Konfigurieren von Projekten für Zielplattformen](../ide/how-to-configure-projects-to-target-platforms.md)

@@ -12,11 +12,12 @@ caps.latest.revision: "11"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 6476de086aad812e40d3c5b638c2076d50adfb27
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: python
+ms.openlocfilehash: bd871b1e78878c8ae05cb69e1ac97d50197a18b4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="python-environments"></a>Python-Umgebungen
 
@@ -49,7 +50,7 @@ Eine Video-Einführung finden Sie unter [Managing Python Environments (Verwalten
 
 Außer bei Visual Studio 2017 umfasst die Python-Unterstützung keinen Python-Interpreter. Sie müssen also einen der folgenden Interpreter zum Ausführen des Codes installieren. Im Allgemeinen erkennt Visual Studio neu installierte Interpreter automatisch und richtet für jeden eine Umgebung ein. Wenn dies nicht der Fall ist, finden Sie unter [Erstellen einer Umgebung für einen vorhandenen Interpreter](#creating-an-environment-for-an-existing-interpreter) weitere Informationen.
 
-| Interpreter | Beschreibung |
+| Interpreter | description |
 | --- | --- |
 | [CPython](https://www.python.org/) | Der „native“ und am häufigsten verwendete Interpreter, verfügbar in 32- und 64-Bit-Versionen (32-Bit wird empfohlen). Er umfasst die neuesten Sprachfeatures, die maximale Python-Paketkompatibilität, vollständige Unterstützung für das Debuggen und Interoperabilität mit [IPython](http://ipython.org/). Siehe auch: [Should I use Python 2 or Python 3? (Sollte ich Python 2 oder Python 3 verwenden?)](http://wiki.python.org/moin/Python2orPython3). Beachten Sie, dass Visual Studio 2015 und frühere Versionen Python 3.6 nicht unterstützen, und den Fehler „Unsupported python version 3.6“ (Nicht unterstützte Python-Version 3.6) ausgeben können. Verwenden Sie stattdessen Python 3.5 oder frühere Versionen. |
 | [IronPython](https://github.com/IronLanguages/main) | Eine .NET-Implementierung von Python, verfügbar in 32-Bit- und 64-Bit-Versionen, die C#-/F#-/Visual Basic-Interoperabilität, Zugriff auf .NET APIs, Python-Standarddebuggen (jedoch kein C++-Debuggen im gemischten Modus) und IronPython-/C#-Debuggen im gemischten Modus bietet. IronPython unterstützt jedoch keine virtuelle Umgebungen. | 
@@ -110,7 +111,7 @@ Bietet grundlegende Informationen und Befehle für die Umgebung:
 
 ![Registerkarte „Übersicht“ von Python-Umgebungen](media/environments-overview-tab.png)
 
-| Befehl | Beschreibung |
+| Befehl | description |
 | --- | --- |
 | Diese Umgebung zum Standard für neue Projekte machen | Legt die aktive Umgebung fest, die möglicherweise dazu führt, dass Visual Studio kurz nicht mehr reagiert, während die IntelliSense-Datenbank geladen wird. Umgebungen mit vielen Paketen reagieren möglicherweise längere Zeit nicht mehr. |
 | Website des Verteilers besuchen | Öffnen eine von der Python-Verteilung bereitgestellt URL in einem Browser. Python 3.x öffnet beispielsweise python.org. |
@@ -135,7 +136,7 @@ Wenn sie angezeigt wird, enthält sie Details, wie die in der folgenden Tabelle 
 
 ![Registerkarte „Konfigurieren“ von Python-Umgebungen](media/environments-configure-tab.png)
 
-| Feld | Beschreibung |
+| Feld | description |
 | --- | --- |
 | **Beschreibung** | Der Name für die Umgebung. |
 | **Präfixpfad** | Der Speicherort des Basisordners des Interpreters. Durch Festlegen dieses Werts und Klicken auf **Automatisch erkennen** versucht Visual Studio, die anderen Felder für Sie auszufüllen. |

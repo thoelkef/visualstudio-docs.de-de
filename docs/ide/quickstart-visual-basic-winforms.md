@@ -12,11 +12,12 @@ author: TerryGLee
 ms.author: tglee
 manager: ghogen
 dev_langs: vb
-ms.openlocfilehash: 388784b53018c30357f496cfbeb533c0a07a3053
-ms.sourcegitcommit: 38097344f3ff74ba7b03bcfa45910015ca6bc2be
+ms.workload: multiple
+ms.openlocfilehash: ecab13523c5d2ae362a58527f8c15ce1f26dd225
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="quickstart-create-a-windows-forms-app-in-visual-studio-with-visual-basic"></a>Schnellstart: Erstellen einer Windows Forms-App in Visual Studio mit Visual Basic
 Mithilfe dieser Einführung in die integrierte Entwicklungsumgebung (IDE) von Visual Studio, die fünf bis zehn Minuten Ihrer Zeit in Anspruch nehmen wird, können Sie eine einfache Visual Basic-Anwendung erstellen, die über eine Windows-basierte Benutzeroberfläche verfügt.
@@ -95,5 +96,5 @@ Da nun ein Schaltflächen-Steuerelement hinzugefügt wurde, kann jetzt auch ein 
 Damit haben Sie den Schnellstart erfolgreich abgeschlossen. Wir hoffen, dass Sie etwas über Visual Basic und die Visual Studio-IDE gelernt haben. Wenn Sie mehr über diese Themen erfahren möchten, können Sie gerne mit einem Tutorial fortfahren, das Sie im Inhaltsverzeichnis im Abschnitt **Tutorials** finden.  
 
 ## <a name="see-also"></a>Siehe auch   
-* [Quickstart: Create a console app in Visual Studio with Visual Basic (Schnellstart: Erstellen einer Konsolen-App in Visual Studio mit Visual Basic)](quickstart-visual-basic-console.md) https://docs.microsoft.com/dotnet/core/tutorials/vb-with-visual-studio
+* [Schnellstart: Erstellen einer Konsolenanwendung in Visual Studio mit Visual Basic](quickstart-visual-basic-console.md)
 * [Erfahren Sie mehr über Visual Basic IntelliSense](visual-basic-specific-intellisense.md)  

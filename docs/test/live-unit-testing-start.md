@@ -10,11 +10,12 @@ helpviewer_keywords:
 - Live Unit Testing
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 83458b769b5551ed07774e244cce65a97477a713
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: dotnet
+ms.openlocfilehash: b0d4726bc29ebbb6f90fde5e7817ec2fb596177c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="get-started-with-live-unit-testing-in-visual-studio"></a>Erste Schritte mit Live Unit Testing in Visual Studio
 
@@ -204,7 +205,7 @@ Bisher haben Sie die Tests für die `StringLibrary`-Klassenbibliothek zwar gesch
  
 1. Visual Studio startet Live Unit Testing, das automatisch alle Ihre Tests ausführt. 
  
-Nach Abschluss der Testausführung zeigt der **Test-Explorer** die Gesamtergebnisse und das Ergebnis der einzelnen Tests an. Darüber hinaus werden die Code Coverage der Tests und das Ergebnis Ihrer Tests im Codefenster grafisch dargestellt. Wie in der folgenden Abbildung zu sehen ist, wurden alle drei Tests erfolgreich ausgeführt. Zudem ist zu sehen, dass die Tests alle Codepfade in der Methode `StartsWithUpper` abgedeckt haben, und dass diese Tests alle erfolgreich ausgeführt wurden (dies wird durch das grüne Häkchen „✓“ gekennzeichnet). Schließlich ist zu sehen, dass keine der anderen Methoden in `StringLibrary` über eine Code Coverage verfügt (dies wird durch eine blaue Linie „➖“ gekennzeichnet). 
+Nach Abschluss der Testausführung zeigt der **Test-Explorer** die Gesamtergebnisse und das Ergebnis der einzelnen Tests an. Darüber hinaus werden die Code Coverage der Tests und das Ergebnis Ihrer Tests im Codefenster grafisch dargestellt. Wie in der folgenden Abbildung zu sehen ist, wurden alle drei Tests erfolgreich ausgeführt. Zudem ist zu sehen, dass die Tests alle Codepfade in der Methode `StartsWithUpper` abgedeckt haben, und dass diese Tests alle erfolgreich ausgeführt wurden (durch das grüne Häkchen „✓“ gekennzeichnet). Schließlich ist zu sehen, dass keine der anderen Methoden in `StringLibrary` über eine Code Coverage verfügt (dies wird durch eine blaue Linie „➖“ gekennzeichnet). 
 
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
 ![Das Fenster „Test-Explorer“ und das Codefenster nach dem Starten von Live Unit Testing](media/lut-start/lut-results-cs.png) 

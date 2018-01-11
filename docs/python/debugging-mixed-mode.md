@@ -12,15 +12,16 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 47c0bd7bea18f32b8e017dabb803c4db4f46e2ca
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: python
+ms.openlocfilehash: 762829628e4f52c797bf98acf83a48eec0cbce6c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugging-python-and-c-together"></a>Gemeinsames Debuggen von Python und C++
 
-Die meisten Python-Debugger unterstützten das Debuggen nur von Python-Code. In der Praxis wird Python jedoch zusammen mit C oder C++ verwendet, wenn eine hohe Leistung erforderlich ist oder Plattform-APIs direkt aufgerufen werden müssen (Ein Beispiel finden Sie unter [Erstellen einer C++-Erweiterung für Python](cpp-and-python.md)). Wenn ein Python-Projekt geladen wird, bietet Visual Studio ein integriertes, simultanes Debuggen im gemischten Modus für Python und natives C/C++ mit folgenden Funktionen: kombinierte Aufruflisten, abwechselnde Einzelschrittausführung in Python und nativem Code, Haltepunkte in jedem Codetyp sowie die Möglichkeit, Python-Darstellungen von Objekten in nativen Frames und umgekehrt anzuzeigen:
+Die meisten Python-Debugger unterstützten das Debuggen nur von Python-Code. In der Praxis wird Python jedoch zusammen mit C oder C++ verwendet, wenn eine hohe Leistung erforderlich ist oder Plattform-APIs direkt aufgerufen werden müssen (ein Beispiel finden Sie unter [Erstellen einer C++-Erweiterung für Python](cpp-and-python.md)). Wenn ein Python-Projekt geladen wird, bietet Visual Studio ein integriertes, simultanes Debuggen im gemischten Modus für Python und natives C/C++ mit folgenden Funktionen: kombinierte Aufruflisten, abwechselnde Einzelschrittausführung in Python und nativem Code, Haltepunkte in jedem Codetyp sowie die Möglichkeit, Python-Darstellungen von Objekten in nativen Frames und umgekehrt anzuzeigen:
 
 ![Debuggen im gemischten Modus](media/mixed-mode-debugging.png) 
 

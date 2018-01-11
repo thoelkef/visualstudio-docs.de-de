@@ -8,22 +8,22 @@ ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 783da5fd-726c-4716-994e-aa04d6b75896
 caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: da14e15713e7c02dbd99bc0595e6ca19217a5cbb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: python
+ms.openlocfilehash: 0844526b7c5dbc0955bc9cafff6f63121b9d7182
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-the-cookiecutter-extension"></a>Verwenden der Cookiecutter-Erweiterung
 
 [Cookiecutter](https://cookiecutter.readthedocs.io/en/latest/) stellt eine grafische Benutzeroberfläche bereit, auf der Sie Vorlagen ermitteln, Vorlageoptionen eingeben und Projekte und Dateien erstellen können. Die Erweiterung ist im Lieferumfang von Visual Studio 2017 enthalten und kann separat in früheren Versionen von Visual Studio installiert werden.
 
-Cookiecutter erfordert Python 3.3 oder höher (32-Bit oder 64-Bit) oder Anaconda 3 4.2 oder höher (32-Bit oder 64 Bit). Wenn kein geeigneter Python-Interpreter verfügbar ist, zeigt Visual Studio eine Warnung an. Wenn Sie einen Python-Interpreter installieren, während Visual Studio ausgeführt wird, klicken Sie auf der Symbolleiste von Cookiecutter auf die Startschaltfläche, um den neu installierten Interpreter zu erkennen.
+Cookiecutter erfordert Python 3.3 oder höher (32-Bit oder 64-Bit) oder Anaconda 3 4.2 oder höher (32-Bit oder 64 Bit). Wenn kein geeigneter Python-Interpreter verfügbar ist, zeigt Visual Studio eine Warnung an. Wenn Sie einen Python-Interpreter installieren, während Visual Studio ausgeführt wird, klicken Sie auf der Symbolleiste von Cookiecutter auf die Startschaltfläche, um den neu installierten Interpreter zu erkennen. (Unter [Python-Umgebungen](python-environments.md) finden Sie Informationen zu Umgebungen im Allgemeinen.)
 
 Wählen Sie nach der Installation **Ansicht > Cookiecutter-Explorer**, um das Fenster von Cookiecutter zu öffnen:
 
@@ -37,7 +37,7 @@ Beim Arbeiten mit Cookiecutter durchsuchen Sie Vorlagen, wählen eine Vorlage au
 
 Die Startseite von Cookiecutter zeigt eine Liste der auswählbaren Vorlagen an, unterteilt in die folgenden Gruppen:
 
-| Gruppieren | Beschreibung | 
+| Gruppieren | description | 
 | --- | --- |
 | Installiert | Vorlagen, die auf Ihrem lokalen Computer installiert wurden. Bei Verwendung einer Onlinevorlage wird das zugehörige Repository automatisch in einen Unterordner von`~/.cookiecutters` geklont. Sie können eine ausgewählte installierte Vorlage löschen, indem Sie die Taste **ENTF** drücken. |
 | Empfohlen | Aus dem empfohlenen Feed geladene Vorlagen. Der Standardfeed wird von Microsoft kuratiert. Informationen zum Anpassen des Feeds finden Sie weiter unten im Abschnitt [Cookiecutter-Optionen](#cookiecutter-options). |
@@ -81,7 +81,7 @@ Cookiecutter-Optionen stehen über **Tools > Optionen > Cookiecutter** zur Verf�
 
 ![Cookiecutter-Optionen](media/cookiecutter-tools-options.png)
 
-| Option | Beschreibung |
+| Option | description |
 | --- | --- |
 | URL des empfohlenen Feeds | Der Speicherort des empfohlenen Vorlagenfeeds. Hierbei kann es sich um eine URL oder den Pfad zu einer lokalen Datei handeln. Lassen Sie die URL leer, um den standardmäßigen, von Microsoft kuratierten Feed zu verwenden. Der Feed bietet eine einfache, durch Zeilenumbrüche getrennte Liste mit Vorlagenspeicherorten. Um Änderungen am kuratierten Feed anzufordern, führen Sie eine Pullanforderung in der [Quelle in GitHub](https://github.com/Microsoft/PTVS/blob/master/Python/Product/Cookiecutter/CookiecutterFeed.txt) aus. |
 | Hilfe anzeigen | Steuert die Sichtbarkeit der Hilfeinformationsleiste am oberen Rand des Cookiecutter-Fensters. |
@@ -97,10 +97,10 @@ Die standardmäßige Umsetzung von Vorlagenvariablen hängt vom Datentyp ab (Zei
 
 Dieses Rendering kann verbessert werden, indem Sie zusätzliche Metadaten in Ihrer `cookiecutter.json`-Datei angeben, die speziell für Visual Studio eingerichtet wurde (und von der Cookiecutter-Befehlszeilenschnittstelle ignoriert wird). Alle Eigenschaften sind optional:
 
-| Eigenschaft | Beschreibung |
+| Eigenschaft | description |
 | --- | --- |
 | Bezeichnung | Gibt an, was statt des Variablennamens über dem Editor für die Variable angezeigt werden soll. |
-| Beschreibung | Gibt die QuickInfo an, die im Bearbeitungssteuerelement statt des Standardwerts für diese Variable angezeigt werden soll. |
+| description | Gibt die QuickInfo an, die im Bearbeitungssteuerelement statt des Standardwerts für diese Variable angezeigt werden soll. |
 | URL | Ändert die Bezeichnung in einen Hyperlink mit einer QuickInfo, in der die URL angezeigt wird. Durch Klicken auf den Hyperlink wird diese URL im Standardbrowser des Benutzers geöffnet. |
 | Auswahl | Ermöglicht die Anpassung des Editors für eine Variable. Folgende Auswahlmöglichkeiten werden zurzeit unterstützt:<ul><li>`string`: Standardtextfeld, standardmäßig für Zeichenfolgen.</li><li>`list`: Standardkombinationsfeld, standardmäßig für Listen.</li><li>`yesno`: Kombinationsfeld zur Auswahl zwischen `y` und `n`, für Zeichenfolgen.</li><li>`odbcConnection`: Textfeld mit einer „...“-Schaltfläche, die ein Dialogfeld für eine Datenbankverbindung öffnet.</li></ul> |
 

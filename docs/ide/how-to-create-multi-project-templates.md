@@ -16,61 +16,18 @@ caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9d4ffd6c3aa23ebc2b801de2d581876ff5afd480
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ac7701e3e4dc11bc5634436c3e6f831f6711e514
+ms.sourcegitcommit: 03a74d29a1e0584ff4808ce6c9e812b51e774905
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/02/2018
 ---
 # <a name="how-to-create-multi-project-templates"></a>Gewusst wie: Erstellen von Vorlagen mit mehreren Projekten
 Vorlagen mit mehreren Projekten fungieren als Container für mindestens zwei Projekte. Wenn ein Projekt über das Dialogfeld **Neues Projekt** erstellt wird, das auf einer Vorlage mit mehreren Projekten basiert, wird jedes Projekt in der Vorlage zur Projektmappe hinzugefügt.  
-  
- Eine Vorlage mit mehreren Projekten muss folgende in eine ZIP-Datei komprimierte Elemente enthalten:  
-  
--   Eine VSTEMPLATE-Stammdatei für die gesamte Vorlage mit mehreren Projekten. Diese VSTEMPLATE-Stammdatei enthält die Metadaten, die im Dialogfeld **Neues Projekt** angezeigt werden, und gibt an, wo sich die VSTEMPLATE-Dateien für die Projekte in dieser Vorlage befinden. Die Datei muss sich im Stamm der ZIP-Datei befinden.  
-  
--   Für eine vollständige Projektvorlage sind ein oder mehrere Ordner erforderlich, die die Dateien enthalten. Dies schließt alle Codedateien und eine VSTEMPLATE-Datei für das Projekt ein.  
-  
- Eine ZIP-Datei für eine Vorlage mit mehreren Projekten, die zwei Projekte enthält, kann beispielsweise folgende Dateien und Verzeichnisse enthalten:  
-  
- MultiProjectTemplate.vstemplate  
-  
- \Project1\Project1.vstemplate  
-  
- \Project1\Project1.vbproj  
-  
- \Project1\Class.vb  
-  
- \Project2\Project2.vstemplate  
-  
- \Project2\Project2.vbproj  
-  
- \Project2\Class.vb  
-  
- Die VSTEMPLATE-Stammdatei für eine Vorlage mit mehreren Projekten unterscheidet sich folgendermaßen von der für eine Vorlage mit einem einzelnen Projekt:  
-  
--   Das `Type`-Attribut des `VSTemplate`-Elements enthält den Wert `ProjectGroup`. Zum Beispiel:  
-  
-    ```  
-    <VSTemplate Version="2.0.0" Type="ProjectGroup"  
-        xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">  
-    ```  
-  
--   Das `TemplateContent`-Element enthält ein `ProjectCollection`-Element, das ein oder mehrere `ProjectTemplateLink`-Elemente besitzt, die den Pfad der VSTEMPLATE-Datei der enthaltenen Projekte definiert. Zum Beispiel:  
-  
-    ```  
-    <TemplateContent>  
-        <ProjectCollection>  
-            <ProjectTemplateLink>  
-                Project1\Project1.vstemplate  
-            </ProjectTemplateLink>  
-            <ProjectTemplateLink>  
-                Project2\Project2.vstemplate  
-            </ProjectTemplateLink>  
-        </ProjectCollection>  
-    </TemplateContent>  
-    ```  
-  
+
+ Eine Vorlage mit mehreren Projekten besteht aus zwei oder mehreren Projektvorlagen und einer Stammvorlage des Typs `ProjectGroup`.
+
  Vorlagen mit mehreren Projekten verhalten sich anders als normale Vorlagen. Vorlagen mit mehreren Projekten weisen folgende eindeutige Merkmale auf:  
   
 -   Einzelnen Projekten in einer Vorlage mit mehreren Projekten können keine Namen über das Dialogfeld **Neues Projekt** zugewiesen werden. Verwenden Sie stattdessen das `ProjectName`-Attribut des `ProjectTemplateLink`-Elements, um den Namen für jedes Projekt anzugeben. Weitere Informationen finden Sie im ersten Beispiel im folgenden Abschnitt.  
@@ -79,13 +36,82 @@ Vorlagen mit mehreren Projekten fungieren als Container für mindestens zwei Pro
   
 ### <a name="to-create-a-multi-project-template"></a>Erstellen einer Vorlage mit mehreren Projekten  
   
-1.  Erstellen Sie die Projekte, die in der Vorlage mit mehreren Projekten enthalten sein sollen.  
+1.  Erstellen Sie die Projekte, die in der Vorlage mit mehreren Projekten enthalten sein sollen:
+    1.  Erstellen eines Projekts.  
   
-2.  Erstellen Sie für jedes Projekt VSTEMPLATE-Dateien. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen von Projektvorlagen](../ide/how-to-create-project-templates.md).  
+    > [!NOTE]
+    >  Verwenden Sie nur gültige Bezeichnerzeichen beim Benennen eines Projekts, das als Quelle für eine Vorlage verwendet wird. Eine aus einem Projekt exportierte Vorlage, das mit ungültigen Zeichen benannt wurde, kann in zukünftigen Projekten, die auf dieser Vorlage basieren, Kompilierungsfehler verursachen. Weitere Informationen zu gültigen Bezeichnerzeichen finden Sie unter [Declared Element Names (Namen deklarierter Elemente)](/dotnet/visual-basic/programming-guide/language-features/declared-elements/declared-element-names).  
   
+    2.  Bearbeiten Sie das Projekt solange, bis es als Vorlage exportiert werden kann.  
+  
+    3.  Ändern Sie gegebenenfalls die Codedateien, um anzugeben, an welcher Stelle Parameterersetzungen stattfinden sollen. Weitere Informationen zu Parameterersetzungen finden Sie unter [Vorgehensweise: Ersetzen von Parametern in einer Vorlage](../ide/how-to-substitute-parameters-in-a-template.md).  
+  
+    4.  Klicken Sie im Menü **Projekt** auf **Vorlage exportieren**. Der **Assistent zum Exportieren von Vorlagen** wird geöffnet.  
+  
+    5.  Klicken Sie auf **Projektvorlage**.  
+  
+    6.  Wenn sich in Ihrer aktuellen Projektmappe mehr als ein Projekt befindet, müssen Sie das Projekt auswählen, das Sie als Vorlage exportieren möchten.  
+  
+    7.  Klicken Sie auf **Weiter**.  
+  
+    8.  Wählen Sie ein Symbol und ein Vorschaubild für die Vorlage aus. Diese werden im Dialogfeld **Neues Projekt** angezeigt.  
+  
+    9. Geben Sie einen Namen und eine Beschreibung für die Vorlage ein.  
+  
+    10. Klicken Sie auf **Fertig stellen**. Das Projekt wird als ZIP-Datei exportiert und am angegebenen Speicherort platziert. Außerdem wird es in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] importiert, wenn diese Option ausgewählt wurde.  
+  
+2.  Extrahieren Sie die VSTEMPLATE-Datei aus der generierten ZIP-Datei im selben Verzeichnis wie die Projektdatei, mit der die Vorlage exportiert wurde.
+
 3.  Erstellen Sie eine VSTEMPLATE-Stammdatei, die die Metadaten für die Vorlage mit mehreren Projekten enthalten soll. Weitere Informationen finden Sie im ersten Beispiel im folgenden Abschnitt.  
   
 4.  Wählen Sie die Dateien und Ordner aus, die in der Vorlage enthalten sein sollen, klicken Sie mit der rechten Maustaste auf die Auswahl, klicken Sie auf **Senden an** und dann auf **ZIP-komprimierten Ordner**. Die Dateien und Ordner werden in eine ZIP-Datei komprimiert.  
+  
+> [HINWEIS!] Eine Vorlage mit mehreren Projekten muss folgende in eine ZIP-Datei komprimierte Elemente enthalten:  
+>   
+> -   Eine VSTEMPLATE-Stammdatei für die gesamte Vorlage mit mehreren Projekten. Diese VSTEMPLATE-Stammdatei enthält die Metadaten, die im Dialogfeld **Neues Projekt** angezeigt werden, und gibt an, wo sich die VSTEMPLATE-Dateien für die Projekte in dieser Vorlage befinden. Die Datei muss sich im Stamm der ZIP-Datei befinden.  
+>   
+> -   Für eine vollständige Projektvorlage sind ein oder mehrere Ordner erforderlich, die die Dateien enthalten. Dies schließt alle Codedateien und eine VSTEMPLATE-Datei für das Projekt ein.  
+>   
+> Eine ZIP-Datei für eine Vorlage mit mehreren Projekten, die zwei Projekte enthält, kann beispielsweise folgende Dateien und Verzeichnisse enthalten:  
+>   
+>  MultiProjectTemplate.vstemplate  
+>   
+>  \Project1\Project1.vstemplate  
+>   
+>  \Project1\Project1.vbproj  
+>   
+>  \Project1\Class.vb  
+>   
+>  \Project2\Project2.vstemplate  
+>   
+>  \Project2\Project2.vbproj  
+>   
+>  \Project2\Class.vb  
+>   
+>  Die VSTEMPLATE-Stammdatei für eine Vorlage mit mehreren Projekten unterscheidet sich folgendermaßen von der für eine Vorlage mit einem einzelnen Projekt:  
+>   
+> -   Das `Type`-Attribut des `VSTemplate`-Elements enthält den Wert `ProjectGroup`. Zum Beispiel:  
+>   
+>     ```  
+>     <VSTemplate Version="2.0.0" Type="ProjectGroup"  
+>         xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">  
+>     ```  
+>   
+> -   Das `TemplateContent`-Element enthält ein `ProjectCollection`-Element, das ein oder mehrere `ProjectTemplateLink`-Elemente besitzt, die den Pfad der VSTEMPLATE-Datei der enthaltenen Projekte definiert. Zum Beispiel:  
+>   
+>     ```  
+>     <TemplateContent>  
+>         <ProjectCollection>  
+>             <ProjectTemplateLink>  
+>                 Project1\Project1.vstemplate  
+>             </ProjectTemplateLink>  
+>             <ProjectTemplateLink>  
+>                 Project2\Project2.vstemplate  
+>             </ProjectTemplateLink>  
+>         </ProjectCollection>  
+>     </TemplateContent>  
+>     ```  
+>   
   
 5.  Platzieren die ZIP-Vorlagendatei im [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Projektvorlagenverzeichnis. Standardmäßig ist dies das Verzeichnis \Eigene Dateien\Visual Studio *Version*\Templates\ProjectTemplates\\.  
   

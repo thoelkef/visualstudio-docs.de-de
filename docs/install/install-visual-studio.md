@@ -2,7 +2,7 @@
 title: "Installieren von Visual Studio 2017 | Microsoft-Dokumentation"
 description: "Erfahren Sie Schritt für Schritt, wie Sie Visual Studio installieren."
 ms.custom: 
-ms.date: 11/08/2017
+ms.date: 12/04/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-acquisition
@@ -15,15 +15,15 @@ helpviewer_keywords:
 - set up Visual Studio
 - Visual Studio setup
 - Visual Studio installer
-ms.assetid: 8d4297e4-9f43-4f12-95ec-22e61154480e
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: ff51b5910d8b81d8319eddd0fa3be08d2f9553d7
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.workload: multiple
+ms.openlocfilehash: 9b37b998347618ea346c3d4e7993d5192c1c82a8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="install-visual-studio-2017"></a>Installieren von Visual Studio 2017
 Willkommen Sie bei einer neuen Möglichkeit zur Installation von Visual Studio. In unserer neuesten Version ist es noch einfacher, genau die Features auszuwählen und zu installieren, die Sie benötigen. Wir haben außerdem den mindestens benötigten Speicherplatz weiter verringert, sodass Visual Studio sich schneller und mit geringeren Systemauswirkungen als je zuvor installieren lässt.
@@ -48,7 +48,7 @@ Wenn Sie Fragen zum parallelen Ausführen früherer Versionen von Visual Studio 
 Laden Sie danach die Visual Studio-Bootstrapperdatei herunter. Klicken Sie zu diesem Zweck auf die folgende Schaltfläche, wählen Sie die gewünschte Edition von Visual Studio 2017 aus, und klicken Sie auf **Speichern** und dann auf **Ordner öffnen**.
 
  > [!div class="button"]
- > [Herunterladen von Visual Studio 2017](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs)
+ > [Visual Studio 2017 herunterladen](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs)
 <br/>
 
 |         |         |
@@ -77,9 +77,9 @@ Nach der Installation des Installers können Sie diesen zum Anpassen Ihrer Insta
 
 1.  Suchen Sie die gewünschten Arbeitsauslastungen im Bildschirm **Visual Studio wird installiert**.
 
-  ![Visual Studio 2017-Setupdialogfeld](media/vs2017-workloads.PNG "Installieren von Visual Studio 2017")
+ ![Auswählen einer Workload aus dem Visual Studio 2017-Setupdialogfeld](../install/media/install-visual-studio-enterprise.png)
 
-     Wählen Sie beispielsweise die Arbeitsauslastung für .NET Desktop-Entwicklung aus. Sie wird mit dem standardmäßigen Kern-Editor bereitgestellt, der die grundlegende Codebearbeitung für über 20 Sprachen, die Möglichkeit, Code aus einem beliebigen Ordner heraus zu öffnen und zu bearbeiten, ohne dass ein Projekt erforderlich ist, und die integrierte Quellcodekontrolle unterstützt.  
+     Wählen Sie beispielsweise die Workload „.NET Desktopentwicklung“ aus. Sie wird mit dem standardmäßigen Kern-Editor bereitgestellt, der die grundlegende Codebearbeitung für über 20 Sprachen, die Möglichkeit, Code aus einem beliebigen Ordner heraus zu öffnen und zu bearbeiten, ohne dass ein Projekt erforderlich ist, und die integrierte Quellcodekontrolle unterstützt.  
 
 2.  Nachdem Sie die gewünschten Arbeitsauslastungen ausgewählt haben, klicken Sie auf **Installieren**.
 
@@ -135,7 +135,7 @@ Hier sind einige weitere Supportoptionen:
 * Sie können uns über Produktprobleme mit dem Tool [Problem melden](../ide/how-to-report-a-problem-with-visual-studio-2017.md) informieren, das sowohl im Visual Studio-Installer als auch in der Visual Studio-IDE angezeigt wird.
 * Sie können uns einen Produktvorschlag unter [UserVoice](https://visualstudio.uservoice.com/forums/121579) mitteilen.
 * Sie können Probleme mit Produkten im Portal [Visual Studio Developer Community](https://developercommunity.visualstudio.com/) im Blick behalten, Fragen stellen und Antworten finden.
-* Über die [Visual Studio-Unterhaltung in der Gitter-Community](https://gitter.im/Microsoft/VisualStudio) können Sie auch Kontakt zu uns oder zu anderen Visual Studio-Entwicklern aufnehmen.  (Diese Option erfordert ein [GitHub](https://github.com/)-Konto).
+* Über die [Visual Studio-Unterhaltung in der Gitter-Community](https://gitter.im/Microsoft/VisualStudio) können Sie auch Kontakt zu uns oder zu anderen Visual Studio-Entwicklern aufnehmen.  (Diese Option erfordert ein [GitHub](https://github.com/)-Konto.)
 
 ## <a name="see-also"></a>Siehe auch
 * [Aktualisieren von Visual Studio 2017](update-visual-studio.md)

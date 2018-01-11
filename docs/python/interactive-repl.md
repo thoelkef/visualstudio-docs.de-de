@@ -1,5 +1,5 @@
 ---
-title: Python Interactive REPL in Visual Studio | Microsoft-Dokumentation
+title: Interaktives Python-REPL in Visual Studio | Microsoft-Dokumentation
 ms.custom: 
 ms.date: 07/13/2017
 ms.reviewer: 
@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 80b53ca4a4ada7374d0d62101b00b8ed1a9ca335
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: python
+ms.openlocfilehash: 2126855c0d8b44965c3ba867940990de0edb1d42
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="working-with-the-python-interactive-window"></a>Arbeiten mit dem interaktiven Python-Fenster
 
@@ -26,10 +27,10 @@ Visual Studio bietet ein interaktives „Lesen-Auswerten-Ausgeben-Schleife“-Fe
 
 Visual Studio stellt eine Reihe von Python-REPL-Modi zur Auswahl:
 
-| REPL | Beschreibung | Bearbeiten | Debuggen | Bilder |
+| REPL | description | Bearbeiten | Debuggen | Bilder |
 | --- | --- | --- | --- | --- |
 | Standard | Standard-REPL, kommuniziert direkt mit Python | Standardbearbeitung (mehrzeilig usw.) | Ja, über `$attach` | Nein |
-| Debuggen | Standard-REPL, kommuniziert mit gedebuggtem Python-Prozess | Standardbearbeitung | Nur Debuggen | Nein |
+| Debug | Standard-REPL, kommuniziert mit gedebuggtem Python-Prozess | Standardbearbeitung | Nur Debuggen | Nein |
 | IPython | REPL kommuniziert mit IPython-Back-End | IPython-Befehle, Pylab-Vorteile | Nein | Ja, inline in REPL |
 | IPython ohne Pylab | REPL kommuniziert mit IPython-Back-End | Standardmäßiges IPython | Nein | Ja, separates Fenster | 
 
@@ -76,7 +77,7 @@ Eine Ausnahme besteht, wenn zusätzliche Codezeilen benötigt werden, um eine vo
 
 <a name="meta-commands"></a> Das interaktive Fenster unterstützt auch mehrere Metabefehle. Alle Metabefehle beginnen mit `$`, und Sie können `$help` eingeben, um eine Liste der Metabefehle abzurufen, und `$help <command>`, um nähere Informationen zur Verwendung eines bestimmten Befehls zu erhalten.
 
-| Metabefehl | Beschreibung |
+| Metabefehl | description |
 | --- | --- |
 | `$$` | Fügt einen Kommentar ein, was das Kommentieren von Code während der gesamten Sitzung erleichtert. |
 | `$attach` | Fügt den Visual Studio-Debugger dem REPL-Fensterprozess an, um das Debuggen zu aktivieren. |

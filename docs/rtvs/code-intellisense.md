@@ -1,5 +1,5 @@
 ---
-title: "IntelliSense für R-Code Visual Studio | Microsoft-Dokumentation"
+title: "IntelliSense für R-Code in Visual Studio | Microsoft-Dokumentation"
 ms.custom: 
 ms.date: 06/29/2017
 ms.reviewer: 
@@ -12,28 +12,29 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 160b39690cf2c1ebf933fb7a17f5d5b17b4d422a
-ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
+ms.workload: data-science
+ms.openlocfilehash: a54ebc3abb5f63e2503f48e050e5b9d3e3546abb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="intellisense"></a>IntelliSense
 
 Visual Studio IntelliSense stellt Informationen über Funktionen, die Sie aufrufen können, Member von Objekten, Funktionsargumenten und [Codeausschnitte](code-snippets.md) direkt in Ihrem Blickfeld dar, wenn Sie Code schreiben. Das Feature zeigt auch mögliche Vervollständigungen an, während Sie tippen, und wird beendet, wenn Sie die TAB- oder EINGABETASTE drücken (siehe [Editor-Optionen](code-editing.md#editor-options) für die Registerkarte **Erweitert**). IntelliSense steht sowohl im Editor als auch im [interaktiven Fenster](interactive-repl.md) zur Verfügung.
 
-![IntelliSense, das eine Funktionssignatur zeigt](media/intellisense-function-signature.png) 
+![IntelliSense, das eine Funktionssignatur zeigt](media/intellisense-function-signature.png)
 
 Wenn Sie eine Funktion oder eine andere Anweisung eingeben, stellt IntelliSense ein Menü zur automatischen Vervollständigung bereit, das (die Groß-/Kleinschreibung beachtend) nach dem filtert, was Sie bereits eingegeben haben:
 
 ![IntelliSense-Menü für automatische Vervollständigung](media/intellisense-auto-complete-menu.png)
 
-Das Drücken der TAB-Taste (oder der EINGABETASTE bzw. der Leertaste, je nachdem wie Optionen festgelegt sind) fügt das im Dropdownfeld ausgewählte Element ein. Sie können die Auswahl mit den Pfeiltasten ändern. 
+Das Drücken der TAB-Taste (oder der EINGABETASTE bzw. der Leertaste, je nachdem wie Optionen festgelegt sind) fügt das im Dropdownfeld ausgewählte Element ein. Sie können die Auswahl mit den Pfeiltasten ändern.
 
 IntelliSense bietet auch Vorschläge für Member von R-Objekten:
- 
+
 ![IntelliSense-Vorschläge für Objektmember](media/intellisense-auto-complete-r-objects.png)
- 
+
 Durch Drücken der ESC-TASTE wird das gesamte Menü geschlossen. Sie können es mit der Tastenkombination STRG+Leertaste wieder öffnen.
 
 Wenn Sie die öffnende `(` für einen Funktionsaufruf eintippen, wird die schließende `)` eingefügt, und die Signaturhilfe wird wie zuvor gezeigt aufgerufen:

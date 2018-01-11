@@ -13,11 +13,12 @@ caps.latest.revision: "31"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f57cfea2655061985f58692c2d6c47c6433230bc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: de2af589a92e401ecf549726dea1a5ae300a20bd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-a-ui-by-using-blend-for-visual-studio"></a>Erstellen einer Benutzeroberfläche mit Blend für Visual Studio
 Blend für Visual Studio unterstützt Sie beim Erstellen von XAML-basierten Windows- und Web-Anwendungen. Es bietet die gleiche einfache XAML-Entwurfsumgebung wie Visual Studio und fügt visuelle Designer für erweiterte Aufgaben hinzu, z. B. Animationen und Verhalten. (Einen Vergleich der Tools finden Sie unter [Designing XAML in Visual Studio and Blend for Visual Studio (Entwerfen von XAML-Code in Visual Studio und Blend für Visual Studio)](../designers/designing-xaml-in-visual-studio.md).)
@@ -97,7 +98,7 @@ Wenn Sie mit Blend für Visual Studio nicht vertraut sind, nehmen Sie sich einen
   
  ![Bereich „Eigenschaften“](../designers/media/blend5_properties_panel.png "Blend5_properties_panel")  
   
- **Kategorien** Erweitern und Reduzieren der Kategorien von Eigenschaften. Klicken Sie auf **Erweitern** ![](../designers/media/6375953d-074c-421a-bbb3-6f5055b67b64.png "6375953d-074c-421a-bbb3-6f5055b67b64") und **Reduzieren** ![Reduzieren](../designers/media/b5_collapse_button.png "b5_collapse_button"), um Kategoriedetails anzuzeigen oder auszublenden.  
+ **Kategorien** Erweitern und Reduzieren der Kategorien von Eigenschaften. Klicken Sie auf **Erweitern** ![](../designers/media/6375953d-074c-421a-bbb3-6f5055b67b64.png "6375953d-074c-421a-bbb3-6f5055b67b64") und **Reduzieren** ![Reduzieren] (../designers/media/b5_collapse_button.png "Schaltfläche_Reduzieren"), um Kategoriedetails anzuzeigen oder auszublenden.  
   
 |||  
 |-|-|  

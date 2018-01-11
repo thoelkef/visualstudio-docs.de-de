@@ -7,19 +7,19 @@ ms.suite:
 ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-caps.latest.revision: "6"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d9242bf08b879e415af658696b2be75a55dc5075
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.workload: multiple
+ms.openlocfilehash: 5315dd07ab0c791cc9a349c08431ceb4a9b5c797
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="managing-project-and-solution-properties"></a>Verwalten von Projekt- und Projektmappeneigenschaften
 
-Projekte haben Eigenschaften, die viele Aspekte der Kompilierung, des Debuggens, des Testens und des Bereitstellens steuern. Einige Eigenschaften gibt es für alle Projekttypen, und einige gelten nur für bestimmte Sprachen oder Plattformen. Sie erhalten Zugriff auf die Projekteigenschaften, indem Sie im Projektmappen-Explorer mit der rechten Maustaste auf den Projektknoten klicken und **Eigenschaften** auswählen, oder indem Sie Eigenschaften in das **Schnellstart**-Suchfeld auf der Menüleiste eingeben.
+Projekte haben Eigenschaften, die viele Aspekte der Kompilierung, des Debuggens, des Testens und des Bereitstellens steuern. Einige Eigenschaften gibt es für alle Projekttypen, und einige gelten nur für bestimmte Sprachen oder Plattformen. Sie erhalten Zugriff auf die Projekteigenschaften, indem Sie im Projektmappen-Explorer mit der rechten Maustaste auf den Projektknoten klicken und **Eigenschaften** auswählen. Alternativ können Sie „Eigenschaften“ in das **Schnellstart**-Suchfeld auf der Menüleiste eingeben.
 
 ![Projekt-Kontextmenü](../ide/media/vs2015_proj_prop_menu.gif "vs2015_proj_prop_menu")
 
@@ -27,12 +27,9 @@ Projekte haben Eigenschaften, die viele Aspekte der Kompilierung, des Debuggens,
 
 ![Knoten „Eigenschaften“ in der Struktur des Projektmappen-Explorers](../ide/media/vs2015_props_se.png "VS2015_Props_SE")
 
-> [!TIP]
-> Projektmappen haben einige Eigenschaften, ebenso wie Projektelemente. Auf diese Eigenschaften wird im [Eigenschaftenfenster](../ide/reference/properties-window.md), nicht im **Projekt-Designer**, zugegriffen.
-
 ## <a name="project-properties"></a>Projekteigenschaften
 
-Projekteigenschaften sind in Gruppen organisiert, und jede Gruppe hat ihre eigene Eigenschaftenseite. Dabei können die Seiten für unterschiedliche Sprachen und Projekttypen unterschiedlich sein.
+Projekteigenschaften werden in Gruppen organisiert, und jede Gruppe hat eine eigene Eigenschaftenseite. Diese kann je nach Sprache und Projekttyp unterschiedlich aussehen.
 
 ### <a name="c-visual-basic-and-f-projects"></a>C#-, Visual Basic- und F#-Projekte
 
@@ -41,6 +38,9 @@ In C#-, Visual Basic- und F#-Projekten sind Eigenschaften im **Projekt-Designer*
 ![Visual Studio-Projekt-Designer](../ide/media/vs2015_proppage_build.png "VS2015_PropPage_Build")
 
 Informationen zu den einzelnen Eigenschaftsseiten im Projekt-Designer finden Sie unter [Projekteigenschaftenreferenz](../ide/reference/project-properties-reference.md).
+
+> [!TIP]
+> Projektmappen haben einige Eigenschaften, ebenso wie Projektelemente. Auf diese Eigenschaften wird im [Eigenschaftenfenster](../ide/reference/properties-window.md), nicht im **Projekt-Designer**, zugegriffen.
 
 ### <a name="c-and-javascript-projects"></a>C++- und JavaScript-Projekte
 

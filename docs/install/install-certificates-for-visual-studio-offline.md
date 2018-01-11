@@ -14,11 +14,12 @@ ms.assetid: 9750A3F3-89C7-4A8F-BA75-B0B06BD772C2
 author: timsneath
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: e6dcf1187db5c1e3dd911bc9f91867c383e5a8b2
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.workload: multiple
+ms.openlocfilehash: 4d462120e7b51551ca7f15cc2d23387824a1f9f1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>Installieren der für eine Offlineinstallation von Visual Studio erforderlichen Zertifikate
 
@@ -42,7 +43,7 @@ Administratoren können für Unternehmen mit Offlinecomputern, die nicht über d
 
 Wenn Sie die Bereitstellung von Visual Studio in einer Offlineumgebung für Clientarbeitsstationen skripten, sollten Sie folgende Schritte durchführen:
 
-1. Kopieren Sie das [Zertifikat-Manager-Tool](https://msdn.microsoft.com/library/e78byta0.aspx) (certmgr.exe) in die Installationsfreigabe (z.B. \\server\share\vs2017). Certmgr.exe ist nicht in Windows selbst enthalten, ist aber als Teil der [Windows SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk) verfügbar.
+1. Kopieren Sie das [Zertifikat-Manager-Tool](/dotnet/framework/tools/certmgr-exe-certificate-manager-tool) (certmgr.exe) in die Installationsfreigabe (z.B. \\server\share\vs2017). Certmgr.exe ist nicht in Windows selbst enthalten, ist aber als Teil der [Windows SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk) verfügbar.
 
 2. Erstellen Sie eine Batchdatei mit den folgenden Befehlen:
 
@@ -119,7 +120,7 @@ Hier sind einige weitere Supportoptionen:
 * Sie können uns über Produktprobleme mit dem Tool [Problem melden](../ide/how-to-report-a-problem-with-visual-studio-2017.md) informieren, das sowohl im Visual Studio-Installer als auch in der Visual Studio-IDE angezeigt wird.
 * Sie können uns einen Produktvorschlag unter [UserVoice](https://visualstudio.uservoice.com/forums/121579) mitteilen.
 * Sie können Probleme mit Produkten im Portal [Visual Studio Developer Community](https://developercommunity.visualstudio.com/) im Blick behalten, Fragen stellen und Antworten finden.
-* Über die [Visual Studio-Unterhaltung in der Gitter-Community](https://gitter.im/Microsoft/VisualStudio) können Sie auch Kontakt zu uns oder zu anderen Visual Studio-Entwicklern aufnehmen.  (Diese Option erfordert ein [GitHub](https://github.com/)-Konto).
+* Über die [Visual Studio-Unterhaltung in der Gitter-Community](https://gitter.im/Microsoft/VisualStudio) können Sie auch Kontakt zu uns oder zu anderen Visual Studio-Entwicklern aufnehmen.  (Diese Option erfordert ein [GitHub](https://github.com/)-Konto.)
 
 ## <a name="see-also"></a>Siehe auch
 * [Installieren von Visual Studio](install-visual-studio.md)

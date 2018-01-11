@@ -1,7 +1,7 @@
 ---
-title: 'Schnellstart: Erstellen einer Konsolenanwendung in Visual Studio mit Visual Basic | Microsoft-Dokumentation'
+title: 'Schnellstart: Erstellen einer ersten Konsolenanwendung in Visual Studio mit Visual Basic | Microsoft-Dokumentation'
 ms.custom: 
-ms.date: 12/05/2017
+ms.date: 12/10/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-acquisition
@@ -12,13 +12,14 @@ author: TerryGLee
 ms.author: tglee
 manager: ghogen
 dev_langs: vb
-ms.openlocfilehash: 57441895ccff8bf32b59d6306ca4ae618382d356
-ms.sourcegitcommit: 38097344f3ff74ba7b03bcfa45910015ca6bc2be
+ms.workload: multiple
+ms.openlocfilehash: 46557b646db37b3f04420ca5b91ab71c4f5b088a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/11/2017
+ms.lasthandoff: 12/22/2017
 ---
-# <a name="quickstart-create-a-console-app-in-visual-studio-with-visual-basic"></a>Schnellstart: Erstellen einer Konsolenanwendung in Visual Studio mit Visual Basic
+# <a name="quickstart-create-your-first-console-app-in-visual-studio-with-visual-basic"></a>Schnellstart: Erstellen einer ersten Konsolenanwendung in Visual Studio mit Visual Basic
 Mithilfe dieser Einführung in die integrierte Entwicklungsumgebung (IDE) von Visual Studio, die fünf bis zehn Minuten Ihrer Zeit in Anspruch nehmen wird, können Sie eine einfache Visual Basic-Anwendung erstellen, die in der Konsole ausgeführt werden kann.
 
 Wenn Sie Visual Studio noch nicht installiert haben, gehen Sie auf die Seite [Visual Studio-Downloads](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs), um es kostenlos herunterzuladen.
@@ -32,11 +33,11 @@ Erstellen Sie zunächst ein Visual Basic-Anwendungsprojekt. Der Projekttyp enth�
 
 3. Erweitern Sie im Dialogfeld **Neues Projekt** links den Eintrag **Visual Basic**, und klicken Sie auf **.NET Core**. Wählen Sie im mittleren Bereich die Option **Konsolenanwendung (.NET Core)** aus. Nennen Sie dann das Projekt *HalloWelt*.
 
-   ![Workload „Plattformübergreifende .NET Core-Entwicklung“ im Visual Studio-Installer](../ide/media/new-project-vb-dotnet-helloworld-console-app.png)
+   ![Projektvorlage „Console App (.NET Core)“ im Dialogfeld „Neues Projekt“ in der Visual Studio-IDE](../ide/media/new-project-vb-dotnetcore-helloworld-console-app.png)
 
      Falls Sie die Projektvorlage **Konsolenanwendung (.NET Core)** nicht finden, klicken Sie auf den Link **Visual Studio-Installer öffnen** auf der linken Seite des Dialogfelds **Neues Projekt**.
 
-   ![Klicken Sie auf den Link „Visual Studio-Installer öffnen“ im Dialogfeld „Neues Projekt“](../ide/media/vb-open-visual-studio-installer.png)
+   ![Klicken Sie auf den Link „Visual Studio-Installer öffnen“ im Dialogfeld „Neues Projekt“](../ide/media/vb-open-visual-studio-installer-hello-world.png)
 
      Der Visual Studio-Installer wird gestartet. Wählen Sie die Workload **Plattformübergreifende .NET Core-Entwicklung** aus, und klicken Sie dann auf **Anpassen**.
 
@@ -80,5 +81,6 @@ Fügen Sie Code hinzu, um die Anwendung zu pausieren und den Benutzer zur Eingab
 Damit haben Sie den Schnellstart erfolgreich abgeschlossen. Wir hoffen, dass Sie etwas über Visual Basic und die Visual Studio-IDE gelernt haben. Wenn Sie mehr über diese Themen erfahren möchten, können Sie gerne mit einem Tutorial fortfahren, das Sie im Inhaltsverzeichnis im Abschnitt **Tutorials** finden.
 
 ## <a name="see-also"></a>Siehe auch
-* [Quickstart: Create a "Hello World" Windows Forms app in Visual Studio with Visual Basic (Schnellstart: Erstellen einer „Hallo Welt“-Windows Forms-App in Visual Studio mit Visual Basic)](quickstart-visual-basic-winforms.md)
-* [Erfahren Sie mehr über Visual Basic IntelliSense](visual-basic-specific-intellisense.md)
+* [Schnellstart: Erstellen einer Windows Forms-App in Visual Studio mit Visual Basic](quickstart-visual-basic-winforms.md)
+* [Tutorial: Erste Schritte mit Visual Basic in Visual Studio](tutorial-visual-basic-console.md)
+* [IntelliSense für Visual Basic-Codedateien](visual-basic-specific-intellisense.md)

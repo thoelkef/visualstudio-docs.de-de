@@ -15,11 +15,12 @@ manager: ghogen
 dev_langs:
 - csharp
 - vb
-ms.openlocfilehash: fb4da07f2ee8d4c30717209ee07221285a8275ee
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: multiple
+ms.openlocfilehash: e3f3002dc40c0bdae3aad6cdbacb4b9b70422157
+ms.sourcegitcommit: 03a74d29a1e0584ff4808ce6c9e812b51e774905
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/02/2018
 ---
 # <a name="walkthrough-my-first-wpf-desktop-application"></a>Exemplarische Vorgehensweise: Meine erste WPF-Desktopanwendung
 Diese exemplarische Vorgehensweise enthält eine Einführung in die Windows Presentation Foundation (WPF)-Entwicklung. Sie erstellen eine Basisanwendung mit Elementen, die für die meisten WPF-Desktopanwendung verwendet werden: XAML-Markup, CodeBehind, Anwendungsdefinitionen, Steuerelemente, Layout, Datenbindung und Stile.  
@@ -266,12 +267,12 @@ In diesem Abschnitt erstellen Sie die Anwendungsstruktur, die das Projekt und ei
   
 #### <a name="to-add-a-background-image"></a>So fügen Sie ein Hintergrundbild hinzu  
   
-1.  Wählen Sie das folgende Bild aus, und speichern Sie es als `watermark.png`.  
+1.  Wählen Sie das folgende Bild aus, und speichern Sie es als `watermark.png`aus.  
   
-     ![Wasserzeichenbild für die exemplarische Vorgehensweise](../designers/media/wpf_watermark.png "WPF_watermark")  
+     ![Wasserzeichenbild für die exemplarische Vorgehensweise](../designers/media/wpf_watermark.png "Wasserzeichen")  
   
     > [!NOTE]
-    >  Alternativ können Sie ein eigenes Bild erstellen und als `watermark.png` speichern.  
+    >  Alternativ können Sie ein eigenes Bild erstellen und als `watermark.png`aus.  
   
 2.  Öffnen Sie im **Projektmappen-Explorer**das Kontextmenü für den Knoten **ExpenseIt** , und wählen Sie **Hinzufügen**, **Vorhandenes Element**aus.  
   
@@ -887,4 +888,4 @@ In diesem Abschnitt erstellen Sie die Anwendungsstruktur, die das Projekt und ei
 -   [Dokumente in WPF](/dotnet/framework/wpf/advanced/documents-in-wpf)  
   
 ## <a name="see-also"></a>Siehe auch  
-[Erstellen von modernen Desktopanwendungen mit Windows Presentation Foundation](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)
+[Create Modern Desktop Applications with Windows Presentation Foundation (Erstellen von modernen Desktopanwendungen mit Windows Presentation Foundation)](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)

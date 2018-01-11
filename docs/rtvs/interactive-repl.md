@@ -12,13 +12,14 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: ed6da27de93c371e59b8851924a39b6387c32db9
-ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
+ms.workload: data-science
+ms.openlocfilehash: 170d4dd3aeb5dfb2d05f8f640c653790ccab0a70
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 12/22/2017
 ---
-# <a name="working-with-the-r-interactive-window"></a>Arbeiten mit dem interaktiven R-Fenster
+# <a name="working-with-the-r-interactive-window"></a>Arbeiten mit dem R Interactive-Fenster
 
 R Tools für Visual Studio (RTVS) stellt ein interaktives R-Fenster bereit, das auch als **REPL**-Fenster (Read-Evaluate-Print-Loop, „Lesen-Auswerten-Ausgeben“-Schleife) bekannt ist, in das Sie R-Code eingeben und sofort die Ergebnisse sehen können. Alle Module, Syntax und Variablen sowie IntelliSense sind im interaktiven Fenster verfügbar.
 
@@ -33,7 +34,7 @@ Um mit diesen Features vertraut zu werden, befolgen Sie die exemplarische Vorgeh
 
 [Codeausschnitte](code-snippets.md) funktionieren auch im interaktiven Fenster wie in R-Editorfenstern.
 
-## <a name="overview-of-the-interactive-window"></a>Übersicht über das interaktive Fenster
+## <a name="overview-of-the-interactive-window"></a>Übersicht über das R Interactive-Fenster
 
 Durch das Eingeben von gültigem R-Code und das Drücken der EINGABETASTE am Ende der Zeile wird der Code in dieser Zeile ausgeführt:
 
@@ -60,7 +61,7 @@ Hier sehen Sie das interaktive Fenster mit seiner Symbolleiste:
 
 Die meisten Symbolleistenbefehle, die unten aufgeführt sind, haben Tastaturentsprechungen und sind auch in den Menüs **R Tools > Sitzungen** und **R Tools > Arbeitsverzeichnis** (oder wie aufgeführt) verfügbar:
 
-| Schaltfläche | Befehl | Tastenkombination | Beschreibung | 
+| Schaltfläche | Befehl | Tastenkombination | description | 
 | --- | --- | --- | --- |
 | ![Schaltfläche „Zurücksetzen“](media/repl-toolbar-01-reset.png) | Zurücksetzen | Ctrl+Shift+F10 | Setzt die Sitzung des interaktiven Fensters zurück und löscht alle Variablen sowie die Versionsgeschichte. |
 | ![Schaltfläche „Löschen“](media/repl-toolbar-02-clear.png) | Clear | STRG+L | Löscht die Ausgabe, die im interaktiven Fenster angezeigt wird. Beeinträchtigt keine Sitzungsvariablen oder die Versionsgeschichte. |
@@ -75,7 +76,6 @@ Die meisten Symbolleistenbefehle, die unten aufgeführt sind, haben Tastaturents
 | ![Schaltfläche „Arbeitsverzeichnis auf Projektspeicherort festlegen“](media/repl-toolbar-11-set-working-directory-to-project.png) | Arbeitsverzeichnis auf Projektspeicherort festlegen | STRG+UMSCHALTTASTE+P | Legt das Arbeitsverzeichnis auf den Stamm des zuletzt geladenen Projekts in Visual Studio fest. Weitere Informationen finden Sie unter [Arbeitsverzeichnis](#working-directory). |
 | (Textfeld) | Arbeitsverzeichnis auswählen | n/v | Direktes Eingabefeld für das Arbeitsverzeichnis. Weitere Informationen finden Sie unter [Arbeitsverzeichnis](#working-directory). |
 
-
 ## <a name="workspaces-and-sessions"></a>Arbeitsbereiche und Sitzungen
 
 Das Ausführen von Code im interaktiven Fenster erstellt einen Kontext in Ihrer aktuellen Sitzung. Der Kontext besteht aus globalen Variablen, Funktionsdefinitionen, geladenen Bibliotheken usw. Dieser Kontext wird im Allgemeinen als *Arbeitsbereich* bezeichnen. Sie können Arbeitsbereiche jederzeit speichern und laden. 
@@ -88,12 +88,10 @@ Um einen kürzlich gespeicherten Arbeitsbereich zu laden, klicken Sie auf die Sc
 
 Mithilfe der Schaltfläche **Zurücksetzen** oder **R Tools > Sitzung > Zurücksetzen** können Sie den Sitzungskontext löschen. Wenn Sie eine Remotesitzung verwenden, wird beim Zurücksetzen auch das Benutzerprofil auf dem Remotecomputer gelöscht, damit alle darin gespeicherten Dateien gelöscht werden. (Siehe [Arbeitsbereiche](workspaces.md#directories-on-local-and-remote-computers).)
 
-
 ## <a name="working-directory"></a>Arbeitsverzeichnis
 
 Entwickler möchten häufig ihr Arbeitsverzeichnis ändern, während sie sich in einer interaktiven Sitzung befinden. Mithilfe verschiedener Befehle, die auf der Symbolleiste zur Verfügung stehen, sowie mit dem Menü **R Tools > Arbeitsverzeichnis** und dem Kontextmenü „Projekt“ können Sie einfach ein Arbeitsverzeichnis am Speicherort einer Quelldatei, am Speicherort Ihres Projekts oder an jedem anderen beliebigen Speicherort erstellen. Damit müssen Sie nicht länger vollständige Pfadnamen oder lange relative Pfadnamen eingeben, wenn Sie sich auf Dateien beziehen.
 
- 
 ## <a name="history"></a>Versionsgeschichte
 
 Jede Zeile, die Sie im interaktiven Fenster eingeben, enthält von einem Editor gesendete Zeilen, die in der REPL-Versionsgeschichte gespeichert sind. Sie können mit den NACH-OBEN- und NACH-UNTEN-TASTEN durch die Versionsgeschichte navigieren, wie sie es wahrscheinlich von der Befehlszeile kennen.

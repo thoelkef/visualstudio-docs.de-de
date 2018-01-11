@@ -12,13 +12,14 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 8d17c0a3a1d376f7b44e5fb78f362fc49458462e
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: python
+ms.openlocfilehash: 9770a484c6949695641234a96d8b5a6cdb3c645b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
-# <a name="debugging-your-python-code"></a>Debuggen Ihres Python-Codes
+# <a name="debugging-your-python-code"></a>Debuggen von Python-Code
 
 Visual Studio bietet umfangreiche Debugfunktionen für Python, u.a. Folgende: Anfügen an ausgeführte Prozesse, Auswerten von Ausdrücken in den Überwachungs- und Direktfenstern, Untersuchen lokaler Variablen, Haltepunkte, Anweisungsausführung in Einzelschritten, Prozedurschritten oder bis Rücksprung, Festlegen der nächsten Anweisung und viele weitere. 
 
@@ -42,9 +43,9 @@ Weitere Informationen finden Sie auch in den folgenden szenariospezifischen Them
 <a name="debugging-without-a-project"></a>
 
 > [!Tip]
-> Python in Visual Studio unterstützt das Debuggen ohne ein Projekt. Wenn eine eigenständige Python-Datei geöffnet ist, klicken Sie mit der rechten Maustaste in den Editor, und wählen Sie **Mit Debugging starten** aus. Visual Studio startet das Skript mit der globalen Standard-Umgebung (siehe [Python-Umgebungen](python-environments.md)) und ohne Argumente. Danach verfügen Sie über vollständige Debuggingunterstützung.
+> Python in Visual Studio unterstützt das Debuggen ohne ein Projekt. Klicken Sie in einer geöffneten eigenständigen Python-Datei mit der rechten Maustaste in den Editor, und klicken Sie auf **Mit Debugging starten**. Visual Studio startet das Skript mit der globalen Standard-Umgebung (siehe [Python-Umgebungen](python-environments.md)) und ohne Argumente. Danach verfügen Sie über vollständige Debuggingunterstützung.
 >
-> Erstellen Sie ein Projekt für den Code, was mit der Projektvorlage [From Existing Python Code (Aus bestehendem Python-Code)](python-projects.md#creating-a-project-from-existing-files) ganz einfach erledigt ist, um die Umgebung und die Argumente zu steuern.
+> Erstellen Sie ein Projekt für den Code, um die Umgebung und die Argumente zu steuern. Mit der Projektvorlage [Aus vorhandenem Python-Code](python-projects.md#creating-a-project-from-existing-files) ist dies ganz einfach erledigt.
 
 <a name="debugging-with-a-project"></a>
 
@@ -55,7 +56,7 @@ Der grundlegende Debugworkflow umfasst das Festlegen von Haltepunkten, die Einze
 Eine Debugsitzung wird mit dem Befehl **Debuggen > Debuggen starten**, der Schaltfläche **Start** auf der Symbolleiste oder der Taste F5 gestartet. Diese Aktionen öffnen die Startdatei Ihres Projekts (im Projektmappen-Explorer fett hervorgehoben) mit der aktiven Umgebung des Projekts und allen Befehlszeilenargumenten oder Suchpfaden, die in den Projekteigenschaften festgelegt wurden (siehe [Project debugging options (Projektbezogene Debugoptionen)](#project-debugging-options)). Wenn Sie aus irgendeinem Grund jedoch keine festgelegte Startdatei besitzen, wird ein Python-Ausgabefenster kurz angezeigt und wieder ausgeblendet. Klicken Sie in diesem Fall mit der rechten Maustaste auf die entsprechende Datei, und wählen Sie **Als Startdatei festlegen**aus.
 
 > [!Note]
-> Der Debugger startet immer mit der aktiven Python-Umgebung für das Projekt. Um die Umgebung zu ändern, legen Sie eine andere Umgebung als aktiv fest, wie unter [Python-Umgebungen](python-environments.md) beschrieben.
+> Der Debugger startet immer mit der aktiven Python-Umgebung für das Projekt. Legen Sie, wie unter [Python-Umgebungen](python-environments.md) beschrieben, eine andere Umgebung als aktiv fest, um die Umgebung zu ändern.
 
 ### <a name="breakpoints"></a>Haltepunkte
 
@@ -78,7 +79,7 @@ Beim Festlegen von Bedingungen können Sie auch **Aktion** auswählen und eine M
 
 Nachdem der Code an einem Haltepunkt angehalten wurde, haben Sie verschiedene Möglichkeiten, den Code schrittweise auszuführen oder Codeblöcke auszuführen, bevor wieder unterbrochen wird. Diese Befehle sind an verschiedenen Stellen verfügbar, z.B. in der oberen Symbolleiste zum Debuggen, im **Debuggen**-Menü, im Kontextmenü im Code-Editor sowie über Tastaturkurzbefehle (nicht alle Befehle sind an all diesen Stellen verfügbar):
 
-| Funktion | Tastatureingabe | Beschreibung |
+| Funktion | Tastatureingabe | description |
 | --- | --- | --- |
 | Weiter | F5 | Führt den Code aus, bis der nächste Haltepunkt erreicht ist. |
 | Einzelschritt | F11 | Führt die nächste Anweisung aus und hält an. Wenn die nächste Anweisung ein Funktionsaufruf ist, hält der Debugger in der ersten Zeile der aufgerufenen Funktion an. |
@@ -144,7 +145,7 @@ Standardmäßig startet der Debugger Ihr Programm mit dem Python-Standardstartpr
 
 ### <a name="launch-mode-options"></a>Optionen für den Startmodus
 
-| Option | Beschreibung |
+| Option | description |
 | --- | --- |
 | Python-Standardstartprogram | Verwendet in portierbarem Python geschriebenen Debugcode, der mit CPython, IronPython und Varianten wie Stackless Python kompatibel ist. Diese Option bietet die beste Leistung für das Debuggen von reinem Python-Code. Beim Anfügen an einen ausgeführten `python.exe`-Prozess wird dieses Startprogramm verwendet. Dieses Startprogramm ermöglicht auch das [Debuggen im gemischten Modus](debugging-mixed-mode.md) für CPython, mit dem Sie nahtlos zwischen C/C++-Code und Python-Code wechseln können. |
 | Webstartprogramm | Startet Ihren Standardbrowser und ermöglicht das Debuggen von Vorlagen. Im Abschnitt [Debuggen von Webvorlagen](template-web.md#debugging) finden Sie weitere Informationen. |
@@ -153,7 +154,7 @@ Standardmäßig startet der Debugger Ihr Programm mit dem Python-Standardstartpr
 
 ### <a name="run-options-search-paths-startup-arguments-and-environment-variables"></a>Ausführungsoptionen (Suchpfade, Startargumente und Umgebungsvariablen)
 
-| Option | Beschreibung |
+| Option | description |
 | --- | --- |
 | Suchpfade | Diese Werte entsprechen den im Knoten „Suchpfade“ des Projektmappen-Explorers angezeigten Pfaden. Sie können den Wert hier ändern, es ist aber einfacher, den Projektmappen-Explorer zu verwenden, der das Durchsuchen von Ordnern ermöglicht und Pfade automatisch in ihre relative Form konvertiert. |
 | Skriptargumente | Diese Argumente werden dem Befehl hinzugefügt, der zum Starten Ihres Skripts verwendet wird, und werden nach dem Dateinamen des Skripts angezeigt. Das erste Element hier ist für das Skript als `sys.argv[1]` verfügbar, das zweite als `sys.argv[2]` usw. |
@@ -174,7 +175,7 @@ Das interaktive Python-Debugfenster (**Debuggen > Fenster > Interaktives Debugge
 
 Das Fenster zum interaktiven Debuggen unterstützt zusätzlich zu den [REPL-Standardbefehlen](interactive-repl.md#meta-commands) spezielle Metabefehle:
 
-| Befehl | Argumente | Beschreibung |
+| Befehl | Argumente | description |
 | --- | --- | --- |
 | `$continue`, `$cont`, `$c` | Startet die Ausführung des Programms ab der aktuellen Anweisung. |
 | `$down`, `$d` | Verschiebt den aktuellen Rahmen in der Stapelüberwachung eine Ebene nach unten. |

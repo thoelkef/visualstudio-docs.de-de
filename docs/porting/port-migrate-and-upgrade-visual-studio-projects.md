@@ -21,11 +21,12 @@ ms.assetid: bee759bd-6ff5-4c2e-913a-ea7d3c906c29
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: b508aadfb44792374c323854ee5333905827f23e
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: multiple
+ms.openlocfilehash: e786abe316d60ad0d6cc8a0fd5de356f8d2332c0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="port-migrate-and-upgrade-visual-studio-projects"></a>Übertragung, Migration und Upgrade der Visual Studio-Projekte
 
@@ -43,7 +44,7 @@ Die Unterstützung für einige Typen ändert sich jedoch im Laufe der Zeit. Eine
 
 In der folgenden Liste wird die Unterstützung in Visual Studio 2017 für Projekte beschrieben, die in früheren Versionen erstellt wurden.
 
-Wenn ein Projekt oder Dateityp hier nicht angezeigt wird, den Sie eigentlich sehen sollten, gehen Sie unter [Portieren, Migrieren und Aktualisieren von Visual Studio-Projekten](port-migrate-and-upgrade-visual-studio-projects.md), und hinterlassen Sie einen Hinweis in den Kommentaren.
+Wenn ein Projekt oder Dateityp hier nicht angezeigt wird, den Sie eigentlich aufgeführt werden sollte, gehen Sie zur [Version dieses Artikels für Visual Studio 2015](https://msdn.microsoft.com/library/hh266747.aspx), und [reichen Sie eine Problembeschreibung](https://github.com/MicrosoftDocs/visualstudio-docs/issues/) mit den Angaben zu Ihrem Projekttyp ein.
 
 | Projekttyp | Unterstützung |
 | --- | --- |

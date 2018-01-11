@@ -1,29 +1,18 @@
 ---
-title: Erste Schritte mit Visual C# und Visual Basic in Visual Studio | Microsoft-Dokumentation
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-acquisition
-ms.tgt_pltfrm: 
-ms.topic: get-started-article
-helpviewer_keywords:
-- C# tutorial
-- Visual Basic tutorial
-- learn VB
-- VB tutorial
-- learn C#
-- learn Visual Basic
-ms.assetid: d57bb19f-58d6-48cc-96cb-ab1c540a25d0
-caps.latest.revision: "13"
-author: TerryGLee
-ms.author: tglee
-manager: ghogen
-ms.openlocfilehash: edaf43791dc93693474c8cf68067dbcbb3196f79
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+redirect_url: /visualstudio/ide/quickstart-visual-basic-console
+ms.openlocfilehash: 584510fdc81abd52be390759beef0ac5d412700e
+ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/15/2017
+---
+title: "Erste Schritte mit Visual C# und Visual Basic in Visual Studio | Microsoft-Dokumentation" ms.custom: "" ms.date: "11/04/2016" ms.reviewer: "" ms.suite: "" ms.technology: "vs-acquisition" ms.tgt_pltfrm: "" ms.topic: "get-started-article" helpviewer_keywords: 
+  - "C#-Tutorial"
+  - "Visual Basic-Tutorial"
+  - "VB erlernen"
+  - "VB-Tutorial"
+  - "C# erlernen"
+  - "Erlernen von Visual Basic" author: "TerryGLee" ms.author: "tglee" manager: ghogen
 ---
 # <a name="getting-started-with-visual-c-and-visual-basic-using-visual-studio"></a>Erste Schritte mit Visual C# und Visual Basic in Visual Studio
 Auch wenn Sie noch keine Erfahrung mit Visual C# oder Microsoft Visual Basic besitzen, ist hier der richtige Ausgangspunkt für Sie. Die Reihe "Erste Schritte" umfasst eine Folge von aufeinander aufbauenden Lektionen, die Sie mit Visual C# und Visual Basic vertraut machten. Viel Spaß und viel Erfolg beim Entwickeln Ihrer Software.  
@@ -45,7 +34,7 @@ Auch wenn Sie noch keine Erfahrung mit Visual C# oder Microsoft Visual Basic bes
 
 |         |         |
 |---------|---------|
-|  ![Kamerasymbol für ein Video](../install/media/video-icon.png "Video ansehen")  |    [Sehen Sie sich ein Video an](https://mva.microsoft.com/en-us/training-courses/getting-started-with-visual-studio-2017-17798?l=nl3AuKD6D_9011787171), um mehr zum Erstellen einer einfachen universellen Windows-App in Visual Studio zu erfahren.  
+|  ![Kamerasymbol für video](../install/media/video-icon.png "Video ansehen")  |    [Sehen Sie sich ein Video an](https://mva.microsoft.com/en-us/training-courses/getting-started-with-visual-studio-2017-17798?l=nl3AuKD6D_9011787171), um mehr zum Erstellen einer einfachen universellen Windows-App in Visual Studio zu erfahren.  
 
 ## <a name="see-also"></a>Siehe auch
 [Erste Schritte bei der Entwicklung in Visual Studio](get-started-developing-with-visual-studio.md)

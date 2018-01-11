@@ -14,18 +14,19 @@ ms.assetid: 4CABFD20-962E-482C-8A76-E4012052F701
 author: timsneath
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: fa4aec5f164e188ff9832d06a4b3c8dad46ae63d
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.workload: multiple
+ms.openlocfilehash: f5e6c5a94ac4c875922d2da09e9171f4929035f8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="create-a-network-installation-of-visual-studio-2017"></a>Erstellen einer Netzwerkinstallation von Visual Studio 2017
 
 In der Regel erstellen Unternehmensadministratoren für die Bereitstellung auf Clientarbeitsstationen einen Netzwerkinstallationspfad. Wir haben Visual Studio 2017 so entworfen, dass die Dateien für die Erstinstallation zusammen mit allen Produktupdates in einem einzelnen Ordner zwischengespeichert werden. (Dieser Prozess wird auch als _Erstellen eines Layouts_ bezeichnet.) Dadurch können Clientarbeitsstationen dieselbe Netzwerkadresse verwenden, um ihre Installation zu verwalten, selbst wenn sie noch nicht auf das neueste Wartungsupdate aktualisiert haben.
 
-> [!NOTE]
-> Wenn Sie mehrere Editionen von Visual Studio in Ihrem Unternehmen nutzen (z.B. Visual Studio Professional und Visual Studio Enterprise), benötigen Sie für jede Edition eine eigene Netzwerkinstallationsfreigabe.
+ > [!NOTE]
+ > Wenn Sie mehrere Editionen von Visual Studio in Ihrem Unternehmen nutzen (z.B. Visual Studio Professional und Visual Studio Enterprise), benötigen Sie für jede Edition eine eigene Netzwerkinstallationsfreigabe.
 
 ## <a name="download-the-visual-studio-bootstrapper"></a>Herunterladen des Visual Studio-Bootstrappers
 
@@ -157,7 +158,7 @@ Hier sind einige weitere Supportoptionen:
 * Sie können uns über Produktprobleme mit dem Tool [Problem melden](../ide/how-to-report-a-problem-with-visual-studio-2017.md) informieren, das sowohl im Visual Studio-Installer als auch in der Visual Studio-IDE angezeigt wird.
 * Sie können uns einen Produktvorschlag unter [UserVoice](https://visualstudio.uservoice.com/forums/121579) mitteilen.
 * Sie können Probleme mit Produkten im Portal [Visual Studio Developer Community](https://developercommunity.visualstudio.com/) im Blick behalten, Fragen stellen und Antworten finden.
-* Über die [Visual Studio-Unterhaltung in der Gitter-Community](https://gitter.im/Microsoft/VisualStudio) können Sie auch Kontakt zu uns oder zu anderen Visual Studio-Entwicklern aufnehmen.  (Diese Option erfordert ein [GitHub](https://github.com/)-Konto).
+* Über die [Visual Studio-Unterhaltung in der Gitter-Community](https://gitter.im/Microsoft/VisualStudio) können Sie auch Kontakt zu uns oder zu anderen Visual Studio-Entwicklern aufnehmen.  (Diese Option erfordert ein [GitHub](https://github.com/)-Konto.)
 
 ## <a name="see-also"></a>Siehe auch
 * [Installieren von Visual Studio](install-visual-studio.md)

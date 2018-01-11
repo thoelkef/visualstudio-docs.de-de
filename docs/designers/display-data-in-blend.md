@@ -12,11 +12,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1097a5724e1fcab96be99c58532e15fedd59da30
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a48416fc2508240cd03e545c0b798d3d24ab6f6b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="display-data-in-blend"></a>Anzeigen von Daten in Blend
 Sie können Beispieldaten im Designer anzeigen, um das Layout der Seiten anzupassen. Sie können Beispieldaten von Grund auf neu oder mithilfe einer vorhandenen Klasse generieren. Sie können sich auch mit *Livedaten* verbinden, die in Ihrer Anwendung angezeigt werden, wenn Sie es ausführen.  
@@ -32,13 +33,13 @@ Sie können Beispieldaten im Designer anzeigen, um das Layout der Seiten anzupas
 -   [Anzeigen von Live-Daten in einem Store oder einer Telefonanwendung](#LiveStore)  
   
 ##  <a name="Scratch"></a> Generieren von Beispieldaten  
- Öffnen Sie ein XAML-Dokument zum Generieren von Beispieldaten. Wählen Sie im Bereich **Daten** die Schaltfläche **Beispieldaten erstellen**![](../designers/media/30540d76-7256-43ce-b5d9-4b2edf3d339f.png "30540d76-7256-43ce-b5d9-4b2edf3d339f") und anschließend **Neue Beispieldaten** aus.  
+ Öffnen Sie ein XAML-Dokument zum Generieren von Beispieldaten. Klicken Sie im Bereich **Daten** auf die Schaltfläche **Beispieldaten erstellen**![](../designers/media/30540d76-7256-43ce-b5d9-4b2edf3d339f.png "30540d76-7256-43ce-b5d9-4b2edf3d339f") und anschließend auf **Neue Beispieldaten**.  
   
  Definieren Sie die Struktur der Daten im Bereich **Daten** und binden Sie sie dann an die UI-Elemente auf einer beliebigen Seite.  
   
  ![](../designers/media/496d7ebc-fe46-42f6-95a8-57b0e5be5d49.png "496d7ebc-fe46-42f6-95a8-57b0e5be5d49")  
   
- Wenn die Beispieldaten beim Ausführen der Anwendung auf Ihrer Seiten angezeigt werden sollen, wählen Sie **Datenquelloptionen** ![](../designers/media/ae1fd260-4f84-420d-b196-45fde357d81d.png "ae1fd260-4f84-420d-b196-45fde357d81d")und dann **Ausführen der Anwendung aktivieren**aus.  
+ Wenn die Beispieldaten beim Ausführen der Anwendung auf Ihren Seiten angezeigt werden sollen, wählen Sie **Datenquelloptionen** ![](../designers/media/ae1fd260-4f84-420d-b196-45fde357d81d.png "ae1fd260-4f84-420d-b196-45fde357d81d") und dann **Beim Ausführen der Anwendung aktivieren** aus.  
   
  ![](../designers/media/05d5356d-91bb-4e6b-b3f7-29b76852c4b3.png "05d5356d-91bb-4e6b-b3f7-29b76852c4b3")  
   

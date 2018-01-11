@@ -1,5 +1,5 @@
 ---
-title: "Erste Schritte mit R für Visual Studio | Microsoft-Dokumentation"
+title: Erste Schritte mit R in Visual Studio | Microsoft-Dokumentation
 ms.custom: 
 ms.date: 06/29/2017
 ms.reviewer: 
@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: eb08ea4541bd32e9e28987b103272a87c7a223c0
-ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
+ms.workload: data-science
+ms.openlocfilehash: d57ff0dcd89a9857f62371f81d65f7929aba18c9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="getting-started-with-r-tools-for-visual-studio"></a>Erste Schritte mit R Tools für Visual Studio
 
@@ -45,7 +46,7 @@ Sobald Sie R Tools für Visual Studio (RTVS) installiert haben (siehe [Installat
 > [!Note]
 > Sie können das **R Interactive**-Fenster verwenden, selbst wenn Sie keine Projekte geöffnet haben und auch wenn ein anderer Projekttyp geladen wird. Wählen Sie einfach jederzeit **R Tools > Fenster > R Interactive** aus.
 
-## <a name="explore-the-interactive-window-and-intellisense"></a>Erkunden des interaktiven Fensters und IntelliSense
+## <a name="explore-the-interactive-window-and-intellisense"></a>Kennenlernen des R Interactive-Fensters und IntelliSense
 
 1. Überprüfen Sie, ob das interaktive Fenster funktioniert, indem Sie `3 + 4` eingeben und dann die EINGABETASTE drücken, um das Ergebnis anzuzeigen:
 

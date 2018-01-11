@@ -1,26 +1,26 @@
 ---
 title: "Bearbeiten von Code mit R Tools für Visual Studio | Microsoft-Dokumentation"
 ms.custom: 
-ms.date: 06/29/2017
+ms.date: 12/04/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology: devlang-r
 ms.devlang: r
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: a198ccc3-5506-48e7-b3b2-9399661b80d5
 caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 5c856bb02ca33f999273fd6da782226be5f0f2d2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-science
+ms.openlocfilehash: 013c32cb1567b3a4830a5c63059b14ea23df5427
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="editing-r-code-in-visual-studio"></a>Bearbeiten von R-Code in Visual Studio
- 
+
 R Tools für Visual Studio (RTVS) schneidet das Bearbeiten in Visual Studio speziell auf R zu, ohne dass Funktionen oder der Einsatz von Erweiterungen eingeschränkt werden. (Wenn Sie z.B. Vim-Schlüsselbindungen bevorzugen, können Sie die kostenlose [VsVim-Erweiterung](https://visualstudiogallery.msdn.microsoft.com/59ca71b3-a4a3-46ca-8fe1-0e90e3f79329) aus der Visual Studio Gallery herunterladen.)
 
 In diesem Thema:
@@ -33,10 +33,9 @@ In diesem Thema:
 - [Einfügen von Roxygen-Kommentaren](#inserting-roxygen-comments)
 - [Editor-Optionen](#editor-options)
 
-Schauen Sie sich auch die Themen zu [IntelliSense](code-intellisense.md), [Codeausschnitten](code-snippets.md) und [R Markdown](rmarkdown.md) an.
+Sehen Sie sich auch die Themen zu [IntelliSense](code-intellisense.md), [Linting](code-linting.md), [Codeausschnitten](code-snippets.md) und [R Markdown](rmarkdown.md) an.
 
-
-## <a name="syntax-highlighting"></a>Syntaxhervorhebung 
+## <a name="syntax-highlighting"></a>Syntaxhervorhebung
 
 Sie können mit RTVS Teile Ihres Codes (z.B. Zeichenfolgen, Kommentare und Schlüsselwörter) nicht nur farblich hervorheben, sondern auch Links in Kommentaren:
 
@@ -69,7 +68,7 @@ Mit reduzierbaren Codebereichen können Sie Teile des Codes im Editor für eine 
 Um selbst einen Bereich zu erstellen, umschließen Sie den gewünschte Code mit Kommentaren, die auf `---` enden. Mit den kleinen Steuerelementen „+/-“ links vom Code können Sie dann den Bereich erweitern bzw. reduzieren:
 
 ![Erstellen eines reduzierbaren Bereichs mithilfe von Kommentaren](media/editing-collapsible-regions.gif)
- 
+
 Visual Studio fügt standardmäßig Leerzeichen ein, wenn Sie die TAB-TASTE drücken. Wie Sie dieses Verhalten ändern, wird in [Options, Text Editor, Tabs (Optionen, Text-Editor, Registerkarten)](../ide/reference/options-text-editor-all-languages.md) beschrieben.
 
 ## <a name="code-navigation"></a>Codenavigation
@@ -107,9 +106,9 @@ f <- function(a) { return(a + 1) }
 Um die gesamte Codedatei neu zu formatieren, wählen Sie **Bearbeiten > Erweitert > Dokument formatieren** (STRG+E, D).
 
 Die automatische Formatierung ist ein anderer Vorgang, der rückgängig gemacht werden kann. Wenn Sie z.B. Code in den Editor einfügen und eine Formatierung anwenden, können Sie **Bearbeiten > Rückgängig machen** drücken oder STRG+Z einmal drücken, um die Formatierung rückgängig zu machen. Wenn Sie dann erneut auf „Rückgängig machen“ drücken, wird das Einfügen an sich aufgehoben.
- 
+
 Formatierungsoptionen (einschließlich der Deaktivierung der Formatierung) werden über **Extras > Optionen** auf der Registerkarte **Text-Editor > R > Erweitert** festgelegt. Sie können mit dem Befehl **R Tools > Editor-Optionen** direkt zu dieser Seite gehen. Alternativ können Sie auch im Editor rechtsklicken und auf **Formatierungsoptionen...** klicken. Weitere Informationen finden Sie im Abschnitt [Editor-Optionen](#editor-options).
- 
+
 ## <a name="inserting-roxygen-comments"></a>Einfügen von Roxygen-Kommentaren
 
 RTVS bietet eine Verknüpfung zum Generieren von [Roxygen](http://roxygen.org/)-Kommentaren mit den Parameternamen einer Funktion. Geben Sie einfach `###` in einer leeren Zeile oberhalb der Funktionsdefinition ein:
@@ -128,7 +127,7 @@ Optionen auf den Registerkarten **Allgemein**, **Scrollleisten** und **Registerk
 
 Optionen auf der Registerkarte **R > Erweitert** sind für RTVS spezifisch:
 
-| Gruppieren | Option | Standard | Beschreibung |
+| Gruppieren | Option | Standard | description |
 | --- | --- | --- | --- |
 | Formatierung | Automatische Formatierung | Ein | Formatiert Code während der Eingabe neu. Wirkt sich nicht auf die Befehle **Auswahl formatieren** oder **Dokument formatieren** aus. |
 | | Expanded braces | Aus | Platziert eine öffnende { in eine neue Zeile |
@@ -144,5 +143,5 @@ Optionen auf der Registerkarte **R > Erweitert** sind für RTVS spezifisch:
 | | Vervollständigungliste beim Drücken der TAV-TASTE | Aus | Ruft eine Vervollständigungliste auf, wenn Sie ein oder mehrere Zeichen eingeben und dann auf die TAB-TASTE drücken |
 | | Match gibt den Argumentnamen teilweise ein | Aus | Wenn Sie in einem Funktionsaufruf Argumentnamen eingeben, zeigt die Signaturhilfe eine Beschreibung der Arguments an, dass am besten passt. |
 | Interaktives Fenster | Syntax-Prüfung in der R-Konsole | Aus | Wendet die Syntaxüberprüfung im interaktiven Fenster an Die Syntaxüberprüfung funktioniert bei Anweisungen mit mehreren Zeilen möglicherweise nicht ordnungsgemäß. | 
-| Gliedern | Code outlining | Ein | Erstellt automatisch reduzierbare Codebereiche für Bereiche mit Anweisungen mit mehreren Zeilen | 
+| Gliedern | Code outlining | Ein | Erstellt automatisch reduzierbare Codebereiche für Bereiche mit Anweisungen mit mehreren Zeilen |
 | Syntax check | Syntaxfehler anzeigen | Ein | Aktiviert die automatische Syntaxüberprüfung von Code |

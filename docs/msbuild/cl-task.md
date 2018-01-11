@@ -25,11 +25,12 @@ caps.latest.revision: "18"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 3299640b5db944c2e421a5b95df552ed36f80b77
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ffd317643b7ea1bfbf97bce6d533a76fd7bf1509
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="cl-task"></a>CL-Aufgabe
 Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführbare Dateien (EXE), Dynamic Link Library-Dateien (DLL) oder Codemoduldateien (NETMODULE). Weitere Informationen finden Sie unter [Compileroptionen](/cpp/build/reference/compiler-options).  
@@ -53,8 +54,7 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
      Weitere Informationen finden Sie unter [Compileroptionen](/cpp/build/reference/compiler-options).  
   
--   **AdditionalUsingDirectories**
-Optionaler String[]-Parameter.  
+-   **AdditionalUsingDirectories**Optional String[] parameter.  
   
      Gibt ein Verzeichnis an, das der Compiler durchsucht, um Dateiverweise aufzulösen, die an die **#using**-Anweisung übergeben wurden.  
   
@@ -542,7 +542,7 @@ Optionaler String[]-Parameter.
   
 -   **PreprocessOutput**  
   
-     Optionaler `ITaskItem[]`-Parameter.  
+     Optionaler `ITaskItem[]` -Parameter.  
   
      Definiert ein Array von Präprozessorausgabeelementen, die verbraucht und von Aufgaben ausgegeben werden können.  
   
@@ -628,7 +628,7 @@ Optionaler String[]-Parameter.
   
 -   **Sources**  
   
-     Erforderlicher `ITaskItem[]`-Parameter.  
+     Erforderlicher `ITaskItem[]` -Parameter.  
   
      Gibt eine durch Leerzeichen getrennte Liste der Quelldateien an.  
   
@@ -780,7 +780,7 @@ Optionaler String[]-Parameter.
   
 -   **TLogReadFiles**  
   
-     Optionaler `ITaskItem[]`-Parameter.  
+     Optionaler `ITaskItem[]` -Parameter.  
   
      Gibt ein Array von Elementen an, die die *Read-Datei-Nachverfolgungsprotokolle* darstellen.  
   
@@ -788,7 +788,7 @@ Optionaler String[]-Parameter.
   
 -   **TLogWriteFiles**  
   
-     Optionaler `ITaskItem[]`-Parameter.  
+     Optionaler `ITaskItem[]` -Parameter.  
   
      Gibt ein Array von Elementen an, die die *Write-Datei-Nachverfolgungsprotokolle* darstellen.  
   

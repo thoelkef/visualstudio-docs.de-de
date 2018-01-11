@@ -12,15 +12,16 @@ caps.latest.revision: "11"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: ba0106ad8a820556ed4c8f7aaed915f532f8c824
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: python
+ms.openlocfilehash: 67132298bd8c6cf61027f01dab795f57b302b108
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="python-web-project-templates"></a>Python-Webprojektvorlagen
 
-Python in Visual Studio unterstützt das Entwickeln von Webprojekten in Bottle-, Flask- und Django-Frameworks mit Projektvorlagen und einem Debugstartprogramm, das so konfiguriert werden kann, dass es mehrere Frameworks behandeln kann. Sie können auch die generische Vorlage „Webprojekt“ für andere Frameworks wie z.B Pyramid verwenden.
+Python in Visual Studio unterstützt das Entwickeln von Webprojekten in Bottle-, Flask- und Django-Frameworks mit Projektvorlagen und einem Debugstartprogramm, das so konfiguriert werden kann, dass es mehrere Frameworks behandeln kann. Sie können auch die generische Vorlage **Webprojekt** für andere Frameworks wie z.B Pyramid verwenden.
 
 Diese Frameworks sind nicht in Visual Studio enthalten. Sie müssen Frameworks separat installieren, indem Sie mit der rechten Maustaste auf das Projekt klicken und **Python > Framework installieren/aktualisieren** auswählen.
 
@@ -36,7 +37,7 @@ Wenn Sie ein Projekt über eine frameworkspezifische Vorlage erstellen, wird ein
 
 Wählen Sie bei der Bereitstellung in Microsoft Azure App Service eine Version von Python als [Websiteerweiterung](https://aka.ms/PythonOnAppService), und installieren Sie Pakete manuell. Da Pakete in Azure App Service bei Bereitstellung über Visual Studio **nicht** automatisch anhand einer `requirements.txt`-Datei installiert werden, befolgen Sie außerdem die Konfigurationsdetails unter [aka.ms/PythonOnAppService](https://aka.ms/PythonOnAppService).
 
-In Microsoft Azure Cloud Services *wird* die `requirements.txt`-Datei hingegen unterstützt. Weitere Details finden Sie unter [Azure Cloud Services-Projekte](template-azure-cloud-service.md).
+Die `requirements.txt`-Datei hingegen wird in Microsoft Azure Cloud Services *unterstützt*. Weitere Informationen finden Sie unter [Projekte für Azure-Clouddienste für Python](template-azure-cloud-service.md).
 
 ## <a name="debugging"></a>Debuggen
 
@@ -62,18 +63,17 @@ Jede Projekteigenschaft oder Umgebungsvariable kann mit der MSBuild-Syntax angeg
 > [!Note]
 > Werte unter **Serverbefehl ausführen** werden mit dem Befehl **Debuggen > Server starten** oder STRG+F5 verwendet. Werte in der Gruppe **Debugserverbefehl** werden mit dem Befehl **Debuggen > Debugserver starten** oder F5 verwendet.
 
-
 ### <a name="sample-bottle-configuration"></a>Beispiel für eine Bottle-Konfiguration
 
-Die Bottle-Webprojektvorlage enthält Codebausteine, die die erforderliche Konfiguration vornehmen. Eine importierte Bottle-App enthält diesen Code jedoch möglicherweise nicht. In diesem Fall wird die App durch die folgenden Einstellungen über das installierte `bottle`-Modul gestartet:
+Die Vorlage **Bottle-Webprojekt** enthält Codebausteine, die die erforderliche Konfiguration vornehmen. Eine importierte Bottle-App enthält diesen Code jedoch möglicherweise nicht. In diesem Fall wird die App durch die folgenden Einstellungen über das installierte `bottle`-Modul gestartet:
 
 - Gruppe **Serverbefehl ausführen**:
-    - **Befehl**: `bottle` (Modul)
-    - **Argumente**: `--bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
+  - **Befehl**: `bottle` (Modul)
+  - **Argumente**: `--bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
 
 - Gruppe **Debugserverbefehl**:
-    - **Befehl**: `bottle` (Modul)
-    - **Argumente**: `--debug --bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
+  - **Befehl**: `bottle` (Modul)
+  - **Argumente**: `--debug --bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
 
 Die `--reload`-Option wird nicht empfohlen, wenn Sie Visual Studio für das Debuggen verwenden.
 
@@ -82,11 +82,11 @@ Die `--reload`-Option wird nicht empfohlen, wenn Sie Visual Studio für das Debu
 Pyramid-Apps werden derzeit am besten über das `pcreate`-Befehlszeilentool erstellt. Nachdem eine App erstellt wurde, kann sie mithilfe der Vorlage [Aus vorhandenem Python-Code](python-projects.md#creating-a-project-from-existing-files) importiert werden. Wählen Sie danach die Anpassung **Generisches Webprojekt**, um die Optionen zu konfigurieren. Bei diesen Einstellungen wird davon ausgegangen, dass Pyramid in einer virtuellen Umgebung unter `..\env` installiert ist.
 
 - Gruppe **Debuggen**:
-    - **Serverport**: 6543 (bzw. entsprechend der Konfiguration in den INI-Dateien)
+  - **Serverport**: 6543 (bzw. entsprechend der Konfiguration in den INI-Dateien)
 
 - Gruppe **Serverbefehl ausführen**:
-    - Befehl: `..\env\scripts\pserve-script.py` (Skript)
-    - Argumente: `Production.ini`
+  - Befehl: `..\env\scripts\pserve-script.py` (Skript)
+  - Argumente: `Production.ini`
 
 - Gruppe **Debugserverbefehl**:
     - Befehl: `..\env\scripts\pserve-script.py` (Skript)
@@ -94,7 +94,6 @@ Pyramid-Apps werden derzeit am besten über das `pcreate`-Befehlszeilentool erst
 
 > [!Tip]
 > Sie müssen wahrscheinlich die Eigenschaft **Arbeitsverzeichnis** Ihres Projekts konfigurieren, weil Pyramid-Apps sich in der Regel eine Verzeichnisebene unterhalb der Spitze der Quellstruktur befinden.
-
 
 ### <a name="other-configurations"></a>Weitere Konfigurationen
 
@@ -145,7 +144,7 @@ Schließlich können Sie sich über die [Entwicklungskonsole](https://github.com
 
 Derzeit besteht die empfohlene Methode zur Installation von Paketen darin, die Entwicklungskonsole zu verwenden, nachdem die Websiteerweiterung installiert und PIP direkt ausgeführt wurde. Der vollständige Pfad zu Python muss unbedingt verwendet werden, da Sie ansonsten möglicherweise die falsche Version ausführen. Die Verwendung einer virtuellen Umgebung ist im Allgemeinen nicht erforderlich. Zum Beispiel:
 
-```
+```command
 c:\Python35\python.exe -m pip install -r D:\home\site\wwwroot\requirements.txt
 
 c:\Python27\python.exe -m pip install -r D:\home\site\wwwroot\requirements.txt
@@ -161,13 +160,13 @@ Die folgenden Elemente sind verfügbar:
 - „web.config“ für Azure (HttpPlatformHandler): Fügt eine `web.config`-Datei hinzu, wenn Ihre App auf einen Socket für eingehende Verbindungen lauscht.
 - „web.config“ für statische Azure-Dateien: Wenn Sie eine der oben genannten `web.config`-Dateien verwenden, fügen Sie diese einem Unterverzeichnis hinzu, um sie von der Verarbeitung durch Ihre App auszuschließen.
 - „web.config“ für das Remotedebuggen in Azure: Fügt die Dateien hinzu, die für das Remotedebuggen über WebSockets erforderlich sind.
-- Webrollen-Unterstützungsdateien: Enthält die Standardbereitstellungsskripts für Cloud Services-Webrollen.
-- Workerrollen-Unterstützungsdateien: Enthält die Standardbereitstellungsskripts und Startskripts für Cloud Services-Workerrollen.
+- Webrollen-Unterstützungsdateien: Enthält die Standardbereitstellungsskripts für Webrollen in Clouddiensten.
+- Workerrollen-Unterstützungsdateien: Enthält die Standardbereitstellungsskripts und Startskripts für Workerrollen in Clouddiensten.
 
 Wenn Sie Ihrem Projekt die `web.config`-Debuggingvorlage hinzufügen und das Remotedebuggen in Python verwenden möchten, müssen Sie die Website in der Konfiguration „Debug“ veröffentlichen. Diese Einstellung ist von der aktuellen aktiven Konfiguration der Projektmappe getrennt und lautet standardmäßig „Release“. Um sie zu ändern, öffnen Sie die Registerkarte **Einstellungen**, und verwenden Sie das Kombinationsfeld **Konfiguration** im Veröffentlichungs-Assistenten (weitere Informationen zur Erstellung und Bereitstellung in Azure-Web-Apps finden Sie in der [Azure-Dokumentation](https://azure.microsoft.com/develop/python/)):
 
 ![Ändern der Veröffentlichungskonfiguration](media/template-web-publish-config.png)
 
-Mit dem Befehl **In Microsoft Azure Cloud Services-Projekt konvertieren** (Abbildung unten) wird Ihrer Projektmappe ein Cloud Services-Projekt hinzugefügt. Dieses Projekt umfasst die Bereitstellungseinstellungen und die Konfiguration für die zu verwendenden virtuellen Computer und Dienste. Verwenden Sie den Befehl **Veröffentlichen** im Cloudprojekt zur Bereitstellung in Cloud Services. Mit dem Befehl **Veröffentlichen** im Python-Projekt erfolgt die Bereitstellung weiterhin auf Websites. Weitere Details finden Sie unter [Azure Cloud Services-Projekte](template-azure-cloud-service.md).
+Mit dem Befehl **In Microsoft Azure Cloud Services-Projekt konvertieren** (Abbildung unten) wird Ihrer Projektmappe ein Clouddienst-Projekt hinzugefügt. Dieses Projekt umfasst die Bereitstellungseinstellungen und die Konfiguration für die zu verwendenden virtuellen Computer und Dienste. Verwenden Sie den Befehl **Veröffentlichen** im Cloudprojekt zur Bereitstellung in Cloud Services. Mit dem Befehl **Veröffentlichen** im Python-Projekt erfolgt die Bereitstellung weiterhin auf Websites. Weitere Informationen finden Sie unter [Projekte für Azure-Clouddienste für Python](template-azure-cloud-service.md).
 
 ![Befehl „In Microsoft Azure Cloud Services-Projekt konvertieren“](media/template-web-convert-menu.png)

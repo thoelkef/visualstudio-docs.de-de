@@ -16,11 +16,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 335589c6487d99726b86921fa988dce64dd384b8
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: multiple
+ms.openlocfilehash: 9f6aaafa0ff72a175b5900b1ff1dfa054fe0381b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Standardtastenkombinationen in Visual Studio
 Weitere Informationen über den Tastaturzugriff finden Sie unter [Tipps und Tricks zu Barrierefreiheit](../ide/reference/accessibility-tips-and-tricks.md) und [Vorgehensweise: Ausschließliches Verwenden der Tastatur](../ide/reference/how-to-use-the-keyboard-exclusively.md).
@@ -544,7 +545,7 @@ Jeder Abschnitt in der folgenden Tabelle enthält Befehle, deren Tastenkombinati
 
 |Befehle|Tastenkombinationen|  
 |--------------|------------------------|  
-|Debug.Graphics.CaptureFrame|Keine|  
+|Debug.Graphics.CaptureFrame|Keiner|  
 |Graphics.MovePixelSelectionDown|UMSCHALT+ALT+NACH-UNTEN|  
 |Graphics.MovePixelSelectionLeft|STRG+ALT+NACH-LINKS|  
 |Graphics.MovePixelSelectionRight|UMSCHALT+ALT+NACH-RECHTS|  
@@ -965,7 +966,7 @@ Jeder Abschnitt in der folgenden Tabelle enthält Befehle, deren Tastenkombinati
 |Format.SpaceDown|ALT+NACH-OBEN<br /><br /> oder<br /><br /> ALT+NACH-UNTEN|  
 |Format.TabOrder|STRG+D|  
 |Format.TestDialog|STRG+T|  
-|Format.ToggleGuides|Strg+G|  
+|Format.ToggleGuides|STRG+G|  
 
 ##  <a name="bkmk_vcimageeditor"></a> VC-Bildbearbeitung  
 

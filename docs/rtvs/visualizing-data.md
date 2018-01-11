@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 5d022864609dca3aeaa2a759ea05e1f37abd203f
-ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
+ms.workload: data-science
+ms.openlocfilehash: 7449e6037300eab33d89f32f98d58a5e265ad21f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-visual-data-plots-with-r"></a>Erstellen von visuellen Datenplots mit R
 
@@ -55,7 +56,7 @@ Durch die Größenanpassung eines Plotfensters wird immer der Plot erneut gerend
 
 Die Symbolleiste des Plotfensters enthält anwendbare Befehle, von denen die meisten auch über das Menü **R Tools > Plots** verfügbar sind.
 
-| Schaltfläche | Befehl | Beschreibung | 
+| Schaltfläche | Befehl | description | 
 | --- | --- | --- |
 | ![Schaltfläche „Neues Plotfenster“](media/plotting-toolbar-01-new-plot-window.png) | Neues Plotfenster | Erstellt ein separates Plotfenster mit eigener Versionsgeschichte. Weitere Informationen unter [Mehrere Plotfenster](#multiple-plot-windows). |
 | ![Schaltfläche „Plotfenster aktivieren“](media/plotting-toolbar-02-activate-plot-window.png) | Plotfenster aktivieren | Legt das aktuelle Plotfenster als aktives Fenster fest, sodass nachfolgende `plot`-Befehle an dieses Fenster gerendert werden. Weitere Informationen unter [Mehrere Plotfenster](#multiple-plot-windows). Weitere Informationen unter [Mehrere Plotfenster](#multiple-plot-windows). |

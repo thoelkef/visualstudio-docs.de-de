@@ -12,11 +12,12 @@ caps.latest.revision: "5"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7e2485d80fa9ec0816513ac7e5c374bdd6832dff
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a8f8f21520b0ab26e3f0099097a473ee298c5674
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="pen-tool-modifier-keys-in-blend"></a>Stifttool-Zusatztasten in Blend
 In der folgenden Tabelle sind Tastenkombinationen aufgeführt, mit denen Sie einen Pfad bearbeiten können, während Sie ihn mit dem Tool **Stift**  ![](../designers/media/d514358f-185a-412f-a55d-36633b25dc8a.png "d514358f-185a-412f-a55d-36633b25dc8a") erstellen. Sie können mit dem Tool **Stift** auch Punkte auf einem vorhandenen Pfad hinzufügen oder von ihm entfernen, oder zwei vorhandene Pfade verbinden.  

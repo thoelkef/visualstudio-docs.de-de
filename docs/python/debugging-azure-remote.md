@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 8e08bcf4cdae07cbaf621825e85fe5a8b699cfa1
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: python
+ms.openlocfilehash: c9ac484d90d7c80cbff0e20f33ede099b36c9786
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="remotely-debugging-python-code-on-azure"></a>Remotedebuggen von Python-Code in Azure
 
@@ -28,7 +29,7 @@ Da das Azure-Remotedebuggen Websockets verwendet, müssen Sockets für Ihre App 
 
 Sobald Ihr Projekt ordnungsgemäß bereitgestellt wurde und Websockets aktiviert wurden, können Sie das Projekt über den **Server-Explorer** in Visual Studio (**Ansicht > Server-Explorer**) an die App Service-Instanz anfügen. Suchen Sie unter **Azure > App Service** in der entsprechenden Ressourcengruppe nach Ihrer Website, klicken Sie mit der rechten Maustaste, und wählen Sie **Debugger anfügen (Python)**. (Der Befehl **Debugger anfügen** ist auf in IIS ausgeführte .NET-Anwendungen ausgelegt und nur dann hilfreich, wenn Sie neben Ihrer Python-App auch .NET-Code hosten.)
 
-Visual Studio leitet Sie möglicherweise zu einer Reihe von Anweisungen zum direkten Anfügen weiter, wie weiter unten in diesem Artikel unter [Anfügen ohne Server-Explorer](#attaching-without-server-explorer) beschrieben. Wenn der Befehl **Debugger anfügen (Python)** nicht angezeigt wird oder beim Anfügen an Ihre Website ein Fehler in Visual Studio auftritt, finden Sie Informationen zur Fehlerbehebung unter [Problembehandlung für das Azure-Remotedebuggen](debugging-azure-remote-troubleshooting.md).
+Visual Studio leitet Sie möglicherweise zu einer Reihe von Anweisungen zum direkten Anfügen weiter, wie weiter unten in diesem Artikel unter [Anfügen ohne Server-Explorer](#attaching-without-server-explorer) beschrieben. Wenn der Befehl **Debugger anhängen (Python)** nicht angezeigt wird oder beim Anfügen an Ihre Website ein Fehler in Visual Studio auftritt, finden Sie Informationen zur Fehlerbehebung unter [Problembehandlung für das Remotedebuggen für Python und Azure](debugging-azure-remote-troubleshooting.md).
 
 Wenn das Anfügen erfolgreich ist, wechselt Visual Studio zu einer Debuggeransicht. Die Symbolleiste zeigt den Prozess an, der gerade debuggt wird, z.B. `wss://`-URI:
 

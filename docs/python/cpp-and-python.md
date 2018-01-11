@@ -1,7 +1,7 @@
 ---
 title: Arbeiten mit C++ und Python in Visual Studio | Microsoft-Dokumentation
 ms.custom: 
-ms.date: 09/28/2017
+ms.date: 1/2/20178
 ms.reviewer: 
 ms.suite: 
 ms.technology: devlang-python
@@ -13,11 +13,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 08f91846340e2acc993e5302badfc846db5f4a9c
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: python
+ms.openlocfilehash: b7b83243d676c5393669eaa8faa8e8cc34ec2580
+ms.sourcegitcommit: 03a74d29a1e0584ff4808ce6c9e812b51e774905
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/02/2018
 ---
 # <a name="creating-a-c-extension-for-python"></a>Erstellen einer C++-Erweiterung für Python
 
@@ -124,14 +125,14 @@ Weitere Informationen finden Sie unter [Installing Python Support for Visual Stu
     > Legen Sie die Option **C/C++ > Codegenerierung > Runtime Library** nicht auf „Multithreaded-Debug-DLL (/MDd)“ fest, auch nicht für eine Debugkonfiguration. Wählen Sie die Laufzeit „Multithreaded-DLL (/MD)“ aus, denn aus dieser wurden die Nichtdebug-Binärdateien von Python erstellt. Wenn Sie die /MDd-Option festlegen, wird ein Fehler angezeigt *C1189: Py_LIMITED_API is incompatible with Py_DEBUG, Py_TRACE_REFS, and Py_REF_DEBUG* (C1189: Py_LIMITED_API ist nicht mit Py_DEBUG, Py_TRACE_REFS und Py_REF_DEBUG kompatibel), wenn Sie eine Debugkonfiguration Ihrer DLL erstellen. Wenn Sie darüber hinaus `Py_LIMITED_API` entfernen, um den Buildfehler zu vermeiden, stürzt Python beim Versuch, das Modul zu importieren, ab. (Der Absturz geschieht, so wie später beschrieben, innerhalb des DLL-Aufrufs von `PyModule_Create`, mit der Ausgabemeldung *Fatal Python error: PyThreadState_Get: no current thread* (Schwerwiegender Python-Fehler: PyThreadState_Get: kein aktueller Thread.))
     >
     > Beachten Sie, dass die /MDd-Option zum Erstellen der Python-Debugbinärdateien (z.B. „python_d.exe“) verwendet wird. Wenn Sie sie jedoch für eine Erweiterungs-DLL verwenden, wird weiterhin der Buildfehler mit `Py_LIMITED_API` verursacht.
-   
+
 1. Klicken Sie mit der mit der rechten Maustaste auf das C++-Projekt, und wählen Sie **Erstellen**aus, um Ihre Konfigurationen (Debug und Release) zu testen. Die `.pyd`-Dateien sind im Ordner *Lösung* unter **Debug** und **Release** und nicht im C++-Projektordner selbst zu finden.
 
 1. Fügen Sie der Hauptdatei `.cpp` des C++-Projekts folgenden Code hinzu:
 
     ```cpp
     #include <Windows.h>
-    #include <cmath>    
+    #include <cmath>
 
     const double e = 2.7182818284590452353602874713527;
 
@@ -149,7 +150,6 @@ Weitere Informationen finden Sie unter [Installing Python Support for Visual Stu
     ```
 
 1. Erstellen Sie das C++-Projekt erneut, um zu bestätigen, dass Ihr Code korrekt ist.
-
 
 ## <a name="convert-the-c-project-to-an-extension-for-python"></a>Konvertieren des C++-Projekts in eine Erweiterung für Python
 
@@ -171,11 +171,12 @@ Sie müssen die exportierten Methoden so anpassen, dass Sie mit den Python-Typen
     }
     ```
 
-1. Fügen Sie eine Struktur hinzu, die definiert, wie die `tanh`-Funktion von C++ Python angezeigt wird:
+1. Fügen Sie eine Struktur hinzu, die definiert, wie die `tanh_impl`-Funktion von C++ Python angezeigt wird:
 
     ```cpp
     static PyMethodDef superfastcode_methods[] = {
-        // The first property is the name exposed to python, the second is the C++ function name        
+        // The first property is the name exposed to Python, fast_tanh, the second is the C++
+        // function name that contains the implementation.
         { "fast_tanh", (PyCFunction)tanh_impl, METH_O, nullptr },
 
         // Terminate the array with an object containing nulls.
@@ -183,22 +184,22 @@ Sie müssen die exportierten Methoden so anpassen, dass Sie mit den Python-Typen
     };
     ```
 
-1. Fügen Sie eine Struktur hinzu, die das Modul definiert, wie es in Python-Code angezeigt wird. (Dateinamen innerhalb des C++-Projekts wie „module.cpp“ sind nicht von Bedeutung.)
+1. Fügen Sie eine Struktur hinzu, die das Modul so definiert, wie Sie im Python-Code darauf verweisen möchten, insbesondere bei Verwendung der `from...import`-Anweisung. Im folgenden Beispiel bedeutet der Modulname „superfastcode“, dass Sie `from superfastcode import fast_tanh` in Python verwenden können, da `fast_tanh` in `superfastcode_methods` definiert ist. (Dateinamen innerhalb des C++-Projekts wie „module.cpp“ sind nicht von Bedeutung.)
 
     ```cpp
     static PyModuleDef superfastcode_module = {
         PyModuleDef_HEAD_INIT,
-        "superfastcode",                        // Module name as Python sees it
+        "superfastcode",                        // Module name to use with Python import statements
         "Provides some functions, but faster",  // Module description
         0,
-        superfastcode_methods                   // Structure that defines the methods
+        superfastcode_methods                   // Structure that defines the methods of the module
     };
     ```
 
 1. Fügen Sie eine Methode hinzu, die Python aufruft, wenn das Modul geladen wird, die `PyInit_<module-name>` genannt werden muss, wobei *&lt;module_name&gt;* genau mit der Eigenschaft **Allgemein > Zielname** des C++-Projekts übereinstimmt (das bedeutet, dass sie mit dem Dateinamen von `.pyd` übereinstimmt, der vom Projekt erstellt wird).
 
     ```cpp
-    PyMODINIT_FUNC PyInit_superfastcode() {    
+    PyMODINIT_FUNC PyInit_superfastcode() {
         return PyModule_Create(&superfastcode_module);
     }
     ```
@@ -229,7 +230,7 @@ Sie können das Modul alternativ in der globalen Python-Umgebung installieren, w
     sfc_module = Extension('superfastcode', sources = ['module.cpp'])
 
     setup(name = 'superfastcode', version = '1.0',
-        description = 'Python Package with superfastcode C++ Extension',
+        description = 'Python Package with superfastcode C++ extension',
         ext_modules = [sfc_module]
         )
     ```
@@ -249,7 +250,7 @@ Wenn Sie eine der oben genannten Methoden abgeschlossen haben, können Sie die `
 1. Fügen Sie die folgenden Zeilen zu der `.py`-Datei hinzu, um die `fast_tanh`-Methode aufzurufen, die aus der DLL exportiert wurde, und zeigen Sie deren Ausgabe an. Wenn Sie die `from s`-Anweisung manuell eingeben, wird `superfastcode` in der Liste angezeigt. Nachdem Sie `import` eingegeben haben, wird die `fast_tanh`-Methode angezeigt.
 
     ```python
-    from superfastcode import fast_tanh    
+    from superfastcode import fast_tanh
     test(lambda d: [fast_tanh(x) for x in d], '[fast_tanh(x) for x in d]')
     ```
 

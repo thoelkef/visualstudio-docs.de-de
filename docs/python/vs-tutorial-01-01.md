@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: d6c5cd4395ea0251027edbc94019637b72a630a8
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: python
+ms.openlocfilehash: adb49bb6070fee611a2ba67913943e68ee938d29
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="working-with-python-in-visual-studio"></a>Arbeiten mit Python in Visual Studio
 
@@ -44,20 +45,20 @@ In diesem Tutorial beginnen Sie mit einem einfachen Projekt, das nur eine leere 
 
 1. Klicken Sie in Visual Studio auf **Datei > Neu > Projekt** (STRG+UMSCHALT+N), wodurch das Dialogfeld **Neues Projekt** geöffnet wird. An dieser Stelle durchsuchen Sie sprachenübergreifende Vorlagen und wählen anschließend eine Sprache für Ihr Projekt aus und geben an, wo Visual Studio Dateien speichern soll.
 
-1. Klicken Sie auf der linken Seite auf **Vorlagen > Andere Sprachen > Python**, oder suchen Sie nach „Python“, um Python-Vorlagen abzurufen. Über die Suchfunktion können Sie leicht Vorlagen finden, wenn Sie deren Speicherorte in der Sprachenstruktur nicht kennen.
+1. Klicken Sie auf der linken Seite auf **Installiert > Python**, oder suchen Sie nach „Python“, um Python-Vorlagen abzurufen. Über die Suchfunktion können Sie leicht Vorlagen finden, wenn Sie deren Speicherorte in der Sprachenstruktur nicht kennen.
 
     ![Dialogfeld „Neues Projekt“ mit Python-Projekten](media/vs-getting-started-python-01-new-project.png)
 
-1. Beachten Sie, dass die Python-Unterstützung in Visual Studio eine Reihe von Projektvorlagen, einschließlich Webanwendungen, unter Verwendung der Bottle-, Flask- und Django-Frameworks beinhaltet. Im Rahmen dieser exemplarischen Vorgehensweise beginnen wir jedoch mit einem leeren Projekt. 
+    Beachten Sie, dass die Python-Unterstützung in Visual Studio eine Reihe von Projektvorlagen, einschließlich Webanwendungen, unter Verwendung der Bottle-, Flask- und Django-Frameworks beinhaltet. Im Rahmen dieser exemplarischen Vorgehensweise beginnen wir jedoch mit einem leeren Projekt.
 
 1. Klicken Sie auf die Vorlage **Python-Anwendung**, geben Sie einen Namen für das Projekt an, und klicken Sie auf **OK**. 
 
 1. Nach einigen Augenblicken zeigt Visual Studio die Projektstruktur im **Projektmappen-Explorer**-Fenster (1) an. Die Standardcodedatei ist im Editor (2) geöffnet. Das Eigenschaftenfenster (3) wird ebenfalls angezeigt. Darin sind zusätzliche Informationen zu jedem im Projektmappen-Explorer ausgewählten Element enthalten, einschließlich Informationen zum genauen Speicherort auf dem Datenträger.
- 
+
     ![Projektmappen-Explorer mit einem Python-Projekt](media/vs-getting-started-python-02-windows.png)
- 
+
 1. Nehmen Sie sich einige Minuten Zeit, um sich mit dem Projektmappen-Explorer vertraut zu machen. Über diese Funktion durchsuchen Sie Dateien und Ordner in Ihrem Projekt.
-    
+
     ![Erweiterter Projektmappen-Explorer zum Anzeigen von verschiedenen Funktionen](media/vs-getting-started-python-03-solution-explorer.png)
 
     (1) Ihr Projekt wird fettgedruckt dargestellt, mit dem Namen, den Sie im Dialogfeld „Neues Projekt“ festgelegt haben. Auf dem Datenträger wird dieses Projekt von einer `.pyproj`-Datei im Projektordner dargestellt.
@@ -69,7 +70,7 @@ In diesem Tutorial beginnen Sie mit einem einfachen Projekt, das nur eine leere 
     (4) Unter diesem Projekt wird außerdem der Knoten **Python-Umgebungen** angezeigt. Wenn der Knoten erweitert ist, werden die für Sie verfügbaren Python-Interpreters angezeigt. Erweitern Sie einen Interpreterknoten, um die in dieser Umgebung (5) installierten Bibliotheken abzurufen.
 
     Klicken Sie mit der rechten Maustaste im Projektmappen-Explorer auf einen beliebigen Knoten oder ein beliebiges Element, um auf ein Menü der entsprechenden Befehle zuzugreifen. Beispielsweise können Sie über den Befehl **Umbenennen** den Namen jedes beliebigen Knotens oder Elements umbenennen, einschließlich des Projekts und der Projektmappe.
-    
+
 ## <a name="next-steps"></a>Nächste Schritte
 
 > [!div class="nextstepaction"]

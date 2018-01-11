@@ -8,14 +8,14 @@ ms.topic: article
 helpviewer_keywords:
 - Visual Studio ALM
 - Live Unit Testing
-ms.assetid: 5b51fb96-94f4-4926-92b9-262156c05b85
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 38cf43429b5078de100c963df133ea1ba11c8717
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: dotnet
+ms.openlocfilehash: 725b9e31e725106dcd9e461a8f5d3749230fd5c9
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="live-unit-testing-with-visual-studio-2017"></a>Live Unit Testing mit Visual Studio 2017
 
@@ -103,7 +103,7 @@ Sie können Live Unit Testing jederzeit vorübergehend anhalten oder vollständi
  
 ##  <a name="viewing-coverage-visualization-in-the-editor-as-you-type"></a>Anzeigen der Abdeckungsvisualisierung im Editor während der Eingabe
 
-Nach der Aktivierung aktualisiert Live Unit Testing alle Codezeilen im Visual Studio-Editor, um Ihnen zu zeigen, ob der Code, den Sie schreiben, von Komponententests abgedeckt ist, und ob die Tests, die ihn abdecken, erfolgreich sind.  Die folgende Abbildung zeigt Codezeilen mit erfolgreichen und fehlgeschlagenen Tests sowie Codezeilen, die nicht durch Tests abgedeckt sind. Zeilen mit einem grünen „✓“ werden nur durch bestandene Tests abgedeckt, Zeilen mit einem roten „x“ werden von einem oder mehreren nicht bestandenen Tests abgedeckt, und Zeilen mit einem blauen „➖“ werden nicht von Tests abgedeckt.
+Nach der Aktivierung aktualisiert Live Unit Testing alle Codezeilen im Visual Studio-Editor, um Ihnen zu zeigen, ob der Code, den Sie schreiben, von Komponententests abgedeckt ist, und ob die Tests, die ihn abdecken, erfolgreich sind.  Die folgende Abbildung zeigt Codezeilen mit erfolgreichen und fehlgeschlagenen Tests sowie Codezeilen, die nicht durch Tests abgedeckt sind. Zeilen mit einem grünen „✓“ werden nur durch bestandene Tests abgedeckt, Zeilen mit einem roten „x“ werden von einem oder mehreren nicht bestandenen Tests abgedeckt, und Zeilen mit einem blauen „➖“ werden von keinem Test abgedeckt.
 
   ![Bild](./media/lut-codewindow.png)
 
@@ -117,13 +117,13 @@ Wenn Sie den Mauszeiger im Codefenster über das Symbol für erfolgreiche oder f
  
   ![Bild](./media/lut-failedinfo.png) 
 
-Neben der Angabe der Namen und Testergebnisse können Sie mithilfe der QuickInfo die Gruppe von Tests erneut ausführen sowie mit dem Debugger ausführen. Wenn Sie einen oder mehrere Tests in der QuickInfo auswählen, können Sie diese Tests auch ausführen oder debuggen. Auf diese Weise können Sie Ihre Tests debuggen, ohne das Codefenster verlassen zu müssen. Wenn der Debugger eine [`Assert`](https://docs.microsoft.com/dotnet/api/microsoft.visualstudio.testtools.unittesting.assert)-Methode ausführt, die ein unerwartetes Ergebnis zurückgibt, wird die Programmausführung bei der Überwachung aller eventuell festgelegten Haltepunkte und zusätzlich beim Debuggen angehalten. 
+Neben der Angabe der Namen und Testergebnisse können Sie mithilfe der QuickInfo die Gruppe von Tests erneut ausführen sowie mit dem Debugger ausführen. Wenn Sie einen oder mehrere Tests in der QuickInfo auswählen, können Sie diese Tests auch ausführen oder debuggen. Auf diese Weise können Sie Ihre Tests debuggen, ohne das Codefenster verlassen zu müssen. Wenn der Debugger eine [`Assert`](/dotnet/api/microsoft.visualstudio.testtools.unittesting.assert)-Methode ausführt, die ein unerwartetes Ergebnis zurückgibt, wird die Programmausführung bei der Überwachung aller eventuell festgelegten Haltepunkte und zusätzlich beim Debuggen angehalten. 
 
 Wenn Sie den Mauszeiger über einen nicht bestandenen Test in der QuickInfo bewegen, wird sie erweitert, und es werden zusätzliche Informationen zum jeweiligen Fehler bereitgestellt, wie in der folgenden Abbildung dargestellt wird. Wenn Sie in der QuickInfo auf den nicht bestandenen Test doppelklicken, können Sie direkt zum Test navigieren.
 
   ![Bild](./media/lut-failedmsg.png) 
 
-Wenn Sie zum nicht bestandenen Test navigieren, kennzeichnet Live Unit Testing in der Methodensignatur auch visuell die Tests, die bestanden wurden (angezeigt durch ein halbvolles Becherglas mit einem grünen „✓“), nicht bestanden wurden (ein halbvolles Becherglas mit einem roten „🞩“) oder nicht Live Unit Testing zuzuordnen sind (ein halbvolles Becherglas mit einem blauen „➖“). Methoden, die keine Testmethoden darstellen, sind nicht mit einem Symbol versehen. Die folgende Abbildung zeigt alle vier Arten von Methoden.
+Wenn Sie zum nicht bestandenen Test navigieren, kennzeichnet Live Unit Testing in der Methodensignatur auch die Tests visuell, die bestanden wurden (angezeigt durch ein halbvolles Becherglas mit einem grünen „✓“), die nicht bestanden wurden (ein halbvolles Becherglas mit einem roten „🞩“) oder die nicht von Live Unit Testing abgedeckt wurden (ein halbvolles Becherglas mit einem blauen „➖“). Methoden, die keine Testmethoden darstellen, sind nicht mit einem Symbol versehen. Die folgende Abbildung zeigt alle vier Arten von Methoden.
  
   ![Bild](media/lut-testsource.png)
  

@@ -12,11 +12,14 @@ caps.latest.revision: "11"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: ca0318e84c3bb8787b1a499f83d11389699817f2
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload:
+- python
+- azure
+ms.openlocfilehash: 43fbcc0c5c1674d127755a61ef3e15523e792a21
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="azure-sdk-for-python"></a>Azure-SDK für Python
 
@@ -49,7 +52,7 @@ Das [Python Developer Center](http://azure.microsoft.com/develop/python/) umfass
   - [Service Bus-Themen/-Abonnements](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-python-how-to-use-topics-subscriptions)
   - [Dienstverwaltung](https://docs.microsoft.com/azure/cloud-services/cloud-services-python-how-to-use-service-management)
 
-Für öffentliche APIs ohne Dokumentation sind die Komponententests im [GitHub-Repository für das SDK](https://github.com/Azure/azure-sdk-for-python) eine gute Informationsquelle:
+Bei öffentlichen APIs ohne Dokumentation sind die Komponententests im [GitHub-Repository für das SDK](https://github.com/Azure/azure-sdk-for-python) eine gute Informationsquelle:
 
 - [Komponententests für Speicher](https://github.com/Azure/azure-storage-python/tree/master/tests)
 - [Komponententests für Service Bus](https://github.com/Azure/azure-sdk-for-python/tree/master/azure-servicebus/tests)

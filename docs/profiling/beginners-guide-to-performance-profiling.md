@@ -1,5 +1,5 @@
 ---
-title: "Einführung in die Leistungsprofilerstellung in Visual Studio | Microsoft-Dokumentation"
+title: "Profilerstellung für die Anwendungsleistung in Visual Studio | Microsoft-Dokumentation"
 ms.custom: H1Hack27Feb2017
 ms.date: 02/27/2017
 ms.reviewer: 
@@ -18,13 +18,14 @@ caps.latest.revision: "45"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cdb7339c902c94dc0052b1bd4d0570247069dc01
-ms.sourcegitcommit: 1aa9282b1f0bc2795df3264cbd1e331cc44c23f3
+ms.workload: multiple
+ms.openlocfilehash: bacc4e9ebb0b0125b22089ec53a97248e9e1f4e9
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 01/04/2018
 ---
-# <a name="beginners-guide-to-performance-profiling"></a>Einführung in die Leistungsprofilerstellung
+# <a name="profile-application-performance-in-visual-studio"></a>Profilerstellung für die Anwendungsleistung in Visual Studio
 Sie können Visual Studio-Profilerstellungstools verwenden, um Leistungsprobleme in der Anwendung zu analysieren. Dieses Verfahren veranschaulicht die Verwendung der Registerkarte **CPU-Auslastung** der Diagnosetools, um Leistungsdaten Ihrer App zu erhalten. Die Diagnosetools werden für die .NET-Entwicklung in Visual Studio, darunter ASP.NET, sowie für die native/C++-Entwicklung unterstützt.
   
 Wenn der Debugger angehalten wird, sammelt das Tool **CPU-Auslastung** Informationen zu den in der Anwendung ausgeführten Funktionen. Das Tool listet auch die Funktionen auf, die Aufgaben ausgeführt haben. Außerdem wird ein Zeitachsendiagramm zur Verfügung gestellt, das Sie verwenden können, um sich auf bestimmte Segmente der Samplingsitzung zu konzentrieren.
@@ -33,7 +34,7 @@ Der Diagnosehub bietet Ihnen viele weitere Optionen zum Ausführen und Verwalten
 
 |         |         |
 |---------|---------|
-| ![Video ansehen](../install/media/video-icon.png "WatchVideo") | [Sehen Sie sich ein Video an](#video), in dem die Diagnosetools erläutert werden, mit denen Sie die CPU-Auslastung und die Speicherauslastung analysieren können. |
+|  ![Kamerasymbol für video](../install/media/video-icon.png "Video ansehen")  |    [Sehen Sie sich ein Video an](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Profiling-with-Diagnostics-Tools-in-Visual-Studio-2017-daHnzMD6D_9211787171), in dem die Diagnosetools erläutert werden, mit denen Sie die CPU-Auslastung und die Speicherauslastung analysieren können. |
 
 Dieses Thema behandelt die Analyse der CPU-Auslastung in einem normalen Debuggingworkflow. Sie können die CPU-Auslastung auch ohne Debugger analysieren, oder indem Sie eine ausgeführte App als Ziel setzen. Weitere Informationen finden Sie unter [Sammeln von Profilerstellungsdaten während des Debuggens](../profiling/running-profiling-tools-with-or-without-the-debugger.md#collect-profiling-data-without-debugging) in [Ausführen von Profilerstellungstools mit oder ohne den Debugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
   
@@ -68,7 +69,7 @@ Dieses Thema behandelt die Analyse der CPU-Auslastung in einem normalen Debuggin
 
      ![Diagnosetool CPU-Profilerstellung aktivieren](../profiling/media/DiagToolsEnableCPUProfiling.png "DiagToolsEnableCPUProfiling")
 
-     Wenn Sie **CPU-Profilerstellung aktivieren** auswählen, beginnt Visual Studio, Ihre Funktionen und die für die Ausführung benötigte Zeit aufzuzeichnen. Sie können diese gesammelten Daten nur anzeigen lassen, wenn Ihre Anwendung an einem Haltepunkt angehalten wird.
+     Wenn Sie **CPU-Profilerstellung aufzeichnen** auswählen, zeichnet Visual Studio die Funktionen auf und wie lange die Ausführung dauert. Sie können diese gesammelten Daten nur anzeigen lassen, wenn Ihre Anwendung an einem Haltepunkt angehalten wird.
 
 8.  Drücken Sie F5, um die App bis zum zweiten Haltepunkt auszuführen.
 
@@ -148,12 +149,6 @@ Verwenden Sie das Suchfeld, um nach einem gewünschten Knoten zu suchen, und ver
 
 > [!TIP]
 > Vergewissern Sie sich bei der Profilerstellung für externen Code, von dem Windows-Funktionen aufgerufen werden, dass Sie über die neuesten .pdb-Dateien verfügen. Ohne diese Dateien werden in den Berichtsansichten kryptische und schwer verständliche Namen von Windows-Funktionen aufgeführt. Weitere Informationen zum Sicherstellen, dass Sie über die erforderlichen Dateien verfügen, finden Sie unter [Specify Symbol (.pdb) and Source Files in the Debugger (Symbol- (.pdb) und Quelldateien im Debugger angeben)](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
-
-## <a name="video"></a> Sehen Sie sich ein Video zu den Diagnosetools an
-
-<div style="padding-top: 56.25%; position: relative; width: 100%;">
-<iframe style="position: absolute;top: 0;left: 0;right: 0;bottom: 0;" width="100%" height="100%" src="https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Profiling-with-Diagnostics-Tools-in-Visual-Studio-2017-daHnzMD6D_9211787171" frameborder="0" allowfullscreen></iframe>
-</div>
   
 ## <a name="see-also"></a>Siehe auch  
  [Speicherauslastung](../profiling/memory-usage.md)  

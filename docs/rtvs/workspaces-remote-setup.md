@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: d36f49a9b2865c89bd1551ded0d23cf541ff7840
-ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
+ms.workload: data-science
+ms.openlocfilehash: 74978a3ef43a1e98202d32ed418008071c8794be
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="setting-up-remote-workspaces"></a>Einrichten von Remotearbeitsbereichen
 
@@ -105,8 +106,8 @@ Im Rahmen der Installation installiert das Paket `rtvs-daemon` standardmäßig e
 Vorteile und Risiken von selbstsignierten Zertifikaten finden Sie in der Windows-Beschreibung. Das Paket `rtvs-daemon` generiert und konfiguriert das selbstsignierte Zertifikat während der Installation. Sie müssen diese Vorgänge nur manuell ausführen, wenn Sie das automatisch generierte selbstsignierte Zertifikat ersetzen möchten.
 
 So erstellen Sie ein selbstsigniertes Zertifikat:
-1. Erstellen Sie eine SSH-Verbindung, oder melden Sie sich auf dem Linux-Computer an.
 
+1. Erstellen Sie eine SSH-Verbindung, oder melden Sie sich auf dem Linux-Computer an.
 1. Installieren Sie das `ssl-cert`-Paket:
     ```sh
     sudo apt-get install ssl-cert

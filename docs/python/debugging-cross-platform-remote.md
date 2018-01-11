@@ -12,13 +12,14 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 9da504c9af3f0ff30f62f0d4581c4061cc22b4ec
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: python
+ms.openlocfilehash: 1f682cd15f96cf4ea5c12e52d3471580129279f6
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/05/2018
 ---
-# <a name="remotely-debugging-python-code-on-linux"></a>Remotedebuggen von Python-Code in Linux
+# <a name="remotely-debugging-python-code-on-linux"></a>Remotedebuggen von Python-Code unter Linux
 
 Visual Studio kann Python-Anwendungen sowohl lokal als auch remote (siehe [Remotedebuggen](../debugger/remote-debugging.md)) auf einem Windows-Computer starten und debuggen. Mithilfe der [ptvsd-Bibliothek](https://pypi.python.org/pypi/ptvsd) kann PTVS das Remotedebuggen auch auf einem anderen Betriebssystem, einem anderen Gerät oder in einer anderen Python-Implementierung als CPython ausführen.
 
@@ -35,9 +36,9 @@ Die folgenden Elemente sind für diese exemplarische Vorgehensweise nötig:
 - Einen Remotecomputer, auf dem Python unter einem Betriebssystem wie Mac OSX oder Linux ausgeführt wird.
 - Einen geöffneten Port 5678 (eingehend) auf der Firewall dieses Computers. Dies ist die Standardeinstellung für das Remotedebuggen.
 
-Sie können problemlos [virtuelle Linux-Computer in Azure](https://docs.microsoft.com/azure/virtual-machines/linux/creation-choices) erstellen und von Windows aus [darauf über Remotedesktop zugreifen](https://docs.microsoft.com/azure/virtual-machines/linux/use-remote-desktop). Es ist praktisch, für den virtuellen Computer Ubuntu zu verwenden, da Python standardmäßig installiert ist; andernfalls finden Sie eine Liste mit weiteren Python-Downloadspeicherorten unter [Installieren Sie einen Python-Interpreter Ihrer Wahl](python-environments.md#selecting-and-installing-python-interpreters).
+Sie können problemlos [virtuelle Linux-Computer in Azure](/azure/virtual-machines/linux/creation-choices) erstellen und von Windows aus [darauf über Remotedesktop zugreifen](/azure/virtual-machines/linux/use-remote-desktop). Es ist praktisch, für den virtuellen Computer Ubuntu zu verwenden, da Python standardmäßig installiert ist; andernfalls finden Sie eine Liste mit weiteren Python-Downloadspeicherorten unter [Installieren Sie einen Python-Interpreter Ihrer Wahl](python-environments.md#selecting-and-installing-python-interpreters).
 
-Weitere Informationen zum Erstellen einer Firewallregel für einen virtuellen Azure-Computer finden Sie unter [Öffnen von Ports für einen virtuellen Computer in Azure mithilfe des Azure-Portals](https://docs.microsoft.com/azure/virtual-machines/windows/nsg-quickstart-portal).
+Weitere Informationen zum Erstellen einer Firewallregel für einen virtuellen Azure-Computer finden Sie unter [Öffnen von Ports für einen virtuellen Computer in Azure mithilfe des Azure-Portals](/azure/virtual-machines/windows/nsg-quickstart-portal).
 
 ## <a name="preparing-the-script-for-debugging"></a>Vorbereiten des Skripts für das Debuggen
 
@@ -131,14 +132,13 @@ In diesen Schritten legen wir einen einfachen Haltepunkt fest, um den Remoteproz
     | 2013 | 2.2.2 |
     | 2012, 2010 | 2.1 |
 
-
 ## <a name="securing-the-debugger-connection-with-ssl"></a>Sichern der Debuggerverbindung mit SSL
 
 In der Standardeinstellung ist die Verbindung mit dem ptvsd-Remotedebugserver nur durch den geheimen Schlüssel geschützt, und alle Daten werden als Nur-Text übergeben. Für eine sicherere Verbindung unterstützt ptvsd SSL, das folgendermaßen eingerichtet wird:
 
 1. Generieren Sie auf dem Remotecomputer ein eigenständiges selbstsigniertes Zertifikat und Schlüsseldateien mit OpenSSL:
-    
-    ```bash
+
+    ```command
     openssl req -new -x509 -days 365 -nodes -out cert.cer -keyout cert.key
     ```
 
@@ -151,8 +151,8 @@ In der Standardeinstellung ist die Verbindung mit dem ptvsd-Remotedebugserver nu
     ```python
     ptvsd.enable_attach(secret='my_secret', certfile='cert.cer', keyfile='cert.key')
     ```
-    
-    Sie können die gleiche Änderung auch in der Codedatei auf dem lokalen Computer vornehmen, aber da dieser Code nicht tatsächlich ausgeführt wird, ist dies nicht zwingend erforderlich.    
+
+    Sie können die gleiche Änderung auch in der Codedatei auf dem lokalen Computer vornehmen, aber da dieser Code nicht tatsächlich ausgeführt wird, ist dies nicht zwingend erforderlich.
 
 1. Starten Sie das Python-Programm auf dem Remotecomputer neu, damit es zum Debuggen bereit ist.
 
