@@ -18,11 +18,12 @@ f1_keywords:
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: a936c7fb80dbbe6305732a26b5e0a09a737bf3a3
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: python
+ms.openlocfilehash: b80164e4b41bf164e9235858f51d8a211dd70caa
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="options-for-python-in-visual-studio"></a>Optionen für Python in Visual Studio
 
@@ -42,7 +43,7 @@ Die spezifischen Optionen werden in den folgenden Abschnitten beschrieben:
 
 ## <a name="general-options"></a>Allgemeine Optionen
 
-| Option | Standard | Beschreibung |
+| Option | Standard | description |
 | --- | --- | --- |
 | Beim Erstellen virtueller Umgebungen das Ausgabefenster anzeigen| Ein | Deaktivieren Sie diese Option, um zu verhindern, dass das Ausgabefenster angezeigt wird. |
 | Anzeigen des Ausgabefensters beim Installieren oder Löschen von Paketen | Ein |  Deaktivieren Sie diese Option, um zu verhindern, dass das Ausgabefenster angezeigt wird. |
@@ -59,7 +60,7 @@ Die spezifischen Optionen werden in den folgenden Abschnitten beschrieben:
 
 ## <a name="debugging-options"></a>Debugoptionen
 
-| Option | Standard | Beschreibung |
+| Option | Standard | description |
 | --- | --- | --- |
 | Eingabeaufforderung vor der Ausführung, wenn Fehler vorliegen | Ein | Wenn diese Option aktiviert ist, werden Sie aufgefordert zu bestätigen, dass Sie Code ausführen möchten, der Fehler enthält. Deaktivieren Sie diese Option, um das Warnen auszuschalten. |
 | Auf Eingabe warten, wenn der Prozess abnormal beendet wird<br/><br/>Auf Eingabe warten, wenn der Prozess normal beendet wird | Ein (für beide) | Ein aus Visual Studio gestartetes Python-Programm wird in seinem eigenen Konsolenfenster ausgeführt. Standardmäßig wartet das Fenster, bis Sie eine Taste drücken, bevor es schließt, unabhängig davon, wie das Programm beendet wird. Um diese Aufforderung zu deaktivieren und das Fenster automatisch zu schließen, deaktivieren Sie mindestens eine dieser beiden Optionen. |
@@ -72,7 +73,7 @@ Die spezifischen Optionen werden in den folgenden Abschnitten beschrieben:
 
 ## <a name="diagnostics-options"></a>Diagnoseoptionen
 
-| Option | Standard | Beschreibung |
+| Option | Standard | description |
 | --- | --- | --- |
 | Einbeziehen von Analyseprotokollen | Ein | Enthält ausführliche Protokolle zur Analyse von installierten Python-Umgebungen beim Speichern von Diagnosen in Dateien oder beim Kopieren dieser in die Zwischenablage mithilfe von Schaltflächen. Die Option kann die Größe der generierten Datei deutlich erhöhen, ist aber häufig für das Diagnostizieren von Problemen bei IntelliSense erforderlich. |
 | Diagnose in Datei speichern (Schaltfläche) | n/v | Erfordert einen Dateinamen und speichert das Protokoll anschließend in einer Textdatei |
@@ -82,7 +83,7 @@ Die spezifischen Optionen werden in den folgenden Abschnitten beschrieben:
 
 ## <a name="interactive-windows-options"></a>Optionen für das interaktive Fenster
 
-| Option | Standard | Beschreibung |
+| Option | Standard | description |
 | --- | --- | --- |
 | Skripts | n/v | Gibt einen allgemeinen Ordner an, den Startskripts auf interaktive Fenster für alle Umgebungen anwenden. Weitere Informationen finden Sie unter [Startskripte](python-environments.md#startup-scripts). Beachten Sie, dass diese Funktion im Moment nicht funktioniert. |
 | NACH-OBEN- und NACH-UNTEN-TASTEN zum Navigieren des Verlaufs | Ein | Verwenden Sie die Pfeiltasten, um durch den Verlauf im interaktiven Fenster zu Navigieren. Deaktivieren Sie diese Einstellung, um die Pfeiltasten stattdessen zum Navigieren der Ausgabe im interaktiven Fenster zu verwenden. |
@@ -95,7 +96,7 @@ Die spezifischen Optionen werden in den folgenden Abschnitten beschrieben:
 
 ### <a name="completion-results"></a>Vervollständigungsergebnisse
 
-| Option | Standard | Beschreibung |
+| Option | Standard | description |
 | --- | --- | --- |
 | Membervervollständigung zeigt Schnittmenge der Member an | Aus | Wenn diese Option aktiviert ist, werden nur die Vervollständigungen angezeigt, die von allen möglichen Typen unterstützt werden. |
 | Liste basierend auf Suchzeichenfolge filtern | Ein | Wendet den Filter auf Vervollständigungsvorschläge an, während Sie eine Eingabe machen (Standard ist aktiviert). |
@@ -103,7 +104,7 @@ Die spezifischen Optionen werden in den folgenden Abschnitten beschrieben:
 
 ### <a name="selection-in-completion-list"></a>Auswahl in Vervollständigungslisten
 
-| Option | Standard | Beschreibung |
+| Option | Standard | description |
 | --- | --- | --- |
 | Commit bei Eingabe der folgenden Zeichen | {}[]().,:;+-*/%&&#124;^~=<>#@\ | Diese Zeichen folgen üblicherweise auf einen Bezeichner, den Sie aus einer Vervollständigungsliste auswählen können. Deshalb ist es praktisch, die Vervollständigung zu committen, indem Sie einfach ein Zeichen eingeben. Sie können spezifische Zeichen nach Ihren Wünschen einer Liste hinzufügen oder aus dieser entfernen.  |
 | Bei EINGABE wird die aktuelle Vervollständigung übernommen | Ein | Wenn diese Option aktiviert ist, wählt die EINGABE-TASTE die aktuell ausgewählte Vervollständigung aus und wendet diese an wie mit den oben stehenden Zeichen (es gibt natürlich kein Zeichen für EINGABE, weshalb es nicht direkt in die Liste aufgenommen werden kann). |
@@ -111,7 +112,7 @@ Die spezifischen Optionen werden in den folgenden Abschnitten beschrieben:
 
 ### <a name="miscellaneous-options"></a>Sonstige Optionen
 
-| Option | Standard | Beschreibung |
+| Option | Standard | description |
 | --- | --- | --- |
 | Beim Öffnen von Dateien in Gliederungsmodus wechseln | Ein | Aktivieren Sie die Gliederungsfunktion von Visual Studio automatisch im Editor, wenn Sie eine Python-Codedatei öffnen. |
 | Entfernte REPL-Aufforderungen einfügen | Ein | Entfernt „>>>“ und „...“ aus eingefügtem Text, sodass Code leicht aus dem interaktiven Fenster in den Editor übertragen werden kann. Deaktivieren Sie diese Option, wenn Sie diese Zeichen behalten möchten, wenn Sie aus anderen Quellen einfügen. |
