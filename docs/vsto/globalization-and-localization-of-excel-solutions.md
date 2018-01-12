@@ -11,17 +11,15 @@ dev_langs:
 - VB
 - CSharp
 helpviewer_keywords: globalization [Office development in Visual Studio], configuring
-ms.assetid: c5fccd45-cb3a-441c-89bf-257e9faf4587
-caps.latest.revision: "24"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: ac0fc1ca0efe4134889d8bf5ac1d3ca9ae2551ef
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 66c997dd8de6801d790b7653ca414cac0996ddc9
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="globalization-and-localization-of-excel-solutions"></a>Globalisierung und Lokalisierung von Excel-Lösungen
   Dieser Abschnitt enthält besondere Überlegungen zu Microsoft Office Excel-Projektmappen, die auf Computern ausgeführt werden, die über nicht englische Einstellungen für Windows verfügen. Die meisten Aspekte bei der Globalisierung und Lokalisierung von Microsoft Office-Projektmappen sind mit denen identisch, die beim Erstellen von anderen Arten von Projektmappen mit Visual Studio auftreten. Weitere Informationen finden Sie unter [Globalizing and Localizing Applications](/visualstudio/ide/globalizing-and-localizing-applications).  

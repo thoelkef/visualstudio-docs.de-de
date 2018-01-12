@@ -11,17 +11,15 @@ helpviewer_keywords:
 - project items [SharePoint development in Visual Studio], creating template wizards
 - SharePoint project items, creating template wizards
 - SharePoint development in Visual Studio, defining new project item types
-ms.assetid: 2d8165d3-4af9-4a5e-bdba-8b2a06b1dc8d
-caps.latest.revision: "44"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 96f6e6f27938635628db66f2a6eb58a56cee0d18
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 55794f7976e90e34ba24654400f755de9244e13e
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2"></a>Exemplarische Vorgehensweise: Erstellen eines Projektelements "Benutzerdefinierte Aktion" mit einer Elementvorlage, Teil 2
   Nachdem Sie einen benutzerdefinierten Typ des SharePoint-Projektelements definiert und ordnen es mit einer Elementvorlage in Visual Studio, möchten Sie möglicherweise auch einen Assistenten für die Vorlage bereitzustellen. Sie können den Assistenten verwenden, Informationen von Benutzern sammeln, wenn sie Ihre Vorlage verwenden, um eine neue Instanz des Projektelements zu einem Projekt hinzuzufügen. Mit den gesammelten Informationen kann das Projektelement initialisiert werden.  

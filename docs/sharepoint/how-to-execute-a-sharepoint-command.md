@@ -11,17 +11,15 @@ dev_langs:
 - VB
 - CSharp
 helpviewer_keywords: SharePoint commands [SharePoint development in Visual Studio], executing
-ms.assetid: 2d1a163b-b601-4dac-bcea-328f24cb4d57
-caps.latest.revision: "23"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 4888489ef5b60b1222acf09b827c7551818c64b5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 8cfbcf4b00e4551b568e9124e839423f58d922c9
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-execute-a-sharepoint-command"></a>Gewusst wie: Ausführen eines SharePoint-Befehls
   Wenn Sie das Serverobjektmodell in einer SharePoint-Tools-Erweiterung verwenden möchten, müssen Sie eine benutzerdefinierte erstellen *SharePoint-Befehl* zum Aufrufen der API. Nachdem Sie den Befehl zu definieren und mit der SharePoint-Tools-Erweiterung bereitgestellt haben, kann die Erweiterung der Befehl in der SharePoint-Serverobjektmodell aufrufen ausgeführt. Um den Befehl auszuführen, verwenden Sie eine der Methoden von "ExecuteCommand" ein <xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection> Objekt.  

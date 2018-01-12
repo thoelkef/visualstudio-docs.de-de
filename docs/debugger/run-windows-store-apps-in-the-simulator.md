@@ -18,16 +18,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: d4a64f9463650941fe8d645a1a6b92376277f0b6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a3fbe1b7c138f24167e587109fbb5f524b6b9019
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="run-uwp-and-windows-81-apps-in-the-simulator"></a>Universelle Windows-Plattform und Windows 8.1-apps im Simulator ausführen
 Visual Studio-Simulator für universelle Windows-Plattform und Windows 8.1-apps ist eine Desktopanwendung, die eine universelle Windows-Plattform oder Windows 8.1-app simuliert. Sie können ausführen, wählen Sie Anwendungen, die physische Bildschirmgröße und-Auflösung, die Sie emulieren möchten. Sie können auch typische Touch- und rotationsereignisse simulieren und Netzwerkverbindungseigenschaften simulieren.
   
- Der Simulator stellt eine Umgebung, in der Sie können entwerfen, entwickeln, Debuggen und Testen von uwp-Apps, bereit. Bevor Sie Ihre app zum Microsoft Store veröffentlichen, sollten Sie Ihre app auf einem echten Gerät testen.  
+ Der Simulator stellt eine Umgebung, in der Sie können entwerfen, entwickeln, Debuggen und Testen von uwp-Apps, bereit. Bevor Sie Ihre app in Microsoft Store veröffentlichen, sollten Sie Ihre app auf einem echten Gerät testen.  
   
  Visual Studio-Simulator für uwp-apps wird nicht in einer isolierten Umgebung auf dem lokalen Computer ausgeführt. Daher können im Simulator auftretende Fehler, z. B. nicht behebbare systemweite Fehler, auch Auswirkungen auf den restlichen Computer haben.  
   

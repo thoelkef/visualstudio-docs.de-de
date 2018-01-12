@@ -13,17 +13,15 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint development in Visual Studio, extending deployment
 - SharePoint development in Visual Studio, validation rules
-ms.assetid: 17e818f8-0f3a-4a96-a6fc-1634ddb4825d
-caps.latest.revision: "18"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 20a56a2f6582a08270292cd86cf62a9344d8565f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: efc9cc2988125621212698576deeca1247e26a58
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions"></a>Gewusst wie: Erstellen von benutzerdefinierten Funktions- und Paketvalidierungsregeln für SharePoint-Lösungen
   Sie können benutzerdefinierte Validierungsregeln, um zu überprüfen, das Lösungspaket, generiert Visual Studio erstellen. Sie können eine gesamte Funktion oder ein Paket vollständige Überprüfung ausführen, indem Sie auswählen **Validate** aus dem Kontextmenü für ein Paket oder eine Funktion in der **PackagingExplorer**. Teilweisen Validierung wird ausgeführt, wenn Sie neue SharePonit Projektelemente oder Funktionen, das Projekt hinzufügen, um zu bestimmen, ob das Paket oder eine Funktion in einem gültigen Zustand wäre.  

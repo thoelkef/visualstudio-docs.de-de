@@ -38,11 +38,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 20f1b517d271bd50cdb96c595f2e8ab9be7c5e65
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 30eafe77ef4e115650f0871139e009e07fd6729b
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Verwenden Sie Haltepunkte in Visual Studio-Debugger
 Sie können Haltepunkte festlegen, wenn Sie die Ausführung des Debuggers stoppen möchten, um möglicherweise den Status der Codevariablen oder die Aufrufliste anzuzeigen. Sie sind eine der wichtigsten Debugverfahren in der Toolbox eines Entwicklers.  
@@ -232,7 +232,7 @@ Sie können Haltepunkte festlegen, wenn Sie die Ausführung des Debuggers stoppe
 ## <a name="export-and-import-breakpoints"></a>Exportieren und Importieren von Haltepunkten  
  Sie können einen Haltepunkt in eine XML-Datei exportieren, indem Sie mit der rechten Maustaste auf den Haltepunkt klicken und **Exportieren**wählen. Die Datei wird standardmäßig im Projektmappenverzeichnis gespeichert. Öffnen Sie zum Importieren von Haltepunkten das Fenster **Haltepunkte** (**STRG + ALT + B**), und klicken Sie in der Symbolleiste auf den Pfeil-nach-rechts (die QuickInfo lautet **Haltepunkte aus einer Datei importieren**).  
   
-## <a name="troubleshoot-breakpoints"></a>Problembehandlung von Haltepunkten  
+## <a name="troubleshoot"></a>Problembehandlung von Haltepunkten 
   
 ### <a name="i-deleted-a-breakpoint-but-i-continue-to-hit-it-when-i-start-debugging-again"></a>Ich habe einen Haltepunkt gelöscht, aber erreiche ihn beim erneuten Debuggen weiterhin  
  Wenn Sie einen Haltepunkt während des Debuggens gelöscht haben, kann es in manchen Fällen vorkommen, dass Sie den Haltepunkt beim nächsten Debuggen erneut erreichen. Zum Beenden des Erreichens dieses Haltepunkt müssen Sie sicherstellen, dass alle Instanzen des Haltepunkts aus dem Fenster **Haltepunkte** entfernt wurden.  

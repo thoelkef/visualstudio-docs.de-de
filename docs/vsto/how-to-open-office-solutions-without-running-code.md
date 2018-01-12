@@ -18,17 +18,15 @@ helpviewer_keywords:
 - assemblies [Office development in Visual Studio], bypassing
 - Office documents [Office development in Visual Studio, opening without running code
 - documents [Office development in Visual Studio], opening without running code
-ms.assetid: a853d91c-9fd6-421a-b3a2-956b6b494b96
-caps.latest.revision: "23"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: c190c4ace56b2be9c63c9f11570354cddc6c8635
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: bd7a401ab96cbb196d97b2e210b3ede0a624deb8
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-open-office-solutions-without-running-code"></a>Gewusst wie: Öffnen von Office-Projektmappen ohne die Ausführung von Code
   Mit Erweiterungen durch verwalteten Code erstellte eine Microsoft Office-Projektmappe ausgeführt wird, auch wenn die Einstellung "Sicherheit" in der Endbenutzer-Office-Anwendung auf "High" festgelegt ist. Dies ist, da die Sicherheit von Microsoft .NET Framework, nicht durch Microsoft Office verwaltet wird.  

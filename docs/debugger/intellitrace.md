@@ -25,11 +25,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 7a6a1a17768c1f52bec0f98ed9f9f86754856419
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 789c2317fcb1bc46b5708f1810563b20fe8895ed
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="intellitrace"></a>IntelliTrace
 Durch die Verwendung von IntelliTrace zum Erfassen und Nachverfolgen Ihres Codeausführungsverlaufs können Sie beim Debuggen Ihrer Anwendung Zeit sparen. Sie können leicht Fehler finden, da mit IntelliTrace Folgendes möglich ist:  
@@ -56,7 +56,7 @@ Durch die Verwendung von IntelliTrace zum Erfassen und Nachverfolgen Ihres Codea
 |||  
 |-|-|  
 |**Unterstützt**|-Visual Basic- und Visual C#-Anwendungen, die .NET Framework 2.0 oder höher verwenden.<br />     Sie können die meisten Anwendungen debuggen, einschließlich ASP.NET, Microsoft Azure, Windows Forms, WCF, WPF, Windows Workflow, SharePoint 2010, SharePoint 2013 und 64-Bit-Anwendungen.<br />     Zum Debuggen von SharePoint-Anwendungen mit IntelliTrace finden Sie unter [Exemplarische Vorgehensweise: Debuggen einer SharePoint-Anwendung durch Verwenden von IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md).<br />     Um Microsoft Azure-apps mit IntelliTrace zu debuggen, finden Sie unter [einer veröffentlichten Cloud-Diensts mit IntelliTrace und Visual Studio Debuggen](/azure/vs-azure-tools-intellitrace-debug-published-cloud-services).|  
-|**Eingeschränkte Unterstützung**|-.NET Core und ASP.NET Core-apps, die nur für Ereignisse unterstützt<br />-F#-apps versuchsweise<br />-Windows Store-apps, die nur für Ereignisse unterstützt|  
+|**Eingeschränkte Unterstützung**|-.NET Core und ASP.NET Core-apps, die nur für Ereignisse unterstützt<br />-F#-apps versuchsweise<br />-UWP apps, die nur für Ereignisse unterstützt|  
 |**Nicht unterstützt.**|-C++, andere Sprachen und Skript<br />-Windows Dienste, Silverlight, Xbox oder [!INCLUDE[winmobile](../debugger/includes/winmobile_md.md)] apps|  
   
 > [!NOTE]

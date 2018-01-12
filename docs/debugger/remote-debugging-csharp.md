@@ -20,11 +20,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: dotnet
-ms.openlocfilehash: 959622dff7770d314dc5fa2da1e8a81ade34cac4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 6546e58139b4c427f6bbc4343faf64bdd655b63e
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="remote-debugging-a-c-or-visual-basic-project-in-visual-studio"></a>Ein C#- oder Visual Basic-Projekt in Visual Studio für das Remotedebuggen
 Um eine Visual Studio-Anwendung zu debuggen, die auf einem anderen Computer bereitgestellt wurde, installieren Sie und führen Sie der Remotetools auf dem Computer aus, auf denen Sie Ihre app bereitgestellt haben, konfigurieren Sie das Projekt von Visual Studio eine Verbindung mit dem Remotecomputer, und führen Sie die app.

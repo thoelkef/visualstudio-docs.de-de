@@ -17,17 +17,15 @@ helpviewer_keywords:
 - data [Office development in Visual Studio], adding to worksheets
 - data binding, ListObject controls
 - worksheets, populating with data
-ms.assetid: bf692c77-f5cc-456a-9a5c-84ed3067d7eb
-caps.latest.revision: "27"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 93527f48c09a14d35ef88adf65b43272be71212c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e9773d8eaafae3b64e1e13c636390a9b133fa781
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-fill-listobject-controls-with-data"></a>Gewusst wie: Füllen eines ListObject-Steuerelements mit Daten
   Sie können die Datenbindung als Möglichkeit zum schnellen Hinzufügen von Daten zu Ihrem Dokument verwenden. Nach dem Binden der Daten an ein Listenobjekt können Sie das Listenobjekt trennen, damit es die Daten anzeigt, aber nicht länger an die Datenquelle gebunden ist.  

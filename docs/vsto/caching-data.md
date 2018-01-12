@@ -14,17 +14,15 @@ helpviewer_keywords:
 - data caching [Office development in Visual Studio], about caching data
 - data [Office development in Visual Studio], caching
 - data caching [Office development in Visual Studio]
-ms.assetid: 6f34251e-7d31-4f2b-ac17-42fd2837c626
-caps.latest.revision: "36"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 616dea48ba9689bd90a01dab64c8855bdf774adf
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 0d036f11d60a8da1362464a875fdc0f2771cac0e
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="caching-data"></a>Zwischenspeichern von Daten
   Datenobjekte in einer Anpassung auf Dokumentebene können zwischengespeichert werden, sodass die Daten offline oder ohne Öffnen des Microsoft Office Word oder Microsoft Office Excel zugegriffen werden können. Zum Zwischenspeichern eines Objekts muss das Objekt einen Datentyp aufweisen, der bestimmte Anforderungen erfüllt. Viele allgemeine Datentypen in .NET Framework erfüllen diese Anforderungen, einschließlich <xref:System.String>, <xref:System.Data.DataSet>, und <xref:System.Data.DataTable>.  

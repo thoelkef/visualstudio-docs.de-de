@@ -13,11 +13,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 2bf34eda9c9957b8a989244da3f2fce03a5d151e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c84239c2f70a32558f64a299791db917926a8c44
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="walkthrough-capturing-graphics-information-programmatically"></a>Exemplarische Vorgehensweise: Programmgesteuertes Erfassen von Grafikinformationen
 Sie können die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] -Grafikdiagnose zur programmgesteuerten Erfassung von Grafikinformationen aus einer Direct3D-App verwenden.  
@@ -42,7 +42,7 @@ Sie können die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] -Gr
 -   Aufzeichnen von Grafikinformationen  
   
 > [!NOTE]
->  Frühere Implementierungen der programmgesteuerten Erfassung basieren auf Remotetools für [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , um Erfassungsfunktionalität bereitzustellen. Windows 8.1 unterstützt Erfassung direkt über Direct3D 11.2. Deshalb ist es unter Windows 8.1 nicht mehr erforderlich, dass Sie die Remotetools für programmgesteuerte Erfassung installieren.  
+>  Frühere Implementierungen der programmgesteuerten Erfassung basieren auf Remotetools für Visual Studio Tools for [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] um erfassungsfunktionalität bereitzustellen, Windows 8.1 unterstützt Erfassung direkt über Direct3D 11.2. Daher müssen Sie nicht mehr die Remotetools für Visual Studio für die programmgesteuerte Erfassung in Windows 8.1 installieren.  
   
 ### <a name="preparing-your-app-to-use-programmatic-capture"></a>Vorbereiten Ihrer App für die Verwendung der programmgesteuerten Erfassung  
  Um programmgesteuerte Erfassung in Ihrer App verwenden zu können, muss diese die erforderlichen Header enthalten. Diese Header sind Bestandteile des Windows 8.1 SDK.  
@@ -183,10 +183,10 @@ Sie können die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] -Gr
   
      Wenn Sie diesen Schritt nicht ausführen, lautet der Dateiname default.vsglog. Wenn Sie `DONT_SAVE_VSGLOG_TO_TEMP`nicht definiert haben, ist der Speicherort der Datei relativ zum Temp-Verzeichnis; andernfalls ist er relativ zum Arbeitsverzeichnis oder an einem anderen Speicherort, wenn Sie einen absoluten Dateinamen angegeben haben.  
   
- Für [!INCLUDE[win8_appname_long](../includes/win8_appname_long_md.md)] apps, den Ort des temp-Verzeichnisses ist für jeden Benutzer und jede app spezifisch und befindet sich in der Regel an einem Ort wie z. B. C:\users\\*Benutzername*\AppData\Local\Packages\\ *paketfamiliennamen*\TempState\\. Bei desktop-apps der Ort des temp-Verzeichnisses für jeden Benutzer spezifisch und befindet sich in der Regel an einem Ort wie z. B. C:\Users\\*Benutzername*\AppData\Local\Temp\\.  
+ Für universelle Windows-Plattform und [!INCLUDE[win8_appname_long](../includes/win8_appname_long_md.md)] apps, den Ort des temp-Verzeichnisses ist für jeden Benutzer und jede app spezifisch und befindet sich in der Regel an einem Ort wie z. B. C:\users\\*Benutzername*\AppData\Local\Packages\\ *paketfamiliennamen*\TempState\\. Bei desktop-apps der Ort des temp-Verzeichnisses für jeden Benutzer spezifisch und befindet sich in der Regel an einem Ort wie z. B. C:\Users\\*Benutzername*\AppData\Local\Temp\\.  
   
 > [!NOTE]
->  Um in einen speziellen Speicherort zu schreiben, müssen Sie über die entsprechende Berechtigungen verfügen; andernfalls tritt ein Fehler auf. Denken Sie daran, dass [!INCLUDE[win8_appname_long](../includes/win8_appname_long_md.md)] -Apps Daten in weniger Orte schreiben können als Desktop-Apps und dass eventuell eine zusätzliche Konfiguration erforderlich ist, um in bestimmte Speicherorte zu schreiben.  
+>  Um in einen speziellen Speicherort zu schreiben, müssen Sie über die entsprechende Berechtigungen verfügen; andernfalls tritt ein Fehler auf. Bedenken Sie, universelle Windows-Plattform und [!INCLUDE[win8_appname_long](../includes/win8_appname_long_md.md)] apps sind mehr eingeschränkt als desktop-apps zu, in denen sie können Daten schreiben, und möglicherweise erfordern zusätzliche Konfigurationsschritte in bestimmte Speicherorte zu schreiben.  
   
 ### <a name="capturing-the-graphics-information"></a>Erfassung der Grafikinformationen  
  Wenn Sie die App für die programmgesteuerte Erfassung vorbereitet und optional den Speicherort und den Namen der Grafikprotokolldatei konfiguriert haben, erstellen Sie die App, und führen Sie sie dann aus, oder debuggen Sie sie, um die Daten zu erfassen; starten Sie nicht die Grafikdiagnose aus [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , wenn Sie die API für die programmgesteuerte Erfassung verwenden. Das Grafikprotokoll wird in den von Ihnen angegebene Speicherort geschrieben. Wenn Sie diese Version des Protokolls behalten möchten, verschieben Sie sie an einen anderen Speicherort; andernfalls wird sie überschrieben, wenn Sie die App erneut ausführen.  

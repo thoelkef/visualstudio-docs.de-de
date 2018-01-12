@@ -16,17 +16,15 @@ helpviewer_keywords:
 - Word documents, adding Word Art
 - graphics, adding to Word documents
 - WordArt, adding to documents
-ms.assetid: 944e1858-bc7c-471f-b5e7-adf3b0fa574d
-caps.latest.revision: "24"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: a157300032f54a6a86258f28ab0187e7992c35b7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 84917f3f472529bd46463a1f7cecf83c2e9185ac
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-programmatically-add-pictures-and-word-art-to-documents"></a>Gewusst wie: Programmgesteuertes Hinzufügen von Grafiken und WordArt zu Dokumenten
   Sie können Ihren Dokumenten zur Entwurfszeit oder zur Laufzeit Bilder und Zeichnungsobjekte hinzufügen. Mithilfe von WordArt können Sie Microsoft Office Word-Dokumenten dekorativen Text hinzufügen. Diese Spezialeffekte für Text sind Zeichnungsobjekte, die Sie anpassen und in Ihr Dokument einfügen können.  

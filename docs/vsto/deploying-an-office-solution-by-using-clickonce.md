@@ -13,17 +13,15 @@ dev_langs:
 helpviewer_keywords:
 - Office development in Visual Studio, deploying solutions
 - ClickOnce deployment [Office development in Visual Studio], deploying solutions
-ms.assetid: feb516b3-5e4d-449a-9fd2-347d08d90252
-caps.latest.revision: "59"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 0076eea1fa8866ad90bf4125583ed8359916de4a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a989fe2bc88d25ad81238b65bf8ecd775c39bc35
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="deploying-an-office-solution-by-using-clickonce"></a>Bereitstellen einer Office-Lösung mithilfe von ClickOnce
   Wenn Sie ClickOnce verwenden, können Sie die Office-Projektmappe in weniger Schritten bereitstellen. Wenn Sie Updates veröffentlichen, erkennt die Projektmappe sie automatisch und installiert sie. Für ClickOnce ist es jedoch erforderlich, die Projektmappe für jeden Benutzer eines Computers separat zu installieren. Daher sollten Sie die Verwendung von Windows Installer (MSI-Format) in Erwägung ziehen, wenn mehrere Benutzer die Projektmappe auf dem gleichen Computer ausführen.  

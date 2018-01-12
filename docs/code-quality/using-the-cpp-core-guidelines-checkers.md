@@ -12,12 +12,11 @@ author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.technology: vs-ide-code-analysis
-ms.workload: cplusplus
-ms.openlocfilehash: cadee7d9cae0c59333a034e6f0ea12049bf3853f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 0dba021b25a63a057f882aeb5c49a560992c2c2b
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>Verwenden die Spielsteine C++-Core-Richtlinien
 Die C++-Core-Richtlinien sind eine portable Satz von Richtlinien, Regeln und bewährte Methoden zum Schreiben von Code in C++, die von C++-Experten und Designern erstellt. Visual Studio unterstützt derzeit eine Teilmenge dieser Regeln als Teil seiner Codeanalysetools für C++. Die zentrale Richtlinie Prüfer werden standardmäßig in Visual Studio 2017 installiert und sind [als NuGet-Paket für Visual Studio 2015 verfügbar](#vs2015_corecheck).
@@ -86,7 +85,7 @@ Die C++-Core-Richtlinien aus neue Regeln hinzugefügt werden, erhöhen Sie die A
 Ab Visual Studio 2017 Version 15.3 sind unterstützten Regelsätze aus: 
   - **Besitzer Zeiger Regeln** erzwingen [ressourcenverwaltung überprüft im Zusammenhang mit Besitzer<T> von den C++-Core-Richtlinien](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
 
-  - **Const Regeln** erzwingen [Const-bezogene Überprüfungen von den C++-Core-Richtlinien](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con-constants-and-immutability).
+  - **Const Regeln** erzwingen [Const-bezogene Überprüfungen von den C++-Core-Richtlinien](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con-constants-and-immutability).  
 
   - **Regeln für unformatierte Zeiger** erzwingen [ressourcenverwaltung Hier wird überprüft, ob von den C++-Core-Richtlinien im Zusammenhang mit unformatierten Zeigern](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
 
@@ -98,11 +97,14 @@ Ab Visual Studio 2017 Version 15.3 sind unterstützten Regelsätze aus:
 
   **Visual Studio 2017 Version 15.5**:
   - **-Klasse Regeln** einige Regeln, die auf die richtige Verwendung von virtuellen Spezifikationen und spezielle Methoden konzentrieren. Dies ist eine Teilmenge von Überprüfungen für empfohlen [Klassen und Klassenhierarchien](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-class). 
-  - **Parallelitätsregeln** eine einzelne Regel die Guard Badlyly deklariert Objekte abfängt. Weitere Informationen finden Sie unter [Richtlinien im Zusammenhang mit der Parallelität](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-concurrency). 
+  - **Parallelitätsregeln** eine einzige Regel, die Guard weist ein ungültiges deklariert Objekte abfängt. Weitere Informationen finden Sie unter [Richtlinien im Zusammenhang mit der Parallelität](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-concurrency). 
   - **Deklaration Regeln** eine Reihe von Regeln aus der [Schnittstellen Richtlinien](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-interfaces) welche konzentrieren wie globale Variablen deklariert werden.  
   - **Regeln-Funktion** zwei Überprüfungen, die bei der Übernahme von unterstützen die `noexcept` Spezifizierer. Dies ist ein Teil der Richtlinien für die [Deaktivieren der Funktion Entwurf und Implementierung](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-functions). 
   - **Freigegebene Zeiger Regeln** als Teil einer [ressourcenverwaltung](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-resource) Durchsetzung von Richtlinien, wir hinzugefügt, einige Regeln, die speziell für wie freigegebener Zeiger an Funktionen übergeben oder lokal verwendet werden.  
-  - **Stilregeln** eine einfache, aber wichtige überprüfen Sie die Verwendung von gesperrt [Goto](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Res-goto). Dies ist der erste Schritt bei der Verbesserung der Stil und einem verwenden Ausdrücke und-Anweisungen in C++ codieren. 
+  - **Stilregeln** eine einfache, aber wichtige Überprüfung, die Verwendung von gesperrt [Goto](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Res-goto). Dies ist der erste Schritt bei der Verbesserung der Stil und einem verwenden Ausdrücke und-Anweisungen in C++ codieren.  
+  
+  **Visual Studio 2017 Version 15,6**:
+  - **Arithmetischer Regeln** Regeln zur Erkennung von arithmetischen [Überlauf](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Res-overflow), [signierter Vorgänge](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Res-unsigned) und [bit Manipulation](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Res-nonnegative).
 
 
  Sie können auswählen, um Warnungen an, die nur eine oder einige der Gruppen zu beschränken. Die **Native Minimum** und **empfohlen, systemeigenen** Regel umfassen Regeln zusätzlich zu anderen PREfast Überprüfungen C++ Core überprüfen. Wählen Sie zum Anzeigen der verfügbaren-Regelsätze, öffnen Sie das Dialogfeld Projekteigenschaften **Code Analysis\General**, öffnen Sie die Dropdownliste in der **Regelsätzen** Kombinationsfelds und Pick **wählen Sie mehrere Regelsätze** . Weitere Informationen zum Verwenden von Regelsätzen in Visual Studio finden Sie unter [mithilfe von Regelsätzen zum Gruppe Codeanalyseregeln](using-rule-sets-to-group-code-analysis-rules.md).
@@ -120,7 +122,7 @@ CPPCORECHECK_UNIQUE_POINTER_WARNINGS
 CPPCORECHECK_BOUNDS_WARNINGS
 ```
 
-Diese Makros Regelsätze entsprechen und in eine durch Leerzeichen getrennte Liste mit Warnungsnummern erweitern. Verwenden Sie die entsprechenden Pragma-Konstrukte, können Sie den effektiven Satz von Regeln, die interessante für ein Projekt ist oder einen Codeabschnitt konfigurieren. Im folgenden Beispiel wird Codeanalyse warnen nur Konstante Modifizierer fehlt:
+Diese Makros Regelsätze entsprechen und in eine durch Leerzeichen getrennte Liste mit Warnungsnummern erweitern. Verwenden Sie die entsprechenden Pragma-Konstrukte, können Sie den effektiven Satz von Regeln, die interessante für ein Projekt ist oder einen Codeabschnitt konfigurieren. Im folgenden Beispiel gibt eine Warnung aus Codeanalyse behandelt, Konstante Modifizierer fehlt:
 
 ```cpp
 #include <CppCoreCheck\Warnings.h>
@@ -129,8 +131,7 @@ Diese Makros Regelsätze entsprechen und in eine durch Leerzeichen getrennte Lis
 ```
 
 ## <a name="attributes"></a>Attribute
- Microsoft Visual C++-Compiler wurde eine eingeschränkte Unterstützung für GSL Attribut zu unterdrücken.
-Es kann zum Unterdrücken von Warnungen für Ausdruck und Block-Anweisungen innerhalb einer Funktion verwendet werden.
+ Microsoft Visual C++-Compiler wurde eine eingeschränkte Unterstützung für GSL Attribut zu unterdrücken. Es kann zum Unterdrücken von Warnungen für Ausdruck und Block-Anweisungen innerhalb einer Funktion verwendet werden.
 
 ```cpp
 // Supress only warnings from the 'r.11' rule in expression.
@@ -164,10 +165,10 @@ Es kann zum Unterdrücken von Warnungen für Ausdruck und Block-Anweisungen inne
  Sie können die Befehlszeilenoption alle Codeanalyse für eine Datei durch Angabe vorübergehend deaktivieren `/analyze-`. Dadurch wird die Warnung erzeugt *D9025 überschreiben "/ analyze" mit "/ analyze-"*, die daran erinnert Sie Codeanalyse später erneut aktivieren.
 
  ## <a name="corecheck_per_file"></a>Aktivieren das C++ Core Richtlinien Checker auf bestimmte Projektdateien
-Manchmal kann es hilfreich, stimmen mit Fokus Codeanalyse und weiterhin nutzen der Visual Studio-IDE zu sein. Im folgenden finden ein Beispielszenario, die bei großen Projekten Buildzeit sparen und Filterergebnisse erleichtern verwendet werden kann:
+Manchmal kann es hilfreich, stimmen mit Fokus Codeanalyse und dennoch mithilfe der Visual Studio-IDE zu sein. Das folgende Beispielszenario kann bei großen Projekten Buildzeit sparen und Filterergebnisse erleichtern verwendet werden:
 
 1.  Legen Sie in der Befehlsshell die `esp.extension` und `esp.annotationbuildlevel` Umgebungsvariablen.
-2.  Starten Sie Visual Studio über die Befehlsshell auf diese Variablen erben.
+2.  Um diese Variablen zu erben, starten Sie Visual Studio in der-Befehlsshell. 
 3.  Laden Sie Ihr Projekt, und öffnen Sie seine Eigenschaften.
 4.  Aktivieren Sie Codeanalyse, wählen Sie die entsprechenden Regelsätze, aber aktivieren Sie Analysis codeerweiterungen nicht.
 5.  Wechseln Sie zu der Datei, die Sie verwenden möchten, analysieren Sie die C++-Core-Richtlinien aus, und öffnen Sie seine Eigenschaften.
@@ -212,13 +213,13 @@ msbuild /p:EnableCppCoreCheck=true /p:RunCodeAnalysis=true /p:CodeAnalysisRuleSe
 ```
 
 ### <a name="non-msbuild-projects"></a>Nicht-MSBuild-Projekten
-Wenn Sie ein Buildsystem verwenden, die nicht auf MSBuild angewiesen können Sie weiterhin das Überprüfungsprogramm ausgeführt, aber Sie müssen einige Besonderheiten der Konfiguration des Datenbankmoduls "Codeanalyse" vertraut. Beachten Sie, dass diese Mechanismen nicht garantiert werden kann, in der Zukunft unterstützt werden müssen.
+Wenn Sie ein Buildsystem verwenden, die nicht auf MSBuild angewiesen können Sie weiterhin das Überprüfungsprogramm ausgeführt, jedoch müssen Sie einige Besonderheiten der Konfiguration des Datenbankmoduls "Codeanalyse" vertraut. Diese Mechanismen sind nicht garantiert, die in der Zukunft unterstützt werden.
 
 Sie müssen einige Umgebungsvariablen festgelegt und die entsprechende Befehlszeilenoptionen für den Compiler verwenden. Es ist besser, unter der "Native Tools-Eingabeaufforderung" Umgebung arbeiten, damit Sie nicht zum Suchen nach bestimmten Pfaden für den Compiler, Verzeichnisse, usw. enthalten.
 
 1.  **Umgebungsvariablen**
   - `set esp.extensions=cppcorecheck.dll`Dies teilt das Modul die Richtlinien für C++-Core-Modul nicht laden.
-  - `set esp.annotationbuildlevel=ignore`Dadurch werden die Logik, die SAL-Anmerkungen verarbeitet deaktiviert. Anmerkungen wirken sich nicht auf die Codeanalyse in die C++-Core-Richtlinien aus, aber ihre Verarbeitung dauert Zeit (in einigen Fällen viel Zeit). Diese Einstellung ist optional, jedoch dringend empfohlen.
+  - `set esp.annotationbuildlevel=ignore`Dadurch werden die Logik, die SAL-Anmerkungen verarbeitet deaktiviert. Anmerkungen wirken sich nicht auf die Codeanalyse in die C++-Core-Richtlinien aus, aber ihre Verarbeitung dauert (manchmal eine lange Zeit). Diese Einstellung ist optional, jedoch dringend empfohlen.
   - `set caexcludepath=%include%`Es wird dringend empfohlen, dass Sie Warnungen deaktivieren, die Auslösen von Standardheader. Sie können mehrere Pfade hier z. B. den Pfad zu die allgemeinen Header in Ihrem Projekt hinzufügen.
 2.  **Befehlszeilenoptionen**
   - `/analyze`Aktiviert die Codeanalyse (auch erwägen / analyze: nur und / analyze: stillen).
@@ -227,7 +228,7 @@ Sie müssen einige Umgebungsvariablen festgelegt und die entsprechende Befehlsze
 
 
 ## <a name="use-the-guideline-support-library"></a>Verwenden Sie die Richtlinie-Unterstützungsbibliothek  
- Die Richtlinie Unterstützungsbibliothek dient lassen sich die zentralen Richtlinien befolgen. GSL enthält Definitionen, die Sie als fehleranfällig Konstrukte gegen sicherer alternativen austauschen können. Ersetzen Sie z. B. eine `T*, length` -Paar von Parametern mit dem `span<T>` Typ. GSL finden Sie unter [http://www.nuget.org/packages/Microsoft.Gsl](http://www.nuget.org/packages/Microsoft.Gsl). Die Bibliothek ist als open Source-, damit Sie die Datenquellen anzeigen, Kommentare oder beitragen können. Das Projekt finden Sie unter [https://github.com/Microsoft/GSL](https://github.com/Microsoft/GSL).
+ Die Richtlinie Unterstützungsbibliothek dient lassen sich die zentralen Richtlinien befolgen. GSL enthält Definitionen, die Sie als fehleranfällig Konstrukte gegen sicherer alternativen austauschen können. Ersetzen Sie z. B. eine `T*, length` -Paar von Parametern mit dem `span<T>` Typ. GSL finden Sie unter [http://www.nuget.org/packages/Microsoft.Gsl](http://www.nuget.org/packages/Microsoft.Gsl). Die Bibliothek ist Open-Source, damit Sie die Datenquellen anzeigen, Kommentare oder beitragen können. Das Projekt finden Sie unter [https://github.com/Microsoft/GSL](https://github.com/Microsoft/GSL).
 
  ## <a name="vs2015_corecheck"></a>Verwenden Sie die Richtlinien C++ Core überprüfen in Visual Studio 2015-Projekten  
   Wenn Sie Visual Studio 2015 verwenden, werden die C++ Core überprüfen Code Codeanalyse-Regelsätze nicht standardmäßig installiert. Sie müssen einige zusätzliche Schritte ausführen, bevor Sie die C++-Kern überprüfen Codeanalysetools in Visual Studio 2015 aktivieren können. Microsoft bietet Support für Visual Studio 2015-Projekten mithilfe von NuGet-Paket. Das Paket wird mit der Bezeichnung Microsoft.CppCoreCheck, und es finden Sie unter [http://www.nuget.org/packages/Microsoft.CppCoreCheck](http://www.nuget.org/packages/Microsoft.CppCoreCheck). Dieses Paket erfordert, dass Sie mindestens Visual Studio 2015 mit Update 1 installiert haben.  

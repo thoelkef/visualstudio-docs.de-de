@@ -17,17 +17,15 @@ helpviewer_keywords:
 - SharePoint projects, creating custom templates
 - SharePoint development in Visual Studio, creating custom project and item templates
 - project items [SharePoint development in Visual Studio], creating custom templates
-ms.assetid: c95b5e35-76c4-4f0a-b645-0467ae683659
-caps.latest.revision: "27"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 1946d31d1e0f508267300c14551b0a8efff81587
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 7f64abf2327d4e7702020a53c88d0d2c640e0756
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="creating-item-templates-and-project-templates-for-sharepoint-project-items"></a>Erstellen von Elementvorlagen und Projektvorlagen für SharePoint-Projektelemente
   Wenn Sie einen benutzerdefinierten SharePoint-Projektelementtyp definieren, können Sie eine Elementvorlage oder einer Projektvorlage zuordnen, damit andere Entwickler das Projektelement in Visual Studio verwenden können. Sie können auch einen Assistenten für die Vorlage erstellen.  

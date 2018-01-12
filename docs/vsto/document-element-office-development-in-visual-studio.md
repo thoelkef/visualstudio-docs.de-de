@@ -14,17 +14,15 @@ helpviewer_keywords:
 - document element
 - application manifests [Office development in Visual Studio], <document> element
 - <document> element
-ms.assetid: b4525a0e-8a03-4881-a3e2-8cc019029071
-caps.latest.revision: "21"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 3eeabc3d271e02b83530ffd15ff2e951defcc589
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 38b03c2a4980891d9a6841b24365db32ee555de4
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="ltdocumentgt-element-office-development-in-visual-studio"></a>&lt;Dokument&gt; -Element (Office-Entwicklung in Visual Studio)
   Die `document` Element von der `vstov4` Namespace speichert anpassungsspezifische Informationen für Anpassungen auf Dokumentebene.  

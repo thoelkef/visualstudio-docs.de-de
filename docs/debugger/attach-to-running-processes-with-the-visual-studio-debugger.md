@@ -32,11 +32,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 6ca076ef20ad8751619a715721c6423b5211bc3f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 28126f9c832f55d63bd1b477599cf83ac8a57d59
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Anfügen an laufende Prozesse mit dem Visual Studio Debugger
 Sie können den Visual Studio-Debugger an einen laufenden Prozess auf einem lokalen oder Rmotecomputer anfügen. Nachdem der Prozess ausgeführt wird, klicken Sie auf **Debuggen > an den Prozess anhängen** (oder drücken Sie **STRG + ALT + P**) zum Öffnen der **an den Prozess anhängen** (Dialogfeld).
@@ -147,10 +147,7 @@ Für einige app-Typen (z. B. uwp-apps), nicht direkt auf einen Prozess anfügen,
 |Debuggen von anderen unterstützten app-Typen für einen Serverprozess|Verwenden von Remotetools (wenn der Server remote verfügbar ist) und an den Prozess anhängen|Iexplore.exe oder andere Prozesse|Verwenden Sie bei Bedarf Task-Manager, um den Prozess zu identifizieren. Finden Sie unter [Remotedebuggen](../debugger/remote-debugging.md) und in späteren Abschnitten dieses Themas|
 |Remote-Debuggen einer Windows-desktop-app|Remotetools und von F5|Nicht zutreffend| Finden Sie unter [des Remotedebuggens](../debugger/remote-debugging.md)|
 |Remote Debuggen eine app auf UWP (Universal), OneCore, HoloLens und IoT|Installierte app-Paket Debuggen|Nicht zutreffend|Finden Sie unter [ein installiertes App-Paket Debuggen](debug-installed-app-package.md) anstatt **an den Prozess anhängen**|
-|Debuggen Sie Universelle Windows-App (), OneCore, HoloLens und IoT-Apps, die Sie in Visual Studio starten nicht|Installierte app-Paket Debuggen|Nicht zutreffend|Finden Sie unter [ein installiertes App-Paket Debuggen](debug-installed-app-package.md) anstatt **an den Prozess anhängen**|
-  
-> [!WARNING]
->  Um zu einer uwp-App anfügen, die in JavaScript geschrieben ist, müssen Sie zuerst aktivieren, für die app zu debuggen. Finden Sie unter [Anfügen des Debuggers](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md#BKMK_Attach_the_debugger) im Windows Developer Center.  
+|Debuggen Sie Universelle Windows-App (), OneCore, HoloLens und IoT-Apps, die Sie in Visual Studio starten nicht|Installierte app-Paket Debuggen|Nicht zutreffend|Finden Sie unter [ein installiertes App-Paket Debuggen](debug-installed-app-package.md) anstatt **an den Prozess anhängen**|  
   
 > [!NOTE]
 >  Damit der Debugger an C++-Code angefügt werden kann, muss der Code `DebuggableAttribute`ausgeben. Sie können dieses Attribut automatisch in den Code einfügen, indem Sie eine Verknüpfung über die [/ASSEMBLYDEBUG](/cpp/build/reference/assemblydebug-add-debuggableattribute) -Linkeroption herstellen.

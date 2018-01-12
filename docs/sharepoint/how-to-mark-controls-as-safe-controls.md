@@ -16,17 +16,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, safe controls
 - SharePoint development in Visual Studio, advanced packaging tools
 - safe controls [SharePoint development in Visual Studio]
-ms.assetid: 813727d5-6750-407c-a23e-c38dd611e78c
-caps.latest.revision: "16"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: bd659a1df9782c4e16dd2664a27a87e858e54ef2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 9d34722f7dc9b9975429fac64311dd0b63c30fbe
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-mark-controls-as-safe-controls"></a>Gewusst wie: Markieren von Steuerelementen als sichere Steuerelemente
   Aus Sicherheitsgründen unterscheidet SharePoint zwischen Web-Steuerelemente, die gegen Script-Injection geschützt sind und Web-Steuerelemente, die nicht aus. Steuerelemente, geschützt oder *sichere Steuerelemente*, von nicht vertrauenswürdigen Benutzern zugegriffen werden kann. Sie können Steuerelemente als sicher in der Einträge für sicheres Steuerelement-Eigenschaft des SharePoint-Projektelements oder im kennzeichnen die **Paket-Designer** beim Hinzufügen einer Assemblys für das Paket. Weitere Informationen finden Sie unter  

@@ -15,17 +15,15 @@ helpviewer_keywords:
 - Bookmark control, adding to documents
 - Create Bookmark Control dialog box
 - controls [Office development in Visual Studio], adding to documents
-ms.assetid: 2940704e-31f5-4486-854e-76298a9e2ee4
-caps.latest.revision: "52"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 86e23b3240739a063a738a984de936d8848fba9d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 2ebe8536887f2f60876b64407ffb96cdaf4618c9
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-add-bookmark-controls-to-word-documents"></a>Gewusst wie: Hinzufügen von Bookmark-Steuerelementen zu Word-Dokumenten
   In Projekten auf Dokumentebene können Sie dem Dokument in Ihrem Projekt zur Entwurfs- oder Laufzeit <xref:Microsoft.Office.Tools.Word.Bookmark> -Steuerelemente hinzufügen. In VSTO-Add-In-Projekten können Sie einem beliebigen geöffneten Dokument zur Laufzeit <xref:Microsoft.Office.Tools.Word.Bookmark> -Steuerelemente hinzufügen.  

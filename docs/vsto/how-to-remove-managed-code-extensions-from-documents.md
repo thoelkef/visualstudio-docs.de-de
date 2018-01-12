@@ -13,17 +13,15 @@ dev_langs:
 helpviewer_keywords:
 - managed code extensions [Office development in Visual Studio], removing
 - documents [Office development in Visual Studio], managed code extensions
-ms.assetid: e893d9a5-72a5-4087-b81b-04d4d3d9ebf8
-caps.latest.revision: "30"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 77325f725edcec41d71e5af38572f05e59c86198
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c83f9794cdce71db9f51a6adca69fbeabc8c7a8e
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-remove-managed-code-extensions-from-documents"></a>Gewusst wie: Entfernen von Erweiterungen durch verwalteten Code aus Dokumenten
   Sie können die Anpassungsassembly programmgesteuert entfernen, aus einem Dokument oder die Arbeitsmappe, die Teil einer Anpassung auf Dokumentebene für Microsoft Office Word oder Microsoft Office Excel ist. Benutzer können dann die Dokumente öffnen und Anzeigen des Inhalts aber benutzerdefinierte Benutzeroberfläche (UI) Sie die Dokumente hinzufügen, werden nicht angezeigt, und der Code nicht ausgeführt wird.  

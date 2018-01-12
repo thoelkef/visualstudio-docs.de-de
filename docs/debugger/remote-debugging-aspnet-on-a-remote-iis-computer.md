@@ -15,11 +15,11 @@ manager: ghogen
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: c4069290a8a788bd4c36166a3d7720f61f263d69
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d08fd52f501ed962f50c232d579171fc52dd2b19
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio-2017"></a>Remotedebuggen von ASP.NET Core auf einem Remote-IIS-Computer in Visual Studio 2017
 Um eine ASP.NET-Anwendung debuggen, die in IIS bereitgestellt wurde, installieren Sie und führen Sie der Remotetools auf dem Computer aus, auf denen Sie Ihre app bereitgestellt haben, und fügen Sie an der ausgeführten app aus Visual Studio.
@@ -108,7 +108,7 @@ Sie können auch veröffentlichen und Bereitstellen der app mit dem Dateisystem 
 
 [!INCLUDE [remote-debugger-deploy-app-local](../debugger/includes/remote-debugger-deploy-app-local.md)]
 
-## <a name="BKMK_msvsmon"></a>Herunterladen Sie und installieren Sie der Remotetools unter WindowsServer
+## <a name="BKMK_msvsmon"></a>Herunterladen Sie und installieren Sie die Remoteserver-Verwaltungstools für Windows Server
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
 

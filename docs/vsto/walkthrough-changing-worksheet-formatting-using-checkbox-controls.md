@@ -14,17 +14,15 @@ helpviewer_keywords:
 - worksheets, changing formatting using managed controls
 - worksheets, check box controls
 - controls [Office development in Visual Studio], adding to worksheets
-ms.assetid: 4be79613-50a0-428e-9816-aadbc098272a
-caps.latest.revision: "70"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: e1729a7921f72df07439261cb054fe30770b24d9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 196fb88af44d12338416bc2f00f5dc955d5046e8
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="walkthrough-changing-worksheet-formatting-using-checkbox-controls"></a>Exemplarische Vorgehensweise: Ändern der Arbeitsblattformatierung mithilfe von CheckBox-Steuerelementen
   Diese exemplarische Vorgehensweise veranschaulicht die Grundlagen der Verwendung von Kontrollkästchen in einem Microsoft Office Excel-Arbeitsblatt zum Ändern der Formatierung. Sie verwenden Office-Entwicklungstools in Visual Studio erstellen, und fügen Sie dem Projekt Code hinzu. Das Ergebnis als vollständiges Beispiel finden Sie unter dem Beispiel der Excel-Steuerelemente unter [Office Development Samples and Walkthroughs](../vsto/office-development-samples-and-walkthroughs.md).  

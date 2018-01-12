@@ -14,17 +14,15 @@ helpviewer_keywords:
 - primary interop assemblies
 - assemblies [Office development in Visual Studio], primary interop assemblies
 - Office primary interop assemblies
-ms.assetid: aa29d12c-185f-4558-a7cd-3d85f924203d
-caps.latest.revision: "44"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: faef08b559a2e792630c03bcd09acf5122b9ddac
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 906100a572170f218a23b1887ab7fddee37251b9
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="office-primary-interop-assemblies"></a>Primäre Interop-Assemblys in Office
   Zur Verwendung der Funktionen einer Microsoft Office-Anwendung in einem Office-Projekt müssen Sie die primäre Interop-Assembly (PIA) für diese Anwendung verwenden. Die PIA ermöglicht es verwaltetem Code, mit dem COM-basierten Objektmodell einer Microsoft Office-Anwendung zu interagieren.  

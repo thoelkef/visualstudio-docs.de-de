@@ -14,17 +14,15 @@ helpviewer_keywords:
 - databases [Office development in Visual Studio], scrolling records
 - records [Office development in Visual Studio], scrolling
 - data [Office development in Visual Studio], scrolling database records
-ms.assetid: 9b008be4-06a3-4ffc-9f02-79dd6cfe00ab
-caps.latest.revision: "38"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 035b74048aca3b91449bc857a36594bc280065c4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 386a8c14ebb831a47c6d08d6fd45f9c3d614263d
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="walkthrough-binding-to-data-from-a-service-in-a-vsto-add-in-project"></a>Exemplarische Vorgehensweise: Binden an Daten aus einem Dienst in einem VSTO-Add-In-Projekt
   Sie können Daten in VSTO-Add-In-Projekten an Hoststeuerelemente binden. In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie Steuerelemente zu einem Microsoft Office Word-Dokument hinzugefügt werden, wie die Steuerelemente an Daten gebunden werden, die aus dem MSDN Content Service abgerufen werden, und wie auf Ereignisse zur Laufzeit reagiert wird.  
