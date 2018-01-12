@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 97950a9d5d6f76505e93153dccd14cfce7be15a5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 7a26ca0228a869d36daf427f4ba90fd1b17abeaf
+ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="walkthrough-using-xslt-intellisense"></a>Exemplarische Vorgehensweise: Verwenden von XSLT-IntelliSense
 In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie XSLT-IntelliSense verwendet wird, um die Werte einiger Attribute automatisch zu vervollständigen.  
@@ -26,7 +26,7 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie XSLT-IntelliSe
   
 1.  Erstellen Sie eine neue XSLT-Datei, und kopieren Sie den folgenden Code in die Datei:  
   
-    ```  
+    ```xml
     <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">  
     <!-- These 2 elements effectively assign  
          $messages = resources/en.xml/<messages>,  
@@ -46,22 +46,22 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie XSLT-IntelliSe
       </xsl:message>  
     </xsl:template>  
     </xsl:stylesheet>  
-    ```  
+    ```
   
 2.  Platzieren Sie den Cursor nach `<xsl:template name="msg23" match="msg23">`, und drücken Sie die EINGABETASTE. Geben Sie dann das folgende `xsl:call-template`-Element ein:  
   
-    ```  
+    ```xml
     <xsl:call-template name="localized-message">  
     </xsl:call-template>  
-    ```  
+    ```
   
      Während der Eingabe wird die Liste der Vorlagennamen im `name=""`-Attribut des `xsl:call-template`-Elements angezeigt.  
   
 3.  Platzieren Sie den Cursor nach `<xsl:call-template name="localized-message">`, und drücken Sie die EINGABETASTE. Geben Sie dann das folgende `xsl:with-param`-Element ein:  
   
-    ```  
+    ```xml
     <xsl:with-param name="msgcode">msg23</xsl:with-param>  
-    ```  
+    ```
   
      Die Liste der Parameternamen wird im `name=""`-Attribut des `xsl:with-param`-Elements angezeigt.  
   
@@ -69,7 +69,7 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie XSLT-IntelliSe
   
 1.  Erstellen Sie eine neue XSLT-Datei, und kopieren Sie den folgenden Code in die Datei:  
   
-    ```  
+    ```xml
     <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">  
       <xsl:template match="/">  
         <HTML>  
@@ -112,13 +112,13 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie XSLT-IntelliSe
         </TD>  
       </xsl:template>  
     </xsl:stylesheet>  
-    ```  
+    ```
   
 2.  Platzieren Sie den Cursor nach `<xsl:apply-templates select="phone" />`, und drücken Sie die EINGABETASTE. Geben Sie dann das folgende `xsl: apply-templates`-Element ein:  
   
-    ```  
+    ```xml
     <xsl:apply-templates select="phone"  mode="accountNumber">  
-    ```  
+    ```
   
      Die Liste der Vorlagenmodi wird im `mode=""`-Attribut des `xsl:apply-templates`-Elements angezeigt.  
   
@@ -126,7 +126,7 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie XSLT-IntelliSe
   
 1.  Erstellen Sie eine neue XSLT-Datei, und kopieren Sie den folgenden Code in die Datei:  
   
-    ```  
+    ```xml
     <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:alt="http://www.w3.org/1999/XSL/Transform-alternate"  
     version="1.0">  
       <xsl:param name="browser" select="'InternetExplorer'"/>  
@@ -153,15 +153,16 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie XSLT-IntelliSe
         </alt:stylesheet>  
       </xsl:template>  
     </xsl:stylesheet>  
-    ```  
+    ```
   
 2.  Platzieren Sie den Cursor nach `<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:alt="http://www.w3.org/1999/XSL/Transform-alternate" version="1.0">`, und drücken Sie die EINGABETASTE. Geben Sie dann das folgende `xsl:namespace-alias`-Element ein:  
   
-    ```  
+    ```xml
     <xsl:namespace-alias stylesheet-prefix="alt" result-prefix="xsl"/>  
-    ```  
+    ```
   
      Die Liste der Präfixe wird in den `stylesheet-prefix`- und `result-prefix`-Attributen des `xsl:namespace-alias`-Elements angezeigt.  
   
-## <a name="see-also"></a>Siehe auch  
- [IntelliSense-Funktionen des XML-Editors](../xml-tools/xml-editor-intellisense-features.md)
+## <a name="see-also"></a>Siehe auch
+
+[IntelliSense-Funktionen des XML-Editors](../xml-tools/xml-editor-intellisense-features.md)

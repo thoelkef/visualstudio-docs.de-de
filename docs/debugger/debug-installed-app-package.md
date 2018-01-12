@@ -23,11 +23,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: ca1edcc26c8e015f12db6b1d564c182aa765ed52
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e21d29c3a95de4e5174a9966665f3e4e6781f726
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="debug-an-installed-app-package-in-visual-studio-uwp"></a>Debuggen Sie eine installierte app-Paket in Visual Studio (UWP)
 
@@ -94,6 +94,8 @@ Wenn Sie zum ersten Mal eine installierte app-Paket auf einem Remotecomputer deb
 
 > [!NOTE]
 > Uwp-apps entwickelt werden können und unter Windows 8.1 oder höher kompiliert, aber Sie erfordern Windows 10 ausgeführt. Wenn Sie eine uwp-app auf einem Windows 8.1-Computer entwickeln, können Sie eine uwp-app auf einem anderen Windows 10-Gerät Remote Debuggen, vorausgesetzt, dass der Host und die Ziel-Computer werden im gleichen LAN. Zu diesem Zweck herunterladen Sie und installieren Sie der Remotetools für Visual Studio auf beiden Computern. Die installierte Version muss die vorhandene Version von Visual Studio, die Sie installiert haben übereinstimmen, und die Architektur der Auswahl (X86, x 64) muss auch übereinstimmen, der Ziel-app.
+
+Informationen zu erweiterten Optionen für die Remotebereitstellung von uwp-apps finden Sie unter [bereitstellen und Debuggen von uwp-apps](/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps.md#advanced-remote-deployment-options). 
   
 ## <a name="see-also"></a>Siehe auch  
  [Debuggen in Visual Studio](../debugger/index.md)  

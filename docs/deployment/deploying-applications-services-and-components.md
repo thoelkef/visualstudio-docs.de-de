@@ -6,7 +6,7 @@ ms.reviewer:
 ms.suite: 
 ms.technology: vs-ide-deployment
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: get-started-article
 dev_langs:
 - FSharp
 - VB
@@ -26,11 +26,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: e6d4c01043bde59822175b20f36cd576c3a9c3a3
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: e05bf361515b45f3ebc7683fa0c83ec6116d9419
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="deployment-overview-in-visual-studio"></a>Übersicht über die Bereitstellung in Visual Studio
 
@@ -50,7 +50,7 @@ Finden Sie in den Lernprogrammen für-Schritt-Anweisungen.
 
 - **ASP.NET**, **ASP.NET Core**, **Node.js**, **Python**, und **.NET Core**: Sie können mithilfe des Tools zum Veröffentlichen zum Bereitstellen einer die Website über FTP oder Web Deploy. Weitere Informationen finden Sie unter [bereitstellen, um eine Website](quickstart-deploy-to-a-web-site.md).
 
-    Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste des Projekts, und wählen Sie **veröffentlichen**. Wählen Sie das Tool "Veröffentlichen" die Option, Sie möchten, und führen Sie die Konfigurationsschritte aus.
+    Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste auf das Projekt, und klicken Sie auf **Veröffentlichen**. Wählen Sie das Tool "Veröffentlichen" die Option, Sie möchten, und führen Sie die Konfigurationsschritte aus.
 
     ![Wählen Sie IIS, FTP usw. ein.](../deployment/media/quickstart-publish-iis-ftp.png)
 
@@ -62,7 +62,7 @@ Finden Sie in den Lernprogrammen für-Schritt-Anweisungen.
 
 ### <a name="publish-to-azure"></a>Veröffentlichen in Azure
 
-- **ASP.NET, ASP.NET Core, Python, Node.js und .NET Core** Webanwendungen: Sie können mithilfe des Tools zum Veröffentlichen schnell apps nach Azure App Service oder auf einem virtuellen Azure-Computer bereitstellen. Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste des Projekts, und wählen Sie **veröffentlichen**. Klicken Sie im Dialogfeld "Veröffentlichen" Wählen Sie entweder **Microsoft Azure App Service** oder **Microsoft Azure Virtual Machines**, und befolgen Sie dann die Konfigurationsschritte.
+- **ASP.NET, ASP.NET Core, Python, Node.js und .NET Core** Webanwendungen: Sie können mithilfe des Tools zum Veröffentlichen schnell apps nach Azure App Service oder auf einem virtuellen Azure-Computer bereitstellen. Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste auf das Projekt, und klicken Sie auf **Veröffentlichen**. Klicken Sie im Dialogfeld "Veröffentlichen" Wählen Sie entweder **Microsoft Azure App Service** oder **Microsoft Azure Virtual Machines**, und befolgen Sie dann die Konfigurationsschritte.
 
     ![Wählen Sie die Azure App Service](../deployment/media/quickstart-publish-azure.png "-Azure App Service auswählen")
 

@@ -15,17 +15,15 @@ helpviewer_keywords:
 - IntelliTrace [SharePoint development in Visual Studio]
 - SharePoint development in Visual Studio, IntelliTrace
 - SharePoint development in Visual Studio, unit testing
-ms.assetid: b5f3bce2-6a51-41b1-a292-9e384bae420c
-caps.latest.revision: "18"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: d3717d3bee3665705ce39307b640e02a931cd75f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 8c5eaf68a0d5349df88c2c819bce0f208721d267
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="verifying-and-debugging-sharepoint-code"></a>Überprüfen und Debuggen von SharePoint-Code
   Mit IntelliTrace und Unittests können Sie die SharePoint-Lösungen leichter debuggen und sicherstellen, dass jede Methode in ihnen ordnungsgemäß funktioniert. Sie können diese Funktionen für SharePoint-Projekte in [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)] verwenden, indem Sie die gleichen Prozeduren wie für andere Typen von Projekten ausführen.  

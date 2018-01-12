@@ -23,16 +23,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 6250a6b5cdf502d95aea3aaec033acaad826de42
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 93deb8c5a8d4d17597db0fa2f93f097b4839e88b
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="quickstart-debug-javascript-using-the-console"></a>Schnellstart: Debuggen von JavaScript mit der Konsole
 ![Gilt für Windows und Windows Phone](../debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
   
- Sie können JavaScript-Konsolenfenster zur Interaktion und zum Debuggen von uwp-apps mit JavaScript erstellte verwenden. Diese Features werden für unterstützt [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] apps und Windows Phone-apps mit Visual Studio-Tools für Apache Cordova erstellte apps. Die Konsolenbefehlsreferenz finden Sie unter [JavaScript Console commands](../debugger/javascript-console-commands.md).  
+ Sie können JavaScript-Konsolenfenster zur Interaktion und zum Debuggen von uwp-apps mit JavaScript erstellte verwenden. Diese Features werden für UWP-apps unterstützt [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] apps und Windows Phone-apps mit Visual Studio-Tools für Apache Cordova erstellte apps. Die Konsolenbefehlsreferenz finden Sie unter [JavaScript Console commands](../debugger/javascript-console-commands.md).  
   
  Im JavaScript-Konsolenfenster können Sie:  
   
@@ -269,7 +269,7 @@ ms.lasthandoff: 12/22/2017
 ##  <a name="BrowserSupport"></a> Unterstützung für Browser und Plattform  
  Das JavaScript-Konsolenfenster wird auf folgenden Plattformen unterstützt:  
   
--   [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]und Windows Phone-apps mit JavaScript und HTML  
+-   Uwp-apps, [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)], und Windows Phone-apps mit JavaScript und HTML  
   
 -   Internet Explorer 11 wird unter [!INCLUDE[win81](../debugger/includes/win81_md.md)]ausgeführt  
   

@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: ef5fb93914f418915c11b51071419308b3ac9a0c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a0eb590549578ac9aea824f52c8192c97dce94f2
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="remote-debugging"></a>Remote Debugging
 Sie können eine Visual Studio-Anwendung debuggen, die auf einem anderen Computer bereitgestellt wurde. Dazu verwenden Sie den Visual Studio Remote Debugger.
@@ -35,9 +35,9 @@ Ausführliche Anweisungen zum Remotedebuggen finden Sie unter folgenden Themen.
 |Szenario|Link|
 |-|-|-|
 |ASP.NET|[Das Remotedebuggen von ASP.NET Core](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md) oder [Remote Debuggen von ASP.NET](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
-|C#- oder Visual Basic|[Remotedebuggen von einem C#- oder Visual Basic-Projekt](remote-debugging-csharp.md)|
-|C++|[Remotedebuggen eines C++-Projekts](remote-debugging-cpp.md)|
-|Universelle Windows-Apps (UWP)|[Debuggen eines installierten App-Pakets](debug-installed-app-package.md)|
+|C#- oder Visual Basic|[Remotedebuggen von einem C#- oder Visual Basic-Projekt](../debugger/remote-debugging-csharp.md)|
+|C++|[Remotedebuggen eines C++-Projekts](../debugger/remote-debugging-cpp.md)|
+|Universelle Windows-Apps (UWP)|[Führen Sie die uwp-apps auf einem Remotecomputer](../debugger/run-windows-store-apps-on-a-remote-machine.md) und [Debuggen eine installierte app-Pakets](../debugger/debug-installed-app-package.md)|
 |Azure|[Remote Debuggen ASP.NET in Azure](remote-debugging-azure.md)|
 |Azure Service Fabric|[Debuggen eine Remoteanwendung Service Fabric](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application).|
 

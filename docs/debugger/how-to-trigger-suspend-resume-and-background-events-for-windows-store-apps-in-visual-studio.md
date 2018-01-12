@@ -19,11 +19,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: 70e0ab429f6359e8bb50a83307e9e042e0bfa4b0
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: 4a62f02d98ed06df4a3eea1b3f253f5e91ff7115
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>Gewusst wie: Auslösen anhalten, fortsetzen und hintergrundereignissen während des Debuggens uwp-apps in Visual Studio
 Wenn Sie nicht debuggen, steuert die Windows-PLM ( **Process Lifetime Management** , Prozessverwaltung für Lebensdauer) den Ausführungszustand der App, d. h. das Starten, Anhalten, Fortsetzen und Beenden der App als Reaktion auf Benutzeraktionen und den Gerätezustand. Wenn Sie debuggen, deaktiviert Windows diese Aktivierungsereignisse. In diesem Thema wird beschrieben, wie solche Ereignisse im Debugger ausgelöst werden.  
@@ -109,7 +109,7 @@ Wenn Sie nicht debuggen, steuert die Windows-PLM ( **Process Lifetime Management
      ![Anhalten, fortsetzen, beenden und Hintergrundaufgaben](../debugger/media/dbg_suspendresumebackground.png "DBG_SuspendResumeBackground")  
   
 ##  <a name="BKMK_Trigger_Process_Lifetime_Management_events_and_background_tasks_from_an_installed_app"></a> Ereignisse zur Verwaltung der Prozesslebensdauer sowie Hintergrundaufgaben der installierten App auslösen bzw. aktivieren.  
- Um eine App zu starten, die bereits im Debugger installiert ist, verwenden Sie das Dialogfeld "Installiertes App-Paket debuggen". Angenommen, Sie Debuggen einer app, die von Microsoft Store installiert wurde oder eine app zu debuggen, wenn Sie die Quelldateien für die app, aber nicht Visual Studio-Projekt für die app verfügen. Über das Dialogfeld "Installiertes App-Paket debuggen" können Sie eine App auf einem Visual Studio- oder einem Remotegerät im Debugmodus starten, oder für die App den Dubugmodus festlegen, ohne sie zu starten. Weitere Informationen finden Sie im Abschnitt **Start an installed app in the debugger** der Anleitung [How to start a debugging session](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md#BKMK_Start_an_installed_app_in_the_debugger) für [JavaScript](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md#BKMK_Start_an_installed_app_in_the_debugger) oder **Visual C++, Visual C# und Visual Basic** .  
+ Um eine App zu starten, die bereits im Debugger installiert ist, verwenden Sie das Dialogfeld "Installiertes App-Paket debuggen". Angenommen, Sie Debuggen einer app, die von Microsoft Store installiert wurde oder eine app zu debuggen, wenn Sie die Quelldateien für die app, aber nicht Visual Studio-Projekt für die app verfügen. Über das Dialogfeld "Installiertes App-Paket debuggen" können Sie eine App auf einem Visual Studio- oder einem Remotegerät im Debugmodus starten, oder für die App den Dubugmodus festlegen, ohne sie zu starten. Finden Sie unter der **Starten einer installierten app im Debugger** Abschnitt [Starten einer Debugsitzung in einer uwp-app](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md#BKMK_Start_an_installed_app_in_the_debugger).
   
  Sobald die App in den Debugger geladen ist, können Sie die oben beschriebenen Prozeduren anwenden.  
   

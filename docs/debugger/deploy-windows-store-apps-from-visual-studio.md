@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: 359431356bb06a04857b93e10996a2123c80f129
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 95f009ca761d4d978fb5e5a9323722e5dfc34cb8
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="deploy-uwp-apps-from-visual-studio"></a>Bereitstellen von uwp-apps aus Visual Studio
 ![Gilt nur für Windows](../debugger/media/windows_only_content.png "Windows_only_content")  
@@ -59,7 +59,7 @@ ms.lasthandoff: 12/22/2017
 Sie müssen auf einem Windows 10-Remotegerät aktivieren [Entwicklermodus](/windows/uwp/get-started/enable-your-device-for-development). Auf Windows 10-Geräten, die mit der Ersteller des Update oder später, die Remoteserver-Verwaltungstools werden automatisch installiert, wenn Sie Ihre app bereitstellen. Weitere Informationen finden Sie unter [eine installierte app-Paket Debuggen](../debugger/debug-installed-app-package.md).
 
 > [!NOTE]
-> Unter Windows 8.1 und Pre-Ersteller-Update-Versionen von Windows 10 müssen die Visual Studio Remote Tools müssen auf dem Remotegerät installiert werden und der Remotedebugger ausgeführt werden muss. Auf Windows 8.1 müssen Sie auch eine Entwicklerlizenz installieren.
+> Unter Windows 8.1 und Pre-Ersteller-Update-Versionen von Windows 10 müssen den Remotetools für Visual Studio muss auf dem Remotegerät installiert sein, und der Remotedebugger ausgeführt werden muss. Auf Windows 8.1 müssen Sie auch eine Entwicklerlizenz installieren.
   
 Bei der Bereitstellung wird der Remotedebugger-Netzwerkkanal verwendet, um die App-Dateien an das Remotegerät zu senden.  
   
@@ -101,7 +101,7 @@ Bei der Bereitstellung wird der Remotedebugger-Netzwerkkanal verwendet, um die A
  Sie können die folgenden Bereitstellungsoptionen auf der Debugeigenschaftenseite für das Startprojekt festlegen.  
   
  **Netzwerkloopback zulassen**  
- Aus Sicherheitsgründen wird einer im Standardverfahren installierten [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] -App nicht erlaubt, Netzwerkaufrufe an das Gerät auszuführen, auf dem sie installiert wurde. Standardmäßig wird durch die Visual Studio-Bereitstellung eine Ausnahme von dieser Regel für die bereitgestellte App erstellt. Diese Ausnahme ermöglicht das Testen von Kommunikationsverfahren auf einem einzelnen Computer. Bevor Sie die App an [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)]senden, sollten Sie die App ohne die Ausnahme testen.  
+ Aus Sicherheitsgründen einer uwp-App oder [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] im Standardverfahren installierten app ist nicht zulässig, Netzwerkaufrufe an das Gerät auszuführen, es installiert ist. Standardmäßig wird durch die Visual Studio-Bereitstellung eine Ausnahme von dieser Regel für die bereitgestellte App erstellt. Diese Ausnahme ermöglicht das Testen von Kommunikationsverfahren auf einem einzelnen Computer. Bevor Sie die App an [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)]senden, sollten Sie die App ohne die Ausnahme testen.  
   
  So entfernen Sie die Netzwerkloopbackausnahme aus der App:  
   
