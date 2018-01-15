@@ -4,11 +4,11 @@ hide_bc: True
 title: Visual Studio-Dokumentation | Microsoft-Dokumentation
 description: "Erfahren Sie, wie Sie Visual Studio 2017 für die Entwicklung von Anwendungen, Diensten und Tools in der Sprache Ihrer Wahl für Ihre Plattformen und Geräte verwenden können."
 searchScope: 
-ms.openlocfilehash: 088e7615ae7839f3ede665788ada0f9891a958d4
-ms.sourcegitcommit: 2c7f48ad6073a81fa927568793633f26cc1f0b15
+ms.openlocfilehash: 38ea7dc20884fe5d70cbfa483805364e43a62801
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 01/13/2018
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -115,14 +115,25 @@ ms.lasthandoff: 11/17/2017
                                     </div>
                                 </a>
                             </li>
-                            <li><div style="margin-left:13px; margin-top:40px;">
-                            <p style="font-size:18px; text-align:center">Entwicklertools, Clouddienste, Software, <br/>Support und Training</p>
-                        <p style="font-size:1.12em"><p style="margin-top:24px; text-align:center;">
-                                <a href="https://aka.ms/vs-subscriptions/" data-linktype="external">
-                                    <button style="cursor: pointer;position: relative; background: #0050C5; border:none; padding:8px 16px; padding-right:30px;color: white; font-size:14px;">Visual Studio-Abonnement<svg xmlns="http://www.w3.org/2000/svg" style="fill:white;height: 14px;position: absolute;bottom: 13px;right: 12px;width: 1em;" viewBox="0 0 10 14"><path d="M 7.4 7 L 1 0.6 l 0.6 -0.6 l 7 7 l -7 7 l -0.6 -0.7 L 7.4 7 Z" /></svg></button>
+                            <li>
+                                <a href="https://aka.ms/vs-subscriptions" title="Visual Studio App Center">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img data-scaleimage="./images/vs-subscription-temp.svg" src="./images/vs-subscription-temp.svg" alt="Visual Studio Subscriptions" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Visual Studio-Abonnements</h3>
+                                                    <p>Entwicklertools, Cloud Services, Training und Support an einer zentralen Stelle.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </a>
-                            </p>
-                    </div></li>
+                            </li>
                         </ul>                       
                     </li>
                 </ul>

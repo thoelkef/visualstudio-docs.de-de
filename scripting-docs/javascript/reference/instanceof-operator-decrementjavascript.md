@@ -19,11 +19,11 @@ caps.latest.revision: "17"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 672047cb066a812d16edc693638c3d6d8295798b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: b2124fe815c89c3c157be3ea729fa7edb9d96b39
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="instanceof-operator-javascript"></a>instanceof-Operator (JavaScript)
 Gibt einen booleschen Wert zurück, der angibt, ob ein Objekt eine Instanz einer bestimmten Klasse ist.  
@@ -46,7 +46,7 @@ result = object instanceof class
  Erforderlich. Eine beliebige definierte Objektklasse.  
   
 ## <a name="remarks"></a>Hinweise  
- Der `instanceof`-Operator gibt `true` zurück, wenn `object` eine Instanz von `class` ist. Er gibt `true` zurück, wenn `true`, wenn `class` in der Prototypenkette des Objekts vorhanden ist. Er gibt `false` zurück, wenn `object` keine Instanz von `class` ist oder wenn `object` `null` ist.  
+ Der `instanceof`-Operator gibt `true` zurück, wenn `object` eine Instanz von `class` ist. Es gibt `true` Wenn `class` in der Prototypenkette des Objekts vorhanden ist. Er gibt `false` zurück, wenn `object` keine Instanz von `class` ist oder wenn `object` `null` ist.  
   
 ## <a name="example"></a>Beispiel  
  Im folgenden Beispiel wird die Verwendung des `instanceof`-Operators gezeigt.  

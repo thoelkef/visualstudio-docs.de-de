@@ -8,17 +8,15 @@ ms.tgt_pltfrm:
 ms.topic: article
 f1_keywords: vs.dsltools.dsldesigner.deletebehavior
 helpviewer_keywords: Domain-Specific Language, deletion
-ms.assetid: c6bf088d-52c6-4817-af45-ddae745bb5a9
-caps.latest.revision: "23"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 0eb1878df437e1767d5bfe49ce4794b5b2c243d5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c51c44d47f24994e75ca91b4f4d8d7f2c9a805a6
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="customizing-deletion-behavior"></a>Anpassen des Löschverhaltens
 Beim Löschen eines Elements werden normalerweise die verwandten Elemente ebenfalls gelöscht. Alle mit dem Element verbundenen Beziehungen und alle ihm untergeordneten Elemente werden gelöscht. Dieses Verhalten ist mit dem Namen *Löschweitergabe*. Sie können die Löschweitergabe anpassen, um beispielsweise zu veranlassen, dass zusätzliche verwandte Elemente gelöscht werden. Durch Schreiben von Programmcode können Sie die Löschweitergabe vom Zustand des Modells abhängig machen. Sie können auch andere Änderungen als Reaktion auf eine Löschung veranlassen.  
@@ -78,7 +76,7 @@ Beim Löschen eines Elements werden normalerweise die verwandten Elemente ebenfa
 >  Um Programmcode DSL-Definition hinzugefügt haben, erstellen Sie in eine separaten Codedatei der **Dsl** Projekt, und Schreiben von partiellen Definitionen, um die Klassen in den generierten Code Ordner zu erweitern. Weitere Informationen finden Sie unter [Schreiben von Code zum Anpassen einer domänenspezifischen Sprache](../modeling/writing-code-to-customise-a-domain-specific-language.md).  
   
 ##  <a name="closure"></a>Definieren einen Delete-Abschluss  
- Der Löschvorgang verwendet die Klasse *YourModel***DeleteClosure** um zu bestimmen, welche Elemente zum Löschen angegebene eine erste Auswahl. `ShouldVisitRelationship()` und `ShouldVisitRolePlayer()` werden wiederholt aufgerufen, wobei das Diagramm der Beziehungen durchlaufen wird. Diese Methoden können Sie überschreiben. ShouldVisitRolePlayer wird mit der Identität des einen Link und das Element an einer der Rollen für den Link bereitgestellt. Es sollte einen der folgenden Werte zurückgeben:  
+ Der Löschvorgang verwendet die Klasse *YourModel *** DeleteClosure** um zu bestimmen, welche Elemente zum Löschen angegebene eine erste Auswahl. `ShouldVisitRelationship()` und `ShouldVisitRolePlayer()` werden wiederholt aufgerufen, wobei das Diagramm der Beziehungen durchlaufen wird. Diese Methoden können Sie überschreiben. ShouldVisitRolePlayer wird mit der Identität des einen Link und das Element an einer der Rollen für den Link bereitgestellt. Es sollte einen der folgenden Werte zurückgeben:  
   
 -   **VisitorFilterResult.Yes**: das Element gelöscht werden soll, und die Walker versuchen fortfahren sollte das Element des anderen Links.  
   

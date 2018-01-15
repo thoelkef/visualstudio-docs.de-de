@@ -21,11 +21,11 @@ caps.latest.revision: "41"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3d66aee32a191c8cc1879c9436788c196c05e7bd
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 519fc733fd42a194fbd7335127ddf9bcf0bdc220
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="jsonparse-function-javascript"></a>JSON.parse-Funktion (JavaScript)
 Konvertiert eine Zeichenfolge der JSON-Objekte (JavaScript-Objekt-Notation) in ein Objekt.  
@@ -41,7 +41,7 @@ JSON.parse(text [, reviver])
  Erforderlich. Eine gültige JSON-Zeichenfolge.  
   
  `reviver`  
- Optional. Eine Funktion, die die Ergebnisse transformiert. Diese Funktion wird für jeden Member des Objekts aufgerufen. Wenn ein Member geschachtelte Objekte enthält, werden die geschachtelten Objekte vor dem übergeordneten Objekt transformiert. Für jeden Member tritt Folgendes auf:  
+ Dies ist optional. Eine Funktion, die die Ergebnisse transformiert. Diese Funktion wird für jeden Member des Objekts aufgerufen. Wenn ein Member geschachtelte Objekte enthält, werden die geschachtelten Objekte vor dem übergeordneten Objekt transformiert. Für jeden Member tritt Folgendes auf:  
   
 -   Wenn `reviver` einen gültigen Wert zurückgibt, wird der Memberwert durch den umgewandelten Wert ersetzt.  
   
@@ -66,7 +66,7 @@ JSON.parse(text [, reviver])
   
 -   Stellen Sie sicher, dass das `text` -Argument durch eine JSON-kompatible Implementierung serialisiert wurde, wie `JSON.stringify`.  
   
--   Führen Sie das `text` -Argument in einem JSON-Validierungssteuerelement aus, wie beispielsweise [JSLint](http://www.jslint.com/) , um das Identifizieren von Syntaxfehlern zu erleichtern.  
+-   Führen Sie die `text` Argument in einem JSON-Validierungssteuerelement wie [JSLint](http://www.jslint.com/) oder [JSON, CSV](https://json-csv.com) helfen beim Identifizieren von Syntaxfehlern.  
   
 ## <a name="example"></a>Beispiel  
  Im folgenden Beispiel wird `JSON.parse` verwendet, um eine JSON-Zeichenfolge in ein Objekt zu konvertieren.  

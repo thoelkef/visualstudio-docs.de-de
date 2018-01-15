@@ -6,17 +6,15 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: c06d0066-24aa-4c65-b91c-c2089b81ec8d
-caps.latest.revision: "2"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 1c8b5f31af8c3adf0b51fbf6623b7956ec8cc12f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: dd37ed2ae0e2ac065d5f74c8f91aca6aeb186d7d
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="controlling-color-line-style-and-other-shape-properties"></a>Steuern von Farbe, Linienstil und anderen Eigenschaften von Formen
 Einige Eigenschaften der Form, wie z. B. Farbe "verfügbar gemacht werden kann" - verknüpft, d. h., eine Eigenschaft "Domain" der Form. Andere Benutzer haben direkt gesteuert werden.  

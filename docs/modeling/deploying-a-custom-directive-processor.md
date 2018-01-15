@@ -7,20 +7,18 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords: text templates, custom directive processors
-ms.assetid: 80c28722-a630-47b5-923b-024dc3f2c940
-caps.latest.revision: "18"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 7c7881c20412ab5ffc3f1c4486958f4b5ca68a1c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 16001ed6447f3dcfe649d0fe659c98d97b9e310c
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="deploying-a-custom-directive-processor"></a>Bereitstellen eines benutzerdefinierten Anweisungsprozessors
-Wenn Sie auf einem Computer einen benutzerdefinierten Direktivenprozessor in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] verwenden möchten, müssen Sie ihn anhand einer der in diesem Thema beschriebenen Methoden registrieren.  
+Um einen benutzerdefinierten Direktivenprozessor in Visual Studio auf einem beliebigen Computer zu verwenden, müssen Sie sie durch eine der in diesem Thema beschriebenen Methoden registrieren.  
   
  Folgende Methoden stehen zur Auswahl:  
   
@@ -28,9 +26,9 @@ Wenn Sie auf einem Computer einen benutzerdefinierten Direktivenprozessor in [!I
   
 -   [VSPackage](../extensibility/internals/vspackages.md). Wenn Sie ein VSPackage definieren, das neben dem Direktivenprozessor weitere Funktionen enthält, kann der Direktivenprozessor einfach registriert werden.  
   
--   Festlegen eines Registrierungsschlüssels. Bei dieser Methode fügen Sie einen Registrierungseintrag für den Direktivenprozessor hinzu.  
+-   Festlegen eines Registrierungsschlüssels. Bei dieser Methode fügen Sie einen Registrierungseintrag für den Anweisungsprozessor hinzu.  
   
- Sie müssen nur eine dieser Methoden verwenden, wenn Sie die Textvorlage in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] oder [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] transformieren möchten. Falls Sie in der Anwendung einen benutzerdefinierten Host verwenden, ist dieser für die Suche nach Anweisungsprozessoren für die einzelnen Anweisungen zuständig.  
+ Sie müssen eine der folgenden Methoden verwenden, nur, wenn Sie die Textvorlage in Visual Studio transformieren möchten oder [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Falls Sie in der Anwendung einen benutzerdefinierten Host verwenden, ist dieser für die Suche nach Anweisungsprozessoren für die einzelnen Anweisungen zuständig.  
   
 ## <a name="deploying-a-directive-processor-in-a-vsix"></a>Bereitstellen eines Anweisungsprozessors in einer VSIX  
  Sie können einen benutzerdefinierten Direktivenprozessor Hinzufügen einer [Visual Studio-Erweiterung (VSIX)](http://msdn.microsoft.com/en-us/64ff1452-f7d5-42d9-98b8-76f769f76832).  
@@ -47,7 +45,7 @@ Wenn Sie auf einem Computer einen benutzerdefinierten Direktivenprozessor in [!I
   
 #### <a name="to-develop-a-custom-directive-processor-in-a-vsix-project"></a>So entwickeln Sie einen benutzerdefinierten Anweisungsprozessor in einem VSIX-Projekt  
   
-1.  Erstellen Sie in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ein VSIX-Projekt.  
+1.  Erstellen Sie ein VSIX-Projekt in Visual Studio.  
   
     -   In der **neues Projekt** Dialogfeld erweitern Sie **Visual Basic** oder **Visual C#-**, erweitern Sie dann **Erweiterbarkeit**. Klicken Sie auf **VSIX-Projekt**.  
   
@@ -104,19 +102,19 @@ Wenn Sie auf einem Computer einen benutzerdefinierten Direktivenprozessor in [!I
   
 #### <a name="to-install-the-custom-directive-processor"></a>So installieren Sie den benutzerdefinierten Anweisungsprozessor  
   
-1.  Öffnen Sie in Windows-Explorer (Datei-Explor in Windows 8) das Buildverzeichnis (normalerweise "bin\Debug" oder "bin\Release").  
+1.  Öffnen Sie im Windows-Explorer das Buildverzeichnis (normalerweise "bin\Debug" oder "bin\Release").  
   
 2.  Wenn Sie den Anweisungsprozessor auf einem anderen Computer installieren möchten, kopieren Sie die VSIX-Datei auf den anderen Computer.  
   
-3.  Doppelklicken Sie auf die VSIX-Datei. Der Installer für [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Erweiterungen wird angezeigt.  
+3.  Doppelklicken Sie auf die VSIX-Datei. Der Installer für Visual Studio-Erweiterung wird angezeigt.  
   
-4.  Starten Sie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] neu. Sie können jetzt Textvorlagen mit Anweisungen ausführen, die auf den benutzerdefinierten Anweisungsprozessor verweisen. Jede Anweisung besitzt das folgende Format:  
+4.  Starten Sie Visual Studio neu. Sie können jetzt Textvorlagen mit Anweisungen ausführen, die auf den benutzerdefinierten Anweisungsprozessor verweisen. Jede Anweisung besitzt das folgende Format:  
   
      `<#@ CustomDirective Processor="CustomDirectiveProcessorName" parameter1="value1" ... #>`  
   
 #### <a name="to-uninstall-or-temporarily-disable-the-custom-directive-processor"></a>So deinstallieren Sie den benutzerdefinierten Anweisungsprozessor oder deaktivieren Sie ihn vorübergehend  
   
-1.  In der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] **Tools** Menü klicken Sie auf **Erweiterungs-Manager**.  
+1.  In Visual Studio **Tools** Menü klicken Sie auf **Erweiterungs-Manager**.  
   
 2.  Wählen Sie die VSIX mit dem Direktivenprozessor aus, und klicken Sie dann auf **Deinstallieren** oder **deaktivieren**.  
   
@@ -169,7 +167,7 @@ Wenn Sie auf einem Computer einen benutzerdefinierten Direktivenprozessor in [!I
   
      **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\*.0\TextTemplating\DirectiveProcessors**  
   
-     Wenn Sie den Direktivenprozessor in der Testversion von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] installieren möchten, fügen Sie "Exp" nach "11.0" ein.  
+     Wenn Sie den Direktivenprozessor in der Testversion von Visual Studio installieren möchten, fügen Sie "Exp" nach "11.0".  
   
 3.  Fügen Sie einen Registrierungsschlüssel mit dem Namen der Anweisungsprozessorklasse hinzu.  
   

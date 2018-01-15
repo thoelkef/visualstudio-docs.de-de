@@ -13,11 +13,11 @@ author: alexhomer1
 ms.author: ahomer
 manager: douge
 ms.workload: multiple
-ms.openlocfilehash: 130d53cb0e32add0251306c261cf456459f2192a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
-ms.translationtype: MT
+ms.openlocfilehash: b267c0f801ddb4faf7fbca561c893e7296bb0a8e
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="add-custom-architecture-validation-to-dependency-diagrams"></a>Hinzufügen von benutzerdefinierten architekturüberprüfung zu Abhängigkeit-Diagrammen
 In Visual Studio können Benutzer den Quellcode in einem Projekt anhand eines Ebenenmodells validieren, damit sie überprüfen können, dass der Quellcode den Abhängigkeiten in einem Diagramm Abhängigkeit entspricht. Es gibt zwar einen Standardvalidierungsalgorithmus, Sie können aber auch eigene Validierungserweiterungen definieren.  
@@ -59,7 +59,7 @@ In Visual Studio können Benutzer den Quellcode in einem Projekt anhand eines Eb
     > [!NOTE]
     >  Die Methode wird nur unter bestimmten Umständen aufgerufen, und Haltepunkte funktionieren nicht automatisch. Weitere Informationen finden Sie unter [Debuggen der Ebenenvalidierung](#debugging).  
   
-5.  Um die Erweiterung in der Hauptinstanz von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]oder auf einem anderen Computer zu installieren, suchen Sie die **.vsix** -Datei im Ordner **bin\\\***. Kopieren Sie die Datei auf den Computer, auf dem Sie sie installieren möchten, und doppelklicken Sie dann darauf. Verwenden Sie zum Deinstallieren der Datei die Option **Erweiterungen und Updates** im Menü **Extras** .  
+5.  Um die Erweiterung in der Hauptinstanz von Visual Studio oder auf einem anderen Computer zu installieren, suchen die **VSIX** Datei **"bin"\\\***. Kopieren Sie die Datei auf den Computer, auf dem Sie sie installieren möchten, und doppelklicken Sie dann darauf. Verwenden Sie zum Deinstallieren der Datei die Option **Erweiterungen und Updates** im Menü **Extras** .  
   
 ## <a name="adding-a-layer-validator-to-a-separate-vsix"></a>Hinzufügen eines Ebenenvalidierungssteuerelements zu einer separaten VSIX  
  Wenn Sie eine VSIX erstellen möchten, die Ebenenvalidierungssteuerelemente, Befehle und andere Erweiterungen enthält, empfiehlt es sich, ein Projekt zum Definieren der VSIX und getrennte Projekte für die Handler zu erstellen. 
@@ -116,7 +116,7 @@ In Visual Studio können Benutzer den Quellcode in einem Projekt anhand eines Eb
     > [!NOTE]
     >  Die Methode wird nur unter bestimmten Umständen aufgerufen, und Haltepunkte funktionieren nicht automatisch. Weitere Informationen finden Sie unter [Debuggen der Ebenenvalidierung](#debugging).  
   
-8.  Um die Erweiterung in der Hauptinstanz von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]oder auf einem anderen Computer zu installieren, suchen Sie die **.vsix** im Verzeichnis **bin** des VSIX-Projekts. Kopieren Sie die Datei auf den Computer, auf dem Sie die VSIX installieren möchten. Doppelklicken Sie in Windows-Explorer auf die VSIX-Datei. (Datei-Explorer in Windows 8.)  
+8.  Um VSIX-Pakete in der Hauptinstanz von Visual Studio oder auf einem anderen Computer zu installieren, suchen die **VSIX** in der Datei die **"bin"** Verzeichnis des VSIX-Projekts. Kopieren Sie die Datei auf den Computer, auf dem Sie die VSIX installieren möchten. Doppelklicken Sie in Windows-Explorer auf die VSIX-Datei.
   
      Verwenden Sie zum Deinstallieren der Datei die Option **Erweiterungen und Updates** im Menü **Extras** .  
   
@@ -150,7 +150,7 @@ In Visual Studio können Benutzer den Quellcode in einem Projekt anhand eines Eb
   
  Wenn der Benutzer den Menübefehl **Architektur überprüfen** aufruft, werden die Ebenen und ihre Artefakte vom Ebenenlaufzeitsystem analysiert, und es wird ein Diagramm erstellt. Das Diagramm besteht aus vier Teilen:  
   
--   Den Ebenenmodellen der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] -Projektmappe, die als Knoten und Links im Diagramm dargestellt werden.  
+-   Den Ebenenmodellen der Visual Studio-Projektmappe, die als Knoten und Links im Diagramm dargestellt werden.  
   
 -   Dem Code, Projektelementen und anderen Artefakte, die in der Projektmappe definiert und als Knoten dargestellt werden, sowie den Links, die die vom Analyseprozess ermittelten Abhängigkeiten vertreten.  
   
@@ -190,7 +190,7 @@ In Visual Studio können Benutzer den Quellcode in einem Projekt anhand eines Eb
  Links von Ebenen zu Elementen im Code haben die Kategorie "Represents".  
   
 ##  <a name="debugging"></a> Debuggen der Validierung  
- Drücken Sie STRG+F5, um die Ebenenvalidierungserweiterung zu debuggen. Eine experimentelle Instanz von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] wird geöffnet. Öffnen oder erstellen Sie ein Ebenenmodell in dieser Instanz. Dieses Modell muss Code zugeordnet sein und muss mindestens eine Abhängigkeit besitzen.  
+ Drücken Sie STRG+F5, um die Ebenenvalidierungserweiterung zu debuggen. Eine experimentelle Instanz von Visual Studio wird geöffnet. Öffnen oder erstellen Sie ein Ebenenmodell in dieser Instanz. Dieses Modell muss Code zugeordnet sein und muss mindestens eine Abhängigkeit besitzen.  
   
 ### <a name="test-with-a-solution-that-contains-dependencies"></a>Test mit einer Projektmappe, die Abhängigkeiten enthält  
  Die Validierung wird erst ausgeführt, wenn die folgenden Eigenschaften vorhanden sind:  
@@ -199,7 +199,7 @@ In Visual Studio können Benutzer den Quellcode in einem Projekt anhand eines Eb
   
 -   Es gibt Ebenen im Modell, die Codeelementen zugeordnet sind.  
   
- Öffnen oder erstellen Sie eine Projektmappe mit diesen Eigenschaften, wenn Sie eine experimentelle Instanz von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zum ersten Mal zum Testen der Validierungserweiterung starten.  
+ Die erste Mal, dass Sie eine experimentelle Instanz von Visual Studio zum Testen der validierungserweiterung Starten öffnen oder erstellen eine Lösung, die diese Eigenschaften aufweist.  
   
 ### <a name="run-clean-solution-before-validate-architecture"></a>Ausführen einer Projektmappenbereinigung vor dem Überprüfen der Architektur  
  Verwenden Sie bei jeder Aktualisierung des Validierungscodes im Menü **Erstellen** der experimentellen Instanz den Befehl **Projektmappe bereinigen** , bevor Sie den Befehl "Überprüfen" testen. Dies ist notwendig, da die Ergebnisse der Validierung zwischengespeichert werden. Wenn Sie das Test-Abhängigkeit Diagramm oder sein Code nicht aktualisiert haben, werden die Validierungsmethoden nicht ausgeführt werden.  
@@ -207,9 +207,9 @@ In Visual Studio können Benutzer den Quellcode in einem Projekt anhand eines Eb
 ### <a name="launch-the-debugger-explicitly"></a>Explizites Starten des Debuggers  
  Die Validierung wird in einem separaten Prozess ausgeführt. Daher werden die Haltepunkte in der Überprüfungsmethode nicht ausgelöst. Sie müssen den Debugger explizit dem Prozess anfügen, wenn die Validierung gestartet wurde.  
   
- Fügen Sie am Anfang der Validierungsmethode einen Aufruf von `System.Diagnostics.Debugger.Launch()` ein, um den Debugger dem Validierungsprozess anzufügen. Wenn das Debugdialogfeld angezeigt wird, wählen Sie die Hauptinstanz von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]aus.  
+ Fügen Sie am Anfang der Validierungsmethode einen Aufruf von `System.Diagnostics.Debugger.Launch()` ein, um den Debugger dem Validierungsprozess anzufügen. Wenn das Debugdialogfeld angezeigt wird, wählen Sie die Hauptinstanz von Visual Studio.  
   
- Alternativ können Sie einen Aufruf von `System.Windows.Forms.MessageBox.Show()`einfügen. Wenn das Meldungsfeld angezeigt wird, wechseln Sie zur Hauptinstanz von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] , und klicken Sie im Menü **Debuggen** auf **An den Prozess anhängen**. Wählen Sie den Prozess mit dem Namen **Graphcmd.exe**aus.  
+ Alternativ können Sie einen Aufruf von `System.Windows.Forms.MessageBox.Show()`einfügen. Wenn das Meldungsfeld angezeigt wird, wechseln Sie zur Hauptinstanz von Visual Studio und auf die **Debuggen** klicken Sie im Menü **an den Prozess anhängen**. Wählen Sie den Prozess mit dem Namen **Graphcmd.exe**aus.  
   
  Starten Sie die experimentelle Instanz immer mit STRG+F5 (**Starten ohne Debugging**).  
   

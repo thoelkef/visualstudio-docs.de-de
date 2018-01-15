@@ -7,17 +7,15 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords: Domain-Specific Language, providing overridable classes
-ms.assetid: 30baa60d-a8ea-4611-96c1-8fcc3317cf21
-caps.latest.revision: "15"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: d794edbb4f554e71e5d65a3e48e5393be61896a9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 568fc8c53ea7a7be79d8f8169c964f1ec7e02c0a
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="overriding-and-extending-the-generated-classes"></a>Überschreiben und Erweitern der generierten Klassen
 DSL-Definition ist eine Plattform, auf der Sie einen Satz leistungsstarken Tools erstellen können, die für eine domänenspezifische Sprache basieren. Viele Erweiterungen und Anpassung können vorgenommen werden, indem überschreiben und erweitern die Klassen, die aus der Definition der DSL generiert werden. Diese Klassen umfassen nicht nur die Domänenklassen, die Sie explizit in der DSL-Definitionsdiagramm definiert haben, sondern auch anderen Klassen, die Toolbox, -Explorer, Serialisierung und So weiter definieren.  

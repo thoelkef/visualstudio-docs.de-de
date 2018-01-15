@@ -19,17 +19,15 @@ helpviewer_keywords:
 - dependency diagrams
 - diagrams - modeling, layer
 - constraints, architectural
-ms.assetid: f26c986c-1e79-420e-b29a-a283e6d8a71d
-caps.latest.revision: "33"
-author: alexhomer1
-ms.author: ahomer
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 43901987c9f6f37e7082200f675549021fb63f83
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d11e02e9218d86e0e971c685ab496a2b85b2be21
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="dependency-diagrams-reference"></a>Abhängigkeit Diagrammen: Referenz
 In Visual Studio können Sie eine *Abhängigkeit Diagramm* um die allgemeine, für den logischen Architektur des Systems visuell darzustellen. Ein Diagramm Abhängigkeit ordnet die physischen Artefakte im System in logischen Gruppen an, die sog. *Ebenen*. Diese Ebenen beschreiben die Hauptaufgaben, die von diesen Artefakten ausgeführt werden, oder die Hauptkomponenten des Systems. Jede Ebene kann außerdem geschachtelte Ebenen enthalten, die ausführlichere Aufgaben beschreiben.  

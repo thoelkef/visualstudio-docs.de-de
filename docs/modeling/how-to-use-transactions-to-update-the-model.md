@@ -6,17 +6,15 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: e24436a5-7f97-401b-bc83-20d188d10d5b
-caps.latest.revision: "7"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: e117b6fad7a558d002bf0e8689c56dbc2947644f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: ecff3cb7585d9c80037ff8cdbd087b39a584f2aa
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="how-to-use-transactions-to-update-the-model"></a>Gewusst wie: Verwenden von Transaktionen zum Aktualisieren des Modells
 Transaktionen stellen Sie sicher, dass Änderungen an den Store wurden als eine Gruppe behandelt werden. Änderungen, die gruppiert werden können ein Commit oder Rollback als einzelne Einheit.  

@@ -7,17 +7,15 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords: Domain-Specific Language, accessing the current selection
-ms.assetid: 2990981e-dfae-416f-b0d0-7197f1242dfa
-caps.latest.revision: "14"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 6cfc93f3e0423f57cd0df5e919854cc1a46a1b3f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 9eaf9d13d6c5bc81153d459dc592b99f9e893733
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="how-to-access-and-constrain-the-current-selection"></a>Gewusst wie: Zugreifen auf die und Einschränken der aktuellen Auswahl
 Wenn Sie einen Menübefehl oder Gestenhandler-Handler für Ihre einer domänenspezifischen Sprache schreiben, können Sie bestimmen, welches Element der Benutzer geklickt wird. Sie können auch einige Formen oder Felder verhindern ausgewählt werden. Sie können z. B. anordnen, dass klickt der Benutzer auf ein Symbol Decorator-Element, das Shape, das sie enthält stattdessen ausgewählt ist. Beschränken die Auswahl auf diese Weise reduziert die Anzahl der Handler, die Sie schreiben müssen. Dies erleichtert auch für die Benutzer an einer beliebigen Stelle in der Form klicken kann, ohne die Decorator-Element zu vermeiden.  

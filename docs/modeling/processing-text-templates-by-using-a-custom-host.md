@@ -9,17 +9,15 @@ ms.topic: article
 helpviewer_keywords:
 - text templates, in application or VS extension
 - text templates, custom directive hosts
-ms.assetid: affa3296-854d-47d6-9685-285f6d9ba5dc
-caps.latest.revision: "33"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 5f4456899b724d8a7cd2dba6039b28eee29bfafd
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d3eabfb846b6b488c99202037ebea90c4f9f04db
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="processing-text-templates-by-using-a-custom-host"></a>Verarbeiten von Textvorlagen mithilfe eines benutzerdefinierten Hosts
 Die *Textvorlagentransformation* verarbeiten nimmt eine *Textvorlage* Datei als Eingabe und eine Textdatei als Ausgabe erzeugt. Sie können das Texttransformationsmodul in einer [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Erweiterung oder einer eigenständigen Anwendung aufrufen, die auf einem Computer mit [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ausgeführt wird. Sie müssen jedoch Bereitstellen einer *Textvorlagenhost*. Diese Klasse verbindet die Vorlage mit der Umgebung. Sie sucht nach Ressourcen wie Assemblys und Includedateien und verarbeitet die Ausgabe und Fehlermeldungen.  
@@ -50,7 +48,7 @@ string output = engine.ProcessTemplate(templateString, host);
   
  Der Host muss in der Lage sein, Fehler zu protokollieren und Verweise auf Assemblys und Includedateien aufzulösen, er muss eine Anwendungsdomäne bereitstellen, in der die Vorlage ausgeführt werden kann, und den entsprechenden Prozessor für jede Anweisung aufrufen.  
   
- <xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName>wird definiert, **Microsoft.VisualStudio.TextTemplating.\*.0.Dll**, und <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost> ist definiert **Microsoft.VisualStudio.TextTemplating.Interfaces.\*.0.Dll**.  
+ <xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName>wird definiert, **Microsoft.VisualStudio.TextTemplating.\*. 0-Dll**, und <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost> ist definiert **Microsoft.VisualStudio.TextTemplating.Interfaces.\*. 0-Dll**.  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
  [Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Textvorlagenhosts](../modeling/walkthrough-creating-a-custom-text-template-host.md)  

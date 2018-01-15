@@ -26,33 +26,33 @@ helpviewer_keywords:
 - dependency graphs
 - graph documents, exporting
 - code exploration, visualizing
-ms.assetid: e04850a2-17c5-459b-93ec-6c74143b3292
-caps.latest.revision: "243"
-author: alexhomer1
-ms.author: ahomer
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: fc8d9774c69216136eb2b4c99b379ef1c714997f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 135e0e9d5b6b2d4e0f75804a98c8f40f17d0b736
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="map-dependencies-across-your-solutions"></a>Projektmappenübergreifendes Zuordnen von Abhängigkeiten
-Wenn Sie Abhängigkeiten innerhalb Ihres Codes verstehen möchten, stellen Sie diese visuell dar, indem Sie Code Maps erstellen. Dadurch können Sie sehen, wie der Code ohne Lesen von Codezeilen und Dateien zusammenpasst.  
-  
- ![Anzeigen von Abhängigkeiten projektmappenübergreifendes](../modeling/media/codemapsmainintro.png "CodeMapsMainIntro")  
-  
- **Hier finden Sie einige Videos**:  
-  
--   [Verstehen der Codeabhängigkeiten durch Visualisierung](http://go.microsoft.com/fwlink/?LinkID=252065)  
-  
--   [Visualisieren der Auswirkungen einer Änderung](http://go.microsoft.com/fwlink/?LinkID=252068)  
-  
--   [Nachvollziehen komplexen Codes mit Code Maps](http://go.microsoft.com/fwlink/?LinkID=259869)  
-  
-##  <a name="GetStarted"></a> Erste Schritte mit Code Maps  
- **Zur Verwendung von Code Maps benötigen Sie, entweder**:  
+
+Wenn Sie Abhängigkeiten innerhalb Ihres Codes verstehen möchten, stellen Sie diese visuell dar, indem Sie Code Maps erstellen. Dadurch können Sie sehen, wie der Code ohne Lesen von Codezeilen und Dateien zusammenpasst.
+
+![Anzeigen von Abhängigkeiten projektmappenübergreifendes](../modeling/media/codemapsmainintro.png "CodeMapsMainIntro")
+
+**Hier finden Sie einige Videos**:
+
+- [Verstehen der codeabhängigkeiten durch Visualisierung](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Understand-your-code-dependencies-through-visualization)
+
+- [Visualisieren der Auswirkungen einer Änderung](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Visualize-the-impact-of-a-change)
+
+- [Nachvollziehen komplexen Codes mit Code maps](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Understanding-complex-code-with-Code-Map-ENU)
+
+## <a name="GetStarted"></a> Erste Schritte mit Code Maps
+
+**Zur Verwendung von Code Maps benötigen Sie, entweder**:
   
 -   Visual Studio Enterprise: Erstellen Sie Code Maps im Code-Editor, im Projektmappen-Explorer, in der Klassenansicht oder im Objektbrowser.  
   
@@ -171,7 +171,7 @@ Wenn Sie Abhängigkeiten innerhalb Ihres Codes verstehen möchten, stellen Sie d
   
 10. Eine andere Methode zum Fokussieren einer Code Map einer komplexen Projektmappe besteht darin, eine neue Code Map zu generieren, die ausgewählte Elemente aus einer vorhandenen Code Map enthält. Halten Sie **STRG** gedrückt, während Sie die Elemente auswählen, die Sie in den Fokus holen möchten, öffnen Sie das Kontextmenü, und wählen Sie **Neues Diagramm aus der Auswahl**aus.  
   
-     ![Anzeigen der ausgewählten Elemente in einer neuen Code Map](../ide/media/codemapsshowonnewmap.png "CodeMapsShowOnNewMap")  
+     ![Anzeigen der ausgewählten Elemente in einer neuen Code Map](../modeling/media/codemapsshowonnewmap.png "CodeMapsShowOnNewMap")  
   
 11. Der enthaltende Kontext wird in die neue Code Map übernommen. Blenden Sie Projektmappenordner und andere Container, die Sie nicht, finden unter Verwendung möchten der **Filter** Bereich.  
   

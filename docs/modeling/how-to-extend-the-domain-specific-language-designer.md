@@ -6,17 +6,15 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: fa807f1b-2780-491e-925b-abbfd31b2bfa
-caps.latest.revision: "9"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 9eaa07b0fdf0055ea4ba2849f6438882a22cf85e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 8db29f57c05f1bc9c80c3dc658c23a7c7e109edd
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>Gewusst wie: Erweitern des DSL-Designers
 Sie können Erweiterungen in den Designer vornehmen, die mit der DSL-Definitionen bearbeiten. Typen der Erweiterung, die Sie gehören das Hinzufügen von Menübefehlen, vornehmen können, Hinzufügen von Handler für ziehen, und doppelklicken Sie auf Gesten und Regeln, die ausgelöst werden, wenn bestimmte Typen von Werten oder Beziehungen ändern. Die Erweiterungen können als eine Visual Studio Integration Extension (VSIX) verpackt und an andere Benutzer verteilt werden.  

@@ -15,17 +15,15 @@ helpviewer_keywords:
 - Domain-Specific Language, external types
 - Domain-Specific Language, relationships
 - Domain-Specific Language, domain properties
-ms.assetid: d1772463-0eb1-40a5-b7c0-9a008bc76760
-caps.latest.revision: "43"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 320e244c17f8e21330aa3925030650126a0ba5a6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: becfedc10f054c006709c3095f924b58c1ba5062
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>So definieren Sie eine domänenspezifische Sprache
 Um eine domänenspezifische Sprache (DSL) zu definieren, erstellen Sie eine [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Projektmappe von einer Vorlage. Der zentrale Bestandteil der Projektmappe ist das DSL-Definitionsdiagramm, das in "DslDefinition.dsl" gespeichert wird. Die DSL-Definition definiert die Klassen und Formen der DSL. Nachdem Sie diese Elemente geändert und weitere hinzugefügt haben, können Sie Programmcode hinzufügen, um die DSL weiter anzupassen.  
@@ -122,7 +120,7 @@ Um eine domänenspezifische Sprache (DSL) zu definieren, erstellen Sie eine [!IN
   
 -   Die Stammklasse erscheint auf der linken oberen Ecke der DSL-Definitionsdiagramm unter **Klassen und Beziehungen**. Benennen Sie sie in einen von der DSL verschiedenen Namen um. Z. B. eine DSL, die mit dem Namen **MusicLibrary** möglicherweise eine Stammklasse, die mit dem Namen **Musik**.  
   
--   Die Diagramm-Klasse auf der unteren rechten Ecke der DSL-Definitionsdiagramm wird angezeigt, der **Diagrammelemente** Spalte. Möglicherweise müssen Sie einen Bildlauf nach rechts durchführen, um sie zu sehen. In der Regel heißt *YourDsl***Diagramm**.  
+-   Die Diagramm-Klasse auf der unteren rechten Ecke der DSL-Definitionsdiagramm wird angezeigt, der **Diagrammelemente** Spalte. Möglicherweise müssen Sie einen Bildlauf nach rechts durchführen, um sie zu sehen. Es ist in der Regel mit dem Namen * YourDsl ***Diagramm**.  
   
 -   Bei Verwendung der **Datenflusstask** Vorlage und Erstellen von Diagrammen mit Verantwortlichkeitsbereiche, beibehalten, und benennen Sie die Domänenklasse Akteur und ActorSwimlane Form möchten.  
   
@@ -223,11 +221,11 @@ Um eine domänenspezifische Sprache (DSL) zu definieren, erstellen Sie eine [!IN
   
 2.  **Erstellen und Ausführen der DSL.** Drücken Sie F5 oder STRG + F5, um eine neue Instanz der Ausführung [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] im Testmodus. Öffnen oder erstellen Sie in der experimentellen Instanz von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] eine Datei mit der Dateinamenerweiterung Ihrer DSL.  
   
-3.  **Öffnen Sie den Explorer an.** AT die Seite des Diagramms ist der Language-Explorer-Fenster, das normalerweise heißt *YourLanguage* Explorer. Sollten Sie das Fenster nicht sehen, befindet es sich möglicherweise auf einer Registerkarte unter dem Projektmappen-Explorer. Findet Sie es, auf die **Ansicht** Sie im Menü **Weitere Fenster**, und klicken Sie dann auf *YourLanguage***Explorer**.  
+3.  **Öffnen Sie den Explorer an.** AT die Seite des Diagramms ist der Language-Explorer-Fenster, das normalerweise heißt *YourLanguage* Explorer. Sollten Sie das Fenster nicht sehen, befindet es sich möglicherweise auf einer Registerkarte unter dem Projektmappen-Explorer. Findet Sie es, auf die **Ansicht** Sie im Menü **Weitere Fenster**, und klicken Sie dann auf * YourLanguage ***Explorer**.  
   
      Im Explorer wird eine Strukturansicht des Modells dargestellt.  
   
-4.  **Erstellen Sie neue Elemente.** Mit der rechten Maustaste oben auf des Stammknoten, und klicken Sie dann auf **hinzufügen***YourClass*.  
+4.  **Erstellen Sie neue Elemente.** Mit der rechten Maustaste oben auf des Stammknoten, und klicken Sie dann auf **neuer *** YourClass*.  
   
      Im Sprach-Explorer wird eine neue Instanz Ihrer Klasse angezeigt.  
   
@@ -623,7 +621,7 @@ Um eine domänenspezifische Sprache (DSL) zu definieren, erstellen Sie eine [!IN
 |Ich kann in DSL-Explorer keine Auflistung hinzufügen. Zum Beispiel gibt es beim Rechtsklick auf "Werkzeuge" keinen "Tool hinzufügen"-Befehl im Menü.<br /><br /> Ich kann im Explorer für meine DSL kein Element zu einer Liste hinzufügen.|Klicken Sie mit der rechten Maustaste auf das Element über dem Knoten, den Sie testen. Wenn Sie etwas zu einer Liste hinzufügen möchten, befindet sich der Befehl zum Hinzufügen nicht im Listenknoten, sondern in seinem Besitzer.|  
 |Ich habe eine Domänenklasse erstellt, aber ich kann im Explorer der Sprache keine Instanzen erstellen.|Jede Domänenklasse mit Ausnahme des Stamms muss Ziel einer einbettenden Beziehung sein.|  
 |Im Explorer für meine DSL werden die Elemente nur mit ihren Typennamen angezeigt.|Wählen Sie in der DSL-Definition, eine Eigenschaft "Domain" der Klasse, und legen Sie im Eigenschaften-Fenster **Elementname ist** auf "true".|  
-|Meine DSL wird immer im XML-Editor geöffnet.|Das kann an einem Fehler beim Lesen der Datei liegen. Nachdem Sie den Fehler behoben haben, müssen Sie den Editor explizit als Ihren DSL-Designer zurücksetzen.<br /><br /> Mit der rechten Maustaste des Projektelements, klicken Sie auf **Öffnen mit** , und wählen Sie *YourLanguage***Designer (Standard)**.|  
+|Meine DSL wird immer im XML-Editor geöffnet.|Das kann an einem Fehler beim Lesen der Datei liegen. Nachdem Sie den Fehler behoben haben, müssen Sie den Editor explizit als Ihren DSL-Designer zurücksetzen.<br /><br /> Mit der rechten Maustaste des Projektelements, klicken Sie auf **Öffnen mit** , und wählen Sie * YourLanguage ***Designer (Standard)**.|  
 |Der Werkzeugkasten meiner DSL wird nicht angezeigt, nachdem ich die Assemblynamen geändert habe.|Überprüfen und aktualisieren Sie **DslPackage\GeneratedCode\Package.tt** Weitere Informationen finden Sie unter [Vorgehensweise: Ändern Sie den Namespace einer domänenspezifischen Sprache](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md).|  
 |Der Werkzeugkasten meiner DSL wird nicht angezeigt, obwohl ich die Assemblynamen nicht geändert habe.<br /><br /> Oder es wird in einem Meldungsfeld gemeldet, dass eine Erweiterung nicht geladen werden konnte.|Setzen Sie die experimentelle Instanz zurück, und erstellen Sie die Projektmappe neu.<br /><br /> 1.  Starten Sie Windows im Menü unter **Programme**, erweitern Sie [!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)], klicken Sie dann **Tools**, und klicken Sie dann auf **Zurücksetzen der Microsoft Visual Studio experimentellen Instanz**.<br />2.  Auf der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] **erstellen** Menü klicken Sie auf **Projektmappe neu erstellen**.|  
   

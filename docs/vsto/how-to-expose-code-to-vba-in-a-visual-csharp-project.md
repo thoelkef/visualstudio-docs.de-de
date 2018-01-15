@@ -19,11 +19,11 @@ author: TerryGLee
 ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: a4794f1cde57f365ec4ec98251763e8d0e839ae0
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 0be62faf81fc9d7da60a03596c25cc01a9bf0eac
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="how-to-expose-code-to-vba-in-a-visual-c-project"></a>Gewusst wie: Verfügbarmachen von Code für VBA in einem Visual C#-Projekt
   Sie können Code in einem Visual C#-Projekt in Visual Basic für Applikationen (VBA) Code verfügbar machen, wenn Sie möchten, dass die zwei Arten von Code für die Interaktion mit anderen.  
@@ -80,7 +80,7 @@ ms.lasthandoff: 01/10/2018
   
      Weitere Informationen zu Hostelementen finden Sie unter [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md).  
   
-6.  Extrahieren Sie eine Schnittstelle, von der Klasse, die Sie für VBA verfügbar machen. In der **Schnittstelle extrahieren** Dialogfeld wählen die öffentlichen Member, die in der Schnittstellendeklaration enthalten sein sollen. Weitere Informationen finden Sie unter [Umgestaltung der Schnittstelle extrahieren &#40; C &#35; &#41; ](/visualstudio/csharp-ide/extract-interface-refactoring-csharp).  
+6.  Extrahieren Sie eine Schnittstelle, von der Klasse, die Sie für VBA verfügbar machen. In der **Schnittstelle extrahieren** Dialogfeld wählen die öffentlichen Member, die in der Schnittstellendeklaration enthalten sein sollen. Weitere Informationen finden Sie unter [Extract Interface Refactoring](../ide/reference/extract-interface-csharp.md).
   
 7.  Hinzufügen der **öffentlichen** Schlüsselwort, um die Schnittstellendeklaration.  
   

@@ -9,17 +9,15 @@ ms.topic: article
 helpviewer_keywords:
 - Domain-Specific Language, programming domain models
 - Domain-Specific Language, events
-ms.assetid: 0ac8d1e4-239f-4370-ba1d-3769bb38b8a5
-caps.latest.revision: "18"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: b1ef5efcce853f55ad518f1cdba35d2363f5504e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 717f61f440414370f3e9a2180e1c1cade7436aeb
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>Ereignishandler propagieren Änderungen außerhalb des Modells
 In Visualization and Modeling SDK, definieren Sie Store-Ereignishandler, um die Weitergabe von Änderungen auf Ressourcen außerhalb des Informationsspeichers, z. B. keine Store-Variablen, Dateien, im anderen Speicher oder anderen Modellen [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Erweiterungen. Store-Ereignishandler werden nach dem Ende der Transaktion ausgeführt, in denen die auslösende Ereignis aufgetreten ist. Sie werden auch in einem Vorgang rückgängig gemacht bzw. wiederholt ausgeführt werden. Aus diesem Grund sind im Gegensatz zum Speicher-Regeln Speicherereignisse besten zum Aktualisieren von Werten, die sich außerhalb des Informationsspeichers befinden. Im Gegensatz zu .NET Ereignisse, Ereignishandler Store Lauschen auf eine Klasse registriert sind: Sie müssen nicht für jede Instanz einen separaten Handler registriert werden soll. Weitere Informationen zur Wahl zwischen verschiedenen Methoden zum Behandeln der Änderungen, finden Sie unter [Weitergeben von Änderungen und reagieren auf](../modeling/responding-to-and-propagating-changes.md).  
@@ -38,7 +36,7 @@ In Visualization and Modeling SDK, definieren Sie Store-Ereignishandler, um die 
   
     -   `ElementDeleted`– nach einem Modellelement ausgelöst, Beziehung, Form oder Connector gelöscht wurde. Die Eigenschaftswerte des Elements können Sie weiterhin zugreifen, aber sie weist keine Beziehungen zu anderen Elementen.  
   
-2.  Hinzufügen eine partiellen Klassendefinition für *YourDsl***DocData** in einer separaten Codedatei in der **DslPackage** Projekt.  
+2.  Hinzufügen eine partiellen Klassendefinition für *YourDsl *** DocData** in einer separaten Codedatei in der **DslPackage** Projekt.  
   
 3.  Schreiben Sie den Code des Ereignisses als eine Methode, wie im folgenden Beispiel gezeigt. Es kann sein `static`, es sei denn, Sie möchten den Zugriff auf `DocData`.  
   

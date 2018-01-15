@@ -9,17 +9,15 @@ ms.topic: article
 helpviewer_keywords:
 - dependency diagrams, adding custom commands
 - dependency diagrams, adding custom gestures
-ms.assetid: ac9c417b-0b40-4a90-86f5-ee3cbdce030b
-caps.latest.revision: "38"
-author: alexhomer1
-ms.author: ahomer
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: f03b460c3e37bb6299047cb0e35e80895f08cfb3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: f580c81d63adb2ca474f8ea9f250f48a61da928a
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="add-commands-and-gestures-to-dependency-diagrams"></a>Hinzufügen von Befehlen und Bewegungen zu Abhängigkeit Diagrammen
 Sie können definieren Kontextmenübefehle und Gestenhandler in Abhängigkeit von Diagrammen in Visual Studio. Sie können diese Erweiterungen in einer Visual Studio-Integrationserweiterung (VSIX) verpacken, die Sie an andere Visual Studio-Benutzer verteilen können.  
@@ -45,7 +43,7 @@ Sie können definieren Kontextmenübefehle und Gestenhandler in Abhängigkeit vo
   
 3.  Drücken Sie **STRG+F5** oder **F5**, um die Erweiterung zu testen.  
   
-     Eine experimentelle Instanz von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] wird gestartet. Erstellen Sie in diesem Beispiel wird eine Abhängigkeit Diagramm ein. Der Befehl oder die Gestenerweiterung sollte in diesem Diagramm funktionieren.  
+     Eine experimentelle Instanz von Visual Studio wird gestartet. Erstellen Sie in diesem Beispiel wird eine Abhängigkeit Diagramm ein. Der Befehl oder die Gestenerweiterung sollte in diesem Diagramm funktionieren.  
   
 4.  Schließen Sie die experimentelle Instanz, und ändern Sie den Beispielcode. Weitere Informationen finden Sie unter [navigieren und Update überlagern Sie die Modelle im Programmcode](../modeling/navigate-and-update-layer-models-in-program-code.md).  
   
@@ -55,7 +53,7 @@ Sie können definieren Kontextmenübefehle und Gestenhandler in Abhängigkeit vo
   
      [Definieren eines Gestenhandlers](#gesture)  
   
-6.  Um die Erweiterung in der Hauptinstanz von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]oder auf einem anderen Computer zu installieren, suchen Sie die Datei **.vsix** im Ordner **bin\\\***. Kopieren Sie die Datei auf den Computer, auf dem Sie sie installieren möchten, und doppelklicken Sie dann darauf. Verwenden Sie zum Deinstallieren der Datei die Option **Erweiterungen und Updates** im Menü **Extras** .  
+6.  Um die Erweiterung in der Hauptinstanz von Visual Studio oder auf einem anderen Computer zu installieren, suchen die **VSIX** Datei **"bin"\\\***. Kopieren Sie die Datei auf den Computer, auf dem Sie sie installieren möchten, und doppelklicken Sie dann darauf. Verwenden Sie zum Deinstallieren der Datei die Option **Erweiterungen und Updates** im Menü **Extras** .  
   
 ## <a name="adding-a-command-or-gesture-to-a-separate-vsix"></a>Hinzufügen eines Befehls oder einer Geste zu einem separaten VSIX  
  Wenn Sie eine VSIX erstellen möchten, die Befehle, Ebenenvalidierungssteuerelemente und andere Erweiterungen enthält, empfiehlt es sich, ein Projekt zum Definieren der VSIX und getrennte Projekte für die Handler zu erstellen.
@@ -104,9 +102,9 @@ Sie können definieren Kontextmenübefehle und Gestenhandler in Abhängigkeit vo
   
      Siehe auch [navigieren und Update überlagern Sie die Modelle im Programmcode](../modeling/navigate-and-update-layer-models-in-program-code.md).  
   
-2.  Drücken Sie STRG+F5 oder F5, um die Anwendung zu testen. Eine experimentelle Instanz von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] wird geöffnet. Erstellen Sie in dieser Instanz oder öffnen Sie ein Diagramm der Abhängigkeit.  
+2.  Drücken Sie STRG+F5 oder F5, um die Anwendung zu testen. Eine experimentelle Instanz von Visual Studio wird geöffnet. Erstellen Sie in dieser Instanz oder öffnen Sie ein Diagramm der Abhängigkeit.  
   
-3.  Um die Erweiterung in der Hauptinstanz von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]oder auf einem anderen Computer zu installieren, suchen Sie die Datei **.vsix** im Verzeichnis **bin** des VSIX-Projekts. Kopieren Sie die Datei auf den Computer, auf dem Sie die VSIX installieren möchten. Doppelklicken Sie auf die VSIX-Datei in Windows-Explorer (Datei-Explorer in Windows 8).  
+3.  Um VSIX-Pakete in der Hauptinstanz von Visual Studio oder auf einem anderen Computer zu installieren, suchen die **VSIX** in der Datei die **"bin"** Verzeichnis des VSIX-Projekts. Kopieren Sie die Datei auf den Computer, auf dem Sie die VSIX installieren möchten. Doppelklicken Sie in Windows-Explorer auf die VSIX-Datei.  
   
      Verwenden Sie zum Deinstallieren der Datei die Option **Erweiterungen und Updates** im Menü **Extras** .  
   

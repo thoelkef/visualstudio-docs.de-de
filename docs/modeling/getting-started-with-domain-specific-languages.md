@@ -6,17 +6,15 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 024392a2-2c04-404f-a27b-7273553c3b60
-caps.latest.revision: "16"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 5703410772945a95ed0efea95a665b2a106e0ce7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: b3e0d6ec6eb1449defcc49102a97e69a7105a838
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="getting-started-with-domain-specific-languages"></a>Erste Schritte mit domänenspezifischen Sprachen
 In diesem Thema wird erläutert, die grundlegenden Konzepte in definieren und verwenden eine domänenspezifische Sprache (DSL) mit den Modellierungs-SDK für Visual Studio erstellt wird.  
@@ -143,7 +141,7 @@ In diesem Thema wird erläutert, die grundlegenden Konzepte in definieren und ve
  ![](../modeling/media/dsl_min.png "DSL_min")  
   
 ### <a name="the-content-of-a-model"></a>Der Inhalt eines Modells  
- Wird aufgerufen, der Inhalt der Datei, die eine Instanz eine DSL ist eine *Modell*. Das Modell enthält *Modell**Elemente* und *Links* zwischen den Elementen. DSL-Definition gibt an, welche Arten von Modellelementen und Links können im Modell vorhanden sein. Z. B. in eine DSL, die aus der Vorlage für die minimale Sprache erstellt, besteht eine Art von Modellelement und einen Typ des Links.  
+ Wird aufgerufen, der Inhalt der Datei, die eine Instanz eine DSL ist eine *Modell*. Das Modell enthält *Modell ** Elemente* und *Links* zwischen den Elementen. DSL-Definition gibt an, welche Arten von Modellelementen und Links können im Modell vorhanden sein. Z. B. in eine DSL, die aus der Vorlage für die minimale Sprache erstellt, besteht eine Art von Modellelement und einen Typ des Links.  
   
  DSL-Definition kann angeben, wie das Modell in einem Diagramm dargestellt. Sie können aus einer Vielzahl von Formaten von Formen und Verbindern auswählen. Sie können angeben, dass einige Formen in anderen Formen angezeigt werden.  
   
