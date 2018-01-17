@@ -1,61 +1,57 @@
 ---
-title: 'Vorgehensweise: Erstellen von Projektvorlagen | Microsoft-Dokumentation'
+title: "Erstellen einer Projektvorlage für Visual Studio | Microsoft-Dokumentation"
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 01/02/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords: VS.ExportTemplateWizard
-helpviewer_keywords:
-- Visual Studio templates, creating project templates
-- project templates, metadata files
-- Visual Studio templates, project templates
-- project templates, custom template locations
-- project templates, creating
-ms.assetid: a1a6999d-a34c-48a8-b1cf-027eb5c76398
-caps.latest.revision: "19"
+helpviewer_keywords: project templates [Visual Studio], creating
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 603cfdd3a52163959ed223952994d3e8e4147298
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 0da7a7979b4fed6f58cdda6f1eafa55517e4df9b
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/05/2018
 ---
-# <a name="how-to-create-project-templates"></a>Gewusst wie: Erstellen von Projektvorlagen
-Diese Vorgehensweise ermöglicht Ihnen das Erstellen einer Vorlage mithilfe des **Assistenten zum Exportieren von Vorlagen**, bei dem Ihre Vorlage in einer ZIP-Datei verpackt wird. Sie können für eine verbesserte Bereitstellung auch Vorlagen im Dateiformat VSIX erstellen, indem Sie die Erweiterung des „Assistenten zum Exportieren von Vorlagen“ oder Vorlagen verwenden, die in [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] enthalten sind. Außerdem können Sie Vorlagen manuell erstellen.  
-  
-### <a name="to-create-a-custom-project-template-with-the-standard-export-template-wizard"></a>So erstellen Sie eine benutzerdefinierte Projektvorlage mit dem Standard-Assistenten zum Exportieren von Vorlagen  
-  
-1.  Erstellen eines Projekts.  
-  
+# <a name="how-to-create-project-templates"></a>Vorgehensweise: Erstellen von Projektvorlagen
+
+In diesem Artikel wird das Erstellen einer Vorlage mithilfe des **Assistenten zum Exportieren von Vorlagen** erläutert, bei dem Ihre Vorlage in eine ZIP-Datei gepackt wird.
+
+## <a name="to-create-a-user-project-template-by-using-the-export-template-wizard"></a>Erstellen einer Benutzerprojektvorlage mithilfe des Assistenten zum Exportieren von Vorlagen
+
+1. Erstellen eines Projekts.
+
     > [!NOTE]
-    >  Verwenden Sie nur gültige Bezeichnerzeichen beim Benennen eines Projekts, das als Quelle für eine Vorlage verwendet wird. Eine aus einem Projekt exportierte Vorlage, das mit ungültigen Zeichen benannt wurde, kann in zukünftigen Projekten, die auf dieser Vorlage basieren, Kompilierungsfehler verursachen. Weitere Informationen zu gültigen Bezeichnerzeichen finden Sie unter [Declared Element Names (Namen deklarierter Elemente)](/dotnet/visual-basic/programming-guide/language-features/declared-elements/declared-element-names).  
-  
-2.  Bearbeiten Sie das Projekt solange, bis es als Vorlage exportiert werden kann.  
-  
-3.  Ändern Sie gegebenenfalls die Codedateien, um anzugeben, an welcher Stelle Parameterersetzungen stattfinden sollen. Weitere Informationen zu Parameterersetzungen finden Sie unter [Vorgehensweise: Ersetzen von Parametern in einer Vorlage](../ide/how-to-substitute-parameters-in-a-template.md).  
-  
-4.  Klicken Sie im Menü **Projekt** auf **Vorlage exportieren**. Der **Assistent zum Exportieren von Vorlagen** wird geöffnet.  
-  
-5.  Klicken Sie auf **Projektvorlage**.  
-  
-6.  Wenn sich in Ihrer aktuellen Projektmappe mehr als ein Projekt befindet, müssen Sie das Projekt auswählen, das Sie als Vorlage exportieren möchten.  
-  
-7.  Klicken Sie auf **Weiter**.  
-  
-8.  Wählen Sie ein Symbol und ein Vorschaubild für die Vorlage aus. Diese werden im Dialogfeld **Neues Projekt** angezeigt.  
-  
-9. Geben Sie einen Namen und eine Beschreibung für die Vorlage ein.  
-  
-10. Klicken Sie auf **Fertig stellen**. Das Projekt wird als ZIP-Datei exportiert und am angegebenen Speicherort platziert. Außerdem wird es in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] importiert, wenn diese Option ausgewählt wurde.  
-  
-     Wenn [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] installiert ist, können Sie die fertige Vorlage für die Bereitstellung in einer VSIX-Datei umschließen, indem Sie die Vorlage **VSIX-Projekt** verwenden. Weitere Informationen finden Sie unter [Erste Schritte mit der VSIX-Projektvorlage](../extensibility/getting-started-with-the-vsix-project-template.md).  
-  
-## <a name="see-also"></a>Siehe auch  
- [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)   
- [Gewusst wie: Erstellen von Elementvorlagen](../ide/how-to-create-item-templates.md)
+    > Verwenden Sie nur gültige Bezeichnerzeichen beim Benennen eines Projekts, das als Quelle für eine Vorlage verwendet wird. Andernfalls können Kompilierungsfehler in Projekten auftreten, die anhand der Vorlage erstellt werden. Weitere Informationen zu gültigen Bezeichnerzeichen finden Sie unter [Declared Element Names (Deklarierte Elementnamen)](/dotnet/visual-basic/programming-guide/language-features/declared-elements/declared-element-names) oder [Identifiers (C++) (Bezeichner (C++))](/cpp/cpp/identifiers-cpp). Stattdessen können Sie auch [Vorlagenparameter](../ide/template-parameters.md) verwenden, damit die Namen Ihrer Klassen und Namespaces „sicher“ sind.
+
+1. Bearbeiten Sie das Projekt solange, bis es als Vorlage exportiert werden kann. Ändern Sie beispielsweise die Codedateien, um anzugeben, an welcher Stelle Parameter ersetzt werden sollen. Weitere Informationen finden Sie unter [Vorgehensweise: Ersetzen von Parametern in einer Vorlage](../ide/how-to-substitute-parameters-in-a-template.md).
+
+1. Klicken Sie im Menü **Projekt** auf **Vorlage exportieren...**.
+
+   Der **Assistent zum Exportieren von Vorlagen** wird geöffnet.
+
+1. Wählen Sie auf der Seite **Vorlagentyp auswählen** die Option **Projektvorlage** aus. Wählen Sie das Projekt aus, das Sie in eine Vorlage exportieren möchten, und klicken Sie anschließend auf **Weiter**.
+
+1. Geben Sie auf der Seite **Vorlagenoptionen auswählen** einen Namen, ggf. eine Beschreibung sowie ein Symbol für Ihre Vorlage ein, und fügen Sie ein Vorschaubild hinzu. Diese Elemente werden im Dialogfeld **Neues Projekt** angezeigt. Wählen Sie **Fertig stellen** aus.
+
+  Das Projekt wird als ZIP-Datei exportiert und am angegebenen Speicherort platziert. Außerdem wird es in Visual Studio importiert, wenn diese Option ausgewählt wurde.
+
+>[!NOTE]
+> Sie finden Ihre Vorlage im Dialogfeld **Neues Projekt**, indem Sie zunächst **Installiert** und anschließend die Kategorie erweitern, die dem `ProjectType`-Element in der VSTEMPLATE-Datei entspricht. Beispielsweise wird eine VSTEMPLATE-Datei, die `<ProjectType>CSharp</ProjectType>` enthält, standardmäßig unter **Installiert** > **Visual C#** angezeigt. Sie können Ihre Vorlage in ein Unterverzeichnis des Projekttypen speichern, indem Sie in diesem Verzeichnis einen Ordner erstellen und die ZIP-Datei Ihrer Vorlage darin ablegen. Weitere Informationen finden Sie unter [Vorgehensweise: Suchen und Organisieren von Vorlagen](../ide/how-to-locate-and-organize-project-and-item-templates.md).
+
+## <a name="other-ways-to-create-project-templates"></a>Andere Möglichkeiten zum Erstellen von Projektvorlagen
+
+Sie können manuell Projektvorlagen erstellen, indem Sie die Dateien erfassen, die die Grundlage für ein Projekt in einem Ordner darstellen, und anschließend eine VSTEMPLATE-XML-Datei mit den entsprechenden Metadaten erstellen. Weitere Informationen finden Sie unter [Vorgehensweise: Manuelles Erstellen von Projektvorlagen](../ide/how-to-manually-create-web-templates.md).
+
+Wenn das Visual Studio SDK installiert ist, können Sie die fertige Vorlage für die Bereitstellung in einer VSIX-Datei umschließen, indem Sie die Vorlage **VSIX-Projekt** verwenden. Weitere Informationen finden Sie unter [Erste Schritte mit der VSIX-Projektvorlage](../extensibility/getting-started-with-the-vsix-project-template.md).
+
+## <a name="see-also"></a>Siehe auch
+
+[Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)  
+[Gewusst wie: Erstellen von Elementvorlagen](../ide/how-to-create-item-templates.md)  
+[Erste Schritte mit der VSIX-Projektvorlage](../extensibility/getting-started-with-the-vsix-project-template.md)

@@ -1,7 +1,7 @@
 ---
-title: 'Vorgehensweise: Erstellen von Elementvorlagen mit mehreren Dateien | Microsoft-Dokumentation'
+title: "Erstellen von Elementvorlagen mit mehreren Dateien für Visual Studio | Microsoft-Dokumentation"
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 01/02/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-general
@@ -11,81 +11,94 @@ helpviewer_keywords:
 - Visual Studio templates, creating multi-file item templates
 - multi-file item templates
 - item templates, creating multi-file item templates
-ms.assetid: fe3c4257-e383-4c80-b8af-c5c521959c33
-caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: a0cdd8fdd8ec36ccb070e8aaa197d728047a3fef
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: f1d5b11c97b7f214a13225b5605f47e3d3a45966
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/05/2018
 ---
-# <a name="how-to-create-multi-file-item-templates"></a>Gewusst wie: Erstellen von Elementvorlagen mit mehreren Dateien
-Elementvorlagen können nur ein Element angeben, manchmal besteht ein Element jedoch aus mehreren Dateien. Eine Windows Forms-Elementvorlage für Visual Basic erfordert beispielsweise folgende drei Dateien:  
-  
--   Eine VB-Datei, die den Code für das Formular enthält.  
-  
--   Eine DESIGNER.VB-Datei, die die Designer-Informationen für das Formular enthält.  
-  
--   Eine RESX-Datei, die die eingebetteten Ressourcen für das Formular enthält.  
-  
- Elementvorlagen mit mehreren Dateien erfordern Parameter, um sicherzustellen, dass die richtigen Erweiterungen verwendet werden, wenn das Element in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] erstellt wird. Wenn Sie eine Elementvorlage mithilfe des **Assistenten zum Exportieren von Vorlagen** erstellen, werden diese Parameter automatisch generiert, und keine weitere Bearbeitung ist erforderlich. In den folgenden Schritten wird erläutert, wie diese Parameter dafür verwendet werden, das Erstellen der richtigen Erweiterung sicherzustellen.  
-  
-### <a name="to-manually-create-a-multi-file-item-template"></a>Manuelles Erstellen einer Elementvorlage mit mehreren Dateien  
-  
-1.  Erstellen Sie die Elementvorlage wie eine Elementvorlage mit einer einzelnen Datei. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen von Elementvorlagen](../ide/how-to-create-item-templates.md).  
-  
-2.  Fügen Sie jedem `ProjectItem`-Element das `TargetFileName`-Attribut hinzu. Legen Sie die Werte des `TargetFileName`-Attributs auf „$fileinputname$.*Dateierweiterung*“ fest, wobei *Dateierweiterung* der Erweiterung der Datei entspricht, die in die Vorlage eingefügt wird. Zum Beispiel:  
-  
-    ```  
-    <ProjectItem TargetFileName="$fileinputname$.vb">  
-        Form1.vb  
-    </ProjectItem>  
-    <ProjectItem TargetFileName="$fileinputname$.Designer.vb">  
-        Form1.Designer.vb  
-    </ProjectItem>  
-    <ProjectItem TargetFileName="$fileinputname$.resx">  
-        Form1.resx  
-    </ProjectItem>  
-    ```  
-  
-     Wenn ein Element, das von dieser Vorlage abgeleitet wurde, zu einem Projekt hinzugefügt wird, basieren die Dateinamen auf dem Namen, den der Benutzer im Dialogfeld **Neues Element hinzufügen** eingegeben hat.  
-  
-3.  Wählen Sie die Dateien aus, die in die Vorlage eingefügt werden sollen, und klicken Sie mit der rechten Maustaste auf die Auswahl. Klicken Sie dann auf **Senden an** und auf **ZIP-komprimierter Ordner**. Die ausgewählten Dateien werden in einer ZIP-Datei komprimiert.  
-  
-4.  Fügen Sie die ZIP-Datei am Speicherort der Benutzerelementvorlage ein. Standardmäßig ist dies das Verzeichnis \Eigene Dateien\Visual Studio *Version*\Templates\ItemTemplates\\. Weitere Informationen finden Sie unter [Vorgehensweise: Suchen und Organisieren von Projekt- und Elementvorlagen](../ide/how-to-locate-and-organize-project-and-item-templates.md).  
-  
-## <a name="example"></a>Beispiel  
- Das folgende Beispiel zeigt eine [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Windows Forms-Vorlage. Wenn ein Element basierend auf dieser Vorlage erstellt wird, stimmen die Namen der drei erstellten Dateien mit dem Namen überein, der im Dialogfeld **Neues Element hinzufügen** eingegeben wurde.  
-  
-```  
-<VSTemplate Version="2.0.0" Type="Item"  
-    xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">  
-    <TemplateData>  
-        <Name>Multi-file Item Template</Name>  
-        <Icon>Icon.ico</Icon>  
-        <Description>An example of a multi-file item template</Description>  
-        <ProjectType>VisualBasic</ProjectType>  
-    </TemplateData>  
-    <TemplateContent>  
-        <ProjectItem TargetFileName="$fileinputname$.vb" SubType="Form">  
-            Form1.vb  
-        </ProjectItem>  
-        <ProjectItem TargetFileName="$fileinputname$.Designer.vb">  
-            Form1.Designer.vb  
-        </ProjectItem>  
-        <ProjectItem TargetFileName="$fileinputname$.resx">  
-            Form1.resx  
-        </ProjectItem>  
-    </TemplateContent>  
-</VSTemplate>  
-```  
-  
-## <a name="see-also"></a>Siehe auch  
- [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)   
- [Vorgehensweise: Erstellen von Elementvorlagen](../ide/how-to-create-item-templates.md)   
- [Vorlagenparameter](../ide/template-parameters.md)   
- [Gewusst wie: Ersetzen von Parametern in einer Vorlage](../ide/how-to-substitute-parameters-in-a-template.md)
+# <a name="how-to-create-multi-file-item-templates"></a>Vorgehensweise: Erstellen von Elementvorlagen mit mehreren Dateien
+
+Elementvorlagen können nur ein Element angeben, manchmal besteht ein Element jedoch aus mehreren Dateien. Eine Windows Forms-Elementvorlage erfordert beispielsweise folgende drei Dateien:
+
+- Eine Datei, die den Code für das Formular enthält
+
+- Eine Datei, die Designer-Informationen für das Formular enthält
+
+- Eine Datei, die die eingebetteten Ressourcen für das Formular enthält
+
+Elementvorlagen mit mehreren Dateien erfordern Parameter, um sicherzustellen, dass die richtigen Erweiterungen verwendet werden, wenn das Element erstellt wird. Wenn Sie eine Elementvorlage mit mehreren Dateien mithilfe des **Assistenten zum Exportieren von Vorlagen** erstellen, werden diese Parameter automatisch generiert, und keine weitere Bearbeitung ist erforderlich.
+
+## <a name="to-create-a-multi-file-item-template-by-using-the-export-template-wizard"></a>Erstellen einer Elementvorlage mit mehreren Dateien mithilfe des Assistenten zum Exportieren von Vorlagen
+
+Eine Elementvorlage mit mehreren Dateien wird auf dieselbe Weise erstellt, wie eine Elementvorlage mit nur einer Datei. Weitere Informationen dazu finden Sie unter [Vorgehensweise: Erstellen von Elementvorlagen](../ide/how-to-create-item-templates.md). Wählen Sie auf der Seite **Zu exportierendes Element auswählen** die Datei aus, von denen anderen Dateien abhängig sind (z.B. eine Windows Forms-Formulardatei). Der Assistent fügt der Vorlage automatische sämtliche abhängigen Dateien hinzu, z.B. Designer- und Ressourcendateien.
+
+## <a name="to-manually-create-a-multi-file-item-template"></a>Manuelles Erstellen einer Elementvorlage mit mehreren Dateien
+
+1. Erstellen Sie die Elementvorlage auf dieselbe Weise, wie Sie manuell eine Elementvorlage erstellen würden, die nur aus einer Datei besteht. Fügen Sie dabei allerdings jede Datei hinzu, die Bestandteil des Elements mit mehreren Dateien ist.
+
+1. Fügen Sie der VSTEMPLATE-XML-Datei für jede einzelne Datei ein `ProjectItem`-Element hinzu. Fügen Sie anschließen diesem Element ein `TargetFileName`-Attribut hinzu. Legen Sie die Werte des `TargetFileName`-Attributs auf „$fileinputname$.*Dateierweiterung*“ fest, wobei *Dateierweiterung* der Erweiterung der Datei entspricht, die in die Vorlage eingefügt wird. Zum Beispiel:
+
+    ```xml
+    <ProjectItem TargetFileName="$fileinputname$.vb">
+        Form1.vb
+    </ProjectItem>
+    <ProjectItem TargetFileName="$fileinputname$.Designer.vb">
+        Form1.Designer.vb
+    </ProjectItem>
+    <ProjectItem TargetFileName="$fileinputname$.resx">
+        Form1.resx
+    </ProjectItem>
+    ```
+
+     > [!NOTE]
+     > Wenn ein Element, das von dieser Vorlage abgeleitet wurde, einem Projekt hinzugefügt wird, werden die Dateinamen von dem Namen abgeleitet, den der Benutzer im Dialogfeld **Neues Element hinzufügen** eingegeben hat.
+
+1. Wählen Sie die Dateien aus, die in die Vorlage eingefügt werden sollen, und klicken Sie mit der rechten Maustaste auf die Auswahl. Klicken Sie dann auf **Senden an** > **ZIP-komprimierter Ordner**.
+
+   Die ausgewählten Dateien werden in einer ZIP-Datei komprimiert.
+
+1. Kopieren Sie die ZIP-Datei an den Speicherort der Benutzerelementvorlage. Standardmäßig ist dies das Verzeichnis „%USERPROFILE%\Documents\Visual Studio \<Version\>\Templates\ItemTemplates“. Weitere Informationen finden Sie unter [Vorgehensweise: Suchen und Organisieren von Projekt- und Elementvorlagen](../ide/how-to-locate-and-organize-project-and-item-templates.md).
+
+1. Schließen Sie Visual Studio, und öffnen Sie es anschließend erneut.
+
+1. Erstellen Sie ein neues Projekt, oder öffnen Sie ein vorhandenes Projekt, und wählen Sie anschließend **Projekt** > **Neues Element hinzufügen...** aus, oder drücken Sie **STRG** + **UMSCHALT** + **A**.
+
+   Die Elementvorlagen mit mehreren Dateien werden im Dialogfeld **Neues Element hinzufügen** angezeigt.
+
+## <a name="example"></a>Beispiel
+
+Das folgende Beispiel zeigt eine Windows Forms-Vorlage. Wenn ein Element basierend auf dieser Vorlage erstellt wird, stimmen die Namen der drei erstellten Dateien mit dem Namen überein, der im Dialogfeld **Neues Element hinzufügen** eingegeben wurde.
+
+```xml
+<VSTemplate Version="2.0.0" Type="Item"
+    xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+    <TemplateData>
+        <Name>Multi-file Item Template</Name>
+        <Icon>Icon.ico</Icon>
+        <Description>An example of a multi-file item template</Description>
+        <ProjectType>VisualBasic</ProjectType>
+    </TemplateData>
+    <TemplateContent>
+        <ProjectItem TargetFileName="$fileinputname$.vb" SubType="Form">
+            Form1.vb
+        </ProjectItem>
+        <ProjectItem TargetFileName="$fileinputname$.Designer.vb">
+            Form1.Designer.vb
+        </ProjectItem>
+        <ProjectItem TargetFileName="$fileinputname$.resx">
+            Form1.resx
+        </ProjectItem>
+    </TemplateContent>
+</VSTemplate>
+```
+
+## <a name="see-also"></a>Siehe auch
+
+[Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)  
+[Gewusst wie: Erstellen von Elementvorlagen](../ide/how-to-create-item-templates.md)  
+[Vorlagenparameter](../ide/template-parameters.md)  
+[Gewusst wie: Ersetzen von Parametern in einer Vorlage](../ide/how-to-substitute-parameters-in-a-template.md)

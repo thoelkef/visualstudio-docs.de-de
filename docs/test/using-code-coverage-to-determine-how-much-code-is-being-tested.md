@@ -12,14 +12,15 @@ dev_langs:
 - CSharp
 - VB
 - CPP
-ms.author: douge
-manager: douge
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 51c8076ef3166e7f0f887a77399a0edfd5cfc072
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: gewarren
+ms.openlocfilehash: 62a860da6c8f672f5ecd03d3ab97bb9e3ddd3365
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="using-code-coverage-to-determine-how-much-code-is-being-tested"></a>Bestimmen des Umfangs des zu testenden Codes mithilfe von Code Coverage
 Wenn Sie den Anteil des Projektcodes ermitteln möchten, der in codierten Tests wie Komponententests tatsächlich getestet wird, verwenden Sie die Code Coverage-Funktion von Visual Studio. Um sich effektiv vor Fehlern zu schützen, sollten Sie die Tests für den Großteil Ihres Codes ausführen bzw. diesen "abdecken".  
@@ -267,15 +268,16 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
  Nach Ausführung des Builds werden die Code Coverage-Ergebnisse an den Testlauf angefügt und in der Buildzusammenfassung angezeigt.  
   
 ## <a name="analyzing-code-coverage-in-a-command-line"></a>Analysieren der Codeabdeckung in einer Befehlszeile  
- Um Tests über die Befehlszeile auszuführen, verwenden Sie "vstest.console.exe". Die Code Coverage ist eine Option in diesem Hilfsprogramm. Weitere Informationen finden Sie unter [Befehlszeilenoptionen von „VSTest.Console.exe“](/devops-test-docs/test/vstest-console-exe-command-line-options).  
+
+Um Tests über die Befehlszeile auszuführen, verwenden Sie "vstest.console.exe". Die Code Coverage ist eine Option des Hilfsprogramms „vstest.console.exe“.
+
+1.  Starten der Visual Studio Developer-Eingabeaufforderung:
   
-1.  Starten der Visual Studio Developer-Eingabeaufforderung:  
+    Wählen Sie im Windows **Startmenü** **Visual Studio 2017** > **Developer Command Prompt for VS 2017** (Eingabeaufforderung für Entwickler für VS 2017) aus.  
   
-     Wählen Sie im Windows-Menü **Start** nacheinander **Alle Programme**, **Microsoft Visual Studio**, **Visual Studio-Tools** und **Developer-Eingabeaufforderung** aus.  
+2.  Führen Sie den folgenden Befehl aus:
   
-2.  Führen Sie Folgendes aus:  
-  
-     `vstest.console.exe MyTestAssembly.dll /EnableCodeCoverage`  
+    `vstest.console.exe MyTestAssembly.dll /EnableCodeCoverage`  
   
 ## <a name="troubleshooting"></a>Problembehandlung  
  Wenn Sie keine Codeabdeckungsergebnisse sehen, lesen Sie [Problembehandlung bei der Codeabdeckung](../test/troubleshooting-code-coverage.md).  

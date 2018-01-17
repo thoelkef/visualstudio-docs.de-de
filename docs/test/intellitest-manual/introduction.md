@@ -8,16 +8,15 @@ ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords: IntelliTest, Visual Studio IntelliTest developer testing tool
-ms.assetid: A7B98509-7ACA-4E25-BD1B-BBC98742F028
-caps.latest.revision: "56"
-ms.author: douge
-manager: douge
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: a7dac076dabaf0d44a1eda9c267e5c9b2eafe5a5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: gewarren
+ms.openlocfilehash: 65f14d96bd495a1b3f8ca138176fbf805fdfeb67
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="overview-of-microsoft-intellitest"></a>Überblick über Microsoft IntelliTest
 
@@ -56,7 +55,7 @@ IntelliTest findet für das getestete Programm relevante Eingaben. Dies bedeutet
 
 Im untenstehenden Beispiel werden zwei Einschränkungen in einem Parameter mit dem Namen **value** erstellt, sodass IntelliTest die erforderliche Zeichenfolge erzeugt.
 
-```
+```csharp
 using System;
 using Microsoft.Pex.Framework; 
 using Microsoft.VisualStudio.TestTools.UnitTesting; 
@@ -84,10 +83,9 @@ Sobald dieser kompiliert und ausgeführt wurde, erzeugt IntelliTest einen Satz v
 7. "Hello\0World!"
 8. "Hello World!"
 
-[Hier](https://docs.microsoft.com/en-gb/visualstudio/test/generate-unit-tests-for-your-code-with-intellitest#Anchor_0) erfahren Sie, wie die erzeugten Tests gespeichert werden.
-Der erzeugte Testcode sollte einen Test wie den folgenden enthalten:
+Lesen Sie [Generieren von Komponententests für Code mit IntelliTest](../../test/generate-unit-tests-for-your-code-with-intellitest.md), um zu erfahren, wo generierte Tests gespeichert werden. Der erzeugte Testcode sollte einen Test wie den folgenden enthalten:
 
-```
+```csharp
 [TestMethod]
 [PexGeneratedBy(typeof(global::HelloWorldTest))]
 [PexRaisedException(typeof(Exception))]
@@ -99,8 +97,7 @@ public void HelloWorldThrowsException167()
 
 So einfach ist das!
 
-<a name="limitations"></a>
-## <a name="limitations"></a>Einschränkungen
+## <a name="limitations"></a> Einschränkungen
 
 In diesem Abschnitt werden die Einschränkungen von IntelliTest beschrieben:
 
@@ -165,7 +162,7 @@ Da IntelliTest Ausnahmen abfängt und diese in jeder instrumentierten Methode er
 ## <a name="further-reading"></a>Weiterführende Themen
 
 * [Einführender Blogpost](https://blogs.msdn.microsoft.com/visualstudioalm/2014/11/19/introducing-smart-unit-tests/) aus MSDN.
-* [Generieren von Komponententests für Code mit IntelliTest](https://docs.microsoft.com/en-gb/visualstudio/test/generate-unit-tests-for-your-code-with-intellitest)
+* [Generieren von Komponententests für Code mit IntelliTest](../../test/generate-unit-tests-for-your-code-with-intellitest.md)
 
 ## <a name="got-feedback"></a>Sie möchten Feedback geben?
 

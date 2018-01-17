@@ -7,47 +7,39 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: f7e9e4a2-5d01-4f78-b408-5be3892bd162
-caps.latest.revision: "25"
-ms.author: douge
-manager: douge
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 36e235af45e1ce313f2f0e22ab9777d5e205dbe1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: gewarren
+ms.openlocfilehash: 1925152f830d9969c8650fe698be6ebc70e65cf2
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Konfigurieren von Komponententests mithilfe einer .runsettings-Datei
-Komponententests in Visual Studio können mithilfe einer \*.runsettings-Datei konfiguriert werden. (Der Dateiname ist unerheblich, sofern Sie die Erweiterung „.runsettings“ verwenden) Beispielsweise können Sie die .NET Framework-Version, auf der die Tests durchgeführt werden, das Verzeichnis, in dem Testergebnisse gespeichert werden, sowie die während eines Testlaufs gesammelten Daten ändern.  
-  
- Wenn Sie keine spezielle Konfiguration einrichten möchten, benötigen Sie keine \*.runsettings-Datei. Sie wird meistens dazu verwendet, die [Code Coverage](../test/customizing-code-coverage-analysis.md) anzupassen.  
-  
-> [!NOTE]
->  **RUNSETTINGS- und TESTSETTINGS-Dateien**  
->   
->  Es gibt zwei Typen oder Dateien für das Konfigurieren von Tests. \**.runsettings-Dateien werden für Komponententests verwendet. \*.testsettings-Dateien werden für [Tests in Laborumgebungen](/devops-test-docs/test/specifying-test-settings-for-visual-studio-tests), Webleistungs- und Auslastungstests sowie für das Anpassen einiger diagnostischer Datenadapter wie beispielsweise Intellitrace und Ereignisprotokolladapter genutzt.  
->   
->  In früheren Editionen von Visual Studio – bis 2010 – wurden Komponententests auch mithilfe von \*.testsettings-Dateien angepasst. Das ist weiterhin möglich. Die Tests laufen jedoch langsamer, als wenn Sie die vergleichbare Konfiguration in einer \*.runsettings-Datei verwenden.  
-  
-## <a name="customizing-tests-with-a-runsettings-file"></a>Anpassen von Tests mit einer .runsetting-Datei  
-  
-1.  Fügen Sie Ihrer Visual Studio-Projektmappe eine XML-Datei hinzu und benennen Sie sie um. (Der Dateiname ist unerheblich, aber die Dateierweiterung muss „.runsettings“ sein.)  
-  
-2.  Ersetzen Sie den Inhalt der Datei durch das [Beispiel](#example).  
-  
-     Bearbeiten Sie ihn Ihren Anforderungen entsprechend.  
-  
-3.  Klicken Sie im Menü **Test** auf **Testeinstellungen**und dann **Datei für Testeinstellungen auswählen**.  
-  
- Sie können mehr als eine \*.runsettings-Datei in der Projektmappe erstellen und im Menü **Testeinstellungen** festlegen, dass die Dateien zu unterschiedlichen Zeitpunkten aktiviert oder deaktiviert werden.  
-  
- ![Aktivieren einer Datei für Laufzeiteinstellungen](../test/media/runsettings-1.png "RunSettings-1")  
-  
-##  <a name="example"></a>Kopieren dieser RUNSETTINGS-Beispieldatei  
- Im Folgenden finden Sie eine typische \*.runsettings-Datei. Jedes Element der Datei ist optional, weil jeder Wert über einen Standardwert verfügt.  
-  
-```xml  
+
+Komponententests in Visual Studio können mithilfe einer \*.runsettings-Datei konfiguriert werden. (Der Dateiname spielt keine Rolle, sofern Sie die Erweiterung „.runsettings“ verwenden.) Beispielsweise können Sie die .NET Framework-Version, auf der die Tests, durchgeführt werden, das Verzeichnis, in dem Testergebnisse gespeichert werden, sowie die während eines Testlaufs erfassten Daten ändern.
+
+Wenn keine spezielle Konfiguration erforderlich sein soll, benötigen Sie keine \*RUNSETTINGS-Datei. \*RUNSETTINGS-Dateien werden häufig verwendet, um die [Code Coverage](../test/customizing-code-coverage-analysis.md) anzupassen.
+
+## <a name="customizing-tests-with-a-runsettings-file"></a>Anpassen von Tests mit einer .runsetting-Datei
+
+1. Fügen Sie Ihrer Visual Studio-Projektmappe eine XML-Datei hinzu und benennen Sie sie um. (Der Dateiname ist unerheblich, aber die Dateierweiterung muss „.runsettings“ sein.)
+
+1. Ersetzen Sie die Dateiinhalte durch das XML aus dem folgenden Beispiel ,und passen Sie es nach Bedarf an.
+
+1. Klicken Sie im Menü **Test** auf **Testeinstellungen** > **Datei für Testeinstellungen auswählen**.
+
+Sie können mehr als eine \*.runsettings-Datei in der Projektmappe erstellen und im Menü **Testeinstellungen** festlegen, dass die Dateien zu unterschiedlichen Zeitpunkten aktiviert oder deaktiviert werden.
+
+![Aktivieren einer Datei für Laufzeiteinstellungen](../test/media/runsettings-1.png "RunSettings-1")
+
+## <a name="example-runsettings-file"></a>Beispiel für eine RUNSETTINGS-Datei
+
+Im Folgenden ist eine typische \*RUNSETTINGS-Datei abgebildet. Jedes Element der Datei ist optional, weil jeder Wert über einen Standardwert verfügt.
+
+```xml
 <?xml version="1.0" encoding="utf-8"?>  
 <RunSettings>  
   <!-- Configurations that affect the Test Framework -->  
@@ -115,15 +107,16 @@ Komponententests in Visual Studio können mithilfe einer \*.runsettings-Datei ko
 </RunSettings>  
 ```  
   
- Die RUNSETTINGS-Datei wird auch zur Konfiguration der [Code Coverage](../test/customizing-code-coverage-analysis.md) verwendet.  
+Die RUNSETTINGS-Datei wird auch zur Konfiguration der [Code Coverage](../test/customizing-code-coverage-analysis.md) verwendet.  
   
- Im verbleibenden Teil dieses Themas wird der Dateiinhalt beschrieben.  
-  
-## <a name="edit-your-runsettings-file"></a>Bearbeiten Sie die .runsettings-Datei  
- Die .runsettings-Datei weist folgende Elemente auf.  
-  
-### <a name="test-run-configuration"></a>Testlaufkonfiguration  
-  
+Im verbleibenden Teil dieses Themas wird der Dateiinhalt beschrieben.  
+
+## <a name="edit-your-runsettings-file"></a>Bearbeiten Sie die .runsettings-Datei
+
+Die .runsettings-Datei weist folgende Elemente auf.
+
+### <a name="test-run-configuration"></a>Testlaufkonfiguration
+
 |Knoten|Standard|Werte|  
 |----------|-------------|------------|  
 |`ResultsDirectory`||Das Verzeichnis, in dem die Testergebnisse gespeichert werden.|  
@@ -133,23 +126,22 @@ Komponententests in Visual Studio können mithilfe einer \*.runsettings-Datei ko
 |`TestAdaptersPaths`||Ein oder mehrere Pfade zu dem Verzeichnis, in dem die Testadapter gespeichert sind.|  
 |`MaxCpuCount`|1|Hiermit wird der Umfang der parallelen Ausführung gesteuert, wenn Komponententests ausgeführt werden, bei denen die auf dem Computer verfügbaren Kerne verwendet werden.  Das Testausführungsmodul startet für jeden verfügbaren Kern einen eigenständigen Prozess und übergibt an jeden Kern einen Container mit auszuführenden Tests, etwa eine Assembly, eine DLL oder ein relevantes Artefakt.  Der Testcontainer ist die Planungseinheit.  In jedem Container werden die Tests entsprechend dem Testframework ausgeführt.  Gibt es viele Container, werden Prozesse, sobald das Ausführen ihrer Tests in einem Container abgeschlossen ist, an den nächsten verfügbaren Container übergeben.<br /><br /> MaxCpuCount kann Folgendes sein:<br /><br /> n, wobei 1 < = n < = Anzahl von Kernen: bis zu n Prozesse werden gestartet.<br /><br /> n, wobei n = beliebiger anderer Wert: die Anzahl von gestarteten Prozessen wird bis zur Anzahl der maximal auf dem Computer verfügbaren Kerne erhöht.|  
   
-### <a name="diagnostic-data-adapters-data-collectors"></a>Adapter für diagnostische Daten (Datensammler)  
- Das `DataCollectors` -Element gibt die Einstellungen von Adaptern für diagnostische Daten an. Adapter für diagnostische Daten werden verwendet, um zusätzliche Informationen zur Umgebung und den getesteten Anwendung zu sammeln. Jeder Adapter verfügt über Standardeinstellungen. Wenn Sie diese nicht verwenden möchten, können Sie andere Einstellungen festlegen.  
-  
-#### <a name="code-coverage-adapter"></a>Codeabdeckungsadapter  
- Der Datensammler der Codeabdeckung erstellt ein Protokoll der Teile des Anwendungscodes, die im Test ausgeführt wurden. Weitere Informationen zum Anpassen der Einstellungen für die Code Coverage finden Sie unter [Anpassen der Codeabdeckungsanalyse](../test/customizing-code-coverage-analysis.md).  
-  
-#### <a name="other-diagnostic-data-adapters"></a>Sonstige Adapter für diagnostische Daten  
- Der Codeabdeckungsadapter ist zurzeit der einzige Adapter, der mithilfe der Testlaufeinstellungsdatei angepasst werden kann.  
-  
- Um andere Typen von Adaptern für diagnostische Daten anzupassen, müssen Sie eine Testeinstellungsdatei verwenden. Weitere Informationen finden Sie unter [Specifying Test Settings for Visual Studio Tests (Angeben von Testeinstellungen für Visual Studio-Tests)](/devops-test-docs/test/specifying-test-settings-for-visual-studio-tests).  
-  
-#### <a name="testrunparameters"></a>TestRunParameters  
- TestRunParameters bieten eine Möglichkeit zum Definieren von Variablen und Werten, die für die Tests zur Laufzeit verfügbar sind.  
-  
-### <a name="mstest-run-settings"></a>MSTest-Testlaufeinstellungen  
- Diese Einstellungen betreffen den Testadapter, der Testmethoden ausführt, die über das `[TestMethod]` -Attribut verfügen.  
-  
+### <a name="diagnostic-data-adapters-data-collectors"></a>Adapter für diagnostische Daten (Datensammler)
+
+Das `DataCollectors` -Element gibt die Einstellungen von Adaptern für diagnostische Daten an. Adapter für diagnostische Daten werden verwendet, um zusätzliche Informationen zur Umgebung und den getesteten Anwendung zu sammeln. Jeder Adapter verfügt über Standardeinstellungen. Wenn Sie diese nicht verwenden möchten, können Sie andere Einstellungen festlegen.
+
+#### <a name="code-coverage-adapter"></a>Codeabdeckungsadapter
+
+Der Datensammler der Codeabdeckung erstellt ein Protokoll der Teile des Anwendungscodes, die im Test ausgeführt wurden. Weitere Informationen zum Anpassen der Einstellungen für die Code Coverage finden Sie unter [Anpassen der Codeabdeckungsanalyse](../test/customizing-code-coverage-analysis.md).
+
+### <a name="testrunparameters"></a>TestRunParameters
+
+TestRunParameters bieten eine Möglichkeit zum Definieren von Variablen und Werten, die für die Tests zur Laufzeit verfügbar sind.  
+
+### <a name="mstest-run-settings"></a>MSTest-Testlaufeinstellungen
+
+Diese Einstellungen betreffen den Testadapter, der Testmethoden ausführt, die über das `[TestMethod]` -Attribut verfügen.  
+
 |Konfiguration|Standard|Werte|  
 |-------------------|-------------|------------|  
 |ForcedLegacyMode|False|In Visual Studio 2012 wurde der MSTest-Adapter für eine schnellere Geschwindigkeit und bessere Skalierbarkeit optimiert. Einige Verhalten, z. B. die Reihenfolge der Testausführung, sind möglicherweise nicht mehr so präzise wie in den vorherigen Versionen von Visual Studio. Legen Sie diesen Wert auf `true` fest, um den älteren Testadapter zu verwenden.<br /><br /> Beispielsweise können Sie diesen verwenden, wenn Sie eine app.config-Datei für einen Komponententest angegeben haben.<br /><br /> Eventuell sollten Sie in Betracht ziehen, die Tests so umzugestalten, dass Sie den späteren Adapter verwenden können.|  
@@ -162,7 +154,7 @@ Komponententests in Visual Studio können mithilfe einer \*.runsettings-Datei ko
 |MapInconclusiveToFailed|False|Wenn ein Test einen nicht eindeutigen Status zurückgibt, wird er normalerweise dem Status "Übersprungen" im Test-Explorer zugeordnet. Wenn nicht eindeutige Tests als "Fehlgeschlagen" angezeigt werden sollen, verwenden Sie diese Konfiguration.|  
 |InProcMode|False|Wenn die Tests im selben Prozess wie der MSTest-Adapter ausgeführt werden sollen, legen Sie diesen Wert auf "true" fest. Diese Einstellung führt zu einer geringen Leistungssteigerung. Wenn ein Test allerdings mit einer Ausnahme beendet wird, werden die anderen Tests nicht fortgesetzt.|  
 |AssemblyResolution|False|Sie können Pfade zu weiteren Assemblys angeben, wenn Komponententests gefunden und ausgeführt werden.  Verwenden Sie z. B. diese Pfade für Abhängigkeitsassemblys, die sich nicht im selben Verzeichnis wie die Testassembly befinden.  Um einen Pfad anzugeben, verwenden Sie ein „Directory Path“-Element.  Pfade können Umgebungsvariablen enthalten.<br /><br /> `<AssemblyResolution>  <Directory Path>"D:\myfolder\bin\" includeSubDirectories="false"/> </AssemblyResolution>`|  
-  
-## <a name="see-also"></a>Siehe auch  
- [Anpassen der Code Coverage-Analyse](../test/customizing-code-coverage-analysis.md)   
- [Angeben von Testeinstellungen für Tests mit Visual Studio](/devops-test-docs/test/specifying-test-settings-for-visual-studio-tests)
+
+## <a name="see-also"></a>Siehe auch
+
+[Anpassen der Code Coverage-Analyse](../test/customizing-code-coverage-analysis.md)  

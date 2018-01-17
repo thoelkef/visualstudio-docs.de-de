@@ -19,14 +19,14 @@ author: kempb
 ms.author: kempb
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 931ccda0fd42a01c9afe272ef985380bc3276e6a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 772134090da6db5152ad855c1c5620f9e267b29f
+ms.sourcegitcommit: fb73b56d45ebc0386cd4de1a706ba9e20c59daf1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="common-msbuild-project-items"></a>Gemeinsame MSBuild-Projektelemente
-In [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ist ein Element ein benannter Verweis auf eine oder mehrere Dateien. Elemente enthalten Metadaten wie Dateinamen, Pfade und Versionsnummern. Alle Projekttypen in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] haben mehrere Elemente gemeinsam. Diese Elemente werden in der Datei microsoft.build.commontypes.xsd definiert.  
+In [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ist ein Element ein benannter Verweis auf eine oder mehrere Dateien. Elemente enthalten Metadaten wie Dateinamen, Pfade und Versionsnummern. Alle Projekttypen in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] haben mehrere Elemente gemeinsam. Diese Elemente werden in der Datei „Microsoft.Build.CommonTypes.xsd“ definiert.  
   
 ## <a name="common-items"></a>Gemeinsame Elemente  
  In der folgenden Liste werden alle gemeinsamen Projektelemente aufgeführt.  
@@ -34,7 +34,7 @@ In [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
 ### <a name="reference"></a>Verweis  
  Stellt einen Assemblyverweis (verwaltet) im Projekt dar.  
   
-|Elementname|description|  
+|Elementmetadatenname|description|  
 |---------------|-----------------|  
 |HintPath|Optionale Zeichenfolge. Relativer oder absoluter Pfad der Assembly.|  
 |name|Optionale Zeichenfolge. Der Anzeigename der Assembly, z. B. "System.Windows.Forms".|  
@@ -46,7 +46,7 @@ In [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
 ### <a name="comreference"></a>COMReference  
  Stellt einen COM-Komponentenverweis (nicht verwaltet) im Projekt dar.  
   
-|Elementname|description|  
+|Elementmetadatenname|description|  
 |---------------|-----------------|  
 |name|Optionale Zeichenfolge. Der Anzeigename der Komponente.|  
 |GUID|Optionale Zeichenfolge. Eine GUID für die Komponente im Format {12345678-1234-1234-1234-1234567891234}.|  
@@ -59,14 +59,14 @@ In [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
 ### <a name="comfilereference"></a>COMFileReference  
  Stellt eine Liste von Typbibliotheken dar, die an das ResolvedComreference-Ziel übertragen werden.  
   
-|Elementname|description|  
+|Elementmetadatenname|description|  
 |---------------|-----------------|  
 |WrapperTool|Optionale Zeichenfolge. Der Name des Wrappertools, das auf die Komponente angewendet wird, z. B. "tlbimp".|  
   
 ### <a name="nativereference"></a>NativeReference  
  Stellt eine systemeigene Manifestdatei oder einen Verweis auf eine solche Datei dar.  
   
-|Elementname|description|  
+|Elementmetadatenname|description|  
 |---------------|-----------------|  
 |name|Erforderliche Zeichenfolge. Der Basisname der Manifestdatei.|  
 |HintPath|Erforderliche Zeichenfolge. Der relative Pfad der Manifestdatei.|  
@@ -74,7 +74,7 @@ In [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
 ### <a name="projectreference"></a>ProjectReference  
  Stellt einen Verweis auf ein anderes Projekt dar.  
   
-|Elementname|description|  
+|Elementmetadatenname|description|  
 |---------------|-----------------|  
 |name|Optionale Zeichenfolge. Der Anzeigename des Verweises.|  
 |Projekt|Optionale Zeichenfolge. Eine GUID für den Verweis im Format {12345678-1234-1234-1234-1234567891234}.|  
@@ -83,7 +83,7 @@ In [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
 ### <a name="compile"></a>Compile  
  Stellt die Quelldateien für den Compiler dar.  
   
-|Elementname|description|  
+|Elementmetadatenname|description|  
 |---------------|-----------------|  
 |DependentUpon|Optionale Zeichenfolge. Gibt die Datei an, von der diese Datei abhängt, um ordnungsgemäß zu kompilieren.|  
 |AutoGen|Optionaler boolescher Wert. Gibt an, ob die Datei für das Projekt von der integrierten [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Entwicklungsumgebung (IDE) generiert wurde.|  
@@ -94,7 +94,7 @@ In [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
 ### <a name="embeddedresource"></a>EmbeddedResource  
  Stellt Ressourcen dar, die in die generierte Assembly eingebettet werden.  
   
-|Elementname|description|  
+|Elementmetadatenname|description|  
 |---------------|-----------------|  
 |DependentUpon|Optionale Zeichenfolge. Gibt die Datei an, von der diese Datei abhängt, um ordnungsgemäß zu kompilieren.|  
 |Generator|Erforderliche Zeichenfolge. Der Name eines die oft ausgegebene Befehlszeilen  Datei-Generators, der über diesem Element ausgeführt wird.|  
@@ -108,7 +108,7 @@ In [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
 ### <a name="content"></a>Inhalt  
  Stellt Dateien dar, die zwar nicht in das Projekt kompiliert werden, jedoch möglicherweise mit dem Projekt eingebettet oder veröffentlicht werden.  
   
-|Elementname|description|  
+|Elementmetadatenname|description|  
 |---------------|-----------------|  
 |DependentUpon|Optionale Zeichenfolge. Gibt die Datei an, von der diese Datei abhängt, um ordnungsgemäß zu kompilieren.|  
 |Generator|Erforderliche Zeichenfolge. Der Name eines die oft ausgegebene Befehlszeilen  Datei-Generators, der über diesem Element ausgeführt wird.|  
@@ -123,7 +123,7 @@ In [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
 ### <a name="none"></a>Keiner  
  Stellt Dateien dar, die keine Rolle im Buildprozess haben sollen.  
   
-|Elementname|description|  
+|Elementmetadatenname|description|  
 |---------------|-----------------|  
 |DependentUpon|Optionale Zeichenfolge. Gibt die Datei an, von der diese Datei abhängt, um ordnungsgemäß zu kompilieren.|  
 |Generator|Erforderliche Zeichenfolge. Der Name eines die oft ausgegebene Befehlszeilen  Datei-Generators, der über diesem Element ausgeführt wird.|  

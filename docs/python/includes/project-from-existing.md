@@ -6,7 +6,7 @@
 
     ![Neues Projekt aus vorhandenem Code – Schritt 1](../media/projects-from-existing-1.png)
 
-1. Wählen Sie im nächsten Dialogfeld die Startdatei für Ihr Projekt aus, und klicken Sie auf **Weiter**. (Falsch gewünscht, wählen Sie eine Umgebung aus. Akzeptieren Sie andernfalls die Standardwerte.) Beachten Sie, dass das Dialogfeld nur Dateien im Stammordner anzeigt. Wenn die gewünschte Datei sich in einem Unterordner befindet, geben Sie keine Startdatei an, und legen Sie sie später im Projektmappen-Explorer fest (siehe unten). 
+1. Wählen Sie im nächsten Dialogfeld die Startdatei für Ihr Projekt aus, und klicken Sie auf **Weiter**. (Falsch gewünscht, wählen Sie eine Umgebung aus. Akzeptieren Sie andernfalls die Standardwerte.) Beachten Sie, dass das Dialogfeld nur Dateien im Stammordner anzeigt. Wenn die gewünschte Datei sich in einem Unterordner befindet, geben Sie keine Startdatei an, und legen Sie sie später im Projektmappen-Explorer fest (siehe unten).
 
     ![Neues Projekt aus vorhandenem Code – Schritt 2](../media/projects-from-existing-2.png)
 
@@ -14,6 +14,6 @@
 
     ![Neues Projekt aus vorhandenem Code – Schritt 3](../media/projects-from-existing-3.png)
 
-1.  Klicken Sie auf **Fertig stellen**. Visual Studio erstellt nun das Projekt und öffnet es im Projektmappen-Explorer. Wenn Sie die `.pyproj`-Datei an eine andere Stelle verschieben möchten, wählen Sie sie im Projektmappen-Explorer aus, und wählen Sie **Datei > Speichern unter**. Diese Aktion aktualisiert Dateiverweise im Projekt, verschiebt aber keine Codedateien.
+1. Klicken Sie auf **Fertig stellen**. Visual Studio erstellt nun das Projekt und öffnet es im Projektmappen-Explorer. Wenn Sie die `.pyproj`-Datei an eine andere Stelle verschieben möchten, wählen Sie sie im Projektmappen-Explorer aus, und wählen Sie **Datei > Speichern unter**. Diese Aktion aktualisiert Dateiverweise im Projekt, verschiebt aber keine Codedateien.
 
 1. Um eine andere Startdatei festzulegen, suchen Sie die Datei im Projektmappen-Explorer, führen Sie einen Rechtsklick aus, und wählen Sie **Als Startdatei festlegen**.

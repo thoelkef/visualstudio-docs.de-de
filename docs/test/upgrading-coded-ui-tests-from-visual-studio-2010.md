@@ -7,16 +7,15 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 11232a83-73ea-46bd-bc0c-46f74f6e3a42
-caps.latest.revision: "33"
-ms.author: douge
-manager: douge
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: a24166bb88737699dc3b853cf7a821649acbc118
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: gewarren
+ms.openlocfilehash: 9e89ff364b0b10ee85be6fdd98d3e328f8c337ee
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="upgrading-coded-ui-tests-from-visual-studio-2010"></a>Upgrade der Tests der programmierten UI von Visual Studio 2010
 Tests der programmierten UI enthalten Testprojekte, die in [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] SP1 erstellt wurden, werden unbeaufsichtigt repariert, wenn sie in Visual Studio 2012 oder höher geöffnet werden. Wenn Testprojekte in das Quellsteuerelement eingecheckt werden, werden die Projektdateien für diese Reparatur ausgecheckt. Nach der Reparatur können die Tests der programmierten UI enthaltende Testprojekte sowohl in [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] SP1 als auch in [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)]verwendet werden.  
@@ -64,9 +63,9 @@ Tests der programmierten UI enthalten Testprojekte, die in [!INCLUDE[vs_dev10_lo
   
 -   **Auslastungstest:** Wenn Sie einen Auslastungstest zusammen mit einem Netzwerktyp ausführen, der nicht dem LAN-Profil auf einem Computer unter Windows 8 entspricht, führt der Netzwerkemulatortreiber dazu, dass das Betriebssystem abstürzt. Weitere Informationen finden Sie unter [KB-Artikel 2736182](http://support.microsoft.com/kb/2736182).  
   
-## <a name="see-also"></a>Siehe auch  
- [Portieren, Migrieren und Upgraden von Visual Studio-Projekten](../porting/port-migrate-and-upgrade-visual-studio-projects.md)   
- [Upgrading Tests from Earlier Versions of Visual Studio (Upgrade der Tests von früheren Visual Studio-Versionen)](http://msdn.microsoft.com/en-us/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52)   
- [Verwenden von Benutzeroberflächenautomatisierung zum Testen des Codes](../test/use-ui-automation-to-test-your-code.md)   
- [Generieren eines Tests der programmierten UI aus einer vorhandenen Aktionsaufzeichnung](/devops-test-docs/test/generating-a-coded-ui-test-from-an-existing-action-recording)   
- [Unterstützte Konfigurationen und Plattformen für Tests der programmierten UI und Aktionsaufzeichnungen](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+## <a name="see-also"></a>Siehe auch
+
+[Portieren, Migrieren und Upgraden von Visual Studio-Projekten](../porting/port-migrate-and-upgrade-visual-studio-projects.md)  
+[Upgrading Tests from Earlier Versions of Visual Studio (Upgrade der Tests von früheren Visual Studio-Versionen)](http://msdn.microsoft.com/en-us/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52)  
+[Verwenden von Benutzeroberflächenautomatisierung zum Testen des Codes](../test/use-ui-automation-to-test-your-code.md)  
+[Unterstützte Konfigurationen und Plattformen für Tests der programmierten UI und Aktionsaufzeichnungen](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

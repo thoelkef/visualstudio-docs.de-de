@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 25e4397ac3f3b2a8191dc9d9850f643e0be3d539
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 2542ce19d51dd3aa3031c71da3c23f7ec73ac240
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="profiling-feature-tour"></a>Tour zur Profilerstellungsfunktion
 
@@ -147,7 +147,8 @@ Wenn Sie Funktionen wie z.B. Instrumentation benötigen, die derzeit nicht in de
 
 ![Tool „Leistungs-Explorer“](../profiling/media/prof-tour-performance-explorer.png "Leistungs-Explorer")
 
-## <a name="which-tool-should-i-use"></a>Welches Tool soll ich verwenden?  
+## <a name="tool_support_info"></a>Welches Tool soll ich verwenden?  
+
 Hier sehen Sie eine Tabelle, in der die verschiedenen Tools aufgelistet sind, die Visual Studio anbietet sowie die verschiedenen Projekttypen, die Sie mit diesen verwenden können:
   
 |Leistungstool|Windows-Desktop|Windows Universell/Store|ASP.NET/ASP.NET Core|  
@@ -158,7 +159,7 @@ Hier sehen Sie eine Tabelle, in der die verschiedenen Tools aufgelistet sind, di
 |[Anwendungszeitachse](../profiling/application-timeline.md)|ja|ja|Nein|  
 |[PerfTips](../profiling/perftips.md)|ja|ja für XAML, nicht für HTML|ja|  
 |[Leistungs-Explorer](../profiling/performance-explorer.md)|ja|Nein|Ja (Nein für ASP.NET Core)|  
-|[IntelliTrace](../debugger/intellitrace.md)|nur .NET Enterprise|nur .NET Enterprise|nur .NET Enterprise|
+|[IntelliTrace](../debugger/intellitrace.md)|Nur .NET und Visual Studio Enterprise|Nur .NET und Visual Studio Enterprise|Nur .NET und Visual Studio Enterprise|
 |[Netzwerkverwendung](../profiling/network-usage.md)|Nein|ja|Nein| 
 |[HTML UI responsiveness](../profiling/html-ui-responsiveness.md)|Nein|ja für HTML, nicht für XAML|Nein|  
 |[JavaScript-Speicher](../profiling/javascript-memory.md)|Nein|ja für HTML, nicht für XAML|Nein|  
