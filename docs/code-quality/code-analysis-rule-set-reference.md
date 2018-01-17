@@ -14,14 +14,14 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: f396bb289e7e4288dbb80c6e08990960861e970c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 9e132146ce1ae19e95a7e8f6974dab25be38db5b
+ms.sourcegitcommit: d922eabedbeaedccecc5ca497ff12eb1f37933f1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="code-analysis-rule-set-reference"></a>Codeanalyse-Regelsatzreferenz
-Beim Konfigurieren der Codeanalyse für Projekte mit verwaltetem Code in [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)], [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)], oder [!INCLUDE[vsPro](../code-quality/includes/vspro_md.md)]eine Liste mit integrierten Clientanzahl *-Regelsätze*. Sie können entweder einen der Standardregelsätze verwenden oder Sie können einen Regelsatz an Ihre projektanforderungen anpassen anpassen.  
+Beim Konfigurieren der Codeanalyse für Projekte mit verwaltetem Code in [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)], [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)], oder [!INCLUDE[vsPro](../code-quality/includes/vspro_md.md)] eine Liste mit integrierten Clientanzahl *-Regelsätze*. Sie können entweder einen der Standardregelsätze verwenden oder Sie können einen Regelsatz an Ihre projektanforderungen anpassen anpassen.  
   
 ## <a name="available-rule-sets"></a>Verfügbare Regelsätze  
  In der folgenden Tabelle sind die Standardregelsätze aufgeführt:  
