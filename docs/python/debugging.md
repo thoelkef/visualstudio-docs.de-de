@@ -12,12 +12,14 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.workload: python
-ms.openlocfilehash: 9770a484c6949695641234a96d8b5a6cdb3c645b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- python
+- data-science
+ms.openlocfilehash: 9a260001e661c9d6d0f9a1b472caa07c25637ff7
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="debugging-your-python-code"></a>Debuggen von Python-Code
 
@@ -31,7 +33,7 @@ In diesem Thema:
 
 - [Debuggen – Grundlagen](#basic-debugging)
 - [Projektbezogene Debugoptionen](#project-debugging-options)
-- [Das Fenster zum interaktiven Debuggen](#the-debug-interactive-window)
+- [Direktfenster und interaktive Fenster](#immediate-and-interactive-windows)
 
 Weitere Informationen finden Sie auch in den folgenden szenariospezifischen Themen:
 
@@ -163,6 +165,7 @@ Standardmäßig startet der Debugger Ihr Programm mit dem Python-Standardstartpr
 | Umgebungsvariablen | In diesem mehrzeiligen Textfeld fügen Sie Einträge in der Form `NAME=VALUE` hinzu. Diese Einstellung wird als letztes, zusätzlich zu allen vorhandenen globalen Umgebungsvariablen und nach dem Festlegen von `PYTHONPATH` gemäß der Einstellung für Suchpfade angewendet. Daher kann sie zum manuellen Überschreiben all dieser anderen Variablen verwendet werden. |
 
 <a name="the-debug-interactive-window"</a>
+
 ## <a name="immediate-and-interactive-windows"></a>Direktfenster und interaktive Fenster
 
 Es gibt zwei interaktive Fenster, die Sie während einer Debugsitzung verwenden können: das standardmäßige Visual Studio-Direktfenster und das interaktive Python-Debugfenster.

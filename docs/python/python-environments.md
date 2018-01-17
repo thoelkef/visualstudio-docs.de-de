@@ -13,11 +13,11 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload: python
-ms.openlocfilehash: bd871b1e78878c8ae05cb69e1ac97d50197a18b4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 4f190d02850f1effc9e1597d14fecf323de68356
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="python-environments"></a>Python-Umgebungen
 
@@ -53,7 +53,7 @@ Außer bei Visual Studio 2017 umfasst die Python-Unterstützung keinen Python-In
 | Interpreter | description |
 | --- | --- |
 | [CPython](https://www.python.org/) | Der „native“ und am häufigsten verwendete Interpreter, verfügbar in 32- und 64-Bit-Versionen (32-Bit wird empfohlen). Er umfasst die neuesten Sprachfeatures, die maximale Python-Paketkompatibilität, vollständige Unterstützung für das Debuggen und Interoperabilität mit [IPython](http://ipython.org/). Siehe auch: [Should I use Python 2 or Python 3? (Sollte ich Python 2 oder Python 3 verwenden?)](http://wiki.python.org/moin/Python2orPython3). Beachten Sie, dass Visual Studio 2015 und frühere Versionen Python 3.6 nicht unterstützen, und den Fehler „Unsupported python version 3.6“ (Nicht unterstützte Python-Version 3.6) ausgeben können. Verwenden Sie stattdessen Python 3.5 oder frühere Versionen. |
-| [IronPython](https://github.com/IronLanguages/main) | Eine .NET-Implementierung von Python, verfügbar in 32-Bit- und 64-Bit-Versionen, die C#-/F#-/Visual Basic-Interoperabilität, Zugriff auf .NET APIs, Python-Standarddebuggen (jedoch kein C++-Debuggen im gemischten Modus) und IronPython-/C#-Debuggen im gemischten Modus bietet. IronPython unterstützt jedoch keine virtuelle Umgebungen. | 
+| [IronPython](https://github.com/IronLanguages/ironpython2) | Eine .NET-Implementierung von Python, verfügbar in 32-Bit- und 64-Bit-Versionen, die C#-/F#-/Visual Basic-Interoperabilität, Zugriff auf .NET APIs, Python-Standarddebuggen (jedoch kein C++-Debuggen im gemischten Modus) und IronPython-/C#-Debuggen im gemischten Modus bietet. IronPython unterstützt jedoch keine virtuelle Umgebungen. |
 | [Anaconda](https://www.continuum.io) | Eine offene Data Science-Plattform, die von Python unterstützt wird und die neueste Version von CPython sowie die meisten der nicht leicht zu installierenden Pakete enthält. Wir empfehlen diesen Interpreter, wenn keine andere Entscheidung möglich ist. |
 | [PyPy](http://www.pypy.org/) | Eine leistungsstarke JIT-Implementierung für die Ablaufverfolgung von Python, die gut für Programme mit langer Ausführungszeit und Situationen, in denen Sie Leistungsprobleme identifizieren, jedoch keine anderen Lösungen finden können, geeignet ist. Der Interpreter kann mit Visual Studio verwendet werden, bietet jedoch nur eingeschränkte Unterstützung für erweiterte Debugfunktionen. |
 | [Jython](http://www.jython.org/) | Eine Implementierung von Python auf der Java Virtual Machine (JVM). Ähnlich wie bei IronPython kann in Jython ausgeführter Code mit Java-Klassen und -Bibliotheken interagieren, aber möglicherweise viele für CPython vorgesehene Bibliotheken nicht verwenden. Der Interpreter kann mit Visual Studio verwendet werden, bietet jedoch nur eingeschränkte Unterstützung für erweiterte Debugfunktionen. |
@@ -73,7 +73,7 @@ In jedem Fall wird das Fenster „Python-Umgebungen“ als gleichgeordnete Regis
 
 ![Fenster „Python-Umgebungen“](media/environments-default-view.png)
 
-Im Beispiel oben wird Python 3.4 (32-Bit-CPython) zusammen mit den 32-Bit- und 64-Bit-Versionen von IronPython 2.7 installiert. In diesem Fall ist die fettgedruckte Standardumgebung Python 3.4, die für alle neuen Projekte verwendet wird. Wenn keine Umgebungen angezeigt werden, bedeutet dies, dass Sie Python-Tools für Visual Studio in Visual Studio 2015 oder früher installiert haben, aber noch keinen Python-Interpreter (siehe [Auswählen und Installieren von Python-Interpretern](#selecting-and-installing-python-interpreters) oben). 
+Im Beispiel oben wird Python 3.4 (32-Bit-CPython) zusammen mit den 32-Bit- und 64-Bit-Versionen von IronPython 2.7 installiert. In diesem Fall ist die fettgedruckte Standardumgebung Python 3.4, die für alle neuen Projekte verwendet wird. Wenn keine Umgebungen angezeigt werden, bedeutet dies, dass Sie Python-Tools für Visual Studio in Visual Studio 2015 oder früher installiert haben, aber noch keinen Python-Interpreter (siehe [Auswählen und Installieren von Python-Interpretern](#selecting-and-installing-python-interpreters) oben).
 
 > [!Tip]
 > Wenn das Fenster **Python-Umgebungen** schmal ist, wie oben dargestellt ist, werden die Umgebungen oben und die verschiedenen Registerkarten unten aufgeführt. Wenn Sie das Fenster jedoch ausreichend erweitern, wird die Ansicht in eine breite Ansicht geändert, in der Sie möglicherweise bequemer arbeiten können.
@@ -161,7 +161,7 @@ Im letzteren Fall muss Visual Studio `pip install` erhöht ausführen, damit es 
 
 **Jetzt Rechte erweitern** erteilt Administratorrechte an „pip“ für einen einzigen Vorgang, auch gemäß Aufforderungen des Betriebssystems nach Berechtigungen. Wenn Sie **Ohne Administratorberechtigungen fortfahren** auswählen, wird die Installation des Pakets versucht, „pip“ schlägt allerdings beim Erstellen von Ordnern fehl. Die Ausgabe kann z.B. so aussehen: „error: could not create 'C:\Program Files\Anaconda3\Lib\site-packages\png.py': Permission denied“ (Fehler: 'C:\Programme\Anaconda3\Lib\site-packages\png.py' konnte nicht erstellt werden: Berechtigung verweigert).
 
-Wenn Sie **Beim Installieren oder Entfernen von Paketen immer Rechte erweitern** auswählen, wird verhindert, dass das Dialogfeld für die entsprechende Umgebung angezeigt wird. Wenn Sie möchten, dass das Dialogfeld wieder angezeigt wird, gehen Sie zu **Extras > Optionen > Python Tools > Allgemein**, und klicken Sie auf die Schaltfläche **Alle dauerhaft ausgeblendeten Dialogfelder zurücksetzen**. 
+Wenn Sie **Beim Installieren oder Entfernen von Paketen immer Rechte erweitern** auswählen, wird verhindert, dass das Dialogfeld für die entsprechende Umgebung angezeigt wird. Wenn Sie möchten, dass das Dialogfeld wieder angezeigt wird, gehen Sie zu **Extras > Optionen > Python Tools > Allgemein**, und klicken Sie auf die Schaltfläche **Alle dauerhaft ausgeblendeten Dialogfelder zurücksetzen**.
 
 Auf der gleichen Optionsregisterkarte können Sie auf **" pip" immer als Administrator ausführen** klicken, um das Dialogfeld für alle Umgebungen zu unterdrücken. Weitere Informationen finden Sie unter [Optionen > Registerkarte „Allgemein“](options.md#general-options).
 
@@ -247,13 +247,13 @@ Eigentlich kann jeder Dateiname zum Nachverfolgen von Anforderungen verwendet we
 
     ![Optionen für die Aktualisierung von „requirements.txt“](media/environments-requirements-txt-replace.png)
 
-    - **Gesamte Datei ersetzen** entfernt alle vorhandenen Elemente, Kommentare und Optionen.
-    - **Vorhandene Einträge aktualisieren** erkennt Paketanforderungen und aktualisiert die Versionsbezeichner entsprechend der derzeit installierten Version.
-    - **Aktualisieren und Einträge hinzufügen** aktualisiert alle gefundenen Anforderungen und fügt alle anderen Pakete am Ende der Datei hinzu.
+  - **Gesamte Datei ersetzen** entfernt alle vorhandenen Elemente, Kommentare und Optionen.
+  - **Vorhandene Einträge aktualisieren** erkennt Paketanforderungen und aktualisiert die Versionsbezeichner entsprechend der derzeit installierten Version.
+  - **Aktualisieren und Einträge hinzufügen** aktualisiert alle gefundenen Anforderungen und fügt alle anderen Pakete am Ende der Datei hinzu.
 
 Da mit `requirements.txt`-Dateien die Anforderungen des Projekts fixiert werden sollen, werden alle installierten Pakete mit genauen Versionen aufgeführt. Wenn Sie genaue Versionen verwenden, wird sichergestellt, dass Sie Ihre Umgebung leicht auf einem anderen Computer reproduzieren können. Pakete werden aufgenommen, selbst wenn sie mit einem Versionsbereich, als Abhängigkeit von einem anderen Paket oder mit einen anderen Installationsprogramm als pip installiert wurden.
 
-Wenn Sie eine neue virtuelle Umgebung hinzufügen und eine ` requirements.txt`-Datei vorhanden ist, zeigt das Dialogfeld **Virtuelle Umgebung hinzufügen** eine Option an, um die Pakete automatisch zu installieren. Auf diese Weise kann eine Umgebung leicht auf einem anderen Computer neu erstellt werden:
+Wenn Sie eine neue virtuelle Umgebung hinzufügen und eine `requirements.txt`-Datei vorhanden ist, zeigt das Dialogfeld **Virtuelle Umgebung hinzufügen** eine Option an, um die Pakete automatisch zu installieren. Auf diese Weise kann eine Umgebung leicht auf einem anderen Computer neu erstellt werden:
 
 ![Erstellen einer virtuellen Umgebung mit „requirements.txt“](media/environments-requirements-txt.png)
 

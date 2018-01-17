@@ -17,11 +17,11 @@ caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: aa14730fffbf7c2747f15243590be89dc01a7ceb
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: fab554f50f6d2fcdac92c562333e625dc0eb32f6
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="collections-javascript"></a>Auflistungen (JavaScript)
 Sie können die Auflistungsobjekte [Map](../../javascript/reference/map-object-javascript.md), [Set](../../javascript/reference/set-object-javascript.md) und [WeakMap](../../javascript/reference/weakmap-object-javascript.md) verwenden, um Werte und Objekte zu speichern. Diese Objekte stellen einfache Methoden zum Hinzufügen und Abrufen von Member bereit, indem sie entweder einen Schlüssel oder einen Wert anstelle eines Index verwenden. Um mithilfe eines Index auf Member einer Auflistung zuzugreifen, verwenden Sie stattdessen ein `Array`-Objekt. Weitere Informationen finden Sie unter [Verwenden von Arrays (JavaScript)](../../javascript/advanced/using-arrays-javascript.md).  
@@ -47,7 +47,7 @@ document.write(m.get(2));
 document.write("<br />");  
   
 m.forEach(function (value, key, mapObj) {  
-    document.write(item.toString() + "<br />");  
+    document.write(value.toString() + "<br />");  
 });  
   
 // Output:  
@@ -71,7 +71,7 @@ s.add(1776);
 s.add("founding father");  
   
 s.forEach(function (value) {  
-    document.write(item.toString() + ", ");  
+    document.write(value.toString() + ", ");  
 });  
   
 // Output:  

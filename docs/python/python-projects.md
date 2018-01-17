@@ -13,15 +13,15 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload: python
-ms.openlocfilehash: b9762a3ce0a448fdf2b9e2d2b6127e7565187f70
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 6fe63cd9258c5baf9509bb68d4258e839ebe75f0
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="python-projects"></a>Python-Projekte
 
-Python-Anwendungen werden in der Regel nur mit Ordnern und Dateien definiert, aber diese Struktur kann bei größeren Anwendungen, die vielleicht automatisch generierte Dateien, JavaScript für Webanwendungen usw. einbeziehen, komplex werden. Um diese Komplexität in den Griff zu bekommen, können Sie Visual Studio-Projekte für Python-Anwendungen erstellen. Ein Python-Projekt (eine `.pyproj`-Datei) identifiziert alle Quell- und Inhaltsdateien des Projekts, enthält Buildinformationen für jede Datei, verwaltet die Informationen zur Integration in Quellcodeverwaltungssysteme und hilft Ihnen, Ihre Anwendung in logischen Komponenten zu organisieren.
+Python-Anwendungen werden in der Regel nur mit Ordnern und Dateien definiert, aber diese Struktur kann bei größeren Anwendungen, die vielleicht automatisch generierte Dateien, JavaScript für Webanwendungen usw. einbeziehen, komplex werden. Ein Visual Studio-Projekt kann Sie beim Verwalten dieser komplexen Struktur unterstützen. Das Python-Projekt (eine `.pyproj`-Datei) identifiziert alle Quell- und Inhaltsdateien des Projekts, enthält Buildinformationen für jede Datei, verwaltet die Informationen zur Integration in Quellcodeverwaltungssysteme und unterstützt Sie beim Organisieren Ihrer Anwendung in logische Komponenten.
 
 Darüber hinaus werden Projekte immer in einer Visual Studio-*Projektmappe* verwaltet, die eine beliebige Anzahl von Projekten enthalten kann, die möglicherweise aufeinander verweisen. Ein Python-Projekt kann z.B. auf ein C++-Projekt für ein Erweiterungsmodul verweisen, sodass Visual Studio (falls erforderlich) automatisch das C++-Projekt erstellt, wenn Sie mit dem Debuggen des Python-Projekts beginnen. (Eine allgemeine Erörterung finden Sie unter [Projektmappen und Projekte in Visual Studio](../ide/solutions-and-projects-in-visual-studio.md).)
 
@@ -38,7 +38,7 @@ In diesem Thema:
 
 <a name="lightweight-usage-project-free"</a>
 > [!Tip]
-> Auch ohne Projekt funktioniert Visual Studio gut mit Python-Code, da Sie eine Python-Datei unabhängig öffnen und automatische Vervollständigung, IntellSense und Debuggen (indem Sie mit der rechten Maustaste im Editor klicken und **[Mit|Ohne] Debuggen starten** auswählen) genießen können. Da diese Art von Code immer die globale Standardumgebung verwendet, stellen Sie jedoch möglicherweise falsche Vervollständigungen oder Fehler fest, wenn der Code für eine andere Umgebung vorgesehen ist. Darüber hinaus analysiert Visual Studio alle Dateien und Pakete in dem Ordner, in dem die einzelne Datei geöffnet wird, was sehr viel CPU-Zeit in Anspruch nimmt.
+> Auch ohne ein Projekt können Sie in Visual Studio mit Python-Code arbeiten, da Sie eine Python-Datei unabhängig öffnen und die automatische Vervollständigung, IntelliSense und das Debuggen (indem Sie mit der rechten Maustaste im Editor klicken und dann auf **Starten mit/ohne Debuggen** klicken) nutzen können. Da diese Art von Code immer die globale Standardumgebung verwendet, stellen Sie jedoch möglicherweise falsche Vervollständigungen oder Fehler fest, wenn der Code für eine andere Umgebung vorgesehen ist. Darüber hinaus analysiert Visual Studio alle Dateien und Pakete in dem Ordner, in dem die einzelne Datei geöffnet wird, was sehr viel CPU-Zeit in Anspruch nimmt.
 >
 > Es ist einfach, ein Visual Studio-Projekt aus vorhandenem Code zu erstellen, wie unten in [Erstellen eines Projekts aus vorhandenen Dateien](#creating-a-project-from-existing-files) beschrieben.
 
@@ -62,15 +62,16 @@ Ein neues Projekt ist immer der standardmäßigen globalen Python-Umgebung zugeo
 ![Aktivieren einer Umgebung für ein Python-Projekt](media/projects-activate-environment.png)
 
 <a name="project-types"</a>
+
 ## <a name="project-templates"></a>Projektvorlagen
 
-Visual Studio bietet Ihnen eine Reihe von Methoden zum Einrichten eines Python-Projekts, entweder von Grund auf oder aus vorhandenem Code. Um eine Vorlage zu verwenden, wählen Sie den Menübefehl **Datei > Neu > Projekt...**, oder klicken Sie mit der rechten Maustaste im Projektmappen-Explorer auf die Projektmappe, und wählen Sie **Hinzufügen > Neues Projekt...**. In beiden Fällen rufen Sie so das folgende Dialogfeld **Neues Projekt** auf. Um Python-spezifische Vorlagen anzuzeigen, suchen Sie entweder nach „Python“, oder wählen Sie den Knoten **Vorlagen > Andere Sprachen > Python**:
+Visual Studio bietet Ihnen eine Reihe von Methoden zum Einrichten eines Python-Projekts, entweder von Grund auf oder aus vorhandenem Code. Um eine Vorlage zu verwenden, wählen Sie den Menübefehl **Datei > Neu > Projekt...**, oder klicken Sie mit der rechten Maustaste im Projektmappen-Explorer auf die Projektmappe, und wählen Sie **Hinzufügen > Neues Projekt...**. In beiden Fällen rufen Sie so das folgende Dialogfeld **Neues Projekt** auf. Suchen Sie entweder nach „Python“, oder klicken Sie auf den Knoten **Installiert > Python**, um Python-spezifische Vorlagen anzuzeigen:
 
 ![Dialogfeld „Neues Projekt“ mit Python-Vorlagen](media/projects-new-project-dialog.png)
 
 Die folgende Tabelle fasst die in Visual Studio 2017 verfügbaren Vorlagen zusammen (nicht alle Vorlagen stehen in allen früheren Versionen zur Verfügung):
 
-| Vorlage | description | 
+| Vorlage | description |
 | --- | --- |
 | [Aus vorhandenem Python-Code](#creating-a-project-from-existing-files) | Erstellt ein Visual Studio-Projekt aus vorhandenem Python-Code in einer Ordnerstruktur.  |
 | Python-Anwendung | Eine grundlegende Projektstruktur für eine neue Python-Anwendung mit einer einzelnen, leeren Quelldatei. Standardmäßig wird das Projekt im Konsoleninterpreter der globalen Standardumgebung ausgeführt, die Sie durch [Zuweisen einer anderen Umgebung](python-environments.md#project-specific-environments) ändern können. |

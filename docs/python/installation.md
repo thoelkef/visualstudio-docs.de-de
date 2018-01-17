@@ -13,11 +13,11 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload: python
-ms.openlocfilehash: cd1ce1ce47705e5e8b63fb3ef7cc36c401503886
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a8136bd3e694ae544b176b8da6bfc2b721eb0c89
+ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="installing-python-support-in-visual-studio-on-windows"></a>Installieren von Python-Unterstützung für Visual Studio auf Windows
 
@@ -27,7 +27,7 @@ Um die Python-Unterstützung für Visual Studio zu installieren, befolgen Sie di
 - [Visual Studio 2015](#visual-studio-2015)
 - [Visual Studio 2013 und früher](#visual-studio-2013-and-earlier)
 
-Für Visual Studio 2015 und früher müssen Sie ebenfalls separat einen Python-Interpreter Ihrer Wahl installieren (Python 3.5 und früher, 3.6 wird nicht unterstützt). Weitere Informationen finden Sie unter [Python-Umgebungen](python-environments.md). Auf dieser Seite sind ebenfalls Anweisungen für das Hinzufügen eines vorhandenen Python-Interpreters zu Visual Studio 2017 enthalten.
+Für Visual Studio 2015 und früher müssen Sie ebenfalls separat einen Python-Interpreter Ihrer Wahl installieren (Python 3.5 und früher – 3.6 wird nicht unterstützt und generiert die Meldung „Unsupported Python version 3.6“ (Nicht unterstützte Python-Version (3.6))). Weitere Informationen finden Sie unter [Python-Umgebungen](python-environments.md). Auf dieser Seite sind ebenfalls Anweisungen für das Hinzufügen eines vorhandenen Python-Interpreters zu Visual Studio 2017 enthalten.
 
 Um die Python-Unterstützung nach den Installationsschritten schnell zu testen, öffnen Sie das interaktive Python-Fenster durch Drücken von ALT-I und Eingabe von `2+2`. Wenn Sie die Ausgabe von `4` nicht sehen, überprüfen Sie Ihre Schritte.
 
@@ -60,10 +60,10 @@ Um die Python-Unterstützung nach den Installationsschritten schnell zu testen, 
 
     ![Optionen zur Python-Entwicklung im Visual Studio-Installationsprogramm](media/installation-python-options.png)
 
-    | Option | description | 
+    | Option | description |
     | --- | --- |
     | Python-Verteilungen | Wählen Sie eine beliebige Kombination aus den 32-Bit- und 64-Bit-Varianten der Python 2-, Python 3-, Anaconda2- und Anaconda3-Verteilungen aus, mit denen Sie arbeiten möchten. Jede enthält den Interpreter, die Runtime und die Bibliotheken der Verteilung. Bei Anaconda handelt es sich um eine offene Data Science-Plattform, die eine große Auswahl an Paketen enthält. (Sie können jederzeit zum Visual Studio-Installer zurückkehren, um Verteilungen hinzuzufügen oder zu entfernen.) |
-    | Unterstützung von Cookiecutter-Vorlagen | Installiert die grafische Benutzeroberfläche von Cookiecutter, um Vorlagen zu ermitteln, Vorlageoptionen einzugeben und Projekte und Dateien zu erstellen. Weitere Informationen finden Sie unter [Verwenden der Cookiecutter-Erweiterung](cookiecutter.md). |
+    | Unterstützung von Cookiecutter-Vorlagen | Installiert die grafische Benutzeroberfläche von Cookiecutter, um Vorlagen zu ermitteln, Vorlagenoptionen einzugeben und Projekte und Dateien zu erstellen. Weitere Informationen finden Sie unter [Verwenden der Cookiecutter-Erweiterung](cookiecutter.md). |
     | Webunterstützung für Python | Installiert Tools für die Webentwicklung einschließlich der Bearbeitungsunterstützung für HTML, CSS und JavaScript sowie Vorlagen für Projekte, die Bottle-, Flask- und Django-Frameworks verwenden. Weitere Informationen finden Sie unter [Python-Webprojektvorlagen](template-web.md). |
     | Python IoT-Unterstützung | Unterstützt die Windows IoT Core-Entwicklung mithilfe von Python. |
     | Native Python-Entwicklungstools | Installiert den C++-Compiler und andere erforderliche Komponenten, um native Erweiterungen für Python zu entwickeln. Weitere Informationen finden Sie unter [Erstellen einer C++-Erweiterung für Python](cpp-and-python.md). |
@@ -83,7 +83,7 @@ Um die Python-Unterstützung nach den Installationsschritten schnell zu testen, 
 
 1. Wählen Sie **Programmiersprachen > Python-Tools für Visual Studio** und dann **Weiter**:
 
-    ![PTVS-Option im Visual Studio 2015-Installationsprogramm](media/installation-vs2015.png)    
+    ![PTVS-Option im Visual Studio 2015-Installationsprogramm](media/installation-vs2015.png)
 
 1. Nach Abschluss der Installation von Visual Studio [installieren Sie einen Python-Interpreter Ihrer Wahl](python-environments.md#selecting-and-installing-python-interpreters). Wenn Sie bereits einen Interpreter installiert haben, gehen Sie zu [Erstellen einer Umgebung für einen vorhandenen Interpreter](python-environments.md#creating-an-environment-for-an-existing-interpreter).
 
@@ -114,11 +114,11 @@ Für Visual Studio 2015 und früher gelten folgende Installationspfade:
 
 Dabei gilt:
 
-- &lt;VS_ver&gt; ist:    
-    - 14.0 für Visual Studio 2015
-    - 12.0 für Visual Studio 2013
-    - 11.0 für Visual Studio 2012
-    - 10.0 für Visual Studio 2010
+- &lt;VS_ver&gt; ist:
+  - 14.0 für Visual Studio 2015
+  - 12.0 für Visual Studio 2013
+  - 11.0 für Visual Studio 2012
+  - 10.0 für Visual Studio 2010
 - &lt;PTVS_ver&gt; ist eine Versionsnummer, z.B. 2.2, 2.1, 2.0, 1.5, 1.1 oder 1.0.
 
 ### <a name="user-specific-installations-15-and-earlier"></a>Benutzerspezifische Installationen (1.5 und früher)

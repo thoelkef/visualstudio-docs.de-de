@@ -14,11 +14,11 @@ ms.author: gewarren
 manager: ghogen
 ms.technology: vs-ide-general
 ms.workload: multiple
-ms.openlocfilehash: 5b6d7f0dc43ca11b6fee4b97d5422b863a7b89f4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 2719ecd60a68de795c51ec4363a9130e4da9019c
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="naming-conventions-for-editorconfig"></a>.NET-Namenskonventionen für EditorConfig
 
@@ -157,7 +157,7 @@ error | Wenn dieses Format nicht eingehalten wird, einen Compilerfehler in der F
 
 Die folgende EDITORCONFIG-Datei enthält eine Namenskonvention, die angibt, dass öffentliche Eigenschaften, Methoden, Felder, Ereignisse und Delegaten großgeschrieben werden müssen. Beachten Sie, dass diese Namenskonvention mehrere Arten von Symbolen angibt, für die die Regel gelten soll, wobei die Werte durch ein Komma getrennt werden.
 
-```
+```EditorConfig
 # Public members must be capitalized (public_members_must_be_capitalized)
 [*.{cs,vb}]
 dotnet_naming_rule.public_members_must_be_capitalized.symbols   = public_symbols
@@ -177,7 +177,7 @@ Der folgende Screenshot zeigt die Auswirkung dieser Namenskonvention im Editor. 
 
 Lassen Sie uns nun den Schweregrad des Verstoßes in `warning` ändern:
 
-```
+```EditorConfig
 dotnet_naming_rule.public_members_must_be_capitalized.severity = warning
 ```
 

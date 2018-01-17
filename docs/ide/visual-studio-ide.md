@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 5b289868d0cc27da76becf62a2bac51f02fa55c2
-ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
+ms.openlocfilehash: d95cbaff8545e67bfadb0c86a256353b3fa23191
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="visual-studio-ide-overview"></a>Übersicht über die Visual Studio-IDE
 
@@ -76,7 +76,7 @@ Visual Studio kann Sie noch in vielen weiteren Punkten unterstützen. Eine detai
 
 ## <a name="install-the-visual-studio-ide"></a>Installieren von Visual Studio-IDE
 
-Laden Sie zum Einstieg Visual Studio herunter und installieren Sie es auf Ihrem System. Sie können es unter [Visual Studio 2017](https://www.visualstudio.com/vs/visual-studio-2017/) herunterladen.
+Laden Sie zum Einstieg Visual Studio herunter und installieren Sie es auf Ihrem System. Sie können es unter [Visual Studio 2017](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) herunterladen.
 
 Visual Studio ist jetzt kompakter als je zuvor! Mit dem modularen Installationsprogramm können Sie *Workloads* auswählen und installieren, die Gruppen von Funktionen sind, die für die bevorzugte Programmiersprache oder Plattform erforderlich sind. Diese Strategie hält den Platzbedarf der Visual Studio-Installation kleiner als je zuvor, d.h. Updates werden auch schneller installiert und aktualisiert.
 

@@ -20,18 +20,20 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 27f298ad0317223e40f6e9a8606aa9b6aed735fb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: f7db5fbeee13d5342869c29beb37a8230e0e2396
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="globalizing-and-localizing-applications"></a>Globalisieren und Lokalisieren von Anwendungen
+
 Wenn Sie vorhaben, ein Programm international zu vertreiben, müssen Sie in der Entwicklungs- und Entwurfsphase einige Dinge berücksichtigen. Selbst wenn Sie derzeit keine internationale Anwendung planen, können Sie mit geringem Aufwand dafür sorgen, dass Sie später sehr viel Arbeit sparen, sollten Sie Ihre Meinung doch noch ändern. Dank der in [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] verfügbaren Dienste ist es sehr einfach, mit der verwalteten Entwicklung in Visual Studio eine einzelne Anwendung zu entwickeln, die für verschiedene Gebietsschemas geeignet ist.  
   
  Visual Studio war von Anfang an darauf ausgerichtet, mithilfe der in [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] integrierten Dienste die Entwicklung in einem internationalen Umfeld zu erleichtern. Auf den folgenden Seiten können Sie sich einen Überblick über die in Visual Studio verfügbaren Funktionen für die Internationalisierung verschaffen.  
   
-## <a name="in-this-section"></a>In diesem Abschnitt  
+## <a name="in-this-section"></a>In diesem Abschnitt
+
  [Einführung in internationale Anwendungen basierend auf .NET Framework](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md)  
  Einführung in die Konzepte der Softwareentwicklung für einen internationalen Markt mithilfe von Visual Studio und [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].  
   
@@ -41,12 +43,7 @@ Wenn Sie vorhaben, ein Programm international zu vertreiben, müssen Sie in der 
  [Globalisieren von Anwendungen](../ide/globalizing-applications.md)  
  Enthält Links zu Seiten, die Informationen zum Erstellen von Anwendungen enthalten, die mehrere Kulturen unterstützen.  
   
-## <a name="related-sections"></a>Verwandte Abschnitte  
- [Globalisierung Ihrer App (HTML)](http://go.microsoft.com/fwlink/?LinkId=258266)  
- Enthält Vorgehensweisen und Richtlinien, mit denen Sie Ihre in HTML erstellte Windows 8.1-App globalisieren und lokalisieren können.  
-  
- [Globalisierung Ihrer App (XAML)](http://go.microsoft.com/fwlink/?LinkId=258267)  
- Enthält Vorgehensweisen und Richtlinien, mit denen Sie Ihre in XAML erstellte Windows 8.1-App globalisieren und lokalisieren können.  
+## <a name="related-sections"></a>Verwandte Abschnitte
   
  [Empfehlungen für die Entwicklung weltweit einsatzfähiger Anwendungen](http://msdn.microsoft.com/Library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c)  
  Enthält Hintergrundinformationen zur Programmierung für den internationalen Markt.  

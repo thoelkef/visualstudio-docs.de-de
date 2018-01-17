@@ -18,11 +18,11 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload: data-science
-ms.openlocfilehash: a7680ff2613051cb795d2ca9cb509f725e92dd23
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 7bab332a66784dd473a0cf2b841b617aecda9e9f
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="r-tools-for-visual-studio-options"></a>Optionen für R Tools für Visual Studio
 
@@ -34,8 +34,8 @@ Auf Optionen und Einstellungen, die für R spezifisch sind, wird mit den nachste
 
 - Codeformatierungsoptionen (siehe [Editor-Optionen](code-editing.md#editor-options)): Menü **Extras > Optionen**, dann **Text-Editor > R > Formatierung** wählen.
 - Linting-Optionen (siehe [Linting](code-linting.md)): Menü **Extras > Optionen**, dann **Text-Editor > R > Lint** wählen.
-- Erweiterte Editor-Optionen (siehe [dieses Thema](#text-editor-r-advanced-options)): Menü **Extras > Optionen**, dann **Text-Editor > R > Erweitert** wählen.
-- Verhaltensoptionen ([in diesem Thema beschrieben](#r-tools-advanced-options)): Menü **R Tools > Optionen** oder **Extras> Optionen** > **R Tools**.
+- Erweiterte Editor-Optionen (siehe [dieses Thema](#text-editor-r--advanced-options)): Menü **Extras > Optionen**, dann **Text-Editor > R > Erweitert** wählen.
+- Verhaltensoptionen ([in diesem Thema beschrieben](#r-tools--advanced-options)): Menü **R Tools > Optionen** oder **Extras> Optionen** > **R Tools**.
 
 Der Befehl **R Tools > Data Science-Einstellungen** wirkt sich auch auf eine Reihe anderer Einstellungen in Visual Studio allgemein aus. Dieser Befehl wird im nächsten Abschnitt beschrieben.
 

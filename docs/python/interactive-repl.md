@@ -12,12 +12,14 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.workload: python
-ms.openlocfilehash: 2126855c0d8b44965c3ba867940990de0edb1d42
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- python
+- data-science
+ms.openlocfilehash: 01e3e0d3969b483a77b524cb6fd2713c6653678e
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="working-with-the-python-interactive-window"></a>Arbeiten mit dem interaktiven Python-Fenster
 
@@ -48,7 +50,7 @@ Erstens: Wechseln Sie zum Python-Umgebungenfenster (**Ansicht > Weitere Fenster 
 
 ![Link zu interaktivem Fenster in Python-Umgebungen](media/interactive-window-opening.png)
 
-Zweitens: Am unteren Rand des Menüs **Anzeige > Weitere Fenster** finden Sie den Befehl „Interaktives Phyton-Fenster“ für Ihre Standardumgebung und einen Befehl, um zum Fenster „Umgebungen“ zu wechseln:
+Zweitens: Am unteren Rand des Menüs **Anzeige > Weitere Fenster** finden Sie den Befehl **Interaktives Phyton-Fenster** für Ihre Standardumgebung und einen Befehl, um zum Fenster „Umgebungen“ zu wechseln:
 
 ![Menüelemente für interaktives Fenster in „Ansicht > Weitere Fenster“](media/interactive-window-menu.png)
 

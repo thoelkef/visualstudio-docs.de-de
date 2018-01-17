@@ -1,7 +1,7 @@
 ---
 title: 'Schritt 1: Arbeiten mit Python in Visual Studio | Microsoft-Dokumentation'
 ms.custom: 
-ms.date: 09/26/2017
+ms.date: 01/08/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: devlang-python
@@ -12,12 +12,14 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.workload: python
-ms.openlocfilehash: adb49bb6070fee611a2ba67913943e68ee938d29
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- python
+- data-science
+ms.openlocfilehash: aec013574365c3e7fb3f7aea723df754b284e1b0
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="working-with-python-in-visual-studio"></a>Arbeiten mit Python in Visual Studio
 
@@ -51,7 +53,7 @@ In diesem Tutorial beginnen Sie mit einem einfachen Projekt, das nur eine leere 
 
     Beachten Sie, dass die Python-Unterstützung in Visual Studio eine Reihe von Projektvorlagen, einschließlich Webanwendungen, unter Verwendung der Bottle-, Flask- und Django-Frameworks beinhaltet. Im Rahmen dieser exemplarischen Vorgehensweise beginnen wir jedoch mit einem leeren Projekt.
 
-1. Klicken Sie auf die Vorlage **Python-Anwendung**, geben Sie einen Namen für das Projekt an, und klicken Sie auf **OK**. 
+1. Klicken Sie auf die Vorlage **Python-Anwendung**, geben Sie einen Namen für das Projekt an, und klicken Sie auf **OK**.
 
 1. Nach einigen Augenblicken zeigt Visual Studio die Projektstruktur im **Projektmappen-Explorer**-Fenster (1) an. Die Standardcodedatei ist im Editor (2) geöffnet. Das Eigenschaftenfenster (3) wird ebenfalls angezeigt. Darin sind zusätzliche Informationen zu jedem im Projektmappen-Explorer ausgewählten Element enthalten, einschließlich Informationen zum genauen Speicherort auf dem Datenträger.
 

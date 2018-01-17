@@ -12,12 +12,14 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.workload: python
-ms.openlocfilehash: 60e6daf25d4ce9c43f07495e9efa89ec215ec16b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- python
+- data-science
+ms.openlocfilehash: d59d44f4b5969cfc2da4a729f9b6297c97e443ee
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="refactoring-python-code"></a>Umgestalten von Python-Code
 
@@ -26,7 +28,7 @@ Visual Studio bietet verschiedene Befehle zum automatischen Transformieren und B
 - [Umbenennen](#rename): Benennt eine ausgewählte Klasse, Methode oder Variable um.
 - [Methode extrahieren](#extract-method): Erstellt eine neue Methode aus dem ausgewählten Code.
 - [Import hinzufügen](#add-import): Stellt ein Smarttag zum Hinzufügen eines fehlenden Imports bereit.
-- [Nicht verwendete Importe entfernen](#remove-imports): Entfernt nicht verwendete Importe.
+- [Nicht verwendete Importe entfernen](#remove-unused-imports): Entfernt nicht verwendete Importe.
 
 <a name="rename-variable"</a>
 
@@ -72,6 +74,7 @@ Auf ähnliche Weise filtert Visual Studio Funktionen, die aus anderen Modulen od
 Wenn ein Element normalerweise ausgeschlossen würde, aber andere Werte enthält, die eingeschlossen würden (weil dem Namen z.B. im Modul ein Wert zugewiesen wurde), schließt Visual Studio den Import trotzdem aus. Dieses Verhalten geht davon aus, dass der Wert nicht exportiert werden sollte, weil er in einem anderen Modul definiert wurde und daher die zusätzliche Zuweisung wahrscheinlich einen Pseudowert erzeugt, der ebenfalls nicht exportiert wird.
 
 <a name="remove-imports"</a>
+
 ## <a name="remove-unused-imports"></a>Nicht verwendete Importe entfernen
 
 Beim Schreiben von Code entstehen leicht `import`-Anweisungen für Module, die gar nicht verwendet werden. Visual Studio analysiert Ihren Code und kann daher automatisch ermitteln, ob eine `import`-Anweisung benötigt wird. Dafür prüft Visual Studio, ob der importierte Name in dem Geltungsbereich verwendet wird, in dem die Anweisung auftritt.
