@@ -1,7 +1,7 @@
 ---
 title: "Optionen für Python in Visual Studio | Microsoft-Dokumentation"
 ms.custom: 
-ms.date: 07/13/2017
+ms.date: 01/04/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: devlang-python
@@ -19,11 +19,11 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload: python
-ms.openlocfilehash: b80164e4b41bf164e9235858f51d8a211dd70caa
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 6776eee4436e54ca1b0215b307eeb5fa098802c3
+ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="options-for-python-in-visual-studio"></a>Optionen für Python in Visual Studio
 
@@ -40,6 +40,8 @@ Die spezifischen Optionen werden in den folgenden Abschnitten beschrieben:
 - [Diagnoseoptionen](#diagnostics-options)
 - [Optionen für das interaktive Fenster](#interactive-windows-options)
 - [Erweiterte Optionen des Python-Editors](#advanced-python-editor-options)
+
+Beachten Sie, dass die Gruppe **Experimentell** Optionen für Features enthält, die sich noch in der Entwicklung befinden und hier noch nicht dokumentiert wurden. Diese werden häufig in Beiträgen des Blogs [Python engineering at Microsoft (Python-Entwicklung bei Microsoft)](https://blogs.msdn.microsoft.com/pythonengineering/) erläutert.
 
 ## <a name="general-options"></a>Allgemeine Optionen
 
@@ -69,7 +71,6 @@ Die spezifischen Optionen werden in den folgenden Abschnitten beschrieben:
 | Debuggen der Python-Standardbibliothek aktivieren | Aus | Mit dieser Option ist es möglich, den Quellcode der Standardbibliothek beim Debuggen schrittweise auszuführen. Dadurch dauert das Starten des Debuggers allerdings länger.|
 
 ![Dialogfeld „Python-Optionen“, Registerkarte „Debuggen“](media/options-debugging.png)
-
 
 ## <a name="diagnostics-options"></a>Diagnoseoptionen
 
