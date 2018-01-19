@@ -13,12 +13,14 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.workload: python
-ms.openlocfilehash: a1e5568f30177d3f4664d1cc1ebd7192539b86bf
-ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
+ms.workload:
+- python
+- data-science
+ms.openlocfilehash: c4c10f6f2bb0624ab72e8eb7f07db38f61bcf1a7
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="creating-a-c-extension-for-python"></a>Erstellen einer C++-Erweiterung für Python
 
@@ -156,6 +158,9 @@ Weitere Informationen finden Sie unter [Installing Python Support for Visual Stu
 ## <a name="convert-the-c-project-to-an-extension-for-python"></a>Konvertieren des C++-Projekts in eine Erweiterung für Python
 
 Sie müssen die exportierten Methoden zunächst so anpassen, dass Sie mit den Python-Typen interagieren, um die C++-DLL in eine Python-Erweiterung konvertieren zu können. Anschließend fügen Sie eine Funktion hinzu, die das Modul zusammen mit den Definitionen der Modulmethoden exportiert. Um weitere Hintergrundinformationen zu dem hier Gezeigten zu erhalten, lesen Sie das [Python/C API Reference Manual (Python(C-API-Referenzhandbuch)](https://docs.python.org/3/c-api/index.html) und vor allem die Seite [Module Objects (Modulobjekte)](https://docs.python.org/3/c-api/module.html) auf python.org. (Denken Sie daran, Ihre Python-Versionen aus dem Dropdown-Steuerelement in der oberen rechten Ecke auszuwählen.)
+
+> [!Note]
+> Diese Anweisungen gelten für Python 3.x. Beziehen Sie sich bei der Arbeit mit Python 2.7 auf die Artikel [Extending Python 2.7 with C or C++ (Erweitern von Python 2.7 mit C oder C++)](https://docs.python.org/2.7/extending/extending.html) und [Porting Extension Modules to Python 3 (Portierung von Erweiterungsmodulen auf Python 3](https://docs.python.org/2.7/howto/cporting.html) (python.org).
 
 1. Fügen Sie `Python.h` oben zur C++-Datei hinzu:
 

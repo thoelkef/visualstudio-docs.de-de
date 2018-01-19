@@ -84,6 +84,13 @@
 #### [Festlegen einer bestimmten .NET Framework-Zielversion](ide/targeting-a-specific-dotnet-framework-version.md)
 ##### [Übersicht über die Festlegung von mehreren Zielversionen](ide/visual-studio-multi-targeting-overview.md)
 ##### [.NET Framework-Version als Ziel](ide/how-to-target-a-version-of-the-dotnet-framework.md)
+#### Erstellen von Projekt- und Elementvorlagen
+##### [Erstellen von Projektvorlagen](ide/how-to-create-project-templates.md)
+##### [Erstellen von Vorlagen mit mehreren Projekten](ide/how-to-create-multi-project-templates.md)
+##### [Erstellen von Elementvorlagen](ide/how-to-create-item-templates.md)
+##### [Erstellen von Elementvorlagen mit mehreren Dateien](ide/how-to-create-multi-file-item-templates.md)
+##### [Erstellen von Webvorlagen](ide/how-to-manually-create-web-templates.md)
+##### [Problembehandlung bei Vorlagen](ide/how-to-troubleshoot-templates.md)
 #### [Visual Studio-IDE-64-Bit-Unterstützung](ide/visual-studio-ide-64-bit-support.md)
 ### [Entwickeln ohne Projekte oder Projektmappen („Ordner öffnen“)](ide/develop-code-in-visual-studio-without-projects-or-solutions.md)
 ### [Schreiben von Code im Editor](ide/writing-code-in-the-code-and-text-editor.md)
@@ -95,7 +102,7 @@
 #### [Codierungen und Zeilenumbrüche](ide/encodings-and-line-breaks.md)
 ##### [Speichern und Öffnen von Dateien mit Codierung](ide/how-to-save-and-open-files-with-encoding.md)
 #### [Gliedern](ide/outlining.md)
-#### [Automatisches Generieren von Code](ide/code-generation-in-visual-studio.md)
+#### [Generieren und Korrigieren von Code](ide/code-generation-in-visual-studio.md)
 ##### [Codeausschnitte](ide/code-snippets.md)
 ###### Verwenden von Codeausschnitten
 ####### [Visual C#-Codeausschnitte](ide/visual-csharp-code-snippets.md)
@@ -305,15 +312,9 @@
 ### [Anpassen von Projekt- und Elementvorlagen](ide/customizing-project-and-item-templates.md)
 #### [Aktualisieren vorhandener Vorlagen](ide/how-to-update-existing-templates.md)
 #### [Ersetzen von Parametern in einer Vorlage](ide/how-to-substitute-parameters-in-a-template.md)
-### Erstellen von neuen Projekt- und Elementvorlagen
-#### [Erstellen von Projektvorlagen](ide/how-to-create-project-templates.md)
-#### [Erstellen von Vorlagen mit mehreren Projekten](ide/how-to-create-multi-project-templates.md)
-#### [Erstellen von Elementvorlagen](ide/how-to-create-item-templates.md)
-#### [Erstellen von Elementvorlagen mit mehreren Dateien](ide/how-to-create-multi-file-item-templates.md)
-#### [Erstellen von Webvorlagen](ide/how-to-manually-create-web-templates.md)
+### Projekt- und Elementvorlagen
 ### [Vorlagenparameter](ide/template-parameters.md)
-### [Schemareferenz zu Vorlagen (Erweiterbarkeit)](extensibility/visual-studio-template-schema-reference.md)
-### [Problembehandlung bei Vorlagen](ide/how-to-troubleshoot-templates.md)
+### [Schemareferenz zu Vorlagen (Erweiterbarkeit)](extensibility/visual-studio-template-schema-reference.md?toc=/visualstudio/toc.json)
 ## Allgemeine Elemente der Benutzeroberfläche
 ### [Aufrufhierarchie](ide/reference/call-hierarchy.md)
 ### [Vorschau der Änderungen](ide/preview-changes.md)

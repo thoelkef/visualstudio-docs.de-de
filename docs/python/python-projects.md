@@ -1,7 +1,7 @@
 ---
 title: Python-Projekte in Visual Studio | Microsoft-Dokumentation
 ms.custom: 
-ms.date: 07/13/2017
+ms.date: 01/09/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: devlang-python
@@ -12,35 +12,31 @@ caps.latest.revision: "11"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.workload: python
-ms.openlocfilehash: 6fe63cd9258c5baf9509bb68d4258e839ebe75f0
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.workload:
+- python
+- data-science
+ms.openlocfilehash: 7a0e449772f0947daf6c6bc8ec67af3a7456925d
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="python-projects"></a>Python-Projekte
 
 Python-Anwendungen werden in der Regel nur mit Ordnern und Dateien definiert, aber diese Struktur kann bei größeren Anwendungen, die vielleicht automatisch generierte Dateien, JavaScript für Webanwendungen usw. einbeziehen, komplex werden. Ein Visual Studio-Projekt kann Sie beim Verwalten dieser komplexen Struktur unterstützen. Das Python-Projekt (eine `.pyproj`-Datei) identifiziert alle Quell- und Inhaltsdateien des Projekts, enthält Buildinformationen für jede Datei, verwaltet die Informationen zur Integration in Quellcodeverwaltungssysteme und unterstützt Sie beim Organisieren Ihrer Anwendung in logische Komponenten.
 
-Darüber hinaus werden Projekte immer in einer Visual Studio-*Projektmappe* verwaltet, die eine beliebige Anzahl von Projekten enthalten kann, die möglicherweise aufeinander verweisen. Ein Python-Projekt kann z.B. auf ein C++-Projekt für ein Erweiterungsmodul verweisen, sodass Visual Studio (falls erforderlich) automatisch das C++-Projekt erstellt, wenn Sie mit dem Debuggen des Python-Projekts beginnen. (Eine allgemeine Erörterung finden Sie unter [Projektmappen und Projekte in Visual Studio](../ide/solutions-and-projects-in-visual-studio.md).)
-
 ![Python-Projekt im Projektmappen-Explorer](media/projects-solution-explorer.png)
 
-Visual Studio bietet eine Vielzahl von Python-Projektvorlagen, mit der Sie schnell eine Reihe von Anwendungsstrukturen einrichten können, einschließlich einer Vorlage zum Erstellen eines Projekts aus einer vorhandenen Ordnerstruktur und einer Vorlage zum Erstellen eines leeren Projekts. Einen Index finden Sie unten unter [-Projektvorlagen](#project-templates).
+Darüber hinaus werden Projekte immer in einer Visual Studio-*Projektmappe* verwaltet, die eine beliebige Anzahl von Projekten enthalten kann, die möglicherweise aufeinander verweisen. Ein Python-Projekt kann z.B. auf ein C++-Projekt verweisen, das ein Erweiterungsmodul implementiert. Bei dieser Beziehung erstellt Visual Studio automatisch das C++-Projekt (falls erforderlich), wenn Sie mit dem Debuggen des Python-Projekts beginnen. (Eine allgemeine Erörterung finden Sie unter [Projektmappen und Projekte in Visual Studio](../ide/solutions-and-projects-in-visual-studio.md).)
 
-In diesem Thema:
+Visual Studio bietet eine Vielzahl von Python-Projektvorlagen, mit der Sie schnell eine Reihe von Anwendungsstrukturen einrichten können, einschließlich einer Vorlage zum Erstellen eines Projekts aus einer vorhandenen Ordnerstruktur und einer Vorlage zum Erstellen eines leeren Projekts. Einen Index finden Sie unter [Projektvorlagen](#project-templates).
 
-- [Hinzufügen von Dateien, Zuweisen einer Startdatei und Festlegen von Umgebungen](#adding-files-assigning-a-startup-file-and-setting-environments)
-- [Projektvorlagen](#project-templates)
-- [Verknüpfte Dateien](#linked-files)
-- [Verweise](#references)
+<a name="lightweight-usage-project-free"></a>
 
-<a name="lightweight-usage-project-free"</a>
 > [!Tip]
-> Auch ohne ein Projekt können Sie in Visual Studio mit Python-Code arbeiten, da Sie eine Python-Datei unabhängig öffnen und die automatische Vervollständigung, IntelliSense und das Debuggen (indem Sie mit der rechten Maustaste im Editor klicken und dann auf **Starten mit/ohne Debuggen** klicken) nutzen können. Da diese Art von Code immer die globale Standardumgebung verwendet, stellen Sie jedoch möglicherweise falsche Vervollständigungen oder Fehler fest, wenn der Code für eine andere Umgebung vorgesehen ist. Darüber hinaus analysiert Visual Studio alle Dateien und Pakete in dem Ordner, in dem die einzelne Datei geöffnet wird, was sehr viel CPU-Zeit in Anspruch nimmt.
+> Sie können Python-Code auch ohne ein Projekt problemlos in Visual Studio verwenden. Sie können zum Beispiel eine eigenständige Python-Datei öffnen und die automatische Vervollständigung, IntelliSense und das Debuggen verwenden (indem Sie mit der rechten Maustaste in den Editor klicken und dann auf **Starten [mit/ohne] Debuggen** klicken). Da diese Art von Code immer die globale Standardumgebung verwendet, stellen Sie jedoch möglicherweise falsche Vervollständigungen oder Fehler fest, wenn der Code für eine andere Umgebung vorgesehen ist. Darüber hinaus analysiert Visual Studio alle Dateien und Pakete in dem Ordner, in dem die einzelne Datei geöffnet wird, was sehr viel CPU-Zeit in Anspruch nimmt.
 >
-> Es ist einfach, ein Visual Studio-Projekt aus vorhandenem Code zu erstellen, wie unten in [Erstellen eines Projekts aus vorhandenen Dateien](#creating-a-project-from-existing-files) beschrieben.
+> Es ist einfach, ein Visual Studio-Projekt aus vorhandenem Code zu erstellen, wie unter [Erstellen eines Projekts aus vorhandenen Dateien](#creating-a-project-from-existing-files) beschrieben.
 
 Eine Einführung in Projekte mit Python in Visual Studio finden Sie im Video [Getting Python Code (Abrufen von Python-Code)](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=iLAv23LWE_3905918567) (Microsoft Virtual Academy, 2 Min. 17 Sek.).
 
@@ -50,14 +46,14 @@ Sehen Sie sich auch das ältere Video [Deep Dive: Using source control with Pyth
 
 ## <a name="adding-files-assigning-a-startup-file-and-setting-environments"></a>Hinzufügen von Dateien, Zuweisen einer Startdatei und Festlegen von Umgebungen
 
-Bei der Entwicklung Ihrer Anwendung müssen Sie dem Projekt in der Regel neue Dateien verschiedenen Typs hinzufügen. Um solche Dateien hinzuzufügen, müssen Sie einfach mit der rechten Maustaste auf das Projekt klicken und **Hinzufügen > Vorhandenes Element...** auswählen, um nach einer hinzuzufügenden Datei zu suchen, oder **Hinzufügen > Neues Element...**, worauf ein Dialogfeld mit einer Vielzahl von Elementvorlagen einschließlich leerer Python-Dateien, einer Python-Klasse, eines Unittests und verschiedener Dateien im Zusammenhang mit Webanwendungen angezeigt wird. Wir empfehlen Ihnen, diese Optionen mit einem Testprojekt zu erforschen, um zu erfahren, was in Ihrer Visual Studio-Version verfügbar ist.
+Bei der Entwicklung Ihrer Anwendung müssen Sie dem Projekt in der Regel neue Dateien verschiedenen Typs hinzufügen. Fügen Sie solche Dateien hinzu, indem Sie mit der rechten Maustaste auf das Projekt klicken, und klicken Sie dann auf **Hinzufügen > Vorhandenes Element...**, um nach Ihrer hinzuzufügenden Datei zu suchen, oder klicken Sie auf **Hinzufügen > Neues Element...**, um ein Dialogfeld mit mehreren Elementvorlagen zu öffnen. Vorlagen enthalten leere Python-Dateien, eine Python-Klasse, einen Komponententest und verschiedene Dateien zu Webanwendungen. Sie können diese Optionen mit einem Testprojekt ausprobieren, um zu erfahren, was in Ihrer Visual Studio-Version verfügbar ist.
 
 Jedem Python-Projekt ist eine im Projektmappen-Explorer fett angezeigte Startdatei zugewiesen. Die Startdatei ist die Datei, die ausgeführt wird, wenn Sie das Debuggen starten (F5 oder **Debuggen > Debuggen starten**) oder das Projekt im interaktiven Fenster ausführen (UMSCHALT+ALT+ F5 oder **Debuggen > Projekt in interaktivem Python ausführen**). Um dies zu ändern, klicken Sie mit der rechten Maustaste auf die neue Datei, und wählen Sie **Als Startdatei festlegen**.
 
 > [!Tip]
-> Wenn Sie die ausgewählte Datei aus einem Projekt entfernen und keine neue auswählen, wird beim Versuch, Ihr Projekt auszuführen, ein Python-Ausgabefenster angezeigt, dass aber daraufhin sofort wieder verschwindet. Wenn dieses Verhalten auftritt, überprüfen Sie, ob Sie eine zugewiesene Startdatei haben. Damit das Ausgabefenster in Fällen wie diesem geöffnet bleibt, klicken Sie mit der rechten Maustaste auf Ihr Projekt, wählen Sie **Eigenschaften** und dann die Registerkarte **Debuggen** aus, fügen Sie anschließend `-i` zum Feld **Interpreterargumente** hinzu. Durch dieses Argument wird der Interpreter nach Abschluss des Programms in den interaktiven Modus versetzt, und das Fenster bleibt dabei offen, bis Sie STRG + Z, EINGABETASTE zum Beenden drücken.
+> Wenn Sie die ausgewählte Datei aus einem Projekt entfernen und keine neue auswählen, wird beim Ausführen Ihres Projekts ein Python-Ausgabefenster angezeigt, dass aber sofort wieder verschwindet. Wenn dieses Verhalten auftritt, überprüfen Sie, ob Sie eine zugewiesene Startdatei haben. Damit das Ausgabefenster in Fällen wie diesem geöffnet bleibt, klicken Sie mit der rechten Maustaste auf Ihr Projekt, wählen Sie **Eigenschaften** und dann die Registerkarte **Debuggen** aus, fügen Sie anschließend `-i` zum Feld **Interpreterargumente** hinzu. Durch dieses Argument wird der Interpreter nach Abschluss des Programms in den interaktiven Modus versetzt, und das Fenster bleibt dabei offen, bis Sie STRG + Z, EINGABETASTE zum Beenden drücken.
 
-Ein neues Projekt ist immer der standardmäßigen globalen Python-Umgebung zugeordnet. Um das Projekt einer anderen Umgebung zuzuordnen (einschließlich virtueller Umgebungen), klicken Sie mit der rechten Maustaste auf den **Python-Umgebungen**-Knoten im Projekt, wählen Sie **Python-Umgebungen hinzufügen/entfernen**, und wählen Sie die gewünschten Umgebungen. Um die aktive Umgebung zu ändern, klicken Sie mit der rechten Maustaste auf die gewünschte Umgebung, und wählen Sie **Umgebung aktivieren**, wie unten dargestellt. Weitere Informationen finden Sie unter [Python-Umgebungen](python-environments.md#project-specific-environments).
+Ein neues Projekt ist immer der standardmäßigen globalen Python-Umgebung zugeordnet. Um das Projekt einer anderen Umgebung zuzuordnen (einschließlich virtueller Umgebungen), klicken Sie mit der rechten Maustaste auf den **Python-Umgebungen**-Knoten im Projekt, wählen Sie **Python-Umgebungen hinzufügen/entfernen**, und wählen Sie die gewünschten Umgebungen. Um die aktive Umgebung zu ändern, klicken Sie mit der rechten Maustaste auf die gewünschte Umgebung, und wählen Sie **Umgebung aktivieren**, wie unten dargestellt. Weitere Informationen finden Sie unter [Python-Umgebungen](python-environments.md#selecting-an-environment-for-a-project).
 
 ![Aktivieren einer Umgebung für ein Python-Projekt](media/projects-activate-environment.png)
 
@@ -74,7 +70,7 @@ Die folgende Tabelle fasst die in Visual Studio 2017 verfügbaren Vorlagen zusam
 | Vorlage | description |
 | --- | --- |
 | [Aus vorhandenem Python-Code](#creating-a-project-from-existing-files) | Erstellt ein Visual Studio-Projekt aus vorhandenem Python-Code in einer Ordnerstruktur.  |
-| Python-Anwendung | Eine grundlegende Projektstruktur für eine neue Python-Anwendung mit einer einzelnen, leeren Quelldatei. Standardmäßig wird das Projekt im Konsoleninterpreter der globalen Standardumgebung ausgeführt, die Sie durch [Zuweisen einer anderen Umgebung](python-environments.md#project-specific-environments) ändern können. |
+| Python-Anwendung | Eine grundlegende Projektstruktur für eine neue Python-Anwendung mit einer einzelnen, leeren Quelldatei. Standardmäßig wird das Projekt im Konsoleninterpreter der globalen Standardumgebung ausgeführt, die Sie durch [Zuweisen einer anderen Umgebung](python-environments.md#selecting-an-environment-for-a-project) ändern können. |
 | [Azure-Cloud-Dienst](template-azure-cloud-service.md) | Ein in Python geschriebenes Projekt für einen Azure-Clouddienst |
 | [Webprojekte](template-web.md) | Auf verschiedenen Frameworks einschließlich Bottle, Django, Flask und Flask/Jade basierende Projekte für Webserver. |
 | IronPython-Anwendung | Ähnlich wie die Python-Anwendungsvorlage, verwendet aber IronPython durch standardmäßige Aktivierung .von NET-Interop und Debuggen im gemischten Modus mit .NET-Sprachen. |
@@ -83,6 +79,9 @@ Die folgende Tabelle fasst die in Visual Studio 2017 verfügbaren Vorlagen zusam
 | IronPython-Windows Forms-Anwendung | Eine Projektstruktur mit IronPython, wo die Benutzeroberfläche mithilfe von Windows Forms-Code erstellt wird. Die Anwendung wird ohne Anzeige einer Konsole ausgeführt. |
 | Hintergrundanwendung (IoT) | Unterstützt die Bereitstellung von Python-Projekten zur Ausführung als Hintergrunddienste auf Geräten. Unter [Windows 10 IoT Core](https://dev.windows.com/en-us/iot) erhalten Sie weitere Informationen. |
 | Python-Erweiterungsmodul | Diese Vorlage wird unter Visual C++ angezeigt, wenn Sie die **nativen Python-Entwicklungstools** mit der Python-Arbeitsauslastung in Visual Studio 2017 installiert haben (weitere Informationen finden Sie unter [Installation](installation.md)). Sie stellt die grundlegende Struktur für eine C++-Erweiterungs-DLL bereit, ganz ähnlich der, die unter [Erstellen einer C++-Erweiterung für Python](cpp-and-python.md) beschrieben wird. |
+
+> [!Note]
+> Da Python eine interpretierte Programmiersprache ist, produzieren Python-Projekte in Visual Studio keine eigenständigen ausführbaren Dateien, wie andere Projekte in kompilierten Sprachen (z.B. C#). Weitere Informationen finden Sie unter [Fragen und Antworten](python-in-visual-studio.md#questions-and-answers).
 
 <a name="create-project-from-existing-files"</a>
 
@@ -97,7 +96,7 @@ Die folgende Tabelle fasst die in Visual Studio 2017 verfügbaren Vorlagen zusam
 
 Verknüpfte Dateien sind Dateien, die in ein Projekt eingebunden sind, sich aber in der Regel außerhalb der Projektordner der Anwendung befinden. Sie werden im Projektmappen-Explorer wie normale Dateien überlagert mit einem Verknüpfungssymbol angezeigt: ![Dateiverknüpfungssymbol](media/projects-linked-file-icon.png)
 
-Verknüpfte Dateien werden in der `.pyproj`-Datei mit dem normalen `<Compile Include="...">`-Element angegeben. Sie können implizite verknüpfte Dateien sein, wenn sie einen relativen Pfad außerhalb der Verzeichnisstruktur verwenden, oder explizite verknüpfte Dateien, deren Pfad im Projektmappen-Explorer angeben ist:
+Verknüpfte Dateien werden in der `.pyproj`-Datei mit dem `<Compile Include="...">`-Element angegeben. Verknüpfte Dateien sind implizit, wenn Sie einen relativen Pfad außerhalb der Verzeichnisstruktur nutzen, oder sie sind explizit, wenn sie Pfade im Projektmappen-Explorer verwenden:
 
 ```xml
 <Compile Include="..\test2.py">
