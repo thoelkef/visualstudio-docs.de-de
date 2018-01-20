@@ -7,29 +7,24 @@ ms.suite:
 ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs:
-- CSharp
-- VB
-- FSharp
-- C++
 helpviewer_keywords:
 - JavaScript Console commands [UWP apps]
 - JavaScript debugging, console [UWP apps]
 - debugging JavaScript, console [UWP apps]
-ms.assetid: 359e2b24-6bb7-48e7-8b55-b570df0cb774
 caps.latest.revision: "47"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 32aa07920c496249271e6c337952129292a3d2aa
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- uwp
+- cordova
+ms.openlocfilehash: 1f2d6f356d4e886488f4b6558c6cfb92d7b9c974
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="javascript-console-commands-in-visual-studio"></a>JavaScript-Konsolenbefehle in Visual Studio
-![Gilt für Windows und Windows Phone](../debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
   
  Sie können Befehle verwenden, um Nachrichten zu senden und weitere Aufgaben im JavaScript-Konsolenfenster von Visual Studio auszuführen. Beispiele zur Verwendung dieses Fensters finden Sie unter [Schnellstart: Debuggen von JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md). Die Informationen in diesem Thema gelten für uwp-apps und apps mit Visual Studio-Tools für Apache Cordova erstellt. Weitere Informationen zu unterstützten konsolenbefehlen in Cordova-apps, finden Sie unter [Debuggen Ihrer Anwendung](https://taco.visualstudio.com/en-us/docs/debug-using-visual-studio/). Informationen zur Verwendung der Konsole in Internet Explorer F12-Tools finden Sie in [diesem Thema](http://msdn.microsoft.com/library/ie/dn255006.aspx).  
   

@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: efd4ca5457a1175b19deddfd4194091dbcb2864e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: cb0ed99e341e89aaaa295d2fc4a4cf25f726e2f5
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="debugging-applications"></a>Debuggen von Anwendungen
 Die folgenden Abschnitte befassen sich mit dem Debuggen für bestimmte Arten von Anwendungen. Verschiedene Anwendungstypen und Sprachen erfordern unterschiedliche Einstellungen und Techniken verursachen verschiedene Probleme, die debuggt werden müssen.  
@@ -31,7 +31,7 @@ Die folgenden Abschnitte befassen sich mit dem Debuggen für bestimmte Arten von
   
 |||  
 |-|-|  
-|[Debuggen von UWP und Windows 8.1-Apps](../debugger/debugging-windows-store-and-windows-universal-apps.md)|Beschreibt die uwp-apps zu debuggen.|  
+|[Debuggen von UWP-Apps](../debugger/debugging-windows-store-and-windows-universal-apps.md)|Beschreibt die uwp-apps zu debuggen.|  
 |[Debuggen von verwaltetem Code](../debugger/debugging-managed-code.md)|Beschreibt das Debuggen von verwaltetem Code (Visual C#, Visual Basic und F3).|  
 |[Debuggen von nativem Code](../debugger/debugging-native-code.md)|Beschreibt das Debuggen von verschiedenen Arten systemeigener C++-Anwendungen.|  
 |[Debuggen von GPU-Code](../debugger/debugging-gpu-code.md)|Beschreibt das Debuggen von C++-Code, der im Grafikprozessor (Graphics Processing Unit, GPU) ausgeführt wird.|  

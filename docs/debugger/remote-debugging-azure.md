@@ -16,14 +16,14 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: 52acd997d1f6dd9f019a6495cfbeab4e459d661b
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: ba54912b61e624861bbaec56d9e5bab68d7f5d78
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="remote-debug-aspnet-core-on-iis-and-azure-in-visual-studio-2017"></a>Remotedebuggen ASP.NET Core unter IIS und Azure in Visual Studio 2017
-Sie können eine ASP.NET-Webanwendung auf einem Windows Server-Computer mit IIS bereitstellen und für das Remotedebuggen einrichten. Dieses Handbuch erläutert das Einrichten und konfigurieren eine Visual Studio 2017 ASP.NET Core-app, auf IIS mithilfe von Azure bereitgestellt und von Visual Studio remote Debugger anfügen.
+Für Azure App Service, wird empfohlen, Sie mithilfe Debuggen der [Momentaufnahme Debugger](../debugger/debug-live-azure-applications.md) oder Sie können die Anweisungen in diesem Thema, um den Debugger von Visual Studio folgen. Wenn Sie Windows Server mit IIS auf einem virtuellen Azure-Computer ausführen, können Sie auch für das Remotedebuggen festlegen. Dieses Handbuch erläutert das Einrichten und konfigurieren eine Visual Studio 2017 ASP.NET Core-app, auf IIS mithilfe von Azure bereitgestellt und von Visual Studio remote Debugger anfügen.
 
 > [!WARNING]
 > Achten Sie darauf, dass Sie die Azure-Ressourcen zu löschen, die Sie erstellen, wenn Sie die Schritte in diesem Lernprogramm abgeschlossen haben. Auf diese Weise vermeiden Sie unnötige Gebühren anfallen.
@@ -63,7 +63,7 @@ Debuggen zwischen zwei Computern über einen Proxy verbunden wird nicht unterst�
 
 ## <a name="remote-debug-aspnet-core-on-an-azure-app-service"></a>Remotedebuggen ASP.NET Core unter Azure App Service
 
-In Visual Studio können Sie schnell veröffentlichen und Debuggen der app auf eine vollständig bereitgestellte Instanz von IIS. Allerdings ist die Konfiguration von IIS voreingestellt und kann nicht angepasst. Ausführliche Anweisungen finden Sie unter [eine ASP.NET Core Web-app in Azure mithilfe von Visual Studio bereitstellen](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs). (Wenn Sie die Möglichkeit, IIS anpassen möchten, versuchen Sie es Debuggen auf einem [Azure-VM](#BKMK_azure_vm).) 
+In Visual Studio können Sie schnell veröffentlichen und Debuggen der app auf eine vollständig bereitgestellte Instanz von IIS. Allerdings ist die Konfiguration von IIS voreingestellt und kann nicht angepasst. Ausführlichere Anweisungen finden Sie unter [eine ASP.NET Core Web-app in Azure mithilfe von Visual Studio bereitstellen](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs). (Wenn Sie die Möglichkeit, IIS anpassen möchten, versuchen Sie es Debuggen auf einem [Azure-VM](#BKMK_azure_vm).) 
 
 #### <a name="to-deploy-the-app-and-remote-debug"></a>Zur Bereitstellung der app und das Remotedebuggen
 
@@ -93,10 +93,10 @@ Beim Öffnen von Port 80 in der Sicherheitsgruppe "Netzwerk" Öffnen Sie Port 40
 
 Je nach Ihrer Browsersicherheitseinstellungen kann es Speicherzeit Sie Ihrem Browser die folgenden vertrauenswürdigen Sites hinzugefügt werden, damit Sie problemlos in diesem Lernprogramm beschriebene Software herunterladen können. Möglicherweise müssen Sie den Zugriff auf diese Websites:
 
-- "Microsoft.com"
+- microsoft.com
 - go.microsoft.com
 - 0download.microsoft.com
-- VisualStudio
+- visualstudio.com
 
 Wenn Sie Internet Explorer verwenden, können Sie den vertrauenswürdigen Sites hinzufügen, navigieren Sie zu **Internetoptionen > Sicherheit > Vertrauenswürdige Sites > Sites**. Diese Schritte sind für andere Browser unterschiedlich. (Wenn Sie eine ältere Version des Remotedebuggers von my.visualstudio.com herunterladen müssen, sind einige zusätzliche vertrauenswürdige Websites erforderlich, sich anzumelden.)
 

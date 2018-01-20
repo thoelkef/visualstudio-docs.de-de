@@ -25,11 +25,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: de774e323c1580c2a4d7c925f9c9297c392b2794
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 179d66b80676cf47bb12e82fcd8e4ac00503a492
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="use-dump-files-with-visual-studio"></a>Verwenden von Dumpdateien mit Visual Studio
 Dumpdateien Sie mit oder ohne Heaps; Erstellen Sie eine Dumpdatei. Öffnen einer Dumpdatei; Suchen Sie die Binärdateien, die PDB-Datei und Quelldatei für eine Dumpdatei.
@@ -56,11 +56,11 @@ Dumpdateien Sie mit oder ohne Heaps; Erstellen Sie eine Dumpdatei. Öffnen einer
   
 -   Visual Studio kann Dumpdateien systemeigener Anwendungen von ARM-Geräten debuggen. Visual Studio kann auch Dumpdateien verwalteter Anwendungen von ARM-Geräten debuggen, jedoch nur im nativen Debugger.  
   
--   So debuggen Sie [Kernelmodus-](http://msdn.microsoft.com/library/windows/hardware/ff551880.aspx) Dumpdateien in Visual Studio 2013, laden Sie die [Windows 8.1-Version der Debugtools für Windows](http://msdn.microsoft.com/windows/hardware/gg463009). Finden Sie unter [Kernel-Debugging in Visual Studio](http://msdn.microsoft.com/library/windows/hardware/jj149675.aspx).  
+-   So debuggen Sie [Kernelmodus-](http://msdn.microsoft.com/library/windows/hardware/ff551880.aspx) Dumpdateien, laden Sie die Debugtools für Windows, die Teil der [Windows Treiber Treiberkits (WDK)](/windows/hardware/windows-driver-kit). 
   
 -   Visual Studio kann nicht die debugdumpdateien im älteren dumpformat genannt gespeichert eine [vollständiger benutzermodusdump](http://msdn.microsoft.com/library/windows/hardware/ff545506.aspx). Beachten Sie, dass ein vollständiger Benutzermodusdump nicht mit einer Dumpdatei mit Heapinformationen identisch ist.  
   
--   So debuggen Sie mit der [SOS.dll (SOS-Debugerweiterung)](/dotnet/framework/tools/sos-dll-sos-debugging-extension) in Visual Studio, installieren Sie die Debugtools für Windows, die Bestandteil des Windows Treiber Treiberkits (WDK) ist. Finden Sie unter [Windows 8.1 Preview: Herunterladen von Kits,-Bits und-Tools](http://msdn.microsoft.com/library/windows/hardware/bg127147.aspx).  
+-   So debuggen Sie mit der [SOS.dll (SOS-Debugerweiterung)](/dotnet/framework/tools/sos-dll-sos-debugging-extension) in Visual Studio müssen Sie die Debugtools für Windows, die Teil der Installieren der [Windows Treiber Treiberkits (WDK)](/windows/hardware/windows-driver-kit) 
   
 ##  <a name="BKMK_Create_a_dump_file"></a>Erstellen einer Dumpdatei  
  So erstellen Sie eine Dumpdatei mit Visual Studio  

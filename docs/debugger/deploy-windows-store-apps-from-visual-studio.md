@@ -1,7 +1,7 @@
 ---
 title: Bereitstellen von uwp-apps aus Visual Studio | Microsoft Docs
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 01/16/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-debug
@@ -12,20 +12,18 @@ dev_langs:
 - VB
 - FSharp
 - C++
-ms.assetid: ef3a0f36-bfc9-4ca0-aa61-18261f619bff
 caps.latest.revision: "14"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: 95f009ca761d4d978fb5e5a9323722e5dfc34cb8
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 28b1897fad45ae0c2bd174c39433645caf011f09
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="deploy-uwp-apps-from-visual-studio"></a>Bereitstellen von uwp-apps aus Visual Studio
-![Gilt nur für Windows](../debugger/media/windows_only_content.png "Windows_only_content")  
   
  Die Bereitstellungsfunktion von Visual Studio erstellt und registriert uwp-apps, die mit Visual Studio auf einem Zielgerät erstellt werden. Wie genau die App registriert wird, hängt davon ob, ob sich das Zielgerät lokal oder remote befindet:  
   
@@ -59,7 +57,7 @@ ms.lasthandoff: 01/10/2018
 Sie müssen auf einem Windows 10-Remotegerät aktivieren [Entwicklermodus](/windows/uwp/get-started/enable-your-device-for-development). Auf Windows 10-Geräten, die mit der Ersteller des Update oder später, die Remoteserver-Verwaltungstools werden automatisch installiert, wenn Sie Ihre app bereitstellen. Weitere Informationen finden Sie unter [eine installierte app-Paket Debuggen](../debugger/debug-installed-app-package.md).
 
 > [!NOTE]
-> Unter Windows 8.1 und Pre-Ersteller-Update-Versionen von Windows 10 müssen den Remotetools für Visual Studio muss auf dem Remotegerät installiert sein, und der Remotedebugger ausgeführt werden muss. Auf Windows 8.1 müssen Sie auch eine Entwicklerlizenz installieren.
+> Bei Pre-Ersteller-Update-Versionen von Windows 10 die Remotetools für Visual Studio muss auf dem Remotegerät installiert sein und muss der Remotedebugger ausgeführt werden.
   
 Bei der Bereitstellung wird der Remotedebugger-Netzwerkkanal verwendet, um die App-Dateien an das Remotegerät zu senden.  
   
@@ -117,5 +115,6 @@ Bei der Bereitstellung wird der Remotedebugger-Netzwerkkanal verwendet, um die A
 -   Legen Sie auf der Debugeigenschaftenseite für JavaScript den Wert für **Anwendung starten** auf **Ja**fest.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Eine installierte app-Paket Debuggen](../debugger/debug-installed-app-package.md).   
+ [Erweiterte Optionen Remotebereitstellung](/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps#advanced-remote-deployment-options)  
+ [Debuggen Sie eine installierte app-Paket](../debugger/debug-installed-app-package.md)   
  [Ausführen von apps aus Visual Studio](../debugger/run-store-apps-from-visual-studio.md)

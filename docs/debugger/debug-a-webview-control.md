@@ -18,16 +18,15 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: 40c3a112d77e7e00d95aaa92a77a3b6739c96293
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 8c463bc443540e136b2cffd1a4abdda2cc543d05
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="debug-a-webview-control-in-a-uwp-app"></a>Debuggen eines WebView-Steuerelements in einer uwp-App
-![Gilt für Windows und Windows Phone](../debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
   
- Um `WebView`-Steuerelemente in einer Windows-Runtime-App zu überprüfen und zu debuggen, können Sie Visual Studio so konfigurieren, dass es den Skriptdebugger anfügt, wenn Sie Ihre App starten. Ab Visual Studio 2013 Update 2 haben Sie zwei Möglichkeiten für die Interaktion mit den `WebView`-Steuerelementen bei Verwendung des Debuggers:  
+ Um `WebView`-Steuerelemente in einer Windows-Runtime-App zu überprüfen und zu debuggen, können Sie Visual Studio so konfigurieren, dass es den Skriptdebugger anfügt, wenn Sie Ihre App starten. Haben Sie zwei Möglichkeiten für die Interaktion mit `WebView` steuert die Verwendung des Debuggers:  
   
 -   Öffnen der [DOM Explorer](../debugger/quickstart-debug-html-and-css.md) für eine `WebView` Instanz, und prüfen Sie DOM-Elemente, untersuchen Sie CSS-formatvorlagenprobleme und Testen Sie dynamisch gerenderte Änderungen an Formatvorlagen.  
   

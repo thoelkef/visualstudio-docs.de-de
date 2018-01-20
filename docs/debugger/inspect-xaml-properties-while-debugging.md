@@ -13,11 +13,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: 70ca76a3b611b0490def98b1a24936f71ca42e0c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 40ff41cc6728244d11e93541057af1cb525c7af3
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="inspect-xaml-properties-while-debugging"></a>Überprüfen von XAML-Eigenschaften beim Debuggen
 Sie erhalten eine Echtzeitansicht Ihres ausgeführten XAML-Codes mit dem **Live Visual Tree** und **Live Property Explorer**. Diese Tools bieten Ihnen eine Strukturansicht der Benutzeroberflächenelemente Ihrer ausgeführten XAML-Anwendung, und Sie zeigen Ihnen Runtime-Eigenschaften der von Ihnen ausgewählten Benutzeroberflächenelemente an.  
@@ -27,7 +27,6 @@ Sie erhalten eine Echtzeitansicht Ihres ausgeführten XAML-Codes mit dem **Live 
 |App-Typ|Betriebssystem und Tools|  
 |-----------------|--------------------------------|  
 |Windows Presentation Foundation-Anwendungen (4.0 und höher)|Windows 7 und höher|  
-|Windows 8.1 und Windows Phone 8.1 apps|Windows 10 und höher, mit der [Windows 10 SDK](https://dev.windows.com/en-us/downloads/windows-10-sdk)|  
 |Universelle Windows-Apps|Windows 10 und höher, mit der [Windows 10 SDK](https://dev.windows.com/en-us/downloads/windows-10-sdk)|  
   
 ## <a name="looking-at-elements-in-the-live-visual-tree"></a>Elemente in Visuelle Echtzeitstruktur  

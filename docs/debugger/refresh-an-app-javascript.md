@@ -1,5 +1,5 @@
 ---
-title: Aktualisieren Sie eine universelle Windows-Plattform oder Windows 8.1-App | Microsoft Docs
+title: Aktualisieren eine uwp-app | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -23,16 +23,15 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: 636f88313d53625e5bb778ffe7bebc8f891ed4bd
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: ef42c0208b973707294a842376ef737216e13774
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
-# <a name="refresh-a-uwp-or-windows-81-app"></a>Aktualisieren Sie eine universelle Windows-Plattform oder Windows 8.1-App
-![Gilt für Windows und Windows Phone](../debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
+# <a name="refresh-a-uwp-app-in-visual-studio"></a>Aktualisieren einer uwp-app in Visual Studio
   
- Sie können Änderungen an Code vornehmen, während Sie Debuggen, und aktualisieren Sie eine uwp-app mit JavaScript durch Auswählen der **Windows-app aktualisieren** auf die Schaltfläche der **Debuggen** Symbolleiste. Durch Auswählen dieser Schaltfläche wird die App erneut geladen, ohne den Debugger zu beenden und erneut zu starten. Die Aktualisierungsfunktion ermöglicht es Ihnen, HTML, CSS und JavaScript-Code zu ändern und das Ergebnis schnell anzuzeigen. Diese Funktion ist für universelle Windows-Plattform und Windows 8.1-apps unterstützt.  
+ Sie können Änderungen an Code vornehmen, während Sie Debuggen, und aktualisieren Sie eine uwp-app mit JavaScript durch Auswählen der **Windows-app aktualisieren** auf die Schaltfläche der **Debuggen** Symbolleiste. Durch Auswählen dieser Schaltfläche wird die App erneut geladen, ohne den Debugger zu beenden und erneut zu starten. Die Aktualisierungsfunktion ermöglicht es Ihnen, HTML, CSS und JavaScript-Code zu ändern und das Ergebnis schnell anzuzeigen. Diese Funktion wird für uwp-apps unterstützt.  
   
  Aktualisieren hält weder den App-Zustand aufrecht noch reflektiert es die folgenden Änderungen zur App:  
   
@@ -51,37 +50,19 @@ ms.lasthandoff: 12/22/2017
   
 ### <a name="to-refresh-an-app"></a>So aktualisieren Sie eine App  
   
-1.  Erstellen Sie in Visual Studio ein neues Projekt mit der Navigations-App-Projektvorlage.  
-  
-     Dies kann uwp-app oder eine Windows 8.1-app sein.  
-  
-2.  Wählen Sie bei geöffneter Vorlage in Visual Studio ein Debugziel aus.  
-  
-     Wenn das aktuelle Startprojekt ein Windows Phone-Projekt ist, wählen Sie einen Windows Phone-Emulator als Debugziel aus. Wählen Sie andernfalls **Simulator** oder **lokalen**.  
+1.  Wählen Sie mit dem Ihr uwp-Projekt in Visual Studio geöffnet, **lokalen** als Debugziel.
   
      ![Debugzielliste auswählen](../debugger/media/js_select_target.png "JS_Select_Target")  
   
 3.  Drücken Sie F5, um die App im Debugmodus auszuführen.  
   
-4.  Wechseln Sie zu Visual Studio. (Drücken Sie F12.)  
+4.  Wechseln Sie zu Visual Studio. 
   
-5.  In **Projektmappen-Explorer**in der **Seiten** > **home** Ordner, öffnen die Datei "Home.HTML".  
-  
-6.  Ändern Sie den Seitentiteltext von  
-  
-    ```html  
-    Welcome to yourAppName!  
-    ```  
-  
-     in einen Text wie den folgenden:  
-  
-    ```html  
-    Hello!  
-    ```  
+5.  Bearbeiten Sie auf der Homepage Ihrer uwp-App einige der HTML-Datei aus.
   
 7.  Klicken Sie auf die **Windows-app aktualisieren** Schaltfläche, die wie folgt: ![aktualisieren Sie Windows-app-Schaltfläche](../debugger/media/js_refresh.png "JS_Refresh"). (Oder drücken Sie F4)  
   
-8.  Wechseln Sie zur App. Die App wird erneut geladen, ohne dass der Debugger neu gestartet wird, und der neue Seitentitel wird angezeigt.  
+8.  Wechseln Sie zur App. Die app wird erneut geladen, und der aktualisierte HTML-Code wird verwendet, um die app zu rendern.
   
 ## <a name="see-also"></a>Siehe auch  
  [Schnellstart: Debuggen von HTML und CSS](../debugger/quickstart-debug-html-and-css.md)

@@ -24,11 +24,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 36cdf6538a1a9f258eef0c251d14884b64ca70c2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 82ec43b02895c2067b04f52f893184a82dd0f36b
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="edit-and-continue-visual-basic"></a>Bearbeiten und Fortfahren (Visual Basic)
 Bearbeiten und Fortfahren ist ein Feature von [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]-Debuggen, mit dem Sie den Code ändern können, während der Unterbrechungsmodus ausgeführt wird. Nachdem Codebearbeitungen übernommen wurden, können Sie die Ausführung mit den neuen Änderungen fortsetzen und deren Auswirkung beobachten.  
@@ -42,7 +42,7 @@ Bearbeiten und Fortfahren ist ein Feature von [!INCLUDE[vbprvb](../code-quality/
  Bearbeiten und Fortfahren wird nur in uwp-apps für Windows 10 und X86- und X64-apps, die auf .NET Framework 4.6 abzielen unterstützt desktop oder höhere Versionen, die (das .NET Framework ist nur eine desktop-Version).
 
  > [!NOTE]
- > Nicht unterstützte apps und Plattformen gehören ASP.NET 5, Silverlight 5, Windows Phone und Windows Phone-Emulator und Windows 8.1.
+ > Nicht unterstützte apps und Plattformen gehören ASP.NET 5, Silverlight 5 und Windows 8.1.
   
  Bearbeiten und Fortfahren wird nicht unterstützt, beim Starten des Debuggens mit **an den Prozess anhängen**. Bearbeiten und Fortfahren wird nicht unterstützt, optimiertem Code oder gemischten verwalteten und nativen Code. Weitere Informationen finden Sie unter [unterstützte Codeänderungen (C#- und Visual Basic](../debugger/supported-code-changes-csharp.md).
   

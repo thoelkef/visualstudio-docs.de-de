@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: dotnet
-ms.openlocfilehash: 6147390fb8551ea472590525cb36d9dc210b9a84
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 628aad6f1ae097ea040a6043db1ef12f0b60a7a4
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="supported-code-changes-c-and-visual-basic"></a>Unterstützte codeänderungen (C#- und Visual Basic)
 Die Funktion "Bearbeiten und Fortfahren" behandelt die meisten Arten von Codeänderungen in Methodentexten. Die meisten Änderungen außerhalb von Methodentexten sowie einige Änderungen in Methodentexten können jedoch während des Debuggens nicht übernommen werden. Wenn Sie diese nicht unterstützten Änderungen übernehmen möchten, müssen Sie das Debuggen beenden und mit einer neuen Version des Codes erneut starten.
@@ -86,7 +86,7 @@ Die folgende Tabelle zeigt die Änderungen, die in c# und Visual Basic-Code wäh
 
 ## <a name="unsupported-app-scenarios"></a>Nicht unterstützter app-Szenarien
 
-Nicht unterstützte apps und Plattformen gehören ASP.NET 5, Silverlight 5, Windows Phone und Windows Phone-Emulator und Windows 8.1.
+Nicht unterstützte apps und Plattformen gehören ASP.NET 5, Silverlight 5 und Windows 8.1.
 
 > [!NOTE]
 > Apps, die unterstützt werden universelle Windows-Plattform sind, in Windows 10 und X86- und X64-apps, die auf .NET Framework 4.6 abzielen desktop oder höhere Versionen, die (das .NET Framework ist nur eine desktop-Version).

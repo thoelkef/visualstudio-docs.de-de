@@ -1,5 +1,5 @@
 ---
-title: Debuggen von HTML und CSS (universelle Windows-Plattform und Windows 8.1-Apps) | Microsoft Docs
+title: Debuggen von HTML und CSS in uwp-apps | Microsoft Docs
 ms.custom: 
 ms.date: 07/17/2017
 ms.reviewer: 
@@ -8,32 +8,26 @@ ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords: VS.WebClient.DomExplorer
-dev_langs:
-- CSharp
-- VB
-- FSharp
-- C++
+dev_langs: JavaScript
 helpviewer_keywords:
 - debugging, CSS
 - debugging, HTML
 - debugging, JavaScript [UWP apps]
 - DOM Explorer [UWP apps]
-ms.assetid: 6d156cff-36c6-425a-acf8-e1f02d4f7869
 caps.latest.revision: "101"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: 59ec4b4a7b0f8c924c09608b8cda34473820c1f5
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: bb410c6279b2910dfcb1af98ff75293d60a7e3e7
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 01/19/2018
 ---
-# <a name="debug-html-and-css-in-uwp-and-windows-81-apps"></a>Debuggen von HTML und CSS in UWP und Windows 8.1-Apps
-![Gilt für Windows und Windows Phone](../debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
+# <a name="debug-html-and-css-in-uwp-apps-in-visual-studio"></a>Debuggen von HTML und CSS in uwp-apps in Visual Studio
   
- Visual Studio bietet für JavaScript-Apps umfassende Debugfunktionen, die Internet Explorer- und Visual Studio-Entwicklern zum großen Teil vertraut sind. Diese Features werden für UWP-apps unterstützt [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)], Windows Phone-apps und apps mit Visual Studio-Tools für Apache Cordova erstellt.  
+ Visual Studio bietet für JavaScript-Apps umfassende Debugfunktionen, die Internet Explorer- und Visual Studio-Entwicklern zum großen Teil vertraut sind. Diese Features werden für uwp-apps und mithilfe von Visual Studio-Tools für Apache Cordova erstellte apps unterstützt.  
   
  Mit dem interaktiven Debuggingmodell der DOM-Überprüfungstools können Sie die gerenderte HTML und den CSS-Code anzeigen und bearbeiten. Dies alles ist möglich, ohne dass der Debugger beendet und neu gestartet werden muss.
   
@@ -67,11 +61,11 @@ ms.lasthandoff: 01/10/2018
   
 1.  Erstellen Sie in Visual Studio eine neue Projektmappe, indem Sie **Datei** > **Neues Projekt**.  
   
-2.  Wählen Sie **JavaScript** > **Store**und dann entweder **Windows-Apps** oder **Windows Phone-Apps**aus. Wählen Sie anschließend **Leere App**.  
+2.  Wählen Sie **JavaScript** > **universellen Windows-**, und wählen Sie dann **WinJS App**.  
   
 3.  Geben Sie einen Namen für das Projekt ein, beispielsweise `FlipViewApp`, und wählen Sie **OK** aus, um die App zu erstellen.  
   
-4.  Fügen Sie dem BODY-Element von "default.html" folgenden Code hinzu:  
+4.  Das Textelement der "Index.HTML" Fügen Sie Code hinzu:  
   
     ```html  
     <div id="flipTemplate" data-win-control="WinJS.Binding.Template"  
@@ -129,9 +123,9 @@ ms.lasthandoff: 01/10/2018
   
         function updateImages() {  
   
-            pages.setAt(0, { flipImg: "http://go.microsoft.com/fwlink/?LinkID=223195" });  
-            pages.setAt(1, { flipImg: "http://go.microsoft.com/fwlink/?LinkID=223196" });  
-            pages.setAt(2, { flipImg: "http://go.microsoft.com/fwlink/?LinkID=223197" });  
+            pages.setAt(0, { flipImg: "http://public-domain-photos.com/free-stock-photos-1/flowers/cactus-76.jpg" });  
+            pages.setAt(1, { flipImg: "http://public-domain-photos.com/free-stock-photos-1/flowers/cactus-77.jpg" });  
+            pages.setAt(2, { flipImg: "http://public-domain-photos.com/free-stock-photos-1/flowers/cactus-78.jpg" });  
         };  
   
         app.oncheckpoint = function (args) {  
@@ -148,19 +142,17 @@ ms.lasthandoff: 01/10/2018
     })();  
     ```  
   
-     Die folgende Abbildung zeigt das Ziel beim Ausführen dieser App im Windows Phone-Emulator (im Simulator ist die Anzeige ähnlich). Um diesen Status für die App zu erreichen, müssen Sie allerdings zunächst eine Anzahl von Fehlern beheben.  
+     Die folgende Abbildung zeigt, was wir möchten, um festzustellen, ob beim Ausführen dieser app. Um diesen Status für die App zu erreichen, müssen Sie allerdings zunächst eine Anzahl von Fehlern beheben.  
   
      ![FlipView-app mit erwarteten Ergebnissen](../debugger/media/js_dom_appfixed.png "JS_DOM_AppFixed")  
   
-7.  Wählen Sie in der Dropdownliste neben der Schaltfläche **Debuggen starten** auf der Symbolleiste **Debuggen** entweder die Option **Simulator** oder **Emulator 8.1 WVGA 512MB** aus.  
+7.  Wählen Sie **lokaler Computer** aus der Dropdown-Liste neben der **Debuggen** Schaltfläche auf der **Debuggen** Symbolleiste:  
   
      ![Debugzielliste auswählen](../debugger/media/js_select_target.png "JS_Select_Target")  
   
 8.  Wählen Sie **Debuggen** > **Simulator**aus oder drücken Sie F5, um die Anwendung im Debugmodus auszuführen.  
   
-     Dadurch wird die Anwendung im Simulator oder im Windows Phone-Emulator ausgeführt. Es wird jedoch ein fast gänzlich leeres Fenster angezeigt, da das Format einige Fehler enthält. Das erste `FlipView` -Bild wird in einem kleinen Quadrat neben der Bildschirmmitte angezeigt.  
-  
-9. Wenn Sie die App im Simulator ausführen, wählen Sie den Symbolleistenbefehl **Auflösung ändern** auf der rechten Seite des Simulators aus, um eine Bildschirmauflösung von 1280 x 800 zu konfigurieren. Dadurch entsprechen die Werte, die in den folgenden Schritten gezeigt werden, denen, die Sie im Simulator sehen.  
+     Dadurch wird die app ausgeführt, aber Sie können ein fast gänzlich leeres Fenster werden angezeigt, da die Formatvorlage einige Fehler enthält. Das erste `FlipView` -Bild wird in einem kleinen Quadrat neben der Bildschirmmitte angezeigt.  
   
 10. Wechseln Sie zu Visual Studio, und wählen Sie die Registerkarte **DOM Explorer** aus.  
   
@@ -188,16 +180,16 @@ ms.lasthandoff: 01/10/2018
   
 14. Doppelklicken Sie im Hauptfenster von DOM Explorer auf das Inlineformat für die Höhe und die Breite des DIV-Elements `fView` . Sie können die Werte jetzt hier bearbeiten. In diesem Szenario möchten wir sie vollständig entfernen.  
   
-15. Wählen Sie `width: 100px;height: 100px;`aus, drücken Sie die ENTF-TASTE und drücken Sie die EINGABETASTE. Nachdem Sie die EINGABETASTE gedrückt haben, werden die neuen Werte sofort im Simulator oder im Windows Phone-Emulator dargestellt, obwohl die Debugsitzung nicht beendet wurde.  
+15. Doppelklicken Sie im Hauptfenster auf `width: 100px;height: 100px;`, drücken Sie die **löschen** Schlüssel, und drücken Sie dann die **EINGABETASTE**. Nachdem Sie die EINGABETASTE drücken, werden die neuen Werte sofort in der app dargestellt, obwohl Sie die Debugsitzung nicht beendet wurde.  
   
     > [!IMPORTANT]
     >  Ebenso wie die Attributwerte im Fenster "DOM Explorer" können Sie auch Werte aktualisieren, die auf den Registerkarten **Formatvorlagen**, **Berechnet**und **Layout** angezeigt werden. Weitere Informationen finden Sie unter [Debuggen von CSS-Stilen mithilfe von DOM Explorer](../debugger/debug-css-styles-using-dom-explorer.md) und [Debuggen von Layout mithilfe von DOM Explorer](../debugger/debug-layout-using-dom-explorer.md).  
   
-16. Wechseln Sie zur App, indem Sie den Simulator bzw. Windows Phone-Emulator auswählen oder ALT+TAB drücken.  
+16. Wechseln Sie zur app durch auswählen oder Alt + Tab drücken.  
   
      Das `FlipView` -Steuerelement wird jetzt größer als die Bildschirmgröße vom Simulator oder Windows Phone-Emulator dargestellt. Dies ist nicht das beabsichtigte Ergebnis. Wechseln Sie zur weiteren Untersuchung zu Visual Studio zurück.  
   
-17. Wählen Sie im DOM Explorer die Registerkarte **Berechnet** erneut aus, und öffnen Sie die Höhenregel. Das fView-Element zeigt weiterhin einen Wert von 100 % an, wie vom CSS erwartet. Der berechnete Wert stimmt aber mit der Bildschirmhöhe des Simulators überein (z. B. 800 oder 667,67 Pixel), was für diese App nicht gewünscht ist. Sie können zur weiteren Untersuchung die Höhe und Breite für das `fView` DIV-Element entfernen.  
+17. Wählen Sie im DOM Explorer die Registerkarte **Berechnet** erneut aus, und öffnen Sie die Höhenregel. Das fView-Element zeigt weiterhin einen Wert von 100 % an, wie vom CSS erwartet, aber der berechnete Wert wird die app Bildschirmhöhe (z. B. 800, 667,67 Pixel oder ein anderer Wert), was wir für diese app nicht gewünscht ist. Im nächsten Schritt untersuchen wir entfernen die Höhe und Breite für das `fView` DIV-Element.  
   
 18. Deaktivieren Sie auf der Registerkarte **Formatvorlagen** die Höhen- und Breiteneigenschaften für die `#fView` CSS-Auswahl.  
   
@@ -209,13 +201,11 @@ ms.lasthandoff: 01/10/2018
   
 20. Klicken Sie zur weiteren Untersuchung zu Visual Studio wechseln, und wählen Sie die **Layout** Registerkarte feldmodell des Elements gesucht werden soll.  
   
-     Auf der Registerkarte **Layout** sehen Sie diese Werte:  
+     In der **Layout** Registerkarte sehen Sie Folgendes:  
   
-    -   Für den Simulator: 320 px (Offset) und 320 px (Rand).  
+    -   255px (Offset) und 255px (Rand) oder ähnliche Werte, je nach der geräteauflösung Ihres. 
   
-    -   Für den Windows Phone-Emulator: 100 px (Offset) und 100 px (Rand).  
-  
-     Die folgende Abbildung zeigt die Registerkarte **Layout** bei Verwendung des Windows Phone-Emulators (100 px Offset und Rand).  
+     Die folgende Abbildung zeigt wie die **Layout** Registerkarte aussieht, wenn Sie einen Emulator mit 100 px Offset und Rand verwenden).  
   
      ![Registerkarte "DOM Explorer-Layout"](../debugger/media/js_dom_explorer_layout.png "JS_DOM_Explorer_Layout")  
   
@@ -265,24 +255,8 @@ ms.lasthandoff: 01/10/2018
 > [!NOTE]
 >  Im Windows Phone-Emulator wird das Hervorheben von Elementen durch Zeigen mit dem Mauszeiger nur teilweise unterstützt.  
   
- Ein Beispiel für die Auswahl von Elementen mithilfe der **Select-Element** Schaltfläche, finden Sie unter [Debuggen von CSS-Stilen mithilfe von DOM Explorer](../debugger/debug-css-styles-using-dom-explorer.md).  
-  
-##  <a name="BrowserSupport"></a> Unterstützung für Browser und Plattform  
- Im DOM Explorer und der JavaScript-Konsolenfenster werden auf den folgenden Plattformen unterstützt:  
-  
--   Uwp-apps, [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] und Windows Phone-apps mit JavaScript und HTML  
-  
--   Internet Explorer 11 wird unter [!INCLUDE[win81](../debugger/includes/win81_md.md)]ausgeführt  
-  
--   Internet Explorer 10 wird unter [!INCLUDE[win8](../debugger/includes/win8_md.md)]ausgeführt  
-  
- Klicken Sie [hier](http://go.microsoft.com/fwlink/?LinkID=232448) , um [!INCLUDE[win8](../debugger/includes/win8_md.md)] und Visual Studio herunterzuladen.  
-  
 ## <a name="see-also"></a>Siehe auch  
  [Debug apps in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)   
- [Debuggen von CSS-Stilen mithilfe von DOM Explorer](../debugger/debug-css-styles-using-dom-explorer.md)   
- [Debuggen von Layout mithilfe von DOM Explorer](../debugger/debug-layout-using-dom-explorer.md)   
- [Anzeigen von DOM-Ereignislistenern](../debugger/view-dom-event-listeners.md)   
  [Aktualisieren einer app (JavaScript)](../debugger/refresh-an-app-javascript.md)   
  [Debuggen eines WebView-Steuerelements](../debugger/debug-a-webview-control.md)   
  [Tastenkombinationen](../debugger/keyboard-shortcuts-html-and-javascript.md)   

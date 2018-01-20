@@ -15,11 +15,11 @@ manager: ghogen
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 32d58ec27d54b1b9c731747b01ad1f59d1d222b7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 5317c06dc5ff6515627e562d576785c2ff25a98a
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>Debuggen von live ASP.NET Azure-apps, die mit dem Momentaufnahme-Debugger
 
@@ -47,9 +47,12 @@ Darüber hinaus wird der Momentaufnahme-Debugger nur für Visual Studio 2017 Ent
 
    ![Starten des Debuggers Momentaufnahme](../debugger/media/snapshot-launch.png "Starten des Debuggers Momentaufnahme")
 
-    Die zum ersten Mal auswählen **Snapshot-Debugger anfügen**, Sie werden aufgefordert, den Momentaufnahme-Debugger für Ihren Azure App Service zu installieren. Diese Installation erfordert einen Neustart des Ihren Azure App Service. 
+    Die zum ersten Mal auswählen **Snapshot-Debugger anfügen**, Sie werden aufgefordert, den Momentaufnahme-Debugger websiteerweiterung für Ihren Azure App Service zu installieren. Diese Installation erfordert einen Neustart des Ihren Azure App Service. 
 
    Visual Studio ist jetzt im Debugmodus Momentaufnahme.
+
+    > [!NOTE]
+    > Die websiteerweiterung Application Insights unterstützt auch die Momentaufnahme zu debuggen. Wenn Sie eine Fehlermeldung "websiteerweiterung veraltet" auftreten, finden Sie unter [Problembehandlung, Tipps und bekannte Probleme für das Debuggen von Momentaufnahme](../debugger/debug-live-azure-apps-troubleshooting.md) zum Aktualisieren von Details.
 
    ![Momentaufnahme Debugmodus](../debugger/media/snapshot-message.png "Momentaufnahme Debugmodus")
 
@@ -130,7 +133,7 @@ Zusätzlich zum Erstellen einer Momentaufnahme aus, wenn eine Snappoint erreicht
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-- Gewusst wie: Überprüfen von Variablen beim Anzeigen einer Momentaufnahme finden Sie unter [Debbuger Feature Tour](../debugger/debugger-feature-tour.md).
+- Gewusst wie: Überprüfen von Variablen beim Anzeigen einer Momentaufnahme finden Sie unter [Debugger Feature Tour](../debugger/debugger-feature-tour.md).
 - Anzeigen der [– häufig gestellte Fragen zum Debuggen von Momentaufnahme](../debugger/debug-live-azure-apps-faq.md).
 - Ansicht [Problembehandlung, Tipps und bekannte Probleme für das Debuggen von Momentaufnahme](../debugger/debug-live-azure-apps-troubleshooting.md).
 - Wenn Sie möchten anzeigen von Momentaufnahmen im Application Insights, wenn Ihre app auf eine Ausnahme trifft, können Sie dies tun. Weitere Informationen finden Sie unter [Momentaufnahmen auf Ausnahmen in .NET apps Debuggen](/azure/application-insights/app-insights-snapshot-debugger). Application Insights unterstützt zusätzlich zu den Azure App Service Service Fabric-apps.
