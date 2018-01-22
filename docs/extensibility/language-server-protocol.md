@@ -13,11 +13,11 @@ author: gregvanl
 ms.author: gregvanl
 manager: ghogen
 ms.workload: vssdk
-ms.openlocfilehash: 79022af292161d30440a01749ecc929ce7f3b511
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 269c19410207e47f233eadfa984a84a7c8445743
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="language-server-protocol"></a>Language-Server-Protokoll
 
@@ -39,11 +39,11 @@ LSP wurde mit der Zeit weiterentwickelt und heute sie befindet sich auf Version 
 
 Ungefähr zur selben Zeit gestartet Microsoft arbeiten auf einem Server TypeScript-Sprache, mit der Idee TypeScript in Editoren, z. B. Emacs und Sublime Text zu unterstützen. In dieser Implementierung ein Editors kommuniziert über dem Stdin / "stdout", bei denen die TypeScript-Serverprozess und eine JSON-Nutzlast, die vom Debugger Protokoll V8 Inspiration für Anforderungen und-Antworten verwendet. Die TypeScript-Server wurde in die Sublime TypeScript-Plug-in und Visual Studio Code zum Bearbeiten von umfangreichen TypeScript integriert.
 
-Gestartet wurde in integrierten zwei unterschiedliche Sprachen Server haben, das Visual Studio Code-Team ein common Language-Server-Netzwerkprotokoll für Editoren und IDEs zu untersuchen. Ein häufig verwendetes Protokoll ermöglicht einen Sprachanbieter einsprachige Server zu erstellen, der von anderen IDEs genutzt werden können. Ein Server-Consumer Sprache muss nur einmal implementiert die Clientseite des Protokolls. Dadurch wird eine Win-Win-Situation für das Language-Anbieter und der Consumer Sprache.
+Nach der Integration von zwei Servern für unterschiedliche Sprachen, gestartet das Visual Studio Code-Team ein common Language-Server-Netzwerkprotokoll für Editoren und IDEs zu untersuchen. Ein häufig verwendetes Protokoll ermöglicht einen Sprachanbieter einsprachige Server zu erstellen, der von anderen IDEs genutzt werden können. Ein Server-Consumer Sprache muss nur einmal implementiert die Clientseite des Protokolls. Dadurch wird eine Win-Win-Situation für das Language-Anbieter und der Consumer Sprache.
 
-Mit dem Language-Protokoll verwendet, die vom Server TypeScript gestartet, war es mehrere allgemeine und sprachneutral. Das Protokoll wurde mit mehr mithilfe von Visual Studio Code-Sprachen-API für Inspiration Sprachfunktionen. Das Protokoll selbst wird mit JSON-RPC für remote-Aufruf aufgrund seiner Einfachheit und Support-Bibliotheken für viele Programmiersprachen unterstützt.
+Das Serverprotokoll Sprache Einstieg vom TypeScript-Server, erweitern ihn mit Weitere Sprachfunktionen, die von der Sprache Visual Studio Code-API-Inspiration verwendeten Protokolls ab. Das Protokoll wird für den Remoteaufruf aufgrund seiner Einfachheit und vorhandene Bibliotheken mit JSON-RPC gesichert.
 
-Visual Studio Code Team Dogfooded des Protokolls durch die Implementierung von mehreren Linter Language-Servern. Ein Linter Sprache Server reagiert auf Anforderungen an fusselfreien (Überprüfung) eine Datei und gibt eine Menge von erkannte Warnungen und Fehler. Das Ziel war fusselfreien einer Datei als die benutzerbearbeitungen in einem Dokument, das bedeutet, dass sich viele Linting Anforderungen während einer editorsitzung für. Es sinnvoll, zu einem Server einrichten und ausführen, damit ein neuer Prozess für die Linting muss nicht für jeden Benutzer bearbeiten gestartet werden. Mehrere Linter Server implementiert wurden, einschließlich Visual Studio-Code ESLint und TSLint-Erweiterungen. Dieser beiden Linter Server werden sowohl in TypeScript/JavaScript implementiert und auf Node.js ausgeführt. Beide weisen eine Bibliothek, die die Client-als auch Teil des Protokolls implementiert.
+Im VS Team Prototyp des Protokolls durch die Implementierung mehrere Sprache Linter Servern, die auf Antworten auf fusselfreien (Überprüfung) fordert eine Codedatei und einen Satz von erkannte Warnungen und Fehler zurück. Das Ziel war fusselfreien einer Datei als die benutzerbearbeitungen in einem Dokument, das bedeutet, dass sich viele Linting Anforderungen während einer editorsitzung für. Es sinnvoll, einen Server einrichten und ausführen, damit ein neuer Linting-Prozess nicht gestartet werden, damit jeder Benutzer bearbeiten musste gehalten werden. Mehrere Linter Server implementiert wurden, einschließlich Visual Studio-Code ESLint und TSLint-Erweiterungen. Dieser beiden Linter Server werden sowohl in TypeScript/JavaScript implementiert und auf Node.js ausgeführt. Beide weisen eine Bibliothek, die die Client-als auch Teil des Protokolls implementiert.
 
 ## <a name="how-the-lsp-works"></a>Wie funktioniert die LSP
 

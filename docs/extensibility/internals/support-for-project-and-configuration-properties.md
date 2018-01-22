@@ -16,11 +16,11 @@ author: gregvanl
 ms.author: gregvanl
 manager: ghogen
 ms.workload: vssdk
-ms.openlocfilehash: 5ea7b08c95aa2844a65a9a6783774fe32c9e8c50
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e31f4feda55469d2740b32b0eac5d9cfba286d0c
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="support-for-project-and-configuration-properties"></a>Unterstützung für das Projekt und Konfigurationseigenschaften
 Die **Eigenschaften** Fenster in den [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrierten Entwicklungsumgebung (IDE)-Projekt und den Konfigurationseigenschaften anzeigen kann. Sie können eine Eigenschaftenseite für Ihren eigenen Projekttyp bereitstellen, damit der Benutzer die Eigenschaften für die Anwendung festlegen kann.  
@@ -30,7 +30,7 @@ Die **Eigenschaften** Fenster in den [!INCLUDE[vsprvs](../../code-quality/includ
  Das Managed Package Framework for Projects (MPFProj) stellt Hilfsklassen zum Erstellen und verwalten neue Projektsystem bereit. Code und Kompilierung Anweisungen an der Quelle gefunden [MPF für Visual Studio 2013-Projekte -](http://mpfproj12.codeplex.com/).  
   
 ## <a name="persistence-of-project-and-configuration-properties"></a>Dauerhaftigkeit von Projekt- und Konfigurationseigenschaften  
- Projekt-und Konfiguration werden in einer Projektdatei beibehalten, die eine Dateinamenerweiterung, die den Projekttyp zugeordnet sind, wie z. B., .csproj, .vbproj und .myproj verfügt. -Sprachprojekte verwenden in der Regel eine Datei für Prozessvorlagen, um die Projektdatei zu generieren. Es gibt jedoch tatsächlich mehrere Möglichkeiten zum Zuordnen von Projekttypen und Vorlagen. Weitere Informationen finden Sie unter [NIB: Visual Studio-Vorlagen](http://msdn.microsoft.com/en-us/141fccaa-d68f-4155-822b-27f35dd94041) und [Vorlagenbeschreibung-Verzeichnis (. VSDIR)-Dateien](../../extensibility/internals/template-directory-description-dot-vsdir-files.md).  
+ Projekt-und Konfiguration werden in einer Projektdatei beibehalten, die Dateinamenerweiterung, die den Projekttyp zugeordnet sind, wie z. B., .csproj, .vbproj und .myproj verfügt. -Sprachprojekte verwenden in der Regel eine Datei für Prozessvorlagen, um die Projektdatei zu generieren. Es gibt jedoch tatsächlich mehrere Möglichkeiten zum Zuordnen von Projekttypen und Vorlagen. Weitere Informationen finden Sie unter [Vorlagenbeschreibung-Verzeichnis (. VSDIR)-Dateien](../../extensibility/internals/template-directory-description-dot-vsdir-files.md).  
   
  Projekt-und Konfiguration werden durch Hinzufügen von Elementen in der Vorlagendatei erstellt. Diese Eigenschaften stehen dann zu einem Projekt erstellt, die mit den Projekttyp, der diese Vorlage verwendet. [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]Projekte und die MPFProj beide verwenden den [nicht im Build: Übersicht über MSBuild](http://msdn.microsoft.com/en-us/b588fd73-a45b-4706-908f-cc131bccfbde) Schema für die Vorlagendateien. Diese Dateien müssen einen PropertyGroup-Abschnitt für jede Konfiguration. Eigenschaften von Projekten werden in der Regel in den ersten Abschnitt PropertyGroup beibehalten besitzt eine konfigurationsargument, das auf eine null-Zeichenfolge festgelegt.  
   

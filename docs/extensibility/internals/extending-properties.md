@@ -14,16 +14,16 @@ author: gregvanl
 ms.author: gregvanl
 manager: ghogen
 ms.workload: vssdk
-ms.openlocfilehash: 5c47295c1906c6517638bdf8e9c3a55897f38aa1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 26cf161259736dbd2b2e26279842571d62f69352
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="extending-properties"></a>Erweitern von Eigenschaften
 Die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **Eigenschaften** Fenster ist eine universelle Eigenschaftenbrowser für COM- und COM+-Komponenten und unterstützt alle [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Produkte. Die **Eigenschaften** Fenster arbeitet mit `ITypeInfo` geben Informationen und COM+-Metadaten zur Auflistung der Eigenschaften zur Entwurfszeit für das aktuell ausgewählte Objekt in einem anderen Fenster in der integrierten Entwicklungsumgebung (IDE).  
   
- Die **Eigenschaften** Fenster, die geöffnet werden kann, indem Sie auf der Tastatur die Taste F4 drücken oder auswählen **Fenster "Eigenschaften"** auf die **Ansicht** Menübefehl, dient zum Anzeigen und bearbeiten Konfiguration unabhängig, während der Entwurfszeit-Eigenschaften und-Ereignisse ausgewählter Objekte. Die konfigurationsabhängigen Eigenschaften, mit Projektmappen und Projekten, werden angezeigt, auf [Eigenschaftenseiten](../../extensibility/internals/property-pages.md). Weitere Informationen finden Sie unter [NIB: Projekteigenschaften](http://msdn.microsoft.com/en-us/fb126574-24ad-4c96-9b2b-6e1f3879ba50), [Konfigurationsoptionen verwalten](../../extensibility/internals/managing-configuration-options.md), und [NIB: Elementverwaltung in Projekten](http://msdn.microsoft.com/en-us/762e606b-7f44-4b66-97a1-e30a703654a0).  
+ Die **Eigenschaften** Fenster, die geöffnet werden kann, indem Sie auf der Tastatur die Taste F4 drücken oder auswählen **Fenster "Eigenschaften"** auf die **Ansicht** Menübefehl, dient zum Anzeigen und bearbeiten Konfiguration unabhängig, während der Entwurfszeit-Eigenschaften und-Ereignisse ausgewählter Objekte. Die konfigurationsabhängigen Eigenschaften, mit Projektmappen und Projekten, werden angezeigt, auf [Eigenschaftenseiten](../../extensibility/internals/property-pages.md). Weitere Informationen [Konfigurationsoptionen verwalten](../../extensibility/internals/managing-configuration-options.md).  
   
  ![Übersicht über Eigenschaftenfenster](../../extensibility/internals/media/vspropertieswindow.png "VsPropertiesWindow")  
 Eigenschaftenfenster  

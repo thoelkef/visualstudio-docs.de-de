@@ -18,11 +18,11 @@ author: gregvanl
 ms.author: gregvanl
 manager: ghogen
 ms.workload: vssdk
-ms.openlocfilehash: ce1de0467e7e662fd0def096ef6adb042578f8b7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a6649bd45aba299514b40e74b5683368bfd92b41
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="project-type-design-decisions"></a>Projekt Typ Entwurfsentscheidungen
 Bevor Sie einen neuen Projekttyp erstellen, müssen Sie mehrere entwurfsentscheidungen hinsichtlich Ihres Projekttyps. Sie müssen entscheiden, welche Arten von Projekten enthaltenen Elemente, wie die Projektdateien beibehalten werden und welche Verpflichtung Modell Sie verwenden möchten.  
@@ -32,7 +32,7 @@ Bevor Sie einen neuen Projekttyp erstellen, müssen Sie mehrere entwurfsentschei
   
  Die Elemente in einem Projekt kann auf Dateien können, oder es abstrakter Objekte wie z. B. die Objekte in einer Datenbank-Repository oder datenverbindungen über das Internet. Wenn die Elemente Dateien befinden, kann das Projekt einen Verweis basierenden oder ein Verzeichnis-basiertes Projekt sein.  
   
- In verweisbasierten Projekten können die Elemente in mehr als ein Projekt angezeigt werden. Allerdings befindet sich die eigentliche Datei, die ein Element darstellt, in nur einem Verzeichnis. In der Directory-basierte Projekte vorhanden sind alle Projektelemente in der Verzeichnisstruktur ein. Weitere Informationen finden Sie unter [NIB: Elementverwaltung in Projekten](http://msdn.microsoft.com/en-us/762e606b-7f44-4b66-97a1-e30a703654a0).  
+ In verweisbasierten Projekten können die Elemente in mehr als ein Projekt angezeigt werden. Allerdings befindet sich die eigentliche Datei, die ein Element darstellt, in nur einem Verzeichnis. In der Directory-basierte Projekte vorhanden sind alle Projektelemente in der Verzeichnisstruktur ein.  
   
  Lokale Elemente werden auf demselben Computer gespeichert, auf dem die Anwendung installiert ist. Remote-Elemente können auf einem separaten Server in einem lokalen Netzwerk oder an anderer Stelle im Internet gespeichert werden.  
   
@@ -62,7 +62,6 @@ Bevor Sie einen neuen Projekttyp erstellen, müssen Sie mehrere entwurfsentschei
   
 ## <a name="see-also"></a>Siehe auch  
  [Prüfliste: Erstellen neuen Projekttypen](../../extensibility/internals/checklist-creating-new-project-types.md)   
- [NIB: Elementverwaltung in Projekten](http://msdn.microsoft.com/en-us/762e606b-7f44-4b66-97a1-e30a703654a0)   
  [Öffnen und Speichern von Projektelementen](../../extensibility/internals/opening-and-saving-project-items.md)   
  [Projektdauerhaftigkeit](../../extensibility/internals/project-persistence.md)   
  [Elemente eines Projekt-Modells](../../extensibility/internals/elements-of-a-project-model.md)   

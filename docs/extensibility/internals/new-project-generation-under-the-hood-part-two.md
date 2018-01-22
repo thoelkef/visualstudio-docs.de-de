@@ -16,11 +16,11 @@ author: gregvanl
 ms.author: gregvanl
 manager: ghogen
 ms.workload: vssdk
-ms.openlocfilehash: 91707d75ca71ae7e035322c8a9c25ab6e4befe43
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a35010af9ee0b0d7ad885f607b8fc1e2d54a19ba
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="new-project-generation-under-the-hood-part-two"></a>Neue Projektgenerierung: Hinter den Kulissen Teil 2
 In [neue Projekterstellung: Details, Teil 1](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) wurde erläutert, wie die **neues Projekt** Dialogfeld Feld wird aufgefüllt. Angenommen, Sie haben ausgewählt, eine **Visual C#-Windows-Anwendung**, ausgefüllten der **Namen** und **Speicherort** Textfelder, und klicken auf OK.  
@@ -28,7 +28,7 @@ In [neue Projekterstellung: Details, Teil 1](../../extensibility/internals/new-p
 ## <a name="generating-the-solution-files"></a>Generieren die Projektmappendateien  
  Auswählen einer Anwendungsvorlage leitet [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] extrahieren und öffnen Sie die entsprechenden VSTEMPLATE-Datei, und starten Sie eine Vorlage, um die XML-Befehle in dieser Datei zu interpretieren. Diese Befehle werden in der neuen oder vorhandenen Projektmappe Projekte und Projektelemente erstellen.  
   
- Die Vorlage entpackt Quelldateien, Elementvorlagen, aus dem gleichen ZIP-Ordner, der die VSTEMPLATE-Datei enthält aufgerufen. Die Vorlage übernimmt diese Dateien in das neue Projekt, und sie entsprechend anpassen. Eine Übersicht über Projekt- und Elementvorlagen, finden Sie unter [NIB: Visual Studio-Vorlagen](http://msdn.microsoft.com/en-us/141fccaa-d68f-4155-822b-27f35dd94041).  
+ Die Vorlage entpackt Quelldateien, Elementvorlagen, aus dem gleichen ZIP-Ordner, der die VSTEMPLATE-Datei enthält aufgerufen. Die Vorlage übernimmt diese Dateien in das neue Projekt, und sie entsprechend anpassen.  
   
 ### <a name="template-parameter-replacement"></a>Vorlage Parameterersetzung  
  Wenn die Vorlage zu einem neuen Projekt eine Elementvorlage kopiert, ersetzt es, Vorlagenparameter mit Zeichenfolgen, um die Datei anzupassen. Ein Vorlagenparameter ist eine spezielle Token, das vorangestellt ist, und ein Dollarzeichen gefolgt sind, z. B. $date$.  

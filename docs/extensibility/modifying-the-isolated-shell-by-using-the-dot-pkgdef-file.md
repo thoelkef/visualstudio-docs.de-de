@@ -1,4 +1,5 @@
 ---
+redirect_url: shell/modifying-the-isolated-shell-by-using-the-dot-pkgdef-file
 title: "Ändern von Isolated Shell mithilfe der. PKGDEF-Datei | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
@@ -13,8 +14,7 @@ caps.latest.revision: "27"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 37c517792055c1d4a2026eef5171325622fec661
+ms.openlocfilehash: addeeaa294a81acce6558feb5257fee1344532f8
 ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: de-DE
@@ -49,7 +49,7 @@ Die PKGDEF-Datei unterstützt Einstellungen, die Sie verwenden können, um eine 
   
  Sie können die PKGDEF-Datei Kommentare hinzufügen. Ein einzeiliger Kommentar hat zwei Schrägstriche, wie die ersten beiden Zeichen.  
   
- Eine Liste der Ersatzzeichenfolgen, finden Sie unter [Ersetzung in Zeichenfolgen verwendet. PKGDEF und. Pkgundef Dateien](substitution-strings-used-in-dot-pkgdef-and-dot-pkgundef-files.md).  
+ Eine Liste der Ersatzzeichenfolgen, finden Sie unter [Ersetzung in Zeichenfolgen verwendet. PKGDEF und. Pkgundef Dateien](../extensibility/substitution-strings-used-in-dot-pkgdef-and-dot-pkgundef-files.md).  
   
  In den folgenden Abschnitten wird beschrieben, bestimmte Registrierungswerte, die das Verhalten von Visual Studio-Shell im isolierten Modus beeinflussen. Sie können auch zusätzliche Registrierungswerte für die Anwendung in dieser Datei definieren.  
   
@@ -68,12 +68,12 @@ Die PKGDEF-Datei unterstützt Einstellungen, die Sie verwenden können, um eine 
 |AppName|Zeichenfolge|Der Name der Anwendung. Der Name wird in der Titelleiste des Anwendungsfensters angezeigt.<br /><br /> Der Standardwert ist der Name der Projektmappendatei Anwendung.|  
 |CommandLineLogo|Zeichenfolge|Den Bannertext, wenn die Anwendung in einem Konsolenfenster ausgeführt wird. Diese Einstellung betrifft nur Anwendungen, die Befehlszeilen-Vorgänge zu unterstützen.<br /><br /> Der Standardwert ist "*CompanyName ** SolutionName* Version 1.0.", wobei *CompanyName* ist der Name des Unternehmens bereitgestellt, wenn Windows installiert wurde, und *SolutionName*ist der Name der Projektmappendatei Anwendung.|  
 |DefaultDebugEngine|Zeichenfolge|Die GUID des Standardwerts für das Debuggen Modul für die Anwendung zu nutzen.<br /><br /> Hinweis: Eine leere GUID (Nullen) gibt an, dass die Anwendung eine Standard-Debugging-Modul nicht angegeben werden. Dies ermöglicht dem Debugger wählen Sie das Debugmodul verwenden.<br /><br /> Der Standardwert ist "{00000000-0000-0000-0000-000000000000}".|  
-|DefaultHomePage|Zeichenfolge|Die Standard-URL der Startseite für die interne Webbrowserfenster angezeigt.<br /><br /> Wenn die **Startseite** Option in der Anwendung verfügbar ist, und klicken Sie dann diese Einstellung wirkt sich auch auf den Standardstatus der Option. Weitere Informationen finden Sie unter [Webbrowser, Umgebung, Optionen (Dialogfeld)](../../ide/reference/web-browser-environment-options-dialog-box.md).<br /><br /> Der Standardwert ist die URL des Unternehmens bereitgestellt, wenn Windows installiert wurde.|  
+|DefaultHomePage|Zeichenfolge|Die Standard-URL der Startseite für die interne Webbrowserfenster angezeigt.<br /><br /> Wenn die **Startseite** Option in der Anwendung verfügbar ist, und klicken Sie dann diese Einstellung wirkt sich auch auf den Standardstatus der Option. Weitere Informationen finden Sie unter [Webbrowser, Umgebung, Optionen (Dialogfeld)](../ide/reference/web-browser-environment-options-dialog-box.md).<br /><br /> Der Standardwert ist die URL des Unternehmens bereitgestellt, wenn Windows installiert wurde.|  
 |DefaultProjectsLocation|Zeichenfolge|Der vollständige Pfad des Standardordners Projekte. Ein auf ein Objekt angewendeter<br /><br /> `"DefaultProjectsLocation"="$MyDocuments$\MyVSShellStub\Projects"`<br /><br /> Wenn die **Speicherort der Visual Studio-Projekte** Option in der Anwendung verfügbar ist, und klicken Sie dann diese Einstellung wirkt sich auch auf den Standardstatus der Option. <br /><br /> Der Standardwert ist "$MyDocuments$\\*SolutionName*", wobei *SolutionName* ist der Name der Projektmappendatei Anwendung.|  
-|DefaultSearchPage|Zeichenfolge|Die standardmäßige URL der Suchseite für die interne Webbrowserfenster angezeigt.<br /><br /> Wenn die **Suchseite** Option in der Anwendung verfügbar ist, und klicken Sie dann diese Einstellung wirkt sich auch auf den Standardstatus der Option. Weitere Informationen finden Sie unter [Webbrowser, Umgebung, Optionen (Dialogfeld)](../../ide/reference/web-browser-environment-options-dialog-box.md).<br /><br /> Der Standardwert ist "http://search.live.com".|  
+|DefaultSearchPage|Zeichenfolge|Die standardmäßige URL der Suchseite für die interne Webbrowserfenster angezeigt.<br /><br /> Wenn die **Suchseite** Option in der Anwendung verfügbar ist, und klicken Sie dann diese Einstellung wirkt sich auch auf den Standardstatus der Option. Weitere Informationen finden Sie unter [Webbrowser, Umgebung, Optionen (Dialogfeld)](../ide/reference/web-browser-environment-options-dialog-box.md).<br /><br /> Der Standardwert ist "http://search.live.com".|  
 |DefaultUserFilesFolderRoot|Zeichenfolge|Der Name des Ordners "Benutzer" relativ zum aktuellen Benutzer Ordner Eigene Dokumente des.<br /><br /> Der Standardwert ist der Name der Projektmappendatei Anwendung.|  
 |DisableOutputWindow|dword|Gibt an, ob der isolierte Shell die Fenster "Ausgabe" behandeln soll, als deaktiviert.<br /><br /> Wenn dieser Wert festgelegt ist, auf "true", Visual Studio zeigt keine Solution Manager Buildausgabe in den **Ausgabe** Fenster und blendet das **anzeigen Ausgabefenster bei Buildbeginn** Kontrollkästchen in der  **Projekte und Projektmappen** Kategorie in den **Optionen** (Dialogfeld).<br /><br /> Der Standardwert ist false.|  
-|HideMiscellaneousFilesByDefault|dword|"True" Ausblenden der **sonstige Dateien** standardmäßig im Ordner **Projektmappen-Explorer**, andernfalls "false".<br /><br /> Wenn die **verschiedene Dateien im Projektmappen-Explorer anzeigen** Option in der Anwendung verfügbar ist, und klicken Sie dann diese Einstellung wirkt sich auch auf den Standardstatus der Option. Weitere Informationen finden Sie unter [Dokumente, Umgebung, Optionen (Dialogfeld)](../../ide/reference/documents-environment-options-dialog-box.md).<br /><br /> Der Standardwert ist false.|  
+|HideMiscellaneousFilesByDefault|dword|"True" Ausblenden der **sonstige Dateien** standardmäßig im Ordner **Projektmappen-Explorer**, andernfalls "false".<br /><br /> Wenn die **verschiedene Dateien im Projektmappen-Explorer anzeigen** Option in der Anwendung verfügbar ist, und klicken Sie dann diese Einstellung wirkt sich auch auf den Standardstatus der Option. Weitere Informationen finden Sie unter [Dokumente, Umgebung, Optionen (Dialogfeld)](../ide/reference/documents-environment-options-dialog-box.md).<br /><br /> Der Standardwert ist false.|  
 |HideSolutionConcept|dword|True, um alle Projekte als eigenständige Projekte erstellen, und die Lösung und der Lösung bezogenen Befehle für eigenständige Projekte standardmäßig ausgeblendet. andernfalls "false".<br /><br /> Wenn die **Projektmappe immer anzeigen** Option in der Anwendung verfügbar ist, und klicken Sie dann diese Einstellung wirkt sich auch auf den Standardstatus der Option.<br /><br /> Der Standardwert ist false.|  
 |NewProjDlgInstalledTemplatesHdr|Zeichenfolge|Der Name für den Visual Studio installiert sein Vorlagen-Header in der **Vorlagen** in Liste der **neues Projekt** (Dialogfeld). Dies ist eine Zeichenfolge oder eine lokalisierbare Ressourcen-ID, die im UI-Anwendungspaket geladen wird.<br /><br /> Der Standardwert ist "*SolutionName* installierte Vorlagen", wobei *SolutionName* ist der Name der Projektmappendatei Anwendung.|  
 |NewProjDlgSlnTreeNodeTitle|Zeichenfolge|Der Name für die **Visual Studio-Projektmappen** Knoten in der **-Projekttypen** -Struktur in der **neues Projekt** (Dialogfeld). Dies ist eine Zeichenfolge oder eine lokalisierbare Ressourcen-ID, die im UI-Anwendungspaket geladen wird.<br /><br /> Der Standardwert ist "*SolutionName* installierte Vorlagen", wobei *SolutionName* ist der Name der Projektmappendatei Anwendung.|  
@@ -122,12 +122,12 @@ Die PKGDEF-Datei unterstützt Einstellungen, die Sie verwenden können, um eine 
 ## <a name="package-menu-item-settings"></a>Paketeinstellungen Menü-Element  
  Der Registrierungsschlüssel [$RootKey$ \Menus] definiert UI Ressourcendateien für die Anwendung.  
   
- Menüelementwerte haben das Format "{*VsUiPackageGuid*}"=" *ResourceId*, *VersionNumber*", wobei *VsUiPackageGuid* ist die GUID des das Anwendungspaket UI *ResourceId* ist der Ressourcenbezeichner der Ressource CTMENU, die die UI-Elemente enthält und *VersionNumber* ist eine virtuelle Versionsnummer für die CTMENU die Ressource. Weitere Informationen finden Sie unter [Interop-Assembly-Befehlshandler registrieren](../internals/registering-interop-assembly-command-handlers.md).  
+ Menüelementwerte haben das Format "{*VsUiPackageGuid*}"=" *ResourceId*, *VersionNumber*", wobei *VsUiPackageGuid* ist die GUID des das Anwendungspaket UI *ResourceId* ist der Ressourcenbezeichner der Ressource CTMENU, die die UI-Elemente enthält und *VersionNumber* ist eine virtuelle Versionsnummer für die CTMENU die Ressource. Weitere Informationen finden Sie unter [Interop-Assembly-Befehlshandler registrieren](../extensibility/internals/registering-interop-assembly-command-handlers.md).  
   
  Standardmäßig wird ein Menüeintrag für das Element in der PKGDEF-Datei für das Anwendungspaket für die Benutzeroberfläche erstellt.  
   
  Fügen Sie für jedes Paket, Menüelemente bereitstellt und, die als Teil der Anwendung verteilt wird ein Menüeintrag-Element für das Paket ein.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Anpassen der isolierten Shells](customizing-the-isolated-shell.md)   
- [. Pkgundef-Dateien](modifying-the-isolated-shell-by-using-the-dot-pkgundef-file.md)
+ [Anpassen der isolierten Shells](../extensibility/customizing-the-isolated-shell.md)   
+ [. Pkgundef-Dateien](../extensibility/modifying-the-isolated-shell-by-using-the-dot-pkgundef-file.md)

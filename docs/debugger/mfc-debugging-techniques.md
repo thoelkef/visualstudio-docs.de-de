@@ -29,11 +29,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 4efe2cfeb769cfaa339c96d5b315718e6697b088
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 1c4acfcd6cf289eae8f8abc58f589b2743b56a40
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="mfc-debugging-techniques"></a>MFC-Debugverfahren
 Die folgenden Debugverfahren können beim Debuggen von MFC‑Programmen hilfreich sein:  
@@ -64,7 +64,7 @@ Die folgenden Debugverfahren können beim Debuggen von MFC‑Programmen hilfreic
     -   [So erstellen Sie eine MFC‑Anwendung mit Debuginformationen für ausgewählte Module](#BKMK_Building_an_MFC_app_with_debug_information_for_selected_modules)  
   
 ##  <a name="BKMK_AfxDebugBreak"></a> AfxDebugBreak  
- MFC bietet eine spezielle [AfxDebugBreak](http://msdn.microsoft.com/Library/c4cd79b9-9327-4db5-a9d6-c4004a92aa30) -Funktion für hart codierte Haltepunkte im Quellcode:  
+ MFC bietet eine spezielle [AfxDebugBreak](/cpp/mfc/reference/diagnostic-services#afxdebugbreak) -Funktion für hart codierte Haltepunkte im Quellcode:  
   
 ```  
 AfxDebugBreak( );  
@@ -149,7 +149,7 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
     |-----------|-----------------|  
     |**allocMemDF**|Aktivieren der Diagnose-Speicherbelegungsfunktion (Standard).|  
     |**delayFreeMemDF**|Verzögern der Speicherfreigabe nach dem Aufrufen von `delete` oder `free` bis zum Programmende. Auf diese Weise belegt das Programm den größtmöglichen Speicherplatz.|  
-    |**checkAlwaysMemDF**|Aufrufen von [AfxCheckMemory](http://msdn.microsoft.com/Library/4644da71-7d14-41dc-adc0-ee9558fd7a28) bei jeder Speicherbelegung oder -freigabe.|  
+    |**checkAlwaysMemDF**|Rufen Sie [AfxCheckMemory](/cpp/mfc/reference/diagnostic-services#afxcheckmemory) jedes Mal, wenn Arbeitsspeicher reserviert oder freigegeben wird.|  
   
      Diese Werte können mit logischen OR-Operationen auch kombiniert werden, z. B.:  
   
