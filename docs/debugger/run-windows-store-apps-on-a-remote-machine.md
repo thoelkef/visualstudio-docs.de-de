@@ -1,5 +1,5 @@
 ---
-title: "Universelle Windows-Plattform und Windows 8.1-apps auf einem Remotecomputer ausführen | Microsoft Docs"
+title: "Uwp-apps auf einem Remotecomputer ausführen | Microsoft Docs"
 ms.custom: 
 ms.date: 01/05/2018
 ms.reviewer: 
@@ -18,35 +18,32 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: 3e27aae0b9a8e57575015d1d8d5baee3803959a9
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: f9d538cbc650de2d704c885a8eff6a897c9ef68e
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 01/19/2018
 ---
-# <a name="run-uwp-and-windows-81-apps-on-a-remote-machine"></a>UWP- und Windows 8.1-apps auf einem Remotecomputer ausführen.  
+# <a name="run-uwp-apps-on-a-remote-machine-in-visual-studio"></a>Führen Sie die uwp-apps auf einem Remotecomputer in Visual Studio
   
-Um eine universelle Windows-Plattform oder Windows 8.1-app auf einem Remotecomputer ausführen, müssen Sie mithilfe der Remotetools für Visual Studio anfügen. Die Remotetools ermöglichen es Ihnen, ausführen, Debuggen, profilieren und Testen einer UWP-app, die auf einem Gerät von einem zweiten Computer ausgeführt wird, auf dem Visual Studio ausgeführt wird. Auf einem Remotegerät ausführen kann besonders dann effektiv sein, wenn der Visual Studio-Computer, die speziell für uwp-apps, wie Toucheingabe, GeoLocation und physische Ausrichtung Funktion nicht unterstützt. In diesem Thema wird beschrieben, wie Sie eine Remotesitzung konfigurieren und starten.
+Um eine uwp-app auf einem Remotecomputer auszuführen, müssen Sie mithilfe der Remotetools für Visual Studio anfügen. Die Remotetools ermöglichen es Ihnen, ausführen, Debuggen, profilieren und Testen einer UWP-app, die auf einem Gerät von einem zweiten Computer ausgeführt wird, auf dem Visual Studio ausgeführt wird. Auf einem Remotegerät ausführen kann besonders dann effektiv sein, wenn der Visual Studio-Computer, die speziell für uwp-apps, wie Toucheingabe, GeoLocation und physische Ausrichtung Funktion nicht unterstützt. In diesem Thema wird beschrieben, wie Sie eine Remotesitzung konfigurieren und starten.
 
 In einigen Szenarien werden die Remotetools automatisch installiert, wenn Sie auf einem Remotegerät bereitstellen.
 
 - Für Windows 10-PCs Ersteller Update oder spätere Versionen ausführen werden die Remotetools automatisch installiert.
 - Remotetools werden für Windows 10 Xbox, IOT und HoloLens Geräte automatisch installiert.
-- Für Windows Phone, Sie müssen physisch am Telefon verbunden werden, müssen Sie entweder eine [Entwicklerlizenz](https://msdn.microsoft.com/en-us/library/windows/apps/xaml/hh974578.aspx) (Windows Phone 8 und 8.1) oder aktivieren Sie [Entwicklermodus](/windows/uwp/get-started/enable-your-device-for-development) (Windows Mobile 10), und Sie müssen Wählen Sie **Gerät** als Debugziel. Remote-Tools sind nicht erforderlich oder unterstützt.
+- Für Windows 10 Mobile, Sie müssen physisch am Telefon verbunden werden, müssen Sie aktivieren [Entwicklermodus](/windows/uwp/get-started/enable-your-device-for-development) und Sie müssen auswählen **Gerät** als Debugziel. Remote-Tools sind nicht erforderlich oder unterstützt.
 
-Für Windows 8.1 und Windows 10-PCs, die ein Pre-Ersteller-Update-Version von Windows ausgeführt müssen Sie die Remotetools auf dem Remotecomputer manuell installieren vor dem Debuggen können. Befolgen Sie die Anweisungen in diesem Thema. 
+Für Windows 10-PCs, einen Prä-Ersteller-Update-Version von Windows ausführen Installieren Sie die Remoteserver-Verwaltungstools auf dem Remotecomputer manuell vor dem Debuggen können. Befolgen Sie die Anweisungen in diesem Thema. 
   
 ##  <a name="BKMK_Prerequisites"></a> Erforderliche Komponenten  
  So debuggen Sie auf einem Remotegerät:  
   
--   Das Remotegerät und der Visual Studio-Computer müssen über ein Netzwerk verbunden oder direkt über USB- oder Ethernet-Kabel verbunden werden. Das Debugging über das Internet wird nicht unterstützt.  
+- Das Remotegerät und der Visual Studio-Computer müssen über ein Netzwerk verbunden oder direkt über USB- oder Ethernet-Kabel verbunden werden. Das Debugging über das Internet wird nicht unterstützt.  
 
-- Das Remotegerät muss für die Entwicklung aktiviert sein.
-
-    - Für Windows 8 und Windows 8.1-Geräte ein [Entwicklerlizenz](https://msdn.microsoft.com/en-us/library/windows/apps/xaml/hh974578.aspx) muss auf dem Remotegerät installiert sein.
-    - Sie müssen für Windows 10-Geräte aktivieren [Entwicklermodus](/windows/uwp/get-started/enable-your-device-for-development). 
+- Sie müssen aktivieren [Entwicklermodus](/windows/uwp/get-started/enable-your-device-for-development). 
   
--   Für Windows 10-PCs vor Windows 10 Creator Update eine Version von Windows 10 ausführen, müssen Sie [installieren und Ausführen der Komponenten zum Remotedebuggen](#BKMK_download).
+- Für Windows 10-PCs vor Windows 10 Creator Update eine Version von Windows 10 ausführen, müssen Sie [installieren und Ausführen der Komponenten zum Remotedebuggen](#BKMK_download).
   
 ##  <a name="BKMK_Security"></a> Sicherheit  
 Standardmäßig **Universal (unverschlüsselte Protocol)** wird unter Windows 10 verwendet. Einzustellen Protokoll sollte nur in vertrauenswürdigen Netzwerken verwendet werden. Die Debugverbindung ist anfällig für böswillige Benutzer, die abfangen und Ändern von Daten zwischen der Entwicklungs- und einen Remotecomputer übergeben werden konnte.
@@ -56,7 +53,7 @@ Standardmäßig **Universal (unverschlüsselte Protocol)** wird unter Windows 10
   
 ##  <a name="BKMK_DirectConnect"></a>Gewusst wie: Herstellen einer Verbindung direkt mithilfe eines USB-Kabels 
 
-Unter Windows 10 können Sie mit einem über USB angeschlossenen Gerät bereitstellen, indem auswählen **Gerät** anstelle von **Remotecomputer** als das Bereitstellungsziel (hierzu können Sie der **Standard** Symbolleiste oder auf der Eigenschaftenseite debugging). Für Windows 8.1 müssen der Remoteserver-Verwaltungstools auf dem Gerät installiert werden, bevor Sie direkt eine Verbindung herstellen können.
+Unter Windows 10 können Sie mit einem über USB angeschlossenen Gerät bereitstellen, indem auswählen **Gerät** anstelle von **Remotecomputer** als das Bereitstellungsziel (hierzu können Sie der **Standard** Symbolleiste oder auf der Eigenschaftenseite debugging).
 
 ##  <a name="BKMK_ConnectVS"></a>Konfigurieren Sie das Visual Studio-Projekt für das Remotedebuggen  
  In den Eigenschaften des Projekts geben Sie das Remotegerät an, mit dem eine Verbindung hergestellt werden soll. Das Verfahren unterscheidet sich je nach Programmiersprache. Sie können den Netzwerknamen des Remotegeräts eingeben, oder wählen Sie sie in der **Remoteverbindung** (Dialogfeld).  
@@ -94,7 +91,7 @@ Unter Windows 10 können Sie mit einem über USB angeschlossenen Gerät bereitst
   
 ## <a name="BKMK_download"></a>Herunterladen und installieren Sie die Remoteserver-Verwaltungstools (Ersteller vor Update)
 
-Wenn Sie Windows 8.1 oder ein Pre-Ersteller-Update-Versionen von Windows 10 verwenden, befolgen Sie dann diese Anweisungen. Andernfalls können Sie diesen Abschnitt überspringen.
+Wenn Sie ein Pre-Ersteller-Update-Versionen von Windows 10 verwenden, befolgen Sie dann diese Anweisungen. Andernfalls können Sie diesen Abschnitt überspringen.
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
   
@@ -105,8 +102,9 @@ Wenn Sie Windows 8.1 oder ein Pre-Ersteller-Update-Versionen von Windows 10 verw
 ##  <a name="BKMK_RunRemoteDebug"></a>Starten einer Remotedebugsitzung  
  Sie starten, beenden und navigieren eine Remotedebugsitzung genauso wie eine lokale Sitzung. Pre-Ersteller-Update-Versionen von Windows 10 Stellen Sie sicher, dass der Remotedebugmonitor auf dem Remotegerät ausgeführt wird.  
   
- Wählen Sie anschließend im Menü **Debuggen** (Tastatur: F5) die Option **Debuggen starten** aus. Das Projekt wird neu kompiliert, anschließend für das Remotegerät bereitgestellt und darauf gestartet . An Haltepunkten unterbricht der Debugger die Ausführung, und Sie können Ihren Code schrittweise ausführen, ihn überspringen oder verlassen. Wählen Sie **Debuggen beenden** aus, um Ihre Debugsitzung zu beenden, und schließen Sie die Remoteapp. Weitere Informationen finden Sie unter [Debuggen von apps in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md).  
+ Wählen Sie anschließend im Menü **Debuggen** (Tastatur: F5) die Option **Debuggen starten** aus. Das Projekt wird neu kompiliert, anschließend für das Remotegerät bereitgestellt und darauf gestartet . An Haltepunkten unterbricht der Debugger die Ausführung, und Sie können Ihren Code schrittweise ausführen, ihn überspringen oder verlassen. Wählen Sie **Debuggen beenden** aus, um Ihre Debugsitzung zu beenden, und schließen Sie die Remoteapp.
   
 ## <a name="see-also"></a>Siehe auch  
+ [Erweiterte Optionen Remotebereitstellung](/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps#advanced-remote-deployment-options)  
  [Testen von UWP-Apps mit Visual Studio](../test/testing-store-apps-with-visual-studio.md)   
  [Debuggen von apps in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)

@@ -13,11 +13,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: d007bdf5d2029e896167a2fd7b32359c661aa7fa
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: 7792e22398afd476703407e8ae2159e0f1afd931
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Problembehandlung und bekannte Probleme für die Momentaufnahme Debuggen in Visual Studio
 
@@ -71,6 +71,17 @@ Gehen Sie wie folgt vor:
 - Spezielle Variablen, wie z. B. *$FUNCTION* oder *$CALLER*, kann nicht in bedingten Anweisungen oder Logpoints für ASP.NET Core Projekte ausgewertet werden.
 - Momentaufnahme-Debuggen funktioniert nicht auf App-Dienste, die über [lokales Cashing](/azure/app-service/app-service-local-cache) eingeschaltet.
 - Debuggen-API-Apps Momentaufnahme wird derzeit nicht unterstützt.
+
+## <a name="site-extension-upgrade"></a>Erweiterung der Standortaktualisierung
+
+Momentaufnahme-Debugging und Application Insights richten sich nach einer ICorProfiler lädt in den Site-Prozess und führt dazu, dass Probleme mit der Sperren während des Upgrades. Es wird empfohlen, diesen Vorgang stellen Sie sicher, dass keine Ausfallzeit Ihre Produktionswebsite vorhanden ist.
+
+- Erstellen einer [Bereitstellungsslot](/azure/app-service/web-sites-staged-publishing) in Ihren App Service und Ihre Website in das Einschubfach bereitstellen.
+- Tauschen Sie der Slot mit dem Produktions aus, Cloud-Explorer in Visual Studio oder über das Azure-Portal.
+- Beenden Sie der Slot Standort. Dies dauert einige Sekunden, um den Standort w3wp.exe-Prozess über alle Instanzen zu beenden.
+- Die websiteerweiterung Slot von der Kudu-Website oder der Azure-Verwaltungsportal aktualisieren (*Blatt "App-Dienst" > Entwicklungstools > Extensions > Update*).
+- Starten Sie die Slot-Website. Es wird empfohlen, besuchen die Website, um es erneut Aufwärmen.
+- Der Slot mit Produktion ausgetauscht werden.
 
 ## <a name="see-also"></a>Siehe auch
 
