@@ -7,29 +7,29 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs: CSharp
-ms.assetid: 65929fab-5d78-4e04-af1e-cf4957f230f6
-caps.latest.revision: "22"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
 ms.workload: data-storage
-ms.openlocfilehash: c4dd77680fb529575140dc718a4f1c0a58090029
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 394dbf9aba422f8fbf16857d6980a53b353e931a
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>Erstellen einer einfachen datenanwendung mit WPF und Entity Framework 6
+
 Diese Walkthough zeigt, wie eine grundlegende "Formulare über Daten"-Anwendung in Visual Studio mit SQL Server LocalDB, die Northwind-Datenbank, Entity Framework 6 und Windows Presentation Foundation zu erstellen. Es zeigt, wie Sie einfache Datenbindung mit einer Master / Detail-Ansicht, und sie hat auch eine benutzerdefinierte "binden Navigator" mit den Schaltflächen für "Nächste verschieben", "Vorherige verschieben," "An den Anfang, verschieben" "ans Ende," "Aktualisieren" und "Delete".  
   
  Dieser Artikel konzentriert sich auf die mit Data Tools in Visual Studio und versucht nicht, die zugrunde liegenden Technologien in jeder beliebigen Tiefe erläutern. Es wird davon ausgegangen, dass Sie über grundlegende Kenntnisse von XAML-Entity Framework und SQL verfügen. In diesem Beispiel wird auch nicht Model-View-View Model (MVVM)-Architektur veranschaulicht, bei der standard für WPF-Anwendungen ist. Allerdings können Sie diesen Code in eine eigene MVVM-Anwendung mit sehr wenigen Änderungen kopieren.  
   
-## <a name="install-and-connect-to-northwind"></a>Installieren und Verbinden mit Northwind  
+## <a name="install-and-connect-to-northwind"></a>Installieren und Verbinden mit Northwind
+
 Dieses Beispiel verwendet die SQL Server Express LocalDB und der Beispieldatenbank Northwind. Sie muss genauso gut, mit anderen Produkten der SQL-Datenbank ausgeführt, wenn ADO.NET Data Provider für dieses Produkt Entity Framework unterstützt.  
-  
-1.  Wenn Sie nicht über SQL Server Express LocalDB verfügen, installieren Sie es entweder aus der [Downloadseite für SQL Server-Editionen](https://www.microsoft.com/en-us/server-cloud/Products/sql-server-editions/sql-server-express.aspx), oder über die **Installer für Visual Studio**. In der Visual Studio-Installer können als Teil des SQL Server Express LocalDB installiert werden die **.NET Desktopentwicklung** arbeitsauslastung oder als eine einzelne Komponente.  
-  
+
+1.  Wenn Sie nicht über SQL Server Express LocalDB verfügen, installieren Sie es entweder aus der [Downloadseite für SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express), oder über die **Installer für Visual Studio**. In der Visual Studio-Installer können als Teil des SQL Server Express LocalDB installiert werden die **.NET Desktopentwicklung** arbeitsauslastung oder als eine einzelne Komponente.
+
 2.  Installieren Sie die Beispieldatenbank Northwind, indem folgende Schritte:  
 
     1. Öffnen Sie in Visual Studio die **Objekt-Explorer von SQL Server** Fenster. (Objekt-Explorer von SQL Server installiert ist, als Teil der **datenspeicherung und Verarbeitung** arbeitsauslastung in der Visual Studio-Installer.) Erweitern Sie die **SQL Server** Knoten. Rechtsklicken Sie auf der LocalDB-Instanz, und wählen Sie **neue Abfrage...** .  
@@ -44,7 +44,7 @@ Dieses Beispiel verwendet die SQL Server Express LocalDB und der Beispieldatenba
   
 3.  [Hinzufügen von neuen Verbindungen](../data-tools/add-new-connections.md) für Northwind.  
   
-## <a name="configure-the-project"></a>Konfigurieren des Projekts  
+## <a name="configure-the-project"></a>Konfigurieren des Projekts
   
 1.  Wählen Sie in Visual Studio **Datei**, **neu**, **Projekt...**  , und erstellen Sie eine neue C#-WPF-Anwendung.  
   
@@ -58,7 +58,7 @@ Dieses Beispiel verwendet die SQL Server Express LocalDB und der Beispieldatenba
   
 4.  Jetzt können wir die Visual Studio zum Erstellen eines Modells auf Basis der Northwind-Datenbank verwenden.  
   
-## <a name="create-the-model"></a>Erstellen des Modells  
+## <a name="create-the-model"></a>Erstellen des Modells
   
 1.  Klicken Sie mit der rechten Maustaste auf den Projektknoten im Projektmappen-Explorer, und wählen Sie **hinzufügen**, **neues Element...** . Wählen Sie im linken Bereich unter dem C#-Knoten, **Daten** und wählen Sie im mittleren Bereich **ADO.NET Entity Data Model**.  
   
@@ -92,8 +92,9 @@ Dieses Beispiel verwendet die SQL Server Express LocalDB und der Beispieldatenba
   
 Jetzt können wir dieses Modell zur Verwendung von XAML-Seite verknüpft, damit wir anzeigen, navigieren und die Daten ändern können.  
   
-## <a name="databind-the-model-to-the-xaml-page"></a>Man das Modell, das der XAML-Seite  
- Es ist möglich, einen eigenen Databinding-Code schreiben, aber es ist viel einfacher zu Visual Studio, die Sie erledigen können.  
+## <a name="databind-the-model-to-the-xaml-page"></a>Man das Modell, das der XAML-Seite
+
+Es ist möglich, einen eigenen Databinding-Code schreiben, aber es ist viel einfacher zu Visual Studio, die Sie erledigen können.  
   
 1.  Wählen Sie im Hauptmenü **Projekt > neue Datenquelle hinzufügen** um die **Datenquellen Konfigurations-Assistenten**. Wählen Sie **Objekt** da wir an der Modellklassen, nicht mit der Datenbank binden:  
   
@@ -144,8 +145,9 @@ Jetzt können wir dieses Modell zur Verwendung von XAML-Seite verknüpft, damit 
      [!code-csharp[Window_Loaded#2](../data-tools/codesnippet/CSharp/CreateWPFDataApp/MainWindow.xaml.cs#2)]  
 
 8.  Drücken Sie **F5**. Für den ersten Kunden, die in CollectionViewSource abgerufen wurde, sollten Sie die Details anzuzeigen. Sie sollte auch deren Bestellungen im Datenraster angezeigt werden. Die Formatierung ist ideal wir also reparieren, die nicht. Wir erstellen außerdem eine Möglichkeit zum Anzeigen von der anderen Datensätzen und grundlegende CRUD-Vorgänge durchführen.  
-  
-## <a name="adjust-the-page-design-and-add-grids-for-new-customers-and-orders"></a>Passen Sie den Entwurf der Seite, und fügen Sie Rastern für neue Kunden und Bestellungen  
+
+## <a name="adjust-the-page-design-and-add-grids-for-new-customers-and-orders"></a>Passen Sie den Entwurf der Seite, und fügen Sie Rastern für neue Kunden und Bestellungen
+
 Die Standardreihenfolge der von Visual Studio erzeugt ist nicht ideal für die Anwendung, damit wir einige Änderungen in der XAML-Code manuell vornehmen müssen. Wir benötigen einige "Forms" (was tatsächlich Rastern) außerdem auf dem Benutzer ermöglichen, einen neuen Kunden oder eine Bestellung hinzufügen. Um einen neuen Kunden und Reihenfolge hinzufügen können, benötigen wir einen separaten Satz von Textfeldern, die keine Daten gebunden sind die `CollectionViewSource`. Wir müssen steuern, welche Raster dem Benutzer zu einem beliebigen Zeitpunkt angezeigt wird, indem Sie die Visible-Eigenschaft in die Handlermethoden festlegen. Schließlich werden wir eine Schaltfläche "löschen" auf jede Zeile in der Orders-Raster, um dem Benutzer ermöglichen, löschen Sie eine einzelne Bestellung hinzufügen.  
   
 Fügen Sie zunächst diese Formate, auf das Windows.Resources-Element in der Datei "MainWindow.xaml":  
@@ -350,11 +352,12 @@ Ersetzen Sie anschließend die gesamte äußere Raster mit diesem Markup:
 ```  
   
 ## <a name="add-buttons-to-navigate-add-update-and-delete"></a>Hinzufügen von Schaltflächen zum Navigieren, hinzufügen, aktualisieren und löschen  
- In Windows Forms-Anwendungen erhalten Sie ein BindingNavigator-Objekt mit den Schaltflächen für das Navigieren auf Zeilen in einer Datenbank sowie bei der Erledigung grundlegende CRUD-Vorgänge. WPF bietet keine BindingNavigator, aber es ist einfach genug, um eines zu erstellen. Wir erledigen, die Sie mit den Schaltflächen in einem horizontalen StackPanel, und ordnen wir die Schaltflächen mit Befehlen, die an Methoden in der Code-behind gebunden sind.  
+
+In Windows Forms-Anwendungen erhalten Sie ein BindingNavigator-Objekt mit den Schaltflächen für das Navigieren auf Zeilen in einer Datenbank sowie bei der Erledigung grundlegende CRUD-Vorgänge. WPF bietet keine BindingNavigator, aber es ist einfach genug, um eines zu erstellen. Wir erledigen, die Sie mit den Schaltflächen in einem horizontalen StackPanel, und ordnen wir die Schaltflächen mit Befehlen, die an Methoden in der Code-behind gebunden sind.  
   
- Vieren Teile der Befehl Logik vorhanden sind: (1) die Befehle, (2) der Bindungen, (3) die Schaltflächen und (4) der Befehlshandler in das Code-Behind-Modell.  
+Vieren Teile der Befehl Logik vorhanden sind: (1) die Befehle, (2) der Bindungen, (3) die Schaltflächen und (4) der Befehlshandler in das Code-Behind-Modell.  
   
-#### <a name="add-commands-bindings-and-buttons-in-xaml"></a>Hinzufügen von Befehlen, Bindungen und Schaltflächen in XAML  
+### <a name="add-commands-bindings-and-buttons-in-xaml"></a>Hinzufügen von Befehlen, Bindungen und Schaltflächen in XAML
   
 1.  Zunächst fügen wir die Befehle in der Datei "MainWindow.xaml" innerhalb des Windows.Resources-Elements hinzu:  
   
@@ -414,7 +417,7 @@ Ersetzen Sie anschließend die gesamte äußere Raster mit diesem Markup:
     </StackPanel>  
     ```  
   
-#### <a name="add-command-handlers-to-the-mainwindow-class"></a>Hinzufügen von Befehlshandler der MainWindow-Klasse  
+### <a name="add-command-handlers-to-the-mainwindow-class"></a>Hinzufügen von Befehlshandler der MainWindow-Klasse  
   
 Das Code-Behind-Modell ist minimal, mit Ausnahme von Methoden zum Hinzufügen und löschen. Navigation erfolgt durch Aufrufen von Methoden für die ansichtseigenschaft von CollectionViewSource. Die DeleteOrderCommandHandler wird gezeigt, wie eine kaskadierendes Delete für eine Bestellung ausgeführt wird. Wir haben die "Order_Details" erst zu löschen, die mit ihm verknüpft sind. Die UpdateCommandHandler der Auflistung einen neuen Kunden oder eine Bestellung hinzugefügt, andernfalls wird nur eine vorhandene Kunde oder eine Bestellung mit der der Benutzer in die Textfelder vorgenommenen Änderungen aktualisiert.  
   
@@ -423,8 +426,10 @@ Diese Handlermethoden der MainWindow-Klasse in "MainWindow.Xaml.cs" hinzufügen.
 [!code-csharp[CommandHandlers#3](../data-tools/codesnippet/CSharp/CreateWPFDataApp/MainWindow.xaml.cs#3)]  
   
 ## <a name="run-the-application"></a>Ausführen der Anwendung
+
 Drücken Sie **F5**, um mit dem Debuggen zu beginnen. Daraufhin sollte Kunden- und Bestelldaten aufgefüllt, die im Raster, und die Navigationsschaltflächen sollte wie erwartet funktionieren. Klicken Sie auf "Commit", um einen neuen Kunden oder eine Bestellung mit dem Modell hinzufügen, nachdem Sie die Daten eingegeben haben. Klicken Sie auf "Abbrechen", um aus einem neuen Kunden oder neue Bestellformular zurück, ohne die Daten zu speichern. Nehmen Sie Änderungen vor, um vorhandene Kunden und Bestellungen direkt in die Textfelder ein, und diese Änderungen werden automatisch in das Modell geschrieben.  
   
 ## <a name="see-also"></a>Siehe auch
+
 [Visual Studio-Datentools für .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)  
-[Dokumentation zu Entity Framework](https://msdn.microsoft.com/en-us/data/ee712907.aspx)
+[Dokumentation zu Entity Framework](/ef/)

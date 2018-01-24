@@ -19,11 +19,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: f54a6dc2f47d10a47635a600d97decf3846e9d3f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: f2c72525b6101f14e9aac4365cc6af75b3083545
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="security-warnings"></a>Sicherheitswarnungen
 Sicherheitswarnungen sorgen für sicherere Bibliotheken und Anwendungen. Diese Warnungen tragen dazu bei, Sicherheitsmängel im Programm zu vermeiden. Wenn Sie eine dieser Warnungen deaktivieren, sollten Sie den Grund dafür im Code deutlich angeben und außerdem den für Ihr Entwicklungsprojekt zuständigen Sicherheitsbeauftragten informieren.  
@@ -81,7 +81,7 @@ Sicherheitswarnungen sorgen für sicherere Bibliotheken und Anwendungen. Diese W
 |[CA2149: Transparente Methoden dürfen keine Aufrufe in nativen Code durchführen](../code-quality/ca2149-transparent-methods-must-not-call-into-native-code.md)|Diese Regel wird für jede transparente Methode ausgelöst, die einen direkten Aufruf in systemeigenem Code ausführt, z. B. mit P/Invoke. Verstöße gegen diese Regel führen im Transparenzmodell der Ebene 2 zu einer MethodAccessException und im Transparenzmodell der Ebene 1 zu einer vollständigen Anforderung für UnmanagedCode.|  
 |[CA2151: Felder mit kritischen Typen sollten sicherheitskritisch sein](../code-quality/ca2151-fields-with-critical-types-should-be-security-critical.md)|Um sicherheitskritische Typen zu verwenden, muss der Code, der auf den Typ verweist, entweder sicherheitskritisch oder sicherungskritisch sein. Dies gilt auch, wenn der Verweis indirekt ist. Daher kann ein sicherheitstransparentes oder sicherungskritisches Feld irreführend sein, denn transparenter Code kann trotzdem nicht auf das Feld zugreifen.|  
 |[CA5122 P/Invoke-Deklarationen sollten nicht sichere kritisch](../code-quality/ca5122-p-invoke-declarations-should-not-be-safe-critical.md)|Methoden werden als SecuritySafeCritical markiert, wenn sie einen sicherheitsrelevanten Vorgang ausführen. Sie können jedoch auch mit transparentem Code verwendet werden. Transparenter Code ruft systemeigenen Code möglicherweise nie direkt mit P/Invoke auf. Wenn daher P/Invoke als sicherungskritisch markiert wird, kann es nicht von transparentem Code aufgerufen werden, was bei der Sicherheitsanalyse irreführend ist.|  
-|[CA2153: Verhindern, dass Ausnahmen bei Beschädigungen verarbeitet werden](../code-quality/ca2153-avoid-handling-corrupted-state-exceptions.md)|[Ausnahmen bei Beschädigungen (Corrupted State Exceptions, CSE)](https://msdn.microsoft.com/en-us/magazine/dd419661.aspx) weisen auf eine Speicherbeschädigung innerhalb des Prozesses hin. Diese abzufangen, statt einen Absturz des Prozesses zuzulassen, führt zu Sicherheitsrisiken, falls ein Angreifer einen Exploit in den beschädigten Speicherbereich einschleusen kann.|  
+|[CA2153: Verhindern, dass Ausnahmen bei Beschädigungen verarbeitet werden](../code-quality/ca2153-avoid-handling-corrupted-state-exceptions.md)|[(State Exceptions, CSE) beschädigt](https://msdn.microsoft.com/magazine/dd419661.aspx) anzugeben, dass der Arbeitsspeicher Speicherbeschädigung innerhalb des Prozesses. Diese abzufangen, statt einen Absturz des Prozesses zuzulassen, führt zu Sicherheitsrisiken, falls ein Angreifer einen Exploit in den beschädigten Speicherbereich einschleusen kann.|  
 |[CA3075: Unsichere DTD-Verarbeitung](../code-quality/ca3075-insecure-dtd-processing.md)|Wenn Sie unsichere DTDProcessing-Instanzen verwenden oder auf externe Entitätsquellen verweisen, kann der Parser unter Umständen nicht vertrauenswürdige Eingaben akzeptieren und Angreifern vertrauliche Informationen offenlegen.|  
 |[CA3076: Unsichere XSLT-Skriptausführung](../code-quality/ca3076-insecure-xslt-script-execution.md)|Wenn Sie Extensible Stylesheets Language Transformations (XSLT) ungesichert in .NET-Anwendungen ausführen, könnte der Prozessor möglicherweise nicht vertrauenswürdige URI-Verweise auflösen, wodurch Angreifern sensible Informationen offengelegt werden könnten, was wiederum zu Denial-of-Service- und Cross-Site-Angriffen führen kann.|  
 |[CA3077: Unsichere Verarbeitung in API-Design, XML-Dokument und XML-Textreader](../code-quality/ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader.md)|Beim Entwerfen einer von XMLDocument und XMLTextReader abgeleiteten API sollten Sie DtdProcessing berücksichtigen.  Das Verwenden unsicherer DTDProcessing-Instanzen beim Verweisen auf externe Entitätsquellen bzw. bei deren Auflösung oder das Festlegen unsicherer Werte in XML-Code kann zum Offenlegen von Informationen führen.|

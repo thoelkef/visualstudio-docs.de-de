@@ -18,20 +18,21 @@ ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
 ms.workload: data-storage
-ms.openlocfilehash: ce1419882422ddc12fdb380601e908eed7e5c7ba
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: b3b9ae8406845de886009da981eaf7f63e68972b
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="configure-service-reference-dialog-box"></a>Dienstverweis konfigurieren (Dialogfeld)
-Die **Dienstverweis konfigurieren** Dialogfeld können Sie so konfigurieren Sie das Verhalten des [!INCLUDE[vsindigo](../data-tools/includes/vsindigo_md.md)] Dienste.  
-  
+
+Die **Dienstverweis konfigurieren** Dialogfeld können Sie das Verhalten der Windows Communication Foundation (WCF)-Dienste konfigurieren.
+
 > [!NOTE]
->  Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen. Klicken Sie im Menü Extras auf Einstellungen importieren und exportieren, um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../ide/personalizing-the-visual-studio-ide.md).  
-  
- Für den Zugriff auf die **Dienstverweis konfigurieren** (Dialogfeld), mit der rechten Maustaste, einen Dienst verweisen **Projektmappen-Explorer** , und wählen Sie **Dienstverweis konfigurieren**. Sie können auch das Dialogfeld zugreifen, indem Sie auf die **erweitert** Schaltfläche der **hinzufügen Dienst Dialogfelds "Verweis"**.  
-  
+> Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen. Klicken Sie im Menü Extras auf Einstellungen importieren und exportieren, um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../ide/personalizing-the-visual-studio-ide.md).
+
+Für den Zugriff auf die **Dienstverweis konfigurieren** (Dialogfeld), mit der rechten Maustaste, einen Dienst verweisen **Projektmappen-Explorer** , und wählen Sie **Dienstverweis konfigurieren**. Sie können auch das Dialogfeld zugreifen, indem Sie auf die **erweitert** Schaltfläche der **hinzufügen Dienst Dialogfelds "Verweis"**.
+
 ## <a name="task-list"></a>Aufgabenliste  
   
 -   Um die Adresse zu ändern, in denen ein WCF-Dienst gehostet wird, geben Sie die neue Adresse in der **Adresse** Feld.  
@@ -86,16 +87,15 @@ Die **Dienstverweis konfigurieren** Dialogfeld können Sie so konfigurieren Sie 
  **Liste der referenzierten Assemblys**  
  Enthält eine Liste von referenzierten Assemblys für das Projekt oder die Website. Wenn **Typen in Assemblys, auf die verwiesen wird, wiederverwenden** ausgewählt ist, einzelne Assemblys aktiviert oder deaktiviert werden können.  
   
- **Webverweis hinzufügen**  
- Zeigt die [Hinzufügen von Web-Dialogfelds "Verweis"](https://msdn.microsoft.com/en-us/library/8dcbc50t(v=vs.100).aspx).  
-  
-> [!NOTE]
->  Diese Option sollte für Projekte verwendet werden, die Version 2.0 von [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] vorgeben.  
-  
-> [!NOTE]
->  Die **Webverweis hinzufügen** Schaltfläche ist nur verfügbar, wenn die **Dienstverweis konfigurieren** Dialogfeld wird angezeigt, aus der **hinzufügen Dienst Dialogfelds "Verweis"**.  
-  
-## <a name="see-also"></a>Siehe auch  
+ **Hinzufügen von Webverweisen** zeigt das Dialogfeld "Webverweis hinzufügen".
 
- [Vorgehensweise: Hinzufügen eines Verweises auf einen Webdienst](how-to-add-update-or-remove-a-wcf-data-service-reference.md)   
- [Windows Communication Foundation-Dienste und WCF Data Services](../data-tools/configure-service-reference-dialog-box.md)
+> [!NOTE]
+> Diese Option sollte für Projekte verwendet werden, die Version 2.0 von [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] vorgeben.
+
+> [!NOTE]
+> Die **Webverweis hinzufügen** Schaltfläche ist nur verfügbar, wenn die **Dienstverweis konfigurieren** Dialogfeld wird angezeigt, aus der **hinzufügen Dienst Dialogfelds "Verweis"**.
+
+## <a name="see-also"></a>Siehe auch
+
+[Vorgehensweise: Hinzufügen eines Verweises auf einen Webdienst](how-to-add-update-or-remove-a-wcf-data-service-reference.md)  
+[Windows Communication Foundation-Dienste und WCF Data Services](../data-tools/configure-service-reference-dialog-box.md)
