@@ -16,11 +16,11 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 50b306a3332678a4ab648e0e79730b0ef3ac996e
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: d97ae6f3b1665fc841c34fcca06afc6a2eaf1e36
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="managing-python-on-azure-app-service"></a>Verwalten von Python auf Azure App Service
 
@@ -200,7 +200,7 @@ Die [Kudu-Konsole](https://github.com/projectkudu/kudu/wiki/Kudu-console) ermög
     Die Verwendung `requirements.txt` wird empfohlen, da es damit einfach ist, ihren genauen Paketsatz sowohl lokal als auch auf dem Server zu reproduzieren. Denken Sie daran, die Konsole erneut aufzurufen, nachdem Sie Änderungen an der `requirements.txt`-Datei bereitgestellt haben, und führen Sie den Befehl erneut aus.
 
 > [!Note]
-> Es gibt keinen C-Compiler auf Ihrem App Service, daher müssen Sie das Rad für alle Pakete mit nativen Erweiterungsmodulen installieren. Viele gängige Pakete stellen ihre eigenen Räder zur Verfügung. Sollte dies nicht der Fall sein, verwenden Sie `pip wheel <package_name>` auf dem lokalen Entwicklungscomputer und laden Sie das Rad auf Ihre Website hoch. Ein Beispiel finden Sie unter [Verwalten von erforderlichen Paketen](python-environments.md#managing-required-packages-requirementstxt).
+> Es gibt keinen C-Compiler auf Ihrem App Service, daher müssen Sie das Rad für alle Pakete mit nativen Erweiterungsmodulen installieren. Viele gängige Pakete stellen ihre eigenen Räder zur Verfügung. Sollte dies nicht der Fall sein, verwenden Sie `pip wheel <package_name>` auf dem lokalen Entwicklungscomputer und laden Sie das Rad auf Ihre Website hoch. Ein Beispiel finden Sie unter [Verwalten von erforderlichen Paketen](managing-python-environments-in-visual-studio.md#managing-required-packages-requirementstxt).
 
 ### <a name="kudu-rest-api"></a>Kudu-REST-API
 
