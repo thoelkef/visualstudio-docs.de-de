@@ -15,11 +15,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9a260001e661c9d6d0f9a1b472caa07c25637ff7
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: 5cd67d031cd41a1f36de68d7372fdfcfd6f8e476
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="debugging-your-python-code"></a>Debuggen von Python-Code
 
@@ -45,9 +45,9 @@ Weitere Informationen finden Sie auch in den folgenden szenariospezifischen Them
 <a name="debugging-without-a-project"></a>
 
 > [!Tip]
-> Python in Visual Studio unterstützt das Debuggen ohne ein Projekt. Klicken Sie in einer geöffneten eigenständigen Python-Datei mit der rechten Maustaste in den Editor, und klicken Sie auf **Mit Debugging starten**. Visual Studio startet das Skript mit der globalen Standard-Umgebung (siehe [Python-Umgebungen](python-environments.md)) und ohne Argumente. Danach verfügen Sie über vollständige Debuggingunterstützung.
+> Python in Visual Studio unterstützt das Debuggen ohne ein Projekt. Klicken Sie in einer geöffneten eigenständigen Python-Datei mit der rechten Maustaste in den Editor, und klicken Sie auf **Mit Debugging starten**. Visual Studio startet das Skript mit der globalen Standard-Umgebung (siehe [Python-Umgebungen](managing-python-environments-in-visual-studio.md)) und ohne Argumente. Danach verfügen Sie über vollständige Debuggingunterstützung.
 >
-> Erstellen Sie ein Projekt für den Code, um die Umgebung und die Argumente zu steuern. Mit der Projektvorlage [Aus vorhandenem Python-Code](python-projects.md#creating-a-project-from-existing-files) ist dies ganz einfach erledigt.
+> Erstellen Sie ein Projekt für den Code, um die Umgebung und die Argumente zu steuern. Mit der Projektvorlage [Aus vorhandenem Python-Code](managing-python-projects-in-visual-studio.md#creating-a-project-from-existing-files) ist dies ganz einfach erledigt.
 
 <a name="debugging-with-a-project"></a>
 
@@ -58,7 +58,7 @@ Der grundlegende Debugworkflow umfasst das Festlegen von Haltepunkten, die Einze
 Eine Debugsitzung wird mit dem Befehl **Debuggen > Debuggen starten**, der Schaltfläche **Start** auf der Symbolleiste oder der Taste F5 gestartet. Diese Aktionen öffnen die Startdatei Ihres Projekts (im Projektmappen-Explorer fett hervorgehoben) mit der aktiven Umgebung des Projekts und allen Befehlszeilenargumenten oder Suchpfaden, die in den Projekteigenschaften festgelegt wurden (siehe [Project debugging options (Projektbezogene Debugoptionen)](#project-debugging-options)). Wenn Sie aus irgendeinem Grund jedoch keine festgelegte Startdatei besitzen, wird ein Python-Ausgabefenster kurz angezeigt und wieder ausgeblendet. Klicken Sie in diesem Fall mit der rechten Maustaste auf die entsprechende Datei, und wählen Sie **Als Startdatei festlegen**aus.
 
 > [!Note]
-> Der Debugger startet immer mit der aktiven Python-Umgebung für das Projekt. Legen Sie, wie unter [Python-Umgebungen](python-environments.md) beschrieben, eine andere Umgebung als aktiv fest, um die Umgebung zu ändern.
+> Der Debugger startet immer mit der aktiven Python-Umgebung für das Projekt. Legen Sie, wie unter [Python-Umgebungen](managing-python-environments-in-visual-studio.md) beschrieben, eine andere Umgebung als aktiv fest, um die Umgebung zu ändern.
 
 ### <a name="breakpoints"></a>Haltepunkte
 

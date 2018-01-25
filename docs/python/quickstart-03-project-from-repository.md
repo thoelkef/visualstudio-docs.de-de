@@ -15,15 +15,15 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 66f99665fc9d580a3c0c366fa2922ea6a15e0e7c
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: 74be5c65cbb4b2498f9904c6e021c774400bfbf8
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="quickstart-clone-a-repository-of-python-code-in-visual-studio"></a>Schnellstart: Klonen eines Repositorys in Python-Code in Visual Studio
 
-Sobald Sie [die Python-Unterstützung für Visual Studio 2017 installiert haben](installation.md), können Sie ganz leicht ein Repository in Python-Code klonen und daraus ein Projekt erstellen.
+Sobald Sie [die Python-Unterstützung für Visual Studio 2017 installiert haben](installing-python-support-in-visual-studio.md), können Sie ganz leicht ein Repository in Python-Code klonen und daraus ein Projekt erstellen.
 
 [!INCLUDE[install-github-extension](includes/install-github-extension.md)]
 
@@ -71,15 +71,15 @@ Sobald Sie [die Python-Unterstützung für Visual Studio 2017 installiert haben]
 14. Führen Sie das Programm erneut aus, um zu sehen, ob die erste Überprüfung erfolgreich ist, und das Programm wird beim nächsten Koan beendet. Fahren Sie mit dem Korrigieren der Fehler fort, und führen Sie das Programm so oft Sie möchten erneut aus.
 
 > [!Important]
-> Mithilfe dieser Schnellstartanleitung haben Sie einen direkten Klon des *python_koans*-Repositorys auf GitHub erstellt. Solche Repositorys werden durch deren Autoren vor direkten Änderungen geschützt, sodass ein möglicher Änderungsversuch fehlschlägt. Tatsächlich forken Entwickler solche Repositorys in ihre GitHub-Kontos. Nehmen Sie die Änderungen in diesem Konto vor, und erstellen Sie anschließend Pull Requests, um sie an das ursprüngliche Repository zu übermitteln. Diese Schritte werden in [Tutorial Step 6 – Working with Git (Tutorial, Schritt 6: Arbeiten mit Git)](vs-tutorial-01-06.md) beschrieben.
+> Mithilfe dieser Schnellstartanleitung haben Sie einen direkten Klon des *python_koans*-Repositorys auf GitHub erstellt. Solche Repositorys werden durch deren Autoren vor direkten Änderungen geschützt, sodass ein möglicher Änderungsversuch fehlschlägt. Tatsächlich forken Entwickler solche Repositorys in ihre GitHub-Kontos. Nehmen Sie die Änderungen in diesem Konto vor, und erstellen Sie anschließend Pull Requests, um sie an das ursprüngliche Repository zu übermitteln. Diese Schritte werden in [Tutorial Step 6 – Working with Git (Tutorial, Schritt 6: Arbeiten mit Git)](tutorial-working-with-python-in-visual-studio-step-06-working-with-git.md) beschrieben.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
 > [!div class="nextstepaction"]
-> [Tutorial: Arbeiten mit Python in Visual Studio](vs-tutorial-01-01.md)
+> [Tutorial: Arbeiten mit Python in Visual Studio](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Erstellen einer Umgebung für einen vorhandenen Python-Interpreter](python-environments.md#creating-an-environment-for-an-existing-interpreter)
-- [Installieren der Python-Unterstützung für Visual Studio 2015 und früher](installation.md)
-- [Installationsspeicherorte](installation.md#install-locations)
+- [Erstellen einer Umgebung für einen vorhandenen Python-Interpreter](managing-python-environments-in-visual-studio.md#creating-an-environment-for-an-existing-interpreter)
+- [Installieren der Python-Unterstützung für Visual Studio 2015 und früher](installing-python-support-in-visual-studio.md)
+- [Installationsspeicherorte](installing-python-support-in-visual-studio.md#install-locations)

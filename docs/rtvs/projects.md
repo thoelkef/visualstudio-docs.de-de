@@ -13,11 +13,11 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload: data-science
-ms.openlocfilehash: 9ee06a96eeb0d7fd0cec7c0f2e22159741767e01
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 3f77630af8cf31e1e5b18cdf06fd5642c83a17a9
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="creating-r-projects-in-visual-studio"></a>Erstellen von R-Projekten in Visual Studio
 
@@ -119,6 +119,6 @@ Im folgenden Beispiel enthält die Projektmappe ein R-Projekt mit einem Modell, 
 Das fett markierte Projekt ist das „Startprojekt“ der Projektmappe. Um es zu ändern, klicken Sie mit der rechten Maustaste auf ein anderes Projekt, und wählen Sie **Als Startprojekt festlegen** aus.
 
 > [!Note]
-> Derzeit ist keine explizite Sprachintegration für R in C#/C++ vorhanden (wie bei Python, siehe [Erstellen einer C++-Erweiterung für Python](../python/cpp-and-python.md)).  Es gibt jedoch Bibliotheken, die C#- und C++-Brücken für R bereitstellen.
+> Derzeit ist keine explizite Sprachintegration für R in C#/C++ vorhanden (wie bei Python, siehe [Erstellen einer C++-Erweiterung für Python](../python/working-with-c-cpp-python-in-visual-studio.md)).  Es gibt jedoch Bibliotheken, die C#- und C++-Brücken für R bereitstellen.
 
 Weitere Informationen zum Verwalten von Projekten und Projektmappen im Allgemeinen finden Sie unter [Projektmappen und Projekte in Visual Studio](../ide/solutions-and-projects-in-visual-studio.md).

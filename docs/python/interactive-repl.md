@@ -15,11 +15,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 01e3e0d3969b483a77b524cb6fd2713c6653678e
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: bf04cbfaff76747c952f9cf86e93fea47be2e91f
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="working-with-the-python-interactive-window"></a>Arbeiten mit dem interaktiven Python-Fenster
 
@@ -38,7 +38,7 @@ Visual Studio stellt eine Reihe von Python-REPL-Modi zur Auswahl:
 
 Dieses Thema beschreibt den **Standard**- und **Debug**-REPL-Modus. Ausführliche Informationen zu den IPython-Modi finden Sie unter [Using Python in the Interactive Window](interactive-repl-ipython.md) (Verwenden von Python im interaktiven Fenster).
 
-Eine detaillierte exemplarische Vorgehensweise mit Beispielen, einschließlich der Interaktionen mit dem Editor wie z.B. STRG+EINGABETASTE, finden Sie unter [Tutorial Step 3: Using the interactive REPL window (Tutorial Schritt 3: Verwenden des interaktiven REPL-Fensters)](vs-tutorial-01-03.md). Eine Video-Einführung finden Sie unter [Python Interactive Window (Interaktives Python-Fenster)](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=gJYKY5LWE_4605918567) (Microsoft Virtual Academy, 2 Min. 22 Sek.).
+Eine detaillierte exemplarische Vorgehensweise mit Beispielen, einschließlich der Interaktionen mit dem Editor wie z.B. STRG+EINGABETASTE, finden Sie unter [Tutorial Step 3: Using the interactive REPL window (Tutorial Schritt 3: Verwenden des interaktiven REPL-Fensters)](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md). Eine Video-Einführung finden Sie unter [Python Interactive Window (Interaktives Python-Fenster)](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=gJYKY5LWE_4605918567) (Microsoft Virtual Academy, 2 Min. 22 Sek.).
 
 > [!VIDEO https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Python-Interactive-Window-gJYKY5LWE_4605918567]
 

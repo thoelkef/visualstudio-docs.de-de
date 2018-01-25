@@ -16,11 +16,11 @@ dev_langs: python
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 684cbe21a7f6454549d2e014682533697306152b
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: 756419ce7390ba727bc5847d95c86399838d972a
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-python-web-app"></a>Schnellstart: Erstellen einer ersten Python-Web-App mit Visual Studio
 
@@ -70,7 +70,7 @@ In diesem Schnellstart wird jedoch die Falcon-Bibliothek verwendet, um ein Paket
 
 Weitere Informationen zu Falcon finden Sie unter [falconframework.org](https://falconframework.org/).
 
-Statt Bibliotheken in der globalen Umgebung zu installieren, erstellen Entwickler in der Regel eine „virtuelle Umgebung“, in der Bibliotheken für ein bestimmtes Projekt installiert werden. Viele Python-Projektvorlagen in Visual Studio enthalten eine `requirements.txt`-Datei, in der die Bibliotheken aufgelistet werden, von denen die Vorlage abhängig ist. Falls ein Projekt aus einer dieser Vorlagen erstellt wird, löst dies die Erstellung einer virtuellen Umgebung aus, in die die Bibliotheken installiert werden. Weitere Informationen finden Sie unter [Virtuelle Umgebungen](../python/python-environments.md#creating-virtual-environments) im Artikel „Python-Umgebungen“.
+Statt Bibliotheken in der globalen Umgebung zu installieren, erstellen Entwickler in der Regel eine „virtuelle Umgebung“, in der Bibliotheken für ein bestimmtes Projekt installiert werden. Viele Python-Projektvorlagen in Visual Studio enthalten eine `requirements.txt`-Datei, in der die Bibliotheken aufgelistet werden, von denen die Vorlage abhängig ist. Falls ein Projekt aus einer dieser Vorlagen erstellt wird, löst dies die Erstellung einer virtuellen Umgebung aus, in die die Bibliotheken installiert werden. Weitere Informationen finden Sie unter [Virtuelle Umgebungen](../python/managing-python-environments-in-visual-studio.md#creating-virtual-environments) im Artikel „Python-Umgebungen“.
 
 ## <a name="add-a-code-file"></a>Hinzufügen einer Codedatei
 
@@ -144,7 +144,7 @@ Weitere Informationen zu Falcon finden Sie im englischsprachigen [Falcon-Schnell
 Herzlichen Glückwunsch! Sie haben diesen Schnellstart abgeschlossen und die Visual Studio-IDE besser kennengelernt. Wenn Sie ein umfangreicheres Tutorial zu Python in Visual Studio starten möchten, in dem auch die Verwendung des interaktiven Fensters, das Debuggen, die Datenvisualisierung und die Arbeit mit Git behandelt wird, klicken Sie auf die Schaltfläche unten.
 
 > [!div class="nextstepaction"]
-> [Tutorial: Erste Schritte mit Python in Visual Studio](../python/vs-tutorial-01-01.md)
+> [Tutorial: Erste Schritte mit Python in Visual Studio](../python/tutorial-working-with-python-in-visual-studio-step-01-create-project.md)
 
 - Weitere Informationen zu [Python-Web-App-Vorlagen in Visual Studio](../python/template-web.md)
 - Weitere Informationen zum [Debuggen in Python](../python/debugging.md)

@@ -24,7 +24,7 @@ Sobald Sie [die Visual Studio-Tools für KI installiert haben](installation.md),
 8. Falls gewünscht, führen Sie das Programm durch Drücken von STRG+F5 oder Auswählen von **Debuggen > Starten ohne Debuggen** aus. 
 
 > [!div class="nextstepaction"]
-> [Tutorial: Arbeiten mit Python in Visual Studio](https://docs.microsoft.com/visualstudio/python/vs-tutorial-01-00)
+> [Tutorial: Arbeiten mit Python in Visual Studio](../python/tutorial-working-with-python-in-visual-studio-step-00-installation.md)
 
 ## <a name="see-also"></a>Siehe auch
 

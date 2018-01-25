@@ -15,15 +15,15 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 16f0e7d406e042d16fff4fbe257b62bac97253c3
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: 518f952f4b983acbcd3d2f508126f5298e16d579
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="editing-python-code"></a>Bearbeiten von Python-Code
 
-Entwickler verbringen einen Großteil Ihrer Zeit im Code-Editor, weshalb [die Python-Unterstützung in Visual Studio](installation.md) Funktionen bietet, die Ihre Produktivität erhöhen. Zu den Funktionen gehören die Syntaxhervorhebung von IntelliSense, die automatische Vervollständigung, Signaturhilfe, Methodenüberschreibungen, die Suche und die Navigation. 
+Entwickler verbringen einen Großteil Ihrer Zeit im Code-Editor, weshalb [die Python-Unterstützung in Visual Studio](installing-python-support-in-visual-studio.md) Funktionen bietet, die Ihre Produktivität erhöhen. Zu den Funktionen gehören die Syntaxhervorhebung von IntelliSense, die automatische Vervollständigung, Signaturhilfe, Methodenüberschreibungen, die Suche und die Navigation. 
 
 In diesem Thema:
 
@@ -33,7 +33,7 @@ In diesem Thema:
 
 Eine allgemeine Dokumentation zur Codebearbeitung in Visual Studio finden Sie unter [Schreiben von Code im Code- und Text-Editor](../ide/writing-code-in-the-code-and-text-editor.md). Lesen Sie auch den Artikel [Gliederung in Visual Studio](../ide/outlining.md) mit Informationen dazu, wie Sie Code ein- und ausblenden, um sich auf bestimmte Abschnitte Ihres Codes zu konzentrieren. Die Python-Unterstützung umfasst den Visual Studio-Objektkatalog (**Ansicht > Weitere Fenster > Objektkatalog** oder STRG+W, J), um die in den einzelnen Modulen definierten Klassen und die in diesen Klassen definierten Funktionen zu überprüfen. 
 
-Der Editor ist darüber hinaus auch im interaktiven Fenster in Visual Studio integriert, sodass der Austausch von Code zwischen den beiden sehr leicht ist. Weitere Informationen finden Sie unter [Tutorial Step 3: Using the interactive REPL window (Tutorial Schritt 3: Verwenden des interaktiven REPL-Fensters)](vs-tutorial-01-03.md) und [Using the interactive window - Send code to interactive command (Verwenden des interaktiven Fensters: Befehl „An Interactive senden“)](interactive-repl.md#send-code-to-interactive-command).
+Der Editor ist darüber hinaus auch im interaktiven Fenster in Visual Studio integriert, sodass der Austausch von Code zwischen den beiden sehr leicht ist. Weitere Informationen finden Sie unter [Tutorial Step 3: Using the interactive REPL window (Tutorial Schritt 3: Verwenden des interaktiven REPL-Fensters)](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md) und [Using the interactive window - Send code to interactive command (Verwenden des interaktiven Fensters: Befehl „An Interactive senden“)](interactive-repl.md#send-code-to-interactive-command).
 
 Eine Einführung in die Bearbeitung von Python-Code finden Sie unter [Bearbeiten von Python-Code](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=r2iQH5LWE_4605918567) (Microsoft Virtual Academy, 2:30 min):
 
@@ -41,7 +41,7 @@ Eine Einführung in die Bearbeitung von Python-Code finden Sie unter [Bearbeiten
 
 ## <a name="intellisense"></a>IntelliSense
 
-IntelliSense bietet [Vervollständigung](#completions), [Signaturhilfe](#signature-help), [QuickInfos](#quick-info) und [Codefarben](#code-coloring). Zur Verbesserung der Leistung nutzt IntelliSense die Vervollständigungsdatenbank, die für jede Python-Umgebung in Ihrem Projekt generiert wird. Sie müssen Datenbanken möglicherweise aktualisieren, wenn Sie Pakete hinzufügen, entfernen oder aktualisieren. Der Status der Datenbank wird im Fenster **Python-Umgebungen** (dem Projektmappen-Explorer nebengeordnet) auf der Registerkarte **IntelliSense** angezeigt (siehe [Python-Umgebungen](python-environments.md)). 
+IntelliSense bietet [Vervollständigung](#completions), [Signaturhilfe](#signature-help), [QuickInfos](#quick-info) und [Codefarben](#code-coloring). Zur Verbesserung der Leistung nutzt IntelliSense die Vervollständigungsdatenbank, die für jede Python-Umgebung in Ihrem Projekt generiert wird. Sie müssen Datenbanken möglicherweise aktualisieren, wenn Sie Pakete hinzufügen, entfernen oder aktualisieren. Der Status der Datenbank wird im Fenster **Python-Umgebungen** (dem Projektmappen-Explorer nebengeordnet) auf der Registerkarte **IntelliSense** angezeigt (siehe [Python-Umgebungen](managing-python-environments-in-visual-studio.md)). 
 
 ### <a name="completions"></a>Vervollständigungen
 

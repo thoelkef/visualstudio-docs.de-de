@@ -11,11 +11,11 @@ ms.author: mblome
 manager: ghogen
 ms.workload: cplusplus
 author: mikeblome
-ms.openlocfilehash: 989f2b06df55fd0927863fe7e5603d3d0ec90b06
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 529e070a3db1e6587989f8d0c55dc04e6db0388c
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="how-to-use-ctest-for-c-in-visual-studio"></a>Verwenden von CTest für C++ in Visual Studio
 CMake (schließt CTest mit ein) ist als Standardkomponente der Workload **Desktopentwicklung mit C++** in die Visual Studio-IDE integriert. Öffnen Sie den Visual Studio-Installer, und suchen Sie nach [CMake Tools für Visual C++](/cpp/ide/cmake-tools-for-visual-cpp) in der Liste der Workloadkomponenten, um die Workload auf Ihrem Computer zu installieren.
@@ -26,16 +26,5 @@ Für **Visual Studio 2017 Version 15.5** ist CTest derzeit nicht in den **Test-E
 
 ![CTest-Tests ausführen](media/cpp-cmake-run-tests.png "Run CTest tests")
 
-
 ## <a name="see-also"></a>Siehe auch
 [Schreiben von Komponententests für C/C++](writing-unit-tests-for-c-cpp.md)
-
-
-  
-
-
-
-
-
-
-

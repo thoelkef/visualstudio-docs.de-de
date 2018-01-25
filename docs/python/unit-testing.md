@@ -15,11 +15,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 620e847b9da1e8becf2df66d070a290071248d84
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: 509d8b001ff00f754df8cec0cc08194dbfc2ff3d
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="setting-up-unit-testing-for-python-code"></a>Einrichten von Komponententests für Python-Code
 
@@ -35,7 +35,7 @@ Dieses Thema enthält eine kurze Übersicht über die Komponententestfunktionen 
 
 Konventionell erkennt Visual Studio Tests als Methoden, deren Namen mit `test` beginnen. Um dieses Verhalten zu sehen, führen Sie die folgenden Schritte aus:
 
-1. Öffnen Sie ein in Visual Studio geladenes [Python-Projekt](python-projects.md), klicken Sie mit der rechten Maustaste auf Ihr Projekt, wählen Sie **Hinzufügen > Neues Element**, und wählen Sie dann **Python-Komponententest**, gefolgt von **Hinzufügen**.
+1. Öffnen Sie ein in Visual Studio geladenes [Python-Projekt](managing-python-projects-in-visual-studio.md), klicken Sie mit der rechten Maustaste auf Ihr Projekt, wählen Sie **Hinzufügen > Neues Element**, und wählen Sie dann **Python-Komponententest**, gefolgt von **Hinzufügen**.
 
 1. Diese Aktion erstellt eine Datei `test1.py` mit Code, der das `unittest`-Standardmodul importiert, eine Testklasse aus `unittest.TestCase` ableitet und `unittest.main()` aufruft, wenn Sie das Skript direkt ausführen:
 
@@ -92,7 +92,7 @@ Um mit dem Debuggen zu beginnen, legen Sie einen anfänglichen Haltepunkt im Cod
 
 ![Debuggen eines Tests](media/unit-test-debugging.png)
 
-Je nach Visual Studio-Version können Sie auch die Befehle **Code Coverage für ausgewählte Tests analysieren** und **Profiltest** verwenden. (Informationen finden Sie in der [Featurematrix](python-in-visual-studio.md#features-matrix).)
+Je nach Visual Studio-Version können Sie auch die Befehle **Code Coverage für ausgewählte Tests analysieren** und **Profiltest** verwenden. (Informationen finden Sie in der [Featurematrix](overview-of-python-tools-for-visual-studio.md#features-matrix).)
 
 ### <a name="known-issues"></a>Bekannte Probleme
 

@@ -38,11 +38,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 30eafe77ef4e115650f0871139e009e07fd6729b
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: e5873276795477778e4c358d59788248230bb4b5
+ms.sourcegitcommit: 062795f922e7b59fe00d3d95a01a9a8a28840017
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 01/24/2018
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Verwenden Sie Haltepunkte in Visual Studio-Debugger
 Sie können Haltepunkte festlegen, wenn Sie die Ausführung des Debuggers stoppen möchten, um möglicherweise den Status der Codevariablen oder die Aufrufliste anzuzeigen. Sie sind eine der wichtigsten Debugverfahren in der Toolbox eines Entwicklers.  
@@ -160,6 +160,9 @@ Sie können Haltepunkte festlegen, wenn Sie die Ausführung des Debuggers stoppe
  Wenn Sie eine Haltepunktbedingung mit ungültiger Syntax festlegen, wird sofort eine Warnmeldung angezeigt. Wenn Sie eine Haltepunktbedingung mit gültiger Syntax aber ungültiger Semantik angeben, wird beim ersten Erreichen des Haltepunkts eine Warnmeldung angezeigt. In beiden Fällen unterbricht der Debugger die Ausführung beim Erreichen des ungültigen Haltepunkts. Der Haltepunkt wird nur übersprungen, wenn die Bedingung gültig ist mit `false`bewertet wird.  
   
  Die Bedingung kann ein beliebiger gültiger Ausdruck sein, der vom Debugger erkannt wird. Weitere Informationen zu gültigen Ausdrücken finden Sie unter [Expressions in the Debugger](../debugger/expressions-in-the-debugger.md).  
+
+> [!NOTE]
+> Sie können **STRG + EINGABETASTE** zu schließen die **Haltepunkteinstellungen** Fenster.
   
 ## <a name="using-object-ids-in-breakpoint-conditions-c-and-f"></a>Verwenden von Objekt-IDs in Haltepunktbedingungen (C# und F#)  
  Manchmal möchten Sie das Verhalten eines bestimmten Objekts beobachten. Sie möchten z. B. herausfinden, warum ein Objekt mehr als einmal in eine Auflistung eingefügt wurde. In C# und F# können Sie Objekt-IDs für bestimmte Instanzen von [Verweistypen](/dotnet/csharp/language-reference/keywords/reference-types) erstellen und in Haltepunktbedingungen verwenden. Die Objekt-ID wird von den Debugdiensten der CLR (Common Language Runtime) generiert und dem Objekt zugeordnet.  Um eine Objekt-ID zu erstellen, führen Sie folgende Schritte aus:  
@@ -232,20 +235,6 @@ Sie können Haltepunkte festlegen, wenn Sie die Ausführung des Debuggers stoppe
 ## <a name="export-and-import-breakpoints"></a>Exportieren und Importieren von Haltepunkten  
  Sie können einen Haltepunkt in eine XML-Datei exportieren, indem Sie mit der rechten Maustaste auf den Haltepunkt klicken und **Exportieren**wählen. Die Datei wird standardmäßig im Projektmappenverzeichnis gespeichert. Öffnen Sie zum Importieren von Haltepunkten das Fenster **Haltepunkte** (**STRG + ALT + B**), und klicken Sie in der Symbolleiste auf den Pfeil-nach-rechts (die QuickInfo lautet **Haltepunkte aus einer Datei importieren**).  
   
-## <a name="troubleshoot"></a>Problembehandlung von Haltepunkten 
-  
-### <a name="i-deleted-a-breakpoint-but-i-continue-to-hit-it-when-i-start-debugging-again"></a>Ich habe einen Haltepunkt gelöscht, aber erreiche ihn beim erneuten Debuggen weiterhin  
- Wenn Sie einen Haltepunkt während des Debuggens gelöscht haben, kann es in manchen Fällen vorkommen, dass Sie den Haltepunkt beim nächsten Debuggen erneut erreichen. Zum Beenden des Erreichens dieses Haltepunkt müssen Sie sicherstellen, dass alle Instanzen des Haltepunkts aus dem Fenster **Haltepunkte** entfernt wurden.  
-  
-### <a name="the-debugger-cant-locate-the-correct-version-of-the-source-file-for-a-breakpoint"></a>Der Debugger kann die richtige Version der Quelldatei für einen Haltepunkt nicht finden  
- Wenn eine Quelldatei geändert wurde und deshalb nicht mehr mit dem debuggenden Code übereinstimmt, kann der Debugger die Quelldatei, die einem Haltepunkt entspricht, möglicherweise nicht finden, obwohl diese vorhanden ist.  
-  
-1.  Wenn Sie möchten Visual Studio Quellcode anzeigen, die nicht mit der Version übereinstimmt, die Sie Debuggen, wählen Sie **Debuggen > Optionen und Einstellungen**. Deaktivieren Sie auf der Seite **Debugging/Allgemein** das Kontrollkästchen **Quelldateien müssen exakt mit der Originalversion übereinstimmen** .  
-  
-2.  Sie können den Haltepunkt auch an die Quelldatei binden. Wählen Sie den Haltepunkt aus, und klicken Sie im Kontextmenü auf **Bedingungen** . Aktivieren Sie im Fenster **Haltepunkteinstellungen** das Kontrollkästchen **Unterschiede zwischen Quellcode und Originalversion zulassen** .  
-  
-### <a name="breakpoints-dont-work-in-a-dll"></a>Haltepunkte funktionieren nicht in einer DLL-Datei  
- In einer Quelldatei kann kein Haltepunkt festgelegt werden, wenn die erforderlichen Debuginformationen für das Modul, in dem sich der Code befindet, nicht vom Debugger geladen wurden. Zu den Symptomen gehören u. a. Meldungen wie **Der Haltepunkt kann nicht festgelegt werden**. An der Haltepunktposition wird das Haltepunkt-Warnsymbol angezeigt. Sobald der Code geladen wurde, werden die Warnungsmeldungen des Haltepunkts zu tatsächlichen Haltepunkten. Weitere Informationen zum Laden von Symbolen finden Sie unter [angeben von Symboldateien (.pdb) und Quelldateien](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
-  
 ## <a name="see-also"></a>Siehe auch  
- [Navigieren im Code mit dem Debugger](../debugger/navigating-through-code-with-the-debugger.md)
+[Problembehandlung von Haltepunkten in Visual Studio-Debugger](../debugger/troubleshooting-breakpoints.md)  
+[Navigieren im Code mit dem Debugger](../debugger/navigating-through-code-with-the-debugger.md)

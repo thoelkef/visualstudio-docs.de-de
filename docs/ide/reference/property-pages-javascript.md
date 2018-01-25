@@ -21,11 +21,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 6665452bd074c083216120732cff8a3f18a74dca
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 4e4f01a74a3246a326c1695371a303472901c9ea
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="property-pages-javascript"></a>Eigenschaftenseiten, JavaScript
 Die **Eigenschaftenseiten** bieten Zugriff auf die Projekteinstellungen. Sie können die Seiten, die in den **Eigenschaftenseiten** angezeigt werden, zum Ändern der Projekteigenschaften verwenden.  
@@ -68,11 +68,11 @@ Die folgenden Seiten und Optionen werden auf den **Eigenschaftenseiten** angezei
  **Zu startender Debugger**  
  Gibt den Standardhost für den Debugger an.  
 
--   Klicken Sie auf **Lokaler Computer**, um die Anwendung auf dem Visual Studio-Hostcomputer zu starten. Weitere Informationen finden Sie unter [Ausführen von Windows Store-Apps auf dem lokalen Computer](http://go.microsoft.com/fwlink/?LinkId=234912).  
+-   Klicken Sie auf **Lokaler Computer**, um die Anwendung auf dem Visual Studio-Hostcomputer zu starten. Weitere Informationen finden Sie unter [Ausführen von Windows Store-Apps auf dem lokalen Computer](../../debugger/run-windows-store-apps-on-the-local-machine.md).  
 
--   Klicken Sie auf **Simulator**, um die Anwendung im Simulator zu starten. Weitere Informationen finden Sie unter [Ausführen von Windows Store-Apps im Simulator](http://go.microsoft.com/fwlink/?LinkId=234913).  
+-   Klicken Sie auf **Simulator**, um die Anwendung im Simulator zu starten. Weitere Informationen finden Sie unter [Ausführen von Windows Store-Apps im Simulator](../../debugger/run-windows-store-apps-in-the-simulator.md).  
 
--   Klicken Sie auf **Remotecomputer**, um die Anwendung auf einem Remotecomputer zu starten. Weitere Informationen zum Remotedebuggen finden Sie unter [Ausführen von Windows Store-Apps auf einem Remotecomputer](http://go.microsoft.com/fwlink/?LinkId=234914).  
+-   Klicken Sie auf **Remotecomputer**, um die Anwendung auf einem Remotecomputer zu starten. Weitere Informationen zum Remotedebuggen finden Sie unter [Ausführen von Windows Store-Apps auf einem Remotecomputer](../../debugger/run-windows-store-apps-on-a-remote-machine.md).  
 
 **Anwendung starten**  
 Gibt an, ob die Anwendung gestartet wird, wenn Sie F5 drücken oder auf **Debuggen**, **Debuggen starten** klicken. Klicken Sie auf **Ja**, um die Anwendung zu starten. Klicken Sie ansonsten auf **Nein**. Wenn Sie auf **Nein** klicken, können Sie bei Verwendung einer anderen Methode zum Starten der Anwendung diese immer noch debuggen.  
