@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 9db6306126c64b0f2d5243ce443659f910be299c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 76b88d48b78ebab2058a2fa13feef327908f2b24
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="walkthrough-creating-a-multiple-computer-build-environment"></a>Exemplarische Vorgehensweise: Erstellen einer Build-Umgebung für mehrere Computer
 
@@ -29,7 +29,6 @@ Sie können eine Buildumgebung in der Organisation erstellen, indem Sie Visual S
 Dieses Dokument berichtigt nicht zur externen Weiterverteilung der Software oder zum Bereitstellung der Buildumgebung an Drittanbieter.  
   
 > Haftungsausschluss<br /><br /> Dieses Dokument wird wie besehen bereitgestellt. Obwohl die aufgeführten Schritte getestet wurden, kann nicht jede Konfiguration vollständig getestet werden. Wir bemühen uns, das Dokument mit jeder neugewonnenen Information aktuell zu halten. Die in diesen Unterlagen zum Ausdruck gebrachten Informationen und Ansichten, einschließlich URLs und anderer Verweise auf Internetwebsites, können ohne vorherige Ankündigung geändert werden. Microsoft gibt keine Garantie, weder ausdrücklich noch impliziert, hinsichtlich der hier bereitgestellten Informationen. Sie tragen das alleinige Verwendungsrisiko.<br /><br /> Dieses Dokument stellt keinerlei Rechtsansprüche auf geistiges Eigentum in Microsoft-Produkten jeglicher Art bereit. Sie dürfen Dokument für interne Informationszwecke kopieren.<br /><br /> Sie unterliegen keinerlei Verpflichtung, Microsoft Vorschläge, Kommentare oder anderes Feedback ("Feedback") in Bezug auf dieses Dokument zu unterbreiten. Jegliches von Ihnen freiwillig bereitstellte Feedback kann in Microsoft-Produkten und zugehöriger Spezifikation oder weiterer Dokumentationen (zusammen, "Microsoft-Angebote") die möglicherweise wiederum von weiteren Drittanbietern für die Entwicklung eigener Produkte genutzt werden. Bei Abgabe von Feedback an Microsoft zu jeglicher Version dieses Dokuments oder den Microsoft-Angeboten, für die diese gelten, stimmen Sie folgenden Punkten zu: (a) Microsoft darf Ihr Feedback frei verwenden, reproduzieren, lizenzieren verteilen und Ihr Feedback in jeglichen Microsoft-Angeboten auf andere Weise kommerziell im Handel nutzen; (b) Sie gewähren auch Drittanbietern gratis nur solche Patentrechte, die erforderlich sind, um anderen Produkte die Verwendung von bzw. das Herstellen einer Verbindung mit jeglichen spezifischen Teilen eines Microsoft-Produkts, für das Ihr Feedback genutzt wird, zu ermöglichen; und (c) Sie geben Microsoft kein Feedback, bei dem Sie (i) Anlass zur Annahme haben, dass es einem Patent, Urheberrecht, geistigem Eigentum oder den Rechten eines Drittanbieters unterliegt; oder dass es (ii) Lizenzbedingungen unterliegt, die erfordern, dass ein dieses Feedback integrierendes oder davon abgeleitetes Microsoft-Angebot, oder anderes geistiges Eigentum von Microsoft, lizenziert oder auf andere Art und Weise für Drittanbieter freigegeben wird.
-
 
 Diese exemplarische Vorgehensweise ist für die folgenden Betriebssysteme überprüft worden, indem MSBuild auf der Befehlszeile ausgeführt und mit Team Foundation Build verwendet wurde.  
   
@@ -47,7 +46,7 @@ Diese exemplarische Vorgehensweise ist für die folgenden Betriebssysteme überp
   
  Die Mehrcomputerumgebung kann nicht zum Erstellen dieser Arten von Apps verwendet werden:  
   
--   [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]-Apps. Zum Erstellen von [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]-Apps müssen Sie Visual Studio auf dem Buildcomputer installieren.  
+-   UWP-Apps. Zum Erstellen von UWP-Apps müssen Sie Visual Studio auf dem Buildcomputer installieren.  
   
 -   Desktop-Apps, die auf .NET Framework 4 oder früher ausgerichtet sind. Um diese Arten von Apps zu erstellen, müssen Sie Visual Studio oder die .NET-Verweisassemblys und - Tools (aus dem Windows 7.1-SDK) auf dem Buildcomputer installieren.  
   

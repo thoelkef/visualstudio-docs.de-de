@@ -16,19 +16,31 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 167ffa269ea8051a4791000d96a86cb5788af60d
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: c58bda5570be9cdb7fba7a8f90a282df7b7167a2
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="how-to-locate-and-organize-project-and-item-templates"></a>Vorgehensweise: Suchen und Organisieren von Projekt- und Elementvorlagen
 
-Vorlagendateien müssen an einem Speicherort abgelegt werden, an dem Visual Studio sie findet, damit sie in den Dialogfeldern **Neues Projekt** und **Neues Element hinzufügen** angezeigt werden können. Sie können benutzerdefinierte Unterkategorien für Vorlagen erstellen, die ebenfalls in den Dialogfeldern angezeigt werden.
+Vorlagendateien müssen an einem Speicherort abgelegt werden, an dem Visual Studio sie findet, damit sie in den Dialogfeldern **Neues Projekt** und **Neues Element hinzufügen** angezeigt werden können. Sie können auch benutzerdefinierte Unterkategorien im Ordner für Benutzervorlagen erstellen, diese werden ebenfalls in den Dialogfeldern **Neues Projekt** und **Neues Element hinzufügen** angezeigt.
 
-## <a name="locating-templates"></a>Suchen nach Vorlagen
+## <a name="locate-templates"></a>Auffinden von Vorlagen
 
-Installierte Vorlagen und Benutzervorlagen werden an unterschiedlichen Orten gespeichert. Wenn eine komprimierte Datei, die eine VSTEMPLATE-Datei enthält, sich an einem dieser Speicherorte befindet, wird in den Dialogfeldern **Neues Projekt** bzw. **Neues Element hinzufügen** eine Vorlage angezeigt.
+Installierte Vorlagen und Benutzervorlagen werden an unterschiedlichen Orten gespeichert.
+
+### <a name="user-templates"></a>Benutzervorlagen
+
+Wenn Sie eine komprimierte Datei (ZIP), die eine VSTEMPLATE-Datei enthält, zum Verzeichnis mit Benutzervorlagen hinzufügen, wird die Vorlage in den Dialogfeldern **Neues Projekt** bzw. **Neues Element hinzufügen** angezeigt. Benutzervorlagen werden standardmäßig in folgenden Verzeichnissen gespeichert:
+
+- „%USERPROFILE%\Documents\Visual Studio \<Version\>\Templates\ProjectTemplates“
+
+- „%USERPROFILE%\Documents\Visual Studio \<Version\>\Templates\ItemTemplates“
+
+Das folgende Verzeichnis enthält beispielsweise die Benutzerprojektvorlagen für C#:
+
+   „C:\Users\UserName\Documents\Visual Studio 2017\Templates\ProjectTemplates\Visual C#\“
 
 > [!TIP]
 > Sie können den Speicherort für Benutzervorlagen unter **Extras** > **Optionen** > **Projekte und Projektmappen** > **Speicherorte** festlegen.
@@ -45,38 +57,14 @@ Das folgende Verzeichnis enthält beispielsweise die Elementvorlagen für Visual
 
    C:\\*VisualStudioInstallationDirectory*\Common7\IDE\ItemTemplates\VisualBasic\1033\
 
-### <a name="user-templates"></a>Benutzervorlagen
+## <a name="organize-templates"></a>Organisieren von Vorlagen
 
-Benutzervorlagen werden standardmäßig in folgenden Verzeichnissen gespeichert:
-
-- „%USERPROFILE%\Documents\Visual Studio \<Version\>\Templates\ProjectTemplates“
-
-- „%USERPROFILE%\Documents\Visual Studio \<Version\>\Templates\ItemTemplates“
-
-Das folgende Verzeichnis enthält beispielsweise die Benutzerprojektvorlagen für C#:
-
-   „C:\Users\UserName\Documents\Visual Studio 2017\Templates\ProjectTemplates\Visual C#\“
-
-> [!NOTE]
-> Der Speicherort der Benutzervorlage umfasst keine Unterverzeichnisse des Gebietsschemas für lokalisierte Vorlagen.
-
-Sie können das Standardverzeichnis für Benutzervorlagen im Dialogfeld **Optionen** unter **Projekte und Projektmappen** > **Speicherorte** ändern.
-
-## <a name="organizing-templates"></a>Organisieren von Vorlagen
-
-Die Kategorien in den Dialogfeldern **Neues Projekt** und **Neues Element hinzufügen** spiegeln die Verzeichnisstrukturen wider, so wie sie an den Speicherorten für installierte Vorlagen und Benutzervorlagen angelegt sind. Sie können diese Verzeichnisstrukturen ändern, um Ihre Vorlagen in einer sinnvollen Weise zu organisieren.
+Die Kategorien in den Dialogfeldern **Neues Projekt** und **Neues Element hinzufügen** spiegeln die Verzeichnisstrukturen wider, so wie sie an den Speicherorten für installierte Vorlagen und Benutzervorlagen angelegt sind. Benutzervorlagen können in eigenen Kategorien organisiert werden, indem dem Verzeichnis für Benutzervorlagen neue Ordner hinzugefügt werden. In den Dialogfeldern **Neues Projekt** und **Neues Element hinzufügen** werden alle Änderungen angezeigt, die Sie an den Benutzervorlagenkategorien vornehmen.
 
 > [!NOTE]
 > Auf Programmiersprachenebene können keine neuen Kategorien erstellt werden. Neue Kategorien können nur innerhalb der einzelnen Programmiersprachen erstellt werden.
 
-> [!NOTE]
-> Wenn die Verzeichnisstrukturen für installierte Vorlagen und Benutzervorlagen für eine bestimmte Sprache nicht übereinstimmen (d.h. in einem Ordner sind Verzeichnisse vorhanden, in einem anderen allerdings nicht), werden sämtliche Kategorien im Dialogfeld **Neues Projekt** angezeigt.
-
-### <a name="organizing-user-templates"></a>Organisieren von Benutzervorlagen
-
-Benutzervorlagen können in eigenen Kategorien organisiert werden, indem dem Speicherort für Benutzervorlagen neue Ordner hinzugefügt werden. Im Dialogfeld **Neues Projekt** werden alle Änderungen angezeigt, die Sie an den Vorlagenkategorien vornehmen.
-
-#### <a name="to-create-new-user-project-template-categories"></a>Erstellen von neuen Kategorien für Benutzerprojektvorlagen
+### <a name="to-create-new-user-project-template-categories"></a>Erstellen von neuen Kategorien für Benutzerprojektvorlagen
 
 1. Erstellen Sie im Verzeichnis für Benutzerprojektvorlagen einen Ordner im jeweiligen Programmiersprachenordner. Um z.B. die Kategorie **HelloWorld** für C#-Vorlagen einzurichten, erstellen Sie das folgende Verzeichnis:
 
@@ -88,7 +76,7 @@ Benutzervorlagen können in eigenen Kategorien organisiert werden, indem dem Spe
 
    Die Kategorie **HelloWorld** wird im Dialogfeld **Neues Projekt** unter **Installiert** > **Visual C#** angezeigt.
 
-#### <a name="to-create-new-user-item-template-categories"></a>Erstellen neuer Kategorien für Benutzerelementvorlagen
+### <a name="to-create-new-user-item-template-categories"></a>Erstellen neuer Kategorien für Benutzerelementvorlagen
 
 1. Erstellen Sie im Verzeichnis für Benutzerelementvorlagen einen Ordner im jeweiligen Programmiersprachenordner. Um z.B. die Kategorie **HelloWorld** für C#-Elementvorlagen einzurichten, erstellen Sie das folgende Verzeichnis:
 
@@ -100,7 +88,7 @@ Benutzervorlagen können in eigenen Kategorien organisiert werden, indem dem Spe
 
    Die Kategorie **HelloWorld** wird im Dialogfeld **Neues Element hinzufügen** unter **Installiert** > **Visual C#-Elemente** angezeigt.
 
-### <a name="displaying-templates-in-parent-categories"></a>Anzeigen von Vorlagen in übergeordneten Kategorien
+### <a name="display-templates-in-parent-categories"></a>Anzeigen von Vorlagen in übergeordneten Kategorien
 
 Sie können in Unterkategorien enthaltene Vorlagen in den übergeordneten Kategorien anzeigen lassen, indem Sie das `NumberOfParentCategoriesToRollUp`-Element in der VSTEMPLATE-Datei verwenden. Diese Schritte sind für Projektvorlagen und Elementvorlagen identisch.
 

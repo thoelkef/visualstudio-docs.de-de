@@ -12,11 +12,11 @@ ms.author: gewarren
 manager: ghogen
 dev_langs: CSharp
 ms.workload: multiple
-ms.openlocfilehash: 614e8856fa8d4c674e40703448399265f2adc456
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 67927715cc88373040d1820f70faaf70198388c1
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="quickstart-coding-in-the-editor"></a>Schnellstart: Codieren im Editor
 
@@ -135,7 +135,7 @@ Der Visual Studio-Editor erleichtert u.a. die Prüfung der Definition eines Typs
 
 ## <a name="refactoring-a-name"></a>Umgestalten eines Namens
 
-Niemandem gelingt das Codieren schon beim ersten Versuch. Es ist also sehr wahrscheinlich, dass Sie irgendwann den Namen einer Variablen oder Methode ändern möchten. Testen Sie die Funktion [Umgestalten](../ide/refactoring-code-generation-quick-actions.md#refactoring) von Visual Studio, um die `_words`-Variable in `words` umzubenennen.
+Niemandem gelingt das Codieren schon beim ersten Versuch. Es ist also sehr wahrscheinlich, dass Sie irgendwann den Namen einer Variablen oder Methode ändern möchten. Testen Sie die Funktion [Umgestalten](../ide/refactoring-in-visual-studio.md) von Visual Studio, um die `_words`-Variable in `words` umzubenennen.
 
 1. Platzieren Sie den Cursor über der Definition der `words`-Variable, und klicken Sie im Kontextmenü (Rechtsklick) auf **Umbenennen...**, oder drücken Sie zweimal auf **STRG**+**R**, **STRG**+**R**.
 
@@ -155,11 +155,11 @@ Dieser Schnellstart für den Visual Studio-Editor wurde nun abgeschlossen. Wenn 
 
 ## <a name="see-also"></a>Siehe auch
 
-[Schnellstart: Ein erster Blick auf die Visual Studio-IDE](../ide/quickstart-ide-orientation.md)  
+[Schnellstart: ein erster Blick auf die Visual Studio-IDE](../ide/quickstart-ide-orientation.md)  
 [Schnellstart: Personalisieren der Visual Studio-IDE und des Editors](../ide/quickstart-personalize-the-ide.md)  
 [Schnellstart: Projekte und Projektmappen](../ide/quickstart-projects-solutions.md)  
 [Codeausschnitte](../ide/code-snippets.md)  
 [Gliedern](../ide/outlining.md)  
-[Go To Definition and Peek Definition („Gehe zu Definition“ und „Definition einsehen“)](../ide/go-to-and-peek-definition.md)  
-[Refactoring](../ide/refactoring-code-generation-quick-actions.md#refactoring)  
-[Verwenden von IntelliSense](../ide/using-intellisense.md)  
+[„Gehe zu Definition“ und „Definition einsehen“](../ide/go-to-and-peek-definition.md)  
+[Refactoring](../ide/refactoring-in-visual-studio.md)  
+[Verwenden von IntelliSense](../ide/using-intellisense.md)

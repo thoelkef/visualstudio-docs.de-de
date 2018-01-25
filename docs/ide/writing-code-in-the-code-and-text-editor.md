@@ -63,14 +63,14 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 4f26fcfb6b12266dd980fb8c38075e1937fcc022
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: bde177cb8f9ec8e72a331c785addfa7fead64dc7
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="write-code-in-the-code-editor"></a>Schreiben von Code in den Code-Editor
-Der Visual Studio-Editor bietet viele Funktionen, die Ihnen das Schreiben und die Verwaltung von Code und Text erleichtern. Sie können mithilfe der Gliederung verschiedene Codeblöcke reduzieren und erweitern. Wenn Sie IntelliSense, den **Objektkatalog** und die Aufrufhierarchie verwenden, können Sie mehr über Ihren Code erfahren. Sie können Code finden, indem Sie Funktionen wie **Gehe zu**, **Gehe zu Definition**und **Alle Verweise suchen** verwenden. Mit Codeausschnitten können Sie Codeblöcke einfügen und Code mithilfe von Funktionen wie **Generate From Usage**generieren. Wenn Sie noch nie mit dem Visual Studio-Editor gearbeitet haben, finden Sie eine schnelle Übersicht unter [Codebearbeitung](https://www.visualstudio.com/features/ide-vs) .  
+Der Visual Studio-Editor bietet viele Funktionen, die Ihnen das Schreiben und die Verwaltung von Code und Text erleichtern. Sie können mithilfe der Gliederung verschiedene Codeblöcke reduzieren und erweitern. Wenn Sie IntelliSense, den **Objektkatalog** und die Aufrufhierarchie verwenden, können Sie mehr über Ihren Code erfahren. Sie können Code finden, indem Sie Funktionen wie **Gehe zu**, **Gehe zu Definition**und **Alle Verweise suchen** verwenden. Mit Codeausschnitten können Sie Codeblöcke einfügen und Code mithilfe von Funktionen wie **Aus Verwendung generieren** erzeugen. Wenn Sie noch nie mit dem Visual Studio-Editor gearbeitet haben, finden Sie eine schnelle Übersicht unter [Codebearbeitung](https://www.visualstudio.com/features/ide-vs) .  
 
  Code kann auf unterschiedliche Weise angezeigt werden. Standardmäßig wird Ihr Code im **Projektmappen-Explorer** nach Dateien geordnet angezeigt. Sie können auf die Registerkarte **Klassenansicht** im unteren Bereich des Fensters klicken, damit Ihr Code nach Klassen geordnet angezeigt wird.
 
@@ -130,9 +130,10 @@ Um den Ort zu finden, zu dem bestimmte Codeelemente in Ihrer gesamten Codebasis 
 ## <a name="customize-the-editor"></a>Anpassen des Editors  
 Sie können im Menü **Extras** unter **Assistent zum Importieren und Exportieren von Einstellungen** Ihre Visual Studio-Einstellungen für einen anderen Entwickler freigeben, die Einstellungen an einen Standard anpassen oder zu den Visual Studio-Standardeinstellungen zurückkehren. Im **Assistent zum Importieren und Exportieren von Einstellungen** können Sie ausgewählte allgemeine Einstellungen oder Sprachen sowie projektspezifische Einstellungen ändern.
 
-Um neue Hotkeys zu definieren oder bestehende Hotkeys neu zu definieren, navigieren Sie zu **Extras**, **Optionen**, **Umgebung**, **Tastatur**. Weitere Informationen zu Hotkeys finden Sie unter [Standardtastenkombinationen](../ide/default-keyboard-shortcuts-in-visual-studio.md).  
+Um neue Hotkeys zu definieren oder bestehende Hotkeys neu zu definieren, navigieren Sie zu **Extras**, **Optionen**, **Umgebung**, **Tastatur**. Weitere Informationen zu Hotkeys finden Sie unter [Standardtastenkombinationen](../ide/default-keyboard-shortcuts-in-visual-studio.md).
 
-Weitere Informationen zum Anpassen des Editors finden Sie unter [Anpassen des Editors](../ide/customizing-the-editor.md). Informationen über sprachspezifische Editoroptionen finden Sie unter [Verwenden der Visual Studio-Entwicklungsumgebung für C#](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md) und [Options, Text Editor, JavaScript, Formatting](../ide/reference/options-text-editor-javascript-formatting.md).
+Weitere Informationen zum Anpassen des Editors finden Sie unter [Anpassen des Editors](../ide/customizing-the-editor.md). Informationen zu JavaScript-spezifischen Editor-Optionen finden Sie unter [Optionen, Text-Editor, JavaScript, Formatierung](../ide/reference/options-text-editor-javascript-formatting.md).
 
-## <a name="see-also"></a>Siehe auch  
- [Visual Studio-IDE](../ide/visual-studio-ide.md)
+## <a name="see-also"></a>Siehe auch
+
+[Visual Studio-IDE](../ide/visual-studio-ide.md)

@@ -25,11 +25,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: c1e994edfac648652876cc0b58b4b6f5ede1cccf
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: c941b196897b7d3f7a815c50fc1e0a4817d3ed74
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="managing-references-in-a-project"></a>Verwalten von Verweisen in einem Projekt
 
@@ -61,13 +61,13 @@ Informationen zur Neuausrichtung von Windows 8.1-Projekten auf Windows 10 finden
 
 ### <a name="extension-sdk-references"></a>Verweise auf Erweiterungs-SDKs
 
-Visual Basic-, C#-, C++- und JavaScript-Universal Windows Platform-Apps (UWP) können auf Erweiterungs-SDKs verweisen, die auf [!INCLUDE[win81](../debugger/includes/win81_md.md)] ausgerichtet sind, sofern diese Erweiterungs-SDKs keine APIs verwenden, die für Windows 10 nicht mehr unterstützt werden. Besuchen Sie die Website des Anbieters des Erweiterungs-SDKs, um festzustellen, ob UWP-Apps darauf verweisen können.
+In Visual Basic, C#, C++ und JavaScript für die universelle Windows-Plattform (UWP) geschriebene Apps können auf Erweiterungs-SDKs verweisen, die auf Windows 8.1 ausgerichtet sind, sofern diese Erweiterungs-SDKs keine APIs verwenden, die in Windows 10 nicht mehr unterstützt werden. Besuchen Sie die Website des Anbieters des Erweiterungs-SDKs, um festzustellen, ob UWP-Apps darauf verweisen können.
 
 Wenn Sie feststellen, dass das Erweiterungs-SDK, auf das von Ihrer Anwendung verwiesen wird, nicht unterstützt wird, müssen Sie folgende Schritte ausführen:
 
-1. Schauen Sie sich den Namen des Projekts an, das den Fehler verursacht. Die Plattform, auf die Ihr Projekt abzielt, steht in Klammern neben dem Projektnamen. Beispielsweise bedeutet **MyProjectName (Windows 8.1)** , dass das Projekt **MyProjectName** auf die Plattformversion [!INCLUDE[win81](../debugger/includes/win81_md.md)]abzielt.
+1. Schauen Sie sich den Namen des Projekts an, das den Fehler verursacht. Die Plattform, auf die Ihr Projekt abzielt, steht in Klammern neben dem Projektnamen. Beispielsweise bedeutet **MyProjectName (Windows 8.1)** dass das Projekt **MyProjectName** auf die Plattformversion Windows 8.1 abzielt.
 
-2. Wechseln Sie zur Website des Anbieters des nicht unterstützten Erweiterungs-SDKs, und installieren Sie die SDK-Version, deren Abhängigkeiten mit der Version der Plattform kompatibel sind, auf die Ihr Projekt ausgelegt ist.
+1. Wechseln Sie zur Website des Anbieters des nicht unterstützten Erweiterungs-SDKs, und installieren Sie die SDK-Version, deren Abhängigkeiten mit der Version der Plattform kompatibel sind, auf die Ihr Projekt ausgelegt ist.
 
     > [!NOTE]
     > Um herauszufinden, ob ein Erweiterungs-SDK von einem anderen abhängt, können Sie im **Verweis-Manager** nachsehen. Starten Sie Visual Studio neu, erstellen Sie ein neues C#-UWP-App-Projekt, klicken Sie dann mit der rechten Maustaste auf das Projekt, und wählen Sie **Verweis hinzufügen** aus. Wechseln Sie zur Registerkarte **Fenster** und dann zur Unterregisterkarte **Erweiterungen**, und wählen Sie das Erweiterungs-SDK aus. Sehen Sie sich den **Verweis-Manager** im rechten Bereich an. Wenn Abhängigkeiten bestehen, werden sie dort aufgeführt.
@@ -75,13 +75,13 @@ Wenn Sie feststellen, dass das Erweiterungs-SDK, auf das von Ihrer Anwendung ver
     > [!IMPORTANT]
     > Wenn Ihr Projekt auf Windows 10 ausgerichtet ist und das im vorherigen Schritt installierte Erweiterungs-SDK von Microsoft Visual C++ Runtime Package abhängt, lautet die mit Windows 10 kompatible Version von Microsoft Visual C++ Runtime Package 14.0 und wird mit Visual Studio installiert.
 
-3. Wenn das im vorherigen Schritt installierte Erweiterungs-SDK von anderen Erweiterungs-SDKs abhängt, rufen Sie die Websites der entsprechenden Anbieter auf, und installieren Sie die Versionen der Abhängigkeiten, die mit der Version der Plattform kompatibel sind, auf die Ihr Projekt ausgelegt ist.
+1. Wenn das im vorherigen Schritt installierte Erweiterungs-SDK von anderen Erweiterungs-SDKs abhängt, rufen Sie die Websites der entsprechenden Anbieter auf, und installieren Sie die Versionen der Abhängigkeiten, die mit der Version der Plattform kompatibel sind, auf die Ihr Projekt ausgelegt ist.
 
-4. Starten Sie Visual Studio neu, und öffnen Sie Ihre App.
+1. Starten Sie Visual Studio neu, und öffnen Sie Ihre App.
 
-5. Klicken Sie im Projekt, das den Fehler verursacht hat, mit der rechten Maustaste auf den Knoten **Verweise** und anschließend auf **Verweis hinzufügen**.
+1. Klicken Sie im Projekt, das den Fehler verursacht hat, mit der rechten Maustaste auf den Knoten **Verweise** und anschließend auf **Verweis hinzufügen**.
 
-6. Klicken Sie auf die Registerkarte **Fenster** und anschließend auf die Unterregisterkarte **Erweiterungen**. Deaktivieren Sie dann die Kontrollkästchen für die alten Erweiterungs-SDKs, und aktivieren Sie die Kontrollkästchen für die neuen. Klicken Sie auf **OK**.
+1. Klicken Sie auf die Registerkarte **Fenster** und anschließend auf die Unterregisterkarte **Erweiterungen**. Deaktivieren Sie dann die Kontrollkästchen für die alten Erweiterungs-SDKs, und aktivieren Sie die Kontrollkästchen für die neuen. Klicken Sie auf **OK**.
 
 ## <a name="adding-a-reference-at-design-time"></a>Hinzufügen von Verweisen zur Entwurfszeit
 

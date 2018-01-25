@@ -15,19 +15,19 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload: data-science
-ms.openlocfilehash: 97debeab6349fefee48d6c550c39c18c3e516b75
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c83a24cbcbe13047ef103f86c8bd81fee1506c2d
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="data-science-and-analytical-applications-workload"></a>Workload von Data Science und analytischen Anwendungen
 
-Die Workload von Data Science und analytischen Anwendungen in Visual Studio kombiniert drei Sprachen und deren entsprechende Laufzeitverteilungen:
+Die Workload für Data Science und analytische Anwendungen, die im Visual Studio-Installationsprogramm angezeigt wird, kombiniert drei Sprachen und deren jeweilige Runtimedistributionen:
 
 - [R und Microsoft R Client](../rtvs/index.md)
 - [Python und Anaconda](../python/python-in-visual-studio.md)
-- [F# mit .NET Framework](https://docs.microsoft.com/dotnet/fsharp/)
+- [F# mit .NET Framework](/dotnet/fsharp/)
 
 ![Workload von Data Science und analytischen Anwendungen im Visual Studio-Installer](media/data-science-workload.png)
 

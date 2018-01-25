@@ -14,18 +14,19 @@ ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
+- data-science
 - azure
-ms.openlocfilehash: e5bde434f3a5097f51f461aad5b02ae183e2204c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d14263c228cdbedc0f74acc20d81cfe58380812f
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="azure-cloud-service-projects-for-python"></a>Projekte für Azure-Clouddienste für Python
 
 Visual Studio enthält Vorlagen, die Ihnen bei der Verwendung von Azure Cloud Services mithilfe von Python helfen.
 
-Ein [Clouddienst](http://go.microsoft.com/fwlink/?LinkId=306052) besteht aus einer beliebigen Anzahl von *Workerrollen* und *Webrollen*, von denen jede eine konzeptionell gesonderte Aufgabe ausführt und je nach Skalierungsbedarf separat über virtuelle Computer repliziert werden kann. Webrollen bieten das Hosting für Front-End-Webanwendungen. Für Python kann jedes Webframework, das WSGI unterstützt, zum Schreiben einer solchen Anwendung verwendet werden (wie von der [Webprojektvorlage](template-web.md) unterstützt). Workerrollen sind für lang andauernde Prozesse vorgesehen, die nicht direkt mit den Benutzern interagieren. Sie nutzen in der Regel die Bibliotheken mit [Daten](http://go.microsoft.com/fwlink/?LinkId=401571) und [Anwendungsdiensten](http://go.microsoft.com/fwlink/?LinkId=401572), die mit `pip install`&nbsp;[`azure`](http://pypi.org/project/azure) installiert werden können.
+Ein [Clouddienst](http://go.microsoft.com/fwlink/?LinkId=306052) besteht aus einer beliebigen Anzahl von *Workerrollen* und *Webrollen*, von denen jede eine konzeptionell gesonderte Aufgabe ausführt und je nach Skalierungsbedarf separat über virtuelle Computer repliziert werden kann. Webrollen bieten das Hosting für Front-End-Webanwendungen. Für Python kann jedes Webframework, das WSGI unterstützt, zum Schreiben einer solchen Anwendung verwendet werden (wie von der [Webprojektvorlage](template-web.md) unterstützt). Workerrollen sind für lang andauernde Prozesse vorgesehen, die nicht direkt mit den Benutzern interagieren. Sie nutzen in der Regel die Bibliotheken mit [Daten](http://go.microsoft.com/fwlink/?LinkId=401571) und [Anwendungsdiensten](http://go.microsoft.com/fwlink/?LinkId=401572), die mit [`pip install azure`](http://pypi.org/project/azure) installiert werden können.
 
 Dieses Thema enthält Details über die Projektvorlage und sonstige Unterstützung in Visual Studio 2017 (frühere Versionen sind ähnlich, es gibt jedoch einige Unterschiede). Weitere Informationen zum Verwenden von Azure über Python finden Sie im [Azure Python Developer Center](http://go.microsoft.com/fwlink/?linkid=254360).
 
@@ -80,7 +81,7 @@ Wählen Sie zum Öffnen des **Veröffentlichungs**-Assistenten das Rollenprojekt
 
 Der Veröffentlichungsvorgang umfasst zwei Phasen. Zunächst erstellt Visual Studio ein einzelnes Paket, das alle Rollen für den Clouddenst enthält. Dieses Paket wird in Azure bereitgestellt. Dadurch werden ein oder mehrere virtuelle Computer für jede Rolle initialisiert und die Quelle bereitgestellt.
 
-Wenn die einzelnen virtuellen Computer aktiviert werden, führen das Skript `ConfigureCloudService.ps1` aus und installieren alle Abhängigkeiten. Mit diesem Skript werden standardmäßig eine aktuelle Python-Version von [NuGet](https://www.nuget.org/packages?q=Tags%3A%22python%22+Authors%3A%22Python+Software+Foundation%22) und alle Pakete gemäß einer `requirements.txt`-Datei installiert. 
+Wenn die einzelnen virtuellen Computer aktiviert werden, führen das Skript `ConfigureCloudService.ps1` aus und installieren alle Abhängigkeiten. Mit diesem Skript werden standardmäßig eine aktuelle Python-Version von [NuGet](https://www.nuget.org/packages?q=Tags%3A%22python%22+Authors%3A%22Python+Software+Foundation%22) und alle Pakete gemäß einer `requirements.txt`-Datei installiert.
 
 Schließlich führen Workerrollen `LaunchWorker.ps1` aus. Damit wird die Ausführung des Python-Skripts gestartet. Webrollen initialisieren IIS und beginnen mit der Verarbeitung von Webanforderungen.
 
@@ -90,7 +91,7 @@ Das Skript `ConfigureCloudService.ps1` verwendet für Cloud Services `pip`, um P
 
 Clouddienstinstanzen beinhalten keine C-Compiler. Daher müssen alle Bibliotheken mit C-Erweiterungen vorkompilierte Binärdateien bereitstellen.
 
-pip und entsprechende Abhängigkeiten sowie die Pakete in `requirements.txt` werden automatisch heruntergeladen. Dies kann als fakturierbare Bandbreitennutzung gewertet werden. Unter [Verwalten von erforderlichen Paketen](python-environments.md#managing-required-packages) finden Sie ausführliche Informationen zum Verwalten von `requirements.txt`-Dateien.
+pip und entsprechende Abhängigkeiten sowie die Pakete in `requirements.txt` werden automatisch heruntergeladen. Dies kann als fakturierbare Bandbreitennutzung gewertet werden. Unter [Verwalten von erforderlichen Paketen](python-environments.md#managing-required-packages-requirementstxt) finden Sie ausführliche Informationen zum Verwalten von `requirements.txt`-Dateien.
 
 ## <a name="troubleshooting"></a>Problembehandlung
 
@@ -98,9 +99,9 @@ Wenn sich Ihre Web- oder Workerrolle nach der Bereitstellung nicht ordnungsgemä
 
 - Ihr Python-Projekt enthält einen Ordner „bin\“ mit (mindestens):
 
-    - `ConfigureCloudService.ps1`
-    - `LaunchWorker.ps1` (für Workerrollen)
-    - `ps.cmd`
+  - `ConfigureCloudService.ps1`
+  - `LaunchWorker.ps1` (für Workerrollen)
+  - `ps.cmd`
 
 - Ihr Python-Projekt enthält eine Datei `requirements.txt` mit allen Abhängigkeiten (oder alternativ eine Sammlung von wheel-Dateien).
 - Aktivieren Sie Remotedesktop für den Clouddienst, und untersuchen Sie die Protokolldateien.
