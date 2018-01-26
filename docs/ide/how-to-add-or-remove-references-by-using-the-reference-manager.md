@@ -1,13 +1,15 @@
 ---
 title: "Vorgehensweise: Hinzufügen und Entfernen von Verweisen mit dem Verweis-Manager | Microsoft-Dokumentation"
 ms.custom: 
-ms.date: 06/21/2017
+ms.date: 01/18/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: VS.ReferenceManager
+f1_keywords:
+- VS.ReferenceManager
 helpviewer_keywords:
 - Visual C# projects, references
 - references [Visual Studio], adding
@@ -23,12 +25,13 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 24c317a641fc178306013d8b75c3254f3d3f7b1c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 34dd559abcbfa6172c52edd2ed5eae2898f0b358
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Vorgehensweise: Hinzufügen und Entfernen von Verweisen mit dem Verweis-Manager
 
@@ -198,7 +201,7 @@ Wenn ein Projekttyp keine **Erweiterungen** unterstützt, wird die Registerkarte
 
 Mit der Schaltfläche **Durchsuchen** können Sie nach einer Komponente im Dateisystem suchen.
 
-Ein Projekt kann auf eine Komponente verweisen, die eine andere .NET Framework-Version als Ziel verwendet. Beispielsweise können Sie eine Anwendung erstellen, die .NET Framework 4 Client Profile als Ziel verwendet, das auf eine Komponente verweist, die auf .NET Framework 2 ausgerichtet ist. Weitere Informationen finden Sie unter [Festlegen einer bestimmten .NET-Framework-Zielversion](../ide/targeting-a-specific-dotnet-framework-version.md).
+Ein Projekt kann auf eine Komponente verweisen, die eine andere .NET Framework-Version als Ziel verwendet. Beispielsweise können Sie eine Anwendung mit .NET Framework 4.7 als Ziel erstellen, das auf eine Komponente mit .NET Framework 4 als Zielversion verweist. Weitere Informationen finden Sie unter [Festlegen einer bestimmten .NET-Framework-Zielversion](../ide/targeting-a-specific-dotnet-framework-version.md).
 
 Sie sollten keine Dateiverweise auf Ausgaben eines anderen Projekts in derselben Projektmappe hinzufügen, da dies zu Kompilierungsfehlern führen kann. Erstellen Sie Verweise zwischen Projekten stattdessen im Dialogfeld **Verweis-Manager** auf der Registerkarte **Projektmappe**. Dies erleichtert die Entwicklung im Team, da die in den Projekten erstellten Klassenbibliotheken besser verwaltet werden können. Weitere Informationen finden Sie unter [Problembehandlung bei fehlerhaften Verweisen](../ide/troubleshooting-broken-references.md).
 

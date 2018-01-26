@@ -5,23 +5,29 @@ keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.date: 12/18/2017
+ms.date: 01/17/2018
 ms.topic: article
 helpviewer_keywords: 
-ms.technology: vs-acquisition
+ms.technology:
+- vs-acquisition
 ms.service: 
-ms.workload: multiple
-ms.openlocfilehash: 945b11869145d07c9defa8586876d02eccf098f7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 4dee8cbd037fc1b4dda7f420e9a2cbff925d9a23
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="visual-studio-2017-build-numbers-and-release-dates"></a>Visual Studio 2017-Buildnummern und -Veröffentlichungstermine
 In der folgenden Tabelle werden die bisherigen Buildnummern und Veröffentlichungstermine für Visual Studio 2017 aufgeführt.
 
 | **Version**| **Kanal** | **Veröffentlichungsdatum** | **Buildversion** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.5.4 | Release | 16.01.2018 | 15.5.27130.2024 |
+| 15.6.0 Vorschauversion 2.0 | Vorschau | 10.01.2018 | 15.6.27309.0 |
+| 15.5.3 | Release | 09.01.2018 | 15.5.27130.2020 |
+| 15.0.8 | Release | 09.01.2018 | 15.0.26228.21 |
 | 15.5.2 | Release | 12/14/2017 | 15.5.27130.2010 |
 | 15.6.0 Vorschauversion 1.1 | Vorschau | 12/14/2017 | 15.6.27205.2004 |
 | 15.5.1 | Release | 12/7/2017 | 15.5.27130.2003 |
@@ -38,55 +44,55 @@ In der folgenden Tabelle werden die bisherigen Buildnummern und Veröffentlichun
 | 15.4.2 | Release | 10/31/2017 | 15.4.27004.2006 |
 | 15.5.0 Vorschauversion 2.0 | Vorschau | 10/23/2017 | 15.5.27019.1 |
 | 15.4.1 | Release | 10/19/2017 | 15.4.27004.2005 |
-| 15.5 Vorschauversion 1 | Vorschau | 11.10.2017 | 15.0.27009.1 |
+| 15.5 Vorschauversion 1.0 | Vorschau | 11.10.2017 | 15.0.27009.1 |
 | 15.4 | Release | 9.10.2017 | 15.0.27004.20002 |
-| 15.4 Vorschauversion 6 | Vorschau | 9.10.2017| 15.0.27004.20002 |
-| 15.4 Vorschauversion 5 | Vorschau | 6.10.2017 | 15.0.27004.2000 |
-| 15.4 Vorschauversion 4 | Vorschau | 2.10.2017 | 15.0.26929.2 |
-| 15.4 Vorschauversion 3 | Vorschau | 21.9.2017 | 15.0.26923.00 |
+| 15.4 Vorschauversion 6.0 | Vorschau | 9.10.2017| 15.0.27004.20002 |
+| 15.4 Vorschauversion 5.0 | Vorschau | 6.10.2017 | 15.0.27004.2000 |
+| 15.4 Vorschauversion 4.0 | Vorschau | 2.10.2017 | 15.0.26929.2 |
+| 15.4 Vorschauversion 3.0 | Vorschau | 21.9.2017 | 15.0.26923.00 |
 | 15.3.5 | Release | 19.9.2017 | 15.0.26730.16 |
 | 15.0.5 | Release | 18.9.2017 | 15.0.26228.16 |
 | 15.3.4 | Release | 12.9.2017 | 15.0.26730.15 |
-| 15.4 Vorschauversion 2 | Vorschau | 11.9.2017 | 15.0.26906.1 |
+| 15.4 Vorschauversion 2.0 | Vorschau | 11.9.2017 | 15.0.26906.1 |
 | 15.3.3| Release | 29.8.2017 | 15.0.26730.12 |
-| 15.4 Vorschauversion 1 | Vorschau | 24.8.2017 | 15.0.26823.01 |
+| 15.4 Vorschauversion 1.0 | Vorschau | 24.8.2017 | 15.0.26823.01 |
 | 15.3.2 | Release | 22.8.2017 | 15.0.26730.10 |
 | 15.3.1 | Release | 18.8.2017 | 15.0.26730.08 |
-| 15.3.1 Vorschauversion 1 | Vorschau | 18.8.2017 | 15.0.26730.08 |
+| 15.3.1 Vorschauversion 1.0 | Vorschau | 18.8.2017 | 15.0.26730.08 |
 | 15.3.1  | Release | 18.8.2017 | 15.0.26730.08 |
-| 15.4 Vorschauversion 1 | Vorschau | 24.8.2017 | 15.4.26823.1 |
+| 15.4 Vorschauversion 1.0 | Vorschau | 24.8.2017 | 15.4.26823.1 |
 | 15.3 | Release | 14.8.2017 | 15.0.26730.3 |
 | 15.3 Vorschauversion 7.1 | Vorschau | 11.8.2017 | 15.0.26730.3 |
-| 15.3 Vorschauversion 7 | Vorschau | 1.8.2017 | 15.0.26730.0 |
-| 15.3 Vorschauversion 6 | Vorschau | 26.7.2017 | 15.0.26724.1 |
-| 15.3 Vorschauversion 5 | Vorschau | 24.7.2017 | 15.0.26720.02 |
+| 15.3 Vorschauversion 7.0 | Vorschau | 1.8.2017 | 15.0.26730.0 |
+| 15.3 Vorschauversion 6.0 | Vorschau | 26.7.2017 | 15.0.26724.1 |
+| 15.3 Vorschauversion 5.0 | Vorschau | 24.7.2017 | 15.0.26720.02 |
 | 15.2.6  | Release | 17.7.2017 | 15.0.26430.16 |
-| 15.3 Vorschauversion 4 | Vorschau | 12.7.2017 | 15.0.26711.1 |
+| 15.3 Vorschauversion 4.0 | Vorschau | 12.7.2017 | 15.0.26711.1 |
 | 15.2.5  | Release | 6.7.2017 | 15.0.26430.15 |
-| 15.3 Vorschauversion 3 | Vorschau | 26.6.2017 | 15.0.26621.2 |
+| 15.3 Vorschauversion 3.0 | Vorschau | 26.6.2017 | 15.0.26621.2 |
 | 15.2.4  | Release | 21.6.2017 | 15.0.26430.14 |
 | 15.3 Vorschauversion 2.1 | Vorschau | 20.6.2017 | 15.0.26608.5 |
 | 15.2.3  | Release | 9.6.2017 | 15.0.26430.13 |
-| 15.3 Vorschauversion 2 | Vorschau | 8.6.2017 | 15.0.26606.0 |
+| 15.3 Vorschauversion 2.0 | Vorschau | 8.6.2017 | 15.0.26606.0 |
 | 15.2.2  | Release | 30.5.2017 | 15.0.26430.12 |
 | 15.0.4  | Release | 23.5.2017 | 15.0.26228.13 |
 | 15.2.1  | Release | 12.5.2017 | 15.0.26430.6 |
 | 15.3 Vorschauversion 1.1 | Vorschau | 11.5.2017 | 15.0.26510.0 |
-| 15.3 Vorschauversion 1 | Vorschau | 10.5.2017 | 15.0.26507.0 |
+| 15.3 Vorschauversion 1.0 | Vorschau | 10.5.2017 | 15.0.26507.0 |
 | 15.2 | Release | 10.5.2017 | 15.0.26430.4 |
-| 15.2 Vorschauversion 4 | Vorschau | 3.5.2017 | 15.0.26430.1 |
-| 15.2 Vorschauversion 3 | Vorschau| 26.4.2017 | 15.0.26424.2 |
-| 15.2 Vorschauversion 2 | Vorschau | 20.4.2017 | 15.0.26419.1 |
-| 15.2 Vorschauversion 1 | Vorschau | 17.4.2017 | 15.0.26412.1 |
+| 15.2 Vorschauversion 4.0 | Vorschau | 3.5.2017 | 15.0.26430.1 |
+| 15.2 Vorschauversion 3.0 | Vorschau| 26.4.2017 | 15.0.26424.2 |
+| 15.2 Vorschauversion 2.0 | Vorschau | 20.4.2017 | 15.0.26419.1 |
+| 15.2 Vorschauversion 1.0 | Vorschau | 17.4.2017 | 15.0.26412.1 |
 | 15.1.2  | Release | 17.4.2017 | 15.0.26403.7 |
 | 15.1.1 | Release | 10.4.2017 | 15.0.26403.3 |
 | 15.1 | Release | 5.4.2017 | 15.0.26403.0 |
 | 15.0.3  | Release | 31.3.2017 | 15.0.26228.12 |
 | 15.0.2 | Release | 28.3.2017 | 15.0.26228.10 |
-| 15.1 Vorschauversion 3 | Vorschau | 27.3.2017 | 15.0.26323.1 |
-| 15.1 Vorschauversion 2 | Vorschau | 16.3.2017 | 15.0.26315.0 |
+| 15.1 Vorschauversion 3.0 | Vorschau | 27.3.2017 | 15.0.26323.1 |
+| 15.1 Vorschauversion 2.0 | Vorschau | 16.3.2017 | 15.0.26315.0 |
 | 15.0.1  | Release | 14.3.2017 | 15.0.26228.9 |
-| 15.1 Vorschauversion 1 | Vorschau | 7.3.2017 | 15.0.26304.0 |
+| 15.1 Vorschauversion 1.0 | Vorschau | 7.3.2017 | 15.0.26304.0 |
 | 15.0.0 | Release | 7.3.2017 | 15.0.26228.4 |
 
 ## <a name="get-support"></a>Support aufrufen

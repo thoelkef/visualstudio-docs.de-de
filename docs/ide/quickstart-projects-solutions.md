@@ -10,12 +10,13 @@ ms.topic: quickstart
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: b757178f29439f162df9e8844ae65ed8df642bb5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 74ac22508ea00a59dc4b29806253b4a041994c54
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="quickstart-projects-and-solutions"></a>Schnellstart: Projekte und Projektmappen
 
@@ -62,7 +63,7 @@ Fügen Sie nun der Projektmappe Ihr erstes Projekt hinzu. Beginnen Sie mit einem
    Unter der Projektmappe wird im **Projektmappen-Explorer** ein Projekt mit dem Namen „QuickDate“ angezeigt. Zu diesem Zeitpunkt enthält das Projekt nur eine Datei mit dem Namen **App.config**.
 
    > [!NOTE]
-   > Wenn im linken Bereich des Dialogfelds nicht **Visual C#** angezeigt wird, müssen Sie die Workload **.NET-Desktopentwicklung** installieren. Sie können dies problemlos über den Link **Visual Studio-Installer öffnen** im unteren linken Bereich erledigen. Der **Visual Studio-Installer** wird geöffnet, sodass Sie die richtige Workload auswählen und dann auf **Ändern** klicken können.
+   > Wenn im linken Bereich des Dialogfelds nicht **Visual C#** angezeigt wird, müssen Sie die Workload **.NET-Desktopentwicklung** installieren. Sie können dies problemlos über den Link **Visual Studio-Installer öffnen** im unteren linken Bereich des Dialogfelds erledigen. Nachdem der **Visual Studio-Installer** gestartet wurde, wählen Sie die Workload **.NET-Desktopentwicklung** und dann die Schaltfläche **Ändern**.
 
    ![Öffnen des Links „Visual Studio-Installer“](media/quickstart-projects-open-installer.png)
 

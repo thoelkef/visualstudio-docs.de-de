@@ -165,7 +165,7 @@
 ###### [Umbenennen](ide/reference/rename-vb.md)
 ###### [Synchronisierung von Typ und Dateinamen](ide/reference/sync-type-and-file-vb.md)
 #### [Produktivitätstipps](ide/productivity-tips-for-visual-studio.md)
-##### [Tipps und Tricks](ide/tips-and-tricks-for-visual-studio.md)
+##### [Tipps und Tricks für Visual Studio](ide/tips-and-tricks-for-visual-studio.md)
 ##### [Tipps für .NET-Entwickler](ide/visual-studio-2017-for-dotnet-developers.md)
 ##### [Identifizieren und Anpassen von Tastenkombinationen](ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)
 ###### [Standardtastenkombinationen für häufig verwendete Befehle](ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)

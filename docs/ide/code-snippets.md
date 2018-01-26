@@ -20,12 +20,13 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 2d937f36fcf2b76af8f5865ecdf2b137188e15eb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: e2b973b00e132973b8569bc5cad8c1f1318317cd
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="code-snippets"></a>Codeausschnitte
 
@@ -35,7 +36,7 @@ Codeausschnitte sind kleine Blöcke mit wiederverwendbarem Code, die in einer Co
 
 In Visual Studio gibt es zwei Arten von Codeausschnitten: Erweiterungsausschnitte, die an einer angegebenen Einfügemarke hinzugefügt werden und eine Ausschnittsverknüpfung ersetzen können, und umschließende Ausschnitte (nur in C# und C++), die um einen ausgewählten Codeblock herum eingefügt werden.
 
-Ein Beispiel für einen Einfügungsausschnitt: In C# wird die Verknüpfung Tryf verwendet, um einen Try-finally-Block einzufügen:
+Ein Beispiel für einen Erweiterungsausschnitt: In C# wird die Verknüpfung tryf verwendet, um einen try/finally-Block einzufügen:
 
 ```csharp
 try

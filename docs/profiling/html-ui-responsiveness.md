@@ -4,31 +4,29 @@ ms.custom: H1Hack27Feb2017
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
-- CSharp
-- VB
-- FSharp
-- C++
+- JavaScript
 helpviewer_keywords:
 - performance, JavaScript [UWP apps]
 - performance tools, JavaScript [UWP apps]
 - UI Responsiveness Profiler [JavaScript]
 - profiler, UI responsiveness [JavaScript]
 - profiler, JavaScript [UWP apps]
-ms.assetid: da13070a-ba40-47dd-a846-ad72eed70d0b
-caps.latest.revision: "47"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: uwp
-ms.openlocfilehash: 3c0bc7195fd862d5131a4a70b4e59ecea2afc0bc
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- uwp
+ms.openlocfilehash: 71e8c18401b341ef1e1b24c35dc39e80758c31d2
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>Analysieren der HTML-UI-Reaktionsfähigkeit in UWP-Apps
 In diesem Thema wird das Isolieren von Leistungsproblemen in Ihren Apps mithilfe des Benutzeroberflächen-Reaktionsfähigkeits-Profilers beschrieben, einem Leistungstool für universelle Windows-Apps.  
@@ -42,9 +40,9 @@ In diesem Thema wird das Isolieren von Leistungsproblemen in Ihren Apps mithilfe
 -   Visuelle Updates, die seltener sind als erwartet. Dies tritt auf, wenn der UI-Thread ausgelastet ist, damit eine angemessene Framerate beibehalten wird. Frames könnten z. B. abgelegt werden, wenn der UI-Thread ausgelastet ist. Einige von UI-Threads unabhängige Aufgaben können auch die Häufigkeit von visuellen Updates einschränken, z. B. Netzwerkanforderungen, Decodierung von Images und Paint-Ereignisse. (Nicht alle Paint-Ereignisse werden im UI-Thread ausgeführt).  
   
 ##  <a name="RunningProfiler"></a> Ausführen des Tools für die Reaktionsfähigkeit der HTML-Benutzeroberfläche  
- Sie können das Tool für die Reaktionsfähigkeit der HTML-Benutzeroberfläche verwenden, wenn Sie eine funktionierende UWP-App oder Windows 8.1-App in Visual Studio geöffnet oder auf einem Computer installiert haben, auf dem Windows 8 oder höher ausgeführt wird.  
+ Wenn Sie eine funktionierende UWP-App in Visual Studio geöffnet haben, können Sie das Tool für die Reaktionsfähigkeit der HTML-Benutzeroberfläche verwenden.  
   
-1.  Wenn Sie die App aus Visual Studio heraus ausführen, wählen Sie auf der Symbolleiste **Standard** in der Dropdownliste **Debugging starten** ein Bereitstellungsziel aus, z. B. einen der Windows Phone-Emulatoren, **Lokaler Computer**, **Simulator**oder **Remotecomputer**.  
+1.  Wenn Sie die App aus Visual Studio heraus ausführen, wählen Sie auf der Symbolleiste **Standard** in der Liste **Debugging starten** ein Bereitstellungsziel wie **Lokaler Computer** oder **Gerät** aus.  
   
 2.  Klicken Sie im Menü **Debuggen** auf **Leistungsprofiler…**.  
   

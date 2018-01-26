@@ -4,20 +4,24 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: msvse_settingsdesigner.err.nameblank
-helpviewer_keywords: application settings [Visual Studio]
+f1_keywords:
+- msvse_settingsdesigner.err.nameblank
+helpviewer_keywords:
+- application settings [Visual Studio]
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 5a41ed010a4e950bd0fa4d28f63481587b847309
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: fdd95f1890033e90b2679a2c992f3a49ad474851
+ms.sourcegitcommit: 65f85389047c5a1938b6d5243ccba8d4f14362ba
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="managing-application-settings-net"></a>Verwalten von Anwendungseinstellungen (.NET)
 
@@ -99,7 +103,7 @@ Sie müssen die `Save` -Methode dieser Wrapperklasse explizit aufrufen, damit di
 Properties.Settings.Default.Save();
 ```
 
-Allgemeine Informationen zum Zugriff auf Anwendungseinstellungen über die `Settings`-Klasse finden Sie unter [Application Settings Overview (Übersicht über Anwendungseinstellungen)](/dotnet/framework/winforms/advanced/application-settings-overview). Informationen über das Durchlaufen der Einstellungen finden Sie in diesem [Forumsbeitrag](http://social.msdn.microsoft.com/Forums/vstudio/40fbb470-f1e8-4a02-a4a0-9f62b54d0fc4/is-this-possible-propertiessettingsdefault?forum=csharpgeneral).
+Allgemeine Informationen zum Zugriff auf Anwendungseinstellungen über die `Settings`-Klasse finden Sie unter [Übersicht über Anwendungseinstellungen](/dotnet/framework/winforms/advanced/application-settings-overview). Informationen über das Durchlaufen der Einstellungen finden Sie in diesem [Forumsbeitrag](http://social.msdn.microsoft.com/Forums/vstudio/40fbb470-f1e8-4a02-a4a0-9f62b54d0fc4/is-this-possible-propertiessettingsdefault?forum=csharpgeneral).
 
 ## <a name="see-also"></a>Siehe auch
 

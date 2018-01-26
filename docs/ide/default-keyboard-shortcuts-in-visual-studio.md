@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 06/26/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -16,19 +17,20 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 9f6aaafa0ff72a175b5900b1ff1dfa054fe0381b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: bfb22343acd98edf2a010a3f5462dde84d85bbcc
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Standardtastenkombinationen in Visual Studio
 Weitere Informationen über den Tastaturzugriff finden Sie unter [Tipps und Tricks zu Barrierefreiheit](../ide/reference/accessibility-tips-and-tricks.md) und [Vorgehensweise: Ausschließliches Verwenden der Tastatur](../ide/reference/how-to-use-the-keyboard-exclusively.md).
 
 Sie können auf eine Reihe von Befehlen und Fenster in Visual Studio zugreifen, indem Sie die entsprechende Tastenkombination auswählen. In diesem Thema werden die Standardtastenkombinationen für das allgemeine Entwicklungsprofil aufgeführt, das Sie bei der Installation von Visual Studio möglicherweise ausgewählt haben. Unabhängig von dem Profil, das Sie ausgewählt haben, können Sie die Tastenkombination für einen Befehl ermitteln, indem Sie das Dialogfeld **Optionen** öffnen, den Knoten **Umgebung** aufklappen und dann **Tastatur** auswählen. Sie können eine Tastenkombination anpassen, indem Sie einem Befehl eine andere Tastenkombination zuweisen.
 
-Eine Liste häufiger Tastenkombinationen und andere Informationen zum Thema Produktivität finden Sie unter [Standardtastenkombinationen für häufig verwendete Befehle in Visual Studio](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md), [Tipps und Tricks](../ide/tips-and-tricks-for-visual-studio.md) und [Produktivitätstipp](../ide/productivity-tips-for-visual-studio.md).
+Eine Liste häufiger Tastenkombinationen und andere Informationen zum Thema Produktivität finden Sie unter [Standardtastenkombinationen für häufig verwendete Befehle in Visual Studio](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md), [Tipps und Tricks für Visual Studio](../ide/tips-and-tricks-for-visual-studio.md) und [Produktivitätstipps für Visual Studio](../ide/productivity-tips-for-visual-studio.md).
 
 Die Abschnitte in der folgenden Tabelle enthalten globale Befehle, auf die Sie von überall in Visual Studio mithilfe von Tastenkombinationen zugreifen können:
 

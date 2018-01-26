@@ -1,10 +1,11 @@
 ---
 title: Verwenden von Befehlszeilenparametern zum Installieren von Visual Studio | Microsoft-Dokumentation
 ms.custom: 
-ms.date: 09/22/2017
+ms.date: 01/17/2018
 ms.reviewer: tims
 ms.suite: 
-ms.technology: vs-acquisition
+ms.technology:
+- vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,12 +16,13 @@ ms.assetid: 480f3cb4-d873-434e-a8bf-82cff7401cf2
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: bfdce6484661354315a4f6b8b4a219f119ec8742
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 41e66e9fabd84bac7ed7e413d51f08e55ef93a6e
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>Verwenden von Befehlszeilenparametern zum Installieren von Visual Studio 2017
 Wenn Sie Visual Studio 2017 von einer Befehlszeile aus installieren, können Sie die verschiedene Befehlszeilenparameter verwenden, um die Installation zu steuern und anzupassen. Über die Befehlszeile können Sie die folgenden Aktionen durchführen:
@@ -40,7 +42,10 @@ Die Befehlszeilenoptionen werden in Verbindung mit dem Setup-Bootstrapper verwen
 
 > Syntax: `vs_enterprise.exe [command] <options>...`
 
-(Ersetzen Sie `vs_enterprise.exe` nach Bedarf mit der Produktversion, die Sie installieren) Beispiele finden Sie auf der Seite [Beispiele für Befehlszeilenparameter](command-line-parameter-examples.md).)
+(Ersetzen Sie `vs_enterprise.exe` nach Bedarf durch die Produktedition, die Sie installieren)
+
+>[!TIP]
+> Weitere Informationen zur Verwendung der Befehlszeile für die Installation von Visual Studio 2017 finden Sie auf der Seite mit [Beispielen für Befehlszeilenparameter](command-line-parameter-examples.md).)
 
 | **Befehl** | **Beschreibung** |
 | ----------------------- | --------------- |
@@ -143,7 +148,6 @@ Hier sind einige weitere Supportoptionen:
 
 ## <a name="see-also"></a>Siehe auch
 
- * [Installieren von Visual Studio 2017](install-visual-studio.md)
- * [Erstellen einer Offlineinstallation von Visual Studio 2017](create-an-offline-installation-of-visual-studio.md)
  * [Beispiele für Befehlszeilenparameter für die Installation von Visual Studio 2017](command-line-parameter-examples.md)
+ * [Erstellen einer Offlineinstallation von Visual Studio 2017](create-an-offline-installation-of-visual-studio.md)
  * [Automatisieren der Visual Studio-Installation mit einer Antwortdatei](automated-installation-with-response-file.md)

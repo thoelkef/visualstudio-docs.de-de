@@ -12,13 +12,15 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.technology: vs-ide-general
-ms.workload: multiple
-ms.openlocfilehash: 2719ecd60a68de795c51ec4363a9130e4da9019c
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.technology:
+- vs-ide-general
+ms.workload:
+- multiple
+ms.openlocfilehash: d6df33919220852642bac195d47752ec88e467ee
+ms.sourcegitcommit: d922eabedbeaedccecc5ca497ff12eb1f37933f1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="naming-conventions-for-editorconfig"></a>.NET-Namenskonventionen für EditorConfig
 
@@ -74,7 +76,7 @@ In der folgenden Liste werden die zulässigen Werte aufgelistet. Sie können meh
 - „protected\_internal“ oder „protected_friend“
 
 > [!NOTE]
-> Sie müssen eine Zugriffsebene als Teil Ihrer Namenskonvention angeben, da diese sonst möglicherweise ignoriert wird.
+> Geben Sie eine Zugriffsebene nicht im Rahmen Ihrer Benennungskonvention an, wenn der Zugriff nicht auf die Art des gewünschten Symbols anwendbar ist. Beispielsweise sind bei Parametern keine Zugriffsebenen vorhanden. Wenn Sie eine Zugriffsebene für eine Benennungskonvention für Parameter angeben, funktioniert Ihre Benennungsregel nicht ordnungsgemäß.
 
 ### <a name="symbol-modifiers"></a>Symbolmodifizierer
 

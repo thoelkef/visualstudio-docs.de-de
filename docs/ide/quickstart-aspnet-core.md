@@ -10,15 +10,16 @@ ms.topic: quickstart
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-dev_langs: CSharp
+dev_langs:
+- CSharp
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 66c1b3ca7a877c001bc3aeb69c5331fdc828aad8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 66017b65e3d1201e02272447cbd3ec1c33c8a5d6
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Schnellstart: Verwenden von Visual Studio zum Erstellen Ihrer ersten ASP.NET Core-Web-App
 
@@ -34,7 +35,7 @@ Zunächst müssen Sie ein Projekt für die ASP.NET Core-Webanwendung erstellen. 
 
 1. Erweitern Sie im Dialogfeld **Neues Projekt** links den Eintrag **Visual C#**, und klicken Sie auf **.NET Core**. Klicken Sie im mittleren Bereich auf **ASP.NET Core-Webanwendung** und anschließend auf **OK**.
 
-     Wenn Ihnen nicht die Projektvorlage **.NET Core** angezeigt wird, beenden Sie das Dialogfeld **Neues Projekt** und klicken Sie in der Menüleiste im oberen Bereich auf **Extras** > **Tools und Features abrufen...**. Der Visual Studio-Installer wird gestartet. Klicken Sie auf die Workload **ASP.NET und Webentwicklung**, und klicken Sie anschließend auf **Ändern**.
+     Falls Sie die Projektvorlagenkategorie **.NET Core** nicht finden, klicken Sie im linken Bereich auf den Link **Visual Studio-Installer öffnen**. Der Visual Studio-Installer wird gestartet. Klicken Sie auf die Workload **ASP.NET und Webentwicklung**, und klicken Sie anschließend auf **Ändern**.
 
      ![ASP.NET-Workload in VS-Installer](../ide/media/quickstart-aspnet-workload.png)
 
@@ -64,7 +65,7 @@ Zunächst müssen Sie ein Projekt für die ASP.NET Core-Webanwendung erstellen. 
  }
  ```
 
-1. Unter **Umgebung** und **Zeichenfolge** werden anschließend zwei wellenförmige Unterstreichungen angezeigt, da diese Typen nicht zu dem Bereich gehören. Öffnen Sie die Symbolleiste **Fehlerliste**. Dort werden dieselben Fehler aufgelistet. (Wenn Ihnen die Symbolleiste **Fehlerliste** nicht angezeigt wird, klicken Sie in der oberen Menüleiste auf **Ansicht** und dann auf **Fehlerliste**.)
+1. Unter **Umgebung** und **Zeichenfolge** werden anschließend zwei wellenförmige Unterstreichungen angezeigt, da diese Typen nicht zu dem Bereich gehören. Öffnen Sie die Symbolleiste **Fehlerliste**. Dort werden dieselben Fehler aufgelistet. (Wenn Ihnen die Symbolleiste **Fehlerliste** nicht angezeigt wird, klicken Sie in der oberen Menüleiste auf **Ansicht** > **Fehlerliste**.)
 
    ![Fehlerliste](../ide/media/quickstart-aspnet-errorlist.png)
 
@@ -72,7 +73,7 @@ Zunächst müssen Sie ein Projekt für die ASP.NET Core-Webanwendung erstellen. 
 
 ## <a name="run-the-application"></a>Ausführen der Anwendung
 
-1. Drücken Sie **STRG+F5**, um die Anwendung auszuführen und sie im Webbrowser zu öffnen.
+1. Drücken Sie **STRG**+**F5**, um die Anwendung auszuführen und sie im Webbrowser zu öffnen.
 
 1. Klicken Sie im oberen Bereich der Website auf **Info**, um die Anweisungsmeldung abzurufen, die Sie in der `OnGet()`-Methode für die **Info**-Seite hinzugefügt haben.
 
@@ -85,5 +86,6 @@ Damit haben Sie den Schnellstart erfolgreich abgeschlossen. Wir hoffen, dass Sie
 
 ## <a name="see-also"></a>Siehe auch
 
+[Erste Schritte mit C# und ASP.NET Core in Visual Studio](tutorial-csharp-aspnet-core.md)  
 [Erste Schritte mit C# und Visual Basic in Visual Studio](getting-started-with-visual-csharp-and-visual-basic.md)  
 [Erste Schritte mit Razor-Seiten in ASP.NET Core](/aspnet/core/tutorials/razor-pages/razor-pages-start)

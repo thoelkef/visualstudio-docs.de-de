@@ -4,20 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 3fcdccad-c1bd-4c67-bcec-bf33a8fb5d63
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 2507ec49129692914ba6d11e4f651d5895b49c8b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 462b164d0a6d3e9cba0f9698b7dba3b01aa5fee5
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="running-profiling-tools-with-or-without-the-debugger"></a>Ausführen von Profilerstellungstools mit oder ohne den Debugger
 Visual Studio bietet Ihnen nun eine Auswahl von Leistungstools, von denen einige (z.B. **CPU-Auslastung** und **Speicherauslastung**) mit oder ohne den Debugger ausgeführt werden können. Leistungstools ohne Debugger sind für Releasekonfigurationen gedacht, während die Tools mit integriertem Debugger zur Ausführung auf Debugkonfigurationen vorgesehen sind.  
@@ -77,7 +79,7 @@ Visual Studio bietet Ihnen nun eine Auswahl von Leistungstools, von denen einige
   
 2.  Klicken Sie im Menü **Debuggen** auf **Leistungsprofiler…**. (Tastenkombination: Alt + F2).  
   
-3.  Wählen Sie auf der Diagnosestartseite ein oder mehrere Tools aus, die in der Sitzung ausgeführt werden sollen. Es werden nur die Tools angezeigt, die für den Projekttyp, das Betriebssystem und die Programmiersprache infrage kommen. Wenn Sie ein Diagnosetool auswählen, werden die Optionen für Tools deaktiviert, die nicht in derselben Diagnosesitzung ausgeführt werden können. Hier ist eine mögliche Auswahl für eine Windows Universal-App in C#:  
+3.  Wählen Sie auf der Diagnosestartseite ein oder mehrere Tools aus, die in der Sitzung ausgeführt werden sollen. Es werden nur die Tools angezeigt, die für den Projekttyp, das Betriebssystem und die Programmiersprache infrage kommen. Wenn Sie ein Diagnosetool auswählen, werden die Optionen für Tools deaktiviert, die nicht in derselben Diagnosesitzung ausgeführt werden können. Für eine C#-UWP-App kann die Auswahl zum Beispiel folgendermaßen aussehen:  
   
      ![Diagnosetools auswählen](../profiling/media/diag_selecttool.png "DIAG_SelectTool")  
   
@@ -123,7 +125,7 @@ Visual Studio bietet Ihnen nun eine Auswahl von Leistungstools, von denen einige
  ![URL angeben, die in Internet Explorer angezeigt wird](../profiling/media/pdhub_choosephoneanalysistarget.png "PDHUB_ChoosePhoneAnalysisTarget")  
   
 ## <a name="remote-debugging"></a>Remote Debugging  
- Für das Ausführen einer Diagnosesitzung auf einem Remote-PC oder -Tablet müssen die Visual Studio-Remotetools installiert sein und auf dem Remotezielgerät ausgeführt werden. Informationen zu Desktop-Apps finden Sie unter [Remotedebugging](../debugger/remote-debugging.md).  Informationen zu universellen Windows-Apps finden Sie unter [Run UWP apps on a remote machine (Ausführen von UWP-Apps auf einem Remotecomputer)](../debugger/run-windows-store-apps-on-a-remote-machine.md).  
+ Für das Ausführen einer Diagnosesitzung auf einem Remote-PC oder -Tablet müssen die Visual Studio-Remotetools installiert sein und auf dem Remotezielgerät ausgeführt werden. Informationen zu Desktop-Apps finden Sie unter [Remotedebugging](../debugger/remote-debugging.md).  Informationen zu UWP-Apps finden Sie unter [Run UWP apps on a remote machine (Ausführen von UWP-Apps auf einem Remotecomputer)](../debugger/run-windows-store-apps-on-a-remote-machine.md).  
   
 ## <a name="blog-posts-and-msdn-articles-from-the-diagnostics-development-team"></a>Blogbeiträge und MSDN-Artikel vom Diagnoseentwicklungsteam  
  MSD[MSDN Magazine: Analysieren der Leistung beim Debuggen in Visual Studio 2015](https://msdn.microsoft.com/en-us/magazine/dn973013.aspx)  

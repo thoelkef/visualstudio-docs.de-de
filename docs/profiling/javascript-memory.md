@@ -4,14 +4,12 @@ ms.custom: H1Hack27Feb2017
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
-- CSharp
-- VB
-- FSharp
-- C++
+- JavaScript
 helpviewer_keywords:
 - dominators, memory analyzer (JavaScript)
 - memory leaks (JavaScript)
@@ -21,17 +19,17 @@ helpviewer_keywords:
 - JavaScript Memory Analyzer
 - analyzing memory, JavaScript
 - memory analyzer, JavaScript
-ms.assetid: 78f8532b-7b4e-4b50-b8b7-68ca0926dd4e
-caps.latest.revision: "49"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: bda996f825c492e323f84ba5444327a49f50aeb1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 00162ab0ad516391b98ee0a17fa9c9f7294c92b3
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="analyze-javascript-memory-usage-in-uwp-apps"></a>Analysieren von JavaScript-Speicherauslastung in UWP-Apps
 Die JavaScript-Speicheranalyse ist in Visual Studio verfügbar und soll Ihnen dabei helfen, die Speicherauslastung zu verstehen und Speicherverluste in UWP-Apps zu finden, die mit JavaScript für Windows erstellt wurden. Zu den unterstützten Apps zählen Apps für universelle Windows-Apps.
@@ -48,36 +46,14 @@ Die JavaScript-Speicheranalyse ist in Visual Studio verfügbar und soll Ihnen da
   
      Automatische Filterung von Objekten, die nicht direkt im App-Code erstellt werden. Sie können Daten auch nach Objektnamen filtern.  
   
- Ein Lernprogramm, das Sie durch den Prozess zum Identifizieren eines Speicherverlusts in einer funktionierenden App führt, finden Sie unter [Exemplarische Vorgehensweise: Suchen eines Speicherverlusts (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md).  
-  
- In diesem Thema:  
-  
- [Ausführen der JavaScript-Speicheranalyse](#Run)   
- [Überprüfen der Speicherauslastung](#Check)   
- [Isolate a memory leak](#Isolate)   
- [Anzeigen der Zusammenfassung der Live-Speicherauslastung](#LiveMemory)   
- [View a snapshot summary](#SnapshotSummary)   
- [Anzeigen von Momentaufnahmedetails](#SnapshotDetails)   
- [Anzeigen eines Momentaufnahmevergleichs](#SnapshotDiff)   
- [Anzeigen von Objekten nach Dominator](#FoldObjects)   
- [Daten nach Bezeichner filtern](#Filter)   
- [Suchen eines Objekts in der Objektstruktur](#ShowInRootsView)   
- [Anzeigen von freigegebenen Objektverweisen](#References)   
- [Anzeigen integrierter Objekte](#BuiltInValues)   
- [Speichern von Diagnosesitzungsdateien](#Save)   
- [Associate source code with memory usage data](#JSConsoleCommands)   
- [Tipps zum Identifizieren von Arbeitsspeicherproblemen](#Tips)  
-  
 ##  <a name="Run"></a> Ausführen der JavaScript-Speicheranalyse  
- Sie können die Speicheranalyse verwenden, wenn Sie über eine funktionierende UWP-App verfügen, die in Visual Studio geöffnet oder auf einem Computer installiert ist, auf dem [!INCLUDE[win8](../debugger/includes/win8_md.md)] oder höher ausgeführt wird.  
+ Sie können das Speicheranalysetool mit einer in Visual Studio geöffneten, funktionierenden UWP-App verwenden.
   
 #### <a name="to-run-the-memory-analyzer"></a>So führen Sie die Speicheranalyse aus  
   
 1.  Öffnen Sie Visual Studio.  
   
-2.  Wenn Sie die App aus Visual Studio heraus ausführen, klicken Sie auf der Symbolleiste **Standard** in der Liste **Debugging starten** auf ein Debugziel für Ihr Projekt: entweder einen Windows Phone-Emulator oder **Lokaler Computer**, **Simulator** oder **Remotecomputer** für eine UWP-App.  
-  
-     Weitere Informationen über diese Optionen finden Sie unter [Run apps from Visual Studio](../debugger/run-store-apps-from-visual-studio.md).  
+2.  Wenn Sie die App aus Visual Studio heraus ausführen, klicken Sie auf der Symbolleiste **Standard** in der Liste **Debugging starten** auf ein Debugziel für Ihr Projekt: entweder **Lokaler Computer** oder **Gerät**.  
   
 3.  Wählen Sie im Menü **Debuggen**, **Leistungsprofiler...** aus.  
   
@@ -400,6 +376,3 @@ if (performance && performance.mark) {
          Sie können diese Befehle zum Isolieren von Problemen verwenden, die Sie nicht isolieren können, indem Sie manuell eine Heap-Momentaufnahme erstellen.  
   
     -   Erstellen Sie ein Testobjekt, und verfolgen Sie es in den Ansichten der JavaScript-Speicheranalyse, z. B. in der Typenansicht. Beispielsweise können Sie einem anderen Objekt ein sehr großes Objekt anfügen, um festzustellen, ob für ein bestimmtes Objekt oder Element eine Garbage Collection durchgeführt wurde.  
-  
-## <a name="see-also"></a>Siehe auch  
- [Exemplarische Vorgehensweise: Suchen eines Speicherverlusts (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md)

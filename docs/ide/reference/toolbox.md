@@ -1,55 +1,77 @@
 ---
-title: Toolbox | Microsoft-Dokumentation
+title: "Fenster „Toolbox“ in Visual Studio | Microsoft-Dokumentation"
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 01/18/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
 - vs.toolbox.general
 - vs.toolbox
 helpviewer_keywords:
-- Toolbox
-- Toolbox, adding controls
-- Toolbox, moving items
-ms.assetid: b754dad3-1f32-464f-8b9f-065e17e0bc22
-caps.latest.revision: "34"
+- Toolbox [Visual Studio]
+- custom controls [Visual Studio]
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: dee9f1379dd7cd4c1d134714a35fc91d74f9f128
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 50c9cc96d501eb6d7d10ab31f48600eb65eb57a7
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="toolbox"></a>Werkzeugkasten
-Die **Toolbox** zeigt Symbole für Steuerelemente und andere Elemente an, die Sie [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]-Projekten hinzufügen können. Zum Öffnen der **Toolbox** klicken Sie im Menü **Ansicht** auf **Toolbox**. Sie können die **Toolbox** andocken und so festlegen, dass sie entweder geöffnet angeheftet oder **Automatisch ausblenden** bleibt.  
-  
- Die **Toolbox**-Symbole können in eine Designansicht gezogen bzw. in einem Code-Editor eingefügt werden. Mit beiden Aktionen wird der Basiscode hinzugefügt, mit dem in der aktiven Projektdatei eine Instanz des **Toolboxelements** erstellt wird.  
-  
- In der **Toolbox** werden nur Elemente angezeigt, die sich für den Dateityp eignen, in dem Sie arbeiten. Sie können eine Suche in der Toolbox durchführen, um die Elemente, die angezeigt werden, zu filtern. Wenn das Projekt ein Steuerelement erfordert, das vom Client Profile nicht unterstützt wird, können Sie durch Bearbeiten der Projekteigenschaften für das Projekt festlegen, dass das gesamte Framework als Ziel festgelegt wird.  
-  
+
+Im Fenster **Toolbox** werden Steuerelemente angezeigt, die Sie zu Visual Studio-Projekten hinzufügen können. Zum Öffnen der Toolbox klicken Sie im Menü **Ansicht** auf **Toolbox**.
+
+![Fenster „Toolbox“](media/toolbox.png)
+
+Sie können verschiedene Steuerelemente per Drag & Drop auf die Oberfläche des verwendeten Designers verschieben und die Größe und Position der Steuerelemente ändern.
+
+Toolbox wird in Verbindung mit Entwurfsansichten angezeigt, wie der Designansicht einer XAML-Datei. In Toolbox werden nur die Steuerelemente angezeigt, die im aktuellen Designer verwendet werden können. Sie können eine Suche in Toolbox durchführen, um die Elemente, die angezeigt werden, zu filtern.
+
 > [!NOTE]
->  Auf Ihrem Computer werden möglicherweise andere Namen oder Speicherorte für die Benutzeroberflächenelemente von Visual Studio angezeigt als die in den folgenden Anweisungen aufgeführten. Diese Elemente sind von der jeweiligen Visual Studio-Version und den verwendeten Einstellungen abhängig. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../../ide/personalizing-the-visual-studio-ide.md).  
-  
-## <a name="help-on-toolbox-tabs"></a>Hilfe zu Toolboxregisterkarten  
- Die folgenden Dokumente enthalten weitere Informationen zu bestimmten **Toolbox**-Registerkarten.  
-  
--   [Toolbox, Registerkarte „Daten“](http://msdn.microsoft.com/library/8a41dyt7\(v=vs.110\))  
-  
--   [Toolbox, Registerkarte „Komponenten“](http://msdn.microsoft.com/library/kb1cz7z9\(v=vs.110\))  
-  
--   [Toolbox, Registerkarte „HTML“](http://msdn.microsoft.com/library/w9ss7h1a\(v=vs.110\))  
-  
--   [Toolbox, Registerkarte „Daten“](http://msdn.microsoft.com/library/8a41dyt7\(v=vs.120\))  
-  
--   [Toolbox, Registerkarte „Komponenten“](http://msdn.microsoft.com/library/kb1cz7z9\(v=vs.120\))  
-  
--   [Toolbox, Registerkarte „HTML“](http://msdn.microsoft.com/library/w9ss7h1a\(v=vs.120\))  
-  
-## <a name="see-also"></a>Siehe auch  
- [Verwenden der Toolbox](../../ide/using-the-toolbox.md)
+> Bei einigen Projekttypen werden in Toolbox möglicherweise keine Elemente angezeigt.
+
+Die in Ihrem Projekt verwendete .NET Framework-Version wirkt sich auch auf die Gruppe von Steuerelementen aus, die in Toolbox angezeigt wird. Für Ihr Projekt können Sie eine andere .NET Framework-Version als Zielversion über die Eigenschaftenseiten des Projekts festlegen. Wählen Sie den Projektknoten im **Projektmappen-Explorer** aus, und wählen Sie dann auf der Menüleiste **Projekt** > **\<Projekt\> Eigenschaften** aus. Verwenden Sie auf der Registerkarte **Anwendung** die Dropdownliste **Zielframework**.
+
+## <a name="managing-the-toolbox-window-and-its-controls"></a>Verwalten des Toolboxfensters und deren Steuerelemente
+
+Standardmäßig wird Toolbox auf der linken Seite der Visual Studio IDE reduziert dargestellt und wird angezeigt, wenn der Cursor darüber bewegt wird. Sie können Toolbox anheften (durch Klicken auf das Symbol **Anheften** auf der Symbolleiste), sodass diese geöffnet bleibt, wenn Sie den Cursor bewegen. Sie können das Toolboxfenster auch abdocken und es an eine beliebige Stelle auf dem Bildschirm ziehen. Sie können die Toolbox andocken, abdocken und ausblenden, indem Sie mit der rechten Maustaste auf die Symbolleiste klicken und eine der Optionen auswählen.
+
+Mithilfe der folgenden Befehle im Kontextmenü können Sie die Elemente auf einer Toolboxregisterkarte neu anordnen oder benutzerdefinierte Registerkarten und Elemente hinzufügen:
+
+- **Element umbenennen**: benennt das ausgewählte Element um.
+
+- **Alle anzeigen**: zeigt alle möglichen Steuerelemente an (nicht nur die für den aktuellen Designer).
+
+- **Listenansicht**: zeigt die Steuerelemente in einer vertikalen Liste an. Wenn dieses Kontrollkästchen deaktiviert ist, werden die Steuerelemente horizontal angezeigt.
+
+- **Elemente auswählen**: öffnet das Dialogfeld **Toolboxelemente auswählen**, sodass Sie die Elemente festlegen können, die in der **Toolbox** angezeigt werden. Sie können ein Element ein- oder ausblenden, indem Sie dessen Kontrollkästchen aktivieren oder deaktivieren.
+
+- **Elemente alphabetisch sortieren**: sortiert die Elemente nach Namen.
+
+- **Toolbox zurücksetzen**: Stellt die Standardeinstellungen von Toolbox und die Standardelemente wieder her.
+
+- **Registerkarte hinzufügen**: Fügt eine neue Toolboxregisterkarte hinzu.
+
+- **Nach oben**: verschiebt das ausgewählte Element nach oben.
+
+- **Nach unten**: verschiebt das ausgewählte Element nach unten.
+
+## <a name="creating-and-distributing-custom-toolbox-controls"></a>Erstellen und Verteilen von benutzerdefinierten Toolboxsteuerelementen
+
+Sie können ein benutzerdefiniertes Toolboxsteuerelement erstellen und mit einer Projektvorlage beginnen, die auf [Windows Presentation Foundation](../../extensibility/creating-a-wpf-toolbox-control.md) oder [Windows Forms](../../extensibility/creating-a-windows-forms-toolbox-control.md) basiert. Sie können Ihr benutzerdefiniertes Steuerelement dann an Ihre Teamkollegen verteilen oder es im Internet mithilfe des [Installationsprogramms für Toolboxsteuerelemente](http://download.microsoft.com/download/8/3/6/836657BD-9CCB-4ED4-B9D2-FB769473B284/TCI_whitepaper.docx) veröffentlichen.
+
+## <a name="help-on-toolbox-tabs"></a>Hilfe zu Toolboxregisterkarten
+
+In den folgenden Themen werden weitere Informationen zu den verschiedenen Registerkarten der **Toolbox** bereitgestellt.
+
+- [Toolbox, Registerkarte „Daten“](../../ide/reference/toolbox-data-tab.md)
+
+- [Toolbox, Registerkarte „Komponenten“](../../ide/reference/toolbox-components-tab.md)
+
+- [Toolbox, Registerkarte „HTML“](../../ide/reference/toolbox-html-tab.md)

@@ -4,21 +4,24 @@ ms.custom: H1HackMay2017
 ms.date: 05/18/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: debugger
+helpviewer_keywords:
+- debugger
 ms.assetid: d2ee0301-ea78-43d8-851a-71b7b2043d73
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 2542ce19d51dd3aa3031c71da3c23f7ec73ac240
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+ms.workload:
+- multiple
+ms.openlocfilehash: 43955eedc5d7149396b3ad6dc7c380298b631d9e
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="profiling-feature-tour"></a>Tour zur Profilerstellungsfunktion
 
@@ -32,7 +35,7 @@ Während Sie Debuggen, können Sie das **Diagnosetools**-Fenster zum Analysieren
 
 ![Zusammenfassungsansicht der Diagnosetools](../profiling/media/prof-tour-cpu-and-memory-graph.gif "Zusammenfassung der Diagnosetools")
 
-Das **Diagnosetools**-Fenster ist häufig die bevorzugte Methode für die App-Profilerstellung, aber Sie können stattdessen auch eine nachträgliche Analyse Ihrer App durchführen. Weitere Informationen zu den verschiedenen Herangehensweisen finden Sie unter [Ausführen von Profilerstellungstools mit oder ohne Debugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
+Das Fenster **Diagnosetools** ist häufig die bevorzugte Methode für die App-Profilerstellung, aber für Releasebuilds können Sie stattdessen auch eine nachträgliche Analyse Ihrer App durchführen. Weitere Informationen zu den verschiedenen Herangehensweisen finden Sie unter [Ausführen von Profilerstellungstools mit oder ohne Debugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md). Informationen zur Unterstützung der Profilerstellungstools für die verschiedenen App-Typen finden Sie unter [Welches Tool soll ich verwenden?](#tool_support_info).
 
 ## <a name="analyze-cpu-usage"></a>Analysieren der CPU-Auslastung
 
@@ -119,13 +122,13 @@ Die Diagramme können auch bestimmen, ob es CPU-gebundene oder GPU-gebundene Lei
 
 ## <a name="analyze-performance-javascript"></a>Analysieren der Leistung (JavaScript)
 
-Für Windows Universal HTML-Apps können Sie das JavaScript-Speichertool und die Reaktionsfähigkeit der HTML-Benutzeroberfläche verwenden.
+Für UWP-Apps können Sie das JavaScript-Speichertool und das Tool für die Reaktionsfähigkeit der HTML-Benutzeroberfläche verwenden.
 
 Das JavaScript-Speichertool ähnelt dem für andere App-Typen verfügbaren Speicherauslastungstool. Mit diesem Tool können Sie die Speicherauslastung verstehen und Speicherverluste in Ihrer App finden. Weitere Informationen zu diesem Tool finden Sie unter [JavaScript-Memory](../profiling/javascript-memory.md).
 
 ![Profilerstellungstool „JavaScript-Speicher“](../profiling/media/diagjsmemory.png "DiagJSMemory")
 
-Verwenden Sie die Reaktionsfähigkeit der HTML-Benutzeroberfläche, um die UI-Reaktionszeit, die langsame Ladezeit und die langsamen visuellen Updates in Windows Universal HTML-Apps zu diagnostizieren. Der Verbrauch ähnelt dem Anwendungszeitachsen-Tool für andere App-Typen. Weitere Informationen finden Sie unter [HTML-UI-Reaktionsfähigkeit](../profiling/html-ui-responsiveness.md).
+Verwenden Sie das Tool für die Reaktionsfähigkeit der HTML-Benutzeroberfläche, um die UI-Reaktionsfähigkeit, die langsame Ladezeit und die langsamen visuellen Updates in UWP-Apps zu diagnostizieren. Der Verbrauch ähnelt dem Anwendungszeitachsen-Tool für andere App-Typen. Weitere Informationen finden Sie unter [HTML-UI-Reaktionsfähigkeit](../profiling/html-ui-responsiveness.md).
 
 ![Profilerstellungstool „HTML-UI-Reaktionsfähigkeit“](../profiling/media/diaghtmlresp.png "DiagHTMLResp")
 
@@ -151,7 +154,7 @@ Wenn Sie Funktionen wie z.B. Instrumentation benötigen, die derzeit nicht in de
 
 Hier sehen Sie eine Tabelle, in der die verschiedenen Tools aufgelistet sind, die Visual Studio anbietet sowie die verschiedenen Projekttypen, die Sie mit diesen verwenden können:
   
-|Leistungstool|Windows-Desktop|Windows Universell/Store|ASP.NET/ASP.NET Core|  
+|Leistungstool|Windows-Desktop|UWP|ASP.NET/ASP.NET Core|  
 |----------------------|---------------------|------------------------------|-------------|  
 |[Speicherauslastung](../profiling/memory-usage.md)|ja|ja|ja|  
 |[CPU-Auslastung](../profiling/cpu-usage.md)|ja|ja|Ja (Nein für .NET Core bzw. ASP.NET Core)|  
