@@ -18,6 +18,7 @@
 # Anleitungen
 ## [Navigieren im Code mit dem Debugger](navigating-through-code-with-the-debugger.md)
 ## [Verwenden von Haltepunkten](using-breakpoints.md)
+### [Problembehandlung von Haltepunkten](troubleshooting-breakpoints.md)
 ## [Untersuchen von Daten](debugger-windows.md)
 ### [Überprüfung von Variablen](autos-and-locals-windows.md)
 ### [Festlegen eines Überwachungselements für Variablen](watch-and-quickwatch-windows.md)
