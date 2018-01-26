@@ -11,22 +11,24 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: f851f98fca98af8dfc95160f244c59cc0645a805
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 66b4c44a79446aacc56761b6b565d8c979d007f7
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="text-template-utility-methods"></a>Hilfsprogrammmethoden für Textvorlagen
-Es gibt mehrere Methoden, die immer Ihnen beim Schreiben von Code stehen einem [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Textvorlage. Diese Methoden werden in definiert <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation>.  
-  
+
+Es gibt mehrere Methoden, die immer Ihnen beim Schreiben von Code in einer Textvorlage Visual Studio stehen. Diese Methoden werden in definiert <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation>.
+
 > [!TIP]
->  Sie können auch andere Methoden und Dienste, die von der hostumgebung in eine reguläre (nicht vorverarbeiteten Vorlage) bereitgestellt. Z. B. Sie Dateipfade zu beheben, Fehler werden protokolliert und Abrufen von Diensten [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] und alle Pakete geladen.  Weitere Informationen finden Sie unter [Zugriff auf Visual Studio in einer Textvorlage](http://msdn.microsoft.com/en-us/0556f20c-fef4-41a9-9597-53afab4ab9e4).  
+> Sie können auch andere Methoden und Dienste, die von der hostumgebung in eine reguläre (nicht vorverarbeiteten Vorlage) bereitgestellt. Z. B. Sie Dateipfade zu beheben, Fehler protokollieren und Abrufen von Diensten, die von Visual Studio und alle bereitgestellten Pakete geladen. Weitere Informationen finden Sie unter [Zugriff auf Visual Studio in einer Textvorlage](http://msdn.microsoft.com/0556f20c-fef4-41a9-9597-53afab4ab9e4).
   
-## <a name="write-methods"></a>Write-Methoden  
- Sie können die `Write()` und `WriteLine()` Methoden, um Text in einem standardmäßigen Codeblock, anstatt von einem Ausdrucksblock-Code angefügt werden soll. Die folgenden zwei Codeblöcke sind funktional äquivalent.  
+## <a name="write-methods"></a>Write-Methoden
+
+Sie können die `Write()` und `WriteLine()` Methoden, um Text in einem standardmäßigen Codeblock, anstatt von einem Ausdrucksblock-Code angefügt werden soll. Die folgenden zwei Codeblöcke sind funktional äquivalent.  
   
-##### <a name="code-block-with-an-expression-block"></a>Code-Block mit einem Ausdrucksblock  
+### <a name="code-block-with-an-expression-block"></a>Code-Block mit einem Ausdrucksblock  
   
 ```  
 <#  
@@ -38,7 +40,7 @@ while (i-- > 0)
 #>  
 ```  
   
-##### <a name="code-block-using-writeline"></a>Codeblock mit WriteLine()  
+### <a name="code-block-using-writeline"></a>Codeblock mit WriteLine()  
   
 ```  
 <#   
@@ -66,7 +68,8 @@ while (i-- > 0)
 #>   
 ```  
   
-## <a name="indentation-methods"></a>Einzugsmethoden  
+## <a name="indentation-methods"></a>Einzugsmethoden
+
  Einzugsmethoden können zur Formatierung der Ausgabe von der Textvorlage. Die <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation> -Klasse verfügt über eine `CurrentIndent` Zeichenfolgeneigenschaft, die den aktuellen Einzug in der Textvorlage anzeigt und eine `indentLengths` Feld, das eine Liste mit den Einzüge, die hinzugefügt wurden. Sie können einen Einzug mit Hinzufügen der `PushIndent()` Methode und subtrahieren ein Einzugs mit der `PopIndent()` Methode. Wenn Sie alle Einzüge entfernen möchten, verwenden Sie die `ClearIndent()` Methode. Der folgende Codeblock zeigt die Verwendung der folgenden Methoden:  
   
 ```  
@@ -94,7 +97,7 @@ Hello
 ```  
   
 ## <a name="error-and-warning-methods"></a>Fehler- und Warning-Methoden  
- Können Sie Fehler und Warnungen Utility-Methoden zum Hinzufügen von Nachrichten an die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Fehlerliste. Im folgende Code wird z. B. eine Fehlermeldung an die Fehlerliste hinzufügen.  
+ Sie können Fehler und Warnung Utility-Methoden zum Hinzufügen von Nachrichten, die Visual Studio-Fehlerliste verwenden. Im folgende Code wird z. B. eine Fehlermeldung an die Fehlerliste hinzufügen.  
   
 ```  
 <#  
@@ -115,7 +118,7 @@ Hello
   
  `<#@template ... hostspecific="true" #>`  
   
- Der Typ des `this.Host` hängt vom Typ des Hosts, die in der Vorlage ausgeführt wird. In einer Vorlage, die ausgeführt wird, in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], können Sie eine Umwandlung `this.Host` auf `IServiceProvider` für den Zugriff auf Dienste wie der IDE. Zum Beispiel:  
+ Der Typ des `this.Host` hängt vom Typ des Hosts, die in der Vorlage ausgeführt wird. In einer Vorlage, die in Visual Studio ausgeführt wird, können Sie umwandeln `this.Host` auf `IServiceProvider` für den Zugriff auf Dienste wie der IDE. Zum Beispiel:  
   
 ```  
 EnvDTE.DTE dte = (EnvDTE.DTE) ((IServiceProvider) this.Host)  

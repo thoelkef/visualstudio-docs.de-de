@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 1b26da119360462c5237977a1b1da8ac5041d84a
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 6848f2c0b6c8d25fe7964fdb5519aa3f075bde57
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>Definieren einer Sperrrichtlinie zum Erstellen von schreibgeschützten Segmenten
 Die Unveränderlichkeit-API, der die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Visualization and Modeling SDK ermöglicht ein Programm, um die Sperre Teils oder aller eine domänenspezifische Sprache (DSL)-Modell, damit sie gelesen aber nicht geändert werden kann. Diese schreibgeschützte Option kann verwendet werden, z. B., damit ein Benutzer kann Kollegen dazu ein, mit einer Anmerkung versehen, und überprüfen einen DSL-Modell bitten, jedoch kann verhindern, dass sie die ursprüngliche ändern.  
@@ -24,7 +24,7 @@ Die Unveränderlichkeit-API, der die [!INCLUDE[vsprvs](../code-quality/includes/
 > [!NOTE]
 >  Eine Richtlinie Sperre kann umgangen werden, mithilfe der Reflektion. Stellt eine klare Hürde für Entwickler von Drittanbietern, aber bietet keine hohe Sicherheit.  
   
- Weitere Informationen und Beispiele finden Sie unter der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] [Visualization and Modeling SDK](http://go.microsoft.com/fwlink/?LinkId=186128) Website.  
+ Weitere Informationen und Beispiele finden Sie unter dem Visual Studio [Visualization and Modeling SDK](https://code.msdn.microsoft.com/Visualization-and-Modeling-313535db) Website.
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
   
@@ -85,7 +85,7 @@ partition.SetLocks(Locks.Delete);
 |Verschieben|Element kann nicht zwischen Partitionen verschoben werden, wenn `element.IsLocked(Move)` ist "true", oder wenn `targetPartition.IsLocked(Move)` ist "true".|  
 |Löschen|Ein Element kann nicht gelöscht werden, wenn diese Sperre für das Element selbst festgelegt ist, oder auf eines der Elemente auf die Löschung weitergegeben werden, z. B. eingebettete Elemente und Formen sollen würde.<br /><br /> Sie können `element.CanDelete()` ermitteln Sie, ob ein Element gelöscht werden kann.|  
 |Neu anordnen|Die Reihenfolge der Links bei einem das Roleplayer kann nicht geändert werden.|  
-|Das RolePlayer|Die Gruppe der Links, die auf dieses Element belegen kann nicht geändert werden. Beispielsweise können nicht die neue Elemente unter diesem Element eingebettet werden. Dies hat keine Auswirkungen, Links für die dieses Element das Ziel ist.<br /><br /> Wenn dieses Element über einen Link handelt, sind seine Quelle und Ziel nicht betroffen.|  
+|RolePlayer|Die Gruppe der Links, die auf dieses Element belegen kann nicht geändert werden. Beispielsweise können nicht die neue Elemente unter diesem Element eingebettet werden. Dies hat keine Auswirkungen, Links für die dieses Element das Ziel ist.<br /><br /> Wenn dieses Element über einen Link handelt, sind seine Quelle und Ziel nicht betroffen.|  
 |Alle|Bitweise OR der anderen Werte.|  
   
 ## <a name="locking-policies"></a>Sperren von Richtlinien  

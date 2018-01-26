@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 8250f21bd95816bf0d9424dc4a3fbb45302919d7
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 21e31bd582fda7884f0f246bd6eda39e5e89a375
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="adding-a-tracking-property-to-a-domain-specific-language-definition"></a>Hinzufügen einer Nachverfolgungseigenschaft zu einer domänenspezifischen Sprachdefinition
 Diese exemplarische Vorgehensweise zeigt, wie eine Tracking-Eigenschaft zu einem Domänenmodell hinzugefügt.  
@@ -27,7 +27,7 @@ Diese exemplarische Vorgehensweise zeigt, wie eine Tracking-Eigenschaft zu einem
   
  In der domänenspezifische Sprachtools (DSL Tools), den Anzeigenamen, die Eigenschaft einer Domänenklasse über einen Standardwert, der berechnet wird verfügt, mit dem Namen der Domänenklasse, aber ein Benutzer beispielsweise ändern Sie den Wert zur Entwurfszeit oder auf den berechneten Wert zurückgesetzt.  
   
- In dieser exemplarischen Vorgehensweise erstellen Sie eine domänenspezifische Sprache (DSL), die eine Eigenschaft, die einen Standardwert basierend auf der Standard-Namespace-Eigenschaft des Modells hat für das Nachverfolgen Namespace verfügt. Weitere Informationen zur Überwachung der Eigenschaften finden Sie unter [nachverfolgen Eigenschaften definieren](http://msdn.microsoft.com/en-us/0538b0e4-6221-4e7d-911a-b92cd622f0be).  
+ In dieser exemplarischen Vorgehensweise erstellen Sie eine domänenspezifische Sprache (DSL), die eine Eigenschaft, die einen Standardwert basierend auf der Standard-Namespace-Eigenschaft des Modells hat für das Nachverfolgen Namespace verfügt. Weitere Informationen zur Überwachung der Eigenschaften finden Sie unter [nachverfolgen Eigenschaften definieren](http://msdn.microsoft.com/0538b0e4-6221-4e7d-911a-b92cd622f0be).  
   
 -   Die Überwachung von Eigenschaftendeskriptoren DSL-Tools-Unterstützung. Allerdings kann nicht der DSL-Designer zum Hinzufügen einer Überwachung-Eigenschaft zu einer anderen Sprache verwendet werden. Aus diesem Grund müssen Sie benutzerdefinierten Code zu definieren und implementieren Sie die Eigenschaft für die Überwachung hinzufügen.  
   
@@ -48,9 +48,9 @@ Diese exemplarische Vorgehensweise zeigt, wie eine Tracking-Eigenschaft zu einem
   
 |||  
 |-|-|  
-|[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]|[http://go.Microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkID=185579)|  
-|[!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)]|[http://go.Microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkID=185580)|  
-|[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]|[http://go.Microsoft.com/fwlink/?LinkId=185581](http://go.microsoft.com/fwlink/?LinkID=185581)|  
+|[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185579](http://go.microsoft.com/fwlink/?LinkID=185579)|  
+|[!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185580](http://go.microsoft.com/fwlink/?LinkID=185580)|  
+|[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185581](http://go.microsoft.com/fwlink/?LinkID=185581)|  
   
 ## <a name="creating-the-dsl-project"></a>Erstellen des Projekts DSL  
  Erstellen Sie das Projekt für Ihre einer domänenspezifischen Sprache.  
@@ -253,7 +253,7 @@ Diese exemplarische Vorgehensweise zeigt, wie eine Tracking-Eigenschaft zu einem
 #### <a name="to-modify-the-type-descriptor-for-the-examplemodel-domain-class"></a>So ändern Sie den Typdeskriptor für die ExampleModel Domäne-Klasse  
   
 1.  Fügen Sie den folgenden Code in die Datei TypeDescriptor.cs.  
-  
+
     ```csharp  
     using System;  
     using System.ComponentModel;  

@@ -19,35 +19,31 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: becfedc10f054c006709c3095f924b58c1ba5062
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 972fa76d83c9ecfbe9efb23897a6e0ec5928c35f
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>So definieren Sie eine domänenspezifische Sprache
-Um eine domänenspezifische Sprache (DSL) zu definieren, erstellen Sie eine [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Projektmappe von einer Vorlage. Der zentrale Bestandteil der Projektmappe ist das DSL-Definitionsdiagramm, das in "DslDefinition.dsl" gespeichert wird. Die DSL-Definition definiert die Klassen und Formen der DSL. Nachdem Sie diese Elemente geändert und weitere hinzugefügt haben, können Sie Programmcode hinzufügen, um die DSL weiter anzupassen.  
-  
- Wenn Sie konzentriert vertraut sind, es wird empfohlen, dass Sie über arbeiten die **DSL-Tools Lab**, das Sie an diesem Standort zugreifen können: [Visualizaton und Modellierungs-SDKS](http://go.microsoft.com/fwlink/?LinkID=186128)  
+Um eine domänenspezifische Sprache (DSL) zu definieren, erstellen Sie eine Visual Studio-Projektmappe aus einer Vorlage aus. Der zentrale Bestandteil der Projektmappe ist das DSL-Definitionsdiagramm, das in "DslDefinition.dsl" gespeichert wird. Die DSL-Definition definiert die Klassen und Formen der DSL. Nachdem Sie diese Elemente geändert und weitere hinzugefügt haben, können Sie Programmcode hinzufügen, um die DSL weiter anzupassen.
 
+Wenn Sie konzentriert vertraut sind, es wird empfohlen, dass Sie über arbeiten die **DSL-Tools Lab**, das Sie an diesem Standort zugreifen können: [Visualizaton und Modellierungs-SDKS](http://go.microsoft.com/fwlink/?LinkID=186128)
 
-[!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
-
-  
 ##  <a name="templates"></a>Auswählen einer Vorlagenlösung  
  Zur Definition einer DSL müssen folgende Komponenten installiert sein:  
   
 |||  
 |-|-|  
-|[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]|[http://go.Microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579)|  
-|[!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)]|[http://go.Microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580)|  
+|Visual Studio|[http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579)|  
+|[!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580)|  
 |Visual Studio Visualization and Modeling SDK||  
 
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
   
- Um eine neue domänenspezifische Sprache zu erstellen, erstellen Sie eine neue [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Projektmappe von der Projektvorlage "Domänenspezifische Sprache".  
+ Um eine neue domänenspezifische Sprache zu erstellen, erstellen Sie eine neue Visual Studio-Projektmappe mithilfe der Projektvorlage einer domänenspezifischen Sprache.  
   
 #### <a name="to-create-a-dsl-solution"></a>So erstellen Sie eine DSL-Projektmappe  
   
@@ -98,17 +94,17 @@ Um eine domänenspezifische Sprache (DSL) zu definieren, erstellen Sie eine [!IN
 ### <a name="test-the-solution"></a>Testen der Projektmappe  
  Die Vorlagenprojektmappe enthält eine funktionsfähige DSL, die Sie ändern oder direkt verwenden können.  
   
- Drücken Sie F5 oder STRG+F5, um die Projektmappe zu testen. Eine neue Instanz von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] wird im Testmodus gestartet.  
+ Drücken Sie F5 oder STRG+F5, um die Projektmappe zu testen. Eine neue Instanz von Visual Studio wird im Testmodus geöffnet.  
   
- Öffnen Sie in der neuen Instanz von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] im Projektmappen-Explorer die "Sample"-Datei. Sie wird als Diagramm mit einem Werkzeugkasten geöffnet.  
+ Öffnen Sie in der neuen Instanz von Visual Studio im Projektmappen-Explorer die Beispieldatei. Sie wird als Diagramm mit einem Werkzeugkasten geöffnet.  
   
- Wenn Sie eine Projektmappe ausführen haben Sie aus der **minimale Sprache** Vorlage, die experimentelle [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ähneln dem folgenden Beispiel:  
+ Wenn Sie eine Projektmappe ausführen haben Sie aus der **minimale Sprache** der experimentellen Visual Studio-Vorlage wird im folgende Beispiel ähneln:  
   
  ![](../modeling/media/dsl_min.png "DSL_min")  
   
  Experimentieren Sie mit den Werkzeugen. Erstellen Sie Elemente, und verbinden Sie sie.  
   
- Schließen Sie die experimentelle Instanz von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+ Schließen Sie die experimentelle Instanz von Visual Studio.  
   
 > [!NOTE]
 >  Wenn Sie die DSL geändert haben, können Sie die Formen in der "Sample"-Testdatei nicht mehr sehen. Sie können aber neue Elemente erstellen.  
@@ -217,11 +213,11 @@ Um eine domänenspezifische Sprache (DSL) zu definieren, erstellen Sie eine [!IN
   
 ##### <a name="to-test-the-new-domain-classes"></a>So testen Sie die neuen Domänenklassen  
   
-1.  **Klicken Sie auf alle Vorlagen transformieren** auf der Symbolleiste des Projektmappen-Explorer, um den DSL-Designer-Code zu generieren. Dieser Schritt kann automatisiert werden. Weitere Informationen finden Sie unter [wie alle Vorlagen transformieren automatisieren](http://msdn.microsoft.com/en-us/b63cfe20-fe5e-47cc-9506-59b29bca768a).  
+1.  **Klicken Sie auf alle Vorlagen transformieren** auf der Symbolleiste des Projektmappen-Explorer, um den DSL-Designer-Code zu generieren. Dieser Schritt kann automatisiert werden. Weitere Informationen finden Sie unter [wie alle Vorlagen transformieren automatisieren](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a).
   
-2.  **Erstellen und Ausführen der DSL.** Drücken Sie F5 oder STRG + F5, um eine neue Instanz der Ausführung [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] im Testmodus. Öffnen oder erstellen Sie in der experimentellen Instanz von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] eine Datei mit der Dateinamenerweiterung Ihrer DSL.  
+2.  **Erstellen und Ausführen der DSL.** Drücken Sie F5 oder STRG + F5, um eine neue Instanz von Visual Studio im Testmodus ausgeführt. Klicken Sie in der experimentellen Instanz von Visual Studio öffnen Sie, oder erstellen Sie eine Datei mit der Erweiterung der DSL.  
   
-3.  **Öffnen Sie den Explorer an.** AT die Seite des Diagramms ist der Language-Explorer-Fenster, das normalerweise heißt *YourLanguage* Explorer. Sollten Sie das Fenster nicht sehen, befindet es sich möglicherweise auf einer Registerkarte unter dem Projektmappen-Explorer. Findet Sie es, auf die **Ansicht** Sie im Menü **Weitere Fenster**, und klicken Sie dann auf * YourLanguage ***Explorer**.  
+3.  **Öffnen Sie den Explorer an.** AT die Seite des Diagramms ist der Language-Explorer-Fenster, das normalerweise heißt *YourLanguage* Explorer. Sollten Sie das Fenster nicht sehen, befindet es sich möglicherweise auf einer Registerkarte unter dem Projektmappen-Explorer. Findet Sie es, auf die **Ansicht** Sie im Menü **Weitere Fenster**, und klicken Sie dann auf *YourLanguage* **Explorer**.  
   
      Im Explorer wird eine Strukturansicht des Modells dargestellt.  
   
@@ -317,7 +313,7 @@ Um eine domänenspezifische Sprache (DSL) zu definieren, erstellen Sie eine [!IN
   
 1.  **Klicken Sie auf alle Vorlagen transformieren** auf der Symbolleiste des Projektmappen-Explorer, um den DSL-Designer-Code zu generieren.  
   
-2.  **Erstellen und Ausführen der DSL.** Drücken Sie F5 oder STRG + F5, um eine neue Instanz der Ausführung [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] im Testmodus. Öffnen oder erstellen Sie in der experimentellen Instanz von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] eine Datei mit der Dateinamenerweiterung Ihrer DSL.  
+2.  **Erstellen und Ausführen der DSL.** Drücken Sie F5 oder STRG + F5, um eine neue Instanz von Visual Studio im Testmodus ausgeführt. Klicken Sie in der experimentellen Instanz von Visual Studio öffnen Sie, oder erstellen Sie eine Datei mit der Erweiterung der DSL.  
   
 3.  **Stellen Sie sicher, dass die Elementtools in der Toolbox angezeigt werden.**  
   
@@ -393,7 +389,7 @@ Um eine domänenspezifische Sprache (DSL) zu definieren, erstellen Sie eine [!IN
   
 1.  **Klicken Sie auf alle Vorlagen transformieren** auf der Symbolleiste des Projektmappen-Explorer, um den DSL-Designer-Code zu generieren.  
   
-2.  **Erstellen und Ausführen der DSL.** Drücken Sie F5 oder STRG + F5, um eine neue Instanz der Ausführung [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] im Testmodus. Öffnen oder erstellen Sie in der experimentellen Instanz von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] eine Datei mit der Dateinamenerweiterung Ihrer DSL.  
+2.  **Erstellen und Ausführen der DSL.** Drücken Sie F5 oder STRG + F5, um eine neue Instanz von Visual Studio im Testmodus ausgeführt. Klicken Sie in der experimentellen Instanz von Visual Studio öffnen Sie, oder erstellen Sie eine Datei mit der Erweiterung der DSL.  
   
 3.  **Stellen Sie sicher, dass in der Toolbox das Verbindungstool angezeigt wird.**  
   
@@ -494,7 +490,7 @@ Um eine domänenspezifische Sprache (DSL) zu definieren, erstellen Sie eine [!IN
   
 1.  **Klicken Sie auf alle Vorlagen transformieren** auf der Symbolleiste des Projektmappen-Explorer, um den DSL-Designer-Code zu generieren.  
   
-2.  **Erstellen und Ausführen der DSL.** Drücken Sie F5 oder STRG + F5, um eine neue Instanz der Ausführung [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] im Testmodus. Öffnen oder erstellen Sie in der experimentellen Instanz von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] eine Datei mit der Dateinamenerweiterung Ihrer DSL.  
+2.  **Erstellen und Ausführen der DSL.** Drücken Sie F5 oder STRG + F5, um eine neue Instanz von Visual Studio im Testmodus ausgeführt. Klicken Sie in der experimentellen Instanz von Visual Studio öffnen Sie, oder erstellen Sie eine Datei mit der Erweiterung der DSL.  
   
 3.  **Stellen Sie sicher, dass das Tool in der Toolbox angezeigt wird.**  
   
@@ -623,12 +619,10 @@ Um eine domänenspezifische Sprache (DSL) zu definieren, erstellen Sie eine [!IN
 |Im Explorer für meine DSL werden die Elemente nur mit ihren Typennamen angezeigt.|Wählen Sie in der DSL-Definition, eine Eigenschaft "Domain" der Klasse, und legen Sie im Eigenschaften-Fenster **Elementname ist** auf "true".|  
 |Meine DSL wird immer im XML-Editor geöffnet.|Das kann an einem Fehler beim Lesen der Datei liegen. Nachdem Sie den Fehler behoben haben, müssen Sie den Editor explizit als Ihren DSL-Designer zurücksetzen.<br /><br /> Mit der rechten Maustaste des Projektelements, klicken Sie auf **Öffnen mit** , und wählen Sie * YourLanguage ***Designer (Standard)**.|  
 |Der Werkzeugkasten meiner DSL wird nicht angezeigt, nachdem ich die Assemblynamen geändert habe.|Überprüfen und aktualisieren Sie **DslPackage\GeneratedCode\Package.tt** Weitere Informationen finden Sie unter [Vorgehensweise: Ändern Sie den Namespace einer domänenspezifischen Sprache](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md).|  
-|Der Werkzeugkasten meiner DSL wird nicht angezeigt, obwohl ich die Assemblynamen nicht geändert habe.<br /><br /> Oder es wird in einem Meldungsfeld gemeldet, dass eine Erweiterung nicht geladen werden konnte.|Setzen Sie die experimentelle Instanz zurück, und erstellen Sie die Projektmappe neu.<br /><br /> 1.  Starten Sie Windows im Menü unter **Programme**, erweitern Sie [!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)], klicken Sie dann **Tools**, und klicken Sie dann auf **Zurücksetzen der Microsoft Visual Studio experimentellen Instanz**.<br />2.  Auf der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] **erstellen** Menü klicken Sie auf **Projektmappe neu erstellen**.|  
+|Der Werkzeugkasten meiner DSL wird nicht angezeigt, obwohl ich die Assemblynamen nicht geändert habe.<br /><br /> Oder es wird in einem Meldungsfeld gemeldet, dass eine Erweiterung nicht geladen werden konnte.|Setzen Sie die experimentelle Instanz zurück, und erstellen Sie die Projektmappe neu.<br /><br /> 1.  Starten Sie Windows im Menü unter **Programme**, erweitern Sie [!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)], klicken Sie dann **Tools**, und klicken Sie dann auf **Zurücksetzen der Microsoft Visual Studio experimentellen Instanz**.<br />2.  Visual Studio**erstellen** Menü klicken Sie auf **Projektmappe neu erstellen**.|  
   
 ## <a name="see-also"></a>Siehe auch  
  [Erste Schritte mit domänenspezifische Sprachen](../modeling/getting-started-with-domain-specific-languages.md)   
  [Erstellen eine Windows Forms-basierten einer domänenspezifischen Sprache](../modeling/creating-a-windows-forms-based-domain-specific-language.md)   
  [Erstellen einer WPF-basierten domänenspezifischen Sprache](../modeling/creating-a-wpf-based-domain-specific-language.md)
-
-[!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 

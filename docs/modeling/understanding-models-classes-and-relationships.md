@@ -11,11 +11,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: a3ee963ef1ac4c4159f0fe1922bfafa90875fad7
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: b6e23b91f411cd5260d31927ec35957a3f6c00c1
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="understanding-models-classes-and-relationships"></a>Grundlagen von Modellen, Klassen und Beziehungen
 Eine domänenspezifische Sprache (DSL) wird durch seine DSL-Definitionsdatei, zusammen mit benutzerdefinierten Programmcode definiert, den Sie schreiben können. Die meisten der Programmcode der DSL-Lösung wird aus dieser Datei generiert.  
@@ -150,4 +150,4 @@ Eine domänenspezifische Sprache (DSL) wird durch seine DSL-Definitionsdatei, zu
  Eine abgeleitete Beziehung spezialisiert seine Basis Beziehung. Die Domäne Klassen, It, das Links von abgeleitet werden sollte oder identisch mit den Klassen der Basis-Beziehung verknüpft. Wenn ein Link in der abgeleiteten Beziehung in einem Modell erstellt wird, ist es eine Instanz der abgeleiteten und die Basis-Beziehungen. Im Programmcode können Sie auf den Link mithilfe der Eigenschaften, die vom Basistyp oder von der abgeleiteten Klasse generiert entgegengesetzten Ende navigieren.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Domänenspezifische Sprache Tools Glossar](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [Domänenspezifische Sprache Tools Glossar](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

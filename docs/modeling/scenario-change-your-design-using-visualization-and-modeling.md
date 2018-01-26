@@ -19,11 +19,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 14e03f7a7c5d9200cf1ebc40f9098121f4ddbff9
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: 8ad4a4141d27c9250d53a567ac09b1c5ffa05f49
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Szenario: Ändern des Entwurfs mithilfe von Visualisierung und Modellierung
 Stellen Sie sicher, dass das Softwaresystem die Anforderungen der Benutzer erfüllt, indem Sie die Visualisierungs- und Modellierungstools in Visual Studio verwenden.
@@ -485,11 +485,10 @@ Elemente in Abhängigkeit von Diagrammen befinden sich im Modellierungsprojekt, 
 |------------------|---------------|  
 |**Foren**|-   [Visual Studio-Visualisierungs- & Modellierungstools](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio Visualization & Modeling SDK (DSL Tools)](http://go.microsoft.com/fwlink/?LinkId=184721)|  
   
-## <a name="see-also"></a>Siehe auch  
- [Visualisieren von code](../modeling/visualize-code.md)   
- [Verwenden von Modellen im Entwicklungsprozess](../modeling/use-models-in-your-development-process.md)   
- [Verwenden von Modellen in Agile development](http://msdn.microsoft.com/en-us/592ac27c-3d3e-454a-9c38-b76658ed137f)   
- [Überprüfen des Systems während der Entwicklung](../modeling/validate-your-system-during-development.md)   
+## <a name="see-also"></a>Siehe auch
 
-[!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
+[Visualisieren von code](../modeling/visualize-code.md)   
+[Verwenden von Modellen im Entwicklungsprozess](../modeling/use-models-in-your-development-process.md)   
+[Verwenden von Modellen in Agile development](http://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)   
+[Überprüfen des Systems während der Entwicklung](../modeling/validate-your-system-during-development.md)
  

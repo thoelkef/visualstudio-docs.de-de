@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 744dffd17f13c821381de6014881ef2115c0f75c
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 0c08986b9508e4061a44575d629937c70bffc06e
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="properties-of-diagrams"></a>Eigenschaften von Diagrammen
 Sie können Eigenschaften festlegen, die angeben, wie Diagramme in der generierten-Designer angezeigt werden. Sie können z. B. eine Standardfarbe für Text in das Diagramm angeben.  
@@ -46,4 +46,4 @@ Sie können Eigenschaften festlegen, die angeben, wie Diagramme in der generiert
 |Hilfsschlüsselwort|Das Schlüsselwort, das verwendet wird, um die F1-Hilfe für das Diagramm zu indizieren.|\<keine >|  
   
 ## <a name="see-also"></a>Siehe auch  
- [Domänenspezifische Sprache Tools Glossar](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [Domänenspezifische Sprache Tools Glossar](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

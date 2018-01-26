@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 5d489f41069f478abfba32a65690a5adc9c2272c
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 4dabfb345d9a98228afae5e20b63e6ded760800d
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="overview-of-the-domain-specific-language-tools-user-interface"></a>Übersicht über die Benutzeroberfläche für domänenspezifische Sprachtools
 Beim ersten Öffnen einer Projektmappe domänenspezifische Sprachtools (DSL Tools) in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], die Benutzeroberfläche die folgenden Abbildung ähneln.  
@@ -48,5 +48,5 @@ Beim ersten Öffnen einer Projektmappe domänenspezifische Sprachtools (DSL Tool
   
 ## <a name="see-also"></a>Siehe auch  
  [Übersicht über domänenspezifische Sprachtools](../modeling/overview-of-domain-specific-language-tools.md)   
- [Domänenspezifische Sprache Tools Glossar](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)   
+ [Domänenspezifische Sprache Tools Glossar](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)   
  [Anpassen und Erweitern einer domänenspezifischen Sprache](../modeling/customizing-and-extending-a-domain-specific-language.md)

@@ -11,11 +11,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: c58dc30285257a8292e8ce8dcf81b7b31cfee2c5
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 86955d745e645d2d37e9e33f258a2662bcac59fe
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="the-dsldefinitiondsl-file"></a>Die Datei DslDefinition.dsl
 Dieses Thema beschreibt die Struktur der Datei DslDefinition.dsl im Dsl-Projekt eine [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] Lösung, die definiert eine *einer domänenspezifischen Sprache*. Die Datei DslDefinition.dsl beschreibt die Klassen und Beziehungen für eine domänenspezifische Sprache, zusammen mit dem Diagramm, die Formen, die Connectors, die Serialisierungsformat und **Toolbox** der domänenspezifische Sprache und die zugehörige Bearbeitungstools. In einer Projektmappe für eine domänenspezifischen Sprache wird der Code, der diese Tools definiert, entsprechend den Informationen in der Datei "DslDefinition.dsl" generiert.  
@@ -151,7 +151,7 @@ Dieses Thema beschreibt die Struktur der Datei DslDefinition.dsl im Dsl-Projekt 
   
  Jede Domänenklasse (einschließlich Beziehungen, Formen, Konnektoren und Diagrammen) kann die folgenden Attribute und untergeordneten Knoten enthalten:  
   
--   **ID** Dieses Attribut ist eine GUID. Wenn Sie in der Datei keinen Wert angeben, erzeugt der domänenspezifische Sprachdesigner einen Wert. (In den Abbildungen in diesem Dokument wird dieses Attribut aus Platzgründen in der Regel weggelassen.)  
+-   **Id.** Dieses Attribut ist eine GUID. Wenn Sie in der Datei keinen Wert angeben, erzeugt der domänenspezifische Sprachdesigner einen Wert. (In den Abbildungen in diesem Dokument wird dieses Attribut aus Platzgründen in der Regel weggelassen.)  
   
 -   **Name und Namespace.** Diese Attribute geben den Namen und Namespace der Klasse in den generierten Code. Gemeinsam müssen sie innerhalb der domänenspezifischen Sprache eindeutig sein.  
   
@@ -546,6 +546,6 @@ ComponentHasPorts . Component / ! Component /    ComponentModelHasComponents . C
  Konnektorzuordnungen können auch Decorator-Zuordnungen enthalten.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Domänenspezifische Sprache Tools Glossar](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)   
+ [Domänenspezifische Sprache Tools Glossar](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)   
  [Gewusst wie: definieren eine domänenspezifischen Sprache](../modeling/how-to-define-a-domain-specific-language.md)   
  [Grundlagen von Modellen, Klassen und Beziehungen](../modeling/understanding-models-classes-and-relationships.md)

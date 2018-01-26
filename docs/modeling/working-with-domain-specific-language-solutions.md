@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 0f72632ccb56da42da3a9534a9a6d26d87dd6791
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: a8208d41631985fb6027e2827a847bb3e5e1d7ec
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="working-with-domain-specific-language-solutions"></a>Arbeiten mit domänenspezifischen Sprachlösungen
 Erstellt eine domänenspezifische Sprache (DSL) mit einem [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Lösung. Dieser Abschnitt enthält Informationen zum Einrichten und Anpassen der Lösung.  
@@ -47,5 +47,5 @@ Erstellt eine domänenspezifische Sprache (DSL) mit einem [!INCLUDE[vsprvs](../c
  [Gewusst wie: Erweitern des DSL-Designers](../modeling/how-to-extend-the-domain-specific-language-designer.md)  
  Sie können die DSL-Designer mit Menübefehlen anpassen.  
   
- [Gewusst wie: Automatisieren der Transformation aller Vorlagen](http://msdn.microsoft.com/en-us/b63cfe20-fe5e-47cc-9506-59b29bca768a)  
+ [Gewusst wie: Automatisieren der Transformation aller Vorlagen](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a)  
  Um zu vermeiden, auf alle Vorlagen transformieren, können Sie einen automatische Teil des Builds erleichtern.

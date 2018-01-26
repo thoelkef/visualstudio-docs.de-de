@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: ee218f119d8c996c1be72ff911735c271df44e98
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 927b033928d200cbab5271be93679106e7f4fe72
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="writing-a-t4-text-template"></a>Schreiben einer T4-Textvorlage
 Eine Textvorlage enthält den Text, der aus ihr generiert wird. Beispielsweise enthält eine Vorlage, die eine Webseite erstellt "\<html > …" und alle anderen Standardteile einer HTML-Seite. Die Vorlage eingefügt werden *Kontrollblöcke*, wobei es sich um Fragmente des Programmcodes. Kontrollblöcke stellen veränderliche Werte bereit und ermöglichen es, Bedingungen für Teile des Texts zu definieren und Teile des Texts zu wiederholen.  
@@ -258,9 +258,10 @@ Content of MyFile.txt is:
   
 ```  
   
- Sie können auch andere Dienste empfangen, die vom Host bereitgestellt werden. Weitere Informationen finden Sie unter [Zugriff auf Visual Studio oder andere Hosts aus einer Vorlage](http://msdn.microsoft.com/en-us/0556f20c-fef4-41a9-9597-53afab4ab9e4).  
-  
-### <a name="design-time-text-templates-run-in-a-separate-appdomain"></a>Entwurfszeittextvorlagen werden in einer separaten AppDomain ausgeführt  
+Sie können auch andere Dienste empfangen, die vom Host bereitgestellt werden. Weitere Informationen finden Sie unter [Zugriff auf Visual Studio oder andere Hosts aus einer Vorlage](http://msdn.microsoft.com/0556f20c-fef4-41a9-9597-53afab4ab9e4).
+
+### <a name="design-time-text-templates-run-in-a-separate-appdomain"></a>Entwurfszeittextvorlagen werden in einer separaten AppDomain ausgeführt
+
  Sie sollten sich bewusst sein, die eine [zur Entwurfszeit Textvorlage](../modeling/design-time-code-generation-by-using-t4-text-templates.md) ausgeführt wird, in einer AppDomain, die von der hauptanwendung getrennt ist. In den meisten Fällen ist dies nicht wichtig, doch in bestimmten komplexen Fällen können sich Einschränkungen ergeben. Wenn Sie z. B. Daten in oder aus der Vorlage von einem separaten Dienst übergeben möchten, muss der Dienst eine serialisierbare API bereitstellen.  
   
  (Dies gilt keine [-Laufzeit-Textvorlage](../modeling/run-time-text-generation-with-t4-text-templates.md), der Code, der zusammen mit den restlichen Code kompiliert wird bereitgestellt.)  

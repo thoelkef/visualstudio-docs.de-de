@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 08517439e2b99ca9ceba29ad3c7558494cf6bb47
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 42c873fc8c7991d5397d611c0aa6009bfc1720c1
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="use-models-in-your-development-process"></a>Verwenden von Modellen im Entwicklungsprozess
 In Visual Studio können Sie ein Modell verwenden, um ein System, eine Anwendung oder eine Komponente zu verstehen und zu ändern. Mit einem Modell können Sie das Umfeld des Systems visuell darstellen, Anforderungen der Benutzer verdeutlichen, die Architektur des Systems definieren, den Code analysieren und sicherstellen, dass der Code die Anforderungen erfüllt. Finden Sie unter [Channel 9-Video: Verbessern der Architektur durch Modellierung](http://go.microsoft.com/fwlink/?LinkID=252078).  
@@ -130,12 +130,13 @@ In Visual Studio können Sie ein Modell verwenden, um ein System, eine Anwendung
 |**Blogs**|[Visual Studio ALM + Team Foundation Server Blog](http://go.microsoft.com/fwlink/?LinkID=201340)|  
 |**Technische Artikel und Journale**|[MSDN Architecture Center](http://go.microsoft.com/fwlink/?LinkId=201343)<br /><br /> [Visual Studio Architecture Tooling Guidance](../modeling/visual-studio-architecture-tooling-guidance.md)|  
   
-## <a name="see-also"></a>Siehe auch  
- [Verwenden von Modellen in Agile development](http://msdn.microsoft.com/en-us/592ac27c-3d3e-454a-9c38-b76658ed137f)   
- [Erstellen von Modellen für Ihre app](../modeling/create-models-for-your-app.md)   
- [Modellieren von benutzeranforderungen](../modeling/model-user-requirements.md)   
- [Modellieren Sie Ihrer app-Architektur](../modeling/model-your-app-s-architecture.md)   
- [Entwickeln von Tests aus einem Modell](../modeling/develop-tests-from-a-model.md)   
- [Strukturieren der Modellierungslösung](../modeling/structure-your-modeling-solution.md)
+## <a name="see-also"></a>Siehe auch
+
+[Verwenden von Modellen in Agile development](http://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)   
+[Erstellen von Modellen für Ihre app](../modeling/create-models-for-your-app.md)   
+[Modellieren von benutzeranforderungen](../modeling/model-user-requirements.md)   
+[Modellieren Sie Ihrer app-Architektur](../modeling/model-your-app-s-architecture.md)   
+[Entwickeln von Tests aus einem Modell](../modeling/develop-tests-from-a-model.md)   
+[Strukturieren der Modellierungslösung](../modeling/structure-your-modeling-solution.md)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]

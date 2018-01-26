@@ -19,11 +19,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 5da1da2b7c74f6c95651eeb0120b213ad1e1d394
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 713d7d3598e56ceb4e5a339facb948d6d222a32d
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="working-with-the-dsl-definition-diagram"></a>Arbeiten mit dem DSL-Definitionsdiagramm
 Das Diagramm eine [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] Definition ist ein wichtiges Tool für die Definition einer domänenspezifischen Sprache. Sie können Ihrem Domänenmodell Elemente hinzufügen und Beziehungen im Diagramm festlegen. Darüber hinaus können Sie das Layout des Diagramms ändern, um dieses besser lesbar zu machen.  
@@ -73,4 +73,4 @@ Das Diagramm eine [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] Definition ist
  Wenn einer domänenbeziehung Beziehungen abgeleitet wurde, oder wenn einbetten oder Verweis Beziehungen mit anderen zwischen Domänen bestehen, Sie die Beziehung als eine Klasse anzeigen können, indem die Beziehung mit der rechten Maustaste, und klicken Sie dann auf **als Klasse anzeigen** . Erscheint die Beziehung mit einer **Domäneneigenschaften** -Fach und die Strukturen Vererbung und Beziehungen angezeigt werden.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Domänenspezifische Sprache Tools Glossar](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [Domänenspezifische Sprache Tools Glossar](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

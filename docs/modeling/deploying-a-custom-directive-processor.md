@@ -11,27 +11,29 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 16001ed6447f3dcfe649d0fe659c98d97b9e310c
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: be69cc9335480d901824ce8a4981728a34db6395
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="deploying-a-custom-directive-processor"></a>Bereitstellen eines benutzerdefinierten Anweisungsprozessors
+
 Um einen benutzerdefinierten Direktivenprozessor in Visual Studio auf einem beliebigen Computer zu verwenden, müssen Sie sie durch eine der in diesem Thema beschriebenen Methoden registrieren.  
   
- Folgende Methoden stehen zur Auswahl:  
+Folgende Methoden stehen zur Auswahl:  
   
--   [Visual Studio-Erweiterung (VSIX)](http://msdn.microsoft.com/en-us/64ff1452-f7d5-42d9-98b8-76f769f76832). Ermöglicht die Installation und Deinstallation des Anweisungsprozessors auf dem eigenen Computer und anderen Computern. Normalerweise können weitere Funktionen in der gleichen VSIX gebündelt werden.  
+-   [Visual Studio-Erweiterungen](../extensibility/shipping-visual-studio-extensions.md). Ermöglicht die Installation und Deinstallation des Anweisungsprozessors auf dem eigenen Computer und anderen Computern. Normalerweise können weitere Funktionen in der gleichen VSIX gebündelt werden.  
   
 -   [VSPackage](../extensibility/internals/vspackages.md). Wenn Sie ein VSPackage definieren, das neben dem Direktivenprozessor weitere Funktionen enthält, kann der Direktivenprozessor einfach registriert werden.  
   
 -   Festlegen eines Registrierungsschlüssels. Bei dieser Methode fügen Sie einen Registrierungseintrag für den Anweisungsprozessor hinzu.  
   
- Sie müssen eine der folgenden Methoden verwenden, nur, wenn Sie die Textvorlage in Visual Studio transformieren möchten oder [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Falls Sie in der Anwendung einen benutzerdefinierten Host verwenden, ist dieser für die Suche nach Anweisungsprozessoren für die einzelnen Anweisungen zuständig.  
+Sie müssen eine der folgenden Methoden verwenden, nur, wenn Sie die Textvorlage in Visual Studio oder MSBuild transformieren möchten. Falls Sie in der Anwendung einen benutzerdefinierten Host verwenden, ist dieser für die Suche nach Anweisungsprozessoren für die einzelnen Anweisungen zuständig.  
   
-## <a name="deploying-a-directive-processor-in-a-vsix"></a>Bereitstellen eines Anweisungsprozessors in einer VSIX  
- Sie können einen benutzerdefinierten Direktivenprozessor Hinzufügen einer [Visual Studio-Erweiterung (VSIX)](http://msdn.microsoft.com/en-us/64ff1452-f7d5-42d9-98b8-76f769f76832).  
+## <a name="deploying-a-directive-processor-in-a-vsix"></a>Bereitstellen eines Anweisungsprozessors in einer VSIX
+
+Sie können einen benutzerdefinierten Direktivenprozessor Hinzufügen einer [Visual Studio-Erweiterung (VSIX)](../extensibility/starting-to-develop-visual-studio-extensions.md).
   
  Stellen Sie sicher, dass die VSIX-Datei die folgenden zwei Elemente enthält:  
   
@@ -39,10 +41,10 @@ Um einen benutzerdefinierten Direktivenprozessor in Visual Studio auf einem beli
   
 -   Eine PKGDEF-Datei, durch die der Anweisungsprozessor registriert wird. Der Stammname der Datei muss mit dem Namen der Assembly identisch sein. Die Dateinamen können z. B. "CDP.dll" und "CDP.pkgdef" lauten.  
   
- Wenn Sie den Inhalt einer VSIX-Datei überprüfen oder ändern möchten, ändern Sie die Dateierweiterung in .zip, und öffnen Sie die Datei dann. Ändern Sie den Dateinamen wieder in .vsix, nachdem Sie den Inhalt bearbeitet haben.  
-  
- Zum Erstellen einer VSIX-Datei stehen mehrere Methoden zur Verfügung. Im folgenden Verfahren wird eine Methode beschrieben.  
-  
+Wenn Sie den Inhalt einer VSIX-Datei überprüfen oder ändern möchten, ändern Sie die Dateierweiterung in .zip, und öffnen Sie die Datei dann. Ändern Sie den Dateinamen wieder in .vsix, nachdem Sie den Inhalt bearbeitet haben.  
+
+Zum Erstellen einer VSIX-Datei stehen mehrere Methoden zur Verfügung. Im folgenden Verfahren wird eine Methode beschrieben.  
+
 #### <a name="to-develop-a-custom-directive-processor-in-a-vsix-project"></a>So entwickeln Sie einen benutzerdefinierten Anweisungsprozessor in einem VSIX-Projekt  
   
 1.  Erstellen Sie ein VSIX-Projekt in Visual Studio.  
@@ -90,11 +92,11 @@ Um einen benutzerdefinierten Direktivenprozessor in Visual Studio auf einem beli
   
 5.  Fügen Sie dem Projekt die folgenden Verweise hinzu:  
   
-    -   **Microsoft.VisualStudio.TextTemplating. \*.0**  
+    -   **Microsoft.VisualStudio.TextTemplating.\*.0**  
   
-    -   **Microsoft.VisualStudio.TextTemplating.Interfaces. \*.0**  
+    -   **Microsoft.VisualStudio.TextTemplating.Interfaces.\*.0**  
   
-    -   **Microsoft.VisualStudio.TextTemplating.VSHost. \*.0**  
+    -   **Microsoft.VisualStudio.TextTemplating.VSHost.\*.0**  
   
 6.  Fügen Sie dem Projekt die benutzerdefinierte Anweisungsprozessorklasse hinzu.  
   
@@ -197,5 +199,6 @@ Um einen benutzerdefinierten Direktivenprozessor in Visual Studio auf einem beli
 |Klasse|REG_SZ|\<**Der vollqualifizierte Klassenname**>|  
 |Assembly|REG_SZ|\<**Der Name der Assembly im globalen Assemblycache**>|  
   
-## <a name="see-also"></a>Siehe auch  
- [Erstellen von benutzerdefinierten T4-Anweisungsprozessoren für Textvorlagen](../modeling/creating-custom-t4-text-template-directive-processors.md)
+## <a name="see-also"></a>Siehe auch
+
+[Erstellen von benutzerdefinierten T4-Anweisungsprozessoren für Textvorlagen](../modeling/creating-custom-t4-text-template-directive-processors.md)

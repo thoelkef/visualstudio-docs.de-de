@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: e15efdb40b21b187dfc8bec543fc48c91f9efcf6
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 7578426058c5e41bb6507c044be411348c42d050
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>Gewusst wie: Migrieren einer domänenspezifischen Sprache zu einer neuen Version
 Sie können Projekte, definieren und Verwenden einer domänenspezifischen Sprache, migrieren [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] von der Version des [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] , die mit verteilt wurde [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)].  
@@ -23,7 +23,7 @@ Sie können Projekte, definieren und Verwenden einer domänenspezifischen Sprach
   
  Sie müssen das Migrationstool explizit ausführen: Es wird nicht automatisch gestartet, wenn Sie eine Projektmappe in öffnen [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. In diesem Pfad können das Tool und detaillierte Guidance-Dokument ermittelt werden:  
   
- **% Programm Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exe**  
+ **%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exe**  
   
 ## <a name="before-you-migrate-your-dsl-projects"></a>Vor dem Migrieren Sie Ihre Projekte DSL  
  Ändert das Migrationstool [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Projektdateien (**csproj**) und berichtsprojektmappen-Dateien (**sln**).  
@@ -42,7 +42,7 @@ Sie können Projekte, definieren und Verwenden einer domänenspezifischen Sprach
   
     -   Sie können Doppelklicken Sie auf das Tool in Windows Explorer (oder Datei-Explorer), oder starten Sie das Tool über eine Eingabeaufforderung. Das Tool ist an diesem Speicherort:  
   
-         **%ProgramFiles%\Microsoft visual Studio 2010 SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exe**  
+         **%ProgramFiles%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exe**  
   
 2.  Wählen Sie einen Ordner mit Projektmappen und Projekten, die Sie konvertieren möchten.  
   
@@ -76,7 +76,7 @@ Sie können Projekte, definieren und Verwenden einer domänenspezifischen Sprach
     2.  Klicken Sie auf die **alle Vorlagen transformieren** Schaltfläche in der Kopfzeile des Projektmappen-Explorers.  
   
         > [!NOTE]
-        >  Sie können diesen Schritt nicht erforderlich machen. Weitere Informationen finden Sie unter [wie alle Vorlagen transformieren automatisieren](http://msdn.microsoft.com/en-us/b63cfe20-fe5e-47cc-9506-59b29bca768a).  
+        >  Sie können diesen Schritt nicht erforderlich machen. Weitere Informationen finden Sie unter [wie alle Vorlagen transformieren automatisieren](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a).  
   
 6.  Aktualisieren Sie Ihren benutzerdefinierten Code in die konvertierten Projekte ein.  
   

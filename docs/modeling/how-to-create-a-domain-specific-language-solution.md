@@ -15,11 +15,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 467874db7b9dc0dbdc8e168bd5396fd033b90fc7
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 8a8b349e43f4728fee3ec676a689e6ba03cde758
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>Gewusst wie: Erstellen einer domänenspezifischen Sprachlösung
 Eine domänenspezifische Sprache (DSL) wird mithilfe eines speziellen erstellt [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Lösung.  
@@ -29,8 +29,8 @@ Eine domänenspezifische Sprache (DSL) wird mithilfe eines speziellen erstellt [
   
 |||  
 |-|-|  
-|[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]|[http://go.Microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkID=185579)|  
-|[!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)]|[http://go.Microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkID=185580)|  
+|[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185579](http://go.microsoft.com/fwlink/?LinkID=185579)|  
+|[!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185580](http://go.microsoft.com/fwlink/?LinkID=185580)|  
 |Visual Studio Visualization and Modeling SDK||  
 
 
@@ -131,7 +131,8 @@ Eine domänenspezifische Sprache (DSL) wird mithilfe eines speziellen erstellt [
  Verwenden Sie diese Option, wenn Sie der DSL mit einer anderen Assembly integrieren möchten.  
   
  Weitere Informationen über starke Namen finden Sie unter [erstellen und Verwenden von Assemblys](http://go.microsoft.com/fwlink/?LinkId=186073).  
-  
-## <a name="see-also"></a>Siehe auch  
- [Gewusst wie: definieren eine domänenspezifischen Sprache](../modeling/how-to-define-a-domain-specific-language.md)   
- [Domänenspezifische Sprache Tools Glossar](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
+
+## <a name="see-also"></a>Siehe auch
+
+[So definieren Sie eine domänenspezifische Sprache](../modeling/how-to-define-a-domain-specific-language.md)  
+[Domänenspezifische Sprache Tools Glossar](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 49a410ef816f2e77713b65b33a2ad8bc59b5b116
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: a9a17cba8e1ff1cca66f82c1d3934ff179b04fd9
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="customizing-copy-behavior"></a>Anpassen des Kopierverhaltens
 In einer domänenspezifischen Sprache (Domain-Specific Language, DSL), die mit dem [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-SDK für Visualisierung und Modellierung erstellt wurde, können Sie ändern, was beim Kopieren und Einfügen von Elementen passiert.  
@@ -561,11 +561,11 @@ namespace Company.MyDsl
   
 ```  
   
-## <a name="see-also"></a>Siehe auch  
- [Anpassen von Element erstellen und verschieben](../modeling/customizing-element-creation-and-movement.md)   
- [Vorgehensweise: Hinzufügen eines Drag-and-Drop-Ereignishandlers](../modeling/how-to-add-a-drag-and-drop-handler.md)   
- [Anpassen des Verhaltens löschen](../modeling/customizing-deletion-behavior.md)   
- [: Beispiel VMSDK Schaltpläne](http://go.microsoft.com/fwlink/?LinkId=213879)
+## <a name="see-also"></a>Siehe auch
+
+[Anpassen von Element erstellen und verschieben](../modeling/customizing-element-creation-and-movement.md)   
+[Vorgehensweise: Hinzufügen eines Drag-and-Drop-Ereignishandlers](../modeling/how-to-add-a-drag-and-drop-handler.md)   
+[Anpassen des Verhaltens löschen](../modeling/customizing-deletion-behavior.md)   
+[: Beispiel VMSDK Schaltpläne](http://go.microsoft.com/fwlink/?LinkId=213879)
  
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
- 

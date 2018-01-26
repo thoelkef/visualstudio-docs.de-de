@@ -10,25 +10,24 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: b3e0d6ec6eb1449defcc49102a97e69a7105a838
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 92db1c4d27eec5a9ac18d51644dfb0141c2fef34
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="getting-started-with-domain-specific-languages"></a>Erste Schritte mit domänenspezifischen Sprachen
-In diesem Thema wird erläutert, die grundlegenden Konzepte in definieren und verwenden eine domänenspezifische Sprache (DSL) mit den Modellierungs-SDK für Visual Studio erstellt wird.  
+In diesem Thema wird erläutert, die grundlegenden Konzepte in definieren und verwenden eine domänenspezifische Sprache (DSL) mit den Modellierungs-SDK für Visual Studio erstellt wird.
 
+> [!NOTE]
+> In Visual Studio 2017 werden Text Vorlage Transformation SDK und Visual Studio Modellierungs-SDKS automatisch installiert, wenn Sie bestimmte Funktionen von Visual Studio zu installieren. Weitere Informationen finden Sie unter [diesem Blogbeitrag](https://blogs.msdn.microsoft.com/visualstudioalm/2016/12/12/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/).
 
-[!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
-
-  
- Wenn Sie konzentriert vertraut sind, es wird empfohlen, dass Sie über arbeiten die **DSL-Tools Lab**, das Sie an diesem Standort zugreifen können: [Visualizaton und Modellierungs-SDKS](http://go.microsoft.com/fwlink/?LinkID=186128)  
+Wenn Sie konzentriert vertraut sind, es wird empfohlen, dass Sie über arbeiten die **DSL-Tools Lab**, das Sie an diesem Standort zugreifen können: [Visualizaton und Modellierungs-SDKS](http://go.microsoft.com/fwlink/?LinkID=186128)  
   
 ## <a name="what-can-you-do-with-a-domain-specific-language"></a>Was können Sie mit einer domänenspezifischen Sprache?  
  Eine domänenspezifische Sprache ist eine Notation, in der Regel Grafik, die für einen bestimmten Zweck verwendet werden soll. Im Gegensatz dazu sind Sprachen wie z. B. UML allgemeine. Eine DSL können Sie definieren die Typen von Modellelement und ihre Beziehungen und wie sie auf dem Bildschirm dargestellt sind.  
   
- Wenn Sie eine DSL entworfen haben, können Sie ihn als Teil eines Pakets für Visual Studio Integration Extension (VSIX) verteilen. Benutzer arbeiten mit der DSL in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]:  
+ Wenn Sie eine DSL entworfen haben, können Sie ihn als Teil eines Pakets für Visual Studio Integration Extension (VSIX) verteilen. Benutzer arbeiten mit der DSL in Visual Studio:  
   
  ![Stammbaumdiagramm, Toolbox und Explorer](../modeling/media/familyt_instance.png "FamilyT_Instance")  
   
@@ -36,15 +35,15 @@ In diesem Thema wird erläutert, die grundlegenden Konzepte in definieren und ve
   
  Eine der wichtigsten Anwendungen von konzentriert ist Programmcode, Konfigurationsdateien und andere Artefakte generieren. Insbesondere in großen Projekten und Produktlinien, wobei mehrere Varianten eines Produkts erstellt wird, kann zahlreiche Variablen Aspekte von konzentriert generieren eine große Erhöhung in der Zuverlässigkeits- und eine sehr schnelle Reaktion auf anforderungsänderungen bereitstellen.  
   
- Der Rest des in dieser Übersicht wird eine exemplarische Vorgehensweise, die die grundlegenden Operationen des Erstellens und Verwendens einer domänenspezifischen Sprache führt [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+ Der Rest dieser Übersicht ist eine exemplarische Vorgehensweise, die die grundlegenden Operationen des Erstellens und Verwendens einer domänenspezifischen Sprache in Visual Studio eingeführt werden.  
   
 ## <a name="prerequisites"></a>Erforderliche Komponenten  
  Zur Definition einer DSL müssen folgende Komponenten installiert sein:  
   
 |||  
 |-|-|  
-|[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]|[http://go.Microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579)|  
-|[!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)]|[http://go.Microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580)|  
+|Visual Studio|[http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579)|  
+|[!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580)|  
 |Modeling SDK für Visual Studio||  
 
 
@@ -52,7 +51,7 @@ In diesem Thema wird erläutert, die grundlegenden Konzepte in definieren und ve
 
   
 ## <a name="creating-a-dsl-solution"></a>Erstellen einer Projektmappe DSL  
- Um eine neue domänenspezifische Sprache zu erstellen, erstellen Sie ein neues [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Lösung mithilfe der Projektvorlage einer domänenspezifischen Sprache.  
+ Um eine neue domänenspezifische Sprache zu erstellen, erstellen Sie eine neue Visual Studio-Projektmappe mithilfe der Projektvorlage einer domänenspezifischen Sprache.  
   
 #### <a name="to-create-a-dsl-solution"></a>So erstellen Sie eine DSL-Projektmappe  
   
@@ -100,7 +99,7 @@ In diesem Thema wird erläutert, die grundlegenden Konzepte in definieren und ve
   
 -   **DSL-Projekt** dieses Projekt enthält Code, der einer domänenspezifischen Sprache definiert.  
   
--   **DslPackage Projekt** dieses Projekt enthält Code, der Instanzen der DSL geöffnet und bearbeitet werden kann [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+-   **DslPackage Projekt** dieses Projekt enthält Code, der Instanzen der DSL geöffnet und in Visual Studio bearbeitet werden kann.  
   
 ##  <a name="Debugging"></a>Ausführen der DSL  
  Sie können die DSL-Lösung ausführen, sobald Sie ihn erstellt haben. Später können Sie die DSL-Definition nach und nach Ausführen der Projektmappe nach jeder Änderung erneut ändern.  
@@ -110,15 +109,15 @@ In diesem Thema wird erläutert, die grundlegenden Konzepte in definieren und ve
 1.  Klicken Sie auf **alle Vorlagen transformieren** in der Projektmappen-Explorer-Symbolleiste. Dies generiert einen neuen Großteil den Quellcode aus DslDefinition.dsl.  
   
     > [!NOTE]
-    >  Wenn Sie DslDefinition.dsl ändern, klicken Sie auf **alle Vorlagen transformieren** , bevor Sie die Projektmappe neu erstellen. Dieser Schritt kann automatisiert werden. Weitere Informationen finden Sie unter [wie alle Vorlagen transformieren automatisieren](http://msdn.microsoft.com/en-us/b63cfe20-fe5e-47cc-9506-59b29bca768a).  
+    >  Wenn Sie DslDefinition.dsl ändern, klicken Sie auf **alle Vorlagen transformieren** , bevor Sie die Projektmappe neu erstellen. Dieser Schritt kann automatisiert werden. Weitere Informationen finden Sie unter [wie alle Vorlagen transformieren automatisieren](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a).
   
 2.  Drücken Sie F5, oder auf die **Debuggen** Menü klicken Sie auf **Debuggen**.  
   
-     Der DSL erstellt und wird in der experimentellen Instanz installiert [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+     Der DSL erstellt und wird in der experimentellen Instanz von Visual Studio installiert.
   
-     Eine experimentelle Instanz von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] wird gestartet. Die experimentelle Instanz akzeptiert die Einstellungen aus der Registrierung, der eine separate Unterstruktur, in denen [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Erweiterungen zu Debugzwecken registriert sind. Normale Instanzen [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] haben keinen Zugriff auf Erweiterungen, die es registriert.  
+     Eine experimentelle Instanz von Visual Studio wird gestartet. Die experimentelle Instanz hat seine Einstellungen über eine separate Unterstruktur der Registrierung, in der Visual Studio-Erweiterungen für Debugzwecke registriert sind. Den Zugriff auf Erweiterungen registriert gibt es keine normale Instanzen von Visual Studio.  
   
-3.  In der experimentellen Instanz von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], öffnen Sie die Modelldatei mit dem Namen **Test** aus **Projektmappen-Explorer**.  
+3.  In der experimentellen Instanz von Visual Studio, öffnen Sie die Modelldatei, die mit dem Namen **Test** aus **Projektmappen-Explorer**.  
   
      \- oder –  
   
@@ -136,7 +135,7 @@ In diesem Thema wird erläutert, die grundlegenden Konzepte in definieren und ve
   
 5.  Klicken Sie auf die Bezeichnungen der Formen ändern.  
   
- Die experimentelle [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] wird im folgende Beispiel ähneln:  
+ Die experimentelle Visual Studio wird im folgende Beispiel ähneln:  
   
  ![](../modeling/media/dsl_min.png "DSL_min")  
   
@@ -147,7 +146,7 @@ In diesem Thema wird erläutert, die grundlegenden Konzepte in definieren und ve
   
  Sehen Sie ein Modell als Baumstruktur in der **Explorer** während der Bearbeitung eines Modells anzeigen. Hinzufügen von Formen im Diagramm werden die betroffenen Modellelemente auch im Explorer angezeigt. Der Explorer kann verwendet werden, auch wenn es kein Diagramm.  
   
- Wenn in der debugging-Instanz im Explorer nicht angezeigt [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]auf der **Ansicht** zeigen Sie im Menü auf **Weitere Fenster**, und klicken Sie dann auf  *\<Ihre Sprache >* **Explorer**.  
+ Wenn Sie in der Debug-Instanz von Visual Studio im Explorer nicht angezeigt der **Ansicht** zeigen Sie im Menü auf **Weitere Fenster**, und klicken Sie dann auf  *\<Ihre Sprache >* **Explorer**.  
   
 ### <a name="the-api-of-your-dsl"></a>Die API der DSL  
  Der DSL generiert eine API, mit dem Sie zum Lesen und Aktualisieren von Modellen, die Instanzen der DSL. Eine Anwendung der API wird zum Generieren von Textdateien aus einem Modell. Weitere Informationen finden Sie unter [Design-Time Code Generation mithilfe von T4-Textvorlagen](../modeling/design-time-code-generation-by-using-t4-text-templates.md).  
@@ -164,7 +163,7 @@ In diesem Thema wird erläutert, die grundlegenden Konzepte in definieren und ve
   
 ##### <a name="to-regenerate-text-files-after-you-change-the-model-file"></a>Beim Neugenerieren des Text-Dateien nach dem Ändern der Modelldatei  
   
-1.  In der experimentellen Instanz von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], speichern Sie die Modelldatei.  
+1.  Speichern Sie die Modelldatei, in der experimentellen Instanz von Visual Studio.  
   
 2.  Stellen Sie sicher, dass die Dateinamenparameter in jeder TT-Datei auf die Modelldatei bezieht, die Sie für Experimente verwenden. Die TT-Datei zu speichern.  
   
@@ -182,7 +181,7 @@ In diesem Thema wird erläutert, die grundlegenden Konzepte in definieren und ve
  Weitere Informationen finden Sie unter [Generieren von Code aus einer domänenspezifischen Sprache](../modeling/generating-code-from-a-domain-specific-language.md) und [Schreiben von Code zum Anpassen einer domänenspezifischen Sprache](../modeling/writing-code-to-customise-a-domain-specific-language.md).  
   
 ## <a name="customizing-the-dsl"></a>Anpassen der DSL  
- Wenn Sie die DSL-Definition ändern möchten, schließen Sie die experimentelle Instanz, und aktualisieren Sie die Definition im Hauptbearbeitungsfenster [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Instanz.  
+ Wenn Sie die DSL-Definition ändern möchten, schließen Sie die experimentelle Instanz und aktualisieren Sie die Definition in der Hauptinstanz von Visual Studio.  
   
 > [!NOTE]
 >  Nachdem Sie die DSL-Definition geändert haben, verlieren Sie möglicherweise Informationen in den Test-Modellen, die Sie erstellt haben, mithilfe von früheren Versionen.  Die Lösung Debuggen enthält beispielsweise eine Datei mit dem Namen Sample, die einige Formen und-Verbinder enthält. Nach dem Starten die DSL-Definition zu entwickeln, werden sie nicht angezeigt, und diese verloren, wenn Sie die Datei speichern.  
@@ -222,9 +221,9 @@ In diesem Thema wird erläutert, die grundlegenden Konzepte in definieren und ve
   
     2.  Klicken Sie auf **alle Vorlagen transformieren** auf der Symbolleiste des Projektmappen-Explorer  
   
-    3.  Drücken Sie F5. Warten Sie, bis der experimentellen Instanz von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] angezeigt wird.  
+    3.  Drücken Sie F5. Warten Sie, bis der experimentellen Instanz von Visual Studio wird angezeigt.  
   
-4.  In der Projektmappe debuggen, in der experimentellen Instanz von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], öffnen Sie eine Testdatei für das Modell. Ziehen Sie Elemente auf ihn aus der Toolbox. Beachten Sie, dass das Tool Beschriftungen und den Typnamen im Explorer für DSL geändert wurden.  
+4.  Öffnen Sie in der Debugging-Lösung in der experimentellen Instanz von Visual Studio eine Testdatei für das Modell ein. Ziehen Sie Elemente auf ihn aus der Toolbox. Beachten Sie, dass das Tool Beschriftungen und den Typnamen im Explorer für DSL geändert wurden.  
   
 5.  Speichern Sie die Modelldatei.  
   
@@ -348,7 +347,7 @@ In diesem Thema wird erläutert, die grundlegenden Konzepte in definieren und ve
   
 8.  DSL-Definition speichern, klicken Sie auf **alle Vorlagen transformieren**, und drücken Sie dann die **F5**.  
   
-9. In der experimentellen Instanz von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], öffnen Sie eine Testdatei für das Modell. Verwenden Sie den neuen Tools zum Erstellen von brushville und Verknüpfungen zwischen brushville und Personen. Beachten Sie, dass Sie nur zwischen den richtigen Typen des Elements Links erstellen können.  
+9. Öffnen Sie in der experimentellen Instanz von Visual Studio eine Testdatei für das Modell. Verwenden Sie den neuen Tools zum Erstellen von brushville und Verknüpfungen zwischen brushville und Personen. Beachten Sie, dass Sie nur zwischen den richtigen Typen des Elements Links erstellen können.  
   
 10. Erstellen Sie Code, der die Stadt enthält, in der jede Person aktiv ist. Textvorlagen sind eine der Stellen, in dem Sie diesen Code ausführen können. Die vorhandene Sample.tt-Datei in der Projektmappe debuggen z. B. konnte ändern, sodass sie den folgenden Code enthält:  
   
@@ -380,33 +379,32 @@ In diesem Thema wird erläutert, die grundlegenden Konzepte in definieren und ve
 ## <a name="validation-and-commands"></a>Überprüfung und Befehle  
  Sie konnten diese DSL weiter durch Hinzufügen von validierungseinschränkungen entwickeln. Diese Einschränkungen sind Methoden, die Sie definieren können, und sicherstellen, dass das Modell im richtigen Zustand befindet. Sie können z. B. eine Einschränkung, um sicherzustellen, definieren, die das Geburtsdatum einer untergeordneten höher als die des übergeordneten ist. Die Überprüfungsfunktion zeigt eine Warnung aus, wenn der DSL-Benutzer versucht, ein Modell speichern, die Einschränkungen verletzen. Weitere Informationen finden Sie unter [Überprüfung in einer domänenspezifischen Sprache](../modeling/validation-in-a-domain-specific-language.md).  
   
- Sie können auch Befehle definieren, die der Benutzer aufrufen kann. Befehle können das Modell ändern. Sie können auch mit anderen Modellen interagieren [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] und externe Ressourcen. Weitere Informationen finden Sie unter [Vorgehensweise: Ändern eines Menübefehls Standard](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).  
+ Sie können auch Befehle definieren, die der Benutzer aufrufen kann. Befehle können das Modell ändern. Sie können auch mit anderen Modellen in Visual Studio und externe Ressourcen interagieren. Weitere Informationen finden Sie unter [Vorgehensweise: Ändern eines Menübefehls Standard](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).  
   
 ## <a name="deploying-the-dsl"></a>Bereitstellen der DSL  
- Damit andere Benutzer die domänenspezifische Sprache zu verwenden, verteilen Sie eine [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Extension (VSIX)-Datei. Dies wird erstellt, wenn die DSL-Projektmappe zu erstellen.  
+ Damit andere Benutzer die domänenspezifische Sprache zu verwenden, verteilen Sie eine Visual Studio-Erweiterung (VSIX)-Datei. Dies wird erstellt, wenn die DSL-Projektmappe zu erstellen.  
   
- Suchen Sie die VSIX-Datei im Ordner "bin" Ihrer Lösung. Kopieren sie auf dem Computer, auf dem er installiert werden soll. Doppelklicken Sie auf diesem Computer auf die VSIX-Datei. Der DSL kann verwendet werden, in allen Instanzen vom [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] auf diesem Computer.  
+ Suchen Sie die VSIX-Datei im Ordner "bin" Ihrer Lösung. Kopieren sie auf dem Computer, auf dem er installiert werden soll. Doppelklicken Sie auf diesem Computer auf die VSIX-Datei. Der DSL kann in allen Instanzen von Visual Studio auf diesem Computer verwendet werden.  
   
- Sie können das gleiche Verfahren um der DSL auf Ihrem eigenen Computer zu installieren, sodass Sie keine verwenden Sie die experimentelle Instanz von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+ Das gleiche Verfahren können Sie um die DSL auf Ihrem eigenen Computer zu installieren, sodass Sie keine die experimentelle Instanz von Visual Studio verwenden.  
   
  Weitere Informationen finden Sie unter [Bereitstellen einer domänenspezifischen Sprachlösungen](../modeling/deploying-domain-specific-language-solutions.md).  
   
 ##  <a name="Reset"></a>Entfernen alte experimentellen konzentriert.  
- Wenn Sie experimentellen konzentriert erstellt haben Sie nicht mehr benötigen, Sie können sie von Ihrem Computer entfernen, indem Zurücksetzen der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] experimentellen Instanz.  
+ Wenn Sie die experimentelle konzentriert, die Sie nicht mehr benötigen erstellt haben, können Sie sie durch das Zurücksetzen der Visual Studio experimentellen Instanz von Ihrem Computer entfernen.  
   
- Dies wird vom Computer entfernen, alle experimentellen konzentriert und andere experimentelle [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Erweiterungen. Hierbei handelt es sich um Erweiterungen, die im Debugmodus ausgeführt wurden.  
+ Dies wird von Ihrem Computer entfernen, alle experimentellen konzentriert und andere experimentellen Visual Studio-Erweiterungen. Hierbei handelt es sich um Erweiterungen, die im Debugmodus ausgeführt wurden.  
   
- Diese Prozedur entfernt keine konzentriert oder andere [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Erweiterungen, die vollständig installiert wurde, indem Sie die VSIX-Datei ausführen.  
+ Diese Prozedur entfernt keine konzentriert oder andere Visual Studio-Erweiterungen, die vollständig installiert wurden, indem Sie die VSIX-Datei ausführen.  
   
 #### <a name="to-reset-the-visual-studio-experimental-instance"></a>So setzen Sie die Visual Studio experimentelle Instanz zurück  
   
 1.  Klicken Sie auf **starten**, klicken Sie auf **Programme**, **Microsoft Visual Studio 2010 SDK**, **Tools**, und klicken Sie dann **Microsoft zurücksetzen Visual Studio 2010 experimentelle Instanz**.  
   
-2.  Erstellen Sie eine experimentelle konzentriert oder andere experimentelle [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Erweiterungen, die Sie weiterhin verwenden möchten.  
+2.  Erstellen Sie eine experimentelle konzentriert oder andere experimentellen Visual Studio-Erweiterungen, die Sie weiterhin verwenden möchten.  
   
-## <a name="see-also"></a>Siehe auch  
- [Grundlegendes zu Modellen, Klassen und Beziehungen](../modeling/understanding-models-classes-and-relationships.md)   
- [So definieren Sie eine domänenspezifische Sprache](../modeling/how-to-define-a-domain-specific-language.md)   
+## <a name="see-also"></a>Siehe auch
 
-[!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
+[Grundlegendes zu Modellen, Klassen und Beziehungen](../modeling/understanding-models-classes-and-relationships.md)   
+[So definieren Sie eine domänenspezifische Sprache](../modeling/how-to-define-a-domain-specific-language.md)
 

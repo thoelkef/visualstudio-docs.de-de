@@ -11,11 +11,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 34d2008b4316d75d37292b5baa456bf9cdc65e15
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: d2d6d4ebfa8ca86179afb8d88b59dca6b42d9e26
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="working-with-the-domain-specific-language-explorer"></a>Arbeiten mit dem DSL-(Domain-Specific Languge)-Explorer
 Die **Explorer für DSL** zeigt verschiedene Arten von Informationen in einer Strukturansicht an. Weitere Informationen über die meisten Elemente im Explorer für DSL finden Sie unter [zum Definieren einer domänenspezifischen Sprache](../modeling/how-to-define-a-domain-specific-language.md).  
@@ -43,4 +43,4 @@ Die **Explorer für DSL** zeigt verschiedene Arten von Informationen in einer St
 -   **XML-Serialisierungsverhalten**. Serialisierungseinstellungen für das Modell. Weitere Informationen zur Serialisierung finden Sie unter [Dateispeicher anpassen und XML-Serialisierung](../modeling/customizing-file-storage-and-xml-serialization.md).  
   
 ## <a name="see-also"></a>Siehe auch  
- [Domänenspezifische Sprache Tools Glossar](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [Domänenspezifische Sprache Tools Glossar](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

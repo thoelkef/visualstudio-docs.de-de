@@ -15,18 +15,18 @@ manager: ghogen
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 748da513053b981e88afccf6c16ccabd60d80b3e
-ms.sourcegitcommit: 65f85389047c5a1938b6d5243ccba8d4f14362ba
+ms.openlocfilehash: f1938473a3a5e085e63b9b522bbc31678dedbbd4
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio-2017"></a>Remotedebuggen von ASP.NET Core auf einem Remote-IIS-Computer in Visual Studio 2017
 Um eine ASP.NET-Anwendung debuggen, die in IIS bereitgestellt wurde, installieren Sie und führen Sie der Remotetools auf dem Computer aus, auf denen Sie Ihre app bereitgestellt haben, und fügen Sie an der ausgeführten app aus Visual Studio.
 
 ![Remotedebugger-Komponenten](../debugger/media/remote-debugger-aspnet.png "Remote_debugger_components")
 
-Dieses Handbuch erläutert das Einrichten einer Visual Studio 2017 ASP.NET Core, für IIS bereitstellen und Konfigurieren von Visual Studio remote Debugger anfügen. Zum Remotedebuggen ASP.NET 4.5.2 finden Sie unter [Remote Debuggen von ASP.NET auf einem Computer mit IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md). Sie können auch bereitstellen und Debuggen von IIS mithilfe von Azure. Für Azure App Service, können Sie bereitstellen und Debuggen auf einer vorkonfigurierten Instanz von IIS mithilfe der [Momentaufnahme Debugger](../debugger/debug-live-azure-applications.md) oder [das Anfügen des Debuggers aus Server-Explorer](../debugger/remote-debugging-azure.md).
+Dieses Handbuch erläutert das Einrichten einer Visual Studio 2017 ASP.NET Core, für IIS bereitstellen und Konfigurieren von Visual Studio remote Debugger anfügen. Zum Remotedebuggen ASP.NET 4.5.2 finden Sie unter [Remote Debuggen von ASP.NET auf einem Computer mit IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md). Sie können auch bereitstellen und Debuggen von IIS mithilfe von Azure. Für Azure App Service, Sie einfache bereitstellen und Debuggen auf einem vorkonfigurierten Instanz von IIS und den Remotedebugger entweder können die [Momentaufnahme Debugger](../debugger/debug-live-azure-applications.md) oder [das Anfügen des Debuggers aus Server-Explorer](../debugger/remote-debugging-azure.md).
 
 Diese Prozeduren haben auf diese Serverkonfigurationen getestet:
 * Windows Server 2012 R2 und IIS 8
