@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 05/23/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -26,16 +27,17 @@ helpviewer_keywords:
 - errors [debugger], unable to start debugging
 - debugging ASP.NET Web applications, unable to start debugging error
 - remote debugging, errors
-caps.latest.revision: "29"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: a7d09deda1aa2b24fba90f9d9d417917c5b284ad
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.workload:
+- multiple
+ms.openlocfilehash: d9c4160726f808a2f456bb52390839c34dc308e2
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="error-unable-to-start-debugging-on-the-web-server"></a>Fehler: Das Debuggen kann auf dem Webserver nicht gestartet werden
 
@@ -84,8 +86,10 @@ Die `Unable to start debugging on the Web server` Nachricht ist generisch. In de
 
 ## <a name="server_error"></a>Der Remoteserver hat einen Fehler zurückgegeben.
 
-Überprüfen Sie den Fehlercode, der in der Nachricht, um die Ursache des Problems zu identifizieren zurückgegeben wird. Hier sind einige häufige Fehlercodes.
-- ("403 Forbidden)". Stellen Sie sicher, dass Sie mit dem richtigen Server-Typ und URL herstellen (in **Eigenschaften > Web > Server** oder **Eigenschaften > Debuggen**vom Projekttyp abhängig). Stellen Sie auch sicher, dass der Server "Web.config" enthält `debug=true` in das Compilation-Element. Wenn diese Einstellungen bereits korrekt sind, stellen Sie sicher, dass Ihr Web Application-Ordner die richtigen Berechtigungen verfügt. Weitere Informationen finden Sie unter [überprüfen Sie die IIS-Konfiguration](#vxtbshttpservererrorsthingstocheck).
+Überprüfen Sie Ihre [IIS-Protokolldatei](https://support.microsoft.com/help/943891/the-http-status-code-in-iis-7-0--iis-7-5--and-iis-8-0) Fehler Untercodes und Weitere Informationen und dieses IIS 7 [Blogbeitrag](https://blogs.iis.net/tomkmvp/troubleshoot-a-403).
+
+Darüber hinaus sind hier einige häufige Fehlercodes und einige Vorschläge.
+- (403) Forbidden. Es gibt zahlreiche mögliche Ursachen für diesen Fehler, so überprüfen Sie die Protokolldatei und die IIS-Sicherheitseinstellungen für die Website. Stellen Sie sicher, dass der Server "Web.config" enthält `debug=true` in das Compilation-Element. Stellen Sie sicher, dass Ihr Web Application-Ordner die richtigen Berechtigungen verfügt und die Anwendungspool-Konfiguration richtig ist (ein Kennwort möglicherweise geändert haben). Finden Sie unter [überprüfen Sie die IIS-Konfiguration](#vxtbshttpservererrorsthingstocheck). Wenn diese Einstellungen bereits korrekt sind und Sie lokal debuggen, außerdem überprüfen, ob Sie mit dem richtigen Server-Typ und URL herstellen (in **Eigenschaften > Web > Server** oder **Eigenschaften > Debuggen**, Abhängigkeit vom Projekttyp).
 - (503) Server nicht verfügbar. Der Anwendungspool möglicherweise aufgrund einer Änderung der Fehler oder die Konfiguration beendet. Starten Sie den Anwendungspool neu.
 - (404) nicht gefunden. Stellen Sie sicher, dass der Anwendungspool für die richtige Version von ASP.NET konfiguriert ist.
 
@@ -125,7 +129,7 @@ Nach der Schritte zur Behebung des Problems hier detailliert, und versuchen Sie 
     
 * Überprüfen Sie, dass Ihr Web Application-Ordner die richtigen Berechtigungen verfügt.
 
-    Stellen Sie sicher, dass Sie für den Web Application-Ordner Ausführungsrechte und geben IIS_IUSRS, IUSR-Konto oder den bestimmten Benutzer, die die schreibgeschützte Anwendungspool zugeordnet. Beheben Sie das Problem, und starten Sie den Anwendungspool neu.
+    Stellen Sie sicher, dass Sie IIS_IUSRS IUSR-Konto erteilen, oder den bestimmte Benutzer zugeordnet der [Anwendungspool](/iis/manage/configuring-security/application-pool-identities) Lese- / Schreib-Berechtigungen für das Web Application-Ordner. Beheben Sie das Problem, und starten Sie den Anwendungspool neu.
 
 * Stellen Sie sicher, dass die richtige Version von ASP.NET in IIS installiert ist.
 

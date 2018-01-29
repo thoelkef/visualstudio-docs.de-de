@@ -4,10 +4,12 @@ ms.custom: H1Hack27Feb2017
 ms.date: 04/04/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.debug.watch
+f1_keywords:
+- vs.debug.watch
 helpviewer_keywords:
 - debugging [Visual Studio], Watch window
 - expressions [debugger], evaluating
@@ -15,22 +17,21 @@ helpviewer_keywords:
 - expression evaluation
 - registers, evaluating
 - debugging [Visual Studio], expression evaluation
-ms.assetid: d5c18377-2a0e-4819-a645-407e24ccc58c
-caps.latest.revision: "45"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 086d7b103095f6cbc9d90c962fd0ad31af964f54
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.workload:
+- multiple
+ms.openlocfilehash: 0f5c518becd09f6b94fb598975caa913d150ac2a
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="set-a-watch-on-variables-using-the-watch-and-quickwatch-windows-in-visual-studio"></a>Legen Sie eine Überwachung auf Variablen mithilfe der überwachen "und" Schnellüberwachung Fenstern in Visual Studio
-Während des Debuggens, können Sie die **Überwachen** (**Debuggen > Windows > Überwachen > überwachen (1, 2, 3, 4)**) und **Schnellüberwachung** (mit der rechten Maustaste auf die Variable /  **Debuggen > Schnellüberwachung**) Windows, Variablen und Ausdrücke zu beobachten.  Der Unterschied besteht darin, dass im Fenster **Überwachen** mehrere Variablen angezeigt werden können, im Fenster **Schnellüberwachung** hingegen jeweils nur eine Variable.
+Während des Debuggens, können Sie die **Überwachen** und **Schnellüberwachung** Windows, Variablen und Ausdrücke zu beobachten.  Der Unterschied besteht darin, dass im Fenster **Überwachen** mehrere Variablen angezeigt werden können, im Fenster **Schnellüberwachung** hingegen jeweils nur eine Variable. 
 
-Die Windows sind nur während einer Debugsitzung verfügbar. 
+Die Windows sind nur während einer Debugsitzung verfügbar. So öffnen die **Überwachen** Fenster, wählen Sie **Debuggen > Windows > Überwachen > überwachen (1, 2, 3, 4)**). So öffnen die **Schnellüberwachung** Fenster entweder mit der rechten Maustaste auf die Variable, und wählen Sie **Schnellüberwachung** , oder wählen Sie **Debuggen > Schnellüberwachung**.
   
 ## <a name="observing-a-single-variable-with-quickwatch"></a>Beobachten einer einzelnen Variable im Fenster "Schnellüberwachung"  
  Sie können das Fenster **Schnellüberwachung** verwenden, um eine einzelne Variable zu beobachten. Wenn Ihr Code beispielsweise folgendermaßen lautet:  
@@ -54,7 +55,7 @@ static void Main(string[] args)
   
 2.  Beginnen Sie mit dem Debuggen. Die Ausführung hält am Haltepunkt an.  
   
-3.  Öffnen Sie das Fenster **Schnellüberwachung** (klicken Sie mit der rechten Maustaste auf "a", wählen Sie dann **Schnellüberwachung**aus, oder drücken Sie **UMSCHALT+F9**).
+3.  Öffnen der **Schnellüberwachung** Fenster (mit der rechten Maustaste auf `a`, wählen Sie dann **Schnellüberwachung**, oder wählen Sie `a` , und drücken Sie **UMSCHALT + F9**).
 
     Daraufhin sollte eine Variable in der **Werte** angezeigt, wobei der Wert 1.
 
