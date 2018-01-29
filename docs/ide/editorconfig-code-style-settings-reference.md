@@ -21,11 +21,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 1657a440405533ba188a101ae22c26c2777feff5
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 76b7ed58713f61882130c48d808012dc35055f55
+ms.sourcegitcommit: 65f85389047c5a1938b6d5243ccba8d4f14362ba
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>Einstellungen für die .NET-Codierungskonventionen für „EditorConfig“
 
@@ -300,7 +300,7 @@ dotnet_style_predefined_type_for_member_access = true:suggestion
 
 #### <a name="normalize_modifiers">Einstellungen von Modifizierern</a>
 
-Die Stilregeln in diesem Abschnitt beziehen sich auf die Einstellungen von Modifizierern, einschließlich des Erforderns von Zugriffsmodifizierern und des Angebens der gewünschten Sortierreihenfolge für Modifizierer.
+Die Formatregeln in diesem Abschnitt beziehen sich auf die Einstellungen von Modifizierern, einschließlich des Erforderns von Zugriffsmodifizierern und des Angebens der gewünschten Sortierreihenfolge für Modifizierer.
 
 In der folgenden Tabelle werden die Regelnamen, Regel-IDs, anzuwendende Programmiersprachen, Standardwerte und die erste unterstützte Version von Visual Studio angezeigt:
 
@@ -394,7 +394,7 @@ In der folgenden Tabelle werden die Regelnamen, Regel-IDs, anzuwendende Programm
 | dotnet_style_collection_initializer | IDE0028 | C# und Visual Basic | true:suggestion | Erste Version |
 | dotnet_style_explicit_tuple_names | IDE0033 | C# 7.0 und höher und Visual Basic 15 und höher | true:suggestion | Erste Version |
 | dotnet_style_coalesce_expression | IDE0029 | C# und Visual Basic | true:suggestion | Erste Version |
-| dotnet_style_null_propagation | IDE0031 | C# 6.0 und höher und Visual Basic 14 und höher | true:suggestion | Erste Version |
+| dotnet_style_null_propagation | IDE0031 | C# 6.0+ und Visual Basic 14+ | true:suggestion | Erste Version |
 | dotnet_prefer_inferred_tuple_names | IDE0037 | C# 7.1 und höher und Visual Basic 15 und höher | true:suggestion | 15.6 Vorschauversion 2 |
 | dotnet_prefer_inferred_anonymous_type_member_names | IDE0037 | C# und Visual Basic | true:suggestion | 15.6 Vorschauversion 2 |
 
@@ -888,7 +888,7 @@ In der folgenden Tabelle werden der Regelname, Regel-IDs, anzuwendende Sprachver
 
 | Regelname | Regel-ID | Anzuwendende Sprachen | Visual Studio-Standard | Visual Studio 2017-Version |
 | --------- | ------- | -------------------- | ----------------------| ----------------  |
-| csharp_prefer_simple_default_expression | IDE0034 | C# 7.1 und höher | true:suggestion | 15.3 |
+| csharp_prefer_simple_default_expression | IDE0034 | C# 7.1+ | true:suggestion | 15.3 |
 | csharp_style_deconstructed_variable_declaration | IDE0042 | C# 7.0 und höher | true:suggestion | 15.5 |
 | csharp_style_pattern_local_over_anonymous_function | IDE0039 | C# 7.0 und höher | true:suggestion | 15.5 |
 
@@ -1638,7 +1638,7 @@ csharp_preserve_single_line_blocks = true
 
 ## <a name="see-also"></a>Siehe auch
 
-[Schnellaktionen](../ide/quick-actions.md)  
+[Schnelle Aktionen](../ide/quick-actions.md)  
 [.NET-Namenskonventionen für EditorConfig](../ide/editorconfig-naming-conventions.md)  
 [Erstellen portierbarer benutzerdefinierter Editor-Optionen](../ide/create-portable-custom-editor-options.md)  
 [.editorconfig-Datei der .NET Compiler Platform](https://github.com/dotnet/roslyn/blob/master/.editorconfig)  
