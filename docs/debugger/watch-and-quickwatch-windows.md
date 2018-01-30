@@ -22,8 +22,8 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f5c518becd09f6b94fb598975caa913d150ac2a
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 454dacc7d3b785cf290823b38275a8e441950d8a
+ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 01/29/2018
@@ -36,7 +36,7 @@ Die Windows sind nur während einer Debugsitzung verfügbar. So öffnen die **Ü
 ## <a name="observing-a-single-variable-with-quickwatch"></a>Beobachten einer einzelnen Variable im Fenster "Schnellüberwachung"  
  Sie können das Fenster **Schnellüberwachung** verwenden, um eine einzelne Variable zu beobachten. Wenn Ihr Code beispielsweise folgendermaßen lautet:  
   
-```CSharp
+```csharp
 static void Main(string[] args)  
 {  
     int a, b;  
@@ -125,7 +125,7 @@ int main()
 ##  <a name="bkmk_refreshWatch"></a> Aktualisieren von veralteten Werten im Fenster "Überwachen"  
  Unter bestimmten Umständen möglicherweise ein Aktualisierungssymbol (ein Pfeil mit zirkuläre) bei der Auswertung eines Ausdrucks in der **Überwachen** Fenster.  Angenommen, wenn Sie die eigenschaftenauswertung deaktiviert haben (**Extras > Optionen > Debugging > eigenschaftenauswertung und andere implizite Funktionsaufrufe**), und Sie haben den folgenden Code:  
   
-```CSharp  
+```csharp  
 static void Main(string[] args)  
 {  
     List<string> list = new List<string>();  
@@ -177,7 +177,7 @@ var1 = var2
   
  Im folgenden Code wird eine Methode erstellt eine `Person` mithilfe einer lokalen Variablen, aber Sie möchten erfahren, welche die `Person`des Name ist in einer anderen Methode:  
   
-```CSharp  
+```csharp  
 class Person  
 {  
     public Person(string name)  

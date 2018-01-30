@@ -4,25 +4,28 @@ ms.custom: H1Hack27Feb2017
 ms.date: 02/07/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.debug.execution
+f1_keywords:
+- vs.debug.execution
 helpviewer_keywords:
 - stepping
 - debugging [Visual Studio], execution control
 - execution, controlling in debugger
 ms.assetid: 759072ba-4aaa-447e-8e51-0dd1456fe896
-caps.latest.revision: "42"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 2c45f6cfa37ee8593da08d59071d8244b08feac7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: f6b83e1be32eb657555131a934f8c11f9567c5bc
+ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="navigate-code-with-the-visual-studio-debugger"></a>Navigieren Sie im Code mit Visual Studio-Debugger
 Mit den Befehlen und Tastenkombinationen zum Navigieren im Code im Debugger vertraut machen, und treffen, die zum Suchen und beheben Probleme in Ihrer app leichter und schneller. Während Sie den Code im Debugger navigieren, können Sie überprüfen Sie den Status der app oder erfahren Sie mehr über seine Ausführungsfluss.  
@@ -32,13 +35,13 @@ Mit den Befehlen und Tastenkombinationen zum Navigieren im Code im Debugger vert
   
  Der grüne Pfeil wird auch der Debugger gestartet (identisch mit **F5**).  
   
- ![DBG &#95; Grundlagen &#95; &#95;starten; Debuggen](../debugger/media/dbg_basics_start_debugging.png "DBG_Basics_Start_Debugging")  
+ ![DBG&#95;Basics&#95;Start&#95;Debugging](../debugger/media/dbg_basics_start_debugging.png "DBG_Basics_Start_Debugging")  
   
  Einige andere, dass Sie die app, mit dem angefügten Debugger starten können Konfigurationsmethoden **F11** ([Einzelschritt in Code](#BKMK_Step_into__over__or_out_of_the_code)), **F10** ([Prozedurschritt Code](#BKMK_Step_over_Step_out)), oder durch mit **Ausführen bis Cursor**.  Finden Sie in den weiteren Abschnitten in diesem Thema Informationen zu den Schritten dieser Optionen ausführen.  
   
  Beim Debuggen zeigt die gelbe Zeile Sie den Code, der als Nächstes ausgeführt wird.  
   
- ![DBG &#95; Grundlagen &#95; Break &#95; Modus](../debugger/media/dbg_basics_break_mode.png "DBG_Basics_Break_Mode")  
+ ![DBG&#95;Basics&#95;Break&#95;Mode](../debugger/media/dbg_basics_break_mode.png "DBG_Basics_Break_Mode")  
   
  Während des Debuggens können Sie wechseln zwischen Befehlen wie **F5**, **F11** und andere Funktionen in diesem Thema (z. B. Haltepunkte) beschrieben werden, um schnell auf den Code erhalten Sie betrachten möchten.  
   
@@ -56,7 +59,7 @@ Mit den Befehlen und Tastenkombinationen zum Navigieren im Code im Debugger vert
   
 -   Der Debugger durchläuft tatsächlich durch Codeanweisungen anstatt durch physische Zeilen. Beispielsweise kann eine `if` -Klausel in eine Zeile geschrieben werden:  
   
-    ```CSharp  
+    ```csharp  
     int x = 42;  
     string s = "Not answered";  
     if( int x == 42) s = "Answered!";  
@@ -90,7 +93,7 @@ Mit den Befehlen und Tastenkombinationen zum Navigieren im Code im Debugger vert
   
      Um einen einfachen Haltepunkt im Code festzulegen, öffnen Sie die Quellcodedatei im Visual Studio-Editor. Setzen Sie den Cursor in die Codezeile, wo möchten Sie unterbrechen die Ausführung, und klicken Sie dann mit der rechten Maustaste im Codefenster "finden im Kontextmenü den Befehl aus, und wählen **Haltepunkt > Haltepunkt einfügen** (oder drücken Sie **F9**). Der Debugger unterbricht die Ausführung rechts, bevor die Zeile ausgeführt wird.  
   
-     ![Festlegen eines Haltepunkts](../debugger/media/dbg_basics_setbreakpoint.png "DBG_Basics_SetBreakpoint")  
+     ![Set a breakpoint](../debugger/media/dbg_basics_setbreakpoint.png "DBG_Basics_SetBreakpoint")  
   
      Haltepunkte in Visual Studio bieten einen umfangreichen Satz von zusätzlichen Funktionen, wie z. B. bedingte Haltepunkte und Ablaufverfolgungspunkte. Finden Sie unter [Verwenden von Haltepunkten](../debugger/using-breakpoints.md).  
   

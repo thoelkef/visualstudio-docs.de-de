@@ -4,7 +4,8 @@ ms.custom: H1Hack27Feb2017
 ms.date: 04/17/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -14,16 +15,17 @@ helpviewer_keywords:
 - debugger, variable windows
 - debugging [Visual Studio], variable windows
 ms.assetid: bb6291e1-596d-4af0-9f22-5fd713d6b84b
-caps.latest.revision: "24"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 77dd01333941e897628a40a5a5dc1749917dcb89
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 763a079ec8da8c2c1e9e7d7864fc4d0cee6197ed
+ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows-in-visual-studio"></a>Untersuchen von Variablen in der "Auto" und "lokal" Fenstern in Visual Studio
 Die **"Auto"** Fenster (während des Debuggens **STRG + ALT + V, A**, oder **Debuggen > Windows > "Auto"**) und die **"lokal"** Fenster (während des Debuggens **STRG + ALT + V, L**, oder **Debuggen > Windows > "lokal"**) sind sehr hilfreich, wenn Sie möchten, um Variable Werte anzuzeigen, während des Debuggens. Im Fenster **Lokal** werden die Variablen angezeigt, die im lokalen Gültigkeitsbereich definiert sind, der in der Regel der Funktion oder Methode entspricht, die derzeit ausgeführt wird. Im Fenster **Auto** werden Variablen angezeigt, die in der Nähe der aktuellen Zeile (die Stelle, an der der Debugger angehalten wurde) verwendet werden. Welche Variablen genau in diesem Fenster anzeigen unterscheidet sich in verschiedenen Sprachen. Weitere Informationen finden im folgenden Abschnitt [What variables appear in the Autos Window?](#bkmk_whatvariables) weiter unten.  
@@ -33,14 +35,14 @@ Wenn Sie weitere Informationen zu den Grundlagen des Debuggens benötigen, lesen
 ## <a name="looking-at-objects-in-the-autos-and-locals-windows"></a>Betrachten von Objekten in den Fenstern „Auto“ und „Lokal“  
 Arrays und Objekte werden in den Fenstern „Auto“ und „Lokal“ als Struktursteuerelemente angezeigt. Klicken Sie auf den Pfeil links neben dem Variablennamen, damit die Ansicht erweitert wird, sodass m die Felder und Eigenschaften angezeigt werden. Dies ist ein Beispiel für ein [FileStream](http://msdn.microsoft.com/Library/a8737776-e545-4867-91ed-51c7f031fa19) -Objekt im Fenster **Lokal** :  
   
-!["Lokal" &#45; FileStream](../debugger/media/locals-filestream.png ""lokal" FileStream")  
+![Locals&#45;FileStream](../debugger/media/locals-filestream.png "Locals-FileStream")  
   
 ## <a name="bkmk_whatvariables"></a> Welche Variablen werden im Fenster „Auto“ angezeigt?  
  Sie können das Fenster **Auto** für C#-, Visual Basic- und C++-Code verwenden. Das Fenster **Auto** unterstützt weder JavaScript noch F#-.  
   
  In C# und Visual Basic wird im Fenster **Auto** jede Variable angezeigt, die in der aktuellen oder vorherigen Zeile verwendet wird. Angenommen, Sie deklarieren vier Variablen und legen diese wie folgt fest:
 
-```CSharp
+```csharp
     public static void Main()
     {
        int a, b, c, d;
@@ -53,7 +55,7 @@ Arrays und Objekte werden in den Fenstern „Auto“ und „Lokal“ als Struktu
 
  Wenn Sie einen Haltepunkt in der Zeile `c = 3`festgelegt haben und den Debugger ausführen, sieht das Fenster **Auto** wie folgt aus, wenn die Ausführung angehalten wird:  
 
- !["Auto" &#45; CSharp](../debugger/media/autos-csharp.png ""Auto" CSharp")  
+ ![Autos&#45;CSharp](../debugger/media/autos-csharp.png "Autos-CSharp")  
 
  `c` hat den Wert 0, weil die Zeile `c = 3` noch nicht ausgeführt wurde.  
 
@@ -73,7 +75,7 @@ Arrays und Objekte werden in den Fenstern „Auto“ und „Lokal“ als Struktu
 
  Wenn Sie einen Haltepunkt in der Zeile `e = 5;` festgelegt haben und den Debugger ausführen, sieht das Fenster **Auto** wie folgt aus, wenn die Ausführung angehalten wird:  
   
- !["Auto" &#45; Cplus](../debugger/media/autos-cplus.png ""Auto" Cplus")  
+ ![Autos&#45;Cplus](../debugger/media/autos-cplus.png "Autos-Cplus")  
   
  Sie sehen, dass die Variable „e“ nicht initialisiert ist. Dies liegt daran, dass der Code in der Zeile `e = 5;` noch nicht ausgeführt wurde.  
   
@@ -84,7 +86,7 @@ Arrays und Objekte werden in den Fenstern „Auto“ und „Lokal“ als Struktu
   
  Im folgenden C#-Code werden die Rückgabewerte von zwei Funktionen hinzugefügt:  
 
-```CSharp
+```csharp
 static void Main(string[] args)  
 {  
     int a, b, c, d;  

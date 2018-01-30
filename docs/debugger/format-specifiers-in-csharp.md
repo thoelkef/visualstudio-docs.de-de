@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -25,16 +26,17 @@ helpviewer_keywords:
 - format specifiers, debugger
 - debugger, format specifiers recognized by
 ms.assetid: 345c8589-5f36-4d34-a58c-e56271687dd6
-caps.latest.revision: "29"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: c1186da8d276796816d8531963f746f222526b6d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- dotnet
+ms.openlocfilehash: e1191884f0a20463f9d248a6acfca4337212b613
+ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>Formatbezeichner in c# in Visual Studio-debugger
 Sie können das Format ändern, in dem ein Wert im Fenster **Überwachen** mithilfe von Formatbezeichnern angezeigt wird. Formatbezeichner können im Fenster **Direkt** , im Fenster **Befehl** und sogar in den Quellcodefenstern verwendet werden. Wenn Sie in einen Ausdruck in diesen Fenstern anhalten, wird das Ergebnis in einem DataTip angezeigt. DataTips geben den Formatbezeichner in der DataTip-Anzeige wieder.  
@@ -44,7 +46,7 @@ Sie können das Format ändern, in dem ein Wert im Fenster **Überwachen** mithi
 ## <a name="using-format-specifiers"></a>Verwenden von Formatbezeichnern  
  Wenn Ihr Code folgendermaßen lautet:  
   
-```CSharp  
+```csharp  
 {  
         int my_var1 = 0x0065;  
         int my_var2 = 0x0066;  
@@ -61,7 +63,7 @@ Sie können das Format ändern, in dem ein Wert im Fenster **Überwachen** mithi
   
 |Bezeichner|Format|Ursprünglicher Wert in "Überwachen"|Anzeige|  
 |---------------|------------|--------------------------|--------------|  
-|ac|Erzwingen der Auswertung eines Ausdrucks. Dies kann nützlich sein, wenn die implizite Auswertung von Eigenschaften sowie implizite Funktionsaufrufe deaktiviert sind.|Meldung "implizite funktionsevaluierung wird durch den Benutzer deaktiviert"|\<Wert >|  
+|ac|Erzwingen der Auswertung eines Ausdrucks. Dies kann nützlich sein, wenn die implizite Auswertung von Eigenschaften sowie implizite Funktionsaufrufe deaktiviert sind.|Meldung "implizite funktionsevaluierung wird durch den Benutzer deaktiviert"|\<value>|  
 |T|Ganze Dezimalzahl|0x0065|101|  
 |dynamic|Zeigt das angegebene Objekt mit einer dynamischen Ansicht an.|Zeigt alle Member des Objekts einschließlich der dynamischen Ansicht an.|Zeigt nur die dynamische Ansicht an.|  
 |h|Ganze Hexadezimalzahl|61541|0x0000F065|  
