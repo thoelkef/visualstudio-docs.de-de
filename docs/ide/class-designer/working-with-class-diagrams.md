@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -15,16 +16,17 @@ helpviewer_keywords:
 - diagrams, class structure of projects
 - class structure
 ms.assetid: 37908cb7-f77b-4698-a4f9-3c21e5440fee
-caps.latest.revision: "25"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 9856a7061bf6fbe70ad39b2b70f052c2bd8c9bd5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 606024fd031814b91cfb97e3e674d9d1240e3efb
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="working-with-class-diagrams-class-designer"></a>Arbeiten mit Klassendiagrammen (Klassen-Designer)
 Klassendiagramme vereinfachen das Verständnis der Klassenstruktur von Projekten, die von anderen geschrieben wurden (oder die Sie vor langer Zeit geschrieben haben). Sie können sie zur Anpassung, gemeinsamen Nutzung und Präsentieren von Projektinformationen mit anderen verwenden.  
@@ -39,6 +41,7 @@ Nach dem Tunen eines oder mehrerer Klassendiagramme können Sie sie in Microsoft
 >  Klassen-Designer verfolgt nicht den Speicherort der Quelldateien, so dass die Änderung der Projektstruktur oder verschobenen Quelldateien im Projekt dazu führen kann, dass der Klassen-Designer den Typ, insbesondere den Quelltyp eines TypeDef-, Basisklassen oder Zuordnungstypen verliert. Es wird möglicherweise ein Fehler angezeigt, z.B. **Dieser Typ kann im Klassen-Designer nicht angezeigt werden**. In diesem Fall ziehen Sie den geänderten oder verschobenen Quellcode in das Klassendiagramm, um ihn erneut anzuzeigen.
   
 ## <a name="see-also"></a>Siehe auch
-[Anzeigen von Typen und Beziehungen](viewing-types-and-relationships.md)   
-[Vorgehensweise: Anpassen von Klassendiagrammen](how-to-customize-class-diagrams.md)   
-[Vorgehensweise: Entfernen von Typformen aus Klassendiagrammen](http://msdn.microsoft.com/en-us/ae41897d-d066-4b8c-bb9b-05436e12ff39)
+
+[Anzeigen von Typen und Beziehungen](viewing-types-and-relationships.md)  
+[Vorgehensweise: Anpassen von Klassendiagrammen](how-to-customize-class-diagrams.md)  
+[Vorgehensweise: Entfernen von Typformen aus Klassendiagrammen](http://msdn.microsoft.com/ae41897d-d066-4b8c-bb9b-05436e12ff39)

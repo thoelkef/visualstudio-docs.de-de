@@ -3,21 +3,24 @@ title: "Tipps und Tricks für die Leistung von Visual Studio | Microsoft-Dokumen
 ms.date: 08/31/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: debugger
+helpviewer_keywords:
+- debugger
 ms.assetid: 2fbcb59e-e981-4b40-8b7a-c1140d31ec4b
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: b703fd45732e3fd083a5c95b68647f67dce57b3a
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.workload:
+- multiple
+ms.openlocfilehash: f15f9b34a19617986ca64f9b13af1b28d4c9d01a
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Tipps und Tricks für die Leistung von Visual Studio
 
@@ -32,7 +35,7 @@ Diese die Leistung von Visual Studio betreffenden Empfehlungen sind für Situati
 
     Wenn Sie Ihr System von einer 32-Bit-Version von Windows auf eine 64-Bit-Version aktualisieren, erweitern Sie die Menge des für Visual Studio verfügbaren virtuellen Arbeitsspeichers von 2 auf 4 GB. Dadurch kann Visual Studio erheblich größere Workloads verarbeiten, obwohl es sich um einen 32-Bit-Prozess handelt.
 
-    Weitere Informationen finden Sie unter [Memory limits (Arbeitsspeicherbegrenzungen)](https://msdn.microsoft.com/en-us/library/windows/desktop/aa366778(v=vs.85).aspx#memory_limits) und [Using /LARGEADDRESSAWARE on 64-bit Windows (Verwenden von /LARGEADDRESSAWARE unter einer 64-Bit-Version von Windows)](https://blogs.msdn.microsoft.com/oldnewthing/20050601-24/?p=35483/).
+    Weitere Informationen finden Sie unter [Memory limits (Arbeitsspeicherbegrenzungen)](https://msdn.microsoft.com/library/windows/desktop/aa366778(v=vs.85).aspx#memory_limits) und [Using /LARGEADDRESSAWARE on 64-bit Windows (Verwenden von /LARGEADDRESSAWARE unter einer 64-Bit-Version von Windows)](https://blogs.msdn.microsoft.com/oldnewthing/20050601-24/?p=35483/).
 
 ## <a name="configure-solution-and-projects"></a>Konfigurieren von Projektmappen und Projekten
 
@@ -47,6 +50,7 @@ Wenn sie eine sehr große Projektmappe mit vielen Projekten haben, können Sie v
     Sie können die Projektmappe in mehrere kleinere Projektmappendateien mit häufig verwendeten Projekte aufteilen. Dieses Refactoring sollte den Arbeitsspeicherverbrauch des Workflows erheblich reduzieren. Außerdem werden kleinere Projektmappen schneller geladen.
 
 ## <a name="configure-debugging-options"></a>Konfigurieren von Debugoptionen
+
 Wenn Sie in der Regel während des Debuggens von Sitzungen über nicht ausreichend Arbeitsspeicher verfügen, können Sie die Leistung optimieren, indem Sie mindestens eine Konfigurationsänderung vornehmen.
 
 - **Nur meinen Code aktivieren**
@@ -74,6 +78,7 @@ Wenn Sie in der Regel während des Debuggens von Sitzungen über nicht ausreiche
     Weitere Informationen finden Sie unter [Profilerstellungstools](../profiling/profiling-tools.md).
 
 ## <a name="disable-tools-and-extensions"></a>Deaktivieren von Tools und Erweiterungen
+
 Einige Tools oder Erweiterungen müssen möglicherweise ausgeschaltet werden, um die Leistung zu verbessern.
 
 > [!TIP]
@@ -123,7 +128,8 @@ Um eine automatische Speicherbereinigung zu erzwingen, verwenden Sie den Hotkey:
 
 Wenn das Erzwingen der Garbage Collection zur zuverlässigen Funktion Ihres Szenarios führt, übermitteln Sie uns einen Bericht über die Visual Studio-Feedbacktool, denn dieses Verhalten ist wahrscheinlich ein Fehler.
 
-Eine ausführliche Beschreibung des CLR-Garbage Collectors finden Sie unter [Fundamental of Garbage Collection (Grundlagen der Garbage Collection)](https://msdn.microsoft.com/en-us/library/ee787088(v=vs.110).aspx).
+Eine ausführliche Beschreibung des CLR-Garbage Collectors finden Sie unter [Fundamental of Garbage Collection (Grundlagen der Garbage Collection)](/dotnet/standard/garbage-collection/fundamentals).
 
-## <a name="see-also"></a>Siehe auch  
- [Visual Studio-IDE](../ide/index.md)
+## <a name="see-also"></a>Siehe auch
+
+[Visual Studio-IDE](../ide/visual-studio-ide.md)
