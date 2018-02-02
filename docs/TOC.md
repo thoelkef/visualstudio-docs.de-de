@@ -39,7 +39,8 @@
 ### Verweis
 #### [Arbeitsauslastung und Komponenten-IDs von Visual Studio](install/workload-and-component-ids.md)
 #### [Visual Studio-Buildnummern und -Veröffentlichungstermine](install/visual-studio-build-numbers-and-release-dates.md)
-## [Installieren von Build-Tools in einen Container](install/build-tools-container.md)
+## [Verwenden von Visual Studio auf einem virtuellen Azure-Computer](install/using-visual-studio-vm.md)
+## [Installieren von Build Tools in einem Container](install/build-tools-container.md)
 ### [Erweitertes Beispiel für Container](install/advanced-build-tools-container.md)
 ### [Bekannte Probleme für Container](install/build-tools-container-issues.md)
 # Schnellstarts
