@@ -4,21 +4,22 @@ ms.custom:
 ms.date: 02/09/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.graphics.frameanalysis
-ms.assetid: 336c48ba-a1c4-4db9-b2a4-3de4a129cdd6
-caps.latest.revision: "9"
+f1_keywords:
+- vs.graphics.frameanalysis
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: d15e781445605eb1e236f177669c2fe8041d90d6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: fd3af414b5d59ec49ed6e042d6a656d322fe8a38
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="graphics-frame-analysis"></a>Grafikframe-Analyse
 Verwenden Sie die Grafikframe-Analyse in der Visual Studio-Grafikanalyse zum Analysieren und Optimieren der Renderingleistung ihres Direct3D-Spiels oder Ihrer -App.  
@@ -147,37 +148,32 @@ Verwenden Sie die Grafikframe-Analyse in der Visual Studio-Grafikanalyse zum Ana
 ### <a name="gpu-counters"></a>GPU-Zähler  
  Die Unterstützung für GPU-Hardwarezähler ist hardwareabhängig.  
   
- Da GPU-Hardwarezähler von keiner derzeit von Intel, AMD oder nVidia angebotenen Computer-GPU zuverlässig unterstützt werden, sammelt die Frame-Analyse von diesen keine Zähler. Allerdings sammelt die Frame-Analyse Hardware von folgenden GPUs, die sie zuverlässig unterstützen:  
+ Da GPU-Hardwarezähler von keiner derzeit von Intel, AMD oder nVidia angebotenen Computer-GPU zuverlässig unterstützt werden, sammelt die Frame-Analyse von diesen keine Zähler. Allerdings die Frame-Analyse hardwarezähler aus dem folgenden GPU zu sammeln, die zuverlässig unterstützt:  
   
--   Qualcomm-SOCs (alle, die Windows Phone unterstützen)  
-  
--   nVidia T40 (Tegra4).  
+-   nVidia T40 (Tegra4)
   
  Keine andere Plattform, die die Frame-Analyse unterstützt, sammelt GPU-Hardwarezähler.  
   
 > [!NOTE]
 >  Da GPU Hardware-Ressourcen Hardwareindikatoren sind, dauert es mehrere Durchgänge um den vollständigen Satz der Hardware-Leistungsindikatoren für jede Rendering-Variante zu erfassen. Daher ist die Reihenfolge, in der die GPU-Leistungsindikatoren erfasst wurden, nicht angegeben.  
   
-### <a name="windows-phone"></a>Windows Phone  
- Zeitstempel, okklusionsabfragen und GPU-hardwarezähler werden nur auf Windows Phone-Handsets unterstützt, die ursprünglich mit Windows Phone 8.1 oder Windows Phone 10 ausgeliefert. Diese Frame-Analyse benötigt diese, um die Grafikprotokolldatei wiedergeben zu können. Windows Phone-Handsets, die ursprünglich mit Windows Phone 8 geliefert wurden unterstützt nicht Frame-Analyse, dies gilt auch für Handsets, die auf Windows Phone 8.1 oder Windows Phone 10 aktualisiert wurden.  
-  
 ## <a name="unsupported-scenarios"></a>Nicht unterstützte Szenarien  
  Bestimmte Verwendungsarten der Frame-Analyse werden nicht unterstützt oder sind einfach nicht sinnvoll.  
-  
-### <a name="warp"></a>WARP  
- Die Frame-Analyse ist zur Profilierung und Verbesserung der Renderingleistung auf echter Hardware gedacht. Die Ausführung der Frame-Analyse auf WARP-Geräten ist möglich – der Windows Phone-Emulator läuft auf WARP –, aber im Normalfall keine lohnende Unternehmung, da die Ausführung von WARP auf einer High-End-CPU langsamer ist als mit den leistungsschwächsten modernen GPUs und da die WARP-Leistung je nach der bestimmten CPU, auf der sie läuft, erheblich variieren kann.  
   
 ### <a name="playback-of-high-feature-level-captures-on-down-level-devices"></a>Wiedergabe von Erfassungen mit hoher Funktionsebene auf Geräten mit niedriger Funktionsebene  
  Wenn Sie in der Grafikanalyse eine Grafikprotokolldatei wiedergeben, die eine höhere Funktionsebene verwendet, als der Wiedergabecomputer unterstützt, fällt die Wiedergabe automatisch auf WARP zurück. In der Frame-Analyse fällt sie nicht explizit auf WARP zurück und erzeugt einen Fehler. WARP ist sinnvoll zur Untersuchung der Korrektheit Ihrer Direct3D-App, aber nicht zur Untersuchung von deren Leistung.  
   
 > [!NOTE]
->  Obwohl es wichtig ist, die Probleme mit verschiedenen Funktionsebenen zu bedenken, können Sie Grafikprotokolldateien in verschiedenen Hardwarekonfigurationen und auf verschiedenen Geräten erfassen und abspielen. Sie können z. B. Grafikinformationen auf einem Windows Phone erfassen und auf einem Desktop-Computer abspielen. Auch das umgekehrte Verfahren wird unterstützt. In beiden Fällen kann die Grafikprotokolldatei abgespielt werden, solange sie keine APIs enthält oder Funktionsebenen verwendet, die nicht auf dem Wiedergabecomputer unterstützt werden.  
+>  Obwohl es wichtig ist, die Probleme mit verschiedenen Funktionsebenen zu bedenken, können Sie Grafikprotokolldateien in verschiedenen Hardwarekonfigurationen und auf verschiedenen Geräten erfassen und abspielen. Das grafikprotokoll kann abgespielt, solange Sie die Protokolldatei keine APIs enthält oder Funktionsebenen verwendet, die auf dem wiedergabecomputer unterstützt werden.  
   
 ### <a name="direct3d-10-and-lower"></a>Direct3D 10 und niedriger  
  Wenn Ihre App die API Direct3D 10 aufruft, kann die Frame-Analyse sie nicht erkennen oder profilieren, auch wenn sie von anderen Grafikanalysetools erkannt und verwendet wird.
   
 > [!NOTE]
 >  Dies gilt nur für Aufrufe der Direct3D-API, die Sie verwenden, nicht für Funktionsebenen.
+
+### <a name="warp"></a>WARP  
+ Die Frame-Analyse ist zur Profilierung und Verbesserung der Renderingleistung auf echter Hardware gedacht. Die Frame-Analyse auf WARP-Geräten ausgeführt wird nicht verhindert, aber es ist nicht in der Regel eine lohnende Unternehmung, da die Ausführung von WARP auf einer High-End-CPU langsamer als die leistungsschwächsten modernen GPUs ist und WARP-Leistung erheblich variieren kann, abhängig von der bestimmten CPU dieser ausgeführt wird.  
   
 ##  <a name="Variants"></a>Varianten  
  Jede Änderung, die die Frame-Analyse an der Art durchführt ein Frame während der Wiedergabe gerendert wird, wird als bezeichnet eine *Variante*. Die Varianten, die die Frame-Analyse untersucht, entsprechen allgemeinen, relativ einfachen Änderungen, die Sie vornehmen können, um die Renderingleistung oder die visuelle Qualität Ihrer App zu verbessern – z. B. Reduzierung der Größe von Texturen, Verwendung von Texturkomprimierungen oder Aktivierung verschiedener Arten von Anti-Aliasing. Varianten überschreiben den normalen Rendering-Kontext und die Parameter Ihrer App. Hier finden Sie eine Zusammenfassung:  
@@ -185,9 +181,9 @@ Verwenden Sie die Grafikframe-Analyse in der Visual Studio-Grafikanalyse zum Ana
 |Variante|Beschreibung|  
 |-------------|-----------------|  
 |**1 x 1 Viewport-Größe**|Reduziert die Viewport-Dimensionen auf allen Renderzielen auf 1x1 Pixel.<br /><br /> Weitere Informationen finden Sie unter [1 x 1-Viewportgrößenvariante](1x1-viewport-size-variant.md)|  
-|**0 X MSAA**|Deaktiviert das Multi-Sample Anti-Aliasing (MSAA) auf allen Renderzielen.<br /><br /> Weitere Informationen finden Sie unter [0 X / 2 X / 4 X MSAA Varianten](0x-2x-4x-msaa-variants.md)|  
-|**2 X MSAA**|Aktiviert das 2x Multi-Sample Anti-Aliasing (MSAA) auf allen Renderzielen.<br /><br /> Weitere Informationen finden Sie unter [0 X / 2 X / 4 X MSAA Varianten](0x-2x-4x-msaa-variants.md)|  
-|**4 X MSAA**|Aktiviert das 4x Multi-Sample Anti-Aliasing (MSAA) auf allen Renderzielen.<br /><br /> Weitere Informationen finden Sie unter [0 X / 2 X / 4 X MSAA Varianten](0x-2x-4x-msaa-variants.md)|  
+|**0x MSAA**|Deaktiviert das Multi-Sample Anti-Aliasing (MSAA) auf allen Renderzielen.<br /><br /> Weitere Informationen finden Sie unter [0 X / 2 X / 4 X MSAA Varianten](0x-2x-4x-msaa-variants.md)|  
+|**2x MSAA**|Aktiviert das 2x Multi-Sample Anti-Aliasing (MSAA) auf allen Renderzielen.<br /><br /> Weitere Informationen finden Sie unter [0 X / 2 X / 4 X MSAA Varianten](0x-2x-4x-msaa-variants.md)|  
+|**4x MSAA**|Aktiviert das 4x Multi-Sample Anti-Aliasing (MSAA) auf allen Renderzielen.<br /><br /> Weitere Informationen finden Sie unter [0 X / 2 X / 4 X MSAA Varianten](0x-2x-4x-msaa-variants.md)|  
 |**Punkttexturfilterung**|Setzt den Filtermodus für alle passenden Textur-Samples auf `DXD11_FILTER_MIN_MAG_MIP_POINT` (Punkttexturfilterung).<br /><br /> Weitere Informationen finden Sie unter [Punkt, bilineare, trilineare und anisotrope Filtervarianten Textur](point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  
 |**Bilineare Texturfilterung**|Setzt den Filtermodus für alle passenden Textur-Samples auf `DXD11_FILTER_MIN_MAG_LINEAR_MIP_POINT` (bilineare Texturfilterung).<br /><br /> Weitere Informationen finden Sie unter [Punkt, bilineare, trilineare und anisotrope Filtervarianten Textur](point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  
 |**Trilineare Texturfilterung**|Setzt den Filtermodus für alle passenden Textur-Samplings auf `DXD11_FILTER_MIN_MAG_MIP_LINEAR` (trilineare Texturfilterung).<br /><br /> Weitere Informationen finden Sie unter [Punkt, bilineare, trilineare und anisotrope Filtervarianten Textur](point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  

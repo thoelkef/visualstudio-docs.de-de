@@ -4,20 +4,20 @@ ms.custom:
 ms.date: 05/26/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 59131181-1caa-4b7f-be4b-e84709634edf
-caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 36045b311a73af96df51553f9025a1de84c93b78
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: ca07027874c304f009bdee7fddf9d6465e047202
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="getting-started-with-visual-studio-graphics-diagnostics"></a>Erste Schritte mit Visual Studio-Grafikdiagnose
 In diesem Abschnitt bereiten Sie sich auf die erstmalige Verwendung der Grafikdiagnose vor. Anschließend erfassen Sie Frames aus einer Direct3D-App und untersuchen diese in der Grafikanalyse.  
@@ -31,13 +31,6 @@ In diesem Abschnitt bereiten Sie sich auf die erstmalige Verwendung der Grafikdi
  Die optionale Windows-Funktion *Grafiktools* bietet die Aufzeichnung und Wiedergabe der Infrastruktur, die für Grafikdiagnose in Windows 10 erforderlich ist.  
   
  Informationen zum Installieren von Grafiktools finden Sie unter [installieren Sie Grafiktools für Windows 10](#InstallGraphicsTools).  
-  
-### <a name="windows-81-prerequisites"></a>Erforderliche Komponenten für Windows 8.1  
- Das Windows Software Development Kit (SDK) für Windows 8.1 bietet die Infrastruktur für die Erfassung und Wiedergabe, die für die Grafikdiagnose unter Windows 8.1 erforderlich ist, und unterstützt die Entwicklung für Windows 8.1 und Windows 8.  
-  
- [Herunterladen von Windows Software Development Kit (SDK) für Windows 8.1](https://msdn.microsoft.com/en-us/windows/desktop/bg162891.aspx)  
-  
- Um einen Remotewiedergabecomputer zu verwenden, der Windows 10 in einem Entwicklungscomputer mit Windows 8.1 ausführt, müssen Sie auf dem Entwicklungscomputer das Windows 10-SDK und auf dem Wiedergabecomputer die optionale Grafiktools-Funktion installieren.  
   
 ##  <a name="InstallGraphicsTools"></a>Installieren von Grafiktools für Windows 10  
  In Windows 10 wird die Infrastruktur für die Grafikdiagnose durch eine optionale Funktion von Windows mit der Bezeichnung bereitgestellt *Grafiktools*. Diese Funktion ist erforderlich, um Grafikinformationen in Windows 10 zu erfassen und wiederzugeben, unabhängig davon, ob die erfasste App eine frühere Windows-Version als Ziel hat oder welche Direct3D-Version verwendet wird. Sie können die Grafiktools-Funktion auch vorab installieren. Andernfalls wird sie bei Bedarf installiert, wenn Sie das erste Mal eine Grafikdiagnosesitzung in Visual Studio starten.  
@@ -66,9 +59,7 @@ In diesem Abschnitt bereiten Sie sich auf die erstmalige Verwendung der Grafikdi
  Wenn Sie bereits Ihre eigene Direct3D-app zum Entdecken der Grafikdiagnose mit hervorragend haben! Andernfalls verwenden Sie eine der folgenden:
 
 - Die **DirectX 11-App (universelle Windows)** oder **DirectX 12-App (universelle Windows)** -Projektvorlagen für Windows 10.
-- Die **DirectX-App (Windows 8.1)** -Projektvorlage für Windows 8.1.
 - [Direct3D 12 UAP-Beispiel](https://code.msdn.microsoft.com/Direct3D-12-UAP-Sample-ecb1779f) für Windows 10.  
-- Die [DirectX marble Maze-Beispielspiel](https://code.msdn.microsoft.com/windowsapps/DirectX-Marble-Maze-Game-e4806345) für Windows 8.1.  
   
  Stellen Sie sicher, dass Sie die App erstellen können, bevor Sie fortfahren.  
   

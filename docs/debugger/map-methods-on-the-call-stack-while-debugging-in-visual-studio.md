@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 05/18/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: get-started-article
-f1_keywords: vs.progression.debugwithcodemaps
+f1_keywords:
+- vs.progression.debugwithcodemaps
 dev_langs:
 - CSharp
 - VB
@@ -28,16 +30,17 @@ helpviewer_keywords:
 - debugging [Visual Studio], tracing the call stack visually
 - debugging [Visual Studio], visualizing the call stack
 ms.assetid: d6a72e5e-f88d-46fc-94a3-1789d34805ef
-caps.latest.revision: "39"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: douge
-ms.workload: multiple
-ms.openlocfilehash: 9d1efeee412d98c62b7dc6aa2c92d2bbab4fab6d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 99f388fea1d6512760f99615256f71002099e9be
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="create-a-visual-map-of-the-call-stack-while-debugging-in-visual-studio-enterprise"></a>Erstellen Sie eine visuelle Karte der Aufrufliste beim Debuggen in Visual Studio Enterprise
 Erstellen Sie eine Code Map, um die Aufrufliste visuell zu verfolgen, während Sie debuggen. Sie können Notizen auf der Zuordnung vermerken, um das Verhalten des Codes zu verfolgen, sodass Sie sich auf das Suchen von Fehlern konzentrieren können.
@@ -46,7 +49,7 @@ Erstellen Sie eine Code Map, um die Aufrufliste visuell zu verfolgen, während S
   
 -   [Visual Studio Enterprise](https://www.visualstudio.com/downloads/download-visual-studio-vs)  
   
--   Code, den Sie debuggen können, wie Visual C# .NET, Visual Basic .NET., C++, JavaScript oder X++  
+-   Code, den Sie, z. B. Visual c#, Visual Basic, C++, JavaScript oder X++ Debuggen können  
 
 So sieht ein kurzen Blick auf eine Code Map aus:
   
@@ -95,7 +98,7 @@ So sieht ein kurzen Blick auf eine Code Map aus:
  ![Codezuordnung mit nächster Aufrufliste aktualisieren](../debugger/media/debuggermap_addclearcallstack.png "DebuggerMap_AddClearCallStack")  
   
 ##  <a name="AddRelatedCode"></a>Hinzufügen von zugehörigem Code zur Zuordnung  
- Jetzt haben Sie einer Karte - was geschieht als Nächstes? Wenn Sie mit Visual c# .NET- oder Visual Basic arbeiten, fügen Sie Elemente, wie Felder, Eigenschaften und andere Methoden, um nachzuverfolgen, was im Code geschieht.  
+ Jetzt haben Sie einer Karte - was geschieht als Nächstes? Wenn Sie mit Visual c# oder Visual Basic arbeiten, fügen Sie Elemente, wie Felder, Eigenschaften und andere Methoden, um nachzuverfolgen, was im Code geschieht.  
   
  Doppelklicken Sie auf eine Methode, um ihre Codedefinition anzuzeigen, oder verwenden Sie das Kontextmenü für die Methode. (Tastatur: Wählen Sie die Methode für die Zuordnung, und drücken Sie **F12**)  
   

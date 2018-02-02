@@ -14,12 +14,13 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: ec8c0e9010cefd1e5c6b639edf02d785422800ff
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.openlocfilehash: 06eec90026054bf8081c1cd1727d6cbfc3f30bbe
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="dependency-diagrams-guidelines"></a>Abhängigkeit Diagrammen: Richtlinien
 Beschreiben Sie die Architektur Ihrer app auf hoher Ebene durch Erstellen *Abhängigkeit Diagramme* in Visual Studio. Stellen Sie sicher, dass Ihr Code anhand dieses Aufbaus konsistent bleibt, durch Überprüfen von Code mit einem Diagramm Abhängigkeit. Sie können auch eine Ebenenvalidierung im Buildprozess einschließen. Finden Sie unter [Channel 9-Video: Entwerfen und Überprüfen der Architektur von Abhängigkeit Diagrammen](http://go.microsoft.com/fwlink/?LinkID=252073).  
@@ -62,7 +63,7 @@ Beschreiben Sie die Architektur Ihrer app auf hoher Ebene durch Erstellen *Abhä
  Finden Sie unter [Abhängigkeit Diagramme erstellen, aus dem Code](../modeling/create-layer-diagrams-from-your-code.md).  
   
 ##  <a name="CreateLayers"></a>Definieren Sie Ebenen, um Funktionsbereiche oder Komponenten darzustellen  
- Ebenen stellen logische Gruppen von dar *Elemente*, z. B. Projekte, Codedateien, Namespaces, Klassen und Methoden. Sie können Ebenen aus Artefakten aus Visual C# .NET- und Visual Basic .NET-Projekten erstellen, oder Sie können Spezifikationen oder Pläne an eine Ebene anfügen, indem Sie Dokumente verknüpfen, z. B. Word-Dateien oder PowerPoint-Präsentationen. Jede Ebene wird im Diagramm als Rechteck angezeigt und gibt Aufschluss über die Anzahl der mit ihr verknüpften Artefakte. Eine Ebene kann geschachtelte Ebenen enthalten, um spezielle Aufgaben zu beschreiben.  
+ Ebenen stellen logische Gruppen von dar *Elemente*, z. B. Projekte, Codedateien, Namespaces, Klassen und Methoden. Sie können Ebenen aus Artefakten aus Visual c# und Visual Basic-Projekte erstellen, oder Sie können Spezifikationen oder Pläne an eine Ebene anfügen, indem Sie Dokumente verknüpfen, z. B. Word-Dateien oder PowerPoint-Präsentationen. Jede Ebene wird im Diagramm als Rechteck angezeigt und gibt Aufschluss über die Anzahl der mit ihr verknüpften Artefakte. Eine Ebene kann geschachtelte Ebenen enthalten, um spezielle Aufgaben zu beschreiben.  
   
  Benennen Sie als allgemeine Richtlinie Ebenen nach ihrer Funktion, z. B. "Präsentation" oder "Dienste". Fügen Sie Artefakte in der gleichen Ebene ein, wenn zwischen ihnen eine enge Abhängigkeit besteht. Wenn die Artefakte getrennt voneinander aktualisiert oder in separaten Anwendungen verwendet werden können, sollten sie auf unterschiedlichen Ebenen eingefügt werden. Weitere Informationen zu Ebenenmuster finden Sie auf der Patterns & Practices-Website unter [http://go.microsoft.com/fwlink/?LinkId=145794](http://go.microsoft.com/fwlink/?LinkId=145794).  
   

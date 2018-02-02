@@ -10,34 +10,19 @@ ms.topic: article
 helpviewer_keywords:
 - C/C++ code analysis
 - code analysis,C/C++
-ms.assetid: 6110b8ba-0af6-4acd-b1ba-bb0551f90e44
-caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 5fe47a5e0bb2eb8c2002c8a516ef10aa81aa0e58
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- cplusplus
+ms.openlocfilehash: ed2f4acfe185039950d627092839b14234cadccd
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
-# <a name="quick-start-code-analysis-for-cc"></a>Schnellstart: Codeanalyse für C/C++
-Sie können die Qualität Ihrer Anwendung verbessern, indem Codeanalysen für C oder C++-Code regelmäßig ausgeführt werden. Damit können Sie allgemeine Probleme, Verstöße gegen guten Programmierstil oder Fehler, die nur schwer durch Tests ermittelt werden, finden. Codeanalysewarnungen unterscheiden sich von Compilerfehler und -Warnungen, da die Codeanalyse nach bestimmten Codeschemata sucht, die gültig sind, jedoch weiterhin für Sie oder andere Personen, die den Code verwenden, Probleme verursachen können.  
-  
-## <a name="in-this-topic"></a>In diesem Thema  
-  
--   [Konfigurieren von Regelsätzen für ein Projekt](../code-quality/quick-start-code-analysis-for-c-cpp.md#BKMK_ConfigureRuleSets)  
-  
--   [Ausführen der Codeanalyse](../code-quality/quick-start-code-analysis-for-c-cpp.md#BKMK_Run)  
-  
--   [Analysieren und Auflösen von codeanalysewarnungen](../code-quality/quick-start-code-analysis-for-c-cpp.md#BKMK_Analyze)  
-  
--   [Unterdrücken der Codeanalysewarnungen](../code-quality/quick-start-code-analysis-for-c-cpp.md#BKMK_Suppress)  
-  
--   [Erstellen von Arbeitselementen für codeanalysewarnungen](../code-quality/quick-start-code-analysis-for-c-cpp.md#BKMK_Creating_work_items_for_code_analysis_warnings)  
-  
--   [Durchsuchen und Filtern von Codeanalyseergebnissen](../code-quality/quick-start-code-analysis-for-c-cpp.md#BKMK_Search)  
+# <a name="quickstart-code-analysis-for-cc"></a>Schnellstart: Codeanalyse für C/C++-
+Sie können die Qualität Ihrer Anwendung verbessern, indem Codeanalysen für C oder C++-Code regelmäßig ausgeführt werden. Damit können Sie allgemeine Probleme, Verstöße gegen guten Programmierstil oder Fehler, die nur schwer durch Tests ermittelt werden, finden. Codeanalysewarnungen unterscheiden sich von Compilerfehlern und -warnungen, da die Codeanalyse nach bestimmten Codeschemata sucht, die gültig sind, jedoch Probleme für Sie oder andere Personen bereiten können, die den Code verwenden.
   
 ##  <a name="BKMK_ConfigureRuleSets"></a>Konfigurieren von Regelsätzen für ein Projekt  
   
@@ -85,22 +70,20 @@ Sie können die Qualität Ihrer Anwendung verbessern, indem Codeanalysen für C 
   
 -   Auf der **erstellen** Menü wählen **Ausführen der Codeanalyse für** *Projektnamen*.  
   
- Das Projekt oder die Projektmappe wird kompiliert und Codeanalyse wird ausgeführt. Die Ergebnisse werden im Codeanalysefenster angezeigt.  
+ Das Projekt oder die Projektmappe wird kompiliert und Codeanalyse wird ausgeführt. Ergebnisse werden in der Fehlerliste angezeigt.  
   
-##  <a name="BKMK_Analyze"></a>Analysieren und Auflösen von codeanalysewarnungen  
- Um eine bestimmte Warnung zu analysieren, wählen Sie den Titel der Warnung im Fenster "Codeanalyse" aus. Die Warnung wird erweitert, um weitere Informationen zu diesem Problem anzuzeigen. Wenn möglich, zeigt die Codeanalyse die Zeilennummern und Analyselogik, die zu der Warnung geführt hat. Ausführliche Informationen zur Warnung, einschließlich der möglichen Lösungen für das Problem, wählen Sie die Warnungs-Id, um das Hilfethema für diese Meldung in der MSND Bibliothek anzuzeigen.  
-  
- Wenn Sie eine Warnung erweitern, wird die Codezeile, die die Warnung verursacht hat im Code-Editor von Visual Studio hervorgehoben.  
-  
- Nachdem Sie das Problem verstanden haben, können Sie es in Ihrem Code beheben. Wiederholen Sie die Codeanalyse, um sicherzustellen, dass die Warnung nicht mehr im Codeanalysefenster angezeigt wird und dass die Lösung des Problems keine neuen Warnungen ausgelöst hat.  
-  
-> [!TIP]
->  Sie können die Codeanalyse im Codeanalysefenster erneut ausführen. Wählen Sie die **analysieren** Schaltfläche und wählen Sie den Bereich der Analyse. Sie können die Analyse für die gesamte Projektmappe oder für ein ausgewähltes Projekt erneut ausführen.  
-  
+##  <a name="BKMK_Analyze"></a>Analysieren und Auflösen von codeanalysewarnungen
+
+Um eine bestimmte Warnung zu analysieren, wählen Sie den Titel der Warnung in der Fehlerliste. Die Warnung wird erweitert, um weitere Informationen zu diesem Problem anzuzeigen. Wenn möglich, zeigt die Codeanalyse die Zeilennummern und Analyselogik, die zu der Warnung geführt hat. Ausführliche Informationen zur Warnung, einschließlich der möglichen Lösungen für das Problem wählen Sie die Warnungs-ID, um die entsprechenden Onlinehilfethema anzuzeigen.
+
+Wenn Sie eine Warnung auswählen, wird die Codezeile, die die Warnung verursacht hat, in Visual Studio Code-Editor hervorgehoben.
+
+Nachdem Sie das Problem verstanden haben, können Sie es in Ihrem Code beheben. Führen Sie Codeanalyse, um sicherzustellen, dass die Warnung nicht mehr in der Fehlerliste angezeigt wird, und dass nicht der Fall der Korrektur ist neuen Warnungen ausgelöst.
+
 ##  <a name="BKMK_Suppress"></a> Unterdrücken der Codeanalysewarnungen  
- Mitunter möchten Sie möglicherweise darauf verzichten, eine Codeanalysewarnung zu korrigieren. So kann es beispielsweise vorkommen, dass das Auflösen der Warnung im Verhältnis zur Wahrscheinlichkeit, dass das Problem in einer realen Implementierung des Codes auftritt, eine zu große Bearbeitung des Codes erfordert. Oder Sie gehen davon aus, dass die für die Warnung verwendete Analyse für den jeweiligen Kontext ungeeignet ist. Sie können Warnungen unterdrücken, sodass diese nicht mehr im Codeanalysefenster angezeigt werden.  
+ Mitunter möchten Sie möglicherweise darauf verzichten, eine Codeanalysewarnung zu korrigieren. So kann es beispielsweise vorkommen, dass das Auflösen der Warnung im Verhältnis zur Wahrscheinlichkeit, dass das Problem in einer realen Implementierung des Codes auftritt, eine zu große Bearbeitung des Codes erfordert. Oder Sie gehen davon aus, dass die für die Warnung verwendete Analyse für den jeweiligen Kontext ungeeignet ist. Sie können Warnungen unterdrücken, sodass sie nicht mehr in der Fehlerliste angezeigt werden.  
   
- Zum Unterdrücken einer Warnung:  
+ So unterdrücken Sie eine Warnung  
   
 1.  Wenn die ausführliche Information nicht angezeigt wird, wählen Sie den Titel der Warnung, um sie zu erweitern.  
   
@@ -115,19 +98,22 @@ Sie können die Qualität Ihrer Anwendung verbessern, indem Codeanalysen für C 
   
  **So erstellen eine Arbeitsaufgabe für eine oder mehrere Warnungen für C/C++-code**  
   
-1.  Klicken Sie im Codeanalysefenster die Warnungen, um sie zu erweitern und auszuwählen.  
+1.  Erweitern Sie in der Fehlerliste, und wählen Sie die Warnungen  
   
-2.  Wählen Sie auf das Kontextmenü für die Warnungen, **Arbeitsaufgabe erstellen**, und wählen Sie dann den Arbeitsaufgabentyp "".  
+2.  Wählen Sie auf das Kontextmenü für die Warnungen, **Arbeitsaufgabe erstellen**, und wählen Sie dann den Arbeitsaufgabentyp "".
   
 3.  Visual Studio erstellt ein einzelnes Arbeitselement für die ausgewählten Warnungen und zeigt das Arbeitselement in einem Dokumentfenster der IDE.  
   
 4.  Geben Sie zusätzliche Informationen, und wählen Sie dann **Arbeitsaufgabe speichern**.  
   
-##  <a name="BKMK_Search"></a> Suchen und Filtern der Codeanalyseergebnisse  
- Sie können lange Listen mit Warnmeldungen durchsuchen und Warnungen in Projektmappen mit mehreren Projekten filtern.  
+##  <a name="BKMK_Search"></a> Suchen und Filtern der Codeanalyseergebnisse
+
+Sie können lange Listen mit Warnmeldungen durchsuchen und Warnungen in Projektmappen mit mehreren Projekten filtern.  
   
-1.  **Filter-Warnungen nach Titel oder Warnungs-Id**: Geben Sie das Schlüsselwort in der **Filter** Textfeld.  
+- **Filter-Warnungen nach Titel oder Warnungs-Id**: das Schlüsselwort in das Suchfeld eingeben.
   
-2.  **Filter-Warnungen vom Projekt**: Wählen Sie In einer Projektmappe mit mehreren Projekten ein oder mehrere Projekte in der Liste oben rechts auf der Codeanalysefenster angezeigt. Wählen Sie den Namen der Projektmappe, um alle Warnungen anzuzeigen.  
-  
-3.  **Filter-Warnungen nach Schweregrad**: standardmäßig Codeanalysen einen Schweregrad der zugewiesen werden **Warnung**. Sie können den Schweregrad der eine oder mehrere Nachrichten als zuweisen **Fehler** in einer benutzerdefinierten Regel festgelegt. Wählen Sie entweder **Warnung** oder **Fehler** nur die Meldungen angezeigt, die den jeweiligen Schweregrad zugewiesen sind. Wählen Sie **alle** um alle Meldungen anzuzeigen.
+- **Filter-Warnungen nach Schweregrad**: standardmäßig Codeanalysen einen Schweregrad der zugewiesen werden **Warnung**. Sie können den Schweregrad der eine oder mehrere Nachrichten als zuweisen **Fehler** in einer benutzerdefinierten Regel festgelegt. Auf der **Schweregrad** Spalte die **Fehlerliste**, wählen Sie den Dropdown Pfeil, und klicken Sie dann das Symbol "Filter". Wählen Sie **Warnung** oder **Fehler** nur die Meldungen angezeigt, die den jeweiligen Schweregrad zugewiesen sind. Wählen Sie **Alles markieren** um alle Meldungen anzuzeigen.
+
+## <a name="see-also"></a>Siehe auch
+
+[Für C/C++-Codeanalyse](../code-quality/code-analysis-for-c-cpp-overview.md)

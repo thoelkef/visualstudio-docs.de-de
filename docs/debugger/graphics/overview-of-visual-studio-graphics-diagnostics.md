@@ -4,23 +4,23 @@ ms.custom:
 ms.date: 02/09/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: ddd429d9-ac70-4ac4-9e69-299c6ea2df09
-caps.latest.revision: "29"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 0fdc6c58f791c06d5f9287400d00bbfce2564e3b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 8fb52530cf5a068081ce3af3325675d2167c57a9
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="overview-of-visual-studio-graphics-diagnostics"></a>Übersicht über Visual Studio-Grafikdiagnose
-Visual Studio *Grafikdiagnose* ist ein Satz von Tools zum Aufzeichnen und anschließenden Analysieren von Rendering- und Leistungsproblemen in Direct3D-apps. Die Grafikdiagnose kann für Apps verwendet werden, die lokal auf Ihrem Windows-PC, in einem Windows-Geräteemulator oder auf einem Remotecomputer oder-gerät ausgeführt werden.  
+Visual Studio *Grafikdiagnose* ist ein Satz von Tools zum Aufzeichnen und anschließenden Analysieren von Rendering- und Leistungsproblemen in Direct3D-apps. Die Grafikdiagnose kann für apps verwendet werden, die lokal auf Ihrem Windows-PC oder auf einem remote-PC oder Gerät ausgeführt werden.  
   
 ## <a name="using-graphics-diagnostics-to-debug-rendering-problems"></a>Verwenden der Grafikdiagnose zum Debuggen von Renderingproblemen  
  Das Debuggen von Renderingproblemen in einer grafisch aufwendigen App ist kein einfaches Starten des Debuggers und die schrittweise Untersuchung des Codes. In jeden Frame werden Hunderttausende eindeutige Pixel erzeugt, wobei jedes einen komplexen Satz aus Zustand, Daten, Parameter und Code enthält – und von diesen Pixeln liefern möglicherweise nur wenige Hinweise auf das Problem, das Sie zu diagnostizieren versuchen. Darüber hinaus wird der Code, der die einzelnen Pixel generiert, auf spezialisierter Hardware ausgeführt, die Hunderte Pixel parallel verarbeitet. Herkömmliche Debugtools und -techniken, für die bereits Code mit wenigen Threads ein Problem darstellt, sind bei so großen Datenmengen wirkungslos.  
@@ -33,10 +33,7 @@ Visual Studio *Grafikdiagnose* ist ein Satz von Tools zum Aufzeichnen und anschl
 ### <a name="windows-10-and-direct3d-12"></a>Windows 10 und Direct3D 12  
  Windows 10 eingeführt *Direct3D 12*, die unterscheidet sich deutlich von Direct3D 10 und Direct3D 11. Diese Unterschiede bringen DirectX wieder in Einklang mit moderner Grafikhardware und ermöglichen die Nutzung des gesamten Potenzials der Software. Sie bringen jedoch auch umfangreiche API-Änderungen mit sich und übertragen mehr Verantwortung auf den Programmierer, wenn es um die Verwaltung der Lebensdauer von Ressourcen sowie die Behandlung von Konflikten geht. Trotz der Unterschiede Grafikdiagnose mit Direct3D 12 Funktionsparität Grafikdiagnose für Direct3D 11.2.
   
- Windows 10 bietet außerdem weiterhin Unterstützung für ältere Versionen von Direct3D sowie für die Spiele und Anwendungen, die davon abhängig sind. Die Grafikdiagnose in Visual Studio weiterhin Direct3D 10 und Direct3D 11 unter Windows 10 sowie unter Windows 8.1 unterstützt.  
-  
-### <a name="windows-81-and-direct3d-112"></a>Windows 8.1 und Direct3D 11.2  
- In [!INCLUDE[win81](../includes/win81_md.md)] führt DirectX 11.2 neue Funktionen ein, u. a. die Unterstützung von Grafikinformationen während der Laufzeit. [!INCLUDE[win81](../includes/win81_md.md)]verwendet die neue laufzeitbasierte Erfassung – genannt *stabile Erfassung*— exklusiv für alle Versionen von DirectX, [!INCLUDE[win81](../includes/win81_md.md)] unterstützt. Die stabile Erfassung unterstützt auch neue Funktionen von Direct3D 11.2.  
+ Windows 10 bietet außerdem weiterhin Unterstützung für ältere Versionen von Direct3D sowie für die Spiele und Anwendungen, die davon abhängig sind. Die Grafikdiagnose in Visual Studio weiterhin Direct3D 10 und Direct3D 11 unter Windows 10 unterstützt.
   
 ### <a name="limited-direct2d-support"></a>Begrenzte Direct2D-Unterstützung  
  Da Direct2D eine Benutzermodus-API, die auf Grundlage von Direct3D erstellt wurde handelt, können Sie die Grafikdiagnose, um Renderingprobleme in apps Debuggen, die Direct2D verwenden. Es werden jedoch nur die zugrunde liegenden Direct3D-Ereignisse und keine Direct2D-Ereignisse auf höherer Ebene erfasst, sodass Direct2D-Ereignisse nicht in der Grafikereignisliste angezeigt werden. Außerdem ist die Beziehung zwischen Direct2D-Ereignissen und den resultierenden Direct3D-Ereignissen nicht immer nachvollziehbar, daher ist die Verwendung der Grafikdiagnose zum Debuggen von Renderingproblemen in Apps, die Direct2D verwenden, nicht ganz einfach. Sie können die Grafikdiagnose aber verwenden, um Informationen zu Problemen abzurufen, die in Direct2D-Apps beim Rendern auf unterster Ebene auftreten.  
@@ -126,4 +123,4 @@ Visual Studio *Grafikdiagnose* ist ein Satz von Tools zum Aufzeichnen und anschl
   
 ## <a name="see-also"></a>Siehe auch  
  [Befehlszeilen-Erfassungstool](command-line-capture-tool.md)   
- [HLSL-Debugger](hlsl-shader-debugger.md)
+ [HLSL Debugger](hlsl-shader-debugger.md)

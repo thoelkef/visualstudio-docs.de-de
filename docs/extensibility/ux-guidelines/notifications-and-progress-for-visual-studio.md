@@ -4,20 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: f0ef65e9-0f1f-45f4-9f25-6e2398691168
-caps.latest.revision: "6"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 0721d0080ec135a8e969cc420dfbb51e81ac4454
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- vssdk
+ms.openlocfilehash: 00ab0622820777f556eff667e6de5f769196e6b0
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="notifications-and-progress-for-visual-studio"></a>Benachrichtigungen und Fortschritt für Visual Studio
 ##  <a name="BKMK_NotificationSystems"></a>Benachrichtigungssystemen  
@@ -238,8 +240,6 @@ ms.lasthandoff: 12/22/2017
   
  ![Infoleiste in einem Fenster](../../extensibility/ux-guidelines/media/0903-06_infobarinwindow.png "0903 06_InfoBarInWindow")  
   
- **Infoleiste in codeanalysefenster**  
-  
 ##### <a name="inline"></a>Inline  
  Inline-Status-Angabe kann durch den Status-Ladeprogramm-Typen dargestellt werden. In der Regel die Statusanzeige mit messaging gekoppelt ist, aber dies ist nicht erforderlich.  
   
@@ -292,7 +292,7 @@ ms.lasthandoff: 12/22/2017
 ### <a name="overview"></a>Übersicht  
  Infoleisten weisen Sie dem Benutzer einen Indikator nahe dem Zeitpunkt der Aufmerksamkeit, und mit dem freigegebenen Infoleiste-Steuerelement wird sichergestellt, dass die Konsistenz in visuelle Darstellung und Interaktion.  
   
- ![Infoleiste](../../extensibility/ux-guidelines/media/0904-01_infobar.png "0904 01_Infobar")  
+ ![Infobar](../../extensibility/ux-guidelines/media/0904-01_infobar.png "0904-01_Infobar")  
   
  **Infoleisten in Visual Studio**  
   
@@ -522,6 +522,6 @@ public interface IVsInfoBarUIEvents
 #### <a name="watermarks"></a>Wasserzeichen  
  Manchmal ist eine gesamte Steuerelement oder Fenster im Status "Fehler" ein. Verwenden Sie in diesem Fall ein Wasserzeichen der Fehler an.  
   
- ![Wasserzeichen](../../extensibility/ux-guidelines/media/0905-07_watermark.png "0905 07_Watermark")  
+ ![Watermark](../../extensibility/ux-guidelines/media/0905-07_watermark.png "0905-07_Watermark")  
   
  **Wasserzeichen feldvalidierung**

@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-code-analysis
+ms.technology:
+- vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -13,16 +14,17 @@ helpviewer_keywords:
 - code, analyzing C/C++
 - code analysis tool, walkthroughs
 ms.assetid: eaee55b8-85fe-47c7-a489-9be0c46ae8af
-caps.latest.revision: "35"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: c95d03201fe9c84e01e83e7fd55bef83755337e7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- cplusplus
+ms.openlocfilehash: f9b0f8e36cddca227062550775c9f6098aeb1c6f
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="walkthrough-analyzing-cc-code-for-defects"></a>Exemplarische Vorgehensweise: Analysieren von C/C++-Code auf Fehler
 In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie C/C++-Code für potenzielle Codefehler zu analysieren, indem Sie das Codeanalysetool für C/C++-Code.  
@@ -85,9 +87,9 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie C/C++-Code fü
   
 3.  Beheben Sie diese Warnung wird unter Verwendung des Makros SUCCEEDED. Der Code sollte dem folgenden Code ähneln:  
   
-    ```  
-    if (SUCCEEDED (ReadUserAccount()) )  
-    ```  
+   ```cpp
+   if (SUCCEEDED (ReadUserAccount()) )  
+   ```  
   
 4.  In der **Fehlerliste**, doppelklicken Sie auf die folgende Warnung:  
   
@@ -95,17 +97,17 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie C/C++-Code fü
   
 5.  Diese Warnung zu korrigieren, Testen auf Gleichheit. Der Code sollte ähnlich dem folgenden Code aussehen:  
   
-    ```  
-    if ((len == ACCOUNT_DOMAIN_LEN) || (g_userAccount[len] != '\\'))  
-    ```  
+   ```cpp
+   if ((len == ACCOUNT_DOMAIN_LEN) || (g_userAccount[len] != '\\'))  
+   ```  
   
 ### <a name="to-treat-warning-as-an-error"></a>Warnung als Fehler behandelt.  
   
 1.  Fügen Sie in der Datei Bug.cpp Folgendes `#pragma` Anweisung am Anfang der Datei, die die Warnung C6001 als Fehler zu behandeln:  
   
-    ```  
-    #pragma warning (error: 6001)  
-    ```  
+   ```cpp
+   #pragma warning (error: 6001)  
+   ```  
   
 2.  Erstellen Sie das Projekt CodeDefects neu.  
   
@@ -141,17 +143,14 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie C/C++-Code fü
   
 8.  Um diese Warnung zu beheben, verwenden Sie eine 'if'-Anweisung so testen Sie den Rückgabewert aus. Der Code sollte dem folgenden Code ähneln:  
   
-     `if (NULL != newNode)`  
-  
-     `{`  
-  
-     `newNode->data = value;`  
-  
-     `newNode->next = 0;`  
-  
-     `node->next = newNode;`  
-  
-     `}`  
+   ```cpp
+   if (NULL != newNode)  
+   {  
+   newNode->data = value;  
+   newNode->next = 0;  
+   node->next = newNode;  
+   }
+   ```
   
 9. Das Annotations-Projekt neu.  
   
@@ -161,15 +160,13 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie C/C++-Code fü
   
 1.  Kommentieren Sie formale Parameter und Rückgabewert der Funktion `AddTail` Pre- und Post-Bedingungen mit, wie im folgenden Beispiel gezeigt:  
   
-     `[returnvalue:SA_Post (Null=SA_Maybe)] LinkedList* AddTail`  
-  
-     `(`  
-  
-     `[SA_Pre(Null=SA_Maybe)] LinkedList* node,`  
-  
-     `int value`  
-  
-     `)`  
+   ```cpp
+   [returnvalue:SA_Post (Null=SA_Maybe)] LinkedList* AddTail
+   (
+   [SA_Pre(Null=SA_Maybe)] LinkedList* node,
+   int value
+   )
+   ```
   
 2.  Erstellen Sie Annotations-Projekt neu.  
   
@@ -181,19 +178,21 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie C/C++-Code fü
   
 4.  Um diese Warnung zu beheben, verwenden Sie eine 'if'-Anweisung so testen Sie den Rückgabewert aus. Der Code sollte dem folgenden Code ähneln:  
   
-    ```  
-    . . .  
-    LinkedList *newNode = NULL;   
-    if (NULL == node)  
-    {  
-         return NULL;  
+   ```cpp
+   . . .  
+   LinkedList *newNode = NULL;   
+   if (NULL == node)  
+   {  
+        return NULL;  
         . . .  
-    }  
-    ```  
+   }  
+   ```  
   
 5.  Erstellen Sie Annotations-Projekt neu.  
   
      Das Projekt erstellt, ohne alle Warnungen oder Fehler.  
   
-## <a name="see-also"></a>Siehe auch  
- [Exemplarische Vorgehensweise: Analysieren von verwaltetem Code auf Codefehler](../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)
+## <a name="see-also"></a>Siehe auch
+
+[Exemplarische Vorgehensweise: Analysieren von verwaltetem Code auf Codefehler](../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)  
+[Für C/C++-Codeanalyse](../code-quality/code-analysis-for-c-cpp-overview.md)

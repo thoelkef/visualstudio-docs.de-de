@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-code-analysis
+ms.technology:
+- vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -21,18 +22,20 @@ helpviewer_keywords:
 - '#pragma directives, code analysis'
 - C, code analysis
 ms.assetid: 81f0c9e8-f471-4de5-aac4-99db336a8809
-caps.latest.revision: "25"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 28a5e13c2c56c7ecdb65efdfc1bd0b3c6eb47bfc
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 2261921e4266f1b58ed31650ac1ff1bb7c028942
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/01/2018
 ---
-# <a name="code-analysis-for-cc-overview"></a>Übersicht über die Codeanalyse für C/C++
+# <a name="code-analysis-for-cc-overview"></a>Codeanalyse für C/C++-Übersicht
+
 Das Codeanalysetool für C/C++ liefert Entwicklern Informationen zu möglichen Fehlern im C/C++-Quellcode. Zu den Codierungsfehlern, die das Tool am häufigsten findet, zählen Pufferüberläufe, nicht initialisierter Speicher, Dereferenzierungen von NULL-Zeigern sowie Speicher- und Ressourcenverluste.  
   
 ## <a name="ide-integrated-development-environment-integration"></a>Integration in die integrierte Entwicklungsumgebung (Integrated Development Environment – IDE)  
@@ -48,9 +51,14 @@ Das Codeanalysetool für C/C++ liefert Entwicklern Informationen zu möglichen F
  Möglicherweise möchten erfordern, dass Source Code Einchecken stets bestimmte Richtlinien beachtet werden. Insbesondere, möchten Sie sicherstellen, dass der Analyse als Schritt des letzten lokalen Builds ausgeführt wurde. Weitere Informationen zum Aktivieren der Eincheckrichtlinie für die Analyse finden Sie unter [erstellen und Verwenden von Code Analysis-Eincheckrichtlinien](../code-quality/creating-and-using-code-analysis-check-in-policies.md)  
   
 ## <a name="team-build-integration"></a>Team Build-Integration  
- Sie können die integrierten Funktionen des Buildsystems verwenden, um Codeanalysetool als einem Schritt ausgeführt der [!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)] Buildprozess. Weitere Informationen finden Sie unter [Build und release](/vsts/build-release/index).  
+ Sie können die integrierten Funktionen des Buildsystems verwenden, um Codeanalysetool als einem Schritt ausgeführt der [!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)] Buildprozess. Weitere Informationen finden Sie unter [Build and release](/vsts/build-release/index) (Build und Release).  
   
 ## <a name="command-line-support"></a>Befehlszeilen-Unterstützung  
  Zusätzlich zu der vollständigen Integration in der Entwicklungsumgebung können Entwickler auch das Analysetool über die Befehlszeile verwenden, wie im folgenden Beispiel gezeigt:  
   
  `C:\>cl /analyze Sample.cpp`
+
+## <a name="see-also"></a>Siehe auch
+
+[Analysieren der Treiberqualität mit Codeanalysetools](/windows-hardware/drivers/develop/analyzing-driver-quality-by-using-code-analysis-tools)  
+[Codeanalyse für Treiberwarnungen](/windows-hardware/drivers/devtest/prefast-for-drivers-warnings)

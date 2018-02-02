@@ -4,19 +4,21 @@ ms.custom:
 ms.date: 08/04/2017
 ms.reviewer: Jamie.Young
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: d20a30c0-0dcc-4e2c-a809-31c8ea28c7df
-caps.latest.revision: "10"
+caps.latest.revision: 
 ms.author: v-brickg
 manager: ghogen
-ms.workload: v-brickg
-ms.openlocfilehash: 69fad7f5bab020aea442670687e5fc781eee2955
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- v-brickg
+ms.openlocfilehash: eb6ff923bd74b4c6350e8252d59c86cabff11428
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="visual-language-dictionary-for-visual-studio"></a>Visual Sprachwörterbuch für Visual Studio
 Visual Studio verwendet eine gemeinsame visual Sprache zum Veranschaulichen der Konzepte, die die Bausteine von seiner Iconography und andere Bilder sind. Beim Entwerfen der neuen Symbole, verwenden Sie dieses Wörterbuch aufweist und die Konzepte zu identifizieren, die Sie in Ihr eigenes Image übermitteln möchten.  
@@ -318,7 +320,7 @@ Visual Studio verwendet eine gemeinsame visual Sprache zum Veranschaulichen der 
 | **Einstellungen**<br />Dienste, verarbeiten | ![Symbol "Einstellungen"](../../extensibility/ux-guidelines/media/vld_c_settings.png "VLD_C_Settings") | ![Symbol "Einstellungen" Browser Aufrufen](../../extensibility/ux-guidelines/media/vld_c_settings_callbrowsersettings.png "VLD_C_Settings_CallBrowserSettings")<br />Rufen Sie die Browsereinstellungen<br />![Symbol "Einstellungen" Test](../../extensibility/ux-guidelines/media/vld_c_settings_testsettings.png "VLD_C_Settings_TestSettings")<br />Testeinstellungen<br />![Fehler bei prozessvorbereitung](../../extensibility/ux-guidelines/media/vld_c_settings_prepareprocessfailed.png "VLD_C_Settings_PrepareProcessFailed")<br />Vorbereiten Sie Fehler beim ||
 | **Freigeben** | ![Symbol "freigeben"](../../extensibility/ux-guidelines/media/vld_c_share.png "VLD_C_Share") |||
 | **Kontextmenü** | ![Symbol "Verknüpfung"](../../extensibility/ux-guidelines/media/vld_c_shortcut.png "VLD_C_Shortcut") |||
-| **Codeausschnittauswahl** | ![Symbol "Ausschnitt"](../../extensibility/ux-guidelines/media/vld_c_snippet.png "VLD_C_Snippet") | ![Symbol "Ausschnitt überprüft"](../../extensibility/ux-guidelines/media/vld_c_snippet_snippetchecked.png "VLD_C_Snippet_SnippetChecked")<br />Ausschnitt aktiviert<br />![Symbol für Tag- oder ereignisausschnitt](../../extensibility/ux-guidelines/media/vld_c_snippet_tagoreventsnippet.png "VLD_C_Snippet_TagOrEventSnippet")<br />Codeausschnitt für Tag- oder ||
+| **Codeausschnitt** | ![Symbol "Ausschnitt"](../../extensibility/ux-guidelines/media/vld_c_snippet.png "VLD_C_Snippet") | ![Symbol "Ausschnitt überprüft"](../../extensibility/ux-guidelines/media/vld_c_snippet_snippetchecked.png "VLD_C_Snippet_SnippetChecked")<br />Ausschnitt aktiviert<br />![Symbol für Tag- oder ereignisausschnitt](../../extensibility/ux-guidelines/media/vld_c_snippet_tagoreventsnippet.png "VLD_C_Snippet_TagOrEventSnippet")<br />Codeausschnitt für Tag- oder ||
 | **Datenquellen-Steuerelements** | ![Symbol für Steuerelement "Quelle"](../../extensibility/ux-guidelines/media/vld_c_sourcecontrol.png "VLD_C_SourceControl") | ![Change Control quellensymbol](../../extensibility/ux-guidelines/media/vld_c_sourcecontrol_changesourcecontrol.png "VLD_C_SourceControl_ChangeSourceControl")<br />Quellcodeverwaltung ändern ||
 | **Start**<br />Run | ![Symbol "Start"](../../extensibility/ux-guidelines/media/vld_c_start.png "VLD_C_Start") | ![Parallelitätsprofilerstellung Symbol](../../extensibility/ux-guidelines/media/vld_c_start_runconcurrencyprofiling.png "VLD_C_Start_RunConcurrencyProfiling")<br />Führen Sie parallelitätsprofilerstellung<br />![Symbol "Server gestartet"](../../extensibility/ux-guidelines/media/vld_c_start_serverstarted.png "VLD_C_Start_ServerStarted")<br />Server wird gestartet<br />![Grafik-Diagnose-Symbol "Start"](../../extensibility/ux-guidelines/media/vld_c_start_startgraphicdiagnostics.png "VLD_C_Start_StartGraphicDiagnostics")<br />Grafik-Diagnose starten ||
 | **Schritte**<br />Phase Phase | ![Symbol "Schritte"](../../extensibility/ux-guidelines/media/vld_c_steps.png "VLD_C_Steps") | ![Symbol für freigegebene Testschritte "erstellen"](../../extensibility/ux-guidelines/media/vld_c_steps_createsharedsteps.png "VLD_C_Steps_CreateSharedSteps")<br />Freigegebene Schritte erstellen<br />![Symbol für freigegebene Schritte einfügen](../../extensibility/ux-guidelines/media/vld_c_steps_insertsharedsteps.png "VLD_C_Steps_InsertSharedSteps")<br />Freigegebene Schritte einfügen<br />![Symbol für alle Schritte wiedergeben](../../extensibility/ux-guidelines/media/vld_c_steps_playallsteps.png "VLD_C_Steps_PlayAllSteps")<br />Alle Schritte wiedergeben ||
@@ -448,7 +450,7 @@ Visual Studio verwendet eine gemeinsame visual Sprache zum Veranschaulichen der 
 | **Der Aktionsstatus: angehalten** | ![Der Aktionsstatus: angehalten Symbol](../../extensibility/ux-guidelines/media/vld_s_actionstatuspaused.png "VLD_S_ActionStatusPaused") | ![Server angehalten Symbol](../../extensibility/ux-guidelines/media/vld_s_actionstatuspaused_serverpaused.png "VLD_S_ActionStatusPaused_ServerPaused")<br />Server wurde angehalten. |
 | **Der Aktionsstatus: Wiedergabe ausgeführt wird** | ![Der Aktionsstatus: Wiedergabe, wird das Symbol ausgeführt](../../extensibility/ux-guidelines/media/vld_s_actionstatusplayingrunning.png "VLD_S_ActionStatusPlayingRunning") | ![Symbol "Server gestartet"](../../extensibility/ux-guidelines/media/vld_s_actionstatusplayingrunning_serverstarted.png "VLD_S_ActionStatusPlayingRunning_ServerStarted")<br />Server wird gestartet<br />![Symbol "nie ausführen"](../../extensibility/ux-guidelines/media/vld_s_actionstatusplayingrunning_neverrun.png "VLD_S_ActionStatusPlayingRunning_NeverRun")<br />Nie ausgeführt |
 | **Der Aktionsstatus: angehalten** | ![Der Aktionsstatus: beendet Symbol](../../extensibility/ux-guidelines/media/vld_s_actionstatusstopped.png "VLD_S_ActionStatusStopped") | ![Symbol "Server angehalten"](../../extensibility/ux-guidelines/media/vld_s_actionstatusstopped_serverstopped.png "VLD_S_ActionStatusStopped_ServerStopped")<br />Server wurde angehalten |
-| **Warnung** | ![Symbol "Warnung"](../../extensibility/ux-guidelines/media/vld_s_alert.png "VLD_S_Alert") | ![Verknüpfte Tabelle mit Fehler Cue Registerkartensymbol](../../extensibility/ux-guidelines/media/vld_s_alert_linkedtablewitherrortabcue.png "VLD_S_Alert_LinkedTableWithErrorTabCue")<br />Verknüpfte Tabelle mit Fehler Registerkarte cue<br />![Symbol für codeanalysefenster Code](../../extensibility/ux-guidelines/media/vld_s_alert_codeanalysiswindow.png "VLD_S_Alert_CodeAnalysisWindow")<br />Fenster "Code Analysis" |
+| **Warnung** | ![Symbol "Warnung"](../../extensibility/ux-guidelines/media/vld_s_alert.png "VLD_S_Alert") | ![Verknüpfte Tabelle mit Fehler Cue Registerkartensymbol](../../extensibility/ux-guidelines/media/vld_s_alert_linkedtablewitherrortabcue.png "VLD_S_Alert_LinkedTableWithErrorTabCue")<br />Verknüpfte Tabelle mit Fehler Registerkarte cue |
 | **Haltepunkt: erweitert deaktiviert** | ![Haltepunkt: erweitert Symbol "deaktiviert"](../../extensibility/ux-guidelines/media/vld_s_breakpointadvanceddisabled.png "VLD_S_BreakpointAdvancedDisabled") ||
 | **Haltepunkt: erweitert aktiviert**  |![Haltepunkt: erweitert Symbol "aktiviert"](../../extensibility/ux-guidelines/media/vld_s_breakpointadvancedenabled.png "VLD_S_BreakpointAdvancedEnabled") ||
 | **Haltepunkt: gebunden** | ![Haltepunkt: Symbol "gebunden"](../../extensibility/ux-guidelines/media/vld_s_breakpointbound.png "VLD_S_BreakpointBound") ||

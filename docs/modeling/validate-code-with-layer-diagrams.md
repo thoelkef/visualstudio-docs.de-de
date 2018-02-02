@@ -21,12 +21,13 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: c3f457e46c1f9f0d7b3ed2f862a411245caf72e7
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.workload:
+- multiple
+ms.openlocfilehash: 7f00144687d2e9bc728cbdd1ef57342d1b19881d
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Überprüfen von Code mit der Abhängigkeit-Diagramme
 
@@ -54,7 +55,7 @@ Um sicherzustellen dass der Code mit dem Entwurf nicht widerspricht., überprüf
   
 -   Visual Studio auf dem Team Foundation Build-Server, um Code mit Team Foundation Build automatisch zu überprüfen  
   
--   Eine Lösung, die ein Modellierungsprojekt mit einem Diagramm Abhängigkeit enthält. Dieses Diagramm Abhängigkeit muss mit Artefakten in Visual c# .NET- oder Visual Basic-Projekten verknüpft werden, die Sie überprüfen möchten. Finden Sie unter [Abhängigkeit Diagramme erstellen, aus dem Code](../modeling/create-layer-diagrams-from-your-code.md).  
+-   Eine Lösung, die ein Modellierungsprojekt mit einem Diagramm Abhängigkeit enthält. Dieses Diagramm Abhängigkeit muss mit Artefakten in c# oder Visual Basic-Projekten verknüpft werden, die Sie überprüfen möchten. Finden Sie unter [Abhängigkeit Diagramme erstellen, aus dem Code](../modeling/create-layer-diagrams-from-your-code.md).  
   
  Welche Versionen von Visual Studio dieses Feature unterstützen, erfahren Sie unter [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
@@ -120,7 +121,7 @@ In dieser Version von Visual Studio Abhängigkeit Überprüfungen in Echtzeit, u
 2.  Um die Quelle der einzelnen Fehler anzuzeigen, doppelklicken Sie auf den Fehler in der **Fehlerliste** Fenster.  
   
     > [!NOTE]
-    >  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zeigt möglicherweise anstelle der Quelle des Fehlers eine Code Map an. Dies tritt auf, wenn der Code hat eine Abhängigkeit zu einer Assembly, die durch das Diagramm Abhängigkeit nicht angegeben wird, oder der Code fehlt eine Abhängigkeit, die durch das Diagramm Abhängigkeit angegeben wird. Überprüfen Sie die Code Map oder den Code, um festzustellen, ob die Abhängigkeit vorhanden sein sollte. Weitere Informationen zu Code Maps finden Sie unter [Zuordnen von lösungsübergreifenden Abhängigkeiten](../modeling/map-dependencies-across-your-solutions.md).  
+    >  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] eine Code Map möglicherweise anstelle der Quelle des Fehlers angezeigt werden. Dies tritt auf, wenn der Code hat eine Abhängigkeit zu einer Assembly, die durch das Diagramm Abhängigkeit nicht angegeben wird, oder der Code fehlt eine Abhängigkeit, die durch das Diagramm Abhängigkeit angegeben wird. Überprüfen Sie die Code Map oder den Code, um festzustellen, ob die Abhängigkeit vorhanden sein sollte. Weitere Informationen zu Code Maps finden Sie unter [Zuordnen von lösungsübergreifenden Abhängigkeiten](../modeling/map-dependencies-across-your-solutions.md).  
   
 3.  Verwalten von Fehlern finden Sie unter [Validierungsfehler verwalten](#ManageErrors).  
   

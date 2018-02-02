@@ -14,30 +14,33 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 5b05e295830762939e2142b550863219afaa06ce
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.openlocfilehash: 2b6c1d9b4fa92146b64d075ff4268bc32c0e65c1
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="create-dependency-diagrams-from-your-code"></a>Erstellen von Diagrammen Abhängigkeit aus Ihrem code
-Um das Softwaresystem auf hoher Ebene, die logische Architektur zu visualisieren, erstellen Sie eine *Abhängigkeit Diagramm* in Visual Studio. Um sicherzustellen, dass Ihr Code anhand dieses Aufbaus konsistent bleibt, Überprüfen von Code mit einem Diagramm Abhängigkeit. Sie können die Abhängigkeit Diagramme für Visual c# .NET- und Visual Basic-Projekte erstellen. Welche Versionen von Visual Studio dieses Feature unterstützen, finden Sie unter [versionsunterstützung für Architektur- und Modellierungstools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)  
-  
- ![Erstellen Sie ein Diagramm Abhängigkeit](../modeling/media/layerdiagramvisualizecode.png "LayerDiagramVisualizeCode")  
-  
- Eine Abhängigkeit Diagramm können Sie die Visual Studio-Projektmappenelemente in logische Gruppen an, die sog. organisieren *Ebenen*. Sie können die Ebenen zum Beschreiben der Hauptaufgaben, die von diesen Artefakten ausgeführt werden, oder zum Beschreiben der Hauptkomponenten des Systems verwenden. Jede Ebene kann andere Ebenen enthalten, die ausführlichere Aufgaben beschreiben. Sie können auch angeben, die vorgesehenen oder vorhandenen *Abhängigkeiten* zwischen Ebenen. Diese als Pfeile dargestellten Abhängigkeiten geben an, welche Ebenen die Funktionen verwenden können bzw. welche Ebenen die Funktionen derzeit verwenden, die durch andere Ebenen dargestellt werden. Geben Sie die beabsichtigten Abhängigkeiten im Diagramm an, um die Architektursteuerung für den Code beizubehalten, und überprüfen Sie anschließend den Code anhand des Diagramms.  
-  
- [Video: Überprüfen Sie Ihre Architektur Abhängigkeiten in Echtzeit](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4) 
-  
-##  <a name="CreateDiagram"></a>Erstellen Sie ein Diagramm zur Abhängigkeitseigenschaft  
- Bevor Sie eine Abhängigkeit Diagramm erstellen, stellen Sie sicher, dass Ihre Projektmappe ein Modellierungsprojekt enthält. 
-  
+
+Um das Softwaresystem auf hoher Ebene, die logische Architektur zu visualisieren, erstellen Sie eine *Abhängigkeit Diagramm* in Visual Studio. Um sicherzustellen, dass Ihr Code anhand dieses Aufbaus konsistent bleibt, Überprüfen von Code mit einem Diagramm Abhängigkeit. Sie können die Abhängigkeit Diagramme für Visual c# und Visual Basic-Projekte erstellen. Welche Versionen von Visual Studio dieses Feature unterstützen, erfahren Sie unter [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+
+![Erstellen Sie ein Diagramm Abhängigkeit](../modeling/media/layerdiagramvisualizecode.png "LayerDiagramVisualizeCode")
+
+Eine Abhängigkeit Diagramm können Sie die Visual Studio-Projektmappenelemente in logische Gruppen an, die sog. organisieren *Ebenen*. Sie können die Ebenen zum Beschreiben der Hauptaufgaben, die von diesen Artefakten ausgeführt werden, oder zum Beschreiben der Hauptkomponenten des Systems verwenden. Jede Ebene kann andere Ebenen enthalten, die ausführlichere Aufgaben beschreiben. Sie können auch angeben, die vorgesehenen oder vorhandenen *Abhängigkeiten* zwischen Ebenen. Diese als Pfeile dargestellten Abhängigkeiten geben an, welche Ebenen die Funktionen verwenden können bzw. welche Ebenen die Funktionen derzeit verwenden, die durch andere Ebenen dargestellt werden. Geben Sie die beabsichtigten Abhängigkeiten im Diagramm an, um die Architektursteuerung für den Code beizubehalten, und überprüfen Sie anschließend den Code anhand des Diagramms.
+
+[Video: Überprüfen Sie Ihre Architektur Abhängigkeiten in Echtzeit](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4) 
+
+##  <a name="CreateDiagram"></a>Erstellen Sie ein Diagramm zur Abhängigkeitseigenschaft
+
+Bevor Sie eine Abhängigkeit Diagramm erstellen, stellen Sie sicher, dass Ihre Projektmappe ein Modellierungsprojekt enthält.
+
 > [!IMPORTANT]
->  Nicht hinzuzufügen Sie, ziehen Sie oder kopieren Sie ein vorhandene Abhängigkeit Diagramm aus einem Modellierungsprojekt in ein anderes Modellierungsprojekt oder an anderer Stelle in der Projektmappe. Dadurch werden die Verweise des ursprünglichen Diagramms beibehalten, auch wenn Sie das Diagramm ändern. Dies verhindert auch das ordnungsgemäße Funktionieren der Ebenenvalidierung und verursacht möglicherweise andere Probleme, z. B. fehlende Elemente oder andere Fehler beim Versuch, das Diagramm zu öffnen.  
->   
->  Fügen Sie stattdessen ein neues Abhängigkeit Diagramm das Modellierungsprojekt hinzu. Kopieren Sie die Elemente aus dem Quelldiagramm in das neue Diagramm. Speichern Sie das Modellierungsprojekt und das neue Diagramm der Abhängigkeit.  
-  
+> Nicht hinzuzufügen Sie, ziehen Sie oder kopieren Sie ein vorhandene Abhängigkeit Diagramm aus einem Modellierungsprojekt in ein anderes Modellierungsprojekt oder an anderer Stelle in der Projektmappe. Dadurch werden die Verweise des ursprünglichen Diagramms beibehalten, auch wenn Sie das Diagramm ändern. Dies verhindert auch das ordnungsgemäße Funktionieren der Ebenenvalidierung und verursacht möglicherweise andere Probleme, z. B. fehlende Elemente oder andere Fehler beim Versuch, das Diagramm zu öffnen.
+>
+> Fügen Sie stattdessen ein neues Abhängigkeit Diagramm das Modellierungsprojekt hinzu. Kopieren Sie die Elemente aus dem Quelldiagramm in das neue Diagramm. Speichern Sie das Modellierungsprojekt und das neue Diagramm der Abhängigkeit.
+
 #### <a name="to-add-a-new-dependency-diagram-to-a-modeling-project"></a>Ein Modellierungsprojekt ein neues Diagramm der Abhängigkeit hinzu  
   
 1.  Auf der **Architektur** Menü wählen **neue Abhängigkeit Diagramm**.  

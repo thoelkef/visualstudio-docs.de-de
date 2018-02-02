@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-code-analysis
+ms.technology:
+- vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -14,16 +15,17 @@ helpviewer_keywords:
 - OverrideMethodsOnComparableTypes
 - CA1036
 ms.assetid: 2329f844-4cb8-426d-bee2-cd065d1346d0
-caps.latest.revision: "21"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 9c8eedd58df2665b9e00051e40a07a0ac226ec6c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: d5e366144a70e25fc805d63ddcc7664a60df4303
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="ca1036-override-methods-on-comparable-types"></a>CA1036: Methoden bei vergleichbaren Typen überschreiben
 |||  
@@ -53,7 +55,7 @@ ms.lasthandoff: 12/22/2017
  In c#, die Token, die verwendet werden, um diese Operatoren darzustellen sind wie folgt: ==,! =, \<, und >.  
   
 ## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?  
- Sie können ruhig auf eine Warnung dieser Regel zu unterdrücken, wenn der Verstoß durch fehlende Operatoren verursacht wird und Ihre Programmiersprache keine Operatoren überladen, unterstützt wie mit Visual Basic .NET. Es ist auch sicher, eine Warnung für diese Regel zu unterdrücken, wenn auf Gleichheitsoperatoren auslösende abgesehen Op_Equality, wenn Sie feststellen, dass die Implementierung der Operatoren in Ihrem Anwendungskontext keinen Sinn ergibt. Sie sollten jedoch immer op_Equality und den ==-Operator aus, wenn Sie Object.Equals überschreiben.  
+ Sie können ruhig auf eine Warnung dieser Regel zu unterdrücken, wenn der Verstoß durch fehlende Operatoren verursacht wird und Ihre Programmiersprache keine Operatoren überladen, unterstützt wie mit Visual Basic. Es ist auch sicher, eine Warnung für diese Regel zu unterdrücken, wenn auf Gleichheitsoperatoren auslösende abgesehen Op_Equality, wenn Sie feststellen, dass die Implementierung der Operatoren in Ihrem Anwendungskontext keinen Sinn ergibt. Sie sollten jedoch immer op_Equality und den ==-Operator aus, wenn Sie Object.Equals überschreiben.  
   
 ## <a name="example"></a>Beispiel  
  Das folgende Beispiel enthält einen Typ, ordnungsgemäß implementiert <xref:System.IComparable>. Codekommentare identifizieren die Methoden, die verschiedenen Regeln erfüllen, die zusammengehören <xref:System.Object.Equals%2A> und <xref:System.IComparable> Schnittstelle.  

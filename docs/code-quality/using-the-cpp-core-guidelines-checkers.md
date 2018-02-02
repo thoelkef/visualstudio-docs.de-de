@@ -6,17 +6,17 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: a2098fd9-8334-4e95-9b8d-bc3da689d9e3
-caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
+dev_langs:
+- CPP
 ms.technology: vs-ide-code-analysis
-ms.openlocfilehash: 0dba021b25a63a057f882aeb5c49a560992c2c2b
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 97ada4fa2abd8975bd728b48fc24b9e3e9e2af41
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>Verwenden die Spielsteine C++-Core-Richtlinien
 Die C++-Core-Richtlinien sind eine portable Satz von Richtlinien, Regeln und bewährte Methoden zum Schreiben von Code in C++, die von C++-Experten und Designern erstellt. Visual Studio unterstützt derzeit eine Teilmenge dieser Regeln als Teil seiner Codeanalysetools für C++. Die zentrale Richtlinie Prüfer werden standardmäßig in Visual Studio 2017 installiert und sind [als NuGet-Paket für Visual Studio 2015 verfügbar](#vs2015_corecheck).
@@ -191,7 +191,7 @@ Sie können die Richtlinien für C++-Core-Überprüfungen in automatisierten Bui
 ```
 Stellen Sie sicher, dass Sie diese Eigenschaften vor dem Importieren der Datei Microsoft.Cpp.targets hinzufügen. Wählen bestimmte Regelsätze oder Erstellen eines benutzerdefinierten Regelsatzes, oder verwenden die Standard-Regelsatz, der anderen PREfast Überprüfungen enthält.
 
-Sie können C++-Core-Überprüfungsprogramm nur für bestimmte Dateien ausführen, indem Sie die gleiche Weise wie [weiter oben beschriebenen](#coreckeck_per_file), aber mithilfe von MSBuild-Dateien. Die Umgebungsvariablen können festgelegt werden, mithilfe der `BuildMacro` Element:
+Sie können C++-Core-Überprüfungsprogramm nur für bestimmte Dateien ausführen, indem Sie die gleiche Weise wie [weiter oben beschriebenen](#corecheck_per_file), aber mithilfe von MSBuild-Dateien. Die Umgebungsvariablen können festgelegt werden, mithilfe der `BuildMacro` Element:
 
 ```xml
 <ItemGroup>
