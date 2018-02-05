@@ -24,7 +24,7 @@
 ## Node.js
 ### [Veröffentlichung auf einer Azure-Website mithilfe von Web Deploy](https://github.com/Microsoft/nodejstools/wiki/Publish-to-Azure-Website-using-Web-Deploy)
 ## Python
-### [Veröffentlichen in Azure App Service](/visualstudio/python/publishing-to-azure)
+### [Veröffentlichen in Azure App Service](/visualstudio/python/publishing-python-web-applications-to-azure-from-visual-studio)
 # Anleitungen
 ## [ClickOnce-Sicherheit und Bereitstellung](clickonce-security-and-deployment.md)
 ### [Auswählen einer Strategie für die ClickOnce-Bereitstellung](choosing-a-clickonce-deployment-strategy.md)
