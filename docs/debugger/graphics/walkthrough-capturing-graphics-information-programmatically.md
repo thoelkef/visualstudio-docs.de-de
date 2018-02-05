@@ -13,11 +13,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: a5a8aeec2421b92057ba414b5cf23b1770b1f761
-ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
+ms.openlocfilehash: bbce760956dda7c9399d25dd241df26ec0e59644
+ms.sourcegitcommit: b01406355e3b97547b7cbf8ce3960f101b165cec
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/05/2018
 ---
 # <a name="walkthrough-capturing-graphics-information-programmatically"></a>Exemplarische Vorgehensweise: Programmgesteuertes Erfassen von Grafikinformationen
 Sie können die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] -Grafikdiagnose zur programmgesteuerten Erfassung von Grafikinformationen aus einer Direct3D-App verwenden.  
@@ -96,7 +96,7 @@ Sie können die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] -Gr
   
 ##### <a name="to-capture-graphics-information"></a>So erfassen Grafikinformationen  
   
--   Verwenden Sie `BeginCapture`, um mit der Erfassung von Grafikinformationen zu beginnen:  
+- Verwenden Sie `BeginCapture`, um mit der Erfassung von Grafikinformationen zu beginnen:  
   
     ```  
     ...  
@@ -111,6 +111,8 @@ Sie können die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] -Gr
     pGraphicsAnalysis->EndCapture();  
     ...  
     ```  
+
+- Nach dem Aufruf von `EndCapture`, Freigeben von Graphics-Objekts. 
   
 ## <a name="next-steps"></a>Nächste Schritte  
  In dieser exemplarische Vorgehensweise wurde veranschaulicht, wie Grafikinformationen programmatisch erfasst werden. Im nächsten Schritt haben Sie folgende Möglichkeit:  

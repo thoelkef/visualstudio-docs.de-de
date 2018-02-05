@@ -5,25 +5,26 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-javascript
+ms.technology:
+- devlang-javascript
 ms.tgt_pltfrm: 
 ms.topic: language-reference
-f1_keywords: sort
+f1_keywords:
+- sort
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
-helpviewer_keywords: Sort method
-ms.assetid: 9bd8b54a-c838-4806-85c8-62eebe6bc48c
-caps.latest.revision: "15"
+helpviewer_keywords:
+- Sort method
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2d098b47591ca7bbb4e3e8da5e5c14f8c0e9b255
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0462e60e623b99af458beb61eb7ef4215fe8ef41
+ms.sourcegitcommit: b01406355e3b97547b7cbf8ce3960f101b165cec
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 02/05/2018
 ---
 # <a name="sort-method-array-javascript"></a>sort-Methode (Array) (JavaScript)
 Sortiert eine `Array`.  
@@ -48,13 +49,13 @@ arrayobj.sort(sortFunction)
 ## <a name="remarks"></a>Hinweise  
  Die `sort` -Methode sortiert die `Array` -Objekts; Nein neue `Array` -Objekt wird erstellt, während der Ausführung.  
   
- Wenn Sie angeben, dass eine Funktion in der `sortFunction` Argument, es muss zurückgegeben werden die folgenden Werte:  
+ `sortFunction`akzeptiert zwei Argumente und muss einen der folgenden Werte zurückgeben:  
   
--   Ein negativer Wert, wenn das erste übergebene Argument ist kleiner als das zweite Argument ist.  
+-   Ein negativer Wert (kleiner als 0), wenn das erste Argument übergebenen ist kleiner als das zweite Argument.  Das erste Argument ist auf einen niedrigeren Indexwert sortiert.
   
--   NULL, wenn die beiden Argumente sind gleichwertig.  
+-   Null (0), wenn die beiden Argumente gleichwertig sind.  Die zwei Argumente werden in Bezug auf andere Elemente im Array sortiert, aber nicht zueinander sortiert sind.
   
--   Ein positiver Wert, wenn das erste Argument größer als das zweite Argument ist.  
+-   Ein positiver Wert (größer als 0), wenn das erste Argument größer als das zweite Argument ist.  Das zweite Argument wird zu einem niedrigeren Index sortiert.
   
 ## <a name="example"></a>Beispiel  
  Im folgenden Beispiel wird die Verwendung der `sort`-Methode gezeigt.  
