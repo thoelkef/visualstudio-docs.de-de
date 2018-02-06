@@ -1,23 +1,26 @@
 ---
 title: "R Tools für Visual Studio | Microsoft-Dokumentation"
+description: "R Tools für Visual Studio (RTVS) ist eine kostenlose Open-Source-Erweiterung, die viele Sprachfeatures bereitstellt, z.B. IntelliSense, Debuggen und Remotearbeitsbereiche."
 ms.custom: 
 ms.date: 11/13/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-r
+ms.technology:
+- devlang-r
 ms.devlang: r
 ms.tgt_pltfrm: 
 ms.topic: hero-article
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.workload: data-science
-ms.openlocfilehash: c18eadd6cfcdf6fc77b204f78654126ceb1862db
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-science
+ms.openlocfilehash: f0ed20e323714ab28ae66c2522b613e1414a0973
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="working-with-r-in-visual-studio"></a>Arbeiten mit R in Visual Studio
 
@@ -30,26 +33,26 @@ R Tools für Visual Studio (RTVS) ist eine kostenlose [Open Source](https://gith
 
 Gehen Sie folgendermaßen vor, um mit R in Visual Studio zu arbeiten:
 
-- [Installieren Sie die R Tools](installation.md).
+- [Installieren Sie R Tools](installing-r-tools-for-visual-studio.md).
 - Lesen Sie den Leitfaden [Erste Schritte](getting-started-with-r.md) sowie die Themen [Beispiele](getting-started-samples.md) und [Hilfe](getting-started-help.md).
 
-Folgen Sie anschließend den unten stehenden Links, um mehr über R-Funktionen sowie über die allgemeinen Features von Visual Studio selbst zu erfahren.
+Folgen Sie anschließend den unten stehenden Links, um mehr über R-Features sowie über die allgemeinen Features von Visual Studio zu erfahren.
 
-| Funktion | description | Allgemeine Visual Studio-Dokumentation | 
+| Feature | Beschreibung | Allgemeine Visual Studio-Dokumentation | 
 | --- | --- | --- |
-| [Visual Studio-Projektsystem](projects.md) | Organisieren und verwalten Sie verknüpfte Dateien in einer praktischen Struktur, und profitieren Sie von nützlichen Vorlagen für Elemente wie R-Code, R-Dokumentation, R Markdown, SQL-Abfragen und gespeicherte Prozeduren. Nutzen Sie zudem den [Paket-Manager](package-manager.md) und die [SQL Server-Integration](sql-server.md).  | [Projektmappen und Projekte in Visual Studio](../ide/solutions-and-projects-in-visual-studio.md) |
-| [Arbeitsbereich](workspaces.md) | RTVS kann in lokale und Remotearbeitsbereiche eingebunden werden – so können Sie R-Code lokal mit kleineren Datasets entwickeln, den Code dann auf leistungsfähigeren cloudbasierten Computern mit wesentlich größeren Datasets ausführen. | n/v |
-| [Optionen für R Tools](options.md) | Steuern Sie verschiedene Aspekte von RTVS. | [Dialogfeld „Optionen“](../ide/reference/options-dialog-box-visual-studio.md) |
-| [Vielfältige Bearbeitungsfunktionen, IntelliSense und Codeausschnitte](code-editing.md) | Umfasst Syntaxfarben, [IntelliSense](code-intellisense.md) über den gesamten Code und allen Bibliotheken hinweg, Codeformatierung, Signaturhilfe, „Gehe zu Definition“, „Alle Verweise suchen“, [Codeausschnitte](code-snippets.md) und vieles mehr. | [Schreiben von Code im Code- und Text-Editor](../ide/writing-code-in-the-code-and-text-editor.md) |
-| [R Markdown](rmarkdown.md) | Mit R Markdown-Dokumenten können Sie Ihre Datenergebnisse mit integriertem R-Code in Markdowncodeblöcken freigeben. | n/v |
-| [Interaktives Fenster](interactive-repl.md) | Dieses Fenster bietet eine vollständige REPL-Oberfläche für R, mit der Sie Code in einer Quelldatei im interaktiven Fenster ausführen können. | n/v |
-| [Visualisieren von Daten](visualizing-data.md) | Plotting ist ein wesentlicher Bestandteil von R, und RTVS unterstützt mehrere, voneinander unabhängige Plotfenster. Jedes Fenster bietet einen eigenen Verlauf, und Sie können Plots zwischen Fenstern verschieben. Plots können in Bitmap- und PDF-Dateien gespeichert oder als Bitmap- oder Metadatei in die Zwischenablage kopiert werden.  | n/v |
+| [Visual Studio-Projektsystem](r-projects-in-visual-studio.md) | Organisieren und verwalten Sie verknüpfte Dateien in einer praktischen Struktur, und profitieren Sie von nützlichen Vorlagen für Elemente wie R-Code, R-Dokumentation, R Markdown, SQL-Abfragen und gespeicherte Prozeduren. Nutzen Sie zudem den [Paket-Manager](r-package-manager-in-visual-studio.md) und die [SQL Server-Integration](integrating-sql-server-with-r.md).  | [Projektmappen und Projekte in Visual Studio](../ide/solutions-and-projects-in-visual-studio.md) |
+| [Arbeitsbereich](r-workspaces-in-visual-studio.md) | RTVS kann in lokale und Remotearbeitsbereiche eingebunden werden – so können Sie R-Code lokal mit kleineren Datasets entwickeln, den Code dann auf leistungsfähigeren cloudbasierten Computern mit wesentlich größeren Datasets ausführen. | n/v |
+| [Optionen für R Tools](options-for-r-tools-in-visual-studio.md) | Steuern Sie verschiedene Aspekte von RTVS. | [Dialogfeld „Optionen“](../ide/reference/options-dialog-box-visual-studio.md) |
+| [Vielfältige Bearbeitungsfunktionen, IntelliSense und Codeausschnitte](editing-r-code-in-visual-studio.md) | Umfasst Syntaxfarben, [IntelliSense](r-intellisense.md) über den gesamten Code und allen Bibliotheken hinweg, Codeformatierung, Signaturhilfe, „Gehe zu Definition“, „Alle Verweise suchen“, [Codeausschnitte](code-snippets-for-r.md) und vieles mehr. | [Schreiben von Code im Code- und Text-Editor](../ide/writing-code-in-the-code-and-text-editor.md) |
+| [R Markdown](rmarkdown-with-r-in-visual-studio.md) | Mit R Markdown-Dokumenten können Sie Ihre Datenergebnisse mit integriertem R-Code in Markdowncodeblöcken freigeben. | n/v |
+| [Interaktives Fenster](interactive-repl-for-r-in-visual-studio.md) | Dieses Fenster bietet eine vollständige REPL-Oberfläche für R, mit der Sie Code in einer Quelldatei im interaktiven Fenster ausführen können. | n/v |
+| [Visualisieren von Daten](visualizing-data-with-r-in-visual-studio.md) | Plotting ist ein wesentlicher Bestandteil von R, und RTVS unterstützt mehrere, voneinander unabhängige Plotfenster. Jedes Fenster bietet einen eigenen Verlauf, und Sie können Plots zwischen Fenstern verschieben. Plots können in Bitmap- und PDF-Dateien gespeichert oder als Bitmap- oder Metadatei in die Zwischenablage kopiert werden.  | n/v |
 | [Variablen-Explorer](variable-explorer.md) | Untersuchen Sie Variablen auf globaler oder paketspezifischer Ebene, zeigen Sie sortierbare Tabellen an, und exportieren Sie diese in das CSV-Format. | n/v |
-| [Vollständige Debugfunktionen](debugging.md) | Umfasst die Integration in das interaktive Fenster. | [Debuggen in Visual Studio](../debugger/debugging-in-visual-studio.md) |
+| [Vollständige Debugfeatures](debugging-r-in-visual-studio.md) | Umfasst die Integration in das interaktive Fenster. | [Debuggen in Visual Studio](../debugger/debugging-in-visual-studio.md) |
 
 Weitere Informationen finden Sie auch unter [Häufig gestellte Fragen](faq.md).
 
-Das folgende Video (5 Min., 48 Sek.) zeigt eine kurze Übersicht über die Funktionen der R Tools:
+Das folgende Video (5 Min., 48 Sek.) zeigt eine kurze Übersicht über die Funktionen von R Tools:
 
 > [!VIDEO https://www.youtube.com/embed/RcSDEfMgUvU]
 
