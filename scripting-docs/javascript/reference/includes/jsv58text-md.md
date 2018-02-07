@@ -1,1 +1,0 @@
-Internet Explorer 8 (Standardmodus), Internet Explorer 9 (Standardmodus), Internet Explorer 10 (Standardmodus), Internet Explorer 11 (Standardmodus) und win8_appname_long-Apps

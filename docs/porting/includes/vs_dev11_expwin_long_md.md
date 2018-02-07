@@ -1,1 +1,0 @@
-Visual Studio Express 2012 für Windows 8
