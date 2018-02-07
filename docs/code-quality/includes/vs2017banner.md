@@ -1,1 +1,0 @@
-Die neueste Dokumentation zu Visual Studio 2017 RC finden Sie unter [Visual Studio 2017 RC Documentation (Dokumentation zu Visual Studio 2017 RC)](http://docs.microsoft.com/visualstudio).
