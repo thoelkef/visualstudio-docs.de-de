@@ -1,23 +1,21 @@
 ---
 title: Visual Studio-Testtools | Microsoft-Dokumentation
-ms.custom: na
-ms.date: 02/17/2017
-ms.reviewer: na
-ms.suite: na
+ms.date: 01/31/2018
 ms.technology: vs-devops-test
-ms.tgt_pltfrm: na
 ms.topic: article
 helpviewer_keywords:
 - testing tools [Visual Studio]
 - unit tests [Visual Studio]
-ms.author: douge
-manager: douge
-ms.workload: multiple
-ms.openlocfilehash: f3b7bb9139b1c63bca4c9cf9fbd61e21de6ed043
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.author: gewarren
+manager: ghogen
+ms.workload:
+- multiple
+author: gewarren
+ms.openlocfilehash: cc57d6ea3ebba0cff901635d411d047bbafbfa94
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="testing-tools-in-visual-studio"></a>Testtools in Visual Studio
 

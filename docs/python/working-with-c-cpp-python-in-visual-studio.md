@@ -5,22 +5,23 @@ ms.custom:
 ms.date: 01/16/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-python
+ms.technology:
+- devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: get-started-article
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8d0ef17900f515ff69f25c30fc797e4e3c9cc7a6
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: ef58c0eb177238075b0f1cd097f8949272538a75
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="creating-a-c-extension-for-python"></a>Erstellen einer C++-Erweiterung für Python
 
@@ -49,7 +50,7 @@ Weitere Informationen finden Sie unter [Installing Python Support for Visual Stu
 
 1. Erstellen Sie ein neues Python-Projekt in Visual Studio, indem Sie auf **Datei > Neu > Projekt** klicken. Suchen Sie nach "Python", wählen Sie die Vorlage **Python Application** (Python-Anwendung), weisen Sie ihr einen geeigneten Namen und Standort zu, und klicken Sie auf **OK**.
 
-1. Fügen Sie in der `.py`-Datei des Projekts den folgenden Code ein, der die Berechnung eines Hyperbeltangens durchführt (Dieser wird ohne Verwendung der mathematischen Bibliothek zum einfacheren Vergleich implementiert). Geben Sie den Code gerne manuell ein, um einige der [Bearbeitungsfunktionen von Python](code-editing.md) kennenzulernen.
+1. Fügen Sie in der `.py`-Datei des Projekts den folgenden Code ein, der die Berechnung eines Hyperbeltangens durchführt (Dieser wird ohne Verwendung der mathematischen Bibliothek zum einfacheren Vergleich implementiert). Geben Sie den Code gerne manuell ein, um einige der [Bearbeitungsfunktionen von Python](editing-python-code-in-visual-studio.md) kennenzulernen.
 
     ```python
     from itertools import islice
@@ -288,7 +289,7 @@ Visual Studio unterstützt das gemeinsame Debuggen von Python- und C++-Code.
 
     ![Anhalten an einem Haltepunkt im C++-Code](media/cpp-debugging.png)
 
-1. An diesem Punkt können Sie den C++-Code schrittweise durchgehen, Variablen prüfen, etc. Diese Funktionen werden detailliert unter [Gemeinsames Debuggen von Python und C++](debugging-mixed-mode.md) beschrieben.
+1. An diesem Punkt können Sie den C++-Code schrittweise durchgehen, Variablen prüfen, etc. Diese Funktionen werden detailliert unter [Gemeinsames Debuggen von Python und C++](debugging-mixed-mode-c-cpp-python-in-visual-studio.md) beschrieben.
 
 ## <a name="alternative-approaches"></a>Alternative Ansätze
 

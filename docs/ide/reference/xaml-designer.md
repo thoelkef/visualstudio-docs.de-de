@@ -4,23 +4,26 @@ ms.custom:
 ms.date: 03/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: VS.ToolsOptionsPages.XAMLDesigner
-ms.assetid: ad3820b2-0d95-4807-a75c-c3467ed973a3
-caps.latest.revision: "1"
+ms.topic: reference
+f1_keywords:
+- VS.ToolsOptionsPages.XAMLDesigner
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: uwp
-ms.openlocfilehash: 459642fde4d695317a453e223edd54f223569603
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- uwp
+ms.openlocfilehash: bf71bb6f2d52159ab203d14c690a73525af091ae
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="xaml-designer-options-page"></a>Seite „Optionen“ im XAML-Designer
+
 Sie verwenden die Seite „Optionen“ im **XAML-Designer**, um anzugeben, wie Elemente und Attribute in XAML-Dokumenten formatiert werden. Wählen Sie zum Öffnen dieser Seite im Menü **Extras** den Befehl **Optionen** aus. Für den Zugriff auf die Eigenschaftenseite **XAML-Designer** wählen Sie den Knoten **XAML-Designer** aus. Einstellungen für den XAML-Designer werden angewendet, wenn Sie das Dokument öffnen. Wenn Sie die Einstellungen also ändern, müssen Sie Visual Studio schließen und wieder öffnen, damit die Änderungen angezeigt werden.
 
 > [!NOTE]
@@ -100,7 +103,7 @@ Mit diesen Einstellungen wird bestimmt, ob die Effekte gerendert werden, wenn XA
 |**Rendereffekte**|Gibt an, ob Effekte gerendert werden, wenn XAML-Dateien im XAML-Designer mit Blend bearbeitet werden.|  
 |**Zoomschwellenwert**|Gibt den Prozentsatz für den Zoomfaktor an, mit dem Effekte gerendert werden, wenn das Kontrollkästchen **Effekte rendern** aktiviert ist. Wenn Sie über diese Einstellung hinaus vergrößern, können Effekte im XAML-Designer nicht mehr gerendert werden.|  
 
-## <a name="see-also"></a>Siehe auch  
- [XAML in WPF](/dotnet/framework/wpf/advanced/xaml-in-wpf)   
- [Gewusst wie: Ändern von XAML-Ansichtseinstellungen](http://msdn.microsoft.com/en-us/aee87c79-ca01-4f84-8fb7-a9e47048ee47)   
- [Exemplarische Vorgehensweisen zu XAML und Code](http://msdn.microsoft.com/en-us/b3ff41a0-a2a3-4f61-b698-ac88ec8f799c)
+## <a name="see-also"></a>Siehe auch
+
+[XAML in WPF](/dotnet/framework/wpf/advanced/xaml-in-wpf)  
+[Exemplarische Vorgehensweise: Meine erste WPF-Desktopanwendung](../../designers/walkthrough-my-first-wpf-desktop-application2.md)

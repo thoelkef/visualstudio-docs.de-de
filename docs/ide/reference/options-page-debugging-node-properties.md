@@ -4,20 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 564cc8b2-0084-420e-b560-200cc5621a7e
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 9d53460304cee56d39100a82a2e1e975f8129aa6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 690eb875b0b9251dddcb36c4ad7ded17c36b67cb
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="options-page-debugging-node-properties"></a>Optionsseite, Eigenschaften des Knotens 'Debuggen'
 In den folgenden Tabellen werden die Seiten (bzw. Eigenschaftenauflistungen) beschrieben, die der Kategorie **Debugging** `DTE.Properties("Debugging", <Property Page>)` im Dialogfeld **Optionen** zugeordnet sind.  
@@ -39,7 +41,7 @@ In den folgenden Tabellen werden die Seiten (bzw. Eigenschaftenauflistungen) bes
 |ShowAllMembers|Get/Set (boolesch)|Bestimmt für Nichtbenutzerobjekte, ob der Debugger alle Objektmember in den Variablenfenstern anzeigt. Diese Option ist nur wirksam, wenn "Nur mein Code" aktiviert ist.|  
 |WarnIfNoUserCode|Get/Set (boolesch)|Bestimmt, ob der Debugger eine Warnung ausgibt, wenn der Benutzer eine Verbindung mit einem Prozess herzustellen versucht, der keinen Benutzercode enthält. Diese Option ist nur wirksam, wenn "Nur mein Code" aktiviert ist.|  
 |EnablePropertyEvaluation|Get/Set (boolesch)|Bestimmt, ob der Debugger Eigenschaften und implizite Funktionsaufrufe in verwaltetem Code automatisch auswertet.|  
-|CallStringConversion|Get/Set (boolesch)|Bestimmt, ob der Debugger in den Variablenfenstern eine Zeichenfolgenkonvertierungsfunktion für Objekte implizit aufruft. Diese Option gilt nur für C#- und JScript-Code.|  
+|CallStringConversion|Get/Set (boolesch)|Bestimmt, ob der Debugger in den Variablenfenstern eine Zeichenfolgenkonvertierungsfunktion für Objekte implizit aufruft.|  
 |EnableSourceServer|Get/Set (boolesch)|Bestimmt, ob der Debugger auf Code von einem Quellserver zugreifen kann.|  
 |PrintSourceServerDiagnostics|Get/Set (boolesch)|Bestimmt, ob das Ausgabefenster Diagnosemeldungen über den Quellserver anzeigt. Diese Option nur wirksam, wenn der Zugriff auf den Quellserver aktiviert ist.|  
 |HighlightEntireLine|Get/Set (boolesch)|Bestimmt, ob der Debugger eine ganze Zeile für Haltepunkte und die aktuelle Anweisung hervorhebt.|  

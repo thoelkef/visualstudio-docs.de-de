@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 146e3f80de674e6219d1f7c89ea4186b66ee310f
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: 0b0195770bde2906ac34f0f4b8a5faf684130899
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="python-environments"></a>Python-Umgebungen
 
@@ -123,7 +123,7 @@ Bietet grundlegende Informationen und Befehle für die Umgebung:
 | --- | --- |
 | Diese Umgebung zum Standard für neue Projekte machen | Legt die aktive Umgebung fest, die möglicherweise dazu führt, dass Visual Studio kurz nicht mehr reagiert, während die IntelliSense-Datenbank geladen wird. Umgebungen mit vielen Paketen reagieren möglicherweise längere Zeit nicht mehr. |
 | Website des Verteilers besuchen | Öffnen eine von der Python-Verteilung bereitgestellt URL in einem Browser. Python 3.x öffnet beispielsweise python.org. |
-| Interaktives Fenster öffnen | Öffnet das [interaktive Fenster (REPL)](interactive-repl.md) für diese Umgebung in Visual Studio und wendet alle [Startskripts (siehe unten)](#startup-scripts) an. |
+| Interaktives Fenster öffnen | Öffnet das [interaktive Fenster (REPL)](python-interactive-repl-in-visual-studio.md) für diese Umgebung in Visual Studio und wendet alle [Startskripts (siehe unten)](#startup-scripts) an. |
 | Interaktive Skripts | Siehe [Startskripte](#startup-scripts). |
 | Interaktiven IPython-Modus verwenden | Wenn diese Option aktiviert ist, wird das interaktive Fenster standardmäßig mit Python geöffnet. Dadurch sind Inline-Plots und erweiterte IPython-Syntax möglich, wie z.B. `name?` zum Anzeigen der Hilfe und `!command` für Shellbefehle. Diese Option wird empfohlen, wenn Sie eine Verteilung von Anaconda verwenden, da diese zusätzliche Pakete erfordert. Weitere Informationen finden Sie unter [Verwenden von Python im interaktiven Fenster](interactive-repl-ipython.md). |
 | In PowerShell öffnen | Öffnet den Interpreter in einem Befehlsfenster von PowerShell. |
@@ -137,7 +137,7 @@ Startskripts enthalten Code, der vom interaktiven Fenster automatisch geladen un
 
 1. Wenn Sie eine Umgebung installieren, erstellt Visual Studio einen Ordner `Documents\Visual Studio 2017\Python Scripts\<environment>`, in dem &lt;environment&gt' dem Namen der Umgebung entspricht. Sie können mit dem Befehl **Interaktive Skripts untersuchen** ganz leicht zum umgebungsspezifischen Ordner navigieren. Wenn Sie das interaktive Fenster für diese Umgebung starten, lädt es alle hier gefundenen `.py`-Dateien und führt diese in alphabetischer Reihenfolge aus.
 
-1. Das Steuerelement **Skripts** auf der Registerkarte **Extras > Optionen > Python Tools > Interaktives Fenster** (siehe [Optionen für das interaktive Fenster](options.md#interactive-windows-options)) soll einen zusätzlichen Ordner für Startskripts angeben, die in allen Umgebungen geladen und ausgeführt werden. Diese Funktion funktioniert aktuell noch nicht.
+1. Das Steuerelement **Skripts** auf der Registerkarte **Extras > Optionen > Python Tools > Interaktives Fenster** (siehe [Optionen für das interaktive Fenster](python-support-options-and-settings-in-visual-studio.md#interactive-windows-options)) soll einen zusätzlichen Ordner für Startskripts angeben, die in allen Umgebungen geladen und ausgeführt werden. Diese Funktion funktioniert aktuell noch nicht.
 
 ### <a name="configure-tab"></a>Registerkarte „Konfigurieren“
 
@@ -172,7 +172,7 @@ Im letzteren Fall muss Visual Studio `pip install` erhöht ausführen, damit es 
 
 Wenn Sie **Beim Installieren oder Entfernen von Paketen immer Rechte erweitern** auswählen, wird verhindert, dass das Dialogfeld für die entsprechende Umgebung angezeigt wird. Wenn Sie möchten, dass das Dialogfeld wieder angezeigt wird, gehen Sie zu **Extras > Optionen > Python Tools > Allgemein**, und klicken Sie auf die Schaltfläche **Alle dauerhaft ausgeblendeten Dialogfelder zurücksetzen**.
 
-Auf der gleichen Optionsregisterkarte können Sie auf **" pip" immer als Administrator ausführen** klicken, um das Dialogfeld für alle Umgebungen zu unterdrücken. Weitere Informationen finden Sie unter [Optionen > Registerkarte „Allgemein“](options.md#general-options).
+Auf der gleichen Optionsregisterkarte können Sie auf **" pip" immer als Administrator ausführen** klicken, um das Dialogfeld für alle Umgebungen zu unterdrücken. Weitere Informationen finden Sie unter [Optionen > Registerkarte „Allgemein“](python-support-options-and-settings-in-visual-studio.md#general-options).
 
 ### <a name="intellisense-tab"></a>Registerkarte „IntelliSense“
 
@@ -232,7 +232,7 @@ Beachten Sie, dass ein Nachteil virtueller Umgebungen darin besteht, dass sie ha
 
 ## <a name="managing-required-packages-requirementstxt"></a>Verwalten von erforderlichen Paketen („requirements.txt“)
 
-Wenn Sie ein Projekt über ein Buildsystem für andere Benutzer freigeben oder planen, um es [in Microsoft Azure zu veröffentlichen](template-azure-cloud-service.md), müssen Sie die externen Pakete angeben, die das Projekt benötigt. Der empfohlene Ansatz ist die Verwendung einer [requirements.txt-Datei](http://pip.readthedocs.org/en/latest/user_guide.html#requirements-files) (readthedocs.org), die eine Liste der Befehle für pip enthält, mit denen die erforderlichen Versionen der abhängigen Pakete installiert werden.
+Wenn Sie ein Projekt über ein Buildsystem für andere Benutzer freigeben oder planen, um es [in Microsoft Azure zu veröffentlichen](python-azure-cloud-service-project-template.md), müssen Sie die externen Pakete angeben, die das Projekt benötigt. Der empfohlene Ansatz ist die Verwendung einer [requirements.txt-Datei](http://pip.readthedocs.org/en/latest/user_guide.html#requirements-files) (readthedocs.org), die eine Liste der Befehle für pip enthält, mit denen die erforderlichen Versionen der abhängigen Pakete installiert werden.
 
 Eigentlich kann jeder Dateiname zum Nachverfolgen von Anforderungen verwendet werden (mit `-r <full path to file>` beim Installieren eines Pakets), aber Visual Studio bietet spezielle Unterstützung für `requirements.txt`:
 

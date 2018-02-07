@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ef6b3bddfb90c64872de331c988f10595e179eb8
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: 6ce191ce01a89b7fc743562eaf430656f6952271
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="step-6-working-with-git"></a>Schritt 6: Arbeiten mit Git
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 01/22/2018
 
 Visual Studio bietet die direkte Integration mit lokalen Git-Repositorys und solchen, die sich in Diensten wie GitHub und Visual Studio Team Services befinden. Die Integration umfasst das Klonen eines Repositorys, das Übernehmen von Änderungen und das Verwalten von Branches.
 
-In diesem Artikel wird das Erstellen eines lokalen Git-Repositorys für ein vorhandenes Projekt beschrieben. Eine exemplarische Vorgehensweise für das Erstellen eines Projekts über ein Git-Remoterepository finden Sie unter [Quickstart: clone a repository of Python code in Visual Studio (Schnellstart: Klonen eines Repositorys mit Python-Code in Visual Studio)](quickstart-03-project-from-repository.md).
+In diesem Artikel wird das Erstellen eines lokalen Git-Repositorys für ein vorhandenes Projekt beschrieben. Eine exemplarische Vorgehensweise für das Erstellen eines Projekts über ein Git-Remoterepository finden Sie unter [Quickstart: clone a repository of Python code in Visual Studio (Schnellstart: Klonen eines Repositorys mit Python-Code in Visual Studio)](quickstart-03-python-in-visual-studio-project-from-repository.md).
 
 1. Klicken Sie mit der rechten Maustaste auf die Projektmappe, und klicken Sie dann auf **Projektmappe zur Quellcodeverwaltung hinzufügen**, wenn ein Projekt (z.B. das Projekt aus dem [vorherigen Schritt](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)) in Visual Studio geöffnet ist. Visual Studio erstellt ein lokales Git-Repository, das Ihren Projektcode enthält und Git-bezogene Steuerelemente anzeigt, die ebenfalls am unteren Rand des Visual Studio-Fensters angezeigt werden. Die Steuerelemente zeigen ausstehende Commits, Änderungen, den Namen des Repositorys und den Branch an. Zeigen Sie auf die Steuerelemente, um zusätzliche Informationen anzuzeigen.
 
@@ -67,6 +67,6 @@ Glückwunsch zum Abschluss dieses Tutorials zu Python in Visual Studio. In diese
 Erkunden Sie nun unter anderem folgende Konzepte und Leitfäden:
 
 - [Erstellen einer C++-Erweiterung für Python](working-with-c-cpp-python-in-visual-studio.md)
-- [Veröffentlichen in Azure App Service](publishing-to-azure.md)
-- [Profilerstellung](profiling.md)
-- [Komponententests](unit-testing.md)
+- [Veröffentlichen in Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md)
+- [Profilerstellung](profiling-python-code-in-visual-studio.md)
+- [Komponententests](unit-testing-python-in-visual-studio.md)
