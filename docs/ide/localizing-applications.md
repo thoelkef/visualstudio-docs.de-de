@@ -4,26 +4,28 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - Visual Basic code, international applications
 - globalization [Visual Studio], localizing applications
-- Visual C#, international applications
+- C#, international applications
 - applications [Visual Studio], localizing
 - localization [.NET Framework], applications
 ms.assetid: 879c20e0-8301-4f44-b520-97283848c965
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: c389f8dd13514d940941bcefc228236b3418e317
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 92a7e56d05d0f9d71d51aa80fcc5d545b3baf061
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="localizing-applications"></a>Lokalisieren von Anwendungen
 Die *Lokalisierung* ist der Prozess des Anpassens einer Anwendung an die jeweilige Kultur oder einen jeweiligen Ort. Die Lokalisierung besteht hauptsächlich aus der Übersetzung der Benutzeroberfläche.  
@@ -43,7 +45,7 @@ Die *Lokalisierung* ist der Prozess des Anpassens einer Anwendung an die jeweili
   
 ## <a name="related-sections"></a>Verwandte Abschnitte  
  [Einführung in internationale Anwendungen basierend auf .NET Framework](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md)  
- Bespricht die Konzepte der Softwareentwicklung mithilfe von Visual Basic und Visual C#für einen internationalen Markt.  
+ Erläutert die Begriffe der Softwareentwicklung mithilfe von Visual Basic und C# für einen internationalen Markt.  
   
  [Globalisieren von Windows Forms](/dotnet/framework/winforms/advanced/globalizing-windows-forms)  
  Enthält Links zu Seiten, die Informationen zum Erstellen von Windows-Anwendungen enthalten, die mehrere Kulturen unterstützen.  

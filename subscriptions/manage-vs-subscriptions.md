@@ -9,11 +9,11 @@ Description: Learn how to get the most out of your Visual Studio subscriptions.
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 58dfc6e6cce60e28c15d6b7de80265f6ec37f8f5
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: 8059d316912e78bcbcaa9d4f54f86b4e2c2b907f
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="managing-subscriptions"></a>Verwalten von Abonnements
 ## <a name="signing-in-to-the-portal"></a>Anmelden beim Portal
@@ -31,7 +31,7 @@ Wenn Sie über Microsoft Store ein Visual Studio-Abonnement erworben haben, kön
 #### <a name="workschool-accounts"></a>Geschäfts-/Schulkonten
 Wenn Ihr Abonnement über Ihre Arbeit/Schule bereitgestellt wurde, haben Sie eine Willkommens-E-Mail erhalten.  
 1.  Rufen Sie das [Abonnentenportal](https://my.visualstudio.com/) auf
-2.  Geben Sie die E-Mail-Adresse ein, die dem neuen Visual Studio-Abonnement zugewiesen wurde. Diese Adresse wird auch im **Begrüßungsbrief** des Abonnenten angegeben. Überprüfen Sie den Junk-E-Mail-Ordner, wenn Sie die Willkommens-E-Mail nicht empfangen haben.
+2.  Geben Sie die E-Mail-Adresse ein, die dem neuen Visual Studio-Abonnement zugewiesen wurde. Diese Adresse wird auch in der Willkommens-E-Mail des Abonnenten angegeben. Überprüfen Sie den Junk-E-Mail-Ordner, wenn Sie die Willkommens-E-Mail nicht empfangen haben.
 3.  Klicken Sie auf **Fortfahren**
 4.  Sie werden auf die Anmeldeseite Ihres Unternehmens umgeleitet.
 5.  Geben Sie Ihr Kennwort ein.
@@ -44,7 +44,7 @@ Wenn Ihre Organisation über Azure Active Directory verfügt, Sie jedoch kein Az
 1.  Rufen Sie das [Abonnentenportal](https://my.visualstudio.com) auf
 2.  Geben Sie die E-Mail-Adresse ein, die dem neuen Visual Studio-Abonnement zugewiesen wurde. Diese Adresse wird auch im **Begrüßungsbrief** des Abonnenten angegeben.  (Überprüfen Sie, ob die Willkommens-E-Mail in den Junk-E-Mail-Ordner verschoben wurde.)
 3.  Klicken Sie auf **Fortfahren**
-4.  Sie werden auf eine **Entscheidungsseite** umgeleitet.   Wählen Sie **Geschäfts- oder Schulkonto** aus, wenn Ihr Abonnement einem **Geschäfts- oder Schulkonto** zugewiesen wurde, das einem AAD-Mandanten (AAD = Azure Active Directory) zugeordnet ist.  Wählen Sie **Persönlich** aus, wenn das Abonnement einer **geschäftlichen** E-Mail-Adresse zugeordnet ist, aber auch in ein **persönliches** Microsoft-Konto konvertiert wurde.
+4.  Sie werden auf eine **Entscheidungsseite** umgeleitet.   Wählen Sie **Geschäfts-, Schul- oder Unikonto** aus, wenn Ihr Abonnement einem **Geschäfts-, Schul- oder Unikonto** zugewiesen wurde, das einem AAD-Mandanten (Azure Active Directory) zugeordnet ist.  Wählen Sie **Persönlich** aus, wenn das Abonnement einer **geschäftlichen** E-Mail-Adresse zugeordnet ist, aber auch in ein **persönliches** Microsoft-Konto (Microsoft Account, MSA) konvertiert wurde.
 5.  Geben Sie Ihr Kennwort ein
 6.  Klicken Sie auf **Anmelden** 
 

@@ -21,11 +21,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: fb9b5119659600b4bfd902e61eda70a85b645efd
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: b92558a7838646ff7cfde88bffd9f709a997137a
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="create-solutions-and-projects"></a>Erstellen von Projektmappen und Projekten
 
@@ -82,7 +82,7 @@ Auflistungen von Quellcodedateien können Sie dem Projekt bei Bedarf hinzufügen
 1. Wechseln Sie im Assistenten zum Speicherort der Dateien, und geben Sie dann einen Namen für das neue Projekt in das Feld **Name** ein. Wenn Sie diesen Vorgang abschlossen haben, klicken Sie auf die Schaltfläche **Fertig stellen**.
 
 > [!NOTE]
-> Diese Option funktioniert am besten für relativ einfache Sammlungen von Dateien. Derzeit werden nur die Projekttypen Visual C++, Apache Cordova, Visual Basic und Visual C# unterstützt.
+> Diese Option funktioniert am besten für relativ einfache Sammlungen von Dateien. Derzeit werden nur die Projekttypen Visual C++, Apache Cordova, Visual Basic und C# unterstützt.
 
 ## <a name="add-files-to-a-solution"></a>Hinzufügen von Dateien zu einer Projektmappe
 

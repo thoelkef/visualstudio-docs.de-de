@@ -12,20 +12,23 @@ helpviewer_keywords:
 - unit tests, and generics
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 author: gewarren
-ms.openlocfilehash: a0acdea369d19c19c4edf9ca427801ba8df54e0a
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 61c4afb816d5cd0be3628d9c801f578a5210b4a2
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="unit-tests-for-generic-methods"></a>Komponententests für generische Methoden
-Sie können Komponententests für generische Methoden genau wie für andere Methoden generieren, wie in [Vorgehensweise: Erstellen und Ausführen eines Komponententests](http://msdn.microsoft.com/en-us/5e0f43cf-5e51-48e2-9c98-0eb9324bdc48) beschrieben. Die folgenden Abschnitte enthalten Informationen und Beispiele zum Erstellen von Komponententests für generische Methoden.  
-  
-## <a name="type-arguments-and-type-constraints"></a>Typargumente und Typeinschränkungen  
- Wenn [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] einen Komponententest für eine generische Klasse generiert, z. B. `MyList<T>`, werden zwei Methoden generiert: eine generische Hilfsmethode und eine Testmethode. Wenn `MyList<T>` über eine oder mehrere Typeinschränkungen verfügt, muss das Typargument alle Typeinschränkungen erfüllen. Um sicherzustellen, dass der zu testende generische Code bei allen zulässigen Eingaben erwartungsgemäß funktioniert, ruft die Testmethode die generische Hilfsmethode mit allen zu testenden Einschränkungen auf.  
-  
+
+Sie können Komponententests für generische Methoden genau wie für andere Methoden generieren. Die folgenden Abschnitte enthalten Informationen und Beispiele zum Erstellen von Komponententests für generische Methoden.
+
+## <a name="type-arguments-and-type-constraints"></a>Typargumente und Typeinschränkungen
+
+Wenn Visual Studio einen Komponententest für eine generische Klasse generiert, z.B. `MyList<T>`, werden zwei Methoden generiert: eine generisches Hilfsprogramm und eine Testmethode. Wenn `MyList<T>` über eine oder mehrere Typeinschränkungen verfügt, muss das Typargument alle Typeinschränkungen erfüllen. Um sicherzustellen, dass der zu testende generische Code bei allen zulässigen Eingaben erwartungsgemäß funktioniert, ruft die Testmethode die generische Hilfsmethode mit allen zu testenden Einschränkungen auf.
+
 ## <a name="examples"></a>Beispiele  
  In den folgenden Beispielen werden Komponententests für generische Methoden veranschaulicht:  
   
@@ -197,6 +200,6 @@ namespace ClassLibrary2
 }  
 ```  
   
-## <a name="see-also"></a>Siehe auch  
- [Aufbau eines Komponententests](http://msdn.microsoft.com/en-us/a03d1ee7-9999-4e7c-85df-7d9073976144)   
- [Komponententest für Code](../test/unit-test-your-code.md)
+## <a name="see-also"></a>Siehe auch
+
+[Komponententest für Code](../test/unit-test-your-code.md)

@@ -9,15 +9,15 @@ Description: Learn how to access the Administrator Portal
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 3028ea616f6336918e49d49856f62707876772c9
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: 41bee30e54411a3b9bcaed6c72be3909f2d1cfab
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="accessing-the-visual-studio-subscriptions-administrator-portal"></a>Zugreifen auf das Administratorportal für Visual Studio-Abonnements
 ## <a name="for-mpsa"></a>Für MPSA
-Für den Zugriff auf das Portal für die Verwaltung von Visual Studio-Abonnements müssen Sie als Administrator im Portal des Microsoft Business Center (BCP) eingerichtet sein. 
+Für den Zugriff auf das Administratorportal für Visual Studio-Abonnements müssen Sie als Administrator im Portal des Microsoft Business Center (BCP) eingerichtet sein. 
 
 Weitere Informationen zur Einrichtung als Administrator finden Sie im [Leitfaden für den Schnellstart zum Verwalten von Benutzern](https://mvlc.blob.core.windows.net/en-us/MVLC_QS_Manage_Users.pdf). Wenn Sie bereits Administratorrechte besitzen, können Sie direkt zum [Administratorportal](https://manage.visualstudio.com) für Visual Studio-Abonnements wechseln.
 
@@ -30,7 +30,7 @@ Weitere Informationen zum Verwalten von Abonnements im VLSC finden Sie in folgen
 
 Der primäre Kontakt oder die Kontaktperson des Volumenlizenzierungsvertrags Ihrer Organisation muss einige Schritte ausführen, um Sie als Administrator einzurichten. 
 
-Weitere Informationen zum Einrichten eines Administratorkontos finden Sie in diesem [Video](https://channel9.msdn.com/Series/Visual-Studio-Subscriptions-Administration/Onboarding-your-organization-to-the-new-Visual-Studio-Subscription-Administration-Portal-and-setting) und diesen Artikeln zum [Onboarding und Verwalten von Administratoren](https://go.microsoft.com/fwlink/?linkid=839391) im Administratorportal von Visual Studio-Abonnements. 
+Weitere Informationen zum Einrichten eines Administrators finden Sie in diesem [Video](https://channel9.msdn.com/Series/Visual-Studio-Subscriptions-Administration/Onboarding-your-organization-to-the-new-Visual-Studio-Subscription-Administration-Portal-and-setting) und diesen Artikeln zum [Onboarding und Verwalten von Administratoren](https://go.microsoft.com/fwlink/?linkid=839391) im Administratorportal für Visual Studio-Abonnements. 
 
 Wenn Sie bereits Administratorrechte besitzen, können Sie direkt zum [Administratorportal](https://manage.visualstudio.com) für Visual Studio-Abonnements wechseln.
 

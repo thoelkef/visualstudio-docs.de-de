@@ -4,24 +4,26 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - Visual Basic code, international applications
 - globalization [Visual Studio], international applications
-- Visual C#, international applications
+- C#, international applications
 ms.assetid: 8e1b9920-e1ac-4691-928e-cd95bfc6550b
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: dc3da69cd89421ed3f8b04f5c47a190d8453411d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: f3654b68f3ba12160947c465f8511127136b3103
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="globalizing-applications"></a>Globalisieren von Anwendungen
 Unter „Globalisierung“ versteht man das Entwerfen und Entwickeln eines Softwareprodukts, das in mehreren Kulturen funktionsfähig ist. Dieser Abschnitt gilt für Windows Forms- und Web Forms-Seiten.  
@@ -38,7 +40,7 @@ Unter „Globalisierung“ versteht man das Entwerfen und Entwickeln eines Softw
  Enthält Links zu Hilfeseiten über die Globalisierung von Web Forms-Seiten.  
   
  [Einführung in internationale Anwendungen basierend auf .NET Framework](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md)  
- Bespricht die wichtigen Konzepte zur Softwareentwicklung mithilfe von Visual Basic und Visual C#für einen internationalen Markt.  
+ Erläutert die wichtigen Begriffe zur Softwareentwicklung mithilfe von Visual Basic oder C# für einen internationalen Markt.  
   
  [Empfehlungen für die Entwicklung weltweit einsatzfähiger Anwendungen](http://msdn.microsoft.com/Library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c)  
  Enthält Informationen zum Programmieren für ein internationales Publikum, wie z.B. Entwurfsprobleme und Terminologie.

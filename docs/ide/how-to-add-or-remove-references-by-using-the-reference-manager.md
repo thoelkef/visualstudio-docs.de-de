@@ -11,7 +11,7 @@ ms.topic: article
 f1_keywords:
 - VS.ReferenceManager
 helpviewer_keywords:
-- Visual C# projects, references
+- C# projects, references
 - references [Visual Studio], adding
 - assemblies [Visual Studio], references
 - Visual Basic projects, references
@@ -27,11 +27,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 34dd559abcbfa6172c52edd2ed5eae2898f0b358
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: aefd0227717352e449b51950620d0f0900cf2e60
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Vorgehensweise: Hinzufügen und Entfernen von Verweisen mit dem Verweis-Manager
 
@@ -164,7 +164,7 @@ Die Registerkarte "Fenster" führt alle SDK auf, die für Plattformen gelten, au
 
 Sie können eine WinMD-Datei in Visual Studio auf zwei Arten generieren:
 
-- Von der **[!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]-App verwaltete Projekte**: [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]-App-Projekte können WinMD-Binärdateien ausgeben, indem Projekteigenschaften &#124; Ausgabetyp = WinMD-Datei festgelegt wird. Der WinMD-Dateiname muss der Superset-Namespace aller Namespaces sein, die innerhalb des Namespace vorhanden sind. Wenn ein Projekt beispielsweise aus Namespaces A.B und A.B.C besteht, sind die möglichen Namen für das ausgegebene WinMD A.winmd und A.B.winmd. Wenn ein Benutzer einen Wert „Projekteigenschaften &#124; Assemblyname“ oder „Projekteigenschaften &#124; Namespace“ eingibt, der nicht mit dem Satz von Namespaces im Projekt zusammenhängt, wenn kein Superset-Namespace innerhalb eines Projekts vorhanden ist, wird eine Buildwarnung generiert: 'A.winmd' isn't a valid .winmd file name for this assembly ('A.winmd' ist kein gültiger WINMD-Dateiname für diese Assembly). Alle Typen innerhalb einer Windows-Metadatendatei müssen in einem Subnamespace des Dateinamens vorhanden sein. Typen, die nicht in einem Subnamespace des Dateinamens vorhanden sind, können zur Laufzeit nicht lokalisiert werden. In dieser Assembly ist der kleinste allgemeine Namespace "CSWSClassLibrary1". Ein Desktop-Visual Basic- oder Visual C#-Projekt kann nur WinMDs nutzen, die mit [!INCLUDE[win8](../debugger/includes/win8_md.md)]-SDKs generiert werden. Diese werden als Erstanbieter-WinMDs bezeichnet und können keine WinMDs generieren.
+- Von der **[!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]-App verwaltete Projekte**: [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]-App-Projekte können WinMD-Binärdateien ausgeben, indem Projekteigenschaften &#124; Ausgabetyp = WinMD-Datei festgelegt wird. Der WinMD-Dateiname muss der Superset-Namespace aller Namespaces sein, die innerhalb des Namespace vorhanden sind. Wenn ein Projekt beispielsweise aus Namespaces A.B und A.B.C besteht, sind die möglichen Namen für das ausgegebene WinMD A.winmd und A.B.winmd. Wenn ein Benutzer einen Wert „Projekteigenschaften &#124; Assemblyname“ oder „Projekteigenschaften &#124; Namespace“ eingibt, der nicht mit dem Satz von Namespaces im Projekt zusammenhängt, wenn kein Superset-Namespace innerhalb eines Projekts vorhanden ist, wird eine Buildwarnung generiert: 'A.winmd' isn't a valid .winmd file name for this assembly ('A.winmd' ist kein gültiger WINMD-Dateiname für diese Assembly). Alle Typen innerhalb einer Windows-Metadatendatei müssen in einem Subnamespace des Dateinamens vorhanden sein. Typen, die nicht in einem Subnamespace des Dateinamens vorhanden sind, können zur Laufzeit nicht lokalisiert werden. In dieser Assembly ist der kleinste allgemeine Namespace "CSWSClassLibrary1". Ein Visual Basic- oder C#-Desktopprojekt kann nur WinMDs nutzen, die mit [!INCLUDE[win8](../debugger/includes/win8_md.md)]-SDKs generiert werden. Diese werden als Erstanbieter-WinMDs bezeichnet und können keine WinMDs generieren.
 
 - Native **[!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]-App-Projekte**: Eine native WinMD-Datei besteht nur aus Metadaten. Die Implementierung befindet sich in einer separaten DLL-Datei. Native Binärdateien lassen sich erzeugen, indem Sie die Projektvorlage der Komponente für Windows Runtime im Dialogfeld **Neues Projekt** auswählen wird oder durch Starten in einem leeren Projekt und Ändern der Projekteigenschaften, um eine WinMD-Datei zu generieren. Wenn das Projekt aus unzusammenhängenden Namespaces besteht, wird ein Buildfehler mit der Empfehlung angezeigt, eigene Namespaces zu kombinieren oder das MSMerge-Tool auszuführen.
 

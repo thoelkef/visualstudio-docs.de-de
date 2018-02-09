@@ -4,22 +4,25 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: Microsoft.VisualStudio.Publish.ClickOnceProvider.Dialog.PropertyPage
+f1_keywords:
+- Microsoft.VisualStudio.Publish.ClickOnceProvider.Dialog.PropertyPage
 helpviewer_keywords:
 - Project Designer, Publish page
 - Publish page in Project Designer
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: cbe2be8ec1012295f84fbbec4cc0f614fd86d8d8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: a3eee4abda5783707231332022e1f3f24728e7cc
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="publish-page-project-designer"></a>Seite "Veröffentlichen", Projekt-Designer
 Die Seite **Veröffentlichen** des **Projekt-Designers** wird zur Konfiguration von Eigenschaften für die ClickOnce-Bereitstellung verwendet.  
@@ -44,16 +47,16 @@ Die Seite **Veröffentlichen** des **Projekt-Designers** wird zur Konfiguration 
  Für WPF-Webbrowseranwendungen ist die Option **Anwendung ist auch offline verfügbar** deaktiviert, da Anwendungen dieser Art nur online verfügbar sind.  
   
  **Anwendungsdateien**  
- Öffnet das Dialogfeld [Anwendungsdateien](http://msdn.microsoft.com/en-us/b06dff3a-b87a-4caf-996b-7a4acf8137a8), mit dem angegeben wird, wie und wo einzelne Dateien installiert sind  
+ Öffnet das Dialogfeld „Anwendungsdateien“, mit dem angegeben wird, wie und wo einzelne Dateien installiert sind  
   
  **Erforderliche Komponenten**  
- Öffnet das [Dialogfeld „Erforderliche Komponenten“](../../ide/reference/prerequisites-dialog-box.md), mit dem erforderliche Komponenten wie das .NET Framework angegeben werden, die zusammen mit dieser Anwendung installiert werden  
+ Öffnet das Dialogfeld „Erforderliche Komponenten“, mit dem erforderliche Komponenten wie das .NET Framework angegeben werden, die zusammen mit dieser Anwendung installiert werden  
   
  **Updates**  
- Öffnet das [Dialogfeld „Anwendungsupdates“](http://msdn.microsoft.com/en-us/8eca8743-8e68-4d04-bfd5-4dc0a9b2934f), mit dem das Updateverhalten der Anwendung angegeben wird. Dieses Element ist nicht verfügbar, wenn **Anwendung ist nur online verfügbar** ausgewählt ist.  
+ Öffnet das Dialogfeld „Anwendungsupdates“, mit dem das Updateverhalten der Anwendung angegeben wird. Dieses Element ist nicht verfügbar, wenn **Anwendung ist nur online verfügbar** ausgewählt ist.  
   
  **Optionen**  
- Öffnet das [Dialogfeld „Veröffentlichungsoptionen“](http://msdn.microsoft.com/en-us/fd9baa1b-7311-4f9e-8ffb-ae50cf110592), mit dem zusätzliche erweiterte Veröffentlichungsoptionen angegeben werden  
+ Öffnet das Dialogfeld „Veröffentlichungsoptionen“, mit dem zusätzliche erweiterte Veröffentlichungsoptionen angegeben werden  
   
  **Veröffentlichungsversion**  
  Legt die Veröffentlichungsversionsnummer für die Anwendung fest. Wird die Versionsnummer geändert, wird die Anwendung als Update veröffentlicht. Jeder Teil der Veröffentlichungsversion (**Hauptversion**, **Nebenversion**, **Build**, **Revision**) kann den Maximalwert 65355 (<xref:System.UInt16.MaxValue>) haben, d.h. das von <xref:System.Version> zugelassene Maximum.  
@@ -64,7 +67,7 @@ Die Seite **Veröffentlichen** des **Projekt-Designers** wird zur Konfiguration 
  Dies ist optional. Wenn diese Option ausgewählt ist (Standardeinstellung), wird der Teil **Revision** der Veröffentlichungsversionsnummer bei jeder Veröffentlichung der Anwendung um eins erhöht. Dies bewirkt, dass die Anwendung als Update veröffentlicht wird.  
   
  **Veröffentlichungs-Assistent**  
- Öffnet den [Veröffentlichungs-Assistenten](http://msdn.microsoft.com/en-us/fc6abebd-13d6-48e4-a567-fbc52dad0872). Die Fertigstellung des Veröffentlichungs-Assistenten hat dieselbe Wirkung wie das Ausführen des Befehls **Veröffentlichen** im Menü **Erstellen** .  
+ Öffnet den Veröffentlichungs-Assistenten. Die Fertigstellung des Veröffentlichungs-Assistenten hat dieselbe Wirkung wie das Ausführen des Befehls **Veröffentlichen** im Menü **Erstellen** .  
   
  **Jetzt veröffentlichen**  
  Veröffentlicht die Anwendung mithilfe der aktuellen Einstellungen. Entspricht der Schaltfläche **Fertigstellen** im **Veröffentlichungs-Assistenten**.  

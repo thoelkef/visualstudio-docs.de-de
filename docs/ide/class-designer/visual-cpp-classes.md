@@ -4,25 +4,29 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.classdesigner.inheritancelinelabel
-helpviewer_keywords: Class Designer [Visual Studio], classes
+f1_keywords:
+- vs.classdesigner.inheritancelinelabel
+helpviewer_keywords:
+- Class Designer [Visual Studio], classes
 ms.assetid: 75e56f8c-11ef-42a3-b7ec-3d2cf25c581b
-caps.latest.revision: "19"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 1aac0b4dd1600edc29f43195dcf95a6c5fc9b388
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 813e52dec03975c6573ed5eb75c7b5c3ed9bb9fd
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="visual-c-classes-in-class-designer"></a>Visual C++-Klassen im Klassen-Designer
-Der Klassen-Designer unterstützt C++-Klassen und visualisiert native C++-Klassen auf die gleiche Weise wie Visual Basic- und Visual C#-Klassenformen, mit Ausnahme, dass C++-Klassen über mehrere Vererbungsbeziehungen verfügen können. Sie können die Klassenform erweitern, um mehr Felder und Methoden in der Klasse anzuzeigen, oder sie aus Platzgründen reduzieren.  
+Der Klassen-Designer unterstützt C++-Klassen und visualisiert native C++-Klassen auf die gleiche Weise wie Visual Basic- und C#-Klassenformen, mit Ausnahme, dass C++-Klassen über mehrere Vererbungsbeziehungen verfügen können. Sie können die Klassenform erweitern, um mehr Felder und Methoden in der Klasse anzuzeigen, oder sie aus Platzgründen reduzieren.  
   
 > [!NOTE]
 >  Der Klassen-Designer unterstützt keine Unions (eine besondere Art von Klasse, bei der der zugeordnete Arbeitsspeicher nur so groß wie der größte Datenmember der Union ist).  
@@ -53,7 +57,7 @@ Durch einen Rechtsklick auf eine Klassenform und anschließend durch Klicken auf
 > [!NOTE]
 >  Der Befehl **Abgeleitete Klassen anzeigen** wird für C++-Code nicht unterstützt. Sie können abgeleitete Klassen anzeigen, indem Sie zur Klassenansicht wechseln, den Typknoten erweitern, den Unterordner **Abgeleitete Typen** erweitern und anschließend diese Typen in das Klassendiagramm ziehen.  
   
-Weitere Informationen über die Vererbung von mehreren Klasse finden Sie unter [Mehrfachvererbung](https://msdn.microsoft.com/en-us/library/6td5yws2.aspx) und [Mehrere Basisklassen](/cpp/cpp/multiple-base-classes).  
+Weitere Informationen über die Vererbung von mehreren Klasse finden Sie unter [Mehrfachvererbung](https://msdn.microsoft.com/library/6td5yws2.aspx) und [Mehrere Basisklassen](/cpp/cpp/multiple-base-classes).  
   
 ## <a name="abstract-classes"></a>Abstrakte Klassen  
 Der Klassen-Designer unterstützt abstrakte Klassen (auch als „abstrakte Basisklassen“ bezeichnet). Dies sind Klassen, die nicht instanziiert, aber von denen andere Klassen abgeleitet werden können. Wenn Sie ein Beispiel aus „Mehrfachvererbungs“ weiter oben in diesem Dokument verwenden, können Sie womöglich die `Bird`-Klasse als einzelne Objekte wie folgt instanziieren:  
@@ -166,11 +170,12 @@ Die folgende Tabelle zeigt einige Beispiele der kanonischen spezialisierten Klas
 |------------------|-------------------------|  
 |`template <class T>`<br /><br /> `class C {};`<br /><br /> `template<>`<br /><br /> `class C<int> {};`<br /><br /> `class A : C<int> {};`<br /><br /> `class D : C<float> {};`|`A`<br /><br /> Klasse<br /><br /> ->C\<int><br /><br /> `C<int>`<br /><br /> Klasse<br /><br /> `C<T>`<br /><br /> Vorlagenklasse<br /><br /> `D`<br /><br /> Klasse<br /><br /> ->C\<float>|  
 |`class B {`<br /><br /> `template <class T>`<br /><br /> `T min (const T &a, const T &b);`<br /><br /> `};`|`B`<br /><br /> min \<T>|  
-  
+
 ## <a name="see-also"></a>Siehe auch
-[Arbeiten mit Visual C++-Code](working-with-visual-cpp-code.md)   
-[Klassen und Strukturen](/cpp/cpp/classes-and-structs-cpp)   
-[Anonyme Klassentypen](/cpp/cpp/anonymous-class-types)   
-[Mehrfachvererbung](https://msdn.microsoft.com/en-us/library/6td5yws2.aspx)   
-[Mehrere Basisklassen](/cpp/cpp/multiple-base-classes)   
+
+[Arbeiten mit Visual C++-Code](working-with-visual-cpp-code.md)  
+[Klassen und Strukturen](/cpp/cpp/classes-and-structs-cpp)  
+[Anonyme Klassentypen](/cpp/cpp/anonymous-class-types)  
+[Mehrfachvererbung](https://msdn.microsoft.com/library/6td5yws2.aspx)  
+[Mehrere Basisklassen](/cpp/cpp/multiple-base-classes)  
 [Vorlagen](/cpp/cpp/templates-cpp)

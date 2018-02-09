@@ -4,21 +4,24 @@ ms.custom:
 ms.date: 03/09/2017
 ms.reviewer: riande
 ms.suite: 
-ms.technology: vs-ide-deployment
+ms.technology:
+- vs-ide-deployment
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: ASP.NET, web applications, deployment, publishing
+helpviewer_keywords:
+- ASP.NET, web applications, deployment, publishing
 ms.assetid: 3A13F685-531C-457D-A98E-631888011E4B
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 10cb0ca2d5190ce73f0fd67da5b1f795d5aa8dd1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 428dc6346fa39b3939b478d0d2c887b99024dc81
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # Welche Optionen für die Veröffentlichung sind für mich geeignet?
 
@@ -31,26 +34,22 @@ Webanwendungen können aus Visual Studio direkt auf die folgenden Ziele veröffe
 
 Auf der Registerkarte **Veröffentlichen** können Sie ein vorhandenes Veröffentlichungsprofil auswählen, ein vorhandenes Veröffentlichungsprofil importieren oder ein neues Veröffentlichungsprofil mit den hier beschriebenen Optionen erstellen.
 
-## Azure App Service
+## Azure App Service-Web-Apps
 
-[Azure App Service](https://azure.microsoft.com/documentation/articles/app-service-value-prop-what-is/) ermöglicht Entwicklern, schnell und ohne die Verwaltung von Infrastruktur eine Vielzahl von skalierbaren Webanwendungen und -diensten zu erstellen.
+[Azure App Service-Web-Apps](/azure/app-service/app-service-web-overview) (oder einfach Web-Apps) ermöglichen Entwicklern, schnell und ohne die Verwaltung von Infrastruktur eine Vielzahl von skalierbaren Webanwendungen und -diensten zu erstellen.
 
-Insbesondere für Webanwendungen stellt ein App Service einen Container für eine [*Web-App*](https://azure.microsoft.com/en-us/documentation/articles/app-service-web-overview/) dar, die Ihren Vorstellungen eines herkömmlichen Webhosts stark ähnelt. Das heißt, eine Web-App stellt die erforderlichen Computingressourcen bereit, die Ihren serverseitigen Code ausführen und dem Internet zur Verfügung stellen können.
-
-Sie bestimmen, wie viel Computingleistung einer Web-App zur Verfügung stehen, indem Sie einen [Tarif oder Plan](https://azure.microsoft.com/documentation/articles/azure-web-sites-web-hosting-plans-in-depth-overview/) für den enthaltenden App-Dienst auswählen. Sie können mehrere Web-Apps (und andere App-Typen) ohne Tarifänderung den gleichen App Service nutzen lassen. Sie können z.B. Entwicklungs-, Staging- und Produktions-Web-Apps gemeinsam im selben App Service hosten.
+Sie bestimmen, wie viel Computingleistung einer Web-App zur Verfügung stehen, indem Sie einen [Tarif oder Plan](/azure/app-service/azure-web-sites-web-hosting-plans-in-depth-overview) für den enthaltenden App-Dienst auswählen. Sie können mehrere Web-Apps (und andere App-Typen) ohne Tarifänderung den gleichen App Service nutzen lassen. Sie können z.B. Entwicklungs-, Staging- und Produktions-Web-Apps gemeinsam im selben App Service hosten.
 
 Ein App Service wird auf in der Cloud gehosteten virtuellen Computern in Azure ausgeführt, aber diese virtuellen Maschinen werden für Sie verwaltet. Jeder Web-App in einem App Service wird eine eindeutige „\*. azurewebsites.net“-URL zugeordnet. Alle Tarife (außer „kostenlos“) ermöglichen, dass Sie der Website benutzerdefinierte Domänennamen zuweisen.
 
-### Wann sollten Sie Azure App Service wählen?
+### Wann sollten Sie Azure App Service-Web-Apps wählen?
 
 - Sie möchten eine Webanwendung bereitstellen, auf die über das Internet zugegriffen werden kann.
 - Sie möchten Ihre Webanwendung automatisch entsprechend Ihrem Bedarf skalieren, ohne sie erneut bereitstellen zu müssen.
 - Sie möchten keine Serverinfrastruktur (einschließlich Softwareupdates) verwalten.
 - Auf den Servern, auf denen Ihre Anwendung gehostet wird, sind keine Anpassungen auf Computerebene erforderlich.
 
-
 > Wenn Sie Azure App Service in Ihrem eigenen Datencenter oder anderen lokalen Computern verwenden möchten, können Sie dazu [Azure Stack](https://azure.microsoft.com/overview/azure-stack/) verwenden.
-
 
 ## Azure Virtual Machines
 

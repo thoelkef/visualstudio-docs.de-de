@@ -10,11 +10,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d4d302c84322388f96b37aa913e4debd3d331a7
-ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
+ms.openlocfilehash: 5bde32fc86610fa451aa01659401362fe4207f5c
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="visual-studio-ide-overview"></a>Übersicht über die Visual Studio-IDE
 
@@ -30,7 +30,7 @@ Sie können auch mühelos Code öffnen, den Sie aus beliebigen Quellen erhalten,
 
 ### <a name="create-mobile-apps"></a>Erstellen mobiler Apps
 
-Sie können native mobile Apps für verschiedene Plattformen mit Visual C# und Xamarin bzw. Visual C++ erstellen, oder Hybrid-Apps mit Apache Cordova unter Verwendung von JavaScript. Sie können mobile Spiele für Unity, Unreal, DirectX, Cocos und Sonstige schreiben. Visual Studio enthält einen Android-Emulator, der Ihnen das Ausführen und Debuggen von Android-Apps erleichtert.
+Sie können native mobile Apps für verschiedene Plattformen mit C# und Xamarin bzw. Visual C++ erstellen, oder Hybrid-Apps mit Apache Cordova unter Verwendung von JavaScript. Sie können mobile Spiele für Unity, Unreal, DirectX, Cocos und Sonstige schreiben. Visual Studio enthält einen Android-Emulator, der Ihnen das Ausführen und Debuggen von Android-Apps erleichtert.
 
 Sie können die Leistungsfähigkeit der Cloud für Ihre mobilen Apps nutzen, indem Sie Azure-App-Dienste erstellen. Mit Azure-App-Diensten können Ihre Apps Daten in der Cloud speichern, sicher Benutzer authentifizieren und automatisch ihre Ressourcen nach oben oder unten skalieren, damit die App den Anforderungen Ihres Unternehmens gerecht wird. Weitere Informationen finden Sie unter [Entwicklung mobiler Apps](https://www.visualstudio.com/vs/mobile-app-development/).
 
@@ -56,7 +56,7 @@ Weitere Informationen finden Sie unter [Moderne Tools für die Entwicklung von W
 
 ### <a name="build-cross-platform-apps-and-games"></a>Erstellen plattformübergreifender Apps und Spiele
 
-Sie können mithilfe von Visual Studio Apps und Spiele für Android-, iOS-, Linux-, Windows- und andere Geräte erstellen. Weitere Informationen hierzu erhalten Sie unter [Cross-Platform Mobile Development (Plattformübergreifende Entwicklung für mobile Geräte)](../cross-platform/cross-platform-mobile-development-in-visual-studio.md). Universelle Windows-Apps helfen Ihnen bei der Nutzung Ihres Code auf mehreren Plattformen. Weitere Informationen finden Sie unter [Universelle Windows-Apps](https://dev.windows.com/en-us/windows-apps).
+Sie können mithilfe von Visual Studio Apps und Spiele für Android-, iOS-, Linux-, Windows- und andere Geräte erstellen. Weitere Informationen hierzu erhalten Sie unter [Cross-Platform Mobile Development (Plattformübergreifende Entwicklung für mobile Geräte)](../cross-platform/cross-platform-mobile-development-in-visual-studio.md). Universelle Windows-Apps helfen Ihnen bei der Nutzung Ihres Code auf mehreren Plattformen. Weitere Informationen finden Sie unter [Universelle Windows-Apps](https://dev.windows.com/windows-apps).
 
 Wählen Sie die Tools auf Grundlage der App-Anforderungen und der gewünschten Sprache aus:
 
@@ -109,7 +109,7 @@ Sie lernen etwas am besten kennen, wenn Sie damit arbeiten! Darum werden wir mit
 
   ![Vorlage „Leere App (Universelle Windows-App)“](../ide/media/new-uwp-blank-app-template.png)
 
-  Damit wird ein neues leeres Universelle Windows-App-Projekt mit Visual C# und XAML als Programmiersprachen erstellt. Warten Sie ein wenig, während Visual Studio das Projekt für Sie einrichtet. Wenn Sie zur Eingabe von Informationen aufgefordert werden, übernehmen Sie vorläufig einfach die Standardwerte.
+  Damit wird ein neues leeres UWP-Projekt (universelle Windows-App) mit C# und XAML als Programmiersprachen erstellt. Warten Sie ein wenig, während Visual Studio das Projekt für Sie einrichtet. Wenn Sie zur Eingabe von Informationen aufgefordert werden, übernehmen Sie vorläufig einfach die Standardwerte.
 
 1. Übernehmen Sie die Standardwerte im Dialogfeld **Neues UWP-Projekt (Universelle Windows-Plattform)**, indem Sie auf **OK** klicken.
 
@@ -195,7 +195,7 @@ Im Folgenden werden einige weitere allgemeine Produktivitätsfunktionen in Visua
 
  ![Umgestaltung](../ide/media/VSIDE_refactor.png)
 
-- **IntelliSense** ist der Oberbegriff für einen Satz von beliebten Features, mit denen Typinformationen über den Code direkt im Editor angezeigt und in einigen Fällen kleine Codeabschnitte für Sie geschrieben werden. Damit verfügen Sie über eine grundlegende Dokumentation, die in den Editor integriert ist, sodass Sie die Typinformationen nicht mehr in einem separaten Hilfefenster nachschauen müssen. Die Features von IntelliSense variieren je nach Sprache. Weitere Informationen finden Sie unter [Visual C# IntelliSense](../ide/visual-csharp-intellisense.md), [Visual C++ Intellisense](../ide/visual-cpp-intellisense.md), [JavaScript IntelliSense](../ide/javascript-intellisense.md) und [Visual Basic-Specific IntelliSense](../ide/visual-basic-specific-intellisense.md). Die folgende Abbildung zeigt einige IntelliSense-Features:
+- **IntelliSense** ist der Oberbegriff für einen Satz von beliebten Features, mit denen Typinformationen über den Code direkt im Editor angezeigt und in einigen Fällen kleine Codeabschnitte für Sie geschrieben werden. Damit verfügen Sie über eine grundlegende Dokumentation, die in den Editor integriert ist, sodass Sie die Typinformationen nicht mehr in einem separaten Hilfefenster nachschauen müssen. Die Features von IntelliSense variieren je nach Sprache. Weitere Informationen finden Sie unter [Visual C#-IntelliSense](../ide/visual-csharp-intellisense.md), [Visual C++ Intellisense](../ide/visual-cpp-intellisense.md), [JavaScript IntelliSense](../ide/javascript-intellisense.md) und [IntelliSense für Visual Basic-Codedateien](../ide/visual-basic-specific-intellisense.md). Die folgende Abbildung zeigt einige IntelliSense-Features:
 
   ![Visual Studio, Member-Liste](../ide/media/vs2017_Intellisense.png)
 
@@ -237,7 +237,7 @@ Die folgende Abbildung zeigt das Team Explorer-Fenster für eine Projektmappe, d
 
 ![Visual Studio Team Explorer](../ide/media/vs2017_teamexplorer.png)
 
-Der Buildprozess lässt sich automatisieren, um den Code zu erstellen, den die Entwickler in Ihrem Team in die Versionskontrolle eingecheckt haben. Beispielsweise können Sie ein Projekt oder mehrere Projekte jede Nacht oder bei jedem Einchecken dieses Code ausführen. Weitere Informationen finden Sie unter [Continuous integration on any platform (Fortlaufende Integration auf jeder Plattform)](https://www.visualstudio.com/en-us/docs/build/overview).
+Der Buildprozess lässt sich automatisieren, um den Code zu erstellen, den die Entwickler in Ihrem Team in die Versionskontrolle eingecheckt haben. Beispielsweise können Sie ein Projekt oder mehrere Projekte jede Nacht oder bei jedem Einchecken dieses Code ausführen. Weitere Informationen finden Sie unter [Build und Release (VSTS und TFS)](/vsts/build-release/index).
 
 ## <a name="connect-to-services-databases-and-cloud-based-resources"></a>Herstellen einer Verbindung mit Diensten, Datenbanken und cloudbasierten Ressourcen
 
@@ -280,6 +280,6 @@ Sie haben die Führung zu Visual Studio-IDE erfolgreich absolviert! Wir hoffen, 
 * [Visual Studio-IDE](https://www.visualstudio.com/vs/)
 * [Visual Studio Downloads](https://www.visualstudio.com/downloads/)
 * [Der Visual Studio-Blog](https://blogs.msdn.microsoft.com/visualstudio/)
-* [Visual Studio-Foren](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?category=visualstudio%2Cvsarch%2Cvsdbg%2Cvstest%2Cvstfs%2Cvsdata%2Cvsappdev%2Cvisualbasic%2Cvisualcsharp%2Cvisualc)
+* [Visual Studio-Foren](https://social.msdn.microsoft.com/Forums/vstudio/home?category=visualstudio%2Cvsarch%2Cvsdbg%2Cvstest%2Cvstfs%2Cvsdata%2Cvsappdev%2Cvisualbasic%2Cvisualcsharp%2Cvisualc)
 * [Microsoft Virtual Academy](https://mva.microsoft.com/)
 * [Channel 9](https://channel9.msdn.com/)
