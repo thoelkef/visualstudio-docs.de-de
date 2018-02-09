@@ -1,5 +1,5 @@
 ---
-title: Verwenden von Product Keys
+title: Verwenden von Product Keys | Microsoft-Dokumentation
 Author: evanwindom
 Ms.author: jaunger
 Manager: evelynp
@@ -9,13 +9,14 @@ Description: Learn how to obtain and manage your product keys in Visual Studio s
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 6d0da452a205042cee2b2c0b41990da50b303b3f
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: 50143579a4bf9033e54385b81ef365228b2b63cf
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>Verwenden von Product Keys in Visual Studio-Abonnements
+
 ## <a name="product-keys-overview"></a>Übersicht über Product Keys
 Visual Studio-Abonnements bieten Zugriff auf eine große Auswahl von Microsoft-Produkten zum Entwerfen, Entwickeln, Testen und Vorführen von Anwendungen. Bei einigen dieser Produkte müssen während der Installation Product Keys angegeben werden, und einige müssen aktiviert werden.
 
@@ -45,7 +46,7 @@ Wenn Sie die maximale Anzahl von Product Keys in Anspruch genommen haben, die Ih
 Unsere Untersuchungen zeigen, dass für die meisten Abonnenten die in ihrem Abonnement enthaltene Anzahl von Product Keys ausreicht. Wenn Sie zusätzliche Product Keys benötigen, können Sie diese über den [Kundendienst für Visual Studio-Abonnements](https://www.visualstudio.com/subscriptions/support/) anfordern. Der Antrag wird fallweise auf Genehmigung geprüft.
 
 ## <a name="locating-and-claiming-product-keys"></a>Suchen nach und Inanspruchnahme von Product Keys
-Sie müssen bei Ihrem Visual Studio-Abonnement angemeldet sein, um Ihre Product Keys anzeigen zu können. Einzelne Product Keys können gefunden werden, indem Sie wie im Folgenden dargestellt auf der Seite [Downloads](https://my.visualstudio.com/downloads) auf den blauen Link **Schlüssel abrufen** für ein bestimmtes Produkt klicken.  Sämtliche Schlüssel sind auch zusammengefasst auf der Seite [Product Keys](https://my.visualstudio.com/productkeys) verfügbar. Wenn für ein einzelnes Produkt mehrere Schlüssel vorhanden sind, werden in der Spalte „Hinweise“ Hinweise zum Download angezeigt, die Sie beim Ermitteln des erforderlichen Schlüssels unterstützen sollen.
+Sie müssen bei Ihrem Visual Studio-Abonnement angemeldet sein, um Ihre Product Keys anzeigen zu können. Einzelne Product Keys können gefunden werden, indem Sie wie im Folgenden dargestellt auf der Seite [Downloads](https://my.visualstudio.com/downloads) auf den blauen Link **Schlüssel abrufen** für ein bestimmtes Produkt klicken.  Sämtliche Schlüssel sind auch zusammengefasst auf der Seite [Product Keys](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs) verfügbar. Wenn für ein einzelnes Produkt mehrere Schlüssel vorhanden sind, werden in der Spalte „Hinweise“ Hinweise zum Download angezeigt, die Sie beim Ermitteln des erforderlichen Schlüssels unterstützen sollen.
 
 ![„Schlüssel abrufen“ auf der Seite „Downloads“](_img/product-keys/download-get-key.png)
 
@@ -57,7 +58,7 @@ Abhängig vom Produkt ist eine Vielzahl von Schlüsseltypen verfügbar.
 
 ### <a name="product-key-types"></a>Product Key-Typen
 
-|    Schlüsseltyp           |    Beschreibung                                                                                                                                                                                                           |
+|    Schlüsseltyp           |    description                                                                                                                                                                                                           |
 |-------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |    Nicht zutreffend                    |    Für die Installation dieses Produkts ist kein Schlüssel erforderlich.                                                       |
 |    Einzelhandel                     |    Mit Verkaufsschlüsseln sind mehrere Aktivierungen möglich. Sie werden für die Verkaufsversionen des Produkts verwendet. In vielen Fällen sind pro Schlüssel 10 Aktivierungen zulässig. Häufig sind jedoch weitere Aktivierungen auf demselben Computer zulässig.                                                       |
@@ -79,7 +80,7 @@ Nur Abonnenten mit aktiven Abonnements können Produkte herunterladen und Produc
 
 So nehmen Sie einen Product Key in Anspruch:
 1.  Melden Sie sich bei Ihrem Visual Studio-Abonnement an.  Sie müssen angemeldet sein, um Produkte herunterladen oder Product Keys in Anspruch nehmen zu können. 
-2.  Klicken Sie auf die Registerkarte [Product Keys](https://my.visualstudio.com/productkeys).
+2.  Klicken Sie auf die Registerkarte [Product Keys](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs).
 3.  Die Product Keys werden in alphabetischer Reihenfolge nach dem Namen des Produkts aufgelistet.  Sie können den Fensterinhalt bis zum gewünschten Produkt nach unten verschieben oder über die Suchleiste oben auf der Seite nach dem Namen suchen.  
 ![Suche nach Product Keys](_img\product-keys\visio-product-key-cropped.png)
 
@@ -99,8 +100,9 @@ Mit einem Visual Studio-Abonnement sind Sie berechtigt, Benutzern den Zugriff au
 Dies ist eine Ergänzung der Entwicklungs-/Testrechte, gemäß denen Visual Studio-Abonnenten so viele RDS- oder TS-Verbindungen wie nötig verwenden können.
 
 ### <a name="enabling-rds-access"></a>Aktivieren des RDS-Zugriffs 
-Visual Studio-Abonnenten können die Anzahl der Benutzer mit Zugriff auf Windows Server über RDS erhöhen, indem Sie im [Abonnentenportal](https://my.visualstudio.com/productkeys) auf der Registerkarte [Produkt Keys](https://my.visualstudio.com) einen Product Key eingeben. Öffnen Sie zum Abrufen eines Product Key die Seite „Product Keys“, und scrollen Sie nach unten zur der Version von Windows Server, die Sie ausführen. Suchen Sie „Windows Server <Version> R2-Remotedesktopdienste <Benutzer oder Gerät>-Verbindungen“, und klicken Sie auf die Schaltfläche **Claim Key** (Schlüssel in Anspruch nehmen). Wenn Sie beispielsweise RDS unter Windows Server 2012 R2 verwenden und Ihre Bereitstellung Benutzer-Clientzugriffslizenzen umfasst, wählen Sie „Windows Server 2012 > Remotedesktopdienste > Benutzerverbindungen (50)“ aus.
+Visual Studio-Abonnenten können die Anzahl der Benutzer mit Zugriff auf Windows Server über RDS erhöhen, indem Sie im [Abonnentenportal](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs) auf der Registerkarte [Produkt Keys](https://my.visualstudio.com?wt.mc_id=o~msft~docs) einen Product Key eingeben. Öffnen Sie zum Abrufen eines Product Key die Seite „Product Keys“, und scrollen Sie nach unten zur der Version von Windows Server, die Sie ausführen. Suchen Sie „Windows Server <Version> R2-Remotedesktopdienste <Benutzer oder Gerät>-Verbindungen“, und klicken Sie auf die Schaltfläche **Claim Key** (Schlüssel in Anspruch nehmen). Wenn Sie beispielsweise RDS unter Windows Server 2012 R2 verwenden und Ihre Bereitstellung Benutzer-Clientzugriffslizenzen umfasst, wählen Sie „Windows Server 2012 > Remotedesktopdienste > Benutzerverbindungen (50)“ aus.
 Für Windows Server 2008 R2 stehen für jeden Typ fünf Schlüssel zur Verfügung, die jeweils 20 Verbindungen unterstützen. Für Windows Server 2012 R2 stehen für jeden Typ vier Schlüssel zur Verfügung, die jeweils 50 Verbindungen unterstützen. 
+
 #### <a name="to-enable-additional-connections-in-windows-server"></a>So aktivieren Sie unter Windows Server weitere Verbindungen: 
 1.  Öffnen Sie den Server-Manager.
 2.  Öffnen Sie im linken Navigationsbereich die Liste „Server“.
@@ -113,4 +115,4 @@ Benutzer können über RDS auf Anwendungen zugreifen, wenn die folgenden Bedingu
 - Für Demonstrationen der Anwendung sind bis zu 200 gleichzeitige Verbindungen möglich. 
 - Die Product Keys zum Aktivieren von Benutzerverbindungen müssen von einem Visual Studio-Abonnenten abgerufen werden.
 
-Anweisungen zum Einrichten der Remotedesktoplizenzierung auf Ihrem Server finden Sie unter [Konfiguration von Remotedesktoplizenzierung unter Windows Server 2012](http://blogs.technet.com/b/askperf/archive/2013/09/20/rd-licensing-configuration-on-windows-server-2012.aspx). Falls Sie Fragen haben, besuchen Sie das [Forum für Microsoft-Remotdesktopdienste](https://social.technet.microsoft.com/Forums/windowsserver/en-US/home?forum=winserverTS). 
+Anweisungen zum Einrichten der Remotedesktoplizenzierung auf Ihrem Server finden Sie unter [Konfiguration von Remotedesktoplizenzierung unter Windows Server 2012](http://blogs.technet.com/b/askperf/archive/2013/09/20/rd-licensing-configuration-on-windows-server-2012.aspx). Falls Sie Fragen haben, besuchen Sie das [Forum für Microsoft-Remotdesktopdienste](https://social.technet.microsoft.com/Forums/windowsserver/home?forum=winserverTS). 

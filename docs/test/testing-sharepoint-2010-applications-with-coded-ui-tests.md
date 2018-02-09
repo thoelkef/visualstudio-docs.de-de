@@ -9,13 +9,14 @@ ms.tgt_pltfrm:
 ms.topic: article
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 author: gewarren
-ms.openlocfilehash: fbda836ec423d9a86b51b2334a3015589512d816
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 15970f48791078d498fa7a187546c1c7230d3cf0
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="testing-sharepoint-2010-applications-with-coded-ui-tests"></a>Testen von SharePoint 2010-Anwendungen mit Tests der programmierten UI
 Durch das Einbeziehen von Tests der programmierten UI in einer SharePoint-Anwendung können Sie sicherstellen, dass die gesamte Anwendung, einschließlich der zugehörigen Benutzeroberflächen-Steuerelemente, richtig funktioniert. Tests der programmierten UI können zudem Werte und Logik auf der Benutzeroberfläche validieren .  
@@ -31,10 +32,10 @@ Durch das Einbeziehen von Tests der programmierten UI in einer SharePoint-Anwend
   
 -   ![Erforderliche Komponente](../test/media/prereq.png "Prereq") Tests der programmierten UI für SharePoint-Anwendungen werden nur mit SharePoint 2010 unterstützt.  
   
--   ![Erforderliche Komponente](../test/media/prereq.png "Prereq") Die Unterstützung für Visio- und PowerPoint 2010-Steuerelement in Ihrer SharePoint-Anwendung wird nicht unterstützt.  
+-   ![Erforderliche Komponente](../test/media/prereq.png "Prereq") Visio- und PowerPoint 2010-Steuerelemente werden nicht in Ihrer SharePoint-Anwendung unterstützt.  
   
 ## <a name="creating-a-coded-ui-test-for-your-sharepoint-app"></a>Erstellen eines Tests der codierten UI für die SharePoint-App  
- Das[Erstellen von Tests der programmierten UI](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate) für Ihre SharePoint 2010-Anwendungen entspricht dem Erstellen von Tests für andere Anwendungstypen. Die Aufzeichnung und Wiedergabe wird für alle Steuerelemente in der Webbearbeitungsschnittstelle unterstützt. Bei der Schnittstelle für das Auswählen von Kategorien und Webparts handelt es sich um standardmäßige Websteuerelemente.  
+ Das[Erstellen von Tests der programmierten UI](../test/use-ui-automation-to-test-your-code.md) für Ihre SharePoint 2010-Anwendungen entspricht dem Erstellen von Tests für andere Anwendungstypen. Die Aufzeichnung und Wiedergabe wird für alle Steuerelemente in der Webbearbeitungsschnittstelle unterstützt. Bei der Schnittstelle für das Auswählen von Kategorien und Webparts handelt es sich um standardmäßige Websteuerelemente.  
   
  ![SharePoint-Webparts](../test/media/cuit_sharepoint.png "CUIT_SharePoint")  
   

@@ -9,13 +9,14 @@ ms.tgt_pltfrm:
 ms.topic: article
 ms.author: gewarren
 manager: ghogen
-ms.workload: dotnet
+ms.workload:
+- dotnet
 author: gewarren
-ms.openlocfilehash: a71eb54bad089e7d5bad24416604d93da615bd15
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 13780b561ba14cc06269e443265313e3b2e664c6
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>Gewusst wie: Konfigurieren von Komponententests zur Ausrichtung auf eine frühere Version von .NET Framework
 Wenn Sie in Microsoft Visual Studio ein Testprojekt erstellen, wird die neueste Version von .NET Framework standardmäßig als Ziel festgelegt. Wenn Sie ein Upgrade von Projekten aus früheren Versionen von Visual Studio durchführen, werden Projektupgrades darüber hinaus auf die neueste Version von .NET Framework durchgeführt. Durch Bearbeiten der Projekteigenschaften können Sie das Projekt auf frühere Versionen von .NET Framework explizit umleiten.  
@@ -62,7 +63,7 @@ Wenn Sie in Microsoft Visual Studio ein Testprojekt erstellen, wird die neueste 
   
      Die Eigenschaften für Ihr Visual Basic-Testprojekt werden angezeigt.  
   
-5.  Klicken sie auf der Registerkarte **Kompilieren** auf **Erweiterte Kompilierungsoptionen**, wie es in der folgenden Abbildung gezeigt wird.  
+5.  Klicken sie auf der Registerkarte **Kompilieren** auf **Erweiterte Kompilierungsoptionen**, wie es in der folgenden Abbildung gezeigt wird.
   
      ![Erweiterte Kompilierungsoptionen](../test/media/howtoconfigureunittest35frameworka.png "HowToConfigureUnitTest35FrameworkA")  
   
@@ -84,7 +85,7 @@ Wenn Sie in Microsoft Visual Studio ein Testprojekt erstellen, wird die neueste 
   
      Die Eigenschaften für Ihr Visual C#-Testprojekt werden angezeigt.  
   
-5.  Klicken Sie zum Ändern des Zielframeworks in der Registerkarte **Anwendung** auf **Zielframework** und wählen Sie anschließend von der Dropdownliste **.NET Framework 3.5** oder eine spätere Version aus, wie es in der folgenden Abbildung gezeigt wird. Sie sollten keine Clientversion angeben.  
+5.  Wählen Sie auf der Registerkarte **Anwendung** die Option **Zielframework** aus. Wählen Sie aus der Dropdown-Liste **.NET Framework 3.5** oder eine höhere Version aus, wie in der folgenden Abbildung dargestellt wird. Sie sollten keine Clientversion angeben.
   
      ![Dropdownliste des Zielframeworks](../test/media/howtoconfigureunittest35frameworkcsharp.png "HowToConfigureUniTest35FrameworkCSharp")  
   
@@ -125,8 +126,8 @@ Wenn Sie in Microsoft Visual Studio ein Testprojekt erstellen, wird die neueste 
   
 8.  Wählen Sie im Projektmappen-Explorer **Projekt erneut laden** unter dem Kontextmenü des neuen Visual C#-Testprojekts aus.  
   
-## <a name="see-also"></a>Siehe auch  
- [Erstellen und Ausführen von Komponententests für vorhandenen Code](http://msdn.microsoft.com/en-us/e8370b93-085b-41c9-8dec-655bd886f173)   
- [Erstellen von SharePoint-Lösungen](/office-dev/office-dev/create-sharepoint-solutions)   
- [Erstellen und Debuggen von SharePoint-Lösungen](/office-dev/office-dev/building-and-debugging-sharepoint-solutions)   
- [Dialogfeld „Erweiterte Compilereinstellungen“ (Visual Basic)](../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md)
+## <a name="see-also"></a>Siehe auch
+
+[Erstellen von SharePoint-Projektmappen](/office-dev/office-dev/create-sharepoint-solutions)  
+[Erstellen und Debuggen von SharePoint-Projektmappen](/office-dev/office-dev/building-and-debugging-sharepoint-solutions)  
+[Dialogfeld „Erweiterte Compilereinstellungen“ (Visual Basic)](../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md)

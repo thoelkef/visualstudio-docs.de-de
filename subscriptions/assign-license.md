@@ -1,5 +1,5 @@
 ---
-Title: Assign licenses to Visual Studio Subscriptions
+Title: Assign licenses to Visual Studio Subscriptions | Microsoft Docs
 Author: evanwindom
 Ms.author: jaunger
 Manager: evelynp
@@ -9,13 +9,14 @@ Description: Learn how administrators can assign licenses to subscribers
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: d9d26c9519ec5cca1f7127f93d9d1ab60378ad3f
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: b82f02b968398d0a8d1ce4872ce00e8447a2ae4d
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="assigning-licenses-in-the-visual-studio-subscriptions-administrator-portal"></a>Zuweisen von Lizenzen im Administratorportal für Visual Studio-Abonnements
+
 ## <a name="assigning-a-single-user"></a>Zuweisen eines einzelnen Benutzers
 Wenn Sie über Lizenzen für Visual Studio-Abonnements verfügen, können Sie diese Lizenzen neuen Benutzern zuweisen, damit diese Zugriff auf die Abonnementvorteile haben. 
 1.  Klicken Sie im oberen Bereich der Tabelle auf **Hinzufügen**, um einen einzelnen Visual Studio-Abonnenten zuzuweisen.
@@ -26,11 +27,11 @@ Wenn Sie über Lizenzen für Visual Studio-Abonnements verfügen, können Sie di
 
 Wenn sich bei Ihrer Organisation die E-Mail-Adresse zum Empfangen von E-Mails von der für die Anmeldung unterscheidet, können Sie beide an dieser Stelle eingeben. Klicken Sie auf den Link „Different email for communication than sign-in?“ („Gibt es eine andere E-Mail-Adresse für die Kommunikation als für die Anmeldung?“). 
 
-Wenn Sie möchten, dass dieser Abonnent Zugriff auf Softwaredownloads hat, wenn er sich beim [Visual Studio-Abonnements-Portal](https:/my.visualstudio.com) anmeldet, stellen Sie sicher, dass das Kontrollkästchen „Downloads“ aktiviert ist. Wenn Sie das Kontrollkästchen deaktivieren, hat der Benutzer zwar keinen Zugriff auf Softwaredownloads, aber trotzdem auf alle anderen Abonnementvorteile. Wenn Sie fertig sind, klicken Sie auf **Hinzufügen**.
+Wenn Sie möchten, dass dieser Abonnent Zugriff auf Softwaredownloads hat, wenn er sich beim [Visual Studio-Abonnements-Portal](https:/my.visualstudio.com?wt.mc_id=o~msft~docs) anmeldet, stellen Sie sicher, dass das Kontrollkästchen „Downloads“ aktiviert ist. Wenn Sie das Kontrollkästchen deaktivieren, hat der Benutzer zwar keinen Zugriff auf Softwaredownloads, aber trotzdem auf alle anderen Abonnementvorteile. Wenn Sie fertig sind, klicken Sie auf **Hinzufügen**.
 
-  ![Eingeben der Abonnenteninformationen](_img\assign-license-add\add-subscriber-1.png)
+   ![Eingeben der Abonnenteninformationen](_img\assign-license-add\add-subscriber-1.png)
 
-  ![Eingeben der Abonnenteninformationen](_img\assign-license-add\add-subscriber-2.png)
+   ![Eingeben der Abonnenteninformationen](_img\assign-license-add\add-subscriber-2.png)
 
 3.  Nachdem Sie den Abonnenten hinzugefügt haben, wird automatisch eine E-Mail zur Zuweisung mit weiteren Anweisungen an den neuen Abonnenten gesendet. Sie können die E-Mail zur Zuweisung jederzeit erneut senden, indem Sie den Abonnenten auswählen und auf die Schaltfläche **Erneut senden** im oberen Menü klicken.
 
@@ -43,7 +44,7 @@ Wenn Sie möchten, dass dieser Abonnent Zugriff auf Softwaredownloads hat, wenn 
 
 2. Die Funktion für Massenzuweisungen verwendet eine Microsoft Excel-Vorlage zum Hochladen von Abonnenten. Klicken Sie im Dialogfeld „Upload Multiple Subscribers“ (Mehrere Abonnenten hochladen) auf **Herunterladen**, um die Vorlage herunterzuladen. Laden sie stets die neueste Vorlagenversion herunter. Wenn Sie eine ältere Version herunterladen, schlägt Ihr Massenupload möglicherweise fehl.
 
-![Mehrere Abonnenten hochladen](_img\assign-license-add\bulk-assign-upload.png)
+    ![Mehrere Abonnenten hochladen](_img\assign-license-add\bulk-assign-upload.png)
 
 3.  Tragen Sie in die Felder der Excel-Tabelle die Informationen für die Personen ein, denen Sie Abonnements zuweisen möchten. Das Ausfüllen des Verweisfelds ist optional. Wenn Sie einen Fehler beim Ausfüllen der Vorlage gemacht haben, sollte eine Fehlermeldung erscheinen, in der das Problem beschrieben wird. Wenn Sie fertig sind, speichern Sie die Datei auf Ihrer Festplatte.
 **Beachten Sie die im Folgenden aufgelisteten bewährten Methoden, um einen fehlerfreien Upload zu gewährleisten:**
@@ -51,7 +52,7 @@ Wenn Sie möchten, dass dieser Abonnent Zugriff auf Softwaredownloads hat, wenn 
     - Entfernen Sie Leerzeichen vor und nach Formularfeldern wie z.B. die Benutzernamen.
     - Stellen Sie sicher, dass die Benutzernamen keine zusätzlichen Leerzeichen zwischen zweiteiligen Vor- und Nachnamen haben (z.B. sollten zweiteilige Namen wie „Maggie May“ nicht mit doppelten Leerzeichen geschrieben werden („Maggie  May“), da das System die überflüssigen Leerzeichen nicht automatisch entfernt).
 
-    ![Vorlage zum Massenhinzufügen](_img\assign-license-add\bulk-template.png)
+   ![Vorlage zum Massenhinzufügen](_img\assign-license-add\bulk-template.png)
 
 4.  Rufen Sie das Administratorportal für Visual Studio-Abonnements auf, und klicken Sie im Dialogfeld „Upload Multiple Subscribers“ („Mehrere Abonnenten hochladen“) auf **Durchsuchen**. Navigieren Sie zur Excel-Datei, die Sie gespeichert haben, und klicken Sie auf **OK**. Der Fortschritt des Uploads wird auf dem Bildschirm angezeigt. 
 

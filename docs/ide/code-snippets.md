@@ -22,11 +22,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: e2b973b00e132973b8569bc5cad8c1f1318317cd
-ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
+ms.openlocfilehash: 32aded825454ce53193d488c01e3aad70d9032f8
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="code-snippets"></a>Codeausschnitte
 
@@ -92,6 +92,6 @@ Sie können Ausschnittverzeichnisse mit den Schaltflächen **Hinzufügen** und *
 [Gewusst wie: Verteilen von Codeausschnitten](../ide/how-to-distribute-code-snippets.md)  
 [Empfohlene Vorgehensweisen für die Verwendung von Codeausschnitten](../ide/best-practices-for-using-code-snippets.md)  
 [Problembehandlung bei Codeausschnitten](../ide/troubleshooting-snippets.md)  
-[Visual C#-Codeausschnitte](../ide/visual-csharp-code-snippets.md)  
+[C#-Codeausschnitte](../ide/visual-csharp-code-snippets.md)  
 [Visual C++-Codeausschnitte](../ide/visual-cpp-code-snippets.md)  
 [Schemareferenz für Codeausschnitte](../ide/code-snippets-schema-reference.md)

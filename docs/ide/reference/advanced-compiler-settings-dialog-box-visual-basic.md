@@ -4,33 +4,38 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vb.ProjectPropertiesAdvancedCompile
-helpviewer_keywords: Advanced Compiler Settings dialog box
+f1_keywords:
+- vb.ProjectPropertiesAdvancedCompile
+helpviewer_keywords:
+- Advanced Compiler Settings dialog box
 ms.assetid: 1f81133a-293f-4dba-bc1c-8baafb01d857
-caps.latest.revision: "46"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: c3dd72236cf23131d510f9d512ea1dcd2a4dd15a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: b2e8661fb7984fd5b04b64211bf209827683ee0a
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="advanced-compiler-settings-dialog-box-visual-basic"></a>Dialogfeld "Erweiterte Compilereinstellungen (Visual Basic)
+
 Verwenden Sie das Dialogfeld **Erweiterte Compilereinstellungen** des **Projekt-Designers**, um die erweiterten Buildkonfigurationseigenschaften des Projekts anzugeben. Dieses Dialogfeld gilt nur für Visual Basic-Projekte.  
   
-### <a name="to-access-this-dialog-box"></a>So öffnen Sie das Dialogfeld  
+### <a name="to-access-this-dialog-box"></a>So öffnen Sie das Dialogfeld
   
 1.  Wählen Sie im **Projektmappen-Explorer** einen Projektknoten (nicht den Knoten **Projektmappe**) aus.  
   
 2.  Klicken Sie im Menü **Projekt** auf **Eigenschaften**. Sobald der **Projekt-Designer** angezeigt wird, klicken Sie auf die Registerkarte **Kompilieren**.  
   
-3.  Wählen Sie auf der Seite [„Kompilieren“, Projekt-Designer (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md) die **Konfiguration** und **Plattform** aus. In vereinfachten Buildkonfigurationen werden die Listen **Konfiguration** und **Plattform** nicht angezeigt. Weitere Informationen finden Sie unter [Debug- und Releaseprojektkonfigurationen](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e).  
+3.  Wählen Sie auf der Seite [„Kompilieren“, Projekt-Designer (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md) die **Konfiguration** und **Plattform** aus. In vereinfachten Buildkonfigurationen werden die Listen **Konfiguration** und **Plattform** nicht angezeigt. Weitere Informationen finden Sie unter [Gewusst wie: Festlegen von Debug- und Releasekonfigurationen](../../debugger/how-to-set-debug-and-release-configurations.md).
   
 4.  Klicken Sie auf **Erweiterte Kompilierungsoptionen**.  
   
@@ -65,9 +70,11 @@ Verwenden Sie das Dialogfeld **Erweiterte Compilereinstellungen** des **Projekt-
  **Benutzerdefinierte Konstanten**  
  Geben Sie in dieses Textfeld beliebige benutzerdefinierte Konstanten für Ihre Anwendung ein. Die Einträge müssen durch Kommas getrennt sein und folgendes Format vorweisen: **Name1="Wert1",Name2="Wert2",Name3="Wert3"**  
   
-## <a name="other-settings"></a>Weitere Einstellungen  
+## <a name="other-settings"></a>Weitere Einstellungen
+
  **Serialisierungsassemblys generieren**  
  Diese Einstellung gibt an, ob der Compiler XML-Serialisierungsassemblys erstellen wird. Serialisierungsassemblys können die Startleistung von <xref:System.Xml.Serialization.XmlSerializer> verbessern, sofern Sie diese Klasse zum Serialisieren von Typen im Code verwendet haben. Standardmäßig ist diese Option auf **Auto** festgelegt, d.h., es werden nur dann Serialisierungsassemblys generiert, wenn Sie <xref:System.Xml.Serialization.XmlSerializer> verwendet haben, um Typen im Code in XML zu codieren. **Aus** gibt an, dass grundsätzlich keine Serialisierungsassemblys generiert werden, unabhängig davon, ob im Code <xref:System.Xml.Serialization.XmlSerializer> verwendet wird. **Ein** gibt an, dass immer Serialisierungsassemblys generiert werden. Serialisierungsassemblys tragen den Namen `TypeName`.XmlSerializers.dll.  
-  
-## <a name="see-also"></a>Siehe auch  
- [Seite „Kompilieren“, Projekt-Designer (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)
+
+## <a name="see-also"></a>Siehe auch
+
+[Seite „Kompilieren“, Projekt-Designer (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)

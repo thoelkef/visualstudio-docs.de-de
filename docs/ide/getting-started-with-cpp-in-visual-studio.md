@@ -8,13 +8,15 @@ ms.topic: get-started-article
 author: corob-msft
 ms.author: tglee
 manager: ghogen
-dev_langs: CPP
-ms.workload: cplusplus
-ms.openlocfilehash: 9c0a7a8e206704e1b7cd694a91f376f4ec531d6c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+dev_langs:
+- CPP
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 2e0e0709b8a1737e3f78268ec324d4481dac285a
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="get-started-with-c-in-visual-studio"></a>Erste Schritte mit C++ in Visual Studio
 

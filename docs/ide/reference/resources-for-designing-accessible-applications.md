@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -13,16 +14,17 @@ helpviewer_keywords:
 - Web applications, accessibility
 - accessibility, Web applications
 ms.assetid: 426bf023-bb34-43c4-9edb-c307191c8170
-caps.latest.revision: "15"
+caps.latest.revision: 
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 789eafd7bc7137026bb6c144615f1234f7288f29
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 6df23292ef3ae5016d2ddd48f0ced93e3a577a2f
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="resources-for-designing-accessible-applications"></a>Ressourcen für das Entwerfen von Anwendungen mit Barrierefreiheit
 Mithilfe der folgenden Links finden Sie Informationen zu Technologien für den barrierefreien Entwurf von Software sowie Tipps und Beispiele für die Entwicklung barrierefreier Windows-Anwendungen und Websites. Allgemeine Informationen über die Barrierefreiheit finden Sie online unter [http://www.microsoft.com/enable/](http://www.microsoft.com/enable/).  
@@ -33,7 +35,7 @@ Mithilfe der folgenden Links finden Sie Informationen zu Technologien für den b
   
 -   **Microsoft .NET Speech Technologies** Das Microsoft .NET Speech SDK ist ein Satz von Microsoft [!INCLUDE[vstecasp](../../code-quality/includes/vstecasp_md.md)]-Steuerelementen, einem Microsoft Internet Explorer Speech-Add-In, Beispielanwendungen und Dokumentationen, über die Webentwickler sprachaktivierte [!INCLUDE[vstecasp](../../code-quality/includes/vstecasp_md.md)]-Anwendungen erstellen, debuggen und bereitstellen können. Die Tools sind nahtlos in Microsoft Visual Studio integriert, sodass Entwickler das Potenzial der vertrauten Entwicklungsumgebung voll ausschöpfen können. Weitere Informationen finden Sie unter [http://msdn.microsoft.com/library/ms950383.aspx](http://msdn.microsoft.com/library/ms950383.aspx).  
   
--   **Understanding SAMI 1.0** Die Microsoft Synchronized Accessible Media Interchange-Technologie (SAMI) ermöglicht es Entwicklern, Audioinhalte für PC-Multimediaanwendungen zu erfassen. Weitere Informationen finden Sie unter [http://msdn.microsoft.com/en-us/library/ms971327.aspx](http://msdn.microsoft.com/library/ms971327.aspx).  
+-   **Understanding SAMI 1.0** Die Microsoft Synchronized Accessible Media Interchange-Technologie (SAMI) ermöglicht es Entwicklern, Audioinhalte für PC-Multimediaanwendungen zu erfassen. Weitere Informationen finden Sie unter [Grundlegendes zu SAMI 1.0](http://msdn.microsoft.com/library/ms971327.aspx).  
   
 ## <a name="windows-applications"></a>Windows-Anwendungen  
   
@@ -45,13 +47,9 @@ Mithilfe der folgenden Links finden Sie Informationen zu Technologien für den b
   
 ## <a name="web-sites"></a>Websites  
   
--   [Exemplarische Vorgehensweise: Richtlinien für Barrierefreiheit für die Verwendung von Bildsteuerelementen, Menüsteuerelementen und AutoPostBack](http://msdn.microsoft.com/Library/ff7b5021-48b3-46bf-921f-9fe1e0e32202) Dieses Thema enthält schrittweise Anweisungen zum Einfügen barrierefreier Steuerelemente in eine Beispielwebsite sowie Tipps für den barrierefreien Entwurf für das Web.  
+-   [Exemplarische Vorgehensweise: Richtlinien für Barrierefreiheit für die Verwendung von Bildsteuerelementen, Menüsteuerelementen und AutoPostBack](http://msdn.microsoft.com/Library/ff7b5021-48b3-46bf-921f-9fe1e0e32202) Dieses Thema enthält schrittweise Anweisungen zum Einfügen barrierefreier Steuerelemente in eine Beispielwebsite sowie Tipps für den barrierefreien Entwurf für das Web.
   
--   **Webseiten barrierefreier machen** In diesem technischen Artikel sind die für den barrierefreien Entwurf geeigneten HTML 3.2-Elemente sowie andere Elemente aufgelistet, die für die barrierefreie Entwicklung von Websites angepasst werden können. Weitere Informationen finden Sie unter [http://msdn2.microsoft.com/en-us/library/ms971309.aspx](http://msdn2.microsoft.com/library/ms971309.aspx).  
-  
--   **Erstellen barrierefreier Webseiten mit DHTML** In diesem technischen Artikel sind die für den barrierefreien Entwurf geeigneten HTML 4.0-Elemente sowie Tipps für den Entwurf für barrierefreies Web aufgeführt. Weitere Informationen finden Sie unter [http://msdn2.microsoft.com/library/ms528445.aspx](http://msdn2.microsoft.com/library/ms528445.aspx).  
-  
--   **Textalternativen für nicht barrierefreie Webseiten** In diesem technischen Artikel wird beschrieben, wie mithilfe von XML und XSLT mehrere Ansichten derselben Webseite, darunter Nur-Text-Versionen, bereitgestellt werden. Weitere Informationen finden Sie unter [http://msdn2.microsoft.com/library/aa468593.aspx](http://msdn2.microsoft.com/library/aa468593.aspx).  
+-   **Erstellen barrierefreier Webseiten mit DHTML** In diesem technischen Artikel sind die für den barrierefreien Entwurf geeigneten HTML 4.0-Elemente sowie Tipps für den Entwurf für barrierefreies Web aufgeführt. Weitere Informationen finden Sie unter [http://msdn2.microsoft.com/library/ms528445.aspx](http://msdn2.microsoft.com/library/ms528445.aspx).
   
 ### <a name="third-party-resources"></a>Ressourcen von Drittanbietern  
   

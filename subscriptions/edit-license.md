@@ -1,5 +1,5 @@
 ---
-title: Bearbeiten von Abonnements im Administratorportal | Visual Studio Marketplace
+title: Bearbeiten von Abonnements im Administratorportal | Microsoft-Dokumentation
 Author: evanwindom
 Ms.author: jaunger
 Manager: evelynp
@@ -9,11 +9,11 @@ Description: Learn how administrators can edit subscription assignments.
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: c561e7a56f2e70cae1addd32902f68a582b49a02
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: 120bf87ddbaf50efa1abe59bac1c2e4616db7737
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="editing-visual-studio-subscription-assignments"></a>Bearbeiten von Visual Studio-Abonnementzuweisungen
 
@@ -29,13 +29,15 @@ Sie können den Vornamen, den Nachnamen, das Land, die Sprache und die Downloads
 
    ![Bearbeiten der Details von Abonnenten](_img\edit-license\edit-subscriber.png)
 
-Hinweis: Wenn Sie die Abonnementebene für einen Abonnenten ändern müssen, müssen Sie den Benutzer aus dem Portal löschen und erneut hinzufügen. Abonnementebenen können nicht bearbeitet werden.
+> [!NOTE]
+> Wenn Sie die Abonnementebene für einen Abonnenten ändern müssen, müssen Sie den Benutzer aus dem Portal löschen und erneut hinzufügen. Abonnementebenen können nicht bearbeitet werden.
 
 ## <a name="editing-multiple-subscribers-by-using-bulk-edit"></a>Bearbeiten mehrerer Abonnenten mithilfe der Massenbearbeitung
 
 Sie können mehrere Abonnenten gleichzeitig bearbeiten, wenn Sie die Massenbearbeitung verwenden. Diese Funktion wird in erster Linie für Organisationen verwendet, wenn die geschäftlichen E-Mail-Adressen geändert werden, oder wenn eine Organisation sich dafür entschieden hat, den Zugriff auf Downloads zu beschränken. 
 
-**Wichtig:** Abonnementebenen (d.h. Enterprise, Professional usw.) und Abonnement-GUIDs können nicht geändert werden.  Wenn Sie etwas hochladen möchten und diese Elemente verändert wurden, schlägt der Upload fehl.  
+> [!IMPORTANT]
+> Abonnementebenen (d.h. Enterprise, Professional usw.) und Abonnement-GUIDs können nicht geändert werden.  Wenn Sie etwas hochladen möchten und diese Elemente verändert wurden, schlägt der Upload fehl.  
 
 1.  Navigieren Sie zur Registerkarte „Abonnenten“, um mehrere Abonnenten gleichzeitig zu bearbeiten. Klicken Sie im oberen Bereich des Menübands auf **Massenbearbeitung**. 
 

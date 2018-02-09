@@ -12,11 +12,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d5aca783500b27e6b292b82304eb14d0fba7d32
-ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
+ms.openlocfilehash: a73226de18ea2003890c2923641ae65318dbfc1f
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="keyboard-tips-for-visual-studio"></a>Tipps und Tricks für Visual Studio
 
@@ -125,6 +125,7 @@ Sie können in Visual Studio einfacher navigieren, indem Sie die Tastenkombinati
 
 ## <a name="see-also"></a>Siehe auch
 
+[Tastenkombinationen (VSTS und TFS)](/vsts/collaborate/keyboard-shortcuts)  
 [Visual Studio-Blog](http://blogs.msdn.com/b/visualstudio)  
 [Blog mit Tipps und Tricks zu Visual Studio](http://blogs.msdn.com/b/zainnab)  
 [Visual Studio Toolbox auf Channel 9](http://channel9.msdn.com/Shows/Visual-Studio-Toolbox)  

@@ -4,24 +4,27 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
 - vs.classdesigner.typedef
 - vs.classdesigner.aliasofline
-helpviewer_keywords: Class Designer [Visual Studio], typedefs
+helpviewer_keywords:
+- Class Designer [Visual Studio], typedefs
 ms.assetid: c1984108-71fc-4d3a-b4d4-3eac2c6b4ebf
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 63bd8657d62a05edb1c9772776ca1216a0eee5ee
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 96d7e8cee6ce024040184aca50b5f5cb6facf388
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="visual-c-typedefs-in-class-designer"></a>Visual C++-Typedefs im Klassen-Designer
 Typedef-Anweisungen erstellen eine oder mehrere Dereferenzierungsebenen zwischen einem Namen und seinem zugrundeliegenden Typ. Der Klassen-Designer unterstützt C++-typedef-Typen, die mithilfe des Schlüsselworts `typedef` deklariert werden, zum Beispiel:  
@@ -48,10 +51,10 @@ typedef class coord
    unsigned x;  
    unsigned y;  
 };  
-```  
-  
-Weitere Informationen zur Verwendung des Typs `typedef` finden Sie unter [typedef-Spezifizierer](https://msdn.microsoft.com/en-us/library/05w82thz.aspx).  
-  
+```
+
+Weitere Informationen zur Verwendung des `typedef`-Typs finden Sie unter [Typedefs](/cpp/aliases-and-typedefs-cpp#typedefs).
+
 Eine C++-typedef-Form weist die Form des in der typedef definierten Typs auf. Wenn die Quelle beispielsweise `typedef class` deklariert, hat die Form abgerundete Ecken und trägt die Bezeichnung **Class**. Für `typedef struct` hat die Form rechtwinklige Ecken und die Bezeichnung **Struct**.  
   
 Innerhalb von Klassen und Strukturen können geschachtelte typedefs deklariert sein; daher können Formen von Klassen und Strukturen geschachtelte typedef-Deklarationen als geschachtelte Formen anzeigen.  
@@ -201,5 +204,6 @@ Klasse
 > MyIntVect  
   
 ## <a name="see-also"></a>Siehe auch
-[Arbeiten mit Visual C++-Code](working-with-visual-cpp-code.md)   
-[typedef-Spezifizierer](https://msdn.microsoft.com/en-us/library/05w82thz.aspx)
+
+[Arbeiten mit Visual C++-Code](working-with-visual-cpp-code.md)  
+[Typedefs](/cpp/aliases-and-typedefs-cpp#typedefs)

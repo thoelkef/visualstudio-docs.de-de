@@ -11,17 +11,19 @@ helpviewer_keywords:
 - configuration files [Visual Studio ALM], defining data sources
 - unit tests, walkthrough
 - data sources, defining with configuration files
+author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-author: gewarren
-ms.openlocfilehash: 269efd6f66d6430b9fa533c2cfebb6bdf0f78e3d
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.workload:
+- multiple
+ms.openlocfilehash: f36df08f6f750337cdd9c68458aebb92866d0a67
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>Exemplarische Vorgehensweise: Verwenden einer Konfigurationsdatei zum Definieren einer Datenquelle
+
 Diese exemplarische Vorgehensweise veranschaulicht, wie eine in der Datei „app.config“ definierte Datenquelle für Unittests verwendet wird. Sie erfahren, wie die Datei „app.config“ zum Definieren einer Datenquelle erstellt wird, die von der <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute>-Klasse verwendet werden kann. Die folgenden Aufgaben werden in dieser exemplarischen Vorgehensweise vorgestellt:  
   
 -   Erstellen der Datei „app.config“  
@@ -35,7 +37,7 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie eine in der Datei „app
 -   Zugreifen auf die Datenquellen über die <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute>-Klasse  
   
 ## <a name="prerequisites"></a>Erforderliche Komponenten  
- Um die exemplarische Vorgehensweise nachzuvollziehen, benötigen Sie Folgendes:  
+ Um diese exemplarische Vorgehensweise nachzuvollziehen, benötigen Sie Folgendes:  
   
 -   Visual Studio Enterprise  
   
@@ -148,20 +150,20 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie eine in der Datei „app
 |`dataTableName`|`"Sheet1$"`|  
 |`dataAccessMethod`|`"Sequential"`|  
   
- Das `microsoft.visualstudio.testtools`-Element sollte wie folgt aussehen:  
-  
-```  
+Das `microsoft.visualstudio.testtools`-Element sollte wie folgt aussehen:
+
+```xml
 <microsoft.visualstudio.testtools>  
     <dataSources>  
         <add name="MyJetDataSource" connectionString="MyJetConn" dataTableName="MyDataTable" dataAccessMethod="Sequential"/>  
         <add name="MyExcelDataSource" connectionString="MyExcelConn" dataTableName="Sheet1$" dataAccessMethod="Sequential"/>  
     </dataSources>  
 </microsoft.visualstudio.testtools>  
-```  
-  
- Die endgültige Datei „app.config“ sollte in etwa wie folgt aussehen:  
-  
-```  
+```
+
+Die endgültige Datei „app.config“ sollte in etwa wie folgt aussehen:
+
+```xml
 <?xml version="1.0" encoding="utf-8" ?>  
 <configuration>  
     <configSections>  
@@ -217,13 +219,11 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie eine in der Datei „app
   
 #### <a name="to-create-a-unit-test-using-the-appconfig-data-sources"></a>So erstellen Sie einen Komponententest mit in der Datei „app.config“ definierten Datenquellen  
   
-1.  Fügen Sie dem Testprojekt einen Komponententest hinzu.  
-  
-     Weitere Informationen finden Sie unter [Erstellen und Ausführen von Komponententests für vorhandenen Code](http://msdn.microsoft.com/en-us/e8370b93-085b-41c9-8dec-655bd886f173).  
+1.  Fügen Sie dem Testprojekt einen Komponententest hinzu.
   
 2.  Ersetzen Sie den automatisch generierten Inhalt des Komponententests durch folgenden Code:  
   
-    ```  
+    ```csharp
     using System;  
     using Microsoft.VisualStudio.TestTools.UnitTesting;  
   
@@ -264,12 +264,11 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie eine in der Datei „app
 3.  Sehen Sie sich die DataSource-Attribute an. Beachten Sie die Einstellungsnamen aus der Datei „app.config“.  
   
 4.  Erstellen Sie die Projektmappe, und führen Sie die Tests „MyTestMethod“ und „MyTestMethod2“ aus.  
-  
+
 > [!IMPORTANT]
->  Stellen Sie Elemente wie Datenquellen bereit, damit sie für den Test im Bereitstellungsverzeichnis zugänglich sind.  
-  
+> Stellen Sie Elemente wie Datenquellen bereit, damit sie für den Test im Bereitstellungsverzeichnis zugänglich sind.
+
 ## <a name="see-also"></a>Siehe auch
 
 [Komponententest für Code](../test/unit-test-your-code.md)  
-[Creating and Running Unit Tests for Existing Code (Erstellen und Ausführen von Komponententests für vorhandenen Code)](http://msdn.microsoft.com/en-us/e8370b93-085b-41c9-8dec-655bd886f173)  
 [Vorgehensweise: Erstellen eines datengesteuerten Komponententests](../test/how-to-create-a-data-driven-unit-test.md)

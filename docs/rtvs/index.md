@@ -7,20 +7,20 @@ ms.reviewer:
 ms.suite: 
 ms.technology:
 - devlang-r
-ms.devlang: r
+dev_langs:
+- R
 ms.tgt_pltfrm: 
 ms.topic: hero-article
-caps.latest.revision: 
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - data-science
-ms.openlocfilehash: f0ed20e323714ab28ae66c2522b613e1414a0973
-ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
+ms.openlocfilehash: 762b56336fa790d57ffa38510aa319e744b5959c
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="working-with-r-in-visual-studio"></a>Arbeiten mit R in Visual Studio
 
@@ -38,7 +38,7 @@ Gehen Sie folgendermaßen vor, um mit R in Visual Studio zu arbeiten:
 
 Folgen Sie anschließend den unten stehenden Links, um mehr über R-Features sowie über die allgemeinen Features von Visual Studio zu erfahren.
 
-| Feature | Beschreibung | Allgemeine Visual Studio-Dokumentation | 
+| Feature | description | Allgemeine Visual Studio-Dokumentation | 
 | --- | --- | --- |
 | [Visual Studio-Projektsystem](r-projects-in-visual-studio.md) | Organisieren und verwalten Sie verknüpfte Dateien in einer praktischen Struktur, und profitieren Sie von nützlichen Vorlagen für Elemente wie R-Code, R-Dokumentation, R Markdown, SQL-Abfragen und gespeicherte Prozeduren. Nutzen Sie zudem den [Paket-Manager](r-package-manager-in-visual-studio.md) und die [SQL Server-Integration](integrating-sql-server-with-r.md).  | [Projektmappen und Projekte in Visual Studio](../ide/solutions-and-projects-in-visual-studio.md) |
 | [Arbeitsbereich](r-workspaces-in-visual-studio.md) | RTVS kann in lokale und Remotearbeitsbereiche eingebunden werden – so können Sie R-Code lokal mit kleineren Datasets entwickeln, den Code dann auf leistungsfähigeren cloudbasierten Computern mit wesentlich größeren Datasets ausführen. | n/v |

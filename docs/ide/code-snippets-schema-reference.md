@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -13,16 +14,17 @@ helpviewer_keywords:
 - code snippets [Visual Studio], schema reference
 - IntelliSense Code Snippets, XML Schema
 ms.assetid: 58a60621-725f-4763-93b7-62ea5424ef88
-caps.latest.revision: "17"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: b3fdf8728e5afd839718e31e4eb6b113b8f9cde2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: c267b110b67a69b526bb7efc985bb22bb954b3a1
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="code-snippets-schema-reference"></a>Schemareferenz für Codeausschnitte
 IntelliSense-Codeausschnitte sind vorab erstellte Codeelemente, die mithilfe von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] direkt in eine Anwendung eingefügt werden können. Solche Codeausschnitte erhöhen die Produktivität, da sie Zeit bei der Eingabe von wiederholtem Code oder bei der Suche nach Beispielen einsparen. Mithilfe des XML-Schemas für IntelliSense-Codeausschnitte können Sie eigene Codeausschnitte oder XML-Codeausschnitte erstellen und den bereits in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] enthaltenen Codeausschnitten hinzufügen.  
@@ -240,7 +242,7 @@ Für dieses Codeelement sind drei Attribute verfügbar:
  Gibt eine Funktion an, die ausgeführt wird, wenn das Literal oder Objekt in Visual Studio den Fokus erhält.  
   
 > [!NOTE]
->  Das `Function`-Element wird nur in Visual C#-Codeausschnitten unterstützt.  
+>  Das `Function`-Element wird nur in C#-Codeausschnitten unterstützt.  
   
 ```xml  
 <Function>  
@@ -563,7 +565,7 @@ Für dieses Codeelement sind drei Attribute verfügbar:
   
 -   `Expansion`: Der Codeausschnitt kann an der Cursorposition eingefügt werden.  
   
--   `Refactoring`: Der Codeausschnitt wird während der Visual C#-Umgestaltung verwendet. `Refactoring` kann in benutzerdefinierten Codeausschnitten nicht verwendet werden.  
+-   `Refactoring`: Der Codeausschnitt wird während des C#-Refactorings verwendet. `Refactoring` kann in benutzerdefinierten Codeausschnitten nicht verwendet werden.  
   
 ##  <a name="snippettypes"></a> SnippetTypes-Element  
  Gruppiert einzelne `SnippetType`-Elemente. Wenn das `SnippetTypes`-Element nicht vorhanden ist, kann der Codeausschnitt an beliebiger Stelle im Code eingefügt werden.  

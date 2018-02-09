@@ -4,18 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: fffb892efdbe3ad2731de5b0b81f6e59f237f884
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- cplusplus
+ms.openlocfilehash: d0a00fb9fa52bcba39f4648fc3ffb9800890ac30
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="visual-c-intellisense"></a>Visual C++ Intellisense
 
@@ -23,13 +25,13 @@ IntelliSense für C++ ist für eigenständige Dateien sowie für Dateien innerha
 
 ## <a name="intellisense-features-in-c"></a>IntelliSense-Funktionen in C++
 
-IntelliSense ist ein Name für eine Gruppe von Funktionen, die die Codierung erleichtern. Da verschiedene Personen unterschiedliche Vorstellungen dazu haben, was praktisch ist, können im Prinzip alle IntelliSense-Funktionen auf der Eigenschaftenseite im **Text-Editor, C/C++, Erweitert** aktiviert oder deaktiviert werden .
+IntelliSense ist ein Name für eine Gruppe von Funktionen, die die Codierung erleichtern. Da verschiedene Personen unterschiedliche Vorstellungen dazu haben, was praktisch ist, können im Prinzip alle IntelliSense-Funktionen im Dialogfeld **Optionen** unter **Text-Editor** > **C/C++** > **Erweitert** aktiviert oder deaktiviert werden . Das Dialogfeld **Optionen** steht im Menü **Tools** auf der Menüleiste zur Verfügung.
 
-![Extras, Optionen, Text-Editor, C&#47;C&#43;&#43;, erweitert](../ide/media/sintellisensecpptoolsoptions.PNG "sIntelliSenseCppToolsOptions")
+![Dialogfeld „Tools“ > „Optionen“](../ide/media/sintellisensecpptoolsoptions.PNG)
 
 Sie können die in der folgenden Abbildung aufgeführten Menüelemente und Tastenkombinationen für den Zugriff auf IntelliSense verwenden.
 
-![Visual C&#43;&#43; IntelliSense-Menü](../ide/media/vs2015_cpp_intellisense_menu.png "vs2015_cpp_intellisense_menu")
+![IntelliSense-Menü](../ide/media/vs2015_cpp_intellisense_menu.png)
 
 ### <a name="statement-completion-and-member-list"></a>Anweisungsvervollständigung und Memberliste
 
@@ -39,19 +41,19 @@ Eine Liste der Symbole und ihrer Bedeutungen finden Sie unter [Symbole in der Kl
 
 ![Visual C&#43;&#43; vollständiges Word-Fenster](../ide/media/vs2015_cpp_complete_word.png "vs2015_cpp_complete_word")
 
-Wenn zum ersten Mal die Memberliste aufgerufen wird, zeigt sie nur Member am, auf die für den aktuellen Kontext zugegriffen werden kann. Wenn Sie danach **STRG+J** verwenden, werden alle Member unabhängig vom Zugriff angezeigt. Wenn Sie sie ein drittes Mal aufrufen, wird eine noch größere Liste der Programmelemente angezeigt. Sie können die Anweisungsvervollständigung auf der Seite **C/C++ Allgemeine Optionen** deaktivieren.
+Wenn zum ersten Mal die Memberliste aufgerufen wird, zeigt sie nur Member am, auf die für den aktuellen Kontext zugegriffen werden kann. Wenn Sie danach **STRG**+**J** drücken, werden alle Member unabhängig vom Zugriff angezeigt. Wenn Sie sie ein drittes Mal aufrufen, wird eine noch größere Liste der Programmelemente angezeigt. Sie können die Memberliste im Dialogfeld **Optionen** unter **Text-Editor** > **C/C++** > **Allgemein** > **Member automatisch auflisten** deaktivieren.
 
 ![Visual C&#43;&#43- Memberliste](../ide/media/vs2015_cpp_list_members.png "vs2015_cpp_list_members")
 
 ### <a name="parameter-help"></a>Parameterhilfe
 
-Wenn Sie eine öffnende geschweifte Klammer eines Funktionsaufrufs oder spitze Klammer in einer Variablendeklaration einer Klassenvorlage eingeben, zeigt der Editor ein kleines Fenster mit den Parametertypen für jede Überladung der Funktion oder des Konstruktors an. Der „current“-Parameter, der auf der Cursorposition basiert, wird in Fettschrift angezeigt. Sie können die Anweisungsvervollständigung auf der Seite **C/C++ Allgemeine Optionen** deaktivieren.
+Wenn Sie eine öffnende geschweifte Klammer eines Funktionsaufrufs oder spitze Klammer in einer Variablendeklaration einer Klassenvorlage eingeben, zeigt der Editor ein kleines Fenster mit den Parametertypen für jede Überladung der Funktion oder des Konstruktors an. Der current-Parameter, der &mdash;auf der Cursorposition basiert&mdash;, wird in Fettformatierung angezeigt. Sie können Parameterinformationen im Dialogfeld **Optionen** unterhalb von **Text-Editor** > **C/C++** > **Allgemein** > **Parameterinformationen** deaktivieren.
 
 ![Visual C&#43;&#43;-Parameterhilfe](../ide/media/vs_2015_cpp_param_help.png "vs_2015_cpp_param_help")
 
 ### <a name="quick-info"></a>QuickInfo
 
-Wenn Sie mit dem Mauszeiger auf eine Variable zeigen, wird ein kleines Fenster angezeigt, in dem die Informationen und der Header, in dem der Typ definiert wird, angezeigt werden. Zeigen Sie auf einen Funktionsaufruf, um die Signatur der Funktion anzuzeigen. Sie können die QuickInfo auf der Seite **Text-Editor, C/C++, Erweitert** deaktivieren.
+Wenn Sie mit dem Mauszeiger auf eine Variable zeigen, wird ein kleines Fenster angezeigt, in dem die Informationen und der Header, in dem der Typ definiert wird, angezeigt werden. Zeigen Sie auf einen Funktionsaufruf, um die Signatur der Funktion anzuzeigen. Sie können die QuickInfo im Dialogfeld **Optionen** unterhalb von **Text-Editor** > **C/C++** > **Allgemein** > **Automatische QuickInfo** deaktivieren.
 
 ![Visual C&#43;&#43;-QuickInfo](../ide/media/vs2015_cpp_quickinfo.png "vs2015_cpp_quickInfo")
 
@@ -63,7 +65,7 @@ Wellenlinien unter einem Programmelement (Variable, Schlüsselwort, geschweifte 
 
 ### <a name="code-colorization-and-fonts"></a>Farbliche Kennzeichnung von Code und Schriftarten
 
-Die standardmäßigen Farben und Schriftarten können mithilfe der Eigenschaftenseite **Umgebung, Schriftarten und Farben** geändert werden. Hier können Sie die Schriftarten für viele UI-Fenster ändern, nicht nur für den Editor. Die Einstellungen, die spezifisch für C++ sind, beginnen mit „C++“; die anderen Einstellungen gelten für alle Sprachen.
+Die Standardfarben und -schriftarten können im Dialogfeld **Optionen** unter **Umgebung** > **Schriftarten und Farben** geändert werden. Hier können Sie die Schriftarten für viele UI-Fenster ändern, nicht nur für den Editor. Die Einstellungen, die spezifisch für C++ sind, beginnen mit „C++“; die anderen Einstellungen gelten für alle Sprachen.
 
 ### <a name="cross-platform-intellisense"></a>Plattformübergreifendes IntelliSense
 
@@ -95,7 +97,7 @@ Beachten Sie Folgendes:
 
 ### <a name="intellisense-for-stand-alone-files"></a>IntelliSense für eigenständige Dateien
 
-Wenn Sie eine einzelne Datei außerhalb von Projekten öffnen, können Sie weiterhin IntelliSense verwenden. Sie können bestimmte Funktionen aktivieren oder deaktivieren, indem Sie zu **Text-Editor, C/C++, Erweitert** wechseln und IntelliSense-Funktionen aktivieren oder deaktivieren. Suchen Sie zum Konfigurieren von IntelliSense für einzelne Dateien, die nicht Teil eines Projekts sind, nach **IntelliSense und Suchen nach Nicht-Projektdateien** in dem Abschnitt **Erweitert**. Weitere Informationen finden Sie unter [Tour zu Visual C++](http://msdn.microsoft.com/en-us/499cb66f-7df1-45d6-8b6b-33d94fd1f17c).
+Wenn Sie eine einzelne Datei außerhalb von Projekten öffnen, können Sie weiterhin IntelliSense verwenden. Sie können bestimmte IntelliSense-Features im Dialogfeld **Optionen** unter **Text-Editor** > **C/C++** > **Erweitert** aktivieren oder deaktivieren. Suchen Sie zum Konfigurieren von IntelliSense für einzelne Dateien, die nicht Teil eines Projekts sind, nach dem Abschnitt **IntelliSense und Suchen nach Nicht-Projektdateien**.
 
 ![Visual C&#43;&#43; IntelliSense mit Einzeldatei](../ide/media/vs2015_cpp_single_file_intellisense.png "vs2015_cpp_single_file_intellisense")
 

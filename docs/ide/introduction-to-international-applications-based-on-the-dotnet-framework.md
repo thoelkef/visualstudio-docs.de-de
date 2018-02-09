@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -25,16 +26,17 @@ helpviewer_keywords:
 - resource files, fallback processes
 - user interface, culture setting
 ms.assetid: b0788993-e62d-4f68-8235-5f87b1d48525
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: 9acc8f2e015b6ca2ad26881eeb1f53012d96e56d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- dotnet
+ms.openlocfilehash: 20eefe3933767e357d977e2f3a5a0626aa555c39
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="introduction-to-international-applications-based-on-the-net-framework"></a>Einführung in internationale Anwendungen basierend auf .NET Framework
 In [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ist das Erstellen einer weltweit einsatzfähigen Anwendung zweiteilig: es besteht aus der Globalisierung, also dem Entwerfen einer Anwendung, die an unterschiedliche Kulturen angepasst werden kann, und aus der Lokalisierung, also dem Übersetzen von Ressourcen für eine bestimmte Kultur. Allgemeine Informationen zum Entwerfen von Anwendungen für ein internationales Publikum finden Sie unter [Empfehlungen für die Entwicklung weltweit einsatzfähiger Anwendungen](http://msdn.microsoft.com/Library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c).  
@@ -47,7 +49,7 @@ In [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ist das Erstellen e
   
  Mit dem Projektsystem sowohl für Windows Forms als auch für Web Form können Sie Ressourcendateien mithilfe einer Assembly-Ressourcendateivorlage erstellen, auf die Ressourcen zugreifen und Ihre eigenen Projekte erstellen. Mit Erstellen des Hauptassemblys werden immer auch Satellitenassemblys erstellt.  
   
- Das Aussehen einer lokalisierten Anwendung bei dessen Ausführung hängt von zwei Kulturwerten ab. (Eine *Kultur* setzt sich aus Informationen zu Benutzereinstellungen bezüglich der Sprache des Benutzers, dessen Umgebung und dessen kulturellen Konventionen zusammen.) Die Kultureinstellungen der Benutzeroberfläche legen fest, welche Ressourcen geladen werden. Die Kultur der Benutzeroberfläche ist auf `UICulture` in Web.config-Dateien und Seitendirektiven festgelegt, und auf <xref:System.Globalization.CultureInfo.CurrentUICulture%2A> in Visual Basics oder Visual C#-Code. Die Kultureinstellung bestimmt das Format von Werten wie z.B. Daten, Nummern, Währungen usw. Die Kultur ist auf `Culture` in Web.config-Dateien und Seitendirektiven festgelegt, und auf <xref:System.Globalization.CultureInfo.CurrentCulture%2A> in Visual Basics oder Visual C#-Code.  
+ Das Aussehen einer lokalisierten Anwendung bei dessen Ausführung hängt von zwei Kulturwerten ab. (Eine *Kultur* setzt sich aus Informationen zu Benutzereinstellungen bezüglich der Sprache des Benutzers, dessen Umgebung und dessen kulturellen Konventionen zusammen.) Die Kultureinstellungen der Benutzeroberfläche legen fest, welche Ressourcen geladen werden. Die Benutzeroberflächenkultur ist in Dateien namens „Web.config“ und Seitenanweisungen auf `UICulture` festgelegt, und in Visual Basic- oder C#-Code auf <xref:System.Globalization.CultureInfo.CurrentUICulture%2A>. Die Kultureinstellung bestimmt das Format von Werten wie z.B. Daten, Nummern, Währungen usw. Die Kultur ist in Dateien namens „Web.config“ und Seitenanweisungen auf `Culture` festgelegt, und in Visual Basic- oder C#-Code auf <xref:System.Globalization.CultureInfo.CurrentCulture%2A>.  
   
 ## <a name="see-also"></a>Siehe auch  
  <xref:System.Globalization>   

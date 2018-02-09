@@ -9,13 +9,14 @@ ms.tgt_pltfrm:
 ms.topic: article
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 author: gewarren
-ms.openlocfilehash: ca381d794569ebae4da2d46225d800dbfe4cf480
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 4573d87bbb7d5f447bf6d2038cec310132a0c9f7
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="using-different-web-browsers-with-coded-ui-tests"></a>Verwenden verschiedener Webbrowser mit Tests der programmierten UI
 Tests der programmierten UI können Tests für Webanwendungen durch Aufzeichnen Ihrer Tests mit Internet Explorer automatisieren. Sie können den Test anschließend anpassen und diesen entweder mit Internet Explorer oder anderen Browsertypen für diese Webanwendungen wiedergeben.  
@@ -78,7 +79,7 @@ Tests der programmierten UI können Tests für Webanwendungen durch Aufzeichnen 
     > [!TIP]
     >  Sie können die Selenium-Komponenten für browserübergreifende Coded UI-Tests [hier](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/) herunterladen.  
   
- Weitere Informationen zum Erstellen und Verwenden von Tests der programmierten UI finden Sie unter [Erstellen von Tests der programmierten UI](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate).  
+ Weitere Informationen zum Erstellen und Verwenden von Tests der programmierten UI finden Sie unter [Erstellen von Tests der programmierten UI](../test/use-ui-automation-to-test-your-code.md).  
   
 ### <a name="enable-debugging"></a>Debuggen aktivieren  
  Um das Debuggen der Webanwendung zu aktivieren, müssen Sie die folgenden Konfigurationsoptionen ausführen:  
@@ -103,11 +104,11 @@ Tests der programmierten UI können Tests für Webanwendungen durch Aufzeichnen 
   
 -   ![Erforderliche Komponente](../test/media/prereq.png "Prereq") Der Webbrowser Apple Safari wird nicht unterstützt.  
   
--   ![Prerequsite](../test/media/prereq.png "Prereq") Die Aktion zum Starten des Webbrowsers muss Teil des Tests der programmierten UI sein.  
+-   ![Erforderliche Komponente](../test/media/prereq.png "Prereq") Die Aktion zum Starten des Webbrowsers muss Teil des Tests der programmierten UI sein.  
   
      Wenn Sie einen Webbrowser bereits geöffnet haben und Schritte darin ausführen möchten, schlägt die Wiedergabe fehl, sofern Sie nicht Internet Explorer verwenden. Eine bewährte Methode ist daher, den Start des Webbrowsers in die Tests der programmierten UI einzubinden.  
   
--   ![Prerequsite](../test/media/prereq.png "Prereq") Das Automatisieren von browserspezifischen UI-Aktionen, wie Maximieren, Minimieren und Wiederherstellen wird nicht unterstützt.  
+-   ![Erforderliche Komponente](../test/media/prereq.png "Prereq") Das Automatisieren von browserspezifischen UI-Aktionen, wie Maximieren, Minimieren und Wiederherstellen wird nicht unterstützt.  
   
  **Tipps**  
   

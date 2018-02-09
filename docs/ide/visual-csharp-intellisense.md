@@ -1,5 +1,5 @@
 ---
-title: Visual C#-IntelliSense | Microsoft-Dokumentation
+title: C#-IntelliSense | Microsoft-Dokumentation
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -8,25 +8,26 @@ ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
-- Visual C#, IntelliSense
+- C#, IntelliSense
 - IntelliSense [C#]
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: 46f56fc6bad74b3144b3dbd4701248598a01883b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- dotnet
+ms.openlocfilehash: 9da494eaf71a02f7b46ce68b1cf9f781fe32e716
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
-# <a name="visual-c-intellisense"></a>Visual C#-IntelliSense
+# <a name="c-intellisense"></a>C#-IntelliSense
 
-Visual C# IntelliSense ist beim Codieren im Editor und beim Debuggen im Befehlsfenster [Unmittelbarer Modus](../ide/reference/immediate-window.md) verfügbar.
+C#-IntelliSense ist beim Codieren im Editor und beim Debuggen im Befehlsfenster [Unmittelbarer Modus](../ide/reference/immediate-window.md) verfügbar.
 
 ## <a name="completion-lists"></a>Vervollständigungslisten
 
-Die IntelliSense-Vervollständigungslisten in Visual C# enthalten Token von „Member auflisten“, „Wort vervollständigen“ und mehr. Die Listen ermöglichen schnellen Zugriff auf:
+Die IntelliSense-Vervollständigungslisten in C# enthalten u.a. Token von „Member auflisten“ und „Wort vervollständigen“. Die Listen ermöglichen schnellen Zugriff auf:
 
 - Member eines Typs oder Namespaces
 
@@ -42,15 +43,15 @@ Die Vervollständigungsliste in C# ist darüber hinaus intelligent genug, irrele
 
 ## <a name="code-snippets-in-completion-lists"></a>Codeausschnitte in Vervollständigungslisten
 
-In Visual C# enthält die Vervollständigungsliste Codeausschnitte, um Ihnen das einfache Einfügen vordefinierter Codetexte in das Programm zu ermöglichen. Codeausschnitte werden in der Vervollständigungsliste als [Verknüpfungstext](../ide/code-snippets-schema-reference.md#shortcut) des Ausschnitts angezeigt. Weitere Informationen über standardmäßig in Visual C# verfügbare Codeausschnitte finden Sie unter [Visual C#-Codeausschnitte](../ide/visual-csharp-code-snippets.md).
+In C# enthält die Vervollständigungsliste Codeausschnitte, um Ihnen das einfache Einfügen vordefinierter Codetexte in das Programm zu ermöglichen. Codeausschnitte werden in der Vervollständigungsliste als [Verknüpfungstext](../ide/code-snippets-schema-reference.md#shortcut) des Ausschnitts angezeigt. Weitere Informationen über standardmäßig in C# verfügbare Codeausschnitte finden Sie unter [C#-Codeausschnitte](../ide/visual-csharp-code-snippets.md).
 
 ## <a name="language-keywords-in-completion-lists"></a>Sprachschlüsselwörter in Vervollständigungslisten
 
-In Visual C# umfasst die Vervollständigungsliste zusätzlich Sprachschlüsselwörter. Weitere Informationen über Sprachschlüsselwörter in C# finden Sie unter [C#-Schlüsselwörter](/dotnet/csharp/language-reference/keywords/index).
+In C# umfasst die Vervollständigungsliste zusätzlich Programmiersprachen-Schlüsselwörter. Weitere Informationen über Sprachschlüsselwörter in C# finden Sie unter [C#-Schlüsselwörter](/dotnet/csharp/language-reference/keywords/index).
 
 ## <a name="extension-methods-in-completion-lists"></a>Erweiterungsmethoden in Vervollständigungslisten
 
-In Visual C# enthält die Vervollständigungsliste Erweiterungsmethoden innerhalb des jeweiligen Gültigkeitsbereichs.
+In C# enthält die Vervollständigungsliste Erweiterungsmethoden innerhalb des jeweiligen Gültigkeitsbereichs.
 
 > [!NOTE]
 > Von der Vervollständigungsliste werden nicht alle Erweiterungsmethoden für <xref:System.String>-Objekte angezeigt.
@@ -59,9 +60,9 @@ Für Erweiterungsmethoden wird ein anderes Symbol als für Instanzenmethoden ver
 
 ## <a name="filtered-completion-lists"></a>Gefilterte Vervollständigungslisten
 
-Unnötige Member werden von IntelliSense mithilfe von Filtern aus der Vervollständigungsliste entfernt. In Visual C# werden die Vervollständigungslisten für folgende Elemente gefiltert:
+Unnötige Member werden von IntelliSense mithilfe von Filtern aus der Vervollständigungsliste entfernt. In C# werden die Vervollständigungslisten für folgende Elemente gefiltert:
 
-- **Schnittstellen und Basisklassen**: IntelliSense entfernt automatisch Elemente aus den Vervollständigungslisten für Schnittstellen und Basisklassen, und zwar sowohl aus Basisklassen- und Schnittstellenlisten für die Klassendeklaration als auch aus Einschränkungslisten. So werden Enumerationen in der Vervollständigungsliste für Basisklassen beispielsweise nicht angezeigt, da Enumerationen für Basisklassen nicht verwendet werden können. Die Vervollständigungsliste für Basisklassen enthält nur Schnittstellen und Namespaces.  Wenn Sie in der Liste ein Element auswählen und anschließend ein Komma eingeben, entfernt IntelliSense Basisklassen aus der Vervollständigungsliste, da Visual C# mehrfache Vererbung nicht unterstützt. Das gleiche Verhalten gilt auch für Einschränkungsklauseln.
+- **Schnittstellen und Basisklassen**: IntelliSense entfernt automatisch Elemente aus den Vervollständigungslisten für Schnittstellen und Basisklassen, und zwar sowohl aus Basisklassen- und Schnittstellenlisten für die Klassendeklaration als auch aus Einschränkungslisten. So werden Enumerationen in der Vervollständigungsliste für Basisklassen beispielsweise nicht angezeigt, da Enumerationen für Basisklassen nicht verwendet werden können. Die Vervollständigungsliste für Basisklassen enthält nur Schnittstellen und Namespaces.  Wenn Sie in der Liste ein Element auswählen und anschließend ein Komma eingeben, entfernt IntelliSense Basisklassen aus der Vervollständigungsliste, da C# eine Mehrfachvererbung nicht unterstützt. Das gleiche Verhalten gilt auch für Einschränkungsklauseln.
 
 - **Attribute:** Beim Anwenden eines Attributs auf einen Typ wird die Vervollständigungsliste gefiltert, sodass sie nur die Typen enthält, die von den Namespaces abgeleitet werden, in denen diese Typen enthalten sind, z.B. <xref:System.Attribute>.
 
@@ -123,7 +124,7 @@ Unter jedem nicht definierten Bezeichner wird eine rote, wellenförmige Unterstr
 
 - Klicken Sie auf den nicht definierten Bezeichner. Eine Glühbirne für Schnellaktionen wird unter dem Bezeichner angezeigt. Klicken Sie auf die Glühbirne.
 
-- Klicken Sie auf den nicht definierten Bezeichner, und drücken Sie **STRG** + **.**. (STRG+Punkt).
+- Klicken Sie auf den nicht definierten Bezeichner, und drücken Sie **STRG** + **.** (STRG+Punkt).
 
 - Klicken Sie mit der rechten Maustaste auf den nicht definierten Bezeichner, und klicken Sie auf **Schnellaktionen und Refactorings**.
 
