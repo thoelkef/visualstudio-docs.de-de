@@ -4,7 +4,6 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - text templates, troubleshooting
@@ -12,12 +11,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: da101fa60d897a56c42b52ebbb8e0cc21a6d7a9f
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 8408cfca0df02a903e4b6394e2b60dcffcfb2904
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="debugging-a-t4-text-template"></a>Debuggen einer T4-Textvorlage
 Sie können Haltepunkte in den Textvorlagen festlegen. Klicken Sie zum Debuggen einer Textvorlage zur Entwurfszeit speichern Sie die Textvorlagendatei, und wählen Sie dann **T4-Vorlage Debuggen** im Kontextmenü der Datei im Projektmappen-Explorer. Um eine Laufzeit-Textvorlage zu debuggen, müssen Sie einfach die Anwendung debuggen, zu der sie gehört.  
@@ -46,7 +47,7 @@ Sie können Haltepunkte in den Textvorlagen festlegen. Klicken Sie zum Debuggen 
 |Der Pfad "{0}" muss entweder lokal auf diesem Computer oder Teil Ihrer vertrauenswürdigen Zone sein.|Tritt auf, wenn eine Direktive oder Assemblydirektive auf eine Datei verweist, die nicht auf dem lokalen Computer oder in der vertrauenswürdigen Zone des Netzwerks ist.|Stellen Sie sicher, dass das Verzeichnis, in dem sich die Direktive oder Assemblydirektiven befinden, in der vertrauenswürdigen Zone ist. Sie können der vertrauenswürdigen Zone durch Internet Explorer ein Netzwerkverzeichnis hinzufügen.|  
 |Mehrere Syntaxfehler z. B. "Ungültige Token-Erfassung" oder "Ein Namespace kann nicht direkt Member enthalten".|Zu viele schließende geschweifte Klammern im Vorlagencode. Der Compiler verwechselt dies mit dem Standardgenerierungscode.|Überprüfen Sie die Anzahl von schließenden geschweiften Klammern und Klammern in Codetrennzeichen.|  
 |Schleifen oder Bedingungen nicht kompiliert oder korrekt ausgeführt. Beispiel: `<#if (i>10)#> Number is: <#= i #>`.<br /><br /> Dieser Code gibt immer den Wert i aus. Nur "Nummer ist:" ist bedingt.|Verwenden Sie in C# immer geschweifte Klammern, um Textblöcke zu umgeben, die in Steueranweisungen eingebettet sind.|Fügen Sie geschweifte Klammern hinzu: `<#if (i>10) { #>    Number is: <#= i #><# } #>`.|  
-|„Ausdruck zu komplex“ beim Bearbeiten einer Entwurfszeitvorlage oder Kompilieren einer (vorverarbeiteten) Laufzeitvorlage.<br /><br /> [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] funktioniert nicht mehr, wenn Sie versuchen, von einer Laufzeitvorlage generierten Code zu überprüfen.|Textblock ist zu lang. T4 konvertiert Textblöcke in einen Zeichenfolgen-Verkettungsausdruck mit einem Zeichenfolgenliteral für jede Vorlagenzeile. Sehr lange Textblöcke können die Compiler größenbeschränkungen überschreiten.|Teilen Sie den langen Textblock mit einem Ausdrucksblock wie folgt:<br /><br /> `<#= "" #>`|  
+|„Ausdruck zu komplex“ beim Bearbeiten einer Entwurfszeitvorlage oder Kompilieren einer (vorverarbeiteten) Laufzeitvorlage.<br /><br /> [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] reagiert beim Versuch, die von einer Laufzeitvorlage generierten Code zu überprüfen.|Textblock ist zu lang. T4 konvertiert Textblöcke in einen Zeichenfolgen-Verkettungsausdruck mit einem Zeichenfolgenliteral für jede Vorlagenzeile. Sehr lange Textblöcke können die Compiler größenbeschränkungen überschreiten.|Teilen Sie den langen Textblock mit einem Ausdrucksblock wie folgt:<br /><br /> `<#= "" #>`|  
   
 ## <a name="warning-descriptions-and-fixes"></a>Warnungsbeschreibungen und Korrekturen  
  In der folgenden Tabelle sind die gängigsten Warnungen zusammen mit Patches (sofern verfügbar) aufgeführt.  

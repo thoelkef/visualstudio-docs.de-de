@@ -4,22 +4,23 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 2aaa2426d506f9c498c4428bc0e7f4e8134ac1ab
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 7eb6bc6542350439250ace3dbaa7f2ba920e93ed
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="creating-a-windows-forms-based-domain-specific-language"></a>Erstellen einer Windows Forms-basierten domänenspezifischen Sprache
 Sie können Windows Forms verwenden, um den Status eines Modells domänenspezifische Sprache (DSL), anstatt einen DSL-Diagramm anzuzeigen. Dieses Thema führt Sie durch ein, Binden von Windows Forms an eine DSL, indem Sie die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Visualization and Modeling SDK.  
   
- ![DSL &#45; WPF &#45; 2](../modeling/media/dsl-wpf-2.png "DSL-Wpf-2")  
+ ![DSL&#45;Wpf&#45;2](../modeling/media/dsl-wpf-2.png "DSL-Wpf-2")  
 Eine DSL-Instanz, die eine Windows-Formular-Benutzeroberfläche und den Modell-Explorer anzeigt.  
   
 ## <a name="creating-a-windows-forms-dsl"></a>Erstellen einer Windows Forms DSL  
@@ -70,7 +71,7 @@ Eine DSL-Instanz, die eine Windows-Formular-Benutzeroberfläche und den Modell-E
 ## <a name="updating-the-dsl-definition"></a>Aktualisieren der DSL-Definition  
  Die folgenden DSL-Definition in dieser exemplarischen Vorgehensweise verwendet wird.  
   
- ![DSL &#45; WPF &#45; 1](../modeling/media/dsl-wpf-1.png "DSL-Wpf-1")  
+ ![DSL&#45;Wpf&#45;1](../modeling/media/dsl-wpf-1.png "DSL-Wpf-1")  
   
 #### <a name="to-update-the-dsl-definition"></a>Zum Aktualisieren der DSL-definition  
   
@@ -123,13 +124,13 @@ Eine DSL-Instanz, die eine Windows-Formular-Benutzeroberfläche und den Modell-E
   
 2.  Wählen Sie **Objekt**, **Weiter**.  
   
-     Erweitern Sie **Dsl**, **Company.FarmApp**, und wählen Sie **Farm**, also in der Stammklasse des Modells. Wählen Sie **Fertig stellen**.  
+     Erweitern Sie **Dsl**, **Company.FarmApp**, und wählen Sie **Farm**, also in der Stammklasse des Modells. Klicken Sie auf **Fertig stellen**.  
   
      Im Projektmappen-Explorer die **UI** Projekt enthält jetzt **Properties\DataSources\Farm.datasource**  
   
      Die Eigenschaften und Beziehungen der Modellklasse werden im Fenster "Datenquellen" angezeigt.  
   
-     ![DslWpf &#45; 3](../modeling/media/dslwpf-3.png "DslWpf 3")  
+     ![DslWpf&#45;3](../modeling/media/dslwpf-3.png "DslWpf-3")  
   
 #### <a name="to-connect-your-model-to-a-form"></a>Verbindung von Ihrem Modell zu einem Formular  
   
@@ -304,7 +305,7 @@ Das Schema von Links zwischen Datenquellen und Ansichten.
   
      Sie sollten den Namen des Elements in der Rasteransicht der Daten bearbeiten können. Sie können auch dort löschen.  
   
- ![DSL &#45; WPF &#45; 2](../modeling/media/dsl-wpf-2.png "DSL-Wpf-2")  
+ ![DSL&#45;Wpf&#45;2](../modeling/media/dsl-wpf-2.png "DSL-Wpf-2")  
   
 ### <a name="about-the-code-to-add-an-element"></a>Über den Code zum Hinzufügen eines Elements  
  Für das neue Element Schaltflächen ist der folgende alternative Code etwas einfacher.  

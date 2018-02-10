@@ -4,17 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: e0ac8f2c9b82342f4e53ee055fc82746e8367070
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 974eb3d5fd0517d130fcd847e4e8c3d93ea65d60
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="how-to-open-a-model-from-file-in-program-code"></a>Gewusst wie: Öffnen eines Modells aus einer Datei im Programmcode
 DSL-Modelle können in jeder Anwendung geöffnet werden.  
@@ -42,7 +43,7 @@ DSL-Modelle können in jeder Anwendung geöffnet werden.
   
     -   Wenn diese nicht angezeigt werden die **.NET** Registerkarte der **Verweise hinzufügen** (Dialogfeld), klicken Sie auf die **Durchsuchen** Registerkarte, und navigieren Sie zu `%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Common\Assemblies\`.  
   
--   Ihre DSL-Assembly im Ordner "bin" Ihrer DSL-Projekt Sie finden. Der Name ist in der Regel im Format: *ihrunternehmen*. *IhrProjekt*`.Dsl.dll`.  
+-   Ihre DSL-Assembly im Ordner "bin" Ihrer DSL-Projekt Sie finden. Der Name ist in der Regel im Format: *ihrunternehmen*.* IhrProjekt*`.Dsl.dll`.  
   
 ## <a name="important-classes-in-the-dsl"></a>Wichtige Klassen in der DSL  
  Bevor Sie den Code, der der DSL liest schreiben können, sollten Sie die Namen einiger der Klassen, die von der DSL generiert wissen. Öffnen Sie in der Projektmappe DSL der **Dsl** Projekt, und suchen Sie in der **GeneratedCode** Ordner. Doppelklicken Sie alternativ auf die DSL-Assembly in Ihrem Projekt **Verweise**, und öffnen Sie den Namespace der DSL in **Objektkatalog**.  

@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4616b8df91ce87b8f886deb9143fa1ff55a976d7
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: 879b648fa761795efe38e45e1becf0433abf3755
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="step-2-writing-and-running-code"></a>Schritt 2: Schreiben und Ausführen von Code
 
@@ -80,7 +80,7 @@ Obwohl Projektdateien im Projektmappen-Explorer verwaltet werden, arbeiten Sie m
     ```
 
     > [!Tip]
-    > Vervollständigungen arbeiten während der Eingabe mit Teilzeichenfolgen, übereinstimmenden Teilen von Wörtern, Buchstaben am Anfang der Wörter und sogar übersprungenen Zeichen. Weitere Informationen finden Sie im Abschnitt [Vervollständigungen](code-editing.md#completions) im Artikel „Bearbeiten von Python-Code“.
+    > Vervollständigungen arbeiten während der Eingabe mit Teilzeichenfolgen, übereinstimmenden Teilen von Wörtern, Buchstaben am Anfang der Wörter und sogar übersprungenen Zeichen. Weitere Informationen finden Sie im Abschnitt [Vervollständigungen](editing-python-code-in-visual-studio.md#completions) im Artikel „Bearbeiten von Python-Code“.
 
 1. Fügen Sie etwas mehr Code hinzu, um die Kosinuswerte für 360 Grad auszugeben:
 
@@ -98,7 +98,7 @@ Obwohl Projektdateien im Projektmappen-Explorer verwaltet werden, arbeiten Sie m
 
 ## <a name="going-deeper"></a>Vertiefung
 
-- [Bearbeiten von Code](code-editing.md)
-- [Formatieren von Code](code-formatting.md)
-- [Refactoringcode](code-refactoring.md)
-- [Verwenden von PyLint](code-pylint.md)
+- [Bearbeiten von Code](editing-python-code-in-visual-studio.md)
+- [Formatieren von Code](formatting-python-code.md)
+- [Refactoring von Code](refactoring-python-code.md)
+- [Verwenden von PyLint](linting-python-code.md)

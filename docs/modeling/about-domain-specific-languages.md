@@ -4,18 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: Domain-Specific Language
+helpviewer_keywords:
+- Domain-Specific Language
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: f98b65fbb732b6736c91c605f03b7f2de2325487
-ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 9357c55b204d521eb5cd77af328636485c490ff4
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="about-domain-specific-languages"></a>Informationen zu domänenspezifischen Sprachen
 
@@ -53,7 +55,7 @@ Außerdem können Menübefehle und andere Tools, mit denen Benutzer Bearbeiten d
   
 In der Regel wird eine domänenspezifische Sprache erstellt, wenn ein Entwicklungsteam hat ähnlichen Code für verschiedene Produkte schreiben. Ein Unternehmen, die Systeme für die Gepäckbeförderung spezialisiert kann z. B. eine Gepäck nachverfolgen DSL definieren, aus der sie Teil des Codes für jede Installation generieren können. Die Vorteile der DSL sind, dass es, dass von ihm generierte Code zuverlässig ist und das System schnell aktualisiert werden kann, wenn die Anforderungen der Kunden ändern von ihren Kunden und verstanden werden können.  
   
-[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]können Sie erstellen eine domänenspezifische Sprache, die Ihre eigenen Grafikdesigner und eigene Notation Diagramm verfügt, und klicken Sie dann die Sprache verwenden, um die entsprechenden Quellcode für jedes Projekt generieren.  
+[!INCLUDE[dsl](../modeling/includes/dsl_md.md)] können Sie erstellen eine domänenspezifische Sprache, die Ihre eigenen Grafikdesigner und eigene Notation Diagramm verfügt, und klicken Sie dann die Sprache verwenden, um die entsprechenden Quellcode für jedes Projekt generieren.  
   
 ## <a name="domain-specific-development"></a>Domänenspezifische Entwicklung
 

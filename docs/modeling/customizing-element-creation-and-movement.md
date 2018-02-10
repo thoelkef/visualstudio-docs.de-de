@@ -4,19 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.dsltools.dsldesigner.elementmergedirective
-helpviewer_keywords: Domain-Specific Language, element merge directives
+f1_keywords:
+- vs.dsltools.dsldesigner.elementmergedirective
+helpviewer_keywords:
+- Domain-Specific Language, element merge directives
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 0310821ab2968f0709b002166d188a4ebc4c2ff4
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: ac29f7b745c9698f6051bce6a7b54a1476bf8a7c
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="customizing-element-creation-and-movement"></a>Anpassen der Elementerstellung und -verschiebung
 Sie können ein Element auf eine andere gezogen werden, aus der Toolbox oder in einem einfügen bzw. Verschiebevorgang ab. Können die verschobenen Elemente, die mit der Zielelemente verknüpft mit den Beziehungen, die Sie angeben.  
@@ -37,7 +40,7 @@ Sie können ein Element auf eine andere gezogen werden, aus der Toolbox oder in 
   
  Die Zuständigkeit für ein EMD besteht darin, entscheiden, wie ein Objekt oder eine Gruppe von Objekten in einer bestimmten Stelle im Modell zusammengeführt werden sollen. Insbesondere können sie entscheidet, welche Beziehungen instanziiert werden sollte, um der Gruppe "zusammengeführte" in das Modell zu verknüpfen. Sie können auch zum Festlegen von Eigenschaften und zum Erstellen zusätzlicher Objekte anpassen.  
   
- ![DSL &#45; EMD &#95; Merge](../modeling/media/dsl-emd_merge.png "DSL-EMD_Merge")  
+ ![DSL&#45;EMD&#95;Merge](../modeling/media/dsl-emd_merge.png "DSL-EMD_Merge")  
 Die Rolle des eine Merge-Element-Direktive  
   
  Ein EMD wird automatisch generiert, wenn Sie eine Einbetten von Beziehung definieren. Diese Standardeinstellung EMD erstellt eine Instanz der Beziehung an, wenn Benutzer neue Instanzen der untergeordneten zum übergeordneten Element hinzufügen. Sie können diese Standardeinstellung EMDs z. B. durch Hinzufügen von benutzerdefiniertem Code ändern.  
@@ -47,7 +50,7 @@ Die Rolle des eine Merge-Element-Direktive
 ## <a name="defining-an-element-merge-directive"></a>Definieren eine Element-Merge-Anweisung  
  Sie können Element Merge Direktiven Domänenklassen, domänenbeziehungen, Formen, Connectors und Diagrammen hinzufügen. Sie können finden sie unter der empfangenden Domänenklasse im Explorer für DSL oder hinzufügen. Die empfangende Klasse ist die Domänenklasse des Elements, das bereits im Modell, und klicken Sie auf dem das neue oder kopierte Element zusammengeführt werden.  
   
- ![DSL &#45; EMD &#95; Details](../modeling/media/dsl-emd_details.png "DSL-EMD_Details")  
+ ![DSL&#45;EMD&#95;Details](../modeling/media/dsl-emd_details.png "DSL-EMD_Details")  
   
  Die **Indizierung Klasse** ist die Domänenklasse von Elementen, die Mitglieder der empfangenden Klasse zusammengeführt werden können. Instanzen einer Unterklasse von der Indizierung-Klasse werden auch von diesem EMD zusammengeführt werden, es sei denn, Sie legen **gilt für Unterklassen** auf "false".  
   

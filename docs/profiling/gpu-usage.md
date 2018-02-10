@@ -4,20 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 957fed3c-4ded-4e05-87c6-ccc33de65349
-caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 3a79d924e8f20079040f29a85854555e214e4281
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 9fdb367336d5e5a539f63fefbe97c04524bbdf6a
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="gpu-usage"></a>GPU-Nutzung
 Verwenden Sie das GPU-Nutzungstool im Visual Studio-Leistungs- und Diagnosehub, um die allgemeine Hardwarenutzung Ihrer Direct3D-App besser zu verstehen. Mit dem Tool können Sie feststellen, ob die Leistung Ihrer App CPU- oder GPU-gebunden ist, und Sie erhalten Einblicke in eine effektivere Nutzung der Plattformhardware. GPU-Nutzung unterstützt Apps, die Direct3D 12, Direct3D 11 und Direct3D 10 verwenden. Andere Grafik-APIs, wie z. B. Direct2D oder OpenGL werden nicht unterstützt.  
@@ -118,7 +118,7 @@ Ab Visual Studio 2017 können diese Daten mit [GPUView](/windows-hardware/driver
 |**Thread-ID**|Die Thread-ID, von der das Ereignis stammt.|  
   
 > [!IMPORTANT]
->  Windows 8.1 ist für Ereignisattribute erforderlich. Wenn GPU oder Treiber nicht die erforderlichen Instrumentationsfeatures unterstützen, werden darüber hinaus alle Ereignisse mit dem Zusatz „ohne Attribute“ aufgeführt. Stellen Sie sicher, dass Ihr GPU-Treiber aktualisiert ist, und versuchen Sie es erneut, wenn dieses Problem auftritt. Weitere Informationen finden Sie unter [Unterstützte Hardware und Treiber](#hwsupport) weiter unten.  
+>  Wenn GPU oder Treiber nicht die erforderlichen Instrumentationsfeatures unterstützen, werden alle Ereignisse mit dem Zusatz „ohne Attribute“ aufgeführt. Stellen Sie sicher, dass Ihr GPU-Treiber aktualisiert ist, und versuchen Sie es erneut, wenn dieses Problem auftritt. Weitere Informationen finden Sie unter [Unterstützte Hardware und Treiber](#hwsupport) weiter unten.  
   
 ## <a name="gpu-usage-settings"></a>GPU-Nutzungseinstellungen  
  Sie können das GPU-Nutzungstool so konfigurieren, dass die Erfassung von Profilerstellungsinformationen zurückgestellt wird, und nicht bereits beim Appstart beginnt. Da die Größe der Profilerstellungsinformationen beträchtlich sein kann, ist dies hilfreich, dass es erst zu einem späteren Zeitpunkt zur Verlangsamung der Leistung Ihrer App kommt.  

@@ -1,5 +1,5 @@
 ---
-title: "Ausführen von Komponententests für UWP-Apps in Visual Studio | Microsoft-Dokumentation"
+title: "Ausführen von Komponententests in Visual Studio| Microsoft-Dokumentation"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -9,49 +9,23 @@ ms.tgt_pltfrm:
 ms.topic: article
 ms.author: gewarren
 manager: ghogen
-ms.workload: uwp
+ms.workload:
+- uwp
 author: gewarren
-ms.openlocfilehash: c9610360c0ea6d32c4825b1e2768f3eaaa06a6fa
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: c06ad430664f1e6cd5010e4af5d8d28efa1f8d25
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/01/2018
 ---
-# <a name="run-unit-tests-for-uwp-apps-in-visual-studio"></a>Ausführen von Komponententests für UWP-Apps in Visual Studio
-In diesem Thema wird beschrieben, wie Sie Komponententests mithilfe des Test-Explorers in Microsoft Visual Studio ausführen.  
-  
-> [!NOTE]
->  In den Themen in diesem Abschnitt wird die Funktionalität von Visual Studio Express für Windows 8 beschrieben. Visual Studio Community, Enterprise und Professional stellen zusätzliche Funktionen für Komponententests bereit.  
->   
->  -   Sie können ein beliebiges Drittanbieter- oder Open Source-Framework für Komponententests verwenden, mit dem ein Add-On-Adapter für den Microsoft-Test-Explorer erstellt wurde. Sie können außerdem Codeabdeckungsinformationen für Ihre Tests analysieren und anzeigen.  
-> -   Führen Sie Ihre Tests nach jedem Build aus. Sie können zudem Microsoft Fakes verwenden, ein Isolationsframework für verwalteten Code, mit dem Sie Ihre Tests auf den eigenen Code ausrichten können, indem Sie Testcode für System- und Drittanbieterfunktionalität ersetzen.  
->   
->  Weitere Informationen finden Sie unter [Komponententest für Code](../test/unit-test-your-code.md) in der MSDN Library.  
-  
-##  <a name="BKMK_In_this_topic"></a> In diesem Thema  
- [Komponententestframeworks und Testprojekte](#BKMK_Unit_test_frameworks_and_test_projects)  
-  
- [Ausführen von Tests im Test-Explorer](#BKMK_Running_tests_in_Test_Explorer)  
-  
--   [Ausführen von Tests](#BKMK_Running_tests)  
-  
- [Anzeigen von Testergebnissen](#BKMK_Viewing_test_results)  
-  
--   [Anzeigen von Testdetails](#BKMK_Viewing_test_details)  
-  
--   [Anzeigen des Quellcodes einer Testmethode](#BKMK_Viewing_the_source_code_of_a_test_method)  
-  
- [Organisieren der Testliste](#BKMK_Organizing_the_test_list)  
-  
--   [Gruppieren von Tests](#BKMK_Grouping_tests)  
-  
--   [Suchen und Filtern der Testliste](#BKMK_Searching_and_filtering_the_test_list)  
-  
- [Debuggen von Komponententests](#BKMK_Debugging_unit_tests)  
-  
-##  <a name="BKMK_Unit_test_frameworks_and_test_projects"></a> Komponententestframeworks und Testprojekte  
- Visual Studio Express für UWP-Apps schließt die Microsoft-Komponententest-Frameworks für verwalteten und nativen C++-Code ein. Im Test-Explorer können Tests aus mehreren Testprojekten in einer Projektmappe und aus Testklassen ausgeführt werden, die Teil der Produktionscodeprojekte sind. Testprojekte können sich aus jeder beliebigen Kombination von Visual C++- oder Visual C#- und Visual Basic-Komponententest-Frameworks zusammensetzen. Wenn der zu testende Code für .NET Framework geschrieben wird, kann das Testprojekt in jeder .NET Framework-Sprache geschrieben sein, unabhängig von der Sprache des Zielcodes. Systemeigene C/C++-Codeprojekte müssen mithilfe eines Komponententest-Frameworks für C++ getestet werden.  
-  
+# <a name="run-unit-tests-in-visual-studio"></a>Ausführen von Komponententests in Visual Studio
+
+In diesem Thema wird beschrieben, wie Sie Komponententests mithilfe des Test-Explorers in Microsoft Visual Studio ausführen.
+
+##  <a name="BKMK_Unit_test_frameworks_and_test_projects"></a> Komponententestframeworks und Testprojekte
+
+Visual Studio enthält die Komponententest-Frameworks von Microsoft für verwalteten und nativen C++-Code. Im Test-Explorer können Tests aus mehreren Testprojekten in einer Projektmappe und aus Testklassen ausgeführt werden, die Teil der Produktionscodeprojekte sind. Testprojekte können sich aus jeder beliebigen Kombination von Visual C++- oder Visual C#- und Visual Basic-Komponententest-Frameworks zusammensetzen. Wenn der zu testende Code für .NET Framework geschrieben wird, kann das Testprojekt in jeder .NET Framework-Sprache geschrieben sein, unabhängig von der Sprache des Zielcodes. Systemeigene C/C++-Codeprojekte müssen mithilfe eines Komponententest-Frameworks für C++ getestet werden.
+
 ##  <a name="BKMK_Running_tests_in_Test_Explorer"></a> Ausführen von Tests im Test-Explorer  
  Wenn Sie das Testprojekt erstellen, werden die Tests im Test-Explorer angezeigt. Falls der Test-Explorer nicht geöffnet ist, wählen Sie im Visual Studio-Menü nacheinander **Test** , **Fenster**und dann **Test-Explorer**aus.  
   
@@ -117,7 +91,7 @@ In diesem Thema wird beschrieben, wie Sie Komponententests mithilfe des Test-Exp
 1.  Legen Sie im Visual Studio-Editor in mindestens einer zu debuggenden Testmethode einen Haltepunkt fest.  
   
     > [!NOTE]
-    >  Da Testmethoden in jeder die oft ausgegebene Befehlszeilen  Reihenfolge ausgeführt werden können, legen Sie Haltepunkte in allen Testmethoden fest, die Sie debuggen möchten.  
+    > Da Testmethoden in jeder die oft ausgegebene Befehlszeilen  Reihenfolge ausgeführt werden können, legen Sie Haltepunkte in allen Testmethoden fest, die Sie debuggen möchten.  
   
 2.  Wählen Sie im Test-Explorer die Testmethoden aus, und wählen Sie dann im Kontextmenü **Ausgewählte Tests debuggen** aus.  
   

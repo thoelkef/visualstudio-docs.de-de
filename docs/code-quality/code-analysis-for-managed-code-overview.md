@@ -7,19 +7,21 @@ ms.suite:
 ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.projectpropertypages.codeanalysis
+f1_keywords:
+- vs.projectpropertypages.codeanalysis
 helpviewer_keywords:
 - code analysis, managed code
 - managed code, code analysis
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: 8739c5aafbc8914e3de5f0a51659b40234fa079c
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.workload:
+- dotnet
+ms.openlocfilehash: 5d30f84194ef7a48de106698c9ad4569e947923c
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="code-analysis-for-managed-code-overview"></a>Codeanalyse für verwalteten Code (Übersicht)
 
@@ -39,11 +41,11 @@ Codeanalyse manuell an einem Projekt ausführen, in der Menüleiste wählen **an
 
 Codeanalyseregeln für verwalteten Code in gruppiert *-Regelsätze*. Sie können einen Standardregelsatz von Microsoft verwenden, oder Sie können eine benutzerdefinierte Regel erstellen, um eine bestimmte Anforderung zu erfüllen. Weitere Informationen finden Sie unter [mithilfe von Regelsätzen zum Gruppe Codeanalyseregeln](../code-quality/using-rule-sets-to-group-code-analysis-rules.md).
 
-## <a name="in-source-suppression"></a>Unterdrückung im Quellcode
+## <a name="suppress-warnings"></a>Warnungen unterdrücken
 
 Es kann häufig hilfreich sein anzugeben, dass eine Warnung nicht zutreffend ist. Entwickler und andere Personen, die später möglicherweise den Code überprüfen, wissen dann, dass eine Warnung untersucht und unterdrückt oder ignoriert wurde.
 
-In der Quelle ist die Unterdrückung von Warnungen über benutzerdefinierte Attribute implementiert. Fügen Sie zum Unterdrücken einer Warnung das Attribut `SuppressMessage` zum Quellcode hinzu, wie im folgenden Beispiel dargestellt:
+In der Quelle die Unterdrückung von Warnungen wird durch benutzerdefinierte Attribute implementiert. Fügen Sie zum Unterdrücken einer Warnung das Attribut `SuppressMessage` zum Quellcode hinzu, wie im folgenden Beispiel dargestellt:
 
 ```csharp
 [System.Diagnosis.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1039:ListsAreStrongTyped")]
@@ -53,7 +55,10 @@ Public class MyClass
 }
 ```
 
-Weitere Informationen finden Sie unter [unterdrücken Sie Warnungen mithilfe des SuppressMessage-Attributs](../code-quality/suppress-warnings-by-using-the-suppressmessage-attribute.md).
+Weitere Informationen finden Sie unter [Unterdrücken von Warnungen](../code-quality/in-source-suppression-overview.md).
+
+> [!NOTE]
+> Wenn Sie ein Projekt zu Visual Studio 2017 migrieren, können Sie plötzlich eine Flut von codeanalysewarnungen Datenwachstums werden. Wenn Sie nicht bereit sind, korrigieren Sie die Warnungen und Codeanalyse vorübergehend deaktivieren möchten, öffnen Sie die Eigenschaftenseiten des Projekts (**Projekt** > ***Projekt* Eigenschaften...** ) und fahren Sie mit der **Codeanalyse** Registerkarte. Deaktivieren Sie **Codeanalyse für Build aktivieren**, und erstellen Sie das Projekt dann erneut. Alternativ können Sie einen anderen, kleineren Regelsatz, der für den Code ausführen auswählen. Denken Sie daran, aktivieren Sie die Codeanalyse auf Wenn Sie die Warnungen beheben bereit sind.
 
 ## <a name="run-code-analysis-as-part-of-check-in-policy"></a>Ausführen der Codeanalyse im Rahmen der Eincheckrichtlinien
 

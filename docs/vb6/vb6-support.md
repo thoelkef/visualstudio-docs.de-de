@@ -1,21 +1,23 @@
 ---
 title: "Unterstützt Sie bei Visual Basic 6.0-Anweisung | Microsoft Docs"
 ms.date: 08/28/2017
-ms.technology: devlang-visual-basic
+ms.technology: devlang-vb
 ms.topic: article
-dev_langs: VB
+dev_langs:
+- VB
 helpviewer_keywords:
 - VB6 support
 - Visual Basic 6.0 support
 ms.assetid: ffc5ba4d-44d7-4ef7-a3f6-38a8738bf127
 author: paulyuk
 ms.author: paulyuk
-ms.workload: paulyuk
-ms.openlocfilehash: a8977aad735a115089685ed0032b3d358d8b89c8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- paulyuk
+ms.openlocfilehash: cb25f85be6c77dfbef6969435d14f2cae61debf2
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="support-statement-for-visual-basic-60-on-windows"></a>Supportinformationen Sie für Visual Basic 6.0 unter Windows
 
@@ -177,54 +179,54 @@ Wenn Sie ein Problem mit der Visual Basic 6.0-Anwendung, die Ausführung auf ein
 
 | | | | |
 |---|---|---|---|
-|ATL.dll|         msadcor.dll|     Msorcl32.dll|   OLE2.dll|
-|"Asycfilt.dll"|    Msadcs.dll|      Msvbvm60.dll|   Ole32.dll|
-|Comcat.dll|      MSADDS.dll|      Msvcirt.dll|    Oleaut32.dll|
-|compobj.dll|     msaddsr.dll|     Msvcrt.dll|     Oleaut32.dll|
-|dbnmpntw.dll weiter|    msader15.dll|    Msvcrt40.dll|   Oledb32.dll|
-|Dcomcnfg.exe|    "MSADO15.dll"|     mtxdm.dll|      Oledb32r.dll|
-|Dllhost.exe|     msador15.dll|    "MtxOCI.dll"|     oledlg.dll|
-|Ds16gt.dll|      Msadrh15.dll|    Odbc16gt.dll|   "OLEPRO32.dll"|
-|ds32gt.dll|      Mscpxl32.dll|    Datei "ODBC32.dll"|     olethk32.dll|
-|Expsrv.dll|      Msdadc.dll|      Odbc32gt.dll|   regsvr32.exe|
-|hh.exe|          MSDAENUM.dll|    Odbcad32.exe|   rpcns4.dll|
-|Hhctrl.ocx|      msdaer.dll|      "ODBCCP32."|   "rpcrt4.dll"|
-|Datei "Imagehlp.dll"|    "MSDAORA.dll"|     ODBCCP32.dll|   Scrrun.dll|
-|iprop.dll|       msdaosp.dll|     ODBCCR32.dll|   Secur32.dll|
-|Dateien "itircl.dll"|      msdaprst.dll|    odbccu32.dll|   simpdata.tlb|
-|Itss.dll|        MSDAPS.dll|      odbcint.dll|    SQLOLEDB.dll|
-|MFC40.dll|       MSDASC.dll|      odbcji32.dll|   Sqlsrv32.dll|
-|Mfc42.dll|       MSDASQL.dll|     odbcjt32.dll|   Stdole2.tlb|
-|mfc42enu.dll|    msdasqlr.dll|    Odbctrac.dll|   stdole32.tlb|
-|msadce.dll|      msdatsrc.tlb|    oddbse32.dll|   Storage.dll|
-|msadcer.dll|     msdatt.dll|      odexl32.dll|    VBAJET32.dll|
-|msadcf.dll|      Msdfmap.dll|     odfox32.dll|    vfpodbc.dll|
-|msadcfr.dll|     "Msdfmap.ini"|     odpdx32.dll|                |
-|msadco.dll|      Msjtes40.dll|    odtext32.dll|               |
+|atl.dll|         msadcor.dll|     msorcl32.dll|   ole2.dll|
+|asycfilt.dll|    msadcs.dll|      msvbvm60.dll|   ole32.dll|
+|comcat.dll|      msadds.dll|      msvcirt.dll|    oleaut32.dll|
+|compobj.dll|     msaddsr.dll|     msvcrt.dll|     oleaut32.dll|
+|dbnmpntw.dll|    msader15.dll|    msvcrt40.dll|   oledb32.dll|
+|dcomcnfg.exe|    msado15.dll|     mtxdm.dll|      oledb32r.dll|
+|dllhost.exe|     msador15.dll|    mtxoci.dll|     oledlg.dll|
+|ds16gt.dll|      msadrh15.dll|    odbc16gt.dll|   olepro32.dll|
+|ds32gt.dll|      mscpxl32.dll|    odbc32.dll|     olethk32.dll|
+|expsrv.dll|      msdadc.dll|      odbc32gt.dll|   regsvr32.exe|
+|hh.exe|          msdaenum.dll|    odbcad32.exe|   rpcns4.dll|
+|hhctrl.ocx|      msdaer.dll|      odbccp32.cpl|   rpcrt4.dll|
+|imagehlp.dll|    msdaora.dll|     odbccp32.dll|   scrrun.dll|
+|iprop.dll|       msdaosp.dll|     odbccr32.dll|   secur32.dll|
+|itircl.dll|      msdaprst.dll|    odbccu32.dll|   simpdata.tlb|
+|itss.dll|        msdaps.dll|      odbcint.dll|    sqloledb.dll|
+|mfc40.dll|       msdasc.dll|      odbcji32.dll|   sqlsrv32.dll|
+|mfc42.dll|       msdasql.dll|     odbcjt32.dll|   stdole2.tlb|
+|mfc42enu.dll|    msdasqlr.dll|    odbctrac.dll|   stdole32.tlb|
+|msadce.dll|      msdatsrc.tlb|    oddbse32.dll|   storage.dll|
+|msadcer.dll|     msdatt.dll|      odexl32.dll|    vbajet32.dll|
+|msadcf.dll|      msdfmap.dll|     odfox32.dll|    vfpodbc.dll|
+|msadcfr.dll|     msdfmap.ini|     odpdx32.dll|                |
+|msadco.dll|      msjtes40.dll|    odtext32.dll|               |
 
 ## <a name="supported-runtime-files-to-distribute-with-your-application"></a>Unterstützte runtimedateien mit der Anwendung verteilen.
 
 | | | | |
 |---|---|---|---|
-|comct232.ocx |MSBind.dll   |msdbrptr.dll  |MSstdfmt.dll| 
-|comct332.ocx |mscdrun.dll  |"Msflxgrd.ocx"  |msstkprp.dll| 
-|Comctl32.ocx |Mschrt20.ocx |mshflxgd.ocx  |mswcrun.dll|  
-|Comdlg32.ocx |Mscomct2.ocx |mshtmpgr.dll  |"Mswinsck.ocx"| 
-|dbadapt.dll  |"Mscomctl.ocx" |MSINET.ocx    |Picclp32.ocx| 
-|dbgrid32.ocx |Mscomm32.ocx |Msmapi32.ocx  |"Richtx32.ocx"| 
-|dblist32.ocx |MSDATGRD.ocx |MSMask32.ocx  |sysinfo.ocx|  
-|Mci32.ocx    |msdatlst.ocx |Msrdc20.ocx   |TABCTL32.ocx| 
-|msadodc.ocx  |msdatrep.ocx |MSRDO20.dll
+|comct232.ocx |msbind.dll   |msdbrptr.dll  |msstdfmt.dll| 
+|comct332.ocx |mscdrun.dll  |msflxgrd.ocx  |msstkprp.dll| 
+|comctl32.ocx |mschrt20.ocx |mshflxgd.ocx  |mswcrun.dll|  
+|comdlg32.ocx |mscomct2.ocx |mshtmpgr.dll  |mswinsck.ocx| 
+|dbadapt.dll  |mscomctl.ocx |msinet.ocx    |picclp32.ocx| 
+|dbgrid32.ocx |mscomm32.ocx |msmapi32.ocx  |richtx32.ocx| 
+|dblist32.ocx |msdatgrd.ocx |msmask32.ocx  |sysinfo.ocx|  
+|mci32.ocx    |msdatlst.ocx |msrdc20.ocx   |tabctl32.ocx| 
+|msadodc.ocx  |msdatrep.ocx |msrdo20.dll
 
 ## <a name="unsupported-but-supported-and-compatible-updates-or-upgrades-are-available"></a>Nicht unterstützt, jedoch kompatibel und unterstützt Updates bzw. Upgrades verfügbar sind.
 
 | | | | |
 |---|---|---|---|
-|Dao350.dll|   msexch35.dll| msjter35.dll| msrepl35.dll|
-|Mdac_typ.exe| msexcl35.dll| msjtor35.dll| Mstext35.dll bietet|
-|MSChart.ocx|  msjet35.dll|  msltus35.dll| Msxbse35.dll|
+|dao350.dll|   msexch35.dll| msjter35.dll| msrepl35.dll|
+|mdac_typ.exe| msexcl35.dll| msjtor35.dll| mstext35.dll|
+|mschart.ocx|  msjet35.dll|  msltus35.dll| msxbse35.dll|
 |msdaerr.dll|  msjint35.dll| mspdox35.dll| odbctl32.dll|
-|msdatl2.dll|  "MSjt4jlt.dll"| msrd2x35.dll| oledb32x.dll|
+|msdatl2.dll|  msjt4jlt.dll| msrd2x35.dll| oledb32x.dll|
 
 ## <a name="unsupported-runtime-files"></a>Nicht unterstützte runtimedateien
 
@@ -232,12 +234,12 @@ Wenn Sie ein Problem mit der Visual Basic 6.0-Anwendung, die Ausführung auf ein
 |---|---|---|---|
 |anibtn32.ocx| spin32.ocx|   rpcltscm.dll|  rdocurs.dll|
 |graph32.ocx|  gauge32.ocx|  rpcmqcl.dll|   vbar332.dll|
-|keysta32.ocx| gswdll32.dll| rpcmqsvr.dll|  VisData.exe|
-|AUTMGR32.exe| ciscnfg.exe|  RPCSS.exe|     vsdbflex.srg|
-|AUTPRX32.dll| olecnv32.dll| DBmsshrn.dll|  threed32.ocx|
-|RACMGR32.exe| rpcltc1.dll|  dbmssocn.dll|  MSWLess.ocx|
-|RacReg32.dll| rpcltc5.dll|  Windbver.exe|  Tlbinf32.dll|
-|grid32.ocx|   rpcltccm.dll| msderun.dll|   Triedit.dll|
+|keysta32.ocx| gswdll32.dll| rpcmqsvr.dll|  visdata.exe|
+|autmgr32.exe| ciscnfg.exe|  rpcss.exe|     vsdbflex.srg|
+|autprx32.dll| olecnv32.dll| dbmsshrn.dll|  threed32.ocx|
+|racmgr32.exe| rpcltc1.dll|  dbmssocn.dll|  MSWLess.ocx|
+|racreg32.dll| rpcltc5.dll|  windbver.exe|  tlbinf32.dll|
+|grid32.ocx|   rpcltccm.dll| msderun.dll|   triedit.dll|
 |msoutl32.ocx| rpclts5.dll|  odkob32.dll|
 
 ## <a name="localization-support-binaries"></a>Lokalisierung Unterstützung Binärdateien
@@ -250,7 +252,7 @@ Die folgenden Binärdateien sind erforderlich, für die Unterstützung von Visua
 |---|---|---|---|
 |mfc42jpn.dll|  mfc42kor.dll|  mfc42cht.dll|  mfc42chs.dll|
 |scrrnjp.dll|   scrrnko.dll|   scrrncht.dll|  scrrnchs.dll|
-|VB6jp.dll|     VB6ko.dll|     VB6cht.dll|    VB6chs.dll|
+|vb6jp.dll|     vb6ko.dll|     vb6cht.dll|    vb6chs.dll|
 |cmct2jp.dll|   cmct2ko.dll|   cmct2cht.dll|  cmct2chs.dll|
 |cmct3jp.dll|   cmct3ko.dll|   cmct3cht.dll|  mscc2chs.dll|
 |mscc2jp.dll|   mscc2ko.dll|   mscc2cht.dll|  cmct3chs.dll|
@@ -289,7 +291,7 @@ Die folgenden Binärdateien sind erforderlich, für die Unterstützung von Visua
 |---|---|---|---|
 |mfc42ita.dll|  mfc42fra.dll|  mfc42esp.dll|  mfc42deu.dll|
 |scrrnit.dll|   scrrnfr.dll|   scrrnes.dll|   scrrnde.dll|
-|vb6it.dll|     VB6fr.dll|     VB6es.dll|     VB6de.dll|
+|vb6it.dll|     vb6fr.dll|     vb6es.dll|     vb6de.dll|
 |cmct2it.dll|   cmct2fr.dll|   cmct2es.dll|   cmct2de.dll|
 |mscc2it.dll|   mscc2fr.dll|   mscc2es.dll|   mscc2de.dll|
 |cmct3it.dll|   cmct3fr.dll|   cmct3es.dll|   cmct3de.dll|
