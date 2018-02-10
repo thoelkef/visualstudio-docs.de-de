@@ -14,11 +14,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: b9a7046930d12ebb940820eb25c4563b0a3213e3
-ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
+ms.openlocfilehash: b72a86f10c6e864406929fdccfb59bdd9393752e
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="walkthrough-configuring-and-using-a-custom-rule-set"></a>Exemplarische Vorgehensweise: Konfigurieren und Verwenden eines benutzerdefinierten Regelsatzes
 
@@ -106,7 +106,7 @@ Jetzt können Sie führen die Codeanalyse für das RuleSetSample-Projekt, und su
   
 2.  Klicken Sie im Fenster Fehlerliste auf **Warnungen** , und klicken Sie dann auf die **Beschreibung** Spaltenheader, um die Warnungen sortieren alphanumerisch.  
   
-     In einer realen Anwendung würde Sie korrigieren und zu diesem Zeitpunkt Regelverstöße beheben oder optional deaktivieren oder eine Regel zu unterdrücken, sofern Sie ermittelt, dass sie nicht Folgendes zu korrigieren und war. Weitere Informationen finden Sie unter [unterdrücken Sie Warnungen mithilfe des SuppressMessage-Attributs](../code-quality/suppress-warnings-by-using-the-suppressmessage-attribute.md).  
+     In einer realen Anwendung würde Sie korrigieren und zu diesem Zeitpunkt Regelverstöße beheben oder optional deaktivieren oder eine Regel zu unterdrücken, sofern Sie ermittelt, dass sie nicht Folgendes zu korrigieren und war. Weitere Informationen finden Sie unter [Unterdrücken von Warnungen](../code-quality/in-source-suppression-overview.md).
   
 3.  Beachten Sie die CA1704 Warnungen aus. Diese Verletzungen dieser Regel weisen darauf hin, dass Sie "sollten einen aussagekräftigeren Namen für die Parameter." Konnte, beheben das Problem in Ihrem Code aus, oder Sie können die Regel deaktivieren, wie in der nächsten Prozedur beschrieben.  
   

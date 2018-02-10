@@ -1,14 +1,16 @@
 ---
-title: Verwalten von Python auf Azure App Service | Microsoft-Dokumentation
+title: Installieren von Python-Interpretern und -Bibliotheken in Azure App Service | Microsoft-Dokumentation
+description: Installieren von Python-Interpretern und -Bibliotheken in Azure App Service und Konfigurieren von Webanwendungen in der Weise, dass sie korrekt auf den Interpreter verweisen.
 ms.custom: 
 ms.date: 09/13/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-python
+ms.technology:
+- devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: kraigb
 ms.author: kraigb
 manager: ghogen
@@ -16,11 +18,11 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: d97ae6f3b1665fc841c34fcca06afc6a2eaf1e36
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: ff8fb49321d12416391edd1463f651ae169b1bee
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="managing-python-on-azure-app-service"></a>Verwalten von Python auf Azure App Service
 
@@ -131,7 +133,7 @@ Die an dieser Stelle definierten `<appSettings>` sind für Ihre Anwendung als Um
 - `WSGI_HANDLER` muss auf eine durch Ihre App importierbare WSGI-Anwendung verweisen.
 - `WSGI_LOG` ist optional, wird jedoch zum Debuggen Ihrer App empfohlen. 
 
-Zusätzliche Informationen zu `web.config`-Inhalten für Bottle-, Flask- und Django-Web-Apps finden Sie unter [Veröffentlichen in Azure App Service](publishing-to-azure.md).
+Zusätzliche Informationen zu `web.config`-Inhalten für Bottle-, Flask- und Django-Web-Apps finden Sie unter [Veröffentlichen in Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md).
 
 ### <a name="configuring-the-httpplatform-handler"></a>Konfigurieren des HttpPlatform-Handlers
 

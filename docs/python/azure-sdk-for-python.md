@@ -1,14 +1,16 @@
 ---
 title: "Azure SDK für Python | Microsoft-Dokumentation"
+description: "Mit dem Azure SDK für Python können Microsoft Azure-Dienste von Python-Anwendungen genutzt werden, die auf beliebigen Plattformen ausgeführt werden."
 ms.custom: 
-ms.date: 03/07/2017
+ms.date: 01/22/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-python
+ms.technology:
+- devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: kraigb
 ms.author: kraigb
 manager: ghogen
@@ -16,11 +18,11 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: fa18c4a0b29b9f9dc05dae3093b4432e38635154
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: f4f42f80bef2548c8caaff84df0d9a0118bfeac7
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="azure-sdk-for-python"></a>Azure-SDK für Python
 
@@ -30,7 +32,7 @@ Das Azure SDK für Python vereinfacht die Nutzung und Verwaltung von Microsoft A
 
 Das Azure SDK wird über den [Python-Paketindex](https://pypi.python.org/pypi/azure) installiert.
 
-Installieren Sie die **neueste stabile Version** (unterstützt Python 2.7 und 3.3+) wie folgt:
+Installieren Sie die **neueste stabile Version** (unterstützt Python 2.7 und 3.x) wie folgt:
 
 ```command
 pip install azure
@@ -42,7 +44,7 @@ Sie können auch den entsprechenden Artikel der Azure-Dokumentation lesen: [Inst
 
 Unter [azure-sdk-for-python.readthedocs.org](http://azure-sdk-for-python.readthedocs.org/en/latest/index.html) finden Sie die entsprechende Dokumentation.
 
-Das [Python Developer Center](http://azure.microsoft.com/develop/python/) umfasst ebenfalls eine Reihe nützlicher Ressourcen für das Azure SDK für Python, beispielsweise etwa verschiedene Tutorials:
+Das [Python Developer Center](http://azure.microsoft.com/develop/python/) umfasst ebenfalls eine Reihe nützlicher Ressourcen für das Azure SDK für Python, darunter eine Reihe von Tutorials:
 
 - Erstellen von Web-Apps mit [Django](/azure/app-service-web/web-sites-python-create-deploy-django-app) [Flask](/azure/app-service-web/web-sites-python-create-deploy-flask-app) und [Bottle](/azure/app-service-web/web-sites-python-create-deploy-bottle-app).
 - [Blobspeicher](/azure/storage/storage-python-how-to-use-blob-storage)

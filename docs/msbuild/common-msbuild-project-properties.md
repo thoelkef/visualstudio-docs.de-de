@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 01/18/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -18,16 +19,17 @@ helpviewer_keywords:
 - ExcludeDeploymentUrl property
 - project file properties (MSBuild)
 ms.assetid: 9857505d-ae15-42f1-936d-6cd7fb9dd276
-caps.latest.revision: "36"
+caps.latest.revision: 
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: c70427c2dd1e2c7ceb071867b876750121445dde
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.workload:
+- multiple
+ms.openlocfilehash: e1da05cbbb2415ad6ce701e1330f9e9e60568aeb
+ms.sourcegitcommit: b01406355e3b97547b7cbf8ce3960f101b165cec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/05/2018
 ---
 # <a name="common-msbuild-project-properties"></a>Gemeinsame MSBuild-Projekteigenschaften
 In der folgenden Tabelle werden häufig verwendete Eigenschaften aufgelistet, die in den Visual Studio-Projektdateien definiert oder in den TARGETS-Dateien enthalten sind, die von MSBuild bereitgestellt werden.  
@@ -50,7 +52,7 @@ In der folgenden Tabelle werden häufig verwendete Eigenschaften aufgelistet, di
 |BaseOutputPath|Gibt den Basispfad für die Ausgabedatei an. Wenn dies festgelegt ist, verwendet [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] `OutputPath = $(BaseOutputPath)\$(Configuration)\`. Beispielsyntax: `<BaseOutputPath>c:\xyz\bin\</BaseOutputPath>`|  
 |BaseIntermediateOutputPath|Der Ordner der obersten Ebene, in dem alle konfigurationsspezifischen Zwischenausgabeordner erstellt werden. Der Standardwert ist `obj\`. Codebeispiel: `<BaseIntermediateOutputPath>c:\xyz\obj\</BaseIntermediateOutputPath>`|  
 |BuildInParallel|Ein boolescher Wert, der angibt, ob Projektverweise bei der Verwendung von [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] Multi-Proc parallel erstellt oder bereinigt werden. Der Standardwert ist `true`. Das bedeutet, dass Projekte parallel erstellt werden, wenn das System über mehrere Kerne oder Prozessoren verfügt.|  
-|BuildProjectReferences|Ein boolescher Wert, der angibt, ob Projektverweise von [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] erstellt werden. Legen Sie für den Wert `false` fest, wenn Sie das Projekt in der integrierten Entwicklungsumgebung (IDE) von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] erstellen. Legen Sie für den Wert andernfalls `true` fest.|  
+|BuildProjectReferences|Ein boolescher Wert, der angibt, ob Projektverweise von [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] erstellt werden. Automatisch auf `false` festgelegt, wenn Sie Ihr Projekt in der integrierten Entwicklungsumgebung (IDE) von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] erstellen, andernfalls `true`. `/p:BuildProjectReferences=false` kann in der Befehlszeile eingegeben werden, um die Überprüfung von Projekten, auf die verwiesen wird, auf Aktualität zu vermeiden.|  
 |CleanFile|Der Name der Datei, die als "Löschcache" verwendet wird. Der Löschcache ist eine Liste generierter Dateien, die während des Bereinigungsvorgangs gelöscht werden. Die Datei wird vom Buildprozess im Zwischenausgabepfad abgelegt.<br /><br /> Diese Eigenschaft gibt nur Dateinamen an, die keine Pfadinformationen aufweisen.|  
 |CodePage|Gibt für alle Quellcodedateien in der Kompilierung die zu verwendende Codepage an. Diese Eigenschaft entspricht dem `/codepage`-Compilerschalter.|  
 |CompilerResponseFile|Eine optionale Antwortdatei, die an die Compileraufgaben übergeben werden kann.|  
@@ -71,7 +73,7 @@ In der folgenden Tabelle werden häufig verwendete Eigenschaften aufgelistet, di
 |ExcludeDeploymentUrl|Dem Bereitstellungsmanifest wird durch die [GenerateDeploymentManifest-Aufgabe](../msbuild/generatedeploymentmanifest-task.md) ein „deploymentProvider“-Tag hinzugefügt, wenn die Projektdatei eines der folgenden Elemente enthält:<br /><br /> – UpdateUrl<br />– InstallUrl<br />– PublishUrl<br /><br /> Sie können mithilfe von „ExcludeDeploymentUrl“ jedoch verhindern, dass das „deploymentProvider“-Tag zum Bereitstellungsmanifest hinzugefügt wird, auch wenn eine der vorgenannten URLs angegeben wird. Fügen Sie der Projektdatei zu diesem Zweck die folgende Eigenschaft hinzu:<br /><br /> `<ExcludeDeploymentUrl>true</ExcludeDeploymentUrl>` **Hinweis:** „ExcludeDeploymentUrl“ wird in der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-IDE nicht verfügbar gemacht und kann nur festgelegt werden, indem die Projektdatei manuell bearbeitet wird. Das Festlegen dieser Eigenschaft hat keine Auswirkung auf die Veröffentlichung in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Das bedeutet, dass das Tag "deploymentProvider" weiterhin zu der durch "PublishUrl" angegebenen URL hinzugefügt wird.|  
 |FileAlignment|Gibt die Ausrichtung der Abschnitte der Ausgabedatei in Bytes an. Gültige Werte sind 512, 1024, 2048, 4096 und 8192. Diese Eigenschaft entspricht dem `/filealignment`-Compilerschalter.|  
 |FrameworkPathOverride|Gibt den Speicherort von "mscorlib.dll" und "microsoft.visualbasic.dll" an. Dieser Parameter entspricht dem `/sdkpath`-Schalter des Compilers "vbc.exe".|  
-|GenerateDocumentation|Nur Visual Basic .NET: Ein boolescher Parameter, der angibt, ob eine Dokumentation vom Build generiert wird. Wenn der Wert `true` lautet, werden Dokumentationsinformationen vom Build generiert und zusammen mit dem Namen der ausführbaren Datei oder der Bibliothek, die von der Buildaufgabe erstellt wurde, in einer XML-Datei gespeichert.|
+|GenerateDocumentation|(Nur Visual Basic ) Ein boolescher Parameter, der angibt, ob eine Dokumentation vom Build generiert wird. Wenn der Wert `true` lautet, werden Dokumentationsinformationen vom Build generiert und zusammen mit dem Namen der ausführbaren Datei oder der Bibliothek, die von der Buildaufgabe erstellt wurde, in einer XML-Datei gespeichert.|
 |IntermediateOutputPath|Der vollständige Zwischenausgabepfad wie von `BaseIntermediateOutputPath` abgeleitet, wenn kein Pfad angegeben wird. Beispiel: „\obj\debug\\“. Wenn diese Eigenschaft überschrieben wird, hat das Festlegen von `BaseIntermediateOutputPath` keine Auswirkungen.|  
 |KeyContainerName|Der Name des Containers mit dem Schlüssel für einen starken Namen.|  
 |KeyOriginatorFile|Der Name der Datei mit dem Schlüssel für einen starken Namen.|  

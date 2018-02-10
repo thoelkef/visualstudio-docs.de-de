@@ -1,5 +1,5 @@
 ---
-title: "Unterdrücken von codeanalysewarnungen mithilfe des SuppressMessage-Attributs in Visual Studio | Microsoft Docs"
+title: "Unterdrücken von Warnungen der Codeanalyse in Visual Studio | Microsoft Docs"
 ms.custom: 
 ms.date: 01/29/2018
 ms.reviewer: 
@@ -18,11 +18,11 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 4cd3800e082673e9478eb32c6ae5627eef4d7e81
-ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
+ms.openlocfilehash: 5862b164c72c8f07c78db8948face95edfde357c
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="suppressing-code-analysis-warnings"></a>Unterdrücken der Codeanalysewarnungen
 
@@ -34,6 +34,9 @@ In C + c++ / CLI, verwenden Sie die Makros Zertifizierungsstelle\_UNTERDRÜCKEN\
 
 > [!NOTE]
 > Sie sollten nicht Unterdrückung im Quellcode auf Releasebuilds verwenden, um zu verhindern, dass die Unterdrückung im Quellcode Metadaten versehentlich Protokollversand. Darüber hinaus kann aufgrund der Verarbeitungskosten Unterdrückung im Quellcode, die Leistung Ihrer Anwendung beeinträchtigt sein.
+
+> [!NOTE]
+> Wenn Sie ein Projekt zu Visual Studio 2017 migrieren, können Sie plötzlich eine Flut von codeanalysewarnungen Datenwachstums werden. Wenn Sie nicht bereit sind, korrigieren Sie die Warnungen und Codeanalyse vorübergehend deaktivieren möchten, öffnen Sie die Eigenschaftenseiten des Projekts (**Projekt** > ***Projekt* Eigenschaften...** ) und fahren Sie mit der **Codeanalyse** Registerkarte. Deaktivieren Sie **Codeanalyse für Build aktivieren**, und erstellen Sie das Projekt dann erneut. Alternativ können Sie einen anderen, kleineren Regelsatz, der für den Code ausführen auswählen. Denken Sie daran, aktivieren Sie die Codeanalyse auf Wenn Sie die Warnungen beheben bereit sind.
 
 ## <a name="suppressmessage-attribute"></a>SuppressMessage-Attribut
 
@@ -95,7 +98,7 @@ Aus Gründen der Verwaltbarkeit ist das Weglassen von Namen der Regel nicht empf
 
 Unterdrückung Attribute können auf eine Methode angewendet werden, sondern können nicht innerhalb eines Methodentexts eingebettet sein. Dies bedeutet, dass alle Verstöße gegen eine bestimmte Regel unterdrückt werden, wenn Sie beim Hinzufügen der <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> -Attribut zur Methode.
 
-In einigen Fällen empfiehlt es sich um eine bestimmte Instanz einer Verletzung, z. B. zu unterdrücken, sodass zukünftiger Code automatisch von der Regel zur Codeanalyse ausgenommen ist nicht. Bestimmte Codeanalyseregeln können Sie hierzu mit der `MessageId` Eigenschaft von der <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> Attribut. Im Allgemeinen Legacy-Regeln für Verstöße auf einem bestimmten Symbol (eine lokale Variable oder Parameter) bezüglich der `MessageId` Eigenschaft. [CA1500:VariableNamesShouldNotMatchFieldNames](../code-quality/ca1500-variable-names-should-not-match-field-names.md) ist ein Beispiel für eine solche Regel. Allerdings Legacyregeln Verstöße ausführbarem Code (nicht-Symbol) berücksichtigen nicht die `MessageId` Eigenschaft. Darüber hinaus Roslyn Analysen berücksichtigen nicht die `MessageId` Eigenschaft.
+In einigen Fällen empfiehlt es sich um eine bestimmte Instanz einer Verletzung, z. B. zu unterdrücken, sodass zukünftiger Code automatisch von der Regel zur Codeanalyse ausgenommen ist nicht. Bestimmte Codeanalyseregeln können Sie hierzu mit der `MessageId` Eigenschaft von der <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> Attribut. Im Allgemeinen Legacy-Regeln für Verstöße auf einem bestimmten Symbol (eine lokale Variable oder Parameter) bezüglich der `MessageId` Eigenschaft. [CA1500:VariableNamesShouldNotMatchFieldNames](../code-quality/ca1500-variable-names-should-not-match-field-names.md) ist ein Beispiel für eine solche Regel. Allerdings Legacyregeln Verstöße ausführbarem Code (nicht-Symbol) berücksichtigen nicht die `MessageId` Eigenschaft. Darüber hinaus .NET Compiler Platform ("Roslyn")-Analysen berücksichtigen nicht die `MessageId` Eigenschaft.
 
 Um einen bestimmten Symbols Verstoß gegen eine Regel zu unterdrücken, geben Sie den Symbolnamen für die `MessageId` Eigenschaft von der <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> Attribut. Das folgende Beispiel zeigt den Code mit zwei Verstöße gegen [CA1500:VariableNamesShouldNotMatchFieldNames](../code-quality/ca1500-variable-names-should-not-match-field-names.md)&mdash;eine für die `name` Variable und einen für die `age` Variable. Nur der Verstoß für die `age` Symbol unterdrückt wird.
 

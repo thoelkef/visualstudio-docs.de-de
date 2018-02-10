@@ -1,23 +1,26 @@
 ---
 title: "Hilfefenster in R Tools für Visual Studio | Microsoft-Dokumentation"
+description: "Die Hilfe für R ist in Form des Befehls „?“ direkt in das interaktive Fenster in Visual Studio integriert ."
 ms.custom: 
-ms.date: 06/29/2017
+ms.date: 001/24/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-r
+ms.technology:
+- devlang-r
 ms.devlang: r
 ms.tgt_pltfrm: 
 ms.topic: get-started-article
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.workload: data-science
-ms.openlocfilehash: 232c02bf68125afb1ffa5234e0feee049e9c5f69
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-science
+ms.openlocfilehash: c95cb854a5c6d517b6e02e63bc744cd2bdc3ba1e
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="help-in-r-tools-for-visual-studio"></a>Hilfe in R Tools für Visual Studio
 
@@ -28,7 +31,7 @@ Die Hilfe für R ist direkt in das interaktive Fenster in Visual Studio integrie
 > [!Tip]
 > So wie alle anderen Fenster in Visual Studio kann das Hilfefenster beliebig angeordnet und angedockt werden. Weitere Informationen finden Sie unter [Anpassen von Fensterlayouts in Visual Studio](../ide/customizing-window-layouts-in-visual-studio.md).
 >
-> Sie können Ergebnisse der Hilfe in einem Browser öffnen, indem Sie das Menü **R Tools > Optionen** anklicken und die Eigenschaft **Browser der R-Hilfe** auf `External` festzulegen. Weitere Informationen finden Sie unter [Optionen](options.md).
+> Sie können Ergebnisse der Hilfe in einem Browser öffnen, indem Sie das Menü **R Tools > Optionen** anklicken und die Eigenschaft **Browser der R-Hilfe** auf `External` festzulegen. Weitere Informationen finden Sie unter [Optionen](options-for-r-tools-in-visual-studio.md).
 
 Verwenden Sie den `??`-Befehl, gefolgt von einem Suchbegriff, um die Hilfe zu durchsuchen. Verwenden Sie Anführungszeichen, wenn der Suchbegriff Leerzeichen enthält:
 
@@ -52,7 +55,7 @@ Entwickler durchsuchen für Hilfe bei den Funktionsnamen, Datasets und anderen E
     ![Aufrufen der Hilfe über ein Kontextmenü, das mit einem Rechtsklick aufgerufen wird](media/help-right-click.png)
 
 > [!Tip]
-> Um die integrierte Hilfe in einem Browser zu öffnen, wählen Sie **R Tools > Optionen** aus, und legen Sie **F1-Webbrowser** auf `External` fest. Weitere Informationen finden Sie unter [Optionen](options.md).
+> Um die integrierte Hilfe in einem Browser zu öffnen, wählen Sie **R Tools > Optionen** aus, und legen Sie **F1-Webbrowser** auf `External` fest. Weitere Informationen finden Sie unter [Optionen](options-for-r-tools-in-visual-studio.md).
 
 ## <a name="integrated-stackoverflow-search"></a>Integrierte StackOverflow-Suche
 
@@ -64,4 +67,4 @@ Sie können die angefügte Zeichenfolge, `R site:stackoverflow`, über die Optio
 
 ![Ändern der Option „Zeichenfolge der F1-Websuche“](media/options-dialog.png)
 
-Wenn Sie die Ergebnisse lieber im Browser anzeigen lassen möchten, verändern Sie die Option **F1 Webbrowser** (F1-Webbrowser) wie in [Optionen](options.md) beschrieben.
+Wenn Sie die Ergebnisse lieber im Browser anzeigen lassen möchten, verändern Sie die Option **F1 Webbrowser** (F1-Webbrowser) wie in [Optionen](options-for-r-tools-in-visual-studio.md) beschrieben.

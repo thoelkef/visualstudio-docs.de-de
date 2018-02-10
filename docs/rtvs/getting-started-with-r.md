@@ -1,33 +1,30 @@
 ---
 title: Erste Schritte mit R in Visual Studio | Microsoft-Dokumentation
+description: "Exemplarische Vorgehensweise zur Verwendung von R in Visual Studio, einschließlich Projekterstellung, interaktivem Fenster, Codebearbeitung und Debuggen."
 ms.custom: 
 ms.date: 06/29/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-r
+ms.technology:
+- devlang-r
 ms.devlang: r
 ms.tgt_pltfrm: 
 ms.topic: get-started-article
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.workload: data-science
-ms.openlocfilehash: d57ff0dcd89a9857f62371f81d65f7929aba18c9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-science
+ms.openlocfilehash: cf8df86322e10054dee5dbcee95839506f690306
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="getting-started-with-r-tools-for-visual-studio"></a>Erste Schritte mit R Tools für Visual Studio
 
-Sobald Sie R Tools für Visual Studio (RTVS) installiert haben (siehe [Installation](installation.md)), erhalten Sie schnell einen Vorgeschmack der Funktionalität, die diese Tools bieten. In den folgenden Abschnitten werden Sie näher an das Thema herangeführt:
-
-- [Erstellen eines R-Projekts](#create-an-r-project)
-- [Erkunden des interaktiven Fensters und IntelliSense](#explore-the-interactive-window-and-intellisense)
-- [Features zur Codebearbeitung](#experience-code-editing-features)
-- [Debuggen Ihres Codes](#debugging-your-code)
-- [Nächste Schritte](#next-steps)
+Sobald Sie R Tools für Visual Studio (RTVS) installiert haben (siehe [Installation](installing-r-tools-for-visual-studio.md)), erhalten Sie schnell einen Vorgeschmack der Funktionalität, die diese Tools bieten. 
 
 ## <a name="create-an-r-project"></a>Erstellen eines R-Projekts
 
@@ -39,7 +36,7 @@ Sobald Sie R Tools für Visual Studio (RTVS) installiert haben (siehe [Installat
 
 1. Sobald das Projekt erstellt wurde, sehen Sie die folgenden Fenster:
 
-    - Auf der rechten Seite ist der Visual Studio-Projektmappen-Explorer dargestellt, in dem Sie Ihr Projekt innerhalb einer *Projektmappe* sehen. (Projektmappen können eine beliebige Anzahl von Projekten verschiedenen Typs enthalten. Informationen finden Sie unter [Projekte](projects.md).)
+    - Auf der rechten Seite ist der Visual Studio-Projektmappen-Explorer dargestellt, in dem Sie Ihr Projekt innerhalb einer *Projektmappe* sehen. (Projektmappen können eine beliebige Anzahl von Projekten verschiedenen Typs enthalten. Informationen finden Sie unter [Projekte](r-projects-in-visual-studio.md).)
     - Oben links befindet sich eine neue R-Datei (`script.R`), wobei Sie Quellcode mit allen Bearbeitungsfunktionen von Visual Studio bearbeiten können.
     - Unten links sehen Sie das Fenster **R Interactive**, in dem Sie Code interaktiv entwickeln und testen können.
 
@@ -74,13 +71,13 @@ Sobald Sie R Tools für Visual Studio (RTVS) installiert haben (siehe [Installat
 
     ![Darstellung eines Plots in Visual Studio](media/getting-started-07-plot-window.png)
 
-Mit dem interaktiven Fenster können Sie auch Ihre Versionsgeschichte überprüfen, Arbeitsbereiche laden und speichern, an den Debugger anfügen sowie mit Quellcodedateien interagieren, anstatt Kopieren und Einfügen zu verwenden. Weitere Informationen finden Sie unter [Arbeiten mit dem interaktiven R-Fenster](interactive-repl.md).
+Mit dem interaktiven Fenster können Sie auch Ihre Versionsgeschichte überprüfen, Arbeitsbereiche laden und speichern, an den Debugger anfügen sowie mit Quellcodedateien interagieren, anstatt Kopieren und Einfügen zu verwenden. Weitere Informationen finden Sie unter [Arbeiten mit dem interaktiven R-Fenster](interactive-repl-for-r-in-visual-studio.md).
 
 ## <a name="experience-code-editing-features"></a>Features zur Codebearbeitung
 
 Durch die kurze Arbeit mit dem interaktiven Fenster haben Sie grundlegende Bearbeitungsfunktionen kennengelernt, z.B. IntelliSense, die auch im Code-Editor funktionieren. Wenn Sie denselben Code wie zuvor eingeben, erhalten Sie die gleichen Aufforderungen für die automatische Vervollständigung und IntelliSense, jedoch nicht die Ausgabe.
 
-Durch das Schreiben von Code in eine `.R`-Datei können Sie Ihren gesamten Code auf einmal anzeigen und dadurch einfacher kleine Änderungen vornehmen. Dann können Sie schnell die Ergebnisse anzeigen, indem Sie den Code im interaktiven Fenster ausführen. Außerdem können Sie so viele Dateien in einem Projekt haben, wie Sie möchten. Wenn sich Code in einer Datei befindet, können Sie ihn auch im Debugger schrittweise ausführen (später in diesem Thema beschrieben). Diese Funktionen sind sehr hilfreich, wenn es um das Entwickeln von Computeralgorithmen und das Schreiben von Code zum Bearbeiten von einem oder mehreren Datasets geht, besonders, wenn Sie alle Zwischenergebnisse untersuchen möchten.
+Durch das Schreiben von Code in eine `.R`-Datei können Sie Ihren gesamten Code auf einmal anzeigen und dadurch einfacher kleine Änderungen vornehmen. Dann können Sie schnell die Ergebnisse anzeigen, indem Sie den Code im interaktiven Fenster ausführen. Außerdem können Sie so viele Dateien in einem Projekt haben, wie Sie möchten. Wenn sich Code in einer Datei befindet, können Sie ihn auch im Debugger schrittweise ausführen (später in diesem Artikel beschrieben). Diese Funktionen sind sehr hilfreich, wenn es um das Entwickeln von Computeralgorithmen und das Schreiben von Code zum Bearbeiten von einem oder mehreren Datasets geht, besonders, wenn Sie alle Zwischenergebnisse untersuchen möchten.
 
 Als Beispiel erstellen die folgenden Schritte einen kleinen Code zum Erforschen des [Zentralen Grenzwertsatzes](https://en.wikipedia.org/wiki/Central_limit_theorem) (Wikipedia). (Dieses Beispiel ist aus dem *R Cookbook* von Paul Teetor abgeleitet.)
 
@@ -109,7 +106,7 @@ Als Beispiel erstellen die folgenden Schritte einen kleinen Code zum Erforschen 
 
     ```R
     n <- 30
-    samp.means <- rnorm(N, mean = mu, sd = stddev / sqrt(n))    
+    samp.means <- rnorm(N, mean = mu, sd = stddev / sqrt(n))
     lines(density(samp.means))
     ```
 
@@ -139,7 +136,7 @@ Als Beispiel erstellen die folgenden Schritte einen kleinen Code zum Erforschen 
 
     ![Aktualisierter dualer Plot in Visual Studio, richtig skaliert](media/getting-started-10-plot3.png)
 
-Sie können noch viel mehr im Editor tun. Weitere Informationen finden Sei unter [Editing R code in Visual Studio (Bearbeiten von R-Code in Visual Studio)](code-editing.md), [IntelliSense](code-intellisense.md) und [Code snippets (Codeausschnitte)](code-snippets.md).
+Sie können noch viel mehr im Editor tun. Weitere Informationen finden Sei unter [Editing R code in Visual Studio (Bearbeiten von R-Code in Visual Studio)](editing-r-code-in-visual-studio.md), [IntelliSense](r-intellisense.md) und [Code snippets (Codeausschnitte)](code-snippets-for-r.md).
 
 ## <a name="debugging-your-code"></a>Debuggen von Code
 
@@ -169,14 +166,14 @@ Eine der größten Stärken von Visual Studio ist die Debugger-Benutzeroberfläc
 
 1. Sie können weiter das Programm Zeile für Zeile durchlaufen oder **Fortsetzen** (F5) auswählen, um es vollständig auszuführen (oder um zum nächsten Haltepunkt zu gelangen).
 
-Ausführlichere Details finden Sie unter [Debugging](debugging.md) und [Variable Explorer (Variablen-Explorer)](variable-explorer.md).
+Ausführlichere Details finden Sie unter [Debugging](debugging-r-in-visual-studio.md) und [Variable Explorer (Variablen-Explorer)](variable-explorer.md).
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-In dieser exemplarischen Vorgehensweise haben Sie die Grundlagen von R-Projekten, die Verwendung des interaktiven Fensters, die Codebearbeitung und das Debuggen in Visual Studio kennengelernt. Um weitere Funktionen kennenzulernen, sehen Sie sich die folgenden Themen sowie Themen, die im Inhaltsverzeichnis aufgeführt sind an:
+In dieser exemplarischen Vorgehensweise haben Sie die Grundlagen von R-Projekten, die Verwendung des interaktiven Fensters, die Codebearbeitung und das Debuggen in Visual Studio kennengelernt. Um weitere Funktionen kennenzulernen, sehen Sie sich die folgenden Artikel sowie Artikel an , die im Inhaltsverzeichnis aufgeführt sind:
 
 - [Beispielprojekte](getting-started-samples.md)
-- [Bearbeiten von Code](code-editing.md)
-- [Debuggen](debugging.md)
-- [Arbeitsbereiche](workspaces.md)
-- [Visualisieren von Daten](visualizing-data.md)
+- [Bearbeiten von Code](editing-r-code-in-visual-studio.md)
+- [Debuggen](debugging-r-in-visual-studio.md)
+- [Arbeitsbereiche](r-workspaces-in-visual-studio.md)
+- [Visualisieren von Daten](visualizing-data-with-r-in-visual-studio.md)

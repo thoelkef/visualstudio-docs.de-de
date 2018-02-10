@@ -4,20 +4,23 @@ ms.custom:
 ms.date: 11/30/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-acquisition
+ms.technology:
+- vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: tutorial
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-dev_langs: JavaScript
-ms.workload: nodejs
-ms.openlocfilehash: 80822e4f323621a97beb453118d7e0836ae9ea92
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+dev_langs:
+- JavaScript
+ms.workload:
+- nodejs
+ms.openlocfilehash: a8e6c800ef036d0f6e8e5affae745e541a276284
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="getting-started-with-nodejs-in-visual-studio"></a>Erste Schritte mit Node.js in Visual Studio
 In diesem Tutorial für die Node.js-Entwicklung in Visual Studio werden wir eine einfache Node.js-Webanwendung erstellen, Code hinzufügen, einige Funktionen der IDE kennenlernen und die App ausführen. Falls Sie Visual Studio noch nicht installiert haben, können Sie es [hier](http://www.visualstudio.com) gratis herunterladen.  
@@ -134,6 +137,8 @@ Zunächst müssen Sie ein Projekt für die Node.js-Webanwendung erstellen.
 
 1. Klicken Sie auf die Schaltflächen, um verschiedene Bilder anzuzeigen.
 
+    ![Im Browser ausgeführte App](../nodejs/media/tutorial-nodejs-running-in-browser.png)  
+
 1. Öffnen Sie das interaktive Node.js-Fenster, indem Sie **Ansicht > Weitere Fenster > Interaktives Node.js-Fenster** auswählen.
 
    ![Interaktives Node.js-Fenster öffnen](../nodejs/media/tutorial-nodejs-interactive-window.png)  
@@ -144,7 +149,7 @@ Zunächst müssen Sie ein Projekt für die Node.js-Webanwendung erstellen.
 
 1. Schließen Sie den Webbrowser.  
 
-## <a name="publish-to-azure-app-service"></a>Veröffentlichen in Azure App Service
+## <a name="optional-publish-to-azure-app-service"></a>(Optional) Veröffentlichen in Azure App Service
 
 1. Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste auf das Projekt, und klicken Sie auf **Veröffentlichen**.
 

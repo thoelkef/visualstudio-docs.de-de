@@ -1,23 +1,26 @@
 ---
 title: "R Tools für Visual Studio | Microsoft-Dokumentation"
+description: "Häufig gestellte Fragen zu R in Visual Studio"
 ms.custom: 
 ms.date: 12/04/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-r
+ms.technology:
+- devlang-r
 ms.devlang: r
 ms.tgt_pltfrm: 
 ms.topic: article
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.workload: data-science
-ms.openlocfilehash: 9fe92fb38d1b03b081cb53fc620f60180daf5b24
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-science
+ms.openlocfilehash: 8abdaa1e156cf2be07f08f6cebcf67031bf91c2f
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
 
@@ -67,7 +70,7 @@ A. [CRAN R](https://cran.r-project.org/), [Microsoft R Client und Microsoft Mach
 
 **F. Wo kann ich diese Interpreter herunterladen?**
 
-A. Informationen hierzu finden Sie unter [Installation](installation.md).
+A. Informationen hierzu finden Sie unter [Installation](installing-r-tools-for-visual-studio.md).
 
 **F: Was ist Microsoft R Server?**
 
@@ -89,7 +92,7 @@ A. GitHub verwaltet ein Masterrepository mit empfohlenen `.gitignore`-Dateien. D
 
 F. **Was sind Remotedienste in Visual Studio?**
 
-A. Mit den R-Remotediensten für Visual Studio können Sie Windows- oder Linux-Computer einrichten und dann über RTVS eine Verbindung zu ihnen herstellen. Weitere Informationen finden Sie unter [Einrichten von Remotearbeitsbereichen](workspaces-remote-setup.md).
+A. Mit den R-Remotediensten für Visual Studio können Sie Windows- oder Linux-Computer einrichten und dann über RTVS eine Verbindung zu ihnen herstellen. Weitere Informationen finden Sie unter [Einrichten von Remotearbeitsbereichen](setting-up-remote-r-workspaces.md).
 
 F. **Kann RTVS eine Verbindung zu Microsoft R Server herstellen?**
 
@@ -101,7 +104,7 @@ A. Ja, das Image [DataScience-VM – Windows 2016](https://azure.microsoft.com/s
 
 **F: Kann RTVS eine Verbindung zu einem Remotecomputer herstellen, auf dem R installiert ist?**
 
-Um R-Code auf einem Remotecomputer auszuführen, müssen Dienste auf Anforderungen lauschen und dabei Code empfangen und Ergebnisse an den Clientcomputer zurücksenden. Dafür sind die R-Remotedienste für Visual Studio verantwortlich. Weitere Informationen finden Sie unter [Einrichten von Remotearbeitsbereichen](workspaces-remote-setup.md).
+Um R-Code auf einem Remotecomputer auszuführen, müssen Dienste auf Anforderungen lauschen und dabei Code empfangen und Ergebnisse an den Clientcomputer zurücksenden. Dafür sind die R-Remotedienste für Visual Studio verantwortlich. Weitere Informationen finden Sie unter [Einrichten von Remotearbeitsbereichen](setting-up-remote-r-workspaces.md).
 
 F. **Was ist eine Remotesitzung?**
 
