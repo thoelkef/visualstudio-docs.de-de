@@ -4,20 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: tgt-pltfrm-cross-plat
+ms.technology: vs-ide-mobile
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: ff978cc2-5a25-46d6-921b-e51adaa65992
-caps.latest.revision: "14"
+caps.latest.revision: 
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.workload: xamarin
-ms.openlocfilehash: b72c0a0df85c4c37745faaec4e9d2da269e6c9cd
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.workload:
+- xamarin
+ms.openlocfilehash: e7ee514a3ca121b9259f1c1b5f54b49d58b0ac47
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="application-lifecycle-management-alm-with-xamarin-apps"></a>Application Lifecycle Management (ALM) mit Xamarin-Apps
 Mit Xamarin können Sie plattformübergreifende mobile Apps für Android, iOS und Windows mit C#, .NET und Visual Studio erstellen. Xamarin ermöglicht die gemeinsame Verwendung eines großen Teils des Codes für alle Plattformen, sodass nur ein kleiner Prozentsatz plattformspezifisch angepasst werden muss. Weitere Informationen zu Xamarin selbst finden Sie unter [Visual Studio und Xamarin](../cross-platform/visual-studio-and-xamarin.md).  
@@ -35,7 +36,7 @@ Mit Xamarin können Sie plattformübergreifende mobile Apps für Android, iOS un
   
  Allgemeiner Kommentar: alle Planungs- und Nachverfolgungsfunktionen sind vom Projekttyp und den Programmiersprachen unabhängig.  
   
-|Funktion|Unterstützt von Xamarin|Zusätzliche Kommentare|  
+|Feature|Unterstützt von Xamarin|Zusätzliche Kommentare|  
 |-------------|----------------------------|-------------------------|  
 |Verwalten von Rückständen und Sprints|Ja||  
 |Arbeitsüberwachung|Ja||  
@@ -48,7 +49,7 @@ Mit Xamarin können Sie plattformübergreifende mobile Apps für Android, iOS un
   
  Die Entwicklungsfeatures sind unabhängig von der Programmiersprache oder funktionieren mit .NET-Sprachen wie C#. Mit Code zusammenhängende Aspekte finden Sie unter [Rollen von Architektur- und Modellierungsdiagrammen in der Softwareentwicklung](../modeling/scenario-change-your-design-using-visualization-and-modeling.md#ModelingDiagramsTools).  
   
-|Funktion|Unterstützt von Xamarin|Zusätzliche Kommentare|  
+|Feature|Unterstützt von Xamarin|Zusätzliche Kommentare|  
 |-------------|----------------------------|-------------------------|  
 |Sequenzdiagramme|Ja||  
 |Abhängigkeitsdiagramme|Ja||  
@@ -61,7 +62,7 @@ Mit Xamarin können Sie plattformübergreifende mobile Apps für Android, iOS un
   
 ## <a name="code"></a>Code  
   
-|Funktion|Unterstützt von Xamarin|Zusätzliche Kommentare|  
+|Feature|Unterstützt von Xamarin|Zusätzliche Kommentare|  
 |-------------|----------------------------|-------------------------|  
 |[Verwenden von Team Foundation-Versionskontrolle](http://msdn.microsoft.com/Library/1d629052-c65d-4c5d-81eb-eaa4413fe285) oder Visual Studio Team Services|Ja||  
 |[Erste Schritte mit Git in Team Services](http://msdn.microsoft.com/Library/32f46ecd-1b03-4ef0-a9c4-8a120da2b03f)|Ja||  
@@ -72,7 +73,7 @@ Mit Xamarin können Sie plattformübergreifende mobile Apps für Android, iOS un
 ## <a name="build"></a>Build  
  Verweislink: **[Build](http://msdn.microsoft.com/Library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)**  
   
-|Funktion|Unterstützt von Xamarin|Zusätzliche Kommentare|  
+|Feature|Unterstützt von Xamarin|Zusätzliche Kommentare|  
 |-------------|----------------------------|-------------------------|  
 |Lokaler TFS-Server|Ja|Auf Buildcomputern muss Xamarin installiert sein, und sie können mit einem OSX-Computer verknüpft werden, um Builds für iOS zu erstellen. Weitere Informationen finden Sie unter [Konfigurieren von TFS für Xamarin](http://developer.xamarin.com/guides/cross-platform/ci/configuring_tfs/) (Xamarin-Website)|  
 |Lokaler Buildserver mit Verbindung zu Visual Studio Team Services|Ja|Anweisungen finden Sie unter [Buildserver](http://msdn.microsoft.com/Library/2d258a0a-f178-4e93-9da1-eba61151af3c).|  
@@ -82,7 +83,7 @@ Mit Xamarin können Sie plattformübergreifende mobile Apps für Android, iOS un
   
 ## <a name="testing"></a>Test
 
-|Funktion|Unterstützt von Xamarin|Zusätzliche Kommentare|  
+|Feature|Unterstützt von Xamarin|Zusätzliche Kommentare|  
 |-------------|----------------------------|-------------------------|  
 |Planen von Tests, Erstellen von Testfällen und Organisieren von Testauflistungen|Ja||  
 |Manuelle Tests|Ja||  
@@ -94,7 +95,7 @@ Mit Xamarin können Sie plattformübergreifende mobile Apps für Android, iOS un
 ## <a name="improve-code-quality"></a>Verbessern der Codequalität  
  Verweislink: **[Verbessern der Codequalität](/visualstudio/test/improve-code-quality)**  
   
-|Funktion|Unterstützt von Xamarin|Zusätzliche Kommentare|  
+|Feature|Unterstützt von Xamarin|Zusätzliche Kommentare|  
 |-------------|----------------------------|-------------------------|  
 |[Analysieren der Qualität von verwaltetem Code](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)|Ja||  
 |[Suchen von doppeltem Code mit der Codeklonerkennung](http://msdn.microsoft.com/Library/a97cd5a6-5ffa-4104-9627-8e59e513654d)|Ja||  
@@ -105,7 +106,7 @@ Mit Xamarin können Sie plattformübergreifende mobile Apps für Android, iOS un
 ## <a name="release-management"></a>Release Management:  
  Verweislink: **[Automatisieren von Bereitstellungen mit Release Management](https://msdn.microsoft.com/library/vs/alm/release/overview)**  
   
-|Funktion|Unterstützt von Xamarin|Zusätzliche Kommentare|  
+|Feature|Unterstützt von Xamarin|Zusätzliche Kommentare|  
 |-------------|----------------------------|-------------------------|  
 |Verwalten von Releaseprozessen|Ja||  
 |Bereitstellen auf Servern für das Sideloading über Skripts|Ja||  
@@ -114,6 +115,6 @@ Mit Xamarin können Sie plattformübergreifende mobile Apps für Android, iOS un
 ## <a name="monitor-with-hockeyapp"></a>Überwachen mit HockeyApp  
  Verweislink: **[Überwachen mit HockeyApp](https://www.hockeyapp.net/features/)**  
   
-|Funktion|Unterstützt von Xamarin|Zusätzliche Kommentare|  
+|Feature|Unterstützt von Xamarin|Zusätzliche Kommentare|  
 |-------------|----------------------------|-------------------------|  
 |Absturzanalysen, Telemetrie und Betaverteilung|Ja||

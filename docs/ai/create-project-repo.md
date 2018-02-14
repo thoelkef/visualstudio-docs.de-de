@@ -1,3 +1,5 @@
+---
+---
 # <a name="clone-a-repository-of-python-code-in-visual-studio"></a>Klonen eines Repositorys in Python-Code in Visual Studio
 
 Sobald Sie [die Visual Studio-Tools für KI installiert haben](installation.md), können Sie ganz leicht ein Repository mit Python-Code klonen und daraus ein Projekt erstellen.

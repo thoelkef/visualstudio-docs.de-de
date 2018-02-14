@@ -4,21 +4,23 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: tgt-pltfrm-cross-plat
+ms.technology: vs-ide-mobile
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
+dev_langs:
+- C++
 ms.assetid: 76a67886-df57-4a81-accb-2e3c2eaf607b
-caps.latest.revision: "5"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: xplat-cplusplus
-ms.openlocfilehash: 6378826a090b05a681a4808573eefd95899b9f6a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- xplat-cplusplus
+ms.openlocfilehash: af4a0a340589fcedd7121e164ffcd6ec2ed43e70
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="build-an-opengl-es-application-on-android-and-ios"></a>Erstellen einer OpenGL ES-Anwendung für Android und iOS
 Bei Installation der Option "Visual C++ für plattformübergreifende Mobile-Entwicklung" können Sie Visual Studio-Projektmappen und -Projekte für iOS-Apps und Android-Apps erstellen, die gemeinsamen Code nutzen. Dieses Thema führt Sie durch eine Projektmappenvorlage, durch die eine einfache iOS-App und eine Android Native Activity-App erstellt wird. Die Apps verwenden gemeinsamen C++-Code, der OpenGL ES verwendet, um denselben animierten rotierenden Cube auf jeder Plattform anzuzeigen. OpenGL ES (OpenGL for Embedded Systems oder GLES) ist eine 2D- und 3D-Grafik-API, die auf zahlreichen mobilen Geräten unterstützt wird.  
@@ -37,7 +39,7 @@ Bei Installation der Option "Visual C++ für plattformübergreifende Mobile-Entw
   
 #### <a name="to-create-a-new-project"></a>So erstellen Sie ein neues Projekt  
   
-1.  Öffnen Sie Visual Studio. Wählen Sie in der Menüleiste **Datei**, **Neu**, **Projekt**aus.  
+1.  Öffnen Sie Visual Studio. Wählen Sie in der Menüleiste **Datei** > **Neu** > **Projekt** aus.  
   
 2.  Wählen Sie im Dialogfeld **Neues Projekt** unter **Vorlagen**die Option **Visual C++**, **Plattformübergreifend**und dann die Vorlage **OpenGLES-Anwendung (Android, iOS)** aus.  
   
