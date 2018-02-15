@@ -20,7 +20,7 @@
 #### [Produkte und Dienste von Microsoft für Barrierefreiheit (Blend)](accessibility-products-and-services-blend.md)
 ### [Tastenkombinationen für XAML-Designer](keyboard-shortcuts-for-xaml-designer.md)
 ### [Debuggen oder Deaktivieren von Projektcode im XAML-Designer](debugging-or-disabling-project-code-in-xaml-designer.md)
-## [Erstellen von modernen Desktopanwendungen mit Windows Presentation Foundation](create-modern-desktop-applications-with-windows-presentation-foundation.md)
+## [Create Modern Desktop Applications with Windows Presentation Foundation (Erstellen von modernen Desktopanwendungen mit Windows Presentation Foundation)](create-modern-desktop-applications-with-windows-presentation-foundation.md)
 ### [Erste Schritte mit WPF](getting-started-with-wpf.md)
 #### [Einführung in WPF](introduction-to-wpf.md)
 #### [Exemplarische Vorgehensweise: Meine erste WPF-Desktopanwendung](walkthrough-my-first-wpf-desktop-application2.md)
