@@ -15,11 +15,11 @@ ms.author: gregvanl
 manager: ghogen
 ms.workload:
 - vssdk
-ms.openlocfilehash: 98bbebfb5f82d10179897e94b6a49cbb3d8c6220
-ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
+ms.openlocfilehash: 5124547737405af8309161df90356f607909c0fa
+ms.sourcegitcommit: 06cdc1651aa7f45e03d260080da5a623d6258661
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/15/2018
 ---
 # <a name="adding-a-language-server-protocol-extension"></a>Hinzufügen einer Sprache Serverprotokoll-Erweiterung
 
@@ -49,10 +49,10 @@ Der Zweck der LSP und Unterstützung in Visual Studio besteht darin, Dienste fü
 
 Bisher werden die folgenden LSP-Funktionen in Visual Studio unterstützt:
 
-Meldung | Verfügt über Unterstützung in Visual Studio
+Nachricht | Verfügt über Unterstützung in Visual Studio
 --- | ---
 Initialisieren | ja
-initialisiert | 
+initialisiert | ja
 Herunterfahren | ja
 Beenden | ja
 $/cancelRequest | ja
@@ -72,12 +72,12 @@ textDocument/didOpen | ja
 textDocument/didChange | ja
 textDocument/willSave |
 textDocument/willSaveWaitUntil |
-textDocument/didSave |
+textDocument/didSave | ja
 textDocument/didClose | ja
 textDocument/completion | ja
 Abschluss/auflösen | ja
-TextDocument/gezeigt wird |
-textDocument/signatureHelp |
+TextDocument/gezeigt wird | ja
+textDocument/signatureHelp | ja
 textDocument/references | ja
 textDocument/documentHighlight |
 textDocument/documentSymbol | ja
@@ -210,6 +210,16 @@ namespace MockLanguageExtension
         public async Task OnLoadedAsync()
         {
             await StartAsync?.InvokeAsync(this, EventArgs.Empty);
+        }
+
+        public async Task OnServerInitializeFailedAsync(Exception e)
+        {
+            return Task.CompletedTask;
+        }
+
+        public async Task OnServerInitializedAsync()
+        {
+            return Task.CompletedTask;
         }
     }
 }
@@ -428,6 +438,7 @@ internal class MockCustomLanguageClient : MockLanguageClient, ILanguageClientCus
     public async Task<string> SendServerCustomMessage(string test)
     {
         return await this.customMessageRpc.InvokeAsync<string>("OnCustomRequest", test);
+    }
 }
 ```
 
@@ -440,7 +451,6 @@ Jede LSP-Nachricht besitzt eine eigene Schnittstelle mittleren Ebene für die Ab
 ```csharp
 public class MockLanguageClient: ILanguageClient, ILanguageClientCustomMessage
 {
-
     public object MiddleLayer => MiddleLayerProvider.Instance;
 
     private class MiddleLayerProvider : ILanguageClientWorkspaceSymbolProvider
@@ -459,6 +469,7 @@ public class MockLanguageClient: ILanguageClient, ILanguageClientCustomMessage
             // Only return symbols that are "files"
             return symbols.Where(sym => string.Equals(new Uri(sym.Location.Uri).Scheme, "file", StringComparison.OrdinalIgnoreCase)).ToArray();
         }
+    }
 }
 ```
 
