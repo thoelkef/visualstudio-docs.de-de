@@ -42,7 +42,7 @@
               tocHref: /visualstudio/extensibility/debugger/
               topicHref: /visualstudio/extensibility/debugger/visual-studio-debugger-extensibility
               items:
-                - name: Verweis
+                - name: Referenz
                   tocHref: /visualstudio/extensibility/debugger/reference/
                   topicHref: /visualstudio/extensibility/debugger/reference/reference-visual-studio-debugging-apis
             - name: Richtlinien zur Benutzerfreundlichkeit
@@ -62,7 +62,7 @@
           topicHref: /visualstudio/profiling/index
         - name: Python
           tocHref: /visualstudio/python/
-          topicHref: /visualstudio/overview-of-python-tools-for-visual-studio
+          topicHref: /visualstudio/python/overview-of-python-tools-for-visual-studio
         - name: R
           tocHref: /visualstudio/rtvs/
           topicHref: /visualstudio/rtvs/index
