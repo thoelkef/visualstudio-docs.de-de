@@ -1,10 +1,10 @@
 ---
 title: MSBuild-Toolset (ToolsVersion) | Microsoft-Dokumentation
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 01/31/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -13,16 +13,16 @@ helpviewer_keywords:
 - MSBuild, targeting a specific .NET framework
 - multitargeting [MSBuild]
 ms.assetid: 40040ee7-4620-4043-a6d8-ccba921421d1
-caps.latest.revision: "30"
-author: kempb
-ms.author: kempb
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: c7c8658b3c1a39efc24e65845be2ce75eafc4437
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: e274fa60ff209436be9d11f52464d7b42972ef47
+ms.sourcegitcommit: f219ef323b8e1c9b61f2bfd4d3fad7e3d5fb3561
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="msbuild-toolset-toolsversion"></a>MSBuild-Toolset (ToolsVersion)
 MSBuild verwendet ein Toolset von Aufgaben, Zielen und Tools für die Erstellung einer Anwendung. Ein MSBuild-Toolset umfasst in der Regel eine Datei mit allgemeinen Aufgaben (microsoft.common.tasks), eine Datei mit allgemeinen Zielen (microsoft.common.targets) und Compiler wie csc.exe und vbc.exe. Die meisten Toolsets können verwendet werden, um Anwendungen für mehr als eine Version von .NET Framework und mehr als eine Systemplattform zu kompilieren. Das Toolset MSBuild 2.0 kann allerdings nur für .NET Framework 2.0 verwendet werden.  
@@ -32,7 +32,10 @@ MSBuild verwendet ein Toolset von Aufgaben, Zielen und Tools für die Erstellung
   
 ```xml  
 <Project ToolsVersion="15.0" ... </Project>  
-```  
+``` 
+
+> [!NOTE] 
+> Einige Projekttypen verwenden das `sdk`-Attribut anstelle von `ToolsVersion`. Weitere Informationen finden Sie unter [Pakete, Metapakete und Frameworks](/dotnet/core/packages) und [Erweiterungen des CSPROJ-Formats für .NET Core](/dotnet/core/tools/csproj).
   
 ## <a name="how-the-toolsversion-attribute-works"></a>So funktioniert das ToolsVersion-Attribut  
  Wenn Sie in Visual Studio ein Projekt erstellen oder ein vorhandenes Projekt aktualisieren, ist automatisch ein Attribut mit dem Namen `ToolsVersion` in der Projektdatei vorhanden, und sein Wert entspricht der Version von MSBuild, die in der Visual Studio-Edition enthalten ist. Weitere Informationen finden Sie unter [Festlegen einer bestimmten .NET-Framework-Zielversion](../ide/targeting-a-specific-dotnet-framework-version.md).  
@@ -72,7 +75,7 @@ MSBuild verwendet ein Toolset von Aufgaben, Zielen und Tools für die Erstellung
   
 -   Durch Verwendung von <xref:Microsoft.Build.Utilities.ToolLocationHelper>-Methoden  
   
- In den Toolseteigenschaften sind die Pfade der Tools angegeben. MSBuild verwendet den Wert des `ToolsVersion`-Attributs in der Projektdatei, um den entsprechenden Registrierungsschlüssel zu suchen, und verwendet dann die Informationen im Registrierungsschlüssel, um die Toolseteigenschaften festzulegen. Wenn `ToolsVersion` z.B. den Wert `12.0` hat, dann legt MSBuild die Toolseteigenschaften entsprechend diesem Registrierungsschlüssel fest: HKLM\Software\Microsoft\MSBuild\ToolsVersions\12.0.  
+ In den Toolseteigenschaften sind die Pfade der Tools angegeben. Ab Visual Studio 2017 ist für MSBuild kein Speicherort mehr festgelegt. Standardmäßig befindet sich MSBuild im Ordner „MSBuild\15.0\Bin“ relativ zum Installationsort von Visual Studio. In früheren Versionen verwendet MSBuild den Wert des `ToolsVersion`-Attributs in der Projektdatei, um den entsprechenden Registrierungsschlüssel zu suchen, und verwendet dann die Informationen im Registrierungsschlüssel, um die Toolseteigenschaften festzulegen. Wenn `ToolsVersion` z.B. den Wert `12.0` hat, dann legt MSBuild die Toolseteigenschaften entsprechend diesem Registrierungsschlüssel fest: HKLM\Software\Microsoft\MSBuild\ToolsVersions\12.0.  
   
  Dies sind die Toolseteigenschaften:  
   
@@ -95,7 +98,7 @@ MSBuild verwendet ein Toolset von Aufgaben, Zielen und Tools für die Erstellung
 -   <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToBuildTools%2A> gibt den Pfad der Build-Tools zurück.  
   
 ### <a name="sub-toolsets"></a>Unter-Toolsets  
- Wie bereits früher in diesem Thema beschrieben, verwendet MSBuild einen Registrierungsschlüssel, um den Pfad der grundlegenden Tools anzugeben. Wenn der Schlüssel einen Unterschlüssel hat, verwendet MSBuild ihn, um den Pfad eines Unter-Toolsets anzugeben, das zusätzliche Tools enthält. In diesem Fall wird das Toolset definiert, indem die in beiden Schlüsseln definierten Eigenschaftendefinitionen kombiniert werden.  
+ In MSBuild-Versionen für Version 15.0 verwendet MSBuild einen Registrierungsschlüssel, um den Pfad der grundlegenden Tools anzugeben. Wenn der Schlüssel einen Unterschlüssel hat, verwendet MSBuild ihn, um den Pfad eines Unter-Toolsets anzugeben, das zusätzliche Tools enthält. In diesem Fall wird das Toolset definiert, indem die in beiden Schlüsseln definierten Eigenschaftendefinitionen kombiniert werden.  
   
 > [!NOTE]
 >  Wenn bei Toolseteigenschaftennamen Konflikte auftreten, überschreibt der Wert, der für den Unterschlüsselpfad definiert ist, den Wert, der für den Stammschlüsselpfad definiert ist.  
@@ -106,7 +109,7 @@ MSBuild verwendet ein Toolset von Aufgaben, Zielen und Tools für die Erstellung
   
 -   "11.0" specifies the .NET Framework 4.5 sub-toolset  
   
--   "12.0" specifies the .NET Framework 4.5.1 sub-toolset  
+-   "12.0" specifies the .NET Framework 4.5.1 sub-toolset 
   
  Die Unter-Toolsets 10.0 und 11.0 sollten mit der ToolsVersion 4.0 verwendet werden. In späteren Versionen sollten die Version der Unter-Toolsets und die ToolsVersion übereinstimmen.  
   

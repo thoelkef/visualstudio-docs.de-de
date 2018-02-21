@@ -4,7 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -12,18 +12,20 @@ dev_langs:
 - CSharp
 - C++
 - jsharp
-helpviewer_keywords: MSBuild, reference
+helpviewer_keywords:
+- MSBuild, reference
 ms.assetid: 093395e1-70da-4f74-b34d-046c5e2b32e8
-caps.latest.revision: "22"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 0f780de1bac1786ac3c5ffb70bd1a2f442fc8734
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 9315229eb5d1f157c412fe0307249e45b8e66539
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="msbuild-reference"></a>MSBuild-Referenz
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ist das Buildsystem für [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Die folgenden Links verweisen auf [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Referenzinformationen.  
@@ -50,7 +52,7 @@ ms.lasthandoff: 12/22/2017
  [Gemeinsame MSBuild-Projektelemente](../msbuild/common-msbuild-project-items.md)  
  Beschreibt Projektelemente, die für alle Projekttypen gelten, sowie Elemente, die von bestimmten Projekttypen häufig verwendet werden.  
   
- [Command-Line Reference](../msbuild/msbuild-command-line-reference.md) (MSBuild-Befehlszeilenreferenz)  
+ [MSBuild-Befehlszeilenreferenz](../msbuild/msbuild-command-line-reference.md)  
  Beschreibt die Argumente und Schalter, die mit [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].exe verwendet werden können.  
   
  [.Targets Files](../msbuild/msbuild-dot-targets-files.md) (TARGETS-Dateien von MSBuild)  

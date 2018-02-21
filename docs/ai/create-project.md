@@ -1,6 +1,8 @@
+---
+---
 # <a name="create-an-ai-project-from-a-template-in-visual-studio"></a>Erstellen eines KI-Projekts aus einer Vorlage in Visual Studio
 
-[Wenn Sie die Visual Studio-Tools für KI installiert haben](installation.md), können Sie aus einer Vielzahl von Vorlagen ganz einfach ein neues KI-Projekt erstellen.
+Wenn Sie die [Visual Studio-Tools für KI installiert haben](installation.md), können Sie aus einer Vielzahl von Vorlagen ganz einfach ein neues KI-Projekt erstellen.
 
 1. Starten Sie Visual Studio.
 

@@ -1,16 +1,12 @@
 ---
 title: "Text-Editor-Dialogfeld „Optionen“ | Microsoft-Dokumentation"
-ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Outlining
-- VS.ToolsOptionsPages.Text_Editor.Visual_JSharp.Miscellaneous
-- VS.ToolsOptionsPages.Text_Editor.Visual_JSharp.Outlining
 - VS.ToolsOptionsPages.Text_Editor.T-SQL80
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Formatting
 - VS.ToolsOptionsPages.Text_Editor.PL/SQL
@@ -20,75 +16,21 @@ helpviewer_keywords:
 - configure editor
 - editor settings
 ms.assetid: 90d4e522-6391-4571-927d-b466a9766342
-caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 80668df65b1250eb579597653cf32ab79d30218c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 6ec15efe170310d34e6059030a502c1d23fbffc9
+ms.sourcegitcommit: 238cd48787391aa0ed1eb684f3f04e80f7958705
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/12/2018
 ---
-# <a name="text-editor-options-dialog-box"></a>Text-Editor-Dialogfeld "Optionen"
-Die im Dialogfeld **Optionen** enthaltenen Optionen für den Editor bieten zahlreiche Möglichkeiten, die Darstellung und das Verhalten des Editors anzupassen.  
-  
-## <a name="in-this-section"></a>In diesem Abschnitt  
- [Gewusst wie: Ändern der im Editor verwendeten Schriftarten und Farben](../../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)  
- Erläutert, wie Schriftarten und Farben im Editor geändert werden.  
-  
- [Gewusst wie: Verwalten des Zeilenumbruchs im Editor](../../ide/reference/how-to-manage-word-wrap-in-the-editor.md)  
- Erläutert Optionen für den Zeilenumbruch.  
-  
- [Gewusst wie: Anzeigen von Zeilennummern im Editor](../../ide/reference/how-to-display-line-numbers-in-the-editor.md)  
- Erklärt, wie Zeilennummern aktiviert werden.  
-  
- [Gewusst wie: Anzeigen von URLs als Links im Editor](../../ide/reference/how-to-display-urls-as-links-in-the-editor.md)  
- Erläutert, wie URLs formatiert werden, damit sie als Links erscheinen.  
-  
- [Festlegen von sprachspezifischen Editor-Optionen](../../ide/reference/setting-language-specific-editor-options.md)  
- Erläutert das Festlegen von Editoroptionen, die nur für eine Entwicklungssprache gelten.  
-  
- [Optionen, Text-Editor, Allgemein](../../ide/reference/options-text-editor-general.md)  
- Erläutert allgemeine Editoroptionen.  
-  
- [Optionen, Text-Editor, Dateierweiterung](../../ide/reference/options-text-editor-file-extension.md)  
- Erläutert Dateierweiterungsoptionen.  
-  
- [Optionen, Text-Editor, Alle Sprachen](../../ide/reference/options-text-editor-all-languages.md)  
- Erläutert die Optionen, die für alle Sprachen verfügbar sind.  
-  
- [Optionen, Text-Editor, Alle Sprachen, Registerkarten](../../ide/reference/options-text-editor-all-languages-tabs.md)  
- Erläutert die Registerkartenoptionen, die für alle Sprachen verfügbar sind.  
-  
- [Optionen, Text-Editor, Standard (Visual Basic)](../../ide/reference/options-text-editor-basic-visual-basic.md)  
- Erläutert Visual Basic-Optionen.  
-  
- [Optionen, Text-Editor, C/C++, Formatierung](../../ide/reference/options-text-editor-c-cpp-formatting.md)  
- Erläutert C/C++-Formatierungsoptionen.  
-  
- [Optionen, Text-Editor, C/C++, Erweitert](../../ide/reference/options-text-editor-c-cpp-advanced.md)  
- Erläutert erweiterte C/C++-Optionen.  
-  
- [Optionen, Text-Editor, C#, Formatierung](../../ide/reference/options-text-editor-csharp-formatting.md)  
- Erläutert C#-Formatierungsoptionen.  
-  
- [Optionen, Text-Editor, C#, Erweitert](../../ide/reference/options-text-editor-csharp-advanced.md)  
- Erläutert erweiterte C#-Optionen.  
-  
- [Optionen, Text-Editor, C#, IntelliSense](../../ide/reference/options-text-editor-csharp-intellisense.md)  
- Erläutert C#-IntelliSense-Optionen.  
-  
- [Optionen, Text-Editor, JavaScript, Formatierung](../../ide/reference/options-text-editor-javascript-formatting.md)  
- Erläutert JavaScript-Formatierungsoptionen.  
-  
- [Optionen, Text-Editor, JavaScript, IntelliSense](../../ide/reference/options-text-editor-javascript-intellisense.md)  
- Erläutert JavaScript IntelliSense-Optionen.  
-  
- [Optionen, Text-Editor, XAML, Formatierung](../../ide/reference/options-text-editor-xaml-formatting.md)  
- Erläutert XAML-Formatierungsoptionen.  
-  
-## <a name="related-sections"></a>Verwandte Abschnitte  
- [Schreiben von Code](../../ide/writing-code-in-the-code-and-text-editor.md)  
- Beschreibt verschiedene Möglichkeiten, den Code-Editor zu verwenden.
+# <a name="text-editor-options-dialog-box"></a>Dialogfeld „Optionen“ des Text-Editors
+
+Die im Dialogfeld **Optionen** enthaltenen Optionen für den Editor bieten zahlreiche Möglichkeiten, die Darstellung und das Verhalten des Editors anzupassen.
+
+## <a name="see-also"></a>Siehe auch
+
+Unter [Schreiben von Code](../../ide/writing-code-in-the-code-and-text-editor.md) werden verschiedene Verwendungsmöglichkeiten des Code-Editors beschrieben.

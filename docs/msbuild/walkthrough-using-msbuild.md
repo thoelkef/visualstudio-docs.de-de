@@ -4,21 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: MSBuild, tutorial
+helpviewer_keywords:
+- MSBuild, tutorial
 ms.assetid: b8a8b866-bb07-4abf-b9ec-0b40d281c310
-caps.latest.revision: "32"
-author: kempb
-ms.author: kempb
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: fa0ec9c483244e15e5cc51cb6bdb743c1f586e7c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 00775856e57392355b1908d4849f1bbbd836c5f2
+ms.sourcegitcommit: f219ef323b8e1c9b61f2bfd4d3fad7e3d5fb3561
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="walkthrough-using-msbuild"></a>Exemplarische Vorgehensweise: Verwenden von MSBuild
 MSBuild ist die Buildplattform für Microsoft und Visual Studio. In dieser exemplarischen Vorgehensweise machen Sie sich mit den Bausteinen von MSBuild vertraut, zudem wird erläutert, wie Sie MSBuild-Projekte erstellen, bearbeiten und debuggen. Zu folgenden Aspekten erfahren Sie mehr:  
@@ -60,45 +61,33 @@ MSBuild ist die Buildplattform für Microsoft und Visual Studio. In dieser exemp
      Die Projektdatei wird im Code-Editor angezeigt.  
   
 ## <a name="targets-and-tasks"></a>Ziele und Aufgaben  
- Projektdateien sind Dateien im XML-Format und dem Stammknoten [Project](../msbuild/project-element-msbuild.md).  
+Projektdateien sind Dateien im XML-Format und dem Stammknoten [Project](../msbuild/project-element-msbuild.md).  
   
 ```xml  
 <?xml version="1.0" encoding="utf-8"?>  
-<Project ToolsVersion="12.0" DefaultTargets="Build"  xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
+<Project ToolsVersion="15.0"  xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
 ```  
   
- Sie müssen den xmlns-Namespace im Project-Element angeben.  
+Sie müssen den xmlns-Namespace im Project-Element angeben. Wenn `ToolsVersion` in einem neuen Projekt enthalten ist, muss es sich um die Version „15.0“ handeln.
   
- Das Erstellen einer Anwendung wird mit dem [Target](../msbuild/target-element-msbuild.md)-Element und dem [Task](../msbuild/task-element-msbuild.md)-Element ausgeführt.  
+Das Erstellen einer Anwendung wird mit dem [Target](../msbuild/target-element-msbuild.md)-Element und dem [Task](../msbuild/task-element-msbuild.md)-Element ausgeführt.  
   
 -   Eine Aufgabe bildet die kleinste Arbeitseinheit, d. h. das „Atom“ eines Builds. Aufgaben sind unabhängige ausführbare Komponenten, die über Eingaben und Ausgaben verfügen können. Derzeit wird in der Projektdatei nicht auf Aufgaben verwiesen, und solche wurden nicht definiert. In den folgenden Abschnitten fügen Sie der Projektdatei Aufgaben hinzu. Weitere Informationen finden Sie im Thema [Aufgaben](../msbuild/msbuild-tasks.md).  
   
--   Als Ziel wird eine benannte Sequenz von Aufgaben bezeichnet. Am Ende der Projektdatei befinden sich zwei Ziele, die derzeit in HTML-Kommentare eingeschlossen sind: BeforeBuild und AfterBuild.  
+-   Als Ziel wird eine benannte Sequenz von Aufgaben bezeichnet. Weitere Informationen finden Sie im Thema [Ziele](../msbuild/msbuild-targets.md).  
   
-    ```xml  
-    <Target Name="BeforeBuild">  
-    </Target>  
-    <Target Name="AfterBuild">  
-    </Target>  
-    ```  
-  
-     Weitere Informationen finden Sie im Thema [Ziele](../msbuild/msbuild-targets.md).  
-  
- Der Knoten Project besitzt ein optionales DefaultTargets-Attribut, das das zu erstellende Standardziel auswählt, in diesem Fall Build.  
-  
-```xml  
-<Project ToolsVersion="12.0" DefaultTargets="Build" ...  
-```  
-  
- Das Ziel Build ist nicht in der Projektdatei definiert. Stattdessen wird es mithilfe des [Import](../msbuild/import-element-msbuild.md)-Elements aus der Datei „Microsoft.CSharp.targets“ importiert.  
+Das Standardziel ist nicht in der Projektdatei definiert. Stattdessen wird es in importierten Projekten angegeben. Das [Import](../msbuild/import-element-msbuild.md)-Element gibt importierte Projekte an. Beispielsweise wird in einem C#-Projekt das Standardziel aus der Datei „Microsoft.CSharp.targets“ importiert. 
   
 ```xml  
 <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />  
 ```  
   
- Importierte Dateien werden letztlich in der Projektdatei eingefügt, in der sie mit Verweisen versehen werden.  
+Importierte Dateien werden letztlich in der Projektdatei eingefügt, in der sie mit Verweisen versehen werden.  
+
+> [!NOTE]
+> Einige Projekttypen wie .NET Core verwenden ein vereinfachtes Schema mit einem `Sdk`-Attribut anstelle von `ToolsVersion`. Diese Projekte verfügen über implizite Importe und unterschiedliche Standardattributwerte.
   
- MSBuild verfolgt die Ziele eines Builds nach und garantiert, dass jedes Ziel nicht mehr als einmal erstellt wird.  
+MSBuild verfolgt die Ziele eines Builds nach und garantiert, dass jedes Ziel nicht mehr als einmal erstellt wird.  
   
 ## <a name="adding-a-target-and-a-task"></a>Hinzufügen eines Ziels und einer Aufgabe  
  Fügen Sie der Projektdatei ein Ziel hinzu. Fügen Sie dem Ziel eine Aufgabe hinzu, mit der eine Meldung gedruckt wird.  
@@ -158,9 +147,6 @@ MSBuild ist die Buildplattform für Microsoft und Visual Studio. In dieser exemp
   
  Durch Wechsel zwischen Code-Editor und dem Befehlsfenster können Sie die Projektdatei ändern und die Ergebnisse schnell anzeigen.  
   
-> [!NOTE]
->  Wenn Sie msbuild ohne den Befehlsschalter /t ausführen, erstellt msbuild das vom DefaultTarget-Attribut des Project-Elements angegebene Ziel, in diesem Fall "Build". Damit wird die Windows Forms-Anwendung BuildApp.exe erstellt.  
-  
 ## <a name="build-properties"></a>Buildeigenschaften  
  Buildeigenschaften sind Name-Wert-Paare, anhand derer der Build ausgeführt wird. Am Anfang der Projektdatei sind bereits mehrere Buildeigenschaften definiert:  
   
@@ -178,10 +164,10 @@ MSBuild ist die Buildplattform für Microsoft und Visual Studio. In dieser exemp
  Alle Eigenschaften sind untergeordnete Elemente von PropertyGroup-Elementen. Der Name der Eigenschaft entspricht dem Namen des untergeordneten Elements, und der Wert der Eigenschaft entspricht dem Textelement des untergeordneten Elements. Ein auf ein Objekt angewendeter  
   
 ```xml  
-<TargetFrameworkVersion>v12.0</TargetFrameworkVersion>  
+<TargetFrameworkVersion>v15.0</TargetFrameworkVersion>  
 ```  
   
- definiert die Eigenschaft "TargetFrameworkVersion" und weist dieser den Zeichenfolgenwert "v12.0" zu.  
+ definiert die Eigenschaft "TargetFrameworkVersion" und weist dieser den Zeichenfolgenwert „v15.0“ zu.  
   
  Buildeigenschaften können jederzeit neu definiert werden. If  
   
@@ -223,7 +209,7 @@ $(PropertyName)
   
     ```  
     Configuration is Debug  
-    MSBuildToolsPath is C:\Program Files\MSBuild\12.0\bin  
+    MSBuildToolsPath is C:\Program Files (x86)\Microsoft Visual Studio\2017\<Visual Studio SKU>\MSBuild\15.0\Bin  
     ```  
   
 > [!NOTE]

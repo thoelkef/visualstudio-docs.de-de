@@ -4,20 +4,20 @@ ms.custom:
 ms.date: 03/01/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 9976b6fd-d052-4017-b848-35b5bf4b2f66
-caps.latest.revision: "23"
-author: kempb
-ms.author: kempb
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: ae35bafc612b4fd7b76a06c47300fee4f35ce5ff
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 81ee5566181a96ef36e8ce8f1545a22964301198
+ms.sourcegitcommit: f219ef323b8e1c9b61f2bfd4d3fad7e3d5fb3561
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="whats-new-in-msbuild-15"></a>Neues in MSBuild 15
 MSBuild ist jetzt als Teil des [.NET Core SDK](https://www.microsoft.com/net/download/core) verfügbar und ermöglicht die Erstellung von .NET Core-Projekten unter Windows, macOS und Linux.  
@@ -39,7 +39,7 @@ MSBuild ist jetzt als Teil des [.NET Core SDK](https://www.microsoft.com/net/dow
 -   Die Eigenschaften `SDK35ToolsPath` und `SDK40ToolsPath` verweisen auf das .NET Framework SDK, das mit dieser Version von Visual Studio geliefert wird (beispielsweise 10.0A für die 4.X-Tools).  
 
 ## <a name="updates"></a>Updates
-- Das [Project-Element](../msbuild/project-element-msbuild.md) verfügt über ein neues `SDK`-Attribut. Das `Xmlns`-Attribut ist zudem jetzt optional.
+- Das [Project-Element](../msbuild/project-element-msbuild.md) verfügt über ein neues `SDK`-Attribut. Das `Xmlns`-Attribut ist zudem jetzt optional. Weitere Informationen finden Sie unter [Pakete, Metapakete und Frameworks](/dotnet/core/packages) und [Erweiterungen des CSPROJ-Formats für .NET Core](/dotnet/core/tools/csproj).
 - Das [Item-Element](../msbuild/item-element-msbuild.md) verfügt außerhalb von Zielen über ein neues `Update`-Attribut. Auch die Einschränkung für das `Remove`-Attribut wurde entfernt.
 - `Directory.Build.props` ist eine benutzerdefinierte Datei, die Anpassungen für Projekte unter einem Verzeichnis bereitstellt. Diese Datei wird automatisch aus Microsoft.Common.props importiert, wenn die Eigenschaft `ImportDirectoryBuildTargets` nicht auf **FALSE** festgelegt wird. `Directory.Build.targets` wird durch Microsoft.Common.targets importiert.
 - Alle Metadaten mit einem Namen, der der aktuellen Liste der Attribute nicht widerspricht, können optional als Attribut ausgedrückt werden. Weitere Informationen finden Sie unter [Item-Element](../msbuild/item-element-msbuild.md).

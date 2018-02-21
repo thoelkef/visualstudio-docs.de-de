@@ -1,27 +1,27 @@
 ---
 title: Verwalten von Python-Umgebungen in Visual Studio | Microsoft-Dokumentation
-description: "Erfahren Sie, wie über das Fenster „Python-Umgebungen“ in Visual Studio globale und virtuelle Umgebungen verwaltet, benutzerdefinierte Umgebungen eingerichtet, Python-Interpreter installiert, Pakete installiert, Suchpfade festgelegt und Umgebungen für Visual Studio-Projekte verwaltet werden."
+description: "Erfahren Sie, wie über das Fenster „Python-Umgebungen“ in Visual Studio globale und virtuelle Umgebungen verwaltet, benutzerdefinierte Umgebungen eingerichtet, Python-Interpreter und Pakete installiert, Suchpfade festgelegt und Umgebungen für Visual Studio-Projekte verwaltet werden."
 ms.custom: 
 ms.date: 01/16/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
 - devlang-python
-ms.devlang: python
+dev_langs:
+- python
 ms.tgt_pltfrm: 
 ms.topic: article
-caps.latest.revision: 
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 0b0195770bde2906ac34f0f4b8a5faf684130899
-ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
+ms.openlocfilehash: 40f901c65872fe593457883c36f0d60bf7e2fd8a
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="python-environments"></a>Python-Umgebungen
 
@@ -70,13 +70,13 @@ Wenn Sie als Entwickler neue Formen der Erkennung für Python-Umgebungen bereits
 
 Wählen Sie den Menübefehl **Ansicht > Weitere Fenster > Python-Umgebungen** aus, oder führen Sie einen Rechtsklick auf den Knoten **Python-Umgebungen** für ein Projekt im Projektmappen-Explorer aus, und klicken Sie auf **Alle Python-Umgebungen anzeigen**:
 
-    ![View All Environments command in Solution Explorer](media/environments-view-all.png)
+![Befehl „Alle Umgebungen anzeigen“ im Projektmappen-Explorer](media/environments-view-all.png)
 
 In jedem Fall wird das Fenster „Python-Umgebungen“ als gleichgeordnete Registerkarte des Projektmappen-Explorers angezeigt:
 
 ![Fenster „Python-Umgebungen“](media/environments-default-view.png)
 
-Im Beispiel oben wird Python 3.4 (32-Bit-CPython) zusammen mit den 32-Bit- und 64-Bit-Versionen von IronPython 2.7 installiert. Die fettgedruckte Standardumgebung Python 3.4, die für alle neuen Projekte verwendet wird. Wenn keine Umgebungen angezeigt werden, bedeutet dies, dass Sie Python-Tools für Visual Studio in Visual Studio 2015 oder früher installiert haben, aber noch keinen Python-Interpreter (siehe [Auswählen und Installieren von Python-Interpretern](#selecting-and-installing-python-interpreters) oben). Der Befehl **+ Benutzerdefiniert** erlaubt Ihnen das [Erstellen einer Umgebung für einen vorhandenen Interpreter](#create-an-environment-for-an-existing-interpreter).
+Im Beispiel oben wird Python 3.4 (32-Bit-CPython) zusammen mit den 32-Bit- und 64-Bit-Versionen von IronPython 2.7 installiert. Die fettgedruckte Standardumgebung Python 3.4, die für alle neuen Projekte verwendet wird. Wenn keine Umgebungen angezeigt werden, bedeutet dies, dass Sie Python-Tools für Visual Studio in Visual Studio 2015 oder früher installiert haben, aber noch keinen Python-Interpreter (siehe [Auswählen und Installieren von Python-Interpretern](#selecting-and-installing-python-interpreters) oben). Der Befehl **+ Benutzerdefiniert** erlaubt Ihnen das [Erstellen einer Umgebung für einen vorhandenen Interpreter](#creating-an-environment-for-an-existing-interpreter).
 
 Rechts neben jeder aufgelisteten Umgebung befindet sich ein Steuerelement, das ein interaktives Fenster für die jeweilige Umgebung öffnet. Möglicherweise wird ein weiteres Steuerelement angezeigt, das die IntelliSense-Datenbank der jeweiligen Umgebung aktualisiert.
 

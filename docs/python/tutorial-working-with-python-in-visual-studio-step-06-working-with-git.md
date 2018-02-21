@@ -7,21 +7,21 @@ ms.reviewer:
 ms.suite: 
 ms.technology:
 - devlang-python
-ms.devlang: python
+dev_langs:
+- python
 ms.tgt_pltfrm: 
-ms.topic: get-started-article
-caps.latest.revision: 
+ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6ce191ce01a89b7fc743562eaf430656f6952271
-ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
+ms.openlocfilehash: eb39d8807deb0c08b12b04128365c584d9bd8251
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="step-6-working-with-git"></a>Schritt 6: Arbeiten mit Git
 
@@ -35,7 +35,7 @@ In diesem Artikel wird das Erstellen eines lokalen Git-Repositorys für ein vorh
 
   ![Zusätzliche Informationen, die angezeigt werden, wenn auf ein Git-Steuerelement im Visual Studio-Fenster gezeigt wird](media/working-with-git-01.png)
 
-1. Das **Team Explorer**-Fenster wird mit verschiedenen verfügbaren Git-Optionen angezeigt, indem Sie auf den Header des Repositorys klicken. Der im Folgenden dargestellte **Sync**-Bereich bietet Optionen für das Veröffentlichen auf einem Remoterepository.
+1. Das **Team Explorer**-Fenster wird mit verschiedenen verfügbaren Git-Optionen angezeigt, indem Sie auf den Header des Repositorys klicken. Der **Sync**-Bereich, der angezeigt wird, wenn Sie auf den Header **Push** klicken, bietet Optionen für das Veröffentlichen auf einem Remoterepository.
 
   ![Team Explorer in Visual Studio, nachdem ein lokales Repository erstellt wurde](media/working-with-git-02.png)
 
@@ -47,7 +47,7 @@ In diesem Artikel wird das Erstellen eines lokalen Git-Repositorys für ein vorh
 
   ![Team Explorer in Visual Studio, der Branches anzeigt](media/working-with-git-04.png)
 
-1. Wenn Sie ein lokales Repository verwenden, werden gespeicherte Änderungen direkt an das Repository übertragen. Wenn Sie mit einem Remoterepository verbunden sind, klicken Sie auf **Sync**, um Ihre lokalen Commits mithilfe von Push zu übertragen.
+1. Wenn Sie ein lokales Repository verwenden, werden gespeicherte Änderungen direkt an das Repository übertragen. Wenn Sie mit einem Remoterepository verbunden sind, klicken Sie auf den Header und anschließend auf **Sync**, um zum Abschnitt **Synchronisierung** zu wechseln und mit den dort aufgeführten Befehlen zu arbeiten.
 
 ## <a name="going-deeper"></a>Vertiefung
 

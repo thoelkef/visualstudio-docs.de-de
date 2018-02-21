@@ -10,12 +10,15 @@ ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: b71242bfd0744b2b2dc8c5561b87ab893fb81a9b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+dev_langs:
+- CPP
+ms.workload:
+- cplusplus
+ms.openlocfilehash: b2a8b1c99d1b084a6f8d3c050302e16ea40d64ac
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="visual-c-code-snippets"></a>Visual C#-Codeausschnitte
 
@@ -31,7 +34,7 @@ Zum Einfügen eines Codeausschnitts öffnen Sie eine C++-Codedatei (.cpp oder .h
 
 - Wählen Sie im Menü **Bearbeiten/IntelliSense** die Option **Ausschnitt einfügen** aus.
 
-- Verwenden Sie folgenden Tastaturbefehl: **STRG + K + X**
+- Verwenden Sie folgenden Tastaturbefehl: **STRG**+**K**+**X**.
 
 Es sollte eine Liste mit Auswahlmöglichkeiten beginnend mit **#if** angezeigt werden. Bei der Auswahl von **#if** sollte der folgende Code in die Datei eingefügt werden:
 
@@ -47,11 +50,11 @@ Sie können dann 0 durch die richtige Bedingung ersetzen.
 
 Um einen Codeausschnitt zum Umschließen des ausgewählten Codes zu verwenden, wählen Sie eine Zeile (oder mehrere Zeilen) aus, und führen Sie eine der folgenden Aktionen aus:
 
-1. Klicken Sie mit der rechten Maustaste, um im Kontextmenü **Umschließen mit** auszuwählen.
+- Klicken Sie mit der rechten Maustaste, um im Kontextmenü **Umschließen mit** auszuwählen.
 
-2. Wählen Sie im Menü **Bearbeiten/IntelliSense** die Option **Umschließen mit** aus.
+- Wählen Sie im Menü **Bearbeiten** > **IntelliSense** die Option **Umschließen mit** aus.
 
-3. Verwenden Sie folgenden Tastaturbefehl: **STRG + K + S**
+- Drücken Sie auf der Tastatur die Tasten**STRG**+**K**+**S**.
 
 Wählen Sie **#if** aus. Folgendes sollte angezeigt werden:
 
