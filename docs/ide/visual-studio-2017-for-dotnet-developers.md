@@ -11,18 +11,18 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: a834f9781ff51779b2216bd7de9dd3e449c9360a
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 053bd6077fa98142cd74eae58ce3df949291c326
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="visual-studio-2017-for-net-developers"></a>Visual Studio 2017 für .NET-Entwickler
 
 ## <a name="smart-code-editor"></a>Intelligenter Code-Editor
 
-[Dokumentation: Verwenden von IntelliSense](using-intellisense.md)  
-[Dokumentation: Features des intelligenten Editors](writing-code-in-the-code-and-text-editor.md)
+- [Dokumentation: Verwenden von IntelliSense](using-intellisense.md)
+- [Dokumentation: Features des intelligenten Editors](writing-code-in-the-code-and-text-editor.md)
 
 Dank des .NET-Compilers (bzw. Roslyn-Compilers) ist Visual Studio auf das Schreiben von Code bestens ausgelegt und kann Ihnen intelligente Bearbeitungsfeatures bieten, z.B. farbige Syntaxhervorhebung, Codevervollständigung, Rechtschreibprüfung falsch geschriebener Variablen, Auflösung nicht importierter Typen, Gliederung, Strukturschnellansichten, [CodeLens](find-code-changes-and-other-history-with-codelens.md), Aufrufhierarchie, QuickInfos beim Zeigen auf ein Element, Parameterhilfe sowie Tools für Refactoring, zum Anwenden schneller Aktionen und zum Generieren von Code.
 
@@ -50,14 +50,14 @@ Darüber hinaus können Sie Codevorschläge verwenden, um bewährte Methoden sow
 
 [Dokumentation: Unit testing in Visual Studio](../test/improve-code-quality.md)
 
-Sie können Ihre Komponententests auf Basis der Testframeworks MSTest, NUnit und XUnit ausführen und debuggen. Diese Frameworks eignen sich für jede beliebige Anwendung, die .NET Framework, .NET Standard oder .NET Core als Ziel verwendet. Sie können die Tests im *Test-Explorer* ausprobieren und überprüfen. Alternativ können Sie im Editor mithilfe von *Live Unit Testing* sofort sehen, wie sich Änderungen am Code auf Ihre Komponententests auswirken (nur bei Enterprise SKU möglich). 
+Sie können Ihre Komponententests auf Basis der Testframeworks MSTest, NUnit und XUnit ausführen und debuggen. Diese Frameworks eignen sich für jede beliebige Anwendung, die .NET Framework, .NET Standard oder .NET Core als Ziel verwendet. Sie können die Tests im *Test-Explorer* ausprobieren und überprüfen. Alternativ können Sie im Editor mithilfe von *Live Unit Testing* sofort sehen, wie sich Änderungen am Code auf Ihre Komponententests auswirken (nur bei Enterprise SKU möglich).
 
 ![Live Unit Testing in Visual Studio](../ide/media/VSIDE_Productivity_LiveUnitTesting.png "VSIDE_Productivity_LiveUnitTesting")
 
 ## <a name="code-consistency-and-style"></a>Codekonsistenz und -stil
 
-[Dokumentation: portable, benutzerdefinierte Editor-Optionen](create-portable-custom-editor-options.md)  
-[Dokumentation: EditorConfig-Codeformateinstellungen für .NET](editorconfig-code-style-settings-reference.md)
+- [Dokumentation: portable, benutzerdefinierte Editor-Optionen](create-portable-custom-editor-options.md)
+- [Dokumentation: EditorConfig-Codeformateinstellungen für .NET](editorconfig-code-style-settings-reference.md)
 
 Visual Studio ermöglicht das Konfigurieren von Codierungskonventionen, erkennt Verstöße gegen den Codierungsstil und ermöglicht Schnellkorrekturen zum Beheben von Stilproblemen über die Tastenkombination **STRG+.** . Mithilfe von *EditorConfig* können Sie die Konventionen Ihres Teams in puncto Formatieren, Benennen und Programmierstil für ein Repository konfigurieren und dort zwingend vorgeben. Ebenso können Sie damit das Überschreiben von Werten auf Projekt- und Dateiebene erlauben.
 
@@ -107,8 +107,6 @@ Im Folgenden finden Sie beliebte Tastenkombinationen für Visual Studio. Beachte
 | **UMSCHALT+F12** | Alle Verweise suchen | Alle Symbol- oder Literalverweise ansehen |
 | **STRG+.** (auch **Alt+EINGABETASTE** in C# Profile) | Schnellaktionen und Refactorings | Ansehen, welche Codekorrekturen, Aktionen zum Generieren von Code, Refactorings oder anderen Schnellaktionen an der Cursorposition oder für den markierten Code zur Verfügung stehen. |
 | **STRG**+**E**,**V** | Zeile duplizieren | Die Codezeile, in der sich der Cursor befindet, wird dupliziert (verfügbar in **Visual Studio 2017 Version 15.6 Vorschauversion 2** und höher) |
-| **STRG**+**W** | Auswahl erweitern | Die aktuelle Auswahl wird um eine strukturelle Einheit erweitert (verfügbar in **Visual Studio 2017 Version 15.5**). |
-| **STRG**+**UMSCHALT**+**W** | Auswahl verkleinern | Die aktuelle Auswahl wird um eine strukturelle Einheit verkleinert (verfügbar in **Visual Studio 2017 Version 15.5**). |
 | **STRG+Q** | Schnellstart | Durchsuchen aller Visual Studio-Einstellungen |
 | **F5** | Debugging starten | Debugging der Anwendung starten |
 | **STRG+F5** | Ohne Debuggen ausführen | Anwendung lokal ausführen, ohne Debuggen |

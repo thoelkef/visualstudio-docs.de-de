@@ -1,6 +1,6 @@
 ---
 title: Testen Ihres Codes mit dem Live Unit Testing in Visual Studio 2017 | Microsoft-Dokumentation | Microsoft-Dokumentation
-ms.date: 2017-08-31
+ms.date: 08/31/2017
 ms.suite: 
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
@@ -10,12 +10,13 @@ helpviewer_keywords:
 - Live Unit Testing
 author: rpetrusha
 ms.author: ronpet
-ms.workload: dotnet
-ms.openlocfilehash: b0d4726bc29ebbb6f90fde5e7817ec2fb596177c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- dotnet
+ms.openlocfilehash: 2f2c8ba68419b23d2e74b82e23640c68a6f534aa
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="get-started-with-live-unit-testing-in-visual-studio"></a>Erste Schritte mit Live Unit Testing in Visual Studio
 
@@ -56,7 +57,7 @@ Nach der Erstellung der Projektmappe erstellen Sie eine Klassenbibliothek mit de
 1. Klicken Sie im Dialogfeld **Neues Projekt hinzufügen** auf den C#-Knoten, und wählen Sie anschließend **.NET Standard** aus. 
 
    > [!NOTE]
-   > Da das Ziel unserer Bibliothek die .NET Standard-Implementierung und keine bestimmte .NET-Implementierung ist, kann sie über eine beliebige .NET-Implementierung aufgerufen werden, die diese .NET Standard-Version unterstützt. Weitere Informationen finden Sie unter [.NET Standard](https://docs.microsoft.com/dotnet/standard/net-standard).
+   > Da das Ziel unserer Bibliothek die .NET Standard-Implementierung und keine bestimmte .NET-Implementierung ist, kann sie über eine beliebige .NET-Implementierung aufgerufen werden, die diese .NET Standard-Version unterstützt. Weitere Informationen finden Sie unter [.NET Standard](/dotnet/standard/net-standard).
 
 1. Wählen Sie im rechten Bereich die Vorlage **Klassenbibliothek (.NET Standard)** aus, und geben Sie `StringLibrary` in das Textfeld **Name** ein. Siehe hierzu die folgende Abbildung:
 
@@ -84,7 +85,7 @@ Nach der Erstellung der Projektmappe erstellen Sie eine Klassenbibliothek mit de
 1. Wählen Sie im Dialogfeld **Neues Projekt hinzufügen** den Visual Basic-Knoten und anschließend **.NET Standard** aus. 
 
    > [!NOTE]
-   > Da das Ziel unserer Bibliothek die .NET Standard-Implementierung und keine bestimmte .NET-Implementierung ist, kann sie über eine beliebige .NET-Implementierung aufgerufen werden, die diese .NET Standard-Version unterstützt. Weitere Informationen finden Sie unter [.NET Standard](https://docs.microsoft.com/dotnet/standard/net-standard).
+   > Da das Ziel unserer Bibliothek die .NET Standard-Implementierung und keine bestimmte .NET-Implementierung ist, kann sie über eine beliebige .NET-Implementierung aufgerufen werden, die diese .NET Standard-Version unterstützt. Weitere Informationen finden Sie unter [.NET Standard](/dotnet/standard/net-standard).
 
 1. Wählen Sie im rechten Bereich die Vorlage **Klassenbibliothek (.NET Standard)** aus, und geben Sie `StringLibrary` in das Textfeld **Name** ein. Siehe hierzu die folgende Abbildung:
 
@@ -104,7 +105,7 @@ Nach der Erstellung der Projektmappe erstellen Sie eine Klassenbibliothek mit de
      
       - `HasEmbeddedSpaces` gibt `true` zurück, wenn eine Zeichenfolge mit einem Leerzeichen beginnt; andernfalls wird `false` zurückgegeben.
     
-1. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf das StringLibrary-Projekt, und wählen Sie anschließend **Eigenschaften** aus. Löschen Sie auf der Registerkarte **Anwendung** den Text im Textfeld **Stammnamespace**. Sie hierzu die folgende Abbildung. Der Stammnamespace wird von der [Namespace-Anweisung](https://docs.microsoft.com/dotnet/visual-basic/language-reference/statements/namespace-statement) im Quellcode definiert.
+1. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf das StringLibrary-Projekt, und wählen Sie anschließend **Eigenschaften** aus. Löschen Sie auf der Registerkarte **Anwendung** den Text im Textfeld **Stammnamespace**. Sie hierzu die folgende Abbildung. Der Stammnamespace wird von der [Namespace-Anweisung](/dotnet/visual-basic/language-reference/statements/namespace-statement) im Quellcode definiert.
 
    ![Das Dialogfeld „Projekteigenschaften für ein Visual Basic-Projekt“](./media/lut-start/vb-properties.png)
  
@@ -250,7 +251,7 @@ Gehen Sie wie folgt vor, um die Code Coverage um die Methode `StartsWithLower` z
 
     [!code-csharp[StringLibraryTest source code](samples/snippets/csharp/lut-start/unittest2.cs#1)]
 
-1. Ändern Sie die Methode `DirectCallWithNullOrEmpty`, indem Sie den folgenden Code direkt nach dem Aufruf zur Methode [`Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsFalse`](https://docs.microsoft.com/en-us/dotnet/api/microsoft.visualstudio.testtools.unittesting.assert.isfalse) hinzufügen.
+1. Ändern Sie die Methode `DirectCallWithNullOrEmpty`, indem Sie den folgenden Code direkt nach dem Aufruf zur Methode [`Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsFalse`](/dotnet/api/microsoft.visualstudio.testtools.unittesting.assert.isfalse) hinzufügen.
 
     [!code-csharp[StringLibraryTest source code](samples/snippets/csharp/lut-start/unittest2.cs#2)]
 
@@ -267,7 +268,7 @@ Gehen Sie wie folgt vor, um die Code Coverage um die Methode `StartsWithLower` z
 
     [!code-vb[StringLibraryTest source code](samples/snippets/visual-basic/lut-start/unittest2.vb#1)]
 
-1. Ändern Sie die Methode `DirectCallWithNullOrEmpty`, indem Sie den folgenden Code direkt nach dem Aufruf zur Methode [`Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsFalse`](https://docs.microsoft.com/en-us/dotnet/api/microsoft.visualstudio.testtools.unittesting.assert.isfalse) hinzufügen.
+1. Ändern Sie die Methode `DirectCallWithNullOrEmpty`, indem Sie den folgenden Code direkt nach dem Aufruf zur Methode [`Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsFalse`](/dotnet/api/microsoft.visualstudio.testtools.unittesting.assert.isfalse) hinzufügen.
 
     [!code-vb[StringLibraryTest source code](samples/snippets/visual-basic/lut-start/unittest2.vb#2)]
 
@@ -308,7 +309,7 @@ In diesem Abschnitt lernen Sie, wie Sie mithilfe von Live Unit Testing Testfehle
     
 1. Wählen Sie **Ausgewählten Test debuggen** aus, um den fehlgeschlagenen Test zu debuggen. 
  
-1. Visual Studio führt den Test im Debugmodus aus. In dem Test wird jede Zeichenfolge in einem Array einer Variable mit dem Namen `phrase` zugewiesen und an die `HasEmbeddedSpaces`-Methode übergeben. Die Ausführung des Programms wird angehalten, und wenn der Assert-Ausdruck erstmalig `false` lautet, wird der Debugger abgerufen. Das Ausnahme-Dialogfeld, das aus dem unerwarteten Wert im Aufruf der Methode [`Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsTrue`](https://docs.microsoft.com/en-us/dotnet/api/microsoft.visualstudio.testtools.unittesting.assert.istrue) resultiert, wird in der folgenden Abbildung dargestellt.  
+1. Visual Studio führt den Test im Debugmodus aus. In dem Test wird jede Zeichenfolge in einem Array einer Variable mit dem Namen `phrase` zugewiesen und an die `HasEmbeddedSpaces`-Methode übergeben. Die Ausführung des Programms wird angehalten, und wenn der Assert-Ausdruck erstmalig `false` lautet, wird der Debugger abgerufen. Das Ausnahme-Dialogfeld, das aus dem unerwarteten Wert im Aufruf der Methode [`Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsTrue`](/dotnet/api/microsoft.visualstudio.testtools.unittesting.assert.istrue) resultiert, wird in der folgenden Abbildung dargestellt.  
 
    ![Ausnahme-Dialogfeld in Live Unit Testing.](media/lut-start/exception-dialog-cs.png) 
  
@@ -341,7 +342,7 @@ In diesem Abschnitt lernen Sie, wie Sie mithilfe von Live Unit Testing Testfehle
     
 1. Wählen Sie **Ausgewählten Test debuggen** aus, um den fehlgeschlagenen Test zu debuggen. 
  
-1. Visual Studio führt den Test im Debugmodus aus. In dem Test wird jede Zeichenfolge in einem Array einer Variable mit dem Namen `phrase` zugewiesen und an die `HasEmbeddedSpaces`-Methode übergeben. Die Ausführung des Programms wird angehalten, und wenn der Assert-Ausdruck erstmalig `false` lautet, wird der Debugger abgerufen. Das Ausnahme-Dialogfeld, das aus dem unerwarteten Wert im Aufruf der Methode [`Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsTrue`](https://docs.microsoft.com/en-us/dotnet/api/microsoft.visualstudio.testtools.unittesting.assert.istrue) resultiert, wird in der folgenden Abbildung dargestellt.  
+1. Visual Studio führt den Test im Debugmodus aus. In dem Test wird jede Zeichenfolge in einem Array einer Variable mit dem Namen `phrase` zugewiesen und an die `HasEmbeddedSpaces`-Methode übergeben. Die Ausführung des Programms wird angehalten, und wenn der Assert-Ausdruck erstmalig `false` lautet, wird der Debugger abgerufen. Das Ausnahme-Dialogfeld, das aus dem unerwarteten Wert im Aufruf der Methode [`Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsTrue`](/dotnet/api/microsoft.visualstudio.testtools.unittesting.assert.istrue) resultiert, wird in der folgenden Abbildung dargestellt.  
 
    ![Ausnahme-Dialogfeld in Live Unit Testing.](media/lut-start/exception-dialog-vb.png) 
  

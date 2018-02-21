@@ -189,7 +189,7 @@
 ## [Gewusst wie: Verwenden des regelbasierten Benutzeroberflächenkontexts für Visual Studio-Erweiterungen](how-to-use-rule-based-ui-context-for-visual-studio-extensions.md)
 ## [Gewusst wie: Leistung der Diagnoseerweiterung](how-to-diagnose-extension-performance.md)
 ## [Problembehandlung bei VSPackages](troubleshooting-vspackages.md)
-# [Shell (integriert oder isoliert)](shell/)
+# [Shell (integriert oder isoliert)](https://vspartner.com/pages/vsshells)
 # [Bereitstellen von Visual Studio-Erweiterungen](shipping-visual-studio-extensions.md)
 ## [VSIX-Projektvorlage](vsix-project-template.md)
 ## [Erste Schritte mit der VSIX-Projektvorlage](getting-started-with-the-vsix-project-template.md)

@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 11e48a67540ff7df665cc044557751be4b1c3be0
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 765d42de00c5fa716cd1445301136d8f7a39c2ec
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="remotely-debugging-python-code-on-linux"></a>Remotedebuggen von Python-Code unter Linux
 
@@ -29,9 +29,9 @@ Visual Studio kann Python-Anwendungen sowohl lokal als auch remote (siehe [Remot
 
 Beim Verwenden von ptvsd hostet der Python-Code, für den das Debuggen ausgeführt werden soll, den Debugserver, an den Visual Studio angefügt werden kann. Für dieses Hosting ist eine kleine Änderung an Ihrem Code erforderlich, um den Server zu importieren und zu aktivieren. Auf dem Remotecomputer müssen möglicherweise Netzwerk- oder Firewallkonfigurationen geändert werden, sodass TCP-Verbindungen zulässig sind.
 
-Eine Einführung zum Remotedebuggen sehen Sie in diesem Video: [Deep Dive: Cross-Platform Remote Debugging (Ausführliche Erläuterungen zu plattformübergreifendem Remotedebuggen)](https://youtu.be/y1Qq7BrV6Cc) (youtube.com, 06:22 min). Dieses Video gilt für die Visual Studio-Versionen 2015 und 2017.
-
-> [!VIDEO https://www.youtube.com/embed/y1Qq7BrV6Cc]
+|   |   |
+|---|---|
+| ![Kamerasymbol für video](../install/media/video-icon.png "Video ansehen") | Eine Einführung zum Remotedebuggen sehen Sie in diesem Video: [Deep Dive: Cross-Platform Remote Debugging (Ausführliche Erläuterungen zu plattformübergreifendem Remotedebuggen)](https://youtu.be/y1Qq7BrV6Cc) (youtube.com, 06:22 min). Dieses Video gilt für die Visual Studio-Versionen 2015 und 2017. |
 
 ## <a name="setting-up-a-linux-computer"></a>Einrichten eines Linux-Computers
 
