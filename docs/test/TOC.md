@@ -45,7 +45,7 @@
 ### [Exemplarische Vorgehensweise: Schreiben von Komponententests für C++-DLLs](walkthrough-writing-unit-tests-for-cpp-dlls.md)
 ### [API-Referenz zum Microsoft-Komponententest-Framework für C++](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md)
 ## [Erstellen und Ausführen von Komponententests für UWP-Apps](create-and-run-unit-tests-for-a-store-app-in-visual-studio.md)
-### [Komponententest bei einer Visual C++-DLL für UWP-Apps](unit-testing-a-visual-cpp-dll-for-store-apps.md)
+### [Komponententests bei einer C++-UWP-DLL](unit-testing-a-visual-cpp-dll-for-store-apps.md)
 ### [Komponententests von Visual C#-Code in UWP-Apps](unit-testing-visual-csharp-code-in-a-store-app.md)
 ### [Ausführen von Komponententests für UWP-Apps](run-unit-tests-for-store-apps-in-visual-studio.md)
 ## [Bestimmen des Umfangs des zu testenden Codes mithilfe von Code Coverage](using-code-coverage-to-determine-how-much-code-is-being-tested.md)
