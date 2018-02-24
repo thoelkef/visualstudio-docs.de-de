@@ -15,11 +15,11 @@ ms.author: gregvanl
 manager: ghogen
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5124547737405af8309161df90356f607909c0fa
-ms.sourcegitcommit: 06cdc1651aa7f45e03d260080da5a623d6258661
+ms.openlocfilehash: ea93ddee9c47f80322db2403aeecc0fb7dddb209
+ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="adding-a-language-server-protocol-extension"></a>Hinzufügen einer Sprache Serverprotokoll-Erweiterung
 
@@ -49,7 +49,7 @@ Der Zweck der LSP und Unterstützung in Visual Studio besteht darin, Dienste fü
 
 Bisher werden die folgenden LSP-Funktionen in Visual Studio unterstützt:
 
-Nachricht | Verfügt über Unterstützung in Visual Studio
+Meldung | Verfügt über Unterstützung in Visual Studio
 --- | ---
 Initialisieren | ja
 initialisiert | ja
@@ -136,7 +136,7 @@ LSP umfasst keine Spezifikation zum Text farbliche Kennzeichnung für Sprachen b
 
 1. Erstellen einen Ordner namens "Grammatiken" innerhalb der Erweiterung (oder sie können einen beliebigen Namen, die Sie auswählen, werden).
 
-2. Includedateien Sie in diesem Ordner "Grammatiken" alle *.tmlanguage oder *.tmtheme möchten die farbliche Kennzeichnung von benutzerdefinierten bereitstellt.
+2. Umfassen Sie in diesem Ordner "Grammatiken" alle *.tmlanguage, *.plist, *.tmtheme oder *.JSON Dateien, Sie möchten die farbliche Kennzeichnung von benutzerdefinierten bereitstellt.
 
 3. Mit der rechten Maustaste auf die Dateien, und wählen **Eigenschaften**. Ändern Sie den Buildvorgang, **Content** und **Include in VSIX** Eigenschaft auf "true".
 
