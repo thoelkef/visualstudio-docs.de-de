@@ -4,19 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-caps.latest.revision: "21"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 4ec453e3bec8bbca0e01d0706b43f82fb413d162
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.workload:
+- multiple
+ms.openlocfilehash: 101d16c647887aced273804fc80a890d5102d22c
+ms.sourcegitcommit: bfa26fd7426af0d065cb2eef3d6827b5d6f7986c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 02/20/2018
 ---
 # <a name="adding-references-using-nuget-versus-an-extension-sdk"></a>Hinzufügen von Referenzen mithilfe von NuGet im Vergleich zu einer SDK-Erweiterung
 
@@ -30,7 +32,7 @@ Sie können ein Paket zum Verbrauch in Visual Studio-Projekten entweder mit der 
 
 Die folgende Tabelle bieten einen Vergleich zwischen den verweisenden Funktionen eines SDK und den Funktionen von NuGet.
 
-|Funktion|SDK-Unterstützung|SDK-Hinweise|NuGet-Unterstützung|NuGet-Hinweise|
+|Feature|SDK-Unterstützung|SDK-Hinweise|NuGet-Unterstützung|NuGet-Hinweise|
 |-------------|-----------------|---------------|-------------------|-----------------|
 |Bei dieser Vorgehensweise wird auf eine Entität verwiesen. Anschließend sind alle Dateien und Funktionen verfügbar.|J|Sie fügen ein SDK im Dialogfeld **Verweis-Manager** hinzu. Alle Dateien und Funktionen sind während des Entwicklungsworkflows verfügbar.|J||
 |MSBuild verwendet automatisch Assemblys und Windows-Metadaten-Dateien (.winmd).|J|Verweise im SDK werden automatisch an den Compiler übergeben.|J||
@@ -66,7 +68,7 @@ Die folgende Tabelle bieten einen Vergleich zwischen den verweisenden Funktionen
 |Sie können ein Symbolpaket für die Debugunterstützung verwenden.|J|Wenn Sie PDB-Dateien im SDK ablegen, werden die Dateien automatisch ausgewählt.|J||
 |Der Mechanismus unterstützt automatische Paketmanagerupdates.|Nicht zutreffend|Das SDK wird mit MSBuild überarbeitet.|J||
 |Der Mechanismus unterstützt ein einfaches Manifestformat.|J|SDKManifest.xml unterstützt viele Attribute. Normalerweise ist eine kleine Teilmenge erforderlich.|J||
-|Der Mechanismus ist für alle Visual Studio-Editionen verfügbar.|J|Das SDK unterstützt alle Visual Studio-Editionen, von Visual Studio Express bis [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)].|J|NuGet unterstützt alle Visual Studio-Editionen, von Express bis [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)].|
+|Der Mechanismus ist für alle Visual Studio-Editionen verfügbar.|J|Das SDK unterstützt alle Visual Studio-Editionen.|J|NuGet unterstützt alle Visual Studio-Editionen.|
 |Der Mechanismus ist für alle Projekttypen verfügbar.|N|Das SDK unterstützt [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]-Apps, die in [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] beginnen.|N|Sie können eine Liste von zulässigen Projekte anzeigen.|
 
 ## <a name="see-also"></a>Siehe auch

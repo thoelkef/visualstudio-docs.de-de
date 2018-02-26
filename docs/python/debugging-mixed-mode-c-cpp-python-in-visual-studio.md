@@ -18,17 +18,20 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 150f4b1c7e151e0b5d6f802ae40f4b5cf6943937
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: d33e4d15e9d0de5c3aa35354dd1c8840d0ed9bd2
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="debugging-python-and-c-together"></a>Gemeinsames Debuggen von Python und C++
 
 Die meisten Python-Debugger unterstützten das Debuggen nur von Python-Code. In der Praxis wird Python jedoch in Szenarien, in denen eine hohe Leistung erforderlich ist oder Plattform-APIs direkt aufgerufen werden müssen, zusammen mit C oder C++ verwendet. (Eine exemplarische Vorgehensweise finden Sie unter [Erstellen einer C++-Erweiterung für Python](working-with-c-cpp-python-in-visual-studio.md).)
 
 In Visual Studio ist das gleichzeitige Debuggen im gemischten Modus für Python und für die native Programmiersprachen C/C++ integriert. Voraussetzung dafür ist, dass Sie die Option **Native Python-Entwicklungstools** für die Workload für die Python-Entwicklung im Visual Studio-Installer auswählen.
+
+> [!Note]
+> Das Debuggen im gemischten Modus steht für Python-Tools für Visual Studio 1.x in Visual Studio 2015 und niedrigeren Versionen nicht zur Verfügung.
 
 Features für das Debuggen im gemischten Modus sind, wie in diesem Artikel beschrieben, die folgenden:
 
@@ -40,12 +43,9 @@ Features für das Debuggen im gemischten Modus sind, wie in diesem Artikel besch
 
 ![Debuggen im gemischten Modus](media/mixed-mode-debugging.png)
 
-Eine Einführung in das Erstellen, Testen und Debuggen von nativen C-Modulen mit Visual Studio sehen Sie in diesem Video: [Deep Dive: Creating Native Modules (Ausführliche Erläuterung zum Erstellen nativer Module)](https://youtu.be/D9RlT06a1EI) (youtube.com, Länge: 9:09 Minuten). Das Video gilt für Visual Studio 2015 und 2017.
-
-> [!VIDEO https://www.youtube.com/embed/D9RlT06a1EI]
-
-> [!Note]
-> Debuggen im gemischten Modus ist für Python-Tools für Visual Studio 1.x nicht verfügbar.
+|   |   |
+|---|---|
+| ![Kamerasymbol für Video](../install/media/video-icon.png "Video ansehen") | Eine Einführung in das Erstellen, Testen und Debuggen von nativen C-Modulen mit Visual Studio sehen Sie in diesem Video: [Deep Dive: Creating Native Modules](https://youtu.be/D9RlT06a1EI) (youtube.com, 9 Minuten, 9 Sekunden). Das Video gilt für Visual Studio 2015 und 2017. |
 
 ## <a name="enable-mixed-mode-debugging-in-a-python-project"></a>Aktivieren des Debuggens im gemischten Modus in einem Python-Projekt
 

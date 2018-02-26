@@ -15,11 +15,11 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 71f0837bbc488518204e8b9336339c2d01c21600
-ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
+ms.openlocfilehash: c668d454cb4584cbaaa345c0ca00e286526c6aae
+ms.sourcegitcommit: bfa26fd7426af0d065cb2eef3d6827b5d6f7986c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/20/2018
 ---
 # <a name="walkthrough-my-first-wpf-desktop-application"></a>Exemplarische Vorgehensweise: Meine erste WPF-Desktopanwendung
 
@@ -58,9 +58,9 @@ In diesem Abschnitt erstellen Sie die Anwendungsstruktur, die das Projekt und ei
   
      **NavigationWindow** darf keine anderen Benutzeroberflächenelemente wie **Grid** enthalten.
 
-1. Erweitern Sie im Dialogfeld **Eigenschaften** den Kategorieknoten **Common** , und wählen Sie die **Title** -Eigenschaft aus. Geben Sie dann `ExpenseIt` ein, und drücken Sie die **EINGABETASTE** .
+1. Erweitern Sie im Dialogfeld **Eigenschaften** den Kategorieknoten **Custom** , und wählen Sie die Eigenschaft **Title** aus. Geben Sie dann `ExpenseIt` ein, und drücken Sie die **EINGABETASTE** .
   
-     Beachten Sie, dass das **Title** -Element im XAML-Fenster nun dem neuen Wert entspricht. Sie können die XAML-Eigenschaften im XAML-Fenster oder im Fenster **Eigenschaften** bearbeiten. Die Änderungen werden synchronisiert.
+     Beachten Sie, dass das Attribut **Title** im XAML-Fenster in den neuen Wert geändert wird. Sie können die XAML-Eigenschaften im XAML-Fenster oder im Fenster **Eigenschaften** bearbeiten. Die Änderungen werden synchronisiert.
 
 1. Legen Sie im XAML-Fenster den Wert des Elements **Height** auf `375`fest, und legen Sie den Wert der Eigenschaft **Width** auf `500`anmelden.
   
@@ -116,7 +116,7 @@ In diesem Abschnitt fügen Sie der Anwendung zwei Seiten und ein Bild hinzu.
 
 1. Wählen Sie im Designer die Registerkarte **ExpenseItHome.xaml** aus, falls sie noch nicht die aktive Designerregisterkarte ist.
 
-1. Wählen Sie das `<Title>`-Element aus, und ändern Sie den Titel in **ExpenseIt - Home**.
+1. Wählen Sie das Attribut `Title` aus, und ändern Sie seinen Wert in **ExpenseIt - Home**.
   
      Ihre Datei **ExpenseItHome.xaml** sollte jetzt in C# wie folgt aussehen:  
   
@@ -144,7 +144,7 @@ In diesem Abschnitt fügen Sie der Anwendung zwei Seiten und ein Bild hinzu.
 
 1. Wählen Sie im Designer die Registerkarte **MainWindow.xaml** aus.
 
-1. Suchen Sie das `Title="ExpenseIt" Height="375" Width="500">` -Zeilenelement, und fügen Sie eine `Source="ExpenseItHome.xaml"` -Eigenschaft hinzu.
+1. Suchen Sie das `Title="ExpenseIt" Height="375" Width="500">`-Zeilenelement, und fügen Sie eine `Source="ExpenseItHome.xaml"` -Eigenschaft hinzu.
   
      Dadurch wird **ExpenseItHome.xaml** als erste Seite festgelegt, die beim Start der Anwendung geöffnet wird. Ihre Datei **MainWindow.xaml** sollte jetzt in C# wie folgt aussehen:  
   
@@ -168,7 +168,7 @@ In diesem Abschnitt fügen Sie der Anwendung zwei Seiten und ein Bild hinzu.
   
      Wie bei den zuvor festgelegten Eigenschaften hätten Sie die `Source` -Eigenschaft in der Kategorie **Sonstiges** im Fenster **Eigenschaften** festlegen können.
   
-### <a name="to-add-a-details-window"></a>So fügen Sie ein Detailsfenster hinzu
+### <a name="to-add-a-details-window"></a>So fügen Sie ein Detailfenster hinzu
 
 1. Öffnen Sie im **Projektmappen-Explorer** das Kontextmenü für den Knoten **ExpenseIt**, und wählen Sie **Hinzufügen** > **Seite** aus.
 
@@ -178,9 +178,9 @@ In diesem Abschnitt fügen Sie der Anwendung zwei Seiten und ein Bild hinzu.
 
 1. Wählen Sie im Designer die Registerkarte **ExpenseReportPage.xaml** aus, falls sie noch nicht die aktive Designerregisterkarte ist.
 
-1. Wählen Sie das `<Title>`-Element aus, und ändern Sie den Titel in **ExpenseIt - View Expense**.
+1. Wählen Sie das Attribut `Title` aus, und ändern Sie seinen Wert in **ExpenseIt - View Expense**.
   
-     Ihre Datei "ExpenseReportPage.xaml" sollte jetzt in C# wie folgt aussehen:  
+     Ihre Datei „ExpenseReportPage.xaml“ sollte jetzt in C# wie folgt aussehen:  
   
     ```xaml  
     <Page x:Class="ExpenseIt.ExpenseReportPage"  
@@ -502,7 +502,7 @@ Das Layout bietet die Möglichkeit, Elemente anzuordnen und die Größe und Posi
   
      Die Spesenabrechnungsseite wird angezeigt.
   
-     Die folgende Abbildung zeigt die Spesenabrechnungsseite. Beachten Sie, dass die Navigationsschaltfläche "Zurück" aktiviert ist.
+     Die folgende Abbildung zeigt die Spesenabrechnungsseite. Beachten Sie, dass die Navigationsschaltfläche „Zurück“ aktiviert ist.
   
      ![Bildschirmabbildung für ExpenseIt-Beispiel](../designers/media/gettingstartedfigure4.png "GettingStartedFigure4")  
   

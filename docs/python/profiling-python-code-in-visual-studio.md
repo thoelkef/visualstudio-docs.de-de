@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4b6b2be69cc0d52774c0fc5c8cd7f3b60273fd02
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 0faae917aba237a85c6a01743d89cf66adf06296
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="profiling-python-code"></a>Profilerstellung für Python-Code
 
@@ -35,9 +35,9 @@ Wenn Sie die Option **OK** wählen, wird der Profiler ausgeführt und öffnet ei
 
 ![Leistungsbericht für Profilerstellung](media/profiling-results.png)
 
-Eine Veranschaulichung finden Sie im Video [Profiling Python (Profilerstellung in Python)](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=s6FoC6LWE_1005918567) (Microsoft Virtual Academy, 03:00 min).
-
-> [!VIDEO https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Profiling-Python-s6FoC6LWE_1005918567]
+|   |   |
+|---|---|
+| ![Kamerasymbol für Video](../install/media/video-icon.png "Video ansehen") | [Sehen Sie sich ein Video (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Profiling-Python-s6FoC6LWE_1005918567) mit einer Demonstration zur Python-Profilerstellung an (3 Minuten, 0 Sekunden).|
 
 ## <a name="profiling-for-ironpython"></a>Profilerstellung für IronPython
 

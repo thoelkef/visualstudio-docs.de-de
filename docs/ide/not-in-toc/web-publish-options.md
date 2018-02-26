@@ -17,11 +17,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 428dc6346fa39b3939b478d0d2c887b99024dc81
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 22c9aa56ab63d0c7c3b342e2c50cf81045580b54
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/19/2018
 ---
 # Welche Optionen für die Veröffentlichung sind für mich geeignet?
 
@@ -50,6 +50,8 @@ Ein App Service wird auf in der Cloud gehosteten virtuellen Computern in Azure a
 - Auf den Servern, auf denen Ihre Anwendung gehostet wird, sind keine Anpassungen auf Computerebene erforderlich.
 
 > Wenn Sie Azure App Service in Ihrem eigenen Datencenter oder anderen lokalen Computern verwenden möchten, können Sie dazu [Azure Stack](https://azure.microsoft.com/overview/azure-stack/) verwenden.
+
+Weitere Informationen zum Veröffentlichen von ASP.NET Core-Apps finden Sie unter [Veröffentlichen einer ASP.NET Core-Web-App in Azure App Service mit Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs).
 
 ## Azure Virtual Machines
 
@@ -83,7 +85,7 @@ Beachten Sie Folgendes: Wenn die Verwendung von Clouddiensten wie Azure App Serv
 - Sie benötigen nur eine lokale Testbereitstellung.
 - Sie möchten Anwendungsdateien einzeln untersuchen und möglicherweise ändern, bevor sie auf ein anderes Bereitstellungsziel gesendet werden.
 
-
+Weitere Informationen zum Bereitstellen von .NET Core-Apps finden Sie unter [Bereitstellen von .NET Core-Apps mit Visual Studio](/dotnet/core/deploying/deploy-with-vs).
 
 ## Benutzerdefinierte Ziele
 
@@ -103,3 +105,5 @@ Sie können in Visual Studio beliebig viele benutzerdefinierte Bereitstellungspr
 - Sie verwenden Clouddienste in einer anderen als einer auf Azure-Bereitstellung, auf die über URLs zugegriffen werden kann.
 - Sie möchten eine Bereitstellung mit anderen als den in Visual Studio verwendeten oder den direkt mit Ihren Azure-Konten verknüpften Anmeldeinformationen durchführen.
 - Sie möchten bei jeder Bereitstellung Dateien vom Ziel löschen.
+
+Weitere Informationen zur Veröffentlichung in IIS finden Sie unter [IIS 8.0 mithilfe von ASP.NET 3.5 und ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) und [Remotedebuggen von ASP.NET auf einem Remotecomputer mit IIS](../../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md).
