@@ -97,6 +97,7 @@
 ##### [Ersetzen von Parametern in einer Vorlage](ide/how-to-substitute-parameters-in-a-template.md)
 #### [Visual Studio-IDE-64-Bit-Unterstützung](ide/visual-studio-ide-64-bit-support.md)
 ### [Entwickeln ohne Projekte oder Projektmappen („Ordner öffnen“)](ide/develop-code-in-visual-studio-without-projects-or-solutions.md)
+#### [Anpassen von Build-Tasks und Tasks zum Debuggen](ide/customize-build-and-debug-tasks-in-visual-studio.md)
 ### [Schreiben von Code im Editor](ide/writing-code-in-the-code-and-text-editor.md)
 #### [Suchen und Ersetzen von Text](ide/finding-and-replacing-text.md)
 ##### [Verwenden von regulären Ausdrücken](ide/using-regular-expressions-in-visual-studio.md)
