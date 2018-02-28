@@ -4,20 +4,22 @@ ms.custom:
 ms.date: 11/08/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 46b0a1e3-7e69-47c9-9d8d-a1815d6c3896
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: BertanAygun
 ms.author: bertaygu
 manager: ghogen
-ms.workload: bertaygu
-ms.openlocfilehash: 1d1034cce8b2fced5af48a0a4bfa8620b56994e4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- bertaygu
+ms.openlocfilehash: ac6044406c4fa065d1e5ed3dcaa8dd998f4232fb
+ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="measuring-extension-impact-in-startup"></a>Messen der Erweiterung Auswirkung beim Start
 
@@ -30,6 +32,9 @@ Um diese Auswirkungen besser zu verstehen Benutzern erleichtern, haben wir ein n
 ![Verwalten von Visual Studio leistungsbezogener](media/manage-performance.png)
 
 Dieses Dokument zielt darauf ab, damit Entwickler auf Erweiterung beschreiben, wie Erweiterung Auswirkungen berechnet wird und wie es lokal analysiert werden kann zum Testen, ob eine Erweiterung als eine Erweiterung mit Auswirkungen auf Leistung angezeigt werden kann.
+
+> [!NOTE]
+> Dieses Dokument konzentriert sich auf die Auswirkungen von Erweiterungen, die beim Laden von Start- und Lösung. Erweiterungen auf die Visual Studio-Leistungs auswirken, wenn sie bewirken, die Benutzeroberfläche dass reagiert. Weitere Informationen zu diesem Thema finden Sie unter [wie: Diagnose UI Verzögerungen, die aufgrund von Erweiterungen](how-to-diagnose-ui-delays-caused-by-extensions.md).
 
 ## <a name="how-extensions-can-impact-startup"></a>Erweiterungen können wie Start beeinträchtigen.
 
