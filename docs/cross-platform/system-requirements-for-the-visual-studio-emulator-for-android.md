@@ -14,16 +14,16 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 520cd9eacf494ac1d8f8e26a7e1ef51581a49956
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: def17f215bd157da8d0e31f400e6b353a4d38f12
+ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>System requirements for the Visual Studio Emulator for Android
 Der Visual Studio Emulator für Android wird in Hyper-V als virtueller Computer ausgeführt, die Virtualisierungstechnologie für Windows 8 und höhere Versionen. Um den Emulator ausführen, muss der Computer die in diesem Thema beschriebenen Voraussetzungen zum Ausführen von Hyper-V erfüllen.  
   
- Das Setup-Programm versucht bei der Installation des Emulators, diese Voraussetzungen für Sie automatisch zu konfigurieren. Wenn das Setup die Voraussetzungen erfolgreich konfiguriert hat, funktioniert der Emulator wie erwartet. Andernfalls müssen Sie diese erforderlichen Komponenten möglicherweise manuell aktivieren. Wenn Sie die erforderlichen Komponenten manuell konfigurieren müssen, entsprechen die Schritte und Tools den [hier](https://msdn.microsoft.com/en-us/library/windows/apps/jj863509\(v=vs.105\).aspx) für den Windows Phone Emulator beschriebenen Schritten.  
+ Das Setup-Programm versucht bei der Installation des Emulators, diese Voraussetzungen für Sie automatisch zu konfigurieren. Wenn das Setup die Voraussetzungen erfolgreich konfiguriert hat, funktioniert der Emulator wie erwartet. Andernfalls müssen Sie diese erforderlichen Komponenten möglicherweise manuell aktivieren. Wenn Sie die erforderlichen Komponenten manuell konfigurieren müssen, entsprechen die Schritte und Tools den [hier](/previous-versions/windows/apps/jj863509\(v=vs.105\)) für den Windows Phone Emulator beschriebenen Schritten.  
   
 > [!IMPORTANT]
 >  Das Setup-Programm für den Emulator überprüft die Voraussetzungen zum Ausführen von Visual Studio-Emulator für Android. Es zeigt Warnungen an, wenn die erforderlichen Komponenten nicht vorhanden sind, es benötigt sie jedoch nicht.  

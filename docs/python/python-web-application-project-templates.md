@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 49b27fcc972cf8b0bb0411f5ee54ea611cdd4d75
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: b75aae5811fa2410cf169d3401184b8af7ca381d
+ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="python-web-application-project-templates"></a>Projektvorlagen für Python-Webanwendungen
 
@@ -35,7 +35,7 @@ Wenn ein Projekt, das mithilfe einer Vorlage (zugänglich über **Datei > Neu > 
 
 Die Vorlagen für Bottle, Flask und Django enthalten jeweils eine Startwebsite mit einigen Seiten und statischen Dateien. Dieser Code ist ausreichend für das lokale Ausführen und Debuggen des Servers (wobei einige Einstellungen aus der Umgebung abgerufen werden müssen) sowie für das Bereitstellen für Microsoft Azure (wobei ein [WSGI-App](http://www.python.org/dev/peps/pep-3333/)-Objekt angegeben werden muss).
 
-Wenn Sie ein Projekt über eine frameworkspezifische Vorlage erstellen, wird ein Dialogfeld angezeigt, das Ihnen bei der Installation der erforderlichen Pakete mit pip hilft. Zudem empfehlen wir die Verwendung einer [virtuellen Umgebung](managing-python-environments-in-visual-studio.md#global-and-virtual-environments) für Webprojekte, damit beim Veröffentlichen der Website die richtigen Abhängigkeiten enthalten sind:
+Wenn Sie ein Projekt über eine frameworkspezifische Vorlage erstellen, wird ein Dialogfeld angezeigt, das Ihnen bei der Installation der erforderlichen Pakete mit pip hilft. Zudem empfehlen wir die Verwendung einer [virtuellen Umgebung](selecting-a-python-environment-for-a-project.md#using-virtual-environments) für Webprojekte, damit beim Veröffentlichen der Website die richtigen Abhängigkeiten enthalten sind:
 
 ![Dialogfeld, über das die erforderlichen Pakete für eine Projektvorlage installiert werden](media/template-web-requirements-txt-wizard.png)
 

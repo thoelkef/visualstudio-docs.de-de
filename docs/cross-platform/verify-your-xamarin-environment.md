@@ -7,16 +7,17 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: fd39882e-06d1-4b39-80d2-4d07b6e4f8f5
-caps.latest.revision: "13"
+caps.latest.revision: 
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.workload: xamarin
-ms.openlocfilehash: 203f977ac4bc9a0ba72284b54a6936a77bae0f61
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- xamarin
+ms.openlocfilehash: 5878da6742412a368e7b5ff84d0e0e20a4751914
+ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="verify-your-xamarin-environment"></a>Überprüfen Ihrer Xamarin-Umgebung
 Nachdem die Installationsprogramme abgeschlossen wurden (siehe dazu [Setup and install (Setup und Installation)](../cross-platform/setup-and-install.md)), sollten Sie ein paar Minuten investieren, um zu überprüfen, ob alles für den Einstieg in die Xamarin-Entwicklung bereit ist.  
@@ -77,7 +78,7 @@ Nachdem die Installationsprogramme abgeschlossen wurden (siehe dazu [Setup and i
   
          ![Auswählen eines Windows Phone-Emulators als Debugziel](../cross-platform/media/crossplat-xamarin-verify-4.png "CrossPlat Xamarin Verify 4")  
   
-    -   Wenn Sie beim Arbeiten mit dem Emulator auf Probleme stoßen, lesen Sie [Troubleshooting the Windows Phone 8 Emulator](https://msdn.microsoft.com/library/windows/apps/jj681694.aspx).  
+    -   Wenn Sie beim Arbeiten mit dem Emulator auf Probleme stoßen, lesen Sie [Troubleshooting the Windows Phone 8 Emulator](/previous-versions/windows/apps/jj681694\(v%3dvs.105\)).  
   
 ## <a name="ios"></a>iOS  
   

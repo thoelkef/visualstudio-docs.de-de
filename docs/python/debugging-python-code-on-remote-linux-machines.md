@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 765d42de00c5fa716cd1445301136d8f7a39c2ec
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: 9f5f3edfc536dce9d42d09a099c3f53a8a8ab3c7
+ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="remotely-debugging-python-code-on-linux"></a>Remotedebuggen von Python-Code unter Linux
 
@@ -40,7 +40,7 @@ Die folgenden Elemente sind für diese exemplarische Vorgehensweise nötig:
 - Einen Remotecomputer, auf dem Python unter einem Betriebssystem wie Mac OSX oder Linux ausgeführt wird.
 - Einen geöffneten Port 5678 (eingehend) auf der Firewall dieses Computers. Dies ist die Standardeinstellung für das Remotedebuggen.
 
-Sie können problemlos [virtuelle Linux-Computer in Azure](/azure/virtual-machines/linux/creation-choices) erstellen und von Windows aus [darauf über Remotedesktop zugreifen](/azure/virtual-machines/linux/use-remote-desktop). Es ist praktisch, für den virtuellen Computer Ubuntu zu verwenden, da Python standardmäßig installiert ist; andernfalls finden Sie eine Liste mit weiteren Python-Downloadspeicherorten unter [Installieren Sie einen Python-Interpreter Ihrer Wahl](managing-python-environments-in-visual-studio.md#selecting-and-installing-python-interpreters).
+Sie können problemlos [virtuelle Linux-Computer in Azure](/azure/virtual-machines/linux/creation-choices) erstellen und von Windows aus [darauf über Remotedesktop zugreifen](/azure/virtual-machines/linux/use-remote-desktop). Es ist praktisch, für den virtuellen Computer Ubuntu zu verwenden, da Python standardmäßig installiert ist; andernfalls finden Sie eine Liste mit weiteren Python-Downloadspeicherorten unter [Installieren Sie einen Python-Interpreter Ihrer Wahl](installing-python-interpreters.md).
 
 Weitere Informationen zum Erstellen einer Firewallregel für einen virtuellen Azure-Computer finden Sie unter [Öffnen von Ports für einen virtuellen Computer in Azure mithilfe des Azure-Portals](/azure/virtual-machines/windows/nsg-quickstart-portal).
 
