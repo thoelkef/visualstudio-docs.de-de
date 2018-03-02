@@ -6,7 +6,7 @@
 ## [Analysieren der CPU-Auslastung (verwaltet)](quickstart-cpu-usage-managed.md)
 ## [Analysieren der CPU-Auslastung (nativ)](quickstart-cpu-usage-native.md)
 ## [Analysieren der CPU-Auslastung (ASP.NET)](quickstart-cpu-usage-aspnet.md)
-# Lernprogramme
+# Tutorials
 ## [Einführung in die Leistungsprofilerstellung](beginners-guide-to-performance-profiling.md)
 ## [Profilerstellung zur Arbeitsspeicherverwendung in Visual Studio](memory-usage.md)
 # Konzepte
@@ -43,7 +43,6 @@
 #### [Vorgehensweise: Sammeln von Leistungsdaten für eine Website](how-to-collect-performance-data-for-a-web-site.md)
 #### [Vorgehensweise: Manuelles Erstellen von Leistungssitzungen](how-to-manually-create-performance-sessions.md)
 #### [Exemplarische Vorgehensweise: Identifizieren von Leistungsproblemen](walkthrough-identifying-performance-problems.md)
-#### [PeopleTrax-Beispiel (Profilerstellungstools)](peopletrax-sample-profiling-tools.md)
 ### [Konfigurieren von Leistungssitzungen](configuring-performance-sessions.md)
 #### [Vorgehensweise: Verweisen auf Windows-Symbolinformationen](how-to-reference-windows-symbol-information.md)
 #### [Vorgehensweise: Auswählen von Sammlungsmethoden](how-to-choose-collection-methods.md)
