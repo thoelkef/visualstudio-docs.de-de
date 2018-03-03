@@ -1,5 +1,5 @@
 ---
-title: Codemetrik-Daten in Visual Studio generieren | Microsoft Docs
+title: 'Gewusst wie: Generieren von Codemetrikdaten in Visual Studio | Microsoft Docs'
 ms.custom: 
 ms.date: 12/12/2017
 ms.reviewer: 
@@ -14,12 +14,13 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 3ca031d23d244c3b02cfea1e64685663e4e25a34
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 52726b521d3887dee31b74b0ba110aa8d25350e5
+ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="how-to-generate-code-metrics-data"></a>Vorgehensweise: Generieren von Codemetrikdaten
 
@@ -37,7 +38,7 @@ Sie können Codemetrikergebnisse für eine gesamte Projektmappe oder das ausgew�
 
 - In der **Codemetrikergebnisse** Fenster, wählen Sie die **Codemetrik berechnen, für die Lösung** Schaltfläche.
 
-   Die Ergebnisse werden generiert, und die **Codemetrikergebnisse** Fenster wird angezeigt.
+Die Ergebnisse werden generiert, und die **Codemetrikergebnisse** Fenster wird angezeigt.
 
 ## <a name="to-generate-code-metrics-results-for-one-or-more-selected-projects"></a>Zum Generieren von Codemetrikergebnissen für eine oder mehrere ausgewählte Projekte
 
@@ -49,8 +50,9 @@ Sie können Codemetrikergebnisse für eine gesamte Projektmappe oder das ausgew�
 
 ## <a name="to-view-the-results-details"></a>Details zum Anzeigen der Ergebnisse
 
-- In der **Codemetrikergebnisse** Fenster, erweitern Sie die Struktur in der **Hierarchie** Spalte.
+In der **Codemetrikergebnisse** Fenster, erweitern Sie die Struktur in der **Hierarchie** Spalte.
 
 ## <a name="see-also"></a>Siehe auch
 
-[Codemetrikwerte](../code-quality/code-metrics-values.md)
+- [Verwenden des Fensters Codemetrikergebnisse](../code-quality/working-with-code-metrics-data.md)
+- [Codemetrikwerte](../code-quality/code-metrics-values.md)

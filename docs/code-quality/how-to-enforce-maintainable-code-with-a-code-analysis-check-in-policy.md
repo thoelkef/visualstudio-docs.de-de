@@ -15,21 +15,21 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ac4f31d1e93ed648bf2065bbff9dac8800c1d4f
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: 80f3d2385fa1023637081b787c8d938ae42f79b4
+ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/02/2018
 ---
-# <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>Gewusst wie: Erzwingen von wartbarem Code mit einer Eincheckrichtlinie für die Codeanalyse
+# <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>Vorgehensweise: Erzwingen von wartbarem Code mit einer Eincheckrichtlinie für die Analyse
 
-Entwickler können das Tool Codemetrik zum Messen von Komplexität und verwaltbarkeit des Codes verwenden, aber Sie können keine Codemetrik aufrufen, als Teil einer in der Eincheckrichtlinie. Sie können allerdings Codeanalyseregeln, durch die überprüft die Kompatibilität des Codes mit Codemetrik Standards zu aktivieren und erzwingen Sie diese Regeln über Eincheckrichtlinien. Weitere Informationen zu Metriken für Code finden Sie unter der [Codemetrik Werte](../code-quality/code-metrics-values.md).
+Entwickler können das Tool Codemetrik zum Messen von Komplexität und verwaltbarkeit des Codes verwenden, aber Sie können keine Codemetrik aufrufen, als Teil einer in der Eincheckrichtlinie. Sie können allerdings Codeanalyseregeln, durch die überprüft die Kompatibilität des Codes mit Code Metriken Standards zu aktivieren und erzwingen Sie diese Regeln über Eincheckrichtlinien. Weitere Informationen zu Metriken für Code finden Sie unter [Code Metrikwerte](../code-quality/code-metrics-values.md).
 
 Sie können die Vererbungstiefe, Klassenkopplung Wartbarkeitsindex und Komplexitätsregeln zum Erzwingen von wartbarem Code durch eine Eincheckrichtlinie für Codeanalyse aktivieren. Alle vier Regeln befinden sich unter der Kategorie "Verwaltbarkeit Regeln" in der Codeanalyse Gruppenrichtlinienverwaltungs-Editor.
 
 Administratoren der Team Foundation-Versionskontrolle können Sie die Anforderungen in der Eincheckrichtlinie für Verwaltbarkeit Codeanalyseregeln hinzufügen. Diese einchecken, müssen Sie für Richtlinien Entwickler basierend auf diese regeländerungen vor dem Initiieren eines Eincheckvorgangs Codeanalyse ausgeführt.
 
-## <a name="to-open-the-code-analysis-policy-editor"></a>Um den Code Analysis-Gruppenrichtlinienverwaltungs-Editor zu öffnen
+## <a name="to-open-the-code-analysis-policy-editor"></a>Öffnen des Editors für die Codeanalyserichtlinie
 
 1. in **Team Explorer**mit der rechten Maustaste auf das Teamprojekt, klicken Sie auf **Teamprojekteinstellungen**, und klicken Sie dann auf **Quellcodeverwaltung**.
 

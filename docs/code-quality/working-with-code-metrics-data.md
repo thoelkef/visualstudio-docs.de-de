@@ -1,5 +1,5 @@
 ---
-title: Metrikergebnisse in Visual Studio Code | Microsoft Docs
+title: Das Fenster Codemetrikergebnisse in Visual Studio | Microsoft Docs
 ms.custom: 
 ms.date: 12/12/2017
 ms.reviewer: 
@@ -19,15 +19,15 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: c259a1d303c741d4e36af46250073b0378a65f8b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 772533e74b214d48583e5d2dc1d64278416933df
+ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/02/2018
 ---
-# <a name="working-with-code-metrics-data"></a>Arbeiten mit Codemetrikdaten
+# <a name="using-the-code-metrics-results-window"></a>Mithilfe des Fensters Codemetrikergebnisse
 
-Die **Codemetrikergebnisse** Fenster zeigt die Daten, die von der Codeanalyse für die Metrik generiert werden. Weitere Informationen zu Daten für die codemetrikwerte, finden Sie unter [Codemetrikwerte](../code-quality/code-metrics-values.md).
+Die **Codemetrikergebnisse** Fenster zeigt die Daten, die von der Codeanalyse für die Metrik generiert werden. Weitere Informationen zu Daten für die codemetrikwerte, finden Sie unter [Code Metrikwerte](../code-quality/code-metrics-values.md).
 
 ## <a name="displaying-code-metrics-results"></a>Anzeigen von Codemetrikergebnissen
 
@@ -41,7 +41,7 @@ Die **Codemetrikergebnisse** Fenster wird automatisch angezeigt, wenn Sie Codeme
 
 - Auf der **Ansicht** Menü wählen **Weitere Fenster** > **Codemetrikergebnisse**.
 
-   Die **Codemetrikergebnisse** Fenster angezeigt wird, auch wenn es keine Ergebnisse enthält.
+Die **Codemetrikergebnisse** Fenster angezeigt wird, auch wenn es keine Ergebnisse enthält.
 
 ### <a name="to-view-code-metrics-details"></a>Um Code Metriken Details anzuzeigen.
 
@@ -73,7 +73,7 @@ Sie können hinzufügen oder entfernen führt die Spalten aus der **Codemetriker
 
 1. Klicken Sie auf die **Spalten hinzufügen/entfernen** Schaltfläche.
 
-     \-mit der "oder" - Maustaste auf eine beliebige Spaltenüberschrift, und klicken Sie dann auf **Spalten hinzufügen/entfernen**.
+     \- mit der "oder" - Maustaste auf eine beliebige Spaltenüberschrift, und klicken Sie dann auf **Spalten hinzufügen/entfernen**.
 
 1. In der **Spalten hinzufügen/entfernen** Dialogfeld deaktivieren das Kontrollkästchen für die Spalte, die Sie entfernen möchten und klicken Sie dann auf **OK**.
 
@@ -131,5 +131,5 @@ Weitere Informationen zur VSTS Typen von Arbeitsaufgaben, finden Sie unter [Type
 
 ## <a name="see-also"></a>Siehe auch
 
-[Codemetrikwerte](../code-quality/code-metrics-values.md)  
-[Gewusst wie: Generieren von Codemetrikdaten](../code-quality/how-to-generate-code-metrics-data.md)
+- [Codemetrikwerte](../code-quality/code-metrics-values.md)
+- [Vorgehensweise: Generieren von Codemetrikdaten](../code-quality/how-to-generate-code-metrics-data.md)
