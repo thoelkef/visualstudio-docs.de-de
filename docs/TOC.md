@@ -33,6 +33,8 @@
 #### [Steuern von Updates für Visual Studio-Bereitstellungen](install/controlling-updates-to-visual-studio-deployments.md)
 ### Verwalten von Installationen
 #### [Tools zum Erkennen und Verwalten von Visual Studio-Instanzen](install/tools-for-managing-visual-studio-instances.md)
+### Abonnements verwalten
+#### [Visual Studio-Abonnements: Administrator – Übersicht](/visualstudio/subscriptions/admin-responsibilities) 
 ### [Help Viewer-Administratorhandbuch](ide/help-viewer-administrator-guide.md)
 #### [Befehlszeilenargumente für den Hilfeinhalts-Manager](ide/command-line-arguments-for-the-help-content-manager.md)
 #### [Überschreibungen durch den Hilfeinhalts-Manager](ide/help-content-manager-overrides.md)
@@ -46,7 +48,7 @@
 # Schnellstarts
 ## [Visual Studio-Ausrichtung](ide/quickstart-ide-orientation.md)
 ## [Projects and Solutions (Projekte und Projektmappen)](ide/quickstart-projects-solutions.md)
-## [Schreiben von Code im Editor](ide/quickstart-editor.md)
+## [Verwenden des Editors](ide/quickstart-editor.md)
 ## [Personalisieren von Design und Textfarben](ide/quickstart-personalize-the-ide.md)
 ## [C++: Erstellen einer Konsolenanwendung](ide/getting-started-with-cpp-in-visual-studio.md)
 ## [Python: Erstellen einer Web-App](ide/quickstart-python.md)
@@ -98,7 +100,7 @@
 #### [Visual Studio-IDE-64-Bit-Unterstützung](ide/visual-studio-ide-64-bit-support.md)
 ### [Entwickeln ohne Projekte oder Projektmappen („Ordner öffnen“)](ide/develop-code-in-visual-studio-without-projects-or-solutions.md)
 #### [Anpassen von Build-Tasks und Tasks zum Debuggen](ide/customize-build-and-debug-tasks-in-visual-studio.md)
-### [Schreiben von Code im Editor](ide/writing-code-in-the-code-and-text-editor.md)
+### [Verwenden des Editors](ide/writing-code-in-the-code-and-text-editor.md)
 #### [Suchen und Ersetzen von Text](ide/finding-and-replacing-text.md)
 ##### [Verwenden von regulären Ausdrücken](ide/using-regular-expressions-in-visual-studio.md)
 ##### [Such-/Befehlsfeld](ide/find-command-box.md)

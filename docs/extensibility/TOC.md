@@ -188,6 +188,7 @@
 ## [Gewusst wie: Verwenden von AsyncPackage zum Laden von VSPackages im Hintergrund](how-to-use-asyncpackage-to-load-vspackages-in-the-background.md)
 ## [Gewusst wie: Verwenden des regelbasierten Benutzeroberflächenkontexts für Visual Studio-Erweiterungen](how-to-use-rule-based-ui-context-for-visual-studio-extensions.md)
 ## [Gewusst wie: Leistung der Diagnoseerweiterung](how-to-diagnose-extension-performance.md)
+## [Gewusst wie: Analysieren von Benutzeroberflächen-Verzögerungen durch Erweiterungen](how-to-diagnose-ui-delays-caused-by-extensions.md)
 ## [Problembehandlung bei VSPackages](troubleshooting-vspackages.md)
 # [Shell (integriert oder isoliert)](https://vspartner.com/pages/vsshells)
 # [Bereitstellen von Visual Studio-Erweiterungen](shipping-visual-studio-extensions.md)
