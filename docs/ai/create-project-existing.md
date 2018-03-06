@@ -29,4 +29,4 @@ Sobald Sie [die Visual Studio-Tools für KI installiert haben](installation.md),
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Erstellen einer Umgebung für einen vorhandenen Python-Interpreter](../python/managing-python-environments-in-visual-studio.md#creating-an-environment-for-an-existing-interpreter)
+- [Manuelles Identifizieren einer vorhandenen Python-Umgebung](../python/managing-python-environments-in-visual-studio.md#manually-identifying-an-existing-environment)

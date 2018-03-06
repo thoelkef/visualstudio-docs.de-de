@@ -36,7 +36,7 @@ Sobald Sie [die Visual Studio-Tools für KI installiert haben](installation.md),
 
     ![Erste Ausgabe des Python MNIST-Programms](media\create-project-repo\tensorflow-mnist-running.png)
 
-> Wenn Sie Anaconda verwenden und eine Fehlermeldung über fehlendes „numpy“ erhalten, müssen Sie möglicherweise Ihre Python-Umgebung so umstellen, dass [Anaconda](../python/managing-python-environments-in-visual-studio.md) verwendet wird.
+> Wenn Sie Anaconda verwenden und eine Fehlermeldung über fehlendes „numpy“ erhalten, müssen Sie möglicherweise [Ihre Python-Umgebung auf die Verwendung von Anaconda umstellen](../python/selecting-a-python-environment-for-a-project.md).
 
 11. Sie können den Fortschritt mit TensorBoard verfolgen. Klicken Sie mit der rechten Maustaste auf Ihr Projekt, und klicken Sie dann auf **Run TensorBoard**. Wählen Sie das Verzeichnis der ausgegebenen TensorBoard-Protokolle aus.
 

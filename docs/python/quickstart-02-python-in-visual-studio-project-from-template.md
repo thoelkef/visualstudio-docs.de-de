@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2af5a7412b6d4a6554d4bc11f5877541a3384115
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 648c1e2b4ee3a5c9bc10d74ee384a08bc5ddce64
+ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="quickstart-create-a-python-project-from-a-template-in-visual-studio"></a>Schnellstart: Erstellen eines Python-Projekts aus einer Vorlage in Visual Studio
 
@@ -93,6 +93,6 @@ Wenn Sie die [Python-Unterstützung in Visual Studio 2017 installiert haben](ins
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Erstellen einer Umgebung für einen vorhandenen Python-Interpreter](managing-python-environments-in-visual-studio.md#creating-an-environment-for-an-existing-interpreter)
+- [Manuelles Identifizieren eines vorhandenen Python-Interpreters](managing-python-environments-in-visual-studio.md#manually-identifying-an-existing-environment)
 - [Installieren der Python-Unterstützung für Visual Studio 2015 und früher](installing-python-support-in-visual-studio.md)
 - [Installationsspeicherorte](installing-python-support-in-visual-studio.md#install-locations)

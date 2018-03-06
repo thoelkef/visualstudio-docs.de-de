@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 67cf109b0964bcb9eca104ec138f968e273111e9
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 4b9b7a51436eeeb67634714216f9a583de679a07
+ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="quickstart-create-a-project-from-a-cookiecutter-template"></a>Schnellstart: Erstellen eines Python-Projekts aus einer Cookiecutter-Vorlage
 
@@ -55,6 +55,6 @@ Sobald Sie die [Python-Unterstützung in Visual Studio 2017 installiert haben](i
 ## <a name="see-also"></a>Siehe auch
 
 - [Verwenden der Cookiecutter-Erweiterung](using-python-cookiecutter-templates.md)
-- [Erstellen einer Umgebung für einen vorhandenen Python-Interpreter](managing-python-environments-in-visual-studio.md#creating-an-environment-for-an-existing-interpreter)
+- [Manuelles Identifizieren eines vorhandenen Python-Interpreters](managing-python-environments-in-visual-studio.md#manually-identifying-an-existing-environment)
 - [Installieren der Python-Unterstützung für Visual Studio 2015 und früher](installing-python-support-in-visual-studio.md)
 - [Installationsspeicherorte](installing-python-support-in-visual-studio.md#install-locations)

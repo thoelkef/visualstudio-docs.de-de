@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c158397d327e339955efed35f1ccc525028294e3
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: a34ef14b1c966a8685497875d32563add635917b
+ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="debugging-your-python-code"></a>Debuggen von Python-Code
 
@@ -36,7 +36,7 @@ Weitere Informationen finden Sie auch in den folgenden szenariospezifischen Them
 
 |   |   |
 |---|---|
-| ![Kamerasymbol für Video](../install/media/video-icon.png "Video ansehen") | [Sehen Sie sich ein Video (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Debugging-Python-Ep5dp5LWE_3805918567) mit einer Demonstration zum Python-Debugging an (3 Minuten, 32 Sekunden).|
+| ![Kamerasymbol für video](../install/media/video-icon.png "Video ansehen") | [Sehen Sie sich ein Video (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Debugging-Python-Ep5dp5LWE_3805918567) mit einer Demonstration zum Python-Debugging an (3 Minuten, 32 Sekunden).|
 
 <a name="debugging-without-a-project"></a>
 
@@ -54,7 +54,7 @@ Der grundlegende Debugworkflow umfasst das Festlegen von Haltepunkten, die Einze
 Eine Debugsitzung wird mit dem Befehl **Debuggen > Debuggen starten**, der Schaltfläche **Start** auf der Symbolleiste oder der Taste F5 gestartet. Diese Aktionen öffnen die Startdatei Ihres Projekts (im Projektmappen-Explorer fett hervorgehoben) mit der aktiven Umgebung des Projekts und allen Befehlszeilenargumenten oder Suchpfaden, die in den Projekteigenschaften festgelegt wurden (siehe [Project debugging options (Projektbezogene Debugoptionen)](#project-debugging-options)). Wenn Sie aus irgendeinem Grund jedoch keine festgelegte Startdatei besitzen, wird ein Python-Ausgabefenster kurz angezeigt und wieder ausgeblendet. Klicken Sie in diesem Fall mit der rechten Maustaste auf die entsprechende Datei, und wählen Sie **Als Startdatei festlegen**aus.
 
 > [!Note]
-> Der Debugger startet immer mit der aktiven Python-Umgebung für das Projekt. Legen Sie, wie unter [Python-Umgebungen](managing-python-environments-in-visual-studio.md) beschrieben, eine andere Umgebung als aktiv fest, um die Umgebung zu ändern.
+> Der Debugger startet immer mit der aktiven Python-Umgebung für das Projekt. Legen Sie, wie unter [Selecting a Python environment for a project](selecting-a-python-environment-for-a-project.md) (Auswählen einer Python-Umgebung für ein Projekt) beschrieben, eine andere Umgebung als aktiv fest, um die Umgebung zu ändern.
 
 ### <a name="breakpoints"></a>Haltepunkte
 
@@ -77,7 +77,7 @@ Beim Festlegen von Bedingungen können Sie auch **Aktion** auswählen und eine M
 
 Nachdem der Code an einem Haltepunkt angehalten wurde, haben Sie verschiedene Möglichkeiten, den Code schrittweise auszuführen oder Codeblöcke auszuführen, bevor wieder unterbrochen wird. Diese Befehle sind an verschiedenen Stellen verfügbar, z.B. in der oberen Symbolleiste zum Debuggen, im **Debuggen**-Menü, im Kontextmenü im Code-Editor sowie über Tastaturkurzbefehle (nicht alle Befehle sind an all diesen Stellen verfügbar):
 
-| Feature | Tastatureingabe | Beschreibung |
+| Feature | Tastatureingabe | description |
 | --- | --- | --- |
 | Weiter | F5 | Führt den Code aus, bis der nächste Haltepunkt erreicht ist. |
 | Einzelschritt | F11 | Führt die nächste Anweisung aus und hält an. Wenn die nächste Anweisung ein Funktionsaufruf ist, hält der Debugger in der ersten Zeile der aufgerufenen Funktion an. |
@@ -143,7 +143,7 @@ Standardmäßig startet der Debugger Ihr Programm mit dem Python-Standardstartpr
 
 ### <a name="launch-mode-options"></a>Optionen für den Startmodus
 
-| Option | Beschreibung |
+| Option | description |
 | --- | --- |
 | Python-Standardstartprogram | Verwendet in portierbarem Python geschriebenen Debugcode, der mit CPython, IronPython und Varianten wie Stackless Python kompatibel ist. Diese Option bietet die beste Leistung für das Debuggen von reinem Python-Code. Beim Anfügen an einen ausgeführten `python.exe`-Prozess wird dieses Startprogramm verwendet. Dieses Startprogramm ermöglicht auch das [Debuggen im gemischten Modus](debugging-mixed-mode-c-cpp-python-in-visual-studio.md) für CPython, mit dem Sie nahtlos zwischen C/C++-Code und Python-Code wechseln können. |
 | Webstartprogramm | Startet Ihren Standardbrowser und ermöglicht das Debuggen von Vorlagen. Im Abschnitt [Debuggen von Webvorlagen](python-web-application-project-templates.md#debugging) finden Sie weitere Informationen. |
@@ -152,7 +152,7 @@ Standardmäßig startet der Debugger Ihr Programm mit dem Python-Standardstartpr
 
 ### <a name="run-options-search-paths-startup-arguments-and-environment-variables"></a>Ausführungsoptionen (Suchpfade, Startargumente und Umgebungsvariablen)
 
-| Option | Beschreibung |
+| Option | description |
 | --- | --- |
 | Suchpfade | Diese Werte entsprechen den im Knoten „Suchpfade“ des Projektmappen-Explorers angezeigten Pfaden. Sie können den Wert hier ändern, es ist aber einfacher, den Projektmappen-Explorer zu verwenden, der das Durchsuchen von Ordnern ermöglicht und Pfade automatisch in ihre relative Form konvertiert. |
 | Skriptargumente | Diese Argumente werden dem Befehl hinzugefügt, der zum Starten Ihres Skripts verwendet wird, und werden nach dem Dateinamen des Skripts angezeigt. Das erste Element hier ist für das Skript als `sys.argv[1]` verfügbar, das zweite als `sys.argv[2]` usw. |
@@ -174,7 +174,7 @@ Das interaktive Python-Debugfenster (**Debuggen > Fenster > Interaktives Debugge
 
 Das Fenster zum interaktiven Debuggen unterstützt zusätzlich zu den [REPL-Standardbefehlen](python-interactive-repl-in-visual-studio.md#meta-commands) spezielle Metabefehle:
 
-| Befehl | Argumente | Beschreibung |
+| Befehl | Argumente | description |
 | --- | --- | --- |
 | `$continue`, `$cont`, `$c` | Startet die Ausführung des Programms ab der aktuellen Anweisung. |
 | `$down`, `$d` | Verschiebt den aktuellen Rahmen in der Stapelüberwachung eine Ebene nach unten. |

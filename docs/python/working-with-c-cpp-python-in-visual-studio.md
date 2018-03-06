@@ -18,11 +18,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 31d36ede3293a72db06e9919545dafb779cee252
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: f87e5ac67a547a45b8c7519c96131623686a0866
+ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="creating-a-c-extension-for-python"></a>Erstellen einer C++-Erweiterung für Python
 
@@ -219,7 +219,7 @@ Sie müssen die exportierten Methoden zunächst so anpassen, dass Sie mit den Py
 1. Legen Sie die Zielkonfiguration auf „Release“ fest, und erstellen Sie das C++-Projekt erneut, um Ihren Code zu überprüfen. Wenn Fehler auftreten, überprüfen Sie Folgendes:
     - „Python.h“ konnte nicht gefunden werden: Überprüfen Sie, ob der Pfad in **C/C++ > Allgemein > Zusätzliche Includeverzeichnisse** in den Projekteigenschaften auf den `include`-Ordner Ihrer Python-Installation zeigt.
     - Die Python-Bibliotheken konnten nicht gefunden werden: Überprüfen Sie, ob der Pfad in **Linker > Allgemein > Zusätzliche Bibliotheksverzeichnisse** in den Projekteigenschaften auf den `libs`-Ordner Ihrer Python-Installation zeigt.
-    - Linker-Fehler im Zusammenhang mit der Zielarchitektur: Ändern Sie die Zielarchitektur des C++-Projekts so, dass sie mit der Ihrer Python-Installation übereinstimmt.
+    - Linker-Fehler im Zusammenhang mit der Zielarchitektur: Ändern Sie die Zielarchitektur des C++-Projekts so, dass sie mit der Ihrer Python-Installation übereinstimmt. Wenn Sie z.B. mit dem C++-Projekt auf x64 abzielen, aber Ihre Python-Installation ein x86-System ist, ändern Sie das C++-Projekt auf x86 ab.
 
 ## <a name="test-the-code-and-compare-the-results"></a>Testen des Codes und Vergleichen der Ergebnisse
 
