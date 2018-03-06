@@ -16,11 +16,11 @@ ms.author: kraigb
 manager: ghogen
 ms.workload:
 - data-science
-ms.openlocfilehash: 97e9838e46a4e0158b281f243ffda7d46044ef2d
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 962a7a5685a5d4a1d4ad5466710377d4885ad398
+ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/21/2018
 ---
 # <a name="creating-visual-data-plots-with-r"></a>Erstellen von visuellen Datenplots mit R
 
@@ -28,9 +28,9 @@ Das Erstellen von Grafiken ist ein wichtiger Bestandteil der Arbeit von Datenana
 
 ![Plotfenster](media/plotting-hero-image.png)
 
-Das folgende Video (2 m, 2 s) bietet eine kurze Übersicht über das Zeichnen in RTVS:
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ZTbKmz5RSgY" frameborder="0" allowfullscreen></iframe>
+|   |   |
+|---|---|
+| ![Kamerasymbol für Video](../install/media/video-icon.png "Video ansehen") | [Sehen Sie sich ein Video (youtube.com)](https://www.youtube.com/watch?v=ZTbKmz5RSgY) zum Plotten mit R an (2m 02s). |
 
 ## <a name="the-plot-window"></a>Das Plotfenster
 

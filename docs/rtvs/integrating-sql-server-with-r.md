@@ -17,11 +17,11 @@ ms.author: kraigb
 manager: ghogen
 ms.workload:
 - data-science
-ms.openlocfilehash: 65f34339e4c101818cea9b99095d765d5d417cf4
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 4733d51d40b0aabffa108a1f99e4e492599b67c2
+ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/21/2018
 ---
 # <a name="working-with-sql-server-and-r"></a>Arbeiten mit SQL Server und R
 
@@ -32,9 +32,9 @@ Dank der hervorragenden Unterstützung von Visual Studio für SQL Server können
 > - Visual Studio 2017: Führen Sie das Installationsprogramm von Visual Studio aus, und wählen Sie den Datenspeicher und die Verarbeitungsworkload aus, die SQL Server-Datentools enthält.
 > - Visual Studio 2015: Befolgen Sie die Anweisungen unter [SQL Server Data Tools herunterladen](https://docs.microsoft.com/sql/ssdt/download-sql-server-data-tools-ssdt).
 
-Das folgende Video (3:03 Min.) bietet einen kurzen Überblick über SQL Server und R:
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/n4AYr0QIwdQ" frameborder="0" allowfullscreen></iframe>
+|   |   |
+|---|---|
+| ![Kamerasymbol für video](../install/media/video-icon.png "Video ansehen") | [Sehen Sie sich ein Video an (youtube.com)](https://www.youtube.com/watch?v=n4AYr0QIwdQ), um eine Übersicht über SQL Server und R zu erhalten (3 m 03s). |
 
 ## <a name="creating-and-running-sql-queries"></a>Erstellen und Ausführen von SQL-Abfragen
 
@@ -65,9 +65,9 @@ RTVS vereinfacht den ansonsten komplizierten und fehleranfälligen Prozess zum K
 - [Schreiben und Testen einer in SQL gespeicherten Prozedur](#write-and-test-a-sql-stored-procedure)
 - [Veröffentlichen einer in SQL gespeicherten Prozedur](#publish-a-sql-stored-procedure)
 
-Das folgende Video (6:09 Min.) bietet auch eine Übersicht dieser Funktionen:
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/dFKIT2OitWQ" frameborder="0" allowfullscreen></iframe>
+|   |   |
+|---|---|
+| ![Kamerasymbol für video](../install/media/video-icon.png "Video ansehen") | [Sehen Sie sich ein Video an (youtube.com)](https://www.youtube.com/watch?v=dFKIT2OitWQ), um eine Übersicht über R und gespeicherte SQL-Prozeduren zu erhalten (6m 09s). |
 
 ### <a name="add-a-database-connection"></a>Hinzufügen einer Datenbankverbindung
 
