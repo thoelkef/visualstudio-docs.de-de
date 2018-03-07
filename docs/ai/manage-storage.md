@@ -1,4 +1,10 @@
 ---
+ms.technology: vs-ai-tools
+ms.openlocfilehash: b941d0ba55c540de4bda1cb0f9c4ed18ceab524f
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="browse-storage-to-upload-data-or-download-models-and-logs"></a>Durchsuchen des Speichers, um Daten hochzuladen oder Modelle und Protokolle herunterzuladen
 
@@ -14,6 +20,6 @@ Sie können den gesamten Speicher auf dem Remotecomputer oder der Azure-Dateifre
 ## <a name="to-access-job-specific-data-on-the-remote-machine-or-file-share"></a>So greifen Sie auf auftragsspezifische Daten auf dem Remotecomputer oder der Dateifreigabe zu
 1. Öffnen Sie den [Auftragsverlauf](job-details.md).
 2. Wählen Sie den Auftrag aus.
-3. Klicken Sie auf **Arbeitsordner** oder auf „StdOut/Stderr“, um schnell auf diese wichtigen Protokolldateien zuzugreifen. 
+3. Klicken Sie auf **Arbeitsordner** oder auf „StdOut/Stderr“, um schnell auf diese wichtigen Protokolldateien zuzugreifen.
 
     ![storage](media\manage-storage\job-workingfolder.png)

@@ -11,11 +11,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - dotnet
-ms.openlocfilehash: 997220d3b1a7305f84f61ee5fd4c205d1157f1b2
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: a100cd5dfef6dcb36f6ce845000db31d82173a2d
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="introduce-a-local-variable-in-visual-studio"></a>Bereitstellen einer lokalen Variable in Visual Studio
 
@@ -46,7 +46,7 @@ Diese Codegenerierung gilt für:
 1. Führen Sie dann eine der folgenden Aktionen aus:
 
    - **Tastatur**
-     - Drücken Sie **STRG+.**, um das Menü **Schnellaktionen und Refactorings** aufzurufen.
+     - Drücken Sie an einer beliebigen Stelle in einer Zeile **STRG**+**.**, um das Menü **Schnellaktionen und Refactorings** aufzurufen.
    - **Maus**
      - Führen Sie einen Rechtsklick durch, und klicken Sie auf das Menü **Schnellaktionen und Refactorings**.
      - Klicken Sie auf die Schaltfläche ![Glühbirnensymbol,](media/bulb-cs.png) das am linken Rand angezeigt wird, sofern der Textcursor bereits in der Zeile mit der roten Wellenlinie platziert ist.
@@ -73,5 +73,5 @@ Diese Codegenerierung gilt für:
 
 ## <a name="see-also"></a>Siehe auch
 
-[Codegenerierung](../code-generation-in-visual-studio.md)  
-[Vorschau der Änderungen](../../ide/preview-changes.md)
+- [Codegenerierung](../code-generation-in-visual-studio.md)
+- [Vorschau der Änderungen](../../ide/preview-changes.md)

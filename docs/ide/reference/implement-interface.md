@@ -11,11 +11,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - dotnet
-ms.openlocfilehash: ebcdad47ebb8ecae9d943acd8e0db60c20ef8378
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 152b5f1c0bc3129078effb07cbe5aa36a4591f9d
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="implement-an-interface-in-visual-studio"></a>Implementieren einer Schnittstelle in Visual Studio
 
@@ -46,7 +46,7 @@ Diese Codegenerierung gilt für:
 1. Führen Sie dann eine der folgenden Aktionen aus:
 
    - **Tastatur**
-     - Drücken Sie **STRG+.**, um das Menü **Schnellaktionen und Refactorings** aufzurufen.
+     - Drücken Sie an einer beliebigen Stelle in einer Zeile **STRG**+**.**, um das Menü **Schnellaktionen und Refactorings** aufzurufen.
    - **Maus**
      - Führen Sie einen Rechtsklick durch, und klicken Sie auf das Menü **Schnellaktionen und Refactorings**.
      - Zeigen Sie auf die rote Wellenlinie, und klicken Sie auf das ![Glühbirnensymbol,](media/bulb-cs.png) das angezeigt wird.
@@ -77,5 +77,5 @@ Diese Codegenerierung gilt für:
 
 ## <a name="see-also"></a>Siehe auch
 
-[Codegenerierung](../code-generation-in-visual-studio.md)  
-[Vorschau der Änderungen](../../ide/preview-changes.md)
+- [Codegenerierung](../code-generation-in-visual-studio.md)
+- [Vorschau der Änderungen](../../ide/preview-changes.md)

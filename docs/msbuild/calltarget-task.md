@@ -22,11 +22,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: c15207a564a63f08d58c4f0164aae703d43daa9a
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 339882fadba46dc0a42c6796d135e761a3554e9c
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="calltarget-task"></a>CallTarget-Aufgabe
 Ruft die angegebenen Ziele in der Projektdatei ab.  
@@ -36,7 +36,7 @@ Ruft die angegebenen Ziele in der Projektdatei ab.
   
 |Parameter|description|  
 |---------------|-----------------|  
-|`RunEachTargetSeparately`|Optionaler `Boolean`-Ausgabeparameter.<br /><br /> Wenn `true`, wird das [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Modul einmal pro Ziel aufgerufen. Wenn `false`, wird das [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Modul einmal aufgerufen, um alle Ziele zu erstellen. Der Standardwert ist `false`.|  
+|`RunEachTargetSeparately`|Optionaler `Boolean`-Eingabeparameter.<br /><br /> Wenn `true`, wird das [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Modul einmal pro Ziel aufgerufen. Wenn `false`, wird das [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Modul einmal aufgerufen, um alle Ziele zu erstellen. Der Standardwert ist `false`.|  
 |`TargetOutputs`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]` -Ausgabeparameter.<br /><br /> Enthält die Ausgaben aller erstellten Ziele.|  
 |`Targets`|Optionaler `String[]` -Parameter.<br /><br /> Gibt das Ziel oder die Ziele an, die erstellt werden sollen.|  
 |`UseResultsCache`|Optionaler `Boolean` -Parameter.<br /><br /> Wenn `true`, wird das zwischengespeicherte Ergebnis zurückgegeben, sofern es vorhanden ist.<br /><br /> **Hinweis** Wenn eine MSBuild-Aufgabe ausgeführt wird, wird deren Ausgabe in einem Gültigkeitsbereich als eine Liste von Buildelementen zwischengespeichert (ProjectFileName, GlobalProperties)[TargetNames].|  

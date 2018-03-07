@@ -16,11 +16,11 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4ccdab053e06efc11b6f9c42d391d4b4fc1f85f7
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: d66a0e41f0c68d3d5c4378a664ef36aba0d869b7
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="extract-a-method-refactoring"></a>Refactoring des Extrahierens einer Methode
 
@@ -52,7 +52,7 @@ Dieses Refactoring gilt für:
 
    - **Tastatur**
      - Drücken Sie **STRG+R** und dann **STRG+M**. (Beachten Sie, dass Ihre Tastenkombination je nach dem gewählten Profil möglicherweise abweicht.)
-     - Drücken Sie **STRG+.**, um das Menü **Schnellaktionen und Refactorings** aufzurufen, und wählen Sie im Popupvorschaufenster **Methode extrahieren** aus.
+     - Drücken Sie an einer beliebigen Stelle in einer Zeile **STRG**+**.**, um das Menü **Schnellaktionen und Refactorings** aufzurufen, und wählen Sie im Popupvorschaufenster **Methode extrahieren** aus.
    - **Maus**
      - Wählen Sie **Bearbeiten > Umgestalten > Methode extrahieren** aus.
      - Klicken Sie mit der rechten Maustaste auf den Code, und wählen Sie **Umgestalten > Extrahieren > Methode extrahieren**.
@@ -64,16 +64,16 @@ Dieses Refactoring gilt für:
    > Sie können Kommentare und andere Zeichenfolgen vor dem Speichern mit diesem neuen Namen aktualisieren sowie eine [Vorschau der Änderungen](../../ide/preview-changes.md) anzeigen, indem Sie oben rechts in der IDE die jeweiligen Kontrollkästchen im Feld **Umbenennen** aktivieren.
 
    - C#:
-   
+
     ![Umbenennen einer Methode – C#](media/extractmethod-rename-cs.png)
 
    - Visual Basic:
-   
+
     ![Umbenennen einer Methode – Visual Basic](media/extractmethod-rename-vb.png)
 
 1. Wenn Sie mit der Änderung zufrieden sind, klicken Sie auf die Schaltfläche **Übernehmen**, oder drücken Sie die **EINGABETASTE**. Die Änderungen werden angewendet.
 
 ## <a name="see-also"></a>Siehe auch
 
-[Refactoring](../refactoring-in-visual-studio.md)  
-[Vorschau der Änderungen](../../ide/preview-changes.md)
+- [Refactoring](../refactoring-in-visual-studio.md)
+- [Vorschau der Änderungen](../../ide/preview-changes.md)

@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -16,7 +17,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: 1a3759070d406e721a12e01950e0e99cea40d1fc
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -33,7 +35,7 @@ ms.lasthandoff: 01/10/2018
  Nachdem Visual Studio die Auflistung von XML-Knoten erstellt hat, können Sie das Steuerelement programmieren, ohne das Word-Objektmodell durchlaufen. Die <xref:Microsoft.Office.Tools.Word.XMLNodes> Steuerelement kann nur durch Entfernen der elementzuordnung aus dem Dokument gelöscht werden.  
   
 > [!NOTE]  
->  Wenn Sie ein untergeordnetes Element des Zugriff auf die <xref:Microsoft.Office.Tools.Word.XMLNodes> steuern, über die <xref:Microsoft.Office.Tools.Word.XMLNodes.Item%2A> -Eigenschaft, es gibt eine <xref:Microsoft.Office.Interop.Word.XMLNode> Objekt anstelle eines <xref:Microsoft.Office.Tools.Word.XMLNode> Steuerelement. Weitere Informationen finden Sie unter [Programmatic Limitations of Host Items and Host Controls](../vsto/programmatic-limitations-of-host-items-and-host-controls.md).  
+>  Wenn Sie ein untergeordnetes Element des Zugriff auf die <xref:Microsoft.Office.Tools.Word.XMLNodes> steuern, über die <xref:Microsoft.Office.Tools.Word.XMLNodes.Item%2A> -Eigenschaft, es gibt eine <xref:Microsoft.Office.Interop.Word.XMLNode> Objekt anstelle eines <xref:Microsoft.Office.Tools.Word.XMLNode> Steuerelement. Weitere Informationen finden Sie unter [Programmgesteuerte Einschränkungen von Hostelementen und Hoststeuerelementen](../vsto/programmatic-limitations-of-host-items-and-host-controls.md).  
   
 ## <a name="binding-data-to-the-control"></a>Binden von Daten an das Steuerelement  
  Ein <xref:Microsoft.Office.Tools.Word.XMLNodes> Steuerelement unterstützt keine Datenbindung. Grund hierfür ist die <xref:Microsoft.Office.Tools.Word.XMLNodes> Steuerelement enthält keine Funktionen für die komplexe Datenbindung und das einfache Datenbindung nicht darstellen kann sich wiederholenden Daten.  

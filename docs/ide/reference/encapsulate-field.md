@@ -16,11 +16,11 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 78d2c33002e59eab1b6e8605092a74d9995453a8
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 006f161df8128e1d505947a3e2907a01c4d3915e
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="encapsulate-a-field-refactoring"></a>Refactoring des Kapselns eines Felds
 
@@ -52,7 +52,7 @@ Dieses Refactoring gilt für:
 
    - **Tastatur**
      - Drücken Sie **STRG+R** und dann **STRG+E**.  (Beachten Sie, dass Ihre Tastenkombination je nach dem gewählten Profil möglicherweise abweicht.)
-     - Drücken Sie **STRG+.**, um das Menü **Schnellaktionen und Refactorings** aufzurufen, und wählen Sie im Popupvorschaufenster einen der Einträge für **Feld kapseln** aus.
+     - Drücken Sie an einer beliebigen Stelle in einer Zeile **STRG**+**.**, um das Menü **Schnellaktionen und Refactorings** aufzurufen, und wählen Sie im Popupvorschaufenster einen der Einträge für **Feld kapseln** aus.
    - **Maus**
      - Wählen Sie **Bearbeiten > Umgestalten > Feld kapseln** aus.
      - Klicken Sie mit der rechten Maustaste auf den Code, wählen Sie das Menü **Schnellaktionen und Refactorings** aus, und wählen Sie im Popupvorschaufenster einen der Einträge für **Feld kapseln** aus.
@@ -77,5 +77,5 @@ Dieses Refactoring gilt für:
 
 ## <a name="see-also"></a>Siehe auch
 
-[Refactoring](../refactoring-in-visual-studio.md)  
-[Vorschau der Änderungen](../../ide/preview-changes.md)
+- [Refactoring](../refactoring-in-visual-studio.md)
+- [Vorschau der Änderungen](../../ide/preview-changes.md)

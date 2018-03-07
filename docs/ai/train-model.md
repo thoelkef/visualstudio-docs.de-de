@@ -9,27 +9,28 @@ ms.date: 11/13/2017
 ms.topic: how-to article
 ms.devlang: multiple
 ms.service: multiple
+ms.technology: vs-ai-tools
 ms.workload:
 - azure
-ms.openlocfilehash: 77eb12a8ffa0b40d83bcbe24326fb386eb0a4d9c
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 90d0e7db36b91c2add1bcfe80fb3325bd1ddf126
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="train-ai-models-in-azure-batch-ai"></a>Trainieren von KI-Modellen in Azure Batch AI
 
-Azure Batch AI ist ein verwalteter Dienst, mit dem Datenanalysten und KI-Forscher KI und andere Machine Learning-Modelle in Clustern von virtuellen Azure-Computern trainieren können (inkl. VMs mit GPU-Unterstützung). Sie müssen nur beschreiben, welche Anforderungen für den Auftrag bestehen und wo die Eingaben zu finden sind sowie die Ausgaben speichern, und Batch AI übernimmt den Rest. [Weitere Informationen zu Azure Batch AI](https://docs.microsoft.com/azure/batch-ai/overview) 
+Azure Batch AI ist ein verwalteter Dienst, mit dem Datenanalysten und KI-Forscher KI und andere Machine Learning-Modelle in Clustern von virtuellen Azure-Computern trainieren können (inkl. VMs mit GPU-Unterstützung). Sie müssen nur beschreiben, welche Anforderungen für den Auftrag bestehen und wo die Eingaben zu finden sind sowie die Ausgaben speichern, und Batch AI übernimmt den Rest. [Weitere Informationen zu Azure Batch AI](https://docs.microsoft.com/azure/batch-ai/overview)
 
 Da Batch AI mit den Visual Studio-Tools für KI integriert wird, können Sie Trainingsmodelle in Azure dynamisch horizontal hochskalieren.  Wenn Sie die [Visual Studio-Tools für KI](installation.md) installiert haben, lässt sich anhand der Anleitungen im Azure Machine Learning-Beispielkatalog ganz einfach ein neues Python-Projekt erstellen.
 
-1. Starten Sie Visual Studio. Öffnen Sie den **Server-Explorer**, indem Sie das Menü **AI Tools** (KI-Tools) öffnen und auf **Cluster auswählen** klicken.  
+1. Starten Sie Visual Studio. Öffnen Sie den **Server-Explorer**, indem Sie das Menü **AI Tools** (KI-Tools) öffnen und auf **Cluster auswählen** klicken.
 
     ![Clusterauswahl](media\train-model\select-cluster.png)
 
-     
-2. Erweitern Sie **AI Tools** (KI-Tools). Jede Ihrer Batch AI-Ressourcen wird automatisch erkannt und im Server-Explorer angezeigt. 
-    
+
+2. Erweitern Sie **AI Tools** (KI-Tools). Jede Ihrer Batch AI-Ressourcen wird automatisch erkannt und im Server-Explorer angezeigt.
+
     ![Beispielkatalog](media\train-model\batchai.png)
 
 3. Klicken Sie auf **Ansicht > Team Explorer…**, um das Fenster **Team Explorer** zu öffnen. Dort können Sie eine Verbindung mit GitHub oder Visual Studio Team Services herstellen oder ein Repository klonen.
@@ -42,10 +43,10 @@ Da Batch AI mit den Visual Studio-Tools für KI integriert wird, können Sie Tra
     > Der Ordner, den Sie in Team Explorer angeben, empfängt die geklonten Dateien. Im Gegensatz zum Befehl `git clone` wird beim Erstellen eines Klons in Team Explorer nicht automatisch ein Unterordner mit dem Namen des Repositorys erstellt.
 
 5. Wenn das Klonen abgeschlossen ist, klicken Sie auf **Datei > Projektmappe öffnen > Projekt/Projektmappe**.
-    
+
     ![Beispielkatalog](media\train-model\open-solution.png)
 
-5. Öffnen Sie **samples-for-ai\TensorFlowExamples\TensorFlowExamples.sln** im Verzeichnis, das Sie im Repository geklont haben. 
+5. Öffnen Sie **samples-for-ai\TensorFlowExamples\TensorFlowExamples.sln** im Verzeichnis, das Sie im Repository geklont haben.
 
     ![Beispielkatalog](media\train-model\tensorflowexamples.png)
 

@@ -9,17 +9,18 @@ ms.date: 11/13/2017
 ms.topic: tutorial
 ms.devlang: python
 ms.service: multiple
+ms.technology: vs-ai-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 424072fd91672921c470dbc16e1a9287b1cc575a
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 1f02a03ca314138715b46e098416c7eef49e6d72
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="train-a-tensorflow-model-in-the-cloud"></a>Trainieren eines TensorFlow-Modells in der Cloud
 
-In diesem Tutorial wird ein TensorFlow-Modell mithilfe des [MNIST-Datasets](http://yann.lecun.com/exdb/mnist/) auf einem virtuellen Azure-Computer mit [Deep Learning](https://docs.microsoft.com/azure/machine-learning/data-science-virtual-machine/deep-learning-dsvm-overview) trainiert. 
+In diesem Tutorial wird ein TensorFlow-Modell mithilfe des [MNIST-Datasets](http://yann.lecun.com/exdb/mnist/) auf einem virtuellen Azure-Computer mit [Deep Learning](https://docs.microsoft.com/azure/machine-learning/data-science-virtual-machine/deep-learning-dsvm-overview) trainiert.
 
 Die MNIST-Datenbank enthält 60.000 Trainingsbeispiele und 10.000 Testbeispiele für handgeschriebene Ziffern.
 
@@ -28,10 +29,10 @@ Stellen Sie vor Beginn sicher, dass Sie Folgendes installiert und konfiguriert h
 
 ### <a name="setup-azure-deep-learning-virtual-machine"></a>Einrichten des virtuellen Azure-Computers mit Deep Learning
 
-> [!NOTE] 
+> [!NOTE]
 > Legen Sie den **Betriebssystemtyp** auf „Linux“ fest.
 
-Weitere Anweisungen zum Einrichten eines virtuellen Computers mit Deep Learning finden Sie [hier](https://docs.microsoft.com/azure/machine-learning/data-science-virtual-machine/provision-deep-learning-dsvm). 
+Weitere Anweisungen zum Einrichten eines virtuellen Computers mit Deep Learning finden Sie [hier](https://docs.microsoft.com/azure/machine-learning/data-science-virtual-machine/provision-deep-learning-dsvm).
 
 ### <a name="remove-comment-in-parens"></a>Entfernen des Kommentars in Klammern
 
@@ -41,13 +42,13 @@ echo -e ". /etc/profile\n$(cat ~/.bashrc)" > ~/.bashrc
 
 ### <a name="download-sample-code"></a>Herunterladen von Beispielcode
 
-Laden Sie dieses [GitHub-Repository](https://github.com/Microsoft/samples-for-ai) herunter, das Beispiele für die ersten Schritte mit Deep Learning in TensorFlow, CNTK, Theano usw. enthält. 
+Laden Sie dieses [GitHub-Repository](https://github.com/Microsoft/samples-for-ai) herunter, das Beispiele für die ersten Schritte mit Deep Learning in TensorFlow, CNTK, Theano usw. enthält.
 
 ## <a name="open-project"></a>Öffnen des Projekts
 
 - Starten Sie Visual Studio, und klicken Sie auf **Datei > Öffnen> Projekt/Projektmappe**.
 
-- Öffnen Sie den Ordner **Tensorflow Examples** (TensorFlow-Beispiele) aus dem heruntergeladenen Beispielrepository, und öffnen Sie die Datei **TensorflowExamples.sln**. 
+- Öffnen Sie den Ordner **Tensorflow Examples** (TensorFlow-Beispiele) aus dem heruntergeladenen Beispielrepository, und öffnen Sie die Datei **TensorflowExamples.sln**.
 
 ![Öffnen des Projekts](media\tensorflow-local\open-project.png)
 
@@ -55,7 +56,7 @@ Laden Sie dieses [GitHub-Repository](https://github.com/Microsoft/samples-for-ai
 
 ## <a name="add-azure-remote-vm"></a>Hinzufügen eines virtuellen Azure-Remotecomputers
 
-Klicken Sie im Server-Explorer mit der rechten Maustaste auf den Knoten **Remotecomputer** unter dem Knoten „KI-Tools“, und klicken Sie auf „Hinzufügen...“. Geben Sie den Anzeigenamen, IP-Host, SSH-Port, Benutzernamen und die Kennwort-/Schlüsseldatei des Remotecomputers ein. 
+Klicken Sie im Server-Explorer mit der rechten Maustaste auf den Knoten **Remotecomputer** unter dem Knoten „KI-Tools“, und klicken Sie auf „Hinzufügen...“. Geben Sie den Anzeigenamen, IP-Host, SSH-Port, Benutzernamen und die Kennwort-/Schlüsseldatei des Remotecomputers ein.
 
 ![Hinzufügen eines neuen Remotecomputers](media\tensorflow-vm\add-remote-vm.png)
 
@@ -68,11 +69,11 @@ Führen Sie im Übermittlungsfenster Folgendes aus:
 
 - Wählen Sie den Remotecomputer (mit dem Präfix „rm:“) aus der Liste **Cluster verwenden** aus, an den der Auftrag übermittelt werden soll.
 
-- Geben Sie einen **Auftragsnamen** ein. 
+- Geben Sie einen **Auftragsnamen** ein.
 
-- Klicken Sie auf **Senden**. 
+- Klicken Sie auf **Senden**.
 
-## <a name="check-status-of-job"></a>Überprüfen des Auftragsstatus 
+## <a name="check-status-of-job"></a>Überprüfen des Auftragsstatus
 Erweitern Sie den virtuellen Computer im **Server-Explorer**, dem Sie den Auftrag übermittelt haben, um den Status und die Details des Auftrags anzuzeigen. Doppelklicken Sie auf **Aufträge**.
 
 ![Auftragsbrowser](media\tensorflow-vm\job-browser.png)
