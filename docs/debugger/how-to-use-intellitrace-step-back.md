@@ -15,11 +15,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 01e6203d7fbef7115ea2e380494735888995e343
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: 7a8f7343ceea2510c6ba8835c90bcb80b946fe91
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="view-snapshots-using-intellitrace-step-back-in-visual-studio"></a>Anzeigen von Momentaufnahmen mithilfe von IntelliTrace-Schritt-wieder in Visual Studio
 
@@ -107,5 +107,7 @@ Die Auswirkung auf die gesamtleistung der schrittweisen Ausführung hängt von d
 
     Problemumgehung:
     * Deaktivieren Sie alle Momentaufnahmen, indem Sie die Debugsitzung beenden. 
+
+* Beim Debuggen einer Anwendung, deren Prozess verfügt über eine große Anzahl von eindeutigen Speicherbereiche, z. B. eine Anwendung, die eine große Anzahl von DLLs, lädt, möglicherweise die Leistung mit Momentaufnahmen aktiviert stepping beeinträchtigt. Dieses Problem wird in einer zukünftigen Version von Windows behandelt werden. Wenn Sie dieses Problem auftreten, Remoteknoten uns stepback@microsoft.com. 
 
 * Beim Speichern einer Datei mit **Debuggen > IntelliTrace > Speichern der IntelliTrace-Sitzung** im Modus für Ereignisse und Momentaufnahmen, die zusätzlichen Daten, die von Momentaufnahmen aufgezeichneten ist nicht verfügbar in der ITRACE-Datei. Auf den Haltepunkt und Schritt-Ereignisse wird die gleichen Informationen angezeigt, als ob Sie die Datei befindet sich im Modus IntelliTrace-Ereignisse gespeichert wurde. 

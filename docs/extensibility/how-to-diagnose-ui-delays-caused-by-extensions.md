@@ -12,11 +12,11 @@ author: PooyaZv
 ms.author: pozandev
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 9dede2f30a9d91e94bda3183deaae337e4c556dc
-ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
+ms.openlocfilehash: dffc67e550cb57f9f089e180ff399f27c817d253
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="how-to-diagnose-ui-delays-caused-by-extensions"></a>Vorgehensweise: Analysieren der UI Verzögerungen aufgrund von Erweiterungen
 
@@ -44,7 +44,7 @@ In den folgenden Abschnitten werden wir diese Schritte ausführlicher durchlaufe
 
 ## <a name="identifying-the-trigger-scenario"></a>Identifizieren die Trigger-Szenario
 
-Eine Verzögerung für die Benutzeroberfläche für die Diagnose, müssen Sie zunächst Idetify welche (Sequenz von Aktionen) bewirkt, dass Visual Studio, um die Benachrichtigung anzeigen. Dies ist in der Reihenfolge für die Sie in der Lage sein, um die Benachrichtigung höher mit aktivierter Protokollierung ausgelöst.
+Eine Verzögerung für die Benutzeroberfläche für die Diagnose, müssen Sie zunächst ermitteln, welche (Sequenz von Aktionen) bewirkt, dass Visual Studio, um die Benachrichtigung anzeigen. Dies ist in der Reihenfolge für die Sie in der Lage sein, um die Benachrichtigung höher mit aktivierter Protokollierung ausgelöst.
 
 ## <a name="restarting-vs-with-activity-logging-on"></a>Neustarten von VS mit Aktivität anmelden
 
@@ -158,3 +158,5 @@ PerfView detaillierte Anleitung im Menü "Hilfe", die Sie zum Identifizieren von
 * [https://aka.ms/vsthreading](https://aka.ms/vsthreading)
 * [https://aka.ms/vsthreadingcookbook](https://aka.ms/vsthreadingcookbook)
 
+> [!NOTE]
+> Wenn Sie nicht, um die nicht reagierenden aufgrund von Abhängigkeiten zu adressieren können Sie haben keine Kontrolle über (z. B. wenn die Erweiterung zum Aufrufen von synchronen VS-Dienste auf dem UI-Thread ist), wir davon erfahren möchten. Wenn Sie Mitglied der Visual Studio Partnerprogramm sind, können Sie uns kontaktieren, durch eine Developer-Supportanfrage übermitteln. Verwenden Sie andernfalls senden Ihr Feedback und umfassen das Tool "Problem melden" `"Extension UI Delay Notifications"` im Titel. Geben Sie außerdem auch eine ausführliche Beschreibung der Analyse.
