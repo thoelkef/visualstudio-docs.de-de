@@ -12,11 +12,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: a73226de18ea2003890c2923641ae65318dbfc1f
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 779867243bc30c26e1fce9260ddf497a9fcf193e
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="keyboard-tips-for-visual-studio"></a>Tipps und Tricks für Visual Studio
 
@@ -63,8 +63,8 @@ Sie können in Visual Studio einfacher navigieren, indem Sie die Tastenkombinati
 |Schnellsuche zur Erweiterung des Dropdowns|ALT+NACH-UNTEN|
 |Schließen der Suche|Esc|
 |Schnellersetzung|STRG+H|
-|Schnellersetzung für "Nächstes ersetzen"|ALT+R|
-|Schnellersetzung für "Alle ersetzen"|ALT+A|
+|Schnellersetzung für „Nächstes ersetzen“|ALT+R|
+|Schnellersetzung für „Alle ersetzen“|ALT+A|
 |Suchen in Dateien|STRG+UMSCHALT+F|
 |In Dateien ersetzen|STRG+UMSCHALT+H|
 
@@ -84,22 +84,22 @@ Sie können in Visual Studio einfacher navigieren, indem Sie die Tastenkombinati
 |Blockauswahl|ALT-TASTE gedrückt halten und die Maus ziehen, UMSCHALT+ALT+PFEILTASTEN||
 |Eine Zeile nach oben/unten verschieben|ALT+BILD-AUF/ALT+BILD-AB||
 |Zeile duplizieren|STRG+E,V|Visual Studio 2017 Version 15.6 Vorschauversion 2|
-|Auswahl erweitern|STRG+W|Visual Studio 2017 Version 15.5|
-|Auswahl verkleinern|STRG+UMSCHALT+W|Visual Studio 2017 Version 15.5|
+|Auswahl erweitern|**UMSCHALT**+**ALT**+**=**|Visual Studio 2017 Version 15.5|
+|Auswahl verkleinern|**UMSCHALT**+**ALT**+**-**|Visual Studio 2017 Version 15.5|
 |Gehe zu Definition|F12||
 |Peek-Definition|Alt+F12||
 |Gehe zu Definition-Stapel|STRG+UMSCHALT+8 (zurück), STRG+UMSCHALT+7 (vorwärts)||
 |Schließen des Peek-Definitionsfensters|Esc||
 |Höherstufen des Peek-Definitionsfensters auf eine reguläre Dokumentregisterkarte|STRG+ALT+POS1||
-|Zwischen mehreren Fenstern der "Peek-Definition" navigieren|STRG+ALT+- und STRG+ALT+=||
+|Zwischen mehreren Fenstern der „Peek-Definition“ navigieren|STRG+ALT+- und STRG+ALT+=||
 |Navigieren zwischen mehreren Peek-Ergebnissen|F8 und UMSCHALT+F8||
-|Zwischen dem Fenster "Code-Editor" und "Peek-Definition" navigieren|UMSCHALT+ESC||
+|Zwischen dem Fenster „Code-Editor“ und „Peek-Definition“ navigieren|UMSCHALT+ESC||
 
 ## <a name="toolbars"></a>Symbolleisten
 
 |||
 |-|-|
-|Hinzufügen von Schaltflächen|Klicken auf die Schaltfläche "Symbolleistenüberlauf"|
+|Hinzufügen von Schaltflächen|Klicken auf die Schaltfläche „Symbolleistenüberlauf“|
 |Suchen des Kombinationsfelds in der Standardsymbolleiste|STRG+D|
 |Suchen des Textfeld-Befehlsmodus|Eingeben von „>“|
 |Erstellen eines neuen Alias|>alias NewAlias-Befehl|
@@ -125,9 +125,9 @@ Sie können in Visual Studio einfacher navigieren, indem Sie die Tastenkombinati
 
 ## <a name="see-also"></a>Siehe auch
 
-[Tastenkombinationen (VSTS und TFS)](/vsts/collaborate/keyboard-shortcuts)  
-[Visual Studio-Blog](http://blogs.msdn.com/b/visualstudio)  
-[Blog mit Tipps und Tricks zu Visual Studio](http://blogs.msdn.com/b/zainnab)  
-[Visual Studio Toolbox auf Channel 9](http://channel9.msdn.com/Shows/Visual-Studio-Toolbox)  
-[Visual Studio-UserVoice](http://visualstudio.uservoice.com/forums/121579-visual-studio)  
-[Visual Studio-Verbindungsfehler](http://connect.microsoft.com/VisualStudio)
+- [Tastenkombinationen (VSTS und TFS)](/vsts/collaborate/keyboard-shortcuts)
+- [Visual Studio-Blog](http://blogs.msdn.com/b/visualstudio)
+- [Blog mit Tipps und Tricks zu Visual Studio](http://blogs.msdn.com/b/zainnab)
+- [Visual Studio Toolbox auf Channel 9](http://channel9.msdn.com/Shows/Visual-Studio-Toolbox)
+- [Visual Studio-UserVoice](http://visualstudio.uservoice.com/forums/121579-visual-studio)
+- [Visual Studio-Verbindungsfehler](http://connect.microsoft.com/VisualStudio)

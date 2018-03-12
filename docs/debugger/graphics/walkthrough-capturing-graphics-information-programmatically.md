@@ -13,11 +13,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: bbce760956dda7c9399d25dd241df26ec0e59644
-ms.sourcegitcommit: b01406355e3b97547b7cbf8ce3960f101b165cec
+ms.openlocfilehash: 3de32ab0b9ded416f57f4699e534b6401c2a483c
+ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/05/2018
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="walkthrough-capturing-graphics-information-programmatically"></a>Exemplarische Vorgehensweise: Programmgesteuertes Erfassen von Grafikinformationen
 Sie können die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] -Grafikdiagnose zur programmgesteuerten Erfassung von Grafikinformationen aus einer Direct3D-App verwenden.  
@@ -30,7 +30,7 @@ Sie können die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] -Gr
   
 -   Rufen Sie `CaptureCurrentFrame`auf, wenn ein Renderingproblem schwer durch manuelles Testen zu antizipieren und zu erfassen ist, aber programmgesteuert mithilfe von Informationen über den Status der App zur Laufzeit vorhergesagt werden kann.  
   
-##  <a name="CaptureDX11_2"></a>Programmgesteuerte Erfassung in Windows 10  
+##  <a name="CaptureDX11_2"></a> Programmgesteuerte Erfassung in Windows 10  
  In diesem Teil der exemplarischen Vorgehensweise wird die programmgesteuerte Erfassung in apps, die die DirectX 11.2-API unter Windows 10, verwenden Sie die Methode der stabilen Erfassung verwendet.
   
  In diesem Abschnitt wird gezeigt, wie folgende Aufgaben ausgeführt werden:  
@@ -79,7 +79,7 @@ Sie können die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] -Gr
     HRESULT getAnalysis = DXGIGetDebugInterface1(0, __uuidof(pGraphicsAnalysis), reinterpret_cast<void**>(&pGraphicsAnalysis));  
     ```  
   
-     Prüfen Sie unbedingt das von `HRESULT` zurückgegebene `DXGIGetDebugInterface1` , um sicherzugehen, dass Sie eine gültige Schnittstelle verwenden:  
+     Prüfen Sie unbedingt die `HRESULT` zurückgegebenes [DXGIGetDebugInterface1](https://msdn.microsoft.com/library/windows/desktop/dn457937(v=vs.85).aspx) um sicherzustellen, dass Sie eine gültige Schnittstelle abzurufen, bevor Sie ihn verwenden:  
   
     ```  
     if (FAILED(getAnalysis))  

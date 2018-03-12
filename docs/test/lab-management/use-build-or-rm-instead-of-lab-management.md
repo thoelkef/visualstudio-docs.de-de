@@ -7,16 +7,18 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: automated testing, lab management, test lab
+helpviewer_keywords:
+- automated testing, lab management, test lab
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 author: gewarren
-ms.openlocfilehash: 4dae17012ecf66258d65ff3c200a0dbe8e4c9429
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 25f1007458b691b97f0ea852a1bf0e7325d79d8a
+ms.sourcegitcommit: 238cd48787391aa0ed1eb684f3f04e80f7958705
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 02/12/2018
 ---
 # <a name="use-build-and-release-management-instead-of-lab-management-for-automated-testing"></a>Verwenden von Build und Release Management anstelle von Lab Management für automatische Tests
 
@@ -26,7 +28,7 @@ Wenn Sie Microsoft Test Manager (MTM) und Lab Management für automatische Tests
 
 * [Self-Service-Verwaltung von SCVMM-Umgebungen](#managescvmm)
 
-Build und Release Management unterstützen keine Self-Service-Erstellung von netzwerkisolierten SCVMM-Umgebungen, und es ist nicht geplant, dies in Zukunft zu unterstützen. Allerdings werden einige [Alternativen vorgeschlagen](#isolatedenvir).
+* [Erstellung von netzwerkisolierten Umgebungen](#isolatedenvir)
 
 <a name="bdtautomation"></a>
 ## <a name="build-deploy-test-automation"></a>Automatisiertes Build-Bereitstellen-Testen
@@ -74,14 +76,15 @@ Die folgende Tabelle enthält die typischen Aktivitäten, die Sie in Lab Center 
 | Erstellen Sie einen Prüfpunkt einer Umgebung oder stellen Sie eine Umgebung an einem sauberen Prüfpunkt wieder her. | Öffnen Sie die Lab-Umgebung im Umgebungs-Viewer. Wählen Sie die Option zur Erstellung eines Prüfpunkts oder zur Wiederherstellung an einem vorherigen Prüfpunkt aus. | Verwenden Sie direkt die SCVMM-Administratorkonsole, um diese Vorgänge auf virtuellen Computern auszuführen. Oder, um diese Schritte als Teil einer größeren Automatisierung ausführen zu können, schließen Sie die Prüfpunkttasks aus der [SCVMM-Integrationserweiterung](https://marketplace.visualstudio.com/items?itemname=ms-vscs-rm.scvmmapp) als Teil der Umgebung in die Releasedefinition ein. |
 
 <a name="isolatedenvir"></a>
-## <a name="self-service-creation-of-network-isolated-environments"></a>Self-Service-Erstellung von netzwerkisolierten Umgebungen
+## <a name="creation-of-network-isolated-environments"></a>Erstellung von netzwerkisolierten Umgebungen
 
 Eine netzwerkisolierte Lab-Umgebung ist eine Gruppe von virtuellen SCVMM-Computern, die sicher geklont werden kann, ohne dass es zu Netzwerkkonflikten kommt. Dies erfolgte in MTM mit einer Reihe von Anweisungen, welche die virtuellen Computer in einem privaten Netzwerk mit einem Satz von Netzwerk-Schnittstellenkarten konfigurierten und einen anderen Satz von Netzwerk-Schnittstellenkarten verwendeten, um die virtuellen Computer in einem öffentlichen Netzwerk zu konfigurieren.
 
-Mit der Entwicklung von umfangreicheren öffentlichen und privaten Cloud-Verwaltungssystemen wie z.B. [Microsoft Azure](https://azure.microsoft.com/) und [Microsoft Azure Stack](https://azure.microsoft.com/overview/azure-stack/), können Sie sich für ähnliche Funktionen mehr direkt auf die Cloud-Verwaltungstools verlassen. Es gibt keine entsprechende Möglichkeit dies im Build- und Release Management zu erreichen.
+VSTS und TFS können allerdings in Kombination mit der SCVMM-Build- und -Bereitstellungsaufgabe verwendet werden, um SCVMM-Umgebungen zu verwalten, isolierte virtuelle Netzwerke bereitzustellen und Build-, Bereitstellungs- und Testszenarios zu implementieren. Sie können die Aufgabe z.B. verwenden,
 
-Die folgenden Alternativen werden für die Netzwerkisolation empfohlen:
+* um Prüfpunkte zu erstellen, wiederherzustellen und zu löschen.
+* um neue virtuelle Computer mit einer Vorlage zu erstellen.
+* um virtuelle Computer zu starten oder zu beenden.
+* um benutzerdefinierte PowerShell-Skripts für SCVMM auszuführen.
 
-* Eine Motivation für die Netzwerkisolation war die einfache Konfiguration von mehreren Klonen. Da jeder Klon ein exaktes Replikat des Originals ist, werden Computernamen und die Konfigurationseinstellungen unverändert beibehalten, was die Einrichtung einer neuen Umgebung vereinfacht. Dieser Vorteil verursacht jedoch auch Probleme an einem späteren Zeitpunkt im Lebenszyklus (z.B. in der Produktion), da die Art, in der Anwendungen letztendlich bereitgestellt werden, nicht die gleiche ist. **Stattdessen** sollten Sie in Betracht ziehen, neue Umgebungen auf die gleiche Weise einzurichten, mit der Sie die Produktion eingerichtet haben, und die Verwendung der Netzwerkisolation zu vermeiden.
-
-* Verwenden Sie eine öffentliche Cloud-Infrastruktur wie z.B. [Microsoft Azure](https://azure.microsoft.com/) für Ihre benötigten Tests. Sie können problemlos [Azure Resource Manager-Vorlagen](https://azure.microsoft.com/documentation/templates/) aus [Azure Marketplace](https://azure.microsoft.com/marketplace/) oder aus [Azure-Schnellstartvorlagen](https://azure.microsoft.com/documentation/templates/) verwenden, um Gruppen von virtuellen Computern einzurichten, die über ein privates Netzwerk verbunden sind, und im öffentlichen Netzwerk nur mit einem Proxy oder einer „Jumpbox“ verfügbar gemacht werden.
+Weitere Informationen finden Sie unter [Create a virtual network isolated environment for build-deploy-test scenarios (Erstellen einer virtuellen netzwerkisolierten Umgebung für Build-, Bereitstellungs- und Testszenarios)](/vsts/build-release/actions/virtual-networks/create-virtual-network).

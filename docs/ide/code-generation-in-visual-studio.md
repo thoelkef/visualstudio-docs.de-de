@@ -9,38 +9,30 @@ ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: 7740fcea4ac944242f4284382cf26544d9ea95b5
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- dotnet
+ms.openlocfilehash: 33a2d18615885fea10f3fd64077b2f9438097a7d
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="code-generation-features-in-visual-studio"></a>Feature für die Codegenerierung in Visual Studio
 
-Es gibt zahlreiche Möglichkeiten, Visual Studio Code für Sie im Editor generieren zu lassen. Mithilfe dieser Features für die Codegenerierung sparen Sie Zeit und Aufwand für die manuelle Eingabe, reduzieren Syntaxfehler und verbessern die Konsistenz im gesamten Code.
+Visual Studio bietet verschiedene Möglichkeiten zum Generieren und Umgestalten von Code sowie zum Beheben von Problemen.
 
-Einige der Feature, die dafür sorgen, dass Visual Studio den Code für Sie generiert, sind z.B. [Codeausschnitte](../ide/code-snippets.md) und [Schnellaktionen](../ide/quick-actions.md) ![Kleines Glühbirnensymbol](media/vs2015_lightbulbsmall.png).
+- Sie können [Codeausschnitte](../ide/code-snippets.md) verwenden, um Vorlagen wie [switch](/dotnet/csharp/language-reference/keywords/switch)-Blöcke oder [enum](/dotnet/csharp/language-reference/keywords/enum)-Deklarationen einzufügen.
 
-Über [Schnellaktionen](../ide/quick-actions.md) sind folgende allgemeine Aufgaben für die Codegenerierung verfügbar:
+- Außerdem können Sie [Schnelle Aktionen](../ide/quick-actions.md) verwenden, um Code wie Klassen und Eigenschaften zu generieren oder eine lokale Variable einzufügen. Ebenso können Sie schnelle Aktionen verwenden, um den [Code zu verbessern](../ide/common-quick-actions.md), indem Sie z.B. unnötige Umwandlungen und nicht verwendete Variablen entfernen oder NULL-Überprüfungen vor dem Zugriff auf Variablen hinzufügen.
 
-* Generieren von Klassen, Methoden, Eigenschaften usw.
+- Sie können [Code umwandeln](../ide/refactoring-in-visual-studio.md), um z.B. eine Variable umzubenennen, die Reihenfolge von Methodenparametern zu ändern oder einen Typ mit dem zugehörigen Dateinamen zu synchronisieren.
 
-* Implementieren von abstrakten Klassen oder Schnittstellen
-
-* Einführen einer lokalen Variable in einen komplexen Ausdruck
-
-Die Eingabe bestimmter Zeichen ermöglicht darüber hinaus Folgendes:
-
-* Generieren von [XML-formatierten Kommentarblöcken]() für Ihren Code, die später verarbeitet werden können, um die Dokumentation automatisch zu erstellen
-
-* Generieren von Signaturen für [Methodenüberschreibungen]()
-
-Da die Logik der Codegenerierung eng mit der Sprachsyntax verbunden ist, stellt jeder Sprachdienst in Visual Studio eigene Funktionen zur Codegenerierung bereit.
+> [!NOTE]
+> Jeder Sprachdienst in Visual Studio verfügt über eigene Funktionen zur Codegenerierung. Einige Features sind also nur für C# verfügbar und andere für C# und Visual Basic.
 
 ## <a name="see-also"></a>Siehe auch
 
-[Schnellaktionen](../ide/quick-actions.md)  
 [Codeausschnitte](../ide/code-snippets.md)  
-[Codegenerierung und T4-Textvorlagen](../modeling/code-generation-and-t4-text-templates.md)  
-[Refactoring](../ide/refactoring-in-visual-studio.md)
+[Schnelle Aktionen](../ide/quick-actions.md)  
+[Refactoring](../ide/refactoring-in-visual-studio.md)  
+[Codegenerierung und T4-Textvorlagen](../modeling/code-generation-and-t4-text-templates.md)

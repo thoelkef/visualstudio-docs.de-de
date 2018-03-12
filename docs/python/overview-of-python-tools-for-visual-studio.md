@@ -2,26 +2,26 @@
 title: "Python-Unterstützung in Visual Studio (Windows) – Übersicht | Microsoft-Dokumentation"
 description: "Dieser Artikel enthält eine Zusammenfassung der Features für Python in Visual Studio (auch als Python Tools für Visual Studio, kurz PTVS, bezeichnet), einschließlich Fragen und Antworten (FAQ) und der Featureunterstützungsmatrix für die verschiedenen Visual Studio-Versionen."
 ms.custom: 
-ms.date: 01/09/2018
+ms.date: 02/15/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
 - devlang-python
-ms.devlang: python
+dev_langs:
+- python
 ms.tgt_pltfrm: 
 ms.topic: hero-article
-caps.latest.revision: 
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4d2033e8912d6010adc8e83108a8b9ece1aa4b0e
-ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
+ms.openlocfilehash: 8693e876d56a30b31cd873861c37dbef486e7284
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="working-with-python-in-visual-studio-windows"></a>Arbeiten mit Python in Visual Studio (Windows)
 
@@ -36,7 +36,7 @@ Einführung:
 - Befolgen Sie das Tutorial [Working with Python in Visual Studio (Arbeiten mit Python in Visual Studio)](tutorial-working-with-python-in-visual-studio-step-01-create-project.md) für ein vollständiges End-to-End-Erlebnis.
 - Nutzen Sie anschließend die Links in der folgenden Tabelle, um Python-bezogene Features und die Funktionen von Visual Studio zu erkunden.
 
-| Feature | description | Allgemeine Visual Studio-Dokumentation |
+| Feature | Beschreibung | Allgemeine Visual Studio-Dokumentation |
 | --- | --- | --- |
 | [Visual Studio-Projektsystem](managing-python-projects-in-visual-studio.md) | Übernimmt implizit eine Ordnerstruktur des Python-Codes und ermöglicht eine explizite Steuerung, sodass Sie App-Code, Testcode, Webseiten, JavaScript, Buildskripts usw. identifizieren können. | [Projektmappen und Projekte in Visual Studio](../ide/solutions-and-projects-in-visual-studio.md) |
 | [Projektvorlagen](managing-python-projects-in-visual-studio.md#project-templates) | Erstellt schnell die Projektstruktur für Konsolen-, Internet-, Azure- und Data Science-Projekte und für andere Projekttypen. | [Visual Studio-Vorlagen](../ide/creating-project-and-item-templates.md#visual-studio-templates) |
@@ -46,13 +46,14 @@ Einführung:
 | [Interaktives Fenster](python-interactive-repl-in-visual-studio.md) | Bietet eine schnelle REPL-Umgebung für Python mit Funktionen, um problemlos einen Teil des Codes zu markieren und an das interaktive Fenster zu senden. | n/v |
 | [Vollständige Debugfeatures](debugging-python-in-visual-studio.md) | Debugging kann mit und ohne ein Visual Studio-Projekt ausgeführt werden, einschließlich der Möglichkeit zum Debuggen einer vorhandenen ausführbaren Datei, [Python/C++-Debugging im gemischten Modus](debugging-mixed-mode-c-cpp-python-in-visual-studio.md), [Remotedebugging unter Linux](debugging-python-code-on-remote-linux-machines.md) für Windows/Linux/Mac, [Remotedebugging in Azure](debugging-remote-python-code-on-azure.md) und Debugging im interaktiven Fenster. | [Debuggen in Visual Studio](../debugger/debugging-in-visual-studio.md) |
 | [Profilerstellungstools mit umfassender Berichterstellung](profiling-python-code-in-visual-studio.md) | Untersucht, wie Zeit in Ihrer Anwendung aufgewendet wird. Dazu zählt auch die Möglichkeit, die Leistung von verschiedenen Ausführungen der Profilerstellung zu vergleichen. | [Profilerstellungstools](../profiling/profiling-tools.md) (nicht alle Funktionen von Visual Studio-Profilerstellungstools stehen für Python zur Verfügung) |
-| [Tools für Unittests](unit-testing-python-in-visual-studio.md) | Sie können Tests im Test-Explorer von Visual Studio ermitteln, ausführen und verwalten und Unittests problemlos debuggen. | [Ausführen von Komponententests für Code](../test/unit-test-your-code.md) |
+| [Tools für Komponententests](unit-testing-python-in-visual-studio.md) | Sie können Tests im Test-Explorer von Visual Studio ermitteln, ausführen und verwalten und Komponententests problemlos debuggen. | [Ausführen von Komponententests für Code](../test/unit-test-your-code.md) |
 
 Die Python-Arbeitsauslastung umfasst auch das [Azure SDK für Python](azure-sdk-for-python.md), das die Nutzung von Azure-Diensten aus Windows-, Mac OS X- und Linux-Anwendungen vereinfacht.
 
-Eine Videoeinführung finden Sie unter dem kurzen Kurs [Python Tools for Visual Studio (Python Tools für Visual Studio)](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121) in der Microsoft Virtual Academy (etwa 22 Minuten lang). 
-
-> [!VIDEO https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Installing-Visual-Studio-Python-Support-go1id3LWE_1705918567]
+|   |   |
+|---|---|
+| ![Kamerasymbol für Video](../install/media/video-icon.png "Video ansehen") | [Sehen Sie sich eine Videoreihe (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121) mit einer Einführung zu Python in Visual Studio an (22 Minuten gesamt). |
+| ![Kamerasymbol für Video](../install/media/video-icon.png "Video ansehen") | Sehen Sie sich außerdem die folgenden Videos auf Microsoft Virtual Academy an:<ul><li>[Einführung in das Programmieren mit Python](https://mva.microsoft.com/en-US/training-courses/introduction-to-programming-with-python-8360?l=lqhuMxFz_8904984382)</li><li>[Python für Einsteiger: Zeichenfolgen und Funktionen](https://mva.microsoft.com/en-US/training-courses/python-beginner-strings-and-functions-18015)</li><li>[Python-Grundlagen: Listen und Schleifen](https://mva.microsoft.com/en-US/training-courses/python-fundamentals-lists-and-loops-18019)</li><li>[Häufigste Fragen zu Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121)</li></ul> |
 
 ## <a name="questions-and-answers"></a>Fragen und Antworten
 
@@ -70,7 +71,7 @@ A. Python ist im Allgemeinen eine interpretierte Sprache, bei der Code nach Beda
 
 ## <a name="features-matrix"></a>Featurematrix
 
-Python-Unterstützung kann in den folgenden Editionen von Visual Studio installiert werden, wie im [Installationshandbuch](installing-python-support-in-visual-studio.md) beschrieben:
+Python-Features können wie im [Installationshandbuch](installing-python-support-in-visual-studio.md) beschrieben in den folgenden Editionen von Visual Studio installiert werden:
 
 - [Visual Studio 2017 (alle Editionen)](https://www.visualstudio.com/vs/)
 - [Visual Studio 2015 (alle Editionen)] (https://www.visualstudio.com/en-us/downloads/visual-studio-2015-downloads-vs)
@@ -81,7 +82,8 @@ Python-Unterstützung kann in den folgenden Editionen von Visual Studio installi
 - Visual Studio 2012 (Pro-Edition oder höher)
 - Visual Studio 2010 SP1 (Pro-Edition oder höher, .NET 4.5 ist erforderlich)
 
-Unterstützte Funktionen nach Visual Studio-Version und -Edition:
+> [!Important]
+> Features werden nur für die neueste Visual Studio-Version unterstützt und gewartet. Sie sind für ältere Versionen zwar verfügbar, werden jedoch nicht mehr aktiv verwaltet.
 
 | Python-Unterstützung | 2017 | 2015 | 2013 Comm | 2013 Desktop | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
 | --- | --- | --- | --- | --- | --- | --- | --- | ---|
@@ -167,6 +169,8 @@ Unterstützte Funktionen nach Visual Studio-Version und -Edition:
 | Debuggen im interaktiven Fenster | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
 <br/>
 
+<a name="matrix-profiling"></a>
+
 | Profilerstellung | 2017 | 2015 | 2013 Comm | 2013 Desktop | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
 | --- | --- | --- | --- | --- | --- | --- | --- | ---|
 | Profilerstellung | &#10004; | &#10004; | &#10004; | &#10007; | &#10007; | &#10004; | &#10004; | &#10004; |
@@ -199,4 +203,4 @@ Unterstützte Funktionen nach Visual Studio-Version und -Edition:
 
 - [WFastCGI-Brücke zwischen IIS und Python](https://pypi.python.org/pypi/wfastcgi) (python.org)
 - [Kostenlose Python-Kurse in der Microsoft Virtual Academy](https://mva.microsoft.com/search/SearchResults.aspx#!q=python)
-- [Top Python Questions at Microsoft Virtual Academy (Meistgestellte Fragen an der Microsoft Virtual Academy)](https://aka.ms/mva-top-python-questions)
+- [Häufigste Fragen auf Microsoft Virtual Academy](https://aka.ms/mva-top-python-questions)

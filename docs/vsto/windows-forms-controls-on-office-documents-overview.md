@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -30,7 +31,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: 898d0325b352f3ea8982dc68cf5a99a07181a31c
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -40,12 +42,12 @@ ms.lasthandoff: 01/10/2018
 # <a name="windows-forms-controls-on-office-documents-overview"></a>Übersicht über Windows Forms-Steuerelemente in Office-Dokumenten
   Windows Forms-Steuerelemente sind Objekte, mit denen Benutzer arbeiten können, um Daten einzugeben oder zu ändern. In Projekten auf Dokumentebene für Microsoft Office Excel und Microsoft Office Word können Sie dem Dokument oder der Arbeitsmappe in Ihrem Projekt zur Entwurfszeit Windows Forms-Steuerelemente hinzufügen, Sie können diese Steuerelemente aber auch zur Laufzeit programmgesteuert hinzufügen. Sie können diese Steuerelemente jedem geöffneten Dokument oder Arbeitsblatt zur Laufzeit über ein VSTO-Add-In für Excel oder Word programmgesteuert hinzufügen.  
   
- Weitere Informationen finden Sie unter [How to: Add Windows Forms Controls to Office Documents](../vsto/how-to-add-windows-forms-controls-to-office-documents.md).  
+ Weitere Informationen finden Sie unter [Gewusst wie: Hinzufügen von Windows Forms-Steuerelementen zu Office-Dokumenten](../vsto/how-to-add-windows-forms-controls-to-office-documents.md).  
   
  [!INCLUDE[appliesto_controls](../vsto/includes/appliesto-controls-md.md)]  
   
 ## <a name="using-windows-forms-controls"></a>Verwenden von Windows Forms-Steuerelementen  
- Sie können Windows Forms-Steuerelemente zu Dokumenten und anpassbbaren Benutzeroberflächenelementen (etwa Aktionsbereiche, benutzerdefinierte Aufgabenbereiche und Windows Forms) hinzufügen. In den meisten Fällen verhalten sich Windows Forms-Steuerelemente in Dokumenten genauso wie in diesen anderen Benutzeroberflächenelementen, es gibt aber auch einige Unterschiede. Weitere Informationen finden Sie unter [Limitations of Windows Forms Controls on Office Documents](../vsto/limitations-of-windows-forms-controls-on-office-documents.md).  
+ Sie können Windows Forms-Steuerelemente zu Dokumenten und anpassbbaren Benutzeroberflächenelementen (etwa Aktionsbereiche, benutzerdefinierte Aufgabenbereiche und Windows Forms) hinzufügen. In den meisten Fällen verhalten sich Windows Forms-Steuerelemente in Dokumenten genauso wie in diesen anderen Benutzeroberflächenelementen, es gibt aber auch einige Unterschiede. Weitere Informationen finden Sie unter [Einschränkungen für Windows Forms-Steuerelemente in Office-Dokumenten](../vsto/limitations-of-windows-forms-controls-on-office-documents.md).  
   
  Die Entscheidung, ob Sie Windows Forms-Steuerelemente einem Dokument oder einem anderen Benutzeroberflächenelement hinzufügen, ist von verschiedenen Faktoren abhängig. Wenn Sie die Benutzeroberfläche Ihrer Lösung entwerfen, sollten Sie die Nutzung von Windows Forms-Steuerelemente entsprechend den Beschreibungen in der folgenden Tabelle berücksichtigen.  
   
@@ -75,7 +77,7 @@ ms.lasthandoff: 01/10/2018
 ## <a name="adding-windows-forms-controls-programmatically"></a>Programmgesteuertes Hinzufügen von Windows Forms-Steuerelementen  
  Sie können Word-Dokumenten und Excel-Arbeitsblättern zur Laufzeit Windows Forms-Steuerelemente hinzufügen. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] stellt Hilfsmethoden zum Hinzufügen der gängigsten Windows Forms-Steuerelemente bereit. Mit diesen Hilfsmethoden können Sie Office-Dokumenten schnell Steuerelemente hinzufügen und die Kombination aus Windows Forms-Steuerelementfunktionalität und Office-bezogener Funktionalität dieser Steuerelemente nutzen.  
   
- Weitere Informationen finden Sie unter [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md).  
+ Weitere Informationen finden Sie unter [Hinzufügen von Steuerelementen zu Office-Dokumenten zur Laufzeit](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
 ## <a name="using-windows-forms-controls-in-document-level-projects"></a>Verwenden von Windows Forms-Steuerelementen in Projekten auf Dokumentebene  
  Einige Aspekte der Verwendung von Windows Forms-Steuerelementen in Dokumenten gelten nur für Projekte auf Dokumentebene, die es Ihnen ermöglichen, die Benutzeroberfläche Ihres Dokuments mit Visual Studio-Designer zu entwerfen.  
@@ -116,7 +118,7 @@ ms.lasthandoff: 01/10/2018
 ### <a name="preventing-old-data-from-appearing-in-excel-workbooks-during-loading"></a>Verhindern der Anzeige alter Daten beim Laden von Excel-Arbeitsmappen  
  Wenn Sie Dokumenten oder Arbeitsmappen zur Entwurfszeit Windows Forms-Steuerelemente hinzufügen, verbleiben die Steuerelemente im Dokument, wenn der Benutzer das Dokument schließt. Steuerelemente, die zur Entwurfszeit hinzufügt wurden, werden auch als *statische*Steuerelemente bezeichnet.  
   
- Wird eine Excel-Arbeitsmappe geöffnet, die ein statisches Steuerelement enthält, wird in der Arbeitsmappe solange eine Bitmap des Steuerelements in einem ActiveX-Steuerelement angezeigt, bis der Anpassungscode ausgeführt und das tatsächliche Steuerelement geladen wird. Diese Bitmap wird von Excel erstellt und bei jedem Speichern der Arbeitsmappe in der Arbeitsmappe gespeichert. Das Steuerelement wird in der Bitmap so angezeigt, wie es zum Zeitpunkt der letzten Speicherung der Arbeitsmappe angezeigt wurde, einschließlich aller vom Steuerelement angezeigten Daten. Weitere Informationen zu dem ActiveX-Steuerelement, das Windows Forms-Steuerelemente und Bitmaps enthält, finden Sie unter [Limitations of Windows Forms Controls on Office Documents](../vsto/limitations-of-windows-forms-controls-on-office-documents.md).  
+ Wird eine Excel-Arbeitsmappe geöffnet, die ein statisches Steuerelement enthält, wird in der Arbeitsmappe solange eine Bitmap des Steuerelements in einem ActiveX-Steuerelement angezeigt, bis der Anpassungscode ausgeführt und das tatsächliche Steuerelement geladen wird. Diese Bitmap wird von Excel erstellt und bei jedem Speichern der Arbeitsmappe in der Arbeitsmappe gespeichert. Das Steuerelement wird in der Bitmap so angezeigt, wie es zum Zeitpunkt der letzten Speicherung der Arbeitsmappe angezeigt wurde, einschließlich aller vom Steuerelement angezeigten Daten. Weitere Informationen zu dem ActiveX-Steuerelement, das Windows Forms-Steuerelemente und Bitmaps enthält, finden Sie unter [Einschränkungen für Windows Forms-Steuerelemente in Office-Dokumenten](../vsto/limitations-of-windows-forms-controls-on-office-documents.md).  
   
  Unter bestimmten Bedingungen wird der Code nicht geladen und wird nur die Bitmap angezeigt, beispielsweise wenn der Benutzer die Arbeitsmappe im Entwurfsmodus öffnet. Außerdem kann, wenn der Benutzer die Arbeitsmappe auf einem Computer öffnet, auf dem [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] nicht installiert ist, die Anpassung nicht ausgeführt werden, sodass die Steuerelemente nicht geladen werden können und daher nur die Bitmap des Steuerelements sichtbar ist. Sie sollten persönliche Informationen stets aus Steuerelementen in einer Arbeitsmappe entfernen, bevor Sie die Arbeitsmappe speichern und an andere Benutzer senden. So ist sichergestellt, dass Sie vertrauliche Informationen nicht versehentlich preisgeben.  
   
@@ -138,7 +140,7 @@ ms.lasthandoff: 01/10/2018
   
 -   Um ein Steuerelement als unverankerte Form einzufügen, verwenden Sie eine Überladung, die die linke und die obere Koordinate des Steuerelements akzeptiert.  
   
- Weitere Informationen finden Sie unter [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md).  
+ Weitere Informationen finden Sie unter [Hinzufügen von Steuerelementen zu Office-Dokumenten zur Laufzeit](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
  Wenn Sie eine Word-Vorlage im Visual Studio-Designer öffnen, sind nicht ausgerichtete Steuerelemente in der Vorlage möglicherweise nicht sichtbar, da Visual Studio die Vorlage in der Ansicht **Normal** öffnet. Damit die Steuerelemente angezeigt werden, ändern Sie die Ansicht in **Seitenlayout**.  
   

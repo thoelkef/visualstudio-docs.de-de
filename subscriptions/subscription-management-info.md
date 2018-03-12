@@ -9,11 +9,11 @@ Description: Find More Information About Subscription Management?
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: ed2b39a7660f7e4307c142b801ba8d43014c4726
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: eca3bbc4c906639e1946776b17537480b816c32f
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="where-can-i-find-more-information-about-subscription-management"></a>Wo finde ich mehr Informationen zur Abonnementverwaltung?
 
@@ -21,5 +21,5 @@ Abonnementverwaltungsfunktionen sind für Kunden verfügbar, die Abonnements üb
 
 Angesichts der unterschiedlichen Erwerbskanäle müssen Abonnementadministratoren wissen, wie ihre Abonnements bezogen wurden, damit die entsprechenden Berechtigungen und Benutzerleitfäden genutzt werden können. 
 
-Das Visual Studio-Abonnementteam hat vor kurzem das „Visual Studio[-Abonnementverwaltungsportal](https://www.visualstudio.com/subscriptions-administration/)“ erstellt.  Das Ziel dieses Portals ist, Abonnementadministratoren zu helfen, schnell die Tools und Funktionen kennenzulernen, mit denen sie Abonnements in ihrer Organisation zuweisen und verwalten können. 
+Das Visual Studio-Abonnementteam hat das „Visual Studio[-Abonnementverwaltungsportal](https://www.visualstudio.com/subscriptions-administration/)“ eingerichtet.  Das Ziel dieses Portals ist, Abonnementadministratoren zu helfen, schnell die Tools und Funktionen kennenzulernen, mit denen sie Abonnements in ihrer Organisation zuweisen und verwalten können. 
 

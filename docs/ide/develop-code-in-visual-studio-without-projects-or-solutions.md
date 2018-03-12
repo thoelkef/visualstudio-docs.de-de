@@ -1,7 +1,6 @@
 ---
 title: Entwickeln von Code in Visual Studio ohne Projekte oder Projektmappen | Microsoft-Dokumentation
-ms.custom: 
-ms.date: 02/27/2017
+ms.date: 02/21/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-general
@@ -15,226 +14,106 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 40995be9ee5d5da5a3219dd8badcb13e4b3f6e62
-ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
+ms.openlocfilehash: 08c50a07992a1856ad0d5f45c0200e0b8a232cb7
+ms.sourcegitcommit: 3abca1c733af876c8146daa43a62e829833be280
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>Entwickeln von Code in Visual Studio ohne Projekte oder Projektmappen
 
-In Visual Studio 2017 können Sie Code von Directory-basierten Projekten nahezu jeder Art öffnen, ohne dass eine Projektmappen- oder Projektdatei erforderlich ist. Dies bedeutet: Sie finden z.B. ein Codeprojekt auf Git, klonen es, öffnen es dann direkt in Visual Studio und beginnen mit der Entwicklung, ohne eine Projektmappe oder ein Projekt erstellen zu müssen.  
+In Visual Studio 2017 können Sie Code von Directory-basierten Projekten nahezu jeder Art öffnen, ohne dass eine Projektmappen- oder Projektdatei erforderlich ist. Das bedeutet, dass Sie z.B. ein Repository in GitHub klonen, es direkt in Visual Studio öffnen und mit der Entwicklung beginnen können, ohne eine Projektmappe oder ein Projekt erstellen zu müssen. Bei Bedarf können Sie mithilfe einfacher JSON-Dateien benutzerdefinierte Buildtasks und Startparameter angeben.
 
-Sie können nicht nur den Code bearbeiten und in Visual Studio erstellen, sondern auch durch Ihren Code navigieren (z.B. mithilfe des „Navigieren zu“-Befehls). Der Code wird mit Syntaxfarbgebung angezeigt und beinhaltet in vielen Fällen Anweisungsvervollständigung und Debuggen inklusive Haltepunkte in grundlegender Form. Einige Sprachen bieten sogar noch mehr Funktionalität. Weitere Informationen finden Sie unter [Erstellen von portablen, benutzerdefinierten Editor-Einstellungen](create-portable-custom-editor-options.md).  
+Nach dem Öffnen der Codedateien in Visual Studio zeigt der Projektmappen-Explorer alle Dateien im Ordner an. Sie können auf eine beliebige Datei klicken, um mit der Bearbeitung zu beginnen. Visual Studio beginnt im Hintergrund damit, die Dateien zu indizieren, um IntelliSense, Navigation und Refactoringfunktionen zu ermöglichen. Während Sie Dateien bearbeiten, erstellen, verschieben und löschen, verfolgt Visual Studio die Änderungen automatisch nach und aktualisiert den IntelliSense-Index kontinuierlich. Der Code wird mit Syntaxfarbgebung angezeigt und beinhaltet in vielen Fällen eine grundlegende Anweisungsvervollständigung per IntelliSense.
 
-## <a name="open-code-anywhere"></a>Code öffnen – überall
+## <a name="open-any-code"></a>Öffnen von beliebigem Code
 
-Sie können Code in Visual Studio auf folgende Arten öffnen:  
+Sie können Code in Visual Studio auf eine der folgenden Arten öffnen:
 
-- Wählen Sie in der Visual Studio-Menüleiste **Datei**, **Öffnen**, **Ordner**, und navigieren Sie zum Codespeicherort.  
-
-- Wählen Sie im Kontextmenü (Rechtsklick) eines Ordners, der Code enthält, den Befehl **In Visual Studio öffnen** .  
-
-- Wählen Sie den Link **Ordner öffnen** auf der Visual Studio-Startseite.  
-
-- Öffnen Sie von einem GitHub-Repository geklonten Code.  
+- Wählen Sie in der Visual Studio-Menüleiste die Einträge **Datei** > **Öffnen** > **Ordner**, und navigieren Sie zum Codespeicherort.
+- Wählen Sie im Kontextmenü (Rechtsklick) eines Ordners, der Code enthält, den Befehl **In Visual Studio öffnen** .
+- Wählen Sie den Link **Ordner öffnen** auf der Visual Studio-Startseite.
+- Wenn Sie eine Tastatur verwenden, drücken Sie in Visual Studio die Tasten **STRG**+**UMSCHALT**+**ALT**+**O**.
+- Öffnen Sie Code aus einem geklonten GitHub-Repository.
 
 ### <a name="to-open-code-from-a-cloned-github-repo"></a>So öffnen Sie Code aus einem geklonten GitHub-Repository
 
-Das folgende Beispiel zeigt, wie ein GitHub-Repository geklont und dann sein Code in Visual Studio geöffnet wird. Um diese Schritte auszuführen, müssen ein GitHub-Konto und Git für Windows auf Ihrem System installiert sein. Unter [Signing up for a new GitHub account](https://help.github.com/articles/signing-up-for-a-new-github-account/) (Registrieren für ein neues GitHub-Konto) und [Git for Windows](https://git-for-windows.github.io/) (Git für Windows) finden Sie weitere Informationen.  
+Das folgende Beispiel zeigt, wie ein GitHub-Repository geklont und dann sein Code in Visual Studio geöffnet wird. Um diese Schritte auszuführen, müssen ein GitHub-Konto und Git für Windows auf Ihrem System installiert sein. Unter [Signing up for a new GitHub account](https://help.github.com/articles/signing-up-for-a-new-github-account/) (Registrieren für ein neues GitHub-Konto) und [Git for Windows](https://git-for-windows.github.io/) (Git für Windows) finden Sie weitere Informationen.
 
-1. Wechseln Sie zu dem Repository auf GitHub, das Sie klonen möchten.  
+1. Wechseln Sie zu dem Repository auf GitHub, das Sie klonen möchten.
 
-1. Klicken Sie auf die Schaltfläche **Clone or Download** (Klonen oder herunterladen), und klicken Sie dann auf die Schaltfläche **Copy to Clipboard** (In Zwischenablage kopieren) im Dropdownmenü, um die sichere URL für das GitHub-Repository zu kopieren.  
+1. Klicken Sie auf die Schaltfläche **Clone or Download** (Klonen oder herunterladen), und klicken Sie dann auf die Schaltfläche **Copy to Clipboard** (In Zwischenablage kopieren) im Dropdownmenü, um die sichere URL für das GitHub-Repository zu kopieren.
 
-  ![Klonenschaltfläche in GitHub](./media/VSIDE_Code_Clone.png)
+   ![Klonenschaltfläche in GitHub](./media/VSIDE_Code_Clone.png)
 
-    > [!NOTE]
-    >  Sie haben zwar auch die Möglichkeit, das Projekt auf Ihrem Desktop zu öffnen oder eine ZIP-Datei des Projekts herunterzuladen, doch dieses Beispiel veranschaulicht das Klonen des Repositorys mithilfe einer sicheren URL.
+1. Wählen Sie in Visual Studio die Registerkarte **Team Explorer**, um Team Explorer zu öffnen. Wenn die Registerkarte nicht angezeigt wird, öffnen Sie sie über **Ansicht** > **Team Explorer**.
 
-1. Wählen Sie in Visual Studio die Registerkarte **Team Explorer**, um Team Explorer zu öffnen.  
+1. Wählen Sie in Team Explorer im Abschnitt **Lokale Git-Repositorys** den Befehl **Klonen** aus, und fügen Sie die URL der GitHub-Seite in das Textfeld ein.
 
-1. Wählen Sie in Team Explorer im Abschnitt **Lokale Git-Repositorys** den Befehl **Klonen** aus, und fügen Sie die URL der GitHub-Seite in das Textfeld ein.  
+   ![Klonen des Projekts](./media/VSIDE_Code_Clone2.png)
 
-  ![Klonen des Projekts](./media/VSIDE_Code_Clone2.png)
+1. Wählen Sie die Schaltfläche **Klonen**, um die Dateien des Projekts in einem lokalen Git-Repository zu klonen. Dies kann je nach Größe des Repositorys einige Minuten dauern.
 
-1. Wählen Sie die Schaltfläche **Klonen**, um die Dateien des Projekts in einem lokalen Git-Repository zu klonen. Dies kann je nach Größe des Repositorys einige Minuten dauern.  
+1. Wählen Sie nach dem Klonen des Repositorys auf Ihrem System in Team Explorer den Befehl **Öffnen** im Kontextmenü (Rechtsklick) des neu geklonten Repositorys.
 
-1. Wählen Sie nach dem Klonen des Repositorys auf Ihrem System in Team Explorer den Befehl **Öffnen** im Kontextmenü (Rechtsklick) des neu geklonten Repositorys.  
+   ![Geklontes Repository](./media/VSIDE_Code_Clone3.png)
 
-  ![Geklontes Repository](./media/VSIDE_Code_Clone3.png)
+1. Wählen Sie den Befehl **Ordneransicht anzeigen** aus, um die Dateien im Projektmappen-Explorer anzuzeigen.
 
-1. Wählen Sie den Befehl **Ordneransicht anzeigen** aus, um die Dateien im Projektmappen-Explorer anzuzeigen.  
+   ![Ordneransicht anzeigen](./media/VSIDE_Code_Clone3_show.png)
 
-  ![Ordneransicht anzeigen](./media/VSIDE_Code_Clone3_show.png)
-
-  Jetzt können Sie Ordner und Dateien im geklonten Repository durchsuchen und den Code im Code-Editor von Visual Studio anzeigen und durchsuchen, wobei die farbliche Syntaxhervorhebung und andere Funktionen zur Verfügung stehen.
-
-    ![Durchsuchen des geklonten Projektcodes](./media/VSIDE_Code_Clone4.png)  
+   Jetzt können Sie Ordner und Dateien im geklonten Repository durchsuchen und den Code im Code-Editor von Visual Studio anzeigen und durchsuchen, wobei die farbliche Syntaxhervorhebung und andere Funktionen zur Verfügung stehen.
 
 |         |         |
 |---------|---------|
-|  ![Kamerasymbol für video](../install/media/video-icon.png "Video ansehen")  |    [Sehen Sie sich dieses Video an](https://mva.microsoft.com/en-us/training-courses/getting-started-with-visual-studio-2017-17798?l=lp3TOKD6D_6711787171), um zu erfahren, wie Sie Code aus einem GitHub-Repository in Visual Studio klonen und öffnen. |
+|  ![Kamerasymbol für video](../install/media/video-icon.png "Video ansehen")|    [Sehen Sie sich dieses Video an](https://mva.microsoft.com/en-us/training-courses/getting-started-with-visual-studio-2017-17798?l=lp3TOKD6D_6711787171), um zu erfahren, wie Sie Code aus einem GitHub-Repository in Visual Studio klonen und öffnen. |
 
-## <a name="debug-your-code"></a>Debuggen Ihres Codes
+## <a name="run-and-debug-your-code"></a>Ausführen und Debuggen Ihres Codes
 
-Sie können Ihren Code in Visual Studio ohne ein Projekt oder eine Projektmappe debuggen. Zum Debuggen bestimmter Sprachen benötigen Sie möglicherweise eine gültige *Startdatei* im Codeprojekt, z.B. ein Skript, eine ausführbare Datei oder eine Projektdatei. In Visual Studio wird dieser angegebene Code zuerst ausgeführt, wenn Sie den Code debuggen.  
+Sie können Ihren Code in Visual Studio ohne ein Projekt oder eine Projektmappe debuggen! Zum Debuggen bestimmter Sprachen benötigen Sie möglicherweise eine gültige *Startdatei* in der Codebasis, z.B. ein Skript, eine ausführbare Datei oder eine Projektdatei. Auf der Symbolleiste werden im Dropdown-Listenfeld neben der Schaltfläche **Start** sowohl alle Startelemente aufgelistet, die Visual Studio erkennt, als auch die Elemente, die Sie speziell bestimmen. Visual Studio führt diesen Code zuerst aus, wenn Sie den Code debuggen.
 
-Auf der Symbolleiste werden im Dropdown-Listenfeld neben der Schaltfläche „Start“ sowohl alle Startelemente aufgelistet, die Visual Studio erkennt, als auch die Elemente, die Sie speziell in einem Ordner auswählen.  
+Die Konfiguration Ihres Codes zur Ausführung in Visual Studio ist unterschiedlich, je nachdem, um welche Art Code es sich handelt und welche Buildtools verwendet werden.
 
-![Schaltfläche „Ausführen“](./media/VSIDE_Code_Run_Button.png)  
+### <a name="codebases-that-use-msbuild"></a>Codebasen mit MSBuild
 
-Visual Studio erkennt Projekte automatisch, aber Skripts (z.B. Python und JavaScript) müssen Sie explizit als Startelement auswählen, bevor sie in der Liste angezeigt werden. Darüber hinaus können einige Startelemente, z.B. MSBuild und CMake, mehrere Buildkonfigurationen verwenden, die in der Dropdownliste der Schaltfläche „Ausführen“ angezeigt werden.  
+Für MSBuild-basierte Codebasen können mehrere Buildkonfigurationen existieren, die in der Dropdownliste neben der Schaltfläche **Start** angezeigt werden. Wählen Sie die Datei aus, die Sie als Startelement verwenden möchten, und klicken Sie dann auf die Schaltfläche **Start**, um mit dem Debuggen zu beginnen.
 
-Visual Studio unterstützt derzeit das Debuggen für die folgenden Sprachen:  
+> [!NOTE]
+> Bei C#- und Visual Basic-Codebasen muss die Arbeitsauslastung **.NET-Desktopentwicklung** installiert sein. Bei C++-Codebasen muss die Arbeitsauslastung **Desktopentwicklung mit C++** installiert sein.
 
-- Node.js  
+### <a name="codebases-that-use-custom-build-tools"></a>Codebasen mit benutzerdefinierten Buildtools
 
-- Python  
+Wenn Ihre Codebasis benutzerdefinierte Buildtools verwendet, müssen Sie Visual Studio mithilfe von in einer *JSON*-Datei definierten *Buildtasks* mitteilen, wie der Code kompiliert werden soll. Weitere Informationen finden Sie unter [Anpassen von Build- und Debugtasks](../ide/customize-build-and-debug-tasks-in-visual-studio.md).
 
-- MSBuild-basierte Projekte (C#, VB, C++)  
+### <a name="codebases-that-contain-python-or-javascript-code"></a>Codebasen mit Python- oder JavaScript-Code
 
-- Jede ausführbare Datei mit PDB-Dateien (Python-Debugger).  
+Wenn Ihre Codebasis Python- oder JavaScript-Code enthält, müssen Sie keine *JSON*-Dateien konfigurieren, aber Sie müssen die entsprechende Arbeitsauslastung installieren. Sie müssen auch das Startskript konfigurieren:
 
-### <a name="to-debug-nodejs-and-python"></a>So debuggen Sie Node.js und Python:
+1. Installieren Sie die Arbeitsauslastung [Node.js-Entwicklung](https://www.visualstudio.com/vs/node-js/) oder [Python-Entwicklung](https://www.visualstudio.com/vs/python/), indem Sie **Tools** > **Tools und Features abrufen...** auswählen oder indem Sie Visual Studio schließen und das Visual Studio-Installationsprogramm ausführen.
 
-1. Installieren Sie Node.js- oder Python-Tools oder Visual Studio 2017 und die Node.js-Laufzeit.  
+   ![Arbeitsauslastungen für die Entwicklung mit Node.js und Python](media/python_nodejs_workloads.png)
 
-1. Wählen Sie im Kontextmenü einer JavaScript-Datei im Projektmappen-Explorer den Befehl **Als Startelement festlegen**.  
+1. Wählen Sie im **Projektmappen-Explorer**-Kontextmenü einer JavaScript- oder Python-Datei den Befehl **Als Startelement festlegen**.
 
-1. Drücken Sie die **F5**-Taste, um das Debuggen zu starten.  
+1. Klicken Sie auf die Schaltfläche **Start**, um mit dem Debuggen zu beginnen.
 
-### <a name="to-debug-msbuild-projects"></a>So debuggen Sie MSBuild-Projekte
+### <a name="codebases-that-contain-c-code"></a>Codebasen mit C++-Code
 
-1. Wählen Sie im Visual Studio-Menü **Debuggen**. Wählen Sie im Dropdownmenü das Projekt aus, oder wählen Sie das Projekt bzw. die Datei aus, das/die als Startelement im Projektmappen-Explorer angezeigt werden soll.  
+Informationen zum Öffnen von C++-Code ohne Projektmappen oder Projekte in Visual Studio finden Sie unter [Open Folder-Projekte für C++](/cpp/ide/non-msbuild-projects).
 
-1. Drücken Sie die **F5**-Taste, um das Debuggen zu starten.  
+### <a name="codebases-that-contain-a-visual-studio-project"></a>Codebasen mit einem Visual Studio-Projekt
 
-### <a name="to-debug-executable-files"></a>So debuggen Sie ausführbare Dateien
+Wenn Ihr Codeordner ein Visual Studio-Projekt enthält, können Sie dieses Projekt als Startelement festlegen.
 
-1. Wählen Sie im Visual Studio-Menü **Debuggen**. Wählen Sie im Dropdownmenü das Projekt aus, oder wählen Sie das Projekt bzw. die Datei aus, das/die als Startelement im Projektmappen-Explorer angezeigt werden soll.  
+![Projekt als Startelement festlegen](media/customize-set-project-as-startup-item.png)
 
-1. Drücken Sie die **F5**-Taste, um das Debuggen zu starten.  
+Der Text der Schaltfläche **Start** ändert sich und zeigt an, dass das Projekt das Startelement ist.
 
-## <a name="enable-custom-build-tools"></a>Aktivieren benutzerdefinierter Buildtools
-
-Visual Studio weiß, wie viele verschiedene Sprachen ausgeführt werden, aber nicht, wie alles ausgeführt wird. Wenn Visual Studio weiß, wie Ihre Sprache ausgeführt wird, können Sie den Code sofort ausführen. Wenn Sie versuchen, den Code auszuführen, aber Visual Studio nicht weiß, wie er ausgeführt wird, werden Sie in einer Informationsleiste aufgefordert, eine Datei in Ihrer Codebasis als Startelement festzulegen .  
-
-Wenn die Codebasis benutzerdefinierte Buildtools verwendet, die von Visual Studio jedoch nicht erkannt werden, können Sie aller Wahrscheinlichkeit nach den Code in Visual Studio erst ausführen und debuggen, wenn Sie einige zusätzliche Schritte ausgeführt haben. Sie müssen einen gültigen Typ einer ausführbaren Datei (z.B. einen Compiler) zusammen mit beliebigen benutzerdefinierten Parametern und Argumenten eingeben, die von der Sprache benötigt werden. Um dies zu ermöglichen, bietet Visual Studio *Buildtasks*. Sie können eine Buildaufgabe erstellen, um alle Elemente anzugeben, die eine Sprache benötigt, um ihren Code zu erstellen und auszuführen.  
-
-Sie können auch beliebige Buildaufgaben erstellen, die nahezu alles tun können, was Sie möchten. Beispielsweise können Sie eine Aufgabe erstellen, um den Inhalt eines Ordners aufzulisten oder eine Datei umzubenennen. Sie können auch gezieltere benutzerdefinierte Buildaufgaben erstellen, die mithilfe bestimmter Argumente Aktionen wie das Kompilieren und Erstellen Ihres Projekts ausführen. Die folgenden Schritte zeigen das Erstellen beider Arten von Buildaufgaben.  
-
-#### <a name="to-create-an-arbitrary-build-task"></a>So erstellen Sie eine beliebige Buildaufgabe
-
-1. Wählen Sie die Datei oder den Ordner des Projekts im Projektmappen-Explorer aus, wo die Aufgabe gespeichert werden soll, und klicken Sie auf das Kontextmenü (Rechtsklick) der Datei oder des Ordners, und wählen Sie **Tasks konfigurieren**.  
-
-  ![Tasks konfigurieren](./media/VSIDE_Code_Config_Task.png)
-
-  Bei Auswahl von **Tasks konfigurieren** wird die Datei „tasks.vs.json“ geöffnet. Wenn diese Datei nicht vorhanden ist, wird sie erstellt. Diese Datei enthält die Buildaufgaben für die ausgewählte Datei oder den Ordner.  
-
-  ![Datei „tasks.vs.json“](./media/VSIDE_Code_Tasks_JSON.png)
-
-1. Fügen Sie „tasks.vs.json“ die folgende Buildaufgabe hinzu. In diesem Beispiel fügen wir eine einfache Aufgabe „List outputs“ hinzu, die Dateien und Unterordner des ausgewählten Ordners im Fenster „Ausgabe“ auflistet. (Die neue Aufgabe sollte innerhalb des vorhandenen Arrays „tasks“ hinzugefügt werden.)  
-
-  ```xml
-      {
-        "taskName": "List outputs",
-        "appliesTo": "*",
-        "type": "command",
-        "command": "${env.COMSPEC}",
-        "args": [
-          "dir ${outDir}"
-        ]
-      },
-  ```
-  Die vollständige Buildaufgabe sollte wie folgt aussehen.  
-
-  ![Beliebige Buildaufgabe](./media/VSIDE_Code_Tasks_ArbTask.png)
-
-1. Speichern Sie das Projekt.  
-
-1. Öffnen Sie das Kontextmenü für den ausgewählten Ordner. Sie sollten nun die neue beliebige Buildaufgabe sehen, die am unteren Rand im Kontextmenü angezeigt werden sollte.  
-
-  ![Beliebige Buildaufgabe, Befehl](./media/VSIDE_Code_Tasks_ArbTask2.png)
-
-1. Wählen Sie den neuen Befehl **List outputs** aus, um die Aufgabe auszuführen.  
-
-### <a name="to-create-a-custom-build-task"></a>So erstellen Sie eine benutzerdefinierte Buildaufgabe
-
-In diesem Verfahren fügen wir zwei benutzerdefinierte Buildaufgaben hinzu, die nMake verwenden, um Ihren Code zu erstellen und zu bereinigen.  
-
-1. Wählen Sie eine Datei des Projekts im Projektmappen-Explorer aus, die Sie später als Startelement festlegen möchten. Wählen Sie im Kontextmenü (Rechtsklick) der Datei **Tasks konfigurieren**.  
-
-  ![Benutzerdefinierte Buildaufgabe, Befehl](./media/VSIDE_Code_Tasks_CustTask1.png)
-
-1. Fügen Sie „tasks.vs.json“ die folgenden Buildaufgaben hinzu. In diesem Beispiel werden zwei Aufgaben hinzugefügt: eine namens „makefile-build“, die den nMake-Befehl verwendet, um das Projekt zu erstellen, die andere mit der Bezeichnung „makefile-clean“ ruft den nMake-Befehl mit dem Argument „clean“ auf. Diese Aufgaben sollten innerhalb des vorhandenen Arrays „tasks“ hinzugefügt werden. (Beachten Sie, dass dies nur Beispielbuildaufgaben sind. Damit sie tatsächlich funktionieren, muss die Arbeitsauslastung, die [nNake](/cpp/build/nmake-reference) enthält, auf Ihrem System installiert sein.)
-
-  ```xml
-  {
-  "taskName": "makefile-build",
-  "appliesTo": "makefile",
-  "type": "command",
-  "contextType": "build",
-  "command": "nmake"
-  },
-  {
-  "taskName": "makefile-clean",
-  "appliesTo": "makefile",
-  "type": "command",
-  "contextType": "clean",
-  "command": "nmake",
-  "args": [
-    "clean"
-    ]
-  },
-  ```
-  Die vollständige benutzerdefinierte Buildaufgabe sollte wie folgt aussehen.  
-
-  ![Benutzerdefinierte Buildaufgabe](./media/VSIDE_Code_Tasks_CustTask2.png)
-
-1. Speichern Sie das Projekt.  
-
-1. Öffnen Sie das Kontextmenü für die ausgewählte Datei. Die neuen benutzerdefinierten Buildaufgaben sollten in der Mitte des Kontextmenüs angezeigt werden.  
-
-  ![Benutzerdefinierte Buildaufgabe, Befehl](./media/VSIDE_Code_Tasks_CustTask3.png)
-
-  > [!NOTE]
-  > Die Befehle werden aufgrund ihrer `contextType`-Einstellungen unter dem Befehl **Tasks konfigurieren** angezeigt; „build“und „clean“ sind Buildbefehle, sodass sie im Buildabschnitt in der Mitte des Kontextmenüs angezeigt werden.  
-
-  Da Sie nun benutzerdefinierte Buildbefehle mit der Datei verknüpft haben, können Sie die Datei als Startelement festlegen.  
-
-1. Wählen Sie im Kontextmenü der Datei **Als Startelement festlegen**.  
-
-  ![Benutzerdefinierte Buildaufgabe, Befehl](./media/VSIDE_Code_Tasks_CustTask4.png)
-
-1. Wählen Sie auf der Symbolleiste den Dropdownpfeil neben der Schaltfläche „Start“. Das Startelement wird jetzt als Option angezeigt.  
-
-  ![Benutzerdefinierte Buildaufgabe, Befehl](./media/VSIDE_Code_Tasks_CustTask5.png)
-
-Sie können jetzt die Schaltfläche **Start** oder die **F5**-Taste zum Ausführen Ihrer Codebasis auswählen. Sie können Ihre Codebasis in Visual Studio bearbeiten und debuggen, auch wenn Visual Studio die Buildtools der Codebasis nicht erkennt. Die Ausgabe der Buildaufgabe wird im Fenster **Ausgabe** angezeigt, und die Buildfehler werden in der **Fehlerliste** angezeigt. Die Buildaufgabendatei „tasks.vs.json“ koppelt die innere Entwicklungschleife von Visual Studio mit den benutzerdefinierten Buildtools, die Ihre Codebasis verwendet.  
-
-Benutzerdefinierte Buildaufgaben können einzelnen Dateien oder allen Dateien eines bestimmten Typs hinzugefügt werden. NuGet-Paketdateien können z.B. mit einer „Restore Packages“-Aufgabe konfiguriert werden, oder alle Quelldateien können so konfiguriert werden, dass sie eine statische Analyseaufgabe haben, z.B. einen Linter für alle JS-Dateien.  
-
-Visual Studio unterstützt die VSCode-`$variable`-Ersetzung im Stammverzeichnis von „tasks.vs.json“, zusätzlich zu den Umgebungsvariablen (z.B. `$env.var`) oder Schlüsseln.  
-
-## <a name="specify-build-output"></a>Angeben der Buildausgabe
-
-Wenn das Projekt kompiliert werden muss, können Sie der tasks.vs.json-Datei ein zusätzliches Tag namens `output` hinzufügen. Im Folgenden ein Beispiel.  
-
-`"output": "${workspaceRoot}\\bin\\hellomake.exe"`
-
-Wenn Sie den Ausgabespeicherort angeben, weiß Visual Studio, wo die Buildausgabe des Projekts zu finden ist.  
-
-## <a name="tasksvsjson-file-location"></a>Speicherort der Datei „tasks.vs.json“
-
-Standardmäßig befindet sich die Datei „tasks.vs.json“ in einem ausgeblendeten Ordner namens `.vs`. Wählen Sie zum Anzeigen ausgeblendeter Dateien in Visual Studio die Schaltfläche **Alle Dateien anzeigen** auf der Symbolleiste des Projektmappen-Explorers.
-
-![Beliebige Buildaufgabe, Befehl](./media/VSIDE_Code_Tasks_FileLocation.png)
-
-Die Datei „tasks.vs.json“ wird ausgeblendet, da die meisten Benutzer sie in der Regel nicht in die Quellcodeverwaltung einchecken möchten. Wenn Sie jedoch die Möglichkeit haben möchten, sie in die Quellcodeverwaltung einzuchecken, ziehen Sie die Datei in das Stammverzeichnis Ihres Projekts, wo sie sichtbar ist.  
-
-Andere JSON-Dateien sind möglicherweise im VS-Ordner vorhanden, aber Sie sollten nur die Datei „tasks.vs.json“ und „launch.vs.json“ (sofern vorhanden) verschieben. Die Datei „launch.vs.json“ konfiguriert den Visual Studio-Debugger, während die Datei „tasks.vs.json“ den Build in Visual Studio konfiguriert.  
+![Schaltfläche „Start“ mit Projekt](media/customize-start-button-project.png)
 
 ## <a name="see-also"></a>Siehe auch
 
-[Writing code in the code and text editor (Schreiben von Code im Code- und Text-Editor)](../ide/writing-code-in-the-code-and-text-editor.md)
+- [Anpassen von Build- und Debugtasks](../ide/customize-build-and-debug-tasks-in-visual-studio.md)
+- [Open Folder-Projekte für C++](/cpp/ide/non-msbuild-projects)
+- [CMake-Projekte in C++](/cpp/ide/cmake-tools-for-visual-cpp)
+- [Writing code in the code and text editor (Schreiben von Code im Code- und Text-Editor)](../ide/writing-code-in-the-code-and-text-editor.md)

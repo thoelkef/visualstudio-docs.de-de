@@ -9,17 +9,18 @@ Description: Learn how to activate the technical support benefit included with y
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 39d140f83f43d6032119d4a7e84d6f1f091af707
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: 4fb6294d6d70e827bd69544fcc4f07cad72b7c5a
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="activating-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Aktivieren des Vorteils „Technischer Support“ in Visual Studio-Abonnements
 
-Beheben Sie Schwierigkeiten bei der Problemlösung in nicht im produktiven Betrieb eingesetzten Umgebungen.  (Hinweis: Vorteil muss aktiviert worden sein, bevor Sie eine Supportanforderung einreichen können.)  Bei Visual Studio Enterprise-Standardabonnements und jährlichen Cloudabonnements können vier Incidents übermittelt werden, bei Visual Studio Professional-Standardabonnements und jährlichen Cloudabonnements sind es zwei Incidents.  
+Beheben Sie Schwierigkeiten bei der Problemlösung in nicht im produktiven Betrieb eingesetzten Umgebungen.  (Der Vorteil muss aktiviert sein, bevor Sie eine Supportanfrage einreichen können.)  Bei Visual Studio Enterprise-Standardabonnements und jährlichen Cloudabonnements können vier Incidents übermittelt werden, bei Visual Studio Professional-Standardabonnements und jährlichen Cloudabonnements sind es zwei Incidents.  
 
-**Hinweis:** Nicht alle Abonnements auf einer bestimmten Ebene sind dafür berechtigt, Supportanfragen zu empfangen.  Abonnements, die über FTE, NFR, MPN, MCT und andere Programme erworben wurden, empfangen keine Supportanfragen.  Wenn Ihr Abonnement nicht dafür berechtigt ist, technische Supportanfragen zu empfangen, wird die Kachel „Technischer Support“ nicht bei Ihren verfügbaren Vorteilen angezeigt. 
+> [!NOTE]
+> Nicht alle Abonnements auf einer bestimmten Ebene sind berechtigt, Supportanfragen zu empfangen.  Abonnements, die über FTE, NFR, MPN, MCT und andere Programme erworben wurden, empfangen keine Supportanfragen.  Wenn Ihr Abonnement nicht dafür berechtigt ist, technische Supportanfragen zu empfangen, wird die Kachel „Technischer Support“ nicht bei Ihren verfügbaren Vorteilen angezeigt. 
 
    ![Kachel „Technischer Support-Vorteil“](_img\vs-tech-support\vs-tech-support-tile.png)
 
@@ -33,7 +34,8 @@ Beheben Sie Schwierigkeiten bei der Problemlösung in nicht im produktiven Betri
 
     ![Technischer Support-Vorteil: Finden der Abonnement-ID](_img\vs-tech-support\vs-tech-support-subID-cropped.png)
 
-**Hinweis:** Wählen Sie Ihr Land aus [dieser Liste](http://support.microsoft.com/activatesupport) aus, um Ihr Supportkonto für eine andere Sprache als Englisch zu aktivieren.   
+> [!NOTE]
+> Wählen Sie Ihr Land aus [dieser Liste](http://support.microsoft.com/activatesupport) aus, um Ihr Supportkonto für eine andere Sprache als Englisch zu aktivieren.   
 
 # <a name="how-to-submit-an-incident"></a>Übermitteln eines Vorfalls
 Wenn Sie Unterstützung benötigen und Ihre Vertrags-ID und Zugriffs-ID bereits eingerichtet haben, können Sie die Nummer des technischen Supports für Ihr Land anrufen, oder Sie können [online](http://support.microsoft.com/oas/) oder über das Azure-Portal eine Supportanfrage übermitteln.  Wenn Sie lieber telefonisch unterstützt werden möchten, können Sie Ihren Vorfall auch online übermitteln und anschließend von einem Microsoft-Supportmitarbeiter zurückgerufen werden.

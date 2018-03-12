@@ -7,10 +7,10 @@ ms.reviewer:
 ms.suite: 
 ms.technology:
 - devlang-python
-ms.devlang: python
+dev_langs:
+- python
 ms.tgt_pltfrm: 
 ms.topic: article
-caps.latest.revision: 
 author: kraigb
 ms.author: kraigb
 manager: ghogen
@@ -18,11 +18,11 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 44bf4e9560409b9b59f27cb0fd5b70a20ea5250b
-ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
+ms.openlocfilehash: f8ed008df50eaa2c82686e67cf47461c14d491e0
+ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="azure-cloud-service-projects-for-python"></a>Projekte für Azure-Clouddienste für Python
 
@@ -93,7 +93,7 @@ Das Skript `ConfigureCloudService.ps1` verwendet für Cloud Services `pip`, um P
 
 Clouddienstinstanzen beinhalten keine C-Compiler. Daher müssen alle Bibliotheken mit C-Erweiterungen vorkompilierte Binärdateien bereitstellen.
 
-pip und entsprechende Abhängigkeiten sowie die Pakete in `requirements.txt` werden automatisch heruntergeladen. Dies kann als fakturierbare Bandbreitennutzung gewertet werden. Unter [Verwalten von erforderlichen Paketen](managing-python-environments-in-visual-studio.md#managing-required-packages-requirementstxt) finden Sie ausführliche Informationen zum Verwalten von `requirements.txt`-Dateien.
+pip und entsprechende Abhängigkeiten sowie die Pakete in `requirements.txt` werden automatisch heruntergeladen. Dies kann als fakturierbare Bandbreitennutzung gewertet werden. Unter [Verwalten von erforderlichen Paketen](managing-required-packages-with-requirements-txt.md) finden Sie ausführliche Informationen zum Verwalten von `requirements.txt`-Dateien.
 
 ## <a name="troubleshooting"></a>Problembehandlung
 

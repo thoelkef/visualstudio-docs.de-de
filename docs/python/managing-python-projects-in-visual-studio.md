@@ -2,26 +2,26 @@
 title: "Verwalten von Projekten für Python-Anwendungen in Visual Studio | Microsoft-Dokumentation"
 description: "In diesem Artikel werden der Zweck von Projekten in Visual Studio, das Erstellen und Verwalten von Projekten für Python-Code und die verschiedenen Projektvorlagen für Python erläutert."
 ms.custom: 
-ms.date: 01/16/2018
+ms.date: 02/15/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
 - devlang-python
-ms.devlang: python
+dev_langs:
+- python
 ms.tgt_pltfrm: 
 ms.topic: article
-caps.latest.revision: 
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c1909a421cc4f80653438b2dd627aef8559005d6
-ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
+ms.openlocfilehash: 005a3a2ae46154dbf532aacefe5316aacbbaeaf7
+ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="python-projects"></a>Python-Projekte
 
@@ -40,11 +40,10 @@ Visual Studio bietet eine Vielzahl von Python-Projektvorlagen, mit der Sie schne
 >
 > Es ist einfach, ein Visual Studio-Projekt aus vorhandenem Code zu erstellen, wie unter [Erstellen eines Projekts aus vorhandenen Dateien](#creating-a-project-from-existing-files) beschrieben.
 
-Eine Einführung in Projekte mit Python in Visual Studio finden Sie im Video [Getting Python Code (Abrufen von Python-Code)](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=iLAv23LWE_3905918567) (Microsoft Virtual Academy, 2 Min. 17 Sek.).
-
-> [!VIDEO https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Getting-Python-Code-iLAv23LWE_3905918567]
-
-Sehen Sie sich auch das ältere Video [Deep Dive: Using source control with Python projects (Tieferer Einblick: Verwenden der Quellcodeverwaltung mit Python-Projekten)](https://youtu.be/Aq8eqApnugM) (youtube.com, 8 Min. 55 Sek.) an.
+|   |   |
+|---|---|
+| ![Kamerasymbol für video](../install/media/video-icon.png "Video ansehen") | [Sehen Sie sich ein Video (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Getting-Python-Code-iLAv23LWE_3905918567) mit einer Einführung in Python-Projekte an (2 Minuten, 17 Sekunden). |
+| ![Kamerasymbol für video](../install/media/video-icon.png "Video ansehen") | Sehen Sie sich auch [Deep Dive: Using source control with Python projects](https://youtu.be/Aq8eqApnugM) (Vertiefung: Verwenden der Quellcodeverwaltung mit Python-Projekten) (youtube.com, 8 Minuten und 55 Sekunden) an. |
 
 ## <a name="adding-files-assigning-a-startup-file-and-setting-environments"></a>Hinzufügen von Dateien, Zuweisen einer Startdatei und Festlegen von Umgebungen
 
@@ -55,7 +54,7 @@ Jedem Python-Projekt ist eine im Projektmappen-Explorer fett angezeigte Startdat
 > [!Tip]
 > Wenn Sie die ausgewählte Datei aus einem Projekt entfernen und keine neue auswählen, wird beim Ausführen Ihres Projekts ein Python-Ausgabefenster angezeigt, dass aber sofort wieder verschwindet. Wenn dieses Verhalten auftritt, überprüfen Sie, ob Sie eine zugewiesene Startdatei haben. Damit das Ausgabefenster in Fällen wie diesem geöffnet bleibt, klicken Sie mit der rechten Maustaste auf Ihr Projekt, wählen Sie **Eigenschaften** und dann die Registerkarte **Debuggen** aus, fügen Sie anschließend `-i` zum Feld **Interpreterargumente** hinzu. Durch dieses Argument wird der Interpreter nach Abschluss des Programms in den interaktiven Modus versetzt, und das Fenster bleibt dabei offen, bis Sie STRG + Z, EINGABETASTE zum Beenden drücken.
 
-Ein neues Projekt ist immer der standardmäßigen globalen Python-Umgebung zugeordnet. Um das Projekt einer anderen Umgebung zuzuordnen (einschließlich virtueller Umgebungen), klicken Sie mit der rechten Maustaste auf den **Python-Umgebungen**-Knoten im Projekt, wählen Sie **Python-Umgebungen hinzufügen/entfernen**, und wählen Sie die gewünschten Umgebungen. Um die aktive Umgebung zu ändern, klicken Sie mit der rechten Maustaste auf die gewünschte Umgebung, und wählen Sie **Umgebung aktivieren**, wie unten dargestellt. Weitere Informationen finden Sie unter [Python-Umgebungen](managing-python-environments-in-visual-studio.md#selecting-an-environment-for-a-project).
+Ein neues Projekt ist immer der standardmäßigen globalen Python-Umgebung zugeordnet. Um das Projekt einer anderen Umgebung zuzuordnen (einschließlich virtueller Umgebungen), klicken Sie mit der rechten Maustaste auf den Knoten **Python-Umgebungen** im Projekt, klicken Sie auf **Python-Umgebungen hinzufügen/entfernen**, und wählen Sie dann die gewünschten Umgebungen aus. Um die aktive Umgebung zu ändern, klicken Sie mit der rechten Maustaste auf die gewünschte Umgebung, und wählen Sie **Umgebung aktivieren**, wie unten dargestellt. Weitere Informationen finden Sie unter [Auswählen einer Umgebung für ein Projekt](selecting-a-python-environment-for-a-project.md).
 
 ![Aktivieren einer Umgebung für ein Python-Projekt](media/projects-activate-environment.png)
 
@@ -72,7 +71,7 @@ Die folgende Tabelle fasst die in Visual Studio 2017 verfügbaren Vorlagen zusam
 | Vorlage | description |
 | --- | --- |
 | [Aus vorhandenem Python-Code](#creating-a-project-from-existing-files) | Erstellt ein Visual Studio-Projekt aus vorhandenem Python-Code in einer Ordnerstruktur.  |
-| Python-Anwendung | Eine grundlegende Projektstruktur für eine neue Python-Anwendung mit einer einzelnen, leeren Quelldatei. Standardmäßig wird das Projekt im Konsoleninterpreter der globalen Standardumgebung ausgeführt, die Sie durch [Zuweisen einer anderen Umgebung](managing-python-environments-in-visual-studio.md#selecting-an-environment-for-a-project) ändern können. |
+| Python-Anwendung | Eine grundlegende Projektstruktur für eine neue Python-Anwendung mit einer einzelnen, leeren Quelldatei. Standardmäßig wird das Projekt im Konsoleninterpreter der globalen Standardumgebung ausgeführt, die Sie durch [Zuweisen einer anderen Umgebung](selecting-a-python-environment-for-a-project.md) ändern können. |
 | [Azure-Cloud-Dienst](python-azure-cloud-service-project-template.md) | Ein in Python geschriebenes Projekt für einen Azure-Clouddienst |
 | [Webprojekte](python-web-application-project-templates.md) | Auf verschiedenen Frameworks einschließlich Bottle, Django, Flask und Flask/Jade basierende Projekte für Webserver. |
 | IronPython-Anwendung | Ähnlich wie die Python-Anwendungsvorlage, verwendet aber IronPython durch standardmäßige Aktivierung .von NET-Interop und Debuggen im gemischten Modus mit .NET-Sprachen. |
@@ -137,7 +136,7 @@ Ein Verweis auf eine `.pyd`-Datei aktiviert IntelliSense für das generierte Mod
 
 Wenn zu einem beliebigen Zeitpunkt das Erweiterungsmodul auf dem Datenträger aktualisiert wird, analysiert Visual Studio das Modul im Hintergrund neu. Diese Aktion hat keine Auswirkung auf das Laufzeitverhalten, aber einige Vervollständigungen stehen nicht zur Verfügung, bis die Analyse abgeschlossen ist.
 
-Sie müssen dem Ordner, der das Modul enthält, möglicherweise auch einen [Suchpfad](managing-python-environments-in-visual-studio.md#search-paths) hinzufügen.
+Sie müssen dem Ordner, der das Modul enthält, möglicherweise auch einen [Suchpfad](search-paths.md) hinzufügen.
 
 ### <a name="net-projects"></a>.NET-Projekte
 

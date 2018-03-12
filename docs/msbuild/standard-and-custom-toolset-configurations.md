@@ -1,55 +1,52 @@
 ---
 title: "Standardmäßige und benutzerdefinierte Toolsetkonfigurationen | Microsoft-Dokumentation"
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 01/31/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - MSBuild, custom toolset configurations
 - MSBuild, msbuild.exe.config
 ms.assetid: 15a048c8-5ad3-448e-b6e9-e3c5d7147ed2
-caps.latest.revision: "31"
-author: kempb
-ms.author: kempb
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 8f45cf4e58da23ffc0f0470f9d47658e75723552
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 19e01346c8af84faad2ac1877091a395db3fd3ce
+ms.sourcegitcommit: f219ef323b8e1c9b61f2bfd4d3fad7e3d5fb3561
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="standard-and-custom-toolset-configurations"></a>Standardmäßige und benutzerdefinierte Toolsetkonfigurationen
 Ein MSBuild-Toolset enthält Verweise auf Aufgaben, Zielen und Tools, die Sie verwenden können, um ein Anwendungsprojekt zu erstellen. MSBuild umfasst ein Standardtoolset, Sie können jedoch auch benutzerdefinierte Toolsets erstellen. Informationen zum Angeben eines Toolsets finden Sie unter [Toolset (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md).  
   
 ## <a name="standard-toolset-configurations"></a>Standard-Toolsetkonfigurationen  
- MSBuild 12.0 umfasst die folgenden Standardtoolsets:  
+ MSBuild 15.0 umfasst die folgenden Standardtoolsets:  
   
 |ToolsVersion|Toolsetpfad (wie in der MSBuildToolsPath- oder MSBuildBinPath-Eigenschaft des Builds angegeben)|  
 |------------------|--------------------------------------------------------------------------------------------|  
 |2.0|*Windows-Installationspfad*\Microsoft.Net\Framework\v2.0.50727\|  
 |3.5|*Windows-Installationspfad*\Microsoft.NET\Framework\v3.5\|  
 |4.0|*Windows-Installationspfad*\Microsoft.NET\Framework\v4.0.30319\|  
-|12.0|*%ProgramFiles%*\MSBuild\12.0\bin|  
+|15.0|*Visual Studio-Installationspfad*\MSBuild\15.0\bin|  
   
- Der `ToolsVersion`-Wert bestimmt, welches Toolset von einem Projekt verwendet wird, das von Visual Studio generiert wird. In [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)] ist der Standardwert unabhängig von der in der Projektdatei angegebenen Version immer „12.0“. Sie können dieses Attribut jedoch mit dem **/toolsversion**-Schalter an einer Eingabeaufforderung überschreiben. Weitere Informationen über dieses Attribut und andere Methoden, `ToolsVersion` anzugeben, finden Sie unter [Überschreiben von ToolsVersion-Einstellungen](../msbuild/overriding-toolsversion-settings.md).  
+ Der `ToolsVersion`-Wert bestimmt, welches Toolset von einem Projekt verwendet wird, das von Visual Studio generiert wird. In Visual Studio 2017 ist der Standardwert unabhängig von der in der Projektdatei angegebenen Version immer „15.0“. Sie können dieses Attribut jedoch mit der Option **/toolsversion** in einer Eingabeaufforderung überschreiben. Weitere Informationen über dieses Attribut und andere Methoden, `ToolsVersion` anzugeben, finden Sie unter [Überschreiben von ToolsVersion-Einstellungen](../msbuild/overriding-toolsversion-settings.md).  
   
- Wenn `ToolsVersion` nicht angegeben ist, definiert der Registrierungsschlüssel **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\\\Versionsnummer\>\DefaultToolsVersion** die `ToolsVersion`, die immer 2.0 lautet.  
-  
- Die folgenden Registrierungsschlüssel geben den Installationspfad von MSBuild.exe an.  
+ Visual Studio 2017 verwendet keinen Registrierungsschlüssel für den Pfad zu MSBuild. In den MSBuild-Versionen vor Version 15.0, die zusammen mit Visual Studio 2017 installiert werden, geben die folgenden Registrierungsschlüssel den Installationspfad von „MSBuild.exe“ an.  
   
 |-Registrierungsschlüssel|Schlüsselname|Zeichenfolgen-Schlüsselwert|  
 |------------------|--------------|----------------------|  
 |\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\ToolsVersions\2.0\|MSBuildToolsPath|.NET Framework 2.0-Installationspfad|  
 |\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ MSBuild\ToolsVersions\3.5\|MSBuildToolsPath|.NET Framework 3.5-Installationspfad|  
 |\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ MSBuild\ToolsVersions\4.0\|MSBuildToolsPath|.NET Framework 4-Installationspfad|  
-|\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ MSBuild\ToolsVersions\12.0\|MSBuildToolsPath|MSBuild-Installationspfad|  
   
 ### <a name="sub-toolsets"></a>Unter-Toolsets  
- Wenn der Registrierungsschlüssel in der vorherigen Tabelle über einen Unterschlüssel verfügt, verwendet MSBuild diesen, um den Pfad eines Unter-Toolsets zu bestimmen, der den Pfad im übergeordneten Toolset überschreiben kann. Der folgende Unterschlüssel ist ein Beispiel:  
+ Wenn der Registrierungsschlüssel in der vorherigen Tabelle über einen Unterschlüssel verfügt, verwendet MSBuild diesen, um den Pfad eines Untertoolsets zu bestimmen, der den Pfad im übergeordneten Toolset überschreibt. Der folgende Unterschlüssel ist ein Beispiel:  
   
  \HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\ToolsVersions\12.0\12.0  
   
@@ -63,11 +60,11 @@ Ein MSBuild-Toolset enthält Verweise auf Aufgaben, Zielen und Tools, die Sie ve
 ## <a name="custom-toolset-definitions"></a>Benutzerdefinierte Toolsetdefinitionen  
  Wenn ein Standardtoolset die Buildanforderungen nicht erfüllt, können Sie ein benutzerdefiniertes Toolset erstellen. Angenommen, Sie haben ein Buildlaborszenario, in dem Sie ein eigenes System zum Erstellen von [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]-Projekten benötigen. Mit einem benutzerdefinierten Toolset können Sie dem `ToolsVersion`-Attribut beim Erstellen von Projekten oder Ausführen von „MSBuild.exe“ benutzerdefinierte Werte zuweisen. Auf diese Weise können Sie die `$(MSBuildToolsPath)`-Eigenschaft verwenden, um TARGETS-Dateien von diesem Verzeichnis zu importieren, sowie benutzerdefinierte Toolseteigenschaften definieren, die für jedes Projekt verwendet werden können, das dieses Toolset verwendet.  
   
- Geben Sie ein benutzerdefiniertes Toolset in der Konfigurationsdatei für MSBuild.exe an (oder für das benutzerdefinierte Tool, das die MSBuild-Engine hostet, wenn dies bei Ihnen zutrifft). Beispielsweise kann die Konfigurationsdatei für MSBuild.exe die folgende Toolsetdefinition enthalten, wenn Sie das Standardverhalten von ToolsVersion 12.0 überschreiben möchten.  
+ Geben Sie ein benutzerdefiniertes Toolset in der Konfigurationsdatei für MSBuild.exe an (oder für das benutzerdefinierte Tool, das die MSBuild-Engine hostet, wenn dies bei Ihnen zutrifft). Beispielsweise kann die Konfigurationsdatei für „MSBuild.exe“ die folgende Toolsetdefinition enthalten, wenn Sie das Standardverhalten von ToolsVersion 15.0 überschreiben möchten.  
   
 ```xml  
-<msbuildToolsets default="12.0">  
-   <toolset toolsVersion="12.0">  
+<msbuildToolsets default="15.0">  
+   <toolset toolsVersion="15.0">  
       <property name="MSBuildToolsPath"   
         value="C:\SpecialPath" />  
    </toolset>  
@@ -80,7 +77,7 @@ Ein MSBuild-Toolset enthält Verweise auf Aufgaben, Zielen und Tools, die Sie ve
 <configSections>  
    <section name="msbuildToolsets"         
        Type="Microsoft.Build.BuildEngine.ToolsetConfigurationSection,   
-       Microsoft.Build.Engine, Version=12.0.0.0, Culture=neutral,   
+       Microsoft.Build.Engine, Version=15.1.0.0, Culture=neutral,   
        PublicKeyToken=b03f5f7f11d50a3a"  
    </section>  
 </configSections>  

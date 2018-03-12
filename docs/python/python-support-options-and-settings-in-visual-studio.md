@@ -2,12 +2,13 @@
 title: "Optionen und Einstellungen für Python in Visual Studio | Microsoft-Dokumentation"
 description: Eine Referenz zu den verschiedenen Einstellungen in Visual Studio, die sich auf Python-Code und -Projekte beziehen.
 ms.custom: 
-ms.date: 01/04/2018
+ms.date: 02/21/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
 - devlang-python
-ms.devlang: python
+dev_langs:
+- python
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -23,11 +24,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 31d46778cd764ee841662ed6581b6b06ee66919c
-ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
+ms.openlocfilehash: 25e0540c376017bfc3f3a64d23bbc6963942bb5c
+ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="options-for-python-in-visual-studio"></a>Optionen für Python in Visual Studio
 
@@ -45,11 +46,11 @@ Darüber hinaus gibt es Python-spezifische Optionen auf der Registerkarte **Text
 | Option | Standard | description |
 | --- | --- | --- |
 | Beim Erstellen virtueller Umgebungen das Ausgabefenster anzeigen| Ein | Deaktivieren Sie diese Option, um zu verhindern, dass das Ausgabefenster angezeigt wird. |
-| Anzeigen des Ausgabefensters beim Installieren oder Löschen von Paketen | Ein |  Deaktivieren Sie diese Option, um zu verhindern, dass das Ausgabefenster angezeigt wird. |
-| "Pip" immer als Administrator ausführen | Aus | Erhöht `pip install`-Vorgänge immer in allen Umgebungen Beim Installieren von Paketen fordert Visual Studio die Eingabe von Administratorberechtigungen, wenn sich die Umgebung in einem geschützten Bereichs des Dateisystems wie z.B. `c:\Program Files` befindet. In dieser Aufforderung können Sie auswählen, dass `pip install` immer für diese eine Umgebung erhöht ist. Weitere Informationen finden Sie unter [Python-Umgebungen: Registerkarte „Pip“](managing-python-environments-in-visual-studio.md#pip-tab). |
+| Anzeigen des Ausgabefensters beim Installieren oder Löschen von Paketen | Ein | Deaktivieren Sie diese Option, um zu verhindern, dass das Ausgabefenster angezeigt wird. |
+| "Pip" immer als Administrator ausführen | Aus | Erhöht `pip install`-Vorgänge immer in allen Umgebungen Beim Installieren von Paketen fordert Visual Studio die Eingabe von Administratorberechtigungen, wenn sich die Umgebung in einem geschützten Bereichs des Dateisystems wie z.B. `c:\Program Files` befindet. In dieser Aufforderung können Sie auswählen, dass `pip install` immer für diese eine Umgebung erhöht ist. Siehe [Registerkarte „Pakete“](python-environments-window-tab-reference.md#packages-tab). |
 | Bei erster Verwendung automatisch Vervollständigungsdatenbank generieren | Ein | Damit [IntelliSense-Vervollständigungen](editing-python-code-in-visual-studio.md#intellisense) für eine Bibliothek funktionieren können, muss Visual Studio eine Vervollständigungsdatenbank generieren. Das Erstellen der Datenbank wird im Hintergrund ausgeführt, wenn eine Bibliothek installiert wird, ist aber möglicherweise noch nicht abgeschlossen, wenn Sie mit dem Schreiben von Code beginnen. Wenn diese Option ausgewählt ist, priorisiert Visual Studio die Vervollständigung von Datenbanken für eine Bibliothek, wenn Sie Code schreiben, der diese verwendet. |
-| Systemweite PYTHONPATH-Variablen ignorieren | Ein | PYTHONPATH wird standardmäßig ignoriert, weil Visual Studio eine direktere Möglichkeit bietet, Suchpfade in Umgebungen und Projekten anzugeben. Weitere Informationen finden Sie unter [Python-Umgebungen: Suchpfade](managing-python-environments-in-visual-studio.md#search-paths). |
-| Suchpfade beim Hinzufügen verknüpfter Dateien aktualisieren | Ein | Wenn diese Option festgelegt ist, werden [Suchpfade](managing-python-environments-in-visual-studio.md#search-paths) durch das Hinzufügen einer [verknüpften Datei](managing-python-projects-in-visual-studio.md#linked-files) zu einem Projekt aktualisiert, sodass IntelliSense die Inhalte des Ordners der verknüpften Datei in seine Vervollständigungsdatenbank einbeziehen kann. Deaktivieren Sie diese Option, um derartigen Inhalt aus der Vervollständigungsdatenbank auszuschließen. |
+| Systemweite PYTHONPATH-Variablen ignorieren | Ein | PYTHONPATH wird standardmäßig ignoriert, weil Visual Studio eine direktere Möglichkeit bietet, Suchpfade in Umgebungen und Projekten anzugeben. Weitere Informationen finden Sie unter [Suchpfade](search-paths.md). |
+| Suchpfade beim Hinzufügen verknüpfter Dateien aktualisieren | Ein | Wenn diese Option festgelegt ist, werden [Suchpfade](search-paths.md) durch das Hinzufügen einer [verknüpften Datei](managing-python-projects-in-visual-studio.md#linked-files) zu einem Projekt aktualisiert, sodass IntelliSense die Inhalte des Ordners der verknüpften Datei in seine Vervollständigungsdatenbank einbeziehen kann. Deaktivieren Sie diese Option, um derartigen Inhalt aus der Vervollständigungsdatenbank auszuschließen. |
 | Warnen, wenn das importierte Modul nicht gefunden wird | Ein | Deaktivieren Sie diese Option, um Warnungen zu unterdrücken, wenn Sie wissen, dass ein importiertes Modul aktuell nicht verfügbar ist, den Codevorgang aber ansonsten nicht beeinträchtigt. |
 | Inkonsistenten Einzug melden als | Warnungen | Da der Python-Interpreter stark von korrekten Einzügen abhängt, um den Umfang bestimmen zu können, sendet Visual Studio standardmäßig Warnungen, wenn es inkonsistente Einzüge erkennt, die möglicherweise auf Codierungsfehler hinweisen. Legen Sie die Option auf *Errors* (Fehler) fest, um noch strenger zu sein, damit das Programm in derartigen Fällen beendet wird. Um dieses Verhalten komplett zu deaktivieren, wählen Sie *Don‘t* (Nicht) aus. |
 | Auf Umfrage/Nachrichten überprüfen | Einmal pro Woche | Legt die Häufigkeit fest, mit der Visual Studio ein Fenster mit einer Webseite mit verfügbaren Umfragen und neuen Elementen im Zusammenhang mit Python öffnen darf. Sie können zwischen *Nie*, *Einmal am Tag*, *Einmal in der Woche* und *Einmal im Monat* wählen. |
@@ -83,7 +84,7 @@ Darüber hinaus gibt es Python-spezifische Optionen auf der Registerkarte **Text
 
 | Option | Standard | description |
 | --- | --- | --- |
-| Skripts | n/v | Gibt einen allgemeinen Ordner an, den Startskripts auf interaktive Fenster für alle Umgebungen anwenden. Weitere Informationen finden Sie unter [Startskripte](managing-python-environments-in-visual-studio.md#startup-scripts). Beachten Sie, dass diese Funktion im Moment nicht funktioniert. |
+| Skripts | n/v | Gibt einen allgemeinen Ordner an, den Startskripts auf interaktive Fenster für alle Umgebungen anwenden. Weitere Informationen finden Sie unter [Startskripte](python-environments-window-tab-reference.md#startup-scripts). Beachten Sie, dass diese Funktion im Moment nicht funktioniert. |
 | NACH-OBEN- und NACH-UNTEN-TASTEN zum Navigieren des Verlaufs | Ein | Verwenden Sie die Pfeiltasten, um durch den Verlauf im interaktiven Fenster zu Navigieren. Deaktivieren Sie diese Einstellung, um die Pfeiltasten stattdessen zum Navigieren der Ausgabe im interaktiven Fenster zu verwenden. |
 | Beendigungsmodus | Nur Ausdrücke ohne Funktionsaufrufe auswerten | Für das Bestimmen der verfügbaren Member in einem Ausdruck im interaktiven Fenster ist möglicherweise das Auswerten des aktuellen unvollständigen Ausdrucks notwendig. Dies kann Nebenwirkungen haben oder dazu führen, dass Funktionen mehrmals aufgerufen werden. Die Standardeinstellung *Nur Ausdrücke ohne Funktionsaufrufe auswerten* schließt Ausdrücke aus, die eine Funktion aufrufen, wertet aber andere Ausdrücke aus. Beispielsweise wird `a.b` ausgewertet, `a().b` aber nicht.  *Ausdrücke nie auswerten* verhindert alle Nebenwirkungen, indem nur das gängige IntelliSense-Modul für Vorschläge verwendet wird. *Alle Ausdrücke auswerten* wertet den vollständigen Ausdruck aus, um Vorschläge abzurufen, unabhängig von Nebenwirkungen. |
 | Vorschläge zur statischen Analyse ausblenden | Aus | Wenn diese Option aktiviert ist, werden nur Vorschläge angezeigt, die durch das Abrufen von Ausdrücken entstanden sind. Wenn diese Option mit der Option *Ausdrücke nie auswerten* im Beendigungsmodus kombiniert wird, werden keine brauchbaren Vervollständigungen im interaktiven Fenster angezeigt. |

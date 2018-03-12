@@ -5,24 +5,26 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-javascript
+ms.technology:
+- devlang-javascript
 ms.tgt_pltfrm: 
 ms.topic: language-reference
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
-helpviewer_keywords: JavaScript, operators
+helpviewer_keywords:
+- JavaScript, operators
 ms.assetid: aa1f6021-5419-4a2d-b7c4-2edc7844b300
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 27be497a62a21aa8dc222c96539a48f7e5d62425
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 2e99ead2f921f5247757192bcb3330aa4ebca8d7
+ms.sourcegitcommit: 873c0e1a31def013bcca1b0caa0eb0249de89bec
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="javascript-operators"></a>JavaScript-Operatoren
 In der folgenden Tabelle werden die [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]-Operatoren aufgeführt.  
@@ -65,8 +67,8 @@ In der folgenden Tabelle werden die [!INCLUDE[javascript](../../javascript/inclu
 |Erzeugt eine logische Verbindung zwischen zwei Ausdrücken.|[Logischer AND-Operator (&&)](../../javascript/reference/logical-and-operator-decrement-javascript.md)|  
 |Führt eine logische Negation für einen Ausdruck durch.|[Logischer NOT-Operator (!)](../../javascript/reference/logical-not-operator-decrement-exclpt-javascript.md)|  
 |Führt eine logische Disjunktion zweier Ausdrücke durch.|[Logisches OR-Operator (&#124; &#124;)](../../javascript/reference/logical-or-operator-decrement-javascript.md)|  
-|Dividiert den Wert einer Variablen durch den Wert eines Ausdrucks und weist den Divisionsrest der Variablen zu.|[Modulozuweisungsoperator (%=)](../../javascript/reference/modulus-assignment-operator-decrement-javascript.md)|  
-|Dividiert den Wert einer Variablen durch den Wert eines Ausdrucks und weist den Rest der Variablen zu.|[Operator Modulo (%)](../../javascript/reference/modulus-operator-decrementjavascript.md)|  
+|Dividiert den Wert einer Variablen durch den Wert eines Ausdrucks und weist den Divisionsrest der Variablen zu.|[Rest-Zuweisungsoperator (% =)](../../javascript/reference/modulus-assignment-operator-decrement-javascript.md)|  
+|Dividiert den Wert einer Variablen durch den Wert eines Ausdrucks und weist den Rest der Variablen zu.|[Restoperator (%)](../../javascript/reference/modulus-operator-decrementjavascript.md)|  
 |Multipliziert den Wert einer Variablen mit dem Wert eines Ausdrucks und weist das Ergebnis der Variablen zu.|[Multiplikationszuweisungsoperator (*=)](../../javascript/reference/multiplication-assignment-operator-decrement-equal-javascript.md)|  
 |Multipliziert zwei Zahlen miteinander.|[Multiplikationsoperator (*)](../../javascript/reference/multiplication-operator-decrement-javascript.md)|  
 |Erstellt ein neues Objekt.|[new-Operator](../../javascript/reference/new-operator-decrementjavascript.md)|  

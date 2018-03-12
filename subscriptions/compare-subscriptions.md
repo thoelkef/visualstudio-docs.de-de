@@ -9,11 +9,11 @@ Description: Compare features and benefits of Visual Studio standard and cloud s
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 0f820a0ae85bf4661f2c8a3ce244469b95c9a136
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: 72492331ed44c55da243960049f1e56d2a3e52f8
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="compare-visual-studio-subscription-options"></a>Vergleichen der Abonnementoptionen für Visual Studio
 
@@ -39,10 +39,10 @@ Egal ob Sie Student oder ein alleine arbeitender Entwickler sind, ob Sie zu eine
 
 **Programme:** Neben Standard- und Cloudabonnements bietet Microsoft auch Abonnements über verschiedene spezifische Programme an.
 
-- [Imagine:](https://imagine.microsoft.com/en-us/about) Bietet kostenlose professionelle Entwicklertools und Software für Studenten – also alles, was für das Erstellen von Spielen, Apps und Websites benötigt wird.
+- [Imagine:](https://imagine.microsoft.com/about) Bietet kostenlose professionelle Entwicklertools und Software für Studenten – also alles, was für das Erstellen von Spielen, Apps und Websites benötigt wird.
 - [BizSpark:](https://bizspark.microsoft.com/About/Offers) Kostenlose Produkte und Dienste für Start-up-Un­ter­neh­men.  BizSpark-Mitglieder haben kostenlosen Zugriff auf die gesamte Entwickler- und Testsoftware von Microsoft, einschließlich Azure, Windows, Visual Studio, Office und SQL Server. 
-- [Microsoft Partner Network (MPN):](https://partner.microsoft.com/en-us) Abhängig von der Art der Mitgliedschaft in MPN können Sie bis zu zehn Enterprise-Abonnements erhalten. 
-- [Microsoft Certified Trainer:](https://www.microsoft.com/en-us/learning/mct-certification.aspx) Für die Bereitstellung von exklusivem Zugriff auf Ressourcen, mit denen Sie Ihre Fachkenntnisse und Schulungskompetenzen ausbauen können.
+- [Microsoft Partner Network (MPN):](https://partner.microsoft.com/) Abhängig von der Art der Mitgliedschaft in MPN können Sie bis zu zehn Enterprise-Abonnements erhalten. 
+- [Microsoft Certified Trainer:](https://www.microsoft.com/learning/mct-certification.aspx) Für die Bereitstellung von exklusivem Zugriff auf Ressourcen, mit denen Sie Ihre Fachkenntnisse und Schulungskompetenzen ausbauen können. Im Fall von MCT Software & Services- und MCT Developer Software & Services-Abonnements finden Sie auf der [Microsoft Certified Trainer-Website](https://www.microsoft.com/learning/mct-certification.aspx#item-ID0EFAAAAACA) die Details zu den Rechten für den Gebrauch des Schulungsmaterials, das in Ihrem Abonnement enthalten ist. 
 
 ## <a name="visual-studio-licensing"></a>Visual Studio-Lizenzierung
 Visual Studio-Abonnements werden pro Benutzer lizenziert. Der Benutzer kann seine Programme mithilfe der Software auf einer beliebigen Anzahl von Geräten entwerfen, entwickeln, testen oder vorführen. Ein Visual Studio-Abonnement ermöglicht lizenzierten Benutzern auch das Bewerten der Software und das Simulieren von Kundenumgebungen, um Probleme der Programme zu untersuchen.
@@ -62,4 +62,4 @@ Eine Visual Studio-Abonnementlizenz bietet Benutzern außerdem die Möglichkeit,
 
 [Compare Visual Studio IDE features (Vergleichen von Visual Studio-IDE-Funktionen)](https://www.visualstudio.com/vs/compare/)
 
-Im Fall von MCT Software & Services- und MCT Developer Software & Services-Abonnements finden Sie auf der [Microsoft Certified Trainer-Website](https://www.microsoft.com/learning/en-us/mct-certification.aspx#item-ID0EFAAAAACA) die Details zu den Rechten für den Gebrauch des Schulungsmaterials, das in Ihrem Abonnement enthalten ist.  
+ 

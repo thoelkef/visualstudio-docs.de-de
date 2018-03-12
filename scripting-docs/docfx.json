@@ -43,18 +43,19 @@
             "audience": "developer",
             "ms.reviewer": "",
             "searchScope": ["Scripting"],
-            "hideScope": true
+            "hideScope": true,
+            "uhfHeaderId": "MSDocsHeader-VisualStudio"
     },
     "fileMetadata": {},
     "template": [],
     "xref": [
-      "dotnet-xref/_zip/dotnet.zip",
-      "dotnet-xref/_zip/vs.110.zip",
-      "dotnet-xref/_zip/vs.140.zip",
-      "dotnet-xref/_zip/office15.zip",
-      "dotnet-xref/_zip/missingapi.yml",
-      "dotnet-xref/_zip/msdnsmallset.yml",
-      "dotnet-xref/_zip/roslyn.yml"
+      "../dotnet-xref/_zip/dotnet.zip",
+      "../dotnet-xref/_zip/vs.110.zip",
+      "../dotnet-xref/_zip/vs.140.zip",
+      "../dotnet-xref/_zip/office15.zip",
+      "../dotnet-xref/_zip/missingapi.yml",
+      "../dotnet-xref/_zip/msdnsmallset.yml",
+      "../dotnet-xref/_zip/roslyn.yml"
     ],
     "dest": "scripting-docs"
   }

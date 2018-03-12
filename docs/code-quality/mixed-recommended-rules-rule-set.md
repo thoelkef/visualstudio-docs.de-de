@@ -4,303 +4,304 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-code-analysis
+ms.technology:
+- vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: c3186b5b-0149-4a75-826e-e3539e4e703f
-caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 44c01069539ef5b67a9f208bc89786dfd0ac40a8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 7bbfc45e481cddb9fbf07e8755a48eda403796eb
+ms.sourcegitcommit: bfa26fd7426af0d065cb2eef3d6827b5d6f7986c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/20/2018
 ---
 # <a name="mixed-recommended-rules-rule-set"></a>Regelsatz für gemischte empfohlene Mindestregeln
-Die Microsoft gemischte empfohlene Regeln konzentrieren sich auf die häufigsten und kritischsten Probleme in C++-Projekten, die die Common Language Runtime, einschließlich potenzieller Sicherheitslücken, Anwendungsabstürze und anderen wichtigen Logik- und Designfehlern unterstützen. Der Regelsatz sollte in allen benutzerdefinierten Regelsätzen enthalten sein, die Sie für Ihre C++-Projekte mit Common Language Runtime-Unterstützung erstellen. Dieser Regelsatz ist für die Konfiguration mit Visual Studio Professional Edition und höher vorgesehen.  
-  
-|Regel|Beschreibung|  
-|----------|-----------------|  
-|[C6001](../code-quality/c6001.md)|Nicht initialisierter Speicher wird verwendet|  
-|[C6011](../code-quality/c6011.md)|Dereferenzierender NULL-Zeiger|  
-|[C6029](../code-quality/c6029.md)|Verwendung von ungeprüftem Wert|  
-|[C6031](../code-quality/c6031.md)|Rückgabewert wird ignoriert|  
-|[C6053](../code-quality/c6053.md)|0 (null)-Abbruch des Aufrufs|  
-|[C6054](../code-quality/c6054.md)|0 (null) Beendigung fehlt|  
-|[C6059](../code-quality/c6059.md)|Fehlerhafte Verkettung|  
-|[C6063](../code-quality/c6063.md)|Fehlendes Zeichenfolgenargument für Formatfunktion|  
-|[C6064](../code-quality/c6064.md)|Fehlendes Ganzzahlargument für Formatfunktion|  
-|[C6066](../code-quality/c6066.md)|Fehlendes Zeigerargument für Formatfunktion|  
-|[C6067](../code-quality/c6067.md)|Fehlendes Zeichenfolgenzeigerargument für Formatfunktion|  
-|[C6101](../code-quality/c6101.md)|Rückgabe von nicht initialisiertem Speicher|  
-|[C6200](../code-quality/c6200.md)|Index überschreitet maximale Puffergröße|  
-|[C6201](../code-quality/c6201.md)|Index überschreitet maximale Puffergröße|  
-|[C6214](../code-quality/c6214.md)|Umwandlung in bool konvertiert HRESULT ist ungültig.|  
-|[C6215](../code-quality/c6215.md)|Umwandlung BOOL HRESULT ist ungültig.|  
-|[C6216](../code-quality/c6216.md)|Compilerfehler eingefügt Umwandlung ist ungültig. HRESULT BOOL|  
-|[C6217](../code-quality/c6217.md)|Ungültige HRESULT-Test mit NOT|  
-|[C6220](../code-quality/c6220.md)|Ungültige HRESULT vergleichen auf-1|  
-|[C6226](../code-quality/c6226.md)|Ungültige HRESULT Zuweisung auf-1|  
-|[C6230](../code-quality/c6230.md)|Ungültige HRESULT verwenden als boolescher Wert|  
-|[C6235](../code-quality/c6235.md)|Ungleich NULL Ganzzahlkonstante mit einem logischen- oder|  
-|[C6236](../code-quality/c6236.md)|Logische- oder mit nicht-NULL-Konstante|  
-|[C6237](../code-quality/c6237.md)|0 (null) mit logischen- und verliert Nebeneffekte|  
-|[C6242](../code-quality/c6242.md)|Lokale Entladung erzwungen|  
-|[C6248](../code-quality/c6248.md)|Null-DACL erstellen|  
-|[C6250](../code-quality/c6250.md)|Nicht freigegebene Adressdeskriptoren|  
-|[C6255](../code-quality/c6255.md)|Ungeschützte Verwendung von Alloca|  
-|[C6258](../code-quality/c6258.md)|Mit Thread beenden|  
-|[C6259](../code-quality/c6259.md)|Bitweiser Warteschlange für unzustellbare Nachrichten im Code- oder Switch|  
-|[C6260](../code-quality/c6260.md)|Verwendung von Byte arithmetische Operationen|  
-|[C6262](../code-quality/c6262.md)|Eine übermäßige Stapelverwendung|  
-|[C6263](../code-quality/c6263.md)|Verwenden von Alloca In Schleife|  
-|[C6268](../code-quality/c6268.md)|Fehlende Klammern In Umwandlung|  
-|[C6269](../code-quality/c6269.md)|Zeiger-Dereferenzierung ignoriert|  
-|[C6270](../code-quality/c6270.md)|Fehlendes Gleitkommaargument für Formatfunktion|  
-|[C6271](../code-quality/c6271.md)|Zusätzliches Argument für Formatfunktion|  
-|[C6272](../code-quality/c6272.md)|Nicht-Gleitkommaargument für Formatfunktion|  
-|[C6273](../code-quality/c6273.md)|Nicht-Ganzzahlargument für Formatfunktion|  
-|[C6274](../code-quality/c6274.md)|Nicht-Zeichenargument für Formatfunktion|  
-|[C6276](../code-quality/c6276.md)|Ungültige Zeichenfolgenumwandlung|  
-|[C6277](../code-quality/c6277.md)|Ungültiger CreateProcess-Aufruf|  
-|[C6278](../code-quality/c6278.md)|Array-neue Skalar / Delete-Konflikt|  
-|[C6279](../code-quality/c6279.md)|Skalare neue Array / Delete-Konflikt|  
-|[C6280](../code-quality/c6280.md)|Arbeitsspeicher-Allocation-Freigabe-Konflikt|  
-|[C6281](../code-quality/c6281.md)|Bitweise Beziehung Rangfolge|  
-|[C6282](../code-quality/c6282.md)|Zuweisung ersetzt Test|  
-|[C6283](../code-quality/c6283.md)|Primitive Array neue Skalar-Delete-Konflikt|  
-|[C6284](../code-quality/c6284.md)|Ungültiges Objekt-Argument für Formatfunktion|  
-|[C6285](../code-quality/c6285.md)|Logische- oder Konstanten|  
-|[C6286](../code-quality/c6286.md)|Ungleich 0 (null) logische- oder Nebeneffekte zu verlieren|  
-|[C6287](../code-quality/c6287.md)|Redundante Test|  
-|[C6288](../code-quality/c6288.md)|Gegenseitige Einschluss über logische- und "false" ist|  
-|[C6289](../code-quality/c6289.md)|Gegenseitige Ausschluss über logische- oder ist "true"|  
-|[C6290](../code-quality/c6290.md)|Logischer NOT-Operator hat Vorrang gegenüber bitweisem AND-Operator|  
-|[C6291](../code-quality/c6291.md)|Logischer NOT-Operator hat Vorrang gegenüber bitweisem OR-Operator|  
-|[C6292](../code-quality/c6292.md)|Schleife zählt vom Maximum|  
-|[C6293](../code-quality/c6293.md)|Schleife wird nach unten aus mindestens gezählt.|  
-|[C6294](../code-quality/c6294.md)|Die Schleife nie ausgeführt.|  
-|[C6295](../code-quality/c6295.md)|Endlosschleife|  
-|[C6296](../code-quality/c6296.md)|Schleife nur einmal ausgeführt.|  
-|[C6297](../code-quality/c6297.md)|Ergebnis der Verschiebung in größeren umgewandelt|  
-|[C6299](../code-quality/c6299.md)|Bitfeld, booleschen Vergleich|  
-|[C6302](../code-quality/c6302.md)|Ungültiges Zeichenfolgenargument für Formatfunktion|  
-|[C6303](../code-quality/c6303.md)|Ungültiges Zeichenfolgenargument für breite Zeichen zu Formatfunktion|  
-|[C6305](../code-quality/c6305.md)|Keine Übereinstimmung bei Größe und Count-Verwendung|  
-|[C6306](../code-quality/c6306.md)|Falscher Variablenargument-Funktionsaufruf|  
-|[C6308](../code-quality/c6308.md)|Realloc von Speicherverlusten|  
-|[C6310](../code-quality/c6310.md)|Ungültige Ausnahme Filter-Konstante|  
-|[C6312](../code-quality/c6312.md)|Ausnahme weiterhin Ausführungsschleife|  
-|[C6314](../code-quality/c6314.md)|Bitweiser- oder Rangfolge|  
-|[C6317](../code-quality/c6317.md)|Nicht Komplement|  
-|[C6318](../code-quality/c6318.md)|Ausnahme Suche fortsetzen|  
-|[C6319](../code-quality/c6319.md)|Durch Komma ignoriert|  
-|[C6324](../code-quality/c6324.md)|Zeichenfolgenkopie anstelle einer Zeichenfolge vergleichen|  
-|[C6328](../code-quality/c6328.md)|Möglicher Argumenttypenkonflikt|  
-|[C6331](../code-quality/c6331.md)|Ungültige VirtualFree-Flags|  
-|[C6332](../code-quality/c6332.md)|Ungültige VirtualFree-Parameter|  
-|[C6333](../code-quality/c6333.md)|VirtualFree ungültige Größe|  
-|[C6335](../code-quality/c6335.md)|Prozesshandle gelangen|  
-|[C6381](../code-quality/c6381.md)|Herunterfahren fehlen|  
-|[C6383](../code-quality/c6383.md)|Elementanzahl Byte-Anzahl Pufferüberlauf|  
-|[C6384](../code-quality/c6384.md)|Zeiger Größe Division|  
-|[C6385](../code-quality/c6385.md)|Leseüberlauf|  
-|[C6386](../code-quality/c6386.md)|Schreibüberlauf|  
-|[C6387](../code-quality/c6387.md)|Ungültiger Parameterwert|  
-|[C6388](../code-quality/c6388.md)|Ungültiger Parameterwert|  
-|[C6500](../code-quality/c6500.md)|Ungültige Attributeigenschaft|  
-|[C6501](../code-quality/c6501.md)|In Konflikt stehende Attributeigenschaftswerte|  
-|[C6503](../code-quality/c6503.md)|Verweise dürfen nicht NULL sein.|  
-|[C6504](../code-quality/c6504.md)|NULL auf Nichtzeiger|  
-|[C6505](../code-quality/c6505.md)|MustCheck für "void"|  
-|[C6506](../code-quality/c6506.md)|Puffergröße auf Nichtzeiger oder Array|  
-|[C6508](../code-quality/c6508.md)|Schreibzugriff auf Konstante|  
-|[C6509](../code-quality/c6509.md)|Rückgabe wurde für Vorbedingung verwendet|  
-|[C6510](../code-quality/c6510.md)|NULL für Nichtzeiger abgebrochen|  
-|[C6511](../code-quality/c6511.md)|MustCheck Muss "Ja" oder "Nein" lauten|  
-|[C6513](../code-quality/c6513.md)|Elementgröße ohne Puffergröße|  
-|[C6514](../code-quality/c6514.md)|Puffergröße übersteigt Arraygröße|  
-|[C6515](../code-quality/c6515.md)|Puffergröße auf Nichtzeiger|  
-|[C6516](../code-quality/c6516.md)|Keine Eigenschaften für Attribut|  
-|[C6517](../code-quality/c6517.md)|Zulässige Größe für nicht lesbaren Puffer|  
-|[C6518](../code-quality/c6518.md)|Schreibbare Größe für Puffer, der nicht geschrieben werden kann|  
-|[C6522](../code-quality/c6522.md)|Ungültiger Größenzeichenfolgentyp|  
-|[C6525](../code-quality/c6525.md)|Ungültiger Größenzeichenfolgenstandort|  
-|[C6527](../code-quality/c6527.md)|Ungültige Anmerkung: Die 'NeedsRelease'-Eigenschaft kann nicht für Werte des void-Typs verwendet werden.|  
-|[C6530](../code-quality/c6530.md)|Unbekannter Formatzeichenfolgenstil|  
-|[C6540](../code-quality/c6540.md)|Bei Verwendung von Attributanmerkungen für diese Funktion werden alle vorhandenen, zugehörigen __declspec-Anmerkungen ungültig|  
-|[C6551](../code-quality/c6551.md)|Ungültige Größenangabe: Ausdruck nicht analysierbar|  
-|[C6552](../code-quality/c6552.md)|Ungültiger Deref= oder Notref=: Ausdruck nicht analysierbar|  
-|[C6701](../code-quality/c6701.md)|Der Wert ist kein gültiger Yes/No/Maybe-Wert|  
-|[C6702](../code-quality/c6702.md)|Der Wert ist kein Zeichenfolgenwert|  
-|[C6703](../code-quality/c6703.md)|Der Wert ist keine Zahl|  
-|[C6704](../code-quality/c6704.md)|Unerwarteter Ausdrucksfehler der Anmerkung|  
-|[C6705](../code-quality/c6705.md)|Erwartete Anzahl von Argumenten für die Anmerkung stimmt nicht mit tatsächlicher Anzahl von Argumenten für die Anmerkung überein|  
-|[C6706](../code-quality/c6706.md)|Unerwarteter Anmerkungsfehler für Anmerkung|  
-|[C6995](../code-quality/c6995.md)|Fehler beim Speichern der XML-Protokolldatei|  
-|[C26100](../code-quality/c26100.md)|Racebedingung|  
-|[C26101](../code-quality/c26101.md)|Fehlerhafte interlocked Vorgang ordnungsgemäß zu verwenden|  
-|[C26110](../code-quality/c26110.md)|Aufrufer wegen eines Fehlers beim Sperre|  
-|[C26111](../code-quality/c26111.md)|Aufrufer wegen eines Fehlers beim Sperre|  
-|[C26112](../code-quality/c26112.md)|Aufrufer kann Sperre nicht aufnehmen.|  
-|[C26115](../code-quality/c26115.md)|Fehler beim Sperren Freigeben|  
-|[C26116](../code-quality/c26116.md)|Fehler beim Abrufen oder Sperre|  
-|[C26117](../code-quality/c26117.md)|Unheld Sperre|  
-|[C26140](../code-quality/c26140.md)|Nebenläufigkeitsfehler bei SAL-Anmerkung.|  
-|[C28020](../code-quality/c28020.md)|Der Ausdruck ist nicht an diesen Aufruf "true"|  
-|[C28021](../code-quality/c28021.md)|Der Parameter, der mit Anmerkungen versehen ist, muss ein Zeiger sein.|  
-|[C28022](../code-quality/c28022.md)|Die Funktion Klasse(n) für diese Funktion stimmen nicht überein, die Funktion Klasse(n) auf die Typedef verwendet, um es zu definieren.|  
-|[C28023](../code-quality/c28023.md)|Die Funktion zugewiesen wird, oder übergeben müssen eine _Function_class\_ Anmerkung für mindestens eine der Klassen|  
-|[C28024](../code-quality/c28024.md)|Der Funktionszeiger zugewiesen wird, ist mit der Klasse Funktion versehen, die nicht in der Liste der Funktionsparameter Klasse(n) enthalten ist.|  
-|[C28039](../code-quality/c28039.md)|Der Typ des tatsächlichen Parameters sollte genau mit dem Typ entsprechen.|  
-|[C28112](../code-quality/c28112.md)|Eine Variable, die über eine Interlocked-Funktion zugegriffen wird, muss über eine Interlocked-Funktion immer zugegriffen werden.|  
-|[C28113](../code-quality/c28113.md)|Zugreifen auf eine lokale Variable über eine Interlocked-Funktion|  
-|[C28125](../code-quality/c28125.md)|Die Funktion muss aus aufgerufen werden, innerhalb eines Try / except-block|  
-|[C28137](../code-quality/c28137.md)|Die Variable Argumentlisten muss stattdessen eine (Literale) Konstante sein.|  
-|[C28138](../code-quality/c28138.md)|Das Argument Konstante sollten stattdessen Variable sein.|  
-|[C28159](../code-quality/c28159.md)|Erwägen Sie eine andere Funktion.|  
-|[C28160](../code-quality/c28160.md)|Fehleranmerkung|  
-|[C28163](../code-quality/c28163.md)|Die Funktion sollte nie aufgerufen werden innerhalb eines Try / except-block|  
-|[C28164](../code-quality/c28164.md)|Das Argument wird an eine Funktion übergeben wird, die einen Zeiger auf ein Objekt (nicht auf einen Zeiger auf einen Zeiger) erwartet|  
-|[C28182](../code-quality/c28182.md)|Dereferenzierender NULL-Zeiger. Der Zeit enthält denselben NULL-Wert wie ein anderer Zeiger.|  
-|[C28183](../code-quality/c28183.md)|Das Argument kann einen Wert, und eine Kopie des Werts unter der Zeiger|  
-|[C28193](../code-quality/c28193.md)|Die Variable enthält einen Wert ein, der geprüft werden müssen|  
-|[C28196](../code-quality/c28196.md)|Die Anforderung wird nicht erfüllt. (Der Ausdruck wird nicht mit "True" ausgewertet.)|  
-|[C28202](../code-quality/c28202.md)|Illegaler Verweis auf nicht statischen Member|  
-|[C28203](../code-quality/c28203.md)|Mehrdeutiger Verweis auf Klassenmember.|  
-|[C28205](../code-quality/c28205.md)|_Success\_ oder _On_failure\_ wurde in einem illegalen Kontext verwendet|  
-|[C28206](../code-quality/c28206.md)|„->“ verwenden, wenn linker Operand auf eine Struktur zeigt|  
-|[C28207](../code-quality/c28207.md)|„.“ verwenden, wenn linker Operand eine Struktur ist|  
-|[C28209](../code-quality/c28209.md)|Die Deklaration für Symbol wurde eine widersprüchliche Deklaration|  
-|[C28210](../code-quality/c28210.md)|Anmerkungen für den _On_failure_-Kontext dürfen sich nicht im expliziten Vorkontext befinden.|  
-|[C28211](../code-quality/c28211.md)|Statischer Kontextname für SAL_context erwartet|  
-|[C28212](../code-quality/c28212.md)|Zeigerausdruck für Anmerkung erwartet|  
-|[C28213](../code-quality/c28213.md)|Die _Use_decl_annotations\_-Anmerkung muss ohne Änderung zum Verweisen auf eine vorherige Deklaration verwendet werden.|  
-|[C28214](../code-quality/c28214.md)|Attributparameternamen müssen p1...p9 sein.|  
-|[C28215](../code-quality/c28215.md)|Der Typefix kann nicht auf einen Parameter angewendet werden, der bereits über einen Typefix verfügt.|  
-|[C28216](../code-quality/c28216.md)|Die checkReturn-Anmerkung gilt nur für Nachbedingungen für den bestimmten Funktionsparameter.|  
-|[C28217](../code-quality/c28217.md)|Für die Funktion stimmt die Anzahl der Parameter für die Anmerkung nicht mit der in der Datei gefundenen überein|  
-|[C28218](../code-quality/c28218.md)|Für den Funktionsparameter stimmt der Parameter der Anwendung nicht mit dem in der Datei gefundenen überein|  
-|[C28219](../code-quality/c28219.md)|Member von Enumeration für den Parameter in der Anmerkung erwartet|  
-|[C28220](../code-quality/c28220.md)|Für den Parameter in der Anmerkung erwarteter Ganzzahlausdruck|  
-|[C28221](../code-quality/c28221.md)|Für den Parameter in der Anmerkung erwarteter Zeichenfolgeausdruck|  
-|[C28222](../code-quality/c28222.md)|__yes, \___no oder \___maybe für die Anmerkung erwartet|  
-|[C28223](../code-quality/c28223.md)|Erwartetes Token/Bezeichner für Anmerkung, Parameter nicht gefunden|  
-|[C28224](../code-quality/c28224.md)|Anmerkung erfordert Parameter|  
-|[C28225](../code-quality/c28225.md)|Korrekte Anzahl erforderlicher Parameter konnten in Anmerkung nicht gefunden werden|  
-|[C28226](../code-quality/c28226.md)|Anmerkung kann nicht zusätzlich ein PrimOp sein (in der aktuellen Deklaration).|  
-|[C28227](../code-quality/c28227.md)|Anmerkung kann nicht zusätzlich ein PrimOp sein (siehe vorherige Deklaration).|  
-|[C28228](../code-quality/c28228.md)|Anmerkungsparameter: Typ kann nicht in Anmerkungen verwendet werden.|  
-|[C28229](../code-quality/c28229.md)|Anmerkung unterstützt keine Parameter.|  
-|[C28230](../code-quality/c28230.md)|Der Parametertyp weist keinen Member auf.|  
-|[C28231](../code-quality/c28231.md)|Anmerkung ist nur im Array gültig.|  
-|[C28232](../code-quality/c28232.md)|Pre, post oder deref wurden auf keine Anmerkung angewendet.|  
-|[C28233](../code-quality/c28233.md)|Pre, post oder deref wurden auf einen Block angewendet.|  
-|[C28234](../code-quality/c28234.md)|_At_-Ausdruck gilt nicht für die aktuelle Funktion.|  
-|[C28235](../code-quality/c28235.md)|Die Funktion kann nicht als Anmerkung alleine stehen.|  
-|[C28236](../code-quality/c28236.md)|Die Anmerkung kann nicht in einem Ausdruck verwendet werden.|  
-|[C28237](../code-quality/c28237.md)|Die Anmerkung zum Parameter wird nicht mehr unterstützt.|  
-|[C28238](../code-quality/c28238.md)|Die Anmerkung zum Parameter verfügt über mehrere Werte vom Typ "value", "stringValue" und "longValue". Verwenden Sie paramn=xxx.|  
-|[C28239](../code-quality/c28239.md)|Für die Anmerkung zum Parameter wurden sowohl value, stringValue oder longValue sowie paramn=xxx definiert. Verwenden Sie nur paramn=xxx.|  
-|[C28240](../code-quality/c28240.md)|Die Anmerkung zum Parameter verfügt über param2, jedoch nicht über param1.|  
-|[C28241](../code-quality/c28241.md)|Die Anmerkung für die Funktion zum Parameter wird nicht erkannt.|  
-|[C28243](../code-quality/c28243.md)|Die Anmerkung für die Funktion zum Parameter erfordert eine größere Anzahl von Dereferenzierungen, als der derzeit angemerkte Typ zulässt.|  
-|[C28244](../code-quality/c28244.md)|Die Anmerkung für Funktion wurde eine nicht analysiert werden Parameter/externe-Anmerkung|  
-|[C28245](../code-quality/c28245.md)|Die Anmerkung für die Funktion merkt „this“ in einer Nicht-Member-Funktion an.|  
-|[C28246](../code-quality/c28246.md)|Die Parameteranmerkung für die Funktion stimmt nicht mit dem Parametertyp überein.|  
-|[C28250](../code-quality/c28250.md)|Inkonsistente Anmerkung für die Funktion: die vorherige Instanz weist einen Fehler auf.|  
-|[C28251](../code-quality/c28251.md)|Inkonsistente Anmerkung für die Funktion: diese Instanz weist einen Fehler auf.|  
-|[C28252](../code-quality/c28252.md)|Inkonsistente Anmerkung für die Funktion: der Parameter weist andere Anmerkungen für diese Instanz auf.|  
-|[C28253](../code-quality/c28253.md)|Inkonsistente Anmerkung für die Funktion: der Parameter weist andere Anmerkungen für diese Instanz auf.|  
-|[C28254](../code-quality/c28254.md)|dynamic_cast<>() wird in Anmerkungen nicht unterstützt.|  
-|[C28262](../code-quality/c28262.md)|Ein Syntaxfehler in der Anmerkung wurde in der Funktion für Anmerkung gefunden|  
+
+Die Microsoft gemischte empfohlene Regeln konzentrieren sich auf die häufigsten und kritischsten Probleme in C++-Projekten, die die Common Language Runtime, einschließlich potenzieller Sicherheitslücken, Anwendungsabstürze und anderen wichtigen Logik- und Designfehlern unterstützen. Der Regelsatz sollte in allen benutzerdefinierten Regelsätzen enthalten sein, die Sie für Ihre C++-Projekte mit Common Language Runtime-Unterstützung erstellen.
+
+|Regel|Beschreibung|
+|----------|-----------------|
+|[C6001](../code-quality/c6001.md)|Nicht initialisierter Speicher wird verwendet|
+|[C6011](../code-quality/c6011.md)|Dereferenzierender NULL-Zeiger|
+|[C6029](../code-quality/c6029.md)|Verwendung von ungeprüftem Wert|
+|[C6031](../code-quality/c6031.md)|Rückgabewert wird ignoriert|
+|[C6053](../code-quality/c6053.md)|0 (null)-Abbruch des Aufrufs|
+|[C6054](../code-quality/c6054.md)|0 (null) Beendigung fehlt|
+|[C6059](../code-quality/c6059.md)|Fehlerhafte Verkettung|
+|[C6063](../code-quality/c6063.md)|Fehlendes Zeichenfolgenargument für Formatfunktion|
+|[C6064](../code-quality/c6064.md)|Fehlendes Ganzzahlargument für Formatfunktion|
+|[C6066](../code-quality/c6066.md)|Fehlendes Zeigerargument für Formatfunktion|
+|[C6067](../code-quality/c6067.md)|Fehlendes Zeichenfolgenzeigerargument für Formatfunktion|
+|[C6101](../code-quality/c6101.md)|Rückgabe von nicht initialisiertem Speicher|
+|[C6200](../code-quality/c6200.md)|Index überschreitet maximale Puffergröße|
+|[C6201](../code-quality/c6201.md)|Index überschreitet maximale Puffergröße|
+|[C6214](../code-quality/c6214.md)|Umwandlung in bool konvertiert HRESULT ist ungültig.|
+|[C6215](../code-quality/c6215.md)|Umwandlung BOOL HRESULT ist ungültig.|
+|[C6216](../code-quality/c6216.md)|Compilerfehler eingefügt Umwandlung ist ungültig. HRESULT BOOL|
+|[C6217](../code-quality/c6217.md)|Ungültige HRESULT-Test mit NOT|
+|[C6220](../code-quality/c6220.md)|Ungültige HRESULT vergleichen auf-1|
+|[C6226](../code-quality/c6226.md)|Ungültige HRESULT Zuweisung auf-1|
+|[C6230](../code-quality/c6230.md)|Ungültige HRESULT verwenden als boolescher Wert|
+|[C6235](../code-quality/c6235.md)|Ungleich NULL Ganzzahlkonstante mit einem logischen- oder|
+|[C6236](../code-quality/c6236.md)|Logische- oder mit nicht-NULL-Konstante|
+|[C6237](../code-quality/c6237.md)|0 (null) mit logischen- und verliert Nebeneffekte|
+|[C6242](../code-quality/c6242.md)|Lokale Entladung erzwungen|
+|[C6248](../code-quality/c6248.md)|Null-DACL erstellen|
+|[C6250](../code-quality/c6250.md)|Nicht freigegebene Adressdeskriptoren|
+|[C6255](../code-quality/c6255.md)|Ungeschützte Verwendung von Alloca|
+|[C6258](../code-quality/c6258.md)|Mit Thread beenden|
+|[C6259](../code-quality/c6259.md)|Bitweiser Warteschlange für unzustellbare Nachrichten im Code- oder Switch|
+|[C6260](../code-quality/c6260.md)|Verwendung von Byte arithmetische Operationen|
+|[C6262](../code-quality/c6262.md)|Eine übermäßige Stapelverwendung|
+|[C6263](../code-quality/c6263.md)|Verwenden von Alloca In Schleife|
+|[C6268](../code-quality/c6268.md)|Fehlende Klammern In Umwandlung|
+|[C6269](../code-quality/c6269.md)|Zeiger-Dereferenzierung ignoriert|
+|[C6270](../code-quality/c6270.md)|Fehlendes Gleitkommaargument für Formatfunktion|
+|[C6271](../code-quality/c6271.md)|Zusätzliches Argument für Formatfunktion|
+|[C6272](../code-quality/c6272.md)|Nicht-Gleitkommaargument für Formatfunktion|
+|[C6273](../code-quality/c6273.md)|Nicht-Ganzzahlargument für Formatfunktion|
+|[C6274](../code-quality/c6274.md)|Nicht-Zeichenargument für Formatfunktion|
+|[C6276](../code-quality/c6276.md)|Ungültige Zeichenfolgenumwandlung|
+|[C6277](../code-quality/c6277.md)|Ungültiger CreateProcess-Aufruf|
+|[C6278](../code-quality/c6278.md)|Array-neue Skalar / Delete-Konflikt|
+|[C6279](../code-quality/c6279.md)|Skalare neue Array / Delete-Konflikt|
+|[C6280](../code-quality/c6280.md)|Arbeitsspeicher-Allocation-Freigabe-Konflikt|
+|[C6281](../code-quality/c6281.md)|Bitweise Beziehung Rangfolge|
+|[C6282](../code-quality/c6282.md)|Zuweisung ersetzt Test|
+|[C6283](../code-quality/c6283.md)|Primitive Array neue Skalar-Delete-Konflikt|
+|[C6284](../code-quality/c6284.md)|Ungültiges Objekt-Argument für Formatfunktion|
+|[C6285](../code-quality/c6285.md)|Logische- oder Konstanten|
+|[C6286](../code-quality/c6286.md)|Ungleich 0 (null) logische- oder Nebeneffekte zu verlieren|
+|[C6287](../code-quality/c6287.md)|Redundante Test|
+|[C6288](../code-quality/c6288.md)|Gegenseitige Einschluss über logische- und "false" ist|
+|[C6289](../code-quality/c6289.md)|Gegenseitige Ausschluss über logische- oder ist "true"|
+|[C6290](../code-quality/c6290.md)|Logischer NOT-Operator hat Vorrang gegenüber bitweisem AND-Operator|
+|[C6291](../code-quality/c6291.md)|Logischer NOT-Operator hat Vorrang gegenüber bitweisem OR-Operator|
+|[C6292](../code-quality/c6292.md)|Schleife zählt vom Maximum|
+|[C6293](../code-quality/c6293.md)|Schleife wird nach unten aus mindestens gezählt.|
+|[C6294](../code-quality/c6294.md)|Loop Body Never Executed|
+|[C6295](../code-quality/c6295.md)|Endlosschleife|
+|[C6296](../code-quality/c6296.md)|Schleife nur einmal ausgeführt.|
+|[C6297](../code-quality/c6297.md)|Ergebnis der Verschiebung in größeren umgewandelt|
+|[C6299](../code-quality/c6299.md)|Bitfeld, booleschen Vergleich|
+|[C6302](../code-quality/c6302.md)|Ungültiges Zeichenfolgenargument für Formatfunktion|
+|[C6303](../code-quality/c6303.md)|Ungültiges Zeichenfolgenargument für breite Zeichen zu Formatfunktion|
+|[C6305](../code-quality/c6305.md)|Keine Übereinstimmung bei Größe und Count-Verwendung|
+|[C6306](../code-quality/c6306.md)|Falscher Variablenargument-Funktionsaufruf|
+|[C6308](../code-quality/c6308.md)|Realloc von Speicherverlusten|
+|[C6310](../code-quality/c6310.md)|Ungültige Ausnahme Filter-Konstante|
+|[C6312](../code-quality/c6312.md)|Ausnahme weiterhin Ausführungsschleife|
+|[C6314](../code-quality/c6314.md)|Bitweiser- oder Rangfolge|
+|[C6317](../code-quality/c6317.md)|Nicht Komplement|
+|[C6318](../code-quality/c6318.md)|Ausnahme Suche fortsetzen|
+|[C6319](../code-quality/c6319.md)|Durch Komma ignoriert|
+|[C6324](../code-quality/c6324.md)|Zeichenfolgenkopie anstelle einer Zeichenfolge vergleichen|
+|[C6328](../code-quality/c6328.md)|Möglicher Argumenttypenkonflikt|
+|[C6331](../code-quality/c6331.md)|Ungültige VirtualFree-Flags|
+|[C6332](../code-quality/c6332.md)|Ungültige VirtualFree-Parameter|
+|[C6333](../code-quality/c6333.md)|VirtualFree ungültige Größe|
+|[C6335](../code-quality/c6335.md)|Prozesshandle gelangen|
+|[C6381](../code-quality/c6381.md)|Herunterfahren fehlen|
+|[C6383](../code-quality/c6383.md)|Elementanzahl Byte-Anzahl Pufferüberlauf|
+|[C6384](../code-quality/c6384.md)|Zeiger Größe Division|
+|[C6385](../code-quality/c6385.md)|Leseüberlauf|
+|[C6386](../code-quality/c6386.md)|Schreibüberlauf|
+|[C6387](../code-quality/c6387.md)|Ungültiger Parameterwert|
+|[C6388](../code-quality/c6388.md)|Ungültiger Parameterwert|
+|[C6500](../code-quality/c6500.md)|Ungültige Attributeigenschaft|
+|[C6501](../code-quality/c6501.md)|In Konflikt stehende Attributeigenschaftswerte|
+|[C6503](../code-quality/c6503.md)|Verweise dürfen nicht NULL sein.|
+|[C6504](../code-quality/c6504.md)|NULL auf Nichtzeiger|
+|[C6505](../code-quality/c6505.md)|MustCheck für "void"|
+|[C6506](../code-quality/c6506.md)|Puffergröße auf Nichtzeiger oder Array|
+|[C6508](../code-quality/c6508.md)|Schreibzugriff auf Konstante|
+|[C6509](../code-quality/c6509.md)|Rückgabe wurde für Vorbedingung verwendet|
+|[C6510](../code-quality/c6510.md)|NULL für Nichtzeiger abgebrochen|
+|[C6511](../code-quality/c6511.md)|MustCheck Muss "Ja" oder "Nein" lauten|
+|[C6513](../code-quality/c6513.md)|Elementgröße ohne Puffergröße|
+|[C6514](../code-quality/c6514.md)|Puffergröße übersteigt Arraygröße|
+|[C6515](../code-quality/c6515.md)|Puffergröße auf Nichtzeiger|
+|[C6516](../code-quality/c6516.md)|Keine Eigenschaften für Attribut|
+|[C6517](../code-quality/c6517.md)|Zulässige Größe für nicht lesbaren Puffer|
+|[C6518](../code-quality/c6518.md)|Schreibbare Größe für Puffer, der nicht geschrieben werden kann|
+|[C6522](../code-quality/c6522.md)|Ungültiger Größenzeichenfolgentyp|
+|[C6525](../code-quality/c6525.md)|Ungültiger Größenzeichenfolgenstandort|
+|[C6527](../code-quality/c6527.md)|Ungültige Anmerkung: Die 'NeedsRelease'-Eigenschaft kann nicht für Werte des void-Typs verwendet werden.|
+|[C6530](../code-quality/c6530.md)|Unbekannter Formatzeichenfolgenstil|
+|[C6540](../code-quality/c6540.md)|Bei Verwendung von Attributanmerkungen für diese Funktion werden alle vorhandenen, zugehörigen __declspec-Anmerkungen ungültig|
+|[C6551](../code-quality/c6551.md)|Ungültige Größenangabe: Ausdruck nicht analysierbar|
+|[C6552](../code-quality/c6552.md)|Ungültiger Deref= oder Notref=: Ausdruck nicht analysierbar|
+|[C6701](../code-quality/c6701.md)|Der Wert ist kein gültiger Yes/No/Maybe-Wert|
+|[C6702](../code-quality/c6702.md)|Der Wert ist kein Zeichenfolgenwert|
+|[C6703](../code-quality/c6703.md)|Der Wert ist keine Zahl|
+|[C6704](../code-quality/c6704.md)|Unerwarteter Ausdrucksfehler der Anmerkung|
+|[C6705](../code-quality/c6705.md)|Erwartete Anzahl von Argumenten für die Anmerkung stimmt nicht mit tatsächlicher Anzahl von Argumenten für die Anmerkung überein|
+|[C6706](../code-quality/c6706.md)|Unerwarteter Anmerkungsfehler für Anmerkung|
+|[C6995](../code-quality/c6995.md)|Fehler beim Speichern der XML-Protokolldatei|
+|[C26100](../code-quality/c26100.md)|Racebedingung|
+|[C26101](../code-quality/c26101.md)|Fehlerhafte interlocked Vorgang ordnungsgemäß zu verwenden|
+|[C26110](../code-quality/c26110.md)|Aufrufer wegen eines Fehlers beim Sperre|
+|[C26111](../code-quality/c26111.md)|Aufrufer wegen eines Fehlers beim Sperre|
+|[C26112](../code-quality/c26112.md)|Aufrufer kann Sperre nicht aufnehmen.|
+|[C26115](../code-quality/c26115.md)|Fehler beim Sperren Freigeben|
+|[C26116](../code-quality/c26116.md)|Fehler beim Abrufen oder Sperre|
+|[C26117](../code-quality/c26117.md)|Unheld Sperre|
+|[C26140](../code-quality/c26140.md)|Nebenläufigkeitsfehler bei SAL-Anmerkung.|
+|[C28020](../code-quality/c28020.md)|Der Ausdruck ist nicht an diesen Aufruf "true"|
+|[C28021](../code-quality/c28021.md)|Der Parameter, der mit Anmerkungen versehen ist, muss ein Zeiger sein.|
+|[C28022](../code-quality/c28022.md)|Die Funktion Klasse(n) für diese Funktion stimmen nicht überein, die Funktion Klasse(n) auf die Typedef verwendet, um es zu definieren.|
+|[C28023](../code-quality/c28023.md)|Die Funktion zugewiesen wird, oder übergeben müssen eine _Function_class\_ Anmerkung für mindestens eine der Klassen|
+|[C28024](../code-quality/c28024.md)|Der Funktionszeiger zugewiesen wird, ist mit der Klasse Funktion versehen, die nicht in der Liste der Funktionsparameter Klasse(n) enthalten ist.|
+|[C28039](../code-quality/c28039.md)|Der Typ des tatsächlichen Parameters sollte genau mit dem Typ entsprechen.|
+|[C28112](../code-quality/c28112.md)|Eine Variable, die über eine Interlocked-Funktion zugegriffen wird, muss über eine Interlocked-Funktion immer zugegriffen werden.|
+|[C28113](../code-quality/c28113.md)|Zugreifen auf eine lokale Variable über eine Interlocked-Funktion|
+|[C28125](../code-quality/c28125.md)|Die Funktion muss aus aufgerufen werden, innerhalb eines Try / except-block|
+|[C28137](../code-quality/c28137.md)|Die Variable Argumentlisten muss stattdessen eine (Literale) Konstante sein.|
+|[C28138](../code-quality/c28138.md)|Das Argument Konstante sollten stattdessen Variable sein.|
+|[C28159](../code-quality/c28159.md)|Erwägen Sie eine andere Funktion.|
+|[C28160](../code-quality/c28160.md)|Fehleranmerkung|
+|[C28163](../code-quality/c28163.md)|Die Funktion sollte nie aufgerufen werden innerhalb eines Try / except-block|
+|[C28164](../code-quality/c28164.md)|Das Argument wird an eine Funktion übergeben wird, die einen Zeiger auf ein Objekt (nicht auf einen Zeiger auf einen Zeiger) erwartet|
+|[C28182](../code-quality/c28182.md)|Dereferenzierender NULL-Zeiger. Der Zeit enthält denselben NULL-Wert wie ein anderer Zeiger.|
+|[C28183](../code-quality/c28183.md)|Das Argument kann einen Wert, und eine Kopie des Werts unter der Zeiger|
+|[C28193](../code-quality/c28193.md)|Die Variable enthält einen Wert ein, der geprüft werden müssen|
+|[C28196](../code-quality/c28196.md)|Die Anforderung wird nicht erfüllt. (Der Ausdruck wird nicht mit "True" ausgewertet.)|
+|[C28202](../code-quality/c28202.md)|Illegaler Verweis auf nicht statischen Member|
+|[C28203](../code-quality/c28203.md)|Mehrdeutiger Verweis auf Klassenmember.|
+|[C28205](../code-quality/c28205.md)|_Success\_ oder _On_failure\_ wurde in einem illegalen Kontext verwendet|
+|[C28206](../code-quality/c28206.md)|„->“ verwenden, wenn linker Operand auf eine Struktur zeigt|
+|[C28207](../code-quality/c28207.md)|„.“ verwenden, wenn linker Operand eine Struktur ist|
+|[C28209](../code-quality/c28209.md)|Die Deklaration für Symbol wurde eine widersprüchliche Deklaration|
+|[C28210](../code-quality/c28210.md)|Anmerkungen für den _On_failure_-Kontext dürfen sich nicht im expliziten Vorkontext befinden.|
+|[C28211](../code-quality/c28211.md)|Statischer Kontextname für SAL_context erwartet|
+|[C28212](../code-quality/c28212.md)|Zeigerausdruck für Anmerkung erwartet|
+|[C28213](../code-quality/c28213.md)|Die _Use_decl_annotations\_-Anmerkung muss ohne Änderung zum Verweisen auf eine vorherige Deklaration verwendet werden.|
+|[C28214](../code-quality/c28214.md)|Attributparameternamen müssen p1...p9 sein.|
+|[C28215](../code-quality/c28215.md)|Der Typefix kann nicht auf einen Parameter angewendet werden, der bereits über einen Typefix verfügt.|
+|[C28216](../code-quality/c28216.md)|Die checkReturn-Anmerkung gilt nur für Nachbedingungen für den bestimmten Funktionsparameter.|
+|[C28217](../code-quality/c28217.md)|Für die Funktion stimmt die Anzahl der Parameter für die Anmerkung nicht mit der in der Datei gefundenen überein|
+|[C28218](../code-quality/c28218.md)|Für den Funktionsparameter stimmt die Anmerkung Parameter nicht, die in der Datei gefundenen überein|
+|[C28219](../code-quality/c28219.md)|Member von Enumeration für den Parameter in der Anmerkung erwartet|
+|[C28220](../code-quality/c28220.md)|Für den Parameter in der Anmerkung erwarteter Ganzzahlausdruck|
+|[C28221](../code-quality/c28221.md)|Für den Parameter in der Anmerkung erwarteter Zeichenfolgeausdruck|
+|[C28222](../code-quality/c28222.md)|__yes, \___no oder \___maybe für die Anmerkung erwartet|
+|[C28223](../code-quality/c28223.md)|Erwartetes Token/Bezeichner für Anmerkung, Parameter nicht gefunden|
+|[C28224](../code-quality/c28224.md)|Anmerkung erfordert Parameter|
+|[C28225](../code-quality/c28225.md)|Korrekte Anzahl erforderlicher Parameter konnten in Anmerkung nicht gefunden werden|
+|[C28226](../code-quality/c28226.md)|Anmerkung kann nicht zusätzlich ein PrimOp sein (in der aktuellen Deklaration).|
+|[C28227](../code-quality/c28227.md)|Anmerkung kann nicht zusätzlich ein PrimOp sein (siehe vorherige Deklaration).|
+|[C28228](../code-quality/c28228.md)|Anmerkungsparameter: Typ kann nicht in Anmerkungen verwendet werden.|
+|[C28229](../code-quality/c28229.md)|Anmerkung unterstützt keine Parameter.|
+|[C28230](../code-quality/c28230.md)|Der Parametertyp weist keinen Member auf.|
+|[C28231](../code-quality/c28231.md)|Anmerkung ist nur im Array gültig.|
+|[C28232](../code-quality/c28232.md)|Pre, post oder deref wurden auf keine Anmerkung angewendet.|
+|[C28233](../code-quality/c28233.md)|Pre, post oder deref wurden auf einen Block angewendet.|
+|[C28234](../code-quality/c28234.md)|_At_-Ausdruck gilt nicht für die aktuelle Funktion.|
+|[C28235](../code-quality/c28235.md)|Die Funktion kann nicht als Anmerkung alleine stehen.|
+|[C28236](../code-quality/c28236.md)|Die Anmerkung kann nicht in einem Ausdruck verwendet werden.|
+|[C28237](../code-quality/c28237.md)|Die Anmerkung zum Parameter wird nicht mehr unterstützt.|
+|[C28238](../code-quality/c28238.md)|Die Anmerkung zum Parameter verfügt über mehrere Werte vom Typ "value", "stringValue" und "longValue". Verwenden Sie paramn=xxx.|
+|[C28239](../code-quality/c28239.md)|Für die Anmerkung zum Parameter wurden sowohl value, stringValue oder longValue sowie paramn=xxx definiert. Verwenden Sie nur paramn=xxx.|
+|[C28240](../code-quality/c28240.md)|Die Anmerkung zum Parameter verfügt über param2, jedoch nicht über param1.|
+|[C28241](../code-quality/c28241.md)|Die Anmerkung für die Funktion zum Parameter wird nicht erkannt.|
+|[C28243](../code-quality/c28243.md)|Die Anmerkung für die Funktion zum Parameter erfordert eine größere Anzahl von Dereferenzierungen, als der derzeit angemerkte Typ zulässt.|
+|[C28244](../code-quality/c28244.md)|Die Anmerkung für Funktion wurde eine nicht analysierbares Parameter/externe-Anmerkung|
+|[C28245](../code-quality/c28245.md)|Die Anmerkung für die Funktion merkt „this“ in einer Nicht-Member-Funktion an.|
+|[C28246](../code-quality/c28246.md)|Die Parameteranmerkung für die Funktion stimmt nicht mit dem Parametertyp überein.|
+|[C28250](../code-quality/c28250.md)|Inkonsistente Anmerkung für die Funktion: die vorherige Instanz weist einen Fehler auf.|
+|[C28251](../code-quality/c28251.md)|Inkonsistente Anmerkung für die Funktion: diese Instanz weist einen Fehler auf.|
+|[C28252](../code-quality/c28252.md)|Inkonsistente Anmerkung für die Funktion: der Parameter weist andere Anmerkungen für diese Instanz auf.|
+|[C28253](../code-quality/c28253.md)|Inkonsistente Anmerkung für die Funktion: der Parameter weist andere Anmerkungen für diese Instanz auf.|
+|[C28254](../code-quality/c28254.md)|dynamic_cast<>() wird in Anmerkungen nicht unterstützt.|
+|[C28262](../code-quality/c28262.md)|Ein Syntaxfehler in der Anmerkung wurde in der Funktion für Anmerkung gefunden|
 |[C28263](../code-quality/c28263.md)|Ein Syntaxfehler in einer bedingten Anmerkung wurde gefunden für systeminterne Anmerkung| 
-|[C28267](../code-quality/c28267.md)|Ein Syntaxfehler in den Anmerkungen wurde in Anmerkung in der Funktion gefunden.|  
-|[C28272](../code-quality/c28272.md)|Die Anmerkung für Funktion, Parameter, beim Untersuchen von ist inkonsistent mit der Funktionsdeklaration.|  
-|[C28273](../code-quality/c28273.md)|Für Funktion sind die Hinweise inkonsistent mit der Funktionsdeklaration.|  
-|[C28275](../code-quality/c28275.md)|Der Parameter für _Macro_value\_ ist NULL|  
-|[C28279](../code-quality/c28279.md)|Für Symbol wurde ein 'begin' ohne zugehöriges 'end' gefunden.|  
-|[C28280](../code-quality/c28280.md)|Für Symbol wurde ein 'end' ohne zugehöriges 'begin' gefunden.|  
-|[C28282](../code-quality/c28282.md)|Formatzeichenfolgen müssen sich in Vorbedingungen befinden|  
-|[C28285](../code-quality/c28285.md)|Syntaxfehler im Parameter für Funktion|  
-|[C28286](../code-quality/c28286.md)|Für Funktion wurde ein Syntaxfehler gegen Ende gefunden.|  
-|[C28287](../code-quality/c28287.md)|Für Funktion Syntaxfehler in _At\_()-Anmerkung (unbekannter Parametername)|  
-|[C28288](../code-quality/c28288.md)|Für Funktion Syntaxfehler in _At\_()-Anmerkung (ungültiger Parametername)|  
-|[C28289](../code-quality/c28289.md)|Für Funktion: ReadableTo oder WritableTo enthielt keine Begrenzungsangabe als Parameter.|  
-|[C28290](../code-quality/c28290.md)|Die Anmerkung für Funktion enthält mehr Externe als die tatsächliche Anzahl von Parametern.|  
-|[C28291](../code-quality/c28291.md)|Post null/notnull auf deref-Ebene 0 ist ohne Bedeutung für Funktion.|  
-|[C28300](../code-quality/c28300.md)|Ausdrucksoperanden von inkompatiblen Typen für Operator|  
-|[C28301](../code-quality/c28301.md)|Keine Anmerkungen für die erste Deklaration der Funktion.|  
-|[C28302](../code-quality/c28302.md)|Ein zusätzlicher _Deref\_-Operator wurde in der Anmerkung gefunden.|  
-|[C28303](../code-quality/c28303.md)|Ein mehrdeutiger _Deref\_-Operator wurde in der Anmerkung gefunden.|  
-|[C28304](../code-quality/c28304.md)|Ein falsch platzierter _Notref\_-Operator wurde gefunden, der auf das Token angewendet wird.|  
-|[C28305](../code-quality/c28305.md)|Fehler beim Analysieren eines Token.|  
-|[C28306](../code-quality/c28306.md)|Die Anmerkung zum Parameter wird obsolescent|  
-|[C28307](../code-quality/c28307.md)|Die Anmerkung zum Parameter wird obsolescent|  
-|[C28350](../code-quality/c28350.md)|Die Anmerkung beschreibt eine Situation, die nicht bedingt anwendbar ist.|  
-|[C28351](../code-quality/c28351.md)|Die Anmerkung beschreibt, wo ein dynamischer Wert (eine Variable) in der Bedingung nicht verwendet werden darf.|  
-|[CA1001](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)|Typen, die löschbare Felder besitzen, müssen gelöscht werden können|  
-|[CA1009](../code-quality/ca1009-declare-event-handlers-correctly.md)|Ereignishandler korrekt deklarieren|  
-|[CA1016](../code-quality/ca1016-mark-assemblies-with-assemblyversionattribute.md)|Assemblys mit AssemblyVersionAttribute markieren|  
-|[CA1033](../code-quality/ca1033-interface-methods-should-be-callable-by-child-types.md)|Schnittstellenmethoden sollten von untergeordneten Typen aufgerufen werden können.|  
-|[CA1049](../code-quality/ca1049-types-that-own-native-resources-should-be-disposable.md)|Typen, die systemeigene Ressourcen besitzen, müssen gelöscht werden können|  
-|[CA1060](../code-quality/ca1060-move-p-invokes-to-nativemethods-class.md)|Verschieben von P/Invokes in NativeMethods-Klasse|  
-|[CA1061](../code-quality/ca1061-do-not-hide-base-class-methods.md)|Basisklassenmethoden nicht ausblenden|  
-|[CA1063](../code-quality/ca1063-implement-idisposable-correctly.md)|IDisposable korrekt implementieren|  
-|[CA1065](../code-quality/ca1065-do-not-raise-exceptions-in-unexpected-locations.md)|Keine Ausnahmen an unerwarteten Speicherorten auslösen|  
-|[CA1301](../code-quality/ca1301-avoid-duplicate-accelerators.md)|Doppelte Zugriffstasten vermeiden|  
-|[CA1400](../code-quality/ca1400-p-invoke-entry-points-should-exist.md)|P/Invoke-Einstiegspunkte vorhanden sein|  
-|[CA1401](../code-quality/ca1401-p-invokes-should-not-be-visible.md)|P/Invokes dürfen nicht sichtbar sein.|  
-|[CA1403](../code-quality/ca1403-auto-layout-types-should-not-be-com-visible.md)|Typen mit automatischem Layout sollten nicht für COM sichtbar sein|  
-|[CA1404](../code-quality/ca1404-call-getlasterror-immediately-after-p-invoke.md)|Rufen Sie GetLastError unmittelbar nach P/Invoke aufrufen|  
-|[CA1405](../code-quality/ca1405-com-visible-type-base-types-should-be-com-visible.md)|COM sichtbare Basistypen sollten für COM sichtbar sein|  
-|[CA1410](../code-quality/ca1410-com-registration-methods-should-be-matched.md)|COM-Registrierungsmethoden müssen übereinstimmen|  
-|[CA1415](../code-quality/ca1415-declare-p-invokes-correctly.md)|P/Invokes korrekt deklarieren|  
-|[CA1821](../code-quality/ca1821-remove-empty-finalizers.md)|Leere Finalizer entfernen|  
-|[CA1900](../code-quality/ca1900-value-type-fields-should-be-portable.md)|Werttypfelder sollten portabel sein.|  
-|[CA1901](../code-quality/ca1901-p-invoke-declarations-should-be-portable.md)|Deklarationen von P/Invoke müssen portabel sein|  
-|[CA2002](../code-quality/ca2002-do-not-lock-on-objects-with-weak-identity.md)|Auf Objekten mit schwacher Identität nicht sperren|  
-|[CA2100](../code-quality/ca2100-review-sql-queries-for-security-vulnerabilities.md)|Überprüfen Sie die SQL-Abfragen für Sicherheitsrisiken|  
-|[CA2101](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md)|Festlegen Sie Marshalling für P/Invoke-Zeichenfolgenargumente|  
-|[CA2108](../code-quality/ca2108-review-declarative-security-on-value-types.md)|Deklarative Sicherheit auf Werttypen überprüfen|  
-|[CA2111](../code-quality/ca2111-pointers-should-not-be-visible.md)|Zeiger sollten nicht sichtbar sein.|  
-|[CA2112](../code-quality/ca2112-secured-types-should-not-expose-fields.md)|Gesicherte Typen sollten keine Felder verfügbar machen.|  
-|[CA2114](../code-quality/ca2114-method-security-should-be-a-superset-of-type.md)|Methodensicherheit sollte Superset des Typs sein.|  
-|[CA2116](../code-quality/ca2116-aptca-methods-should-only-call-aptca-methods.md)|APTCA-Methoden sollten nur APTCA-Methoden aufrufen.|  
-|[CA2117](../code-quality/ca2117-aptca-types-should-only-extend-aptca-base-types.md)|APTCA-Typen sollten nur APTCA-Basistypen erweitern.|  
-|[CA2122](../code-quality/ca2122-do-not-indirectly-expose-methods-with-link-demands.md)|Methoden mit Linkaufrufen nicht indirekt verfügbar machen|  
-|[CA2123](../code-quality/ca2123-override-link-demands-should-be-identical-to-base.md)|Überschreibungslinkaufrufe sollten mit der Basis identisch sein.|  
-|[CA2124](../code-quality/ca2124-wrap-vulnerable-finally-clauses-in-outer-try.md)|Umschließen anfällige finally-Klauseln mit äußerem|  
-|[CA2126](../code-quality/ca2126-type-link-demands-require-inheritance-demands.md)|Typlinkaufrufe erfordern vererbungsanforderungen|  
-|[CA2131](../code-quality/ca2131-security-critical-types-may-not-participate-in-type-equivalence.md)|Sicherheitskritische Typen können nicht an Typäquivalenz beteiligt sein.|  
-|[CA2132](../code-quality/ca2132-default-constructors-must-be-at-least-as-critical-as-base-type-default-constructors.md)|Standardkonstruktoren müssen mindestens so wichtig wie Standardkonstruktoren des Basistyps sein.|  
-|[CA2133](../code-quality/ca2133-delegates-must-bind-to-methods-with-consistent-transparency.md)|Delegaten müssen an Methoden mit konsistenter Transparenz gebunden.|  
-|[CA2134](../code-quality/ca2134-methods-must-keep-consistent-transparency-when-overriding-base-methods.md)|Beim Überschreiben von Basismethoden eine müssen Methoden konsistente Transparenz wahren|  
-|[CA2137](../code-quality/ca2137-transparent-methods-must-contain-only-verifiable-il.md)|Transparente Methoden dürfen nur überprüfbare IL enthalten.|  
-|[CA2138](../code-quality/ca2138-transparent-methods-must-not-call-methods-with-the-suppressunmanagedcodesecurity-attribute.md)|Transparente Methoden dürfen keine Methoden mit dem SuppressUnmanagedCodeSecurity-Attribut aufrufen.|  
-|[CA2140](../code-quality/ca2140-transparent-code-must-not-reference-security-critical-items.md)|Transparenter Code darf nicht auf sicherheitskritische Elemente verweisen|  
-|[CA2141](../code-quality/ca2141-transparent-methods-must-not-satisfy-linkdemands.md)|Transparente Methoden müssen nicht mit LinkDemands erfüllen.|  
-|[CA2146](../code-quality/ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces.md)|Typen müssen mindestens so wichtig wie ihre Basistypen und Schnittstellen sein.|  
-|[CA2147](../code-quality/ca2147-transparent-methods-may-not-use-security-asserts.md)|Transparente Methoden dürfen keine Sicherheitsassertionen verwenden bestätigt|  
-|[CA2149](../code-quality/ca2149-transparent-methods-must-not-call-into-native-code.md)|Transparente Methoden dürfen nicht in systemeigenen Code durchführen.|  
-|[CA2200](../code-quality/ca2200-rethrow-to-preserve-stack-details.md)|Erneut ausführen, um Stapeldetails beizubehalten|  
-|[CA2202](../code-quality/ca2202-do-not-dispose-objects-multiple-times.md)|Objekte nicht mehrmals verwerfen|  
-|[CA2207](../code-quality/ca2207-initialize-value-type-static-fields-inline.md)|Statische Felder Werttyp Inline initialisieren|  
-|[CA2212](../code-quality/ca2212-do-not-mark-serviced-components-with-webmethod.md)|Nicht verarbeitete Komponenten mit WebMethod markieren|  
-|[CA2213](../code-quality/ca2213-disposable-fields-should-be-disposed.md)|Verwerfbare Felder verwerfen sollten verworfen werden.|  
-|[CA2214](../code-quality/ca2214-do-not-call-overridable-methods-in-constructors.md)|Überschreibbare Methoden in Konstruktoren nicht aufrufen|  
-|[CA2216](../code-quality/ca2216-disposable-types-should-declare-finalizer.md)|Verwerfbare Typen sollten einen Finalizer deklarieren|  
-|[CA2220](../code-quality/ca2220-finalizers-should-call-base-class-finalizer.md)|Finalizer sollten Basisklassen-Finalizer aufrufen.|  
-|[CA2229](../code-quality/ca2229-implement-serialization-constructors.md)|Serialisierungskonstruktoren implementieren|  
-|[CA2231](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)|Überladen des Gleichheitsoperators beim Überschreiben von ValueType.Equals|  
-|[CA2232](../code-quality/ca2232-mark-windows-forms-entry-points-with-stathread.md)|Markieren von Windows Forms-Einstiegspunkte mit STAThread markieren|  
-|[CA2235](../code-quality/ca2235-mark-all-non-serializable-fields.md)|Alle nicht serialisierbaren Felder markieren|  
-|[CA2236](../code-quality/ca2236-call-base-class-methods-on-iserializable-types.md)|Rufen Sie Basisklassenmethoden auf ISerializable-Typen|  
-|[CA2237](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)|Markieren von ISerializable-Typen mit SerializableAttribute|  
-|[CA2238](../code-quality/ca2238-implement-serialization-methods-correctly.md)|Serialisierungsmethoden korrekt implementieren|  
-|[CA2240](../code-quality/ca2240-implement-iserializable-correctly.md)|ISerializable ordnungsgemäß implementieren|  
-|[CA2241](../code-quality/ca2241-provide-correct-arguments-to-formatting-methods.md)|Geben Sie die richtigen Argumente für Formatierungsmethoden angeben|  
+|[C28267](../code-quality/c28267.md)|Ein Syntaxfehler in den Anmerkungen wurde in Anmerkung in der Funktion gefunden.|
+|[C28272](../code-quality/c28272.md)|Die Anmerkung für Funktion, Parameter, beim Untersuchen von ist inkonsistent mit der Funktionsdeklaration.|
+|[C28273](../code-quality/c28273.md)|Für Funktion sind die Hinweise inkonsistent mit der Funktionsdeklaration.|
+|[C28275](../code-quality/c28275.md)|Der Parameter für _Macro_value\_ ist NULL|
+|[C28279](../code-quality/c28279.md)|Für Symbol wurde ein 'begin' ohne zugehöriges 'end' gefunden.|
+|[C28280](../code-quality/c28280.md)|Für Symbol wurde ein 'end' ohne zugehöriges 'begin' gefunden.|
+|[C28282](../code-quality/c28282.md)|Formatzeichenfolgen müssen sich in Vorbedingungen befinden|
+|[C28285](../code-quality/c28285.md)|Syntaxfehler im Parameter für Funktion|
+|[C28286](../code-quality/c28286.md)|Für Funktion wurde ein Syntaxfehler gegen Ende gefunden.|
+|[C28287](../code-quality/c28287.md)|Für Funktion Syntaxfehler in _At\_()-Anmerkung (unbekannter Parametername)|
+|[C28288](../code-quality/c28288.md)|Für Funktion Syntaxfehler in _At\_()-Anmerkung (ungültiger Parametername)|
+|[C28289](../code-quality/c28289.md)|Für Funktion: ReadableTo oder WritableTo enthielt keine Begrenzungsangabe als Parameter.|
+|[C28290](../code-quality/c28290.md)|Die Anmerkung für Funktion enthält mehr Externe als die tatsächliche Anzahl von Parametern.|
+|[C28291](../code-quality/c28291.md)|Post null/notnull auf deref-Ebene 0 ist ohne Bedeutung für Funktion.|
+|[C28300](../code-quality/c28300.md)|Ausdrucksoperanden von inkompatiblen Typen für Operator|
+|[C28301](../code-quality/c28301.md)|Keine Anmerkungen für die erste Deklaration der Funktion.|
+|[C28302](../code-quality/c28302.md)|Ein zusätzlicher _Deref\_-Operator wurde in der Anmerkung gefunden.|
+|[C28303](../code-quality/c28303.md)|Ein mehrdeutiger _Deref\_-Operator wurde in der Anmerkung gefunden.|
+|[C28304](../code-quality/c28304.md)|Ein falsch platzierter _Notref\_-Operator wurde gefunden, der auf das Token angewendet wird.|
+|[C28305](../code-quality/c28305.md)|Fehler beim Analysieren eines Token.|
+|[C28306](../code-quality/c28306.md)|Die Anmerkung zum Parameter wird obsolescent|
+|[C28307](../code-quality/c28307.md)|Die Anmerkung zum Parameter wird obsolescent|
+|[C28350](../code-quality/c28350.md)|Die Anmerkung beschreibt eine Situation, die nicht bedingt anwendbar ist.|
+|[C28351](../code-quality/c28351.md)|Die Anmerkung beschreibt, wo ein dynamischer Wert (eine Variable) in der Bedingung nicht verwendet werden darf.|
+|[CA1001](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)|Typen, die löschbare Felder besitzen, müssen gelöscht werden können|
+|[CA1009](../code-quality/ca1009-declare-event-handlers-correctly.md)|Ereignishandler korrekt deklarieren|
+|[CA1016](../code-quality/ca1016-mark-assemblies-with-assemblyversionattribute.md)|Assemblys mit AssemblyVersionAttribute markieren|
+|[CA1033](../code-quality/ca1033-interface-methods-should-be-callable-by-child-types.md)|Schnittstellenmethoden sollten von untergeordneten Typen aufgerufen werden können.|
+|[CA1049](../code-quality/ca1049-types-that-own-native-resources-should-be-disposable.md)|Typen, die systemeigene Ressourcen besitzen, müssen gelöscht werden können|
+|[CA1060](../code-quality/ca1060-move-p-invokes-to-nativemethods-class.md)|Verschieben von P/Invokes in NativeMethods-Klasse|
+|[CA1061](../code-quality/ca1061-do-not-hide-base-class-methods.md)|Basisklassenmethoden nicht ausblenden|
+|[CA1063](../code-quality/ca1063-implement-idisposable-correctly.md)|IDisposable korrekt implementieren|
+|[CA1065](../code-quality/ca1065-do-not-raise-exceptions-in-unexpected-locations.md)|Keine Ausnahmen an unerwarteten Speicherorten auslösen|
+|[CA1301](../code-quality/ca1301-avoid-duplicate-accelerators.md)|Doppelte Zugriffstasten vermeiden|
+|[CA1400](../code-quality/ca1400-p-invoke-entry-points-should-exist.md)|P/Invoke-Einstiegspunkte vorhanden sein|
+|[CA1401](../code-quality/ca1401-p-invokes-should-not-be-visible.md)|P/Invokes dürfen nicht sichtbar sein.|
+|[CA1403](../code-quality/ca1403-auto-layout-types-should-not-be-com-visible.md)|Typen mit automatischem Layout sollten nicht für COM sichtbar sein|
+|[CA1404](../code-quality/ca1404-call-getlasterror-immediately-after-p-invoke.md)|Rufen Sie GetLastError unmittelbar nach P/Invoke aufrufen|
+|[CA1405](../code-quality/ca1405-com-visible-type-base-types-should-be-com-visible.md)|COM sichtbare Basistypen sollten für COM sichtbar sein|
+|[CA1410](../code-quality/ca1410-com-registration-methods-should-be-matched.md)|COM-Registrierungsmethoden müssen übereinstimmen|
+|[CA1415](../code-quality/ca1415-declare-p-invokes-correctly.md)|P/Invokes korrekt deklarieren|
+|[CA1821](../code-quality/ca1821-remove-empty-finalizers.md)|Leere Finalizer entfernen|
+|[CA1900](../code-quality/ca1900-value-type-fields-should-be-portable.md)|Werttypfelder sollten portabel sein.|
+|[CA1901](../code-quality/ca1901-p-invoke-declarations-should-be-portable.md)|Deklarationen von P/Invoke müssen portabel sein|
+|[CA2002](../code-quality/ca2002-do-not-lock-on-objects-with-weak-identity.md)|Auf Objekten mit schwacher Identität nicht sperren|
+|[CA2100](../code-quality/ca2100-review-sql-queries-for-security-vulnerabilities.md)|Überprüfen Sie die SQL-Abfragen für Sicherheitsrisiken|
+|[CA2101](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md)|Festlegen Sie Marshalling für P/Invoke-Zeichenfolgenargumente|
+|[CA2108](../code-quality/ca2108-review-declarative-security-on-value-types.md)|Deklarative Sicherheit auf Werttypen überprüfen|
+|[CA2111](../code-quality/ca2111-pointers-should-not-be-visible.md)|Zeiger sollten nicht sichtbar sein.|
+|[CA2112](../code-quality/ca2112-secured-types-should-not-expose-fields.md)|Gesicherte Typen sollten keine Felder verfügbar machen.|
+|[CA2114](../code-quality/ca2114-method-security-should-be-a-superset-of-type.md)|Methodensicherheit sollte Superset des Typs sein.|
+|[CA2116](../code-quality/ca2116-aptca-methods-should-only-call-aptca-methods.md)|APTCA-Methoden sollten nur APTCA-Methoden aufrufen.|
+|[CA2117](../code-quality/ca2117-aptca-types-should-only-extend-aptca-base-types.md)|APTCA-Typen sollten nur APTCA-Basistypen erweitern.|
+|[CA2122](../code-quality/ca2122-do-not-indirectly-expose-methods-with-link-demands.md)|Methoden mit Linkaufrufen nicht indirekt verfügbar machen|
+|[CA2123](../code-quality/ca2123-override-link-demands-should-be-identical-to-base.md)|Überschreibungslinkaufrufe sollten mit der Basis identisch sein.|
+|[CA2124](../code-quality/ca2124-wrap-vulnerable-finally-clauses-in-outer-try.md)|Umschließen anfällige finally-Klauseln mit äußerem|
+|[CA2126](../code-quality/ca2126-type-link-demands-require-inheritance-demands.md)|Typlinkaufrufe erfordern vererbungsanforderungen|
+|[CA2131](../code-quality/ca2131-security-critical-types-may-not-participate-in-type-equivalence.md)|Sicherheitskritische Typen können nicht an Typäquivalenz beteiligt sein.|
+|[CA2132](../code-quality/ca2132-default-constructors-must-be-at-least-as-critical-as-base-type-default-constructors.md)|Standardkonstruktoren müssen mindestens so wichtig wie Standardkonstruktoren des Basistyps sein.|
+|[CA2133](../code-quality/ca2133-delegates-must-bind-to-methods-with-consistent-transparency.md)|Delegaten müssen an Methoden mit konsistenter Transparenz gebunden.|
+|[CA2134](../code-quality/ca2134-methods-must-keep-consistent-transparency-when-overriding-base-methods.md)|Beim Überschreiben von Basismethoden eine müssen Methoden konsistente Transparenz wahren|
+|[CA2137](../code-quality/ca2137-transparent-methods-must-contain-only-verifiable-il.md)|Transparente Methoden dürfen nur überprüfbare IL enthalten.|
+|[CA2138](../code-quality/ca2138-transparent-methods-must-not-call-methods-with-the-suppressunmanagedcodesecurity-attribute.md)|Transparente Methoden dürfen keine Methoden mit dem SuppressUnmanagedCodeSecurity-Attribut aufrufen.|
+|[CA2140](../code-quality/ca2140-transparent-code-must-not-reference-security-critical-items.md)|Transparenter Code darf nicht auf sicherheitskritische Elemente verweisen|
+|[CA2141](../code-quality/ca2141-transparent-methods-must-not-satisfy-linkdemands.md)|Transparente Methoden müssen nicht mit LinkDemands erfüllen.|
+|[CA2146](../code-quality/ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces.md)|Typen müssen mindestens so wichtig wie ihre Basistypen und Schnittstellen sein.|
+|[CA2147](../code-quality/ca2147-transparent-methods-may-not-use-security-asserts.md)|Transparente Methoden dürfen keine Sicherheitsassertionen verwenden bestätigt|
+|[CA2149](../code-quality/ca2149-transparent-methods-must-not-call-into-native-code.md)|Transparente Methoden dürfen nicht in systemeigenen Code durchführen.|
+|[CA2200](../code-quality/ca2200-rethrow-to-preserve-stack-details.md)|Erneut ausführen, um Stapeldetails beizubehalten|
+|[CA2202](../code-quality/ca2202-do-not-dispose-objects-multiple-times.md)|Objekte nicht mehrmals verwerfen|
+|[CA2207](../code-quality/ca2207-initialize-value-type-static-fields-inline.md)|Statische Felder Werttyp Inline initialisieren|
+|[CA2212](../code-quality/ca2212-do-not-mark-serviced-components-with-webmethod.md)|Nicht verarbeitete Komponenten mit WebMethod markieren|
+|[CA2213](../code-quality/ca2213-disposable-fields-should-be-disposed.md)|Verwerfbare Felder verwerfen sollten verworfen werden.|
+|[CA2214](../code-quality/ca2214-do-not-call-overridable-methods-in-constructors.md)|Überschreibbare Methoden in Konstruktoren nicht aufrufen|
+|[CA2216](../code-quality/ca2216-disposable-types-should-declare-finalizer.md)|Verwerfbare Typen sollten einen Finalizer deklarieren|
+|[CA2220](../code-quality/ca2220-finalizers-should-call-base-class-finalizer.md)|Finalizer sollten Basisklassen-Finalizer aufrufen.|
+|[CA2229](../code-quality/ca2229-implement-serialization-constructors.md)|Serialisierungskonstruktoren implementieren|
+|[CA2231](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)|Überladen des Gleichheitsoperators beim Überschreiben von ValueType.Equals|
+|[CA2232](../code-quality/ca2232-mark-windows-forms-entry-points-with-stathread.md)|Markieren von Windows Forms-Einstiegspunkte mit STAThread markieren|
+|[CA2235](../code-quality/ca2235-mark-all-non-serializable-fields.md)|Alle nicht serialisierbaren Felder markieren|
+|[CA2236](../code-quality/ca2236-call-base-class-methods-on-iserializable-types.md)|Rufen Sie Basisklassenmethoden auf ISerializable-Typen|
+|[CA2237](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)|Markieren von ISerializable-Typen mit SerializableAttribute|
+|[CA2238](../code-quality/ca2238-implement-serialization-methods-correctly.md)|Serialisierungsmethoden korrekt implementieren|
+|[CA2240](../code-quality/ca2240-implement-iserializable-correctly.md)|ISerializable ordnungsgemäß implementieren|
+|[CA2241](../code-quality/ca2241-provide-correct-arguments-to-formatting-methods.md)|Geben Sie die richtigen Argumente für Formatierungsmethoden angeben|
 |[CA2242](../code-quality/ca2242-test-for-nan-correctly.md)|Ordnungsgemäß auf NaN testen|

@@ -1,3 +1,11 @@
+---
+ms.technology: vs-ai-tools
+ms.openlocfilehash: 053ea5ad7579a040cdefbf7e519c852dc4fb7fe9
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 02/28/2018
+---
 # <a name="create-an-ai-project-from-existing-code"></a>Erstellen eines KI-Projekts aus vorhandenem Code
 
 Sobald Sie [die Visual Studio-Tools für KI installiert haben](installation.md), können Sie ganz leicht vorhandenen Python-Code einem Visual Studio-Projekt hinzufügen.
@@ -27,4 +35,4 @@ Sobald Sie [die Visual Studio-Tools für KI installiert haben](installation.md),
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Erstellen einer Umgebung für einen vorhandenen Python-Interpreter](../python/managing-python-environments-in-visual-studio.md#creating-an-environment-for-an-existing-interpreter)
+- [Manuelles Identifizieren einer vorhandenen Python-Umgebung](../python/managing-python-environments-in-visual-studio.md#manually-identifying-an-existing-environment)

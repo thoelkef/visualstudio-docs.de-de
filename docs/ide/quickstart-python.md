@@ -9,20 +9,19 @@ ms.technology:
 - vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: quickstart
-ms.devlang: python
+dev_langs:
+- python
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-dev_langs:
-- python
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a28c124ae560edca6451ed70d13c28b4138772d1
-ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
+ms.openlocfilehash: 9b45c694399553dd262a68d821d1757b65ea9600
+ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-python-web-app"></a>Schnellstart: Erstellen einer ersten Python-Web-App mit Visual Studio
 
@@ -72,7 +71,7 @@ In diesem Schnellstart wird jedoch die Falcon-Bibliothek verwendet, um ein Paket
 
 Weitere Informationen zu Falcon finden Sie unter [falconframework.org](https://falconframework.org/).
 
-Statt Bibliotheken in der globalen Umgebung zu installieren, erstellen Entwickler in der Regel eine „virtuelle Umgebung“, in der Bibliotheken für ein bestimmtes Projekt installiert werden. Viele Python-Projektvorlagen in Visual Studio enthalten eine `requirements.txt`-Datei, in der die Bibliotheken aufgelistet werden, von denen die Vorlage abhängig ist. Falls ein Projekt aus einer dieser Vorlagen erstellt wird, löst dies die Erstellung einer virtuellen Umgebung aus, in die die Bibliotheken installiert werden. Weitere Informationen finden Sie unter [Virtuelle Umgebungen](../python/managing-python-environments-in-visual-studio.md#creating-virtual-environments) im Artikel „Python-Umgebungen“.
+Statt Bibliotheken in der globalen Umgebung zu installieren, erstellen Entwickler in der Regel eine „virtuelle Umgebung“, in der Bibliotheken für ein bestimmtes Projekt installiert werden. Viele Python-Projektvorlagen in Visual Studio enthalten eine `requirements.txt`-Datei, in der die Bibliotheken aufgelistet werden, von denen die Vorlage abhängig ist. Falls ein Projekt aus einer dieser Vorlagen erstellt wird, löst dies die Erstellung einer virtuellen Umgebung aus, in die die Bibliotheken installiert werden. Weitere Informationen finden Sie unter [Verwenden von virtuellen Umgebungen](../python/selecting-a-python-environment-for-a-project.md#using-virtual-environments).
 
 ## <a name="add-a-code-file"></a>Hinzufügen einer Codedatei
 

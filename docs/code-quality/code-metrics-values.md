@@ -7,16 +7,18 @@ ms.suite:
 ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: code metrics [Visual Studio]
+helpviewer_keywords:
+- code metrics [Visual Studio]
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: dc9a688892ca7ec08a89c4da8e1732b5e2b3e267
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 553ed7d6a6fcc2edef436251d720919fe399653a
+ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="code-metrics-values"></a>Codemetrikwerte
 
@@ -24,9 +26,11 @@ Zudem erhöht die zunehmenden Komplexität der modernen softwareanwendungen schw
 
 Entwickler können Visual Studio zum Generieren von Codemetrikdaten, die die Komplexität und verwaltbarkeit verwalteten Codeprobleme zu messen. Codemetrikdaten können für eine gesamte Projektmappe oder ein einzelnes Projekt generiert werden.
 
+Informationen zum Generieren von Codemetrikdaten in Visual Studio finden Sie unter [wie: Generieren von Codemetrikdaten](../code-quality/how-to-generate-code-metrics-data.md).
+
 ## <a name="software-measurements"></a>Software-Maßangaben
 
-Die folgende Liste zeigt die Codemetrikergebnisse an, dass [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] berechnet:
+Die folgende Liste enthält den Code Metrikergebnisse, die Visual Studio berechnet:
 
 - **Wartbarkeitsindex** -berechnet einen Indexwert zwischen 0 und 100, der relativ einfach zu pflegen des Codes darstellt. Ein hoher Wert bedeutet eine bessere Verwaltbarkeit. Farblich codiert Bewertungen können verwendet werden, um Problempunkte im Code schnell zu identifizieren. Eine grüne Bewertung liegt zwischen 20 und 100 und gibt an, dass der Code gute Verwaltbarkeit aufweist. Eine gelbe Bewertung liegt zwischen 10 und 19 und gibt an, dass der Code leicht verwaltet werden. Eine rote Bewertung wird eine Bewertung zwischen 0 und 9 und niedrig verwaltbarkeit angibt.
 
@@ -49,3 +53,8 @@ Weitere Informationen dazu, wie anonyme Methoden in der Codemetrik behandelt, fi
 Einige Softwaretools und der Compiler generiert Code, der einem Projekt hinzugefügt wird und, die der Projektentwickler erkennt nicht oder nicht ändern sollen. In den meisten Fällen ignoriert Codemetrik generierten Code, wenn die Metrikwerte berechnet. Dadurch werden die Metrikwerte widerspiegeln, was vom Entwickler angezeigt und ändern kann.
 
 Für Windows Forms generierten Code wird nicht ignoriert, da es sich um Code handelt, die der Entwickler anzeigen und ändern kann.
+
+## <a name="next-steps"></a>Nächste Schritte
+
+- [Vorgehensweise: Generieren von Codemetrikdaten](../code-quality/how-to-generate-code-metrics-data.md)
+- [Verwenden des Fensters Codemetrikergebnisse](../code-quality/working-with-code-metrics-data.md)

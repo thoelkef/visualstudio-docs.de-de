@@ -15,11 +15,11 @@ ms.author: gregvanl
 manager: ghogen
 ms.workload:
 - vssdk
-ms.openlocfilehash: 98bbebfb5f82d10179897e94b6a49cbb3d8c6220
-ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
+ms.openlocfilehash: ea93ddee9c47f80322db2403aeecc0fb7dddb209
+ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="adding-a-language-server-protocol-extension"></a>Hinzufügen einer Sprache Serverprotokoll-Erweiterung
 
@@ -52,7 +52,7 @@ Bisher werden die folgenden LSP-Funktionen in Visual Studio unterstützt:
 Meldung | Verfügt über Unterstützung in Visual Studio
 --- | ---
 Initialisieren | ja
-initialisiert | 
+initialisiert | ja
 Herunterfahren | ja
 Beenden | ja
 $/cancelRequest | ja
@@ -72,12 +72,12 @@ textDocument/didOpen | ja
 textDocument/didChange | ja
 textDocument/willSave |
 textDocument/willSaveWaitUntil |
-textDocument/didSave |
+textDocument/didSave | ja
 textDocument/didClose | ja
 textDocument/completion | ja
 Abschluss/auflösen | ja
-TextDocument/gezeigt wird |
-textDocument/signatureHelp |
+TextDocument/gezeigt wird | ja
+textDocument/signatureHelp | ja
 textDocument/references | ja
 textDocument/documentHighlight |
 textDocument/documentSymbol | ja
@@ -136,7 +136,7 @@ LSP umfasst keine Spezifikation zum Text farbliche Kennzeichnung für Sprachen b
 
 1. Erstellen einen Ordner namens "Grammatiken" innerhalb der Erweiterung (oder sie können einen beliebigen Namen, die Sie auswählen, werden).
 
-2. Includedateien Sie in diesem Ordner "Grammatiken" alle *.tmlanguage oder *.tmtheme möchten die farbliche Kennzeichnung von benutzerdefinierten bereitstellt.
+2. Umfassen Sie in diesem Ordner "Grammatiken" alle *.tmlanguage, *.plist, *.tmtheme oder *.JSON Dateien, Sie möchten die farbliche Kennzeichnung von benutzerdefinierten bereitstellt.
 
 3. Mit der rechten Maustaste auf die Dateien, und wählen **Eigenschaften**. Ändern Sie den Buildvorgang, **Content** und **Include in VSIX** Eigenschaft auf "true".
 
@@ -210,6 +210,16 @@ namespace MockLanguageExtension
         public async Task OnLoadedAsync()
         {
             await StartAsync?.InvokeAsync(this, EventArgs.Empty);
+        }
+
+        public async Task OnServerInitializeFailedAsync(Exception e)
+        {
+            return Task.CompletedTask;
+        }
+
+        public async Task OnServerInitializedAsync()
+        {
+            return Task.CompletedTask;
         }
     }
 }
@@ -428,6 +438,7 @@ internal class MockCustomLanguageClient : MockLanguageClient, ILanguageClientCus
     public async Task<string> SendServerCustomMessage(string test)
     {
         return await this.customMessageRpc.InvokeAsync<string>("OnCustomRequest", test);
+    }
 }
 ```
 
@@ -440,7 +451,6 @@ Jede LSP-Nachricht besitzt eine eigene Schnittstelle mittleren Ebene für die Ab
 ```csharp
 public class MockLanguageClient: ILanguageClient, ILanguageClientCustomMessage
 {
-
     public object MiddleLayer => MiddleLayerProvider.Instance;
 
     private class MiddleLayerProvider : ILanguageClientWorkspaceSymbolProvider
@@ -459,6 +469,7 @@ public class MockLanguageClient: ILanguageClient, ILanguageClientCustomMessage
             // Only return symbols that are "files"
             return symbols.Where(sym => string.Equals(new Uri(sym.Location.Uri).Scheme, "file", StringComparison.OrdinalIgnoreCase)).ToArray();
         }
+    }
 }
 ```
 

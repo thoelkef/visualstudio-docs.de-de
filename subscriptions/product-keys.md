@@ -9,11 +9,11 @@ Description: Learn how to obtain and manage your product keys in Visual Studio s
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 50143579a4bf9033e54385b81ef365228b2b63cf
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 2ed935a5d254f57f4e643013704159c2fc90c8f5
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>Verwenden von Product Keys in Visual Studio-Abonnements
 
@@ -58,7 +58,7 @@ Abhängig vom Produkt ist eine Vielzahl von Schlüsseltypen verfügbar.
 
 ### <a name="product-key-types"></a>Product Key-Typen
 
-|    Schlüsseltyp           |    description                                                                                                                                                                                                           |
+|    Schlüsseltyp           |    Beschreibung                                                                                                                                                                                                           |
 |-------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |    Nicht zutreffend                    |    Für die Installation dieses Produkts ist kein Schlüssel erforderlich.                                                       |
 |    Einzelhandel                     |    Mit Verkaufsschlüsseln sind mehrere Aktivierungen möglich. Sie werden für die Verkaufsversionen des Produkts verwendet. In vielen Fällen sind pro Schlüssel 10 Aktivierungen zulässig. Häufig sind jedoch weitere Aktivierungen auf demselben Computer zulässig.                                                       |
@@ -90,7 +90,8 @@ Wie Sie sehen können, werden mehrere Versionen von Visio 2010 aufgeführt.  Jew
 ### <a name="exporting-your-claimed-keys"></a>Exportieren Ihrer in Anspruch genommenen Schlüssel
 Sie können eine Liste mit allen in Anspruch genommenen Schlüsseln exportieren, zusammen mit einer großen Auswahl statischer und anderer Schlüssel, die automatisch mit „In Anspruch genommen“ markiert wurden.  
 
-**Wichtig: Wenn Ihr Abonnement abgelaufen ist, können Sie keine neuen Schlüssel mehr in Anspruch nehmen oder Ihre in Anspruch genommenen Schlüssel exportieren.** 
+> [!IMPORTANT] 
+> Wenn Ihr Abonnement abgelaufen ist, können Sie keine neuen Schlüssel mehr in Anspruch nehmen oder Ihre in Anspruch genommenen Schlüssel exportieren.** 
 
 Klicken Sie zum Exportieren Ihrer Schlüssel einfach ganz rechts auf der Seite „Product Keys“ auf den Link **Alle Schlüssel exportieren**.  Es wird eine XML-Datei mit dem Namen „KeysExport.xml“ erstellt, die Sie öffnen oder speichern können.  Sie müssen die Datei mit einer Anwendung öffnen, die XML-Dateien verarbeiten kann.  Sie können die Datei beispielsweise als schreibgeschützte Arbeitsmappe in Excel öffnen.  
 

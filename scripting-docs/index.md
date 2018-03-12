@@ -1,11 +1,12 @@
 ---
 layout: LandingPage
+ms.topic: landing-page
 title: Erstellen von Skripts | Microsoft-Dokumentation
-ms.openlocfilehash: 859e542900af91e88ae6792740a539bb6de5dd0c
-ms.sourcegitcommit: abae48f476832f79cc2c5bac43bb1226d3fe4e48
+ms.openlocfilehash: fceb85cc33acd89214f39e57aae3858d119d24cf
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="scripting-technologies"></a>Skriptingtechnologien
 
@@ -195,7 +196,7 @@ Diese Seite bietet Links zur Referenzdokumentation zu JavaScript, TypeScript und
 </ul>
 
 <hr>
-<h2>Verweis</h2>
+<h2>Referenz</h2>
 
 <p><ul class="panelContent cardsW">
     <li>

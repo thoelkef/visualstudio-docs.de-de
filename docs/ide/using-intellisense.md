@@ -1,40 +1,31 @@
 ---
-title: Verwenden von IntelliSense | Microsoft-Dokumentation
+title: Visual Studio IntelliSense | Microsoft-Dokumentation
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
 - vc.tools.intellisense
 helpviewer_keywords:
-- IntelliSense, Complete Word
-- IntelliSense, completion mode
-- parameter information
-- IntelliSense, List Members
-- Quick Info
-- Parameter Info
+- Quick info
+- Parameter info
+- Complete word
+- List members
 - IntelliSense [Visual Studio]
-- IntelliSense, suggestion mode
-- IntelliSense, Parameter Info
-- IntelliSense, customizing
-- Complete Word
-- IntelliSense
-- List Members
 author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 42e34f5933d06bf9021ff8e0cab5b12f316ef52e
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 88ee47502d0aa15e391155cae918c8e579e72194
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/09/2018
 ---
-# <a name="using-intellisense"></a>Using IntelliSense
+# <a name="using-intellisense-in-visual-studio"></a>Verwenden von IntelliSense in Visual Studio
 
 IntelliSense ist der allgemeine Begriff für eine Reihe von Funktionen: Member auflisten, Parameterinfo, QuickInfo und Wort vervollständigen. Mithilfe dieser Funktionen erfahren Sie mehr über den verwendeten Code, Sie können die eingegebenen Parameter verfolgen und mit wenigen Tastaturanschlägen Eigenschaften und Methoden zu Aufrufen hinzufügen.
 
@@ -86,7 +77,7 @@ Sie können „QuickInfo“ für C++-Code deaktivieren, indem Sie zu **Extras** 
 
 ## <a name="complete-word"></a>Wort vervollständigen
 
-Die Option „Wort vervollständigen“ ergänzt den Rest eines Variablen-, Befehls- oder Funktionsnamens, sobald Sie so viele Zeichen eingegeben haben, dass der Name eindeutig erkannt werden kann. Sie können „Wort vervollständigen“ aufrufen, indem Sie auf **Bearbeiten** > **IntelliSense** > **Wort vervollständigen** klicken, **STRG** + **LEERTASTE** drücken oder auf die Schaltfläche **Wort vervollständigen** auf der Symbolleiste des Editors klicken.
+Die Option „Wort vervollständigen“ ergänzt den Rest eines Variablen-, Befehls- oder Funktionsnamens, sobald Sie so viele Zeichen eingegeben haben, dass der Name eindeutig erkannt werden kann. Sie können „Wort vervollständigen“ aufrufen, indem Sie auf **Bearbeiten** > **IntelliSense** > **Wort vervollständigen** klicken, **STRG**+**LEERTASTE** drücken oder auf die Schaltfläche **Wort vervollständigen** auf der Symbolleiste des Editors klicken.
 
 ## <a name="intellisense-options"></a>IntelliSense-Optionen
 
@@ -110,8 +101,8 @@ MessageBox( hWnd, "String literal|")
 
 ## <a name="see-also"></a>Siehe auch
 
-[Visual Basic-spezifisches IntelliSense](../ide/visual-basic-specific-intellisense.md)  
+[Visual Basic-IntelliSense](../ide/visual-basic-specific-intellisense.md)  
 [C#-IntelliSense](../ide/visual-csharp-intellisense.md)  
 [JavaScript IntelliSense](../ide/javascript-intellisense.md)  
-[Writing and Refactoring Code (C++) (Schreiben und Refactoring von Code (C++))](/cpp/ide/writing-and-refactoring-code-cpp)  
+[Schreiben und Refactoring von Code (C++)](/cpp/ide/writing-and-refactoring-code-cpp)  
 [Anzeigen von XML-Codekommentaren](../ide/supplying-xml-code-comments.md)

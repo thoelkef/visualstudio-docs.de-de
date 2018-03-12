@@ -5,24 +5,26 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-javascript
+ms.technology:
+- devlang-javascript
 ms.tgt_pltfrm: 
 ms.topic: language-reference
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
-helpviewer_keywords: JavaScript, version information
+helpviewer_keywords:
+- JavaScript, version information
 ms.assetid: 440f4924-f7a9-48e0-873e-bd599a93b437
-caps.latest.revision: "93"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b0503abb3d62e9fd61149b884a7b58a685fbc62c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 3a2335c3697be9ef3e2d674ac37047ddd3de242d
+ms.sourcegitcommit: 873c0e1a31def013bcca1b0caa0eb0249de89bec
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="javascript-version-information"></a>JavaScript-Versionsinformationen
 Unterschiedliche Versionen von JavaScript unterstützen unterschiedliche Sätze von JavaScript-Elementen. [!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)] -Apps unterstützen einen etwas anderen Satz von Funktionen als Internet Explorer.  
@@ -35,11 +37,11 @@ Unterschiedliche Versionen von JavaScript unterstützen unterschiedliche Sätze 
  In der folgenden Tabelle werden die Dokumentmodi in Internet Explorer (und Store-Apps, die [!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)] und [!INCLUDE[winphone_appname](../../javascript/reference/includes/winphone-appname-md.md)]darstellen) angezeigt, die bestimmte Sprachelemente unterstützen. Dokumentmodi, die ein bestimmtes Element unterstützen, werden mit dem Buchstaben **J**angezeigt. Dokumentmodi, die kein bestimmtes Element unterstützen, werden mit dem Buchstaben **N**angezeigt.  
   
 > [!IMPORTANT]
->  [!INCLUDE[jsv12text](../../javascript/includes/jsv12text-md.md)] (Edge-Browser in Windows 10) bietet keine Unterstützung für ältere Dokumentmodi. Unterstützung von [!INCLUDE[winphone_appname](../../javascript/reference/includes/winphone-appname-md.md)] -Apps beginnt mit Windows Phone 8.1. Experimentelle Features (zu: Flags) sind gekennzeichnet mit "exp"gekennzeichnet.  
+>  [!INCLUDE[jsv12text](../../javascript/includes/jsv12text-md.md)] (Edge-Browser in Windows 10) schließt nicht die Unterstützung für ältere Dokumentmodi. Unterstützung von [!INCLUDE[winphone_appname](../../javascript/reference/includes/winphone-appname-md.md)] -Apps beginnt mit Windows Phone 8.1. Experimentelle Features (zu: Flags) sind gekennzeichnet mit "exp"gekennzeichnet.  
   
  Die Tabelle enthält zusammenfassende Informationen. Genauere Informationen finden Sie in der Dokumentation für das Sprachelement  
   
-|Sprachelement|Quirks, Internet Explorer 6-Standards und Internet Explorer 7-Standards|Internet Explorer 8-Standards|Internet Explorer 9-Standards|Internet Explorer 10-Standards|Internet Explorer 11-Standards|Rand|Store-Apps|  
+|Sprachelement|Quirks, Internet Explorer 6-Standards und Internet Explorer 7-Standards|Internet Explorer 8-Standards|Internet Explorer 9-Standards|Internet Explorer 10-Standards|Internet Explorer 11-Standards|Edge|Store-Apps|  
 |----------------------|--------------------------------------------------------------------------|-----------------------------------|-----------------------------------|------------------------------------|------------------------------------|----------|----------------|  
 |[__proto\_ \_ -Eigenschaft (Objekt)](../../javascript/reference/proto-property-object-javascript.md)|N|N|N|N|J|J|V8 (Win): N<br />V8.1 (Win): J<br />V8.1 (Phone): J|  
 |[$1...$9-Eigenschaften (RegExp)](../../javascript/reference/dollar-1-dot-dot-dot-dollar-9-properties-regexp-javascript.md)|J|J|J|J|J|J|J|  
@@ -260,8 +262,8 @@ Unterschiedliche Versionen von JavaScript unterstützen unterschiedliche Sätze 
 |[message-Eigenschaft](../../javascript/reference/message-property-error-javascript.md)|J|J|J|J|J|J|J|  
 |[min-Funktion](../../javascript/reference/math-min-function-javascript.md)|J|J|J|J|J|J|J|  
 |[MIN_VALUE-Konstante](../../javascript/reference/number-constants-javascript.md)|J|J|J|J|J|J|J|  
-|[Modulozuweisungsoperator (%=)](../../javascript/reference/modulus-assignment-operator-decrement-javascript.md)|J|J|J|J|J|J|J|  
-|[Operator Modulo (%)](../../javascript/reference/modulus-operator-decrementjavascript.md)|J|J|J|J|J|J|J|  
+|[Rest-Zuweisungsoperator (% =)](../../javascript/reference/modulus-assignment-operator-decrement-javascript.md)|J|J|J|J|J|J|J|  
+|[Restoperator (%)](../../javascript/reference/modulus-operator-decrementjavascript.md)|J|J|J|J|J|J|J|  
 |[moveFirst-Methode](../../javascript/reference/movefirst-method-enumerator-javascript.md)|J|J|J|J|J|J|J|  
 |[moveNext-Methode](../../javascript/reference/movenext-method-enumerator-javascript.md)|J|J|J|J|J|J|J|  
 |[multiline-Eigenschaft](../../javascript/reference/multiline-property-regular-expression-javascript.md)|J|J|J|J|J|J|J|  
@@ -410,7 +412,7 @@ Unterschiedliche Versionen von JavaScript unterstützen unterschiedliche Sätze 
 |[write-Funktion](../../javascript/reference/debug-write-function-javascript.md)|J|J|J|J|J|J|J|  
 |[writeln-Funktion](../../javascript/reference/debug-writeln-function-javascript.md)|J|J|J|J|J|J|J|  
   
- \*Unterstützt DOM-Objekte, jedoch keine benutzerdefinierten Objekte. Die Attribute `enumerable` und `configurable` können angegeben werden, werden jedoch nicht verwendet.  
+ \* Unterstützt DOM-Objekte, jedoch keine benutzerdefinierten Objekte. Die Attribute `enumerable` und `configurable` können angegeben werden, werden jedoch nicht verwendet.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Definieren der Dokumentkompatibilität](http://go.microsoft.com/fwlink/?LinkId=208537)

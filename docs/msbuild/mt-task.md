@@ -4,7 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -24,16 +24,17 @@ helpviewer_keywords:
 - MSBUILD (Visual C++), MT task
 - MT task (MSBuild (Visual C++))
 ms.assetid: bb94913c-1042-4968-9f08-b394518e899f
-caps.latest.revision: "6"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 9a2da1c3012b65f71b63b61d2bc0415dbebd8b9e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 8a9bdfcd391a6377abf1d750330bb1a0dbd8bf80
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="mt-task"></a>MT-Aufgabe
 Umschließt das Microsoft-Manifesttool, „Mt.exe“. Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter „Mt.exe“.  
@@ -55,11 +56,11 @@ Umschließt das Microsoft-Manifesttool, „Mt.exe“. Weitere Informationen find
 |**EnableDPIAwareness**|Optionaler `Boolean` -Parameter.<br /><br /> Wenn `true`, werden die Manifestinformationen erweitert, die die Anwendung als „mit DPI kompatibel“ markieren. Wenn eine Anwendung so geschrieben wird, dass sie mit DPI kompatibel ist, sieht ihre Benutzeroberfläche bei verschiedensten High-DPI-Anzeigeeinstellungen ansprechend aus.<br /><br /> Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter „High-DPI“.|  
 |**GenerateCatalogFiles**|Optionaler `Boolean` -Parameter.<br /><br /> Wenn `true`, werden Dateien zur Katalogdefinition (.cdf) generiert.<br /><br /> Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter der „Mt.exe“-Option **/makecdfs**.|  
 |**GenerateCategoryTags**|Optionaler `Boolean` -Parameter.<br /><br /> Wenn `true`, wird bewirkt, dass Kategorietags generiert werden. Wenn dieser Parameter `true` ist, muss der **ManifestFromManagedAssemblyMT**-Aufgabenparameter ebenfalls angegeben werden.<br /><br /> Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter der „Mt.exe“-Option **/category**.|  
-|**InputResourceManifests**|Optionaler **String**-Parameter.<br /><br /> Geben Sie das Manifest aus einer Ressource vom Typ RT_MANIFEST ein, die über den angegebenen Bezeichner verfügt. Geben Sie eine Ressource im Format *\<file>[***;***[***#***]<resource_id>]* ein, bei der der optionale `resource_id`-Parameter eine positive 16-Bit-Zahl ist.<br /><br /> Wenn keine `resource_id` angegeben wird, wird der CREATEPROCESS_MANIFEST_RESOURCE-Standardwert (1) verwendet.<br /><br /> Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter der „Mt.exe“-Option **/inputresource**.|  
+|**InputResourceManifests**|Optionaler **String**-Parameter.<br /><br /> Geben Sie das Manifest aus einer Ressource vom Typ RT_MANIFEST ein, die über den angegebenen Bezeichner verfügt. Geben Sie eine Ressource im Format *\<Datei>[***;***[***#***]<Ressourcen-ID>]* ein, bei der der optionale `resource_id`-Parameter eine positive 16-Bit-Zahl ist.<br /><br /> Wenn keine `resource_id` angegeben wird, wird der CREATEPROCESS_MANIFEST_RESOURCE-Standardwert (1) verwendet.<br /><br /> Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter der „Mt.exe“-Option **/inputresource**.|  
 |**ManifestFromManagedAssembly**|Optionaler **String**-Parameter.<br /><br /> Generiert ein Manifest aus der angegebenen verwalteten Assembly.<br /><br /> Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter der „Mt.exe“-Option **/managedassemblyname**.|  
 |**ManifestToIgnore**|Optionaler **String**-Parameter.<br /><br /> (Nicht verwendet.)|  
 |**OutputManifestFile**|Optionaler **String**-Parameter.<br /><br /> Gibt den Namen des Ausgabemanifests an. Wenn dieser Parameter nicht angegeben wird und gerade nur an einem Manifest gearbeitet wird, wird dieses stattdessen geändert.<br /><br /> Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter der „Mt.exe“-Option **/out**.|  
-|**OutputResourceManifests**|Optionaler **String**-Parameter.<br /><br /> Geben Sie das Manifest an eine Ressource vom Typ RT_MANIFEST aus, die über den angegebenen Bezeichner verfügt. Die Ressource besitzt das Format *\<dati>[***;***[***#***]<ressourcen_id>]*, wobei der optionale `resource_id`-Parameter eine positive 16-Bit-Zahl ist.<br /><br /> Wenn keine `resource_id` angegeben wird, wird der CREATEPROCESS_MANIFEST_RESOURCE-Standardwert (1) verwendet.<br /><br /> Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter der „Mt.exe“-Option **/outputresource**.|  
+|**OutputResourceManifests**|Optionaler **String**-Parameter.<br /><br /> Geben Sie das Manifest an eine Ressource vom Typ RT_MANIFEST aus, die über den angegebenen Bezeichner verfügt. Die Ressource besitzt das Format *\<Datei>[***;***[***#***]<Ressourcen-ID>]*, wobei der optionale `resource_id`-Parameter eine positive 16-Bit-Zahl ist.<br /><br /> Wenn keine `resource_id` angegeben wird, wird der CREATEPROCESS_MANIFEST_RESOURCE-Standardwert (1) verwendet.<br /><br /> Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter der „Mt.exe“-Option **/outputresource**.|  
 |**RegistrarScriptFile**|Optionaler **String**-Parameter.<br /><br /> Gibt den Namen der Registrierungsskriptdatei (.rgs) zum Verwenden bei der COM-Manifest-Unterstützung ohne Registrierung an.<br /><br /> Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter der „Mt.exe“-Option **/rgs**.|  
 |**ReplacementsFile**|Optionaler **String**-Parameter.<br /><br /> Gibt die Datei an, die Werte für die ersetzbaren Zeichenfolgen in der Registrierungsskriptdatei (.rgs) enthält.<br /><br /> Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter der „Mt.exe“-Option **/replacements**.|  
 |**ResourceOutputFileName**|Optionaler **String**-Parameter.<br /><br /> Gibt die Ausgaberessourcen-Datei an, die verwendet wird, um das Manifest in die Projektausgabe einzubetten.|  

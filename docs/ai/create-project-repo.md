@@ -1,11 +1,19 @@
+---
+ms.technology: vs-ai-tools
+ms.openlocfilehash: 73292b9e0c7df23db839a7a13f70dbc2432d564f
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 02/28/2018
+---
 # <a name="clone-a-repository-of-python-code-in-visual-studio"></a>Klonen eines Repositorys in Python-Code in Visual Studio
 
 Sobald Sie [die Visual Studio-Tools für KI installiert haben](installation.md), können Sie ganz leicht ein Repository mit Python-Code klonen und daraus ein Projekt erstellen.
 
 1. Um die Verbindung mit GitHub-Repositorys herzustellen, führen Sie den Visual Studio-Installer aus. Klicken Sie auf **Ändern**, und wählen Sie dann die Registerkarte **Einzelne Komponenten** aus. Scrollen Sie runter zum Bereich **Codetools**, klicken Sie auf **GitHub-Erweiterung für Visual Studio** und dann auf **Ändern**.
-    
+
     ![Auswählen der Erweiterung „GitHub“ im Visual Studio-Installer](media\create-project-repo\installation-github-extension.png)
-    
+
 2. Starten Sie Visual Studio.
 
 3. Klicken Sie auf **Ansicht > Team Explorer…**, um das Fenster **Team Explorer** zu öffnen. Dort können Sie eine Verbindung mit GitHub oder Visual Studio Team Services herstellen oder ein Repository klonen.
@@ -34,7 +42,7 @@ Sobald Sie [die Visual Studio-Tools für KI installiert haben](installation.md),
 
     ![Erste Ausgabe des Python MNIST-Programms](media\create-project-repo\tensorflow-mnist-running.png)
 
-> Wenn Sie Anaconda verwenden und eine Fehlermeldung über fehlendes „numpy“ erhalten, müssen Sie möglicherweise Ihre Python-Umgebung so umstellen, dass [Anaconda](../python/managing-python-environments-in-visual-studio.md) verwendet wird.
+> Wenn Sie Anaconda verwenden und eine Fehlermeldung über fehlendes „numpy“ erhalten, müssen Sie möglicherweise [Ihre Python-Umgebung auf die Verwendung von Anaconda umstellen](../python/selecting-a-python-environment-for-a-project.md).
 
 11. Sie können den Fortschritt mit TensorBoard verfolgen. Klicken Sie mit der rechten Maustaste auf Ihr Projekt, und klicken Sie dann auf **Run TensorBoard**. Wählen Sie das Verzeichnis der ausgegebenen TensorBoard-Protokolle aus.
 

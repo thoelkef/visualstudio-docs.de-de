@@ -4,7 +4,7 @@
 ## [Messen der Verwaltbarkeit von Code mithilfe von Codemetriken](code-metrics-values.md)
 # Schnellstarts
 ## [Schnellstart: Codeanalyse für C/C++](quick-start-code-analysis-for-c-cpp.md)
-# Lernprogramme
+# Tutorials
 ## [Analysieren von verwaltetem Code im Hinblick auf Codefehler](walkthrough-analyzing-managed-code-for-code-defects.md)
 ## [Analysieren von C/C++-Code im Hinblick auf Fehler](walkthrough-analyzing-c-cpp-code-for-defects.md)
 ### [Demobeispiel](demo-sample.md)
@@ -56,16 +56,14 @@
 #### [Regelsatz für systemeigene Mindestregeln](native-minimum-rules-rule-set.md)
 #### [Regelsatz für systemeigene empfohlene Regeln](native-recommended-rules-rule-set.md)
 #### [Regelsatz für Sicherheitsregeln für verwalteten Code](security-rules-rule-set-for-managed-code.md)
-## [Verbessern der Codequalität mit Eincheckrichtlinien für Teamprojekte](enhancing-code-quality-with-team-project-check-in-policies.md)
-### [Erstellen und Verwenden von Eincheckrichtlinien für die Codeanalyse](creating-and-using-code-analysis-check-in-policies.md)
-#### [Erstellen oder Aktualisieren von Standardeincheckrichtlinien für die Codeanalyse](how-to-create-or-update-standard-code-analysis-check-in-policies.md)
-#### [Implementieren von benutzerdefinierten Eincheckrichtlinien für die Codeanalyse für verwalteten Code](implementing-custom-code-analysis-check-in-policies-for-managed-code.md)
-#### [Erzwingen von verwaltbarem Code mit einer Eincheckrichtlinie für die Codeanalyse](how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy.md)
-#### [Versionskompatibilität für die Eincheckrichtlinien der Codeanalyse](version-compatibility-for-code-analysis-check-in-policies.md)
+## [Erstellen von Eincheckrichtlinien für die Codeanalyse](how-to-create-or-update-standard-code-analysis-check-in-policies.md)
+### [Implementieren von benutzerdefinierten Eincheckrichtlinien für die Codeanalyse für verwalteten Code](implementing-custom-code-analysis-check-in-policies-for-managed-code.md)
+### [Erzwingen von wartbarem Code](how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy.md)
+### [Versionskompatibilität](version-compatibility-for-code-analysis-check-in-policies.md)
 ## Codemetriken
 ### [Generieren von Codemetrikdaten](how-to-generate-code-metrics-data.md)
 ### [Arbeiten mit Codemetrikdaten](working-with-code-metrics-data.md)
-# Verweis
+# Referenz
 ## [Warnungen bei der Analyse von verwaltetem Code](code-analysis-for-managed-code-warnings.md)
 ### [Codeanalysewarnungen für verwalteten Code nach CheckId](code-analysis-warnings-for-managed-code-by-checkid.md)
 ### [Kryptografiewarnungen](cryptography-warnings.md)

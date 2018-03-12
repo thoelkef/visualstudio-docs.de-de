@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-ide-general
-ms.openlocfilehash: 65eafeab083b85fb7e872adabf97f5497cc62291
-ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
+ms.openlocfilehash: 8be85bc578b31b087c77da1444ddd9950a6bc0ed
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>Erstellen von portablen, benutzerdefinierten Editor-Einstellungen mit „EditorConfig“
 
@@ -106,7 +106,7 @@ EDITORCONFIG-Dateien werden von unten nach oben gelesen, und die nächstgelegene
 
 ## <a name="editing-editorconfig-files"></a>Bearbeiten von EDITORCONFIG-Dateien
 
-Visual Studio stellt einige IntelliSense-Features für das Bearbeiten von EDITORCONFIG-Dateien bereit.
+Mit Visual Studio können Sie EDITORCONFIG-Dateien bearbeiten, indem Sie IntelliSense-Vervollständigungslisten bereitstellen.
 
 ![IntelliSense in einer EDITORCONFIG-Datei](media/editorconfig-intellisense-no-extension.png)
 

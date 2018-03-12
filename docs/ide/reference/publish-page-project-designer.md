@@ -18,11 +18,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: a3eee4abda5783707231332022e1f3f24728e7cc
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: d9f050662ed38814920e17b36f77bf6795aabfa9
+ms.sourcegitcommit: 238cd48787391aa0ed1eb684f3f04e80f7958705
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/12/2018
 ---
 # <a name="publish-page-project-designer"></a>Seite "Veröffentlichen", Projekt-Designer
 Die Seite **Veröffentlichen** des **Projekt-Designers** wird zur Konfiguration von Eigenschaften für die ClickOnce-Bereitstellung verwendet.  
@@ -34,10 +34,8 @@ Die Seite **Veröffentlichen** des **Projekt-Designers** wird zur Konfiguration 
   
 ## <a name="uielement-list"></a>UIElement-Liste  
  **Pfad des Veröffentlichungsordners**  
- Gibt den Speicherort an, in dem die Anwendung veröffentlicht wird. Dies kann ein Pfad zum Laufwerk (`C:\deploy\myapplication`), eine Dateifreigabe (`\\server\myapplication`), ein FTP-Server (`ftp://ftp.microsoft.com/myapplication`) oder eine Website (`http://www.microsoft.com/myapplication`) sein. Beachten Sie, dass im Feld **Ort der Veröffentlichung** Text angegeben sein muss, damit die Schaltfläche zum Durchsuchen (**...**) funktioniert.  
-  
- Wenn IIS installiert ist, wird `http://localhost/<projectname>/` als Standardspeicherort verwendet. Wenn IIS nicht installiert ist, wird das Verzeichnis `publish\` verwendet. Wenn auf Ihrem Computer Windows Vista ausgeführt wird, ist der Standardspeicherort immer das Verzeichnis `publish\` , egal, ob Sie IIS installiert haben oder nicht.  
-  
+ Gibt den Speicherort an, in dem die Anwendung veröffentlicht wird. Dies kann ein Pfad zum Laufwerk (`C:\deploy\myapplication`), eine Dateifreigabe (`\\server\myapplication`) oder ein FTP-Server (`ftp://ftp.microsoft.com/myapplication`) sein. Beachten Sie, dass im Feld **Ort der Veröffentlichung** Text angegeben sein muss, damit die Schaltfläche zum Durchsuchen (**...**) funktioniert.  
+   
  **URL des Installationsordners**  
  Dies ist optional. Gibt eine Website an, auf die der Benutzer zugreift, um die Anwendung zu installieren. Dies ist nur erforderlich, wenn sie sich vom **Veröffentlichungsort**unterscheidet, wenn z.B. die Anwendung auf einem Stagingserver veröffentlicht wird.  
   
