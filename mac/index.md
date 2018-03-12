@@ -6,11 +6,11 @@ ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: 3A130EC1-DD8C-4125-9034-B08D7AF7EA65
-ms.openlocfilehash: bc836806e1acf33b35604419ac1d6aad41a2d795
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: d12331bd074f77db83ae4574195b8b6f7e5c452a
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="introducing-visual-studio-for-mac"></a>Einführung in Visual Studio für Mac
 
@@ -22,9 +22,9 @@ Visual Studio für Mac ist eine moderne, anspruchsvolle IDE mit vielen Features 
 * ASP.NET Core-Webanwendungen
 * Plattformübergreifende Unity-Spiele
 
-Es umfasst einen umfangreichen Editor, Debugfunktionen, native Plattformintegration in iOS, Mac und Android und integrierte Quellcodeverwaltung, um nur einige der zahlreichen Features zu nennen.
+Es umfasst Features wie einen umfangreichen Editor, Debugfunktionen, native Plattformintegration in iOS, Mac und Android und integrierte Quellcodeverwaltung.
 
-Dieses Thema behandelt verschiedene Abschnitte von Visual Studio für Mac, um einen Einblick in einige der Features zu geben, die es zu einem leistungsstarken Tool zur Erstellung von plattformübergreifenden Anwendungen macht.
+Dieser Artikel behandelt verschiedene Abschnitte von Visual Studio für Mac, um einen Einblick in einige der Features zu geben, die es zu einem leistungsstarken Tool zur Erstellung von plattformübergreifenden Anwendungen macht.
 
 ## <a name="installation"></a>Installation
 
@@ -36,7 +36,7 @@ Visual Studio für Mac unterstützt standardmäßig die Entwicklung in C# und F#
 
 ### <a name="c"></a>C#
 
-C# ist die am häufigsten verwendete Sprache zum Erstellen von plattformübergreifenden Anwendungen in Visual Studio für Mac. Alle Features von C# 7 werden vollständig unterstützt.
+C# ist die am häufigsten verwendete Sprache zum Erstellen von plattformübergreifenden Anwendungen in Visual Studio für Mac. Alle Features von C# 7 werden vollständig von IDE unterstützt.
 
 ### <a name="f"></a>F#
 
@@ -71,7 +71,7 @@ Informationen zu den ersten Schritten finden Sie in der [hands-on lab (praktisch
 
 Visual Studio verfügt über einen eigenen integrierten Android SDK Manager.
 
-Für Android-Anwendungen enthält Visual Studio für Mac einen eigenen Designer, der mit `.axml`-Dateien für Android arbeitet, um Benutzeroberflächen visuell zu entwerfen. Visual Studio für Mac öffnet diese Dateien wie unten dargestellt in seinem Android Designer:
+Für Android-Anwendungen enthält Visual Studio für Mac einen eigenen Designer, der mit `.axml`-Dateien für Android arbeitet, um Benutzeroberflächen visuell zu entwerfen. Visual Studio für Mac öffnet diese Dateien wie im folgenden Bild dargestellt in seinem Android Designer:
 
 ![](media/intro-image31.png)
 
@@ -83,7 +83,7 @@ Der iOS Designer ist vollständig in Visual Studio für Mac integriert und ermö
 
 ![](media/intro-image30.png)
 
-Weitere Informationen zur Verwendung des iOS Designers finden Sie in den Dokumenten [Designer](https://developer.xamarin.com/guides/ios/user_interface/designer).
+Weitere Informationen zur Verwendung des iOS Designers finden Sie in den Dokumenten über den [Designer](https://developer.xamarin.com/guides/ios/user_interface/designer).
 
 ### <a name="mac"></a>Mac
 
@@ -118,7 +118,7 @@ Weitere Informationen finden Sie im Leitfaden zum [Xamarin Inspector](https://de
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-* **Verschaffen Sie sich einen Überblick**: Einen Überblick über viele der wichtigsten Features in Visual Studio für Mac finden Sie in der [IDE Tour (IDE-Tour)](~/ide-tour.md) von Visual Studio für Mac.
+* **Verschaffen Sie sich einen Überblick**: Einen Überblick über viele der wichtigsten Features in Visual Studio für Mac finden Sie in der [IDE-Tour](~/ide-tour.md) von Visual Studio für Mac.
 * **Setup (Einrichtung)**: Informationen zum Herunterladen und Installieren von Visual Studio finden Sie im Leitfaden zur [Installation](~/installation.md).
 * **Xamarin Tutorials (Xamarin-Tutorials)**: Weitere Informationen zum Entwickeln von Code in Xamarin finden Sie im [Developer Center](https://developer.xamarin.com) von Xamarin.
 * **Videos**: Weitere Informationen zu anderen Features und Aspekten von Visual Studio für Mac finden Sie in den Videos auf der Website [Xamarin University (Xamarin-Universität)](https://university.xamarin.com).
