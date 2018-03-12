@@ -12,11 +12,11 @@ author: PooyaZv
 ms.author: pozandev
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: dffc67e550cb57f9f089e180ff399f27c817d253
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 714d047cda7a167045983f5068a425d0d82823ea
+ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="how-to-diagnose-ui-delays-caused-by-extensions"></a>Vorgehensweise: Analysieren der UI Verzögerungen aufgrund von Erweiterungen
 
@@ -157,6 +157,8 @@ PerfView detaillierte Anleitung im Menü "Hilfe", die Sie zum Identifizieren von
 
 * [https://aka.ms/vsthreading](https://aka.ms/vsthreading)
 * [https://aka.ms/vsthreadingcookbook](https://aka.ms/vsthreadingcookbook)
+
+Sie können auch neue Visual Studio statische Analysen für Erweiterungen (NuGet-Paket [hier](https://www.nuget.org/packages/microsoft.visualstudio.sdk.analyzers)), die Leitlinien für bewährte Methoden für das Schreiben von effizienten Erweiterungen. Eine Liste der [VS-SDK-Analyzern](https://github.com/Microsoft/VSSDK-Analyzers/blob/master/doc/index.md) und [threading Analyzer](https://github.com/Microsoft/vs-threading/blob/master/doc/analyzers/index.md).
 
 > [!NOTE]
 > Wenn Sie nicht, um die nicht reagierenden aufgrund von Abhängigkeiten zu adressieren können Sie haben keine Kontrolle über (z. B. wenn die Erweiterung zum Aufrufen von synchronen VS-Dienste auf dem UI-Thread ist), wir davon erfahren möchten. Wenn Sie Mitglied der Visual Studio Partnerprogramm sind, können Sie uns kontaktieren, durch eine Developer-Supportanfrage übermitteln. Verwenden Sie andernfalls senden Ihr Feedback und umfassen das Tool "Problem melden" `"Extension UI Delay Notifications"` im Titel. Geben Sie außerdem auch eine ausführliche Beschreibung der Analyse.

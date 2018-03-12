@@ -1,50 +1,45 @@
 ---
 title: Typauflistungs-Editor (Dialogfeld) | Microsoft Docs
-ms.custom: 
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: TypeCollectionEditor.UI
+f1_keywords:
+- TypeCollectionEditor.UI
 ms.assetid: 63cdea6b-bca2-4c06-b8b4-c8faabd40726
-caps.latest.revision: "4"
-author: ErikRe
-ms.author: erikre
-manager: erikre
-ms.workload: multiple
-ms.openlocfilehash: 8e4b794a623c3a0218e44773da6bdb6c76612816
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.workload:
+- multiple
+ms.openlocfilehash: f873ef2f2f30e307c7f9ec16a612eb76d09633c9
+ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="type-collection-editor-dialog-box"></a>Typauflistungs-Editor (Dialogfeld)
-Die **Typauflistungs-Editor** Dialogfeld wird verwendet, um bekannte Typen hinzuzufügen der **senden** und **Receive** Aktivitäten. Dieses Dialogfeld wird auch verwendet, um generische Typargumente hinzuzufügen der **InvokeMethod** Aktivität. Bei Verwendung für die **senden** und **Receive** Aktivitäten zum Hinzufügen bekannter Typen, die **Typauflistungs-Editor** Dialogfeld erfordert die Ergänzungen Typ eindeutig sein. Wenn ein doppelter Typ hinzugefügt und die Änderung wird ein Commit ausgeführt, indem Sie auf **OK**, wird eine Fehlermeldung zurückgegeben. Bei Verwendung für die **InvokeMethod** Aktivität zum Hinzufügen von generischen Typargumenten der **Typauflistungs-Editor** im Dialogfeld das Hinzufügen doppelter Typen zulässig.  
-  
-> [!NOTE]
->  [! UMFASSEN[Crabout](/dotnet/framework/wcf/feature-details/data-contract-known-types).  
-  
- Die folgende Tabelle beschreibt die Elemente der Benutzeroberfläche (UI) von der **Typauflistung** (Dialogfeld).  
-  
-|Benutzeroberflächenelement|Beschreibung|  
-|----------------|-----------------|  
-|**Typliste**|Eine Liste der Typen, die hinzugefügt oder entfernt wurden.|  
-  
-## <a name="to-bring-up-the-type-collection-editor"></a>So öffnen Sie den Typauflistungs-Editor  
-  
-#### <a name="to-bring-up-the-type-collection-editor-for-the-send-and-receive-activities"></a>So öffnen Sie den Typauflistungs-Editor für die Send- und die Receive-Aktivität  
-  
-1.  Wählen Sie die **senden** oder **Receive** Aktivität in der Entwurfsansicht.  
-  
-2.  Drücken Sie **F4** um die **Eigenschaften** Fenster.  
-  
-3.  In der **Eigenschaften** Fenster, klicken Sie auf die Schaltfläche mit den Auslassungspunkten neben der **KnownTypes** Eigenschaft.  
-  
-#### <a name="to-bring-up-the-type-collection-editor-for-the-invokemethod-activity"></a>So öffnen Sie den Typauflistungs-Editor für die InvokeMethod-Aktivität  
-  
-1.  Wählen Sie die **InvokeMethod** Aktivität in der Entwurfsansicht.  
-  
-2.  Drücken Sie **F4** um die **Eigenschaften** Fenster.  
-  
+
+Die **Typauflistungs-Editor** Dialogfeld wird verwendet, um bekannte Typen hinzuzufügen der **senden** und **Receive** Aktivitäten. Dieses Dialogfeld wird auch verwendet, um generische Typargumente hinzuzufügen der **InvokeMethod** Aktivität. Bei Verwendung für die **senden** und **Receive** Aktivitäten zum Hinzufügen bekannter Typen, die **Typauflistungs-Editor** Dialogfeld erfordert die Ergänzungen Typ eindeutig sein. Wenn ein doppelter Typ hinzugefügt und die Änderung wird ein Commit ausgeführt, indem Sie auf **OK**, wird eine Fehlermeldung zurückgegeben. Bei Verwendung für die **InvokeMethod** Aktivität zum Hinzufügen von generischen Typargumenten der **Typauflistungs-Editor** im Dialogfeld das Hinzufügen doppelter Typen zulässig.
+
+Weitere Informationen finden Sie unter [bekannte Typen in Datenverträgen](/dotnet/framework/wcf/feature-details/data-contract-known-types).
+
+Die folgende Tabelle beschreibt die Elemente der Benutzeroberfläche (UI) von der **Typauflistung** (Dialogfeld).
+
+|Benutzeroberflächenelement|Beschreibung|
+|----------------|-----------------|
+|**Typliste**|Eine Liste der Typen, die hinzugefügt oder entfernt wurden.|
+
+## <a name="to-bring-up-the-type-collection-editor-for-the-send-and-receive-activities"></a>So öffnen Sie den Typauflistungs-Editor für die Send- und die Receive-Aktivität
+
+1.  Wählen Sie die **senden** oder **Receive** Aktivität in der Entwurfsansicht.
+
+2.  Drücken Sie **F4** um die **Eigenschaften** Fenster.
+
+3.  In der **Eigenschaften** Fenster, klicken Sie auf die Schaltfläche mit den Auslassungspunkten neben der **KnownTypes** Eigenschaft.
+
+## <a name="to-bring-up-the-type-collection-editor-for-the-invokemethod-activity"></a>So öffnen Sie den Typauflistungs-Editor für die InvokeMethod-Aktivität
+
+1.  Wählen Sie die **InvokeMethod** Aktivität in der Entwurfsansicht.
+
+2.  Drücken Sie **F4** um die **Eigenschaften** Fenster.
+
 3.  In der **Eigenschaften** Fenster, klicken Sie auf die Schaltfläche mit den Auslassungspunkten neben der **GenericTypeArguments** Eigenschaft.
