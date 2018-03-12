@@ -4,26 +4,26 @@ ms.custom:
 ms.date: 10/25/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: tgt-pltfrm-cross-plat
+ms.technology: vs-unity-tools
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 8f5db192-8d78-4627-bd07-dbbc803ac554
-caps.latest.revision: "5"
 author: conceptdev
 ms.author: crdun
 manager: crdun
-ms.workload: unity
-ms.openlocfilehash: 7ede7734ec2a8c261cce3f31e06e77f932edd326
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- unity
+ms.openlocfilehash: 95d1724561886e1bcfa9a870bdf3bdadb787f9e8
+ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>Problembehandlung und bekannte Probleme (Visual Studio-Tools für Unity)
-In diesem Abschnitt finden Sie Lösungen für häufige Probleme mit Visual Studio-Tools für Unity und Beschreibungen bekannter Probleme. Außerdem erfahren Sie, wie Sie Visual Studio-Tools für Unity verbessern können, indem Sie Fehler melden.  
+In diesem Abschnitt finden Sie Lösungen für häufige Probleme mit Visual Studio-Tools für Unity und Beschreibungen bekannter Probleme. Außerdem erfahren Sie, wie Sie Visual Studio-Tools für Unity verbessern können, indem Sie Fehler melden.
 
-## <a name="troubleshooting"></a>Problembehandlung  
-In den folgenden Abschnitten finden Sie Informationen zum Beheben häufiger Probleme mit Visual Studio-Tools für Unity.  
+## <a name="troubleshooting"></a>Problembehandlung
+In den folgenden Abschnitten finden Sie Informationen zum Beheben häufiger Probleme mit Visual Studio-Tools für Unity.
 
 ### <a name="visual-studio-crashes"></a>Visual Studio stürzt ab
 Dies kann daran liegen, dass der MEF-Cache für Visual Studio beschädigt ist.
@@ -40,7 +40,7 @@ Dadurch sollte das Problem behoben werden. Wenn Sie immer noch auf Probleme sto�
  devenv /setup
 ```
 
-### <a name="issues-with-vs2015-and-intellisense-or-code-coloration"></a>Probleme mit Visual Studio 2015 und IntelliSense oder der Codeeinfärbung.
+### <a name="issues-with-vs2015-and-intellisense-or-code-coloration"></a>Probleme mit VS 2015 und IntelliSense oder der Codeeinfärbung
 Sie sollten Ihre Version von Visual Studio 2015 auf Update 3 aktualisieren.
 
 ### <a name="visual-studio-hangs"></a>Visual Studio reagiert nicht mehr
@@ -74,90 +74,90 @@ WLAN ist zwar vielseitiger, aber aufgrund der Wartezeit extrem langsam im Vergle
 
 Sie können versuchen, den folgenden USB zu verwenden, um die geöffneten Ports auf dem verbundenen Gerät anzuzeigen (wenn der Player verfügbar ist und ausgeführt wird, sodass Sie den Port zum Debuggen immer im Format 56xxx sehen können):
 
-```shell  
+```shell
 adb shell netstat
-```  
+```
 
 Leiten Sie den Port an den lokalen Computer weiter:
 
-```shell  
+```shell
 adb forward tcp:56xxx tcp:56xxx
-```  
+```
 
 Verbinden Sie anschließend Visual Studio-Tools für Unity über den weitergeleiteten Port 127.0.0.1:56xxx.
 
-### <a name="migrating-from-unityvs-to-visual-studio-tools-for-unity"></a>Migrieren von UnityVS zu Visual Studio-Tools für Unity  
- Wenn Sie von UnityVS zu Visual Studio-Tools für Unity migrieren, müssen Sie neue Visual Studio-Projektmappen für Ihre Unity-Projekte generieren.  
+### <a name="migrating-from-unityvs-to-visual-studio-tools-for-unity"></a>Migrieren von UnityVS zu Visual Studio-Tools für Unity
+ Wenn Sie von UnityVS zu Visual Studio-Tools für Unity migrieren, müssen Sie neue Visual Studio-Projektmappen für Ihre Unity-Projekte generieren.
 
-##### <a name="to-migrate-your-unity-project-from-unityvs-18-to-visual-studio-tools-for-unity-19"></a>So migrieren Sie Ihr Unity-Projekt von UnityVS 1.8 zu Visual Studio-Tools für Unity 1.9  
+##### <a name="to-migrate-your-unity-project-from-unityvs-18-to-visual-studio-tools-for-unity-19"></a>So migrieren Sie Ihr Unity-Projekt von UnityVS 1.8 zu Visual Studio-Tools für Unity 1.9
 
-1.  Löschen Sie die alten Projektmappen- und Projektdateien aus Ihrem Unity-Projekt. Suchen Sie im Stammverzeichnis Ihres Unity-Projekts die SLN- und PROJ-Dateien von Visual Studio, und löschen Sie alle.  
+1.  Löschen Sie die alten Projektmappen- und Projektdateien aus Ihrem Unity-Projekt. Suchen Sie im Stammverzeichnis Ihres Unity-Projekts die SLN- und PROJ-Dateien von Visual Studio, und löschen Sie alle.
 
-2.  Importieren Sie das Visual Studio-Tools für Unity-Paket in Ihr Unity-Projekt. Informationen zum Importieren des VSTU-Pakets finden Sie unter "Konfigurieren von Visual Studio-Tools für Unity" auf der Seite [Erste Schritte](../cross-platform/getting-started-with-visual-studio-tools-for-unity.md) .  
+2.  Importieren Sie das Visual Studio-Tools für Unity-Paket in Ihr Unity-Projekt. Informationen zum Importieren des VSTU-Pakets finden Sie unter "Konfigurieren von Visual Studio-Tools für Unity" auf der Seite [Erste Schritte](../cross-platform/getting-started-with-visual-studio-tools-for-unity.md) .
 
-3.  Generieren Sie neue Projektmappen- und Projektdateien. Wenn Sie sie jetzt generieren möchten, klicken Sie im Unity-Editor im Hauptmenü auf **Visual Studio Tools**, **Generate Project Files**. Andernfalls können Sie diesen Schritt nach Wunsch überspringen. Visual Studio-Tools für Unity generiert die neuen Dateien automatisch, wenn Sie auf **Visual Studio Tools**, **Open in Visual Studio**klicken.  
+3.  Generieren Sie neue Projektmappen- und Projektdateien. Wenn Sie sie jetzt generieren möchten, klicken Sie im Unity-Editor im Hauptmenü auf **Visual Studio Tools**, **Generate Project Files**. Andernfalls können Sie diesen Schritt nach Wunsch überspringen. Visual Studio-Tools für Unity generiert die neuen Dateien automatisch, wenn Sie auf **Visual Studio Tools**, **Open in Visual Studio**klicken.
 
-### <a name="on-windows-visual-studio-asks-to-download-the-unity-target-framework"></a>Unter Windows fordert Visual Studio das Herunterladen des Unity-Zielframeworks an.  
- Visual Studio-Tools für Unity erfordert .NET Framework 3.5, das nicht standardmäßig unter Windows 8 oder 10 installiert ist. Um dieses Problem zu beheben, befolgen Sie die Anweisungen zum Herunterladen und Installieren von .NET Framework 3.5.  
+### <a name="on-windows-visual-studio-asks-to-download-the-unity-target-framework"></a>Unter Windows fordert Visual Studio das Herunterladen des Unity-Zielframeworks an.
+ Visual Studio-Tools für Unity erfordert .NET Framework 3.5, das nicht standardmäßig unter Windows 8 oder 10 installiert ist. Um dieses Problem zu beheben, befolgen Sie die Anweisungen zum Herunterladen und Installieren von .NET Framework 3.5.
 
-## <a name="known-issues"></a>Bekannte Probleme  
- Es gibt bekannte Probleme in Visual Studio-Tools für Unity, deren Ursache die Interaktion des Debuggers mit der älteren Version von Unity des C#-Compilers ist. Wir arbeiten daran, diese Fehler zu beheben, aber in der Zwischenzeit können die folgenden Probleme weiterhin auftreten:  
+## <a name="known-issues"></a>Bekannte Probleme
+ Es gibt bekannte Probleme in Visual Studio-Tools für Unity, deren Ursache die Interaktion des Debuggers mit der älteren Version von Unity des C#-Compilers ist. Wir arbeiten daran, diese Fehler zu beheben, aber in der Zwischenzeit können die folgenden Probleme weiterhin auftreten:
 
--   Beim Debuggen stürzt Unity manchmal ab.  
+-   Beim Debuggen stürzt Unity manchmal ab.
 
--   Beim Debuggen friert Unity manchmal ein.  
+-   Beim Debuggen friert Unity manchmal ein.
 
--   Bei Einzel- und Prozedurschritten für Methoden kommt es mitunter zu einem Fehlverhalten, insbesondere bei Iteratoren oder innerhalb von Switch-Anweisungen.  
+-   Bei Einzel- und Prozedurschritten für Methoden kommt es mitunter zu einem Fehlverhalten, insbesondere bei Iteratoren oder innerhalb von Switch-Anweisungen.
 
-## <a name="reporting-errors"></a>Erstellen von Fehlerberichten  
- Helfen Sie uns, die Qualität von Visual Studio-Tools für Unity zu verbessern, indem Sie Fehlerberichte senden, sollte das Programm abstürzen, einfrieren oder ein anderer Fehler auftreten. Dies hilft uns beim Untersuchen und Beheben von Problemen in Visual Studio-Tools für Unity. Vielen Dank!  
+## <a name="reporting-errors"></a>Erstellen von Fehlerberichten
+ Helfen Sie uns, die Qualität von Visual Studio-Tools für Unity zu verbessern, indem Sie Fehlerberichte senden, sollte das Programm abstürzen, einfrieren oder ein anderer Fehler auftreten. Dies hilft uns beim Untersuchen und Beheben von Problemen in Visual Studio-Tools für Unity. Vielen Dank!
 
-### <a name="how-to-report-an-error-when-visual-studio-freezes"></a>Wie Sie einen Fehler melden, wenn Visual Studio einfriert  
- Uns wurde gemeldet, dass Visual Studio beim Debuggen mit Visual Studio-Tools für Unity mitunter einfriert, aber wir benötigen mehr Daten, um dieses Problem zu verstehen. Sie können uns bei der Untersuchung helfen, indem Sie die folgenden Schritte ausführen.  
+### <a name="how-to-report-an-error-when-visual-studio-freezes"></a>Wie Sie einen Fehler melden, wenn Visual Studio einfriert
+ Uns wurde gemeldet, dass Visual Studio beim Debuggen mit Visual Studio-Tools für Unity mitunter einfriert, aber wir benötigen mehr Daten, um dieses Problem zu verstehen. Sie können uns bei der Untersuchung helfen, indem Sie die folgenden Schritte ausführen.
 
 ##### <a name="to-report-that-visual-studio-freezes-while-debugging-with-visual-studio-tools-for-unity"></a>So melden Sie, dass Visual Studio beim Debuggen mit Visual Studio-Tools für Unity einfriert
 
-*Unter Windows:*  
+*Unter Windows:*
 
 1.  Öffnen Sie eine Instanz von Visual Studio.
 
-2.  Öffnen Sie das Dialogfeld "An den Prozess anhängen". Wählen Sie in der neuen Instanz von Visual Studio im Hauptmenü **Debuggen**, **An den Prozess anhängen**.  
+2.  Öffnen Sie das Dialogfeld "An den Prozess anhängen". Wählen Sie in der neuen Instanz von Visual Studio im Hauptmenü **Debuggen**, **An den Prozess anhängen**.
 
-3.  Hängen Sie den Debugger an die eingefrorene Instanz von Visual Studio an. Wählen Sie im Dialogfeld **An den Prozess anhängen** die eingefrorene Instanz von Visual Studio in der Tabelle **Verfügbare Prozesse** aus, und klicken Sie dann auf die Schaltfläche **Anhängen** .  
+3.  Hängen Sie den Debugger an die eingefrorene Instanz von Visual Studio an. Wählen Sie im Dialogfeld **An den Prozess anhängen** die eingefrorene Instanz von Visual Studio in der Tabelle **Verfügbare Prozesse** aus, und klicken Sie dann auf die Schaltfläche **Anhängen** .
 
-4.  Halten Sie den Debugger an. Klicken Sie in der neuen Instanz von Visual Studio im Hauptmenü auf **Debuggen**, **Alle unterbrechen**, oder drücken Sie **STRG+ALT+UNTRBR**.  
+4.  Halten Sie den Debugger an. Klicken Sie in der neuen Instanz von Visual Studio im Hauptmenü auf **Debuggen**, **Alle unterbrechen**, oder drücken Sie **STRG+ALT+UNTRBR**.
 
-5.  Erstellen Sie einen Thread-Dump. Geben Sie im Befehlsfenster den folgenden Befehl ein, und drücken Sie die **EINGABETASTE**:  
+5.  Erstellen Sie einen Thread-Dump. Geben Sie im Befehlsfenster den folgenden Befehl ein, und drücken Sie die **EINGABETASTE**:
 
-    ```powershell  
-    Debug.ListCallStack /AllThreads /ShowExternalCode  
-    ```  
+    ```powershell
+    Debug.ListCallStack /AllThreads /ShowExternalCode
+    ```
 
-    Möglicherweise müssen Sie zuerst das Fenster **Befehl** einblenden. Wählen Sie in Visual Studio im Hauptmenü **Ansicht**, **Weitere Fenster**, **Befehlsfenster**.  
+    Möglicherweise müssen Sie zuerst das Fenster **Befehl** einblenden. Wählen Sie in Visual Studio im Hauptmenü **Ansicht**, **Weitere Fenster**, **Befehlsfenster**.
 
 *Unter Mac:*
 
 1. Öffnen Sie ein Terminal, und rufen Sie die PID von Visual Studio für Mac ab:
 
-    ```shell  
+    ```shell
     ps aux | grep "[V]isual Studio.app"
     ```
 
 1. Starten Sie den LLDB-Debugger:
 
-    ```shell  
+    ```shell
     lldb
     ```
 
 1. Führen Sie eine Anfügung an die Visual Studio für Mac-Instanz durch:
 
-    ```shell  
+    ```shell
     process attach --pid THE_PID_OF_THE_VSFM_PROCESS
     ```
 
 1. Rufen Sie StackTrace für alle Threads ab:
 
-    ```shell  
+    ```shell
     bt all
     ```
 

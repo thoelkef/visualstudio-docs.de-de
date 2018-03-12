@@ -20,31 +20,31 @@ caps.latest.revision:
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c9d0a098418399dba19b77a12c057a3fba334e31
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a3068a609da2468c59066ccd38f6de87cef1ed17
+ms.sourcegitcommit: 873c0e1a31def013bcca1b0caa0eb0249de89bec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="operators-javascript"></a>Operatoren (JavaScript)
 [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] verfügt über ein breites Spektrum an Operatoren. Dazu gehören arithmetische, logische und bitweise Operatoren, der Zuweisungsoperator sowie weitere Operatoren. Erklärungen und Beispiele finden Sie in den jeweiligen Themen zu bestimmen Operatoren.  
   
 ## <a name="computational-operators"></a>Rechenoperatoren  
   
-|Beschreibung|Symbol|  
+|description|Symbol|  
 |-----------------|------------|  
 |[Unäre Negation](../javascript/reference/subtraction-operator-decrement-javascript.md)|-|  
 |[Inkrement](../javascript/reference/increment-and-decrement-operators-javascript.md)|++|  
 |[Dekrement](../javascript/reference/increment-and-decrement-operators-javascript.md)|--|  
 |[Multiplikation](../javascript/reference/multiplication-operator-decrement-javascript.md)|*|  
 |[Division](../javascript/reference/division-operator-decrement-javascript.md)|/|  
-|[Arithmetischer Modulo](../javascript/reference/modulus-operator-decrementjavascript.md)|%|  
+|[Arithmetischer Restwert](../javascript/reference/modulus-operator-decrementjavascript.md)|%|  
 |[Addition](../javascript/reference/addition-operator-decrement-javascript.md)|+|  
 |[Subtraktion](../javascript/reference/subtraction-operator-decrement-javascript.md)|-|  
   
 ## <a name="logical-operators"></a>Logische Operatoren  
   
-|Beschreibung|Symbol|  
+|description|Symbol|  
 |-----------------|------------|  
 |[logisches NOT](../javascript/reference/logical-not-operator-decrement-exclpt-javascript.md)|!|  
 |[Kleiner als](../javascript/reference/comparison-operators-javascript.md)|\<|  
@@ -62,7 +62,7 @@ ms.lasthandoff: 10/27/2017
   
 ## <a name="bitwise-operators"></a>Bitweise Operatoren  
   
-|Beschreibung|Symbol|  
+|description|Symbol|  
 |-----------------|------------|  
 |[Bitweises NOT](../javascript/reference/bitwise-not-operator-decrement-tilde-javascript.md)|~|  
 |[Bitweise Linksverschiebung](../javascript/reference/bitwise-left-shift-operator-decrement-javascript.md)|<\<|  
@@ -74,14 +74,14 @@ ms.lasthandoff: 10/27/2017
   
 ## <a name="assignment-operators"></a>Zuweisungsoperatoren  
   
-|Beschreibung|Symbol|  
+|description|Symbol|  
 |-----------------|------------|  
 |[Zuweisung](../javascript/reference/assignment-operator-decrement-equal-javascript.md)|=|  
 |[Verbundzuweisung](../javascript/reference/compound-assignment-operators-javascript.md)|*OP*= (wie += und &=)|  
   
 ## <a name="miscellaneous-operators"></a>Verschiedene Operatoren  
   
-|Beschreibung|Symbol|  
+|description|Symbol|  
 |-----------------|------------|  
 |[delete](../javascript/reference/delete-operator-decrementjavascript.md)|Löschen|  
 |[typeof](../javascript/reference/typeof-operator-decrementjavascript.md)|typeof|  

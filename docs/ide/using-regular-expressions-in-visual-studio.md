@@ -21,11 +21,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 077bb266e6ed55bfe59ec4e537b516ccde59e0c3
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 43d566472a71b19ba9588a4564724d1ec8f5d933
+ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="using-regular-expressions-in-visual-studio"></a>Verwenden von regulären Ausdrücken in Visual Studio
 
@@ -56,11 +56,11 @@ Hier einige Beispiele:
 |Aufheben der Gültigkeit einer Übereinstimmung|(?!abc)|`real (?!ity)` findet „real“ in „realty“ und „really“, jedoch nicht in „reality“. Findet außerdem das zweite "real" (jedoch nicht das erste "real") in "realityreal".|
 |Übereinstimmung mit beliebigem Zeichen, das sich nicht in einem angegebenen Satz von Zeichen befindet|[^abc]|`be[^n-t]` findet „bef“ in „before“, „beh“ in „behind“ und „bel“ in „below“, jedoch nicht „beneath“.|
 |Übereinstimmung mit dem Ausdruck vor oder nach dem Symbol.|&#124;|`(sponge&#124;mud) bath` findet „sponge bath“ und „mud bath“.|
-|Versehen des Zeichens hinter dem umgekehrten Schrägstrich mit Escapezeichen|\\|`\^` findet das Zeichen „^“.|
+|Versehen des Zeichens hinter dem umgekehrten Schrägstrich mit Escapezeichen| \\ |`\^` findet das Zeichen „^“.|
 |Angeben der Anzahl von Vorkommen des vorherigen Zeichens oder der Gruppe|{x}, wobei x die Anzahl von Vorkommen ist|`x(ab){2}x` findet „xababx“ und `x(ab){2,3}x` findet „xababx“ und „xabababx“, jedoch nicht „xababababx“.|
 |Übereinstimmung von Text in einer Unicode-Zeichenklasse, wobei „X“ der Unicode-Zahl entspricht. Weitere Informationen zu Unicode-Zeichenklassen finden Sie unter<br /><br /> [Unicode Standard 5.2 Character Properties (Unicode-Standard 5.2-Zeicheneigenschaften)](http://www.unicode.org/versions/Unicode5.2.0/ch04.pdf).|\p{X}|`\p{Lu}` findet „T“ und „D“ in „Thomas Doe“.|
 |Übereinstimmung mit einer Wortgrenze|`\b` (Außerhalb einer Zeichenklasse gibt „\b“ eine Wortgrenze an und innerhalb einer Zeichenklasse gibt es eine Rücktaste an.)|`\bin` findet „in“ in „inside“, jedoch nicht „pinto“.|
-|Übereinstimmung mit Zeilenumbruch (d. h. ein Wagenrücklaufzeichen gefolgt von einer neuen Zeile).|\r?\n|`End\r?\nBegin` findet „End“ und „Begin“ nur, wenn „End“ als letzte Zeichenfolge in einer Zeile vorkommt und „Begin“ als erste Zeichenfolge in der nächsten Zeile.|
+|Übereinstimmung mit Zeilenumbruch (d.h. ein Wagenrücklaufzeichen gefolgt von einer neuen Zeile).|\r?\n|`End\r?\nBegin` findet „End“ und „Begin“ nur, wenn „End“ als letzte Zeichenfolge in einer Zeile vorkommt und „Begin“ als erste Zeichenfolge in der nächsten Zeile.|
 |Übereinstimmung mit beliebigem alphanumerischen Zeichen|\w|`a\wd` findet „add“ und „a1d“, jedoch nicht „a d“.|
 |Übereinstimmung mit beliebigem Leerzeichen.|(?([^\r\n])\s)|`Public\sInterface` findet den Begriff „Public Interface“.|
 |Übereinstimmung mit beliebigem numerischen Zeichen|\d|`\d` findet „3“ in „3456“, „2“ in „23“ und „1“ in „1“.|

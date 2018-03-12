@@ -1,45 +1,49 @@
 ---
-title: Festlegen von Lesezeichen im Code | Microsoft-Dokumentation
+title: Festlegen von Codetextmarken in Visual Studio | Microsoft-Dokumentation
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 02/23/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
 - VS.BookmarkWindow
 ms.assetid: a752ed5f-5cf9-4bf2-865a-2131ca600ed5
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 8bf8367b3e4f0d20db435e16f9843e6d431c068b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: ecf0aa9d18b02cffb68c68e5c844a726c749a0a3
+ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/02/2018
 ---
-# <a name="setting-bookmarks-in-code"></a>Festlegen von Lesezeichen im Code
+# <a name="set-bookmarks-in-code"></a>Festlegen von Textmarken im Code
 
-Sie können Lesezeichen verwenden, um Zeilen im Code zu markieren, sodass Sie schnell zu einer bestimmten Stelle zurückkehren und zwischen Stellen hin- und herwechseln können. Lesezeichenbefehle und -symbole sind an zwei Stellen verfügbar: im Lesezeichenfenster (**Ansicht** > **Lesezeichenfenster**) und in der Text-Editor-Symbolleiste.
+Sie können Textmarken verwenden, um Zeilen im Code zu markieren, sodass Sie schnell zu einer bestimmten Stelle zurückkehren und zwischen Stellen hin- und herwechseln können. Textmarkenbefehle und -symbole sind an zwei Stellen verfügbar: im **Textmarkenfenster** (**Ansicht** > **Textmarkenfenster**) und in der Text-Editor-Symbolleiste.
 
-## <a name="managing-bookmarks"></a>Verwalten von Lesezeichen
+![Textmarkensymbolleiste](media/bookmark-toolbar.png)
 
-Um ein Lesezeichen hinzuzufügen, platzieren Sie den Cursor in der Zeile, die Sie mit einem Lesezeichen versehen möchten. Klicken Sie auf die Schaltfläche **Ein-/Ausschalten**, oder drücken Sie STRG+K. Dadurch wird das Lesezeichen hinzugefügt. Wenn Sie nochmals auf die Schaltfläche "Ein-/Ausschalten" klicken (oder STRG+K drücken), wird das Lesezeichen entfernt. Sie können Lesezeichen auch löschen, indem Sie im Lesezeichenfenster auf die Schaltfläche **Löschen** klicken.
+![Lesezeichenfenster](media/bookmark-window.png)
+
+## <a name="manage-bookmarks"></a>Verwalten von Textmarken
+
+Um ein Lesezeichen hinzuzufügen, platzieren Sie den Cursor in der Zeile, die Sie mit einem Lesezeichen versehen möchten. Klicken Sie auf die Schaltfläche **Textmarke ein/aus**, oder drücken Sie **STRG**+**K**, **STRG**+**K**. Dadurch wird das Lesezeichen hinzugefügt. Wenn Sie nochmals auf die Schaltfläche **Textmarke ein/aus** klicken (oder **STRG**+**K**, **STRG**+**K** drücken), wird die Textmarke entfernt.
+
+Um sofort zu wissen, welchem Zweck eine bestimmte Textmarke dient, können Sie sie über das Kontextmenü im **Textmarkenfenster** umbenennen. Sie können Textmarken auch löschen, indem Sie im Textmarkenfenster auf die Schaltfläche **Löschen** klicken.
 
 > [!IMPORTANT]
 > Das Lesezeichen ist auf die Zeilennummer, nicht auf den Code festgelegt. Wenn Sie den Code ändern, wird das Lesezeichen an der Zeilennummer beibehalten und nicht mit dem Code verschoben.
 
-Sie können zwischen Lesezeichen mithilfe der Schaltflächen **Nächstes Lesezeichen** und **Vorheriges Lesezeichen** im Lesezeichenfenster navigieren.
+Sie können zwischen Textmarken mithilfe der Schaltflächen **Nächste Textmarke** und **Vorherige Textmarke** im Textmarkenfenster navigieren.
 
-Sie können Lesezeichen in virtuellen Ordnern organisieren, indem Sie im Lesezeichenfenster auf **Neuer Ordner** klicken und dann ausgewählte Lesezeichen in den neuen Ordner ziehen.
+Sie können Textmarken in virtuellen Ordnern organisieren, indem Sie im Textmarkenfenster auf **Neuer Ordner** klicken und dann ausgewählte Textmarken in den neuen Ordner ziehen.
 
-Sie können Lesezeichen deaktivieren (ohne sie zu entfernen), indem Sie im Lesezeichenfenster auf die Schaltfläche **Alle Lesezeichen deaktivieren** klicken. Sie können sie erneut aktivieren, indem Sie auf dieselbe Schaltfläche klicken (die jetzt den Namen **Alle Lesezeichen aktivieren** aufweist).
+Sie können Textmarken deaktivieren (ohne sie zu entfernen), indem Sie im Textmarkenfenster auf die Schaltfläche **Alle Textmarken deaktivieren** klicken. Sie können sie erneut aktivieren, indem Sie auf dieselbe Schaltfläche klicken (die jetzt den Namen **Alle Textmarken aktivieren** aufweist).
 
 ## <a name="see-also"></a>Siehe auch
 
-[Schreiben von Code im Editor](../ide/writing-code-in-the-code-and-text-editor.md)
+- [Schreiben von Code im Editor](../ide/writing-code-in-the-code-and-text-editor.md)

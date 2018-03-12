@@ -14,11 +14,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fc4946c79b16b3fb28e0991ff38cfe96e22a9e1
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: bb2e7a3dcd800367ab54945cb0c406ce7afcf45a
+ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="visual-studio-ide-overview"></a>Übersicht über die Visual Studio-IDE
 
@@ -88,7 +88,7 @@ Weitere Informationen zum Einrichten von Visual Studio auf Ihrem System finden S
 
 ## <a name="sign-in"></a>Anmelden
 
-Wenn Sie Visual Studio zum ersten Mal starten, können Sie sich optional mit Ihrem Microsoft-Konto oder Ihrem Geschäfts-, Schul- oder Unikonto anmelden. Wenn Sie angemeldet sind, können Sie Visual Studio-Einstellungen, z.B. Fensterlayouts, auf mehreren Geräten synchronisieren. Es wird außerdem automatisch eine Verbindung mit den möglicherweise benötigten Diensten hergestellt, z.B. mit Azure-Abonnements und [Visual Studio Team Services](/vsts/).
+Wenn Sie Visual Studio zum ersten Mal starten, können Sie sich optional mit Ihrem Microsoft-Konto oder Ihrem Arbeits- oder Schulkonto anmelden. Wenn Sie angemeldet sind, können Sie Visual Studio-Einstellungen, z.B. Fensterlayouts, auf mehreren Geräten synchronisieren. Es wird außerdem automatisch eine Verbindung mit den möglicherweise benötigten Diensten hergestellt, z.B. mit Azure-Abonnements und [Visual Studio Team Services](/vsts/).
 
 ## <a name="create-a-program"></a>Erstellen eines Programms
 
@@ -190,7 +190,7 @@ Im Folgenden werden einige weitere allgemeine Produktivitätsfunktionen in Visua
 
  ![Umgestaltung](../ide/media/VSIDE_refactor.png)
 
-- **IntelliSense** ist der Oberbegriff für einen Satz von beliebten Features, mit denen Typinformationen über den Code direkt im Editor angezeigt und in einigen Fällen kleine Codeabschnitte für Sie geschrieben werden. Damit verfügen Sie über eine grundlegende Dokumentation, die in den Editor integriert ist, sodass Sie die Typinformationen nicht mehr in einem separaten Hilfefenster nachschauen müssen. Die Features von IntelliSense variieren je nach Sprache. Weitere Informationen finden Sie unter [C#-IntelliSense](../ide/visual-csharp-intellisense.md), [Visual C++ Intellisense](../ide/visual-cpp-intellisense.md), [JavaScript IntelliSense](../ide/javascript-intellisense.md) und [Visual Basic IntelliSense](../ide/visual-basic-specific-intellisense.md). Die folgende Abbildung zeigt einige IntelliSense-Features:
+- **IntelliSense** ist der Oberbegriff für einen Satz von beliebten Features, mit denen Typinformationen über den Code direkt im Editor angezeigt und in einigen Fällen kleine Codeabschnitte für Sie geschrieben werden. Damit verfügen Sie über eine grundlegende Dokumentation, die in den Editor integriert ist, sodass Sie die Typinformationen nicht mehr in einem separaten Hilfefenster nachschauen müssen. Die Features von IntelliSense variieren je nach Sprache. Weitere Informationen finden Sie unter [C#-IntelliSense](../ide/visual-csharp-intellisense.md), [Visual C++ IntelliSense](../ide/visual-cpp-intellisense.md), [JavaScript IntelliSense](../ide/javascript-intellisense.md) und [Visual Basic IntelliSense](../ide/visual-basic-specific-intellisense.md). Die folgende Abbildung zeigt einige IntelliSense-Features:
 
   ![Visual Studio, Member-Liste](../ide/media/vs2017_Intellisense.png)
 

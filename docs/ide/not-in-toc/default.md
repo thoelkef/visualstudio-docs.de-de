@@ -1,8 +1,6 @@
 ---
 title: "Standardseite für F1 in Visual Studio | Microsoft-Dokumentation"
-ms.date: 01/01/2018
-ms.reviewer: 
-ms.suite: 
+ms.date: 02/28/2018
 ms.topic: article
 robots: noindex,nofollow
 f1_keywords:
@@ -10,17 +8,29 @@ f1_keywords:
 - vs.ambient
 manager: ghogen
 ms.technology: vs-ide-general
-ms.openlocfilehash: f4c6e344acba0774a6a6a6f2dfe83bab9ff5ca18
-ms.sourcegitcommit: 238cd48787391aa0ed1eb684f3f04e80f7958705
+ms.openlocfilehash: 65f5e31060f745adfd5dd18460b0a9984064f660
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 02/28/2018
 ---
 # F1-Hilfe
 
-Anscheinend wurden Sie versehentlich zu dieser Seite weitergeleitet. Wenn Sie ein Schlüsselwort oder einen API-Namen in der F1-Hilfe suchen möchten, positionieren Sie den Cursor in das Wort oder direkt rechts neben dem Wort, bevor Sie **F1** drücken. Wenn dies ebenfalls nicht funktionieren sollte, führen Sie eine Suche auf „https://docs.microsoft.com“ durch.
+Leider konnte der von Ihnen gesuchte Inhalt nicht gefunden werden. Unterstützen Sie uns dabei, uns zu [verbessern](#help-us-improve-f1).
 
-Unterstützung zur Verwendung des Text-Editors selbst finden Sie unter [Schreiben von Code in den Code-Editor](../../ide/writing-code-in-the-code-and-text-editor.md).
+## Cursorposition
+
+Wenn Sie ein Schlüsselwort oder einen API-Namen in der F1-Hilfe suchen möchten, positionieren Sie den Cursor in das Wort oder direkt rechts neben dem Wort, bevor Sie **F1** drücken. Wenn das Problem weiterhin besteht, wählen Sie eine Option aus der Liste [Nützliche Links](#useful-links) aus, oder führen Sie eine Suche unter „https://docs.microsoft.com“ durch.
+
+## Nützliche Links
+
+- Allgemeine Informationen zu Visual Studio finden Sie unter [Überblick über Visual Studio](../../ide/visual-studio-ide.md).
+- Unterstützung zum Text-Editor von Visual Studio finden Sie unter [Verwendung des Code-Editors](../../ide/writing-code-in-the-code-and-text-editor.md).
+- Unterstützung zu C# finden Sie im [C#-Leitfaden](/dotnet/csharp/index).
+- Unterstützung zu Visual Basic finden Sie im [Visual Basic-Leitfaden](/dotnet/visual-basic/).
+- Unterstützung zu F# finden Sie im [F#-Leitfaden](/dotnet/fsharp/).
+- Unterstützung zu Python finden Sie unter [Python in Visual Studio](../../python/overview-of-python-tools-for-visual-studio.md).
+- Unterstützung zu C++ finden Sie unter [C++ in Visual Studio](/cpp/visual-cpp-in-visual-studio).
 
 ## Unterstützen Sie uns bei der Verbesserung von F1
 

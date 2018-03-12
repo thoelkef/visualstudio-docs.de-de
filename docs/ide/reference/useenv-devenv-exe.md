@@ -19,32 +19,38 @@ helpviewer_keywords:
 - /UseEnv Devenv switch
 - Devenv, /UseEnv
 ms.assetid: 2dd14603-a61b-42d2-ba31-427a0ee8a799
-caps.latest.revision: "6"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 03d1bbe55ed1b355742f9cd2d3dedc1b66812bbc
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 4c48e9f22322cd5ebebeff0d987c32d369f98d03
+ms.sourcegitcommit: 873c0e1a31def013bcca1b0caa0eb0249de89bec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="useenv-devenvexe"></a>/UseEnv (devenv.exe)
-Startet [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] und lädt die Umgebungsvariablen in das Dialogfeld **VC++-Verzeichnisse**.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```  
-Devenv /useenv  
-```  
-  
-## <a name="example"></a>Beispiel  
- Im folgenden Beispiel wird [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] gestartet und die Umgebungsvariablen in das Dialogfeld **VC++-Verzeichnisse** geladen.  
-  
-```  
-Devenv.exe /useenv  
-```  
-  
-## <a name="see-also"></a>Siehe auch  
- [Devenv-Befehlszeilenschalter](../../ide/reference/devenv-command-line-switches.md)
+
+Startet Visual Studio und lädt die Umgebungsvariablen in das Dialogfeld **VC++-Verzeichnisse**.
+
+> [!NOTE]
+> Dieser Schalter wird mit der Workload **Desktopentwicklung mit C++** installiert.
+
+## <a name="syntax"></a>Syntax
+
+```shell
+Devenv /useenv
+```
+
+## <a name="example"></a>Beispiel
+
+Im folgenden Beispiel wird Visual Studio gestartet, und die Umgebungsvariablen werden in das Dialogfeld **VC++-Verzeichnisse** geladen.
+
+```shell
+Devenv.exe /useenv
+```
+
+## <a name="see-also"></a>Siehe auch
+
+* [Devenv-Befehlszeilenschalter](../../ide/reference/devenv-command-line-switches.md)
