@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -19,7 +20,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: c81cba2c80f8eaabeae15fc5425ed7e02c378123
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -69,7 +71,7 @@ ms.lasthandoff: 01/10/2018
  Office-Projekte in Visual Studio 2015 können nur [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] und [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] als Zielanwendung verwenden. Visual Studio ändert das Projekt so, dass die aktuellste Version von Office als Zielversion verwendet wird, die Sie installiert haben. Wenn keine dieser Versionen von Office installiert ist, aktualisiert Visual Studio das Projekt nicht.  
   
 > [!NOTE]  
->  Wenn Sie ein VSTO-Add-in-Projekt Ziel aktualisieren [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] oder höher, stellen Sie sicher, dass die `ThisAddIn_Startup` -Ereignishandler des VSTO-Add-Ins keinen Code, der ein Dokument in der Anwendung zugreift enthält. Weitere Informationen finden Sie unter [Accessing a Document When the Office Application Starts](../vsto/programming-vsto-add-ins.md#AccessingDocuments).  
+>  Wenn Sie ein VSTO-Add-in-Projekt Ziel aktualisieren [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] oder höher, stellen Sie sicher, dass die `ThisAddIn_Startup` -Ereignishandler des VSTO-Add-Ins keinen Code, der ein Dokument in der Anwendung zugreift enthält. Weitere Informationen finden Sie unter [Zugreifen auf ein Dokument beim Starten der Office-Anwendung](../vsto/programming-vsto-add-ins.md#AccessingDocuments).  
   
  Bei Anpassungen auf Dokumentebene konvertiert [!INCLUDE[vs_current_short](../sharepoint/includes/vs-current-short-md.md)] Dokumente mit Binärformat in einem Projekt, z. B. Dokumente mit XLS- oder DOC-Erweiterung, in das Office Open XML-Format. Weitere Informationen zu Open XML finden Sie unter [Einführung in neue Dateinamenerweiterungen und Microsoft Office Open XML-Formate](https://support.office.com/en-nz/article/Introduction-to-new-file-name-extensions-eca81dcb-5626-4e5b-8362-524d13ae4ec1).  
   
@@ -83,7 +85,7 @@ ms.lasthandoff: 01/10/2018
  Falls das Dokument im Projekt Windows Forms-Steuerelemente enthält, müssen Sie die Visual Studio 2005-Tools für Office Second Edition-Laufzeit installieren, bevor Sie das Projekt aktualisieren. Wenn diese Version der Laufzeit vor dem Aktualisieren des Projekts nicht auf dem Entwicklungscomputer installiert wird, können im aktualisierten Projekt Kompilier- oder Laufzeitfehler auftreten. Nachdem Sie das Projekt aktualisiert haben, können Sie die Visual Studio 2005-Tools für Office Second Edition-Laufzeit vom Entwicklungscomputer deinstallieren, wenn sie nicht von anderen Office-Projektmappen verwendet wird. Diese Version der Laufzeit steht im Microsoft Download Center unter [Microsoft Visual Studio 2005-Tools für Office Second Edition-Laufzeit (VSTO 2005 SE) (x86)](http://go.microsoft.com/fwlink/?linkid=49612)als verteilbares Paket zur Verfügung.  
   
 ### <a name="vsto-add-in-projects"></a>VSTO-Add-In-Projekte  
- Wenn die Projektmappendatei für das ursprüngliche Projekt ein Setup- oder InstallShield Limited Edition-Projekt enthielt, das dafür konfiguriert war, das VSTO-Add-In zu installieren, aktualisiert Visual Studio das Projekt, nimmt jedoch keine weiteren Änderungen am Projekt vor. Wenn Sie das VSTO-Add-In weiterhin mit einer Windows Installer-Datei bereitstellen möchten, muss das Setup- oder InstallShield Limited Edition-Projekt so geändert werden, dass neue erforderliche Komponenten wie [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)], Visual Studio 2010 Tools für Office-Laufzeit und optional die primären Interopassemblys, auf die durch das VSTO-Add-In verwiesen wird, installiert werden. Weitere Informationen finden Sie unter [Deploying an Office Solution by Using Windows Installer](../vsto/deploying-an-office-solution-by-using-windows-installer.md).  
+ Wenn die Projektmappendatei für das ursprüngliche Projekt ein Setup- oder InstallShield Limited Edition-Projekt enthielt, das dafür konfiguriert war, das VSTO-Add-In zu installieren, aktualisiert Visual Studio das Projekt, nimmt jedoch keine weiteren Änderungen am Projekt vor. Wenn Sie das VSTO-Add-In weiterhin mit einer Windows Installer-Datei bereitstellen möchten, muss das Setup- oder InstallShield Limited Edition-Projekt so geändert werden, dass neue erforderliche Komponenten wie [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)], Visual Studio 2010 Tools für Office-Laufzeit und optional die primären Interopassemblys, auf die durch das VSTO-Add-In verwiesen wird, installiert werden. Weitere Informationen finden Sie unter [Bereitstellen einer Office-Lösung mithilfe von Windows Installer](../vsto/deploying-an-office-solution-by-using-windows-installer.md).  
   
  Wenn Sie das VSTO-Add-In mit ClickOnce bereitstellen möchten, können Sie das Setup- oder das InstallShield Limited- Edition-Projekt vollständig löschen. Weitere Informationen zum Bereitstellen von VSTO-Add-ins mithilfe von ClickOnce finden Sie unter [Bereitstellen einer Office-Lösung](../vsto/deploying-an-office-solution.md).  
   
