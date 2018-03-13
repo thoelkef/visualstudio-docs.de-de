@@ -11,11 +11,11 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 053bd6077fa98142cd74eae58ce3df949291c326
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: f15239ed045185449735ec3b5e0bcdc514fa786d
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="visual-studio-2017-for-net-developers"></a>Visual Studio 2017 für .NET-Entwickler
 
@@ -40,9 +40,9 @@ Sie können mühelos im .NET-Code navigieren, indem Sie mit der Tastenkombinatio
 
 [Dokumentation: Refactorings und Schnelle Aktionen](refactoring-code-generation-quick-actions.md)
 
-Visual Studio verfügt über Codediagnose in Echtzeit. Durch das Erkennen von Fehlern und potenziell problematischem Code unterstützt Visual Studio Sie dabei, die Qualität Ihres Codes zu verbessern. Sie können schnelle Aktionen (**STRG+.**) verwenden, um erkannte Probleme in Ihrem Dokument, Projekt oder in Ihrer Projektmappe zu beheben. Aktivieren Sie *full-solution analysis* (Vollständige Analyse der Projektmappe), um sämtliche Probleme Ihrer gesamten Projektmappe zu identifizieren, auch wenn die entsprechenden Dateien im Editor gerade nicht geöffnet sind.
+Visual Studio verfügt über Codediagnose in Echtzeit. Durch das Erkennen von Fehlern und potenziell problematischem Code unterstützt Visual Studio Sie dabei, die Qualität Ihres Codes zu verbessern. Sie können schnelle Aktionen (**STRG**+**.**) verwenden, um erkannte Probleme in Ihrem Dokument, Projekt oder in Ihrer Projektmappe zu beheben. Aktivieren Sie *full-solution analysis* (Vollständige Analyse der Projektmappe), um sämtliche Probleme Ihrer gesamten Projektmappe zu identifizieren, auch wenn die entsprechenden Dateien im Editor gerade nicht geöffnet sind.
 
-Darüber hinaus können Sie Codevorschläge verwenden, um bewährte Methoden sowie das Verwenden von Stubs, das Generieren und Umgestalten von Code und das Übernehmen neuer Sprachfeatures mit der Tastenkombination **STRG+.** zu erlernen. .
+Darüber hinaus können Sie Codevorschläge verwenden, um bewährte Methoden sowie das Verwenden von Stubs, das Generieren und Umgestalten von Code und das Übernehmen neuer Sprachfeatures mit der Tastenkombination **STRG**+**.** zu erlernen. .
 
 ![Schnellkorrekturen und Refactorings über das Glühbirnenmenü anwenden](../ide/media/VSIDE_Productivity_CodeAnalysis.png "VSIDE_Productivity_CodeAnalysis")
 
@@ -59,7 +59,7 @@ Sie können Ihre Komponententests auf Basis der Testframeworks MSTest, NUnit und
 - [Dokumentation: portable, benutzerdefinierte Editor-Optionen](create-portable-custom-editor-options.md)
 - [Dokumentation: EditorConfig-Codeformateinstellungen für .NET](editorconfig-code-style-settings-reference.md)
 
-Visual Studio ermöglicht das Konfigurieren von Codierungskonventionen, erkennt Verstöße gegen den Codierungsstil und ermöglicht Schnellkorrekturen zum Beheben von Stilproblemen über die Tastenkombination **STRG+.** . Mithilfe von *EditorConfig* können Sie die Konventionen Ihres Teams in puncto Formatieren, Benennen und Programmierstil für ein Repository konfigurieren und dort zwingend vorgeben. Ebenso können Sie damit das Überschreiben von Werten auf Projekt- und Dateiebene erlauben.
+Visual Studio ermöglicht das Konfigurieren von Codierungskonventionen, erkennt Verstöße gegen den Codierungsstil und ermöglicht Schnellkorrekturen zum Beheben von Stilproblemen über die Tastenkombination **STRG**+**.** . Mithilfe von *EditorConfig* können Sie die Konventionen Ihres Teams in puncto Formatieren, Benennen und Programmierstil für ein Repository konfigurieren und dort zwingend vorgeben. Ebenso können Sie damit das Überschreiben von Werten auf Projekt- und Dateiebene erlauben.
 
 ![Konfigurieren und Erzwingen von Codierungskonventionen mit EditorConfig](../ide/media/VSIDE_Productivity_CodeStyle.png "VSIDE_Productivity_CodeStyle")
 
@@ -105,7 +105,7 @@ Im Folgenden finden Sie beliebte Tastenkombinationen für Visual Studio. Beachte
 | **F12** (oder **STRG+Klicken**) | Gehe zu Definition | Navigieren zum Ort, an dem ein Symbol definiert ist |
 | **STRG+F12** | Gehe zu Implementierung | Navigieren von einem Basistyp oder Member zu seinen verschiedenen Implementierungen |
 | **UMSCHALT+F12** | Alle Verweise suchen | Alle Symbol- oder Literalverweise ansehen |
-| **STRG+.** (auch **Alt+EINGABETASTE** in C# Profile) | Schnellaktionen und Refactorings | Ansehen, welche Codekorrekturen, Aktionen zum Generieren von Code, Refactorings oder anderen Schnellaktionen an der Cursorposition oder für den markierten Code zur Verfügung stehen. |
+| **STRG**+**.** (auch **Alt+EINGABETASTE** in C# Profile) | Schnellaktionen und Refactorings | Ansehen, welche Codekorrekturen, Aktionen zum Generieren von Code, Refactorings oder anderen Schnellaktionen an der Cursorposition oder für den markierten Code zur Verfügung stehen. |
 | **STRG**+**E**,**V** | Zeile duplizieren | Die Codezeile, in der sich der Cursor befindet, wird dupliziert (verfügbar in **Visual Studio 2017 Version 15.6 Vorschauversion 2** und höher) |
 | **STRG+Q** | Schnellstart | Durchsuchen aller Visual Studio-Einstellungen |
 | **F5** | Debugging starten | Debugging der Anwendung starten |
