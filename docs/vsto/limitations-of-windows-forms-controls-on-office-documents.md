@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -23,7 +24,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: 2c8795b643afff2cc02d507a1764871aa0e0e181
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -96,7 +98,7 @@ ms.lasthandoff: 01/10/2018
 |Größenanpassung des Steuerelements|Wenn die Größe eines Steuerelements im Dokument mit einer der acht Ziehpunkte werden die neuen Steuerelement Dimensionen nicht wiedergegeben der **Eigenschaften** Fenster bis zu das Steuerelement wieder aktiviert wird.|  
 |Verhalten des Steuerelements|Steuerelemente in einem Excel-Arbeitsblatt möglicherweise unvorhersehbar reagieren, wenn das Arbeitsblattfenster aufgeteilt wird. Z. B. der Zugriff auf eine <xref:Microsoft.Office.Tools.Excel.Controls.TextBox> im Arbeitsblatt möglicherweise nur zur Verfügung in eines der Fenster.|  
 |Benennung von Steuerelementen|Sie können keine reservierte Wörter für Name-Steuerelemente. Angenommen, Sie fügen eine <xref:Microsoft.Office.Tools.Excel.Controls.Button> zu einem Arbeitsblatt und ändern Sie den Namen in **System**, Fehler auftreten, wenn Sie das Projekt erstellen.|  
-|Programmgesteuertes Hinzufügen von Steuerelementen|Verwenden Sie zum Hinzufügen eines Steuerelements zu Ihrem Dokument zur Laufzeit nicht Konstruktor des Steuerelements. Verwenden Sie stattdessen die Hilfsmethoden, die von der [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Verwenden Sie z. B. die <xref:Microsoft.Office.Tools.Excel.ControlExtensions.AddButton%2A> Methode, um einem Arbeitsblatt eine Schaltfläche hinzuzufügen. Wenn Sie möchten ein Steuerelement hinzufügen, die von den Hilfsmethoden nicht unterstützt wird, können Sie die AddControl-Methode verwenden. Weitere Informationen finden Sie unter [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md).|  
+|Programmgesteuertes Hinzufügen von Steuerelementen|Verwenden Sie zum Hinzufügen eines Steuerelements zu Ihrem Dokument zur Laufzeit nicht Konstruktor des Steuerelements. Verwenden Sie stattdessen die Hilfsmethoden, die von der [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Verwenden Sie z. B. die <xref:Microsoft.Office.Tools.Excel.ControlExtensions.AddButton%2A> Methode, um einem Arbeitsblatt eine Schaltfläche hinzuzufügen. Wenn Sie möchten ein Steuerelement hinzufügen, die von den Hilfsmethoden nicht unterstützt wird, können Sie die AddControl-Methode verwenden. Weitere Informationen finden Sie unter [Hinzufügen von Steuerelementen zu Office-Dokumenten zur Laufzeit](../vsto/adding-controls-to-office-documents-at-run-time.md).|  
 |Kopieren der Steuerelemente|Wenn Sie ein Windows Forms-Steuerelement kopieren und fügen Sie ihn in ein Dokument zur Laufzeit, wird ein leerer Container ActiveX-Steuerelement in das Dokument eingefügt. Windows Forms-Steuerelement nicht in den neuen Speicherort angezeigt, und Code hinter dem ursprünglichen Steuerelement nicht in der ActiveX-Steuerelement-Container kopiert wird.|  
   
 ## <a name="limitations-in-document-level-projects"></a>Beschränkungen in Projekten auf Dokumentebene  

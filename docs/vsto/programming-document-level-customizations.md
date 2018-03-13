@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -30,7 +31,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: a614173fc33547c3512c031b7e0bd8a5575e7cb2
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -130,7 +132,7 @@ Globals.ThisDocument.Save();
 ## <a name="managing-documents-on-a-server"></a>Verwalten von Dokumenten auf einem Server  
  Sie können verschiedene Aspekte von Anpassungen auf Dokumentebene auf einem Server verwalten, auf dem Microsoft Office Word oder Microsoft Office Excel nicht installiert ist. Beispielsweise können Sie auf Daten im Datencache des Dokuments zugreifen und diese Daten ändern. Sie können auch die Anpassungsassembly verwalten, die dem Dokument zugeordnet ist. Sie können beispielsweise die Assembly programmgesteuert aus dem Dokument entfernen, sodass das Dokument den Code nicht mehr ausführt, oder Sie können eine Assembly programmgesteuert an ein Dokument anfügen.  
   
- Weitere Informationen finden Sie unter [Managing Documents on a Server by Using the ServerDocument Class](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md).  
+ Weitere Informationen finden Sie unter [Verwalten von Dokumenten auf einem Server mit der ServerDocument-Klasse](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md).  
   
 ## <a name="customizing-the-user-interface-of-microsoft-office-applications"></a>Anpassen der Benutzeroberfläche von Microsoft Office-Anwendungen  
  Sie können die Benutzeroberfläche von Word und Excel mithilfe einer Anpassung auf Dokumentebene folgendermaßen anpassen:  
@@ -165,7 +167,7 @@ Globals.ThisDocument.Save();
   
 -   Verwenden Sie die GetVstoObject-Methode, wenn das erweiterte Objekt für ein systemeigenes Office-Objekt abgerufen werden soll. Diese Methode gibt ein <xref:Microsoft.Office.Tools.Excel.ListObject>-, <xref:Microsoft.Office.Tools.Excel.Workbook>-, <xref:Microsoft.Office.Tools.Excel.Worksheet>- oder <xref:Microsoft.Office.Tools.Word.Document> -Objekt zurück, wenn das angegebene systemeigene Office-Objekt ein solches Objekt hat. GetVstoObject-Methode hingegen gibt **null**. GetVstoObject-Methode gibt z. B. eine <xref:Microsoft.Office.Tools.Word.Document> Wenn das angegebene <xref:Microsoft.Office.Interop.Word.Document> ist das zugrunde liegende Objekt für das Dokument im Word-Dokument-Projekt.  
   
- In Projekten auf Dokumentebene können Sie keine GetVstoObject-Methode zum Erstellen eines neuen <xref:Microsoft.Office.Tools.Excel.Workbook>, <xref:Microsoft.Office.Tools.Excel.Worksheet>, oder <xref:Microsoft.Office.Tools.Word.Document> Hostelements zur Laufzeit. Sie können diese Methode nur für den Zugriff auf vorhandene Hostelemente verwenden, die zur Entwurfszeit in Ihrem Projekt generiert werden. Wenn Sie neue Hostelemente zur Laufzeit erstellen möchten, müssen Sie ein VSTO-Add-In-Projekt entwickeln. Weitere Informationen finden Sie unter [Programmatic Limitations of Host Items and Host Controls](../vsto/programmatic-limitations-of-host-items-and-host-controls.md) und [Extending Word Documents and Excel Workbooks in VSTO Add-ins at Run Time](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
+ In Projekten auf Dokumentebene können Sie keine GetVstoObject-Methode zum Erstellen eines neuen <xref:Microsoft.Office.Tools.Excel.Workbook>, <xref:Microsoft.Office.Tools.Excel.Worksheet>, oder <xref:Microsoft.Office.Tools.Word.Document> Hostelements zur Laufzeit. Sie können diese Methode nur für den Zugriff auf vorhandene Hostelemente verwenden, die zur Entwurfszeit in Ihrem Projekt generiert werden. Wenn Sie neue Hostelemente zur Laufzeit erstellen möchten, müssen Sie ein VSTO-Add-In-Projekt entwickeln. Weitere Informationen finden Sie unter [Programmgesteuerte Einschränkungen von Hostelementen und Hoststeuerelementen](../vsto/programmatic-limitations-of-host-items-and-host-controls.md) und [Erweitern von Word-Dokumenten und Excel-Arbeitsmappen in VSTO-Add-Ins zur Laufzeit](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
   
 ## <a name="using-the-getvstoobject-and-hasvstoobject-methods"></a>Verwenden der Methoden GetVstoObject und HasVstoObject  
  Um HasVstoObject und GetVstoObject-Methode aufzurufen, verwenden Sie die Globals.Factory.GetVstoObject oder Globals.Factory.HasVstoObject-Methode, und übergeben Sie das systemeigene Word- oder Excel-Objekt (z. B. eine <xref:Microsoft.Office.Interop.Word.Document> oder <xref:Microsoft.Office.Interop.Excel.Worksheet>), die Sie testen möchten.  
