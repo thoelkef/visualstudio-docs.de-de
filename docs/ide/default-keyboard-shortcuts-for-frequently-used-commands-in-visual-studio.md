@@ -4,18 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 45aaccf19518572211bf9468a133989e651504bf
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 6389e5673f589f581818d68f5652dd9529da7500
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio"></a>Standardtastenkombinationen für häufig verwendete Befehle in Visual Studio
 
@@ -66,7 +68,7 @@ Sie können auf häufig verwendete Befehle in Visual Studio zugreifen, indem Sie
 |Edit.Delete|ENTF [Global, Team Explorer]<br /><br /> oder UMSCHALT+ENTF [Sequenzdiagramm, UML-Aktivitäts-Diagramm, Ebenendiagramm]<br /><br /> oder STRG+ENTF [Klassendiagramm]|  
 |Edit.Find|STRG+F [Global]|  
 |Edit.FindAllReferences|UMSCHALT+F12 [Global]|  
-dit.FindinFiles|STRG+UMSCHALT+F [Global]|  
+|Edit.FindinFiles|STRG+UMSCHALT+F [Global]|  
 |Edit.FindNext|F3 [Global]|  
 |Edit.FindNextSelected|STRG+F3 [Global]|  
 |Edit.FormatDocument|STRG+K, STRG+D [Text-Editor]|  
@@ -82,7 +84,7 @@ dit.FindinFiles|STRG+UMSCHALT+F [Global]|
 |Edit.LineDownExtendColumn|UMSCHALT+ALT+NACH-UNTEN [Text-Editor]|  
 |Edit.LineOpenAbove|STRG+EINGABE [Text-Editor]|  
 |Edit.ListMembers|STRG+J [Text-Editor, Workflow-Designer]<br /><br /> oder STRG+K, STRG+L [Workflow-Designer]<br /><br /> oder STRG+K, L [Workflow-Designer]|  
-dit.NavigateTo|STRG+, [Global]|  
+|Edit.NavigateTo|STRG+, [Global]|  
 |Edit.OpenFile|STRG+UMSCHALT+E [Global]|  
 |Edit.OvertypeMode|EINFG [Text-Editor]|  
 |Edit.ParameterInfo|STRG+UMSCHALT [Text-Editor, Workflow-Designer]<br /><br /> oder STRG+K, STRG+P [Workflow-Designer]<br /><br /> oder STRG+K, P [Workflow-Designer]|  
@@ -93,7 +95,7 @@ dit.NavigateTo|STRG+, [Global]|
 |Edit.SelectAll|STRG+A [Global]|  
 |Edit.SelectCurrentWord|STRG+W [Text-Editor]|  
 |Edit.SelectionCancel|ESC [Text-Editor, Berichts-Designer, Einstellungs-Designer, Windows Forms-Designer, Verwaltete Ressourcen-Editor]|  
-dit.SurroundWith|STRG+K, STRG+S [Global]|  
+|Edit.SurroundWith|STRG+K, STRG+S [Global]|  
 |Edit.TabLeft|UMSCHALT+TAB [Text-Editor, Berichts-Designer, Windows Forms-Editor]|  
 |Edit.ToggleAllOutlining|STRG+M, STRG+L [Text-Editor]|  
 |Edit.ToggleBookmark|STRG+K, STRG+K [Text-Editor]|  
@@ -155,7 +157,7 @@ dit.SurroundWith|STRG+K, STRG+S [Global]|
 |View.ServerExplorer|STRG+ALT+S [Global]|  
 |View.ShowSmartTag|STRG+. [Global]<br /><br /> oder UMSCHALT+ALT+F10 [Global, HTML-Editor-Entwurfsansicht]|  
 |View.SolutionExplorer|STRG+ALT+L [Global]|  
-iew.TfsTeamExplorer|STRG+\\, STRG+M [Global]|  
+|View.TfsTeamExplorer|STRG+\\, STRG+M [Global]|  
 |View.Toolbox|STRG+ALT+X [Global]|  
 |View.ViewCode|EINGABETASTE [Klassendiagramm]<br /><br /> oder F7 [Einstellungs-Designer]|  
 |View.ViewDesigner|UMSCHALT+F7 [HTML-Editor-Quellansicht]|  

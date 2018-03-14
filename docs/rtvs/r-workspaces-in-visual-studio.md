@@ -16,11 +16,11 @@ ms.author: kraigb
 manager: ghogen
 ms.workload:
 - data-science
-ms.openlocfilehash: 52867e51e158f2e2c2ccbccba7466c1f7246e128
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: bb520f317eb285bcc278ff9f37bb2dc25c91e950
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="controlling-where-r-code-runs-with-workspaces"></a>Steuern, wo R-Code mit Arbeitsbereichen ausgeführt wird
 
@@ -31,17 +31,6 @@ Um das Fenster **Arbeitsbereiche** zu öffnen, verwenden Sie den Befehl **R Tool
 ![Fenster „Arbeitsbereiche“ in R Tools für Visual Studio (VS 2017)](media/workspaces-window.png)
 
 Das grüne Häkchen in diesem Fenster gibt den aktiven Arbeitsbereich an, mit dem RTVS verbunden ist. Der blaue Pfeil legt den aktiven Arbeitsbereich fest. Über das Einstellungssymbol (Zahnrad) rechts neben jedem Arbeitsbereich können Sie den Namen, den Speicherort und die Befehlszeilenargumente ändern. Mit dem roten X wird ein manuell hinzugefügter Arbeitsbereich entfernt.
-
-In diesem Thema:
-
-- [Speichern und Zurücksetzen eines Arbeitsbereichs](#saving-and-resetting-a-workspace)
-- [Lokale Arbeitsbereiche](#local-workspaces)
-- [Remotearbeitsbereiche](#remote-workspaces)
-- [Anmeldung bei einem Remotearbeitsbereich](#remote-workspace-logon)
-- [Wechseln zwischen Arbeitsbereichen](#switching-between-workspaces)
-- [Verzeichnisse auf lokalen und Remotecomputern](#directories-on-local-and-remote-computers)
-- [Kopieren von Projektdateien in einen Remotearbeitsbereich](#copying-project-files-to-remote-workspaces)
-- [Kopieren von Dateien aus einem Remotearbeitsbereich](#copying-files-from-a-remote-workspace)
 
 ## <a name="saving-and-resetting-a-workspace"></a>Speichern und Zurücksetzen eines Arbeitsbereichs
 

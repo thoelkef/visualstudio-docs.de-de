@@ -12,15 +12,17 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 74ac22508ea00a59dc4b29806253b4a041994c54
-ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
+ms.openlocfilehash: 284c99c9e9c1ed2e84b05070bbf6d9991c025f94
+ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="quickstart-projects-and-solutions"></a>Schnellstart: Projekte und Projektmappen
 
 In diesem Schnellstart, der etwa zehn Minuten Ihrer Zeit in Anspruch nehmen wird, wird dargestellt, wie Sie eine Projektmappe und ein Projekt in Visual Studio erstellen. Die Eigenschaften eines Projekts und einige der darin enthaltenen Dateien sollen betrachtet werden. Außerdem soll ein Verweis auf ein zweites Projekt erstellt werden.
+
+Wenn Sie Visual Studio noch nicht installiert haben, gehen Sie auf die Seite [Visual Studio-Downloads](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs), um es kostenlos herunterzuladen.
 
 > [!TIP]
 > In diesem Schnellstart werden eine Projektmappe und ein Projekt von Grund auf neu erstellt, damit Sie das Konzept eines Projekts nachvollziehen können. Wenn Sie Visual Studio normalerweise verwenden, nutzen Sie sehr wahrscheinlich die vielen zur Verfügung gestellten Vorlagen für das Erstellen eines neuen Projekts.

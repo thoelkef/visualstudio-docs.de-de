@@ -4,23 +4,27 @@ ms.custom:
 ms.date: 12/14/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: c3a14d28-d811-4ff3-bd09-21dce14025ca
-caps.latest.revision: "5"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: c75b5508cd23a2131bcdd64cf52aacc1486d2713
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.workload:
+- multiple
+ms.openlocfilehash: e858d24a37fec49468981b44d450212ba2fa3654
+ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="get-started-with-debugging-in-visual-studio"></a>Erste Schritte beim Debuggen in Visual Studio
 Visual Studio bietet einen leistungsfähigen integrierten Satz von Projektbuild- und Debugtools. Sie erfahren in diesem Thema, wie Sie die grundlegenden Funktionen zum Debuggen von Benutzeroberflächenfunktionen verwenden.  
+
+Wenn Sie Visual Studio noch nicht installiert haben, gehen Sie auf die Seite [Visual Studio-Downloads](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs), um es kostenlos herunterzuladen.
 
 ## <a name="my-code-doesnt-work-help-me-visual-studio"></a>Mein Code funktioniert nicht. Ich benötige Hilfe in Visual Studio.  
  Sie haben also herausgefunden, wie der Editor funktioniert, und Code erstellt. Nun möchten Sie mit dem Debuggen von Code beginnen. In Visual Studio besteht das Debuggen wie bei den meisten IDEs aus zwei Phasen: Erstellen des Codes zum Abfangen und Beheben von Projekt- und Compilerfehlern und Ausführen dieses Codes in der Umgebung zum Abfangen und Beheben von Laufzeit- und dynamischen Fehlern.  
@@ -118,7 +122,7 @@ Projekte lassen sich am einfachsten mit **F7** erstellen. Sie können aber auch 
 ### <a name="inspect-your-code-at-run-time"></a>Überprüfen von Code zur Laufzeit  
  Wenn der ausgeführte Code auf einen Haltepunkt trifft und anhält, wurde die gelb markierte Codezeile (die aktuelle Anweisung) noch nicht ausgeführt. In dieser Situation ist es empfehlenswert, die aktuelle Anweisung auszuführen und anschließend die geänderten Werte zu überprüfen. Sie können mehrere *step*-Befehle zum Ausführen von Code im Debugger verwenden. Ist der gekennzeichnete Code ein Methodenaufruf, durchlaufen Sie diesen schrittweise durch Drücken von **F11**. Sie können die Codezeile durch Drücken von **F10** auch *überspringen*. Zusätzliche Befehle und Details dazu, wie Code schrittweise durchlaufen wird, finden Sie unter [Navigate code with the debugger (Navigieren im Code mit dem Debugger)](../debugger/navigating-through-code-with-the-debugger.md).
 
- ![Visual Studio, Überprüfung von Laufzeitwerten](../ide/media/vs_ide_gs_debug_hit_breakpoint.PNG "vs_ide_gs_debug_inspect_value") 
+ ![Visual Studio, Überprüfung von Laufzeitwerten](../ide/media/vs_ide_gs_debug_hit_breakpoint.PNG "vs_ide_gs_debug_inspect_value")
 
  Wie in der vorherigen Abbildung dargestellt, kann der Debugger mit **F10** oder **F11** zur nächsten Anweisung springen (da dies kein Methodenaufruf ist, bewirken beide Befehle dasselbe).
 
@@ -126,7 +130,7 @@ Projekte lassen sich am einfachsten mit **F7** erstellen. Sie können aber auch 
 
  ![Visual Studio, Überprüfung von Laufzeitwerten](../ide/media/vs_ide_gs_debug_inspect_value.PNG "vs_ide_gs_debug_inspect_value")  
 
- Zeigen Sie auf eine Variable, um die Werte und Verweise anzuzeigen, die sie zurzeit enthält. Wenn Sie einen nicht erwarteten Wert antreffen, enthalten die vorhergehenden oder die aufrufenden Codezeilen möglicherweise einen Fehler.  Weitere Informationen finden Sie unter [Learn to debug using Visual Studio (Debuggen mit Visual Studio)](../debugger/getting-started-with-the-debugger.md). 
+ Zeigen Sie auf eine Variable, um die Werte und Verweise anzuzeigen, die sie zurzeit enthält. Wenn Sie einen nicht erwarteten Wert antreffen, enthalten die vorhergehenden oder die aufrufenden Codezeilen möglicherweise einen Fehler.  Weitere Informationen finden Sie unter [Learn to debug using Visual Studio (Debuggen mit Visual Studio)](../debugger/getting-started-with-the-debugger.md).
 
  Darüber hinaus zeigt Visual Studio das Fenster mit den Diagnosetools an, in dem Sie den CPU- und Speicherverbrauch Ihrer App im Zeitverlauf beobachten können. In einer späteren Entwicklungsphase können Sie mit diesen Tools nach unvorhergesehen hoher CPU-Auslastung oder Speicherzuweisung suchen. Zusammen mit dem Fenster **Überwachung** und Haltepunkten können Sie so sehr schnell ermitteln, wodurch eine unerwartete Auslastung oder nicht freigegebene Ressourcen verursacht werden.  Weitere Informationen finden Sie unter [Tour zur Profilerstellungsfunktion](../profiling/profiling-feature-tour.md).
 

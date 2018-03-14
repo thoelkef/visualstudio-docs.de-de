@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9f5f3edfc536dce9d42d09a099c3f53a8a8ab3c7
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: 895abe0f9ce632f5c67c487726d0422607f8d427
+ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="remotely-debugging-python-code-on-linux"></a>Remotedebuggen von Python-Code unter Linux
 
@@ -48,29 +48,29 @@ Weitere Informationen zum Erstellen einer Firewallregel für einen virtuellen Az
 
 1. Erstellen Sie auf dem Remotecomputer eine Python-Datei mit dem Namen `guessing-game.py` mit dem folgenden Code:
 
-  ```python
-  import random
+    ```python
+    import random
 
-  guesses_made = 0
-  name = input('Hello! What is your name?\n')
-  number = random.randint(1, 20)
-  print('Well, {0}, I am thinking of a number between 1 and 20.'.format(name))
+    guesses_made = 0
+    name = input('Hello! What is your name?\n')
+    number = random.randint(1, 20)
+    print('Well, {0}, I am thinking of a number between 1 and 20.'.format(name))
 
-  while guesses_made < 6:
-      guess = int(input('Take a guess: '))
-      guesses_made += 1
-      if guess < number:
-          print('Your guess is too low.')
-      if guess > number:
-          print('Your guess is too high.')
-      if guess == number:
-          break
-  if guess == number:
-      print('Good job, {0}! You guessed my number in {1} guesses!'.format(name, guesses_made))
-  else:
-      print('Nope. The number I was thinking of was {0}'.format(number))
-  ```
- 
+    while guesses_made < 6:
+        guess = int(input('Take a guess: '))
+        guesses_made += 1
+        if guess < number:
+            print('Your guess is too low.')
+        if guess > number:
+            print('Your guess is too high.')
+        if guess == number:
+            break
+    if guess == number:
+        print('Good job, {0}! You guessed my number in {1} guesses!'.format(name, guesses_made))
+    else:
+        print('Nope. The number I was thinking of was {0}'.format(number))
+    ```
+
 1. Installieren Sie mithilfe von `pip3 install ptvsd` das `ptvsd`-Paket in Ihrer Umgebung. (Hinweis: Es ist eine gute Idee, die Version von ptvsd zu erfassen, die installiert wird, falls Sie sie für die Problembehandlung benötigen; die [ptvsd-Liste](https://pypi.python.org/pypi/ptvsd) zeigt auch die verfügbaren Versionen.)
 
 1. Aktivieren Sie das Remotedebuggen, indem Sie den untenstehenden Code am frühestmöglichen Punkt in `guessing-game.py` einfügen, also vor jedem anderen Code. (Dies ist zwar nicht zwingend erforderlich, aber es ist unmöglich, Hintergrundthreads zu debuggen, die vor dem Aufruf der Funktion `enable_attach` erzeugt werden.)

@@ -14,15 +14,17 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 2bbdabf7d35c2705d028c84ddc6c6dc82f71ff48
-ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
+ms.openlocfilehash: 082a89453d76ac70edfbd39681d33b6af2700cc7
+ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="quickstart-use-the-code-editor"></a>Schnellstart: Verwenden des Code-Editors
 
 In dieser Einführung in den Editor, die etwa zehn Minuten Ihrer Zeit in Anspruch nehmen wird, wird Code zu einer Datei hinzugefügt, um zu veranschaulichen, inwiefern Visual Studio das Schreiben, Navigieren und Verstehen von Code vereinfacht.
+
+Wenn Sie Visual Studio noch nicht installiert haben, gehen Sie auf die Seite [Visual Studio-Downloads](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs), um es kostenlos herunterzuladen.
 
 Bei diesem Schnellstart wird davon ausgegangen, dass Sie bereits mit einer Programmiersprache vertraut sind. Sollte dies nicht der Fall sein, empfehlen wir Ihnen, sich zuerst einen der Schnellstarts zum Thema Programmierung anzusehen, beispielsweise zum Erstellen einer Web-App mit [Python](../ide/quickstart-python.md) oder [C#](../ide/tutorial-csharp-aspnet-core.md) oder zum Erstellen einer Konsolen-App mit [Visual Basic](../ide/quickstart-visual-basic-console.md) oder [C++](../ide/quickstart-cpp.md).
 

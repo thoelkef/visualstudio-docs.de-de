@@ -13,15 +13,17 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: e5195693a4ef2ba3aeec1f2d5751e56b70f19e57
-ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
+ms.openlocfilehash: 7f6d1ebe9838102b383353ed8c7d4d9c15fadaf9
+ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="quickstart-personalize-the-visual-studio-ide-and-editor"></a>Schnellstart: Personalisieren der Visual Studio-IDE und des Editors
 
 In diesem 5- bis 10-minütigen Schnellstart passen Sie das Visual Studio Farbdesign und zwei Textfarben im Text-Editor an.
+
+Wenn Sie Visual Studio noch nicht installiert haben, gehen Sie auf die Seite [Visual Studio-Downloads](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs), um es kostenlos herunterzuladen.
 
 ## <a name="set-the-color-theme"></a>Festlegen des Farbdesigns
 
