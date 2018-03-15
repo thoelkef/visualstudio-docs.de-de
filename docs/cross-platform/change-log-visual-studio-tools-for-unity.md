@@ -13,14 +13,107 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 40356c5d80ee8572b4e5a6e468b9abf2919524de
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: f80e5eb1d82fab7167e86550739faaaa19000786
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="change-log-visual-studio-tools-for-unity"></a>Änderungsprotokoll (Visual Studio-Tools für Unity)
 Visual Studio-Tools für Unity (Änderungsprotokoll)
+
+## <a name="3604"></a>3.6.0.4
+ Veröffentlichung: 05.03.2018
+
+### <a name="bug-fixes"></a>Fehlerkorrekturen
+
+-   **Projektgenerierung:**
+
+    -   Erkennung von Mono-Version korrigiert.
+
+-   **Integration:**
+
+    -   Probleme bei Zeitabläufen mit 2018.1 und Plug-in-Aktivierung behoben.
+
+## <a name="3603"></a>3.6.0.3
+ Veröffentlichung: 23.02.2018
+
+### <a name="new-features"></a>Neue Funktionen
+
+-   **Projektgenerierung:**
+
+    -   Unterstützung für .NET Standard hinzugefügt.
+
+### <a name="bug-fixes"></a>Fehlerkorrekturen
+
+-   **Projektgenerierung:**
+
+    -   Erkennung von Unity-Zielframework korrigiert.
+
+-   **Debugger:**
+
+    -   Abbruch bei Ausnahmen, die außerhalb von Benutzercode ausgelöst werden, korrigiert.
+
+## <a name="3602"></a>3.6.0.2
+ Veröffentlichung: 07.02.2018
+
+### <a name="new-features"></a>Neue Funktionen
+
+-   **Integration:**
+
+    -   Aktualisieren der UnityMessage-API-Oberfläche für 2017.3.
+
+### <a name="bug-fixes"></a>Fehlerkorrekturen
+
+-   **Integration:**
+
+    -   Nur Projekte bei externer Änderung neu laden (mit Einschränkungen).
+ 
+## <a name="3601"></a>3.6.0.1
+ Veröffentlichung: 24.01.2018
+
+### <a name="bug-fixes"></a>Fehlerkorrekturen
+
+-   **Integration:**
+
+    -   Automatische Konvertierung des Debugsymbols von „pdb“ zu „mdb“ wurde behoben.
+    
+    -   Indirekter Aufruf von EditorPrefs.GetBool, der den Inspektor beim Versuch beeinträchtigt, die Größe des Arrays zu ändern, korrigiert.
+ 
+## <a name="3600"></a>3.6.0.0
+ Veröffentlichung: 10.01.2018
+
+### <a name="new-features"></a>Neue Funktionen
+
+-   **Projektgenerierung:**
+
+    -   Unterstützung für 2018.1-MonoIsland-Referenzmodell hinzugefügt.
+
+-   **Auswertung:**
+
+    -   Unterstützung für $exception-Bezeichner hinzugefügt.
+
+-   **Debugger:**
+
+    -   Unterstützung für DebuggerHidden/DebuggerStepThrough-Attribute mit der neuen Unity-Runtime hinzugefügt.
+    
+-   **Assistenten:**
+
+    -   'Latest'-Version für Assistenten eingeführt.
+
+### <a name="bug-fixes"></a>Fehlerkorrekturen
+
+-   **Projektgenerierung:**
+
+    -   Projekt-GUID-Berechnung für Playerprojekte korrigiert.
+
+-   **Debugger:**
+
+    -   Race bei der Behandlung von Abbruchereignissen korrigiert.
+    
+-   **Assistenten:**
+
+    -   Aktualisieren des Roslyn-Kontexts vor dem Einfügen der Methode.
 
 ## <a name="3503"></a>3.5.0.3
  Veröffentlichung: 09.01.2018

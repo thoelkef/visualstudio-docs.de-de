@@ -17,15 +17,15 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 7ee982a1068f2ea89299b75ca825f7a7c1c4e6b0
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 1f18ba5e7ce44766262851f68c829c887bfc9581
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="using-ipython-in-the-interactive-window"></a>Verwenden von IPython im interaktiven Fenster
 
-Das interaktive Visual Studio-Fenster im IPython-Modus ist eine erweiterte, dennoch benutzerfreundliche interaktive Entwicklungsumgebung, die über Interactive Parallel Computing-Features verfügt. Dieses Thema führt Sie durch die Verwendung von IPython im interaktiven Visual Studio-Fenster. In diesem sind alle regulären Funktionen von [interactive windows (interaktiven Fenster)](python-interactive-repl-in-visual-studio.md) ebenfalls verfügbar.
+Das interaktive Visual Studio-Fenster im IPython-Modus ist eine erweiterte, dennoch benutzerfreundliche interaktive Entwicklungsumgebung, die über Interactive Parallel Computing-Features verfügt. Dieser Artikel führt Sie durch die Verwendung von IPython im interaktiven Visual Studio-Fenster. In diesem sind alle regulären Funktionen des [interaktiven Fensters](python-interactive-repl-in-visual-studio.md) ebenfalls verfügbar.
 
 Für diese exemplarische Vorgehensweise muss die [Anaconda](https://www.continuum.io)-Umgebung installiert sein, die IPython und die benötigten Bibliotheken enthält.
 
@@ -83,7 +83,7 @@ Für diese exemplarische Vorgehensweise muss die [Anaconda](https://www.continuu
 
 IPython verfügt über viele weitere nützliche Features, wie z.B. Escapevorgang zur Shell des Betriebssystems, Variablenersetzung, Ausgabenerfassung usw. Weitere Informationen finden Sie in der [IPython documentation (IPython Dokumentation)](http://ipython.org/documentation.html).
 
-## <a name="related-topics"></a>Verwandte Themen
+## <a name="related-articles"></a>Verwandte Artikel
 
 - Wenn Sie Jupyter einfach und ohne Installation verwenden möchten, testen Sie den [Azure Notebooks hosted service (gehosteten Azure-Dienst für Notebooks)](https://notebooks.azure.com/), um Ihre Notebooks zu verwalten und mit anderen zu teilen.
 

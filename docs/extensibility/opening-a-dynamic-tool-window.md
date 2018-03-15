@@ -4,24 +4,27 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: tool windows, dynamic
+helpviewer_keywords:
+- tool windows, dynamic
 ms.assetid: 21547ba7-6e81-44df-9277-265bf34f877a
-caps.latest.revision: "21"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: c96250c79ea283117254a96875c3a1f03f4cb30b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- vssdk
+ms.openlocfilehash: 197bda3f825d0e709c1bc9ae08d8f0018b8b07c5
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="opening-a-dynamic-tool-window"></a>Öffnen eine dynamische Toolfenster
-Toolfenster werden in der Regel über einen Befehl in einem Menü oder eine entsprechende Tastenkombination geöffnet. In einigen Fällen kann jedoch ein Toolfenster erforderlich, das geöffnet wird, wenn eine bestimmte Benutzeroberflächenkontext gilt, und wird geschlossen, wenn der UI-Kontext nicht mehr gilt. Toolfenster, wie diese heißen *dynamische* oder *automatisch sichtbar*.  
+Toolfenster werden in der Regel über einen Befehl in einem Menü oder eine entsprechende Tastenkombination geöffnet. In einigen Fällen kann jedoch ein Toolfenster erforderlich, das geöffnet wird, wenn eine bestimmte Benutzeroberflächenkontext gilt, und wird geschlossen, wenn der UI-Kontext nicht mehr gilt. Diese Typen von Toolfenstern heißen *dynamische* oder *automatisch sichtbar*.  
   
 > [!NOTE]
 >  Eine Liste der vordefinierten UI Kontexte, finden Sie unter <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT>. Für die  
@@ -37,21 +40,21 @@ Toolfenster werden in der Regel über einen Befehl in einem Menü oder eine ents
   
 1.  Erstellen Sie ein VSIX-Projekt mit dem Namen **DynamicToolWindow** und fügen Sie eine Elementvorlage für Tool-Fenster mit dem Namen **DynamicWindowPane.cs**. Weitere Informationen finden Sie unter [erstellen eine Erweiterung mit einem Toolfenster](../extensibility/creating-an-extension-with-a-tool-window.md).  
   
-2.  Finden Sie in der Datei DynamicWindowPanePackage.cs die DynamicWindowPanePackage-Deklaration. Hinzufügen der <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> und T:Microsoft.VisualStudio.Shell.ProvideToolWindowVisibilityAttribute-Attribute, um das Toolfenster registrieren.  
+2.  Finden Sie in der Datei DynamicWindowPanePackage.cs die DynamicWindowPanePackage-Deklaration. Hinzufügen der <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> und <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowVisibilityAttribute> Attribute das Toolfenster registrieren.  
   
     ```vb  
-    [[ProvideToolWindow(typeof(DynamicWindowPane)]  
+    [ProvideToolWindow(typeof(DynamicWindowPane)]  
     [ProvideToolWindowVisibility(typeof(DynamicWindowPane), VSConstants.UICONTEXT.SolutionExists_string)]  
     [PackageRegistration(UseManagedResourcesOnly = true)]  
     [InstalledProductRegistration("#110", "#112", "1.0", IconResourceID = 400)] // Info on this package for Help/About  
     [ProvideMenuResource("Menus.ctmenu", 1)]  
     [ProvideToolWindow(typeof(DynamicToolWindow.DynamicWindowPane))]  
-    [Guid(DynamicWindowPanePackageGuids.PackageGuidString)]  
+    [Guid(DynamicWindowPanePackage.PackageGuidString)]  
     public sealed class DynamicWindowPanePackage : Package  
     {. . .}  
     ```  
   
-     Dadurch wird das Toolfenster, die mit dem Namen DynamicWindowPane als vorübergehender Fenster, die nicht beibehalten wird, wenn Visual Studio geschlossen und erneut geöffnet wird registriert. DynamicWindowPane wird geöffnet, wenn <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExists_string> gilt, und andernfalls geschlossen.  
+     Die oben genannten Attribute registrieren Sie das Toolfenster, die mit dem Namen DynamicWindowPane als vorübergehender Fenster, die nicht beibehalten wird, wenn Visual Studio geschlossen und erneut geöffnet wird. DynamicWindowPane wird geöffnet, wenn <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExists_string> gilt, und andernfalls geschlossen.  
   
 3.  Erstellen Sie das Projekt, und starten Sie das Debugging. Die experimentelle Instanz sollte angezeigt werden. Das Toolfenster sollte nicht angezeigt werden.  
   

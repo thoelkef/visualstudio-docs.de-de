@@ -18,11 +18,11 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: f8ed008df50eaa2c82686e67cf47461c14d491e0
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: e2c2fffddba8746ff2f5696a1eaccf701b83f314
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="azure-cloud-service-projects-for-python"></a>Projekte für Azure-Clouddienste für Python
 
@@ -30,7 +30,7 @@ Visual Studio enthält Vorlagen, die Ihnen bei der Verwendung von Azure Cloud Se
 
 Ein [Clouddienst](http://go.microsoft.com/fwlink/?LinkId=306052) besteht aus einer beliebigen Anzahl von *Workerrollen* und *Webrollen*, von denen jede eine konzeptionell gesonderte Aufgabe ausführt und je nach Skalierungsbedarf separat über virtuelle Computer repliziert werden kann. Webrollen bieten das Hosting für Front-End-Webanwendungen. Für Python kann jedes Webframework, das WSGI unterstützt, zum Schreiben einer solchen Anwendung verwendet werden (wie von der [Webprojektvorlage](python-web-application-project-templates.md) unterstützt). Workerrollen sind für lang andauernde Prozesse vorgesehen, die nicht direkt mit den Benutzern interagieren. Sie nutzen in der Regel die Bibliotheken mit [Daten](http://go.microsoft.com/fwlink/?LinkId=401571) und [Anwendungsdiensten](http://go.microsoft.com/fwlink/?LinkId=401572), die mit [`pip install azure`](http://pypi.org/project/azure) installiert werden können.
 
-Dieses Thema enthält Details über die Projektvorlage und sonstige Unterstützung in Visual Studio 2017 (frühere Versionen sind ähnlich, es gibt jedoch einige Unterschiede). Weitere Informationen zum Verwenden von Azure über Python finden Sie im [Azure Python Developer Center](http://go.microsoft.com/fwlink/?linkid=254360).
+Dieser Artikel enthält Details über die Projektvorlage und sonstige Unterstützung in Visual Studio 2017 (frühere Versionen sind ähnlich, es gibt jedoch einige Unterschiede). Weitere Informationen zum Verwenden von Azure über Python finden Sie im [Azure Python Developer Center](http://go.microsoft.com/fwlink/?linkid=254360).
 
 ## <a name="create-a-project"></a>Erstellen eines Projekts
 

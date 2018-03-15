@@ -17,11 +17,11 @@ ms.author: gregvanl
 manager: ghogen
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2704794e4683fb461dca971a3893ca831591ca0c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 2e56fbdb6056ba02df0cafac73dd4baab60ab3be
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="command-implementation"></a>Implementierung des Befehls
 Um einen Befehl in einem VSPackage implementieren, müssen Sie die folgenden Aufgaben ausführen:  
@@ -62,28 +62,28 @@ if ( null != mcs )
 ## <a name="implementing-commands"></a>Implementieren von Befehlen  
  Es gibt zahlreiche Möglichkeiten, um Befehle zu implementieren. Erstellen Sie gegebenenfalls einen statischen Menübefehl, d. h. einen Befehl, der immer die gleiche Weise und für das gleiche Menü angezeigt wird, den Befehl mit <xref:System.ComponentModel.Design.MenuCommand> wie in den Beispielen im vorherigen Abschnitt gezeigt. Um einen statischen Befehl zu erstellen, müssen Sie einen Ereignishandler bereitstellen, der für die Ausführung des Befehls zuständig ist. Da der Befehl immer aktiviert und sichtbar ist, müssen Sie keinen seinen Status zu Visual Studio bereitstellen. Wenn Sie den Status eines Befehls abhängig von bestimmten Bedingungen ändern möchten, können Sie den Befehl erstellen, als eine Instanz von der <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> -Klasse werden soll, und geben Sie in ihren Konstruktor ein Ereignishandler zum Ausführen des Befehls und einer Abfrage statushandlers benachrichtigt Visual Studio, wenn der Status des Befehls wechselt. Sie können auch implementieren <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> als Teil einer Command-Klasse oder implementieren kann <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> Wenn Sie einen Befehl als Teil eines Projekts bereitstellen. Die beiden Schnittstellen und die <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> Klasse, die alle haben, Methoden, mit denen Visual Studio eine Änderung in den Status eines Befehls benachrichtigt, und andere Methoden, die die Ausführung des Befehls bereitstellen.  
   
- Wenn ein Befehl mit dem Befehl Dienst hinzugefügt wird, wird er zu einem eine Kette von Befehlen. Wenn Sie die Status Benachrichtigung und Ausführung von Methoden für den Befehl implementieren, achten Sie darauf, nur für diesen bestimmten Befehl bereitzustellen, und übergeben in allen anderen Fällen bei der anderen Befehle in der Kette. Wenn Sie ein Failover auf den Befehl übergeben werden, auf (in der Regel durch das Zurückgeben von <xref:Microsoft.VisualStudio.OLE.Interop.Constants>), Visual Studio möglicherweise nicht mehr ordnungsgemäß ausgeführt.  
+ Wenn ein Befehl mit dem Befehl Dienst hinzugefügt wird, wird er zu einem eine Kette von Befehlen. Wenn Sie die Status Benachrichtigung und Ausführung von Methoden für den Befehl implementieren, achten Sie darauf, nur für diesen bestimmten Befehl bereitzustellen, und übergeben in allen anderen Fällen bei der anderen Befehle in der Kette. Wenn Sie ein Failover auf den Befehl übergeben werden, auf (in der Regel durch das Zurückgeben von <xref:Microsoft.VisualStudio.OLE.Interop.Constants.OLECMDERR_E_NOTSUPPORTED>), Visual Studio möglicherweise nicht mehr ordnungsgemäß ausgeführt.  
   
 ## <a name="query-status-methods"></a>Status von Abfragemethoden  
  Wenn Sie entweder implementieren die <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> Methode oder die <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A> -Methode, die Kontrollkästchen für die GUID des Befehls, der der Befehl angehört und die ID des Befehls. Befolgen Sie die nachstehenden Richtlinien:  
   
--   Wenn die GUID nicht erkannt wird, muss die Implementierung der beiden Methoden zurückgeben <xref:Microsoft.VisualStudio.OLE.Interop.Constants>.  
+-   Wenn die GUID nicht erkannt wird, muss die Implementierung der beiden Methoden zurückgeben <xref:Microsoft.VisualStudio.OLE.Interop.Constants.OLECMDERR_E_UNKNOWNGROUP>.  
   
--   Wenn Ihre Implementierung der beiden Methoden erkennt die GUID, jedoch den Befehl tatsächlich nicht implementiert hat, sollte die Methode zurückgeben <xref:Microsoft.VisualStudio.OLE.Interop.Constants>.  
+-   Wenn Ihre Implementierung der beiden Methoden erkennt die GUID, jedoch nicht den Befehl implementiert hat, sollte die Methode zurückgeben <xref:Microsoft.VisualStudio.OLE.Interop.Constants.OLECMDERR_E_NOTSUPPORTED>.  
   
--   Wenn Ihre Implementierung der beiden Methoden die GUID und der Befehl erkennt, und klicken Sie dann die Methode sollte das Feld Befehlsflags jedes Befehls festgelegt (in der `prgCmds` Parameter) mithilfe der folgenden Flags:  
+-   Wenn Ihre Implementierung der beiden Methoden die GUID und der Befehl erkennt, und klicken Sie dann die Methode sollte das Feld Befehlsflags jedes Befehls festgelegt (in der `prgCmds` Parameter) mithilfe der Folgendes <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Flags:  
   
-    -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF>Wenn der Befehl unterstützt wird.  
+    -   OLECMDF_SUPPORTED – Wenn der Befehl unterstützt wird.  
   
-    -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF>Wenn der Befehl nicht sichtbar sein soll.  
+    -   OLECMDF_INVISIBLE – Wenn der Befehl nicht sichtbar sein soll.  
   
-    -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF>Wenn der Befehl eingeschaltet ist und angezeigt wird, überprüft wurden.  
+    -   OLECMDF_LATCHED – Wenn der Befehl eingeschaltet ist und angezeigt wird, überprüft wurden.  
   
-    -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF>Wenn der Befehl aktiviert ist.  
+    -   OLECMDF_ENABLED – Wenn der Befehl aktiviert ist.  
   
-    -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF>Wenn der Befehl ausgeblendet werden soll, wenn es auf ein Kontextmenü angezeigt wird.  
+    -   OLECMDF_DEFHIDEONCTXTMENU – Wenn der Befehl ausgeblendet werden soll, wenn es auf ein Kontextmenü angezeigt wird.  
   
-    -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF>Wenn der Befehl ist ein Menücontroller und ist nicht aktiviert, aber die Dropdown-Menü-Liste ist nicht leer und wird weiterhin zur Verfügung. (Dieses Kennzeichen werden nur selten verwendet).  
+    -   OLECMDF_NINCHED - Wenn mit dem Befehl wird ein Menücontroller und ist nicht aktiviert, aber die Dropdown-Menü-Liste ist nicht leer und wird weiterhin zur Verfügung. (Dieses Kennzeichen werden nur selten verwendet).  
   
 -   Wenn der Befehl definiert wurde, in der VSCT-Datei mit dem `TextChanges` kennzeichnen, legen Sie die folgenden Parameter:  
   
@@ -93,7 +93,7 @@ if ( null != mcs )
   
  Stellen Sie außerdem sicher, dass der aktuelle Kontext kein Automatisierungsfunktion, es sei denn, der der Befehl speziell Automatisierungsfunktionen behandeln soll.  
   
- Um anzugeben, dass Sie einen bestimmten Befehl unterstützen, zurückgeben <xref:Microsoft.VisualStudio.VSConstants.S_OK>. Für alle anderen Befehle zurückgeben <xref:Microsoft.VisualStudio.OLE.Interop.Constants>.  
+ Um anzugeben, dass Sie einen bestimmten Befehl unterstützen, zurückgeben <xref:Microsoft.VisualStudio.VSConstants.S_OK>. Für alle anderen Befehle zurückgeben <xref:Microsoft.VisualStudio.OLE.Interop.Constants.OLECMDERR_E_NOTSUPPORTED>.  
   
  Im folgenden Beispiel wird die Abfragestatus Methode zunächst sichergestellt, dass der Kontext keine Automatisierungsfunktion ist, und sucht nach den richtigen Befehlssatz GUID und Befehls-ID. Der Befehl selbst festgelegt ist, aktiviert und unterstützt werden. Andere Befehle werden unterstützt.  
   
@@ -118,7 +118,7 @@ public int QueryStatus(ref Guid pguidCmdGroup, uint cCmds, OLECMD[] prgCmds, Int
 ```  
   
 ## <a name="execution-methods"></a>Execution-Methode  
- Implementierung der Execute-Methode ähnelt der Implementierung der Abfragestatus Methode. Stellen Sie zunächst sicher, dass der Kontext ein Automatisierungsfunktion ist. Testen Sie die GUID und die Befehls-ID. Wenn die GUID oder Befehls-ID wird nicht erkannt, zurückgeben <xref:Microsoft.VisualStudio.OLE.Interop.Constants>.  
+ Implementierung der Execute-Methode ähnelt der Implementierung der Abfragestatus Methode. Stellen Sie zunächst sicher, dass der Kontext ein Automatisierungsfunktion ist. Testen Sie die GUID und die Befehls-ID. Wenn die GUID oder Befehls-ID wird nicht erkannt, zurückgeben <xref:Microsoft.VisualStudio.OLE.Interop.Constants.OLECMDERR_E_NOTSUPPORTED>.  
   
  Um den Befehl zu behandeln, führen Sie sie aus, und zurückgeben <xref:Microsoft.VisualStudio.VSConstants.S_OK> Wenn die Ausführung erfolgreich ist. Der Befehl ist verantwortlich für fehlererkennung und die Benachrichtigung. aus diesem Grund geben Sie einen Fehlercode zurück, wenn die Ausführung ein Fehler auftritt. Im folgende Beispiel wird veranschaulicht, wie die excecution-Methode implementiert werden soll.  
   

@@ -6,28 +6,28 @@ ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: 78107CFA-9308-4293-A92A-9B552A259E15
-ms.openlocfilehash: e435418c0c77f1577e9db8ab35d76d6bd54f8447
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: bf27e89b6a1a606b2a7430fc7d4394b8c5ab22bc
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="understanding-build-configurations"></a>Grundlagen der Buildkonfiguration
 
 ## <a name="project-build-configurations"></a>Projektbuildkonfigurationen 
 
-Projekte können mehrere Konfigurationen haben. Wenn Sie zwischen diesen Wechseln, erhalten Sie zur Buildzeit unterschiedliche Ausgaben. Wenn sie z.B eine Debugkonfiguration verwenden, enthält die Ausgabe Debuggingsymbole, mit denen der Debugger Funktionsnamen, Parameter oder Variablen aus der Stapelüberwachung einer abgestürzten Anwendung auflösen kann. Wenn Sie eine Debugkonfiguration verwenden, führt dies jedoch zu einer erhöhten Dateigröße, was für eine Anwendung, die verteilt werden soll, nicht ideal ist.
+Projekte haben tendenziell mehrere Konfigurationen. Wenn Sie zwischen diesen wechseln, erhalten Sie zur Buildzeit unterschiedliche Ausgaben. Eine Debugkonfiguration gibt z.B. Debuggingsymbole aus, mit denen der Debugger Funktionsnamen, Parameter oder Variablen aus der Stapelüberwachung einer abgestürzten Anwendung auflösen kann. Diese zusätzlichen Informationen sind zwar während der Entwicklung nützlich, blähen die Datei jedoch auf und sind für die Verteilung nicht ideal.
 
-Jede Plattform hat spezifische Konfigurationen für ihre Builds. Die Xamarin.Android-Entwicklung wird immer nur eine Release- und eine Debugkonfiguration haben. Xamarin.iOS verfügt über mehr Konfigurationen. Neuere iOS-Projekte haben nur Debug- oder Releasekonfigurationen. Diese können jedoch für ein Gerät oder einen installierten Simulator festgelegt werden.
+Jede Plattform hat spezifische Konfigurationen für ihre Builds. 
 
 ## <a name="solution-configurations"></a>Projektmappenkonfigurationen
 
-Ähnlich wie Projektkonfigurationen werden Projektmappenkonfigurationen verwendet, um benutzerdefinierte Konfigurationen für ein gesamtes Projekt zu erstellen. Über die Registerkarte **Konfigurationszuordnungen** unter **Build > Konfigurationen** können Sie eine Zielkonfiguration für jedes Projektmappenelement zuweisen, wie unten veranschaulicht:
+Ähnlich wie Projektkonfigurationen werden Projektmappenkonfigurationen verwendet, um benutzerdefinierte Konfigurationen für ein gesamtes Projekt zu erstellen. Über die Registerkarte **Konfigurationszuordnungen** unter **Build > Konfigurationen** können Sie eine Zielkonfiguration für jedes Projektmappenelement zuweisen, wie in der folgenden Abbildung dargestellt:
 
 
  ![Optionen Konfigurationszuordnung](media/projects-and-solutions-image3.png)
 
-Weitere Informationen finden Sie in dem Video zum [Configuration Manager](https://www.youtube.com/watch?v=tjSdkqYh5Vg) von James Montemagno (in englischer Sprache).
+Weitere Informationen über Konfigurationen finden Sie in dem Video zum [Configuration Manager](https://www.youtube.com/watch?v=tjSdkqYh5Vg) von James Montemagno.
 
 ## <a name="run-configuration"></a>Laufzeitkonfiguration
 
@@ -49,7 +49,7 @@ Für Aktivitäten, die nicht `MainLauncher` sind, muss `Exported=true` dem Aktiv
 
 ## <a name="examples-of-data-that-might-be-included-in-run-configurations"></a>Beispiele für Daten, die möglicherweise in Laufzeitkonfigurationen eingeschlossen werden
 
-Die unten stehende Liste enthält Beispiel für Daten, die in Laufzeitkonfigurationen eingeschlossen werden könnten:
+Die folgende Liste enthält Beispiele für Daten, die in Laufzeitkonfigurationen eingeschlossen werden könnten:
 
 * Normales .NET-Projekt
     * Alternative Start-App

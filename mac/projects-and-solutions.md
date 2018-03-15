@@ -1,16 +1,16 @@
 ---
-title: Projekte und Projektmappen
-description: "Dieses Dokument enthält eine Übersicht der Projekte und Projektmappen in Xamarin Studio."
+title: "Projekte und Projektmappen in Visual Studio für Mac | Microsoft-Dokumentation"
+description: "Dieses Dokument enthält eine Übersicht der Projekte und Projektmappen in Visual Studio für Mac."
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: 8254505D-D96E-48BD-8A5E-CF6A917897EA
-ms.openlocfilehash: 366e2c0df83a3e04f5f226a2a24ddced8c85dd2b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 1e3662fb45d91dfe5d7e2bb883dbf6918d0fd252
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="projects-and-solutions"></a>Projekte und Projektmappen
 
@@ -18,11 +18,11 @@ Visual Studio für Mac stellt ein _Projektmappenpad_ bereit, um eine Strukturans
 
 ## <a name="using-projects-and-solutions"></a>Verwenden von Projekten und Projektmappen
 
-Weitere Informationen zum Erstellen eines neuen Projekts oder einer neuen Projektmappe finden Sie im Thema [Creating new Projects and Solutions (Erstellen neuer Projekte und Projektmappen)](~/create-new-projects.md).
+Weitere Informationen zum Erstellen eines neuen Projekts oder einer neuen Projektmappe finden Sie im Artikel [Erstellen neuer Projekte und Projektmappen](~/create-new-projects.md).
 
 ## <a name="project-and-solution-options"></a>Projekt- und Projektmappenoptionen
 
-Sie können die Eigenschaften von Projekten und Projektmappen verwalten, indem Sie auf den Namen des Projekts oder der Projektmappe doppelklicken, oder indem Sie mit der rechten Maustaste klicken und zu **Optionen** navigieren. Weitere Informationen zu diesen Optionen finden Sie im Thema [Managing Solutions and Project Properties (Verwalten von Projektmappen und Projekteigenschaften)](~/managing-solutions-and-project-properties.md).
+Sie können die Eigenschaften von Projekten und Projektmappen verwalten, indem Sie auf den Namen des Projekts oder der Projektmappe doppelklicken, oder indem Sie mit der rechten Maustaste klicken und zu **Optionen** navigieren. Weitere Informationen zu diesen Optionen finden Sie im Artikel [Verwalten von Projekt- und Projektmappeneigenschaften](~/managing-solutions-and-project-properties.md).
 
 
 

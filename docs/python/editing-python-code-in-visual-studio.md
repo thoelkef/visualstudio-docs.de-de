@@ -2,7 +2,7 @@
 title: Bearbeiten von Python-Code in Visual Studio | Microsoft-Dokumentation
 description: "Beim Bearbeiten von Python in Visual Studio stehen IntelliSense, Codeausschnitte und Navigationsfunktionen sowie Formatierung, Linting und Umgestaltung zur Verfügung."
 ms.custom: 
-ms.date: 02/15/2018
+ms.date: 03/05/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e1e592d6fdb8fd7deb1e702513a932297a60e6ac
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: aae28ff5634dc59f2481140918b7ee19c29c4e1e
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="editing-python-code"></a>Bearbeiten von Python-Code
 
@@ -39,7 +39,11 @@ Sie können darüber hinaus den Visual Studio-Objektkatalog (**Ansicht > Weitere
 
 ## <a name="intellisense"></a>IntelliSense
 
-IntelliSense bietet [Vervollständigung](#completions), [Signaturhilfe](#signature-help), [QuickInfos](#quick-info) und [Codefarben](#code-coloring). Zur Verbesserung der Leistung nutzt IntelliSense die Vervollständigungsdatenbank, die für jede Python-Umgebung in Ihrem Projekt generiert wird. Sie müssen Datenbanken möglicherweise aktualisieren, wenn Sie Pakete hinzufügen, entfernen oder aktualisieren. Der Status der Datenbank wird im Fenster **Python-Umgebungen** (dem Projektmappen-Explorer nebengeordnet) auf der Registerkarte **IntelliSense** angezeigt (siehe [Das Fenster „Python-Umgebungen“](python-environments-window-tab-reference.md#intellisense-tab)).
+IntelliSense bietet [Vervollständigung](#completions), [Signaturhilfe](#signature-help), [QuickInfos](#quick-info) und [Codefarben](#code-coloring).
+
+Zur Verbesserung der Leistung nutzt IntelliSense in **Visual Studio 2017 Version 15.5** und früher eine Vervollständigungsdatenbank, die für jede Python-Umgebung in Ihrem Projekt generiert wird. Sie müssen Datenbanken möglicherweise aktualisieren, wenn Sie Pakete hinzufügen, entfernen oder aktualisieren. Der Status der Datenbank wird im Fenster **Python-Umgebungen** (dem Projektmappen-Explorer nebengeordnet) auf der Registerkarte **IntelliSense** angezeigt (siehe [Referenz zu den Registerkarten im Fenster „Python-Umgebungen“](python-environments-window-tab-reference.md#intellisense-tab)).
+
+**Visual Studio 2017 Version 15.6** und höher ermöglicht auf andere Weise IntelliSense-Vervollständigungen, die nicht von der Datenbank abhängig sind.
 
 ### <a name="completions"></a>Vervollständigungen
 
@@ -110,15 +114,41 @@ Um die Farben anzupassen, wechseln Sie zu **Tools > Optionen > Umgebung > Schrif
 
 ## <a name="code-snippets"></a>Codeausschnitte
 
-Codeausschnitte sind Codefragmente, die Sie durch Verwenden von Kurzeingaben und Drücken der TAB-TASTE in Ihre Dateien einfügen können. Alternativ dazu können Sie die Befehle **Bearbeiten > IntelliSense > Codeausschnitt einfügen** **Umschließen mit** verwenden. Wenn Sie z.B. `class` eingeben und dann die TAB-TASTE drücken, wird der Rest der Klasse generiert. Sie können in die Namens- und Basisliste schreiben, indem Sie mit der TAB-Taste zwischen den hervorgehobenen Feldern navigieren und dann die EINGABETASTE drücken, um mit dem Eingeben des Texts zu beginnen.
+Codeausschnitte sind Codefragmente, die Sie durch Kurzformen und Drücken der TAB-Taste in Ihre Dateien einfügen können. Alternativ dazu können Sie die Befehle **Bearbeiten > IntelliSense > Codeausschnitt einfügen** und **Umschließen mit** verwenden, **Python** und dann den gewünschten Codeausschnitt auswählen.
 
-![Codeausschnitte](media/code-editing-code-snippets.png)
+Beispielsweise ist `class` eine Kurzform für einen Codeausschnitt, der eine Klassendefinition einfügt. Wenn Sie `class` eingeben, sehen Sie, dass der Codeausschnitt in der Liste für automatische Vervollständigung angezeigt wird:
 
-Sie können die verfügbaren Codeausschnitte im Codeausschnitt-Manager (**Tools > Codeausschnitt-Manager**) anzeigen, indem Sie **Python** als Sprache auswählen:
+![Codeausschnitt für die Klassenkurzform](media/code-editing-code-snippet-class.png)
+
+Durch Drücken der TAB-Taste wird der Rest der Klasse generiert. Sie können dann in die Namens- und Basisliste schreiben, indem Sie mit der TAB-Taste zwischen den hervorgehobenen Feldern navigieren und dann die EINGABETASTE drücken, um mit dem Eingeben des Texts zu beginnen.
+
+![Hervorhebungen von Bereichen eines Codeausschnitts, die Sie vervollständigen können](media/code-editing-code-snippets.png)
+
+### <a name="menu-commands"></a>Menübefehle
+
+Bei Verwendung des Menübefehls **Bearbeiten > IntelliSense > Codeausschnitt einfügen** wählen Sie zunächst „Python“ und dann einen Ausschnitt:
+
+![Auswählen eines Codeausschnitts über den Befehl „Codeausschnitt einfügen“](media/code-editing-code-snippet-insert.png)
+
+Der Befehl **Bearbeiten > IntelliSense > Umschließen mit** platziert auf ähnliche Weise die aktuelle Auswahl im Text-Editor in einem ausgewählten Strukturelement. Sie haben z.B. einen Codeabschnitt wie den folgenden:
+
+```python
+sum = 0
+for x in range(1, 100):
+    sum = sum + x
+```
+
+Bei Auswahl dieses Codes und des Befehls **Umschließen mit** wird eine Liste der verfügbaren Ausschnitte angezeigt. Bei Auswahl von `def` aus der Liste wird der ausgewählte Code innerhalb einer Funktionsdefinition platziert, und Sie können die TAB-Taste zum Navigieren zwischen dem markierten Funktionsnamen und Argumenten verwenden:
+
+![Verwenden des Befehls „Umschließen mit“ für Codeausschnitte](media/code-editing-code-snippet-surround-with.png)
+
+### <a name="examine-available-snippets"></a>Untersuchen verfügbarer Ausschnitte
+
+Sie können die verfügbaren Codeausschnitte im durch den Menübefehl **Tools > Codeausschnitt-Manager** geöffneten Codeausschnitt-Manager anzeigen, indem Sie **Python** als Sprache auswählen:
 
 ![Codeausschnitt-Manager](media/code-editing-code-snippets-manager.png)
 
-Informationen zum Erstellen eigener Codeausschnitte finden Sie unter [Exemplarische Vorgehensweise: Erstellen eines Codeausschnitts](../ide/walkthrough-creating-a-code-snippet.md). 
+Informationen zum Erstellen eigener Codeausschnitte finden Sie unter [Exemplarische Vorgehensweise: Erstellen eines Codeausschnitts](../ide/walkthrough-creating-a-code-snippet.md).
 
 Wenn Sie einen Codeausschnitt geschrieben haben, den Sie gerne für andere Benutzer freigeben möchten, posten Sie ihn in einem Gist, und [informieren Sie uns darüber](https://github.com/Microsoft/PTVS/issues). Möglicherweise verwenden wir den Codeausschnitt in einer zukünftigen Version von Visual Studio.
 

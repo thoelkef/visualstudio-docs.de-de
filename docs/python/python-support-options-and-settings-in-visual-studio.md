@@ -2,7 +2,7 @@
 title: "Optionen und Einstellungen für Python in Visual Studio | Microsoft-Dokumentation"
 description: Eine Referenz zu den verschiedenen Einstellungen in Visual Studio, die sich auf Python-Code und -Projekte beziehen.
 ms.custom: 
-ms.date: 02/21/2018
+ms.date: 03/05/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -16,6 +16,7 @@ f1_keywords:
 - VS.ToolsOptionsPages.Python_Tools.General
 - VS.ToolsOptionsPages.Python_Tools.Debugging
 - VS.ToolsOptionsPages.Python_Tools.Diagnostics
+- VS.ToolsOptionsPages.Python_Tools.Experimental
 - VS.ToolsOptionsPages.Python_Tools.Interactive_Windows
 - VS.ToolsOptionsPages.Text_Editor.Python.Advanced
 author: kraigb
@@ -24,11 +25,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 25e0540c376017bfc3f3a64d23bbc6963942bb5c
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: 9bb1316d46f252721230ce4ac1b14f4304693445
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="options-for-python-in-visual-studio"></a>Optionen für Python in Visual Studio
 
@@ -36,19 +37,21 @@ Um Python-Optionen anzuzeigen, verwenden Sie den Menübefehl **Extras > Optionen
 
 ![Dialogfeld „Python-Optionen“, Registerkarte „Allgemein“](media/options-general.png)
 
-Darüber hinaus gibt es Python-spezifische Optionen auf der Registerkarte **Text-Editor > Python > Erweitert**.
+Zusätzliche Python-spezifische Optionen finden Sie auch auf der Registerkarte **Text-Editor > Python > Erweitert** sowie auf der Registerkarte **Umgebung > Schriftarten und Farben** in der Gruppe „Text-Editor“.
 
 > [!Note]
 > Die Gruppe **Experimentell** enthält Optionen für Features, die sich noch in der Entwicklung befinden und hier noch nicht dokumentiert wurden. Diese werden häufig in Beiträgen des Blogs [Python engineering at Microsoft (Python-Entwicklung bei Microsoft)](https://blogs.msdn.microsoft.com/pythonengineering/) erläutert.
 
 ## <a name="general-options"></a>Allgemeine Optionen
 
+(Registerkarte **Extras > Optionen > Python**.)
+
 | Option | Standard | description |
 | --- | --- | --- |
 | Beim Erstellen virtueller Umgebungen das Ausgabefenster anzeigen| Ein | Deaktivieren Sie diese Option, um zu verhindern, dass das Ausgabefenster angezeigt wird. |
 | Anzeigen des Ausgabefensters beim Installieren oder Löschen von Paketen | Ein | Deaktivieren Sie diese Option, um zu verhindern, dass das Ausgabefenster angezeigt wird. |
 | "Pip" immer als Administrator ausführen | Aus | Erhöht `pip install`-Vorgänge immer in allen Umgebungen Beim Installieren von Paketen fordert Visual Studio die Eingabe von Administratorberechtigungen, wenn sich die Umgebung in einem geschützten Bereichs des Dateisystems wie z.B. `c:\Program Files` befindet. In dieser Aufforderung können Sie auswählen, dass `pip install` immer für diese eine Umgebung erhöht ist. Siehe [Registerkarte „Pakete“](python-environments-window-tab-reference.md#packages-tab). |
-| Bei erster Verwendung automatisch Vervollständigungsdatenbank generieren | Ein | Damit [IntelliSense-Vervollständigungen](editing-python-code-in-visual-studio.md#intellisense) für eine Bibliothek funktionieren können, muss Visual Studio eine Vervollständigungsdatenbank generieren. Das Erstellen der Datenbank wird im Hintergrund ausgeführt, wenn eine Bibliothek installiert wird, ist aber möglicherweise noch nicht abgeschlossen, wenn Sie mit dem Schreiben von Code beginnen. Wenn diese Option ausgewählt ist, priorisiert Visual Studio die Vervollständigung von Datenbanken für eine Bibliothek, wenn Sie Code schreiben, der diese verwendet. |
+| Bei erster Verwendung automatisch Vervollständigungsdatenbank generieren | Ein | *Gilt für Visual Studio 2017 Version 15.5 und früher sowie bei Verwendung einer IntelliSense-Datenbank für höhere Versionen.* Priorisiert die Vervollständigung der Datenbank für eine Bibliothek, wenn Sie Code schreiben, der diese verwendet. Weitere Informationen finden Sie unter [Referenz zu den Registerkarten im Fenster „Python-Umgebungen“](python-environments-window-tab-reference.md). |
 | Systemweite PYTHONPATH-Variablen ignorieren | Ein | PYTHONPATH wird standardmäßig ignoriert, weil Visual Studio eine direktere Möglichkeit bietet, Suchpfade in Umgebungen und Projekten anzugeben. Weitere Informationen finden Sie unter [Suchpfade](search-paths.md). |
 | Suchpfade beim Hinzufügen verknüpfter Dateien aktualisieren | Ein | Wenn diese Option festgelegt ist, werden [Suchpfade](search-paths.md) durch das Hinzufügen einer [verknüpften Datei](managing-python-projects-in-visual-studio.md#linked-files) zu einem Projekt aktualisiert, sodass IntelliSense die Inhalte des Ordners der verknüpften Datei in seine Vervollständigungsdatenbank einbeziehen kann. Deaktivieren Sie diese Option, um derartigen Inhalt aus der Vervollständigungsdatenbank auszuschließen. |
 | Warnen, wenn das importierte Modul nicht gefunden wird | Ein | Deaktivieren Sie diese Option, um Warnungen zu unterdrücken, wenn Sie wissen, dass ein importiertes Modul aktuell nicht verfügbar ist, den Codevorgang aber ansonsten nicht beeinträchtigt. |
@@ -59,6 +62,8 @@ Darüber hinaus gibt es Python-spezifische Optionen auf der Registerkarte **Text
 ![Dialogfeld „Python-Optionen“, Registerkarte „Allgemein“](media/options-general.png)
 
 ## <a name="debugging-options"></a>Debugoptionen
+
+(Registerkarte **Extras > Optionen > Python > Debuggen**.)
 
 | Option | Standard | description |
 | --- | --- | --- |
@@ -72,6 +77,8 @@ Darüber hinaus gibt es Python-spezifische Optionen auf der Registerkarte **Text
 
 ## <a name="diagnostics-options"></a>Diagnoseoptionen
 
+(Registerkarte **Extras > Optionen > Python > Diagnose**.)
+
 | Option | Standard | description |
 | --- | --- | --- |
 | Einbeziehen von Analyseprotokollen | Ein | Enthält ausführliche Protokolle zur Analyse von installierten Python-Umgebungen beim Speichern von Diagnosen in Dateien oder beim Kopieren dieser in die Zwischenablage mithilfe von Schaltflächen. Die Option kann die Größe der generierten Datei deutlich erhöhen, ist aber häufig für das Diagnostizieren von Problemen bei IntelliSense erforderlich. |
@@ -81,6 +88,8 @@ Darüber hinaus gibt es Python-spezifische Optionen auf der Registerkarte **Text
 ![Dialogfeld „Optionen“ von Python, Registerkarte „Diagnose“](media/options-diagnostics.png)
 
 ## <a name="interactive-windows-options"></a>Optionen für das interaktive Fenster
+
+(Registerkarte **Extras > Optionen > Python > Interaktive Fenster**.)
 
 | Option | Standard | description |
 | --- | --- | --- |
@@ -92,6 +101,8 @@ Darüber hinaus gibt es Python-spezifische Optionen auf der Registerkarte **Text
 ![Dialogfeld „Python-Optionen“, Registerkarte „Interaktives Fenster“](media/options-interactive-windows.png)
 
 ## <a name="advanced-python-editor-options"></a>Erweiterte Optionen des Python-Editors
+
+(Registerkarte **Extras > Optionen > Text-Editor > Python > Erweitert**.)
 
 ### <a name="completion-results"></a>Vervollständigungsergebnisse
 
@@ -105,7 +116,7 @@ Darüber hinaus gibt es Python-spezifische Optionen auf der Registerkarte **Text
 
 | Option | Standard | description |
 | --- | --- | --- |
-| Commit bei Eingabe der folgenden Zeichen | {}[]().,:;+-*/%&&#124;^~=<>#@\ | Diese Zeichen folgen üblicherweise auf einen Bezeichner, den Sie aus einer Vervollständigungsliste auswählen können. Deshalb ist es praktisch, die Vervollständigung zu committen, indem Sie einfach ein Zeichen eingeben. Sie können spezifische Zeichen nach Ihren Wünschen einer Liste hinzufügen oder aus dieser entfernen.  |
+| Commit bei Eingabe der folgenden Zeichen | `{}[]().,:;+-*/%&&#124;^~=<>#@\` | Diese Zeichen folgen üblicherweise auf einen Bezeichner, den Sie aus einer Vervollständigungsliste auswählen können. Deshalb ist es praktisch, die Vervollständigung zu committen, indem Sie einfach ein Zeichen eingeben. Sie können spezifische Zeichen nach Ihren Wünschen einer Liste hinzufügen oder aus dieser entfernen.  |
 | Bei EINGABE wird die aktuelle Vervollständigung übernommen | Ein | Wenn diese Option aktiviert ist, wählt die EINGABE-TASTE die aktuell ausgewählte Vervollständigung aus und wendet diese an wie mit den oben stehenden Zeichen (es gibt natürlich kein Zeichen für EINGABE, weshalb es nicht direkt in die Liste aufgenommen werden kann). |
 | Mit EINGABE neue Zeile nach jedem ganzen Wort | Aus | Wenn Sie das gesamte Wort eingeben, das im Vervollständigungspopupfenster angezeigt wird, und dann EINGABE drücken, wird diese Vervollständigung standardmäßig committet. Wenn Sie diese Option festlegen, committen Sie Vervollständigungen mit Abschluss der Eingabe des Bezeichners, sodass EINGABE eine neue Zeile einfügt. |
 
@@ -118,3 +129,11 @@ Darüber hinaus gibt es Python-spezifische Optionen auf der Registerkarte **Text
 | Namen basierend auf Typen farblich markieren | Ein | Ermöglicht das Einfärben von Syntax in Python-Code. |
 
 ![Python-Editor-Optionen (Dialogfeld), Registerkarte „Erweitert“](media/options-editor-advanced.png)
+
+## <a name="fonts-and-colors-options"></a>Optionen für Schriftarten und Farben
+
+(Registerkarte **Umgebung > Schriftarten und Farben** in der Gruppe „Text-Editor“.)
+
+Die Namen aller Python-Optionen sind mit dem Präfix „Python“ versehen und damit selbsterklärend. Die Standardschriftart für alle Visual Studio-Farbdesigns ist 10 pt Consolas regulär (nicht fett). Die Standardfarben variieren je nach Design. In der Regel ändern Sie eine Schriftart oder Farbe, wenn Sie meinen, dass der Text mit den Standardeinstellungen schwer zu lesen ist.
+
+![Schriftarten- und Farboptionen für Python](media/options-fonts-and-colors.png)

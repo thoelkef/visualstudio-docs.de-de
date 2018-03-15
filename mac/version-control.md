@@ -6,11 +6,11 @@ ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: 49917483-28AA-4598-A847-71F1F2E0DCB5
-ms.openlocfilehash: 6e467cf6acda75948a189309b7648b1c4c085941
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: ceb0c5ec32da5a34971534a11055593039ea82fd
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="version-control"></a>Versionskontrolle
 
@@ -18,15 +18,15 @@ Versionskontrolle ist ein System zum Verwalten von Dateien in vielen verschieden
 
 Den Kern eines jeden Versionskontrollsystems ist ein _Repository_, das als zentraler Datenspeicher für alle verschiedenen Dateien fungiert, wie ein Dateiserver. Im Gegensatz zu einem Dateiserver enthält das Repository jedoch den gesamten Verlauf des Projekts und alle Änderungen, die vorgenommen wurden.
 
-Wenn das Repository also der zentrale Datenspeicher ist, hat jeder Benutzer logischerweise einen lokalen Datenspeicher, sodass er an einem Projekt arbeiten kann. Hierbei spricht man von einer _Arbeitskopie_. In Visual Studio für Mac wird Ihre Arbeitskopie ebenso wie alle anderen lokalen Verzeichnisse auf dem Computer angezeigt. So können Sie in diesen Dateien lesen schreiben. Da in Visual Studio für Mac aber in eine Versionskontrollsystem integriert ist, können Sie die Leistungsfähigkeit von Subversion und Git nutzen, ohne die IDE zu verlassen.
+Wenn das Repository also der zentrale Datenspeicher ist, hat jeder Benutzer logischerweise einen lokalen Datenspeicher, sodass er an einem Projekt arbeiten kann. Hierbei spricht man von einer _Arbeitskopie_. In Visual Studio für Mac wird Ihre Arbeitskopie ebenso wie alle anderen lokalen Verzeichnisse auf dem Computer angezeigt. So können Sie in diesen Dateien lesen schreiben. Da Visual Studio für Mac aber in ein Versionskontrollsystem integriert ist, können Sie Subversion und Git nutzen, ohne die IDE zu verlassen.
 
-Subversion ist ein zentralisiertes Versionskontrollsystem. Dies bedeutet, dass ein einzelner Server alle Dateien und Reversionen enthält, aus denen Benutzer eine beliebige Version einer beliebigen Datei auschecken können. Wenn Dateien aus einem Remoterepository von Subversion ausgecheckt werden, erhalten Benutzer zu diesem Zeitpunkt eine Momentaufnahme des Repositorys.
+Subversion ist ein zentralisiertes Versionskontrollsystem, was bedeutet, dass ein einzelner Server alle Dateien und Revisionen enthält, aus denen Benutzer eine beliebige Version einer beliebigen Datei auschecken können. Wenn Dateien aus einem Remoterepository von Subversion ausgecheckt werden, erhalten Benutzer eine Momentaufnahme des Repositorys.
 
-Bei Git handelt es sich um ein verteiltes Versionskontrollsystem, mit dem die Mitglieder eines Teams gleichzeitig an den gleichen Dokumenten arbeiten können. Dies bedeutet, dass es einen einzelnen Server mit allen Dateien geben kann. Wenn aber ein Repository aus dieser zentralen Quelle ausgecheckt wird, wird das gesamte Repository auf Ihrem Computer lokal geklont.
+Bei Git handelt es sich um ein verteiltes Versionskontrollsystem, mit dem die Mitglieder eines Teams gleichzeitig an den gleichen Dokumenten arbeiten können. Bei Git kann ein einzelner Server alle Dateien enthalten. Wenn aber ein Repository aus dieser zentralen Quelle ausgecheckt wird, wird das gesamte Repository auf Ihrem Computer lokal geklont.
 
 # <a name="basic-concepts"></a>Grundlegende Konzepte 
 
-Visual Studio für Mac bietet Unterstützung für beide Versionskontrollsysteme von Git und Subversion. Die unten verlinkten Handbüchern erläutern das Einrichten von Git- und Subversion-Repositorys über Visual Studio für Mac sowie einfache Funktionen wie das Überprüfen, das Ausführen eines Commits und das Übertragen von Änderungen.
+Visual Studio für Mac bietet Unterstützung für beide Versionskontrollsysteme von Git und Subversion. In den folgenden Artikeln werden das Einrichten von Git- und Subversion-Repositorys über Visual Studio für Mac sowie einfache Funktionen wie das Überprüfen, Committen und Pushen von Änderungen erläutert.
 
 * [Setting Up a Git Repository (Einrichten eines Git-Repository)](~/set-up-git-repository.md) 
 * [Working with Git (Arbeiten mit Git)](~/working-with-git.md)

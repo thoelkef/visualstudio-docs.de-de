@@ -18,11 +18,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f87e5ac67a547a45b8c7519c96131623686a0866
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: 1b2f570a75be94c3bff4b38a6d0641e3ecbce2f2
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="creating-a-c-extension-for-python"></a>Erstellen einer C++-Erweiterung für Python
 
@@ -231,7 +231,7 @@ Es gibt zwei Methoden, um die DLL Python zur Verfügung zu stellen.
 
 Die erste Methode funktioniert, wenn das Python-Projekt und das C++-Projekt sich in derselben Projektmappe befinden. Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste auf den Knoten **Verweise** Ihres Python-Projekts, und klicken Sie dann auf **Verweis hinzufügen**. Klicken Sie in dem angezeigten Dialogfeld auf die Registerkarte **Projekte** und anschließend auf das**superfastcode**-Projekt (oder den von Ihnen festgelegten Namen) und **OK**.
 
-Durch die alternative Methode, die in den folgenden Schritten beschrieben wird, wird das Modul in der globalen Python-Umgebung installiert. Dadurch wird es ebenfalls für andere Python-Projekte zur Verfügung gestellt. (In der Regel erfordert dies, dass Sie die IntelliSense-Vervollständigungsdatenbank für diese Umgebung aktualisieren. Eine Aktualisierung ist ebenfalls erforderlich, wenn das Modul aus der Umgebung entfernt wird.)
+Durch die alternative Methode, die in den folgenden Schritten beschrieben wird, wird das Modul in der globalen Python-Umgebung installiert. Dadurch wird es ebenfalls für andere Python-Projekte zur Verfügung gestellt. (In der Regel erfordert dies, dass Sie die IntelliSense-Vervollständigungsdatenbank für diese Umgebung in Visual Studio 2017 Version 15.5 und früher aktualisieren. Eine Aktualisierung ist ebenfalls erforderlich, wenn das Modul aus der Umgebung entfernt wird.)
 
 1. Wenn Sie Visual Studio 2017 verwenden, führen Sie den Visual Studio-Installer aus, wählen Sie **Ändern** aus und anschließend **Einzelne Komponenten > Compiler, Buildtools und Runtimes > Visual C++ 2015.3 v140-Toolset**. Dieser Schritt ist notwendig, da Python (für Windows) selbst mit Visual Studio 2015 (Version 14.0) erstellt wurde und erwartet, dass diese Tools beim Erstellen einer Erweiterung über die hier beschriebene Methode verfügbar ist. (Beachten Sie, dass Sie möglicherweise eine 32-Bit-Version von Python installieren müssen, um die DLL auf Win32 statt x64 auszurichten.)
 

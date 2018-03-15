@@ -2,7 +2,7 @@
 title: "Referenz zum Fenster „Python-Umgebungen – Visual Studio | Microsoft-Dokumentation"
 description: "Dieser Artikel beschreibt jede der Registerkarten, die im Fenster „Python-Umgebungen“ in Visual Studio angezeigt werden."
 ms.custom: 
-ms.date: 02/20/2018
+ms.date: 03/05/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -16,11 +16,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 92d5014c257cf35e556eca1928e1c5612f4913eb
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: 13d84eb160b4ba82d4a03d48fe814cb0d92388b0
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="python-environments-window-tabs-reference"></a>Referenz zu den Registerkarten im Fenster „Python-Umgebungen“
 
@@ -55,7 +55,7 @@ Beim Verwenden von interaktiven Fenstern in ihrem alltäglichen Workflow entwick
 
 Startskripts enthalten Code, der vom interaktiven Fenster automatisch geladen und ausgeführt wird, einschließlich Importe, Funktionsdefinitionen und vieles mehr. Auf derartige Skripts kann auf zwei Weisen verwiesen werden:
 
-1. Wenn Sie eine Umgebung installieren, erstellt Visual Studio einen Ordner `Documents\Visual Studio 2017\Python Scripts\<environment>`, in dem &lt;environment&gt' dem Namen der Umgebung entspricht. Sie können mit dem Befehl **Interaktive Skripts untersuchen** ganz leicht zum umgebungsspezifischen Ordner navigieren. Wenn Sie das interaktive Fenster für diese Umgebung starten, lädt es alle hier gefundenen `.py`-Dateien und führt diese in alphabetischer Reihenfolge aus.
+1. Wenn Sie eine Umgebung installieren, erstellt Visual Studio einen Ordner `Documents\Visual Studio 2017\Python Scripts\<environment>`, in dem &lt;environment&gt; dem Namen der Umgebung entspricht. Sie können mit dem Befehl **Interaktive Skripts untersuchen** ganz leicht zum umgebungsspezifischen Ordner navigieren. Wenn Sie das interaktive Fenster für diese Umgebung starten, lädt es alle hier gefundenen `.py`-Dateien und führt diese in alphabetischer Reihenfolge aus.
 
 1. Das Steuerelement **Skripts** auf der Registerkarte **Extras > Optionen > Python Tools > Interaktives Fenster** (siehe [Optionen für das interaktive Fenster](python-support-options-and-settings-in-visual-studio.md#interactive-windows-options)) soll einen zusätzlichen Ordner für Startskripts angeben, die in allen Umgebungen geladen und ausgeführt werden. Diese Funktion funktioniert aktuell noch nicht.
 
@@ -80,9 +80,17 @@ Wenn diese Registerkarte verfügbar ist, enthält sie die in der folgenden Tabel
 
 *In früheren Versionen auch als „pip“ bezeichnet.*
 
-Verwaltet die in der Umgebung installierten Pakete und ermöglicht Ihnen auch, neue Pakete zu suchen und zu installieren (einschließlich dazugehöriger Abhängigkeiten). Das Suchen filtert Ihre aktuell installierten Pakete und [PyPI](https://pypi.python.org). Sie können auch einen `pip install`-Befehl direkt in das Suchfeld eingeben, einschließlich der Flags wie z.B. `--user` oder `--no-deps`.
+Verwaltet die in der Umgebung installierten Pakete und ermöglicht Ihnen auch, neue Pakete zu suchen und zu installieren (einschließlich dazugehöriger Abhängigkeiten).
 
-![Registerkarte mit Paketen in Python-Umgebungen](media/environments-pip-tab.png)
+Bereits installierte Pakete werden mit Steuerelementen zum Aktualisieren (nach unten gerichteter Pfeil) und Deinstallieren (X in einem Kreis) des Pakets angezeigt:
+
+![Registerkarte mit Paketen in Python-Umgebungen](media/environments-pip-tab-controls.png)
+
+Bei Eingabe eines Suchbegriffs werden sowohl die Liste der installierten Pakete als auch Pakete, die von PyPi aus installiert werden können, gefiltert.
+
+![Registerkarte mit Python-Umgebungspaketen mit einer Suche nach „num“](media/environments-pip-tab.png)
+
+Sie können auch einen `pip install`-Befehl direkt in das Suchfeld eingeben, einschließlich der Flags wie z.B. `--user` oder `--no-deps`.
 
 Durch das Installieren eines Pakets wird ein Unterordner im `Lib`-Ordner der Umgebung im Dateisystem erstellt. Wenn Sie z.B. Python 3.6 in `c:\Python36` installiert haben, werden Pakete in `c:\Python36\Lib` installiert. Wenn Sie Anaconda 3 in `c:\Program Files\Anaconda3` installiert haben, werden Pakete in `c:\Program Files\Anaconda3\Lib` installiert.
 
@@ -102,7 +110,9 @@ Zeigt den aktuellen Status der IntelliSense-Vervollständigungsdatenbank:
 
 ![Registerkarte „IntelliSense“ von Python-Umgebungen](media/environments-intellisense-tab.png)
 
-Die Datenbank enthält Metadaten für alle Bibliotheken der Umgebung, verbessert die Geschwindigkeit von IntelliSense und verringert die Speicherauslastung. Wenn Visual Studio eine neue Umgebung erkennt (oder wenn Sie eine hinzufügen), wird die Datenbank automatisch kompiliert, indem die Quelldateien der Bibliothek analysiert werden. Dieser Prozess kann eine Minute oder bis zu einer Stunde oder noch länger dauern, je nachdem, was installiert ist. (Zu Anaconda gehören z.B. viele Bibliotheken, und es dauert einige Zeit, die Datenbank zu kompilieren.) Wenn der Vorgang abgeschlossen ist, erhalten Sie detaillierte IntelliSense-Daten und müssen die Datenbank erst erneut aktualisieren (mit der Schaltfläche **DB aktualisieren**), wenn Sie weitere Bibliotheken installieren.
+In **Visual Studio 2017 Version 15.5** und früher hängen IntelliSense-Vervollständigungen von einer Datenbank ab, die für diese Bibliothek kompiliert wurde. Das Erstellen der Datenbank wird im Hintergrund ausgeführt, wenn eine Bibliothek installiert wird, kann aber eine Weile dauern und ist möglicherweise noch nicht abgeschlossen, wenn Sie mit dem Schreiben von Code beginnen. **Visual Studio 2017 Version 15.6** und höher verwendet eine schnellere Methode, um Vervollständigungen durchzuführen, die nicht von der Datenbank abhängen, sofern Sie dies nicht ausdrücklich aktivieren.
+
+Wenn Visual Studio eine neue Umgebung erkennt (oder wenn Sie eine hinzufügen), wird die Datenbank automatisch kompiliert, indem die Quelldateien der Bibliothek analysiert werden. Dieser Prozess kann eine Minute oder bis zu einer Stunde oder noch länger dauern, je nachdem, was installiert ist. (Zu Anaconda gehören z.B. viele Bibliotheken, und es dauert einige Zeit, die Datenbank zu kompilieren.) Wenn der Vorgang abgeschlossen ist, erhalten Sie detaillierte IntelliSense-Daten und müssen die Datenbank erst erneut aktualisieren (mit der Schaltfläche **DB aktualisieren**), wenn Sie weitere Bibliotheken installieren.
 
 Bibliotheken, für die noch keine Daten kompiliert wurden, werden mit einem **!** gekennzeichnet. Wenn die Datenbank einer Umgebung nicht vollständig ist, wird daneben auch ein **!** in der Liste der wichtigsten Umgebungen angezeigt.
 
@@ -110,5 +120,5 @@ Bibliotheken, für die noch keine Daten kompiliert wurden, werden mit einem **!*
 
 - [Verwalten von Python-Umgebungen in Visual Studio](managing-python-environments-in-visual-studio.md)
 - [Auswählen eines Interpreters für ein Projekt](selecting-a-python-environment-for-a-project.md)
-- [Verwenden von "requirements.txt" für Abhängigkeiten](managing-required-packages-with-requirements-txt.md) 
+- [Verwenden von "requirements.txt" für Abhängigkeiten](managing-required-packages-with-requirements-txt.md)
 - [Suchpfade](search-paths.md)

@@ -6,19 +6,19 @@ ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: C7782BF3-016F-4B41-8A81-85FC540A1A8F
-ms.openlocfilehash: ba92cd9a0e9ca28d132116f65fd41758bce1a1f0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 925c928e171b76af76304074e736fd8962158564
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="refactoring"></a>Umgestaltung
 
-Das Umgestalten von Code ist eine Möglichkeit, vorhandenen Code neu anzuordnen, neu zu strukturieren und zu verdeutlichen, wobei weiterhin sichergestellt wird, dass das Gesamtverhalten des Codes nicht verändert wird.
+Das Umgestalten von Code ist eine Möglichkeit, vorhandenen Code neu anzuordnen, neu zu strukturieren und zu verdeutlichen, wobei sichergestellt wird, dass das Gesamtverhalten des Codes nicht verändert wird.
 
-Dadurch wird eine Codebasis mit weniger Fehlern erzeugt, die für Sie oder andere Entwickler oder Benutzer, die möglicherweise auf den Code verweisen, besser verwendbar, lesbar und verwaltbar ist.
+Umgestalten erzeugt eine Codebasis mit weniger Fehlern, die für Sie oder andere Entwickler oder Benutzer, die möglicherweise auf den Code verweisen, besser verwendbar, lesbar und verwaltbar ist.
 
-Die Integration in Roslyn, Microsofts Open Source-.NET Compilerplattform, von Visual Studio für Mac ermöglicht mehr Refactoringvorgänge sowie die vollständige Unterstützung der aktuellen C#-Version.
+Die Integration in Roslyn, Microsofts Open Source-.NET Compilerplattform, von Visual Studio für Mac ermöglicht mehr Umgestaltungsvorgänge.
 
 ## <a name="renaming"></a>Umbenennen 
 

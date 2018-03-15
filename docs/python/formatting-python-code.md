@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e68fff14ea51816ae45a29410d09cb6633689534
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 95ef8e1c5be39119574f838df93d067a7404f7f5
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="formatting-python-code"></a>Formatieren von Python-Code
 
@@ -30,9 +30,13 @@ Mit Visual Studio können Sie Code schnell neu formatieren, um die vorkonfigurie
 - Zum Formatieren von ausgewähltem Code wählen Sie **Bearbeiten > Erweitert > Auswahl formatieren** aus oder drücken STRG+E, F.
 - Um die gesamte Datei zu formatieren, wählen Sie **Bearbeiten > Erweitert > Dokument formatieren** oder drücken STRG+E, D.
 
-Optionen werden über **Tools > Optionen > Text-Editor > Python > Formatierung** und die zugehörigen geschachtelter Registerkarten festgelegt. Standardmäßig sind sie so festgelegt, dass sie einer Obermenge des [PEP 8-Styleguides](http://www.python.org/dev/peps/pep-0008/) entsprechen. Auf der Registerkarte **Allgemein** wird festgelegt, wann die Formatierung angewendet wird. Die Einstellungen der drei weiteren Registerkarten werden in diesem Thema beschrieben.
+Optionen werden durch **Tools > Optionen > Text-Editor > Python > Formatierung** und die darin geschachtelten Registerkarten festgelegt. Sie müssen **Alle Einstellungen anzeigen** auswählen, damit diese Optionen angezeigt werden:
 
-Die [Python-Unterstützung in Visual Studio](installing-python-support-in-visual-studio.md) fügt dem Menü **Bearbeiten > Erweitert** auch den nützlichen Befehl [Kommentarabsatz ausfüllen](#fill-comment-paragraph-command) hinzu, wie unten beschrieben.
+![Python-Formatierungsoptionen in Visual Studio](media/options-editor-formatting.png)
+
+Für Formatierungsoptionen ist standardmäßig festgelegt, dass sie mit einem Superset des [PEP 8 Style Guide](http://www.python.org/dev/peps/pep-0008/) übereinstimmen. Auf der Registerkarte **Allgemein** wird festgelegt, wann die Formatierung angewendet wird. Die Einstellungen der drei weiteren Registerkarten werden in diesem Artikel beschrieben.
+
+Die [Python-Unterstützung in Visual Studio](installing-python-support-in-visual-studio.md) fügt dem Menü **Bearbeiten > Erweitert** auch den nützlichen Befehl [Kommentarabsatz ausfüllen](#fill-comment-paragraph-command) hinzu, wie in einem späteren Abschnitt beschrieben.
 
 ## <a name="spacing"></a>Abstand
 

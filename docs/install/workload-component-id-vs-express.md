@@ -5,21 +5,23 @@ keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.date: 12/01/2017
+ms.date: 03/05/2018
 ms.topic: article
 helpviewer_keywords:
 - workload ID, Visual Studio
 - component ID, Visual Studio
 - install Visual Studio, administrator guide
 ms.service: 
-ms.technology: vs-acquisition
+ms.technology:
+- vs-acquisition
 ms.assetid: a3c0cc76-e3ce-435c-a1af-a6318b5a4dbe
-ms.workload: multiple
-ms.openlocfilehash: a628d2af0ccfaf66c936b391a977a0869139c98b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: b73c455e4a6aaf888e9a405f9ec8070f56f892ab
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="visual-studio-desktop-express-2017-workload-and-component-ids"></a>Arbeitsauslastungs- und Komponenten-IDs in Visual Studio Desktop Express 2017
 
@@ -45,43 +47,43 @@ Weitere Informationen zur Verwendung dieser IDs finden Sie auf der Seite [Verwen
 
 Komponenten-ID | name | Version | Abhängigkeitstyp
 --- | --- | --- | ---
-Microsoft.Component.ClickOnce | ClickOnce-Veröffentlichung | 15.0.27019.1 | Erforderlich
-Microsoft.Component.HelpViewer | Help Viewer | 15.0.27005.2 | Erforderlich
-Microsoft.Component.MSBuild | MSBuild | 15.0.27019.1 | Erforderlich
-Microsoft.Component.VC.Runtime.OSSupport | Visual C++ Runtime für UWP | 15.0.27019.1 | Erforderlich
-Microsoft.Net.Component.4.5.1.TargetingPack | Paket zur Festlegung von Zielversionen von .NET Framework 4.5.1 | 15.0.26621.2 | Erforderlich
-Microsoft.Net.Component.4.5.2.TargetingPack | Paket zur Festlegung von Zielversionen von .NET Framework 4.5.2 | 15.0.26621.2 | Erforderlich
-Microsoft.Net.Component.4.5.TargetingPack | Paket zur Festlegung von Zielversionen von .NET Framework 4.5 | 15.0.26621.2 | Erforderlich
-Microsoft.Net.Component.4.6.1.SDK | .NET Framework 4.6.1 SDK | 15.0.26621.2 | Erforderlich
-Microsoft.Net.Component.4.6.1.TargetingPack | Paket zur Festlegung von Zielversionen von .NET Framework 4.6.1 | 15.0.26621.2 | Erforderlich
-Microsoft.Net.Component.4.6.TargetingPack | Paket zur Festlegung von Zielversionen von .NET Framework 4.6 | 15.0.26621.2 | Erforderlich
-Microsoft.Net.Component.4.TargetingPack | Paket zur Festlegung von Zielversionen von .NET Framework 4 | 15.0.26621.2 | Erforderlich
-Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET Framework 4.6.1-Entwicklungstools | 15.0.27005.2 | Erforderlich
-Microsoft.Net.ComponentGroup.TargetingPacks.Common | Entwicklungstools für .NET Framework 4 – 4.6 | 15.0.26606.0 | Erforderlich
+Microsoft.Component.ClickOnce | ClickOnce-Veröffentlichung | 15.0.27205.0 | Erforderlich
+Microsoft.Component.HelpViewer | Help Viewer | 15.6.27323.2 | Erforderlich
+Microsoft.Component.MSBuild | MSBuild | 15.6.27309.0 | Erforderlich
+Microsoft.Component.VC.Runtime.OSSupport | Visual C++ Runtime für UWP | 15.6.27406.0 | Erforderlich
+Microsoft.Net.Component.4.5.1.TargetingPack | Paket zur Festlegung von Zielversionen von .NET Framework 4.5.1 | 15.6.27406.0 | Erforderlich
+Microsoft.Net.Component.4.5.2.TargetingPack | Paket zur Festlegung von Zielversionen von .NET Framework 4.5.2 | 15.6.27406.0 | Erforderlich
+Microsoft.Net.Component.4.5.TargetingPack | Paket zur Festlegung von Zielversionen von .NET Framework 4.5 | 15.6.27406.0 | Erforderlich
+Microsoft.Net.Component.4.6.1.SDK | .NET Framework 4.6.1 SDK | 15.6.27406.0 | Erforderlich
+Microsoft.Net.Component.4.6.1.TargetingPack | Paket zur Festlegung von Zielversionen von .NET Framework 4.6.1 | 15.6.27406.0 | Erforderlich
+Microsoft.Net.Component.4.6.TargetingPack | Paket zur Festlegung von Zielversionen von .NET Framework 4.6 | 15.6.27406.0 | Erforderlich
+Microsoft.Net.Component.4.TargetingPack | Paket zur Festlegung von Zielversionen von .NET Framework 4 | 15.6.27406.0 | Erforderlich
+Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET Framework 4.6.1-Entwicklungstools | 15.6.27406.0 | Erforderlich
+Microsoft.Net.ComponentGroup.TargetingPacks.Common | Entwicklungstools für .NET Framework 4 – 4.6 | 15.6.27406.0 | Erforderlich
 Microsoft.VisualStudio.Component.Common.Azure.Tools | Tools für Konnektivität und Veröffentlichung | 1.10.50912.1 | Erforderlich
-Microsoft.VisualStudio.Component.CoreEditor | Visual Studio-Kern-Editor | 15.0.26606.0 | Erforderlich
-Microsoft.VisualStudio.Component.EntityFramework | Entity Framework 6-Tools | 15.0.26208.0 | Erforderlich
-Microsoft.VisualStudio.Component.NuGet | NuGet-Paket-Manager | 15.0.27128.1 | Erforderlich
-Microsoft.VisualStudio.Component.Roslyn.Compiler | C#- und Visual Basic-Roslyn-Compiler | 15.0.27019.1 | Erforderlich
-Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# und Visual Basic | 15.0.27019.1 | Erforderlich
-Microsoft.VisualStudio.Component.SQL.ADAL | SQL ADAL-Runtime | 15.0.26606.0 | Erforderlich
+Microsoft.VisualStudio.Component.CoreEditor | Visual Studio-Kern-Editor | 15.6.27309.0 | Erforderlich
+Microsoft.VisualStudio.Component.EntityFramework | Entity Framework 6-Tools | 15.6.27406.0 | Erforderlich
+Microsoft.VisualStudio.Component.NuGet | NuGet-Paket-Manager | 15.6.27309.0 | Erforderlich
+Microsoft.VisualStudio.Component.Roslyn.Compiler | C#- und Visual Basic-Roslyn-Compiler | 15.6.27309.0 | Erforderlich
+Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# und Visual Basic | 15.0.27205.0 | Erforderlich
+Microsoft.VisualStudio.Component.SQL.ADAL | SQL ADAL-Runtime | 15.6.27406.0 | Erforderlich
 Microsoft.VisualStudio.Component.SQL.CLR | CLR-Datentypen für SQL Server | 15.0.26208.0 | Erforderlich
 Microsoft.VisualStudio.Component.SQL.CMDUtils | SQL Server-Befehlszeilenprogramme | 15.0.26208.0 | Erforderlich
 Microsoft.VisualStudio.Component.SQL.DataSources | Datenquellen für SQL Server-Unterstützung | 15.0.26621.2 | Erforderlich
-Microsoft.VisualStudio.Component.SQL.LocalDB.Runtime | SQL Server Express 2016 LocalDB | 15.0.26919.1 | Erforderlich
+Microsoft.VisualStudio.Component.SQL.LocalDB.Runtime | SQL Server Express 2016 LocalDB | 15.6.27406.0 | Erforderlich
 Microsoft.VisualStudio.Component.SQL.NCLI | SQL Server Native Client | 15.0.26208.0 | Erforderlich
 Microsoft.VisualStudio.Component.SQL.SSDT | SQL Server-Datentools | 15.0.26906.1 | Erforderlich
 Microsoft.VisualStudio.Component.Static.Analysis.Tools | Statische Analysetools | 15.0.26208.0 | Erforderlich
 Microsoft.VisualStudio.Component.TextTemplating | Textvorlagentransformation | 15.0.26208.0 | Erforderlich
-Microsoft.VisualStudio.Component.VC.CLI.Support | C++-/CLI-Unterstützung | 15.0.27019.1 | Erforderlich
-Microsoft.VisualStudio.Component.VC.Tools.ARM | Visual Studio C++-Compiler und -Bibliotheken für ARM | 15.0.27019.1 | Erforderlich
-Microsoft.VisualStudio.Component.VC.Tools.ARM64 | Visual C++-Compiler und -Bibliotheken für ARM64 | 15.0.27019.1 | Erforderlich
-Microsoft.VisualStudio.Component.VisualStudioData | Datenquellen und Dienstverweise | 15.0.26208.0 | Erforderlich
-Microsoft.VisualStudio.Component.Windows10SDK.14393 | Windows 10 SDK (10.0.14393.0) | 15.0.26208.0 | Erforderlich
-Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop | Windows 10 SDK (10.0.16299.0) für Desktop C++ [x86 und x64] | 15.0.27128.1 | Erforderlich
-Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop.arm | Windows 10 SDK (10.0.16299.0) für Desktop C++ [ARM und ARM64] | 15.0.27128.1 | Erforderlich
-Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP | Windows 10 SDK (10.0.16299.0) für UWP: C#, VB, JS | 15.0.27128.1 | Erforderlich
-Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP.Native | Windows 10 SDK (10.0.16299.0) für UWP: C++ | 15.0.27128.1 | Erforderlich
+Microsoft.VisualStudio.Component.VC.CLI.Support | C++-/CLI-Unterstützung | 15.6.27309.0 | Erforderlich
+Microsoft.VisualStudio.Component.VC.Tools.ARM | Visual Studio C++-Compiler und -Bibliotheken für ARM | 15.6.27406.0 | Erforderlich
+Microsoft.VisualStudio.Component.VC.Tools.ARM64 | Visual C++-Compiler und -Bibliotheken für ARM64 | 15.6.27309.0 | Erforderlich
+Microsoft.VisualStudio.Component.VisualStudioData | Datenquellen und Dienstverweise | 15.6.27406.0 | Erforderlich
+Microsoft.VisualStudio.Component.Windows10SDK.14393 | Windows 10 SDK (10.0.14393.0) | 15.6.27406.0 | Erforderlich
+Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop | Windows 10 SDK (10.0.16299.0) für Desktop C++ [x86 und x64] | 15.6.27406.0 | Erforderlich
+Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop.arm | Windows 10 SDK (10.0.16299.0) für Desktop C++ [ARM und ARM64] | 15.6.27406.0 | Erforderlich
+Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP | Windows 10 SDK (10.0.16299.0) für UWP: C#, VB, JS | 15.6.27406.0 | Erforderlich
+Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP.Native | Windows 10 SDK (10.0.16299.0) für UWP: C++ | 15.6.27406.0 | Erforderlich
 
 ## <a name="unaffiliated-components"></a>Nicht zugeordnete Komponenten
 

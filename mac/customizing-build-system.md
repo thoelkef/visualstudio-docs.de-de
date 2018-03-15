@@ -6,11 +6,11 @@ ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: 6958B102-8527-4B40-BC65-3505DB63F9D3
-ms.openlocfilehash: 2d17a952c58e5ef7e593ee7aeb1980e09a376800
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 6ef9084e5cd571c0f3f2b60e2c08d8d7bb0b8518
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="customizing-the-build-system"></a>Anpassen des Buildsystems
 
@@ -18,7 +18,7 @@ MSBuild ist ein von Microsoft entwickeltes Buildmodul, mit dem hauptsächlich .N
 
 **MSBuild** wird hauptsächlich für Buildsysteme für Projekte in Visual Studio für Mac verwendet. 
 
-MSBuild arbeitet mit einem Eingabensatz, wie z.B. Quelldateien, und wandelt diese in Ausgaben um, wie z.B. ausführbare Dateien, und erreicht diese Ausgabe, indem es Tools wie z.B. den Compiler aufruft. 
+MSBuild arbeitet mit einem Eingabensatz, wie z.B. Quelldateien, und wandelt diese in Ausgaben um, wie z.B. ausführbare Dateien. Diese Ausgabe wird durch den Aufruf von Tools wie dem Compiler erzielt. 
 
 
 ## <a name="msbuild-file"></a>MSBuild-Datei
@@ -26,11 +26,12 @@ MSBuild arbeitet mit einem Eingabensatz, wie z.B. Quelldateien, und wandelt dies
 MSBuild verwendet eine XML-Datei, die die *Elemente* definiert, die Teil Ihres Projekts sind (wie z.B. Bildressourcen) sowie die *Eigenschaften*, die zum Erstellen Ihres Projekts erforderlich sind. Diese Projektdatei hat immer eine Dateiendung mit `proj`, wie z.B. `.csproj` für C#-Projekte. 
 
 ### <a name="viewing-the-msbuild-file"></a>Anzeigen der MSBuild-Datei
-Sie können diese Datei finden, indem Sie mit der rechten Maustaste auf den Projektnamen und dann auf **Im Finder anzeigen** klicken. Dann werden alle Dateien und Ordner angezeigt, die mit Ihrem Projekt in Verbindung stehen, einschließlich der `.csproj`-Datei, wie unten veranschaulicht:
+
+Sie finden die MSBuild-Datei, indem Sie mit der rechten Maustaste auf den Projektnamen und dann auf **Im Finder anzeigen** klicken. Im Finderfenster werden alle Dateien und Ordner angezeigt, die mit Ihrem Projekt in Verbindung stehen, einschließlich der `.csproj`-Datei, wie in der folgenden Abbildung dargestellt:
 
 ![](media/customizing-build-system-image1.png)
 
-Sie können die `.csproj`-Datei auch in einer neuen Registerkarte in Visual Studio für Mac anzeigen, indem Sie mit der rechten Maustaste auf Ihren Projektnamen klicken und dann zu **Extras > Datei bearbeiten** navigieren.
+Um die `.csproj`-Datei auf einer neuen Registerkarte in Visual Studio für Mac anzuzeigen, klicken Sie mit der rechten Maustaste auf Ihren Projektnamen und navigieren dann zu **Extras > Datei bearbeiten**:
 
 ![](media/customizing-build-system-image2.png)
 
@@ -44,7 +45,7 @@ Alle MSBuild-Dateien enthalten ein erforderliches `Project`-Stammelement, wie un
 </Project>
 ```
 
-Normalerweise importiert das Projekt auch eine `.targets`-Datei, die viele Regeln enthält, in denen beschrieben wird, wie Sie verschiedenen Dateien verarbeiten und erstellen können. Dies tritt meistens gegen Ende Ihrer `proj`-Datei auf und sieht für C#-Projekte ungefähr folgendermaßen aus:
+Das Projekt importiert in der Regel auch eine `.targets`-Datei. Diese Datei enthält viele der Regeln, in denen beschrieben wird, wie Sie verschiedene Dateien verarbeiten und erstellen. Der Import ist in der Regel im unteren Teil Ihrer `proj`-Datei enthalten und sieht für C#-Projekte ungefähr folgendermaßen aus:
 
 ```
 <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
@@ -54,7 +55,7 @@ Die .targets-Datei ist eine weitere MSBuild-Datei. Die Datei enthält MSBuild-Co
 
 ### <a name="items-and-properties"></a>Elemente und Eigenschaften
 
-Es gibt zwei grundlegende Datentypen in MSBuild: *Elemente* und *Eigenschaften*, die weitere unten ausführlicher besprochen werden.
+Es gibt zwei grundlegende Datentypen in MSBuild: *Elemente* und *Eigenschaften*, die in den folgenden Abschnitten ausführlicher besprochen werden.
 
 #### <a name="properties"></a>Eigenschaften
 
@@ -62,7 +63,7 @@ Eigenschaften sind Schlüssel-Wert-Paare, die verwendet werden, um Einstellungen
 
 Sie werden mit einer Eigenschaftengruppe festgelegt und können wiederum beliebig viele Eigenschaftengruppen enthalten, die beliebig viele Eigenschaften enthalten können. 
 
-Die Eigenschaftengruppe einer einfachen Konsolenanwendung kann z.B. folgendermaßen aussehen:
+Die Eigenschaftengruppe einer einfachen Konsolenanwendung kann z.B. wie die folgende XML-Datei aussehen:
 
 ```
 <PropertyGroup>
@@ -84,7 +85,7 @@ Elemente bieten eine Möglichkeit zum Verarbeiten von Eingaben in einem Buildsys
 
 Elemente werden durch die Deklaration einer `ItemGroup` erstellt. Es kann eine beliebige Zahl an Elementgruppen geben, die wiederum eine beliebige Zahl an Elementen enthalten können. 
 
-Durch den untenstehenden Codeabschnitt werde die iOS-Startbildschirme erstellt. Diese sind vom Typ `BundleResource`, und die Spezifikation ist der Pfad des Images:
+Durch den folgenden Codeabschnitt werden z.B. die iOS-Startbildschirme erstellt. Die Startbildschirme haben den Buildtyp `BundleResource` mit der Spezifikation wie der Pfad zu dem Image:
 
 ```
  <ItemGroup>

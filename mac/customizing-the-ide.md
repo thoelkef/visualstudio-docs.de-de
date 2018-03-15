@@ -6,27 +6,27 @@ ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: F7C2A28C-0759-4E0D-A28E-B72D5AB73DB6
-ms.openlocfilehash: f0192b63c76fe4c3fe51c0f5aa6700e072fb80d4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: bbc2f70f0d6774269f481cad5571dd9b78bac2da
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="customizing-the-ide"></a>Anpassen der IDE
 
-Visual Studio für Mac kann auf viele verschiedene Arten angepasst werden, sodass Benutzer Apps in einer Umgebung entwickeln können, die ihren Bedürfnissen nach Effizienz und Ästhetik gerecht wird. Dieses Thema erläutert die verschiedenen Arten, auf die Visual Studio für Mac an Ihre Bedürfnisse angepasst werden kann.
+Visual Studio für Mac kann auf viele verschiedene Arten angepasst werden, sodass Benutzer Apps in einer Umgebung entwickeln können, die ihren Bedürfnissen nach Effizienz und Ästhetik gerecht wird. In diesem Artikel werden die verschiedenen Arten erläutert, auf die Visual Studio für Mac Ihren Bedürfnissen angepasst werden kann.
 
 ## <a name="dark-theme"></a>Dunkles Design
 
 ![Ansicht des dunklen Designs](media/customizing-the-ide-image7a.png)
 
-Sie können die Designs in Visual Studio für Mac wechseln, indem Sie zu **Visual Studio > Preferences... > Environment > Visual Style** (Visual Studio > Einstellungen... > Umgebung > Visueller Stil) navigieren und Ihr gewünschtes Design aus dem Dropdownmenü **User Interface Theme** (Design der Benutzeroberfläche) wie im folgenden Screenshot dargestellt auswählen:
+Sie können die Designs in Visual Studio für Mac wechseln, indem Sie zu **Visual Studio > Einstellungen... > Umgebung > Visueller Stil** navigieren und Ihr gewünschtes Design aus dem Dropdownmenü **Design der Benutzeroberfläche** wie in der folgenden Abbildung dargestellt auswählen:
 
  ![Auswahl des dunklen Designs](media/customizing-the-ide-image7b.png)
 
 ## <a name="localization"></a>Lokalisierung
 
-Visual Studio für Mac ist in 13 Sprachen lokalisiert, sodass mehr Entwickler darauf zugreifen können. Die derzeit verfügbaren Sprachen sind im Folgenden aufgelistet:
+Visual Studio für Mac ist in den folgenden 13 Sprachen lokalisiert, sodass mehr Entwickler darauf zugreifen können:
 
 * Chinesisch (China)
 * Chinesisch (Taiwan)
@@ -42,29 +42,29 @@ Visual Studio für Mac ist in 13 Sprachen lokalisiert, sodass mehr Entwickler da
 * Spanisch
 * Türkisch
 
-Navigieren Sie zum Ändern der Anzeigesprache in Visual Studio für Mac zu **Visual Studio > Preferences... > Environment > Visual Style** (Visual Studio > Einstellungen... > Umgebung > Visueller Stil), und wählen Sie im Dropdownmenü **User Interface Language** (Sprache der Benutzeroberfläche) wie im folgenden Screenshot dargestellt Ihre gewünschte Sprache aus:
+Navigieren Sie zum Ändern der Anzeigesprache in Visual Studio für Mac zu **Visual Studio > Einstellungen... > Umgebung > Visueller Stil**, und wählen Sie im Dropdownmenü **Sprache der Benutzeroberfläche** wie in der folgenden Abbildung dargestellt Ihre gewünschte Sprache aus:
 
 
 ![Sprachauswahl](media/customizing-the-ide-image11a.png)
 
 ## <a name="author-information"></a>Autoreninformationen
 
-Der Bereich „Autoreninformationen“ ermöglicht es Ihnen, wichtige Informationen über sich selbst hinzuzufügen, zum Beispiel Ihren Namen, Ihre E-Mail-Adressen, den Urheberrechtsinhaber Ihrer Arbeit, Ihr Unternehmen und Ihre Marke. Dies wird im Folgenden dargestellt:
+Der Bereich „Autoreninformationen“ ermöglicht Ihnen, wichtige Informationen über sich selbst hinzuzufügen, zum Beispiel Ihren Namen, Ihre E-Mail-Adresse, den Urheberrechtsinhaber Ihrer Arbeit, Ihr Unternehmen und Ihre Marke:
 
  ![Abschnitt „Bearbeiten von Autoreninformationen“](media/customizing-the-ide-image9a.png)
 
-Diese Informationen werden verwendet, um Standard-Dateiheader (z.B. eine Lizenz) zu füllen, die Sie zu neuen Dateien hinzufügen möchten, die in Visual Studio für Mac erstellt wurden:
+Diese Informationen werden verwendet, um Standard-Dateiheader (z.B. eine Lizenz) zu füllen, die Sie zu neuen Dateien hinzufügen möchten:
 
  ![Optionen für Standard-Header](media/customizing-the-ide-image8a.png)
 
 
-Die aufgefüllten Felder für **Name** und **E-Mail** werden verwendet, um Informationen zu jedem Commit hinzuzufügen, der über die Versionskontrolle in Visual Studio für Mac ausgeführt wird. Wenn Sie diese Felder nicht aufgefüllt haben, fordert Visual Studio für Mac Sie dazu auf, dies zu tun, wenn Sie die Versionskontrolle verwenden möchten.
+Die aufgefüllten Felder für **Name** und **E-Mail** werden bei jedem Commit verwendet, der über die Versionskontrolle in Visual Studio für Mac ausgeführt wird. Wenn Sie diese Felder nicht aufgefüllt haben, fordert Visual Studio für Mac Sie dazu auf, dies zu tun, wenn Sie die Versionskontrolle verwenden möchten.
 
 ## <a name="key-bindings"></a>Tastenbindungen
 
 Durch Tastenbindungen können Sie Ihre Entwicklungsumgebung anpassen, sodass Sie sich effizienter durch Visual Studio für Mac bewegen können. Es stellt vertraute Tastenbindungen für viele beliebte IDEs bereit, zum Beispiel Visual Studio (Windows), ReSharper, Visual Studio Code und Xcode.
 
-Tastenbindungen können festgelegt werden, indem Sie wie unten dargestellt zu **Visual Studio > Preferences... > Environment > Key Bindings** (Visual Studio > Einstellungen... > Umgebung > Tastenbindungen) navigieren:
+Tastenbindungen können festgelegt werden, indem Sie zu **Visual Studio > Einstellungen... > Umgebung > Tastenbindungen** navigieren, wie in der folgenden Abbildung dargestellt:
 
  ![Festlegen von Tastenbindungen](media/customizing-the-ide-image10a.png)
 
@@ -78,7 +78,7 @@ Der Arbeitsbereich von Visual Studio für Mac besteht aus einem Bereich für das
 
 ### <a name="viewing-and-arranging-pads"></a>Anzeigen und Anordnen von Pads
 
-Wenn Sie eine neue Projektmappe oder Datei in Visual Studio für Mac öffnen, sollten Sie einige *pads* (Pads) im Arbeitsbereich bemerken, darunter das Projektmappenpad, die Dokumentgliederung und das Fehlerpad. Dies wird im Folgenden dargestellt:
+Wenn Sie eine neue Projektmappe oder Datei in Visual Studio für Mac öffnen, sollten Sie einige *Pads* im Arbeitsbereich bemerken, darunter das Projektmappen-, Dokumentgliederungs- und Fehlerpad:
 
 ![Projektmappenpads](media/customizing-the-ide-image2a.png)
 
@@ -101,9 +101,9 @@ Automatisch ausgeblendete Pads sind an die Seiten des Arbeitsbereichs angedockt,
 
 ### <a name="organizing-layouts"></a>Organisieren von Layouts
 
-Die Pads, die jederzeit angezeigt werden, hängen vom aktuellen Kontext ab. Wenn Sie beispielsweise den visuellen Designer verwenden, sind die Pads „Toolbox“ und „Eigenschaftsraster“ am wichtigsten. Beim Debuggen sind die Debuggerpads zum Anzeigen der Stapel und lokalen Variablen besonders hilfreich.
+Welche Pads jeweils angezeigt werden, hängt vom aktuellen Kontext ab. Wenn Sie beispielsweise den visuellen Designer verwenden, sind die Pads „Toolbox“ und „Eigenschaftsraster“ am wichtigsten. Beim Debuggen sind die Debuggerpads zum Anzeigen der Stapel und lokalen Variablen besonders hilfreich.
 
-Der Status eines geöffneten Pads wird durch ein *Layout* dargestellt. Die Layouts können wie unten dargestellt manuell im Menü „Ansicht“ gewechselt werden. Alternativ werden sie automatisch gewechselt, wenn Sie eine Aktion (z.B. Debuggen) ausführen oder ein Storyboard öffnen:
+Der Status eines geöffneten Pads wird durch ein *Layout* dargestellt. Die Layouts können wie in der folgenden Abbildung dargestellt manuell im Menü „Ansicht“ gewechselt werden. Alternativ werden sie automatisch gewechselt, wenn Sie eine Aktion (z.B. Debuggen) ausführen oder ein Storyboard öffnen:
 
 ![Auswählen neuer Layouts](media/customizing-the-ide-image6b.png)
 
@@ -118,7 +118,7 @@ Es ist jedoch möglich, ein neues Layout zu erstellen, indem Sie das Menüelemen
 
 In Visual Studio für Mac können Sie Text-Editoren parallel öffnen oder einen Editor als getrenntes, unverankertes Fenster öffnen.
 
-Der 2-Spalten-Modus kann über das Menüelement „Ansicht“ aktiviert werden, indem Sie auf **View > Editor Columns > 2 columns** (Ansicht > Editor-Spalten > 2 Spalten) klicken, oder indem Sie eine Registerkarte des Editors wie unten dargestellt an einen der Ränder des Editorbereichs ziehen:
+Der 2-Spalten-Modus kann über das Menüelement „Ansicht“ aktiviert werden, indem Sie auf **Ansicht > Editor-Spalten > 2 Spalten** klicken, oder indem Sie eine Registerkarte des Editors an einen der Ränder des Editorbereichs ziehen:
 
  ![Paralleler Modus für zwei Spalten](media/customizing-the-ide-sbs.png)
 

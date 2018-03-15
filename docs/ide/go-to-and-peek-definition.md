@@ -16,12 +16,13 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 945eb6e905613d3d068321e2d5993f4506036963
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.openlocfilehash: 2bc0d66ff5cd225cba0cd6bd931f242b576b9f23
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="view-type-and-member-definitions"></a>Anzeigen von Typ- und Memberdefinitionen
 
@@ -41,7 +42,7 @@ Die Zusatztaste für **Gehe zu Definition** per Mausklick können Sie ändern, i
 
 ![Aktivieren des Mausklicks zum Wechsel zur Definition](../ide/media/editor_options_mouse_click_gotodef.png)
 
-## <a name="peek-definition"></a>Definition einsehen
+## <a name="peek-definition"></a>Peek-Definition
 
 Die Funktion „Definition einsehen“ ermöglicht eine Vorschau der Definition eines Typs, ohne Ihre Position im Editor verlassen zu müssen. Wenn Sie die Tastatur verwenden, platzieren Sie den Textcursor an einer beliebigen Stelle innerhalb des Typs oder Members, und drücken Sie **ALT+F12**. Wenn Sie die Maus verwenden, können Sie im Kontextmenü auf **Definition einsehen** klicken. In Visual Studio 2017 Version 15.4 und höher gibt es eine neue Möglichkeit, um eine Definition mithilfe der Maus einzusehen. Navigieren Sie zunächst zu **Extras** > **Optionen** > **Text-Editor** > **Allgemein**. Wählen Sie die Option **Definition in der Vorschauansicht öffnen** aus, klicken Sie auf **OK**, und schließen Sie das Dialogfeld **Optionen**.
 
@@ -70,7 +71,7 @@ Wenn Sie beispielsweise den Befehl **Gehe zu Definition** für <xref:System.Cons
 
 ### <a name="view-decompiled-source-definitions-instead-of-metadata-c"></a>Anzeigen von dekompilierten Quelldefinitionen anstelle von Metadaten (C#)
 
-In **Visual Studio 2017 Version 15.6 Vorschauversion 2** können Sie jetzt eine Option festlegen, mit der dekompilierter Quellcode angezeigt wird, wenn Sie die Definition eines C#-Typs oder -Members anzeigen, dessen Quellcode nicht verfügbar ist. Um dieses Feature zu aktivieren, wählen Sie in der Menüleiste **Extras** > **Optionen**. Erweitern Sie dann **Text-Editor** > **C#** > **Erweitert**, und wählen Sie **Navigation zu dekompilierten Quellen aktivieren**.
+In **Visual Studio 2017 Version 15.6** können Sie jetzt eine Option festlegen, mit der dekompilierter Quellcode angezeigt wird, wenn Sie die Definition eines C#-Typs oder -Members anzeigen, dessen Quellcode nicht verfügbar ist. Um dieses Feature zu aktivieren, wählen Sie in der Menüleiste **Extras** > **Optionen**. Erweitern Sie dann **Text-Editor** > **C#** > **Erweitert**, und wählen Sie **Navigation zu dekompilierten Quellen aktivieren**.
 
 ![Anzeigen einer dekompilierten Definition](media/go-to-definition-decompiled-sources.png)
 
@@ -79,5 +80,5 @@ In **Visual Studio 2017 Version 15.6 Vorschauversion 2** können Sie jetzt eine 
 
 ## <a name="see-also"></a>Siehe auch
 
-[Navigieren im Code](../ide/navigating-code.md)  
-[Gewusst wie: Anzeigen und Bearbeiten von Code mithilfe von "Definition einsehen" (Alt+F12)](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)
+[Navigieren durch den Code](../ide/navigating-code.md)
+[Gewusst wie: Anzeigen und Bearbeiten von Code mithilfe von „Definition einsehen“ (Alt+F12)](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)

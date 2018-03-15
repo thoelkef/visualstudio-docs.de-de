@@ -1,7 +1,7 @@
 ---
 title: Erstellen von Projektmappen und Projekten | Microsoft-Dokumentation
 ms.custom: 
-ms.date: 06/16/2017
+ms.date: 02/06/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-general
@@ -13,7 +13,6 @@ f1_keywords:
 - VS.ToolsOptionsPages.Projects.General
 - SolutionItemsProject
 helpviewer_keywords:
-- solutions [Visual Studio], deleting
 - solutions [Visual Studio], creating
 - projects [Visual Studio], creating
 author: gewarren
@@ -21,11 +20,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: b92558a7838646ff7cfde88bffd9f709a997137a
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 23e91f8c5908efb4eed942a9c2556de7778fda92
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="create-solutions-and-projects"></a>Erstellen von Projektmappen und Projekten
 
@@ -46,7 +45,7 @@ An dieser Stelle sollte erwähnt werden, dass Projektmappen und Projekte nicht u
 
 ## <a name="to-create-a-project-from-a-project-template"></a>Erstellen eines neuen Projekts aus einer Projektvorlage
 
-1. Es gibt verschiedene Möglichkeiten, ein neues Projekt in Visual Studio zu erstellen. Geben Sie auf der Startseite den Namen einer Projektvorlage in das Feld **Projektvorlagen suchen** ein, oder klicken Sie auf den Link **Neues Projekt erstellen**, um das Dialogfeld **Neues Projekt** zu öffnen. Sie können ebenso in der Menüleiste auf **Datei** > **Neu** > **Projekt...** oder in der Symbolleiste auf die Schaltfläche **Neues Projekt** klicken.
+1. Es gibt verschiedene Möglichkeiten, ein neues Projekt in Visual Studio zu erstellen. Geben Sie auf der Startseite den Namen einer Projektvorlage in das Feld **Projektvorlagen suchen** ein, oder klicken Sie auf den Link **Neues Projekt erstellen**, um das Dialogfeld **Neues Projekt** zu öffnen. Sie können ebenso in der Menüleiste **Datei** > **Neu** > **Projekt...** oder in der Symbolleiste die Schaltfläche **Neues Projekt** auswählen.
 
   ![Startseite](./media/vside-newproject1.png)
 
@@ -59,9 +58,9 @@ An dieser Stelle sollte erwähnt werden, dass Projektmappen und Projekte nicht u
 
 1. Klicken Sie auf das Dreieck neben dem Namen der Sprache, und wählen Sie dann einen Projekttyp aus, damit die Liste mit den Vorlagen angezeigt wird.
 
-  Im folgenden Beispiel werden die für Webprojekte mit Visual C# verfügbaren Projektvorlagen angezeigt.
+  Im folgenden Beispiel werden die für Visual C# .NET Core-Projekte verfügbaren Projektvorlagen angezeigt.
 
-  ![Projektvorlagen](./media/vside-newproject-projects-list.png)
+  ![Projektvorlagen](./media/new-project-dialog-net-core.png)
 
 1. Geben Sie in das Feld **Name** einen Namen für das neue Projekt ein. Sie können das Projekt entweder am Standardspeicherort auf Ihrem System speichern oder auf die Schaltfläche **Durchsuchen** klicken, um einen anderen Speicherort zu suchen.
 
@@ -69,13 +68,13 @@ An dieser Stelle sollte erwähnt werden, dass Projektmappen und Projekte nicht u
 
 1. Klicken Sie auf die Schaltfläche **OK**, um die Projektmappe und das Projekt zu erstellen.
 
-1. Wenn Sie einer Projektmappe ein zusätzliches Projekt hinzufügen möchten, klicken Sie auf den Projektmappenknoten im Projektmappen-Explorer, und klicken Sie dann in der Menüleiste auf **Projekt** > **Neues Element hinzufügen**.
+1. Wenn Sie einer Projektmappe ein zusätzliches Projekt hinzufügen möchten, wählen Sie den Projektmappenknoten im Projektmappen-Explorer aus und dann in der Menüleiste **Projekt** > **Neues Element hinzufügen**.
 
 ## <a name="create-a-project-from-existing-code-files"></a>Erstellen eines Projekts aus vorhandenen Codedateien
 
 Auflistungen von Quellcodedateien können Sie dem Projekt bei Bedarf hinzufügen.
 
-1. Klicken Sie in der Menüleiste auf **Datei** > **Neu** > **Projekt aus vorhandenem Code**.
+1. Wählen Sie in der Menüleiste **Datei** > **Neu** > **Projekt aus vorhandenem Code** aus.
 
 1. Wählen Sie im Assistenten **Create Project from Existing Code Files** („Projekt aus vorhandenen Codedateien erstellen“) den gewünschten Projekttyp im Dropdown-Listenfeld **Welchen Typ von Projekt möchten Sie erstellen?** aus, und klicken Sie dann auf die Schaltfläche **Weiter**.
 
@@ -86,21 +85,16 @@ Auflistungen von Quellcodedateien können Sie dem Projekt bei Bedarf hinzufügen
 
 ## <a name="add-files-to-a-solution"></a>Hinzufügen von Dateien zu einer Projektmappe
 
-Dateien, die für mehrere Projekt gelten, wie Infodateien zur Projektmappe oder andere Dateien, die eher auf Projektmappenebene als auf Projektebene abgelegt werden sollten, können Sie zur Projektmappe hinzufügen. Öffnen Sie das Kontextmenü des Projektmappenknotens im **Projektmappen-Explorer** mit einem Rechtsklick, und klicken Sie auf **Hinzufügen** > **Neues Element** oder **Hinzufügen** > **Vorhandenes Element**, um der Projektmappe ein Element hinzuzufügen.
+Dateien, die für mehrere Projekt gelten, wie Infodateien zur Projektmappe oder andere Dateien, die eher auf Projektmappenebene als auf Projektebene abgelegt werden sollten, können Sie zur Projektmappe hinzufügen. Öffnen Sie das Kontextmenü des Projektmappenknotens im **Projektmappen-Explorer** mit einem Rechtsklick, und wählen Sie **Hinzufügen** > **Neues Element** oder **Hinzufügen** > **Vorhandenes Element** aus, um der Projektmappe ein Element hinzuzufügen.
 
 ## <a name="create-a-net-project-that-targets-a-specific-version-of-the-net-framework"></a>Erstellen eines .NET-Projekts, das für eine bestimmte Version von .NET Framework vorgesehen ist
 
-Bei der Erstellung eines Projekts können Sie angeben, welche Version von .NET Framework Sie verwenden möchten. Klicken Sie auf **.NET Framework**-Version im Dropdownmenü im Dialogfeld **Neues Projekt**, um eine .NET Framework-Version anzugeben.
+Bei der Erstellung eines Projekts können Sie angeben, welche Version von .NET Framework Sie verwenden möchten. Wählen Sie das **Framework**-Dropdownmenü im Dialogfeld **Neues Projekt** aus, um eine .NET Framework-Version anzugeben.
 
-![Versionsselektor für .NET Framework](./media/vside-newproject-framework.png)
+![Framework-Dropdownliste im Dialogfeld „Neues Projekt“](./media/vside-newproject-framework.png)
 
 > [!NOTE]
-> Wenn Sie ein Projekt aus einer .NET Core-Vorlage erstellen, wird die .NET Framework-Version ignoriert, die Sie aus der Dropdownliste auswählen.
-
-> [!TIP]
-> Wenn Sie die .NET Framework-Version festlegen, bevor Sie eine Projektvorlage auswählen, zeigt Visual Studio nur Vorlagen an, die mit der ausgewählten .NET Framework-Version kompatibel sind.
-
-Sie müssen auf dem System .NET Framework 3.5 installiert haben, um auf frühere Frameworkversionen als .NET Framework 4 zugreifen zu können.
+> Sie müssen auf dem System .NET Framework 3.5 installiert haben, um auf frühere Frameworkversionen als .NET Framework 4 zugreifen zu können.
 
 ## <a name="create-empty-solutions"></a>Erstellen von leeren Projektmappen
 
@@ -108,9 +102,9 @@ Sie können auch leere Projektmappen ohne Projekt erstellen. Dies erweist sich u
 
 ### <a name="to-create-an-empty-solution"></a>So erstellen Sie eine leere Projektmappe
 
-1. Klicken Sie im Menü auf **Datei** > **Neu** > **Projekt…**.
+1. Klicken Sie im Menü auf **Datei** > **Neu** > **Projekt**.
 
-1. Klicken Sie im linken Bereich (**Vorlagen**) auf **Andere Projekttypen** > **Visual Studio-Projektmappen** in der erweiterten Liste.
+1. Wählen Sie im linken Bereich (**Vorlagen**) in der erweiterten Liste **Andere Projekttypen** > **Visual Studio-Projektmappen** aus.
 
 1. Wählen Sie im mittleren Bereich die Option **Leere Projektmappe** aus.
 
@@ -124,7 +118,7 @@ Wie zuvor bereits erwähnt, können Sie Codedateien auch ohne Projekt oder Proje
 
 Wenn Sie ein.NET-basiertes Projekt erstellen, ohne einen Speicherort auf einem Datenträger anzugeben, handelt es sich dabei automatisch um ein temporäres Projekt. Mithilfe von temporären Projekten können Sie mit .NET-Projekten experimentieren. Während Sie an dem temporären Projekt arbeiten, können Sie es jederzeit speichern oder verwerfen.
 
-Gehen Sie zunächst auf **Extras** > **Optionen** > **Projekte und Projektmappen** > **Allgemein**, und deaktivieren Sie das Feld **Neue Projekte beim Erstellen speichern**, um ein temporäres Projekt zu erstellen. Öffnen Sie wie gewohnt das Dialogfeld **Neues Projekt**.
+Gehen Sie zunächst zu **Extras** > **Optionen** > **Projekte und Projektmappen** > **Allgemein**, und deaktivieren Sie das Feld **Neue Projekte beim Erstellen speichern**, um ein temporäres Projekt zu erstellen. Öffnen Sie wie gewohnt das Dialogfeld **Neues Projekt**.
 
 ## <a name="delete-a-solution-project-or-item"></a>Löschen einer Projektmappe, eines Projekts oder eines Elements
 
@@ -146,4 +140,4 @@ Sie können zwar Projektmappen und deren Inhalte dauerhaft löschen, jedoch funk
 [Projektmappen und Projekte](../ide/solutions-and-projects-in-visual-studio.md)  
 [Microsoft's open source repositories on GitHub (Open Source-Repositorys von Microsoft auf GitHub)](https://github.com/Microsoft)  
 [Visual Studio-Beispiele](../ide/visual-studio-samples.md)  
-[Entwickler-Codebeispiele](https://code.msdn.microsoft.com/)  
+[Entwickler-Codebeispiele](https://code.msdn.microsoft.com/)

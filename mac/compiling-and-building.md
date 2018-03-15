@@ -6,19 +6,17 @@ ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: FB253757-DB00-4889-A6BF-E44722E25BD1
-ms.openlocfilehash: 9005cf64f4b72f39923d6525e78de745d79c3953
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: abf772f1e00239b3a66e01c95dd827a392a12902
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="compiling-and-building-in-visual-studio-for-mac"></a>Kompilieren und Generieren in Visual Studio für Mac
 
 Mit Visual Studio für Mac können Sie Anwendungen und Assemblys während der Entwicklung Ihres Projekts erstellen. Es ist wichtig, Ihren Code früh und häufig zu kompilieren und zu erstellen, damit Sie Typenkonflikte und andere Kompilierzeitfehler identifizieren können.
 
-## <a name="choosing-a-build-method"></a>Auswählen einer Erstellungsmethode
-
-### <a name="using-the-ide"></a>Verwenden von IDE
+## <a name="building-from-the-ide"></a>Erstellen aus der IDE
 
 Mit Visual Studio für Mac können Sie Builds erstellen und umgehend ausführen, während Sie weiterhin die Kontrolle über Buildfunktionen haben. Visual Studio für Mac verwendet MSBuild als zugrundeliegendes Buildsystem.
 
@@ -40,13 +38,13 @@ Mit Visual Studio für Mac können Sie auch:
 
     ![Hinzufügen benutzerdefinierter Befehle](media/compiling-and-building-image6.png)
 
-### <a name="building-from-command-line"></a>Erstellen über die Befehlszeile
+## <a name="building-from-command-line"></a>Erstellen über die Befehlszeile
 
 Sie können Buildmodule von MSBuild verwenden, um Anwendungen über die Befehlszeile zu erstellen.
 
 Weitere Informationen zum Verwenden von MSBuild finden Sie in den Artikeln zu [MSBuild](https://docs.microsoft.com/visualstudio/msbuild/msbuild).
 
-### <a name="using-visual-studio-team-services"></a>Verwenden von Visual Studio Team Services
+## <a name="building-from-visual-studio-team-services"></a>Erstellen von Visual Studio Team Services aus
 
 * [Erstellen Ihrer Xamarin-App](https://www.visualstudio.com/docs/build/apps/mobile/xamarin)
 * [Fortlaufende Integration in Xamarin](https://developer.xamarin.com/guides/cross-platform/ci/)

@@ -2,7 +2,7 @@
 title: 'Arbeiten mit Python in Visual Studio, Schritt 5: Installieren von Paketen | Microsoft-Dokumentation'
 description: "Dies ist Schritt 5 eines zentralen Tutorials für die Arbeit mit Python in Visual Studio, in dem die Features von Visual Studio zum Verwalten von Paketen in einer Python-Umgebung veranschaulicht werden."
 ms.custom: 
-ms.date: 01/16/2018
+ms.date: 03/05/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: bb0890d5f9433e1f73039e4036b884d7bfcb7933
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: d633ce061d0624c44060c5e059cf9b29733260d9
+ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="step-5-installing-packages-in-your-python-environment"></a>Schritt 5: Installieren von Paketen in Ihrer Python-Umgebung
 
@@ -44,19 +44,21 @@ Die Python-Entwicklercommunity hat Tausende von nützlichen Paketen erzeugt, die
   ![Installieren von matplotlib in der Umgebung](media/environments-add-matplotlib1.png)
 
 1. Stimmen Sie zu, wenn Sie zur Erhöhung der Rechte aufgefordert werden.
- 
-1. Nachdem das Paket installiert ist, wird es im Fenster der Python-Umgebung angezeigt. Über das **X** auf der rechten Seite des Pakets kann dieses deinstalliert werden. 
+
+1. Nachdem das Paket installiert ist, wird es im Fenster der Python-Umgebung angezeigt. Über das **X** auf der rechten Seite des Pakets kann dieses deinstalliert werden.
 
   ![Abschließen der Installation von matplotlib in der Umgebung](media/environments-add-matplotlib2.png)
 
   Die kleine Statusanzeige unterhalb der Umgebung gibt, an, dass Visual Studio die IntelliSense-Datenbank für neu installierte Pakete erstellt. Die Registerkarte **IntelliSense** zeigt ausführlichere Informationen an. Beachten Sie, dass IntelliSense-Funktionen wie die automatische Vervollständigung und die Syntaxüberprüfung für dieses Paket nicht im Editor aktiv sind, bis die Datenbank vollständig erstellt ist.
 
+  Beachten Sie, dass **Visual Studio 2017 Version 15.6** und höher eine andere und schnellere Methode für die Arbeit mit IntelliSense verwendet, und zeigen Sie eine diesbezügliche Meldung auf der **IntelliSense**-Registerkarte an.
+
 1. Erstellen Sie ein Projekt, indem Sie auf **Datei > Neu > Projekt** klicken und die Vorlage „Python-Anwendung“ auswählen. Fügen Sie folgenden Code in die angezeigte Codedatei ein. Dadurch wird eine Kosinuswelle wie in den vorherigen Schritten des Tutorials erstellt, die dieses Mal jedoch grafisch dargestellt wird:
 
     ```python
+    from math import radians
     import numpy as np     # installed with matplotlib
     import matplotlib.pyplot as plt
-    from math import radians
 
     def main():
         x = np.arange(0, radians(1800), radians(12))

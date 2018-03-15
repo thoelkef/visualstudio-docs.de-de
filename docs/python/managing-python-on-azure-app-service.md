@@ -18,11 +18,11 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: e5d5cbc856a6af44941d690119f2a15a8acc3d41
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: 0f0910459fecb01573b7282137949acbfd5dcb32
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="managing-python-on-azure-app-service"></a>Verwalten von Python auf Azure App Service
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 02/23/2018
 Die benutzerdefinierte Python-Unterstützung auf Azure App Service besteht aus mehreren App Service-*Websiteerweiterungen*, von denen jede eine bestimmte Version der Python-Laufzeit enthält. Sie können sämtliche gewünschten Pakete direkt, wie in diesem Artikel beschrieben, in dieser Umgebung installieren. Wenn Sie die Umgebung in App Service anpassen, müssen Sie keine Pakete in Ihren Web-App-Projekten verwalten, und Sie müssen sie auch nicht zusammen mit dem App-Code hochladen.
 
 > [!Tip]
-> Obwohl in App Service standardmäßig Python 2.7 und Python 3.4 in Stammordnern auf dem Server installiert sind, können Sie die Pakete in diesen Umgebungen nicht anpassen oder installieren. Außerdem sollten Sie sich nicht darauf verlassen, dass tatsächlich Pakete vorhanden sind. Stattdessen sollten Sie, wie in diesem Artikel beschrieben, Ihr Vertrauen auf eine von Ihnen kontrollierte Websiteerweiterung setzen.
+> Obwohl in App Service standardmäßig Python 2.7 und Python 3.4 in Stammordnern auf dem Server installiert sind, können Sie die Pakete in diesen Umgebungen nicht anpassen oder installieren. Außerdem sollten Sie sich nicht darauf verlassen, dass tatsächlich Pakete vorhanden sind. Stattdessen sollten Sie sich, wie in diesem Artikel beschrieben, auf eine von Ihnen kontrollierte Websiteerweiterung verlassen.
 
 > [!Important]
 > Die hier beschriebenen Prozesse unterliegen Veränderungen und vor allem Verbesserungen. Änderungen werden auf dem [Python Engineering at Microsoft-Blog](https://blogs.msdn.microsoft.com/pythonengineering/) angekündigt.

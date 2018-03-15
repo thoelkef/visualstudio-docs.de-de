@@ -6,19 +6,19 @@ ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: E992FA1D-B2AD-4A28-ADC6-47E4FC471060
-ms.openlocfilehash: 2f6c06ff640007f28cfaed6512fdedc5dcb16e65
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: a8e32df2248f53a2b46a971b025b1138abba5101
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="setting-up-a-git-repository"></a>Einrichten eines Git-Repository
 
 Bei Git handelt es sich um ein verteiltes Versionskontrollsystem, mit dem die Mitglieder eines Teams gleichzeitig an den gleichen Dokumenten arbeiten können. Dies bedeutet, dass es einen einzelnen Server mit allen Dateien gibt. Wenn aber ein Repository aus dieser zentralen Quelle ausgecheckt wird, wird das gesamte Repository auf Ihrem Computer lokal geklont.
 
-Es gibt viele Remotehosts, die es Ihnen ermöglichen, mit Git für die Versionskontrolle zu arbeiten, der am häufigsten verwendete ist jedoch GitHub. Im folgenden Beispiel wird ein GitHub-Host verwendet, sie können allerdings einen beliebigen Git-Host für die Versionskontrolle in Visual Studio für Mac verwenden.
+Es gibt viele Remotehosts, die Ihnen ermöglichen, mit Git für die Versionskontrolle zu arbeiten, der am häufigsten verwendete Host ist jedoch GitHub. Im folgenden Beispiel wird ein GitHub-Host verwendet, sie können allerdings einen beliebigen Git-Host für die Versionskontrolle in Visual Studio für Mac verwenden.
 
-Wenn Sie GitHub verwenden möchten, stellen Sie sicher, dass Sie ein Konto erstellt und konfiguriert haben, bevor Sie die folgenden Schritte ausführen. 
+Wenn Sie GitHub verwenden möchten, stellen Sie sicher, dass Sie ein Konto erstellt und konfiguriert haben, bevor Sie die Schritte in diesem Artikel ausführen. 
 
 ## <a name="creating-a-remote-repo-on-github"></a>Erstellen eines Remoterepository auf GitHub
 
@@ -34,20 +34,22 @@ Führen sie die folgenden Schritte aus, um ein Git-Repository einzurichten:
 
     ![Festlegen von Details des Git-Repositorys](media/version-control-git2.png)
 
-3. Im nächsten Schritt wird Ihnen die Option bereitgestellt, entweder die HTTPS- oder die SSH-Adresse für das Repository, das Sie soeben erstellt haben, anzuzeigen und zu kopieren:
+3. Auf der nächsten Seite haben Sie die Option, entweder die HTTPS- oder die SSH-Adresse für das Repository, das Sie erstellt haben, anzuzeigen und zu kopieren:
 
-    ![Anzeigen und Kopieren der Adresse](media/version-control-git3.png) Sie benötigen die HTTPS-Adresse, um Visual Studio für Mac auf dieses Repository zu verweisen.
+    ![Adresse anzeigen und kopieren](media/version-control-git3.png)
+
+  Sie benötigen die HTTPS-Adresse, um Visual Studio für Mac auf dieses Repository zu verweisen.
 
 
 ## <a name="publishing-an-existing-project"></a>Veröffentlichen eines vorhandenen Projekts
 
 4. Kehren Sie zu Ihrem in Visual Studio für Mac geöffneten Projekt zurück. 
 
-5. Klicken Sie in der Menüleiste auf **Version Control > Publish in Version Control…** (Versionskontrolle > In der Versionskontrolle veröffentlichen...):
+5. Wählen Sie in der Menüleiste **Versionskontrolle > In der Versionskontrolle veröffentlichen…**, um das Dialogfeld **Repository auswählen** anzuzeigen:
 
     ![Beginnen des Auscheckens in Visual Studio für Mac](media/version-control-git4-sml.png)
 
-6. Dadurch wird das Dialogfeld **Select Repository** (Repository auswählen) angezeigt. Wählen Sie die Registerkarte **Registered Repositories** (Registrierte Repositorys), und klicken Sie auf die Schaltfläche **Add** (Hinzufügen):
+6. Wählen Sie die Registerkarte **Registered Repositories** (Registrierte Repositorys), und klicken Sie auf die Schaltfläche **Add** (Hinzufügen):
 
     ![](media/version-control-git5.png)
 
@@ -57,19 +59,19 @@ Führen sie die folgenden Schritte aus, um ein Git-Repository einzurichten:
 
     Beachten Sie, dass es auch die Verwendung von SSH möglich ist, um eine Verbindung zu Git herzustellen.
 
-8. Wählen Sie für einen Versuch, die App auf Git zu veröffentlichen, das Repository, das Sie gerade erstellt haben, und versichern Sie sich, dass die Textfelder **Modulname** und **Message** (Meldung) ausgefüllt sind:
+8. Wählen Sie für einen Versuch, die App auf Git zu veröffentlichen, das Repository aus, und vergewissern Sie sich, dass die Textfelder **Modulname** und **Meldung** ausgefüllt sind:
 
     ![Versuch, ein Projekt auf Git zu veröffentlichen](media/version-control-git7.png)
 
 9. Klicken Sie auf **OK** und dann auf **Veröffentlichen** im Warndialogfeld.
 
-10. Wenn Sie Ihre Git-Anmeldeinformationen noch nicht in den Einstellungen von Visual Studio für Mac eingegeben haben, tun sie dies jetzt. Zunächst müssen Sie einen Zugriffstoken erstellen, der anstelle des Kennworts verwendet wird. Führen Sie dazu die Schritte in der Dokumentation zu [Access Token (Zugriffstokens)](https://help.github.com/articles/creating-an-access-token-for-command-line-use/) aus.
+10. Wenn Sie Ihre Git-Anmeldeinformationen noch nicht in den Einstellungen von Visual Studio für Mac eingegeben haben, tun sie dies jetzt. Zunächst müssen Sie einen Zugriffstoken erstellen, der anstelle des Kennworts verwendet wird. Wenn Sie kein Zugriffstoken erstellt haben, führen Sie die Schritte in der Git-[Zugriffstoken](https://help.github.com/articles/creating-an-access-token-for-command-line-use/)-Dokumentation aus.
 
 11. Geben Sie den Benutzernamen und den persönlichen Zugriffstoken ein, und klicken Sie auf **OK**:
 
     ![Eingeben des Benutzernamens und Kennworts für Git](media/version-control-git9-sml.png)
 
-12. Nach ein paar Sekunden sollte die Projektmappe mit ihrem anfänglichen Commit veröffentlicht sein. Bestätigen Sie dies, indem Sie nach dem Menüelement „Versionskontrolle“ suchen, das nun mit vielen Optionen aufgefüllt sein sollte: 
+12. Nach ein paar Sekunden sollte die Projektmappe mit ihrem anfänglichen Commit veröffentlicht sein. Bestätigen Sie ihre Veröffentlichung, indem Sie nach dem Menüelement „Versionskontrolle“ suchen, das nun mit vielen Optionen aufgefüllt sein sollte: 
 
     ![Versionskontrolle](media/version-control-git10.png)
 

@@ -4,28 +4,30 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - multi
 - tool windows
 ms.assetid: 4a7872f1-acc9-4f43-8932-5a526b36adea
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 0cb73a5e5f40d21a5b17faae9602e40f7cd39d48
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- vssdk
+ms.openlocfilehash: e13fb299d513f045c4c7c339a9c6602890079e40
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="creating-a-multi-instance-tool-window"></a>Erstellen ein Toolfenster mit mehreren Instanzen
 Sie können ein Toolfenster programmieren, sodass mehrere Instanzen gleichzeitig geöffnet sein können. Standardmäßig können Toolfenster nur eine Instanz zu öffnen.  
   
- Wenn Sie ein Toolfenster mit mehreren Instanzen verwenden, können Sie mehrere verwandte Informationsquellen zur gleichen Zeit anzeigen. Sie können z. B. Legen Sie ein mehrzeilige <xref:System.Windows.Forms.TextBox> in einem Toolfenster mit mehreren Instanzen zu steuern, sodass mehrere Codeausschnitte während einer Sitzung Programmierung gleichzeitig zur Verfügung stehen. Sie können auch z. B. einfügen eine <xref:System.Windows.Forms.DataGrid> Steuerung und eine Dropdownliste-Feld in einem Toolfenster mit mehreren Instanzen, damit mehrere Datenquellen in Echtzeit gleichzeitig verfolgt werden können.  
+ Wenn Sie ein Toolfenster mit mehreren Instanzen verwenden, können Sie mehrere verwandte Informationsquellen zur gleichen Zeit anzeigen. Sie können z. B. Legen Sie ein mehrzeilige <xref:System.Windows.Forms.TextBox> in einem Toolfenster mit mehreren Instanzen zu steuern, sodass mehrere Codeausschnitte während einer Sitzung Programmierung gleichzeitig zur Verfügung stehen. Auch, z. B. Sie konnte legen Sie eine <xref:System.Windows.Forms.DataGrid> Steuerung und eine Dropdownliste-Feld in einem Toolfenster mit mehreren Instanzen, damit mehrere Datenquellen in Echtzeit gleichzeitig verfolgt werden können.  
   
 ## <a name="creating-a-basic-single-instance-tool-window"></a>Erstellen ein Toolfenster Basic (Instanz)  
   
@@ -36,14 +38,14 @@ Sie können ein Toolfenster programmieren, sodass mehrere Instanzen gleichzeitig
   
 ## <a name="making-a-tool-window-multi-instance"></a>Erstellen ein Tool-Fenster mit mehreren Instanzen  
   
-1.  Öffnen der **MIToolWindowPackage.cs** Datei, und suchen die `ProvideToolWindow` Attribut. und die `MultiInstances=true` Parameter, wie im folgenden Beispiel gezeigt.  
+1.  Öffnen der **MIToolWindowPackage.cs** Datei, und suchen die `ProvideToolWindow` Attribut. und die `MultiInstances=true` Parameter, wie im folgenden Beispiel gezeigt:  
   
     ```csharp  
     [PackageRegistration(UseManagedResourcesOnly = true)]  
         [InstalledProductRegistration("#110", "#112", "1.0", IconResourceID = 400)] // Info on this package for Help/About  
         [ProvideMenuResource("Menus.ctmenu", 1)]  
         [ProvideToolWindow(typeof(MultiInstanceToolWindow.MIToolWindow), MultiInstances = true)]  
-        [Guid(MIToolWindowPackageGuids.PackageGuidString)]  
+        [Guid(MIToolWindowPackage.PackageGuidString)]  
         public sealed class MIToolWindowPackage : Package  
     {. . .}  
     ```  
@@ -52,7 +54,7 @@ Sie können ein Toolfenster programmieren, sodass mehrere Instanzen gleichzeitig
   
 3.  Rufen Sie zum Erstellen einer Instanz des Tool-Fenster die <xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A> -Methode, und legen seine `id` auf einen verfügbaren Wert und die zugehörige `create` flag auf `true`.  
   
-     Wird standardmäßig der Wert von der `id` Parameter von der <xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A> Methode ist `0`. Dadurch wird ein Einzelinstanz-Toolfenster. Für mehr als eine Instanz gehostet werden, muss jede Instanz eine eigene, eindeutige verfügen `id`.  
+     Wird standardmäßig der Wert von der `id` Parameter von der <xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A> Methode ist `0`. Dieser Wert stellt ein Einzelinstanz-Toolfenster. Für mehr als eine Instanz gehostet werden, muss jede Instanz eine eigene, eindeutige verfügen `id`.  
   
 4.  Rufen Sie die <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.Show%2A> Methode auf die <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> von zurückgegebene Objekt der <xref:Microsoft.VisualStudio.Shell.ToolWindowPane.Frame%2A> Eigenschaft Tool-Fenster-Instanz.  
   

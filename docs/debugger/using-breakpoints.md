@@ -41,16 +41,16 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: e5873276795477778e4c358d59788248230bb4b5
-ms.sourcegitcommit: 062795f922e7b59fe00d3d95a01a9a8a28840017
+ms.openlocfilehash: 95c6f87e120cd8a62aa3959548f968b70c820d39
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Verwenden Sie Haltepunkte in Visual Studio-Debugger
 Sie können Haltepunkte festlegen, wenn Sie die Ausführung des Debuggers stoppen möchten, um möglicherweise den Status der Codevariablen oder die Aufrufliste anzuzeigen. Sie sind eine der wichtigsten Debugverfahren in der Toolbox eines Entwicklers.  
   
-##  <a name="BKMK_Overview"></a>Festlegen eines Haltepunkts für die Zeile im Quellcode  
+##  <a name="BKMK_Overview"></a> Festlegen eines Haltepunkts für die Zeile im Quellcode  
  Sie legen einen Zeilenhaltepunkt in Quellcode, indem Sie in den linken Rand einer Quellcodedatei oder den Cursor in einer Codezeile platzieren und dann F9 drücken. Der Haltepunkt wird als roter Punkt im linken Bereich angezeigt, und die Codezeile wird ebenfalls eingefärbt:  
   
  ![Festlegen eines Haltepunkts](../debugger/media/basicbreakpoint.png "BasicBreakpoint")  
@@ -65,7 +65,30 @@ Sie können Haltepunkte festlegen, wenn Sie die Ausführung des Debuggers stoppe
   
  Sie können einen Haltepunkt für jede beliebige Zeile mit ausführbarem Code festlegen. Im weiter oben aufgeführten C#-Code können Sie einen Haltepunkt zu der Variablendeklaration festlegen, die `for` -Schleife oder Code innerhalb der `for` -Schleifen, Sie können jedoch keinen Haltepunkt zu dem Namespace oder den Klassendeklarationen oder der Methodensignatur festlegen.  
   
-##  <a name="BKMK_Set_a_breakpoint_in_a_source_file"></a> Festlegen anderer Arten von Haltepunkten  
+##  <a name="BKMK_Set_a_breakpoint_in_a_source_file"></a> Festlegen eines Funktionshaltepunkts  
+  Sie können die Ausführung unterbrechen, wenn eine Funktion aufgerufen wird.
+  
+1. Öffnen der **Haltepunkte** Fenster, und wählen Sie **neu > Funktionshaltepunkt**.
+
+2. Geben Sie einen Funktionsnamen in der **Funktionsnamen** Feld. 
+
+   Die Funktionsspezifikation einschränken:
+   
+   Verwenden Sie den vollqualifizierten Funktionsnamen. 
+   Beispiel: Namespace1.ClassX.MethodA()
+   
+   Fügen Sie die Parametertypen einer überladenen Funktion hinzu. 
+   Beispiel: MethodA (Int, String)
+   
+   Verwenden der '!' Symbol, um das Modul angeben.
+   Beispiel: App1.dll! MethodA
+   
+   Verwenden Sie den Kontextoperator in systemeigenem C++.
+   {-Funktion, [Modul]} [+&lt;den Abstand vom Anfang der Methode&gt;] Beispiel: {MethodA, App1.dll}+2
+
+3. In der **Sprache** Dropdownliste, wählen Sie die spezifische Sprache der Funktion, die Unterbrechung vorgenommen werden soll.
+  
+##  <a name="BKMK_Set_a_breakpoint_in_a_function"></a> Festlegen anderer Arten von Haltepunkten  
  Sie können auch Haltepunkte in der Aufrufliste, im Disassemblyfenster und in systemeigenem C++-Code zu einer Datenbedingung oder einer Speicheradresse festlegen.  
   
 ## <a name="BKMK_Set_a_breakpoint_in_the_call_stack_window"></a> Festlegen eines Haltepunkts im Aufruflistenfenster  
@@ -213,7 +236,7 @@ Sie können Haltepunkte festlegen, wenn Sie die Ausführung des Debuggers stoppe
 ##  <a name="BKMK_Print_to_the_Output_window_with_tracepoints"></a> Haltepunktaktionen und Ablaufverfolgungspunkte  
  Beim Ablaufverfolgungspunkt handelt es sich um einen Haltepunkt, der im Fenster „Ausgabe“eine Meldung ausgibt. Ein Ablaufverfolgungspunkt kann wie eine temporäre Trace-Anweisung in der Programmiersprache reagieren.  
   
- Aktivieren Sie im Fenster **Haltepunkteinstellungen** das Kontrollkästchen **Aktionen** . Wählen Sie in der Gruppe **Aktion** die Option **Meldung im Ausgabe-Fenster protokollieren** aus. Sie können eine allgemeine Zeichenfolge drucken, z. B. **das ist ein Test**. Um den Wert einer Variablen oder eines Ausdrucks einzuschließen, schließen Sie ihn mit geschweiften Klammern ein.  
+ Aktivieren Sie im Fenster **Haltepunkteinstellungen** das Kontrollkästchen **Aktionen** . Wählen Sie in der Gruppe **Aktion** die Option **Meldung im Ausgabe-Fenster protokollieren** aus. Sie können eine allgemeine Zeichenfolge drucken, z. B. **das ist ein Test**. Um den Wert einer Variablen oder eines Ausdrucks einzuschließen, schließen Sie ihn mit geschweiften Klammern ein.  Sie können auch die Formatbezeichner ([c#](../debugger/format-specifiers-in-csharp.md) und [C++](../debugger/format-specifiers-in-cpp.md)) für Werte, die in einen Ablaufverfolgungspunkt enthalten.
   
  Um die Ausführung bei Erreichen des Ablaufverfolgungspunkts zu unterbrechen, deaktivieren Sie das Kontrollkästchen **Ausführung fortsetzen** . Wenn **Ausführung fortsetzen** aktiviert ist, wird die Ausführung nicht angehalten. In beiden Fällen wird die Meldung gedruckt.  
   

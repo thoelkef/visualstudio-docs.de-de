@@ -22,11 +22,11 @@ caps.latest.revision:
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c79c69e6c447b14e61fa67ccb8600d5d83bebd2b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a9ff8c7942c773d138dd599956c41d1e583e6288
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="typeof-operator-javascript"></a>typeof-Operator (JavaScript)
 Gibt eine Zeichenfolge zurück, die den Datentyp eines Ausdrucks angibt.  
@@ -41,9 +41,11 @@ typeof[(]expression[)] ;
 ## <a name="remarks"></a>Hinweise  
  Die *Ausdruck* Argument ist ein beliebiger Ausdruck, der für den Typinformationen ermittelt.  
   
- Der Operator `typeof` gibt die Typinformationen als Zeichenfolge zurück. Es gibt sechs mögliche Rückgabewerte für `typeof`: "number", "string", "boolean", "object", "function" und "undefined".  
+ Der Operator `typeof` gibt die Typinformationen als Zeichenfolge zurück. Es gibt sieben mögliche Rückgabewerte `typeof` zurückgegeben: "Number", "string" "object"boolean"," "Funktion" "undefined" und "Unbekannt".  
   
  In der `typeof`-Syntax sind die Klammern optional.  
+
+ Ein Objekt kann als einen unbekannten Typ im XMLHTTPRequest zurückgeben. Ein COM-Objekt, wenn Sie kein Pendant in JavaScript kann als einen unbekannten Typ zurückgeben.
   
 ## <a name="example"></a>Beispiel  
  Das folgende Beispiel testet den Datentyp der Variablen.  

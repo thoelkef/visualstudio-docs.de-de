@@ -14,11 +14,11 @@ manager: ghogen
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 8808fca81da991727fa439aae10d0e3541e81389
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 2520d0b7b5aba982f3e9ca228ad6de85f6890d7f
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="code-generation-in-a-build-process"></a>Codegenerierung in einem Buildprozess
 [TextTransformation](../modeling/code-generation-and-t4-text-templates.md) ausgerufen werden als Teil der [Buildprozess](http://msdn.microsoft.com/Library/a971b0f9-7c28-479d-a37b-8fd7e27ef692) von einer [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Lösung. Es gibt Buildaufgaben, die für die Texttransformation angegeben wurden. Die T4-Buildaufgaben führen Entwurfszeittextvorlagen aus und kompilieren gleichzeitig Laufzeitvorlagen (vorverarbeitete Textvorlagen.)  
@@ -27,7 +27,7 @@ ms.lasthandoff: 02/09/2018
   
  Dies bedeutet, dass Sie Elemente wie Projektdateinamen nicht genauso zugreifen können, bei der Erstellung einer Textvorlage in MSBuild. Sie können jedoch [übergeben Sie Umgebungsinformationen mit Buildparametern in Textvorlagen und Direktivenprozessoren](#parameters).  
   
-##  <a name="buildserver"></a>Konfigurieren des Computers  
+##  <a name="buildserver"></a> Konfigurieren des Computers  
  Um Buildaufgaben auf dem Entwicklungscomputer zu ermöglichen, installieren Sie Modellierungs-SDK für Visual Studio.
  
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
@@ -131,7 +131,7 @@ ms.lasthandoff: 02/09/2018
   
  Fügen Sie die folgende Eigenschaft ein, um anzugeben, dass schreibgeschützte Dateien überschrieben werden sollen:  
   
- `<OverwriteReadOnlyOuputFiles>true</OverwriteReadOnlyOuputFiles>`  
+ `<OverwriteReadOnlyOutputFiles>true</OverwriteReadOnlyOuputFiles>`  
   
  Sofern Sie den Nachverarbeitungsschritt nicht anpassen, wird eine Warnung in der Fehlerliste protokolliert, wenn eine Datei überschrieben wird.  
   
@@ -208,7 +208,7 @@ $(IncludeFolders);$(MSBuildProjectDirectory)\Include;AnotherFolder;And\Another</
   
 ```  
   
-##  <a name="parameters"></a>Übergeben der buildkontextdaten in die Vorlagen  
+##  <a name="parameters"></a> Übergeben der buildkontextdaten in die Vorlagen  
  Sie können Parameterwerte in der Projektdatei festlegen. Sie können z. B. übergeben [erstellen](../msbuild/msbuild-properties.md) Eigenschaften und [Umgebungsvariablen](../msbuild/how-to-use-environment-variables-in-a-build.md):  
   
 ```xml  
@@ -242,7 +242,7 @@ Dim value = Host.ResolveParameterValue("-", "-", "parameterName")
 > [!NOTE]
 >  `ResolveParameterValue` ruft Daten nur dann aus `T4ParameterValues` ab, wenn Sie MSBuild verwenden. Wenn Sie die Vorlage mit Visual Studio transformieren, haben die Parameter Standardwerte.  
   
-##  <a name="msbuild"></a>Verwenden von Projekteigenschaften in der Assembly- und Includedirektive  
+##  <a name="msbuild"></a> Verwenden von Projekteigenschaften in der Assembly- und Includedirektive  
  Visual Studio-Makros wie $ (SolutionDir) funktionieren nicht in MSBuild. Sie können stattdessen Projekteigenschaften verwenden.  
   
  Bearbeiten Sie die CSPROJ- oder VBPROJ-Datei, und definieren Sie eine Projekteigenschaft. In folgendem Beispiel wird eine Eigenschaft mit dem Namen `myLibFolder` definiert:  

@@ -17,23 +17,23 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ac44ade848b4e423c1fcb253cf1867937f371719
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: 55b99e2f572b075c1e9ab1658c8a02b3fdd5ea88
+ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="setting-up-unit-testing-for-python-code"></a>Einrichten von Komponententests für Python-Code
 
-Komponententests sind Codeelemente, die andere Codeeinheiten in einer Anwendung testen, in der Regel isolierte Funktionen, Klassen usw. Wenn eine Anwendung alle Komponententests besteht, können Sie sich zumindest darauf verlassen, dass die Funktionalität im Detail korrekt ist.
+Komponententests sind Codeelemente, die andere Codeeinheiten in einer Anwendung testen, in der Regel isolierte Funktionen, Klassen usw. Wenn eine Anwendung alle Unittests besteht, können Sie sich zumindest darauf verlassen, dass die Funktionalität im Detail korrekt ist.
 
-In Python werden Komponententests ausgiebig zum Überprüfen von Szenarien beim Entwurf eines Programms verwendet. Die Python-Unterstützung in Visual Studio umfasst das Ermitteln, Ausführen und Debuggen von Komponententests im Kontext Ihres Entwicklungsprozesses, sodass sie nicht separat ausgeführt werden müssen.
+In Python werden Komponententests ausgiebig zum Überprüfen von Szenarien beim Entwurf eines Programms verwendet. Die Python-Unterstützung in Visual Studio umfasst das Ermitteln, Ausführen und Debuggen von Unittests im Kontext Ihres Entwicklungsprozesses, sodass sie nicht separat ausgeführt werden müssen.
 
-Dieses Thema enthält eine kurze Übersicht über die Komponententestfunktionen in Visual Studio mit Python. Weitere Informationen zu Komponententests im Allgemeinen finden Sie unter [Komponententest für Code](../test/unit-test-your-code.md).
+Dieser Artikel enthält eine kurze Übersicht über die Komponententestfunktionen in Visual Studio mit Python. Weitere Informationen zu Komponententests im Allgemeinen finden Sie unter [Komponententest für Code](../test/unit-test-your-code.md).
 
 |   |   |
 |---|---|
-| ![Kamerasymbol für Video](../install/media/video-icon.png "Video ansehen") | [Sehen Sie sich ein Video (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Testing-Python-hb46k6LWE_405918567) zu Komponententests in Python an (2 Minuten, 31 Sekunden). |
+| ![Kamerasymbol für video](../install/media/video-icon.png "Video ansehen") | [Sehen Sie sich ein Video (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Testing-Python-hb46k6LWE_405918567) zu Komponententests in Python an (2 Minuten, 31 Sekunden). |
 
 ## <a name="discovering-and-viewing-tests"></a>Ermitteln und Anzeigen von Tests
 
@@ -43,16 +43,16 @@ Konventionell erkennt Visual Studio Tests als Methoden, deren Namen mit `test` b
 
 1. Diese Aktion erstellt eine Datei `test1.py` mit Code, der das `unittest`-Standardmodul importiert, eine Testklasse aus `unittest.TestCase` ableitet und `unittest.main()` aufruft, wenn Sie das Skript direkt ausführen:
 
-  ```python
-  import unittest
+    ```python
+    import unittest
 
-  class Test_test1(unittest.TestCase):
-      def test_A(self):
-          self.fail("Not implemented")
+    class Test_test1(unittest.TestCase):
+        def test_A(self):
+            self.fail("Not implemented")
 
-  if __name__ == '__main__':
-      unittest.main()
-  ```
+    if __name__ == '__main__':
+        unittest.main()
+    ```
 
 1. Speichern Sie die Datei bei Bedarf, und öffnen Sie dann den Test-Explorer mit dem Menübefehl **Test > Windows > Test-Explorer**.
 
@@ -90,7 +90,7 @@ Tests werden im Hintergrund ausgeführt, und der Test-Explorer aktualisiert den 
 
 ## <a name="debugging-tests"></a>Debuggen von Tests
 
-Da es sich bei Komponententests um Codebestandteile handelt, können sie genau wie jeder andere Code Fehler aufweisen und müssen gelegentlich in einem Debugger ausgeführt werden. Im Debugger können Sie Haltepunkte setzen, Variablen untersuchen und Code durchlaufen. Visual Studio bietet auch Diagnosetools für Komponententests.
+Da Unittests Codeteile sind, können sie genau wie jeder andere Code Fehler aufweisen und müssen gelegentlich in einem Debugger ausgeführt werden. Im Debugger können Sie Haltepunkte setzen, Variablen untersuchen und Code durchlaufen. Visual Studio bietet auch Diagnosetools für Unittests.
 
 Um mit dem Debuggen zu beginnen, legen Sie einen anfänglichen Haltepunkt im Code fest, klicken Sie im Test-Explorer mit der rechten Maustaste auf den Test (oder eine Auswahl), und wählen Sie **Ausgewählte Tests debuggen**. Visual Studio startet den Python-Debugger auf dieselbe Weise wie für Anwendungscode.
 

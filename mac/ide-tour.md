@@ -6,11 +6,11 @@ ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
-ms.openlocfilehash: 0f8f3ba04d4e5a8949bc57cb8cf61d470690d786
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 5fdac97248ce76157012ef913ea9057a4076e3c5
+ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="visual-studio-for-mac-tour"></a>Visual Studio für Mac: Überblick
 
@@ -26,20 +26,20 @@ Visual Studio für Mac ist in verschiedenen Abschnitten zum Verwalten von Anwend
 
 ## <a name="welcome-screen"></a>Willkommensseite
 
-Wenn Visual Studio für Mac gestartet wird, wird diese *Willkommensseite* angezeigt:
+Wenn Visual Studio für Mac gestartet wird, wird eine *Willkommensseite* angezeigt:
 
 ![Willkommensseite](media/ide-tour-image1.png)
 
 Die Wilkommensseite enthält folgende Abschnitte:
 
-- **Symbolleiste**: bietet schnellen Zugriff auf die Suchleiste. Wenn eine Projektmappe geladen wird, wird dies verwendet, um App-Konfigurationen vorzunehmen, zum Debuggen und zum Anzeigen von Fehlern.
+- **Symbolleiste**: bietet schnellen Zugriff auf die Suchleiste. Wenn eine Projektmappe geladen wird, wird die Symbolleiste verwendet, um App-Konfigurationen vorzunehmen, zum Debuggen und zum Anzeigen von Fehlern.
 - **Erste Schritte**: bietet schnellen Zugriff auf nützliche Themen für Entwickler, die gerade mit der Arbeit mit Visual Studio für Mac beginnen.
 - **Zuletzt verwendete Projektmappen**: bietet schnellen Zugriff auf zuletzt geöffnete Projektmappen sowie praktische Schaltflächen zum Öffnen und Erstellen von Projekten.
 - **Neuigkeiten für Entwickler**: Ein Newsfeed, mit dem Sie immer auf dem neuesten Stand sind, was Informationen für Microsoft-Entwickler angeht.
 
 ## <a name="solutions-and-projects"></a>Projektmappen und Projekte
 
-Das Bild unten zeigt Visual Studio für Mac mit einer geladenen Anwendung:
+Das folgende Bild zeigt Visual Studio für Mac mit einer geladenen Anwendung:
 
 ![Visual Studio für Mac mit einer geladenen Anwendung](media/ide-tour-image17.png)
 
@@ -47,17 +47,17 @@ In den folgenden Abschnitten wird ein Überblick über die Hauptbereich von Visu
 
 ## <a name="solution-pad"></a>Projektmappenpad
 
-Das Projektmappenpad organisiert die Projekte in Ihrer Projektmappe wie unten gezeigt:
+Das Projektmappenpad organisiert die Projekte in einer Projektmappe:
 
 ![Im Projektmappenpad organisierte Projekte](media/ide-tour-image18.png)
 
 Hier werden Dateien für den Quellcode, Ressourcen, Benutzeroberflächen und Abhängigkeiten in plattformspezifische Projekte organisiert.
 
-Weitere Informationen zum Verwenden von Projekten und Projektmappen in Visual Studio für Mac finden Sie unter [Projektmappen und Projekte](~/projects-and-solutions.md).
+Weitere Informationen zum Verwenden von Projekten und Projektmappen in Visual Studio für Mac finden Sie im Artikel [Projektmappen und Projekte](~/projects-and-solutions.md).
 
 ## <a name="assembly-references"></a>Assemblyverweise
  
-Assemblyverweise für jedes Projekt stehen im Ordner „Verweise“ zu Verfügung, wie unten gezeigt:
+Assemblyverweise für jedes Projekt stehen im Ordner „Verweise“ zu Verfügung:
 
 ![Ordner „Verweise“ im Projektmappenpad](media/ide-tour-image19.png)
 
@@ -65,31 +65,31 @@ Sie können mit dem Dialogfeld **Verweise bearbeiten** zusätzliche Verweise hin
  
 ![Dialogfeld „Verweise bearbeiten“](media/ide-tour-image20.png)
 
-Weitere Informationen zum Verwenden von Verweisen in Visual Studio für Mac finden Sie unter [Verwalten von Verweisen in einem Projekt](~/managing-references-in-a-project.md).
+Weitere Informationen zum Verwenden von Verweisen in Visual Studio für Mac finden Sie im Artikel [Verwalten von Verweisen in einem Projekt](~/managing-references-in-a-project.md).
 
 ## <a name="dependencies--packages"></a>Abhängigkeiten/Pakete
 
-Alle externen Abhängigkeiten, die in Ihrer Anwendung verwendet werden, werden in dem Ordner „“ oder in dem Ordner „“ gespeichert, je nachdem, ob Sie sich in einem Projekt von .NET Core oder Xamarin.iOS bzw. Xamarin.Android. Diese werden entweder als NuGet oder als Komponente bereitgestellt.
+Alle externen Abhängigkeiten, die in Ihrer App verwendet werden, werden in dem Ordner „Abhängigkeiten“ oder in dem Ordner „Pakete“ gespeichert, je nachdem, ob es sich um ein .NET Core- oder Xamarin.iOS- bzw. Xamarin.Android-Projekt handelt. Diese werden in der Regel in NuGet-Form bereitgestellt.
 
 NuGet ist der beliebteste Paket-Manager für die .NET-Entwicklung. Mit der NuGet-Unterstützung von Visual Studio können Sie leicht nach Paketen suchen und diese in Ihrer Anwendung einem Projekt hinzufügen.
 
-Um Ihrer Anwendung eine Abhängigkeit hinzuzufügen, klicken Sie mit der rechten Maustaste auf den Ordner Abhängigkeiten/Pakete und dann auf **Pakete hinzufügen**.
+Um Ihrer Anwendung eine Abhängigkeit hinzuzufügen, klicken Sie mit der rechten Maustaste auf den Ordner Abhängigkeiten/Pakete und dann auf **Pakete hinzufügen**:
 
 ![Hinzufügen eines NuGet-Pakets](media/ide-tour-image21.png)
 
-Informationen zum Verwenden eines NuGet-Pakets in einer Anwendung finden Sie unter [Including a NuGet project in your project (Verwenden eines NuGet-Pakets in Ihrem Projekt)](~/nuget-walkthrough.md).
+Informationen zum Verwenden eines NuGet-Pakets in einer Anwendung finden Sie im Artikel [Einschließen eines NuGet-Pakets in Ihr Projekt](~/nuget-walkthrough.md).
 
 ## <a name="refactoring"></a>Umgestaltung
 
-Visual Studio für Mac bietet zwei praktische Möglichkeiten zum Umgestalten Ihres Codes: Kontextaktionen und Quellanalysen. Weitere Informationen finden Sie unter [Refactoring](~/refactoring.md).
+Visual Studio für Mac bietet zwei praktische Möglichkeiten zum Umgestalten Ihres Codes: Kontextaktionen und Quellanalysen. Weitere Informationen finden Sie im Artikel [Umgestaltung](~/refactoring.md).
 
 ## <a name="debugging"></a>Debuggen
 
-Visual Studio für Mac besitzt einen nativen Debugger, der das Debuggen für Xamarin.iOS-, Xamarin.Mac- und Xamarin.Android-Anwendungen unterstützt. Visual Studio für Mac verwendet den Soft-Debugger von Mono, der in die Mono-Laufzeit integriert wird und es Visual Studio für Mac ermöglicht, verwalteten Code für alle Plattformen zu debuggen. Weitere Informationen zum Debuggen finden Sie unter [Debugging](~/debugging.md).
+Visual Studio für Mac besitzt einen nativen Debugger, der das Debuggen für Xamarin.iOS-, Xamarin.Mac- und Xamarin.Android-Anwendungen unterstützt. Visual Studio für Mac verwendet den Soft-Debugger von Mono, der in die Mono-Laufzeit integriert wird und es Visual Studio für Mac ermöglicht, verwalteten Code für alle Plattformen zu debuggen. Weitere Informationen zum Debuggen finden Sie im Artikel [Debuggen mit Xamarin](~/debugging.md).
 
-Der Debugger enthält umfangreiche Schnellansichten für besondere Typen wie Zeichenfolgen, Farben, und URLs sowie Größen, Koordinaten und Bézierkurven.
+Der Debugger enthält umfangreiche Schnellansichten für besondere Typen wie Zeichenfolgen, Farben und URLs sowie Größen, Koordinaten und Bézierkurven.
 
-Weitere Informationen zu den Datenschnellansichten des Debuggers finden Sie unter [Data Visualizations (Datenschnellansichten)](~/data-visualizations.md).
+Weitere Informationen zu den Datenschnellansichten des Debuggers finden Sie im Artikel [Datenvisualisierungen](~/data-visualizations.md).
 
 ## <a name="version-control"></a>Quellcodeverwaltung
 
@@ -97,8 +97,8 @@ Visual Studio für Mac kann in die Quellcodeverwaltungs-Systeme Git und Subversi
 
 ![Branchname, der ein Projekt unter Quellcodeverwaltung angibt](media/ide-tour-image22.png)
 
-Dateien mit ausgecheckten Änderungen haben eine Bemerkung an ihrem Symbol im Projektmappenbereich, wie unten gezeigt:
+Die Symbole von Dateien mit ausgecheckten Änderungen sind im Projektmappenbereich mit einer Anmerkung versehen, wie in der folgenden Abbildung dargestellt:
 
 ![Ausgecheckte Dateien im Projektmappenpad](media/ide-tour-image23.png)
 
-Weitere Informationen zum Verwenden der Versionskontrolle in Visual Studio finden Sie unter [Versionskontrolle](~/version-control.md).
+Weitere Informationen zum Verwenden der Versionskontrolle in Visual Studio finden Sie im Artikel [Versionskontrolle](~/version-control.md).

@@ -2,7 +2,7 @@
 title: Verwalten von Python-Umgebungen und -Interpretern in Visual Studio | Microsoft-Dokumentation
 description: "Erfahren Sie, wie über das Fenster „Python-Umgebungen“ in Visual Studio globale und virtuelle Umgebungen verwaltet, benutzerdefinierte Umgebungen eingerichtet, Python-Interpreter und Pakete installiert, Suchpfade festgelegt und Umgebungen für Visual Studio-Projekte verwaltet werden."
 ms.custom: 
-ms.date: 02/20/2018
+ms.date: 03/05/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -16,11 +16,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 570ce6beccf14c9f04fcd3e21b86a8d00a3d607f
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: 558ce58461b27bc9a86906278602d00d96377c63
+ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="managing-python-environments-in-visual-studio"></a>Verwalten von Python-Umgebungen in Visual Studio
 
@@ -70,9 +70,10 @@ In jedem Fall wird das Fenster **Python-Umgebungen** als gleichgeordnete Registe
 
 Die Abbildung oben zeigt, dass Visual Studio zwei Installationen von Python 3.6 (32 Bit) zusammen mit Anaconda 5.0.0 erkannt hat.
 
-Die Standardumgebung in Fettdruck ist Python 3.6 (in diesem Fall Teil einer Anaconda-Installation), die Visual Studio für alle neuen Projekte verwendet. Die Befehle im unteren Teil des Fensters gelten für den ausgewählten Python 3.6-Interpreter, welcher die spezifische Installation in `C:\Python36-32` ist. Wenn eine Umgebung, wider Erwarten, nicht angezeigt wird, finden Sie weitere Informationen unter [Manuelles Identifizieren eines vorhandenen Interpreters](#manually-identifying-an-existing-interpreter).
+Die Standardumgebung in Fettdruck ist Python 3.6 (in diesem Fall Teil einer Anaconda-Installation), die Visual Studio für alle neuen Projekte verwendet. Die Befehle im unteren Teil des Fensters gelten für den ausgewählten Python 3.6-Interpreter, welcher die spezifische Installation in `C:\Python36-32` ist. Wenn eine Umgebung wider Erwarten nicht angezeigt wird, finden Sie weitere Informationen unter [Manuelles Identifizieren einer vorhandenen Umgebung](#manually-identifying-an-existing-environment).
 
-Rechts neben jeder aufgelisteten Umgebung befindet sich ein Steuerelement, das ein interaktives Fenster für die jeweilige Umgebung öffnet. Möglicherweise wird ein weiteres Steuerelement angezeigt, das die IntelliSense-Datenbank der jeweiligen Umgebung aktualisiert.
+Rechts neben jeder aufgelisteten Umgebung befindet sich ein Steuerelement, das ein interaktives Fenster für die jeweilige Umgebung öffnet. Ein anderes Steuerelement wird möglicherweise angezeigt, das die IntelliSense-Datenbank für diese Umgebung aktualisiert (unter
+[Referenz zu Umgebungsfenstern](python-environments-window-tab-reference.md#intellisense-tab) erfahren Sie Näheres über die Datenbank).
 
 Unter der Liste der Umgebungen befindet sich eine Dropdownauswahl für die Optionen **Übersicht**, **Pakete** und **IntelliSense**, die in der [Referenz zu den Registerkarten im Fenster „Python-Umgebungen“](python-environments-window-tab-reference.md) beschrieben werden. Wenn Sie darüber hinaus das Fenster **Python-Umgebungen** weit genug erweitern, werden diese Optionen als Registerkarten angezeigt, was Ihre Arbeit damit erleichtern kann:
 

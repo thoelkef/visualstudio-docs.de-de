@@ -2,7 +2,7 @@
 title: "Verwalten von Projekten für Python-Anwendungen in Visual Studio | Microsoft-Dokumentation"
 description: "In diesem Artikel werden der Zweck von Projekten in Visual Studio, das Erstellen und Verwalten von Projekten für Python-Code und die verschiedenen Projektvorlagen für Python erläutert."
 ms.custom: 
-ms.date: 02/15/2018
+ms.date: 03/05/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 005a3a2ae46154dbf532aacefe5316aacbbaeaf7
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: d996c99104e0a5d6b2e1acdb44273679a3998658
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="python-projects"></a>Python-Projekte
 
@@ -52,13 +52,15 @@ Bei der Entwicklung Ihrer Anwendung müssen Sie dem Projekt in der Regel neue Da
 Jedem Python-Projekt ist eine im Projektmappen-Explorer fett angezeigte Startdatei zugewiesen. Die Startdatei ist die Datei, die ausgeführt wird, wenn Sie das Debuggen starten (F5 oder **Debuggen > Debuggen starten**) oder das Projekt im interaktiven Fenster ausführen (UMSCHALT+ALT+ F5 oder **Debuggen > Projekt in interaktivem Python ausführen**). Um dies zu ändern, klicken Sie mit der rechten Maustaste auf die neue Datei, und wählen Sie **Als Startdatei festlegen**.
 
 > [!Tip]
-> Wenn Sie die ausgewählte Datei aus einem Projekt entfernen und keine neue auswählen, wird beim Ausführen Ihres Projekts ein Python-Ausgabefenster angezeigt, dass aber sofort wieder verschwindet. Wenn dieses Verhalten auftritt, überprüfen Sie, ob Sie eine zugewiesene Startdatei haben. Damit das Ausgabefenster in Fällen wie diesem geöffnet bleibt, klicken Sie mit der rechten Maustaste auf Ihr Projekt, wählen Sie **Eigenschaften** und dann die Registerkarte **Debuggen** aus, fügen Sie anschließend `-i` zum Feld **Interpreterargumente** hinzu. Durch dieses Argument wird der Interpreter nach Abschluss des Programms in den interaktiven Modus versetzt, und das Fenster bleibt dabei offen, bis Sie STRG + Z, EINGABETASTE zum Beenden drücken.
+> Wenn Sie die ausgewählte Startdatei aus einem Projekt entfernen und keine neue auswählen, weiß Visual Studio nicht, mit welcher Python-Datei gestartet werden soll, wenn Sie versuchen, das Projekt auszuführen. In diesem Fall zeigt Visual Studio 2017 Version 15.6 und höher einen Fehler an; frühere Versionen öffnen entweder ein Ausgabefenster, in dem der Python-Interpreter ausgeführt wird, oder das Ausgabefenster wird nur kurz angezeigt und dann geschlossen. Wenn eine dieser Verhaltensweisen auftritt, überprüfen Sie, ob Sie eine zugewiesene Startdatei haben.
+>
+> Wenn Sie das Ausgabefenster aus beliebigem Grund geöffnet lassen möchten, klicken Sie mit der rechten Maustaste auf Ihr Projekt, wählen Sie **Eigenschaften** und dann die Registerkarte **Debuggen** aus, und fügen Sie anschließend `-i` dem Feld **Interpreterargumente** hinzu. Durch dieses Argument wird der Interpreter nach Abschluss des Programms in den interaktiven Modus versetzt. Das Fenster bleibt dabei offen, bis Sie STRG + Z, EINGABETASTE zum Beenden drücken.
 
 Ein neues Projekt ist immer der standardmäßigen globalen Python-Umgebung zugeordnet. Um das Projekt einer anderen Umgebung zuzuordnen (einschließlich virtueller Umgebungen), klicken Sie mit der rechten Maustaste auf den Knoten **Python-Umgebungen** im Projekt, klicken Sie auf **Python-Umgebungen hinzufügen/entfernen**, und wählen Sie dann die gewünschten Umgebungen aus. Um die aktive Umgebung zu ändern, klicken Sie mit der rechten Maustaste auf die gewünschte Umgebung, und wählen Sie **Umgebung aktivieren**, wie unten dargestellt. Weitere Informationen finden Sie unter [Auswählen einer Umgebung für ein Projekt](selecting-a-python-environment-for-a-project.md).
 
 ![Aktivieren einer Umgebung für ein Python-Projekt](media/projects-activate-environment.png)
 
-<a name="project-types"</a>
+<a name="project-types"></a>
 
 ## <a name="project-templates"></a>Projektvorlagen
 

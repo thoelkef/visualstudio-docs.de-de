@@ -2,7 +2,7 @@
 title: Debuggen von Python-Code in Visual Studio | Microsoft-Dokumentation
 description: "Eine exemplarische Vorgehensweise zu den spezifischen Debugfunktionen in Visual Studio für Python-Code, einschließlich dem Festlegen von Haltepunkten, der Einzelschrittausführung, der Untersuchung von Werten, des Überprüfens von Ausnahmen und des Debuggens im interaktiven Fenster."
 ms.custom: 
-ms.date: 02/15/2018
+ms.date: 03/05/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -17,17 +17,17 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a34ef14b1c966a8685497875d32563add635917b
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: 52beda8ff0eb81b7f9a78545e264a2fcaee6ca92
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="debugging-your-python-code"></a>Debuggen von Python-Code
 
 Visual Studio bietet umfangreiche Debugfunktionen für Python, u.a. Folgende: Anfügen an ausgeführte Prozesse, Auswerten von Ausdrücken in den Überwachungs- und Direktfenstern, Untersuchen lokaler Variablen, Haltepunkte, Anweisungsausführung in Einzelschritten, Prozedurschritten oder bis Rücksprung, Festlegen der nächsten Anweisung und viele weitere.
 
-Weitere Informationen finden Sie auch in den folgenden szenariospezifischen Themen:
+Weitere Informationen finden Sie auch in den folgenden szenariospezifischen Artikeln:
 
 - [Linux-Remotedebuggen](debugging-python-code-on-remote-linux-machines.md)
 - [Azure-Remotedebuggen](debugging-remote-python-code-on-azure.md)
@@ -51,7 +51,7 @@ Weitere Informationen finden Sie auch in den folgenden szenariospezifischen Them
 
 Der grundlegende Debugworkflow umfasst das Festlegen von Haltepunkten, die Einzelschrittausführung des Codes, das Untersuchen von Code und das Behandeln von Ausnahmen, wie in den folgenden Abschnitten beschrieben. Vollständige Informationen zum Visual Studio-Debugger finden Sie unter [Debuggen in Visual Studio](../debugger/debugging-in-visual-studio.md).
 
-Eine Debugsitzung wird mit dem Befehl **Debuggen > Debuggen starten**, der Schaltfläche **Start** auf der Symbolleiste oder der Taste F5 gestartet. Diese Aktionen öffnen die Startdatei Ihres Projekts (im Projektmappen-Explorer fett hervorgehoben) mit der aktiven Umgebung des Projekts und allen Befehlszeilenargumenten oder Suchpfaden, die in den Projekteigenschaften festgelegt wurden (siehe [Project debugging options (Projektbezogene Debugoptionen)](#project-debugging-options)). Wenn Sie aus irgendeinem Grund jedoch keine festgelegte Startdatei besitzen, wird ein Python-Ausgabefenster kurz angezeigt und wieder ausgeblendet. Klicken Sie in diesem Fall mit der rechten Maustaste auf die entsprechende Datei, und wählen Sie **Als Startdatei festlegen**aus.
+Eine Debugsitzung wird mit dem Befehl **Debuggen > Debuggen starten**, der Schaltfläche **Start** auf der Symbolleiste oder der Taste F5 gestartet. Diese Aktionen öffnen die Startdatei Ihres Projekts (im Projektmappen-Explorer fett hervorgehoben) mit der aktiven Umgebung des Projekts und allen Befehlszeilenargumenten oder Suchpfaden, die in den Projekteigenschaften festgelegt wurden (siehe [Project debugging options (Projektbezogene Debugoptionen)](#project-debugging-options)). **Visual Studio 2017 Version 15.6** und höher warnt Sie, wenn Sie keine Startdatei festgelegt haben; frühere Versionen öffnen möglicherweise ein Ausgabefenster, in dem der Python-Interpreter ausgeführt wird, oder das Ausgabefenster wird nur kurz angezeigt und dann geschlossen. Klicken Sie in jedem Fall mit der rechten Maustaste auf die entsprechende Datei, und wählen Sie **Als Startdatei festlegen** aus.
 
 > [!Note]
 > Der Debugger startet immer mit der aktiven Python-Umgebung für das Projekt. Legen Sie, wie unter [Selecting a Python environment for a project](selecting-a-python-environment-for-a-project.md) (Auswählen einer Python-Umgebung für ein Projekt) beschrieben, eine andere Umgebung als aktiv fest, um die Umgebung zu ändern.
@@ -160,13 +160,13 @@ Standardmäßig startet der Debugger Ihr Programm mit dem Python-Standardstartpr
 | Interpreterpfad | Überschreibt den Pfad, der der aktuellen Umgebung zugeordnet ist.  Dieser Wert kann hilfreich sein, wenn Sie Ihr Skript mit einem nicht standardmäßigen Interpreter starten. |
 | Umgebungsvariablen | In diesem mehrzeiligen Textfeld fügen Sie Einträge in der Form `NAME=VALUE` hinzu. Diese Einstellung wird als letztes, zusätzlich zu allen vorhandenen globalen Umgebungsvariablen und nach dem Festlegen von `PYTHONPATH` gemäß der Einstellung für Suchpfade angewendet. Daher kann sie zum manuellen Überschreiben all dieser anderen Variablen verwendet werden. |
 
-<a name="the-debug-interactive-window"</a>
+<a name="the-debug-interactive-window"></a>
 
 ## <a name="immediate-and-interactive-windows"></a>Direktfenster und interaktive Fenster
 
 Es gibt zwei interaktive Fenster, die Sie während einer Debugsitzung verwenden können: das standardmäßige Visual Studio-Direktfenster und das interaktive Python-Debugfenster.
 
-Das Direktfenster (**Debuggen > Fenster > Direkt**) wird zum schnellen Auswerten von Python-Ausdrücken und Überprüfen oder Zuweisen von Variablen im ausgeführten Programm verwendet. Ausführliche Informationen finden Sie im allgemeinen Thema [Direktfenster](../ide/reference/immediate-window.md).
+Das Direktfenster (**Debuggen > Fenster > Direkt**) wird zum schnellen Auswerten von Python-Ausdrücken und Überprüfen oder Zuweisen von Variablen im ausgeführten Programm verwendet. Ausführliche Informationen finden Sie im allgemeinen Artikel [Direktfenster](../ide/reference/immediate-window.md).
 
 Das interaktive Python-Debugfenster (**Debuggen > Fenster > Interaktives Debuggen in Python**) bietet einen größeren Funktionsumfang, da es alle [interaktiven REPL](python-interactive-repl-in-visual-studio.md)-Funktionen für das Debuggen zur Verfügung stellt, einschließlich des Schreibens und Ausführens von Code. Das Fenster stellt automatisch eine Verbindung zu jedem Prozess her, der mit dem Python-Standardstartprogramm gestartet wird (einschließlich Prozessen, die über **Debuggen > An den Prozess anhängen*** angefügt werden). Beim Debuggen im gemischten C/C++-Modus ist es jedoch nicht verfügbar.
 

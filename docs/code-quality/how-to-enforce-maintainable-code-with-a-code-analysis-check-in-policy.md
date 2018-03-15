@@ -15,11 +15,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 80f3d2385fa1023637081b787c8d938ae42f79b4
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: 7b1a6d953128317e89672d5d9b175ce7acc1b63f
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>Vorgehensweise: Erzwingen von wartbarem Code mit einer Eincheckrichtlinie für die Analyse
 
@@ -31,23 +31,23 @@ Administratoren der Team Foundation-Versionskontrolle können Sie die Anforderun
 
 ## <a name="to-open-the-code-analysis-policy-editor"></a>Öffnen des Editors für die Codeanalyserichtlinie
 
-1. in **Team Explorer**mit der rechten Maustaste auf das Teamprojekt, klicken Sie auf **Teamprojekteinstellungen**, und klicken Sie dann auf **Quellcodeverwaltung**.
+1. In **Team Explorer**mit der rechten Maustaste auf das Teamprojekt, klicken Sie auf **Teamprojekteinstellungen**, und klicken Sie dann auf **Quellcodeverwaltung**.
 
-     The **Source Control** dialog box appears.
+     Die **Quellcodeverwaltung** Dialogfeld wird angezeigt.
 
-2. auf der **Eincheckrichtlinie** Registerkarte, und klicken Sie auf **hinzufügen**.
+2. Auf der **Eincheckrichtlinie** Registerkarte, und klicken Sie auf **hinzufügen**.
 
-     The **Add Check-in Policy** dialog box appears.
+     Die **hinzufügen in der Eincheckrichtlinie** Dialogfeld wird angezeigt.
 
-3. in der **Eincheckrichtlinie** Liste der **Codeanalyse** Kontrollkästchen, und klicken Sie dann auf **OK**.
+3. In der **Eincheckrichtlinie** Liste der **Codeanalyse** Kontrollkästchen, und klicken Sie dann auf **OK**.
 
-     The **Code Analysis Policy Editor** dialog box appears.
+     Die **Code Analysis-Editor für Gruppenrichtlinien** Dialogfeld wird angezeigt.
 
 ## <a name="to-enable-code-analysis-maintainability-rules"></a>So aktivieren Sie die Verwaltbarkeit von Codeanalyseregeln
 
-1. in der **Code Analysis-Editor für Gruppenrichtlinien** Dialogfeld unter **Regeleinstellungen**, erweitern Sie die **Verwaltbarkeit Regeln** Knoten.
+1. In der **Code Analysis-Editor für Gruppenrichtlinien** Dialogfeld unter **Regeleinstellungen**, erweitern Sie die **Verwaltbarkeit Regeln** Knoten.
 
-2. Wählen Sie 2. die Kontrollkästchen für die folgenden Regeln:
+2. Wählen Sie die Kontrollkästchen für die folgenden Regeln:
 
     -   Die Tiefe der Vererbung: **CA1501 AvoidExcessiveInheritance** -Schwellenwert: Warnung bei einer Tiefe von mehr als 5 Ebenen
 
@@ -63,5 +63,5 @@ Administratoren der Team Foundation-Versionskontrolle können Sie die Anforderun
 
 ## <a name="see-also"></a>Siehe auch
 
-[Code Metrikwerte](../code-quality/code-metrics-values.md)
-[erstellen und Verwenden von Eincheckrichtlinien für die Analyse](../code-quality/creating-and-using-code-analysis-check-in-policies.md)
+- [Codemetrikwerte](../code-quality/code-metrics-values.md)
+- [Erstellen und Verwenden von Eincheckrichtlinien für die Analyse](../code-quality/creating-and-using-code-analysis-check-in-policies.md)

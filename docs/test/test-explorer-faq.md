@@ -18,11 +18,11 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: ghogen
-ms.openlocfilehash: 63c1b25ad597dc3d56dfc398ec9c6c463aec200d
-ms.sourcegitcommit: 238cd48787391aa0ed1eb684f3f04e80f7958705
+ms.openlocfilehash: d06c02e651dd4acdcaebf05448282f26c20e3a75
+ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Visual Studio-Test-Explorer – häufig gestellte Fragen
 
@@ -64,9 +64,15 @@ ms.lasthandoff: 02/12/2018
 
 ### <a name="8-how-does-sorting-test-results-work-in-the-hierarchy-view"></a>8. Wie können in der Hierarchieansicht Testergebnisse sortiert werden?
 
-  In der Hierarchieansicht werden Tests alphabetisch und nicht anhand ihrer Ergebnisse sortiert. Über andere Einstellungen zum Sortieren werden Testergebnisse in der Regel erst anhand ihrer Ergebnisse und dann alphabetisch sortiert. Die unterschiedlichen Optionen zum Sortieren sind nachfolgend zum Vergleich dargestellt. Feedback zum Entwurf können Sie [in diesem GitHub-Problem](https://github.com/Microsoft/vstest/issues/1425) geben.
+  In der Hierarchieansicht werden Tests alphabetisch und nicht anhand ihrer Ergebnisse sortiert. Über andere Einstellungen zum Sortieren werden Testergebnisse in der Regel erst anhand ihrer Ergebnisse und dann alphabetisch sortiert. Beachten Sie zum Vergleich die unterschiedlichen „Gruppieren nach“-Optionen in der folgenden Abbildung. Feedback zum Entwurf können Sie [in diesem GitHub-Problem](https://github.com/Microsoft/vstest/issues/1425) geben.
 
   ![Sortierungsbeispiele](media/testex-sortingex.png)
+
+### <a name="9-in-the-hierarchy-view-there-are-passed-failed-skipped-and-not-run-icons-next-to-the-project-namespace-and-class-groupings-what-do-these-icons-mean"></a>9. In der Hierarchieansicht sind die Projekt-, Namespace- und Klasse-Gruppierung mit Symbolen für „erfolgreich“, „fehlerhaft“, „übersprungen“ und „nicht ausgeführt“ versehen. Was bedeuten diese Symbole?
+
+  Die Symbole neben der Projekt-, Namespace- und Klasse-Gruppierung spiegeln den Status der Tests innerhalb der Gruppierung wider. Siehe folgende Tabelle.
+
+  ![Hierarchiesymbole des Test-Explorers](media/testex-hierarchyicons.png)
 
 ## <a name="features"></a>Features
 

@@ -14,11 +14,11 @@ helpviewer_keywords:
 ms.assetid: 553d5e07-3e19-4aba-b490-6c7dd05fd82e
 caps.latest.revision: 
 manager: douge
-ms.openlocfilehash: 0465057549543d8e07742e3b3806ebdcab28eb28
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 144410e0e9b5b8d5d40fee86a1573bd179aea44a
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="menucommands-vs-olemenucommands"></a>MenuCommand- und OleMenuCommand-Objekte
 Sie können Menübefehle erstellen, indem Sie entweder aus dem <xref:System.ComponentModel.Design.MenuCommand> - oder aus dem <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> -Objekt ableiten und die entsprechenden Ereignishandler implementieren. In den meisten Fällen können Sie <xref:System.ComponentModel.Design.MenuCommand>verwenden, wie dies in der VSPackage-Projektvorlage geschieht, gelegentlich müssen Sie aber möglicherweise <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>verwenden.  
@@ -190,9 +190,9 @@ Sie können Menübefehle erstellen, indem Sie entweder aus dem <xref:System.Comp
   
     |MenuCommand-Eigenschaft|OLECMDF-Flag|  
     |--------------------------|------------------|  
-    |<xref:System.ComponentModel.Design.MenuCommand.Checked%2A> = `true`|<xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF>|  
-    |<xref:System.ComponentModel.Design.MenuCommand.Visible%2A> = `false`|<xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF>|  
-    |<xref:System.ComponentModel.Design.MenuCommand.Enabled%2A> = `true`|<xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF>|  
+    |<xref:System.ComponentModel.Design.MenuCommand.Checked%2A> = `true`|OLECMDF_LATCHED|  
+    |<xref:System.ComponentModel.Design.MenuCommand.Visible%2A> = `false`|OLECMDF_INVISIBLE|  
+    |<xref:System.ComponentModel.Design.MenuCommand.Enabled%2A> = `true`|OLECMDF_ENABLED|  
   
      Wenn Sie den Text eines Menübefehls ändern möchten, verwenden Sie die <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.Text%2A> -Eigenschaft des <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> -Objekts (siehe folgendes Beispiel).  
   
@@ -238,7 +238,7 @@ Sie können Menübefehle erstellen, indem Sie entweder aus dem <xref:System.Comp
   
     -   Wenn der Befehl zu einem Kontextmenü gehört und standardmäßig ausgeblendet ist:  
   
-         `prgCmds[0] cmdf |= OLECMDF_DEFHIDEONCTXMENU`  
+         `prgCmds[0] cmdf |= OLECMDF_DEFHIDEONCTXTMENU`  
   
     -   Wenn für den Befehl das `TEXTCHANGES` -Flag verwendet wird, legen Sie das `rgwz` -Element des `pCmdText` -Parameters auf den neuen Text des Befehls und das `cwActual` -Element des `pCmdText` Parameters auf die Länge der Befehlszeichenfolge fest.  
   

@@ -4,26 +4,29 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: services, providing
+helpviewer_keywords:
+- services, providing
 ms.assetid: 12bc1f12-47b1-44f6-b8db-862aa88d50d1
-caps.latest.revision: "22"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: ccc9b014a3d31fef4e3f491da394cdf1e9fb3ecb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- vssdk
+ms.openlocfilehash: d2a38a2c0830b701796b8417c69a75582c5b2f89
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="how-to-provide-a-service"></a>Vorgehensweise: Bereitstellen ein Diensts
 Eine VSPackage kann Dienste bereitstellen, die anderen VSPackages verwenden können. Um einen Dienst zu gewährleisten, muss eine VSPackage registrieren den Dienst mit Visual Studio und fügen Sie den Dienst hinzu.  
   
- Die <xref:Microsoft.VisualStudio.Shell.Package> Klasse implementiert beide <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> und <xref:System.ComponentModel.Design.IServiceContainer>. <xref:System.ComponentModel.Design.IServiceContainer>enthält die Rückrufmethoden, die Dienste nach Bedarf bereitstellen.  
+ Die <xref:Microsoft.VisualStudio.Shell.Package> Klasse implementiert beide <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> und <xref:System.ComponentModel.Design.IServiceContainer>. <xref:System.ComponentModel.Design.IServiceContainer> enthält die Rückrufmethoden, die Dienste nach Bedarf bereitstellen.  
   
  Weitere Informationen zu Diensten finden Sie unter [Dienst Essentials](../extensibility/internals/service-essentials.md) .  
   
@@ -32,7 +35,7 @@ Eine VSPackage kann Dienste bereitstellen, die anderen VSPackages verwenden kön
   
 #### <a name="implementing-a-service"></a>Implementieren eines Diensts  
   
-1.  Erstellen Sie ein VSIX-Projekt (**Datei > Neu > Projekt > c# > Extensiblity > VSIX-Projekt**).  
+1.  Erstellen Sie ein VSIX-Projekt (**Datei > Neu > Projekt > c# > Erweiterbarkeit > VSIX-Projekt**).  
   
 2.  Fügen Sie dem Projekt ein VSPackage hinzu. Wählen Sie den Projektknoten in der **Projektmappen-Explorer** , und klicken Sie auf **hinzufügen > Neues Element > Visual C#-Elemente > Erweiterbarkeit > Visual Studio-Paket**.  
   
@@ -44,7 +47,7 @@ Eine VSPackage kann Dienste bereitstellen, die anderen VSPackages verwenden kön
   
     -   Eine Klasse, die den Dienst und die Dienstschnittstelle implementiert.  
   
-     Das folgende Beispiel zeigt eine sehr grundlegende Implementierung der drei Typen an. Der Konstruktor der Dienstklasse, muss den Dienstanbieter festgelegt.  
+     Das folgende Beispiel zeigt eine grundlegende Implementierung der drei Typen an. Der Konstruktor der Dienstklasse, muss den Dienstanbieter festgelegt.  
   
     ```csharp  
     public class MyService : SMyService, IMyService  
@@ -114,7 +117,7 @@ Eine VSPackage kann Dienste bereitstellen, die anderen VSPackages verwenden kön
     private object CreateService(IServiceContainer container, Type serviceType)  
     {  
         if (typeof(SMyService) == serviceType)  
-            return new SMyService(this);  
+            return new MyService(this);  
         return null;  
     }  
     ```  
@@ -122,7 +125,7 @@ Eine VSPackage kann Dienste bereitstellen, die anderen VSPackages verwenden kön
     > [!NOTE]
     >  Visual Studio kann eine Anforderung zum Bereitstellen eines Diensts ablehnen. Dies geschieht, wenn einem anderen VSPackage bereits den Dienst bereitstellt.  
   
-3.  Nun können Sie den Dienst und seine Methoden verwenden. Wir zeigen dies im Initialisierer allerdings erhalten Sie den Dienst an einer beliebigen Stelle, den Sie den Dienst verwenden möchten.  
+3.  Nun können Sie den Dienst und seine Methoden verwenden. Das folgende Beispiel zeigt die Verwendung des Diensts im Initialisierer, aber Sie erhalten den Dienst an einer beliebigen Stelle, den Sie den Dienst verwenden möchten.  
   
     ```csharp  
     protected override void Initialize()  
@@ -133,7 +136,7 @@ Eine VSPackage kann Dienste bereitstellen, die anderen VSPackages verwenden kön
   
         MyService myService = (MyService) this.GetService(typeof(SMyService));  
         myService.Hello();  
-        string helloString = myService.myString;  
+        string helloString = myService.Goodbye();  
   
         base.Initialize();  
     }  

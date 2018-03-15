@@ -1,13 +1,13 @@
 ---
 title: Anzeigen eine Momentaufnahme mit Schritt-Back - Visual Studio IntelliTrace | Microsoft Docs
-ms.custom: 
+ms.custom: mvc
 ms.date: 12/06/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology:
 - vs-ide-debug
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: tutorial
 ms.assetid: 7c60d929-d993-49dc-9db3-43b30be9912b
 caps.latest.revision: 
 author: mikejo5000
@@ -15,27 +15,34 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a8f7343ceea2510c6ba8835c90bcb80b946fe91
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: e99b1bd44705a5a50c4138379a87a0ff8315ea29
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="view-snapshots-using-intellitrace-step-back-in-visual-studio"></a>Anzeigen von Momentaufnahmen mithilfe von IntelliTrace-Schritt-wieder in Visual Studio
 
 IntelliTrace-Schritt-Back erstellt eine Momentaufnahme Ihrer Anwendung bei jeder Haltepunkt und der Debugger automatisch bei Schritt-Ereignis. Durch die erfassten Momentaufnahmen können Sie zu vorherigen Haltepunkten oder Schritten zurückkehren und sich den Zustand der Anwendung so anzeigen lassen, wie er zuvor war. Mit dem IntelliTrace-Feature „Step-back“ können Sie Zeit sparen, wenn Sie den vorherigen Zustand der Anwendung anzeigen oder diesen wiederherstellen, aber das Debuggen nicht erneut starten möchten.
 
-IntelliTrace-Schritt-wieder wird ab Visual Studio Enterprise 2017 Version 15.5 und höher verfügbar und erfordert Anniversary-Update für Windows 10 oder höher. Das Feature ist derzeit für das Debuggen von ASP.NET, WinForms, WPF, verwaltete Konsolen-apps und verwalteten Klassenbibliotheken unterstützt. Debuggen von ASP.NET Core, .NET Core oder uwp-Anwendungen ist derzeit nicht unterstützt. 
+IntelliTrace-Schritt-wieder wird ab Visual Studio Enterprise 2017 Version 15.5 und höher verfügbar und erfordert Anniversary-Update für Windows 10 oder höher. Das Feature ist derzeit für das Debuggen von ASP.NET, WinForms, WPF, verwaltete Konsolen-apps und verwalteten Klassenbibliotheken unterstützt. Beginnend mit Visual Studio 2017 Enterprise Version 15.7 Preview 1, wird die Funktion auch für ASP.NET Core und .NET Core unterstützt. Debuggen von uwp-Apps wird derzeit nicht unterstützt.
+
+In diesem Lernprogramm führen Sie folgende Aktionen ausführen:
+
+> [!div class="checklist"]
+> * Aktivieren von Intellitrace-Ereignisse und Momentaufnahmen
+> * Navigieren Sie Ereignisse, die mit Befehlen Schritt zurück und Schritt vorwärts
+> * Anzeigen von Momentaufnahmen-Ereignis
   
 ## <a name="enable-intellitrace-events-and-snapshots-mode"></a>IntelliTrace-Ereignisse und Momentaufnahmen Modus aktivieren 
 
-1. Wechseln Sie in Visual Studio Enterprise zu **Extras > Optionen > IntelliTrace** Einstellungen, und wählen Sie die Option **IntelliTrace-Ereignisse und Momentaufnahmen**. 
+1. Öffnen Sie das Projekt in Visual Studio Enterprise.
+
+1. Wechseln Sie zu **Extras > Optionen > IntelliTrace** Einstellungen, und wählen Sie die Option **IntelliTrace-Ereignisse und Momentaufnahmen**. 
 
     ![Aktivieren Sie den IntelliTrace-Ereignisse und Momentaufnahmen Modus](../debugger/media/intellitrace-enable-snapshots.png "Modus aktivieren von IntelliTrace-Ereignisse und Momentaufnahmen")
 
-2. Öffnen Sie Ihr Projekt in Visual Studio.
-
-3. Legen Sie einen oder mehrere Haltepunkte in Ihrem Projekt, und starten Sie das Debuggen (drücken Sie **F5**), oder starten Sie das Debuggen durch schrittweises Durchlaufen des Codes (**F10** oder **F11**).
+1. Legen Sie einen oder mehrere Haltepunkte in Ihrem Projekt, und starten Sie das Debuggen (drücken Sie **F5**), oder starten Sie das Debuggen durch schrittweises Durchlaufen des Codes (**F10** oder **F11**).
 
     IntelliTrace nimmt eine Momentaufnahme des Prozesses für die Anwendung auf jeder Debugger Schritt und Haltepunkt-Ereignisses. Diese Ereignisse werden aufgezeichnet, der **Ereignisse** Registerkarte der **Diagnosetools** Fenster zusammen mit weiteren IntelliTrace-Ereignissen. Um dieses Fenster zu öffnen, wählen Sie **Debuggen** > **Windows** > **Diagnosetools anzeigen**.
 
@@ -49,7 +56,7 @@ IntelliTrace-Schritt-wieder wird ab Visual Studio Enterprise 2017 Version 15.5 u
 
 1. Navigieren Sie zwischen Ereignissen mithilfe der **Schritt zurück (Alt + [)** und **Schritt vorwärts (Alt +])** Schaltflächen in der Debug-Symbolleiste.
 
-    Diese Schaltflächen navigieren, die Ereignisse, die in der **Ereignisse** Registerkarte der **Fenster "Diagnosetools"**. Wenn Sie mit „Schritt zurück“ oder „Schritt vor“ zu einem Ereignis navigieren, wird das verlaufsbezogene Debuggen für das ausgewählte Ereignis automatisch aktiviert.
+    Diese Schaltflächen navigieren, die Ereignisse, die in der **Ereignisse** Registerkarte der **Fenster "Diagnosetools"**. Ausführen in Einzelschritten vorwärts oder rückwärts auf ein Ereignis automatisch aktiviert [verlaufsbezogenes debugging](../debugger/historical-debugging.md) auf das ausgewählte Ereignis.
 
     ![Schritt rückwärts und Vorwärts-Schaltflächen](../debugger/media/intellitrace-step-back-icons-description.png "Schritt rückwärts und Schritt vorwärts-Schaltflächen")
 
@@ -73,9 +80,7 @@ IntelliTrace-Schritt-wieder wird ab Visual Studio Enterprise 2017 Version 15.5 u
 
     ![Übersicht über die IntelliTrace-Schritt-Back](../debugger/media/intellitrace-step-back-overview.png "Übersicht über die von IntelliTrace Schritt hinten")
 
-## <a name="next-steps"></a>Nächste Schritte  
- Gewusst wie: Untersuchen von Variablen in Visual Studio finden Sie unter [Debugger-Funktion Tour](../debugger/debugger-feature-tour.md)  
- Einen Überblick über das verlaufsbezogene debugging finden Sie unter [verlaufsbezogenes debugging](../debugger/historical-debugging.md).  
+    Weitere Informationen zum Untersuchen von Variablen in Visual Studio finden Sie unter [Debugger-Funktion Tour](../debugger/debugger-feature-tour.md)  
 
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen (FAQs)
 
@@ -111,3 +116,10 @@ Die Auswirkung auf die gesamtleistung der schrittweisen Ausführung hängt von d
 * Beim Debuggen einer Anwendung, deren Prozess verfügt über eine große Anzahl von eindeutigen Speicherbereiche, z. B. eine Anwendung, die eine große Anzahl von DLLs, lädt, möglicherweise die Leistung mit Momentaufnahmen aktiviert stepping beeinträchtigt. Dieses Problem wird in einer zukünftigen Version von Windows behandelt werden. Wenn Sie dieses Problem auftreten, Remoteknoten uns stepback@microsoft.com. 
 
 * Beim Speichern einer Datei mit **Debuggen > IntelliTrace > Speichern der IntelliTrace-Sitzung** im Modus für Ereignisse und Momentaufnahmen, die zusätzlichen Daten, die von Momentaufnahmen aufgezeichneten ist nicht verfügbar in der ITRACE-Datei. Auf den Haltepunkt und Schritt-Ereignisse wird die gleichen Informationen angezeigt, als ob Sie die Datei befindet sich im Modus IntelliTrace-Ereignisse gespeichert wurde. 
+
+## <a name="next-steps"></a>Nächste Schritte
+
+In diesem Lernprogramm haben Sie gelernt, wie mithilfe von IntelliTrace-Schritt-Back wird. Sie möchten möglicherweise weitere Informationen zu anderen IntelliTrace-Funktionen.
+
+> [!div class="nextstepaction"]
+> [IntelliTrace-Funktionen](../debugger/intellitrace-features.md)

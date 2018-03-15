@@ -1,26 +1,26 @@
 ---
 title: Tastenkombinationen in Visual Studio | Microsoft-Dokumentation
-ms.custom: 
 ms.date: 06/21/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
 ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 779867243bc30c26e1fce9260ddf497a9fcf193e
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: 81c4c0957642b97b3d6e88107d98b293a5d09328
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="keyboard-tips-for-visual-studio"></a>Tipps und Tricks für Visual Studio
 
-Sie können in Visual Studio einfacher navigieren, indem Sie die Tastenkombinationen aus diesem Thema verwenden. Dieses Thema zeigt nur eine Teilmenge der verfügbaren Tastenkombinationen. Eine vollständige Liste finden Sie unter [Standardtastenkombinationen in Visual Studio](../ide/default-keyboard-shortcuts-in-visual-studio.md). Informationen über die Optimierung der Barrierefreiheit von Visual Studio finden Sie unter [Tipps und Tricks zur Barrierefreiheit](../ide/reference/accessibility-tips-and-tricks.md).
+Sie können in Visual Studio einfacher navigieren, indem Sie die Tastenkombinationen aus diesem Artikel verwenden.
+
+Die hier aufgelisteten Tastenkombinationen sind nur eine Teilmenge der verfügbaren Tastenkombinationen. Eine vollständige Liste finden Sie unter [Standardtastenkombinationen in Visual Studio](../ide/default-keyboard-shortcuts-in-visual-studio.md).
+
+Informationen über die Optimierung der Barrierefreiheit von Visual Studio finden Sie unter [Tipps und Tricks zur Barrierefreiheit](../ide/reference/accessibility-tips-and-tricks.md).
 
 ## <a name="window-management"></a>Fensterverwaltung
 
@@ -63,8 +63,8 @@ Sie können in Visual Studio einfacher navigieren, indem Sie die Tastenkombinati
 |Schnellsuche zur Erweiterung des Dropdowns|ALT+NACH-UNTEN|
 |Schließen der Suche|Esc|
 |Schnellersetzung|STRG+H|
-|Schnellersetzung für „Nächstes ersetzen“|ALT+R|
-|Schnellersetzung für „Alle ersetzen“|ALT+A|
+|Schnellersetzung für "Nächstes ersetzen"|ALT+R|
+|Schnellersetzung für "Alle ersetzen"|ALT+A|
 |Suchen in Dateien|STRG+UMSCHALT+F|
 |In Dateien ersetzen|STRG+UMSCHALT+H|
 
@@ -83,7 +83,7 @@ Sie können in Visual Studio einfacher navigieren, indem Sie die Tastenkombinati
 |Editor-Zoom|STRG+UMSCHALT+> (vergrößern), STRG+UMSCHALT+< (verkleinern)||
 |Blockauswahl|ALT-TASTE gedrückt halten und die Maus ziehen, UMSCHALT+ALT+PFEILTASTEN||
 |Eine Zeile nach oben/unten verschieben|ALT+BILD-AUF/ALT+BILD-AB||
-|Zeile duplizieren|STRG+E,V|Visual Studio 2017 Version 15.6 Vorschauversion 2|
+|Zeile duplizieren|STRG+E,V|Visual Studio 2017 Version 15.6|
 |Auswahl erweitern|**UMSCHALT**+**ALT**+**=**|Visual Studio 2017 Version 15.5|
 |Auswahl verkleinern|**UMSCHALT**+**ALT**+**-**|Visual Studio 2017 Version 15.5|
 |Gehe zu Definition|F12||
@@ -91,15 +91,15 @@ Sie können in Visual Studio einfacher navigieren, indem Sie die Tastenkombinati
 |Gehe zu Definition-Stapel|STRG+UMSCHALT+8 (zurück), STRG+UMSCHALT+7 (vorwärts)||
 |Schließen des Peek-Definitionsfensters|Esc||
 |Höherstufen des Peek-Definitionsfensters auf eine reguläre Dokumentregisterkarte|STRG+ALT+POS1||
-|Zwischen mehreren Fenstern der „Peek-Definition“ navigieren|STRG+ALT+- und STRG+ALT+=||
+|Zwischen mehreren Fenstern der "Peek-Definition" navigieren|STRG+ALT+- und STRG+ALT+=||
 |Navigieren zwischen mehreren Peek-Ergebnissen|F8 und UMSCHALT+F8||
-|Zwischen dem Fenster „Code-Editor“ und „Peek-Definition“ navigieren|UMSCHALT+ESC||
+|Zwischen dem Fenster "Code-Editor" und "Peek-Definition" navigieren|UMSCHALT+ESC||
 
 ## <a name="toolbars"></a>Symbolleisten
 
 |||
 |-|-|
-|Hinzufügen von Schaltflächen|Klicken auf die Schaltfläche „Symbolleistenüberlauf“|
+|Hinzufügen von Schaltflächen|Klicken auf die Schaltfläche "Symbolleistenüberlauf"|
 |Suchen des Kombinationsfelds in der Standardsymbolleiste|STRG+D|
 |Suchen des Textfeld-Befehlsmodus|Eingeben von „>“|
 |Erstellen eines neuen Alias|>alias NewAlias-Befehl|

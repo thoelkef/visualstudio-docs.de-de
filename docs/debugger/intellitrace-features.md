@@ -26,11 +26,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 273f7f94127929a3939d21414bd8da5c12abc83e
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: 01515701b6aeecc1166551c6376bfd6823e73976
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="intellitrace-features"></a>IntelliTrace-Funktionen
 
@@ -55,7 +55,7 @@ Wenn Sie gerade einen Debugging-Vorgang ausführen, beenden Sie diesen. Wechseln
 
 Dies ist nicht standardmäßig aktiviert, aber IntelliTrace Momentaufnahmen Ihrer Anwendung bei jeder haltepunktereignissen und den Debugger Schritt Ereignis erfassen kann, und Sie können Thesen Momentaufnahmen in einer verlaufsbezogenes debugging-Sitzung anzeigen. Eine Momentaufnahme bietet Ihnen einen Überblick über Ihre vollständigem Anwendungszustand. Um das Aufzeichnen von Momentaufnahmen zu aktivieren, wechseln Sie zu **Tools > Optionen > IntelliTrace > Allgemein**, und wählen Sie **IntelliTrace-Ereignisse und Momentaufnahmen**. Weitere Informationen finden Sie unter [Anzeigen von Momentaufnahmen mithilfe von IntelliTrace-Schritt-zurück](../debugger/how-to-use-intellitrace-step-back.md)
 
-Momentaufnahmen sind in Visual Studio Enterprise 2017 Version 15.5 und höher verfügbar und erfordert Anniversary-Update für Windows 10 oder höher.  Momentaufnahmen sind zurzeit nicht verfügbar für .NET Core und ASP.NET Core-apps.
+Momentaufnahmen sind in Visual Studio Enterprise 2017 Version 15.5 und höher verfügbar und erfordert Anniversary-Update für Windows 10 oder höher.  Für .NET Core und ASP.NET Core-apps ist Visual Studio Enterprise 2017 Version 15.7 Preview 1 erforderlich.
 
 ## <a name="GoingFurther"></a> Sammeln von IntelliTrace-Ereignisse und Aufrufinformationen
 

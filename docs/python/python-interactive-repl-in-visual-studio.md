@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e41e4af21a524215550c581b1e29efc2261aaa8f
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: 0bd110b671806c37e59f5f0d52c62c1eed42e9cf
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="working-with-the-python-interactive-window"></a>Arbeiten mit dem interaktiven Python-Fenster
 
@@ -31,20 +31,20 @@ Visual Studio bietet ein interaktives „Lesen-Auswerten-Ausgeben-Schleife“-Fe
 
 Visual Studio stellt eine Reihe von Python-REPL-Modi zur Auswahl:
 
-| REPL | Beschreibung | Bearbeiten | Debuggen | Bilder |
+| REPL | description | Bearbeiten | Debuggen | Bilder |
 | --- | --- | --- | --- | --- |
 | Standard | Standard-REPL, kommuniziert direkt mit Python | Standardbearbeitung (mehrzeilig usw.) | Ja, über `$attach` | Nein |
 | Debug | Standard-REPL, kommuniziert mit gedebuggtem Python-Prozess | Standardbearbeitung | Nur Debuggen | Nein |
 | IPython | REPL kommuniziert mit IPython-Back-End | IPython-Befehle, Pylab-Vorteile | Nein | Ja, inline in REPL |
 | IPython ohne Pylab | REPL kommuniziert mit IPython-Back-End | Standardmäßiges IPython | Nein | Ja, separates Fenster | 
 
-Dieses Thema beschreibt den **Standard**- und **Debug**-REPL-Modus. Ausführliche Informationen zu den IPython-Modi finden Sie unter [Using Python in the Interactive Window](interactive-repl-ipython.md) (Verwenden von Python im interaktiven Fenster).
+In diesem Artikel werden der **Standard**- und **Debug**-REPL-Modus beschrieben. Ausführliche Informationen zu den IPython-Modi finden Sie unter [Using Python in the Interactive Window](interactive-repl-ipython.md) (Verwenden von Python im interaktiven Fenster).
 
 Eine detaillierte exemplarische Vorgehensweise mit Beispielen, einschließlich der Interaktionen mit dem Editor wie z.B. STRG+EINGABETASTE, finden Sie unter [Tutorial Step 3: Using the interactive REPL window (Tutorial Schritt 3: Verwenden des interaktiven REPL-Fensters)](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md). 
 
 |   |   |
 |---|---|
-| ![Kamerasymbol für Video](../install/media/video-icon.png "Video ansehen") | [Sehen Sie sich ein Video (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Python-Interactive-Window-gJYKY5LWE_4605918567) zum interaktiven Fenster an (2 Minuten, 22 Sekunden).|
+| ![Kamerasymbol für video](../install/media/video-icon.png "Video ansehen") | [Sehen Sie sich ein Video (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Python-Interactive-Window-gJYKY5LWE_4605918567) zum interaktiven Fenster an (2 Minuten, 22 Sekunden).|
 
 ## <a name="opening-an-interactive-window"></a>Öffnen eines interaktiven Fensters
 
@@ -83,7 +83,7 @@ Eine Ausnahme besteht, wenn zusätzliche Codezeilen benötigt werden, um eine vo
 
 <a name="meta-commands"></a> Das interaktive Fenster unterstützt auch mehrere Metabefehle. Alle Metabefehle beginnen mit `$`, und Sie können `$help` eingeben, um eine Liste der Metabefehle abzurufen, und `$help <command>`, um nähere Informationen zur Verwendung eines bestimmten Befehls zu erhalten.
 
-| Metabefehl | Beschreibung |
+| Metabefehl | description |
 | --- | --- |
 | `$$` | Fügt einen Kommentar ein, was das Kommentieren von Code während der gesamten Sitzung erleichtert. |
 | `$attach` | Fügt den Visual Studio-Debugger dem REPL-Fensterprozess an, um das Debuggen zu aktivieren. |

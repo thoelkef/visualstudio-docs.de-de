@@ -6,15 +6,15 @@ ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: E4B6CB42-9FE2-43B9-93B7-BD4BD50518B1
-ms.openlocfilehash: 849b52cff3fa85bcfb0b10c43a490d1a5fb40760
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: e5f9a128c1d69683421eb2dbcb351d8a107adeee
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="building-and-cleaning-projects-and-solutions"></a>Erstellen und Bereinigen von Projekten und Projektmappen
 
-Befolgen Sie die Schritte in diesem Thema, um mehr zum Erstellen, Neuerstellen und Bereinigen von Projektmappen und Projekten zu erfahren.
+Befolgen Sie die Schritte in diesem Artikel, um mehr zum Erstellen, Neuerstellen und Bereinigen Ihrer Projektmappe und Ihres Projekts zu erfahren.
 
 ## <a name="to-build-rebuild-or-clean-an-entire-solution"></a>So können Sie eine gesamte Projektmappe erstellen, neu erstellen oder bereinigen
 

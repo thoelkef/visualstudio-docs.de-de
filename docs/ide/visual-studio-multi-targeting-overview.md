@@ -1,10 +1,11 @@
 ---
 title: "Erstellen von Projekten für .NET Framework in Visual Studio | Microsoft-Dokumentation"
 ms.custom: 
-ms.date: 01/18/2018
+ms.date: 02/06/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -16,12 +17,13 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: e4b68e5d7b7e63e76a2291eba6d81eb581756845
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.workload:
+- dotnet
+ms.openlocfilehash: e78f77993c510a223056696c0beac27147d18d5a
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="visual-studio-multi-targeting-overview"></a>Übersicht: Ausrichtung auf mehrere Zielframeworkversionen in Visual Studio
 
@@ -48,7 +50,7 @@ Frameworkziele umfassen folgende Funktionen:
 
 Visual Studio kann dynamisch Änderungen in der Entwicklungsumgebung vornehmen, wenn Sie mit einem Projekt arbeiten, das eine frühere [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]-Version als Ziel hat. Dazu zählen u. a. folgende Aktionen:
 
-- Filtern von Elementen in den Dialogfeldern **Neues Projekt**, **Neues Element hinzufügen**, **Neuen Verweis hinzufügen** und **Dienstverweis hinzufügen**, um die Optionen auszulassen, die in der Zielversion nicht verfügbar sind.
+- Filtern von Elementen in den Dialogfeldern **Neues Element hinzufügen**, **Neuen Verweis hinzufügen** und **Dienstverweis hinzufügen**, um die Optionen auszulassen, die in der Zielversion nicht verfügbar sind.
 
 - Filtern von benutzerdefinierten Steuerelementen in der **Toolbox**, um die Steuerelemente zu entfernen, die in der Zielversion nicht verfügbar sind, und um nur die neuesten Steuerelemente anzuzeigen, wenn mehrere Steuerelemente für die Zielversion verfügbar sind.
 
@@ -65,7 +67,11 @@ Visual Studio kann dynamisch Änderungen in der Entwicklungsumgebung vornehmen, 
 
 ## <a name="selecting-a-target-framework-version"></a>Auswählen einer Zielframeworkversion
 
-Wenn Sie ein Projekt erstellen, wählen Sie die [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]-Zielversion im Dialogfeld **Neues Projekt** aus. Die Liste der verfügbaren Projektvorlagen wird basierend auf der Auswahl gefiltert. Für ein vorhandenes Projekt können Sie die [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]-Zielversion über das Dialogfeld „Projekteigenschaften“ ändern. Weitere Informationen finden Sie unter [Vorgehensweise: .NET Framework-Version als Ziel](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
+Wenn Sie ein Projekt erstellen, wählen Sie die .NET Framework-Version im Dialogfeld **Neues Projekt** aus. Die Liste der verfügbaren Frameworks enthält die installierten Framework-Versionen, die auf den Typ der ausgewählten Vorlage anwendbar sind. Für Vorlagentypen, die .NET Framework nicht benötigen, z.B. .NET Core-Vorlagen, wird die **Framework**-Dropdownliste ausgeblendet.
+
+![Framework-Dropdownliste im Dialogfeld „Neues Projekt“](media/vside-newproject-framework.png)
+
+Für ein vorhandenes Projekt können Sie die [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]-Zielversion über das Dialogfeld „Projekteigenschaften“ ändern. Weitere Informationen finden Sie unter [Vorgehensweise: .NET Framework-Version als Ziel](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
 
 ## <a name="resolving-system-and-user-assembly-references"></a>Auflösen von System- und Benutzerassemblyverweisen
 

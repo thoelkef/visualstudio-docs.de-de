@@ -11,11 +11,11 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: f15239ed045185449735ec3b5e0bcdc514fa786d
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: be14af66f5aa5389e9e701eb79dc68ee733c6068
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="visual-studio-2017-for-net-developers"></a>Visual Studio 2017 für .NET-Entwickler
 
@@ -106,7 +106,7 @@ Im Folgenden finden Sie beliebte Tastenkombinationen für Visual Studio. Beachte
 | **STRG+F12** | Gehe zu Implementierung | Navigieren von einem Basistyp oder Member zu seinen verschiedenen Implementierungen |
 | **UMSCHALT+F12** | Alle Verweise suchen | Alle Symbol- oder Literalverweise ansehen |
 | **STRG**+**.** (auch **Alt+EINGABETASTE** in C# Profile) | Schnellaktionen und Refactorings | Ansehen, welche Codekorrekturen, Aktionen zum Generieren von Code, Refactorings oder anderen Schnellaktionen an der Cursorposition oder für den markierten Code zur Verfügung stehen. |
-| **STRG**+**E**,**V** | Zeile duplizieren | Die Codezeile, in der sich der Cursor befindet, wird dupliziert (verfügbar in **Visual Studio 2017 Version 15.6 Vorschauversion 2** und höher) |
+| **STRG**+**E**,**V** | Zeile duplizieren | Die Codezeile, in der sich der Cursor befindet, wird dupliziert (verfügbar in **Visual Studio 2017 Version 15.6** und höher) |
 | **STRG+Q** | Schnellstart | Durchsuchen aller Visual Studio-Einstellungen |
 | **F5** | Debugging starten | Debugging der Anwendung starten |
 | **STRG+F5** | Ohne Debuggen ausführen | Anwendung lokal ausführen, ohne Debuggen |
