@@ -50,7 +50,6 @@
 ### [Ausführen von Komponententests für UWP-Apps](run-unit-tests-for-store-apps-in-visual-studio.md)
 ## [Bestimmen des Umfangs des zu testenden Codes mithilfe von Code Coverage](using-code-coverage-to-determine-how-much-code-is-being-tested.md)
 ### [Anpassen der Code Coverage-Analyse](customizing-code-coverage-analysis.md)
-### [Analysieren von Code Coverage in Buildüberprüfungstest](analyzing-code-coverage-in-build-verification-tests.md)
 ### [Problembehandlung bei der Code Coverage](troubleshooting-code-coverage.md)
 ## [Verwenden Emulatoren zum Insolieren von Komponententests für SharePoint 2010-Anwendungen](using-emulators-to-isolate-unit-tests-for-sharepoint-2010-applications.md)
 # [Live-Komponententests](live-unit-testing-intro.md)

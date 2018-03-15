@@ -5,11 +5,12 @@
 ## [Debuggen einer verwalteten App](quickstart-debug-with-managed.md)
 ## [Debuggen einer nativen App](quickstart-debug-with-cplusplus.md)
 ## [Debuggen einer ASP.NET-App](quickstart-debug-aspnet.md)
-# Lernprogramme
+# Tutorials
 ## [Lernen Sie das Debuggen mit Visual Studio](getting-started-with-the-debugger.md)
 ## [Debuggen von ASP.NET in IIS Express oder IIS](how-to-enable-debugging-for-aspnet-applications.md)
 ## [Ausführen von Python-Code im Debugger](../python/vs-tutorial-01-04.md)
 ## [Debuggen einer aktiven Azure-App](debug-live-azure-applications.md)
+## [Anzeigen von Momentaufnahmen mithilfe der Schritt-zurück-Funktion von IntelliTrace](how-to-use-intellitrace-step-back.md)
 ## [Remotedebuggen von ASP.NET Core auf einem Computer mit IIS](remote-debugging-aspnet-on-a-remote-iis-computer.md)
 ## [Remotedebuggen von ASP.NET auf einem Computer mit IIS](remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)
 ## [Remotedebuggen von ASP.NET in Azure](remote-debugging-azure.md)
@@ -152,7 +153,6 @@
 ### [Exemplarische Vorgehensweise: Verwenden von IntelliTrace](walkthrough-using-intellitrace.md)
 ### [IntelliTrace-Funktionen](intellitrace-features.md)
 ### [Verlaufsbezogenes Debugging](historical-debugging.md)
-### [Anzeigen von Momentaufnahmen mithilfe der Schritt-zurück-Funktion von IntelliTrace](how-to-use-intellitrace-step-back.md)
 ### [Untersuchen Ihrer App anhand von verlaufsbezogenem Debuggen](historical-debugging-inspect-app.md)
 ### [Diagnostizieren von Problemen nach der Bereitstellung](diagnose-problems-after-deployment.md)
 ### [Verwenden des eigenständigen IntelliTrace-Collectors](using-the-intellitrace-stand-alone-collector.md)
@@ -271,7 +271,7 @@
 ## [Verwenden von Dumpdateien](using-dump-files.md)
 ### [Erweiterbarkeits-API für Dumpdateizusammenfassung](dump-file-summary-extensibility-api.md)
 ## [Debuggersicherheit](debugger-security.md)
-# Verweis
+# Referenz
 ## [Referenz zur Debugger-Benutzeroberfläche](debugging-user-interface-reference.md)
 ### [Dialogfeld "Haltepunkte wählen"](choose-breakpoints-dialog-box.md)
 ### [Firewall für Remotedebuggen konfigurieren (Dialogfeld)](configure-firewall-for-remote-debugging-dialog-box.md)
