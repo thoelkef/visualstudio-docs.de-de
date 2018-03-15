@@ -43,7 +43,7 @@ DSL-Modelle können in jeder Anwendung geöffnet werden.
   
     -   Wenn diese nicht angezeigt werden die **.NET** Registerkarte der **Verweise hinzufügen** (Dialogfeld), klicken Sie auf die **Durchsuchen** Registerkarte, und navigieren Sie zu `%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Common\Assemblies\`.  
   
--   Ihre DSL-Assembly im Ordner "bin" Ihrer DSL-Projekt Sie finden. Der Name ist in der Regel im Format: *ihrunternehmen*.* IhrProjekt*`.Dsl.dll`.  
+-   Ihre DSL-Assembly im Ordner "bin" Ihrer DSL-Projekt Sie finden. Der Name ist in der Regel im Format: *ihrunternehmen*. *IhrProjekt*`.Dsl.dll`.  
   
 ## <a name="important-classes-in-the-dsl"></a>Wichtige Klassen in der DSL  
  Bevor Sie den Code, der der DSL liest schreiben können, sollten Sie die Namen einiger der Klassen, die von der DSL generiert wissen. Öffnen Sie in der Projektmappe DSL der **Dsl** Projekt, und suchen Sie in der **GeneratedCode** Ordner. Doppelklicken Sie alternativ auf die DSL-Assembly in Ihrem Projekt **Verweise**, und öffnen Sie den Namespace der DSL in **Objektkatalog**.  
