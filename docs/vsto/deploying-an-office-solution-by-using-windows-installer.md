@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -21,7 +22,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: 68ec55b1096f9e4244213cf4faeef5b904dd8fed
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -50,7 +52,7 @@ Wenn Sie Visual Studio zum Erstellen eines Windows Installers verwenden, können
   
 - [Konfigurieren der abhängigen Komponenten als erforderliche Komponenten](#Configure)  
   
-- [Specify where you want to deploy the solution on the user's computer](#Location)  
+- [Festlegen, wo die Projektmappe auf dem Computer des Benutzers bereitgestellt werden soll](#Location)  
   
 - [Konfigurieren eines VSTO-Add-Ins](#ConfigureRegisitry)  
   
@@ -77,7 +79,7 @@ In diesem Thema werden die folgenden herunterladbaren Beispiele erläutert.
 Bevor eine Projektmappe auf Benutzercomputern ausgeführt werden kann, müssen Sie Vertraulichkeit auf eine der nachfolgenden Weisen gewähren, oder Benutzer müssen auf eine vertrauenswürdige Eingabeaufforderung antworten, wenn Sie die Projektmappe installieren.  
   
   
-- Signieren Sie die Manifeste, indem Sie ein Zertifikat verwenden, das einen bekannten und vertrauenswürdigen Herausgeber identifiziert. Weitere Informationen finden Sie unter [Trusting the Solution by Signing the Application and Deployment Manifests](../vsto/granting-trust-to-office-solutions.md#Signing).  
+- Signieren Sie die Manifeste, indem Sie ein Zertifikat verwenden, das einen bekannten und vertrauenswürdigen Herausgeber identifiziert. Weitere Informationen finden Sie unter [Der Projektmappe durch das Signieren von Anwendungs- und Bereitstellungsmanifesten vertrauen](../vsto/granting-trust-to-office-solutions.md#Signing).  
   
 - Installieren Sie die Lösung in das Verzeichnis "Programme" auf dem Computer des Benutzers ein.  
   

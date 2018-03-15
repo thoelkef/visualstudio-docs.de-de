@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-deployment
+ms.technology:
+- vs-ide-deployment
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -20,11 +21,12 @@ helpviewer_keywords:
 - custom prerequisites
 - redistributables list
 ms.assetid: ba1a785b-693d-446b-bcae-b88cadee73d1
-caps.latest.revision: "45"
+caps.latest.revision: 
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 5f269369084df3d81d323e75730fad27713831ca
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
@@ -37,7 +39,7 @@ Das Setupprogramm ist ein generisches Installationsprogramm, das für die Ermitt
  Der Bootstrapper ermittelt zunächst, ob erforderliche Komponenten bereits installiert sind. Ist dies nicht der Fall, werden vom Bootstrapper die Lizenzverträge angezeigt. Nachdem der Endbenutzer die Lizenzverträge akzeptiert hat, beginnt die Installation der erforderlichen Komponenten. Wurden alle erforderlichen Komponenten ermittelt, wird direkt das Installationsprogramm der Anwendung gestartet.  
   
 ## <a name="creating-custom-packages"></a>Erstellen von benutzerdefinierten Paketen  
- Sie können die Manifeste mit dem XML-Editor in Visual Studio generieren. Weitere Informationen finden Sie unter [How to: Create a Package Manifest](../deployment/how-to-create-a-package-manifest.md) und [How to: Create a Product Manifest](../deployment/how-to-create-a-product-manifest.md). Ein Beispiel für das Erstellen eines Bootstrapperpakets finden Sie unter [Walkthrough: Creating a Custom Bootstrapper to Show a Privacy Prompt](../deployment/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt.md).  
+ Sie können die Manifeste mit dem XML-Editor in Visual Studio generieren. Weitere Informationen finden Sie unter [How to: Create a Package Manifest](../deployment/how-to-create-a-package-manifest.md) und [How to: Create a Product Manifest](../deployment/how-to-create-a-product-manifest.md). Ein Beispiel für das Erstellen eines Bootstrapperpakets finden Sie unter [Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Bootstrappers zum Anzeigen einer Datenschutzeingabeaufforderung](../deployment/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt.md).  
   
  Zur Erstellung eines Bootstrapperpakets muss die weitervertreibbare Komponente in Form einer EXE- oder MSI-Datei im Bootstrapper Manifest-Generator angegeben werden. Dann werden vom Bootstrapper Manifest-Generator die folgenden Dateien erstellt:  
   
