@@ -197,7 +197,7 @@ Bearbeiten von Steuerelementeigenschaften
  *Was sollte ich noch wissen?*  
  **Notizen**  
   
--   ![Erforderliche Komponente](../test/media/prereq.png "Prereq") Wenn ein bestimmtes Steuerelement vor einer UI-Aktion verfügbar sein muss, sollten Sie mit der entsprechenden UITestControl.WaitForControlXXX()-Methode ggf. benutzerdefinierten Code zur Testmethode hinzufügen. [!INCLUDE[crdefault](../test/includes/crdefault_md.md)][Making Coded UI Tests Wait For Specific Events During Playback](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md)aus.  
+-   ![Erforderliche Komponente](../test/media/prereq.png "Prereq") Wenn ein bestimmtes Steuerelement vor einer UI-Aktion verfügbar sein muss, sollten Sie mit der entsprechenden UITestControl.WaitForControlXXX()-Methode ggf. benutzerdefinierten Code zur Testmethode hinzufügen. [!INCLUDE[crdefault](../test/includes/crdefault_md.md)][Festlegen, dass bei Wiedergabe von Tests der programmierten UI auf bestimmte Ereignisse gewartet wird](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md)  
   
  **Tipps**  
   

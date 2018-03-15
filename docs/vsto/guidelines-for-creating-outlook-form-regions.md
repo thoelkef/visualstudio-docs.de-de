@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -16,7 +17,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: 1e82a4428dde7aa25c7e9a3d7d74017b9f2a874f
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -57,9 +59,9 @@ ms.lasthandoff: 01/10/2018
 ##  <a name="ClassNames"></a> Grundlegendes zu Typen und Nachrichtenklassennamen  
  Der Typname eines Outlook-Elements unterscheidet sich vom Namen der Nachrichtenklasse eines Outlook-Elements. Beispielsweise ist der Typname eines RSS-Elements Microsoft.Office.Interop.Outlook.PostItem. Der Klassenname der Nachricht ein RSS-Elements ist IPM. Post.RSS.  
   
- Verwenden Sie den Typnamen, um auf ein Outlook-Element in Code zu verweisen. Eine Liste der Typnamen finden Sie unter [Associating a Form Region with an Outlook Message Class](../vsto/associating-a-form-region-with-an-outlook-message-class.md).  
+ Verwenden Sie den Typnamen, um auf ein Outlook-Element in Code zu verweisen. Eine Liste der Typnamen finden Sie unter [Zuordnen eines Formularbereichs zu einer Outlook-Nachrichtenklasse](../vsto/associating-a-form-region-with-an-outlook-message-class.md).  
   
- Verwenden Sie den Nachrichtenklassennamen von Outlook-Elementen im Assistenten **Neuer Outlook-Formularbereich** , um das Element dem Formularbereich zuzuordnen. Eine Liste der gültigen Nachrichtenklassennamen finden Sie unter [Associating a Form Region with an Outlook Message Class](../vsto/associating-a-form-region-with-an-outlook-message-class.md).  
+ Verwenden Sie den Nachrichtenklassennamen von Outlook-Elementen im Assistenten **Neuer Outlook-Formularbereich** , um das Element dem Formularbereich zuzuordnen. Eine Liste der gültigen Nachrichtenklassennamen finden Sie unter [Zuordnen eines Formularbereichs zu einer Outlook-Nachrichtenklasse](../vsto/associating-a-form-region-with-an-outlook-message-class.md).  
   
 ##  <a name="ReadingPane"></a> Designing Adjoining Form Regions for the Reading Pane  
  Im Outlook-Lesebereich kann die Vorschau eines Outlook-Elements ohne Öffnen des Elements angezeigt werden. Der Lesebereich ist nur für Lesezwecke vorgesehen. Daher verhalten sich Eingabesteuerelemente, die Sie einem benachbarten Formularbereich hinzufügen (beispielsweise ein Textfeld), unter Umständen nicht wie erwartet, wenn das Element und der Formularbereich im Lesebereich geöffnet sind.  
