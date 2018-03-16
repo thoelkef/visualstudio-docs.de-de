@@ -41,7 +41,7 @@ VSPerfCmd [/U] [/options]
 |**U**|Die umgeleitete Konsolenausgabe wird als Unicode geschrieben. Es muss sich um die erste angegebene Option handeln.|  
 |[Start](../profiling/start.md) **:** `mode`|Startet den Profilerstellungsdienst im angegebenen Modus.|  
 |[Ausgabe](../profiling/output.md) **:** `filename`|Gibt den Ausgabedateinamen an. Nur zusammen mit **Start**.|  
-|[CrossSession|CS](../profiling/crosssession.md)|Aktiviert die Profilerstellung in allen Windows-Sitzungen. Nur zusammen mit **Start**, **Attach**, oder **Launch**.|  
+|[CrossSession&#124;CS](../profiling/crosssession.md)|Aktiviert die Profilerstellung in allen Windows-Sitzungen. Nur zusammen mit **Start**, **Attach**, oder **Launch**.|  
 |[User](../profiling/user-vsperfcmd.md) **:**[`domain\`]`username`|Gewährt dem angegebenen Konto Zugriff auf den Profilerdienst. Nur zusammen mit **Start**.|  
 |[WaitStart](../profiling/waitstart.md)[**:**`n`]|Wartet darauf, dass der Datensammlungslogger initialisiert wird. Wenn `n` angegeben ist, wartet **VSPerfCmd** höchstens `n` Sekunden. Wenn `n` nicht angegeben ist, wartet **VSPerfCmd** unendlich lange. Dies vereinfacht die Verwendung von **VSPerfCmd** in einem Batchprozess.|  
 |[Counter](../profiling/counter.md) **:** `cfg`|Wenn die Samplingmethode für die Profilerstellung verwendet wird, wird ein CPU-Indikator angegeben sowie die Anzahl der als Samplingintervall zu verwendenden Ereignisse. Sie können nur für einen Zählerwert ein Sampling ausführen.<br /><br /> Wenn die Instrumentationsmethode für die Profilerstellung verwendet wird, gibt diese einen CPU-Indikator an, der an jedem Instrumentationspunkt aufzulisten ist. Nur zusammen mit **Start:**`Trace`, **Attach** oder **Launch**.|  
