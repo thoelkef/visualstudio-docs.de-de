@@ -26,11 +26,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 07afad8b464e266477c4edbb97ffc3eb3d8436e4
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: 8f4edf6c446bdcd35585a60d97965d2d6ee21ad1
+ms.sourcegitcommit: 236c250bb97abdab99d00c6525d106fc0035d7d0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="intellitrace"></a>IntelliTrace
 
@@ -58,8 +58,8 @@ Sie können IntelliTrace in der Visual Studio Enterprise Edition verwenden(jedoc
 |||
 |-|-|
 |**Unterstützt**|-Visual Basic- und Visual C#-Anwendungen, die .NET Framework 2.0 oder höher verwenden.<br/>Sie können die meisten Anwendungen debuggen, einschließlich ASP.NET, Microsoft Azure, Windows Forms, WCF, WPF, Windows Workflow, SharePoint 2010, SharePoint 2013 und 64-Bit-Anwendungen.<br/>Zum Debuggen von SharePoint-Anwendungen mit IntelliTrace finden Sie unter [Exemplarische Vorgehensweise: Debuggen einer SharePoint-Anwendung durch Verwenden von IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md).<br/> Um Microsoft Azure-apps mit IntelliTrace zu debuggen, finden Sie unter [einer veröffentlichten Cloud-Diensts mit IntelliTrace und Visual Studio Debuggen](/azure/vs-azure-tools-intellitrace-debug-published-cloud-services).|
-|**Eingeschränkte Unterstützung**|-.NET Core und ASP.NET Core-apps, die nur für Ereignisse unterstützt<br />-F#-apps versuchsweise<br />-UWP apps, die nur für Ereignisse unterstützt|
-|Nicht unterstützt.|-C++, andere Sprachen und Skript<br />-Windows Dienste, Silverlight, Xbox oder [!INCLUDE[winmobile](../debugger/includes/winmobile_md.md)] apps|
+|**Eingeschränkte Unterstützung**|-.NET Core und ASP.NET Core-apps unterstützt für bestimmte Ereignisse nur MVC-Controller, ADO.NET und HTTPClicent beim lokalen Debuggen. Der eigenständige Collector wird für .NET Core- und ASP.NET Core apps nicht unterstützt.<br />-F#-apps versuchsweise<br />-UWP apps, die nur für Ereignisse unterstützt|
+|**Nicht unterstützt.**|-C++, andere Sprachen und Skript<br />-Windows Dienste, Silverlight, Xbox oder [!INCLUDE[winmobile](../debugger/includes/winmobile_md.md)] apps|
 
 > [!NOTE]
 > Wenn Sie möchten einen Prozess zu debuggen, der bereits ausgeführt wird, können Sie nur IntelliTrace-Ereignisse (keine Aufrufinformationen) sammeln. Sie können mit einem 32-Bit oder 64-Bit-Prozess auf dem lokalen Computer nur anfügen. Ereignisse, die auftreten, bevor Sie an den Prozess angefügt werden werden nicht erfasst.

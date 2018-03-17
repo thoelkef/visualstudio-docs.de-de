@@ -7,19 +7,20 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 0448274c-d3d2-4e12-9d11-8aca78a1f3f5
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: c13a899e5c678040d6ffe5b1996fd3ee96e9cc09
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- vssdk
+ms.openlocfilehash: 4aac446e9ed71b6e6b0c86ea64068af7a6184767
+ms.sourcegitcommit: 236c250bb97abdab99d00c6525d106fc0035d7d0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="how-to-provide-an-asynchronous-visual-studio-service"></a>Vorgehensweise: Bereitstellen einen asynchronen Visual Studio-Dienst
-Wenn Sie einen Dienst zu erhalten, ohne den Benutzeroberflächenthread zu blockieren möchten, sollten Sie asynchrone-Dienst erstellen und Laden Sie das Paket in einem Hintergrundthread auf. Zu diesem Zweck können Sie eine <xref:Microsoft.VisualStudio.Shell.AsyncPackage> anstelle eines <xref:Microsoft.VisualStudio.Shell.Package>, und fügen Sie den Dienst mit speziellen asynchronen Methoden für das asynchrone Paket hinzu.  
+Wenn Sie einen Dienst zu erhalten, ohne den Benutzeroberflächenthread zu blockieren möchten, sollten Sie asynchrone-Dienst erstellen und Laden Sie das Paket in einem Hintergrundthread auf. Zu diesem Zweck können Sie eine <xref:Microsoft.VisualStudio.Shell.AsyncPackage> anstelle eines <xref:Microsoft.VisualStudio.Shell.Package>, und fügen Sie den Dienst mit speziellen asynchronen Methoden für das asynchrone Paket hinzu.
   
  Weitere Informationen zu synchronen Visual Studio-Dienste bereitstellt, finden Sie unter [Vorgehensweise: Bereitstellen ein Diensts](../extensibility/how-to-provide-a-service.md).  
   
@@ -56,7 +57,7 @@ Wenn Sie einen Dienst zu erhalten, ohne den Benutzeroberflächenthread zu blocki
   
 7.  Hier ist die asynchrone-Implementierung. Beachten Sie, dass der asynchronen Dienstanbieter statt der synchronen Dienstanbieter im Konstruktor festgelegt werden sollen:  
   
-    ```  
+    ```csharp
     public class TextWriterService : STextWriterService, ITextWriterService  
     {  
         private Microsoft.VisualStudio.Shell.IAsyncServiceProvider serviceProvider;  
@@ -92,7 +93,7 @@ Wenn Sie einen Dienst zu erhalten, ohne den Benutzeroberflächenthread zu blocki
   
 -   Müssen Sie hinzufügen, die **AllowsBackgroundLoading = "true"** Feld der <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute>. Weitere Informationen zu den PackageRegistrationAttribute, finden Sie unter [registrieren und Aufheben der Registrierung von VSPackages](../extensibility/registering-and-unregistering-vspackages.md).  
   
- Hier ist ein Beispiel für eine AsyncPackage mit einer asynchronen dienstregistrierung::  
+ Hier ist ein Beispiel für eine AsyncPackage mit einer asynchronen Service-Registrierung:
   
 ```csharp  
 [ProvideService((typeof(STextWriterService)), IsAsyncQueryable = true)]  
@@ -107,7 +108,7 @@ public sealed class TestAsyncPackage : AsyncPackage
   
 1.  In TestAsyncPackage.cs, entfernen Sie die `Initialize()` -Methode und überschreiben die `InitializeAsync()` Methode. Fügen Sie den Dienst, und fügen Sie eine Rückrufmethode, um die Dienste zu erstellen. Hier ist ein Beispiel für die asynchrone Initialisierung Hinzufügen eines Diensts:  
   
-    ```  
+    ```csharp
     protected override async System.Threading.Tasks.Task InitializeAsync(CancellationToken cancellationToken, IProgress<ServiceProgressData> progress)  
     {  
         this.AddService(typeof(STextWriterService), CreateService);  
@@ -146,7 +147,7 @@ public sealed class TestAsyncPackage : AsyncPackage
   
         ITextWriterService textService = await this.GetServiceAsync(typeof(STextWriterService)) as ITextWriterService;  
   
-        await writer.WriteLineAsync(<userpath>), "this is a test");  
+        await textService.WriteLineAsync(<userpath>), "this is a test");  
   
         await base.InitializeAsync(cancellationToken, progress);  
     }  
@@ -164,7 +165,7 @@ public sealed class TestAsyncPackage : AsyncPackage
   
 2.  Die benutzerdefinierte Befehlsvorlage erneut fügt die `Initialize()` Methode, um die TestAsyncPackage.cs-Datei, um den Befehl zu initialisieren. Kopieren Sie die Zeile, die der Befehl initialisiert, in die Initialize()-Methode. Es sollte wie folgt aussehen:  
   
-    ```  
+    ```csharp
     TestAsyncCommand.Initialize(this);  
     ```  
   
@@ -182,7 +183,7 @@ public sealed class TestAsyncPackage : AsyncPackage
         ITextWriterService textService =   
            await this.GetServiceAsync(typeof(STextWriterService)) as ITextWriterService;  
   
-        await writer.WriteLineAsync((<userpath>, "this is a test");  
+        await textService.WriteLineAsync((<userpath>, "this is a test");  
   
         await base.InitializeAsync(cancellationToken, progress);  
     }  
@@ -193,9 +194,9 @@ public sealed class TestAsyncPackage : AsyncPackage
   
 4.  Suchen Sie in der Datei TestAsyncCommand.cs die `MenuItemCallback()` Methode. Löschen Sie den Text der Methode.  
   
-5.  Fügen Sie eine using Anweisung:  
+5.  Fügen Sie eine Using-Anweisung hinzu:  
   
-    ```  
+    ```csharp 
     using System.IO;  
     ```  
   
@@ -208,14 +209,14 @@ public sealed class TestAsyncPackage : AsyncPackage
            this.ServiceProvider.GetService(typeof(STextWriterService))  
               as ITextWriterService;  
         // don't forget to change <userpath> to a local path  
-        await writer.WriteLineAsync((<userpath>),"this is a test");  
+        await textService.WriteLineAsync((<userpath>),"this is a test");  
        }  
   
     ```  
   
 7.  Rufen Sie diese Methode aus der `MenuItemCallback()` Methode:  
   
-    ```  
+    ```csharp
     private void MenuItemCallback(object sender, EventArgs e)  
     {  
         GetAsyncService();  
