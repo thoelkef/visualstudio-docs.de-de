@@ -14,11 +14,11 @@ ms.author: gregvanl
 manager: ghogen
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a5a4721eea178e4a9ab5766760ccf1405589684
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 17b3b0a107d263a213746a625ec5a65419695b4d
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="installing-the-visual-studio-sdk"></a>Installieren von Visual Studio SDK
 Das Visual Studio SDK ist ein optionales Feature in Visual Studio-Setup. Sie können das VS-SDK auch später installieren.  
@@ -35,6 +35,6 @@ Das Visual Studio SDK ist ein optionales Feature in Visual Studio-Setup. Sie kö
  ![SolutionExplorerInstall](../extensibility/media/solutionexplorerinstall.png "SolutionExplorerInstall")  
   
 ## <a name="installing-the-visual-studio-sdk-from-the-command-line"></a>Installieren von Visual Studio SDK über die Befehlszeile  
-Wie bei der ein Visual Studio-Arbeitsauslastung oder eine Komponente, können Sie das Element auch über die Befehlszeile installieren. Finden Sie unter [Befehlszeilenparameter verwenden, um Visual Studio installieren](../install/use-command-line-parameters-to-install-visual-studio.md) ausführliche Informationen zu den entsprechenden Befehlszeilenoptionen und die Arbeitslast oder Komponente-IDs bestimmen.
+Mit einem Visual Studio-Arbeitsauslastung oder einer Komponente, installieren Sie auch können die **Development für Visual Studio-Erweiterung** Arbeitslast (ID: Microsoft.VisualStudio.Workload.VisualStudioExtension) über die Befehlszeile. Finden Sie unter [Befehlszeilenparameter verwenden, um Visual Studio installieren](../install/use-command-line-parameters-to-install-visual-studio.md) ausführliche Informationen zu den entsprechenden Befehlszeilenoptionen und allgemeine Anweisungen zum Ermitteln der Arbeitsauslastung oder Komponente Bezeichner.
   
  Beachten Sie, dass Sie Visual Studio-Installationsprogramm verwenden müssen, das die installierte Version von Visual Studio entspricht. Wenn Sie Visual Studio Enterprise auf Ihrem Computer installiert haben, müssen Sie das Installationsprogramm für Visual Studio Enterprise (vs_enterprise.exe) ausführen.

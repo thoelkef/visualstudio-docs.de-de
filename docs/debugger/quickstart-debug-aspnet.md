@@ -1,7 +1,7 @@
 ---
 title: Debuggen von ASP.NET - Visual Studio | Microsoft Docs
 ms.custom: 
-ms.date: 12/06/2017
+ms.date: 03/16/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -17,19 +17,19 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - aspnet
-ms.openlocfilehash: c740265220f844b24ba9b4eeb133de185773a7a0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 0c6f3b0d074957ba8fabd93707e9a76f0dcd46e1
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="debug-aspnet-with-the-visual-studio-debugger"></a>Debuggen von ASP.NET mit Visual Studio-debugger
 
-Der Visual Studio-Debugger bietet viele leistungsstarke Funktionen zum Debuggen von apps zu erleichtern. Dieses Thema enthält eine schnelle Möglichkeit, um einige der grundlegenden Funktionen zu erfahren.
+Der Visual Studio-Debugger bietet viele leistungsstarke Funktionen zum Debuggen von apps zu erleichtern. In diesem Thema werden einige der grundlegenden Funktionen erläutert.
 
 ## <a name="create-a-new-project"></a>Erstellt ein neues Projekt 
 
-1. Wählen Sie in Visual Studio **Datei > Neues Projekt**.
+1. Klicken Sie in Visual Studio auf **Datei > Neues Projekt**.
 
 1. Klicken Sie unter **Visual C#-**, wählen Sie **Web**, und wählen Sie dann im mittleren Bereich **ASP.NET-Webanwendung für Core**.
 
@@ -41,7 +41,7 @@ Der Visual Studio-Debugger bietet viele leistungsstarke Funktionen zum Debuggen 
 
     ![Wählen Sie eine Webanwendung](../debugger/media/dbg-qs-aspnet-choose-web-app.png)
 
-    Visual Studio erstellt das Projekt.
+    Visual Studio erstellt daraufhin das Projekt.
 
 1. Klicken Sie im Projektmappen-Explorer öffnen Sie About.cshtml.cs (unter Pages/About.cshtml), und Ersetzen Sie den folgenden code
 
@@ -52,7 +52,7 @@ Der Visual Studio-Debugger bietet viele leistungsstarke Funktionen zum Debuggen 
     }
     ```
 
-    mit dem folgenden Code:
+    durch den folgenden:
 
     ```c#
     public void OnGet()
@@ -94,19 +94,19 @@ Ein *Haltepunkt* ist der code eines Markers, der angibt, wo Visual Studio die Au
     ![Treffen eines Haltepunkts](../debugger/media/dbg-qs-hit-breakpoint-aspnet.png)
 
     > [!TIP]
-    > Wenn Sie einen in einer Schleife oder Rekursion Haltepunkt oder wenn Sie sehr vielen Haltepunkten verfügen, die Sie häufig, Durchlaufen einer [bedingter Haltepunkt](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression) um sicherzustellen, dass Ihr Code angehalten wird, nur, wenn bestimmte Bedingungen erfüllt sind. Dies spart Zeit und kann auch einfacher Debuggen von Problemen, die schwer reproduzierbar sind.
+    > Wenn Sie einen in einer Schleife oder Rekursion Haltepunkt oder wenn Sie viele Haltepunkte, die Sie häufig, Durchlaufen einer [bedingter Haltepunkt](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression) um sicherzustellen, dass Ihr Code angehalten wird, nur, wenn bestimmte Bedingungen erfüllt sind. Dies spart Zeit und kann auch einfacher Debuggen von Problemen, die schwer reproduzierbar sind.
 
-## <a name="navigate-code"></a>Navigieren Sie im code
+## <a name="navigate-code"></a>Navigieren durch den Code
 
-Es gibt verschiedene Befehle zum anweisen des Debuggers zum fortfahren. Wir zeigen einen nützlichen Code Navigation-Befehl, der neu in Visual Studio 2017 ist.
+Es gibt verschiedene Befehle zum anweisen des Debuggers zum fortfahren. Wir zeigen einen nützlichen Code Navigation-Befehl, der in Visual Studio 2017 neu ist.
 
-- Während am Haltepunkt angehalten wird, zeigen Sie auf die Anweisung `return c2` bis über die grüne **ausführen, klicken Sie auf** Schaltfläche ![ausführen, klicken Sie auf](../debugger/media/dbg-tour-run-to-click.png) angezeigt wird, und drücken Sie dann die **ausführen, klicken Sie auf** Schaltfläche ".
+Während am Haltepunkt angehalten wird, zeigen Sie auf die Anweisung `return c2` bis über die grüne **ausführen, klicken Sie auf** Schaltfläche ![ausführen, klicken Sie auf](../debugger/media/dbg-tour-run-to-click.png) angezeigt wird, und drücken Sie dann die **ausführen, klicken Sie auf** Schaltfläche ".
 
-    ![Klicken Sie auf Ausführen](../debugger/media/dbg-qs-run-to-click-aspnet.png)
+![Klicken Sie auf Ausführen](../debugger/media/dbg-qs-run-to-click-aspnet.png)
 
-    Die app wird die Ausführung fortgesetzt, und hält auf die Codezeile, in dem Sie die Schaltfläche geklickt haben.
+Die app wird die Ausführung fortgesetzt, und hält auf die Codezeile, in dem Sie die Schaltfläche geklickt haben.
 
-    Allgemeine Tastenkombinationen Befehle verwendet, um den Code schrittweise durchlaufen enthalten **F10** und **F11**. Weitere ausführlichen Anweisungen finden Sie in der [Einsteigerhandbuch](../debugger/getting-started-with-the-debugger.md).
+Allgemeine Tastenkombinationen Befehle verwendet, um den Code schrittweise durchlaufen enthalten **F10** und **F11**. Weitere ausführlichen Anweisungen finden Sie in der [Einsteigerhandbuch](../debugger/getting-started-with-the-debugger.md).
 
 ## <a name="inspect-variables-in-a-datatip"></a>Prüfen Sie die Variablen in einem datatip
 
@@ -136,9 +136,7 @@ Weitere Informationen zur Verwendung von bearbeiten und fortfahren und funktions
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-- Weitere Informationen zum Debugger finden Sie unter [starten Sie den Debugger, und navigieren Sie im Code](../debugger/getting-started-with-the-debugger.md).
-- Weitere Informationen über Breakpoints finden Sie unter [Verwenden von Haltepunkten](../debugger/using-breakpoints.md).
+In diesem Lernprogramm haben Sie gelernt, starten Sie den Debugger, Code durchlaufen und Variablen überprüfen. Sie möchten eine allgemeine Beschreibung zur Debuggerfunktionen zusammen mit Links zu weiteren Informationen zu erhalten.
 
-## <a name="see-also"></a>Siehe auch  
- [Debuggen in Visual Studio](../debugger/index.md)  
- [Debugger – Featuretour](../debugger/debugger-feature-tour.md)
+> [!div class="nextstepaction"]
+> [Debugger – Featuretour](../debugger/debugger-feature-tour.md)

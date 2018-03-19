@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -12,16 +13,17 @@ helpviewer_keywords:
 - project system
 - tutorial
 ms.assetid: 882a10fa-bb1c-4b01-943a-7a3c155286dd
-caps.latest.revision: "47"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 1e0c2e41baa6f1c97a272e7c9655f4f837552cac
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- vssdk
+ms.openlocfilehash: bf0570dd6f58d6a6893be5babdcde530d3a57109
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="creating-a-basic-project-system-part-1"></a>Erstellen eine grundlegende Projektsystem, Teil 1
 In Visual Studio sind Projekte die Container, mit denen Entwickler Quellcodedateien und anderen Ressourcen zu organisieren. Projekte angezeigt werden als untergeordnete Elemente von Lösungen in der **Projektmappen-Explorer**. Projekte können Sie die zu organisieren, erstellen, Debuggen, und Bereitstellen von Quellcode und Erstellen von Verweisen auf Web-Services, Datenbanken und andere Ressourcen.  
@@ -29,12 +31,12 @@ In Visual Studio sind Projekte die Container, mit denen Entwickler Quellcodedate
  Projekte werden in Projektdateien, z. B. eine CSPROJ-Datei für ein Visual C#-Projekt definiert. Sie können Ihren eigenen Projekttyp erstellen, der Ihre eigenen Projekt-Dateierweiterung aufweist. Weitere Informationen zu Projekttypen finden Sie unter [Projekttypen](../extensibility/internals/project-types.md).  
   
 > [!NOTE]
->  Wenn Sie Visual Studio mit einem benutzerdefinierten Projekttyps erweitern müssen, es wird dringend empfohlen Nutzung der [Visual Studio-Projektsystem](https://github.com/Microsoft/VSProjectSystem) die verfügt über eine Reihe von Vorteilen, die über ein Projektsystem von Grund auf neu erstellen:  
+>  Wenn Sie Visual Studio mit einem benutzerdefinierten Projekttyps erweitern müssen, es wird dringend empfohlen Nutzung der [Visual Studio-Projektsystem](https://github.com/Microsoft/VSProjectSystem) (VSPS) die verfügt über eine Reihe von Vorteilen, die über ein Projektsystem von Grund auf neu erstellen:  
 >   
->  -   Einfacher Onboarding.  Auch eine grundlegende Projektsystem erfordert Zehntausenden von Codezeilen.  Die Kosten für das Onboarding um ein paar Mausklicks CPS Nutzung reduziert werden, bevor Sie es an Ihre Bedürfnisse anpassen möchten.  
-> -   Einfachere Wartung.  Durch Nutzung der CPS müssen Sie nur Ihre eigenen Szenarien zu verwalten.  Wir behandeln die Wartung der aller dem Projekt Systeminfrastruktur.  
+>  -  Einfacher Onboarding.  Auch eine grundlegende Projektsystem erfordert Zehntausenden von Codezeilen.  Die Kosten für das Onboarding auf ein paar Mausklicks VSPS Nutzung reduziert werden, bevor Sie ihn an Ihre Bedürfnisse anpassen möchten.  
+>  -  Einfachere Wartung.  Mittels VSPS müssen Sie nur Ihre eigenen Szenarien zu verwalten.  Wir behandeln die Wartung der aller dem Projekt Systeminfrastruktur.  
 >   
->  Wenn Sie verschiedene Versionen von Visual Studio, die älter sind als Visual Studio 2013 müssen, werden Sie nicht CPS in einer Visual Studio-Erweiterung nutzen sein.  Wenn dies der Fall ist, wird in dieser exemplarischen Vorgehensweise einen guten Ausgangspunkt für die ersten Schritte.  
+>  Wenn Sie verschiedene Versionen von Visual Studio, die älter sind als Visual Studio 2013 müssen, werden Sie nicht VSPS in einer Visual Studio-Erweiterung nutzen sein.  Wenn dies der Fall ist, wird in dieser exemplarischen Vorgehensweise einen guten Ausgangspunkt für die ersten Schritte.  
   
  Diese exemplarische Vorgehensweise veranschaulicht die einen Projekttyp zu erstellen, der die Project-Datei Name Erweiterung .myproj verfügt. In dieser exemplarischen Vorgehensweise ist aus dem vorhandenen Visual C#-Projektsystem.  
   
@@ -65,7 +67,7 @@ In Visual Studio sind Projekte die Container, mit denen Entwickler Quellcodedate
  Sie müssen auch den Quellcode für Herunterladen der [Managed Package Framework for Projects](http://mpfproj12.codeplex.com/). Extrahieren Sie die Datei an einem Speicherort, der für die Lösung zugänglich ist, die Sie erstellen möchten.  
   
 ## <a name="creating-a-basic-project-type"></a>Erstellen einen grundlegenden Projekttyp  
- Erstellen Sie ein C#-VSIX-Projekt namens **SimpleProject**. (**Datei "," Neu "," Projekt** und dann **C#-Erweiterbarkeit von Visual Studio-Paket**). Fügen Sie eine Visual Studio-Paket Projektelementvorlage hinzu (klicken Sie im Projektmappen-Explorer mit der rechten Maustaste des Projektknotens, und wählen **hinzufügen / neues Element**, dann wechseln Sie zu **Erweiterbarkeit / Visual Studio-Paket**). Nennen Sie die Datei **SimpleProjectPackage**.  
+ Erstellen Sie ein C#-VSIX-Projekt namens **SimpleProject**. (**Datei "," Neu "," Projekt** und dann **VSIX-Projekt in Visual C#-, Erweiterbarkeit,**). Fügen Sie eine Visual Studio-Paket Projektelementvorlage hinzu (klicken Sie im Projektmappen-Explorer mit der rechten Maustaste des Projektknotens, und wählen **hinzufügen / neues Element**, dann wechseln Sie zu **Erweiterbarkeit / Visual Studio-Paket**). Nennen Sie die Datei **SimpleProjectPackage**.  
   
 ## <a name="creating-a-basic-project-template"></a>Erstellen einer Basic-Projektvorlage  
  Jetzt können Sie diese grundlegende VSPackage zur Implementierung der neuen .myproj Projekttyp ändern. Um ein Projekt erstellen, die auf den Projekttyp .myproj basiert, muss Visual Studio wissen, welche Dateien, Ressourcen und Verweise auf dem neuen Projekt hinzugefügt. Um diese Informationen bereitzustellen, fügen Sie Projektdateien in einem Projektordner für die Vorlage aus. Wenn ein Benutzer das .myproj-Projekt zum Erstellen eines Projekts verwendet wird, werden die Dateien in das neue Projekt kopiert.  
@@ -74,7 +76,7 @@ In Visual Studio sind Projekte die Container, mit denen Entwickler Quellcodedate
   
 1.  Das Projekt ein, unter der anderen drei Ordner hinzugefügt: **Templates\Projects\SimpleProject**. (In **Projektmappen-Explorer**, mit der rechten Maustaste die **SimpleProject** Projektknoten, zeigen Sie auf **hinzufügen**, und klicken Sie dann auf **neuer Ordner**. Geben Sie dem Ordner den Namen `Templates`anmelden. In der **Vorlagen** Ordner, fügen Sie einen Ordner mit dem Namen `Projects`. In der **Projekte** Ordner, fügen Sie einen Ordner mit dem Namen `SimpleProject`.)  
   
-2.  In der **Projects\SimpleProject** Ordner hinzuzufügen, eine Symboldatei mit dem Namen `SimpleProject.ico`. Beim Klicken auf **hinzufügen**, Symbol-Editor wird geöffnet.  
+2.  In der **Templates\Projects\SimpleProject** Ordner, fügen Sie eine Bitmap-Bild-Datei für die Verwendung als Symbol mit dem Namen `SimpleProject.ico`. Beim Klicken auf **hinzufügen**, Symbol-Editor wird geöffnet.  
   
 3.  Stellen Sie das Symbol unterschiedliche. Dieses Symbol wird angezeigt, der **neues Projekt** Dialogfeld weiter unten in dieser exemplarischen Vorgehensweise.  
   
@@ -82,27 +84,27 @@ In Visual Studio sind Projekte die Container, mit denen Entwickler Quellcodedate
   
 4.  Speichern Sie das Symbol "", und schließen Sie den Symbol-Editor.  
   
-5.  In der **Projects\SimpleProject** Ordner Hinzufügen einer **Klasse** Bezeichnung "Item" `Program.cs`.  
+5.  In der **Templates\Projects\SimpleProject** Ordner Hinzufügen einer **Klasse** Bezeichnung "Item" `Program.cs`.  
   
 6.  Ersetzen Sie den vorhandenen Code mit den folgenden Zeilen ein.  
   
-    ```csharp  
-    using System;  
-    using System.Collections.Generic;  
-    using System.Text;  
+    ```csharp
+    using System;
+    using System.Collections.Generic;
+    using System.Text;
   
-    namespace $nameSpace$  
+    namespace $nameSpace$
     {  
-        public class $className$  
-        {  
-            static void Main(string[] args)  
-            {  
-                Console.WriteLine("Hello VSX!!!");  
-                Console.ReadKey();  
-            }  
-        }  
-    }  
-    ```  
+        public class $className$
+        {
+            static void Main(string[] args)
+            {
+                Console.WriteLine("Hello VSX!!!");
+                Console.ReadKey();
+            }
+        }
+    }
+    ```
   
     > [!IMPORTANT]
     >  Dies ist nicht die endgültige Form des Codes "Program.cs". die Austausch-Parameter werden in einem späteren Schritt behandelt werden. Möglicherweise Kompilierungsfehler, jedoch so lange, wie der Datei **BuildAction** ist **Content**, Sie sollten Lage zu erstellen und führen Sie das Projekt wie gewohnt.  
@@ -162,61 +164,49 @@ In Visual Studio sind Projekte die Container, mit denen Entwickler Quellcodedate
   
  Diese Projektvorlage beschreibt eine grundlegende Visual C#-Projekt, die eine Debug-Konfiguration und einer Releasekonfiguration aufweist. Das Projekt enthält zwei Quelldateien, Datei "AssemblyInfo.cs" und "Program.cs" und mehrere Assembly verweisen. Wenn ein Projekt aus der Vorlage erstellt wird, wird der ProjectGuid Wert automatisch durch eine neue GUID ersetzt.  
   
- In **Projektmappen-Explorer**, dem erweiterten **Vorlagen** Ordner sollte wie folgt aussehen:  
-  
- Vorlagen  
-  
- Projekte  
-  
- SimpleProject  
-  
- AssemblyInfo.cs  
-  
- Program.cs  
-  
- SimpleProject.ico  
-  
- SimpleProject.myproj  
-  
+ In **Projektmappen-Explorer**, dem erweiterten **Vorlagen** Ordner sollte wie folgt aussehen:
+
+```
+Templates  
+   Projects  
+      SimpleProject  
+         AssemblyInfo.cs  
+         Program.cs  
+         SimpleProject.ico  
+         SimpleProject.myproj  
+```
+
 ## <a name="creating-a-basic-project-factory"></a>Erstellen eine Factory für Basic-Projekts  
  Sie müssen Visual Studio den Speicherort des Projektordners Vorlage mitteilen. Fügen Sie ein Attribut zu diesem Zweck die VSPackage-Klasse hinzu, die die Projekt-Factory implementiert, sodass der Speicherort für die Vorlage in der systemregistrierung geschrieben wird, wenn das VSPackage erstellt wird. Zunächst erstellen eine einfaches Projekt-Factory, die von einem Projekt Factory GUID identifiziert wird. Verwenden der <xref:Microsoft.VisualStudio.Shell.ProvideProjectFactoryAttribute> Attribut zur Verbindung mit der Klasse SimpleProjectPackage der Projekt-Factory.  
   
 #### <a name="to-create-a-basic-project-factory"></a>Zum Erstellen einer Factory basic-Projekts  
   
-1.  Öffnen Sie SimpleProjectPackageGuids.cs im Code-Editor.  
+1.  Erstellen von GUIDs für Ihr Projekt Factory (auf der **Tools** Menü klicken Sie auf **GUID erstellen**), oder verwenden Sie das Schema im folgenden Beispiel. Fügen Sie die GUIDs der SimpleProjectPackage-Klasse in der Nähe der Abschnitt mit den bereits definierten `PackageGuidString`. Die GUIDs müssen im GUID-Format und in Form einer Zeichenfolge sein. Der resultierende Code sollte im folgende Beispiel ähneln.  
   
-2.  Erstellen von GUIDs für Ihr Projekt Factory (auf der **Tools** Menü klicken Sie auf **GUID erstellen**), oder verwenden Sie das Schema im folgenden Beispiel. Die GUIDs der SimpleProjectPackageGuids-Klasse hinzufügen. Die GUIDs müssen im GUID-Format und in Form einer Zeichenfolge sein. Der resultierende Code sollte im folgende Beispiel ähneln.  
-  
-    ```  
-    static class SimpleProjectPackageGuids  
-    {  
-        public const string guidSimpleProjectPkgString =   
-            "96bf4c26-d94e-43bf-a56a-f8500b52bfad";  
-        public const string guidSimpleProjectCmdSetString =   
-            "72c23e1d-f389-410a-b5f1-c938303f1391";  
-        public const string guidSimpleProjectFactoryString =   
-            "471EC4BB-E47E-4229-A789-D1F5F83B52D4";  
-  
-        public static readonly Guid guidSimpleProjectCmdSet =   
-            new Guid(guidSimpleProjectCmdSetString);  
-        public static readonly Guid guidSimpleProjectFactory =   
-            new Guid(guidSimpleProjectFactoryString);  
-    }  
+    ```csharp  
+        public sealed class SimpleProjectPackage : Package
+        {  
+            ...
+            public const string SimpleProjectPkgString = "96bf4c26-d94e-43bf-a56a-f8500b52bfad";  
+            public const string SimpleProjectFactoryString = "471EC4BB-E47E-4229-A789-D1F5F83B52D4";  
+    
+            public static readonly Guid guidSimpleProjectFactory = new Guid(SimpleProjectFactoryString);  
+        }  
     ```  
   
 3.  Fügen Sie eine Klasse, die oben **SimpleProject** Ordner mit dem Namen `SimpleProjectFactory.cs`.  
   
 4.  Fügen Sie die folgenden using-Anweisungen:  
   
-    ```  
+    ```csharp  
     using System.Runtime.InteropServices;  
     using Microsoft.VisualStudio.Shell;  
     ```  
   
 5.  Ein Guid-Attribut der SimpleProjectFactory-Klasse hinzufügen. Der Wert des Attributs ist der GUID der neuen Projekt Factory.  
   
-    ```  
-    [Guid(SimpleProjectGuids.guidSimpleProjectFactoryString)]  
+    ```csharp  
+    [Guid(SimpleProjectPackage.SimpleProjectFactoryString)]  
     class SimpleProjectFactory  
     {  
     }  
@@ -232,7 +222,7 @@ In Visual Studio sind Projekte die Container, mit denen Entwickler Quellcodedate
     [ProvideProjectFactory(    typeof(SimpleProjectFactory),     "Simple Project",   
         "Simple Project Files (*.myproj);*.myproj", "myproj", "myproj",   
         @"Templates\Projects\SimpleProject",     LanguageVsTemplate = "SimpleProject")]  
-    [Guid(SimpleProjectGuids.guidSimpleProjectPkgString)]  
+    [Guid(SimpleProjectPackage.PackageGuidString)]  
     public sealed class SimpleProjectPackage : Package  
     ```  
   
@@ -403,7 +393,7 @@ In Visual Studio sind Projekte die Container, mit denen Entwickler Quellcodedate
             }  
             public override Guid ProjectGuid  
             {  
-                get { return SimpleProjectGuids.guidSimpleProjectFactory; }  
+                get { return SimpleProjectPackage.guidSimpleProjectFactory; }  
             }  
             public override string ProjectType  
             {  
@@ -538,7 +528,7 @@ In Visual Studio sind Projekte die Container, mit denen Entwickler Quellcodedate
   
 -   SimpleProject.Resources.SimpleProjectNode.bmp  
   
- Während der Erstellung der Instanz die `ProjectNode` Basisklasse lädt Resources.imagelis.bmp, werden Sie in der eingebetteten häufig verwendete 16 x 16-Bitmaps aus Resources\imagelis.bmp. Diese Liste mithilfe einer Bitmap zur Verfügung gestellt wird `SimpleProjectNode` als ImageHandler.ImageList. `SimpleProjectNode`Fügt das Projekt Knoten mithilfe einer Bitmap zur Liste. Der Offset der Bitmap für die Projekt-Knoten in der Bildliste wird für die spätere Verwendung als Wert des öffentlichen zwischengespeichert `ImageIndex` Eigenschaft. Visual Studio verwendet diese Eigenschaft, um zu bestimmen, welche Bitmuster, das als das Symbol "Knoten" angezeigt.  
+ Während der Erstellung der Instanz die `ProjectNode` Basisklasse lädt Resources.imagelis.bmp, werden Sie in der eingebetteten häufig verwendete 16 x 16-Bitmaps aus Resources\imagelis.bmp. Diese Liste mithilfe einer Bitmap zur Verfügung gestellt wird `SimpleProjectNode` als ImageHandler.ImageList. `SimpleProjectNode` Fügt das Projekt Knoten mithilfe einer Bitmap zur Liste. Der Offset der Bitmap für die Projekt-Knoten in der Bildliste wird für die spätere Verwendung als Wert des öffentlichen zwischengespeichert `ImageIndex` Eigenschaft. Visual Studio verwendet diese Eigenschaft, um zu bestimmen, welche Bitmuster, das als das Symbol "Knoten" angezeigt.  
   
 ## <a name="testing-the-custom-project-node-icon"></a>Testen das Symbol "Benutzerdefinierte Projektvorlagen Knoten"  
  Testen Sie Ihr Projekt-Factory, um festzustellen, ob es eine Projekthierarchie erstellt, die Ihre benutzerdefinierte Knoten Projektsymbol verfügt.  
@@ -619,9 +609,9 @@ In Visual Studio sind Projekte die Container, mit denen Entwickler Quellcodedate
   
 3.  Überprüfen Sie die Werte für die `nameSpace` und `className` Parameter.  
   
-    -   `nameSpace`erhält den Wert der \<RootNamespace >-Element in der Projektdatei Vorlage \Templates\Projects\SimpleProject\SimpleProject.myproj. In diesem Fall ist der Wert "MyRootNamespace".  
+    -   `nameSpace` erhält den Wert der \<RootNamespace >-Element in der Projektdatei Vorlage \Templates\Projects\SimpleProject\SimpleProject.myproj. In diesem Fall ist der Wert "MyRootNamespace".  
   
-    -   `className`der Wert, der den Quelldateinamen der Klasse, ohne die Dateinamenerweiterung erhält. In diesem Fall wird die erste Datei in den Zielordner kopiert werden soll, AssemblyInfo.cs; Daher ist der Wert der Klassenname "AssemblyInfo".  
+    -   `className` der Wert, der den Quelldateinamen der Klasse, ohne die Dateinamenerweiterung erhält. In diesem Fall wird die erste Datei in den Zielordner kopiert werden soll, AssemblyInfo.cs; Daher ist der Wert der Klassenname "AssemblyInfo".  
   
 4.  Entfernen Sie den Breakpoint, und drücken Sie F5, um die Ausführung fortzusetzen.  
   

@@ -1,7 +1,7 @@
 ---
 title: Mit verwaltetem Code mithilfe von Visual Studio-Debugger Debuggen | Microsoft Docs
 ms.custom: 
-ms.date: 12/06/2017
+ms.date: 03/18/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -17,19 +17,19 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - dotnet
-ms.openlocfilehash: aa992c0cdcf5c50208aacc8e16d954f4ee35da13
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 212da1e214e6157f3e072df6466436883eced8f6
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="debug-with-managed-code-using-the-visual-studio-debugger"></a>Debuggen Sie mit verwaltetem Code mithilfe von Visual Studio-debugger
 
-Der Visual Studio-Debugger bietet viele leistungsstarke Funktionen zum Debuggen von apps zu erleichtern. Dieses Thema enthält eine schnelle Möglichkeit, um einige der grundlegenden Funktionen zu erfahren.
+Der Visual Studio-Debugger bietet viele leistungsstarke Funktionen zum Debuggen von apps zu erleichtern. In diesem Thema werden einige der grundlegenden Funktionen erläutert.
 
 ## <a name="create-a-new-project"></a>Erstellt ein neues Projekt 
 
-1. Wählen Sie in Visual Studio **Datei > Neues Projekt**.
+1. Klicken Sie in Visual Studio auf **Datei > Neues Projekt**.
 
 2. Klicken Sie unter **Visual C#-** oder **Visual Basic**, wählen Sie **.NET Core**, und wählen Sie dann im mittleren Bereich **Konsolen-App (.NET Core)**.
 
@@ -37,7 +37,7 @@ Der Visual Studio-Debugger bietet viele leistungsstarke Funktionen zum Debuggen 
 
 3. Geben Sie einen Namen wie **MyDbgApp** , und klicken Sie auf **OK**.
 
-    Visual Studio erstellt das Projekt.
+    Visual Studio erstellt daraufhin das Projekt.
 
 4. Ersetzen Sie den folgenden Code in "Program.cs" oder "Module1.vb"
 
@@ -57,7 +57,7 @@ Der Visual Studio-Debugger bietet viele leistungsstarke Funktionen zum Debuggen 
     End Module
     ```
 
-    mit dem folgenden Code:
+    durch den folgenden:
 
     ```c#
     class Program
@@ -125,7 +125,7 @@ Der Visual Studio-Debugger bietet viele leistungsstarke Funktionen zum Debuggen 
     ```
 
     > [!NOTE]
-    > In Visual Basic sicherzustellen, dass das Startobjekt festgelegt ist, um `Sub Main` (**Eigenschaften > Anwendung > Startobjekt**).
+    > Stellen Sie in Visual Basic sicher, dass das Startobjekt auf `Sub Main` festgelegt ist (**Eigenschaften > Anwendung > Startobjekt**).
 
 ## <a name="set-a-breakpoint"></a>Haltepunkt festlegen
 
@@ -139,22 +139,22 @@ Ein *Haltepunkt* ist der code eines Markers, der angibt, wo Visual Studio die Au
 
     ![Einen Haltepunkt erreicht](../debugger/media/dbg-qs-hit-breakpoint-csharp.png "eines Haltepunkts")
 
-    Der Debugger hält, wo Sie den Haltepunkt festlegen. Die Anweisung, in denen die Debugger und die app die Ausführung angehalten wird, wird durch den gelben Pfeil angegeben. Die Zeile mit der `doWork` Funktionsaufruf noch nicht ausgeführt.
+    Der Debugger hält, wo Sie den Haltepunkt festlegen. Die Anweisung, in denen die Debugger und die app die Ausführung angehalten wird, wird durch den gelben Pfeil angegeben. Die Zeile mit der `doWork` Funktionsaufruf wurde noch nicht noch ausgeführt.
 
     > [!TIP]
-    > Wenn Sie einen in einer Schleife oder Rekursion Haltepunkt oder wenn Sie sehr vielen Haltepunkten verfügen, die Sie häufig, Durchlaufen einer [bedingter Haltepunkt](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression) um sicherzustellen, dass Ihr Code angehalten wird, nur, wenn bestimmte Bedingungen erfüllt sind. Dies spart Zeit und kann auch einfacher Debuggen von Problemen, die schwer reproduzierbar sind.
+    > Wenn Sie einen in einer Schleife oder Rekursion Haltepunkt oder wenn Sie viele Haltepunkte, die Sie häufig, Durchlaufen einer [bedingter Haltepunkt](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression) um sicherzustellen, dass Ihr Code angehalten wird, nur, wenn bestimmte Bedingungen erfüllt sind. Ein bedingter Haltepunkt kann Zeit sparen, und es kann auch einfacher Debuggen von Problemen, die schwer reproduzierbar sind.
 
-## <a name="navigate-code"></a>Navigieren Sie im code
+## <a name="navigate-code"></a>Navigieren durch den Code
 
-Es gibt verschiedene Befehle zum anweisen des Debuggers zum fortfahren. Wir zeigen einen nützlichen Code Navigation-Befehl, der neu in Visual Studio 2017 ist.
+Es gibt verschiedene Befehle zum anweisen des Debuggers zum fortfahren. Wir zeigen einen nützlichen Code Navigation-Befehl, der in Visual Studio 2017 neu ist.
 
-- Während am Haltepunkt angehalten wird, zeigen Sie auf die Anweisung `c1.AddLast(20)` bis über die grüne **ausführen, klicken Sie auf** Schaltfläche ![ausführen, klicken Sie auf](../debugger/media/dbg-tour-run-to-click.png "RunToClick") angezeigt wird, und drücken Sie dann die **Ausführen, klicken Sie auf** Schaltfläche.
+Während am Haltepunkt angehalten wird, zeigen Sie auf die Anweisung `c1.AddLast(20)` bis über die grüne **ausführen, klicken Sie auf** Schaltfläche ![ausführen, klicken Sie auf](../debugger/media/dbg-tour-run-to-click.png "RunToClick") angezeigt wird, und drücken Sie dann die **Ausführen, klicken Sie auf** Schaltfläche.
 
-    ![Führen Sie auf](../debugger/media/dbg-qs-run-to-click-csharp.png "ausführen, klicken Sie auf")
+![Führen Sie auf](../debugger/media/dbg-qs-run-to-click-csharp.png "ausführen, klicken Sie auf")
 
-    Die Anwendung setzt die Ausführung, Aufrufen von `doWork`, und hält Sie auf die Codezeile, in dem Sie die Schaltfläche geklickt haben.
+Die Anwendung setzt die Ausführung, Aufrufen von `doWork`, und hält Sie auf die Codezeile, in dem Sie die Schaltfläche geklickt haben.
 
-    Allgemeine Tastenkombinationen Befehle verwendet, um den Code schrittweise durchlaufen enthalten **F10** und **F11**. Weitere ausführlichen Anweisungen finden Sie in der [Einsteigerhandbuch](../debugger/getting-started-with-the-debugger.md).
+Allgemeine Tastenkombinationen Befehle verwendet, um den Code schrittweise durchlaufen enthalten **F10** und **F11**. Weitere ausführlichen Anweisungen finden Sie in der [Einsteigerhandbuch](../debugger/getting-started-with-the-debugger.md).
 
 ## <a name="inspect-variables-in-a-datatip"></a>Prüfen Sie die Variablen in einem datatip
 
@@ -184,9 +184,7 @@ Weitere Informationen zur Verwendung von bearbeiten und fortfahren und funktions
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-- Weitere Informationen zum Debugger finden Sie unter [starten Sie den Debugger, und navigieren Sie im Code](../debugger/getting-started-with-the-debugger.md).
-- Weitere Informationen über Breakpoints finden Sie unter [Verwenden von Haltepunkten](../debugger/using-breakpoints.md).
+In diesem Lernprogramm haben Sie gelernt, starten Sie den Debugger, Code durchlaufen und Variablen überprüfen. Sie möchten eine allgemeine Beschreibung zur Debuggerfunktionen zusammen mit Links zu weiteren Informationen zu erhalten.
 
-## <a name="see-also"></a>Siehe auch  
- [Debuggen in Visual Studio](../debugger/index.md)  
- [Debugger – Featuretour](../debugger/debugger-feature-tour.md)
+> [!div class="nextstepaction"]
+> [Debugger – Featuretour](../debugger/debugger-feature-tour.md)

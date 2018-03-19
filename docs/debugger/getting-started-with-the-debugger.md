@@ -1,24 +1,28 @@
 ---
-title: Weitere Informationen zum Debuggen mit Visual Studio | Microsoft Docs
-ms.custom: H1HackMay2017
-ms.date: 10/11/2017
+title: Weitere Informationen zum Debuggen - Visual Studio | Microsoft Docs
+ms.description: Learn how to start the Visual Studio debugger, step through code, and inspect data
+ms.custom: mvc
+ms.date: 03/16/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: get-started-article
-helpviewer_keywords: debugger
+helpviewer_keywords:
+- debugger
 ms.assetid: 62734c0d-a75a-4576-8f73-0e97c19280e1
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: a09e0c54f1d7f0e49f08ddf65afbeb030a7087f1
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+ms.workload:
+- multiple
+ms.openlocfilehash: e0686a4138fc2489c8a63b207e98cf7780477782
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="learn-to-debug-using-visual-studio"></a>Weitere Informationen Sie zum Debuggen mit Visual Studio
 
@@ -31,6 +35,15 @@ Sie können entweder entlang gelesen, um die Funktionen des Debuggers finden Sie
 |  ![Kamerasymbol für video](../install/media/video-icon.png "Video ansehen")  |    [In diesem Video](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugger-Feature-tour-of-Visual-studio-2017-sqwiwLD6D_1111787171) Debuggen, die ähnliche Schritte anzeigt. |
 
 Obwohl die Demo-app c# ist, gelten die Funktionen für C++, Visual Basic, JavaScript und anderen Sprachen (falls nicht anders) von Visual Studio unterstützt.
+
+In diesem Lernprogramm führen Sie folgende Aktionen ausführen:
+
+> [!div class="checklist"]
+> * Erreichen von Haltepunkten, und starten Sie den Debugger.
+> * Erfahren Sie Befehle aus, um Code im Debugger schrittweise durchlaufen
+> * Überprüfen Sie die Variablen in den Datentipps und Debugger-Fenster
+> * Die Aufrufliste überprüfen
+> * Verwenden des Ausnahmen-Hilfe
 
 ## <a name="start-the-debugger"></a>Starten Sie den Debugger an!
 
@@ -79,11 +92,11 @@ Zum Debuggen, müssen Sie Ihre app mit dem an den app-Prozess angefügten Debugg
 
 ## <a name="restart-your-app-quickly"></a>Die app schnell neu startet
 
-1. Klicken Sie auf die **Neustart** ![App starten](../debugger/media/dbg-tour-restart.png "RestartApp") auf der Debug-Symbolleiste (STRG + UMSCHALT + F5).
+Klicken Sie auf die **Neustart** ![App starten](../debugger/media/dbg-tour-restart.png "RestartApp") auf der Debug-Symbolleiste (STRG + UMSCHALT + F5).
 
-    Wenn Sie drücken **Neustart**, es sparen Sie Zeit und Beenden der app und der Debugger neu gestartet. Der Debugger hält am ersten Haltepunkt, der erreicht wird, indem Sie Code ausführen.
+Wenn Sie drücken **Neustart**, es sparen Sie Zeit und Beenden der app und der Debugger neu gestartet. Der Debugger hält am ersten Haltepunkt, der erreicht wird, indem Sie Code ausführen.
 
-    Der Debugger hält wieder am Haltepunkt, in Festlegen der `MainWindow` Konstruktor.
+Der Debugger hält wieder am Haltepunkt, in Festlegen der `MainWindow` Konstruktor.
 
 ## <a name="navigate-code-in-the-debugger-using-step-commands"></a>Navigieren Sie im Code im Debugger mit Schritt-Befehlen
 
@@ -145,20 +158,20 @@ Meistens wir Tastenkombinationen verwenden, die hier ist eine gute Möglichkeit,
 
 ## <a name="examine-the-call-stack"></a>Die Aufrufliste überprüfen
 
-- Bei angehaltener in der `Update` -Methode, klicken Sie auf die **Aufrufliste** Fenster, das standardmäßig in der unteren rechten Bereich geöffnet ist.
+Bei angehaltener in der `Update` -Methode, klicken Sie auf die **Aufrufliste** Fenster, das standardmäßig in der unteren rechten Bereich geöffnet ist.
 
-     ![Die Aufrufliste überprüfen](../debugger/media/dbg-tour-call-stack.png "ExamineCallStack")
+![Die Aufrufliste überprüfen](../debugger/media/dbg-tour-call-stack.png "ExamineCallStack")
 
-    Die **Aufrufliste** Fenster zeigt die Reihenfolge, in der Funktionen und Methoden werden aufgerufen. Die oberste Zeile zeigt die aktuelle Funktion (die `Update` Methode in der app Tour). Die zweite Zeile zeigt, dass `Update` aufgerufen wurde, aus der `Path.set` -Eigenschaft, und So weiter.
+Die **Aufrufliste** Fenster zeigt die Reihenfolge, in der Funktionen und Methoden werden aufgerufen. Die oberste Zeile zeigt die aktuelle Funktion (die `Update` Methode in der app Tour). Die zweite Zeile zeigt, dass `Update` aufgerufen wurde, aus der `Path.set` -Eigenschaft, und So weiter.
 
-    >  [!NOTE]
-    > Die **Aufrufliste** Fenster ähnelt der Debug-Perspektive in einigen IDEs wie Eclipse.
+>  [!NOTE]
+> Die **Aufrufliste** Fenster ähnelt der Debug-Perspektive in einigen IDEs wie Eclipse.
 
-    Die Aufrufliste ist eine gute Möglichkeit, untersuchen und Verstehen der Ausführungsfluss einer app.
+Die Aufrufliste ist eine gute Möglichkeit, untersuchen und Verstehen der Ausführungsfluss einer app.
 
-    Doppelklicken Sie auf eine Codezeile wechseln betrachten, Quellcode und ändert, die auch den aktuellen Bereich, der vom Debugger geprüft wird. Den Debugger weitergeführt diese Aktion nicht.
+Doppelklicken Sie auf eine Codezeile wechseln betrachten, Quellcode und ändert, die auch den aktuellen Bereich, der vom Debugger geprüft wird. Den Debugger weitergeführt diese Aktion nicht.
 
-    Sie können auch Kontextmenüs aus der **Aufrufliste** Fenster aus, um andere Aufgaben ausführen. Sie können z. B. Legen Sie Haltepunkte in der angegebenen Funktionen, kann den Debugger mit **Ausführen bis Cursor**, und wechseln Sie Quellcode zu untersuchen. Weitere Informationen finden Sie unter [Vorgehensweise: Untersuchen der Aufrufliste](../debugger/how-to-use-the-call-stack-window.md).
+Sie können auch Kontextmenüs aus der **Aufrufliste** Fenster aus, um andere Aufgaben ausführen. Sie können z. B. Legen Sie Haltepunkte in der angegebenen Funktionen, kann den Debugger mit **Ausführen bis Cursor**, und wechseln Sie Quellcode zu untersuchen. Weitere Informationen finden Sie unter [Vorgehensweise: Untersuchen der Aufrufliste](../debugger/how-to-use-the-call-stack-window.md).
 
 ## <a name="step-out"></a>Ausführen bis Rücksprung
 
@@ -280,7 +293,9 @@ Angenommen, Sie haben überprüft die `Update` Methode in Data.cs, und Sie möch
 
 Weitere Informationen zu den Funktionen des Debuggers finden Sie unter [Debuggerdatentipps und Tricks](../debugger/debugger-tips-and-tricks.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="next-steps"></a>Nächste Schritte
 
-[Debuggen in Visual Studio](../debugger/index.md)  
-[Debugger – Featuretour](../debugger/debugger-feature-tour.md)
+In diesem Lernprogramm haben Sie gelernt, starten Sie den Debugger, Code durchlaufen und Variablen überprüfen. Sie möchten eine allgemeine Beschreibung zur Debuggerfunktionen zusammen mit Links zu weiteren Informationen zu erhalten.
+
+> [!div class="nextstepaction"]
+> [Debugger – Featuretour](../debugger/debugger-feature-tour.md)
