@@ -57,7 +57,7 @@ ms.lasthandoff: 01/10/2018
 >  Die Office-Entwicklungstools in Visual Studio unterstützen keine freigegebenen Arbeitsmappen.  
   
 ## <a name="understanding-workbook-host-items-in-vsto-add-in-projects"></a>Grundlegendes zu Arbeitsmappen-Hostelementen in VSTO-Add-In-Projekten  
- In VSTO-Add-In-Projekten können Sie für jede Arbeitsmappe, die in Excel geöffnet ist, zur Laufzeit ein <xref:Microsoft.Office.Tools.Excel.Workbook> -Hostelement generieren. Zum Generieren einer <xref:Microsoft.Office.Tools.Excel.Workbook> Hostelement, verwenden Sie die GetVstoObject-Methode. Weitere Informationen finden Sie unter [Extending Word Documents and Excel Workbooks in VSTO Add-ins at Run Time](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
+ In VSTO-Add-In-Projekten können Sie für jede Arbeitsmappe, die in Excel geöffnet ist, zur Laufzeit ein <xref:Microsoft.Office.Tools.Excel.Workbook> -Hostelement generieren. Zum Generieren einer <xref:Microsoft.Office.Tools.Excel.Workbook> Hostelement, verwenden Sie die GetVstoObject-Methode. Weitere Informationen finden Sie unter [Erweitern von Word-Dokumenten und Excel-Arbeitsmappen in VSTO-Add-Ins zur Laufzeit](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
   
 ## <a name="see-also"></a>Siehe auch  
  [Office-Entwicklungsbeispiele und exemplarische Vorgehensweisen](../vsto/office-development-samples-and-walkthroughs.md)   
