@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -16,7 +17,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: 059d259b669e63c26759782010be7ff78691ffc3
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -45,7 +47,7 @@ ms.lasthandoff: 01/10/2018
  Die Basisklassen sind nicht Teil der verteilbaren [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] . Stattdessen werden sie in Hilfsprogrammassemblys definiert, die in Visual Studio enthalten sind. Diese Assemblys werden beim Erstellen von Office-Projekten in den Ausgabeordner kopiert und müssen mit der Lösung bereitgestellt werden. Weitere Informationen zu den Hilfsprogrammassemblys finden Sie unter [Assemblies in the Visual Studio Tools for Office Runtime](../vsto/assemblies-in-the-visual-studio-tools-for-office-runtime.md).  
   
 ## <a name="breaking-changes-in-office-projects-that-are-retargeted-to-the-net-framework-4"></a>Unterbrechende Änderungen in Office-Projekten, für die .NET Framework 4 als Zielversion neu zugewiesen wird  
- In der folgenden Tabelle sind die wichtigsten unterbrechenden Änderungen für Office-Projekte aufgeführt, denen [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder höher als Zielversion neu zugewiesen wird. Weitere Details finden Sie unter [Migrating Office Solutions to the .NET Framework 4 or later](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md).  
+ In der folgenden Tabelle sind die wichtigsten unterbrechenden Änderungen für Office-Projekte aufgeführt, denen [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder höher als Zielversion neu zugewiesen wird. Weitere Informationen finden Sie unter [Migrieren von Office-Projektmappen zu .NET Framework 4 oder höher](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md).  
   
 |Unterbrechende Änderung|Auswirkung|  
 |---------------------|-----------------|  
@@ -60,7 +62,7 @@ ms.lasthandoff: 01/10/2018
 |Hostelementklassen, wie z. B. `ThisWorkbook`, `Sheet`  *n* , `ThisDocument`, und `ThisAddIn`, nicht mehr bieten eine Dispose-Methode, die Sie überschreiben können.|Müssen Sie keinen Code in der Überschreibung der Dispose-Methode auf Verschieben der Shutdown-Ereignishandler in der Hostelementklasse, z. B. `ThisAddIn_Shutdown`, und die Außerkraftsetzung der Dispose-Methode aus der Hostelementklasse entfernen.|  
   
 ## <a name="see-also"></a>Siehe auch  
- [Migrating Office Solutions to the .NET Framework 4 or later](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)   
+ [Migrieren von Office-Projektmappen zu .NET Framework 4 oder höher](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)   
  [Neuigkeiten in Office-Entwicklung](http://msdn.microsoft.com/en-us/bf054af2-c896-4723-aa15-6381145b14bb)   
  [Übersicht über die Visual Studio-Tools für Office-Laufzeit](../vsto/visual-studio-tools-for-office-runtime-overview.md)  
   
