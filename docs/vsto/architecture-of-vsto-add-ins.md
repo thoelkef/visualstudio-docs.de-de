@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -19,7 +20,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: a8abb77978731a9fa5cd43acdcb4928944c605b1
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -96,7 +98,7 @@ ms.lasthandoff: 01/10/2018
   
 9. Die [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] ruft die <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> -Methode in Ihrem VSTO-Add-In auf, wenn Sie sie außer Kraft gesetzt haben.  
   
-     Sie können diese Methode optional außer Kraft setzen, um in Ihrem VSTO-Add-In ein Objekt für andere Microsoft Office-Projektmappen verfügbar zu machen. Weitere Informationen finden Sie unter [Calling Code in VSTO Add-ins from Other Office Solutions](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md).  
+     Sie können diese Methode optional außer Kraft setzen, um in Ihrem VSTO-Add-In ein Objekt für andere Microsoft Office-Projektmappen verfügbar zu machen. Weitere Informationen finden Sie unter [Aufrufen von Code in VSTO-Add-Ins aus anderen Office-Projektmappen](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md).  
   
 10. Die [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] ruft die <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> -Methode in Ihrem VSTO-Add-In auf, wenn Sie sie außer Kraft gesetzt haben.  
   

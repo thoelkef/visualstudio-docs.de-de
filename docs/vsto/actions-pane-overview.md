@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -18,7 +19,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: 0e3fb356c00b3e9943ba8aff696283d4c5339e18
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -30,7 +32,7 @@ ms.lasthandoff: 01/10/2018
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
- Sie können einen Aktionsbereich nur in einer Anpassung auf Dokumentebene für Word oder Excel erstellen. In einem VSTO-Add-In können Sie keinen Aktionsbereich erstellen. Weitere Informationen finden Sie unter [Features Available by Office Application and Project Type](../vsto/features-available-by-office-application-and-project-type.md).  
+ Sie können einen Aktionsbereich nur in einer Anpassung auf Dokumentebene für Word oder Excel erstellen. In einem VSTO-Add-In können Sie keinen Aktionsbereich erstellen. Weitere Informationen finden Sie unter [Verfügbare Funktionen nach Office-Anwendung und Projekttyp](../vsto/features-available-by-office-application-and-project-type.md).  
   
 > [!NOTE]  
 >  Der Aktionsbereich unterscheidet sich von benutzerdefinierten Aufgabenbereichen. Benutzerdefinierte Aufgabenbereiche sind der Anwendung und keinem bestimmten Dokument zugeordnet. Sie können benutzerdefinierte Aufgabenbereiche in VSTO-Add-Ins für einige Microsoft Office-Anwendungen erstellen. Weitere Informationen finden Sie unter [von benutzerdefinierten Aufgabenbereichen](../vsto/custom-task-panes.md).  
