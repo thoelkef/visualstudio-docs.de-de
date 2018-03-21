@@ -12,11 +12,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 284c99c9e9c1ed2e84b05070bbf6d9991c025f94
-ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
+ms.openlocfilehash: f8845ab2de127b511b9180bebbe201b777c23455
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="quickstart-projects-and-solutions"></a>Schnellstart: Projekte und Projektmappen
 
@@ -185,10 +185,10 @@ Damit haben Sie den Schnellstart erfolgreich abgeschlossen. Als Nächstes könne
 
 ## <a name="see-also"></a>Siehe auch
 
-[Schnellstart: Ein erster Blick auf die Visual Studio-IDE](../ide/quickstart-ide-orientation.md)  
-[Schnellstart: Personalisieren der Visual Studio-IDE und des Editors](../ide/quickstart-personalize-the-ide.md)  
-[Schnellstart: Codieren im Editor](../ide/quickstart-editor.md)  
-[Managing Project and Solution Properties (Verwalten von Projekt- und Projektmappeneigenschaften)](../ide/managing-project-and-solution-properties.md)  
-[Verwalten von Verweisen in einem Projekt](../ide/managing-references-in-a-project.md)  
-[Entwickeln von Code in Visual Studio ohne Projekte oder Projektmappen](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)  
-[Übersicht über die Visual Studio-IDE](../ide/visual-studio-ide.md)
+- [Schnellstart: Ein erster Blick auf die Visual Studio-IDE](../ide/quickstart-ide-orientation.md)
+- [Schnellstart: Personalisieren der Visual Studio-IDE und des Editors](../ide/quickstart-personalize-the-ide.md)
+- [Schnellstart: Codieren im Editor](../ide/quickstart-editor.md)
+- [Managing Project and Solution Properties (Verwalten von Projekt- und Projektmappeneigenschaften)](../ide/managing-project-and-solution-properties.md)
+- [Verwalten von Verweisen in einem Projekt](../ide/managing-references-in-a-project.md)
+- [Entwickeln von Code in Visual Studio ohne Projekte oder Projektmappen](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)
+- [Übersicht über die Visual Studio-IDE](../ide/visual-studio-ide.md)

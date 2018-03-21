@@ -18,11 +18,11 @@ ms.technology:
 - vs-ide-general
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 38f6dfc375e776e4ad471fa8075b755dc3c31998
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: 78fe2950a0d708b32d5e3f8f9415b2e51af9687b
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="options-text-editor-cc-experimental"></a>Optionen, Text-Editor, C/C++, Experimentell
 
@@ -46,7 +46,7 @@ Durch diese Option kann Visual Studio Projektdaten zwischenspeichern, damit es, 
 
 ## <a name="additional-features-in-the-visual-studio-marketplace"></a>Zusätzliche Features in Visual Studio Marketplace
 
-Weitere Text-Editor-Features finden Sie in [Visual Studio Marketplace](https://marketplace.visualstudio.com/search?target=VS&category=Tools&vsVersion=&subCategory=All&sortBy=Downloads). Ein Beispiel ist [C++ Quick Fixes](https://marketplace.visualstudio.com/items?itemName=VisualCPPTeam.CQuickFixes2017), das Folgendes unterstützt:
+Weitere Text-Editor-Features finden Sie in [Visual Studio Marketplace](https://marketplace.visualstudio.com/search?target=VS&category=Tools&vsVersion=&subCategory=All&sortBy=Downloads). Ein Beispiel ist [C++ Quick Fixes](https://marketplace.visualstudio.com/items?itemName=VisualCppDevLabs.CQuickFixes2017), das Folgendes unterstützt:
 
 - **Add missing #include** - Schlägt zutreffende #include-Anweisungen für unbekannte Symbole in Ihrem Code vor.
 
