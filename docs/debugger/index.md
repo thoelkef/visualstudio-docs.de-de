@@ -4,11 +4,11 @@ title: Debuggen von Apps in Visual Studio | Microsoft-Dokumentation
 description: "Erfahren Sie, wie Sie Visual Studio 2017 für das Debuggen von Anwendungen, Diensten und Tools in der Sprache Ihrer Wahl für Ihre Plattformen und Geräte verwenden können."
 ms.topic: landing-page
 ms.technology: vs-ide-debug
-ms.openlocfilehash: 6c81a60b706a02a66fce176613fce1e0dae2496c
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: b2b168c1a91011abf1d3c3c8277fdaacc8fff1d8
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="debugging-in-visual-studio"></a>Debuggen in Visual Studio
 
@@ -52,24 +52,6 @@ Mit dem Visual Studio-Debugger können Sie das Laufzeitverhalten eines Programms
         </a>
     </li>
     <li>
-        <a href="https://docs.microsoft.com/visualstudio/debugger/navigating-through-code-with-the-debugger">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="/media/common/i_debug.svg" alt="">
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Navigieren von Code mit dem Debugger</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-        <li>
         <a href="https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugger-Feature-tour-of-Visual-studio-2017-sqwiwLD6D_1111787171">
         <div class="cardSize">
             <div class="cardPadding">
@@ -106,7 +88,7 @@ Mit dem Visual Studio-Debugger können Sie das Laufzeitverhalten eines Programms
         </a>
     </li>
     <li>
-        <a href="https://docs.microsoft.com/visualstudio/debugger/get-started-debugging-multithreaded-apps">
+        <a href="https://docs.microsoft.com/visualstudio/debugger/how-to-use-intellitrace-step-back">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -116,25 +98,25 @@ Mit dem Visual Studio-Debugger können Sie das Laufzeitverhalten eines Programms
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Debuggen von Multithreaded-Apps</h3>
+                        <h3>Anzeigen von IntelliTrace-Momentaufnahmen (Visual Studio Enterprise)</h3>
                     </div>
                 </div>
             </div>
         </div>
         </a>
     </li>
-        <li>
-        <a href="https://docs.microsoft.com/visualstudio/debugger/intellitrace">
+    <li>
+        <a href="https://docs.microsoft.com/visualstudio/debugger/debug-live-azure-applications">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_learn-about.svg" alt="">
+                            <img src="/media/common/i_get-started.svg" alt="">
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Informationen zu IntelliTrace (Visual Studio Enterprise)</h3>
+                        <h3>Debuggen von aktiven Azure App Service-Anwendungen</h3>
                     </div>
                 </div>
             </div>
@@ -153,6 +135,24 @@ Mit dem Visual Studio-Debugger können Sie das Laufzeitverhalten eines Programms
                     </div>
                     <div class="cardText">
                         <h3>Tipps und Tricks für den Debugger</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="https://docs.microsoft.com/visualstudio/debugger/get-started-debugging-multithreaded-apps">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="/media/common/i_get-started.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Debuggen von Multithreaded-Apps</h3>
                     </div>
                 </div>
             </div>
