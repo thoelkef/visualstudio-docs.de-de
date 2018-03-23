@@ -15,11 +15,11 @@ manager: ghogen
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: e7c4c9aada390259d4abd57484c20d25728ef91f
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: f99c01ec5f10909e8236d6986836603553b4008d
+ms.sourcegitcommit: 67374acb6d24019a434d96bf705efdab99d335ee
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="accessing-data-in-visual-studio"></a>Zugreifen auf Daten in Visual Studio
 
@@ -33,7 +33,7 @@ Die folgenden Listen anzeigen nur einige der vielen Datenbank- und Systeme, die 
 
 ||||
 |-|-|-|
-|SQL Database|DocumentDB|Speicher (Blobs, Tabellen, Warteschlangen, -Dateien)|
+|SQL Database|Azure Cosmos DB|Speicher (Blobs, Tabellen, Warteschlangen, -Dateien)|
 |SQL Data Warehouse|SQL Server Stretch Database|StorSimple|
 
 Und mehr...

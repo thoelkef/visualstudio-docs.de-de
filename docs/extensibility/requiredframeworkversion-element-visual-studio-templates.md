@@ -1,64 +1,94 @@
 ---
 title: RequiredFrameworkVersion-Element (Visual Studio-Vorlagen) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - <RequiredFrameworkVersion> (Visual Studio Templates)
 - RequiredFrameworkVersion (Visual Studio Templates)
 ms.assetid: 08a4f609-51a5-4723-b89f-99277fb18871
-caps.latest.revision: "10"
+caps.latest.revision: ''
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 1583f5a0fab15c65d70819eb1b6e76cac5660ea5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- vssdk
+ms.openlocfilehash: 6490c75f7ca57dbb287da818dacd02574025f00f
+ms.sourcegitcommit: 67374acb6d24019a434d96bf705efdab99d335ee
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="requiredframeworkversion-element-visual-studio-templates"></a>RequiredFrameworkVersion-Element (Visual Studio-Vorlagen)
-Gibt die minimale Version von .NET Framework, die von der Vorlage erforderlich ist. Schemahierarchie.  
-  
- \<VSTemplate >  
- \<TemplateData >  
- \<RequiredFrameworkVersion >  
-  
-## <a name="syntax"></a>Syntax  
-  
-```  
-<RequiredFrameworkVersion> .... </RequiredFrameworkVersion>  
-```  
-  
-## <a name="attributes-and-elements"></a>Attribute und Elemente  
- In den folgenden Abschnitten werden Attribute sowie untergeordnete und übergeordnete Elemente beschrieben.  
-  
-### <a name="attributes"></a>Attribute  
- Keine  
-  
-### <a name="child-elements"></a>Untergeordnete Elemente  
- Keine  
-  
-### <a name="parent-elements"></a>Übergeordnete Elemente  
-  
-|Element|Beschreibung|  
-|-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Erforderliches Element.<br /><br /> Kategorisiert die Vorlage und definiert, wie er angezeigt wird, entweder in der **neues Projekt** oder **neues Element hinzufügen** (Dialogfeld).|  
-  
-## <a name="text-value"></a>Textwert  
- Ein Textwert ist erforderlich.  
-  
- Der Text muss die minimale Versionsnummer von .NET Framework, die für die Vorlage erforderlich ist.  
-  
-## <a name="remarks"></a>Hinweise  
- `RequiredFrameworkVersion` ist ein optionales Element. Verwenden Sie dieses Element aus, wenn die Vorlage nur eine bestimmte mindestens erforderliche Version und höheren Versionen von .NET Framework ggf. unterstützt.  
-  
-## <a name="see-also"></a>Siehe auch  
- [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)   
- [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)   
- [Festlegen einer bestimmten .NET-Framework-Version](../ide/targeting-a-specific-dotnet-framework-version.md)
+
+Gibt die Mindestversion von .NET Framework, die von der Vorlage erforderlich ist. Es bewirkt, dass die **Zielframeworkversion** Dropdownliste angezeigt werden die **neues Projekt** Dialogfeld. Die `RequiredFrameworkVersion` Element bestimmt außerdem den niedrigsten Wert in der Dropdownliste verfügbar.
+
+> [!IMPORTANT]
+> Ab Visual Studio 2017 Version 15,6, die **Zielframeworkversion** Dropdownliste ist nicht mehr als einen Filter für die angezeigten Vorlagen in die **Vorlagen** Teil der **neues Projekt** Dialogfeld. Stattdessen fungiert die Dropdownliste als ein Framework Auswahl für die ausgewählte Vorlage.
+
+ \<VSTemplate > \<TemplateData > \<RequiredFrameworkVersion >
+
+## <a name="syntax"></a>Syntax
+
+```xml
+<RequiredFrameworkVersion> .... </RequiredFrameworkVersion>
+```
+
+## <a name="attributes-and-elements"></a>Attribute und Elemente
+ In den folgenden Abschnitten werden Attribute sowie untergeordnete und übergeordnete Elemente beschrieben.
+
+### <a name="attributes"></a>Attribute
+ Keine
+
+### <a name="child-elements"></a>Untergeordnete Elemente
+ Keine
+
+### <a name="parent-elements"></a>Übergeordnete Elemente
+
+|Element|Beschreibung|
+|-------------|-----------------|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Erforderliches Element.<br /><br /> Kategorisiert die Vorlage und definiert, wie er angezeigt wird, entweder in der **neues Projekt** oder **neues Element hinzufügen** (Dialogfeld).|
+
+## <a name="text-value"></a>Textwert
+ Ein Textwert ist erforderlich.
+
+ Der Text muss die minimale Versionsnummer von .NET Framework, die für die Vorlage erforderlich ist.
+
+## <a name="remarks"></a>Hinweise
+
+`RequiredFrameworkVersion` ist ein optionales Element. Verwenden Sie dieses Element nur dann, wenn die Vorlage für eine bestimmte mindestens erforderliche Version (und höher, sofern vorhanden) unterstützt von .NET Framework. Bei Angabe der `RequiredFrameworkVersion` Element und die Vorlage für eine bestimmte mindestens erforderliche Version von .NET Framework unterstützt keine der **Zielframeworkversion** Dropdownliste wird angezeigt, wenn sie nicht anwendbar ist.
+
+## <a name="example"></a>Beispiel
+
+Das folgende Beispiel veranschaulicht die Metadaten für einen Standard [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] Klassenvorlage.
+
+```xml
+<VSTemplate Type="Item" Version="3.0.0"
+    xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+    <TemplateData>
+        <Name>MyClass</Name>
+        <Description>My custom C# class template.</Description>
+        <Icon>Icon.ico</Icon>
+        <ProjectType>CSharp</ProjectType>
+        <RequiredFrameworkVersion>3.0</RequiredFrameworkVersion>
+        <MaxFrameworkVersion>4.7.1</MaxFrameworkVersion>
+        <DefaultName>MyClass</DefaultName>
+    </TemplateData>
+    <TemplateContent>
+        <ProjectItem>MyClass.cs</ProjectItem>
+    </TemplateContent>
+</VSTemplate>
+```
+
+In diesem Beispiel die Mindestversion von .NET Framework, die von der Vorlage erforderlich ist, die durch dargestellt `RequiredFrameworkVersion`, 3.0 ist. Ein mit dieser Vorlage erstelltes Projekt kann .NET Framework-Versionen 3.0 beginnend abzielen.
+
+## <a name="see-also"></a>Siehe auch
+
+- [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)
+- [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)
+- [Festlegen einer bestimmten .NET-Framework-Version](../ide/targeting-a-specific-dotnet-framework-version.md)
