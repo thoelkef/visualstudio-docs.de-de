@@ -1,8 +1,9 @@
-# [Visual Studio-Abonnements](index.md) 
+# [Visual Studio-Abonnements](index.md)
 ## Benutzeroberflächen für Abonnenten
 ### [Verwenden des Abonnentenportals](using-the-subscriber-portal.md)
 #### [Aktivieren von Einzelhandelsabonnements](activate-store-subscriptions.md)
-#### [Anmeldung](signing-in.md)
+#### [Signing In (Anmelden)](signing-in.md)
+#### [Alternative Identitäten](vs-alternate-identity.md)
 ##### [Anmeldung mit Aliasen](aliasing.md)
 #### [Verwalten Ihres Abonnements](manage-vs-subscriptions.md)
 ### [Herunterladen von Software](subscriber-downloads.md)
@@ -14,9 +15,9 @@
 ### [Vorteile für Abonnenten](subscriber-benefits.md)
 ## Nutzen der Vorteile für Abonnenten
 ### Tools
-#### [Visual Studio-IDE](vs-ide-benefit.md) 
+#### [Visual Studio-IDE](vs-ide-benefit.md)
 #### [Visual Studio Team Services](vs-vsts.md)
-#### [Azure-Guthaben](vs-azure.md) 
+#### [Azure-Guthaben](vs-azure.md)
 #### [Visual Studio App Center](vs-visual-studio-app-center.md)
 #### [Parasoft](vs-parasoft.md)
 #### [WhiteSource Bolt](vs-whitesource.md)
@@ -61,15 +62,17 @@
 #### [Abgelaufene Abonnements](handle-expired-license.md)
 #### [Abonnenten mit privaten E-Mail-Anmeldungen](personal-email-sign-ins.md)
 ## Erwerben von Visual Studio-Abonnements
-### [Vergleich von Abonnements](compare-subscriptions.md)
+### [Vergleich von Abonnementoptionen](https://www.visualstudio.com/vs/pricing)
 ### Kaufen von Cloudabonnements
 #### [Übersicht](vscloud-overview.md)
-#### [Erstkauf](vscloud-first-purchase.md)
-#### [Erneuerungen](vscloud-renewals.md)
-#### [Weitere Einkäufe](vscloud-buy-more.md)
-#### [Kündigung](vscloud-cancel.md)
+#### [Abrechnung – Häufig gestellte Fragen](vscloud-billing-faq.md)
+#### [Erwerben für CSPs](vscloud-csp.md)
+### Abonnements, die über Programme angeboten werden
+#### [Microsoft Partner Network](program-mpn.md)
+#### [Verwalten von Abonnements für MPN](manage-mpn-subscriptions.md)
+#### [Microsoft für Startups](program-startups.md)
 ## Ressourcen
 ### [Visual Studio-Lizenzbedingungen](vs-license-terms.md)
-### [Whitepaper zur Visual Studio-Lizenzierung](https://www.microsoft.com/downloads/details.aspx?displaylang=en&FamilyID=2b1504e6-0bf1-46da-be0e-85cc792c6b9d)
+### [Whitepaper zur Visual Studio-Lizenzierung](http://aka.ms/vslicensing)
 ### [Vergleich von Abonnementoptionen und -preisen](https://www.visualstudio.com/vs/pricing)
 ### [Vergleich von Visual Studio-IDE-Features](https://www.visualstudio.com/vs/compare)
