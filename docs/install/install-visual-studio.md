@@ -1,14 +1,14 @@
 ---
-title: "Installieren von Visual Studio 2017 | Microsoft-Dokumentation"
-description: "Erfahren Sie Schritt für Schritt, wie Sie Visual Studio installieren."
-ms.custom: 
+title: Installieren von Visual Studio 2017 | Microsoft-Dokumentation
+description: Erfahren Sie Schritt für Schritt, wie Sie Visual Studio installieren.
+ms.custom: ''
 ms.date: 12/04/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: 
-ms.topic: get-started-article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - vs.about
 helpviewer_keywords:
@@ -22,11 +22,11 @@ ms.author: tglee
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b37b998347618ea346c3d4e7993d5192c1c82a8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: ee1291e2ca304ed770eeee28c4996f68d2d07adb
+ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="install-visual-studio-2017"></a>Installieren von Visual Studio 2017
 Willkommen Sie bei einer neuen Möglichkeit zur Installation von Visual Studio. In unserer neuesten Version ist es noch einfacher, genau die Features auszuwählen und zu installieren, die Sie benötigen. Wir haben außerdem den mindestens benötigten Speicherplatz weiter verringert, sodass Visual Studio sich schneller und mit geringeren Systemauswirkungen als je zuvor installieren lässt.
