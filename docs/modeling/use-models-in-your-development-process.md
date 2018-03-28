@@ -1,11 +1,11 @@
 ---
 title: Verwenden von Modellen im Entwicklungsprozess | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: vs-ide-modeling
-ms.topic: get-started-article
+ms.topic: conceptual
 helpviewer_keywords:
 - UML, using models
 author: gewarren
@@ -13,11 +13,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d8d9b5632831c1d336f359aa4e4468da1543c73
-ms.sourcegitcommit: bfa26fd7426af0d065cb2eef3d6827b5d6f7986c
+ms.openlocfilehash: d5e75a3a56ddc272f296ef5cca5afcfd360d4ba1
+ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/20/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="use-models-in-your-development-process"></a>Verwenden von Modellen im Entwicklungsprozess
 
@@ -141,11 +141,11 @@ Zum Beschreiben des Entwurfs auf unterschiedlichen Abstraktionsebenen eignen sic
 
 ## <a name="see-also"></a>Siehe auch
 
-[Verwenden von Modellen in Agile Development](http://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f) 
-[Erstellen von Modellen für Ihre app](../modeling/create-models-for-your-app.md) 
-[Modellieren von benutzeranforderungen](../modeling/model-user-requirements.md) 
-[modellieren Ihrer app Architektur](../modeling/model-your-app-s-architecture.md) 
-[Entwickeln von Tests aus einem Modell](../modeling/develop-tests-from-a-model.md) 
+[Verwenden von Modellen in Agile Development](http://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)
+[Erstellen von Modellen für Ihre app](../modeling/create-models-for-your-app.md)
+[Modellieren von benutzeranforderungen](../modeling/model-user-requirements.md)
+[modellieren Ihrer app Architektur](../modeling/model-your-app-s-architecture.md)
+[Entwickeln von Tests aus einem Modell](../modeling/develop-tests-from-a-model.md)
 [Strukturieren der modellierungslösung](../modeling/structure-your-modeling-solution.md)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]

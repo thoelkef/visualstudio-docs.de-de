@@ -1,44 +1,42 @@
 ---
 title: Enthaltenen Sprachen | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.date: 03/22/2018
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - contained languages
 ms.assetid: b75bbb51-8e42-41b1-bece-09ab0b1f03cc
-caps.latest.revision: 
+caps.latest.revision: ''
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
 ms.workload:
 - vssdk
-ms.openlocfilehash: bfdbc3d1c0e7bbc0b3dc712d9434ca1b49c6feca
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 7ec180689f4dadfb60832259ddee51a05f336fda
+ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="contained-languages"></a>Enthaltenen Sprachen
-*Enthaltenen Sprachen* sind Sprachen, die von anderen Sprachen enthalten sind. Z. B. HTML-Code im [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Webseiten enthalten u. u. [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] oder [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] Skripts. Eine Dual-Language-Architektur ist erforderlich, damit die ASPX-Datei-Editor den HTML-Code und die verwendete Skriptsprache IntelliSense, Einfärbung und andere-Bearbeitungsfeatures bereit.  
-  
-## <a name="implementation"></a>Implementierung  
- Am wichtigsten Sie für enthaltenen Sprachen implementieren müssen diese Schnittstelle ist die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguage> Schnittstelle. Diese Schnittstelle wird von einer beliebigen Sprache implementiert, die in eine primäre Sprache gehostet werden können. Er ermöglicht den Zugriff der Sprachdienst Colorizer, Ansichtsfilter Text und Hauptsprache Dienst-ID. Die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguageFactory> ermöglicht Ihnen die Erstellung einer <xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguage> Schnittstelle. Die folgenden Schritte zeigen Ihnen, wie eine eigenständige Sprache implementiert werden:  
-  
-1.  Verwendung `QueryService()` die Sprache, die Dienst-ID und der Schnittstellen-ID der abzurufenden der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguageFactory>.  
-  
-2.  Rufen Sie die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguageFactory.GetLanguage%2A> Methode zum Erstellen einer <xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguage> Schnittstelle. Übergeben Sie ein <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> Netzwerkschnittstelle, die Element-ID (eine oder mehrere der <xref:Microsoft.VisualStudio.VSConstants.VSITEMID_NIL>, <xref:Microsoft.VisualStudio.VSConstants.VSITEMID_ROOT>, oder <xref:Microsoft.VisualStudio.VSConstants.VSITEMID_SELECTION>) und eine <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator> Schnittstelle.  
-  
-3.  Die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator> -Schnittstelle, die der Koordinator TextBuffer-Objekt ist, enthält die grundlegenden Dienste, die erforderlich sind, um Positionen in einer primären Datei in der sekundären Sprache Puffer zuzuordnen.  
-  
-     Beispielsweise enthält die primäre Datei in einer einzelnen ASPX-Datei der ASP-Seite, HTML und den Code aus, der enthalten ist. Die sekundäre Puffer enthält jedoch nur die darin enthaltenen Code zusammen mit Klassendefinitionen, die sekundären Puffer eine gültige Codedatei vornehmen. Der Puffer-Koordinator verarbeitet die Arbeit von Änderungen aus einem Puffer in den anderen koordinieren.  
-  
-4.  Die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator.SetSpanMappings%2A> Methode, die die primäre Sprache ist, weist der Koordinator Puffer Text innerhalb des Puffers für den entsprechenden Text im sekundären Puffers zugeordnet ist.  
-  
-     Die Sprache übergibt ein Array von der <xref:Microsoft.VisualStudio.TextManager.Interop.NewSpanMapping> -Struktur, die derzeit nur einen primären und sekundären überspannende enthält.  
-  
+
+*Enthaltenen Sprachen* sind Sprachen, die von anderen Sprachen enthalten sind. Z. B. HTML-Code im [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Webseiten enthalten u. u. [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] oder [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] Skripts. Eine Dual-Language-Architektur ist erforderlich, damit die ASPX-Datei-Editor den HTML-Code und die verwendete Skriptsprache IntelliSense, Einfärbung und andere-Bearbeitungsfeatures bereit.
+
+## <a name="implementation"></a>Implementierung
+
+Am wichtigsten Sie für enthaltenen Sprachen implementieren müssen diese Schnittstelle ist die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguage> Schnittstelle. Diese Schnittstelle wird von einer beliebigen Sprache implementiert, die in eine primäre Sprache gehostet werden können. Er ermöglicht den Zugriff der Sprachdienst Colorizer, Ansichtsfilter Text und Hauptsprache Dienst-ID. Die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguageFactory> ermöglicht Ihnen die Erstellung einer <xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguage> Schnittstelle. Die folgenden Schritte zeigen Ihnen, wie eine eigenständige Sprache implementiert werden:
+
+1.  Verwendung `QueryService()` die Sprache, die Dienst-ID und der Schnittstellen-ID der abzurufenden der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguageFactory>.
+
+2.  Zum Erstellen einer <xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguage> Schnittstelle, rufen Sie die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguageFactory.GetLanguage%2A> Methode. Übergeben Sie ein <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> Schnittstelle, eine oder mehrere [der Artikel IDs](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID>), und ein <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator> Schnittstelle.
+
+3.  Die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator> -Schnittstelle, die der Koordinator TextBuffer-Objekt ist, enthält die grundlegenden Dienste, die erforderlich sind, um Positionen in einer primären Datei in der sekundären Sprache Puffer zuzuordnen.
+
+     Beispielsweise enthält die primäre Datei in einer einzelnen ASPX-Datei der ASP-Seite, HTML und den Code aus, der enthalten ist. Die sekundäre Puffer enthält jedoch nur die darin enthaltenen Code zusammen mit Klassendefinitionen, die sekundären Puffer eine gültige Codedatei vornehmen. Der Puffer-Koordinator verarbeitet die Arbeit von Änderungen aus einem Puffer in den anderen koordinieren.
+
+4.  Die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator.SetSpanMappings%2A> Methode, die die primäre Sprache ist, weist der Koordinator Puffer Text innerhalb des Puffers für den entsprechenden Text im sekundären Puffers zugeordnet ist.
+
+     Die Sprache übergibt ein Array von der <xref:Microsoft.VisualStudio.TextManager.Interop.NewSpanMapping> -Struktur, die derzeit nur einen primären und sekundären überspannende enthält.
+
 5.  Die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator.MapPrimaryToSecondarySpan%2A> Methode und die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator.MapSecondaryToPrimarySpan%2A> Methode geben Sie die Zuordnung vom primären zum sekundären Puffer und umgekehrt.
