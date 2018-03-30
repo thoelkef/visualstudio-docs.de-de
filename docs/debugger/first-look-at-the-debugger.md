@@ -2,31 +2,31 @@
 title: Erste Schritte mit dem Debugger in Visual Studio | Microsoft Docs
 ms.custom: H1Hack27Feb2017
 ms.date: 02/07/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 ms.assetid: 0b3138c4-b840-446a-a15c-10ed8e2dd050
-caps.latest.revision: 
+caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: 171b07d453c81883354848f70458bab39daa313e
-ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 03/29/2018
 ---
 # <a name="get-started-with-the-visual-studio-debugger"></a>Erste Schritte mit Visual Studio-Debugger
 Der Visual Studio-Debugger ist in jeder Sprache einfach zu verwenden. Hier zeigen wir, wie ein einfaches C#-Programm debuggen, aber Sie können die gleichen Schritte für Code in anderen Sprachen wie C++ und JavaScript anwenden.
 
 Um ein Video mit ähnlichen Funktionen beobachten zu können, finden Sie unter [erste Schritte mit dem Debugger](https://www.youtube.com/watch?v=FtGCi5j30YU&list=PLReL099Y5nRfw6VNvzMkv0sabT2crbSpK&index=6).
   
-##  <a name="BKMK_Start_debugging_a_VS_project"></a>Debuggen eines einfachen C#-Projekts  
+##  <a name="BKMK_Start_debugging_a_VS_project"></a> Debuggen eines einfachen C#-Projekts  
  Beginnen wir mit einer einfachen C#-Konsolenanwendung (**Datei > Neu > Projekt**, und wählen Sie dann **Visual C#-** und dann **Konsolenanwendung**). Wenn Sie mit Visual Studio noch nie gearbeitet haben, finden Sie unter [Exemplarische Vorgehensweise: Erstellen einer einfachen Anwendung](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md). Die **Main** Methode nur 1 10 Mal an eine IntegerVariable hinzugefügt und das Ergebnis in der Konsole ausgegeben:  
   
 ```csharp  
@@ -51,7 +51,7 @@ static void Main(string[] args)
   
  Weitere Informationen über Breakpoints finden Sie unter [mithilfe von Haltepunkten](../debugger/using-breakpoints.md).  
   
-##  <a name="BKMK_Inspect_Variables"></a>Überprüfung von Variablen  
+##  <a name="BKMK_Inspect_Variables"></a> Überprüfung von Variablen  
  Debuggen von häufig gehört das Auffinden von Variablen, die keine Werte enthalten, die Sie zu einem bestimmten Zeitpunkt zu erwarten. Wir zeigen einige Möglichkeiten, um Variablen überprüfen.  
   
  Starten Sie das Debuggen erneut. Die Ausführung wird angehalten, bevor der `Console.WriteLine`-Code ausgeführt wird. Sie können dazu führen, dass es ausführen, indem Sie die Ausführung schrittweise durchlaufen (klicken Sie auf **Debuggen > Prozedurschritt** oder **F10**). In diesem Fall hätten Sie **Einzelschritt** (**F11**) und erhalten dasselbe Ergebnis; den Unterschied wird weiter unten erläutert. Die Zeile mit der letzten geschweiften Klammer der Methode sollte gelb hervorgehoben sein. Betrachten Sie das Konsolenfenster. Daraufhin sollte **10**.  

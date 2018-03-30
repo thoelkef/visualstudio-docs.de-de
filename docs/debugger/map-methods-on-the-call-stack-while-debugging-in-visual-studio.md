@@ -1,13 +1,13 @@
 ---
 title: Erstellen Sie eine visuelle Karte der Aufrufliste | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 05/18/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: get-started-article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - vs.progression.debugwithcodemaps
 dev_langs:
@@ -30,17 +30,17 @@ helpviewer_keywords:
 - debugging [Visual Studio], tracing the call stack visually
 - debugging [Visual Studio], visualizing the call stack
 ms.assetid: d6a72e5e-f88d-46fc-94a3-1789d34805ef
-caps.latest.revision: 
+caps.latest.revision: 39
 author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 99f388fea1d6512760f99615256f71002099e9be
-ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
+ms.openlocfilehash: f5fc0025c9d7870b0de042922d87d3a23d7728c5
+ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="create-a-visual-map-of-the-call-stack-while-debugging-in-visual-studio-enterprise"></a>Erstellen Sie eine visuelle Karte der Aufrufliste beim Debuggen in Visual Studio Enterprise
 Erstellen Sie eine Code Map, um die Aufrufliste visuell zu verfolgen, während Sie debuggen. Sie können Notizen auf der Zuordnung vermerken, um das Verhalten des Codes zu verfolgen, sodass Sie sich auf das Suchen von Fehlern konzentrieren können.
@@ -73,7 +73,7 @@ So sieht ein kurzen Blick auf eine Code Map aus:
   
  Weitere Informationen zu den Befehlen und Aktionen können Sie beim Arbeiten mit codezuordnungen verwenden, finden Sie unter [durchsuchen und Neuanordnen code Maps](../modeling/browse-and-rearrange-code-maps.md).  
   
-##  <a name="MapStack"></a>Zuordnen der Aufrufliste  
+##  <a name="MapStack"></a> Zuordnen der Aufrufliste  
   
 1.  Beginnen Sie mit dem Debuggen. (Tastatur: **F5**)  
   
@@ -87,17 +87,17 @@ So sieht ein kurzen Blick auf eine Code Map aus:
   
      Die Map wird beim Debuggen automatisch aktualisiert. Finden Sie unter [Aktualisieren der Zuordnung mit der nächsten Aufrufliste](#UpdateMap).  
   
-##  <a name="MakeNotes"></a>Notizen Sie zum code  
+##  <a name="MakeNotes"></a> Notizen Sie zum code  
  Hinzufügen von Kommentaren, um nachzuverfolgen, was im Code geschieht. Um eine neue Zeile in einem Kommentar hinzuzufügen, drücken Sie **Umschalt + Eingabe**.  
   
  ![Kommentar zu Aufrufliste in codezuordnung hinzufügen](../debugger/media/debuggermap_addcomment.png "DebuggerMap_AddComment")  
   
-##  <a name="UpdateMap"></a>Die Zuordnung mit nächster Aufrufliste aktualisieren  
+##  <a name="UpdateMap"></a> Die Zuordnung mit nächster Aufrufliste aktualisieren  
  Führen Sie die Anwendung bis zum nächsten Haltepunkt aus, oder führen Sie eine Funktion schrittweise aus. Die Zuordnung fügt eine neue Aufrufliste hinzu.  
   
  ![Codezuordnung mit nächster Aufrufliste aktualisieren](../debugger/media/debuggermap_addclearcallstack.png "DebuggerMap_AddClearCallStack")  
   
-##  <a name="AddRelatedCode"></a>Hinzufügen von zugehörigem Code zur Zuordnung  
+##  <a name="AddRelatedCode"></a> Hinzufügen von zugehörigem Code zur Zuordnung  
  Jetzt haben Sie einer Karte - was geschieht als Nächstes? Wenn Sie mit Visual c# oder Visual Basic arbeiten, fügen Sie Elemente, wie Felder, Eigenschaften und andere Methoden, um nachzuverfolgen, was im Code geschieht.  
   
  Doppelklicken Sie auf eine Methode, um ihre Codedefinition anzuzeigen, oder verwenden Sie das Kontextmenü für die Methode. (Tastatur: Wählen Sie die Methode für die Zuordnung, und drücken Sie **F12**)  
@@ -121,7 +121,7 @@ So sieht ein kurzen Blick auf eine Code Map aus:
   
  ![Methoden, mit denen ein Feld in der Aufruflisten-codezuordnung](../debugger/media/debuggermap_foundallreferences.png "DebuggerMap_FoundAllReferences")  
   
-##  <a name="FindBugs"></a>Suchen von Fehlern mithilfe der Zuordnung  
+##  <a name="FindBugs"></a> Suchen von Fehlern mithilfe der Zuordnung  
  Durch die Visualisierung des Codes können Sie Fehler schneller finden. Nehmen Sie beispielsweise an, dass Sie einen Fehler in einem Zeichenprogramm untersuchen. Wenn Sie eine Linie zeichnen und versuchen, sie rückgängig zu machen, geschieht nichts, bis Sie eine andere Zeile zeichnen.  
   
  Legen Sie die Haltepunkte `clear`, `undo` und `Repaint` fest, starten Sie das Debugging, und erstellen Sie eine Zuordnung wie die folgende:  
@@ -172,7 +172,7 @@ So sieht ein kurzen Blick auf eine Code Map aus:
   
 -   **Wie hindere ich die Zuordnung neue Aufruflisten automatisch hinzufügt?**  
   
-     Wählen Sie ![Schaltfläche &#45; Aufrufliste in codezuordnung anzeigen automatisch](../debugger/media/debuggermap_automaticupdateicon.gif "DebuggerMap_AutomaticUpdateIcon") auf der Symbolleiste der Map. Um die aktuelle Aufrufliste manuell zur Zuordnung hinzuzufügen, drücken Sie die **STRG** + **UMSCHALT** + **`**.  
+     Wählen Sie ![Schaltfläche &#45; anzeigen Aufrufliste in codezuordnung automatisch](../debugger/media/debuggermap_automaticupdateicon.gif "DebuggerMap_AutomaticUpdateIcon") auf der Symbolleiste der Map. Um die aktuelle Aufrufliste manuell zur Zuordnung hinzuzufügen, drücken Sie die **STRG** + **UMSCHALT** + **`**.  
   
      Die Zuordnung weiterhin vorhandene Aufruflisten in der Zuordnung hervorgehoben, während Sie debuggen.  
   

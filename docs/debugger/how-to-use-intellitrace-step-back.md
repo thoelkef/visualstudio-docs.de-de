@@ -10,17 +10,17 @@ ms.technology:
 ms.tgt_pltfrm: ''
 ms.topic: tutorial
 ms.assetid: 7c60d929-d993-49dc-9db3-43b30be9912b
-caps.latest.revision: ''
+caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f9f0c65110ef1003c58c0a4002f90ec7e7e08e3
-ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
+ms.openlocfilehash: 6634a72b7bbed51e3ae250289696511d67c70041
+ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="view-snapshots-using-intellitrace-step-back-in-visual-studio"></a>Anzeigen von Momentaufnahmen mithilfe von IntelliTrace-Schritt-wieder in Visual Studio
 
@@ -39,11 +39,11 @@ In diesem Lernprogramm führen Sie folgende Aktionen ausführen:
 
 1. Öffnen Sie das Projekt in Visual Studio Enterprise.
 
-1. Wechseln Sie zu **Extras > Optionen > IntelliTrace** Einstellungen, und wählen Sie die Option **IntelliTrace-Ereignisse und Momentaufnahmen**. 
+1. Open **Tools** > **Optionen** > **IntelliTrace** Einstellungen, und wählen Sie die Option **IntelliTrace-Ereignisse und Momentaufnahmen** . 
 
     ![Aktivieren Sie den IntelliTrace-Ereignisse und Momentaufnahmen Modus](../debugger/media/intellitrace-enable-snapshots.png "Modus aktivieren von IntelliTrace-Ereignisse und Momentaufnahmen")
 
-1. Legen Sie einen oder mehrere Haltepunkte in Ihrem Projekt, und starten Sie das Debuggen (drücken Sie **F5**), oder starten Sie das Debuggen durch schrittweises Durchlaufen des Codes (**F10** oder **F11**).
+1. In Ihrem Projekt einen oder mehrere Haltepunkte festlegen und das Debuggen starten (drücken Sie **F5**), oder starten Sie das Debuggen durch schrittweises Durchlaufen des Codes (**F10** oder **F11**).
 
     IntelliTrace nimmt eine Momentaufnahme des Prozesses für die Anwendung auf jeder Debugger Schritt und Haltepunkt-Ereignisses. Diese Ereignisse werden aufgezeichnet, der **Ereignisse** Registerkarte der **Diagnosetools** Fenster zusammen mit weiteren IntelliTrace-Ereignissen. Um dieses Fenster zu öffnen, wählen Sie **Debuggen** > **Windows** > **Diagnosetools anzeigen**.
 

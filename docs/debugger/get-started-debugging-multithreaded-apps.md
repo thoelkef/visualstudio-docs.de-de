@@ -2,12 +2,12 @@
 title: Erste Schritte zum Debuggen von Multithreadanwendungen mit | Microsoft Docs
 ms.custom: H1HackMay2017
 ms.date: 06/02/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -17,17 +17,17 @@ helpviewer_keywords:
 - multithreaded debugging, tutorial
 - tutorials, multithreaded debugging
 ms.assetid: 62df746b-b0f6-4df4-83cf-b1d9d2e72833
-caps.latest.revision: 
+caps.latest.revision: 38
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d2766a394c88d2040a8f062c33add4e3f7af019
-ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
+ms.openlocfilehash: 48e912fdd04e25f9ad8f7babcf565afb5b739f05
+ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="get-started-debugging-a-multithreaded-application-in-visual-studio"></a>Erste Schritte zum Debuggen einer Multithreadanwendung in Visual Studio
 Visual Studio bietet mehrere Tools und Elemente der Benutzeroberfläche können Sie das Debuggen von Multithreadanwendungen. Dieses Lernprogramm zeigt, wie Threadmarker, die **parallele Stapel** Fenster die **parallele Überwachung** für Fenster, bedingte Haltepunkte und Filter Haltepunkte. In diesem Lernprogramm dauert nur wenige Minuten, aber vertraut, die Sie mit den Funktionen für das Debuggen von Multithreadanwendungen verwendet werden können.
@@ -319,7 +319,7 @@ Sie können Threads kennzeichnen, die besondere Aufmerksamkeit erhalten soll. Da
 
 Zum Aufheben der Kennzeichnung von Threads können Rechtsklick auf eine oder mehrere gekennzeichnete Threads in der **parallele Überwachung** Fenster, und wählen Sie **Flag**.
 
-## <a name="bkmk_freeze"></a>Sperren und Entsperren der Threadausführung 
+## <a name="bkmk_freeze"></a> Sperren und Entsperren der Threadausführung 
 
 > [!TIP]
 > Sie können Einfrieren und reaktivieren (anhalten und fortsetzen) Threads zur Steuerung der Reihenfolge, in denen Threads Arbeit ausführen. Dadurch können Sie Parallelitätsprobleme wie Deadlocks und Racebedingungen.
@@ -340,7 +340,7 @@ Zum Aufheben der Kennzeichnung von Threads können Rechtsklick auf eine oder meh
 
     Die app kann auch einige neue Threads instanziiert werden. Beachten Sie, dass keine neuen Threads nicht gekennzeichnet sind und sind nicht fixiert.
 
-## <a name="bkmk_follow_a_thread"></a>Führen Sie einen einzelnen Thread mit bedingter Haltepunkte
+## <a name="bkmk_follow_a_thread"></a> Führen Sie einen einzelnen Thread mit bedingter Haltepunkte
 
 In einigen Fällen können sie die Ausführung von einem einzelnen Thread im Debugger hilfreich sein. Eine Möglichkeit, die Sie dafür ist das Fixieren von Threads, denen Sie nicht interessiert sind, aber in einigen Szenarien möchten Sie möglicherweise führen einen einzelnen Thread ohne das Fixieren von anderen Threads (zu reproduzieren, die eine bestimmten Fehler, z. B.). Um einen Thread ohne andere Threads Einfrieren folgen zu können, müssen Sie vermeiden, unterbrechen im Code außer auf dem Thread, dem Sie interessiert sind. Hierzu können Sie durch Festlegen einer [bedingter Haltepunkt](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression).
 

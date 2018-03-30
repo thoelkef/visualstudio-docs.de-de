@@ -1,12 +1,13 @@
 ---
-title: "Übersicht über die Bereitstellung - Visual Studio | Microsoft Docs"
-ms.custom: 
+title: Übersicht über die Bereitstellung - Visual Studio | Microsoft Docs
+ms.custom: mvc
 ms.date: 11/26/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: get-started-article
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-deployment
+ms.tgt_pltfrm: ''
+ms.topic: quickstart
 dev_langs:
 - FSharp
 - VB
@@ -21,18 +22,19 @@ helpviewer_keywords:
 - deploying applications [Visual Studio], about deploying applications
 - components [.NET Framework], deploying
 ms.assetid: 63fcdd5b-2e54-4210-9038-65bc23167725
-caps.latest.revision: "33"
+caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: e05bf361515b45f3ebc7683fa0c83ec6116d9419
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.workload:
+- multiple
+ms.openlocfilehash: d07129bc373cf74c8ba373b3c51847016d585ade
+ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 03/30/2018
 ---
-# <a name="deployment-overview-in-visual-studio"></a>Übersicht über die Bereitstellung in Visual Studio
+# <a name="quickstart-first-look-at-deployment-in-visual-studio"></a>Schnellstart: Uns zunächst an die Bereitstellung in Visual Studio
 
 Wenn Sie eine Anwendung, einen Dienst oder eine Komponente bereitstellen, verteilen Sie diese für die Installation auf anderen Computern, Geräten, Servern oder in der Cloud. Wählen Sie die entsprechende Methode für den Typ der Bereitstellung in Visual Studio aus, den Sie benötigen. (Viele app-Typen unterstützen anderen Bereitstellungstools z. B. Bereitstellung über die Befehlszeile oder NuGet, die hier nicht beschrieben sind.)
 
@@ -40,7 +42,7 @@ Finden Sie in den Lernprogrammen für-Schritt-Anweisungen.
 
 ### <a name="deploy-to-local-folder"></a>Bereitstellen von lokalen Ordner
 
-- **ASP.NET**, **ASP.NET Core**, **Node.js**, **Python**, und **.NET Core**: Verwenden des Tools zum Veröffentlichen mit einer lokalen Bereitstellung Ordner. Die genaue verfügbaren Optionen hängen von Ihrer app-Typ ab. Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste des Projekts, und wählen Sie **veröffentlichen**, und wählen Sie dann **Ordner**. Weitere Informationen finden Sie unter [Bereitstellen in einen lokalen Ordner](quickstart-deploy-to-local-folder.md).
+- **ASP.NET**, **ASP.NET Core**, **Node.js**, **Python**, and **.NET Core**: Use the Publish tool to deploy to a local folder. Die genaue verfügbaren Optionen hängen von Ihrer app-Typ ab. Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste des Projekts, und wählen Sie **veröffentlichen**, und wählen Sie dann **Ordner**. Weitere Informationen finden Sie unter [Bereitstellen in einen lokalen Ordner](quickstart-deploy-to-local-folder.md).
 
     ![Wählen Sie veröffentlichen](../deployment/media/quickstart-publish.png)
 
@@ -48,7 +50,7 @@ Finden Sie in den Lernprogrammen für-Schritt-Anweisungen.
 
 ### <a name="publish-to-web-or-deploy-to-network-share"></a>Im Web veröffentlichen oder auf einer Netzwerkfreigabe bereitstellen
 
-- **ASP.NET**, **ASP.NET Core**, **Node.js**, **Python**, und **.NET Core**: Sie können mithilfe des Tools zum Veröffentlichen zum Bereitstellen einer die Website über FTP oder Web Deploy. Weitere Informationen finden Sie unter [bereitstellen, um eine Website](quickstart-deploy-to-a-web-site.md).
+- **ASP.NET**, **ASP.NET Core**, **Node.js**, **Python**, and **.NET Core**: You can use the Publish tool to deploy to a website using FTP or Web Deploy. Weitere Informationen finden Sie unter [bereitstellen, um eine Website](quickstart-deploy-to-a-web-site.md).
 
     Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste auf das Projekt, und klicken Sie auf **Veröffentlichen**. Wählen Sie das Tool "Veröffentlichen" die Option, Sie möchten, und führen Sie die Konfigurationsschritte aus.
 
