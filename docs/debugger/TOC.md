@@ -1,7 +1,7 @@
 # [Debugger-Dokumentation](index.md)
-# Übersicht
-## [Debugger – Featuretour](debugger-feature-tour.md)
+# [Übersicht](debugger-overview.md)
 # Schnellstarts
+## [Erster Einblick in den Debugger](debugger-feature-tour.md)
 ## [Debuggen einer verwalteten App](quickstart-debug-with-managed.md)
 ## [Debuggen einer nativen App](quickstart-debug-with-cplusplus.md)
 ## [Debuggen einer ASP.NET-App](quickstart-debug-aspnet.md)
@@ -26,9 +26,6 @@
 ### [Anzeigen von Zeichenfolgenwerten in einer Schnellansicht](string-visualizer-dialog-box.md)
 ### [Anzeigen von Disassemblierungscode](how-to-use-the-disassembly-window.md)
 #### [Gewusst wie: Bildlauf nach oben oder unten im Arbeitsspeicher](how-to-page-up-or-down-in-memory.md)
-### [Anzeigen der Aufrufliste](how-to-use-the-call-stack-window.md)
-#### [Gemischter Code und fehlende Daten im Fenster "Aufrufliste"](mixed-code-and-missing-information-in-the-call-stack-window.md)
-#### [Gewusst wie: Ausführen von verwaltetem Code bis zum Rücksprung, wenn systemeigene Rahmen im Aufruflistenfenster fehlen](how-to-step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-window.md)
 ### [Anzeigen von Registerwerten](how-to-use-the-registers-window.md)
 #### [Informationen zum Fenster „Register“](debugging-basics-registers-window.md)
 #### [Gewusst wie: Anzeigen und Ausblenden von Registergruppen](how-to-display-and-hide-register-groups.md)

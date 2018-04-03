@@ -1,8 +1,8 @@
 
 # [Dokumentation zur Profilerstellung](index.md)
 # Übersicht
-## [Tour zur Profilerstellungsfunktion](profiling-feature-tour.md)
 # Schnellstarts
+## [Erster Einblick in die Profilerstellung](profiling-feature-tour.md)
 ## [Analysieren der CPU-Auslastung (verwaltet)](quickstart-cpu-usage-managed.md)
 ## [Analysieren der CPU-Auslastung (nativ)](quickstart-cpu-usage-native.md)
 ## [Analysieren der CPU-Auslastung (ASP.NET)](quickstart-cpu-usage-aspnet.md)

@@ -1,11 +1,12 @@
 # [Dokumentation zur Bereitstellung](index.md)
 # Übersicht
-## [Übersicht über die Bereitstellung](deploying-applications-services-and-components.md)
+## [Übersicht über die Bereitstellung](deploying-applications-services-and-components-resources.md)
 # Schnellstarts
+## [Erster Einblick in die Bereitstellung](deploying-applications-services-and-components.md)
 ## [Bereitstellen in einem lokalen Ordner](quickstart-deploy-to-local-folder.md)
 ## [Bereitstellen auf einer Website](quickstart-deploy-to-a-web-site.md)
 ## [Bereitstellung in Azure](quickstart-deploy-to-azure.md)
-# Lernprogramme
+# Tutorials
 ## .NET
 ### [Bereitstellen einer .NET Core-Anwendung mit dem Tool „Veröffentlichen“](/dotnet/core/deploying/deploy-with-vs)
 ### [Packen einer Desktop-App für Microsoft Store (Desktop-Brücke)](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net)
@@ -110,7 +111,7 @@
 #### [<PackageFiles>-Element (Bootstrapper)](packagefiles-element-bootstrapper.md)
 #### [<Strings>-Element (Bootstrapper)](strings-element-bootstrapper.md)
 #### [<Schedules>-Element (Bootstrapper)](schedules-element-bootstrapper.md)
-# Verweis
+# Referenz
 ## [ClickOnce-Referenz](clickonce-reference.md)
 ### [ClickOnce-Anwendungsmanifest](clickonce-application-manifest.md)
 #### [<assembly>-Element (ClickOnce-Anwendung)](assembly-element-clickonce-application.md)
@@ -131,6 +132,4 @@
 #### [<Signature>-Element (ClickOnce-Bereitstellung)](signature-element-clickonce-deployment.md)
 #### [<customErrorReporting>-Element (ClickOnce-Bereitstellung)](customerrorreporting-element-clickonce-deployment.md)
 ### [Referenz zur nicht verwalteten API für ClickOnce](clickonce-unmanaged-api-reference.md)
-# Ressourcen
-## [Bereitstellen von Anwendungen, Diensten und Komponenten](deploying-applications-services-and-components-resources.md)
 
