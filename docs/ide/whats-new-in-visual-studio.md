@@ -1,12 +1,12 @@
 ---
-title: "Neuerungen in Visual Studio 2017 | Microsoft-Dokumentation"
-ms.custom: 
+title: Neuerungen in Visual Studio 2017 | Microsoft-Dokumentation
+ms.custom: ''
 ms.date: 12/04/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VS.StartPage.WhatsNew
@@ -19,14 +19,14 @@ ms.author: tglee
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: a41d683701b4d8e0ca9cb973486a1e07216ea894
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 90d6ef6132f8844343388f35a441386c66b838c6
+ms.sourcegitcommit: 6871148ce356977b057febdb4d5a7655e7c295bf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 03/16/2018
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Neuerungen in Visual Studio 2017
-#### <a name="updated-for-the-155-releasehttpswwwvisualstudiocomnewsreleasenotesvs2017-relnotes"></a>In [Release 15.5](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes) aktualisiert
+#### <a name="updated-for-the-156-releasehttpswwwvisualstudiocomnewsreleasenotesvs2017-relnotes"></a>In [Release 15.6](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes) aktualisiert
 Möchten Sie von einer vorherigen Version von Visual Studio aktualisieren? Visual Studio 2017 bietet Ihnen Folgendes: beispiellose Produktivität für alle Entwickler, Apps und Plattformen. Verwenden Sie Visual Studio 2017 zum Entwickeln von Apps für Android, iOS, Windows, Linux, das Web und die Cloud. Schnelles Codieren, einfaches Debuggen und einfache Diagnose, häufige Tests und zuverlässige Releases. Sie können Visual Studio auch durch Erstellen eigener Erweiterungen erweitern und anpassen. Verwenden Sie die Versionskontrolle, agile Prozesse, und steigern Sie die Effizienz bei der Zusammenarbeit mit diesem Release!
 
 Dies ist eine allgemeine Zusammenfassung aller Änderungen, die seit der vorherigen Version, Visual Studio 2015, vorgenommen wurden:

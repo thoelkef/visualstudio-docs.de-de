@@ -1,27 +1,27 @@
 ---
 title: Erhalten von Buildprotokollen mit MSBuild | Microsoft-Dokumentation
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - MSBuild, logging
 - logging [MSBuild]
 ms.assetid: 6ba9a754-9cc0-4fed-9fc8-4dcd3926a031
-caps.latest.revision: 
+caps.latest.revision: 27
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: a9a2a7989e7b1cd98745d316ff01718653eda48f
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: ba20e37e9a984512e2d63de882d434b4f034120d
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="obtaining-build-logs-with-msbuild"></a>Erhalten von Buildprotokollen mit MSBuild
 Indem Sie Schalter mit MSBuild verwenden, können Sie angeben, wie viele Builddaten zu überprüfen sind und ob Sie Builddaten in eine oder mehrere Dateien speichern möchten. Sie können auch eine benutzerdefinierte Protokollierung zum Sammeln von Builddaten angeben. Weitere Informationen zu MSBuild-Befehlszeilenschalter, die in diesem Thema nicht behandelt werden, finden Sie unter [Befehlszeilenreferenz](../msbuild/msbuild-command-line-reference.md).  
@@ -45,7 +45,7 @@ Indem Sie Schalter mit MSBuild verwenden, können Sie angeben, wie viele Buildda
 ```  
 msbuild MyProject.proj /t:go /v:diag  
 ```  
-  
+
 ## <a name="saving-the-build-log-to-a-file"></a>Speichern des Buildprotokolls in einer Datei  
  Sie können den Schalter **/fileLogger** (**fl**) verwenden, um Builddaten in einer Datei zu speichern. Im folgenden Beispiel werden die Builddaten in einer Datei mit dem Namen `msbuild.log` gespeichert.  
   
@@ -72,7 +72,19 @@ msbuild MyProject.proj /t:go /fl1 /fl2 /fl3 /flp2:logfile=JustErrors.log;errorso
 ```  
   
  Weitere Informationen finden Sie unter [Befehlszeilenreferenz](../msbuild/msbuild-command-line-reference.md).  
-  
+
+## <a name="saving-a-binary-log"></a>Speichern eines binären Protokolls
+
+Sie können das Protokoll mit dem Parameter **/binaryLogger** (**bl**) in einem komprimierten, binären Format speichern. Dieses Protokoll enthält eine ausführliche Beschreibung vom Buildprozess und kann mithilfe von bestimmten Protokollanalysetools gelesen werden.
+
+Im folgenden Beispiel wird eine binäre Protokolldatei mit dem Namen `binarylogfilename` erstellt.
+
+```  
+/bl:binarylogfilename.binlog
+``` 
+ 
+Weitere Informationen finden Sie unter [Befehlszeilenreferenz](../msbuild/msbuild-command-line-reference.md).  
+
 ## <a name="using-a-custom-logger"></a>Verwenden einer benutzerdefinierten Protokollierung  
  Sie können eine eigene Protokollierung schreiben, indem Sie einen verwalteten Typ erstellen, der die <xref:Microsoft.Build.Framework.ILogger>-Schnittstelle implementiert. Sie können eine benutzerdefinierte Protokollierung verwenden, um z.B. Buildfehler per E-Mail zu versenden, sie in einer Datenbank oder einer XML-Datei zu protokollieren. Weitere Informationen finden Sie unter [Buildprotokollierungen](../msbuild/build-loggers.md).  
   

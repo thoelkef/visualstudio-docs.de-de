@@ -1,31 +1,36 @@
 ---
 title: Analysieren der CPU-Auslastungsdaten (verwalteter Code) | Microsoft-Dokumentation
-ms.custom: 
+ms.custom: ''
 ms.date: 12/05/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: ''
 ms.topic: quickstart
 helpviewer_keywords:
 - Profiling Tools, quick start
 - Diagnostics Tools, CPU Usage
-caps.latest.revision: "1"
+caps.latest.revision: 1
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: 50f2612687a58857f4d05478db073070e2cc9936
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- dotnet
+ms.openlocfilehash: 557b64815360e61f77365f509f96f40bd37ffed6
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="analyze-cpu-usage-data-in-visual-studio-managed-code"></a>Analysieren der CPU-Auslastungsdaten in Visual Studio (verwalteter Code)
 
 Visual Studio enthält viele leistungsstarke Features, mit denen Sie Leistungsprobleme in Ihrer Anwendung besser analysieren können. In diesem Thema werden einige der grundlegenden Funktionen erläutert. Außerdem betrachten wir das Tool, mit dem Leistungsengpässe aufgrund hoher CPU-Auslastung erkannt werden können. Die Diagnosetools werden für die .NET-Entwicklung in Visual Studio, darunter ASP.NET, sowie für die native/C++-Entwicklung unterstützt.
 
 Der Diagnosehub bietet Ihnen viele weitere Optionen zum Ausführen und Verwalten Ihrer Diagnosesitzung. Wenn das hier beschriebene **CPU-Auslastungs-Tool** nicht die benötigten Daten zurückgibt, gibt es andere [Tools zur Profilerstellung](../profiling/profiling-feature-tour.md), mit denen sie andere hilfreiche Informationen erhalten. In vielen Fällen kann der Leistungsengpass Ihrer Anwendung durch etwas anderes als die CPU ausgelöst werden, z.B. durch den Speicher, das Rendern der Benutzeroberfläche oder die Anforderungszeit des Netzwerks. Der Diagnosehub bietet Ihnen viele andere Optionen zum Aufzeichnen und Analysieren dieser Art von Daten.
+
+> [!NOTE]
+> Das CPU-Auslastungstool bietet derzeit keine exakten Ergebnisse mit portablen PBDs für .NET Core und ASP.NET Core. Verwenden Sie stattdessen vollständige PDBs.
 
 ## <a name="create-a-project"></a>Erstellen eines Projekts
 

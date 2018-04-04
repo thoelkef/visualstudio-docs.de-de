@@ -1,7 +1,7 @@
 ---
-title: "Verwenden von Build oder Release Management für automatische Tests in Visual Studio | Microsoft-Dokumentation"
+title: Verwenden von Build oder Release Management für automatische Tests in Visual Studio | Microsoft-Dokumentation
 ms.date: 03/02/2018
-ms.technology: vs-devops-test
+ms.technology: vs-ide-test
 ms.topic: article
 helpviewer_keywords:
 - automated testing, lab management, test lab
@@ -10,11 +10,11 @@ manager: ghogen
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: b12bffb6f2e5df0209fd3dfe3ea5fd005897d58d
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 5596dbbe65dc57dcb1862b74ed6379d1e2c080cf
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="use-build-and-release-management-instead-of-lab-management-for-automated-testing"></a>Verwenden von Build und Release Management anstelle von Lab Management für automatische Tests
 
@@ -43,7 +43,7 @@ Zu den Vorteilen der Verwendung von Build oder Release Management für dieses Sz
 
 ## <a name="self-service-management-of-scvmm-environments"></a>Self-Service-Verwaltung von SCVMM-Umgebungen
 
-Das [Lab-Center in Microsoft Test Manager](https://msdn.microsoft.com/library/dd997438.aspx) unterstützt die Fähigkeit, eine Bibliothek von Umgebungsvorlagen zu verwalten und Umgebungen bei Bedarf mit einem [SCVMM-Server](/system-center/vmm/overview?view=sc-vmm-1801) bereitzustellen.
+Das [Test-Center in Microsoft Test Manager](/vsts/manual-test/mtm/guidance-mtm-usage) unterstützt die Fähigkeit, eine Bibliothek von Umgebungsvorlagen zu verwalten und Umgebungen bei Bedarf mit einem [SCVMM-Server](/system-center/vmm/overview?view=sc-vmm-1801) bereitzustellen.
 
 Die Self-Service-Bereitstellungsfunktion von Lab Center verfolgt zwei unterschiedliche Ziele:
 

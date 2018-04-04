@@ -1,11 +1,11 @@
 ---
 title: Verwenden von Visual Studio zum Erstellen einer ASP.NET Core-Web-App in C# | Microsoft-Dokumentation
-ms.custom: 
+ms.custom: ''
 ms.date: 10/10/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: vs-acquisition
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: quickstart
 author: TerryGLee
 ms.author: tglee
@@ -15,11 +15,11 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: ba3c6655401501edf1f71e04f2aa249a6a001dda
-ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
+ms.openlocfilehash: 654dd237dab7f0f320c399e3da1b4f1d24537750
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Schnellstart: Verwenden von Visual Studio zum Erstellen Ihrer ersten ASP.NET Core-Web-App
 
@@ -86,7 +86,8 @@ Zunächst müssen Sie ein Projekt für die ASP.NET Core-Webanwendung erstellen. 
 
 Damit haben Sie den Schnellstart erfolgreich abgeschlossen. Wir hoffen, dass Sie etwas über die Visual Studio-IDE gelernt haben. Wenn Sie mehr über deren Funktionen erfahren möchten, können Sie gerne mit einem Tutorial im Inhaltsverzeichnis mit dem Abschnitt **Tutorials** fortfahren.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="next-steps"></a>Nächste Schritte
+Damit haben Sie den Schnellstart erfolgreich abgeschlossen! Wir hoffen, dass Sie etwas über C#, ASP.NET Core und die Visual Studio-IDE gelernt haben. Fahren Sie für weitere Informationen mit dem Tutorial fort.
 
-* [Erste Schritte mit C# und ASP.NET Core in Visual Studio](tutorial-csharp-aspnet-core.md)
-* [Erste Schritte mit Razor Pages in ASP.NET Core](/aspnet/core/tutorials/razor-pages/razor-pages-start)
+> [!div class="nextstepaction"]
+> [Erste Schritte mit C# und ASP.NET Core in Visual Studio](tutorial-csharp-aspnet-core.md)

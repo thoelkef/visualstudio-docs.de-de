@@ -1,9 +1,7 @@
 ---
-title: "Live Unit Testing – häufig gestellte Fragen | Microsoft-Dokumentation"
+title: Live Unit Testing – häufig gestellte Fragen | Microsoft-Dokumentation
 ms.date: 2017-10-03
-ms.suite: 
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-test
 ms.topic: article
 helpviewer_keywords:
 - Visual Studio ALM
@@ -12,11 +10,11 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2437a138e9e83d3b723971b53dac413ad0ea4151
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: c9a4628d6c2b0d842d57711f1204fbe15f88fac9
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="live-unit-testing-frequently-asked-questions"></a>Live Unit Testing – häufig gestellte Fragen
 
@@ -25,7 +23,6 @@ ms.lasthandoff: 02/21/2018
 **Antwort:**
 
 Weitere Informationen zu neuen Features und Verbesserungen für Live Unit Testing ab Visual Studio 2017 Version 15.3 finden Sie unter [What‘s New in Live Unit Testing (Neuerungen in Live Unit Testing)](live-unit-testing-whats-new.md).
-
 
 ## <a name="what-test-frameworks-does-live-unit-testing-support-and-what-are-the-minimum-supported-versions"></a>Welche Testframeworks werden von Live Unit Testing unterstützt und welche sind die unterstützten Mindestversionen?
 
@@ -58,8 +55,7 @@ Live Unit Testing kann mit den drei gängigen Frameworks für Komponententests v
 
 Wenn Sie ältere auf MSTest-basierenden Testprojekte haben, die sich auf `Microsoft.VisualStudio.QualityTools.UnitTestFramework` beziehen, und Sie nicht auf die neueren MSTest-NuGet-Pakete umsteigen möchten, sollten Sie auf Visual Studio 2017 Version 15.4 upgraden.
 
-In einigen Fällen müssen Sie explizit die NuGet-Pakete wiederherstellen, auf die die Projekte in der Projektmappe verweisen, damit Live Unit Testing funktioniert. Hierzu können Sie entweder die Projektmappe explizit erstellen (wählen Sie im obersten Visual Studio-Menü **Erstellen** und dann **Projektmappe neu erstellen** aus) oder Pakete in der Projektmappe wiederherstellen (klicken Sie mit der rechten Maustaste auf die Projektmappe, und wählen Sie **NuGet-Pakete wiederherstellen** aus), bevor Sie Living Unit Testing aktivieren.
-
+In einigen Fällen müssen Sie explizit die NuGet-Pakete wiederherstellen, auf die die Projekte in der Projektmappe verweisen, damit Live Unit Testing funktioniert. Erstellen Sie zum Wiederherstellen der Pakete entweder explizit die Projektmappe (wählen Sie im obersten Visual Studio-Menü **Erstellen** und dann **Projektmappe neu erstellen** aus), oder klicken Sie mit der rechten Maustaste auf die Projektmappe, und wählen Sie **NuGet-Pakete wiederherstellen** aus, bevor Sie Live Unit Testing aktivieren.
 
 ## <a name="does-live-unit-testing-work-with-net-core"></a>Kann Live Unit Testing mit .NET Core verwendet werden?
 
@@ -75,9 +71,9 @@ Das **Ausgabefenster** (wenn das Live Unit Testing-Dropdownmenü ausgewählt ist
 
 - Wenn die NuGet-Pakete, auf die von Projekten in der Projektmappe verwiesen wird, nicht wiederhergestellt wurden, funktioniert Live Unit Testing nicht. Eine explizite Erstellung der Projektmappe oder das Wiederherstellen von NuGet-Paketen in der Projektmappe vor dem Aktivieren von Live Unit Testing sollte dieses Problem beheben.
 
-- Wenn Sie MSTest-basierte Tests in den Projekten verwenden, stellen Sie sicher, dass Sie den Verweis auf `Microsoft.VisualStudio.QualityTools.UnitTestFramework` entfernen und Verweise auf die neuesten MSTest-NuGet-Pakete `MSTest.TestAdapter` (Mindestversion 1.1.11 ist erforderlich) und `MSTest.TestFramework` (Mindestversion 1.1.11 ist erforderlich) hinzufügen. Weitere Informationen finden Sie im Abschnitt „Unterstützte Testframeworks“ im Thema [Verwenden von Live Unit Testing in Visual Studio 2017 Enterprise Edition](live-unit-testing.md#supported-test-frameworks).
+- Wenn Sie MSTest-basierte Tests in den Projekten verwenden, stellen Sie sicher, dass Sie den Verweis auf `Microsoft.VisualStudio.QualityTools.UnitTestFramework` entfernen und Verweise auf die neuesten MSTest-NuGet-Pakete `MSTest.TestAdapter` (Mindestversion 1.1.11 ist erforderlich) und `MSTest.TestFramework` (Mindestversion 1.1.11 ist erforderlich) hinzufügen. Weitere Informationen finden Sie im Abschnitt „Unterstützte Testframeworks“ im Artikel [Verwenden von Live Unit Testing in Visual Studio 2017 Enterprise Edition](live-unit-testing.md#supported-test-frameworks).
 
-- Mindestens ein Projekt in der Projektmappe muss einen NuGet-Verweis oder einen direkten Verweis auf das xUnit-, NUnit- oder MSTest-Testframework aufweisen. Dieses Projekt sollte auch auf ein entsprechendes NuGet-Paket mit Visual Studio-Testadaptern verweisen. Auf den Visual Studio-Testadapter kann auch über eine `.runsettings`-Datei verwiesen werden. Die `.runsettings`-Datei muss einen Eintrag wie den folgenden enthalten:
+- Mindestens ein Projekt in der Projektmappe muss einen NuGet-Verweis oder einen direkten Verweis auf das xUnit-, NUnit- oder MSTest-Testframework aufweisen. Dieses Projekt sollte auch auf ein entsprechendes NuGet-Paket mit Visual Studio-Testadaptern verweisen. Auf den Visual Studio-Testadapter kann auch über eine `.runsettings`-Datei verwiesen werden. Die `.runsettings`-Datei muss einen Eintrag wie im folgenden Beispiel enthalten:
 
    ```xml
     <RunSettings>
@@ -85,7 +81,7 @@ Das **Ausgabefenster** (wenn das Live Unit Testing-Dropdownmenü ausgewählt ist
           <TestAdaptersPaths>path-to-your-test-adapter</TestAdaptersPaths>
        </RunConfiguration>
     </RunSettings>
-   ``` 
+   ```
 
 ## <a name="why-does-live-unit-testing-show-incorrect-coverage-after-you-upgrade-the-test-adapter-referenced-in-your-visual-studio-projects-to-the-supported-version"></a>Warum wird beim Live Unit Testing eine falsche Abdeckung angezeigt, nachdem Sie ein Upgrade auf den in Ihren Visual Studio-Projekten verwiesenen Testadapter auf die unterstützte Version durchgeführt haben?
 
@@ -174,7 +170,7 @@ Es gibt mehrere Unterschiede:
 
 **Antwort:**
 
-Die benutzerspezifische Einstellung finden Sie im Abschnitt „Einschließen und Ausschließen von Testprojekten und Testmethoden“ im Thema [Verwenden von Live Unit Testing in Visual Studio 2017 Enterprise Edition](live-unit-testing.md#including-and-excluding-test-projects-and-test-methods). Dies ist äußerst nützlich, wenn Sie einen bestimmten Satz von Tests für eine bestimmte Bearbeitungssitzung ausführen möchten oder Ihre eigenen persönlichen Einstellungen beibehalten möchten.
+Die benutzerspezifische Einstellung finden Sie im Abschnitt „Einschließen und Ausschließen von Testprojekten und Testmethoden“ im Artikel [Verwenden von Live Unit Testing in Visual Studio 2017 Enterprise Edition](live-unit-testing.md#including-and-excluding-test-projects-and-test-methods). Dies ist nützlich, wenn Sie eine bestimmte Reihe von Tests für eine bestimmte Bearbeitungssitzung ausführen möchten oder Ihre eigenen persönlichen Einstellungen beibehalten möchten.
  
 Bei spezifischen Einstellungen von Projektmappen können Sie das <xref:System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverageAttribute?displayProperty=fullName>-Attribut programmgesteuert anwenden, um Methoden, Eigenschaften, Klassen oder Strukturen von der Instrumentierung durch Live Unit Testing auszuschließen. Darüber hinaus können Sie auch die `<ExcludeFromCodeCoverage>`-Eigenschaft in der Projektdatei auf `true` festlegen, um zu verhindern, dass das gesamte Projekt instrumentiert wird. Live Unit Testing führt die Tests dennoch aus, die nicht instrumentiert wurden, aber deren Abdeckung wird nicht visuell dargestellt.
 
@@ -203,7 +199,7 @@ public class Class1
 
 **Antwort:**
 
-Dieses Problem wurde behoben und besteht nicht mehr in Visual Studio 2017 Version 15.3. Führen Sie ein Upgrade auf diese Version von Visual Studio aus.
+Dieses Problem wurde behoben und besteht in Visual Studio 2017 Version 15.3 nicht mehr. Führen Sie ein Upgrade auf diese Version von Visual Studio aus.
 
 Für ältere Versionen von Visual Studio 2017 gibt es ein bekanntes Problem, das dazu führen kann, dass Live Unit Testing-Builds die folgenden Win32 PE-Headerdaten nicht einbetten:
 

@@ -1,12 +1,12 @@
 ---
-title: "Profilerstellung für die Anwendungsleistung in Visual Studio | Microsoft-Dokumentation"
+title: Profilerstellung für die Anwendungsleistung in Visual Studio | Microsoft-Dokumentation
 ms.custom: H1Hack27Feb2017
 ms.date: 02/27/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 f1_keywords:
 - vs.performance.wizard.intropage
@@ -16,17 +16,17 @@ helpviewer_keywords:
 - CPU Usage
 - Diagnostics Tools
 ms.assetid: da2fbf8a-2d41-4654-a509-dd238532d25a
-caps.latest.revision: 
+caps.latest.revision: 45
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: bacc4e9ebb0b0125b22089ec53a97248e9e1f4e9
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+ms.openlocfilehash: 83268e1c7e4c4672caf17b6852cbf3fd38ea31b1
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="profile-application-performance-in-visual-studio"></a>Profilerstellung für die Anwendungsleistung in Visual Studio
 Sie können Visual Studio-Profilerstellungstools verwenden, um Leistungsprobleme in der Anwendung zu analysieren. Dieses Verfahren veranschaulicht die Verwendung der Registerkarte **CPU-Auslastung** der Diagnosetools, um Leistungsdaten Ihrer App zu erhalten. Die Diagnosetools werden für die .NET-Entwicklung in Visual Studio, darunter ASP.NET, sowie für die native/C++-Entwicklung unterstützt.
@@ -40,6 +40,9 @@ Der Diagnosehub bietet Ihnen viele weitere Optionen zum Ausführen und Verwalten
 |  ![Kamerasymbol für video](../install/media/video-icon.png "Video ansehen")  |    [Sehen Sie sich ein Video an](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Profiling-with-Diagnostics-Tools-in-Visual-Studio-2017-daHnzMD6D_9211787171), in dem die Diagnosetools erläutert werden, mit denen Sie die CPU-Auslastung und die Speicherauslastung analysieren können. |
 
 Dieses Thema behandelt die Analyse der CPU-Auslastung in einem normalen Debuggingworkflow. Sie können die CPU-Auslastung auch ohne Debugger analysieren, oder indem Sie eine ausgeführte App als Ziel setzen. Weitere Informationen finden Sie unter [Sammeln von Profilerstellungsdaten während des Debuggens](../profiling/running-profiling-tools-with-or-without-the-debugger.md#collect-profiling-data-without-debugging) in [Ausführen von Profilerstellungstools mit oder ohne den Debugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
+
+> [!NOTE]
+> Das CPU-Auslastungstool bietet derzeit keine exakten Ergebnisse mit portablen PBDs für .NET Core und ASP.NET Core. Verwenden Sie stattdessen vollständige PDBs.
   
 ##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Schritt 1: Sammeln von Profilerstellungsdaten 
   

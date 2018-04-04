@@ -1,18 +1,18 @@
 ---
-title: Konfigurieren von Komponententests in Visual Studio mithilfe einer *RUNSETTINGS*-Datei | Microsoft-Dokumentation
+title: Konfigurieren von Komponententests in Visual Studio mithilfe einer RUNSETTINGS-Datei | Microsoft-Dokumentation
 ms.date: 02/28/2018
-ms.technology: vs-devops-test
+ms.technology: vs-ide-test
 ms.topic: article
 ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: f10870096697341081904c4dac9540d72823e52f
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 94bcd0bc473a87246feb3b5e790ed060b615b4be
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Konfigurieren von Komponententests mithilfe einer *RUNSETTINGS*-Datei
 
@@ -57,7 +57,7 @@ Im Folgenden ist eine typische *RUNSETTINGS*-Datei abgebildet. Jedes Element der
 
     <!-- Path to Test Adapters -->
     <TestAdaptersPaths>%SystemDrive%\Temp\foo;%SystemDrive%\Temp\bar</TestAdaptersPaths>
-  
+
      <!--TestSessionTimeout is only available with Visual Studio 2017 version 15.5 and higher -->
      <!-- Specify timeout in milliseconds. A valid value should be greater than 0 -->
      <TestSessionTimeout>10000</TestSessionTimeout>
@@ -147,7 +147,7 @@ Der Datensammler der Codeabdeckung erstellt ein Protokoll der Teile des Anwendun
 
 Der Videodatensammler erfasst einen Bildschirm bei der Ausführung von Tests. Diese Aufzeichnung kann zur Problembehandlung von Benutzeroberflächentests verwendet werden. Der Videodatensammler ist in **Visual Studio 2017 Version 15.5** und höher verfügbar.
 
-Um andere Typen von Adaptern für diagnostische Daten anzupassen, müssen Sie eine Testeinstellungsdatei verwenden. Weitere Informationen finden Sie unter [Specifying Test Settings for Visual Studio Tests (Angeben von Testeinstellungen für Visual Studio-Tests)](/devops-test-docs/test/specifying-test-settings-for-visual-studio-tests).
+Um andere Typen von Adaptern für diagnostische Daten anzupassen, müssen Sie eine Testeinstellungsdatei verwenden.
 
 ### <a name="testrunparameters"></a>TestRunParameters
 
@@ -181,4 +181,4 @@ Diese Einstellungen betreffen den Testadapter, der Testmethoden ausführt, die �
 
 ## <a name="see-also"></a>Siehe auch
 
-[Anpassen der Code Coverage-Analyse](../test/customizing-code-coverage-analysis.md)
+- [Anpassen der Code Coverage-Analyse](../test/customizing-code-coverage-analysis.md)

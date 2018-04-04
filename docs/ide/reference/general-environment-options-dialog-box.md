@@ -1,11 +1,12 @@
 ---
-title: "Allgemein, Umgebung, Dialogfeld „Optionen“ | Microsoft-Dokumentation"
-ms.custom: 
+title: Allgemein, Umgebung, Dialogfeld „Optionen“ | Microsoft-Dokumentation
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VS.Message.0x800a002e
@@ -25,16 +26,17 @@ helpviewer_keywords:
 - editors, autocompletion
 - Options dialog box, General Environment
 - General Environment Options dialog box
-caps.latest.revision: "34"
+caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: de71795242cd5fbb1d41f3d071629e54cf5d04f5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 5c434b60efa054dbadcb8ef24470ed135d450e12
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="general-environment-options-dialog-box"></a>Allgemein, Umgebung, Dialogfeld "Optionen"
 
@@ -49,7 +51,7 @@ Verwenden Sie diese Seite, um Farbschemas, Statusleisteneinstellungen, Dateierwe
 
 Wählen Sie das Farbschema **Blau**, **Hell** oder **Dunkel** für die IDE aus.
 
-Sie können auch weitere vordefinierte Farbschemas installieren und benutzerdefinierte Schemas erstellen. Dazu müssen Sie den **Visual Studio Color Theme Editor** aus [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.VisualStudio2017ColorThemeEditor) herunterladen und installieren. Nachdem Sie dieses Tool installiert haben, werden zusätzliche Farbschemas im Farbschemalistenfeld angezeigt.
+Sie können auch weitere vordefinierte Farbschemas installieren und benutzerdefinierte Schemas erstellen. Dazu müssen Sie den **Visual Studio Color Theme Editor** aus [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2017ColorThemeEditor) herunterladen und installieren. Nachdem Sie dieses Tool installiert haben, werden zusätzliche Farbschemas im Farbschemalistenfeld angezeigt.
 
 **Titelschreibweise in Menüleiste anwenden**
 
@@ -69,22 +71,17 @@ Verwendet Hardwaregrafikbeschleunigung, sofern verfügbar, anstelle von Software
 
 ## <a name="other"></a>Andere
 
-**Im Menü „Fenster“ angezeigte Elemente**  
-Passt die Anzahl der Fenster an, die in der Fensterliste des Menüs **Fenster** angezeigt werden. Geben Sie eine Zahl zwischen 1 und 24 ein. Die Standardanzahl ist 10.
+**Im Menü „Fenster“ angezeigte Elemente** Passt die Anzahl der Fenster an, die in der Fensterliste des Menüs **Fenster** angezeigt werden. Geben Sie eine Zahl zwischen 1 und 24 ein. Die Standardanzahl ist 10.
 
-**In den Listen der zuletzt verwendeten Elemente angezeigte Elemente**  
-Passt die Anzahl der zuletzt geöffneten Projekte und Dateien an, die im Menü **Datei** angezeigt werden. Geben Sie eine Zahl zwischen 1 und 24 ein. Die Standardanzahl ist 10. Dies ist eine einfache Möglichkeit, zuletzt verwendete Projekte und Dateien abzurufen.
+**In den Listen der zuletzt geöffneten Elemente angezeigte Elemente** Passt die Anzahl der zuletzt geöffneten Projekte und Dateien an, die im Menü **Datei** angezeigt werden. Geben Sie eine Zahl zwischen 1 und 24 ein. Die Standardanzahl ist 10. Dies ist eine einfache Möglichkeit, zuletzt verwendete Projekte und Dateien abzurufen.
 
-**Statusleiste anzeigen**  
-Zeigt die Statusleiste an. Die Statusleiste befindet sich am unteren Rand des IDE-Fensters und zeigt Informationen über den Fortschritt derzeit ausgeführter Vorgänge an.
+**Statusleiste anzeigen** Zeigt die Statusleiste an. Die Statusleiste befindet sich am unteren Rand des IDE-Fensters und zeigt Informationen über den Fortschritt derzeit ausgeführter Vorgänge an.
 
-**Schaltfläche „Schließen“ bezieht sich nur auf aktives Toolfenster**  
-Gibt an, dass beim Klicken auf die Schaltfläche **Schließen** nur das Toolfenster geschlossen wird, das den Fokus besitzt, und nicht alle Toolfenster im angedockten Satz. Diese Option ist standardmäßig ausgewählt.
+**Schaltfläche „Schließen“ bezieht sich nur auf aktives Toolfenster** Gibt an, dass beim Klicken auf die Schaltfläche **Schließen** nur das Toolfenster geschlossen wird, das den Fokus besitzt, und nicht alle Toolfenster im angedockten Satz. Diese Option ist standardmäßig ausgewählt.
 
-**Schaltfläche „Automatisch ausblenden“ bezieht sich nur auf aktives Toolfenster**  
-Gibt an, dass beim Klicken auf die Schaltfläche **Automatisch ausblenden** nur das Toolfenster automatisch ausgeblendet wird, das den Fokus besitzt, und nicht alle Toolfenster im angedockten Satz. Diese Option ist standardmäßig nicht ausgewählt.
+**Schaltfläche „Automatisch ausblenden“ bezieht sich nur auf aktives Toolfenster** Gibt an, dass beim Klicken auf die Schaltfläche **Automatisch ausblenden** nur das Toolfenster automatisch ausgeblendet wird, das den Fokus besitzt, und nicht alle Toolfenster im angedockten Satz. Diese Option ist standardmäßig nicht ausgewählt.
 
 ## <a name="see-also"></a>Siehe auch
 
-[Dialogfeld „Umgebungsoptionen“](../../ide/reference/environment-options-dialog-box.md)  
+[Dialogfeld „Umgebungsoptionen“](../../ide/reference/environment-options-dialog-box.md)
 [Anpassen von Fensterlayouts](../../ide/customizing-window-layouts-in-visual-studio.md)

@@ -1,12 +1,13 @@
 ---
 title: Prototypen und Prototypvererbung | Microsoft-Dokumentation
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - JavaScript
@@ -16,15 +17,15 @@ helpviewer_keywords:
 - prototype [JavaScript]
 - prototype inheritance [JavaScript]
 ms.assetid: 1e1d0631-2a9f-4011-b9fe-fa338e1ef34c
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ade60bcbbfad166bae18b650daa6906f9983d4cd
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 200ca757e72b2eec8f09fd48a841cc8eb816c85d
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="prototypes-and-prototype-inheritance"></a>Prototypen und Prototypvererbung
 In JavaScript ist ein `prototype` eine Eigenschaft von Funktionen und Objekten, die von Konstruktorfunktionen erstellt werden. Der Prototyp einer Funktion ist ein Objekt. Der Hauptverwendungszweck ist, wenn eine Funktion als Konstruktor verwendet wird.  
@@ -80,9 +81,12 @@ var bicycle = Object.create(Object.getPrototypeOf(Vehicle), {
  Das `bicycle`-Objekt verfügt über die `wheels`-, `engine`-, `color`- und `pedals`-Eigenschaft, und der Prototyp ist `Vehicle.prototype`. Das JavaScript-Modul durchsucht die `pedals`-Eigenschaft für `bicycle` sowie die Prototypenkette, um nach den `wheels`-, `engine`- und `color`-Eigenschaften für `Vehicle` zu suchen.  
   
 ### <a name="changing-an-objects-prototype"></a>Ändern des Prototyps eines Objekts  
- In Internet Explorer 11, können Sie den internen Prototyp eines Objekts oder einer Funktion durch einen neuen Prototyp ersetzen, indem Sie die Eigenschaft [__proto\_\_](../../javascript/reference/proto-property-object-javascript.md) verwenden. Wenn Sie diese Eigenschaft verwenden, erben Sie die Eigenschaften und Methoden des neuen Prototyps zusammen mit anderen Eigenschaften und Methoden in der Prototypenkette.  
+In Internet Explorer 11 können Sie den internen Prototyp eines Objekts oder einer Funktion durch einen neuen Prototyp ersetzen, indem Sie die Eigenschaft [__proto__](../../javascript/reference/proto-property-object-javascript.md) verwenden. Wenn Sie diese Eigenschaft verwenden, erben Sie die Eigenschaften und Methoden des neuen Prototyps zusammen mit anderen Eigenschaften und Methoden in der Prototypenkette.  
+
+> [!WARNING]
+> Die `__proto__`-Eigenschaft ist ein Legacyfeature. Verwenden Sie stattdessen [Object.getPrototypeOf](../reference/object-getprototypeof-function-javascript.md).
   
- Das folgende Beispiel zeigt, wie Sie den Prototyp eines Objekts ändern können. Dieses Beispiel zeigt, wie sich die geerbten Eigenschaften des Objekts ändern, wenn Sie dessen Prototyp ändern.  
+Das folgende Beispiel zeigt, wie Sie den Prototyp eines Objekts ändern können. Dieses Beispiel zeigt, wie sich die geerbten Eigenschaften des Objekts ändern, wenn Sie dessen Prototyp ändern.  
   
 ```JavaScript  
 function Friend() {  

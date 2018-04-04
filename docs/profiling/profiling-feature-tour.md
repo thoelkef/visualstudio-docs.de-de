@@ -2,26 +2,26 @@
 title: Tour zur Profilerstellungsfunktion | Microsoft-Dokumentation
 ms.custom: H1HackMay2017
 ms.date: 05/18/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - debugger
 ms.assetid: d2ee0301-ea78-43d8-851a-71b7b2043d73
-caps.latest.revision: 
+caps.latest.revision: 1
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 43955eedc5d7149396b3ad6dc7c380298b631d9e
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+ms.openlocfilehash: b4662b1e498303bd7a4e09acd78db43519c142b1
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="profiling-feature-tour"></a>Tour zur Profilerstellungsfunktion
 
@@ -154,18 +154,21 @@ Wenn Sie Funktionen wie z.B. Instrumentation benötigen, die derzeit nicht in de
 
 Hier sehen Sie eine Tabelle, in der die verschiedenen Tools aufgelistet sind, die Visual Studio anbietet sowie die verschiedenen Projekttypen, die Sie mit diesen verwenden können:
   
-|Leistungstool|Windows-Desktop|UWP|ASP.NET/ASP.NET Core|  
-|----------------------|---------------------|------------------------------|-------------|  
-|[Speicherauslastung](../profiling/memory-usage.md)|ja|ja|ja|  
-|[CPU-Auslastung](../profiling/cpu-usage.md)|ja|ja|Ja (Nein für .NET Core bzw. ASP.NET Core)|  
-|[GPU-Nutzung](../debugger/gpu-usage.md)|ja|ja|Nein|  
-|[Anwendungszeitachse](../profiling/application-timeline.md)|ja|ja|Nein|  
-|[PerfTips](../profiling/perftips.md)|ja|ja für XAML, nicht für HTML|ja|  
-|[Leistungs-Explorer](../profiling/performance-explorer.md)|ja|Nein|Ja (Nein für ASP.NET Core)|  
-|[IntelliTrace](../debugger/intellitrace.md)|Nur .NET und Visual Studio Enterprise|Nur .NET und Visual Studio Enterprise|Nur .NET und Visual Studio Enterprise|
-|[Netzwerkverwendung](../profiling/network-usage.md)|Nein|ja|Nein| 
-|[HTML UI responsiveness](../profiling/html-ui-responsiveness.md)|Nein|ja für HTML, nicht für XAML|Nein|  
-|[JavaScript-Speicher](../profiling/javascript-memory.md)|Nein|ja für HTML, nicht für XAML|Nein|  
+|Leistungstool|Windows-Desktop|UWP|ASP.NET/ASP.NET Core| 
+|----------------------|---------------------|-------------|-------------|  
+|[Speicherauslastung](../profiling/memory-usage.md)|ja|ja|ja| 
+|[CPU-Auslastung](../profiling/cpu-usage.md)|ja (siehe Hinweis)|ja|ja (siehe Hinweis)|
+|[GPU-Nutzung](../debugger/gpu-usage.md)|ja|ja|Nein| 
+|[Anwendungszeitachse](../profiling/application-timeline.md)|ja|ja|Nein|
+|[PerfTips](../profiling/perftips.md)|ja|ja für XAML, nicht für HTML|ja|
+|[Leistungs-Explorer](../profiling/performance-explorer.md)|ja|Nein|ja|
+|[IntelliTrace](../debugger/intellitrace.md)|Nur .NET mit Visual Studio Enterprise|Nur .NET mit Visual Studio Enterprise|Nur .NET mit Visual Studio Enterprise|
+|[Netzwerkverwendung](../profiling/network-usage.md)|Nein|ja|Nein|
+|[HTML UI responsiveness](../profiling/html-ui-responsiveness.md)|Nein|ja für HTML, nicht für XAML|Nein| 
+|[JavaScript-Speicher](../profiling/javascript-memory.md)|Nein|ja für HTML, nicht für XAML|Nein|
+
+> [!NOTE]
+> Das CPU-Auslastungstool bietet derzeit keine exakten Ergebnisse mit portablen PBDs für .NET Core und ASP.NET Core. Verwenden Sie stattdessen vollständige PDBs.
 
 ## <a name="see-also"></a>Siehe auch  
  [Debuggen in Visual Studio](../debugger/debugging-in-visual-studio.md)

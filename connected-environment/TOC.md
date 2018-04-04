@@ -30,6 +30,7 @@
 
 # Gewusst wie
 ##[Freigeben einer Entwicklungsumgebung](how-to/share-dev-environment.md)
+##[Verwenden eines benutzerdefinierten NuGet-Feeds](how-to/use-a-custom-nuget-feed.md)
 ##[Verwenden von kubectl in einer vernetzten Visual Studio-Umgebung](how-to/use-kubectl-with-vsce.md)
 
 # [Problembehandlung](troubleshooting.md)

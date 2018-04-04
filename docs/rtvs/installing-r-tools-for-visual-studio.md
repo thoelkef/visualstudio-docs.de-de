@@ -1,13 +1,13 @@
 ---
-title: "Installieren von R Tools für Visual Studio | Microsoft-Dokumentation"
-description: "Installieren der R Tools für Visual Studio in Visual Studio 2017 und Visual Studio 2015, einschließlich Offlineinstallationen."
-ms.custom: 
+title: Installieren von R Tools für Visual Studio | Microsoft-Dokumentation
+description: Installieren der R Tools für Visual Studio in Visual Studio 2017 und Visual Studio 2015, einschließlich Offlineinstallationen.
+ms.custom: ''
 ms.date: 01/24/2018
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-r
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 dev_langs:
 - R
 ms.topic: article
@@ -16,11 +16,11 @@ ms.author: kraigb
 manager: ghogen
 ms.workload:
 - data-science
-ms.openlocfilehash: 76dc2623edebed6cca48c40c0ad0bc96f783e39d
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: bb8f380ce17242f7ac9953226db7ad683c17a2de
+ms.sourcegitcommit: 236c250bb97abdab99d00c6525d106fc0035d7d0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="how-to-install-r-tools-for-visual-studio"></a>Installieren von R Tools für Visual Studio
 
@@ -36,7 +36,7 @@ In diesem Artikel:
 
 ## <a name="supported-versions-of-visual-studio"></a>Unterstützte Versionen von Visual Studio
 
-R Tools für Visual Studio (RTVS) werden unter Windows in den Editionen Community (kostenlos), Professional und Enterprise von [Visual Studio 2017](https://www.visualstudio.com/downloads/) sowie [Visual Studio 2015 Update 3 (oder höher)](http://go.microsoft.com/fwlink/?LinkId=691129) (direkter Download) unterstützt.
+R Tools für Visual Studio (RTVS) werden unter Windows in den Editionen Community (kostenlos), Professional und Enterprise von [Visual Studio 2017](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) sowie [Visual Studio 2015 Update 3 (oder höher)](http://go.microsoft.com/fwlink/?LinkId=691129) (direkter Download) unterstützt.
 
 RTVS wird in Visual Studio für Mac derzeit nicht unterstützt.
 
@@ -44,7 +44,7 @@ RTVS wird nicht installiert, wenn Sie nur über Visual Studio Shell verfügen, w
 
 ## <a name="installing-rtvs-in-visual-studio-2017"></a>Installieren von RTVS in Visual Studio 2017
 
-1. Führen Sie den Visual Studio-Installer aus. (Siehe [Downloads](https://www.visualstudio.com/downloads/) , wenn Sie Visual Studio noch nicht installiert haben.) Achten Sie unter Windows 7 darauf, dass Ihr Installer aktualisiert ist und Visual Studio 2017, Version *15.2, Build 26430.12* oder höher anzeigt.
+1. Führen Sie den Visual Studio-Installer aus, und wählen Sie die Option **Ändern** aus (weitere Informationen finden Sie unter [Ändern von Visual Studio](../install/modify-visual-studio.md)). Wenn Sie Visual Studio noch nicht installiert haben, finden Sie weitere Informationen unter [Installieren von Visual Studio](../install/install-visual-studio.md). Achten Sie unter Windows 7 darauf, dass Ihr Installer aktualisiert ist und Visual Studio 2017, Version *15.2, Build 26430.12* oder höher anzeigt.
 
 1. Wählen Sie die Workload **Data Science und analytische Anwendungen** aus.
 
@@ -86,7 +86,7 @@ Die Offlineinstallation eignet sich für Computer, die keine Internetverbindung 
     - [Visual Studio 2017](../install/create-an-offline-installation-of-visual-studio.md)
     - [Visual Studio 2015](https://msdn.microsoft.com/library/mt706497.aspx)
 
-1. Laden Sie für Visual Studio 2015 die RTVS-Offlineinstaller unter [https://aka.ms/rtvs-current-zip](https://aka.ms/rtvs-current-zip) und [https://aka.ms/rtvs-remote-zip](https://aka.ms/rtvs-remote-zip) herunter.
+1. Laden Sie die RTVS-Offline-Installer für Visual Studio 2015 unter [https://aka.ms/rtvs-current-zip](https://aka.ms/rtvs-current-zip) und [https://aka.ms/rtvs-remote-zip](https://aka.ms/rtvs-remote-zip) herunter.
 
 1. Installieren von Visual Studio und RTVS über die Offlineinstaller.
 

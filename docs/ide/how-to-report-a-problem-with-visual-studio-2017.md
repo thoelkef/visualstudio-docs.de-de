@@ -1,10 +1,10 @@
 ---
 title: Melden eines Problems mit Visual Studio 2017 | Microsoft-Dokumentation
-ms.custom: 
-ms.date: 02/26/2018
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.custom: ''
+ms.date: 03/11/2018
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: bee01179-cde5-4419-9095-190ee0ba5902
 author: TerryGLee
@@ -13,11 +13,11 @@ manager: ghogen
 ms.technology: vs-acquisition
 ms.workload:
 - multiple
-ms.openlocfilehash: f3e5e01abeb45e7cfdefebb7d6fd3d63320e1e31
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: 6fa988ce97968949036a74ff473cfe11dd3b669e
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2017"></a>Melden eines Problems mit Visual Studio 2017
 
@@ -69,7 +69,7 @@ Ablaufverfolgungs- und Heap-Abbilddateien sind nützlich für die Diagnose von P
 
  Klicken Sie auf die Schaltfläche **Senden**, um den Bericht zusammen mit allen Images, Ablaufverfolgungs- und Speicherabbilddateien zu senden. (Wenn die Schaltfläche **Senden** grau dargestellt ist, überprüfen Sie, ob Sie einen Titel und eine Beschreibung für den Bericht eingegeben haben.)
 
-## Alternative Berichterstellung <a name="alternate_reporting"></a>
+## Melden von Alternativen <a name="alternate_reporting"></a>
 
 ### <a name="report-a-problem-by-using-the-visual-studio-installer"></a>Melden eines Problems mithilfe des Visual Studio-Installers
 
@@ -77,9 +77,9 @@ Wenn Sie die Installation von Visual Studio nicht abschließen oder nicht auf da
 
  ![Sie können zur Schaltfläche „Feedback geben“ im Visual Studio-Installer navigieren, um das Feedbacktool zu öffnen](../install/media/report-a-problem.png)
 
-### <a name="report-a-problem-directly-to-the-visual-studio-developer-community"></a>Direktes Melden eines Problems in der Visual Studio-Entwicklercommunity
+### <a name="search-for-problems-and-solutions-by-using-the-visual-studio-developer-community"></a>Suchen nach Problemen und Lösungen mithilfe der Visual Studio-Entwicklercommunity
 
-Wenn Sie ein Problem nicht über Visual Studio melden möchten oder können, können Sie es stattdessen direkt der Visual Studio-Entwicklercommunity melden. Weitere Informationen finden Sie auf der Seite [Visual Studio-Entwicklercommunity](https://developercommunity.visualstudio.com/).
+Wenn Sie ein Problem nicht über Visual Studio melden möchten oder können, wurde es möglicherweise bereits gemeldet und eine Lösung in der Visual Studio-Entwicklercommunity veröffentlicht. Weitere Informationen finden Sie auf der Seite [Visual Studio-Entwicklercommunity](https://developercommunity.visualstudio.com/).
 
 #### <a name="provide-product-feedback-or-a-suggestion"></a>Bereitstellen von Feedback oder Anregungen zu Produkten
 

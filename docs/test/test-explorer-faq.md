@@ -1,10 +1,7 @@
 ---
-title: "Test-Explorer – häufig gestellte Fragen | Microsoft-Dokumentation"
+title: Visual Studio-Test-Explorer – häufig gestellte Fragen | Microsoft-Dokumentation
 ms.date: 1/15/2018
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-test
 ms.topic: article
 helpviewer_keywords:
 - Test Explorer
@@ -18,11 +15,11 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: ghogen
-ms.openlocfilehash: d06c02e651dd4acdcaebf05448282f26c20e3a75
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 1ca63ce299cb95546100e7f7ce7f98eb1c1616c2
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Visual Studio-Test-Explorer – häufig gestellte Fragen
 
@@ -90,10 +87,10 @@ vsregedit set “C:\Program Files (x86)\Microsoft Visual Studio\Preview\Enterpri
 
 > [!NOTE]
 > Sie können das Flag mit dem gleichen Befehl deaktivieren, indem Sie den Wert 0 statt 1 nach dem Dword verwenden.
-  
+
 ## <a name="see-also"></a>Siehe auch
 
-<xref:Microsoft.VisualStudio.TestTools.UnitTesting?displayProperty=fullName>  
-[Erstellen und Ausführen von Komponententests für vorhandenen Code](http://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173)
-[Komponententest für Code](unit-test-your-code.md)
-[Live Unit Testing – häufig gestellte Fragen](live-unit-testing-faq.md)
+- <xref:Microsoft.VisualStudio.TestTools.UnitTesting?displayProperty=fullName>
+- [Creating and Running Unit Tests for Existing Code (Erstellen und Ausführen von Komponententests für vorhandenen Code)](http://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173)
+- [Komponententest für Code](unit-test-your-code.md)
+- [Live-Komponententests – Häufig gestellte Fragen](live-unit-testing-faq.md)

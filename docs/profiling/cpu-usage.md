@@ -2,22 +2,24 @@
 title: Analysieren der CPU-Auslastung in Visual Studio | Microsoft-Dokumentation
 ms.custom: H1Hack27Feb2017
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7501a20d-04a1-480f-a69c-201524aa709d
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: cfe16da805ec8a43af8bed0c7e112e589d060bc4
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+ms.workload:
+- multiple
+ms.openlocfilehash: 2324c857807f2f15762ce36539df3d7c2ad01b4b
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="analyze-cpu-usage"></a>Analysieren der CPU-Auslastung
 Wenn Sie Leistungsprobleme in Ihrer App untersuchen müssen, ist ein guter Ausgangspunkt die Untersuchung der CPU-Nutzung. Das Tool **CPU-Auslastung** zeigt Ihnen, wo die CPU Zeit für die Ausführung von Visual C++-, Visual C#/Visual Basic und JavaScript-Code verbringt. Ab Visual Studio 2015 Update 1 können Sie eine Aufteilung nach Funktion der CPU-Auslastung anzeigen, ohne den Debugger zu verlassen. Sie können die CPU-Profilerstellung während des Debuggens ein- und ausschalten und die Ergebnisse anzeigen, wenn die Ausführung angehalten wird, z. B. an einem Haltepunkt.  
@@ -25,6 +27,9 @@ Wenn Sie Leistungsprobleme in Ihrer App untersuchen müssen, ist ein guter Ausga
 Zum Ausführen und Verwalten Ihrer Diagnosesitzung stehen Ihnen mehrere Optionen zur Verfügung. Sie können z. B. das Tool **CPU-Auslastung** auf lokalen oder Remotecomputern oder in einem Simulator oder Emulator ausführen. Sie können die Leistung eines geöffneten Projekts in Visual Studio analysieren, eine Verbindung mit einer ausgeführten App herstellen oder eine App starten, die aus dem Microsoft Store installiert wurde. Weitere Informationen finden Sie unter [Run Profiling Tools with or without the Debugger (Ausführen von Profilerstellungstools mit und ohne Debugger)](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
 
 Hier erfahren Sie, wie Sie die CPU-Auslastung mithilfe von Releasebuilds erfassen und analysieren. Informationen zur Analyse der CPU-Auslastung während des Debuggens finden Sie unter [Beginners Guide to Performance Profiling (Einführung in die Leistungsprofilerstellung)](../profiling/beginners-guide-to-performance-profiling.md). 
+
+> [!NOTE]
+> Das CPU-Auslastungstool bietet derzeit keine exakten Ergebnisse mit portablen PBDs für .NET Core und ASP.NET Core. Verwenden Sie stattdessen vollständige PDBs.
   
 ##  <a name="BKMK_Collect_CPU_usage_data"></a> Erfassen von CPU-Auslastungsdaten  
   

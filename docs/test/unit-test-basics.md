@@ -1,11 +1,7 @@
 ---
-title: Grundlagen zum Komponententest | Microsoft-Dokumentation
-ms.custom: 
+title: Grundlagen zu Komponententests in Visual Studio| Microsoft-Dokumentation
 ms.date: 2016-01-07
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-test
 ms.topic: article
 f1_keywords:
 - vs.UnitTest.CreateUnitTest
@@ -14,11 +10,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ac60dbd14b16491f9de841f168cd5bf725c340d
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: 939cbaa6cd99cbcc5f011a873f46c4e873c22543
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="unit-test-basics"></a>Grundlagen zum Komponententest
 
@@ -30,7 +26,7 @@ Sie können schnell generieren Testprojekte und Testmethoden im Code oder die Te
 
 Mit dem Test-Explorer können auch Drittanbieter- und Open-Source-Komponententest-Frameworks ausgeführt werden, in denen Test-Explorer-Add-On-Schnittstellen implementiert sind. Sie können viele dieser Frameworks über den Visual Studio-Erweiterungs-Manager und die Visual Studio Gallery hinzufügen. Weitere Informationen finden Sie unter [Installieren von Frameworks für Komponententests von Drittanbietern](../test/install-third-party-unit-test-frameworks.md).
 
-## <a name="quick-starts"></a>Schnellstarts
+## <a name="getting-started"></a>Erste Schritte
 
 Eine Einführung in Komponententests, in der Sie direkt in die Codierung eingeführt werden, finden Sie in diesen Themen:
 
@@ -113,7 +109,7 @@ Häufig ist es schneller, das Komponententestprojekt und die Komponententest-Stu
 3.  Wenn Sie ein Microsoft-Komponententest-Framework verwenden möchten, wählen Sie aus der Liste der Projektvorlagen **Komponententestprojekt** aus. Wählen Sie andernfalls die Projektvorlage des Komponententest-Frameworks aus, das Sie verwenden möchten. Nennen Sie das Projekt zum Testen des Projekts `Accounts` in diesem Beispiel `AccountsTests`.
 
     > [!WARNING]
-    >  Nicht alle Drittanbieter- und Open-Source-Komponententest-Frameworks stellen eine Visual Studio-Projektvorlage bereit. Lesen Sie die Dokumentation des Frameworks, um Informationen zum Erstellen eines Projekts zu erhalten.
+    > Nicht alle Drittanbieter- und Open-Source-Komponententest-Frameworks stellen eine Visual Studio-Projektvorlage bereit. Lesen Sie die Dokumentation des Frameworks, um Informationen zum Erstellen eines Projekts zu erhalten.
 
 4.  Fügen Sie im Komponententestprojekt unter "Test" einen Verweis auf das Codeprojekt hinzu, in unserem Beispiel auf das Projekt "Accounts".
 

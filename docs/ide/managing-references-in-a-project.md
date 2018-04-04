@@ -1,12 +1,12 @@
 ---
 title: Verwalten von Verweisen in einem Projekt | Microsoft-Dokumentation
-ms.custom: 
+ms.custom: ''
 ms.date: 10/26/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - vs.ProjectPropertiesReferencePaths
@@ -27,11 +27,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: b7fbb9ddfd53210f460b5035f1f83159e46b5aa1
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 6ede31cadef7048b2f75ca652efea9b01716351e
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="managing-references-in-a-project"></a>Verwalten von Verweisen in einem Projekt
 
@@ -108,7 +108,7 @@ Wenn sich die Assembly bzw. Komponente im globalen Assemblycache befindet oder e
 
 Sie können Anwendungen erstellen, die auf Projekte oder Assemblys verweisen, die auf eine andere Version von .NET Framework abzielen. Sie können z.B. eine Anwendung für [!INCLUDE[net_client_v40_long](../deployment/includes/net_client_v40_long_md.md)] erstellen, die auf eine Assembly verweist, die wiederum auf [!INCLUDE[dnprdnext](../ide/includes/dnprdnext_md.md)] ausgelegt ist. Wenn Sie ein Projekt für eine frühere Version von [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] erstellen, können Sie in diesem Projekt nicht auf Projekte oder Assemblys verweisen, die auf eine neuere Version ausgerichtet sind.
 
-Weitere Informationen finden Sie unter [Festlegen einer bestimmten .NET-Framework-Zielversion](../ide/targeting-a-specific-dotnet-framework-version.md).
+Weitere Informationen finden Sie unter [Übersicht über die Festlegung von mehreren Zielversionen](../ide/visual-studio-multi-targeting-overview.md).
 
 ## <a name="project-to-project-references"></a>Projekt-zu-Projekt-Verweise
 
@@ -125,5 +125,5 @@ Dateiverweise sind direkte Verweise auf Assemblys, die sich außerhalb eines Vis
 
 ## <a name="see-also"></a>Siehe auch
 
-[Problembehandlung bei fehlerhaften Verweisen](../ide/troubleshooting-broken-references.md)  
-[Gewusst wie: Hinzufügen und Entfernen von Verweisen mit dem Verweis-Manager](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md)
+[Problembehandlung bei fehlerhaften Verweisen](../ide/troubleshooting-broken-references.md)
+[Vorgehensweise: Hinzufügen und Entfernen von Verweisen mit dem Verweis-Manager](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md)

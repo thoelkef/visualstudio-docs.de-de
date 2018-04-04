@@ -1,22 +1,18 @@
 ---
-title: "Schreiben von Komponententests für C/C++ in Visual Studio | Microsoft-Dokumentation"
-ms.custom: 
+title: Schreiben von Komponententests für C/C++ in Visual Studio | Microsoft-Dokumentation
 ms.date: 11/04/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-test
 ms.topic: article
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 25a5d358ce8c9b36286929232a42dad48099cff5
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: ecb611d7ab816ed99e4bcce954466309f7436f76
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Schreiben von Komponententests für C/C++ in Visual Studio
 
@@ -36,12 +32,11 @@ Sie können Ihren eigenen Testadapter sowohl für installierte Frameworks als au
 
 **Visual Studio 2017 Version 15.5**
 
-1) Der **Google Test-Adapter** ist als Standardkomponente in der Workload **Desktop Development mit C++** enthalten. Er verfügt über eine Projektvorlage, die Sie einer Projektmappe über das Kontextmenü **Neues Projekt hinzufügen** auf dem Projektmappenknoten im **Projektmappen-Explorer** hinzufügen können, sowie Optionen, die Sie über **Extras > Optionen** konfigurieren können. Weitere Informationen finden Sie unter [How to: Use Google Test in Visual Studio (Vorgehensweise: Verwenden von Google Test in Visual Studio)](how-to-use-google-test-for-cpp.md).
+- Der **Google Test-Adapter** ist als Standardkomponente in der Workload **Desktop Development mit C++** enthalten. Er verfügt über eine Projektvorlage, die Sie einer Projektmappe über das Kontextmenü **Neues Projekt hinzufügen** auf dem Projektmappenknoten im **Projektmappen-Explorer** hinzufügen können, sowie Optionen, die Sie über **Extras > Optionen** konfigurieren können. Weitere Informationen finden Sie unter [How to: Use Google Test in Visual Studio (Vorgehensweise: Verwenden von Google Test in Visual Studio)](how-to-use-google-test-for-cpp.md).
 
-2) **Boost.Test** ist als Standardkomponente in der Workload **Desktop Development mit C++** enthalten. Diese Komponente ist zwar in **Test-Explorer** integriert, jedoch gibt es derzeit noch keine Projektvorlage. Darum müssen Sie sie manuell konfigurieren. Weitere Informationen finden Sie unter [How to: Use Boost.Test in Visual Studio (Vorgehensweise: Verwenden von Boost-Test in Visual Studio)](how-to-use-boost-test-for-cpp.md).
+- **Boost.Test** ist als Standardkomponente in der Workload **Desktop Development mit C++** enthalten. Diese Komponente ist zwar in **Test-Explorer** integriert, jedoch gibt es derzeit noch keine Projektvorlage. Darum müssen Sie sie manuell konfigurieren. Weitere Informationen finden Sie unter [How to: Use Boost.Test in Visual Studio (Vorgehensweise: Verwenden von Boost-Test in Visual Studio)](how-to-use-boost-test-for-cpp.md).
 
-3) Die Komponente [CMake Tools für Visual Studio](/cpp/ide/cmake-tools-for-cpp), die Teil der Workload **Desktop Development mit C++** ist, umfasst die Unterstützung von **CTest**. Allerdings ist CTest noch nicht vollständig in den **Test-Explorer** integriert. Weitere Informationen finden Sie unter [How to: Use CTest in Visual Studio (Vorgehensweise: Verwenden von CTest in Visual Studio)](how-to-use-ctest-for-cpp.md).
-
+- Die Komponente [CMake Tools für Visual Studio](/cpp/ide/cmake-tools-for-cpp), die Teil der Workload **Desktop Development mit C++** ist, umfasst die Unterstützung von **CTest**. Allerdings ist CTest noch nicht vollständig in den **Test-Explorer** integriert. Weitere Informationen finden Sie unter [How to: Use CTest in Visual Studio (Vorgehensweise: Verwenden von CTest in Visual Studio)](how-to-use-ctest-for-cpp.md).
 
 **Visual Studio 2015 und frühere Versionen**
 
@@ -96,16 +91,16 @@ Sie können der Testmethode *Merkmale* hinzufügen, um Testbesitzer, die Priorit
 
 ### <a name="run-the-tests"></a>Tests ausführen
 
-1.  Klicken Sie im Menü **Test** auf **Fenster** und dann auf **Test-Explorer**. In der folgenden Abbildung wird ein Testprojekt dargestellt, für das noch keine Tests ausgeführt wurden.
+1. Klicken Sie im Menü **Test** auf **Windows** > **Test-Explorer**. In der folgenden Abbildung wird ein Testprojekt dargestellt, für das noch keine Tests ausgeführt wurden.
 
-![Test-Explorer vor dem Ausführen von Tests](media/cpp-test-explorer.png "C++-Test-Explorer")
+   ![Test-Explorer vor dem Ausführen von Tests](media/cpp-test-explorer.png "C++-Test-Explorer")
 
-> [!NOTE]
-> Die CTest-Integration für den **Test-Explorer** ist noch nicht verfügbar. Führen Sie CTest-Tests über das Hauptmenü von CMake aus.
+   > [!NOTE]
+   > Die CTest-Integration für den **Test-Explorer** ist noch nicht verfügbar. Führen Sie CTest-Tests über das Hauptmenü von CMake aus.
 
-2. Wenn Ihre Tests nicht im Fenster angezeigt werden, erstellen Sie das Testprojekt, indem Sie mit der rechten Maustaste auf dessen Knoten im **Projektmappen-Explorer** klicken und **Erstellen** oder **Neu erstellen** auswählen.
+1. Wenn Ihre Tests nicht im Fenster angezeigt werden, erstellen Sie das Testprojekt, indem Sie mit der rechten Maustaste auf dessen Knoten im **Projektmappen-Explorer** klicken und **Erstellen** oder **Neu erstellen** auswählen.
 
-3.  Klicken Sie im Test-Explorer auf **Alle Ausführen**, oder wählen Sie die Tests aus, die Sie ausführen möchten. Klicken Sie für weitere Optionen, einschließlich des Ausführens im Debugmodus mit aktivierten Breakpoints, mit der rechten Maustaste auf einen Test. Wenn alle Tests ausgeführt wurden, wird in dem Fenster dargestellt, welche Tests erfolgreich waren und welche fehlgeschlagen sind:
+1. Klicken Sie im Test-Explorer auf **Alle Ausführen**, oder wählen Sie die Tests aus, die Sie ausführen möchten. Klicken Sie für weitere Optionen, einschließlich des Ausführens im Debugmodus mit aktivierten Breakpoints, mit der rechten Maustaste auf einen Test. Wenn alle Tests ausgeführt wurden, wird in dem Fenster dargestellt, welche Tests erfolgreich waren und welche fehlgeschlagen sind:
 
 ![Test-Explorer nachdem die Tests ausgeführt wurden](media/cpp-test-explorer-passed.png "C++-Test-Explorer nach dem Ausführen der Tests")
 

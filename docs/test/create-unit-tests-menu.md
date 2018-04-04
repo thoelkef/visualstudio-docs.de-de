@@ -1,11 +1,7 @@
 ---
-title: "Erstellen von Stubs für Unittestmethoden mit dem Befehl „Unittests erstellen“ | Microsoft-Dokumentation"
-ms.custom: 
+title: Erstellen von Stubs für Unittestmethoden in Visual Studio| Microsoft-Dokumentation
 ms.date: 05/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-test
 ms.topic: article
 helpviewer_keywords:
 - unit testing, create unit tests
@@ -14,11 +10,11 @@ manager: ghogen
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 763a16c4de3d3d087b813322af2fcd8518506863
-ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
+ms.openlocfilehash: 1620612bc27c41fcebfcc28b2844b3022fa482fa
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="create-unit-test-method-stubs-with-the-create-unit-tests-command"></a>Erstellen von Stubs für Unittestmethoden mit dem Befehl „Unittests erstellen“
 
@@ -32,7 +28,7 @@ Der Menübefehl **Unittests erstellen**:
 
 * unterstützt nur C#-Code, der das .NET Framework als Ziel hat
 
-* ist [erweiterbar](#extend-framework) und unterstützt das Ausgeben von Tests im Format MSTest, MSTest V2, NUnit und xUnit
+* ist erweiterbar und unterstützt das Ausgeben von Tests im Format MSTest, MSTest V2, NUnit und xUnit.
 
 ## <a name="get-started"></a>Erste Schritte
 
@@ -42,15 +38,16 @@ Beginnen Sie, indem Sie eine Methode, einen Typ oder einen Namespace im Code.Edi
 
 ## <a name="setting-unit-test-traits"></a>Festlegen der Merkmale eines Unittests
 
-Wenn Sie diese Tests im Rahmen des Testautomatisierungsprozesses ausführen möchten, ziehen Sie in Erwägung, den Test in einem anderen Testprojekt zu erstellen (die zweite Option ist das oben stehende Dialogfeld) und Unittestmerkmale für den Unittest festzulegen. So können Sie diese Tests leichter als Teil der Continuous Integration- und Continuous Deployment-Pipeline ein- oder ausschließen. Sie können die Merkmale festlegen, indem Sie Metadaten direkt in den Unittest einfügen, wie unten dargestellt. 
+Wenn Sie diese Tests im Rahmen des Testautomatisierungsprozesses ausführen möchten, ziehen Sie in Erwägung, den Test in einem anderen Testprojekt zu erstellen (die zweite Option ist das oben stehende Dialogfeld) und Unittestmerkmale für den Unittest festzulegen. So können Sie diese Tests leichter als Teil der Continuous Integration- und Continuous Deployment-Pipeline ein- oder ausschließen. Sie können die Merkmale festlegen, indem Sie Metadaten direkt in den Unittest einfügen, wie unten dargestellt.
 
 ![Festlegen der Merkmale eines Unittests](media/createunittest.png)
 
-<a name="extend-framework"></a>
 ## <a name="using-third-party-unit-test-frameworks"></a>Verwenden von Unittestframeworks von Drittanbietern
 
-Mit Visual Studio können Sie Unittest mit jedem Testframework leicht erstellen. Um andere Testframeworks hinzuzufügen, klicken Sie auf **Extras > Erweiterungen und Updates**.
-Erweitern Sie **Online**, **Visual Studio Gallery**, **Tools**, und klicken Sie dann auf **Test**. 
+Mit Visual Studio können Sie Unittest mit jedem Testframework leicht erstellen. Zur Installation anderer Frameworks:
+
+1. Wählen Sie **Tools** > **Erweiterungen und Updates** aus.
+2. Erweitern Sie **Online** > **Visual Studio Marketplace** > **Extras**, und wählen Sie dann **Testing** aus.
 
 ![Verwenden von Testframeworks von Drittanbietern](media/createunittestfx.png)
 
@@ -63,9 +60,9 @@ Testframeworkerweiterungen sind im Visual Studio Marketplace verfügbar:
 
 Verwenden Sie diese Funktion, wenn Sie Unittest erstellen müssen, insbesondere wenn Sie vorhandenen Code testen, der sehr wenig oder keine Testabdeckung oder keine Dokumentation aufweist. Also dort, wo es sehr eingeschränkte oder gar keine Codespezifikationen gibt. Effektiv implementiert sie eine Vorgehensweise, die den [Intelligenten Unittests](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/19/introducing-smart-unit-tests.aspx) ähnelt, die das beobachtete Verhalten des Codes charakterisieren.
 
-Diese Funktion kann jedoch auch auf Situationen angewendet werden, in denen der Entwickler beginnt, indem er Code schreibt und diesen dann dazu verwendet, die Unittests zu bootstrappen. Es kann sein, dass der Entwickler beim Codieren schnell einen Stub für Unittestmethoden für einen bestimmten Codeteil erstellen möchte (mit einer entsprechenden Testklasse und einem entsprechenden Testprojekt). 
+Diese Funktion kann jedoch auch auf Situationen angewendet werden, in denen der Entwickler beginnt, indem er Code schreibt und diesen dann dazu verwendet, die Unittests zu bootstrappen. Es kann sein, dass der Entwickler beim Codieren schnell einen Stub für Unittestmethoden für einen bestimmten Codeteil erstellen möchte (mit einer entsprechenden Testklasse und einem entsprechenden Testprojekt).
 
 ## <a name="see-also"></a>Siehe auch
 
-[Creating unit test method stubs with "Create Unit Tests" (Erstellen von Stubs für Unittestmethoden mit "Unittests erstellen")](https://blogs.msdn.microsoft.com/visualstudioalm/2015/03/06/creating-unit-test-method-stubs-with-create-unit-tests/)  
-[Blogbeiträge zu Komponententests](https://blogs.msdn.microsoft.com/visualstudioalm/tag/unit-testing/)
+- [Creating unit test method stubs with "Create Unit Tests" (Erstellen von Stubs für Unittestmethoden mit "Unittests erstellen")](https://blogs.msdn.microsoft.com/visualstudioalm/2015/03/06/creating-unit-test-method-stubs-with-create-unit-tests/)
+- [Blogbeiträge zu Komponententests](https://blogs.msdn.microsoft.com/devops/?s=unit+testing)

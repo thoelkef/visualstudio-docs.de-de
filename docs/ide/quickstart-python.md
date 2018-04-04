@@ -1,13 +1,13 @@
 ---
 title: 'Schnellstart: Erstellen einer ersten Python-Web-App mit Visual Studio | Microsoft-Dokumentation'
-description: "Eine kurze Einführung in die Benutzung von Python in Visual Studio, bei der eine einfache Webanwendung mit dem Falcon-Framework erstellt wird."
-ms.custom: 
-ms.date: 01/08/2018
-ms.reviewer: 
-ms.suite: 
+description: Eine kurze Einführung in die Benutzung von Python in Visual Studio, bei der eine einfache Webanwendung mit dem Falcon-Framework erstellt wird.
+ms.custom: ''
+ms.date: 03/14/2018
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: quickstart
 dev_langs:
 - python
@@ -17,15 +17,15 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9b45c694399553dd262a68d821d1757b65ea9600
-ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
+ms.openlocfilehash: 2b1880d95fcb4aae04d98171c8ee7df7373aaceb
+ms.sourcegitcommit: 236c250bb97abdab99d00c6525d106fc0035d7d0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-python-web-app"></a>Schnellstart: Erstellen einer ersten Python-Web-App mit Visual Studio
 
-In dieser fünf- bis zehnminütigen Einführung in die integrierte Entwicklungsumgebung (IDE) von Visual Studio erstellen wir eine einfache Python-Webanwendung. Falls Sie Visual Studio noch nicht installiert haben, können Sie es [hier](http://www.visualstudio.com) gratis herunterladen.
+In dieser fünf- bis zehnminütigen Einführung in die integrierte Entwicklungsumgebung (IDE) von Visual Studio erstellen wir eine einfache Python-Webanwendung. Wenn Sie Visual Studio noch nicht installiert haben, gehen Sie auf die Seite [Visual Studio-Downloads](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs), um es kostenlos herunterzuladen. Wählen Sie im Installer die Workload **Python-Entwicklung** aus.
 
 ## <a name="create-the-project"></a>Erstellen eines Projekts
 

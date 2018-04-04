@@ -1,24 +1,24 @@
 ---
 title: MSBuild-Zielframework und -Zielplattform | Microsoft-Dokumentation
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: df6517c5-edd6-4cc4-97ad-b3cdfc78e799
-caps.latest.revision: 
+caps.latest.revision: 10
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: e175a534cb35333b1f57c188c62a781f2fd68627
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: d8ee86a969279c3bdb8b09a0a0d2c9160d7691e0
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="msbuild-target-framework-and-target-platform"></a>MSBuild-Zielframework und -Zielplattform
 Ein Projekt kann erstellt werden, um in einem *Zielframework*, bei dem es sich um eine bestimmte Version von .NET Framework handelt, und auf einer *Zielplattform*, bei der es sich um eine bestimmte Softwarearchitektur handelt, ausgeführt zu werden.  Beispielsweise können Sie eine Anwendung für die Ausführung in .NET Framework 2.0 auf einer 32-Bit-Plattform entwickeln, die mit der 802x86-Prozessorfamilie kompatibel ist („x86“). Die Kombination von Zielframework und Zielplattform wird als *Zielkontext* bezeichnet.  
@@ -67,14 +67,16 @@ Ein Projekt kann erstellt werden, um in einem *Zielframework*, bei dem es sich u
  Eine *Plattform* ist eine Kombination aus Hardware und Software, die eine bestimmte Laufzeitumgebung definiert. Ein auf ein Objekt angewendeter  
   
 -   `x86` steht für ein 32-Bit-Windows-Betriebssystem, das auf einem Intel 80x86-Prozessor oder einem vergleichbaren Prozessor ausgeführt wird.  
+
+-   `x64` steht für ein 64-Bit-Windows-Betriebssystem, das auf einem Intel x64-Prozessor oder einem vergleichbaren Prozessor ausgeführt wird.
   
 -   `Xbox` steht für die Microsoft Xbox 360-Plattform.  
   
- Eine *Zielplattform* ist die spezielle Plattform, auf der Ihr Projekt ausgeführt werden kann. Die Zielplattform wird in der `Platform`-Buildeigenschaft in einer Projektdatei angegeben. Sie können die Zielplattform ändern, indem Sie die Projekteigenschaftenseiten oder den **Konfigurations-Manager** in der IDE verwenden.  
+ Eine *Zielplattform* ist die spezielle Plattform, auf der Ihr Projekt ausgeführt werden kann. Die Zielplattform wird in der `PlatformTarget`-Buildeigenschaft in einer Projektdatei angegeben. Sie können die Zielplattform ändern, indem Sie die Projekteigenschaftenseiten oder den **Konfigurations-Manager** in der IDE verwenden.  
   
 ```xml  
 <PropertyGroup>  
-   <Platform>x86</Platform>  
+   <PlatformTarget>x86</PlatformTarget>  
 </PropertyGroup>  
   
 ```  
@@ -83,7 +85,7 @@ Ein Projekt kann erstellt werden, um in einem *Zielframework*, bei dem es sich u
   
 ```xml  
 <PropertyGroup>  
-   <Platform>x86</Platform>  
+   <PlatformTarget>x86</PlatformTarget>  
    <Configuration>Debug</Configuration>  
 <PropertyGroup>  
   

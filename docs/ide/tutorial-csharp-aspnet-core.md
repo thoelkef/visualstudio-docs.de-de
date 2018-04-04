@@ -1,12 +1,12 @@
 ---
 title: Erste Schritte mit C# und ASP.NET Core in Visual Studio | Microsoft-Dokumentation
-ms.custom: 
+ms.custom: ''
 ms.date: 12/11/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: tutorial
 ms.devlang: CSharp
 author: TerryGLee
@@ -17,11 +17,11 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: c4d67a57063854f859a766068084d63902ba038e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 9a24ccbcecc2d5bd4d5799ada048fee0004514f7
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="getting-started-with-c-and-aspnet-in-visual-studio"></a>Erste Schritte mit C# und ASP.NET Core in Visual Studio
 In diesem Tutorial für die C#-Entwicklung mit ASP.NET Core in Visual Studio werden wir eine C#-ASP.NET Core-Web-App erstellen, Code hinzufügen, einige Funktionen der IDE kennenlernen und die App ausführen.
@@ -61,7 +61,7 @@ Wenn Ihnen die Projektvorlage **ASP.NET Core-Webanwendung** fehlt, fügen Sie ei
 
 2. Der Visual Studio-Installer wird gestartet. Klicken Sie auf die Workload **ASP.NET und Webentwicklung** und anschließend auf **Ändern**.
 
-   ![Workload „Plattformübergreifende .NET Core-Entwicklung“ im Visual Studio-Installer](../ide/media/asp-dot-net-web-dev-workload.png)
+   ![Workload für die plattformübergreifende .NET Core-Entwicklung im Visual Studio-Installer](../ide/media/asp-dot-net-web-dev-workload.png)
 
 ##### <a name="option-2-use-the-tools-menu-bar"></a>Option 2: Über die Menüleiste „Extras“
 1. Schließen Sie das Dialogfeld **Neues Projekt**, und klicken Sie in der Menüleiste oben auf **Extras** > **Tools und Features abrufen…**.
@@ -167,12 +167,9 @@ Mithilfe des MVC-Modells können Sie Apps erstellen, die leichter zu testen und 
 
  ![In der Symbolleiste auf die Schaltfläche „Debuggen beenden“ klicken](../ide/media/csharp-aspnet-stop-debugging.png)
 
+## <a name="next-steps"></a>Nächste Schritte
 
-Damit haben Sie das Tutorial erfolgreich abgeschlossen.
+Damit haben Sie das Tutorial erfolgreich abgeschlossen. Wir hoffen, dass Sie etwas über C#, ASP.NET Core und die Visual Studio-IDE gelernt haben. Fahren Sie für weitere Informationen mit dem Tutorial fort.
 
-## <a name="see-also"></a>Siehe auch
-* [Erste Schritte mit ASP.NET Core MVC und Visual Studio](/aspnet/core/tutorials/first-mvc-app/start-mvc?tabs=aspnetcore2x)
-* [Erste Schritte mit Razor-Seiten in ASP.NET Core](/aspnet/core/tutorials/razor-pages/razor-pages-start)
-* [Neues in C#](/dotnet/csharp/whats-new)
-* [C#-Programmiersprachenreferenz](/dotnet/csharp/language-reference/index)
-* Videokurs: [C# Fundamentals for Absolute Beginners (C#-Grundlagen für Einsteiger)](https://mva.microsoft.com/en-US/training-courses/c-fundamentals-for-absolute-beginners-16169)
+ > [!div class="nextstepaction"]
+ > [Erste Schritte mit ASP.NET Core MVC und Visual Studio](/aspnet/core/tutorials/first-mvc-app/start-mvc?tabs=aspnetcore2x)

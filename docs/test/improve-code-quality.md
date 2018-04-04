@@ -1,7 +1,7 @@
 ---
 title: Visual Studio-Testtools | Microsoft-Dokumentation
-ms.date: 01/31/2018
-ms.technology: vs-devops-test
+ms.date: 03/16/2018
+ms.technology: vs-ide-test
 ms.topic: article
 helpviewer_keywords:
 - testing tools [Visual Studio]
@@ -11,30 +11,32 @@ manager: ghogen
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: cc57d6ea3ebba0cff901635d411d047bbafbfa94
-ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
+ms.openlocfilehash: a4f662761c58595ae40a2bf82913978bcfbb68db
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="testing-tools-in-visual-studio"></a>Testtools in Visual Studio
 
 Die Visual Studio-Testtools können Sie und Ihr Team dabei unterstützen, hochwertigen Code zu entwickeln und diesen Standard einzuhalten.
 
+- Das Fenster **Test-Explorer** vereinfacht die Integration von [Komponententests](../test/unit-test-your-code.md) in die Entwicklungspraxis. Sie können entweder das Microsoft-Komponententest-Framework oder ein Drittanbieter- oder Open-Source-Framework verwenden.
+
+- [IntelliTest](../test/generate-unit-tests-for-your-code-with-intellitest.md) generiert automatisch Komponententests und Testdaten für verwalteten Code.
+
+- Die [Code Coverage](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md) ermittelt, wie groß der Anteil des Projektcodes ist, der in codierten Tests wie Komponententests tatsächlich getestet wird.
+
+- Mit [Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md) isolieren Sie den zu testenden Code, indem Sie andere Teile der Anwendung durch Stubs oder Shims ersetzen.
+
+- [Live Unit Testing](../test/live-unit-testing.md) führt automatisch Komponententests im Hintergrund aus und stellt die Code Coverage und die Testergebnisse im Code-Editor von Visual Studio grafisch dar.
+
+- Die Anwendung kann mit [Tests der programmierten UI](../test/use-ui-automation-to-test-your-code.md) über die Benutzeroberfläche getestet werden.
+
+- [Auslastungstests](../test/quickstart-create-a-load-test-project.md) simulieren die Auslastung einer Serveranwendung durch Ausführen von Komponententests und Webleistungstests.
+
 > [!NOTE]
 > Komponententests sind in allen Editionen von Visual Studio verfügbar. Andere Testtools wie Live Unit Testing, IntelliTest und Tests der programmierten UI sind nur in Visual Studio Enterprise verfügbar. Weitere Informationen zu den Editionen finden Sie unter [Visual Studio 2017-IDEs im Vergleich](https://www.visualstudio.com/vs/compare/).
-
-## <a name="in-this-section"></a>In diesem Abschnitt
-
-|||
-|-|-|
-|[Komponententest für Code](../test/unit-test-your-code.md)|Test-Explorer vereinfacht die Integration von Komponententests in die Entwicklungspraxis. Sie können entweder das Microsoft-Komponententest-Framework oder ein Drittanbieter- oder Open-Source-Framework verwenden.|
-|[IntelliTest](../test/generate-unit-tests-for-your-code-with-intellitest.md)|IntelliTest generiert automatisch Komponententests und Testdaten für verwalteten Code.|
-|[Code Coverage](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)|Die Code Coverage ermittelt, wie groß der Anteil des Projektcodes ist, der in codierten Tests wie Komponententests tatsächlich getestet wird.|
-|[Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)|Mit Microsoft Fakes isolieren Sie den zu testenden Code, indem Sie andere Teile der Anwendung durch Stubs oder Shims ersetzen.|
-|[Live-Komponententests](../test/live-unit-testing.md)|Live Unit Testing führt automatisch Komponententests im Hintergrund aus und stellt Codeabdeckung und Testergebnisse im Code-Editor von Visual Studio grafisch dar.|
-|[Benutzeroberflächenautomatisierung](../test/use-ui-automation-to-test-your-code.md)|Die Anwendung wird mit Tests der programmierten UI über die Benutzeroberfläche gesteuert.|
-|[Lab Management](../test/lab-management/using-a-lab-environment-for-your-application-lifecycle.md)|Eine Lab-Umgebung ist eine Sammlung virtueller und physischer Computer, die Sie verwenden können, um Anwendungen zu entwickeln und zu testen.|
 
 ## <a name="related-scenarios"></a>Ähnliche Szenarios
 

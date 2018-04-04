@@ -1,12 +1,12 @@
 ---
 title: 'Schnellstart: Erstellen einer ersten Konsolenanwendung in Visual Studio mit Visual Basic | Microsoft-Dokumentation'
-ms.custom: 
+ms.custom: ''
 ms.date: 12/10/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: quickstart
 ms.devlang: vb
 author: TerryGLee
@@ -16,11 +16,11 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 2573e1a2344b858b721fb234d6b228b421a36550
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: a531582b2474305d7c286f936e29a7bc9804d7bf
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="quickstart-create-your-first-console-app-in-visual-studio-with-visual-basic"></a>Schnellstart: Erstellen einer ersten Konsolenanwendung in Visual Studio mit Visual Basic
 Mithilfe dieser Einführung in die integrierte Entwicklungsumgebung (IDE) von Visual Studio, die fünf bis zehn Minuten Ihrer Zeit in Anspruch nehmen wird, können Sie eine einfache Visual Basic-Anwendung erstellen, die in der Konsole ausgeführt werden kann.
@@ -81,9 +81,8 @@ Fügen Sie Code hinzu, um die Anwendung zu pausieren und den Benutzer zur Eingab
 
    ![Konsolenfenster mit „Hallo Welt“ und „Drücken Sie eine beliebige Taste um fortzufahren“](../ide/media/vb-console-hello-world-press-any-key.png)
 
-Damit haben Sie den Schnellstart erfolgreich abgeschlossen. Wir hoffen, dass Sie etwas über Visual Basic und die Visual Studio-IDE gelernt haben. Wenn Sie mehr über diese Themen erfahren möchten, können Sie gerne mit einem Tutorial fortfahren, das Sie im Inhaltsverzeichnis im Abschnitt **Tutorials** finden.
+## <a name="next-steps"></a>Nächste Schritte
+Damit haben Sie den Schnellstart erfolgreich abgeschlossen. Wir hoffen, dass Sie etwas über Visual Basic und die Visual Studio-IDE gelernt haben. Fahren Sie für weitere Informationen mit dem Tutorial fort.
 
-## <a name="see-also"></a>Siehe auch
-* [Schnellstart: Erstellen einer Windows Forms-App in Visual Studio mit Visual Basic](quickstart-visual-basic-winforms.md)
-* [Tutorial: Erste Schritte mit Visual Basic in Visual Studio](tutorial-visual-basic-console.md)
-* [IntelliSense für Visual Basic-Codedateien](visual-basic-specific-intellisense.md)
+> [!div class="nextstepaction"]
+> [Erste Schritte mit Visual Basic in Visual Studio](tutorial-visual-basic-console.md)
