@@ -1,12 +1,8 @@
 ---
-title: "Codeanalyse für verwalteten Code (Übersicht) | Microsoft Docs"
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+title: Codeanalyse für verwalteten Code in Visual Studio | Microsoft Docs
+ms.date: 03/26/2018
 ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.projectpropertypages.codeanalysis
 helpviewer_keywords:
@@ -17,13 +13,15 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5d30f84194ef7a48de106698c9ad4569e947923c
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 8209e17985ef7f9924fc677b91b5cfe539977cb9
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/03/2018
 ---
-# <a name="code-analysis-for-managed-code-overview"></a>Codeanalyse für verwalteten Code (Übersicht)
+# <a name="overview-of-code-analysis-for-managed-code"></a>Übersicht über die Codeanalyse für verwalteten code
+
+Visual Studio-2017 analysiert verwalteten Code auf zwei Arten: mit älteren *FxCop* statische Analyse des verwalteten Assemblys, und klicken Sie mit .NET Compiler Platform *Analysen*. Dieses Thema behandelt die FxCop-Analyse für statischen Code. Weitere Informationen zum Analysieren von Code mithilfe von .NET Compiler Platform-Analyzer finden Sie unter [Übersicht der Roslyn-Analyzern](../code-quality/roslyn-analyzers-overview.md).
 
 Die Codeanalyse für verwalteten Code analysiert verwaltete Assemblys und erstellt einen Bericht mit Informationen zu diesen Assemblys, in dem z. B. Verletzungen der in den Microsoft .NET Framework-Entwurfsrichtlinien festgelegten Programmierungs- und Entwurfsregeln gemeldet werden.
 
@@ -76,5 +74,6 @@ Sie können die integrierten Funktionen des Buildsystems verwenden, um das Analy
 
 ## <a name="see-also"></a>Siehe auch
 
-[Mithilfe der Regel wird auf Gruppe von Codeanalyseregeln](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)   
-[Vorgehensweise: Aktivieren und Deaktivieren der automatischen Codeanalyse](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)
+- [Übersicht über die Roslyn-Analyzern](../code-quality/roslyn-analyzers-overview.md)
+- [Verwenden von Regelsätzen zum Gruppieren von Codeanalyseregeln](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)
+- [Vorgehensweise: Aktivieren und Deaktivieren der automatischen Codeanalyse](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)

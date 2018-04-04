@@ -1,9 +1,6 @@
 ---
-title: "Unterdrücken von Warnungen der Codeanalyse in Visual Studio | Microsoft Docs"
-ms.custom: 
+title: Unterdrücken von Warnungen der Codeanalyse in Visual Studio | Microsoft Docs
 ms.date: 01/29/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-code-analysis
 ms.topic: article
 helpviewer_keywords:
@@ -18,13 +15,13 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 5862b164c72c8f07c78db8948face95edfde357c
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: ef69462dc9b51fbd92da11bc5adb1bfa61e8a792
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/03/2018
 ---
-# <a name="suppressing-code-analysis-warnings"></a>Unterdrücken der Codeanalysewarnungen
+# <a name="suppress-code-analysis-warnings"></a>Unterdrücken der codeanalysewarnungen
 
 Es ist häufig nützlich, um anzugeben, dass eine Warnung nicht anwendbar ist. Dies gibt an, für die Teammitglieder, die der Code wurde überprüft, und die Warnung kann unterdrückt werden. Datenquelle unterdrückenden (ISS) verwendet die <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> Attribut, um eine Warnung zu unterdrücken. Das Attribut kann in der Nähe der Codesegment platziert werden, die die Warnung generiert. Können Sie hinzufügen, die <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> -Attribut auf die Quelldatei durch Eingabe in oder können Sie das Kontextmenü für eine Warnung in der **Fehlerliste** automatisch hinzuzufügen.
 
@@ -94,7 +91,7 @@ Wenn strict Leistungsgründen Minimierung Unterdrückung im Quellcode Metadaten 
 
 Aus Gründen der Verwaltbarkeit ist das Weglassen von Namen der Regel nicht empfohlen.
 
-## <a name="suppressing-selective-violations-within-a-method-body"></a>Selektive Verstöße innerhalb eines Methodentexts unterdrücken
+## <a name="suppress-selective-violations-within-a-method-body"></a>Selektive Verstöße innerhalb eines Methodentexts unterdrücken
 
 Unterdrückung Attribute können auf eine Methode angewendet werden, sondern können nicht innerhalb eines Methodentexts eingebettet sein. Dies bedeutet, dass alle Verstöße gegen eine bestimmte Regel unterdrückt werden, wenn Sie beim Hinzufügen der <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> -Attribut zur Methode.
 
@@ -160,7 +157,7 @@ Auf globaler Ebene Unterdrückungen sind die einzige Möglichkeit, Nachrichten z
 `[module: SuppressMessage("Microsoft.Design", "CA1055:AbstractTypesDoNotHavePublicConstructors", Scope="member", Target="Microsoft.Tools.FxCop.Type..ctor()")]`
 
 > [!NOTE]
-> `Target`enthält immer den vollqualifizierten Elementnamen ein.
+> `Target` enthält immer den vollqualifizierten Elementnamen ein.
 
 ## <a name="global-suppression-file"></a>Globale Unterdrückungsdatei
 
@@ -168,4 +165,5 @@ Die Unterdrückungsdatei für die globale verwaltet Unterdrückungen, die auf gl
 
 ## <a name="see-also"></a>Siehe auch
 
-<xref:System.Diagnostics.CodeAnalysis>
+- <xref:System.Diagnostics.CodeAnalysis>
+- [Verwenden Sie Roslyn-Analyzern](../code-quality/use-roslyn-analyzers.md)

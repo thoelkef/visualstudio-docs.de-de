@@ -1,5 +1,6 @@
 ---
 title: Übersicht über die Bereitstellung - Visual Studio | Microsoft Docs
+description: Weitere Informationen Sie zu den Optionen für die Bereitstellung von apps aus Visual Studio.
 ms.custom: mvc
 ms.date: 11/26/2017
 ms.reviewer: ''
@@ -28,11 +29,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: d07129bc373cf74c8ba373b3c51847016d585ade
-ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
+ms.openlocfilehash: ca458c0234de89fec814cfa5e639c13db9e6ca9b
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="quickstart-first-look-at-deployment-in-visual-studio"></a>Schnellstart: Uns zunächst an die Bereitstellung in Visual Studio
 

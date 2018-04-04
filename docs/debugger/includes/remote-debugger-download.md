@@ -13,17 +13,17 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: b16c0627fbebf13566726a7f4bfb56ecb2e6a64a
-ms.sourcegitcommit: 236c250bb97abdab99d00c6525d106fc0035d7d0
+ms.openlocfilehash: 273f67b997da80b27c124d3119ec0871f0a061b8
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 04/03/2018
 ---
 1.  Erhalten Sie auf dem Gerät oder Server Computer, den Sie debuggen möchten (statt dem Computer mit Visual Studio) die richtige Version der Remotetools.
 
     |Version|Link|Hinweise|
     |-|-|-|
-    |Visual Studio 2017 (neueste Version)|[Remotetools](https://www.visualstudio.com/downloads/#remote-tools-for-visual-studio-2017)|Herunterladen Sie die Betriebssystem Ihres Geräts (X86 oder X64) Abgleich Version immer. Ist der Modus für erhöhte Sicherheit aktiviert (Windows Server), müssen Sie neue vertrauenswürdige Sites hinzufügen, wenn Sie aufgefordert werden.|
+    |Visual Studio 2017 (neueste Version)|[Remotetools](https://www.visualstudio.com/downloads/?q=remote+tools#remote-tools-for-visual-studio-2017)|Herunterladen Sie die Betriebssystem Ihres Geräts (X86 oder X64) Abgleich Version immer. Ist der Modus für erhöhte Sicherheit aktiviert (Windows Server), müssen Sie neue vertrauenswürdige Sites hinzufügen, wenn Sie aufgefordert werden.|
     |Visual Studio-2017 (älter)|[Remotetools](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202017)|Remoteserver-Verwaltungstools für frühere Versionen von Visual Studio 2017 sind My.VisualStudio.com verfügbar. Wenn Sie aufgefordert werden, ID Join die kostenlose Visual Studio Dev Essentials-Gruppe, oder melden Sie sich mit Ihrem Visual Studio-Abonnement Ist der Modus für erhöhte Sicherheit aktiviert (Windows Server), müssen Sie neue vertrauenswürdige Sites hinzufügen, wenn Sie aufgefordert werden.|
     |Visual Studio 2015 Update 3|[Remotetools](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|Wenn Sie aufgefordert werden, ID Join die kostenlose Visual Studio Dev Essentials-Gruppe, oder melden Sie sich mit Ihrem Visual Studio-Abonnement Ist der Modus für erhöhte Sicherheit aktiviert (Windows Server), müssen Sie neue vertrauenswürdige Sites hinzufügen, wenn Sie aufgefordert werden.|
     |Visual Studio 2015 (älter)|[Remotetools](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|Wenn Sie aufgefordert werden, ID Join die kostenlose Visual Studio Dev Essentials-Gruppe, oder melden Sie sich mit Ihrem Visual Studio-Abonnement Ist der Modus für erhöhte Sicherheit aktiviert (Windows Server), müssen Sie neue vertrauenswürdige Sites hinzufügen, wenn Sie aufgefordert werden.|
