@@ -1,31 +1,31 @@
 ---
 title: Beheben von Netzwerkfehlern beim Installieren oder Verwenden von Visual Studio | Microsoft-Dokumentation
-description: 
-ms.custom: 
+description: ''
+ms.custom: ''
 ms.date: 02/12/2018
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - network installation, Visual Studio
 - administrator guide, Visual Studio
 - installing Visual Studio, administrator guide
 - list of domains, locations, URLs, Visual Studio
 - proxy errors, Visual Studio
-ms.assetid: 
+ms.assetid: ''
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d4d1e330a6ab378c61876b3f869f88b2a29c35a1
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: fc5f1c07f709c1cdb8e20704dbea9cb5550b14b3
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="troubleshooting-network-related-errors-when-you-install-or-use-visual-studio"></a>Beheben von Netzwerkfehlern beim Installieren oder Verwenden von Visual Studio
 Hier erfahren Sie, welche Lösungen für die häufigsten netzwerk- oder proxybezogenen Fehler zur Verfügung stehen, die beim Installieren oder Verwenden von Visual Studio hinter einer Firewall oder einem Proxyserver auftreten können.
@@ -76,7 +76,7 @@ Dieser Fehler tritt normalerweise auf, wenn Benutzer über einen Proxyserver mit
 
 Wenn Sie Visual Studio in einem privaten Netzwerk mit einer Firewall verwenden, kann Visual Studio möglicherweise keine Verbindung mit einigen Netzwerkressourcen herstellen. Dies kann auch Visual Studio Team Services (VSTS) für Anmeldung und Lizenzierung, NuGet und Azure-Dienste betreffen. Falls Visual Studio keine Verbindung mit einer dieser Ressourcen herstellen kann, wird möglicherweise die folgende Fehlermeldung angezeigt:
 
-  **Die zugrunde liegende Verbindung wurde geschlossen: Unerwarteter Fehler beim Senden.**
+  **The underlying connection was closed: An unexpected error occurred on send** (Die zugrunde liegende Verbindung wurde geschlossen: Beim Senden ist ein unerwarteter Fehler aufgetreten.)
 
 Visual Studio verwendet das Protokoll Transport Layer Security (TLS) 1.2 für die Verbindung mit Netzwerkressourcen. Sicherheitsappliances blockieren in einigen privaten Netzwerken bestimmte Serververbindungen, wenn Visual Studio TLS 1.2 verwendet.
 
@@ -114,7 +114,7 @@ Lassen Sie Verbindungen mit den folgenden URLs zu:
  > URLs von privaten NuGet-Servern sind in dieser Liste möglicherweise nicht enthalten. Sie können in „%APPData%\Nuget\NuGet.Config“ überprüfen, welche NuGet-Server Sie verwenden.
 
 
-## <a name="get-support"></a>Support anfordern
+## <a name="get-support"></a>Support aufrufen
 Wenn bei der Installation von Visual Studio ein Fehler auftritt, lesen Sie den Artikel [Problembehandlung bei Visual Studio 2017-Installations- und -Upgradefehlern](troubleshooting-installation-issues.md). Wenn keiner der Schritte zur Problembehandlung bei der Installation zur Fehlerbeseitigung führt, können Sie uns per Livechat kontaktieren, um Unterstützung bei der Installation zu erhalten (nur in englischer Sprache). Einzelheiten finden Sie auf der [Visual Studio-Supportseite](https://www.visualstudio.com/vs/support/#talktous).
 
 Hier sind einige weitere Supportoptionen:

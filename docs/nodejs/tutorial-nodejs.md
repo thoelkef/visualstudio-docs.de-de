@@ -1,12 +1,13 @@
 ---
-title: Erste Schritte mit Node.js in Visual Studio | Microsoft-Dokumentation
-ms.custom: 
-ms.date: 11/30/2017
-ms.reviewer: 
-ms.suite: 
+title: Erstellen einer Node.js- und Express-App in Visual Studio | Microsoft-Dokumentation
+description: In diesem Tutorial erstellen Sie eine Node.js- und Express-App in Visual Studio.
+ms.custom: ''
+ms.date: 03/13/2018
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
-- vs-acquisition
-ms.tgt_pltfrm: 
+- vs-nodejs
+ms.tgt_pltfrm: ''
 ms.topic: tutorial
 ms.devlang: javascript
 author: mikejo5000
@@ -16,35 +17,63 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 1d91d46b20f82a1700c2d20639b3a8827c92bcb0
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: 05e10e6016c4a6791b5bc80ba6a05616c1edb0f6
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/15/2018
 ---
-# <a name="getting-started-with-nodejs-in-visual-studio"></a>Erste Schritte mit Node.js in Visual Studio
-In diesem Tutorial für die Node.js-Entwicklung in Visual Studio werden wir eine einfache Node.js-Webanwendung erstellen, Code hinzufügen, einige Funktionen der IDE kennenlernen und die App ausführen. Falls Sie Visual Studio noch nicht installiert haben, können Sie es [hier](http://www.visualstudio.com) gratis herunterladen.  
+# <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>Tutorial: Erstellen einer Node.js- und Express-App in Visual Studio
+In diesem Tutorial für die Visual Studio-Entwicklung erfahren Sie, wie Sie mithilfe von Node.js und Express eine einfache Node.js-Webanwendung erstellen, Code hinzufügen, einige Features der IDE kennenlernen und die App ausführen. Falls Sie Visual Studio noch nicht installiert haben, können Sie es [hier](http://www.visualstudio.com) gratis herunterladen.  
+
+In diesem Tutorial lernen Sie, wie die folgenden Aufgaben ausgeführt werden:
+> [!div class="checklist"]
+> * Erstellen eines Node.js-Projekts
+> * Hinzufügen von Code
+> * Verwendung von IntelliSense
+> * Ausführen der App
+> * Treffen eines Haltepunkts
+
+## <a name="prerequisites"></a>Erforderliche Komponenten
+
+* Sie müssen Visual Studio und die Workload für die Node.js-Entwicklung installiert haben.
+
+    Falls Sie Visual Studio noch nicht installiert haben, können Sie es [hier](http://www.visualstudio.com) gratis herunterladen.
+
+    Falls Sie über Visual Studio bereits verfügen, aber die Workload noch installieren müssen, klicken Sie auf den Link **Visual Studio-Installer öffnen** auf der linken Seite des Dialogfelds **Neues Projekt**. Der Visual Studio-Installer wird gestartet. Klicken Sie auf die Workload **Node.js-Entwicklung** und anschließend auf **Ändern**.
+
+* Die Node.js-Laufzeit muss installiert sein.
+
+    Wenn sie nicht bereits installiert ist, installieren Sie die LTS-Version über die [Node.js](https://nodejs.org/en/download/)-Website. Im Allgemeinen erkennt Visual Studio die installierte Node.js-Runtime automatisch. Wird die installierte Laufzeit nicht erkannt, können Sie das Projekt so konfigurieren, dass es auf die installierte Laufzeit auf der Eigenschaftenseite verweist (klicken Sie hierfür nach dem Erstellen des Projekts mit der rechten Maustaste auf den Projektknoten, und wählen Sie **Eigenschaften** aus).
 
 ## <a name="create-a-project"></a>Erstellen eines Projekts
 Zunächst müssen Sie ein Projekt für die Node.js-Webanwendung erstellen.
 
 1. Öffnen Sie Visual Studio 2017.  
 
-2. Klicken Sie in der Menüleiste im oberen Bereich auf **Datei** > **Neu** > **Projekt...**.  
+1. Klicken Sie in der Menüleiste im oberen Bereich auf **Datei** > **Neu** > **Projekt...**.  
 
-3. Erweitern Sie im Dialogfeld **Neues Projekt** links den Eintrag **JavaScript**, und klicken Sie auf **Node.js**. Klicken Sie im mittleren Bereich auf **Azure Node.js Express 4-Basisanwendung** und anschließend auf **OK**.   
+1. Erweitern Sie im Dialogfeld **Neues Projekt** im linken Bereich den Eintrag **JavaScript**, und klicken Sie auf **Node.js**. Klicken Sie im mittleren Bereich auf **Azure Node.js Express 4-Basisanwendung** und anschließend auf **OK**.   
 
-     Falls Sie die Projektvorlage **Azure Node.js Express 4-Basisanwendung** nicht finden, klicken Sie auf den Link **Visual Studio-Installer öffnen** auf der linken Seite des Dialogfelds **Neues Projekt**. Der Visual Studio-Installer wird gestartet. Klicken Sie auf die Workload **Node.js-Entwicklung** und anschließend auf **Ändern**. 
+     Wenn die Projektvorlage **Azure Node.js Express 4-Basisanwendung** nicht angezeigt wird, müssen Sie zunächst die Workload **Node.js-Entwicklung** installieren. 
 
-    Visual Studio erstellt die neue Projektmappe und öffnet das Projekt. Die Projektdatei **app.js** wird im Editor (linker Bereich) geöffnet. Wenn Sie nicht mit Visual Studio-Projektmappen und -Projekten vertraut sind, lesen Sie den Artikel [Quickstart: Use Visual Studio to create your first Node.js app (Schnellstart: Erstellen der ersten Node.js-App mit Visual Studio)](../ide/quickstart-nodejs.md).
+    Visual Studio erstellt die neue Projektmappe und öffnet das Projekt. Die Projektdatei *app.js* wird im Editor (linker Bereich) geöffnet.
 
-4. Wenn die Node.js-Runtime nicht bereits installiert ist, installieren Sie sie über die [Node.js](https://nodejs.org/en/download/)-Website.
+    - Ihr Projekt wird fettgedruckt dargestellt, mit dem Namen, den Sie im Dialogfeld **Neues Projekt** festgelegt haben. Im Dateisystem wird dieses Projekt durch eine *NJSPROJ*-Datei im Projektordner dargestellt. Klicken Sie mit der rechten Maustaste auf das Projekt, und wählen Sie **Eigenschaften** aus, um Eigenschaften und Umgebungsvariablen festzulegen, die dem Projekt zugeordnet sind. Roundtrips mit anderen Entwicklungstools sind möglich, da die Projektdatei keine benutzerdefinierte Änderungen an der Node.js-Projektquelle vornimmt.
 
-    Im Allgemeinen erkennt Visual Studio die installierte Node.js-Runtime automatisch. Wenn eine installierte Runtime nicht erkannt wird, können Sie Ihr Projekt so konfigurieren, dass es auf die installierte Runtime verweist.
+    - Auf der oberen Ebene finden Sie eine Projektmappe, die standardmäßig denselben Namen hat wie Ihr Projekt. Eine Projektmappe, die auf dem Datenträger durch eine *SLN*-Datei dargestellt wird, ist ein Container für mindestens ein zugehöriges Projekt.
+
+    - Der npm-Knoten zeigt alle installierten npm-Pakete. Sie können mit der rechten Maustaste darauf klicken, um über ein Dialogfeld npm-Pakete zu suchen und zu installieren.
+
+    - Projektdateien wie z.B. *app.js* werden unter dem Projektknoten angezeigt. Die Startdatei des Projekts lautet *app.js*.
+
+1. Öffnen Sie den **NPM**-Knoten, und stellen Sie sicher, dass alle erforderlichen NPM-Pakete vorhanden sind.
+
+    Wenn Pakete fehlen (Ausrufezeichensymbol), klicken Sie mit der rechten Maustaste auf den **NPM**-Knoten, und wählen Sie **Fehlende NPM-Pakete installieren** aus.
 
 ## <a name="add-some-code"></a>Hinzufügen von Code
 
-1. Öffnen Sie im Projektmappen-Explorer (rechter Bereich) den Ordner „Views“ (Ansichten), und öffnen Sie „index.pug“.
+1. Öffnen Sie im Projektmappen-Explorer (rechter Bereich) den Ordner „Views“ (Ansichten) und anschließend *index.pug*.
 
 1. Ersetzen Sie den Inhalt durch folgenden Code.
 
@@ -68,7 +97,7 @@ Zunächst müssen Sie ein Projekt für die Node.js-Webanwendung erstellen.
       a: img(id='myImage' height='200' width='200' src='')
     ```
 
-1. Öffnen Sie im Ordner „routes“ die Datei „index.js.“.
+1. Öffnen Sie im Ordner „routes“ die Datei *index.js*.
 
 1. Fügen Sie direkt vor dem Aufruf von `router.get` den folgenden Code hinzu:
 
@@ -91,7 +120,11 @@ Zunächst müssen Sie ein Projekt für die Node.js-Webanwendung erstellen.
     });
     ```
 
-1. Geben Sie nach `data` `: get` ein. IntelliSense zeigt Ihnen daraufhin die GetData-Funktion an. Klicken Sie auf `getData`.
+## <a name="use-intellisense"></a>Verwendung von IntelliSense
+
+1. Gehen Sie in der Datei *index.js* zur Codezeile mit `res.render`.
+
+1. Geben Sie nach der `data`-Zeichenfolge `: get` ein. IntelliSense zeigt Ihnen daraufhin die `getData`-Funktion an. Klicken Sie auf `getData`.
 
     ![Verwendung von IntelliSense](../nodejs/media/tutorial-nodejs-intellisense.png) 
 
@@ -111,7 +144,7 @@ Zunächst müssen Sie ein Projekt für die Node.js-Webanwendung erstellen.
 
 ## <a name="set-a-breakpoint"></a>Haltepunkt festlegen
 
-1. Klicken Sie in „index.js“ im linken Bundsteg vor die folgende Codezeile, um einen Haltepunkt festzulegen:
+1. Klicken Sie in *index.js* im linken Bundsteg vor die folgende Codezeile, um einen Haltepunkt festzulegen:
 
     `res.render('index', { title: 'Express', "data": getData() });`
 
@@ -143,14 +176,6 @@ Zunächst müssen Sie ein Projekt für die Node.js-Webanwendung erstellen.
 
     ![Im Browser ausgeführte App](../nodejs/media/tutorial-nodejs-running-in-browser.png)  
 
-1. Öffnen Sie das interaktive Node.js-Fenster, indem Sie **Ansicht** > **Weitere Fenster** > **Interaktives Node.js-Fenster** auswählen.
-
-   ![Interaktives Node.js-Fenster öffnen](../nodejs/media/tutorial-nodejs-interactive-window.png)  
-
-    Das interaktive Fenster unterstützt jede Ihrer Aktionen im Code, einschließlich der Verwendung von `require()`-Anweisungen. Der Code im folgenden Screenshot definiert eine Variable und zeigt den Speicherort des Node.js-Interpreters.
-
-   ![Interaktives Node.js-Fenster](../nodejs/media/tutorial-nodejs-interactive-window-example.png)  
-
 1. Schließen Sie den Webbrowser.  
 
 ## <a name="optional-publish-to-azure-app-service"></a>(Optional) Veröffentlichen in Azure App Service
@@ -175,5 +200,7 @@ Damit haben Sie das Tutorial erfolgreich abgeschlossen.
 
 ## <a name="next-steps"></a>Nächste Schritte 
 
-- Weitere Informationen zu den [Node.js-Tools für Visual Studio](https://github.com/Microsoft/nodejstools/wiki)  
-- Weitere Informationen zur [Visual Studio-IDE](../ide/visual-studio-ide.md)  
+In diesem Tutorial haben Sie erfahren, wie Sie mit Express eine Node.js-App erstellen und ausführen und wie Sie mit dem Debugger einen Haltepunkt festlegen.
+
+> [!div class="nextstepaction"]
+> [Node.js-Tools für Visual Studio](https://github.com/Microsoft/nodejstools)
