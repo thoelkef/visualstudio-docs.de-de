@@ -1,12 +1,8 @@
 ---
-title: "Verwenden von regulären Ausdrücken in Visual Studio | Microsoft-Dokumentation"
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+title: Verwenden von regulären Ausdrücken in Visual Studio | Microsoft-Dokumentation
+ms.custom: 03/26/2018
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vsregularexpressionhelp
 - vs.regularexpressionhelp
@@ -21,11 +17,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 43d566472a71b19ba9588a4564724d1ec8f5d933
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: cd7da9b9993f2a3ae2d1eb94cad18e99f5281fde
+ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="using-regular-expressions-in-visual-studio"></a>Verwenden von regulären Ausdrücken in Visual Studio
 
@@ -33,7 +29,9 @@ Visual Studio verwendet [reguläre Ausdrücke in .NET Framework](/dotnet/standar
 
 ## <a name="replacement-patterns"></a>Ersetzungsmuster
 
-Weitere Informationen zu regulären Ausdrücken, die in Ersetzungsmustern verwendet werden, finden Sie unter [Ersetzungen in regulären Ausdrücken](/dotnet/standard/base-types/substitutions-in-regular-expressions). Um eine nummerierte Erfassungsgruppe zu verwenden, lautet die Syntax zum Festlegen der nummerierten Gruppe `$1` und zum Festlegen der betreffenden Gruppe `(x)`. In der folgenden Zeichenfolge findet der gruppierte reguläre Ausdruck `(\d)([a-z])` beispielsweise vier Übereinstimmungen: **1a 2b 3c 4d**. Die Ersetzungszeichenfolge `z$1` konvertiert diese Zeichenfolge in **z1 z2 z3 z4**.
+Umschließen Sie die Gruppe mit Klammern im Muster für reguläre Ausdrücke, um eine nummerierte Erfassungsgruppe zu verwenden. Verwenden Sie `$number`, wenn `number` eine ganze Zahl ist, beginnend mit 1, um eine bestimmte nummerierte Gruppe in einem Ersetzungsmuster anzugeben. Der gruppierte reguläre Ausdruck `(\d)([a-z])` definiert beispielsweise zwei Gruppen: die erste Gruppe enthält eine einzelne Dezimalstelle, und die zweite Gruppe enthält ein einzelnes Zeichen zwischen **a** und **z**. Der Ausdruck findet vier Übereinstimmungen in der folgenden Zeichenfolge: **1a 2b 3c 4d**. Die Ersatzzeichenfolge `z$1` verweist nur auf die erste Gruppe und konvertiert die Zeichenfolge in **z1 z2 z3 z4**.
+
+Weitere Informationen zu regulären Ausdrücken, die in Ersetzungsmustern verwendet werden, finden Sie unter [Ersetzungen in regulären Ausdrücken](/dotnet/standard/base-types/substitutions-in-regular-expressions).
 
 ## <a name="regular-expression-examples"></a>Beispiele für reguläre Ausdrücke
 
@@ -52,7 +50,7 @@ Hier einige Beispiele:
 |Verankert die übereinstimmende Zeichenfolge am Ende einer Zeile|\r?$|`End\r?$` findet „end“ nur, wenn es am Ende einer Zeile angezeigt wird.|
 |Übereinstimmung mit beliebigem Zeichen in einem Satz|[abc]|`b[abc]` findet „ba“, „bb“ und „bc“.|
 |Übereinstimmung mit beliebigem Zeichen in einem Bereich von Zeichen|[a-f]|`be[n-t]` findet „bet“ in „between“, „ben“ in „beneath“ und „bes“ in „beside“, jedoch nicht „bel“ in „below“.|
-|Erfassung und implizite Nummerierung des in Klammern befindlichen Ausdrucks|()|`([a-z])X\1` findet „aXa“ und „bXb“, jedoch nicht „aXb“. ". „\1“ bezieht sich auf die erste Ausdrucksgruppe „[a-z]“.|
+|Erfassung und implizite Nummerierung des in Klammern befindlichen Ausdrucks|()|`([a-z])X\1` findet „aXa“ und „bXb“, jedoch nicht „aXb“. „\1“ bezieht sich auf die erste Ausdrucksgruppe „[a-z]“.|
 |Aufheben der Gültigkeit einer Übereinstimmung|(?!abc)|`real (?!ity)` findet „real“ in „realty“ und „really“, jedoch nicht in „reality“. Findet außerdem das zweite "real" (jedoch nicht das erste "real") in "realityreal".|
 |Übereinstimmung mit beliebigem Zeichen, das sich nicht in einem angegebenen Satz von Zeichen befindet|[^abc]|`be[^n-t]` findet „bef“ in „before“, „beh“ in „behind“ und „bel“ in „below“, jedoch nicht „beneath“.|
 |Übereinstimmung mit dem Ausdruck vor oder nach dem Symbol.|&#124;|`(sponge&#124;mud) bath` findet „sponge bath“ und „mud bath“.|

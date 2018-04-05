@@ -1,7 +1,7 @@
 ---
 title: Änderungsprotokoll (Visual Studio-Tools für Unity) | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 03/23/2018
 ms.reviewer: ''
 ms.suite: ''
 ms.technology: vs-unity-tools
@@ -13,14 +13,33 @@ ms.author: v-davian
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 4559632079c4577d6fa8b66e98c609965d1cc1bf
-ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
+ms.openlocfilehash: 6670f346f4834807296f6385bf23e573400f96a3
+ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="change-log-visual-studio-tools-for-unity"></a>Änderungsprotokoll (Visual Studio-Tools für Unity)
 Visual Studio-Tools für Unity (Änderungsprotokoll)
+
+## <a name="3605"></a>3.6.0.5
+ Veröffentlichung: 13.03.2018
+
+### <a name="new-features"></a>Neue Funktionen
+
+-   **Projektgenerierung:**
+
+    -   Unterstützung für den neuen Projektgenerator in Unity 2018.1 wurde hinzugefügt.
+
+### <a name="bug-fixes"></a>Fehlerkorrekturen
+
+-   **Integration:**
+
+    -   Behandlung von „Beschädigt“-Zuständen wurde mit benutzerdefinierten Projekten behoben.
+
+-   **Debugger:**
+
+    -   Festlegen der nächsten Anweisung wurde korrigiert.
 
 ## <a name="3604"></a>3.6.0.4
  Veröffentlichung: 05.03.2018

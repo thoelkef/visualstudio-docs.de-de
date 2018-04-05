@@ -1,5 +1,5 @@
 ---
-title: "Einstellungen für die .NET-Codierungskonventionen für „EditorConfig“ in Visual Studio | Microsoft-Dokumentation"
+title: Einstellungen für die .NET-Codierungskonventionen für „EditorConfig“ in Visual Studio | Microsoft-Dokumentation
 ms.date: 02/28/2018
 ms.topic: article
 dev_langs:
@@ -17,11 +17,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 53345fa849715a8065b0bf569977393033608caa
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: e69d7e291d1b13a5205aa4798c78c6a4e337db50
+ms.sourcegitcommit: 67374acb6d24019a434d96bf705efdab99d335ee
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>Einstellungen für die .NET-Codierungskonventionen für „EditorConfig“
 
@@ -77,10 +77,11 @@ Die folgende Liste enthält die zulässigen Sprachkonventionsregeln:
         - dotnet\_style\_object_initializer
         - dotnet\_style\_collection_initializer
         - dotnet\_style\_explicit\_tuple_names
-        - dotnet\_style\_coalesce_expression
-        - dotnet\_style\_null_propagation
         - dotnet\_prefer\_inferred\_tuple_names
         - dotnet\_prefer\_inferred\_anonymous\_type\_member_names
+    - [Einstellungen für die NULL-Überprüfung](#null_checking)
+        - dotnet\_style\_coalesce_expression
+        - dotnet\_style\_null_propagation
 - Einstellungen für das C#-Codeformat
     - [Implizite und explizite Typen](#var)
         - csharp\_style\_var\_for\_built\_in_types
@@ -102,7 +103,7 @@ Die folgende Liste enthält die zulässigen Sprachkonventionsregeln:
         - csharp\_prefer\_simple\_default_expression
         - csharp\_style\_deconstructed\_variable_declaration
         - csharp\_style\_pattern\_local\_over\_anonymous_function
-    - [Einstellungen für die NULL-Überprüfung](#null_checking)
+    - [Einstellungen für die NULL-Überprüfung](#null_checking_csharp)
         - csharp\_style\_throw_expression
         - csharp\_style\_conditional\_delegate_call
     - [Codeblockeinstellungen](#code_block)
@@ -380,7 +381,7 @@ visual_basic_preferred_modifier_order = Partial,Default,Private,Protected,Public
 
 #### <a name="expression_level">Einstellungen auf Ausdrucksebene</a>
 
-Die Formatregeln in diesem Abschnitt betreffen Einstellungen auf Ausdrucksebene, einschließlich der Verwendung von Objektinitialisierern, Auflistungsinitialisierern, expliziter Tupelnamen und NULL-Sammelausdrücken im Vergleich zu ternären Operatoren und dem Operator mit NULL-Bedingung.
+Die Formatierungsregeln in diesem Abschnitt betreffen Einstellungen auf Ausdrucksebene, einschließlich der Verwendung von Objektinitialisierern, Auflistungsinitialisierern, expliziter oder abgeleiteter Tupelnamen und abgeleiteter anonymer Typen.
 
 In der folgenden Tabelle werden die Regelnamen, Regel-IDs, anzuwendende Programmiersprachen, Standardwerte und die erste unterstützte Version von Visual Studio angezeigt:
 
@@ -389,10 +390,8 @@ In der folgenden Tabelle werden die Regelnamen, Regel-IDs, anzuwendende Programm
 | dotnet_style_object_initializer | IDE0017 | C# und Visual Basic | true:suggestion | Erste Version |
 | dotnet_style_collection_initializer | IDE0028 | C# und Visual Basic | true:suggestion | Erste Version |
 | dotnet_style_explicit_tuple_names | IDE0033 | C# 7.0 und höher und Visual Basic 15 und höher | true:suggestion | Erste Version |
-| dotnet_style_coalesce_expression | IDE0029 | C# und Visual Basic | true:suggestion | Erste Version |
-| dotnet_style_null_propagation | IDE0031 | C# 6.0+ und Visual Basic 14+ | true:suggestion | Erste Version |
-| dotnet_prefer_inferred_tuple_names | IDE0037 | C# 7.1 und höher und Visual Basic 15 und höher | true:suggestion | 15,6 |
-| dotnet_prefer_inferred_anonymous_type_member_names | IDE0037 | C# und Visual Basic | true:suggestion | 15,6 |
+| dotnet_style_prefer_inferred_tuple_names | IDE0037 | C# 7.1 und höher und Visual Basic 15 und höher | true:suggestion | 15,6 |
+| dotnet_style_prefer_inferred_anonymous_type_member_names | IDE0037 | C# und Visual Basic | true:suggestion | 15,6 |
 
 **dotnet\_style\_object_initializer**
 
@@ -475,6 +474,60 @@ Dim customer As (name As String, age As Integer) = GetCustomer()
 Dim name = customer.Item1
 ```
 
+**dotnet\_style\_prefer\_inferred\_tuple_names**
+
+- Wenn diese Regel auf **TRUE** festgelegt ist, werden abgeleitete Tupelelementnamen bevorzugt.
+- Wenn diese Regel auf **FALSE** festgelegt ist, werden explizite Tupelelementnamen bevorzugt.
+
+Codebeispiele:
+
+```csharp
+// dotnet_style_prefer_inferred_tuple_names = true
+var tuple = (age, name);
+
+// dotnet_style_prefer_inferred_tuple_names = false
+var tuple = (age: age, name: name);
+```
+
+**dotnet\_style\_prefer\_inferred\_anonymous\_type\_member_names**
+
+- Wenn diese Regel auf **TRUE** festgelegt ist, werden abgeleitete Membernamen vom anonymen Typ bevorzugt.
+- Wenn diese Regel auf **FALSE** festgelegt ist, werden explizite Membernamen vom anonymen Typ bevorzugt.
+
+Codebeispiele:
+
+```csharp
+// dotnet_style_prefer_inferred_anonymous_type_member_names = true
+var anon = new { age, name };
+
+// dotnet_style_prefer_inferred_anonymous_type_member_names = false
+var anon = new { age = age, name = name };
+
+```
+
+Diese Regeln könnten in einer .editorconfig-Datei wie folgt angezeigt werden:
+
+```EditorConfig
+# CSharp and Visual Basic code style settings:
+[*.{cs,vb}]
+dotnet_style_object_initializer = true:suggestion
+dotnet_style_collection_initializer = true:suggestion
+dotnet_style_explicit_tuple_names = true:suggestion
+dotnet_style_prefer_inferred_tuple_names = true:suggestion
+dotnet_style_prefer_inferred_anonymous_type_member_names = true:suggestion
+```
+
+#### <a name="null_checking">Einstellungen für die NULL-Überprüfung</a>
+
+Die Formatierungsregeln in diesem Abschnitt betreffen die Einstellungen der NULL-Überprüfung.
+
+In der folgenden Tabelle werden die Regelnamen, Regel-IDs, anzuwendende Programmiersprachen, Standardwerte und die erste unterstützte Version von Visual Studio angezeigt:
+
+| Regelname | Regel-ID | Anzuwendende Sprachen | Visual Studio-Standard | Visual Studio 2017-Version |
+| --------- | ------- | -------------------- | ----------------------| ---- |
+| dotnet_style_coalesce_expression | IDE0029 | C# und Visual Basic | true:suggestion | Erste Version |
+| dotnet_style_null_propagation | IDE0031 | C# 6.0+ und Visual Basic 14+ | true:suggestion | Erste Version |
+
 **dotnet\_style\_coalesce_expression**
 
 - Wenn diese Regel auf **TRUE** festgelegt ist, werden NULL-Sammelausdrücke vor der ternären Operatorüberprüfung bevorzugt.
@@ -525,49 +578,13 @@ Dim v = If(o Is Nothing, Nothing, o.ToString()) ' or
 Dim v = If(o IsNot Nothing, o.ToString(), Nothing)
 ```
 
-**dotnet\_prefer\_inferred\_tuple_names**
-
-- Wenn diese Regel auf **TRUE** festgelegt ist, werden abgeleitete Tupelelementnamen bevorzugt.
-- Wenn diese Regel auf **FALSE** festgelegt ist, werden explizite Tupelelementnamen bevorzugt.
-
-Codebeispiele:
-
-```csharp
-// dotnet_style_prefer_inferred_tuple_names = true
-var tuple = (age, name);
-
-// dotnet_style_prefer_inferred_tuple_names = false
-var tuple = (age: age, name: name);
-```
-
-**dotnet\_style\_prefer\_inferred\_anonymous\_type\_member_names**
-
-- Wenn diese Regel auf **TRUE** festgelegt ist, werden abgeleitete Membernamen vom anonymen Typ bevorzugt.
-- Wenn diese Regel auf **FALSE** festgelegt ist, werden explizite Membernamen vom anonymen Typ bevorzugt.
-
-Codebeispiele:
-
-```csharp
-// dotnet_style_prefer_inferred_anonymous_type_member_names = true
-var anon = new { age, name };
-
-// dotnet_style_prefer_inferred_anonymous_type_member_names = false
-var anon = new { age = age, name = name };
-
-```
-
 Diese Regeln könnten in einer .editorconfig-Datei wie folgt angezeigt werden:
 
 ```EditorConfig
 # CSharp and Visual Basic code style settings:
 [*.{cs,vb}]
-dotnet_style_object_initializer = true:suggestion
-dotnet_style_collection_initializer = true:suggestion
-dotnet_style_explicit_tuple_names = true:suggestion
 dotnet_style_coalesce_expression = true:suggestion
 dotnet_style_null_propagation = true:suggestion
-dotnet_style_prefer_inferred_tuple_names = true:suggestion
-dotnet_style_prefer_inferred_anonymous_type_member_names = true:suggestion
 ```
 
 ### <a name="c-code-style-settings"></a>Einstellungen für das C#-Codeformat
@@ -960,7 +977,7 @@ csharp_style_deconstructed_variable_declaration = true:suggestion
 csharp_style_pattern_local_over_anonymous_function = true:suggestion
 ```
 
-#### <a name="null_checking">Einstellungen für die NULL-Überprüfung</a>
+#### <a name="null_checking_csharp">Einstellungen für die NULL-Überprüfung</a>
 
 Diese Formatregeln beziehen sich auf die Syntax hinsichtlich der `null`-Prüfung, einschließlich der Verwendung von `throw`-Ausdrücken oder `throw`-Anweisungen; ferner bezieht sie sich darauf, ob eine NULL-Überprüfung durchgeführt oder der bedingte Sammeloperator (`?.`) verwendet werden soll, wenn ein [Lambdaausdruck](/dotnet/csharp/lambda-expressions) aufgerufen wird.
 
@@ -1545,7 +1562,7 @@ MyMethod(argument);
 
 **csharp_space_between_parentheses**
 
-Diese Regel akzeptiert nicht den Wert **TRUE** oder **FALSE**, sondern einen Wert aus der folgenden Tabelle:
+Diese Regel akzeptiert mindestens einen Wert aus der folgenden Tabelle:
 
 | Wert | description |
 | ----- |:------------|
@@ -1553,14 +1570,16 @@ Diese Regel akzeptiert nicht den Wert **TRUE** oder **FALSE**, sondern einen Wer
 | Ausdrücke | Leerzeichen zwischen Klammern von Ausdrücken einfügen. |
 | type_casts | Leerzeichen zwischen Klammern in Typumwandlungen einfügen. |
 
+Wenn Sie diese Regel auslassen oder einen anderen Wert als `control_flow_statements`, `expressions` oder `type_casts` verwenden, wird die Einstellung nicht angewendet.
+
 Codebeispiele:
 
 ```csharp
 // csharp_space_between_parentheses = control_flow_statements
-for( int i;i<x;i++ ) { ... }
+for ( int i = 0; i < 10; i++ ) { }
 
 // csharp_space_between_parentheses = expressions
-var z = ( x * y ) - ( ( y - x ) * 3);
+var z = ( x * y ) - ( ( y - x ) * 3 );
 
 // csharp_space_between_parentheses = type_casts
 int y = ( int )x;

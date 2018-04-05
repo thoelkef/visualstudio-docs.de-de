@@ -1,11 +1,11 @@
 ---
 title: Projekt- und Projektmappen-Dateitypen | Microsoft-Dokumentation
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - File Properties.CopyToOutputDirectory
@@ -26,12 +26,13 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: d05b7b5f1510777c758998572e78757c47148fa1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: d239a5e129f12c4521ba190674d84430f8f2e646
+ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="project-and-solution-file-types"></a>Projekt- und Projektmappen-Dateitypen
 
@@ -50,7 +51,7 @@ Visual Studio speichert die Einstellungen von Projektmappen in zwei Dateitypen (
 
 Projekte können viele verschiedene Dateitypen enthalten. Dateien mit C#-Code haben beispielsweise die Erweiterung **.cs**, und Dateien in C++ haben **.cpp**. Ressourcen werden in **RESX**-Dateien und XAML-Code in **XAML**-Dateien gespeichert. [App.config](../../ide/managing-application-settings-dotnet.md)-Dateien enthalten Informationen zur Anwendung, wie z.B. Verbindungszeichenfolgen, die nicht im Anwendungscode enthalten sein sollten.
 
-Weitere Informationen finden Sie unter [Für Visual C++-Projekte erstellte Dateitypen](/cpp/ide/file-types-created-for-visual-cpp-projects) und [Unicode in MFC](/cpp/mfc/unicode-in-mfc).
+Weitere Informationen zu Dateitypen in C++-Projekten finden Sie unter [Für Visual C++-Projekte erstellte Dateitypen](/cpp/ide/file-types-created-for-visual-cpp-projects).
 
 ## <a name="see-also"></a>Siehe auch
 

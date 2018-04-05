@@ -1,11 +1,11 @@
 ---
 title: 'Exemplarische Vorgehensweise: Meine erste WPF-Desktopanwendung | Microsoft-Dokumentation'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: vs-ide-designers
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 author: gewarren
 ms.author: gewarren
@@ -15,11 +15,11 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: c239e811ea47158dd63660e761f943b8f22e8e23
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: 95c35eae16f50b6fa8c0a8c86fa0d93732512a88
+ms.sourcegitcommit: 67374acb6d24019a434d96bf705efdab99d335ee
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="walkthrough-my-first-wpf-desktop-application"></a>Exemplarische Vorgehensweise: Meine erste WPF-Desktopanwendung
 
@@ -320,7 +320,7 @@ Das Layout bietet die Möglichkeit, Elemente anzuordnen und die Größe und Posi
 
     1. Suchen Sie die Zeile `<Button Grid.Column="0" Grid.Row="2" Margin="0,10,0,0" Width="125"`. Ändern Sie `Grid.Column="0"` in `Grid.Column="1"` und `Grid.Row="2"` in `Grid.Row="3"`.
 
-1. Fügen Sie direkt vor dem `<Border` -Element den folgenden XAML-Code hinzu, um den Titel anzuzeigen:
+1. Fügen Sie direkt vor dem `<Border`-Element den folgenden XAML-Code hinzu, um den Titel anzuzeigen:
 
     ```xaml
     <Label Grid.Column="1" VerticalAlignment="Center" FontFamily="Trebuchet MS"
@@ -573,7 +573,7 @@ Das Layout bietet die Möglichkeit, Elemente anzuordnen und die Größe und Posi
 
     -   `listHeaderTextStyle`: Zum Formatieren der Kopfzeile für **Label**.
 
-    -   `buttonStyle`: Zum Formatieren von `Button` auf der Seite **ExpenseItHome.xaml** .
+    -   `buttonStyle`: Zum Formatieren von `Button` auf der Seite **ExpenseItHome.xaml**.
 
 1. Öffnen Sie **ExpenseItHome.xaml**, und ersetzen Sie alles zwischen dem `<Grid>`-Element und `</Grid>`-Element durch den folgenden XAML-Code:
 
