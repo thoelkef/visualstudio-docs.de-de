@@ -1,23 +1,25 @@
 ---
-title: "Erstellen von benutzerdefiniertem Code Codeanalyse-Regelsätze | Microsoft Docs"
-ms.custom: 
+title: Erstellen von benutzerdefiniertem Code Codeanalyse-Regelsätze | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-code-analysis
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 88db3a0a-1b92-496d-9fae-b2bb980f5933
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 18f527f30afe21678874f3555b539ce9d60bd816
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.sourcegitcommit: a0a49cceb0fdc1465ddf76d131c6575018b628b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/05/2018
 ---
 # <a name="creating-custom-code-analysis-rule-sets"></a>Erstellen benutzerdefinierter Codeanalyse-Regelsätze
 Sie können ein Projekt mit verwaltetem Code Codeanalyseregeln zuweisen, durch Angeben eines Regelsatzes, das eine oder mehrere Regeln enthält. Die Microsoft-Standardregelsätze bieten Gruppen von Regeln, die von der Funktion und der Tiefe angeordnet sind. Beispielsweise enthalten die Microsoft grundlegende-Entwurfsrichtlinienregeln und erweiterten Entwurfsrichtlinienregeln der Microsoft Regeln, die auf Fehler bezüglich Verwendbarkeit und wartbarkeit-Probleme mit hinzugefügten Schwerpunkt Benennungsregeln im Regelsatz erweiterte konzentrieren.  
