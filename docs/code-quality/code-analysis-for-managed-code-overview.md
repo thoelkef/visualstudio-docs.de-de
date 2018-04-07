@@ -13,11 +13,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8209e17985ef7f9924fc677b91b5cfe539977cb9
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: 6d654cb3a7f0d0e952b447337603718c20eaee3e
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="overview-of-code-analysis-for-managed-code"></a>Übersicht über die Codeanalyse für verwalteten code
 
@@ -33,11 +33,11 @@ Codeanalyse kann manuell oder automatisch auf das Projekt ausgeführt werden.
 
 Codeanalyse jedes Mal ausführen, die Sie ein Projekt erstellen möchten, wählen **Codeanalyse für Build aktivieren** auf der Eigenschaftenseite des Projekts. Weitere Informationen finden Sie unter [Vorgehensweise: Aktivieren und Deaktivieren der automatischen Codeanalyse](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md).
 
-Codeanalyse manuell an einem Projekt ausführen, in der Menüleiste wählen **analysieren** > **Ausführen der Codeanalyse** > **Ausführen der Codeanalyse für <project>** . Weitere Informationen finden Sie unter [Vorgehensweise: Aktivieren und Deaktivieren der automatischen Codeanalyse](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md).
+Codeanalyse manuell an einem Projekt ausführen, in der Menüleiste wählen **analysieren** > **Ausführen der Codeanalyse** > **Ausführen der Codeanalyse für \<Projekt >**.
 
 ## <a name="rule-sets"></a>Regelsätze
 
-Codeanalyseregeln für verwalteten Code in gruppiert *-Regelsätze*. Sie können einen Standardregelsatz von Microsoft verwenden, oder Sie können eine benutzerdefinierte Regel erstellen, um eine bestimmte Anforderung zu erfüllen. Weitere Informationen finden Sie unter [mithilfe von Regelsätzen zum Gruppe Codeanalyseregeln](../code-quality/using-rule-sets-to-group-code-analysis-rules.md).
+Codeanalyseregeln für verwalteten Code in gruppiert [-Regelsätze](../code-quality/using-rule-sets-to-group-code-analysis-rules.md). Sie können einen der Microsoft-Standardregelsätze verwenden oder Sie können [Erstellen eines benutzerdefinierten Regelsatzes](../code-quality/how-to-create-a-custom-rule-set.md) auf eine bestimmte Anforderung zu erfüllen.
 
 ## <a name="suppress-warnings"></a>Warnungen unterdrücken
 
@@ -56,7 +56,7 @@ Public class MyClass
 Weitere Informationen finden Sie unter [Unterdrücken von Warnungen](../code-quality/in-source-suppression-overview.md).
 
 > [!NOTE]
-> Wenn Sie ein Projekt zu Visual Studio 2017 migrieren, können Sie plötzlich eine Flut von codeanalysewarnungen Datenwachstums werden. Wenn Sie nicht bereit sind, korrigieren Sie die Warnungen und Codeanalyse vorübergehend deaktivieren möchten, öffnen Sie die Eigenschaftenseiten des Projekts (**Projekt** > ***Projekt* Eigenschaften...** ) und fahren Sie mit der **Codeanalyse** Registerkarte. Deaktivieren Sie **Codeanalyse für Build aktivieren**, und erstellen Sie das Projekt dann erneut. Alternativ können Sie einen anderen, kleineren Regelsatz, der für den Code ausführen auswählen. Denken Sie daran, aktivieren Sie die Codeanalyse auf Wenn Sie die Warnungen beheben bereit sind.
+> Wenn Sie ein Projekt zu Visual Studio 2017 migrieren, können Sie mit einer großen Anzahl von Warnungen der Codeanalyse plötzlich Datenwachstums. Wenn Sie sich nicht bereit sind, korrigieren Sie die Warnungen und sofort produktiv werden soll, können Sie *Baseline* den Analyse-Zustand des Projekts. Aus der **analysieren** klicken Sie im Menü **Codeanalyse ausführen und aktive Probleme unterdrückt**.
 
 ## <a name="run-code-analysis-as-part-of-check-in-policy"></a>Ausführen der Codeanalyse im Rahmen der Eincheckrichtlinien
 

@@ -1,10 +1,11 @@
 ---
-title: 'Vorgehensweise: Konfigurieren der Codeanalyse für ein Projekt mit verwaltetem Code | Microsoft Docs'
-ms.date: 11/04/2016
+title: Konfigurieren der Codeanalyse in Visual Studio | Microsoft Docs
+ms.date: 04/04/2018
 ms.technology: vs-ide-code-analysis
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.propertypages.csvb
+- vs.codeanalysis.propertypages.solution
 helpviewer_keywords:
 - code analysis, selecting rule sets
 - code analysis, rule sets
@@ -13,11 +14,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - dotnet
-ms.openlocfilehash: 46d41b09f0f6639195613c8a4d9a08f952c79525
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: daac3af3a6d5d5fba4d6e8dbb652821583769762
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="how-to-configure-code-analysis-for-a-managed-code-project"></a>Gewusst wie: Konfigurieren der Codeanalyse für ein Projekt mit verwaltetem Code
 
@@ -49,9 +50,28 @@ In Visual Studio können Sie aus einer Liste der Codeanalyse *-Regelsätze* um a
 
     - Wählen Sie  **\<durchsuchen... >** finden Sie eine vorhandene benutzerdefinierte Regel festlegen, ist nicht in der Liste.
 
-    - Definieren Sie einen benutzerdefinierten Regelsatz. Weitere Informationen finden Sie unter [Erstellen von benutzerdefinierten Regelsätzen](../code-quality/creating-custom-code-analysis-rule-sets.md).
+    - Definieren einer [benutzerdefinierten Regelsatz](../code-quality/how-to-create-a-custom-rule-set.md).
+
+## <a name="specify-rule-sets-for-multiple-projects-in-a-solution"></a>Angeben von Regelsätzen für mehrere Projekte in einer Projektmappe
+
+Standardmäßig werden alle verwalteten Projekte einer Projektmappe zugewiesen der *Microsoft-Mindestregeln* code Codeanalyse-Regelsatz. Sie können die Regelsätze, die den Projekten einer Projektmappe im zugewiesen sind ändern die **Eigenschaften** Dialogfeld für die Projektmappe.
+
+1. Öffnen Sie die Lösung in Visual Studio.
+
+2. Auf der **analysieren** klicken Sie im Menü **Codeanalyse für Projektmappe konfigurieren**.
+
+3. Erweitern Sie ggf. **allgemeine Eigenschaften**, und wählen Sie dann **Codeanalyseeinstellungen**.
+
+4. Sie können einen Regelsatz für ein oder mehrere Projekte angeben:
+
+    - Wählen Sie den Projektnamen aus, um einen Regelsatz für ein einzelnes Projekt anzugeben.
+
+    - Um einen Regelsatz für mehrere Projekte anzugeben, halten Sie **STRG** , und wählen Sie den Projektnamen.
+
+    - Um alle Projekte in der Projektmappe angeben möchten, halten Sie **UMSCHALT** , und klicken Sie in der Projektliste auf.
+
+5. Wählen Sie die **Regelsatz** Feld eines Projekts, und wählen Sie dann der Namen der Regel festlegen, dass Sie anwenden möchten.
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Exemplarische Vorgehensweise: Konfigurieren und Verwenden eines benutzerdefinierten Regelsatzes](../code-quality/walkthrough-configuring-and-using-a-custom-rule-set.md)
 - [Gewusst wie: Konfigurieren der Codeanalyse für eine ASP.NET-Anwendung](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md)

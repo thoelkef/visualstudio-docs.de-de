@@ -1,13 +1,8 @@
 ---
-title: 'Vorgehensweise: Erstellen eines benutzerdefinierten Regelsatzes | Microsoft Docs'
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+title: Erstellen eine benutzerdefinierten Codeanalyseregel Teilmenge in Visual Studio | Microsoft Docs
+ms.date: 04/04/2018
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.addremoverulesets
 helpviewer_keywords:
@@ -17,35 +12,25 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 3095d5eff59506f3d7681f61f11f73d37258647d
-ms.sourcegitcommit: bfa26fd7426af0d065cb2eef3d6827b5d6f7986c
+ms.openlocfilehash: a094b6c59eb4e1d95949dc35a5c0479edb4d5a76
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/20/2018
+ms.lasthandoff: 04/06/2018
 ---
-# <a name="how-to-create-a-custom-rule-set"></a>Gewusst wie: Erstellen eines benutzerdefinierten Regelsatzes
+# <a name="custom-rule-sets"></a>Benutzerdefinierte Regelsätze
 
-In Visual Studio können Sie erstellen und ändern Sie eine benutzerdefinierte *Regelsatz* um bestimmte projektanforderungen mit der Codeanalyse zu erfüllen. Zum Erstellen eines benutzerdefinierten Regelsatzes öffnen Sie einen oder mehrere Standardregelsätze im Regelsatz-Editor. Anschließend können Sie bestimmte Regeln hinzufügen oder entfernen sowie Sie die Aktion ändern, die ausgeführt wird, wenn von der Codeanalyse ein Verstoß gegen eine Regel festgestellt wurde.
+Erstellen Sie eine benutzerdefinierte *Regelsatz* um projektspezifische Anforderungen für die Codeanalyse zu erfüllen.
 
- Zum Erstellen eines neuen benutzerdefinierten Regelsatzes speichern Sie diesen unter einem neuen Dateinamen. Der benutzerdefinierte Regelsatz wird dem Projekt automatisch zugewiesen.
+## <a name="create-a-custom-rule-set"></a>Erstellen eines benutzerdefinierten Regelsatzes
 
-## <a name="opening-the-rule-set-editor"></a>Öffnen des Regelsatz-Editors
+Eine benutzerdefinierte Regel zu erstellen, öffnen Sie einen integrierte Regelsatz in der **Regelsatz-Editor**. Von dort aus können Sie hinzufügen oder entfernen Sie bestimmte Regeln, und Sie können die Aktion, die bei einem Verstoß eine Regel gegen ändern&mdash;beispielsweise angezeigt wird, eine Warnung oder einen Fehler.
 
-### <a name="to-open-an-empty-rule-set-file-in-the-rule-set-editor"></a>So öffnen Sie eine leere Regelsatzdatei im Regelsatz-Editor
+1. In **Projektmappen-Explorer**mit der rechten Maustaste auf das Projekt, und wählen Sie dann **Eigenschaften**.
 
-1. Auf der **Datei** Menü [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)], zeigen Sie auf **neu** , und klicken Sie dann auf **Datei**.
+2. Auf der **Eigenschaften** Seiten, wählen die **Codeanalyse** Registerkarte.
 
-2. In der **neue Datei** (Dialogfeld), klicken Sie auf **allgemeine** in der **installierte Vorlagen** aus, und wählen Sie dann **Codeanalyse-Regelsatz**.
-
-3. Der Regelsatz-Editor wird angezeigt. In der Editorliste sind keine Regeln ausgewählt.
-
-### <a name="to-create-a-custom-rule-from-a-single-existing-rule-set"></a>So erstellen Sie eine benutzerdefinierte Regel aus einem einzelnen vorhandenen Regelsatz
-
-1. Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste des Projekts, und wählen Sie dann **Eigenschaften**.
-
-2. Auf der **Eigenschaften** auf **Codeanalyse**.
-
-3. In der **Regelsatz** Dropdown-Liste, führen Sie einen der folgenden:
+3. In der **diesen Regelsatz ausführen** Dropdown-Liste, führen Sie einen der folgenden:
 
     - Wählen Sie den Regelsatz aus, den Sie anpassen möchten.
 
@@ -53,67 +38,48 @@ In Visual Studio können Sie erstellen und ändern Sie eine benutzerdefinierte *
 
     - Wählen Sie  **\<durchsuchen... >** Geben Sie einen vorhandenen Regelsatz ist nicht in der Liste.
 
-4. Klicken Sie auf **öffnen** auf die Regeln im Regelsatz-Editor anzuzeigen.
+4. Wählen Sie **öffnen** auf die Regeln im Regelsatz-Editor anzuzeigen.
 
-### <a name="to-create-a-custom-rule-set-from-multiple-existing-rule-sets"></a>So erstellen Sie einen benutzerdefinierten Regelsatz aus mehreren vorhandenen Regelsätzen
+Sie können auch eine neue Regelsatzdatei aus erstellen die **neue Datei** Dialogfeld:
+
+1. Wählen Sie **Datei** > **neu** > **Datei**, oder drücken Sie **STRG**+**N**.
+
+2. In der **neue Datei** wählen Sie im Dialogfeld die **allgemeine** Kategorie auf der linken Seite und wählen Sie dann **Codeanalyse-Regelsatz**.
+
+3. Wählen Sie **öffnen**.
+
+   Die neue *ruleSet* Datei in dem Regelsatz-Editor wird geöffnet.
+
+### <a name="create-a-custom-rule-set-from-multiple-rule-sets"></a>Erstellen eines benutzerdefinierten Regelsatzes aus mehreren Regelsätze
 
 1. Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste des Projekts, und wählen Sie dann **Eigenschaften**.
 
-2. Auf der **Eigenschaften** auf **Codeanalyse**.
+2. Auf der **Eigenschaften** Seiten, wählen die **Codeanalyse** Registerkarte.
 
 3. Wählen Sie  **\<auswählen, die mehrere Regelsätzen... >** aus **diesen Regelsatz ausführen**.
 
-4. In der **Regelsätze hinzufügen oder entfernen Sie** wählen Sie im Dialogfeld die Regel aktiviert werden soll der neuen Regelsatz basieren, und klicken Sie dann auf **OK**.
+4. In der **hinzufügen oder Entfernen von Regelsätzen** (Dialogfeld), wählen Sie die Regel Sie wird in Ihrer neuen Regelsatz enthalten sein soll.
 
-5. Speichern Sie den neuen Regelsatz.
+   ![Fügen Sie hinzu oder entfernen Sie die Regel (Dialogfeld)](media/add-remove-rule-sets.png)
 
-     Der Name des neuen Regelsatzes ist ausgewählt, der **diesen Regelsatz ausführen** Liste. Der Anzeigename des Regelsatzes kann im nächsten Schritt geändert werden.
+5. Wählen Sie **speichern unter**, geben Sie einen Namen für die *ruleSet* Datei, und wählen Sie dann **speichern**.
 
-6. (Optional) Der Anzeigename des Regelsatzes, zum Ändern der **Ansicht** Menü klicken Sie auf **Fenster "Eigenschaften"**. Geben Sie den Namen in der **Namen** Feld.
+   Neuen Regelsatz ausgewählt ist, der **diesen Regelsatz ausführen** Liste.
 
-7. Zum Hinzufügen zu entfernen, oder ändern Sie im neuen Regelsatz einzelne Codeanalyseregeln, klicken Sie auf **öffnen**.
+6. Wählen Sie **öffnen** zu den neuen Regelsatz im Regelsatz-Editor zu öffnen.
 
-## <a name="modifying-a-rule-set"></a>Ändern eines Regelsatzes
+## <a name="name-and-description"></a>Name und Beschreibung
 
-### <a name="to-modify-a-rule-set-in-the-rule-set-editor"></a>So ändern Sie einen Regelsatz im Regelsatz-Editor
+Um den Anzeigenamen des einen Regelsatzes ändern, die im Editor geöffnet ist, öffnen die **Eigenschaften** Fenster dazu **Ansicht** > **Fenster "Eigenschaften"** in der Menüleiste. Geben Sie den Anzeigenamen in der **Namen** Feld. Sie können auch eine Beschreibung für den Regelsatz eingeben.
 
-- Der Anzeigename des Regelsatzes, zum Ändern der **Ansicht** Menü klicken Sie auf **Fenster "Eigenschaften"**. Geben Sie den Anzeigenamen in der **Namen** Feld. Der Anzeigename kann sich vom Dateinamen unterscheiden.
+## <a name="next-steps"></a>Nächste Schritte
 
-- Wenn Sie einem benutzerdefinierten Regelsatz alle Regeln der Gruppe hinzufügen möchten, aktivieren Sie das Kontrollkästchen für die Gruppe. Wenn Sie alle Regeln der Gruppe entfernen möchten, deaktivieren Sie das Kontrollkästchen.
+Nun, da Sie eine Regel festgelegt haben, besteht der nächste Schritt die Regeln durch Hinzufügen oder Entfernen von Regeln oder ändern den Schweregrad der Verletzungen von Schwellenwertregeln anpassen.
 
-- Wenn Sie dem benutzerdefinierten Regelsatz eine bestimmte Regel hinzufügen möchten, aktivieren Sie das Kontrollkästchen für die Regel. Wenn Sie die Regel aus dem Regelsatz entfernen möchten, deaktivieren Sie das zugehörige Kontrollkästchen.
-
-- Um die Aktion ausführt, wenn es sich bei einem Verstoß gegen eine Regel in einer Codeanalyse zu ändern, klicken Sie in der **Aktion** Feld für die Regel, und wählen Sie dann einen der folgenden Werte:
-
-     **Warnhinweis anzeigen,** -wird eine Warnung generiert.
-
-     **Fehler beim** -generiert einen Fehler.
-
-     **Keine** -deaktiviert die Regel. Diese Aktion ist mit der Aktion identisch, die beim Entfernen der Regel aus dem Regelsatz ausgeführt wird.
-
-## <a name="changing-the-rule-set-editor-display"></a>Ändern der Anzeige im Regelsatz-Editor
-
-### <a name="to-group-filter-or-change-the-fields-in-the-rule-set-editor-by-using-the-rule-set-editor-toolbar"></a>So gruppieren, filtern oder ändert Sie Felder auf der Symbolleiste des Regelsatz-Editors
-
-- Um die Regeln in allen Gruppen erweitern möchten, klicken Sie auf **alle erweitern**.
-
-- Um die Regeln in allen Gruppen reduzieren möchten, klicken Sie auf **alle reduzieren**.
-
-- Um das Feld ändern, die Regeln gruppiert werden, wählen Sie das Feld aus der **Group By** Liste. Um die Regeln ohne Gruppierung anzuzeigen, wählen Sie  **\<None >**.
-
-- Klicken Sie zum Hinzufügen oder entfernen in Regelspalten Felder, die auf **Spaltenoptionen**.
-
-- So blenden Sie Regeln aus, die nicht für die aktuelle Projektmappe gelten **Ausblenden von Regeln, die nicht für die aktuelle Projektmappe gelten**.
-
-- Zum Wechseln zwischen dem ein- und Ausblenden von Regeln, die die Fehleraktion zugewiesen sind, klicken Sie auf **Regeln angezeigt, die Codeanalysefehler generieren können**.
-
-- Zum Wechseln zwischen dem ein- und Ausblenden von Regeln, die die Warnaktion zugewiesen sind, klicken Sie auf **Regeln angezeigt, die codeanalysewarnungen generieren können**.
-
-- So wechseln Sie zwischen dem ein- und Ausblenden von Regeln, die zugewiesen wurden die **keine** Aktionen aufgeführt, klicken Sie auf **Regeln angezeigt, die nicht aktiviert sind**.
-
-- Zum Hinzufügen oder Entfernen von Microsoft-hinzuzufügen dem aktuellen Regelsatz Standardregelsätze, klicken Sie auf **Add- oder Remove untergeordnete Regelsätze**.
+> [!div class="nextstepaction"]
+> [Bearbeiten Sie Regeln im Regelsatz-editor](../code-quality/working-in-the-code-analysis-rule-set-editor.md)
 
 ## <a name="see-also"></a>Siehe auch
 
-[Vorgehensweise: Konfigurieren der Codeanalyse für ein Projekt mit verwaltetem Code](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)
-[Code Analysis-regelsatzreferenz](../code-quality/code-analysis-rule-set-reference.md)
+- [Gewusst wie: Konfigurieren der Codeanalyse für ein Projekt mit verwaltetem Code](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)
+- [Codeanalyse-Regelsatzreferenz](../code-quality/rule-set-reference.md)
