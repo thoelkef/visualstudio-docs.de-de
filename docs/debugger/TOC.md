@@ -7,7 +7,7 @@
 ## [Debuggen einer ASP.NET-App](quickstart-debug-aspnet.md)
 # Tutorials
 ## [Lernen Sie das Debuggen mit Visual Studio](getting-started-with-the-debugger.md)
-## [Ausführen von Python-Code im Debugger](../python/vs-tutorial-01-04.md)
+## [Ausführen von Python-Code im Debugger](../python/tutorial-working-with-python-in-visual-studio-step-04-debugging.md)
 ## [Debuggen einer aktiven Azure-App](debug-live-azure-applications.md)
 ## [Anzeigen von Momentaufnahmen mithilfe der Schritt-zurück-Funktion von IntelliTrace](how-to-use-intellitrace-step-back.md)
 # Anleitungen
