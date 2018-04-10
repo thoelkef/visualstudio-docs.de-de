@@ -6,7 +6,7 @@ ms.date: 03/13/2018
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
-- vs-nodejs
+- vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: tutorial
 ms.devlang: javascript
@@ -17,11 +17,11 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 05e10e6016c4a6791b5bc80ba6a05616c1edb0f6
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: f7d0774753178c9cb0dbcae1800da6b00ab02a0e
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>Tutorial: Erstellen einer Node.js- und Express-App in Visual Studio
 In diesem Tutorial für die Visual Studio-Entwicklung erfahren Sie, wie Sie mithilfe von Node.js und Express eine einfache Node.js-Webanwendung erstellen, Code hinzufügen, einige Features der IDE kennenlernen und die App ausführen. Falls Sie Visual Studio noch nicht installiert haben, können Sie es [hier](http://www.visualstudio.com) gratis herunterladen.  
@@ -40,11 +40,13 @@ In diesem Tutorial lernen Sie, wie die folgenden Aufgaben ausgeführt werden:
 
     Falls Sie Visual Studio noch nicht installiert haben, können Sie es [hier](http://www.visualstudio.com) gratis herunterladen.
 
-    Falls Sie über Visual Studio bereits verfügen, aber die Workload noch installieren müssen, klicken Sie auf den Link **Visual Studio-Installer öffnen** auf der linken Seite des Dialogfelds **Neues Projekt**. Der Visual Studio-Installer wird gestartet. Klicken Sie auf die Workload **Node.js-Entwicklung** und anschließend auf **Ändern**.
+    Falls Sie über Visual Studio bereits verfügen, aber die Workload noch installieren müssen, klicken Sie auf den Link **Visual Studio-Installer öffnen** im linken Bereich des Dialogfelds **Neues Projekt**. Der Visual Studio-Installer wird gestartet. Klicken Sie auf die Workload **Node.js-Entwicklung** und anschließend auf **Ändern**.
 
 * Die Node.js-Laufzeit muss installiert sein.
 
     Wenn sie nicht bereits installiert ist, installieren Sie die LTS-Version über die [Node.js](https://nodejs.org/en/download/)-Website. Im Allgemeinen erkennt Visual Studio die installierte Node.js-Runtime automatisch. Wird die installierte Laufzeit nicht erkannt, können Sie das Projekt so konfigurieren, dass es auf die installierte Laufzeit auf der Eigenschaftenseite verweist (klicken Sie hierfür nach dem Erstellen des Projekts mit der rechten Maustaste auf den Projektknoten, und wählen Sie **Eigenschaften** aus).
+
+    Dieses Tutorial wurde mit Node.js 8.10.0 getestet.
 
 ## <a name="create-a-project"></a>Erstellen eines Projekts
 Zunächst müssen Sie ein Projekt für die Node.js-Webanwendung erstellen.
@@ -119,6 +121,8 @@ Zunächst müssen Sie ein Projekt für die Node.js-Webanwendung erstellen.
         res.render('index', { title: 'Express', "data" });
     });
     ```
+
+    In der Codezeile mit `res.render` befindet sich ein Fehler. Dieser muss behoben werden, bevor die App ausgeführt werden kann. Wir beheben den Fehler im nächsten Abschnitt.
 
 ## <a name="use-intellisense"></a>Verwendung von IntelliSense
 

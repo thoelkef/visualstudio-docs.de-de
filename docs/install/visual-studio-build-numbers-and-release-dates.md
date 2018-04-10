@@ -4,20 +4,20 @@ description: Eine Liste der nach Datum sortierten veröffentlichten Versionen vo
 keywords: ''
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.date: 03/19/2018
-ms.topic: article
+manager: douge
+ms.date: 03/22/2018
+ms.topic: reference
 helpviewer_keywords: ''
 ms.technology:
 - vs-acquisition
 ms.service: ''
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fb2238d8a0afb8334a05585bf040931da81d66a
-ms.sourcegitcommit: a80e7ef2f0a0f6d906a44f4d696aeb208bc1ad70
+ms.openlocfilehash: d036abe3aa3b6e348eae7f0045b30144900255fd
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="visual-studio-2017-build-numbers-and-release-dates"></a>Visual Studio 2017-Buildnummern und -Veröffentlichungstermine
 
@@ -25,6 +25,8 @@ In der folgenden Tabelle werden die bisherigen Buildnummern und Veröffentlichun
 
 | **Version**| **Kanal** | **Veröffentlichungsdatum** | **Buildversion** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.6.4 | Release | 22. März 2018 | 15.6.27428.2015 |
+| 15.7.0 Vorschauversion 2.0 | Vorschau | 21. März 2018 | 15.7.27520.0 |
 | 15.6.3 | Release | 19. März 2018 | 15.6.27428.2011 |
 | 15.7.0 Vorschauversion 1.0 | Vorschau | 13. März 2018 | 15.7.27512.0 |
 | 15.6.2 | Release | 13. März 2018 | 15.6.27428.2005 |
