@@ -1,12 +1,12 @@
 ---
-title: "Seite \"Veröffentlichen\", Projekt-Designer (Office-Entwicklung in Visual Studio) | Microsoft Docs"
-ms.custom: 
+title: Seite "Veröffentlichen", Projekt-Designer (Office-Entwicklung in Visual Studio) | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VST.ProjectProperties.Publish.2007System
@@ -102,7 +102,7 @@ ms.lasthandoff: 01/10/2018
  **Sprache für Veröffentlichung**  
  Diese Option legt die Sprache für die Microsoft-Softwarelizenzbedingungen fest und bezieht die Language Packs in die Liste der erforderlichen Komponenten ein. Sie wirkt sich nicht auf die Sprache der Anpassung aus. Die Sprache im Setupprogramm wird durch die installierten Sprachen von Visual Studio bestimmt.  
   
- Weitere Informationen zum Ändern der **Sprache für Veröffentlichung**finden Sie unter [How to: Change the Publish Language for a ClickOnce Application](/visualstudio/deployment/how-to-change-the-publish-language-for-a-clickonce-application).  
+ Weitere Informationen zum Ändern der **Sprache für Veröffentlichung**finden Sie unter [Gewusst wie: Ändern der Veröffentlichungssprache einer ClickOnce-Anwendung](/visualstudio/deployment/how-to-change-the-publish-language-for-a-clickonce-application).  
   
  **Veröffentlichungsversion**  
  Legt die Versionsnummer für die Anpassung fest. Wenn die Versionsnummer geändert wird, erfolgt die Veröffentlichung der Anwendung als Update. Für jede Version wird während des Buildprozesses ein neuer Ordner erstellt, um das Überschreiben der zuvor veröffentlichten Version zu verhindern. Jeder Teil der Veröffentlichungsversion (**Hauptversion**, **Nebenversion**, **Build**, **Revision**) kann bis zu fünf Ziffern umfassen.  

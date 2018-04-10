@@ -1,11 +1,11 @@
 ---
-title: "Empfohlene Vorgehensweisen für die Verwendung von Codeausschnitten | Microsoft-Dokumentation"
-ms.custom: 
+title: Empfohlene Vorgehensweisen für die Verwendung von Codeausschnitten | Microsoft-Dokumentation
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - code snippets, best practices
@@ -15,11 +15,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 31951001512578446c4a3ab05efe3ade99223068
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 6d5ac19f3caa795fc309b77d0845db0d412e1ccb
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="best-practices-for-using-code-snippets"></a>Bewährte Methoden für die Verwendung von Codeausschnitten
 
@@ -33,7 +33,7 @@ Normalerweise fangen Try…Catch-Blöcke des Codeausschnitts alle Ausnahmen ab u
 
 Wenn Sie die Speicherorte an die Anwendung anpassen, sollten Sie Folgendes beachten:
 
-- Suchen eines verfügbaren Speicherorts. Benutzer haben möglicherweise keinen Zugriff auf den Ordner „Programme“ des Computers. Daher kann das Speichern von Dateien mit den Anwendungsdateien eventuell nicht funktionieren.
+- Suchen eines verfügbaren Speicherorts. Benutzer haben möglicherweise keinen Zugriff auf den Ordner *Programme* des Computers. Daher kann das Speichern von Dateien mit den Anwendungsdateien eventuell nicht funktionieren.
 
 - Suchen eines sicheren Speicherorts. Das Speichern von Dateien im Stammordner (*C:\\*) ist nicht sicher. Zum Speichern von Anwendungsdaten wird der Ordner *Anwendungsdaten* empfohlen. Für die Daten einzelner Benutzer kann die Anwendung im Ordner *Dokumente* eine Datei für jeden Benutzer erstellen.
 
@@ -73,6 +73,6 @@ IntelliSense-Codeausschnitte, die von Visual Studio installiert werden, sind in 
 
 ## <a name="see-also"></a>Siehe auch
 
-[Visual Basic IntelliSense-Codeausschnitte](/dotnet/visual-basic/developing-apps/using-ide/intellisense-code-snippets)  
-[Sichern von Anwendungen](../ide/securing-applications.md)  
+[Visual Basic IntelliSense Code Snippets (Visual Basic IntelliSense-Codeausschnitte)](/dotnet/visual-basic/developing-apps/using-ide/intellisense-code-snippets)  
+[Schützen von Anwendungen](../ide/securing-applications.md)  
 [Codeausschnitte](../ide/code-snippets.md)

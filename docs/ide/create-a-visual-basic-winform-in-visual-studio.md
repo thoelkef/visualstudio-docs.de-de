@@ -1,13 +1,13 @@
 ---
 title: Erstellen einer Windows Forms-App in Visual Studio mit Visual Basic | Microsoft-Dokumentation
 description: Erfahren Sie, wie Sie schrittweise eine Windows Forms-App in Visual Studio mit Visual Basic erstellen.
-ms.custom: 
+ms.custom: ''
 ms.date: 12/04/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.devlang: vb
 author: TerryGLee
@@ -17,11 +17,11 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 592ad202ca41792c6a73a77b7c01bab71fdbcdc7
-ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
+ms.openlocfilehash: d3a6593a6e459b16541358a0e89dc5bc21fde982
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="create-a-windows-forms-app-in-visual-studio-with-visual-basic"></a>Erstellen einer Windows Forms-App in Visual Studio mit Visual Basic
 Mithilfe dieser kurzen Einführung in die integrierte Entwicklungsumgebung (IDE) von Visual Studio können Sie eine einfache Visual Basic-Anwendung erstellen, die über eine Windows-basierte Benutzeroberfläche verfügt.
@@ -50,31 +50,31 @@ Sobald Sie eine Visual Basic-Projektvorlage ausgewählt und die Datei benannt ha
 
      ![Klicken Sie auf „Toolbox“, um das Toolbox-Fenster zu öffnen.](../ide/media/vb-toolbox-toolwindow.png)  
 
-     (Wenn Ihnen die Option „Toolbox fly-out“ (Toolboox ausfliegen) nicht angezeigt wird, können Sie sie über die Menüleiste öffnen. Klicken Sie dafür auf **Ansicht** > **Toolbox**. Drücken Sie alternativ auf **STRG**+**ALT**+**X**.)
+     (Wenn Ihnen die Option **Toolbox** nicht angezeigt wird, können Sie sie über die Menüleiste öffnen. Klicken Sie dafür auf **Ansicht** > **Toolbox**. Drücken Sie alternativ auf **STRG**+**ALT**+**X**.)
 
-2. Klicken Sie auf das **Stecknadelsymbol**, um das Toolbox-Fenster anzudocken.
+2. Klicken Sie auf das **Stecknadelsymbol**, um das **Toolbox-Fenster** anzudocken.
 
      ![Klicken Sie auf das Stecknadelsymbol, um das Toolbox-Fenster an die IDE anzuheften.](../ide/media/vb-pin-the-toolbox-window.png)  
 3. Klicken Sie auf das **Schaltflächen-Steuerelement**, und bewegen Sie dieses dann zum Formular.
 
      ![Hinzufügen einer Schaltfläche zum Formular](../ide/media/vb-add-a-button-to-form1.png)
 
-4. Geben Sie im Fenster **Eigenschaften** im Abschnitt **Darstellung** „Click this“ („Hier klicken“) ein, und drücken Sie die **EINGABETASTE**.
+4. Geben Sie im Fenster **Eigenschaften** im Abschnitt **Darstellung** `Click this` ein, und drücken Sie die **EINGABETASTE**.
 
      ![Hinzufügen von Text zur Schaltfläche auf dem Formular](../ide/media/vb-button-control-text.png)  
 
-     (Wenn Ihnen das Eigenschaftenfenster nicht angezeigt wird, können Sie es über die Menüleiste öffnen. Klicken Sie dafür auf **Ansicht** > **Eigenschaftenfenster**. Oder drücken Sie **F4**.)
+     (Wenn Ihnen das **Eigenschaftenfenster** nicht angezeigt wird, können Sie es über die Menüleiste öffnen. Klicken Sie dafür auf **Ansicht** > **Eigenschaftenfenster**. Oder drücken Sie **F4**.)
 
-5. Ändern Sie im Fenster **Eigenschaften** im Abschnitt **Entwurf** den Namen von „Button1“ in „btnClickThis“, und drücken Sie dann die **EINGABETASTE**.
+5. Ändern Sie im Fenster **Eigenschaften** im Abschnitt **Entwurf** den Namen von **Button1** in `btnClickThis`, und drücken Sie dann die **EINGABETASTE**.
 
      ![Hinzufügen einer Funktion zur Schaltfläche auf dem Formular](../ide/media/vb-button-control-function.png)
 
 ### <a name="add-a-label-to-the-form"></a>Hinzufügen einer Bezeichnung zum Formular
 Da nun ein Schaltflächen-Steuerelement hinzugefügt wurde, kann jetzt auch ein Bezeichnungs-Steuerelement hinzugefügt werden, an das Text gesendet werden kann, um eine Aktion zu erstellen.
 
-1. Wählen Sie im Toolbox-Fenster das Steuerelement **Bezeichnung** aus, bewegen Sie es dann, und legen Sie es unter der Schaltfläche **Click this** („Hier klicken“) ab.
+1. Wählen Sie im **Toolbox**-Fenster das Steuerelement **Bezeichnung** aus, und ziehen Sie es dann unter die Schaltfläche **Click this** („Hier klicken“).
 
-2. Ändern Sie im Fenster **Eigenschaften** im Abschnitt **Entwurf** den Namen von „Label1“ in „lblHelloWorld“, und drücken Sie dann die **EINGABETASTE**.
+2. Ändern Sie im Fenster **Eigenschaften** im Abschnitt **Entwurf** den Namen von **Label1** in `lblHelloWorld`, und drücken Sie dann die **EINGABETASTE**.
 
 ### <a name="add-code-to-the-form"></a>Hinzufügen von Code zum Formular
 
@@ -91,9 +91,9 @@ Da nun ein Schaltflächen-Steuerelement hinzugefügt wurde, kann jetzt auch ein 
 
      ![Klicken Sie auf „Start“, um die App auszuführen und zu debuggen.](../ide/media/vb-click-start-hello-world.png)
 
-   Daraufhin werden einige Vorgänge gleichzeitig ausgeführt. In der Visual Studio-IDE öffnen sich das Fenster „Diagnosetools“ und ein Ausgabefenster. Außerhalb der IDE wird ein Form1-Dialogfeld angezeigt. Darin ist die Schaltfläche **Click this** („Hier klicken“) und Text mit dem Inhalt „Label1“ enthalten.
+   Daraufhin werden einige Vorgänge gleichzeitig ausgeführt. In der Visual Studio-IDE öffnen sich das Fenster **Diagnosetools** und ein **Ausgabefenster**. Außerhalb der IDE wird das **Form1**-Dialogfeld angezeigt. Darin ist die Schaltfläche **Click this** („Hier klicken“) und Text mit dem Inhalt **Label1** enthalten.
 
-2. Klicken Sie auf die Schaltfläche **Click this** („Hier klicken“) im Dialogfeld **Form1**. Beachten Sie, dass der Text „Label1“ sich in „Hallo Welt“ ändert.
+2. Klicken Sie auf die Schaltfläche **Click this** („Hier klicken“) im Dialogfeld **Form1**. Beachten Sie, dass der Text **Label1** sich in **Hallo Welt!** ändert.
 
     ![Ein „Form1“-Dialogfeld, das den Text „Label1“ beinhaltet. ](../ide/media/vb-form1-dialog-hello-world.png)
 

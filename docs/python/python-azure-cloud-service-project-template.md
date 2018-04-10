@@ -1,16 +1,16 @@
 ---
-title: "Azure-Clouddienst-Projektvorlage für Python in Visual Studio | Microsoft-Dokumentation"
-description: "Übersicht der in Python geschriebenen Visual Studio-Vorlage für Azure-Clouddienste einschließlich Rollenbereitstellung, Abhängigkeiten und Problembehandlung."
-ms.custom: 
+title: Projektvorlage für Azure-Clouddienste für Python | Microsoft-Dokumentation
+description: Übersicht der in Python geschriebenen Visual Studio-Vorlage für Azure-Clouddienste einschließlich Rollenbereitstellung, Abhängigkeiten und Problembehandlung.
+ms.custom: ''
 ms.date: 07/13/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: ghogen
@@ -18,11 +18,11 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: e2c2fffddba8746ff2f5696a1eaccf701b83f314
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: b8e12d8823d3246da7c607ca63c056d1927b97d0
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="azure-cloud-service-projects-for-python"></a>Projekte für Azure-Clouddienste für Python
 

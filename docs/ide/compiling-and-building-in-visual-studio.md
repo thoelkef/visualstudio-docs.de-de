@@ -1,26 +1,28 @@
 ---
 title: Kompilieren und Erstellen in Visual Studio | Microsoft Dokumentation
-ms.custom: 
+ms.custom: ''
 ms.date: 07/14/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - builds [Visual Studio], about building in Visual Studio
 - custom build steps, types of builds
 ms.assetid: c7958821-285f-4e28-9e7a-b5d8b40336a1
-caps.latest.revision: "28"
+caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 29101e8e82fa9babf553be17414f1330cd6f7e18
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: d8ae644ee96bdad6520661414d101eede86cf180
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="compiling-and-building-in-visual-studio"></a>Kompilieren und Erstellen in Visual Studio
 
@@ -28,7 +30,7 @@ Durch das Ausführen eines Builds werden zu jedem beliebigen Zeitpunkt während 
 
 Indem Sie Ihren Code häufig erstellen, können Sie Kompilierzeitfehler wie zum Beispiel falsche Syntax, falsch geschriebene Schlüsselwörter und Typenkonflikte früher identifizieren. Sie können auch Laufzeitfehler, z.B. Logik- und Semantikfehler, erkennen und beheben, indem Sie regelmäßig Debugversionen des Codes erstellen und ausführen.  
 
-Ein erfolgreicher Build ist im Wesentlichen eine Überprüfung, dass der Quellcode der Anwendung die richtige Syntax enthält und alle statischen Verweise auf Bibliotheken, Assemblys und andere Komponenten gelöst wurden. Hierdurch wird eine ausführbare Datei erzeugt, die auf ihre ordnungsgemäße Funktion geprüft werden kann. Dies kann sowohl in einer [Debugumgebung](../debugger/index.md) geschehen als auch über eine Vielzahl manueller und automatisierter Tests, die die [Codequalität verbessern](../test/improve-code-quality.md). Sobald die Anwendung vollständig getestet ist, können Sie eine Releaseversion zur Bereitstellung für Ihre Kunden kompilieren. Eine Einführung zu diesem Vorgang finden Sie unter [Exemplarische Vorgehensweise: Erstellen einer Anwendung](../ide/walkthrough-building-an-application.md).  
+Ein erfolgreicher Build ist im Wesentlichen eine Überprüfung, dass der Quellcode der Anwendung die richtige Syntax enthält und alle statischen Verweise auf Bibliotheken, Assemblys und andere Komponenten gelöst wurden. Hierdurch wird eine ausführbare Datei erzeugt, die auf ihre ordnungsgemäße Funktion geprüft werden kann. Dies kann sowohl in einer [Debugumgebung](../debugger/index.md) geschehen als auch über eine Vielzahl manueller und automatisierter Tests, die die [Codequalität verbessern](../test/improve-code-quality.md). Sobald die Anwendung vollständig getestet ist, können Sie eine Releaseversion zur Bereitstellung für Ihre Kunden kompilieren. Eine Einführung in diesen Vorgang finden Sie unter [Exemplarische Vorgehensweise: Erstellen einer Anwendung](../ide/walkthrough-building-an-application.md).  
 
 Innerhalb der Visual Studio-Produktfamilie gibt es drei Methoden, die Sie zum Erstellen einer Anwendung verwenden können: die Visual Studio-IDE, die MSBuild-Befehlszeilentools und Team Foundation Build in Visual Studio Team Services:
  
@@ -44,7 +46,7 @@ Die Dokumentation in diesem Bereich geht näher auf den IDE-basierten Buildproze
 
 Wenn Sie ein Projekt erstellen, erstellt Visual Studio Standardbuildkonfigurationen für das Projekt und die Projektmappe, die das Projekt enthält.  Diese Konfigurationen definieren, wie die Projektmappen und Projekte erstellt und bereitgestellt werden. Insbesondere die Projektkonfigurationen sind eindeutig für die jeweilige Zielplattform (z.B. Windows oder Linux) und den Buildtyp (z.B. Debug oder Release). Sie können diese Konfigurationen beliebig bearbeiten und nach Bedarf eigene Konfigurationen erstellen.
 
-Eine erste Einführung zum Erstellen von der IDE aus finden Sie unter [Exemplarische Vorgehensweise: Erstellen einer Anwendung](walkthrough-building-an-application.md).  
+Eine erste Einführung zum Erstellen in der IDE finden Sie unter [Exemplarische Vorgehensweise: Erstellen einer Anwendung](walkthrough-building-an-application.md).  
 
 Unter [Erstellen und Bereinigen von Projekten und Projektmappen in Visual Studio](building-and-cleaning-projects-and-solutions-in-visual-studio.md) finden Sie Informationen zur Anpassung verschiedener Aspekte, die Sie an diesem Prozess vornehmen können. Diese Anpassungen beinhalten das [Ändern des Ausgabeverzeichnisses](how-to-change-the-build-output-directory.md), das [Angeben benutzerdefinierter Ereignisse](specifying-custom-build-events-in-visual-studio.md), das [Verwalten von Projektabhängigkeiten](how-to-create-and-remove-project-dependencies.md), das [Verwalten von Buildprotokolldateien](how-to-view-save-and-configure-build-log-files.md) und das [Unterdrücken von Compilerwarnungen](how-to-suppress-compiler-warnings.md).
 

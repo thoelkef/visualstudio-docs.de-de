@@ -1,90 +1,77 @@
 ---
-title: 'Schnellstart: Erstellen eines Python-Projekts in Visual Studio mithilfe einer Vorlage | Microsoft-Dokumentation'
-description: Steigen Sie schnell in die Verwendung von Python ein, indem Sie mithilfe einer der integrierten Vorlagen ein Visual Studio-Projekt erstellen.
-ms.custom: 
-ms.date: 03/08/2018
-ms.reviewer: 
-ms.suite: 
+title: 'Schnellstart: Erstellen eines Python-Projekts mithilfe einer Vorlage | Microsoft-Dokumentation'
+description: In diesem Schnellstart erstellen Sie ein Visual Studio-Projekt für Python mithilfe der integrierten Vorlage für eine einfache Flask-App.
+ms.custom: mvc
+ms.date: 03/22/2018
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: quickstart
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4ab0f91022240d1fcf60bd6889ea9b2ec39f2db3
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 2d4d81676d9f63751455f4f51ae5993c46dd0f04
+ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="quickstart-create-a-python-project-from-a-template-in-visual-studio"></a>Schnellstart: Erstellen eines Python-Projekts aus einer Vorlage in Visual Studio
 
-Wenn Sie die [Python-Unterstützung in Visual Studio 2017 installiert haben](installing-python-support-in-visual-studio.md), können Sie ganz einfach ein neues Python-Projekt mithilfe einer Vielzahl von Vorlagen erstellen.
+Wenn Sie die [Python-Unterstützung in Visual Studio 2017 installiert haben](installing-python-support-in-visual-studio.md), können Sie ganz einfach ein neues Python-Projekt mithilfe einer Vielzahl von Vorlagen erstellen. In diesem Schnellstart erstellen Sie eine einfache Flask-Anwendung mit einer Vorlage. Das entstehende Projekt ist so ähnlich wie das Projekt, dass Sie unter [Schnellstart: Erstellen einer Web-App mit Flask](../ide/quickstart-python.md) erstellt haben.
 
-1. Starten Sie Visual Studio.
+1. Starten Sie Visual Studio 2017.
 
-1. Klicken Sie auf **Datei > Neu > Projekt** (STRG+UMSCHALT+N). Suchen Sie im Dialogfeld **Neues Projekt** nach „Python“, und wählen Sie die gewünschte Vorlage aus. Daraufhin wird eine kurze Beschreibung des Vorlageninhalts angezeigt. Weitere Informationen finden Sie unter [Python-Projekte](managing-python-projects-in-visual-studio.md#project-templates).
+1. Klicken Sie oben in der Menüleiste auf **Datei > Neu > Projekt...**, suchen Sie anschließend im Dialogfeld **Neues Projekt** nach „leeres flask“, wählen Sie dann die Vorlage „Leeres Flask-Webprojekt“ aus der mittleren Liste aus, benennen Sie das Projekt, und klicken Sie dann auf **OK**:
 
-    ![Visual Studio 2017-Dialogfeld „Neues Projekt“ mit Python-Vorlage](media/projects-new-project-dialog2.png)
+    ![Erstellen eines neuen Projekts mit der Vorlage „Leeres Flask-Webprojekt“](media/quickstart-python-06-blank-flask-template.png)
 
-1. Wählen Sie für diesen Schnellstart die Vorlage „Python-Anwendung“ aus, benennen Sie das Projekt (z.B. „MakePI“), wählen Sie einen Speicherort aus, und klicken Sie auf **OK**.
+1. Visual Studio zeigt die folgende Aufforderung an: „This project requires external packages.“ (Für dieses Projekt sind externe Pakete erforderlich.). Dieses Dialogfeld wird angezeigt, weil die Vorlage eine `requirements.txt`-Datei enthält, die eine Abhängigkeit zu Flask enthält. Visual Studio kann das Paket automatisch installieren. Sie erhalten die Option, sie als *virtuelle Umgebungen* zu installieren. Das Verwenden einer virtuellen Umgebung ist der Installation in einer globalen Umgebung vorzuziehen. Wählen Sie deshalb **Install into a virtual environment** (In einer virtuellen Umgebung installieren), um fortzufahren.
 
-1. Visual Studio erstellt die Projektdatei (eine `.pyproj`-Datei auf einem Datenträger) wie von der Vorlage beschrieben zusammen mit allen anderen Dateien. Mit der Vorlage „Python-Anwendung“ enthält das Projekt nur eine leere Datei, die genauso heißt wie Ihr Projekt. Diese Datei ist im Visual Studio-Editor standardmäßig geöffnet.
+    ![Flask in einer virtuellen Umgebung installieren](media/quickstart-python-07-install-into-virtual-environment.png)
 
-    ![Das resultierende Projekt, wenn die Python-Anwendungsvorlage verwendet wird](media/projects-new-structure.png)
+1. Visual Studio zeigt das Dialogfeld **Virtuelle Umgebung hinzufügen** an. Übernehmen Sie die Standardeinstellungen, und klicken Sie auf **Erstellen**. Stimmen Sie etwaigen Anforderungen von Rechteerweiterungen zu.
 
-1. Fügen Sie in der geöffneten Datei Code hinzu, z.B. den unten aufgeführten. Mit diesem Code werden 999 Nachkommastellen von Pi berechnet und angezeigt:
+    > [!Tip]
+    > Wenn Sie mit einem neuen Projekt beginnen, wird dringend empfohlen, zu Beginn eine virtuelle Umgebung zu erstellen. Dazu werden Sie auch von den meisten Visual Studio-Vorlagen aufgefordert. Virtuelle Umgebungen behalten die genauen Anforderungen Ihres Projekts im Laufe der Zeit bei, wenn Bibliotheken hinzugefügt und entfernt werden. Dann können Sie mühelos eine `requirements.txt`-Datei erstellen, die Sie zur erneuten Installation dieser Abhängigkeiten auf anderen Entwicklungscomputern verwenden können (wie bei der Quellcodeverwaltung). Außerdem können Sie diese Datei verwenden, wenn Sie das Projekt auf einem Produktionsserver bereitstellen. Weitere Informationen zu virtuellen Umgebungen und deren Vorzügen finden Sie in den Artikeln [Auswählen eines Python-Interpreters und einer Umgebung zur Verwendung in einem Projekt](../python/selecting-a-python-environment-for-a-project.md#using-virtual-environments) und [Verwalten von erforderlichen Paketen mit „requirements.txt“](../python/managing-required-packages-with-requirements-txt.md).
+
+1. Nachdem Visual Studio diese Umgebung erstellt hat, sehen Sie im **Projektmappen-Explorer** neben `requirements.txt` auch eine `app.py`-Datei. Öffnen Sie `app.py`. Dann sehen Sie, dass die Vorlage Code bereitgestellt hat, der dem unter [Schnellstart: Erstellen einer Web-App mit Flask](../ide/quickstart-python.md) ähnelt, mit zwei zusätzlichen Bereichen.
+
+    Oben sehen Sie die Zeile `wsgi_app = app.wsgi_app`, die beim Bereitstellen einer App für einen Webhost nützlich sein kann.
+
+    Darunter sehen Sie den Startcode, mit dem Sie den Host und Port anhand von Umgebungsvariablen festlegen können statt sie zu hartcodieren. Mit derartigem Code können Sie die Konfiguration auf Entwicklungs- und Produktionscomputern steuern, ohne den Code ändern zu müssen:
 
     ```python
-    """ Print digits of PI; code adapted from the second, shorter solution
-    at http://www.codecodex.com/wiki/Calculate_digits_of_pi#Python
-    """
-
-    from time import perf_counter
-
-    def pi_digits_Python(digits):
-        scale = 10000
-        maxarr = int((digits / 4) * 14)
-        arrinit = 2000
-        carry = 0
-        arr = [arrinit] * (maxarr + 1)
-        output = ""
-
-        for i in range(maxarr, 1, -14):
-            total = 0
-            for j in range(i, 0, -1):
-                total = (total * j) + (scale * arr[j])
-                arr[j] = total % ((j * 2) - 1)
-                total = total / ((j * 2) - 1)
-
-            output += "%04d" % (carry + (total / scale))
-            carry = total % scale
-
-        return output
-
-    def test_py():
-        digits = 1000
-
-        start = perf_counter()
-        output = pi_digits_Python(digits)
-        elapsed = perf_counter() - start
-
-        print("PI to " + str(digits) + " digits in " + str(int(elapsed * 10000)/10000) + " seconds:")
-
-        ## replace inserts the decimal point
-        print(output.replace("3", "3.", 1))
-
-    if __name__ == "__main__":
-        test_py()
+    if __name__ == '__main__':
+        import os
+        HOST = os.environ.get('SERVER_HOST', 'localhost')
+        try:
+            PORT = int(os.environ.get('SERVER_PORT', '5555'))
+        except ValueError:
+            PORT = 5555
+        app.run(HOST, PORT)
     ```
 
-1. Drücken Sie „STRG+F5“, oder klicken Sie im Menü auf **Debuggen > Ohne Debuggen starten**, und führen Sie das Programm aus. Die Ergebnisse werden in einem Konsolenfenster angezeigt.
+1. Klicken Sie auf **Debuggen > Ohne Debuggen starten**, um das Programm auszuführen und `localhost:5555` in einem Browser zu öffnen.
+
+**Frage: Welche anderen Python-Vorlagen werden von Visual Studio bereitgestellt?**
+
+**Antwort:** Wenn die Python-Workload installiert ist, stellt Visual Studio verschiedenste Projektvorlagen bereit, darunter Vorlagen für [die Webframeworks Flask, Bottle und Django](../python/python-web-application-project-templates.md), für Azure-Clouddienste, unterschiedliche Machine Learning-Szenarios und sogar eine Vorlage zum Erstellen eines Projekts mit einer bereits vorhandenen Ordnerstruktur, die eine Python-App enthält. Auf diese Vorlagen können Sie über **Datei > Neu > Projekt** zugreifen. Klicken Sie dafür auf den Knoten für **Python**, und wählen Sie untergeordnete Knoten aus.
+
+Visual Studio bietet auch unterschiedliche *Datei- und Elementvorlagen* zum schnellen Erstellen einer Python-Klasse, eines Python-Pakets, eines Python-Komponententest, von web.config-Dateien usw. Wenn Sie ein Python-Projekt geöffnet haben, können Sie über den Menübefehl **Projekt > Neues Element hinzufügen...** auf Elementvorlagen zugreifen.
+
+Durch das Verwenden von Vorlagen sparen Sie deutlich Zeit, wenn Sie mit einem Projekt beginnen oder eine Datei erstellen. Zudem können Sie durch Vorlagen neue App-Typen und Codestrukturen kennenlernen. Es kann von Vorteil sein, sich etwas Zeit zu nehmen und Projekte und Elemente mit verschiedenen Vorlagen zu erstellen. So können Sie sich mit den zur Verfügung stehenden Vorlagen vertraut machen.
+
+**Frage: Kann ich auch Cookiecutter-Vorlagen verwenden?**
+
+**Antwort:** Ja. Cookiecutter-Vorlagen sind sogar direkt in Visual Studio integriert. Informationen dazu finden Sie unter [Quickstart: create a project from a Cookiecutter template (Schnellstart: Erstellen eines Projekts mit einer Cookiecutter-Vorlage)](../python/quickstart-04-python-in-visual-studio-project-from-cookiecutter.md).
 
 ## <a name="next-steps"></a>Nächste Schritte
 

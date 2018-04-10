@@ -1,12 +1,12 @@
 ---
 title: Verwenden von WPF-Steuerelementen in Office-Projektmappen | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - VB
@@ -86,7 +86,7 @@ ms.lasthandoff: 01/10/2018
   
      Visual Studio erstellt automatisch ein <xref:System.Windows.Forms.Integration.ElementHost>-Objekt, das das WPF-Benutzersteuerelement im Windows Forms-Benutzersteuerelement hostet.  
   
-8.  Schreiben Sie Code, der dem Dokument bzw. der Arbeitsmappe das Windows Forms-Benutzersteuerelement programmgesteuert hinzufügt. Weitere Informationen finden Sie unter [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md).  
+8.  Schreiben Sie Code, der dem Dokument bzw. der Arbeitsmappe das Windows Forms-Benutzersteuerelement programmgesteuert hinzufügt. Weitere Informationen finden Sie unter [Hinzufügen von Steuerelementen zu Office-Dokumenten zur Laufzeit](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
     > [!NOTE]  
     >  Sie können das Windows Forms-Benutzersteuerelement im Designer nicht auf das Dokument bzw. das Arbeitsblatt ziehen.  

@@ -1,7 +1,7 @@
 ---
-title: 'Arbeiten mit Python in Visual Studio, Schritt 1: Erstellen eines Projekts | Microsoft-Dokumentation'
+title: 'Arbeiten mit Python, Schritt 1: Erstellen eines Projekts | Microsoft-Dokumentation'
 description: Dies ist Schritt 1 eines zentralen Tutorials für die Arbeit mit Python in Visual Studio, in dem das gesamte Tutorial zusammengefasst wird, die Voraussetzungen beschrieben werden und das Verfahren zum Erstellen eines neuen Python-Projekts Schritt für Schritt erläutert wird.
-ms.custom: ''
+ms.custom: mvc
 ms.date: 01/16/2018
 ms.reviewer: ''
 ms.suite: ''
@@ -17,8 +17,8 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 22588c1e8221375f05b9fb62870662d9aa3d2f5e
-ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
+ms.openlocfilehash: c97af84d02b1dcf6fb60f8dad06bf3bd6975a4e3
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 03/28/2018

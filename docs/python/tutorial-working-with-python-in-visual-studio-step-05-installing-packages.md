@@ -1,15 +1,15 @@
 ---
-title: 'Arbeiten mit Python in Visual Studio, Schritt 5: Installieren von Paketen | Microsoft-Dokumentation'
-description: "Dies ist Schritt 5 eines zentralen Tutorials für die Arbeit mit Python in Visual Studio, in dem die Features von Visual Studio zum Verwalten von Paketen in einer Python-Umgebung veranschaulicht werden."
-ms.custom: 
+title: 'Arbeiten mit Python, Schritt 5: Installieren von Paketen | Microsoft-Dokumentation'
+description: Dies ist Schritt 5 eines zentralen Tutorials für die Arbeit mit Python in Visual Studio, in dem die Features von Visual Studio zum Verwalten von Paketen in einer Python-Umgebung veranschaulicht werden.
+ms.custom: mvc
 ms.date: 03/05/2018
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d633ce061d0624c44060c5e059cf9b29733260d9
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 509c601c6f3cf31cb7772182e0ecb771c232b8a6
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="step-5-installing-packages-in-your-python-environment"></a>Schritt 5: Installieren von Paketen in Ihrer Python-Umgebung
 

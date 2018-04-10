@@ -1,28 +1,28 @@
 ---
-title: "Debuggen im gemischten Modus für Python in Visual Studio | Microsoft-Dokumentation"
-description: "Gleichzeitiges Debuggen von C++ und Python in Visual Studio einschließlich abwechselnder Einzelschrittausführung in beiden Umgebungen, Anzeigen von Werten und Auswerten von Ausdrücken."
-ms.custom: 
+title: Debuggen im gemischten Modus für Python | Microsoft-Dokumentation
+description: Gleichzeitiges Debuggen von C++ und Python in Visual Studio einschließlich abwechselnder Einzelschrittausführung in beiden Umgebungen, Anzeigen von Werten und Auswerten von Ausdrücken.
+ms.custom: ''
 ms.date: 01/16/2018
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
 - C++
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d33e4d15e9d0de5c3aa35354dd1c8840d0ed9bd2
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: 4f555e24c1328a4d784e3f8c5b2d0f1a7c590f8b
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="debugging-python-and-c-together"></a>Gemeinsames Debuggen von Python und C++
 
@@ -45,7 +45,7 @@ Features für das Debuggen im gemischten Modus sind, wie in diesem Artikel besch
 
 |   |   |
 |---|---|
-| ![Kamerasymbol für Video](../install/media/video-icon.png "Video ansehen") | Eine Einführung in das Erstellen, Testen und Debuggen von nativen C-Modulen mit Visual Studio sehen Sie in diesem Video: [Deep Dive: Creating Native Modules](https://youtu.be/D9RlT06a1EI) (youtube.com, 9 Minuten, 9 Sekunden). Das Video gilt für Visual Studio 2015 und 2017. |
+| ![Kamerasymbol für video](../install/media/video-icon.png "Video ansehen") | Eine Einführung in das Erstellen, Testen und Debuggen von nativen C-Modulen mit Visual Studio sehen Sie in diesem Video: [Deep Dive: Creating Native Modules](https://youtu.be/D9RlT06a1EI) (youtube.com, 9 Minuten, 9 Sekunden). Das Video gilt für Visual Studio 2015 und 2017. |
 
 ## <a name="enable-mixed-mode-debugging-in-a-python-project"></a>Aktivieren des Debuggens im gemischten Modus in einem Python-Projekt
 

@@ -1,27 +1,27 @@
 ---
-title: "CookieCutter-Erweiterung für Python in Visual Studio | Microsoft-Dokumentation"
-description: "Visual Studio unterstützt die grafische Cookiecutter-Erweiterung für die Ermittlung von Vorlagen für Python-Code und zum Erstellen von Projekten aus diesen Vorlagen."
-ms.custom: 
+title: Cookiecutter-Erweiterung für Python in Visual Studio | Microsoft-Dokumentation
+description: Visual Studio unterstützt die grafische Cookiecutter-Erweiterung für die Ermittlung von Vorlagen für Python-Code und zum Erstellen von Projekten aus diesen Vorlagen.
+ms.custom: ''
 ms.date: 07/12/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 96590d2856d14b8c74a9c30f73e3a933cf572164
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: d70a6a4041892166b383574730ac1814a19ad39a
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="using-the-cookiecutter-extension"></a>Verwenden der Cookiecutter-Erweiterung
 
@@ -35,7 +35,7 @@ Wählen Sie nach der Installation **Ansicht > Cookiecutter-Explorer**, um das Fe
 
 ## <a name="cookiecutter-workflow"></a>Cookiecutter-Workflow
 
-Beim Arbeiten mit Cookiecutter durchsuchen Sie Vorlagen, wählen eine Vorlage aus, klonen sie auf Ihren lokalen Computer, richten Optionen ein und erstellen dann Code aus dieser Vorlage, wie in den folgenden Abschnitten beschrieben.
+Beim Arbeiten mit Cookiecutter durchsuchen Sie Vorlagen, wählen eine Vorlage aus, klonen sie auf Ihren lokalen Computer, legen Optionen fest und erstellen dann Code aus dieser Vorlage, wie in den folgenden Abschnitten beschrieben.
 
 ### <a name="browsing-templates"></a>Durchsuchen von Vorlagen
 
@@ -52,7 +52,7 @@ Die Startseite von Cookiecutter zeigt eine Liste der auswählbaren Vorlagen an, 
 
 Wenn Sie eine Vorlage auswählen und dann auf **Weiter** klicken, erstellt Cookiecutter eine lokale Kopie zum Arbeiten.
 
-Wenn Sie eine Vorlage aus den Gruppen **Empfohlen** oder **GitHub** auswählen oder wenn Sie eine benutzerdefinierte URL in das Suchfeld eingeben und dann diese Vorlage auswählen, wird die Vorlage geklont und auf Ihrem lokalen Computer installiert. Wenn diese Vorlage in einer früheren Visual Studio-Sitzung installiert wurde, wird diese automatisch gelöscht und die neueste Version geklont.
+Wenn Sie eine Vorlage aus den Gruppen **Empfohlen** oder **GitHub** auswählen, oder wenn Sie eine benutzerdefinierte URL in das Suchfeld eingeben und dann diese Vorlage auswählen, wird die Vorlage geklont und auf Ihrem lokalen Computer installiert. Wenn diese Vorlage in einer früheren Visual Studio-Sitzung installiert wurde, wird diese automatisch gelöscht und die neueste Version geklont.
 
 Wenn Sie eine Vorlage aus der Gruppe **Installiert** auswählen oder wenn Sie einen benutzerdefinierten Ordnerpfad in das Suchfeld eingeben und dann diese Vorlage auswählen, lädt Visual Studio die Vorlage, ohne sie zu klonen.
 

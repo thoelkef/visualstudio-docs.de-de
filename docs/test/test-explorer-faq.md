@@ -15,11 +15,11 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: ghogen
-ms.openlocfilehash: 1ca63ce299cb95546100e7f7ce7f98eb1c1616c2
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 9e64528b6b0669a0403188b540a90e9b921bfb34
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Visual Studio-Test-Explorer – häufig gestellte Fragen
 
@@ -70,6 +70,10 @@ ms.lasthandoff: 03/19/2018
   Die Symbole neben der Projekt-, Namespace- und Klasse-Gruppierung spiegeln den Status der Tests innerhalb der Gruppierung wider. Siehe folgende Tabelle.
 
   ![Hierarchiesymbole des Test-Explorers](media/testex-hierarchyicons.png)
+  
+### <a name="10-there-is-no-longer-a-file-path-filter-in-the-test-explorer-search-box"></a>10. Im Test-Explorer-Suchfeld ist kein Dateipfadfilter mehr vorhanden.
+
+Der Dateipfadfilter im Suchfeld **Test-Explorer** wurde in Visual Studio 2017 Version 15.7, Preview 3 entfernt. Dieses Feature wurde wenig genutzt, und der Test-Explorer kann Testmethoden durch Ausschluss dieses Features schneller abrufen. Wenn diese Änderung Ihren Entwicklungsablauf unterbricht, teilen Sie uns dies mit, indem Sie uns Ihr Feedback in der [Entwicklercommunity](https://developercommunity.visualstudio.com/) zukommen lassen.
 
 ## <a name="features"></a>Features
 

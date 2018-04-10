@@ -1,10 +1,10 @@
 ---
 title: Verwenden von EditorConfig-Einstellungen in Visual Studio | Microsoft-Dokumentation
-ms.custom: 
+ms.custom: ''
 ms.date: 12/13/2017
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - editorconfig [Visual Studio]
@@ -12,15 +12,15 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-ide-general
-ms.openlocfilehash: 8be85bc578b31b087c77da1444ddd9950a6bc0ed
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: e9ea6cde08724c00c4595774decea35b2bce44f4
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>Erstellen von portablen, benutzerdefinierten Editor-Einstellungen mit „EditorConfig“
 
-In Visual Studio 2017 können Sie Ihrem Projekt oder der Codebasis eine [EditorConfig](http://editorconfig.org/)-Datei hinzufügen, um einheitliche Codierungsstile für alle Benutzer durchzusetzen, die an der Codebasis arbeiten. EditorConfig Einstellungen haben Vorrang vor den globalen Einstellungen des Visual Studio-Text-Editors. Das bedeutet, dass Sie jede Codebasis für die Verwendung von Text-Editor-Einstellungen anpassen können, die für dieses Projekt spezifisch sind. Ihre persönlichen Einstellungen können Sie im Visual Studio-Dialogfeld **Optionen** festlegen. Diese Einstellungen gelten immer dann, wenn Sie ohne eine EDITORCONFIG-Datei an einer Codebasis arbeiten oder wenn die EDITORCONFIG-Datei eine bestimmte Einstellung nicht außer Kraft setzt. Ein Beispiel ist das Format von Einzügen, also Tabulatoren oder Leerzeichen.
+In Visual Studio 2017 können Sie Ihrem Projekt oder der Codebasis eine [EditorConfig](http://editorconfig.org/)-Datei hinzufügen, um einheitliche Codierungsstile für alle Benutzer durchzusetzen, die an der Codebasis arbeiten. EditorConfig Einstellungen haben Vorrang vor den globalen Einstellungen des Visual Studio-Text-Editors. Das bedeutet, dass Sie jede Codebasis für die Verwendung von Text-Editor-Einstellungen anpassen können, die für dieses Projekt spezifisch sind. Ihre persönlichen Einstellungen können Sie im Visual Studio-Dialogfeld **Optionen** festlegen. Diese Einstellungen gelten immer dann, wenn Sie ohne eine *EDITORCONFIG*-Datei an einer Codebasis arbeiten oder wenn die *EDITORCONFIG*-Datei eine bestimmte Einstellung nicht außer Kraft setzt. Ein Beispiel ist das Format von Einzügen, also Tabulatoren oder Leerzeichen.
 
 EditorConfig-Einstellungen werden von zahlreichen Code-Editoren und IDEs einschließlich Visual Studio unterstützt. Außerdem ist es eine portable Komponente, die mit dem Code geliefert wird und Codierungsstile auch außerhalb von Visual Studio erzwingen kann.
 
@@ -29,7 +29,7 @@ EditorConfig-Einstellungen werden von zahlreichen Code-Editoren und IDEs einschl
 
 ## <a name="coding-consistency"></a>Programmierkonsistenz
 
-Durch die Einstellungen in EDITORCONFIG-Dateien können Sie einen einheitlichen Programmierstil und einheitliche Programmiereinstellungen in einer Codebasis erzielen. Dies betrifft beispielsweise die Einzugsgröße, die Tabulatorbreite, Zeilenendzeichen, die Codierung usw. und ist unabhängig vom verwendeten Editor oder der verwendeten IDE. Wenn Sie beispielsweise in C# programmieren und für Ihre Codebasis eine Konvention gilt, dass Einzüge immer aus fünf Leerzeichen bestehen, für Dokumente UTF-8-Codierung verwendet wird und jede Zeile mit CR/LF endet, können Sie eine EDITORCONFIG-Datei entsprechend konfigurieren.
+Durch die Einstellungen in EDITORCONFIG-Dateien können Sie einen einheitlichen Programmierstil und einheitliche Programmiereinstellungen in einer Codebasis erzielen. Dies betrifft beispielsweise die Einzugsgröße, die Tabulatorbreite, Zeilenendzeichen, die Codierung usw. und ist unabhängig vom verwendeten Editor oder der verwendeten IDE. Wenn Sie beispielsweise in C# programmieren und für Ihre Codebasis eine Konvention gilt, dass Einzüge immer aus fünf Leerzeichen bestehen, für Dokumente UTF-8-Codierung verwendet wird und jede Zeile mit CR/LF endet, können Sie eine *EDITORCONFIG*-Datei entsprechend konfigurieren.
 
 Programmierkonventionen, die Sie für Ihre eigenen Projekte verwenden, unterscheiden sich möglicherweise von denen, die für Ihre Teamprojekte verwendet werden. Z.B. kann es sein, dass Sie es vorziehen, dass beim Programmieren bei einem Einzug ein Tabstoppzeichen hinzugefügt wird. Ihrem Team ist es aber möglicherweise lieber, dass bei einem Einzug vier Leerzeichen anstelle eines Tabstoppzeichens hinzugefügt werden. EditorConfig-Dateien lösen dieses Problem, indem sie Ihnen ermöglichen, für jedes Szenario eine Konfiguration zu verwenden.
 
@@ -58,7 +58,7 @@ Wenn Sie eine EDITORCONFIG-Datei aus Ihrem Projekt oder Ihrer Codebasis entferne
 
 ### <a name="to-add-an-editorconfig-file-to-a-project-or-solution"></a>Hinzufügen einer EditorConfig-Datei zu einem Projekt oder einer Projektmappe
 
-1. Öffnen Sie ein Projekt oder eine Projektmappe in Visual Studio. Wählen Sie den Knoten „Projekt“ oder „Projektmappe“ aus, je nachdem, ob Ihre Einstellungen für die EDITORCONFIG-Datei für alle Projekte in der Projektmappe oder nur für ein Projekt gelten sollen. Sie können ebenfalls einen Ordner in Ihrem Projekt oder in Ihrer Projektmappe auswählen, zu dem die EDITORCONFIG-Datei hinzugefügt werden soll.
+1. Öffnen Sie ein Projekt oder eine Projektmappe in Visual Studio. Wählen Sie den Knoten „Projekt“ oder „Projektmappe“ aus, je nachdem, ob Ihre Einstellungen für die *EDITORCONFIG*-Datei für alle Projekte in der Projektmappe oder nur für ein Projekt gelten sollen. Sie können ebenfalls einen Ordner in Ihrem Projekt oder in Ihrer Projektmappe auswählen, zu dem die *EDITORCONFIG*-Datei hinzugefügt werden soll.
 
 1. Klicken Sie in der Menüleiste auf **Projekt** > **Neues Element hinzufügen...**, oder drücken Sie **STRG**+**UMSCHALT**+**A**.
 
@@ -66,7 +66,7 @@ Wenn Sie eine EDITORCONFIG-Datei aus Ihrem Projekt oder Ihrer Codebasis entferne
 
 1. Klicken Sie in den Kategorien auf der linken Seite auf **Allgemein**, und wählen Sie die Vorlage **Textdatei** aus. Geben Sie `.editorconfig` im Textfeld **Name** ein, und klicken Sie dann auf **Hinzufügen**.
 
-   Anschließend wird eine EDITORCONFIG-Datei in Projektmappen-Explorer angezeigt und im Editor geöffnet.
+   Anschließend wird eine *EDITORCONFIG*-Datei in Projektmappen-Explorer angezeigt und im Editor geöffnet.
 
    ![EDITORCONFIG-Datei in Projektmappen-Explorer](media/editorconfig-in-solution-explorer.png)
 
@@ -89,13 +89,13 @@ Alternativ können Sie die Erweiterung [EditorConfig Language Service](https://m
 
 ## <a name="override-editorconfig-settings"></a>Außer Kraft setzen von EditorConfig-Einstellungen
 
-Wenn Sie einem Ordner in Ihrer Dateihierarchie eine EDITORCONFIG-Datei hinzufügen, gelten deren Einstellungen für alle geeigneten Dateien auf der betreffenden Ebene und den Ebenen darunter. Sie können die EditorConfig-Einstellungen ebenfalls für ein bestimmtes Projekt, eine bestimmte Codebasis oder für einen Teil einer Codebasis außer Kraft setzen, sodass dieser andere Konventionen als die anderen Teile der Codebasis verwendet. Dies kann nützlich sein, wenn Sie Code von einer anderen Stelle integrieren und dessen Konventionen nicht ändern möchten.
+Wenn Sie einem Ordner in Ihrer Dateihierarchie eine *EDITORCONFIG*-Datei hinzufügen, gelten deren Einstellungen für alle geeigneten Dateien auf der betreffenden Ebene und den Ebenen darunter. Sie können die EditorConfig-Einstellungen ebenfalls für ein bestimmtes Projekt, eine bestimmte Codebasis oder für einen Teil einer Codebasis außer Kraft setzen, sodass dieser andere Konventionen als die anderen Teile der Codebasis verwendet. Dies kann nützlich sein, wenn Sie Code von einer anderen Stelle integrieren und dessen Konventionen nicht ändern möchten.
 
-Fügen Sie zur Außerkraftsetzung einiger oder aller EditorConfig-Einstellungen eine EDITORCONFIG-Datei zu der Ebene der Dateihierarchie hinzu, für die die Einstellungen außer Kraft gesetzt werden sollen. Die neuen EDITORCONFIG-Dateieinstellungen gelten für alle Dateien auf der gleichen Ebene sowie für alle Dateien in Unterverzeichnissen.
+Fügen Sie zur Außerkraftsetzung einiger oder aller EditorConfig-Einstellungen eine *EDITORCONFIG*-Datei zu der Ebene der Dateihierarchie hinzu, für die die Einstellungen außer Kraft gesetzt werden sollen. Die neuen EDITORCONFIG-Dateieinstellungen gelten für alle Dateien auf der gleichen Ebene sowie für alle Dateien in Unterverzeichnissen.
 
 ![EditorConfig-Hierarchie](../ide/media/vside_editorconfig_hierarchy.png)
 
-Wenn einige, aber nicht alle Einstellungen außer Kraft gesetzt werden sollen, geben Sie nur diese Einstellungen in der EDITORCONFIG-Datei an. Nur die Eigenschaften, die Sie explizit in der Datei auf der niedrigsten Ebene auflisten, werden außer Kraft gesetzt. Andere Einstellungen aus EDITORCONFIG-Dateien auf höheren Ebenen werden weiterhin angewendet. Wenn Sie sicherstellen möchten, dass die _Nein_-Einstellungen von _beliebigen_ EDITORCONFIG-Dateien auf höheren Ebenen auf diesen Teil der Codebasis angewendet werden, fügen Sie die ```root=true```-Eigenschaft zu der EDITORCONFIG-Datei auf niedrigerer Ebene hinzu:
+Wenn einige, aber nicht alle Einstellungen außer Kraft gesetzt werden sollen, geben Sie nur diese Einstellungen in der *EDITORCONFIG*-Datei an. Nur die Eigenschaften, die Sie explizit in der Datei auf der niedrigsten Ebene auflisten, werden außer Kraft gesetzt. Andere Einstellungen aus *EDITORCONFIG*-Dateien auf höheren Ebenen werden weiterhin angewendet. Wenn Sie sicherstellen möchten, dass die _Nein_-Einstellungen von _beliebigen_ *EDITORCONFIG*-Dateien auf höheren Ebenen auf diesen Teil der Codebasis angewendet werden, fügen Sie die ```root=true```-Eigenschaft zu der *EDITORCONFIG*-Datei auf niedrigerer Ebene hinzu:
 
 ```EditorConfig
 # top-most EditorConfig file
@@ -106,19 +106,19 @@ EDITORCONFIG-Dateien werden von unten nach oben gelesen, und die nächstgelegene
 
 ## <a name="editing-editorconfig-files"></a>Bearbeiten von EDITORCONFIG-Dateien
 
-Mit Visual Studio können Sie EDITORCONFIG-Dateien bearbeiten, indem Sie IntelliSense-Vervollständigungslisten bereitstellen.
+Mit Visual Studio können Sie *EDITORCONFIG*-Dateien bearbeiten, indem Sie IntelliSense-Vervollständigungslisten bereitstellen.
 
 ![IntelliSense in einer EDITORCONFIG-Datei](media/editorconfig-intellisense-no-extension.png)
 
 Nachdem Sie Ihre EDITORCONFIG-Datei bearbeitet haben, müssen Sie Ihre Codedateien erneut laden, damit die neuen Einstellungen wirksam werden.
 
-Wenn Sie mehrere EDITORCONFIG-Dateien bearbeiten, kann die Erweiterung [EditorConfig Language Service](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.EditorConfig) nützlich sein. Zu den Features dieser Erweiterung zählen die Syntaxhervorhebung sowie eine Verbesserung der Überprüfung, Codeformatierung und von IntelliSense.
+Wenn Sie mehrere *EDITORCONFIG*-Dateien bearbeiten, kann die Erweiterung [EditorConfig Language Service](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.EditorConfig) nützlich sein. Zu den Features dieser Erweiterung zählen die Syntaxhervorhebung sowie eine Verbesserung der Überprüfung, Codeformatierung und von IntelliSense.
 
 ![IntelliSense in der Erweiterung „EditorConfig Language Service“](media/editorconfig-intellisense.png)
 
 ## <a name="example"></a>Beispiel
 
-Im folgenden Beispiel werden die Einzüge eines C#-Codeausschnitts vor und nach dem Hinzufügen einer EDITORCONFIG-Datei zum Projekt gezeigt. Die Einstellung **Tabstopps** im Dialogfeld **Optionen** für den Visual Studio-Text-Editor ist auf das Einfügen von Leerräumen festgelegt, wenn Sie die **TAB**-TASTE drücken.
+Im folgenden Beispiel werden die Einzüge eines C#-Codeausschnitts vor und nach dem Hinzufügen einer *EDITORCONFIG*-Datei zum Projekt gezeigt. Die Einstellung **Tabstopps** im Dialogfeld **Optionen** für den Visual Studio-Text-Editor ist auf das Einfügen von Leerräumen festgelegt, wenn Sie die **TAB**-TASTE drücken.
 
 ![Text-Editor-Tabstoppeinstellung](../ide/media/vside_editorconfig_tabsetting.png)
 
@@ -126,7 +126,7 @@ Wie erwartet erfolgt der Einzug beim Drücken der **TAB-TASTE** in der nächsten
 
 ![Code vor der Verwendung von EditorConfig](../ide/media/vside_editorconfig_before.png)
 
-Fügen Sie dem Projekt eine neue Datei mit dem Namen EDITORCONFIG mit folgenden Inhalten hinzu. Die Einstellung `[*.cs]` bewirkt, dass sich diese Änderung nur auf C#-Codedateien in diesem Projekt auswirkt.
+Fügen Sie dem Projekt eine neue Datei mit dem Namen *EDITORCONFIG* mit folgenden Inhalten hinzu. Die Einstellung `[*.cs]` bewirkt, dass sich diese Änderung nur auf C#-Codedateien in diesem Projekt auswirkt.
 
 ```EditorConfig
 # Top-most EditorConfig file
@@ -147,17 +147,17 @@ Wenn irgendwo in der Verzeichnisstruktur entweder am Speicherort Ihres Projekts 
 
    **User preferences for this file type are overridden by this project's coding conventions** („Benutzereinstellungen für diesen Dateityp werden durch die Codekonventionen dieses Projekts außer Kraft gesetzt“).
 
-Das bedeutet, dass die Konventionen der EDITORCONFIG-Dateien die Einstellungen in „Optionen“ überschreiben, wenn Editor-Einstellungen (z.B. Einzugsgröße und Stil, Tabstoppgröße oder Codierungskonventionen) in **Extras** > **Optionen** > **Text-Editor** in einer EDITORCONFIG-Datei auf Projektebene oder höher in der Verzeichnisstruktur festgelegt sind. Dieses Verhalten können Sie steuern, indem Sie die Option **Codierungskonventionen des Projekts befolgen** unter **Extras** > **Optionen** > **Text-Editor** verändern. Wenn Sie diese Option deaktivieren, wird auch die EditorConfig-Unterstützung für Visual Studio deaktiviert.
+Das bedeutet, dass die Konventionen der EDITORCONFIG-Dateien die Einstellungen in **Optionen** überschreiben, wenn Editor-Einstellungen (z.B. Einzugsgröße und Stil, Tabstoppgröße oder Codierungskonventionen) in **Extras** > **Optionen** > **Text-Editor** in einer EDITORCONFIG-Datei auf Projektebene oder höher in der Verzeichnisstruktur festgelegt sind. Dieses Verhalten können Sie steuern, indem Sie die Option **Codierungskonventionen des Projekts befolgen** unter **Extras** > **Optionen** > **Text-Editor** verändern. Wenn Sie diese Option deaktivieren, wird auch die EditorConfig-Unterstützung für Visual Studio deaktiviert.
 
 ![Tooloptionen: Codierungskonventionen des Projekts befolgen](media/coding_conventions_option.png)
 
-Sie können EDITORCONFIG-Dateien in übergeordneten Verzeichnissen finden, indem Sie eine Eingabeaufforderung öffnen und den folgenden Befehl vom Stamm des Datenträgers ausführen, der Ihr Projekt enthält:
+Sie können *EDITORCONFIG*-Dateien in übergeordneten Verzeichnissen finden, indem Sie eine Eingabeaufforderung öffnen und den folgenden Befehl vom Stamm des Datenträgers ausführen, der Ihr Projekt enthält:
 
 ```Shell
 dir .editorconfig /s
 ```
 
-Sie können den Bereich Ihrer EDITORCONFIG-Konventionen steuern, indem Sie die ```root=true```-Eigenschaft in EDITORCONFIG-Dateien am Stamm Ihres Repositorys oder an dem Verzeichnis, in dem sich Ihr Projekt befindet, festlegen. Visual Studio sucht in dem Verzeichnis der geöffneten Datei oder in allen übergeordneten Verzeichnissen nach einer Datei mit der Dateiendung „.editorconfig“. Die Suche wird beendet, wenn sie den Stammdateipfad erreicht oder wenn eine EDITORCONFIG-Datei mit ```root=true``` gefunden wird.
+Sie können den Bereich Ihrer EDITORCONFIG-Konventionen steuern, indem Sie die ```root=true```-Eigenschaft in *EDITORCONFIG*-Dateien am Stamm Ihres Repositorys oder an dem Verzeichnis, in dem sich Ihr Projekt befindet, festlegen. Visual Studio sucht in dem Verzeichnis der geöffneten Datei oder in allen übergeordneten Verzeichnissen nach einer Datei mit der Dateiendung *EDITORCONFIG*. Die Suche wird beendet, wenn es den Stammdateipfad erreicht oder wenn eine *EDITORCONFIG*-Datei mit ```root=true``` gefunden wird.
 
 ## <a name="see-also"></a>Siehe auch
 

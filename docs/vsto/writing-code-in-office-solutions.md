@@ -1,12 +1,12 @@
 ---
 title: Schreiben von Code in Office-Projektmappen | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VST.Project.RefactoringCancelled
@@ -56,7 +56,7 @@ ms.lasthandoff: 01/10/2018
 ### <a name="understanding-primary-interop-assemblies"></a>Grundlegendes zu primären Interopassemblys  
  Viele Funktionen der Microsoft Office-Anwendungen sind für die Automatisierung zugänglich. Sie können verwalteten Code (z. B. Visual Basic oder C#) jedoch nicht direkt zum Automatisieren von Office-Anwendungen verwenden. Zum Automatisieren von Office-Anwendungen mithilfe von verwaltetem Code müssen die primären Office-Interopassemblys verwendet werden. Mithilfe der primären Interopassemblys kann verwalteter Code mit dem COM-basierten Objektmodell der Office-Anwendungen interagieren.  
   
- Jede Microsoft Office-Anwendung verfügt über eine primäre Interopassembly (PIA). Wenn Sie in Visual Studio ein Office-Projekt erstellen, wird dem Projekt automatisch ein Verweis auf die entsprechende PIA hinzugefügt. Zum Automatisieren der Funktionen anderer Office-Anwendungen aus dem Projekt muss der entsprechenden primären Interopassembly (PIA) manuell ein Verweis hinzugefügt werden. Weitere Informationen finden Sie unter [How to: Target Office Applications Through Primary Interop Assemblies](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md).  
+ Jede Microsoft Office-Anwendung verfügt über eine primäre Interopassembly (PIA). Wenn Sie in Visual Studio ein Office-Projekt erstellen, wird dem Projekt automatisch ein Verweis auf die entsprechende PIA hinzugefügt. Zum Automatisieren der Funktionen anderer Office-Anwendungen aus dem Projekt muss der entsprechenden primären Interopassembly (PIA) manuell ein Verweis hinzugefügt werden. Weitere Informationen finden Sie unter [Verweisen auf Office-Anwendungen durch primäre Interopassemblys](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md).  
   
 ### <a name="using-primary-interop-assemblies-at-design-time-and-run-time"></a>Verwenden von primären Interopassemblys zur Entwurfs- und Laufzeit  
  Die Office-PIAs müssen im globalen Assemblycache auf dem Entwicklungscomputer installiert und registriert sein, damit Sie die meisten Entwicklungsaufgaben ausführen können. Weitere Informationen finden Sie unter [Configuring a Computer to Develop Office Solutions](../vsto/configuring-a-computer-to-develop-office-solutions.md).  
@@ -64,7 +64,7 @@ ms.lasthandoff: 01/10/2018
  Die Office-PIAs sind jedoch auf Endbenutzercomputern nicht erforderlich, um Office-Projektmappen auszuführen, für die als Zielversion [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder höher festgelegt wurde. Weitere Informationen finden Sie unter [Designing and Creating Office Solutions](../vsto/designing-and-creating-office-solutions.md).  
   
 ### <a name="using-types-in-primary-interop-assemblies"></a>Verwenden von Typen in primären Interopassemblys  
- Die Office-PIAs enthalten eine Kombination von Typen, die das Objektmodell der Office-Anwendungen und zusätzliche Infrastrukturtypen verfügbar machen, die nicht zur direkten Verwendung im Code vorgesehen sind. Eine Übersicht über die Typen in den Office-PIAs finden Sie unter [Overview of Classes and Interfaces in the Office Primary Interop Assemblies](http://msdn.microsoft.com/en-us/da92dc3c-8209-44de-8095-a843659368d5).  
+ Die Office-PIAs enthalten eine Kombination von Typen, die das Objektmodell der Office-Anwendungen und zusätzliche Infrastrukturtypen verfügbar machen, die nicht zur direkten Verwendung im Code vorgesehen sind. Eine Übersicht über die Typen in den Office-PIAs finden Sie unter [Übersicht über Klassen und Schnittstellen in den primären Interopassemblys von Office](http://msdn.microsoft.com/en-us/da92dc3c-8209-44de-8095-a843659368d5).  
   
  Da die Typen in den Office-PIAs Typen in den COM-basierten Objektmodellen entsprechen, unterscheidet sich die Art der Verwendung dieser Typen von der anderer verwalteter Typen. Zum Beispiel hängt die Art, wie Sie Methoden mit optionalen Parameter in einer primären Interopassembly von Office aufrufen, von der im Projekt verwendeten Programmiersprache ab. Weitere Informationen finden Sie unter den folgenden Themen:  
   
@@ -88,7 +88,7 @@ ms.lasthandoff: 01/10/2018
  Weitere Informationen finden Sie unter [globaler Zugriff auf Objekte in Office-Projekten](../vsto/global-access-to-objects-in-office-projects.md).  
   
 ### <a name="namespace-considerations-in-office-solutions"></a>Überlegungen zu Namespaces in Office-Projektmappen  
- Der *Standardnamespace* (oder *Stammnamespace* in Visual Basic) eines Office-Projekts kann nach dem Erstellen des Projekts nicht mehr geändert werden. Der Standardnamespace entspricht immer dem Projektnamen, den Sie beim Erstellen des Projekts angegeben haben. Wenn Sie das Projekt umbenennen, ändert sich der Standardnamespace nicht. Weitere Informationen zum Standardnamespace in Projekten finden Sie unter [Anwendungsseite, Projekt-Designer &#40; C &#35; &#41; ](/visualstudio/ide/reference/application-page-project-designer-csharp) und [Anwendungsseite, Projekt-Designer &#40; Visual Basic &#41; ](/visualstudio/ide/reference/application-page-project-designer-visual-basic).  
+ Der *Standardnamespace* (oder *Stammnamespace* in Visual Basic) eines Office-Projekts kann nach dem Erstellen des Projekts nicht mehr geändert werden. Der Standardnamespace entspricht immer dem Projektnamen, den Sie beim Erstellen des Projekts angegeben haben. Wenn Sie das Projekt umbenennen, ändert sich der Standardnamespace nicht. Weitere Informationen zum Standardnamespace in Projekten finden Sie unter [Anwendungsseite, Projekt-Designer & #40; C & #35; & #41; ](/visualstudio/ide/reference/application-page-project-designer-csharp) und [Anwendungsseite, Projekt-Designer & #40; Visual Basic & #41; ](/visualstudio/ide/reference/application-page-project-designer-visual-basic).  
   
 ### <a name="changing-the-namespace-of-host-item-classes-in-c-projects"></a>Ändern des Namespace von Hostelementklassen in C#-Projekten  
  Hostelementklassen (z. B. die `ThisAddIn`-, `ThisWorkbook`- oder `ThisDocument` -Klassen) verfügen über eigene Namespaces in Visual C#-Office-Projekten. Der Namespace für Hostelemente im Projekt entspricht standardmäßig dem Projektnamen, den Sie beim Erstellen des Projekts angegeben haben.  
@@ -110,7 +110,7 @@ ms.lasthandoff: 01/10/2018
 |Funktion|Beschreibung|Visual Basic-Unterstützung|Visual C#-Unterstützung|  
 |-------------|-----------------|--------------------------|------------------------|  
 |Optionale Parameter|Viele Microsoft Office-Methoden verfügen über Parameter, die nicht erforderlich sind, wenn Sie die Methode aufrufen. Wenn kein Wert für den Parameter übergeben wird, wird ein Standardwert verwendet.|Visual Basic unterstützt optionale Parameter.|Visual C# unterstützt in den meisten Fällen optionale Parameter. Weitere Informationen finden Sie unter [Optionaler Parameter in Office-Projektmappen](../vsto/optional-parameters-in-office-solutions.md).|  
-|Übergeben von Parametern durch einen Verweis|Optionale Parameter können in den meisten der primären Interopassemblys von Microsoft Office als Wert übergeben werden. In manchen primären Interopassemblys müssen optionale Parameter, die Referenztypen akzeptieren, jedoch als Verweis übergeben werden.<br /><br /> Weitere Informationen zu Wert- und referenztypparametern finden Sie unter [übergeben von Argumenten als Wert und als Referenz &#40; Visual Basic &#41; ](/dotnet/visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference) (für Visual Basic) und [übergeben von Parametern &#40; C &#35; Programmierhandbuch &#41; ](/dotnet/csharp/programming-guide/classes-and-structs/passing-parameters).|Es sind keine weiteren Aufgaben erforderlich, um Parameter als Verweis zu übergeben. Der Visual Basic-Compiler übergibt die Parameter automatisch durch einen Verweis, wenn dies erforderlich ist.|In den meisten Fällen übergibt der Visual C#-Compiler automatisch die Parameter durch einen Verweis, wenn dies erforderlich ist. Weitere Informationen finden Sie unter [Optionaler Parameter in Office-Projektmappen](../vsto/optional-parameters-in-office-solutions.md).|  
+|Übergeben von Parametern durch einen Verweis|Optionale Parameter können in den meisten der primären Interopassemblys von Microsoft Office als Wert übergeben werden. In manchen primären Interopassemblys müssen optionale Parameter, die Referenztypen akzeptieren, jedoch als Verweis übergeben werden.<br /><br /> Weitere Informationen zu Wert- und referenztypparametern finden Sie unter [übergeben von Argumenten als Wert und als Referenz & #40; Visual Basic & #41; ](/dotnet/visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference) (für Visual Basic) und [übergeben von Parametern & #40; C & #35; Programmierhandbuch & #41; ](/dotnet/csharp/programming-guide/classes-and-structs/passing-parameters).|Es sind keine weiteren Aufgaben erforderlich, um Parameter als Verweis zu übergeben. Der Visual Basic-Compiler übergibt die Parameter automatisch durch einen Verweis, wenn dies erforderlich ist.|In den meisten Fällen übergibt der Visual C#-Compiler automatisch die Parameter durch einen Verweis, wenn dies erforderlich ist. Weitere Informationen finden Sie unter [Optionaler Parameter in Office-Projektmappen](../vsto/optional-parameters-in-office-solutions.md).|  
 |Parametrisierte Eigenschaften|Einige Eigenschaften akzeptieren Parameter und fungieren als schreibgeschützte Funktionen.|Visual Basic unterstützt Eigenschaften, die Parameter akzeptieren.|Visual C# unterstützt Eigenschaften, die Parameter akzeptieren.|  
 |Spätes Binden|Bei der späten Bindung werden die Eigenschaften von Objekten zur Laufzeit bestimmt, statt Variablen zur Entwurfszeit in den Objekttyp umzuwandeln.|Visual Basic führt späte Bindungen aus, wenn **Option Strict** deaktiviert ist. Wenn **Option Strict** aktiviert ist, müssen Objekte explizit konvertiert und Typen im <xref:System.Reflection> -Namespace verwendet werden, um auf spät gebundene Member zugreifen zu können. Weitere Informationen finden Sie unter [Late Binding in Office Solutions](../vsto/late-binding-in-office-solutions.md).|Visual C# führt späte Bindungen in Projekten aus, für die als Zielversion [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]festgelegt wurde. Weitere Informationen finden Sie unter [Late Binding in Office Solutions](../vsto/late-binding-in-office-solutions.md).|  
   
@@ -119,13 +119,13 @@ ms.lasthandoff: 01/10/2018
   
 |Funktion|Beschreibung|Visual Basic- und Visual C#-Unterstützung|  
 |-------------|-----------------|-----------------------------------------|  
-|Arrayindizes|Die unteren Arraygrenzen der Auflistungen in Microsoft Office-Anwendungen beginnen mit 1. Visual Basic und Visual C# verwenden 0-basierte Arrays. Weitere Informationen finden Sie unter [Arrays &#40; C &#35; Programmierhandbuch &#41; ](/dotnet/csharp/programming-guide/arrays/index) und [Arrays in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/arrays/index).|Um auf das erste Element einer Auflistung im Objektmodell einer Microsoft Office-Anwendung zuzugreifen, verwenden Sie den Index 1 statt 0.|  
+|Arrayindizes|Die unteren Arraygrenzen der Auflistungen in Microsoft Office-Anwendungen beginnen mit 1. Visual Basic und Visual C# verwenden 0-basierte Arrays. Weitere Informationen finden Sie unter [Arrays & #40; C & #35; Programmierhandbuch & #41; ](/dotnet/csharp/programming-guide/arrays/index) und [Arrays in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/arrays/index).|Um auf das erste Element einer Auflistung im Objektmodell einer Microsoft Office-Anwendung zuzugreifen, verwenden Sie den Index 1 statt 0.|  
   
 ## <a name="see-also"></a>Siehe auch  
  [Optionale Parameter in Office-Projektmappen](../vsto/optional-parameters-in-office-solutions.md)   
  [Globaler Zugriff auf Objekte in Office-Projekten](../vsto/global-access-to-objects-in-office-projects.md)   
  [Ereignisse in Office-Projekten](../vsto/events-in-office-projects.md)   
- [How to: Target Office Applications Through Primary Interop Assemblies](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)   
+ [Verweisen auf Office-Anwendungen durch primäre Interopassemblys](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)   
  [Vorgehensweise: Erstellen von Ereignishandlern in Office-Projekten](../vsto/how-to-create-event-handlers-in-office-projects.md)   
  [Späte Bindung in Office-Projektmappen](../vsto/late-binding-in-office-solutions.md)   
  [Gemeinsame Entwicklung von Office-Projektmappen](../vsto/collaborative-development-of-office-solutions.md)  

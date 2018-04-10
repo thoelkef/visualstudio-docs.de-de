@@ -1,32 +1,34 @@
 ---
 title: Konfigurieren von Warnungen in Visual Basic| Microsoft-Dokumentation
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - errors [Visual Basic], warnings
 - run-time errors, warnings
 - warnings, configuring
 ms.assetid: 99cf4781-bd4d-47b4-91b9-217933509f82
-caps.latest.revision: "35"
+caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: c076fe18318a9110babdf17d74898f35466d710c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 65e290734a906f006f283bf3462d07389876375c
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="configuring-warnings-in-visual-basic"></a>Konfigurieren von Warnungen in Visual Basic
 Der [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]-Compiler enthält eine Reihe von Warnungen zu Code, der möglicherweise Laufzeitfehler verursacht. Mithilfe dieser Informationen können Sie saubereren, schnelleren und besseren Code mit weniger Fehlern schreiben. So gibt der Compiler z.B. eine Warnung aus, wenn der Benutzer versucht, einen Member einer nicht zugewiesenen Objektvariablen aufzurufen, eine Funktion ohne Angabe eines Rückgabewerts zu beenden oder einen `Try`-Block auszuführen, der Programmfehler im Code für das Abfangen von Ausnahmen enthält.  
   
- In einigen Fällen stellt der Compiler auch zusätzliche Funktionen bereit, die es dem Benutzer ermöglichen, sich auf die konkrete Aufgabe zu konzentrieren, statt sich um möglicherweise auftretende Fehler zu kümmern. In früheren Versionen von [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] wurde `Option Strict` verwendet, um die zusätzlichen Funktionen einzuschränken, die der [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]-Compiler bietet. Durch die Konfiguration von Warnungen können Sie diese Funktionalität auf der Ebene der einzelnen Warnungen und somit wesentlich genauer kontrollieren.  
+ In einigen Fällen stellt der Compiler auch zusätzliche Funktionen bereit, die es dem Benutzer ermöglichen, sich auf die konkrete Aufgabe zu konzentrieren, statt sich um möglicherweise auftretende Fehler zu kümmern. In früheren Versionen von [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] wurde **Option Strict** verwendet, um die zusätzlichen Funktionen einzuschränken, die der [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]-Compiler bietet. Durch die Konfiguration von Warnungen können Sie diese Funktionalität auf der Ebene der einzelnen Warnungen und somit wesentlich genauer kontrollieren.  
   
  So können Sie Projekte an Ihre Anforderungen anpassen und einzelne Warnungen deaktivieren, die für Ihre Anwendung nicht relevant sind, oder bestimmte Warnungen in Fehlermeldungen umwandeln. Auf dieser Seite wird das Aktivieren und Deaktivieren einzelner Warnungen erläutert.  
   
@@ -70,52 +72,52 @@ Der [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]-Compiler enthält 
   
  ID: 42016  
   
-### <a name="late-bound-method-invocation-and-overload-resolution-warning"></a>Aufruf spät gebundener Methoden und Überladungsauflösung  
+### <a name="late-bound-method-invocation-and-overload-resolution-warning"></a>Aufruf spät gebundener Methoden und Warnungen zur Überladungsauflösung  
  Wird bei später Bindung generiert. Für neue Projekte standardmäßig deaktiviert.  
   
  ID: 42017  
   
-### <a name="operands-of-type-object-warnings"></a>Operanden vom Typ Objekt  
- Wird generiert, wenn Operanden vom Typ `Object` vorkommen, die bei Verwendung von `Option Strict On` einen Fehler verursachen würden. Für neue Projekte standardmäßig aktiviert.  
+### <a name="operands-of-type-object-warnings"></a>Warnungen zum Operanden vom Typ „Object“  
+ Wird generiert, wenn Operanden vom Typ `Object` vorkommen, die bei Verwendung von **Option Strict On** einen Fehler verursachen würden. Für neue Projekte standardmäßig aktiviert.  
   
  ID: 42018 und 42019  
   
-### <a name="declarations-require-as-clause-warnings"></a>Für Deklarationen ist eine 'As'-Klausel erforderlich  
- Wird generiert, wenn eine Variablen-, Funktions- oder Eigenschaftendeklaration ohne `As`-Klausel bei Verwendung von `Option Strict On` einen Fehler verursachen würde. Bei Variablen, denen kein Typ zugeordnet ist, wird davon ausgegangen, dass diese vom Typ `Object` sind. Für neue Projekte standardmäßig aktiviert.  
+### <a name="declarations-require-as-clause-warnings"></a>Für Deklarationen ist eine As-Klausel erforderlich  
+ Wird generiert, wenn eine Variablen-, Funktions- oder Eigenschaftendeklaration ohne `As`-Klausel bei Verwendung von **Option Strict On** einen Fehler verursachen würde. Bei Variablen, denen kein Typ zugeordnet ist, wird davon ausgegangen, dass diese vom Typ `Object` sind. Für neue Projekte standardmäßig aktiviert.  
   
  ID: 42020 (Variablendeklaration), 42021 (Funktionsdeklaration) und 42022 (Eigenschaftendeklaration)  
   
-### <a name="possible-null-reference-exception-warnings"></a>Ausnahme bei möglichem NULL-Verweis  
+### <a name="possible-null-reference-exception-warnings"></a>Warnungen zu Ausnahmen bei möglichem NULL-Verweis  
  Wird generiert, wenn eine Variable verwendet wird, bevor dieser ein Wert zugewiesen wurde. Für neue Projekte standardmäßig aktiviert.  
   
  ID: 42104, 42030  
   
-### <a name="unused-local-variable-warning"></a>Nicht verwendete lokale Variable  
+### <a name="unused-local-variable-warning"></a>Warnung zu nicht verwendeten lokalen Variablen  
  Wird generiert, wenn eine lokale Variable deklariert, aber nie auf diese verwiesen wird. Standardmäßig aktiviert.  
   
  ID: 42024  
   
-### <a name="access-of-shared-member-through-instance-variable-warning"></a>Zugriff auf freigegebenen Member durch Instanzvariable  
+### <a name="access-of-shared-member-through-instance-variable-warning"></a>Warnung zum Zugriff auf freigegebenen Member durch Instanzvariable  
  Wird generiert, wenn beim Zugriff auf einen freigegebenen Member durch eine Instanz Nebeneffekte auftreten könnten oder wenn der Zugriff auf einen freigegebenen Member durch eine Instanzvariable nicht auf der rechten Seite eines Ausdrucks erfolgt oder als Parameter übergeben wird. Für neue Projekte standardmäßig aktiviert.  
   
  ID: 42025  
   
-### <a name="recursive-operator-or-property-access-warnings"></a>Rekursiver Zugriff auf Operator oder Eigenschaft  
+### <a name="recursive-operator-or-property-access-warnings"></a>Warnungen zum rekursiven Zugriff auf Operator oder Eigenschaft  
  Wird generiert, wenn im Rumpf einer Routine derselbe Operator oder dieselbe Eigenschaft verwendet wird, in dem oder der die Routine definiert ist. Für neue Projekte standardmäßig aktiviert.  
   
  ID: 42004 (Operator), 42026 (Eigenschaft)  
   
-### <a name="function-or-operator-without-return-value-warning"></a>Funktion oder Operator ohne Rückgabewert  
+### <a name="function-or-operator-without-return-value-warning"></a>Warnung zu Funktion oder Operator ohne Rückgabewert  
  Wird generiert, wenn für eine Funktion oder einen Operator kein Rückgabewert angegeben wurde. Dazu zählt auch das Auslassen von `Set` für die implizite lokale Variable, die denselben Namen wie die Funktion hat. Für neue Projekte standardmäßig aktiviert.  
   
  ID: 42105 (Funktion), 42016 (Operator)  
   
-### <a name="overloads-modifier-used-in-a-module-warning"></a>Verwendung eines Overloads-Modifizierers in einem Modul  
+### <a name="overloads-modifier-used-in-a-module-warning"></a>Warnung zur Verwendung eines Overloads-Modifizierers in einem Modul  
  Wird generiert, wenn `Overloads` in einem `Module` verwendet wird. Für neue Projekte standardmäßig aktiviert.  
   
  ID: 42028  
   
-### <a name="duplicate-or-overlapping-catch-blocks-warnings"></a>Doppelte oder sich überschneidende catch-Blöcke  
+### <a name="duplicate-or-overlapping-catch-blocks-warnings"></a>Warnung zu doppelten oder sich überschneidenden catch-Blöcken  
  Wird generiert, wenn ein `Catch`-Block durch dessen Beziehung zu anderen definierten `Catch`-Blöcken nie erreicht wird. Für neue Projekte standardmäßig aktiviert.  
   
  ID: 42029, 42031  

@@ -1,12 +1,13 @@
 ---
 title: Variablen (JavaScript) | Microsoft-Dokumentation
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - JavaScript
@@ -16,15 +17,15 @@ helpviewer_keywords:
 - coercion
 - case sensitivity, JavaScript variable name
 ms.assetid: 12a450e5-4818-4a09-9878-cd7c6cd2a248
-caps.latest.revision: "20"
+caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f30946899ad35286dfb1e786cf903d58f5c98cb6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: c1d09f634bd4901e4015766bf55f272926a0a31c
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="variables-javascript"></a>Variablen (JavaScript)
 In [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] enthält eine Variable einen Wert, z.B. „hello“ oder 5. Wenn Sie die Variable verwenden, verweisen Sie auf die Daten, die sie darstellt, z.B. `NumberOfDaysLeft = EndDate - TodaysDate`.  
@@ -48,7 +49,7 @@ var count = 0, amount = 100;
 ## <a name="naming-variables"></a>Benennen von Variablen  
  [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] ist eine Sprache, bei der die Groß- und Kleinschreibung beachtet wird. Dies bedeutet, dass ein Variablenname wie z.B. **myCounter** sich vom Variablennamen **MYCounter** unterscheidet. Variablennamen können beliebig lang sein. Die Regeln für das Erstellen zulässiger Variablen sind die folgenden:  
   
--   Das erste Zeichen muss ein ASCII-Buchstabe (Großbuchstabe oder Kleinbuchstabe) oder ein Unterstrich (_) sein. Beachten Sie, dass eine Zahl nicht als erstes Zeichen verwendet werden kann.  
+-   Das erste Zeichen muss ein ASCII-Buchstabe sein (entweder in Groß- oder Kleinbuchstaben), ein Buchstabe, der mit den Namenskonventionen der Unicode-Variable übereinstimmt oder ein Unterstrich (_). Beachten Sie, dass eine Zahl nicht als erstes Zeichen verwendet werden kann.  
   
 -   Die folgenden Zeichen müssen Buchstaben, Zahlen oder Unterstriche (_) sein.  
   

@@ -1,12 +1,12 @@
 ---
 title: Multifunktionsleisten-XML | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VSTO.Ribbon.RibbonXMLItem
@@ -67,7 +67,7 @@ ms.lasthandoff: 01/10/2018
 > [!NOTE]  
 >  Für Outlook ist ein zusätzlicher Schritt erforderlich. Weitere Informationen finden Sie unter [Anpassen eines Menübands für Outlook](../vsto/customizing-a-ribbon-for-outlook.md).  
   
- Eine exemplarische Vorgehensweise, die das Automatisieren eine Anwendung über das Menüband veranschaulicht, finden Sie unter [Walkthrough: Creating a Custom Tab by Using Ribbon XML](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md).  
+ Eine exemplarische Vorgehensweise, die das Automatisieren eine Anwendung über das Menüband veranschaulicht, finden Sie unter [Exemplarische Vorgehensweise: Erstellen einer benutzerdefinierten Registerkarte mit Multifunktionsleisten-XML](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md).  
   
 ### <a name="assigning-callback-methods-to-controls"></a>Zuweisen von Rückrufmethoden zu Steuerelementen  
  Wenn Sie einem Steuerelement eine Rückrufmethode in der Menüband-XML-Datei zuzuweisen möchten, fügen Sie ein Attribut hinzu, das den Typ der Rückrufmethode und den Namen der Methode angibt. Das folgende Element definiert z. B. eine Umschaltfläche, die über eine **onAction** -Rückrufmethode mit dem Namen `OnToggleButton1`.  

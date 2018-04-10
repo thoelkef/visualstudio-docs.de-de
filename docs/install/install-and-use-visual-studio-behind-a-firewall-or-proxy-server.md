@@ -1,35 +1,35 @@
 ---
 title: Installieren und Verwenden von Visual Studio und Azure-Diensten hinter einer Firewall oder einem Proxyserver | Microsoft-Dokumentation
-description: 
-ms.custom: 
+description: ''
+ms.custom: ''
 ms.date: 02/12/2018
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - network installation, Visual Studio
 - administrator guide, Visual Studio
 - installing Visual Studio, administrator guide
 - list of domains, locations, URLs
-ms.assetid: 
+ms.assetid: ''
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 320b2492d73e0c15d806dac9aac3802bf957f83c
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: 13f9f83c89e09e07d6024b779a89b9a6c4374112
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Installieren und Verwenden von Visual Studio und Azure-Diensten hinter einer Firewall oder einem Proxyserver
 Wenn Ihre Organisation Sicherheitsmechanismen wie eine Firewall oder einen Proxyserver verwendet, dann sollten Sie einige Domänen-URLs in die Whitelist aufnehmen und verschiedene Ports und Protokolle öffnen bzw. deren Verwendung zulassen, um eine optimale Installation und Verwendung von Visual Studio und Azure-Diensten zu gewährleisten.
 
-* **[Installieren von Visual Studio](#install-visual-studio)**: Diese Tabellen enthalten die Domänen-URLs, die Sie in die Whitelist aufnehmen müssen, um Zugriff auf alle gewünschten Komponenten und Workloads zu erhalten.    
+* **[Installieren von Visual Studio](#install-visual-studio)**: Diese Tabellen enthalten die Domänen-URLs, die Sie in die Whitelist aufnehmen müssen, um Zugriff auf alle gewünschten Komponenten und Workloads zu erhalten.
 
 * **[Verwenden von Visual Studio und Azure-Diensten](#use-visual-studio-and-azure-services)**: Diese Tabellen enthalten die Domänen-URLs, die Sie in die Whitelist aufnehmen sollten, sowie die Ports und Protokolle, die Sie öffnen bzw. zulassen müssen, um Zugriff auf alle gewünschten Features und Dienste zu erhalten.
 
@@ -75,7 +75,7 @@ Der Visual Studio-Installer lädt Dateien aus verschiedenen Domänen und den zug
 ### <a name="urls-to-whitelist-and-ports-and-protocols-to-open"></a>URLs für Whitelist und zu öffnende Ports und Protokolle
 Um sicherzustellen, dass Sie bei Verwendung von Visual Studio oder Azure-Diensten hinter einer Firewall oder einem Proxyserver Zugriff auf alle benötigten Komponenten haben, müssen Sie die folgenden URLs in die Whitelist aufnehmen und diese Ports und Protokolle öffnen bzw. zulassen.
 
-| Dienst oder Szenario | DNS-Endpunkt | Protokoll | Port | Beschreibung |
+| Dienst oder Szenario | DNS-Endpunkt | Protokoll | Port | description |
 | --- | --- | --- | --- | --- |
 | URL<br>Auflösung | go.microsoft.com<br><br>aka.ms | | |Dient dem Verkürzen von URLs, die anschließend in längere URLs aufgelöst werden.
 | Startseite | vsstartpage.blob.core.windows.net | | 443| Dient der Anzeige Neuigkeiten für Entwickler auf der Startseite in Visual Studio. |
@@ -87,16 +87,16 @@ Um sicherzustellen, dass Sie bei Verwendung von Visual Studio oder Azure-Dienste
 | Identitätsbadge <br>(Benutzername und Avatar)<br>und <br>Roamingeinstellungen | app.vssps.visualstudio.com <br><br>app.vsspsext.visualstudio.com<br><br>app.vssps.visualstudio.com<br><br> ns-sb2-prod-ch1-002.cloudapp.net <br><br>az700632.vo.msecnd.net  | |443 | Wird verwendet, um den Benutzernamen und Avatar in der IDE anzuzeigen. <br><br> Stellt sicher, dass Einstellungsänderungen von Computer zu Computer übernommen werden. |
 | Remoteeinstellungen | az700632.vo.msecnd.net | | 443| Dient dem Deaktivieren von Erweiterungen, die bekanntermaßen Probleme in Visual Studio verursachen.   |
 | Windows-Tools | developer.microsoft.com <br><br>dev.windows.com  <br><br>appdev.microsoft.com |https |443 | Wird für Windows-App Store-Szenarien verwendet.  |
-| JSON-Schema <br>Ermittlung <br><br>JSON-Schema <br>Definition<br><br>JSON-Schema <br>Unterstützung für <br>Azure-Ressourcen| json.schemastore.org <br>schemastoreorg.azurewebsites.net<br><br>json-schema.org<br><br>schema.management.azure.com| http<br>https<br><br>http<br><br>https |80<br>443 <br><br> 443<br><br>443 | Wird zum Ermitteln und Herunterladen von JSON-Schemas verwendet, die der Benutzer beim Bearbeiten von JSON-Dokumenten möglicherweise verwendet. <br><br>Dient dem Abruf des Schemas zur Metavalidierung für JSON.<br><br>Wird zum Abrufen des aktuellen Schemas für Azure Resource Manager-Bereitstellungsvorlagen verwendet.|
-| NPM-Paket <br>Ermittlung  |Skimdb.npmjs.com <br><br>Registry.npmjs.org <br><br>Api.npms.io  | https<br><br>http/s<br><br>https | 443<br><br>80/443<br><br>443| Wird zur Suche nach NPM-Paketen benötigt und zur clientseitigen Skriptpaketinstallation in Webprojekten verwendet. |
+| JSON-Schema <br>Suche <br><br>JSON-Schema <br>Definition<br><br>JSON-Schema <br>Unterstützung für <br>Azure-Ressourcen| json.schemastore.org <br>schemastoreorg.azurewebsites.net<br><br>json-schema.org<br><br>schema.management.azure.com| http<br>https<br><br>http<br><br>https |80<br>443 <br><br> 443<br><br>443 | Wird zum Ermitteln und Herunterladen von JSON-Schemas verwendet, die der Benutzer beim Bearbeiten von JSON-Dokumenten möglicherweise verwendet. <br><br>Dient dem Abruf des Schemas zur Metavalidierung für JSON.<br><br>Wird zum Abrufen des aktuellen Schemas für Azure Resource Manager-Bereitstellungsvorlagen verwendet.|
+| NPM-Paket <br>Erkennung  |Skimdb.npmjs.com <br><br>Registry.npmjs.org <br><br>Api.npms.io  | https<br><br>http/s<br><br>https | 443<br><br>80/443<br><br>443| Wird zur Suche nach NPM-Paketen benötigt und zur clientseitigen Skriptpaketinstallation in Webprojekten verwendet. |
 |Bower-Paket<br> Symbole<br><br>Bower-Paket <br>search  |Bower.io <br><br>bowercache.azurewebsites.net <br>go.microsoft.com <br>Registry.bower.io | http<br><br>https<br>http<br>https|80<br><br>443<br>80<br>443 |Stellt das standardmäßige Bower-Paketsymbol bereit.  <br><br>Ermöglicht die Suche nach Bower-Paketen. |
 |NuGet<br><br>NuGet-Paket<br> Erkennung | Api.nuget.org <br>www.nuget.org <br>Nuget.org<br><br>crl3.digicert.com <br>crl4.digicert.com <br>ocsp.digicert.com <br>cacerts.digicert.com  | https<br><br>http/s |443<br><br>80/443<br> |Dient der Überprüfung von signierten NuGet-Paketen.<br><br>Erforderlich für die Suche nach NuGet-Paketen und -Versionen. |
 |GitHub-Repositoryinformationen  |api.github.com  |https | 443| Erforderlich zum Abrufen zusätzlicher Informationen zu Bower-Paketen. |
 | Weblinter|Eslint.org<br><br>www.Bing.com <br><br>www.coffeelint.org  | http|80 | |
-| Cookiecutter<br>Explorer-Vorlage<br>Ermittlung <br><br>Cookiecutter <br>Explorer-Projekt<br> Erstellung | api.github.com <br>raw.githubusercontent.com <br>go.microsoft.com<br><br>pypi.org <br> pypi.python.org  | https | 443<br> | Wird zum Ermitteln von Onlinevorlagen in unserem empfohlenen Feed sowie in GitHub-Repositorys verwendet. <br><br>Dient zum Erstellen eines Projekts aus einer Cookiecutter-Vorlage, die eine einmalige Installation eines Cookiecutter-Python-Pakets aus dem Python-Paketindex (PyPI) erfordert.|
-| Python-Paket <br>Ermittlung<br><br>Python-Paket <br>Verwaltung<br><br>Python <br>Neues Projekt <br>Vorlagen| pypi.org<br> <br>pypi.python.org <br>bootstrap.pypa.io<br><br>go.microsoft.com| https| 443| Ermöglicht die Suche nach PIP-Paketen.<br><br>Installiert PIP automatisch, sofern nicht vorhanden. <br><br> Wird zur Erstellung verwendet. <br><br>Wird zum Auflösen der folgenden Python-Projektvorlagen im Dialogfeld für ein neues Projekt in Cookiecutter-Vorlagen-URLs verwendet:<br> – Klassifiziererprojekt<br>– Clusteringprojekt <br> – Regressionsprojekt <br> – PyGame unter Verwendung von PyKinect <br> – Pyvot-Projekt |
+| Cookiecutter<br>Explorer-Vorlage<br>Erkennung <br><br>Cookiecutter <br>Explorer-Projekt<br> Erstellung | api.github.com <br>raw.githubusercontent.com <br>go.microsoft.com<br><br>pypi.org <br> pypi.python.org  | https | 443<br> | Wird zum Ermitteln von Onlinevorlagen in unserem empfohlenen Feed sowie in GitHub-Repositorys verwendet. <br><br>Dient zum Erstellen eines Projekts aus einer Cookiecutter-Vorlage, die eine einmalige Installation eines Cookiecutter-Python-Pakets aus dem Python-Paketindex (PyPI) erfordert.|
+| Python-Paket <br>Erkennung<br><br>Python-Paket <br>Verwaltung<br><br>Python <br>Neues Projekt <br>Vorlagen| pypi.org<br> <br>pypi.python.org <br>bootstrap.pypa.io<br><br>go.microsoft.com| https| 443| Ermöglicht die Suche nach PIP-Paketen.<br><br>Installiert PIP automatisch, sofern nicht vorhanden. <br><br> Wird zur Erstellung verwendet. <br><br>Wird zum Auflösen der folgenden Python-Projektvorlagen im Dialogfeld für ein neues Projekt in Cookiecutter-Vorlagen-URLs verwendet:<br> – Klassifiziererprojekt<br>– Clusteringprojekt <br> – Regressionsprojekt <br> – PyGame unter Verwendung von PyKinect <br> – Pyvot-Projekt |
 | Office Web <br>Add-In <br> Manifest <br>Überprüfung <br>Dienst | verificationservice.osi.office.net | https | 443 | Wird zum Validieren von Manifesten für Office Web-Add-Ins verwendet. |
-| SharePoint- und  <br>Office-Add-Ins | sharepoint.com | https | 443 | Wird zum Veröffentlichen und Testen von SharePoint- und Office-Add-Ins in SharePoint Online verwendet. |
+| SharePoint- und  <br>Office-Add-ins | sharepoint.com | https | 443 | Wird zum Veröffentlichen und Testen von SharePoint- und Office-Add-Ins in SharePoint Online verwendet. |
 | Workflow-Manager- <br>Testdienst-<br> Host |  | http | 12292 | Eine Firewall, die zum Testen von SharePoint-Add-Ins mit Workflows automatisch erstellt wird. |
 | Automatisch gesammelte <br>Zuverlässigkeitsstatistiken <br>und weitere Daten des <br>Programms zur Verbesserung <br>der Benutzerfreundlichkeit<br> für Azure SDK und <br>SQL-Tools <br><br> | vortex.data.microsoft.com<br> <br>dc.services.visualstudio.com |https | 443| Wird zum Senden von Zuverlässigkeitsstatistiken (Daten zu Abstürzen/Stillständen) vom Benutzer an Microsoft verwendet. Die eigentlichen Abbilder zu Abstürzen/Stillständen werden weiterhin hochgeladen, wenn die Windows-Fehlerberichterstattung aktiviert ist. Es werden lediglich statistische Informationen unterdrückt. <br>Wird verwendet, um anonyme Nutzungsmuster der Azure-Tools SDK-Erweiterung sowie Nutzungsmuster der SQL-Tools für Visual Studio offenzulegen. |
 | Visual Studio <br> Programm zur Verbesserung <br>der Benutzerfreundlichkeit (CEIP) <br><br>PerfWatson.exe | vortex.data.microsoft.com<br>dc.services.visualstudio.com<br>visualstudio-devdiv-c2s.msedge.net<br>az667904.vo.msecnd.net <br>scus-breeziest-in.cloudapp.net<br> | https| 443 | Dient zum Sammeln von anonymen Nutzungsmustern und Fehlerprotokollen. <br><br>Hiermit werden Probleme mit einer nicht reagierenden Benutzeroberfläche nachverfolgt.|
@@ -113,6 +113,7 @@ Um sicherzustellen, dass Sie bei Verwendung von Visual Studio oder Azure-Dienste
 | Momentaufnahme <br>Debugger | 1. go.microsoft.com <br>2. management.azure.com <br> 3. &#42;azurewebsites.net <br> 4. &#42;scm.azurewebsites.net<br>5. api.nuget.org/v3/index.json <br>6. msvsmon | 1. https <br>2. https  <br>3. http <br>4. https <br>5. https <br>6. Concord <br> | 1. 443<br> 2. 443<br>3. 80  <br>4. 443<br> 5. 443<br> 6. 4022 (abhängig von Visual Studio-Version) | 1. Abfrage-JSON-Datei für App Service-SKU-Größe <br>2. Verschiedene Azure-RM-Aufrufe <br>3. Aufruf zur Standortaufwärmung über  <br>4. Vom Kunden festgelegter App Service-Kudu-Endpunkt <br>5. Auf nuget.org veröffentlichte Erweiterungsversion für die Abfragewebsite <br>6. Kanal für Remotedebuggen |
 |Azure Stream Analytics <br><br>HDInsight | Management.azure.com |https|443 |Dient zum Anzeigen, Übermitteln, Ausführen und Verwalten von ASA-Aufträgen. <br><br> Wird verwendet, um HDI-Cluster zu durchsuchen und HDI-Aufträge zu übermitteln, zu diagnostizieren und zu debuggen. |
 | Azure Data Lake | &#42;.azuredatalakestore.net <br>&#42;.azuredatalakeanalytics.net | https | 443 | Wird verwendet, um Auftrage zu kompilieren, zu übermitteln, anzuzeigen, zu diagnostizieren und zu debuggen. Dient zum Durchsuchen von ADLS-Dateien und zum Hoch- und Herunterladen von Dateien. |
+|Paketerstellungsdienst | [account].visualstudio.com <br/> [account].*.visualstudio.com <br/> *.blob.core.windows.net <br/> registry.npmjs.org </br> nodejs.org <br/> dist.nuget.org <br/> nuget.org | https | 443 | Die Domänen „*.npmjs.org“, „*.nuget.org“ und „*.nodejs.org“ werden nur für bestimmte Buildaufgabenszenarios (z.B. NuGet-Toolinstaller, Node Tool-Installationsprogramm) benötigt oder wenn Sie öffentliche Upstreams mit Ihren Feeds verwenden müssen.  Die anderen drei Domänen werden für wichtige Funktionen des Paketerstellungsdiensts benötigt. |
 |||||||
 
 

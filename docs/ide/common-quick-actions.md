@@ -1,11 +1,7 @@
 ---
-title: "Häufig vorkommende Schnellaktionen | Microsoft-Dokumentation"
-ms.custom: 
-ms.date: 11/30/2017
-ms.reviewer: 
-ms.suite: 
+title: Häufig vorkommende Schnellaktionen | Microsoft-Dokumentation
+ms.date: 03/28/2018
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
 ms.topic: reference
 author: kuhlenh
 ms.author: kaseyu
@@ -15,15 +11,15 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: ea7ecb89ed732af828fb4ca26d123d131f6d1918
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 8d751e122d0c9eca23d0349761054d092a438ba8
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="common-quick-actions"></a>Häufige schnelle Aktionen
 
-Die Abschnitte in diesem Thema enthalten einige der häufig vorkommenden schnellen Aktionen, die sowohl für C#- als auch für Visual Basic-Code gültig sind.
+Die Abschnitte in diesem Thema enthalten einige der häufig vorkommenden schnellen Aktionen, die sowohl für C#- als auch für Visual Basic-Code gültig sind. Bei diesen Aktionen handelt es sich um *Codefehlerbehebungen* für die integrierten [Analyzer-Regeln](../code-quality/roslyn-analyzers-overview.md) in Visual Studio.
 
 ## <a name="actions-that-fix-errors"></a>Aktionen, die Fehler korrigieren
 
@@ -176,7 +172,7 @@ End Function
 
 ## <a name="actions-that-remove-unnecessary-code"></a>Aktionen, die nicht benötigten Code entfernen
 
-### <a name="remove-unnecesary-usingsimports"></a>Nicht benötigte Using- und Import-Anweisungen entfernen
+### <a name="remove-unnecessary-usingsimports"></a>Nicht benötigte Using- und Import-Anweisungen entfernen
 
 Die schnelle Aktion **Remove Unnecessary Usings/Imports** (Nicht benötigtes Usings/Imports entfernen) entfernt jede nicht benötigte `using`- und `Import`-Anweisung aus der aktuellen Datei.  Wenn Sie dieses Element auswählen, werden nicht benötigte import-Anweisungen des Namespaces umgehend entfernt.
 
@@ -239,7 +235,7 @@ public MyMethod()
 | ------- | -------------------- | ----------------  |
 | CS0219, BC42024 | C# und Visual Basic | Visual Studio 2017 Version 15.3 |
 
-### <a name="remove-type-from-default-value-expression"></a>Entfernen des Typs aus dem **default**-Wertausdruck
+### <a name="remove-type-from-default-value-expression"></a>Entfernen des Typs aus dem default-Wertausdruck
 
 Diese schnelle Aktion entfernt den Werttyp aus einem Standardwertausdruck und verwendet das [Standardliteral](/dotnet/csharp/programming-guide/statements-expressions-operators/default-value-expressions#default-literal-and-type-inference), wenn der Compiler den Typ des Ausdrucks ableiten kann.
 
@@ -260,7 +256,7 @@ void DoWork(CancellationToken cancellationToken = default) { ... }
 
 ## <a name="actions-that-add-missing-code"></a>Aktionen, die fehlenden Code hinzufügen
 
-### <a name="add-usingsimports-for-types-in-reference-assemblies-nuget-packages-or-other-types-in-your-solution"></a>Usings/Imports für Typen in Verweisassemblys, NuGet-Paketen oder anderen Typen in Ihrer Projektmappe hinzufügen
+### <a name="add-usingsimports-for-types-in-reference-assemblies-nuget-packages-or-other-types-in-your-solution"></a>Hinzufügen von Using- und Import-Anweisungen für Typen in Verweisassemblys, NuGet-Paketen oder anderen Typen in Ihrer Projektmappe
 
 Using-Typen in anderen Projekten in Ihrer Projektmappe zeigen die schnelle Aktion automatisch an; allerdings müssen alle anderen auf der Registerkarte **Tools > Options > C#** (Tools > Optionen > C#) oder **Basic > Advanced** (Basic > Erweitert) aktiviert werden:
 
@@ -475,7 +471,7 @@ private static int thisFieldIsPublic;
 
 ## <a name="code-transformations"></a>Codetransformationen
 
-### <a name="convert-if-construct-to-switch"></a>Konvertieren von **if**-Konstrukt in **switch**
+### <a name="convert-if-construct-to-switch"></a>Konvertieren von if-Konstrukten in switch-Konstrukte
 
 Mit dieser schnellen Aktionen können Sie ein **if-then-else**-Konstrukt in ein **switch**-Konstrukt konvertieren.
 
@@ -741,7 +737,7 @@ int fibonacci(int n)
 }
 ```
 
-### <a name="convert-referenceequals-to-is-null"></a>Konvertieren von `ReferenceEquals` in `is null`
+### <a name="convert-referenceequals-to-is-null"></a>Konvertieren von „ReferenceEquals“ in „IS NULL“
 
 |  Diagnose-ID | Anzuwendende Sprachen |  Unterstützte Version |
 | ------- | -------------------- | ----------------  |
@@ -959,4 +955,4 @@ Console.WriteLine($"{x} {y}");
 
 ## <a name="see-also"></a>Siehe auch
 
-[Schnelle Aktionen](../ide/quick-actions.md)  
+[Schnelle Aktionen](../ide/quick-actions.md)

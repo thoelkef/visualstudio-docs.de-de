@@ -2,21 +2,23 @@
 title: Analysieren der Speicherauslastung in Visual Studio | Microsoft-Dokumentation
 ms.custom: H1Hack27Feb2017
 ms.date: 04/25/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: ''
 ms.topic: article
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: d6fc25c3a9d7306332c704453f22073df4e76546
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+ms.workload:
+- multiple
+ms.openlocfilehash: 38f4457146f8373ad0e4ce3a5477c98a43424538
+ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="profile-memory-usage-in-visual-studio"></a>Profilerstellung zur Speicherauslastung in Visual Studio
 Suchen Sie Speicherverluste und ineffiziente Arbeitsspeichernutzung während des Debuggens mit dem im Debugger integrierten **Speicherauslastungs**-Diagnosetool. Mit dem Speicherauslastungstool können Sie einen oder mehrere *Momentaufnahmen* des verwalteten und nativen Momentaufnahme-Heaps erstellen, um ein besseres Verständnis darüber zu erlangen, welchen Einfluss die Speicherauslastung von Objekttypen hat. Sie können Momentaufnahmen von .NET-Apps, systemeigenen Apps und Apps in gemischtem Modus (.Net und systemeigen) erfassen.  
@@ -33,6 +35,12 @@ Suchen Sie Speicherverluste und ineffiziente Arbeitsspeichernutzung während des
 >  **Unterstützung für benutzerdefinierte Zuweisungen** Die systemeigene Speicherprofilerstellung funktioniert dadurch, dass speicherbelegungsbezogene [ETW-](/windows-hardware/drivers/devtest/event-tracing-for-windows--etw-) -Ereignisdaten gesammelt werden, die während der Laufzeit ausgegeben wurden.  Zuweisungen im CRT und Windows SDK wurden auf Quellebene kommentiert, sodass ihre Speicherbelegungsdaten erfasst werden können.  Wenn Sie Ihre eigenen Zuweisungen schreiben, kann jede Funktion, die einen Zeiger auf neu zugewiesenen Heapspeicher zurückgibt, mit [__declspec](/cpp/cpp/declspec)(allocator) ergänzt werden, wie in diesem Beispiel für myMalloc zu sehen ist:  
 >   
 >  `__declspec(allocator) void* myMalloc(size_t size)` 
+
+In diesem Tutorial werden Sie Folgendes durchführen:
+
+> [!div class="checklist"]
+> * Erstellen von Momentaufnahmen des Speichers
+> * Analysieren der Speicherauslastungsdaten
 
 ## <a name="collect-memory-usage-data"></a>Sammeln von Speicherauslastungsdaten
 
@@ -165,6 +173,9 @@ Um die Speicherauslastung zu analysieren, klicken Sie auf einen der Links. Ein d
   
  [Visual C++ Blog: Memory Profiling in Visual C++ 2015 (Visual C++-Blog: Profilerstellung für den Arbeitsspeicher in Visual C++ 2015)](https://blogs.msdn.microsoft.com/vcblog/2015/10/21/memory-profiling-in-visual-c-2015/)  
 
-## <a name="see-also"></a>Siehe auch
- [Profilerstellung in Visual Studio](../profiling/index.md)  
- [Tour zur Profilerstellungsfunktion](../profiling/profiling-feature-tour.md)
+## <a name="next-steps"></a>Nächste Schritte
+
+In diesem Tutorial haben Sie gelernt, wie Speicherauslastungsdaten gesammelt und analysiert werden. Wenn Sie die [tour of the profiler (Einführung zum Profilerstellungsfeature)](../profiling/profiling-feature-tour.md) bereits abgeschlossen haben, sollten Sie sich einen Überblick darüber verschaffen, wie die CPU-Nutzung in Ihren Apps analysiert werden kann.
+
+> [!div class="nextstepaction"]
+> [Analysieren der CPU-Auslastung](../profiling/beginners-guide-to-performance-profiling.md) 

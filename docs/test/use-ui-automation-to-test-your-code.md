@@ -17,11 +17,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 992bd55fdc83757f9edacb00f31580f7efaab8cb
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 4424db170240714ad3a74c84107e7a794a9dad54
+ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Verwenden von Benutzeroberflächenautomatisierung zum Testen des Codes 
 
@@ -45,26 +45,29 @@ Weitere Informationen dazu, welche Plattformen und Konfigurationen von den Tests
 
 ## <a name="create-coded-ui-tests"></a>Erstellen von Tests der programmierten UI
 
+1. Installieren Sie die Komponente **Test der programmierten UI**.
+
+   Falls noch nicht geschehen, installieren Sie die Komponente **Test der programmierten UI** von Visual Studio. Starten Sie den **Visual Studio-Installer**, indem Sie **Tools** > **Tools und Features abrufen** wählen. Wählen Sie im **Visual Studio-Installer** die Registerkarte **Einzelne Komponenten** aus, und scrollen Sie nach unten zum Abschnitt **Debuggen und Testen**. Wählen Sie die Komponente **Test der programmierten UI** aus, und klicken Sie dann auf **Ändern**.
+
+   ![Komponente „Test der programmierten UI“](media/coded-ui-test-component.png)
+
 1. Erstellen Sie ein Testprojekt der programmierten UI.
 
-   Tests der programmierten UI müssen in ein Testprojekt für programmierte UI integriert sein. Erstellen Sie ein Testprojekt der programmierten UI (sofern noch nicht vorhanden). Klicken Sie im **Projektmappen-Explorer** im Kontextmenü der Projektmappe auf **Hinzufügen** > **Neues Projekt**, und wählen Sie anschließend entweder **Visual Basic** oder **Visual C#** aus. Wählen Sie dann **Test** > **Test der programmierten UI** aus.
+   Tests der programmierten UI müssen in ein Testprojekt für programmierte UI integriert sein. Erstellen Sie ein Testprojekt der programmierten UI (sofern noch nicht vorhanden). Wählen Sie **Datei** > **Neu** > **Projekt** aus, um das Dialogfeld **Neues Projekt** zu öffnen. Erweitern Sie im Kategoriebereich auf der linken Seite **Installiert** > **Visual Basic** *oder* **Visual C#**  >  **Test**. Wählen Sie die Vorlage **Testprojekt für programmierte UI** aus, und klicken Sie dann auf **OK**.
 
-   > [!TIP]
-   > Wenn Sie die Projektvorlagen für **Tests der programmierten UI** nicht finden, verwenden Sie möglicherweise eine Version von Visual Studio, die Tests der programmierten UI nicht unterstützt. Zum Erstellen von Tests der programmierten UI müssen Sie Visual Studio Enterprise Edition verwenden.
+   ![Vorlage „Testprojekt für programmierte UI“ im Dialogfeld „Neues Projekt“](media/coded-ui-test-project-template.png)
 
 2. Fügen Sie eine Testdatei der programmierten UI hinzu.
 
-     Wenn Sie gerade ein Testprojekt für codierte UI erstellt haben, wird die erste CUIT-Datei automatisch hinzugefügt. Öffnen Sie zum Hinzufügen einer weiteren Testdatei das Kontextmenü im Testprojekt für programmierte UI, zeigen Sie auf **Hinzufügen**, und wählen Sie dann **Test der programmierten UI** aus.
-
-     ![Test der programmierten UI erstellen](../test/media/codedui_create.png "CodedUI_Create")
+     Wenn Sie gerade ein Testprojekt für codierte UI erstellt haben, wird die erste CUIT-Datei automatisch hinzugefügt. Öffnen Sie zum Hinzufügen einer weiteren Testdatei das Kontextmenü im **Projektmappen-Explorer** im Testprojekt für programmierte UI, und wählen Sie dann **Hinzufügen** > **Test der programmierten UI** aus.
 
      Wählen Sie im Dialogfeld **Code für den Test der programmierten UI generieren** die Option **Aktionen aufzeichnen, UI-Zuordnung bearbeiten oder Assertionen hinzufügen** aus.
 
-     ![„Aktionen aufzeichnen“ auswählen](../test/media/codedui_codegendialogb.png "CodedUI_CodeGenDialogB")
+     ![Dialogfeld „Code für den Test der programmierten UI generieren“](media/generate-code-for-coded-ui-test.png)
 
-     Der Test-Generator der programmierten UI wird angezeigt und Visual Studio wird minimiert.
+     Der Test-Generator für programmierte UI wird angezeigt.
 
-     ![Generator für Tests der programmierten UI](../test/media/codedui_testbuilder.png "CodedUI_TestBuilder")
+     ![Test-Generator der programmierten UI](../test/media/codedui_testbuilder.png)
 
 3. Zeichnen Sie eine Sequenz von Aktionen auf.
 
@@ -168,7 +171,7 @@ Wenn Sie alle Assertionen für den Test hinzugefügt haben, wählen Sie **OK** a
 
 Wählen Sie **Code generieren** aus, um den Code für die Assertionen zu generieren und der UI-Zuordnung das Steuerelement hinzuzufügen. Geben Sie einen Namen und eine Beschreibung für die Testmethode der programmierten UI ein, die als Kommentare für die Methode hinzugefügt werden. Wählen Sie **Hinzufügen und generieren** aus. Wählen Sie danach zum Schließen des **Generators für Tests der programmierten UI** das Symbol **Schließen** aus. Auf diese Weise wird Code generiert, der dem folgenden ähnelt. Lautet der eingegebene Name beispielsweise `AssertForAddTwoNumbers`, sieht der Code wie in diesem Beispiel aus:
 
--   Fügt der Testmethode in der Testdatei für codierte UI einen Aufruf der Assert-Methode AssertForAddTwoNumbers hinzu:
+- Fügt der Testmethode in der Testdatei für codierte UI einen Aufruf der Assert-Methode AssertForAddTwoNumbers hinzu:
 
     ```csharp
     [TestMethod]
@@ -181,7 +184,7 @@ Wählen Sie **Code generieren** aus, um den Code für die Assertionen zu generie
 
      Sie können diese Datei bearbeiten, um die Reihenfolge der Schritte und Assertionen zu ändern oder neue Testmethoden zu erstellen. Wenn Sie weiteren Code hinzufügen möchten, platzieren Sie den Cursor auf der Testmethode, und wählen Sie im Kontextmenü **Code für den Test der programmierten UI generieren** aus.
 
--   Fügt der UI-Zuordnung (UIMap.uitest) eine Methode mit dem Namen `AssertForAddTwoNumbers` hinzu. Diese Datei wird im Editor für Tests der programmierten UI geöffnet, in dem Sie die Assertionen bearbeiten können.
+- Fügt der UI-Zuordnung (UIMap.uitest) eine Methode mit dem Namen `AssertForAddTwoNumbers` hinzu. Diese Datei wird im Editor für Tests der programmierten UI geöffnet, in dem Sie die Assertionen bearbeiten können.
 
      ![Assert mithilfe des Editors für Tests der programmierten UI bearbeiten](../test/media/cuit_editor_assert.png "CUIT_Editor_assert")
 
@@ -226,7 +229,7 @@ Nach dem Generieren der Testmethode wird der Datei "UIMap.Desinger.cs" ähnliche
 Mouse.Hover(uIItem1Text, new Point(87, 9));
 ```
 
-#### <a name="configuring-mouse-hover-keyboard-assignments"></a>Konfigurieren der Tastenbelegung für Mauszeigerbewegungen
+#### <a name="configure-mouse-hover-keyboard-assignments"></a>Konfigurieren der Tastenbelegungen für Mauszeigerbewegungen
 
 Vorgehensweise, wenn die Tastenbelegung für das Erfassen von Mauszeiger-Bewegungsereignissen in Ihrer Umgebung an anderer Stelle verwendet wird:
 
@@ -269,35 +272,35 @@ Auf vielen Websites wird ein Steuerelement erweitert, wenn Sie auf es zeigen, un
 
 Nachdem Sie den Test der programmierten UI erstellt haben, können Sie diesen mithilfe eines der folgenden Tools in Visual Studio bearbeiten:
 
--   **Generator für Tests der programmierten UI:** Mithilfe des Generators für den Test der programmierten UI können Sie Ihren Tests zusätzliche Steuerelemente und Überprüfungen hinzufügen. Weitere Informationen finden Sie in diesem Thema im Abschnitt [Hinzufügen von Steuerelementen und Überprüfen ihrer Eigenschaften](#VerifyingCodeUsingCUITGenerateAssertions).
+- **Generator für Tests der programmierten UI:** Mithilfe des Generators für den Test der programmierten UI können Sie Ihren Tests zusätzliche Steuerelemente und Überprüfungen hinzufügen. Weitere Informationen finden Sie in diesem Thema im Abschnitt [Hinzufügen von Steuerelementen und Überprüfen ihrer Eigenschaften](#VerifyingCodeUsingCUITGenerateAssertions).
 
--   **Editor für Tests der programmierten UI:** Mit dem Editor für Tests der programmierten UI können Sie Tests der programmierten UI mühelos ändern. Der Editor für Tests der programmierten UI ermöglicht das Suchen, Anzeigen und Bearbeiten der Testmethoden. Sie können auch UI-Aktionen und die zugehörigen Steuerelemente in der UI-Steuerelementzuordnung bearbeiten. Weitere Informationen finden Sie unter [Editing Coded UI Tests Using the Coded UI Test Editor (Bearbeiten von Tests der programmierten UI mit dem Editor für Tests der programmierten UI)](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).
+- **Editor für Tests der programmierten UI:** Mit dem Editor für Tests der programmierten UI können Sie Tests der programmierten UI mühelos ändern. Der Editor für Tests der programmierten UI ermöglicht das Suchen, Anzeigen und Bearbeiten der Testmethoden. Sie können auch UI-Aktionen und die zugehörigen Steuerelemente in der UI-Steuerelementzuordnung bearbeiten. Weitere Informationen finden Sie unter [Editing Coded UI Tests Using the Coded UI Test Editor (Bearbeiten von Tests der programmierten UI mit dem Editor für Tests der programmierten UI)](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).
 
--   **Code-Editor:**
+- **Code-Editor:**
 
-    -   Fügen Sie manuell Code für die Steuerelemente im Test hinzu, wie im Abschnitt [Programmieren von UI-Steuerelement-Aktionen und -Eigenschaften](#VerifyingCodeCUITActionsandProperties) in diesem Thema beschrieben.
+    - Fügen Sie manuell Code für die Steuerelemente im Test hinzu, wie im Abschnitt [Programmieren von UI-Steuerelement-Aktionen und -Eigenschaften](#VerifyingCodeCUITActionsandProperties) in diesem Thema beschrieben.
 
-    -   Nachdem Sie einen Test der programmierten UI erstellt haben, können Sie ihn in einen datengesteuerten Test ändern. Weitere Informationen finden Sie unter [Creating a Data-Driven Coded UI Test (Erstellen eines datengesteuerten Tests der programmierten UI)](../test/creating-a-data-driven-coded-ui-test.md).
+    - Nachdem Sie einen Test der programmierten UI erstellt haben, können Sie ihn in einen datengesteuerten Test ändern. Weitere Informationen finden Sie unter [Creating a Data-Driven Coded UI Test (Erstellen eines datengesteuerten Tests der programmierten UI)](../test/creating-a-data-driven-coded-ui-test.md).
 
-    -   Sie können bei der Wiedergabe eines Tests der programmierten UI festlegen, dass bei einem Test auf bestimmte Ereignisse gewartet werden soll, z. B. auf das Anzeigen eines Fensters, das Ausblenden einer Statusanzeige usw. Fügen Sie hierzu die entsprechende UITestControl.WaitForControlXXX()-Methode hinzu. Eine vollständige Liste der verfügbaren Methoden finden Sie unter [Making Coded UI Tests Wait For Specific Events During Playback (Festlegen, dass Tests der programmierten UI bei der Wiedergabe auf bestimmte Ereignisse warten)](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md). Ein Beispiel für einen Test der programmierten UI, der durch die Verwendung der Methode WaitForControlEnabled auf die Aktivierung eines Steuerelements wartet, finden Sie unter [Walkthrough: Creating, Editing and Maintaining a Coded UI Test (Exemplarische Vorgehensweise: Erstellen, Bearbeiten und Verwalten von Tests der programmierten UI)](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).
+    - Sie können bei der Wiedergabe eines Tests der programmierten UI festlegen, dass bei einem Test auf bestimmte Ereignisse gewartet werden soll, z. B. auf das Anzeigen eines Fensters, das Ausblenden einer Statusanzeige usw. Fügen Sie hierzu die entsprechende UITestControl.WaitForControlXXX()-Methode hinzu. Eine vollständige Liste der verfügbaren Methoden finden Sie unter [Making Coded UI Tests Wait For Specific Events During Playback (Festlegen, dass Tests der programmierten UI bei der Wiedergabe auf bestimmte Ereignisse warten)](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md). Ein Beispiel für einen Test der programmierten UI, der durch die Verwendung der Methode WaitForControlEnabled auf die Aktivierung eines Steuerelements wartet, finden Sie unter [Walkthrough: Creating, Editing and Maintaining a Coded UI Test (Exemplarische Vorgehensweise: Erstellen, Bearbeiten und Verwalten von Tests der programmierten UI)](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).
 
-    -   Bei Tests der programmierten UI werden einige HTML5-Steuerelemente unterstützt, die in Internet Explorer 9 und in Internet Explorer 10 enthalten sind. Weitere Informationen finden Sie unter [Using HTML5 Controls in Coded UI Tests (Verwenden von HTML5-Steuerelementen in Tests der programmierten UI)](../test/using-html5-controls-in-coded-ui-tests.md).
+    - Bei Tests der programmierten UI werden einige HTML5-Steuerelemente unterstützt, die in Internet Explorer 9 und in Internet Explorer 10 enthalten sind. Weitere Informationen finden Sie unter [Using HTML5 Controls in Coded UI Tests (Verwenden von HTML5-Steuerelementen in Tests der programmierten UI)](../test/using-html5-controls-in-coded-ui-tests.md).
 
-    -   **Codierungsleitfaden für Tests der programmierten UI:**
+    - Codierungsleitfaden für Tests der programmierten UI:
 
-        -   [Aufbau eines Tests der programmierten UI](../test/anatomy-of-a-coded-ui-test.md)
+       - [Aufbau eines Tests der programmierten UI](../test/anatomy-of-a-coded-ui-test.md)
 
-        -   [Empfohlene Vorgehensweisen für Tests der programmierten UI](../test/best-practices-for-coded-ui-tests.md)
+       - [Empfohlene Vorgehensweisen für Tests der programmierten UI](../test/best-practices-for-coded-ui-tests.md)
 
-        -   [Testen einer großen Anwendung mit mehreren UI-Zuordnungen](../test/testing-a-large-application-with-multiple-ui-maps.md)
+       - [Testen einer großen Anwendung mit mehreren UI-Zuordnungen](../test/testing-a-large-application-with-multiple-ui-maps.md)
 
-        -   [Unterstützte Konfigurationen und Plattformen für Tests der programmierten UI und Aktionsaufzeichnungen](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+       - [Unterstützte Konfigurationen und Plattformen für Tests der programmierten UI und Aktionsaufzeichnungen](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
 
 ### <a name="the-generated-code"></a>Der generierte Code
 
 Wenn Sie **Code generieren** auswählen, werden mehrere Codeelemente erstellt:
 
--   **Eine Zeile in der Testmethode.**
+- **Eine Zeile in der Testmethode.**
 
     ```csharp
     [CodedUITest]
@@ -316,7 +319,7 @@ Wenn Sie **Code generieren** auswählen, werden mehrere Codeelemente erstellt:
 
      Außerdem können Sie neue Testmethoden und auf die gleiche Weise auch Code hinzufügen. Jede Testmethode muss das `[TestMethod]`-Attribut aufweisen.
 
--   **Eine Methode in „UIMap.uitest“**
+- **Eine Methode in „UIMap.uitest“**
 
      Diese Methode enthält die Details der aufgezeichneten Aktionen oder den überprüften Wert. Sie können diesen Code bearbeiten, indem Sie "UIMap.uitest" öffnen. Die Datei wird in einem spezialisierten Editor geöffnet, in dem Sie die aufgezeichneten Aktionen löschen oder umgestalten können.
 
@@ -335,9 +338,9 @@ Wenn Sie **Code generieren** auswählen, werden mehrere Codeelemente erstellt:
     ```
 
     > [!WARNING]
-    >Sie sollten diese Datei nicht bearbeiten, da sie beim Erstellen weiterer Tests neu generiert wird.
+    > Sie sollten diese Datei nicht bearbeiten, da sie beim Erstellen weiterer Tests neu generiert wird.
 
-     Sie können angepasste Versionen dieser Methoden erstellen, indem Sie sie in "UIMap.cs" kopieren. Beispielsweise können Sie eine parametrisierte Version erstellen, die Sie über eine Testmethode aufrufen können:
+     Sie können angepasste Versionen dieser Methoden erstellen, indem Sie sie in *UIMap.cs* kopieren. Beispielsweise können Sie eine parametrisierte Version erstellen, die Sie über eine Testmethode aufrufen können:
 
     ```csharp
     // File: UIMap.cs
@@ -352,33 +355,33 @@ Wenn Sie **Code generieren** auswählen, werden mehrere Codeelemente erstellt:
     }
     ```
 
--   **Deklarationen in „UIMap.uitest“**
+- **Deklarationen in „UIMap.uitest“**
 
-     Diese Deklarationen stellen die UI-Steuerelemente der Anwendung dar, die von dem Test verwendet werden. Sie werden durch den generierten Code verwendet, um die Steuerelemente zu verarbeiten und auf deren Eigenschaften zuzugreifen.
+    Diese Deklarationen stellen die UI-Steuerelemente der Anwendung dar, die von dem Test verwendet werden. Sie werden durch den generierten Code verwendet, um die Steuerelemente zu verarbeiten und auf deren Eigenschaften zuzugreifen.
 
-     Sie können sie auch verwenden, um eigenen Code zu schreiben. Geben Sie beispielsweise an, dass die Testmethode einen Link in einer Webanwendung auswählen, einen Wert in ein Textfeld eingeben oder eine Verzweigung erzeugen und basierend auf dem Wert eines Felds andere Testaktionen ausführen soll.
+    Sie können sie auch verwenden, um eigenen Code zu schreiben. Geben Sie beispielsweise an, dass die Testmethode einen Link in einer Webanwendung auswählen, einen Wert in ein Textfeld eingeben oder eine Verzweigung erzeugen und basierend auf dem Wert eines Felds andere Testaktionen ausführen soll.
 
-     Sie können mehrere Tests der programmierten UI und mehrere UI-Zuordnungsobjekte und -dateien hinzufügen, um das Testen einer großen Anwendung zu vereinfachen. Weitere Informationen finden Sie unter [Testing a Large Application with Multiple UI Maps (Testen einer großen Anwendung mit mehreren UI-Zuordnungen)](../test/testing-a-large-application-with-multiple-ui-maps.md).
+    Sie können mehrere Tests der programmierten UI und mehrere UI-Zuordnungsobjekte und -dateien hinzufügen, um das Testen einer großen Anwendung zu vereinfachen. Weitere Informationen finden Sie unter [Testing a Large Application with Multiple UI Maps (Testen einer großen Anwendung mit mehreren UI-Zuordnungen)](../test/testing-a-large-application-with-multiple-ui-maps.md).
 
- Weitere Informationen über den generierten Code finden Sie unter [Anatomy of a Coded UI Test (Aufbau eines Tests der programmierten UI)](../test/anatomy-of-a-coded-ui-test.md).
+Weitere Informationen über den generierten Code finden Sie unter [Anatomy of a Coded UI Test (Aufbau eines Tests der programmierten UI)](../test/anatomy-of-a-coded-ui-test.md).
 
 ### <a name="code-ui-control-actions-and-properties"></a>Codieren von Aktionen und Eigenschaften für Steuerelemente der Benutzeroberfläche
 
 Wenn Sie mit UI-Steuerelementen in Tests der programmierten UI arbeiten, sind diese in zwei Bereiche getrennt: Aktionen und Eigenschaften.
 
--   Der erste Bereich besteht aus Aktionen, die Sie für UI-Steuerelemente ausführen können. So können Tests der codierten UI beispielsweise Mausklicks auf ein UI-Teststeuerelement oder Tasteneingaben auf der Tastatur simulieren, die sich auf ein UI-Teststeuerelement auswirken.
+- Der erste Bereich besteht aus Aktionen, die Sie für UI-Steuerelemente ausführen können. So können Tests der codierten UI beispielsweise Mausklicks auf ein UI-Teststeuerelement oder Tasteneingaben auf der Tastatur simulieren, die sich auf ein UI-Teststeuerelement auswirken.
 
--   Im zweiten Bereich wird es Ihnen ermöglicht, Eigenschaften aus einem UI-Teststeuerelement abzurufen und für dieses festzulegen. Zum Beispiel kann bei Tests der codierten UI die Anzahl der Elemente in einem `ListBox` abgerufen oder ein `CheckBox` für den ausgewählten Zustand aktiviert werden.
+- Im zweiten Bereich wird es Ihnen ermöglicht, Eigenschaften aus einem UI-Teststeuerelement abzurufen und für dieses festzulegen. Zum Beispiel kann bei Tests der codierten UI die Anzahl der Elemente in einem `ListBox` abgerufen oder ein `CheckBox` für den ausgewählten Zustand aktiviert werden.
 
 **Zugreifen auf Aktionen von UI-Teststeuerelementen**
 
 Verwenden Sie zum Ausführen von Aktionen für UI-Teststeuerelemente, z. B. Mausklicks oder Tastaturaktionen, die Methoden in der <xref:Microsoft.VisualStudio.TestTools.UITesting.Mouse>-Klasse und in der <xref:Microsoft.VisualStudio.TestTools.UITesting.Keyboard>-Klasse:
 
--   Um eine mausorientierte Aktion, z. B. einen Mausklick, für ein UI-Teststeuerelement auszuführen, verwenden Sie <xref:Microsoft.VisualStudio.TestTools.UITesting.Mouse.Click%2A>.
+- Um eine mausorientierte Aktion, z. B. einen Mausklick, für ein UI-Teststeuerelement auszuführen, verwenden Sie <xref:Microsoft.VisualStudio.TestTools.UITesting.Mouse.Click%2A>.
 
      `Mouse.Click(buttonCancel);`
 
--   Um eine tastaturorientierte Aktion, z. B. die Eingabe in ein Bearbeitungssteuerelement über die Tastatur, auszuführen, verwenden Sie <xref:Microsoft.VisualStudio.TestTools.UITesting.Keyboard.SendKeys%2A>.
+- Um eine tastaturorientierte Aktion, z. B. die Eingabe in ein Bearbeitungssteuerelement über die Tastatur, auszuführen, verwenden Sie <xref:Microsoft.VisualStudio.TestTools.UITesting.Keyboard.SendKeys%2A>.
 
      `Keyboard.SendKeys(textBoxDestination, @"C:\Temp\Output.txt");`
 
@@ -390,7 +393,7 @@ Um für UI-Steuerelemente bestimmte Eigenschaftswerte abzurufen und festzulegen,
 
 #### <a name="to-get-or-set-properties-from-ui-test-controls-directly"></a>So rufen Sie Eigenschaften von UI-Teststeuerelementen ab oder legen sie fest
 
-Mit Steuerelementen, die von T:Microsoft.VisualStudio.TestTools.UITesting.UITestControl abgeleitet werden, z. B. T:Microsoft.VisualStudio.TestTools.UITesting.HtmlControls.HtmlList oder T:Microsoft.VisualStudio.TestTools.UITesting.WinControls.WinComboBox, können Sie deren Eigenschaftswerte direkt wie folgt abrufen oder festlegen:
+Mit Steuerelementen, die von <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl> abgeleitet werden (z.B. [HtmlList](https://msdn.microsoft.com/library/microsoft.visualstudio.testtools.uitesting.htmlcontrols.htmllist.aspx) oder [WinComboBox](https://msdn.microsoft.com/library/microsoft.visualstudio.testtools.uitesting.wincontrols.wincombobox.aspx)), können Sie die jeweiligen Eigenschaftswerte direkt abrufen oder festlegen. Der folgende Code zeigt einige Beispiele:
 
  ```csharp
  int i = myHtmlList.ItemCount;
@@ -399,11 +402,11 @@ Mit Steuerelementen, die von T:Microsoft.VisualStudio.TestTools.UITesting.UITest
 
 #### <a name="to-get-properties-from-ui-test-controls"></a>So rufen Sie Eigenschaften aus UI-Teststeuerelementen ab
 
--   Um einen Eigenschaftswert von einem Steuerelement abzurufen, verwenden Sie <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.GetProperty%2A>.
+- Um einen Eigenschaftswert von einem Steuerelement abzurufen, verwenden Sie <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.GetProperty%2A>.
 
--   Um die Eigenschaft des abzurufenden Steuerelements anzugeben, verwenden Sie die entsprechende Zeichenfolge aus der `PropertyNames`-Klasse in jedem Steuerelement als Parameter für <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.GetProperty%2A>.
+- Um die Eigenschaft des abzurufenden Steuerelements anzugeben, verwenden Sie die entsprechende Zeichenfolge aus der `PropertyNames`-Klasse in jedem Steuerelement als Parameter für <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.GetProperty%2A>.
 
--   <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.GetProperty%2A> gibt den entsprechenden Datentyp zurück, aber dieser Rückgabewert wird in ein <xref:System.Object> umgewandelt. Das zurückgegebene <xref:System.Object> muss dann in den entsprechenden Typ umgewandelt werden.
+- <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.GetProperty%2A> gibt den entsprechenden Datentyp zurück, aber dieser Rückgabewert wird in ein <xref:System.Object> umgewandelt. Das zurückgegebene <xref:System.Object> muss dann in den entsprechenden Typ umgewandelt werden.
 
      Beispiel:
 
@@ -411,9 +414,9 @@ Mit Steuerelementen, die von T:Microsoft.VisualStudio.TestTools.UITesting.UITest
 
 #### <a name="to-set-properties-for-ui-test-controls"></a>So legen Sie Eigenschaften für UI-Teststeuerelemente fest
 
--   Zum Festlegen einer Eigenschaft in einem Steuerelement verwenden Sie <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.SetProperty%2A>.
+- Zum Festlegen einer Eigenschaft in einem Steuerelement verwenden Sie <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.SetProperty%2A>.
 
--   Um die Eigenschaft des festzulegenden Steuerelements anzugeben, verwenden Sie die entsprechende Zeichenfolge aus der `PropertyNames`-Klasse als ersten Parameter für <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.SetProperty%2A>, wobei der Eigenschaftswert als zweiter Parameter fungiert.
+- Um die Eigenschaft des festzulegenden Steuerelements anzugeben, verwenden Sie die entsprechende Zeichenfolge aus der `PropertyNames`-Klasse als ersten Parameter für <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.SetProperty%2A>, wobei der Eigenschaftswert als zweiter Parameter fungiert.
 
      Beispiel:
 
@@ -427,17 +430,17 @@ Sie können Tests der programmierten UI mithilfe von Testprotokollen der program
 
 **Weitere Optionen zum Ausführen von Tests der programmierten UI:** Sie können Tests der programmierten UI direkt in Visual Studio ausführen, wie weiter oben in diesem Thema beschrieben. Zusätzlich können Sie automatisierte UI-Tests über den Microsoft Test Manager oder aus einem Team Foundation-Build ausführen. Wenn Tests der programmierten UI automatisiert werden, müssen sie im Gegensatz zu anderen automatisierten Tests bei der Ausführung mit dem Desktop interagieren.
 
--   [Ausführen von Komponententests mit dem Test-Explorer](../test/run-unit-tests-with-test-explorer.md)
+- [Ausführen von Komponententests mit dem Test-Explorer](../test/run-unit-tests-with-test-explorer.md)
 
--   [Run tests in your build process (Ausführen von Tests im Buildprozess)](/vsts/build-release/test/getting-started-with-continuous-testing)
+- [Run tests in your build process (Ausführen von Tests im Buildprozess)](/vsts/build-release/test/getting-started-with-continuous-testing)
 
--   [Gewusst wie: Einrichten Ihres Test-Agents für mit dem Desktopcomputer interagierende Ausführungstests](http://msdn.microsoft.com/Library/3a94dd07-6d17-402c-ae8f-7947143755c9)
+- [Gewusst wie: Einrichten Ihres Test-Agents für mit dem Desktopcomputer interagierende Ausführungstests](http://msdn.microsoft.com/Library/3a94dd07-6d17-402c-ae8f-7947143755c9)
 
 **Hinzufügen der Unterstützung für benutzerdefinierte Steuerelemente:** Das Framework für den Test der programmierten UI unterstützt nicht alle Benutzeroberflächen und bietet möglicherweise keine Unterstützung für die Benutzeroberfläche, die Sie testen möchten. Zum Beispiel können Sie nicht sofort einen Test der programmierten UI für Microsoft Excel erstellen. Sie können jedoch eine Erweiterung für das Framework für den Test der programmierten UI erstellen, die ein benutzerdefiniertes Steuerelement unterstützt.
 
--   [Aktivieren von Tests der programmierten UI Ihrer Steuerelemente](../test/enable-coded-ui-testing-of-your-controls.md)
+- [Aktivieren von Tests der programmierten UI Ihrer Steuerelemente](../test/enable-coded-ui-testing-of-your-controls.md)
 
--   [Erweitern von Tests der codierten UI-Tests und Aktionsaufzeichnungen zur Unterstützung von Microsoft Excel](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)
+- [Erweitern von Tests der codierten UI-Tests und Aktionsaufzeichnungen zur Unterstützung von Microsoft Excel](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)
 
 Tests der programmierten UI werden häufig verwendet, um manuelle Tests zu automatisieren. Weitere Informationen zu manuellen Tests finden Sie unter [Run manual tests with Microsoft Test Manager (Ausführen manueller Tests mit Microsoft Test Manager)](/vsts/manual-test/mtm/run-manual-tests-with-microsoft-test-manager). Weitere Informationen zu automatisierten Tests finden Sie unter [Testtools in Visual Studio](../test/improve-code-quality.md).
 

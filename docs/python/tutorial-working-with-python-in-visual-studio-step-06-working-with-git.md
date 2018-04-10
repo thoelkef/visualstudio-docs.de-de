@@ -1,15 +1,15 @@
 ---
-title: 'Arbeiten mit Python in Visual Studio, Schritt 6: Arbeiten mit Git | Microsoft-Dokumentation'
-description: "Dies ist Schritt 6 eines zentralen Tutorials für die Arbeit mit Python in Visual Studio, in dem die Git-bezogenen Features von Visual Studio erläutert werden."
-ms.custom: 
+title: 'Arbeiten mit Python, Schritt 6: Arbeiten mit Git | Microsoft-Dokumentation'
+description: Dies ist Schritt 6 eines zentralen Tutorials für die Arbeit mit Python in Visual Studio, in dem die Git-bezogenen Features von Visual Studio erläutert werden.
+ms.custom: mvc
 ms.date: 01/16/2018
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
@@ -17,41 +17,51 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ef143862c56f07edc844874bbf71cd916ac9eabc
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: ec8534e7fd3121510a05e201e8bdea2e9a7fce1c
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="step-6-working-with-git"></a>Schritt 6: Arbeiten mit Git
 
 **Vorheriger Schritt: [Installieren von Paketen und Verwalten Ihrer Python-Umgebung](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)**
 
-Visual Studio bietet die direkte Integration mit lokalen Git-Repositorys und solchen, die sich in Diensten wie GitHub und Visual Studio Team Services befinden. Die Integration umfasst das Klonen eines Repositorys, das Übernehmen von Änderungen und das Verwalten von Branches.
+Visual Studio bietet die direkte Integration mit lokalen Git-Repositorys und Remote-Git-Repositorys in Diensten wie GitHub und Visual Studio Team Services. Die Integration umfasst das Klonen eines Repositorys, das Übernehmen von Änderungen und das Verwalten von Branches.
 
-In diesem Artikel wird das Erstellen eines lokalen Git-Repositorys für ein vorhandenes Projekt beschrieben. Eine exemplarische Vorgehensweise für das Erstellen eines Projekts über ein Git-Remoterepository finden Sie unter [Quickstart: clone a repository of Python code in Visual Studio (Schnellstart: Klonen eines Repositorys mit Python-Code in Visual Studio)](quickstart-03-python-in-visual-studio-project-from-repository.md).
+In diesem Artikel erhalten Sie einen allgemeinen Überblick über das Erstellen lokaler Git-Repositorys für ein vorhandenes Projekt und über einige Visual Studio-Features, die mit Git in Verbindung stehen.
 
-1. Klicken Sie mit der rechten Maustaste auf die Projektmappe, und klicken Sie dann auf **Projektmappe zur Quellcodeverwaltung hinzufügen**, wenn ein Projekt (z.B. das Projekt aus dem [vorherigen Schritt](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)) in Visual Studio geöffnet ist. Visual Studio erstellt ein lokales Git-Repository, das Ihren Projektcode enthält und Git-bezogene Steuerelemente anzeigt, die ebenfalls am unteren Rand des Visual Studio-Fensters angezeigt werden. Die Steuerelemente zeigen ausstehende Commits, Änderungen, den Namen des Repositorys und den Branch an. Zeigen Sie auf die Steuerelemente, um zusätzliche Informationen anzuzeigen.
+1. Klicken Sie mit der rechten Maustaste auf die Projektmappe, und klicken Sie dann auf **Projektmappe zur Quellcodeverwaltung hinzufügen**, wenn ein Projekt (z.B. das Projekt aus dem [vorherigen Schritt](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)) in Visual Studio geöffnet ist. Visual Studio erstelle ein lokales Git-Repository, das Ihren Projektcode enthält.
 
-  ![Zusätzliche Informationen, die angezeigt werden, wenn auf ein Git-Steuerelement im Visual Studio-Fenster gezeigt wird](media/working-with-git-01.png)
+1. Wenn Visual Studio erkennt, dass ein Projekt in einem Git-Repository verwaltet wird, erscheinen am unteren rechten Rand des Visual Studio-Fensters Steuerelemente, die auf Git bezogen sind. Die Steuerelemente zeigen ausstehende Commits, Änderungen, den Namen des Repositorys und den Branch an. Zeigen Sie auf die Steuerelemente, um zusätzliche Informationen anzuzeigen.
 
-1. Das **Team Explorer**-Fenster wird mit verschiedenen verfügbaren Git-Optionen angezeigt, indem Sie auf den Header des Repositorys klicken. Der **Sync**-Bereich, der angezeigt wird, wenn Sie auf den Header **Push** klicken, bietet Optionen für das Veröffentlichen auf einem Remoterepository.
+    ![Zusätzliche Informationen, die angezeigt werden, wenn auf ein Git-Steuerelement im Visual Studio-Fenster gezeigt wird](media/working-with-git-01.png)
 
-  ![Team Explorer in Visual Studio, nachdem ein lokales Repository erstellt wurde](media/working-with-git-02.png)
+1. Wenn Sie ein neues Repository erstellen oder eines der Git-Steuerelemente auswählen, öffnet Visual Studio den **Team Explorer**. (Sie können das Fenster auch jederzeit über **Ansicht > Team Explorer** öffnen.) Das Fenster besteht aus drei Hauptbereichen, zwischen denen Sie über das Dropdownmenü im Header **Team Explorer** wechseln können. Der **Synchronisierungsbereich**, der Veröffentlichungsvorgänge bereitstellt, wird auch angezeigt, wenn Sie das Steuerelement „Push“ auswählen (der Pfeil nach oben):
 
-1. Klicken Sie auf **Änderungen**, um nicht gespeicherte Änderungen zu überprüfen und diese bei Bedarf zu übernehmen.
+    ![Team Explorer in Visual Studio, nachdem ein lokales Repository erstellt wurde](media/working-with-git-02.png)
 
-  ![Team Explorer in Visual Studio, der nicht gespeicherte Änderungen anzeigt](media/working-with-git-03.png)
+1. Klicken Sie auf **Änderungen** (oder auf das Git-Steuerelement mit dem Bleistiftsymbol), um nicht gespeicherte Änderungen zu überprüfen und diese bei Bedarf zu übernehmen.
 
-1. Klicken Sie auf **Branches**, um Branches zu untersuchen und Zusammenführungs- und Rebasevorgänge auszuführen.
+    ![Team Explorer in Visual Studio, der nicht gespeicherte Änderungen anzeigt](media/working-with-git-03.png)
 
-  ![Team Explorer in Visual Studio, der Branches anzeigt](media/working-with-git-04.png)
+    Doppelklicken Sie auf eine Datei unter **Änderungen**, um eine Vergleichsansicht für diese zu öffnen:
 
-1. Wenn Sie ein lokales Repository verwenden, werden gespeicherte Änderungen direkt an das Repository übertragen. Wenn Sie mit einem Remoterepository verbunden sind, klicken Sie auf den Header und anschließend auf **Sync**, um zum Abschnitt **Synchronisierung** zu wechseln und mit den dort aufgeführten Befehlen zu arbeiten.
+    ![Vergleichsansicht zu Änderungen an einer Datei](media/working-with-git-05.png)
+
+1. Klicken Sie auf **Branches** (oder das Git-Steuerelement mit einem Branchnamen), um Branches zu untersuchen und Zusammenführungs- und Rebasevorgänge auszuführen:
+
+    ![Team Explorer in Visual Studio, der Branches anzeigt](media/working-with-git-04.png)
+
+1. Wenn Sie auf das Git-Steuerelement mit dem Repositorynamen klicken („CosineWave“ im oben stehenden Bild), zeigt der **Team Explorer** eine **Connect**-Schnittstelle (Verbinden) an, mit der Sie schnell zu einem anderen Repository wechseln können.
+
+1. Wenn Sie ein lokales Repository verwenden, werden gespeicherte Änderungen direkt an das Repository übertragen. Wenn Sie mit einem Remoterepository verbunden sind, klicken Sie auf den Dropdownheader im **Team Explorer** und anschließend auf **Sync**, um zum Abschnitt **Synchronisierung** zu wechseln und mit den dort aufgeführten Pull- und Fetch-Befehlen zu arbeiten.
 
 ## <a name="going-deeper"></a>Vertiefung
 
-Ein ausführlicheres Tutorial für das Arbeiten mit Git finden Sie unter [Share your code with Visual Studio 2017 and VSTS Git (Freigeben von Code mit Visual Studio 2017 und VSTS Git)](/vsts/git/share-your-code-in-git-vs-2017).
+Eine kurze exemplarische Vorgehensweise für das Erstellen eines Projekts über ein Git-Remoterepository finden Sie unter [Quickstart: clone a repository of Python code in Visual Studio (Schnellstart: Klonen eines Repositorys mit Python-Code in Visual Studio)](quickstart-03-python-in-visual-studio-project-from-repository.md).
+
+Ein ausführlicheres Tutorial finden Sie unter [Getting Started with Git and VSTS (Einstieg in Git und VSTS)](/vsts/git/gitquickstart?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json&view=vsts&tabs=visual-studio). Dort lernen Sie das Behandeln von Mergekonflikten, das Prüfen von Code mit Pull Requests, das Ausführen von Rebasevorgängen und Cherrypicking von Änderungen zwischen Branches kennen.
 
 ## <a name="tutorial-review"></a>Review des Tutorials
 
@@ -64,7 +74,7 @@ Glückwunsch zum Abschluss dieses Tutorials zu Python in Visual Studio. In diese
 - Installieren von Paketen und Verwalten von Python-Umgebungen
 - Arbeiten mit Code in einem Git-Repository
 
-Erkunden Sie nun unter anderem folgende Konzepte und Leitfäden:
+Sehen Sie sich für weitere Informationen die folgenden Artikel zu Konzepten und die folgenden Leitfäden an:
 
 - [Erstellen einer C++-Erweiterung für Python](working-with-c-cpp-python-in-visual-studio.md)
 - [Veröffentlichen in Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md)

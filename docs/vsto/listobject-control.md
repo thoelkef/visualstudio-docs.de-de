@@ -1,12 +1,12 @@
 ---
 title: ListObject-Steuerelement | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VST.Toolbox.List
@@ -39,7 +39,7 @@ ms.lasthandoff: 01/10/2018
  In Projekten auf Dokumentebene können Sie einem Arbeitsblatt zur Entwurfszeit oder Laufzeit <xref:Microsoft.Office.Tools.Excel.ListObject> -Steuerelemente hinzufügen. In VSTO-Add-in-Projekten können Sie Arbeitsblättern <xref:Microsoft.Office.Tools.Excel.ListObject> -Steuerelemente nur zur Laufzeit hinzufügen. Weitere Informationen finden Sie unter [How to: Add ListObject Controls to Worksheets](../vsto/how-to-add-listobject-controls-to-worksheets.md).  
   
 > [!NOTE]  
->  Standardmäßig werden dynamisch erstellte Listenobjekte im Arbeitsblatt nicht dauerhaft als Hoststeuerelemente gespeichert, wenn das Arbeitsblatt geschlossen wird. Weitere Informationen finden Sie unter [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md).  
+>  Standardmäßig werden dynamisch erstellte Listenobjekte im Arbeitsblatt nicht dauerhaft als Hoststeuerelemente gespeichert, wenn das Arbeitsblatt geschlossen wird. Weitere Informationen finden Sie unter [Hinzufügen von Steuerelementen zu Office-Dokumenten zur Laufzeit](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
 ## <a name="binding-data-to-the-control"></a>Binden von Daten an das Steuerelement  
  Ein <xref:Microsoft.Office.Tools.Excel.ListObject> -Steuerelement unterstützt die einfache und komplexe Datenbindung. Das <xref:Microsoft.Office.Tools.Excel.ListObject> -Steuerelement kann zur Entwurfszeit mit der <xref:Microsoft.Office.Tools.Excel.ListObject.DataSource%2A> -Eigenschaft und der <xref:Microsoft.Office.Tools.Excel.ListObject.DataMember%2A> -Eigenschaft oder zur Laufzeit mit der <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A> -Methode an eine Datenquelle gebunden werden.  
@@ -74,7 +74,7 @@ ms.lasthandoff: 01/10/2018
  Sie können Spalten in einem datengebundenen <xref:Microsoft.Office.Tools.Excel.ListObject> -Steuerelement zur Laufzeit nicht manuell hinzufügen oder entfernen. Wenn ein Endbenutzer versucht, eine Spalte zu löschen, wird sie sofort wiederhergestellt, und alle hinzugefügten Spalten werden entfernt. Daher ist es wichtig, Code zu schreiben, der Benutzern erläutert, warum sie diese Aktionen nicht für ein <xref:Microsoft.Office.Tools.Excel.ListObject> ausführen können, das an Daten gebunden ist. Visual Studio bietet verschiedene Ereignisse für <xref:Microsoft.Office.Tools.Excel.ListObject> , die sich auf die Datenbindung beziehen. Beispielsweise können Sie das <xref:Microsoft.Office.Tools.Excel.ListObject.OriginalDataRestored> -Ereignis verwenden, um Benutzer zu warnen, dass Daten, die sie löschen wollten, nicht gelöscht werden können und wiederhergestellt wurden.  
   
 ## <a name="adding-and-removing-rows-at-run-time"></a>Hinzufügen und Entfernen von Zeilen zur Laufzeit  
- Sie können Zeilen in einem datengebundenen <xref:Microsoft.Office.Tools.Excel.ListObject> -Steuerelement manuell hinzufügen und entfernen, vorausgesetzt, die Datenquelle lässt das Hinzufügen neuer Zeilen zu und ist nicht schreibgeschützt. Sie können Code für Ereignisse wie <xref:Microsoft.Office.Tools.Excel.ListObject.BeforeAddDataBoundRow> schreiben, um die Daten zu überprüfen. Weitere Informationen finden Sie unter [How to: Validate Data When a New Row is Added to a ListObject Control](../vsto/how-to-validate-data-when-a-new-row-is-added-to-a-listobject-control.md).  
+ Sie können Zeilen in einem datengebundenen <xref:Microsoft.Office.Tools.Excel.ListObject> -Steuerelement manuell hinzufügen und entfernen, vorausgesetzt, die Datenquelle lässt das Hinzufügen neuer Zeilen zu und ist nicht schreibgeschützt. Sie können Code für Ereignisse wie <xref:Microsoft.Office.Tools.Excel.ListObject.BeforeAddDataBoundRow> schreiben, um die Daten zu überprüfen. Weitere Informationen finden Sie unter [Gewusst wie: Überprüfen der Daten, wenn einem ListObject-Steuerelement eine neue Zeile hinzugefügt wird](../vsto/how-to-validate-data-when-a-new-row-is-added-to-a-listobject-control.md).  
   
  Manchmal verursacht die Beziehung des Listenobjekts zur Datenquelle routinemäßige Fehler. Sie können z. B. die Spalten zuordnen, die in <xref:Microsoft.Office.Tools.Excel.ListObject>enthalten sein sollen. Wenn Sie Spalten auslassen, die eingeschränkt sind, z. B. ein Feld, das keine NULL-Werte akzeptiert, wird bei jedem Erstellen einer Zeile ein Fehler ausgelöst. Sie können Code schreiben, um die fehlenden Werte in einem Ereignishandler für das <xref:Microsoft.Office.Tools.Excel.ListObject.ErrorAddDataBoundRow> -Ereignis hinzuzufügen.  
   
