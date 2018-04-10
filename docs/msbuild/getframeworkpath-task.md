@@ -1,11 +1,11 @@
 ---
 title: GetFrameworkPath-Aufgabe | Microsoft-Dokumentation
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#GetFrameworkPath
@@ -18,17 +18,17 @@ helpviewer_keywords:
 - GetFrameworkPath task [MSBuild]
 - MSBuild, GetFrameworkPath task
 ms.assetid: 5b7bcdd7-d4a0-442d-af29-8aadb3b10598
-caps.latest.revision: 
+caps.latest.revision: 11
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: d672a204411c58b4a164db2ff02701544f4594bf
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
-ms.translationtype: HT
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="getframeworkpath-task"></a>GetFrameworkPath-Aufgabe
 Ruft den Pfad zur [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]-Assembly ab  
@@ -36,7 +36,7 @@ Ruft den Pfad zur [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md
 ## <a name="task-parameters"></a>Aufgabenparameter  
  In der folgenden Tabelle werden die Parameter der `GetFrameworkPath`-Aufgabe beschrieben.  
   
-|Parameter|description|  
+|Parameter|Beschreibung|  
 |---------------|-----------------|  
 |`FrameworkVersion11Path`|Optionaler `String`-Ausgabeparameter.<br /><br /> Enthält den Pfad zu den Assemblys der Framework-Version 1.1, sofern vorhanden. Andernfalls wird `null` zurückgegeben.|  
 |`FrameworkVersion20Path`|Optionaler `String`-Ausgabeparameter.<br /><br /> Enthält den Pfad zu den Assemblys der Framework-Version 2.0, sofern vorhanden. Andernfalls wird `null` zurückgegeben.|  

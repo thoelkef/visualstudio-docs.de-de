@@ -1,12 +1,12 @@
 ---
-title: "Vorgehensweise: Verwalten von Aktualisierungen für eine ClickOnce-Anwendung | Microsoft Docs"
-ms.custom: 
+title: 'Vorgehensweise: Verwalten von Aktualisierungen für eine ClickOnce-Anwendung | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-deployment
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - Microsoft.VisualStudio.Publish.ClickOnceProvider.Dialog.Update
@@ -20,20 +20,20 @@ helpviewer_keywords:
 - updating data, ClickOnce
 - application updates
 ms.assetid: a3f23f05-e7f1-4620-b23c-2d68f9643684
-caps.latest.revision: 
+caps.latest.revision: 13
 author: stevehoag
 ms.author: shoag
 manager: wpickett
 ms.workload:
 - multiple
 ms.openlocfilehash: f239f13a7dcefe0ce6f2bf8c12c641e97a48ce26
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="how-to-manage-updates-for-a-clickonce-application"></a>Gewusst wie: Verwalten von Aktualisierungen für eine ClickOnce-Anwendung
-[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]Anwendungen können automatisch oder programmgesteuert nach Updates suchen. Als Entwickler haben Sie große Flexibilität bei der Angabe, wann und wie die Überprüfung auf Updates ausgeführt werden und gibt an, ob Updates erforderlich sind, in dem die Anwendung auf Updates überprüfen soll.  
+[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendungen können automatisch oder programmgesteuert nach Updates suchen. Als Entwickler haben Sie große Flexibilität bei der Angabe, wann und wie die Überprüfung auf Updates ausgeführt werden und gibt an, ob Updates erforderlich sind, in dem die Anwendung auf Updates überprüfen soll.  
   
  Sie können die Anwendung zur Überprüfung des Updates automatisch vor dem Starten der Anwendung oder in festgelegten Intervallen nach dem Starten der Anwendung konfigurieren. Darüber hinaus können Sie die mindestens erforderliche Version festlegen. also wird ein Update installiert, wenn der Benutzer Version niedriger als die erforderliche Version ist.  
   
@@ -93,7 +93,7 @@ ms.lasthandoff: 12/22/2017
   
 4.  In der **Anwendungsupdates** Dialogfeld Feld, stellen Sie sicher, dass die **sollte die Anwendung auf Updates prüfen** Kontrollkästchen aktiviert ist.  
   
-5.  In der **Updatepfad** Feld, geben Sie den Updatespeicherort eine vollqualifizierte URL, mit dem Format http://Hostname/ApplicationName oder einen UNC-Pfad im Format \\\Server\ApplicationName, oder klicken Sie auf die **Durchsuchen** Schaltfläche, um für den Updatespeicherort zu navigieren.  
+5.  In der **Updatepfad** Feld, geben Sie den Speicherort für die Aktualisierung mit einem vollqualifizierten URL, unter Verwendung des Formats http://Hostname/ApplicationName, oder ein UNC-Pfad im Format \\\Server\ApplicationName, oder klicken Sie auf die **Durchsuchen** Schaltfläche, um für den Updatespeicherort zu navigieren.  
   
 ### <a name="to-check-for-updates-programmatically"></a>Programmgesteuert nach Updates suchen  
   
@@ -105,7 +105,7 @@ ms.lasthandoff: 12/22/2017
   
 4.  In der **Anwendungsupdates** Dialogfeld Feld, stellen Sie sicher, dass die **sollte die Anwendung auf Updates prüfen** Kontrollkästchen ist deaktiviert. (Können Sie wahlweise das Kontrollkästchen zum Prüfen auf Updates programmgesteuert und auch die ClickOnce-Common Language Runtime automatisch nach Updates suchen können.)  
   
-5.  In der **Updatepfad** Feld, geben Sie den Updatespeicherort eine vollqualifizierte URL, mit dem Format http://Hostname/ApplicationName oder einen UNC-Pfad im Format \\\Server\ApplicationName, oder klicken Sie auf die **Durchsuchen** Schaltfläche, um für den Updatespeicherort zu navigieren. Der Updatespeicherort ist, wo die Anwendung sucht nach einer aktualisierten Version von sich selbst.  
+5.  In der **Updatepfad** Feld, geben Sie den Speicherort für die Aktualisierung mit einem vollqualifizierten URL, unter Verwendung des Formats http://Hostname/ApplicationName, oder ein UNC-Pfad im Format \\\Server\ApplicationName, oder klicken Sie auf die **Durchsuchen** Schaltfläche, um für den Updatespeicherort zu navigieren. Der Updatespeicherort ist, wo die Anwendung sucht nach einer aktualisierten Version von sich selbst.  
   
 6.  Erstellen Sie eine Schaltfläche, Menüelement oder andere Benutzer Schnittstelle-Element in einem Windows Form, die Benutzer auswählen können, nach Updates suchen. Rufen Sie Ereignishandler für dieses Element eine Methode zum Überprüfen und Installieren von Updates. Sie finden ein Beispiel für Visual Basic und Visual C#-Code für eine solche Methode im [Vorgehensweise: Überprüfen Sie für die Anwendung programmgesteuert Updates mithilfe der ClickOnce-Bereitstellung API](../deployment/how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api.md).  
   

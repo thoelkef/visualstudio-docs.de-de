@@ -1,12 +1,12 @@
 ---
 title: Formatbezeichner im Debugger (C++) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - vs.debug
@@ -28,17 +28,17 @@ helpviewer_keywords:
 - format specifiers, debugger
 - debugger, format specifiers recognized by
 ms.assetid: 0f6f3b7c-ce2c-4b4d-b14f-7589dbed5444
-caps.latest.revision: 
+caps.latest.revision: 40
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 5b7efb90e6f2a2489fffb890c664393252021e6f
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>Formatbezeichner in C++ in Visual Studio-debugger
 Sie können das Format ändern, in dem ein Wert im Fenster **Überwachen** mithilfe von Formatbezeichnern angezeigt wird.  
@@ -83,12 +83,12 @@ int main() {
 |su|Zeichenfolge Unicode (UTF-16-Codierung)|\<Speicherort > L "Hello World"|L"hello world"<br /><br /> u"hello world"|  
 |sub|Unicode (UTF-16-Codierung) Zeichenfolge (ohne Anführungszeichen)|\<Speicherort > L "Hello World"|hello world|  
 |bstr|BSTR-Zeichenfolge|\<Speicherort > L "Hello World"|L"hello world"|  
-|env|Umgebungsblock (Double-Null beendete Zeichenfolge)|\<location> L"=::=::\\\\"|L"=::=::\\\\\\0=C:=C:\\\\windows\\\\system32\\0ALLUSERSPROFILE=...|
+|env|Umgebungsblock (Double-Null beendete Zeichenfolge)|\<location> L"=::=::\\\\"|L "=:: =::\\\\\\0 = C: = C:\\\\Windows\\\\" System32 "\\0ALLUSERSPROFILE =...|
 |**s32**|UTF-32-Zeichenfolge|\<Speicherort > U "Hello World"|u"hello world"|  
 |**s32b**|UTF-32-Zeichenfolge (ohne Anführungszeichen)|\<Speicherort > U "Hello World"|hello world|  
 |**en**|enum|Samstag(6)|Samstag|  
 |**hv**|Zeigertyp - gibt an, dass der überprüfte Zeigerwert das Ergebnis der Heapzuweisung eines Arrays ist, z. B. `new int[3]`.|\<Speicherort > {\<erste Member >}|\<Speicherort > {\<erste Member >, \<zweite Member >,...}|  
-|**na**|Unterdrückt die Speicheradresse eines Zeigers auf ein Objekt.|\<Speicherort >, {Member = Value...}|{Member = Value...}|  
+|**na**|Unterdrückt die Speicheradresse eines Zeigers auf ein Objekt.|\<location>, {member=value...}|{Member = Value...}|  
 |**nd**|Es werden nur die Basisklasseninformationen angezeigt, die abgeleiteten Klassen werden ignoriert.|`(Shape*) square` enthält die Basisklassen- und abgeleitete Klasseninformationen|Zeigt nur Basisklasseninformationen an|  
 |hr|HRESULT oder Win32-Fehlercode. (Der Debugger decodiert HRESULT-Werte nun automatisch, sodass der Bezeichner in diesem Fall nicht erforderlich ist.)|S_OK|S_OK|  
 |wc|Fensterklassenflag|0x0010|WC_DEFAULTCHAR|  
@@ -120,11 +120,11 @@ int main() {
 |**f**|Gleitkommazahl mit Vorzeichen|(3./2.), f|1.500000|  
 |**e**|Wissenschaftliche Notation mit Vorzeichen|(3.0/2.0)|1.500000e+000|  
 |**g**|Gleitkommazahl oder wissenschaftliche Notation mit Vorzeichen, je nachdem, welche kürzer ist|(3.0/2.0)|1.5|  
-|c|Einzelnes Zeichen|\<location>|101 'e'|  
-|s|const char*|\<location>|"hello world"|  
-|su|const wchar_t*<br /><br /> const char16_t\*|\<location>|L"hello world"|  
-|sub|const wchar_t*<br /><br /> const char16_t\*|\<location>|hello world|  
-|s8|const char*|\<location>|"hello world"|  
+|c|Einzelnes Zeichen|\<Speicherort >|101 'e'|  
+|s|const char*|\<Speicherort >|"hello world"|  
+|su|const wchar_t*<br /><br /> const char16_t\*|\<Speicherort >|L"hello world"|  
+|sub|const wchar_t*<br /><br /> const char16_t\*|\<Speicherort >|hello world|  
+|s8|const char*|\<Speicherort >|"hello world"|  
 |hr|HRESULT oder Win32-Fehlercode. (Der Debugger decodiert HRESULT-Werte nun automatisch, sodass der Bezeichner in diesem Fall nicht erforderlich ist.)|S_OK|S_OK|  
 |wc|Fensterklassenflag|0x00000040,|WC_DEFAULTCHAR|  
 |wm|Windows-Meldungsnummern|0x0010|WM_CLOSE|  

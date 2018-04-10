@@ -1,11 +1,11 @@
 ---
 title: FindInList-Aufgabe | Microsoft-Dokumentation
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - VB
@@ -16,17 +16,17 @@ helpviewer_keywords:
 - FindInList task [MSBuild]
 - MSBuild, FindInList task
 ms.assetid: d49b9f84-52a2-4242-9269-b741a7a7e9f7
-caps.latest.revision: 
+caps.latest.revision: 7
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: ccf4f6b8f07da67af061c101f7f7b6500de48f73
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
-ms.translationtype: HT
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="findinlist-task"></a>FindInList-Aufgabe
 Sucht in einer angegebenen Liste ein Element, das über die entsprechende Elementspezifikation verfügt  
@@ -34,7 +34,7 @@ Sucht in einer angegebenen Liste ein Element, das über die entsprechende Elemen
 ## <a name="parameters"></a>Parameter  
  In der folgenden Tabelle werden die Parameter der [FindInList-Aufgabe](../msbuild/findinlist-task.md) beschrieben.  
   
-|Parameter|description|  
+|Parameter|Beschreibung|  
 |---------------|-----------------|  
 |`CaseSensitive`|Optionaler `Boolean` -Parameter.<br /><br /> Wenn der Wert `true` ist, wird die Groß- und Kleinschreibung bei der Suche berücksichtigt. Andernfalls ist die Groß- und Kleinschreibung unerheblich. Der Standardwert ist `true`sein.|  
 |`FindLastMatch`|Optionaler `Boolean` -Parameter.<br /><br /> Wenn `true`, wird die letzte Übereinstimmung zurückgegeben. Ansonsten wird die erste Übereinstimmung zurückgegeben. Der Standardwert ist `false`sein.|  

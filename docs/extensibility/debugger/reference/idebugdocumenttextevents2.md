@@ -20,10 +20,10 @@ manager: ghogen
 ms.workload:
 - vssdk
 ms.openlocfilehash: bb9e284435cdf8a5905e068b0044cd118a1621c9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="idebugdocumenttextevents2"></a>IDebugDocumentTextEvents2
 Diese Schnittstelle wird verwendet, um Visual Studio zu Änderungen an das Quelldokument zu benachrichtigen, die durch die Debugging-Modul bereitgestellt werden.  
@@ -38,7 +38,7 @@ IDebugDocumentTextEvents2 : IUnknown
  DE implementiert diese Schnittstelle, um dadurch Änderungen auf den Quellcode zu unterstützen. Diese Schnittstelle wird in der Regel implementiert, auf das gleiche Objekt, implementiert die [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) Schnittstelle.  
   
 ## <a name="notes-for-callers"></a>Hinweise für Aufrufer  
- [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]Ruft diese Schnittstelle über einen Aufruf der <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint.Advise%2A> Methode. Die <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint> Schnittstelle wird abgerufen, von einem Aufruf der <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer.EnumConnectionPoints%2A> Methode. Die <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer> Schnittstelle durch den Aufruf abgerufen wird die [QueryInterface](/cpp/atl/queryinterface) Methode auf eine [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) Schnittstelle.  
+ [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] Ruft diese Schnittstelle über einen Aufruf der <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint.Advise%2A> Methode. Die <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint> Schnittstelle wird abgerufen, von einem Aufruf der <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer.EnumConnectionPoints%2A> Methode. Die <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer> Schnittstelle durch den Aufruf abgerufen wird die [QueryInterface](/cpp/atl/queryinterface) Methode auf eine [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) Schnittstelle.  
   
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
  Die folgende Tabelle zeigt die Methoden der `IDebugDocumentTextEvents2`.  

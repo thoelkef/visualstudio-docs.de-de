@@ -1,28 +1,28 @@
 ---
 title: Buildprotokollierungen | Microsoft-Dokumentation
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - MSBuild, writing loggers
 - MSBuild, logging
 - logging [MSBuild]
 ms.assetid: fa34810d-185a-4d22-92bd-9852915e5f1d
-caps.latest.revision: 
+caps.latest.revision: 11
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: d059cd9b9b108d9feba4c3878a3efc42c4f1403c
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
-ms.translationtype: HT
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="build-loggers"></a>Buildprotokollierungen
 Protokollierungen bieten eine Möglichkeit, die Ausgabe des Builds anzupassen und Meldungen, Fehler oder Warnungen als Reaktion auf bestimmte Buildereignisse anzuzeigen. Jede Protokollierung wird als .NET- Klasse implementiert, die die <xref:Microsoft.Build.Framework.ILogger>-Schnittstelle implementiert, die in der Assembly „Microsoft.Build.Framework.dll“ definiert ist.  
@@ -67,7 +67,7 @@ MSBuild /nologo /noconsolelogger /logger:SimpleLogger.dll /verbosity:Detailed
   
 ## <a name="example"></a>Beispiel  
   
-### <a name="description"></a>description  
+### <a name="description"></a>Beschreibung  
  Das folgende Beispiel enthält den vollständigen Code für die Protokollierung.  
   
 ### <a name="code"></a>Code  
@@ -77,7 +77,7 @@ MSBuild /nologo /noconsolelogger /logger:SimpleLogger.dll /verbosity:Detailed
   
 ## <a name="example"></a>Beispiel  
   
-### <a name="description"></a>description  
+### <a name="description"></a>Beschreibung  
  Das folgende Beispiel zeigt das Implementieren einer Protokollierung, die das Protokoll in eine Datei schreibt, anstatt es im Konsolenfenster anzuzeigen.  
   
 ### <a name="code"></a>Code  

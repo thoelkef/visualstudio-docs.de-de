@@ -1,9 +1,9 @@
 ---
 title: MSI- und VSIX-Bereitstellung eine DSL | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 author: gewarren
 ms.author: gewarren
@@ -12,15 +12,15 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: de6b219610908503f37658ff977f042363fb8663
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="msi-and-vsix-deployment-of-a-dsl"></a>MSI- und VSIX-Bereitstellung einer DSL
-Sie können eine domänenspezifische Sprache auf Ihrem eigenen Computer oder auf anderen Computern installieren. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]muss bereits auf dem Zielcomputer installiert werden.  
+Sie können eine domänenspezifische Sprache auf Ihrem eigenen Computer oder auf anderen Computern installieren. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] muss bereits auf dem Zielcomputer installiert werden.  
   
-##  <a name="which"></a>Auswählen zwischen VSIX-als auch MSI-Bereitstellung  
+##  <a name="which"></a> Auswählen zwischen VSIX-als auch MSI-Bereitstellung  
  Es gibt zwei Methoden zum Bereitstellen einer domänenspezifischen Sprache:  
   
 |Methode|Vorteile|  
@@ -28,7 +28,7 @@ Sie können eine domänenspezifische Sprache auf Ihrem eigenen Computer oder auf
 |VSX ([!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Erweiterung)|Sehr leicht bereitzustellen: Kopieren und Ausführen der **VSIX** Datei aus dem Projekt DslPackage.<br /><br /> Weitere Informationen finden Sie unter [installieren und Deinstallieren eine DSL mit der VSX](#Installing).|  
 |MSI-Datei (Installer-Datei)|– Ermöglicht es den Benutzer, öffnen Sie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] durch Doppelklicken auf einen DSL-Datei.<br />-Der DSL-Dateityp in der Zielcomputer ein Symbol zugeordnet.<br />-Ordnet XSD (XML Schema) mit der DSL-Dateityp an. Dies vermeidet Warnungen beim Laden der das in den [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].<br /><br /> Sie müssen ein Setup-Projekt zur Projektmappe so erstellen eine MSI-Datei hinzufügen.<br /><br /> Weitere Informationen finden Sie unter [DSL mithilfe einer MSI-Datei bereitstellen](#msi).|  
   
-##  <a name="Installing"></a>Installieren und deinstallieren mithilfe der VSX DSL  
+##  <a name="Installing"></a> Installieren und deinstallieren mithilfe der VSX DSL  
  Wenn von dieser Methode der DSL installiert ist, kann der Benutzer innerhalb eine DSL-Datei öffnen [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], aber die Datei kann nicht aus dem Windows-Explorer nicht geöffnet werden.  
   
 #### <a name="to-install-a-dsl-by-using-the-vsx"></a>Eine DSL mit der VSX installieren  
@@ -65,7 +65,7 @@ Sie können eine domänenspezifische Sprache auf Ihrem eigenen Computer oder auf
   
  *LocalAppData* **\Microsoft\VisualStudio\10.0\Extensions**  
   
-##  <a name="msi"></a>Eine DSL in eine MSI-Datei bereitstellen  
+##  <a name="msi"></a> Eine DSL in eine MSI-Datei bereitstellen  
  Durch die Definition einer MSI-Datei (Windows Installer)-Datei für Ihre DSL, können Sie Benutzern das Öffnen von DSL-Dateien aus Windows Explorer zulassen. Sie können auch ein Symbol und eine kurze Beschreibung mit der Dateinamenerweiterung zuordnen. Darüber hinaus kann die MSI-Datei XSD-Code installieren, die zur Validierung der DSL-Dateien verwendet werden kann. Wenn Sie möchten, können Sie andere Komponenten in die MSI-Datei hinzufügen, die zur selben Zeit installiert werden.  
   
  Weitere Informationen zur MSI-Dateien und anderen Bereitstellungsoptionen finden Sie unter [Bereitstellen von Anwendungen, Diensten und Komponenten](../deployment/deploying-applications-services-and-components.md).  
@@ -76,7 +76,7 @@ Sie können eine domänenspezifische Sprache auf Ihrem eigenen Computer oder auf
   
 1.  Legen Sie `InstalledByMsi` in der Erweiterungsmanifest. Dadurch wird verhindert, dass die VSX installiert und mit Ausnahme von der MSI-Datei deinstalliert werden. Dies ist wichtig, wenn Sie andere Komponenten in die MSI-Datei umfasst.  
   
-    1.  Open DslPackage\source.extension.tt  
+    1.  Öffnen Sie DslPackage\source.extension.tt  
   
     2.  Fügen Sie die folgende Zeile vor `<SupportedProducts>`:  
   

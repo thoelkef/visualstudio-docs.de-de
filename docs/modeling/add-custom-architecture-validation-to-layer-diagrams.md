@@ -1,9 +1,9 @@
 ---
-title: "Hinzufügen von benutzerdefinierten architekturüberprüfung zu Abhängigkeit Diagrammen | Microsoft Docs"
-ms.custom: 
+title: Hinzufügen von benutzerdefinierten architekturüberprüfung zu Abhängigkeit Diagrammen | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 helpviewer_keywords:
 - dependency diagrams, adding custom validation
@@ -14,10 +14,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 7679398e5acfc2f23d51ea7f943e35d0d82e500e
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="add-custom-architecture-validation-to-dependency-diagrams"></a>Hinzufügen von benutzerdefinierten architekturüberprüfung zu Abhängigkeit-Diagrammen
 In Visual Studio können Benutzer den Quellcode in einem Projekt anhand eines Ebenenmodells validieren, damit sie überprüfen können, dass der Quellcode den Abhängigkeiten in einem Diagramm Abhängigkeit entspricht. Es gibt zwar einen Standardvalidierungsalgorithmus, Sie können aber auch eigene Validierungserweiterungen definieren.  

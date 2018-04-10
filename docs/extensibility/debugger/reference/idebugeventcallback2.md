@@ -20,10 +20,10 @@ manager: ghogen
 ms.workload:
 - vssdk
 ms.openlocfilehash: 165f973fa9139f281211e6b01167b3d7044166df
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="idebugeventcallback2"></a>IDebugEventCallback2
 Diese Schnittstelle wird von der Debugging-Modul (DE) der Sitzung Debug-Manager (SDM) Debug-Ereignisse an.  
@@ -35,7 +35,7 @@ IDebugEventCallback2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Hinweise für Implementierer  
- [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]implementiert diese Schnittstelle zum Empfangen von Ereignissen aus einem Debugging-Modul.  
+ [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] implementiert diese Schnittstelle zum Empfangen von Ereignissen aus einem Debugging-Modul.  
   
 ## <a name="notes-for-callers"></a>Hinweise für Aufrufer  
  Debugging-Modul in der Regel diese Schnittstelle empfängt, wenn die SDM aufruft [Anfügen](../../../extensibility/debugger/reference/idebugprogram2-attach.md), [Anfügen](../../../extensibility/debugger/reference/idebugengine2-attach.md), oder [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md). Debugging-Modul sendet Ereignisse an die SDM durch Aufrufen von [Ereignis](../../../extensibility/debugger/reference/idebugeventcallback2-event.md).  

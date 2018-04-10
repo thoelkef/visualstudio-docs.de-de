@@ -1,11 +1,11 @@
 ---
 title: Exec-Aufgabe | Microsoft-Dokumentation
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Exec
@@ -18,17 +18,17 @@ helpviewer_keywords:
 - Exec task [MSBuild]
 - MSBuild, Exec task
 ms.assetid: c9b7525a-b1c9-40fc-8bce-77a5b8f960d8
-caps.latest.revision: 
+caps.latest.revision: 20
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: ec3a4f2507baa3a1ee5f2543722d5c13503af2b0
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
-ms.translationtype: HT
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="exec-task"></a>Exec-Aufgabe
 Führt das angegebene Programm oder den Befehl mit den angegebenen Argumenten aus.  
@@ -36,7 +36,7 @@ Führt das angegebene Programm oder den Befehl mit den angegebenen Argumenten au
 ## <a name="parameters"></a>Parameter  
  In der folgenden Tabelle werden die Parameter für die `Exec`-Aufgabe beschrieben.  
   
-|Parameter|description|  
+|Parameter|Beschreibung|  
 |---------------|-----------------|  
 |`Command`|Erforderlicher `String` -Parameter.<br /><br /> Der/die auszuführende(n) Befehl(e). Dies kann ein Systembefehl sein, z.B. „attrib“, oder eine ausführbare Datei wie „program.exe“, „runprogram.bat“ oder „setup.msi“.<br /><br /> Dieser Parameter kann mehrere Zeilen mit Befehlen enthalten. Alternativ können Sie mehrere Befehle in einer Batchdatei speichern und sie ausführen, indem Sie diesen Parameter verwenden.|  
 |`ConsoleOutput`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]` -Ausgabeparameter.<br /><br /> Jede Elementausgabe stellt eine Zeile der Standardausgabe oder einen Standardfehlerstream dar, der vom Tool ausgegeben wird. Dies wird nur erfasst, wenn `ConsoleToMsBuild` auf `true` festgelegt ist.|

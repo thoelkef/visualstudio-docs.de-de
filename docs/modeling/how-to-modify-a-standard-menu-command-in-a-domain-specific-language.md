@@ -1,9 +1,9 @@
 ---
-title: "Vorgehensweise: Ändern Sie einen Standardmenü-Befehl in einer domänenspezifischen Sprache | Microsoft Docs"
-ms.custom: 
+title: 'Vorgehensweise: Ändern Sie einen Standardmenü-Befehl in einer domänenspezifischen Sprache | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 helpviewer_keywords:
 - .vsct files, adding commands to a domain-specific language
@@ -15,10 +15,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: c11a559fb8ef3cc6eb951950d8779691ad20c3b5
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>Gewusst wie: Ändern eines Standardmenübefehls in einer domänenspezifischen Sprache
 Sie können das Verhalten einiger Standardbefehle ändern, die automatisch im DSL definiert sind. Sie können z. B. ändern **Ausschneiden** , damit sie vertraulichen Informationen werden ausgeschlossen. Hierzu überschreiben Sie Methoden in einer festgelegten Klasse des Befehls. Diese Klassen sind in der CommandSet.cs-Datei im DslPackage-Projekt definiert und von <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet> abgeleitet.  
@@ -36,7 +36,7 @@ Sie können das Verhalten einiger Standardbefehle ändern, die automatisch im DS
 > [!NOTE]
 >  Wenn Sie eigene Befehle im Menü erstellen möchten, finden Sie unter [wie: Hinzufügen eines Befehls zum Kontextmenü](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).  
   
-##  <a name="what"></a>Welche Befehle können Sie ändern?  
+##  <a name="what"></a> Welche Befehle können Sie ändern?  
   
 #### <a name="to-discover-what-commands-you-can-modify"></a>So ermitteln Sie, welche Befehle Sie ändern können  
   
@@ -53,7 +53,7 @@ Sie können das Verhalten einiger Standardbefehle ändern, die automatisch im DS
     > [!NOTE]
     >  Normalerweise sollten Sie keine Dateien bearbeiten, die generiert wurden. Änderungen gehen verloren, wenn die Dateien das nächste Mal generiert werden.  
   
-##  <a name="extend"></a>Erweitern Sie den entsprechenden Befehl Set-Klasse  
+##  <a name="extend"></a> Erweitern Sie den entsprechenden Befehl Set-Klasse  
  Erstellen Sie eine neue Datei, die eine partielle Deklaration der festgelegten Klasse des Befehls enthält.  
   
 #### <a name="to-extend-the-command-set-class"></a>So erweitern Sie die festgelegte Klasse des Befehls  
@@ -78,7 +78,7 @@ Sie können das Verhalten einiger Standardbefehle ändern, die automatisch im DS
   
      **Hinweis** Wenn Sie die Datei Klassenvorlage zum Erstellen der neuen Datei verwendet, müssen Sie den Namespace und den Klassennamen korrigieren.  
   
-##  <a name="override"></a>Überschreiben Sie die Befehlsmethoden  
+##  <a name="override"></a> Überschreiben Sie die Befehlsmethoden  
  Die meisten Befehle haben zwei zugeordnete Methoden: die Methode mit einem Namen wie `ProcessOnStatus`... bestimmt, ob der Befehl sichtbar und aktiviert werden soll. Sie wird aufgerufen, wenn der Benutzer mit der rechten Maustaste auf das Diagramm klickt und sollte schnell ausgeführt werden sowie keine Änderungen vornehmen. `ProcessOnMenu`... wird aufgerufen, wenn der Benutzer klickt auf den Befehl, und führen Sie die Funktion des Befehls sollten. Sie können eine dieser oder beide Methoden überschreiben.  
   
 ### <a name="to-change-when-the-command-appears-on-a-menu"></a>Ändern, wann der Befehl in einem Menü angezeigt wird  
@@ -137,11 +137,11 @@ protected override void ProcessOnMenuDeleteCommand()
   
 -   `this.CurrentSelection` Die Form, die der Benutzer mit der rechten Maustaste angeklickt hat, ist immer in dieser Liste mit Formen und Konnektoren enthalten. Wenn der Benutzer auf einen leeren Teil des Diagramms klickt, ist das Diagramm als einziges Teil der Liste.  
   
--   `this.IsDiagramSelected()` - `true`Wenn der Benutzer einen leeren Bereich des Diagramms geklickt hat.  
+-   `this.IsDiagramSelected()` - `true` Wenn der Benutzer einen leeren Bereich des Diagramms geklickt hat.  
   
 -   `this.IsCurrentDiagramEmpty()`  
   
--   `this.IsSingleSelection()`– der Benutzer nicht mehrere Formen auswählen  
+-   `this.IsSingleSelection()` – der Benutzer nicht mehrere Formen auswählen  
   
 -   `this.SingleSelection` – die Form oder das Diagramm, auf das der Benutzer mit der rechten Maustaste geklickt hat  
   

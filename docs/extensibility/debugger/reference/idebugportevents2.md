@@ -20,10 +20,10 @@ manager: ghogen
 ms.workload:
 - vssdk
 ms.openlocfilehash: 0a5782f0a50ac37b45c4b7e3402bcdded96b4683
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="idebugportevents2"></a>IDebugPortEvents2
 Diese Schnittstelle wird einen Listener (in der Regel der Sitzung Debug-Manager [SDM] oder ein Debugging-Modul) von Prozess- und Programm erstellen und Zerstören eines bestimmten Ports benachrichtigt. Diese Informationen können verwendet werden, um eine Echtzeitansicht von der ausgeführten Prozessen und Programmen auf den Port vorhanden.  
@@ -48,7 +48,7 @@ IDebugPortEvents2 : IUnknown
 |[Event](../../../extensibility/debugger/reference/idebugportevents2-event.md)|Sendet Ereignisse an, die die Erstellung und Zerstörung von Prozessen und Programmen auf den Port zu beschreiben.|  
   
 ## <a name="remarks"></a>Hinweise  
- `IDebugPortEvents2`durch die SDM dient auch zum Debuggen von Programmen, die in einem Prozess ausgeführt werden, die bereits debuggt wird.  
+ `IDebugPortEvents2` durch die SDM dient auch zum Debuggen von Programmen, die in einem Prozess ausgeführt werden, die bereits debuggt wird.  
   
  Portereignisse werden an die SDM von dieser Schnittstelle übergeben.  
   

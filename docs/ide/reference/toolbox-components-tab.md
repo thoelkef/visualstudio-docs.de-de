@@ -1,12 +1,12 @@
 ---
-title: "Toolbox, Registerkarte „Komponenten“ | Microsoft-Dokumentation"
-ms.custom: 
+title: Toolbox, Registerkarte „Komponenten“ | Microsoft-Dokumentation
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - Toolbox, Components tab
@@ -16,10 +16,10 @@ manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: aa91db706d7e1236162ef69e6fd31e791ed44dbb
-ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
-ms.translationtype: HT
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="toolbox-components-tab"></a>Toolbox, Registerkarte „Komponenten“
 
@@ -67,7 +67,7 @@ Zeigt die Komponenten an, die Sie zu Visual Basic- und C#-Designern hinzufügen 
  Erstellt eine <xref:System.ServiceProcess.ServiceController>-Komponenteninstanz, mit der Sie vorhandene Dienste bearbeiten und unter anderem Dienste starten und beenden sowie Befehle an sie senden können.
   
  **Zeitgeber**  
- Erstellt eine <xref:System.Windows.Forms.Timer>-Komponenteninstanz, mit der Sie zeitbasierte Funktionen zu Ihren Windows-basierten Anwendungen hinzufügen können. Weitere Informationen finden Sie unter [Timer-Komponente](/dotnet/framework/winforms/controls/timer-component-windows-forms).  
+ Erstellt eine <xref:System.Windows.Forms.Timer>-Komponenteninstanz, mit der Sie zeitbasierte Funktionen zu Ihren Windows-basierten Anwendungen hinzufügen können. Weitere Informationen finden Sie unter [Timer Component (Timer-Komponente)](/dotnet/framework/winforms/controls/timer-component-windows-forms).  
   
 > [!NOTE]
 >  Es gibt auch eine systembasierte <xref:System.Timers.Timer>, die Sie zur **Toolbox** hinzufügen können. Diese <xref:System.Timers.Timer> ist für Serveranwendungen optimiert, und die <xref:System.Windows.Forms.Timer> eignet sich am besten für die Verwendung in Windows Forms.  

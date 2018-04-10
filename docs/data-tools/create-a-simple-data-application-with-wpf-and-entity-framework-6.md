@@ -1,10 +1,10 @@
 ---
 title: Erstellen eine einfachen datenanwendung mit WPF und Entity Framework 6 | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 08/22/2017
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - CSharp
@@ -15,10 +15,10 @@ ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 ms.openlocfilehash: 394dbf9aba422f8fbf16857d6980a53b353e931a
-ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>Erstellen einer einfachen datenanwendung mit WPF und Entity Framework 6
 
@@ -118,7 +118,7 @@ Es ist möglich, einen eigenen Databinding-Code schreiben, aber es ist viel einf
         </Grid.RowDefinitions>
     ```
 
-5.  Öffnen Sie jetzt "MainWindow.xaml" auf, sodass Sie es im Designer anzeigen. Dadurch wird das Fenster "Datenquellen" als Option in der Visual Studio-Fenster-Rand neben der Toolbox angezeigt werden. Klicken Sie auf der Registerkarte ", öffnen Sie das Fenster, oder drücken andernfalls **Umschalt + Alt + D** , oder wählen Sie **View &#124; Anderen Windows &#124; Datenquellen**. Wir jede Eigenschaft in der Customers-Klasse in einem eigenen Feld bestimmtem Text anzeigen möchten. Zunächst klicken Sie auf den Pfeil im Kombinationsfeld Kunden, und wählen Sie **Details**. Ziehen Sie die Knoten auf den mittleren Teil der Entwurfsoberfläche angezeigt, damit der Designer weiß, dass Sie in der mittleren Zeile wechseln soll.  Wenn Sie es vergessen haben, können Sie die Zeile manuell zu einem späteren Zeitpunkt in der XAML-Code angeben. Standardmäßig befinden sich die Steuerelemente vertikal in einem Rasterelement, aber an diesem Punkt Sie können sie auf dem Formular beliebig anordnen.  Beispielsweise kann es sinnvoll sein, das Textfeld am oberen Rand, über die Adresse eingefügt werden soll. Die beispielanwendung für diesen Artikel ordnet die Felder neu und ordnet diese in zwei Spalten.  
+5.  Öffnen Sie jetzt "MainWindow.xaml" auf, sodass Sie es im Designer anzeigen. Dadurch wird das Fenster "Datenquellen" als Option in der Visual Studio-Fenster-Rand neben der Toolbox angezeigt werden. Klicken Sie auf der Registerkarte ", öffnen Sie das Fenster, oder drücken andernfalls **Umschalt + Alt + D** , oder wählen Sie **Ansicht &#124; Weitere Fenster &#124; Datenquellen**. Wir jede Eigenschaft in der Customers-Klasse in einem eigenen Feld bestimmtem Text anzeigen möchten. Zunächst klicken Sie auf den Pfeil im Kombinationsfeld Kunden, und wählen Sie **Details**. Ziehen Sie die Knoten auf den mittleren Teil der Entwurfsoberfläche angezeigt, damit der Designer weiß, dass Sie in der mittleren Zeile wechseln soll.  Wenn Sie es vergessen haben, können Sie die Zeile manuell zu einem späteren Zeitpunkt in der XAML-Code angeben. Standardmäßig befinden sich die Steuerelemente vertikal in einem Rasterelement, aber an diesem Punkt Sie können sie auf dem Formular beliebig anordnen.  Beispielsweise kann es sinnvoll sein, das Textfeld am oberen Rand, über die Adresse eingefügt werden soll. Die beispielanwendung für diesen Artikel ordnet die Felder neu und ordnet diese in zwei Spalten.  
   
      ![Kunden-datenquellenbindung in einzelne Steuerelemente,](../data-tools/media/raddata-customers-data-source-binding-to-individual-controls.png "Raddata Kunden datenquellenbindung in einzelne Steuerelemente")  
   

@@ -1,9 +1,9 @@
 ---
-title: "API-Referenz für Modeling SDK für Visual Studio | Microsoft Docs"
-ms.custom: 
+title: API-Referenz für Modeling SDK für Visual Studio | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 author: gewarren
 ms.author: gewarren
@@ -12,10 +12,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 043ed310c3b0958a407246a4789d089096bb811d
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="api-reference-for-modeling-sdk-for-visual-studio"></a>API-Referenz für Modellierungs-SDK für Visual Studio
 Die Visual Studio Visualization and Modeling SDK bietet die Plattform, auf denen Ihre Standardtools für domänenspezifische Sprachen (DSL) erstellt werden.  

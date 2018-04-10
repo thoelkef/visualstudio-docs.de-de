@@ -1,12 +1,12 @@
 ---
 title: ClickOnce und Anwendungseinstellungen | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-deployment
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - VB
@@ -15,17 +15,17 @@ dev_langs:
 helpviewer_keywords:
 - ClickOnce deployment, application settings
 ms.assetid: 891caba6-faef-4a3c-8f71-60e6fadb60eb
-caps.latest.revision: 
+caps.latest.revision: 10
 author: stevehoag
 ms.author: shoag
 manager: wpickett
 ms.workload:
 - multiple
 ms.openlocfilehash: 862f51aa7d124c3dbaa6514b666d74c26334e299
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="clickonce-and-application-settings"></a>ClickOnce und Anwendungseinstellungen
 Anwendungseinstellungen für Windows Forms erleichtert das Erstellen, speichern und Verwalten von benutzerdefinierten Anwendungen und benutzereinstellungen auf dem Client. Das folgende Dokument beschreibt die Funktionsweise von Einstellungen Anwendungsdateien in einer ClickOnce-Anwendung, und wie ClickOnce Einstellungen migriert, wenn der Benutzer auf die nächste Version aktualisiert.  

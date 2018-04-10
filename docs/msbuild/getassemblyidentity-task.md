@@ -25,10 +25,10 @@ manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: 995f77fac8e62e963207408a1e127a557906d10e
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
-ms.translationtype: HT
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="getassemblyidentity-task"></a>GetAssemblyIdentity-Aufgabe
 Ruft die Assemblyidentitäten aus den angegebenen Dateien ab und gibt die Identitätsinformation aus  
@@ -36,7 +36,7 @@ Ruft die Assemblyidentitäten aus den angegebenen Dateien ab und gibt die Identi
 ## <a name="task-parameters"></a>Aufgabenparameter  
  In der folgenden Tabelle werden die Parameter der `GetAssemblyIdentity`-Aufgabe beschrieben.  
   
-|Parameter|description|  
+|Parameter|Beschreibung|  
 |---------------|-----------------|  
 |`Assemblies`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]` -Ausgabeparameter.<br /><br /> Enthält die abgerufenen Assemblyidentitäten|  
 |`AssemblyFiles`|Erforderlicher <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter.<br /><br /> Gibt die Dateien an, aus denen Identitäten abgerufen werden sollen|  

@@ -1,11 +1,11 @@
 ---
 title: AssignProjectConfiguration-Aufgabe | Microsoft-Dokumentation
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - VB
@@ -13,17 +13,17 @@ dev_langs:
 - C++
 - jsharp
 ms.assetid: 09633a0b-8f6f-4aba-8058-7cb4d13ce2c0
-caps.latest.revision: 
+caps.latest.revision: 7
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: 7a4a803647afac9de77096e4a16d41987ff70c4f
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
-ms.translationtype: HT
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="assignprojectconfiguration-task"></a>AssignProjectConfiguration-Aufgabe
 Diese Aufgabe akzeptiert eine Liste von Konfigurationszeichenfolgen und weist sie angegebenen Projekten zu.  
@@ -31,7 +31,7 @@ Diese Aufgabe akzeptiert eine Liste von Konfigurationszeichenfolgen und weist si
 ## <a name="task-parameters"></a>Aufgabenparameter  
  In der folgenden Tabelle werden die Parameter der `AssignProjectConfiguration`-Aufgabe beschrieben.  
   
-|Parameter|description|  
+|Parameter|Beschreibung|  
 |---------------|-----------------|  
 |`SolutionConfigurationContents`|Optionaler `string`-Ausgabeparameter.<br /><br /> Enthält eine XML-Zeichenfolge mit einer Projektkonfiguration für jedes Projekt. Die Konfigurationen werden den benannten Projekten zugewiesen.|  
 |`DefaultToVcxPlatformMapping`|Optionaler `string`-Ausgabeparameter.<br /><br /> Enthält eine durch Semikolons getrennte Liste der Zuordnungen zwischen den von den meisten Typen verwendeten Plattformnamen<br /><br /> und den Namen, die von .vcxproj-Dateien verwendet werden.<br /><br /> Zum Beispiel:<br /><br /> `"AnyCPU=Win32;X86=Win32;X64=X64"`|  

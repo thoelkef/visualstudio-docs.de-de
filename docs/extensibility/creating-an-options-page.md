@@ -18,10 +18,10 @@ manager: ghogen
 ms.workload:
 - vssdk
 ms.openlocfilehash: d0888a584e31c26c9f64cdcff70cc2f5dc8a1453
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="creating-an-options-page"></a>Erstellen einer Optionsseite
 In dieser exemplarischen Vorgehensweise wird eine einfache Extras/Optionen-Seite, die mit einem Eigenschaftenraster überprüfen und Festlegen von Eigenschaften erstellt.  
@@ -246,7 +246,7 @@ In dieser exemplarischen Vorgehensweise wird eine einfache Extras/Optionen-Seite
   
     ```  
   
-     Dieser Code ruft <xref:Microsoft.VisualStudio.Shell.Package.GetDialogPage%2A> zu erstellen oder Abrufen einer `OptionPageGrid` Instanz. `OptionPageGrid`Aufrufe <xref:Microsoft.VisualStudio.Shell.DialogPage.LoadSettingsFromStorage%2A> , dessen Optionen laden, wodurch die öffentlichen Eigenschaften sind.  
+     Dieser Code ruft <xref:Microsoft.VisualStudio.Shell.Package.GetDialogPage%2A> zu erstellen oder Abrufen einer `OptionPageGrid` Instanz. `OptionPageGrid` Aufrufe <xref:Microsoft.VisualStudio.Shell.DialogPage.LoadSettingsFromStorage%2A> , dessen Optionen laden, wodurch die öffentlichen Eigenschaften sind.  
   
 2.  Fügen Sie jetzt eine Elementvorlage für benutzerdefinierte Befehl mit dem Namen **MyToolsOptionsCommand** den Wert anzuzeigen. In der **neues Element hinzufügen** wechseln Sie zum Dialogfeld **Visual c# / Erweiterbarkeit** , und wählen Sie **benutzerdefinierte Befehl**. In der **Namen** Feld am unteren Rand des Fensters, ändern Sie den Namen der Befehlsdatei an **MyToolsOptionsCommand.cs**.  
   

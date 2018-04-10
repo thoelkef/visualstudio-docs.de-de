@@ -1,9 +1,9 @@
 ---
 title: Aktualisieren von Formen und Konnektoren entsprechend das Modell | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 author: gewarren
 ms.author: gewarren
@@ -12,10 +12,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 6d50d0258a44553451deed68a8ccf17c60d88965
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="updating-shapes-and-connectors-to-reflect-the-model"></a>Aktualisieren von Formen und Konnektoren zur Darstellung des Modells
 In einer domänenspezifischen Sprache in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], Sie können die Darstellung einer Form, die den Status der zugrunde liegenden Modell wieder vornehmen.  
@@ -110,7 +110,7 @@ partial class MyLanguageDiagram
   
  Diese Methode kann sowohl für Domäneneigenschaften und nicht aus dem Store-Features, z. B. die Größe der Form verwendet werden.  
   
-##  <a name="OnAssociatedProperty"></a>Verwenden Sie zum Aktualisieren von anderen Funktionen von einer Form AssociateValueWith()  
+##  <a name="OnAssociatedProperty"></a> Verwenden Sie zum Aktualisieren von anderen Funktionen von einer Form AssociateValueWith()  
  Es gibt keine integrierte Methode verfügbar machen, die Funktion als eine Eigenschaft "Domain" vorhanden, für einige Funktionen von einer Form ", z. B. ob sie einen Schatten oder die Art des Pfeils eines Connectors besitzt.  Änderungen an Funktionen sind nicht unter der Kontrolle des Systems Transaktion. Es ist daher nicht angemessen Aktualisieren mithilfe von Regeln, da Regeln nicht aufgerufen werden, wenn der Benutzer den Befehl "Rückgängig" ausführt.  
   
  Stattdessen können Sie solche Funktionen aktualisieren, indem Sie mithilfe von <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnAssociatedPropertyChanged%2A>. Im folgenden Beispiel wird die Art des Pfeils eines Connectors durch den Wert einer Eigenschaft "Domain" in der Beziehung gesteuert, in dem der Connector angezeigt:  
@@ -154,6 +154,6 @@ public partial class ArrowConnector // My connector class.
   
 ```  
   
- `AssociateValueWith()`sollte für jede Eigenschaft "Domain" einmal aufgerufen werden, die Sie registrieren möchten. Nachdem er aufgerufen wurde, ruft alle Änderungen an der angegebenen Eigenschaft `OnAssociatedPropertyChanged()` in alle Formen, die die Eigenschaft Modellelement darstellen.  
+ `AssociateValueWith()` sollte für jede Eigenschaft "Domain" einmal aufgerufen werden, die Sie registrieren möchten. Nachdem er aufgerufen wurde, ruft alle Änderungen an der angegebenen Eigenschaft `OnAssociatedPropertyChanged()` in alle Formen, die die Eigenschaft Modellelement darstellen.  
   
  Es ist nicht notwendig, `AssociateValueWith()` für jede Instanz. Obwohl InitializeResources eine Instanzmethode ist, wird es nur ein Mal für jede Form "-Klasse aufgerufen.

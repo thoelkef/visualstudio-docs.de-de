@@ -1,11 +1,11 @@
 ---
 title: C#-Codeausschnitte | Microsoft-Dokumentation
-ms.custom: 
+ms.custom: ''
 ms.date: 06/05/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - snippets [C#]
@@ -18,10 +18,10 @@ manager: ghogen
 ms.workload:
 - dotnet
 ms.openlocfilehash: 0328ceb6c1420b038ca424c42dd408e36da6f891
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
-ms.translationtype: HT
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="c-code-snippets"></a>C#-Codeausschnitte
 
@@ -35,7 +35,7 @@ Codeausschnitte sind vorgefertigte Ausschnitte aus Code, die Sie schnell in Ihre
 
 Die folgenden Codeausschnitte sind für C# standardmäßig in Visual Studio enthalten.
 
-|Name (oder Verknüpfung)|description|Mögliche Stellen zum Einfügen des Ausschnitts|
+|Name (oder Verknüpfung)|Beschreibung|Mögliche Stellen zum Einfügen des Ausschnitts|
 |--------------------------|-----------------|---------------------------------------|
 |#if|Erstellt eine [#if](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-if)-Direktive und eine [#endif](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-endif)-Direktive.|Beliebig.|
 |#region|Erstellt eine [#region](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-region)-Direktive und eine [#endregion](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-endregion)-Direktive.|Beliebig.|

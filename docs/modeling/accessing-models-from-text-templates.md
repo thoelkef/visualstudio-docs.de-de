@@ -1,9 +1,9 @@
 ---
-title: "Zugreifen auf Modelle über Textvorlagen | Microsoft Docs"
-ms.custom: 
+title: Zugreifen auf Modelle über Textvorlagen | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 helpviewer_keywords:
 - text templates, accessing models
@@ -14,10 +14,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 3162350a9afbe7972c4e593049141f533517bdc3
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="accessing-models-from-text-templates"></a>Zugreifen auf Modelle aus Textvorlagen
 Mithilfe von Textvorlagen können Sie erstellen Berichtsdateien, Quellcodedateien und anderen Textdateien, die auf einer domänenspezifischen sprachenmodelle basieren. Grundlegende Informationen zu den Textvorlagen finden Sie unter [Codegenerierung und T4-Textvorlagen](../modeling/code-generation-and-t4-text-templates.md). Textvorlagen funktionieren in der experimentellen Modus während des Debuggens der DSL und funktioniert auch auf einem Computer, auf dem Sie die DSL bereitgestellt haben.  
@@ -64,7 +64,7 @@ Here is a list of elements in the model:
   
 -   Obwohl die Sprache, in der die Codefragmente geschrieben werden c# ist, können Sie den Text beliebiger Art generieren. Alternativ können Sie den Code schreiben, [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] durch Hinzufügen der Eigenschaft `language="VB"` auf die `template` Richtlinie.  
   
--   Um die Vorlage zu debuggen, hinzufügen `debug="true"` auf die `template` Richtlinie. Die Vorlage wird geöffnet, in eine andere Instanz von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] , wenn eine Ausnahme auftritt. Wenn der Debugger zu einem bestimmten Zeitpunkt im Code unterbrochen werden sollen, fügen Sie die Anweisung`System.Diagnostics.Debugger.Break();`  
+-   Um die Vorlage zu debuggen, hinzufügen `debug="true"` auf die `template` Richtlinie. Die Vorlage wird geöffnet, in eine andere Instanz von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] , wenn eine Ausnahme auftritt. Wenn der Debugger zu einem bestimmten Zeitpunkt im Code unterbrochen werden sollen, fügen Sie die Anweisung `System.Diagnostics.Debugger.Break();`  
   
      Weitere Informationen finden Sie unter [Debuggen einer T4-Textvorlage](../modeling/debugging-a-t4-text-template.md).  
   
@@ -99,7 +99,7 @@ Here is a list of elements in the model:
   
  Wenn ein Fehler gefunden wird, werden Sie im Fenster "Debugfehler" gemeldet werden, und die Ergebnisdatei enthält eine Fehlermeldung angezeigt.  
   
-##  <a name="Multiple"></a>Zugriff auf mehrere Modelle in einer Textvorlage  
+##  <a name="Multiple"></a> Zugriff auf mehrere Modelle in einer Textvorlage  
   
 > [!NOTE]
 >  Diese Methode können Sie mehrere Modelle in der gleichen Vorlage gelesen, jedoch keine ModelBus-Verweise. Modelle, die von ModelBus Verweise miteinander verbunden sind, finden Sie unter [mithilfe von Visual Studio-ModelBus in einer Textvorlage](../modeling/using-visual-studio-modelbus-in-a-text-template.md).  
@@ -177,7 +177,7 @@ For Each element As ExampleElement In Me.WorkModel.Elements
   
 ```  
   
- `LoopSplitter.tt`Ruft `LoopTemplate.t4`, und klicken Sie dann die resultierende Datei in seine Segmente unterteilt. Beachten Sie, dass diese Vorlage nicht unbedingt eine Modellierung Vorlage sein, da das Modell nicht gelesen werden.  
+ `LoopSplitter.tt` Ruft `LoopTemplate.t4`, und klicken Sie dann die resultierende Datei in seine Segmente unterteilt. Beachten Sie, dass diese Vorlage nicht unbedingt eine Modellierung Vorlage sein, da das Modell nicht gelesen werden.  
   
 ```  
 <#@ template hostspecific="true" language="C#" #>  

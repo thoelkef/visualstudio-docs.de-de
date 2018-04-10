@@ -1,9 +1,9 @@
 ---
-title: "Vorgehensweise: Hinzufügen eines Befehls zum Kontextmenü | Microsoft Docs"
-ms.custom: 
+title: 'Vorgehensweise: Hinzufügen eines Befehls zum Kontextmenü | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 helpviewer_keywords:
 - Domain-Specific Language Tools, walkthroughs
@@ -15,10 +15,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 4f65964e1d7fd4221746d8ec17a498cf9ee3a354
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>Gewusst wie: Hinzufügen eines Befehls zum Kontextmenü
 Sie können Ihrer domänenspezifischen Sprache (DSL) Menübefehle hinzufügen, damit Benutzer für die DSL typische Aufgaben ausführen können. Die Befehle werden im Kontextmenü angezeigt, wenn Benutzer mit der rechten Maustaste auf das Diagramm klicken. Sie können einen Befehl so definieren, dass er nur unter bestimmten Bedingungen im Menü angezeigt wird. Sie können beispielsweise angeben, dass der Befehl nur sichtbar ist, wenn der Benutzer auf bestimmte Typen von Elementen oder auf Elemente in bestimmten Zuständen klickt.  
@@ -51,7 +51,7 @@ Sie können Ihrer domänenspezifischen Sprache (DSL) Menübefehle hinzufügen, d
   
  In anderen Fällen können Sie die MEF-Methode zum Definieren von Befehlen in Betracht ziehen. Weitere Informationen finden Sie unter [Erweitern der DSL mithilfe des MEF erstellte](../modeling/extend-your-dsl-by-using-mef.md).  
   
-##  <a name="VSCT"></a>Deklarieren Sie den Befehl in Commands.Vsct  
+##  <a name="VSCT"></a> Deklarieren Sie den Befehl in Commands.Vsct  
  Menübefehle werden in "DslPackage\Commands.vsct" deklariert. Diese Definitionen definieren die Bezeichnungen der Menüelemente und ihre Position in den Menüs.  
   
  Die Datei, die Sie bearbeiten, Commands.vsct, importiert die Definitionen von mehreren h-Dateien, die sich im Verzeichnis befinden *Visual Studio SDK-Installationspfad*\VisualStudioIntegration\Common\Inc. Es enthält auch die Datei "GeneratedVsct.vsct", die aus Ihrer DSL-Definition generiert wird.  
@@ -131,7 +131,7 @@ Sie können Ihrer domänenspezifischen Sprache (DSL) Menübefehle hinzufügen, d
   
     -   `My Context Menu Command`  
   
-##  <a name="version"></a>Aktualisiert die Paketversion in Package.tt  
+##  <a name="version"></a> Aktualisiert die Paketversion in Package.tt  
  Immer wenn Sie einen Befehl hinzufügen oder ändern, müssen Sie den `version`-Parameter des Attributs <xref:Microsoft.VisualStudio.Shell.ProvideMenuResourceAttribute> aktualisieren, das auf die Paketklasse angewendet wird, bevor Sie die neue Version der domänenspezifischen Sprache veröffentlichen.  
   
  Da die Paketklasse in einer generierten Datei definiert wird, müssen Sie das Attribut in der Textvorlagendatei aktualisieren, aus der die Datei Package.cs generiert wird.  
@@ -146,7 +146,7 @@ Sie können Ihrer domänenspezifischen Sprache (DSL) Menübefehle hinzufügen, d
   
      `[VSShell::ProvideMenuResource("1000.ctmenu", version: 2 )]`  
   
-##  <a name="CommandSet"></a>Hiermit wird das Verhalten des Befehls  
+##  <a name="CommandSet"></a> Hiermit wird das Verhalten des Befehls  
  Die DSL umfasst bereits einige Befehle. Diese sind in einer partiellen Klasse implementiert, die in "DslPackage\GeneratedCode\CommandSet.cs" deklariert ist. Um neue Befehle hinzuzufügen, müssen Sie diese Klasse erweitern. Dazu erstellen Sie eine neue Datei mit einer partiellen Deklaration derselben Klasse. Der Name der Klasse ist in der Regel  *\<YourDslName >*`CommandSet`. Überprüfen Sie am besten zunächst den Namen der Klasse und ihren Inhalt.  
   
  Die Befehlssatzklasse wird von <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet> abgeleitet.  
@@ -224,7 +224,7 @@ private void OnStatusMyContextMenuCommand(object sender, EventArgs e)
   
 -   `this.CurrentSelection` Die Form, auf die der Benutzer mit der rechten Maustaste geklickt hat, wird immer in diese Liste aufgenommen. Wenn der Benutzer auf einen leeren Teil des Diagramms klickt, ist das Diagramm als einziges Teil der Liste.  
   
--   `this.IsDiagramSelected()` - `true`Wenn der Benutzer einen leeren Bereich des Diagramms geklickt hat.  
+-   `this.IsDiagramSelected()` - `true` Wenn der Benutzer einen leeren Bereich des Diagramms geklickt hat.  
   
 -   `this.IsCurrentDiagramEmpty()`  
   

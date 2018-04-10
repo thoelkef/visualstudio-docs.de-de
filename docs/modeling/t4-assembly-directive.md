@@ -1,9 +1,9 @@
 ---
 title: T4-Assemblydirektive | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 author: gewarren
 ms.author: gewarren
@@ -12,10 +12,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 9f586931bd14089beca787c24d92bc2605c4d5de
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="t4-assembly-directive"></a>T4-Assemblyanweisung
 In einer [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Entwurfszeittextvorlage wird mit der `assembly`-Direktive eine Assembly geladen, damit im Vorlagencode die Typen der Vorlage verwendet werden können. Der Effekt ist mit dem Hinzufügen eines Assemblyverweises in einem [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Projekt vergleichbar.  
@@ -65,7 +65,7 @@ In einer [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Entwurfszeitt
   
 -   Die Assembly mit der DSL.  
   
-##  <a name="msbuild"></a>Verwenden von Projekteigenschaften in MSBuild und Visual Studio  
+##  <a name="msbuild"></a> Verwenden von Projekteigenschaften in MSBuild und Visual Studio  
  Visual Studio-Makros wie $ (SolutionDir) funktionieren nicht in MSBuild. Wenn Sie Vorlagen im Buildcomputer transformieren möchten, müssen Sie dies mithilfe von Projekteigenschaften tun.  
   
  Bearbeiten Sie die CSPROJ- oder VBPROJ-Datei, und definieren Sie eine Projekteigenschaft. In folgendem Beispiel wird eine Eigenschaft mit dem Namen `myLibFolder` definiert:  

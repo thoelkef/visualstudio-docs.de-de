@@ -1,22 +1,22 @@
 ---
 title: Direkte Aktivierung | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - in-place view activation
 ms.assetid: 7d316945-06e0-4d8e-ba3a-0ef96fc75399
-caps.latest.revision: 
+caps.latest.revision: 26
 manager: douge
 ms.openlocfilehash: d1fe2c1dfe71923897836f803e3a9712b4dec0f1
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="in-place-activation"></a>Direkte Aktivierung
 Wenn die Editor-Ansicht ActiveX- oder andere aktive Steuerelemente hostet, müssen Sie die Editor-Ansicht entweder als ActiveX-Steuerelement oder als aktives Dokumentdatenobjekt mithilfe des Modells für die direkte Aktivierung implementieren.  
@@ -34,7 +34,7 @@ Wenn die Editor-Ansicht ActiveX- oder andere aktive Steuerelemente hostet, müss
 ## <a name="objects-and-interfaces-used"></a>Verwendete Objekte und Schnittstellen  
  Die für zum Erstellen der direkten Aktivierung verwendeten Objekte sind in der folgenden Abbildung dargestellt.  
   
- ![In &#45; Editor mit direkter Aktivierung](../extensibility/media/vsinplaceactivationeditor.gif "VsInPlaceActivationEditor")  
+ ![In&#45;Aktivierung Editor platzieren](../extensibility/media/vsinplaceactivationeditor.gif "VsInPlaceActivationEditor")  
 Editor für die direkte Aktivierung  
   
 > [!NOTE]

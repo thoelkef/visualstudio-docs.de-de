@@ -32,10 +32,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: aea44beeb2a8e6380bd9a568acdece79873e3050
-ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="map-dependencies-across-your-solutions"></a>Projektmappenübergreifendes Zuordnen von Abhängigkeiten
 
@@ -287,7 +287,7 @@ Wenn Sie Abhängigkeiten innerhalb Ihres Codes verstehen möchten, stellen Sie d
 ##  <a name="SeeSourceHeader"></a> Anzeigen von Abhängigkeiten zwischen C- und C++-Quelldateien und Headerdateien  
  Wenn Sie ausführlichere Code Maps für C++-Projekte erstellen möchten, aktivieren Sie für diese Projekte die Compileroption zum Durchsuchen von Informationen (**/FR**). Andernfalls werden Sie anhand einer Meldung aufgefordert, diese Option festzulegen. Bei Auswahl von **OK**wird die Option nur für die aktuelle Code Map festgelegt. Sie können angeben, dass die Meldung für alle späteren Code Maps ausgeblendet werden soll. Wenn Sie diese Meldung ausblenden, können Sie diese auch wieder einblenden. Legen Sie den folgenden Registrierungsschlüssel auf `0` fest oder löschen Sie den Schlüssel:  
 
- **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\NativeProvider : AutoEnableSbr**  
+ **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\NativeProvider: AutoEnableSbr**  
 
  Wenn Sie eine Projektmappe öffnen, die Visual C++-Projekte enthält, könnte die Aktualisierung der IntelliSense-Datenbank etwas Zeit beanspruchen. Während dieser Zeit können möglicherweise keine Code Maps für Headerdateien (.h oder `#include`) erstellt werden, bis die Aktualisierung der IntelliSense-Datenbank abgeschlossen ist. Sie können den Status der Aktualisierung in der Statusleiste von Visual Studio überwachen. Informationen zum Lösen von Problemen oder zu Meldungen, die angezeigt werden, weil bestimmte IntelliSense-Einstellungen deaktiviert sind, finden Sie unter [Problembehandlung bei Code Maps für C- und C++-Code](#Troubleshooting).  
 

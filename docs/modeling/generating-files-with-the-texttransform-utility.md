@@ -12,10 +12,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 5ecc5af3c37889bc79dc5978c33caf8249433978
-ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="generate-files-with-the-texttransform-utility"></a>Generieren von Dateien mit dem Hilfsprogramm "TextTransform"
 
@@ -36,7 +36,7 @@ für die Professional Edition oder
 
 In früheren Versionen von Visual Studio befindet sich die Datei an folgendem Speicherort:
 
-**\Program Files (x86)\Common Files\Microsoft Shared\TextTemplating\{version}**
+**\Programme Dateien (x86) \Common Shared\TextTemplating\{Version}**
 
 wobei {Version}, hängt davon ab, die frühere Version installiert ist.
 
@@ -56,10 +56,10 @@ TextTransform [<options>] <templateName>
 |----------------|---------------------|
 |**-out** \<Dateiname >|Die Datei, die in die Ausgabe der Transformation geschrieben wird.|
 |**-r** \<assembly>|Eine Assembly, die für das Kompilieren und Ausführen der Textvorlage verwendet wird.|
-|**-u** \<namespace>|Ein Namespace, der zum Kompilieren der Vorlage verwendet wird.|
+|**u -** \<Namespace >|Ein Namespace, der zum Kompilieren der Vorlage verwendet wird.|
 |**-I** \<includedirectory>|Ein Verzeichnis, das die Textvorlagen enthalten in der Vorlage angegebenen Text enthält.|
 |**-P** \<referencepath>|Eine zu durchsuchende Verzeichnis an in der Textvorlage angegebenen Assemblys oder zur Verwendung der **- R** Option.<br /><br /> Verwenden Sie z. B. zum Einschließen von Assemblys, die für die Visual Studio-API verwendet<br /><br /> `-P "%VSSHELLFOLDER%\Common7\IDE\PublicAssemblies"`|
-|**-dp** \<ProcessorName >!\< Klassenname >! \<AssemblyName&#124;codeBase >|Der Name, die vollständigen Typnamen und die Assembly mit einem Direktivenprozessor, der zum Verarbeiten von benutzerdefinierter Richtlinien in der Vorlage "Text" verwendet werden kann.|
+|**-dp** \<processorName>!\<className>!\<assemblyName&#124;codeBase>|Der Name, die vollständigen Typnamen und die Assembly mit einem Direktivenprozessor, der zum Verarbeiten von benutzerdefinierter Richtlinien in der Vorlage "Text" verwendet werden kann.|
 |**– ein** [ProcessorName]! [ DirectiveName]! \<ParameterName >! \<%ParameterValue >|Geben Sie einen Parameterwert für einen Direktivenprozessor. Wenn Sie nur den Parameternamen und den Wert angeben, wird der Parameter für alle Direktivenprozessoren verfügbar sein. Wenn Sie einen Direktivenprozessor angeben, ist der Parameter nur für den angegebenen Prozessor zur Verfügung. Wenn Sie einen Richtlinie Namen angeben, ist der Parameter zur Verfügung, nur, wenn die angegebene Direktive verarbeitet wird.<br /><br /> Verwenden Sie den Zugriff auf die Parameterwerte aus einem Direktivenprozessor oder die Vorlage "Text" [ITextTemplatingEngineHost.ResolveParameterValue](https://msdn.microsoft.com/library/microsoft.visualstudio.texttemplating.itexttemplatingenginehost.resolveparametervalue.aspx). In einer Textvorlage enthalten `hostspecific` in der Template-Direktive und rufen Sie die Nachricht auf `this.Host`. Zum Beispiel:<br /><br /> `<#@template language="c#" hostspecific="true"#> [<#= this.Host.ResolveParameterValue("", "", "parameterName") #>]`<br /><br /> Geben Sie immer die "!" markiert, auch wenn Sie die optionale Prozessor- und Anweisungsnamen weglassen. Zum Beispiel:<br /><br /> `-a !!param!value`|
 |**-h**|Enthält die Hilfe.|
 

@@ -1,27 +1,27 @@
 ---
 title: Zugreifen auf den Textpuffer mithilfe der Legacy-API | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - text buffers
 ms.assetid: cd6cf4ae-fff5-4e23-b293-7cbafdb8aed2
-caps.latest.revision: 
+caps.latest.revision: 15
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
 ms.workload:
 - vssdk
 ms.openlocfilehash: 77002e095690da85e73f1a79d405cb5174b96851
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="accessing-the-text-buffer-by-using-the-legacy-api"></a>Zugreifen auf den Textpuffer mithilfe der Legacy-API
 Der Text ist zuständig für das Verwalten von Textstreams und Datei-Dauerhaftigkeit. Obwohl der Puffer Lese- oder Schreibzugriff anderen Formaten alle normalen Kommunikation mit dem Puffer mithilfe von Unicode ausgeführt wird. In die legacy-APIs können die den Textpuffer ein- oder in einem zweidimensionalen Koordinatensystem um Zeichenpositionen im Puffer zu identifizieren.  

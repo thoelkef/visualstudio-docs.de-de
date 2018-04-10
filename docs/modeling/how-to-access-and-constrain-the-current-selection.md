@@ -1,9 +1,9 @@
 ---
-title: "Vorgehensweise: Zugriff auf und Einschränken der aktuellen Auswahl | Microsoft Docs"
-ms.custom: 
+title: 'Vorgehensweise: Zugriff auf und Einschränken der aktuellen Auswahl | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 helpviewer_keywords:
 - Domain-Specific Language, accessing the current selection
@@ -14,10 +14,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 81036e04abc9eac2cbed2879839e95cce52166fc
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="how-to-access-and-constrain-the-current-selection"></a>Gewusst wie: Zugreifen auf die und Einschränken der aktuellen Auswahl
 Wenn Sie einen Menübefehl oder Gestenhandler-Handler für Ihre einer domänenspezifischen Sprache schreiben, können Sie bestimmen, welches Element der Benutzer geklickt wird. Sie können auch einige Formen oder Felder verhindern ausgewählt werden. Sie können z. B. anordnen, dass klickt der Benutzer auf ein Symbol Decorator-Element, das Shape, das sie enthält stattdessen ausgewählt ist. Beschränken die Auswahl auf diese Weise reduziert die Anzahl der Handler, die Sie schreiben müssen. Dies erleichtert auch für die Benutzer an einer beliebigen Stelle in der Form klicken kann, ohne die Decorator-Element zu vermeiden.  

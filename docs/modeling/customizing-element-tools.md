@@ -1,9 +1,9 @@
 ---
 title: Anpassen von Elementtools | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 author: gewarren
 ms.author: gewarren
@@ -12,10 +12,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 0797defab29289b424855f617ed7b6825800b5c7
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="customizing-element-tools"></a>Anpassen von Elementtools
 In einigen DSL-Definitionen stellen Sie ein einzelnes Konzept als eine Gruppe von Elementen dar. Wenn Sie ein Modell, in dem eine Komponente einen festen Satz von Ports erstellen, möchten Sie z. B. immer die Ports, die zur gleichen Zeit wie die übergeordnete Komponente erstellt werden. Aus diesem Grund müssen Sie die Element-Creation-Tool anpassen, sodass es sich um eine Gruppe von Elementen, die statt einem erstellt. Um dies zu erreichen, können Sie anpassen, wie das Tool zur Erstellung von Element initialisiert wird.  

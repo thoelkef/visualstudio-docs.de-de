@@ -1,9 +1,9 @@
 ---
-title: "Erstellen eine Windows Forms-basierten einer domänenspezifischen Sprache | Microsoft Docs"
-ms.custom: 
+title: Erstellen eine Windows Forms-basierten einer domänenspezifischen Sprache | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 author: gewarren
 ms.author: gewarren
@@ -12,10 +12,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 7eb6bc6542350439250ace3dbaa7f2ba920e93ed
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="creating-a-windows-forms-based-domain-specific-language"></a>Erstellen einer Windows Forms-basierten domänenspezifischen Sprache
 Sie können Windows Forms verwenden, um den Status eines Modells domänenspezifische Sprache (DSL), anstatt einen DSL-Diagramm anzuzeigen. Dieses Thema führt Sie durch ein, Binden von Windows Forms an eine DSL, indem Sie die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Visualization and Modeling SDK.  
@@ -53,9 +53,9 @@ Eine DSL-Instanz, die eine Windows-Formular-Benutzeroberfläche und den Modell-E
   
  In der Hauptinstanz von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], beachten Sie die folgenden Punkte bezüglich der DSL-Lösung:  
   
--   `DslDefinition.dsl`enthält keine Diagrammelemente. Dies ist, da nicht DSL Diagramme mit der Instanz Modelle für diese DSL anzuzeigen. Stattdessen binden Sie ein Windows Form für das Modell und die Elemente auf dem Formular werden das Modell angezeigt.  
+-   `DslDefinition.dsl` enthält keine Diagrammelemente. Dies ist, da nicht DSL Diagramme mit der Instanz Modelle für diese DSL anzuzeigen. Stattdessen binden Sie ein Windows Form für das Modell und die Elemente auf dem Formular werden das Modell angezeigt.  
   
--   Zusätzlich zu den `Dsl` und `DslPackage` Projekte, die Projektmappe enthält eine dritte Projekt mit dem Namen `UI.` **UI** Projekt enthält die Definition eines Windows Forms-Steuerelements. `DslPackage`richtet sich nach `UI`, und `UI` richtet sich nach `Dsl`.  
+-   Zusätzlich zu den `Dsl` und `DslPackage` Projekte, die Projektmappe enthält eine dritte Projekt mit dem Namen `UI.` **UI** Projekt enthält die Definition eines Windows Forms-Steuerelements. `DslPackage` richtet sich nach `UI`, und `UI` richtet sich nach `Dsl`.  
   
 -   In der `DslPackage` Projekt `UI\DocView.cs` enthält den Code, in dem Windows Forms-Steuerelement angezeigt, die in definiert ist die `UI` Projekt.  
   
@@ -88,9 +88,9 @@ Eine DSL-Instanz, die eine Windows-Formular-Benutzeroberfläche und den Modell-E
   
 4.  Verwenden der **Domänenklasse namens** mit dem Tool die folgenden Domänenklassen zu erstellen:  
   
-    -   `Field`-Geben Sie dieser eine weitere Domäneneigenschaft, die mit dem Namen `Size`.  
+    -   `Field` -Geben Sie dieser eine weitere Domäneneigenschaft, die mit dem Namen `Size`.  
   
-    -   `Animal`-Im Eigenschaftenfenster festgelegt **Inheritance Modifier** auf **abstrakte**.  
+    -   `Animal` -Im Eigenschaftenfenster festgelegt **Inheritance Modifier** auf **abstrakte**.  
   
 5.  Verwenden der **Domänenklasse** mit dem Tool die folgenden Klassen zu erstellen:  
   
@@ -223,7 +223,7 @@ Das Schema von Links zwischen Datenquellen und Ansichten.
   
 3.  In der **FarmApp Explorer**, öffnen Sie das Kontextmenü für die **Farm** Stammknoten, und wählen Sie **neue Ziege hinzufügen**.  
   
-     `Goat1`wird angezeigt, der **Tieren** anzeigen.  
+     `Goat1` wird angezeigt, der **Tieren** anzeigen.  
   
     > [!WARNING]
     >  Verwenden Sie das Kontextmenü, auf die **Farm** Knoten nicht der **Tieren** Knoten.  

@@ -1,9 +1,9 @@
 ---
 title: Wie Sie mithilfe von Textvorlagen... | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 author: gewarren
 ms.author: gewarren
@@ -12,10 +12,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 47824561813dfc422dfb19460f1c90f7ed78d1ad
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="how-to--with-text-templates"></a>Gewusst wie: ... mit Textvorlagen
 Textvorlagen in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] bieten eine gute Möglichkeit Text beliebiger Art zu generieren. Textvorlagen können zum Generieren von Text zur Laufzeit als Teil Ihrer Anwendung und zur Entwurfszeit zu Ihrem Projektcode zu generieren. Dieses Thema fasst zusammen, die am häufigsten gestellten "Wie kann ich...?" Fragen.  
@@ -79,7 +79,7 @@ Textvorlagen in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] bieten
   
      Weitere Informationen finden Sie unter [erste Schritte mit einer domänenspezifischen Sprachen](../modeling/getting-started-with-domain-specific-languages.md) und [Generieren von Code aus einer domänenspezifischen Sprache](../modeling/generating-code-from-a-domain-specific-language.md).  
   
-### <a name="get-data-from-includevsprvscode-qualityincludesvsprvsmdmd"></a>Abrufen von Daten aus[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]  
+### <a name="get-data-from-includevsprvscode-qualityincludesvsprvsmdmd"></a>Abrufen von Daten aus [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]  
  Bereitgestellten Dienste verwenden [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], durch Festlegen der `hostSpecific` Attribut und laden die `EnvDTE` Assembly. Zum Beispiel:  
   
 ```csharp  
@@ -101,7 +101,7 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
   
 ## <a name="more-general-questions"></a>Weitere allgemeine Fragen  
   
-###  <a name="starting"></a>Was ist die beste Möglichkeit zum Schreiben einer Textvorlage starten?  
+###  <a name="starting"></a> Was ist die beste Möglichkeit zum Schreiben einer Textvorlage starten?  
   
 1.  Schreiben Sie ein bestimmtes Beispiel der generierten Datei.  
   

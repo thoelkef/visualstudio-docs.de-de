@@ -1,9 +1,9 @@
 ---
 title: Integration von Modellen mithilfe von Visual Studio-Modelbus | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 author: gewarren
 ms.author: gewarren
@@ -12,10 +12,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 92be17ab117a1c76456180cbb40a9b1d77f9181c
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="integrating-models-by-using-visual-studio-modelbus"></a>Integrieren von Modellen mit Visual Studio-ModelBus
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus bietet eine Methode zum Erstellen von Links zwischen Modellen und anderer Tools in Modellen. Sie können z. B. domänenspezifische Sprache (DSL) und UML-Modelle verknüpfen. Sie können einen integrierten Satz von DSLs erstellen.  
@@ -33,10 +33,10 @@ ms.lasthandoff: 02/09/2018
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
   
-##  <a name="provide"></a>Bereitstellen des Zugriffs auf eine DSL  
+##  <a name="provide"></a> Bereitstellen des Zugriffs auf eine DSL  
  Bevor Sie ModelBus-Verweise auf ein Modell oder dessen Elemente erstellen können, müssen Sie einen ModelBusAdapter für die DSL erstellen. Dies geht am einfachsten mit der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Modellbuserweiterung, mit der dem DSL-Designer Befehle hinzugefügt werden.  
   
-###  <a name="expose"></a>Eine DSL-Definition mit ModelBus (Modellbus) verfügbar machen.  
+###  <a name="expose"></a> Eine DSL-Definition mit ModelBus (Modellbus) verfügbar machen.  
   
 1.  Laden Sie die Visual Studio-Modellbuserweiterung herunter, und installieren Sie sie, sofern noch nicht geschehen. Weitere Informationen finden Sie unter [Visualization and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=185579).  
   
@@ -67,7 +67,7 @@ ms.lasthandoff: 02/09/2018
  Der Ordner `ModelBusAdapters\bin\*` enthält die Assemblys, die vom `Dsl`-Projekt und vom `ModelBusAdapters`-Projekt erstellt wurden. Um mit einer anderen DSL auf diese DSL zu verweisen, sollten Sie diese Assemblys importieren.  
   
 ### <a name="making-sure-that-elements-can-be-referenced"></a>Sicherstellen, dass auf Elemente verwiesen werden kann  
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus-Adapter verwenden Sie die Guid eines Elements, in der Standardeinstellung identifiziert. Diese IDs müssen deshalb in der Modelldatei erhalten bleiben.  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-ModelBus-Adapter identifizieren ein Element standardmäßig anhand seiner GUID. Diese IDs müssen deshalb in der Modelldatei erhalten bleiben.  
   
 ##### <a name="to-ensure-that-element-ids-are-persisted"></a>So stellen Sie sicher, dass Element-IDs erhalten bleiben  
   
@@ -85,7 +85,7 @@ ms.lasthandoff: 02/09/2018
   
 -   Überschreiben Sie `ResolveElementReference`, um das richtige Element in einem Modellbusverweis zu finden.  
   
-##  <a name="editRef"></a>Zugreifen auf eine DSL aus einem anderen DSL  
+##  <a name="editRef"></a> Zugreifen auf eine DSL aus einem anderen DSL  
  Sie können Modellbusverweise in einer Domäneneigenschaft in einer DSL speichern und dann benutzerdefinierten Code schreiben, der sie nutzt. Sie können es auch dem Benutzer ermöglichen, einen Modellbusverweis zu erstellen, indem er eine Modelldatei und ein darin enthaltenes Element auswählt.  
   
  Um eine DSL mit Verweisen auf einen anderen DSL zu aktivieren, Sie sollten zuerst unbedingt eine *Consumer* Modell Bus Verweise.  
@@ -144,7 +144,7 @@ ms.lasthandoff: 02/09/2018
 3.  Fügen Sie im Debuggingprojekt in der experimentellen Instanz von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Dateien hinzu, die Instanzen der beiden DSLs sind.  
   
     > [!NOTE]
-    >  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus können nur Verweise auf Modelle, die Elemente in der gleichen beheben [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Lösung. Sie können beispielsweise keinen Verweis auf eine Modelldatei in einem anderen Teil Ihres Dateisystems erstellen.  
+    >  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-ModelBus kann nur Verweise auf Modelle auflösen, die Elemente in der gleichen [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Projektmappe sind. Sie können beispielsweise keinen Verweis auf eine Modelldatei in einem anderen Teil Ihres Dateisystems erstellen.  
   
 4.  Erstellen Sie einige Elemente und Links in der Instanz der verfügbar gemachten DSL, und speichern Sie sie.  
   

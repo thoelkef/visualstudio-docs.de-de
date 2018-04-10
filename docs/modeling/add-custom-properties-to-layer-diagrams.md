@@ -1,9 +1,9 @@
 ---
-title: "Hinzufügen benutzerdefinierter Eigenschaften zu Abhängigkeit Diagramme | Microsoft Docs"
-ms.custom: 
+title: Hinzufügen benutzerdefinierter Eigenschaften zu Abhängigkeit Diagramme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 helpviewer_keywords:
 - dependency diagrams, adding custom properties
@@ -14,10 +14,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: f05c5f5a16b0d44794bf6fdcc6990a206dec30f5
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="add-custom-properties-to-dependency-diagrams"></a>Fügen Sie benutzerdefinierter Eigenschaften zu Abhängigkeit-Diagramme hinzu
 Wenn Sie Erweiterungscode Abhängigkeit Diagramme schreiben, können Sie Werte mit jedem Element in einem Diagramm Abhängigkeit speichern. Die Werte bleiben erhalten, wenn das Diagramm gespeichert und erneut geöffnet wird. Außerdem können Sie diese Eigenschaften werden in der **Eigenschaften** Fenster, damit Benutzer angezeigt und werden bearbeitet können. Beispielsweise können Sie Benutzer für jede Ebene einen regulären Ausdruck angeben lassen und Validierungscode schreiben, um sicherzustellen, dass die Namen der Klassen in jeder Ebene dem Muster entsprechen, das vom Benutzer angegeben wird.  
