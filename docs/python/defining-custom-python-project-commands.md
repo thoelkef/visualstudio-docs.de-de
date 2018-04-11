@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 755313a85c96c826335d390235477d76d68cd17f
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: a8e7f1f05ba6a93e696ee13e2f28305b8784d7c2
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/08/2018
 ---
 # <a name="defining-custom-commands-for-python-projects"></a>Definieren von benutzerdefinierten Befehlen für Python-Projekte
 
@@ -50,7 +50,7 @@ Jeder benutzerdefinierte Befehl kann auf folgendes verweisen: Eine Python-Datei,
 
 Dieser Abschnitt veranschaulicht ein einfaches Beispiel, in dem die Startdatei eines Projekts mit „python.exe“ direkt ausgeführt wird, damit Sie sich mit benutzerdefinierten Befehlen vertraut machen können. (So ein Befehl entspricht der Verwendung von **Debuggen > Starten ohne Debuggen**.)
 
-1. Erstellen Sie ein neues Projekt namens „Python-CustomCommands“ mithilfe der Vorlage „Python-Anwendung“. (Falls Sie mit diesem Vorgang noch nicht vertraut sind, finden Sie Anweisungen dazu unter [Schnellstart: Erstellen eines Python-Projekts aus einer Vorlage](quickstart-02-project-from-template.md).)
+1. Erstellen Sie ein neues Projekt namens „Python-CustomCommands“ mithilfe der Vorlage „Python-Anwendung“. (Falls Sie mit diesem Vorgang noch nicht vertraut sind, finden Sie Anweisungen dazu unter [Schnellstart: Erstellen eines Python-Projekts aus einer Vorlage](quickstart-02-python-in-visual-studio-project-from-template.md).)
 
 1. Fügen Sie den Code `print("Hello custom commands")` in `Python_CustomCommands.py` ein.
 
@@ -152,7 +152,7 @@ Alle Attributwerte beachten die Groß-/Kleinschreibung.
 | TargetType | Ja | Gibt an, was das Attribut „Target“ enthält , und wie es dem Attribut „Arguments“ verwendet wird:<ul><li>**executable**: Führt die ausführbare Datei aus, die in „Target“ angegeben ist, und fügt den Wert an „Arguments“ an, als ob er direkt in die Befehlszeile eingegeben worden wäre. Der Wert darf nur einen Programmnamen ohne Argumente enthalten.</li><li>**script**: Führt `python.exe` mit dem Dateinamen in „Target“ aus, gefolgt von dem Wert in „Arguments“.</li><li>**module**: Führt `python -m` gefolgt von dem Modulnamen in Target und dem Wert in „Arguments“ aus.</li><li>**code**: Führt den in „Target“ enthaltenen Inlinecode aus. Der Wert „Arguments“ wird ignoriert.</li><li>**PIP**: Führt `pip` mit dem in „Target“ enthaltenen Befehl gefolgt von „Arguments“ aus. Wenn „ExecuteIn“ jedoch auf „output“ festgelegt ist, geht PIP von einem `install`-Befehl aus und nutzt „Target“ als den Paketnamen.</li></ul> |
 | Ziel | Ja | Der Dateiname, Modulname, Code oder PIP-Befehl, der je nach TargetType genutzt wird. |
 | Argumente | Optional | Gibt eine Zeichenfolge der Argumente (sofern vorhanden) an, die an „Target“ übergeben werden. Beachten Sie: Wenn TargetType `script` entspricht, werden die Argumente an das Python-Programm übergeben und nicht an `python.exe`. Wird beim TargetType `code` ignoriert. |
-| ExecuteIn | Ja | Gibt die Umgebung an, in der die Anwendung ausgeführt wird:<ul><li>**console**: (Standard) Führt „Target“ und die Argumente aus, als würden sie direkt in die Befehlszeile eingegeben werden. Während „Target“ ausgeführt wird, wird ein Befehlsfenster angezeigt, das dann automatisch geschlossen wird.</li><li>**consolepause**: Dasselbe wie „console“, wartet mit dem Schließen des Befehlsfenster jedoch, bis Sie eine Taste drücken.</li><li>**output**: Führt „Target“ aus und zeigt die Ergebnisse im Ausgabefenster in Visual Studio an. Wenn der TargetType „PIP“ ist, verwendet Visual Studio „Target“ als den Paketnamen und fügt „Arguments“ an.</li><li>**REPL**: Führt „Target“ im [interaktiven Python-Fenster](interactive-repl.md) aus. Der optionale Anzeigename wird als Titel des Fensters verwendet.</li><li>**none**: Verhält sich wie „console“.</li></ul>|
+| ExecuteIn | Ja | Gibt die Umgebung an, in der die Anwendung ausgeführt wird:<ul><li>**console**: (Standard) Führt „Target“ und die Argumente aus, als würden sie direkt in die Befehlszeile eingegeben werden. Während „Target“ ausgeführt wird, wird ein Befehlsfenster angezeigt, das dann automatisch geschlossen wird.</li><li>**consolepause**: Dasselbe wie „console“, wartet mit dem Schließen des Befehlsfenster jedoch, bis Sie eine Taste drücken.</li><li>**output**: Führt „Target“ aus und zeigt die Ergebnisse im Ausgabefenster in Visual Studio an. Wenn der TargetType „PIP“ ist, verwendet Visual Studio „Target“ als den Paketnamen und fügt „Arguments“ an.</li><li>**REPL**: Führt „Target“ im [interaktiven Python-Fenster](python-interactive-repl-in-visual-studio.md) aus. Der optionale Anzeigename wird als Titel des Fensters verwendet.</li><li>**none**: Verhält sich wie „console“.</li></ul>|
 | WorkingDirectory | Optional | Der Ordner, in dem der Befehl ausgeführt wird. |
 | ErrorRegex<br>WarningRegEx | Optional | Wird nur verwendet, wenn ExecuteIn `output` entspricht. Beide Werte geben einen regulären Ausdruck an, mit dem Visual Studio die Ausgabe des Befehls analysiert, um Fehler und Warnungen im Fenster „Fehlerliste“ anzuzeigen. Wenn das Argument nicht angegeben wird, wirkt der Befehl sich nicht auf das Fenster „Fehlerliste“ aus. Weitere Informationen darüber, was Visual Studio erwartet, finden Sie unter [Named capture groups (Benannte Erfassungsgruppen)](#named-capture-groups-for-regular-expressions). |
 | RequiredPackages | Optional | Eine Liste der Paketanforderungen für den Befehl mit demselben Format wie [requirements.txt](https://pip.readthedocs.io/en/1.1/requirements.html) („pip.readthedocs.io“). Der Befehl **PyLint ausführen** gibt zum Beispiel `pylint>=1.0.0` an. Visual Studio prüft, ob alle in der Liste aufgelisteten Pakete installiert sind, bevor der Befehl ausgeführt wird. Visual Studio nutzt PIP zum Installieren fehlender Pakete. |
