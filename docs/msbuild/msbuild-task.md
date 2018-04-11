@@ -1,11 +1,11 @@
 ---
 title: MSBuild-Aufgabe | Microsoft-Dokumentation
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#MSBuild
@@ -18,17 +18,17 @@ helpviewer_keywords:
 - MSBuild task [MSBuild]
 - MSBuild, MSBuild task
 ms.assetid: 76577f6c-7669-44ad-a840-363e37a04d34
-caps.latest.revision: 
+caps.latest.revision: 32
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: a5ecaef8f384a9597243fbe2026290e65295da8d
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
-ms.translationtype: HT
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="msbuild-task"></a>MSBuild-Aufgabe
 Erstellt [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Projekte aus einem anderen [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Projekt.  
@@ -36,7 +36,7 @@ Erstellt [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuil
 ## <a name="parameters"></a>Parameter  
  In der folgenden Tabelle werden die Parameter der `MSBuild` -Aufgabe beschrieben.  
   
-|Parameter|description|  
+|Parameter|Beschreibung|  
 |---------------|-----------------|  
 |`BuildInParallel`|Optionaler `Boolean` -Parameter.<br /><br /> Wenn `true`, werden die gemäß `Projects`-Parameter angegebenen Projekte nach Möglichkeit gleichzeitig erstellt. Der Standardwert ist `false`.|  
 |`Projects`|Erforderlicher <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter.<br /><br /> Gibt die zu erstellenden Projektdateien an.|  
@@ -67,7 +67,7 @@ Erstellt [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuil
 ## <a name="passing-properties-to-projects"></a>Übergeben von Eigenschaften für Projekte  
  In Versionen von [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] vor [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5 war das Übergeben unterschiedlicher Sätze von Eigenschaften in andere im [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Element aufgeführte Projekte sehr anspruchsvoll. Wenn Sie das Attribut „Properties“ der [MSBuild-Aufgabe](../msbuild/msbuild-task.md) verwendet haben, wurde die jeweilige Einstellung nur dann auf alle erstellten Projekte angewendet, wenn Sie die [MSBuild-Aufgabe](../msbuild/msbuild-task.md) als Batch verarbeitet und bedingt unterschiedliche Eigenschaften für die einzelnen Projekte in der Elementliste bereitgestellt haben.  
   
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5: Mit „Properties“ und „AdditionalProperties“ werden in dieser Version jedoch zwei neue reservierte Metadatenelemente bereitgestellt, mit denen Sie auf flexible Weise unterschiedliche Eigenschaften für verschiedene Projekte übergeben können, die mithilfe der [MSBuild](../msbuild/msbuild-task.md)-Aufgabe erstellt werden.  
+ Mit „Properties“ und „AdditionalProperties“ bietet [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5 nun jedoch zwei neue reservierte Metadatenelemente, mit denen Sie auf flexible Weise unterschiedliche Eigenschaften für verschiedene Projekte übergeben können, die mithilfe der [MSBuild-Aufgabe](../msbuild/msbuild-task.md) erstellt werden.  
   
 > [!NOTE]
 >  Diese neuen Metadatenelemente gelten nur für Elemente, die in das Attribut „Projects“ der [MSBuild-Aufgabe](../msbuild/msbuild-task.md) übergeben werden.  

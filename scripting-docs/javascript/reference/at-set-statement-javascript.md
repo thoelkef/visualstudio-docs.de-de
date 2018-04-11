@@ -1,13 +1,13 @@
 ---
-title: '@setAnweisung (JavaScript) | Microsoft Docs'
-ms.custom: 
+title: '@set Anweisung (JavaScript) | Microsoft Docs'
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - '@set_JavaScriptKeyword'
@@ -19,17 +19,17 @@ helpviewer_keywords:
 - '@set statement'
 - conditional compilation, variables
 ms.assetid: 36f15926-3e69-422d-82a2-d186dc088203
-caps.latest.revision: 
+caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 10f74a1d57a61d78897b660812a6fd8078244b6b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 04/10/2018
 ---
-# <a name="set-statement-javascript"></a>@setAnweisung (JavaScript)
+# <a name="set-statement-javascript"></a>@set Anweisung (JavaScript)
 Erstellt Variablen, die in bedingten Kompilierungsanweisungen verwendet werden.  
   
 > [!WARNING]
@@ -43,7 +43,7 @@ Erstellt Variablen, die in bedingten Kompilierungsanweisungen verwendet werden.
 ```  
   
 ## <a name="parameters"></a>Parameter  
- *Variablenname*  
+ *varname*  
  Erforderlich. Gültiger [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]-Variablenname. Dem Namen muss stets das Zeichen "@" vorangestellt sein.  
   
  `term`  
@@ -96,5 +96,5 @@ Erstellt Variablen, die in bedingten Kompilierungsanweisungen verwendet werden.
 ## <a name="see-also"></a>Siehe auch  
  [Bedingte Kompilierung](../../javascript/advanced/conditional-compilation-javascript.md)   
  [Variablen für die bedingte Kompilierung](../../javascript/advanced/conditional-compilation-variables-javascript.md)   
- [@cc_onAnweisung](../../javascript/reference/at-cc-on-statement-javascript.md)   
+ [@cc_on Anweisung](../../javascript/reference/at-cc-on-statement-javascript.md)   
  [@if-Anweisung](../../javascript/reference/at-if-statement-javascript.md)

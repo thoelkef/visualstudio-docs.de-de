@@ -1,9 +1,9 @@
 ---
 title: Grundlegendes zum Code DSL | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 helpviewer_keywords:
 - Domain-Specific Language, generated code
@@ -14,10 +14,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 41cf1f19e03c1197c6266b5057af993b677c9c53
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="understanding-the-dsl-code"></a>Grundlegendes zum DSL-Code
 Eine DSL-Projektmappe (Domain-Specific Language, domänenspezifische Sprache) generiert eine API, die Sie zum Lesen und Aktualisieren von Instanzen der DSL in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] verwenden können. Diese API wird im Code definiert, der aus der DSL-Definition generiert wird. In diesem Thema wird die generierte API beschrieben.  
@@ -59,7 +59,7 @@ Eine DSL-Projektmappe (Domain-Specific Language, domänenspezifische Sprache) ge
 ## <a name="generated-files-in-dsl"></a>Generierte Dateien in "Dsl"  
  Die folgenden generierten Dateien werden in der **Dsl** Projekt.  
   
- *YourDsl*`Schema.xsd`  
+ *YourDsl* `Schema.xsd`  
   
  Das Schema für Dateien, die Instanzen Ihrer DSL enthalten. Diese Datei wird kopiert, zur Kompilierung (**"bin"**) Verzeichnis. Bei der Installation der DSL können Sie diese Datei zu kopieren **\Programme\Microsoft Visual Studio 11.0\Xml\Schemas** , damit Modelldateien überprüft werden können. Weitere Informationen finden Sie unter [Bereitstellen einer domänenspezifischen Sprachlösungen](../modeling/deploying-domain-specific-language-solutions.md).  
   

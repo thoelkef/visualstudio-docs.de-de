@@ -1,11 +1,11 @@
 ---
 title: GenerateResource-Aufgabe | Microsoft-Dokumentation
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#GenerateResource
@@ -18,17 +18,17 @@ helpviewer_keywords:
 - MSBuild, GenerateResource task
 - GenerateResource task [MSBuild]
 ms.assetid: c0aff32f-f2cc-46f6-9c3e-a5c9f8f912b1
-caps.latest.revision: 
+caps.latest.revision: 15
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: 37aacbfd2095cf4edae78393569702fe4fea6c7e
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
-ms.translationtype: HT
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="generateresource-task"></a>GenerateResource-Aufgabe
 Konvertiert zwischen TXT- und RESX-Dateien (im XML-basierten Ressourcenformat) und binären RESOURCES-Dateien der Common Language Runtime, die in eine ausführbare Laufzeitbinärdatei eingebettet oder in Satellitenassemblys kompiliert werden können. Diese Aufgabe dient normalerweise zum Konvertieren von TXT- oder RESX-Dateien in RESOURCES-Dateien. Die `GenerateResource`-Aufgabe ist funktional identisch mit [resgen.exe](/dotnet/framework/tools/resgen-exe-resource-file-generator).  
@@ -36,7 +36,7 @@ Konvertiert zwischen TXT- und RESX-Dateien (im XML-basierten Ressourcenformat) u
 ## <a name="parameters"></a>Parameter  
  In der folgenden Tabelle werden die Parameter der `GenerateResource` -Aufgabe beschrieben.  
   
-|Parameter|description|  
+|Parameter|Beschreibung|  
 |---------------|-----------------|  
 |`AdditionalInputs`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter<br /><br /> Enthält zusätzliche Eingaben für die Abhängigkeitsüberprüfung, die von dieser Aufgabe ausgeführt wird. Beispielsweise sollten die Projekt- und Zieldateien in der Regel Eingaben sein, damit bei ihrer Aktualisierung alle Ressourcen neu generiert werden.|  
 |`EnvironmentVariables`|Optionaler `String[]` -Parameter.<br /><br /> Gibt ein Array von Name-Wert-Paaren von Umgebungsvariablen an, das zusätzlich zum regulären Umgebungsblock (oder diesen selektiv überschreibend) an die erzeugte „resgen.exe“ übergeben werden sollte.|  

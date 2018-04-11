@@ -1,11 +1,11 @@
 ---
 title: AL (Assembly Linker)-Aufgabe | Microsoft-Dokumentation
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#AL
@@ -18,17 +18,17 @@ helpviewer_keywords:
 - AL task [MSBuild]
 - MSBuild, AL task
 ms.assetid: 2ddefbf2-5662-4d55-99a6-ac383bf44560
-caps.latest.revision: 
+caps.latest.revision: 22
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: 6d9d3b433e7ae14603a41b7ad802ff386c7aac52
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
-ms.translationtype: HT
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="al-assembly-linker-task"></a>AL (Assembly Linker)-Aufgabe
 Die AL-Aufgabe umschließt „AL.exe“, ein Tool, das mit dem [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)] ausgeliefert wird. Mit dem Assembly Linker-Tool wird eine Assembly mit einem Manifest aus einer oder mehreren Dateien erstellt, bei denen es sich um Module oder Ressourcendateien handelt. Compiler und Entwicklungsumgebungen könnten diese Funktionen möglicherweise bereits bieten, daher ist es häufig nicht erforderlich, diese Aufgabe direkt zu verwenden. Der Assembly Linker ist besonders nützlich für Entwickler, die eine einzelne Assembly aus mehreren Komponentendateien erstellen müssen, z.B. solche, die möglicherweise bei einer Entwicklung in verschiedenen Sprachen produziert werden. Diese Aufgabe kombiniert die Module nicht in einer einzelnen Assemblydatei; die einzelnen Module müssen weiterhin verteilt werden und in der richtigen Reihenfolge verfügbar sein, damit die resultierende Assembly ordnungsgemäß geladen wird. Weitere Informationen zu „AL.exe“ finden Sie unter [Al.exe (Assembly Linker)](/dotnet/framework/tools/al-exe-assembly-linker).  
@@ -36,7 +36,7 @@ Die AL-Aufgabe umschließt „AL.exe“, ein Tool, das mit dem [!INCLUDE[winsdkl
 ## <a name="parameters"></a>Parameter  
  In der folgenden Tabelle werden die Parameter der `AL` -Aufgabe beschrieben.  
   
-|Parameter|description|  
+|Parameter|Beschreibung|  
 |---------------|-----------------|  
 |`AlgorithmID`|Optionaler `String` -Parameter.<br /><br /> Legt einen Algorithmus zum Hashen aller Dateien in einer Mehrfachdateiassembly mit Ausnahme der Datei, die das Assemblymanifest enthält, fest. Weitere Informationen finden Sie in der Dokumentation zur Option `/algid` in [Al.exe (Assembly Linker)](/dotnet/framework/tools/al-exe-assembly-linker).|  
 |`BaseAddress`|Optionaler `String` -Parameter.<br /><br /> Legt die Adresse fest, an der eine DLL zur Laufzeit auf dem Computer des Benutzers geladen wird. Das Laden von Anwendungen kann beschleunigt werden, wenn nicht das Betriebssystem die DLLs im Prozessbereich verschiebt, sondern die Basisadresse der DLLs angegeben wird. Dieser Parameter entspricht der /base[address](/dotnet/framework/tools/al-exe-assembly-linker).|  

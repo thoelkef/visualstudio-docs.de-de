@@ -1,9 +1,9 @@
 ---
 title: Mithilfe von Visual Studio-ModelBus in einer Textvorlage | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 author: gewarren
 ms.author: gewarren
@@ -12,10 +12,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 0184e3b543e509d0e523504c0ea07f6fcc36775f
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="using-visual-studio-modelbus-in-a-text-template"></a>Verwenden von Visual Studio-ModelBus in einer Textvorlage
 Wenn Sie Textvorlagen, der ein Modell zu lesen schreiben, enthält [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus verweist, möglicherweise möchten Sie die Verweise für den Zugriff auf die Ziel-Modelle zu beheben. In diesem Fall müssen Sie die Textvorlagen und die referenzierten domänenspezifische Sprachen (konzentriert) anpassen:  
@@ -263,7 +263,7 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
   
 1.  Erstellen Sie eine neue DSL mit der minimalen Sprache Projektmappenvorlage. Benennen Sie die Sprache MBConsumer, und legen Sie die Dateierweiterung ".consume".  
   
-2.  Fügen Sie im DSL-Projekt einen Verweis auf die MBProvider DSL-Assembly. Mit der rechten Maustaste `MBConsumer\Dsl\References` , und klicken Sie dann auf **Verweis hinzufügen**. In der **Durchsuchen** Registerkarte`MBProvider\Dsl\bin\Debug\Company.MBProvider.Dsl.dll`  
+2.  Fügen Sie im DSL-Projekt einen Verweis auf die MBProvider DSL-Assembly. Mit der rechten Maustaste `MBConsumer\Dsl\References` , und klicken Sie dann auf **Verweis hinzufügen**. In der **Durchsuchen** Registerkarte `MBProvider\Dsl\bin\Debug\Company.MBProvider.Dsl.dll`  
   
      Dadurch können Sie Code erstellen, die andere DSL verwendet. Wenn Sie Verweise auf mehrere konzentriert erstellen möchten, fügen Sie sie auch hinzu.  
   

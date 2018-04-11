@@ -1,11 +1,11 @@
 ---
 title: LIB-Aufgabe | Microsoft-Dokumentation
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VC.Project.VCLibrarianTool.Name
@@ -25,17 +25,17 @@ helpviewer_keywords:
 - MSBuild (Visual C++), LIB task
 - LIB task (MSBuild (Visual C++))
 ms.assetid: e062c7f9-cc69-4a83-9361-1bb5355e5fe8
-caps.latest.revision: 
+caps.latest.revision: 7
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: 13b6ceb908e45cf98f32f89605bf48f8e747b7aa
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
-ms.translationtype: HT
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="lib-task"></a>LIB-Aufgabe
 Umschließt das 32-Bit-Tool von Microsoft zur Bibliotheksverwaltung ("lib.exe"). Der Bibliothek-Manager erstellt und verwaltet eine Bibliothek mit Objektdateien im Common Object File Format (COFF). Der Bibliothek-Manager kann darüber hinaus Exportdateien und Importbibliotheken erstellen, um auf exportierte Definitionen zu verweisen. Weitere Informationen finden Sie unter [LIB-Referenz](/cpp/build/reference/lib-reference) und [Ausführen von LIB](/cpp/build/reference/running-lib).  
@@ -43,7 +43,7 @@ Umschließt das 32-Bit-Tool von Microsoft zur Bibliotheksverwaltung ("lib.exe").
 ## <a name="parameters"></a>Parameter  
  In der folgenden Tabelle werden die Parameter der **LIB**-Aufgabe beschrieben. Die meisten Aufgabenparameter entsprechen einer Befehlszeilenoption.  
   
-|Parameter|description|  
+|Parameter|Beschreibung|  
 |---------------|-----------------|  
 |**AdditionalDependencies**|Optionaler **String[]**-Parameter.<br /><br /> Gibt zusätzliche Elemente an, die zur Befehlszeile hinzugefügt werden.|  
 |**AdditionalLibraryDirectories**|Optionaler **String[]**-Parameter.<br /><br /> Überschreibt den Bibliothekspfad der Umgebung. Geben Sie einen Verzeichnisnamen an.<br /><br /> Weitere Informationen finden Sie unter [/LIBPATH (Libpath-Pfad hinzufügen)](/cpp/build/reference/libpath-additional-libpath).|  

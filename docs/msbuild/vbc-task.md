@@ -1,11 +1,11 @@
 ---
 title: Vbc-Aufgabe | Microsoft-Dokumentation
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Vbc
@@ -18,17 +18,17 @@ helpviewer_keywords:
 - Vbc task [MSBuild]
 - MSBuild, Vbc task
 ms.assetid: 595278b1-2782-4577-b1ba-b4b5ab5625a3
-caps.latest.revision: 
+caps.latest.revision: 19
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: 01b38f523a3a1c97798cdd629290791ab5e480f8
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
-ms.translationtype: HT
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="vbc-task"></a>Vbc-Aufgabe
 Umschließt die Datei „vbc.exe“, die ausführbare Dateien (EXE), Dynamic Link Libraries (DLL) oder Codemodule (NETMODULE) produziert. Weitere Informationen zu vbc.exe finden Sie unter [Visual Basic-Befehlszeilencompiler](/dotnet/visual-basic/reference/command-line-compiler/index).  
@@ -36,7 +36,7 @@ Umschließt die Datei „vbc.exe“, die ausführbare Dateien (EXE), Dynamic Lin
 ## <a name="parameters"></a>Parameter  
  In der folgenden Tabelle werden die Parameter der `Vbc` -Aufgabe beschrieben.  
   
-|Parameter|description|  
+|Parameter|Beschreibung|  
 |---------------|-----------------|  
 |`AdditionalLibPaths`|Optionaler `String[]` -Parameter.<br /><br /> Gibt weitere Ordner an, in denen nach im Verweisattribut angegebenen Assemblys gesucht werden soll|  
 |`AddModules`|Optionaler `String[]` -Parameter.<br /><br /> Bewirkt, dass der Compiler dem Projekt, das Sie aktuell kompilieren, sämtliche Typinformationen aus den angegebenen Dateien bereitstellt. Dieser Parameter entspricht dem Schalter [/addmodule](/dotnet/visual-basic/reference/command-line-compiler/addmodule) des Compilers „vbc.exe“.|  

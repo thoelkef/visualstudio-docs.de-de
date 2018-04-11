@@ -1,11 +1,11 @@
 ---
 title: MT-Aufgabe | Microsoft-Dokumentation
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VC.Project.VCManifestTool.ResourceOutputFileName
@@ -24,17 +24,17 @@ helpviewer_keywords:
 - MSBUILD (Visual C++), MT task
 - MT task (MSBuild (Visual C++))
 ms.assetid: bb94913c-1042-4968-9f08-b394518e899f
-caps.latest.revision: 
+caps.latest.revision: 6
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: 8a9bdfcd391a6377abf1d750330bb1a0dbd8bf80
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
-ms.translationtype: HT
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="mt-task"></a>MT-Aufgabe
 Umschließt das Microsoft-Manifesttool, „Mt.exe“. Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter „Mt.exe“.  
@@ -45,7 +45,7 @@ Umschließt das Microsoft-Manifesttool, „Mt.exe“. Weitere Informationen find
 > [!NOTE]
 >  In der „Mt.exe“-Dokumentation wird als Präfix für Befehlszeilenoptionen ein Bindestrich (**-**) verwendet, in diesem Artikel jedoch ein Schrägstrich (**/**). Beide Präfixe sind zulässig.  
   
-|Parameter|description|  
+|Parameter|Beschreibung|  
 |---------------|-----------------|  
 |**AdditionalManifestFiles**|Optionaler **String[]**-Parameter.<br /><br /> Gibt den Namen von mindestens einer Manifestdatei an.<br /><br /> Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter der „Mt.exe“-Option **/manifest**.|  
 |**AdditionalOptions**|Optionaler **String**-Parameter.<br /><br /> Eine Liste von Befehlszeilenoptionen. Beispiel: „*/option1 /option2 /option#*“. Verwenden Sie diesen Parameter, um Befehlszeilenoptionen anzugeben, die nicht durch einen anderen **MT**-Aufgabenparameter dargestellt werden.<br /><br /> Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter „Mt.exe“.|  

@@ -1,12 +1,12 @@
 ---
-title: "Problembehandlung bei SharePoint-Lösungen | Microsoft Docs"
-ms.custom: 
+title: Problembehandlung bei SharePoint-Lösungen | Microsoft Docs
+ms.custom: ''
 ms.date: 02/22/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - Microsoft.VisualStudio.Tools.SharePoint.Errors.Debugging
@@ -23,10 +23,10 @@ manager: ghogen
 ms.workload:
 - office
 ms.openlocfilehash: 6f03f8fd1fd5609f93d4fae22a7a694e61b1c80c
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="troubleshooting-sharepoint-solutions"></a>Problembehandlung bei SharePoint-Lösungen
   Die folgenden Probleme oder Warnungen können auftreten, wenn SharePoint-Lösungen mithilfe des [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]-Debuggers debuggt werden. Weitere Informationen finden Sie unter [Debuggen von SharePoint 2007-Workflow-Projektmappen](http://msdn.microsoft.com/en-us/3a5392f3-66f3-48be-956e-02de23fa6247).
@@ -217,7 +217,7 @@ ms.lasthandoff: 01/10/2018
  Dieses Problem tritt auf, wenn Sie eine importierte Listeninstanz umbenennen und diese dann in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ausführen.  
   
 ### <a name="error-message"></a>Fehlermeldung  
- Fehler beim Erstellen: Fehler im Bereitstellungsschritt "Funktionen aktivieren": die Datei Template\Features\\[*Projekt importieren**Feature**Namen*] \Files\Lists \\[*alte**Listennamen*] \Schema.xml ist nicht vorhanden.  
+ Fehler beim Erstellen: Fehler im Bereitstellungsschritt "Funktionen aktivieren": die Datei Template\Features\\[*Projekt importieren**Feature**Namen*] \Files\Lists\\[*alte ** Listennamen*] \Schema.xml ist nicht vorhanden.  
   
 ### <a name="resolution"></a>Auflösung  
  Wenn Sie eine Listeninstanz importieren, wird der Datei "Elements.xml" der Listeninstanz ein Attribut namens "CustomSchema" hinzugefügt. Die Datei "Elements.xml" schließt den Pfad einer benutzerdefinierten Datei "schema.xml" für die Listeninstanz ein. Wenn Sie die Listeninstanz in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] umbenennen, ändert sich der Bereitstellungspfad für die benutzerdefinierte Datei "schema.xml", der Pfadwert des CustomSchema-Attributs wird jedoch nicht aktualisiert. Als Ergebnis kann die Listeninstanz die Datei „schema.xml“ im alten Pfad, der vom CustomSchema-Attribut angegeben wird, nicht finden, wenn die Funktion aktiviert wird.  

@@ -1,12 +1,12 @@
 ---
-title: "Vorgehensweise: Verfügbarmachen von Code für VBA in einem Visual C#-Projekt | Microsoft Docs"
-ms.custom: 
+title: 'Vorgehensweise: Verfügbarmachen von Code für VBA in einem Visual C#-Projekt | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - VB
@@ -22,10 +22,10 @@ manager: ghogen
 ms.workload:
 - office
 ms.openlocfilehash: 1b750137a52d30688f69c825f83f72c7cbeebe45
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="how-to-expose-code-to-vba-in-a-visual-c-project"></a>Gewusst wie: Verfügbarmachen von Code für VBA in einem Visual C#-Projekt
   Sie können Code in einem Visual C#-Projekt in Visual Basic für Applikationen (VBA) Code verfügbar machen, wenn Sie möchten, dass die zwei Arten von Code für die Interaktion mit anderen.  
@@ -37,7 +37,7 @@ ms.lasthandoff: 02/09/2018
 ## <a name="exposing-code-in-a-visual-c-project"></a>Verfügbarmachen von Code in einem Visual C#-Projekt  
  Um VBA-Code zum Aufrufen von Code in einem Visual C#-Projekt zu aktivieren, ändern Sie den Code, sodass er für COM sichtbar ist, und legen Sie dann die **ReferenceAssemblyFromVbaProject** Eigenschaft **"true"** im Designer.  
   
- Eine exemplarische Vorgehensweise, die zeigt, wie eine Methode aus VBA in einem Visual C#-Projekt aufgerufen wird, finden Sie unter [Exemplarische Vorgehensweise: Aufrufen von Code von VBA in einem Visual C &#35; Projekt](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md).  
+ Eine exemplarische Vorgehensweise, die zeigt, wie eine Methode aus VBA in einem Visual C#-Projekt aufgerufen wird, finden Sie unter [Exemplarische Vorgehensweise: Aufrufen von Code von VBA in einem Visual C#&#35; Projekt](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md).  
   
 #### <a name="to-expose-code-in-a-visual-c-project-to-vba"></a>Code in einem Visual C#-Projekt für VBA verfügbar machen.  
   
@@ -108,8 +108,8 @@ ms.lasthandoff: 02/09/2018
 ## <a name="see-also"></a>Siehe auch  
  [Vorgehensweise: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [Entwerfen und Erstellen von Office-Projektmappen](../vsto/designing-and-creating-office-solutions.md)   
- [Combining VBA and Document-Level Customizations](../vsto/combining-vba-and-document-level-customizations.md)   
- [Exemplarische Vorgehensweise: Aufrufen von Code von VBA in einem Visual C &#35; Projekt](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md)   
+ [Kombinieren von VBA und Anpassungen auf Dokumentebene](../vsto/combining-vba-and-document-level-customizations.md)   
+ [Exemplarische Vorgehensweise: Aufrufen von Code von VBA in einem Visual C#&#35; Projekt](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md)   
  [Vorgehensweise: Verfügbarmachen von Code für VBA in einem Visual Basic-Projekt](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)  
   
   

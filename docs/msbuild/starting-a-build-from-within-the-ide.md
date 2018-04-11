@@ -1,32 +1,32 @@
 ---
 title: Erstellen eines Builds von der IDE aus | Microsoft-Dokumentation
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - build
 ms.assetid: 936317aa-63b7-4eb0-b9db-b260a0306196
-caps.latest.revision: 
+caps.latest.revision: 5
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: 307d05c9f35309d97b3813dfaa4cc4db1cf1f91c
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
-ms.translationtype: HT
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="starting-a-build-from-within-the-ide"></a>Erstellen eines Builds von der IDE aus
 Benutzerdefinierte Projektsysteme müssen Builds mithilfe von <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildManagerAccessor> starten. In diesem Thema werden die Gründe hierfür beschrieben. Zudem wird die Prozedur erläutert.  
   
 ## <a name="parallel-builds-and-threads"></a>Parallele Builds und Threads  
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] lässt parallele Builds zu, sodass für den Zugriff auf allgemeine Ressourcen eine Vermittlung erforderlich ist. Projektsysteme können Builds asynchron ausführen, diese Systeme dürfen jedoch keine Buildfunktionen innerhalb von Rückrufen aufrufen, die für den Build-Manager bereitgestellt werden.  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] erlaubt parallele Builds, sodass für den Zugriff auf allgemeine Ressourcen eine Vermittlung erforderlich ist. Projektsysteme können Builds asynchron ausführen, diese Systeme dürfen jedoch keine Buildfunktionen innerhalb von Rückrufen aufrufen, die für den Build-Manager bereitgestellt werden.  
   
  Wenn das Projektsystem Umgebungsvariablen ändert, muss es die Knotenaffinität (NodeAffinity) des Builds auf OutOfProc festlegen. Dies bedeutet, dass Sie keine Hostobjekte verwenden können, da sie den prozessinternen Knoten benötigen.  
   
