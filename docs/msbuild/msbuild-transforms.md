@@ -18,10 +18,10 @@ manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: b02c8b6c16bf0d1ffd75ee52d34d72446a06ed25
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
-ms.translationtype: HT
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="msbuild-transforms"></a>MSBuild-Transformationen
 Eine Transformation ist eine 1:1-Konvertierung von einer Elementliste in eine andere. Über Transformationen können nicht nur Elementlisten in einem Projekt transformiert werden, sondern auch direkte Zuordnungen zwischen Eingaben und Ausgaben eines Ziels identifiziert werden. In diesem Artikel werden Transformationen thematisiert, und es wird erläutert, wie sie von [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] zur effizienteren Erstellung von Projekten verwendet werden.  
@@ -69,7 +69,7 @@ Wenn die Elemente in der @(resxfile)-Elementliste beispielsweise *Form1.resx*, *
   
 ## <a name="example"></a>Beispiel  
   
-### <a name="description"></a>description  
+### <a name="description"></a>Beschreibung  
  Im folgenden Beispiel wird eine [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Projektdatei dargestellt, die die Transformationen verwendet. Es wird angenommen, dass nur eine XSD-Datei im Verzeichnis C:\sub0\sub1\sub2\sub3 vorhanden ist, und dass das Arbeitsverzeichnis C:\sub0 lautet.  
   
 ### <a name="code"></a>Code  

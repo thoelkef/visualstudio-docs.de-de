@@ -22,10 +22,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 200ca757e72b2eec8f09fd48a841cc8eb816c85d
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
-ms.translationtype: HT
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="prototypes-and-prototype-inheritance"></a>Prototypen und Prototypvererbung
 In JavaScript ist ein `prototype` eine Eigenschaft von Funktionen und Objekten, die von Konstruktorfunktionen erstellt werden. Der Prototyp einer Funktion ist ein Objekt. Der Hauptverwendungszweck ist, wenn eine Funktion als Konstruktor verwendet wird.  
