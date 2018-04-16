@@ -13,7 +13,7 @@ ms.workload:
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: efcd1d354705fefcaeb0fbfbec0622ff2f06c331
 ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/10/2018
 ---
@@ -70,7 +70,7 @@ Sie können Erweiterungen in den Designer vornehmen, die mit der DSL-Definitione
   
  Um die Erweiterungen für den Hauptknoten bereitstellen [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], und auf anderen Computern, gehen Sie folgendermaßen vor:  
   
-1.  Suchen Sie die VSIX-Installationsdatei im VSIX-Projekt in "bin"\\*\\\*VSIX  
+1.  Suchen Sie die VSIX-Installationsdatei im VSIX-Projekt in "bin"\\*\*\\\*VSIX  
   
 2.  Kopieren Sie diese Datei auf den Zielcomputer, und klicken Sie dann im Windows-Explorer (oder Datei-Explorer), doppelklicken Sie darauf.  
   

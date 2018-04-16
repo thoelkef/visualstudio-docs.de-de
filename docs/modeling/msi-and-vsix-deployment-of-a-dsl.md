@@ -13,7 +13,7 @@ ms.workload:
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: de6b219610908503f37658ff977f042363fb8663
 ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/10/2018
 ---
@@ -104,7 +104,7 @@ Sie können eine domänenspezifische Sprache auf Ihrem eigenen Computer oder auf
   
      [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] erstellt eine Datei namens **CreateMsiSetupProject.vdproj**.  
   
-6.  Kopieren Sie im Windows-Explorer Dsl\\*.vdproj in einen neuen Ordner mit dem Namen Setup.  
+6.  Kopieren Sie im Windows-Explorer Dsl\\\*.vdproj in einen neuen Ordner mit dem Namen Setup.  
   
      (Wenn Sie möchten, können Sie jetzt CreateMsiSetupProject.tt aus Ihrem Dsl-Projekt ausschließen.)  
   

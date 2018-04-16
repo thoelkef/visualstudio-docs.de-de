@@ -17,7 +17,7 @@ ms.workload:
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 12f2a1690a4d68f6900006b10a699c23c83c8c2a
 ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/10/2018
 ---
@@ -79,7 +79,7 @@ Beim Löschen eines Elements werden normalerweise die verwandten Elemente ebenfa
 >  Um Programmcode DSL-Definition hinzugefügt haben, erstellen Sie in eine separaten Codedatei der **Dsl** Projekt, und Schreiben von partiellen Definitionen, um die Klassen in den generierten Code Ordner zu erweitern. Weitere Informationen finden Sie unter [Schreiben von Code zum Anpassen einer domänenspezifischen Sprache](../modeling/writing-code-to-customise-a-domain-specific-language.md).  
   
 ##  <a name="closure"></a> Definieren einen Delete-Abschluss  
- Der Löschvorgang verwendet die Klasse *YourModel *** DeleteClosure** um zu bestimmen, welche Elemente zum Löschen angegebene eine erste Auswahl. `ShouldVisitRelationship()` und `ShouldVisitRolePlayer()` werden wiederholt aufgerufen, wobei das Diagramm der Beziehungen durchlaufen wird. Diese Methoden können Sie überschreiben. ShouldVisitRolePlayer wird mit der Identität des einen Link und das Element an einer der Rollen für den Link bereitgestellt. Es sollte einen der folgenden Werte zurückgeben:  
+ Der Löschvorgang verwendet die Klasse *YourModel***DeleteClosure** um zu bestimmen, welche Elemente zum Löschen angegebene eine erste Auswahl. `ShouldVisitRelationship()` und `ShouldVisitRolePlayer()` werden wiederholt aufgerufen, wobei das Diagramm der Beziehungen durchlaufen wird. Diese Methoden können Sie überschreiben. ShouldVisitRolePlayer wird mit der Identität des einen Link und das Element an einer der Rollen für den Link bereitgestellt. Es sollte einen der folgenden Werte zurückgeben:  
   
 -   **VisitorFilterResult.Yes**: das Element gelöscht werden soll, und die Walker versuchen fortfahren sollte das Element des anderen Links.  
   

@@ -27,7 +27,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/10/2018
 ---
 # <a name="unterminated-comment"></a>Nicht abgeschlossener Kommentar
-Sie begonnen hat einen mehrzeiligen Kommentar-Block, jedoch nicht ordnungsgemäß beendet. Mehrzeilige Kommentare beginnen mit einem "/ *" Kombination und mit der umgekehrten "\*/" Kombination. Im Folgenden finden Sie ein Beispiel dazu:  
+Sie begonnen hat einen mehrzeiligen Kommentar-Block, jedoch nicht ordnungsgemäß beendet. Mehrzeilige Kommentare beginnen mit einem "/\*" Kombination und mit der umgekehrten "\*/" Kombination. Im Folgenden finden Sie ein Beispiel dazu:  
   
 ```JavaScript  
 /* This is a comment  
@@ -36,7 +36,7 @@ This is another part of the same comment.*/
   
 ### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
   
--   Achten Sie darauf, dass Sie zum Beenden der mehrzeilige Kommentare mit "* /".  
+-   Achten Sie darauf, dass Sie zum Beenden der mehrzeilige Kommentare mit "*/".  
   
 ## <a name="see-also"></a>Siehe auch  
  [Comment-Anweisungen](../../javascript/reference/comment-statements-javascript.md)
