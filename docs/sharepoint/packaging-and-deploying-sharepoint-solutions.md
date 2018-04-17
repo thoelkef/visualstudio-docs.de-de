@@ -1,12 +1,10 @@
 ---
-title: "Verpacken und Bereitstellen von SharePoint-Lösungen | Microsoft Docs"
-ms.custom: 
+title: Verpacken und Bereitstellen von SharePoint-Lösungen | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,13 +16,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, packaging and deploying
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: e25d0829305f414712590296b6121d62583736a2
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 8faeb21b7c32f1af91a9149b1b9f6bcadafeed7c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="packaging-and-deploying-sharepoint-solutions"></a>Verpacken und Bereitstellen von SharePoint-Lösungen
   In der Regel ist eine SharePoint-Lösung mithilfe einer Lösung-Paketdatei (.wsp) auf einer SharePoint-Server bereitgestellt. Sie können Visual Studio verwenden, um die SharePoint-Projektelemente in Funktionen zu organisieren und erstellen Sie ein Paket zum Bereitstellen von SharePoint-Funktionen.  
@@ -39,12 +38,12 @@ ms.lasthandoff: 01/10/2018
   
 -   [Bereitstellen von Dateien in SharePoint-Lösungen](#DeployingFiles)  
   
-##  <a name="Creating"></a>Erstellen von Funktionen und Pakete  
+##  <a name="Creating"></a> Erstellen von Funktionen und Pakete  
  Sie können Visual Studio verwenden, zum Gruppieren von verwandten SharePoint-Elemente in einem *Feature*. Eine Funktion für eine Listendefinition Kontakte gehören z. B. die Listeninstanz und die Listendefinition. Sie können diese beiden Elemente in eine einzelne Funktion für die Bereitstellung kombinieren. Weitere Informationen zu Funktionen finden Sie unter [Baustein: Funktionen](http://go.microsoft.com/fwlink/?LinkID=169183).  
   
  Als Nächstes können Sie eine SharePoint-Lösungspaket (.wsp) um mehrere Funktionen, Websitedefinitionen, Assemblys und andere Dateien in einem einzelnen Paket zu bündeln erstellen, dem die Dateien, in einem Format, das von SharePoint benötigt gespeichert, um die Dateien auf dem Server bereitstellen. Weitere Informationen finden Sie unter [Baustein: Lösungen](http://go.microsoft.com/fwlink/?LinkID=169186).  
   
-##  <a name="Tools"></a>Funktions- und Verpacken Toolsupport  
+##  <a name="Tools"></a> Funktions- und Verpacken Toolsupport  
  Die SharePoint-Entwicklungstools können in Visual Studio Sie um die SharePoint-Dateien schnell in Funktionen und Lösungspakete für die Bereitstellung einfacher zu organisieren. Sie können die folgenden Tools verwenden, so konfigurieren Sie das Paket Funktions- und Lösung.  
   
 -   Funktions-Designer und Paket-Designer.  
@@ -88,12 +87,12 @@ ms.lasthandoff: 01/10/2018
 ### <a name="solution-explorer"></a>Projektmappen-Explorer  
  Sie können Projektmappen-Explorer navigieren, und öffnen Sie die Dateien des SharePoint-Projekts. Verwenden Sie das Kontextmenü im Projektmappen-Explorer, zum Hinzufügen von Features, Funktionsereignisempfänger und Funktionsressourcen. Darüber hinaus können Sie Informationen zum Konfigurieren der Funktionen und Pakete für die Bereitstellung Funktions-Designer und Paket-Designer öffnen.  
   
-##  <a name="Deploying"></a>Bereitstellen von SharePoint-Lösungen  
+##  <a name="Deploying"></a> Bereitstellen von SharePoint-Lösungen  
  Nachdem Sie die Funktionen und Pakete in Visual Studio angepasst haben, können Sie die WSP-Datei zur Bereitstellung auf SharePoint-Servern erstellen. Sie können Visual Studio verwenden, Debuggen und testen die WSP-Datei nur auf dem SharePoint-Server, auf dem Entwicklungscomputer. Weitere Informationen zum Bereitstellen von SharePoint-Lösungen zu einem remote-SharePoint-Server finden Sie unter [Bereitstellen einer Lösung](http://go.microsoft.com/fwlink/?LinkID=169194).  
   
  Sie können auch die Schritten zur Bereitstellung auf dem Entwicklungscomputer anpassen. Weitere Informationen finden Sie unter [bereitstellen, veröffentlichen und Aktualisieren von SharePoint-Lösungspakete](../sharepoint/deploying-publishing-and-upgrading-sharepoint-solution-packages.md).  
   
-##  <a name="DeployingFiles"></a>Bereitstellen von Dateien in SharePoint-Lösungen  
+##  <a name="DeployingFiles"></a> Bereitstellen von Dateien in SharePoint-Lösungen  
  In der Regel, wenn Sie die SharePoint-Lösung ein SharePoint-Projektelement hinzugefügt haben, alle erforderlichen Dateien enthalten sind. Dateien, die möglich kompiliert (Codedateien) sind in der Ausgabeassembly der Lösung integriert. Allerdings müssen Sie auch nicht kompilierbare Dateien, z. B. XML, TXT oder Ressourcendateien, einem SharePoint-Projekt hinzufügen. Diese Dateien werden nicht automatisch in der Projektmappe gepackt. Um sicherzustellen, dass sie gepackt werden, hinzufügen entweder die Dateien in einen zugeordneten Ordner oder einer SharePoint-Projektelement.  
   
  Dateien, zugeordnete Ordner hinzugefügt werden automatisch in der SharePoint-Struktur kopiert, wenn die Lösung bereitgestellt wird. Dateien in einer SharePoint-Projektelement hinzugefügt, die im angegebenen Speicherort bereitgestellt werden die **Bereitstellungsspeicherort** Eigenschaft für jede Datei, die teilweise festgelegt ist, basierend auf der **Bereitstellungstyp** Eigenschaft. Wird standardmäßig die **Bereitstellungstyp** Eigenschaftswert ist **NoDeployment**, was bedeutet, dass die Datei nicht mit der Lösung bereitgestellt wird. Sie müssen einen anderen Wert für die Eigenschaft, die Datei im Paket enthalten festlegen.  

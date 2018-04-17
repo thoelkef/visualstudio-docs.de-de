@@ -1,24 +1,23 @@
 ---
-title: "Erstellen von VSTO-Add-ins für Office mithilfe von Visual Studio | Microsoft Docs"
-ms.custom: 
+title: Erstellen von VSTO-Add-ins für Office mithilfe von Visual Studio | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 9a1b95c057163f3a90c8277744d1ec39a2f24cde
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 76a81b61c585c0a35b5b535988e559f5e045da13
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-vsto-add-ins-for-office-by-using-visual-studio"></a>Erstellen von VSTO-Add-ins für Office mithilfe von Visual Studio
   Können Sie die Microsoft Office-Entwicklertools in Visual Studio zum Erstellen von .NET Framework-Anwendungen verwenden, die Office erweitern. Diese Anwendungen werden auch *Office-Lösungen*genannt .  
@@ -35,7 +34,7 @@ ms.lasthandoff: 01/10/2018
 -   Das [Microsoft Office Developer Center](http://go.microsoft.com/fwlink/?LinkId=83467) enthält Links zu technischen Artikeln, Codebeispiele, Downloads, Informationen zu Communities, Support und weitere Dokumentationen zu Office Business Applications (OBAs) und Office-Anpassungen.  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
- [Erste Schritte &#40; Office-Entwicklung in Visual Studio &#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
+ [Erste Schritte &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
  Enthält Links zu Informationen zum Konfigurieren eines Entwicklungscomputers zum Erstellen von Office-Lösungen, zum Erstellen von Office-Projektmappen und Neuigkeiten in der Office-Entwicklung in Visual Studio.  
   
  [Upgraden und Migrieren von Office-Projektmappen](../vsto/upgrading-and-migrating-office-solutions.md)  
@@ -86,13 +85,13 @@ ms.lasthandoff: 01/10/2018
  [Office-Entwicklungsbeispiele und exemplarische Vorgehensweisen](../vsto/office-development-samples-and-walkthroughs.md)  
  Enthält Links zu Beispielanwendungen und Themen, die Schritt-für-Schritt-Anweisungen für häufige Aufgaben enthalten  
   
- [Allgemeine Referenz &#40; Office-Entwicklung in Visual Studio &#41;](../vsto/general-reference-office-development-in-visual-studio.md)  
+ [Allgemeine Referenz &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/general-reference-office-development-in-visual-studio.md)  
  Enthält Links zu ausführlichen Informationen zu Office Primary Interop-Assemblies, Manifeste, Elemente der Benutzeroberfläche und Fehlermeldungen.  
   
- [Verwaltete Referenz &#40; Office-Entwicklung in Visual Studio &#41;](../vsto/managed-reference-office-development-in-visual-studio.md)  
+ [Verwaltete Referenz &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/managed-reference-office-development-in-visual-studio.md)  
  Enthält Links zu Informationen über die API-Namespaces und Typen, die in Office-Projekten mit der Zielversion der [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]verwendet werden. API-Referenzdokumentation zu den Namespaces und Typen, die in Office-Projekten verwendet werden und die auf.NET Framework 3.5 abzielen, finden Sie im folgenden Verweisabschnitt in der Visual Studio 2008-Dokumentation: [2007 Systemverwaltete Referenz](http://go.microsoft.com/fwlink/?LinkId=160658).  
   
- [Referenz zur nicht verwalteten API &#40; Office-Entwicklung in Visual Studio &#41;](../vsto/unmanaged-api-reference-office-development-in-visual-studio.md)  
+ [API-Referenz zur nicht verwalteten &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/unmanaged-api-reference-office-development-in-visual-studio.md)  
  Enthält Links zu Informationen über COM-Schnittstellen, mit denen Sie Aktionen wie Laden und Entladen von verwalteten VSTO-Add-Ins in Office-Anwendungen durchführen können.  
   
 ## <a name="related-sections"></a>Verwandte Abschnitte  

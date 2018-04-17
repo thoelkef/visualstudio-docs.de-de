@@ -1,12 +1,10 @@
 ---
-title: "Lokalisieren von SharePoint-Lösungen | Microsoft Docs"
-ms.custom: 
+title: Lokalisieren von SharePoint-Lösungen | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.Project.GlobalAndFeatureResource
 - VS.SharePoint.Project.AddResourceDialog
@@ -21,13 +19,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, localizing
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 7a1ca2b08bda0a3336b573da7df910872e13470b
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 86ffb2795d5e2a9b9583360146c4bb1d2556b9a1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="localizing-sharepoint-solutions"></a>Lokalisieren von SharePoint-Lösungen
   Die Vorbereitung von Anwendungen für eine weltweite Verwendung wird als Lokalisierung bezeichnet. Bei der Lokalisierung werden die Ressourcen für einen bestimmten Kulturkreis übersetzt. Weitere Informationen finden Sie unter [Globalizing und Lokalisieren von Anwendungen](/visualstudio/ide/globalizing-and-localizing-applications). Dieses Thema bietet eine Übersicht über die Lokalisierung einer SharePoint-Lösung.  

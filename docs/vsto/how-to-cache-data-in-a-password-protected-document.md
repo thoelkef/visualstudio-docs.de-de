@@ -1,12 +1,10 @@
 ---
-title: "Vorgehensweise: Zwischenspeichern von Daten in einem kennwortgeschützten Dokument | Microsoft Docs"
-ms.custom: 
+title: 'Vorgehensweise: Zwischenspeichern von Daten in einem kennwortgeschützten Dokument | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - data [Office development in Visual Studio], caching
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 240debad9945c397290375f1931f4bce9ffa1f34
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 71ce65cd253ea6473a07a98542449a1e47ae9d7c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-cache-data-in-a-password-protected-document"></a>Gewusst wie: Zwischenspeichern von Daten in einem kennwortgeschützten Dokument
   Wenn Sie Daten, für den Datencache in ein Dokument oder eine Arbeitsmappe, die mit einem Kennwort geschützt ist hinzufügen, werden Änderungen an den zwischengespeicherten Daten nicht automatisch gespeichert. Sie können die zwischengespeicherten Daten Änderungen speichern, durch Überschreiben der beiden Methoden in Ihrem Projekt.  
@@ -57,7 +56,7 @@ ms.lasthandoff: 01/10/2018
   
 #### <a name="to-cache-data-in-an-excel-workbook-that-is-protected-with-a-password"></a>Zum Zwischenspeichern von Daten in einer Excel-Arbeitsmappe, die mit einem Kennwort geschützt ist  
   
-1.  In der `ThisWorkbook` Klasse oder eines der `Sheet`  *n*  Klassen, markieren Sie ein öffentliches Feld oder eine Eigenschaft, die zwischengespeichert werden soll. Weitere Informationen finden Sie unter [Caching Data](../vsto/caching-data.md).  
+1.  In der `ThisWorkbook` Klasse oder eines der `Sheet` *n* Klassen, markieren Sie ein öffentliches Feld oder eine Eigenschaft, die zwischengespeichert werden soll. Weitere Informationen finden Sie unter [Caching Data](../vsto/caching-data.md).  
   
 2.  Überschreiben der <xref:Microsoft.Office.Tools.Excel.WorkbookBase.UnprotectDocument%2A> Methode in der `ThisWorkbook` -Klasse und Aufheben des Schutzes für die Arbeitsmappe.  
   

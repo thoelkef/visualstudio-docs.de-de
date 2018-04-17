@@ -1,12 +1,10 @@
 ---
-title: "Exemplarische Vorgehensweise: Hinzufügen eine Anwendungsseite zu einem Workflow | Microsoft Docs"
-ms.custom: 
+title: 'Exemplarische Vorgehensweise: Hinzufügen eine Anwendungsseite zu einem Workflow | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - application page [SharePoint development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 86b402e1f8b8be3adf477d67eb11387fa3091afd
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 97c720ded65e46e85f8d9f20f9f509b31f2cebbb
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-add-an-application-page-to-a-workflow"></a>Exemplarische Vorgehensweise: Hinzufügen einer Anwendungsseite zu einem Workflow
   Diese exemplarische Vorgehensweise veranschaulicht, wie Sie eine Anwendungsseite hinzugefügt wird, die einem Workflowprojekt aus einem Workflow abgeleitete Daten angezeigt. Es baut auf das Projekt in diesem Thema beschriebenen [Exemplarische Vorgehensweise: Erstellen eines Workflows mit Zuordnungs- und Initiierungsformularen](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).  

@@ -1,12 +1,10 @@
 ---
 title: Zwischengespeicherte Daten in Anpassungen auf Dokumentebene | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,13 +18,14 @@ helpviewer_keywords:
 - document-level customizations [Office development in Visual Studio], data model
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 1fe9465c3f238941ace0d5b6fc438c7d5d93ec64
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 0919e046f9e50578df46853c6db9f60cea2f71e3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="cached-data-in-document-level-customizations"></a>Zwischengespeicherte Daten in Anpassungen auf Dokumentebene
   Eine primäre Zweck von Anpassungen auf Dokumentebene ist zum Aufteilen von Daten aus der Ansicht in Office-Dokumenten. Daten bezieht sich auf die Informationen, die in das Dokument, einschließlich von Zahlen und Text gespeichert ist. Ansicht bezieht sich auf der Benutzeroberfläche und das Objektmodell der Microsoft Office Word und Microsoft Office Excel.  
@@ -35,7 +34,7 @@ ms.lasthandoff: 01/10/2018
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
- Weitere Informationen zu Anpassungen auf Dokumentebene finden Sie unter [Übersicht über die Entwicklung von Office-Lösungen &#40; VSTO- &#41; ](../vsto/office-solutions-development-overview-vsto.md) und [Architektur von Anpassungen auf Dokumentebene](../vsto/architecture-of-document-level-customizations.md).  
+ Weitere Informationen zu Anpassungen auf Dokumentebene finden Sie unter [Übersicht über die Entwicklung von Office-Lösungen &#40;VSTO&#41; ](../vsto/office-solutions-development-overview-vsto.md) und [Architektur Anpassungen auf Dokumentebene](../vsto/architecture-of-document-level-customizations.md).  
   
 ## <a name="understanding-the-cached-data-programming-model"></a>Grundlegendes zu das Programmiermodell von zwischengespeicherten Daten  
  Die Dateninsel kann jedes Objekt in der Projektmappe enthalten, die bestimmte Anforderungen erfüllt. Zu diesen Objekten gehören <xref:System.Data.DataSet> Objekte <xref:System.Data.DataTable> Objekte und ein anderes Objekt, das vom serialisiert werden kann die <xref:System.Xml.Serialization.XmlSerializer> Klasse. Weitere Informationen finden Sie unter finden Sie unter [Zwischenspeichern von Daten](../vsto/caching-data.md).  
@@ -45,7 +44,7 @@ ms.lasthandoff: 01/10/2018
  Hoststeuerelemente sind native Objekte in den Objektmodellen von Excel- und Word-Versionen erweitert. Im Gegensatz zu den systemeigenen Objekten können Hoststeuerelemente direkt an verwaltete Datenobjekte gebunden werden. Weitere Informationen finden Sie unter [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md) und [Windows Forms Controls on Office Documents Overview](../vsto/windows-forms-controls-on-office-documents-overview.md).  
   
 ## <a name="accessing-cached-data-on-the-server"></a>Zugreifen auf zwischengespeicherte Daten auf dem Server  
- Für den Zugriff auf zwischengespeicherte Daten in einem Dokument, können Sie die <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> Klasse. Diese Klasse ist Teil der [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)], und es kann auf einem Server ohne Ausführen von Excel oder Word verwendet werden. Wenn öffnet der Benutzer das Dokument, nachdem Sie die zwischengespeicherten Daten ändern, alle Steuerelemente, die an Daten gebunden sind, automatisch mit den Änderungen synchronisiert werden und der Benutzer mit den neuen Daten erhält. Weitere Informationen finden Sie unter [Accessing Data in Documents on the Server](../vsto/accessing-data-in-documents-on-the-server.md).  
+ Für den Zugriff auf zwischengespeicherte Daten in einem Dokument, können Sie die <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> Klasse. Diese Klasse ist Teil der [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)], und es kann auf einem Server ohne Ausführen von Excel oder Word verwendet werden. Wenn öffnet der Benutzer das Dokument, nachdem Sie die zwischengespeicherten Daten ändern, alle Steuerelemente, die an Daten gebunden sind, automatisch mit den Änderungen synchronisiert werden und der Benutzer mit den neuen Daten erhält. Weitere Informationen finden Sie unter [Zugreifen auf Daten in Dokumenten auf dem Server](../vsto/accessing-data-in-documents-on-the-server.md).  
   
  Excel und Word sind nicht erforderlich, auf die Daten auf dem Server nur für die Anzeige auf dem Client zu schreiben. Excel und Word müssen nicht auf dem Server installiert werden. Dies bietet bessere Skalierbarkeit und die Fähigkeit zum Ausführen von schnellen Batchverarbeitung von Dokumenten, die Dateninseln enthalten.  
   

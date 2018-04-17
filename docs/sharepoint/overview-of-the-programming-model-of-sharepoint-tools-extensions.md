@@ -1,12 +1,10 @@
 ---
-title: "Übersicht über das Programmiermodell von SharePoint-Tools-Erweiterungen | Microsoft Docs"
-ms.custom: 
+title: Übersicht über das Programmiermodell von SharePoint-Tools-Erweiterungen | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,19 +14,20 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extending tools
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 8eaa1f5d1cfe8120ec6a01c2fe7f646cf90be44a
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: a52d05dd22ae88deecc2d79d3ab3de7d3c3b6344
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="overview-of-the-programming-model-of-sharepoint-tools-extensions"></a>Übersicht über das Programmiermodell von Erweiterungen für SharePoint-Tools
   Wenn Sie eine Erweiterung für die SharePoint-Tools in Visual Studio erstellen, beginnen Sie damit, indem Sie eine oder mehrere Erweiterungsschnittstellen implementieren, die von den SharePoint-Tools verfügbar gemacht werden. In den meisten Fällen verwenden Sie auch andere von den SharePoint-Tools bereitgestellte Typen, um Features in der Erweiterung zu implementieren. Für einige Szenarien können Sie auch Typen in anderen Objektmodellen verwenden, die von Visual Studio und SharePoint bereitgestellt werden. Sie müssen den Zweck der einzelnen Objektmodelle verstehen und wissen, wie diese miteinander kombinieren können zum Erstellen von Erweiterungen für die SharePoint-Tools.  
   
 ## <a name="extending-the-sharepoint-tools-by-implementing-extensibility-interfaces"></a>Erweitern der SharePoint-Tools durch das Implementieren von Erweiterungsschnittstellen  
- Visual Studio verwendet das Managed Extensibility Framework (MEF) in .NET Framework 4 zum Bereitstellen des Erweiterungsmodells für die SharePoint-Tools. MEF ist eine API (implementiert in der System.ComponentModel.Compositions-Assembly), die Anwendungen ermöglicht, Erweiterungspunkte verfügbar zu machen und Erweiterungen zur Laufzeit zu ermitteln und zu laden. Weitere Informationen über MEF finden Sie unter [Managed Extensibility Framework &#40; MEF &#41; ](/dotnet/framework/mef/index).  
+ Visual Studio verwendet das Managed Extensibility Framework (MEF) in .NET Framework 4 zum Bereitstellen des Erweiterungsmodells für die SharePoint-Tools. MEF ist eine API (implementiert in der System.ComponentModel.Compositions-Assembly), die Anwendungen ermöglicht, Erweiterungspunkte verfügbar zu machen und Erweiterungen zur Laufzeit zu ermitteln und zu laden. Weitere Informationen über MEF finden Sie unter [Managed Extensibility Framework &#40;MEF&#41;](/dotnet/framework/mef/index).  
   
  Um die SharePoint-Tools zu erweitern, implementieren Sie eine oder mehrere Erweiterungsschnittstellen, die von Visual Studio bereitgestellt werden. Sie müssen auch das <xref:System.ComponentModel.Composition.ExportAttribute> sowie bei Bedarf weitere für die SharePoint-Tools spezifische Attribute auf Ihre Schnittstellenimplementierung anwenden. In der folgenden Tabelle sind die Schnittstellen aufgeführt, die Sie zum Erweitern der SharePoint-Tools implementieren können.  
   

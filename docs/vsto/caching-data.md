@@ -1,12 +1,10 @@
 ---
 title: Zwischenspeichern von Daten | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - data caching [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 0d036f11d60a8da1362464a875fdc0f2771cac0e
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 094a4e6c639007fcf09ce28f0be2e398b8245858
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="caching-data"></a>Zwischenspeichern von Daten
   Datenobjekte in einer Anpassung auf Dokumentebene können zwischengespeichert werden, sodass die Daten offline oder ohne Öffnen des Microsoft Office Word oder Microsoft Office Excel zugegriffen werden können. Zum Zwischenspeichern eines Objekts muss das Objekt einen Datentyp aufweisen, der bestimmte Anforderungen erfüllt. Viele allgemeine Datentypen in .NET Framework erfüllen diese Anforderungen, einschließlich <xref:System.String>, <xref:System.Data.DataSet>, und <xref:System.Data.DataTable>.  
@@ -35,7 +34,7 @@ ms.lasthandoff: 01/10/2018
   
 -   Verwenden Sie zum programmgesteuerten Hinzufügen ein Objekts für den Datencache zur Laufzeit die `StartCaching` Methode von einem Host-Elements, z. B. die `ThisDocument` oder `ThisWorkbook` Klassen. Weitere Informationen finden Sie unter [wie: Programmgesteuertes Zwischenspeichern von Datenquellen in einem Office-Dokument](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md).  
   
- Nachdem Sie ein Objekt für den Datencache hinzugefügt haben, können Sie Zugriff auf und ändern die zwischengespeicherten Daten ohne Starten des Word- oder Excel. Weitere Informationen finden Sie unter [Accessing Data in Documents on the Server](../vsto/accessing-data-in-documents-on-the-server.md).  
+ Nachdem Sie ein Objekt für den Datencache hinzugefügt haben, können Sie Zugriff auf und ändern die zwischengespeicherten Daten ohne Starten des Word- oder Excel. Weitere Informationen finden Sie unter [Zugreifen auf Daten in Dokumenten auf dem Server](../vsto/accessing-data-in-documents-on-the-server.md).  
   
 ## <a name="requirements-for-data-objects-to-be-cached"></a>Anforderungen für die Datenobjekte zwischengespeichert werden soll  
  Um ein Datenobjekt in der Projektmappe zwischenzuspeichern, muss das Objekt die folgenden Anforderungen erfüllen:  
@@ -84,7 +83,7 @@ ms.lasthandoff: 01/10/2018
 ## <a name="preventing-data-loss-when-adding-null-values-to-the-data-cache"></a>Verhinderung von Datenverlust beim Hinzufügen von Null-Werte für den Datencache  
  Wenn Sie für den Datencache Objekte hinzufügen, müssen alle zwischengespeicherten Objekte nicht initialisiert werden**null** -Wert vor das Dokument gespeichert und geschlossen wird. Wenn ein zwischengespeichertes Objekt verfügt über eine **null** Wert, wenn das Dokument gespeichert und geschlossen, die [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] entfernt alle zwischengespeicherten Objekte automatisch aus dem Datencache.  
   
- Wenn Sie ein Objekt mit Hinzufügen einer **null** Wert für den Datencache mithilfe der <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> Attribut zur Entwurfszeit können Sie die <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> Klasse initialisiert werden, die zwischengespeicherten Daten Objekte, bevor das Dokument geöffnet wird. Dies ist hilfreich, wenn Sie die zwischengespeicherten Daten auf einem Server ohne Word- oder Excel installiert haben, bevor das Dokument, von einem Endbenutzer geöffnet wird initialisieren möchten. Weitere Informationen finden Sie unter [Accessing Data in Documents on the Server](../vsto/accessing-data-in-documents-on-the-server.md).  
+ Wenn Sie ein Objekt mit Hinzufügen einer **null** Wert für den Datencache mithilfe der <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> Attribut zur Entwurfszeit können Sie die <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> Klasse initialisiert werden, die zwischengespeicherten Daten Objekte, bevor das Dokument geöffnet wird. Dies ist hilfreich, wenn Sie die zwischengespeicherten Daten auf einem Server ohne Word- oder Excel installiert haben, bevor das Dokument, von einem Endbenutzer geöffnet wird initialisieren möchten. Weitere Informationen finden Sie unter [Zugreifen auf Daten in Dokumenten auf dem Server](../vsto/accessing-data-in-documents-on-the-server.md).  
   
 ## <a name="see-also"></a>Siehe auch  
  [Vorgehensweise: Zwischenspeichern von Daten für die Verwendung Offline ist oder auf einem Server](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)   

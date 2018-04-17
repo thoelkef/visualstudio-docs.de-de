@@ -1,12 +1,10 @@
 ---
 title: Erstellen von SharePoint-Workflow-Projektmappen | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 f1_keywords:
 - VSTO.NewSharePointWorkflowWizard.Page3
 - VS.SharePointTools.Workflow.WorkflowName
@@ -22,16 +20,17 @@ helpviewer_keywords:
 - workflows [SharePoint development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: bb0dce0aa162260ca784593ec34ee5c39acd1f31
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 6eef7953a767e08febcb3e8dc42ad4f55e73889c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="creating-sharepoint-workflow-solutions"></a>Erstellen von SharePoint-Workflow-Projektmappen
-  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]bietet Tools, mit denen Sie benutzerdefinierte Workflows zu erstellen, die den Lebenszyklus der Dokumente und Listenelemente in einer SharePoint-Website zu verwalten. Die bereitgestellten Elemente umfassen einen Designer, einen Satz von Aktivitätssteuerelementen sowie die erforderlichen Assemblyverweise. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]umfasst auch die **Assistent zum Anpassen von SharePoint**, damit die erstellen und Konfigurieren von Workflows.  
+  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] bietet Tools, mit denen Sie benutzerdefinierte Workflows zu erstellen, die den Lebenszyklus der Dokumente und Listenelemente in einer SharePoint-Website zu verwalten. Die bereitgestellten Elemente umfassen einen Designer, einen Satz von Aktivitätssteuerelementen sowie die erforderlichen Assemblyverweise. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] umfasst auch die **Assistent zum Anpassen von SharePoint**, damit die erstellen und Konfigurieren von Workflows.  
   
  Die Liste der erforderlichen Komponenten zum Erstellen von SharePoint-Projekte in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], finden Sie unter [Anforderungen für die Entwicklung von SharePoint-Lösungen](../sharepoint/requirements-for-developing-sharepoint-solutions.md). Weitere Informationen zu SharePoint finden Sie unter [Microsoft SharePoint Products and Technologies](http://go.microsoft.com/fwlink/?LinkId=178470).  
   
@@ -124,12 +123,12 @@ ms.lasthandoff: 01/10/2018
  Sie können Informationen auch mithilfe der Eigenschaften eines Elements in der SharePoint-Bibliothek oder eine Liste von Benutzern sammeln. Die Hauptcodedatei (Workflow1.cs oder Workflow1.vb) wird eine Instanz der Microsoft.SharePoint.Workflow.SPWorkflowActivationProperties.WorkflowProperties-Klasse, die mit dem Namen deklariert `workflowProperties`. Verwenden der `workflowProperties` Objekt, das die Eigenschaften der Bibliothek oder Liste im Code zugreifen. Ein Beispiel finden Sie unter [Exemplarische Vorgehensweise: Erstellen und Debuggen einer SharePoint-Workflow-Lösung](../sharepoint/walkthrough-creating-and-debugging-a-sharepoint-workflow-solution.md).  
   
 ## <a name="debugging-a-sharepoint-workflow-template"></a>Debuggen einer SharePoint-Workflow-Vorlage  
- Sie können Debuggen einer SharePoint-Workflowprojekt dieselbe wie bei anderen [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] webbasierte Projekte. Beim Starten der [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] -Debugger, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] verwendet die Einstellungen, die Sie, in angeben der **Assistent zum Anpassen von SharePoint** öffnen Sie die entsprechende SharePoint-Website und die Workflowvorlage automatisch zuordnen mit der entsprechenden Bibliothek oder der Liste. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Außerdem fügt der [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] debugger an die [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] Prozess w3wp.exe Namens.  
+ Sie können Debuggen einer SharePoint-Workflowprojekt dieselbe wie bei anderen [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] webbasierte Projekte. Beim Starten der [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] -Debugger, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] verwendet die Einstellungen, die Sie, in angeben der **Assistent zum Anpassen von SharePoint** öffnen Sie die entsprechende SharePoint-Website und die Workflowvorlage automatisch zuordnen mit der entsprechenden Bibliothek oder der Liste. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Außerdem fügt der [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] debugger an die [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] Prozess w3wp.exe Namens.  
   
  Um den Workflow zu testen, müssen Sie ihn manuell starten. Weitere Informationen finden Sie im Abschnitt "Debuggen von Workflows" in [Debuggen von SharePoint-Lösungen](../sharepoint/debugging-sharepoint-solutions.md). Weitere Informationen zu [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Anwendungsdebugging angezeigt wird, finden Sie unter [Debuggen von Webanwendungen und Skripts](/visualstudio/debugger/debugging-web-applications-and-script).  
   
 ## <a name="deploying-a-sharepoint-workflow-template"></a>Bereitstellen einer SharePoint-Workflow-Vorlage  
- [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Bereitstellen von SharePoint-Workflow-Projekte wie andere [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint-Projekte. Weitere Informationen finden Sie unter [Verpacken und Bereitstellen von SharePoint-Lösungen](../sharepoint/packaging-and-deploying-sharepoint-solutions.md).  
+ [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Bereitstellen von SharePoint-Workflow-Projekte wie andere [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint-Projekte. Weitere Informationen finden Sie unter [Verpacken und Bereitstellen von SharePoint-Lösungen](../sharepoint/packaging-and-deploying-sharepoint-solutions.md).  
   
 ## <a name="importing-globally-reusable-workflows"></a>Importieren von Global Wiederverwendbaren Workflows  
  Zusätzlich zu den standortspezifischen wieder verwendbaren Workflows erstellen, SharePoint-Designer ermöglicht Ihnen die Erstellung *Global wiederverwendbare Workflows*, welche sind Workflows, die von SharePoint-Website verwendet werden können. Das Projekt "Wiederverwendbaren Workflow importieren" in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] derzeit nicht global wiederverwendbare Workflows importieren. Allerdings können entweder mit dem eine Global wieder verwendbaren Workflows in einer wiederverwendbaren Workflows umgewandelt SharePoint Designer oder der Workflow als nicht konvertierten deklarativen Workflow importieren. Weitere Informationen finden Sie unter [Importieren von Elementen aus einer vorhandenen SharePoint-Website](../sharepoint/importing-items-from-an-existing-sharepoint-site.md).  

@@ -1,13 +1,10 @@
 ---
-title: "Exemplarische Vorgehensweise: Erstellen eines Silverlight-Webparts, die OData für SharePoint anzeigt | Microsoft Docs"
-ms.custom: 
+title: 'Exemplarische Vorgehensweise: Erstellen eines Silverlight-Webparts, die OData für SharePoint anzeigt | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/22/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.SPE.SilverlightWebPart
 dev_langs:
@@ -15,14 +12,14 @@ dev_langs:
 - CSharp
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3c2c66490e0eb46508fce0f346fe44563548b407
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 019c1d4b20f1d7a53fc68ef561d45989e93eee28
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-a-silverlight-web-part-that-displays-odata-for-sharepoint"></a>Exemplarische Vorgehensweise: Erstellen eines Silverlight-Webparts, das OData für SharePoint anzeigt
   SharePoint 2010 macht seine Daten mithilfe von OData. In SharePoint wird die OData-Dienst von RESTful-Dienst ListData.svc implementiert. In dieser exemplarischen Vorgehensweise wird gezeigt, wie einen SharePoint-Webpart erstellt, der eine Silverlight-Anwendung hostet. Die Silverlight-Anwendung zeigt Listen Sie Informationen zu SharePoint-Ankündigung mithilfe von ListData.svc. Weitere Informationen finden Sie unter [SharePoint Foundation-REST-Schnittstelle](http://go.microsoft.com/fwlink/?LinkId=225999) und [Open Data Protocol](http://go.microsoft.com/fwlink/?LinkId=226000).  
@@ -32,7 +29,7 @@ ms.lasthandoff: 01/10/2018
 ## <a name="prerequisites"></a>Erforderliche Komponenten  
  Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:  
   
--   Unterstützte Editionen von Microsoft Windows und SharePoint. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)][Anforderungen für die Entwicklung von SharePoint-Lösungen](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
+-   Unterstützte Editionen von Microsoft Windows und SharePoint. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [Anforderungen für die Entwicklung von SharePoint-Lösungen](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
   
 -   [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)]  
   
@@ -82,7 +79,7 @@ ms.lasthandoff: 01/10/2018
   
 3.  In das Adressfeld von der **Hinzufügen eines Dienstverweises** Dialogfeld Geben Sie die URL der SharePoint-Website, z. B. **http://MySPSite**, und wählen Sie dann die **wechseln** Schaltfläche.  
   
-     Wenn Silverlight des SharePoint-OData-Diensts ListData.svc findet, wird die Adresse mit den vollständigen Dienst-URL ersetzt. In diesem Beispiel wird http://myserver http://myserver/_vti_bin/ListData.svc.  
+     Wenn Silverlight des SharePoint-OData-Diensts ListData.svc findet, wird die Adresse mit den vollständigen Dienst-URL ersetzt. In diesem Beispiel http://myserver wird http://myserver/_vti_bin/ListData.svc.  
   
 4.  Wählen Sie die **OK** Schaltfläche zum Hinzufügen des Dienstverweises zum Projekt, und verwenden Sie den standarddienstnamen ServiceReference1.  
   

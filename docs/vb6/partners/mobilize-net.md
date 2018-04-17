@@ -1,11 +1,10 @@
 ---
 title: Mobilisierung JsonTextWriter Visual Basic-Upgrade Companion (VBUC) | Microsoft Docs
-description: "Mobilisierung JsonTextWriter-Tool für die Migration von Visual Basic 6 in Visual Basic .NET und c#"
+description: Mobilisierung JsonTextWriter-Tool für die Migration von Visual Basic 6 in Visual Basic .NET und c#
 ms.date: 09/05/2017
 ms.technology:
 - devlang-vb
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - visual-basic
 author: rpetrusha
@@ -13,11 +12,11 @@ ms.author: ronpet
 manager: wpickett
 ms.workload:
 - dotnet
-ms.openlocfilehash: b7fa2a16143368b829f29f43a4c8f60536b55c52
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d80fa0e2f00ec9ea834483e8dd2c5c262a5eea0c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="mobilizenets-visual-basic-upgrade-companion-vbuc"></a>Mobile Verwendung JsonTextWriter Visual Basic-Upgrade Companion (VBUC) einrichten.
 
@@ -87,7 +86,7 @@ Dies sind einige der besonderen Merkmale der Begleithandbuch zum Aktualisieren v
 Eine aktualisierte und ausführlichere Featureliste finden Sie auf der [VBUCs technischen Standort](http://www.vbtonet.com/?msdn).
 
 ## <a name="learn-more-and-try-it-for-yourself"></a>Erfahren Sie mehr, und versuchen Sie es selbst
-Erfahren Sie mehr über die VBUC, Customer Beweises Zugriff Whitepapers, Videos und Webcasts, lesen oder eine kostenlose Testversion an http://www.mobilize.net/solution/msdn herunterladen.
+Erfahren Sie mehr über die VBUC, lesen Sie Kunden Beweis, white Paper, Videos und Webcasts zuzugreifen oder auf eine kostenlose Testversion herunterladen http://www.mobilize.net/solution/msdn.
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 

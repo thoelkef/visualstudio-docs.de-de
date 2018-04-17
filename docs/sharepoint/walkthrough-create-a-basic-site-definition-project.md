@@ -1,12 +1,10 @@
 ---
 title: 'Exemplarische Vorgehensweise: Erstellen einer einfachen Projekts Websitedefinition | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - site definitions [SharePoint development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 72a99a082fb1626013be6fa0ac5c759a43fd58a7
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: d54b3ea7c32230a683359ee466b03e8954fec2ab
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-create-a-basic-site-definition-project"></a>Exemplarische Vorgehensweise: Erstellen eines einfachen Projekts für eine Websitedefinition
   In dieser exemplarischen Vorgehensweise wird gezeigt, wie eine grundlegenden Websitedefinition erstellt, die ein visuelles Webpart mit einigen Steuerelementen enthält. Aus Gründen der Übersichtlichkeit weist das visuelle Webpart, das Sie erstellen nur wenige Steuerelemente. Allerdings können Sie komplexere Websitedefinitionen für SharePoint erstellen, die weitere Funktionen enthalten.  
@@ -52,7 +51,7 @@ ms.lasthandoff: 01/10/2018
   
 #### <a name="to-create-a-site-definition-project"></a>Zum Erstellen des Projekts für eine Websitedefinition  
   
-1.  Wählen Sie in der Menüleiste **Datei**, **Neu**, **Projekt**aus. Wenn die IDE für die Verwendung von Visual Basic-entwicklungseinstellungen auf der Menüleiste festgelegt ist, wählen Sie **Datei**, **neues Projekt**.  
+1.  Wählen Sie in der Menüleiste **Datei** > **Neu** > **Projekt** aus. Wenn die IDE für die Verwendung von Visual Basic-entwicklungseinstellungen auf der Menüleiste festgelegt ist, wählen Sie **Datei**, **neues Projekt**.  
   
      Das Dialogfeld **Neues Projekt** wird angezeigt.  
   

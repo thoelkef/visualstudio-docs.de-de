@@ -1,13 +1,10 @@
 ---
 title: Architektur von VSTO-Add-ins | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,14 +16,14 @@ helpviewer_keywords:
 - add-ins [Office development in Visual Studio], architecture
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a8abb77978731a9fa5cd43acdcb4928944c605b1
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 94c8a9fa83cd4a37918c22ae0e38ab23c3ca94d7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="architecture-of-vsto-add-ins"></a>Architektur von VSTO-Add-Ins
   VSTO-Add-Ins, die mit den Office Developer Tools in Visual Studio erstellt werden, verfügen über Architekturfunktionen, mit denen die Stabilität und Sicherheit gestärkt werden und die enge Zusammenarbeit mit Microsoft Office ermöglicht wird. In diesem Thema werden die folgenden Aspekte von VSTO-Add-Ins beschrieben:  
@@ -39,12 +36,12 @@ ms.lasthandoff: 01/10/2018
   
  [!INCLUDE[appliesto_allapp](../vsto/includes/appliesto-allapp-md.md)]  
   
- Allgemeine Informationen zum Erstellen von VSTO-Add-ins finden Sie unter [Übersicht über die Entwicklung von Office-Lösungen &#40; VSTO- &#41; ](../vsto/office-solutions-development-overview-vsto.md) und [Einstieg Programmieren von VSTO-Add-ins](../vsto/getting-started-programming-vsto-add-ins.md).  
+ Allgemeine Informationen zum Erstellen von VSTO-Add-ins finden Sie unter [Übersicht über die Entwicklung von Office-Lösungen &#40;VSTO&#41; ](../vsto/office-solutions-development-overview-vsto.md) und [erste Schritte beim Programmieren von VSTO-Add-ins](../vsto/getting-started-programming-vsto-add-ins.md).  
   
 ##  <a name="UnderstandingAddIns"></a> Grundlegendes zu VSTO-Add-Ins  
  Wenn Sie die Office Developer Tools in Visual Studio verwenden, um ein VSTO-Add-In zu erstellen, erstellen Sie eine verwaltete Codeassembly, die von einer Microsoft Office-Anwendung geladen wird. Nach dem Laden der Assembly kann das VSTO-Add-In auf Ereignisse reagieren, die in der Anwendung ausgelöst werden (z. B. wenn ein Benutzer auf ein Menüelement klickt). Außerdem kann das VSTO-Add-In einen Aufruf an das Objektmodell ausführen, um die Anwendung zu automatisieren und zu erweitern, und der Code kann alle Klassen in [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)]verwenden.  
   
- Die Assembly verwendet die primäre Interopassembly der Anwendung, um mit den COM-Komponenten der Anwendung zu kommunizieren. Weitere Informationen finden Sie unter [Office Primary Interopassemblys](../vsto/office-primary-interop-assemblies.md) und [Übersicht über die Entwicklung von Office-Lösungen &#40; VSTO- &#41; ](../vsto/office-solutions-development-overview-vsto.md).  
+ Die Assembly verwendet die primäre Interopassembly der Anwendung, um mit den COM-Komponenten der Anwendung zu kommunizieren. Weitere Informationen finden Sie unter [Office Primary Interopassemblys](../vsto/office-primary-interop-assemblies.md) und [Übersicht über die Entwicklung von Office-Lösungen &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
   
  Wenn für eine Anwendung mehrere VSTO-Add-Ins installiert werden, wird jedes VSTO-Add-In in einer anderen Anwendungsdomäne geladen. So kann ein VSTO-Add-In, das sich falsch verhält, nicht bewirken, dass für andere VSTO-Add-Ins Fehler auftreten. Es wird auch sichergestellt, dass beim Schließen der Anwendung alle VSTO-Add-In-Assemblys aus dem Speicher entladen werden. Weitere Informationen zu Anwendungsdomänen finden Sie unter [Anwendungsdomänen](/dotnet/framework/app-domains/application-domains).  
   
@@ -112,7 +109,7 @@ ms.lasthandoff: 01/10/2018
 ## <a name="see-also"></a>Siehe auch  
  [Architektur von Office-Projektmappen in Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)   
  [Architektur von Anpassungen auf Dokumentebene](../vsto/architecture-of-document-level-customizations.md)   
- [Visual Studio Tools for Office Runtime Overview](../vsto/visual-studio-tools-for-office-runtime-overview.md)   
+ [Übersicht über die Visual Studio-Tools für Office-Laufzeit](../vsto/visual-studio-tools-for-office-runtime-overview.md)   
  [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)   
  [Entwickeln von Office-Projektmappen](../vsto/developing-office-solutions.md)   
  [Sichern von Office-Projektmappen](../vsto/securing-office-solutions.md)   

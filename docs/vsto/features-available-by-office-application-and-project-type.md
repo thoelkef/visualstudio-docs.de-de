@@ -1,12 +1,10 @@
 ---
-title: "Verfügbare Funktionen nach Office-Anwendung und Projekttyp | Microsoft Docs"
-ms.custom: 
+title: Verfügbare Funktionen nach Office-Anwendung und Projekttyp | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,13 +19,14 @@ helpviewer_keywords:
 - form regions [Office development in Visual Studio], features available
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: b79c7a913e8ce06b1d833f78aad9e8565d54aff2
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: ff8128f9c142193d9fcde2f139e29a3fb4f3326e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="features-available-by-office-application-and-project-type"></a>Verfügbare Funktionen nach Office-Anwendung und Projekttyp
   Visual Studio verfügt über mehrere Arten von Projektvorlagen, die unterschiedliche Geschäftsszenarien für Microsoft Office-Anwendungen unterstützen, z. B.:  
@@ -36,7 +35,7 @@ ms.lasthandoff: 01/10/2018
   
 -   VSTO-Add-Ins  
   
- Nicht alle Anwendungen können jeden Projekttyp verwenden. Beispielsweise sind Projekte auf Dokumentebene nur für Microsoft Office Word und Microsoft Office Excel verfügbar. Ebenso sind einige Features nur für bestimmte Projekt- oder Anwendungstypen verfügbar. Der Aktionsbereich ist beispielsweise nur in Projekten auf Dokumentebene verfügbar, und Menübanderweiterungen stehen nur für einige Anwendungen zur Verfügung. Weitere Informationen zu den unterschiedlichen Projekttypen finden Sie unter [Übersicht über die Entwicklung von Office-Lösungen &#40; VSTO- &#41; ](../vsto/office-solutions-development-overview-vsto.md).  
+ Nicht alle Anwendungen können jeden Projekttyp verwenden. Beispielsweise sind Projekte auf Dokumentebene nur für Microsoft Office Word und Microsoft Office Excel verfügbar. Ebenso sind einige Features nur für bestimmte Projekt- oder Anwendungstypen verfügbar. Der Aktionsbereich ist beispielsweise nur in Projekten auf Dokumentebene verfügbar, und Menübanderweiterungen stehen nur für einige Anwendungen zur Verfügung. Weitere Informationen zu den unterschiedlichen Projekttypen finden Sie unter [Übersicht über die Entwicklung von Office-Lösungen &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
   
 > [!NOTE]  
 >  Office-Projektvorlagen sind nur in einigen Editionen von [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] verfügbar. Weitere Informationen finden Sie unter [Configuring a Computer to Develop Office Solutions](../vsto/configuring-a-computer-to-develop-office-solutions.md).  
@@ -52,7 +51,7 @@ ms.lasthandoff: 01/10/2018
 ## <a name="features-available-in-different-project-types"></a>In Projekttypen verfügbare Features  
  In der folgenden Tabelle ist aufgeführt, für welche Projekttypen das jeweilige Feature bereitgestellt wird.  
   
-|Funktion|Projekttypen, die das Feature bereitstellen|Weiterführende Themen|  
+|Feature|Projekttypen, die das Feature bereitstellen|Weiterführende Themen|  
 |-------------|--------------------------------------------|---------------------|  
 |Aktionsbereich|Projekte auf Dokumentebene|[Übersicht über den Aktionsbereich](../vsto/actions-pane-overview.md)|  
 |ClickOnce-Bereitstellung:|VS-Projekte und Projekte auf Dokumentebene|[Bereitstellen einer Office-Projektmappe](../vsto/deploying-an-office-solution.md)|  
@@ -69,12 +68,12 @@ ms.lasthandoff: 01/10/2018
 |Visueller Dokumentdesigner|Projekte auf Dokumentebene|[Office-Projekte in der Visual Studio-Umgebung](../vsto/office-projects-in-the-visual-studio-environment.md)|  
   
 ## <a name="see-also"></a>Siehe auch  
- [Erste Schritte &#40; Office-Entwicklung in Visual Studio &#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
- [Übersicht über die Entwicklung von Office-Lösungen &#40; VSTO- &#41;](../vsto/office-solutions-development-overview-vsto.md)   
+ [Erste Schritte &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
+ [Übersicht über die Entwicklung von Office-Lösungen &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
  [Aktionsbereichsübersicht](../vsto/actions-pane-overview.md)   
  [Übersicht über das Menüband](../vsto/ribbon-overview.md)   
  [Erstellen von Outlook-Formularbereichen](../vsto/creating-outlook-form-regions.md)   
- [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md)   
+ [Übersicht über Hostelemente und Hoststeuerelemente](../vsto/host-items-and-host-controls-overview.md)   
  [Zwischengespeicherte Daten in Anpassungen auf Dokumentebene](../vsto/cached-data-in-document-level-customizations.md)   
  [Bereitstellen einer Office-Projektmappe](../vsto/deploying-an-office-solution.md)  
   

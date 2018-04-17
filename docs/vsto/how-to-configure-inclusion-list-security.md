@@ -1,12 +1,10 @@
 ---
 title: 'Vorgehensweise: Konfigurieren der Aufnahmelistensicherheit | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - inclusion lists [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 0b95b85f028ac003cedb05248b6884c24ca32008
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: f8995e95ed1a35841aab945daa1ea35854946b56
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-configure-inclusion-list-security"></a>Gewusst wie: Konfigurieren der Aufnahmelistensicherheit
   Wenn Sie über Administratorberechtigungen verfügen, können Sie konfigurieren die [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] vertrauenswürdige Eingabeaufforderung steuern, ob Endbenutzer die Möglichkeit, installieren Office-Projektmappen durch das Speichern einer Entscheidung über die Vertrauenswürdigkeit der Aufnahmeliste angegeben werden. Informationen zu Aufnahmelisten finden Sie unter [vertrauen Office-Projektmappen mithilfe von Benutzeraufnahmelisten](../vsto/trusting-office-solutions-by-using-inclusion-lists.md).  

@@ -1,13 +1,10 @@
 ---
 title: 'Exemplarische Vorgehensweise: Debuggen einer SharePoint-Anwendung mithilfe von IntelliTrace | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,14 +16,14 @@ helpviewer_keywords:
 - IntelliTrace
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d9f3e5ae5997f7ae4f7c7f94bc61dc526404f144
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: 173dbc74a24166f69ca97da6d5f68332345b90ea
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-debugging-a-sharepoint-application-by-using-intellitrace"></a>Exemplarische Vorgehensweise: Debuggen einer SharePoint-Anwendung mithilfe von IntelliTrace
 
@@ -58,7 +55,7 @@ Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgend
 
 - Visual Studio Enterprise.
 
-## <a name="BKMK_CreateReceiver">Einen Funktionsempfänger erstellen</a>
+## <a name="BKMK_CreateReceiver"></a> Einen Funktionsempfänger erstellen
 
 Erstellen Sie zunächst ein leeres SharePoint-Projekt mit einem Funktionsempfänger.
 
@@ -76,7 +73,7 @@ Erstellen Sie zunächst ein leeres SharePoint-Projekt mit einem Funktionsempfän
 
 4. Öffnen Sie das Kontextmenü für "Feature1.Feature", und wählen Sie dann **Ereignisempfänger hinzufügen** , um die Funktion ein Codemodul hinzuzufügen.
 
-## <a name="BKMK_AddCode">Fügen Sie dem Funktionsempfänger Code hinzu</a>
+## <a name="BKMK_AddCode"></a> Fügen Sie dem Funktionsempfänger Code hinzu
 
 Fügen Sie anschließend zwei Methoden im Funktionsempfänger Code hinzu: `FeatureActivated` und `FeatureDeactivating`. Diese Methoden lösen immer dann aus, wenn eine Funktion in SharePoint aktiviert bzw. deaktiviert wird.
 
@@ -250,7 +247,7 @@ Fügen Sie anschließend zwei Methoden im Funktionsempfänger Code hinzu: `Featu
     }
     ```
 
-## <a name="BKMK_Test1">Testen Sie das Projekt</a>
+## <a name="BKMK_Test1"></a> Testen Sie das Projekt
 
 Wenn dem Funktionsempfänger der Code hinzugefügt wurde und der Datensammler ausgeführt wird, stellen Sie die SharePoint-Lösung bereit. Führen Sie sie aus, um die ordnungsgemäße Funktion zu testen.
 
@@ -277,7 +274,7 @@ Wenn dem Funktionsempfänger der Code hinzugefügt wurde und der Datensammler au
 
      Vom Ereignishandler „FeatureDeactivating()“ wird ein Fehler ausgelöst.
 
-## <a name="BKMK_CollectDiagnosticData">Sammeln von IntelliTrace-Daten mithilfe von Microsoft Monitoring Agent</a>
+## <a name="BKMK_CollectDiagnosticData"></a> Sammeln von IntelliTrace-Daten mithilfe von Microsoft Monitoring Agent
 
 Wenn Sie Microsoft Monitoring Agent auf dem System, auf dem SharePoint ausgeführt wird installieren, können Sie SharePoint-Lösungen Debuggen, mit Daten, die genauer als die allgemeinen Informationen, die IntelliTrace zurückgibt. Der Agent funktioniert außerhalb von Visual Studio, indem PowerShell-Cmdlets verwendet werden, um Debuginformationen zu sammeln, während die SharePoint-Lösung ausgeführt wird.
 
@@ -300,9 +297,9 @@ Wenn Sie Microsoft Monitoring Agent auf dem System, auf dem SharePoint ausgefüh
 
 3. Führen Sie im PowerShell-Fenster die [Stop-WebApplicationMonitoring](http://go.microsoft.com/fwlink/?LinkID=313687) Befehl aus, um die ITRACE-Datei erstellen, die Überwachung beenden und starten die SharePoint-Lösung.
 
-     **Stop-WebApplicationMonitoring***"\<SharePointSite >\\< SharePointAppName\>"* 
+     **Stop-WebApplicationMonitoring***"\<SharePointSite >\\< SharePointAppName\>"*
 
-## <a name="BKMK_DebugSolution">Debuggen Sie und korrigieren Sie die SharePoint-Lösung</a>
+## <a name="BKMK_DebugSolution"></a> Debuggen Sie und korrigieren Sie die SharePoint-Lösung
 
 Jetzt können Sie die IntelliTrace-Protokolldatei in Visual Studio anzeigen, um den Fehler in der SharePoint-Lösung zu suchen und zu beheben.
 

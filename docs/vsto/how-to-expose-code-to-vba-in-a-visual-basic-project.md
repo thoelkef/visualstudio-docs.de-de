@@ -1,12 +1,10 @@
 ---
-title: "Vorgehensweise: Verfügbarmachen von Code für VBA in einem Visual Basic-Projekt | Microsoft Docs"
-ms.custom: 
+title: 'Vorgehensweise: Verfügbarmachen von Code für VBA in einem Visual Basic-Projekt | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,20 +16,21 @@ helpviewer_keywords:
 - host items [Office development in Visual Studio], exposing code to VBA
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 8d3d007024cdca160c194285da8f0a741100253d
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 39dc659f7c8841bcf350249332278091232a32d2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-expose-code-to-vba-in-a-visual-basic-project"></a>Gewusst wie: Verfügbarmachen von Code für VBA in einem Visual Basic-Projekt
   Sie können Verfügbarmachen von Code in einem [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] Projekt in Visual Basic für Applikationen (VBA) Code gegebenenfalls die zwei Arten von Code, die miteinander interagieren.  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
- Visual Basic-Verfahren unterscheidet sich vom Visual C#-Prozess. Weitere Informationen finden Sie unter [wie: Verfügbarmachen von Code für VBA in einem Visual C &#35; Projekt](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md).  
+ Visual Basic-Verfahren unterscheidet sich vom Visual C#-Prozess. Weitere Informationen finden Sie unter [wie: Verfügbarmachen von Code für VBA in einem Visual C#&#35; Projekt](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md).  
   
  Der Prozess ist für Code in einer Hostelementklasse anders, als vielmehr für Code in anderen Klassen:  
   
@@ -41,7 +40,7 @@ ms.lasthandoff: 01/10/2018
   
  ![Link zu Video](../vsto/media/playvideo.gif "Link zu Video") eine entsprechende Videodemo finden Sie unter [How Do I: Aufrufen VSTO-Code aus VBA?](http://go.microsoft.com/fwlink/?LinkId=136757).  
   
-##  <a name="HostItemCode"></a>Verfügbarmachen von Code in einer Hostelementklasse  
+##  <a name="HostItemCode"></a> Verfügbarmachen von Code in einer Hostelementklasse  
  Legen Sie zum Aktivieren von VBA-Code zum Aufrufen von Visual Basic-Code in einer Hostelementklasse der **EnableVbaCallers** -Eigenschaft des Hostelements wird auf **"true"**.  
   
  Eine exemplarische Vorgehensweise, die veranschaulicht, wie eine Methode einer Hostelementklasse verfügbar gemacht, und klicken Sie dann aus VBA aufgerufen wird, finden Sie unter [Exemplarische Vorgehensweise: Aufrufen von Code aus VBA in einem Visual Basic-Projekt](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md). Weitere Informationen zu Hostelementen finden Sie unter [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md).  
@@ -76,7 +75,7 @@ ms.lasthandoff: 01/10/2018
   
 6.  Erstellen Sie das Projekt.  
   
-##  <a name="NonHostItem"></a>Verfügbarmachen von Code, der nicht in einer Hostelementklasse ist  
+##  <a name="NonHostItem"></a> Verfügbarmachen von Code, der nicht in einer Hostelementklasse ist  
  Zum Aktivieren von VBA-Code in Visual Basic-Code aufrufen, die nicht in einer Hostelementklasse befindet, ändern Sie den Code, damit sie für VBA sichtbar sind.  
   
 #### <a name="to-expose-code-that-is-not-in-a-host-item-class-to-vba"></a>Um Code verfügbar zu machen, die nicht in einer Hostelementklasse für VBA  
@@ -123,8 +122,8 @@ ms.lasthandoff: 01/10/2018
 ## <a name="see-also"></a>Siehe auch  
  [Vorgehensweise: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [Entwerfen und Erstellen von Office-Projektmappen](../vsto/designing-and-creating-office-solutions.md)   
- [Combining VBA and Document-Level Customizations](../vsto/combining-vba-and-document-level-customizations.md)   
+ [Kombinieren von VBA und Anpassungen auf Dokumentebene](../vsto/combining-vba-and-document-level-customizations.md)   
  [Exemplarische Vorgehensweise: Aufrufen von Code aus VBA in einem Visual Basic-Projekt](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md)   
- [Vorgehensweise: Verfügbarmachen von Code für VBA in einem Visual C &#35; Projekt](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)  
+ [Vorgehensweise: Verfügbarmachen von Code für VBA in einem Visual C#&#35; Projekt](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)  
   
   
