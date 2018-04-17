@@ -1,23 +1,24 @@
 ---
-title: "Development best practices für COM, VSTO und VBA-add-ins in Office | Microsoft Docs"
-ms.custom: 
+title: Development best practices für COM, VSTO und VBA-add-ins in Office | Microsoft Docs
+ms.custom: ''
 ms.date: 07/25/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
-dev_langs: 
-helpviewer_keywords: 
+ms.technology:
+- office-development
+ms.topic: conceptual
+dev_langs:
+- ''
+helpviewer_keywords:
+- ''
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 2a1b6b9270207b3d0f8d415655231af4456e61b4
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 6da083b12717606233d4c8dd9bc175b42722d53e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="development-best-practices-for-com-vsto-and-vba--add-ins-in-office"></a>Entwicklung von bewährten Methoden für COM, VSTO und VBA-add-ins in Office
   Wenn Sie COM, VSTO oder VBA-add-ins für Office entwickeln, führen Sie die Entwicklung bewährten Methoden in diesem Artikel beschrieben.   Dies hilft sicherzustellen:
@@ -62,7 +63,7 @@ Kunden werden gebeten, ISVs Supportinformationen für ihre COM, VSTO und VBA-add
 
 Um Informationen zur Unterstützung für Office-Client-Anwendungen (z. B. Word oder Excel) zu ermöglichen, überprüfen Sie zunächst, dass Ihre Add-Ins in der aktuellen Version von Office ausführen, und zum Bereitstellen von Updates, wenn Ihr Add-in in einer zukünftigen Version unterbricht anschließend einen commit. Sie müssen nicht Ihre Add-Ins zu testen, wenn Microsoft einen neuen Build oder ein Update für Office frei. Microsoft sich nur selten ändert, die COM, VSTO und VBA-Erweiterbarkeit-Plattform in Office, und diese Änderungen angemessen dokumentiert.
 
->Wichtig: Microsoft verwaltet eine Liste der unterstützten-add-ins für Berichte zur hardwarebereitschaft und ISV-Kontaktinformationen. Um das Add-in aufgeführten zu erhalten, finden Sie unter [https://aka.ms/readyforwindows](https://aka.ms/readyforwindows).
+>Wichtig: Microsoft verwaltet eine Liste der unterstützten-add-ins für Berichte zur hardwarebereitschaft und ISV-Kontaktinformationen. Um das Add-in aufgeführten zu erhalten, finden Sie unter [ https://aka.ms/readyforwindows ](https://aka.ms/readyforwindows).
 
 ## <a name="use-process-monitor-to-help-debug-installation-or-loading-issues"></a>Verwenden von Monitor "Prozess", um Installations- oder laden die Probleme Debuggen
 Wenn Ihr Add-in Kompatibilitätsprobleme während der Installation oder Load verfügt, beispielsweise kann sie Probleme mit der Datei oder ein Registrierungsschlüsselwert Zugriff verknüpft sein. Verwendung [Prozessmonitor](/sysinternals/downloads/procmon) oder eine ähnliche Debugtool, sich anzumelden, und vergleichen das Verhalten für eine arbeitsumgebung, um das Problem zu identifizieren.
