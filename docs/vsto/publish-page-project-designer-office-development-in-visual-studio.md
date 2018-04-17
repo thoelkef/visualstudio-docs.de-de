@@ -2,12 +2,9 @@
 title: Seite "Veröffentlichen", Projekt-Designer (Office-Entwicklung in Visual Studio) | Microsoft Docs
 ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - office-development
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VST.ProjectProperties.Publish.2007System
 dev_langs:
@@ -19,14 +16,14 @@ helpviewer_keywords:
 - Property Pages dialog box, Publish [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d9cc3fa102c0552893c6f7859a256b7df26e3af5
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: ee835542d88fa316eb3aec859e5aaf61d376f624
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="publish-page-project-designer-office-development-in-visual-studio"></a>Veröffentlichungsseite, Projekt-Designer (Office-Entwicklung in Visual Studio)
   Die Seite **Veröffentlichen** des **Projekt-Designers** wird zur Konfiguration von Eigenschaften für die Bereitstellung verwendet.  
@@ -44,7 +41,7 @@ ms.lasthandoff: 01/10/2018
   
  Optionen umfassen den lokalen Computer, eine UNC-Dateifreigabe oder eine HTTP/HTTPS-Website. Der Pfad kann lokalen sein (*c:\foldername\publishfolder*), einen relativen (*veröffentlichen\\*), oder einen vollqualifizierten Speicherort (*\\\servername\foldername* oder http://*Servername/Ordnername*).  
   
- Standardmäßig wird *http://localhost/Projektname/* als Speicherort für die Veröffentlichung verwendet, wenn IIS installiert ist. Wenn IIS nicht installiert ist, wird das Verzeichnis „publish\“ verwendet.  
+ Speicherort für die Veröffentlichung ist standardmäßig *http://localhost/projectname/* Wenn auf dem IIS installiert, oder das Verzeichnis publish, wenn Sie dies tun müssen IIS nicht installiert.  
   
  **URL des Installationsordners**  
  Dies ist optional.  

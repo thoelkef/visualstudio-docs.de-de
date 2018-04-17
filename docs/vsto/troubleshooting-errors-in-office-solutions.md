@@ -1,13 +1,10 @@
 ---
 title: Beheben von Fehlern in Office-Projektmappen | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VST.Project.DesignerDisabled
 - VST.Designer.CannotActivate
@@ -23,14 +20,14 @@ helpviewer_keywords:
 - troubleshooting [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6a077949de07d89adad76c6fc68754d2018fa461
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 1166f183e49bfc01592a645916ce12c1148ec8de
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="troubleshooting-errors-in-office-solutions"></a>Problembehandlung in Office-Projektmappen
   Wenn Sie beim Entwickeln von Office-Projektmappen in Visual Studio die folgenden Aufgaben ausführen, können Probleme auftreten:  
@@ -45,7 +42,7 @@ ms.lasthandoff: 01/10/2018
   
 -   [Debuggen von Projekten](#debugging)  
   
-##  <a name="creating"></a>Erstellen, aktualisieren und Öffnen von Projekten  
+##  <a name="creating"></a> Erstellen, aktualisieren und Öffnen von Projekten  
  Die folgenden Fehler können auftreten, wenn Sie Office-Projekte erstellen oder öffnen.  
   
 ### <a name="the-project-cannot-be-created"></a>Das Projekt kann nicht erstellt werden  
@@ -89,7 +86,7 @@ ms.lasthandoff: 01/10/2018
   
  Nachdem Sie das Projekt aktualisiert haben, können Sie die Visual Studio 2005-Tools für Office Second Edition-Laufzeit vom Entwicklungscomputer deinstallieren, wenn sie nicht von anderen Office-Projektmappen verwendet wird.  
   
-##  <a name="designers"></a>Verwenden der Designer  
+##  <a name="designers"></a> Verwenden der Designer  
  Die folgenden Fehler können auftreten, wenn Sie in Projekten auf Dokumentebene mit dem Dokument-, Arbeitsmappen- oder Arbeitsblatt-Designer arbeiten.  
   
 ### <a name="designer-failed-to-load-correctly"></a>Der Designer wurde nicht ordnungsgemäß geladen  
@@ -175,7 +172,7 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
   
  Obwohl Sie den Word- oder Excel-Namespace importiert haben und Zugriff auf alle darin enthaltenen Klassen haben, müssen Sie alle Typen mit Word oder Excel, um Mehrdeutigkeit von Namespace vollständig qualifizieren.  
   
-##  <a name="building"></a>Erstellen von Projekten  
+##  <a name="building"></a> Erstellen von Projekten  
  Beim Erstellen von Office-Projekten können die folgenden Fehler auftreten.  
   
 ### <a name="cannot-build-a-document-level-project-that-is-based-on-a-document-with-restricted-permissions"></a>Es kann kein Projekt auf Dokumentebene erstellt werden, das auf einem Dokument mit eingeschränkten Berechtigungen basiert  
@@ -188,7 +185,7 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
 ### <a name="compiler-errors-occur-after-a-namedrange-control-is-deleted"></a>Compilerfehler nach dem Löschen eines NamedRange-Steuerelements  
  Wenn Sie ein <xref:Microsoft.Office.Tools.Excel.NamedRange>-Steuerelement aus einem Arbeitsblatt löschen, das nicht das aktive Arbeitsblatt im Designer ist, wird der automatisch generierte Code möglicherweise nicht aus dem Projekt entfernt, und es können Compilerfehler auftreten. Um sicherzustellen, dass der Code entfernt wird, müssen Sie vor dem Löschen des Steuerelements immer das Arbeitsblatt auswählen, das das <xref:Microsoft.Office.Tools.Excel.NamedRange>-Steuerelement enthält, um dieses als aktives Arbeitsblatt festzulegen. Wenn automatisch generierter Code beim Löschen des Steuerelements nicht gelöscht wird, können Sie den Designer anweisen, den Code zu löschen. Aktivieren Sie dazu das Arbeitsblatt, und nehmen Sie eine Änderung vor, sodass das Arbeitsblatt als geändert markiert wird. Beim Neuerstellen des Projekts wird der Code entfernt.  
   
-##  <a name="debugging"></a>Debuggen von Projekten  
+##  <a name="debugging"></a> Debuggen von Projekten  
  Beim Debuggen von Office-Projekten können die folgenden Fehler auftreten.  
   
 ### <a name="prompt-to-uninstall-appears-when-you-publish-and-install-a-solution-on-the-development-computer"></a>Beim Veröffentlichen und Installieren einer Projektmappe auf dem Entwicklungscomputer wird eine Aufforderung zum Deinstallieren angezeigt  

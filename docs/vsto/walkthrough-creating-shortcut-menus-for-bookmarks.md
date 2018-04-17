@@ -1,13 +1,10 @@
 ---
-title: "Exemplarische Vorgehensweise: Erstellen von Kontextmenüs für Lesezeichen | Microsoft Docs"
-ms.custom: 
+title: 'Exemplarische Vorgehensweise: Erstellen von Kontextmenüs für Lesezeichen | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,14 +15,14 @@ helpviewer_keywords:
 - menus, creating in Office applications
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9af7c7dd4a4c56cbd872b757704d64afd22c6101
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 6d54d23330c6d5fab836f168a291b15b90379117
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-shortcut-menus-for-bookmarks"></a>Exemplarische Vorgehensweise: Erstellen von Kontextmenüs für Lesezeichen
   In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie Kontextmenüs für <xref:Microsoft.Office.Tools.Word.Bookmark>-Steuerelemente in einer Anpassung auf Dokumentebene für Word erstellt werden. Wenn ein Benutzer mit der rechten Maustaste auf den Text in einem Lesezeichen klickt, wird ein Kontextmenü mit Optionen zum Formatieren des Texts angezeigt.  
@@ -51,7 +48,7 @@ ms.lasthandoff: 01/10/2018
   
 -   [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] oder [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)]  
   
-##  <a name="BKMK_CreateProject"></a>Erstellen des Projekts  
+##  <a name="BKMK_CreateProject"></a> Erstellen des Projekts  
  Der erste Schritt besteht darin, ein Word-Dokumentprojekt in Visual Studio zu erstellen.  
   
 #### <a name="to-create-a-new-project"></a>So erstellen Sie ein neues Projekt  
@@ -60,7 +57,7 @@ ms.lasthandoff: 01/10/2018
   
      Visual Studio öffnet das neue Word-Dokument im Designer und fügt die **My Bookmark Shortcut Menu** Projekt **Projektmappen-Explorer**.  
   
-##  <a name="BKMK_addtextandbookmarks"></a>Hinzufügen von Text und Lesezeichen zum Dokument  
+##  <a name="BKMK_addtextandbookmarks"></a> Hinzufügen von Text und Lesezeichen zum Dokument  
  Fügen Sie dem Dokument etwas Text und dann zwei überlappende Lesezeichen hinzu.  
   
 #### <a name="to-add-text-to-your-document"></a>So fügen Sie dem Dokument Text hinzu  
@@ -88,7 +85,7 @@ ms.lasthandoff: 01/10/2018
   
  Wenn Sie einem Dokument zur Entwurfszeit ein Lesezeichen hinzufügen, wird ein <xref:Microsoft.Office.Tools.Word.Bookmark>-Steuerelement erstellt. Sie können mehrere Ereignisse des Lesezeichens programmieren. Sie können Code in das <xref:Microsoft.Office.Tools.Word.Bookmark.BeforeRightClick>-Ereignis des Lesezeichens schreiben, sodass ein Kontextmenü angezeigt wird, wenn der Benutzer mit der rechten Maustaste auf den Text in einem Lesezeichen klickt.  
   
-##  <a name="BKMK_AddCmndsShortMenu"></a>Hinzufügen von Befehlen zu einem Kontextmenü  
+##  <a name="BKMK_AddCmndsShortMenu"></a> Hinzufügen von Befehlen zu einem Kontextmenü  
  Hinzufügen von Schaltflächen zum Kontextmenü, das angezeigt wird, wenn Sie mit der rechten Maustaste auf das Dokument klicken.  
   
 #### <a name="to-add-commands-to-a-shortcut-menu"></a>So fügen Sie einem Kontextmenü Befehle hinzu  
@@ -148,7 +145,7 @@ ms.lasthandoff: 01/10/2018
      [!code-csharp[Trin_Word_Document_Menus#5](../vsto/codesnippet/CSharp/trin_word_document_menus.cs/ribbon1.cs#5)]
      [!code-vb[Trin_Word_Document_Menus#5](../vsto/codesnippet/VisualBasic/trin_word_document_menus.vb/ribbon1.vb#5)]  
   
-##  <a name="BKMK_formattextbkmk"></a>Formatieren des Texts im Lesezeichen  
+##  <a name="BKMK_formattextbkmk"></a> Formatieren des Texts im Lesezeichen  
   
 #### <a name="to-format-the-text-in-the-bookmark"></a>So formatieren Sie den Text im Lesezeichen  
   

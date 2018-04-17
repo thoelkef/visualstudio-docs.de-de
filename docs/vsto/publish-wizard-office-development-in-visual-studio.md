@@ -1,12 +1,10 @@
 ---
-title: "Veröffentlichungsassistent (Office-Entwicklung in Visual Studio) | Microsoft Docs"
-ms.custom: 
+title: Veröffentlichungsassistent (Office-Entwicklung in Visual Studio) | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 f1_keywords:
 - VST.ProjectProperties.PublishWizard
 - VST.PublishWizard.Publish.2007System
@@ -20,13 +18,14 @@ helpviewer_keywords:
 - Publish Wizard, Office solutions
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 43b4869435c34a29cac5fd18a13d2b4b140e8b6c
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 67e3222c6f1deeca58b84aca4ba73d2826483b26
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="publish-wizard-office-development-in-visual-studio"></a>Veröffentlichungsassistent (Office-Entwicklung in Visual Studio)
   Verwenden der **Veröffentlichungs-Assistenten** um Projektmappendateien an einem bestimmten Speicherort zu kopieren, Erstellen der Manifestdateien, und ein Setupprogramm erstellen.  
@@ -47,7 +46,7 @@ ms.lasthandoff: 01/10/2018
   
 -   Eine URL einer Website, z. B. http://www.microsoft.com/MyApplication.  
   
- Standardmäßig wird *http://localhost/Projektname/* als Speicherort für die Veröffentlichung verwendet, wenn IIS installiert ist. Wenn IIS nicht installiert ist, wird das Verzeichnis „publish\“ verwendet.  
+ Speicherort für die Veröffentlichung ist standardmäßig *http://localhost/projectname/* Wenn auf dem IIS installiert, oder das Verzeichnis publish, wenn Sie dies tun müssen IIS nicht installiert.  
   
 > [!NOTE]  
 >  Es sind weitere Aspekte auf, wenn der Zielcomputer Windows Vista ausgeführt wird. Sie müssen Administrator auf dem Windows Vista-Computer mit der Option "lokale veröffentlichen" sein. Darüber hinaus ist der Standardspeicherort immer die *veröffentlichen\\*  Verzeichnis, unabhängig davon, ob IIS installiert ist.  
@@ -70,7 +69,7 @@ ms.lasthandoff: 01/10/2018
   
 ## <a name="see-also"></a>Siehe auch  
  [Bereitstellen einer Office-Lösung mithilfe von ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md)   
- [Veröffentlichen Sie die Seite, Projekt-Designer &#40; Office-Entwicklung in Visual Studio &#41;](../vsto/publish-page-project-designer-office-development-in-visual-studio.md)   
+ [Seite "Veröffentlichen", Projekt-Designer &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/publish-page-project-designer-office-development-in-visual-studio.md)   
  [Bereitstellen einer Office-Projektmappe](../vsto/deploying-an-office-solution.md)  
   
   

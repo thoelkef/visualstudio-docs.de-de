@@ -1,5 +1,5 @@
 ---
-title: "Receive-Aktivitätsdesigner | Microsoft Docs"
+title: Receive-Aktivitätsdesigner | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,14 +7,14 @@ f1_keywords:
 ms.assetid: f58d3c70-944d-4bb4-90a7-e68c103caddc
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d8058b13dd488ddca2237056048673529c379256
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 900cf704dd29c78a1ddc8de7dce4940d8ba09fae
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="receive-activity-designer"></a>Receive-Aktivitätsdesigner
 Die **Receive** Aktivitäts-Designer dient zum Erstellen und Konfigurieren einer <xref:System.ServiceModel.Activities.Receive> Aktivität. Eine <xref:System.ServiceModel.Activities.Receive>-Aktivität ist eine Aktivität, die eine Nachricht empfängt, die entweder ein integrierter Datentyp, etwa ein <xref:System.ServiceModel.Channels.Message>-, <xref:System.IO.Stream>- oder ein <xref:System.Xml.Linq.XElement>-Typ sein kann oder ein anwendungsdefinierter Datenvertrag, ein Nachrichtenvertrag oder eine XML-Klasse, die serialisiert werden kann.
@@ -47,7 +47,7 @@ Die **Receive** Aktivitäts-Designer dient zum Erstellen und Konfigurieren einer
 |<xref:System.ServiceModel.Activities.Receive.KnownTypes%2A>|False|Gibt eine Auflistung bekannter Typen für den von dieser <xref:System.ServiceModel.Activities.Receive>-Aktivität implementierten Dienstvorgang an. Diese Eigenschaft muss in Verbindung mit der <xref:System.ServiceModel.Activities.Receive.SerializerOption%2A>-Eigenschaft verwendet werden, die auf <xref:System.Runtime.Serialization.DataContractSerializer> festgelegt wurde. Sie wird ignoriert, wenn der <xref:System.Xml.Serialization.XmlSerializer> verwendet wird.<br /><br /> Klicken Sie auf die Schaltfläche mit den Auslassungspunkten neben der **KnownTypes** Feld im Eigenschaftenraster zum Anzeigen der **Typauflistungs-Editor** (Dialogfeld), in dem Sie relevante Typen hinzufügen können. Weitere Informationen zu diesem Feld verwenden, finden Sie unter der [Auflistung-Editor (Dialogfeld)](../workflow-designer/type-collection-editor-dialog-box.md) Thema.|
 |<xref:System.ServiceModel.Activities.Receive.ProtectionLevel%2A>|False|Gibt die <xref:System.Net.Security.ProtectionLevel>-Einstellung für die Nachricht an.<br /><br /> 1. <xref:System.Net.Security.ProtectionLevel> bedeutet, dass nur die Authentifizierung.<br />2. <xref:System.Net.Security.ProtectionLevel> bedeutet, dass Signierung von Daten, um die Integrität übertragener Daten sicherzustellen.<br />3. <xref:System.Net.Security.ProtectionLevel> bedeutet, dass Daten verschlüsselt und signiert, die Vertraulichkeit und Integrität übertragener Daten sicherzustellen.|
 |<xref:System.ServiceModel.Activities.Receive.SerializerOption%2A>|False|Gibt den Typ des Serialisierungsprogramms an, das für den von der <xref:System.ServiceModel.Activities.Receive>-Aktivität implementierten Dienstvorgang verwendet werden soll. Der Standardwert ist <xref:System.Runtime.Serialization.DataContractSerializer>, der eine Instanz eines Typs, der einen angegebenen Datenvertrag verwendet, in einen XML-Datenstrom oder ein Dokument serialisiert und deserialisiert. Der <xref:System.Xml.Serialization.XmlSerializer> kann auch verwendet werden, wenn eine genauere Kontrolle des XML-Codes erforderlich ist.|
-|<xref:System.ServiceModel.Activities.Receive.Action%2A>|False|Gibt den Aktionsheader der Nachricht an. Wenn sie nicht explizit festgelegt wird, sein Standardwert: https://tempuri.org/ {Dienstvertragsnamespace} / {Dienstvertragsname} / {Vorgangsname}.|
+|<xref:System.ServiceModel.Activities.Receive.Action%2A>|False|Gibt den Aktionsheader der Nachricht an. Wenn sie nicht explizit festgelegt wird, sein Standardwert: https://tempuri.org/{service Vertrag Namespace} / {Dienstvertragsname} / {Vorgangsname}.|
 
 ## <a name="see-also"></a>Siehe auch
 

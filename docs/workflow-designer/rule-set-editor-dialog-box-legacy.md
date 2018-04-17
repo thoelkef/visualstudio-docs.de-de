@@ -9,14 +9,14 @@ helpviewer_keywords:
 ms.assetid: 7cfd5df1-1115-4e5c-9b72-121f39419e83
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 989e0ed3f390513efeb849a71f94d5d61aecc57e
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 7284b4a318f1d6c182f1d7d27e41f6c77092ad00
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="rule-set-editor-dialog-box-legacy"></a>Dialogfeld "Regelsatz-Editor" (Vorgängerversion)
 In diesem Thema wird beschrieben, wie die **Regelsatz-Editor** in älteren Windows Workflow-Designer im Dialogfeld. Verwenden Sie die Vorgängerversion von [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)], wenn Sie entweder auf [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] oder [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)] abzielen möchten.
@@ -39,7 +39,7 @@ In diesem Thema wird beschrieben, wie die **Regelsatz-Editor** in älteren Windo
 |**Löschen**|Löscht die ausgewählte Regel aus dem Regelsatz.|
 |**Verkettung**|Gibt an, welcher Vorwärtsverkettungstyp mit dem Regelsatz verwendet werden soll. Die folgenden Optionen sind verfügbar:<br /><br /> -   **Vollständiges verketten**, die Verwendung aller vorwärtsverkettungsmechanismen angibt: implizit, attributzuweisung und explizit mit einem **Update** Funktion.<br />-   **Sequenzielle**, dadurch wird keine vorwärtsverkettung verwendet.<br />-   **Nur explizites Update**, gibt an, nur auszuführen, auf vorwärtsverkettung **Update** Aktionen.<br /><br /> Weitere Informationen zum vorwärtsverketten finden Sie unter [verwenden der PolicyActivity-Aktivität](http://go.microsoft.com/fwlink?LinkID=65004).|
 |**Name**|Regelsatzlisten-Spaltenüberschrift. Klicken Sie, um die Liste der Regeln nach Namen zu sortieren.|
-|**Priority**|Regelsatzlisten-Spaltenüberschrift. Klicken Sie, um die Liste der Regeln nach Priorität zu sortieren.|
+|**Priorität**|Regelsatzlisten-Spaltenüberschrift. Klicken Sie, um die Liste der Regeln nach Priorität zu sortieren.|
 |**Erneute Auswertung**|Regelsatzlisten-Spaltenüberschrift. Klicken Sie, um die Liste der Regeln nach Typ der erneuten Auswertung zu sortieren.|
 |**Regelvorschau**|Regelsatzlisten-Spaltenüberschrift. Klicken Sie, um die Liste der Regeln nach der Vorschau der Bedingung und Aktionen einer Regel zu sortieren.|
 |**Name:**|Geben Sie den Namen der Regel ein.|

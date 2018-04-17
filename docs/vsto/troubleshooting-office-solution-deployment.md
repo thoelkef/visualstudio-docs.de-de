@@ -1,13 +1,10 @@
 ---
 title: Problembehandlung bei der Office-Projektmappenbereitstellung | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,14 +14,14 @@ helpviewer_keywords:
 - deploying applications [Office development in Visual Studio], troubleshooting
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8940cd30b4e573b7438b45b13fdd30735a504809
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 29c3cfdcf31609eb5b6aec0111fe2297ba8c01ef
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="troubleshooting-office-solution-deployment"></a>Problembehandlung bei der Office-Projektmappenbereitstellung
   Dieses Thema enthält Informationen zur Lösung von allgemeinen Problemen, die beim Bereitstellen von Office-Projektmappen auftreten können.  
@@ -65,7 +62,7 @@ ms.lasthandoff: 01/10/2018
  Sie können dem Setup-Paket .NET Framework, die [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]und die primären Interop-Assemblys von Office als erforderliche Komponenten hinzufügen, die mit der Office-Projektmappe bereitgestellt werden. Informationen zum Installieren von primären Interopassemblys finden Sie unter [Konfigurieren eines Computers zum Entwickeln von Office-Projektmappen](../vsto/configuring-a-computer-to-develop-office-solutions.md) und [Vorgehensweise: Installieren von primären Interopassemblys für Office](../vsto/how-to-install-office-primary-interop-assemblies.md).  
   
 ## <a name="publishing-using-localhost-can-cause-installation-problems"></a>Veröffentlichungen mithilfe von 'Localhost' können zu Installationsproblemen führen  
- Bei Verwendung von "http://localhost" als Veröffentlichungs- oder Installationsort für Projektmappen auf Anwendungsebene konvertiert der **Veröffentlichungs-Assistent** die Zeichenfolge nicht in den tatsächlichen Computernamen. In diesem Fall muss die Projektmappe nur auf dem Entwicklungscomputer installiert werden. Damit bereitgestellte Projektmappen auf dem Entwicklungscomputer Internetinformationsdienste verwenden, muss anstelle von localhost der vollqualifizierte Name für alle HTTP/HTTPS/FTP-Speicherorte verwendet werden.  
+ Bei Verwendung von "http://localhost" als Speicherort Veröffentlichungs- oder Installationsort für Projektmappen auf Dokumentebene, die **Veröffentlichungs-Assistenten** nicht konvertieren der Zeichenfolge in den tatsächlichen Computernamen. In diesem Fall muss die Projektmappe nur auf dem Entwicklungscomputer installiert werden. Damit bereitgestellte Projektmappen auf dem Entwicklungscomputer Internetinformationsdienste verwenden, muss anstelle von localhost der vollqualifizierte Name für alle HTTP/HTTPS/FTP-Speicherorte verwendet werden.  
   
 ## <a name="cached-assemblies-are-loaded-instead-of-updated-assemblies"></a>Anstelle von aktualisierten Assemblys werden zwischengespeicherte Assemblys geladen  
  Fusion, das Assemblyladeprogramm von .NET Framework, lädt die zwischengespeicherte Kopie der Assemblys, wenn sich der Projektausgabepfad in einer Netzwerkdateifreigabe befindet, die Assembly mit einem starken Namen signiert ist und die Assemblyversion der Anpassung nicht geändert wird. Wird eine Assembly aktualisiert, die diese Bedingungen erfüllt, wird das Update erst bei der nächsten Ausführung des Projekts angezeigt, da die zwischengespeicherte Kopie geladen wird.  
@@ -74,7 +71,7 @@ ms.lasthandoff: 01/10/2018
   
 #### <a name="to-download-assemblies-instead-of-loading-cached-copies"></a>So laden Sie Assemblys herunter, anstatt zwischengespeicherte Kopien zu laden  
   
-1.  Wählen Sie in der Menüleiste **Projekt**, *Projektname***Eigenschaften**.  
+1.  Wählen Sie in der Menüleiste **Projekt**, * Projektname ***Eigenschaften**.  
   
 2.  Wählen Sie auf der Seite **Anwendung** die Option **Assemblyinformationen**.  
   
@@ -116,7 +113,7 @@ ms.lasthandoff: 01/10/2018
 ## <a name="reinstalling-office-solutions-causes-an-argument-out-of-range-exception"></a>Neuinstallation von Office-Projektmappen löst eine Ausnahme (Argument außerhalb des gültigen Bereichs) aus  
  Wenn Sie eine Office-Projektmappe neu installieren, wird möglicherweise eine <xref:System.ArgumentOutOfRangeException> -Ausnahme mit der Fehlermeldung "Das angegebene Argument liegt außerhalb des gültigen Wertebereichs" angezeigt.  
   
- Dieser Fall tritt ein, wenn sich die Groß-/Kleinschreibung für die Installationspfad-URL unterscheidet. Beispielsweise wird dieser Fehler angezeigt, wenn Sie eine Office-Projektmappe das erste Mal von [http://fabrikam.com/ExcelSolution.vsto](http://fabrikam.com/ExcelSolution.vsto) installiert und anschließend [http://fabrikam.com/excelsolution.vsto](http://fabrikam.com/excelsolution.vsto) verwendet haben.  
+ Dieser Fall tritt ein, wenn sich die Groß-/Kleinschreibung für die Installationspfad-URL unterscheidet. Angenommen, dieser Fehler angezeigt, wenn Sie eine Office-Projektmappe aus installiert [ http://fabrikam.com/ExcelSolution.vsto ](http://fabrikam.com/ExcelSolution.vsto) erstmalig und verwendet dann [ http://fabrikam.com/excelsolution.vsto ](http://fabrikam.com/excelsolution.vsto) ein zweites Mal.  
   
  Sie können diesen Fehler vermeiden, indem Sie beim Installieren von Office-Projektmappen die gleiche Groß-/Kleinschreibung verwenden.  
   

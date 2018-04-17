@@ -1,12 +1,10 @@
 ---
-title: "Exemplarische Vorgehensweise: Einfügen von Daten in eine Arbeitsmappe auf einem Server | Microsoft Docs"
-ms.custom: 
+title: 'Exemplarische Vorgehensweise: Einfügen von Daten in eine Arbeitsmappe auf einem Server | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,13 +16,14 @@ helpviewer_keywords:
 - workbooks [Office development in Visual Studio], inserting data
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 389252ed9457935c86dcaca0ce8a9a5733202d94
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 7257094aa0fb29c1b03878f5ac39c3d4f4864022
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-inserting-data-into-a-workbook-on-a-server"></a>Exemplarische Vorgehensweise: Einfügen von Daten in eine Arbeitsmappe auf einem Server
   Diese exemplarische Vorgehensweise veranschaulicht, wie Daten in ein Dataset eingefügt werden, die in einer Microsoft Office Excel-Arbeitsmappe zwischengespeichert ist, ohne Excel zu starten, mit der <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> Klasse.  
@@ -82,7 +81,7 @@ ms.lasthandoff: 01/10/2018
   
 8.  Klicken Sie auf **OK**.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Fügt der **AdventureWorksDataSet** Projekt **Projektmappen-Explorer** und öffnet die **"Class1.cs"** oder **Class1.vb** -Codedatei.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Fügt der **AdventureWorksDataSet** Projekt **Projektmappen-Explorer** und öffnet die **"Class1.cs"** oder **Class1.vb** -Codedatei.  
   
 9. In **Projektmappen-Explorer**, mit der rechten Maustaste **"Class1.cs"** oder **Class1.vb**, und klicken Sie dann auf **löschen**. Sie können diese Datei ist nicht für diese exemplarische Vorgehensweise erforderlich.  
   
@@ -144,7 +143,7 @@ ms.lasthandoff: 01/10/2018
   
 7.  Sicherstellen, dass **erstellen Sie ein neues Dokument** ausgewählt ist, und klicken Sie auf **OK**.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Öffnet die **AdventureWorksReport** Arbeitsmappe im Designer und fügt die **AdventureWorksReport** Projekt **Projektmappen-Explorer**.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Öffnet die **AdventureWorksReport** Arbeitsmappe im Designer und fügt die **AdventureWorksReport** Projekt **Projektmappen-Explorer**.  
   
 ## <a name="adding-the-dataset-to-data-sources-in-the-excel-workbook-project"></a>Hinzufügen des Datasets zu Datenquellen in der Excel-Arbeitsmappenprojekts  
  Bevor Sie das Dataset in der Excel-Arbeitsmappe angezeigt werden können, müssen Sie zuerst das Dataset mit Datenquellen in der Excel-Arbeitsmappenprojekt hinzufügen.  
@@ -221,7 +220,7 @@ ms.lasthandoff: 01/10/2018
   
 5.  Klicken Sie auf **OK**.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Fügt der **DataWriter** Projekt **Projektmappen-Explorer** und öffnet die **"Program.cs"** oder **"Module1.vb"** -Codedatei.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Fügt der **DataWriter** Projekt **Projektmappen-Explorer** und öffnet die **"Program.cs"** oder **"Module1.vb"** -Codedatei.  
   
 ## <a name="adding-data-to-the-cached-dataset-by-using-the-console-application"></a>Hinzufügen von Daten auf das zwischengespeicherte Dataset mithilfe der Konsolenanwendung  
  Verwenden der <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> Klasse in der Konsolenanwendung das zwischengespeicherte Dataset in der Arbeitsmappe mit Daten aufgefüllt.  

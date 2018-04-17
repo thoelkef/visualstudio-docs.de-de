@@ -1,12 +1,10 @@
 ---
 title: 'Exemplarische Vorgehensweise: Komplexe Datenbindung in einem Projekt auf Dokumentebene | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - data binding [Office development in Visual Studio], multiple columns
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 3ee0dc3da505807a572b646c4c286132cc45ca81
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: a46a0f30fe3ab0cfc44a4cdb9121c4f39f3c417f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-complex-data-binding-in-a-document-level-project"></a>Exemplarische Vorgehensweise: Komplexe Datenbindung in Projekten auf Dokumentebene
   Diese exemplarische Vorgehensweise veranschaulicht die Grundlagen der komplexe Datenbindung in einem Projekt auf Dokumentebene. Sie können mehrere Zellen in einem Microsoft Office Excel-Arbeitsblatt an Felder in der Northwind-SQL Server-Datenbank binden.  

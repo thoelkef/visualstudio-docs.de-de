@@ -1,12 +1,10 @@
 ---
-title: "Späte Bindung in Office-Projektmappen | Microsoft Docs"
-ms.custom: 
+title: Späte Bindung in Office-Projektmappen | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - casting, object to specific type
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 430c10ffa5f79be45282d637b48772943be638e9
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 7e205874e1c5c4e5de639e28768d6369b43c1e1a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="late-binding-in-office-solutions"></a>Späte Bindung in Office-Lösungen
   Einige Typen in den Objektmodellen von Office-Anwendungen bieten Funktionen, die über spätes Binden Funktionen verfügbar sind. Z. B. einige Methoden und Eigenschaften können verschiedene Typen von Objekten abhängig vom Kontext der Office-Anwendung zurückgeben, und einige Typen können andere Methoden oder Eigenschaften in unterschiedlichen Kontexten verfügbar machen.  
@@ -39,7 +38,7 @@ ms.lasthandoff: 01/10/2018
   
  In den meisten Fällen führt die Referenzdokumentation die möglichen Typen des Rückgabewerts für ein Element, das gibt eine <xref:System.Object>. Konvertieren oder Umwandeln des Objekts können IntelliSense für das Objekt im Code-Editor ein.  
   
- Informationen zum Konvertieren in Visual Basic finden Sie unter [implizite und explizite Konvertierungen &#40; Visual Basic &#41; ](/dotnet/visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions) und [CType-Funktion &#40; Visual Basic &#41; ](/dotnet/visual-basic/language-reference/functions/ctype-function).  
+ Informationen zum Konvertieren in Visual Basic finden Sie unter [implizite und explizite Konvertierungen &#40;Visual Basic&#41; ](/dotnet/visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions) und [CType-Funktion &#40;Visual Basic&#41;](/dotnet/visual-basic/language-reference/functions/ctype-function).  
   
 ### <a name="examples"></a>Beispiele  
  Im folgenden Codebeispiel wird veranschaulicht, wie ein Objekt für einen bestimmten Typ in einem Visual Basic-Projekt umgewandelt, in denen **Option Strict** befindet sich auf. Bei dieser Art des Projekts, müssen Sie explizit eine Umwandlung der <xref:Microsoft.Office.Tools.Excel.WorksheetBase.Cells%2A> Eigenschaft, um eine <xref:Microsoft.Office.Interop.Excel.Range>. Dieses Beispiel benötigen Sie ein Excel-Projekt auf Dokumentebene mit einer Arbeitsblattklasse mit dem Namen `Sheet1`.  
@@ -67,7 +66,7 @@ ms.lasthandoff: 01/10/2018
 ## <a name="see-also"></a>Siehe auch  
  [Schreiben von Code in Office-Projektmappen](../vsto/writing-code-in-office-solutions.md)   
  [Optionale Parameter in Office-Projektmappen](../vsto/optional-parameters-in-office-solutions.md)   
- [Verwenden von dynamischen Typen &#40; C &#35; Programmierhandbuch &#41;](/dotnet/csharp/programming-guide/types/using-type-dynamic)   
+ [Verwenden des Typs Dynamic &#40;C&#35; Programmierhandbuch&#41;](/dotnet/csharp/programming-guide/types/using-type-dynamic)   
  [Option Strict-Anweisung](/dotnet/visual-basic/language-reference/statements/option-strict-statement)   
  [Reflektion (C#)](/dotnet/csharp/programming-guide/concepts/reflection)  
  [Reflektion (Visual Basic)](/dotnet/visual-basic/programming-guide/concepts/reflection)  

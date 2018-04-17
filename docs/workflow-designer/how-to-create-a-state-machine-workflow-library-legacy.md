@@ -1,5 +1,5 @@
 ---
-title: "Vorgehensweise: Erstellen Sie eine Zustandsautomat-Workflowbibliothek (Vorgängerversion) | Microsoft Docs"
+title: 'Vorgehensweise: Erstellen Sie eine Zustandsautomat-Workflowbibliothek (Vorgängerversion) | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -9,14 +9,14 @@ helpviewer_keywords:
 ms.assetid: 5bd68c6e-6a98-47d9-826d-9bb7a4fd72f8
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c65eafa04b25a2ba3f449d26e9a93daab1699664
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: a8220c6e9dbd2d97e0bf1017498ca3b295424863
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-a-state-machine-workflow-library-legacy"></a>Vorgehensweise: Erstellen einer Zustandsautomatworkflowbibliothek (Vorgängerversion)
 
@@ -26,7 +26,7 @@ Befolgen Sie diese Schritte zum Erstellen eines Zustandsautomat-Workflowbiblioth
 
 1.  Starten Sie Visual Studio.
 
-2.  Auf der **Datei** Sie im Menü **neu**, und wählen Sie dann **Projekt**.
+2.  Zeigen Sie im Menü **Datei** auf **Neu**, und klicken Sie dann auf **Projekt**.
 
      Das Dialogfeld **Neues Projekt** wird angezeigt.
 

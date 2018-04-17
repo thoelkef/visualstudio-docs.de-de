@@ -1,12 +1,10 @@
 ---
 title: Office-Entwicklungsbeispiele und exemplarische Vorgehensweisen | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -22,13 +20,14 @@ helpviewer_keywords:
 - examples [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: d13c91bebf92632e0c53f4eda9d2b771f37f1949
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: f70b2f786453bf194a6287d7254363d45c41c49b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="office-development-samples-and-walkthroughs"></a>Beispiele und exemplarische Vorgehensweisen für die Programmierung mit Office
   Dieser Abschnitt erläutert anhand von Beispielanwendungen, Beispielcode und schrittweise beschriebenen exemplarischen Vorgehensweisen die Syntax, die Struktur und die Verfahren, die Sie zum Erstellen von Microsoft Office-Projektmappen benötigen.  
@@ -55,7 +54,7 @@ ms.lasthandoff: 01/10/2018
   
 |Thema|Beschreibung|  
 |-----------|-----------------|  
-|[Erste Schritte &#40; Office-Entwicklung in Visual Studio &#41;](../vsto/getting-started-office-development-in-visual-studio.md)|Enthält Links zu Informationen über Setup, Projektvorlagen, primäre Interopassemblys für Office und neue Features in der Office-Entwicklung.|  
+|[Erste Schritte &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)|Enthält Links zu Informationen über Setup, Projektvorlagen, primäre Interopassemblys für Office und neue Features in der Office-Entwicklung.|  
 |[Architektur von Office-Projektmappen in Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)|Erläutert die Funktionsweise von Office-Projektmappen mit verwaltetem Code aus der Sicht des Entwicklers und des Endbenutzers und enthält Informationen zum Zusammenwirken von verwaltetem Code und Office-Dokumenten sowie -Anwendungen.|  
 |[Häufige Aufgaben bei der Programmierung mit Office](../vsto/common-tasks-in-office-programming.md)|Enthält eine Liste häufig gestellter Fragen zum Programmieren mit der Office-Entwicklung in Visual Studio sowie Links zu Themen, die zur Lösung häufiger Probleme beitragen können.|  
 |[Entwerfen und Erstellen von Office-Projektmappen](../vsto/designing-and-creating-office-solutions.md)|Enthält Links zu Informationen über das Erstellen von Microsoft Office-Projektmappen und über die Aufgabe, die Assemblys dabei zukommt.|  

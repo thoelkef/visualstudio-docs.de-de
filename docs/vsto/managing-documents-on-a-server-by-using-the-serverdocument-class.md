@@ -1,12 +1,10 @@
 ---
 title: Verwalten von Dokumenten auf einem Server mit der ServerDocument-Klasse | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - ServerDocument class, managing documents on server
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 2120e7c70abaddd4f51c0214a2c5ae517cf955cc
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: ef676de4ff352a557019f68037203364a97834d1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="managing-documents-on-a-server-by-using-the-serverdocument-class"></a>Verwalten von Dokumenten auf einem Server mit der ServerDocument-Klasse
   Können Sie die ServerDocument-Klasse in der [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] verschiedener Aspekte von Anpassungen auf Dokumentebene verwalten, auch wenn Microsoft Office Word und Microsoft Office Excel nicht installiert sind. Sie können die folgenden Aufgaben ausführen:  
@@ -43,7 +42,7 @@ ms.lasthandoff: 01/10/2018
 > [!NOTE]  
 >  Wenn Sie eine ältere Anwendung verfügen, die die ServerDocument-Klasse in Visual Studio-Tools für Office-System verwendet (Version 3.0 Common Language Runtime), der Visual Studio-Tools für Office System (Version 3.0 Runtime) muss auf Computern installiert werden, auf denen die Anwendung ausgeführt. Visual Studio 2010-Tools für Office-Laufzeit kann diese Anwendungen nicht ausführen.  
   
-##  <a name="CachedData"></a>Arbeiten mit im Dokument zwischengespeicherten Daten  
+##  <a name="CachedData"></a> Arbeiten mit im Dokument zwischengespeicherten Daten  
  Die ServerDocument-Klasse enthält Elemente, die Sie verwenden können, um mit dem Datencache in angepassten Dokumenten zu arbeiten. Weitere Informationen über zwischengespeicherte Daten finden Sie unter [Zwischenspeichern von Daten](../vsto/caching-data.md) und [zugreifen auf Daten in Dokumenten auf dem Server](../vsto/accessing-data-in-documents-on-the-server.md).  
   
  In der folgenden Tabelle werden die Member aufgeführt, die Sie verwenden können, um mit zwischengespeicherten Daten zu arbeiten.  
@@ -51,9 +50,9 @@ ms.lasthandoff: 01/10/2018
 |Aufgabe|Zu verwendender Member|  
 |----------|-------------------|  
 |Bestimmen, ob ein Dokument über einen Datencache verfügt|Die <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.IsCacheEnabled%2A>-Methode.|  
-|Zugreifen auf die zwischengespeicherten Daten in einem Dokument<br /><br /> Weitere Informationen finden Sie unter [Accessing Data in Documents on the Server](../vsto/accessing-data-in-documents-on-the-server.md).|Die <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.CachedData%2A>-Eigenschaft|  
+|Zugreifen auf die zwischengespeicherten Daten in einem Dokument<br /><br /> Weitere Informationen finden Sie unter [Zugreifen auf Daten in Dokumenten auf dem Server](../vsto/accessing-data-in-documents-on-the-server.md).|Die <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.CachedData%2A>-Eigenschaft|  
   
-##  <a name="CustomizationInfo"></a>Verwalten der Dokumentanpassung  
+##  <a name="CustomizationInfo"></a> Verwalten der Dokumentanpassung  
  Mitglieder der ServerDocument-Klasse können Sie die Anpassungsassembly verwalten, die einem Dokument zugeordnet ist. Sie können z. B. die Anpassung aus einem Dokument programmgesteuert entfernen, sodass das Dokument nicht mehr Teil einer Anpassung ist.  
   
  In der folgenden Tabelle werden die Member, mit denen Sie die Anpassungsassembly verwalten können, aufgeführt.  
@@ -68,6 +67,6 @@ ms.lasthandoff: 01/10/2018
 ## <a name="see-also"></a>Siehe auch  
  [Vorgehensweise: Anfügen von Erweiterungen durch verwalteten Code an Dokumente](../vsto/how-to-attach-managed-code-extensions-to-documents.md)   
  [Vorgehensweise: Entfernen von Erweiterungen durch verwalteten Code aus Dokumenten](../vsto/how-to-remove-managed-code-extensions-from-documents.md)   
- [Visual Studio Tools for Office Runtime Overview](../vsto/visual-studio-tools-for-office-runtime-overview.md)   
+ [Übersicht über die Visual Studio-Tools für Office-Laufzeit](../vsto/visual-studio-tools-for-office-runtime-overview.md)   
  [Zwischenspeichern von Daten](../vsto/caching-data.md)  
   

@@ -1,23 +1,21 @@
 ---
 title: Schemacache | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 ms.assetid: 35a7fcad-f3bf-4a96-9008-4306e7276223
-caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 9315fdeeb336ac262f59df31b941c05ca3101b3b
-ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 3a7a089e799c2480f667eb000d39c3036220d02e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="schema-cache"></a>Schemacache
 Der XML-Editor stellt einen Schemacache im Verzeichnis %InstallRoot%\Xml\Schemas bereit. Der Schemacache ist global für alle Benutzer auf dem Computer und enthält XML-Standardschemata, die für IntelliSense und die Validierung von XML-Dokumenten verwendet werden.  
@@ -29,22 +27,22 @@ Der XML-Editor stellt einen Schemacache im Verzeichnis %InstallRoot%\Xml\Schemas
 |Dateiname|Beschreibung|  
 |--------------|-----------------|  
 |catalog.xsd|Schema für Schemakatalogdateien des XML-Editors. Weitere Informationen zu den Schemakatalogen finden Sie weiter unten.|  
-|DotNetConfig.xsd|Schema für Web.Config-Dateien, "http://schemas.microsoft.com/.NETConfiguration/v2.0".|  
-|msbuild.xsd|Schema für MSBuild-Makefiles, "http://schemas.microsoft.com/developer/msbuild/2003".|  
+|DotNetConfig.xsd|Schema für die Dateien "Web.config", "http://schemas.microsoft.com/.NETConfiguration/v2.0".|  
+|msbuild.xsd|Schema für die MSBuild stellen Dateien "http://schemas.microsoft.com/developer/msbuild/2003".|  
 |msdata.xsd|Schema für XSD-Anmerkungen, die von der <xref:System.Data.DataSet>-Klasse hinzugefügt werden, "urn:schemas-microsoft-com:xml-msdata".|  
 |msxsl.xsd|Schema für Microsoft XSLT-Skriptblockerweiterungen, urn:schemas-microsoft-com:xslt.|  
 |SnippetFormat.xsd|Schema für die XML-Dateien von Codeausschnitten. Beispiele finden Sie unter %InstallDir%\VC#\Expansions.|  
-|Soap1.1.xsd|Schema für SOAP (Simple Object Access Protocol) 1.1, http://schemas.xmlsoap.org/soap/envelope/.|  
+|Soap1.1.xsd|Schema für Simple Object Access Protocol (SOAP) 1.1 http://schemas.xmlsoap.org/soap/envelope/.|  
 |Soap1.2.xsd|Schema für Simple Object Access Protocol 1.2.|  
-|SiteMapSchema.xsd|Schema für die XML-Datei mit der ASP.NET Websiteübersicht, "http://schemas.microsoft.com/AspNet/SiteMap-File-1.0".|  
-|wsdl.xsd|Schema für WSDL (Web Service Description Language), http://schemas.xmlsoap.org/wsdl/.|  
-|xenc.xsd|Schema für XML Encryption, http://www.w3.org/2000/09/xmldsig#.|  
-|xhtml.xsd|Schema für XHTML, http://www.w3.org/1999/xhtml.|  
-|xlink.xsd|Schema für XLink1.0, http://www.w3.org/1999/xlinkl.|  
-|xml.xsd|Schema, das das xml:space-Attribut und das xml:lang-Attribut beschreibt, http://www.w3.org/XML/1998/namespace.|  
-|xmlsig.xsd|Schema für XML Digital Signatures, http://www.w3.org/2000/09/xmldsig#.|  
-|xsdschema.xsd|Schema, das XSD beschreibt, http://www.w3.org/2001/XMLSchema.|  
-|xslt.xsd|Schema für XML Transforms, http://www.w3.org/1999/XSL/Transform.|  
+|SiteMapSchema.xsd|Schema für ASP.NET Sitemap XML-Datei "http://schemas.microsoft.com/AspNet/SiteMap-File-1.0".|  
+|wsdl.xsd|Schema für Web Service Description Language http://schemas.xmlsoap.org/wsdl/.|  
+|xenc.xsd|Schema für XML-Verschlüsselung, http://www.w3.org/2000/09/xmldsig#.|  
+|xhtml.xsd|Schema für XHTML http://www.w3.org/1999/xhtml.|  
+|xlink.xsd|Schema für XLink1.0, http://www.w3.org/1999/xlink.|  
+|xml.xsd|Schema, XML: space "und" XML: lang-Attribute beschreibt http://www.w3.org/XML/1998/namespace.|  
+|xmlsig.xsd|Schema für digitale XML-Signaturen http://www.w3.org/2000/09/xmldsig#.|  
+|xsdschema.xsd|Schema, beschreibt XSD selbst http://www.w3.org/2001/XMLSchema.|  
+|xslt.xsd|Schemas für XML transformiert, http://www.w3.org/1999/XSL/Transform.|  
   
 ## <a name="updating-schemas-in-the-cache"></a>Aktualisieren von Schemata im Cache  
  Der Editor lädt das Verzeichnis des Schemacache beim Laden des XML-Editorpakets und überwacht während der Ausführung alle Änderungen. Wenn ein Schema hinzugefügt wurde, wird es automatisch in einen Index bekannter Schemata im Speicher geladen. Wenn ein Schema entfernt wurde, wird es automatisch vom Index im Speicher entfernt. Wenn ein Schema aktualisiert wurde, wird es automatisch im speicherinternen Cache dieses Schemas für ungültig erklärt.  

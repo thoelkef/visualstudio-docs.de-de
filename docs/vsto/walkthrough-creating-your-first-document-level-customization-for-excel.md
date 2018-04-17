@@ -1,12 +1,10 @@
 ---
-title: "Exemplarische Vorgehensweise: Erstellen der ersten Anpassung auf Dokumentebene für Excel | Microsoft Docs"
-ms.custom: 
+title: 'Exemplarische Vorgehensweise: Erstellen der ersten Anpassung auf Dokumentebene für Excel | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - document-level customizations [Office development in Visual Studio], creating your first project
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 656486b691c030839fbb2f0d0ebb568d72ca36e0
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: f1a8335c301d8eba2ec170c9b1b462d09364904f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-your-first-document-level-customization-for-excel"></a>Exemplarische Vorgehensweise: Erstellen der ersten Anpassung auf Dokumentebene für Excel
   Diese exemplarische Vorgehensweise bietet eine Einführung zum Erstellen einer Anpassung auf Dokumentebene für Microsoft Office Excel. Die Features, die Sie in dieser Art von Projektmappe erstellen, sind nur verfügbar, wenn eine bestimmte Arbeitsmappe geöffnet ist. Sie können eine Anpassung auf Dokumentebene nicht verwenden, um anwendungsweite Änderungen vorzunehmen, z. B., um eine neue Registerkarte des Menübands anzuzeigen, wenn eine Arbeitsmappe geöffnet ist.  
@@ -72,7 +71,7 @@ ms.lasthandoff: 01/10/2018
   
 8.  Wählen Sie **erstellen Sie ein neues Dokument**, und klicken Sie auf **OK**.  
   
-    -   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]erstellt die **FirstWorkbookCustomization** Projekt, und fügt Sie dem Projekt die folgenden Dateien.  
+    -   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] erstellt die **FirstWorkbookCustomization** Projekt, und fügt Sie dem Projekt die folgenden Dateien.  
   
     -   *FirstWorkbookCustomization*.xlsx – Stellt die Excel-Arbeitsmappe im Projekt dar. Enthält alle Arbeitsblätter und Diagramme.  
   
@@ -170,7 +169,7 @@ ms.lasthandoff: 01/10/2018
 -   Bereitstellen von Anpassungen auf Dokumentebene für Excel: [Bereitstellen einer Office-Lösung](../vsto/deploying-an-office-solution.md).  
   
 ## <a name="see-also"></a>Siehe auch  
- [Übersicht über die Entwicklung von Office-Lösungen &#40; VSTO- &#41;](../vsto/office-solutions-development-overview-vsto.md)   
+ [Übersicht über die Entwicklung von Office-Lösungen &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
  [Excel-Projektmappen](../vsto/excel-solutions.md)   
  [Programmieren von Anpassungen auf Dokumentebene](../vsto/programming-document-level-customizations.md)   
  [Übersicht über das Excel-Objektmodell](../vsto/excel-object-model-overview.md)   

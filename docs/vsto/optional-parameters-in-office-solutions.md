@@ -1,12 +1,10 @@
 ---
 title: Optionale Parameter in Office-Projektmappen | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,20 +18,21 @@ helpviewer_keywords:
 - parameters [Office development in Visual Studio], optional
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: fe40b6bc0af9df294408079c8a27dfac42df97b0
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: d417b5126989736c6126ae7c80bfcbc86f336a09
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="optional-parameters-in-office-solutions"></a>Optionale Parameter in Office-Lösungen
   Viele der Methoden in den Objektmodellen von Microsoft Office-Anwendungen akzeptieren optionale Parameter. Wenn Sie mithilfe von Visual Basic eine Office-Lösung in Visual Studio entwickeln, muss kein Wert für optionale Parameter übergeben werden, da die Standardwerte automatisch für jeden fehlenden Parameter verwendet werden. In den meisten Fällen können Sie optionale Parameter in Visual C#-Projekten auch weggelassen. Nicht jedoch optionale weggelassen **Ref** Parameter von der `ThisDocument` -Klasse im Word-Projekten auf Dokumentebene.  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
- Weitere Informationen zum Arbeiten mit optionalen Parametern in Visual c# und Visual Basic-Projekten finden Sie unter [benannte und optionale Argumente &#40; C &#35; Programmierhandbuch &#41; ](/dotnet/csharp/programming-guide/classes-and-structs/named-and-optional-arguments) und [optionale Parameter &#40; Visual Basic &#41; ](/dotnet/visual-basic/programming-guide/language-features/procedures/optional-parameters).  
+ Weitere Informationen zum Arbeiten mit optionalen Parametern in Visual c# und Visual Basic-Projekten finden Sie unter [benannte und optionale Argumente &#40;C&#35; Programmierhandbuch&#41; ](/dotnet/csharp/programming-guide/classes-and-structs/named-and-optional-arguments) und [optionale Parameter &#40;Visual Basic&#41;](/dotnet/visual-basic/programming-guide/language-features/procedures/optional-parameters).  
   
 > [!NOTE]  
 >  In früheren Versionen von Visual Studio müssen Sie einen Wert für jeden optionalen Parameter in Visual C#-Projekten übergeben. Zur Vereinfachung schließen diese Projekte eine globale Variable mit dem Namen `missing` ein, die Sie an einen optionalen Parameter übergeben können, wenn Sie den Standardwert des Parameters verwenden möchten. Visual C#-Projekte für Office in Visual Studio schließen nach wie vor die `missing` Variable, aber Sie müssen normalerweise nicht beim Entwickeln von Office-Projektmappen in Verwendung [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)], außer beim Aufrufen von Methoden mit optionalen **Ref** Parameter in der `ThisDocument` -Klasse in Projekten auf Dokumentebene für Word.  
@@ -69,7 +68,7 @@ ms.lasthandoff: 01/10/2018
   
  [!code-csharp[Trin_VstrefGeneralWord#5](../vsto/codesnippet/CSharp/worddocument1/ThisDocument.cs#5)]  
   
- Weitere Informationen zu Wert- und referenztypparametern finden Sie unter [übergeben von Argumenten als Wert und als Referenz &#40; Visual Basic &#41; ](/dotnet/visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference) (für Visual Basic) und [übergeben von Parametern &#40; C &#35; Programmierhandbuch &#41; ](/dotnet/csharp/programming-guide/classes-and-structs/passing-parameters).  
+ Weitere Informationen zu Wert- und referenztypparametern finden Sie unter [übergeben von Argumenten als Wert und als Verweis &#40;Visual Basic&#41; ](/dotnet/visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference) (für Visual Basic) und [übergeben von Parametern &#40;C&#35; Programmierhandbuch&#41;](/dotnet/csharp/programming-guide/classes-and-structs/passing-parameters).  
   
 ## <a name="see-also"></a>Siehe auch  
  [Entwickeln von Office-Projektmappen](../vsto/developing-office-solutions.md)   

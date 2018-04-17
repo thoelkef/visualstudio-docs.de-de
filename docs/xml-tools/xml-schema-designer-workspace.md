@@ -1,23 +1,21 @@
 ---
 title: XML-Schema-Designer-Arbeitsbereich | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 ms.assetid: 588fa495-fe7f-4b16-8a9f-6b6b8d2d502a
-caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 7a3da032000d5d286e8476673b3c53b993b18303
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: a44f620319ed1d706a1fbefec52438512ebefc41
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="xml-schema-designer-workspace"></a>Arbeitsbereich des XML-Schema-Designers
 Der XML-Schema-Designer (XSD-Designer) ist ein grafisches Tool, mit dem Sie die XML-Schemas untersuchen können. Zusätzlich zu den [XML-Schema-Explorer](../xml-tools/xml-schema-explorer.md), ermöglicht das Durchsuchen und Navigieren in der Struktur der XML-Schema und Suchvorgänge ausführen, der XSD-Designer bietet drei Ansichten, die Sie zur Untersuchung des XSD-Schemas im Detail zu ermöglichen. Die Ausgangsansicht ist der Ausgangspunkt für den XSD-Designer. In dieser Ansicht können Sie zu anderen Ansichten des XSD-Designers navigieren und die Details des Schemasets sehen. Die Diagrammansicht bietet eine Übersicht über ein Schemaset und die Beziehungen zwischen den Schemaknoten. Die Inhaltsmodellansicht bietet eine grafische Darstellung der Details lokaler und globaler Schemaknoten, einschließlich einfacher und komplexer Typen, Elemente, Gruppen, Attribute und Attributgruppen.  

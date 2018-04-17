@@ -1,12 +1,10 @@
 ---
 title: 'Exemplarische Vorgehensweise: Einfache Datenbindung in einem Projekt auf Dokumentebene | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,13 +16,14 @@ helpviewer_keywords:
 - simple data binding [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 95029c946939bf0918e15034625ad31c1e5897b9
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 939d45246ea36f4227a0b914210cb0470b325c20
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-simple-data-binding-in-a-document-level-project"></a>Exemplarische Vorgehensweise: Einfache Datenbindung in Projekten auf Dokumentebene
   Diese exemplarische Vorgehensweise veranschaulicht die Grundlagen der Datenbindung in einem Projekt auf Dokumentebene. Ein einzelnes Datenfeld in einer SQL Server-Datenbank, die an einen benannten Bereich in Microsoft Office Excel gebunden ist. Die exemplarischen Vorgehensweise wird gezeigt, wie Steuerelemente hinzufügen, die Sie durch alle Datensätze in der Tabelle einen Bildlauf durchführen können.  
@@ -181,7 +180,7 @@ ms.lasthandoff: 01/10/2018
   
 2.  Vergewissern Sie sich, dass der erste Datensatz in Zellen angezeigt **A1** und **B1**.  
   
-3.  Klicken Sie auf die  **>**  (`Button3`) Schaltfläche, und vergewissern Sie sich, dass der nächste Datensatz in der Zelle angezeigt wird **A1** und **B1**.  
+3.  Klicken Sie auf die **>** (`Button3`) Schaltfläche, und vergewissern Sie sich, dass der nächste Datensatz in der Zelle angezeigt wird **A1** und **B1**.  
   
 4.  Klicken Sie auf die anderen Navigationsschaltflächen, um sicherzustellen, dass der Datensatz geändert wird, wie erwartet.  
   

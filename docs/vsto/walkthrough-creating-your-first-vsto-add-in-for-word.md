@@ -1,12 +1,10 @@
 ---
-title: "Exemplarische Vorgehensweise: Erstellen des ersten VSTO-Add-Ins für Word | Microsoft Docs"
-ms.custom: 
+title: 'Exemplarische Vorgehensweise: Erstellen des ersten VSTO-Add-Ins für Word | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - Word [Office development in Visual Studio], creating your first project
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 3452bd5e550ab724dc6c236515579869814a9237
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: d7bddcf43d275dc30b0f3825fbb2dbe665e46025
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-your-first-vsto-add-in-for-word"></a>Exemplarische Vorgehensweise: Erstellen Ihres ersten VSTO-Add-Ins für Word
   Diese exemplarischen Vorgehensweise bietet eine Einführung in das Erstellen eines VSTO-Add-Ins für Microsoft Office Word. Die Funktionen, die Sie in dieser Art von Projektmappe erstellen, sind für die Anwendung selbst verfügbar. Dabei spielt es keine Rolle, welche Dokumente geöffnet sind.  
@@ -67,7 +66,7 @@ ms.lasthandoff: 01/10/2018
   
 7.  Klicken Sie auf **OK**.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]erstellt die **FirstWordAddIn** -Projekt und öffnet die Codedatei "ThisAddIn" im Editor.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] erstellt die **FirstWordAddIn** -Projekt und öffnet die Codedatei "ThisAddIn" im Editor.  
   
 ## <a name="writing-code-to-add-text-to-the-saved-document"></a>Schreiben von Code zum Hinzufügen von Text zum gespeicherten Dokument  
  Fügen Sie der Codedatei "ThisAddIn" nun Code hinzu. Der neue Code verwendet das Word-Objektmodell, um jedem gespeicherten einen Textbaustein hinzuzufügen. Standardmäßig enthält die Codedatei "ThisAddIn" den folgenden generierten Code:  
@@ -137,7 +136,7 @@ ms.lasthandoff: 01/10/2018
 -   Bereitstellen von VSTO-Add-ins für Word: [Bereitstellen einer Office-Lösung](../vsto/deploying-an-office-solution.md).  
   
 ## <a name="see-also"></a>Siehe auch  
- [Übersicht über die Entwicklung von Office-Lösungen &#40; VSTO- &#41;](../vsto/office-solutions-development-overview-vsto.md)   
+ [Übersicht über die Entwicklung von Office-Lösungen &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
  [Word-Projektmappen](../vsto/word-solutions.md)   
  [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)   
  [Übersicht über das Word-Objektmodell](../vsto/word-object-model-overview.md)   

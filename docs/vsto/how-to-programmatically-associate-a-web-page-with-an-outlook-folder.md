@@ -1,12 +1,10 @@
 ---
 title: 'Vorgehensweise: Programmgesteuertes Zuordnen einer Webseite zu einem Outlook-Ordner | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - Web pages [Office development in Visual Studio], Outlook folders
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 0fa0ccb3035bc4be8e316c96bd5da8c166dcb4b8
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 5495066b05ded6fc49dfe92ed489932d8c75b24d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-programmatically-associate-a-web-page-with-an-outlook-folder"></a>Gewusst wie: Programmgesteuertes Zuordnen einer Webseite zu einem Outlook-Ordner
   In diesem Beispiel für einen Ordner namens überprüft `HtmlView` in Microsoft Office Outlook. Wenn der Ordner nicht vorhanden ist, wird der Code erstellt den Ordner und eine Webseite zugewiesen. Wenn der Ordner vorhanden ist, zeigt der Code den Ordnerinhalt auflisten.  

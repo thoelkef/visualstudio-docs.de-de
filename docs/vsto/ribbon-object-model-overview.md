@@ -1,13 +1,10 @@
 ---
-title: "Multifunktionsleisten-Objektmodellübersicht | Microsoft Docs"
-ms.custom: 
+title: Multifunktionsleisten-Objektmodellübersicht | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - Ribbon [Office development in Visual Studio], object model
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bda61cd7ca0e169a4f62fbc0c33b24e3c4ec0048
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: c0d6defc160d08d0c92dd21370144c1ef748e7e2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ribbon-object-model-overview"></a>Multifunktionsleisten-Objektmodellübersicht
   Die [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] stellt ein stark typisiertes Objektmodell, das Sie zum Abrufen und Festlegen der Eigenschaften von Menübandsteuerelementen zur Laufzeit verwenden können. Beispielsweise können neue Menüsteuerelemente dynamisch ausgefüllt oder Steuerelemente kontextbezogen angezeigt und ausgeblendet werden. Zudem besteht die Möglichkeit, einem Menüband Registerkarten, Gruppen und Steuerelemente hinzuzufügen. Dies muss jedoch vor dem Laden des Menübands durch die Office-Anwendung erfolgen. Informationen finden Sie unter [Festlegen von Eigenschaften, die schreibgeschützt](#SettingReadOnlyProperties).  
@@ -31,12 +28,12 @@ ms.lasthandoff: 01/10/2018
   
  Dieses Menüband-Objektmodell besteht hauptsächlich aus der [Menübandklasse](#RibbonClass), [Menübandereignisse](#RibbonEvents), und [Menüband-Steuerelementklassen](#RibbonControlClasses).  
   
-##  <a name="RibbonClass"></a>Ribbon-Klasse  
+##  <a name="RibbonClass"></a> Ribbon-Klasse  
  Beim Hinzufügen einer neuen **Menüband (visueller Designer)** Element zu einem Projekt, fügt Visual Studio eine **Menüband** Ihrem Projekt. Die **Menüband** Klasse erbt von der <xref:Microsoft.Office.Tools.Ribbon.RibbonBase> Klasse.  
   
  Diese Klasse wird als partielle Klasse angezeigt, die zwischen der Menüband-Codedatei und der Codedatei des Menüband-Designers aufgeteilt ist.  
   
-##  <a name="RibbonEvents"></a>Menübandereignisse  
+##  <a name="RibbonEvents"></a> Menübandereignisse  
  Die **Menüband** Klasse enthält die folgenden drei Ereignisse:  
   
 |event|Beschreibung|  
@@ -45,7 +42,7 @@ ms.lasthandoff: 01/10/2018
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonBase.LoadImage>|Ermöglicht beim Laden des Menübands die Zwischenspeicherung von Images in der Menübandanpassung. Eine leichte Leistungsverbesserung wird erzielt, wenn zum Zwischenspeichern der Menüband-Images in diesem Ereignishandler Code geschrieben wird. Weitere Informationen finden Sie unter <xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.LoadImage>.|  
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonBase.Close>|Wird ausgelöst, wenn die Menübandinstanz geschlossen wird.|  
   
-##  <a name="RibbonControlClasses"></a>Menübandsteuerelemente  
+##  <a name="RibbonControlClasses"></a> Menübandsteuerelemente  
  Die <xref:Microsoft.Office.Tools.Ribbon> Namespace beinhaltet einen Typ für jedes Steuerelement, das in der **Steuerelemente für Office-Menübänder** Gruppe der **Toolbox**.  
   
  In der folgenden Tabelle wird der Typ für jedes `Ribbon`-Steuerelement angezeigt. Eine Beschreibung der einzelnen Steuerelemente, finden Sie unter [Übersicht über das Menüband](../vsto/ribbon-overview.md).  
@@ -59,7 +56,7 @@ ms.lasthandoff: 01/10/2018
 |**ComboBox**|<xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox>|  
 |**Dropdownliste**|<xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown>|  
 |**Bearbeitungsfeld**|<xref:Microsoft.Office.Tools.Ribbon.RibbonEditBox>|  
-|**Galerie**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>|  
+|**Katalog**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>|  
 |**Gruppieren**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGroup>|  
 |**Bezeichnung**|<xref:Microsoft.Office.Tools.Ribbon.RibbonLabel>|  
 |**Menü**|<xref:Microsoft.Office.Tools.Ribbon.RibbonMenu>|  
@@ -94,7 +91,7 @@ ms.lasthandoff: 01/10/2018
 |Abrufen der Gruppen auf <xref:Microsoft.Office.Tools.Ribbon.RibbonTab>.|Verwenden Sie die <xref:Microsoft.Office.Tools.Ribbon.RibbonTab.Groups%2A>-Eigenschaft.|  
 |Angeben der Anzahl der Zeilen und Spalten, die in <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery> angezeigt werden.|Verwenden Sie die <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.RowCount%2A>-Eigenschaft und die <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.ColumnCount%2A>-Eigenschaft.|  
   
-##  <a name="SettingReadOnlyProperties"></a>Festlegen von Eigenschaften, die schreibgeschützt werden  
+##  <a name="SettingReadOnlyProperties"></a> Festlegen von Eigenschaften, die schreibgeschützt werden  
  Einige Eigenschaften können nur vor dem Laden des Menübands festgelegt werden. Diese Eigenschaften können an drei Orten festgelegt werden:  
   
 -   In Visual Studio **Eigenschaften** Fenster.  
@@ -131,7 +128,7 @@ ms.lasthandoff: 01/10/2018
  [!code-vb[Trin_Ribbon_ObjectModel#2](../vsto/codesnippet/VisualBasic/trin_ribbon_objectmodel_dotnet4/ThisWorkbook.vb#2)]
  [!code-csharp[Trin_Ribbon_ObjectModel#2](../vsto/codesnippet/CSharp/trin_ribbon_objectmodel_dotnet4/ThisWorkbook.cs#2)]  
   
-###  <a name="ReadOnlyProperties"></a>Eigenschaften, die schreibgeschützt werden  
+###  <a name="ReadOnlyProperties"></a> Eigenschaften, die schreibgeschützt werden  
  In der folgenden Tabelle werden Eigenschaften angezeigt, die nur vor dem Laden des Menübands festgelegt werden können.  
   
 > [!NOTE]  
@@ -142,14 +139,14 @@ ms.lasthandoff: 01/10/2018
 |**BoxStyle**|<xref:Microsoft.Office.Tools.Ribbon.RibbonBox>|  
 |**ButtonType**|<xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton>|  
 |**Spaltenanzahl**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>|  
-|**ControlId**|<xref:Microsoft.Office.Tools.Ribbon.RibbonTab>|  
+|**controlId**|<xref:Microsoft.Office.Tools.Ribbon.RibbonTab>|  
 |**DialogLauncher**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGroup>|  
 |**Dynamische**|<xref:Microsoft.Office.Tools.Ribbon.RibbonMenu>|  
 |**Global**|<xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon>|  
 |**Gruppen**|<xref:Microsoft.Office.Tools.Ribbon.RibbonTab>|  
 |**ImageName**|<xref:Microsoft.Office.Tools.Ribbon.RibbonButton><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDialogLauncher><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonEditBox><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton>|  
 |**ItemSize**|<xref:Microsoft.Office.Tools.Ribbon.RibbonMenu><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton>|  
-|**MaxLength**|<xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonEditBox>|  
+|**maxLength**|<xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonEditBox>|  
 |**Name**|<xref:Microsoft.Office.Tools.Ribbon.RibbonComponent>|  
 |**Position**|<xref:Microsoft.Office.Tools.Ribbon.RibbonButton><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonCheckBox><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGroup><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSeparator><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonTab><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton>|  
 |**RibbonType**|<xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon>|  

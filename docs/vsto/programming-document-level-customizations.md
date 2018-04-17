@@ -1,13 +1,10 @@
 ---
 title: Programmieren von Anpassungen auf Dokumentebene | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - Sheet3
 - thisWorkbook
@@ -30,14 +27,14 @@ helpviewer_keywords:
 - application development [Office development in Visual Studio], document-level customizations
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a614173fc33547c3512c031b7e0bd8a5575e7cb2
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 5f44b7d5a283d6e2946eb26e5036f47b09729de8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="programming-document-level-customizations"></a>Programmieren von Anpassungen auf Dokumentebene
   Wenn Sie Microsoft Office Word oder Microsoft Office Excel mit einer Anpassung auf Dokumentebene erweitern, können Sie die folgenden Aufgaben ausführen:  
@@ -58,7 +55,7 @@ ms.lasthandoff: 01/10/2018
   
  Einige Aspekte beim Schreiben von Code in Projekten auf Dokumentebene unterscheiden sich von anderen Projekttypen in Visual Studio. Viele dieser Unterschiede haben mit der Art zu tun, wie die Office-Objektmodelle im verwalteten Code verfügbar gemacht werden. Weitere Informationen finden Sie unter [Writing Code in Office Solutions](../vsto/writing-code-in-office-solutions.md).  
   
- Allgemeine Informationen zu Anpassungen auf Dokumentebene und anderen Arten von Projektmappen, die Sie mithilfe der Office-Entwicklungstools in Visual Studio erstellen können, finden Sie unter [Übersicht über die Entwicklung von Office-Lösungen &#40; VSTO- &#41; ](../vsto/office-solutions-development-overview-vsto.md).  
+ Allgemeine Informationen zu Anpassungen auf Dokumentebene und anderen Arten von Projektmappen, die Sie mithilfe der Office-Entwicklungstools in Visual Studio erstellen können, finden Sie unter [Übersicht über die Entwicklung von Office-Lösungen &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
   
 ## <a name="using-the-generated-classes-in-document-level-projects"></a>Verwenden der generierten Klassen in Projekten auf Dokumentebene  
  Wenn Sie ein Projekt auf Dokumentebene erstellen, generiert Visual Studio automatisch eine Klasse im Projekt, die Sie zum Schreiben von Code verwenden können. Visual Studio generiert unterschiedliche Klassen für Word und Excel:  
@@ -84,7 +81,7 @@ ms.lasthandoff: 01/10/2018
   
 -   `ThisWorkbook`wird aus <xref:Microsoft.Office.Tools.Excel.WorkbookBase>abgeleitet.  
   
--   `Sheet` *n*wird aus <xref:Microsoft.Office.Tools.Excel.WorksheetBase>abgeleitet.  
+-   `Sheet` *n*: leitet sich von <xref:Microsoft.Office.Tools.Excel.WorksheetBase>.  
   
  Diese Basisklassen leiten alle Aufrufe an ihre Member zu internen Implementierungen der entsprechenden Hostelementschnittstellen in [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]um. Wenn Sie beispielsweise die <xref:Microsoft.Office.Tools.Word.DocumentBase.Protect%2A> -Methode der `ThisDocument` -Klasse aufrufen, leitet die <xref:Microsoft.Office.Tools.Word.DocumentBase> -Klasse diesen Aufruf an die interne Implementierung der <xref:Microsoft.Office.Tools.Word.Document> -Schnittstelle in [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]um.  
   
@@ -174,7 +171,7 @@ Globals.ThisDocument.Save();
   
 ## <a name="see-also"></a>Siehe auch  
  [Steuerelemente für Office-Dokumente](../vsto/controls-on-office-documents.md)   
- [Combining VBA and Document-Level Customizations](../vsto/combining-vba-and-document-level-customizations.md)   
+ [Kombinieren von VBA und Anpassungen auf Dokumentebene](../vsto/combining-vba-and-document-level-customizations.md)   
  [Verwalten von Dokumenten auf einem Server mit der ServerDocument-Klasse](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md)   
  [Writing Code in Office Solutions](../vsto/writing-code-in-office-solutions.md)  
   
