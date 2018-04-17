@@ -1,11 +1,8 @@
 ---
 title: Binden von WPF-Steuerelementen zu einem Dataset | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -14,17 +11,17 @@ helpviewer_keywords:
 - WPF data binding [Visual Studio], walkthroughs
 - WPF Designer, data binding
 ms.assetid: 177420b9-568b-4dad-9d16-1b0e98a24d71
-caps.latest.revision: "32"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: 072adcf912e5921164647cf77ee561617f844786
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: f4034651b68194906285c6d1911f7f650287074d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>Binden von WPF-Steuerelementen zu einem dataset
 In dieser exemplarischen Vorgehensweise erstellen Sie eine WPF-Anwendung, die datengebundene Steuerelemente enthält. Die Steuerelemente sind an Produktdatensätze gebunden, die in einem Dataset gekapselt sind. Sie fügen außerdem Schaltflächen hinzu, mit denen es möglich ist, Produkte zu durchsuchen und Änderungen an Produktdatensätzen zu speichern.  
@@ -183,11 +180,11 @@ Vorkenntnisse der folgenden Konzepte sind ebenfalls hilfreich, wenn auch für di
 7.  In der **Eigenschaften** Fenster, wählen Sie das Kontrollkästchen neben den **IsReadOnly** Eigenschaft.  
   
 ## <a name="navigating-product-records"></a>Navigieren durch Product records  
- Fügen Sie Code, der Benutzern ermöglicht, durch die Produktdatensätze scrollen, mithilfe der  **\<**  und  **>**  Schaltflächen.  
+ Fügen Sie Code, der Benutzern ermöglicht, durch die Produktdatensätze scrollen, mithilfe der **\<** und **>** Schaltflächen.  
   
 #### <a name="to-enable-users-to-navigate-product-records"></a>Benutzern das Navigieren durch Product Records ermöglichen  
   
-1.  Doppelklicken Sie im Designer auf die  **<**  Schaltfläche auf der Fensteroberfläche.  
+1.  Doppelklicken Sie im Designer auf die **<** Schaltfläche auf der Fensteroberfläche.  
   
      Visual Studio öffnet die CodeBehind-Datei und erstellt ein neues `backButton_Click` -Ereignishandler für das <xref:System.Windows.Controls.Primitives.ButtonBase.Click> Ereignis.  
   
@@ -201,7 +198,7 @@ Vorkenntnisse der folgenden Konzepte sind ebenfalls hilfreich, wenn auch für di
      [!code-csharp[Data_WPFDATASET#2](../data-tools/codesnippet/CSharp/bind-wpf-controls-to-a-dataset_2.cs)]
      [!code-vb[Data_WPFDATASET#2](../data-tools/codesnippet/VisualBasic/bind-wpf-controls-to-a-dataset_2.vb)]  
   
-4.  Zurück zu den Designer und doppelklicken Sie auf die  **>**  Schaltfläche.  
+4.  Zurück zu den Designer und doppelklicken Sie auf die **>** Schaltfläche.  
   
 5.  Fügen Sie dem `nextButton_Click`-Ereignishandler folgenden Code hinzu:  
   
@@ -236,7 +233,7 @@ Hinzufügen von Code, der ermöglicht Benutzern das Speichern von Änderungen an
   
     -   Die Textfelder zeigen Daten aus dem ersten Produktdatensatz, der ein Foto hat. Dieses Produkt hat die Produkt-ID 713 und den Namen **Long-Sleeve Logo Jersey, S**.  
   
-    -   Klicken Sie auf die  **>**  oder  **<**  Schaltflächen zum Navigieren durch andere Produktdatensätze.  
+    -   Klicken Sie auf die **>** oder **<** Schaltflächen zum Navigieren durch andere Produktdatensätze.  
   
 2.  Ändern Sie in einem der Datensätze, die **Größe** -Wert aus, und klicken Sie dann auf **Änderungen speichern**.  
   

@@ -1,28 +1,26 @@
 ---
-title: "Uwp-apps im Simulator ausführen | Microsoft Docs"
-ms.custom: 
+title: Uwp-apps im Simulator ausführen | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
 - FSharp
 - C++
 ms.assetid: 81b69bf8-ec87-4bb6-9ad4-1fa7b7802d16
-caps.latest.revision: "42"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: uwp
-ms.openlocfilehash: 40cdfaf430483d68744e4ec9535c2546e75d4470
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+manager: douge
+ms.workload:
+- uwp
+ms.openlocfilehash: b3ec07f7bf36ba606e9f1ddb45bdcde75d570a32
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="run-uwp-apps-in-the-simulator"></a>Uwp-apps im Simulator ausführen
 Visual Studio-Simulator für uwp-apps ist eine Desktopanwendung, die eine uwp-app simuliert. In der Regel sollten Sie auf dem lokalen Computer, einem angeschlossenen Gerät oder einem Remotecomputer zu debuggen. In einigen Szenarien möchten Sie jedoch Visual Studio-Simulator zu verwenden, um eine andere physische Bildschirmgröße und-Auflösung zu emulieren. Sie können auch typische Touch- und rotationsereignisse simulieren und Netzwerkverbindungseigenschaften simulieren.
@@ -98,7 +96,7 @@ Visual Studio-Simulator für uwp-apps ist eine Desktopanwendung, die eine uwp-ap
 > [!NOTE]
 >  Sie können skalierte Versionen von Bitmapbildern in Ihrer App speichern, und Windows lädt das richtige Bild für die aktuelle Skalierung. Weitere Informationen finden Sie unter [Entwurfs- und UI-Intro](/windows/uwp/layout/design-and-ui-intro). Wenn Sie die Simulatorauflösung ändern, sodass Windows ein anderes Bild für die Auflösung auswählt, müssen Sie die Debugsitzung beenden und erneut starten, damit das neue Bild angezeigt wird.  
   
-##  <a name="BKMK_Capture_a_screenshot_of_your_app_for_submission_to_the_Microsoft_Store"></a>Erstellen eines Screenshots Ihrer App für die Übermittlung zum Microsoft Store  
+##  <a name="BKMK_Capture_a_screenshot_of_your_app_for_submission_to_the_Microsoft_Store"></a> Erstellen eines Screenshots Ihrer App für die Übermittlung zum Microsoft Store  
  Wenn Sie eine app zum Microsoft Store übermitteln, müssen Sie auch Screenshots der app einschließen.  
   
 > [!NOTE]

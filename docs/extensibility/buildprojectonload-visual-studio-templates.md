@@ -1,30 +1,26 @@
 ---
 title: BuildProjectOnLoad (Visual Studio-Vorlagen) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#BuildOnLoad
 helpviewer_keywords:
 - <BuildOnLoad> element [Visual Studio Templates]
 - BuildOnLoad element [Visual Studio Templates]
 ms.assetid: 950f5fc1-d041-4090-9a5c-60844768a4cc
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9b3fc7842e71ff1bff3bd3e362f0c12afcf4292f
-ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
+ms.openlocfilehash: 58493c8e3c4668f1cd94c7f892d727479b755f3f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="buildprojectonload-visual-studio-templates"></a>BuildProjectOnLoad (Visual Studio-Vorlagen)
 Gibt an, ob das Projekt zu erstellen, unmittelbar nachdem er erstellt wurde.  

@@ -2,12 +2,9 @@
 title: Navigieren Sie im Code mit dem Debugger in Visual Studio | Microsoft Docs
 ms.custom: H1Hack27Feb2017
 ms.date: 02/07/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.execution
 helpviewer_keywords:
@@ -15,17 +12,16 @@ helpviewer_keywords:
 - debugging [Visual Studio], execution control
 - execution, controlling in debugger
 ms.assetid: 759072ba-4aaa-447e-8e51-0dd1456fe896
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f6b83e1be32eb657555131a934f8c11f9567c5bc
-ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
+ms.openlocfilehash: 4e39c343531b7ce81c202e979117d3d2c7196cd7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="navigate-code-with-the-visual-studio-debugger"></a>Navigieren Sie im Code mit Visual Studio-Debugger
 Mit den Befehlen und Tastenkombinationen zum Navigieren im Code im Debugger vertraut machen, und treffen, die zum Suchen und beheben Probleme in Ihrer app leichter und schneller. Während Sie den Code im Debugger navigieren, können Sie überprüfen Sie den Status der app oder erfahren Sie mehr über seine Ausführungsfluss.  
@@ -47,7 +43,7 @@ Mit den Befehlen und Tastenkombinationen zum Navigieren im Code im Debugger vert
   
  Die meisten Debuggerfunktionen, z. B. die Anzeige von Variablenwerten im Fenster "lokal" oder das Auswerten von Ausdrücken im Überwachungsfenster, stehen nur verwendet werden, während der Debugger angehalten wird (so genannte *Unterbrechungsmodus*). Wenn der Debugger angehalten wird, der app-Zustand wird angehalten, während der Funktionen, Variablen und Objekte im Speicher verbleiben. Klicken Sie im Unterbrechungsmodus befinden, können Sie die Elemente Positionen und Zustände, um nach Verstößen oder Fehlern zu suchen untersuchen. Für manche Projekttypen können Sie auch anpassen, um die app im Unterbrechungsmodus vornehmen. Um ein Video mit diesen Funktionen zu beobachten, finden Sie unter [erste Schritte mit dem Debugger](https://www.youtube.com/watch?v=FtGCi5j30YU&list=PLReL099Y5nRfw6VNvzMkv0sabT2crbSpK&index=6).
   
-##  <a name="BKMK_Step_into__over__or_out_of_the_code"></a>Einzelschritt in Code zeilenweise  
+##  <a name="BKMK_Step_into__over__or_out_of_the_code"></a> Einzelschritt in Code zeilenweise  
  Um während des Debuggens in jeder Zeile des Codes (jede Anweisung) zu beenden, verwenden die **F11** Tastenkombination (oder **Debuggen** > **Einzelschritt** im Menü).  
   
 > [!TIP]
@@ -75,7 +71,7 @@ Mit den Befehlen und Tastenkombinationen zum Navigieren im Code im Debugger vert
   
  Um die Aufrufliste während der schrittweisen Funktionen visuell zu verfolgen, finden Sie unter [Zuordnen von Methoden in der Aufrufliste während des Debuggens](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md).  
   
-##  <a name="BKMK_Step_over_Step_out"></a>Durchlaufen von Code, überspringen die Funktionen  
+##  <a name="BKMK_Step_over_Step_out"></a> Durchlaufen von Code, überspringen die Funktionen  
  Wenn Code im Debugger ausgeführt wird, oft erkennen Sie, dass Sie benötigen, um festzustellen, was geschieht, in einer bestimmten Funktion (nicht wichtig er oder Sie wissen, dass sie funktioniert, wie die getestete Bibliothekscode). Diese Befehle verwenden, um Code zu überspringen (die Funktionen weiterhin ausgeführt, natürlich, aber der Debugger überspringt sie).  
   
 |Tastenkombination|Menübefehl|Beschreibung|  
@@ -86,14 +82,14 @@ Mit den Befehlen und Tastenkombinationen zum Navigieren im Code im Debugger vert
 > [!TIP]
 >  Sie müssen den Einstiegspunkt in Ihre app zu suchen, beginnen Sie mit **F10** oder **F11**. Diese Befehle sind oft hilfreich, wenn Sie Ihrer app-Status überprüfen oder Weitere Informationen über seine Ausführungsfluss erhalten möchten.  
   
-##  <a name="BKMK_Break_into_code_by_using_breakpoints_or_Break_All"></a>Führen Sie an einer bestimmten Position oder Funktion  
+##  <a name="BKMK_Break_into_code_by_using_breakpoints_or_Break_All"></a> Führen Sie an einer bestimmten Position oder Funktion  
  Häufig die bevorzugte Methode für das Debuggen von Code diese Methoden sind nützlich, wenn Sie genau Codes kennen Sie überprüfen möchten, oder mindestens Sie wissen, wo Sie mit dem Debuggen beginnen möchten.  
   
 -   **Festlegen von Haltepunkten im Code**  
   
      Um einen einfachen Haltepunkt im Code festzulegen, öffnen Sie die Quellcodedatei im Visual Studio-Editor. Setzen Sie den Cursor in die Codezeile, wo möchten Sie unterbrechen die Ausführung, und klicken Sie dann mit der rechten Maustaste im Codefenster "finden im Kontextmenü den Befehl aus, und wählen **Haltepunkt > Haltepunkt einfügen** (oder drücken Sie **F9**). Der Debugger unterbricht die Ausführung rechts, bevor die Zeile ausgeführt wird.  
   
-     ![Set a breakpoint](../debugger/media/dbg_basics_setbreakpoint.png "DBG_Basics_SetBreakpoint")  
+     ![Festlegen eines Haltepunkts](../debugger/media/dbg_basics_setbreakpoint.png "DBG_Basics_SetBreakpoint")  
   
      Haltepunkte in Visual Studio bieten einen umfangreichen Satz von zusätzlichen Funktionen, wie z. B. bedingte Haltepunkte und Ablaufverfolgungspunkte. Finden Sie unter [Verwenden von Haltepunkten](../debugger/using-breakpoints.md).  
   
@@ -132,7 +128,7 @@ Mit den Befehlen und Tastenkombinationen zum Navigieren im Code im Debugger vert
   
      ![Wählen Sie im Dialogfeld Breakpoints](../debugger/media/dbg_execution_overloadedbreakpoints.png "DBG_Execution_OverloadedBreakpoints")  
   
-##  <a name="BKMK_Set_the_next_statement_to_execute"></a>Ziehen Sie den Mauszeiger, um den Ausführungsfluss zu ändern  
+##  <a name="BKMK_Set_the_next_statement_to_execute"></a> Ziehen Sie den Mauszeiger, um den Ausführungsfluss zu ändern  
  Während der Debugger angehalten wird, können Sie den Anweisungszeiger zum Festlegen der nächsten Anweisung der auszuführende Code verschieben. Die Position der nächsten auszuführenden Anweisung wird durch eine gelbe Pfeilspitze am Rand eines Quellcodefensters oder Disassemblierungsfensters markiert. Durch das Verschieben dieser Pfeilspitze können Sie einen Teil des Codes überspringen oder zu einer bereits ausgeführten Zeile zurückkehren. Dies ist zum Beispiel sinnvoll, um einen Codeabschnitt zu überspringen, von dem bereits bekannt ist, dass er einen Fehler enthält.  
   
  ![Bewegen des Mauszeigers](../debugger/media/dbg_basics_example3.gif "DBG_Basics_Example3")

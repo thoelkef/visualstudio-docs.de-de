@@ -1,12 +1,10 @@
 ---
-title: "Das Debuggen für ASP.NET-Anwendungen aktivieren | Microsoft Docs"
+title: Das Debuggen für ASP.NET-Anwendungen aktivieren | Microsoft Docs
 ms.custom: H1HackMay2017
 ms.date: 09/21/17
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -17,16 +15,16 @@ helpviewer_keywords:
 - Web.config configuration file, debug mode
 - debugging [Visual Studio], ASP.NET
 ms.assetid: 3beed819-cece-4864-8184-bd410000973a
-caps.latest.revision: "37"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: aspnet
-ms.openlocfilehash: e3c6dffbd99dbdd91753ce8d06ab139006692089
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+manager: douge
+ms.workload:
+- aspnet
+ms.openlocfilehash: 397dbe26aafd7ec385e6afeb11b3ca19155dfbcc
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="debug-aspnet-applications-in-visual-studio"></a>Debuggen von ASP.NET-Anwendungen in Visual Studio
 
@@ -142,7 +140,7 @@ Wenn Sie lokale IIS-Webserver verwenden, gehen Sie folgendermaßen vor.
     > [!NOTE]
     > Wenn Sie Windows Server 2008 R2 verwenden, installieren Sie ASP.NET 4 stattdessen mit dem folgenden Befehl:
 
-     **C:\WINDOWS\Microsoft.NET\Framework64\v4.0.30319\aspnet_regiis.exe - ir**
+     **C:\Windows\Microsoft.NET\Framework64\v4.0.30319\aspnet_regiis.exe -ir**
 
 2. Öffnen der **Internetinformationsdienste (IIS) Manager**. (Wählen Sie im linken Bereich des Server-Managers **IIS**. Mit der rechten Maustaste in des Servers, und wählen Sie **(Internet Information Services, IIS) Manager**.)
 

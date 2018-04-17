@@ -1,27 +1,25 @@
 ---
 title: Ausdrucksauswertung | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - expressions [Debugging SDK]
 - debugging [Debugging SDK], expression evaluation
 - expression evaluation
 ms.assetid: f9381b2f-99aa-426c-aea0-d9c15f3c859b
-caps.latest.revision: "19"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 55aaa595c49d0c50cff5f874d1b322c3adbb9729
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 8dd2cc4409dbdb7650454715e133fd76dda5b780
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="expression-evaluator"></a>Ausdrucksauswertung
 Ausdrucksauswertungen (EE) untersuchen die Syntax von einer anderen Sprache zu analysieren und Auswerten von Variablen und Ausdrücke zur Laufzeit, sodass sie vom Benutzer angezeigt werden, wenn die IDE im Unterbrechungsmodus befindet.  
@@ -33,7 +31,7 @@ Ausdrucksauswertungen (EE) untersuchen die Syntax von einer anderen Sprache zu a
   
 2.  Ruft das debugpaket ein `IDebugExpressionContext2` -Objekt aus einer [IDebugStackFrame2](../../extensibility/debugger/reference/idebugstackframe2.md) -Schnittstelle, und ruft dann die `IDebugStackFrame2::ParseText` -Methode dafür abrufen ein [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) Objekt.  
   
-3.  Ruft die Debug-Paket die [EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) Methode oder die [EvaluateAsync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) Methode, um den Wert des Ausdrucks abzurufen. `IDebugExpression2::EvaluateAsync`wird vom Befehl/Direktfenster aufgerufen. Rufen Sie alle UI-Komponenten `IDebugExpression2::EvaluateSync`.  
+3.  Ruft die Debug-Paket die [EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) Methode oder die [EvaluateAsync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) Methode, um den Wert des Ausdrucks abzurufen. `IDebugExpression2::EvaluateAsync` wird vom Befehl/Direktfenster aufgerufen. Rufen Sie alle UI-Komponenten `IDebugExpression2::EvaluateSync`.  
   
 4.  Das Ergebnis der Auswertung von Ausdrücken ist ein [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) Objekt, das den Namen, Typ und Wert, der das Ergebnis der ausdrucksauswertung enthält.  
   

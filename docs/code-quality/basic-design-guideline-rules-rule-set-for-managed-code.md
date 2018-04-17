@@ -1,23 +1,21 @@
 ---
-title: "Grundlegende Regelsatz Entwurfsrichtlinienregeln für verwalteten Code | Microsoft Docs"
-ms.custom: 
+title: Grundlegende Regelsatz Entwurfsrichtlinienregeln für verwalteten Code | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 ms.assetid: 7eb384f5-f961-400b-b151-115d92addc6a
-caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: 769ff8468bc2f8ea90201678c85351706b8a4652
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- dotnet
+ms.openlocfilehash: 3ae77ad6aad6b0300cd96061198086831ee61cde
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="basic-design-guideline-rules-rule-set-for-managed-code"></a>Regelsatz für die einfachen Entwurfsrichtlinienregeln für verwalteten Code
 Sie können die einfachen Entwurfsrichtlinienregeln Microsoft Regelsatz, der Schwerpunkt auf Ihren Code zu verstehen und zu verwenden, einfacher zu machen. Sie sollten berücksichtigen, dass diese Regel festgelegt, wenn Ihr Projekt Bibliothekscode umfasst oder wenn Sie bewährte Methoden für Code, der leicht zu warten ist, erzwingen möchten.  

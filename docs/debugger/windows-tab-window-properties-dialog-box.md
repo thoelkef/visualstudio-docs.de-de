@@ -2,26 +2,22 @@
 title: Registerkarte "Fenster", Fenstereigenschaften (Dialogfeld) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - Window Properties dialog box, Windows Tab
 ms.assetid: 9001342a-09a8-4f5e-b6ed-881a3b9d7246
-caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c8336d854f8288429c40ff308e0f0c8004edfe1c
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+ms.openlocfilehash: f52baf9572e4c39cc77ff171a3d0033310678634
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="windows-tab-window-properties-dialog-box"></a>Registerkarte "Fenster", Dialogfeld "Fenstereigenschaften"
 Verwenden der **Windows** Registerkarte anzuzeigenden Informationen unter Windows im Zusammenhang mit der das ausgewählte Fenster. Zum Anzeigen der [Fenstereigenschaften (Dialogfeld)](../debugger/window-properties-dialog-box.md), den Fokus auf die [Fensteransicht](../debugger/windows-view.md) Fenster. Wählen Sie einen beliebigen Knoten im Fenster in der Struktur aus, und wählen Sie dann **Eigenschaften** aus der **Ansicht** Menü.  

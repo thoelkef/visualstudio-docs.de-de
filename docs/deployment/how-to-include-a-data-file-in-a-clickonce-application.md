@@ -1,12 +1,10 @@
 ---
-title: "Vorgehensweise: Einschließen einer Datendatei in eine ClickOnce-Anwendung | Microsoft Docs"
-ms.custom: 
+title: 'Vorgehensweise: Einschließen einer Datendatei in eine ClickOnce-Anwendung | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,16 +14,16 @@ helpviewer_keywords:
 - deploying applications [ClickOnce], data files
 - data access, ClickOnce applications
 ms.assetid: 89ee46ef-bc8c-4ab0-a2ac-1220f9da06fc
-caps.latest.revision: "15"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: a7ddfdb0518a8e3154d966fdea884bf7f2e3ea37
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: db35de0320e1f75d37cea3ad0c9e32536184305f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-include-a-data-file-in-a-clickonce-application"></a>Gewusst wie: Einschließen einer Datendatei in eine ClickOnce-Anwendung
 Jede [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung, die Sie installieren, hat ein Datenverzeichnis auf dem Zielcomputer lokalen Datenträger, die in dem die Anwendung eine eigene Daten verwalten kann. Datendateien können Dateien eines beliebigen Typs enthalten: Textdateien, XML-Dateien oder sogar Microsoft Access-Datenbankdateien (.mdb). Nachfolgend wird erläutert, wie eines beliebigen Typs in eine Datendatei hinzufügen Ihrer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung.  

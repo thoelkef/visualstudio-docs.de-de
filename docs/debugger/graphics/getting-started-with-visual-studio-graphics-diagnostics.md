@@ -1,23 +1,20 @@
 ---
 title: Erste Schritte mit Visual Studio-Grafikdiagnose | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 05/26/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ca07027874c304f009bdee7fddf9d6465e047202
-ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
+ms.openlocfilehash: 11de8cc6cf559d82ffa7ac543e396644057346c7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="getting-started-with-visual-studio-graphics-diagnostics"></a>Erste Schritte mit Visual Studio-Grafikdiagnose
 In diesem Abschnitt bereiten Sie sich auf die erstmalige Verwendung der Grafikdiagnose vor. Anschließend erfassen Sie Frames aus einer Direct3D-App und untersuchen diese in der Grafikanalyse.  
@@ -32,7 +29,7 @@ In diesem Abschnitt bereiten Sie sich auf die erstmalige Verwendung der Grafikdi
   
  Informationen zum Installieren von Grafiktools finden Sie unter [installieren Sie Grafiktools für Windows 10](#InstallGraphicsTools).  
   
-##  <a name="InstallGraphicsTools"></a>Installieren von Grafiktools für Windows 10  
+##  <a name="InstallGraphicsTools"></a> Installieren von Grafiktools für Windows 10  
  In Windows 10 wird die Infrastruktur für die Grafikdiagnose durch eine optionale Funktion von Windows mit der Bezeichnung bereitgestellt *Grafiktools*. Diese Funktion ist erforderlich, um Grafikinformationen in Windows 10 zu erfassen und wiederzugeben, unabhängig davon, ob die erfasste App eine frühere Windows-Version als Ziel hat oder welche Direct3D-Version verwendet wird. Sie können die Grafiktools-Funktion auch vorab installieren. Andernfalls wird sie bei Bedarf installiert, wenn Sie das erste Mal eine Grafikdiagnosesitzung in Visual Studio starten.  
   
 #### <a name="to-install-graphics-tools-for-windows-10"></a>So installieren Sie Grafiktools für Windows 10  

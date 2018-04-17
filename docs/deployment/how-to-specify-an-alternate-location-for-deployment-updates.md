@@ -1,12 +1,10 @@
 ---
-title: "Vorgehensweise: Angeben eines alternatives Speicherorts für Bereitstellungsaktualisierungen | Microsoft Docs"
-ms.custom: 
+title: 'Vorgehensweise: Angeben eines alternatives Speicherorts für Bereitstellungsaktualisierungen | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,16 +13,16 @@ helpviewer_keywords:
 - ClickOnce deployment, updates
 - deployment update, alternative locations
 ms.assetid: 7faacd35-2638-492d-80f6-6b57e5f820de
-caps.latest.revision: "15"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 637f4517734d3a0bbf86c3894c4f0fc7dd5b5e8d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 107fb4680b2ee5600c2cee847ebb3d2b5efd7da4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-specify-an-alternate-location-for-deployment-updates"></a>Gewusst wie: Angeben eines anderen Speicherorts für Bereitstellungsaktualisierungen
 Sie können Ihre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung ursprünglich von einer CD oder eine Dateifreigabe, aber die Anwendung muss überprüfen, regelmäßig nach Updates suchen im Web. Sie können einen alternativen Speicherort für Updates in das Bereitstellungsmanifest angeben, damit die Anwendung selbst über das Internet nach der anfänglichen Installation aktualisieren kann.  
@@ -50,9 +48,9 @@ Sie können Ihre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md
   
 1.  Öffnen Sie eine .NET Framework-Eingabeaufforderung.  
   
-2.  Legen Sie den Speicherort für die Aktualisierung mithilfe des folgenden Befehls an. In diesem Beispiel **HelloWorld.exe.application** ist der Pfad zu Ihrem [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendungsmanifest, das immer die Erweiterung .application aufweist, und **http://adatum.com/Update/Path** lautet die URL [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wird nach Anwendungsupdates suchen.  
+2.  Legen Sie den Speicherort für die Aktualisierung mithilfe des folgenden Befehls an. In diesem Beispiel **HelloWorld.exe.application** ist der Pfad zu Ihrem [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendungsmanifest, das immer die Erweiterung .application aufweist, und **http://adatum.com/Update/Path** ist die URL, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wird nach Anwendungsupdates suchen.  
   
-     **Mage-HelloWorld.exe.application aktualisieren - ProviderUrl http://adatum.com/Update/Path**  
+     **Mage-HelloWorld.exe.application - ProviderUrl aktualisieren http://adatum.com/Update/Path**  
   
 3.  Speichern Sie die Datei.  
   

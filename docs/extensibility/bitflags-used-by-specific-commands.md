@@ -1,27 +1,23 @@
 ---
 title: Bitflags, die von bestimmten Befehlen verwendet | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, bitflags used by specific commands
 ms.assetid: 37969977-6f7d-45c9-ba03-1306ae71f5d1
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: be102b5eaf39db2fc7495c62c456e35e54ffd0f3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 3bc59c79e0f047cc7880332c4c23643ab2136c86
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="bitflags-used-by-specific-commands"></a>Bitflags, die von bestimmten Befehlen verwendet
 Das Verhalten einer Reihe von Funktionen in der Quelle Steuerelement-Plug-in-API kann geändert werden, durch einen oder mehrere Bits in einem einzelnen Wert festlegen. Diese Werte werden als Bitflags bezeichnet. Die verschiedenen Bitflags, die von der Quelle Steuerelement-Plug-in-API verwendet werden hier beschrieben gruppiert, die von der Funktion, die sie verwendet.  
@@ -40,7 +36,7 @@ Das Verhalten einer Reihe von Funktionen in der Quelle Steuerelement-Plug-in-API
 |----------|-----------|-----------------|  
 |`SCC_FILETYPE_AUTO`|0 x 00|Die Datenquellen-Steuerelement-Plug-in wird erwartet, automatisch zu erkennen, ob die Datei Text- oder Binärformat.|  
 |`SCC_FILETYPE_TEXT`|0 x 01|Dateityp ist Text.|  
-|`SCC_FILETYPE_BINARY`|0 x 04|Dateityp ist binär. **Hinweis:** `SCC_FILETYPE_TEXT` und `SCC_FILETYPE_BINARY` Flags schließen sich gegenseitig. Legen Sie genau eine oder keines von beiden.|  
+|`SCC_FILETYPE_BINARY`|0x04|Dateityp ist binär. **Hinweis:** `SCC_FILETYPE_TEXT` und `SCC_FILETYPE_BINARY` Flags schließen sich gegenseitig.   Legen Sie genau eine oder keines von beiden.|  
 |`SCC_ADD_STORELATEST`|0 x 02|Speichern Sie nur die neueste Version (keine Deltas).|  
   
 ## <a name="diff-flags"></a>Diff-Flags  
@@ -48,8 +44,8 @@ Das Verhalten einer Reihe von Funktionen in der Quelle Steuerelement-Plug-in-API
   
 |Flag|Wert|Beschreibung|  
 |----------|-----------|-----------------|  
-|`SCC_DIFF_IGNORECASE`|0 x 0002|Ignorieren von Groß-/Kleinschreibung unterschieden.|  
-|`SCC_DIFF_IGNORESPACE`|0 x 0004|Unterschiede Leerraum zu ignorieren. **Hinweis:** der `SCC_DIFF_IGNORECASE` und `SCC_DIFF_IGNORESPACE` Flags sind optionale Bitflags.|  
+|`SCC_DIFF_IGNORECASE`|0x0002|Ignorieren von Groß-/Kleinschreibung unterschieden.|  
+|`SCC_DIFF_IGNORESPACE`|0x0004|Unterschiede Leerraum zu ignorieren. **Hinweis:** der `SCC_DIFF_IGNORECASE` und `SCC_DIFF_IGNORESPACE` Flags sind optionale Bitflags.|  
 |`SCC_DIFF_QD_CONTENTS`|0x0010|QD durch Vergleichen der gesamte Dateiinhalt.|  
 |`SCC_DIFF_QD_CHECKSUM`|0x0020|QD von Checksum.|  
 |`SCC_DIFF_QD_TIME`|0 x 0040|QD von Datums-/Zeitstempel der Datei.|  
@@ -68,8 +64,8 @@ Das Verhalten einer Reihe von Funktionen in der Quelle Steuerelement-Plug-in-API
 |Optionswert|Wert|Beschreibung|  
 |------------------|-----------|-----------------|  
 |SCC_PDL_ONELEVEL|0x0000|Untersuchen Sie nur eine Ebene von Verzeichnissen für Verzeichnisse (Dies ist die Standardeinstellung).|  
-|SCC_PDL_RECURSIVE|0 x 0001|Rekursiv überprüfen alle Verzeichnisse in jedem angegebenen Verzeichnis.|  
-|SCC_PDL_INCLUDEFILES|0 x 0002|Schließen Sie Dateinamen ein, bei der Prüfung.|  
+|SCC_PDL_RECURSIVE|0x0001|Rekursiv überprüfen alle Verzeichnisse in jedem angegebenen Verzeichnis.|  
+|SCC_PDL_INCLUDEFILES|0x0002|Schließen Sie Dateinamen ein, bei der Prüfung.|  
   
 ## <a name="openproject-flags"></a>Projekt öffnen-Flags  
  Diese Flags werden verwendet, indem Sie die [SccOpenProject](../extensibility/sccopenproject-function.md) in der `dwFlags` Parameter.  

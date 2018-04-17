@@ -1,11 +1,8 @@
 ---
 title: Binden von WPF-Steuerelementen an Daten in Visual Studio - Teil 1 | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - data [WPF], displaying
 - WPF, data binding in Visual Studio
@@ -15,17 +12,17 @@ helpviewer_keywords:
 - WPF Designer, data binding
 - data binding, WPF
 ms.assetid: e05a1e0c-5082-479d-bbc9-d395b0bc6580
-caps.latest.revision: "36"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: 77c56d70c6fc3dd3dac9a563c146d8bab2c6f699
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: 4c059013703a73a83a9a6f35b3c89f7b27c523d5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>Binden von WPF-Steuerelementen an Daten in Visual Studio
 Sie können Daten für Benutzer der Anwendung anzeigen, indem Sie Daten an [!INCLUDE[TLA#tla_titlewinclient](../data-tools/includes/tlasharptla_titlewinclient_md.md)]-Steuerelemente binden. Um diese datengebundenen Steuerelemente erstellen, können Sie Elemente aus ziehen die **Datenquellen** auf die [!INCLUDE[wpfdesigner_current_short](../data-tools/includes/wpfdesigner_current_short_md.md)] in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. In diesem Thema werden einige der häufigsten Aufgaben, Tools und Klassen beschrieben, mit denen Sie datengebundene [!INCLUDE[TLA#tla_titlewinclient](../data-tools/includes/tlasharptla_titlewinclient_md.md)]-Anwendungen erstellen können.  
@@ -96,7 +93,7 @@ Visual Studio nimmt außerdem die folgenden Änderungen an der Code-Behind-Datei
 > [!NOTE]
 >  Benutzerdefinierte Klassen müssen öffentlich sein und standardmäßig verfügen über einen Konstruktor ohne Parameter. Sie can'tbe geschachtelte Klassen, die einen "Punkt" in der Syntax definiert. Weitere Informationen finden Sie unter [XAML und benutzerdefinierte Klassen für WPF](/dotnet/framework/wpf/advanced/xaml-and-custom-classes-for-wpf).  
   
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]generiert [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] , die bewirkt Folgendes:  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] generiert [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] , die bewirkt Folgendes:  
   
 -   Den Ressourcen des Containers, in den Sie das Element gezogen haben, wird eine neue <xref:System.Windows.Data.CollectionViewSource> hinzugefügt. Die <xref:System.Windows.Data.CollectionViewSource> ist ein Objekt, das verwendet werden kann, um in den Daten des Objekt zu navigieren und diese anzuzeigen.  
   

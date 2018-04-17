@@ -1,12 +1,10 @@
 ---
-title: "CA1816: Rufen Sie GC. SuppressFinalize ordnungsgemäß | Microsoft Docs"
-ms.custom: 
+title: 'CA1816: Rufen Sie GC. SuppressFinalize ordnungsgemäß | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - CA1816
 - DisposeMethodsShouldCallSuppressFinalize
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - DisposeMethodsShouldCallSuppressFinalize
 - CA1816
 ms.assetid: 47915fbb-103f-4333-b157-1da16bf49660
-caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 8d0287b570ed1ff5393ff0ff04b9e5d2252c29bf
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 9d6d65561e9b902202d4fc69d15d200482880cf4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca1816-call-gcsuppressfinalize-correctly"></a>CA1816: GC.SuppressFinalize korrekt aufrufen
 |||  
@@ -42,7 +40,7 @@ ms.lasthandoff: 12/22/2017
 -   Eine Methode ruft <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> und übergibt ein anderes Element als dieses (Me in Visual Basic).  
   
 ## <a name="rule-description"></a>Regelbeschreibung  
- Die <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> -Methode ermöglicht es Benutzern, die Ressourcen zu einem beliebigen Zeitpunkt vor dem Objekt eine verlaufsabfrage verfügbar sind, für die Garbagecollection freigegeben. Wenn die <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> -Methode aufgerufen wird, die Ressourcen des Objekts freigegeben. Dadurch wird die Beendigung nicht erforderlich. <xref:System.IDisposable.Dispose%2A?displayProperty=fullName>sollten Aufrufen <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> , damit der Garbage Collector den Finalizer des Objekts nicht aufgerufen wird.  
+ Die <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> -Methode ermöglicht es Benutzern, die Ressourcen zu einem beliebigen Zeitpunkt vor dem Objekt eine verlaufsabfrage verfügbar sind, für die Garbagecollection freigegeben. Wenn die <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> -Methode aufgerufen wird, die Ressourcen des Objekts freigegeben. Dadurch wird die Beendigung nicht erforderlich. <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> sollten Aufrufen <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> , damit der Garbage Collector den Finalizer des Objekts nicht aufgerufen wird.  
   
  Um zu verhindern, dass abgeleitete Typen mit Finalizern erneut implementieren müssen <xref:System.IDisposable> und um es aufzurufen, unversiegelte Typen ohne Finalizer sollten dennoch aufrufen <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName>.  
   

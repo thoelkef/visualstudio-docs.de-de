@@ -1,13 +1,10 @@
 ---
-title: "Keine Quelle verfügbar | Microsoft Docs"
-ms.custom: 
+title: Keine Quelle verfügbar | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.nosource
 dev_langs:
@@ -18,17 +15,16 @@ dev_langs:
 helpviewer_keywords:
 - No Source Code Available for the Current Location dialog box
 ms.assetid: ed0732bc-4b8c-490f-adb1-af06869a2a6b
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a11770bc54a7b96aa918b73b34e0028731bf0f9c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 022b629076e79dea679541ed301b0a7ff0c7d876
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="no-source-available"></a>Keine Quelle verfügbar
 Das Projekt enthält keinen Quellcode für den Code, den Sie anzeigen möchten. Die übliche Ursache ist Doppelklicken ein Modul, das nicht Quellcode, in verfügt der **Aufruflistenfenster** oder **Fensters "Threads"**. Sie können das Debuggen fortsetzen, jedoch das Quellcodefenster nicht zum Festlegen von Haltepunkten und zum Durchführen anderer Aktionen an dieser Position verwenden. Wenn Sie einen Haltepunkt festzulegen, verwenden die **Disassemblyfenster** stattdessen.  

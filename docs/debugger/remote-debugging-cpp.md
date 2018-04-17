@@ -2,12 +2,9 @@
 title: Remote Debuggen ein Visual C++-Projekt | Microsoft Docs
 ms.custom: remotedebugging
 ms.date: 08/14/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 - FSharp
@@ -17,17 +14,16 @@ dev_langs:
 helpviewer_keywords:
 - remote debugging, setup
 ms.assetid: 8b8eca0d-122f-4eda-848a-cf0945f207d0
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9fb8230c2a70cf98a20993db930ddc1d494e989d
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: df0caacf8d3d99117208ce197e075f20f6df8b5a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="remote-debugging-a-visual-c-project-in-visual-studio"></a>Remotedebuggen eines Visual C++-Projekts in Visual Studio
 Zum Debuggen einer Visual Studio-Anwendung auf einem anderen Computer, installieren und Ausführen der Remotetools auf dem Computer, auf dem Sie Ihre app bereitstellen können, konfigurieren Sie das Projekt, um die Verbindung mit dem Remotecomputer in Visual Studio, und klicken Sie dann bereitstellen und Ausführen Ihrer app.
@@ -50,14 +46,14 @@ Der Remotedebugger wird unterstützt, unter Windows 7 und höher (kein Telefon) 
 > [!TIP]
 > In einigen Szenarien kann es am effizientesten, führen Sie den Remotedebugger aus einer Dateifreigabe sein. Weitere Informationen finden Sie unter [führen Sie den Remotedebugger aus einer Dateifreigabe](../debugger/remote-debugging.md#fileshare_msvsmon).
   
-## <a name="BKMK_setup"></a>Einrichten des Remotedebuggers
+## <a name="BKMK_setup"></a> Einrichten des Remotedebuggers
 
 [!INCLUDE [remote-debugger-configuration](../debugger/includes/remote-debugger-configuration.md)]
 
 > [!NOTE]
 > Wenn Sie benötigen Berechtigungen für zusätzliche Benutzer hinzufügen ändern den Authentifizierungsmodus oder Portnummer für den Remotedebugger, finden Sie unter [Konfigurieren des Remotedebuggers](../debugger/remote-debugging.md#configure_msvsmon).
 
-## <a name="remote_cplusplus"></a>Remotedebuggen eines Visual C++-Projekts  
+## <a name="remote_cplusplus"></a> Remotedebuggen eines Visual C++-Projekts  
  In der folgenden Prozedur den Namen und Pfad des Projekts C:\remotetemp\MyMfc und der Name des Remotecomputers ist **MJO DL**.  
   
 1.  Erstellen eine MFC-Anwendung mit dem Namen **Mymfc.**  
@@ -96,7 +92,7 @@ Der Remotedebugger wird unterstützt, unter Windows 7 und höher (kein Telefon) 
   
 10. Wenn Sie aufgefordert werden, geben Sie die Netzwerkanmeldeinformationen zum Verbinden mit dem Remotecomputer.  
   
-     Die erforderlichen Anmeldeinformationen sind spezifisch für Ihr Netzwerk Sicherheitskonfiguration. Sie können z. B. auf einem Domänencomputer wählen Sie ein Sicherheitszertifikat oder geben Sie Ihren Domänennamen und Kennwort. Auf einem Computer außerhalb der Domäne Sie möglicherweise Geben Sie den Computernamen und einen gültigen Benutzernamen ein Konto, z. B.  **MJO-DL\name@something.com** , zusammen mit dem richtigen Kennwort.  
+     Die erforderlichen Anmeldeinformationen sind spezifisch für Ihr Netzwerk Sicherheitskonfiguration. Sie können z. B. auf einem Domänencomputer wählen Sie ein Sicherheitszertifikat oder geben Sie Ihren Domänennamen und Kennwort. Auf einem Computer außerhalb der Domäne Sie möglicherweise Geben Sie den Computernamen und einen gültigen Benutzernamen ein Konto, z. B. **MJO-DL\name@something.com**, zusammen mit dem richtigen Kennwort.  
   
 11. Auf dem Visual Studio-Computer sollte angezeigt werden, dass die Ausführung am Haltepunkt angehalten wird.  
   

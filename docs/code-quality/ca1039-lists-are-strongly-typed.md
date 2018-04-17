@@ -1,12 +1,10 @@
 ---
 title: 'CA1039: Listen sind stark typisiert. | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - CA1039
 - ListsAreStronglyTyped
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - CA1039
 - ListsAreStronglyTyped
 ms.assetid: 5ac366c4-fd87-4d5c-95d5-f755510c8e5c
-caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 358ae06a2913f7b89338027c79f81c298253d23b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: a52479c5c89cf2098ac90e3f755110fb81bb2697
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca1039-lists-are-strongly-typed"></a>CA1039: Listen weisen eine starke Typisierung auf
 |||  
@@ -51,7 +49,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="rule-description"></a>Regelbeschreibung  
  Nach dieser Regel müssen <xref:System.Collections.IList> Implementierungen angeben, stark typisierte Member, damit Benutzer nicht erforderlich, wandeln Sie die Argumente für die <xref:System.Object?displayProperty=fullName> eingeben, wenn sie die Funktionen, die bereitgestellt wird verwenden, wird von der Schnittstelle. Die <xref:System.Collections.IList> Schnittstelle wird implementiert, anhand von Sammlungen von Objekten, die über einen Index zugegriffen werden können. Diese Regel setzt voraus, dass der Typ, der implementiert <xref:System.Collections.IList> ist diese Option, um die Verwaltung einer Auflistung von Instanzen eines Typs, der stärker ist als <xref:System.Object>.  
   
- <xref:System.Collections.IList>implementiert die <xref:System.Collections.ICollection?displayProperty=fullName> und <xref:System.Collections.IEnumerable?displayProperty=fullName> Schnittstellen. Wenn Sie implementieren <xref:System.Collections.IList>, müssen Sie angeben, die stark typisierte erforderliche Member für <xref:System.Collections.ICollection>. Wenn die Objekte in der Auflistung erweitern <xref:System.ValueType?displayProperty=fullName>, müssen Sie für einen stark typisierten Member angeben <xref:System.Collections.IEnumerable.GetEnumerator%2A> um Leistungseinbußen zu vermeiden, der durch Boxing verursacht wird; dies ist nicht erforderlich, wenn die Objekte der Auflistung einen Referenztyp darstellt.  
+ <xref:System.Collections.IList> implementiert die <xref:System.Collections.ICollection?displayProperty=fullName> und <xref:System.Collections.IEnumerable?displayProperty=fullName> Schnittstellen. Wenn Sie implementieren <xref:System.Collections.IList>, müssen Sie angeben, die stark typisierte erforderliche Member für <xref:System.Collections.ICollection>. Wenn die Objekte in der Auflistung erweitern <xref:System.ValueType?displayProperty=fullName>, müssen Sie für einen stark typisierten Member angeben <xref:System.Collections.IEnumerable.GetEnumerator%2A> um Leistungseinbußen zu vermeiden, der durch Boxing verursacht wird; dies ist nicht erforderlich, wenn die Objekte der Auflistung einen Referenztyp darstellt.  
   
  Mit dieser Regel implementieren Sie die Schnittstellenmember explizit mithilfe von Namen in der Form Schnittstellenname.SchnittstelleMemberName, z. B. <xref:System.Collections.IList.Add%2A>. Die explizite Mitglieder verwenden die Datentypen, die deklariert werden durch die Schnittstelle. Implementieren Sie die stark typisierte Member mithilfe der Benutzeroberfläche der Elementname, z. B. `Add`. Die stark typisierte Member als öffentlich deklariert und deklarieren die Parameter und Rückgabewerte, die den starken Typ aufweisen, der von der Auflistung verwaltet wird. Die starke Typen ersetzen schwächere wie <xref:System.Object> und <xref:System.Array> , die von der Schnittstelle deklariert werden.  
   

@@ -1,12 +1,10 @@
 ---
 title: Debuggen von LINQ | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -19,21 +17,21 @@ helpviewer_keywords:
 - LINQ, stepping
 - LINQ, edit and continue
 ms.assetid: dbae26cb-ac5f-4312-b474-b9f29714f4c6
-caps.latest.revision: "25"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: b2e159e89fe1854f2d26267793e196aa91b570ff
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 3b08f98e7073ad1c0a42d596424d544d5624f272
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="debugging-linq"></a>Debuggen von LINQ
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] unterstützt das Debuggen von Language Integrated Query (LINQ)-Code, wobei einige Einschränkungen bestehen. Die meisten Debugfunktionen arbeiten mit LINQ-Anweisungen, z. B. für das schrittweise Ausführen, das Festlegen von Haltepunkten und das Anzeigen von Ergebnissen in Debuggerfenstern. In diesem Thema werden die haupteinschränkungen des LINQ-Debuggens beschrieben.  
   
-##  <a name="BKMK_ViewingLINQResults"></a>Anzeigen von LINQ-Ergebnissen  
+##  <a name="BKMK_ViewingLINQResults"></a> Anzeigen von LINQ-Ergebnissen  
  Das Ergebnis einer LINQ-Anweisung kann mithilfe von DataTips, über das Überwachungsfenster oder im Dialogfeld Schnellüberwachung angezeigt werden. Bei Verwendung eines Quellcodefensters können Sie den Mauszeiger auf eine Abfrage im Quellcodefenster bewegen, woraufhin ein DataTip eingeblendet wird. Sie können eine LINQ-Variable kopieren und in das Überwachungsfenster oder das Dialogfeld Schnellüberwachung einfügen.  
   
  In LINQ wird eine Abfrage nicht ausgewertet, wenn sie erstellt oder deklariert wird, sondern wenn die Abfrage verwendet wird. Deshalb verfügt die Abfrage erst nach der Auswertung über einen Wert. Eine vollständige Beschreibung der Erstellung der Abfrage und Bewertung, finden Sie unter [Einführung in LINQ-Abfragen (c#)](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries) oder [Schreiben Ihrer ersten LINQ-Abfrage](/dotnet/visual-basic/programming-guide/concepts/linq/writing-your-first-linq-query).  
@@ -44,7 +42,7 @@ ms.lasthandoff: 12/22/2017
   
 -   Die Auswertung einer Abfrage kann dazu führen, dass der Datenwert oder Zustand des Programms geändert wird. Nicht alle Abfragen verfügen über Nebeneffekte. Um festzustellen, ob eine Abfrage ohne Nebeneffekte sicher ausgewertet werden kann, sollten Sie den Code verstehen, durch den die Abfrage implementiert wird.  
   
-##  <a name="BKMK_SteppingAndLinq"></a>Stepping und LINQ  
+##  <a name="BKMK_SteppingAndLinq"></a> Stepping und LINQ  
  Wenn Sie LINQ-Code debuggen, weist die schrittweise Ausführung teilweise ein abweichendes Verhalten auf, das Sie beachten sollten.  
   
 ### <a name="linq-to-sql"></a>LINQ to SQL  
@@ -108,7 +106,7 @@ End Function
   
  Die überarbeitete Abfrage ruft bei jedem Durchlauf von `IsEven` die `items`-Funktion auf. Mithilfe der Debuggerfenster können Sie feststellen, ob die einzelnen Elemente die angegebene Bedingung erfüllen und den Code in `IsEven` schrittweise ausführen. Das Prädikat in diesem Beispiel ist recht einfach gehalten. Falls Ihr zu debuggendes Prädikat jedoch komplizierter ist, kann diese Technik sehr hilfreich sein.  
   
-##  <a name="BKMK_EditandContinueNotSupportedforLINQ"></a>Bearbeiten Sie und fortfahren Sie wird für LINQ nicht unterstützt.  
+##  <a name="BKMK_EditandContinueNotSupportedforLINQ"></a> Bearbeiten Sie und fortfahren Sie wird für LINQ nicht unterstützt.  
  Bearbeiten und Fortfahren unterstützt Änderungen an LINQ-Abfragen mit Einschränkungen. Weitere Informationen finden Sie unter [EnC unterstützt Änderungen](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits))
   
 ## <a name="see-also"></a>Siehe auch  

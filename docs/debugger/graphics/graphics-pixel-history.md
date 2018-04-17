@@ -1,27 +1,23 @@
 ---
 title: Grafikpixelverlauf | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics.pixelhistory
 ms.assetid: 0a2cbde5-1ad9-487e-857c-a3664158c268
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 966f15e0aac212207e0f6afe96dececc8950aab2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 73e51108c4280d6e3ebf69000c9863610e4a25da
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="graphics-pixel-history"></a>Grafikpixelverlauf
 Mit dem Fenster „Grafikpixelverlauf“ in der Visual Studio-Grafikanalyse können Sie nachvollziehen, wie sich Direct3D-Ereignisse, die während eines Frames Ihres Spiels oder Ihre App auftreten, auf ein bestimmtes Pixel auswirken.  
@@ -41,7 +37,7 @@ Mit dem Fenster „Grafikpixelverlauf“ in der Visual Studio-Grafikanalyse kön
   
  Sie können jeden Primitiv erweitern, um zu untersuchen, wie die Pixel-Shader-Ausgabe mit der vorhandenen Pixelfarbe zusammengeführt wurde, um die Ergebnisfarbe zu erzeugen. Von hier aus können Sie den Pixel Shader-Code prüfen oder debuggen, der dem Primitiv-Typ zugeordnet ist, und Sie können den Vertex-Shader Knoten zum Überprüfen der Vertex-Shaders-Eingaben erweitern.  
   
-###  <a name="exclusion"></a>Ausschluss von primitiven  
+###  <a name="exclusion"></a> Ausschluss von primitiven  
  Wenn ein Primitiv die Pixelfarbe nicht beeinflusst, kann der Ausschluss für eine Vielzahl von Gründen erfolgen. Jeder Grund wird durch ein Symbol dargestellt, das in dieser Tabelle beschrieben wird:  
   
 |Symbol|Grund für den Ausschluss|  

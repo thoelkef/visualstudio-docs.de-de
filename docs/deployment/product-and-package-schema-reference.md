@@ -1,12 +1,10 @@
 ---
 title: Produkt- und Paketschemareferenz | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 f1_keywords:
 - MSBuild.GenerateBootstrapper.CircularIncludes
 - MSBuild.ResolveManifestFiles.PublishFileNotFound
@@ -25,16 +23,16 @@ helpviewer_keywords:
 - package files [ClickOnce]
 - Windows Installer, bootstrapper elements
 ms.assetid: 5a74878f-b896-4cca-b968-98d00fe78fb0
-caps.latest.revision: "7"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 149dd62b38bdcb0863d30f4280b35950361f58cb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: c4df5288f05f14c146c934c8d9d5b916a4bb2fc4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="product-and-package-schema-reference"></a>Referenz zum Produkt- und Paketschema
 Ein *Produktdatei* ist eine XML-Manifestdatei, die alle erforderlichen externen Abhängigkeiten beschreibt eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung. Beispiele für externe Abhängigkeiten der [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] und der Microsoft Data Access Components (MDAC). Eine Paketdatei ähnelt einer Produktdatei, aber es wird verwendet, um die Kultur abhängige Komponenten einer Abhängigkeit, wie lokalisierte Assemblys, Lizenzverträge und Dokumentation zu installieren.  
@@ -54,7 +52,7 @@ Ein *Produktdatei* ist eine XML-Manifestdatei, die alle erforderlichen externen 
 ## <a name="remarks"></a>Hinweise  
  Das Paketschema wird von Setup.exe, einen Stub-Programms generiert, die für das bootstrapping MS Build-Aufgabe, die wenig hartcodierte Logik selbst enthält. Das Schema Laufwerke jeden Aspekt des Installationsprozesses.  
   
- `InstallChecks`die Tests sollten das Vorhandensein eines bestimmten Pakets, die setup.exe ausführen. `PackageFiles`Listet alle Pakete, die der Setup-Vorgang möglicherweise zu installieren, ein bestimmten Test fehlschlagen soll. Jeder Befehlseintrag unter Befehle führt einer der Tests von beschrieben `InstallChecks`, und gibt an, welche `PackageFile` zum Ausführen der Test nicht ausgeführt werden kann. Sie können die `Strings` Element zum Lokalisieren von Produktnamen und Fehlermeldungen, damit Sie eine einzelne Installation der binären zum Installieren der Anwendung für eine beliebige Anzahl von Sprachen verwenden können.  
+ `InstallChecks` die Tests sollten das Vorhandensein eines bestimmten Pakets, die setup.exe ausführen. `PackageFiles` Listet alle Pakete, die der Setup-Vorgang möglicherweise zu installieren, ein bestimmten Test fehlschlagen soll. Jeder Befehlseintrag unter Befehle führt einer der Tests von beschrieben `InstallChecks`, und gibt an, welche `PackageFile` zum Ausführen der Test nicht ausgeführt werden kann. Sie können die `Strings` Element zum Lokalisieren von Produktnamen und Fehlermeldungen, damit Sie eine einzelne Installation der binären zum Installieren der Anwendung für eine beliebige Anzahl von Sprachen verwenden können.  
   
 ## <a name="example"></a>Beispiel  
  Im folgenden Codebeispiel wird veranschaulicht, eine vollständige Produktdatei für die Installation der [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].  

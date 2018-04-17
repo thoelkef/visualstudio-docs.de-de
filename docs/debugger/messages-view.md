@@ -1,36 +1,32 @@
 ---
 title: Der Meldungsansicht | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.externaltools.spyplus.messagesview
 helpviewer_keywords:
 - Messages view
 ms.assetid: 14c2a786-c23a-4b2d-acad-8c32a856c70d
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c421b7c22bed32e6c60d30098b2c19e0d71a0af3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 206c0197d73e3bb95975309bdce84887dee283e1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="messages-view"></a>Meldungsansicht
 Jedes Fenster verfügt über einen Stream zugeordnete Meldung. Fenster mit einer Nachrichten zeigt diese Nachrichtenstream an. Das Fensterhandle, Meldungscode und Meldung werden angezeigt. Sie können eine Ansicht "Nachrichten" für einen Thread oder den Prozess sowie erstellen. Dadurch können Sie Nachrichten an alle Fenster, die einen bestimmten Prozess oder Thread besonders nützlich ist für das Erfassen von fenstermeldungen für die Initialisierung der Besitz anzuzeigen.  
   
  Fenster mit einer typischen Nachrichten wird unten angezeigt. Beachten Sie, dass die erste Spalte das Fensterhandle enthält und die zweite Spalte einen Message Authentication Code enthält (beschrieben [Meldungscodes](../debugger/message-codes.md)). Decodierte Nachrichtenparameter und Rückgabewerte werden auf der rechten Seite.  
   
- ![Spy++ &#43; &#43; Der Meldungsansicht](../debugger/media/spy--_messagesview.png "Spy++ ++ _MessagesView")  
+ ![Spy++&#43; &#43; der Meldungsansicht](../debugger/media/spy--_messagesview.png "Spy++ ++ _MessagesView")  
 Spy++-Meldungsansicht  
   
 ## <a name="procedures"></a>Verfahren  

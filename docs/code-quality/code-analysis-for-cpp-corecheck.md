@@ -2,25 +2,22 @@
 title: Visual Studio C++ Core Richtlinien Überprüfungsprogramm Verweis | Microsoft Docs
 ms.custom: ''
 ms.date: 03/22/2018
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-code-analysis
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - code analysis, C++ core check
 ms.assetid: f1429463-136e-41ed-8a75-a8dbf0b4fd89
 author: mikeblome
 ms.author: mblome
-manager: ghogen
+manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0825ea42ca74b224574299846504dfde7dd6f809
-ms.sourcegitcommit: 67374acb6d24019a434d96bf705efdab99d335ee
+ms.openlocfilehash: f0b657781981b6204bda42fcbf18f8945fb59004
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="c-core-guidelines-checker-reference"></a>C++-Core-Richtlinien Überprüfungsprogramm Verweis
 
@@ -41,7 +38,7 @@ In diesem Abschnitt werden C++ Core Richtlinien Checker Warnungen aufgelistet. I
 
 [C26406 DONT_ASSIGN_RAW_TO_OWNER](C26406.md) weisen einen unformatierten Zeiger auf einen Benutzer nicht\<T >. Finden Sie unter [C++ Core Richtlinien R.3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-ptr).
 
-[C26407 DONT_HEAP_ALLOCATE_UNNECESSARILY](C26407.md) Prefer scoped objects, don't heap-allocate unnecessarily. Finden Sie unter [C++ Core Richtlinien R.5](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-scoped).
+[C26407 DONT_HEAP_ALLOCATE_UNNECESSARILY](C26407.md) Objekte des festgelegten bevorzugen, keine Heap-belegen unnötig. Finden Sie unter [C++ Core Richtlinien R.5](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-scoped).
 
 [C26429 USE_NOTNULL](C26429.md) Symbol "Symbol %" wird nie Nullness getestet, es kann z. B. Not_null markiert werden. Finden Sie unter [C++ Core Richtlinien F.23](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#f23-use-a-not_nullt-to-indicate-that-null-is-not-a-valid-value).
 
@@ -55,7 +52,7 @@ In diesem Abschnitt werden C++ Core Richtlinien Checker Warnungen aufgelistet. I
 
 [C26401 DONT_DELETE_NON_OWNER](c26401.md) löschen Sie einen unformatierten Zeiger, der nicht der Besitzer ist nicht\<T >. Finden Sie unter [C++ Core Richtlinien I.11](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Ri-raw).
 
-[C26402 DONT_HEAP_ALLOCATE_MOVABLE_RESULT](C26402.md)  Return a scoped object instead of a heap-allocated if it has a move constructor. Finden Sie unter [C++ Core Richtlinien R.3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-ptr).
+[C26402 DONT_HEAP_ALLOCATE_MOVABLE_RESULT](C26402.md)   eine Bereichsbezogene Objekt anstelle einer Heap zugewiesenen zurückgeben, wenn es sich um einen bewegungskonstruktor aufweist. Finden Sie unter [C++ Core Richtlinien R.3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-ptr).
 
 [C26408 NO_MALLOC_FREE](C26408.md) malloc() und free() vermeiden, bevorzugen die Nothrow-Version des erstmals für löschen. Finden Sie unter [C++ Core Richtlinien r. 10](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-mallocfree).
 
@@ -72,7 +69,7 @@ In diesem Abschnitt werden C++ Core Richtlinien Checker Warnungen aufgelistet. I
 [C26485 NO_ARRAY_TO_POINTER_DECAY](C26485.md).
 Der Ausdruck "% Expr %": kein Zeiger Decay-Array. Finden Sie unter [C++ Core Richtlinien Bounds.3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-bounds).
 
-## <a name="uniquepointer-group"></a>UNIQUE_POINTER Group
+## <a name="uniquepointer-group"></a>UNIQUE_POINTER-Gruppe
 
 [C26410 NO_REF_TO_CONST_UNIQUE_PTR](C26410.md) der Parameter "% Parameter %" ist ein Verweis auf `const` eindeutige-Zeiger ist, verwenden Sie const T * oder const T & stattdessen. Finden Sie unter [C++ Core Richtlinien R.32](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-uniqueptrparam).
 
@@ -92,7 +89,7 @@ Der Ausdruck "% Expr %": kein Zeiger Decay-Array. Finden Sie unter [C++ Core Ric
 
 [C26417 NO_LVALUE_REF_SHARED_PTR](C26417.md) Zeiger "Shared"-Parameter "% Symbol %" wird als Verweis übergeben wird und nicht zurückgesetzt oder neu zugewiesen. Verwenden Sie T * oder T & stattdessen. Finden Sie unter [C++ Core Richtlinien R.35](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-sharedptrparam).
 
-[C26418 NO_VALUE_OR_CONST_REF_SHARED_PTR](C26418.md) Shared pointer parameter '%symbol%' is not copied or moved. Verwenden Sie T * oder T & stattdessen. Finden Sie unter [C++ Core Richtlinien R.36](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-sharedptrparam-const).
+[C26418 NO_VALUE_OR_CONST_REF_SHARED_PTR](C26418.md) Zeiger "Shared"-Parameter "% Symbol %" nicht kopiert oder verschoben wird. Verwenden Sie T * oder T & stattdessen. Finden Sie unter [C++ Core Richtlinien R.36](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-sharedptrparam-const).
 
 ## <a name="declaration-group"></a>DEKLARATION Gruppe
 
@@ -125,7 +122,7 @@ Der Ausdruck "% Expr %": kein Zeiger Decay-Array. Finden Sie unter [C++ Core Ric
 
 ## <a name="style-group"></a>Stil-Gruppe
 
-[C26438 NO_GOTO](C26438.md) Avoid `goto`. Finden Sie unter [C++ Core Richtlinien ES.76](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#es76-avoid-goto).
+[C26438 NO_GOTO](C26438.md) vermeiden `goto`. Finden Sie unter [C++ Core Richtlinien ES.76](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#es76-avoid-goto).
 
 ## <a name="function-group"></a>Funktionsgruppe
 
@@ -164,7 +161,7 @@ Finden Sie unter [C++ Core Richtlinien: F.6: Wenn die Funktion nicht ausgelöst 
 
 [C26466 NO_STATIC_DOWNCAST_POLYMORPHIC](c26466.md) verwenden Sie keine `static_cast` Umwandlungen. Eine Umwandlung in einen polymorphen Typ sollten Dynamic_cast verwenden. Finden Sie unter [C++ Core Richtlinien Type.2](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Pro-type-downcast).
 
-[C26471 NO_REINTERPRET_CAST_FROM_VOID_PTR](c26471.md) Don't use `reinterpret_cast`. Können Sie eine Typumwandlung von "void" * `static_cast`. Finden Sie unter [C++ Core Richtlinien Type.1](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Pro-type-reinterpretcast).
+[C26471 NO_REINTERPRET_CAST_FROM_VOID_PTR](c26471.md) verwenden Sie keine `reinterpret_cast`. Können Sie eine Typumwandlung von "void" * `static_cast`. Finden Sie unter [C++ Core Richtlinien Type.1](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Pro-type-reinterpretcast).
 
 [C26472 NO_CASTS_FOR_ARITHMETIC_CONVERSION](C26472.md) verwenden Sie kein `static_cast` für arithmetische Konvertierungen. Verwenden Sie Initialisierung mit geschweiften Klammern, gsl::narrow_cast oder gsl::narow. Finden Sie unter [C++ Core Richtlinien Type.1](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Pro-type-reinterpretcast).
 

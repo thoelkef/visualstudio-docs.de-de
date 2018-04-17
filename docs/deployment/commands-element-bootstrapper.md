@@ -1,13 +1,10 @@
 ---
 title: '&lt;Befehle&gt; Element (Bootstrapper) | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -16,17 +13,16 @@ dev_langs:
 helpviewer_keywords:
 - <Commands> element [bootstrapper]
 ms.assetid: e61d5787-fe1f-4ebf-b0cf-0d7909be7ffb
-caps.latest.revision: 
 author: stevehoag
 ms.author: shoag
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 67bbb7cbec1df53a8481acf26273cc371f92bb40
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 9d886d7fa7ea2ab6cb8c04810ab404a29898cd02
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ltcommandsgt-element-bootstrapper"></a>&lt;Befehle&gt; Element (Bootstrapper)
 Die `Commands` Element implementiert Tests, die durch die Elemente beschrieben die `InstallChecks` Element, und welches Paket deklariert die [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Bootstrapper sollten installiert werden, wenn der Test fehlschlägt.  
@@ -96,7 +92,7 @@ Die `Commands` Element implementiert Tests, die durch die Elemente beschrieben d
 ## <a name="bypassif"></a>BypassIf  
  Die `BypassIf` Element ist ein untergeordnetes Element von der `InstallConditions` -Element, und beschreibt eine positive Bedingung, unter dem der Befehl nicht ausgeführt werden sollte. Jede `InstallConditions` haben Element 0 (null) oder mehrere `BypassIf` Elemente.  
   
- `BypassIf`verfügt über die folgenden Attribute aus.  
+ `BypassIf` verfügt über die folgenden Attribute aus.  
   
 |Attribut|Beschreibung|  
 |---------------|-----------------|  
@@ -108,7 +104,7 @@ Die `Commands` Element implementiert Tests, die durch die Elemente beschrieben d
 ## <a name="failif"></a>FailIf  
  Die `FailIf` Element ist ein untergeordnetes Element von der `InstallConditions` -Element, und beschreibt eine positive Bedingung, unter denen die Installation beendet werden soll. Jede `InstallConditions` haben Element 0 (null) oder mehrere `FailIf` Elemente.  
   
- `FailIf`verfügt über die folgenden Attribute aus.  
+ `FailIf` verfügt über die folgenden Attribute aus.  
   
 |Attribut|Beschreibung|  
 |---------------|-----------------|  
@@ -119,10 +115,10 @@ Die `Commands` Element implementiert Tests, die durch die Elemente beschrieben d
 |`Schedule`|Dies ist optional. Der Name des eine `Schedule` Tags, das definiert, wann diese Regel ausgewertet werden sollen.|  
   
 ## <a name="exitcodes"></a>ExitCodes  
- Die `ExitCodes` Element ist ein untergeordnetes Element von der `Command` Element. Die `ExitCodes` Element enthält eine oder mehrere `ExitCode` Elemente, die bestimmen, was die Installation als Antwort auf einen Exitcode von einem Paket ausführen soll. Es kann eine optionale `ExitCode` Element unterhalb einer `Command` Element. `ExitCodes`weist keine Attribute.  
+ Die `ExitCodes` Element ist ein untergeordnetes Element von der `Command` Element. Die `ExitCodes` Element enthält eine oder mehrere `ExitCode` Elemente, die bestimmen, was die Installation als Antwort auf einen Exitcode von einem Paket ausführen soll. Es kann eine optionale `ExitCode` Element unterhalb einer `Command` Element. `ExitCodes` Weist keine Attribute.  
   
 ## <a name="exitcode"></a>exitCode  
- Die `ExitCode` Element ist ein untergeordnetes Element von der `ExitCodes` Element. Die `ExitCode` Element bestimmt, was die Installation als Antwort auf einen Exitcode von einem Paket tun sollten. `ExitCode`enthält keine untergeordneten Elemente und weist folgende Attribute.  
+ Die `ExitCode` Element ist ein untergeordnetes Element von der `ExitCodes` Element. Die `ExitCode` Element bestimmt, was die Installation als Antwort auf einen Exitcode von einem Paket tun sollten. `ExitCode` enthält keine untergeordneten Elemente und weist folgende Attribute.  
   
 |Attribut|Beschreibung|  
 |---------------|-----------------|  

@@ -1,27 +1,23 @@
 ---
 title: HLSL-Shader-Debugger | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics.shaderviewer
 ms.assetid: 4ccec541-3c49-42bd-972a-686eb3a88fbc
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c1aeeb2da6817375e0327dba385037dccdc58cf
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 9ef814a2b394868b20fae6b3b568b70fc490e77c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="hlsl-shader-debugger"></a>HLSL-Shaderdebugger
 Mit dem HLSL-Debugger in der Visual Studio-Grafikanalyse können Sie nachvollziehen, wie Ihr HLSL-Shader-Code unter echten Bedingungen Ihrer App ausgeführt wird.  

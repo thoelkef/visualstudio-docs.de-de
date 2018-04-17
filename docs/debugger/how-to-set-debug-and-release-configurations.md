@@ -2,12 +2,9 @@
 title: 'Vorgehensweise: Festlegen von Debug- und Releasekonfigurationen | Microsoft Docs'
 ms.custom: H1HackMay2017
 ms.date: 04/10/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.builds
 dev_langs:
@@ -32,17 +29,16 @@ helpviewer_keywords:
 - release builds, switching to debug build
 - Visual Basic projects, debug and release builds
 ms.assetid: 57b6bbb7-f2af-48f7-8773-127d75034ed2
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ca61d09bb1d2ab09c6991f0cd50cc302dff7fb77
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: e85c89049c53bb097dd8a4ec850df6e66f902803
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-set-debug-and-release-configurations-in-visual-studio"></a>Vorgehensweise: Festlegen von Debug- und Releasekonfigurationen in Visual Studio
 Visual Studio-Projekte verfügen über separate Release- und Debugkonfigurationen für Ihr Programm. Wie die Namen bereits vermuten lassen, erstellen Sie die Debugversion zum Debuggen und die Releaseversion für das endgültige Release, d. h. die Freigabe.  

@@ -1,12 +1,10 @@
 ---
 title: 'CA2111: Zeiger sollten nicht sichtbar sein | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - PointersShouldNotBeVisible
 - CA2111
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - CA2111
 - PointersShouldNotBeVisible
 ms.assetid: b3a8d466-895b-43bc-a2df-5d7058fe915f
-caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 31ae25892b6b5a153a0a4d1e52047eb5be2368d1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: ce027b8e6bcf39623e07a862d4f9fb23c33b9967
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca2111-pointers-should-not-be-visible"></a>CA2111: Zeiger sollten nicht sichtbar sein.
 |||  
@@ -37,7 +35,7 @@ ms.lasthandoff: 12/22/2017
  Ein öffentlicher oder geschützter <xref:System.IntPtr?displayProperty=fullName> oder <xref:System.UIntPtr?displayProperty=fullName> Feld ist schreibgeschützt.  
   
 ## <a name="rule-description"></a>Regelbeschreibung  
- <xref:System.IntPtr>und <xref:System.UIntPtr> Zeigertypen, die verwendet werden, auf nicht verwalteten Speicher zugegriffen werden. Wenn ein Zeiger nicht privat, intern oder schreibgeschützt ist, kann schädlichen Code den Wert des Zeigers, potenziell Zugriffe auf beliebige Speicherbereiche ermöglichen oder Anwendungs- bzw. Systemfehler verursachen ändern.  
+ <xref:System.IntPtr> und <xref:System.UIntPtr> Zeigertypen, die verwendet werden, auf nicht verwalteten Speicher zugegriffen werden. Wenn ein Zeiger nicht privat, intern oder schreibgeschützt ist, kann schädlichen Code den Wert des Zeigers, potenziell Zugriffe auf beliebige Speicherbereiche ermöglichen oder Anwendungs- bzw. Systemfehler verursachen ändern.  
   
  Wenn Sie zum Absichern des Zugriffs auf den Typ, die die Zeigerfeld enthält beabsichtigen, finden Sie unter [CA2112: gesicherte Typen sollten keine Felder verfügbar](../code-quality/ca2112-secured-types-should-not-expose-fields.md).  
   

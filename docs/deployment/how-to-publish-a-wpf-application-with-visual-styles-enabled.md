@@ -1,23 +1,21 @@
 ---
-title: "Vorgehensweise: Veröffentlichen einer WPF-Anwendung mit aktivierten visuellen Stilen | Microsoft Docs"
-ms.custom: 
+title: 'Vorgehensweise: Veröffentlichen einer WPF-Anwendung mit aktivierten visuellen Stilen | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 ms.assetid: 73b22b02-fc75-42aa-82d3-51fdcaf8e5c8
-caps.latest.revision: "3"
 author: mairaw
 ms.author: mairaw
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: bab4660d0e76e467bc95c373002a9035a4ccd672
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 2fbf3c2573d02111f5d1309fb80ceb09aa09f2e4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>Gewusst wie: Veröffentlichen einer WPF-Anwendung mit aktivierten visuellen Stilen
 Durch visuelle Stile kann die Darstellung von allgemeinen Steuerelementen auf Grundlage des vom Benutzer ausgewählten Designs geändert werden. Standardmäßig werden keine visuellen Stile für WPF-Anwendungen (Windows Presentation Foundation) aktiviert. Daher müssen Sie sie manuell aktivieren. Allerdings tritt bei der Veröffentlichung der Projektmappe ein Fehler auf, wenn visuelle Stile für eine WPF-Anwendung aktiviert sind. In diesem Thema wird beschrieben, wie dieser Fehler zu beheben ist und wie eine WPF-Anwendung mit aktivierten visuellen Stilen veröffentlicht werden kann. Weitere Informationen zu visuellen Stilen finden Sie unter [visuelle Stile Übersicht](http://msdn.microsoft.com/5b5d7bb6-684f-478d-bf5f-b8d18bbcff2e). Weitere Informationen zu der Fehlermeldung finden Sie unter [Problembehandlung bei bestimmten Fehlern in ClickOnce-Bereitstellungen](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md).  
@@ -34,7 +32,7 @@ Durch visuelle Stile kann die Darstellung von allgemeinen Steuerelementen auf Gr
   
  Anschließend können Sie die veröffentlichten Dateien an den Speicherort verschieben, von dem Endbenutzer die Anwendung installieren sollen.  
   
-##  <a name="BKMK_publishsolwovs"></a>Veröffentlichen Sie die Projektmappe ohne aktivierte visuelle Stile  
+##  <a name="BKMK_publishsolwovs"></a> Veröffentlichen Sie die Projektmappe ohne aktivierte visuelle Stile  
   
 1.  Stellen Sie sicher, dass visuelle Stile für das Projekt nicht aktiviert sind. Überprüfen Sie zunächst die Manifestdatei des Projekts für die folgenden XML-Code. Wenn der XML-Code vorhanden ist, schließen Sie ihn in ein Kommentartag ein.  
   
@@ -48,7 +46,7 @@ Durch visuelle Stile kann die Darstellung von allgemeinen Steuerelementen auf Gr
   
     ###### <a name="to-open-the-manifest-file-in-a-visual-basic-project"></a>So öffnen Sie die Manifestdatei in einem Visual Basic-Projekt  
   
-    1.  Wählen Sie in der Menüleiste **Projekt**, *Projektname***Eigenschaften**, wobei *Projektname* ist der Name des WPF-Projekts.  
+    1.  Wählen Sie in der Menüleiste **Projekt**, * Projektname ***Eigenschaften**, wobei *Projektname* ist der Name des WPF-Projekts.  
   
          Die Eigenschaftenseiten für das WPF-Projekt werden angezeigt.  
   
@@ -58,7 +56,7 @@ Durch visuelle Stile kann die Darstellung von allgemeinen Steuerelementen auf Gr
   
     ###### <a name="to-open-the-manifest-file-in-a-c-project"></a>So öffnen Sie die Manifestdatei in einem C#-Projekt  
   
-    1.  Wählen Sie in der Menüleiste **Projekt**, *Projektname***Eigenschaften**, wobei *Projektname* ist der Name des WPF-Projekts.  
+    1.  Wählen Sie in der Menüleiste **Projekt**, * Projektname ***Eigenschaften**, wobei *Projektname* ist der Name des WPF-Projekts.  
   
          Die Eigenschaftenseiten für das WPF-Projekt werden angezeigt.  
   
@@ -73,7 +71,7 @@ Durch visuelle Stile kann die Darstellung von allgemeinen Steuerelementen auf Gr
   
 2.  Erstellen und veröffentlichen Sie die Projektmappe. Weitere Informationen dazu, wie Sie die Projektmappe zu veröffentlichen, finden Sie unter [Vorgehensweise: Veröffentlichen einer ClickOnce-Anwendung mit dem Webpublishing-Assistenten](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).  
   
-##  <a name="BKMK_CreateManifest"></a>Erstellen Sie eine Manifestdatei  
+##  <a name="BKMK_CreateManifest"></a> Erstellen Sie eine Manifestdatei  
   
 1.  Fügen Sie folgendes XML in eine Editor-Datei ein.  
   
@@ -94,7 +92,7 @@ Durch visuelle Stile kann die Darstellung von allgemeinen Steuerelementen auf Gr
     > [!NOTE]
     >  Die verbleibenden Verfahren wird davon ausgegangen, dass der Name dieser Datei **"Themes.manifest"** und die Datei in das Verzeichnis C:\temp auf Ihrem Computer gespeichert ist.  
   
-##  <a name="BKMK_embedmanifest"></a>Fügen Sie der Manifestdatei in die ausführbare Datei der veröffentlichten Projektmappe  
+##  <a name="BKMK_embedmanifest"></a> Fügen Sie der Manifestdatei in die ausführbare Datei der veröffentlichten Projektmappe  
   
 1.  Öffnen der **Visual Studio-Eingabeaufforderung**.  
   
@@ -107,7 +105,7 @@ Durch visuelle Stile kann die Darstellung von allgemeinen Steuerelementen auf Gr
     > -   Die Projektmappe befindet sich im folgenden Verzeichnis: `%UserProfile%\Documents\Visual Studio 2010\Projects\`.  
     >   
     >      Die Lösung wird veröffentlicht, auf das folgende Verzeichnis: `%UserProfile%\Documents\Visual Studio 2010\Projects\publish`.  
-    > -   Die neueste Version der veröffentlichten Anwendungsdateien befindet sich im folgenden Verzeichnis:`%UserProfile%\Documents\Visual Studio 2010\Projects\publish\Application Files\WPFApp_1_0_0_0`  
+    > -   Die neueste Version der veröffentlichten Anwendungsdateien befindet sich im folgenden Verzeichnis: `%UserProfile%\Documents\Visual Studio 2010\Projects\publish\Application Files\WPFApp_1_0_0_0`  
     >   
     >  Sie müssen die oben genannten Namen und Verzeichnisspeicherorte nicht verwenden. Die oben genannten Namen und Speicherorte dienen nur als Beispiele bei der Veranschaulichung der Schritte, die für die Veröffentlichung der Projektmappe erforderlich sind.  
   
@@ -123,7 +121,7 @@ Durch visuelle Stile kann die Darstellung von allgemeinen Steuerelementen auf Gr
     mt -manifest c:\temp\themes.manifest -outputresource:MyWPFApp.exe.deploy  
     ```  
   
-##  <a name="BKMK_signappdeplyman"></a>Melden Sie sich die Anwendungs- und Bereitstellungsmanifeste  
+##  <a name="BKMK_signappdeplyman"></a> Melden Sie sich die Anwendungs- und Bereitstellungsmanifeste  
   
 1.  Geben Sie an der Eingabeaufforderung den folgenden Befehl ein, um die `.deploy`-Erweiterung aus der ausführbaren Datei im aktuellen Verzeichnis zu entfernen:  
   

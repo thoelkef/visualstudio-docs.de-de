@@ -1,27 +1,23 @@
 ---
 title: Aufrufliste des grafikereignisses | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics.callstack
 ms.assetid: 8a30168d-8b39-4de1-b094-c7356ba101a3
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 89e426c24f1f32161307d573c1ab06cdf459b1d6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 73dcda2cf0a6d3f565f8d7a282788b5861ebc218
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="graphics-event-call-stack"></a>Aufrufliste des Grafikereignisses
 Die Aufrufliste des Grafikereignisses in der Visual Studio-Grafikanalyse kann Ihnen die Zuordnung von Beziehungen zwischen Grafikereignissen und dem Quellcode Ihrer App erleichtern.  
@@ -42,7 +38,7 @@ Die Aufrufliste des Grafikereignisses in der Visual Studio-Grafikanalyse kann Ih
 |------------|-----------------|  
 |**Name**|Ein Symbol, die eindeutig die Funktion identifiziert, die die Aufrufseite enthält. Das Debugsymbol für die Funktion wird angezeigt, wenn dieses verfügbar ist. Andernfalls wird der Offset der Funktion angezeigt.|  
 |**Datei**|Der Dateiname der Quelldatei oder Bibliotheksdatei, die die Aufrufsite enthält.|  
-|**Speicherort**|Die Zeilennummer der Aufrufsite.|  
+|**Position**|Die Zeilennummer der Aufrufsite.|  
   
 ### <a name="links-to-graphics-objects"></a>Links zu Grafikobjekten  
  Um die ausgewählten Grafiken zu verstehen, benötigen Sie möglicherweise Informationen über das Direct3D-Objekt, dem diese zugeordnet sind. Die **Aufrufliste des Grafikereignisses** Fenster enthält Links zu diesen Informationen.  

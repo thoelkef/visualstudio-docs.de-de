@@ -1,12 +1,10 @@
 ---
 title: 'CA1403: Typen mit automatischem Layout sollten nicht COM sichtbar sein | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - AutoLayoutTypesShouldNotBeComVisible
 - CA1403
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - CA1403
 - AutoLayoutTypesShouldNotBeComVisible
 ms.assetid: a7007714-f9b4-4730-94e0-67d3dc68991f
-caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 7da04d7ecda3e47239bd865812c6fbd05428ac09
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: a0b13ba365383b312b467940641b020d75478c46
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca1403-auto-layout-types-should-not-be-com-visible"></a>CA1403: Typen mit automatischem Layout sollten nicht für COM sichtbar sein
 |||  
@@ -37,7 +35,7 @@ ms.lasthandoff: 12/22/2017
  Ein sichtbar Werttyp Component Object Model (COM) wird gekennzeichnet, mit der <xref:System.Runtime.InteropServices.StructLayoutAttribute?displayProperty=fullName> -Attributsatz zur <xref:System.Runtime.InteropServices.LayoutKind?displayProperty=fullName>.  
   
 ## <a name="rule-description"></a>Regelbeschreibung  
- <xref:System.Runtime.InteropServices.LayoutKind>Layout-Typen werden von der common Language Runtime verwaltet. Das Layout dieser Typen kann zwischen verschiedenen Versionen von .NET Framework geändert, was die COM-Clients unterbrochen wird, die ein bestimmtes Layout erwarten. Beachten Sie, dass bei der <xref:System.Runtime.InteropServices.StructLayoutAttribute> Attribut nicht angegeben wird, die C#-, [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], und geben Sie die C++-Compiler die <xref:System.Runtime.InteropServices.LayoutKind> Layout für Werttypen.  
+ <xref:System.Runtime.InteropServices.LayoutKind> Layout-Typen werden von der common Language Runtime verwaltet. Das Layout dieser Typen kann zwischen verschiedenen Versionen von .NET Framework geändert, was die COM-Clients unterbrochen wird, die ein bestimmtes Layout erwarten. Beachten Sie, dass bei der <xref:System.Runtime.InteropServices.StructLayoutAttribute> Attribut nicht angegeben wird, die C#-, [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], und geben Sie die C++-Compiler die <xref:System.Runtime.InteropServices.LayoutKind> Layout für Werttypen.  
   
  Sofern nicht anders markiert ist, sind alle öffentliche, nicht generische Typen für COM sichtbar. alle nicht öffentliche und generischen Typen sind nicht für COM sichtbar Allerdings erfordert diese Regel um falsch positive Ergebnisse zu reduzieren, die COM-Sichtbarkeit des Typs explizit angegeben werden; die enthaltende Assembly muss mit dem gekennzeichnet werden die <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> festgelegt `false` und der Typ muss markiert sein, mit der <xref:System.Runtime.InteropServices.ComVisibleAttribute> festgelegt `true`.  
   

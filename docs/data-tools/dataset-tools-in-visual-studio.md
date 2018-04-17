@@ -1,11 +1,8 @@
 ---
 title: DataSet-Tools in Visual Studio | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.data.DataSet
 helpviewer_keywords:
@@ -46,18 +43,17 @@ helpviewer_keywords:
 - datasets [Visual Basic], namespace
 - data adapters, populating datasets
 ms.assetid: ee57f4f6-9fe1-4e0a-be9a-955c486ff427
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: a8c8660fbc489dd8c4926bb09b8b42006da0897a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 7db4eaf50f04d0baf082f6612ee7bd13a0d30ed6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="dataset-tools-in-visual-studio"></a>DataSet-Tools in Visual Studio
 > [!NOTE]
@@ -86,7 +82,7 @@ ms.lasthandoff: 12/22/2017
   
     -   [Rückspeichern von Daten in der Datenbank](../data-tools/save-data-back-to-the-database.md)  
   
--   Fragen Sie ab, und suchen Sie die Daten im Dataset. Weitere Informationen finden Sie unter [Abfragedatasets](../data-tools/query-datasets.md). [!INCLUDE[linq_dataset](../data-tools/includes/linq_dataset_md.md)]ermöglicht [LINQ (Language-Integrated Query)](/dotnet/csharp/linq/) über Daten in einem <xref:System.Data.DataSet> Objekt. Weitere Informationen finden Sie unter [LINQ to DataSet](/dotnet/framework/data/adonet/linq-to-dataset).  
+-   Fragen Sie ab, und suchen Sie die Daten im Dataset. Weitere Informationen finden Sie unter [Abfragedatasets](../data-tools/query-datasets.md). [!INCLUDE[linq_dataset](../data-tools/includes/linq_dataset_md.md)] ermöglicht [LINQ (Language-Integrated Query)](/dotnet/csharp/linq/) über Daten in einem <xref:System.Data.DataSet> Objekt. Weitere Informationen finden Sie unter [LINQ to DataSet](/dotnet/framework/data/adonet/linq-to-dataset).  
   
 -   Verwenden der **Datenquellen** Fenster Benutzeroberflächen-Steuerelemente an das Dataset oder die einzelnen Spalten gebunden, und um anzugeben, welche Spalten Benutzer bearbeitet werden. Weitere Informationen finden Sie unter [Binden von Steuerelementen an Daten in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md).  
   

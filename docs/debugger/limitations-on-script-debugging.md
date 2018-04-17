@@ -1,12 +1,10 @@
 ---
-title: "Einschränkungen beim Skriptdebugging | Microsoft Docs"
-ms.custom: 
+title: Einschränkungen beim Skriptdebugging | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -17,16 +15,16 @@ helpviewer_keywords:
 - script debugging, limitations
 - breakpoint mapping, limitations
 ms.assetid: 280eead5-693c-47af-967f-dfe9d23f84db
-caps.latest.revision: "22"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 2c51a9b9ad5a349261d1898310ccb0125293ab5a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: b2b959428d940fd61c9c343f468fca71d56332c0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="limitations-on-script-debugging"></a>Einschränkungen beim Skriptdebugging
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] unterstützt das Debuggen von clientseitigem Skript. Dabei gelten die in diesem Thema erörterten Einschränkungen.  
@@ -36,7 +34,7 @@ ms.lasthandoff: 12/22/2017
   
 -   Haltepunkte müssen innerhalb von `<script>`-Blöcken festgelegt werden. Haltepunkte in eingebetteten Skripts oder `<% %>`-Blöcken können nicht zugeordnet werden.  
   
--   Die Browser-URL für die Seite muss den Seitennamen enthalten. Beispiel: http://microsoft.com/default.apsx. Bei der Zuordnung von Haltepunkten wird die Umleitung von einer Adresse wie http://microsoft.com zur Standardseite nicht erkannt.  
+-   Die Browser-URL für die Seite muss den Seitennamen enthalten. Beispielsweise http://microsoft.com/default.apsx. Zuordnung von Haltepunkten nicht wie z. B. eine Umleitung von einer Adresse erkannt http://microsoft.com die Standardseite.  
   
 -   Der Haltepunkt muss in der Seite festgelegt werden, die in der Browser-URL angegeben ist, und nicht in einer ASPX-Steuerelementdatei (ascx), Masterseite oder einer anderen auf dieser Seite enthaltenen Datei. Haltepunkte in eingeschlossenen Seiten können nicht zugeordnet werden.  
   

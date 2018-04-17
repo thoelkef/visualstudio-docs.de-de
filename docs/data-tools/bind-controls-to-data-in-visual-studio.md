@@ -1,28 +1,25 @@
 ---
 title: Binden von Steuerelementen an Daten in Visual Studio | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - data, displaying
 - data sources, displaying data
 - Data Sources window
 - dislaying data
 ms.assetid: be8b6623-86a6-493e-ab7a-050de4661fd6
-caps.latest.revision: "40"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: d6a1ab26dc402d039a5e858896ec25668be8df9e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: ce37768ce7a7685b89b82a04b944b7fa38af630c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="bind-controls-to-data-in-visual-studio"></a>Binden von Steuerelementen an Daten in Visual Studio
 Sie können Daten für Benutzer der Anwendung anzeigen, indem Sie Daten an Steuerelemente binden. Sie können diese datengebundenen Steuerelemente erstellen, durch Ziehen von Elementen aus der **Datenquellen** auf einer Entwurfsoberfläche oder Steuerelemente auf einer Entwurfsoberfläche in Visual Studio.  

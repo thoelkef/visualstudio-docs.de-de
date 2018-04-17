@@ -1,12 +1,9 @@
 ---
 title: 'Fehler: Nicht auf die SQL Server-Debugschnittstelle zugreifen | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - vs.debug.error.sqlde_debugging_not_enabled
@@ -16,17 +13,16 @@ dev_langs:
 - FSharp
 - C++
 - SQL
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d288a1697afcc4ed5bcf315c30c66e2d87c0a0d3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 7996795934e372de86008c3e0ae8546860d8a465
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="error-unable-to-access-the-sql-server-debugging-interface"></a>Fehler: Auf die Debugschnittstelle von SQL Server kann nicht zugegriffen werden
 Diese Meldung wird angezeigt, wenn Sie SQL-Debuggen auf einem Computer versuchen, bei dem SQL-Debuggen nicht aktiviert ist.  

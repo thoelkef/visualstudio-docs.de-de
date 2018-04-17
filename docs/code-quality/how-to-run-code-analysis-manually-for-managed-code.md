@@ -1,27 +1,23 @@
 ---
-title: "Vorgehensweise: Manuelles Ausführen der Codeanalyse für verwalteten Code | Microsoft Docs"
-ms.custom: 
+title: 'Vorgehensweise: Manuelles Ausführen der Codeanalyse für verwalteten Code | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - code analysis, running
 ms.assetid: 5086d228-f92e-4515-9708-c5b89b9e9a03
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 27701a6c0b44051095ebcd01cd6bb35a7e6dc077
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: b3a4ca0ff03afba7a50904f9f840d86bab07ea5d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-run-code-analysis-manually-for-managed-code"></a>Gewusst wie: Manuelles Ausführen der Codeanalyse für verwalteten Code
 Das Codeanalysetool liefert Ihnen Informationen zu möglichen Fehlern im Quellcode. Sie können Codeanalyse für jeden Build eines Codeprojekts automatisch ausgeführt, und Sie können Codeanalyse auch manuell ausführen. Die Regeln, die eingecheckt werden, wenn die Codeanalyse ausgeführt wird, werden auf der Seite "Codeanalyse" der Eigenschaftenseiten des Projekts angegeben. Weitere Informationen finden Sie unter [Vorgehensweise: Konfigurieren der Codeanalyse für ein Projekt mit verwaltetem Code](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)  

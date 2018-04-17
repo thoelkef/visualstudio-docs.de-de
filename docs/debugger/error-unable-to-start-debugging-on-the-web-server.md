@@ -1,12 +1,9 @@
 ---
 title: 'Fehler: Debuggen kann nicht auf dem Webserver | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 05/23/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - vs.debug.error.http
@@ -27,17 +24,16 @@ helpviewer_keywords:
 - errors [debugger], unable to start debugging
 - debugging ASP.NET Web applications, unable to start debugging error
 - remote debugging, errors
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d9c4160726f808a2f456bb52390839c34dc308e2
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 459df1ca9ffed246116c71adac8a38039b6602ae
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="error-unable-to-start-debugging-on-the-web-server"></a>Fehler: Das Debuggen kann auf dem Webserver nicht gestartet werden
 
@@ -59,58 +55,58 @@ Die `Unable to start debugging on the Web server` Nachricht ist generisch. In de
 - [Der Debugger kann keine Verbindung mit dem Remotecomputer herstellen.](#cannot_connect)
 - [Finden Sie Hilfe für häufige Konfigurationsfehler erläutert. Die Webseite außerhalb des Debuggers ausgeführt möglicherweise weitere Informationen bereit.](#see_help)
 
-## <a name="IISlist"></a>Listet IIS eine Website, die den Start entspricht nicht Url
+## <a name="IISlist"></a> Listet IIS eine Website, die den Start entspricht nicht Url
 
 - Starten Sie Visual Studio als Administrator aus, und wiederholen Sie debuggen. (Einige Debugszenarien ASP.NET ist erhöhte Rechte erforderlich.)
 
     Sie können konfigurieren, dass Visual Studio mit der rechten Maustaste in der Visual Studio Symbol "Verknüpfung", immer als Administrator ausführen auswählen **Eigenschaften > erweitert**, und klicken Sie dann angeben, dass immer als Administrator ausführen.
 
-## <a name="web_server_config"></a>Der Webserver ist nicht ordnungsgemäß konfiguriert.
+## <a name="web_server_config"></a> Der Webserver ist nicht ordnungsgemäß konfiguriert.
 
 - Finden Sie unter [Fehler: der Webserver ist nicht richtig konfiguriert](../debugger/error-the-web-server-is-not-configured-correctly.md).
 
-## <a name="unabletoconnect"></a>Keine Verbindung mit dem Webserver herstellen
+## <a name="unabletoconnect"></a> Keine Verbindung mit dem Webserver herstellen
 
 - Sind Sie mit Visual Studio und den Webserver auf demselben Computer ausführen und Debuggen mit **F5** (anstelle von **an den Prozess anhängen**)? Öffnen Sie die Projekteigenschaften fest, und stellen Sie sicher, dass das Projekt zum Herstellen einer Verbindung mit dem richtigen Web-Server, und starten die URL konfiguriert ist. (Öffnen **Eigenschaften > Web > Server** oder **Eigenschaften > Debuggen** Abhängigkeit vom Projekttyp. Für eine Web Forms-Projekt öffnen **Eigenschaftenseiten > Startoptionen > Server**.)
 
 - Andernfalls starten Sie den Anwendungspool neu, und setzen Sie IIS zurück. Weitere Informationen finden Sie unter [überprüfen Sie die IIS-Konfiguration](#vxtbshttpservererrorsthingstocheck).
 
-## <a name="webservertimeout"></a>Der Webserver hat nicht rechtzeitig reagiert.
+## <a name="webservertimeout"></a> Der Webserver hat nicht rechtzeitig reagiert.
 
 - Setzen Sie IIS zurück, und wiederholen Sie dann debuggen. Mehrere Instanzen der Debugger möglicherweise an den IIS-Prozess angefügt werden; Zurücksetzen ein beendet werden. Weitere Informationen finden Sie unter [überprüfen Sie die IIS-Konfiguration](#vxtbshttpservererrorsthingstocheck).
 
-## <a name="msvsmon"></a>Die Microsoft visual Studio Remotedebuggen monitor(msvsmon.exe) scheint nicht auf dem Remotecomputer ausgeführt werden
+## <a name="msvsmon"></a> Die Microsoft visual Studio Remotedebuggen monitor(msvsmon.exe) scheint nicht auf dem Remotecomputer ausgeführt werden
 
 - Wenn Sie auf einem Remotecomputer debuggen, stellen Sie sicher, dass [installiert und den Remotedebugger ausführen](../debugger/remote-debugging.md). Wenn die Nachricht eine Firewall erwähnt, stellen Sie sicher, dass die [beheben Sie Ports in der Firewall](../debugger/remote-debugger-port-assignments.md) geöffnet sind, insbesondere dann, wenn Sie eine Drittanbieter-Firewall verwenden.
 - Wenn Sie eine HOSTS-Datei verwenden, stellen Sie sicher, dass er ordnungsgemäß konfiguriert ist. Angenommen, Debuggen mit **F5** (anstelle von **an den Prozess anhängen**), die HOSTS-Datei muss die gleichen Projekt-URL wie in den Projekteigenschaften enthalten **Eigenschaften > Web > Server**  oder **Eigenschaften > Debuggen**vom Projekttyp abhängig.
 
-## <a name="server_error"></a>Der Remoteserver hat einen Fehler zurückgegeben.
+## <a name="server_error"></a> Der Remoteserver hat einen Fehler zurückgegeben.
 
 Überprüfen Sie Ihre [IIS-Protokolldatei](https://support.microsoft.com/help/943891/the-http-status-code-in-iis-7-0--iis-7-5--and-iis-8-0) Fehler Untercodes und Weitere Informationen und dieses IIS 7 [Blogbeitrag](https://blogs.iis.net/tomkmvp/troubleshoot-a-403).
 
 Darüber hinaus sind hier einige häufige Fehlercodes und einige Vorschläge.
-- (403) Forbidden. Es gibt zahlreiche mögliche Ursachen für diesen Fehler, so überprüfen Sie die Protokolldatei und die IIS-Sicherheitseinstellungen für die Website. Stellen Sie sicher, dass der Server "Web.config" enthält `debug=true` in das Compilation-Element. Stellen Sie sicher, dass Ihr Web Application-Ordner die richtigen Berechtigungen verfügt und die Anwendungspool-Konfiguration richtig ist (ein Kennwort möglicherweise geändert haben). Finden Sie unter [überprüfen Sie die IIS-Konfiguration](#vxtbshttpservererrorsthingstocheck). Wenn diese Einstellungen bereits korrekt sind und Sie lokal debuggen, außerdem überprüfen, ob Sie mit dem richtigen Server-Typ und URL herstellen (in **Eigenschaften > Web > Server** oder **Eigenschaften > Debuggen**, Abhängigkeit vom Projekttyp).
+- ("403 Forbidden)". Es gibt zahlreiche mögliche Ursachen für diesen Fehler, so überprüfen Sie die Protokolldatei und die IIS-Sicherheitseinstellungen für die Website. Stellen Sie sicher, dass der Server "Web.config" enthält `debug=true` in das Compilation-Element. Stellen Sie sicher, dass Ihr Web Application-Ordner die richtigen Berechtigungen verfügt und die Anwendungspool-Konfiguration richtig ist (ein Kennwort möglicherweise geändert haben). Finden Sie unter [überprüfen Sie die IIS-Konfiguration](#vxtbshttpservererrorsthingstocheck). Wenn diese Einstellungen bereits korrekt sind und Sie lokal debuggen, außerdem überprüfen, ob Sie mit dem richtigen Server-Typ und URL herstellen (in **Eigenschaften > Web > Server** oder **Eigenschaften > Debuggen**, Abhängigkeit vom Projekttyp).
 - (503) Server nicht verfügbar. Der Anwendungspool möglicherweise aufgrund einer Änderung der Fehler oder die Konfiguration beendet. Starten Sie den Anwendungspool neu.
 - (404) nicht gefunden. Stellen Sie sicher, dass der Anwendungspool für die richtige Version von ASP.NET konfiguriert ist.
 
-## <a name="aspnet"></a>Debuggen von ASP.NET konnte nicht gestartet
+## <a name="aspnet"></a> Debuggen von ASP.NET konnte nicht gestartet
 
 - Starten Sie den Anwendungspool, und setzen Sie IIS zurück. Weitere Informationen finden Sie unter [überprüfen Sie die IIS-Konfiguration](#vxtbshttpservererrorsthingstocheck).
 - Wenn Sie das URL-schreibt durchführen, testen Sie grundlegende "Web.config" mit keine URL ständig neu geschrieben. Finden Sie unter der **Hinweis** schreiben Sie zur URL-Modul im [überprüfen Sie die IIS-Konfiguration](#vxtbshttpservererrorsthingstocheck).
 
-## <a name="cannot_connect"></a>Der Debugger kann keine Verbindung mit dem Remotecomputer herstellen.
+## <a name="cannot_connect"></a> Der Debugger kann keine Verbindung mit dem Remotecomputer herstellen.
 
 Wenn Sie lokal debuggen, kann dieser Fehler auftreten, da Visual Studio eine 32-Bit-Anwendung ist, sodass sie die 64-Bit-Version des Remotedebuggers Debuggen von 64-Bit-Anwendungen verwendet. Öffnen Sie die Projekteigenschaften fest, und stellen Sie sicher, dass das Projekt für die Verbindung mit den richtigen Webserver und die URL konfiguriert ist. (Öffnen **Eigenschaften > Web > Server** oder **Eigenschaften > Debuggen** Abhängigkeit vom Projekttyp.)
 
 Wenn Sie eine HOSTS-Datei verwenden, stellen Sie außerdem sicher, dass er ordnungsgemäß konfiguriert ist. Angenommen, die HOSTS-Datei muss die gleichen Projekt-URL wie in den Projekteigenschaften enthalten **Eigenschaften > Web > Server** oder **Eigenschaften > Debuggen**vom Projekttyp abhängig.
 
-## <a name="see_help"></a>Finden Sie Hilfe für häufige Konfigurationsfehler erläutert. Die Webseite außerhalb des Debuggers ausgeführt möglicherweise weitere Informationen bereit.
+## <a name="see_help"></a> Finden Sie Hilfe für häufige Konfigurationsfehler erläutert. Die Webseite außerhalb des Debuggers ausgeführt möglicherweise weitere Informationen bereit.
 
 - Sind Sie Visual Studio und dem Webserver auf demselben Computer ausgeführt? Öffnen Sie die Projekteigenschaften fest, und stellen Sie sicher, dass das Projekt zum Herstellen einer Verbindung mit dem richtigen Web-Server, und starten die URL konfiguriert ist. (Öffnen **Eigenschaften > Web > Server** oder **Eigenschaften > Debuggen** Abhängigkeit vom Projekttyp.)
 
 - Wenn, die funktioniert nicht, oder Sie Remote Debuggen, führen Sie die Schritte [überprüfen Sie die IIS-Konfiguration](#vxtbshttpservererrorsthingstocheck).
 
-##  <a name="vxtbshttpservererrorsthingstocheck"></a>Überprüfen Sie die IIS-Konfiguration
+##  <a name="vxtbshttpservererrorsthingstocheck"></a> Überprüfen Sie die IIS-Konfiguration
 
 Nach der Schritte zur Behebung des Problems hier detailliert, und versuchen Sie es noch debuggen müssen Sie möglicherweise auch IIS zurücksetzen. Sie können dies vornehmen, indem Sie eine Eingabeaufforderung mit erhöhten Rechten öffnen und Folgendes eingeben: `iisreset`. 
 

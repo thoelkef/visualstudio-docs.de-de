@@ -1,23 +1,21 @@
 ---
 title: Verwenden von Microsoft Monitoring Agent | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 ms.assetid: fd0a86b9-015d-408e-aa58-59a0a97826ac
-caps.latest.revision: "7"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 3e5963568eac26e7f88acf3ba07466fd1261eed1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 8e1a0bb0567b4ff76bd6dfac1c28fe1eccd7f48c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="using-the-microsoft-monitoring-agent"></a>Verwenden von Microsoft Monitoring Agent
 Sie können von IIS gehostete ASP.NET-Webanwendungen sowie SharePoint 2010- oder 2013-Anwendungen lokal auf Fehler, Leistungsprobleme und andere Probleme überwachen, indem Sie **Microsoft Monitoring Agent**verwenden. Sie können Diagnoseereignisse vom Agent in einer IntelliTrace-Protokoll-(.iTrace)-Datei speichern. Sie können dann das Protokoll in Visual Studio Enterprise (jedoch nicht in den Versionen Professional oder Community) öffnen, um Probleme mit allen Visual Studio-Diagnosetools zu debuggen. Sie können auch IntelliTrace-Diagnosedaten und Methodendaten erfassen, indem Sie den Agenten im **Ablaufverfolgungs** modus ausführen. Microsoft Monitoring Agent kann mit [Application Insights](http://www.visualstudio.com/get-started/find-performance-problems-vs.aspx) und [System Center Operation Manager](http://technet.microsoft.com/library/hh205987.aspx)integriert werden. Durch die Installation von Microsoft Monitoring Agent ändert sich nicht die Zielsystemumgebung.  

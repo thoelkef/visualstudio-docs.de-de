@@ -1,21 +1,19 @@
 ---
-title: "CA3076: Unsichere XSLT-Skriptausführung | Microsoft Docs"
-ms.custom: 
+title: 'CA3076: Unsichere XSLT-Skriptausführung | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 66d415b792558dce91de0205ee688fecb5caa182
-ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 9793d0af1c2207b5201cb9e0e7bebe0d7bf4ef1c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca3076-insecure-xslt-script-execution"></a>CA3076: Unsichere XSLT-Skriptausführung
 
@@ -34,11 +32,11 @@ Wenn Sie Extensible Stylesheets Language Transformations (XSLT) ungesichert in .
 
 **XSLT** ist ein Standard World Wide Web Consortium (W3C) zum Transformieren von XML-Daten. XSLT wird in der Regel verwendet, um Stylesheets zum Transformieren von XML-Daten in andere Formate (z. B.in HTML, Text fester Länge, durch Trennzeichen getrennter Text oder ein anderes XML-Format) zu schreiben. Dies ist zwar standardmäßig nicht zulässig, sie können die Option aber für Ihr Projekt aktivieren.
 
-Um sicherzustellen, dass Sie keine Angriffsfläche bieten, wird diese Regel jedes Mal dann ausgelöst, wenn XslCompiledTransform.<xref:System.Xml.Xsl.XslCompiledTransform.Load%2A> unsichere Kombinationen aus <xref:System.Xml.Xsl.XsltSettings> und <xref:System.Xml.XmlResolver>empfängt, die die Verarbeitung von bösartigen Skripts zulassen.
+Um sicherzustellen, können Sie keine Angriffsfläche, dieser Regel wird ausgelöst, wenn die "XslCompiledTransform".<xref:System.Xml.Xsl.XslCompiledTransform.Load%2A> Unsichere Kombinationen aus empfängt <xref:System.Xml.Xsl.XsltSettings> und <xref:System.Xml.XmlResolver>, wodurch die Verarbeitung von bösartigen Skripts.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
 
-- Ersetzen Sie das unsichere XsltSettings-Argument durch XsltSettings.<xref:System.Xml.Xsl.XsltSettings.Default%2A> oder durch eine Instanz, bei der Dokumentfunktion und Skriptausführung deaktiviert wurden.
+- Ersetzen Sie das unsichere XsltSettings-Argument durch XsltSettings.<xref:System.Xml.Xsl.XsltSettings.Default%2A> oder mit einer Instanz, die Dokumentfunktion und Skript deaktiviert wurde.
 
 - Ersetzen Sie das <xref:System.Xml.XmlResolver> -Argument durch „Null“ oder eine <xref:System.Xml.XmlSecureResolver> -Instanz.
 
@@ -48,7 +46,7 @@ Unterdrücken Sie eine Regel aus dieser Warnung niemals, es sei denn, Sie sind g
 
 ## <a name="pseudo-code-examples"></a>Pseudocodebeispiele
 
-### <a name="violationmdashuses-xsltsettingstrustedxslt"></a>Violation&mdash;uses XsltSettings.TrustedXslt
+### <a name="violationmdashuses-xsltsettingstrustedxslt"></a>Verletzung&mdash;XsltSettings.TrustedXslt verwendet
 
 ```csharp
 using System.Xml;  

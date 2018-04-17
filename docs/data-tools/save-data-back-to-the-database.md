@@ -1,11 +1,8 @@
 ---
 title: Speichern von Daten an die Datenbank | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - datasets [Visual Basic], validating data
 - data validation, datasets
@@ -19,17 +16,17 @@ helpviewer_keywords:
 - datasets [Visual Basic], constraints
 - TableAdapters
 ms.assetid: afe6cb8a-dc6a-428b-b07b-903ac02c890b
-caps.latest.revision: "27"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: 733a495c7f6865e9973f5288c9c324baef7f1d8e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: 1e7d2b27f0d90677d99d3f0fbc434493fdc7da83
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="save-data-back-to-the-database"></a>Speichern von Daten in der Datenbank
 Das Dataset ist ein in-Memory-Kopie der Daten. Wenn Sie diese Daten ändern, ist es empfiehlt sich, diese Änderungen in der Datenbank zu speichern. Sie dazu auf eine der drei Arten:  
@@ -158,7 +155,7 @@ In der folgenden Tabelle sind die möglichen Werte für die <xref:System.Data.Da
   
  Sie können Teilmengen der geänderten Datensätze erstellen, indem Sie entweder die `GetChanges`-Methode der Datentabelle (<xref:System.Data.DataTable.GetChanges%2A>) oder des Datasets selbst (<xref:System.Data.DataSet.GetChanges%2A>) verwenden. Wenn Sie die Methode für die Datentabelle aufrufen, wird eine Kopie der Tabelle zurückgegeben, die lediglich die geänderten Datensätze enthält. Ähnlich verhält es sich, wenn Sie die Methode für den Dataset aufrufen: Sie erhalten ein neues Dataset, das nur geänderte Datensätze enthält.  
   
- `GetChanges`allein gibt Sie alle geänderten Datensätze zurück. Im Gegensatz dazu, indem Sie die gewünschte übergeben <xref:System.Data.DataRowState> als Parameter an die `GetChanges` -Methode, Sie können angeben, welche Teilmenge der geänderten Datensätze werden sollen: neu hinzugefügte Datensätze, Datensätze, die zum Löschen markiert sind, abgetrennte Datensätze oder geänderte Datensätze.  
+ `GetChanges` allein gibt Sie alle geänderten Datensätze zurück. Im Gegensatz dazu, indem Sie die gewünschte übergeben <xref:System.Data.DataRowState> als Parameter an die `GetChanges` -Methode, Sie können angeben, welche Teilmenge der geänderten Datensätze werden sollen: neu hinzugefügte Datensätze, Datensätze, die zum Löschen markiert sind, abgetrennte Datensätze oder geänderte Datensätze.  
   
  Abrufen einer Teilmenge der geänderten Datensätze eignet sich Datensätze an eine andere Komponente für die Verarbeitung zu senden. Anstatt das gesamte Dataset zu übertragen, können Sie die Kommunikation mit der anderen Komponente gering halten, indem Sie lediglich die Datensätze abrufen, die von der Komponente benötigt werden.   
   

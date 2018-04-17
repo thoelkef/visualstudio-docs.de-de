@@ -1,23 +1,20 @@
 ---
-title: "Die Verbindungszeichenfolge enthält Anmeldeinformationen mit einem Klartext-Kennwort und ist nicht mithilfe der integrierten Sicherheit | Microsoft Docs"
-ms.custom: 
+title: Die Verbindungszeichenfolge enthält Anmeldeinformationen mit einem Klartext-Kennwort und ist nicht mithilfe der integrierten Sicherheit | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 501d85af-92e0-4471-b280-8a59c0688575
-caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: 1ecca5a69893c92edbeb996606f94cac71e4a3c1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: 8d8800e6704ae479caed478f75c141887d939f19
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="the-connection-string-contains-credentials-with-a-clear-text-password-and-is-not-using-integrated-security"></a>Die Verbindungszeichenfolge enthält Anmeldeinformationen mit einem Klartext-Kennwort und verwendet keine integrierte Sicherheit.
 Möchten Sie die Verbindungszeichenfolge mit vertraulichen Informationen in der aktuellen DBML-Datei und in den Anwendungskonfigurationsdateien speichern?  Klicken Sie auf Nein, um die Verbindungszeichenfolge ohne die vertraulichen Informationen zu speichern.  

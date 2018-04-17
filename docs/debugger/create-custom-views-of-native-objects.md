@@ -1,29 +1,25 @@
 ---
 title: Erstellen benutzerdefinierte Ansichten von systemeigenen Objekten im Debugger | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 06/27/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - natvis
 dev_langs:
 - C++
 ms.assetid: 2d9a177a-e14b-404f-a6af-49498eff0bd7
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 340d0d7366749f402cb76f3075778fb2b7ea215b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 40a78f95ed98b0486b1ffa85eabea3ae8591b823
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-custom-views-of-native-objects-in-the-visual-studio-debugger"></a>Erstellen Sie benutzerdefinierte Ansichten von systemeigenen Objekten in Visual Studio-debugger
 Das Visual Studio-Natvis-Framework können Sie die Darstellung anpassen Visual Studio systemeigene Typen in den Variablenfenstern des Debuggers zeigt (z. B. die **Überwachen** Fenster **"lokal"** Fenster, und klicken Sie in  **DataTips**.
@@ -464,7 +460,7 @@ Das Visual Studio-Natvis-Framework können Sie die Darstellung anpassen Visual S
 -   Sie können `ValueNode` leer lassen oder mithilfe von `this` auf den verknüpften Listenknoten verweisen.  
   
 #### <a name="customlistitems-expansion"></a>CustomListItems-Erweiterung  
- Die `CustomListItems` -Erweiterung ermöglicht Ihnen das Schreiben von benutzerdefinierter Logik für das Traversieren einer Datenstruktur, beispielsweise einer Hashtabelle. Verwenden Sie `CustomListItems` Strukturen, in denen alles, was Sie zum Auswerten benötigen, ist zum Anzeigen von Daten mithilfe von C++-Ausdrücken ausgedrückt werden kann, jedoch nicht wirklich für `ArrayItems`, `TreeItems`, oder`LinkedListItems.`  
+ Die `CustomListItems` -Erweiterung ermöglicht Ihnen das Schreiben von benutzerdefinierter Logik für das Traversieren einer Datenstruktur, beispielsweise einer Hashtabelle. Verwenden Sie `CustomListItems` Strukturen, in denen alles, was Sie zum Auswerten benötigen, ist zum Anzeigen von Daten mithilfe von C++-Ausdrücken ausgedrückt werden kann, jedoch nicht wirklich für `ArrayItems`, `TreeItems`, oder `LinkedListItems.`  
   
  Die Schnellansicht für CAtlMap ist ein tolles Beispiel dafür, in welchen Fällen `CustomListItems` angemessen ist.  
   
@@ -542,7 +538,7 @@ Die folgenden systeminternen Funktionen werden unterstützt:
 ####  <a name="BKMK_ExpandedItem_expansion"></a> ExpandedItem-Erweiterung  
  Das `ExpandedItem` -Element kann verwendet werden, um eine aggregierte untergeordnete Ansicht zu generieren, indem die Eigenschaften von Basisklassen oder Datenmembern so angezeigt werden, als ob sie untergeordnete Elemente des Schnellansichtstyps wären. Der angegebene Ausdruck wird ausgewertet, und die untergeordneten Knoten des Ergebnisses werden an die untergeordnete Liste des Schnellansichtstyps angefügt. Nehmen wir beispielsweise an, wir haben einen intelligenten Zeigertyp `auto_ptr<vector<int>>`, der in der Regel als angezeigt:  
   
- ![Auto &#95; Ptr &#60; Vektor &#60; Int &#62; &#62; standarderweiterung](../debugger/media/dbg_natvis_expand_expandeditem_default.png "DBG_NATVIS_Expand_ExpandedItem_Default")  
+ ![automatische&#95;Ptr&#60;Vektor&#60;Int&#62; &#62; standarderweiterung](../debugger/media/dbg_natvis_expand_expandeditem_default.png "DBG_NATVIS_Expand_ExpandedItem_Default")  
   
  Um die Werte des Vektors anzuzeigen, müssen Sie im Variablenfenster einen Drilldown über zwei Ebenen durch den _Myptr-Member ausführen. Durch Hinzufügen eines `ExpandedItem` -Elements können Sie die `_Myptr` -Variable aus der Hierarchie ausschließen und die Vektorelemente direkt anzeigen:  
   
@@ -555,7 +551,7 @@ Die folgenden systeminternen Funktionen werden unterstützt:
 </Type>  
 ```  
   
- ![Auto &#95; Ptr &#60; Vektor &#60; Int &#62; &#62; ExpandedItem-Erweiterung](../debugger/media/dbg_natvis_expand_expandeditem_visualized.png "DBG_NATVIS_Expand_ExpandedItem_Visualized")  
+ ![automatische&#95;Ptr&#60;Vektor&#60;Int&#62; &#62; ExpandedItem-Erweiterung](../debugger/media/dbg_natvis_expand_expandeditem_visualized.png "DBG_NATVIS_Expand_ExpandedItem_Visualized")  
   
  Im folgende Beispiel wird gezeigt, wie Eigenschaften der Basisklasse in einer abgeleiteten Klasse zusammengefasst werden. Angenommen, die `CPanel` -Klasse wird von `CFrameworkElement`abgeleitet. Anstatt die Eigenschaften zu wiederholen, die von der `CFrameworkElement` -Basisklasse stammen, ermöglicht der `ExpandedItem` -Knoten das Anfügen dieser Eigenschaften an die untergeordnete Liste der `CPanel` -Klasse. Die **Nd** Formatbezeichner, der Visualisierung Abgleich für die abgeleitete Klasse deaktiviert werden, ist hier erforderlich. Andernfalls, den Ausdruck `*(CFrameworkElement*)this` bewirkt, dass die `CPanel` Visualisierung erneut angewendet werden, da der standardmäßige visualisierungstypenabstimmung halten es für geeignetste. Mithilfe der **Nd** -Formatbezeichner weist den Debugger an die basisklassenvisualisierung oder die basisklassenstandarderweiterung zu verwenden, wenn die Basisklasse keine Visualisierung nicht.  
   

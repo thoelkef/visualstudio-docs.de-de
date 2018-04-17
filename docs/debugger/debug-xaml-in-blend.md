@@ -1,28 +1,26 @@
 ---
 title: Debuggen von XAML in Blend | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
 - FSharp
 - C++
 ms.assetid: 29a37182-2a2c-47e4-a4a9-2d5412738fed
-caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: uwp
-ms.openlocfilehash: 8406f07b6f74211b4df873c7eae054e9ab67749c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- uwp
+ms.openlocfilehash: efcb38238bfc1d8001e99d6755da1f3e2f02edcd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="debug-xaml-in-blend"></a>Debuggen von XAML in Blend
 Verwenden Sie die Tools in [!INCLUDE[blend_first](../debugger/includes/blend_first_md.md)], um den XAML-Code in der App zu debuggen. Wenn Sie ein Projekt erstellen, werden Fehler angezeigt, der **Ergebnisse** Bereich. Doppelklicken Sie auf einen Fehler, um das dazugehörige Markup zu suchen. Wenn Sie mehr Platz zum Arbeiten benötigen, können Sie Ausblenden der **Ergebnisse** Bereich durch Drücken von F12.  
@@ -109,13 +107,13 @@ Verwenden Sie die Tools in [!INCLUDE[blend_first](../debugger/includes/blend_fir
   
 1.  Doppelklicken Sie auf den ersten Fehler in der Fehlerliste. Die Beschreibung lautet: "Der Wert'" '<' ist in einem Attribut ungültig." Wenn Sie auf den Fehler doppelklicken, ermittelt der Zeiger die entsprechende Position im Code. `<` vor `Button` ist gültig und kein Attribut, wie in der Fehlermeldung beschrieben. Wenn Sie die vorhergehende Codezeile prüfen, stellen Sie fest, dass die schließenden Anführungszeichen für das `Top`-Attribut fehlen. Geben Sie die schließenden Anführungszeichen ein. Beachten Sie die Fehlerliste im die **Ergebnisse** Bereich aktualisiert, um die Änderungen zu reflektieren.  
   
-2.  Doppelklicken Sie auf die Beschreibung "'0' ist ungültig am Anfang eines Namens." `Margin="0,149,0,0"`sieht ordnungsgemäß formatiert sein. Allerdings stimmt der Farbcode für `Margin` nicht mit den anderen Instanzen von `Margin` im Code überein. Da für das vorangehende Name-Wert-Paar die schließenden Anführungszeichen fehlen (`VerticalAlignment="Top`), wird `Margin="` als Teil des Werts des vorangehenden Attributs gelesen, und 0 wird als Anfang von einem Name-Wert-Paar gelesen. Geben Sie die schließenden Anführungszeichen für `Top` ein. In der Fehlerliste die **Ergebnisse** Bereich aktualisiert, um die Änderungen zu reflektieren.  
+2.  Doppelklicken Sie auf die Beschreibung "'0' ist ungültig am Anfang eines Namens." `Margin="0,149,0,0"` sieht ordnungsgemäß formatiert sein. Allerdings stimmt der Farbcode für `Margin` nicht mit den anderen Instanzen von `Margin` im Code überein. Da für das vorangehende Name-Wert-Paar die schließenden Anführungszeichen fehlen (`VerticalAlignment="Top`), wird `Margin="` als Teil des Werts des vorangehenden Attributs gelesen, und 0 wird als Anfang von einem Name-Wert-Paar gelesen. Geben Sie die schließenden Anführungszeichen für `Top` ein. In der Fehlerliste die **Ergebnisse** Bereich aktualisiert, um die Änderungen zu reflektieren.  
   
 3.  Doppelklicken Sie auf den verbleibenden Fehler: „Das schließende XML-Tag 'Button' ist falsch zugeordnet.“ Der Zeiger befindet sich unter dem schließenden **Raster** Tag (`</Grid>`), vorgeschlagen, die der Fehler die `Grid` Objekt. Beachten Sie, dass das Endtag für das `Button`-Objekt fehlt. Nach dem Hinzufügen der schließenden `/`, **Ergebnisse** Liste im Bereich aktualisiert wird. Nach dem Beheben dieser Anfangsfehler wurden zwei weitere Fehler identifiziert.  
   
 4.  Doppelklicken Sie auf: "Das Element 'content' wurde nicht erkannt, oder es kann nicht auf das Element zugegriffen werden." Das `c` in `content` muss groß geschrieben sein. Ersetzen Sie das klein geschriebene "c" durch ein groß geschriebenes "C".  
   
-5.  Doppelklicken Sie auf "Die Eigenschaft 'Mame' ist im Namespace 'http://schemas.microsoft.com/winfx/2006/xaml' nicht vorhanden." Das "M" in "Mame" muss ein "N" sein. Ersetzen Sie das "M" durch ein "N". Da der XAML-Code jetzt verarbeitet werden kann, wird die App auf der Entwurfsoberfläche angezeigt.  
+5.  Doppelklicken Sie auf "die Eigenschaft 'Mame' nicht, in vorhanden ist der"http://schemas.microsoft.com/winfx/2006/xaml"Namespace." Das "M" in "Mame" muss ein "N" sein. Ersetzen Sie das "M" durch ein "N". Da der XAML-Code jetzt verarbeitet werden kann, wird die App auf der Entwurfsoberfläche angezeigt.  
   
      ![Debuggen von XAML in Blend für Visual Studio](../debugger/media/blend_debugartboard_xaml.png "Blend_debugArtboard_XAML")  
   

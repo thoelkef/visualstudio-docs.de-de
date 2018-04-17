@@ -1,12 +1,10 @@
 ---
-title: "Vorbedingungen für die Anwendungsbereitstellung | Microsoft Docs"
-ms.custom: 
+title: Vorbedingungen für die Anwendungsbereitstellung | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -19,16 +17,16 @@ helpviewer_keywords:
 - prerequisites, ClickOnce
 - dependencies, ClickOnce
 ms.assetid: fc6e047e-ad94-44e8-8ff5-b6d1f4ca7735
-caps.latest.revision: "51"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 4060933a904a5cb842a7c319b3ef5da645e4119e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 5fdeb1d5e543216e0cbb9cab72ecd98001caff3c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="application-deployment-prerequisites"></a>Vorbedingungen für die Anwendungsbereitstellung
 Damit die Anwendung erfolgreich installiert und ausgeführt werden kann, müssen Sie zuerst sicherstellen, dass alle für die Anwendung erforderlichen Komponenten bereits auf dem Zielcomputer installiert sind. Beispielsweise hängen die meisten Anwendungen, die mit [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] erstellt werden, von [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] ab. Die richtige Version von Common Language Runtime muss auf dem Zielcomputer verfügbar sein, bevor die Anwendung installiert wird.  
@@ -51,7 +49,7 @@ Damit die Anwendung erfolgreich installiert und ausgeführt werden kann, müssen
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] kann fehlende erforderliche Komponenten bestimmen, und Sie können erforderliche Komponenten mit einem Bootstrapper installieren. Weitere Informationen finden Sie unter [Vorgehensweise: Installieren der erforderlichen Komponenten mit einer ClickOnce-Anwendung](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md).  
   
 > [!NOTE]
->  Um die Werte in den Manifesten zu ändern, die von Tools wie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] und "MageUI.exe" generiert wurden, müssen Sie das Anwendungsmanifest in einem Text-Editor bearbeiten. Signieren Sie anschließend die Anwendungs- und Bereitstellungsmanifeste erneut. Weitere Informationen finden Sie unter [wie: Erneutes Signieren von Anwendungs- und Bereitstellungsmanifeste](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
+>  Um die Werte in den Manifesten zu ändern, die von Tools wie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] und "MageUI.exe" generiert wurden, müssen Sie das Anwendungsmanifest in einem Text-Editor bearbeiten. Signieren Sie anschließend die Anwendungs- und Bereitstellungsmanifeste erneut. Weitere Informationen finden Sie unter [Gewusst wie: Erneutes Signieren von Anwendungs- und Bereitstellungsmanifesten](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
   
  Wenn Sie Visual Studio und ClickOnce für die Bereitstellung der Anwendung verwenden, hängen die standardmäßig ausgewählten Bootstrapperpakete von der .NET Framework-Version in der Projektmappe ab. Jedoch wenn Sie .NET Framework-Zielversion ändern, Sie müssen die Optionen aktualisieren in der **Dialogfeld erforderliche** manuell.  
   
@@ -78,9 +76,9 @@ Damit die Anwendung erfolgreich installiert und ausgeführt werden kann, müssen
 |---------------------------|-----------------|  
 |**-?, -h, -Hilfe**|Zeigt das Dialogfeld der Hilfe an.|  
 |**-Url - Komponenten-URL**|Zeigt die gespeicherte URL und Komponenten-URLs für diese Installation an.|  
-|**-Url =**`location`|Legt die URL fest, bei der "Setup.exe" nach der [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]-Anwendung sucht.|  
-|**Komponenten-URL-=**`location`|Legt die URL fest, bei der "Setup.exe" nach Abhängigkeiten wie [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] sucht.|  
-|**-Homesite =** `true` **&#124;**`false`|Wenn `true`, werden die Abhängigkeiten vom bevorzugten Speicherort auf der Website des Anbieters heruntergeladen. Dies überschreibt die **- Komponenten-URL** Einstellung. Wenn `false`, die Abhängigkeiten von der vom angegebenen URL heruntergeladen **- Komponenten-URL**.|  
+|**-Url =** `location`|Legt die URL fest, bei der "Setup.exe" nach der [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]-Anwendung sucht.|  
+|**Komponenten-URL-=** `location`|Legt die URL fest, bei der "Setup.exe" nach Abhängigkeiten wie [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] sucht.|  
+|**-Homesite =** `true`**&#124;** `false`|Wenn `true`, werden die Abhängigkeiten vom bevorzugten Speicherort auf der Website des Anbieters heruntergeladen. Dies überschreibt die **- Komponenten-URL** Einstellung. Wenn `false`, die Abhängigkeiten von der vom angegebenen URL heruntergeladen **- Komponenten-URL**.|  
   
 ## <a name="operating-system-support"></a>Unterstützte Betriebssysteme  
  Windows Server 2008 Server Core oder Windows Server 2008 R2 Server Core bieten eine wartungsarme Serverumgebung mit beschränktem Funktionsumfang und unterstützen den Visual Studio-Bootstrapper nicht. Die Server Core-Installationsoption unterstützt beispielsweise nur das Profil .NET Framework 3.5 Server Core. Visual Studio-Funktionen, die auf das vollständige .NET Framework angewiesen sind, können daher nicht ausgeführt werden.  

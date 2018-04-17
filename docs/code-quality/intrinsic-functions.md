@@ -1,12 +1,10 @@
 ---
 title: Systeminterne Funktionen | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - _String_length_
 - _Param_
@@ -15,16 +13,16 @@ f1_keywords:
 - _Nullterm_length_
 - _Inexpressible_
 ms.assetid: adf29f8c-89fd-4a5e-9804-35ac83e1c457
-caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: c25c76ba43c983a6029c8d50e183ccf839ef08bd
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 932d034fb1510a1e73d439d62ad3129c78841bed
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="intrinsic-functions"></a>Systeminterne Funktionen
 Ein Ausdruck in SAL kann ein C/C++-Ausdruck sein, vorausgesetzt, dass es sich um einen Ausdruck handelt, die keine nachteiligen Auswirkungen haben – z. B. ++,--, und Funktionsaufrufe, die alle haben Nebenwirkungen in diesem Kontext.  SAL bietet allerdings einige funktionsähnliche-Objekte und einige reservierte Symbole, die in SAL-Ausdrücken verwendet werden können. Diese werden als bezeichnet *systeminterne Funktionen*.  
@@ -36,9 +34,9 @@ Ein Ausdruck in SAL kann ein C/C++-Ausdruck sein, vorausgesetzt, dass es sich um
 |----------------|-----------------|  
 |`_Curr_`|Ein Synonym für das Objekt, das derzeit kommentiert wird.  Wenn die `_At_` Anmerkung wird verwendet, `_Curr_` ist identisch mit dem ersten Parameter `_At_`.  Andernfalls ist er den Parameter oder der gesamte Funktionsrückgabe-Wert, den die Anmerkung lexikalisch zugeordnet ist.|  
 |`_Inexpressible_(expr)`|Eine Situation, in dem die Größe eines Puffers zu komplex ist für darstellen, indem Sie mithilfe eines Ausdrucks Anmerkung, ausdrückt – z. B. wenn er berechnet wird, durch das Scannen von ein Eingabedataset, und klicken Sie dann gezählt ausgewählte Elemente.|  
-|`_Nullterm_length_(param)`|`param`ist die Anzahl der Elemente im Puffer bis zur, aber nicht einschließlich ein null-Abschlusszeichen. Es kann auf alle Puffer des Typs von nicht-aggregierbare, nicht als "void" angewendet werden.|  
+|`_Nullterm_length_(param)`|`param` ist die Anzahl der Elemente im Puffer bis zur, aber nicht einschließlich ein null-Abschlusszeichen. Es kann auf alle Puffer des Typs von nicht-aggregierbare, nicht als "void" angewendet werden.|  
 |`_Old_(expr)`|Bei der Auswertung in Vorbedingung, `_Old_` gibt den Eingabewert `expr`.  Wenn sie in der nachbedingung ausgewertet wird, wird der Wert `expr` wie in Vorbedingung ausgewertet worden wären.|  
-|`_Param_(n)`|Die `n`-ten Parameter für eine Funktion, beginnend mit 1 bis `n`, und `n` eine literale ganzzahlige Konstante ist. Wenn der Parameter benannt wird, ist diese Anmerkung für den Zugriff auf den Parameter anhand des Namens identisch. **Hinweis:** `n` bezieht sich möglicherweise auf die Positionsparameter, die durch eine Ellipse definiert, oder verwendet werden können in Funktionsprototypen, in dem Namen nicht verwendet werden.|  
+|`_Param_(n)`|Die `n`-ten Parameter für eine Funktion, beginnend mit 1 bis `n`, und `n` eine literale ganzzahlige Konstante ist. Wenn der Parameter benannt wird, ist diese Anmerkung für den Zugriff auf den Parameter anhand des Namens identisch. **Hinweis:** `n` bezieht sich möglicherweise auf die Positionsparameter, die durch eine Ellipse definiert, oder verwendet werden können in Funktionsprototypen, in dem Namen nicht verwendet werden.  |  
 |`return`|Die C/C++-reserviertes Schlüsselwort `return` können in einem SAL-Ausdruck verwendet werden, um den Rückgabewert einer Funktion anzugeben.  Der Wert ist nur im Post-Status verfügbar. Es ist ein Syntaxfehler zu dessen Verwendung in den Zustand vor.|  
   
 ## <a name="string-specific"></a>Spezifisches für Zeichenfolgen  
@@ -46,9 +44,9 @@ Ein Ausdruck in SAL kann ein C/C++-Ausdruck sein, vorausgesetzt, dass es sich um
   
 |Anmerkung|Beschreibung|  
 |----------------|-----------------|  
-|`_String_length_(param)`|`param`ist die Anzahl von Elementen in der Zeichenfolge bis zum, aber nicht einschließlich ein null-Abschlusszeichen. Diese Anmerkung ist für Zeichenfolge-Zeichentypen reserviert.|  
-|`strlen(param)`|`param`ist die Anzahl von Elementen in der Zeichenfolge bis zum, aber nicht einschließlich ein null-Abschlusszeichen. Diese Anmerkung ist reserviert für auf Zeichen arrays und der C-Laufzeitfunktion ähnelt [strlen()](/cpp/c-runtime-library/reference/strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l).|  
-|`wcslen(param)`|`param`die Anzahl der Elemente in der Zeichenfolge bis zu (aber nicht einschließlich) ist ein null-Abschlusszeichen. Diese Anmerkung ist reserviert für Verwendung in Breitzeichen arrays und der C-Laufzeitfunktion ähnelt [wcslen()](/cpp/c-runtime-library/reference/strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l).|  
+|`_String_length_(param)`|`param` ist die Anzahl von Elementen in der Zeichenfolge bis zum, aber nicht einschließlich ein null-Abschlusszeichen. Diese Anmerkung ist für Zeichenfolge-Zeichentypen reserviert.|  
+|`strlen(param)`|`param` ist die Anzahl von Elementen in der Zeichenfolge bis zum, aber nicht einschließlich ein null-Abschlusszeichen. Diese Anmerkung ist reserviert für auf Zeichen arrays und der C-Laufzeitfunktion ähnelt [strlen()](/cpp/c-runtime-library/reference/strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l).|  
+|`wcslen(param)`|`param` die Anzahl der Elemente in der Zeichenfolge bis zu (aber nicht einschließlich) ist ein null-Abschlusszeichen. Diese Anmerkung ist reserviert für Verwendung in Breitzeichen arrays und der C-Laufzeitfunktion ähnelt [wcslen()](/cpp/c-runtime-library/reference/strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l).|  
   
 ## <a name="see-also"></a>Siehe auch  
  [Verwenden von SAL-Anmerkungen zum Reduzieren von C/C++-Codefehlern](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   

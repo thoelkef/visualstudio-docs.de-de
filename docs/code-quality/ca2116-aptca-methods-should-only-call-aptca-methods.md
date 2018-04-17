@@ -1,12 +1,10 @@
 ---
 title: 'CA2116: APTCA-Methoden sollten nur APTCA-Methoden aufrufen | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - AptcaMethodsShouldOnlyCallAptcaMethods
 - CA2116
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - AptcaMethodsShouldOnlyCallAptcaMethods
 - CA2116
 ms.assetid: 8b91637e-891f-4dde-857b-bf8012270ec4
-caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: a3a7818c3d758e8e92724af37dfe955f9a466746
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 52e757e2e83974a532a4dc16ce7075105606b1ae
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca2116-aptca-methods-should-only-call-aptca-methods"></a>CA2116: APTCA-Methoden sollten nur APTCA-Methoden aufrufen
 |||  
@@ -41,9 +39,9 @@ ms.lasthandoff: 12/22/2017
   
  Wenn das APTCA-Attribut in einer voll vertrauenswürdigen Assembly vorhanden ist und die Assembly Code ausführt, in einer anderen Assembly, die keine teilweise vertrauenswürdigen Aufrufer zulässt, kann diese Sicherheitslücke ausgenutzt. Wenn zwei Methoden `M1` und `M2` die folgenden Bedingungen erfüllen, können böswillige Aufrufer der Methode verwenden `M1` Linkaufruf implizite volle Vertrauenswürdigkeit umgangen werden, die schützt `M2`:  
   
--   `M1`in einer voll vertrauenswürdigen Assembly, die über das APTCA-Attribut verfügt, ist eine öffentliche Methode deklariert werden.  
+-   `M1` in einer voll vertrauenswürdigen Assembly, die über das APTCA-Attribut verfügt, ist eine öffentliche Methode deklariert werden.  
   
--   `M1`Ruft eine Methode `M2` außerhalb `M1`der Assembly.  
+-   `M1` Ruft eine Methode `M2` außerhalb `M1`der Assembly.  
   
 -   `M2`die Assembly verfügt nicht über das APTCA-Attribut, und aus diesem Grund sollte nicht ausgeführt werden durch oder im Auftrag, die teilweise vertrauenswürdigen Aufrufern.  
   

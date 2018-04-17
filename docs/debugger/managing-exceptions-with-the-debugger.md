@@ -1,13 +1,10 @@
 ---
 title: Verwalten von Ausnahmen mit dem Visual Studio-Debugger | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 04/05/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.exceptions
 - vs.debug.exceptions.find
@@ -33,17 +30,16 @@ helpviewer_keywords:
 - native run-time checks
 - exceptions, debugging
 ms.assetid: 43a77fa8-37d0-4c98-a334-0134dbca4ece
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 978c78ba68460a2f038d85afb92246275acfb9ef
-ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
+ms.openlocfilehash: 063f4581a741325ce34022b731322cf0a4e37e39
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>Verwalten von Ausnahmen mit dem Debugger in Visual Studio
 
@@ -145,7 +141,7 @@ Bei Auswahl eine Ausnahme in der **Ausnahmeeinstellungen** Fenster, wo die Ausna
   
  ![Wiederherstellen der Standardwerte in Ausnahmeeinstellungen](../debugger/media/restoredefaultexceptions.png "RestoreDefaultExceptions")  
   
-##  <a name="BKMK_UserUnhandled"></a>Entsprechende Konfiguration des Debuggers zum Fortfahren bei Ausnahmen vom Benutzercode unbehandelt  
+##  <a name="BKMK_UserUnhandled"></a> Entsprechende Konfiguration des Debuggers zum Fortfahren bei Ausnahmen vom Benutzercode unbehandelt  
  Wenn Sie .NET- oder JavaScript-Code mit [Just My Code](../debugger/just-my-code.md)debuggen, können Sie den Debugger so einstellen, dass er bei Ausnahmen, die an anderer Stelle als im Benutzercode behandelt werden, die Ausführung nicht unterbricht.  
   
 1.  Öffnen Sie im Fenster **Ausnahmeeinstellungen** das Kontextmenü, indem Sie mit der rechten Maustaste auf „Fenster“ klicken und dann **Spalten anzeigen**auswählen. (Wenn Sie **Nur eigenen Code**deaktiviert haben, wird dieser Befehl nicht angezeigt.)  
@@ -156,7 +152,7 @@ Bei Auswahl eine Ausnahme in der **Ausnahmeeinstellungen** Fenster, wo die Ausna
   
  Beispielsweise behandeln ASP.NET-Webanwendungen Ausnahmen dadurch, dass sie diese in einen HTTP 500-Statuscode konvertieren ([Exception Handling in ASP.NET API](http://www.asp.net/web-api/overview/error-handling/exception-handling)), wodurch es möglicherweise unmöglich wird, die Quelle der Ausnahme zu bestimmen. Im folgenden Beispiel wird durch den Benutzercode `String.Format()` aufgerufen, wodurch eine <xref:System.FormatException>ausgelöst wird. Die Ausführung wird folgendermaßen unterbrochen:  
   
- ![Unterbrechung bei User &#45; Unhanlded Ausnahme](../debugger/media/exceptionunhandledbyuser.png "ExceptionUnhandledByUser")  
+ ![unterbricht für Benutzer&#45;Unhanlded Ausnahme](../debugger/media/exceptionunhandledbyuser.png "ExceptionUnhandledByUser")  
   
 ## <a name="add-and-delete-exceptions"></a>Hinzufügen und Löschen von Ausnahmen  
  Sie können Ausnahmen hinzufügen und löschen. Sie können jeden Typ von Ausnahme aus einer beliebigen Kategorie löschen, indem Sie die Ausnahme auswählen und in der Symbolleiste **Ausnahmeeinstellungen** auf die Schaltfläche **Löschen** (das Minuszeichen) klicken, oder indem Sie die mit der rechten Maustaste auf die Ausnahme klicken und im Kontextmenü **Löschen** auswählen. Das Löschen einer Ausnahme hat dieselbe Wirkung wie das Deaktivieren, d. h., der Debugger wird nicht unterbrochen, wenn die Ausnahme ausgelöst wird.  
@@ -190,7 +186,7 @@ public class GenericException<T> : Exception
 Sie können Bedingungen für Ausnahmen in Festlegen der **Ausnahmeeinstellungen** (Dialogfeld). Derzeit unterstützte Bedingungen umfassen die Modul-Namen einschließen oder ausschließen, für die Ausnahme. Wenn Modulnamen als Bedingungen festlegen, Sie können auswählen, für die Ausnahme nur auf bestimmten Codemodule unterbrechen oder können Sie wichtige auf bestimmte Module vermeiden.
 
 > [!NOTE]
-> Hinzufügen von Bedingungen auf eine Ausnahme ist neu in[!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
+> Hinzufügen von Bedingungen auf eine Ausnahme ist neu in [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
 
 Um bedingte Ausnahmen hinzuzufügen, wählen Sie die **Bedingung bearbeiten** Symbol im Dialogfeld "Ausnahmeeinstellungen" oder mit der rechten Maustaste der Ausnahme, und wählen Sie **Bedingungen bearbeiten**.
 

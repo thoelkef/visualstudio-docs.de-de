@@ -1,23 +1,20 @@
 ---
-title: "Verwenden Sie gespeicherte Prozeduren zum Ausführen von Update-, insert und delete in Linq to SQL-O/R-Designer | Microsoft Docs"
-ms.custom: 
+title: Verwenden Sie gespeicherte Prozeduren zum Ausführen von Update-, insert und delete in Linq to SQL-O/R-Designer | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: e88224ab-ff61-4a3a-b6b8-6f3694546cac
-caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: 20669a4ec19865e99a9498e87e896aa645321257
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: 69071f0a49b5e2a8b0261aaf64b97cefaeb9aa9f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>Vorgehensweise: Zuweisen von gespeicherten Prozeduren zum Ausführen von Updates, einfügungen und löschen (O/R-Designer)
 Gespeicherte Prozeduren können dem O/R-Designer hinzugefügt und als typische <xref:System.Data.Linq.DataContext>-Methoden ausgeführt werden. Sie können auch zum Überschreiben der standardmäßigen verwendet [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] Laufzeitverhalten, die Einfüge-, Update- und Löschvorgänge durchführt, wenn Änderungen von Entitätsklassen in einer Datenbank gespeichert sind (z. B. beim Aufrufen der <xref:System.Data.Linq.DataContext.SubmitChanges%2A> Methode).  

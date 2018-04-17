@@ -1,12 +1,10 @@
 ---
 title: 'Vorgehensweise: Abrufen von Abfragezeichenfolgen-Informationen in einer Online-ClickOnce-Anwendung | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,16 +13,16 @@ helpviewer_keywords:
 - ClickOnce deployment, query strings
 - query strings, retrieving information
 ms.assetid: 48ce098a-a075-481b-a5f5-c8ba11f63120
-caps.latest.revision: "19"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: e0fb359dba89a3eef6f257b0cfe560a3f3ab5738
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: ae316f8ed84658c96d78f25f2aaf9c64a800d42c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-retrieve-query-string-information-in-an-online-clickonce-application"></a>Gewusst wie: Abrufen von Abfragezeichenfolgen-Informationen in einer Online-ClickOnce-Anwendung
 Die *Abfragezeichenfolge* ist der Teil einer URL, die mit einem Fragezeichen (?) beginnt und die willkürliche Informationen im Format *name=value*enthält. Angenommen, Sie verfügen über eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendung mit dem Namen `WindowsApp1` , die Sie auf `servername`hosten, und Sie möchten einen Wert für die Variable `username` bei Anwendungsstart übergeben. Die URL könnte folgendermaßen aussehen:  

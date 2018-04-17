@@ -1,13 +1,10 @@
 ---
-title: "Legen Sie eine Überwachung auf Variablen in parallelen Threads | Microsoft Docs"
-ms.custom: 
+title: Legen Sie eine Überwachung auf Variablen in parallelen Threads | Microsoft Docs
+ms.custom: ''
 ms.date: 04/25/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.parallelwatch
 dev_langs:
@@ -18,17 +15,16 @@ dev_langs:
 helpviewer_keywords:
 - debugger, parallel watch window
 ms.assetid: 28004d9b-420c-48f7-b80e-ab1519802558
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 570f77cddede91a81dc15200ebcf02b27f1a4f2f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 7909553271e138ab3bddaa1f4d509a4f4b0b293d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="set-a-watch-on-variables-in-parallel-threads-in-visual-studio"></a>Legen Sie eine Überwachung auf Variablen in parallelen Threads in Visual Studio
 Im parallelen Überwachungsfenster können Sie gleichzeitig die Werte anzeigen, die ein Ausdruck auf mehreren Threads enthält. Jede Zeile stellt einen Thread in einer Anwendung ausgeführten dar. Allerdings wird ein Thread möglicherweise in mehreren Zeilen angezeigt werden. Genauer gesagt stellt jede Zeile einen Funktionsaufruf dar, dessen Funktionssignatur der Funktion auf dem aktuellen Stapelrahmen entspricht. Sie können die Elemente in den Spalten sortieren, neu anordnen, entfernen und gruppieren. Sie können Threads kennzeichnen bzw. die Kennzeichnung aufheben, ihn einfrieren (anhalten) und reaktivieren (fortsetzen). Die folgenden Spalten werden angezeigt, der **parallele Überwachung** Fenster:  

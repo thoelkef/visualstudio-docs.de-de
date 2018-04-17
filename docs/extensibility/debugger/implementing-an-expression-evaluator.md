@@ -1,26 +1,24 @@
 ---
 title: Implementieren eine Ausdrucksauswertung | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - expression evaluators
 - debugging [Debugging SDK], expression evaluators
 ms.assetid: e9ada7be-845e-4baa-bf8f-e4890e7ba490
-caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 9f18e2e131b6baa325bd7e0b65babee4c3679ed8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: ed1df74c187b3f0a93e1a1ec84e8803bc164d223
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="implementing-an-expression-evaluator"></a>Implementieren eine Ausdrucksauswertung
 > [!IMPORTANT]
@@ -50,7 +48,7 @@ ms.lasthandoff: 12/22/2017
   
 -   [IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md)  
   
- Implementiert die EE [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md). `IDebugProperty2`Stellt den Mechanismus für das Ergebnis eine Auswertung von Ausdrücken, z. B. eine lokale Variable, ein primitiver Typ oder ein Objekt, um Visual Studio, klicken Sie dann die entsprechende Informationen angezeigt, die beschreibt die **"lokal"**,  **Überwachungsfenster**, oder **Direktfenster** Fenster.  
+ Implementiert die EE [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md). `IDebugProperty2` Stellt den Mechanismus für das Ergebnis eine Auswertung von Ausdrücken, z. B. eine lokale Variable, ein primitiver Typ oder ein Objekt, um Visual Studio, klicken Sie dann die entsprechende Informationen angezeigt, die beschreibt die **"lokal"**,  **Überwachungsfenster**, oder **Direktfenster** Fenster.  
   
  Die SP wird die EE durch DE angegeben, wenn Informationen aufgefordert wird. Die SP implementiert die Schnittstellen, die Adressen und Felder, z. B. die folgenden Schnittstellen und zugehörige ableitungen beschreiben:  
   

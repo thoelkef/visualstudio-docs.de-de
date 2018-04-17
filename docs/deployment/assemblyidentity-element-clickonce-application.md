@@ -1,13 +1,10 @@
 ---
 title: '&lt;AssemblyIdentity&gt; Element (ClickOnce-Anwendung) | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#assemblyIdentity
 dev_langs:
@@ -17,17 +14,16 @@ dev_langs:
 helpviewer_keywords:
 - <assemblyIdentity> element [ClickOnce application manifest]
 ms.assetid: f48e9531-efac-4d11-8166-f63a5ece1ac5
-caps.latest.revision: 
 author: stevehoag
 ms.author: shoag
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: b731522897512300459a32f8e01c4d54277eaa5b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 86a9aedcd3f21d4dbc1cc4f09106421542b188f8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ltassemblyidentitygt-element-clickonce-application"></a>&lt;AssemblyIdentity&gt; Element (ClickOnce-Anwendung)
 Identifiziert die bereitgestellte Anwendung eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Bereitstellung.  
@@ -51,7 +47,7 @@ Identifiziert die bereitgestellte Anwendung eine [!INCLUDE[ndptecclick](../deplo
 |Attribut|Beschreibung|  
 |---------------|-----------------|  
 |`Name`|Erforderlich. Identifiziert den Namen der Anwendung.<br /><br /> Wenn `Name` Sonderzeichen enthält, z. B. einfache oder doppelte Anführungszeichen, die Anwendung möglicherweise nicht aktiviert.|  
-|`Version`|Erforderlich. Gibt die Versionsnummer der Anwendung im folgenden Format an:`major.minor.build.revision`|  
+|`Version`|Erforderlich. Gibt die Versionsnummer der Anwendung im folgenden Format an: `major.minor.build.revision`|  
 |`publicKeyToken`|Dies ist optional. Gibt eine hexadezimale Zeichenfolge von 16-Zeichen, die die letzten 8 Bytes des darstellt der `SHA-1` der Hashwert des öffentlichen Schlüssels unter dem die Anwendung oder Assembly signiert ist. Die öffentliche Schlüssel, der zum Signieren des Katalogs verwendet wird, muss 2048 Bits betragen.<br /><br /> Obwohl das Signieren einer Assembly wird empfohlen, aber dies ist optional, dieses Attribut ist erforderlich. Wenn eine Assembly nicht signiert ist, sollten Sie Kopieren eines Werts aus einem selbst signierten Assembly oder verwenden Sie den Wert "dummy" Nullen.|  
 |`processorArchitecture`|Erforderlich. Gibt den Prozessor. Gültige Werte sind `msil` für alle Prozessoren `x86` für 32-Bit-Windows `IA64` für 64-Bit-Windows und `Itanium` für Intel 64-Bit-Itanium-Prozessoren.|  
 |`language`|Erforderlich. Identifiziert die zweiteiligen Sprachcodes (z. B. `en-US`) der Assembly. Dieses Element ist der `asmv2` Namespace. Wenn nicht angegeben, wird standardmäßig `neutral`.|  

@@ -1,23 +1,21 @@
 ---
 title: Erstellen einer benutzerdefinierten Startseite | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: d67e0c53-9f5a-45fb-a929-b9d2125c3c82
-caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: f1ce8112adffabcee835d7adf598e73d327ca3b6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 71892262d98b175b111218068a02d03ad3d04caa
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="creating-a-custom-start-page"></a>Erstellen einer benutzerdefinierten Startseite
 Sie können eine benutzerdefinierte Startseite erstellen, anhand der Schritte in diesem Dokument.  
@@ -73,7 +71,7 @@ Sie können eine benutzerdefinierte Startseite erstellen, anhand der Schritte in
   
 1.  Kopieren der XAML-Datei, und alle unterstützenden Textdateien oder Markup, zu der **%USERPROFILE%\My Dateien\Visual Studio 2015\StartPages\\**  Ordner.  
   
-2.  Wenn Ihre Startseite verweist auf keine Steuerelemente oder die Typen in Assemblys, die von Visual Studio nicht installiert sind, kopieren Sie die Assemblys, und fügen Sie diese in *Visual Studio-Installationsordner***\Common7\IDE\ PrivateAssemblies\\**.  
+2.  Wenn Ihre Startseite verweist auf keine Steuerelemente oder die Typen in Assemblys, die von Visual Studio nicht installiert sind, kopieren Sie die Assemblys, und fügen Sie sie in * Visual Studio-Installation Ordner ***\Common7\IDE\PrivateAssemblies\\** .  
   
 3.  Geben Sie an einer Visual Studio-Eingabeaufforderung **Devenv /rootsuffix Exp** eine experimentelle Instanz von Visual Studio zu öffnen.  
   

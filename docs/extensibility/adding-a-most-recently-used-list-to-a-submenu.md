@@ -1,27 +1,25 @@
 ---
-title: "Hinzufügen einer zuletzt verwendeten Liste aus, um ein Untermenü | Microsoft Docs"
-ms.custom: 
+title: Hinzufügen einer zuletzt verwendeten Liste aus, um ein Untermenü | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - MRU lists
 - menus, creating MRU list
 - most recently used
 ms.assetid: 27d4bbcf-99b1-498f-8b66-40002e3db0f8
-caps.latest.revision: "46"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 087faaae07c4c240b53830ee238cee4f9065d21f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 67eb08feff5d8edd1251c8fcff09d8f148b51b96
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="adding-a-most-recently-used-list-to-a-submenu"></a>Liste aus, um ein Untermenü verwendet eine vor kurzem hinzufügen
 Diese exemplarische Vorgehensweise basiert auf den Demos in [ein Menü ein Untermenü hinzugefügt](../extensibility/adding-a-submenu-to-a-menu.md), und zeigt, wie eine dynamische Liste ein Untermenü hinzugefügt. Die dynamische Liste bildet die Grundlage für die Erstellung einer Liste der zuletzt verwendeten (MRU).  

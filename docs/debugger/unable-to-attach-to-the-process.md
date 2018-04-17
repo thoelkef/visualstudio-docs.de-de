@@ -1,12 +1,9 @@
 ---
-title: "Kann nicht an den Prozess angefügt werden soll. | Microsoft Docs"
-ms.custom: 
+title: Kann nicht an den Prozess angefügt werden soll. | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - vs.debug.remote.unable2attach
@@ -17,14 +14,14 @@ dev_langs:
 - C++
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 15acb250c561cb1c7d414784f355a9239ead53ef
-ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
+ms.openlocfilehash: a7929be0825ec16ba7e3b6d594dfd96ee6a4dfb6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="unable-to-attach-to-the-process"></a>Anfügen an den Prozess nicht möglich
 Anfügen an den Prozess nicht möglich. Der Debuggerkomponente auf dem Server wurde beim Herstellen einer Verbindung zu diesem Computer der Zugriff verweigert.  

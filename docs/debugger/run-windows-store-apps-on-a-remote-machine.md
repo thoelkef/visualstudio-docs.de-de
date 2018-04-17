@@ -1,28 +1,26 @@
 ---
-title: "Uwp-apps auf einem Remotecomputer ausführen | Microsoft Docs"
-ms.custom: 
+title: Uwp-apps auf einem Remotecomputer ausführen | Microsoft Docs
+ms.custom: ''
 ms.date: 01/05/2018
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
 - FSharp
 - C++
 ms.assetid: 0f6814d6-cd0d-49f3-b501-dea8c094b8ef
-caps.latest.revision: "43"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: uwp
-ms.openlocfilehash: f9d538cbc650de2d704c885a8eff6a897c9ef68e
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+manager: douge
+ms.workload:
+- uwp
+ms.openlocfilehash: 6ba0edc3c94ae3586615086d668df2c3bf9eaddf
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="run-uwp-apps-on-a-remote-machine-in-visual-studio"></a>Führen Sie die uwp-apps auf einem Remotecomputer in Visual Studio
   
@@ -51,11 +49,11 @@ Standardmäßig **Universal (unverschlüsselte Protocol)** wird unter Windows 10
 > [!WARNING]
 >  Es gibt keine Netzwerksicherheit, wenn Sie den Authentifizierungsmodus, um festlegen **Universal (unverschlüsselte Protocol)** oder **keine**. Wählen Sie diese Modi, nur dann, wenn Sie sicher sind, dass das Netzwerk nicht von bösartigem oder feindlichem Datenverkehr gefährdet ist.  
   
-##  <a name="BKMK_DirectConnect"></a>Gewusst wie: Herstellen einer Verbindung direkt mithilfe eines USB-Kabels 
+##  <a name="BKMK_DirectConnect"></a> Gewusst wie: Herstellen einer Verbindung direkt mithilfe eines USB-Kabels 
 
 Unter Windows 10 können Sie mit einem über USB angeschlossenen Gerät bereitstellen, indem auswählen **Gerät** anstelle von **Remotecomputer** als das Bereitstellungsziel (hierzu können Sie der **Standard** Symbolleiste oder auf der Eigenschaftenseite debugging).
 
-##  <a name="BKMK_ConnectVS"></a>Konfigurieren Sie das Visual Studio-Projekt für das Remotedebuggen  
+##  <a name="BKMK_ConnectVS"></a> Konfigurieren Sie das Visual Studio-Projekt für das Remotedebuggen  
  In den Eigenschaften des Projekts geben Sie das Remotegerät an, mit dem eine Verbindung hergestellt werden soll. Das Verfahren unterscheidet sich je nach Programmiersprache. Sie können den Netzwerknamen des Remotegeräts eingeben, oder wählen Sie sie in der **Remoteverbindung** (Dialogfeld).  
   
  ![Wählen Sie Remote Debugger-Verbindung (Dialogfeld)](../debugger/media/vsrun_selectremotedebuggerdlg.png "VSRUN_SelectRemoteDebuggerDlg")  
@@ -65,7 +63,7 @@ Unter Windows 10 können Sie mit einem über USB angeschlossenen Gerät bereitst
 > [!TIP]
 >  Sollten Sie Probleme beim Herstellen einer Verbindung mit einem Remotegerät haben, versuchen Sie, die IP-Adresse des Geräts einzugeben. Um die IP-Adresse eines Geräts zu bestimmen, öffnen Sie ein Befehlsfenster, und geben Sie dann **ipconfig**ein. Die IP-Adresse wird als **IPv4 Address**aufgeführt.  
   
-###  <a name="BKMK_Choosing_the_remote_device_for_C__and_Visual_Basic_projects"></a>Auswählen des Remotegeräts für c# und Visual Basic-Projekte  
+###  <a name="BKMK_Choosing_the_remote_device_for_C__and_Visual_Basic_projects"></a> Auswählen des Remotegeräts für c# und Visual Basic-Projekte  
   
 1.  Wählen Sie im Projektmappen-Explorer den Projektnamen aus und gehen Sie anschließend im Kontextmenü auf **Eigenschaften** .  
   
@@ -77,7 +75,7 @@ Unter Windows 10 können Sie mit einem über USB angeschlossenen Gerät bereitst
 
     ![Verwaltete Projekteigenschaften für Remotedebugging](../debugger/media/vsrun_managed_projprop_remote.png "VSRUN_Managed_ProjProp_Remote")  
   
-###  <a name="BKMK_Choosing_the_remote_device_for_JavaScript_and_C___projects"></a>Auswählen des Remotegeräts für JavaScript- und C++-Projekte  
+###  <a name="BKMK_Choosing_the_remote_device_for_JavaScript_and_C___projects"></a> Auswählen des Remotegeräts für JavaScript- und C++-Projekte  
   
 1.  Wählen Sie im Projektmappen-Explorer den Projektnamen aus und gehen Sie anschließend im Kontextmenü auf **Eigenschaften** .  
   
@@ -87,19 +85,19 @@ Unter Windows 10 können Sie mit einem über USB angeschlossenen Gerät bereitst
   
 4.  Geben Sie im Feld **Computername** den Netzwerknamen des Remotegeräts ein, oder wählen Sie im Feld den Pfeil nach unten aus, um im Dialogfeld **Remotedebuggerverbindung auswählen** das Gerät auszuwählen.  
 
-    ![C# 43; &#43; Projekteigenschaften für das Remotedebuggen](../debugger/media/vsrun_cpp_projprop_remote.png "VSRUN_CPP_ProjProp_Remote")
+    ![C&#43; &#43; Projekteigenschaften für das Remotedebuggen](../debugger/media/vsrun_cpp_projprop_remote.png "VSRUN_CPP_ProjProp_Remote")
   
-## <a name="BKMK_download"></a>Herunterladen und installieren Sie die Remoteserver-Verwaltungstools (Ersteller vor Update)
+## <a name="BKMK_download"></a> Herunterladen und installieren Sie die Remoteserver-Verwaltungstools (Ersteller vor Update)
 
 Wenn Sie ein Pre-Ersteller-Update-Versionen von Windows 10 verwenden, befolgen Sie dann diese Anweisungen. Andernfalls können Sie diesen Abschnitt überspringen.
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
   
-### <a name="BKMK_setup"></a>Einrichten des Remotedebuggers
+### <a name="BKMK_setup"></a> Einrichten des Remotedebuggers
 
 [!INCLUDE [remote-debugger-configuration](../debugger/includes/remote-debugger-configuration.md)]  
   
-##  <a name="BKMK_RunRemoteDebug"></a>Starten einer Remotedebugsitzung  
+##  <a name="BKMK_RunRemoteDebug"></a> Starten einer Remotedebugsitzung  
  Sie starten, beenden und navigieren eine Remotedebugsitzung genauso wie eine lokale Sitzung. Pre-Ersteller-Update-Versionen von Windows 10 Stellen Sie sicher, dass der Remotedebugmonitor auf dem Remotegerät ausgeführt wird.  
   
  Wählen Sie anschließend im Menü **Debuggen** (Tastatur: F5) die Option **Debuggen starten** aus. Das Projekt wird neu kompiliert, anschließend für das Remotegerät bereitgestellt und darauf gestartet . An Haltepunkten unterbricht der Debugger die Ausführung, und Sie können Ihren Code schrittweise ausführen, ihn überspringen oder verlassen. Wählen Sie **Debuggen beenden** aus, um Ihre Debugsitzung zu beenden, und schließen Sie die Remoteapp.

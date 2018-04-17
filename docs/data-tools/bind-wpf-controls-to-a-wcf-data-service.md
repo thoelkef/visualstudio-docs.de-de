@@ -1,11 +1,8 @@
 ---
 title: Binden von WPF-Steuerelementen an einen WCF-Datendienst | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -14,17 +11,17 @@ helpviewer_keywords:
 - WPF data binding [Visual Studio], walkthroughs
 - WPF Designer, data binding
 ms.assetid: 8823537c-82f0-41f7-bf30-705f0e5e59fd
-caps.latest.revision: "40"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: ec13e17aac37a24e92732b9b052147c7d9faa916
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: a10ce63d969f67c12197f13f0ab285bc05e258cb
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Binden von WPF-Steuerelementen an einen WCF-Datendienst
 In dieser exemplarischen Vorgehensweise erstellen Sie eine WPF-Anwendung, die datengebundene Steuerelemente enthält. Die Steuerelemente sind an Kundendatensätze gebunden, die in einem [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] gekapselt sind. Sie fügen außerdem die Schaltflächen hinzu, mit denen Kunden Datensätze anzeigen und ändern können.  
@@ -214,7 +211,7 @@ Erstellen Sie Steuerelemente, die Kundendatensätze, indem Sie ziehen anzeigen d
   
     -   **RevisionNumber**  
   
-    -   **ROWGUID**  
+    -   **rowguid**  
   
     Durch diese Aktion wird Visual Studio daran gehindert, im nächsten Schritt datengebundene Steuerelemente für diese Knoten zu erstellen. In dieser exemplarischen Vorgehensweise wird davon ausgegangen Sie, dass der Endbenutzer nicht, diese Daten anzuzeigen.  
   
@@ -247,11 +244,11 @@ Verwenden Sie das Dienstobjekt für den Proxy, um Umsatzdaten aus dem Dienst zu 
      [!code-vb[Data_WPFWCF#2](../data-tools/codesnippet/VisualBasic/bind-wpf-controls-to-a-wcf-data-service_2.vb)]  
   
 ## <a name="navigate-sales-records"></a>Navigieren Sie Verkaufsdatensätze  
-Fügen Sie Code, der Benutzern ermöglicht, den Bildlauf Verkaufsdatensätze mithilfe der  **\<**  und  **>**  Schaltflächen.  
+Fügen Sie Code, der Benutzern ermöglicht, den Bildlauf Verkaufsdatensätze mithilfe der **\<** und **>** Schaltflächen.  
   
 #### <a name="to-enable-users-to-navigate-sales-records"></a>Benutzern das Navigieren durch Sales Records ermöglichen  
   
-1.  Doppelklicken Sie im Designer auf die  **<**  Schaltfläche auf der Fensteroberfläche.  
+1.  Doppelklicken Sie im Designer auf die **<** Schaltfläche auf der Fensteroberfläche.  
   
      Visual Studio öffnet die CodeBehind-Datei und erstellt ein neues `backButton_Click` -Ereignishandler für das <xref:System.Windows.Controls.Primitives.ButtonBase.Click> Ereignis.  
   
@@ -260,7 +257,7 @@ Fügen Sie Code, der Benutzern ermöglicht, den Bildlauf Verkaufsdatensätze mit
      [!code-csharp[Data_WPFWCF#3](../data-tools/codesnippet/CSharp/bind-wpf-controls-to-a-wcf-data-service_3.cs)]
      [!code-vb[Data_WPFWCF#3](../data-tools/codesnippet/VisualBasic/bind-wpf-controls-to-a-wcf-data-service_3.vb)]  
   
-3.  Kehren Sie zum Designer zurück, und doppelklicken Sie auf die  **>**  Schaltfläche.  
+3.  Kehren Sie zum Designer zurück, und doppelklicken Sie auf die **>** Schaltfläche.  
   
      Visual Studio öffnet die CodeBehind-Datei und erstellt ein neues `nextButton_Click` -Ereignishandler für das <xref:System.Windows.Controls.Primitives.ButtonBase.Click> Ereignis.  
   
@@ -302,7 +299,7 @@ Erstellen Sie die Anwendung und führen Sie sie aus; prüfen Sie, ob Sie die Kun
   
     -   Die Textfelder zeigen unterschiedliche Datenfelder aus dem ersten Verkaufsdatensatz, die die Auftrags-ID hat **71774**.  
   
-    -   Klicken Sie auf die  **>**  oder  **<**  Schaltflächen zum Navigieren durch andere Verkaufsdatensätze.  
+    -   Klicken Sie auf die **>** oder **<** Schaltflächen zum Navigieren durch andere Verkaufsdatensätze.  
   
 5.  Geben Sie in einem Verkaufsdatensätze, etwas Text in die **Kommentar** Feld, und klicken Sie dann auf **Änderungen speichern**.  
   

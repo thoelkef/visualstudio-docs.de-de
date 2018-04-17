@@ -1,11 +1,8 @@
 ---
 title: Direkten Zugriff auf die Datenbank mit einem TableAdapter | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -22,17 +19,17 @@ helpviewer_keywords:
 - saving data
 - TableAdapters
 ms.assetid: 012c5924-91f7-4790-b2a6-f51402b7014b
-caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: 5fc7167e75aea963d43a482416b7592dcda55ee8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: c1238fb665740df03af63292f1feacd1ec92f0db
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="directly-access-the-database-with-a-tableadapter"></a>Direkten Zugriff auf die Datenbank mit einem TableAdapter
 Zusätzlich zu den `InsertCommand`, `UpdateCommand`, und `DeleteCommand`, TableAdapter-Erstellung Methoden, die direkt gegen die Datenbank ausgeführt werden können. Diese Methoden (`TableAdapter.Insert`, `TableAdapter.Update`, und `TableAdapter.Delete`) aufgerufen werden, um Daten direkt in der Datenbank zu bearbeiten.  

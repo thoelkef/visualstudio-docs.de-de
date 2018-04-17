@@ -1,12 +1,10 @@
 ---
-title: "Anfügen an laufende Prozesse mit dem Debugger in Visual Studio | Microsoft Docs"
+title: Anfügen an laufende Prozesse mit dem Debugger in Visual Studio | Microsoft Docs
 ms.custom: H1Hack27Feb2017
 ms.date: 05/18/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.processes.attach
 - vs.debug.process
@@ -27,16 +25,16 @@ helpviewer_keywords:
 - debugging [Visual Studio], attaching to processes
 - debugger, processes
 ms.assetid: 27900e58-090c-4211-a309-b3e1496d5824
-caps.latest.revision: "53"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 28126f9c832f55d63bd1b477599cf83ac8a57d59
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 3b726cd5d29093d88e27e7de6bd5a22fcb491d20
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Anfügen an laufende Prozesse mit dem Visual Studio Debugger
 Sie können den Visual Studio-Debugger an einen laufenden Prozess auf einem lokalen oder Rmotecomputer anfügen. Nachdem der Prozess ausgeführt wird, klicken Sie auf **Debuggen > an den Prozess anhängen** (oder drücken Sie **STRG + ALT + P**) zum Öffnen der **an den Prozess anhängen** (Dialogfeld).
@@ -46,7 +44,7 @@ Sie können diese Funktion verwenden, zum Debuggen von apps, die auf einem Compu
 > [!TIP]
 > Nicht sicher, ob Sie verwenden müssen **an den Prozess anhängen** für Ihr Szenario Debuggen? Finden Sie unter [allgemeine Debugszenarien](#BKMK_Scenarios). Wenn zum Debuggen von ASP.NET-Anwendungen, die für IIS bereitgestellt wurden, finden Sie unter [Remote Debuggen von ASP.NET auf einem Remotecomputer mit IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md).
 
-##  <a name="BKMK_Attach_to_a_running_process"></a>Fügen Sie an einen laufenden Prozess auf dem lokalen Computer an  
+##  <a name="BKMK_Attach_to_a_running_process"></a> Fügen Sie an einen laufenden Prozess auf dem lokalen Computer an  
  Um an einen Prozess anfügen, müssen Sie den Namen des Prozesses kennen (finden Sie unter [allgemeine Debugszenarien](#BKMK_Scenarios) für einige allgemeine Prozessnamen).
   
 1.  Wählen Sie in Visual Studio **Debuggen > an den Prozess anhängen** (oder drücken Sie **STRG + ALT + P**).
@@ -71,7 +69,7 @@ Sie können diese Funktion verwenden, zum Debuggen von apps, die auf einem Compu
   
 4.  Klicken Sie auf **Anfügen**aus.
 
-##  <a name="BKMK_Attach_to_a_process_on_a_remote_computer"></a>Fügen Sie an einen Prozess auf einem Remotecomputer an  
+##  <a name="BKMK_Attach_to_a_process_on_a_remote_computer"></a> Fügen Sie an einen Prozess auf einem Remotecomputer an  
  Um an einen Prozess anfügen, müssen Sie den Namen des Prozesses kennen (finden Sie unter [allgemeine Debugszenarien](#BKMK_Scenarios) für einige allgemeine Prozessnamen). Vollständige Anleitungen für ASP.NET-apps, die auf IIS bereitgestellt wurden, finden Sie unter [Remote Debuggen von ASP.NET auf einem Remotecomputer mit IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md). Bei anderen Anwendungen finden Sie den Namen des Prozesses möglicherweise im Task-Manager.
   
  Wenn Sie das Dialogfeld **An den Prozess anhängen** verwenden, können Sie einen anderen Computer auswählen, der für das Remotedebuggen eingerichtet wurde. Weitere Informationen finden Sie unter [Remotedebuggen](../debugger/remote-debugging.md). Nach dem Auswählen eines Remotecomputers können Sie über eine Liste, in der alle verfügbaren laufenden Prozesse des Remotecomputers enthalten sind, den Debugger an einen oder mehrere Prozesse anhängen.
@@ -112,7 +110,7 @@ Sie können diese Funktion verwenden, zum Debuggen von apps, die auf einem Compu
      
 5.  Klicken Sie auf **Anfügen**aus.
 
-## <a name="BKMK_reattach"></a>Schließen Sie den Prozess wieder
+## <a name="BKMK_reattach"></a> Schließen Sie den Prozess wieder
 
 Sie können schnell Anfügen an Prozesse, die Sie zuvor durch Auswahl angefügt wurden **Debuggen > an Prozess anfügen...** (**Umschalt + Alt + P**). Wenn Sie diesen Befehl auswählen, der Debugger versucht sofort, bis zum letzten Prozesse fügen Sie angefügt, mit der **an den Prozess anhängen** (Dialogfeld).
 
@@ -129,7 +127,7 @@ Wird versucht, eine Verbindung mit einem Prozess herzustellen, der zu einem nich
   
 In einigen Fällen werden beim Debuggen in einer Remotedesktopsitzung (Terminaldienste) in der Liste **Verfügbare Prozesse** nicht alle verfügbaren Prozesse angezeigt. Wenn Sie Visual Studio als Benutzer ausführen, der nur über ein eingeschränktes Benutzerkonto verfügt, enthält die Liste **Verfügbare Prozesse** keine Prozesse, die in Sitzung 0 laufen. Sie wird für Dienste und andere Serverprozesse verwendet, wie z.B. „w3wp.exe“. Sie können dieses Problem beheben, indem Sie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] unter einem Administratorkonto oder [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] an der Serverkonsole und nicht in einer Terminaldienstesitzung ausführen. Wenn keine dieser beiden Problemlösungen möglich ist, können Sie als dritte Möglichkeit den Prozess anfügen, indem Sie `vsjitdebugger.exe -p` *ProzessID* in der Windows-Befehlszeile ausführen. Die Prozess-ID kann mit tlist.exe ermittelt werden. Um die Datei "tlist.exe" abzurufen, laden Sie die Debugtools für Windows von der Seite  [WDK- und WinDbg-Downloads](http://go.microsoft.com/fwlink/?LinkId=168279)herunter, und installieren Sie diese.
 
-## <a name="BKMK_Scenarios"></a>Allgemeine Debugszenarien
+## <a name="BKMK_Scenarios"></a> Allgemeine Debugszenarien
 
 Ermitteln Sie, ob Sie verwenden müssen **an den Prozess anhängen** und welcher Prozess anfügen, einige allgemeine Debugszenarien werden hier angezeigt (die Liste ist nicht vollständig). Weitere Anweisungen verfügbar sind, bieten wir Links.
 
@@ -160,7 +158,7 @@ Für Szenarien mit remote Debuggen benötigen Sie den Quellcode (oder eine Kopie
 
 Lokalen Debuggen Szenarien, in denen Sie beim Debuggen in Visual Studio keinen Zugriff auf die Quelle, wenn die richtige Symbol-Dateien mit der app vorhanden sind (Dies erfordert standardmäßig einen Debugbuild). Weitere Informationen finden Sie unter [geben Symbol- und Quelldateien](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
   
-##  <a name="BKMK_Troubleshoot_attach_errors"></a>Problembehandlung bei Fehler beim Anfügen  
+##  <a name="BKMK_Troubleshoot_attach_errors"></a> Problembehandlung bei Fehler beim Anfügen  
  Wenn der Debugger an einen laufenden Prozess angehängt wird, kann dieser Prozess mehrere Codetypen enthalten. Die Codetypen, an die der Debugger angefügt werden kann, werden im Dialogfeld **Codetyp auswählen** angezeigt und ausgewählt.  
   
  Manchmal kann der Debugger erfolgreich an den einen Codetyp, nicht aber an den anderen Codetyp angehängt werden. Das kann bei dem Versuch vorkommen, den Debugger an einen Prozess anzufügen, der auf einem Remotecomputer ausgeführt wird. Auf dem Remotecomputer sind möglicherweise nur Remotedebugkomponenten für bestimmte Codetypen installiert. Das Gleiche kann passieren, wenn Sie versuchen, den Debugger an mehr als einen Prozess zum direkten Datenbankdebuggen anzufügen. SQL-Debuggen unterstützt lediglich das Anfügen an einen einzelnen Prozess.  

@@ -1,12 +1,10 @@
 ---
-title: "Hinzufügen einer Anmerkung zu Funktionsparametern und Rückgabewerten | Microsoft Docs"
-ms.custom: 
+title: Hinzufügen einer Anmerkung zu Funktionsparametern und Rückgabewerten | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - _Outptr_opt_result_bytebuffer_to_
 - _Inout_updates_all_opt_
@@ -125,16 +123,16 @@ f1_keywords:
 - _Result_nullonfailure_
 - _Ret_null_
 ms.assetid: 82826a3d-0c81-421c-8ffe-4072555dca3a
-caps.latest.revision: "15"
 author: mikeblome
 ms.author: mblome
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: ac25f8bbda4431850f613f2b41b1d9ed4908c118
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: daeed5dd92116af4346cd8aa2086e6a3dd3af216
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>Hinzufügen einer Anmerkung zu Funktionsparametern und Rückgabewerten
 Dieser Artikel beschreibt typische Verwendungen von Anmerkungen für einfache Funktionsparameter – skalare und Zeigern auf Strukturen und Klassen – und die meisten Arten von Puffern.  Dieser Artikel zeigt auch die gängigsten Verwendungsmuster für Anmerkungen. Zusätzliche Anmerkungen, die mit Funktionen verknüpft sind, finden Sie unter [Hinzufügen einer Anmerkung zum Funktionsverhalten](../code-quality/annotating-function-behavior.md)  
@@ -188,7 +186,7 @@ Dieser Artikel beschreibt typische Verwendungen von Anmerkungen für einfache Fu
   
      `typedef _Null_terminated_ wchar_t *PWSTR; void MyStringCopy(_Out_writes_ (size) PWSTR p1,    _In_ size_t size,    _In_ PWSTR p2);`  
   
-     In diesem Beispiel stellt der Aufrufer einen Puffer bereit, mit denen `size` Elemente für `p1`.  `MyStringCopy`stellt einige dieser Elemente ungültig. Vor allem die `_Null_terminated_` Anmerkung zum `PWSTR` bedeutet, dass `p1` nach der Status ist Null-terminiert.  Auf diese Weise die Anzahl von gültigen Elementen ist immer noch klar definierten, eine bestimmtes Elementanzahl ist jedoch nicht erforderlich.  
+     In diesem Beispiel stellt der Aufrufer einen Puffer bereit, mit denen `size` Elemente für `p1`.  `MyStringCopy` stellt einige dieser Elemente ungültig. Vor allem die `_Null_terminated_` Anmerkung zum `PWSTR` bedeutet, dass `p1` nach der Status ist Null-terminiert.  Auf diese Weise die Anzahl von gültigen Elementen ist immer noch klar definierten, eine bestimmtes Elementanzahl ist jedoch nicht erforderlich.  
   
      Die `_bytes_` Variant-Wert gibt die Größe in Bytes anstelle von Elementen. Verwenden Sie diese Option aus, nur, wenn die Größe als Elemente ausgedrückt werden kann.  Beispielsweise `char` Zeichenfolgen verwenden würden die `_bytes_` Variante nur, wenn eine ähnliche Funktion verwendet `wchar_t` würde.  
   

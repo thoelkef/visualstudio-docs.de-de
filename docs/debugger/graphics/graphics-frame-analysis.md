@@ -1,25 +1,22 @@
 ---
 title: Grafiken Frame-Analyse | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 02/09/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics.frameanalysis
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fd3af414b5d59ec49ed6e042d6a656d322fe8a38
-ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
+ms.openlocfilehash: 95544a030870feaace585d62a8027c17dbc56c64
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="graphics-frame-analysis"></a>Grafikframe-Analyse
 Verwenden Sie die Grafikframe-Analyse in der Visual Studio-Grafikanalyse zum Analysieren und Optimieren der Renderingleistung ihres Direct3D-Spiels oder Ihrer -App.  
@@ -75,7 +72,7 @@ Verwenden Sie die Grafikframe-Analyse in der Visual Studio-Grafikanalyse zum Ana
 #### <a name="timeline"></a>Zeitachse  
  Die Zeitachse zeigt eine relative Übersicht über die Zeichnen-Befehle. Da längere Balken längeren Zeichnungszeiten entsprechen, können Sie die Zeitachse verwenden, um schnell die teuersten Zeichnen-Befehle im betreffenden Frame zu finden. Wenn der erfasste Frame eine sehr große Anzahl von Zeichnen-Befehlen enthält, werden mehrere Zeichnen-Befehle in einem Balken kombiniert, dessen Länge der Summe dieser Zeichnen-Befehle entspricht.  
   
- ![Die Zeitachse zeigt zeichnen & #45, rufen die Kosten. ] (media/pix_frame_analysis_timeline.png "Pix_frame_analysis_timeline")  
+ ![Die Zeitachse zeigt zeichnen&#45;Kosten aufrufen. ] (media/pix_frame_analysis_timeline.png "Pix_frame_analysis_timeline")  
   
  Sie können mit dem Zeiger auf einen Balken zeigen, um zu sehen, welchem Zeichnen-Befehlsereignis der Balken entspricht. Die Auswahl des Balkens führt zu einer Synchronisation der Ereignisliste mit dem entsprechenden Ereignis.  
   
@@ -137,7 +134,7 @@ Verwenden Sie die Grafikframe-Analyse in der Visual Studio-Grafikanalyse zum Ana
   
  Die Anzahl der Wiederholungen der Frame-Analyse ist auf 10 beschränkt. Wenn Ihre Plattform ein aggressives Leistungsmanagement oder Takt-Gating aufweist, kann die Frame-Analyse fehlschlagen und einen Fehler melden, falls der Wiederholungsgrenzwert überschritten wird. Sie können dieses Problem eventuell abschwächen, indem Sie das Leistungsmanagement und die Taktgeschwindigkeit auf weniger aggressive Werte zurücksetzen, wenn die Plattform dies erlaubt.  
   
-##  <a name="HardwareSupport"></a>Hardware-Unterstützung  
+##  <a name="HardwareSupport"></a> Hardware-Unterstützung  
   
 ### <a name="timestamps-and-occlusion-queries"></a>Zeitstempel und Okklusionsabfragen  
  Zeitstempel werden auf allen Plattformen unterstützt, die die Frame-Analyse unterstützen. Tiefenokklusionsabfragen – die für den Zähler "Okkludierte Pixel" erforderlich sind – werden auf Plattformen unterstützt, die die Funktionsebene 9.2 oder höher unterstützen.  
@@ -175,15 +172,15 @@ Verwenden Sie die Grafikframe-Analyse in der Visual Studio-Grafikanalyse zum Ana
 ### <a name="warp"></a>WARP  
  Die Frame-Analyse ist zur Profilierung und Verbesserung der Renderingleistung auf echter Hardware gedacht. Die Frame-Analyse auf WARP-Geräten ausgeführt wird nicht verhindert, aber es ist nicht in der Regel eine lohnende Unternehmung, da die Ausführung von WARP auf einer High-End-CPU langsamer als die leistungsschwächsten modernen GPUs ist und WARP-Leistung erheblich variieren kann, abhängig von der bestimmten CPU dieser ausgeführt wird.  
   
-##  <a name="Variants"></a>Varianten  
+##  <a name="Variants"></a> Varianten  
  Jede Änderung, die die Frame-Analyse an der Art durchführt ein Frame während der Wiedergabe gerendert wird, wird als bezeichnet eine *Variante*. Die Varianten, die die Frame-Analyse untersucht, entsprechen allgemeinen, relativ einfachen Änderungen, die Sie vornehmen können, um die Renderingleistung oder die visuelle Qualität Ihrer App zu verbessern – z. B. Reduzierung der Größe von Texturen, Verwendung von Texturkomprimierungen oder Aktivierung verschiedener Arten von Anti-Aliasing. Varianten überschreiben den normalen Rendering-Kontext und die Parameter Ihrer App. Hier finden Sie eine Zusammenfassung:  
   
 |Variante|Beschreibung|  
 |-------------|-----------------|  
 |**1 x 1 Viewport-Größe**|Reduziert die Viewport-Dimensionen auf allen Renderzielen auf 1x1 Pixel.<br /><br /> Weitere Informationen finden Sie unter [1 x 1-Viewportgrößenvariante](1x1-viewport-size-variant.md)|  
-|**0x MSAA**|Deaktiviert das Multi-Sample Anti-Aliasing (MSAA) auf allen Renderzielen.<br /><br /> Weitere Informationen finden Sie unter [0 X / 2 X / 4 X MSAA Varianten](0x-2x-4x-msaa-variants.md)|  
+|**0 X MSAA**|Deaktiviert das Multi-Sample Anti-Aliasing (MSAA) auf allen Renderzielen.<br /><br /> Weitere Informationen finden Sie unter [0 X / 2 X / 4 X MSAA Varianten](0x-2x-4x-msaa-variants.md)|  
 |**2x MSAA**|Aktiviert das 2x Multi-Sample Anti-Aliasing (MSAA) auf allen Renderzielen.<br /><br /> Weitere Informationen finden Sie unter [0 X / 2 X / 4 X MSAA Varianten](0x-2x-4x-msaa-variants.md)|  
-|**4x MSAA**|Aktiviert das 4x Multi-Sample Anti-Aliasing (MSAA) auf allen Renderzielen.<br /><br /> Weitere Informationen finden Sie unter [0 X / 2 X / 4 X MSAA Varianten](0x-2x-4x-msaa-variants.md)|  
+|**4 X MSAA**|Aktiviert das 4x Multi-Sample Anti-Aliasing (MSAA) auf allen Renderzielen.<br /><br /> Weitere Informationen finden Sie unter [0 X / 2 X / 4 X MSAA Varianten](0x-2x-4x-msaa-variants.md)|  
 |**Punkttexturfilterung**|Setzt den Filtermodus für alle passenden Textur-Samples auf `DXD11_FILTER_MIN_MAG_MIP_POINT` (Punkttexturfilterung).<br /><br /> Weitere Informationen finden Sie unter [Punkt, bilineare, trilineare und anisotrope Filtervarianten Textur](point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  
 |**Bilineare Texturfilterung**|Setzt den Filtermodus für alle passenden Textur-Samples auf `DXD11_FILTER_MIN_MAG_LINEAR_MIP_POINT` (bilineare Texturfilterung).<br /><br /> Weitere Informationen finden Sie unter [Punkt, bilineare, trilineare und anisotrope Filtervarianten Textur](point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  
 |**Trilineare Texturfilterung**|Setzt den Filtermodus für alle passenden Textur-Samplings auf `DXD11_FILTER_MIN_MAG_MIP_LINEAR` (trilineare Texturfilterung).<br /><br /> Weitere Informationen finden Sie unter [Punkt, bilineare, trilineare und anisotrope Filtervarianten Textur](point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  

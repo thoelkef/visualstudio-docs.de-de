@@ -2,11 +2,8 @@
 title: Wählen Sie im Dialogfeld Breakpoints | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - vs.debug.breakpt.choose
@@ -22,17 +19,16 @@ helpviewer_keywords:
 - breakpoints, Choose Breakpoints dialog box
 - Choose Breakpoints dialog box
 ms.assetid: 35cbd591-4c4f-4035-8731-8162ba1c8318
-caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2503109d7c044dbd44b1b400b748ef5ba2dcee41
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+ms.openlocfilehash: 71f0c0b7fef9c5d7fb85290eb166bd00fe7b3c4c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="choose-breakpoints-dialog-box"></a>Dialogfeld "Haltepunkte wählen"
 Die **Haltepunkte wählen** Dialogfeld wird geöffnet, wenn Sie versuchen, einen Haltepunkt von mehrdeutigen Eingaben im Festlegen der **Neuer Haltepunkt** (Dialogfeld). Ein typisches Beispiel für eine mehrdeutige Eingabe ist ein überladener Funktionsname.  

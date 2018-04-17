@@ -1,23 +1,21 @@
 ---
 title: 'Exemplarische Vorgehensweise: Fehlende Objekte durch Vertex-Shading | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 ms.assetid: e42b54a0-8092-455c-945b-9ecafb129d93
-caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: f374bbbdf30a80bdea70b789da5d5febbeee7a82
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 226f6177b98aae8159de10f752cde37632dca901
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-missing-objects-due-to-vertex-shading"></a>Exemplarische Vorgehensweise: Fehlende Objekte durch Vertexschattierung
 Diese exemplarische Vorgehensweise veranschaulicht, wie die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] -Grafikdiagnosetools zum Untersuchen eines Objekts verwendet werden, das aufgrund eines Fehlers fehlt, der in der Vertexshader-Stufe auftritt.  
@@ -124,7 +122,7 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie die [!INCLUDE[vsprvs](..
   
  Um das Problem zu beheben, verschieben Sie die Codezeile, in der der Wert von `m_marbleConstantBufferData.projection` festgelegt wird, hinter die Zeile, in der der Wert der lokalen Variablen `projection`initialisiert wird.  
   
- ![Der korrigierte C# 43; &#43; Quellcode](media/gfx_diag_demo_missing_object_shader_step_10.png "gfx_diag_demo_missing_object_shader_step_10")  
+ ![Der korrigierte C&#43; &#43; Quellcode](media/gfx_diag_demo_missing_object_shader_step_10.png "gfx_diag_demo_missing_object_shader_step_10")  
   
  Nachdem Sie den Code korrigiert haben, können Sie die App erneut erstellen und ausführen, um nun festzustellen, dass das Renderproblem behoben wurde:  
   

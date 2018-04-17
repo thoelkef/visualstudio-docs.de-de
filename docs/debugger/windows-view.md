@@ -1,36 +1,32 @@
 ---
 title: Fensteransicht | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.externaltools.spyplus.windowsview
 helpviewer_keywords:
 - Windows view
 ms.assetid: 154786ce-c803-4bfb-8198-f7962a900363
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 94aae2c271b0b9030d63597fe8100e8c8f2bccbe
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: bea2801baab38f84b8af8f2154f2be4f05dc205f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="windows-view"></a>Fensteransicht
 Wenn Sie erstmalig Spy++ öffnen, zeigt Fensteransicht eine Struktur mit allen Windows- und Steuerelemente im System an. Der Fenstername Handle- und Klasse werden angezeigt. Das aktuelle Desktopfenster wird am oberen Rand der Struktur. Alle anderen Fenster sind untergeordnete Elemente des Desktops und anhand der Hierarchie Standardfenster aufgeführt sind. Nebengeordnete Fenster werden in erweiterbaren Listen unter ihre übergeordneten Elemente eingezogen angezeigt.  
   
  Die folgende Abbildung zeigt eine typische Spy++-Fensteransicht mit den obersten Knoten erweitert.  
   
- ![Spy++ &#43; &#43; Fensteransicht](../debugger/media/spy--_windowsview.png "Spy++ ++ _WindowsView")  
+ ![Spy++&#43; &#43; Fensteransicht](../debugger/media/spy--_windowsview.png "Spy++ ++ _WindowsView")  
 Spy++-Fensteransicht  
   
  Das aktuelle Desktopfenster wird am oberen Rand der Struktur. Alle anderen Fenster sind untergeordnete Elemente des Desktops, und werden anhand der Hierarchie Standardfenster mit nebengeordnete Fenster nach Z-Reihenfolge geordnet aufgeführt. Sie können erweitern oder reduzieren Sie einen beliebigen übergeordneten Knoten der Struktur, indem Sie auf das + oder - Symbol neben dem Knoten.  

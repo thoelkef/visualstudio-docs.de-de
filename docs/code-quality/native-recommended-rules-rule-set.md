@@ -1,23 +1,20 @@
 ---
-title: "Regelsatz für systemeigene empfohlene Regeln | Microsoft Docs"
-ms.custom: 
+title: Regelsatz für systemeigene empfohlene Regeln | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dd1a4319fb657580cc37544508659d0c9aeeb06a
-ms.sourcegitcommit: bfa26fd7426af0d065cb2eef3d6827b5d6f7986c
+ms.openlocfilehash: 0c8be89a5b3f83ddd59d50b246452af1f0c3bd41
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/20/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="native-recommended-rules-rule-set"></a>Regelsatz für systemeigene empfohlene Regeln
 
@@ -83,7 +80,7 @@ Die systemeigene empfohlene Regeln Zielen auf die kritischsten und häufigsten P
 |[C6291](../code-quality/c6291.md)|Logischer NOT-Operator hat Vorrang gegenüber bitweisem OR-Operator|
 |[C6292](../code-quality/c6292.md)|Schleife zählt vom Maximum|
 |[C6293](../code-quality/c6293.md)|Schleife wird nach unten aus mindestens gezählt.|
-|[C6294](../code-quality/c6294.md)|Loop Body Never Executed|
+|[C6294](../code-quality/c6294.md)|Die Schleife nie ausgeführt.|
 |[C6295](../code-quality/c6295.md)|Endlosschleife|
 |[C6296](../code-quality/c6296.md)|Schleife nur einmal ausgeführt.|
 |[C6297](../code-quality/c6297.md)|Ergebnis der Verschiebung in größeren umgewandelt|

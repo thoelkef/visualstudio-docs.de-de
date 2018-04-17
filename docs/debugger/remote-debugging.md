@@ -2,11 +2,8 @@
 title: Remotedebuggen in Visual Studio | Microsoft Docs
 ms.custom: remotedebugging
 ms.date: 08/14/2017
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: ''
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.remote.overview
@@ -19,17 +16,16 @@ dev_langs:
 helpviewer_keywords:
 - remote debugging, setup
 ms.assetid: 5a94ad64-100d-43ca-9779-16cb5af86f97
-caps.latest.revision: 65
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ddba7e3d75f796ed0667dc39efc08555034e2a59
-ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
+ms.openlocfilehash: 77726cb404cf764fa41d62dc6b4794cdb2f52d95
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="remote-debugging"></a>Remote Debugging
 Sie können eine Visual Studio-Anwendung debuggen, die auf einem anderen Computer bereitgestellt wurde. Dazu verwenden Sie den Visual Studio Remote Debugger.
@@ -39,12 +35,12 @@ Ausführliche Anweisungen zum Remotedebuggen finden Sie unter folgenden Themen.
 |Szenario|Link|
 |-|-|-|
 |Azure App Service|[Snapshot-Debugger](../debugger/debug-live-azure-applications.md) oder [Remote Debuggen von ASP.NET in Azure](../debugger/remote-debugging-azure.md)|
-|Azure VM|[Remotedebuggen von ASP.NET in Azure](../debugger/remote-debugging-azure.md)|
+|Azure-VM|[Remotedebuggen von ASP.NET in Azure](../debugger/remote-debugging-azure.md)|
 |Azure Service Fabric|[Debuggen einer Azure Service Fabric-Anwendung](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application)|
 |ASP.NET|[Remote debug ASP.NET Core](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md) oder [Remote Debuggen von ASP.NET](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
 |C#- oder Visual Basic|[Remotedebuggen eines C#- oder Visual Basic-Projekts](../debugger/remote-debugging-csharp.md)|
 |C++|[Remotedebuggen eines C++-Projekts](../debugger/remote-debugging-cpp.md)|
-|Universal Windows Apps (UWP)|[Führen Sie die uwp-apps auf einem Remotecomputer](../debugger/run-windows-store-apps-on-a-remote-machine.md) oder [Debuggen eine installierte app-Pakets](../debugger/debug-installed-app-package.md)|
+|Universelle Windows-Apps (UWP)|[Führen Sie die uwp-apps auf einem Remotecomputer](../debugger/run-windows-store-apps-on-a-remote-machine.md) oder [Debuggen eine installierte app-Pakets](../debugger/debug-installed-app-package.md)|
 
 Wenn Sie nur herunterladen und Installieren des Remotedebuggers möchten und keine zusätzlichen Anweisungen für Ihr Szenario erforderlich, führen Sie die Schritte in diesem Artikel.
   
@@ -56,7 +52,7 @@ Wenn Sie nur herunterladen und Installieren des Remotedebuggers möchten und kei
 
 Sie können den Remotedebugger finden (**msvsmon.exe**) auf einem Computer mit Visual Studio Community, Professional oder Enterprise bereits installiert. Die einfachste Möglichkeit zum Einrichten des Remotedebuggens werden für einige Szenarien der Remotedebugger (msvsmon.exe) aus einer Dateifreigabe ausgeführt. Nutzungseinschränkungen, finden Sie in den Remotedebugger-Hilfeseite (**Hilfe > Verwendung** in den Remotedebugger).
 
-1. Suchen **msvsmon.exe** in das Verzeichnis, die Ihrer Version von Visual Studio entspricht. For Visual Studio Enterprise 2017:
+1. Suchen **msvsmon.exe** in das Verzeichnis, die Ihrer Version von Visual Studio entspricht. Für Visual Studio Enterprise 2017:
 
       **Programm Dateien (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Remote Debugger\x86\msvsmon.exe**
       

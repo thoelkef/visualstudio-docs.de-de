@@ -1,13 +1,10 @@
 ---
 title: '&lt;Zeichenfolgen&gt; Element (Bootstrapper) | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - MSBuild.GenerateBootstrapper.NoStringsForCulture
 - MSBuild.GenerateBootstrapper.ProductCultureNotFound
@@ -19,17 +16,16 @@ dev_langs:
 helpviewer_keywords:
 - <Strings> element [bootstrapper]
 ms.assetid: d5ea3613-5fc9-4a11-bef3-46a01178bf60
-caps.latest.revision: 
 author: stevehoag
 ms.author: shoag
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: bcd950dab8fe00ecdaec83c64a819b58193b1272
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 4d6a7d9ec23995fa2ea7114afa9b785c4fd4e6e3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ltstringsgt-element-bootstrapper"></a>&lt;Zeichenfolgen&gt; Element (Bootstrapper)
 Definiert die lokalisierte Zeichenfolgen für Produktnamen, Paketnamen und Installationsfehlermeldungen.  
@@ -51,7 +47,7 @@ Definiert die lokalisierte Zeichenfolgen für Produktnamen, Paketnamen und Insta
 ## <a name="string"></a>Zeichenfolge  
  Die `String` Element ist ein untergeordnetes Element von der `Strings` Element. Ein `Strings` Element möglicherweise eine oder mehrere `String` Elemente.  
   
- `String`hat das folgende Attribut.  
+ `String` hat das folgende Attribut.  
   
 |Attribut|Beschreibung|  
 |---------------|-----------------|  

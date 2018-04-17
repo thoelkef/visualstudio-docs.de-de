@@ -1,23 +1,21 @@
 ---
-title: "Regelsatz für systemeigene Mindestregeln | Microsoft Docs"
-ms.custom: 
+title: Regelsatz für systemeigene Mindestregeln | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 ms.assetid: 2d898bc4-fba5-472e-8f09-b0c6b511c5a3
-caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 6db3e112f45200221eff80c033daed4a04c152d4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 33617535363aaff853779e2dfe3ad011db027bba
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="native-minimum-rules-rule-set"></a>Regelsatz für systemeigene Mindestregeln
 Die Native Microsoft-Mindestregeln konzentrieren sich auf die kritischsten Probleme in nativen Code ab, einschließlich potenzieller Sicherheitslücken und Anwendungsabstürzen. Der Regelsatz sollte in allen benutzerdefinierten Regelsätzen enthalten sein, die Sie für Ihre eigenen Projekte erstellen.  

@@ -1,12 +1,10 @@
 ---
-title: "Projekteinstellungen für C#-Debugkonfigurationen | Microsoft Docs"
-ms.custom: 
+title: Projekteinstellungen für C#-Debugkonfigurationen | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -20,16 +18,16 @@ helpviewer_keywords:
 - project configurations, debug
 - debugging [C#], debugger settings
 ms.assetid: e30ca810-66e9-4d6e-9cf6-9f285cd0b100
-caps.latest.revision: "22"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: 054a015c5fcd6a70696ed6945faa5cbd01547168
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+manager: douge
+ms.workload:
+- dotnet
+ms.openlocfilehash: 7f51964a303641e8e430417d63d0241603d7f360
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="project-settings-for--c-debug-configurations"></a>Projekteinstellungen für C#-Debugkonfigurationen
 Sie können die projekteinstellungen für eine C#-Debugkonfiguration im Ändern der **Eigenschaftenseiten** Fenster entsprechend der Anleitung unter [Debug- und Releasekonfigurationen](../debugger/how-to-set-debug-and-release-configurations.md). Die folgenden Tabellen zeigen, wo die debuggerspezifischen Einstellungen im Suchen der **Eigenschaftenseiten** Fenster.  
@@ -37,7 +35,7 @@ Sie können die projekteinstellungen für eine C#-Debugkonfiguration im Ändern 
 > [!WARNING]
 >  Dieses Thema gilt nicht für UWP-Apps. Finden Sie unter [Starten einer Debugsitzung (VB, c#, C++ und XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)  
   
-##  <a name="BKMK_Debug_tab"></a>Registerkarte "Debuggen"  
+##  <a name="BKMK_Debug_tab"></a> Registerkarte "Debuggen"  
   
 |**Einstellung**|**Beschreibung**|  
 |-----------------|---------------------|  
@@ -49,7 +47,7 @@ Sie können die projekteinstellungen für eine C#-Debugkonfiguration im Ändern 
 |**Nicht verwaltetes Codedebuggen aktivieren**|Bietet die Möglichkeit, Aufrufe von systemeigenem (nicht verwaltetem) Win32-Code von einer verwalteten Anwendung aus zu debuggen.|  
 |**SQL Server-Debuggen aktivieren**|Ermöglicht das Debuggen von SQL Server-Datenbankobjekten.|  
   
-##  <a name="BKMK_Build_tab"></a>Registerkarte "erstellen"  
+##  <a name="BKMK_Build_tab"></a> Registerkarte "erstellen"  
   
 |Einstellung|Beschreibung|  
 |-------------|-----------------|  

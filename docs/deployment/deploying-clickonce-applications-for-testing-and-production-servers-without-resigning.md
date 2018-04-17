@@ -1,12 +1,10 @@
 ---
-title: "Bereitstellen von ClickOnce-Anwendungen für Tests und Produktionsserver ohne erneutes Signieren | Microsoft Docs"
-ms.custom: 
+title: Bereitstellen von ClickOnce-Anwendungen für Tests und Produktionsserver ohne erneutes Signieren | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,16 +17,16 @@ helpviewer_keywords:
 - deploymentProvider tag
 - manifests [ClickOnce]
 ms.assetid: 1218a98d-1ad5-4eef-95dd-0e0b3c44168c
-caps.latest.revision: "10"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: ec7265f91d5c202d5885b7f1994aa6f037d6d2ab
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 54474f0388ecbdbc9b1b1cb207544fd7091c1e96
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="deploying-clickonce-applications-for-testing-and-production-servers-without-resigning"></a>Bereitstellen von ClickOnce-Anwendungen für Tests und Produktionsserver ohne erneutes Signieren
 In diesem Thema wird erläutert, ein neues Feature von ClickOnce in .NET Framework Version 3.5, die die Bereitstellung von ClickOnce-Anwendungen über mehrere Netzwerkadressen ermöglicht, ohne erneutes Signieren, oder ändern die ClickOnce-Manifeste eingeführt wird.  
@@ -54,13 +52,13 @@ In diesem Thema wird erläutert, ein neues Feature von ClickOnce in .NET Framewo
   
  Wichtig zu beachten ist, die Anwendungen, die Ausschließen einer `deploymentProvider` ihre Installationsspeicherort kann nicht während eines Updates, geändert werden, bis sie ein Update ausgeliefert, die enthält die `deploymentProvider` tag erneut aus.  
   
- Hier sind zwei Beispiele zu diesem Zeitpunkt zu verdeutlichen. Im ersten Beispiel, die Sie Veröffentlichen einer ClickOnce-Anwendung, die keine `deploymentProvider` Tag, und Sie bitten Sie Benutzer zur Installation von http://www.adatum.com/MyApplication/. Wenn Sie sich, dass Sie das nächste Update der Anwendung von http://subdomain.adatum.com/MyApplication/ aus veröffentlichen möchten entscheiden, müssen Sie keine Möglichkeit, dies im Bereitstellungsmanifest, das http://www.adatum.com/MyApplication/ befindet. Sie können eine der zwei Aufgaben ausführen:  
+ Hier sind zwei Beispiele zu diesem Zeitpunkt zu verdeutlichen. Im ersten Beispiel, die Sie Veröffentlichen einer ClickOnce-Anwendung, die keine `deploymentProvider` Tag, und Sie bitten Sie Benutzer zur Installation von http://www.adatum.com/MyApplication/. Wenn Sie möchten, müssen Sie das nächste Update der Anwendung veröffentlichen möchten http://subdomain.adatum.com/MyApplication/, Sie haben keine Möglichkeit, dies im Bereitstellungsmanifest, das befindet http://www.adatum.com/MyApplication/. Sie können eine der zwei Aufgaben ausführen:  
   
 -   Bitten Sie Benutzer, die frühere Version deinstallieren und installieren Sie die neue Version von den neuen Speicherort.  
   
--   Ein Update auf, die enthält http://www.adatum.com/MyApplication/ umfassen eine `deploymentProvider` auf http://www.adatum.com/MyApplication/ verweist. Klicken Sie dann ein anderes Update später mit Version `deploymentProvider` auf http://subdomain.adatum.com/MyApplication/ verweist.  
+-   Schließen Sie ein Update http://www.adatum.com/MyApplication/ , umfasst eine `deploymentProvider` auf http://www.adatum.com/MyApplication/. Klicken Sie dann ein anderes Update später mit Version `deploymentProvider` auf http://subdomain.adatum.com/MyApplication/.  
   
- Im zweiten Beispiel veröffentlichen Sie eine ClickOnce-Anwendung, der angibt, `deploymentProvider`, und Sie dann entscheiden, um ihn zu entfernen. Nachdem die neue Version ohne `deploymentProvider` heruntergeladen wurde an Clients nicht werden umleiten den Pfad für Updates verwendet, bis Sie eine Version der Anwendung freigeben, die hat `deploymentProvider` wiederhergestellt. Wie bei im ersten Beispiel `deploymentProvider` muss zunächst auf den aktuellen Speicherort für Update, nicht auf den neuen Pfad verweisen. In diesem Fall, wenn Sie versuchen, fügen Sie eine `deploymentProvider` , die auf http://subdomain.adatum.com/MyApplication/ verweist, und klicken Sie dann das nächste Update schlägt fehl.  
+ Im zweiten Beispiel veröffentlichen Sie eine ClickOnce-Anwendung, der angibt, `deploymentProvider`, und Sie dann entscheiden, um ihn zu entfernen. Nachdem die neue Version ohne `deploymentProvider` heruntergeladen wurde an Clients nicht werden umleiten den Pfad für Updates verwendet, bis Sie eine Version der Anwendung freigeben, die hat `deploymentProvider` wiederhergestellt. Wie bei im ersten Beispiel `deploymentProvider` muss zunächst auf den aktuellen Speicherort für Update, nicht auf den neuen Pfad verweisen. In diesem Fall, wenn Sie versuchen, fügen Sie eine `deploymentProvider` bezieht, die sich auf http://subdomain.adatum.com/MyApplication/, zur nächste Aktualisierung nicht ausgeführt werden.  
   
 ## <a name="creating-a-deployment"></a>Erstellen einer Bereitstellung  
  Schritt-für-Schritt-Anleitungen zum Erstellen von Bereitstellungen, die von verschiedenen Netzwerkorten bereitgestellt werden können, finden Sie unter [Exemplarische Vorgehensweise: Manuelles Bereitstellen einer ClickOnce-Anwendung, ist nicht erforderlich Re-Signing und behält Branding-Informationen](../deployment/walkthrough-manually-deploying-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information.md).  

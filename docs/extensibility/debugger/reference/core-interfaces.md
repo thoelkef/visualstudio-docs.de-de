@@ -2,26 +2,22 @@
 title: Haupt-Schnittstellen | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], core interfaces
 ms.assetid: 666b9116-8550-4bdd-bc15-55fc57de87df
-caps.latest.revision: 24
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 54ecbe034f4fa7054be2725205a013e5899849e7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 45521c0db16ac892d2e0e43e34c4b030075f7be2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="core-interfaces"></a>Core-Schnittstellen
 Die folgenden Schnittstellen sind die Core-Schnittstellen für den Debugger zu erweitern, indem Sie mit der [!INCLUDE[vsipsdk](../../../extensibility/includes/vsipsdk_md.md)].  
@@ -71,7 +67,7 @@ Die folgenden Schnittstellen sind die Core-Schnittstellen für den Debugger zu e
   
 -   Visual Studio (VS)  
   
-##  <a name="Breakpoints"></a>Haltepunkte  
+##  <a name="Breakpoints"></a> Haltepunkte  
  Diese Schnittstellen beziehen sich auf die Implementierung und die Überwachung von Haltepunkten.  
   
 |Interface|Implementiert durch|Beschreibung|  
@@ -92,7 +88,7 @@ Die folgenden Schnittstellen sind die Core-Schnittstellen für den Debugger zu e
 |[IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md)|DE|Eine Enumeration darstellt für eine Menge von gebundenen Haltepunkten.|  
 |[IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md)|DE|Eine Enumeration darstellt, über einen Satz von Breakpoints, die nicht auf einen Speicherbereich gebunden werden kann.|  
   
-##  <a name="Contexts"></a>Kontexte  
+##  <a name="Contexts"></a> Kontexte  
  Diese Schnittstellen darstellen, verschiedene Arten von Kontexten innerhalb des Programms, der debuggt wird.  
   
 |Interface|Implementiert durch|Beschreibung|  
@@ -106,7 +102,7 @@ Die folgenden Schnittstellen sind die Core-Schnittstellen für den Debugger zu e
 |[IDebugStackFrame3](../../../extensibility/debugger/reference/idebugstackframe3.md)|DE|Stellt einen Stack-Frame-Kontext an einem Haltepunkt oder Ausnahme.|  
 |[IEnumDebugCodeContexts2](../../../extensibility/debugger/reference/ienumdebugcodecontexts2.md)|DE|Eine Enumeration darstellt für eine Menge von Code Kontexten.|  
   
-##  <a name="CoreServer"></a>Core-Server  
+##  <a name="CoreServer"></a> Core-Server  
  Diese Schnittstellen darstellen, den Computer, auf dem eine Anwendung gedebuggt wird. Diese werden durch implementiert [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] jedoch in vom Debugmodule aufgerufen werden kann.  
   
 |Interface|Implementiert durch|Beschreibung|  
@@ -114,7 +110,7 @@ Die folgenden Schnittstellen sind die Core-Schnittstellen für den Debugger zu e
 |[IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)|VS|Bietet Zugriff auf die Ports und Port Lieferanten sowie Informationen über den Computer.|  
 |[IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)|VS|Stellt eine [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md) unterstützt, die das Remotedebuggen.|  
   
-##  <a name="DebugEngines"></a>Debuggen von Modulen  
+##  <a name="DebugEngines"></a> Debuggen von Modulen  
  Diese Schnittstellen darstellen Debugmodule und deren zugeordneten Ereignissen an.  
   
 |Interface|Implementiert durch|Beschreibung|  
@@ -126,7 +122,7 @@ Die folgenden Schnittstellen sind die Core-Schnittstellen für den Debugger zu e
 |[IDebugProgramEngines2](../../../extensibility/debugger/reference/idebugprogramengines2.md)|DEUTSCHLAND, PS|Stellt einen Programm-Knoten, der mehrere Debugmodule behandelt.|  
 |[IDebugQueryEngine2](../../../extensibility/debugger/reference/idebugqueryengine2.md)|DE|Bietet eine Möglichkeit für die SDM eine Schnittstelle für das Debugmodul aus einem Thread, Programm oder Stapelrahmen abzurufen.|  
   
-##  <a name="Documents"></a>Dokumente  
+##  <a name="Documents"></a> Dokumente  
  Diese Schnittstellen stellen Dokumente (Quelldateien) und ihre zugehörigen Elemente dar.  
   
 |Interface|Implementiert durch|Beschreibung|  
@@ -186,7 +182,7 @@ Die folgenden Schnittstellen sind die Core-Schnittstellen für den Debugger zu e
 |[IDebugThreadDestroyEvent2](../../../extensibility/debugger/reference/idebugthreaddestroyevent2.md)|DE|Durch die DE gesendet, wenn ein Thread zerstört wurde.|  
 |[IDebugThreadNameChangedEvent2](../../../extensibility/debugger/reference/idebugthreadnamechangedevent2.md)|DE|Durch die DE gesendet, wenn ein Thread seinen Namen geändert wurde.|  
   
-##  <a name="Expressions"></a>Ausdrücke  
+##  <a name="Expressions"></a> Ausdrücke  
  Diese Schnittstellen darstellen, Ausdrücke, die in einem bestimmten Kontext ausgewertet werden.  
   
 |Interface|Implementiert durch|Beschreibung|  
@@ -195,7 +191,7 @@ Die folgenden Schnittstellen sind die Core-Schnittstellen für den Debugger zu e
 |[IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md)|DE|Stellt einen Kontext, in dem ein Ausdruck ausgewertet wird. Abgerufenes der [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) Schnittstelle.|  
 |[IDebugExpressionEvaluationCompleteEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md)|DE|Von der DE gesendet, wenn eine asynchroner ausdrucksauswertung abgeschlossen ist.|  
   
-##  <a name="Memory"></a>Arbeitsspeicher  
+##  <a name="Memory"></a> Arbeitsspeicher  
  Diese Schnittstellen stellen Sequenzen von Bytes im Speicher dar.  
   
 |Interface|Implementiert durch|Beschreibung|  
@@ -214,7 +210,7 @@ Die folgenden Schnittstellen sind die Core-Schnittstellen für den Debugger zu e
 |[IDebugSourceServerModule](../../../extensibility/debugger/reference/idebugsourceservermodule.md)|DE|Stellt die Quellinformationen für Server, die in einer PDB-Datei enthalten ist.|  
 |[IEnumDebugModules2](../../../extensibility/debugger/reference/ienumdebugmodules2.md)|DE|Eine Enumeration darstellt, für eine Menge von Modulen, die bekannt sind ein [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md).|  
   
-##  <a name="Ports"></a>Ports  
+##  <a name="Ports"></a> Ports  
  Diese Schnittstellen darstellen, Ports und Port Lieferanten.  
   
 |Interface|Implementiert durch|Beschreibung|  
@@ -234,7 +230,7 @@ Die folgenden Schnittstellen sind die Core-Schnittstellen für den Debugger zu e
 |[IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md)|VS, PS|Stellt eine Enumeration für eine Menge von Ports dar.|  
 |[IEnumDebugPortSuppliers2](../../../extensibility/debugger/reference/ienumdebugportsuppliers2.md)|VS|Eine Enumeration darstellt, über einen Satz von Port Lieferanten.|  
   
-##  <a name="Processes"></a>Prozesse  
+##  <a name="Processes"></a> Prozesse  
  Diese Schnittstellen darstellen, automatisiert, eine einzelne ausführbare Datei, die eine oder mehrere Programme enthält.  
   
 |Interface|Implementiert durch|Beschreibung|  
@@ -246,7 +242,7 @@ Die folgenden Schnittstellen sind die Core-Schnittstellen für den Debugger zu e
 |[IDebugProcessEx2](../../../extensibility/debugger/reference/idebugprocessex2.md)|PS|Entspricht einem Prozess, der zum Nachverfolgen muss, welche Sitzung zugeordnet ist.|  
 |[IEnumDebugProcesses2](../../../extensibility/debugger/reference/ienumdebugprocesses2.md)|PS|Stellt eine Enumeration von einer Reihe von Prozessen auf einem Port an.|  
   
-##  <a name="Programs"></a>Programme  
+##  <a name="Programs"></a> Programme  
  Diese Schnittstellen darstellen, Programme, die logischen Einheiten der Ausführung, die nicht unbedingt um eine physische ausführbare Datei oder ein Modul entsprechen.  
   
 |Interface|Implementiert durch|Beschreibung|  
@@ -279,7 +275,7 @@ Die folgenden Schnittstellen sind die Core-Schnittstellen für den Debugger zu e
 |[IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md)|DE|Eine Enumeration darstellt, über einen Satz von [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) Strukturen die Variablen, Register, Parameter und Ausdrücke zu beschreiben.|  
 |[IEnumDebugReferenceInfo2](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2.md)|DE|Eine Enumeration darstellt, über einen Satz von [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) Strukturen.|  
   
-##  <a name="StackFrames"></a>Stapelrahmen  
+##  <a name="StackFrames"></a> Stapelrahmen  
  Diese Schnittstellen darstellen, einen Stapelrahmen entspricht, die einen Kontext in der ein Breakpoint oder Ausnahme aufgetreten ist.  
   
 |Interface|Implementiert durch|Beschreibung|  
@@ -300,7 +296,7 @@ Die folgenden Schnittstellen sind die Core-Schnittstellen für den Debugger zu e
 |[IDebugThreadNameChangedEvent2](../../../extensibility/debugger/reference/idebugthreadnamechangedevent2.md)|DE|Durch die DE gesendet, wenn ein Thread seinen Namen geändert wurde.|  
 |[IEnumDebugThreads2](../../../extensibility/debugger/reference/ienumdebugthreads2.md)|DE|Eine Enumeration darstellt für eine Menge von Threads.|  
   
-##  <a name="TypeVisualizers"></a>Typ-Schnellansichten  
+##  <a name="TypeVisualizers"></a> Typ-Schnellansichten  
  Diese Schnittstellen bieten Unterstützung für die Typ-Schnellansichten. Diese Schnittstellen werden in der Regel von der ausdrucksauswertung implementiert.  
   
 |Interface|Implementiert durch|Beschreibung|  

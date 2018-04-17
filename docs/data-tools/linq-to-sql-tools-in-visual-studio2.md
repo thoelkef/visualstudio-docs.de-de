@@ -1,23 +1,20 @@
 ---
-title: "Übersicht über Visual Studio-O/R-Designer | Microsoft Docs"
-ms.custom: 
+title: Übersicht über Visual Studio-O/R-Designer | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 45e477c0-5c6b-41f9-b2d0-2808fb4f6537
-caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: a160cce25814cd2e110f8896ed6752a18b5dd0da
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: 09fe5a8cbec1ba1ab5a45abda4c88864e25a1751
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="linq-to-sql-tools-in-visual-studio"></a>LINQ to SQL-Tools in Visual Studio
 LINQ to SQL ist die erste objektrelationales Mapping-Technologie von Microsoft veröffentlicht wurden. Es funktioniert gut in grundlegende Szenarien und weiterhin in Visual Studio unterstützt werden, aber es ist nicht mehr in der aktiven Entwicklung. Verwenden Sie LINQ to SQL, wenn eine ältere Anwendung zu verwalten, die er bereits verwendet wird, oder in einfachen Anwendungen, die mithilfe von SQL Server und erfordern keine Zuordnung mit mehreren Tabellen. Neue Anwendungen sollten im Allgemeinen das Entity Framework verwenden, wenn eine Ebene objektrelationalen Mapper erforderlich ist.  

@@ -1,12 +1,10 @@
 ---
-title: "Vorgehensweise: Überprüfen von Anwendungsupdates programmgesteuert mithilfe der API für der ClickOnce-Bereitstellung | Microsoft Docs"
-ms.custom: 
+title: 'Vorgehensweise: Überprüfen von Anwendungsupdates programmgesteuert mithilfe der API für der ClickOnce-Bereitstellung | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,16 +13,16 @@ helpviewer_keywords:
 - ClickOnce deployment, updates
 - application updates
 ms.assetid: 1a886310-67c8-44e5-a382-c2f0454f887d
-caps.latest.revision: "9"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 02e6a4c0b69bf9e9d6170175b4324ccb226854e2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 2812a12541d71d29beff453c66344f85be904f5a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api"></a>Gewusst wie: Programmgesteuertes Suchen nach Anwendungsupdates mit der API für die ClickOnce-Bereitstellung
 ClickOnce bietet zwei Möglichkeiten, eine Anwendung zu aktualisieren, nachdem er bereitgestellt wird. Bei der ersten Methode können Sie die ClickOnce-Bereitstellung automatisch zur Überprüfung auf Updates in bestimmten Intervallen konfigurieren. In der zweiten Methode schreiben Sie Code, der verwendet die <xref:System.Deployment.Application.ApplicationDeployment> klassenbasierter nach Updates suchen, auf ein Ereignis, z. B. eine Anforderung des Benutzers.  
@@ -50,7 +48,7 @@ ClickOnce bietet zwei Möglichkeiten, eine Anwendung zu aktualisieren, nachdem e
   
 ### <a name="using-mageexe-to-deploy-an-application-that-checks-for-updates-programmatically"></a>Verwenden Mage.exe zum Bereitstellen einer Anwendung, die programmgesteuert nach Updates sucht  
   
--   Befolgen Sie die Anweisungen für die Bereitstellung Ihrer Anwendung verwenden Mage.exe, wie in beschrieben [Exemplarische Vorgehensweise: Manuelles Bereitstellen einer ClickOnce-Anwendung](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Stellen Sie beim Mage.exe, um das Bereitstellungsmanifest zu generieren aufrufen, verwenden Sie die Befehlszeilenoption `providerUrl`, und die URL an, in dem ClickOnce nach Updates suchen soll. Wenn ein die Anwendung von Update [http://www.adatum.com/MyApp](http://www.adatum.com/MyApp), Aufruf Bereitstellungsmanifests generieren könnte beispielsweise folgendermaßen aussehen:  
+-   Befolgen Sie die Anweisungen für die Bereitstellung Ihrer Anwendung verwenden Mage.exe, wie in beschrieben [Exemplarische Vorgehensweise: Manuelles Bereitstellen einer ClickOnce-Anwendung](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Stellen Sie beim Mage.exe, um das Bereitstellungsmanifest zu generieren aufrufen, verwenden Sie die Befehlszeilenoption `providerUrl`, und die URL an, in dem ClickOnce nach Updates suchen soll. Wenn ein die Anwendung von Update [ http://www.adatum.com/MyApp ](http://www.adatum.com/MyApp), Aufruf Bereitstellungsmanifests generieren könnte beispielsweise folgendermaßen aussehen:  
   
     ```  
     mage -New Deployment -ToFile WindowsFormsApp1.application -Name "My App 1.0" -Version 1.0.0.0 -AppManifest 1.0.0.0\MyApp.manifest -providerUrl http://www.adatum.com/MyApp/MyApp.application  

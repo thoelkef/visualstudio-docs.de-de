@@ -1,12 +1,10 @@
 ---
-title: "Starten eine Debugsitzung für eine uwp-app in Visual Studio | Microsoft Docs"
-ms.custom: 
+title: Starten eine Debugsitzung für eine uwp-app in Visual Studio | Microsoft Docs
+ms.custom: ''
 ms.date: 01/04/2018
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - VC.Project.IVCAppHostRemoteDebugPageObject.MachineName
 - VC.Project.IVCAppHostRemoteDebugPageObject.BreakpointBehavior
@@ -34,16 +32,16 @@ dev_langs:
 - VB
 - FSharp
 - C++
-caps.latest.revision: "20"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: uwp
-ms.openlocfilehash: 718d24ab0f9fbb310d2482b63bc98dd139658330
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+manager: douge
+ms.workload:
+- uwp
+ms.openlocfilehash: 667fa5294f813a59425516e7e6d97177ca681365
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="start-a-debugging-session-for-a-uwp-app-in-visual-studio"></a>Starten einer Debugsitzung für eine uwp-app in Visual Studio
   
@@ -79,7 +77,7 @@ Wählen Sie eine der folgenden Optionen aus:
 |**Gerät**|Debuggen Sie die Anwendung auf einem über USB angeschlossenen Gerät. Das Gerät muss Developer entsperrt werden, und den Bildschirm entsperrt haben.|  
 |**Mobile-Emulator**|Starten Sie einen Emulator mit der Konfiguration in der Emulator-Name angegeben, Bereitstellen Sie die app und Debuggen. Emulatoren sind nur auf Computern mit aktiviertem Hyper-V verfügbar.|  
 
-##  <a name="BKMK_Open_the_debugging_property_page_for_the_project"></a>Wählen Sie zusätzliche Optionen für das Debuggen  
+##  <a name="BKMK_Open_the_debugging_property_page_for_the_project"></a> Wählen Sie zusätzliche Optionen für das Debuggen  
 
 Wenn Sie zusätzliche Debuggingoptionen konfigurieren möchten, öffnen Sie die Eigenschaftenseite für das Projekt.
   
@@ -89,11 +87,11 @@ Wenn Sie zusätzliche Debuggingoptionen konfigurieren möchten, öffnen Sie die 
   
     -   Wählen Sie für Visual C#- und Visual Basic-Anwendungen **Debuggen**aus.  
   
-         ![C &#35; &#47; VB-Projekt Debugeigenschaftenseite](../debugger/media/dbg_csvb_debugpropertypage.png)  
+         ![C&#35; &#47; Debugeigenschaftenseite des VB-Projekts](../debugger/media/dbg_csvb_debugpropertypage.png)  
   
     -   Erweitern Sie für Visual C++ und JavaScript-apps, die **Konfigurationseigenschaften** Knoten und wählen Sie dann **Debuggen**.  
   
-         ![C# 43; &#43; Uwp-app Debugeigenschaftenseite](../debugger/media/dbg_cpp_debugpropertypage.png)  
+         ![C&#43; &#43; uwp-app-debugging-Eigenschaftsseite](../debugger/media/dbg_cpp_debugpropertypage.png)  
 
 ###  <a name="BKMK_Choose_the_debugger_to_use"></a> Auswahl des zu verwendenden Debuggers  
 In der Standardeinstellung erfolgt in Visual Studio ein Debuggen für verwalteten Code in C#- und Visual Basic-Anwendungen. Für C#- und Visual Basic-Anwendungen können Sie sowohl den verwalteten als auch den systemeigenen C/C++-Code der Anwendung debuggen. In C++-Anwendungen debuggt Visual Studio systemeigenen Code standardmäßig an. In JavaScript-apps erfolgt in Visual Studio Skript standardmäßig Debuggen. 
@@ -179,11 +177,11 @@ Die App kann auf dem lokalen Gerät oder einem Remotegerät installiert sein.  S
   
 Um eine installierte app im Debugger zu starten, wählen Sie **Debuggen**, klicken Sie dann **andere debugziele**, und klicken Sie dann **installiertes App-Paket Debuggen**. Zusätzliche Anleitungen finden Sie unter [eine installierte app-Paket Debuggen](../debugger/debug-installed-app-package.md).
 
-###  <a name="BKMK_Attach_the_debugger_to_a_running_app_"></a>Anfügen des Debuggers an eine ausgeführte uwp-app  
+###  <a name="BKMK_Attach_the_debugger_to_a_running_app_"></a> Anfügen des Debuggers an eine ausgeführte uwp-app  
 
 Um eine ausgeführte uwp-app zu debuggen, wählen Sie **Debuggen**, klicken Sie dann **andere debugziele**, und klicken Sie dann **installiertes App-Paket Debuggen**. Zusätzliche Anleitungen finden Sie unter [eine installierte app-Paket Debuggen](../debugger/debug-installed-app-package.md).
   
-###  <a name="BKMK_Attach_the_debugger_to_a_running_app_"></a>Anfügen des Debuggers an eine ausgeführte Windows 8.x-app
+###  <a name="BKMK_Attach_the_debugger_to_a_running_app_"></a> Anfügen des Debuggers an eine ausgeführte Windows 8.x-app
  Um den Debugger an eine [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] -App anzufügen, müssen Sie im Manager für debugfähige Pakete festlegen, dass die App im Debugmodus ausgeführt wird. Der Manager für Debugfähige Pakete wird mit den Remotetools für Visual Studio installiert.  
   
  Das Anfügen des Debuggers an eine App ist nützlich zum Debuggen einer bereits installierten App, wie beispielsweise eine App, die aus dem [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)]installiert wurde. Das Anfügen ist erforderlich, wenn Sie über die Quelldateien für die Anwendung, nicht jedoch über ein Visual Studio-Projekt für die Anwendung verfügen. So kann beispielsweise ein benutzerdefiniertes Buildsystem vorhanden sein, das keine Visual Studio-Projekte oder -Projektmappen verwendet.  

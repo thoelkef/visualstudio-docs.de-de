@@ -1,30 +1,26 @@
 ---
 title: Dia2dump-Beispiel | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - sample applications [DIA SDK]
 - Dia2dump sample [DIA SDK]
 ms.assetid: 492c0893-7043-452f-a020-890a47230d20
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bd21806dee94031c6d5486daf1696e1f97e2956f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: acec3fa2def0c478c9d94d71a80b89cda6709897
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="dia2dump-sample"></a>Dia2dump-Beispiel
 Dia2dump-Beispiel mit Visual Studio installiert ist und die Quelldatei dia2dump.cpp enthält. Die kompilierte ausführbare Datei ausgeführt wird, von der Befehlszeile aus und zeigt den Inhalt von einem gesamten Programmdatenbankdatei (.pdb).  
@@ -39,7 +35,7 @@ Dia2dump-Beispiel mit Visual Studio installiert ist und die Quelldatei dia2dump.
   
 1.  Öffnen Sie die Datei Dia2dump.sln in Visual Studio. (Falls erforderlich, Visual Studio zuerst das Dia2dump-Projekt aktualisieren hilft Ihnen.)  
   
-2.  In den Eigenschaftenseiten des Projekts in der **C/C++-** &#124; **Allgemeine** &#124; **Zusätzliche Includeverzeichnisse** -Eigenschaft, geben Sie die `..\DIA SDK\include` Verzeichnis. Damit wird sichergestellt, dass der Compiler die dia2.h-Datei nicht finden kann.  
+2.  In den Eigenschaftenseiten des Projekts in der **C/C++-** &#124; **allgemeine** &#124; **Zusätzliche Includeverzeichnisse** -Eigenschaft, geben Sie die `..\DIA SDK\include` Verzeichnis. Damit wird sichergestellt, dass der Compiler die dia2.h-Datei nicht finden kann.  
   
 3.  Auf der **erstellen** Menü klicken Sie auf **Projektmappe neu erstellen**.  
   

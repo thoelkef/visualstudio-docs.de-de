@@ -2,26 +2,22 @@
 title: Registerkarte Ausgabe, Optionen (Dialogfeld)-Nachricht | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - message options, Output
 ms.assetid: 22dd48c2-6d17-41b1-b84c-9ddeaef68411
-caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eb005e859f818e6fe8b97c755996d6e14a4ccbc3
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+ms.openlocfilehash: 0b4fe186396f9434c36865c0b864dcebf23cd10c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="output-tab-message-options-dialog-box"></a>Registerkarte "Ausgabe", Dialogfeld "Meldungsoptionen"
 Verwenden der **Ausgabe** Registerkarte angeben, welche Daten aus jeder Nachricht zur Liste im [Ansicht "Nachrichten"](../debugger/messages-view.md). Zum Anzeigen der [Nachricht Optionen (Dialogfeld)](../debugger/message-options-dialog-box.md), wählen Sie **Protokollmeldungen** aus der **Spy++** Menü.  

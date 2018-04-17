@@ -1,12 +1,10 @@
 ---
-title: "Vorgehensweise: angeben eine .NET Framework-Version für das Debuggen | Microsoft Docs"
-ms.custom: 
+title: 'Vorgehensweise: angeben eine .NET Framework-Version für das Debuggen | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -16,16 +14,16 @@ helpviewer_keywords:
 - .NET Framework, specifying version for debugging
 - debugging [Visual Studio], specifying .NET Framework version
 ms.assetid: 7a4893ba-4620-4774-893f-378d4ca28893
-caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: 69fa33ac76f39f7f37cc9aa84d61fd3cf7b0fe45
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- dotnet
+ms.openlocfilehash: 1d3d94d4243e138d4b8f9753d02bbc184db6e377
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-specify-a-net-framework-version-for-debugging"></a>Gewusst wie: Angeben einer .NET Framework-Version für das Debuggen
 Der [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)]-Debugger unterstützt das Debuggen sowohl älterer Versionen von Microsoft [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] als auch der aktuellen Version. Wenn Sie eine Anwendung aus Visual Studio starten, kann der Debugger immer die richtige Version des erkennen die [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] für die Anwendung, die Sie debuggen. Wenn die Anwendung bereits ausgeführt wird und Sie **zuordnen**, der Debugger immer möglicherweise nicht zum Identifizieren einer älteren Version von den [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Dann erhalten Sie eine Fehlermeldung, die besagt,  

@@ -1,27 +1,25 @@
 ---
 title: 'Vorgehensweise: Erstellen eines lokalisierten Bootstrapperpakets | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 helpviewer_keywords:
 - localized bootstrapper packages
 - dependencies, creating localized bootstrapper packages
 - prerequisites, creating localized bootstrapper packages
 ms.assetid: 66a1bc7e-6540-4164-963d-557196a69d8a
-caps.latest.revision: "15"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 9a3339b4bd6724fec782857a74a6b51463fe8028
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: d9c7190e12190ac35ce906d8dc61f113ae01481c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-a-localized-bootstrapper-package"></a>Gewusst wie: Erstellen eines lokalisierten Bootstrapperpakets
 Nachdem Sie ein Bootstrapperpaket erstellt haben, können Sie lokalisierte Versionen des Bootstrapperpakets erstellen, indem Sie mindestens zwei Dateien für jedes Gebietsschema erstellen: eine Datei mit Softwarelizenzbedingungen (z. B. eula.rtf) und ein Paketmanifest (package.xml).  

@@ -2,12 +2,9 @@
 title: Debuggen von Multithreadanwendungen in Visual Studio | Microsoft Docs
 ms.custom: ''
 ms.date: 09/05/2017
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.gputthreads
 dev_langs:
@@ -22,17 +19,16 @@ helpviewer_keywords:
 - multithreaded debugging
 - high-performance debugging
 ms.assetid: 9d175bc2-1d95-4c47-9bc3-9755af968a9c
-caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b32134abff19965edac150ac5f69db25640ee08
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: 276263f870337031cabbe466711e0a125b42a51c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="debug-multithreaded-applications-in-visual-studio"></a>Debuggen von Multithreadanwendungen in Visual Studio
 Ein Thread ist eine Folge von Anweisungen, für die das Betriebssystem Prozessorzeit reserviert. Jeder Prozess, der im Betriebssystem ausgeführt wird, umfasst mindestens einen Thread. Prozesse, die über mehr als einen Thread verfügen, werden als Multithreadprozesse bezeichnet.  

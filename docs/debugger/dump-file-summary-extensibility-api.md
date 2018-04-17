@@ -1,28 +1,26 @@
 ---
 title: Sichern Sie die Datei Zusammenfassung Erweiterbarkeits-API | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
 - FSharp
 - C++
 ms.assetid: bf008cdc-03f8-496b-868d-4c2644f1d7ee
-caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: aba2778e3859e0cb0de984ea47e056a417927e97
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 9d6a35ec003bec3d66edf82a14bdf1d442fac2ae
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="dump-file-summary-extensibility-api"></a>Erweiterbarkeits-API für Dumpdateizusammenfassung
 Mithilfe der Erweiterbarkeits-APIs in diesem Abschnitt, Sie können erweitern die. EXE-Projektsystem und die **Dumpzusammenfassung** Seite für die Verwendung mit Ihren eigenen benutzerdefinierten Debugmodul.  

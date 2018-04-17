@@ -1,26 +1,24 @@
 ---
-title: "Von der IDE implementiert Rückruffunktionen | Microsoft Docs"
-ms.custom: 
+title: Von der IDE implementiert Rückruffunktionen | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, callback functions
 - callback functions, source control plug-ins
 ms.assetid: 4a8833f0-6ac0-4ea7-9400-8275aa991468
-caps.latest.revision: "24"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 3c1845a82947286800145ff898f8f49f8c3c2477
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: ffdcc7d92770f486f9a345acf14e12e14214a2b1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="callback-functions-implemented-by-the-ide"></a>Rückruffunktionen implementiert, die von der IDE
 Stellen Sie die Integration mit der integrierten Entwicklungsumgebung (IDE) als eine nahtlose möglichst und eine einheitliche benutzererfahrung das Quellsteuerelement-Plug-in Rückruffunktionen können, die von der IDE implementiert werden. Das plug-in kann diese Funktionen zu geeigneten Zeitpunkten während einer Quelle-Steuerungsvorgang zum Weiterleiten von Informationen an den IDE aufrufen; die IDE können Sie diese Informationen als eingebettete Elemente in der systemeigenen Benutzeroberfläche anzeigen. Der Benutzer hat eine weniger fragmentierte Experience in diesem Szenario als wenn das plug-in eine eigene Benutzeroberfläche beschäftigt.  

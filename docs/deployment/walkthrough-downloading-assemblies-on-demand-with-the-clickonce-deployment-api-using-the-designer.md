@@ -1,12 +1,10 @@
 ---
-title: "Exemplarische Vorgehensweise: Herunterladen von Assemblys bei Bedarf mit der API, die mithilfe des Designers für die ClickOnce-Bereitstellung | Microsoft Docs"
-ms.custom: 
+title: 'Exemplarische Vorgehensweise: Herunterladen von Assemblys bei Bedarf mit der API, die mithilfe des Designers für die ClickOnce-Bereitstellung | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,16 +15,16 @@ helpviewer_keywords:
 - ClickOnce deployment, on-demand download
 - on-demand assemblies, ClickOnce
 ms.assetid: 59a0dd5f-1cab-4f2f-b780-0ab7399905d5
-caps.latest.revision: "18"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: b19f8759ecaa29ffda36660877bfc69acaa06375
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 247487277052cf488907ba97393519b1fca44f3d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>Exemplarische Vorgehensweise: Bedarfsgerechtes Herunterladen von Assemblys mit der API für die ClickOnce-Bereitstellung unter Verwendung des Designers
 Standardmäßig werden alle Assemblys, die in einer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendung enthalten sind, beim ersten Ausführen der Anwendung heruntergeladen. Allerdings gibt es möglicherweise Teile der Anwendung, die von einer begrenzten Anzahl von Benutzern verwendet werden. In diesem Fall soll eine Assembly erst heruntergeladen werden, wenn eine der in ihr definierten Typen erstellt wird. Die folgende exemplarische Vorgehensweise bietet Hinweise zum Markieren bestimmter Assemblys in der Anwendung als „optional“ sowie zum Herunterladen dieser Assemblys, indem Sie Klassen im <xref:System.Deployment.Application> -Namespace verwenden, wenn diese von der Common Language Runtime angefordert werden.  

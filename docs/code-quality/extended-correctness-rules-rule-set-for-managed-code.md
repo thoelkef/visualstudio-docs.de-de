@@ -1,23 +1,21 @@
 ---
-title: "Erweiterte Regelsatz Regeln für Richtigkeit für verwalteten Code | Microsoft Docs"
-ms.custom: 
+title: Erweiterte Regelsatz Regeln für Richtigkeit für verwalteten Code | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 ms.assetid: 5b181f5b-6c7a-4e46-a783-360e1da427a0
-caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: 498b3b3eced8e21cb2079715a0bd6c2375eb8dfe
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- dotnet
+ms.openlocfilehash: d7a09ef56020c552134ff4a7a325dacc57f8cae7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="extended-correctness-rules-rule-set-for-managed-code"></a>Regelsatz für die erweiterten Regeln für Richtigkeit für verwalteten Code
 Der Regelsatz erweiterte Microsoft-Regeln für Richtigkeit maximiert die Logik und Fehler, die von der Codeanalyse gemeldet werden. Besonderes Augenmerk wird auf bestimmte Szenarien, z. B. COM-Interoperabilität und mobilen Anwendungen. Sie sollten diesen Regelsatz trifft eine der folgenden Szenarien zu Ihrem Projekt oder zusätzliche Probleme in Ihrem Projekt zu suchen.  

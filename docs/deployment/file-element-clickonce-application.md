@@ -1,12 +1,10 @@
 ---
 title: '&lt;Datei&gt; Element (ClickOnce-Anwendung) | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 f1_keywords:
 - http://www.w3.org/2000/09/xmldsig#Transform
 - urn:schemas-microsoft-com:asm.v2#file
@@ -22,16 +20,16 @@ helpviewer_keywords:
 - <file> element [ClickOnce application manifest]
 - manifests [ClickOnce], file element
 ms.assetid: 56e3490c-eed5-4841-b1bf-eefe778b6ac9
-caps.latest.revision: "24"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 9e3e6429f32c8939960816e576f9aabefd4763e2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 9575fd84a5bd17777aaf540c72bfff62c27adf15
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ltfilegt-element-clickonce-application"></a>&lt;Datei&gt; Element (ClickOnce-Anwendung)
 Identifiziert alle Nichtassemblydateien heruntergeladen und von der Anwendung verwendet.  
@@ -95,7 +93,7 @@ Identifiziert alle Nichtassemblydateien heruntergeladen und von der Anwendung ve
 |`name`|Erforderlich. Identifiziert den Namen der Datei.|  
 |`size`|Erforderlich. Gibt die Größe in Byte der Datei an.|  
 |`group`|Optional, wenn die `optional` Attribut nicht angegeben oder auf gesetzt `false`; erforderlich, wenn `optional` ist `true`. Der Name der Gruppe, zu der diese Datei gehört. Der Name kann eine Unicode-Zeichenfolge, die vom Entwickler ausgewählt werden und dient zum Herunterladen von Dateien bei Bedarf mit der <xref:System.Deployment.Application.ApplicationDeployment> Klasse.|  
-|`optional`|Dies ist optional. Gibt an, ob diese Datei muss es herunterladen, wenn die Anwendung zuerst ausgeführt, oder gibt an, ob Sie nur auf dem Server verbleiben soll, bis die Anwendung bei Bedarf anfordert. Wenn `false` oder nicht definiert ist, die Datei wird heruntergeladen, wenn die Anwendung zuerst ausgeführt oder installiert wird. Wenn `true`ein `group` muss angegeben werden, für das Anwendungsmanifest, um gültig zu sein. `optional`nicht mit "true" Wenn `writeableType` wird angegeben, mit dem Wert `applicationData`.|  
+|`optional`|Dies ist optional. Gibt an, ob diese Datei muss es herunterladen, wenn die Anwendung zuerst ausgeführt, oder gibt an, ob Sie nur auf dem Server verbleiben soll, bis die Anwendung bei Bedarf anfordert. Wenn `false` oder nicht definiert ist, die Datei wird heruntergeladen, wenn die Anwendung zuerst ausgeführt oder installiert wird. Wenn `true`ein `group` muss angegeben werden, für das Anwendungsmanifest, um gültig zu sein. `optional` nicht mit "true" Wenn `writeableType` wird angegeben, mit dem Wert `applicationData`.|  
 |`writeableType`|Dies ist optional. Gibt an, dass diese Datei eine Datendatei ist. Zurzeit der einzige gültige Wert ist `applicationData`.|  
   
 ## <a name="typelib"></a>der Typbibliothek  
@@ -160,7 +158,7 @@ Identifiziert alle Nichtassemblydateien heruntergeladen und von der Anwendung ve
 ## <a name="hash"></a>hash  
  Die `hash` Element ist ein optionales untergeordnetes Element von der `file` Element. Die `hash` -Element weist keine Attribute.  
   
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]einen algorithmischen Hash aller Dateien in einer Anwendung verwendet als eine sicherheitsüberprüfung, um sicherzustellen, dass keine der Dateien nach der Bereitstellung geändert wurden. Wenn die `hash` Element nicht enthalten ist, wird diese Überprüfung nicht ausgeführt werden. Daher wird das Auslassen der `hash` Element wird nicht empfohlen.  
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] einen algorithmischen Hash aller Dateien in einer Anwendung verwendet als eine sicherheitsüberprüfung, um sicherzustellen, dass keine der Dateien nach der Bereitstellung geändert wurden. Wenn die `hash` Element nicht enthalten ist, wird diese Überprüfung nicht ausgeführt werden. Daher wird das Auslassen der `hash` Element wird nicht empfohlen.  
   
  Ein Manifest enthält eine Datei, die nicht in der Hashwert berechnet wird, Manifest nicht digital signiert werden, da Benutzer den Inhalt der gehashter Dateien überprüft werden können.  
   

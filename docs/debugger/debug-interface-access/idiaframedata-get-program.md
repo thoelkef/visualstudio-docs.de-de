@@ -1,29 +1,25 @@
 ---
 title: 'Idiaframedata:: Get_program | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaFrameData::get_program method
 ms.assetid: 9201409e-b4b1-4e2e-a9f8-d17678ac538b
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 10d5d331c4308586485ea77824cda4864c6ee943
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: dc770db5f5cf16d9870e05ada01e235206b94078
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idiaframedatagetprogram"></a>IDiaFrameData::get_program
 Ruft die Programm-Zeichenfolge, die verwendet wird, um den Registersatz vor dem Aufruf an die aktuelle Funktion zu berechnen.  
@@ -44,7 +40,7 @@ HRESULT get_program (
  Im Erfolgsfall gibt `S_OK`. Gibt `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.  
   
 ## <a name="remarks"></a>Hinweise  
- Die Programm-Zeichenfolge ist eine Sequenz von Makros, die den Prolog gewahrt interpretiert wird. Ein typische Stapelrahmen kann z. B. die Programm-Verbindungszeichenfolge verwenden `"$T0 $ebp = $eip $T0 4 + ^ = $ebp $T0 ^ = $esp $T0 8 + ="`. Das Format ist die umgekehrte Polnisch-Notation, in denen die Operatoren führen Sie die Operanden. `T0`Stellt eine temporäre Variable auf dem Stapel dar. In diesem Beispiel führt die folgenden Schritte aus:  
+ Die Programm-Zeichenfolge ist eine Sequenz von Makros, die den Prolog gewahrt interpretiert wird. Ein typische Stapelrahmen kann z. B. die Programm-Verbindungszeichenfolge verwenden `"$T0 $ebp = $eip $T0 4 + ^ = $ebp $T0 ^ = $esp $T0 8 + ="`. Das Format ist die umgekehrte Polnisch-Notation, in denen die Operatoren führen Sie die Operanden. `T0` Stellt eine temporäre Variable auf dem Stapel dar. In diesem Beispiel führt die folgenden Schritte aus:  
   
 1.  Verschieben von Inhalt des Registers `ebp` auf `T0`.  
   

@@ -2,7 +2,7 @@
 title: Visual Studio-Codeanalysewarnungen für verwalteten Code nach CheckId | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-code-analysis
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - CA1000
 - CA1001
@@ -256,14 +256,14 @@ f1_keywords:
 ms.assetid: 5cb221f6-dc59-4abf-9bfa-adbd6f907f96
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8eee8466e9c797c5eedd318b0b91e9172137091d
-ms.sourcegitcommit: 67374acb6d24019a434d96bf705efdab99d335ee
+ms.openlocfilehash: 19441bd208a48096e29635be6774c55894f317be
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>Codeanalysewarnungen für verwalteten Code nach CheckId
 
@@ -275,7 +275,7 @@ In der folgenden Tabelle werden Codeanalysewarnungen für verwalteten Code nach 
 |-------------|-------------|-----------------|
 |CA1000|[CA1000: Statische Member nicht in generischen Typen deklarieren](../code-quality/ca1000-do-not-declare-static-members-on-generic-types.md)|Wenn ein statischer Member eines generischen Typs aufgerufen wird, muss das Typargument für den Typ angegeben werden. Wenn ein generischer Instanzmember, der keine Unterstützung für Rückschlüsse bietet, aufgerufen wird, muss das Typargument für den Member angegeben werden. In diesen beiden Fällen ist die Syntax zum Angeben des Typarguments unterschiedlich und leicht zu verwechseln.|
 |CA1001|[CA1001: Typen, die löschbare Felder besitzen, müssen gelöscht werden können](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)|Eine Klasse deklariert und implementiert ein Instanzenfeld, das den System.IDisposable-Typ aufweist, IDisposable jedoch nicht implementiert. Eine Klasse, die ein IDisposable-Feld deklariert, besitzt indirekt eine nicht verwaltete Ressource und sollte die IDisposable-Schnittstelle implementieren.|
-|CA1002|[CA1002: Generische Listen nicht verfügbar machen](../code-quality/ca1002-do-not-expose-generic-lists.md)|System.Collections.Generic.List<(Of \<(T>)>) is a generic collection that is designed for performance, not inheritance. Daher enthält List keine virtuellen Member. Stattdessen sollten die generischen Auflistungen, die im Hinblick auf die Vererbung entworfen wurden, verfügbar gemacht werden.|
+|CA1002|[CA1002: Generische Listen nicht verfügbar machen](../code-quality/ca1002-do-not-expose-generic-lists.md)|System.Collections.Generic.List < (der \<(T >) >) ist eine generische Auflistung, die für Leistung und nicht Vererbung entwickelt wurde. Daher enthält List keine virtuellen Member. Stattdessen sollten die generischen Auflistungen, die im Hinblick auf die Vererbung entworfen wurden, verfügbar gemacht werden.|
 |CA1003|[CA1003: Generische Ereignishandlerinstanzen verwenden](../code-quality/ca1003-use-generic-event-handler-instances.md)|Ein Typ enthält einen Delegaten, die "void" zurückgibt, dessen Signatur enthält zwei Parameter (der erste ist ein Objekt und der zweite ein Typ, der EventArgs zugewiesen werden kann), und die enthaltende Assembly auf Microsoft .NET Framework 2.0 abzielt.|
 |CA1004|[CA1004: Generische Methoden müssen den Typparameter angeben](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md)|Mithilfe eines Rückschlusses wird das Typargument einer generischen Methode nach dem Typ des an die Methode übergebenen Arguments festgelegt, anstatt nach der expliziten Spezifikation des Typarguments. Um den Rückschluss zu aktivieren, muss die Parametersignatur einer generischen Methode einen Parameter einschließen, der vom selben Typ wie der Typparameter für die Methode ist. In diesem Fall muss das Typargument nicht angegeben werden. Wenn für alle Typparameter der Rückschluss verwendet wird, ist die Syntax zum Aufrufen von generischen und nicht generischen Instanzenmethoden identisch. Dies vereinfacht die Verwendung generischer Methoden.|
 |CA1005|[CA1005: Übermäßige Anzahl von Parametern in generischen Typen vermeiden](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md)|Je mehr Typparameter ein generischer Typ enthält, desto schwieriger ist es, zu wissen und zu behalten, was die einzelnen Typparameter darstellen. Ist in der Regel mit einem Typparameter, z. B. List offensichtlich\<T >, und in bestimmten Fällen, die zwei, z. B. in Dictionary Typparametern\<TKey, TValue >. Mehr als zwei Typparameter hingegen bereiten den meisten Benutzern Schwierigkeiten.|

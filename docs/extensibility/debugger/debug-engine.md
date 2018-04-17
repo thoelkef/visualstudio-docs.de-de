@@ -1,27 +1,23 @@
 ---
 title: Debuggen des Datenbankmoduls | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - debug engines
 ms.assetid: 148b1efc-ca07-4d8e-bdfc-c723a760c620
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 70e572b73f8474f77a17989c790f2e7336f9d7a5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 1816d19425897a2f63fa7e5cbe30771bd5eac3d4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="debug-engine"></a>Debuggen des Datenbankmoduls
 Ein Debugging-Modul (DE) arbeitet mit den Interpreter oder Betriebssystem, z. B. Ausführung-Steuerelement, Haltepunkte und Ausdruck Auswertung Debugdienste bereit. Die DE ist verantwortlich für das Überwachen des Status eines Programms, das gerade gedebuggt wird. Zu diesem Zweck führen Sie verwendet die DE unabhängig Methoden in der unterstützten Runtime verfügbar sind, ob von der CPU oder über APIs durch die Common Language Runtime bereitgestellt.  
@@ -37,7 +33,7 @@ Ein Debugging-Modul (DE) arbeitet mit den Interpreter oder Betriebssystem, z. B.
 > [!NOTE]
 >  Während es separate DE-Implementierungen für Transact-SQL gibt und [!INCLUDE[jsprjscript](../../debugger/debug-interface-access/includes/jsprjscript_md.md)], VBScript und [!INCLUDE[jsprjscript](../../debugger/debug-interface-access/includes/jsprjscript_md.md)] Freigeben einer einzelnen Deutschland.  
   
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]ermöglicht das Debuggen Debuggen Module führen Sie zwei Arten: entweder im gleichen Prozess wie die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] shell oder im selben Prozess wie das Zielprogramm gedebuggt wird. Die letztgenannte Form tritt gewöhnlich auf, wenn der zu debuggende Prozess tatsächlich ein Skript, die unter einem Interpreter ausgeführte und Debugging-Modul fundierte Kenntnisse der der Interpreter verfügen muss, um das Skript zu überwachen. Beachten Sie, dass in diesem Fall der Interpreter tatsächlich eine Laufzeit ist. Debugmodule sind für bestimmte Common Language Runtime-Implementierungen. Darüber hinaus kann die Implementierung einer einzelnen de über Prozess- und Computergrenzen hinweg (z. B. des Remotedebuggens) geteilt werden.  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ermöglicht das Debuggen Debuggen Module führen Sie zwei Arten: entweder im gleichen Prozess wie die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] shell oder im selben Prozess wie das Zielprogramm gedebuggt wird. Die letztgenannte Form tritt gewöhnlich auf, wenn der zu debuggende Prozess tatsächlich ein Skript, die unter einem Interpreter ausgeführte und Debugging-Modul fundierte Kenntnisse der der Interpreter verfügen muss, um das Skript zu überwachen. Beachten Sie, dass in diesem Fall der Interpreter tatsächlich eine Laufzeit ist. Debugmodule sind für bestimmte Common Language Runtime-Implementierungen. Darüber hinaus kann die Implementierung einer einzelnen de über Prozess- und Computergrenzen hinweg (z. B. des Remotedebuggens) geteilt werden.  
   
  Die DE macht die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Debugschnittstellen. Die gesamte Kommunikation wird durch COM Ob die DE in-Process, Out-of-Process oder auf einem anderen Computer geladen wird, beeinflusst nicht Komponente Kommunikation.  
   

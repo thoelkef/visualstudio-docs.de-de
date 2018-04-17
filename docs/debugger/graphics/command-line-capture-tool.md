@@ -1,25 +1,21 @@
 ---
 title: Befehlszeilen-Erfassungstool | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: db75b3a7-80b2-4a74-91d2-fd6e0f73b45d
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4290ccb1184f658d04d6903520f709384e58e837
-ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
+ms.openlocfilehash: f284fdbd4172c560c30aa3d7defb8a496e8e8e9d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="command-line-capture-tool"></a>Befehlszeilen-Erfassungs-Tool
 DXCap.exe ist ein Befehlszeilenprogramm für die Aufzeichnung und Wiedergabe der Grafikdiagnose. Es unterstützt Direct3D 10 bis Direct3D 12 auf allen Funktionsebenen.  
@@ -167,17 +163,17 @@ DXCap.exe -e map
  Der obige Befehl listet uwp-apps, die mit "Map"; übereinstimmen. die Ausgabe ist wiefolgt:  
   
  **Package "Microsoft.BingMaps":**  
- **InstallDirectory : C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe**  
+ **InstallDirectory: C:\Programme\Microsoft Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe**  
  **Vollständiger Name: Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe**  
  **UserSID: S-1-5-21-2127521184-1604012920-1887927527-5603533**  
  **Name: Microsoft.BingMaps**  
  **Herausgeber: CN = Microsoft Corporation, O = Microsoft Corporation, L = Redmond, S = Washington, C = US**  
- **Version          : 2.1.2914.1734**  
+ **Version: 2.1.2914.1734**  
  **Ausführbare Anwendungen:**  
  **ID: AppexMaps**  
- **Exe  : C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe\Map.exe**  
+ **Exe: C:\Programme\Microsoft Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe\Map.exe**  
  **IsWWA: Nein**  
- **AppSpec (to launch): **DXCap.exe -c Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe,AppexMaps**** The last line of output for each enumerated app displays the command you can use to capture graphics information from it.  
+ ** AppSpec (zum Starten): **DXCap.exe - C Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe,AppexMaps*** die letzte Zeile der Ausgabe für jede aufgelistete Anwendung zeigt den Befehl Sie die Erfassung von Grafikinformationen daraus können.  
   
 ### <a name="capture-specific-frames-or-frames-between-specific-times"></a>Erfassen Sie bestimmte Bilder oder Bilder zwischen bestimmten Zeiten.  
  Verwendung `-frame` um die Frames anzugeben, die Sie mithilfe von Kommas und Bereichen erfassen möchten:  

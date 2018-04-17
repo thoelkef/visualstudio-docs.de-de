@@ -1,11 +1,8 @@
 ---
 title: 'Vorgehensweise: Herstellen einer Verbindung mit Daten in einem Dienst | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - data [Visual Studio], connecting to Web services
 - data sources, creating from Web services
@@ -15,17 +12,17 @@ helpviewer_keywords:
 - Web services, as data sources
 - Web services, connecting
 ms.assetid: a6b54353-05fe-4e5c-8631-90231fc95504
-caps.latest.revision: "32"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: 58d22a756edd625a9c664862d05de5fe405fd9f0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: 6e85af7411da7ff9f7912c4127d51db100f82063
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-connect-to-data-in-a-service"></a>Gewusst wie: Herstellen einer Verbindung mit Daten in einem Dienst
 Verbinden Sie die Anwendung die Daten, die durch das Ausführen von einem Dienst zurückgegeben der [Datenquellen Konfigurations-Assistenten](../data-tools/media/data-source-configuration-wizard.png) auswählen und **Service** auf die **wählen Sie einen Datenquellentyp**Seite.  

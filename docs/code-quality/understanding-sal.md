@@ -1,23 +1,21 @@
 ---
 title: Grundlegendes zu SAL | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 ms.assetid: a94d6907-55f2-4874-9571-51d52d6edcfd
-caps.latest.revision: "18"
 author: mikeblome
 ms.author: mblome
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 196bfdbeeda00199861ea2f676553f024fcaf98f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: deb1825bb514afec4db3bf705ac787aadb88cc11
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="understanding-sal"></a>Einführung in SAL
 Die Microsoft Source Code Annotation Language (SAL) bietet eine Reihe von Anmerkungen, die Sie verwenden können, um beschreiben, wie eine Funktion verwendet, die zugehörigen Parameter, die Annahmen, die über diese vereinfacht und die Garantien, die sie nach dem Abschluss vereinfacht. Die Anmerkungen werden in der Headerdatei definiert `<sal.h>`. Visual Studio-Codeanalyse für C++ verwendet SAL-Anmerkungen, um die Analyse der Funktionen ändern. Weitere Informationen zu SAL 2.0 für die Entwicklung von Windows-Treiber, finden Sie unter [SAL 2.0 Anmerkungen für Windows-Treiber](http://go.microsoft.com/fwlink/?LinkId=250979).  
@@ -47,7 +45,7 @@ void * memcpy(
   
  Die Dokumentation enthält eine Reihe von Bits von Informationen, die vor, dass der Code hat bestimmte Eigenschaften, um die Richtigkeit der Anwendung stellen Sie sicher zu verwalten:  
   
--   `memcpy`kopiert die `count` von Bytes aus dem Quellpuffer in den Zielpuffer.  
+-   `memcpy` kopiert die `count` von Bytes aus dem Quellpuffer in den Zielpuffer.  
   
 -   Der Zielpuffer muss mindestens so groß wie der Quellpuffer.  
   
@@ -131,9 +129,9 @@ wchar_t * wmemcpy(
   
 -   Der Aufrufer muss den Puffer bereitzustellen und initialisieren Sie es.  
   
--   `_In_`Gibt an, "schreibgeschützt". Ein häufiger Fehler ist anzuwendende `_In_` auf einen Parameter, der die `_Inout_` Anmerkung stattdessen.  
+-   `_In_` Gibt an, "schreibgeschützt". Ein häufiger Fehler ist anzuwendende `_In_` auf einen Parameter, der die `_Inout_` Anmerkung stattdessen.  
   
--   `_In_`ist zulässig, aber von der Analyzer auf Nichtzeiger skalare ignoriert.  
+-   `_In_` ist zulässig, aber von der Analyzer auf Nichtzeiger skalare ignoriert.  
   
 ```cpp  
 void InCallee(_In_ int *pInt)  
@@ -161,7 +159,7 @@ void BadInCaller()
  Wenn Sie Visual Studio-Codeanalyse in diesem Beispiel verwenden, überprüft Sie, dass der Aufrufer einen nicht-Null-Zeiger auf einen initialisierten Puffer für übergeben `pInt`. In diesem Fall `pInt` Zeiger darf nicht NULL sein.  
   
 ### <a name="example-the-inopt-annotation"></a>Beispiel: Die _In_opt\_ Anmerkung  
- `_In_opt_`entspricht dem `_In_`, außer dass der input-Parameter NULL sein kann und aus diesem Grund sollten die Funktion für diese überprüfen.  
+ `_In_opt_` entspricht dem `_In_`, außer dass der input-Parameter NULL sein kann und aus diesem Grund sollten die Funktion für diese überprüfen.  
   
 ```cpp  
   
@@ -189,7 +187,7 @@ void InOptCaller()
  Visual Studio-Codeanalyse überprüft, dass die Funktion für NULL-Zeichen überprüft werden, bevor er auf den Puffer zugreift.  
   
 ### <a name="example-the-out-annotation"></a>Beispiel: Die _Out\_ Anmerkung  
- `_Out_`Ein häufiges Szenario, in dem ein nicht-NULL-Zeiger, der auf ein Element Puffer zeigt übergeben, und die Funktion initialisiert das Element, wird unterstützt. Der Aufrufer verfügt nicht über den Puffer vor dem Aufruf zu initialisieren; die aufgerufene Funktion verspricht initialisiert werden, bevor sie zurückgibt.  
+ `_Out_` Ein häufiges Szenario, in dem ein nicht-NULL-Zeiger, der auf ein Element Puffer zeigt übergeben, und die Funktion initialisiert das Element, wird unterstützt. Der Aufrufer verfügt nicht über den Puffer vor dem Aufruf zu initialisieren; die aufgerufene Funktion verspricht initialisiert werden, bevor sie zurückgibt.  
   
 ```cpp  
   
@@ -216,7 +214,7 @@ void OutCaller()
  Visual Studio-Codeanalysetool überprüft, dass der Aufrufer übergeben wird, einen nicht-NULL-Zeiger auf einen Puffer für `pInt` und, die der Puffer wird von der Funktion initialisiert, vor dem zurückgeben.  
   
 ### <a name="example-the-outopt-annotation"></a>Beispiel: Die _Out_opt\_ Anmerkung  
- `_Out_opt_`entspricht dem `_Out_`, außer dass der Parameter NULL sein kann und aus diesem Grund sollten die Funktion für diese überprüfen.  
+ `_Out_opt_` entspricht dem `_Out_`, außer dass der Parameter NULL sein kann und aus diesem Grund sollten die Funktion für diese überprüfen.  
   
 ```cpp  
   
@@ -244,7 +242,7 @@ void OutOptCaller()
  Visual Studio-Codeanalyse überprüft, dass diese Funktion prüft, ob NULL vor `pInt` dereferenziert wird, und wenn `pInt` ist nicht NULL, dass der Puffer von der Funktion initialisiert wird, vor dem zurückgeben.  
   
 ### <a name="example-the-inout-annotation"></a>Beispiel: Die _Inout\_ Anmerkung  
- `_Inout_`wird verwendet, um einen Zeigerparameter mit einer Anmerkung versehen, der von der Funktion geändert werden kann. Der Zeiger muss auf gültige initialisierte Daten vor dem Aufruf, und auch wenn es sich ändert, dennoch muss einen gültigen Wert bei der Rückgabe. Die Anmerkung gibt an, dass die Funktion zum kann kostenlos lesen und in den Puffer einem Element schreiben. Der Aufrufer muss den Puffer bereitzustellen und initialisieren Sie es.  
+ `_Inout_` wird verwendet, um einen Zeigerparameter mit einer Anmerkung versehen, der von der Funktion geändert werden kann. Der Zeiger muss auf gültige initialisierte Daten vor dem Aufruf, und auch wenn es sich ändert, dennoch muss einen gültigen Wert bei der Rückgabe. Die Anmerkung gibt an, dass die Funktion zum kann kostenlos lesen und in den Puffer einem Element schreiben. Der Aufrufer muss den Puffer bereitzustellen und initialisieren Sie es.  
   
 > [!NOTE]
 >  Wie `_Out_`, `_Inout_` müssen anwenden, um einen änderbaren Wert.  
@@ -276,7 +274,7 @@ void BadInOutCaller()
  Visual Studio-Codeanalyse überprüft, dass der Aufrufer einen nicht-NULL-Zeiger auf einen initialisierten Puffer für übergeben `pInt`, und dass vor der Rückgabe `pInt` noch nicht NULL ist und der Puffer wird initialisiert.  
   
 ### <a name="example-the-inoutopt-annotation"></a>Beispiel: Die _Inout_opt\_ Anmerkung  
- `_Inout_opt_`entspricht dem `_Inout_`, außer dass der input-Parameter NULL sein kann und aus diesem Grund sollten die Funktion für diese überprüfen.  
+ `_Inout_opt_` entspricht dem `_Inout_`, außer dass der input-Parameter NULL sein kann und aus diesem Grund sollten die Funktion für diese überprüfen.  
   
 ```cpp  
   
@@ -306,7 +304,7 @@ void InOutOptCaller()
  Visual Studio-Codeanalyse überprüft, dass diese Funktion auf NULL überprüft werden, bevor er auf den Puffer zugreift, und wenn `pInt` ist nicht NULL, dass der Puffer von der Funktion initialisiert wird, vor dem zurückgeben.  
   
 ### <a name="example-the-outptr-annotation"></a>Beispiel: Die _Outptr\_ Anmerkung  
- `_Outptr_`wird verwendet, um einen Parameter mit einer Anmerkung versehen, der einen Zeiger zurückgeben sollte hat.  Der Parameter selbst darf nicht NULL sein und die aufgerufene Funktion gibt einen nicht-NULL-Zeiger, und diese Zeiger verweist auf die initialisierte Daten.  
+ `_Outptr_` wird verwendet, um einen Parameter mit einer Anmerkung versehen, der einen Zeiger zurückgeben sollte hat.  Der Parameter selbst darf nicht NULL sein und die aufgerufene Funktion gibt einen nicht-NULL-Zeiger, und diese Zeiger verweist auf die initialisierte Daten.  
   
 ```cpp  
   
@@ -337,7 +335,7 @@ void OutPtrCaller()
  Visual Studio-Codeanalyse überprüft, dass der Aufrufer einen nicht-NULL-Zeiger übergeben wird, für die `*pInt`, und, die der Puffer wird von der Funktion initialisiert, vor dem zurückgeben.  
   
 ### <a name="example-the-outptropt-annotation"></a>Beispiel: Die _Outptr_opt\_ Anmerkung  
- `_Outptr_opt_`entspricht dem `_Outptr_`, außer dass der Parameter optional ist: der Aufrufer kann ein NULL-Zeiger für den Parameter übergeben.  
+ `_Outptr_opt_` entspricht dem `_Outptr_`, außer dass der Parameter optional ist: der Aufrufer kann ein NULL-Zeiger für den Parameter übergeben.  
   
 ```cpp  
   

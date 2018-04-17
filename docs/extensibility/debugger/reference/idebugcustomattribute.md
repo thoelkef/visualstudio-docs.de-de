@@ -2,28 +2,24 @@
 title: IDebugCustomAttribute | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - IDebugCustomAttribute
 helpviewer_keywords:
 - IDebugCustomAttribute interface
 ms.assetid: c5ae41e9-00b9-4cca-871d-b8de9ef390d1
-caps.latest.revision: 13
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 48aeab8a09d4916c31c5e2b781427988cf352b25
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: f0d7497f5fcda3b871c5a1ad57cf04767617bdab
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idebugcustomattribute"></a>IDebugCustomAttribute
 Diese Schnittstelle stellt ein benutzerdefiniertes Attribut, und es kann Name, der übergeordneten und der Klassentyp des Attributs bereitstellen.  
@@ -47,7 +43,7 @@ IDebugCustomAttribute : IUnknown
 |------------|-----------------|  
 |[GetParentField](../../../extensibility/debugger/reference/idebugcustomattribute-getparentfield.md)|Ruft das Feld, das das aktuelle Attribut zugeordnet ist.|  
 |[GetAttributeTypeField](../../../extensibility/debugger/reference/idebugcustomattribute-getattributetypefield.md)|Ruft den Typ des benutzerdefinierten Attributs-Klasse.|  
-|[GetName](../../../extensibility/debugger/reference/idebugcustomattribute-getname.md)|Ruft den Namen des benutzerdefinierten Attributs ab.|  
+|[getName](../../../extensibility/debugger/reference/idebugcustomattribute-getname.md)|Ruft den Namen des benutzerdefinierten Attributs ab.|  
 |[GetAttributeBytes](../../../extensibility/debugger/reference/idebugcustomattribute-getattributebytes.md)|Ruft die Attributinformationen, wie ein Blob von Bytes ab.|  
   
 ## <a name="remarks"></a>Hinweise  

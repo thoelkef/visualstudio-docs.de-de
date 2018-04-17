@@ -1,32 +1,28 @@
 ---
 title: 'Vorgehensweise: Verwenden des Suchtools | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Window Finder Tool
 ms.assetid: 5841926b-08c3-4e43-88bd-4223d04f9aef
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8930726d4f45164842a41fdf87ea3a8f55397278
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 8feed3e948c6dba91edccb36162656589539a0a8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-use-the-finder-tool"></a>Gewusst wie: Verwenden des Suchtools
 Können Sie das Suchtool in der **"Fenster Suchen"** Dialogfeld zum Anzeigen von Fenstereigenschaften oder Nachrichten. Das Suchtool können auch deaktivierte untergeordnete Fenster Suchen und erkennen, welches Fenster zum Hervorheben, untergeordnete Fenster überlappen deaktiviert.  
   
- ![Spy++ &#43; &#43; Suchen Sie im Dialogfeld Fenster](../debugger/media/icon_spy--_find.png "Icon_Spy ++ _Find")  
+ ![Spy++&#43; &#43; Fenster Dialogfeld "Suchen"](../debugger/media/icon_spy--_find.png "Icon_Spy ++ _Find")  
 Suchtools im Dialogfeld "Fenster Suchen"  
   
  Die vorstehende Abbildung zeigt das Dialogfeld "Fenster Suchen" nach Schritt 3 unten.  

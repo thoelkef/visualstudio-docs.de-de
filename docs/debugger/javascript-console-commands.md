@@ -1,28 +1,25 @@
 ---
 title: JavaScript-Konsolenbefehle in Visual Studio | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 07/17/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - JavaScript Console commands [UWP apps]
 - JavaScript debugging, console [UWP apps]
 - debugging JavaScript, console [UWP apps]
-caps.latest.revision: "47"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - uwp
 - cordova
-ms.openlocfilehash: 1f2d6f356d4e886488f4b6558c6cfb92d7b9c974
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+ms.openlocfilehash: df4055790cf715b3a521b6ccc09d5c6920a47136
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="javascript-console-commands-in-visual-studio"></a>JavaScript-Konsolenbefehle in Visual Studio
   
@@ -89,7 +86,7 @@ if (console && console.log) {
 ## <a name="examining-objects-in-the-javascript-console-window"></a>Überprüfen von Objekten im JavaScript-Konsolenfenster  
  Über das JavaScript-Konsolenfenster können Sie mit jedem Objekt interagieren, das im Bereich enthalten ist. Um ein Objekt, das außerhalb des gültigen Bereichs liegt, im Konsolenfenster zu überprüfen, führen Sie `console.log` , `console.dir`oder andere Befehle aus dem Code aus. Alternativ können Sie aus dem Konsolenfenster mit dem Objekt interagieren, während es innerhalb des gültigen Bereichs liegt. Dazu müssen Sie einen Haltepunkt im Code festlegen (**Haltepunkt** > **Insert Haltepunkt**.)  
   
-##  <a name="ConsoleLog"></a>Formatieren der console.log-Ausgabe  
+##  <a name="ConsoleLog"></a> Formatieren der console.log-Ausgabe  
  Wenn Sie mehrere Argumente an `console.log`übergeben, behandelt die Konsole die Argumente als Array und verkettet die Ausgabe.  
   
 ```javascript  

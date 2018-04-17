@@ -1,27 +1,25 @@
 ---
 title: Bereitstellen von uwp-apps aus Visual Studio | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/16/2018
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
 - FSharp
 - C++
-caps.latest.revision: "14"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: uwp
-ms.openlocfilehash: 28b1897fad45ae0c2bd174c39433645caf011f09
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+manager: douge
+ms.workload:
+- uwp
+ms.openlocfilehash: dec0b32b0be121e15c81b93f5ed7dd6aa0b9c324
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="deploy-uwp-apps-from-visual-studio"></a>Bereitstellen von uwp-apps aus Visual Studio
   
@@ -39,7 +37,7 @@ ms.lasthandoff: 01/19/2018
   
 -   Bereitstellen einer App, deren Debugging beim Start durch eine andere App oder Methode erfolgen soll.
   
-##  <a name="BKMK_How_to_deploy_a_Windows_Store_app"></a>Gewusst wie: Bereitstellen eine uwp-app  
+##  <a name="BKMK_How_to_deploy_a_Windows_Store_app"></a> Gewusst wie: Bereitstellen eine uwp-app  
  Das manuelle Bereitstellen einer App ist ein einfacher Vorgang:  
   
 1.  Wenn Sie ein Remotegerät bereitstellen, geben Sie den Namen oder die IP-Adresse des Geräts auf der Projekteigenschaftenseite des Startprojekts der App an. (Die entsprechenden Schritte sind weiter unten in diesem Thema aufgelistet.)  
@@ -81,7 +79,7 @@ Bei der Bereitstellung wird der Remotedebugger-Netzwerkkanal verwendet, um die A
   
  **Angeben des Remotegeräts auf einer JavaScript- oder Visual C++-Projektseite**  
   
- ![C# 43; &#43; Projekteigenschaften für das Remotedebuggen](../debugger/media/vsrun_cpp_projprop_remote.png "VSRUN_CPP_ProjProp_Remote")  
+ ![C&#43; &#43; Projekteigenschaften für das Remotedebuggen](../debugger/media/vsrun_cpp_projprop_remote.png "VSRUN_CPP_ProjProp_Remote")  
   
 1.  Wählen Sie **Remote Debugger** in der Liste **Zu startender Debugger** aus.  
   

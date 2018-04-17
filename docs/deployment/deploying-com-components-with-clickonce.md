@@ -1,12 +1,10 @@
 ---
 title: COM-Komponenten mit ClickOnce-Bereitstellung | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,23 +16,23 @@ helpviewer_keywords:
 - deploying applications [ClickOnce], COM components
 - components, deploying
 ms.assetid: 1a4c7f4c-7a41-45f2-9af4-8b1666469b89
-caps.latest.revision: "12"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: a63073e86c3584253e67bf4d77f43006104de075
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: c735eff8e33a8eb8a363e97a9621abc6f06c18e6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="deploying-com-components-with-clickonce"></a>Bereitstellen von COM-Komponenten mit ClickOnce
 Bereitstellung von älteren COM-Komponenten war bisher, dass eine schwierige Aufgabe. Komponenten müssen global registriert werden und daher können dazu führen, dass unerwünschte Nebeneffekte zwischen überlappende Anwendungen. Diese Situation ist in der Regel kein Problem in .NET Framework-Anwendungen, da Komponenten vollständig isoliert zu einer Anwendung sind oder die Seite-an-Seite kompatibel sind. Visual Studio können Sie isolierte COM-Komponenten auf dem Windows XP oder höher Betriebssystem bereitstellen.  
   
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]bietet einen einfachen und sicheren Mechanismus für das Bereitstellen von. Wenn Ihre Anwendung legacy-COM-Komponenten verwenden, müssen Sie zusätzliche Schritte ausführen, für deren Bereitstellung. In diesem Thema wird beschrieben, wie zum Bereitstellen von isolierter COM-Komponenten und systemeigene Komponenten (z. B. von Visual Basic 6.0 oder Visual C++) verweisen wird.  
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] bietet einen einfachen und sicheren Mechanismus für das Bereitstellen von. Wenn Ihre Anwendung legacy-COM-Komponenten verwenden, müssen Sie zusätzliche Schritte ausführen, für deren Bereitstellung. In diesem Thema wird beschrieben, wie zum Bereitstellen von isolierter COM-Komponenten und systemeigene Komponenten (z. B. von Visual Basic 6.0 oder Visual C++) verweisen wird.  
   
- Weitere Informationen zum Bereitstellen von isolierte COM-Komponenten finden Sie unter "App-Bereitstellung mit vereinfachten [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] und COM ohne Registrierung" am [http://msdn.microsoft.com/msdnmag/issues/05/04/RegFreeCOM/default.aspx](http://msdn.microsoft.com/msdnmag/issues/05/04/RegFreeCOM/default.aspx).  
+ Weitere Informationen zum Bereitstellen von isolierte COM-Komponenten finden Sie unter "App-Bereitstellung mit vereinfachten [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] und COM ohne Registrierung" am [ http://msdn.microsoft.com/msdnmag/issues/05/04/RegFreeCOM/default.aspx ](http://msdn.microsoft.com/msdnmag/issues/05/04/RegFreeCOM/default.aspx).  
   
 ## <a name="registration-free-com"></a>COM ohne Registrierung  
  COM ohne Registrierung ist eine neue Technologie für die Bereitstellung und Aktivierung isolierte COM-Komponenten. Es funktioniert, indem die Inkonsistenzen Typbibliothek für alle der Komponente und Registrierungsinformationen, die in der Regel in der systemregistrierung in eine XML-Datei mit dem Namen ein Manifest installiert wird im gleichen Ordner wie die Anwendung gespeichert.  
@@ -44,7 +42,7 @@ Bereitstellung von älteren COM-Komponenten war bisher, dass eine schwierige Auf
  Wenn der manifest-Generator einen isolierte COM-Verweis trifft, listet er alle die `CoClass` Einträge in der Typbibliothek der Komponente, jeder Eintrag mit den entsprechenden Registrierungsdaten Abgleich und Generieren von Manifesten Definitionen für die COM- die Klassen in der Typbibliothek.  
   
 ## <a name="deploying-registration-free-com-components-using-clickonce"></a>Bereitstellung von registrierungsfreie Com_komponenten mit ClickOnce  
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]bereitstellungstechnologie eignet sich gut für isolierte COM-Komponenten bereitstellen, da beide [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] und COM ohne Registrierung erforderlich ist, dass eine Komponente ein Manifest aufweisen, damit die bereitgestellt werden.  
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] bereitstellungstechnologie eignet sich gut für isolierte COM-Komponenten bereitstellen, da beide [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] und COM ohne Registrierung erforderlich ist, dass eine Komponente ein Manifest aufweisen, damit die bereitgestellt werden.  
   
  Der Autor der Komponente sollte in der Regel ein Manifest bereitstellen. Wenn dies nicht der Fall ist, ist jedoch Visual Studio automatisch ein Manifest für eine COM-Komponente generieren kann. Die Generierung von Manifesten erfolgt während der [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Veröffentlichungsprozess; Weitere Informationen finden Sie unter [Veröffentlichen von ClickOnce-Anwendungen](../deployment/publishing-clickonce-applications.md). Diese Funktion ermöglicht zudem das Legacykomponenten nutzen, die Sie in früheren entwicklungsumgebungen wie z. B. Visual Basic 6.0 erstellt wurden.  
   

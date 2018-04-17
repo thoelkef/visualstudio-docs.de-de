@@ -2,24 +2,20 @@
 title: Remote Debuggen von ASP.NET auf einem Remote-IIS-Computer | Microsoft Docs
 ms.custom: remotedebugging
 ms.date: 07/26/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 9cb339b5-3caf-4755-aad1-4a5da54b2a23
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 6f11ec81c740a6930ce4eaef16d4e4e389aaca47
-ms.sourcegitcommit: 65f85389047c5a1938b6d5243ccba8d4f14362ba
+ms.openlocfilehash: 1c8d2cfb57d3e96b845bc243575eb63af88720c0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>Remotedebuggen von ASP.NET auf einem Remote-IIS-Computer
 Um eine ASP.NET-Anwendung debuggen, die in IIS bereitgestellt wurde, installieren Sie und führen Sie der Remotetools auf dem Computer aus, auf denen Sie Ihre app bereitgestellt haben, und fügen Sie an der ausgeführten app aus Visual Studio.
@@ -44,7 +40,7 @@ Der Remotedebugger wird unter Windows Server ab Windows Server 2008 Service Pack
 
 2. Öffnen Sie die Datei „HomeController.cs“, und legen Sie einen Haltepunkt in der `About()` -Methode fest.
 
-## <a name="bkmk_configureIIS"></a>Installieren und Konfigurieren von IIS unter WindowsServer
+## <a name="bkmk_configureIIS"></a> Installieren und Konfigurieren von IIS unter WindowsServer
 
 [!INCLUDE [remote-debugger-install-iis-role](../debugger/includes/remote-debugger-install-iis-role.md)]
 
@@ -61,7 +57,7 @@ Wenn Sie Internet Explorer verwenden, können Sie den vertrauenswürdigen Sites 
 
 Wenn Sie die Software heruntergeladen haben, erhalten Sie möglicherweise Anforderungen an die Berechtigung zum Laden von verschiedenen Website-Skripts und Ressourcen gewähren. In den meisten Fällen sind die folgenden zusätzlichen Ressourcen beim Installieren der Clientsoftware nicht erforderlich.
 
-## <a name="BKMK_deploy_asp_net"></a>Installieren Sie ASP.NET 4.5 unter WindowsServer
+## <a name="BKMK_deploy_asp_net"></a> Installieren Sie ASP.NET 4.5 unter WindowsServer
 
 Wenn Sie ausführlichere Informationen zur ASP.NET auf IIS installieren möchten, finden Sie unter [IIS 8.0 mithilfe von ASP.NET 3.5 und ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45).
 
@@ -76,11 +72,11 @@ Wenn Sie ausführlichere Informationen zur ASP.NET auf IIS installieren möchten
 
 2. Das System neu starten (oder führen Sie **net Stop wurde/y** gefolgt von **Net start w3svc** über eine Eingabeaufforderung, um eine Änderung am System Pfad übernehmen).
 
-## <a name="BKMK_install_webdeploy"></a>(Optional) Installieren Sie Web Deploy 3.6 unter WindowsServer
+## <a name="BKMK_install_webdeploy"></a> (Optional) Installieren Sie Web Deploy 3.6 unter WindowsServer
 
 [!INCLUDE [remote-debugger-install-web-deploy](../debugger/includes/remote-debugger-install-web-deploy.md)]
 
-## <a name="BKMK_deploy_asp_net"></a>Konfigurieren Sie ASP.NET-Website, auf dem Windows Server-computer
+## <a name="BKMK_deploy_asp_net"></a> Konfigurieren Sie ASP.NET-Website, auf dem Windows Server-computer
 
 1. Öffnen Sie Windows Explorer, und erstellen Sie einen neuen Ordner **C:\Publish**, in dem ASP.NET-Projekt später bereitstellen möchten.
 
@@ -98,7 +94,7 @@ Wenn Sie ausführlichere Informationen zur ASP.NET auf IIS installieren möchten
 
 8. Mit den Standort im IIS-Manager ausgewählt haben, wählen Sie **Berechtigungen bearbeiten**, und stellen Sie sicher, diese IUSR, IIS_IUSRS oder der Benutzer, die für den Anwendungspool ein autorisierter Benutzer mit Berechtigungen für Lesen & ausführen wird konfiguriert. Wenn keiner dieser Benutzer vorhanden ist, fügen Sie IUSR als ein Benutzer Berechtigungen für Lesen & ausführen.
 
-## <a name="bkmk_webdeploy"></a>(Optional) Veröffentlichen und Bereitstellen der app mithilfe von Web Deploy von Visual Studio
+## <a name="bkmk_webdeploy"></a> (Optional) Veröffentlichen und Bereitstellen der app mithilfe von Web Deploy von Visual Studio
 
 [!INCLUDE [remote-debugger-deploy-app-web-deploy](../debugger/includes/remote-debugger-deploy-app-web-deploy.md)]
 
@@ -125,7 +121,7 @@ Sie können auch veröffentlichen und Bereitstellen der app mit dem Dateisystem 
 
 [!INCLUDE [remote-debugger-deploy-app-local](../debugger/includes/remote-debugger-deploy-app-local.md)]
 
-## <a name="BKMK_msvsmon"></a>Herunterladen Sie und installieren Sie die Remoteserver-Verwaltungstools für Windows Server
+## <a name="BKMK_msvsmon"></a> Herunterladen Sie und installieren Sie die Remoteserver-Verwaltungstools für Windows Server
 
 In diesem Lernprogramm verwenden wir 2017 von Visual Studio.
 
@@ -134,7 +130,7 @@ In diesem Lernprogramm verwenden wir 2017 von Visual Studio.
 > [!TIP]
 > In einigen Szenarien kann es am effizientesten, führen Sie den Remotedebugger aus einer Dateifreigabe sein. Weitere Informationen finden Sie unter [führen Sie den Remotedebugger aus einer Dateifreigabe](../debugger/remote-debugging.md#fileshare_msvsmon).
   
-## <a name="BKMK_setup"></a>Einrichten des Remotedebuggers unter Windows Server
+## <a name="BKMK_setup"></a> Einrichten des Remotedebuggers unter Windows Server
 
 [!INCLUDE [remote-debugger-configuration](../debugger/includes/remote-debugger-configuration.md)]
 
@@ -171,7 +167,7 @@ Informationen zu den Remotedebugger als Dienst ausführen, finden Sie unter [den
 
     Der Haltepunkt sollte in Visual Studio erreicht werden.
 
-## <a name="bkmk_openports"></a>Zur Fehlerbehebung: Öffnen Sie erforderlichen Ports auf Windows Server
+## <a name="bkmk_openports"></a> Zur Fehlerbehebung: Öffnen Sie erforderlichen Ports auf Windows Server
 
 In den meisten Installationen werden die erforderlichen Ports durch die Installation von ASP.NET und den Remotedebugger geöffnet. Allerdings müssen Sie möglicherweise stellen Sie sicher, dass die Ports geöffnet sind.
 

@@ -1,13 +1,10 @@
 ---
-title: "Übersicht (Debug Interface Access SDK) | Microsoft Docs"
-ms.custom: 
+title: Übersicht (Debug Interface Access SDK) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -22,17 +19,16 @@ helpviewer_keywords:
 - compilands
 - executable images
 ms.assetid: 720b4479-a8bc-4fec-860e-80c1a0780405
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cb13b9a77bcd34b22a7a82182a63440cb02a4e76
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 6494ebe261128ba700cbb92467db78a3d77a3600
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="overview-debug-interface-access-sdk"></a>Übersicht (Debug Interface Access SDK)
 Verwenden Sie das DIA SDK Zugriff auf die Microsoft-Debuginformationen. Das DIA SDK bietet eine COM-API-Satz basierte, die entfällt die Notwendigkeit, den Code umschreiben, wenn Microsoft das Format der Debuginformationen ändert. Das DIA SDK können Sie gelesen werden, einen ausgewählten Satz von früheren Versionen von Debuginformationen, befindet sich in der PDB-Datei und .dbg-Dateien generiert werden auch [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] Versionen 5.0 und höher.  

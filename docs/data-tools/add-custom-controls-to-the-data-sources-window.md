@@ -1,11 +1,8 @@
 ---
-title: "Hinzufügen benutzerdefinierter Steuerelemente zum Datenquellenfenster | Microsoft Docs"
-ms.custom: 
+title: Hinzufügen benutzerdefinierter Steuerelemente zum Datenquellenfenster | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.datasource.howtoaddcustomcontrol
 helpviewer_keywords:
@@ -16,18 +13,17 @@ helpviewer_keywords:
 - ComplexBindingPropertiesAttribute class, using
 - Data Sources Window, selecting controls
 ms.assetid: 8c43e7d2-ba94-4d9b-96de-3aa971955afd
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: ffa55100e9bbec33fdbca19ab2757c4de63f5030
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d00e818c0cfaa2659f55e5eb8bb8e4e4a87e8abc
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="add-custom-controls-to-the-data-sources-window"></a>Hinzufügen benutzerdefinierter Steuerelemente zum Datenquellenfenster
 Beim Ziehen eines Elements aus der **Datenquellen** Fenster auf eine Entwurfsoberfläche zum Erstellen eines datengebundenen Steuerelements können Sie den Typ des von Ihnen erstellte Steuerelement auswählen. Jedes Element im Fenster verfügt über eine Dropdownliste, in dem die Steuerelemente angezeigt, aus denen Sie auswählen können. Der Satz von Steuerelementen, die jedes Element zugeordnet wird durch den Datentyp des Elements bestimmt. Wenn das Steuerelement, das Sie erstellen möchten, nicht in der Liste angezeigt wird, können Sie die Anweisungen in diesem Thema, um das Steuerelement zur Liste hinzufügen befolgen.  
@@ -37,7 +33,7 @@ Beim Ziehen eines Elements aus der **Datenquellen** Fenster auf eine Entwurfsobe
 > [!NOTE]
 >  Die angezeigten Dialogfelder und Menübefehle können sich je nach den aktiven Einstellungen oder der verwendeten Version von den in der Hilfe beschriebenen unterscheiden. So ändern Sie die Einstellungen für die **Tools** klicken Sie im Menü **Einstellungen importieren und exportieren**. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../ide/personalizing-the-visual-studio-ide.md).  
   
-##  <a name="customizinglist"></a>Anpassen der Liste der bindungsfähige Steuerelemente für einen-Datentyp  
+##  <a name="customizinglist"></a> Anpassen der Liste der bindungsfähige Steuerelemente für einen-Datentyp  
  Zum Hinzufügen oder Entfernen von Steuerelementen aus der Liste der verfügbaren Steuerelemente für Elemente in der **Datenquellen** Fenster, das über einen bestimmten Datentyp, der die folgenden Schritte ausführen.  
   
 #### <a name="to-select-the-controls-to-be-listed-for-a-data-type"></a>Wählen Sie die Steuerelemente für einen-Datentyp aufgelistet werden  
@@ -71,7 +67,7 @@ Beim Ziehen eines Elements aus der **Datenquellen** Fenster auf eine Entwurfsobe
   
      Die Steuerelemente, die Sie ausgewählt haben, in der **zugeordnete Steuerelemente** Feld jetzt in der Dropdown-Menü für das Element angezeigt werden.  
   
-##  <a name="addingcontrols"></a>Hinzufügen von Steuerelementen zur Liste der zugeordneten Steuerelemente für einen-Datentyp  
+##  <a name="addingcontrols"></a> Hinzufügen von Steuerelementen zur Liste der zugeordneten Steuerelemente für einen-Datentyp  
  Wenn ein Steuerelement mit einem Datentyp zugeordnet werden soll, aber das Steuerelement nicht in erscheint der **zugeordnete Steuerelemente** Feld, müssen Sie der Liste das Steuerelement hinzufügen. Das Steuerelement muss in der aktuellen Projektmappe oder in einer referenzierten Assembly befinden. Muss auch verfügbar sein, in der **Toolbox**, und haben ein Attribut, das Steuerelement Datenbindungsverhalten angibt.  
   
 #### <a name="to-add-controls-to-the-list-of-associated-controls"></a>Die Liste der zugeordneten Steuerelemente Steuerelemente hinzu  

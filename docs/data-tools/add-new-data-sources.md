@@ -1,29 +1,25 @@
 ---
-title: "Fügen Sie neue Datenquellen | Microsoft Docs"
-ms.custom: 
+title: Fügen Sie neue Datenquellen | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.datasource.datasourcefieldspicker
 helpviewer_keywords:
 - data [Visual Studio], data sources
 - data sources
 ms.assetid: ed28c625-bb89-4037-bfde-cfa435d182a2
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 865f575aefedb5813a72d7a0bb2024bc85313db0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 7dae171cb5f620d9dac09edb966ac1291a127d65
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="add-new-data-sources"></a>Neue Datenquellen hinzufügen
 Im Kontext des .NET Data-Tools in Visual Studio den Begriff *Datenquelle* bezieht sich auf .NET-Objekten, die eine Verbindung mit einem Datenspeicher herstellen und die Daten an eine .NET-Anwendung verfügbar machen. Die Visual Studio-Designer nutzen können die Ausgabe von der Datenquelle, um den Standardcode zu generieren, die die Daten an Formulare bindet, beim Ziehen und Ablegen von Datenbankobjekte aus der **Datenquellen** Fenster. Diese Art von Datenquelle kann sein:  
@@ -76,7 +72,7 @@ Im Kontext des .NET Data-Tools in Visual Studio den Begriff *Datenquelle* bezieh
   
 -   WCF Data Services. Weitere Informationen finden Sie unter [Übersicht](/dotnet/framework/data/wcf/wcf-data-services-overview).  
   
--   WCF-Dienste. Weitere Informationen finden Sie unter [Windows Communication Foundation-Dienste und WCF Data Services in Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md).  
+-   WCF-Dienste: Weitere Informationen finden Sie unter [Windows Communication Foundation-Dienste und WCF Data Services in Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md).  
   
 -   Webdienste.  
   

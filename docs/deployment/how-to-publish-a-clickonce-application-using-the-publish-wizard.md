@@ -1,12 +1,10 @@
 ---
-title: "Vorgehensweise: Veröffentlichen einer ClickOnce-Anwendung mit dem Webpublishing-Assistenten | Microsoft Docs"
-ms.custom: 
+title: 'Vorgehensweise: Veröffentlichen einer ClickOnce-Anwendung mit dem Webpublishing-Assistenten | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,16 +15,16 @@ helpviewer_keywords:
 - Windows applications, ClickOnce deployments
 - publishing, ClickOnce
 ms.assetid: 2e4aa67c-4445-4f7b-9e03-9acb95829127
-caps.latest.revision: "25"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: d314763f8ff4dc170148cca166e3ecdff051ae24
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 762ef9813232b282b4f140e9c01e8d722a42bf3d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-publish-a-clickonce-application-using-the-publish-wizard"></a>Gewusst wie: Veröffentlichen einer ClickOnce-Anwendung mit dem Webpublishing-Assistenten
 Wenn Sie eine ClickOnce-Anwendung für Benutzer bereitstellen möchten, müssen Sie sie auf einer Dateifreigabe oder unter einem Dateipfad, auf einem FTP-Server oder einem Wechselmedium veröffentlichen. Sie können die Anwendung mit dem Webpublishing-Assistenten veröffentlichen; zusätzliche Eigenschaften, die im Zusammenhang mit der Veröffentlichung stehen für die **veröffentlichen** auf der Seite der **Projekt-Designer**. Weitere Informationen finden Sie unter [Veröffentlichen von ClickOnce-Anwendungen](../deployment/publishing-clickonce-applications.md).  

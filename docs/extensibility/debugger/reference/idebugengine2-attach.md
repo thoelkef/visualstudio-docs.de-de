@@ -2,28 +2,24 @@
 title: IDebugEngine2::Attach | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - IDebugEngine2::Attach
 helpviewer_keywords:
 - IDebugEngine2::Attach
 ms.assetid: 173dcbda-5019-4c5e-bca9-a071838b5739
-caps.latest.revision: 14
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fb45d2196a9f84b8f956b8ede665df6e3ed249c2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 264ef65472bf3d003852f2f7efc0fe21ee45d2a1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idebugengine2attach"></a>IDebugEngine2::Attach
 Fügt ein Debugging-Modul (DE) an ein Programm oder Programme an. Aufgerufen vom Sitzung Debug-Manager (SDM) ein, wenn die DE ausgeführten in-Process, das SDM befindet.  
@@ -72,11 +68,11 @@ int Attach(
 ## <a name="remarks"></a>Hinweise  
  Es gibt drei Gründe für das Anfügen an ein Programm, wie folgt:  
   
--   `ATTACH_REASON_LAUNCH`Gibt an, dass die DE an das Programm angefügt wird, da der Benutzer, der Prozess gestartet, der es enthält.  
+-   `ATTACH_REASON_LAUNCH` Gibt an, dass die DE an das Programm angefügt wird, da der Benutzer, der Prozess gestartet, der es enthält.  
   
--   `ATTACH_REASON_USER`Gibt an, dass der Benutzer explizit angefordert, hat die DE das Anfügen an ein Programm (oder der Prozess, der ein Programm aus).  
+-   `ATTACH_REASON_USER` Gibt an, dass der Benutzer explizit angefordert, hat die DE das Anfügen an ein Programm (oder der Prozess, der ein Programm aus).  
   
--   `ATTACH_REASON_AUTO`Gibt an, dass DE für ein bestimmtes Programm angefügt wird, da sie bereits andere Programme in einem bestimmten Prozess debuggen. Dies wird auch bezeichnet das automatische Anhängen.  
+-   `ATTACH_REASON_AUTO` Gibt an, dass DE für ein bestimmtes Programm angefügt wird, da sie bereits andere Programme in einem bestimmten Prozess debuggen. Dies wird auch bezeichnet das automatische Anhängen.  
   
  Wenn diese Methode aufgerufen wird, muss die DE diese Ereignisse in der Sequenz zu senden:  
   

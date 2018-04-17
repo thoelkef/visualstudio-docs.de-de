@@ -1,23 +1,21 @@
 ---
 title: AppliesTo-Element (Visual Studio-Vorlagen) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 ms.assetid: 8fb1334b-d78c-405f-98b4-786e9f6b58d7
-caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 35e11a53b2b9b63a71aab2858151721cfdfd7f9c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 2e27ee1ab0ba42a82d61e2adbe9fb4c6c81cbb48
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="appliesto-element-visual-studio-templates"></a>AppliesTo-Element (Visual Studio-Vorlagen)
 Legt einen optionalen Ausdruck fest, um eine oder mehrere Funktionen auszuwählen. (siehe <xref:Microsoft.VisualStudio.Shell.Interop.VsProjectCapabilityExpressionMatcher>). Funktionen werden von Projekttypen über die Hierarchie als Eigenschaft <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID5> verfügbar gemacht. Dadurch kann die Vorlage von mehreren Projekttypen gemeinsam genutzt werden, die über geläufige anwendbare Funktionen verfügen.  
@@ -26,8 +24,8 @@ Legt einen optionalen Ausdruck fest, um eine oder mehrere Funktionen auszuwähle
   
  Eingeführt in Visual Studio 2013 Update 2. Um die richtige Version zu verweisen, finden Sie unter [verweisen auf Assemblys in Visual Studio 2013 SDK Update 2 übermittelten](http://msdn.microsoft.com/en-us/42b65c3e-e42b-4c39-98c8-bea285f25ffb).  
   
- \<VSTemplate >  
- \<TemplateData >  
+ \<VSTemplate>  
+ \<TemplateData>  
  \<AppliesTo >  
   
 ## <a name="syntax"></a>Syntax  
@@ -56,7 +54,7 @@ Legt einen optionalen Ausdruck fest, um eine oder mehrere Funktionen auszuwähle
   
  Gültige Ausdruckssyntax ist folgendermaßen definiert:  
   
--   Der Funktionsausdruck, wie z. B. "(VisualC &#124; CSharp) + (MSTest &#124; NUnit) ".  
+-   Der Funktionsausdruck, wie z. B. "(VisualC &#124; CSharp) + (MSTest &#124; NUnit)".  
   
 -   Die "&#124;" ist der OR-Operator.  
   
@@ -68,7 +66,7 @@ Legt einen optionalen Ausdruck fest, um eine oder mehrere Funktionen auszuwähle
   
 -   Eine leerer oder NULL-Ausdruck wird als Übereinstimmung ausgewertet.  
   
--   Projektfunktionen jedes Zeichen außer diesen reservierten Zeichen sein: "'' :;,+-*/\\! ~ &#124; & %$@^()={} [] <>? \t\b\n\r  
+-   Projektfunktionen jedes Zeichen außer diesen reservierten Zeichen sein: "'' :;,+-*/\\! ~&#124;& %$@^()={} [] <>? \t\b\n\r  
   
 ## <a name="example"></a>Beispiel  
  Im folgenden Beispiel werden drei unterschiedliche Vorlagen gezeigt. `Template1` gilt für alle C#-Projekttypen oder jeden anderen Projekttyp, der die `WindowsAppContainer`-Funktion unterstützt. `Template2` gilt für C#-Projekte beliebiger Art. `Template3` gilt für C#-Projekte, die keine `WindowsAppContainer` sind Projekte.  

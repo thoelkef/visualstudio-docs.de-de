@@ -1,12 +1,10 @@
 ---
 title: '&lt;FileAssociation&gt; Element (ClickOnce-Anwendung) | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,16 +13,16 @@ helpviewer_keywords:
 - <fileAssociation> element [ClickOnce application manifest]
 - manifests [ClickOnce], fileAssociation element
 ms.assetid: 8f951b4f-54f9-412e-a9e5-af4e379fcf08
-caps.latest.revision: "8"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: bd5d7ed1a37923cefc4a6b7975610b6016fd0ae6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 4da80f852526afa4692b7ecd6eefea3cc3c3de7e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ltfileassociationgt-element-clickonce-application"></a>&lt;FileAssociation&gt; Element (ClickOnce-Anwendung)
 Gibt eine Erweiterung der Anwendung zugeordnet werden soll.  
@@ -54,7 +52,7 @@ Gibt eine Erweiterung der Anwendung zugeordnet werden soll.
 ## <a name="remarks"></a>Hinweise  
  Dieses Element muss enthalten einen XML-Namespaceverweis auf "Urn: Schemas-Microsoft-com:clickonce.v1". Wenn die `<fileAssociation>` Element verwendet wird, müssen sie nach dem stammen die `<application>` in seinem übergeordneten Element [ \<Assembly >-Element](../deployment/assembly-element-clickonce-application.md).  
   
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]überschreibt keine vorhandenen dateizuordnungen. Eine ClickOnce-Anwendung kann jedoch die Dateierweiterung für den aktuellen Benutzer nur überschreiben. Nach der Deinstallation von ClickOnce-Anwendung ClickOnce löscht die dateizuordnung für den Benutzer und die Zuordnung pro Computer wieder aktiv ist.  
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] überschreibt keine vorhandenen dateizuordnungen. Eine ClickOnce-Anwendung kann jedoch die Dateierweiterung für den aktuellen Benutzer nur überschreiben. Nach der Deinstallation von ClickOnce-Anwendung ClickOnce löscht die dateizuordnung für den Benutzer und die Zuordnung pro Computer wieder aktiv ist.  
   
 ## <a name="example"></a>Beispiel  
  Im folgenden Codebeispiel wird veranschaulicht, `fileAssociation` Elemente in einer Anwendung für einen Text-Editor-Anwendung bereitgestellt, mit manifest [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]. Dieses Codebeispiel enthält auch die [ \<Datei >-Element](../deployment/file-element-clickonce-application.md) erforderlich die `defaultIcon` Attribut.  

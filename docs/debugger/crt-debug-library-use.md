@@ -1,13 +1,10 @@
 ---
 title: Verwenden der CRT-Debugbibliothek | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - c.debug.runtime
 dev_langs:
@@ -29,17 +26,16 @@ helpviewer_keywords:
 - DEBUG linker option [C++]
 - /LDd compiler function [C++]
 ms.assetid: 464de16b-4215-4787-9bfa-921aaff9d9f4
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 420dcc98aad4f4ca2ad76d16b7f4c6c7c51d2beb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: f3dba4e434384900affb5474c5dd9741bf8b71c1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="crt-debug-library-use"></a>Verwenden der CRT-Debugbibliothek
 Die C-Laufzeitbibliothek bietet umfassende Debugunterstützung. Um eine der CRT-Debugbibliotheken verwenden zu können, müssen Sie eine Verknüpfung mit [/DEBUG](/cpp/build/reference/debug-generate-debug-info) und kompilieren Sie mit **/MDd**, **/MTd**, oder **"/ LDD"**.  
@@ -55,4 +51,4 @@ Die C-Laufzeitbibliothek bietet umfassende Debugunterstützung. Um eine der CRT-
   
 ## <a name="see-also"></a>Siehe auch  
  [CRT-Debugverfahren](../debugger/crt-debugging-techniques.md)   
- [/ MD, / MT, / ld (Laufzeitbibliothek verwenden)](/cpp/build/reference/md-mt-ld-use-run-time-library)
+ [/MD, /MT, /LD (Laufzeitbibliothek verwenden)](/cpp/build/reference/md-mt-ld-use-run-time-library)

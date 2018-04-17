@@ -1,12 +1,10 @@
 ---
 title: 'CA1051: Sichtbare Instanzfelder nicht deklarieren | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - CA1051
 - DoNotDeclareVisibleInstanceFields
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - CA1051
 - DoNotDeclareVisibleInstanceFields
 ms.assetid: 2805376c-824c-462c-81d1-c51aaf7cabe7
-caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: a6a22653abb4b7112e1778bf671f368e8ee28894
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: c89e5113e787ca59b4892c64de0077bd27204802
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca1051-do-not-declare-visible-instance-fields"></a>CA1051: Sichtbare Instanzfelder nicht deklarieren
 |||  
@@ -48,7 +46,7 @@ ms.lasthandoff: 12/22/2017
  Unterdrücken Sie keine Warnung dieser Regel. Extern sichtbare Feldern bieten keine Vorteile, die Eigenschaften nicht verfügbar sind. Darüber hinaus können nicht öffentlichen Felder geschützt werden, indem [Verknüpfungsaufrufe](/dotnet/framework/misc/link-demands). Finden Sie unter [CA2112: gesicherte Typen sollten keine Felder verfügbar](../code-quality/ca2112-secured-types-should-not-expose-fields.md).  
   
 ## <a name="example"></a>Beispiel  
- Das folgende Beispiel zeigt einen Typ (`BadPublicInstanceFields`), die mit dieser Regel verletzt. `GoodPublicInstanceFields`Zeigt den korrigierten Code.  
+ Das folgende Beispiel zeigt einen Typ (`BadPublicInstanceFields`), die mit dieser Regel verletzt. `GoodPublicInstanceFields` Zeigt den korrigierten Code.  
   
  [!code-csharp[FxCop.Design.TypesPublicInstanceFields#1](../code-quality/codesnippet/CSharp/ca1051-do-not-declare-visible-instance-fields_1.cs)]  
   

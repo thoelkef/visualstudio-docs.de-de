@@ -1,12 +1,10 @@
 ---
-title: "CA2118: Überprüfen Sie SuppressUnmanagedCodeSecurityAttribute Verwendung von | Microsoft Docs"
-ms.custom: 
+title: 'CA2118: Überprüfen Sie SuppressUnmanagedCodeSecurityAttribute Verwendung von | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - CA2118
 - ReviewSuppressUnmanagedCodeSecurityUsage
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - ReviewSuppressUnmanagedCodeSecurityUsage
 - CA2118
 ms.assetid: 4cb8d2fc-4e44-4dc3-9b74-7f5838827d41
-caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 6a6c5e60ed84a79e6e81d4cd066d75b1270bdb71
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 8d862f285efa3487c428aed2e5aed3a67c3baef6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca2118-review-suppressunmanagedcodesecurityattribute-usage"></a>CA2118: Überprüfen der Verwendung von SuppressUnmanagedCodeSecurityAttribute
 |||  
@@ -37,7 +35,7 @@ ms.lasthandoff: 12/22/2017
  Ein öffentlicher oder geschützter Typ oder Member hat die <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> Attribut.  
   
 ## <a name="rule-description"></a>Regelbeschreibung  
- <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute>Ändert das Standardverhalten des Sicherheitssystems für Member, die nicht verwalteten Code mit COM-Interop oder Plattformaufrufe Aufruf ausführen. Im Allgemeinen führt das System eine [Daten und Modellierung](/dotnet/framework/data/index) Berechtigung für nicht verwalteten Code. Diese Anforderung erfolgt zur Laufzeit für jeden Aufruf des Elements, und alle Aufrufer in der Aufrufliste für die Berechtigung überprüft. Wenn das Attribut vorhanden ist, führt das System eine [Verknüpfungsaufrufe](/dotnet/framework/misc/link-demands) für die Berechtigung: die Berechtigungen des unmittelbaren Aufrufers überprüft werden, wenn der Aufrufer JIT-kompiliert wird.  
+ <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> Ändert das Standardverhalten des Sicherheitssystems für Member, die nicht verwalteten Code mit COM-Interop oder Plattformaufrufe Aufruf ausführen. Im Allgemeinen führt das System eine [Daten und Modellierung](/dotnet/framework/data/index) Berechtigung für nicht verwalteten Code. Diese Anforderung erfolgt zur Laufzeit für jeden Aufruf des Elements, und alle Aufrufer in der Aufrufliste für die Berechtigung überprüft. Wenn das Attribut vorhanden ist, führt das System eine [Verknüpfungsaufrufe](/dotnet/framework/misc/link-demands) für die Berechtigung: die Berechtigungen des unmittelbaren Aufrufers überprüft werden, wenn der Aufrufer JIT-kompiliert wird.  
   
  Dieses Attribut wird hauptsächlich verwendet, um die Leistung zu erhöhen. Der Leistungszuwachs geht jedoch mit beträchtlichen Sicherheitsrisiken einher. Wenn Sie das Attribut auf öffentliche Member, die systemeigene Methoden aufrufen platzieren, ist der Aufrufer in der Aufrufliste (außer den unmittelbaren Aufrufer) Berechtigung zum Ausführen von nicht verwalteten Codes nicht verwalteten Code nicht erforderlich. Abhängig von des öffentlichen Members Aktionen und Behandlung der Eingabe könnte dies nicht vertrauenswürdige Aufrufern Zugriff-Funktionalität, die normalerweise nur für vertrauenswürdigen Code ermöglichen.  
   

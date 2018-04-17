@@ -1,11 +1,8 @@
 ---
-title: "Erstellen eines Benutzersteuerelements, das einfache Datenbindung unterstützt | Microsoft Docs"
-ms.custom: 
+title: Erstellen eines Benutzersteuerelements, das einfache Datenbindung unterstützt | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -13,17 +10,17 @@ helpviewer_keywords:
 - custom controls [Visual Studio], Data Sources Window
 - Data Sources Window, controls
 ms.assetid: b1488366-6dfb-454e-9751-f42fd3f3ddfb
-caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: 63df502f17a5c85e51e658854d2ab7dec312fcc5
-ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
+ms.workload:
+- data-storage
+ms.openlocfilehash: edfa94a6ca1bdc4fc8a5e9353505da4354b126ba
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-simple-data-binding"></a>Erstellen eines Windows Forms-Benutzersteuerelements, das einfache Datenbindung unterstützt
 Anzeigen von Daten in Formularen in Windows-Anwendungen können Sie vorhandene Steuerelemente aus der **Toolbox**, oder Sie können benutzerdefinierte Steuerelemente erstellen, wenn Ihre Anwendung Funktionen erfordert, die in den Standardsteuerelementen nicht verfügbar ist. Diese exemplarische Vorgehensweise erläutert, wie Sie ein Steuerelement erstellen, das <xref:System.ComponentModel.DefaultBindingPropertyAttribute> implementiert. Steuerelemente, die <xref:System.ComponentModel.DefaultBindingPropertyAttribute> implementieren, können eine Eigenschaft enthalten, die an Daten gebunden werden kann. Solche Steuerelemente sind vergleichbar mit <xref:System.Windows.Forms.TextBox> oder <xref:System.Windows.Forms.CheckBox>.  

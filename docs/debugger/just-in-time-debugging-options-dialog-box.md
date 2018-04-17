@@ -1,11 +1,9 @@
 ---
 title: Just-In-Time, Debuggen, Dialogfeld "Optionen" | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
+ms.technology:
+- vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Debugger.JIT
@@ -20,16 +18,16 @@ helpviewer_keywords:
 - Just-In-Time debugging, setting options
 - Options dialog box, debugging
 ms.assetid: 7f11b2e3-3fb5-449d-b07c-6ecf1d6a487d
-caps.latest.revision: "19"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 057c5e0e37d8e84daa4348c91847a12b6a9ae5e9
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: bbe99d21fe489e591c4747bb934d8da3f16648ab
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="just-in-time-debugging-options-dialog-box"></a>Just-In-Time, Debuggen, Dialogfeld "Optionen"
 Für den Zugriff auf die **Just-in-Time** Seite, wechseln Sie zu der **Tools** Menü, und klicken Sie auf **Optionen**. In der **Optionen** Dialogfeld erweitern Sie die **Debuggen** Knoten, und wählen **Just-in-Time**. Auf dieser Seite können Sie das Just-In-Time-Debuggen für verwalteten Code, nativen Code und Skripts aktivieren. Weitere Informationen finden Sie unter [Just-in-Time-Debuggen](../debugger/just-in-time-debugging-in-visual-studio.md).  

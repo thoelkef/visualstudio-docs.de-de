@@ -1,34 +1,32 @@
 ---
 title: Erste Schritte mit Debugger-Erweiterbarkeits | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - getting started, Debugging SDK
 - debugging [Debugging SDK], getting started
 - Debugging SDK, getting started
 ms.assetid: d6ce6f43-1409-4bf7-93cd-f3464ca23504
-caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 964b6bcc18e74174aa59e7a1bb4441e24d3918d7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 98d6e0200c1a68ae3819d3276ce8a04aaada2e78
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="getting-started-with-debugger-extensibility"></a>Erste Schritte mit Debugger-Erweiterbarkeits-
 Die [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] enthält Informationen, die Sie zum Erstellen und Anpassen von Debuggerkomponenten verwendet benötigen, um das Debuggen von Programmen innerhalb der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Umgebung.  
   
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Debuggen wurde hinzugefügt, Verbesserungen, die eine umfangreiche Verwendbarkeit auf vorherige durchgeführten Tests abgeleitet [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Debugger. Sie können [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Debuggen schrittweise Durchlaufen einer mehrsprachigen-Anwendung, oder Sie können auf dynamische Bearbeitung von Variablen beim Debuggen von Anwendungen und Lösungen von mehrsprachigen implementieren.  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Debuggen wurde hinzugefügt, Verbesserungen, die eine umfangreiche Verwendbarkeit auf vorherige durchgeführten Tests abgeleitet [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Debugger. Sie können [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Debuggen schrittweise Durchlaufen einer mehrsprachigen-Anwendung, oder Sie können auf dynamische Bearbeitung von Variablen beim Debuggen von Anwendungen und Lösungen von mehrsprachigen implementieren.  
   
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Debuggen ist ausgeführten Out-of-Process mit dem Programm, das gerade gedebuggt wird und daher weniger intrusiv im Prozessbereich der Anwendung. Daher ist es einfacher, Komponenten zu schreiben, die Interaktion mit dem Debugger ohne Auswirkungen auf Ihre Anwendung debuggen.  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Debuggen ist ausgeführten Out-of-Process mit dem Programm, das gerade gedebuggt wird und daher weniger intrusiv im Prozessbereich der Anwendung. Daher ist es einfacher, Komponenten zu schreiben, die Interaktion mit dem Debugger ohne Auswirkungen auf Ihre Anwendung debuggen.  
   
  Die optimale Verwendung der [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)], Sie sollten mit den folgenden vertraut sein:  
   

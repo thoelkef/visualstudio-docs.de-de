@@ -1,27 +1,24 @@
 ---
 title: Erstellen einer Datenbankdatei und Verwenden der Tabellen-Designer in Visual Studio | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/03/2017
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - database tables, creating
 - database files, creating
 - table designer
 ms.assetid: 99c2b06f-47aa-414e-8057-a3453712fd23
-caps.latest.revision: "49"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: ffbb2259ff556dcf96021adc47c733fdbcd9125d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: 99f5c341df6ca04c25abf325146c4dac961bafc7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-a-database-and-add-tables-in-visual-studio"></a>Eine Datenbank erstellen und Hinzufügen von Tabellen in Visual Studio
 Sie können Visual Studio verwenden, erstellen und Aktualisieren einer lokalen Datenbankdatei in SQL Server Express LocalDB. Sie können auch eine Datenbank erstellen, durch das Ausführen von Transact-SQL-Anweisungen in der **Objekt-Explorer von SQL Server** Toolfenster in Visual Studio. In diesem Thema wird eine MDF-Datei erstellen und Hinzufügen von Tabellen und Schlüsseln mit dem Tabellen-Designer.
@@ -57,7 +54,7 @@ Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die optiona
 
 10. Auf der **Verbindungszeichenfolge in der Anwendungskonfigurationsdatei speichern** Seite **Weiter**.
 
-11. Einer der **wählen Sie Ihre Datenbankobjekte** Seite sehen, da Sie eine Meldung, die besagt, die Datenbank dass keine Objekte enthalten. Wählen Sie **Fertig stellen**.
+11. Einer der **wählen Sie Ihre Datenbankobjekte** Seite sehen, da Sie eine Meldung, die besagt, die Datenbank dass keine Objekte enthalten. Klicken Sie auf **Fertig stellen**.
 
 ### <a name="to-view-properties-of-the-data-connection"></a>So zeigen Sie die Eigenschaften der Datenverbindung an
 Sie können die Verbindungszeichenfolge für die Datei "SampleDatabase.mdf" anzeigen, öffnen Sie im Eigenschaftenfenster die Datenverbindung:

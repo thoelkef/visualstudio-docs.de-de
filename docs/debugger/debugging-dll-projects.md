@@ -1,12 +1,10 @@
 ---
 title: Debuggen von DLL-Projekten | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 05/23/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -18,16 +16,16 @@ helpviewer_keywords:
 - DLLs, debugging
 - debugging [Visual Studio], DLLs
 ms.assetid: 433cab30-d191-460b-96f7-90d2530ca243
-caps.latest.revision: "38"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 7b43d7c5fb8d66e758a44b86d4918f04599d6147
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 3b7e897b69770f42bac9757f061f96a67fc9b99f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="debugging-dll-projects-from-visual-studio"></a>Debuggen von DLL-Projekten in Visual Studio
 Die folgenden Visual Studio-Vorlagen erstellen DLLs:  
@@ -106,7 +104,7 @@ Bevor Sie mit dem Debuggen der aufrufenden Anwendung beginnen, werden Sie gewöh
   
      Sobald der Haltepunkt erreicht ist, können Sie `Test`in Einzelschritten ausführen. Nach der Ausführung von `Test`befindet sich der Debugger wieder im Entwurfsmodus.
 
-## <a name="vxtskdebuggingdllprojectsexternal"></a>Debuggen Sie eine externe DLL aus einem C++-Projekt
+## <a name="vxtskdebuggingdllprojectsexternal"></a> Debuggen Sie eine externe DLL aus einem C++-Projekt
 
 Wenn Sie dem Projekt eine externe DLL debuggen, debugging (z. B. das schrittweise Ausführen des Codes) verfügbaren Funktionen hängen die [Debug-Konfiguration der DLL](#vxtskdebuggingdllprojectsbuildingadebugversion) , wenn sie erstellt wurde und ob die [PDB-Datei](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) und anderer erforderlichen Dateien für die DLL zur Verfügung stehen.
 

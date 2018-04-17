@@ -1,26 +1,24 @@
 ---
 title: Haltepunkt-bezogenen Methoden | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], breakpoint methods
 - breakpoints, methods
 ms.assetid: a6f77bf0-bf81-443f-8683-5f12075bbe10
-caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: f5bf80b78545242a625b9c3e212c101712ecbd9e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: ce44a7d3d3578d5157bcefcf14172d92ece677d2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="breakpoint-related-methods"></a>Haltepunkt-bezogenen Methoden
 Die Einstellung von Haltepunkten muss ein Debugging-Modul (DE) unterstützt werden. Debuggen von Visual Studio unterstützt die folgenden Typen von Haltepunkten:  

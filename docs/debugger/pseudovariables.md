@@ -1,12 +1,10 @@
 ---
 title: Pseudovariablen | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -17,16 +15,16 @@ helpviewer_keywords:
 - debugging [Visual Studio], pseudovariables
 - pseudovariables
 ms.assetid: fae84f68-2138-4144-9bd4-c9e271b6182a
-caps.latest.revision: "35"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: f2bde32d67bb2e106d058c5a9e62801940d3df25
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: fe5fb5e2b7ba45f36b5388ec9a1555c07173ac67
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="pseudovariables-in-the-visual-studio-debugger"></a>Pseudovariablen in Visual Studio-debugger
 Pseudovariablen sind Begriffe, die bestimmte Informationen in einem Variablenfenster angezeigt oder **Schnellüberwachung** (Dialogfeld). Eine Pseudovariable können Sie genauso wie eine normale Variable eingeben. Pseudovariablen sind jedoch keine Variablen und es gibt keine entsprechenden Variablennamen im Programm.  
@@ -49,10 +47,10 @@ $handles
 |`$env`|Zeigt den Umgebungsblock im Zeichenfolgen-Viewer an.|  
 |`$cmdline`|Zeigt die Befehlszeilenzeichenfolge an, mit der das Programm gestartet wurde.|  
 |`$pid`|Zeigt die Prozess-ID an.|  
-|`$` *registername*<br /><br /> oder<br /><br /> `@` *registername*|Zeigt den Inhalt des Registers *Registername*.<br /><br /> Normalerweise geben Sie zum Anzeigen des Registerinhalts einfach den Registernamen ein. Nur beim Überladen eines Variablennamens durch einen Registernamen müssen Sie diese Syntax verwenden. Wenn der Registername im aktuellen Gültigkeitsbereich dem Variablennamen entspricht, interpretiert der Debugger den Namen als Variablenname. Wird, wenn `$` *Registername* oder `@` *Registername* erweist sich als nützlich.|  
+|`$` *RegisterName*<br /><br /> oder<br /><br /> `@` *RegisterName*|Zeigt den Inhalt des Registers *Registername*.<br /><br /> Normalerweise geben Sie zum Anzeigen des Registerinhalts einfach den Registernamen ein. Nur beim Überladen eines Variablennamens durch einen Registernamen müssen Sie diese Syntax verwenden. Wenn der Registername im aktuellen Gültigkeitsbereich dem Variablennamen entspricht, interpretiert der Debugger den Namen als Variablenname. Wird, wenn `$` *Registername* oder `@` *Registername* erweist sich als nützlich.|  
 |`$clk`|Zeigt die Zeit in Taktzyklen an.|  
 |`$user`|Zeigt eine Struktur mit Kontoinformationen für das die Anwendung ausführende Konto an. Aus Sicherheitsgründen werden die Kennwortinformationen nicht angezeigt.|  
-|`$exceptionstack`|Zeigt die Stapelüberwachung der aktuellen Windows-Runtime-Ausnahme an. `$ exceptionstack`funktioniert nur in uwp-apps. `$ exceptionstack` wird nicht für C++- und SEH-Ausnahmen unterstützt.|  
+|`$exceptionstack`|Zeigt die Stapelüberwachung der aktuellen Windows-Runtime-Ausnahme an. `$ exceptionstack` funktioniert nur in uwp-apps. `$ exceptionstack` wird nicht für C++- und SEH-Ausnahmen unterstützt.|  
 |`$ReturnValue`|Zeigt den Rückgabewert einer .NET Framework-Methode an.|  
   
  Die in dieser Tabelle angezeigten Pseudovariablen können Sie in C# und Visual Basic verwenden:  

@@ -1,11 +1,9 @@
 ---
 title: Bearbeiten und Fortfahren (Dialogfeld) (C++) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
+ms.technology:
+- vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug.ENC.failed.commit
@@ -19,16 +17,16 @@ helpviewer_keywords:
 - Edit and Continue, limitations
 - Failed to Apply Code Changes dialog box
 ms.assetid: 624d9649-5946-4298-a138-70773b72e810
-caps.latest.revision: "11"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 9bfbeb76457966c5c0da4fc55a4a3e03337fe5be
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+manager: douge
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 1088829f6798c6a091a6fd878885b262455cce3f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="edit-and-continue-dialog-box-c"></a>Bearbeiten und Fortfahren (Dialogfeld) (C++)
 Mit der Funktion „Bearbeiten und Fortfahren“ konnten die von Ihnen vorgenommenen Änderungen am nativen Code nicht übernommen werden. Dies ist möglicherweise ein temporäres Problem. Manchmal können mit „Bearbeiten und Fortfahren“ Änderungen an nativem Code nicht sofort übernommen werden. Dies kann aber zu einem späteren Zeitpunkt bei der Debugsitzung erfolgen (z. B. nach Abschluss des aktuellen Aufrufs an die derzeit ausgeführte Prozedur). Weitere Informationen finden Sie unter [bearbeiten und Fortfahren](../debugger/edit-and-continue.md).  

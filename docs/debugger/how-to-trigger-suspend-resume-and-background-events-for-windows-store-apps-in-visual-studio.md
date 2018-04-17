@@ -1,13 +1,10 @@
 ---
-title: "Gewusst wie: Auslösen anhalten, fortsetzen und hintergrundereignissen während des Debuggens uwp-apps | Microsoft Docs"
-ms.custom: 
+title: 'Gewusst wie: Auslösen anhalten, fortsetzen und hintergrundereignissen während des Debuggens uwp-apps | Microsoft Docs'
+ms.custom: ''
 ms.date: 01/16/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.error.background_task_activate_failure
 dev_langs:
@@ -15,17 +12,16 @@ dev_langs:
 - VB
 - FSharp
 - C++
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 036362ec392e6deba9bed1ef185c602d508d4da4
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+ms.openlocfilehash: 33958dd97c4ca8958c4f96ebe84697f2953afa9d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>Gewusst wie: Auslösen anhalten, fortsetzen und hintergrundereignissen während des Debuggens uwp-apps in Visual Studio
 Wenn Sie nicht debuggen, steuert die Windows-PLM ( **Process Lifetime Management** , Prozessverwaltung für Lebensdauer) den Ausführungszustand der App, d. h. das Starten, Anhalten, Fortsetzen und Beenden der App als Reaktion auf Benutzeraktionen und den Gerätezustand. Wenn Sie debuggen, deaktiviert Windows diese Aktivierungsereignisse. In diesem Thema wird beschrieben, wie solche Ereignisse im Debugger ausgelöst werden.  
@@ -83,11 +79,11 @@ Wenn Sie nicht debuggen, steuert die Windows-PLM ( **Process Lifetime Management
   
     -   Wählen Sie für Visual C#- und Visual Basic-Projekte **Eigenen Code zunächst nicht starten sondern debuggen**aus.  
   
-         ![C &#35; &#47; VB Debuggen starten Anwendungseigenschaft](../debugger/media/dbg_csvb_dontlaunchapp.png "DBG_CsVb_DontLaunchApp")  
+         ![C&#35;&#47;VB Debuggen starten Anwendungseigenschaft](../debugger/media/dbg_csvb_dontlaunchapp.png "DBG_CsVb_DontLaunchApp")  
   
     -   Wählen Sie für JavaScript- und Visual C++-Projekte **Nein** aus der Liste **Anwendung starten** aus.  
   
-         ![C &#43; &#43; &#47; Debug-Anwendungseigenschaft VB starten](../debugger/media/dbg_cppjs_dontlaunchapp.png "DBG_CppJs_DontLaunchApp")  
+         ![C&#43;&#43;&#47;VB starten Debug Anwendungseigenschaft](../debugger/media/dbg_cppjs_dontlaunchapp.png "DBG_CppJs_DontLaunchApp")  
   
 4.  Drücken Sie **F5** , um die App in den Debugmodus zu versetzen. Beachten Sie, dass die Liste **Prozess** auf der Symbolleiste **Debugspeicherort** den Namen des Apppakets anzeigt, um zu signalisieren, dass der Debugmodus aktiv ist.  
   

@@ -1,27 +1,25 @@
 ---
 title: Abrufen von lokalen Werten | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - expression evaluation, local values
 - debugging [Debugging SDK], local values
 - expression evaluation, getting local values
 ms.assetid: a10b0764-65ac-476f-bf42-b4a9c38e20de
-caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 284821c9c1a31105f865333a45944a23792cd33a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 4b38b346b8429ba04fb3730ea4c5fef0b2b6da1d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="getting-local-values"></a>Abrufen von lokalen Werten
 > [!IMPORTANT]
@@ -40,7 +38,7 @@ ms.lasthandoff: 12/22/2017
 4.  Gibt alle angeforderte Eigenschaften in einem [DEBUG_PROPERTY_INFO](../../extensibility/debugger/reference/debug-property-info.md) Struktur.  
   
 ## <a name="managed-code"></a>Verwalteter Code  
- Dieses Beispiel zeigt eine Implementierung von `IDebugProperty2::GetPropertyInfo` für eine Methode den lokalen in verwaltetem Code. Darüber hinaus wird gezeigt, eine Hilfsfunktion `Field.GetType`, d. h. zum Abrufen der Typ des Felds verwendet. `Field.GetValue`wird angezeigt, [auswerten "lokal"](../../extensibility/debugger/evaluating-locals.md). Die Hilfsfunktion `Field.MapModifiersToAttributes` (nicht dargestellt) einfach ein Feld konvertiert [FIELD_MODIFIERS](../../extensibility/debugger/reference/field-modifiers.md) flags [DBG_ATTRIB_FLAGS](../../extensibility/debugger/reference/dbg-attrib-flags.md) Werte.  
+ Dieses Beispiel zeigt eine Implementierung von `IDebugProperty2::GetPropertyInfo` für eine Methode den lokalen in verwaltetem Code. Darüber hinaus wird gezeigt, eine Hilfsfunktion `Field.GetType`, d. h. zum Abrufen der Typ des Felds verwendet. `Field.GetValue` wird angezeigt, [auswerten "lokal"](../../extensibility/debugger/evaluating-locals.md). Die Hilfsfunktion `Field.MapModifiersToAttributes` (nicht dargestellt) einfach ein Feld konvertiert [FIELD_MODIFIERS](../../extensibility/debugger/reference/field-modifiers.md) flags [DBG_ATTRIB_FLAGS](../../extensibility/debugger/reference/dbg-attrib-flags.md) Werte.  
   
 ```csharp  
 namespace EEMC  

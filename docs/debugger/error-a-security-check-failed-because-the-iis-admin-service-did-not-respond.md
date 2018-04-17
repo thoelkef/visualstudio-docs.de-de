@@ -1,12 +1,9 @@
 ---
-title: "Fehler: Eine Sicherheitsprüfung ist fehlgeschlagen, da der IIS-Admin-Dienst nicht antwortete | Microsoft Docs"
-ms.custom: 
+title: 'Fehler: Eine Sicherheitsprüfung ist fehlgeschlagen, da der IIS-Admin-Dienst nicht antwortete | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - vs.debug.error.iis_not_responding
@@ -17,17 +14,16 @@ dev_langs:
 - C++
 helpviewer_keywords:
 - debugger, Web application errors
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 85b96d9e1396933519da71e93bac075ee51af001
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 87a0379848f17ebe875e8680e95948e9d15e0671
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="error-a-security-check-failed-because-the-iis-admin-service-did-not-respond"></a>Fehler: Fehler bei einer Sicherheitsüberprüfung, weil der IIS-Verwaltungsdienst nicht reagiert hat
 Dieser Fehler tritt auf, wenn der IIS-Verwaltungsdienst nicht reagiert. Normalerweise weist dies auf ein Problem mit der IIS-Installation hin. Überprüfen Sie, dass der Dienst ausgeführt wird, mithilfe der **Services** -tool vom **Verwaltung**.  

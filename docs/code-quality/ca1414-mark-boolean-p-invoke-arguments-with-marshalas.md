@@ -1,12 +1,10 @@
 ---
 title: ': Ca1414 boolesche P / Invoke-Argumente mit MarshalAs markieren | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - CA1414
 - MarkBooleanPInvokeArgumentsWithMarshalAs
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - CA1414
 - MarkBooleanPInvokeArgumentsWithMarshalAs
 ms.assetid: c0c84cf5-7701-4897-9114-66fc4b895699
-caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 3ce70291bd59ef3211c9fea871c8155f1a3e7fed
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 16e561e04444fba7200c00f299cc775978829100
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca1414-mark-boolean-pinvoke-arguments-with-marshalas"></a>CA1414: Boolesche P/Invoke-Argumente mit MarshalAs markieren
 |||  
@@ -37,7 +35,7 @@ ms.lasthandoff: 12/22/2017
  Eine Plattformaufrufmethode Deklaration enthält eine <xref:System.Boolean?displayProperty=fullName> Parameter-oder Rückgabewert jedoch <xref:System.Runtime.InteropServices.MarshalAsAttribute?displayProperty=fullName> -Attribut nicht auf den Wert Parameters oder des Rückgabewerts angewendet wird.  
   
 ## <a name="rule-description"></a>Regelbeschreibung  
- Eine Plattformaufrufmethode greift auf nicht verwalteten Code und wird definiert, mit der `Declare` -Schlüsselwort in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] oder <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName>. <xref:System.Runtime.InteropServices.MarshalAsAttribute>Gibt an, die Marshalling-Verhalten, das zum Konvertieren von Datentypen zwischen verwaltetem und nicht verwaltetem Code verwendet wird. Viele einfache Datentypen, wie z. B. <xref:System.Byte?displayProperty=fullName> und <xref:System.Int32?displayProperty=fullName>, verfügen über eine einzige Darstellung in nicht verwaltetem Code und erfordern keine Angabe der Marshalling-Verhalten; die common Language Runtime stellt automatisch das richtige Verhalten.  
+ Eine Plattformaufrufmethode greift auf nicht verwalteten Code und wird definiert, mit der `Declare` -Schlüsselwort in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] oder <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName>. <xref:System.Runtime.InteropServices.MarshalAsAttribute> Gibt an, die Marshalling-Verhalten, das zum Konvertieren von Datentypen zwischen verwaltetem und nicht verwaltetem Code verwendet wird. Viele einfache Datentypen, wie z. B. <xref:System.Byte?displayProperty=fullName> und <xref:System.Int32?displayProperty=fullName>, verfügen über eine einzige Darstellung in nicht verwaltetem Code und erfordern keine Angabe der Marshalling-Verhalten; die common Language Runtime stellt automatisch das richtige Verhalten.  
   
  Die <xref:System.Boolean> Datentyp verfügt über mehrere Darstellungen in nicht verwaltetem Code. Wenn die <xref:System.Runtime.InteropServices.MarshalAsAttribute> nicht angegeben wird, das standardmäßige Marshallingverhalten für die <xref:System.Boolean> Datentyp <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>. Dies ist eine 32-Bit-Ganzzahl, die in allen Fällen nicht geeignet ist. Boolean-Darstellung, die nicht verwaltete Methode benötigt bestimmt und an die entsprechende abgeglichen werden soll <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>. UnmanagedType.Bool ist der Win32-BOOL-Typ, der immer 4 Bytes. UnmanagedType.U1 kommt für C++ `bool` oder andere 1-Byte-Typen.  
   

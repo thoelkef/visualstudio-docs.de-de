@@ -1,23 +1,21 @@
 ---
 title: Erstellen eines Software Development Kits | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 8496afb4-1573-4585-ac67-c3d58b568a12
-caps.latest.revision: "54"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 4ea17b02cfa2e987c4a3c02acddf838001b4ae2f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 55b62ac0ac448023793f511389146ebb1b07da0f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="creating-a-software-development-kit"></a>Erstellen eines Software Development Kits
 Ein Software Development Kit (SDK) ist eine Sammlung von APIs, die Sie als ein einzelnes Element in Visual Studio verweisen können. Die **Verweis-Manager** Dialogfeld führt alle SDK auf, die für das Projekt relevant sind. Wenn Sie ein Projekt eine SDK hinzufügen, sind die APIs in Visual Studio verfügbar.  
@@ -34,7 +32,7 @@ Ein Software Development Kit (SDK) ist eine Sammlung von APIs, die Sie als ein e
   
 -   [Erweiterungs-SDKs](#ExtensionSDKs)  
   
-##  <a name="PlatformSDKs"></a>Plattform-SDKs  
+##  <a name="PlatformSDKs"></a> Plattform-SDKs  
  Plattform-SDKs sind erforderlich, zum Entwickeln von apps für eine Plattform. Z. B. die [!INCLUDE[win81](../debugger/includes/win81_md.md)] SDK ist erforderlich, um das Entwickeln von apps für [!INCLUDE[win81](../debugger/includes/win81_md.md)].  
   
 ### <a name="installation"></a>Installation  
@@ -62,7 +60,7 @@ Ein Software Development Kit (SDK) ist eine Sammlung von APIs, die Sie als ein e
 |Architektur-Ordner|Kann einen beliebigen unterstützten Architektur Ordner vorhanden sein. Visual Studio unterstützt die folgenden Architekturen: X86, X64, ARM- und Neutral. Hinweis: Win32 X86 ist und "anycpu" neutrale zugeordnet.<br /><br /> MSBuild sucht nur unter \CommonConfiguration\neutral Plattform-SDKs.|  
 |SDKManifest.xml|Diese Datei wird beschrieben, wie Visual Studio SDK reserviert werden soll. Betrachten Sie das SDK-Manifest für [!INCLUDE[win81](../debugger/includes/win81_md.md)]:<br /><br /> `<FileList             DisplayName = "Windows"             PlatformIdentity = "Windows, version=8.1"             TargetFramework = ".NET for Windows Store apps, version=v4.5.1; .NET Framework, version=v4.5.1"             MinVSVersion = "14.0">              <File Reference = "Windows.winmd">                <ToolboxItems VSCategory = "Toolbox.Default" />             </File> </FileList>`<br /><br /> **DisplayName:** der Wert, der den Objektkatalog in der Liste angezeigt.<br /><br /> **PlatformIdentity:** das Vorhandensein dieses Attributs teilt Visual Studio und MSBuild, dass das SDK eine Plattform-SDK ist und die Verweise hinzugefügt, daraus kopiert werden sollten nicht lokal.<br /><br /> **TargetFramework:** dieses Attribut wird von Visual Studio verwendet, um sicherzustellen, die nur Projekte, auf die gleichen Frameworks entsprechend den Angaben in den Wert dieses Attributs, das SDK genutzt werden kann.<br /><br /> **MinVSVersion:** dieses Attribut wird von Visual Studio verwendet, um nur die SDKs nutzen, die für sie gelten.<br /><br /> **Referenz:** dieses Attribut muss für die nur die Verweise angegeben werden, die Steuerelemente enthalten. Informationen dazu, wie Sie angeben, ob ein Verweis Steuerelemente enthält finden Sie weiter unten.|  
   
-##  <a name="ExtensionSDKs"></a>Erweiterungs-SDKs  
+##  <a name="ExtensionSDKs"></a> Erweiterungs-SDKs  
  In den folgenden Abschnitten wird beschrieben, was Sie tun können, um eine Erweiterungs-SDK bereitstellen müssen.  
   
 ### <a name="installation"></a>Installation  
@@ -173,7 +171,7 @@ MoreInfo = "http://msdn.microsoft.com/MySDK">
   
 6.  MaxPlatformVerson: Die maximale Version der Zielplattform sollte verwendet werden, um die Plattformversionen anzugeben, auf denen die Erweiterung-SDK nicht funktionieren. Beispielsweise sollte der Microsoft Visual C++ Runtime Package V11. 0 nur von Windows 8-Projekte verwiesen werden. Daher ist das Windows 8-Projekt MaxPlatformVersion 8.0. Dies bedeutet, dass der Verweis-Manager Microsoft Visual C++-Laufzeitpaket für ein Windows 8.1-Projekt filtert, und MSBuild einen Fehler löst bei einer [!INCLUDE[win81](../debugger/includes/win81_md.md)] Projekt verweist darauf. Hinweis: dieses Element wird unterstützt ab [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)].  
   
-7.  AppliesTo: Gibt die SDKs, die im Verweis-Manager verfügbar sind, durch Angeben der geltenden Visual Studio-Projekttypen. Es werden neun Werte erkannt: WindowsAppContainer, VisualC, VB, CSharp, WindowsXAML, JavaScript, verwaltet und systemeigen. Der Autor des SDK können und ("+"), oder ("&#124;"), nicht ("!") Operatoren, die genau den Bereich der Projekttypen anzugeben, die für das SDK gelten.  
+7.  AppliesTo: Gibt die SDKs, die im Verweis-Manager verfügbar sind, durch Angeben der geltenden Visual Studio-Projekttypen. Es werden neun Werte erkannt: WindowsAppContainer, VisualC, VB, CSharp, WindowsXAML, JavaScript, verwaltet und systemeigen. Der Autor des SDK können und ("+"), oder ("&#124;"), und nicht ("!") Operatoren, die genau den Bereich der Projekttypen anzugeben, die für das SDK gelten.  
   
      WindowsAppContainer identifiziert Projekte für [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] apps.  
   
@@ -195,7 +193,7 @@ MoreInfo = "http://msdn.microsoft.com/MySDK">
   
 16. Dateiverweis: für die nur die Verweise, die Steuerelemente enthalten oder sind systemeigene WinMDs angegeben. Weitere Informationen dazu, wie Sie angeben, ob ein Verweis Steuerelemente enthält, finden Sie unter [angeben Speicherort Toolboxelemente](#ToolboxItems) unten.  
   
-##  <a name="ToolboxItems"></a>Angeben des Speicherorts von Toolboxelementen  
+##  <a name="ToolboxItems"></a> Angeben des Speicherorts von Toolboxelementen  
  Das ToolBoxItems-Element des Schemas SDKManifest.xml gibt die Kategorie und Standort von Toolboxelementen in Platform und Erweiterungs-SDKs. Die folgenden Beispiele zeigen, wie um verschiedene Speicherorte anzugeben. Dieser Schritt betrifft WinMD oder DLL-Verweise.  
   
 1.  Richten Sie Kontrollen in die Toolbox Standardkategorie.  

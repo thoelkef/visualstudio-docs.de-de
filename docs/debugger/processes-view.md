@@ -1,29 +1,25 @@
 ---
 title: Prozessansicht | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.externaltools.spyplus.processesview
 helpviewer_keywords:
 - Processes view
 ms.assetid: e144e70e-eef2-45a7-a562-a177f177d9a1
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d2dc97cbe5c6bc178e4b14c89287a3f1c3794dca
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 40a92a65e4a10cd5321f513cb313035d8910022f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="processes-view"></a>Prozessansicht
 Die Prozesse zeigt eine Strukturansicht aller aktiven Prozesse auf Ihrem System. Die Prozess-ID und den Modulnamen werden angezeigt. Verwenden Sie die Prozessansicht aus, wenn Sie möchten einen bestimmte Systemprozess zu überprüfen, die zum Ausführen eines Programms in der Regel entspricht. Prozesse werden durch Modulnamen identifiziert, oder sie werden als "Systemprozesse."  
@@ -38,7 +34,7 @@ Die Prozesse zeigt eine Strukturansicht aller aktiven Prozesse auf Ihrem System.
   
 1.  Aus der **Spy++** Menü wählen **Prozesse**.  
   
- ![Spy++ &#43; &#43; Prozessansicht](../debugger/media/spy--_processes.png "Spy++ ++ _Processes")  
+ ![Spy++&#43; &#43; Prozessansicht](../debugger/media/spy--_processes.png "Spy++ ++ _Processes")  
 Spy++-Prozessansicht  
   
  Die obige Abbildung zeigt die Prozesse an, mit Prozessen und Threads Knoten erweitert.  

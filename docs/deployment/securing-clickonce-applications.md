@@ -1,13 +1,10 @@
 ---
 title: Sichern von ClickOnce-Anwendungen | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 02/17/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,17 +14,16 @@ helpviewer_keywords:
 - ClickOnce deployment, security
 - deploying applications, ClickOnce security
 ms.assetid: a05b5f2f-d1f2-471a-8096-8b11f7554265
-caps.latest.revision: 
 author: stevehoag
 ms.author: shoag
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: a7825ef0b664007fc119d7ed08066e8585ee59ac
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 8f41fb12c8ec9a5a3cec0a802f7fc5b4216a39d6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="securing-clickonce-applications"></a>Sichern von ClickOnce-Anwendungen
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendungen unterliegen in .NET Framework Einschränkungen in Bezug auf die Codezugriffssicherheit, um den Zugriff zu begrenzen, den Code auf geschützte Ressourcen und Vorgänge hat. Daher ist es wichtig, dass Sie sich mit dem Thema Codezugriffssicherheit auseinandersetzen und diese Kenntnisse beim Schreiben von [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendungen anwenden. Die Anwendungen können Zonen mit voller Vertrauenswürdigkeit oder teilweise vertrauenswürdige Zonen verwenden, z. B. die Internet- und Intranetzonen, um den Zugriff einzuschränken.  
@@ -51,7 +47,7 @@ ms.lasthandoff: 12/22/2017
   
  Das Einschließen einer Berechtigung, die nicht zum Standardberechtigungssatz der Zone gehört, aus der die Anwendung bereitgestellt wird, führt dazu, dass der Endbenutzer bei der Installation oder bei einem Update zum Gewähren der Berechtigung aufgefordert wird. Um zu verhindern, dass Benutzer Eingabeaufforderungen erhalten, kann ein Systemadministrator eine ClickOnce-Bereitstellungsrichtlinie angeben, die einen bestimmten Anwendungsherausgeber als vertrauenswürdige Quelle definiert. Auf Computern, auf denen diese Richtlinie bereitgestellt wurde, werden Berechtigungen automatisch gewährt, und es werden keine Aufforderungen an Benutzer ausgegeben.  
   
- Als Entwickler müssen Sie sicherstellen, dass Ihre Anwendung mit den geeigneten Berechtigungen ausgeführt wird. Wenn die Anwendung während der Laufzeit Berechtigungen außerhalb einer Zone anfordert, wird ggf. eine Sicherheitsausnahme angezeigt. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ermöglicht es Ihnen, Ihre Anwendung in der Zielsicherheitszone zu debuggen, und bietet Hilfe beim Entwickeln von sicheren Anwendungen. Weitere Informationen finden Sie unter [How to: Debug a ClickOnce Application with Restricted Permissions](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md).  
+ Als Entwickler müssen Sie sicherstellen, dass Ihre Anwendung mit den geeigneten Berechtigungen ausgeführt wird. Wenn die Anwendung während der Laufzeit Berechtigungen außerhalb einer Zone anfordert, wird ggf. eine Sicherheitsausnahme angezeigt. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ermöglicht es Ihnen, Ihre Anwendung in der Zielsicherheitszone zu debuggen, und bietet Hilfe beim Entwickeln von sicheren Anwendungen. Weitere Informationen finden Sie unter [Gewusst wie: Debuggen eine ClickOnce-Anwendung mit eingeschränkten Berechtigungen](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md).  
   
  Weitere Informationen zur Codezugriffssicherheit und zu ClickOnce finden Sie unter [Code Access Security for ClickOnce Applications](../deployment/code-access-security-for-clickonce-applications.md).  
   

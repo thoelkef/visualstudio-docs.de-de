@@ -1,28 +1,26 @@
 ---
-title: "Angeben, wann und wo eine Anmerkung gültig | Microsoft Docs"
-ms.custom: 
+title: Angeben, wann und wo eine Anmerkung gültig | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - _Group_
 - _At_
 - _When_
 - _At_buffer_
 ms.assetid: 8e4f4f9c-5dfa-4835-87df-ecd1698fc650
-caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: eaca3429ccc1defe51ee849bf46146931390a571
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 4413f547429e88346c4d977cff4d5b93995a1741
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="specifying-when-and-where-an-annotation-applies"></a>Angeben, wann und wo eine Anmerkung gültig ist
 Wenn eine Anmerkung bedingte ist, kann es andere Anmerkungen angeben, dass der Analyzer belegen.  Beispielsweise verfügt eine Funktion eine Variable, die entweder synchron oder asynchron sein kann, die Funktion verhält sich wie folgt: In den synchronen Fall immer schließlich erfolgreich abgeschlossen wird, aber in der asynchronen Fall es einen Fehler meldet, wenn er sofort erfolgreich abgeschlossen werden kann. Wenn die Funktion synchron aufgerufen wird, bietet das Überprüfen des Ergebniswerts kein Wert für die Code-Analyzer, da würde nicht zurückgegeben haben.  Wenn die Funktion asynchron aufgerufen wird und das Ergebnis der Funktion nicht aktiviert ist, konnte jedoch ein schwerwiegender Fehler auftreten. Dieses Beispiel veranschaulicht eine Situation, in dem Sie mithilfe, der `_When_` Anmerkung – weiter unten in diesem Artikel beschrieben – zu aktivieren.  
@@ -32,10 +30,10 @@ Wenn eine Anmerkung bedingte ist, kann es andere Anmerkungen angeben, dass der A
   
 |Anmerkung|Beschreibung|  
 |----------------|-----------------|  
-|`_At_(expr, anno-list)`|`expr`ist ein Ausdruck, der einen l-Wert ergibt. Die Anmerkungen in `anno-list` gelten für das Objekt mit dem Namen von `expr`. Für jede Anmerkung in `anno-list`, `expr` in Vorbedingung interpretiert, wenn die Anmerkung wird im Vorbedingung interpretiert, sodass in nachbedingung, wenn die Anmerkung in der nachbedingung interpretiert wird.|  
-|`_At_buffer_(expr, iter, elem-count, anno-list)`|`expr`ist ein Ausdruck, der einen l-Wert ergibt. Die Anmerkungen in `anno-list` gelten für das Objekt mit dem Namen von `expr`. Für jede Anmerkung in `anno-list`, `expr` in Vorbedingung interpretiert, wenn die Anmerkung in Vorbedingung, und in nachbedingung, wenn die Anmerkung in der nachbedingung interpretiert wird.<br /><br /> `iter`Der Name einer Variablen, die für die Anmerkung festgelegt ist (schließt `anno-list`). `iter`verfügt über einen impliziten `long`. In jedem Gültigkeitsbereich der einschließenden gleichnamigen Variablen werden aus der Auswertung ausgeblendet.<br /><br /> `elem-count`ist ein Ausdruck, der eine ganze Zahl ergibt.|  
+|`_At_(expr, anno-list)`|`expr` ist ein Ausdruck, der einen l-Wert ergibt. Die Anmerkungen in `anno-list` gelten für das Objekt mit dem Namen von `expr`. Für jede Anmerkung in `anno-list`, `expr` in Vorbedingung interpretiert, wenn die Anmerkung wird im Vorbedingung interpretiert, sodass in nachbedingung, wenn die Anmerkung in der nachbedingung interpretiert wird.|  
+|`_At_buffer_(expr, iter, elem-count, anno-list)`|`expr` ist ein Ausdruck, der einen l-Wert ergibt. Die Anmerkungen in `anno-list` gelten für das Objekt mit dem Namen von `expr`. Für jede Anmerkung in `anno-list`, `expr` in Vorbedingung interpretiert, wenn die Anmerkung in Vorbedingung, und in nachbedingung, wenn die Anmerkung in der nachbedingung interpretiert wird.<br /><br /> `iter` Der Name einer Variablen, die für die Anmerkung festgelegt ist (schließt `anno-list`). `iter` verfügt über einen impliziten `long`. In jedem Gültigkeitsbereich der einschließenden gleichnamigen Variablen werden aus der Auswertung ausgeblendet.<br /><br /> `elem-count` ist ein Ausdruck, der eine ganze Zahl ergibt.|  
 |`_Group_(anno-list)`|Die Anmerkungen in `anno-list` gelten alle, alle Qualifizierer verwenden, die für die Gruppe-Anmerkung gilt, die auf jede Anmerkung angewendet wird.|  
-|`_When_(expr, anno-list)`|`expr`ist ein Ausdruck, der konvertiert werden kann `bool`. Wenn es nicht 0 (null) ist (`true`), die Anmerkungen, die im angegebenen `anno-list` als anwendbar betrachtet werden.<br /><br /> Standardmäßig wird für jede Anmerkung in `anno-list`, `expr` als mit den Eingabewerten vornimmt, wenn die Anmerkung eine Vorbedingung ist und wie die Verwendung der Ausgabewerte, wenn die Anmerkung eine nachbedingung ist interpretiert wird. Um die Standardeinstellung zu überschreiben, können Sie die `_Old_` systeminterne bei der Auswertung einer nachbedingung, um anzugeben, dass die Eingabewerte verwendet werden soll. **Hinweis:** andere Anmerkungen können aktiviert werden, als Folge mit `_When_` Wenn änderbaren Werts – z. B. `*pLength`– ist erforderlich, da ausgewerteten Ergebnisses des `expr` in Vorbedingung weicht möglicherweise von der ausgewerteten Führen Sie nach der Bedingung ein.|  
+|`_When_(expr, anno-list)`|`expr` ist ein Ausdruck, der konvertiert werden kann `bool`. Wenn es nicht 0 (null) ist (`true`), die Anmerkungen, die im angegebenen `anno-list` als anwendbar betrachtet werden.<br /><br /> Standardmäßig wird für jede Anmerkung in `anno-list`, `expr` als mit den Eingabewerten vornimmt, wenn die Anmerkung eine Vorbedingung ist und wie die Verwendung der Ausgabewerte, wenn die Anmerkung eine nachbedingung ist interpretiert wird. Um die Standardeinstellung zu überschreiben, können Sie die `_Old_` systeminterne bei der Auswertung einer nachbedingung, um anzugeben, dass die Eingabewerte verwendet werden soll. **Hinweis:** andere Anmerkungen können aktiviert werden, als Folge mit `_When_` Wenn änderbaren Werts – z. B. `*pLength`– ist erforderlich, da ausgewerteten Ergebnisses des `expr` in Vorbedingung weicht möglicherweise von der ausgewerteten Führen Sie nach der Bedingung ein.|  
   
 ## <a name="see-also"></a>Siehe auch  
  [Verwenden von SAL-Anmerkungen zum Reduzieren von C/C++-Codefehlern](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   

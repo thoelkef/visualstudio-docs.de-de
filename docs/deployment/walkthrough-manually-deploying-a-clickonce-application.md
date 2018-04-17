@@ -1,13 +1,10 @@
 ---
 title: 'Exemplarische Vorgehensweise: Manuelles Bereitstellen einer ClickOnce-Anwendung | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,17 +18,16 @@ helpviewer_keywords:
 - manual ClickOnce deployments
 - manifests [ClickOnce]
 ms.assetid: ccee6551-a1b9-4ca2-8845-9c1cf4ac2560
-caps.latest.revision: 
 author: stevehoag
 ms.author: shoag
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e0035641a8ed374892060dbaabe79d808150cc2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 001aa8f3436e1594b198a81779c77258ca829a21
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-manually-deploying-a-clickonce-application"></a>Exemplarische Vorgehensweise: Manuelles Bereitstellen einer ClickOnce-Anwendung
 Wenn Sie Visual Studio, zum Bereitstellen verwenden können Ihrer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] , oder Sie müssen erweiterte Funktionen verwenden, z. B. Bereitstellung vertrauenswürdiger Anwendungen, sollten Sie das Befehlszeilentool "Mage.exe" verwenden, um das Erstellen Ihrer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Manifeste. In dieser exemplarischen Vorgehensweise wird beschrieben, wie zum Erstellen einer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Bereitstellung mithilfe der Befehlszeilenversion (Mage.exe) oder die grafische Version (MageUI.exe), der das Manifest Tool zum Generieren und bearbeiten.  
@@ -70,7 +66,7 @@ Wenn Sie Visual Studio, zum Bereitstellen verwenden können Ihrer [!INCLUDE[ndpt
   
 -   Bestimmen Sie, ob die Anwendung erforderlichen Komponenten auf dem Clientcomputer erforderlich ist.  
   
-     [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]in Visual Studio bereitgestellte Anwendungen können erforderlichen Installationskomponenten Bootstrapper (setup.exe) mit Ihrer Bereitstellung enthalten. In dieser exemplarischen Vorgehensweise erstellt, die zwei Manifeste erforderlich für eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Bereitstellung. Sie können einen erforderliche Bootstrapper erstellen, mit der [GenerateBootstrapper-Aufgabe](../msbuild/generatebootstrapper-task.md).  
+     [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] in Visual Studio bereitgestellte Anwendungen können erforderlichen Installationskomponenten Bootstrapper (setup.exe) mit Ihrer Bereitstellung enthalten. In dieser exemplarischen Vorgehensweise erstellt, die zwei Manifeste erforderlich für eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Bereitstellung. Sie können einen erforderliche Bootstrapper erstellen, mit der [GenerateBootstrapper-Aufgabe](../msbuild/generatebootstrapper-task.md).  
   
 ### <a name="to-deploy-an-application-with-the-mageexe-command-line-tool"></a>Zum Bereitstellen einer Anwendung mit dem Befehlszeilentool Mage.exe  
   
@@ -128,7 +124,7 @@ Wenn Sie Visual Studio, zum Bereitstellen verwenden können Ihrer [!INCLUDE[ndpt
   
 10. Kopieren Sie alle Dateien im Bereitstellungsverzeichnis in das Bereitstellungsziel oder ein Medium. Dies kann entweder einen Ordner auf einer Website oder FTP-Site, eine Dateifreigabe oder eine CD-ROM sein.  
   
-11. Geben Sie Ihre Benutzer mit der URL, den UNC- oder die physische Medien, die zur Installation der Anwendungsstatus erforderlich sind. Wenn Sie eine URL oder eine UNC-angeben, müssen Sie Ihre Benutzer den vollständigen Pfad zum Bereitstellungsmanifest erteilen. Z. B. Wenn AppToDeploy für http://webserver01/ im Verzeichnis AppToDeploy bereitgestellt wird, wäre die vollständige URL-Pfad http://webserver01/AppToDeploy/AppToDeploy.application.  
+11. Geben Sie Ihre Benutzer mit der URL, den UNC- oder die physische Medien, die zur Installation der Anwendungsstatus erforderlich sind. Wenn Sie eine URL oder eine UNC-angeben, müssen Sie Ihre Benutzer den vollständigen Pfad zum Bereitstellungsmanifest erteilen. Wenn AppToDeploy bereitgestellt wird, um z. B. http://webserver01/ in das Verzeichnis AppToDeploy wäre die vollständige URL-Pfad http://webserver01/AppToDeploy/AppToDeploy.application.  
   
 ### <a name="to-deploy-an-application-with-the-mageuiexe-graphical-tool"></a>Zum Bereitstellen einer Anwendung mit dem grafischen Tool MageUI.exe  
   
@@ -203,7 +199,7 @@ Wenn Sie Visual Studio, zum Bereitstellen verwenden können Ihrer [!INCLUDE[ndpt
   
 28. Kopieren Sie alle Dateien im Bereitstellungsverzeichnis in das Bereitstellungsziel oder ein Medium. Dies kann entweder einen Ordner auf einer Website oder FTP-Site, eine Dateifreigabe oder eine CD-ROM sein.  
   
-29. Geben Sie Ihre Benutzer mit der URL, den UNC- oder die physische Medien, die zur Installation der Anwendungsstatus erforderlich sind. Wenn Sie eine URL oder eine UNC-angeben, müssen Sie Ihre Benutzer den vollständigen Pfad des Bereitstellungsmanifests erteilen. Z. B. Wenn AppToDeploy für http://webserver01/ im Verzeichnis AppToDeploy bereitgestellt wird, wäre die vollständige URL-Pfad http://webserver01/AppToDeploy/AppToDeploy.application.  
+29. Geben Sie Ihre Benutzer mit der URL, den UNC- oder die physische Medien, die zur Installation der Anwendungsstatus erforderlich sind. Wenn Sie eine URL oder eine UNC-angeben, müssen Sie Ihre Benutzer den vollständigen Pfad des Bereitstellungsmanifests erteilen. Wenn AppToDeploy bereitgestellt wird, um z. B. http://webserver01/ in das Verzeichnis AppToDeploy wäre die vollständige URL-Pfad http://webserver01/AppToDeploy/AppToDeploy.application.  
   
 ## <a name="next-steps"></a>Nächste Schritte  
  Wenn Sie eine neue Version der Anwendung bereitstellen, erstellen Sie ein neues Verzeichnis mit dem Namen der neuen Version – z. B. 1.0.0.1 kopieren Sie die neue Anwendungsdateien in das neue Verzeichnis. Als Nächstes müssen Sie die vorherigen Schritte zum Erstellen und Signieren ein neues Anwendungsmanifest und aktualisieren sowie das Bereitstellungsmanifest zu signieren. Achten Sie darauf, dass Sie an die gleiche höhere Version in beide Mage.exe `-New` und `-Update` Aufrufe als [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aktualisiert nur die am weitesten links Ganzzahl, die die wichtigsten höhere Versionen. Wenn Sie MageUI.exe verwenden, können Sie aktualisieren das Bereitstellungsmanifest öffnen, Auswahl der **Anwendungsverweis** Registerkarte, auf die **Manifest auswählen** Schaltfläche und wählen Sie dann die aktualisierte Anwendungsmanifest.  

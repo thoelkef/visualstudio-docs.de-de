@@ -1,13 +1,10 @@
 ---
 title: 'Vorgehensweise: Verwenden von bearbeiten und Fortfahren (c#) | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -16,17 +13,16 @@ dev_langs:
 helpviewer_keywords:
 - Edit and Continue [C#], about Edit and Continue
 ms.assetid: 40e136d8-a08c-43bd-b313-fb821c55eb3c
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: fe77428d1d9cfb5ff12554e87ec9afe15d6c86b8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 587ee3bb7221c0fce82048112945ac8581796d23
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-use-edit-and-continue-c"></a>Gewusst wie: Verwenden von "Bearbeiten und Fortfahren" (C#)
 Mit Bearbeiten und Fortfahren für C# können Sie beim Debuggen Codeänderungen im Unterbrechungsmodus vornehmen. Die Änderungen können übernommen werden, ohne die Debugsitzung anhalten und neu starten zu müssen.  

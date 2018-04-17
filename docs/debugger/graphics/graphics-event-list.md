@@ -1,27 +1,23 @@
 ---
 title: Grafikereignisliste | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics.eventlist
 ms.assetid: a1252e19-b27d-4dc7-a16b-fdac894c1f0e
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 601fc4eb47e89a4035f14722793169a76d73f520
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 244f7dd8c89eb1dcb15b81bcb20c0db9cb6cf617
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="graphics-event-list"></a>Grafikereignisliste
 Verwenden Sie die Grafikereignisliste in der Visual Studio-Grafikanalyse, um die Direct3D-Ereignisse zu untersuchen, die während des Renderings eines Frames Ihres Spiels oder Ihrer App aufgezeichnet wurden.  
@@ -75,8 +71,8 @@ Verwenden Sie die Grafikereignisliste in der Visual Studio-Grafikanalyse, um die
 |----------|-----------------------|  
 |(kein Symbol)|Allgemeines Ereignis<br /> Ein Ereignis, das kein benutzerdefiniertes Ereignis, keine benutzerdefinierte Ereignisgruppe und kein Zeichnen-Ereignis ist.|  
 |![Symbol für Draw-Ereignis](media/vsg_eventlist_icon_draw.png "Vsg_eventlist_icon_draw")|Zeichnen-Ereignis<br /> Markiert ein Zeichnen-Ereignis, das während des erfassten Frames aufgetreten ist.|  
-|![Der Benutzer &#45; definierten Marker Ereignissymbol](media/vsg_eventlist_icon_user.png "Vsg_eventlist_icon_user")|Benutzerdefinierte Ereignisgruppe<br /> Gruppiert verwandte Ereignisse auf von der App definierte Art.|  
-|![Der Benutzer &#45; definierten Marker Ereignissymbol](media/vsg_eventlist_icon_user.png "Vsg_eventlist_icon_user")|Benutzerdefinierter Ereignismarker<br /> Markiert einen bestimmten Speicherort auf von der App definierte Art.|  
+|![Der Benutzer&#45;definiert Marker Ereignissymbol](media/vsg_eventlist_icon_user.png "Vsg_eventlist_icon_user")|Benutzerdefinierte Ereignisgruppe<br /> Gruppiert verwandte Ereignisse auf von der App definierte Art.|  
+|![Der Benutzer&#45;definiert Marker Ereignissymbol](media/vsg_eventlist_icon_user.png "Vsg_eventlist_icon_user")|Benutzerdefinierter Ereignismarker<br /> Markiert einen bestimmten Speicherort auf von der App definierte Art.|  
   
 ## <a name="marking-user-defined-events-in-your-app"></a>Markieren von benutzerdefinierten Ereignissen in Ihrer App  
  Benutzerdefinierte Ereignisse sind spezifisch für Ihre App. Sie können sie verwenden, um wichtige Ereignisse zuzuordnen, die in Ihrer App mit Ereignissen in der Grafikereignisliste auftreten. Sie können z. B. benutzerdefinierte Ereignisgruppen erstellen, um verwandte Ereignisse in Gruppen oder Hierarchien zu organisieren – z. B. diejenigen, die Ihre Benutzeroberfläche rendern –, sodass Sie die Ereignisliste leichter durchsuchen können, oder Sie können Marker erstellen, wenn eine bestimmte Art von Objekten gezeichnet wird, sodass Sie leicht die entsprechenden Grafikereignisse in der Ereignisliste finden können.  
@@ -106,7 +102,7 @@ Verwenden Sie die Grafikereignisliste in der Visual Studio-Grafikanalyse, um die
 
 <!-- VERSIONLESS -->
 <a name="resource-history"></a>
-##Ressource Verlauf Visual Studio 2017 und höher enthalten die **Ressource Verlauf** Fenster.  Wählen das Symbol "überwachen" ![Symbol "überwachen"](media/gfx_watch.png) neben einem Eintrag in der **Ereignisliste** Fenster wird angezeigt, um die **Ressource Verlauf** folgenden gezeigte Fenster:
+## Ressource Verlauf Visual Studio 2017 und höher enthalten die **Ressource Verlauf** Fenster.  Wählen das Symbol "überwachen" ![Symbol "überwachen"](media/gfx_watch.png) neben einem Eintrag in der **Ereignisliste** Fenster wird angezeigt, um die **Ressource Verlauf** folgenden gezeigte Fenster:
 
 ![Verlauf der Ressource](media/gfx_diag_resource_history.png)
 

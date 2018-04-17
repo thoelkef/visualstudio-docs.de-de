@@ -1,29 +1,25 @@
 ---
 title: IDebugCodeContext2 | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - IDebugCodeContext2
 helpviewer_keywords:
 - IDebugCodeContext2 interface
 ms.assetid: 3670439e-2171-405d-9d77-dedb0f1cba93
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 75403c0597b2285aa9117f3ffb51acd01c967f3d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 5b46ec36a93ac91647a3f17aac28187519ca2447
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idebugcodecontext2"></a>IDebugCodeContext2
 Diese Schnittstelle stellt die Anfangsposition des Code-Anweisung dar. Für die meisten-Laufzeit-Architekturen kann heute ein Codekontext als eine Adresse im Datenstrom der Ausführung des Programms betrachtet werden.  
@@ -49,7 +45,7 @@ IDebugCodeContext2 : IDebugMemoryContext2
 |[GetLanguageInfo](../../../extensibility/debugger/reference/idebugcodecontext2-getlanguageinfo.md)|Ruft die Sprachinformationen für diesen Codekontext ab.|  
   
 ## <a name="remarks"></a>Hinweise  
- Der Hauptunterschied zwischen einer `IDebugCodeContext2` Schnittstelle und eine [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) Schnittstelle ist, die eine `IDebugCodeContext2` ist immer Anweisung ausgerichtet. Dies bedeutet, dass ein `IDebugCodeContext2` muss immer auf den Anfang einer Anweisung verweisen, wohingegen ein `IDebugMemoryContext2` können eventuell Hinweise auf jedes Byte des Arbeitsspeichers in der Laufzeit-Architektur. `IDebugCodeContext2`wird über die Anweisungen statt über die grundlegenden Speichergröße (in der Regel Byte) erhöht.  
+ Der Hauptunterschied zwischen einer `IDebugCodeContext2` Schnittstelle und eine [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) Schnittstelle ist, die eine `IDebugCodeContext2` ist immer Anweisung ausgerichtet. Dies bedeutet, dass ein `IDebugCodeContext2` muss immer auf den Anfang einer Anweisung verweisen, wohingegen ein `IDebugMemoryContext2` können eventuell Hinweise auf jedes Byte des Arbeitsspeichers in der Laufzeit-Architektur. `IDebugCodeContext2` wird über die Anweisungen statt über die grundlegenden Speichergröße (in der Regel Byte) erhöht.  
   
 ## <a name="requirements"></a>Anforderungen  
  Header: msdbg.h  

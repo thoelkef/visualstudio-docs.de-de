@@ -1,28 +1,25 @@
 ---
-title: "Anpassen, wie Visual Studio Beschriftungen für datengebundene Steuerelemente erstellt | Microsoft Docs"
-ms.custom: 
+title: Anpassen, wie Visual Studio Beschriftungen für datengebundene Steuerelemente erstellt | Microsoft Docs
+ms.custom: ''
 ms.date: 11/03/2017
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Label captions, Data Sources window
 - smart captions
 - captions, data-bound
 - Data Sources Window, label captions
 ms.assetid: 6d4d15f8-4d78-42fd-af64-779ae98d62c8
-caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: 60d98d6b8cefc2f7fb7829d841001f92bd9063de
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: 031301edc2fbf0c9acc08f92d3324160dd5383cf
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Passen Sie an, wie Visual Studio Beschriftungen für datengebundene Steuerelemente erstellt
 Beim Ziehen von Elementen aus der [Datenquellenfenster](add-new-data-sources.md) in einem Designer muss eine besondere kommt es zu einem: die Spaltennamen in der Beschriftung Bezeichnungen werden neu formatiert, in eine lesbarere Zeichenfolge, wenn zwei oder mehr Wörter gefunden werden verkettet. Sie können ändern, wie in der folgenden Bezeichnungen, durch Festlegen erstellt werden der **SmartCaptionExpression**, **SmartCaptionReplacement**, und **SmartCaptionSuffix** Werte die **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Data Designer** Registrierungsschlüssel.  
@@ -44,14 +41,14 @@ In der folgenden Tabelle sind die internen Standardeinstellungen für diese Regi
   
 |Registrierungselement|Standardwert|Erklärung|  
 |-------------------|-------------------|-----------------|  
-|**SmartCaptionExpression**|(\\\p{Ll}) (\\\p{Lu}) &#124; _ +|Entspricht einem Kleinbuchstaben Zeichen, gefolgt von einem Großbuchstaben oder ein Unterstrich.|  
+|**SmartCaptionExpression**|(\\\p{Ll}) (\\\p{Lu})&#124;_ +|Entspricht einem Kleinbuchstaben Zeichen, gefolgt von einem Großbuchstaben oder ein Unterstrich.|  
 |**SmartCaptionReplacement**|$1 $2|$1 stellt keine Zeichen in der ersten Klammer des Ausdrucks übereinstimmen, und $2 stellt keine Zeichen in der zweiten Klammern abgeglichen. Der Ersatz erfolgt die erste Übereinstimmung, ein Leerzeichen und dann die zweite Übereinstimmung.|  
-|**SmartCaptionSuffix**|:|Stellt ein Zeichen, die an die zurückgegebene Zeichenfolge angefügt. Angenommen, die Beschriftung wird `Company Name`, erleichtert das Suffix`Company Name:`|  
+|**SmartCaptionSuffix**|:|Stellt ein Zeichen, die an die zurückgegebene Zeichenfolge angefügt. Angenommen, die Beschriftung wird `Company Name`, erleichtert das Suffix `Company Name:`|  
   
 > [!CAUTION]
 > Sie sollten sich genau überlegen, wenn nichts im Registrierungs-Editor ausführen können. Sichern Sie die Registrierung vor der Bearbeitung. Wenn Sie den Registrierungs-Editor falsch verwenden, können zu schwerwiegende Problemen führen, die möglicherweise eine Neuinstallation des Betriebssystems erforderlich sind. Microsoft garantiert nicht, dass Probleme, die mithilfe des Registrierungs-Editors nicht ordnungsgemäß aufgelöst werden können. Verwenden Sie den Registrierungs-Editor auf eigene Gefahr.  
 >   
->  Im folgende Knowledge Base-Artikel enthält Anweisungen zum Bearbeiten, Sichern und Wiederherstellen der Registrierung: [Beschreibung der Microsoft Windows-Registrierung](http://support.microsoft.com/default.aspx?scid=kb;en-us;256986) (Http://support.microsoft.com/default.aspx?scid=kb;en-us; 256986)  
+>  Im folgende Knowledge Base-Artikel enthält Anweisungen zum Bearbeiten, Sichern und Wiederherstellen der Registrierung: [Beschreibung der Microsoft Windows-Registrierung](http://support.microsoft.com/default.aspx?scid=kb;en-us;256986) (http://support.microsoft.com/default.aspx?scid=kb; En-us; 256986)  
   
 ### <a name="to-modify-the-smart-captioning-behavior-of-the-data-sources-window"></a>So ändern Sie das intelligente Untertiteln Verhalten der im Fenster "Datenquellen"  
   

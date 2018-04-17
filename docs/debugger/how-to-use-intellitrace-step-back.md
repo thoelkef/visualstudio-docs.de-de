@@ -3,24 +3,20 @@ title: Anzeigen eine Momentaufnahme mit Schritt-Back - Visual Studio IntelliTrac
 ms.description: Learn how to take snapshots, and view snapshots with IntelliTrace step-back
 ms.custom: mvc
 ms.date: 12/06/2017
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: ''
 ms.topic: tutorial
 ms.assetid: 7c60d929-d993-49dc-9db3-43b30be9912b
-caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6634a72b7bbed51e3ae250289696511d67c70041
-ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
+ms.openlocfilehash: bc6450da4e103e5cd5a18f03df3116cb805a9983
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="view-snapshots-using-intellitrace-step-back-in-visual-studio"></a>Anzeigen von Momentaufnahmen mithilfe von IntelliTrace-Schritt-wieder in Visual Studio
 
@@ -28,7 +24,7 @@ IntelliTrace-Schritt-Back erstellt eine Momentaufnahme Ihrer Anwendung bei jeder
 
 IntelliTrace-Schritt-wieder wird ab Visual Studio Enterprise 2017 Version 15.5 und höher verfügbar und erfordert Anniversary-Update für Windows 10 oder höher. Das Feature ist derzeit für das Debuggen von ASP.NET, WinForms, WPF, verwaltete Konsolen-apps und verwalteten Klassenbibliotheken unterstützt. Beginnend mit Visual Studio 2017 Enterprise Version 15.7 Preview 1, wird die Funktion auch für ASP.NET Core und .NET Core unterstützt. Debuggen von uwp-Apps wird derzeit nicht unterstützt.
 
-In diesem Lernprogramm führen Sie folgende Aktionen ausführen:
+In diesem Tutorial werden Sie Folgendes durchführen:
 
 > [!div class="checklist"]
 > * Aktivieren von Intellitrace-Ereignisse und Momentaufnahmen

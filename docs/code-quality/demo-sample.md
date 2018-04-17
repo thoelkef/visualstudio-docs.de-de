@@ -1,28 +1,24 @@
 ---
 title: Demo-Beispiel | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - demo sample [Visual Studio ALM]
 - code analysis, samples
 ms.assetid: 09e1b9f7-5916-4ed6-a001-5c2d7e710682
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: be42ed54e2c245a47e885fe8310c106c27ea82b2
-ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
+ms.openlocfilehash: 284bee5cc12a7fd4f1e6c038fdd377d8cd1f8cba
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="demo-sample"></a>Demobeispiel
 Dieses Verfahren veranschaulichen das Erstellen des Beispiels für [Exemplarische Vorgehensweise: Analysieren von C/C++-Code für Mängel](../code-quality/walkthrough-analyzing-c-cpp-code-for-defects.md). Die Prozeduren erstellen:  

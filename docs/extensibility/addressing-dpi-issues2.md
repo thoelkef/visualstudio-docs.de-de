@@ -1,22 +1,19 @@
 ---
 title: Adressieren von DPI wichtigsten Themen2 | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 359184aa-f5b6-4b6c-99fe-104655b3a494
-caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 6218e01d061bbf65e0cae051050076e4b8267a2f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: dc0801d3fb43188ac3371ed7e5e7394b0e3aad72
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="addressing-dpi-issues"></a>Adressieren von DPI-Probleme
 Eine zunehmende Anzahl von Geräten, die mit "Auflösung" Bildschirme geliefert werden. Diese Seiten sind in der Regel über 200 Pixel pro Zoll (Ppi). Arbeiten mit einer Anwendung auf diesen Computern ist Inhalt skaliert werden, um den Bedürfnissen Anzeigen des Inhalts in einer normalen Ansicht Entfernung für das Gerät erforderlich. Stand 2014 ist die primäre Zielgruppe für PHP-zeigt mobiler Geräte (Tablets, Laptops Schalenkoffer und Telefone) berechnen.  

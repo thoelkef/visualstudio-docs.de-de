@@ -2,26 +2,22 @@
 title: Parallele Erweiterung Mechanismen für das .NET Framework | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, internals [.NET Framework]
 ms.assetid: 93e07cfa-91fa-464c-b866-8bf5570411df
-caps.latest.revision: 11
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4cc64270cabb3e30ee3c13a1617222349e7b3677
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: 4936efe50023ed1e193d0c2ec0d9c3423ac5cc64
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="parallel-extension-internals-for-the-net-framework"></a>Parallele Erweiterung Internals für .NET Framework
 In diesem Abschnitt wird beschrieben, die internen Typen, Methoden und Felder von Klassen, mit denen Sie implementieren einen benutzerdefinierte Debugger für die parallele Erweiterungen für .NET Framework.  

@@ -1,22 +1,21 @@
 ---
-title: "Warnungen für C++-Core-Richtlinien | Microsoft Docs"
-ms.custom: 
+title: Warnungen für C++-Core-Richtlinien | Microsoft Docs
+ms.custom: ''
 ms.date: 08/10/2017
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 7c83814a-f21d-4323-ad5f-13bac40d3e38
 author: mblome
 ms.author: mblome
-manager: ghogen
-ms.technology: vs-ide-code-analysis
-ms.workload: cplusplus
-ms.openlocfilehash: d03330ce8213e7df56ec9f8df73458b3819180ca
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.technology:
+- vs-ide-code-analysis
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 1c7e5e9ee55785c1053a3d5c416529710b0b1c65
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>Verwenden die Spielsteine C++-Core-Richtlinien
 Die C++-Core-Richtlinien sind eine portable Satz von Richtlinien, Regeln und bewährte Methoden zum Schreiben von Code in C++, die von C++-Experten und Designern erstellt. Visual Studio unterstützt derzeit eine Teilmenge dieser Regeln als Teil seiner Codeanalysetools für C++. Die zentrale Richtlinie Prüfer werden standardmäßig in Visual Studio 2017 installiert und sind [als NuGet-Paket für Visual Studio 2015 verfügbar](#vs2015_corecheck).
@@ -152,14 +151,14 @@ Es kann zum Unterdrücken von Warnungen für Ausdruck und Block-Anweisungen inne
 
  Sie können die Befehlszeilenoption alle Codeanalyse für eine Datei durch Angabe vorübergehend deaktivieren `/analyze-`. Diese Warnung erzeugt *D9025 überschreiben "/ analyze" mit "/ analyze-"*, dem erinnert Sie Codeanalyse später erneut aktivieren.
 
- ## <a name="corecheck_per_file"></a>Aktivieren das C++ Core Richtlinien Checker auf bestimmte Projektdateien
+ ## <a name="corecheck_per_file"></a> Aktivieren das C++ Core Richtlinien Checker auf bestimmte Projektdateien
 Manchmal kann es hilfreich, stimmen mit Fokus Codeanalyse und weiterhin nutzen der Visual Studio-IDE zu sein. Es folgt ein Beispielszenario für die bei großen Projekten Buildzeit sparen und Filterergebnisse erleichtern verwendet werden kann.
 1.  Legen Sie in der Befehlsshell die `esp.extension` und `esp.annotationbuildlevel` Umgebungsvariablen.
 2.  Starten Sie Visual Studio über die Befehlsshell auf diese Variablen erben.
 3.  Laden Sie Ihr Projekt, und öffnen Sie seine Eigenschaften.
 4.  Aktivieren Sie Codeanalyse, wählen Sie die entsprechenden Regelsätze, aber aktivieren Sie Analysis codeerweiterungen nicht.
 5.  Wechseln Sie zu der Datei, die Sie verwenden möchten, analysieren Sie die C++-Core-Richtlinien aus, und öffnen Sie seine Eigenschaften.
-6.  Wählen Sie **C / C ++ \Command Befehlszeilenoptionen** und hinzufügen`/analyze:plugin EspXEngine.dll`
+6.  Wählen Sie **C / C ++ \Command Befehlszeilenoptionen** und hinzufügen `/analyze:plugin EspXEngine.dll`
 7.  Deaktivieren Sie die Verwendung des vorkompilierten Headers (**C / C ++ \Precompiled Header**). Dies ist notwendig, da das Modul für Erweiterungen möglicherweise versuchen, seine interne Informationen aus dem vorkompilierten Header zu lesen, und wenn Letzteres mit Standard-Projektoptionen kompiliert wurde, dies wird nicht kompatibel.
 8.  Erstellen Sie das Projekt neu. Die allgemeine PREFast Überprüfungen sollten auf alle Dateien ausgeführt werden. Da die C++-Core-Richtlinien aus standardmäßig nicht aktiviert ist, sollte er nur auf die Datei ausgeführt konfiguriert ist, um ihn zu verwenden.
 
@@ -205,22 +204,22 @@ Wenn Sie ein Buildsystem verwenden, die nicht auf MSBuild angewiesen können Sie
 Sie müssen einige Umgebungsvariablen festgelegt und die entsprechenden Befehlszeilenoptionen für den Compiler verwenden. Es ist besser, unter der "Native Tools-Eingabeaufforderung" Umgebung arbeiten, damit Sie nicht zum Suchen nach bestimmten Pfaden für den Compiler, Verzeichnisse, usw. enthalten.
 
 1.  **Umgebungsvariablen**
-  - `set esp.extensions=cppcorecheck.dll`Dies teilt das Modul die Richtlinien für C++-Core-Modul nicht laden.
-  - `set esp.annotationbuildlevel=ignore`Dadurch werden die Logik der SAL-Anmerkungen verarbeitet werden, deaktiviert. Anmerkungen wirken sich nicht auf die Codeanalyse in die C++-Core-Richtlinien aus, aber ihre Verarbeitung dauert Zeit (in einigen Fällen viel Zeit). Diese Einstellung ist optional, jedoch dringend empfohlen.
-  - `set caexcludepath=%include%`Es wird dringend empfohlen, dass Sie Warnungen deaktivieren, die Auslösen von Standardheader. Sie können mehrere Pfade hier z. B. den Pfad zu die allgemeinen Header in Ihrem Projekt hinzufügen.
+  - `set esp.extensions=cppcorecheck.dll` Dies teilt das Modul die Richtlinien für C++-Core-Modul nicht laden.
+  - `set esp.annotationbuildlevel=ignore` Dadurch werden die Logik der SAL-Anmerkungen verarbeitet werden, deaktiviert. Anmerkungen wirken sich nicht auf die Codeanalyse in die C++-Core-Richtlinien aus, aber ihre Verarbeitung dauert Zeit (in einigen Fällen viel Zeit). Diese Einstellung ist optional, jedoch dringend empfohlen.
+  - `set caexcludepath=%include%` Es wird dringend empfohlen, dass Sie Warnungen deaktivieren, die Auslösen von Standardheader. Sie können mehrere Pfade hier z. B. den Pfad zu die allgemeinen Header in Ihrem Projekt hinzufügen.
 2.  **Befehlszeilenoptionen**
-  - `/analyze`Aktiviert die Codeanalyse (auch erwägen / analyze: nur und / analyze: stillen).
-  - `/analyze:plugin EspXEngine.dll`Diese Option lädt das Erweiterungen durch Code Analysis-Modul in die PREfast. Dieses Modul lädt wiederum die C++-Core-Richtlinien aus.
+  - `/analyze`  Aktiviert die Codeanalyse (auch erwägen / analyze: nur und / analyze: stillen).
+  - `/analyze:plugin EspXEngine.dll` Diese Option lädt das Erweiterungen durch Code Analysis-Modul in die PREfast. Dieses Modul lädt wiederum die C++-Core-Richtlinien aus.
 
 
 
 ## <a name="use-the-guideline-support-library"></a>Verwenden Sie die Richtlinie-Unterstützungsbibliothek  
- Die Richtlinie Unterstützungsbibliothek dient lassen sich die zentralen Richtlinien befolgen. GSL enthält Definitionen, die Sie als fehleranfällig Konstrukte gegen sicherer alternativen austauschen können. Ersetzen Sie z. B. eine `T*, length` -Paar von Parametern mit dem `span<T>` Typ. GSL finden Sie unter [http://www.nuget.org/packages/Microsoft.Gsl](http://www.nuget.org/packages/Microsoft.Gsl). Die Bibliothek ist als open Source-, damit Sie die Datenquellen anzeigen, Kommentare oder beitragen können. Das Projekt finden Sie unter [https://github.com/Microsoft/GSL](https://github.com/Microsoft/GSL).
+ Die Richtlinie Unterstützungsbibliothek dient lassen sich die zentralen Richtlinien befolgen. GSL enthält Definitionen, die Sie als fehleranfällig Konstrukte gegen sicherer alternativen austauschen können. Ersetzen Sie z. B. eine `T*, length` -Paar von Parametern mit dem `span<T>` Typ. GSL finden Sie unter [ http://www.nuget.org/packages/Microsoft.Gsl ](http://www.nuget.org/packages/Microsoft.Gsl). Die Bibliothek ist als open Source-, damit Sie die Datenquellen anzeigen, Kommentare oder beitragen können. Das Projekt finden Sie unter [ https://github.com/Microsoft/GSL ](https://github.com/Microsoft/GSL).
 
- ## <a name="vs2015_corecheck"></a>Verwenden Sie die Richtlinien C++ Core überprüfen in Visual Studio 2015-Projekten  
-  Wenn Sie Visual Studio 2015 verwenden, werden die C++ Core überprüfen Code Codeanalyse-Regelsätze nicht standardmäßig installiert. Sie müssen einige zusätzliche Schritte ausführen, bevor Sie die C++-Kern überprüfen Codeanalysetools in Visual Studio 2015 aktivieren können. Microsoft bietet Support für Visual Studio 2015-Projekten mithilfe von NuGet-Paket. Das Paket wird mit der Bezeichnung Microsoft.CppCoreCheck, und es finden Sie unter [http://www.nuget.org/packages/Microsoft.CppCoreCheck](http://www.nuget.org/packages/Microsoft.CppCoreCheck). Dieses Paket erfordert, dass Sie mindestens Visual Studio 2015 mit Update 1 installiert haben.  
+ ## <a name="vs2015_corecheck"></a> Verwenden Sie die Richtlinien C++ Core überprüfen in Visual Studio 2015-Projekten  
+  Wenn Sie Visual Studio 2015 verwenden, werden die C++ Core überprüfen Code Codeanalyse-Regelsätze nicht standardmäßig installiert. Sie müssen einige zusätzliche Schritte ausführen, bevor Sie die C++-Kern überprüfen Codeanalysetools in Visual Studio 2015 aktivieren können. Microsoft bietet Support für Visual Studio 2015-Projekten mithilfe von NuGet-Paket. Das Paket wird mit der Bezeichnung Microsoft.CppCoreCheck, und es finden Sie unter [ http://www.nuget.org/packages/Microsoft.CppCoreCheck ](http://www.nuget.org/packages/Microsoft.CppCoreCheck). Dieses Paket erfordert, dass Sie mindestens Visual Studio 2015 mit Update 1 installiert haben.  
   
- Das Paket wird auch ein anderes Paket als eine Abhängigkeit, die eine reine Richtlinie Support Library (GSL) installiert. GSL steht auch auf GitHub unter [https://github.com/Microsoft/GSL](https://github.com/Microsoft/GSL).  
+ Das Paket wird auch ein anderes Paket als eine Abhängigkeit, die eine reine Richtlinie Support Library (GSL) installiert. GSL steht auch auf GitHub unter [ https://github.com/Microsoft/GSL ](https://github.com/Microsoft/GSL).  
 
  Aufgrund der Art und Weise Codeanalyseregeln geladen wurden, müssen Sie das Microsoft.CppCoreCheck NuGet-Paket in jeder C++-Projekt installieren, die Sie in Visual Studio 2015 überprüfen möchten.  
   

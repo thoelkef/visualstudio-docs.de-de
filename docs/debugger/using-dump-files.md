@@ -2,12 +2,9 @@
 title: Verwenden von Dumpdateien | Microsoft Docs
 ms.custom: H1HackMay2017
 ms.date: 03/08/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.crashdump
 dev_langs:
@@ -22,34 +19,33 @@ helpviewer_keywords:
 - dump files
 - dumps
 ms.assetid: b71be6dc-57e0-4730-99d2-b540a0863e49
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 179d66b80676cf47bb12e82fcd8e4ac00503a492
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+ms.openlocfilehash: 6ae780f26f447712e7d58d87b24c2f255031d1fa
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="use-dump-files-with-visual-studio"></a>Verwenden von Dumpdateien mit Visual Studio
 Dumpdateien Sie mit oder ohne Heaps; Erstellen Sie eine Dumpdatei. Öffnen einer Dumpdatei; Suchen Sie die Binärdateien, die PDB-Datei und Quelldatei für eine Dumpdatei.
   
-##  <a name="BKMK_What_is_a_dump_file_"></a>Was ist eine Dumpdatei?  
+##  <a name="BKMK_What_is_a_dump_file_"></a> Was ist eine Dumpdatei?  
  Ein *Dumpdatei* ist eine Momentaufnahme einer Anwendung, an dem Punkt, Zeitpunkt der dumperstellung dar. Sie zeigt, welche Prozesse ausgeführt und welche Module geladen wurden. Wenn der Dump mit Heapinformationen gespeichert wurde, enthält die Dumpdatei eine Momentaufnahme des Inhalts im Speicher der Anwendung zu diesem Zeitpunkt. Das Öffnen einer Dumpdatei mit einem Heap in Visual Studio ist vergleichbar mit dem Anhalten an einem Haltepunkt in einer Debugsitzung. Obwohl die Ausführung nicht fortgesetzt werden kann, können Sie die Stapel-, Threads- und Variablenwerte der Anwendung zum Zeitpunkt des Auftretens des Dumps überprüfen.  
   
  Dumps dienen in erster Linie für das Debuggen von Problemen, die auf Computern, auf die der Entwickler nicht zugreifen. Beispielsweise können Sie eine Dumpdatei vom Computer eines Kunden der Absturz des kundencomputers reproduzieren oder Ihr Computer blockiert werden kann. Dumpdateien werden auch von Testern erstellt, um Absturz- oder Blockierungsdaten zu sichern, sodass der Testcomputer für weitere Tests verwendet werden kann. Der Visual Studio-Debugger kann Dumpdateien für verwalteten oder nativen Code speichern. Der Debugger kann Dumpdateien, die von Visual Studio oder von anderen Programmen, das Speichern von Dateien in erstellt wurden, laden die *Minidump* Format.  
   
-##  <a name="BKMK_Dump_files__with_or_without_heaps"></a>Dumpdateien mit oder ohne heaps  
+##  <a name="BKMK_Dump_files__with_or_without_heaps"></a> Dumpdateien mit oder ohne heaps  
  Sie können Dumpdateien mit oder ohne Heapinformationen erstellen.  
   
 -   **Dumpdateien mit Heaps** enthalten eine Momentaufnahme des Speichers der Anwendung. Dies umfasst die Werte der Variablen zum Zeitpunkt der Dumperstellung. Wenn Sie eine mit Heaps gespeicherte Dumpdatei laden, können die Symbole in Visual Studio geladen werden, auch wenn die Binärdateien der Anwendung nicht gefunden werden. Visual Studio speichert auch die Binärdateien der geladenen systemeigenen Module in der Dumpdatei, wodurch das Debugging wesentlich vereinfacht wird.  
   
 -   **Dumpdateien ohne Heaps** sind wesentlich kleiner als Dumpdateien mit Heapinformationen. Allerdings muss der Debugger die Binärdateien der Anwendung laden, um die Symbolinformationen zu finden. Die Binärdateien müssen exakt mit den Binärdateien übereinstimmen, die für die Erstellung der Dumpdatei verwendet wurden. In den Dumpdateien ohne Heapdaten werden nur die Werte von Stapelvariablen gespeichert.  
   
-##  <a name="BKMK_Requirements_and_limitations"></a>Anforderungen und Einschränkungen  
+##  <a name="BKMK_Requirements_and_limitations"></a> Anforderungen und Einschränkungen  
   
 -   Das Debuggen von Dumpdateien mit optimiertem Code kann unübersichtlich sein. Beispielsweise kann das Compiler-Inlining von Funktionen unerwartete Aufruflisten ergeben, und andere Optimierungen könnten die Lebensdauer der Variablen beeinflussen.  
   
@@ -65,7 +61,7 @@ Dumpdateien Sie mit oder ohne Heaps; Erstellen Sie eine Dumpdatei. Öffnen einer
   
 -   So debuggen Sie mit der [SOS.dll (SOS-Debugerweiterung)](/dotnet/framework/tools/sos-dll-sos-debugging-extension) in Visual Studio müssen Sie die Debugtools für Windows, die Teil der Installieren der [Windows Treiber Treiberkits (WDK)](/windows/hardware/windows-driver-kit) 
   
-##  <a name="BKMK_Create_a_dump_file"></a>Erstellen einer Dumpdatei  
+##  <a name="BKMK_Create_a_dump_file"></a> Erstellen einer Dumpdatei  
  So erstellen Sie eine Dumpdatei mit Visual Studio  
   
 -   Beim Debuggen eines Prozesses in Visual Studio können Sie eine Dumpdatei speichern, wenn der Debugger an einer Ausnahme oder an einem Haltepunkt angehalten wurde. Wählen Sie **Debuggen**, klicken Sie dann **Dump speichern unter**, klicken Sie dann **Debuggen**. In der **Dump speichern unter** Dialogfeld die **Dateityp** Liste, wählen Sie **Minidump** oder **Minidump mit Heap** (Standard).  
@@ -74,7 +70,7 @@ Dumpdateien Sie mit oder ohne Heaps; Erstellen Sie eine Dumpdatei. Öffnen einer
   
  Dumpdateien können auch mit jedem Programm erstellt werden, das das Windows-Minidumpformat unterstützt. Z. B. die **Procdump** Befehlszeilen-Hilfsprogramm von [Windows Sysinternals](http://technet.microsoft.com/sysinternals/default) Dumpdateien zu Prozessabstürzen basierend auf Triggern oder bedarfsgesteuert erstellen können. Finden Sie unter [Anforderungen und Einschränkungen](../debugger/using-dump-files.md#BKMK_Requirements_and_limitations) in dieses Thema enthält zusätzliche Informationen zur Verwendung anderer Tools zum Erstellen von Dumpdateien. 
   
-##  <a name="BKMK_Open_a_dump_file"></a>Öffnen einer Dumpdatei  
+##  <a name="BKMK_Open_a_dump_file"></a> Öffnen einer Dumpdatei  
   
 1.  Wählen Sie in Visual Studio **Datei**, **öffnen**, **Datei**.  
   
@@ -86,7 +82,7 @@ Dumpdateien Sie mit oder ohne Heaps; Erstellen Sie eine Dumpdatei. Öffnen einer
   
 4.  Debuggen starten, indem Sie die **Aktionen** Abschnitt, und wählen Sie entweder **Debuggen mit nur verwaltet**, **ausschließlich systemeigenem Code Debuggen** oder **Debuggen von gemischtem Code**.  
   
-##  <a name="BKMK_Find_binaries__symbol___pdb__files__and_source_files"></a>Suchen von Binär-, Symboldateien (.pdb) und Quelldateien  
+##  <a name="BKMK_Find_binaries__symbol___pdb__files__and_source_files"></a> Suchen von Binär-, Symboldateien (.pdb) und Quelldateien  
  Um die vollständigen Funktionen von Visual Studio zum Debuggen von Dumpdateien zu nutzen, benötigen Sie Zugriff auf die folgenden Dateien:  
   
 -   Die EXE-Datei, für die der Dump erstellt wurde, sowie andere Binärdateien (DLLs, usw.), die im Dumpprozess verwendet wurden.  

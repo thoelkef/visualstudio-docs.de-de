@@ -1,12 +1,10 @@
 ---
-title: "CA2218: GetHashCode beim Überschreiben von Equals überschreiben | Microsoft Docs"
-ms.custom: 
+title: 'CA2218: GetHashCode beim Überschreiben von Equals überschreiben | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - CA2218
 - OverrideGetHashCodeOnOverridingEquals
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - OverrideGetHashCodeOnOverridingEquals
 - CA2218
 ms.assetid: 69b020cd-29e8-45a6-952e-32cf3ce2e21d
-caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: eed9ae032a89eb30785acb71feac47d6c4f8cdc3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: a7844f4bc10acabeef81001a0c0890c603410ec5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca2218-override-gethashcode-on-overriding-equals"></a>CA2218: GetHashCode beim Überschreiben von Equals überschreiben
 |||  
@@ -37,7 +35,7 @@ ms.lasthandoff: 12/22/2017
  Ein öffentlicher Typ überschreibt <xref:System.Object.Equals%2A?displayProperty=fullName> jedoch nicht außer Kraft setzen <xref:System.Object.GetHashCode%2A?displayProperty=fullName>.  
   
 ## <a name="rule-description"></a>Regelbeschreibung  
- <xref:System.Object.GetHashCode%2A>Gibt einen Wert, der basierend auf der aktuellen Instanz, die sich für Hashalgorithmen und Datenstrukturen wie Hashtabellen eignet. Zwei Objekte, die denselben Typ aufweisen und gleich sind, müssen den gleichen Hashcode, um sicherzustellen, dass Instanzen der folgenden Typen ordnungsgemäß zurückgeben:  
+ <xref:System.Object.GetHashCode%2A> Gibt einen Wert, der basierend auf der aktuellen Instanz, die sich für Hashalgorithmen und Datenstrukturen wie Hashtabellen eignet. Zwei Objekte, die denselben Typ aufweisen und gleich sind, müssen den gleichen Hashcode, um sicherzustellen, dass Instanzen der folgenden Typen ordnungsgemäß zurückgeben:  
   
 -   <xref:System.Collections.Hashtable?displayProperty=fullName>  
   
@@ -55,7 +53,7 @@ ms.lasthandoff: 12/22/2017
   
 -   <xref:System.Collections.Specialized.OrderedDictionary?displayProperty=fullName>  
   
--   Typen, implementieren<xref:System.Collections.Generic.IEqualityComparer%601?displayProperty=fullName>  
+-   Typen, implementieren <xref:System.Collections.Generic.IEqualityComparer%601?displayProperty=fullName>  
   
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen  
  Um einen Verstoß gegen diese Regel zu beheben, stellen Sie eine Implementierung von <xref:System.Object.GetHashCode%2A>. Für ein Paar von Objekten desselben Typs, müssen Sie sicherstellen, dass die Implementierung den gleichen Wert zurückgibt, wenn die Implementierung von <xref:System.Object.Equals%2A> gibt `true` für das Paar.  

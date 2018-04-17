@@ -1,11 +1,8 @@
 ---
 title: 'Exemplarische Vorgehensweise: Speichern von Daten in einer Transaktion | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 09/08/2017
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,17 +13,17 @@ helpviewer_keywords:
 - Transactions namespace
 - saving data
 ms.assetid: 80260118-08bc-4b37-bfe5-9422ee7a1e4e
-caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: 160cf1021e6b95dcfc6cf8ee97b20c4502f9099e
-ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
+ms.workload:
+- data-storage
+ms.openlocfilehash: b7492d3325441bcd01d3d8562041c23765338369
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-save-data-in-a-transaction"></a>Exemplarische Vorgehensweise: Speichern von Daten in einer Transaktion
 Diese exemplarische Vorgehensweise veranschaulicht, wie zum Speichern von Daten in einer Transaktion mithilfe der <xref:System.Transactions> Namespace. In dieser exemplarischen Vorgehensweise erstellen Sie eine Windows Forms-Anwendung. Verwenden Sie den Konfigurations-Assistenten so erstellen ein Dataset für zwei Tabellen in der Northwind-Beispieldatenbank. Sie fügen datengebundene Steuerelemente auf einem Windows Form, und ändern Sie den Code für die BindingNavigators speichern Schaltfläche zum Aktualisieren der Datenbank innerhalb einer "TransactionScope".  

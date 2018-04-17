@@ -1,29 +1,25 @@
 ---
-title: "Fügen Sie Code hinzu, um Datasets in n-Tier-Anwendungen | Microsoft Docs"
-ms.custom: 
+title: Fügen Sie Code hinzu, um Datasets in n-Tier-Anwendungen | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
 helpviewer_keywords:
 - n-tier applications, extending datasets
 ms.assetid: d43c2ccd-4902-43d8-b1a8-d10ca5d3210c
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 775c03583a2fac35f2b62525bf5a18a67f250cef
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: fadbd8e8c95559e0e38fd507bad3fe9affba4217
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="add-code-to-datasets-in-n-tier-applications"></a>Fügen Sie Code hinzu, um Datasets in n-Tier-Anwendungen
 Sie können die Funktionen eines Datasets erweitern, indem Sie die Datei eine partielle Klasse für das Dataset zu erstellen und Code hinzufügen (anstatt zum Hinzufügen von Code, um die *DatasetName*. Dataset.Designer-Datei). Partielle Klassen können Sie Code für eine bestimmte Klasse auf mehrere physische Dateien unterteilt werden. Weitere Informationen finden Sie unter [partielle](/dotnet/visual-basic/language-reference/modifiers/partial) oder [partielle Klassen und Methoden](/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods).  

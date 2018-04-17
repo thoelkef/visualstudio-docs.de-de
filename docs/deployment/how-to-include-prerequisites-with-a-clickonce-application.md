@@ -1,23 +1,21 @@
 ---
-title: "Vorgehensweise: Einschließen von erforderlichen Komponenten mit einer ClickOnce-Anwendung | Microsoft Docs"
-ms.custom: 
+title: 'Vorgehensweise: Einschließen von erforderlichen Komponenten mit einer ClickOnce-Anwendung | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 ms.assetid: c66bf0a5-8c93-4e68-a224-3b29ac36fe4d
-caps.latest.revision: "16"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 4fbab9bacc8c5272588a4b2dfe819650bfc6110f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 7283ce590770c1ed2d14ffb79ec71d594c8b21f1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-include-prerequisites-with-a-clickonce-application"></a>Gewusst wie: Einschließen von erforderlichen Komponenten mit einer ClickOnce-Anwendung
 Bevor Sie die erforderliche Software mit einer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]-Anwendung verteilen können, müssen Sie zunächst die Installationspakete für diese erforderlichen Komponenten auf Ihren Entwicklungscomputer herunterladen. Wenn Sie eine Anwendung veröffentlichen, und wählen Sie **erforderliche Komponenten von demselben Speicherort wie Anwendung herunterladen**, wird eine Fehlermeldung angezeigt, wenn die Installationspakete nicht im die **Pakete** Ordner.  
@@ -25,7 +23,7 @@ Bevor Sie die erforderliche Software mit einer [!INCLUDE[ndptecclick](../deploym
 > [!NOTE]
 >  Um ein Installationspaket für .NET Framework hinzuzufügen, finden Sie unter [Handbuch für die Bereitstellung von .NET Framework für Entwickler](http://msdn.microsoft.com/library/ee942965\(v=vs.110\).aspx).  
   
-##  <a name="Package"></a>So fügen Sie ein Installationspaket, das mithilfe von "Package.xml" hinzu  
+##  <a name="Package"></a> So fügen Sie ein Installationspaket, das mithilfe von "Package.xml" hinzu  
   
 1.  Öffnen Sie im Datei-Explorer die **Pakete** Ordner.  
   
@@ -38,7 +36,7 @@ Bevor Sie die erforderliche Software mit einer [!INCLUDE[ndptecclick](../deploym
 4.  Suchen Sie die **Namen** Element, das enthält **http://go.microsoft.com/fwlink**, und kopieren Sie die URL. Enthalten die **LinkID** Teil.  
   
     > [!NOTE]
-    >  Wenn kein **Namen** Element enthält **http://go.microsoft.com/fwlink**öffnen die **Product.xml** Datei im Stammordner für die erforderliche Komponente, und suchen Sie die  **Fwlink** Zeichenfolge.  
+    >  Wenn kein **Namen** Element enthält **http://go.microsoft.com/fwlink**öffnen die **Product.xml** Datei im Stammordner für die erforderliche Komponente, und suchen Sie die **Fwlink** Zeichenfolge.  
   
     > [!IMPORTANT]
     >  Einige erforderliche Komponenten haben mehrere Installationspakete (z. B. für 32-Bit- oder 64-Bit-Systeme). Wenn mehrere **Namen** Elemente enthalten **Fwlink**, müssen Sie die verbleibenden Schritte für jede von ihnen wiederholen.  

@@ -2,24 +2,21 @@
 title: Remote Debug ASP.NET Core auf einem Remote-IIS-Computer | Microsoft Docs
 ms.custom: remotedebugging
 ms.date: 08/14/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 573a3fc5-6901-41f1-bc87-557aa45d8858
-caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: f1938473a3a5e085e63b9b522bbc31678dedbbd4
-ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
+ms.openlocfilehash: b3d2bcbd89aef0a19fb78add954fd321445da83f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio-2017"></a>Remotedebuggen von ASP.NET Core auf einem Remote-IIS-Computer in Visual Studio 2017
 Um eine ASP.NET-Anwendung debuggen, die in IIS bereitgestellt wurde, installieren Sie und führen Sie der Remotetools auf dem Computer aus, auf denen Sie Ihre app bereitgestellt haben, und fügen Sie an der ausgeführten app aus Visual Studio.
@@ -48,7 +45,7 @@ Debuggen zwischen zwei Computern über einen Proxy verbunden wird nicht unterst�
 
 4. Öffnen Sie die Datei About.cshtml.cs, und legen Sie einen Haltepunkt der `OnGet` Methode (Öffnen Sie in älteren Vorlagen HomeController.cs stattdessen, und legen Sie den Haltepunkt der `About()` Methode).
 
-## <a name="bkmk_configureIIS"></a>Installieren und Konfigurieren von IIS unter WindowsServer
+## <a name="bkmk_configureIIS"></a> Installieren und Konfigurieren von IIS unter WindowsServer
 
 [!INCLUDE [remote-debugger-install-iis-role](../debugger/includes/remote-debugger-install-iis-role.md)]
 
@@ -70,15 +67,15 @@ Wenn Sie die Software heruntergeladen haben, erhalten Sie möglicherweise Anford
 1. Installieren der [.NET Core Windows Server-Hosting](https://aka.ms/dotnetcore-2-windowshosting) Paket auf dem Hostsystem. Das Paket wird installiert, die .NET Core-Laufzeit, .NET Core-Bibliothek und ASP.NET Core-Modul. Weitere ausführlichen Anweisungen finden Sie in [in IIS veröffentlichen](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration).
 
     > [!NOTE]
-    > Wenn das System nicht über eine Internetverbindung verfügt, erhalten und installieren Sie die  *[Microsoft Visual C++ 2015 Redistributable](https://www.microsoft.com/download/details.aspx?id=53840)*  vor der Installation von .NET Core Windows Server-Hosting-Paket.
+    > Wenn das System nicht über eine Internetverbindung verfügt, erhalten und installieren Sie die *[Microsoft Visual C++ 2015 Redistributable](https://www.microsoft.com/download/details.aspx?id=53840)* vor der Installation von .NET Core Windows Server-Hosting-Paket.
 
 3. Das System neu starten (oder führen Sie **net Stop wurde/y** gefolgt von **Net start w3svc** über eine Eingabeaufforderung, um eine Änderung am System Pfad übernehmen).
 
-## <a name="BKMK_install_webdeploy"></a>(Optional) Installieren Sie Web Deploy 3.6 unter WindowsServer
+## <a name="BKMK_install_webdeploy"></a> (Optional) Installieren Sie Web Deploy 3.6 unter WindowsServer
 
 [!INCLUDE [remote-debugger-install-web-deploy](../debugger/includes/remote-debugger-install-web-deploy.md)]
 
-## <a name="BKMK_deploy_asp_net"></a>Konfigurieren Sie ASP.NET-Website, auf dem Windows Server-computer
+## <a name="BKMK_deploy_asp_net"></a> Konfigurieren Sie ASP.NET-Website, auf dem Windows Server-computer
 
 1. Öffnen Sie Windows Explorer, und erstellen Sie einen neuen Ordner **C:\Publish**, in dem ASP.NET-Projekt später bereitstellen möchten.
 
@@ -98,7 +95,7 @@ Wenn Sie die Software heruntergeladen haben, erhalten Sie möglicherweise Anford
 
     Wenn Sie einen dieser Benutzer mit Zugriff nicht angezeigt wird, wechseln Sie über die erforderlichen Schritte zum Hinzufügen des IUSR-Konto als Benutzer mit Berechtigungen für Lesen & ausführen.
 
-## <a name="bkmk_webdeploy"></a>(Optional) Veröffentlichen und Bereitstellen der app mithilfe von Web Deploy von Visual Studio
+## <a name="bkmk_webdeploy"></a> (Optional) Veröffentlichen und Bereitstellen der app mithilfe von Web Deploy von Visual Studio
 
 [!INCLUDE [remote-debugger-deploy-app-web-deploy](../debugger/includes/remote-debugger-deploy-app-web-deploy.md)]
 
@@ -108,14 +105,14 @@ Sie können auch veröffentlichen und Bereitstellen der app mit dem Dateisystem 
 
 [!INCLUDE [remote-debugger-deploy-app-local](../debugger/includes/remote-debugger-deploy-app-local.md)]
 
-## <a name="BKMK_msvsmon"></a>Herunterladen Sie und installieren Sie die Remoteserver-Verwaltungstools für Windows Server
+## <a name="BKMK_msvsmon"></a> Herunterladen Sie und installieren Sie die Remoteserver-Verwaltungstools für Windows Server
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
 
 > [!TIP]
 > In einigen Szenarien kann es am effizientesten, führen Sie den Remotedebugger aus einer Dateifreigabe sein. Weitere Informationen finden Sie unter [führen Sie den Remotedebugger aus einer Dateifreigabe](../debugger/remote-debugging.md#fileshare_msvsmon).
   
-## <a name="BKMK_setup"></a>Einrichten des Remotedebuggers unter Windows Server
+## <a name="BKMK_setup"></a> Einrichten des Remotedebuggers unter Windows Server
 
 [!INCLUDE [remote-debugger-configuration](../debugger/includes/remote-debugger-configuration.md)]
 
@@ -155,7 +152,7 @@ Informationen zu den Remotedebugger als Dienst ausführen, finden Sie unter [den
 
     Der Haltepunkt sollte in Visual Studio erreicht werden.
 
-## <a name="bkmk_openports"></a>Zur Fehlerbehebung: Öffnen Sie erforderlichen Ports auf Windows Server
+## <a name="bkmk_openports"></a> Zur Fehlerbehebung: Öffnen Sie erforderlichen Ports auf Windows Server
 
 In den meisten Installationen werden die erforderlichen Ports durch die Installation von ASP.NET und den Remotedebugger geöffnet. Allerdings müssen Sie möglicherweise stellen Sie sicher, dass die Ports geöffnet sind.
 

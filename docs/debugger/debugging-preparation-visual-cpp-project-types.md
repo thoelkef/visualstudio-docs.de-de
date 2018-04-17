@@ -1,12 +1,10 @@
 ---
 title: 'Vorbereitung zum Debuggen: Visual C++-Projekttypen | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -18,16 +16,16 @@ helpviewer_keywords:
 - debug builds, project settings
 - debugging [C++]
 ms.assetid: 912b4ba2-7719-43d5-b087-db33e3f9329a
-caps.latest.revision: "24"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 8cc51e55af477edfac65b79ca29e26b720510c55
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- cplusplus
+ms.openlocfilehash: e02be24447d5383388be0a7208bf84e36333732f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="debugging-preparation-visual-c-project-types"></a>Vorbereitung zum Debuggen: Visual C++-Projekttypen
 In diesem Abschnitt wird das Debuggen grundlegender Projekttypen erläutert, die mithilfe von [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]-Projektvorlagen erstellt wurden.  
@@ -45,7 +43,7 @@ In diesem Abschnitt wird das Debuggen grundlegender Projekttypen erläutert, die
   
  [Windows Forms-Anwendungen (.NET)](#BKMK_Windows_Forms_Applications___NET_)  
   
-##  <a name="BKMK_Recommended_Property_Settings"></a>Empfohlene eigenschafteneinstellungen  
+##  <a name="BKMK_Recommended_Property_Settings"></a> Empfohlene eigenschafteneinstellungen  
  Bestimmte Eigenschaften sollten für alle Szenarios des nicht verwalteten Debuggens gleich festgelegt werden. Die folgenden Tabellen zeigen die empfohlenen Eigenschafteneinstellungen. Die hier nicht aufgeführten Einstellungen können je nach verwaltetem Projekttyp unterschiedlich sein. Weitere Informationen finden Sie unter [Projekteinstellungen für eine C++-Debugkonfiguration](../debugger/project-settings-for-a-cpp-debug-configuration.md)  
   
 ### <a name="configuration-properties-124-cc-124-optimization-node"></a>Konfigurationseigenschaften &#124; C/C++- &#124; Knoten "Optimierung"  
@@ -62,14 +60,14 @@ In diesem Abschnitt wird das Debuggen grundlegender Projekttypen erläutert, die
   
  [Inhalt](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)  
   
-##  <a name="BKMK_Win32_Projects"></a>Win32-Projekte  
+##  <a name="BKMK_Win32_Projects"></a> Win32-Projekte  
  Win32-Anwendungen sind herkömmliche in C oder C++ geschriebene Windows-Programme. Das Debuggen dieses Anwendungstyps in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ist einfach.  
   
  Win32-Anwendungen enthalten MFC-Anwendungen und ATL-Projekte. Sie verwenden Windows-APIs und u. U. auch MFC oder ATL, nutzen jedoch nicht die Common Language Runtime (CLR). Sie können aber verwalteten Code aufrufen, der die CLR verwendet.  
   
  Die unten stehende Prozedur beschreibt, wie ein Win32-Projekt aus [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] heraus gedebuggt wird. Sie können eine Win32-Anwendung jedoch auch debuggen, indem sie sie außerhalb von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] starten und dann eine Verbindung zu ihr herstellen. Weitere Informationen finden Sie unter [Anfügen an ausgeführte Prozesse](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).  
   
-###  <a name="BKMK_To_debug_a_C_or_C___Win32_application"></a>So debuggen Sie eine C- oder C++ geschriebene Win32-Anwendung  
+###  <a name="BKMK_To_debug_a_C_or_C___Win32_application"></a> So debuggen Sie eine C- oder C++ geschriebene Win32-Anwendung  
   
 1.  Öffnen Sie das Projekt in Visual Studio.  
   
@@ -77,7 +75,7 @@ In diesem Abschnitt wird das Debuggen grundlegender Projekttypen erläutert, die
   
 3.  Debuggen Sie die beschriebenen Verfahren mit [Debugger Grundlagen](../debugger/debugger-basics.md).  
   
-###  <a name="BKMK_To_manually_set_a_Debug_configuration"></a>Eine Debugkonfiguration manuell festlegen  
+###  <a name="BKMK_To_manually_set_a_Debug_configuration"></a> Eine Debugkonfiguration manuell festlegen  
   
 1.  Auf der **Ansicht** Menü klicken Sie auf **Eigenschaftenseiten**.  
   
@@ -99,7 +97,7 @@ In diesem Abschnitt wird das Debuggen grundlegender Projekttypen erläutert, die
   
  [Inhalt](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)  
   
-##  <a name="BKMK_Windows_Forms_Applications___NET_"></a>Windows Forms-Anwendungen (.NET)  
+##  <a name="BKMK_Windows_Forms_Applications___NET_"></a> Windows Forms-Anwendungen (.NET)  
  Die **Windows Forms-Anwendung (.NET)** Vorlage erstellt eine [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] Windows Forms-Anwendung. Weitere Informationen finden Sie unter [How to: Create a Windows Application Project](http://msdn.microsoft.com/en-us/b2f93fed-c635-4705-8d0e-cf079a264efa).  
   
  Das Debuggen dieses Anwendungstyps in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ist mit dem Debuggen in verwalteten Windows Forms-Anwendungen vergleichbar.  

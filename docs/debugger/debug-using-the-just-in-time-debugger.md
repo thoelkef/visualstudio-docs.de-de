@@ -1,26 +1,24 @@
 ---
 title: Mithilfe der Just-in-Time-Debugger debuggen | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 07/06/17
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Visual Studio], Just-In-Time
 - Just-In-Time debugging
 ms.assetid: ee4d79a5-a1d2-4418-a93f-dd57a53e1836
-caps.latest.revision: "48"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 4bcdd28247b767321d3d5fed9681082538ba2b12
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 1bfaed6a788d61f239fb8fb69095549fe5c20d6d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>Debuggen Sie mithilfe der Just-in-Time-Debugger in Visual Studio
 Just-in-Time-Debuggen Visual Studio wird automatisch gestartet, wenn eine Ausnahme oder ein Absturz in einer Anwendung ausgeführt wird, die außerhalb von Visual Studio ausgeführt wird. Dadurch können Sie die Anwendung testen, wenn Visual Studio nicht ausgeführt wird, und beginnen mit Visual Studio debuggen, wenn ein Problem auftritt.
@@ -30,7 +28,7 @@ Just-in-Time-Debuggen funktioniert für Windows desktop-apps. Es funktioniert ni
 > [!TIP] 
 > Wenn Sie nur wissen, reagieren auf das Just-in-Time möchten-debugger (Dialogfeld), finden Sie unter [in diesem Thema](../debugger/just-in-time-debugging-in-visual-studio.md).
 
-##  <a name="BKMK_Enabling"></a>Aktivieren oder deaktivieren Sie Just-in-Time-Debuggen  
+##  <a name="BKMK_Enabling"></a> Aktivieren oder deaktivieren Sie Just-in-Time-Debuggen  
 Sie aktivieren oder deaktivieren Sie Just-in-Time-Debuggen von Visual Studio **Tools > Optionen** (Dialogfeld).
   
 #### <a name="to-enable-or-disable-just-in-time-debugging"></a>So aktivieren oder deaktivieren Sie Just-In-Time-Debuggen  
@@ -55,7 +53,7 @@ Just-In-Time-Debuggen ist möglicherweise immer noch aktiviert, auch wenn Visual
   
 #### <a name="to-disable-just-in-time-debugging-by-editing-the-registry"></a>So deaktivieren Sie Just-In-Time-Debuggen durch Bearbeiten der Registrierung  
   
-1.  Auf der **starten** Menü, suchen und ausführen`regedit.exe`  
+1.  Auf der **starten** Menü, suchen und ausführen `regedit.exe`  
   
 2.  In der **Registrierungs-Editor** Fenster Suchen und löschen Sie die folgenden Registrierungseinträge:  
   

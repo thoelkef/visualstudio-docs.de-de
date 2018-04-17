@@ -1,23 +1,21 @@
 ---
-title: "Erweiterte Regelsatz Entwurfsrichtlinienregeln für verwalteten Code | Microsoft Docs"
-ms.custom: 
+title: Erweiterte Regelsatz Entwurfsrichtlinienregeln für verwalteten Code | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 ms.assetid: a338caf2-b75d-4f23-a0f9-3024fa0bceac
-caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: 78b9d5a2c2f147ade02e3123e2e5c08f130b29de
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- dotnet
+ms.openlocfilehash: 137b1bfc0af92596d48a4014b4ff5ac1bb4ecccd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="extended-design-guidelines-rules-rule-set-for-managed-code"></a>Regelsatz für die erweiterten Entwurfsrichtlinienregeln für verwalteten Code
 Der Regelsatz Microsoft erweiterten Entwurfsrichtlinienregeln erweitert die einfachen Entwurfsrichtlinienregeln bezüglich Verwendbarkeit und wartbarkeit und maximieren die gemeldeten. Besonderes Augenmerk wird auf Benennungsrichtlinien gelegt. Sie sollten diesen Regelsatz Wenn Ihr Projekt Bibliothekscode umfasst oder wenn Sie höchste Standards für das Schreiben von Code, der leicht zu warten ist erzwingen möchten.  

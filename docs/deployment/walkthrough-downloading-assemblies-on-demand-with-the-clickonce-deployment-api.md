@@ -1,12 +1,10 @@
 ---
-title: "Exemplarische Vorgehensweise: Herunterladen von Assemblys bei Bedarf mit der API für die ClickOnce-Bereitstellung | Microsoft Docs"
-ms.custom: 
+title: 'Exemplarische Vorgehensweise: Herunterladen von Assemblys bei Bedarf mit der API für die ClickOnce-Bereitstellung | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,16 +14,16 @@ helpviewer_keywords:
 - ClickOnce deployment, on-demand download
 - on-demand assemblies, ClickOnce
 ms.assetid: d20e2789-8621-4806-b5b7-841122da1456
-caps.latest.revision: "16"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 640c0852a3745d11aae119e3c00e024b594d9132
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: a9dc200d2dbab68dd3cc4577f5024df4077bfc6a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api"></a>Exemplarische Vorgehensweise: Herunterladen von Assemblys bei Bedarf mit der API für die ClickOnce-Bereitstellung
 Standardmäßig alle Assemblys im enthalten eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung werden heruntergeladen, wenn die Anwendung zuerst ausgeführt wird. Allerdings müssen Sie Teile der Anwendung möglicherweise, die von einer kleinen Gruppe Ihrer Benutzer verwendet werden. In diesem Fall soll eine Assembly erst heruntergeladen werden, wenn eine der in ihr definierten Typen erstellt wird. Die folgende exemplarische Vorgehensweise veranschaulicht, wie Sie bestimmte Assemblys in der Anwendung als "optional" markieren und zum Herunterladen dieser mithilfe von Klassen der <xref:System.Deployment.Application> -Namespace, wenn die common Language Runtime (CLR) angefordert.  

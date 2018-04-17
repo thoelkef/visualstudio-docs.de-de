@@ -1,26 +1,23 @@
 ---
 title: 'Exemplarische Vorgehensweise: Erstellen von LINQ to SQL-Klassen mithilfe der Vererbung einer einzelnen Tabelle (O-R-Designer) | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
 ms.assetid: 63bc6328-e0df-4655-9ce3-5ff74dbf69a4
-caps.latest.revision: "4"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: b6e255492f0859689b41723657338140ffee5931
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: 8a0c6702a965ae2733d2461cf30f5fd91f27dba3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>Exemplarische Vorgehensweise: Erstellen von LINQ to SQL-Klassen mit einer Vererbung für eine einzelne Tabelle (O/R-Designer)
 Die [LINQ to SQL-Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) unterstützt Vererbung einer einzelnen Tabelle in der Regel in relationalen Systemen implementierte ist. Diese exemplarische Vorgehensweise erweitert die generische Schritte in der [Vorgehensweise: Konfigurieren der Vererbung mithilfe des O/R-Designers](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md) Thema sowie einige echten Daten zum Veranschaulichen der Verwendung von Vererbung in der [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].  
@@ -57,8 +54,8 @@ Die [LINQ to SQL-Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visu
     |-----------------|---------------|-----------------|  
     |**ID**|**int**|**False**|  
     |**Type**|**int**|**True**|  
-    |**Vorname**|**nvarchar(200)-Datentyp gepackt ist**|**False**|  
-    |**Nachname**|**nvarchar(200)-Datentyp gepackt ist**|**False**|  
+    |**Vorname**|**nvarchar(200)**|**False**|  
+    |**Nachname**|**nvarchar(200)**|**False**|  
     |**Manager**|**int**|**True**|  
   
 3.  Legen Sie die ID-Spalte als Primärschlüssel fest.  

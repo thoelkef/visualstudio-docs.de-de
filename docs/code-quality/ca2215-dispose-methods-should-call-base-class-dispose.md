@@ -1,12 +1,10 @@
 ---
 title: 'CA2215: Dispose-Methoden sollten Dispose der Basisklasse aufrufen | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - CA2215
 - DisposeMethodsShouldCallBaseClassDispose
@@ -15,16 +13,16 @@ helpviewer_keywords:
 - DisposeMethodsShouldCallBaseClassDispose
 - CA2215
 ms.assetid: c772e7a6-a87e-425c-a70e-912664ae9042
-caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 791de4f70113df3759e920591ec94da5108eec9a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: d8eb5c56ab3affe6322a858dfcd34c3b138f26d7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca2215-dispose-methods-should-call-base-class-dispose"></a>CA2215: Dispose-Methoden müssen die Dispose-Funktion der Basisklasse aufrufen
 |||  
@@ -41,10 +39,10 @@ ms.lasthandoff: 12/22/2017
  Wenn ein Typ von einem Typ erbt, rufen sie die <xref:System.IDisposable.Dispose%2A> Methode des Basistyps aus in einem eigenen <xref:System.IDisposable.Dispose%2A> Methode. Aufrufen der Methode des Basistyps gewährleistet Dispose an, dass alle Ressourcen erstellt, indem der Basistyp freigegeben werden.  
   
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen  
- Um einen Verstoß gegen diese Regel zu beheben, rufen `base`.<xref:System.IDisposable.Dispose%2A> in Ihrer <xref:System.IDisposable.Dispose%2A> Methode.  
+ Um einen Verstoß gegen diese Regel zu beheben, rufen `base`.<xref:System.IDisposable.Dispose%2A> in Ihrem <xref:System.IDisposable.Dispose%2A> Methode.  
   
 ## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?  
- Sie können ruhig auf eine Warnung dieser Regel zu unterdrücken, wenn der Aufruf von `base`.<xref:System.IDisposable.Dispose%2A> tritt auf, genauer gesagt aufrufenden als die Regel überprüft.  
+ Sie können ruhig auf eine Warnung dieser Regel zu unterdrücken, wenn der Aufruf von `base`.<xref:System.IDisposable.Dispose%2A> Tritt auf, genauer gesagt aufrufenden als die Regel überprüft.  
   
 ## <a name="example"></a>Beispiel  
  Das folgende Beispiel zeigt einen Typ `TypeA` implementiert <xref:System.IDisposable>.  

@@ -1,13 +1,10 @@
 ---
-title: "Vorgehensweise: angeben, welche Dateien mit ClickOnce veröffentlichten | Microsoft Docs"
-ms.custom: 
+title: 'Vorgehensweise: angeben, welche Dateien mit ClickOnce veröffentlichten | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - Microsoft.VisualStudio.Publish.BaseProvider.Dialog.File
 dev_langs:
@@ -18,17 +15,16 @@ helpviewer_keywords:
 - ClickOnce deployment, file exclusion
 - files, publishing via ClickOnce
 ms.assetid: 579c134a-d50f-4e0c-8e05-2a4ff654896a
-caps.latest.revision: 
 author: stevehoag
 ms.author: shoag
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: eee0e88b23a26ae7a89005ff304b565dd3d84c34
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 7906801baf00c8657c4ddd4e9ffadc4e8c67eba7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-specify-which-files-are-published-by-clickonce"></a>Gewusst wie: Angeben der mit ClickOnce veröffentlichten Dateien
 Beim Veröffentlichen einer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung, alle ohne Code-Dateien im Projekt werden zusammen mit der Anwendung bereitgestellt. In einigen Fällen möglicherweise nicht möchten oder müssen, um bestimmte Dateien zu veröffentlichen, oder Sie möchten bestimmte Dateien basierend auf Bedingungen zu installieren. Visual Studio stellt die Funktionen zum Ausschließen von Dateien, kennzeichnen Dateien als Datendateien oder erforderliche Komponenten und erstellen Sie Gruppen von Dateien für die bedingte Installation bereit.  

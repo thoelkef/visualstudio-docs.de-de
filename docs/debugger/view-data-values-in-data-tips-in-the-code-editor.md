@@ -1,12 +1,10 @@
 ---
 title: Anzeigen von Datenwerten in DataTips im Code-Editor | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 07/14/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -17,16 +15,16 @@ helpviewer_keywords:
 - debugging [Visual Studio], DataTips
 - DataTips tool
 ms.assetid: ffa7bd18-439b-4685-a9b3-c7884b5de41f
-caps.latest.revision: "38"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 178bd1768474eaaaf760e2ef4feecfe0e1519bee
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 0c098e4b4ae94c5145a193e1903aa04a0eb757b4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="view-data-values-in-datatips-in-the-code-editor"></a>Anzeigen von Datenwerten in DataTips, im Code-editor
 DataTips stellen eine praktische Möglichkeit dar, um beim Debuggen Informationen über Variablen im Programm anzuzeigen. Sie können DataTips nur im Unterbrechungsmodus verwenden und nur mit Variablen, die sich im aktuellen Gültigkeitsbereich der Ausführung befinden.
@@ -75,7 +73,7 @@ DataTips stellen eine praktische Möglichkeit dar, um beim Debuggen Informatione
   
 #### <a name="to-expand-a-variable-to-see-its-elements"></a>So erweitern Sie eine Variable, um ihre Elemente anzuzeigen  
   
--   Platzieren Sie in einem DataTip den Mauszeiger über die  **+**  Zeichen vor dem Variablennamen.  
+-   Platzieren Sie in einem DataTip den Mauszeiger über die **+** Zeichen vor dem Variablennamen.  
   
     Die Variable wird erweitert, und die Elemente werden in Strukturansicht angezeigt.
 

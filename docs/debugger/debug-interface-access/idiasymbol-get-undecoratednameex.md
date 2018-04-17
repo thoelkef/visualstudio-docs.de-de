@@ -1,29 +1,25 @@
 ---
 title: 'Idiasymbol:: Get_undecoratednameex | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaSymbol::get_undecoratedNameEx method
 ms.assetid: 579aed0b-c57d-41a1-a94a-3bf665fd4a9d
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 82d0b25b2306cc957015ec4c205a22cd44660357
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d737ccfe9dbbcdf7a205fb847bb81344cd18ff0c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idiasymbolgetundecoratednameex"></a>IDiaSymbol::get_undecoratedNameEx
 Ruft Teils oder aller eines nicht ergänzten Namens für eine C++ ergänzten Namen (Bindung).  
@@ -59,17 +55,17 @@ HRESULT get_undecoratedNameEx(
 |Flag|Wert|Beschreibung|  
 |----------|-----------|-----------------|  
 |UNDNAME_COMPLETE|0x0000|Aktiviert die vollständige Undecoration.|  
-|UNDNAME_NO_LEADING_UNDERSCORES|0 x 0001|Entfernt führende Unterstriche von Microsoft-Schlüsselwörter erweitert.|  
-|UNDNAME_NO_MS_KEYWORDS|0 x 0002|Deaktiviert die Erweiterung von Microsoft-Schlüsselwörter erweitert.|  
-|UNDNAME_NO_FUNCTION_RETURNS|0 x 0004|Deaktiviert die Erweiterung des Rückgabetyps für die primäre Deklaration.|  
+|UNDNAME_NO_LEADING_UNDERSCORES|0x0001|Entfernt führende Unterstriche von Microsoft-Schlüsselwörter erweitert.|  
+|UNDNAME_NO_MS_KEYWORDS|0x0002|Deaktiviert die Erweiterung von Microsoft-Schlüsselwörter erweitert.|  
+|UNDNAME_NO_FUNCTION_RETURNS|0x0004|Deaktiviert die Erweiterung des Rückgabetyps für die primäre Deklaration.|  
 |UNDNAME_NO_ALLOCATION_MODEL|0x0008|Deaktiviert die Erweiterung des Modells Deklaration.|  
 |UNDNAME_NO_ALLOCATION_LANGUAGE|0x0010|Deaktiviert die Erweiterung von der Sprache deklarationsspezifizierer.|  
 |UNDNAME_RESERVED1|0x0020|RESERVIERT.|  
 |UNDNAME_RESERVED2|0 x 0040|RESERVIERT.|  
 |UNDNAME_NO_THISTYPE|0x0060|Deaktiviert alle Modifizierer auf der `this` Typ.|  
 |UNDNAME_NO_ACCESS_SPECIFIERS|0 x 0080|Deaktiviert die Erweiterung der Zugriffsspezifizierer für Elemente.|  
-|UNDNAME_NO_THROW_SIGNATURES|0 x 0100|Deaktiviert die Erweiterung "Throw-Signaturen" für Funktionen und Zeigern auf Funktionen.|  
-|UNDNAME_NO_MEMBER_TYPE|0 x 0200|Deaktiviert die Erweiterung der `static` oder `virtual` Elemente.|  
+|UNDNAME_NO_THROW_SIGNATURES|0x0100|Deaktiviert die Erweiterung "Throw-Signaturen" für Funktionen und Zeigern auf Funktionen.|  
+|UNDNAME_NO_MEMBER_TYPE|0x0200|Deaktiviert die Erweiterung der `static` oder `virtual` Elemente.|  
 |UNDNAME_NO_RETURN_UDT_MODEL|0 x 0400|Deaktiviert die Erweiterung von der Microsoft-Modell zur UDT zurückgibt.|  
 |UNDNAME_32_BIT_DECODE|0x0800|Undecorates 32-Bit-ergänzte Namen an.|  
 |UNDNAME_NAME_ONLY|0 x 1000|Ruft nur den Namen für die primäre Deklaration an; Gibt nur [Bereich::] Namen.  Wird erweitert, Vorlage Params.|  

@@ -1,23 +1,21 @@
 ---
 title: 'Exemplarische Vorgehensweise: Verwenden der Grafikdiagnose zum Debuggen eines Compute-Shaders | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 69287456-644b-4aff-bd03-b1bbb2abb82a
-caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: ef73c45b39c638b2dfc1f88be3323d083efa8493
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 4498f819dae42c1f010fa97891511253624d7b97
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader"></a>Exemplarische Vorgehensweise: Debuggen eines Compute-Shaders mithilfe der Grafikdiagnose
 In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie die Visual Studio-Grafikdiagnosetools zur Untersuchung eines Compute-Shaders verwendet werden, der falsche Ergebnisse generiert.  
@@ -56,7 +54,7 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie die Visual Stu
   
 2.  Überprüfen Sie die **Grafikereignisliste** für das Zeichnen-Ereignis, das das Dataset gerendert wird. Um dies zu vereinfachen, geben Sie `Draw` in der **Suche** Feld in der oberen rechten Ecke des der **Grafikereignisliste** Fenster. Damit wird die Liste gefiltert und enthält nur Ereignisse, die "Zeichnen" im Titel haben. In diesem Szenario ermitteln Sie, dass die folgenden Zeichnen-Ereignisse aufgetreten sind:  
   
-     ![Die Ereignisliste &#40; EL &#41; veranschaulicht das Zeichnen Ereignisse. ] (media/gfx_diag_demo_compute_shader_fluid_step_2.png "gfx_diag_demo_compute_shader_fluid_step_2")  
+     ![Die Ereignisliste &#40;EL&#41; werden Draw--Ereignisse. ] (media/gfx_diag_demo_compute_shader_fluid_step_2.png "gfx_diag_demo_compute_shader_fluid_step_2")  
   
 3.  Navigieren Sie durch die einzelnen Zeichnen-Ereignisse, und beobachten Sie das Renderziel in der Dokumentregisterkarte "Grafikprotokolle".  
   
@@ -102,11 +100,11 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie die Visual Stu
   
 6.  Überprüfen Sie den Schritt der Kräfteberechnung im Quellcode des Compute-Shaders. In diesem Szenario ermitteln Sie, dass die Fehlerquelle sich hier befindet.  
   
-     ![Debuggen die ForceCS &#95; Einfache Compute-Shader. ] (media/gfx_diag_demo_compute_shader_fluid_step_9.png "gfx_diag_demo_compute_shader_fluid_step_9")  
+     ![Debuggen der ForceCS&#95;einfache compute-Shader. ] (media/gfx_diag_demo_compute_shader_fluid_step_9.png "gfx_diag_demo_compute_shader_fluid_step_9")  
   
  Nachdem Sie den Ursprung des Fehlers bestimmt haben, können Sie das Debuggen beenden und den Quellcode des Compute-Shaders dahingehend ändern, dass der Abstand zwischen den interagierenden Partikeln ordnungsgemäß berechnet wird. In diesem Szenario ändern Sie nur die Zeile `float2 diff = N_position + P_position;` in `float2 diff = N_position - P_position;`:  
   
- ![Der korrigierte COMPUTE-Klausel &#45; Shader-Code. ] (media/gfx_diag_demo_compute_shader_fluid_step_10.png "gfx_diag_demo_compute_shader_fluid_step_10")  
+ ![Der korrigierte Compute&#45;Shader-Code. ] (media/gfx_diag_demo_compute_shader_fluid_step_10.png "gfx_diag_demo_compute_shader_fluid_step_10")  
   
  Da die Compute-Shader zur Laufzeit kompiliert werden, können Sie in diesem Szenario die App nach Durchführung der Änderungen einfach neu starten und beobachten, welche Auswirkung die Änderungen auf die Simulation haben. Sie müssen die App nicht neu erstellen. Wenn Sie die App ausführen, können Sie feststellen, dass sich die Simulation nun ordnungsgemäß verhält.  
   

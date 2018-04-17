@@ -1,27 +1,25 @@
 ---
-title: "Auswerten eines Fenster Überwachungsausdrucks | Microsoft Docs"
-ms.custom: 
+title: Auswerten eines Fenster Überwachungsausdrucks | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Watch window expressions
 - Watch window, expressions
 - expression evaluation, Watch window expressions
 ms.assetid: b07e72c7-60d3-4b30-8e3f-6db83454c348
-caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: fb109fd91e4c295bf372b14e26bc2a75c3be6b1d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: beb632b484659c3bc901142b35ab52d25b8067fe
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="evaluating-a-watch-window-expression"></a>Bewerten einen Überwachungsausdruck-Fenster
 > [!IMPORTANT]
@@ -35,13 +33,13 @@ ms.lasthandoff: 12/22/2017
   
 2.  Für jeden Ausdruck in der Überwachungsübersicht, ruft Visual Studio [ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) den Text des Ausdrucks in einer analysierten Ausdrucks zu konvertieren.  
   
-3.  `IDebugExpressionContext2::ParseText`Aufrufe [analysieren](../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) , führen Sie die eigentliche Arbeit des Analysieren von Text und erzeugen eine [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md) Objekt.  
+3.  `IDebugExpressionContext2::ParseText` Aufrufe [analysieren](../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) , führen Sie die eigentliche Arbeit des Analysieren von Text und erzeugen eine [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md) Objekt.  
   
-4.  `IDebugExpressionContext2::ParseText`erstellt ein [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) -Objekt und setzt die `IDebugParsedExpression` -Objekts hinein. Diese ich`DebugExpression2` Objekt dann an Visual Studio zurückgegeben wird.  
+4.  `IDebugExpressionContext2::ParseText` erstellt ein [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) -Objekt und setzt die `IDebugParsedExpression` -Objekts hinein. Diese ich`DebugExpression2` Objekt dann an Visual Studio zurückgegeben wird.  
   
 5.  Visual Studio-Aufrufe [EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) zum Auswerten des analysierten Ausdrucks.  
   
-6.  `IDebugExpression2::EvaluateSync`übergibt den Aufruf von [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) erstellen und führen Sie die tatsächliche Auswertung ein [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) zu Visual Studio zurückgegebene Objekt.  
+6.  `IDebugExpression2::EvaluateSync` übergibt den Aufruf von [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) erstellen und führen Sie die tatsächliche Auswertung ein [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) zu Visual Studio zurückgegebene Objekt.  
   
 7.  Visual Studio-Aufrufe [GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) um den Wert des Ausdrucks abzurufen, die dann in der Überwachungsübersicht angezeigt werden.  
   

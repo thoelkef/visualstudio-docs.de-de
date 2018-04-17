@@ -1,13 +1,10 @@
 ---
 title: Verwenden gespeicherter IntelliTrace-Daten | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.historicaldebug.norepro
 helpviewer_keywords:
@@ -16,17 +13,16 @@ helpviewer_keywords:
 - IntelliTrace log files
 - .iTrace files
 ms.assetid: 9f2cce86-345a-4e22-84ba-91542d81e67a
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 37c4c82dc3edb1abcad9dc212040864155deb1a6
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 2a39531134d4c2f041c170d328c79d157fd74a0d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="using-saved-intellitrace-data"></a>Verwenden gespeicherter IntelliTrace-Daten
 Wechseln Sie zu bestimmten Punkten in der Ausführung Ihrer Anwendung, wenn Sie das Debuggen von einer IntelliTrace-Protokoll-(.iTrace)-Datei aus beginnen. Diese Datei kann Leistungsereignisse, Ausnahmen, Threads, Testschritte, Module und weitere Systeminfo enthalten, die IntelliTrace erfasst, während Ihre App ausgeführt wird.  
@@ -171,7 +167,7 @@ Wechseln Sie zu bestimmten Punkten in der Ausführung Ihrer Anwendung, wenn Sie 
   
 2.  Öffnen Sie die ITRACE-Datei, wählen Sie dann **Analyse** aus, und geben Sie die SharePoint-Korrelations-ID ein, um die entsprechende Webanforderung und aufgezeichneten Ereignisse zu überprüfen.  
   
-     ![IntelliTrace-Protokoll &#45; Geben Sie die SharePoint-Korrelations-ID](../debugger/media/entersharepointcorrelationid.png "EnterSharePointCorrelationID")  
+     ![IntelliTrace-Protokoll &#45; Geben Sie SharePoint-Korrelations-ID](../debugger/media/entersharepointcorrelationid.png "EnterSharePointCorrelationID")  
   
 3.  Überprüfen Sie die Ereignisse unter **Angeforderte Ereignisse**. Ereignisse werden von oben nach unten in der Reihenfolge ihres Auftretens angezeigt.  
   
@@ -179,7 +175,7 @@ Wechseln Sie zu bestimmten Punkten in der Ausführung Ihrer Anwendung, wenn Sie 
   
     2.  Wählen Sie **Debugging starten** , um das Debuggen an dem Punkt zu starten, an dem das Ereignis aufgetreten ist.  
   
-     ![IntelliTrace-Protokolldatei &#45; Anzeigen von webanforderung &#43; Ereignisse](../debugger/media/entersharepointcorrelationid2.png "EnterSharePointCorrelationID2")  
+     ![IntelliTrace-Protokolldatei &#45; Ansicht webanforderung &#43; Ereignisse](../debugger/media/entersharepointcorrelationid2.png "EnterSharePointCorrelationID2")  
   
  Sie können diese Art von SharePoint-Ereignissen zusammen mit IntelliTrace-Ereignissen anzeigen:  
   
@@ -209,7 +205,7 @@ Wechseln Sie zu bestimmten Punkten in der Ausführung Ihrer Anwendung, wenn Sie 
   
 3.  Wählen Sie **Ausnahme debuggen** aus, um das Debuggen an dem Punkt zu starten, an dem die Ausnahme aufgetreten ist.  
   
-     ![IntelliTrace-Protokoll &#45; Unbehandelte Ausnahmen in SharePoint](../debugger/media/sharepointunhandledexceptions_intellitrace.png "SharePointUnhandledExceptions_IntelliTrace")  
+     ![IntelliTrace-Protokoll &#45; unbehandelte Ausnahmen in SharePoint](../debugger/media/sharepointunhandledexceptions_intellitrace.png "SharePointUnhandledExceptions_IntelliTrace")  
   
  Eine exemplarische Vorgehensweise finden Sie unter [Exemplarische Vorgehensweise: Debuggen einer SharePoint-Anwendung durch Verwenden von IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md). Für die Arten von Daten, die vom Agent aufgezeichnet werden, finden Sie unter [IntelliTrace-Features](../debugger/intellitrace-features.md).  
   

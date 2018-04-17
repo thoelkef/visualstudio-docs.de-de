@@ -1,12 +1,10 @@
 ---
-title: "Erstellen von ClickOnce-Anwendungen über die Befehlszeile | Microsoft Docs"
-ms.custom: 
+title: Erstellen von ClickOnce-Anwendungen über die Befehlszeile | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,16 +14,16 @@ helpviewer_keywords:
 - publishing
 - publishing, ClickOnce
 ms.assetid: d9bc6212-c584-4f72-88c9-9a4b998c555e
-caps.latest.revision: "23"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 39a64737c3e34b7e0c4d89824b22f169d60d4fd0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 183cb81798841c6640ea1b17d8db3820e0229769
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="building-clickonce-applications-from-the-command-line"></a>Erstellen von ClickOnce-Anwendungen über die Befehlszeile
 In [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)], Sie können Projekte über die Befehlszeile erstellen, auch wenn sie in der integrierten Entwicklungsumgebung (IDE) erstellt werden. Tatsächlich können Sie ein mit erstelltes Projekt neu erstellen [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] auf einem anderen Computer, die nur die [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] installiert. Dadurch können Sie einen Build mithilfe eines automatisierten Prozesses zu reproduzieren, z. B. in einem zentralen Build Labor- oder mithilfe von erweiterten Skripttechniken Gegenstand des beim Erstellen des Projekts selbst.  
@@ -112,7 +110,7 @@ msbuild /target:publish /property:BootstrapperEnabled=false
   
  Veröffentlichungseigenschaften werden [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] aus der **veröffentlichen**, **Sicherheit**, und **Signierung** Eigenschaftenseiten der **Projekt-Designer** . Im folgenden finden Sie eine Beschreibung für die publishing Eigenschaften werden zusammen mit Angabe der wie jede in den verschiedenen Eigenschaftenseiten im Anwendungs-Designer festgelegt wird:  
   
--   `AssemblyOriginatorKeyFile`Bestimmt die Schlüsseldatei zum Signieren verwendet Ihre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendungsmanifeste. Dieser Schlüssel kann auch verwendet werden, Ihre Assemblys einen starken Namen zuweisen. Diese Eigenschaft wird festgelegt, auf die **Signierung** auf der Seite der **Projekt-Designer**.  
+-   `AssemblyOriginatorKeyFile` Bestimmt die Schlüsseldatei zum Signieren verwendet Ihre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendungsmanifeste. Dieser Schlüssel kann auch verwendet werden, Ihre Assemblys einen starken Namen zuweisen. Diese Eigenschaft wird festgelegt, auf die **Signierung** auf der Seite der **Projekt-Designer**.  
   
  Die folgenden Eigenschaften werden festgelegt, auf die **Sicherheit** Seite:  
   
@@ -122,41 +120,41 @@ msbuild /target:publish /property:BootstrapperEnabled=false
   
  Die folgenden Eigenschaften werden festgelegt, auf die **veröffentlichen** Seite:  
   
--   `PublishUrl`ist der Speicherort in der IDE, in dem die Anwendung veröffentlicht wird. Erfolgt dieses einfügen in die [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendungsmanifest, wenn weder die `InstallUrl` oder `UpdateUrl` -Eigenschaft angegeben wird.  
+-   `PublishUrl` ist der Speicherort in der IDE, in dem die Anwendung veröffentlicht wird. Erfolgt dieses einfügen in die [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendungsmanifest, wenn weder die `InstallUrl` oder `UpdateUrl` -Eigenschaft angegeben wird.  
   
--   `ApplicationVersion`Gibt die Version des der [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung. Dies ist eine vierstellige Versionsnummer. Wenn die letzte Ziffer ist eine "*", und dann die `ApplicationRevision` für den Wert in das Manifest eingefügt wird, während des Buildvorgangs ersetzt wird.  
+-   `ApplicationVersion` Gibt die Version des der [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung. Dies ist eine vierstellige Versionsnummer. Wenn die letzte Ziffer ist eine "*", und dann die `ApplicationRevision` für den Wert in das Manifest eingefügt wird, während des Buildvorgangs ersetzt wird.  
   
--   `ApplicationRevision`Gibt die Version an. Dies ist eine Ganzzahl, die jedes Mal inkrementiert, die Sie in der IDE zu veröffentlichen. Beachten Sie, dass für Builds ausgeführt werden, in der Befehlszeile nicht automatisch erhöht wird.  
+-   `ApplicationRevision` Gibt die Version an. Dies ist eine Ganzzahl, die jedes Mal inkrementiert, die Sie in der IDE zu veröffentlichen. Beachten Sie, dass für Builds ausgeführt werden, in der Befehlszeile nicht automatisch erhöht wird.  
   
--   `Install`Bestimmt, ob die Anwendung eine installierte Anwendung oder eine Anwendung aus der Web ausgeführt wird.  
+-   `Install` Bestimmt, ob die Anwendung eine installierte Anwendung oder eine Anwendung aus der Web ausgeführt wird.  
   
--   `InstallUrl`(nicht dargestellt) ist der Speicherort, in dem Benutzer die Anwendung installiert wird. Wenn angegeben, wird dieser Wert in den setup.exe-Bootstrapper geschrieben, wenn die `IsWebBootstrapper` -Eigenschaft aktiviert ist. Auch in der Anwendung manifest If eingefügt der `UpdateUrl` nicht angegeben wird.  
+-   `InstallUrl` (nicht dargestellt) ist der Speicherort, in dem Benutzer die Anwendung installiert wird. Wenn angegeben, wird dieser Wert in den setup.exe-Bootstrapper geschrieben, wenn die `IsWebBootstrapper` -Eigenschaft aktiviert ist. Auch in der Anwendung manifest If eingefügt der `UpdateUrl` nicht angegeben wird.  
   
--   `SupportUrl`(nicht dargestellt) ist der Speicherort in verknüpft die **Programme hinzufügen/entfernen** im Dialogfeld für eine installierte Anwendung.  
+-   `SupportUrl` (nicht dargestellt) ist der Speicherort in verknüpft die **Programme hinzufügen/entfernen** im Dialogfeld für eine installierte Anwendung.  
   
  Die folgenden Eigenschaften werden festgelegt, der **Anwendungsupdates** (Dialogfeld), auf das Sie über die **veröffentlichen** Seite.  
   
--   `UpdateEnabled`Gibt an, ob die Anwendung auf Updates überprüfen soll.  
+-   `UpdateEnabled` Gibt an, ob die Anwendung auf Updates überprüfen soll.  
   
--   `UpdateMode`Gibt an, Updates Vorder- oder Hintergrund Updates.  
+-   `UpdateMode` Gibt an, Updates Vorder- oder Hintergrund Updates.  
   
--   `UpdateInterval`Gibt an, wie häufig die Anwendung nach Updates suchen soll.  
+-   `UpdateInterval` Gibt an, wie häufig die Anwendung nach Updates suchen soll.  
   
--   `UpdateIntervalUnits`Gibt an, ob die `UpdateInterval` Wert wird in Stunden, Tage oder Wochen.  
+-   `UpdateIntervalUnits` Gibt an, ob die `UpdateInterval` Wert wird in Stunden, Tage oder Wochen.  
   
--   `UpdateUrl`(nicht dargestellt) ist der Speicherort, von dem die Anwendung Updates empfangen werden. Wenn angegeben, wird dieser Wert in das Anwendungsmanifest eingefügt.  
+-   `UpdateUrl` (nicht dargestellt) ist der Speicherort, von dem die Anwendung Updates empfangen werden. Wenn angegeben, wird dieser Wert in das Anwendungsmanifest eingefügt.  
   
 -   Die folgenden Eigenschaften werden festgelegt, der **Veröffentlichungsoptionen** (Dialogfeld), auf das Sie über die **veröffentlichen** Seite.  
   
--   `PublisherName`Gibt den Namen des Verlegers beim Installieren oder Ausführen der Anwendung angezeigt. Bei einer installierten Anwendung er dient außerdem zum Geben Sie den Namen des Ordners auf dem **starten** Menü.  
+-   `PublisherName` Gibt den Namen des Verlegers beim Installieren oder Ausführen der Anwendung angezeigt. Bei einer installierten Anwendung er dient außerdem zum Geben Sie den Namen des Ordners auf dem **starten** Menü.  
   
--   `ProductName`Gibt den Namen des Produkts, die beim Installieren oder Ausführen der Anwendung angezeigt. Bei einer installierten Anwendung er dient außerdem zum Geben Sie den Namen der Verknüpfung auf der **starten** Menü.  
+-   `ProductName` Gibt den Namen des Produkts, die beim Installieren oder Ausführen der Anwendung angezeigt. Bei einer installierten Anwendung er dient außerdem zum Geben Sie den Namen der Verknüpfung auf der **starten** Menü.  
   
 -   Die folgenden Eigenschaften werden festgelegt, der **Voraussetzungen** (Dialogfeld), auf das Sie über die **veröffentlichen** Seite.  
   
--   `BootstrapperEnabled`Bestimmt, ob die setup.exe-Bootstrapper generiert.  
+-   `BootstrapperEnabled` Bestimmt, ob die setup.exe-Bootstrapper generiert.  
   
--   `IsWebBootstrapper`Bestimmt, ob der setup.exe-Bootstrapper über das Internet oder in datenträgerbasierte Modus funktioniert.  
+-   `IsWebBootstrapper` Bestimmt, ob der setup.exe-Bootstrapper über das Internet oder in datenträgerbasierte Modus funktioniert.  
   
 ## <a name="installurl-supporturl-publishurl-and-updateurl"></a>InstallURL, SupportUrl "publishUrl" und UpdateURL  
  Die folgende Tabelle zeigt die vier URL-Optionen für die ClickOnce-Bereitstellung.  

@@ -1,12 +1,10 @@
 ---
 title: Server und Client-Konfigurationsprobleme in ClickOnce-Bereitstellungen | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,16 +15,16 @@ helpviewer_keywords:
 - ClickOnce deployment, troubleshooting
 - Windows applications, ClickOnce deployments
 ms.assetid: 929e5fcc-dd56-409c-bb57-00bd9549b20b
-caps.latest.revision: "33"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: b50dbe51f58af79b8c1074c592f98abccbe8ba7e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 11cc26689b20f989cb449f67387052caf3096811
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>Probleme mit der Server- und Clientkonfiguration in ClickOnce-Bereitstellungen
 Wenn Sie Internetinformationsdienste (Internet Information Services, IIS) unter Windows Server verwenden und die Bereitstellung enthält einen Dateityp aus, dem Windows nicht erkannt wird, IIS lehnt z. B. Microsoft Word-Datei, um diese Datei zu übertragen, und die Bereitstellung nicht erfolgreich.  
@@ -51,7 +49,7 @@ Wenn Sie Internetinformationsdienste (Internet Information Services, IIS) unter 
  Ein [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung, über SSL, außer wenn eine Eingabeaufforderung zu dem SSL-Zertifikat von Internet Explorer löst einwandfrei arbeitet. Die Aufforderung kann ausgelöst werden, wenn vorhanden ist, dass etwas mit dem Zertifikat, z. B. wenn die Websitenamen nicht übereinstimmen oder das Zertifikat abgelaufen ist. Vornehmen [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] über eine SSL-Verbindung funktioniert, stellen Sie sicher, dass das Zertifikat auf dem neuesten Stand ist und dass die Zertifikatdaten Daten des Standorts übereinstimmt.  
   
 ## <a name="clickonce-and-proxy-authentication"></a>ClickOnce- und Proxy-Authentifizierung  
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]bietet Unterstützung für integrierte Windows-Proxy-Authentifizierung, die in .NET Framework 3.5 ab. Es sind keine spezifischen "Machine.config" Direktiven erforderlich. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]bietet keine Unterstützung für andere Authentifizierungsprotokolle wie z. B. die Standard- oder Digestauthentifizierung.  
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] bietet Unterstützung für integrierte Windows-Proxy-Authentifizierung, die in .NET Framework 3.5 ab. Es sind keine spezifischen "Machine.config" Direktiven erforderlich. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] bietet keine Unterstützung für andere Authentifizierungsprotokolle wie z. B. die Standard- oder Digestauthentifizierung.  
   
  Sie können auch einen Hotfix für .NET Framework 2.0 zum Aktivieren dieser Funktion anwenden. Weitere Informationen finden Sie unter http://go.microsoft.com/fwlink/?LinkId=158730.  
   
@@ -96,7 +94,7 @@ Wenn Sie Internetinformationsdienste (Internet Information Services, IIS) unter 
  Wenn Sie Visual Studio verwenden, um eine ClickOnce-Anwendung zu veröffentlichen, können nicht Sie ein zugeordnetes Laufwerk als Installationspfad angeben. Allerdings können Sie die ClickOnce-Anwendung so installieren Sie über ein zugeordnetes Laufwerk mit dem Manifest-Generator und -Editor (Mage.exe und MageUI.exe) ändern. Weitere Informationen finden Sie unter [Mage.exe (Manifest generieren und Bearbeiten von Tool)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool) und [MageUI.exe (Manifest generieren und Bearbeiten von Manifesten, Grafischer Client)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client).  
   
 ## <a name="ftp-protocol-not-supported-for-installing-applications"></a>FTP-Protokoll für die Installation von Anwendungen wird nicht unterstützt.  
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]unterstützt das Installieren von Anwendungen von einem HTTP 1.1-Web-Server oder Dateiserver. FTP, File Transfer-Protokoll wird nicht unterstützt, für die Installation von Anwendungen. Sie können FTP verwenden, können Sie Anwendungen nur veröffentlichen. In der folgenden Tabelle werden diese Unterschiede zusammengefasst:  
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] unterstützt das Installieren von Anwendungen von einem HTTP 1.1-Web-Server oder Dateiserver. FTP, File Transfer-Protokoll wird nicht unterstützt, für die Installation von Anwendungen. Sie können FTP verwenden, können Sie Anwendungen nur veröffentlichen. In der folgenden Tabelle werden diese Unterschiede zusammengefasst:  
   
 |URL-Typ|Beschreibung|  
 |--------------|-----------------|  
@@ -122,7 +120,7 @@ Wenn Sie Internetinformationsdienste (Internet Information Services, IIS) unter 
   
 -   Bei der Erstellung eines MIME-Typs mit der Erweiterung "*" und den MIME-Typ "Application/Octet-Stream", können sie Dateien mit entsperrt Dateityp heruntergeladen werden. (Allerdings blockiert-Datei, die Typen, z. B. aspx- und ASMX heruntergeladen werden können.)  
   
- Spezifische Anweisungen zum Konfigurieren von MIME-Typen auf Windows Server finden Sie in der Microsoft Knowledge Base-Artikel KB326965, "IIS 6.0 wird nicht dienen unbekannte MIME-Typen" am [http://support.microsoft.com/default.aspx?scid=kb;en-us;326965](http://support.microsoft.com/default.aspx?scid=kb;en-us;326965).  
+ Spezifische Anweisungen zum Konfigurieren von MIME-Typen auf Windows Server finden Sie in der Microsoft Knowledge Base-Artikel KB326965, "IIS 6.0 wird nicht dienen unbekannte MIME-Typen" am [ http://support.microsoft.com/default.aspx?scid=kb; En-us; 326965](http://support.microsoft.com/default.aspx?scid=kb;en-us;326965).  
   
 ## <a name="content-type-mappings"></a>Content-Type-Zuordnungen  
  Wenn Sie über HTTP zu veröffentlichen, muss der Inhaltstyp für die Application-Datei (auch bekannt als MIME-Typ) "Application/X-ms-Anwendung." Wenn Sie haben [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] auf dem Server installiert, dies wird für Sie automatisch festgelegt. Wenn dies nicht installiert ist, müssen Sie eine MIME-Typ-Verknüpfung erstellen die [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung Vroot (oder den gesamten Server).  

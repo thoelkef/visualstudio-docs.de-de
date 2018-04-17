@@ -1,12 +1,10 @@
 ---
 title: ClickOnce-API-Referenz zur nicht verwalteten | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,19 +16,19 @@ helpviewer_keywords:
 - CleanOnlineAppCacheW interface [ClickOnce unmanaged]
 - GetDeploymentDataFromManifest [ClickOnce unmanaged]
 ms.assetid: ec002138-4054-456d-bcc1-79ac2f4a4fd7
-caps.latest.revision: "6"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: cplusplus
-ms.openlocfilehash: 392ada2288adcc229834f617c2f6284bb2e7ed0f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 8463976825d38c5ff5e8cb910df153737da9eeee
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="clickonce-unmanaged-api-reference"></a>Referenz zur nicht verwalteten API für ClickOnce
-[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]nicht verwaltete öffentliche APIs aus dfshim.dll.  
+[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] nicht verwaltete öffentliche APIs aus dfshim.dll.  
   
 ## <a name="cleanonlineappcache"></a>CleanOnlineAppCache  
  Löscht oder deinstalliert alle onlineanwendungen aus der [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendungscache.  
@@ -63,7 +61,7 @@ ms.lasthandoff: 12/22/2017
  Im Erfolgsfall gibt S_OK zurück. andernfalls gibt ein HRESULT, das den Fehler darstellt. Gibt HRESULTFROMWIN32 zurück, wenn ein Puffer zu klein ist.  
   
 ### <a name="remarks"></a>Hinweise  
- Zeiger darf nicht null sein. `pcwzActivationUrl`und `pcwzPathToDeploymentManifest` darf nicht leer sein.  
+ Zeiger darf nicht null sein. `pcwzActivationUrl` und `pcwzPathToDeploymentManifest` darf nicht leer sein.  
   
  Es ist der Verantwortung des Aufrufers, um die Aktivierungs-URL zu bereinigen. Beispielsweise Zeichen Escape hinzufügen, in denen sie benötigt werden, oder entfernen die Abfragezeichenfolge.  
   

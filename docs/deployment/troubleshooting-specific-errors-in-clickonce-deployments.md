@@ -1,12 +1,10 @@
 ---
 title: Beheben von spezifischen Fehlern in ClickOnce-Bereitstellungen | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 f1_keywords:
 - Microsoft.VisualStudio.Publish.ClickOnceProvider.ErrorPrompt.UncRequired
 - Microsoft.VisualStudio.Publish.ClickOnceProvider.ErrorPrompt.NoInstallUrl
@@ -19,16 +17,16 @@ helpviewer_keywords:
 - troubleshooting ClickOnce deployments
 - ClickOnce deployment, troubleshooting
 ms.assetid: 22dfe8f1-8271-4708-9c25-6bbb13920ac8
-caps.latest.revision: "13"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: ffa7449347fe5e898f2984237dfc8908e3bb2003
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: b52caad3b6e4c98dd78e6c6be9835c11ac4d4175
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="troubleshooting-specific-errors-in-clickonce-deployments"></a>Beheben von spezifischen Fehlern in ClickOnce-Bereitstellungen
 Dieses Thema listet die folgenden allgemeinen Fehler, die auftreten können, während der Bereitstellung einer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung, und beschreibt die Schritte, um jedes Problem zu beheben.  
@@ -72,13 +70,13 @@ Dieses Thema listet die folgenden allgemeinen Fehler, die auftreten können, wä
   
 -   Überprüfen Sie das Updateintervall im Bereitstellungsmanifest. Wenn dieses Intervall auf einem regelmäßigen Intervall aus, z. B. einmal alle sechs Stunden festgelegt ist [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wird nicht für ein Update überprüft, bis dieses Intervall verstrichen ist. Sie können ändern, das Manifest, um ein Update jedes Mal überprüft, die die Anwendung gestartet wird. Ändern das Updateintervall ist eine praktische Möglichkeit während der Entwicklungszeit Updates installiert sind, aber er verlangsamt anwendungsaktivierung überprüfen.  
   
--   Wiederholen Sie dann die Anwendung im Startmenü erneut zu starten. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]hat das Update möglicherweise im Hintergrund erkannt, jedoch werden Sie aufgefordert, die Bits auf die nächste Aktivierung zu installieren.  
+-   Wiederholen Sie dann die Anwendung im Startmenü erneut zu starten. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] hat das Update möglicherweise im Hintergrund erkannt, jedoch werden Sie aufgefordert, die Bits auf die nächste Aktivierung zu installieren.  
   
 #### <a name="during-update-you-receive-an-error-that-has-the-following-log-entry-the-reference-in-the-deployment-does-not-match-the-identity-defined-in-the-application-manifest"></a>Während der Aktualisierung tritt einen Fehler mit dem folgenden Protokolleintrag: "der Verweis in der Bereitstellung entspricht nicht die Identität, die im Manifest Anwendung definiert"  
  Dieser Fehler kann auftreten, da Sie die bereitstellungs- und Anwendungsmanifeste manuell bearbeitet haben, und die Beschreibung der Identität einer Assembly in einem Manifest synchron mit den anderen sind verursacht haben. Die Identität einer Assembly, besteht der Name, Version, Kultur und öffentliches Schlüsseltoken ab. Überprüfen Sie die Identität Beschreibungen in den Manifesten, und beheben Sie etwaige Unterschiede.  
   
 #### <a name="first-time-activation-from-local-disk-or-cd-rom-succeeds-but-subsequent-activation-from-start-menu-does-not-succeed"></a>Erstmaligen Aktivierung von lokalen Datenträger oder CD-ROM ist erfolgreich, aber nachfolgende Aktivierung aus dem Startmenü nicht erfolgreich ist  
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]verwendet die Bereitstellungsanbieter-URL zum Empfangen von Updates für die Anwendung an. Stellen Sie sicher, dass der Speicherort, dem die URL verweist richtig ist.  
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] verwendet die Bereitstellungsanbieter-URL zum Empfangen von Updates für die Anwendung an. Stellen Sie sicher, dass der Speicherort, dem die URL verweist richtig ist.  
   
 #### <a name="error-cannot-start-the-application"></a>Fehler: "kann nicht die Anwendung gestartet."  
  Diese Fehlermeldung gibt normalerweise an, dass es liegt ein Problem mit dem Installieren dieser Anwendung in der [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] zu speichern. Entweder die Anwendung einen Fehler aufweist, oder der Speicher ist beschädigt. Die Protokolldatei möglicherweise Aufschluss darüber, wo der Fehler aufgetreten ist.  
@@ -132,11 +130,11 @@ Dieses Thema listet die folgenden allgemeinen Fehler, die auftreten können, wä
 |Kann nicht fortgesetzt werden. Die Anwendung ist falsch formatiert. Wenden Sie sich an den Herausgeber der Anwendung, um Unterstützung zu erhalten.<br /><br /> Validierung der Anwendung war nicht erfolgreich. Kann nicht fortgesetzt werden.<br /><br /> Fehler beim Abrufen der Anwendungsdateien. Dateien in der Bereitstellung beschädigt.|Einer der in der Bereitstellung die Manifestdateien jedoch Abfragesyntax ist ungültig oder enthält einen Hash, der mit der entsprechenden Datei abgestimmt werden kann. Dieser Fehler kann auch angeben, das in einer Assembly eingebettete Manifest beschädigt ist. Neuerstellen der Bereitstellung und die Anwendung neu kompilieren oder suchen und beheben Sie die Fehler manuell in den Manifesten.|  
 |Anwendung kann nicht abgerufen werden. Authentifizierungsfehler.<br /><br /> Schlägt die Installation war nicht erfolgreich. Anwendungsdateien auf dem Server wurde nicht gefunden. Wenden Sie sich an den Herausgeber der Anwendung oder an Ihren Administrator, um Unterstützung zu erhalten.|Eine oder mehrere Dateien in der Bereitstellung können nicht heruntergeladen werden, da Sie nicht für den Zugriff berechtigt sind. Dies kann verursacht werden, von einem 403 Forbidden-Fehler zurückgegeben wird, von einem Webserver, die auftreten können, wenn eine der Dateien in Ihrer Bereitstellung mit der Erweiterung endet, die der Web-Server als eine geschützte Datei behandelt wird. Außerdem kann ein Verzeichnis, das eine oder mehrere Dateien der Anwendung enthält einen Benutzernamen und ein Kennwort erfordern, Zugriff auf.|  
 |Die Anwendung kann nicht heruntergeladen werden. Die Anwendung fehlen die erforderlichen Dateien. Wenden Sie sich an den Hersteller der Anwendung oder sich an den Systemadministrator, um Unterstützung zu erhalten.|Eine oder mehrere der im Anwendungsmanifest aufgelisteten Dateien kann nicht auf dem Server gefunden werden. Stellen Sie sicher, dass Sie alle abhängigen Bereitstellungsdateien hochgeladen haben, und wiederholen Sie den Vorgang.|  
-|Herunterladen der Anwendung war nicht erfolgreich. Überprüfen Sie Ihre Netzwerkverbindung, oder wenden Sie sich an Ihren Systemadministrator oder den Netzwerkdienstanbieter.|[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]eine Netzwerkverbindung mit dem Server kann nicht erstellt werden. Überprüfen Sie die Verfügbarkeit des Servers und der Status des Netzwerks.|  
+|Herunterladen der Anwendung war nicht erfolgreich. Überprüfen Sie Ihre Netzwerkverbindung, oder wenden Sie sich an Ihren Systemadministrator oder den Netzwerkdienstanbieter.|[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] eine Netzwerkverbindung mit dem Server kann nicht erstellt werden. Überprüfen Sie die Verfügbarkeit des Servers und der Status des Netzwerks.|  
 |URLDownloadToCacheFile mit HRESULT-Fehler "\<Anzahl >". Fehler beim Herunterladen "\<Datei >".|Wenn ein Benutzer Erweiterte Sicherheitskonfiguration für Internet Explorer-Option festgelegt hat "Warnen, wenn zwischen sicherem und nicht sicheren Modus" auf dem Zielcomputer für die Bereitstellung und die Setup-URL der ClickOnce-Anwendung installiert wird, eines sicheren Standorts aus einer nicht sicheren umgeleitet wird (oder umgekehrt), schlägt die Installation fehl, da die Internet Explorer-Warnung er unterbricht.<br /><br /> Zum Beheben dieses Problems können Sie eine der folgenden Aktionen ausführen:<br /><br /> -Deaktivieren Sie die Sicherheitsoption.<br />-Stellen Sie sicher, dass die Setup-URL nicht so umgeleitet wird, die von Sicherheitsmodi ändert.<br />-Entfernen Sie die Umleitung vollständig, und zeigen Sie auf die tatsächliche Setup-URL.|  
 |Das Schreiben in die Festplatte Fehler. Es gibt möglicherweise nicht genügend Speicherplatz verfügbar auf dem Datenträger. Wenden Sie sich an den Hersteller der Anwendung oder sich an den Systemadministrator, um Unterstützung zu erhalten.|Dies kann darauf hindeuten, nicht genügend Speicherplatz zum Speichern von der Anwendung, aber einen Weitere allgemeinen e/a-Fehler können auch angeben, wenn Sie die Anwendungsdateien auf dem Laufwerk speichern möchten.|  
 |Die Anwendung kann nicht gestartet werden. Es ist nicht genügend Speicherplatz auf dem Datenträger.|Die Festplatte ist voll. Sie Speicherplatz frei, und führen Sie die Anwendung erneut aus.|  
-|Zu viele bereitgestellte Aktivierungen versuchen, gleichzeitig geladen werden.|[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]Schränkt die Anzahl von anderen Anwendungen, die zur selben Zeit gestartet werden kann. Dies wird hauptsächlich zum Schutz vor böswilligen Versuche sollen Denial-of-Service-Angriffe auf den lokalen [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Service; Benutzer, die versuchen, dieselbe Anwendung wiederholt in rascher zu starten, wird nur am Ende einer einzelnen Instanz von der die Anwendung.|  
+|Zu viele bereitgestellte Aktivierungen versuchen, gleichzeitig geladen werden.|[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Schränkt die Anzahl von anderen Anwendungen, die zur selben Zeit gestartet werden kann. Dies wird hauptsächlich zum Schutz vor böswilligen Versuche sollen Denial-of-Service-Angriffe auf den lokalen [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Service; Benutzer, die versuchen, dieselbe Anwendung wiederholt in rascher zu starten, wird nur am Ende einer einzelnen Instanz von der die Anwendung.|  
 |Verknüpfungen können nicht über das Netzwerk aktiviert werden.|Verknüpfungen zu einem [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung nur auf der lokalen Festplatte gestartet werden kann. Sie können nicht gestartet werden, öffnen Sie eine URL, die auf eine Verknüpfungsdatei auf einem Remoteserver verweist.|  
 |Die Anwendung ist zu groß, um Sie online unter teilweiser Vertrauenswürdigkeit ausführen. Wenden Sie sich an den Hersteller der Anwendung oder sich an den Systemadministrator, um Unterstützung zu erhalten.|Größer als die Hälfte der Größe der Quote für die online-Anwendung eine Anwendung, die unter teilweiser Vertrauenswürdigkeit ausgeführt wird dürfen nicht sein standardmäßig 250 MB.|  
   

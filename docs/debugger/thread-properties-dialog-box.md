@@ -1,26 +1,24 @@
 ---
 title: Thread-Eigenschaften (Dialogfeld) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
+ms.technology:
+- vs-ide-debug
 ms.topic: reference
 helpviewer_keywords:
 - Spy++, thread properties
 - thread properties, Spy++
 ms.assetid: 5352d11a-debb-4c20-b9a0-d37d94900b1c
-caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 0abdebd821051d6821567c8a8ec87329868c6b28
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: d8b3a0fbb7feb4e2865f67a9c51404d0ec45641d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="thread-properties-dialog-box"></a>Dialogfeld "Threadeigenschaften"
 Verwenden Sie dieses Dialogfeld, um weitere Informationen zu einem bestimmten Thread zu erhalten. Um dieses Dialogfeld anzuzeigen, verschieben Sie den Fokus auf ein [Threadansicht](../debugger/threads-view.md) Fenster, oder öffnen Sie [Ansicht "Nachrichten"](../debugger/messages-view.md) und erweitern Sie eine Nachricht. Wählen Sie einen beliebigen Threadknoten in der Struktur aus, und wählen Sie dann **Eigenschaften** aus der **Ansicht** Menü.  

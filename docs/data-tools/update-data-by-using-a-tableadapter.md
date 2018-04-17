@@ -1,11 +1,8 @@
 ---
 title: Aktualisieren von Daten mit einem TableAdapter | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,17 +14,17 @@ helpviewer_keywords:
 - data [Visual Studio], updating
 - saving data
 ms.assetid: 5e32e10e-9bac-4969-9bdd-b8f6919d3516
-caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: 4968eab5e1d355543a8658e72540bc66fa2543b9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: c5188f56e440f7ec00f7537602aff10723441c3a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="update-data-by-using-a-tableadapter"></a>Aktualisieren von Daten mit einem TableAdapter
 Nachdem die Daten im Dataset geändert und überprüft wurde, können Sie die aktualisierten Daten zurück an eine Datenbank senden, durch Aufrufen der `Update` Methode von einer [TableAdapter](../data-tools/create-and-configure-tableadapters.md). Die `Update` Methode aktualisiert eine einzelne Datentabelle und führt den richtigen Befehl (INSERT, UPDATE oder DELETE) basierend auf den <xref:System.Data.DataRow.RowState%2A> der einzelnen Datenzeilen in der Tabelle. Wenn ein Dataset verknüpfte Tabellen aufweist, generiert Visual Studio eine TableAdapterManager-Klasse, die Sie verwenden, um die Updates ausführen. Die TableAdapterManager-Klasse wird sichergestellt, dass Updates vorgenommen werden, in der richtigen Reihenfolge basierend auf den foreign Key-Einschränkungen, die in der Datenbank definiert sind. Wenn Sie datengebundene Steuerelemente verwenden, erstellt die Databinding-Architektur eine Membervariable der Klasse TableAdapterManager TableAdapterManager aufgerufen. 
